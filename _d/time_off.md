@@ -44,6 +44,7 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
   - [Before you go](#before-you-go)
   - [Every other day check-in](#every-other-day-check-in)
   - [Physical Health](#physical-health)
+  - [Diet](#diet)
   - [Emotional Health](#emotional-health)
   - [Identity Health](#identity-health)
   - [Travel Tips - Before you go](#travel-tips---before-you-go)
@@ -221,8 +222,6 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
 
 ### Physical Health
 
-- **Nothing tastes as good as skinny feels** - So true, regardless of the metric: feeling great, looking great.
-- **No booze** - Those days are over for me. Messes up my sleep and I Feel worse. Go take a cold shower instead.
 - **GET A GYM MEMBERSHIP** - Gym is a fantastic place to focus on strength and renewal and anchor the day. I got a gym membership with GoodLife, let me do my top priorities daily, even had a massage chair.
 
 - **Bring bands, light gym equipment** - Have everything to stretch and self-massage, and light workouts
@@ -231,9 +230,44 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
 
 - **Do extra stretches/cardio** - Remember energy positive, and keeps you injury-free.
 
-- **Bring stuff to help you eat healthy**
-  - Bring the microwavable popcorn popper and instant soup. These are some of my favorite low-calorie foods.
-  - Bring a travel scale - that mindfulness around weight is great.
+- **Bring kettlebells and a heavy club** - Portable strength tools for short, high-value sessions.
+- **Morning movement daily** - 10–20 minutes of mobility/strength to anchor the day. On driving days, do 5–10 minute micro-sessions at rest stops.
+
+
+### Diet
+
+#### Mindset
+
+- **Nothing tastes as good as skinny feels** - So true, regardless of the metric: feeling great, looking great.
+
+#### Alcohol
+
+- **No booze** - Those days are over for me. Messes up my sleep and I Feel worse. Go take a cold shower instead.
+- Airports and trips: Don't drink too much.
+
+#### Tools and Prep
+
+- Bring the microwavable popcorn popper and instant soup. These are some of my favorite low-calorie foods.
+- Bring a travel scale - that mindfulness around weight is great.
+
+#### Travel Nutrition
+
+##### Airports
+
+- Bring power bars as reliable low-effort snacks.
+
+##### Road trips
+
+- Bring a cooler. Buy fruits/vegetables and keep them in the cooler and hotel fridge.
+
+#### Breakfast
+
+Family loves the free hotel breakfast (and it is a great deal), but I can't afford the calories. See detailed guidance under [Diet → Hotel breakfast](/diet#hotel-breakfast).
+
+#### Terzepatide
+
+Ensure I don't run out of terzepatide during trips/time off. Plan refills ahead and pack doses appropriately. See [Terzepatide](/terzepatide).
+
 
 ### Emotional Health
 
@@ -282,8 +316,8 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
   - Lost my popcorn popper and my balloon pump and my laptop. Turns out in the extra pocket, I forgot.
 - Airport
   - Hanging at the airport early is totally fine - don't worry it's better than being there late.
-  - Bring power bars
-  - Don't drink too much
+  - Airport snacks: see Diet → Travel Nutrition → Airports
+  - Alcohol: see Diet → Alcohol
   - Take Sudafed
   - Get AirPlugs
   - Get Nexus/Frequent Traveler card (well worth the 100 bucks)
@@ -299,13 +333,28 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
 - Force Captive Portal to appear - <http://captive.apple.com/hotspot-detect.html>
 - For the stuff I forget - Just go to Walmart/target and buy it. It's basically disposable.
 
+- Travel router
+  - Pack and pre-configure it to bypass flaky captive portals; keep SSID/password noted and the admin password saved.
+
+#### Packing Checklist
+
+- Tech: chargers, power bank, travel router, Insta360 + mounts, extra SD cards
+- Fitness: kettlebells, heavy club, bands, peanut ball, foam roller, gripper
+- Diet: popcorn popper, instant soup, travel scale, cooler (if road trip)
+- Docs: ID/passport, credit cards, Nexus, insurance
+- Comfort: earplugs, eye mask, sunglasses
+- Tracking: AirTags
+
 ### Road Trip Tips
 
 - Bring Kettlebells
-- Bring a cooler - Buy fruits/vegtables and put them in there cooler and hotel fridge.
+ - Road-trip food plan: see Diet → Travel Nutrition → Road trips
 - Lots of audiobooks
 - Stop at walmart
 - Set an end-of-day location that's only 4 hours of driving, otherwise, you'll end up spending not enough time smelling the roses.
+
+- Morning movement on drive days: quick 5–10 minute kettlebell/club mobility at each stop (aim every 2–3 hours).
+- Pre-mount and configure Insta360 before departure (battery charged, card inserted, horizon lock) so it's one-button ready when you see cool stuff.
 
 ### Other learnings
 

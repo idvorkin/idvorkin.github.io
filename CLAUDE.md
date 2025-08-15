@@ -51,64 +51,66 @@ When adding new features or fixing bugs, **always add both unit tests and e2e te
 - E2E tests verify the feature works in the real browser environment
 - For features that use environment variables (like SERVER_PORT), ensure tests handle them properly
 
-## Development Workflow
+## Development & Server
 
+### Development Workflow
 - Run `just js-build` after TypeScript changes
 - Create isolated test cases for complex components
 - Use the blog's existing structure for new features
 - Check Jekyll at http://localhost:4000 when developing
 - When running e2e tests, always use headless mode (the default) and NOT `--debug` mode
+- If NPM tools are not installed, install them
 
-### Running Jekyll Server and Opening Pages
-
-- **Start Jekyll server**: `just jekyll-serve` (default port 4000) or `just jekyll-serve 4002` (custom port)
-- **Run in background**: `just jekyll-serve 4002 > /tmp/jekyll-worktree.log 2>&1 &`
+### Running Jekyll Server
+- **Default**: `just jekyll-serve` (port 4000, livereload port 35729)
+- **Custom port**: `just jekyll-serve 4002`
+- **Custom ports with livereload**: `just jekyll-serve 4002 35730`
+- **Run in background**: `just jekyll-serve 4002 35730 > /tmp/jekyll-worktree.log 2>&1 &`
+- **Check port availability first**: If port in use, pick random port between 5000-6000
+- **Use random live reload port**: Pick a random live reload port (e.g., 35000-36000) to avoid conflicts
 - **Open page in browser**: `open http://localhost:4002/page-name`
 - **Open specific section**: `open http://localhost:4002/page-name#section-anchor`
-- **Example for worktrees**: When working in a worktree, use a different port to avoid conflicts:
+- **Example for worktrees**: When working in a worktree, use different ports to avoid conflicts:
   ```bash
-  # In worktree directory
-  just jekyll-serve 4002 > /tmp/jekyll-worktree.log 2>&1 &
-  open http://localhost:4002/igor-gap-year
+  # In worktree directory - specify both server and livereload ports
+  just jekyll-serve 4002 35730 > /tmp/jekyll-worktree.log 2>&1 &
+  open http://localhost:4002/gap-year-igor
   # To jump to a specific section
-  open http://localhost:4002/igor-gap-year#battling-loneliness
+  open http://localhost:4002/gap-year-igor#battling-loneliness
   ```
 
-## Git Commit Guidelines
+## Git & PR Workflow
 
+### Basic Workflow Rules
+- Always work on a PR, never on main directly
+- Use main branch (not master)
+- Start with fetch/rebase to get latest main
+- All PRs should target main branch
+- Before starting work, make sure you have the latest main branch
+
+### Commit Guidelines
 - **Generated JS files ARE committed** (assets/js/index.js, assets/js/index.js.map)
 - Commit both TypeScript source files (src/\*.ts) and the generated JS bundle
 - JS files are built from TypeScript and should be tracked in git for Jekyll deployment
 - Always run `just js-build` before committing to ensure JS bundle is up to date
-
-## Git Workflow Guidelines
-
-- Always start by creating a new PR for a task, don't update main directly
-- Before starting work, make sure you have the latest main branch
-
-## PR Management Guidelines
-
-- When updating a PR, prompt the user asking if they want you to open the PR for them
-- When starting work on an issue, update the issue with the linked PR
-- All PR's should go to main please
-- On startup, ask user if they want to continue a pr, list the PR's in the subdirectories (named after their pbranches)
-
-## Commit Best Practices
-
-- Before updating a file, start by linting it via pre-commit hooks and commit that, so that the file is clean before you edit so we can see just the relevant changes in the PR
-- Never bypass commit hooks
-
-## Development Hints
-
-- You can always assume a server running on 4000
-- Always do work on a PR, never on main
 - Break commits into logical changes
-- Before editing a file run pre-commit to keep reformats separate from changes
-- After update pr, open in the webbrowser
-- We use main, not master. Always start with a fetch rebase to make sure we're starting with latest main
+- Run pre-commit on files before editing (keeps reformats separate from changes)
+- Never bypass commit hooks
+- Put Claude/agent config changes in separate commits
+- Always commit after making changes to claude config (agents or claude config)
 
-## Post-PR Merge Workflow
+### PR Best Practices
+- Create new PR for each task
+- When starting work on an issue, update the issue with the linked PR
+- Run code review agent before pushing
+- When updating a PR with significant changes, update the PR description to reflect all current changes
+- Include any fixes or improvements made during development in the PR description
+- After updating PR, open in the web browser
+- Prompt the user asking if they want you to open the PR for them
+- On startup, ask user if they want to continue a PR, list the PRs in the subdirectories (named after their branches)
+- **Never merge PRs yourself** - the user must do this from the PR
 
+### Post-Merge Cleanup
 After a PR is merged, always:
 
 1. First verify the PR is actually merged: `gh pr view <pr-number> --json state,merged`
@@ -119,67 +121,27 @@ After a PR is merged, always:
 
 This keeps the repository clean and ensures you're always working with the latest code.
 
-## PR Feedback Resolution
-
+### PR Feedback Resolution
 When resolving PR feedback:
 
 1. Always commit and push changes after implementing feedback
 2. Check for uncommitted changes before starting or finishing work
 3. If uncommitted changes exist, ask the user before discarding them
 4. The pr-feedback-resolver agent should always push changes to remote
-   EOF < /dev/null
 
-## Commit Memory Hints
+## Git Worktrees Setup
 
-- Put changes to claude and agents into their own commit
-- Always commit after making changes to claude config (agents or claude config)
+### Key Points
+- Run Claude from parent directory (/cc_blog), not from worktrees
+- Check with `pwd` - if you see `/cc_blog/worktree-name`, go up one level
+- Run `./setup-claude-parent.sh` to create config symlinks from cc_main
 
-## Development Setup
-
-- If NPM tools are not installed, install them
-
-## Parent Directory Workflow for Git Worktrees
-
-When working with git worktrees, Claude must be run from the parent directory to access both the main repository and worktrees:
-
-### Important: Check Your Working Directory
-
-**If you're currently in `cc_blog/something` (a subdirectory), you're likely in a worktree.**
-- Run `pwd` to check your current location
-- If you see `/cc_blog/worktree-name`, you should run Claude from `/cc_blog` instead
-- This ensures Claude can access all worktrees and the main repository
-
-### Setup
-
-1. Run `./setup-claude-parent.sh` from the parent directory to create symlinks to Claude configuration
-2. This creates symlinks to CLAUDE.md and .claude directory from cc_main
-
-### Workflow
-
-- Always run Claude from the parent directory (not from cc_main or worktrees)
-- When working in a specific worktree, use full paths for all operations since `cd` commands don't work properly
-- Example: `pre-commit run --files igor-gap-year-updates/_d/file.md` instead of `cd igor-gap-year-updates && pre-commit run --files _d/file.md`
-- For multi-command operations, use subshells: `(cd worktree && command1 && command2)`
+### Working with Worktrees
+- Use full paths since `cd` has issues: `pre-commit run --files worktree/file.md`
+- For multi-commands use subshells: `(cd worktree && command1 && command2)`
+- Use `builtin cd` instead of `cd` (which points to zoxide)
 - Reference files using relative paths: `cc_main/file.txt` or `cc_blog_worktree/file.txt`
-- Claude configurations remain centralized in cc_main
 - Create worktrees from cc_main: `cd cc_main && git worktree add ../feature-branch`
-
-### Why This Setup?
-
-- Claude cannot change to sibling directories (e.g., can't `cd ../other-dir`)
-- The `cd` command has issues in the shell environment
-- Configuration files must be in Claude's working directory
-- This allows working on multiple worktrees while maintaining consistent Claude settings
-
-## Server and Page Navigation
-
-- To run server: `just jekyll-serve`
-- Server typically runs at: http://localhost:4000
-- To open specific section, append the section anchor (e.g., http://localhost:4000#section-name)
-
-## Use builtin for 'cd' command
-
-- Use builtin commands for cd, since it's normally pointing to zoxide
 
 ## Clipboard Access
 

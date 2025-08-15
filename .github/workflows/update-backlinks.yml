@@ -1,0 +1,265 @@
+name: Update Backlinks on PR Merge
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+  workflow_dispatch: # Allow manual trigger
+
+# Prevent race conditions when multiple PRs merge simultaneously
+# This workflow specifically handles merge commits created by GitHub PR merges
+concurrency:
+  group: update-backlinks-${{ github.ref }}
+  cancel-in-progress: false
+
+# Minimal required permissions
+permissions:
+  contents: write  # For git push
+  pull-requests: read  # For reading PR data
+
+env:
+  CONTENT_DIRS_PATTERN: '^(_d/|_td/|_ig66/)'
+  BACKLINKS_FILE: 'back-links.json'
+
+jobs:
+  update-backlinks:
+    runs-on: ubuntu-latest
+    
+    # Only run if the PR was actually merged (not just closed)
+    # Or if manually triggered
+    # This job handles merge commits by comparing HEAD (merge commit) with HEAD~1 (previous main)
+    if: github.event_name == 'workflow_dispatch' || (github.event.pull_request.merged == true)
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0 # Need full history to get accurate diff
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+
+      - name: Build Jekyll site
+        run: |
+          bundle exec jekyll build --config _config.yml,_config_ci.yml
+          echo "✅ Jekyll site built successfully"
+
+      - name: Set up Python with uv
+        uses: astral-sh/setup-uv@v4
+        with:
+          enable-cache: true
+          cache-dependency-glob: "build_back_links.py"
+
+      - name: Get changed markdown files
+        id: changed_files
+        run: |
+          set -euo pipefail
+          
+          echo "📝 Getting list of changed markdown files..."
+          
+          # Determine the commit range based on trigger type
+          if [ "${{ github.event_name }}" == "pull_request" ]; then
+            # IMPORTANT: This workflow handles all GitHub merge strategies:
+            # 1. Merge commit: Creates a merge commit with 2 parents
+            # 2. Squash and merge: Creates a single commit
+            # 3. Rebase and merge: Applies multiple commits sequentially
+            
+            # For merge commits, we compare with the first parent (previous main)
+            # For squash/rebase, we need to find the actual base before the PR was merged
+            
+            # Check if HEAD is a merge commit (has 2 parents)
+            PARENT_COUNT=$(git rev-list --parents -n 1 HEAD | wc -w)
+            PARENT_COUNT=$((PARENT_COUNT - 1))  # Subtract 1 for the commit itself
+            
+            if [ "$PARENT_COUNT" -eq 2 ]; then
+              # It's a merge commit, use first parent (previous main)
+              BASE_SHA="HEAD^1"
+              echo "🔀 Detected merge commit strategy"
+            else
+              # It's a squash or rebase - need to find the actual base
+              # Use the PR base SHA from the event context
+              PR_BASE="${{ github.event.pull_request.base.sha }}"
+              
+              # Try to find a common ancestor with the PR base
+              if [ -n "$PR_BASE" ] && git rev-parse --verify "$PR_BASE" >/dev/null 2>&1; then
+                BASE_SHA="$PR_BASE"
+                echo "📦 Detected squash/rebase strategy using PR base"
+              else
+                # Fallback: Look for the most recent commit that's also on origin/main
+                # This handles rebase scenarios where multiple commits were added
+                BASE_SHA=$(git merge-base origin/main HEAD~1 2>/dev/null || echo "HEAD~1")
+                echo "🔄 Using merge-base to find actual base commit"
+              fi
+            fi
+            
+            HEAD_SHA="HEAD"
+            echo "PR #${{ github.event.pull_request.number }} merged: Comparing $BASE_SHA..$HEAD_SHA"
+          else
+            BASE_SHA="HEAD~1"
+            HEAD_SHA="HEAD"
+            echo "Manual trigger: Comparing last commit"
+          fi
+          
+          # Error handling: Check if BASE_SHA exists (handle initial commit scenario)
+          if ! git rev-parse --verify "$BASE_SHA" >/dev/null 2>&1; then
+            echo "⚠️ Warning: $BASE_SHA does not exist (possibly initial commit)"
+            echo "Using root commit as base for comparison"
+            BASE_SHA=$(git rev-list --max-parents=0 HEAD)
+          fi
+          
+          # Enhanced logging: Show actual SHA values being compared
+          BASE_SHA_FULL=$(git rev-parse "$BASE_SHA")
+          HEAD_SHA_FULL=$(git rev-parse "$HEAD_SHA")
+          echo "🔍 Comparing commits:"
+          echo "  Base: $BASE_SHA ($BASE_SHA_FULL)"
+          echo "  Head: $HEAD_SHA ($HEAD_SHA_FULL)"
+          
+          # Show the range of commits being analyzed (important for rebase scenarios)
+          COMMIT_COUNT=$(git rev-list --count "$BASE_SHA..$HEAD_SHA" 2>/dev/null || echo "0")
+          echo "  Commits in range: $COMMIT_COUNT"
+          if [ "$COMMIT_COUNT" -gt "0" ] && [ "$COMMIT_COUNT" -le "10" ]; then
+            echo "  Commit range:"
+            git log --oneline "$BASE_SHA..$HEAD_SHA" | sed 's/^/    /'
+          elif [ "$COMMIT_COUNT" -gt "10" ]; then
+            echo "  Commit range (showing first 10 of $COMMIT_COUNT):"
+            git log --oneline "$BASE_SHA..$HEAD_SHA" | head -10 | sed 's/^/    /'
+          fi
+          
+          # Show the commits being compared for debugging
+          echo "Base commit details:"
+          git log -1 --oneline "$BASE_SHA"
+          echo "Head commit details:"
+          git log -1 --oneline "$HEAD_SHA"
+          
+          # Get changed markdown files in content directories
+          CHANGED_MD_FILES=$(git diff --name-only "$BASE_SHA..$HEAD_SHA" | \
+                            grep '\.md$' | \
+                            grep -E "${{ env.CONTENT_DIRS_PATTERN }}" || true)
+          
+          if [ -z "$CHANGED_MD_FILES" ]; then
+            echo "No markdown files changed in content directories"
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "Changed markdown files:"
+            echo "$CHANGED_MD_FILES"
+            
+            # Convert to space-separated list and count
+            CHANGED_MD_FILES_LIST=$(echo "$CHANGED_MD_FILES" | tr '\n' ' ')
+            FILE_COUNT=$(echo "$CHANGED_MD_FILES" | wc -l | tr -d ' ')
+            
+            echo "files=$CHANGED_MD_FILES_LIST" >> $GITHUB_OUTPUT
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "file_count=$FILE_COUNT" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Check if full rebuild needed
+        id: check_full_rebuild
+        if: steps.changed_files.outputs.has_changes == 'false'
+        run: |
+          set -euo pipefail
+          
+          echo "📚 No markdown files changed, checking if full rebuild needed..."
+          
+          # Skip this workflow entirely if no relevant changes
+          echo "No markdown content changes detected, skipping backlinks update"
+          echo "needs_rebuild=false" >> $GITHUB_OUTPUT
+
+      - name: Update backlinks incrementally
+        if: steps.changed_files.outputs.has_changes == 'true'
+        run: |
+          set -euo pipefail
+          
+          echo "📚 Updating backlinks for ${{ steps.changed_files.outputs.file_count }} changed file(s)..."
+          echo "Files: ${{ steps.changed_files.outputs.files }}"
+          
+          # Run the delta command with the list of changed markdown files
+          uv run ./build_back_links.py delta ${{ steps.changed_files.outputs.files }}
+          
+      - name: Validate and check for changes
+        id: check_backlinks_changes
+        if: steps.changed_files.outputs.has_changes == 'true'
+        run: |
+          set -euo pipefail
+          
+          # Check if backlinks.json was modified
+          if git diff --quiet "${{ env.BACKLINKS_FILE }}" 2>/dev/null; then
+            echo "No changes to ${{ env.BACKLINKS_FILE }}"
+            echo "backlinks_updated=false" >> $GITHUB_OUTPUT
+          else
+            echo "✅ Backlinks have been updated"
+            
+            # Validate JSON format
+            python -m json.tool "${{ env.BACKLINKS_FILE }}" > /dev/null || {
+              echo "❌ ERROR: Invalid JSON in ${{ env.BACKLINKS_FILE }}"
+              exit 1
+            }
+            echo "✅ JSON validation passed"
+            
+            # Show summary of changes
+            git diff --stat "${{ env.BACKLINKS_FILE }}"
+            echo "backlinks_updated=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push changes
+        if: steps.check_backlinks_changes.outputs.backlinks_updated == 'true'
+        run: |
+          set -euo pipefail
+          
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add "${{ env.BACKLINKS_FILE }}"
+          
+          # Create descriptive commit message
+          if [ "${{ github.event_name }}" == "pull_request" ]; then
+            PR_INFO="PR #${{ github.event.pull_request.number }}"
+          else
+            PR_INFO="manual trigger"
+          fi
+          
+          COMMIT_MSG="chore: update backlinks for ${{ steps.changed_files.outputs.file_count }} file(s) from $PR_INFO [skip ci]"
+          git commit -m "$COMMIT_MSG"
+          
+          # Push with retry on failure
+          git push || {
+            echo "⚠️ Push failed, attempting to pull and retry..."
+            git pull --rebase origin main
+            git push
+          }
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "## Backlinks Update Summary"
+            
+            # Trigger info
+            if [ "${{ github.event_name }}" == "pull_request" ]; then
+              echo "**Trigger:** PR #${{ github.event.pull_request.number }} - ${{ github.event.pull_request.title }}"
+            else
+              echo "**Trigger:** Manual (workflow_dispatch)"
+            fi
+            
+            echo ""
+            
+            # Files processed
+            if [ "${{ steps.changed_files.outputs.has_changes }}" == "true" ]; then
+              echo "### 📝 Changed Files (${{ steps.changed_files.outputs.file_count }})"
+              echo '```'
+              echo "${{ steps.changed_files.outputs.files }}" | tr ' ' '\n'
+              echo '```'
+            else
+              echo "### ℹ️ No markdown files changed"
+            fi
+            
+            # Update status
+            if [ "${{ steps.check_backlinks_changes.outputs.backlinks_updated }}" == "true" ]; then
+              echo "### ✅ Status: Backlinks updated and committed"
+            else
+              echo "### ℹ️ Status: No backlinks changes needed"
+            fi
+          } >> $GITHUB_STEP_SUMMARY

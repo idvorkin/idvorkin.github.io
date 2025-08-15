@@ -4,6 +4,8 @@
  * Handles domain remapping from idvork.in to idvorkin.azurewebsites.net
  */
 
+import { makeRedirectUrl } from "./shared";
+
 interface CopyLinkOptions {
   iconClass?: string;
   tooltipDuration?: number;
@@ -28,14 +30,27 @@ const DEFAULT_OPTIONS: CopyLinkOptions = {
 function createCopyLinkIcon(options: CopyLinkOptions): HTMLElement {
   const icon = document.createElement("span");
   icon.className = options.iconClass || DEFAULT_OPTIONS.iconClass || "";
-  icon.innerHTML = "🔗"; // Using emoji for now, can be replaced with SVG icon
-  icon.title = "Copy link to this section";
+  icon.title = "Share this section";
   icon.style.cursor = "pointer";
   icon.style.marginLeft = "0.5rem";
   icon.style.opacity = "0";
   icon.style.transition = "opacity 0.2s ease";
   icon.style.fontSize = "0.8em";
   icon.style.userSelect = "none";
+  
+  // Add accessibility attributes
+  icon.setAttribute('role', 'button');
+  icon.setAttribute('tabindex', '0');
+  icon.setAttribute('aria-label', 'Share this section');
+  
+  // iOS-style share icon - box with upward arrow
+  icon.innerHTML = `<svg width="16" height="20" viewBox="0 0 16 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+    <!-- Upward arrow -->
+    <path d="M8 2 L8 12"/>
+    <path d="M4 5.5 L8 2 L12 5.5"/>
+    <!-- Box -->
+    <path d="M3 8 L3 17 Q3 18 4 18 L12 18 Q13 18 13 17 L13 8"/>
+  </svg>`;
 
   return icon;
 }
@@ -265,43 +280,121 @@ function transformUrl(url: string, options: CopyLinkOptions): string {
     transformedUrl = transformedUrl.replace(options.domainMapping.from, options.domainMapping.to);
   }
 
-  // Remove the hash character but keep the anchor as part of the path
-  // Transform: http://example.com/page#anchor -> http://example.com/page/anchor
-  transformedUrl = transformedUrl.replace("#", "/");
-
-  return transformedUrl;
+  // Extract just the path and anchor
+  const urlObj = new URL(transformedUrl);
+  const pathname = urlObj.pathname.replace(/^\//, "").replace(/\.html$/, "") || "index";
+  const anchor = urlObj.hash.replace("#", "");
+  
+  // Return path#anchor format for tinyurl
+  return anchor ? `${pathname}#${anchor}` : pathname;
 }
 
 /**
- * Copies the header link to clipboard
+ * Shares or copies the header link based on device capabilities
  */
-async function copyHeaderLink(headerId: string, options: CopyLinkOptions): Promise<void> {
+async function shareOrCopyHeaderLink(headerId: string, options: CopyLinkOptions): Promise<boolean> {
   try {
-    // Get the current URL without any existing hash
-    const baseUrl = window.location.href.split("#")[0];
-    const fullUrl = `${baseUrl}#${headerId}`;
-
-    // Apply URL transformation
-    const transformedUrl = transformUrl(fullUrl, options);
-
-    // Copy to clipboard
-    await navigator.clipboard.writeText(transformedUrl);
-
-    console.log(`Copied header link: ${transformedUrl}`);
+    // Build the URL using tinyurl redirect format
+    const currentUrl = window.location.href;
+    const anchorUrl = currentUrl.includes("#") 
+      ? currentUrl.replace(/#.*/, `#${headerId}`)
+      : `${currentUrl}#${headerId}`;
+    
+    // Transform the URL for tinyurl redirect  
+    const transformedUrl = transformUrl(anchorUrl, options);
+    const tinyUrl = `https://tinyurl.com/igor-blog/?path=${encodeURIComponent(transformedUrl)}`;
+    
+    // Get header text for share title (clean it to remove button text)
+    const header = document.getElementById(headerId);
+    // Get just the text content of the header, excluding child elements
+    const headerText = header ? 
+      Array.from(header.childNodes)
+        .filter(node => node.nodeType === Node.TEXT_NODE)
+        .map(node => node.textContent?.trim())
+        .join(' ')
+        .trim() : "";
+    const shareTitle = `${headerText} - Igor's Blog`;
+    
+    // Get preview text for the section
+    const previewText = getPreviewText(headerId);
+    
+    // Create share text with preview
+    let shareText = `From: ${headerText} ...`;
+    if (previewText) {
+      shareText = `From: ${headerText} ...\n\n${previewText}`;
+    }
+    
+    // Check if Web Share API is available (primarily mobile)
+    if (navigator.share && /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+      try {
+        await navigator.share({
+          title: shareTitle,
+          text: shareText,
+          url: tinyUrl
+        });
+        console.log(`📱 Shared via native share: ${tinyUrl}`);
+        return true; // Indicates share was successful
+      } catch (shareError) {
+        // User cancelled share or share failed, fall through to clipboard
+        console.log("Share cancelled or failed, falling back to clipboard", shareError);
+      }
+    }
+    
+    // For clipboard copy, format with preview text
+    let clipboardText = tinyUrl;
+    if (previewText) {
+      // Format as: From: Title, Preview, URL (similar to social media shares)
+      clipboardText = `From: ${headerText} ...\n\n${previewText}\n\n${tinyUrl}`;
+    }
+    
+    // Fallback to clipboard copy for desktop or if share fails
+    await navigator.clipboard.writeText(clipboardText);
+    console.log(`📋 Copied to clipboard with preview: ${clipboardText.substring(0, 100)}...`);
+    return false; // Indicates copy was used instead of share
+    
   } catch (error) {
-    console.error("Failed to copy header link:", error);
+    console.error("Failed to share/copy header link:", error);
 
-    // Fallback for older browsers
-    const textArea = document.createElement("textarea");
-    const baseUrl = window.location.href.split("#")[0];
-    const fullUrl = `${baseUrl}#${headerId}`;
-    const transformedUrl = transformUrl(fullUrl, options);
-
-    textArea.value = transformedUrl;
-    document.body.appendChild(textArea);
-    textArea.select();
-    document.execCommand("copy");
-    document.body.removeChild(textArea);
+    // Fallback: use textarea method if clipboard API fails
+    try {
+      const currentUrl = window.location.href;
+      const anchorUrl = currentUrl.includes("#") 
+        ? currentUrl.replace(/#.*/, `#${headerId}`)
+        : `${currentUrl}#${headerId}`;
+      
+      const transformedUrl = transformUrl(anchorUrl, options);
+      const tinyUrl = `https://tinyurl.com/igor-blog/?path=${encodeURIComponent(transformedUrl)}`;
+      
+      // Get preview text for fallback
+      const header = document.getElementById(headerId);
+      // Get just the text content of the header, excluding child elements
+      const headerText = header ? 
+        Array.from(header.childNodes)
+          .filter(node => node.nodeType === Node.TEXT_NODE)
+          .map(node => node.textContent?.trim())
+          .join(' ')
+          .trim() : "";
+      const previewText = getPreviewText(headerId);
+      
+      let clipboardText = tinyUrl;
+      if (previewText) {
+        clipboardText = `From: ${headerText} ...\n\n${previewText}\n\n${tinyUrl}`;
+      }
+      
+      // Use textarea fallback for copying
+      const textArea = document.createElement("textarea");
+      textArea.value = clipboardText;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textArea);
+      
+      console.log(`📋 Copied with preview (fallback): ${clipboardText.substring(0, 100)}...`);
+      return false;
+    } catch (fallbackError) {
+      console.error("Failed to copy URL even with fallback:", fallbackError);
+      throw fallbackError;
+    }
   }
 }
 
@@ -340,7 +433,7 @@ function getOrCreateHeaderId(header: HTMLElement): string {
 function getFirstParagraphAfterHeader(header: HTMLElement): string {
   let nextElement = header.nextElementSibling;
   
-  // Look for the first non-empty paragraph before the next header
+  // Look for the first non-empty content before the next header
   while (nextElement) {
     // Stop if we hit another header
     if (nextElement.tagName.match(/^H[1-6]$/)) {
@@ -356,9 +449,143 @@ function getFirstParagraphAfterHeader(header: HTMLElement): string {
       }
     }
     
+    // If it's a list (UL or OL), get text from the list items
+    if (nextElement.tagName === 'UL' || nextElement.tagName === 'OL') {
+      const listItems = nextElement.querySelectorAll('li');
+      const itemTexts: string[] = [];
+      let totalLength = 0;
+      
+      for (const li of Array.from(listItems)) {
+        // Only get direct text content, not nested lists
+        const text = Array.from(li.childNodes)
+          .filter(node => node.nodeType === Node.TEXT_NODE || 
+                         (node.nodeType === Node.ELEMENT_NODE && 
+                          (node as Element).tagName !== 'UL' && 
+                          (node as Element).tagName !== 'OL'))
+          .map(node => (node.textContent || '').trim())
+          .join(' ')
+          .trim();
+        
+        if (text.length > 0) {
+          itemTexts.push(`• ${text}`);
+          totalLength += text.length;
+          if (totalLength > 400) break; // Stop if we have enough text
+        }
+      }
+      
+      if (itemTexts.length > 0) {
+        // Join with newlines for better formatting
+        const combinedText = itemTexts.join('\n');
+        return combinedText.length > 500 ? combinedText.substring(0, 497) + '...' : combinedText;
+      }
+    }
+    
     nextElement = nextElement.nextElementSibling;
   }
   
+  return '';
+}
+
+/**
+ * Truncates text to a maximum length, preserving word boundaries
+ */
+function truncateText(text: string, maxLength = 400): string {
+  if (text.length <= maxLength) {
+    return text;
+  }
+  
+  // Truncate to maxLength and find the last space
+  const truncated = text.substring(0, maxLength);
+  const lastSpace = truncated.lastIndexOf(' ');
+  
+  if (lastSpace > 0) {
+    return truncated.substring(0, lastSpace) + '...';
+  }
+  
+  return truncated + '...';
+}
+
+/**
+ * Extracts preview text from the page content, with anchor-aware logic
+ */
+function getPreviewText(headerId?: string): string {
+  // If we have a specific header ID (anchor), try to get text after it
+  if (headerId) {
+    const header = document.getElementById(headerId);
+    if (header) {
+      // Try to get text from the first paragraph after the header
+      const paragraphText = getFirstParagraphAfterHeader(header);
+      if (paragraphText) {
+        return truncateText(paragraphText);
+      }
+      
+      // Try to get text from any content elements after the header
+      let nextElement = header.nextElementSibling;
+      const textParts: string[] = [];
+      let charCount = 0;
+      
+      while (nextElement && charCount < 400) {
+        // Stop if we hit another header
+        if (nextElement.tagName.match(/^H[1-6]$/)) {
+          break;
+        }
+        
+        // Get text from various content elements
+        if (nextElement.tagName === 'P' || 
+            nextElement.tagName === 'LI' || 
+            nextElement.tagName === 'BLOCKQUOTE' ||
+            nextElement.tagName === 'DIV') {
+          const text = (nextElement.textContent || '').trim();
+          if (text.length > 0) {
+            textParts.push(text);
+            charCount += text.length;
+          }
+        }
+        
+        nextElement = nextElement.nextElementSibling;
+      }
+      
+      if (textParts.length > 0) {
+        return truncateText(textParts.join(' '));
+      }
+    }
+  }
+  
+  // Fallback: try to find preview text from various content areas
+  const contentSelectors = [
+    'article',
+    'main',
+    '.content',
+    '.post-content',
+    '.entry-content',
+    '#content-holder',
+    '.content-holder'
+  ];
+  
+  for (const selector of contentSelectors) {
+    const contentArea = document.querySelector(selector);
+    if (contentArea) {
+      // Find the first paragraph in the content area
+      const firstParagraph = contentArea.querySelector('p');
+      if (firstParagraph) {
+        const text = (firstParagraph.textContent || '').trim();
+        if (text.length > 0) {
+          return truncateText(text);
+        }
+      }
+    }
+  }
+  
+  // Last resort: find the first paragraph on the page
+  const firstParagraph = document.querySelector('p');
+  if (firstParagraph) {
+    const text = (firstParagraph.textContent || '').trim();
+    if (text.length > 0) {
+      return truncateText(text);
+    }
+  }
+  
+  // If no preview text found, return empty string
   return '';
 }
 
@@ -422,6 +649,9 @@ const headerCleanupFunctions = new WeakMap<HTMLElement, (() => void)[]>();
 
 // Store popup references for lazy loading
 const headerPopups = new WeakMap<HTMLElement, HTMLElement>();
+
+// Track all headers for cleanup purposes
+const trackedHeaders = new Set<HTMLElement>();
 
 /**
  * Creates and shows popup lazily when needed
@@ -524,16 +754,29 @@ function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): voi
   const githubIcon = createGitHubIssueIcon();
   const cleanupFunctions: (() => void)[] = [];
 
-  // Add click handler for copy link
-  const copyClickHandler = async (event: Event) => {
+  // Add click handler for share/copy link
+  const shareClickHandler = async (event: Event) => {
     event.preventDefault();
     event.stopPropagation();
 
-    await copyHeaderLink(headerId, options);
-    showCopiedTooltip(copyIcon, options.tooltipDuration);
+    const wasShared = await shareOrCopyHeaderLink(headerId, options);
+    // Only show tooltip if we copied (not if we used native share)
+    if (!wasShared) {
+      showCopiedTooltip(copyIcon, options.tooltipDuration);
+    }
   };
-  copyIcon.addEventListener("click", copyClickHandler);
-  cleanupFunctions.push(() => copyIcon.removeEventListener("click", copyClickHandler));
+  copyIcon.addEventListener("click", shareClickHandler);
+  cleanupFunctions.push(() => copyIcon.removeEventListener("click", shareClickHandler));
+  
+  // Add keyboard support for accessibility
+  const keyboardHandler = (event: KeyboardEvent) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      shareClickHandler(event);
+    }
+  };
+  copyIcon.addEventListener("keydown", keyboardHandler);
+  cleanupFunctions.push(() => copyIcon.removeEventListener("keydown", keyboardHandler));
 
   // Add click handler for GitHub issue icon to show popup (lazy loading)
   const githubClickHandler = (event: Event) => {
@@ -587,6 +830,7 @@ function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): voi
   
   // Store cleanup functions for this header
   headerCleanupFunctions.set(header, cleanupFunctions);
+  trackedHeaders.add(header);
 }
 
 /**
@@ -594,16 +838,21 @@ function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): voi
  */
 export function cleanupHeaderCopyLinks(): void {
   // Clean up all stored event listeners
-  headerCleanupFunctions.forEach((cleanupFns) => {
-    cleanupFns.forEach(fn => fn());
+  trackedHeaders.forEach((header) => {
+    const cleanupFns = headerCleanupFunctions.get(header);
+    if (cleanupFns) {
+      cleanupFns.forEach(fn => fn());
+    }
+    
+    // Remove popup if exists
+    const popup = headerPopups.get(header);
+    if (popup) {
+      popup.remove();
+    }
   });
-  headerCleanupFunctions.clear();
   
-  // Remove all popups
-  headerPopups.forEach((popup) => {
-    popup.remove();
-  });
-  headerPopups.clear();
+  // Clear the tracked headers set
+  trackedHeaders.clear();
   
   // Reset initialization flag
   isHeaderCopyLinksInitialized = false;
@@ -615,11 +864,11 @@ export function cleanupHeaderCopyLinks(): void {
 export function initHeaderCopyLinks(customOptions: Partial<CopyLinkOptions> = {}): void {
   const options: CopyLinkOptions = { ...DEFAULT_OPTIONS, ...customOptions };
 
-  // Find all headers in the main content area
-  const contentContainer = document.getElementById("content-holder") || document.body;
-  const headers = contentContainer.querySelectorAll("h1, h2, h3, h4, h5, h6");
+  // Find all headers on the page (including H1)
+  // Some H1s are outside content-holder, so search the entire document
+  const allHeaders = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
 
-  for (const header of Array.from(headers)) {
+  for (const header of Array.from(allHeaders)) {
     addCopyLinkToHeader(header as HTMLElement, options);
   }
 }

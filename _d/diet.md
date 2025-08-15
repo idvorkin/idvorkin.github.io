@@ -32,6 +32,8 @@ Diet dominates weight, as weight is simple arithemtic -"calories in" minus "calo
 - [A tale of mindless Eating](#a-tale-of-mindless-eating)
 - [Making it a habit](#making-it-a-habit)
     - [Breakfast Miso](#breakfast-miso)
+- [Situational strategies](#situational-strategies)
+    - [Hotel breakfast](#hotel-breakfast)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -82,3 +84,15 @@ Great book - mindless eating:
 ## Making it a habit
 
 ### Breakfast Miso
+
+## Situational strategies
+
+### Hotel breakfast
+
+Family loves the free hotel breakfast (and it is a great deal), but I can't afford the calories.
+
+Waffle guidelines:
+
+1. Recall: I'm essentialist, and I'd rather be healthy than enjoy a free breakfast
+2. Best case: Just coffee, add some milk (limit to 2)
+3. Indulgent case: Waffle (I do love waffles) — only get a half waffle

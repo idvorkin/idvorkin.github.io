@@ -10,6 +10,7 @@ permalink: /manager-book
 imagefeature: https://github.com/idvorkin/blob/raw/master/blog/racoon-manager.webp
 redirect_from:
   - /the-manager-book
+sort_order: 100
 ---
 
 Being an engineering manager is hard. Supporting people well is harder. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds me how to behave and encourages my own continuous improvement.

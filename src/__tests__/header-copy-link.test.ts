@@ -61,12 +61,13 @@ import {
 } from "../../src/header-copy-link";
 
 // Helper function to create mock header elements
-function createMockHeader(id: string, textContent: string) {
+function createMockHeader(id: string, textContent: string, nextElementSibling: any = null) {
   return {
     id,
     textContent,
     appendChild: vi.fn(),
     addEventListener: vi.fn(),
+    removeEventListener: vi.fn(),
     querySelector: vi.fn(() => null),
     getBoundingClientRect: vi.fn(() => ({
       bottom: 100,
@@ -76,7 +77,22 @@ function createMockHeader(id: string, textContent: string) {
       width: 150,
       height: 20,
     })),
-    nextElementSibling: null,
+    nextElementSibling,
+    childNodes: [
+      {
+        nodeType: 3, // Node.TEXT_NODE
+        textContent: textContent,
+      }
+    ],
+  };
+}
+
+// Helper function to create mock paragraph element
+function createMockParagraph(textContent: string, nextElementSibling: any = null) {
+  return {
+    tagName: 'P',
+    textContent,
+    nextElementSibling,
   };
 }
 
@@ -124,15 +140,18 @@ describe("Header Copy Link", () => {
         textContent: "Test Header",
         appendChild: vi.fn(),
         addEventListener: vi.fn(),
+        removeEventListener: vi.fn(),
         querySelector: vi.fn(() => null),
+        childNodes: [
+          {
+            nodeType: 3, // Node.TEXT_NODE
+            textContent: "Test Header",
+          }
+        ],
       };
 
-      // Mock the content container
-      const mockContainer = {
-        querySelectorAll: vi.fn(() => [mockHeader]),
-      };
-
-      mockDocument.getElementById.mockReturnValue(mockContainer);
+      // Mock querySelectorAll directly on document
+      mockDocument.querySelectorAll.mockReturnValue([mockHeader]);
 
       // Set up window location for localhost
       mockWindow.location.href = "http://localhost:4000/manager-book";
@@ -162,14 +181,18 @@ describe("Header Copy Link", () => {
         textContent: "Test Header",
         appendChild: vi.fn(),
         addEventListener: vi.fn(),
+        removeEventListener: vi.fn(),
         querySelector: vi.fn(() => null),
+        childNodes: [
+          {
+            nodeType: 3, // Node.TEXT_NODE
+            textContent: "Test Header",
+          }
+        ],
       };
 
-      const mockContainer = {
-        querySelectorAll: vi.fn(() => [mockHeader]),
-      };
-
-      mockDocument.getElementById.mockReturnValue(mockContainer);
+      // Mock querySelectorAll directly on document
+      mockDocument.querySelectorAll.mockReturnValue([mockHeader]);
 
       initHeaderCopyLinks();
 
@@ -181,11 +204,8 @@ describe("Header Copy Link", () => {
     it("should use existing header ID if present", () => {
       const mockHeader = createMockHeader("existing-id", "Test Header");
 
-      const mockContainer = {
-        querySelectorAll: vi.fn(() => [mockHeader]),
-      };
-
-      mockDocument.getElementById.mockReturnValue(mockContainer);
+      // Mock querySelectorAll directly on document
+      mockDocument.querySelectorAll.mockReturnValue([mockHeader]);
 
       initHeaderCopyLinks();
 
@@ -199,16 +219,12 @@ describe("Header Copy Link", () => {
         "How do you identify and help eng decide if management is right for them",
       );
 
-      const mockContainer = {
-        querySelectorAll: vi.fn(() => [mockHeader]),
-      };
-
-      mockDocument.getElementById.mockReturnValue(mockContainer);
+      // Mock querySelectorAll directly on document
+      mockDocument.querySelectorAll.mockReturnValue([mockHeader]);
 
       // Mock getElementById to return null for ID uniqueness check
       mockDocument.getElementById.mockImplementation((id: string) => {
         if (id === "header-copy-link-styles") return null;
-        if (id === "content-holder") return mockContainer;
         return null; // No existing elements with generated IDs
       });
 
@@ -221,13 +237,11 @@ describe("Header Copy Link", () => {
     it("should handle special characters in header text", () => {
       const mockHeader = createMockHeader("", "How to EM: Be the manager everyone wants!");
 
-      const mockContainer = {
-        querySelectorAll: vi.fn(() => [mockHeader]),
-      };
+      // Mock querySelectorAll directly on document
+      mockDocument.querySelectorAll.mockReturnValue([mockHeader]);
 
       mockDocument.getElementById.mockImplementation((id: string) => {
         if (id === "header-copy-link-styles") return null;
-        if (id === "content-holder") return mockContainer;
         return null;
       });
 
@@ -241,14 +255,12 @@ describe("Header Copy Link", () => {
       const mockHeader1 = createMockHeader("", "Test Header");
       const mockHeader2 = createMockHeader("", "Different Header");
 
-      const mockContainer = {
-        querySelectorAll: vi.fn(() => [mockHeader1, mockHeader2]),
-      };
+      // Mock querySelectorAll directly on document
+      mockDocument.querySelectorAll.mockReturnValue([mockHeader1, mockHeader2]);
 
       // Mock getElementById to return null for all ID checks (no existing elements)
       mockDocument.getElementById.mockImplementation((id: string) => {
         if (id === "header-copy-link-styles") return null;
-        if (id === "content-holder") return mockContainer;
         return null; // No existing elements with generated IDs
       });
 
@@ -274,30 +286,31 @@ describe("Header Copy Link", () => {
 
       const mockHeader = createMockHeader("test-section", "Test Section");
 
-      const mockContainer = {
-        querySelectorAll: vi.fn(() => [mockHeader]),
-      };
-
-      mockDocument.getElementById.mockReturnValue(mockContainer);
+      // Mock querySelectorAll directly on document
+      mockDocument.querySelectorAll.mockReturnValue([mockHeader]);
 
       // Use default options - localhost is now handled automatically
       initHeaderCopyLinks();
 
-      // Get the click handler that was added to the copy icon
-      const copyIcon = mockDocument.createElement.mock.results[0].value;
+      // Get the copy icon that was appended to the header
+      expect(mockHeader.appendChild).toHaveBeenCalled();
+      const copyIcon = mockHeader.appendChild.mock.calls[0][0];
+      
+      // Get the click handler from the copy icon
+      expect(copyIcon.addEventListener).toHaveBeenCalled();
       const clickHandler = copyIcon.addEventListener.mock.calls.find((call) => call[0] === "click")?.[1];
 
-      if (clickHandler) {
-        const mockEvent = {
-          preventDefault: vi.fn(),
-          stopPropagation: vi.fn(),
-        };
+      expect(clickHandler).toBeDefined();
+      
+      const mockEvent = {
+        preventDefault: vi.fn(),
+        stopPropagation: vi.fn(),
+      };
 
-        await clickHandler(mockEvent);
+      await clickHandler(mockEvent);
 
-        // Should copy the transformed URL with domain mapping and slash instead of hash
-        expect(mockClipboard).toHaveBeenCalledWith("http://idvorkin.azurewebsites.net/manager-book/test-section");
-      }
+      // Should copy the modal.run redirect URL with query parameters
+      expect(mockClipboard).toHaveBeenCalledWith("https://tinyurl.com/igor-blog/?path=manager-book%23test-section");
     });
 
     it("should handle clipboard API failure gracefully", async () => {
@@ -354,32 +367,32 @@ describe("Header Copy Link", () => {
 
       const mockHeader = createMockHeader("test-section", "Test Section");
 
-      const mockContainer = {
-        querySelectorAll: vi.fn(() => [mockHeader]),
-      };
-
-      mockDocument.getElementById.mockReturnValue(mockContainer);
+      // Mock querySelectorAll directly on document
+      mockDocument.querySelectorAll.mockReturnValue([mockHeader]);
 
       initHeaderCopyLinks();
 
-      // Get the click handler
-      const copyIcon = mockDocument.createElement.mock.results[0].value;
+      // Get the copy icon that was appended to the header
+      expect(mockHeader.appendChild).toHaveBeenCalled();
+      const copyIcon = mockHeader.appendChild.mock.calls[0][0];
+      
+      // Get the click handler from the copy icon
       const clickHandler = copyIcon.addEventListener.mock.calls.find((call) => call[0] === "click")?.[1];
 
-      if (clickHandler) {
-        const mockEvent = {
-          preventDefault: vi.fn(),
-          stopPropagation: vi.fn(),
-        };
+      expect(clickHandler).toBeDefined();
+      
+      const mockEvent = {
+        preventDefault: vi.fn(),
+        stopPropagation: vi.fn(),
+      };
 
-        await clickHandler(mockEvent);
+      await clickHandler(mockEvent);
 
-        // Should fall back to execCommand
-        expect(mockBody.appendChild).toHaveBeenCalledWith(mockTextArea);
-        expect(mockTextArea.select).toHaveBeenCalled();
-        expect(mockExecCommand).toHaveBeenCalledWith("copy");
-        expect(mockBody.removeChild).toHaveBeenCalledWith(mockTextArea);
-      }
+      // Should fall back to execCommand
+      expect(mockBody.appendChild).toHaveBeenCalledWith(mockTextArea);
+      expect(mockTextArea.select).toHaveBeenCalled();
+      expect(mockExecCommand).toHaveBeenCalledWith("copy");
+      expect(mockBody.removeChild).toHaveBeenCalledWith(mockTextArea);
     });
   });
 
@@ -403,7 +416,9 @@ describe("Header Copy Link", () => {
     it("should create style element with correct content", () => {
       addHeaderCopyLinkStyles();
 
-      const styleElement = mockDocument.createElement.mock.results[0].value;
+      // Get the style element from head.appendChild call
+      expect(mockDocument.head.appendChild).toHaveBeenCalled();
+      const styleElement = mockDocument.head.appendChild.mock.calls[0][0];
       expect(styleElement.id).toBe("header-copy-link-styles");
       expect(styleElement.textContent).toContain(".header-copy-link");
       expect(styleElement.textContent).toContain("opacity: 0");
@@ -412,19 +427,49 @@ describe("Header Copy Link", () => {
   });
 
   describe("Integration", () => {
+    it("should add share links to all header types including H1", () => {
+      mockDocument.readyState = "complete";
+
+      const mockH1 = createMockHeader("title-header", "Page Title");
+      const mockH2 = createMockHeader("section-header", "Section Header");
+      const mockH3 = createMockHeader("subsection-header", "Subsection Header");
+      
+      [mockH1, mockH2, mockH3].forEach(header => {
+        header.querySelector = vi.fn(() => null);
+      });
+
+      // Mock querySelectorAll directly on document
+      mockDocument.querySelectorAll.mockImplementation((selector: string) => {
+        if (selector === "h1, h2, h3, h4, h5, h6") {
+          return [mockH1, mockH2, mockH3];
+        }
+        return [];
+      });
+
+      mockDocument.getElementById.mockImplementation((id: string) => {
+        if (id === "header-copy-link-styles") return null;
+        return null;
+      });
+
+      initHeaderCopyLinks();
+
+      // Each header should have 2 icons appended (share and GitHub)
+      expect(mockH1.appendChild).toHaveBeenCalledTimes(2);
+      expect(mockH2.appendChild).toHaveBeenCalledTimes(2);
+      expect(mockH3.appendChild).toHaveBeenCalledTimes(2);
+    });
+
     it("should initialize correctly when DOM is ready", () => {
       mockDocument.readyState = "complete";
 
       const mockHeader = createMockHeader("test-header", "Test Header");
 
-      const mockContainer = {
-        querySelectorAll: vi.fn(() => [mockHeader]),
-      };
+      // Mock querySelectorAll directly on document
+      mockDocument.querySelectorAll.mockReturnValue([mockHeader]);
 
-      // Mock getElementById to return null for styles check and mockContainer for content-holder
+      // Mock getElementById to return null for styles check
       mockDocument.getElementById.mockImplementation((id: string) => {
         if (id === "header-copy-link-styles") return null;
-        if (id === "content-holder") return mockContainer;
         return null;
       });
 
@@ -456,13 +501,11 @@ describe("Header Copy Link", () => {
         return null;
       });
 
-      const mockContainer = {
-        querySelectorAll: vi.fn(() => [mockHeader]),
-      };
+      // Mock querySelectorAll directly on document
+      mockDocument.querySelectorAll.mockReturnValue([mockHeader]);
 
       mockDocument.getElementById.mockImplementation((id: string) => {
         if (id === "header-copy-link-styles") return null;
-        if (id === "content-holder") return mockContainer;
         return null;
       });
 
@@ -491,13 +534,11 @@ describe("Header Copy Link", () => {
         return null;
       });
 
-      const mockContainer = {
-        querySelectorAll: vi.fn(() => [mockHeader]),
-      };
+      // Mock querySelectorAll directly on document
+      mockDocument.querySelectorAll.mockReturnValue([mockHeader]);
 
       mockDocument.getElementById.mockImplementation((id: string) => {
         if (id === "header-copy-link-styles") return null;
-        if (id === "content-holder") return mockContainer;
         return null;
       });
 
@@ -518,13 +559,11 @@ describe("Header Copy Link", () => {
       const mockHeader = createMockHeader("test-header", "Test Header");
       mockHeader.querySelector = vi.fn(() => null);
 
-      const mockContainer = {
-        querySelectorAll: vi.fn(() => [mockHeader]),
-      };
+      // Mock querySelectorAll directly on document
+      mockDocument.querySelectorAll.mockReturnValue([mockHeader]);
 
       mockDocument.getElementById.mockImplementation((id: string) => {
         if (id === "header-copy-link-styles") return null;
-        if (id === "content-holder") return mockContainer;
         return null;
       });
       
@@ -536,20 +575,11 @@ describe("Header Copy Link", () => {
       // Should add both copy link and GitHub issue icons
       expect(mockHeader.appendChild).toHaveBeenCalledTimes(2);
       
-      // Check that the created elements include both icons
-      const createdElements = mockDocument.createElement.mock.results
-        .filter(result => result.value.tagName === "SPAN")
-        .map(result => result.value);
-      
-      // Should have created at least 2 span elements (copy link and GitHub issue)
-      expect(createdElements.length).toBeGreaterThanOrEqual(2);
-      
-      // Check for the GitHub issue icon
-      const githubIcon = createdElements.find(el => el.className === "header-github-issue");
-      expect(githubIcon).toBeDefined();
-      // The innerHTML might be empty or contain the icon depending on Font Awesome availability
-      expect(githubIcon?.textContent === '⚠️' || githubIcon?.innerHTML === '<i class="fab fa-github"></i>').toBe(true);
-      expect(githubIcon?.title).toBe("Create GitHub issue for this section");
+      // Check that both icons were appended
+      const appendedElements = mockHeader.appendChild.mock.calls.map(call => call[0]);
+      expect(appendedElements.length).toBe(2);
+      expect(appendedElements[0].className).toContain("header-copy-link");
+      expect(appendedElements[1].className).toContain("header-github-issue");
     });
 
     it("should show popup when GitHub icon is clicked", () => {
@@ -604,13 +634,16 @@ describe("Header Copy Link", () => {
         return element;
       });
 
-      const mockContainer = {
-        querySelectorAll: vi.fn(() => [mockHeader]),
-      };
+      // Mock querySelectorAll directly on document
+      mockDocument.querySelectorAll.mockImplementation((selector: string) => {
+        if (selector === ".github-issue-popup") {
+          return []; // No existing popups
+        }
+        return [mockHeader];
+      });
 
       mockDocument.getElementById.mockImplementation((id: string) => {
         if (id === "header-copy-link-styles") return null;
-        if (id === "content-holder") return mockContainer;
         return null;
       });
 
@@ -632,12 +665,8 @@ describe("Header Copy Link", () => {
         // Should create and show a popup instead of immediately opening GitHub
         expect(mockOpen).not.toHaveBeenCalled();
         
-        // Verify popup was created
-        const createdElements = mockDocument.createElement.mock.results
-          .filter(result => result.value.className === "github-issue-popup")
-          .map(result => result.value);
-        
-        expect(createdElements.length).toBeGreaterThan(0);
+        // Verify popup was created by checking body.appendChild was called
+        expect(mockBodyAppendChild).toHaveBeenCalled();
       }
     });
 
@@ -708,13 +737,11 @@ describe("Header Copy Link", () => {
         return element;
       });
       
-      const mockContainer = {
-        querySelectorAll: vi.fn(() => [mockHeader]),
-      };
+      // Mock querySelectorAll directly on document
+      mockDocument.querySelectorAll.mockReturnValue([mockHeader]);
 
       mockDocument.getElementById.mockImplementation((id: string) => {
         if (id === "header-copy-link-styles") return null;
-        if (id === "content-holder") return mockContainer;
         return null;
       });
 
@@ -829,13 +856,11 @@ describe("Header Copy Link", () => {
         return element;
       });
       
-      const mockContainer = {
-        querySelectorAll: vi.fn(() => [mockHeader]),
-      };
+      // Mock querySelectorAll directly on document
+      mockDocument.querySelectorAll.mockReturnValue([mockHeader]);
 
       mockDocument.getElementById.mockImplementation((id: string) => {
         if (id === "header-copy-link-styles") return null;
-        if (id === "content-holder") return mockContainer;
         return null;
       });
 
@@ -931,13 +956,11 @@ describe("Header Copy Link", () => {
         return element;
       });
       
-      const mockContainer = {
-        querySelectorAll: vi.fn(() => [mockHeader]),
-      };
+      // Mock querySelectorAll directly on document
+      mockDocument.querySelectorAll.mockReturnValue([mockHeader]);
 
       mockDocument.getElementById.mockImplementation((id: string) => {
         if (id === "header-copy-link-styles") return null;
-        if (id === "content-holder") return mockContainer;
         return null;
       });
 
@@ -1043,13 +1066,11 @@ describe("Header Copy Link", () => {
         return element;
       });
       
-      const mockContainer = {
-        querySelectorAll: vi.fn(() => [mockHeader]),
-      };
+      // Mock querySelectorAll directly on document
+      mockDocument.querySelectorAll.mockReturnValue([mockHeader]);
 
       mockDocument.getElementById.mockImplementation((id: string) => {
         if (id === "header-copy-link-styles") return null;
-        if (id === "content-holder") return mockContainer;
         return null;
       });
 
@@ -1094,17 +1115,17 @@ describe("URL Transformation Logic", () => {
       input:
         "http://localhost:4000/manager-book#how-do-you-identify-and-help-eng-decide-if-management-is-right-for-them",
       expected:
-        "http://idvorkin.azurewebsites.net/manager-book/how-do-you-identify-and-help-eng-decide-if-management-is-right-for-them",
+        "https://tinyurl.com/igor-blog/?path=manager-book%23how-do-you-identify-and-help-eng-decide-if-management-is-right-for-them",
       description: "localhost to production with long anchor",
     },
     {
       input: "https://idvork.in/manager-book#test-section",
-      expected: "https://idvorkin.azurewebsites.net/manager-book/test-section",
+      expected: "https://tinyurl.com/igor-blog/?path=manager-book%23test-section",
       description: "production domain mapping",
     },
     {
       input: "http://localhost:4000/simple-page#anchor",
-      expected: "http://idvorkin.azurewebsites.net/simple-page/anchor",
+      expected: "https://tinyurl.com/igor-blog/?path=simple-page%23anchor",
       description: "simple case",
     },
   ];
@@ -1122,19 +1143,21 @@ describe("URL Transformation Logic", () => {
       // Extract the base URL and anchor from input
       const [baseUrl, anchor] = input.split("#");
       mockWindow.location.href = baseUrl;
+      // Also update pathname for the test
+      const url = new URL(baseUrl);
+      mockWindow.location.pathname = url.pathname;
 
       const mockHeader = createMockHeader(anchor, "Test Header");
 
-      const mockContainer = {
-        querySelectorAll: vi.fn(() => [mockHeader]),
-      };
-
-      mockDocument.getElementById.mockReturnValue(mockContainer);
+      // Mock querySelectorAll directly on document
+      mockDocument.querySelectorAll.mockReturnValue([mockHeader]);
 
       initHeaderCopyLinks();
 
-      // Get the click handler
-      const copyIcon = mockDocument.createElement.mock.results[0].value;
+      // Get the copy icon that was appended to the header
+      const copyIcon = mockHeader.appendChild.mock.calls[0][0];
+      
+      // Get the click handler from the copy icon
       const clickHandler = copyIcon.addEventListener.mock.calls.find((call) => call[0] === "click")?.[1];
 
       if (clickHandler) {

@@ -305,7 +305,7 @@ For detailed information on step-up in basis, the "Buy, Borrow, Die" strategy, a
 Explore these related topics to build your complete financial independence strategy:
 
 - **[Planning Your Gap Year](/gap-year)** - How to structure time off between jobs or before retirement
-- **[Igor's Gap Year Journey](/igor-gap-year)** - Personal reflections and lessons from taking a career break
+- **[Igor's Gap Year Journey](/gap-year-igor)** - Personal reflections and lessons from taking a career break
 - **[Retirement Planning](/retire)** - Building towards financial independence and early retirement
 
 These resources complement your stock concentration strategy by addressing the bigger picture of financial planning, tax optimization, and lifestyle design.

@@ -75,7 +75,18 @@
       "Bash(true)",
       "Bash(cat:*)",
       "Bash(docker build:*)",
-      "Bash(./build-dev.sh:*)"
+      "Bash(./build-dev.sh:*)",
+      "Bash(./docker/run-docker.sh:*)",
+      "Bash(act:*)",
+      "Bash(./test-backlinks-action.sh:*)",
+      "Bash(gh run view:*)",
+      "Bash(open https://github.com/idvorkin/idvorkin.github.io/pull/90)",
+      "Bash(uv run:*)",
+      "Bash(open https://github.com/idvorkin/idvorkin.github.io/pull/95)",
+      "Bash(bundle exec:*)",
+      "Bash(/dev/null)",
+      "Bash(git worktree:*)",
+      "Bash(git -C /Users/idvorkin/gits/cc_blog/fetch-modal-content-on-copy push)"
     ],
     "deny": []
   }

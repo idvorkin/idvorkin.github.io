@@ -3,6 +3,7 @@ layout: post
 title: Time off August 2025 - Meta Recharge
 imagefeaturelocal: raccoon-vacation.png
 permalink: /time-off-2025-08
+sort_order: 300
 ---
 
 I'm incredibly fortunate to be able to take 6 weeks off this summer! After 5 years of service at Meta, you get 30 days (about 5 week) off!
@@ -17,6 +18,7 @@ To get the most out of my time off, I'm going to follow my best practice of pre-
 - [Topic](#topic)
   - [Tori is organizing again](#tori-is-organizing-again)
   - [From 12 months to 6 weeks](#from-12-months-to-6-weeks)
+  - [The Great Monday Cat Visitation Protocol (Or: How We Became Slaves to Our Feline Overlords)](#the-great-monday-cat-visitation-protocol-or-how-we-became-slaves-to-our-feline-overlords)
 - [By Week](#by-week)
 - [Stuff happening](#stuff-happening)
   - [Candidates](#candidates)
@@ -74,9 +76,19 @@ Tori and I spent a lot of time on our relationship this year, and she's organize
 
 ### From 12 months to 6 weeks
 
-Five years ago, I dreamed of taking a year off of work - [a gap year](/igor-gap-year) if you will. I spent a lot of time thinking through a gap year, and it's more important then ever now that the kids are running out of time. But that's a separate blog post
+Five years ago, I dreamed of taking a year off of work - [a gap year](/gap-year-igor) if you will. I spent a lot of time thinking through a gap year, and it's more important then ever now that the kids are running out of time. But that's a separate blog post
 
-{%include summarize-page.html src="/igor-gap-year"%}
+{%include summarize-page.html src="/gap-year-igor"%}
+
+### The Great Monday Cat Visitation Protocol (Or: How We Became Slaves to Our Feline Overlords)
+
+Here's our travel hack: the Monday Cat Check-In System™. Instead of pet sitters, we return every Monday to prevent feline coups and unauthorized DoorDash orders.
+
+Perfect timing since we booked Monday improv classes with [Matt Smith](https://www.mattsmithimprov.com/), who helped establish Seattle's comedy scene in the '90s. Our routine: check on judgmental cats ("Oh, you're back AGAIN?"), then learn to be funny on command.
+
+The cats have caught on, scheduling Sunday night drama for maximum Monday impact. But instead of shoe logistics operations, we're more likely to find nature's surprises: a desiccated hummingbird artfully displayed on the welcome mat, or a beheaded rabbit positioned like modern art in the hallway. I'm pretty sure they're testing our commitment to this arrangement.
+
+But honestly? Weekly guaranteed animal discovery AND comedy training while road-tripping? Pure genius.
 
 ## By Week
 

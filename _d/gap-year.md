@@ -44,7 +44,7 @@ We've been conditioned to think of career breaks as financial suicide, but this 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-{% include summarize-page.html src="/igor-gap-year" %}
+{% include summarize-page.html src="/gap-year-igor" %}
 
 ## The Traditional Math vs. The Real Math
 
@@ -263,6 +263,6 @@ The traditional path promises security through endless accumulation. The gap yea
 
 If you're reading this and feeling that familiar mixture of excitement and terror, you might be one of the few people positioned to make this unconventional choice. The gap year isn't about escaping your life - it's about designing a life worth living.
 
-For my own wrestling match with these dragons and the specific calculations of someone considering this path, see my companion piece: **[Will Igor Take a Gap Year?](/igor-gap-year)**
+For my own wrestling match with these dragons and the specific calculations of someone considering this path, see my companion piece: **[Will Igor Take a Gap Year?](/gap-year-igor)**
 
 The time is now. The question is: will you take it? 🌟

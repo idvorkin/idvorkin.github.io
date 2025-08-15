@@ -74,7 +74,10 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
   - [Financial Diabetes Complications](#financial-diabetes-complications)
 - [Other questions](#other-questions)
   - [How much is 1%](#how-much-is-1)
-- [Other Resources](#other-resources)
+- [Appendix](#appendix)
+  - [How much is 1%](#how-much-is-1)
+  - [Blast From the Past — My Budget as a College Student](#blast-from-the-past---my-budget-as-a-college-student)
+  - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -183,6 +186,8 @@ I use:
 - Monarch now has an Amazon Importer
 
 I also pay all my credit cards and mortgages from a single account - so that's my source of truth to make sure I'm not missing major stuff (and boy I often am).
+
+
 
 ### Retirment Planning
 
@@ -518,6 +523,8 @@ Like medical diabetes, financial diabetes leads to numerous complications if lef
 - Should I hold any bonds?
 - Where should I keep my emergency fund and how much?
 
+## Appendix
+
 ### How much is 1%
 
 From [ChatGPT](https://gist.github.com/idvorkin/df0ec94f8bbadb26d99ebd54b55b6358)
@@ -546,7 +553,13 @@ Relative
 | 2020 | 18.0% (94.8%)  | 12.8% (74.0%) | 10.0% (67.9%) | 17.2% (61.7%) |
 | 2024 | 18.9% (134.3%) | 13.6% (98.5%) | 9.1% (82.2%)  | 19.4% (91.1%) |
 
-## Other Resources
+### Blast From the Past — My Budget as a College Student
+
+Wow — as a college student in Canada in 1998, I was living on $1,063 per month (CAD). Inflation‑adjusted to 2025, that's about $1,920 per month.
+
+<img src="/images/ipaste/20250809_193602.webp" class="img-fluid w-100" />
+
+### Other Resources
 
 [Visualizing the worlds money](https://www.visualcapitalist.com/all-of-the-worlds-money-and-markets-in-one-visualization-2020/)
 

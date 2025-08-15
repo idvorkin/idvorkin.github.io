@@ -1,0 +1,14 @@
+# CI-specific Jekyll configuration
+# This file is merged with _config.yml when building in CI
+
+# Exclude vendor directory (where bundler installs gems in CI)
+exclude:
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - package.json
+  - package-lock.json
+  - README.md
+  - .git/
+  - .github/

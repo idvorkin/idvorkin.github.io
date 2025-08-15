@@ -82,13 +82,17 @@
 <script type="module">
   import { CreateAutoComplete } from "/assets/js/index.js";
   $(document).ready(function () {
-    CreateAutoComplete(
-      "{{ site.algolia.application_id}}",
-      "{{ site.algolia.search_only_api_key }}",
-      "{{ site.algolia.index_name }}",
-      "#autocomplete-search-box",
-      false
-    );
+    // Only initialize autocomplete if we're not on the index page
+    // The index page has its own initialization with custom settings
+    if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') {
+      CreateAutoComplete(
+        "{{ site.algolia.application_id}}",
+        "{{ site.algolia.search_only_api_key }}",
+        "{{ site.algolia.index_name }}",
+        "#autocomplete-search-box",
+        false
+      );
+    }
   });
 
   $("#autocomplete-search-box-button").click(function () {

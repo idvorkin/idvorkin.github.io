@@ -1,7 +1,7 @@
 ---
 title: "Will Igor Take a Gap Year? Wrestling with Dragons and Dreams at 50"
 layout: post
-permalink: /igor-gap-year
+permalink: /gap-year-igor
 imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-gapyear.webp
 tags:
   - personal
@@ -15,6 +15,8 @@ The gap year concept is compelling in theory, but what does it look like when ru
 
 This is the personal companion to my broader piece on [the gap year paradox](/gap-year) - where theory meets Igor's very specific neuroses and circumstances.
 
+{% include summarize-page.html src="/gap-year" %}
+
 {% include blob_image_float_right.html src="blog/raccoon-gapyear.webp" %}
 
 <!-- prettier-ignore-start -->
@@ -26,7 +28,7 @@ This is the personal companion to my broader piece on [the gap year paradox](/ga
 - [Igor's Financial Security Dragon](#igors-financial-security-dragon)
 - [Slaying Financial Security](#slaying-financial-security)
 - [Igor's Decay Dragon: Health and Habits (Physical, Emotional, Relationship)](#igors-decay-dragon-health-and-habits-physical-emotional-relationship)
-- [Slaying Decay - Reframe: Health and Habits Capital Investment (Physical, Emotional, Relationship)](#slaying-decay---reframe-health-and-habits-capital-investment-physical-emotional-relationship)
+- [Slaying Decay - Health and Habits Investment](#slaying-decay---health-and-habits-investment)
 - [Battling Addiction](#battling-addiction)
   - [Addiction Success](#addiction-success)
 - [Battling Family Resentment](#battling-family-resentment)
@@ -36,20 +38,23 @@ This is the personal companion to my broader piece on [the gap year paradox](/ga
 - [Battling Loneliness](#battling-loneliness)
   - [Loneliness Success](#loneliness-success)
 - [Igor's Identity Dragon](#igors-identity-dragon)
-- [Slaying Identity - Reframe: PhD in AI, Content Creation, and MRR](#slaying-identity---reframe-phd-in-ai-content-creation-and-mrr)
+- [Slaying Identity - PhD in AI, Content, and MRR](#slaying-identity---phd-in-ai-content-and-mrr)
+- [First 90 Days Plan](#first-90-days-plan)
 - [Gap Year Pre-Mortem](#gap-year-pre-mortem)
 - [Gap Year Voices in my head](#gap-year-voices-in-my-head)
+ - [Can 1 Be 2? The Extend-to-Year-2 Rule](#can-1-be-2-the-extend-to-year-2-rule)
+ 
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-{% include summarize-page.html src="/gap-year" %}
+
 
 ## Is Igor Gonna take a gap year?
 
 {% include alert.html content="I'm incredibly privileged to have both line of sight on savings and the support of my family to even consider a gap year" style="info" %}
 
-When I started at Meta in March 2020 my plan was to take a gap year after my Meta stock cliffed in 2024. After all, I had 5 job offers include competitive offers from Google, Meta, and several mid sized companies. But today's job market is much much scarier than pre-COVID 2020 - it's become downright dicey out there.
+When I started at Meta in March 2020, my plan was to take a gap year after my Meta stock vested in 2024. After all, I had five job offers, including competitive offers from Google, Meta, and several mid-sized companies. But today's job market is much scarier than pre-COVID 2020 — it's become downright dicey out there.
 
 But there's more to life than collecting money, here are some what ifs I need to remember:
 
@@ -91,7 +96,7 @@ In Phase 3, I anticipate wanting to work extensively - but Phases 1 and 2 repres
 
 **Hey you're not talking about Tori, doesn't time with her matter?**
 
-It certainly does, but Tori needs her own time, and our relationship is set up where we don't need a tonne of time together.
+It certainly does, but Tori needs her own time, and our relationship is set up where we don't need a ton of time together.
 
 **What about travel?**
 
@@ -110,6 +115,10 @@ Work provided three critical pieces of dragon management infrastructure:
 These weren't lies or rationalizations. Work really does make it harder to maintain perfect health habits, nurture relationships, or address deeper personal questions. The excuses were often completely valid.
 
 But the gap year opens the box. Suddenly there's no meeting schedule to explain away poor health habits, no work exhaustion to buffer loneliness, no legitimate crisis to postpone difficult conversations with family. You need to create your own social connections, generate your own sense of urgency and purpose, and face your habits without the comfortable excuse of being legitimately exhausted.
+
+**The Parkinson's Law Dragon** is particularly vicious. At work, deadlines create artificial scarcity that forces efficiency. Without external constraints, tasks expand to fill available time - what should take 2 hours somehow takes all morning. This dragon whispers: "You have all day, so why rush?" The result: a slow drift into inefficiency that makes you feel simultaneously busy and unproductive. It's the worst kind of dragon because it makes you complicit in your own time theft.
+
+**The Financial Security Dragon** reveals itself differently during a gap year. When you had a steady paycheck, market fluctuations were abstract background noise - you weren't drawing from investments, so volatility didn't matter day-to-day. But during a gap year, every market dip feels personal because you're actually living off those investments. The dragon transforms the market from a distant abstraction into a daily anxiety generator, making you hyperaware of every percentage point change in your portfolio.
 
 The dragons are the same size they've always been. The difference is now you're face-to-face with them in an empty room, and the uncomfortable truth emerges: some of your struggles weren't actually about time or energy - they were about something deeper that work was helping you avoid.
 
@@ -137,7 +146,7 @@ The dragons are the same size they've always been. The difference is now you're 
   - This is very probable.
   - **But** Meta lets you have a "short interview loop" if you boomerang in a year
   - **But** I've always said if you won't take a job for a pay cut, you shouldn't take it. I guess that could be cuz the job is less fun, or cuz it's the highest paid job you'll take :)
-  - **So** My retirement is not delayed by 1.5 years, It's delayed by 'N' years, that's OK, the year now is much more valuable
+  - **So** My retirement isn't delayed by 1.5 years; it's delayed by N years. That's acceptable because the year now is more valuable
 
 - What if I'm wrong about my expenses?
   - It's critical you get this right.
@@ -157,7 +166,11 @@ _If you're not gonna feel safe at 2 years \* your expenses, it's hard to imagine
 
 ## Slaying Financial Security
 
-See my full [money philosophy](/money) and [retirement planning](/retire) for context on these financial triggers.
+See my full [money philosophy](/money), [retirement planning](/retire), and [stock concentration](/stock-concentration) for context on these financial triggers.
+
+{% include summarize-page.html src="/money" %}
+
+{% include summarize-page.html src="/retire" %}
 
 Igor at his best when 5am Igor "[Begins with end in Mind](/end-in-mind)", and sets up future Igor to run on Automatic. So here are some rules
 
@@ -174,14 +187,17 @@ Gap year is scary, here are some guard rails to make it happen:
 
 * What are the actual dates and numbers?
 
-  - Well, a magician never reveals his tricks, and Igor's gotta have some secrets 🎩✨
+  - Well, a magician never reveals his tricks, and Igor's gotta have some secrets.
 
 * Come on, can you at least give a formula?
-  - Have 2 years of expenses in the bank, if at the one year mark the market at 5% can replace the next year of cash, feel safe taking another gap year, else start a job hunt immediately
-  - This makes for the following assumptions
-    - You can get a job (possibly making much less than you do now) in under a year
-    - You don't have any "large unexpected expenses" Ensure your model can handle that.
-    - You are very confident in your expenses calculations (taxes, insurance, major house repairs, college)
+  - Baseline: Hold 2× annual expenses in cash-like accounts
+  - At month 12: If a 5% market return would replenish the next year’s cash draw, extend; otherwise begin job search
+  - Assumptions:
+    - Job search duration ≤ 12 months (possibly at lower comp)
+    - Model accommodates large unexpected expenses
+    - Expenses estimate includes taxes, insurance, repairs, college
+
+
 
 ## Igor's Decay Dragon: Health and Habits (Physical, Emotional, Relationship)
 
@@ -237,7 +253,7 @@ Gap year is scary, here are some guard rails to make it happen:
   - **But** I have mental health support systems (therapy, medication, practices) that would continue
   - **So** Keep existing mental health infrastructure in place throughout the gap year
 
-## Slaying Decay - Reframe: Health and Habits Capital Investment (Physical, Emotional, Relationship)
+## Slaying Decay - Health and Habits Investment
 
 This connects to my broader thinking on [physical health](/physical-health), [mental health](/emotional-health), and [relationship health](/chapters).
 
@@ -256,11 +272,16 @@ You can probably look at my [2025 goals](/y25), which sadly look a lot like my [
 
 For me, addiction isn't about alcohol (I gave that up for better [sleep](/sleep)) - it's social media. The endless scroll, the dopamine hits from notifications, the fear of missing out. During a gap year, without the structure of work, these digital sirens could easily consume entire days.
 
-{%include summarize-page.html src="/addiction"%}
+{% include summarize-page.html src="/addiction" %}
 
 ### Addiction Success
 
-- Limited screen time on social media
+{% include alert.html content="This is progress" style="info" %}
+
+- Max 30 minutes/day on social apps
+- Phone set to grayscale; app timers enforced
+- One "no-screen" block after 8pm daily
+- Weekly screen-time audit and reset
 
 ## Battling Family Resentment
 
@@ -272,7 +293,7 @@ However, it’s important to be realistic.  There are two sources of family rese
 
 When I'm working, I only see my family in short bursts - mornings, evenings, weekends. But during a gap year, I'll be around all the time to observe their natural rhythms. Parkinson's law is very real: for kids and folks who aren't working, many things take longer than they could. What's worse is when I'm judging myself for being inefficient during my gap year (see [addiction](/addiction)) seeing the same patterns in my family bothers me even more. It's a mirror I don't always want to look into.
 
-{%include summarize-page.html src="/parkinson"%}
+{% include summarize-page.html src="/parkinson" %}
 
 ### The time investment mismatch
 
@@ -282,23 +303,24 @@ The real challenge isn't the quantity of time but learning to appreciate the qua
 
 ### Family Success
 
-{% include alert.html content="This section needs more thinking, but gotta start somewhere" style="info" %}
-
 **Success looks like:**
 
-- **Nothing is more valuable than family** - the time spent together holds the greatest meaning
-- I'm **fully engaged and genuinely present**, free from work distractions and stress
-- **Being available for spontaneous moments** - not missing unexpected connections because of conflicting commitments
-- We spontaneously talk to each other
-- We hang out passively (e.g., we go to a coffee shop together and do our own thing)
-- We establish a consistent date night approach
-- I accept them as they are, but still strive to influence them respectfully
-- I gracefully accept that I'm rarely their first choice - their peer relationships are essential for growth
-- I find ways to be present without intruding (e.g., driving them and friends places, stepping back when peers join)
-- I embrace the bittersweet nature of watching them grow - sad they'll never be small again, but grateful they get to grow up
-- STRETCH: We pick up a multi-month project we do together
+- **Nothing is more valuable than family** – the time together holds the greatest meaning
+- Fully engaged and present (free from work distractions and stress)
+- Available for spontaneous moments (no conflicts blocking connection)
+- Natural conversation happens regularly
+- Passive hangouts (e.g., coffee shop together doing our own thing)
+- Consistent date night approach
+- Acceptance with gentle influence where appropriate
+- Gracefully step back when peers join; facilitate logistics (driving, hosting)
+- Embrace the bittersweet nature of their growth
+- STRETCH: Multi-month project we do together
+- Metrics:
+  - Monthly 1:1 with each kid; weekly spontaneous-time log
+  - Weekly date night; monthly day date
+  - One shared project per quarter
 
-**Successful parenting** ultimately means my children know, deep down, that I'm always there for them—quietly in the background, offering steady support without pressure, ready whenever they need me.
+**Successful parenting** ultimately means my children know, deep down, that I'm always there for them — quietly in the background, offering steady support without pressure, ready whenever they need me.
 
 ## Battling Loneliness
 
@@ -329,9 +351,11 @@ Mitigations:
     - Put the time to answer how that makes me feel
     - Weird but pretty interesting
 
-{%include summarize-page.html src="/lonely"%}
+{% include summarize-page.html src="/lonely" %}
 
 ### Loneliness Success
+
+{% include alert.html content="Note in progress" style="info" %}
 
 **Success looks like:**
 
@@ -342,6 +366,45 @@ Mitigations:
 - STRETCH: **Mentorship at scale** - Helping others with my time and experience
 - STRETCH: **Online community building** - Meeting interesting people on the internet
 
+Metrics:
+- Two recurring daytime social blocks per week
+- One new person/group per month
+- One quarterly daylong/retreat with a friend
+
+## First 90 Days Plan
+
+Daily cadence:
+- Exercise (kettlebell/strength + walk)
+- Writing block (artifact-focused)
+- Learning block (AI/skills)
+- Family time window
+- Evening walk and shutdown
+
+Weekly cadence:
+- Two social blocks (daytime)
+- One long-form artifact or ship a micro-app
+- One deep work block (3–4 hours, no meetings)
+- One admin/finance review
+
+Accountability:
+- Weekly review and plan
+- Share an artifact publicly or with a small circle
+
+{% include alert.html content="This plan is iterative; reassessment cadence below will adjust details" style="info" %}
+
+## Reassessment and Exit Triggers
+
+Cadence:
+- Monthly review: health adherence, artifact shipping, cash runway
+- Quarterly retro: adjust goals, social cadence, project WIP
+
+Early exit triggers:
+- Health adherence < 50% for 2 consecutive months
+- Family stress rising (qualitative check-ins indicate sustained strain)
+- Cash buffer < 1.25× annual expenses or large unexpected expense without coverage
+
+If any trigger persists after one month of mitigation, begin job search protocol.
+
 ## Igor's Identity Dragon
 
 - Forget telling the future, what does taking a gap year say about me ?
@@ -350,19 +413,19 @@ Mitigations:
 - **But** It can be about overcoming my fear and investing in myself and relationships
 - **So:** Reframe to be a PhD and A Year of [Health](/physical-health) and [Habits](/d/habits) Capital Investments
 
-## Slaying Identity - Reframe: PhD in AI, Content Creation, and MRR
+## Slaying Identity - PhD in AI, Content, and MRR
 
 This aligns with my approach to [continuous learning](/timeoff) and [overcoming resistance](/d/resistance) to change.
 
-Instead of thinking about it as a gap year (for which I'd feel guilty), I'll think about it as pursuing a "PhD in AI, Content Creation, and MRR" - focusing on my professional development. On the technical side, I'd become an AI expert by learning everything about the field [TODO: link to AI posts], while also mastering content creation and building monthly recurring revenue streams.
+Instead of thinking about it as a gap year (for which I'd feel guilty), I'll think about it as pursuing a "PhD in AI, Content Creation, and MRR" - focusing on my professional development. On the technical side, I'd become an AI expert by learning everything about the field (see my posts on [AI](/ai)), while also mastering content creation and building monthly recurring revenue streams.
 
 Creating artifacts is crucial - tangible outputs that prove the gap year was productive and provide lasting value. These artifacts serve as both motivation during the year, long term deposits in your relationship and health bank accounts, and career capital when returning to work.
 
 **AI Goals/Artifacts**
 
-- Learning artifacts: Comprehensive AI knowledge base, experiment logs, model implementations
-- Several Apps written via AI, starting with PRDs
-- Content artifacts: AI tutorial series, technical blog posts, open source contributions
+- 12 PRDs, 6 shipped micro-apps
+- 12 technical posts, 4 talks/videos
+- Working notes repo for experiments/implementations
 
 **Content Creation Goals/Artifacts**
 
@@ -373,19 +436,46 @@ Maybe no one will read/watch it but me and my Mom, but good enough for me.
 
 **MRR Goals/Artifacts**
 
-Monthly recurring revenue? That would be pretty cool. Certainly I get much higher MRR at Meta, but MRR is hopefully forever due to evergreen, or mostly evergreen content.
+Monthly recurring revenue would be miniscule vs. a tech salary.
 
-Will this actually slay the Financial Security Dragon? Let's be real - we're talking about pocket change compared to a tech salary. But hey, a man can dream of becoming the next MrBeast of gap year content! 🎬💰
-
-- Product artifacts: TBD
-- Revenue artifacts: Affiliate links? Course? Ad Revenue from Content? Who knows
+- Product: 1 paid template; 1 cohort workshop pilot
+- Revenue: Affiliate links; ad revenue experiments (goal: $100/month after 6 months); course outline; analysis of the voices in my head on the topic
 
 ## Gap Year Pre-Mortem
 
-In tech one of the tools we have to avoid failure is to run a pre-mortem, an exercise where we imagine we've failed, and how did it happen - I guess I should do this for a gap-year as well. I think this is another pivot on the dragons above
+Top failure modes and mitigations (mapped to the dragons above):
+
+- Drift/vegetating
+  - Mitigation: Daily plan + weekly review; external structure (trainer/classes)
+- Isolation/loneliness
+  - Mitigation: Pre-scheduled social slots; join clubs/classes; mentorship calendar
+- Scope creep on projects
+  - Mitigation: WIP limit (max two active projects); define “done” for each artifact
+- Cash anxiety
+  - Mitigation: Pre-fund 2× annual expenses; monthly runway update; rules in “Slaying Financial Security”
+- Family resentment
+  - Mitigation: Align expectations; time-window reality check; weekly gratitude log
 
 ## Gap Year Voices in my head
 
-In tech one of the tools we have to avoid failure is to run a pre-mortem, an exercise where we imagine we've failed, and how did it happen - I guess I should do this for a gap-year as well. I think this is another pivot on the dragons above
+{% include summarize-page.html src="/voices" %}
 
-{%include summarize-page.html src="/voices"%}
+## Can 1 Be 2? The Extend-to-Year-2 Rule
+
+At month 10, ask one question: can one year become two?
+
+Extend to Year 2 if ALL are true:
+
+- Health adherence ≥ 80% (sleep, workouts, nutrition, mental health cadence)
+- 6+ meaningful artifacts shipped (posts, micro-apps, talks, or equivalent)
+- Money check passes:
+  - You hold ≥ 2× annual expenses in cash-like accounts, and
+  - At the 12-month mark, a 5% portfolio return can replenish the next year’s draw
+
+Otherwise, use Year 2 as the pre-funded job-search runway: plan in months 10–11 and start the search at month 12.
+
+Why month 10?
+
+- Two months preserves optionality for a targeted search without panic and lets you prep materials before month 12.
+
+Closing thought: A gap year isn’t a year off; it’s a year on — intentional investment in health, relationships, and mastery while you still have the energy to enjoy the returns.
