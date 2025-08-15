@@ -30,14 +30,22 @@ const DEFAULT_OPTIONS: CopyLinkOptions = {
 function createCopyLinkIcon(options: CopyLinkOptions): HTMLElement {
   const icon = document.createElement("span");
   icon.className = options.iconClass || DEFAULT_OPTIONS.iconClass || "";
-  icon.innerHTML = "🔗"; // Using emoji for now, can be replaced with SVG icon
-  icon.title = "Copy link to this section";
+  icon.title = "Share this section";
   icon.style.cursor = "pointer";
   icon.style.marginLeft = "0.5rem";
   icon.style.opacity = "0";
   icon.style.transition = "opacity 0.2s ease";
   icon.style.fontSize = "0.8em";
   icon.style.userSelect = "none";
+  
+  // Add accessibility attributes
+  icon.setAttribute('role', 'button');
+  icon.setAttribute('tabindex', '0');
+  icon.setAttribute('aria-label', 'Share this section');
+  
+  // Always use emoji for now since Font Awesome isn't loaded
+  // The iOS share icon would require Font Awesome 6: fa-solid fa-arrow-up-from-bracket
+  icon.textContent = '↗️';
 
   return icon;
 }
@@ -275,9 +283,9 @@ function transformUrl(url: string, options: CopyLinkOptions): string {
 }
 
 /**
- * Copies the header link to clipboard
+ * Shares or copies the header link based on device capabilities
  */
-async function copyHeaderLink(headerId: string, options: CopyLinkOptions): Promise<void> {
+async function shareOrCopyHeaderLink(headerId: string, options: CopyLinkOptions): Promise<boolean> {
   try {
     // Get the current page path
     const pathname = window.location.pathname;
@@ -286,12 +294,34 @@ async function copyHeaderLink(headerId: string, options: CopyLinkOptions): Promi
     // Generate the modal.run redirect URL
     const redirectUrl = makeRedirectUrl(pagePath, headerId);
     
-    // Copy the redirect URL to clipboard
+    // Get header text for share title
+    const header = document.getElementById(headerId);
+    const headerText = header ? header.textContent || "" : "";
+    const shareTitle = `${headerText} - Igor's Blog`;
+    
+    // Check if Web Share API is available (primarily mobile)
+    if (navigator.share && /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+      try {
+        await navigator.share({
+          title: shareTitle,
+          text: `Check out this section: ${headerText}`,
+          url: redirectUrl
+        });
+        console.log(`Shared via native share: ${redirectUrl}`);
+        return true; // Indicates share was successful
+      } catch (shareError) {
+        // User cancelled share or share failed, fall through to clipboard
+        console.log("Share cancelled or failed, falling back to clipboard", shareError);
+      }
+    }
+    
+    // Fallback to clipboard copy for desktop or if share fails
     await navigator.clipboard.writeText(redirectUrl);
-
     console.log(`Copied redirect URL: ${redirectUrl}`);
+    return false; // Indicates copy was used instead of share
+    
   } catch (error) {
-    console.error("Failed to copy header link:", error);
+    console.error("Failed to share/copy header link:", error);
 
     // Fallback: use textarea method if clipboard API fails
     try {
@@ -308,8 +338,10 @@ async function copyHeaderLink(headerId: string, options: CopyLinkOptions): Promi
       document.body.removeChild(textArea);
       
       console.log(`Copied redirect URL (fallback): ${redirectUrl}`);
+      return false;
     } catch (fallbackError) {
       console.error("Failed to copy URL even with fallback:", fallbackError);
+      throw fallbackError;
     }
   }
 }
@@ -432,6 +464,9 @@ const headerCleanupFunctions = new WeakMap<HTMLElement, (() => void)[]>();
 // Store popup references for lazy loading
 const headerPopups = new WeakMap<HTMLElement, HTMLElement>();
 
+// Track all headers for cleanup purposes
+const trackedHeaders = new Set<HTMLElement>();
+
 /**
  * Creates and shows popup lazily when needed
  */
@@ -533,16 +568,29 @@ function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): voi
   const githubIcon = createGitHubIssueIcon();
   const cleanupFunctions: (() => void)[] = [];
 
-  // Add click handler for copy link
-  const copyClickHandler = async (event: Event) => {
+  // Add click handler for share/copy link
+  const shareClickHandler = async (event: Event) => {
     event.preventDefault();
     event.stopPropagation();
 
-    await copyHeaderLink(headerId, options);
-    showCopiedTooltip(copyIcon, options.tooltipDuration);
+    const wasShared = await shareOrCopyHeaderLink(headerId, options);
+    // Only show tooltip if we copied (not if we used native share)
+    if (!wasShared) {
+      showCopiedTooltip(copyIcon, options.tooltipDuration);
+    }
   };
-  copyIcon.addEventListener("click", copyClickHandler);
-  cleanupFunctions.push(() => copyIcon.removeEventListener("click", copyClickHandler));
+  copyIcon.addEventListener("click", shareClickHandler);
+  cleanupFunctions.push(() => copyIcon.removeEventListener("click", shareClickHandler));
+  
+  // Add keyboard support for accessibility
+  const keyboardHandler = (event: KeyboardEvent) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      shareClickHandler(event);
+    }
+  };
+  copyIcon.addEventListener("keydown", keyboardHandler);
+  cleanupFunctions.push(() => copyIcon.removeEventListener("keydown", keyboardHandler));
 
   // Add click handler for GitHub issue icon to show popup (lazy loading)
   const githubClickHandler = (event: Event) => {
@@ -596,6 +644,7 @@ function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): voi
   
   // Store cleanup functions for this header
   headerCleanupFunctions.set(header, cleanupFunctions);
+  trackedHeaders.add(header);
 }
 
 /**
@@ -603,16 +652,21 @@ function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): voi
  */
 export function cleanupHeaderCopyLinks(): void {
   // Clean up all stored event listeners
-  headerCleanupFunctions.forEach((cleanupFns) => {
-    cleanupFns.forEach(fn => fn());
+  trackedHeaders.forEach((header) => {
+    const cleanupFns = headerCleanupFunctions.get(header);
+    if (cleanupFns) {
+      cleanupFns.forEach(fn => fn());
+    }
+    
+    // Remove popup if exists
+    const popup = headerPopups.get(header);
+    if (popup) {
+      popup.remove();
+    }
   });
-  headerCleanupFunctions.clear();
   
-  // Remove all popups
-  headerPopups.forEach((popup) => {
-    popup.remove();
-  });
-  headerPopups.clear();
+  // Clear the tracked headers set
+  trackedHeaders.clear();
   
   // Reset initialization flag
   isHeaderCopyLinksInitialized = false;
@@ -624,11 +678,11 @@ export function cleanupHeaderCopyLinks(): void {
 export function initHeaderCopyLinks(customOptions: Partial<CopyLinkOptions> = {}): void {
   const options: CopyLinkOptions = { ...DEFAULT_OPTIONS, ...customOptions };
 
-  // Find all headers in the main content area
-  const contentContainer = document.getElementById("content-holder") || document.body;
-  const headers = contentContainer.querySelectorAll("h1, h2, h3, h4, h5, h6");
+  // Find all headers on the page (including H1)
+  // Some H1s are outside content-holder, so search the entire document
+  const allHeaders = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
 
-  for (const header of Array.from(headers)) {
+  for (const header of Array.from(allHeaders)) {
     addCopyLinkToHeader(header as HTMLElement, options);
   }
 }

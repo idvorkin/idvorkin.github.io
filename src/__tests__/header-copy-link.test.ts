@@ -412,6 +412,40 @@ describe("Header Copy Link", () => {
   });
 
   describe("Integration", () => {
+    it("should add share links to all header types including H1", () => {
+      mockDocument.readyState = "complete";
+
+      const mockH1 = createMockHeader("title-header", "Page Title");
+      const mockH2 = createMockHeader("section-header", "Section Header");
+      const mockH3 = createMockHeader("subsection-header", "Subsection Header");
+      
+      [mockH1, mockH2, mockH3].forEach(header => {
+        header.querySelector = vi.fn(() => null);
+      });
+
+      const mockContainer = {
+        querySelectorAll: vi.fn((selector: string) => {
+          if (selector === "h1, h2, h3, h4, h5, h6") {
+            return [mockH1, mockH2, mockH3];
+          }
+          return [];
+        }),
+      };
+
+      mockDocument.getElementById.mockImplementation((id: string) => {
+        if (id === "header-copy-link-styles") return null;
+        if (id === "content-holder") return mockContainer;
+        return null;
+      });
+
+      initHeaderCopyLinks();
+
+      // Each header should have 2 icons appended (share and GitHub)
+      expect(mockH1.appendChild).toHaveBeenCalledTimes(2);
+      expect(mockH2.appendChild).toHaveBeenCalledTimes(2);
+      expect(mockH3.appendChild).toHaveBeenCalledTimes(2);
+    });
+
     it("should initialize correctly when DOM is ready", () => {
       mockDocument.readyState = "complete";
 

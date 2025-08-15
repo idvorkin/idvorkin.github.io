@@ -191,3 +191,11 @@ When working with git worktrees, Claude must be run from the parent directory to
   - Example: "User has copied an image to clipboard and wants it analyzed"
 - Only extract images manually if the image-content-analyzer agent is not available
 ## Never merge yourself, the user must do that from PR
+
+## PR Best Practices
+
+- Before pushing PR, run the code review agent
+- When updating a PR with significant changes, update the PR description to reflect all current changes
+- Include any fixes or improvements made during development in the PR description
+- When starting a jekyll server, check to see the port isn't already in use. If it is, pick a ranomd port between 5000 and 6000.
+- OK tell it when running jekyll pick a random live reload port everytime as well
