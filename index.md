@@ -85,22 +85,6 @@ no-render-title: true
     line-height: 1.3;
 }
 
-/* Welcome message */
-.welcome-message {
-    text-align: center;
-    margin: 40px 20px 20px;
-}
-
-.welcome-message h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-.welcome-message p {
-    font-size: 1.2em;
-    color: #666;
-}
-
 /* Highlight matching text */
 .highlight {
     background: yellow;
@@ -108,13 +92,8 @@ no-render-title: true
 }
 </style>
 
-<div class="welcome-message">
-    <h1>Welcome to Igor's Blog</h1>
-    <p>Start typing to search, or explore featured, recent, and random posts below</p>
-</div>
-
 <div class="search-container">
-    <input type="text" class="search-input" id="search-input" placeholder="Search Igor's Musings..." />
+    <input type="text" class="search-input" id="search-input" placeholder="Search Igor's Blog, or browse featured/recent/random posts below..." />
     
     <div class="results-container" id="results-container">
         <div class="results-section" id="featured-section">

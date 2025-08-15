@@ -62,17 +62,18 @@ When adding new features or fixing bugs, **always add both unit tests and e2e te
 - If NPM tools are not installed, install them
 
 ### Running Jekyll Server
-- **Default**: `just jekyll-serve` (port 4000)
+- **Default**: `just jekyll-serve` (port 4000, livereload port 35729)
 - **Custom port**: `just jekyll-serve 4002`
-- **Run in background**: `just jekyll-serve 4002 > /tmp/jekyll-worktree.log 2>&1 &`
+- **Custom ports with livereload**: `just jekyll-serve 4002 35730`
+- **Run in background**: `just jekyll-serve 4002 35730 > /tmp/jekyll-worktree.log 2>&1 &`
 - **Check port availability first**: If port in use, pick random port between 5000-6000
-- **Use random live reload port**: Pick a random live reload port each time
+- **Use random live reload port**: Pick a random live reload port (e.g., 35000-36000) to avoid conflicts
 - **Open page in browser**: `open http://localhost:4002/page-name`
 - **Open specific section**: `open http://localhost:4002/page-name#section-anchor`
-- **Example for worktrees**: When working in a worktree, use a different port to avoid conflicts:
+- **Example for worktrees**: When working in a worktree, use different ports to avoid conflicts:
   ```bash
-  # In worktree directory
-  just jekyll-serve 4002 > /tmp/jekyll-worktree.log 2>&1 &
+  # In worktree directory - specify both server and livereload ports
+  just jekyll-serve 4002 35730 > /tmp/jekyll-worktree.log 2>&1 &
   open http://localhost:4002/gap-year-igor
   # To jump to a specific section
   open http://localhost:4002/gap-year-igor#battling-loneliness
