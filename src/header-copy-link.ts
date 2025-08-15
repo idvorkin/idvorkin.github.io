@@ -52,7 +52,8 @@ function createCopyLinkIcon(options: CopyLinkOptions): HTMLElement {
   
   if (hasFontAwesome) {
     const faIcon = document.createElement('i');
-    faIcon.className = 'fas fa-share-alt';
+    // Use iOS-style share icon (box with arrow pointing up)
+    faIcon.className = 'fas fa-share';
     icon.appendChild(faIcon);
   } else {
     // Fallback to emoji
