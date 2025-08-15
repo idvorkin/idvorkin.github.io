@@ -195,6 +195,7 @@ class DockerManager:
             "DEEPGRAM_API_KEY",
             "ELEVEN_API_KEY",
             "EXA_API_KEY",
+            "GH_TOKEN",
             "GITHUB_TOKEN",
             "GITHUB_PERSONAL_ACCESS_TOKEN",
             "GROQ_API_KEY",
@@ -214,6 +215,27 @@ class DockerManager:
                 # Only add if value is not empty
                 if value.strip():
                     env[var_name] = value
+        
+        # Special handling for GH_TOKEN and GITHUB_TOKEN - try 1Password if not in environment
+        if "GH_TOKEN" not in env or not env.get("GH_TOKEN"):
+            try:
+                # Try to fetch from 1Password
+                result = subprocess.run(
+                    ["op", "read", "op://Personal/GitHub AI Personal Access Token/token"],
+                    capture_output=True,
+                    text=True,
+                    timeout=5
+                )
+                if result.returncode == 0 and result.stdout.strip():
+                    token = result.stdout.strip()
+                    env["GH_TOKEN"] = token
+                    # Also set GITHUB_TOKEN for compatibility
+                    if "GITHUB_TOKEN" not in env:
+                        env["GITHUB_TOKEN"] = token
+                    console.print("[green]✓[/green] GitHub token retrieved from 1Password")
+            except (subprocess.TimeoutExpired, FileNotFoundError):
+                # op command not available or timed out
+                pass
 
         # TODO: Get AI Tools git values
 
@@ -373,7 +395,7 @@ class DockerManager:
                 if not host_path.endswith("_rw"):
                     ro_host_mounts.append(f"  • {mount_name} → {host_path}")
 
-        if "GITHUB_TOKEN" in environment:
+        if "GH_TOKEN" in environment or "GITHUB_TOKEN" in environment:
             mount_info.append("[green]✓[/green] GitHub token configured")
 
         console.print(Panel("\n".join(mount_info), title="Configuration", border_style="green"))
@@ -632,11 +654,26 @@ def check():
     checks = []
 
     # GitHub token
-    if os.environ.get("GITHUB_TOKEN"):
-        checks.append("[green]✓[/green] GitHub token is set")
+    if os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN"):
+        checks.append("[green]✓[/green] GitHub token is set (environment)")
     else:
-        checks.append("[yellow]⚠[/yellow] GitHub token not set")
-        checks.append("  Export GITHUB_TOKEN=ghp_your_token_here")
+        # Try to fetch from 1Password
+        try:
+            result = subprocess.run(
+                ["op", "read", "op://Personal/GitHub AI Personal Access Token/token"],
+                capture_output=True,
+                text=True,
+                timeout=5
+            )
+            if result.returncode == 0 and result.stdout.strip():
+                checks.append("[green]✓[/green] GitHub token available (1Password)")
+            else:
+                checks.append("[yellow]⚠[/yellow] GitHub token not set")
+                checks.append("  Export GITHUB_TOKEN=ghp_your_token_here")
+                checks.append("  Or configure in 1Password")
+        except (subprocess.TimeoutExpired, FileNotFoundError):
+            checks.append("[yellow]⚠[/yellow] GitHub token not set (1Password not available)")
+            checks.append("  Export GITHUB_TOKEN=ghp_your_token_here")
 
     # Git config
     if (Path.home() / ".gitconfig").exists():
