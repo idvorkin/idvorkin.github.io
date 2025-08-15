@@ -8,17 +8,17 @@ no-render-title: true
 /* Container styling */
 .search-container {
     max-width: 1000px;
-    margin: 20px auto;
-    padding: 0 20px;
+    margin: 10px auto;
+    padding: 0 10px;
 }
 
 /* Style the search input */
 .search-input {
     width: 100%;
-    padding: 12px 16px;
-    font-size: 18px;
-    border: 2px solid #ccc;
-    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
     outline: none;
     box-sizing: border-box;
 }
@@ -30,12 +30,12 @@ no-render-title: true
 
 /* Results container */
 .results-container {
-    margin-top: 30px;
+    margin-top: 12px;
 }
 
 /* Section styling */
 .results-section {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: none;
     border-radius: 0;
     padding: 0;
@@ -43,28 +43,28 @@ no-render-title: true
 }
 
 .results-section h3 {
-    margin: 0 0 8px 0;
+    margin: 0 0 3px 0;
     color: #999;
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-style: italic;
     font-weight: normal;
 }
 
 /* Individual result items */
 .result-item {
-    padding: 8px 0;
-    margin-bottom: 8px;
+    padding: 4px 0;
+    margin-bottom: 4px;
     background: transparent;
     border-radius: 0;
     border: none;
     transition: all 0.2s;
     cursor: pointer;
-    line-height: 1.4;
+    line-height: 1.3;
 }
 
 .result-item:hover {
     background: #f5f5f5;
-    padding-left: 8px;
+    padding-left: 6px;
     transform: none;
 }
 
@@ -81,14 +81,55 @@ no-render-title: true
 
 .result-item .description {
     color: #666;
-    font-size: 0.9em;
-    line-height: 1.3;
+    font-size: 0.85em;
+    line-height: 1.2;
 }
 
 /* Highlight matching text */
 .highlight {
     background: yellow;
     padding: 2px;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    .search-container {
+        margin: 5px auto;
+        padding: 0 8px;
+    }
+    
+    .search-input {
+        padding: 6px 10px;
+        font-size: 15px;
+    }
+    
+    .results-container {
+        margin-top: 8px;
+    }
+    
+    .results-section {
+        margin-bottom: 6px;
+    }
+    
+    .results-section h3 {
+        margin: 0 0 2px 0;
+        font-size: 0.75em;
+    }
+    
+    .result-item {
+        padding: 3px 0;
+        margin-bottom: 2px;
+        line-height: 1.2;
+    }
+    
+    .result-item a {
+        font-size: 0.95em;
+    }
+    
+    .result-item .description {
+        font-size: 0.8em;
+        line-height: 1.15;
+    }
 }
 </style>
 
