@@ -71,5 +71,9 @@ RUN echo '# Docker container prompt setup' >> ~/.zshrc && \
 
 RUN brew install yazi tig
 
+# Run lazy sync headless to install all plugins during build
+RUN nvim --headless "+Lazy! sync" +qa || true && \
+    echo "lazy.nvim plugins installed"
+
 WORKDIR /home/developer/gits
-LABEL description="Development layer with Claude YOLO mode and container prompt"
+LABEL description="Development layer with Claude YOLO mode, container prompt, and neovim+lazy.nvim"
