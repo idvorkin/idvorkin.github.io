@@ -5,89 +5,84 @@ no-render-title: true
 ---
 
 <style>
-/* Style the autocomplete container to be visible and prominent */
-#autocomplete-search-box {
-    display: block !important;
-    margin: 20px auto;
+/* Container styling */
+.search-container {
     max-width: 1000px;
+    margin: 20px auto;
     padding: 0 20px;
 }
 
-/* Make sure the autocomplete dropdown is visible */
-.aa-Autocomplete {
-    width: 100%;
-}
-
-/* Force the panel to be inline and always visible */
-.aa-Panel {
-    display: block !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    position: static !important;
-    box-shadow: none !important;
-    border: none !important;
-    background: transparent !important;
-    margin-top: 20px;
-}
-
-.aa-PanelLayout {
-    background: white;
-    border-radius: 8px;
-    padding: 20px;
-}
-
 /* Style the search input */
-.aa-Input {
+.search-input {
     width: 100%;
     padding: 12px 16px;
     font-size: 18px;
     border: 2px solid #ccc;
     border-radius: 8px;
     outline: none;
+    box-sizing: border-box;
 }
 
-.aa-Input:focus {
+.search-input:focus {
     border-color: #007bff;
     box-shadow: 0 0 0 3px rgba(0,123,255,0.1);
 }
 
-/* Style the results sections */
-.aa-Source {
+/* Results container */
+.results-container {
+    margin-top: 30px;
+}
+
+/* Section styling */
+.results-section {
     margin-bottom: 30px;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 15px;
+    padding: 20px;
     background: #fafafa;
 }
 
-.aa-SourceHeader {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #333;
+.results-section h3 {
+    margin: 0 0 15px 0;
+    color: #666;
+    font-size: 1.1em;
+    font-style: italic;
 }
 
-.aa-List {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.aa-Item {
-    padding: 10px;
+/* Individual result items */
+.result-item {
+    padding: 12px;
     margin-bottom: 10px;
     background: white;
     border-radius: 5px;
     border: 1px solid #e0e0e0;
     transition: all 0.2s;
+    cursor: pointer;
 }
 
-.aa-Item:hover {
+.result-item:hover {
     background: #f0f0f0;
     border-color: #007bff;
+    transform: translateX(5px);
 }
 
-/* Add a welcome message */
+.result-item a {
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.result-item a:hover {
+    color: #007bff;
+}
+
+.result-item .description {
+    color: #666;
+    margin-top: 5px;
+    font-size: 0.95em;
+}
+
+/* Welcome message */
 .welcome-message {
     text-align: center;
     margin: 40px 20px 20px;
@@ -103,9 +98,10 @@ no-render-title: true
     color: #666;
 }
 
-/* Keep the dropdown always open */
-.aa-DetachedContainer {
-    display: none !important;
+/* Highlight matching text */
+.highlight {
+    background: yellow;
+    padding: 2px;
 }
 </style>
 
@@ -114,48 +110,149 @@ no-render-title: true
     <p>Start typing to search, or explore featured, recent, and random posts below</p>
 </div>
 
-<div id="autocomplete-search-box"></div>
+<div class="search-container">
+    <input type="text" class="search-input" id="search-input" placeholder="Search Igor's Musings..." />
+    
+    <div class="results-container" id="results-container">
+        <div class="results-section" id="featured-section">
+            <h3>Featured posts ...</h3>
+            <div id="featured-results"></div>
+        </div>
+        
+        <div class="results-section" id="recent-section">
+            <h3>Recent posts ...</h3>
+            <div id="recent-results"></div>
+        </div>
+        
+        <div class="results-section" id="random-section">
+            <h3>Random posts ...</h3>
+            <div id="random-results"></div>
+        </div>
+    </div>
+</div>
 
 <script type="module">
-    import { CreateAutoComplete } from "/assets/js/index.js";
+    import { get_recent_posts, get_random_post } from "/assets/js/index.js";
     
-    $(document).ready(function() {
-        // Create the autocomplete with the right configuration
-        CreateAutoComplete(
-            "{{ site.algolia.application_id }}",
-            "{{ site.algolia.search_only_api_key }}",
-            "{{ site.algolia.index_name }}",
-            "#autocomplete-search-box",
-            false,
-            5,  // featuredCount - show more featured posts
-            6,  // recentCount - show more recent posts
-            4   // randomCount - show some random posts
-        ).then(autocomplete => {
-            // Focus the search input and keep panel open
-            setTimeout(() => {
-                const searchInput = document.querySelector('#autocomplete-search-box input');
-                if (searchInput) {
-                    searchInput.focus();
-                    // Trigger input event to open dropdown with default content
-                    searchInput.dispatchEvent(new Event('input', { bubbles: true }));
-                    
-                    // Force the panel to stay open and inline
-                    const panel = document.querySelector('.aa-Panel');
-                    if (panel) {
-                        panel.style.position = 'static';
-                        panel.style.display = 'block';
-                    }
-                }
-            }, 100);
+    // Algolia configuration
+    const appId = "{{ site.algolia.application_id }}";
+    const apiKey = "{{ site.algolia.search_only_api_key }}";
+    const indexName = "{{ site.algolia.index_name }}";
+    
+    // Initialize Algolia client
+    const searchClient = algoliasearch(appId, apiKey);
+    const index = searchClient.initIndex(indexName);
+    
+    // Function to render a result item
+    function renderResultItem(item) {
+        const url = item.url + (item.anchor ? `#${item.anchor}` : '');
+        const title = item._highlightResult?.title?.value || item.title || '';
+        const description = item._highlightResult?.content?.value || item.description || '';
+        
+        return `
+            <div class="result-item" onclick="window.location='${url}';">
+                <a href="${url}">${title}</a>
+                <div class="description">${description}</div>
+            </div>
+        `;
+    }
+    
+    // Function to render basic item (for recent/random)
+    function renderBasicItem(item) {
+        return `
+            <div class="result-item" onclick="window.location='${item.url}';">
+                <a href="${item.url}">${item.title}</a>
+                <div class="description">${item.description || ''}</div>
+            </div>
+        `;
+    }
+    
+    // Load initial content
+    async function loadInitialContent() {
+        // Load featured posts from Algolia
+        try {
+            const { hits } = await index.search(' ', { 
+                hitsPerPage: 5,
+                filters: 'NOT tags:family-journal'
+            });
+            document.getElementById('featured-results').innerHTML = 
+                hits.map(renderResultItem).join('');
+        } catch (error) {
+            console.error('Error loading featured posts:', error);
+        }
+        
+        // Load recent posts
+        try {
+            const recentPosts = await get_recent_posts(6);
+            document.getElementById('recent-results').innerHTML = 
+                recentPosts.map(renderBasicItem).join('');
+        } catch (error) {
+            console.error('Error loading recent posts:', error);
+        }
+        
+        // Load random posts
+        try {
+            const randomPosts = await Promise.all(
+                [1, 2, 3, 4].map(() => get_random_post())
+            );
+            document.getElementById('random-results').innerHTML = 
+                randomPosts.map(renderBasicItem).join('');
+        } catch (error) {
+            console.error('Error loading random posts:', error);
+        }
+    }
+    
+    // Search function
+    async function performSearch(query) {
+        if (!query || query.trim() === '') {
+            // If empty, reload initial content
+            loadInitialContent();
+            document.getElementById('recent-section').style.display = 'block';
+            document.getElementById('random-section').style.display = 'block';
+            return;
+        }
+        
+        // Hide recent and random sections when searching
+        document.getElementById('recent-section').style.display = 'none';
+        document.getElementById('random-section').style.display = 'none';
+        
+        // Update featured section title
+        document.querySelector('#featured-section h3').textContent = 'Search results ...';
+        
+        try {
+            const { hits } = await index.search(query, {
+                hitsPerPage: 20,
+                filters: 'NOT tags:family-journal',
+                highlightPreTag: '<span class="highlight">',
+                highlightPostTag: '</span>'
+            });
             
-            // Keep the panel always visible
-            setInterval(() => {
-                const panel = document.querySelector('.aa-Panel');
-                if (panel && panel.style.display === 'none') {
-                    panel.style.display = 'block';
-                    panel.style.position = 'static';
-                }
-            }, 100);
-        });
+            if (hits.length === 0) {
+                document.getElementById('featured-results').innerHTML = 
+                    '<div class="result-item">No results found. Try different keywords.</div>';
+            } else {
+                document.getElementById('featured-results').innerHTML = 
+                    hits.map(renderResultItem).join('');
+            }
+        } catch (error) {
+            console.error('Search error:', error);
+            document.getElementById('featured-results').innerHTML = 
+                '<div class="result-item">Error performing search. Please try again.</div>';
+        }
+    }
+    
+    // Set up search input handler with debouncing
+    let searchTimeout;
+    document.getElementById('search-input').addEventListener('input', (e) => {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(() => {
+            performSearch(e.target.value);
+        }, 300);
+    });
+    
+    // Load initial content when page loads
+    $(document).ready(() => {
+        loadInitialContent();
+        document.getElementById('search-input').focus();
     });
 </script>
