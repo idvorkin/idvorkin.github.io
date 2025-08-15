@@ -35,51 +35,54 @@ no-render-title: true
 
 /* Section styling */
 .results-section {
-    margin-bottom: 30px;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 20px;
-    background: #fafafa;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    background: transparent;
 }
 
 .results-section h3 {
-    margin: 0 0 15px 0;
-    color: #666;
-    font-size: 1.1em;
+    margin: 0 0 8px 0;
+    color: #999;
+    font-size: 0.9em;
     font-style: italic;
+    font-weight: normal;
 }
 
 /* Individual result items */
 .result-item {
-    padding: 12px;
-    margin-bottom: 10px;
-    background: white;
-    border-radius: 5px;
-    border: 1px solid #e0e0e0;
+    padding: 8px 0;
+    margin-bottom: 8px;
+    background: transparent;
+    border-radius: 0;
+    border: none;
     transition: all 0.2s;
     cursor: pointer;
+    line-height: 1.4;
 }
 
 .result-item:hover {
-    background: #f0f0f0;
-    border-color: #007bff;
-    transform: translateX(5px);
+    background: #f5f5f5;
+    padding-left: 8px;
+    transform: none;
 }
 
 .result-item a {
-    font-weight: bold;
-    color: #333;
+    font-weight: 600;
+    color: #0066cc;
     text-decoration: none;
+    font-size: 1em;
 }
 
 .result-item a:hover {
-    color: #007bff;
+    text-decoration: underline;
 }
 
 .result-item .description {
     color: #666;
-    margin-top: 5px;
-    font-size: 0.95em;
+    font-size: 0.9em;
+    line-height: 1.3;
 }
 
 /* Welcome message */
@@ -147,22 +150,32 @@ no-render-title: true
     function renderResultItem(item) {
         const url = item.url + (item.anchor ? `#${item.anchor}` : '');
         const title = item._highlightResult?.title?.value || item.title || '';
-        const description = item._highlightResult?.content?.value || item.description || '';
+        let description = item._highlightResult?.content?.value || item.description || '';
+        
+        // Truncate description to ~150 characters
+        if (description.length > 150) {
+            description = description.substring(0, 147) + '...';
+        }
         
         return `
             <div class="result-item" onclick="window.location='${url}';">
-                <a href="${url}">${title}</a>
-                <div class="description">${description}</div>
+                <div><a href="${url}">${title}</a> <span class="description">${description}</span></div>
             </div>
         `;
     }
     
     // Function to render basic item (for recent/random)
     function renderBasicItem(item) {
+        let description = item.description || '';
+        
+        // Truncate description to ~150 characters
+        if (description.length > 150) {
+            description = description.substring(0, 147) + '...';
+        }
+        
         return `
             <div class="result-item" onclick="window.location='${item.url}';">
-                <a href="${item.url}">${item.title}</a>
-                <div class="description">${item.description || ''}</div>
+                <div><a href="${item.url}">${item.title}</a> <span class="description">${description}</span></div>
             </div>
         `;
     }
