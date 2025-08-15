@@ -43,22 +43,9 @@ function createCopyLinkIcon(options: CopyLinkOptions): HTMLElement {
   icon.setAttribute('tabindex', '0');
   icon.setAttribute('aria-label', 'Share this section');
   
-  // Check if Font Awesome is available
-  const hasFontAwesome = !!(
-    document.querySelector('link[href*="font-awesome"]') || 
-    document.querySelector('script[src*="font-awesome"]') ||
-    document.querySelector('.fa, .fab, .fas, .far')
-  );
-  
-  if (hasFontAwesome) {
-    const faIcon = document.createElement('i');
-    // Use iOS-style share icon (arrow up from bracket)
-    faIcon.className = 'fa-solid fa-arrow-up-from-bracket';
-    icon.appendChild(faIcon);
-  } else {
-    // Fallback to emoji
-    icon.textContent = '↗️';
-  }
+  // Always use emoji for now since Font Awesome isn't loaded
+  // The iOS share icon would require Font Awesome 6: fa-solid fa-arrow-up-from-bracket
+  icon.textContent = '↗️';
 
   return icon;
 }
@@ -691,9 +678,9 @@ export function cleanupHeaderCopyLinks(): void {
 export function initHeaderCopyLinks(customOptions: Partial<CopyLinkOptions> = {}): void {
   const options: CopyLinkOptions = { ...DEFAULT_OPTIONS, ...customOptions };
 
-  // Find all headers in the main content area (including H1)
-  const contentContainer = document.getElementById("content-holder") || document.body;
-  const allHeaders = contentContainer.querySelectorAll("h1, h2, h3, h4, h5, h6");
+  // Find all headers on the page (including H1)
+  // Some H1s are outside content-holder, so search the entire document
+  const allHeaders = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
 
   for (const header of Array.from(allHeaders)) {
     addCopyLinkToHeader(header as HTMLElement, options);
