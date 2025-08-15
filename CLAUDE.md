@@ -191,3 +191,5 @@ When working with git worktrees, Claude must be run from the parent directory to
   - Example: "User has copied an image to clipboard and wants it analyzed"
 - Only extract images manually if the image-content-analyzer agent is not available
 ## Never merge yourself, the user must do that from PR
+
+- Before pushingn PR run the code review agennt
