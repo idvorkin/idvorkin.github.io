@@ -1,0 +1,40 @@
+# Layer 1: Base with Homebrew
+FROM ubuntu:22.04
+
+# Prevent interactive prompts
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install minimal dependencies for Homebrew
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    curl \
+    file \
+    git \
+    sudo \
+    locales \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Set locale
+RUN localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
+ENV LANG en_US.utf8
+
+# Create non-root user with sudo access
+RUN useradd -m -s /bin/bash developer && \
+    echo 'developer ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers && \
+    usermod -aG sudo developer
+
+USER developer
+WORKDIR /home/developer
+
+# Install Homebrew
+RUN /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && \
+    echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.bashrc && \
+    echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.profile
+
+# Add brew to PATH for this build
+ENV PATH="/home/linuxbrew/.linuxbrew/bin:${PATH}"
+
+# Update Homebrew
+RUN brew update
+
+LABEL description="Base Ubuntu with Homebrew installed"

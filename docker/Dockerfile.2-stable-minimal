@@ -1,0 +1,124 @@
+# Layer 2: Settings and essential tools (minimal version)
+FROM claude-docker:base
+
+USER developer
+WORKDIR /home/developer
+
+# Add brew to PATH 
+ENV PATH="/home/linuxbrew/.linuxbrew/bin:${PATH}"
+
+# Clone settings repo FIRST
+RUN git clone https://github.com/idvorkin/settings.git ~/settings
+
+# Install minimal essentials for bootstrap
+RUN brew install zsh tmux neovim git
+
+# Install oh-my-zsh (needed by bootstrap)
+RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
+# Create necessary directories for bootstrap
+RUN mkdir -p ~/.config ~/.vim/bundle ~/.tmux/plugins ~/.ipython/profile_default
+
+# Run bootstrap from settings repo to link all config files
+RUN cd ~/settings && bash bootstrap.sh
+
+# Install core development packages only
+# Note: brew may exit with non-zero due to caveats, but packages are installed
+RUN brew install \
+    fzf \
+    fd \
+    ripgrep \
+    just \
+    python3 \
+    node \
+    bat \
+    eza \
+    zoxide \
+    starship \
+    jq \
+    uv \
+    yazi \
+    duf \
+    bottom \
+    gdu \
+    dua-cli \
+    fastfetch \
+    procs || true
+
+# Install Claude CLI inside the container
+RUN npm install -g @anthropic-ai/claude-code
+
+# Install GitHub CLI (gh) - brew doesn't have ARM64 bottles, so use official method
+# Also install cmake and other build tools
+USER root
+RUN curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg && \
+    chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg && \
+    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | tee /etc/apt/sources.list.d/github-cli.list > /dev/null && \
+    apt-get update && \
+    apt-get install -y gh cmake && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
+USER developer
+
+# Install yarn via npm
+RUN npm install -g yarn
+
+
+# Add cargo to PATH (if rust gets installed)
+ENV PATH="/home/developer/.cargo/bin:${PATH}"
+
+# Clone the main repos
+RUN mkdir -p ~/gits && cd ~/gits && \
+    git clone https://github.com/idvorkin/idvorkin.github.io.git && \
+    git clone https://github.com/idvorkin/nlp.git
+
+# Install Ruby and Jekyll dependencies
+RUN brew install ruby && \
+    echo 'export PATH="/home/linuxbrew/.linuxbrew/opt/ruby/bin:$PATH"' >> ~/.bashrc && \
+    echo 'export PATH="/home/linuxbrew/.linuxbrew/opt/ruby/bin:$PATH"' >> ~/.zshrc
+
+# Add Ruby and gem binaries to PATH for this build
+ENV PATH="/home/linuxbrew/.linuxbrew/opt/ruby/bin:${PATH}"
+ENV PATH="/home/linuxbrew/.linuxbrew/lib/ruby/gems/3.4.0/bin:${PATH}"
+
+# Install Jekyll and bundler
+RUN gem install jekyll bundler
+
+# Install Jekyll dependencies for the blog
+RUN cd ~/gits/idvorkin.github.io && \
+    bundle config set --local path '~/.bundle' && \
+    bundle install
+
+# Install Node.js dependencies
+RUN cd ~/gits/idvorkin.github.io && \
+    npm install
+
+# Install Playwright system dependencies (requires sudo)
+USER root
+RUN npx -y playwright install-deps chromium
+USER developer
+
+# Install Playwright browsers
+RUN cd ~/gits/idvorkin.github.io && \
+    npx playwright install chromium
+
+# Setup GitHub auth helper
+RUN echo '#!/bin/bash\n\
+if [ -n "$GITHUB_TOKEN" ]; then\n\
+    echo "$GITHUB_TOKEN" | gh auth login --with-token 2>/dev/null\n\
+    gh auth status\n\
+else\n\
+    echo "No GITHUB_TOKEN set. Export GITHUB_TOKEN to enable gh commands."\n\
+fi' > ~/setup-gh-auth.sh && chmod +x ~/setup-gh-auth.sh
+
+# Add to shell startup
+RUN echo '[ -f ~/setup-gh-auth.sh ] && ~/setup-gh-auth.sh' >> ~/.bashrc && \
+    echo '[ -f ~/setup-gh-auth.sh ] && ~/setup-gh-auth.sh' >> ~/.zshrc
+
+# Set zsh as default shell
+SHELL ["/bin/zsh", "-c"]
+
+# Expose Jekyll ports
+EXPOSE 4000 35729
+
+WORKDIR /home/developer/gits
+LABEL description="Settings configured with essential tools (minimal)"
