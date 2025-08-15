@@ -61,7 +61,7 @@ import {
 } from "../../src/header-copy-link";
 
 // Helper function to create mock header elements
-function createMockHeader(id: string, textContent: string) {
+function createMockHeader(id: string, textContent: string, nextElementSibling: any = null) {
   return {
     id,
     textContent,
@@ -76,7 +76,16 @@ function createMockHeader(id: string, textContent: string) {
       width: 150,
       height: 20,
     })),
-    nextElementSibling: null,
+    nextElementSibling,
+  };
+}
+
+// Helper function to create mock paragraph element
+function createMockParagraph(textContent: string, nextElementSibling: any = null) {
+  return {
+    tagName: 'P',
+    textContent,
+    nextElementSibling,
   };
 }
 

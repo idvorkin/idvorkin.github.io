@@ -287,27 +287,36 @@ function transformUrl(url: string, options: CopyLinkOptions): string {
  */
 async function shareOrCopyHeaderLink(headerId: string, options: CopyLinkOptions): Promise<boolean> {
   try {
-    // Get the current page path
+    // Build the direct Azure URL format: https://idvorkin.azurewebsites.net/page/anchor
     const pathname = window.location.pathname;
     const pagePath = pathname.replace(/^\//, "").replace(/\.html$/, "") || "index";
     
-    // Generate the modal.run redirect URL
-    const redirectUrl = makeRedirectUrl(pagePath, headerId);
+    // Create the production URL directly
+    const azureUrl = `https://idvorkin.azurewebsites.net/${pagePath}/${headerId}`;
     
     // Get header text for share title
     const header = document.getElementById(headerId);
     const headerText = header ? header.textContent || "" : "";
     const shareTitle = `${headerText} - Igor's Blog`;
     
+    // Get preview text for the section
+    const previewText = getPreviewText(headerId);
+    
+    // Create share text with preview
+    let shareText = `Check out this section: ${headerText}`;
+    if (previewText) {
+      shareText = `${headerText}\n\n${previewText}`;
+    }
+    
     // Check if Web Share API is available (primarily mobile)
     if (navigator.share && /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
       try {
         await navigator.share({
           title: shareTitle,
-          text: `Check out this section: ${headerText}`,
-          url: redirectUrl
+          text: shareText,
+          url: azureUrl
         });
-        console.log(`Shared via native share: ${redirectUrl}`);
+        console.log(`📱 Shared via native share: ${azureUrl}`);
         return true; // Indicates share was successful
       } catch (shareError) {
         // User cancelled share or share failed, fall through to clipboard
@@ -315,9 +324,16 @@ async function shareOrCopyHeaderLink(headerId: string, options: CopyLinkOptions)
       }
     }
     
+    // For clipboard copy, format with preview text
+    let clipboardText = azureUrl;
+    if (previewText) {
+      // Format as: Title, Preview, URL (similar to social media shares)
+      clipboardText = `${headerText}\n\n${previewText}\n\n${azureUrl}`;
+    }
+    
     // Fallback to clipboard copy for desktop or if share fails
-    await navigator.clipboard.writeText(redirectUrl);
-    console.log(`Copied redirect URL: ${redirectUrl}`);
+    await navigator.clipboard.writeText(clipboardText);
+    console.log(`📋 Copied to clipboard with preview: ${clipboardText.substring(0, 100)}...`);
     return false; // Indicates copy was used instead of share
     
   } catch (error) {
@@ -327,17 +343,27 @@ async function shareOrCopyHeaderLink(headerId: string, options: CopyLinkOptions)
     try {
       const pathname = window.location.pathname;
       const pagePath = pathname.replace(/^\//, "").replace(/\.html$/, "") || "index";
-      const redirectUrl = makeRedirectUrl(pagePath, headerId);
+      const azureUrl = `https://idvorkin.azurewebsites.net/${pagePath}/${headerId}`;
+      
+      // Get preview text for fallback
+      const header = document.getElementById(headerId);
+      const headerText = header ? header.textContent || "" : "";
+      const previewText = getPreviewText(headerId);
+      
+      let clipboardText = azureUrl;
+      if (previewText) {
+        clipboardText = `${headerText}\n\n${previewText}\n\n${azureUrl}`;
+      }
       
       // Use textarea fallback for copying
       const textArea = document.createElement("textarea");
-      textArea.value = redirectUrl;
+      textArea.value = clipboardText;
       document.body.appendChild(textArea);
       textArea.select();
       document.execCommand("copy");
       document.body.removeChild(textArea);
       
-      console.log(`Copied redirect URL (fallback): ${redirectUrl}`);
+      console.log(`📋 Copied with preview (fallback): ${clipboardText.substring(0, 100)}...`);
       return false;
     } catch (fallbackError) {
       console.error("Failed to copy URL even with fallback:", fallbackError);
@@ -400,6 +426,109 @@ function getFirstParagraphAfterHeader(header: HTMLElement): string {
     nextElement = nextElement.nextElementSibling;
   }
   
+  return '';
+}
+
+/**
+ * Truncates text to a maximum length, preserving word boundaries
+ */
+function truncateText(text: string, maxLength = 400): string {
+  if (text.length <= maxLength) {
+    return text;
+  }
+  
+  // Truncate to maxLength and find the last space
+  const truncated = text.substring(0, maxLength);
+  const lastSpace = truncated.lastIndexOf(' ');
+  
+  if (lastSpace > 0) {
+    return truncated.substring(0, lastSpace) + '...';
+  }
+  
+  return truncated + '...';
+}
+
+/**
+ * Extracts preview text from the page content, with anchor-aware logic
+ */
+function getPreviewText(headerId?: string): string {
+  // If we have a specific header ID (anchor), try to get text after it
+  if (headerId) {
+    const header = document.getElementById(headerId);
+    if (header) {
+      // Try to get text from the first paragraph after the header
+      const paragraphText = getFirstParagraphAfterHeader(header);
+      if (paragraphText) {
+        return truncateText(paragraphText);
+      }
+      
+      // Try to get text from any content elements after the header
+      let nextElement = header.nextElementSibling;
+      const textParts: string[] = [];
+      let charCount = 0;
+      
+      while (nextElement && charCount < 400) {
+        // Stop if we hit another header
+        if (nextElement.tagName.match(/^H[1-6]$/)) {
+          break;
+        }
+        
+        // Get text from various content elements
+        if (nextElement.tagName === 'P' || 
+            nextElement.tagName === 'LI' || 
+            nextElement.tagName === 'BLOCKQUOTE' ||
+            nextElement.tagName === 'DIV') {
+          const text = (nextElement.textContent || '').trim();
+          if (text.length > 0) {
+            textParts.push(text);
+            charCount += text.length;
+          }
+        }
+        
+        nextElement = nextElement.nextElementSibling;
+      }
+      
+      if (textParts.length > 0) {
+        return truncateText(textParts.join(' '));
+      }
+    }
+  }
+  
+  // Fallback: try to find preview text from various content areas
+  const contentSelectors = [
+    'article',
+    'main',
+    '.content',
+    '.post-content',
+    '.entry-content',
+    '#content-holder',
+    '.content-holder'
+  ];
+  
+  for (const selector of contentSelectors) {
+    const contentArea = document.querySelector(selector);
+    if (contentArea) {
+      // Find the first paragraph in the content area
+      const firstParagraph = contentArea.querySelector('p');
+      if (firstParagraph) {
+        const text = (firstParagraph.textContent || '').trim();
+        if (text.length > 0) {
+          return truncateText(text);
+        }
+      }
+    }
+  }
+  
+  // Last resort: find the first paragraph on the page
+  const firstParagraph = document.querySelector('p');
+  if (firstParagraph) {
+    const text = (firstParagraph.textContent || '').trim();
+    if (text.length > 0) {
+      return truncateText(text);
+    }
+  }
+  
+  // If no preview text found, return empty string
   return '';
 }
 
