@@ -235,10 +235,15 @@ no-render-title: true
         }
     }
     
-    // Search function
+    // Search function with proper state management
     async function performSearch(query) {
         if (!query || query.trim() === '') {
-            // If empty, reload initial content
+            // Immediately restore titles before async content load
+            document.querySelector('#featured-section h3').textContent = 'Featured posts ...';
+            document.querySelector('#recent-section h3').textContent = 'Recent posts ...';
+            document.querySelector('#random-section h3').textContent = 'Random posts ...';
+            
+            // Reload initial content
             loadInitialContent();
             document.getElementById('recent-section').style.display = 'block';
             document.getElementById('random-section').style.display = 'block';
@@ -249,8 +254,10 @@ no-render-title: true
         document.getElementById('recent-section').style.display = 'none';
         document.getElementById('random-section').style.display = 'none';
         
-        // Update featured section title
+        // Update featured section title and show loading state
         document.querySelector('#featured-section h3').textContent = 'Search results ...';
+        document.getElementById('featured-results').innerHTML = 
+            '<div class="result-item" style="color: #999;">Searching...</div>';
         
         try {
             const { hits } = await index.search(query, {
@@ -270,22 +277,34 @@ no-render-title: true
         } catch (error) {
             console.error('Search error:', error);
             document.getElementById('featured-results').innerHTML = 
-                '<div class="result-item">Error performing search. Please try again.</div>';
+                `<div class="result-item">Error performing search. <a href="#" onclick="performSearch('${query.replace(/'/g, "\\'")}')">Try again</a></div>`;
         }
     }
     
-    // Set up search input handler with debouncing
+    // Set up search input handler with debouncing and error handling
     let searchTimeout;
-    document.getElementById('search-input').addEventListener('input', (e) => {
-        clearTimeout(searchTimeout);
-        searchTimeout = setTimeout(() => {
-            performSearch(e.target.value);
-        }, 300);
-    });
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => {
+                try {
+                    performSearch(e.target.value);
+                } catch (error) {
+                    console.error('❌ Search input error:', error);
+                    document.getElementById('featured-results').innerHTML = 
+                        '<div class="result-item">Search error. Please refresh the page.</div>';
+                }
+            }, 300);
+        });
+    }
     
     // Load initial content when page loads
     $(document).ready(() => {
         loadInitialContent();
-        document.getElementById('search-input').focus();
+        const searchInput = document.getElementById('search-input');
+        if (searchInput) {
+            searchInput.focus();
+        }
     });
 </script>
