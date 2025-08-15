@@ -2,6 +2,25 @@ npx vitest run --reporter=verbose
 
 [1m[7m[36m RUN [39m[27m[22m [36mv3.0.8 [39m[90m/home/runner/work/idvorkin.github.io/idvorkin.github.io[39m
 
+[90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
+[22m[39mToggle element with ID missing-toggle not found
+
+[90mstderr[2m | src/__tests__/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould show error message when getProcessedPages fails
+[22m[39m❌ Error loading recent posts: Error: Test error
+    at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39msrc/__tests__/recent-posts.test.ts:503:69
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:174:14
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:563:28
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:61:24
+    at new Promise (<anonymous>)
+    at runWithTimeout [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:41:12[90m)[39m
+    at runTest [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1149:17[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
+    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
+
+[90mstderr[2m | src/__tests__/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould do nothing if container is not found
+[22m[39m❌ non-existent-container container not found in DOM
+
  [31m×[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mURL Transformation[2m > [22mshould transform localhost URL to production domain
 [31m   → expected "spy" to be called at least once[39m
  [31m×[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mURL Transformation[2m > [22mshould handle production domain mapping correctly
@@ -41,25 +60,6 @@ npx vitest run --reporter=verbose
 [31m   → Cannot read properties of undefined (reading 'value')[39m
  [31m×[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: simple case
 [31m   → Cannot read properties of undefined (reading 'value')[39m
-[90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
-[22m[39mToggle element with ID missing-toggle not found
-
-[90mstderr[2m | src/__tests__/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould show error message when getProcessedPages fails
-[22m[39m❌ Error loading recent posts: Error: Test error
-    at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39msrc/__tests__/recent-posts.test.ts:503:69
-    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:174:14
-    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:563:28
-    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:61:24
-    at new Promise (<anonymous>)
-    at runWithTimeout [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:41:12[90m)[39m
-    at runTest [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1149:17[90m)[39m
-[90m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
-    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
-
-[90mstderr[2m | src/__tests__/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould do nothing if container is not found
-[22m[39m❌ non-existent-container container not found in DOM
-
 [90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould handle empty results
 [22m[39mToggle element with ID remaining-posts-toggle not found
 
@@ -220,9 +220,6 @@ Dev info - Branch: [1mnull[22m Port: 4000
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould call generateToc for both toc containers
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mTOC functions[2m > [22mshould warn when TOC elements are not found
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mURL swapping function[2m > [22mshould handle production URL swapping
- [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_imported_blog_posts[2m > [22mshould fetch and process blog posts
- [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_eulogy_roles[2m > [22mshould fetch and process eulogy roles
- [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22mhtml_for_role[2m > [22mshould generate HTML for a role
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould toggle a class on an element when using a selector
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould toggle a class on an element when using an element reference
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould add a class when force parameter is true
@@ -237,6 +234,9 @@ Dev info - Branch: [1mnull[22m Port: 4000
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find a distant parent element matching a selector
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find a parent element by class selector
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould return null when no matching parent is found
+ [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_imported_blog_posts[2m > [22mshould fetch and process blog posts
+ [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_eulogy_roles[2m > [22mshould fetch and process eulogy roles
+ [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22mhtml_for_role[2m > [22mshould generate HTML for a role
  [32m✓[39m src/__tests__/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould fetch link info from local path when not in production
  [32m✓[39m src/__tests__/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould fetch link info from GitHub when in production
  [32m✓[39m src/__tests__/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould handle fetch errors gracefully
@@ -438,7 +438,7 @@ Dev info - Branch: [1mnull[22m Port: 4000
 
 [2m Test Files [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m15 passed[39m[22m[90m (16)[39m
 [2m      Tests [22m [1m[31m15 failed[39m[22m[2m | [22m[1m[32m171 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (191)[39m
-[2m   Start at [22m 03:40:41
-[2m   Duration [22m 4.08s[2m (transform 581ms, setup 205ms, collect 929ms, tests 445ms, environment 6.09s, prepare 1.40s)[22m
+[2m   Start at [22m 03:42:08
+[2m   Duration [22m 4.02s[2m (transform 695ms, setup 258ms, collect 909ms, tests 435ms, environment 5.94s, prepare 1.34s)[22m
 
 error: Recipe `js-test-verbose-txt` failed on line 44 with exit code 1
