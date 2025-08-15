@@ -192,4 +192,8 @@ When working with git worktrees, Claude must be run from the parent directory to
 - Only extract images manually if the image-content-analyzer agent is not available
 ## Never merge yourself, the user must do that from PR
 
-- Before pushingn PR run the code review agennt
+## PR Best Practices
+
+- Before pushing PR, run the code review agent
+- When updating a PR with significant changes, update the PR description to reflect all current changes
+- Include any fixes or improvements made during development in the PR description
