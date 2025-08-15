@@ -2,9 +2,7 @@
 # /// script
 # requires-python = ">=3.11"
 # dependencies = [
-#     "typer",
-#     "rich",
-#     "docker",
+#     "typer", "rich", "docker",
 # ]
 # ///
 
@@ -152,51 +150,43 @@ class DockerManager:
         """Build volume mount configuration"""
         mounts = {}
 
-        # Git config
-        gitconfig = (Path.home() / ".gitconfig").resolve()
-        if gitconfig.exists() and gitconfig.is_file():
-            mounts[str(gitconfig)] = {
-                "bind": "/home/developer/.gitconfig",
-                "mode": "ro"
-            }
+        # Define allowlist of directories to mount under /ro_host/
+        host_mount_allowlist = [
+            ("~/.claude", ".claude"),
+            ("~/.config/claude", ".config_claude"),
+            ("~/settings", "settings"),
+        ]
 
-        # SSH config
-        ssh_dir = (Path.home() / ".ssh").resolve()
-        if ssh_dir.exists() and ssh_dir.is_dir():
-            mounts[str(ssh_dir)] = {
-                "bind": "/home/developer/.ssh",
-                "mode": "ro"
-            }
+        # Mount allowlisted directories under /ro_host/{name}
+        for path_str, mount_name in host_mount_allowlist:
+            host_path = Path(path_str).expanduser().resolve()
+            if host_path.exists():
+                mounts[str(host_path)] = {
+                    "bind": f"/ro_host/{mount_name}",
+                    "mode": "ro"
+                }
 
-        # Docker directory (read-only)
+        # Mount current working directory (where script is run from)
+        cwd = Path.cwd().resolve()
+        # Get a safe directory name for mounting
+        cwd_name = cwd.name or "workspace"
+        mounts[str(cwd)] = {
+            "bind": f"/ro_host/{cwd_name}",
+            "mode": "ro"
+        }
+
+        # Docker directory (read-only) - keeping for backward compatibility
         mounts[str(DOCKER_DIR)] = {
             "bind": "/ro_host_docker",
             "mode": "ro"
         }
 
-        # Claude credentials
-        claude_dirs = [
-            Path.home() / ".claude",
-            Path.home() / ".config" / "claude"
-        ]
-        for claude_dir in claude_dirs:
-            if claude_dir.exists():
-                mounts[str(claude_dir)] = {
-                    "bind": "/claude",
-                    "mode": "rw"
-                }
-                break
 
         return mounts
 
     def build_environment(self, container_name: str) -> Dict[str, str]:
         """Build environment variables"""
         env = {}
-
-        # Claude config
-        claude_dirs = [Path.home() / ".claude", Path.home() / ".config" / "claude"]
-        if any(d.exists() for d in claude_dirs):
-            env["CLAUDE_CONFIG_DIR"] = "/claude"
 
         # Explicit allowlist of environment variables to pass through
         env_allowlist = [
@@ -373,29 +363,18 @@ class DockerManager:
 
         # Display mount status
         mount_info = []
-        if str(DOCKER_DIR) in volumes:
-            mount_info.append("[green]✓[/green] Docker directory mounted at /ro_host_docker")
 
-        claude_mounted = False
-        for path in volumes:
-            if "/claude" in volumes[path]["bind"]:
-                mount_info.append(f"[green]✓[/green] Claude credentials mounted from {path}")
-                claude_mounted = True
-                break
-
-        if not claude_mounted:
-            mount_info.append("[yellow]⚠[/yellow] Claude credentials not found")
-            mount_info.append("  Run 'claude auth login' on host first")
+        # Show /ro_host mounts
+        ro_host_mounts = []
+        for host_path, mount_config in volumes.items():
+            if mount_config["bind"].startswith("/ro_host/"):
+                mount_name = mount_config["bind"].replace("/ro_host/", "")
+                # Skip the "_rw" suffixed duplicate entries
+                if not host_path.endswith("_rw"):
+                    ro_host_mounts.append(f"  • {mount_name} → {host_path}")
 
         if "GITHUB_TOKEN" in environment:
             mount_info.append("[green]✓[/green] GitHub token configured")
-
-        # Count API keys being passed through
-        api_key_count = sum(1 for key in environment.keys()
-                           if any(pattern in key for pattern in
-                                 ["_KEY", "_TOKEN", "_API", "_SID", "_WEBHOOK"]))
-        if api_key_count > 0:
-            mount_info.append(f"[green]✓[/green] {api_key_count} API keys/tokens passed through")
 
         console.print(Panel("\n".join(mount_info), title="Configuration", border_style="green"))
 
@@ -569,28 +548,28 @@ def rebuild(
 ):
     """Force rebuild the Docker image"""
     console.print(f"[bold cyan]🔨 Rebuilding Docker image: claude-docker:{image_tag}[/bold cyan]\n")
-    
+
     # Map tag to build script
     build_scripts = {
         "dev": "build-dev.sh",
         "minimal": "build-minimal.sh",
         "claude": "build-claude.sh"
     }
-    
+
     if image_tag not in build_scripts:
         console.print(f"[red]❌ Invalid image tag: {image_tag}[/red]")
         console.print(f"Available tags: {', '.join(build_scripts.keys())}")
         return
-    
+
     build_script = DOCKER_DIR / build_scripts[image_tag]
-    
+
     if not build_script.exists():
         console.print(f"[red]❌ Build script not found: {build_script}[/red]")
         return
-    
+
     # Build the Docker image
     cmd = ["bash", str(build_script)]
-    
+
     if no_cache:
         console.print("[yellow]Building without cache (this may take a while)...[/yellow]\n")
         # For no-cache builds, we need to modify the docker build command
@@ -601,7 +580,7 @@ def rebuild(
     else:
         console.print("[yellow]Building with cache...[/yellow]\n")
         result = subprocess.run(cmd, cwd=str(DOCKER_DIR))
-    
+
     if result.returncode == 0:
         console.print(f"\n[green]✓ Successfully rebuilt claude-docker:{image_tag}[/green]")
         console.print(f"[dim]You can now create a container with: ./run-docker.py create claude-docker:{image_tag}[/dim]")
