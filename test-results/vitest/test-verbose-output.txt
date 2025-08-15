@@ -188,6 +188,13 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould handle hits without highlighted content
  [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould handle errors and return 'invalid HTML'
  [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mCreateSearch[2m > [22mshould create a search instance with the correct configuration
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould log that Force Graph is loaded
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould not initialize the graph when the DOM element doesn't exist
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle ForceGraph not being defined
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle node canvas object rendering
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle goto control click
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould build graph data correctly
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould update detail with node information
 [90mstdout[2m | src/__tests__/shared.test.ts[2m > [22m[2mShared Utility Functions[2m > [22m[2mappend_randomizer_div[2m > [22m[2mshould not append anything if parent is not found
 [22m[39mappend_randomizer_div #non-existent not present
 
@@ -216,13 +223,6 @@ Dev info - Branch: [1mnull[22m Port: 4000
 [90mstderr[2m | src/__tests__/main.test.ts
 [22m[39m⚠️ GLightbox not found, retrying in 100ms (attempt 1/50)
 
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould log that Force Graph is loaded
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould not initialize the graph when the DOM element doesn't exist
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle ForceGraph not being defined
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle node canvas object rendering
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle goto control click
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould build graph data correctly
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould update detail with node information
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould return an array of the same length
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould contain all the same elements
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mrandom_from_list[2m > [22mshould return an element from the list
@@ -233,9 +233,6 @@ Dev info - Branch: [1mnull[22m Port: 4000
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould call generateToc for both toc containers
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mTOC functions[2m > [22mshould warn when TOC elements are not found
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mURL swapping function[2m > [22mshould handle production URL swapping
- [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_imported_blog_posts[2m > [22mshould fetch and process blog posts
- [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_eulogy_roles[2m > [22mshould fetch and process eulogy roles
- [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22mhtml_for_role[2m > [22mshould generate HTML for a role
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould toggle a class on an element when using a selector
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould toggle a class on an element when using an element reference
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould add a class when force parameter is true
@@ -250,6 +247,9 @@ Dev info - Branch: [1mnull[22m Port: 4000
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find a distant parent element matching a selector
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find a parent element by class selector
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould return null when no matching parent is found
+ [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_imported_blog_posts[2m > [22mshould fetch and process blog posts
+ [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_eulogy_roles[2m > [22mshould fetch and process eulogy roles
+ [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22mhtml_for_role[2m > [22mshould generate HTML for a role
  [32m✓[39m src/__tests__/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould fetch link info from local path when not in production
  [32m✓[39m src/__tests__/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould fetch link info from GitHub when in production
  [32m✓[39m src/__tests__/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould handle fetch errors gracefully
@@ -272,6 +272,6 @@ Dev info - Branch: [1mnull[22m Port: 4000
 
 [2m Test Files [22m [1m[32m16 passed[39m[22m[90m (16)[39m
 [2m      Tests [22m [1m[32m186 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (191)[39m
-[2m   Start at [22m 13:52:58
-[2m   Duration [22m 4.17s[2m (transform 572ms, setup 296ms, collect 875ms, tests 466ms, environment 6.19s, prepare 1.42s)[22m
+[2m   Start at [22m 14:56:54
+[2m   Duration [22m 3.99s[2m (transform 631ms, setup 230ms, collect 875ms, tests 463ms, environment 5.92s, prepare 1.35s)[22m
 
