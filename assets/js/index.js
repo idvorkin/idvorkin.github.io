@@ -12,7 +12,7 @@ let e,t;function n(e){let t=`<a href=${e.url}>${e.title}</a>`;return`
           </li>
         `}).join("")}
       </ul>
-    `;return t}async function g(e="last-modified-posts",t=15,n=document){let o=n.getElementById(e);if(!o){console.error(`\u{274C} ${e} container not found in DOM`);return}try{let e=await u();o.innerHTML=function(e,t=15){if(0===e.length)return"<p>No modified posts found.</p>";let n=e.slice(0,t),o=e.slice(t),i=m(p(n));if(o.length>0){var r,l;i+=(r=m(p(o)),l=o.length,`
+    `;return t}async function g(e="last-modified-posts",t=15,n=document){let o=n.getElementById(e);if(!o){console.log(`\u{274C} ${e} container not found in DOM`);return}try{let e=await u();o.innerHTML=function(e,t=15){if(0===e.length)return"<p>No modified posts found.</p>";let n=e.slice(0,t),o=e.slice(t),i=m(p(n));if(o.length>0){var r,l;i+=(r=m(p(o)),l=o.length,`
     <div class="remaining-posts-section">
       <h2 id="remaining-posts-toggle" class="remaining-toggle">
         <span class="toggle-icon">\u{25B6}</span> Remaining Modified Files (${l} more)

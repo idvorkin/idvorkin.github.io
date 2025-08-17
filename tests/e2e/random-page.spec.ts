@@ -29,8 +29,8 @@ test.describe("Random Page Navigation", () => {
     // Navigate to about page
     await page.goto("/about");
 
-    // Find the random page link
-    const randomLink = page.locator('a[href="/random"]');
+    // Find the first random page link (there may be multiple)
+    const randomLink = page.locator('a[href="/random"]').first();
     await expect(randomLink).toBeVisible();
 
     // Click the link
@@ -49,8 +49,8 @@ test.describe("Random Page Navigation", () => {
     // Navigate to recent page
     await page.goto("/recent");
 
-    // Find the random page link
-    const randomLink = page.locator('a[href="/random"]');
+    // Find the first random page link (there may be multiple)
+    const randomLink = page.locator('a[href="/random"]').first();
     await expect(randomLink).toBeVisible();
 
     // Click the link

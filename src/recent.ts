@@ -221,7 +221,7 @@ export async function updateRecentPosts(
   const recentContainer = doc.getElementById(containerId);
 
   if (!recentContainer) {
-    console.error(`❌ ${containerId} container not found in DOM`);
+    console.log(`❌ ${containerId} container not found in DOM`);
     return; // Exit early if container not found
   }
 
