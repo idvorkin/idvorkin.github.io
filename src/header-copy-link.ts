@@ -325,9 +325,7 @@ async function shareOrCopyHeaderLink(headerId: string, options: CopyLinkOptions)
     }
     
     // Check if this is a mobile device
-    // Include iPad detection even in desktop mode (iPadOS 13+ reports as MacIntel)
-    const isIPadDesktopMode = navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
-    const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || isIPadDesktopMode;
+    const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
     
     // Use native share only on mobile devices that support it
     if (navigator.share && isMobile) {
