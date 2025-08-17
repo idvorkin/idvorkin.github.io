@@ -40,18 +40,6 @@ npx vitest run --reporter=verbose
 [90mstderr[2m | src/__tests__/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould do nothing if container is not found
 [22m[39m❌ non-existent-container container not found in DOM
 
-[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: localhost to production with long anchor
-[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=manager-book%23how-do-you-identify-and-help-eng-decide-if-manage...
-
-[90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould handle empty results
-[22m[39mToggle element with ID remaining-posts-toggle not found
-
-[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: production domain mapping
-[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=manager-book%23test-section...
-
-[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: simple case
-[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=simple-page%23anchor...
-
  [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould fetch and return URL info map
  [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould throw error if url_info is missing
  [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mconvertToPages[2m > [22mshould convert URL info map to array of page objects
@@ -70,6 +58,57 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found
  [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould call updateRecentPosts immediately if document is loaded
  [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould add event listener if document is still loading
+[90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould handle empty results
+[22m[39mToggle element with ID remaining-posts-toggle not found
+
+[90mstderr[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould handle errors
+[22m[39m❌ Error loading recent posts: Error: Test error
+    at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39msrc/__tests__/recent.test.ts:392:69
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:174:14
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:563:28
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:61:24
+    at new Promise (<anonymous>)
+    at runWithTimeout [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:41:12[90m)[39m
+    at runTest [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1149:17[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
+    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
+
+[90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould do nothing if container is not found
+[22m[39m❌ non-existent-container container not found in DOM
+
+[90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2minitRecentAllPosts[2m > [22m[2mshould call updateRecentPosts immediately if document is already loaded
+[22m[39mToggle element with ID remaining-posts-toggle not found
+
+[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: localhost to production with long anchor
+[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=manager-book%23how-do-you-identify-and-help-eng-decide-if-manage...
+
+[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: production domain mapping
+[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=manager-book%23test-section...
+
+[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: simple case
+[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=simple-page%23anchor...
+
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould group pages by month and year
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould handle empty arrays
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould skip pages without last_modified dates
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateGroupedPagesHTML[2m > [22mshould generate correct HTML for grouped pages
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateGroupedPagesHTML[2m > [22mshould format dates in the expected format
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateGroupedPagesHTML[2m > [22mshould truncate descriptions longer than 150 characters
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mcreateToggleSection[2m > [22mshould create toggle section with correct content
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateStyles[2m > [22mshould generate CSS styles as a string
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22msetupToggleEventListener[2m > [22mshould add click event listener to toggle element
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22msetupToggleEventListener[2m > [22mshould handle missing toggle element
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22msetupToggleEventListener[2m > [22mshould toggle content visibility when clicked
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateRecentPostsHTML[2m > [22mshould generate complete HTML for posts display
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateRecentPostsHTML[2m > [22mshould return message when no pages are provided
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateRecentPostsHTML[2m > [22mshould use default initialPostsCount of 15
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould update container with posts HTML
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould handle empty results
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould handle errors
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould call updateRecentPosts immediately if document is already loaded
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould add event listener if document is still loading
  [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mURL Transformation[2m > [22mshould transform localhost URL to production domain
  [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mURL Transformation[2m > [22mshould handle production domain mapping correctly
  [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mHeader ID Generation[2m > [22mshould use existing header ID if present
@@ -94,81 +133,6 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: localhost to production with long anchor
  [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: production domain mapping
  [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: simple case
-[90mstderr[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould handle errors
-[22m[39m❌ Error loading recent posts: Error: Test error
-    at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39msrc/__tests__/recent.test.ts:392:69
-    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:174:14
-    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:563:28
-    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:61:24
-    at new Promise (<anonymous>)
-    at runWithTimeout [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:41:12[90m)[39m
-    at runTest [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1149:17[90m)[39m
-[90m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
-    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
-
-[90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould do nothing if container is not found
-[22m[39m❌ non-existent-container container not found in DOM
-
-[90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2minitRecentAllPosts[2m > [22m[2mshould call updateRecentPosts immediately if document is already loaded
-[22m[39m❌ test-container container not found in DOM
-
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould group pages by month and year
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould handle empty arrays
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould skip pages without last_modified dates
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateGroupedPagesHTML[2m > [22mshould generate correct HTML for grouped pages
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateGroupedPagesHTML[2m > [22mshould format dates in the expected format
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateGroupedPagesHTML[2m > [22mshould truncate descriptions longer than 150 characters
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mcreateToggleSection[2m > [22mshould create toggle section with correct content
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateStyles[2m > [22mshould generate CSS styles as a string
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22msetupToggleEventListener[2m > [22mshould add click event listener to toggle element
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22msetupToggleEventListener[2m > [22mshould handle missing toggle element
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22msetupToggleEventListener[2m > [22mshould toggle content visibility when clicked
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateRecentPostsHTML[2m > [22mshould generate complete HTML for posts display
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateRecentPostsHTML[2m > [22mshould return message when no pages are provided
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateRecentPostsHTML[2m > [22mshould use default initialPostsCount of 15
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould update container with posts HTML
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould handle empty results
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould handle errors
- [31m×[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found
-[31m   → expected "error" to be called with arguments: [ StringContaining{…} ][90m
-
-Received: 
-
-[31m[90m
-
-Number of calls: [1m0[22m
-[31m[39m
- [31m×[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould call updateRecentPosts immediately if document is already loaded
-[31m   → expected "getProcessedPages" to be called at least once[39m
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould add event listener if document is still loading
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould generate correct HTML for a post preview
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould encode URLs correctly
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_random_post_html[2m > [22mshould generate HTML for a random post
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_random_post_html[2m > [22mshould handle errors gracefully
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_random_eulogy[2m > [22mshould load random eulogy roles
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_random_eulogy[2m > [22mshould use default element IDs if not provided
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_random_eulogy[2m > [22mshould handle errors gracefully
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_enjoy2[2m > [22mshould load content for the Enjoy page
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_enjoy2[2m > [22mshould handle errors gracefully
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_7_habits[2m > [22mshould load content for the 7 Habits page
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_7_habits[2m > [22mshould handle errors gracefully
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_ig66[2m > [22mshould load content for the IG66 page
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_ig66[2m > [22mshould handle errors gracefully
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_balance[2m > [22mshould load content for the Balance page
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_balance[2m > [22mshould handle errors gracefully
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_radar_map[2m > [22mshould create a radar map visualization
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_radar_map[2m > [22mshould handle missing Plotly
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_radar_map[2m > [22mshould handle errors gracefully
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_work[2m > [22mshould create a work balance chart
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_work[2m > [22mshould handle missing Plotly
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_work[2m > [22mshould handle errors gracefully
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_desired_time_rest[2m > [22mshould create a rest time chart
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_desired_time_rest[2m > [22mshould handle missing Plotly
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_desired_time_rest[2m > [22mshould handle errors gracefully
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mSevenHabits[2m > [22mshould create a tree with the correct structure
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mThingsIEnjoy[2m > [22mshould create a tree with the correct structure
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mConstants[2m > [22mshould export the correct constants
  [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould create a tree node with given properties
  [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould use default values when not provided
  [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mbreadth_first_walk[2m > [22mshould return empty if node is null
@@ -197,6 +161,49 @@ Number of calls: [1m0[22m
  [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould handle hits without highlighted content
  [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould handle errors and return 'invalid HTML'
  [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mCreateSearch[2m > [22mshould create a search instance with the correct configuration
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould generate correct HTML for a post preview
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould encode URLs correctly
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_random_post_html[2m > [22mshould generate HTML for a random post
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_random_post_html[2m > [22mshould handle errors gracefully
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_random_eulogy[2m > [22mshould load random eulogy roles
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_random_eulogy[2m > [22mshould use default element IDs if not provided
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_random_eulogy[2m > [22mshould handle errors gracefully
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_enjoy2[2m > [22mshould load content for the Enjoy page
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_enjoy2[2m > [22mshould handle errors gracefully
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_7_habits[2m > [22mshould load content for the 7 Habits page
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_7_habits[2m > [22mshould handle errors gracefully
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_ig66[2m > [22mshould load content for the IG66 page
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_ig66[2m > [22mshould handle errors gracefully
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_balance[2m > [22mshould load content for the Balance page
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_balance[2m > [22mshould handle errors gracefully
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_radar_map[2m > [22mshould create a radar map visualization
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_radar_map[2m > [22mshould handle missing Plotly
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_radar_map[2m > [22mshould handle errors gracefully
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_work[2m > [22mshould create a work balance chart
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_work[2m > [22mshould handle missing Plotly
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_work[2m > [22mshould handle errors gracefully
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_desired_time_rest[2m > [22mshould create a rest time chart
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_desired_time_rest[2m > [22mshould handle missing Plotly
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_desired_time_rest[2m > [22mshould handle errors gracefully
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mSevenHabits[2m > [22mshould create a tree with the correct structure
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mThingsIEnjoy[2m > [22mshould create a tree with the correct structure
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mConstants[2m > [22mshould export the correct constants
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould log that Force Graph is loaded
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould not initialize the graph when the DOM element doesn't exist
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle ForceGraph not being defined
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle node canvas object rendering
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle goto control click
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould build graph data correctly
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould update detail with node information
+[90mstdout[2m | src/__tests__/main.test.ts
+[22m[39m🖼️ Enabling image zoom functionality
+Dev server detected, initializing dev info...
+Branch info not found
+Dev info - Branch: [1mnull[22m Port: 4000
+
+[90mstderr[2m | src/__tests__/main.test.ts
+[22m[39m⚠️ GLightbox not found, retrying in 100ms (attempt 1/50)
+
 [90mstdout[2m | src/__tests__/shared.test.ts[2m > [22m[2mShared Utility Functions[2m > [22m[2mappend_randomizer_div[2m > [22m[2mshould not append anything if parent is not found
 [22m[39mappend_randomizer_div #non-existent not present
 
@@ -216,22 +223,6 @@ Number of calls: [1m0[22m
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould handle special characters in path
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould handle empty anchor gracefully
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould handle undefined anchor
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould log that Force Graph is loaded
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould not initialize the graph when the DOM element doesn't exist
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle ForceGraph not being defined
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle node canvas object rendering
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle goto control click
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould build graph data correctly
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould update detail with node information
-[90mstdout[2m | src/__tests__/main.test.ts
-[22m[39m🖼️ Enabling image zoom functionality
-Dev server detected, initializing dev info...
-Branch info not found
-Dev info - Branch: [1mnull[22m Port: 4000
-
-[90mstderr[2m | src/__tests__/main.test.ts
-[22m[39m⚠️ GLightbox not found, retrying in 100ms (attempt 1/50)
-
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould return an array of the same length
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould contain all the same elements
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mrandom_from_list[2m > [22mshould return an element from the list
@@ -279,43 +270,8 @@ Dev info - Branch: [1mnull[22m Port: 4000
  [32m✓[39m src/__tests__/dev-info.test.ts[2m > [22mdev-info[2m > [22mgetCurrentPort[2m > [22mshould return 80 when no port specified
  [32m✓[39m src/__tests__/dev-info.test.ts[2m > [22mdev-info[2m > [22mgetCurrentPort[2m > [22mshould return 4000 for Jekyll default
 
-[31m⎯⎯⎯⎯⎯⎯⎯[1m[7m Failed Tests 2 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
+[2m Test Files [22m [1m[32m16 passed[39m[22m[90m (16)[39m
+[2m      Tests [22m [1m[32m186 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (191)[39m
+[2m   Start at [22m 17:05:13
+[2m   Duration [22m 4.00s[2m (transform 598ms, setup 223ms, collect 889ms, tests 456ms, environment 5.91s, prepare 1.41s)[22m
 
-[31m[1m[7m FAIL [27m[22m[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found
-[31m[1mAssertionError[22m: expected "error" to be called with arguments: [ StringContaining{…} ][90m
-
-Received: 
-
-[31m[90m
-
-Number of calls: [1m0[22m
-[31m[39m
-[36m [2m❯[22m src/__tests__/recent.test.ts:[2m423:26[22m[39m
-    [90m421| [39m
-    [90m422| [39m      [90m// Should log error[39m
-    [90m423| [39m      [34mexpect[39m(consoleSpy)[33m.[39m[34mtoHaveBeenCalledWith[39m(
-    [90m   | [39m                         [31m^[39m
-    [90m424| [39m        expect.stringContaining("non-existent-container container not …
-    [90m425| [39m      )[33m;[39m
-
-[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯[22m[39m
-
-[31m[1m[7m FAIL [27m[22m[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould call updateRecentPosts immediately if document is already loaded
-[31m[1mAssertionError[22m: expected "getProcessedPages" to be called at least once[39m
-[36m [2m❯[22m src/__tests__/recent.test.ts:[2m458:25[22m[39m
-    [90m456| [39m
-    [90m457| [39m      [90m// Should call updateRecentPosts[39m
-    [90m458| [39m      [34mexpect[39m(updateSpy)[33m.[39m[34mtoHaveBeenCalled[39m()[33m;[39m
-    [90m   | [39m                        [31m^[39m
-    [90m459| [39m    })[33m;[39m
-    [90m460| [39m
-
-[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯[22m[39m
-
-
-[2m Test Files [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m15 passed[39m[22m[90m (16)[39m
-[2m      Tests [22m [1m[31m2 failed[39m[22m[2m | [22m[1m[32m184 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (191)[39m
-[2m   Start at [22m 17:03:55
-[2m   Duration [22m 3.94s[2m (transform 578ms, setup 266ms, collect 802ms, tests 457ms, environment 5.86s, prepare 1.38s)[22m
-
-error: Recipe `js-test-verbose-txt` failed on line 44 with exit code 1
