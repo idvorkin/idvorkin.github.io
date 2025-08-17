@@ -65,9 +65,9 @@ test.describe("Header Copy Link Feature", () => {
       // Check clipboard content
       const clipboardText = await page.evaluate(() => navigator.clipboard.readText());
 
-      // Verify the URL format
-      expect(clipboardText).toContain("idvorkin.azurewebsites.net");
-      expect(clipboardText).toContain("/manager-book/");
+      // Verify the URL format - now uses tinyurl with preview text
+      expect(clipboardText).toContain("https://tinyurl.com/igor-blog/?path=");
+      expect(clipboardText).toContain("manager-book");
       if (headerId) {
         expect(clipboardText).toContain(headerId);
       }
