@@ -27,7 +27,7 @@ test.describe("Auto-generated Sunburst", () => {
     expect(sunburstText.length).toBe(3);
   });
 
-  test("Click on text div shows random prompt", async ({ page }) => {
+  test("Click on text div with no prompts keeps same message", async ({ page }) => {
     // Wait for sunburst to load
     await page.waitForSelector("#sunburst svg", { timeout: 5000 });
 
@@ -38,12 +38,9 @@ test.describe("Auto-generated Sunburst", () => {
     // Click on the text div itself (which has a click handler)
     await page.locator("#sunburst_text").click();
 
-    // Text should have changed to show a prompt
+    // Since there are no prompts defined (no UL after H3), text should remain the same
     const updatedText = await page.locator("#sunburst_text").textContent();
-    expect(updatedText).not.toBe(initialText);
-
-    // The text should now contain a colon (indicating a category: prompt format)
-    expect(updatedText).toContain(":");
+    expect(updatedText).toBe("Click in any box or circle");
   });
 
   test("Random prompts are generated for categories", async ({ page }) => {
