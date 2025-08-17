@@ -1,4 +1,4 @@
-# Igor's Enabling Environment and Ever green notes 
+# Igor's Enabling Environment and Ever green notes
 
 <!--
 This README showcases my blog at https://idvork.in
