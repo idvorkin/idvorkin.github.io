@@ -324,9 +324,11 @@ async function shareOrCopyHeaderLink(headerId: string, options: CopyLinkOptions)
       shareText = `From: ${headerText} ...\n\n${previewText}`;
     }
     
-    // Check if Web Share API is available
-    // Try to use native share first on all devices that support it
-    if (navigator.share) {
+    // Check if this is a mobile device
+    const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    
+    // Use native share only on mobile devices that support it
+    if (navigator.share && isMobile) {
       try {
         await navigator.share({
           title: shareTitle,

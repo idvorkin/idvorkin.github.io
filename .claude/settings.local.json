@@ -87,7 +87,11 @@
       "Bash(/dev/null)",
       "Bash(git worktree:*)",
       "Bash(git -C /Users/idvorkin/gits/cc_blog/fetch-modal-content-on-copy push)",
-      "Bash(env)"
+      "Bash(env)",
+      "Bash(git log:*)",
+      "WebSearch",
+      "Bash(gh repo fork:*)",
+      "Bash(git remote add:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"
