@@ -44,7 +44,7 @@ _For many of my roles, I'm still figuring out who I want to be, and how I will a
 
 ### Dealer of smiles and wonder
 
-{%include local_image_float_right.html src="raccoon-magic.png" %}
+{% include blob_image_float_right.html src="blog/raccoon-magic.webp" %}
 
 Making cards change colors at a spectators command or passing coins through a spectator's hand -- Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles. Once Igor learned [magic](/magic), that consumed his free time and became his favorite tool.
 
@@ -74,7 +74,7 @@ Back in his 30s he used to juggle lots of things, the coolest of which being [ju
 
 ### Mostly car free spirit
 
-{%include local_image_float_right.html src="raccoon-bike.png" %}
+{% include blob_image_float_right.html src="blog/raccoon-bike.webp" %}
 
 Igor took a strange pleasure in not driving. Riding his folding [bike](/bike), or making a long day of public transit with Zach and Amelia. Igor would take the kids on the bus, to the train, to the airport, to ride the airport elevators, just to reverse the process and head home so he could enjoy his kids, and the bus, without spending a dime.
 
@@ -111,7 +111,7 @@ Discipline is a core concept of "Begin with the end in mind" (Habit 1), and Igor
 
 ### Fit fellow
 
-{%include local_image_float_right.html src="raccoon-lifting-weights.png" %}
+{% include blob_image_float_right.html src="blog/raccoon-lifting-weights.webp" %}
 Igor knew physical health was the [source of his energy](/physical-health) and acted accordingly. Every month Igor pledged his weight would be 160lbs, and he put [1000\$ on the line](http://ighealth.blogspot.com/2014/10/the-best-1000-i-did-spend.html) to make sure he never reneged on his pledge. In 2024 Igor discovered [Terzepatide](/terzepatide) and from that point forward weight loss was never an issue.
 
 Igor valued his cardio vascular endurance and tried to run a fast 4 miles 2 to 3 times a week. Igor also tried to incorporate biking into his life whenever possible: biking to work, biking to doctors appointments, and even biking the grocery store (which was not efficient nor effective, but enjoyable). Finally, Igor knew the importance of sleep, and always woke up @ 5am. When Igor was having trouble getting enough sleep, he'd cut his caffeine to make sure his body forced him to get the sleep he needed.
@@ -145,7 +145,7 @@ Igor was incredibly grateful to his friend Ammon for teaching him about the weig
 
 ### Emotionally healthy human
 
-{%include local_image_float_right.html src="raccoon-meditate.png" %}
+{% include blob_image_float_right.html src="blog/raccoon-meditate.webp" %}
 
 Igor understood emotional health is the basis of his stability, and [invested](/siy) heavily. Igor started each day at 5am by recording his blessing in his [gratefulness journal](/process-jounral), followed by 20 minutes of meditation. Igor closed the day in a similar vein, a final 10 minutes of meditation and writing out what made his day great in his gratefulness journal.
 
@@ -163,25 +163,9 @@ Igor strived for grand-mother mind, which he applied to [himself](https://www.am
     * Meditation retreats?
 -->
 
-### Husband to Tori - his life long partner
-
-Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02/how-igor-met-tori-genesis-story.html?q=when+tori+met+igor), and then took several twists and turns to get [married](http://ig66.blogspot.com/2015/01/married-check.html?q=when+tori+met+igor). Tori values her privacy so this section will be Tori light, and Igor heavy.
-
-<!--
-
-* To File
-    * Putting Tori's creativity in the fore front without putting Tori there.
-    * Tori being the man in the relationship - the wrench story, porch story, patio.
-    * Incredible costumes
-    * Incredible Chocolatiers
-    * Zach's+Tori about Mom being a job you can't stop at 4pm.
-* Archived links
-* To live
--->
-
 ### Technologist
 
-{%include local_image_float_right.html src="raccoon-nerd.png" %}
+{% include blob_image_float_right.html src="blog/raccoon-nerd.webp" %}
 
 Igor loved technology - taking copious [notes](https://github.com/idvorkin/techdiary) through his technical journeys, putzing with his [blog](https://github.com/idvorkin/idvorkin.github.io) and many small [projects](https://github.com/idvorkin). Igor was REALLY proud when Zach got his own [website](https://www.zacookiegames.com), and when Zach made his first [pull request](https://github.com/idvorkin/zdvorkinweb/pull/5). Igor was also very proud of his first open source [pull request](https://github.com/Homebrew/homebrew-core/pull/48163) for a command line spell checking installer.
 
@@ -219,7 +203,7 @@ To file:
 
 ### Family man
 
-{%include local_image_float_right.html src="raccoon-family.png" %}
+{% include blob_image_float_right.html src="blog/raccoon-family.webp" %}
 
 Igor used to think being a family man would be easy. Being proud of his family, looking back fondly on time with them was easy, but making the time for them, supporting them, teaching them - that was all really hard. Hard yes, but totally worth it.
 
@@ -254,6 +238,24 @@ Igor also realized that writing about kids in an eulogy is hard as kids are cons
 - To live
   - Being with kids recharged him
   - Being with kids inspired him
+-->
+
+### Husband to Tori - his life long partner
+
+{% include blob_image_float_right.html src="blog/raccoon-husband.webp" %}
+
+Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02/how-igor-met-tori-genesis-story.html?q=when+tori+met+igor), and then took several twists and turns to get [married](http://ig66.blogspot.com/2015/01/married-check.html?q=when+tori+met+igor). Tori values her privacy so this section will be Tori light, and Igor heavy.
+
+<!--
+
+* To File
+    * Putting Tori's creativity in the fore front without putting Tori there.
+    * Tori being the man in the relationship - the wrench story, porch story, patio.
+    * Incredible costumes
+    * Incredible Chocolatiers
+    * Zach's+Tori about Mom being a job you can't stop at 4pm.
+* Archived links
+* To live
 -->
 
 ### Father to Amelia - an incredible girl

@@ -62,8 +62,8 @@
         // https://getbootstrap.com/docs/4.0/content/tables/#table-head-options
         $("table").addClass("table table-striped");
 
-        // Make images fluid (except in the header)
-        $("#main-content img").addClass("img-fluid");
+        // Make images fluid (except ones we control with float-right-img)
+        $("#main-content img").not('.float-right-img').addClass("img-fluid");
       </script>
       <!--See: https://github.com/partykit/cursor-party-->
       <script src="https://cursor-party.idvorkin.partykit.dev/cursors.js"></script>

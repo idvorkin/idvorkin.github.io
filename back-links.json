@@ -3455,7 +3455,7 @@
     },
     "/micro-economics": {
       "description": "Supply, demands and markets, oh my!\n\n",
-      "doc_size": 13000,
+      "doc_size": 14000,
       "file_path": "_site/micro-economics.html",
       "incoming_links": [],
       "last_modified": "2024-10-05T21:35:59-07:00",
@@ -3547,7 +3547,7 @@
     },
     "/moments": {
       "description": "Take a few seconds to close your eyes and think back on an important memory. In that moment, did you feel a sense of elevation? Did you experience insight? Have a sense of pride? Make a connection? In the power of moments, the attributes of powerful moments are understood so that they can be better engineered.\n\n",
-      "doc_size": 25000,
+      "doc_size": 26000,
       "file_path": "_site/moments.html",
       "incoming_links": [
         "/balance",
@@ -3682,7 +3682,7 @@
     },
     "/negotiate": {
       "description": "Negotiation is the heart of collaboration. It is what makes conflict potentially meaningful and productive for all parties. Getting To Yes is the seminal book on negotiation. It’s the deep dive into win win or no deal and seek first to understand. The formal, be hard on problems and soft on people, then focus on the desired outcomes not the positions, next get more options on the table, and make sure you measure by objective criteria - lastly know your BATNA.Several years later a new book came out by a hostage negotiator. Instead of being analytic focus, it’s all about influencing the elephant.\n\n",
-      "doc_size": 21000,
+      "doc_size": 22000,
       "file_path": "_site/negotiate.html",
       "incoming_links": [
         "/curious",
@@ -3708,7 +3708,7 @@
     },
     "/neovim": {
       "description": "Long ago a fork from vim emerged. Neovim! I avoided it for a long time, but when Bram (the inventor of vim) died, I decided it was time to switch. Now that I’ve sucked up the 20-40 hours in the conversion, I’m thrilled I did. Turns out all the “kids” have been using and developing on neovim. This results in 1, good tools, and nice best practices.\n\n",
-      "doc_size": 16000,
+      "doc_size": 17000,
       "file_path": "_site/neovim.html",
       "incoming_links": [
         "/vim"
