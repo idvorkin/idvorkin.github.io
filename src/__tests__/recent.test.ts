@@ -403,7 +403,7 @@ describe("Recent Module", () => {
     });
 
     it("should do nothing if container is not found", async () => {
-      const consoleSpy = vi.spyOn(console, "error");
+      const consoleSpy = vi.spyOn(console, "log");
 
       // Save original document.getElementById
       const originalGetElementById = document.getElementById;
@@ -434,6 +434,11 @@ describe("Recent Module", () => {
 
   describe("initRecentAllPosts", () => {
     it("should call updateRecentPosts immediately if document is already loaded", async () => {
+      // Create a test container in the DOM
+      const container = document.createElement("div");
+      container.id = "test-container";
+      document.body.appendChild(container);
+
       // Mock document with all required methods
       const mockDoc = {
         readyState: "complete",
@@ -456,6 +461,9 @@ describe("Recent Module", () => {
 
       // Should call updateRecentPosts
       expect(updateSpy).toHaveBeenCalled();
+
+      // Clean up
+      document.body.removeChild(container);
     });
 
     it("should add event listener if document is still loading", () => {
