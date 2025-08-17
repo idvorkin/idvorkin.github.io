@@ -143,6 +143,16 @@ When resolving PR feedback:
 - Reference files using relative paths: `cc_main/file.txt` or `cc_blog_worktree/file.txt`
 - Create worktrees from cc_main: `cd cc_main && git worktree add ../feature-branch`
 
+## Temporary Files
+
+- Use `/home/developer/gits/idvorkin.github.io/repo_tmp/` for all temporary files instead of `/tmp/`
+- This directory is gitignored and stays within the repo for easier access
+- Always use full paths when creating temp files: `/home/developer/gits/idvorkin.github.io/repo_tmp/filename.ext`
+- Examples:
+  - Screenshots: `/home/developer/gits/idvorkin.github.io/repo_tmp/screenshot.png`
+  - Test output: `/home/developer/gits/idvorkin.github.io/repo_tmp/test-output.txt`
+  - Jekyll logs: `/home/developer/gits/idvorkin.github.io/repo_tmp/jekyll.log`
+
 ## Clipboard Access
 
 - Use `osascript` instead of `pbpaste` for checking clipboard content as it can handle multiple content types (images, HTML, text)

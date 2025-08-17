@@ -2,6 +2,9 @@
 # PROJECT-SPECIFIC
 # ================================================================================
 
+# Temporary directory for repo-specific files
+repo_tmp/
+
 # Ignore the statically generated site.
 _site
 
