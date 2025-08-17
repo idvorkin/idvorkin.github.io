@@ -16,6 +16,11 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [RAG a psychiatrist](#rag-a-psychiatrist)
 - [What I wrote summary](#what-i-wrote-summary)
 - [Diary](#diary)
+  - [2025-08-17](#2025-08-17)
+    - [Isolation](#isolation)
+    - [Racoon Illustrations](#racoon-illustrations)
+  - [2025-07-21](#2025-07-21)
+    - [The Great Typo Fix Adventure: A Tale of AI, Automation, and Unexpected Consequences](#the-great-typo-fix-adventure-a-tale-of-ai-automation-and-unexpected-consequences)
   - [2025-07-20](#2025-07-20)
   - [2025-07-13](#2025-07-13)
   - [2024-10-27](#2024-10-27)
@@ -123,6 +128,33 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - Logging and debugging setup with Loguru and PuDB.
 
 ## Diary
+
+### 2025-08-17
+
+#### Isolation
+
+- HOORAY got ISOLATION working. Ugh, took a very long time; some of the pain points:
+- Claude Docker configs live here: [Settings/claude-docker](https://github.com/idvorkin/Settings/tree/master/claude-docker).
+  What does isolation mean? - Running in its own GitHub account so it can't mess up the main repo - Running in its own container so it can't mess up my machine - GOAL: Increase time between interventions!
+  - Many Problems:
+    - Stuff on the main account (like co-pilot code review, aren't free for other accounts doing PRs)
+    - Linux/arm64: lots of broken things and few prebuilt binaries.
+  - After many false attempts (container terminal tweaks), turned out the root cause was zsh being hardcoded in my .tmux.con. Attempts logged in [Settings commit c03df99](https://github.com/idvorkin/Settings/commit/c03df99adf673707e912d4b03451b172b88c8d45).
+  - Fix: made zsh path conditional in tmux for containers. See [Settings commit 3480d36](https://github.com/idvorkin/Settings/commit/3480d3649647424e9be42e3b3648c6786795abec).
+  - Current problems
+    - Still can't paste images in.
+    - Need to auth to claude in every container
+- Had to stop being weird: removed `cd`→`zoxide` alias that broke agent/Claude commands; restored default `cd`.
+  - The alias intercepted directory changes, causing tool-run shells to misbehave. Commented it out to unblock automation. See [Settings commit e5eabb4](https://github.com/idvorkin/Settings/commit/e5eabb4567960368f9ff18b3531b570b0b87fdb1).
+    REMEMBER:
+- Always have a 2-monitor setup — iPad works great as a second display.
+  ![iPad as second monitor — dual-screen setup increasing horizontal space for agents](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250817_091532.webp)
+- I need to be careful as I can just get sucked down rabbit holes; instead I need to think through what I want to accomplish and only do that. And I probably need to time-box so I don't spend too much time. This is even easier to mess up when doing more than 1 thing at once
+
+#### Racoon Illustrations
+
+- Not sure why it took me so long but added a [script](https://github.com/idvorkin/idvorkin.github.io/blob/9cacbdfc0867e0a5cb98f1a2e1e780116d3dfecb/scripts/generate_eulogy_images.py?plain=1#L14) to generate raccoon image (was manually doing it from chatgpt chats, bleh)
+- Redid [eulogy](/eulogy) images.
 
 ### 2025-07-21
 
