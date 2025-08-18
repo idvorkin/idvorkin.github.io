@@ -213,6 +213,7 @@ AGENT: Make this image right aligned
 
   - Getting a hotel on the coast is like impossible on a Friday or Saturday
   - But this place was huge, like 200 rooms, and we were the only car there.
+  - WHAT:mindblown: This was the old cult [suicide hotel](https://www.washingtonpost.com/archive/politics/1997/03/29/the-two-lured-oregon-recruits-with-promise-of-space-transport/445401f0-7d54-49cc-b92d-3779b10aba7a/?utm_source=chatgpt.com)
   - And the guy working the desk was like really kind and the only guy there
   - Many [mixed reviews on the internet](https://www.google.com/travel/hotels/entity/CgsIktCZ1NHN3e20ARAB/reviews?q=great%20alsi%20hotel%20near%20cook%27s%20chasm&g2lb=4965990%2C4969803%2C72302247%2C72317059%2C72414906%2C72471280%2C72472051%2C72485658%2C72560029%2C72573224%2C72616120%2C72647020%2C72648289%2C72686036%2C72760082%2C72803964%2C72832976%2C72882230%2C72958624%2C72959983%2C72990341%2C73010541%2C73059275&hl=en-US&gl=us&cs=1&ssta=1&ts=CAEaSQorEicyJTB4NTRjMWMyNTExNTE0YzFmMToweGI0ZGI3NjZkMWE4NjY4MTIaABIaEhQKBwjpDxAIGBMSBwjpDxAIGBUYAjICCAIqCQoFOgNVU0QaAA&qs=CAE4AkIJCRJohhptdtu0QgkJEmiGGm1227Q&ictx=111&utm_campaign=sharing&utm_medium=link&utm_source=htls) ... my favorite is the responses they get from the owner
     ![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250818_084418.webp)
