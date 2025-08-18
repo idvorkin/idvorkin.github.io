@@ -2414,7 +2414,7 @@
         "/todo_enjoy",
         "/work-satisfaction"
       ],
-      "last_modified": "2025-08-14T20:41:27-07:00",
+      "last_modified": "2025-08-17T19:20:54-07:00",
       "markdown_path": "_posts/2020-04-01-Igor-Eulogy.md",
       "outgoing_links": [
         "/7-habits",
@@ -5210,10 +5210,10 @@
     },
     "/time-off-2025-08": {
       "description": "I’m incredibly fortunate to be able to take 6 weeks off this summer! After 5 years of service at Meta, you get 30 days (about 5 week) off!\n\n",
-      "doc_size": 30000,
+      "doc_size": 34000,
       "file_path": "_site/time-off-2025-08.html",
       "incoming_links": [],
-      "last_modified": "2025-08-14T20:41:27-07:00",
+      "last_modified": "2025-08-18T09:04:26-07:00",
       "markdown_path": "_d/time-off-2025-08.md",
       "outgoing_links": [
         "/gap-year-igor",
