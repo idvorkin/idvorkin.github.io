@@ -219,6 +219,9 @@ Session.vim
 # Aider AI coding assistant
 .aider.*
 
+# Claude settings
+.claude/settings.local.json
+
 # Emacs
 \#*\#
 /.emacs.desktop
