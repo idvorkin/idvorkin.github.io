@@ -3,7 +3,7 @@ layout: post
 title: "Getting the most out of time off"
 tags:
 permalink: /timeoff
-imagefeaturelocal: raccoon-vacation.png
+imagefeaturelocal: raccoon-vacation.webp
 redirect_from:
   - /vacation
   - /personal-development
@@ -69,7 +69,7 @@ Like being "money rich", being time rich can solve lots of problem, but it comes
 
 ## The phases of time off
 
-{% include local_image_float_right.html src="raccoon-vacation.png" %}
+{% include local_image_float_right.html src="raccoon-vacation.webp" %}
 
 A common question is should you take 2 short vacations or 1 long one. That's a tough choice. I'm not sure I have an opinion on that, but I've learned my time off goes through a few phases, and I suspect there's a fixed time component, and if I can better understand the phases, I can maximize the value of my time off:
 

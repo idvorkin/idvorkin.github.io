@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Time off August 2025 - Meta Recharge
-imagefeaturelocal: raccoon-vacation.png
+imagefeaturelocal: raccoon-vacation.webp
 permalink: /time-off-2025-08
 sort_order: 300
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-imagefeaturelocal: raccoon-vacation.png
+imagefeaturelocal: raccoon-vacation.webp
 title: Adventures March and April 2020
 ---
 

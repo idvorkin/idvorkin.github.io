@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Time off Midwinter break 2024 - Divide and conquer
-imagefeaturelocal: raccoon-vacation.png
+imagefeaturelocal: raccoon-vacation.webp
 redirect_from:
   - /time-off-2024-02
 ---
