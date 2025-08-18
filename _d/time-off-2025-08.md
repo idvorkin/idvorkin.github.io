@@ -20,6 +20,8 @@ To get the most out of my time off, I'm going to follow my best practice of pre-
   - [From 12 months to 6 weeks](#from-12-months-to-6-weeks)
   - [The Great Monday Cat Visitation Protocol (Or: How We Became Slaves to Our Feline Overlords)](#the-great-monday-cat-visitation-protocol-or-how-we-became-slaves-to-our-feline-overlords)
 - [By Week](#by-week)
+  - [Week 3 - Crater Lake](#week-3---crater-lake)
+  - [Week 4 - Long Beach](#week-4---long-beach)
 - [Stuff happening](#stuff-happening)
   - [Candidates](#candidates)
 - [My top priorities](#my-top-priorities)
@@ -163,6 +165,78 @@ But honestly? Weekly guaranteed animal discovery AND comedy training while road-
   - Back-to-school preparation for kids
   - Work transition and planning
   - Final documentation of summer memories
+
+### Week 3 - Crater Lake
+
+AGENT: Make this image right aligned
+![Map of week 3 trip](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250818_083503.webp)
+
+- Highlights:
+
+  - Zach got Covid
+  - Amelia got Covid
+  - OMG so hot, like 100 degrees!
+
+- Thorp/Ellensburg/Yakima
+
+  - A pretty cool part of the country
+  - We got a 2$ Iced Americano! Wow!
+  - They were selling cherries that they were loading into bag right off the back of the cherry truck
+  - We took 821 which was cool winding river roads, if it wasn't 100 degrees, I should have gone rafting.
+
+- Bend Orgeon
+
+  - Wow, so much beauty
+  - Tried to book wizard island book tour, sold out in in like 2 minutes
+  - Restarted giving out balloons!!
+  - Very Yummy Mexican Food
+
+- Drive to Crater Lake
+
+  - Wind farms are awesome - so big!
+
+- Crater Lake
+
+  - Poor Zach was in the back groaning and moaning going through hot flashes and ice chills
+  - Amelia and I hiked to the tippy top and saw an amazing view
+  - That is a super cool place
+
+- Grants Pass
+
+  - Beautiful, but I didn't spend it well. I just spent like 6 hours trying to setup a vibe coding environment.
+
+- Thor's Hammer/Cooks Casm
+
+  - Amazing as usual
+
+- The great alsi hotel - The weirest hotel ever
+
+  - Getting a hotel on the coast is like impossible on a Friday or Saturday
+  - But this place was huge, like 200 rooms, and we were the only car there.
+  - And the guy working the desk was like really kind and the only guy there
+  - Many [mixed reviews on the internet](https://www.google.com/travel/hotels/entity/CgsIktCZ1NHN3e20ARAB/reviews?q=great%20alsi%20hotel%20near%20cook%27s%20chasm&g2lb=4965990%2C4969803%2C72302247%2C72317059%2C72414906%2C72471280%2C72472051%2C72485658%2C72560029%2C72573224%2C72616120%2C72647020%2C72648289%2C72686036%2C72760082%2C72803964%2C72832976%2C72882230%2C72958624%2C72959983%2C72990341%2C73010541%2C73059275&hl=en-US&gl=us&cs=1&ssta=1&ts=CAEaSQorEicyJTB4NTRjMWMyNTExNTE0YzFmMToweGI0ZGI3NjZkMWE4NjY4MTIaABIaEhQKBwjpDxAIGBMSBwjpDxAIGBUYAjICCAIqCQoFOgNVU0QaAA&qs=CAE4AkIJCRJohhptdtu0QgkJEmiGGm1227Q&ictx=111&utm_campaign=sharing&utm_medium=link&utm_source=htls) ... my favorite is the responses they get from the owner
+    ![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250818_084418.webp)
+
+- Final Leg home - Tony forgot how to drive
+
+  - Igor had to drive instead.
+  - BUT, Igor forgot how to drive!
+  - Took the 405 as i5 was closed, but then forgot I need to follow directions and didn't take 520 exist,
+  - Driving is a lost skill for me.
+  - But on the bright side, I learned about the service menu, pretty cool to see all the backup systems and monitoring in there.
+    ![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250818_084632.webp)
+
+- Physical Health
+
+  - Realized I can just carry my heavy club around everywhere.
+
+- Meetups
+  - Met up with a LinkedIn follower who wanted some career advice, was really cool to find a seattle hidden gem. Check out the [public space at 3rd and university](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250818_083922.webp)
+
+### Week 4 - Long Beach
+
+- Meetups
+  - Met up with an old work colleague who lives in Edmonds, and since I was there, took a ferry to kingston and back for fun.
 
 ## Stuff happening
 
