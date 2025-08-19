@@ -1,5 +1,5 @@
 ---
-title: "Will Igor Take a Gap Year? Wrestling with Dragons and Dreams at 50"
+title: "Will Igor Take a Gap Year? Wrestling with Dragons and Dreams"
 layout: post
 permalink: /gap-year-igor
 imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-gapyear.webp
@@ -11,20 +11,20 @@ tags:
   - how igor ticks
 ---
 
-The gap year concept is compelling in theory, but what does it look like when rubber meets road? Here's my real-time wrestling match with the dragons guarding this treasure of time, complete with all the messy financial calculations, identity crises, and voice-in-head battles that come with considering a year off at 50.
-
-This is the personal companion to my broader piece on [the gap year paradox](/gap-year) - where theory meets Igor's very specific neuroses and circumstances.
-
-{% include summarize-page.html src="/gap-year" %}
+Done right, a gap year isn’t a year off; it’s a year on — intentional investment in health, relationships, and mastery while you still have the energy to enjoy the returns. A gap year is one of those uncharted spaces—seductive when discussed longigly over a beer, scary when holding a resignation letter outside your bosses office. Early maps warned: “HC SVNT DRACONES.” Here be dragons. I’m mapping it in real time: the money jitters, fear of decay, identity questions, and habit architecture that decide whether the year becomes treasure or an aimless journey.
 
 {% include blob_image_float_right.html src="blog/raccoon-gapyear.webp" %}
+
+This sits next to [the gap year paradox](/gap-year): same terrain, closer camera.
+
+{% include summarize-page.html src="/gap-year" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [Is Igor Gonna take a gap year?](#is-igor-gonna-take-a-gap-year)
-- [Does Igor want to retire?](#does-igor-want-to-retire)
-- [Letting Your Dragons Out of the Box](#letting-your-dragons-out-of-the-box)
+- [Is Igor really gonna quit his job and take a gap year?](#is-igor-really-gonna-quit-his-job-and-take-a-gap-year)
+- [If Igor could retire today, would he?](#if-igor-could-retire-today-would-he)
+- [Quitting work lets your Dragons Out of the Box](#quitting-work-lets-your-dragons-out-of-the-box)
 - [Igor's Financial Security Dragon](#igors-financial-security-dragon)
 - [Slaying Financial Security](#slaying-financial-security)
 - [Igor's Decay Dragon: Health and Habits (Physical, Emotional, Relationship)](#igors-decay-dragon-health-and-habits-physical-emotional-relationship)
@@ -37,40 +37,41 @@ This is the personal companion to my broader piece on [the gap year paradox](/ga
   - [Family Success](#family-success)
 - [Battling Loneliness](#battling-loneliness)
   - [Loneliness Success](#loneliness-success)
+- [First 90 Days Plan](#first-90-days-plan)
+- [Reassessment and Exit Triggers](#reassessment-and-exit-triggers)
 - [Igor's Identity Dragon](#igors-identity-dragon)
 - [Slaying Identity - PhD in AI, Content, and MRR](#slaying-identity---phd-in-ai-content-and-mrr)
-- [First 90 Days Plan](#first-90-days-plan)
 - [Gap Year Pre-Mortem](#gap-year-pre-mortem)
 - [Gap Year Voices in my head](#gap-year-voices-in-my-head)
- - [Can 1 Be 2? The Extend-to-Year-2 Rule](#can-1-be-2-the-extend-to-year-2-rule)
- 
+- [Can 1 Be 2? The Extend-to-Year-2 Rule](#can-1-be-2-the-extend-to-year-2-rule)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-
-
-## Is Igor Gonna take a gap year?
+## Is Igor really gonna quit his job and take a gap year?
 
 {% include alert.html content="I'm incredibly privileged to have both line of sight on savings and the support of my family to even consider a gap year" style="info" %}
 
-When I started at Meta in March 2020, my plan was to take a gap year after my Meta stock vested in 2024. After all, I had five job offers, including competitive offers from Google, Meta, and several mid-sized companies. But today's job market is much scarier than pre-COVID 2020 — it's become downright dicey out there.
+When I started at Meta in March 2020, my plan was to take a gap year after my Meta stock vested in 2024. After all, I had five job offers in hand, including competitive offers from Google, Meta, and several mid-sized companies. But today's job market is much scarier than pre-COVID 2020 — it's become downright dicey out there.
 
-But there's more to life than collecting money, here are some what ifs I need to remember:
+Life is more then money, and to remind myself to broaden my perspective it's helpful to image things I may lose.
 
-What If ...
+What if in 10 years:
 
-- I can only see my kid for N more years
-- I am only able bodied for N more years.
-- I am only alive for N more years.
+- My kids no longer live at home
+  - 95% probable
+- I have serious health problems
+  - 30% probable
+- I am much weaker then today
+  - 95% probable
+- I am no longer alive
+  - Hopefully very low possibility, but see [chasing daylight](AGENT:Add Link), and [alive](AGENT: Add link)
 
-So what's holding me back? Dragons! Early cartographers added dragons and other mythical beasts to regions that were unexplored or poorly understood, symbolizing danger, mystery, and the unknown. Thus early maps had "Here be dragons" ("HC SVNT DRACONES" in Latin) to mark uncharted territories.
+## If Igor could retire today, would he?
 
-## Does Igor want to retire?
+I like to say I'd do 80% of my job for free (but I don't get to do that 80% without doing the 20% I don't enjoy). Retirement doesn't especially excite me.
 
-I like to say I'd do 80% of my job for free (and you don't get to do them without doing that 20% I don't enjoy). Retirement doesn't really interest me. However, as I like to say [no one ever said they wished they worked more on their deathbed](/wlb-manifesto).
-
-Family time is sacred, and work eats up a lot of energy. When there's no family time needed, I'm happy to (and probably prefer to) work.
+However, I do like to say [no one ever said they wished they worked more on their deathbed](/wlb-manifesto). Especially when family time is sacred, and work eats up a lot of energy. When there's no family time needed, I'm happy to (and probably prefer to) work, but I'm not quite there yet
 
 Looking ahead from 2025 (I'm 47 now), I see three distinct phases:
 
@@ -98,11 +99,15 @@ In Phase 3, I anticipate wanting to work extensively - but Phases 1 and 2 repres
 
 It certainly does, but Tori needs her own time, and our relationship is set up where we don't need a ton of time together.
 
-**What about travel?**
+{%include summarize-page.html src="/tori"%}
 
-Not my thing.
+**Hey don't you want to travel?**
 
-## Letting Your Dragons Out of the Box
+Not really my thing, I'm more excited by production and self improvement then consumption.
+
+TODO: Add content on production vs consumption
+
+## Quitting work lets your Dragons Out of the Box
 
 The dragons (Financial Security, Decay, Loneliness) have always been there, but work kept them contained in a box. Not solved - just managed through a sophisticated system of legitimate cover.
 
@@ -197,8 +202,6 @@ Gap year is scary, here are some guard rails to make it happen:
     - Model accommodates large unexpected expenses
     - Expenses estimate includes taxes, insurance, repairs, college
 
-
-
 ## Igor's Decay Dragon: Health and Habits (Physical, Emotional, Relationship)
 
 - What if I get lazy and lose all direction and discipline?
@@ -267,7 +270,6 @@ See my [kettlebell](/kettlebell) practice and broader [physical health](/physica
 
 You can probably look at my [2025 goals](/y25), which sadly look a lot like my [2024 goals](/y24), and will probably look like my 2028 goals if that's when I actually get my gap year.
 
-
 ## Battling Addiction
 
 For me, addiction isn't about alcohol (I gave that up for better [sleep](/sleep)) - it's social media. The endless scroll, the dopamine hits from notifications, the fear of missing out. During a gap year, without the structure of work, these digital sirens could easily consume entire days.
@@ -287,7 +289,7 @@ For me, addiction isn't about alcohol (I gave that up for better [sleep](/sleep)
 
 A key motivation behind my gap year is the desire to **spend more meaningful time with my family**. Time together is precious and fleeting; once gone, it cannot be reclaimed.
 
-However, it’s important to be realistic.  There are two sources of family resentment:
+However, it’s important to be realistic. There are two sources of family resentment:
 
 ### Seeing them in their natural state
 
@@ -367,6 +369,7 @@ Mitigations:
 - STRETCH: **Online community building** - Meeting interesting people on the internet
 
 Metrics:
+
 - Two recurring daytime social blocks per week
 - One new person/group per month
 - One quarterly daylong/retreat with a friend
@@ -374,6 +377,7 @@ Metrics:
 ## First 90 Days Plan
 
 Daily cadence:
+
 - Exercise (kettlebell/strength + walk)
 - Writing block (artifact-focused)
 - Learning block (AI/skills)
@@ -381,12 +385,14 @@ Daily cadence:
 - Evening walk and shutdown
 
 Weekly cadence:
+
 - Two social blocks (daytime)
 - One long-form artifact or ship a micro-app
 - One deep work block (3–4 hours, no meetings)
 - One admin/finance review
 
 Accountability:
+
 - Weekly review and plan
 - Share an artifact publicly or with a small circle
 
@@ -395,10 +401,12 @@ Accountability:
 ## Reassessment and Exit Triggers
 
 Cadence:
+
 - Monthly review: health adherence, artifact shipping, cash runway
 - Quarterly retro: adjust goals, social cadence, project WIP
 
 Early exit triggers:
+
 - Health adherence < 50% for 2 consecutive months
 - Family stress rising (qualitative check-ins indicate sustained strain)
 - Cash buffer < 1.25× annual expenses or large unexpected expense without coverage
@@ -477,5 +485,3 @@ Otherwise, use Year 2 as the pre-funded job-search runway: plan in months 10–1
 Why month 10?
 
 - Two months preserves optionality for a targeted search without panic and lets you prep materials before month 12.
-
-Closing thought: A gap year isn’t a year off; it’s a year on — intentional investment in health, relationships, and mastery while you still have the energy to enjoy the returns.
