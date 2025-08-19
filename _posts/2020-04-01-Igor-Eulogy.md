@@ -28,10 +28,10 @@ _Add comments [here](https://hackmd.io/s90ojEpMTC-t51EFYnUuMw)_
 - [Disciple of the 7 habits of highly effective people](#disciple-of-the-7-habits-of-highly-effective-people)
 - [Fit fellow](#fit-fellow)
 - [Emotionally healthy human](#emotionally-healthy-human)
-- [Husband to Tori - his life long partner](#husband-to-tori---his-life-long-partner)
 - [Technologist](#technologist)
 - [Professional](#professional)
 - [Family man](#family-man)
+- [Husband to Tori - his life long partner](#husband-to-tori---his-life-long-partner)
 - [Father to Amelia - an incredible girl](#father-to-amelia---an-incredible-girl)
 - [Father to Zach - a wonderful boy](#father-to-zach---a-wonderful-boy)
 
@@ -244,7 +244,7 @@ Igor also realized that writing about kids in an eulogy is hard as kids are cons
 
 {% include local_image_float_right.html src="raccoon-husband.webp" %}
 
-Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02/how-igor-met-tori-genesis-story.html?q=when+tori+met+igor), and then took several twists and turns to get [married](http://ig66.blogspot.com/2015/01/married-check.html?q=when+tori+met+igor). Tori values her privacy so this section will be Tori light, and Igor heavy.
+Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02/how-igor-met-tori-genesis-story.html?q=when+tori+met+igor), and then took several twists and turns to get [married](http://ig66.blogspot.com/2015/01/married-check.html?q=when+tori+met+igor). [Tori](/tori) values her privacy so this section will be Tori light, and Igor heavy.
 
 <!--
 
@@ -257,6 +257,7 @@ Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02
 * Archived links
 * To live
 -->
+
 
 ### Father to Amelia - an incredible girl
 
