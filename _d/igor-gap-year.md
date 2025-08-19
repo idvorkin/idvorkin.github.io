@@ -13,11 +13,11 @@ tags:
 
 Done right, a gap year isn’t a year off; it’s a year on — intentional investment in health, relationships, and mastery while you still have the energy to enjoy the returns. A gap year is one of those uncharted spaces—seductive when discussed longigly over a beer, scary when holding a resignation letter outside your bosses office. Early maps warned: “HC SVNT DRACONES.” Here be dragons. I’m mapping it in real time: the money jitters, fear of decay, identity questions, and habit architecture that decide whether the year becomes treasure or an aimless journey.
 
-{% include blob_image_float_right.html src="blog/raccoon-gapyear.webp" %}
-
+{% include alert.html content="I'm incredibly privileged to have both line of sight on savings and the support of my family to even consider a gap year" style="info" %}
 This sits next to [the gap year paradox](/gap-year): same terrain, closer camera.
 
 {% include summarize-page.html src="/gap-year" %}
+{% include blob_image_float_right.html src="blog/raccoon-gapyear.webp" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -25,6 +25,8 @@ This sits next to [the gap year paradox](/gap-year): same terrain, closer camera
 - [Is Igor really gonna quit his job and take a gap year?](#is-igor-really-gonna-quit-his-job-and-take-a-gap-year)
 - [If Igor could retire today, would he?](#if-igor-could-retire-today-would-he)
 - [Quitting work lets your Dragons Out of the Box](#quitting-work-lets-your-dragons-out-of-the-box)
+- [Where is Igor gonna find the strength to battle the dragons?](#where-is-igor-gonna-find-the-strength-to-battle-the-dragons)
+- [The top question I get, how do you know you should start your gap year in relation to money?](#the-top-question-i-get-how-do-you-know-you-should-start-your-gap-year-in-relation-to-money)
 - [Igor's Financial Security Dragon](#igors-financial-security-dragon)
 - [Slaying Financial Security](#slaying-financial-security)
 - [Igor's Decay Dragon: Health and Habits (Physical, Emotional, Relationship)](#igors-decay-dragon-health-and-habits-physical-emotional-relationship)
@@ -43,14 +45,12 @@ This sits next to [the gap year paradox](/gap-year): same terrain, closer camera
 - [Slaying Identity - PhD in AI, Content, and MRR](#slaying-identity---phd-in-ai-content-and-mrr)
 - [Gap Year Pre-Mortem](#gap-year-pre-mortem)
 - [Gap Year Voices in my head](#gap-year-voices-in-my-head)
-- [Can 1 Be 2? The Extend-to-Year-2 Rule](#can-1-be-2-the-extend-to-year-2-rule)
+- [Can 1 become 2? The Extend-to-Year-2 Rule](#can-1-become-2-the-extend-to-year-2-rule)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Is Igor really gonna quit his job and take a gap year?
-
-{% include alert.html content="I'm incredibly privileged to have both line of sight on savings and the support of my family to even consider a gap year" style="info" %}
 
 When I started at Meta in March 2020, my plan was to take a gap year after my Meta stock vested in 2024. After all, I had five job offers in hand, including competitive offers from Google, Meta, and several mid-sized companies. But today's job market is much scarier than pre-COVID 2020 — it's become downright dicey out there.
 
@@ -69,9 +69,11 @@ What if in 10 years:
 
 ## If Igor could retire today, would he?
 
-I like to say I'd do 80% of my job for free (but I don't get to do that 80% without doing the 20% I don't enjoy). Retirement doesn't especially excite me.
+AGENT: LInk chpaters of my life
 
-However, I do like to say [no one ever said they wished they worked more on their deathbed](/wlb-manifesto). Especially when family time is sacred, and work eats up a lot of energy. When there's no family time needed, I'm happy to (and probably prefer to) work, but I'm not quite there yet
+I often repeat "I'd do 80% of my job for free, but I don't get to do that 80% without doing the last 20%", so retirement doesn't especially excite me.
+
+That said, I also repeat [no one ever said they wished they worked more on their deathbed](/wlb-manifesto). Especially when family time is sacred, and work eats up a lot of energy. When there's no incremental family time possible, I'm happy to (and probably prefer to) work, but I'm not there in this [chapter](link) of my life.
 
 Looking ahead from 2025 (I'm 47 now), I see three distinct phases:
 
@@ -95,6 +97,7 @@ Looking ahead from 2025 (I'm 47 now), I see three distinct phases:
 
 In Phase 3, I anticipate wanting to work extensively - but Phases 1 and 2 represent irreplaceable windows for deep family connection.
 
+AGENT: Link in Tori
 **Hey you're not talking about Tori, doesn't time with her matter?**
 
 It certainly does, but Tori needs her own time, and our relationship is set up where we don't need a ton of time together.
@@ -109,7 +112,7 @@ TODO: Add content on production vs consumption
 
 ## Quitting work lets your Dragons Out of the Box
 
-The dragons (Financial Security, Decay, Loneliness) have always been there, but work kept them contained in a box. Not solved - just managed through a sophisticated system of legitimate cover.
+Many dragons (Financial Security, Decay, Loneliness) are always there, but work kept them contained in a box. Not solved - just out of mind through distraction, structure (gonna get income monthly, gonna be force to perform, gonna be forced to be efficient).
 
 Work provided three critical pieces of dragon management infrastructure:
 
@@ -121,19 +124,45 @@ These weren't lies or rationalizations. Work really does make it harder to maint
 
 But the gap year opens the box. Suddenly there's no meeting schedule to explain away poor health habits, no work exhaustion to buffer loneliness, no legitimate crisis to postpone difficult conversations with family. You need to create your own social connections, generate your own sense of urgency and purpose, and face your habits without the comfortable excuse of being legitimately exhausted.
 
-**The Parkinson's Law Dragon** is particularly vicious. At work, deadlines create artificial scarcity that forces efficiency. Without external constraints, tasks expand to fill available time - what should take 2 hours somehow takes all morning. This dragon whispers: "You have all day, so why rush?" The result: a slow drift into inefficiency that makes you feel simultaneously busy and unproductive. It's the worst kind of dragon because it makes you complicit in your own time theft.
+**Parkinson's Dragon** is particularly vicious. Named for [Parkin's law](AGENT: Link Post) At work, deadlines create artificial scarcity that forces efficiency. Without external constraints, tasks expand to fill available time - what should take 2 hours somehow takes all morning. This dragon whispers: "You have all day, so why rush?" The result: a slow drift into inefficiency that makes you feel simultaneously busy and unproductive. It's the worst kind of dragon because it makes you complicit in your own time theft.
 
 **The Financial Security Dragon** reveals itself differently during a gap year. When you had a steady paycheck, market fluctuations were abstract background noise - you weren't drawing from investments, so volatility didn't matter day-to-day. But during a gap year, every market dip feels personal because you're actually living off those investments. The dragon transforms the market from a distant abstraction into a daily anxiety generator, making you hyperaware of every percentage point change in your portfolio.
 
 The dragons are the same size they've always been. The difference is now you're face-to-face with them in an empty room, and the uncomfortable truth emerges: some of your struggles weren't actually about time or energy - they were about something deeper that work was helping you avoid.
+
+## Where is Igor gonna find the strength to battle the dragons?
+
+Igor will summon his best self, the 5am Igor who [Begins with end in Mind](/end-in-mind), and sets future Igor to run on automatic. So here are some gaud rail, and spells to guide me and other on my journey
+
+## The top question I get, how do you know you should start your gap year in relation to money?
+
+You should understand all the dragons in detail, but re: the finanical security dragon (again the other dragons might be equally if not more dangerous), but I'll answer you anyways
+
+- Money: Net worth exceeds "X" Million.
+
+  - Beyond this the risk is negligible
+
+- Date: XX/YY if my net worth is still higher than "Y" million, where Y is much lower than X.
+  - If you wait till after XX/YY, the value is negligable.
+
+* What are the actual dates and numbers?
+
+  - Well, a magician never reveals his tricks, and Igor's gotta have some secrets.
+
+* Come on, can you at least give a formula?
+  - I think the most conservative
+  - Baseline: Hold 2× annual expenses in cash-like accounts
+  - Assumptions:
+    - You can find job in ≤ 12 months (possibly at lower comp)
+    - Expense estimates includes taxes, insurance, repairs, college as required, and an emergency
 
 ## Igor's Financial Security Dragon
 
 - What if the stock market tanks while I'm on my gap year?
 
   - That would make me very uncomfortable to take money out of my stocks
-  - **But** It'll probably recover in the long term
-  - **So** Take out "Total Annual Expenses" and put it in a liquid account, so can auto draw "guilt" free
+  - **Yes, and**
+    - The stock mark will likely recover in the long term
 
 - What if I can't get a job after the gap year?
 
@@ -141,27 +170,28 @@ The dragons are the same size they've always been. The difference is now you're 
   - Lots of experienced folks in the market
   - If applying to a job I'm overqualified for - they'll be like you'll leave as soon as you can. Ugh.
   - Even though I have a network, doesn't matter if companies not hiring.
-  - **But** I've got 25 years+ of experience at top tech companies on a ton of various projects
-  - **But** I'll be heavily invested in professional development, so that makes me much more valuable.
-  - **But** I'll be doing content production, so people can see my skills.
-  - **So** Worst case: 1 year planned gap + 1 whole year to get a job = 2 years away from income, so hold 2 \* "Total Annual Expenses"
+  - **Yes, and**
+    - I've got 25 years+ of experience at top tech companies on a ton of various projects
+    - I'll be heavily invested in professional development, so that makes me much more valuable.
+    - I'll be doing content production, so people can see my skills.
 
 - What if I end up with a lower income when I return (Meta pays at 90th+ percentile)?
 
   - This is very probable.
-  - **But** Meta lets you have a "short interview loop" if you boomerang in a year
-  - **But** I've always said if you won't take a job for a pay cut, you shouldn't take it. I guess that could be cuz the job is less fun, or cuz it's the highest paid job you'll take :)
-  - **So** My retirement isn't delayed by 1.5 years; it's delayed by N years. That's acceptable because the year now is more valuable
+  - **Yes, and**
+    - Meta lets you have a "short interview loop" if you boomerang in a year
+    - I've always said if you won't take a job for a pay cut, you shouldn't take it.
+    - I guess that could be either the job is more fun, or cuz it's the highest paid job you can get :)
 
 - What if I'm wrong about my expenses?
   - It's critical you get this right.
-  - **But** I've been tracking expenses for years in [Monarch Money](https://www.monarchmoney.com/) and [Boldin](https://www.boldin.com/) retirement planning software and have good baseline data
-  - **But** I'm not forgetting the non-obvious things like health insurance ($40K/year - wow!) and taxes (even though drawing long term cap gains, it adds up, especially with WA 7% tax over $270K) and major house repairs
-  - **But** I can adjust spending during the gap year if needed (not locked into fixed costs)
-  - **But** Being conservative with estimates builds in a buffer for surprises
-  - **So** Measure twice, cut once :) And review with others
+  - **Yes, and**
+    - I've been tracking expenses for years in [Monarch Money](https://www.monarchmoney.com/) and [Boldin](https://www.boldin.com/) retirement planning software and have good baseline data
+    - I'm not forgetting the non-obvious things like health insurance ($40K/year - wow!) and taxes (even though drawing long term cap gains, it adds up, especially with WA 7% tax over $270K) and major house repairs
+    - I can adjust spending during the gap year if needed (not locked into fixed costs)
+    - I am conservative with estimates and build buffer for surprises
 
-For the philosophically minded, from the [Prophet](https://poets.org/poem/giving-0):
+For those who enjoy fortune cookies, from the [Prophet](https://poets.org/poem/giving-0):
 
 _What is fear of need by need itself? Is not dread of thirst when your well is full, the thirst that is unquenchable?_
 
@@ -171,36 +201,10 @@ _If you're not gonna feel safe at 2 years \* your expenses, it's hard to imagine
 
 ## Slaying Financial Security
 
-See my full [money philosophy](/money), [retirement planning](/retire), and [stock concentration](/stock-concentration) for context on these financial triggers.
+Hold 2× annual expenses in cash-like accounts, with the following assumptions
 
-{% include summarize-page.html src="/money" %}
-
-{% include summarize-page.html src="/retire" %}
-
-Igor at his best when 5am Igor "[Begins with end in Mind](/end-in-mind)", and sets up future Igor to run on Automatic. So here are some rules
-
-Gap year is scary, here are some guard rails to make it happen:
-
-- Money: Net worth exceeds "X" Million.
-
-  - See my buddy the "Financial Security Dragon"
-  - Beyond this the risk is negligible
-
-- Date: XX/YY if my net worth is still higher than "Y" million, where Y is much lower than X.
-  - See my buddy the "Financial Security Dragon"
-  - What is the minimum value?
-
-* What are the actual dates and numbers?
-
-  - Well, a magician never reveals his tricks, and Igor's gotta have some secrets.
-
-* Come on, can you at least give a formula?
-  - Baseline: Hold 2× annual expenses in cash-like accounts
-  - At month 12: If a 5% market return would replenish the next year’s cash draw, extend; otherwise begin job search
-  - Assumptions:
-    - Job search duration ≤ 12 months (possibly at lower comp)
-    - Model accommodates large unexpected expenses
-    - Expenses estimate includes taxes, insurance, repairs, college
+- You can find job in ≤ 12 months (possibly at lower comp)
+- Expense estimates includes taxes, insurance, repairs, college as required, and an emergency
 
 ## Igor's Decay Dragon: Health and Habits (Physical, Emotional, Relationship)
 
@@ -255,6 +259,12 @@ Gap year is scary, here are some guard rails to make it happen:
   - Boredom → Vegetating → Skipping exercise → Depression is a well-established pattern for me
   - **But** I have mental health support systems (therapy, medication, practices) that would continue
   - **So** Keep existing mental health infrastructure in place throughout the gap year
+
+See my full [money philosophy](/money), [retirement planning](/retire), and [stock concentration](/stock-concentration) for context on these financial triggers.
+
+{% include summarize-page.html src="/money" %}
+
+{% include summarize-page.html src="/retire" %}
 
 ## Slaying Decay - Health and Habits Investment
 
@@ -468,7 +478,7 @@ Top failure modes and mitigations (mapped to the dragons above):
 
 {% include summarize-page.html src="/voices" %}
 
-## Can 1 Be 2? The Extend-to-Year-2 Rule
+## Can 1 become 2? The Extend-to-Year-2 Rule
 
 At month 10, ask one question: can one year become two?
 
