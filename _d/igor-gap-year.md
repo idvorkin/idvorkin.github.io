@@ -31,6 +31,7 @@ This sits next to [the gap year paradox](/gap-year): same terrain, closer camera
 - [Slaying Financial Security](#slaying-financial-security)
 - [Igor's Decay Dragon: Health and Habits (Physical, Emotional, Relationship)](#igors-decay-dragon-health-and-habits-physical-emotional-relationship)
 - [Slaying Decay - Health and Habits Investment](#slaying-decay---health-and-habits-investment)
+- [Battling Parkinson's Dragon](#battling-parkinsons-dragon)
 - [Battling Addiction](#battling-addiction)
   - [Addiction Success](#addiction-success)
 - [Battling Family Resentment](#battling-family-resentment)
@@ -39,13 +40,14 @@ This sits next to [the gap year paradox](/gap-year): same terrain, closer camera
   - [Family Success](#family-success)
 - [Battling Loneliness](#battling-loneliness)
   - [Loneliness Success](#loneliness-success)
-- [First 90 Days Plan](#first-90-days-plan)
-- [Reassessment and Exit Triggers](#reassessment-and-exit-triggers)
 - [Igor's Identity Dragon](#igors-identity-dragon)
-- [Slaying Identity - PhD in AI, Content, and MRR](#slaying-identity---phd-in-ai-content-and-mrr)
-- [Gap Year Pre-Mortem](#gap-year-pre-mortem)
-- [Gap Year Voices in my head](#gap-year-voices-in-my-head)
-- [Can 1 become 2? The Extend-to-Year-2 Rule](#can-1-become-2-the-extend-to-year-2-rule)
+- [Slaying Identity - Reframe as a PhD in AI, Content, and MRR](#slaying-identity---reframe-as-a-phd-in-ai-content-and-mrr)
+- [Monitoring and Accountabiliy Plan](#monitoring-and-accountabiliy-plan)
+- [Exit Trip Wires](#exit-trip-wires)
+- [Deeper Analysis Strategies](#deeper-analysis-strategies)
+  - [Pre-Mortem](#pre-mortem)
+  - [Voices in my head](#voices-in-my-head)
+- [Can 1 become 2? The Extend-to-Year-2 test](#can-1-become-2-the-extend-to-year-2-test)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -284,6 +286,10 @@ See my [kettlebell](/kettlebell) practice and broader [physical health](/physica
 
 You can probably look at my [2025 goals](/y25), which sadly look a lot like my [2024 goals](/y24), and will probably look like my 2028 goals if that's when I actually get my gap year.
 
+## Battling Parkinson's Dragon
+
+
+
 ## Battling Addiction
 
 For me, addiction isn't about alcohol (I gave that up for better [sleep](/sleep)) - it's social media. The endless scroll, the dopamine hits from notifications, the fear of missing out. During a gap year, without the structure of work, these digital sirens could easily consume entire days.
@@ -388,54 +394,16 @@ Metrics:
 - One new person/group per month
 - One quarterly daylong/retreat with a friend
 
-## First 90 Days Plan
-
-Daily cadence:
-
-- Exercise (kettlebell/strength + walk)
-- Writing block (artifact-focused)
-- Learning block (AI/skills)
-- Family time window
-- Evening walk and shutdown
-
-Weekly cadence:
-
-- Two social blocks (daytime)
-- One long-form artifact or ship a micro-app
-- One deep work block (3–4 hours, no meetings)
-- One admin/finance review
-
-Accountability:
-
-- Weekly review and plan
-- Share an artifact publicly or with a small circle
-
-{% include alert.html content="This plan is iterative; reassessment cadence below will adjust details" style="info" %}
-
-## Reassessment and Exit Triggers
-
-Cadence:
-
-- Monthly review: health adherence, artifact shipping, cash runway
-- Quarterly retro: adjust goals, social cadence, project WIP
-
-Early exit triggers:
-
-- Health adherence < 50% for 2 consecutive months
-- Family stress rising (qualitative check-ins indicate sustained strain)
-- Cash buffer < 1.25× annual expenses or large unexpected expense without coverage
-
-If any trigger persists after one month of mitigation, begin job search protocol.
 
 ## Igor's Identity Dragon
 
 - Forget telling the future, what does taking a gap year say about me ?
 - Am I really setting a good example for my kids?
 - Lens 1: I'm putting myself ahead of the security of my family
-- **Yes, and** it can be about overcoming my fear and investing in myself and relationships
-- **So:** Reframe to be a PhD and A Year of [Health](/physical-health) and [Habits](/d/habits) Capital Investments
+- **Yes, and**
+    - Isntaed the lens can be I'm role-modelling overcoming my fear and investing in myself and relationships
 
-## Slaying Identity - PhD in AI, Content, and MRR
+## Slaying Identity - Reframe as a PhD in AI, Content, and MRR
 
 This aligns with my approach to [continuous learning](/timeoff) and [overcoming resistance](/d/resistance) to change.
 
@@ -463,7 +431,53 @@ Monthly recurring revenue would be miniscule vs. a tech salary.
 - Product: 1 paid template; 1 cohort workshop pilot
 - Revenue: Affiliate links; ad revenue experiments (goal: $100/month after 6 months); course outline; analysis of the voices in my head on the topic
 
-## Gap Year Pre-Mortem
+## Monitoring and Accountabiliy Plan
+
+Daily cadence:
+
+- Exercise (kettlebell/strength + walk)
+- Writing block (artifact-focused)
+- Learning block (AI/skills)
+- Family time window
+- Evening walk and shutdown
+
+Weekly cadence:
+
+- Two social blocks (daytime)
+- One long-form artifact or ship a micro-app
+- One deep work block (3–4 hours, no meetings)
+- One admin/finance review
+
+Accountability:
+
+- Weekly review and plan
+- Share an artifact publicly or with a small circle
+
+{% include alert.html content="This plan is iterative; reassessment cadence below will adjust details" style="info" %}
+
+## Exit Trip Wires
+
+Just like we need trip-wires for when to start, we probably want trip wires to exit early.
+
+Cadence:
+
+- Monthly review: health adherence, artifact shipping, cash runway
+- Quarterly retro: adjust goals, social cadence, project WIP
+
+Early exit triggers:
+
+- Health adherence < 50% for 2 consecutive months
+- Family stress rising (qualitative check-ins indicate sustained strain)
+- Cash buffer < 1.25× annual expenses or large unexpected expense without coverage
+
+If any trigger persists after one month of mitigation, begin job search protocol.
+
+
+## Deeper Analysis Strategies
+
+
+
+### Pre-Mortem
 
 Top failure modes and mitigations (mapped to the dragons above):
 
@@ -478,13 +492,13 @@ Top failure modes and mitigations (mapped to the dragons above):
 - Family resentment
   - Mitigation: Align expectations; time-window reality check; weekly gratitude log
 
-## Gap Year Voices in my head
+### Voices in my head
 
 {% include summarize-page.html src="/voices" %}
 
-## Can 1 become 2? The Extend-to-Year-2 Rule
+## Can 1 become 2? The Extend-to-Year-2 test
 
-At month 10, ask one question: can one year become two?
+At month 10, you can might want to ask a question: Can one year become two?
 
 Extend to Year 2 if ALL are true:
 
