@@ -267,6 +267,76 @@ function showCopiedTooltip(element: HTMLElement, duration = 2000): void {
 }
 
 /**
+ * Builds a breadcrumb from the page name and header hierarchy
+ */
+function buildBreadcrumbFrom(header: HTMLElement | null): string {
+  if (!header) return "";
+  
+  // Get the page name from URL
+  const pathname = window.location.pathname;
+  const pageName = pathname.replace(/^\//, "").replace(/\.html$/, "") || "index";
+  
+  // Convert page name to readable format (replace hyphens with spaces)
+  const readablePageName = pageName.replace(/-/g, ' ');
+  
+  // Build header hierarchy
+  const headerHierarchy: string[] = [];
+  const tagName = header.tagName;
+  const headerLevel = parseInt(tagName.substring(1)); // Get number from H1, H2, etc.
+  
+  // Get the current header's text
+  const currentHeaderText = Array.from(header.childNodes)
+    .filter(node => node.nodeType === Node.TEXT_NODE)
+    .map(node => node.textContent?.trim())
+    .join(' ')
+    .trim();
+  
+  // For H3, find parent H2; for H2 or H3, find parent H1
+  if (headerLevel >= 2) {
+    // Look for parent headers by traversing backwards through the DOM
+    let prevElement = header.previousElementSibling;
+    const foundHeaders: { level: number; text: string }[] = [];
+    
+    while (prevElement) {
+      const prevTagName = prevElement.tagName;
+      if (prevTagName && prevTagName.match(/^H[1-6]$/)) {
+        const prevLevel = parseInt(prevTagName.substring(1));
+        
+        // Only collect headers that are higher level (lower number) than current
+        if (prevLevel < headerLevel) {
+          const prevHeaderText = Array.from(prevElement.childNodes)
+            .filter(node => node.nodeType === Node.TEXT_NODE)
+            .map(node => node.textContent?.trim())
+            .join(' ')
+            .trim();
+          
+          foundHeaders.push({ level: prevLevel, text: prevHeaderText });
+          
+          // If we found an H1, we can stop
+          if (prevLevel === 1) break;
+        }
+      }
+      prevElement = prevElement.previousElementSibling;
+    }
+    
+    // Add headers in order (H1 > H2 > current)
+    foundHeaders.sort((a, b) => a.level - b.level);
+    foundHeaders.forEach(h => headerHierarchy.push(h.text));
+  }
+  
+  // Add current header
+  headerHierarchy.push(currentHeaderText);
+  
+  // Build the breadcrumb string
+  let breadcrumb = `[${readablePageName}]`;
+  if (headerHierarchy.length > 0) {
+    breadcrumb += `: ${headerHierarchy.join(' > ')}`;
+  }
+  
+  return breadcrumb;
+}
+
+/**
  * Transforms the URL according to the domain mapping rules
  */
 function transformUrl(url: string, options: CopyLinkOptions): string {
@@ -318,10 +388,13 @@ async function shareOrCopyHeaderLink(headerId: string, options: CopyLinkOptions)
     // Get preview text for the section
     const previewText = getPreviewText(headerId);
     
+    // Build breadcrumb "From" line
+    const breadcrumbFrom = buildBreadcrumbFrom(header);
+    
     // Create share text with preview
-    let shareText = `From: ${headerText} ...`;
+    let shareText = `From: ${breadcrumbFrom} ...`;
     if (previewText) {
-      shareText = `From: ${headerText} ...\n\n${previewText}`;
+      shareText = `From: ${breadcrumbFrom} ...\n\n${previewText}`;
     }
     
     // Check if this is a mobile device
@@ -370,18 +443,12 @@ async function shareOrCopyHeaderLink(headerId: string, options: CopyLinkOptions)
       
       // Get preview text for fallback
       const header = document.getElementById(headerId);
-      // Get just the text content of the header, excluding child elements
-      const headerText = header ? 
-        Array.from(header.childNodes)
-          .filter(node => node.nodeType === Node.TEXT_NODE)
-          .map(node => node.textContent?.trim())
-          .join(' ')
-          .trim() : "";
+      const breadcrumbFrom = buildBreadcrumbFrom(header);
       const previewText = getPreviewText(headerId);
       
       let clipboardText = tinyUrl;
       if (previewText) {
-        clipboardText = `From: ${headerText} ...\n\n${previewText}\n\n${tinyUrl}`;
+        clipboardText = `From: ${breadcrumbFrom} ...\n\n${previewText}\n\n${tinyUrl}`;
       }
       
       // Use textarea fallback for copying
