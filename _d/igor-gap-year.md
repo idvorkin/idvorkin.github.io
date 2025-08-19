@@ -65,11 +65,11 @@ What if in 10 years:
 - I am much weaker then today
   - 95% probable
 - I am no longer alive
-  - Hopefully very low possibility, but see [chasing daylight](AGENT:Add Link), and [alive](AGENT: Add link)
+  - Hopefully very low possibility, but see [Chasing Daylight](/chasing-daylight) and [On Being Mortal](/on-being-mortal)
 
 ## If Igor could retire today, would he?
 
-AGENT: LInk chpaters of my life
+See the current [chapters](/chapters) of my life for how I think about seasons and tradeoffs.
 
 I often repeat "I'd do 80% of my job for free, but I don't get to do that 80% without doing the last 20%", so retirement doesn't especially excite me.
 
@@ -97,7 +97,6 @@ Looking ahead from 2025 (I'm 47 now), I see three distinct phases:
 
 In Phase 3, I anticipate wanting to work extensively - but Phases 1 and 2 represent irreplaceable windows for deep family connection.
 
-AGENT: Link in Tori
 **Hey you're not talking about Tori, doesn't time with her matter?**
 
 It certainly does, but Tori needs her own time, and our relationship is set up where we don't need a ton of time together.
@@ -124,7 +123,7 @@ These weren't lies or rationalizations. Work really does make it harder to maint
 
 But the gap year opens the box. Suddenly there's no meeting schedule to explain away poor health habits, no work exhaustion to buffer loneliness, no legitimate crisis to postpone difficult conversations with family. You need to create your own social connections, generate your own sense of urgency and purpose, and face your habits without the comfortable excuse of being legitimately exhausted.
 
-**Parkinson's Dragon** is particularly vicious. Named for [Parkin's law](AGENT: Link Post) At work, deadlines create artificial scarcity that forces efficiency. Without external constraints, tasks expand to fill available time - what should take 2 hours somehow takes all morning. This dragon whispers: "You have all day, so why rush?" The result: a slow drift into inefficiency that makes you feel simultaneously busy and unproductive. It's the worst kind of dragon because it makes you complicit in your own time theft.
+**Parkinson's Dragon** is particularly vicious. Named for [Parkinson's Law](/parkinson). At work, deadlines create artificial scarcity that forces efficiency. Without external constraints, tasks expand to fill available time - what should take 2 hours somehow takes all morning. This dragon whispers: "You have all day, so why rush?" The result: a slow drift into inefficiency that makes you feel simultaneously busy and unproductive. It's the worst kind of dragon because it makes you complicit in your own time theft.
 
 **The Financial Security Dragon** reveals itself differently during a gap year. When you had a steady paycheck, market fluctuations were abstract background noise - you weren't drawing from investments, so volatility didn't matter day-to-day. But during a gap year, every market dip feels personal because you're actually living off those investments. The dragon transforms the market from a distant abstraction into a daily anxiety generator, making you hyperaware of every percentage point change in your portfolio.
 
@@ -212,11 +211,12 @@ Hold 2× annual expenses in cash-like accounts, with the following assumptions
 
   - Without work structure, it's easy for me to drift without momentum AND lose discipline around health habits
   - At 50, I still have peak physical capability, but this window closes fast - health decline could undermine everything the gap year is supposed to accomplish
-  - **But** I know my mental health practices and can recognize the warning signs early
-  - **But** Removing work stress eliminates a major barrier to consistent health habits
-  - **But** I can build structure into the gap year - it doesn't have to be completely unstructured
-  - **But** Having control over my schedule means I can exercise at optimal times, get proper sleep, and meal plan
-  - **But** Physical health is the foundation for mental clarity, project energy, and relationship engagement
+  - **Yes, and**
+    - I know my mental health practices and can recognize the warning signs early
+    - Removing work stress eliminates a major barrier to consistent health habits
+    - I can build structure into the gap year — it doesn't have to be completely unstructured
+    - Having control over my schedule means I can exercise at optimal times, get proper sleep, and meal plan
+    - Physical health is the foundation for mental clarity, project energy, and relationship engagement
   - **So** Create a "gap year structure" with daily routines, weekly goals, and regular accountability check-ins
   - **So** Build in "safety clips" - personal trainer sessions, gym membership, kettlebell classes - external structure to prevent slides
   - **So** Make health routines the cornerstone of gap year structure, capitalizing on both time AND physical capability
@@ -226,38 +226,42 @@ Hold 2× annual expenses in cash-like accounts, with the following assumptions
   - I can get bored easily, which leads to vegetating (mindless scrolling, avoiding meaningful work)
   - Vegetating leads to messing up my sleep schedule and general lack of purpose
   - A day missed at the gym turns into a week, turns into a month - physical decline accelerates the mental decline
-  - **But** AI field is evolving so rapidly there's something genuinely new every 2 weeks - built-in novelty to prevent boredom
-  - **But** Using AI lets me focus on my mastery areas which is a blast - less time on tedious tasks, more on what I'm uniquely good at
-  - **But** AI gives me huge leverage on bespoke software projects like my Kettlebells and Mortality software - I can build things that would have taken months
+  - **Yes, and**
+    - AI evolves so rapidly there's something genuinely new every 2 weeks — built-in novelty to prevent boredom
+    - Using AI lets me focus on my mastery areas — less time on tedious tasks, more on what I'm uniquely good at
+    - AI gives me huge leverage on bespoke software projects like my Kettlebells and Mortality software — I can build things that would have taken months
   - **So** AI provides both intellectual stimulation and productive outlets for creativity
 
 - What if I get lonely without daily work social interaction?
 
   - Loneliness could be a major factor - work provides daily social interaction
-  - **But** I know retired/gap year folks who are available during the day
-  - **But** I have friends and flexibility to hang out more regularly
-  - **But** I can have deep conversations with Tony, my AI life coach ([tony_tesla project](https://github.com/idvorkin/tony_tesla))
-  - **But** AI can provide conversation and it's getting cooler every week
-  - **But** Lots of people on the internet to meet - I've already started and it's pretty cool
-  - **But** Lots of people would like some mentorship, and I've got the time and experience to help them, plus I can scale this up
+  - **Yes, and**
+    - I know retired/gap year folks who are available during the day
+    - I have friends and flexibility to hang out more regularly
+    - I can have deep conversations with Tony, my AI life coach ([tony_tesla project](https://github.com/idvorkin/tony_tesla))
+    - AI can provide conversation and it's getting cooler every week
+    - There are lots of people on the internet to meet — I've already started and it's pretty cool
+    - Many people would like mentorship, and I've got the time and experience to help them — plus I can scale this up
   - **So** Schedule regular time with retired friends and deepen existing relationships
 
 - What if I get resentful that my family won't spend time with me?
 
   - I'll have lots of free time but family will still be busy with their schedules
   - Could lead to resentment when they can't match my availability
-  - **But** Relationships deepen like lifting weights - start light and gradually get heavier
-  - **But** I'll have the flexibility to work around their schedules instead of forcing mine
-  - **But** Without work stress, I'll have inner peace that lets me be more compassionate and patient
-  - **But** Time isn't scarce anymore, so I have much more flexibility to accommodate their schedules
-  - **But** Abundance mindset with time means I'm not competing family time against "very limited" personal projects
-  - **But** Deepening family relationships is a huge part of what makes this gap year worthwhile
+  - **Yes, and**
+    - Relationships deepen like lifting weights — start light and gradually get heavier
+    - I'll have the flexibility to work around their schedules instead of forcing mine
+    - Without work stress, I'll have inner peace that lets me be more compassionate and patient
+    - Time isn't scarce anymore, so I have much more flexibility to accommodate their schedules
+    - An abundance mindset with time means I'm not competing family time against "very limited" personal projects
+    - Deepening family relationships is a huge part of what makes this gap year worthwhile
   - **So** Schedule regular family dates and focus on quality over quantity, letting relationships develop naturally at their pace
 
 - What if I get depressed and spiral into a dark place?
 
   - Boredom → Vegetating → Skipping exercise → Depression is a well-established pattern for me
-  - **But** I have mental health support systems (therapy, medication, practices) that would continue
+  - **Yes, and**
+    - I have mental health support systems (therapy, medication, practices) that would continue
   - **So** Keep existing mental health infrastructure in place throughout the gap year
 
 See my full [money philosophy](/money), [retirement planning](/retire), and [stock concentration](/stock-concentration) for context on these financial triggers.
@@ -428,7 +432,7 @@ If any trigger persists after one month of mitigation, begin job search protocol
 - Forget telling the future, what does taking a gap year say about me ?
 - Am I really setting a good example for my kids?
 - Lens 1: I'm putting myself ahead of the security of my family
-- **But** It can be about overcoming my fear and investing in myself and relationships
+- **Yes, and** it can be about overcoming my fear and investing in myself and relationships
 - **So:** Reframe to be a PhD and A Year of [Health](/physical-health) and [Habits](/d/habits) Capital Investments
 
 ## Slaying Identity - PhD in AI, Content, and MRR
