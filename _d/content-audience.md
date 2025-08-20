@@ -27,6 +27,12 @@ When I started creating content — okay, let's be honest, when I started upload
     - [Creative Strategy (Low-Effort, High-Integrity)](#creative-strategy-low-effort-high-integrity)
     - [Optional Taglines or Captions (as mood cues):](#optional-taglines-or-captions-as-mood-cues)
 - [GPT Prompt to help you create your audience](#gpt-prompt-to-help-you-create-your-audience)
+- [Content Series](#content-series)
+  - [Funny Story Today](#funny-story-today)
+  - [Igor's Affirmations](#igors-affirmations)
+  - [Music Videos/Dances](#music-videosdances)
+  - [Igor's Crazy Commute](#igors-crazy-commute)
+  - [Igor Vibing](#igor-vibing)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -177,3 +183,42 @@ Optional Taglines or Captions
 [Repeatable phrases I may include to anchor the project]
 
 Wait until I say "I'm ready for the one-pager" before compiling it.
+
+## Content Series
+
+### Funny Story Today
+
+### Igor's Affirmations
+
+TODO: - Essentialist: TBD ... - Class Act: Go through some of the wrods on linked in
+
+### Music Videos/Dances
+
+### Igor's Crazy Commute
+
+- Kayak Communting
+
+- Tesla TODO:
+  - The blueberry route
+  - Auto Pilot conked out, needed to drive manually
+
+### Igor Vibing
+
+TODO:
+
+- Gotta get in a container
+  - Erasing content
+- Don't give them your creds
+  - Auth Story
+  - Self Approving PRs
+- Agents testing agents
+  - Story of the typo
+- Don't be the slave
+  - You shouldn't be manually testing
+- Don't be stressed keeping them fed
+  - 4 agents is stressful,
+- Why aren't you using the best model you can
+  - Lots of folks try to run locally, terrible idea. Pay for the models
+- Careful it doesn't devolve into consumption where you get knowwhere
+- Keep a todo list that's separate cuz of latency
+- What are the ergonmics of keeping the multi-agents strait
