@@ -35,14 +35,13 @@ This sits next to [the gap year paradox](/gap-year): same terrain, closer camera
   - [Entropy's Spawn](#entropys-spawn)
   - [Squander's Spawn](#squanders-spawn)
 - [Taming the Dragons: From Fear to Power](#taming-the-dragons-from-fear-to-power)
+  - [The Scarcity Dragon Dialogs](#the-scarcity-dragon-dialogs)
   - [Taming Scarcity: Building True Security](#taming-scarcity-building-true-security)
-    - [The Scarcity Dragon's Challenges (and Your Responses)](#the-scarcity-dragons-challenges-and-your-responses)
+  - [The Entropy Dragon Dialogs](#the-entropy-dragon-dialogs)
+  - [The Family Paradox Dialog: When Dragons Attack What You Love Most](#the-family-paradox-dialog-when-dragons-attack-what-you-love-most)
   - [Taming Entropy: Structured Freedom](#taming-entropy-structured-freedom)
-    - [The Entropy Dragon's Challenges (and Your Responses)](#the-entropy-dragons-challenges-and-your-responses)
-    - [The Family Paradox: When Dragons Attack What You Love Most](#the-family-paradox-when-dragons-attack-what-you-love-most)
-    - [Entropy Success Metrics](#entropy-success-metrics)
+  - [The Squander Dragon Dialog](#the-squander-dragon-dialog)
   - [Taming Squander: Making Every Day Count](#taming-squander-making-every-day-count)
-    - [The Squander Dragon Dialog](#the-squander-dragon-dialog)
 - [Dragon Transformation: When Fear Becomes Fuel](#dragon-transformation-when-fear-becomes-fuel)
 - [The Dragon Keeper's Daily Practice](#the-dragon-keepers-daily-practice)
 - [The Dragon Council: Monthly and Quarterly Reviews](#the-dragon-council-monthly-and-quarterly-reviews)
@@ -51,13 +50,6 @@ This sits next to [the gap year paradox](/gap-year): same terrain, closer camera
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
-
-
-Agent: Over all
-    - Agent: Top thing missing in article is the reason the gap year is valuable ... wher does that go/how to work that in. Key here is capital investmnets in health+relationships, maximize time with family while I can.
-    - Agent: Insigificance doesnn't resonate for me, for me it's more about did I waste this unique opportunity ... maybe that's related to what's missing in the feedback above
-
-Agent: OK the 2 igor things doesn't match the theme how to fix
 
 ## Is Igor really gonna quit his job and take a gap year?
 
@@ -69,7 +61,7 @@ What if in 10 years:
 
 - My kids no longer live at home
   - 100% probable (or so I hope)
-- My health and cognative abilities have declineed
+- My health and cognitive abilities have declined
   - 100% probable (unless we get some awesome new drugs)
 - I have serious health problems
   - 30% probable (hymn, I should look for actual probability)
@@ -85,16 +77,19 @@ That said, I also repeat [no one ever said they wished they worked more on their
 Looking ahead from 2025 (I'm 47 now), I see three distinct phases:
 
 **Phase 1: With Zach and Amelia Home (3 years, ages 47-50)**
+
 - Both kids still living at home
 - Maximum family time opportunity
 - Work flexibility most critical
 
 **Phase 2: With Amelia Home (4 years, ages 50-54)**
+
 - Zach off to college, Amelia still home
 - Transitional period with one child
 - Balancing independence and presence
 
 **Phase 3: Empty Nest (ages 54+)**
+
 - Both kids launched into their own lives
 - Time to work intensively again
 - Different kind of fulfillment and focus
@@ -131,11 +126,11 @@ This isn't a year off - it's a year ON. A year of intentional investment in thre
 
 **Mastery Capital**: Deep diving into new domains without the surface-level learning that deadline pressure creates. Real mastery - the kind that lets you see patterns, make connections, and create novel solutions - requires sustained focus without arbitrary time constraints. The difference between "I played with AI" and "I mastered AI" is the difference between consumption and creation.
 
-But dragons gaurd this treasure. They whisper fears to keep you from claiming what's yours:
+But dragons guard this treasure. They whisper fears to keep you from claiming what's yours:
 
 - Scarcity says you can't afford it (but you can)
 - Entropy says you'll waste it (but you won't with structure)
-- Insignificance says it won't matter (but it will to the people who matter)
+- Squander says it won't matter (but it will to the people who matter)
 
 The real risk isn't facing the dragons - it's letting this window close unopened. In 10 years, you won't remember the meetings you missed or the promotions you didn't get. But you'll remember whether you were there when your kids needed you, whether you built the health to enjoy your 60s and 70s, whether you took the shot at mastery when you had the chance.
 
@@ -148,21 +143,24 @@ Work will always be there. This window won't.
 Work doesn't solve your existential fears - it just keeps them locked away. The gap year opens the box, and three ancient dragons emerge to test you. These aren't enemies to defeat but fundamental forces of the universe that must be understood, respected, and ultimately tamed.
 
 ### The Scarcity Dragon
-*"There will never be enough"*
+
+_"There will never be enough"_
 
 This dragon feeds on resource anxiety. At work, the biweekly paycheck kept it sedated, letting you ignore its existence. Now it whispers constantly about market crashes, unemployability, and dwindling reserves. It makes every expense feel like bleeding out, every market dip feel personal, every purchase a threat to survival.
 
 When you had a steady paycheck, market fluctuations were abstract background noise - you weren't drawing from investments, so volatility didn't matter day-to-day. But during a gap year, the dragon transforms the market from a distant abstraction into a daily anxiety generator, making you hyperaware of every percentage point change in your portfolio.
 
 ### The Entropy Dragon
-*"Everything tends toward disorder"*
+
+_"Everything tends toward disorder"_
 
 This dragon embodies the second law of thermodynamics applied to your life. Without work's external structure forcing order, everything naturally decays - your body, your habits, your relationships, your skills. It's not just stagnation; it's active degradation. Entropy always increases in a closed system, and without the energy input of external obligations, you are that closed system.
 
 At work, deadlines create artificial scarcity that forces efficiency. Without external constraints, this dragon ensures tasks expand to fill available time - what should take 2 hours somehow takes all morning. It whispers: "You have all day, so why rush?" The result: a slow drift into inefficiency that makes you feel simultaneously busy and unproductive.
 
 ### The Squander Dragon
-*"You will waste this precious opportunity"*
+
+_"You will waste this precious opportunity"_
 
 This dragon feeds on the fear that you'll misuse this rare gift of time and resources. Without external metrics of productivity, how will you know if you're succeeding? It whispers about Netflix binges, aimless days, nothing to show for it. You've been given a winning lottery ticket - the convergence of health, wealth, and family presence - and you're going to waste it on... what exactly? The dragon asks: "What if you look back in a year and realize you squandered the very opportunity you sacrificed so much to create?"
 
@@ -218,11 +216,67 @@ Each ancient dragon breeds specific offspring that attack in different ways. Und
 
 These dragons cannot be slain - they're fundamental forces like gravity or time. But they can be tamed, managed, even transformed into allies. The goal isn't to defeat them but to understand their nature and build structures that channel their energy productively.
 
+### The Scarcity Dragon Dialogs
+
+> **Dragon:** "What if the stock market tanks while you're on your gap year?"
+>
+> **Me:** "That would make me very uncomfortable to take money out of my stocks."
+>
+> **Dragon:** "See? You can't afford this. One bad year and you're done."
+>
+> **Me:** "Yes, and... the stock market will likely recover in the long term. I've built a 2× expense buffer specifically so I don't have to sell in a down market."
+
+---
+
+> **Dragon:** "What if you can't get a job after the gap year?"
+>
+> **Me:** "Job market is MUCH worse than it was 4 years ago. Lots of experienced folks in the market. If applying to a job I'm overqualified for - they'll be like you'll leave as soon as you can. Ugh. Even though I have a network, doesn't matter if companies not hiring."
+>
+> **Dragon:** "Exactly. You'll be unemployable. Another year older, skills getting stale..."
+>
+> **Me:** "Yes, and..."
+>
+> - I've got 25 years+ of experience at top tech companies on a ton of various projects
+> - I'll be heavily invested in professional development, so that makes me much more valuable
+> - I'll be doing content production, so people can see my skills
+> - The gap year makes me MORE valuable, not less - I'll have mastery others don't
+
+---
+
+> **Dragon:** "What if you end up with a lower income when you return? Meta pays at 90th+ percentile."
+>
+> **Me:** "This is very probable."
+>
+> **Dragon:** "So you're throwing away peak earning years for... what?"
+>
+> **Me:** "Yes, and..."
+>
+> - Meta lets you have a "short interview loop" if you boomerang in a year
+> - I've always said if you won't take a job for a pay cut, you shouldn't take it
+> - I guess that could be either the job is more fun, or cuz it's the highest paid job you can get :)
+> - Some things are worth more than maximizing income
+
+---
+
+> **Dragon:** "What if you're wrong about your expenses?"
+>
+> **Me:** "It's critical you get this right."
+>
+> **Dragon:** "One surprise medical bill, one major house repair, and your whole plan collapses."
+>
+> **Me:** "Yes, and..."
+>
+> - I've been tracking expenses for years in [Monarch Money](https://www.monarchmoney.com/) and [Boldin](https://www.boldin.com/) retirement planning software and have good baseline data
+> - I'm not forgetting the non-obvious things like health insurance ($40K/year - wow!) and taxes (even though drawing long term cap gains, it adds up, especially with WA 7% tax over $270K) and major house repairs
+> - I can adjust spending during the gap year if needed (not locked into fixed costs)
+> - I am conservative with estimates and build buffer for surprises
+
 ### Taming Scarcity: Building True Security
 
 The Scarcity Dragon will never fully trust that you have enough - that's its nature. But you can build a relationship with it based on transparency and regular communication.
 
 **The Peace Treaty Terms:**
+
 - Hold 2× annual expenses in cash-like accounts
 - Acknowledge the dragon's concerns with weekly financial check-ins
 - Build multiple scenarios (optimistic, realistic, pessimistic) so there are no surprises
@@ -236,10 +290,12 @@ You should understand all the dragons in detail, but re: the financial security 
 - Date: XX/YY if my net worth is still higher than "Y" million, where Y is much lower than X.
   - If you wait till after XX/YY, the value is negligible.
 
-*What are the actual dates and numbers?*
+_What are the actual dates and numbers?_
+
 - Well, a magician never reveals his tricks, and Igor's gotta have some secrets.
 
-*Come on, can you at least give a formula?*
+_Come on, can you at least give a formula?_
+
 - I think the most conservative:
   - Baseline: Hold 2× annual expenses in cash-like accounts
   - Assumptions:
@@ -247,159 +303,82 @@ You should understand all the dragons in detail, but re: the financial security 
     - Expense estimates includes taxes, insurance, repairs, college as required, and an emergency
 
 **Assumptions that calm the dragon:**
+
 - You can find a job in ≤ 12 months (possibly at lower comp)
 - Expense estimates include taxes, insurance, repairs, college, and emergencies
 - You've tracked expenses for years in [Monarch Money](https://www.monarchmoney.com/) and [Boldin](https://www.boldin.com/)
 - You're not forgetting hidden costs like $40K/year health insurance
 
-Agent: I love these sections, lets call them XYZ Dragon Dialog, and Have it be dragon/you - but remember markdown so need to think of better formatting strategy
-
-### The Scarcity Dragon Dialogs
-
-> **Dragon:** "What if the stock market tanks while you're on your gap year?"
-> 
-> **Me:** "That would make me very uncomfortable to take money out of my stocks."
-> 
-> **Dragon:** "See? You can't afford this. One bad year and you're done."
-> 
-> **Me:** "Yes, and... the stock market will likely recover in the long term. I've built a 2× expense buffer specifically so I don't have to sell in a down market."
-
----
-
-> **Dragon:** "What if you can't get a job after the gap year?"
-> 
-> **Me:** "Job market is MUCH worse than it was 4 years ago. Lots of experienced folks in the market. If applying to a job I'm overqualified for - they'll be like you'll leave as soon as you can. Ugh. Even though I have a network, doesn't matter if companies not hiring."
-> 
-> **Dragon:** "Exactly. You'll be unemployable. Another year older, skills getting stale..."
-> 
-> **Me:** "Yes, and..."
-> - I've got 25 years+ of experience at top tech companies on a ton of various projects
-> - I'll be heavily invested in professional development, so that makes me much more valuable
-> - I'll be doing content production, so people can see my skills
-> - The gap year makes me MORE valuable, not less - I'll have mastery others don't
-
----
-
-> **Dragon:** "What if you end up with a lower income when you return? Meta pays at 90th+ percentile."
-> 
-> **Me:** "This is very probable."
-> 
-> **Dragon:** "So you're throwing away peak earning years for... what?"
-> 
-> **Me:** "Yes, and..."
-> - Meta lets you have a "short interview loop" if you boomerang in a year
-> - I've always said if you won't take a job for a pay cut, you shouldn't take it
-> - I guess that could be either the job is more fun, or cuz it's the highest paid job you can get :)
-> - Some things are worth more than maximizing income
-
----
-
-> **Dragon:** "What if you're wrong about your expenses?"
-> 
-> **Me:** "It's critical you get this right."
-> 
-> **Dragon:** "One surprise medical bill, one major house repair, and your whole plan collapses."
-> 
-> **Me:** "Yes, and..."
-> - I've been tracking expenses for years in [Monarch Money](https://www.monarchmoney.com/) and [Boldin](https://www.boldin.com/) retirement planning software and have good baseline data
-> - I'm not forgetting the non-obvious things like health insurance ($40K/year - wow!) and taxes (even though drawing long term cap gains, it adds up, especially with WA 7% tax over $270K) and major house repairs
-> - I can adjust spending during the gap year if needed (not locked into fixed costs)
-> - I am conservative with estimates and build buffer for surprises
-
 **The dragon's wisdom (when tamed):**
-From the [Prophet](https://poets.org/poem/giving-0): *"What is fear of need but need itself? Is not dread of thirst when your well is full, the thirst that is unquenchable?"*
+From the [Prophet](https://poets.org/poem/giving-0): _"What is fear of need but need itself? Is not dread of thirst when your well is full, the thirst that is unquenchable?"_
 
-And from my Bestie: *"If you're not gonna feel safe at 2 years × your expenses, it's hard to imagine you'll feel safe at 3 years × your expenses."*
+And from my Bestie: _"If you're not gonna feel safe at 2 years × your expenses, it's hard to imagine you'll feel safe at 3 years × your expenses."_
 
 When properly tamed, the Scarcity Dragon becomes your teacher in efficiency, showing you what actually matters versus what was just lifestyle inflation.
 
 See my full [money philosophy](/money), [retirement planning](/retire), and [stock concentration](/stock-concentration) for context on these financial triggers.
 
-### Taming Entropy: Structured Freedom
-
-The Entropy Dragon requires constant energy input to keep at bay. This isn't a bug - it's thermodynamics. The key is building minimum viable structure that generates order without recreating the prison of work.
-
-**Where Igor Finds the Strength:**
-Igor will summon his best self, the 5am Igor who [Begins with end in Mind](/end-in-mind), and sets future Igor to run on automatic. So here are some guard rails and spells to guide me and others on my journey.
-
-**Anti-Entropy Infrastructure:**
-
-*Physical Health Anchors:*
-- Daily kettlebell practice (non-negotiable morning ritual)
-- Weekly trainer sessions (external accountability)
-- Sleep schedule protection (10pm-6am sacred time)
-
-*Mental Health Practices:*
-- Therapy continues (professional support structure)
-- Medication regimen maintained
-- Morning meditation practice
-
-*Relationship Rhythms:*
-- Weekly date night (scheduled like it matters)
-- Monthly 1:1 with each kid
-- Quarterly friend retreats
-
-**The AI Advantage Against Entropy:**
-- AI evolves so rapidly there's something genuinely new every 2 weeks — built-in novelty prevents boredom
-- Using AI for leverage on projects — you can build things that would have taken months
-- AI conversations with Tony (my life coach) provide intellectual stimulation
-
 ### The Entropy Dragon Dialogs
 
 > **Dragon:** "What if you get lazy and lose all direction and discipline?"
-> 
+>
 > **Me:** "Without work structure, it's easy for me to drift without momentum AND lose discipline around health habits. At 50, I still have peak physical capability, but this window closes fast - health decline could undermine everything the gap year is supposed to accomplish."
-> 
+>
 > **Dragon:** "Exactly. You'll sleep until noon, skip workouts, eat garbage. Within months you'll be a shadow of yourself."
-> 
+>
 > **Me:** "Yes, and..."
+>
 > - I know my mental health practices and can recognize the warning signs early
 > - Removing work stress eliminates a major barrier to consistent health habits
 > - I can build structure into the gap year — it doesn't have to be completely unstructured
 > - Having control over my schedule means I can exercise at optimal times, get proper sleep, and meal plan
 > - Physical health is the foundation for mental clarity, project energy, and relationship engagement
-> 
+>
 > **So:** Create a "gap year structure" with daily routines, weekly goals, and regular accountability check-ins. Build in "safety clips" - personal trainer sessions, gym membership, kettlebell classes. Make health routines the cornerstone of gap year structure.
 
 ---
 
 > **Dragon:** "What if you get bored and start vegetating?"
-> 
+>
 > **Me:** "I can get bored easily, which leads to vegetating - mindless scrolling, avoiding meaningful work. Vegetating leads to messing up my sleep schedule and general lack of purpose. A day missed at the gym turns into a week, turns into a month."
-> 
+>
 > **Dragon:** "You'll waste the entire year on Netflix and social media. Nothing to show for it."
-> 
+>
 > **Me:** "Yes, and..."
+>
 > - AI evolves so rapidly there's something genuinely new every 2 weeks — built-in novelty to prevent boredom
 > - Using AI lets me focus on my mastery areas — less time on tedious tasks, more on what I'm uniquely good at
 > - AI gives me huge leverage on bespoke software projects like my Kettlebells and Mortality software
-> 
+>
 > **So:** AI provides both intellectual stimulation and productive outlets for creativity.
 
 ---
 
 > **Dragon:** "What if you get lonely without daily work social interaction?"
-> 
+>
 > **Me:** "Loneliness could be a major factor - work provides daily social interaction."
-> 
+>
 > **Dragon:** "You'll become isolated, disconnected. Your social skills will atrophy. Depression will follow."
-> 
+>
 > **Me:** "Yes, and..."
+>
 > - I know retired/gap year folks who are available during the day
 > - I have friends and flexibility to hang out more regularly
 > - I can have deep conversations with Tony, my AI life coach ([tony_tesla project](https://github.com/idvorkin/tony_tesla))
 > - There are lots of people on the internet to meet — I've already started and it's pretty cool
 > - Many people would like mentorship, and I've got the time and experience to help them
-> 
+>
 > **So:** Schedule regular time with retired friends and deepen existing relationships.
 
 **Finding the Right Nutty People:**
 These folks are probably unique:
+
 - They had courage/interest in doing this
 - They are unencumbered by society's expectations
 - They have more time to think this stuff through deeply
 
 Example nutty people:
+
 - Someone who wants to have odd experiments in our conversations
   - Camera off every 7 minutes
   - Minute of silence every 7 minutes
@@ -409,16 +388,17 @@ Example nutty people:
 ---
 
 > **Dragon:** "What if you get depressed and spiral into a dark place?"
-> 
+>
 > **Me:** "Boredom → Vegetating → Skipping exercise → Depression is a well-established pattern for me."
-> 
+>
 > **Dragon:** "You know this pattern. You know how it ends. Why risk it?"
-> 
+>
 > **Me:** "Yes, and..."
+>
 > - I have mental health support systems (therapy, medication, practices) that would continue
 > - Without work stress, I can focus on mental health proactively rather than reactively
 > - The gap year is about building health, not destroying it
-> 
+>
 > **So:** Keep existing mental health infrastructure in place throughout the gap year.
 
 ### The Family Paradox Dialog: When Dragons Attack What You Love Most
@@ -426,11 +406,11 @@ Example nutty people:
 A key motivation behind my gap year is the desire to **spend more meaningful time with my family**. Time together is precious and fleeting; once gone, it cannot be reclaimed. However, the Entropy Dragon knows this and attacks precisely here.
 
 > **Dragon:** "What if you get resentful that your family won't spend time with you?"
-> 
+>
 > **Me:** "I'll have lots of free time but family will still be busy with their schedules. Could lead to resentment when they can't match my availability."
-> 
+>
 > **Dragon:** "You're sacrificing everything for people who won't even notice. They have their own lives. You'll be sitting at home alone while they're out with friends."
-> 
+>
 > **Me:** "There are two things that really worry me here..."
 
 The dragon exploits two specific fears:
@@ -442,37 +422,62 @@ When I'm working, I only see my family in short bursts - mornings, evenings, wee
 There's an inherent asymmetry here: I'm giving up my career momentum to spend more time with family, but they can't reciprocate that availability. Even though my gap year might give me an additional 50 hours per week, my family doesn't have any more availability. Practically speaking, I may only gain 5–10 extra hours with them each week.
 
 > **Dragon:** "So you'll resent them for not appreciating your sacrifice. The gap year will damage the very relationships you're trying to strengthen."
-> 
+>
 > **Me:** "The real challenge isn't the quantity of time but learning to appreciate the quality of whatever time we do have together."
-> 
+>
 > **Me:** "Yes, and..."
+>
 > - Relationships deepen like lifting weights — start light and gradually get heavier
 > - I'll have the flexibility to work around their schedules instead of forcing mine
 > - Without work stress, I'll have inner peace that lets me be more compassionate and patient
 > - Time isn't scarce anymore, so I have much more flexibility to accommodate their schedules
 > - An abundance mindset with time means I'm not competing family time against "very limited" personal projects
 > - Deepening family relationships is a huge part of what makes this gap year worthwhile
-> 
+>
 > **So:** Schedule regular family dates and focus on quality over quantity, letting relationships develop naturally at their pace.
 
-#### Entropy Success Metrics
+### Taming Entropy: Structured Freedom
 
-**Health & Habits Success:**
+The Entropy Dragon requires constant energy input to keep at bay. This isn't a bug - it's thermodynamics. The key is building minimum viable structure that generates order without recreating the prison of work.
+
 At 50, you have peak capital (time, energy, resources) to invest in your body, mind and relationship infrastructure. Every dollar spent on prevention now saves $10 in treatment later. Habits are the "dividend-paying stocks" of personal development - they keep generating returns without additional input.
 
-See my [kettlebell](/kettlebell) practice and broader [physical health](/physical-health) philosophy. For emotional health, check out my [emotional health practices](/emotional-health), [meditation](/siy) approach, and [affirmations](/affirmations).
+**Where Igor Finds the Strength:**
+Igor will summon his best self, the 5am Igor who [Begins with end in Mind](/end-in-mind), and sets future Igor to run on automatic. So here are some guard rails and spells to guide me and others on my journey.
 
-You can probably look at my [2025 goals](/y25), which sadly look a lot like my [2024 goals](/y24), and will probably look like my 2028 goals if that's when I actually get my gap year.
+**Anti-Entropy Infrastructure:**
 
-**Addiction Success Metrics:**
+_Physical Health Anchors:_
+
+- Daily kettlebell practice (non-negotiable morning ritual)
+- Weekly trainer sessions (external accountability)
+- Sleep schedule protection (10pm-6am sacred time)
+- See my [kettlebell](/kettlebell) practice and broader [physical health](/physical-health) philosophy
+
+_Mental Health Practices:_
+
+- Therapy continues (professional support structure)
+- Medication regimen maintained
+- Morning meditation practice
+- Check out my [emotional health practices](/emotional-health), [meditation](/siy) approach, and [affirmations](/affirmations)
+
+_Relationship Rhythms:_
+
+- Weekly date night (scheduled like it matters)
+- Monthly 1:1 with each kid
+- Quarterly friend retreats
+- This connects to my broader thinking on [relationship health](/chapters)
+
+**Addiction Prevention Metrics:**
+For me, addiction isn't about alcohol (I gave that up for better [sleep](/sleep)) - it's social media. The endless scroll, the dopamine hits from notifications, the fear of missing out. During a gap year, without the structure of work, these digital sirens could easily consume entire days.
+
 - Max 30 minutes/day on social apps
 - Phone set to grayscale; app timers enforced
 - One "no-screen" block after 8pm daily
 - Weekly screen-time audit and reset
 
-For me, addiction isn't about alcohol (I gave that up for better [sleep](/sleep)) - it's social media. The endless scroll, the dopamine hits from notifications, the fear of missing out. During a gap year, without the structure of work, these digital sirens could easily consume entire days.
+**Loneliness Prevention Metrics:**
 
-**Loneliness Success Metrics:**
 - **Deepened existing friendships** - Regular scheduled time with retired/gap year friends
 - **New connections with unique people** - Meeting others who chose unconventional paths and think deeply
 - **AI companionship** - Deep conversations with Tony (AI life coach) and evolving AI tools
@@ -481,11 +486,13 @@ For me, addiction isn't about alcohol (I gave that up for better [sleep](/sleep)
 - STRETCH: **Online community building** - Meeting interesting people on the internet
 
 Measurable targets:
+
 - Two recurring daytime social blocks per week
 - One new person/group per month
 - One quarterly daylong/retreat with a friend
 
-**Family Success Metrics:**
+**Family Investment Metrics:**
+
 - **Nothing is more valuable than family** – the time together holds the greatest meaning
 - Fully engaged and present (free from work distractions and stress)
 - Available for spontaneous moments (no conflicts blocking connection)
@@ -498,33 +505,40 @@ Measurable targets:
 - STRETCH: Multi-month project we do together
 
 Measurable targets:
+
 - Monthly 1:1 with each kid; weekly spontaneous-time log
 - Weekly date night; monthly day date
 - One shared project per quarter
 
 **Successful parenting** ultimately means my children know, deep down, that I'm always there for them — quietly in the background, offering steady support without pressure, ready whenever they need me.
 
+You can probably look at my [2025 goals](/y25), which sadly look a lot like my [2024 goals](/y24), and will probably look like my 2028 goals if that's when I actually get my gap year.
+
+**The AI Advantage Against Entropy:**
+
+- AI evolves so rapidly there's something genuinely new every 2 weeks — built-in novelty prevents boredom
+- Using AI for leverage on projects — you can build things that would have taken months
+- AI conversations with Tony (my life coach) provide intellectual stimulation
+
 When tamed, the Entropy Dragon becomes your personal trainer, forcing you to actively maintain and grow rather than passively exist. It teaches you that freedom without structure is just another prison.
-
-This connects to my broader thinking on [physical health](/physical-health), [mental health](/emotional-health), and [relationship health](/chapters).
-
-### Taming Squander: Making Every Day Count
-
-The Squander Dragon loses its power when you realize that "productivity" isn't about external metrics - it's about intentional investment in what matters. You're not wasting time; you're investing it in health, relationships, and mastery that compound over decades.
 
 ### The Squander Dragon Dialog
 
 > **Dragon:** "Look at you - sleeping in, going to the gym, reading books. Is this what success looks like? Are you really setting a good example for your kids?"
-> 
+>
 > **Me:** "One lens is that I'm being lazy and self-indulgent..."
-> 
+>
 > **Dragon:** "Exactly. They'll see you as someone who quit when things got hard. A cautionary tale about giving up."
-> 
+>
 > **Me:** "Yes, and... there's another lens: I'm role-modelling that life isn't just about grinding until you die. I'm showing them how to invest in health before crisis, relationships before regret, and mastery for its own sake."
-> 
+>
 > **Dragon:** "But what will you have to show for it? No promotions, no launches, no metrics..."
-> 
+>
 > **Me:** "I'll have a stronger body at 50 than most have at 40. I'll have been present for my kids' last years at home. I'll have achieved mastery in domains I choose, not ones assigned to me. That's not squandering - that's investing."
+
+### Taming Squander: Making Every Day Count
+
+The Squander Dragon loses its power when you realize that "productivity" isn't about external metrics - it's about intentional investment in what matters. You're not wasting time; you're investing it in health, relationships, and mastery that compound over decades.
 
 **The Anti-Squander Reframe:**
 Instead of thinking about it as a gap year (which sounds like absence), think about it as pursuing a "PhD in Life Optimization" - intensive research into health, relationships, and chosen mastery.
@@ -533,35 +547,44 @@ This aligns with my approach to [continuous learning](/timeoff) and [overcoming 
 
 The key is creating tangible artifacts that prove the year was invested, not wasted. These artifacts serve as both daily accountability and lasting proof of productivity - just productivity YOU define, not what others measure.
 
-**Artifacts as Proof of Significance:**
+**Artifacts as Evidence of Investment:**
 
-*AI Goals/Artifacts:*
+_AI Mastery Artifacts:_
+
 - 12 PRDs, 6 shipped micro-apps
 - 12 technical posts, 4 talks/videos
 - Working notes repo for experiments/implementations
+- Each artifact proves deep learning and capability building
 
-*Content Creation Goals/Artifacts:*
+_Content Creation Artifacts:_
 Maybe no one will read/watch it but me and my Mom, but good enough for me.
-- Blog artifacts: Regular posts, TBD
-- Video artifacts: YouTube channel, Reels, TBD
 
-*MRR Goals/Artifacts:*
-Monthly recurring revenue would be miniscule vs. a tech salary.
+- Blog artifacts: Regular posts documenting the journey
+- Video artifacts: YouTube channel, Reels showing progress
+- These create a permanent record of growth and learning
+
+_Revenue Experiment Artifacts:_
+Monthly recurring revenue would be minuscule vs. a tech salary, but that's not the point.
+
 - Product: 1 paid template; 1 cohort workshop pilot
-- Revenue: Affiliate links; ad revenue experiments (goal: $100/month after 6 months); course outline; analysis of the voices in my head on the topic
+- Revenue: Affiliate links; ad revenue experiments (goal: $100/month after 6 months)
+- These prove ability to create value independently of employment
 
-**New Sources of Significance:**
+**New Sources of Meaning:**
+
 - Being fully present for your family (they don't care about your title)
 - Mentoring others with your 25+ years of experience
 - Building things because they're interesting, not because they're assigned
 - Going deep on problems without arbitrary deadlines
 
-**Identity Evolution Metrics:**
-- Weekly artifact creation (you exist because you create)
-- Monthly mentorship sessions (you matter because you help)
-- Quarterly learning milestones (you grow because you choose to)
+**Anti-Squander Metrics:**
 
-When tamed, the Insignificance Dragon liberates you from external validation, teaching you to generate meaning from within. It becomes your guide to authentic significance.
+- Weekly artifact creation (tangible evidence of investment)
+- Monthly mentorship sessions (value created for others)
+- Quarterly learning milestones (measurable growth)
+- Daily intentional choices aligned with stated values
+
+When tamed, the Squander Dragon becomes your guide to intentional living, teaching you that true productivity means investing time in what matters most.
 
 ## Dragon Transformation: When Fear Becomes Fuel
 
@@ -578,19 +601,20 @@ The ultimate goal isn't to eliminate these dragons but to transform them from ad
 Living with dragons requires daily attention. They're not pets, but they're not enemies either - they're forces that must be acknowledged and managed through consistent practice. I have a long list
 
 - **Entropy Check**:
-    - Get up before 5am
-        - Anchor my day before I'm overrun by noise
-        - Make a priority list
-    - Physical/Emotional/Joy habits/practice
-        - I have a log list, and need to create my own [tracker](https://humanetracker.web.app/), which needs to evolve to become [humane](/structure)
 
-- **Insignificance Check**:
-    - Ensure I'm operating off my priority list
-    - Creation block (writing/coding) - prove you exist by creating something
-    - What can I do to maximize my family time
+  - Get up before 5am
+    - Anchor my day before I'm overrun by noise
+    - Make a priority list
+  - Physical/Emotional/Joy habits/practice
+    - I have a log list, and need to create my own [tracker](https://humanetracker.web.app/), which needs to evolve to become [humane](/structure)
 
+- **Squander Check**:
+  - Ensure I'm operating off my priority list
+  - Creation block (writing/coding) - prove you're investing wisely
+  - What can I do to maximize my family time
 
 **Weekly Dragon Council:**
+
 - Quick expense tracking (Fridays only) - stay aware without obsessing
 - Which dragon was loudest this week?
 - What triggered each dragon?
@@ -603,19 +627,22 @@ Regular formal reviews keep you from being slowly overwhelmed by any one dragon.
 
 **Monthly Dragon Council:**
 
-*Scarcity Assessment:*
+_Scarcity Assessment:_
+
 - Cash burn rate vs. projection?
 - Market anxiety level (1-10)?
 - Any surprise expenses?
 - Still on track for 2× expenses buffer?
 
-*Entropy Assessment:*
+_Entropy Assessment:_
+
 - Health/Habits adherence (exercise, sleep, nutrition)?
 - Project momentum maintained?
 - Relationships deepening or drifting?
 - Energy level trajectory?
 
-*Squander Assessment:*
+_Squander Assessment:_
+
 - Artifacts created this month?
 - Intentional investments made (health/relationships/mastery)?
 - Alignment with stated values?
@@ -623,13 +650,15 @@ Regular formal reviews keep you from being slowly overwhelmed by any one dragon.
 
 **Quarterly Dragon Summit:**
 
-*Strategic Questions:*
+_Strategic Questions:_
+
 - Which dragon is currently strongest?
 - Which dragon have I successfully tamed?
 - Which dragon needs more attention next quarter?
 - Are any dragons starting to transform into allies?
 
-*Trip-Wire Assessment:*
+_Trip-Wire Assessment:_
+
 - Health adherence < 50% for 2 consecutive months? (Entropy winning)
 - Cash buffer < 1.25× annual expenses? (Scarcity winning)
 - No artifacts shipped for 6 weeks? (Squander winning)
@@ -643,19 +672,22 @@ Before you open the box and release the dragons, map out your specific vulnerabi
 
 **Personal Dragon Assessment:**
 
-*My Scarcity Dragon is triggered by:*
+_My Scarcity Dragon is triggered by:_
+
 - Market drops over 5%
 - Unexpected expenses over $5K
 - Reading about tech layoffs
 - Comparing net worth to others
 
-*My Entropy Dragon is triggered by:*
+_My Entropy Dragon is triggered by:_
+
 - Unstructured mornings
 - More than 2 days without exercise
 - Social isolation for 48+ hours
 - Lack of concrete deadlines
 
-*My Squander Dragon is triggered by:*
+_My Squander Dragon is triggered by:_
+
 - Days without tangible output
 - Seeing others' achievements on LinkedIn
 - Relaxing "too much"
@@ -665,16 +697,19 @@ Before you open the box and release the dragons, map out your specific vulnerabi
 
 Top failure modes and mitigations (mapped to the dragons above):
 
-*If Scarcity wins:* I return to work prematurely out of financial fear, having learned nothing except that I'm controlled by money anxiety.
+_If Scarcity wins:_ I return to work prematurely out of financial fear, having learned nothing except that I'm controlled by money anxiety.
+
 - **Mitigation:** Pre-fund 2× annual expenses; monthly runway update; rules in "Taming Scarcity"
 
-*If Entropy wins:* I drift into poor health, damaged relationships, and wasted time, proving that I need external structure to function.
+_If Entropy wins:_ I drift into poor health, damaged relationships, and wasted time, proving that I need external structure to function.
+
 - **Specific failure modes:**
   - Drift/vegetating → Mitigation: Daily plan + weekly review; external structure (trainer/classes)
   - Isolation/loneliness → Mitigation: Pre-scheduled social slots; join clubs/classes; mentorship calendar
   - Scope creep on projects → Mitigation: WIP limit (max two active projects); define "done" for each artifact
 
-*If Squander wins:* I look back after a year realizing I wasted the opportunity - no health improvements, no deeper relationships, no mastery achieved. Just expensive procrastination.
+_If Squander wins:_ I look back after a year realizing I wasted the opportunity - no health improvements, no deeper relationships, no mastery achieved. Just expensive procrastination.
+
 - **Mitigation:** Weekly artifact creation; monthly investment audits; clear success metrics
 
 **The Voices in My Head:**
@@ -682,17 +717,12 @@ The dragons speak through internal voices - doubts, fears, and whispers that und
 
 **Dragon-Taming Resources:**
 
-*Allies in the fight:*
+_Allies in the fight:_
+
 - Other gap-year/retired folks who've faced these dragons
 - Professional support (therapy, financial advisor, trainer)
 - Family members who benefit from your presence
 - AI tools that provide leverage and learning
-
-*Environmental advantages:*
-- Home gym setup (Entropy protection)
-- Separate office space (Insignificance combat zone)
-- Automated finances (Scarcity management)
-- Calendar blocking (structure without imprisonment)
 
 ## Can 1 become 2? The Extend-to-Year-2 Test
 
@@ -700,17 +730,20 @@ At month 10, if you are so inclined, assess whether you've tamed the dragons suf
 
 **Extend to Year 2 if ALL are true:**
 
-*Entropy Tamed:*
+_Entropy Tamed:_
+
 - Health adherence ≥ 80% (sleep, workouts, nutrition maintained)
 - Energy levels stable or improving
 - Relationships deepened not degraded
 
-*Insignificance Tamed:*
-- 6+ meaningful artifacts shipped
-- Clear learning trajectory established
-- Alternative significance sources solidified
+_Squander Tamed:_
 
-*Scarcity Tamed:*
+- 6+ meaningful artifacts shipped
+- Clear progress on health/relationship investments
+- Tangible evidence of growth in chosen domains
+
+_Scarcity Tamed:_
+
 - Still hold ≥ 2× annual expenses in cash-like accounts
 - 5% portfolio return can replenish next year's draw
 - No financial panic despite market volatility
