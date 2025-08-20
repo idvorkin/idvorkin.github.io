@@ -55,17 +55,15 @@ Life is more than money, and to remind myself to broaden my perspective it's hel
 What if in 10 years:
 
 - My kids no longer live at home
-  - 95% probable
+  - 100% probable (or so I hope)
+- My health and cognative abilities have declineed
+  - 100% probable (unless we get some awesome new drugs)
 - I have serious health problems
-  - 30% probable
-- I am much weaker than today
-  - 95% probable
+  - 30% probable (hymn, I should look for actual probability)
 - I am no longer alive
   - Hopefully very low possibility, but see [Chasing Daylight](/chasing-daylight) and [On Being Mortal](/on-being-mortal)
 
 ## If Igor could retire today, would he?
-
-See the current [chapters](/chapters) of my life for how I think about seasons and tradeoffs.
 
 I often repeat "I'd do 80% of my job for free, but I don't get to do that 80% without doing the last 20%", so retirement doesn't especially excite me.
 
@@ -92,7 +90,7 @@ In Phase 3, I anticipate wanting to work extensively - but Phases 1 and 2 repres
 
 **Hey you're not talking about Tori, doesn't time with her matter?**
 
-It certainly does, but Tori needs her own time, and our relationship is set up where we don't need a ton of time together.
+It certainly does, but [Tori](/Tori) needs her own time, and our relationship is set up where we don't need a ton of time together.
 
 {%include summarize-page.html src="/tori"%}
 
@@ -470,24 +468,23 @@ The ultimate goal isn't to eliminate these dragons but to transform them from ad
 
 ## The Dragon Keeper's Daily Practice
 
-Living with dragons requires daily attention. They're not pets, but they're not enemies either - they're forces that must be acknowledged and managed through consistent practice.
+Living with dragons requires daily attention. They're not pets, but they're not enemies either - they're forces that must be acknowledged and managed through consistent practice. I have a long list
 
-**Morning Rounds (6-9am):**
-- **Entropy Check**: Physical practice (kettlebell/walk) - input energy before entropy takes hold
-- **Insignificance Check**: Creation block (writing/coding) - prove you exist by creating something
-- **Scarcity Check**: Gratitude practice - acknowledge abundance before scarcity whispers
+- **Entropy Check**:
+    - Get up before 5am
+        - Anchor my day before I'm overrun by noise
+        - Make a priority list
+    - Physical/Emotional/Joy habits/practice
+        - I have a log list, and need to create my own [tracker](https://humanetracker.web.app/), which needs to evolve to become [humane](/structure)
 
-**Midday Rounds (12-2pm):**
-- **Entropy Check**: Social connection time - fight isolation before it becomes loneliness
-- **Insignificance Check**: Learning block - grow to stay relevant
-- **Scarcity Check**: Quick expense tracking (Fridays only) - stay aware without obsessing
+- **Insignificance Check**:
+    - Ensure I'm operating off my priority list
+    - Creation block (writing/coding) - prove you exist by creating something
+    - What can I do to maximize my family time
 
-**Evening Rounds (5-7pm):**
-- **Insignificance Check**: Family presence - you matter most here
-- **Entropy Check**: Reflection and planning - review the day before it blurs into nothing
-- **Scarcity Check**: Appreciation for what you have - end with abundance mindset
 
 **Weekly Dragon Council:**
+- Quick expense tracking (Fridays only) - stay aware without obsessing
 - Which dragon was loudest this week?
 - What triggered each dragon?
 - Which taming strategies worked?
@@ -506,7 +503,7 @@ Regular formal reviews keep you from being slowly overwhelmed by any one dragon.
 - Still on track for 2× expenses buffer?
 
 *Entropy Assessment:*
-- Health metric adherence (exercise, sleep, nutrition)?
+- Health/Habits adherence (exercise, sleep, nutrition)?
 - Project momentum maintained?
 - Relationships deepening or drifting?
 - Energy level trajectory?
@@ -592,7 +589,7 @@ The dragons speak through internal voices - doubts, fears, and whispers that und
 
 ## Can 1 become 2? The Extend-to-Year-2 Test
 
-At month 10, assess whether you've tamed the dragons sufficiently to extend the gap year. This isn't about slaying them - they'll always be there. It's about whether you've built sustainable systems to live with them.
+At month 10, if you are so inclined, assess whether you've tamed the dragons sufficiently to extend the gap year. This isn't about slaying them - they'll always be there. It's about whether you've built sustainable systems to live with them.
 
 **Extend to Year 2 if ALL are true:**
 
@@ -615,7 +612,7 @@ Otherwise, use Year 2 as pre-funded job-search runway: plan in months 10-11, beg
 
 **The Dragons' Final Wisdom:**
 
-The gap year isn't about defeating these dragons - they're immortal forces that exist in everyone's life. Work just hides them. The gap year is about learning to live with them consciously, transforming them from hidden fears into acknowledged teachers.
+The challenge of the gap year isn't about defeating these dragons - they're immortal forces that exist in everyone's life. Work just hides them. The challenge is about learning to live with them consciously, transforming them from hidden fears into acknowledged teachers.
 
 Master this, and you don't just take a successful gap year - you learn to live with the fundamental forces that shape every human life. That's the real treasure the dragons guard.
 
