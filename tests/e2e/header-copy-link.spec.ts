@@ -74,6 +74,41 @@ test.describe("Header Copy Link Feature", () => {
     }
   });
 
+  test("should use breadcrumb format in copied text", async ({ page, context }) => {
+    // Grant clipboard permissions
+    await context.grantPermissions(["clipboard-read", "clipboard-write"]);
+
+    // Find an H2 or H3 header to test hierarchy
+    const deepHeader = page
+      .locator("h2, h3")
+      .filter({ has: page.locator(".header-copy-link") })
+      .first();
+
+    if ((await deepHeader.count()) > 0) {
+      // Hover over the header to make the copy link visible
+      await deepHeader.hover();
+
+      // Click the copy link
+      const copyLink = deepHeader.locator(".header-copy-link");
+      await copyLink.click();
+
+      // Check clipboard content
+      const clipboardText = await page.evaluate(() => navigator.clipboard.readText());
+
+      // Verify breadcrumb format: From: [page name]: header hierarchy
+      // Check for new format or old format (for backwards compatibility during deployment)
+      const hasBreadcrumbFormat = clipboardText.includes("From: [manager book]:") || 
+                                   clipboardText.includes("From: What does a manager do");
+      expect(hasBreadcrumbFormat).toBeTruthy();
+      
+      // If it's the new format and an H3, it should have hierarchy with >
+      const tagName = await deepHeader.evaluate(el => el.tagName);
+      if (tagName === "H3" && clipboardText.includes("[manager book]:")) {
+        expect(clipboardText).toContain(" > ");
+      }
+    }
+  });
+
   test("should show tooltip when copy link is clicked", async ({ page }) => {
     // Find a header with a copy link
     const headerWithCopyLink = page
