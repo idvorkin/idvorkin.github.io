@@ -275,39 +275,33 @@ These dragons cannot be slain - they're fundamental forces like gravity or time.
 
 The Scarcity Dragon will never fully trust that you have enough - that's its nature. But you can build a relationship with it based on transparency and regular communication.
 
-**The Peace Treaty Terms:**
+**How do you know it's time to execute the gap year through the scarcity lens**
 
-- Hold 2× annual expenses in cash-like accounts
-- Acknowledge the dragon's concerns with weekly financial check-ins
-- Build multiple scenarios (optimistic, realistic, pessimistic) so there are no surprises
-- Create clear trip-wires for course correction
-
-**The Top Question I Get:**
-You should understand all the dragons in detail, but re: the financial security dragon (again the other dragons might be equally if not more dangerous), but I'll answer you anyways:
+You should understand all the dragons in detail, but from the financial security dragon (again the other dragons might be equally if not more dangerous), but I'll answer you anyways:
 
 - Money: Net worth exceeds "X" Million.
   - Beyond this the risk is negligible
-- Date: XX/YY if my net worth is still higher than "Y" million, where Y is much lower than X.
+- Date: XX/YY if net worth is higher than "Y" million, where Y is much lower than X.
   - If you wait till after XX/YY, the value is negligible.
 
 _What are the actual dates and numbers?_
 
-- Well, a magician never reveals his tricks, and Igor's gotta have some secrets.
+- A magician never reveals his tricks, and Igor's gotta have some secrets.
 
 _Come on, can you at least give a formula?_
 
-- I think the most conservative:
-  - Baseline: Hold 2× annual expenses in cash-like accounts
-  - Assumptions:
-    - You can find job in ≤ 12 months (possibly at lower comp)
+I think the most conservative:
+- Baseline: Hold 2× annual expenses in cash-like accounts
+- Assumptions:
+    - You can find a job in ≤ 12 months (possibly at lower comp)
     - Expense estimates includes taxes, insurance, repairs, college as required, and an emergency
 
 **Assumptions that calm the dragon:**
 
 - You can find a job in ≤ 12 months (possibly at lower comp)
+- You're not forgetting hidden costs like $40K/year health insurance
 - Expense estimates include taxes, insurance, repairs, college, and emergencies
 - You've tracked expenses for years in [Monarch Money](https://www.monarchmoney.com/) and [Boldin](https://www.boldin.com/)
-- You're not forgetting hidden costs like $40K/year health insurance
 
 **The dragon's wisdom (when tamed):**
 From the [Prophet](https://poets.org/poem/giving-0): _"What is fear of need but need itself? Is not dread of thirst when your well is full, the thirst that is unquenchable?"_
@@ -363,27 +357,14 @@ See my full [money philosophy](/money), [retirement planning](/retire), and [sto
 > **Me:** "Yes, and..."
 >
 > - I know retired/gap year folks who are available during the day
+> - These people are fascinating - they've chosen unconventional paths, unencumbered by society's expectations
+> - They have time to think deeply and even experiment with weird ideas (one person wanted to try turning cameras off every 7 minutes during conversations to see how it changes the dynamic - weird but interesting!)
 > - I have friends and flexibility to hang out more regularly
 > - I can have deep conversations with Tony, my AI life coach ([tony_tesla project](https://github.com/idvorkin/tony_tesla))
 > - There are lots of people on the internet to meet — I've already started and it's pretty cool
 > - Many people would like mentorship, and I've got the time and experience to help them
 >
 > **So:** Schedule regular time with retired friends and deepen existing relationships.
-
-**Finding the Right Nutty People:**
-These folks are probably unique:
-
-- They had courage/interest in doing this
-- They are unencumbered by society's expectations
-- They have more time to think this stuff through deeply
-
-Example nutty people:
-
-- Someone who wants to have odd experiments in our conversations
-  - Camera off every 7 minutes
-  - Minute of silence every 7 minutes
-  - Put the time to answer how that makes me feel
-  - Weird but pretty interesting
 
 ---
 
