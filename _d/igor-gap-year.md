@@ -11,7 +11,7 @@ tags:
   - how igor ticks
 ---
 
-Done right, a gap year isn't a year off; it's a year on — intentional investment in health, relationships, and mastery while you still have the energy to enjoy the returns. A gap year is one of those uncharted spaces—seductive when discussed longingly over a beer, scary when holding a resignation letter outside your boss's office. Early maps warned: "HC SVNT DRACONES." Here be dragons. I'm mapping it in real time: the money jitters, fear of decay, identity questions, and habit architecture that decide whether the year becomes treasure or an aimless journey.
+Done right, a gap year isn't a year off; it's a year on — intentional investment in health, relationships, and mastery while you still have the capital to invest. Think of it as pursuing a PhD in Life Optimization, making deposits that compound for decades. A gap year is one of those uncharted spaces—seductive when discussed longingly over a beer, terrifying when holding a resignation letter outside your boss's office. Early maps warned: "HC SVNT DRACONES." Here be dragons. I'm mapping them in real time: the Scarcity Dragon whispering you can't afford it, the Entropy Dragon promising you'll decay without structure, and the Squander Dragon insisting you'll waste this precious opportunity. But these dragons guard treasure — the chance to invest in what truly matters while you still have the capacity to do so. This is the map of how to tame them.
 
 {% include alert.html content="I'm incredibly privileged to have both line of sight on savings and the support of my family to even consider a gap year" style="info" %}
 This sits next to [the gap year paradox](/gap-year): same terrain, closer camera.
