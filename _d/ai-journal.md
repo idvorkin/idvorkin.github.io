@@ -154,12 +154,12 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - Originally created on July 18, 2025 ([commit 38d87330](https://github.com/idvorkin/idvorkin.github.io/commit/38d87330)) as "crafting spells to banish ruminating thoughts"
   - Added image features ([commit bab47de6](https://github.com/idvorkin/idvorkin.github.io/commit/bab47de6)) - a very lucky last commit or I'd never have found it.
 - **The Shocking Discovery**: File was deleted in [PR #67](https://github.com/idvorkin/idvorkin.github.io/pull/67) ([commit e73324f9](https://github.com/idvorkin/idvorkin.github.io/commit/e73324f9))
+
   - **PR title**: "Add random page navigation feature"
   - **Actual changes**: Also randomly deleted an entire page!
   - 251 lines of carefully crafted content about mental health - gone
   - Likely cause: Merge conflict resolution gone wrong or accidental staging
   - The PR summary never mentioned deleting psychic-shadows.md
-
 
 - **The Numbers Don't Lie - Everyone Failed**:
   - **7 AI code reviews** in 31 minutes (21:48 to 22:19)
@@ -209,21 +209,25 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 #### The Claude Review Workflow Saga - When Good Intentions Break Everything
 
 - **The Problem**: Claude Code Review had been failing on EVERY PR since August 17th with mysterious "Invalid OIDC token" errors
+
   - Someone (probably me via AI) had "fixed" the workflow to support fork PRs by changing from `pull_request` to `pull_request_target`
   - Classic case of "the fix that breaks everything else"
 
 - **The Wild Goose Chase**:
+
   - First hypothesis: OIDC tokens don't work with `pull_request_target` - let's add `github_token`!
   - Created PR #120 to add the token - still failed
   - Tested from a fork (PR #121) to be thorough - also failed
   - The beta Claude action just wasn't compatible with `pull_request_target` events
 
 - **The Real Fix**: Sometimes you just have to admit defeat and revert
+
   - PR #122: Reverted to the original `pull_request` event that actually worked
   - Lost fork PR support, but gained back ALL regular PR reviews
   - Better to have 95% working than 100% broken
 
 - **Bonus Discovery**: While debugging the Vitest workflow force-push failures
+
   - Found branch protection rules were set to `~ALL` instead of just `main`
   - This was blocking pushes to PR branches, test-results branch, everything!
   - One setting change fixed multiple mysterious CI failures
@@ -582,7 +586,7 @@ Use meta -I (e.g. Alt-I) e.g. AI :)
 
 #### First Real AI Feature - GPT Writing My Commit Messages
 
-- *Note: This entry was backdated and created on 2025-08-21*
+- _Note: This entry was backdated and created on 2025-08-21_
 - **First Real Feature** ([commit 0c4f253](https://github.com/idvorkin/nlp/commit/0c4f253)):
   - Added a `commit_message` command to gpt3.py
   - GPT could now write git commit messages from diffs!
@@ -602,7 +606,7 @@ Use meta -I (e.g. Alt-I) e.g. AI :)
 
 #### Creating the NLP Repository
 
-- *Note: This entry was backdated and created on 2025-08-21*
+- _Note: This entry was backdated and created on 2025-08-21_
 - **Context**: 18 days after ChatGPT launched (Nov 30, 2022), probably mid way into a big chunk of time off
 - **The Repository**: Created [github.com/idvorkin/nlp](https://github.com/idvorkin/nlp) ([initial commit](https://github.com/idvorkin/nlp/commit/24d5b65))
 - **Missing NLP history**
@@ -619,11 +623,12 @@ Use meta -I (e.g. Alt-I) e.g. AI :)
 
 #### First GPT Commit
 
-- *Note: This entry was backdated and created on 2025-08-21*
+- _Note: This entry was backdated and created on 2025-08-21_
 - My [first GPT commit](https://github.com/idvorkin/LinqPadSnippets/commit/9b62510abd6b6c6ec8b7ade35127fa094eb51ea0) - December 30, 2021
   - 11 months before ChatGPT launched (Nov 30, 2022)
   - Using GPT-3 Completion API with davinci engine
 - **The Code**:
+
   ```python
   import os
   import openai
@@ -634,10 +639,14 @@ Use meta -I (e.g. Alt-I) e.g. AI :)
       prompt="This is a test",
       max_tokens=5
   )
+  ```
+
 - Used the original "davinci" engine (not even GPT-3.5 yet!)
 - "davinci" was the top model - no GPT-3.5-turbo, no GPT-4
 - APIs were brand new and documentation was sparse
 - "davinci" model cost $0.02/1K tokens (10x more than GPT-3.5-turbo later!)
+  ```
+
   ```
 
 ### Related posts
