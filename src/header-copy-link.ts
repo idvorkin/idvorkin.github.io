@@ -420,7 +420,7 @@ async function shareOrCopyHeaderLink(headerId: string, options: CopyLinkOptions)
     let clipboardText = tinyUrl;
     if (previewText) {
       // Format as: From: Title, Preview, URL (similar to social media shares)
-      clipboardText = `From: ${headerText} ...\n\n${previewText}\n\n${tinyUrl}`;
+      clipboardText = `From: ${breadcrumbFrom} ...\n\n${previewText}\n\n${tinyUrl}`;
     }
     
     // Fallback to clipboard copy for desktop or if share fails
