@@ -291,11 +291,12 @@ function buildBreadcrumbFrom(header: HTMLElement | null): string {
     .join(' ')
     .trim();
   
-  // For H3, find parent H2; for H2 or H3, find parent H1
+  // For H2+, find parent headers
   if (headerLevel >= 2) {
     // Look for parent headers by traversing backwards through the DOM
     let prevElement = header.previousElementSibling;
     const foundHeaders: { level: number; text: string }[] = [];
+    const seenLevels = new Set<number>();
     
     while (prevElement) {
       const prevTagName = prevElement.tagName;
@@ -303,23 +304,27 @@ function buildBreadcrumbFrom(header: HTMLElement | null): string {
         const prevLevel = parseInt(prevTagName.substring(1));
         
         // Only collect headers that are higher level (lower number) than current
-        if (prevLevel < headerLevel) {
+        // and we haven't seen this level yet (to get the most recent parent)
+        if (prevLevel < headerLevel && !seenLevels.has(prevLevel)) {
           const prevHeaderText = Array.from(prevElement.childNodes)
             .filter(node => node.nodeType === Node.TEXT_NODE)
             .map(node => node.textContent?.trim())
             .join(' ')
             .trim();
           
-          foundHeaders.push({ level: prevLevel, text: prevHeaderText });
+          if (prevHeaderText) {
+            foundHeaders.push({ level: prevLevel, text: prevHeaderText });
+            seenLevels.add(prevLevel);
+          }
           
-          // If we found an H1, we can stop
+          // If we found an H1, we can stop (top level)
           if (prevLevel === 1) break;
         }
       }
       prevElement = prevElement.previousElementSibling;
     }
     
-    // Add headers in order (H1 > H2 > current)
+    // Add headers in hierarchical order (H1 > H2 > ...)
     foundHeaders.sort((a, b) => a.level - b.level);
     foundHeaders.forEach(h => headerHierarchy.push(h.text));
   }
@@ -327,10 +332,17 @@ function buildBreadcrumbFrom(header: HTMLElement | null): string {
   // Add current header
   headerHierarchy.push(currentHeaderText);
   
-  // Build the breadcrumb string
+  // Build the breadcrumb string with better formatting
   let breadcrumb = `[${readablePageName}]`;
   if (headerHierarchy.length > 0) {
-    breadcrumb += `: ${headerHierarchy.join(' > ')}`;
+    // Limit to 3 levels max for readability
+    const limitedHierarchy = headerHierarchy.slice(0, 3);
+    breadcrumb += `: ${limitedHierarchy.join(' > ')}`;
+    
+    // Add ellipsis if there are more levels
+    if (headerHierarchy.length > 3) {
+      breadcrumb += ' ...';
+    }
   }
   
   return breadcrumb;
