@@ -5,9 +5,6 @@ npx vitest run --reporter=verbose
 [90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mCopy Functionality[2m > [22m[2mshould copy correct URL format
 [22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=manager-book%23test-section...
 
-[90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
-[22m[39mToggle element with ID missing-toggle not found
-
 [90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mCopy Functionality[2m > [22m[2mshould handle clipboard API failure gracefully
 [22m[39m📋 Copied with preview (fallback): https://tinyurl.com/igor-blog/?path=manager-book%23test-section...
 
@@ -23,6 +20,9 @@ npx vitest run --reporter=verbose
 [90m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
     at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
     at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
+
+[90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
+[22m[39mToggle element with ID missing-toggle not found
 
 [90mstderr[2m | src/__tests__/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould show error message when getProcessedPages fails
 [22m[39m❌ Error loading recent posts: Error: Test error
@@ -42,6 +42,9 @@ npx vitest run --reporter=verbose
 
 [90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould handle empty results
 [22m[39mToggle element with ID remaining-posts-toggle not found
+
+[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: localhost to production with long anchor
+[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=manager-book%23how-do-you-identify-and-help-eng-decide-if-manage...
 
  [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould fetch and return URL info map
  [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould throw error if url_info is missing
@@ -80,29 +83,6 @@ npx vitest run --reporter=verbose
 [90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2minitRecentAllPosts[2m > [22m[2mshould call updateRecentPosts immediately if document is already loaded
 [22m[39mToggle element with ID remaining-posts-toggle not found
 
-[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: localhost to production with long anchor
-[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=manager-book%23how-do-you-identify-and-help-eng-decide-if-manage...
-
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould group pages by month and year
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould handle empty arrays
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould skip pages without last_modified dates
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateGroupedPagesHTML[2m > [22mshould generate correct HTML for grouped pages
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateGroupedPagesHTML[2m > [22mshould format dates in the expected format
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateGroupedPagesHTML[2m > [22mshould truncate descriptions longer than 150 characters
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mcreateToggleSection[2m > [22mshould create toggle section with correct content
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateStyles[2m > [22mshould generate CSS styles as a string
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22msetupToggleEventListener[2m > [22mshould add click event listener to toggle element
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22msetupToggleEventListener[2m > [22mshould handle missing toggle element
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22msetupToggleEventListener[2m > [22mshould toggle content visibility when clicked
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateRecentPostsHTML[2m > [22mshould generate complete HTML for posts display
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateRecentPostsHTML[2m > [22mshould return message when no pages are provided
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateRecentPostsHTML[2m > [22mshould use default initialPostsCount of 15
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould update container with posts HTML
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould handle empty results
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould handle errors
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould call updateRecentPosts immediately if document is already loaded
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould add event listener if document is still loading
 [90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: production domain mapping
 [22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=manager-book%23test-section...
 
@@ -136,6 +116,26 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: localhost to production with long anchor
  [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: production domain mapping
  [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: simple case
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould group pages by month and year
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould handle empty arrays
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould skip pages without last_modified dates
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateGroupedPagesHTML[2m > [22mshould generate correct HTML for grouped pages
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateGroupedPagesHTML[2m > [22mshould format dates in the expected format
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateGroupedPagesHTML[2m > [22mshould truncate descriptions longer than 150 characters
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mcreateToggleSection[2m > [22mshould create toggle section with correct content
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateStyles[2m > [22mshould generate CSS styles as a string
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22msetupToggleEventListener[2m > [22mshould add click event listener to toggle element
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22msetupToggleEventListener[2m > [22mshould handle missing toggle element
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22msetupToggleEventListener[2m > [22mshould toggle content visibility when clicked
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateRecentPostsHTML[2m > [22mshould generate complete HTML for posts display
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateRecentPostsHTML[2m > [22mshould return message when no pages are provided
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateRecentPostsHTML[2m > [22mshould use default initialPostsCount of 15
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould update container with posts HTML
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould handle empty results
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould handle errors
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould call updateRecentPosts immediately if document is already loaded
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould add event listener if document is still loading
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould generate correct HTML for a post preview
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould encode URLs correctly
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_random_post_html[2m > [22mshould generate HTML for a random post
@@ -280,6 +280,6 @@ Dev info - Branch: [1mnull[22m Port: 4000
 
 [2m Test Files [22m [1m[32m17 passed[39m[22m[90m (17)[39m
 [2m      Tests [22m [1m[32m194 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (199)[39m
-[2m   Start at [22m 01:01:56
-[2m   Duration [22m 4.10s[2m (transform 615ms, setup 221ms, collect 891ms, tests 473ms, environment 6.30s, prepare 1.43s)[22m
+[2m   Start at [22m 03:47:41
+[2m   Duration [22m 4.25s[2m (transform 640ms, setup 233ms, collect 967ms, tests 516ms, environment 6.45s, prepare 1.51s)[22m
 
