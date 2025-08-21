@@ -125,6 +125,7 @@ jobs:
           target-folder: test-results
           branch: test-results
           clean: false
+          force: false  # Disable force push to comply with branch protection rules
 
       - name: Upload test coverage as artifact
         if: always()
