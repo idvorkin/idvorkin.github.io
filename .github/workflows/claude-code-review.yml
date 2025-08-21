@@ -1,61 +1,22 @@
-# Claude Code Review Workflow
-# 
-# SECURITY NOTICE:
-# This workflow uses pull_request_target to allow Claude Code Review to work
-# with PRs from forks (like idvorkin-ai-tools). This is necessary because:
-# 1. Fork PRs don't have access to repository secrets with pull_request event
-# 2. Claude Code action needs CLAUDE_CODE_OAUTH_TOKEN secret to authenticate
-#
-# Security measures in place:
-# - Only runs for trusted users and the idvorkin-ai-tools bot
-# - Path restrictions prevent running on workflow files
-# - Explicitly checks out PR head SHA (not the merge commit)
-# - Concurrency control prevents resource exhaustion
-# - Skip conditions for WIP and marked PRs
-#
-# The idvorkin-ai-tools account is explicitly allowed as it's a controlled AI assistant
-# DO NOT add other bot accounts without security review!
-
 name: Claude Code Review
 
 on:
-  # Use pull_request_target to allow access to secrets for fork PRs
-  # IMPORTANT: This runs in the context of the base repository, not the fork
-  pull_request_target:
+  pull_request:
     types: [opened, synchronize]
-    # Only run on source code changes to reduce attack surface
-    paths:
-      - "src/**/*.ts"
-      - "src/**/*.tsx"
-      - "src/**/*.js"
-      - "src/**/*.jsx"
-      - "assets/js/**/*.js"
-      - "tests/**/*.ts"
-      - "tests/**/*.js"
-      # Explicitly exclude workflow files
-      - "!.github/**"
-
-concurrency:
-  # Prevent multiple reviews running simultaneously for the same PR
-  group: claude-review-${{ github.event.pull_request.number }}
-  cancel-in-progress: true
+    # Optional: Only run on specific file changes
+    # paths:
+    #   - "src/**/*.ts"
+    #   - "src/**/*.tsx"
+    #   - "src/**/*.js"
+    #   - "src/**/*.jsx"
 
 jobs:
   claude-review:
-    # SECURITY: Only run for trusted contributors to prevent code injection
-    # This is critical when using pull_request_target
-    # idvorkin-ai-tools is explicitly allowed as a controlled AI assistant
-    if: |
-      (
-        github.event.pull_request.user.login == 'idvorkin' ||
-        github.event.pull_request.user.login == 'idvorkin-ai-tools' ||
-        github.event.pull_request.author_association == 'OWNER' ||
-        github.event.pull_request.author_association == 'MEMBER' ||
-        github.event.pull_request.author_association == 'COLLABORATOR'
-      ) &&
-      !contains(github.event.pull_request.title, '[skip-review]') &&
-      !contains(github.event.pull_request.title, '[WIP]') &&
-      !contains(github.event.pull_request.title, 'WIP:')
+    # Optional: Filter by PR author
+    # if: |
+    #   github.event.pull_request.user.login == 'external-contributor' ||
+    #   github.event.pull_request.user.login == 'new-developer' ||
+    #   github.event.pull_request.author_association == 'FIRST_TIME_CONTRIBUTOR'
     
     runs-on: ubuntu-latest
     permissions:
@@ -68,9 +29,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          # SECURITY: Check out the PR code when using pull_request_target
-          # This is safe because we restricted who can trigger this workflow
-          ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 1
 
       - name: Run Claude Code Review
@@ -78,8 +36,6 @@ jobs:
         uses: anthropics/claude-code-action@beta
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          # Provide GitHub token explicitly as OIDC doesn't work with pull_request_target
-          github_token: ${{ secrets.GITHUB_TOKEN }}
 
           # Optional: Specify model (defaults to Claude Sonnet 4, uncomment for Claude Opus 4)
           # model: "claude-opus-4-20250514"
