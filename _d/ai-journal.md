@@ -56,7 +56,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
   - [2022-12-25](#2022-12-25)
     - [First Real AI Feature - GPT Writing My Commit Messages](#first-real-ai-feature---gpt-writing-my-commit-messages)
   - [2022-12-18](#2022-12-18)
-    - [Creating my the NLP Repository](#creating-my-the-nlp-repository)
+    - [Creating the NLP Repository](#creating-the-nlp-repository)
   - [2021-12-30](#2021-12-30)
     - [First GPT Commit](#first-gpt-commit)
   - [Related posts](#related-posts)
@@ -600,7 +600,7 @@ Use meta -I (e.g. Alt-I) e.g. AI :)
 
 ### 2022-12-18
 
-#### Creating my the NLP Repository
+#### Creating the NLP Repository
 
 - *Note: This entry was backdated and created on 2025-08-21*
 - **Context**: 18 days after ChatGPT launched (Nov 30, 2022), probably mid way into a big chunk of time off
@@ -620,8 +620,11 @@ Use meta -I (e.g. Alt-I) e.g. AI :)
 #### First GPT Commit
 
 - *Note: This entry was backdated and created on 2025-08-21*
-- 17 days after ChatGPT launched (November 30, 2022)
-- My [first GPT commit](https://github.com/idvorkin/LinqPadSnippets/commit/9b62510abd6b6c6ec8b7ade35127fa094eb51ea0) -
+- **Mind Blown**: My [first GPT commit](https://github.com/idvorkin/LinqPadSnippets/commit/9b62510abd6b6c6ec8b7ade35127fa094eb51ea0) was December 30, 2021!
+  - 11 months BEFORE ChatGPT even existed (launched Nov 30, 2022)
+  - Using raw GPT-3 API when almost nobody knew about it
+  - I was literally a year ahead of the AI hype wave
+- **The Code**:
   ```python
   import os
   import openai
