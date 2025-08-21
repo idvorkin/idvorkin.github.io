@@ -44,6 +44,7 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
 - [Congrats you've been promoted: AI Squad Manager](#congrats-youve-been-promoted-ai-squad-manager)
   - [How to be fast when AI is slow](#how-to-be-fast-when-ai-is-slow)
   - [Interventions per hour](#interventions-per-hour)
+  - [Multi-agent orchestration stress](#multi-agent-orchestration-stress)
   - [Don't be the junior developer](#dont-be-the-junior-developer)
   - [What matters most is testing/evals](#what-matters-most-is-testingevals)
 - [Igor's Predictions, Insights, and Mental Models](#igors-predictions-insights-and-mental-models)
@@ -641,3 +642,8 @@ That's the key:
 - From Kindergarten Student to PhD in very low years
 - From Moore's law at every 2 years, to like every 3-6 months
 - Not only smart agents, but as many as you want.
+
+
+
+
+
