@@ -18,6 +18,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [Diary](#diary)
   - [2025-08-21](#2025-08-21)
     - [Psychic Shadows Gas Lighting](#psychic-shadows-gas-lighting)
+    - [The Claude Review Workflow Saga - When Good Intentions Break Everything](#the-claude-review-workflow-saga---when-good-intentions-break-everything)
     - [OMG I Did It Again - TWICE! Security Theater Fail](#omg-i-did-it-again---twice-security-theater-fail)
   - [2025-08-17](#2025-08-17)
     - [Isolation](#isolation)
@@ -152,6 +153,8 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - 251 lines of carefully crafted content about mental health - gone
   - Likely cause: Merge conflict resolution gone wrong or accidental staging
   - The PR summary never mentioned deleting psychic-shadows.md
+
+
 - **The Numbers Don't Lie - Everyone Failed**:
   - **7 AI code reviews** in 31 minutes (21:48 to 22:19)
   - **10+ sets of eyes** on this PR (Claude Code, Claude Review Bot, Cursor Bot, and me)
@@ -186,6 +189,34 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - You can have all the right pieces but one misconfiguration ruins everything
   - Defense in depth only works if all the defenses are actually... defending
   - Always verify your security assumptions - "trust but verify" applies to your own setup too
+
+#### The Claude Review Workflow Saga - When Good Intentions Break Everything
+
+- **The Problem**: Claude Code Review had been failing on EVERY PR since August 17th with mysterious "Invalid OIDC token" errors
+  - Someone (probably me via AI) had "fixed" the workflow to support fork PRs by changing from `pull_request` to `pull_request_target`
+  - Classic case of "the fix that breaks everything else"
+
+- **The Wild Goose Chase**:
+  - First hypothesis: OIDC tokens don't work with `pull_request_target` - let's add `github_token`!
+  - Created PR #120 to add the token - still failed
+  - Tested from a fork (PR #121) to be thorough - also failed
+  - The beta Claude action just wasn't compatible with `pull_request_target` events
+
+- **The Real Fix**: Sometimes you just have to admit defeat and revert
+  - PR #122: Reverted to the original `pull_request` event that actually worked
+  - Lost fork PR support, but gained back ALL regular PR reviews
+  - Better to have 95% working than 100% broken
+
+- **Bonus Discovery**: While debugging the Vitest workflow force-push failures
+  - Found branch protection rules were set to `~ALL` instead of just `main`
+  - This was blocking pushes to PR branches, test-results branch, everything!
+  - One setting change fixed multiple mysterious CI failures
+
+- **Lessons Learned**:
+  - Beta actions + complex GitHub events = pain
+  - Branch protection rule of `~ALL` is almost never what you want
+  - Sometimes the clever solution (`pull_request_target`) is worse than the simple one
+  - When in doubt, check what worked before and just use that
 
 ### 2025-08-17
 
