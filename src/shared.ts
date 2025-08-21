@@ -2,6 +2,7 @@
  * Shared utility functions
  *
  * This file contains utility functions that are shared across multiple modules.
+ * Test comment: Verifying Claude review works after reverting to pull_request
  */
 
 /**
