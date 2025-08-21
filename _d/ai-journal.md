@@ -18,6 +18,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [Diary](#diary)
   - [2025-08-21](#2025-08-21)
     - [Psychic Shadows Gas Lighting](#psychic-shadows-gas-lighting)
+    - [OMG I Did It Again - TWICE! Security Theater Fail](#omg-i-did-it-again---twice-security-theater-fail)
   - [2025-08-17](#2025-08-17)
     - [Isolation](#isolation)
     - [Racoon Illustrations](#racoon-illustrations)
@@ -161,6 +162,30 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - **Reality**: An entire blog post about mental health was being silently assassinated
 - **Today's rescue**: Restored the file with [commit 7699f2b2](https://github.com/idvorkin/idvorkin.github.io/commit/7699f2b2) "Putting file back"
 - **Lesson learned**: Always review PR diffs carefully! Unrelated files can accidentally get swept up in commits, especially during merge conflicts or when working with local settings files.
+
+#### OMG I Did It Again - TWICE! Security Theater Fail
+
+- **The Setup**: I'm so proud of my isolation setup!
+  - Claude running in its own GitHub account (can't mess up my main repos!)
+  - Running in its own container (can't mess up my machine!)
+  - Perfect isolation, right? **WRONG!**
+- **The Facepalm Moment**: Wait... Claude is pushing directly to main?!
+  - All that isolation theater, and the AI agent can just... push to main
+  - No PR required, no reviews, just straight to production
+  - Evidence: [commit 4e020c54](https://github.com/idvorkin/idvorkin.github.io/commit/4e020c54) and [commit 569b5022](https://github.com/idvorkin/idvorkin.github.io/commit/569b5022) - both pushed directly!
+  - Like putting a bank vault door on a tent
+- **The Discovery**: Found I had a GitHub ruleset that SHOULD prevent this
+  - It was **DISABLED** 🤦
+  - Link: [GitHub Rulesets Settings](https://github.com/idvorkin/idvorkin.github.io/settings/rules)
+  - The protection was there all along, just... turned off
+- **The Irony**:
+  - Spent hours setting up container isolation
+  - Spent days configuring separate GitHub accounts
+  - Forgot to flip the "on" switch for the most basic protection
+- **Lesson Learned**: Security is hard to get right!
+  - You can have all the right pieces but one misconfiguration ruins everything
+  - Defense in depth only works if all the defenses are actually... defending
+  - Always verify your security assumptions - "trust but verify" applies to your own setup too
 
 ### 2025-08-17
 
