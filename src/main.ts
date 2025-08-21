@@ -377,7 +377,8 @@ async function get_back_links(): Promise<IBacklinks> {
 }
 
 function search() {
-  $("#autocomplete-search-box-button").click();
+  // Redirect to main page for search
+  window.location.href = '/';
 }
 
 function keyboard_shortcut_loader() {
