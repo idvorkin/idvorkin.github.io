@@ -186,6 +186,16 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - You can have all the right pieces but one misconfiguration ruins everything
   - Defense in depth only works if all the defenses are actually... defending
   - Always verify your security assumptions - "trust but verify" applies to your own setup too
+- **Q&A - "Why is the AI a collaborator at all?"**
+  - Q: Why not have Claude fork the repo and make PRs from its own account?
+  - A: Because the code review bots don't support cross-repo PRs! 🤦
+    - Copilot won't review PRs from forks
+    - Claude review bot needs repo access
+    - Cursor bot... same story
+  - So we're stuck giving the AI collaborator access just to get automated reviews
+  - Which means trusting branch protection rules to be... you know... ENABLED
+  - The irony: We need to give more access to get better security reviews
+  - **Groan**... security is REALLY hard to get right
 
 ### 2025-08-17
 
