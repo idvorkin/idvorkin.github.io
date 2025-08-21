@@ -18,8 +18,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [Diary](#diary)
   - [2025-08-21](#2025-08-21)
     - [Psychic Shadows Gas Lighting](#psychic-shadows-gas-lighting)
-    - [The Claude Review Workflow Saga - When Good Intentions Break Everything](#the-claude-review-workflow-saga---when-good-intentions-break-everything)
     - [OMG I Did It Again - TWICE! Security Theater Fail](#omg-i-did-it-again---twice-security-theater-fail)
+    - [The Claude Review Workflow Saga - When Good Intentions Break Everything](#the-claude-review-workflow-saga---when-good-intentions-break-everything)
   - [2025-08-17](#2025-08-17)
     - [Isolation](#isolation)
     - [Racoon Illustrations](#racoon-illustrations)
@@ -53,6 +53,12 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
   - [2023-07-16](#2023-07-16)
   - [2023-07-15](#2023-07-15)
   - [2023-07-04](#2023-07-04)
+  - [2022-12-25](#2022-12-25)
+    - [First Real AI Feature - GPT Writing My Commit Messages](#first-real-ai-feature---gpt-writing-my-commit-messages)
+  - [2022-12-18](#2022-12-18)
+    - [Creating my the NLP Repository](#creating-my-the-nlp-repository)
+  - [2021-12-30](#2021-12-30)
+    - [First GPT Commit](#first-gpt-commit)
   - [Related posts](#related-posts)
 
 <!-- vim-markdown-toc-end -->
@@ -571,6 +577,66 @@ export LANGCHAIN_WANDB_TRACING=playing-around
 - Using AI chat in co-pilot on nightlysf
 
 Use meta -I (e.g. Alt-I) e.g. AI :)
+
+### 2022-12-25
+
+#### First Real AI Feature - GPT Writing My Commit Messages
+
+- *Note: This entry was backdated and created on 2025-08-21*
+- **First Real Feature** ([commit 0c4f253](https://github.com/idvorkin/nlp/commit/0c4f253)):
+  - Added a `commit_message` command to gpt3.py
+  - GPT could now write git commit messages from diffs!
+  - The prompt: "Write a commit message for the following diff, with a headline and then a paragraph of more details"
+  - This was revolutionary - AI helping me document my AI experiments
+- **Early Experiments** (Dec 25-31, 2022):
+  - `default.convo`: AI life coaching and programming conversations
+  - `igor_journal.py`: Analyzing my own journal entries with GPT
+  - Already trying to get GPT to fix my spelling errors!
+- **What This Meant**:
+  - Already seeing the potential for AI to analyze personal writing
+  - The recursive beauty: Using AI to help build AI tools
+  - This wasn't just playing with APIs anymore - it was becoming a mission
+- **Reflection**: The speed of iteration was insane - from "This is a test" to analyzing my journal and generating commit messages in just one week. The addiction had begun.
+
+### 2022-12-18
+
+#### Creating my the NLP Repository
+
+- *Note: This entry was backdated and created on 2025-08-21*
+- **Context**: 18 days after ChatGPT launched (Nov 30, 2022), probably mid way into a big chunk of time off
+- **The Repository**: Created [github.com/idvorkin/nlp](https://github.com/idvorkin/nlp) ([initial commit](https://github.com/idvorkin/nlp/commit/24d5b65))
+- **Missing NLP history**
+  - Dec 2021 - Mar 2022: Experimented with GPT-3 in LinqPadSnippets ([see full history](https://github.com/idvorkin/LinqPadSnippets/commits/b714e7dbdd10153f5308ec690619898f363df200/python/gpt3.py?before=b714e7dbdd10153f5308ec690619898f363df200+35))
+  - Mar 13, 2022: Deleted gpt3.py ([commit 55df7b7](https://github.com/idvorkin/LinqPadSnippets/commit/55df7b7)) - "Moving to NLP"
+  - 9-month gap: ???
+  - Dec 18, 2022: Created nlp repository for all the NLP stuff to be unified?
+- **The Evolution** from 2021 code:
+  - 2021: Simple 5-line script
+  - 2022: Full CLI with typer, rich formatting, multiple models (text-davinci-003, code-davinci-003)
+  - Secret management, custom commands, prompt engineering
+
+### 2021-12-30
+
+#### First GPT Commit
+
+- *Note: This entry was backdated and created on 2025-08-21*
+- 17 days after ChatGPT launched (November 30, 2022)
+- My [first GPT commit](https://github.com/idvorkin/LinqPadSnippets/commit/9b62510abd6b6c6ec8b7ade35127fa094eb51ea0) -
+  ```python
+  import os
+  import openai
+
+  openai.api_key = os.getenv("OPENAI_API_KEY")
+  response = openai.Completion.create(
+      engine="davinci",
+      prompt="This is a test",
+      max_tokens=5
+  )
+- Used the original "davinci" engine (not even GPT-3.5 yet!)
+- "davinci" was the top model - no GPT-3.5-turbo, no GPT-4
+- APIs were brand new and documentation was sparse
+- "davinci" model cost $0.02/1K tokens (10x more than GPT-3.5-turbo later!)
+  ```
 
 ### Related posts
 

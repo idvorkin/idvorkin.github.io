@@ -107,6 +107,7 @@ exclude:
     "test-results",
     "tests",
     "src/__tests__",
+    "repo_tmp",
   ]
 
 permalink: /:title
