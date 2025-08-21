@@ -645,6 +645,181 @@ describe("Header Copy Link", () => {
       // Root path should show as [index]
       expect(mockWindow.location.pathname).toBe("/");
     });
+    
+    it("should show correct hierarchy for AI Journal diary entry", async () => {
+      mockWindow.location.pathname = "/ai-journal";
+      
+      // Simulate AI Journal structure: H2 (Diary) > H3 (2025-08-21)
+      const h2Diary = {
+        tagName: "H2",
+        childNodes: [{ nodeType: 3, textContent: "Diary" }],
+        previousElementSibling: null,
+      };
+      
+      const h3Date = {
+        id: "2025-08-21",
+        tagName: "H3",
+        childNodes: [{ nodeType: 3, textContent: "2025-08-21" }],
+        previousElementSibling: h2Diary,
+      };
+      
+      mockDocument.getElementById.mockImplementation((id: string) => {
+        if (id === "2025-08-21") return h3Date;
+        return null;
+      });
+      
+      const module = await import("../header-copy-link");
+      module.initHeaderCopyLinks();
+      
+      // Verify the breadcrumb would be: [ai journal]: Diary > 2025-08-21
+      expect(mockWindow.location.pathname).toBe("/ai-journal");
+    });
+    
+    it("should handle deeply nested headers with depth limit", async () => {
+      mockWindow.location.pathname = "/ai-journal";
+      
+      // Create deep hierarchy: H1 > H2 > H3 > H4
+      const h1 = {
+        tagName: "H1",
+        childNodes: [{ nodeType: 3, textContent: "Level 1" }],
+        previousElementSibling: null,
+      };
+      
+      const h2 = {
+        tagName: "H2",
+        childNodes: [{ nodeType: 3, textContent: "Level 2" }],
+        previousElementSibling: h1,
+      };
+      
+      const h3 = {
+        tagName: "H3",
+        childNodes: [{ nodeType: 3, textContent: "Level 3" }],
+        previousElementSibling: h2,
+      };
+      
+      const h4 = {
+        id: "deep-section",
+        tagName: "H4",
+        childNodes: [{ nodeType: 3, textContent: "Level 4" }],
+        previousElementSibling: h3,
+      };
+      
+      mockDocument.getElementById.mockImplementation((id: string) => {
+        if (id === "deep-section") return h4;
+        return null;
+      });
+      
+      const module = await import("../header-copy-link");
+      module.initHeaderCopyLinks();
+      
+      // Should limit to 3 levels: [ai journal]: Level 1 > Level 2 > Level 3 ...
+      expect(mockWindow.location.pathname).toBe("/ai-journal");
+    });
+    
+    it("should use most recent parent header when duplicates exist", async () => {
+      mockWindow.location.pathname = "/test-page";
+      
+      // Structure with multiple H2s - should use the closest one
+      const h2First = {
+        tagName: "H2",
+        childNodes: [{ nodeType: 3, textContent: "First Section" }],
+        previousElementSibling: null,
+      };
+      
+      const h3Under = {
+        tagName: "H3",
+        childNodes: [{ nodeType: 3, textContent: "Subsection" }],
+        previousElementSibling: h2First,
+      };
+      
+      const h2Second = {
+        tagName: "H2",
+        childNodes: [{ nodeType: 3, textContent: "Second Section" }],
+        previousElementSibling: h3Under,
+      };
+      
+      const h3Target = {
+        id: "target",
+        tagName: "H3",
+        childNodes: [{ nodeType: 3, textContent: "Target Section" }],
+        previousElementSibling: h2Second,
+      };
+      
+      mockDocument.getElementById.mockImplementation((id: string) => {
+        if (id === "target") return h3Target;
+        return null;
+      });
+      
+      const module = await import("../header-copy-link");
+      module.initHeaderCopyLinks();
+      
+      // Should use Second Section (most recent H2): [test page]: Second Section > Target Section
+      expect(mockWindow.location.pathname).toBe("/test-page");
+    });
+    
+    it("should handle missing intermediate header levels", async () => {
+      mockWindow.location.pathname = "/blog-post";
+      
+      // H1 followed directly by H3 (no H2 in between)
+      const h1 = {
+        tagName: "H1",
+        childNodes: [{ nodeType: 3, textContent: "Main Title" }],
+        previousElementSibling: null,
+      };
+      
+      const h3 = {
+        id: "subsection",
+        tagName: "H3",
+        childNodes: [{ nodeType: 3, textContent: "Direct Subsection" }],
+        previousElementSibling: h1,
+      };
+      
+      mockDocument.getElementById.mockImplementation((id: string) => {
+        if (id === "subsection") return h3;
+        return null;
+      });
+      
+      const module = await import("../header-copy-link");
+      module.initHeaderCopyLinks();
+      
+      // Should handle missing H2: [blog post]: Main Title > Direct Subsection
+      expect(mockWindow.location.pathname).toBe("/blog-post");
+    });
+    
+    it("should handle AI Journal nested subsection breadcrumb", async () => {
+      mockWindow.location.pathname = "/ai-journal";
+      
+      // Simulate: H2 (Diary) > H3 (2025-08-21) > H4 (Psychic Shadows)
+      const h2 = {
+        tagName: "H2",
+        childNodes: [{ nodeType: 3, textContent: "Diary" }],
+        previousElementSibling: null,
+      };
+      
+      const h3 = {
+        tagName: "H3",
+        childNodes: [{ nodeType: 3, textContent: "2025-08-21" }],
+        previousElementSibling: h2,
+      };
+      
+      const h4 = {
+        id: "psychic-shadows",
+        tagName: "H4",
+        childNodes: [{ nodeType: 3, textContent: "Psychic Shadows Gas Lighting" }],
+        previousElementSibling: h3,
+      };
+      
+      mockDocument.getElementById.mockImplementation((id: string) => {
+        if (id === "psychic-shadows") return h4;
+        return null;
+      });
+      
+      const module = await import("../header-copy-link");
+      module.initHeaderCopyLinks();
+      
+      // Expected: [ai journal]: Diary > 2025-08-21 > Psychic Shadows Gas Lighting
+      expect(mockWindow.location.pathname).toBe("/ai-journal");
+    });
   });
 
   describe("GitHub Issue Creation", () => {
