@@ -620,10 +620,9 @@ Use meta -I (e.g. Alt-I) e.g. AI :)
 #### First GPT Commit
 
 - *Note: This entry was backdated and created on 2025-08-21*
-- **Mind Blown**: My [first GPT commit](https://github.com/idvorkin/LinqPadSnippets/commit/9b62510abd6b6c6ec8b7ade35127fa094eb51ea0) was December 30, 2021!
-  - 11 months BEFORE ChatGPT even existed (launched Nov 30, 2022)
-  - Using raw GPT-3 API when almost nobody knew about it
-  - I was literally a year ahead of the AI hype wave
+- My [first GPT commit](https://github.com/idvorkin/LinqPadSnippets/commit/9b62510abd6b6c6ec8b7ade35127fa094eb51ea0) - December 30, 2021
+  - 11 months before ChatGPT launched (Nov 30, 2022)
+  - Using GPT-3 Completion API with davinci engine
 - **The Code**:
   ```python
   import os
