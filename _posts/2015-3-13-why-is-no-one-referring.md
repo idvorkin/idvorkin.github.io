@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Why is noone referring my project"
+title: "Why Is No One Referring My Project"
 author: "Igor Dvorkin"
 tag: "startupville"
 comments: true

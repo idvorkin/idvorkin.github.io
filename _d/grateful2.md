@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Gratefulnes"
+title: "Gratefulness"
 permalink: /grateful
 alias: /grateful
 ---

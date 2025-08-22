@@ -1,7 +1,7 @@
 ---
 layout: post
 no-render-title: true
-title: WinDBG notes
+title: WinDbg Notes
 ---
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/windbg.md)_

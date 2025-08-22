@@ -1,7 +1,7 @@
 ---
 layout: post
 no-render-title: true
-title: The case of the cert validation error
+title: The Case of the Cert Validation Error
 permalink: /cert-error
 ---
 

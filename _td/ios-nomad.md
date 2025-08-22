@@ -1,7 +1,7 @@
 ---
 layout: post
 no-render-title: true
-title: iOS Software engineer nomad howto
+title: iOS Software Engineer Nomad How-To
 ---
 
 So you want to be an iPad Developer Nomad. A person who can do all their development on the iPad. I'm not sure why you'd want to be such a character, in fact, I'm not sure why I want to be such a character, but I do, and here's how I do it. To be a developer nomad, you better already be a command line wiz. If you're not at an expert at the terminal, vim or Emacs and TMUX - don't even try.
