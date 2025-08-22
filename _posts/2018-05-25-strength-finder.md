@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My Strengths from  Strength Finder"
+title: "My Strengths from Strength Finder"
 date: "2018-05-24 06:49:58 Pacific Standard Time"
 comments: true
 tags:

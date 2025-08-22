@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "mind-lines"
+title: "Mind-Lines"
 date: "2010-09-23 17:50:41 +0000"
 tags:
 ---

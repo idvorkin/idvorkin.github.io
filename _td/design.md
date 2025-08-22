@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Software Design And Architecture
+title: Software Design and Architecture
 permalink: /design
 redirect_from:
   - /architecture

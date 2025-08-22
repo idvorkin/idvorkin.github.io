@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Structure And Design of Computer Programs
+title: Structure and Design of Computer Programs
 permalink: /sicp
 redirect_from:
   - /wizard-book
