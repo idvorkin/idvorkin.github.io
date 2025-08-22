@@ -76,9 +76,13 @@ Planning feels good when we're afraid because it gives us the illusion of progre
 
 Daily moments worth remembering
 
+{% include youtube_playlist.html list="PLJveOxX-mxxD22iUkwLNaqGL_vawnmNau" %}
+
 ### Igor's Affirmations
 
 Values I'm reinforcing (Essentialist, Class Act, etc.)
+
+{% include youtube_playlist.html list="PLJveOxX-mxxC9PYL8ElnUnFe-SDh4h_wo" %}
 
 ### Music Videos/Dances
 
@@ -91,6 +95,18 @@ Adventures getting to work (kayak, unicycle, Tesla stories)
 ### Family Adventures
 
 Time with kids, life lessons
+
+### Achievement Unlocked
+
+Celebrating wins and milestones
+
+{% include youtube_playlist.html list="PLJveOxX-mxxAdPTShIvnMLKiHBcjijdBG" %}
+
+### Jump in the Lake Day
+
+Daily cold plunges and water adventures
+
+{% include youtube_playlist.html list="PLJveOxX-mxxCy0xIRl4oV-18-bQFiwyi8" %}
 
 ## 2. Welcome to Being Human
 
