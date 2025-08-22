@@ -83,6 +83,7 @@ zsh = "zsh"
 vim = "vim"
 nvim = "nvim"
 emacs = "emacs"
+catastrophize = "catastrophize"  # Valid verb form of catastrophe
 
 [files]
 # Exclusion strategy:
