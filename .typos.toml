@@ -125,6 +125,7 @@ extend-exclude = [
     "chop-logs/**",
     "zz-chop-logs/**",
     "cursor-logs/**",
+    ".claude/agents/**",
     "assets/models/**",
     "images/*.excalidraw",
     "old_blog/**",
