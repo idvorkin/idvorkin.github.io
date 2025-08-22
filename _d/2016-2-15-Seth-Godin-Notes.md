@@ -30,7 +30,7 @@ Sources:
 ### Your Value: Execution (Cog) vs Tribe Building:
 
 - Industry/Corporations designed to survive loss of a cog. Choose folks who are best cogs.
-- Cogs by definition are replacable.
+- Cogs by definition are replaceable.
 - Two types of work: Exceptional execution vs Tribe Builders
   - Execution - best cog there is. Support a connection build.
   - Tribe builders - focus on trust and attention.
@@ -82,7 +82,7 @@ Sources:
 ### Expectations:
 
 - Questions:
-  - What industry expections are blocking your art?
+  - What industry expectations are blocking your art?
   - What expectations does your tribe have of you?
 - What makes your tribe your tribe vs What protects the industry.
   - Your tribe: expect you to swear
