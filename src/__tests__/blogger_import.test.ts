@@ -84,7 +84,7 @@ describe("Blogger Import Module", () => {
 
       // Check that it was called with the correct selectors
       expect(index.append_randomizer_div).toHaveBeenCalledWith("#random-post", expect.any(Function));
-      expect(index.append_randomizer_div).toHaveBeenCalledWith("#achievment", expect.any(Function));
+      expect(index.append_randomizer_div).toHaveBeenCalledWith("#achievement", expect.any(Function));
       expect(index.append_randomizer_div).toHaveBeenCalledWith("#random-recent", expect.any(Function));
     });
   });

@@ -29,7 +29,7 @@ We've been conditioned to think of career breaks as financial suicide, but this 
 - [Making the Gap Year Financially Viable](#making-the-gap-year-financially-viable)
 - [What Actually Happens During a Gap Year](#what-actually-happens-during-a-gap-year)
 - [The Dragons: Why We Don't Take Gap Years](#the-dragons-why-we-dont-take-gap-years)
-- [The Test: How to Know If You're Ready](#the-test-how-to-know-if-youre-ready)
+- [The Test: How to Know If You're Ready](#the-test-how-to-know-if-your-ready)
 - [Making the Decision: A Framework for the Gap Year Choice](#making-the-decision-a-framework-for-the-gap-year-choice)
 - [Is Igor Gonna take a gap year?](#is-igor-gonna-take-a-gap-year)
 - [Igor's Financial Security Dragon](#igors-financial-security-dragon)

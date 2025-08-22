@@ -6,7 +6,7 @@ tags:
 permalink: moments-at-work
 tags:
     - book-notes
-collapsable: true
+collapsible: true
 ---
 
 Of all the places we spend our time, work is the one that dominates. However, when we look back on our lives, work is often the thing we remember least. Why? Because we remember our lives through peak moments, and there are few of those, especially positive peak moments, at work. Luckily, peak moments can be created and managers can be taught how to create them. This post explores opportunities and techniques to create these moments.

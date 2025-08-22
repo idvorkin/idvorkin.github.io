@@ -4,7 +4,7 @@ title: "Humans are underrated"
 author: "Igor Dvorkin"
 comments: true
 inprogress: true
-collapsable: true
+collapsible: true
 
 tags:
   - book-notes
@@ -29,7 +29,7 @@ The top skills for humans will be:
 - Collaborating
 - Leading
 - Story telling
-- Buiding Relationships
+- Building Relationships
 
 Two assumptions need for this future. If assumptions are false, it's game over:
 

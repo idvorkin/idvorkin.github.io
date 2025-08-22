@@ -8,7 +8,7 @@ tags:
   - book-notes
 redirect_from:
   - /books
-collapsable: true
+collapsible: true
 author: "Igor Dvorkin"
 ---
 

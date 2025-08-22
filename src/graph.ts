@@ -269,7 +269,7 @@ export async function initializeGraph() {
 
   const first_expanded = window.location.hash.substr(1);
 
-  // Uncollapse any page wtih the url == eulogy
+  // Uncollapse any page with the url == eulogy
   function is_initial_expanded(node) {
     if (node.url === first_expanded) {
       return true;

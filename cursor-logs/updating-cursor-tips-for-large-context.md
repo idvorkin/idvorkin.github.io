@@ -4,7 +4,7 @@
 
 _**User**_
 
-In chop post, update cursor tips to incldue enableing large context (it's under cursor settings->features
+In chop post, update cursor tips to include enabling large context (it's under cursor settings->features
 
 ---
 

@@ -237,7 +237,7 @@ def test_parse_ns():
       <gd:image rel="http://schemas.google.com/g/2005#thumbnail" width="35" height="35" src="//www.blogger.com/img/blogger_logo_round_35.png"/>
     </author>
     <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://1.bp.blogspot.com/-rdffiY212i0/X8PK9CkhPtI/AAAAAAAE_Ng/_vNVzBgl8xo6DfwKqmvh4clPB48fSzDzACPcBGAsYHg/s72-c/IMG_0376.HEIC" height="72" width="72"/>
-    <thr:total>0</thr:total>
+    <the:total>0</the:total>
   </entry>
 </feed>
     """

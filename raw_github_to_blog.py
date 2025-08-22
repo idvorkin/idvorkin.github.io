@@ -47,7 +47,7 @@ with open(fileName, "w") as f:
 
 print(f"Done processing {fileName}")
 
-# For each markdown file, prepend the corret header
+# For each markdown file, prepend the correct header
 # fd  -e md  -exec sed -i '1s;^;---\nlayout: post\nno-render-title: true\n---\n\n_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/{})_\n\n;' {}
 # Remove the trailing md
 # fd  -e md  -exec sed -i 's;](\(notes/.*\)\.md;](\1;' {}

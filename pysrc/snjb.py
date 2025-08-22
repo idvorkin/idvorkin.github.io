@@ -45,9 +45,9 @@ def the_end() -> Passage:
 
 
 def mine_for_gold() -> Passage:
-    gold_peices = random.randint(5, 100)
-    game.gold += gold_peices
-    return [Allow_Back, f"Congrats you found {gold_peices} gold!"]
+    gold_pieces = random.randint(5, 100)
+    game.gold += gold_pieces
+    return [Allow_Back, f"Congrats you found {gold_pieces} gold!"]
 
 
 def fight() -> Passage:

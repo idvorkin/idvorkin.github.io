@@ -4,12 +4,16 @@ locale = "en-us"
 
 [default.extend-words]
 # Common tech/domain-specific terms that might be flagged
-"iterm" = "iterm"  # iTerm is a terminal application for Mac
 "iTerm" = "iTerm"  # iTerm is a terminal application for Mac
 "UE9QZ8" = "UE9QZ8"  # YouTube video ID
-"NAEuBAJhe9qdU" = "NAEuBAJhe9qdU"  # Asciinema ID  
-"mis-hire" = "mis-hire"  # Common term in hiring
+"UE" = "UE"  # Part of YouTube ID
+"NAEuBAJhe9qdU" = "NAEuBAJhe9qdU"  # Asciinema ID
+"BA" = "BA"  # Part of Asciinema ID  
 "MoFo" = "MoFo"  # Slang term used intentionally
+"Fo" = "Fo"  # Part of MoFo
+"mis-hire" = "mis-hire"  # Common term in hiring  
+"mis" = "mis"  # Part of mis-hire
+"som" = "som"  # URL redirect for Sleight of Mouth
 "oter" = "oter"  # Part of YouTube ID 002oterS2Wg
 ig = "ig"  # Your name/handle
 igor = "igor"
@@ -81,7 +85,12 @@ nvim = "nvim"
 emacs = "emacs"
 
 [files]
-# Files to ignore
+# Exclusion strategy:
+# - Binary files: images, models, compiled assets
+# - Generated files: backlinks, search index, JS bundles
+# - Historical content: old blog exports, chop logs (preserve original typos)
+# - External libraries: arbor, static assets
+# - Large data files: JSON exports
 extend-exclude = [
     "*.min.js",
     "*.min.css",

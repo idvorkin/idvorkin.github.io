@@ -4,7 +4,7 @@
 
 from typing import List
 from bs4 import BeautifulSoup
-import jsonpickle  # richer json libray
+import jsonpickle  # richer json library
 import typer
 from loguru import logger
 from attrs import define, asdict

@@ -5,7 +5,7 @@ ogtitle: "When Past Igor Meets Future Igor"
 author: "Igor Dvorkin"
 inprogress: true
 comments: true
-permalink: /time-traveller
+permalink: /time-traveler
 redirect_from:
   - /future-self
   - /future-igor

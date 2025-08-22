@@ -51,7 +51,7 @@ Comp is a completion engine, it builds lists from various sources.
 
 #### LSP - Language Server Protocol.
 
-When VS.Code became popular they factored out the language integration into a separate process. So now languge support (refactor, code understanding, find source) runs in a different process and can be high quality instead of just parsing regexp
+When VS.Code became popular they factored out the language integration into a separate process. So now language support (refactor, code understanding, find source) runs in a different process and can be high quality instead of just parsing regexp
 
 The way better way to do language integration.
 
@@ -75,9 +75,9 @@ Neovim is faster, maybe LUA is faster then VIM Script, VIM9 implemented modern f
 
 ### Lua
 
-I don't like LUA, I really don't. Luckily, I can mostly use ChatGPT to translate my code to Lua successfull.y Now that I'm over the initial hump, maybe I'll even come to terms with it's nice features.
+I don't like LUA, I really don't. Luckily, I can mostly use ChatGPT to translate my code to Lua successful.y Now that I'm over the initial hump, maybe I'll even come to terms with it's nice features.
 
-If I'm being honest though, LUA is better then vimscript, once I stop whining about LUA, I'll get used to it and find some portable stuf
+If I'm being honest though, LUA is better then vimscript, once I stop whining about LUA, I'll get used to it and find some portable stuff
 
 ### Terminal/Shell Differences
 

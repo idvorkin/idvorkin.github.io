@@ -257,13 +257,13 @@ Learning becomes a curious conversation with yourself about what you're discover
 
 ### High performance mode vs humane mode
 
-Sometiems you go from I just want to get better to I want to hyper optimze, then you need different eviews
+Sometimes you go from I just want to get better to I want to hyper optimize, then you need different eviews
 
 ## Humane Tracker Technical Architecture
 
 ### Data Model
 
-Classicly this would be a rigid data model, with rows and columns, and trending over date. But since we have LLMs we can everything in a like with links from the "unstructured data" to strucutre, which is good for other stuff.
+Classicly this would be a rigid data model, with rows and columns, and trending over date. But since we have LLMs we can everything in a like with links from the "unstructured data" to structure, which is good for other stuff.
 
 ## Thoughts to merge
 

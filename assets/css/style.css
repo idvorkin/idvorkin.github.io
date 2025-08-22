@@ -12,7 +12,7 @@
   font-size: 1.375rem;
 }
 
-/* If there are two consequetive summary links, add a line between them */
+/* If there are two consecutive summary links, add a line between them */
 
 .summary-link + .summary-link {
   margin-top: 1rem;

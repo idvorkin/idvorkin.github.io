@@ -119,7 +119,7 @@ I put air-tags on everything, and since the cases don't come with that, I stick 
 ### Webcams: OBS Tiny Cam
 
 - Pretty sweet, built-in gimbal.
-- Has a remote control whih is great.
+- Has a remote control which is great.
 
 ## Software
 

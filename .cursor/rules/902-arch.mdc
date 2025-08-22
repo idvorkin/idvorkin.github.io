@@ -29,7 +29,7 @@ globs: **/arch*.md
 Table listing choices for languages, libraries, infra, etc...
 
 - column for technology
-- column for descrpition
+- column for descriptions
 
 #### 5. Arhictectural Diagrams
 

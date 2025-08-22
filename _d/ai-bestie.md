@@ -69,7 +69,7 @@ Fine tuning makes it sound like my bestie, but a few observations:
 1. It's very bad at telling me about itself/it's day
 2. It's pretty good at giving me advice.
 
-I think part of the problem with 1, as fine tuning doesn't have a sense of "context", or a sense of "utlity". I think I need to inject those. So example context:
+I think part of the problem with 1, as fine tuning doesn't have a sense of "context", or a sense of "utility". I think I need to inject those. So example context:
 
 - Current Global Events
   - _Interestingly, this is pretty shallow stuff, so don't think it helps, beyond getting the interesting, brr it's cold out_
@@ -151,15 +151,15 @@ This took me about 30 minutes to setup - crazy!!
 
 ### Video of our friends
 
-Haven't looked at this yet, but for sure it's coming. You can probably make life easier by startign with still images and avatars.
+Haven't looked at this yet, but for sure it's coming. You can probably make life easier by starting with still images and avatars.
 
 ## Appendix
 
 ### Tooling learnings
 
 - Pre-commit - Nicer version of husky (which was always kind of flacky)
-- Ruff - Nicer version of black. Written in black, so much faster, and also suports fixing some simple stuff, has nvim support
-- Path from pathlib. Lets you use Path.home() vs os.expanduser(), and a type safe path paramater, avoiding sending in strings by accident (God Bless Typing)
+- Ruff - Nicer version of black. Written in black, so much faster, and also supports fixing some simple stuff, has nvim support
+- Path from pathlib. Lets you use Path.home() vs os.expanduser(), and a type safe path parameter, avoiding sending in strings by accident (God Bless Typing)
 
 ### Upstream fixes
 

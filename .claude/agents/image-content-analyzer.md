@@ -24,7 +24,7 @@ Operational guidelines:
 - If an image contains multiple elements, organize your description hierarchically
 - For local files: Always verify file paths exist before attempting to read
 - For web images: Download to ~/tmp first using wget or curl, then convert to WebP
-- For clipboard images: Use osascript to extract: `osascript -e 'set png_data to the clipboard as «class PNGf»' -e 'set the_file to open for access POSIX file "/tmp/clipboard_image_[timestamp].png" with write permission' -e 'write png_data to the_file' -e 'close access the_file'`, then convert to WebP
+- For clipboard images: Use osascript to extract: `osascript -e 'set png_data to the clipboard as «class ONGf»' -e 'set the_file to open for access POSIX file "/tmp/clipboard_image_[timestamp].png" with write permission' -e 'write png_data to the_file' -e 'close access the_file'`, then convert to WebP
 - Convert all images to WebP format using ImageMagick for optimal size: `convert input.png output.webp`
 - Write analysis results to ~/tmp when requested, using descriptive filenames
 - If an image is unclear or corrupted, state this clearly rather than guessing
@@ -54,7 +54,7 @@ File handling:
 - For clipboard images:
   - Save clipboard content using osascript (required for image extraction):
     ```
-    osascript -e 'set png_data to the clipboard as «class PNGf»' \
+    osascript -e 'set png_data to the clipboard as «class ONGf»' \
               -e 'set the_file to open for access POSIX file "/tmp/clipboard_image_[timestamp].png" with write permission' \
               -e 'write png_data to the_file' \
               -e 'close access the_file'
@@ -79,7 +79,7 @@ For clipboard images:
 1. User says "analyze the image in my clipboard"
 2. Save clipboard to file using osascript:
    ```bash
-   osascript -e 'set png_data to the clipboard as «class PNGf»' \
+   osascript -e 'set png_data to the clipboard as «class ONGf»' \
             -e 'set the_file to open for access POSIX file "/tmp/clipboard_raw_[timestamp].png" with write permission' \
             -e 'write png_data to the_file' \
             -e 'close access the_file'

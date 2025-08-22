@@ -110,4 +110,4 @@ I appreciate the sunrise:
 
 ### Discontinued Practices
 
-- GratTweeting (very similar to daily gratefulness journal.)
+- GreatTweeting (very similar to daily gratefulness journal.)

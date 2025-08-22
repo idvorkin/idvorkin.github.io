@@ -21,14 +21,14 @@ Finance has existed for as long as civilization. And like most things before the
     - [Compensating Risk - Interest](#compensating-risk---interest)
     - [Capitalizing an entity - Rent](#capitalizing-an-entity---rent)
     - [Insurance - Paying to redue risk](#insurance---paying-to-redue-risk)
-    - [Hedging - Derrivatives](#hedging---derrivatives)
-    - [Speculations - Derrivatives](#speculations---derrivatives)
+    - [Hedging - Derivatives](#hedging---derivatives)
+    - [Speculations - Derivatives](#speculations---derivatives)
     - [Market Makers -](#market-makers--)
     - [Auctions -](#auctions--)
-    - [Loans with collatoral -](#loans-with-collatoral--)
-    - [Loans w/o collatoral -](#loans-wo-collatoral--)
+    - [Loans with collateral -](#loans-with-collateral--)
+    - [Loans w/o collateral -](#loans-wo-collateral--)
     - [Market Makers -](#market-makers---1)
-    - [Speculations - Derrivatives](#speculations---derrivatives-1)
+    - [Speculations - Derivatives](#speculations---derivatives-1)
     - [Market Makers -](#market-makers---2)
     - [Auctions -](#auctions---1)
 - [From TradFi to DeFi](#from-tradfi-to-defi)
@@ -98,21 +98,21 @@ I spent some time thinking about finance. I'm guessig there's some truth here, b
 
 ### Insurance - Paying to redue risk
 
-### Hedging - Derrivatives
+### Hedging - Derivatives
 
-### Speculations - Derrivatives
+### Speculations - Derivatives
 
 ### Market Makers -
 
 ### Auctions -
 
-### Loans with collatoral -
+### Loans with collateral -
 
-### Loans w/o collatoral -
+### Loans w/o collateral -
 
 ### Market Makers -
 
-### Speculations - Derrivatives
+### Speculations - Derivatives
 
 ### Market Makers -
 
@@ -130,10 +130,10 @@ I spent some time thinking about finance. I'm guessig there's some truth here, b
 | Liquidity                                  | When is the market open, and who is there? | Uniswap             |
 | Compensating Risk                          | Interest                                   |                     |
 | Compensating For use of an entity          | Rent                                       | Rent                |
-| Hedging                                    | Derrivatives                               | dx/dy               |
-| Speculation                                | Derrivatives                               | dx/dy               |
+| Hedging                                    | Derivatives                               | dx/dy               |
+| Speculation                                | Derivatives                               | dx/dy               |
 | Loans w/Collatoratal                       | Mortgage                                   | BlockFi             |
-| Loans w/o Collatoral                       | Bookie; Mafia (bodily harm is collatoral)  | Flashloans ERC 3156 |
+| Loans w/o Collateral                       | Bookie; Mafia (bodily harm is collateral)  | Flashloans ERC 3156 |
 | Reducing Risk                              | Insurance                                  |                     |
 
 ## DeFi 101
@@ -207,7 +207,7 @@ https://www.trufflesuite.com/ganache
 ### Speculatave Bubble- The Tulip Bubble
 
 No one wants to miss a chance for a quick buck, and back in 1637 the quick buck was to be had by [investing in Tulips](https://en.wikipedia.org/wiki/Tulip_mania)
-\*Many individuals suddenly became rich. A golden bait hung temptingly out before the people, and, one after the other, they rushed to the tulip marts, like flies around a honey-pot. Every one imagined that the passion for tulips would last for ever, and that the wealthy from every part of the world would send to Holland, and pay whatever prices were asked for them. The riches of Europe would be concentrated on the shores of the Zuyder Zee, and poverty banished from the favoured clime of Holland. Nobles, citizens, farmers, mechanics, seamen, footmen, maidservants, even chimney sweeps and old clotheswomen, dabbled in tulips.
+\*Many individuals suddenly became rich. A golden bait hung temptingly out before the people, and, one after the other, they rushed to the tulip marts, like flies around a honey-pot. Every one imagined that the passion for tulips would last for ever, and that the wealthy from every part of the world would send to Holland, and pay whatever prices were asked for them. The riches of Europe would be concentrated on the shores of the Zuyder Zee, and poverty banished from the favored clime of Holland. Nobles, citizens, farmers, mechanics, seamen, footmen, maidservants, even chimney sweeps and old clotheswomen, dabbled in tulips.
 
 People were purchasing bulbs at higher and higher prices, intending to re-sell them for a profit. Such a scheme could not last unless someone was ultimately willing to pay such high prices and take possession of the bulbs. In February 1637, tulip traders could no longer find new buyers willing to pay increasingly inflated prices for their bulbs. As this realization set in, the demand for tulips collapsed, and prices plummeted—the speculative bubble burst. Some were left holding contracts to purchase tulips at prices now ten times greater than those on the open market, while others found themselves in possession of bulbs now worth a fraction of the price they had paid. Mackay says the Dutch devolved into distressed accusations and recriminations against others in the trade.[13]\*
 

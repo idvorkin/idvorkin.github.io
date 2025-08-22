@@ -176,7 +176,7 @@ See my [theories on joy](/joy#theory)
 
 I like lots of his stuff. Roadhouse is racy, but fantastic. Elph boots is great, and so is this poem
 
-{% include youtube.html src="002oterS2Wg" %}
+{% include youtube.html src="002otorS2Wg" %}
 
 - Carl: How do you fix it? You fix it by doing it right!
 - Carl: Stop - practice does not make perfect. It makes permanent.

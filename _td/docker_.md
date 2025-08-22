@@ -35,4 +35,4 @@ Docker has 2 values, isolation and repeatable setup. Here are my notes
 
 ### Requirements
 
-I work on my blog on multiple machines. But the software execution dependancies are hard, and can be error prone. I will try setting it up so the server and build software runs in a container, but file editing stays on my local machine.
+I work on my blog on multiple machines. But the software execution dependencies are hard, and can be error prone. I will try setting it up so the server and build software runs in a container, but file editing stays on my local machine.

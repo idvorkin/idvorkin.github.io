@@ -28,7 +28,7 @@ So there's this guy who measures his nightly erections, doesn't go out into the 
 ## Stuff i love
 
 - Sleep is sacred (note he was depressed for 10 years)
-- Doesn't drink, beause it messes with sleep. Mitigated by having wine for breakfast, but even that messed with his sleep so he stopped
+- Doesn't drink, because it messes with sleep. Mitigated by having wine for breakfast, but even that messed with his sleep so he stopped
 - "The you in the moment", can make terrible decisions and has no accountability. This begs the question, who gave them permission to run the ship and screw over others (note, this scales up to
 - Move everything from the rider to shaping the path (What he calls blue prints)
 
@@ -40,19 +40,19 @@ So there's this guy who measures his nightly erections, doesn't go out into the 
 
 ## Sleep
 
-How good a nights sleep you have is really sets the difficultly level of the next day. How could you not go all in on this.
+How good a nights sleep you have is really sets the difficulty level of the next day. How could you not go all in on this.
 
 ## Don't Die - Voices in his head
 
-He wrote a book, that is a conversation between the voices in his head. I was dissapointed he didn't name them, like [I did](/voices) :) Interesting, he has a voice named scribe, which I never thought about, but turns out I also have a scribe.
+He wrote a book, that is a conversation between the voices in his head. I was disappointed he didn't name them, like [I did](/voices) :) Interesting, he has a voice named scribe, which I never thought about, but turns out I also have a scribe.
 
 ## Who holds the reins, morning or evening Igor
 
-A core concept is there are really two Igors, the morning, who is full of discipline, and the evening one who makes terrilbe decisons. Who should have "control of the body"? I think future Igor would prefer morning Igor, but when evening Igor is in control, he's king of the world with accountability to no one.
+A core concept is there are really two Igors, the morning, who is full of discipline, and the evening one who makes terrilbe decisions. Who should have "control of the body"? I think future Igor would prefer morning Igor, but when evening Igor is in control, he's king of the world with accountability to no one.
 
 ## Why not defer control to an algorithm?
 
-Sounds scary, but we do this easily to google maps, and we no longer get lost. Honeslty, and even if it's not 'perfectly optimal on every instance', it's great on the integral. I'm not sure if I'd want to do this, but I'm not sure why not. It's not like I'm doing a great job of it myself.
+Sounds scary, but we do this easily to google maps, and we no longer get lost. Honestly, and even if it's not 'perfectly optimal on every instance', it's great on the integral. I'm not sure if I'd want to do this, but I'm not sure why not. It's not like I'm doing a great job of it myself.
 
 I also try to do this for my finances using zero index funds vs lottery tickets.
 
@@ -64,4 +64,4 @@ He is like, I want to be an inspiriation, don't feel you need to do what I do, j
 
 ## Changes he's made me implement
 
-- Re-inforce my importance of sleep.
+- Re-enforce my importance of sleep.

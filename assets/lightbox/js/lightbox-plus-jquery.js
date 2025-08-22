@@ -7228,7 +7228,7 @@ jQuery.speed = function( speed, easing, fn ) {
 		opt.queue = "fx";
 	}
 
-	// Queueing
+	// Queuing
 	opt.old = opt.complete;
 
 	opt.complete = function() {

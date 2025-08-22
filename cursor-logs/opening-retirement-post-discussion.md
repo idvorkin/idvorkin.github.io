@@ -280,7 +280,7 @@ Here are lies we tell ourselves
 - "Work" is preventing you from doing the things you love
 - You can self motivate your self
 - You won't death spiral
-- You have enough social intereaction
+- You have enough social intersection
 - You have enough meaning
 - You have enough structure
 ```
@@ -404,7 +404,7 @@ _\*\*\*\*_
   - "Work" is preventing you from doing the things you love
 - - You can self motivate your self
 - - You won't death spiral
-- - You have enough social intereaction
+- - You have enough social intersection
 - - You have enough meaning
 - - You have enough structure
 +   - Reality: Work provides structure, purpose, and social connections
@@ -481,7 +481,7 @@ I've removed the alert box and kept the clean transition between the introductio
 
 _**User**_
 
-Hymn, how about pondering AMP in this contex, and talking about AMP being the goal
+Hymn, how about pondering AMP in this context, and talking about AMP being the goal
 
 ---
 
@@ -501,7 +501,7 @@ _\*\*\*\*_
 
 _**User**_
 
-IN reitrement not 42.md
+IN retirement not 42.md
 
 ---
 
@@ -608,7 +608,7 @@ Would you like me to make any adjustments to the tone or content of the introduc
 
 _**User**_
 
-Inlcude the stuff about When we talk about retirement, we’re often focused on what we’re retiring from rather than what we’re retiring to. The real goal isn’t retirement itself - it’s achieving AMP: Autonomy, Mastery, and Purpose.
+Include the stuff about When we talk about retirement, we’re often focused on what we’re retiring from rather than what we’re retiring to. The real goal isn’t retirement itself - it’s achieving AMP: Autonomy, Mastery, and Purpose.
 
 ---
 
@@ -655,7 +655,7 @@ Would you like any adjustments to how these elements are balanced or presented?
 
 _**User**_
 
-I like it we focus on what we're escaping, with unrealistc fantasies about what we're going to do
+I like it we focus on what we're escaping, with unrealistic fantasies about what we're going to do
 
 ---
 

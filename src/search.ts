@@ -114,7 +114,7 @@ declare function algoliasearch(l: any, l2: any): any;
  * @returns InstantSearch instance
  */
 export function CreateSearch(appid, search_api_key, index_name, initial_query) {
-  // Instanciating InstantSearch.js with Algolia credentials
+  // Instantiating InstantSearch.js with Algolia credentials
   const searchClient = algoliasearch(appid, search_api_key);
   const search = instantsearch({
     searchClient: searchClient,

@@ -36,7 +36,7 @@ Organizations reflect their leaders, and I strive to model work-life balance.
 
 Work-life balance requires organizational mechanisms and care, here are some of ours.
 
-**Off the books paid time off** To encourage people to take care of themselves, we do payed time off, off the books. Some people take advantage of this naturally, but others require encouragement. For example, this year July 4th was a Wednesday, so I removed two days of capacity from everyone's sprint and told them to be 'sick' either Monday/Tuesday or Thursday/Friday. As another example, when folks do an internal transfer into my team, I encourage them to take a few weeks off to refresh and reset.
+**Off the books paid time off** To encourage people to take care of themselves, we do paid time off, off the books. Some people take advantage of this naturally, but others require encouragement. For example, this year July 4th was a Wednesday, so I removed two days of capacity from everyone's sprint and told them to be 'sick' either Monday/Tuesday or Thursday/Friday. As another example, when folks do an internal transfer into my team, I encourage them to take a few weeks off to refresh and reset.
 
 **Realistic expectations for work deliverables** To enjoy your time off work, you need to be free of anxiety. Because anxiety is the difference between expectations and reality my top priority is making sure everyone is thinking realistically. This is a huge topic, so I'd only skim the surface in a single dimension - unrealistic thoughts people have in their mind.
 

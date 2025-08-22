@@ -25,7 +25,7 @@ VIM is great at lots of things, but free form writing has a few gaps in 'line wr
 - [Markdown](#markdown)
     - [Auto Linting](#auto-linting)
     - [Table of Contents](#table-of-contents)
-    - [Quick switchting via FZF on files, tags and history](#quick-switchting-via-fzf-on-files-tags-and-history)
+    - [Quick switching via FZF on files, tags and history](#quick-switching-via-fzf-on-files-tags-and-history)
     - [Tags and tagbar while writing, better then Toc](#tags-and-tagbar-while-writing-better-then-toc)
     - [Installation](#installation)
 
@@ -61,7 +61,7 @@ Lime light fades out the background paragraphs. For me, a much more focused expe
 You can run the built in spell checker with:
 
     :spell
-    " ]s,  [s  to jump to next,prev mispelling.
+    " ]s,  [s  to jump to next,prev misspelling.
     " z= Fix word.
 
 I gotta say, I prefer the aspell checker as it's faster to replace misspellings:
@@ -80,9 +80,9 @@ Use prettier to make your markdown consistent. I execute it as a git [precommit 
 
 ### Table of Contents
 
-Use vim-markdown-toc-end and prettier gaurds as prettier messes with it. See the markdown headers. I also do a ToC sidebar on the viewer (make this page).
+Use vim-markdown-toc-end and prettier guards as prettier messes with it. See the markdown headers. I also do a ToC sidebar on the viewer (make this page).
 
-### Quick switchting via FZF on files, tags and history
+### Quick switching via FZF on files, tags and history
 
 See my .vimrc
 

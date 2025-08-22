@@ -73,7 +73,7 @@ function ProcessImports(posts: BlogPost[]) {
   //
   // Import all history
   const random_div = "#random-post";
-  const achievement_div = "#achievment";
+  const achievement_div = "#achievement";
   const random_recent = "#random-recent";
 
   append_randomizer_div(random_div, () => html_for_blogpost(random_from_list(posts)));

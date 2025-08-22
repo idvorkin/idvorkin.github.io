@@ -35,7 +35,7 @@ no-render-title: true
 <div class='alert alert-success' id="random-post">
 </div>
 
-<div class='alert alert-info' id="achievment">
+<div class='alert alert-info' id="achievement">
 </div>
 
 <!-- Show the next blog posts -->
