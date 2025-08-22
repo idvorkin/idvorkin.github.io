@@ -24,8 +24,8 @@ Physical pain is a universal experience, yet it remains one of the least underst
     - [Self Release: Massage and Foam Roller, Tennis Ball](#self-release-massage-and-foam-roller-tennis-ball)
   - [Key Concepts for Pain Management](#key-concepts-for-pain-management)
     - [Tightness is the signal/symptom it is not the problem.](#tightness-is-the-signalsymptom-it-is-not-the-problem)
-    - [Negative Feedback loop - When you're tight.](#negative-feedback-loop---when-youre-tight)
-    - [Flexiblity vs Mobility](#flexiblity-vs-mobility)
+    - [Negative Feedback loop - When you're tight.](#negative-feedback-loop---when-your-tight)
+    - [Flexibility vs Mobility](#flexibility-vs-mobility)
     - [So why do we do massage, and stretch](#so-why-do-we-do-massage-and-stretch)
   - [Special Focus: Back Pain](#special-focus-back-pain)
     - [Stuart McGill And the Big 3](#stuart-mcgill-and-the-big-3)
@@ -78,7 +78,7 @@ Physical Pain => Tightness => Signal to Focus => Instead of asing how do I loose
 
 Your body is designed to operate smoothly and symettrically. However, we can also operate with mitigations, but those are of course increasing our injury risk. So if we're tight on one side we compensate, and that puts us at higher risk of future injury
 
-#### Flexiblity vs Mobility
+#### Flexibility vs Mobility
 
 - Flexibility - How far you can move through a range of motion
 
@@ -99,7 +99,7 @@ Because while that tightness is a symptom, it's also limiting range of motion, a
 
 If you've heard of the McGill big three, that's this guy. Trivia tidbits:
 
-1. He did self experimentatin by sticking a needle into every muscle and zapping it with electricity to improve diagnosis
+1. He did self experimentation by sticking a needle into every muscle and zapping it with electricity to improve diagnosis
 1. He broke his cervical spine
 1. He is candian, and a professor of Waterloo (my Alama Matter)
 

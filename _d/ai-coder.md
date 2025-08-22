@@ -49,7 +49,7 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
   - [What matters most is testing/evals](#what-matters-most-is-testingevals)
 - [Igor's Predictions, Insights, and Mental Models](#igors-predictions-insights-and-mental-models)
   - [Artisanal Hand Crafted Commits](#artisanal-hand-crafted-commits)
-  - [Bespoke tools and optimisim](#bespoke-tools-and-optimisim)
+  - [Bespoke tools and optimism](#bespoke-tools-and-optimism)
   - [The Evolution of Junior Developers](#the-evolution-of-junior-developers)
   - [The Evolution of programming languages](#the-evolution-of-programming-languages)
   - [AI Rule Packs](#ai-rule-packs)
@@ -270,7 +270,7 @@ Worth reading the whole article but some interesting takes:
 - Read Path vs Write Path:
 
   - So, [data systems](td/data-systems#write-path-vs-read-path) went through this.... You used to cache/materialize all your data writes to a DB on the write path, and then read from the DB
-  - So, programs are like that, you take instructions, write a program, save the program and run it. This can be at different levels, interpretted, JIT, Compiled
+  - So, programs are like that, you take instructions, write a program, save the program and run it. This can be at different levels, interpreted, JIT, Compiled
   - But, what if (especially in a world where models are getting continuously better) you store the instructions, and write the code on the fly.
   - :mindblown:
 
@@ -302,7 +302,7 @@ Perhaps we're asking the wrong question. Instead of worrying if CHOP will kill t
 
    - Programming can be intrinsically rewarding. The process of solving problems, creating something from nothing, and continuously improving one's skills offers satisfaction and joy. Mastery of coding, like any craft, provides a sense of accomplishment.
    - Using VIM key combos is especially fun, like doing joystick combos in Street Fighter II - it's a fun challenge that keeps you engaged and sharpens your skills.
-   - My pleasure is coding, but I'm guessing this applies simarly to cooking, woodworking, and stampcollecting
+   - My pleasure is coding, but I'm guessing this applies similarly to cooking, woodworking, and stampcollecting
 
 2. **To Achieve Practical Goals: Shipping Products**
    - On the other hand, programming is a means to an end. It's a tool for building and shipping products, for solving real-world problems, and for getting tangible results. Efficiency and productivity are key, and AI can help streamline these processes.
@@ -520,7 +520,7 @@ Here's a recent example of this approach in action:
 
 ### How to be fast when AI is slow
 
-One you crack the interventions per hour, and that's coming more and more, your next issue is how you task swap between projects. Trying to figure out best practices here. I predict soruce control and multi windows are part of the solution
+One you crack the interventions per hour, and that's coming more and more, your next issue is how you task swap between projects. Trying to figure out best practices here. I predict source control and multi windows are part of the solution
 
 ### Interventions per hour
 
@@ -548,7 +548,7 @@ You need to figure out how to make sure your code continues to be correct over t
 
 This is of course extra challenging because the code is probabilistic and "has vibes" all over it. This is an area I'm super interested in.
 
-NOTE: Code and essentially Vibed code is very hard to keep working as it's often correct by evolution not by deliberate design. So when you make out of contex changes, stuff breaks (I had an identical experience when I worked on the windows network stack in 2003 :) )
+NOTE: Code and essentially Vibed code is very hard to keep working as it's often correct by evolution not by deliberate design. So when you make out of context changes, stuff breaks (I had an identical experience when I worked on the windows network stack in 2003 :) )
 
 {%include summarize-page.html src="/ai-testing"%}
 {%include summarize-page.html src="/testing"%}
@@ -564,7 +564,7 @@ Most of this is picked up from others (there are no unique thoughts), but here's
 - People will write code as a hobby, like wood working today.
 - I'm skeptical people will buy "Artisinal Code", but who knows, people like antiques
 
-### Bespoke tools and optimisim
+### Bespoke tools and optimism
 
 - With coding so easy, might as well make a tool just for your use case.
   - [Hand writing daily journal workflow](/process-journal#journalling-workflow-in-2025)

@@ -237,7 +237,7 @@ Great to have someone write for you.
 
 ### Reflection Coach
 
-A module to help you reflect onw hat you're thinking. Probably permeates everything.
+A module to help you reflect on what you're thinking. Probably permeates everything.
 
 ### Relationship Coach
 
@@ -281,7 +281,7 @@ This software causes two things that people really don't like 1/ Thinking you've
 
 Why people avoid it:
 
-- It feels aweful, read [on being mortal](/death)
+- It feels awful, read [on being mortal](/death)
 
 Mitigations
 

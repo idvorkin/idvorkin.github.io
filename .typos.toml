@@ -1,0 +1,129 @@
+[default]
+# Language preferences
+locale = "en-us"
+
+[default.extend-words]
+# Common tech/domain-specific terms that might be flagged
+# Old blog terms
+"realy" = "realy"  # Appears in old blog posts
+"replacable" = "replacable"  # Appears in old content
+"expections" = "expections"  # Appears in old notes
+"happend" = "happend"  # Appears in old blog export
+"finalle" = "finalle"  # Appears in old blog export
+"thi" = "thi"  # Appears in old blog export
+"iterm" = "iterm"  # iTerm is a terminal application for Mac
+"iTerm" = "iTerm"  # iTerm is a terminal application for Mac
+"UE9QZ8" = "UE9QZ8"  # YouTube video ID
+"NAEuBAJhe9qdU" = "NAEuBAJhe9qdU"  # Asciinema ID  
+"vizualization" = "vizualization"  # In JS library
+ig = "ig"  # Your name/handle
+igor = "igor"
+dvorkin = "dvorkin"
+idvorkin = "idvorkin"
+zach = "zach"
+amelia = "amelia"
+alz = "alz"  # Alzheimer's abbreviation
+psyc = "psyc"  # Psychology abbreviation
+lsat = "lsat"
+gpa = "gpa"
+toc = "toc"  # Table of contents
+lil = "lil"  # Little
+nd = "nd"  # And
+pre = "pre"  # HTML tag
+br = "br"  # HTML tag
+ul = "ul"  # HTML tag
+li = "li"  # HTML tag
+ol = "ol"  # HTML tag
+href = "href"
+async = "async"
+params = "params"
+config = "config"
+repo = "repo"
+dev = "dev"
+env = "env"
+args = "args"
+func = "func"
+utils = "utils"
+init = "init"
+vals = "vals"
+attr = "attr"
+elem = "elem"
+btn = "btn"
+nav = "nav"
+img = "img"
+src = "src"
+dest = "dest"
+dir = "dir"
+tmp = "tmp"
+db = "db"
+api = "api"
+auth = "auth"
+uuid = "uuid"
+guid = "guid"
+json = "json"
+yaml = "yaml"
+toml = "toml"
+xml = "xml"
+csv = "csv"
+pdf = "pdf"
+png = "png"
+jpg = "jpg"
+gif = "gif"
+svg = "svg"
+md = "md"
+txt = "txt"
+html = "html"
+css = "css"
+js = "js"
+ts = "ts"
+py = "py"
+rb = "rb"
+sh = "sh"
+bash = "bash"
+zsh = "zsh"
+vim = "vim"
+nvim = "nvim"
+emacs = "emacs"
+
+[files]
+# Files to ignore
+extend-exclude = [
+    "*.min.js",
+    "*.min.css",
+    "node_modules/",
+    ".git/",
+    "*.lock",
+    "package-lock.json",
+    "yarn.lock",
+    "Gemfile.lock",
+    "_site/",
+    ".jekyll-cache/",
+    "vendor/",
+    "*.jpg",
+    "*.jpeg",
+    "*.png",
+    "*.gif",
+    "*.svg",
+    "*.ico",
+    "*.webp",
+    "*.mp4",
+    "*.webm",
+    "*.mp3",
+    "*.pdf",
+    "*.zip",
+    "*.tar",
+    "*.gz",
+    "assets/js/index.js",
+    "assets/js/index.js.map",
+    "assets/lightbox/**",
+    "back-links.json",
+    "search_index.json",
+    "chop-logs/**",
+    "zz-chop-logs/**",
+    "cursor-logs/**",
+    "assets/models/**",
+    "images/*.excalidraw",
+    "old_blog/**",
+    "assets/arbor/**",
+    "static/**",
+]
