@@ -4,18 +4,13 @@ locale = "en-us"
 
 [default.extend-words]
 # Common tech/domain-specific terms that might be flagged
-# Old blog terms
-"realy" = "realy"  # Appears in old blog posts
-"replacable" = "replacable"  # Appears in old content
-"expections" = "expections"  # Appears in old notes
-"happend" = "happend"  # Appears in old blog export
-"finalle" = "finalle"  # Appears in old blog export
-"thi" = "thi"  # Appears in old blog export
 "iterm" = "iterm"  # iTerm is a terminal application for Mac
 "iTerm" = "iTerm"  # iTerm is a terminal application for Mac
 "UE9QZ8" = "UE9QZ8"  # YouTube video ID
 "NAEuBAJhe9qdU" = "NAEuBAJhe9qdU"  # Asciinema ID  
-"vizualization" = "vizualization"  # In JS library
+"mis-hire" = "mis-hire"  # Common term in hiring
+"MoFo" = "MoFo"  # Slang term used intentionally
+"oter" = "oter"  # Part of YouTube ID 002oterS2Wg
 ig = "ig"  # Your name/handle
 igor = "igor"
 dvorkin = "dvorkin"
@@ -126,4 +121,5 @@ extend-exclude = [
     "old_blog/**",
     "assets/arbor/**",
     "static/**",
+    "_ig66/ig66-export.json",
 ]

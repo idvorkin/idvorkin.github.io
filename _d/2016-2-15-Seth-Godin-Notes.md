@@ -2,7 +2,7 @@
 layout: post
 title: "Seth Godin- Ideas"
 comments: true
-collapsable: true
+collapsible: true
 inprogress: true
 tags:
   - book-notes
@@ -13,7 +13,7 @@ author: "Igor Dvorkin"
 Seth godin has many ideas that are critical in the new world. Ideas include: Choosing yourself, Tribes, The limited value of cogs, connection, and the dip.
 
 Sources:
-[Live at Carnagie Hall](https://vimeo.com/155069902)
+[Live at Carnegie Hall](https://vimeo.com/155069902)
 
 ### Choose yourself:
 
@@ -30,7 +30,7 @@ Sources:
 ### Your Value: Execution (Cog) vs Tribe Building:
 
 - Industry/Corporations designed to survive loss of a cog. Choose folks who are best cogs.
-- Cogs by definition are replacable.
+- Cogs by definition are replaceable.
 - Two types of work: Exceptional execution vs Tribe Builders
   - Execution - best cog there is. Support a connection build.
   - Tribe builders - focus on trust and attention.
@@ -74,7 +74,7 @@ Sources:
 
 - Careful how you ask for feedback/position yoruself.
 - Give me feedback on my ppt -> feedback on ppt.
-- I want to get this point accross => Don't make a ppt, do a memo!
+- I want to get this point across => Don't make a ppt, do a memo!
 - DON'T BREAK INTO JAIL.
 - DON'T START WITH SOLUTION, START WITH PROBLEM.
 - PROVIDE CONTEXT, problem statement.
@@ -82,7 +82,7 @@ Sources:
 ### Expectations:
 
 - Questions:
-  - What industry expections are blocking your art?
+  - What industry expectations are blocking your art?
   - What expectations does your tribe have of you?
 - What makes your tribe your tribe vs What protects the industry.
   - Your tribe: expect you to swear

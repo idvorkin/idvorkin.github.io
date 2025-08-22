@@ -155,7 +155,7 @@ tbd
 - **Specific enough to know what NOT to do.**
 - Intent **Strategy that is Concrete, Inspiring, Memorable and clarifies what NOT to do!**
 - Pretty Clear -> Really Clear
-  - **Pretty clear is ambigious**
+  - **Pretty clear is ambiguous**
   - **Ambiguity:** stress, confusion, frustration.
   - **Clarity:** shared purpose, motivation, collaboration.
 - Ambiguity Pattern 1: Playing Politics
@@ -209,11 +209,11 @@ tbd
   - **Let me check my calendar** Gives you time to come up with a good answer.
   - **E-mail bounce** Set a local OOF to give you the time to break through
   - **Yes, what should I deprioritize**
-    - What would you like me to deprioritize to make this a prioirty?
+    - What would you like me to deprioritize to make this a priority?
     - I want to do a good job, and I won't be able to do a job I'm proud of if I take this on.
   - **You are welcome to X, I'll do Y**: I won't write the deck, but I'm happy to give you feedback.
   - **I can't, you can try X**
-- Ackward, but eventually you get respect/admiration.
+- Awkward, but eventually you get respect/admiration.
   - See Drucker's answer to Csikszentmihalyi
 - Focus on the trade off
   - Think about what you're giving up, know this, and you'll find the courage.
@@ -271,7 +271,7 @@ The tricksters:
   - Antidote: Reverse Pilot
     - Try to stop doing it for a while, and see if anyone notices.
 - Meta: It's hard
-  - Uncommitting harder then not commiting but worth it.
+  - Uncommitting harder then not committing but worth it.
   - Feel guilt to reneg - but it's worth it.
   - Grandmother mind on this.
 
@@ -367,7 +367,7 @@ The tricksters:
   - Done is better then perfect
   - Leave state where it's much easier to start (aka. Call Susan @ 206-925-3219, as opposed to call susan)
   - Pixar: We don't actually finish our films, we ship them.
-- Start minimum viable preperation as early as you can.
+- Start minimum viable preparation as early as you can.
   - Start early and small.
   - It's not intimidating, and you can get so much done before it's urgent.
   - Seeing the progress makes it easy to take the next step.
@@ -421,7 +421,7 @@ The tricksters:
   - They'll happen, keep [grandmother mind](/compassion), and try again.
 - Living a life that matters:
   - Family most important thing in your life, everything else will fade over time.
-  - You need to stay energized with your [phyiscal](/physical-health) and [emotional](/emotional-health) health habits.
+  - You need to stay energized with your [physical](/physical-health) and [emotional](/emotional-health) health habits.
   - You have so little time -- go look at cemeteries to see how little you have.
   - Remove fear of choosing the wrong thing, just choose and move on.
   - By deciding what is most important and doing it, you'll have no regrets.
