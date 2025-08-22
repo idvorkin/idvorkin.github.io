@@ -36,7 +36,7 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
 - [Stock Concentration Risk](#stock-concentration-risk)
 - [Tracking](#tracking)
   - [Daily Expenses](#daily-expenses)
-  - [Retirment Planning](#retirment-planning)
+  - [Retirement Planning](#retirement-planning)
 - [Rates Taxes and Savings](#rates-taxes-and-savings)
   - [Marginal vs Average Tax Rate](#marginal-vs-average-tax-rate)
   - [Short vs Long term capital gains](#short-vs-long-term-capital-gains)
@@ -59,7 +59,7 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
     - [Summary](#summary)
 - [Philosophy](#philosophy)
   - [The point of money](#the-point-of-money)
-  - [Retirment Ideas](#retirment-ideas)
+  - [Retirement Ideas](#retirement-ideas)
   - [What would you do for less money?](#what-would-you-do-for-less-money)
   - [Making more vs spending more](#making-more-vs-spending-more)
   - [Does money make you happy?](#does-money-make-you-happy)
@@ -99,7 +99,7 @@ Marriage counseling. Let's be honest, a divorce can cost you half your net worth
 
 Investing in quality marriage counseling ($150-250 per session) is a bargain compared to these costs. Even an expensive counseling program at $5,000 represents just a fraction of potential divorce expenses. More importantly, counseling can help preserve not just your wealth but the relationship that matters to you.
 
-The financial return on investment for successful marriage counseling might be the highest of any financial decision you'll ever make. And unlike other financial strategies, this one likley has the highest impact on your wellbeing.
+The financial return on investment for successful marriage counseling might be the highest of any financial decision you'll ever make. And unlike other financial strategies, this one likely has the highest impact on your wellbeing.
 
 {%include summarize-page.html src="/partner-trouble"%}
 
@@ -189,7 +189,7 @@ I also pay all my credit cards and mortgages from a single account - so that's m
 
 
 
-### Retirment Planning
+### Retirement Planning
 
 Check out Boldin
 
@@ -281,7 +281,7 @@ With an ETF, you pay all capital gains when you sell, meaning you have control t
 
 With MFs they need to have a capital gains distribution annually as they re-balance the fund. This matters because you need to pay the capital gains on behalf of the mutual fund at distribution time. The capital gains might be short term depending on when the fund bought and sold individual stocks.
 
-Digging a bit deeper, it seems like there are Mutal Fund strategies to [avoid capital gains distributions](https://www.bloomberg.com/graphics/2019-vanguard-mutual-fund-tax-dodge/), but I didn't make the time to understand how effective they are. If I understand this correctly, its possible FZROX is using a similar strategy as there were [no capital gains distributions in 2020](https://www.wsj.com/market-data/quotes/mutualfund/FZROX), though there were in 2018-2019.
+Digging a bit deeper, it seems like there are Mutual Fund strategies to [avoid capital gains distributions](https://www.bloomberg.com/graphics/2019-vanguard-mutual-fund-tax-dodge/), but I didn't make the time to understand how effective they are. If I understand this correctly, its possible FZROX is using a similar strategy as there were [no capital gains distributions in 2020](https://www.wsj.com/market-data/quotes/mutualfund/FZROX), though there were in 2018-2019.
 
 It seems both ETFs and MFs need to distribute dividends, which are often taxed as income. I don't understand why they can't directly re-invest it.
 
@@ -411,10 +411,10 @@ When seeing a financial planner, they asked me - what is the point of your savin
 
 Yeah that was a mistake. Money is a tool. Use it to make your life better. Great uses are experiences with your children, investments in your health, and things that avoid a fight.
 
-### Retirment Ideas
+### Retirement Ideas
 
 - [Why don't you retire already](https://medium.com/@docjamesw/why-dont-you-fucking-retire-already-3c47a039897c) - An interesting take that you should retire as a sign of goodwill to the future generation.
-- Don't focus on retirement, focus on financial independance (FI). FI gives you freedom and comfort regardless of your job.
+- Don't focus on retirement, focus on financial independence (FI). FI gives you freedom and comfort regardless of your job.
 
 ### What would you do for less money?
 
@@ -488,7 +488,7 @@ _And what is fear of need by need itself? Is not dread of thirst when your well 
 
 Diabetes is a huge problem in this country, but for kids who grow up privileged, there is another risky disease—**financial diabetes**. Imagine spending as your blood sugar: every extravagant purchase is a sugary spike. **Insulin** as your financial discipline—a built-in sense of the value of money. Those growing up with modest means develop this natural insulin early on, learning to budget and save, keeping their financial sugar levels in check.
 
-Unfortuantely, children born into wealth often miss out on this early training, leaving them prone to wild spending binges that spike their financial sugar without the natural regulatory mechanism.
+Unfortunately, children born into wealth often miss out on this early training, leaving them prone to wild spending binges that spike their financial sugar without the natural regulatory mechanism.
 
 Over time, these unchecked spikes can lead to serious complications—a credit score crash, dwindling savings, and even a legacy of money mismanagement passed on to the next generation. Yet, unlike actual insulin-dependent diabetes, this financial condition can remain hidden as long as external cash keeps flowing, masking the underlying imbalance. In other words, while a lavish lifestyle may temporarily cover up the symptoms, the absence of a natural fiscal insulin means that when the cash flow stops, the financial consequences can be just as severe.
 
@@ -529,7 +529,7 @@ Like medical diabetes, financial diabetes leads to numerous complications if lef
 
 From [ChatGPT](https://gist.github.com/idvorkin/df0ec94f8bbadb26d99ebd54b55b6358)
 
-Absoulte
+Absolute
 
 | Year | Top 1% | Top 5% | Top 20% | Top 50% |
 | ---- | ------ | ------ | ------- | ------- |

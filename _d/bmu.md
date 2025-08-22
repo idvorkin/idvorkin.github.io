@@ -45,7 +45,7 @@ The business model canvas is a tool for understanding how a company makes money.
 ## The "you" global boxes:
 
 - Build your value, not your skills
-- Determine what key activites will support the value you provide.
+- Determine what key activities will support the value you provide.
 - Focus customers on the value you provide them, not your key activities.
 - Focus customers on their job - your job is to support them, not do the activities they 'hire you for'
 
@@ -72,7 +72,7 @@ See my [dream job](/dream-job)
 - Shipping
 - Hiring and Retaining
 
-- Abilites _(Things that are effortless)_
+- Abilities _(Things that are effortless)_
 
   - Motivating Others
   - Creative
@@ -84,7 +84,7 @@ See my [dream job](/dream-job)
   - Presenting in front of large groups
   - Being Comfortable
 
-- Skills _(Learned or Aquired Talents)_
+- Skills _(Learned or Acquired Talents)_
 
   - Rapid Prototyping
   - Leading People
@@ -126,7 +126,7 @@ More complex then it sounds, need to do this per customer segment:
 
 - How do you communicate (in person, newsletter)?
 - What is the frequency?
-- Is the goal retention or Aquisition?
+- Is the goal retention or Acquisition?
 
 ## Customer Segment Specific
 

@@ -147,7 +147,7 @@ WebSocket vs HTTP/2 + Server Side Events (SSE)
 
 - As the crow flies - lat/long search - 2d union is expensive
 - Geo Hash - Use each digit to divide space into quadrants
-- Quad Tree - Geo Divide but so leafs are 'equal sized'
+- Quad Tree - Geo Divide but so leaves are 'equal sized'
 
 ## Other posts
 

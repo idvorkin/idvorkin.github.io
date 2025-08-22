@@ -52,7 +52,7 @@ Developers love building complex technically challenging systems - makes them fe
 
 ### Picking the right level of abstraction for your business logic
 
-Today's "too low level of abstraction" is yesterday's "too high level of abstraction". E.g. assembly lanaguage, c and c# and javascript.
+Today's "too low level of abstraction" is yesterday's "too high level of abstraction". E.g. assembly language, c and c# and javascript.
 
 ### Is Fault Free possible
 
@@ -121,7 +121,7 @@ Good list [here](https://orkhanscience.medium.com/software-architecture-patterns
 
 - Layered
 - Event Driven
-- MicroKernal (Plugin Based)
+- MicroKernel (Plugin Based)
 - Micro Service (Service instead of plugin)
 - [Cloud Architecture](/td/cloud-first-applications)
 
@@ -131,7 +131,7 @@ Good list [here](https://orkhanscience.medium.com/software-architecture-patterns
 - Open Closed Principle - Classes should be open to extension but closed to modification.
 - Liskov Substitution Principle - Any instantiation of an interface should work properly
 - Interface Segregation Principle - Break up complex Interfaces
-- Dependency Inversion Principle - A class should not depend on it's implementaiton details
+- Dependency Inversion Principle - A class should not depend on it's implementation details
   - Business Logic should not have a dependency on goop/platform, but should interfaces to them.
   - Goop should implement the binding between the Business Logic Interfaces and the platform.
   - Ideally handled by a Dependency Injection (DI) system

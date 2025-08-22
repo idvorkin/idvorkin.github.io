@@ -372,7 +372,7 @@ _Cons:_
 ## Re-thinking prompts
 
 - Prompt+LLM is not the equivalent of an app running on an iPhone
-- Prompt+LLM is the equivelant of assembly language running on an CPU that can only perform operations and output
+- Prompt+LLM is the equivalent of assembly language running on an CPU that can only perform operations and output
 
 The Prompt:
 
@@ -477,4 +477,4 @@ These are my personal opinions and are not related to the opinions of my employe
 
 ### What is a prompt engineer?
 
-An interesting take - "a prompt engineer" is a word that can go the way of things like "informaiton super highway", but if you think about what it is doing is saying instructions in a way that can be understood by another. This requires understnading requirements, and articulating them to match the person to whom you are giving htem. Honestly,s ounds like a Product Manager
+An interesting take - "a prompt engineer" is a word that can go the way of things like "information super highway", but if you think about what it is doing is saying instructions in a way that can be understood by another. This requires understanding requirements, and articulating them to match the person to whom you are giving them. Honestly,s ounds like a Product Manager

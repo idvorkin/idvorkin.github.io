@@ -198,7 +198,7 @@ Talk about emotions. Label one you're feeling, or what you sense from other pers
 
 ## Friendship Prompts (Not For Work)
 
-From [berkley's building closeness](https://ggia.berkeley.edu/practice/36_questions_for_increasing_closeness#data-tab-how)
+From [berkeley's building closeness](https://ggia.berkeley.edu/practice/36_questions_for_increasing_closeness#data-tab-how)
 
 Find a time when you and your partner have at least 45 minutes free and are able to meet in person. For each set of questions, each person should answer each question, but in an alternating order, so that a different person goes first each time.
 

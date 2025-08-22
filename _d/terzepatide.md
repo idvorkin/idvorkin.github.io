@@ -8,7 +8,7 @@ tags:
 permalink: /terzepatide
 ---
 
-"You know Igor, weight loss is a solved problem" - my bestie, texted me when I complained about my pants no longer fitting. Remember - Diet dominates weight, as weight is simple arithemtic -"calories in" minus "calories out". For me, will power dominates diet, and terzepatide dominates will power when stuffing things in my mouth. I started Terzepatide in February 2024, and so far it's been great.
+"You know Igor, weight loss is a solved problem" - my bestie, texted me when I complained about my pants no longer fitting. Remember - Diet dominates weight, as weight is simple arithmetic -"calories in" minus "calories out". For me, will power dominates diet, and terzepatide dominates will power when stuffing things in my mouth. I started Terzepatide in February 2024, and so far it's been great.
 
 <!-- prettier-ignore-start -->
 
@@ -29,7 +29,7 @@ permalink: /terzepatide
 
 ## What's it like?
 
-To quote Ammon again. "It's kind of how I imagined normal people are - they eat, they enjoy the food, savoring it, and then they stop". That's exatly what it's like.
+To quote Ammon again. "It's kind of how I imagined normal people are - they eat, they enjoy the food, savoring it, and then they stop". That's exactly what it's like.
 
 Do I magically lose weight? No! There is no physics defying magic here. It's still calories in minus calories out. The magic here is your body feels full, by drastically slowing your digestion and messing with some digestive plumbing.
 
@@ -77,7 +77,7 @@ I'll convert this to a graph, and all these numbers are made up:
 
 ### Muscle loss
 
-This is a bit of a misnomer, as the same can happen when dieting hard. I think the mitigations are lots of protein, I"m probably doing 1g\*lbs/day, and exercise, I"m currenlty doing 6 days/week.
+This is a bit of a misnomer, as the same can happen when dieting hard. I think the mitigations are lots of protein, I"m probably doing 1g\*lbs/day, and exercise, I"m currently doing 6 days/week.
 
 ## FAQ
 

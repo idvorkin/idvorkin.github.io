@@ -149,7 +149,7 @@ It's something that I'm over invested in, and need to put an upper bound on to l
 ### 750 words/Gratefulness
 
 - ☑ 750 words Daily
-- ☑ Explored using GPT to summarize, absoloutely amazing.
+- ☑ Explored using GPT to summarize, absolutely amazing.
 
 ## Physical Health
 
@@ -161,7 +161,7 @@ Gym Days:
 
 ### Diet
 
-- Started exploring potatos, but not really nailed it yet.
+- Started exploring potatoes, but not really nailed it yet.
 
 ### Sleep
 

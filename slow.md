@@ -7,7 +7,7 @@ permalink: /slow
 imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-shrink-couch.webp
 ---
 
-Fight or flight, the sympathatic nervous system, gets all the attention, but it's twin sister "Rest and Digest" or the para-sympathetic nervous system is important as well. These are the two divsions of the Autonomic Nervous system, or the stuff that just without conscious control.
+Fight or flight, the sympathetic nervous system, gets all the attention, but it's twin sister "Rest and Digest" or the para-sympathetic nervous system is important as well. These are the two divisions of the Autonomic Nervous system, or the stuff that just without conscious control.
 
 <!-- prettier-ignore-start -->
 

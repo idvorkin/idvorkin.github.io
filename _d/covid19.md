@@ -20,7 +20,7 @@ Corona Virus (CV) may be the defining moment in our lives. In such times, lets r
 <!-- vim-markdown-toc-start -->
 
 - [Don't feed mind monsters, focus on the positive.](#dont-feed-mind-monsters-focus-on-the-positive)
-  - [Leave quarantine better then when you startd](#leave-quarantine-better-then-when-you-startd)
+  - [Leave quarantine better then when you started](#leave-quarantine-better-then-when-you-started)
   - [Media's incentive is scaring you](#medias-incentive-is-scaring-you)
 - [Crisis Porn](#crisis-porn)
   - [Humanity has prioritize lives over profits](#humanity-has-prioritize-lives-over-profits)
@@ -60,7 +60,7 @@ Corona Virus (CV) may be the defining moment in our lives. In such times, lets r
 
 ## Don't feed mind monsters, focus on the positive.
 
-### Leave quarantine better then when you startd
+### Leave quarantine better then when you started
 
 Hard to articulate it better then this video:
 
@@ -74,7 +74,7 @@ From James Altchur: Media companies make money scaring you. Politicians stay in 
 
 "Hold on I need to check the latest news to make sure I don't miss something."
 
-Really? Do you? Do you think the Govenor is going to call and ask your opinion? Do you think anyone cares about your opinion? Do you think you have an ability to influence the pandemic that requires you to check the news hourly, daily or maybe twice a week? I doubt it.
+Really? Do you? Do you think the Governor is going to call and ask your opinion? Do you think anyone cares about your opinion? Do you think you have an ability to influence the pandemic that requires you to check the news hourly, daily or maybe twice a week? I doubt it.
 
 A great line from aa fantastic youtube video that described much of my early behavior during the pandemic
 
@@ -113,7 +113,7 @@ Ying Ying and Le Le have been at Ocean Park since 2007 but, despite the encourag
 
 Chinese scientists, after losing patience with natural breeding, extracted sperm from Le Le and artificially inseminated Ying Ying, but this resulted in miscarriages. When the pandemic forced the closure of the park on 26 January, the 14-year-olds were halfway through the panda’s average lifespan and almost a decade past the start of sexual maturity.
 
-But, after more than two months of being alone together, the couple have recently shown signs they were in the mood for love. Local reports say Ying Ying – in her oestrogen cycle – spent more time in the water and Le Le left more scent markings around the enclosure.
+But, after more than two months of being alone together, the couple have recently shown signs they were in the mood for love. Local reports say Ying Ying – in her estrogen cycle – spent more time in the water and Le Le left more scent markings around the enclosure.
 
 On Monday morning, the pair were seen cuddling more intensely than usual and then finally did what comes naturally, much to the delight of park managers.
 
@@ -161,7 +161,7 @@ The New York prison system is making inmates create hand sanitizer - that is awe
 
 ### Stop watching the news.
 
-It's a waste of your time, and your energy. Remember no one wants your opion.
+It's a waste of your time, and your energy. Remember no one wants your option.
 
 ### Meet people for virtual coffees
 

@@ -19,7 +19,7 @@ Supply, demands and markets, oh my!
 - [Producers - Supply](#producers---supply)
 - [Markets](#markets)
 - [Policy](#policy)
-    - [Monolopy](#monolopy)
+    - [Monopoly](#monopoly)
 - [Institutions](#institutions)
     - [Market Makers (inventory)](#market-makers-inventory)
     - [Match Makers (Dating, internship matching)](#match-makers-dating-internship-matching)
@@ -39,7 +39,7 @@ Supply, demands and markets, oh my!
 
 ## Policy
 
-### Monolopy
+### Monopoly
 
 ## Institutions
 

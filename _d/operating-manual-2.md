@@ -13,7 +13,7 @@ I've learned what I like, how I want to spend my energy, and how I want to be th
 
 <!-- vim-markdown-toc-start -->
 
-- [Some philosphy and fortune cookies](#some-philosphy-and-fortune-cookies)
+- [Some philosophy and fortune cookies](#some-philosophy-and-fortune-cookies)
   - [On goals, aspiration and systems](#on-goals-aspiration-and-systems)
   - [On Rituals](#on-rituals)
   - [Anchors and Clips: Why Climbers Don’t Plummet to Their Death](#anchors-and-clips-why-climbers-dont-plummet-to-their-death)
@@ -75,7 +75,7 @@ I've learned what I like, how I want to spend my energy, and how I want to be th
 
 TODO: Split this post into How Igor Ticks, and igor
 
-## Some philosphy and fortune cookies
+## Some philosophy and fortune cookies
 
 ### On goals, aspiration and systems
 
@@ -314,7 +314,7 @@ The words you use influence how you think.
 - This is crap --> [Help me understand](/compassion)
 - How could they -> I wish to remove their suffering
 
-{%include summarize-page.html src="/som" %}
+{%include summarize-page.html src="/some" %}
 
 ## Bad Influences
 

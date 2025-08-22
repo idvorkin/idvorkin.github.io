@@ -76,7 +76,7 @@ Car's have had an incredible impact on our society, and it will be disrupted by 
 ### Human to autonomous transition
 
 - Think 2G->4G rollover.
-- First very limited availablity, low speeds
+- First very limited availability, low speeds
 - Then higher speeds, but lower area
 - Then better speeds everywhere
 - In the interim, humans close the gap.

@@ -134,6 +134,6 @@ Get the raw data from:
 - The prophet [on death](http://www.katsandogz.com/gibran/ondeath.php)
 - [Mortality Infographics](https://ourworldindata.org/births-and-deaths)
 
-## Spirtual Health
+## Spiritual Health
 
 Read a great book about a guy who found out he was gonna die in 100 days. Smart guy used to be CEO of KPMG, cool to see what he did. His advice: whatever you plan to do before you die, move it up.

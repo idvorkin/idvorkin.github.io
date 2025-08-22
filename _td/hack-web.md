@@ -36,7 +36,7 @@ Now a days javascript and HTML are the assembly language of the web (I first [sa
   - [Kindle Cloud Reader](#kindle-cloud-reader)
 - [Fly out TOC](#fly-out-toc)
   - [CSS](#css)
-  - [Javscript Reverse Engineering Fly out TOC](#javscript-reverse-engineering-fly-out-toc)
+  - [Javascript Reverse Engineering Fly out TOC](#javascript-reverse-engineering-fly-out-toc)
 - [CSS - Styling a web page low level abstraction.](#css---styling-a-web-page-low-level-abstraction)
   - [CSS selectors](#css-selectors)
 - [Bootstrap - A higher level abstraction over css.](#bootstrap---a-higher-level-abstraction-over-css)
@@ -89,7 +89,7 @@ https://developers.google.com/web/tools/chrome-devtools/shortcuts
 | C-S-I | Enter dev tools               |
 | C-S-M | Toggle Mobile Emulator        |
 | C-S-R | Hard reload (breaking cache)  |
-| C-S-P | Command Pallette (super cool) |
+| C-S-P | Command Palette (super cool) |
 
 ### Force reloading
 
@@ -100,7 +100,7 @@ Often needed for CSS -
 
 ### Capturing an object for later use
 
-Often there's a useful object, that's only available in the closure. You can always assign a refernce on window e.g.
+Often there's a useful object, that's only available in the closure. You can always assign a reference on window e.g.
 
     window.foo = foo_from_within_a_closure_found_from_debugging
 
@@ -220,15 +220,15 @@ Red Herring: Audio src doesn't appear till you click the play button:
 
 Red Herring: Search for a handy JSON blob.
 
-If you're lucky the JS downlads a data blob, you can check this by going to the network view, and searching for what you're looking for. In this case, a partial html page was downloaded, which is harder to parse then the DOM (which you can search via JQuery)
+If you're lucky the JS downloads a data blob, you can check this by going to the network view, and searching for what you're looking for. In this case, a partial html page was downloaded, which is harder to parse then the DOM (which you can search via JQuery)
 
 ### Automating todo item creation in omnifocus for web
 
 **Too painful - got into some react/redux sync model, gave up**
 
-Ominfocus doesn't supprot APIs, so we need to automate the web.
+Ominfocus doesn't support APIs, so we need to automate the web.
 
-In omnifocus, you can add a task by pressing the 'c' key, which brings up a dialog. We can "hook that", by setting a breakpoing on global keypress events.
+In omnifocus, you can add a task by pressing the 'c' key, which brings up a dialog. We can "hook that", by setting a breakpoint on global keypress events.
 
 From there, we get into a closure that has an interesting object. Copy that to global scope.
 
@@ -260,7 +260,7 @@ I found a a global logging object, I connected it to console.log to see what dev
 
 > KindleDebug.log = console.log
 
-I then spent a bunch of time try to figure out where the fragments were getting selected. It was super hard due to the anti-debuggin measures. Finally I found:
+I then spent a bunch of time try to figure out where the fragments were getting selected. It was super hard due to the anti-debugging measures. Finally I found:
 
 > loadNextPages()
 > loadFragmentsForRange()
@@ -278,7 +278,7 @@ I started by trying to create this myself, but as with most "build" vs "buy", yo
 - Foundation - called [magellon](https://get.foundation/sites/docs/magellan.html)
 - Bootstrap - called [scroll spy](https://getbootstrap.com/docs/4.4/components/scrollspy/)
 
-### Javscript Reverse Engineering Fly out TOC
+### Javascript Reverse Engineering Fly out TOC
 
 Looks like the CSS needs to have the data setup correctly. I found some javascript to do this in [hackmd](https://github.com/hackmdio/codimd/search?q=generateToc&unscoped_q=generateToc), and started putzing with it. Looks like that gets me the DOM in the form I need.
 
@@ -298,10 +298,10 @@ A full [summary](https://www.w3schools.com/cssref/css_selectors.asp), below are 
 
 When nesting selectors here are the [operators](https://techbrij.com/css-selector-adjacent-child-sibling)
 
-- space - decendant at any level
-- > - immediate decendant
-- - - Adjecent (e.g. sibling)
-- ~ - Not Adjecent (e.g. not sibling)
+- space - descendant at any level
+- > - immediate descendant
+- - - Adjacent (e.g. sibling)
+- ~ - Not Adjacent (e.g. not sibling)
 
 ## Bootstrap - A higher level abstraction over css.
 

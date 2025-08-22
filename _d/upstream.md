@@ -23,13 +23,13 @@ This is my summary of [upstream](https://www.amazon.com/Upstream-Quest-Problems-
 - [What's blocking us from operating upstream?](#whats-blocking-us-from-operating-upstream)
     - [I don't know about the problem](#i-dont-know-about-the-problem)
     - [It's not my problem](#its-not-my-problem)
-    - [I don't have the capacity to solve the problem (Tunnelling)](#i-dont-have-the-capacity-to-solve-the-problem-tunnelling)
+    - [I don't have the capacity to solve the problem (Tunneling)](#i-dont-have-the-capacity-to-solve-the-problem-tunneling)
 - [What questions do we ask to solve upstreams problems](#what-questions-do-we-ask-to-solve-upstreams-problems)
     - [How will you unite your allies](#how-will-you-unite-your-allies)
     - [How will you change the system](#how-will-you-change-the-system)
     - [Where can you find leverage](#where-can-you-find-leverage)
     - [How will you get early warning signs](#how-will-you-get-early-warning-signs)
-    - [How will you know you're successful](#how-will-you-know-youre-successful)
+    - [How will you know you're successful](#how-will-you-know-your-successful)
     - [How will you avoid doing harm](#how-will-you-avoid-doing-harm)
     - [Who will pay](#who-will-pay)
 - [Far Upstream](#far-upstream)
@@ -53,7 +53,7 @@ This is my summary of [upstream](https://www.amazon.com/Upstream-Quest-Problems-
 - car seats
 - men stand with women on abuse topic
 
-### I don't have the capacity to solve the problem (Tunnelling)
+### I don't have the capacity to solve the problem (Tunneling)
 
 - Systems need slack to operate upstream
 

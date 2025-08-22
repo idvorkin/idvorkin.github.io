@@ -152,7 +152,7 @@ Victoria's food scene is a delightful mix of traditional and modern. Here are so
 
 Must-see spots in Victoria:
 
-- Inner Harbour - Beautiful waterfront area
+- Inner Harbor - Beautiful waterfront area
 - Parliament Buildings - Especially stunning at night
 - Butchart Gardens - World-famous gardens
 - Fisherman's Wharf - Floating homes and food kiosks
@@ -182,7 +182,7 @@ The Yellow Deli is more than just a restaurant - it's an experience. You can rea
 
 ### Hotel: Hampton Inn
 
-Has a water slide, great gym, and a really "Happines" Theme
+Has a water slide, great gym, and a really "Happiness" Theme
 
 ### Waterfalls
 

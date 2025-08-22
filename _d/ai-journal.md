@@ -278,7 +278,7 @@ Today marked an interesting milestone in AI-assisted development. We asked Claud
 - Create a clean PR with "no functional changes"
 
 **What Actually Happened:**
-Claude Code did fix 772 lines of legitimate typos (critcal→critical, mechansims→mechanisms, Kubertnetes→Kubernetes, etc.), but it also made several semantic errors that were caught by Cursor's automated review bot:
+Claude Code did fix 772 lines of legitimate typos (critical→critical, mechanisms→mechanisms, Kubertnetes→Kubernetes, etc.), but it also made several semantic errors that were caught by Cursor's automated review bot:
 
 ![Cursor bot flagging satisfaction formula semantic error - showing the formula was incorrectly reversed from "What you want / what you have" to "What you have / what you want", fundamentally changing the meaning of satisfaction calculation](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250720_195813.webp)
 
@@ -350,7 +350,7 @@ I also used gpt to illustrated and partially write the updates to this blog base
 
 {%include summarize-page.html src="/mental-pain"%}
 
-- Image generation takes a while - but I love it. Agent based apps is super "human input time" effecient, but the wall time is annoying, it's easy to forget what you're trying to do context. I'm guessing we'll need toolls to help us do the "N-slow" tasks at once as it's easy to forget the damn goals
+- Image generation takes a while - but I love it. Agent based apps is super "human input time" efficient, but the wall time is annoying, it's easy to forget what you're trying to do context. I'm guessing we'll need toolls to help us do the "N-slow" tasks at once as it's easy to forget the damn goals
 
 - Creating customGPTs from a bunch of content from my old pychiatrist
 - Using chatgpt to figure out what I should/how I should pack crap in my car
@@ -411,7 +411,7 @@ cat ~/tmp/t/show.vtt | ./captions.py to-human | tee show.md
 25313
 ```
 
-- Interesting, tryign to get the chatgpt website to read the file fails, even though it fits into the context window.
+- Interesting, trying to get the chatgpt website to read the file fails, even though it fits into the context window.
   - ChatGPT:
   - I could work around this by working with the API, but for chat I prefer using UX, and its cheaper with these big files
 - Back to [google vertex](https://console.cloud.google.com/vertex-ai/studio/), which is working well at this file size
@@ -425,12 +425,12 @@ cat ~/tmp/t/show.vtt | ./captions.py to-human | tee show.md
 
 [Model Merge](https://replicate.com/lucataco/flux-dev-multi-lora?prediction=ajkd29fje9rj40chjk58gztxy8)
 
-Loras we can mege:
+Loras we can merge:
 
 - idvorkin/idvorkin-flux-lora-1
 - Merge Real and Boring - [kudzueye/Boreal](https://huggingface.co/kudzueye/Boreal) - Keyword is photo
 
-- We can also mege with just the name of the other Lora. [Me and Sue Johnanson](https://replicate.com/idvorkin/idvorkin-flux-lora-1?prediction=v7wyfv05c1rm20chjkrb7c9w9m)
+- We can also merge with just the name of the other Lora. [Me and Sue Johnanson](https://replicate.com/idvorkin/idvorkin-flux-lora-1?prediction=v7wyfv05c1rm20chjkrb7c9w9m)
 
 The model I trained:
 
@@ -469,7 +469,7 @@ See: <https://karpathy.ai/zero-to-hero.html>
 
 #### Auto code editing (via Aider) - TOO Soon
 
-OK, so, copilot tends to be just a code completion, which is pretty meh. Ideally it could do more complex changes, like find code that would be good to refactor then make those changes. [aider](https://aider.chat/) is supposed to that, but in my expereince, it just made stuff wrose and was slower then me making the cahnges myself. I guess I'll try again in a while.
+OK, so, copilot tends to be just a code completion, which is pretty meh. Ideally it could do more complex changes, like find code that would be good to refactor then make those changes. [aider](https://aider.chat/) is supposed to that, but in my experience, it just made stuff wrose and was slower then me making the changes myself. I guess I'll try again in a while.
 
 ### 2024-07-30
 
@@ -483,7 +483,7 @@ OK, so, copilot tends to be just a code completion, which is pretty meh. Ideally
 
 #### Next Gen Models
 
-Claude 3.5 Sonnet just came out. Sonnet is Anthropics Medium model. It has the same performacne envelope as GPT-4o, making me assume GPT-4o is also the medium model. What's interesting, it initially OpenAI marketted GPT-4o as a 4x faster 2x cheaper GPT-4 Large model, but honeslty I think it' sjust the medium. That means either the medium Gpt 4.5 large is coming, or it's performance envelope isn't worth it.
+Claude 3.5 Sonnet just came out. Sonnet is Anthropics Medium model. It has the same performance envelope as GPT-4o, making me assume GPT-4o is also the medium model. What's interesting, it initially OpenAI marketted GPT-4o as a 4x faster 2x cheaper GPT-4 Large model, but honestly I think it' sjust the medium. That means either the medium Gpt 4.5 large is coming, or it's performance envelope isn't worth it.
 
 Model classes: - Price/Latency/Performance
 

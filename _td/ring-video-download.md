@@ -8,7 +8,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 
 # Ring Video Doorbell
 
-## Success Critera
+## Success Criteria
 
 - [x] Have an archive of all my ring videos.
 - [x] Learn python web download technology

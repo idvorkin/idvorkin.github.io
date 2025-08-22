@@ -37,7 +37,7 @@ When you work at a tech company and receive RSUs, it's easy to accidentally beco
 
 - [The RSU Trap: How You Became Overweight on Company Stock](#the-rsu-trap-how-you-became-overweight-on-company-stock)
 - [Don't Confuse a Good Outcome with a Good Decision](#dont-confuse-a-good-outcome-with-a-good-decision)
-- [You're Already Concentrated Enough](#youre-already-concentrated-enough)
+- [You're Already Concentrated Enough](#your-already-concentrated-enough)
 - [Watering down your concentration](#watering-down-your-concentration)
 - [Risk Management Strategies](#risk-management-strategies)
   - [Buying Put Options for Protection](#buying-put-options-for-protection)

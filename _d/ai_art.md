@@ -4,7 +4,7 @@ title: "AI and art"
 permalink: /ai-art
 ---
 
-Creativity is a criticial aspect of art, and that's something which I think AI can be really good at. Some very random ideas
+Creativity is a critical aspect of art, and that's something which I think AI can be really good at. Some very random ideas
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -40,7 +40,7 @@ From Stratechary:
 
 _For most folks the sandwich workflow is very different from how people are used to working. There’s a natural worry that prompting and editing are inherently less creative and fun than generating ideas yourself, and that this will make jobs more rote and mechanical. Perhaps some of this is unavoidable, as when artisanal manufacturing gave way to mass production. The increased wealth that AI delivers to society should allow us to afford more leisure time for our creative hobbies…_
 
-This mathces a a delegation model well from a senior to a junior, in fact this is exactly the model. The senior shares an intent and gaurdrails. The junior comes back with various options and a recommentation, the junior tweaks it, and then you've got an approach
+This matches a a delegation model well from a senior to a junior, in fact this is exactly the model. The senior shares an intent and gaurdrails. The junior comes back with various options and a recommentation, the junior tweaks it, and then you've got an approach
 
 ### The value of art - inspiration
 

@@ -12,7 +12,7 @@ SQLAlchemy Docs:
 
 - http://docs.sqlalchemy.org/en/latest/orm/tutorial.html
 
-Install dependant package:
+Install dependent package:
 
     pip install sqlalchemy-redshift
 

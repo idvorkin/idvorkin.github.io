@@ -26,7 +26,7 @@ Imagine the place you do your best work. Andy Matuschak defined this, and as som
 - [By Scope](#by-scope)
   - [Individual Artifacts](#individual-artifacts)
   - [Entire corpus](#entire-corpus)
-  - [Comparing Artifcats or Corpus](#comparing-artifcats-or-corpus)
+  - [Comparing Artifacts or Corpus](#comparing-artifacts-or-corpus)
 - [Visualizations](#visualizations)
   - [Word clouds](#word-clouds)
   - [Comic illustrations](#comic-illustrations)
@@ -110,7 +110,7 @@ Check out this thing on embeddings. I think the story here needs to be embedding
 - [Analyzing all of Hacker news](https://blog.wilsonl.in/hackerverse/)
   - [Thinks Analysis](https://gist.github.com/idvorkin/0d6263706d8ca5a102242ed50b3b6047)
 
-### Comparing Artifcats or Corpus
+### Comparing Artifacts or Corpus
 
 ## Visualizations
 

@@ -66,7 +66,7 @@ Lets see if it's that add call that's slow. Must be. Then I need to debug why th
 
 ### Debugging Slow IO
 
-The issue is I/O within TMUX only goes super slow, I've added a profling tool to my [vim_python](https://github.com/idvorkin/settings/blob/49d4470ba50d177b206a7589ffdf726348d13c2d/py/vim_python.py?plain=1#L108)
+The issue is I/O within TMUX only goes super slow, I've added a profiling tool to my [vim_python](https://github.com/idvorkin/settings/blob/49d4470ba50d177b206a7589ffdf726348d13c2d/py/vim_python.py?plain=1#L108)
 
 In Tmux when it's slow:
 

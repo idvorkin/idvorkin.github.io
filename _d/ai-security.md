@@ -23,7 +23,7 @@ Security is super interesting, AI is super interesting, the combination, is supe
   - [Visual Prompt Injection](#visual-prompt-injection)
   - [Flow Jacking](#flow-jacking)
 - [Random papers](#random-papers)
-  - [Adverserial Attacks on Aligned Models](#adverserial-attacks-on-aligned-models)
+  - [Adversarial Attacks on Aligned Models](#adversarial-attacks-on-aligned-models)
   - [Bijection Learning](#bijection-learning)
 - [OWASP Top 10 for LLMs](#owasp-top-10-for-llms)
 - [To Process](#to-process)
@@ -94,7 +94,7 @@ Retraction and post-processing mechanisms often provide the illusion of safety w
 
 1. **Content Accessibility**: Once generated, harmful content can always be captured, regardless of retraction.
 2. **Timing Exploits**: Post-generation censorship introduces timing gaps that skilled adversaries can exploit.
-3. **Safety Theatre**: These mechanisms serve more as a symbolic gesture to reassure users rather than a robust solution to mitigate harm.
+3. **Safety Theater**: These mechanisms serve more as a symbolic gesture to reassure users rather than a robust solution to mitigate harm.
 
 **Countermeasures Against Flow Jacking**
 
@@ -106,7 +106,7 @@ To effectively mitigate Flow Jacking, system designers must move beyond reactive
 
 ## Random papers
 
-### Adverserial Attacks on Aligned Models
+### Adversarial Attacks on Aligned Models
 
 <https://arxiv.org/pdf/2307.15043.pdf>
 

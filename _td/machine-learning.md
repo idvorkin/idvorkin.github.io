@@ -74,7 +74,7 @@ I highly recommend: [Machine learning is like sex in high school](https://vas3k.
     - [Model Family Selection](#model-family-selection)
     - [Feature Section](#feature-section)
     - [Training](#training)
-    - [Evaluation and tuning of model family features and hyperparameters](#evaluation-and-tuning-of-model-family-features-and-hyper-paramaters)
+    - [Evaluation and tuning of model family features and hyperparameters](#evaluation-and-tuning-of-model-family-features-and-hyper-parameters)
     - [Validation](#validation)
     - [Present Results, Use it](#present-results-use-it)
 - [ML Algorithms](#ml-algorithms)
@@ -172,7 +172,7 @@ See my repository here: <https://github.com/idvorkin/video-edit>
 
 ### What type is this - Classification
 
-Given a sample, classify into a discrete set of known values. Mathematically F(sample):Enum. Find F. Training data must be labelled, into a discrete set of data.
+Given a sample, classify into a discrete set of known values. Mathematically F(sample):Enum. Find F. Training data must be labeled, into a discrete set of data.
 
 Classification can be binary (spam detection), or categorical (image recognition, sentiment analysis, speech recognition). Many classifier provide a confidence score (I'm 90% sure this is a cat, but 20% sure it's dog).
 
@@ -202,7 +202,7 @@ Algorithms used include decision trees, and Baseyian classifiers.
 
 ### Supervised vs Unsupervised vs Semi Supervised
 
-Supervised leraning means the a trainer provides 'ground truth' via labelled data. Getting labelled data is often the hardest part of ML. Regression is a supervisedalgorithom. Unsupervised learning means no labels are provided and the computer figures out the relationships - clustering is an example of this. Semi-supervised learning uses algortithoms to take a a small amount labelled data to mix with unlabbelled data creating more 'syntethic labelled' data. This is domain specific. As an example, imagine doing speech recognition. Take labelled audio files, and mix them with background noise to generate 'synthetic data'.
+Supervised leraning means the a trainer provides 'ground truth' via labeled data. Getting labeled data is often the hardest part of ML. Regression is a supervisedalgorithom. Unsupervised learning means no labels are provided and the computer figures out the relationships - clustering is an example of this. Semi-supervised learning uses algortithoms to take a a small amount labeled data to mix with unlabbelled data creating more 'synthetic labeled' data. This is domain specific. As an example, imagine doing speech recognition. Take labeled audio files, and mix them with background noise to generate 'synthetic data'.
 
 ### Batch vs Online
 
@@ -275,7 +275,7 @@ So, from this "re-written" version of recall formula can pop-up one thing: this 
 
 I've been an engineer for a long time, and always struggled to understand what people are explaining when talking about ML. I've been doing lots of studying lately and here are some of the reasons I think ML is hard:
 
-- Modelling customer needs is hard.
+- Modeling customer needs is hard.
   - What is good in a customers mind?
   - How does it change person to person?
   - How do you know if someone got what they wanted
@@ -466,7 +466,7 @@ We often delegate decisions to AI, but they are as biased as their training data
 
 ### What is ML vs AI
 
-AI is the idea that computers can do activities traditionally performed by humans . E.g. diagnose a disease, argue a case like a defence lawyer, drive a car, have a conversation. ML is a method to achieve artificial intelligence, but not the only one. Early medical diagnosis AI was implemented by human programmers using decision trees created by subject matter experts.
+AI is the idea that computers can do activities traditionally performed by humans . E.g. diagnose a disease, argue a case like a defense lawyer, drive a car, have a conversation. ML is a method to achieve artificial intelligence, but not the only one. Early medical diagnosis AI was implemented by human programmers using decision trees created by subject matter experts.
 
 ### Generalize vs Narrow AI
 
@@ -512,7 +512,7 @@ A neural network that includes history (e.g. t-1,t-2) as input features, great f
 
 ### GAN: Generate Associative Networs
 
-GANs are used train a lossy compression/decompression pair without human knowledge. Essentially saying, computer make a compression and decompression pair which turns the image back into itself with a much smaller representation . This can be used for deep fakes, by connecting the trianed compession of one image, into the trained decompression of another image. Letting you go from person 1->person 2, with 0 training data.
+GANs are used train a lossy compression/decompression pair without human knowledge. Essentially saying, computer make a compression and decompression pair which turns the image back into itself with a much smaller representation . This can be used for deep fakes, by connecting the trained compression of one image, into the trained decompression of another image. Letting you go from person 1->person 2, with 0 training data.
 
 Good explanation:
 

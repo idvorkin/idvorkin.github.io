@@ -39,5 +39,5 @@ Same query, dump the whole thing.
 
 References:
 
-- iMessage Analyis in pandas: <https://github.com/yortos/imessage-analysis>
+- iMessage Analysis in pandas: <https://github.com/yortos/imessage-analysis>
 - python example: <https://github.com/mattrajca/pymessage-lite/blob/master/imessage.py>
