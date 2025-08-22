@@ -138,7 +138,11 @@ export function AutoCompleteHitTemplate({ item, createElement }) {
  * @returns Random post with title, URL, and description
  */
 export async function get_random_post() {
+  const startTime = performance.now();
   const all_url_info = await get_link_info();
+  const loadTime = performance.now() - startTime;
+  console.log(`  📊 [get_random_post] Loaded links in ${loadTime.toFixed(0)}ms`);
+  
   //  Yuk, find a clearere way to do this
   const all_pages = Object.entries(all_url_info) // returns a list of [url, info]
     .map((e) => e[1]);
@@ -152,13 +156,48 @@ export async function get_random_post() {
 }
 
 /**
+ * Gets multiple random posts efficiently
+ * @param count Number of random posts to return
+ * @returns Array of random posts
+ */
+export async function get_random_posts_batch(count = 4) {
+  const startTime = performance.now();
+  const all_url_info = await get_link_info();
+  const loadTime = performance.now() - startTime;
+  console.log(`  📊 [get_random_posts_batch] Loaded links once in ${loadTime.toFixed(0)}ms`);
+  
+  const all_pages = Object.entries(all_url_info).map((e) => e[1]);
+  const results = [];
+  const usedIndices = new Set();
+  
+  // Get unique random posts
+  while (results.length < count && results.length < all_pages.length) {
+    const randomIndex = Math.floor(Math.random() * all_pages.length);
+    if (!usedIndices.has(randomIndex)) {
+      usedIndices.add(randomIndex);
+      const post = all_pages[randomIndex];
+      results.push({
+        title: post.title,
+        url: post.url,
+        description: post.description,
+      });
+    }
+  }
+  
+  return results;
+}
+
+/**
  * Gets recent posts from the back-links.json file
  * Returns the specified number of most recently modified posts
  * @param count Number of posts to return
  */
 export async function get_recent_posts(count = 4) {
   try {
+    const startTime = performance.now();
     const all_url_info = await get_link_info();
+    const loadTime = performance.now() - startTime;
+    console.log(`  📊 [get_recent_posts] Loaded links in ${loadTime.toFixed(0)}ms`);
 
     // Convert to array of pages for easier processing
     const pages = Object.entries(all_url_info).map(([url, metadata]) => ({
