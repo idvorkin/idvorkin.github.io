@@ -191,7 +191,7 @@ no-render-title: true
         <div class="results-section" id="random-section">
             <div class="section-header">
                 <h3>Random</h3>
-                <a href="#" onclick="loadRandomPosts(); return false;" class="action-link">Refresh ↻</a>
+                <a href="#" id="refresh-random-posts" class="action-link">Refresh ↻</a>
             </div>
             <div id="random-results">
                 <div class="result-item" style="color: #999;">Loading random posts...</div>
@@ -212,6 +212,17 @@ no-render-title: true
     const searchClient = algoliasearch(appId, apiKey);
     const index = searchClient.initIndex(indexName);
     
+    // Cache frequently used DOM elements for better performance
+    const cachedElements = {
+        featuredResults: document.getElementById('featured-results'),
+        recentResults: document.getElementById('recent-results'),
+        randomResults: document.getElementById('random-results'),
+        recentSection: document.getElementById('recent-section'),
+        randomSection: document.getElementById('random-section'),
+        searchInput: document.getElementById('search-input'),
+        refreshButton: document.getElementById('refresh-random-posts')
+    };
+    
     // Helper function to escape HTML to prevent XSS
     function escapeHtml(text) {
         const div = document.createElement('div');
@@ -222,8 +233,15 @@ no-render-title: true
     // Helper function to validate URLs
     function isValidUrl(url) {
         if (!url) return false;
+        
+        // Allow relative URLs (starting with /)
+        if (url.startsWith('/')) {
+            return true;
+        }
+        
+        // Allow well-formed absolute URLs
         try {
-            const parsed = new URL(url, window.location.origin);
+            const parsed = new URL(url);
             return parsed.protocol === 'http:' || parsed.protocol === 'https:';
         } catch {
             return false;
@@ -298,13 +316,13 @@ no-render-title: true
                 hitsPerPage: 3,
                 filters: 'NOT tags:family-journal'
             });
-            document.getElementById('featured-results').innerHTML = 
+            cachedElements.featuredResults.innerHTML = 
                 hits.map(renderResultItem).join('');
             const loadTime = performance.now() - startTime;
             console.log(`✅ [Featured] Loaded in ${loadTime.toFixed(0)}ms`);
         } catch (error) {
             console.error('❌ [Featured] Error:', error);
-            document.getElementById('featured-results').innerHTML = 
+            cachedElements.featuredResults.innerHTML = 
                 '<div class="result-item">Failed to load featured posts</div>';
         }
     }
@@ -317,12 +335,12 @@ no-render-title: true
         try {
             const recentPosts = await get_recent_posts(4);
             const html = recentPosts.map(renderBasicItem).join('');
-            document.getElementById('recent-results').innerHTML = html;
+            cachedElements.recentResults.innerHTML = html;
             const loadTime = performance.now() - startTime;
             console.log(`✅ [Recent] Loaded in ${loadTime.toFixed(0)}ms`);
         } catch (error) {
             console.error('❌ [Recent] Error:', error);
-            document.getElementById('recent-results').innerHTML = 
+            cachedElements.recentResults.innerHTML = 
                 '<div class="result-item">Failed to load recent posts</div>';
         }
     }
@@ -336,18 +354,36 @@ no-render-title: true
             // Use optimized batch function instead of multiple calls
             const randomPosts = await get_random_posts_batch(4);
             const html = randomPosts.map(renderBasicItem).join('');
-            document.getElementById('random-results').innerHTML = html;
+            cachedElements.randomResults.innerHTML = html;
             const loadTime = performance.now() - startTime;
             console.log(`✅ [Random] Loaded in ${loadTime.toFixed(0)}ms`);
         } catch (error) {
             console.error('❌ [Random] Error:', error);
-            document.getElementById('random-results').innerHTML = 
+            cachedElements.randomResults.innerHTML = 
                 '<div class="result-item">Failed to load random posts</div>';
         }
     }
     
-    // Make loadRandomPosts available globally for the onclick handler
-    window.loadRandomPosts = loadRandomPosts;
+    // Add event listener for refresh random posts button
+    const refreshButton = cachedElements.refreshButton;
+    if (refreshButton) {
+        refreshButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            loadRandomPosts();
+        });
+    }
+    
+    // Add global click handler for data-url elements (safer than onclick)
+    document.addEventListener('click', function(e) {
+        const target = e.target.closest('[data-url]');
+        if (target && target.dataset.url) {
+            const url = target.dataset.url;
+            // Additional URL validation before navigation
+            if (url && (url.startsWith('/') || url.startsWith('http'))) {
+                window.location = url;
+            }
+        }
+    });
     
     // Load initial content with lazy loading
     async function loadInitialContent() {
@@ -369,8 +405,8 @@ no-render-title: true
             document.querySelector('#featured-section .section-header h3').textContent = 'Featured';
             
             // Show all sections with their action links
-            document.getElementById('recent-section').style.display = 'block';
-            document.getElementById('random-section').style.display = 'block';
+            cachedElements.recentSection.style.display = 'block';
+            cachedElements.randomSection.style.display = 'block';
             document.querySelector('#recent-section .action-link').style.display = 'inline';
             document.querySelector('#random-section .action-link').style.display = 'inline';
             
@@ -390,8 +426,8 @@ no-render-title: true
         }
         
         // Hide recent and random sections when searching
-        document.getElementById('recent-section').style.display = 'none';
-        document.getElementById('random-section').style.display = 'none';
+        cachedElements.recentSection.style.display = 'none';
+        cachedElements.randomSection.style.display = 'none';
         
         // Update featured section title for search results
         document.querySelector('#featured-section .section-header h3').textContent = 'Search Results';
@@ -407,22 +443,23 @@ no-render-title: true
             });
             
             if (hits.length === 0) {
-                document.getElementById('featured-results').innerHTML = 
+                cachedElements.featuredResults.innerHTML = 
                     '<div class="result-item">No results found. Try different keywords.</div>';
             } else {
-                document.getElementById('featured-results').innerHTML = 
+                cachedElements.featuredResults.innerHTML = 
                     hits.map(renderResultItem).join('');
             }
         } catch (error) {
             console.error('Search error:', error);
-            document.getElementById('featured-results').innerHTML = 
+            cachedElements.featuredResults.innerHTML = 
                 `<div class="result-item">Error performing search. <a href="#" onclick="performSearch('${query.replace(/'/g, "\\'")}')">Try again</a></div>`;
         }
     }
     
     // Set up search input handler with debouncing and error handling
     let searchTimeout;
-    const searchInput = document.getElementById('search-input');
+    let intersectionObserver; // Store observer reference for cleanup
+    const searchInput = cachedElements.searchInput;
     if (searchInput) {
         searchInput.addEventListener('input', (e) => {
             clearTimeout(searchTimeout);
@@ -431,7 +468,7 @@ no-render-title: true
                     performSearch(e.target.value);
                 } catch (error) {
                     console.error('❌ Search input error:', error);
-                    document.getElementById('featured-results').innerHTML = 
+                    cachedElements.featuredResults.innerHTML = 
                         '<div class="result-item">Search error. Please refresh the page.</div>';
                 }
             }, 300);
@@ -455,7 +492,7 @@ no-render-title: true
             'random-section': loadRandomPosts
         };
         
-        const observer = new IntersectionObserver((entries) => {
+        intersectionObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const sectionId = entry.target.id;
@@ -473,7 +510,7 @@ no-render-title: true
         Object.keys(sectionLoaders).forEach(sectionId => {
             const element = document.getElementById(sectionId);
             if (element) {
-                observer.observe(element);
+                intersectionObserver.observe(element);
                 console.log(`👁️ [Observer] Watching ${sectionId}`);
             }
         });
@@ -496,9 +533,8 @@ no-render-title: true
             loadInitialContent();
         }
         
-        const searchInput = document.getElementById('search-input');
-        if (searchInput) {
-            searchInput.focus();
+        if (cachedElements.searchInput) {
+            cachedElements.searchInput.focus();
         }
         
         // Log total time when everything is likely loaded
@@ -507,4 +543,25 @@ no-render-title: true
             console.log(`🏁 [Page] Total initial load time: ${totalTime.toFixed(0)}ms`);
         }, 2000);
     });
+    
+    // Cleanup function to prevent memory leaks
+    function cleanup() {
+        console.log('🧹 [Cleanup] Cleaning up resources...');
+        
+        // Clear any pending search timeout
+        if (searchTimeout) {
+            clearTimeout(searchTimeout);
+            searchTimeout = null;
+        }
+        
+        // Disconnect intersection observer
+        if (intersectionObserver) {
+            intersectionObserver.disconnect();
+            intersectionObserver = null;
+        }
+    }
+    
+    // Add cleanup listeners
+    window.addEventListener('beforeunload', cleanup);
+    window.addEventListener('pagehide', cleanup);
 </script>
