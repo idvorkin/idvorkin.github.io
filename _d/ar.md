@@ -18,7 +18,7 @@ My notes on AR
 - [Concepts](#concepts)
     - [AR vs VR vs MR vs IRL](#ar-vs-vr-vs-mr-vs-irl)
     - [AR Cloud](#ar-cloud)
-    - [SLAM - Simultanious Location and Mapping](#slam---simultanious-location-and-mapping)
+    - [SLAM - Simultaneous Location and Mapping](#slam---simultaneous-location-and-mapping)
     - [IMU - Inertial Measurement Unit](#imu---inertial-measurement-unit)
     - [VIO - Visual Inertial Odometry](#vio---visual-inertial-odometry)
     - [6 Dimensions X,Y,Z, Yaw, Pitch, Roll](#6-dimensions-xyz-yaw-pitch-roll)
@@ -34,7 +34,7 @@ My notes on AR
     - [iPad Pro 2020 Depth Sensors](#ipad-pro-2020-depth-sensors)
 - [Video call use cases](#video-call-use-cases)
     - [Virtual Backgrounds](#virtual-backgrounds)
-    - [Rabit Ears](#rabit-ears)
+    - [Rabbit Ears](#rabbit-ears)
     - [AR Stickers](#ar-stickers)
 - [Monetization](#monetization)
     - [Snapchat Event lenses - Geo Fence Lense](#snapchat-event-lenses---geo-fence-lense)
@@ -58,13 +58,13 @@ My notes on AR
 
 ## Concepts
 
-VAS3K, as usual, has an awesome post on [AR](https://vas3k.com/blog/augmented_reality/).
+WAS3K, as usual, has an awesome post on [AR](https://vas3k.com/blog/augmented_reality/).
 
 ### AR vs VR vs MR vs IRL
 
 ### AR Cloud
 
-### SLAM - Simultanious Location and Mapping
+### SLAM - Simultaneous Location and Mapping
 
 Location and Mapping
 
@@ -74,7 +74,7 @@ Where you are with a combo gyroscope and acceleromater
 
 ### VIO - Visual Inertial Odometry
 
-Figuring out where you by combo vison and intertial sensores
+Figuring out where you by combo vison and inertial sensors
 
 ### 6 Dimensions X,Y,Z, Yaw, Pitch, Roll
 
@@ -110,7 +110,7 @@ Google vs Apple.
 
 ### Virtual Backgrounds
 
-### Rabit Ears
+### Rabbit Ears
 
 ### AR Stickers
 
@@ -150,7 +150,7 @@ _If you assume any rate of improvement at all then games will become indistingui
 
 ### Why is IRL better then VR
 
-I think the big philosiphical question, especailly for AR, is why be IRL? After all, IRL is just nicer.
+I think the big philosophical question, especially for AR, is why be IRL? After all, IRL is just nicer.
 
 ## Tactile Hardware
 

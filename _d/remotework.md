@@ -63,9 +63,9 @@ In March 2020, the world shut down from Covid-19. In May 2020, I started a new j
 
 ### One head per box(screen)
 
-Video calls are optimized for one her per box. E.g. every person has their own camera. This breaks down when you have one camera for 10 people in a conference room. When there are many people in a room, but someone is remote, it's really hard for them to undersatnd what is happneing in the room, especially when they're talking.
+Video calls are optimized for one her per box. E.g. every person has their own camera. This breaks down when you have one camera for 10 people in a conference room. When there are many people in a room, but someone is remote, it's really hard for them to understands what is happneing in the room, especially when they're talking.
 
-Ideally you setup one head per box, whever everyone joins on their laptop (camera on, microphone off), at least then you can see who is talking, even if they're not looking directly into their screen.
+Ideally you setup one head per box, wherever everyone joins on their laptop (camera on, microphone off), at least then you can see who is talking, even if they're not looking directly into their screen.
 
 ### Whiteboards
 
@@ -79,7 +79,7 @@ While not as good as a whiteboard, opening a collaborative document ala google d
 
 ## Sync vs Async, Real Time vs Delayed
 
-Sync is convenient as it's real time and has maximum bandwith, and attention.
+Sync is convenient as it's real time and has maximum bandwidth, and attention.
 
 Real time async usually has more time slicing which is bad. It also ruins a lot of the value of async
 

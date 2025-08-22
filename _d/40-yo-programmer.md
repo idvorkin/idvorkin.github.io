@@ -76,7 +76,7 @@ While I haven't seen age discrimination due to age, I've seen some attributes th
 
 ## Declines and Growth as you cross 50
 
-[From Strength to strength] is a book that starts off explaining what gets better and what gets worse as we move into the 50s. I'll likley merge that section there.
+[From Strength to strength] is a book that starts off explaining what gets better and what gets worse as we move into the 50s. I'll likely merge that section there.
 
 {%include summarize-page.html src="/elder" %}
 

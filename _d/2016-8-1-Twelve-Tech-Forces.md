@@ -4,7 +4,7 @@ title: "12 Tech forces that will shape our future"
 author: "Igor Dvorkin"
 comments: true
 inprogress: true
-collapsable: true
+collapsible: true
 
 tags:
   - book-notes
@@ -141,7 +141,7 @@ The digital revolution has gone through 3 changes: the copy of the industrial ag
 - Modern system:
   - Users do most of the work - craigs list, e-bay, youtube, facebook - platforms fasicilate but create no content.
   - Amazon's big value is reviews.
-- Content Manufactoring
+- Content Manufacturing
   - High value content is NOT created by commercial entities (or classic commercial entities)
 - Web in 2050, not a better web, no more then Web 2.0 is a better TV.
 - WEB TODAY:
@@ -161,7 +161,7 @@ The digital revolution has gone through 3 changes: the copy of the industrial ag
 
 ### Flowing - From noun to verb
 
-- Copyable products are the most valueable products - and that's a good thing.
+- Copyable products are the most valuable products - and that's a good thing.
 - Old 'solids' are being maluable (??)
   - Durable goods as a Service/On Demand
     - Cars - Lyft/Uber
@@ -185,7 +185,7 @@ The digital revolution has gone through 3 changes: the copy of the industrial ag
 - The Book - Uptil we got screens
 
   - Copy Tech: Cheap mass copies of words on paper
-  - Top Skills: Precision (ink on paper), Linear Logic (sentances), objectivity (printed fact), authoriity (fixed in a book).
+  - Top Skills: Precision (ink on paper), Linear Logic (sentences), objectivity (printed fact), authoriity (fixed in a book).
   - Societal Impacts - 50K - 1M english words. Culture of experts. Roots are the written document (lawg
   - Truth: What is written down by the authority.
   - Solve problems by applying laws ( Process)
@@ -202,7 +202,7 @@ The digital revolution has gone through 3 changes: the copy of the industrial ag
 - Make their own content, and their own truth
 - Fast - constant 30 second snippets, liquid - like a walk through wikipedia
 - Not about words - but about pictures/videos/infographics
-- WORDS are replaced by the power of coded tools + user genearted content. [ Power here, but not yet grocked ]
+- WORDS are replaced by the power of coded tools + user generated content. [ Power here, but not yet grocked ]
 
 ### Will screens make us stupid?
 

@@ -53,7 +53,7 @@ If you have a free day, a car, and a desire to do something amazing outside
 ### Restaurants
 
 1. Palace Kitchen (Amazing Burgers)
-2. Tai Tung (Good Chinese)
+2. Tai Tongue (Good Chinese)
 3. Beth's (Giant Breakfast)
 4. Cafe Flora (Vegetarian)
 5. Tanoor (Middle Eastern) - Best Meat

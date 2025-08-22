@@ -10,7 +10,7 @@ redirect-from:
   - /weight
 ---
 
-Diet dominates weight, as weight is simple arithemtic -"calories in" minus "calories out". Weight is essential because it reduces the effort required to do physical activities, and because it reduces the risk of many diseases. [Exercise, while critical to energy](/exercise), is mostly a red herring for weight loss. A great way to see this is comparing what you eat to physical Activity. A side of fries adds 500 calories to your day, but running for 30 minutes only burns 300 calories.
+Diet dominates weight, as weight is simple arithmetic -"calories in" minus "calories out". Weight is essential because it reduces the effort required to do physical activities, and because it reduces the risk of many diseases. [Exercise, while critical to energy](/exercise), is mostly a red herring for weight loss. A great way to see this is comparing what you eat to physical Activity. A side of fries adds 500 calories to your day, but running for 30 minutes only burns 300 calories.
 
 <!-- prettier-ignore-start -->
 
@@ -40,7 +40,7 @@ Diet dominates weight, as weight is simple arithemtic -"calories in" minus "calo
 
 ## My journey
 
-Maintaing a healthy weight has always been a challenge for me. I was obese as a kid, and at multiple times my weight has crept up to 230 lbs, and with incredible diligence it had once dropped to a 150 lbs.
+Maintaining a healthy weight has always been a challenge for me. I was obese as a kid, and at multiple times my weight has crept up to 230 lbs, and with incredible diligence it had once dropped to a 150 lbs.
 
 ### Mating weight
 

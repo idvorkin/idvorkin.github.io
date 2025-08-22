@@ -4,7 +4,7 @@ title: Quality
 author: "Igor Dvorkin"
 comments: true
 inprogress: true
-collapsable: true
+collapsible: true
 ---
 
 ### The original Kenedy speech
@@ -15,7 +15,7 @@ There is no strife, no prejudice, no national conflict in outer space as yet. It
 
 We choose to go to the Moon. We choose to go to the Moon...We choose to go to the Moon in this decade and do the other things, not because they are easy, but because they are hard; because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one we intend to win, and the others, too.
 
-### Quote on Quailty
+### Quote on Quality
 
 Spaceflight will never tolerate carelessness, incapacity, and neglect. Somewhere, somehow, we screwed up. It could have been in design, build, or test. Whatever it was, we should have caught it. We were too gung ho about the schedule and we locked out all of the problems we saw each day in our work.
 
@@ -27,4 +27,4 @@ Spaceflight will never tolerate carelessness, incapacity, and neglect. Somewhere
 
 --
 
-No flight controller died falling out of his chair. We will not chagne the program
+No flight controller died falling out of his chair. We will not change the program

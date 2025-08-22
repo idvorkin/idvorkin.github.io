@@ -6,7 +6,7 @@ tags:
   - book-notes
   - emotional intelligence
 redirect_from:
-  - som
+  - some
 ---
 
 Language, often unknown to us, creates our mental models, our reality, and defines our meaning. But the model is not the terrain, and by engaging with the language we can change mental models. Sleight of mouth (SoM) is a series of techniques for changing our models, reality and meanings and thus our experiences. Our mental models are a frame, and we need help going from a 'problem frame' to a 'desired outcome frame' , a 'failure frame', to a 'feedback frame' and an 'impossible frame ' to an 'as if' frame. To experience the power of language, find anything that is invisible to you, and name it. Now as you've given it a name, see how you perceive it, and become aware of it.

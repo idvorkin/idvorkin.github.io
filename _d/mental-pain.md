@@ -156,7 +156,7 @@ But here's a short version:
 
 - **Don't take a step forward and a step backward** - Like dieting for half a day then binging the other half. Either commit to the day or don't. If you study, write down your notes. "Just thinking about it" without completion is pure waste.
 
-Amazingly, and regardless of how often you experience the, resistance prevents you from remebering it --
+Amazingly, and regardless of how often you experience the, resistance prevents you from remembering it --
 
 **Once you take action, you transform pointless suffering into purposeful pain that actually leads somewhere.**
 
@@ -257,7 +257,7 @@ This second layer is **always optional** and **always unhelpful**. It's a **self
 - "Others have it so much easier"
 - "The universe is against me"
 
-**The faireness fallacy** Life never promised you fairness. Fairness is a human concept that doesn't apply to natural processes. Rain doesn't "unfairly" ruin your picnic - it's just rain.
+**The fairness fallacy** Life never promised you fairness. Fairness is a human concept that doesn't apply to natural processes. Rain doesn't "unfairly" ruin your picnic - it's just rain.
 
 When folks spiral into a black hole of misery it can be very challenging to escape
 

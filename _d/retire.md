@@ -30,7 +30,7 @@ Let's explore retirement holistically - beyond the spreadsheets and financial ca
 - [The Great Fallacy: Work Isn't Your Prison](#the-great-fallacy-work-isnt-your-prison)
 - [The Map: Navigating by Autonomy, Mastery & Purpose](#the-map-navigating-by-autonomy-mastery--purpose)
 - [The Side Quests: Starting Adventures Before The End Game](#the-side-quests-starting-adventures-before-the-end-game)
-- [The Journey: Embracing Life's Next Phase](#the-journey-embracing-lifes-next-phase)
+- [The Journey: Embracing Life's Next Phase](#the-journey-embracing-lives-next-phase)
 - [The Hero: Crafting Your Post-Work Identity](#the-hero-crafting-your-post-work-identity)
 - [The Treasure: When F-You Money Sets You Free](#the-treasure-when-f-you-money-sets-you-free)
 - [The Health Bar: No Extra Lives in This Game](#the-health-bar-no-extra-lives-in-this-game)

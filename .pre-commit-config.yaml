@@ -40,6 +40,14 @@ repos:
         name: Dasel YAML/JSON Validator
         files: \.(json|yaml|yml)$
 
+  # ✍️ Typos: Spell checking for code and prose
+  - repo: https://github.com/crate-ci/typos
+    rev: v1.28.4
+    hooks:
+      - id: typos
+        name: Check for typos
+        exclude: "^(chop-logs|zz-chop-logs|cursor-logs|back-links.json|assets/models|images/.*\\.excalidraw|old_blog|assets/arbor|static)/.*$"
+
   # 🧪 Local fast tests
   - repo: local
     hooks:

@@ -293,7 +293,7 @@ Things to do:
 
 ## Top Learnings
 
-- I started off with daily walks with folks, and doing stuff with kids. Honeslty I didn't do enough for myself and was getting stir crazy
+- I started off with daily walks with folks, and doing stuff with kids. Honestly I didn't do enough for myself and was getting stir crazy
 
 ## Relationships
 
@@ -343,7 +343,7 @@ Things to do:
 - ☐ Build more affirmation videos
   - ☑ First one: Do it anyways
   - ☐ Essentialist - TBD
-  - ☐ Class Act - Show photos of stuff I've posted, and cool responsed with images
+  - ☐ Class Act - Show photos of stuff I've posted, and cool responses with images
   - ☐ Calm like water - Me in half lotus
 
 ## Tech Guru (X/5)
@@ -351,7 +351,7 @@ Things to do:
 ### Enabling Environment
 
 - Figure out how to use more AI.
-- ☐ Figure out using voice more with super wisper.
+- ☐ Figure out using voice more with super whisper.
 
 ### AI Coding
 
@@ -425,7 +425,7 @@ Gym Days: -
 - Be happy throwing away junk food - nothing wrong with that.
 - Success Stories:
   - I split some meals with Tori.
-  - I got vegtables at the
+  - I got vegetables at the
 
 ### Sleep
 
@@ -439,7 +439,7 @@ Gym Days: -
 - GROAN: I just tore open my callous right before. Lets see what i can do.
 - Focus on hip and back mobility
 - Bring 28KG KB in the car, and 20/25 lbs heavy club. Lets see how it goes
-- Workign on Pistols and pullups easy at the park.
+- Working on Pistols and pullups easy at the park.
 - Kettleback rack 1 sided squats feel good, and don't need to flip into the goblet position
 - Got 5lbs indian clubs - super heavy
 
@@ -479,4 +479,4 @@ Gym Days: -
 - ☐ Try Electrify America
 - ☐ Get Un grounded NC-30 needs to plug into house ground too (so weird)
 - ☑ Figure out sleeping bag setup
-- ☑ Fix chips in Tony's windsheild
+- ☑ Fix chips in Tony's windshield

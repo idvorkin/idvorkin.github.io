@@ -511,7 +511,7 @@ When tamed, the Entropy Dragon becomes your personal trainer, forcing you to act
 >
 > **Dragon:** "Exactly. They'll see you as someone who quit when things got hard. A cautionary tale about giving up."
 >
-> **Me:** "Yes, and... there's another lens: I'm role-modelling that life isn't just about grinding until you die. I'm showing them how to invest in health before crisis, relationships before regret, and mastery for its own sake."
+> **Me:** "Yes, and... there's another lens: I'm role-modeling that life isn't just about grinding until you die. I'm showing them how to invest in health before crisis, relationships before regret, and mastery for its own sake."
 >
 > **Dragon:** "But what will you have to show for it? No promotions, no launches, no metrics..."
 >

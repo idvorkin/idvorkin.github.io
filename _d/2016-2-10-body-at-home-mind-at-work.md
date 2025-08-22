@@ -23,7 +23,7 @@ Thus, I'm working hard to reduce symptoms of the disease -- in fact, I'm incredi
 
 Future posts will document my journey, and the [activities](/emotional-health) that support this.
 
-### It's not always concious, sometimes it's just phychic weight
+### It's not always conscious, sometimes it's just phychic weight
 
 Sometimes when you find life less fun and you can't tell why it might be body at home, mind at work, subconcious edition
 

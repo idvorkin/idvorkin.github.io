@@ -142,7 +142,7 @@ Good spells get stronger with practice. The neural pathway from shadow-recogniti
 
 ### Financial Shadows
 
-These shadows whisper about scarcity, loss, and financial ruin. They love to catastrophize market conditions and imagine worst-case scenarios.
+These shadows whisper about scarcity, loss, and financial ruin. They love to catastrophe market conditions and imagine worst-case scenarios.
 
 **Common patterns**:
 

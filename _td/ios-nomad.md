@@ -156,7 +156,7 @@ The main complexity with hybrid development is keeping everything in sync. To do
 
 <https://github.com/idvorkin/Settings/blob/master/shared/cron_git_sync.sh>
 
-The two gaps here are merge conflicts (which I handle manually), and not syncing on my iPad, which is tricky because I haven't found a way to do a periodic timer to arbitray command execution yet (TK: Holler if you have a good way to do this)
+The two gaps here are merge conflicts (which I handle manually), and not syncing on my iPad, which is tricky because I haven't found a way to do a periodic timer to arbitrary command execution yet (TK: Holler if you have a good way to do this)
 
 ### The external keyboard
 

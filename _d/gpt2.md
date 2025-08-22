@@ -163,7 +163,7 @@ Even cooler, when I added this demo to the blog, here's the commit message it re
     potential applications of GPT in areas like software engineering, where it can help with automating
     and speeding up tedious tasks. The source code for this demo is included in the _d/gpt2.md document.
 
-Source code to make commit messsages [here](https://github.com/idvorkin/nlp/blob/a2ba4b96a57d5bbc0274d537d8976a66fce4566d/gpt3.py#L235).
+Source code to make commit messages [here](https://github.com/idvorkin/nlp/blob/a2ba4b96a57d5bbc0274d537d8976a66fce4566d/gpt3.py#L235).
 
 ### Creating poems out of journal entries
 

@@ -53,7 +53,7 @@ If you could have one superpower, what would it be? At 46, you'd think I'd have 
   - [Put on a kids birthday party](#put-on-a-kids-birthday-party)
 - [Crazy Dream Projects](#crazy-dream-projects)
   - [Become an executive producer for shows](#become-an-executive-producer-for-shows)
-  - [Own a vaudiville theatre](#own-a-vaudiville-theatre)
+  - [Own a vaudiville theater](#own-a-vaudiville-theater)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -120,7 +120,7 @@ My early [ballooning](/ig66/621) adventures:
 - I discovered these you are awesome cards on TEMU (add picture) they are great!
 - I wanted to push pocket them, but I can hand them out upside down and people just take them
   - Zach observed the way I give them to people is I put it into their hand and say "Here you go", and they are stunned and take it. That didnt' work on a cop, he stepped away.
-- Usually by the time people read it I'm gone, but sometimes if I give them to someoen in a lobby they'll catch me on the way out and be like, hey thank you so much
+- Usually by the time people read it I'm gone, but sometimes if I give them to someone in a lobby they'll catch me on the way out and be like, hey thank you so much
 
 * Also considering printing on the back of business cards,
   ![Collection of business card-sized inspirational cards spread on a green surface, featuring positive messages like "YOU'RE AWESOME" with colorful text and rainbow graphics, packaged for distribution](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250505_065941.webp)
@@ -170,7 +170,7 @@ TODO Use Lens of Self/Other/Process
 
 ### Build rapport to make people feel safe
 
-Check out the [the like switch](/like-switch) to see how an FBI agent builds rapport and makes peope feel safe.
+Check out the [the like switch](/like-switch) to see how an FBI agent builds rapport and makes people feel safe.
 
 Also look at notes from Avner class - who was all about building rapport with a stage audience
 
@@ -304,8 +304,8 @@ Who knows, maybe one day I'll actually get around to doing these.
 
 ### Become an executive producer for shows
 
-### Own a vaudiville theatre
+### Own a vaudiville theater
 
-Humoursly, I always said this, and one day when I was at the olymics of magic (FISM 2022), I went to talk titled: So you want to own a magic, theatre - you're probalby wrong. Snapped me out it.
+Humoursly, I always said this, and one day when I was at the olymics of magic (FISM 2022), I went to talk titled: So you want to own a magic, theater - you're probably wrong. Snapped me out it.
 
 Luckily Tori works in the arts, and I can say I'm a patron of the arts instead

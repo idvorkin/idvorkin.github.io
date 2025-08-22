@@ -14,7 +14,7 @@ I took the first 2 days to vegitate, which wasn't a conscious decision, it was j
 
 ## Success Stories
 
-I've used this time to restart the flywheel on magic, and diet, re-inforce my discipline, and keep a balance with my family.
+I've used this time to restart the flywheel on magic, and diet, re-enforce my discipline, and keep a balance with my family.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -105,7 +105,7 @@ function gstatdaterange() {
     git_output=`git log --since "$1" --until "$2" --pretty="%H"`
 
     # diff between first commit to last commit, and sort the output by size
-    #sort params -k=second column; -t=with delimter as |; -n=sort as numeric -r sort as reversed
+    #sort params -k=second column; -t=with delimiter as |; -n=sort as numeric -r sort as reversed
     git diff --stat `echo $git_output | tail -n 1` `echo $git_output | head -n 1` |  sort -k2 -t'|' -n -r
 }
 ```
@@ -136,7 +136,7 @@ I checked this out briefly as it's a place I have little context, I think I'll w
 - ☑ Read VSI: Happiness
 - ☑ Wrote up some ideas on [mental pain](/mental-pain) from Dr. Raph
 - ☐ Write up my engineering manager quick sands
-- Even though work related, these quick sands are probably the biggest assult on my inner peace, and I want to spend some time maximizing the cognative force I can apply to these situations.
+- Even though work related, these quick sands are probably the biggest assault on my inner peace, and I want to spend some time maximizing the cognative force I can apply to these situations.
 
 ### Meditation
 
@@ -220,4 +220,4 @@ The pro of time off during x-max break:
 
 ### January is going to be a tough month at work.
 
-January will be my first calibration at FB, I've got multiple people onboarding, and planning and all the normal manager complexities simultaniously. All of these situations occur naturally while being a manager, but it is hard when they all happen at the same time. I'll spend some time during holidays writing out reasonable expectations and best practices for dealing with these.
+January will be my first calibration at FB, I've got multiple people onboarding, and planning and all the normal manager complexities simultaneously. All of these situations occur naturally while being a manager, but it is hard when they all happen at the same time. I'll spend some time during holidays writing out reasonable expectations and best practices for dealing with these.

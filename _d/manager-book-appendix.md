@@ -89,7 +89,7 @@ All of Amazon's [leadership principles](https://www.amazon.jobs/principles) (LPs
 
 If you're not from Amazon the LPs can be overwhelming, and are worthy of a separate post. To help remember the principles, I think of 3 buckets: 1) Grow yourself and your team 2) Get it Done 3) Be the owner.
 
-_You'll also notice the principles are deliberately not ranked, and have tension between them (e.g. Insist on High Standards vs Bias For Action) as they're all important and require high judgement to balance between. Alright there is definitely a post coming on this topic_
+_You'll also notice the principles are deliberately not ranked, and have tension between them (e.g. Insist on High Standards vs Bias For Action) as they're all important and require high judgment to balance between. Alright there is definitely a post coming on this topic_
 
 **Grow yourself and the team:**
 
@@ -139,7 +139,7 @@ _You'll also notice the principles are deliberately not ranked, and have tension
 <https://www.geekwire.com/2016/zillow-built-culture-around-6-core-values-empower-employees/>
 
 - Act with integrity
-- Move Fast, THink Big
+- Move Fast, TThink Big
 - Own it
 - Zillow is a team sport
 - Turn on the lights

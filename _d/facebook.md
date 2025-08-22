@@ -15,7 +15,7 @@ Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven re
 <!-- vim-markdown-toc-start -->
 
 - [The Good - Engineering Systems](#the-good---engineering-systems)
-  - [Why they're so good](#why-theyre-so-good)
+  - [Why they're so good](#why-they-are-so-good)
   - [A Trust Driven Social Company](#a-trust-driven-social-company)
   - [Open source lots](#open-source-lots)
   - [Top-notch data tools](#top-notch-data-tools)
