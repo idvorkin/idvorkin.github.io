@@ -2,30 +2,31 @@
 layout: page
 permalink: /featured/
 title: FEATURED POSTS
-description: "An archive of posts sorted by date."
+description: "A curated list of featured posts, data-driven and maintained by hand."
 ---
 
-{% assign featuredcount = '0' %}
 <ul class="post-list">
-  {% for post in site.posts %} {% if post.featured %} {% assign featuredcount =
-  featuredcount | plus:'1' %}
+  {% assign featuredcount = site.data.featured.size %}
+  {% for item in site.data.featured %}
   <li>
     <article>
       <i class="fa fa-star-half-o"></i>
-      <a href="{{ site.url }}{{ post.url }}"
-        >{{ post.title }}
-        <span class="entry-date"
-          ><time datetime="{{ post.date | date_to_xmlschema }}"
-            >{{ post.date | date: "%B %d, %Y" }}</time
-          ></span
-        ></a
-      >
+      <a href="{{ site.url }}{{ item.url }}">{{ item.title }}</a>
+      <p class="description">{{ item.description }}</p>
+      {% if item.tags %}
+      <div class="tags">
+        {% for tag in item.tags %}
+        <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
     </article>
   </li>
-  {% endif %} {% endfor %}
+  {% endfor %}
 </ul>
-{% if featuredcount == '0' %}
+
+{% if featuredcount == 0 %}
 <div class="notepad-page-title row">
-  <h1>No posts has been featured yet</h1>
+  <h1>No posts have been featured yet</h1>
 </div>
 {% endif %}

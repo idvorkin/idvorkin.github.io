@@ -306,18 +306,33 @@ no-render-title: true
         // This prevents flashing content
     }
     
-    // Load featured posts (with lazy loading)
+    // Load featured posts from hardcoded data (replacing search-based approach)
     async function loadFeaturedPosts() {
         const startTime = performance.now();
         console.log('⏱️ [Featured] Starting load...');
         showLoading('featured-results');
         try {
-            const { hits } = await index.search(' ', { 
-                hitsPerPage: 3,
-                filters: 'NOT tags:family-journal'
-            });
+            // Hardcoded featured posts - data-driven approach
+            const featuredPosts = [
+                {
+                    title: "Igor's Eulogy",
+                    url: "/eulogy",
+                    description: "How I want to live - written in advance as a guide for life decisions"
+                },
+                {
+                    title: "How to EM: Be the manager everyone wants",
+                    url: "/manager-book", 
+                    description: "A comprehensive guide on being an engineering manager and supporting people well"
+                },
+                {
+                    title: "I don't want to die knowing I spent too much time at work",
+                    url: "/wlb",
+                    description: "A manifesto on work-life balance and creating sustainable working cultures"
+                }
+            ];
+            
             cachedElements.featuredResults.innerHTML = 
-                hits.map(renderResultItem).join('');
+                featuredPosts.map(renderBasicItem).join('');
             const loadTime = performance.now() - startTime;
             console.log(`✅ [Featured] Loaded in ${loadTime.toFixed(0)}ms`);
         } catch (error) {

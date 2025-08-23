@@ -1,0 +1,27 @@
+# Featured posts list - curated by hand, data-driven approach
+# This replaces the previous search-driven featured system
+# Posts are ordered by priority/importance
+
+- title: "Igor's Eulogy"
+  url: "/eulogy"
+  description: "How I want to live - written in advance as a guide for life decisions"
+  tags: ["how igor ticks", "emotional intelligence"]
+  priority: 1
+
+- title: "How to EM: Be the manager everyone wants"
+  url: "/manager-book"
+  description: "A comprehensive guide on being an engineering manager and supporting people well"
+  tags: ["manager", "leadership"]
+  priority: 2
+
+- title: "I don't want to die knowing I spent too much time at work"
+  url: "/wlb"
+  description: "A manifesto on work-life balance and creating sustainable working cultures"
+  tags: ["work-life balance", "health", "management"]
+  priority: 3
+
+- title: "The recruiter does not think you're hot"
+  url: "/2020/01/01/the-recruiter-does-not-think-you-are-hot.html"
+  description: "Career advice wrapped in a humorous story about job selection mistakes"
+  tags: ["career", "early career", "humor"]
+  priority: 4
