@@ -201,7 +201,7 @@ no-render-title: true
 </div>
 
 <script type="module">
-    import { get_recent_posts, get_random_post, get_random_posts_batch } from "/assets/js/index.js";
+    import { get_recent_posts, get_random_post, get_random_posts_batch, getFeaturedPostsLimit } from "/assets/js/index.js";
     
     // Algolia configuration
     const appId = "{{ site.algolia.application_id }}";
@@ -306,20 +306,36 @@ no-render-title: true
         // This prevents flashing content
     }
     
-    // Load featured posts (with lazy loading)
+    // Load featured posts (using hardcoded list instead of search)
     async function loadFeaturedPosts() {
         const startTime = performance.now();
-        console.log('⏱️ [Featured] Starting load...');
+        console.log('⏱️ [Featured] Starting load from hardcoded list...');
         showLoading('featured-results');
         try {
-            const { hits } = await index.search(' ', { 
-                hitsPerPage: 3,
-                filters: 'NOT tags:family-journal'
-            });
-            cachedElements.featuredResults.innerHTML = 
-                hits.map(renderResultItem).join('');
+            // Use hardcoded featured posts instead of Algolia search
+            const featuredPosts = getFeaturedPostsLimit(3);
+            
+            // Convert to expected format and render
+            const html = featuredPosts.map(post => {
+                const safeUrl = escapeHtml(post.url);
+                const safeTitle = escapeHtml(post.title);
+                let safeDescription = escapeHtml(post.description);
+                
+                // Truncate description to ~150 characters if needed
+                if (safeDescription.length > 150) {
+                    safeDescription = safeDescription.substring(0, 147) + '...';
+                }
+                
+                return `
+                    <div class="result-item" onclick="window.location='${safeUrl}';">
+                        <div><a href="${safeUrl}">${safeTitle}</a> <span class="description">${safeDescription}</span></div>
+                    </div>
+                `;
+            }).join('');
+            
+            cachedElements.featuredResults.innerHTML = html;
             const loadTime = performance.now() - startTime;
-            console.log(`✅ [Featured] Loaded in ${loadTime.toFixed(0)}ms`);
+            console.log(`✅ [Featured] Loaded ${featuredPosts.length} hardcoded posts in ${loadTime.toFixed(0)}ms`);
         } catch (error) {
             console.error('❌ [Featured] Error:', error);
             cachedElements.featuredResults.innerHTML = 

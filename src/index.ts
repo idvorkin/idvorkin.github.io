@@ -37,6 +37,8 @@ import {
   random_from_list,
   shuffle,
 } from "./shared";
+// Import featured posts functionality
+import { getFeaturedPosts, getFeaturedPostsLimit, type FeaturedPost } from "./featured-posts";
 
 // Declare global variables from external libraries
 declare let $: {
@@ -150,4 +152,8 @@ export {
   load_ig66,
   load_balance,
   load_random_eulogy,
+  // Featured posts exports
+  getFeaturedPosts,
+  getFeaturedPostsLimit,
+  type FeaturedPost,
 };
