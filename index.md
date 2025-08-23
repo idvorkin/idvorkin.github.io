@@ -172,6 +172,7 @@ no-render-title: true
         <div class="results-section" id="featured-section">
             <div class="section-header">
                 <h3>Featured</h3>
+                <a href="#" id="toggle-featured" class="action-link" title="Collapse featured section">−</a>
             </div>
             <div id="featured-results">
                 <div class="result-item" style="color: #999;">Loading featured posts...</div>
@@ -370,6 +371,30 @@ no-render-title: true
         refreshButton.addEventListener('click', function(e) {
             e.preventDefault();
             loadRandomPosts();
+        });
+    }
+    
+    // Add collapse/expand functionality for featured section
+    const toggleFeaturedButton = document.getElementById('toggle-featured');
+    if (toggleFeaturedButton) {
+        toggleFeaturedButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            const featuredResults = document.getElementById('featured-results');
+            if (featuredResults) {
+                const isCollapsed = featuredResults.style.display === 'none';
+                
+                if (isCollapsed) {
+                    // Expand
+                    featuredResults.style.display = 'block';
+                    toggleFeaturedButton.textContent = '−';
+                    toggleFeaturedButton.setAttribute('title', 'Collapse featured section');
+                } else {
+                    // Collapse
+                    featuredResults.style.display = 'none';
+                    toggleFeaturedButton.textContent = '+';
+                    toggleFeaturedButton.setAttribute('title', 'Expand featured section');
+                }
+            }
         });
     }
     
