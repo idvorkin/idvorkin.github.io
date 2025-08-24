@@ -172,6 +172,7 @@ no-render-title: true
         <div class="results-section" id="featured-section">
             <div class="section-header">
                 <h3>Featured</h3>
+                <a class="action-link" id="featured-collapse-btn" href="#" title="Collapse section">−</a>
             </div>
             <div id="featured-results">
                 <div class="result-item" style="color: #999;">Loading featured posts...</div>
@@ -440,6 +441,11 @@ no-render-title: true
                 if (element) delete element.dataset.loaded;
             });
             
+            // Restore collapsed state if it was collapsed
+            if (featuredIsCollapsed) {
+                document.getElementById('featured-results').style.display = 'none';
+            }
+            
             // Reload content lazily or immediately based on browser support
             if ('IntersectionObserver' in window) {
                 setupLazyLoading();
@@ -452,6 +458,9 @@ no-render-title: true
         // Hide recent and random sections when searching
         cachedElements.recentSection.style.display = 'none';
         cachedElements.randomSection.style.display = 'none';
+        
+        // Always show featured results when searching (override collapsed state)
+        document.getElementById('featured-results').style.display = 'block';
         
         // Update featured section title for search results
         document.querySelector('#featured-section .section-header h3').textContent = 'Search Results';
@@ -543,11 +552,42 @@ no-render-title: true
     // Track page load time
     const pageLoadStart = performance.now();
     
+    // Setup collapse button for featured section
+    let featuredIsCollapsed = false;
+    
+    function setupFeaturedCollapse() {
+        const collapseBtn = document.getElementById('featured-collapse-btn');
+        const featuredResults = document.getElementById('featured-results');
+        
+        if (!collapseBtn || !featuredResults) {
+            console.warn('Featured collapse elements not found');
+            return;
+        }
+        
+        collapseBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            featuredIsCollapsed = !featuredIsCollapsed;
+            
+            if (featuredIsCollapsed) {
+                featuredResults.style.display = 'none';
+                collapseBtn.textContent = '+';
+                collapseBtn.title = 'Expand section';
+            } else {
+                featuredResults.style.display = 'block';
+                collapseBtn.textContent = '−';
+                collapseBtn.title = 'Collapse section';
+            }
+        });
+    }
+    
     // Load initial content when page loads
     $(document).ready(() => {
         const domReadyTime = performance.now() - pageLoadStart;
         console.log(`📄 [Page] DOM ready in ${domReadyTime.toFixed(0)}ms`);
         console.log('🔍 [Page] Algolia configured, starting content load...');
+        
+        // Setup collapse button
+        setupFeaturedCollapse();
         
         // Use intersection observer for truly lazy loading
         if ('IntersectionObserver' in window) {
