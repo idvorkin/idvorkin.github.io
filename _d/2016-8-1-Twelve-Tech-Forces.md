@@ -133,7 +133,7 @@ The digital revolution has gone through 3 changes: the copy of the industrial ag
 - You'll always be a newbie, since software is self updating, and changing quickly.
 - Life span most phone apps is 30 days - everything is displaced before you can figure it out.
 - Today's problems caused by yesterday's success - so pain causes a a steady accumulation of small benefits.
-- Protopyia - (Process and Progress): Every day is a bit better then yesterday, and realy adds up.
+- Protopyia - (Process and Progress): Every day is a bit better then yesterday, and really adds up.
 - When making new tech, always start by cloning old tech - web sites clones of desktop apps. Office clone of 'physical office'
 - Original idea of web -> TV, but with infinite channels.
   - This model is blocked by who can afford to create so much content?

@@ -97,8 +97,8 @@
     "/frugality": "/parkinson",
     "/frustration": "/anger",
     "/fuck-shame": "/shame",
-    "/future-igor": "/time-traveller",
-    "/future-self": "/time-traveller",
+    "/future-igor": "/time-traveler",
+    "/future-self": "/time-traveler",
     "/genai-intern": "/genai-talk",
     "/getting-things-done": "/gtd",
     "/getting-to-yes": "/negotiate",
@@ -5270,17 +5270,17 @@
       "title": "Time off August 2025 - Meta Recharge",
       "url": "/time-off-2025-08"
     },
-    "/time-traveller": {
-      "description": "What would Past Igor say if he met Future Igor? Would he be impressed by the wisdom, disappointed by the waistline, or wonder how we developed such an intense relationship with pastries? While we can’t physically time travel, we can use mental time travel as a powerful tool - imagining conversations across our past, present, and future selves. Think of it as a group chat between Past Igor (that idealistic youngster), Present Igor (hello!), and Future Igor (who’s probably shaking his head at both of us). Let’s explore how these three versions of ourselves are constantly chatting, arguing, and occasionally giving each other virtual fist bumps across the space-time continuum.\n\n\n\n",
+    "/time-traveler": {
+      "description": "What would Past Igor say if he met Future Igor? Would he be impressed by the wisdom, disappointed by the waistline, or wonder how we developed such an intense relationship with pastries? While we can't physically time travel, we can use mental time travel as a powerful tool - imagining conversations across our past, present, and future selves. Think of it as a group chat between Past Igor (that idealistic youngster), Present Igor (hello!), and Future Igor (who's probably shaking his head at both of us). Let's explore how these three versions of ourselves are constantly chatting, arguing, and occasionally giving each other virtual fist bumps across the space-time continuum.\n\n\n\n",
       "doc_size": 16000,
-      "file_path": "_site/time-traveller.html",
+      "file_path": "_site/time-traveler.html",
       "incoming_links": [],
       "last_modified": "2024-12-27T16:24:58-08:00",
-      "markdown_path": "_d/time-traveller.md",
+      "markdown_path": "_d/time-traveler.md",
       "outgoing_links": [],
       "redirect_url": "",
       "title": "When Past Igor Meets Future Igor",
-      "url": "/time-traveller"
+      "url": "/time-traveler"
     },
     "/timeoff": {
       "description": "Time off is critical, it’s how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with turning your 1 week off into an action-packed tour of Disneyland. But, there are other kinds of time off that we’ll discuss too. Like most things, time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!\n\n",

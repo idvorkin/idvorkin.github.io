@@ -208,7 +208,7 @@ Given two things (people or items), how similar or different are they, 1 is the 
 
 There are multiple ways to measure, and depends on the representation of the thing, and the domain (#ml_art)
 
-- Euclidian Distance - just like you remember from lines in algebra sqrt(Sum(yi-xi)^2)
+- Euclidean Distance - just like you remember from lines in algebra sqrt(Sum(yi-xi)^2)
 - Dot product -
 - Cosine Similarity - The angle between the djfh distance, without the magnitude/intensity.
 

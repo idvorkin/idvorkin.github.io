@@ -64,7 +64,7 @@ The job hunting process is slow, with lots of unexpected and uncontrollable wait
 
 **Lack of options for next jobs**
 
-- Figure out what you want to accomplish - I throught through the [Business model You Canvas ](/bmu) and my [dream job](/dream-job) figuring it out.
+- Figure out what you want to accomplish - I thought through the [Business model You Canvas ](/bmu) and my [dream job](/dream-job) figuring it out.
 - Look around for who is hiring
 - Start and maintain a list of candidate jobs
 - Have a worst case scenario job

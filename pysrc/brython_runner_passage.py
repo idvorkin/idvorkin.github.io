@@ -51,7 +51,7 @@ class HtmlRenderer:
         htmlPassage = self.PassageToDiv(passage)
         output = html.DIV()
 
-        # not sure why, but there are spurious paragraphs at the ned of the MD, strip, em.
+        # not sure why, but there are spurious paragraphs at the end of the MD, strip, em.
         # Should only do this at the end, maybe via regexp?
         md_as_html = md_to_html(self.header_func())
         header = html.DIV(md_as_html)
