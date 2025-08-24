@@ -1,46 +1,7 @@
 # Featured posts - curated list for homepage
-# This data-driven approach allows editorial control over featured content
-# Add/remove/reorder posts as needed
+# URLs only - titles and descriptions are fetched from backlinks.json
 
 featured_posts:
-  - title: "Igor's Eulogy"
-    url: "/eulogy"
-    description: "A vision of a life well-lived and the legacy to leave behind"
-    tags:
-      - how igor ticks
-      - emotional intelligence
-  
-  - title: "The Manager Book"
-    url: "/manager-book"
-    description: "Essential guide for engineering managers and leadership"
-    tags:
-      - management
-      - software engineering
-  
-  - title: "Work-Life Balance"
-    url: "/work-life-balance"
-    description: "Finding harmony between professional success and personal fulfillment"
-    tags:
-      - how igor ticks
-      - emotional intelligence
-  
-  - title: "Seven Habits of Highly Effective People"
-    url: "/7-habits"
-    description: "The foundational book for living an effective life"
-    tags:
-      - book-notes
-      - how igor ticks
-  
-  - title: "Essentialism"
-    url: "/essentialism"  
-    description: "The disciplined pursuit of less but better"
-    tags:
-      - book-notes
-      - productivity
-  
-  - title: "Tech Career Insights"
-    url: "/tech-career-insights"
-    description: "Lessons learned from decades in the tech industry"
-    tags:
-      - software engineering
-      - career
+  - /eulogy
+  - /manager-book
+  - /work-life-balance

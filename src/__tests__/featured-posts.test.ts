@@ -24,7 +24,7 @@ describe("Featured Posts", () => {
   });
 
   describe("Homepage Featured Posts", () => {
-    it("should render hardcoded featured posts on homepage", () => {
+    it("should fetch featured posts from backlinks data", async () => {
       // Mock the featured results container
       const mockFeaturedContainer = {
         innerHTML: "",
@@ -37,24 +37,43 @@ describe("Featured Posts", () => {
         return null;
       });
 
-      // Hardcoded featured posts data (matching what's in index.md)
-      const featuredPosts = [
-        {
+      // Mock backlinks data
+      const mockBacklinksData = {
+        "/eulogy": {
           title: "Igor's Eulogy",
           url: "/eulogy",
           description: "A vision of a life well-lived and the legacy to leave behind",
+          tags: ["how igor ticks", "emotional intelligence"]
         },
-        {
+        "/manager-book": {
           title: "The Manager Book",
           url: "/manager-book",
           description: "Essential guide for engineering managers and leadership",
+          tags: ["management", "software engineering"]
         },
-        {
+        "/work-life-balance": {
           title: "Work-Life Balance",
           url: "/work-life-balance",
           description: "Finding harmony between professional success and personal fulfillment",
+          tags: ["how igor ticks", "emotional intelligence"]
         },
-      ];
+      };
+
+      // Featured URLs from _data/featured.yml
+      const featuredUrls = ["/eulogy", "/manager-book", "/work-life-balance"];
+
+      // Map URLs to post data from backlinks (simulating what index.md does)
+      const featuredPosts = featuredUrls.map(url => {
+        const postInfo = mockBacklinksData[url];
+        if (postInfo) {
+          return {
+            title: postInfo.title || url,
+            url: url,
+            description: postInfo.description || ""
+          };
+        }
+        return null;
+      }).filter(post => post !== null);
 
       // Simulate rendering featured posts (same logic as in index.md)
       const renderBasicItem = (item: any) => {
@@ -77,7 +96,7 @@ describe("Featured Posts", () => {
       expect(mockFeaturedContainer.innerHTML).toContain("A vision of a life well-lived");
     });
 
-    it("should not make Algolia search calls for featured posts", () => {
+    it("should fetch from backlinks instead of Algolia search", async () => {
       // Mock Algolia search client
       const mockSearchClient = {
         initIndex: vi.fn(),
@@ -89,19 +108,23 @@ describe("Featured Posts", () => {
       
       mockSearchClient.initIndex.mockReturnValue(mockIndex);
       
-      // Simulate loading featured posts without Algolia
-      const featuredPosts = [
-        {
+      // Mock get_link_info to return backlinks data
+      const mockGetLinkInfo = vi.fn().mockResolvedValue({
+        "/eulogy": {
           title: "Igor's Eulogy",
           url: "/eulogy",
           description: "A vision of a life well-lived and the legacy to leave behind",
         },
-      ];
+      });
 
-      // Featured posts should be loaded from hardcoded data, not search
+      // Featured posts should be loaded from backlinks, not Algolia search
       expect(mockIndex.search).not.toHaveBeenCalled();
-      expect(featuredPosts).toHaveLength(1);
-      expect(featuredPosts[0].title).toBe("Igor's Eulogy");
+      
+      // Simulate fetching from backlinks
+      const backlinksData = await mockGetLinkInfo();
+      expect(mockGetLinkInfo).toHaveBeenCalled();
+      expect(backlinksData["/eulogy"]).toBeDefined();
+      expect(backlinksData["/eulogy"].title).toBe("Igor's Eulogy");
     });
 
     it("should truncate long descriptions to 150 characters", () => {
@@ -132,88 +155,43 @@ describe("Featured Posts", () => {
 
   describe("Featured Page Data Structure", () => {
     it("should have correct data structure for featured.yml", () => {
-      // Mock the featured data structure
+      // Mock the featured data structure - now just URLs
       const featuredData = {
         featured_posts: [
-          {
-            title: "Igor's Eulogy",
-            url: "/eulogy",
-            description: "A vision of a life well-lived and the legacy to leave behind",
-            tags: ["how igor ticks", "emotional intelligence"],
-          },
-          {
-            title: "The Manager Book",
-            url: "/manager-book",
-            description: "Essential guide for engineering managers and leadership",
-            tags: ["management", "software engineering"],
-          },
-          {
-            title: "Work-Life Balance",
-            url: "/work-life-balance",
-            description: "Finding harmony between professional success and personal fulfillment",
-            tags: ["how igor ticks", "emotional intelligence"],
-          },
-          {
-            title: "Seven Habits of Highly Effective People",
-            url: "/7-habits",
-            description: "The foundational book for living an effective life",
-            tags: ["book-notes", "how igor ticks"],
-          },
-          {
-            title: "Essentialism",
-            url: "/essentialism",
-            description: "The disciplined pursuit of less but better",
-            tags: ["book-notes", "productivity"],
-          },
-          {
-            title: "Tech Career Insights",
-            url: "/tech-career-insights",
-            description: "Lessons learned from decades in the tech industry",
-            tags: ["software engineering", "career"],
-          },
+          "/eulogy",
+          "/manager-book",
+          "/work-life-balance"
         ],
       };
 
       // Verify data structure
       expect(featuredData.featured_posts).toBeDefined();
-      expect(featuredData.featured_posts).toHaveLength(6);
+      expect(featuredData.featured_posts).toHaveLength(3);
       
-      // Check first post structure
-      const firstPost = featuredData.featured_posts[0];
-      expect(firstPost).toHaveProperty("title");
-      expect(firstPost).toHaveProperty("url");
-      expect(firstPost).toHaveProperty("description");
-      expect(firstPost).toHaveProperty("tags");
-      expect(Array.isArray(firstPost.tags)).toBe(true);
-      
-      // Verify all posts have required fields
-      featuredData.featured_posts.forEach((post) => {
-        expect(post.title).toBeTruthy();
-        expect(post.url).toBeTruthy();
-        expect(post.description).toBeTruthy();
-        expect(Array.isArray(post.tags)).toBe(true);
-        expect(post.tags.length).toBeGreaterThan(0);
+      // Check that posts are just URLs
+      featuredData.featured_posts.forEach((url) => {
+        expect(typeof url).toBe("string");
+        expect(url).toMatch(/^\/[a-z-]+$/);
       });
     });
 
-    it("should render featured posts with tags on featured page", () => {
+    it("should render featured posts fetched from backlinks", async () => {
       const mockFeaturedPageContainer = {
         innerHTML: "",
       };
 
-      // Simulate Jekyll data
-      const siteData = {
-        featured: {
-          featured_posts: [
-            {
-              title: "Test Post",
-              url: "/test",
-              description: "Test description",
-              tags: ["tag1", "tag2"],
-            },
-          ],
+      // Mock backlinks data
+      const mockBacklinksData = {
+        "/test": {
+          title: "Test Post",
+          url: "/test",
+          description: "Test description",
+          tags: ["tag1", "tag2"],
         },
       };
+
+      // Featured URLs from _data/featured.yml
+      const featuredUrls = ["/test"];
 
       // Simulate featured.html rendering logic
       const renderFeaturedPage = (data: any) => {
