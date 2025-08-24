@@ -202,14 +202,29 @@ no-render-title: true
     
     // Load initial content
     async function loadInitialContent() {
-        // Load featured posts from Algolia
+        // Load featured posts from hardcoded data
         try {
-            const { hits } = await index.search(' ', { 
-                hitsPerPage: 3,
-                filters: 'NOT tags:family-journal'
-            });
+            // Use data from _data/featured.yml instead of Algolia search
+            const featuredPosts = [
+                {
+                    title: "Igor's Eulogy",
+                    url: "/eulogy",
+                    description: "A vision of a life well-lived and the legacy to leave behind"
+                },
+                {
+                    title: "The Manager Book",
+                    url: "/manager-book",
+                    description: "Essential guide for engineering managers and leadership"
+                },
+                {
+                    title: "Work-Life Balance", 
+                    url: "/work-life-balance",
+                    description: "Finding harmony between professional success and personal fulfillment"
+                }
+            ];
+            
             document.getElementById('featured-results').innerHTML = 
-                hits.map(renderResultItem).join('');
+                featuredPosts.map(renderBasicItem).join('');
         } catch (error) {
             console.error('Error loading featured posts:', error);
         }

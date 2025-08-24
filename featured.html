@@ -2,30 +2,52 @@
 layout: page
 permalink: /featured/
 title: FEATURED POSTS
-description: "An archive of posts sorted by date."
+description: "Curated collection of essential posts"
 ---
 
-{% assign featuredcount = '0' %}
+{% if site.data.featured.featured_posts %}
 <ul class="post-list">
-  {% for post in site.posts %} {% if post.featured %} {% assign featuredcount =
-  featuredcount | plus:'1' %}
+  {% for post in site.data.featured.featured_posts %}
   <li>
     <article>
       <i class="fa fa-star-half-o"></i>
-      <a href="{{ site.url }}{{ post.url }}"
-        >{{ post.title }}
-        <span class="entry-date"
-          ><time datetime="{{ post.date | date_to_xmlschema }}"
-            >{{ post.date | date: "%B %d, %Y" }}</time
-          ></span
-        ></a
-      >
+      <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+      <div class="entry-description">{{ post.description }}</div>
+      {% if post.tags %}
+      <div class="entry-tags">
+        {% for tag in post.tags %}
+          <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
     </article>
   </li>
-  {% endif %} {% endfor %}
+  {% endfor %}
 </ul>
-{% if featuredcount == '0' %}
+{% else %}
 <div class="notepad-page-title row">
-  <h1>No posts has been featured yet</h1>
+  <h1>No posts have been featured yet</h1>
 </div>
 {% endif %}
+
+<style>
+.entry-description {
+  color: #666;
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+.entry-tags {
+  margin: 5px 0;
+}
+
+.tag {
+  display: inline-block;
+  background: #f0f0f0;
+  padding: 2px 8px;
+  margin: 2px;
+  border-radius: 3px;
+  font-size: 0.85em;
+  color: #555;
+}
+</style>
