@@ -62,11 +62,11 @@ export class FeaturedCollapseManager {
 
     if (this.state.isCollapsed) {
       this.elements.content.style.display = 'none';
-      this.elements.button.textContent = '+';
+      this.elements.button.textContent = 'Expand +';
       this.elements.button.title = 'Expand section';
     } else {
       this.elements.content.style.display = 'block';
-      this.elements.button.textContent = '−';
+      this.elements.button.textContent = 'Collapse −';
       this.elements.button.title = 'Collapse section';
     }
   }

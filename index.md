@@ -172,7 +172,7 @@ no-render-title: true
         <div class="results-section" id="featured-section">
             <div class="section-header">
                 <h3>Featured</h3>
-                <a class="action-link" id="featured-collapse-btn" href="#" title="Collapse section">−</a>
+                <a class="action-link" id="featured-collapse-btn" href="#" title="Collapse section">Collapse −</a>
             </div>
             <div id="featured-results">
                 <div class="result-item" style="color: #999;">Loading featured posts...</div>
@@ -570,11 +570,11 @@ no-render-title: true
             
             if (featuredIsCollapsed) {
                 featuredResults.style.display = 'none';
-                collapseBtn.textContent = '+';
+                collapseBtn.textContent = 'Expand +';
                 collapseBtn.title = 'Expand section';
             } else {
                 featuredResults.style.display = 'block';
-                collapseBtn.textContent = '−';
+                collapseBtn.textContent = 'Collapse −';
                 collapseBtn.title = 'Collapse section';
             }
         });

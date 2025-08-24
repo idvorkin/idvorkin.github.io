@@ -10,7 +10,7 @@ describe('FeaturedCollapseManager', () => {
     // Setup DOM elements
     document.body.innerHTML = `
       <div>
-        <button id="featured-collapse-btn" title="Collapse section">−</button>
+        <button id="featured-collapse-btn" title="Collapse section">Collapse −</button>
         <div id="featured-results" style="display: block;">
           <div>Test content</div>
         </div>
@@ -60,7 +60,7 @@ describe('FeaturedCollapseManager', () => {
     it('should start in expanded state', () => {
       expect(manager.isCollapsed()).toBe(false);
       expect(content.style.display).toBe('block');
-      expect(button.textContent).toBe('−');
+      expect(button.textContent).toBe('Collapse −');
       expect(button.title).toBe('Collapse section');
     });
 
@@ -68,7 +68,7 @@ describe('FeaturedCollapseManager', () => {
       manager.toggle();
       expect(manager.isCollapsed()).toBe(true);
       expect(content.style.display).toBe('none');
-      expect(button.textContent).toBe('+');
+      expect(button.textContent).toBe('Expand +');
       expect(button.title).toBe('Expand section');
     });
 
@@ -77,7 +77,7 @@ describe('FeaturedCollapseManager', () => {
       manager.toggle(); // expand
       expect(manager.isCollapsed()).toBe(false);
       expect(content.style.display).toBe('block');
-      expect(button.textContent).toBe('−');
+      expect(button.textContent).toBe('Collapse −');
       expect(button.title).toBe('Collapse section');
     });
 

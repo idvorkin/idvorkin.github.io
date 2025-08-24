@@ -18,7 +18,7 @@ test.describe('Featured Section Collapse Functionality', () => {
     await expect(collapseBtn).toBeVisible();
     
     // Check initial state
-    await expect(collapseBtn).toHaveText('−');
+    await expect(collapseBtn).toHaveText('Collapse −');
     await expect(collapseBtn).toHaveAttribute('title', 'Collapse section');
     
     // Check it has the correct class
@@ -31,18 +31,18 @@ test.describe('Featured Section Collapse Functionality', () => {
     
     // Initial state - expanded
     await expect(featuredResults).toBeVisible();
-    await expect(collapseBtn).toHaveText('−');
+    await expect(collapseBtn).toHaveText('Collapse −');
     
     // Click to collapse
     await collapseBtn.click();
     await expect(featuredResults).not.toBeVisible();
-    await expect(collapseBtn).toHaveText('+');
+    await expect(collapseBtn).toHaveText('Expand +');
     await expect(collapseBtn).toHaveAttribute('title', 'Expand section');
     
     // Click to expand
     await collapseBtn.click();
     await expect(featuredResults).toBeVisible();
-    await expect(collapseBtn).toHaveText('−');
+    await expect(collapseBtn).toHaveText('Collapse −');
     await expect(collapseBtn).toHaveAttribute('title', 'Collapse section');
   });
 
@@ -57,7 +57,7 @@ test.describe('Featured Section Collapse Functionality', () => {
     
     // Should end up collapsed
     await expect(featuredResults).not.toBeVisible();
-    await expect(collapseBtn).toHaveText('+');
+    await expect(collapseBtn).toHaveText('Expand +');
   });
 
   test('collapsed state should persist during content loading', async () => {
@@ -73,7 +73,7 @@ test.describe('Featured Section Collapse Functionality', () => {
     
     // Should still be collapsed
     await expect(featuredResults).not.toBeVisible();
-    await expect(collapseBtn).toHaveText('+');
+    await expect(collapseBtn).toHaveText('Expand +');
   });
 
   test('should show results when searching even if collapsed', async () => {
@@ -98,7 +98,7 @@ test.describe('Featured Section Collapse Functionality', () => {
     
     // Featured section should restore to collapsed state after clearing search
     await expect(featuredResults).not.toBeVisible();
-    await expect(collapseBtn).toHaveText('+');
+    await expect(collapseBtn).toHaveText('Expand +');
   });
 
   test('should not interfere with other action links', async () => {
@@ -208,6 +208,6 @@ test.describe('Featured Section Collapse Functionality', () => {
     await collapseBtn.click();
     
     // Button should still update its text
-    await expect(collapseBtn).toHaveText('+');
+    await expect(collapseBtn).toHaveText('Expand +');
   });
 });
