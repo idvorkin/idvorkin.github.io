@@ -193,6 +193,27 @@ describe("Featured Posts", () => {
       // Featured URLs from _data/featured.yml
       const featuredUrls = ["/test"];
 
+      // Map URLs to post data from backlinks (simulating what featured.html does)
+      const featuredPosts = featuredUrls.map(url => {
+        const postInfo = mockBacklinksData[url];
+        if (postInfo) {
+          return {
+            title: postInfo.title || url,
+            url: url,
+            description: postInfo.description || "",
+            tags: postInfo.tags || []
+          };
+        }
+        return null;
+      }).filter(post => post !== null);
+
+      // Create site data object
+      const siteData = {
+        featured: {
+          featured_posts: featuredPosts
+        }
+      };
+
       // Simulate featured.html rendering logic
       const renderFeaturedPage = (data: any) => {
         if (!data.featured?.featured_posts) {
