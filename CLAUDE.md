@@ -2,8 +2,16 @@
 
 ## IMPORTANT: Read First
 
-Before starting any work, read and follow the instructions in:
-`~/gits/chop-conventions/dev-inner-loop/a_readme_first.md`
+Before starting any work, you need to clone the chop-conventions repository (this is used during development in containers):
+
+```bash
+mkdir -p repo_tmp
+cd repo_tmp
+git clone https://github.com/idvorkin/chop-conventions.git
+```
+
+Then read and follow the instructions in:
+`repo_tmp/chop-conventions/dev-inner-loop/a_readme_first.md`
 
 This file will direct you to all other convention files you need to follow.
 
