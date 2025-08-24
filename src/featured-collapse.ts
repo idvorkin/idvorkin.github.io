@@ -12,9 +12,16 @@ export interface CollapseElements {
 export class FeaturedCollapseManager {
   private state: CollapseState;
   private elements: CollapseElements;
+  private storageKey: string;
 
-  constructor(buttonId: string = 'featured-collapse-btn', contentId: string = 'featured-results') {
-    this.state = { isCollapsed: false };
+  constructor(
+    buttonId: string = 'featured-collapse-btn', 
+    contentId: string = 'featured-results',
+    storageKey: string = 'featured-section-collapsed'
+  ) {
+    this.storageKey = storageKey;
+    // Load initial state from localStorage
+    this.state = { isCollapsed: this.loadState() };
     this.elements = {
       button: document.getElementById(buttonId),
       content: document.getElementById(contentId)
@@ -27,6 +34,9 @@ export class FeaturedCollapseManager {
       return false;
     }
 
+    // Apply initial state from localStorage
+    this.updateUI();
+
     this.elements.button.addEventListener('click', (e) => this.handleClick(e));
     return true;
   }
@@ -38,16 +48,19 @@ export class FeaturedCollapseManager {
 
   public toggle(): void {
     this.state.isCollapsed = !this.state.isCollapsed;
+    this.saveState();
     this.updateUI();
   }
 
   public collapse(): void {
     this.state.isCollapsed = true;
+    this.saveState();
     this.updateUI();
   }
 
   public expand(): void {
     this.state.isCollapsed = false;
+    this.saveState();
     this.updateUI();
   }
 
@@ -78,6 +91,33 @@ export class FeaturedCollapseManager {
 
   public getState(): CollapseState {
     return { ...this.state };
+  }
+
+  // localStorage helpers
+  private loadState(): boolean {
+    try {
+      return localStorage.getItem(this.storageKey) === 'true';
+    } catch {
+      // localStorage might not be available (e.g., in tests or private browsing)
+      return false;
+    }
+  }
+
+  private saveState(): void {
+    try {
+      localStorage.setItem(this.storageKey, this.state.isCollapsed.toString());
+    } catch {
+      // Fail silently if localStorage is not available
+    }
+  }
+
+  // Clear saved state (useful for testing)
+  public clearSavedState(): void {
+    try {
+      localStorage.removeItem(this.storageKey);
+    } catch {
+      // Fail silently
+    }
   }
 }
 

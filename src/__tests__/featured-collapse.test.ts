@@ -7,6 +7,9 @@ describe('FeaturedCollapseManager', () => {
   let content: HTMLElement;
 
   beforeEach(() => {
+    // Clear localStorage before each test
+    localStorage.clear();
+    
     // Setup DOM elements
     document.body.innerHTML = `
       <div>
@@ -212,6 +215,84 @@ describe('FeaturedCollapseManager', () => {
       
       manager.toggle();
       expect(manager.isCollapsed()).toBe(false);
+    });
+  });
+
+  describe('localStorage persistence', () => {
+    it('should save collapsed state to localStorage', () => {
+      manager.initialize();
+      manager.collapse();
+      
+      expect(localStorage.getItem('featured-section-collapsed')).toBe('true');
+    });
+
+    it('should save expanded state to localStorage', () => {
+      manager.initialize();
+      manager.collapse();
+      manager.expand();
+      
+      expect(localStorage.getItem('featured-section-collapsed')).toBe('false');
+    });
+
+    it('should load collapsed state from localStorage on initialization', () => {
+      localStorage.setItem('featured-section-collapsed', 'true');
+      
+      const newManager = new FeaturedCollapseManager();
+      newManager.initialize();
+      
+      expect(newManager.isCollapsed()).toBe(true);
+      expect(content.style.display).toBe('none');
+      expect(button.textContent).toBe('Expand +');
+    });
+
+    it('should load expanded state from localStorage on initialization', () => {
+      localStorage.setItem('featured-section-collapsed', 'false');
+      
+      const newManager = new FeaturedCollapseManager();
+      newManager.initialize();
+      
+      expect(newManager.isCollapsed()).toBe(false);
+      expect(content.style.display).toBe('block');
+      expect(button.textContent).toBe('Collapse −');
+    });
+
+    it('should handle localStorage errors gracefully', () => {
+      // Mock localStorage to throw errors
+      const originalSetItem = localStorage.setItem;
+      localStorage.setItem = vi.fn(() => {
+        throw new Error('localStorage not available');
+      });
+
+      manager.initialize();
+      
+      // Should not throw when localStorage fails
+      expect(() => manager.toggle()).not.toThrow();
+      expect(manager.isCollapsed()).toBe(true);
+      
+      // Restore original
+      localStorage.setItem = originalSetItem;
+    });
+
+    it('should clear saved state', () => {
+      manager.initialize();
+      manager.collapse();
+      expect(localStorage.getItem('featured-section-collapsed')).toBe('true');
+      
+      manager.clearSavedState();
+      expect(localStorage.getItem('featured-section-collapsed')).toBeNull();
+    });
+
+    it('should use custom storage key when provided', () => {
+      const customManager = new FeaturedCollapseManager(
+        'featured-collapse-btn',
+        'featured-results',
+        'custom-storage-key'
+      );
+      customManager.initialize();
+      customManager.collapse();
+      
+      expect(localStorage.getItem('custom-storage-key')).toBe('true');
+      expect(localStorage.getItem('featured-section-collapsed')).toBeNull();
     });
   });
 });

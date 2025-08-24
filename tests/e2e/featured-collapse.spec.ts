@@ -210,4 +210,51 @@ test.describe('Featured Section Collapse Functionality', () => {
     // Button should still update its text
     await expect(collapseBtn).toHaveText('Expand +');
   });
+
+  test('should persist collapse state across page reloads', async () => {
+    const collapseBtn = page.locator('#featured-collapse-btn');
+    const featuredResults = page.locator('#featured-results');
+    
+    // Collapse the section
+    await collapseBtn.click();
+    await expect(featuredResults).not.toBeVisible();
+    
+    // Reload the page
+    await page.reload();
+    await page.waitForSelector('#featured-section', { state: 'visible' });
+    
+    // Should still be collapsed after reload
+    await expect(featuredResults).not.toBeVisible();
+    await expect(collapseBtn).toHaveText('Expand +');
+    
+    // Expand it
+    await collapseBtn.click();
+    await expect(featuredResults).toBeVisible();
+    
+    // Reload again
+    await page.reload();
+    await page.waitForSelector('#featured-section', { state: 'visible' });
+    
+    // Should be expanded after reload
+    await expect(featuredResults).toBeVisible();
+    await expect(collapseBtn).toHaveText('Collapse −');
+  });
+
+  test('should clear localStorage state when appropriate', async () => {
+    // Set a collapsed state
+    await page.evaluate(() => {
+      localStorage.setItem('featured-section-collapsed', 'true');
+    });
+    
+    // Navigate to the page
+    await page.goto('/');
+    await page.waitForSelector('#featured-section', { state: 'visible' });
+    
+    const featuredResults = page.locator('#featured-results');
+    const collapseBtn = page.locator('#featured-collapse-btn');
+    
+    // Should be collapsed based on localStorage
+    await expect(featuredResults).not.toBeVisible();
+    await expect(collapseBtn).toHaveText('Expand +');
+  });
 });

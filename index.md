@@ -553,7 +553,8 @@ no-render-title: true
     const pageLoadStart = performance.now();
     
     // Setup collapse button for featured section
-    let featuredIsCollapsed = false;
+    const STORAGE_KEY = 'featured-section-collapsed';
+    let featuredIsCollapsed = localStorage.getItem(STORAGE_KEY) === 'true';
     
     function setupFeaturedCollapse() {
         const collapseBtn = document.getElementById('featured-collapse-btn');
@@ -564,9 +565,19 @@ no-render-title: true
             return;
         }
         
+        // Apply initial state from localStorage
+        if (featuredIsCollapsed) {
+            featuredResults.style.display = 'none';
+            collapseBtn.textContent = 'Expand +';
+            collapseBtn.title = 'Expand section';
+        }
+        
         collapseBtn.addEventListener('click', function(e) {
             e.preventDefault();
             featuredIsCollapsed = !featuredIsCollapsed;
+            
+            // Save state to localStorage
+            localStorage.setItem(STORAGE_KEY, featuredIsCollapsed.toString());
             
             if (featuredIsCollapsed) {
                 featuredResults.style.display = 'none';
