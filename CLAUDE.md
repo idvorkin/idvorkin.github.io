@@ -171,3 +171,4 @@ When resolving PR feedback:
   - Example: "User has copied an image to clipboard and wants it analyzed"
 - Only extract images manually if the image-content-analyzer agent is not available
 - Ensure you never approve a PR (maintain proper review processes and security)
+- when fixing an issue with a PR, be sure to put a comment on the issue that you'er working on it via PR
