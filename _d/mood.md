@@ -94,9 +94,15 @@ As a model,
 | Other   |      |         |        |
 | Process |      |         |        |
 
-**Mood vs Energy/Arrousal**
+**Mood vs Energy/Arousal**
 
 {%include summarize-page.html src="/energy" %}
+
+**The role of the nervous system in mood**
+
+Your mood is deeply influenced by which branch of your autonomic nervous system is dominant. When stuck in sympathetic (fight-or-flight) mode, everything feels urgent and threatening. Learning to activate your parasympathetic nervous system can help regulate mood by bringing you back to baseline.
+
+{%include summarize-page.html src="/slow"%}
 
 ## Mood disorders vs working moods responding to life
 
