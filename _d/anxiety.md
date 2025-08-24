@@ -128,6 +128,10 @@ Depending on the depth of the relationship and the reaction so far, it might be 
 
 ### Antidotes
 
+**Activate your parasympathetic nervous system**: When anxiety has you in fight-or-flight mode, you need to consciously shift to rest and digest mode. Breathing exercises, gentle movement, and other PNS activation techniques can break the anxiety cycle.
+
+{%include summarize-page.html src="/slow"%}
+
 - Change Perspective
 - Caring vs Mattering
 
