@@ -1,0 +1,7 @@
+# Featured posts - curated list for homepage
+# URLs only - titles and descriptions are fetched from backlinks.json
+
+featured_posts:
+  - /eulogy
+  - /manager-book
+  - /sustainable-work

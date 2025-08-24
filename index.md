@@ -201,7 +201,7 @@ no-render-title: true
 </div>
 
 <script type="module">
-    import { get_recent_posts, get_random_post, get_random_posts_batch } from "/assets/js/index.js";
+    import { get_recent_posts, get_random_post, get_random_posts_batch, get_link_info } from "/assets/js/index.js";
     
     // Algolia configuration
     const appId = "{{ site.algolia.application_id }}";
@@ -312,12 +312,36 @@ no-render-title: true
         console.log('⏱️ [Featured] Starting load...');
         showLoading('featured-results');
         try {
-            const { hits } = await index.search(' ', { 
-                hitsPerPage: 3,
-                filters: 'NOT tags:family-journal'
-            });
+            // Featured post URLs from _data/featured.yml (rendered by Jekyll)
+            const featuredUrls = [
+                {% for url in site.data.featured.featured_posts %}
+                "{{ url }}"{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+            ];
+            
+            // Fetch all link info from backlinks.json
+            const allLinkInfo = await get_link_info();
+            
+            // Map URLs to post data from backlinks
+            const featuredPosts = featuredUrls.map(url => {
+                const postInfo = allLinkInfo[url];
+                if (postInfo) {
+                    return {
+                        title: postInfo.title || url,
+                        url: url,
+                        description: postInfo.description || ""
+                    };
+                }
+                // Fallback if not found in backlinks
+                return {
+                    title: url.replace(/^\//, '').replace(/-/g, ' '),
+                    url: url,
+                    description: "Loading..."
+                };
+            }).filter(post => post !== null);
+            
             cachedElements.featuredResults.innerHTML = 
-                hits.map(renderResultItem).join('');
+                featuredPosts.map(renderBasicItem).join('');
             const loadTime = performance.now() - startTime;
             console.log(`✅ [Featured] Loaded in ${loadTime.toFixed(0)}ms`);
         } catch (error) {
