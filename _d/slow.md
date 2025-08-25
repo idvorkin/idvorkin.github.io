@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Rest and Digest - Sometimes you'd rather go slow "
-tagskk:
+tags:
   - emotional intelligence
 permalink: /slow
 mermaid: true
@@ -24,10 +24,10 @@ Fight or flight, the sympathetic nervous system, gets all the attention, but its
 - [Understanding Energy States](#understanding-energy-states)
   - [Two Reasons to lower your arousal](#two-reasons-to-lower-your-arousal)
 - [THoughts to digest](#thoughts-to-digest)
-  - [Low arrousal is not laziness](#low-arrousal-is-not-laziness)
-  - [The reistance blocks low arrousal too](#the-reistance-blocks-low-arrousal-too)
-  - [Is social media/mindless consumption addiiction lowering arrousal?](#is-social-mediamindless-consumption-addiiction-lowering-arrousal)
-  - [Does Rest and Digest system result in better decisisions then flight or fight](#does-rest-and-digest-system-result-in-better-decisisions-then-flight-or-fight)
+  - [Low arousal is not laziness](#low-arousal-is-not-laziness)
+  - [The resistance blocks low arousal too](#the-resistance-blocks-low-arousal-too)
+  - [Is social media/mindless consumption addiction lowering arousal?](#is-social-mediamindless-consumption-addiction-lowering-arousal)
+  - [Does Rest and Digest system result in better decisions than fight or flight](#does-rest-and-digest-system-result-in-better-decisions-than-fight-or-flight)
 - [How to Strengthen Your Parasympathetic Nervous System](#how-to-strengthen-your-parasympathetic-nervous-system)
   - [Breathing Techniques](#breathing-techniques)
   - [Physical Practices](#physical-practices)
@@ -108,7 +108,7 @@ quadrantChart
 
 This "PNS Zone" — the **low arousal, high pleasure** quadrant — is where your parasympathetic nervous system thrives. These are the most sustainable positive states: contentment, relaxation, peace, tranquility.
 
-### Two Reasons to lower your arousal
+### Two Reasons to Lower Your Arousal
 
 **1. You're anxious or stressed (The obvious one)**
 When you're stuck in agitation (high arousal, low pleasure), your body is screaming for relief. Anxiety, stress, frustration — these states are meant to be temporary alarms, not permanent addresses. The PNS Zone is your escape route from the stress cycle. Everyone knows being stressed sucks.
@@ -116,23 +116,23 @@ When you're stuck in agitation (high arousal, low pleasure), your body is scream
 **2. You want to appreciate and be present (Less obvious, but equally important)**
 Here's what people miss: You can't smell the roses when you're sprinting past them. Gratitude, presence, appreciation — these only bloom in the PNS Zone. When your nervous system is calm, you can actually experience life rather than just surviving it. This is where meaning lives. You could have the perfect life on paper, but if you're always activated, you'll never actually feel it.
 
-## THoughts to digest
+## Thoughts to digest
 
-### Low arrousal is not laziness
+### Low arousal is not laziness
 
-In fact, it might be arrousa
+In fact, it might be arousal
 
-### The reistance blocks low arrousal too
+### The resistance blocks low arousal too
 
-Or alteast, it blocks the activiites that get you ther
+Or at least, it blocks the activities that get you there
 
 {%include summarize-page.html src="/resistance"%}
 
-### Is social media/mindless consumption addiiction lowering arrousal?
+### Is social media/mindless consumption addiction lowering arousal?
 
 I'm not sure, but I suspect it may be
 
-### Does Rest and Digest system result in better decisisions then flight or fight
+### Does Rest and Digest system result in better decisions than fight or flight
 
 - Notice we say I need time to digest that?
 - Often we hear something it wacks us hard, and we need to "digest it", often once we've calmed down.
