@@ -14,7 +14,6 @@ Fight or flight, the sympathetic nervous system, gets all the attention, but its
 
 {%include summarize-page.html src="/balance"%}
 
-
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
@@ -24,14 +23,17 @@ Fight or flight, the sympathetic nervous system, gets all the attention, but its
   - [The High-Energy Trap](#the-high-energy-trap)
 - [Understanding Energy States](#understanding-energy-states)
   - [Two Reasons to lower your arousal](#two-reasons-to-lower-your-arousal)
+- [THoughts to digest](#thoughts-to-digest)
   - [Low arrousal is not laziness](#low-arrousal-is-not-laziness)
   - [The reistance blocks low arrousal too](#the-reistance-blocks-low-arrousal-too)
   - [Is social media/mindless consumption addiiction lowering arrousal?](#is-social-mediamindless-consumption-addiiction-lowering-arrousal)
+  - [Does Rest and Digest system result in better decisisions then flight or fight](#does-rest-and-digest-system-result-in-better-decisisions-then-flight-or-fight)
 - [How to Strengthen Your Parasympathetic Nervous System](#how-to-strengthen-your-parasympathetic-nervous-system)
   - [Breathing Techniques](#breathing-techniques)
   - [Physical Practices](#physical-practices)
   - [Mental and Lifestyle Practices](#mental-and-lifestyle-practices)
 - [The Science Behind the Names](#the-science-behind-the-names)
+- [HRV and vagal nerve](#hrv-and-vagal-nerve)
 - [The Bottom Line](#the-bottom-line)
 - [Related Topics](#related-topics)
 
@@ -56,14 +58,14 @@ We're conditioned to believe more energy is always better. Wake up earlier! Work
 
 **In Relationships**: High energy can manifest as impatience, interrupting, or overwhelming others. Sometimes the most powerful thing you can do is slow down and truly listen.
 
-**During Recovery**: After intense work, exercise, or stress, your body needs low energy states to repair. Fighting this with stimulants is like flooring the gas while the engine's overheating.
+**In Reflection**: TODO: Add
 
 **In Creative Work**: Breakthrough insights come during [rest](https://en.wikipedia.org/wiki/Default_mode_network), not grinding. Your default mode network — the brain's creative engine — only activates when you're not actively focusing.
-
 
 ### The High-Energy Trap
 
 Chronic high energy isn't strength — it's dysregulation. It's like:
+
 - A car stuck in third gear trying to navigate a parking lot
 - A computer with 100 browser tabs open wondering why it's slow
 - A phone on max brightness complaining about battery life
@@ -114,6 +116,8 @@ When you're stuck in agitation (high arousal, low pleasure), your body is scream
 **2. You want to appreciate and be present (Less obvious, but equally important)**
 Here's what people miss: You can't smell the roses when you're sprinting past them. Gratitude, presence, appreciation — these only bloom in the PNS Zone. When your nervous system is calm, you can actually experience life rather than just surviving it. This is where meaning lives. You could have the perfect life on paper, but if you're always activated, you'll never actually feel it.
 
+## THoughts to digest
+
 ### Low arrousal is not laziness
 
 In fact, it might be arrousa
@@ -128,12 +132,26 @@ Or alteast, it blocks the activiites that get you ther
 
 I'm not sure, but I suspect it may be
 
+### Does Rest and Digest system result in better decisisions then flight or fight
+
+- Notice we say I need time to digest that?
+- Often we hear something it wacks us hard, and we need to "digest it", often once we've calmed down.
+- Is planning mode more Rest+Digest while doing is Fight or Flight,
+
+During lower arousal states, the prefrontal cortex (PFC) - crucial for executive functions like planning, decision-making, and reflection - operates more effectively. High arousal and stress trigger elevated cortisol and norepinephrine, which can impair PFC function and shift brain activity toward more primitive regions focused on immediate threats.
+
+Studies demonstrate that moderate to low arousal enhances cognitive flexibility - the ability to switch between different concepts and perspectives, crucial for effective planning. The Yerkes-Dodson law indicates that while some arousal helps with simple tasks, complex cognitive tasks (like planning) suffer under high arousal.
+
+Lower arousal states facilitate better integration of information from the hippocampus to the cortex, supporting the type of memory consolidation needed for drawing on past experiences during planning.
+
+Higher vagal tone (indicating parasympathetic dominance) correlates with better emotional regulation, cognitive flexibility, and executive function. Heart rate variability studies show that people with higher vagal tone perform better on tasks requiring planning and reflection.
 
 ## How to Strengthen Your Parasympathetic Nervous System
 
 ### Breathing Techniques
 
 **4-7-8 Breathing**: The physiological sigh that actually works
+
 - Inhale through nose for 4 counts
 - Hold for 7 counts
 - Exhale through mouth for 8 counts
@@ -142,6 +160,7 @@ I'm not sure, but I suspect it may be
 Why it works: Extended exhales activate the vagus nerve, your PNS's main highway. The longer exhale than inhale is the key — it's literally telling your body "we're safe now."
 
 **Box Breathing**: Navy SEALs use this for a reason
+
 - Inhale for 4 counts
 - Hold for 4 counts
 - Exhale for 4 counts
@@ -152,6 +171,7 @@ This creates predictability, and your nervous system loves predictability.
 ### Physical Practices
 
 **Cold Exposure**: Start with cold showers
+
 - End your shower with 30 seconds of cold water
 - Build up to 2-3 minutes
 - Focus on slow, controlled breathing during exposure
@@ -159,6 +179,7 @@ This creates predictability, and your nervous system loves predictability.
 The shock activates sympathetic briefly, but the recovery is all parasympathetic. It's like strength training for your nervous system.
 
 **Gentle Movement**: Not everything needs to be HIIT
+
 - Yoga (especially yin or restorative)
 - Tai Chi
 - Walking in nature (bonus points for barefoot on grass)
@@ -167,6 +188,7 @@ The shock activates sympathetic briefly, but the recovery is all parasympathetic
 These activities promote PNS activation without the stress response of intense exercise.
 
 **Massage and Physical Touch**:
+
 - Self-massage with tennis balls or foam rollers
 - Professional massage therapy
 - Hugging (20-second hugs release oxytocin)
@@ -177,6 +199,7 @@ Why these work: Physical touch activates the vagus nerve, your PNS's main highwa
 ### Mental and Lifestyle Practices
 
 **Meditation and Mindfulness**:
+
 - Start with just 5 minutes daily
 - Use apps like Headspace or Calm if you need structure
 - Try body scans — they directly engage PNS awareness
@@ -185,7 +208,6 @@ Why these work: Physical touch activates the vagus nerve, your PNS's main highwa
 
 {%include summarize-page.html src="/siy"%}
 
-
 ## The Science Behind the Names
 
 Why do they have these weird names?
@@ -193,6 +215,12 @@ Why do they have these weird names?
 - **Sympathetic Nervous System (SNS)**: The term "sympathetic" comes from the Greek word "sympathes," which means "having a fellow feeling" or "affected by the same disease." In the context of the nervous system, it refers to the idea that this system broadly activates various organs and tissues throughout the body to respond in a coordinated manner during stress.
 
 - **Parasympathetic Nervous System (PNS)**: The prefix "para-" means "beside" or "alongside." This indicates that the parasympathetic system works alongside the sympathetic nervous system but often in opposition to it. While the sympathetic system prepares the body for action, the parasympathetic system helps calm it down and maintain homeostasis.
+
+## HRV and vagal nerve
+
+HRV seems to be the standard to measure
+
+- Talk about HRV and GLP-1 inhibitors
 
 ## The Bottom Line
 
