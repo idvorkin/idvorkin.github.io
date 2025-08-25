@@ -22,11 +22,12 @@ Fight or flight, the sympathetic nervous system, gets all the attention, but its
   - [Situations Where Less is More](#situations-where-less-is-more)
   - [The High-Energy Trap](#the-high-energy-trap)
 - [Understanding Energy States](#understanding-energy-states)
-  - [Two Reasons to lower your arousal](#two-reasons-to-lower-your-arousal)
-- [THoughts to digest](#thoughts-to-digest)
+  - [Two Reasons to Lower Your Arousal](#two-reasons-to-lower-your-arousal)
+- [Thoughts to digest](#thoughts-to-digest)
   - [Low arousal is not laziness](#low-arousal-is-not-laziness)
   - [The resistance blocks low arousal too](#the-resistance-blocks-low-arousal-too)
   - [Is social media/mindless consumption addiction lowering arousal?](#is-social-mediamindless-consumption-addiction-lowering-arousal)
+  - [Getting Hangry](#getting-hangry)
   - [Does Rest and Digest system result in better decisions than fight or flight](#does-rest-and-digest-system-result-in-better-decisions-than-fight-or-flight)
 - [How to Strengthen Your Parasympathetic Nervous System](#how-to-strengthen-your-parasympathetic-nervous-system)
   - [Breathing Techniques](#breathing-techniques)
@@ -131,6 +132,10 @@ Or at least, it blocks the activities that get you there
 ### Is social media/mindless consumption addiction lowering arousal?
 
 I'm not sure, but I suspect it may be
+
+### Getting Hangry
+
+What is connection between hunger and rest+digest
 
 ### Does Rest and Digest system result in better decisions than fight or flight
 
