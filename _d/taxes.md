@@ -715,9 +715,9 @@ Relative
 
 ### Blast From the Past — My Budget as a College Student
 
-Wow — as a college student in Canada in 1998, I was living on $1,063 per month (CAD). Inflation‑adjusted to 2025, that's about $1,920 per month.
+<img src="https://raw.githubusercontent.com/idvorkin/ipaste/main/20250809_193602.webp" class="float-right-img" alt="College budget spreadsheet from 1998 showing monthly expenses" />
 
-![College budget spreadsheet from 1998 showing monthly expenses](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250809_193602.webp)
+Wow — as a college student in Canada in 1998, I was living on $1,063 per month (CAD). Inflation‑adjusted to 2025, that's about $1,920 per month.
 
 ### Other Resources
 
