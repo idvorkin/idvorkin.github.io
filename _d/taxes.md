@@ -717,8 +717,6 @@ Relative
 
 Wow — as a college student in Canada in 1998, I was living on $1,063 per month (CAD). Inflation‑adjusted to 2025, that's about $1,920 per month.
 
-<img src="/images/ipaste/20250809_193602.webp" class="img-fluid w-100" />
-
 ### Other Resources
 
 [Visualizing the worlds money](https://www.visualcapitalist.com/all-of-the-worlds-money-and-markets-in-one-visualization-2020/)
