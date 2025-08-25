@@ -38,6 +38,7 @@ When you work at a tech company and receive RSUs, it's easy to accidentally beco
 - [The RSU Trap: How You Became Overweight on Company Stock](#the-rsu-trap-how-you-became-overweight-on-company-stock)
 - [Don't Confuse a Good Outcome with a Good Decision](#dont-confuse-a-good-outcome-with-a-good-decision)
 - [You're Already Concentrated Enough](#your-already-concentrated-enough)
+  - [Current Valuations: P/E Ratios of Top 10 S&P 500 Companies](#current-valuations-pe-ratios-of-top-10-sp-500-companies-august-2025)
 - [Watering down your concentration](#watering-down-your-concentration)
 - [Risk Management Strategies](#risk-management-strategies)
   - [Buying Put Options for Protection](#buying-put-options-for-protection)
@@ -122,6 +123,37 @@ Look, even if you just hold a broad market index fund, you're already heavily ex
 | GOOG | Alphabet Class C | 3.89% |
 | META | Meta Platforms | 3.89% |
 | **Total** | **Top 7 Tech Holdings** | **43.30%** |
+
+### Current Valuations: P/E Ratios of Top 10 S&P 500 Companies (August 2025)
+
+Understanding current valuations helps put concentration risk in perspective. Here are the P/E ratios for the largest companies dominating the index:
+
+| Rank | Company | Ticker | S&P Weight | P/E Ratio | Forward P/E | Valuation Context |
+|------|---------|--------|------------|-----------|-------------|-------------------|
+| 1 | **Nvidia** | NVDA | 8.1% | 58.4 | ~40 | AI leader premium |
+| 2 | **Microsoft** | MSFT | 7.3% | 37.0 | 32.7 | Above historical avg |
+| 3 | **Apple** | AAPL | 5.8% | 34.5 | 25.2 | 50% above 10yr avg |
+| 4 | **Amazon** | AMZN | 3.9% | 29.5 | ~27 | Moderate valuation |
+| 5 | **Alphabet** | GOOGL | 3.9% | 22.0 | 18.3 | Below historical avg |
+| 6 | **Meta** | META | 3.0% | 27.3 | ~25 | Reasonable growth multiple |
+| 7 | **Broadcom** | AVGO | 2.7% | 59-108* | 40.3 | Wide range reported |
+| 8 | **Berkshire** | BRK.B | 1.6% | 22.7 | N/A | Value-oriented |
+| 9 | **Tesla** | TSLA | 1.6% | 200.0 | ~150 | Extreme growth premium |
+| 10 | **JPMorgan** | JPM | 1.5% | 15.4 | ~14 | Traditional bank multiple |
+
+*Broadcom's P/E varies significantly across sources due to acquisition accounting
+
+**Key Insights:**
+- **S&P 500 Average P/E**: 29.8 (as of Aug 2025)
+- **Concentration of Premium Valuations**: The top 3 companies (23% of index) all trade above historical averages
+- **Tesla's Outlier Status**: At 200x earnings, Tesla trades at 7x the market multiple
+- **Value in Financials**: JPMorgan offers the lowest multiple at 15.4x
+- **Tech Dominance**: 8 of 10 largest companies are tech/tech-adjacent with above-average P/Es
+
+**What This Means for Your Concentration Risk:**
+- If you hold RSUs in a high P/E company (>40), you're concentrated in both **company risk** and **valuation risk**
+- Market corrections often hit high-multiple stocks hardest - a P/E compression from 60 to 30 means a 50% drop even if earnings stay flat
+- Diversifying from a 200 P/E stock (Tesla) to market average (30 P/E) reduces valuation risk by 85%
 
 This portfolio shows how even a "diversified" portfolio can end up with nearly half its value (43.30%) concentrated in just 7 tech stocks, with the top 3 alone representing almost 25% of total portfolio value.
 
