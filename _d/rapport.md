@@ -4,7 +4,7 @@ title: "How to build rapport"
 permalink: /rapport
 ---
 
-In today's fast-paced and interconnected world, building and maintaining strong relationships is essential for personal and professional success. POWER is a five-step process that will help you establish rapport and create meaningful connections with people from all walks of life. The POWER acronym stands for: **P**roximity **O**bservation, **W**armth, **E**mpathy, **R**elevation
+In today's fast-paced and interconnected world, building and maintaining strong relationships is essential for personal and professional success. POWER is a five-step process that will help you establish rapport and create meaningful connections with people from all walks of life. The POWER acronym stands for: **P**roximity **O**bservation, **W**armth, **E**mpathy, **R**evelation
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->

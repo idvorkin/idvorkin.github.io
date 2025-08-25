@@ -345,7 +345,6 @@
             "file_path": "_site/7-habits.html",
             "incoming_links": [
                 "/7h-concepts",
-                "/balance",
                 "/be-proactive",
                 "/books-that-defined-me",
                 "/d/time-off-2020-12",
@@ -356,7 +355,6 @@
                 "/first-understand",
                 "/psychic-weight",
                 "/sharpen-the-saw",
-                "/synergize",
                 "/win-win"
             ],
             "last_modified": "2025-07-20T19:26:41-07:00",
@@ -597,19 +595,19 @@
             "incoming_links": [
                 "/ai-developer"
             ],
-            "last_modified": "2025-05-19T09:09:26-07:00",
+            "last_modified": "2025-08-25T10:36:29.323328",
             "markdown_path": "_d/ai.md",
             "outgoing_links": [
                 "/ai-art",
                 "/ai-bestie",
                 "/ai-bm",
+                "/ai-coder",
                 "/ai-developer",
                 "/ai-image",
                 "/ai-journal",
                 "/ai-paper",
                 "/ai-security",
                 "/ai-testing",
-                "/chop",
                 "/chow",
                 "/ml",
                 "/recommend",
@@ -645,7 +643,7 @@
                 "/ai",
                 "/y24"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2025-08-25T10:36:29.323328",
             "markdown_path": "_d/ai-bestie.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -800,7 +798,7 @@
                 "/emotions",
                 "/mood"
             ],
-            "last_modified": "2025-07-20T19:26:41-07:00",
+            "last_modified": "2025-08-25T10:36:29.323328",
             "markdown_path": "_d/anger.md",
             "outgoing_links": [
                 "/depression",
@@ -930,22 +928,22 @@
                 "/productive",
                 "/slow"
             ],
-            "last_modified": "2025-08-24T10:29:13-07:00",
+            "last_modified": "2025-08-25T10:36:29.323328",
             "markdown_path": "_d/balance2.md",
             "outgoing_links": [
-                "/7-habits",
+                "/7h",
                 "/activation",
                 "/energy",
-                "/essentialism",
+                "/essential",
                 "/eulogy",
                 "/moments",
                 "/mortality-software",
                 "/parkinson",
                 "/productive",
                 "/slow",
-                "/sustainable-work",
-                "/timeoff",
-                "/weeks"
+                "/time-off",
+                "/weeks",
+                "/wlb"
             ],
             "redirect_url": "",
             "title": "Balance - The Holy Grail",
@@ -960,7 +958,7 @@
                 "/joy",
                 "/timeoff"
             ],
-            "last_modified": "2025-04-04T06:53:08-07:00",
+            "last_modified": "2025-08-25T10:36:29.323328",
             "markdown_path": "_d/balloon.md",
             "outgoing_links": [
                 "/joy"
@@ -1019,7 +1017,6 @@
             "file_path": "_site/being-a-great-manager.html",
             "incoming_links": [
                 "/bmy",
-                "/eulogy",
                 "/job",
                 "/manager-book"
             ],
@@ -1051,7 +1048,7 @@
                 "/irl",
                 "/operating-manual"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2025-08-25T10:36:29.323328",
             "markdown_path": "_posts/2017-03-01-bike.md",
             "outgoing_links": [
                 "/brompton-toys",
@@ -1157,7 +1154,7 @@
             "incoming_links": [
                 "/d/time-off-2021-11"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2025-08-25T10:36:29.323328",
             "markdown_path": "_d/brython_.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -1202,7 +1199,7 @@
             "incoming_links": [
                 "/depression"
             ],
-            "last_modified": "2025-07-18T07:57:44-07:00",
+            "last_modified": "2025-08-25T10:36:29.323328",
             "markdown_path": "_d/caring.md",
             "outgoing_links": [
                 "/depression",
@@ -1273,7 +1270,6 @@
             "file_path": "_site/chop.html",
             "incoming_links": [
                 "/40yo",
-                "/ai",
                 "/chow",
                 "/gtd",
                 "/process-journal",
@@ -1321,12 +1317,12 @@
             "incoming_links": [
                 "/affirmations"
             ],
-            "last_modified": "2024-11-30T08:42:37-08:00",
+            "last_modified": "2025-08-25T10:36:29.323328",
             "markdown_path": "_d/classact2.md",
             "outgoing_links": [
+                "/7h-c5",
                 "/appreciate",
-                "/curious",
-                "/first-understand",
+                "/compassion",
                 "/touching"
             ],
             "redirect_url": "",
@@ -1461,7 +1457,6 @@
                 "/90days",
                 "/affirmations",
                 "/being-a-great-manager",
-                "/class-act",
                 "/coaching",
                 "/emotions",
                 "/essentialism",
@@ -1470,20 +1465,19 @@
                 "/happy",
                 "/negotiate",
                 "/operating-manual",
-                "/psychic-weight",
                 "/regrets",
                 "/shame",
                 "/voices"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2025-08-25T10:36:29.323328",
             "markdown_path": "_d/grandmother.md",
             "outgoing_links": [
-                "/first-understand",
+                "/7h-c4",
+                "/7h-c5",
+                "/gty",
                 "/mental-pain",
-                "/negotiate",
                 "/shame",
-                "/siy",
-                "/win-win"
+                "/siy"
             ],
             "redirect_url": "",
             "title": "Isn't that curious",
@@ -1661,7 +1655,6 @@
                 "/activation",
                 "/d/resistance",
                 "/energy-abundance",
-                "/hobby",
                 "/idle",
                 "/life-as-business",
                 "/manager-book",
@@ -1669,8 +1662,8 @@
                 "/operating-manual",
                 "/physical-health",
                 "/productive",
-                "/psychic-weight",
                 "/sharpen-the-saw",
+                "/slow",
                 "/switch"
             ],
             "last_modified": "2025-08-13T07:43:13-07:00",
@@ -1708,11 +1701,10 @@
                 "/frog",
                 "/gap-year",
                 "/gap-year-igor",
-                "/mental-pain",
                 "/parkinson",
                 "/productive",
                 "/psychic-shadows",
-                "/psychic-weight",
+                "/slow",
                 "/timeoff"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -2043,7 +2035,7 @@
             "doc_size": 31000,
             "file_path": "_site/defi.html",
             "incoming_links": [],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2025-08-25T10:44:01.461914",
             "markdown_path": "_td/defi.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -2221,11 +2213,11 @@
                 "/siy",
                 "/sublime"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2025-08-25T10:36:29.323328",
             "markdown_path": "_d/emotional-health-hold.md",
             "outgoing_links": [
+                "/search-inside-yourself",
                 "/sharpen-the-saw",
-                "/siy",
                 "/sublime",
                 "/voices"
             ],
@@ -2240,7 +2232,7 @@
             "incoming_links": [
                 "/slow"
             ],
-            "last_modified": "2024-12-25T17:59:13-08:00",
+            "last_modified": "2025-08-25T10:44:01.461914",
             "markdown_path": "_d/emotions.md",
             "outgoing_links": [
                 "/anger",
@@ -2385,7 +2377,6 @@
             "incoming_links": [
                 "/4dx",
                 "/affirmations",
-                "/balance",
                 "/be-proactive",
                 "/books-that-defined-me",
                 "/d/time-off-2022-07",
@@ -2433,14 +2424,13 @@
                 "/todo_enjoy",
                 "/work-satisfaction"
             ],
-            "last_modified": "2025-08-19T10:23:51-07:00",
+            "last_modified": "2025-08-25T10:45:08.325756",
             "markdown_path": "_posts/2020-04-01-Igor-Eulogy.md",
             "outgoing_links": [
                 "/7-habits",
                 "/Human-Meetings",
                 "/The-Genesis-Node",
                 "/balloon",
-                "/being-a-great-manager",
                 "/bike",
                 "/cache",
                 "/ig66/687",
@@ -2449,8 +2439,9 @@
                 "/job",
                 "/kettlebell",
                 "/magic",
+                "/manager",
                 "/physical-health",
-                "/process-jounral",
+                "/process-journal",
                 "/siy",
                 "/terzepatide",
                 "/tesla",
@@ -2531,8 +2522,6 @@
                 "/7-habits",
                 "/advice",
                 "/affirmations",
-                "/class-act",
-                "/curious",
                 "/negotiate",
                 "/sell",
                 "/work-satisfaction"
@@ -2745,7 +2734,7 @@
             "doc_size": 32000,
             "file_path": "_site/gpt-7h.html",
             "incoming_links": [],
-            "last_modified": "2025-08-22T10:48:49-07:00",
+            "last_modified": "2025-08-25T10:36:29.323328",
             "markdown_path": "_d/gpt-7-habits.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -2907,11 +2896,11 @@
                 "/operating-manual",
                 "/retire"
             ],
-            "last_modified": "2022-05-09T07:53:36-07:00",
+            "last_modified": "2025-08-25T10:36:29.323328",
             "markdown_path": "_d/hobby.md",
             "outgoing_links": [
-                "/d/habits",
                 "/eulogy",
+                "/habits",
                 "/happy",
                 "/joy",
                 "/magic"
@@ -2955,7 +2944,7 @@
             "doc_size": 23000,
             "file_path": "_site/husband.html",
             "incoming_links": [],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2025-08-25T10:36:29.323328",
             "markdown_path": "_d/good_husband-4.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -2970,8 +2959,7 @@
                 "/anxiety",
                 "/depression",
                 "/gtd",
-                "/happy",
-                "/psychic-weight"
+                "/happy"
             ],
             "last_modified": "2025-07-18T07:57:44-07:00",
             "markdown_path": "_d/idle-loop.md",
@@ -3000,7 +2988,7 @@
                 "/depression",
                 "/work-satisfaction"
             ],
-            "last_modified": "2024-09-14T14:16:00-07:00",
+            "last_modified": "2025-08-25T10:36:29.323328",
             "markdown_path": "_d/imposter.md",
             "outgoing_links": [
                 "/coaching",
@@ -3049,7 +3037,7 @@
             "doc_size": 14000,
             "file_path": "_site/ios-accessibility.html",
             "incoming_links": [],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2025-08-25T10:36:29.323328",
             "markdown_path": "_td/ios-accessibility.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -3064,7 +3052,7 @@
                 "/physical-health",
                 "/td/ios-nomad"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2025-08-25T10:36:29.323328",
             "markdown_path": "_td/irl.md",
             "outgoing_links": [
                 "/bike",
@@ -3448,16 +3436,16 @@
                 "/work-satisfaction",
                 "/y24"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2025-08-25T10:36:29.323328",
             "markdown_path": "_d/mental-pain.md",
             "outgoing_links": [
                 "/addiction",
-                "/d/resistance",
                 "/depression",
                 "/frog",
                 "/lonely",
                 "/physical-pain",
-                "/pride"
+                "/pride",
+                "/resistance"
             ],
             "redirect_url": "",
             "title": "The thoughts that pain us",
@@ -3585,7 +3573,7 @@
                 "/time-off-2024-08",
                 "/time-off-2025-08"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2025-08-25T10:36:29.323328",
             "markdown_path": "_d/2018-04-03-moments.md",
             "outgoing_links": [
                 "/moments-at-work"
@@ -3636,8 +3624,8 @@
             "url": "/monetize"
         },
         "/money": {
-            "description": "Most of the tax information on the web is a mess. It’s confusing as it tries to apply to everyone, with varying situations, and is often written by non-engineers for non-engineers. I think my tax situation is common to people who have been in software engineering companies for most of their careers, and here are my notes\n\n",
-            "doc_size": 55000,
+            "description": "Most of the tax information on the web is a mess. It’s confusing as it tries to apply to everyone, with varying situations, and is often written by non-engineers for non-engineers. I think my tax situation is common to people who have been in software engineering companies for most of their careers, and here are my notes.\n\n",
+            "doc_size": 67000,
             "file_path": "_site/money.html",
             "incoming_links": [
                 "/d/time-off-2020-03",
@@ -3648,7 +3636,7 @@
                 "/retire",
                 "/stock-concentration"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2025-08-25T10:44:01.461914",
             "markdown_path": "_d/taxes.md",
             "outgoing_links": [
                 "/parkinson",
@@ -3709,13 +3697,11 @@
             "doc_size": 22000,
             "file_path": "_site/negotiate.html",
             "incoming_links": [
-                "/curious",
                 "/getting-to-yes-with-yourself",
                 "/happy",
                 "/productive",
                 "/regrets",
                 "/sell",
-                "/synergize",
                 "/work-satisfaction"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -4033,6 +4019,7 @@
             "file_path": "_site/process-journal.html",
             "incoming_links": [
                 "/chop",
+                "/eulogy",
                 "/operating-manual",
                 "/y24",
                 "/y25"
@@ -4164,22 +4151,22 @@
                 "/process-journal",
                 "/psychic-shadows"
             ],
-            "last_modified": "2025-07-18T07:57:44-07:00",
+            "last_modified": "2025-08-25T10:36:29.323328",
             "markdown_path": "_d/psychic-weight.md",
             "outgoing_links": [
                 "/7-habits",
                 "/addiction",
-                "/curious",
-                "/d/habits",
-                "/d/resistance",
                 "/death",
                 "/frog",
+                "/grandmother",
                 "/gtd",
-                "/idle",
+                "/habits",
+                "/idle-loop",
                 "/mental-pain",
                 "/mind-monsters",
                 "/pride",
                 "/psychic-shadows",
+                "/resistance",
                 "/shame",
                 "/siy"
             ],
@@ -4229,13 +4216,13 @@
             "url": "/random-idea"
         },
         "/rapport": {
-            "description": "In today’s fast-paced and interconnected world, building and maintaining strong relationships is essential for personal and professional success. POWER is a five-step process that will help you establish rapport and create meaningful connections with people from all walks of life. The POWER acronym stands for: Proximity Observation, Warmth, Empathy, Relevation\n\n",
+            "description": "In today’s fast-paced and interconnected world, building and maintaining strong relationships is essential for personal and professional success. POWER is a five-step process that will help you establish rapport and create meaningful connections with people from all walks of life. The POWER acronym stands for: Proximity Observation, Warmth, Empathy, Revelation\n\n",
             "doc_size": 33000,
             "file_path": "_site/rapport.html",
             "incoming_links": [
                 "/gpt"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2025-08-25T10:45:08.325756",
             "markdown_path": "_d/rapport.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -4505,7 +4492,6 @@
                 "/curious",
                 "/d/time-off-2020-03",
                 "/depression",
-                "/emotional-health",
                 "/eulogy",
                 "/first-understand",
                 "/gap-year-igor",
@@ -4555,17 +4541,17 @@
             "title": "Keep life on easy mode - Prioritize Sleep",
             "url": "/sleep"
         },
-        "/sleeping-bag-sacrifies": {
+        "/sleeping-bag-sacrifices": {
             "description": "I started in Windows Azure in 2007. Back then, the name “Azure” wasn’t invented, and Azure was still called “Reddog.” I started on the OS team, drawn in by my dream of changing the world, and getting to be Dave Cutler’s lackey. I didn’t get to work with Cutler, but I still may change the world - now that I’ve learned it’s OK to wake sleeping giants. My giant was named Jay.\n\n",
             "doc_size": 16000,
-            "file_path": "_site/sleeping-bag-sacrifies.html",
+            "file_path": "_site/sleeping-bag-sacrifices.html",
             "incoming_links": [],
-            "last_modified": "2020-04-12T19:50:58+00:00",
-            "markdown_path": "_posts/2018-11-06-sleeping-bag-sacrifies.md",
+            "last_modified": "2025-08-25T10:36:02.212401",
+            "markdown_path": "_posts/2018-11-06-sleeping-bag-sacrifices.md",
             "outgoing_links": [],
             "redirect_url": "",
             "title": "Sleeping bag sacrifices",
-            "url": "/sleeping-bag-sacrifies"
+            "url": "/sleeping-bag-sacrifices"
         },
         "/sleight-of-mouth": {
             "description": "Language, often unknown to us, creates our mental models, our reality, and defines our meaning. But the model is not the terrain, and by engaging with the language we can change mental models. Sleight of mouth (SoM) is a series of techniques for changing our models, reality and meanings and thus our experiences. Our mental models are a frame, and we need help going from a ‘problem frame’ to a ‘desired outcome frame’ , a ‘failure frame’, to a ‘feedback frame’ and an ‘impossible frame ‘ to an ‘as if’ frame. To experience the power of language, find anything that is invisible to you, and name it. Now as you’ve given it a name, see how you perceive it, and become aware of it.\n\n",
@@ -4585,7 +4571,7 @@
         },
         "/slow": {
             "description": "Fight or flight, the sympathetic nervous system, gets all the attention, but its twin sister “Rest and Digest” or the parasympathetic nervous system is equally important. These are the two divisions of the Autonomic Nervous system — the stuff that operates without conscious control. While everyone’s obsessed with productivity and hustle, your body’s crying out for balance. Here’s the thing: you can’t sprint a marathon, and life’s definitely a marathon.\n\n",
-            "doc_size": 27000,
+            "doc_size": 29000,
             "file_path": "_site/slow.html",
             "incoming_links": [
                 "/anxiety",
@@ -4593,17 +4579,17 @@
                 "/energy",
                 "/mood"
             ],
-            "last_modified": "2025-08-25T08:23:17.875078",
+            "last_modified": "2025-08-25T08:36:03-07:00",
             "markdown_path": "_d/slow.md",
             "outgoing_links": [
                 "/activation",
                 "/anxiety",
                 "/balance",
+                "/d/habits",
+                "/d/resistance",
                 "/emotions",
                 "/energy",
-                "/habits",
                 "/produce-consume",
-                "/resistance",
                 "/siy"
             ],
             "redirect_url": "",
@@ -4762,7 +4748,6 @@
             "file_path": "_site/sustainable-work.html",
             "incoming_links": [
                 "/42",
-                "/balance",
                 "/being-a-great-manager",
                 "/depression",
                 "/gap-year-igor",
@@ -4807,11 +4792,11 @@
             "incoming_links": [
                 "/7-habits"
             ],
-            "last_modified": "2025-03-07T11:21:07-08:00",
+            "last_modified": "2025-08-25T10:36:29.323328",
             "markdown_path": "_d/7h-c6.md",
             "outgoing_links": [
-                "/7-habits",
-                "/negotiate",
+                "/7h",
+                "/gty",
                 "/win-win"
             ],
             "redirect_url": "",
@@ -4825,7 +4810,7 @@
             "incoming_links": [
                 "/job-hunt-stress"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2025-08-25T10:36:29.323328",
             "markdown_path": "_td/system-design.md",
             "outgoing_links": [
                 "/design",
@@ -5031,7 +5016,7 @@
             "doc_size": 14000,
             "file_path": "_site/td/mosh.html",
             "incoming_links": [],
-            "last_modified": "2020-04-11T16:32:11+00:00",
+            "last_modified": "2025-08-25T10:36:29.323328",
             "markdown_path": "_td/mosh.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -5119,7 +5104,7 @@
             "doc_size": 16000,
             "file_path": "_site/td/usbtech.html",
             "incoming_links": [],
-            "last_modified": "2025-08-22T10:48:49-07:00",
+            "last_modified": "2025-08-25T10:36:29.323328",
             "markdown_path": "_td/usbtech.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -5145,7 +5130,7 @@
             "incoming_links": [
                 "/viz"
             ],
-            "last_modified": "2020-04-11T16:32:11+00:00",
+            "last_modified": "2025-08-25T10:36:29.323328",
             "markdown_path": "_td/visual-vocabulary.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -5255,7 +5240,7 @@
                 "/design",
                 "/manager-book"
             ],
-            "last_modified": "2024-12-31T07:15:11-08:00",
+            "last_modified": "2025-08-25T10:44:01.461914",
             "markdown_path": "_td/testing.md",
             "outgoing_links": [
                 "/ai-testing",
@@ -5333,7 +5318,6 @@
             "doc_size": 37000,
             "file_path": "_site/timeoff.html",
             "incoming_links": [
-                "/balance",
                 "/d/time-off-2020-03",
                 "/d/time-off-2020-12",
                 "/d/time-off-2021-11",
@@ -5630,7 +5614,7 @@
             "incoming_links": [
                 "/balance"
             ],
-            "last_modified": "2024-04-09T09:09:21-07:00",
+            "last_modified": "2025-08-25T10:36:29.323328",
             "markdown_path": "_d/weeks.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -5684,7 +5668,6 @@
             "file_path": "_site/win-win.html",
             "incoming_links": [
                 "/7-habits",
-                "/curious",
                 "/negotiate",
                 "/sell",
                 "/synergize",
