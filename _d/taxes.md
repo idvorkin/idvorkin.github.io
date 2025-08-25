@@ -12,7 +12,7 @@ redirect_from:
   - /savings
 ---
 
-Most of the tax information on the web is a mess. It's confusing as it tries to apply to everyone, with varying situations, and is often written by non-engineers for non-engineers. I think my tax situation is common to people who have been in software engineering companies for most of their careers, and here are my notes
+Most of the tax information on the web is a mess. It's confusing as it tries to apply to everyone, with varying situations, and is often written by non-engineers for non-engineers. I think my tax situation is common to people who have been in software engineering companies for most of their careers, and here are my notes.
 
 {% include local_image_float_right.html src="raccoon-money.webp" %}
 
@@ -24,8 +24,6 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
 - [This one small trick can save half your net worth.](#this-one-small-trick-can-save-half-your-net-worth)
 - [IRAs Non-Taxable Saving Accounts](#iras-non-taxable-saving-accounts)
   - [Taxable income, and capital gains](#taxable-income-and-capital-gains)
-  - [Should I hold my high risk/high return investments in my taxable or non-taxable accounts?](#should-i-hold-my-high-riskhigh-return-investments-in-my-taxable-or-non-taxable-accounts)
-  - [My high risk investments are already in non-taxable, should I sell them and swap them with my taxable account?](#my-high-risk-investments-are-already-in-non-taxable-should-i-sell-them-and-swap-them-with-my-taxable-account)
   - [IRAs vs 401Ks](#iras-vs-401ks)
   - [RMDs Required Minimum Distributions](#rmds-required-minimum-distributions)
   - [IRA vs Roth IRA](#ira-vs-roth-ira)
@@ -33,7 +31,7 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
   - [Back door Roth](#back-door-roth)
   - [The pro-Rata rule](#the-pro-rata-rule)
   - [529s](#529s)
-- [Stock Concentration Risk](#stock-concentration-risk)
+- [RSUs and Stock Concentration Risk](#rsus-and-stock-concentration-risk)
 - [Tracking](#tracking)
   - [Daily Expenses](#daily-expenses)
   - [Retirement Planning](#retirement-planning)
@@ -74,8 +72,8 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
   - [The unquenchable thirst](#the-unquenchable-thirst)
   - [Financial Diabetes: Managing Financial Health](#financial-diabetes-managing-financial-health)
   - [Financial Diabetes Complications](#financial-diabetes-complications)
-- [Other questions](#other-questions)
 - [Appendix](#appendix)
+  - [Q&A to develop](#qa-to-develop)
   - [How much is 1%](#how-much-is-1)
   - [Blast From the Past — My Budget as a College Student](#blast-from-the-past--my-budget-as-a-college-student)
   - [Other Resources](#other-resources)
@@ -85,7 +83,7 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
 
 ## Assumptions and Hannah
 
-You're in the same boat as Hannah. A normal software engineer at big companies with the standard setup. Her company has a 401k. She makes more then she can contribute to a Roth IRA and Tax law is accurate to circa 2019.
+You're in the same boat as Hannah. A normal software engineer at big companies with the standard setup. Her company has a 401k. She makes more than she can contribute to a Roth IRA and Tax law is accurate to circa 2019.
 
 **Hannah** assumptions:
 
@@ -106,7 +104,7 @@ The financial return on investment for successful marriage counseling might be t
 
 ## IRAs Non-Taxable Saving Accounts
 
-An IRA is an account that grows tax free. The critical value of the IRA is the tax free growth. With money not in an IRA you have to pay tax twice 1) when you make the money 2) when the money grows.
+An IRA is an account that grows tax-free. The critical value of the IRA is the tax-free growth. With money not in an IRA you have to pay tax twice 1) when you make the money 2) when the money grows.
 
 IRAs have contribution limits, X, Y, Z
 
@@ -122,20 +120,16 @@ TODO show calculation for IRA growth
 
 Income is the money you make. That starts by being your wages, but as you get assets like stocks, bonds and houses, things get a big more complex. Let start with easy sources of income:
 
-Wages + Bonus: What you're paid at work, you pay the marginal tax rate.
-Interest on Savings and Bonds and Stock Dividends: What you're paid to hold an investment (to assume the risk), you pay the marginal tax rate.
+Wages + Bonus: What you're paid at work; you pay the marginal tax rate.
+Interest on Savings and Bonds and Stock Dividends: What you're paid to hold an investment (to assume the risk); you pay the marginal tax rate.
 
 Capital Gains: If you have assets (houses, shares of companies), you may not get interest, but the asset can appreciate. You need to pay tax on those gains. In general capital gains can be short (STCG) or long term (LTCG), with short term being at the marginal tax rate, and long term having a tax benefits (Hannah: 15% LTCG, vs 34% marginal tax rate).
 
-When retired, you need to get money out of your savings, which you can do by taking interest/dividends or by selling assets. When selling assets, you pay capital gains. This begs a questions, should you keep your capital gains inside or outside your IRAs (where they have tax free growth). Turns out
-
-### Should I hold my high risk/high return investments in my taxable or non-taxable accounts?
-
-### My high risk investments are already in non-taxable, should I sell them and swap them with my taxable account?
+When retired, you need to get money out of your savings, which you can do by taking interest/dividends or by selling assets. When selling assets, you pay capital gains. This raises a question: should you keep your capital gains inside or outside your IRAs (where they have tax-free growth)?
 
 ### IRAs vs 401Ks
 
-A 401k is a special IRA that is setup by your employee that has matching (good thing) but usually less choices of what you can invest in (bad thing). Otherwise, its a regular IRA.
+A 401k is a special IRA that is set up by your employer that has matching (good thing) but usually fewer choices of what you can invest in (bad thing). Otherwise, it's a regular IRA.
 
 ### RMDs Required Minimum Distributions
 
@@ -152,7 +146,7 @@ Assuming your tax rate is the same, it doesn't matter which you choose. If your 
 
 ### IRA and Roth IRA contribution limits
 
-You're limited to how much you can put in your IRA and Roth. Odds are you can't put money into your Roth IRA because you make to much.
+You're limited to how much you can put in your IRA and Roth. Odds are you can't put money into your Roth IRA because you make too much.
 
 ### Back door Roth
 
@@ -160,19 +154,19 @@ Tax law is goofy. You can't deposit money into a ROTH since you're over the limi
 
 ### The pro-Rata rule
 
-Even though you are using after tax dollars to transfer money to the Roth IRA, you can't do the math like that. The rules (arbitrary) state that the money you take over is in the ratio of your IRA before and after tax contribution.
+Even though you are using after-tax dollars to transfer money to the Roth IRA, you can't do the math like that. The rules (arbitrary) state that the money you transfer is in the ratio of your IRA before and after-tax contributions.
 
 ### 529s
 
-An education only after tax savings account. You put in money after tax, get tax free growth, and can use distributions for your kid or grand kids education.
+An education-only after-tax savings account. You put in money after tax, get tax-free growth, and can use distributions for your kids' or grandkids' education.
 
-## Stock Concentration Risk
+## RSUs and Stock Concentration Risk
 
 If you work at a tech company and receive RSUs, you're likely facing concentration risk - when too much of your net worth is tied up in one company's stock. This creates significant financial risk, especially when your job, health insurance, and investments all depend on the same company's performance.
 
 {%include summarize-page.html src="/stock-concentration"%}
 
-For detailed strategies on managing concentrated stock positions, including tax-efficient diversification techniques, protective options strategies, and exchange funds, see the full guide on [Stock Concentration Risk](/stock-concentration).
+For detailed strategies on managing concentrated stock positions, including tax-efficient diversification techniques, protective options strategies, and exchange funds, see the full guide on [RSUs and Stock Concentration Risk](/stock-concentration).
 
 ## Tracking
 
@@ -204,11 +198,11 @@ Taxes are like a step function. From 0 - K1 you pay rate t1, From K1 - K2 you pa
 
 ### Short vs Long term capital gains
 
-Short term capital gains are the same as income, but long term capital gains (assets held longer then a year) are taxed at a lower rate:
+Short-term capital gains are the same as income, but long-term capital gains (assets held longer than a year) are taxed at a lower rate:
 
 Below is tax rate by income in 2020.
 
-| Tax Rate | Married Filing Joiningly |
+| Tax Rate | Married Filing Jointly |
 | -------- | ------------------------ |
 | 15%      | Up to 488K               |
 | 20%      | Above 488K               |
@@ -590,9 +584,9 @@ See [Parkinson's law](/parkinson), which applies to both time and money. The tas
 
 ### Does money make you happy?
 
-Famous study, saying after 75K (maybe 200K now), extra money doesn't make you happy. However, turns out that was flawed, the better model, whci I buy is more money is log linear to happiness.
+Famous study, saying after 75K (maybe 200K now), extra money doesn't make you happy. However, turns out that was flawed. The better model, which I buy, is that money is log-linear to happiness.
 
-E.g. every 10x inecease in money 2x in happiness. So going from 100K to 1M only doubles your happiness.
+E.g., every 10x increase in money doubles happiness. So going from 100K to 1M only doubles your happiness.
 
 Fascinating, the impact of log linear money depends on your happiness [paper](https://github.com/idvorkin/blob/blob/master/papers/money-vs-happiness.pdf)
 
@@ -600,7 +594,7 @@ Fascinating, the impact of log linear money depends on your happiness [paper](ht
 
 {%include blob_image.html src="gdp-delta-1960-2020.png" %}
 
-### Keeping a mortgage you can pay of since interest rates are low
+### Keeping a mortgage you can pay off since interest rates are low
 
 ### Generational wealth and camels
 
@@ -626,15 +620,15 @@ Remember:
 
 ### How to trade money for happiness
 
-1. Money can lower the unhappiness
+1. Money can lower unhappiness
 
 Above that. Buying crap won't make you happy
 
 5 things you can do
 
-1. Buy stuff - bringes least happine
-2. Buy time - time to spend with people love
-3. Buy expeiernces - experiences with people you love.
+1. Buy stuff - brings least happiness
+2. Buy time - time to spend with people you love
+3. Buy experiences - experiences with people you love.
 4. Give it away to others
 5. Save it - Makes you feel secure (limited)
 
@@ -680,14 +674,16 @@ Like medical diabetes, financial diabetes leads to numerous complications if lef
 
 10. **Financial Education Therapy**: Just as diabetes management requires education and lifestyle changes, overcoming financial diabetes requires intentional financial education and the development of new habits - essentially a form of "financial therapy."
 
-## Other questions
+## Appendix
 
+### Q&A to develop
+
+- Should I hold my high risk/high return investments in my taxable or non-taxable accounts?
+- My high risk investments are already in non-taxable, should I sell them and swap them with my taxable account?
 - How long should I hold my RSUs before selling?
-- If I have a pile of cash from selling RSUs, do I invest immediately or dollar cost average? -
+- If I have a pile of cash from selling RSUs, do I invest immediately or dollar cost average?
 - Should I hold any bonds?
 - Where should I keep my emergency fund and how much?
-
-## Appendix
 
 ### How much is 1%
 
