@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Rest and Digest - Sometimes you'd rather go slow "
-tags:
+tagskk:
   - emotional intelligence
 permalink: /slow
 mermaid: true
@@ -24,6 +24,9 @@ Fight or flight, the sympathetic nervous system, gets all the attention, but its
   - [The High-Energy Trap](#the-high-energy-trap)
 - [Understanding Energy States](#understanding-energy-states)
   - [Two Reasons to lower your arousal](#two-reasons-to-lower-your-arousal)
+  - [Low arrousal is not laziness](#low-arrousal-is-not-laziness)
+  - [The reistance blocks low arrousal too](#the-reistance-blocks-low-arrousal-too)
+  - [Is social media/mindless consumption addiiction lowering arrousal?](#is-social-mediamindless-consumption-addiiction-lowering-arrousal)
 - [How to Strengthen Your Parasympathetic Nervous System](#how-to-strengthen-your-parasympathetic-nervous-system)
   - [Breathing Techniques](#breathing-techniques)
   - [Physical Practices](#physical-practices)
@@ -110,6 +113,20 @@ When you're stuck in agitation (high arousal, low pleasure), your body is scream
 
 **2. You want to appreciate and be present (Less obvious, but equally important)**
 Here's what people miss: You can't smell the roses when you're sprinting past them. Gratitude, presence, appreciation — these only bloom in the PNS Zone. When your nervous system is calm, you can actually experience life rather than just surviving it. This is where meaning lives. You could have the perfect life on paper, but if you're always activated, you'll never actually feel it.
+
+### Low arrousal is not laziness
+
+In fact, it might be arrousa
+
+### The reistance blocks low arrousal too
+
+Or alteast, it blocks the activiites that get you ther
+
+{%include summarize-page.html src="/resistance"%}
+
+### Is social media/mindless consumption addiiction lowering arrousal?
+
+I'm not sure, but I suspect it may be
 
 
 ## How to Strengthen Your Parasympathetic Nervous System
