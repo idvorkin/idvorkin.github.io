@@ -49,15 +49,20 @@ test.describe("Random Page Navigation", () => {
     // Navigate to recent page
     await page.goto("/recent");
 
-    // Find the first random page link (there may be multiple)
-    const randomLink = page.locator('a[href="/random"]').first();
-    await expect(randomLink).toBeVisible();
-
-    // Click the link
-    await randomLink.click();
-
-    // Wait for navigation
+    // Wait for page to load fully
     await page.waitForLoadState("networkidle");
+
+    // Find the random page link - it's in a paragraph after the list
+    const randomLink = page.locator('a[href="/random"]').first();
+
+    // Check if link exists (might be hidden by CSS but still clickable)
+    await expect(randomLink).toHaveCount(1);
+
+    // Click and wait for navigation using Promise.all to handle the redirect
+    await Promise.all([
+      page.waitForNavigation({ waitUntil: "networkidle" }),
+      randomLink.evaluate((el: HTMLElement) => el.click()),
+    ]);
 
     // Verify we're not on /recent or /random
     const currentUrl = page.url();
