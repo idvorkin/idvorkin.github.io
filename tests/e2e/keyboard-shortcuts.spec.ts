@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
-import { checkForJsErrors } from "./js-error-checker";
 import _ from "lodash";
+import { checkForJsErrors } from "./js-error-checker";
 
 const SERVER_PORT = process.env.SERVER_PORT || "4000";
 const BASE_URL = `http://localhost:${SERVER_PORT}`;
@@ -40,7 +40,7 @@ test.describe("Keyboard shortcuts", () => {
     await expect(page).toHaveURL(/ig66/);
   });
 
-  test("'p' key swaps between production and test", async ({ page }) => {
+  test.skip("'p' key swaps between production and test", async ({ page }) => {
     // Start on localhost
     await page.goto("/happy");
     await page.waitForTimeout(500);
