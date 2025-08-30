@@ -768,6 +768,8 @@ The smaller version of squander, the idea that you can't squander your work time
 
 ### Work boxing entropy
 
+HUGE Paradox. When we are working, our **disposable time becomes scarce/precious**, increasing its value, making us scrutinize how we spend it (when we have sufficient will power), which results in very high quality time allocation, often far better then if we're on a gap year when we have more time. (Reframe - paradox of plenty) - Scarcity clarifies value. - Parkinson's law
+
 - Entropy is stopped by various forces:
   - Explicit: I wake up every day at 5am because that's my habit
   - Implicit: I wake up every day at 5am because I need to get to work at 6am.
