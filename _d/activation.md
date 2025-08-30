@@ -234,9 +234,11 @@ console.log(ctx, myChart);
 
 [Habits](/habits) are tools to help us reduce the starting energy for things we want to do, and increase the starting energy (and decrease the stopping energy) for our [addictions](/addiction).
 
-### Choices and Excuses
+### Choices, Excuses and Energy Leaks
 
 In the moment choices are very bad for achieving desired results, each time there is a choice the [resistance](/resistance) gets another chance, and it's already very strong.
+
+In strength training there is a notion of energy leaks, places where you're unstable where you "leak energy", I think choices might be like that, they are chances to leak will power
 
 ### We become the average of our peers.
 
