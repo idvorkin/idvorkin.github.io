@@ -234,6 +234,17 @@ console.log(ctx, myChart);
 
 [Habits](/habits) are tools to help us reduce the starting energy for things we want to do, and increase the starting energy (and decrease the stopping energy) for our [addictions](/addiction).
 
+### Choices and Excuses
+
+In the moment choices are very bad for achieving desired results, each time there is a choice the [resistance](/resistance) gets another chance, and it's already very strong.
+
+### We become the average of our peers.
+
+We become the average of our peers, your peers pull you towards them, and you pull them towards you. If your peers are sitting around doing nothing so will you, and if they're all super busy, you'll either become busy too, or find new peers.
+
+- Are you becoming your peers, or are they choosing you?
+- Peers give us a chance to latch on to each others will power (or lack thereof)
+
 ### Schedules
 
 The calendar is a simple tool to reduce stopping and starting energy. If you think about going to the gym, but then need to think about when to go the gym, there's an excellent change you won't go. However, if you know you go to the gym after your morning coffee, the come home and take the kids to school - it's way easier to get it done.
