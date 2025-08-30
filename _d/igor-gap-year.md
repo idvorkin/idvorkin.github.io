@@ -47,6 +47,10 @@ This sits next to [the gap year paradox](/gap-year): same terrain, closer camera
 - [The Dragon Council: Monthly and Quarterly Reviews](#the-dragon-council-monthly-and-quarterly-reviews)
 - [Pre-Battle Preparation: Knowing Your Dragons](#pre-battle-preparation-knowing-your-dragons)
 - [Can 1 become 2? The Extend-to-Year-2 Test](#can-1-become-2-the-extend-to-year-2-test)
+- [Appendix: How Work Boxed the Dragon Deep Dive.](#appendix-how-work-boxed-the-dragon-deep-dive)
+  - [Work boxing Scarcity](#work-boxing-scarcity)
+  - [Work boxing Squander](#work-boxing-squander)
+  - [Work boxing entropy](#work-boxing-entropy)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -291,10 +295,11 @@ _What are the actual dates and numbers?_
 _Come on, can you at least give a formula?_
 
 I think the most conservative:
+
 - Baseline: Hold 2× annual expenses in cash-like accounts
 - Assumptions:
-    - You can find a job in ≤ 12 months (possibly at lower comp)
-    - Expense estimates includes taxes, insurance, repairs, college as required, and an emergency
+  - You can find a job in ≤ 12 months (possibly at lower comp)
+  - Expense estimates includes taxes, insurance, repairs, college as required, and an emergency
 
 **Assumptions that calm the dragon:**
 
@@ -737,11 +742,37 @@ The challenge of the gap year isn't about defeating these dragons - they're immo
 
 Master this, and you don't just take a successful gap year - you learn to live with the fundamental forces that shape every human life. That's the real treasure the dragons guard.
 
----
+## Appendix: How Work Boxed the Dragon Deep Dive.
 
-{% include summarize-page.html src="/voices" %}
-{% include summarize-page.html src="/money" %}
-{% include summarize-page.html src="/retire" %}
-{% include summarize-page.html src="/addiction" %}
-{% include summarize-page.html src="/parkinson" %}
-{% include summarize-page.html src="/lonely" %}
+I think this deserves more thinking, after all the better we can understand this the better.
+
+### Work boxing Scarcity
+
+An easy observation: Work results in you getting a steady pay check, implies you don't have to wrory about money so long as you're not worried about being fired, or exceptional drops in the stock market, or growth in your expenses.
+
+A harder observation: You are only thinking about scarcity in terms of money, not time! Of course, time is constant, so the scarcity of time available to non-work!
+
+Critical Insight: Work slays the "Money Scarcity" dragon, but creates the "Non-Work Time Scarcity" Dragon
+
+### Work boxing Squander
+
+Critical observation: "Gap year is an opportunity that can be squandered", implies you can't squander the time working, something is wrong with that logic, but we get back to that later.
+
+The smaller version of squander, the idea that you can't squander your work time when you're working. How come?
+
+- Management!
+- Managmeent Chain!
+- Peers!
+- Performance Reviews!
+- Clear Expectations!
+- Accountabilities
+- Ceremonies!
+
+### Work boxing entropy
+
+- Entropy is stopped by various forces:
+  - Explicit: I wake up every day at 5am because that's my habit
+  - Implicit: I wake up every day at 5am because I need to get to work at 6am.
+  - Hybrid: I wake up every day at 5am so I'll be ready to do something in the future.
+
+By virtue of accomplishing things, having impact, providing value, you actively fight entroy.

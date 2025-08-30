@@ -522,7 +522,6 @@
                 "/anxiety-management",
                 "/d/resistance",
                 "/first-things-first",
-                "/gap-year-igor",
                 "/happy",
                 "/idle",
                 "/mental-pain",
@@ -1991,7 +1990,6 @@
                 "/chasing-daylight",
                 "/covid",
                 "/elder",
-                "/gap-year-igor",
                 "/last-year",
                 "/mortality-software",
                 "/psychic-weight"
@@ -2615,28 +2613,26 @@
         },
         "/gap-year-igor": {
             "description": "Done right, a gap year isn’t a year off; it’s a year on — intentional investment in health, relationships, and mastery while you still have the capital to invest. Think of it as pursuing a PhD in Life Optimization, making deposits that compound for decades. A gap year is one of those uncharted spaces—seductive when discussed longingly over a beer, terrifying when holding a resignation letter outside your boss’s office. Early maps warned: “HC SVNT DRACONES.” Here be dragons. I’m mapping them in real time: the Scarcity Dragon whispering you can’t afford it, the Entropy Dragon promising you’ll decay without structure, and the Squander Dragon insisting you’ll waste this precious opportunity. But these dragons guard treasure — the chance to invest in what truly matters while you still have the capacity to do so. This is the map of how to tame them.\n\n",
-            "doc_size": 66000,
+            "doc_size": 68000,
             "file_path": "_site/gap-year-igor.html",
             "incoming_links": [
                 "/gap-year",
                 "/stock-concentration",
                 "/time-off-2025-08"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2025-08-30T09:10:18.876223",
             "markdown_path": "_d/igor-gap-year.md",
             "outgoing_links": [
-                "/addiction",
                 "/affirmations",
                 "/chapters",
                 "/chasing-daylight",
                 "/d/resistance",
-                "/death",
                 "/emotional-health",
                 "/end-in-mind",
                 "/gap-year",
                 "/kettlebell",
-                "/lonely",
                 "/money",
+                "/on-being-mortal",
                 "/parkinson",
                 "/physical-health",
                 "/retire",
@@ -2644,10 +2640,9 @@
                 "/sleep",
                 "/stock-concentration",
                 "/structure",
-                "/sustainable-work",
                 "/timeoff",
                 "/tori",
-                "/voices",
+                "/wlb-manifesto",
                 "/y24",
                 "/y25"
             ],
@@ -3282,7 +3277,6 @@
             "doc_size": 43000,
             "file_path": "_site/lonely.html",
             "incoming_links": [
-                "/gap-year-igor",
                 "/mental-pain"
             ],
             "last_modified": "2025-07-13T06:56:50-07:00",
@@ -4766,7 +4760,6 @@
                 "/balance",
                 "/being-a-great-manager",
                 "/depression",
-                "/gap-year-igor",
                 "/overload",
                 "/regrets",
                 "/retire",
@@ -5594,7 +5587,6 @@
                 "/blueprint",
                 "/depression",
                 "/emotional-health",
-                "/gap-year-igor",
                 "/mind-monsters",
                 "/operating-manual"
             ],
