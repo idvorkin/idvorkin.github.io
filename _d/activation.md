@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Activation Energy"
+mathjax: true
 
 permalink: /activation
 redirect_from:
@@ -14,11 +15,11 @@ Doing activities requires will power, addictions and procrastination require neg
 
 ### Activation Energy
 
-To begin an activity, we need to stop the current activity, and start the new one.
+To begin an activity, we need to stop the current activity, and start the new one. E.g.
 
 <p>
-$$ Activation(New, Current) = $$
-$$  Stopping(CurrentActivity) +  $$
+$$ Activation(NewActivity, CurrentActivity) = $$
+$$  StoppingEnergy(CurrentActivity) +  $$
 $$ StartingEnergy(NewActivity)$$
 </p>
 
@@ -39,9 +40,11 @@ const myChart = new Chart(ctx, {
             label:"",
             data: [-50, -10, 5, 20, 80 ],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
+                'rgba(0, 200, 0, 0.6)',      // Green for TikTok (easy/addictive)
+                'rgba(100, 180, 0, 0.6)',     // Light green for Going to Work
+                'rgba(255, 206, 86, 0.6)',    // Yellow for Existing Habit (neutral)
+                'rgba(255, 140, 0, 0.6)',     // Orange for Meditating
+                'rgba(255, 0, 0, 0.6)',       // Red for Thing being avoided (hard)
             ],
         }]
     },
@@ -87,15 +90,15 @@ const myChart = new Chart(ctx, {
 {
 "label": "TikTok",
 "data": [40, 30, 28, 27, 26],
-"borderColor": "lightpink",
-"backgroundColor": "lightpink",
+"borderColor": "rgba(255, 0, 0, 0.8)",      // Red - hard to stop
+"backgroundColor": "rgba(255, 0, 0, 0.2)",
       tension: 0.4,
 },
 {
 "label": "Movie",
 "data": [35, 40, 40, 35, 10],
-"borderColor": "lightgreen",
-"backgroundColor": "lightgreen",
+"borderColor": "rgba(0, 200, 0, 0.8)",      // Green - easier to stop (natural ending)
+"backgroundColor": "rgba(0, 200, 0, 0.2)",
       tension: 0.4,
 },
 ]
@@ -183,15 +186,15 @@ const myChart = new Chart(ctx, {
 {
 "label": "Default",
 "data": [80, 70, 20, 10],
-"borderColor": "lightpink",
-"backgroundColor": "lightpink",
+"borderColor": "rgba(255, 140, 0, 0.8)",    // Orange - moderate/default state
+"backgroundColor": "rgba(255, 140, 0, 0.2)",
 tension: 0.4,
 },
 {
 "label": "With Morning Habits",
 "data": [80, 90, 30, 15],
-"borderColor": "lightgreen",
-"backgroundColor": "lightgreen",
+"borderColor": "rgba(0, 200, 0, 0.8)",      // Green - improved/energized state
+"backgroundColor": "rgba(0, 200, 0, 0.2)",
 tension:0.4,
 }
 ]
