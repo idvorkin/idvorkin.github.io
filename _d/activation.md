@@ -18,9 +18,12 @@ Doing activities requires will power, addictions and procrastination require neg
 To begin an activity, we need to stop the current activity, and start the new one. E.g.
 
 <p>
-$$ Activation(NewActivity, CurrentActivity) = $$
-$$  StoppingEnergy(CurrentActivity) +  $$
-$$ StartingEnergy(NewActivity)$$
+$$
+\text{Energy}_{\text{activation}}
+   = \text{Energy}_{\text{Stop}}\!\left(\text{Activity}_{\text{current}}\right)
+   + \text{Energy}_{\text{Start}}\!\left(\text{Activity}_{\text{new}}\right)
+$$
+
 </p>
 
 ### Starting Energy
