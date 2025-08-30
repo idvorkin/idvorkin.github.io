@@ -300,13 +300,9 @@ I think the most conservative:
 - Assumptions:
   - You can find a job in ≤ 12 months (possibly at lower comp)
   - Expense estimates includes taxes, insurance, repairs, college as required, and an emergency
-
-**Assumptions that calm the dragon:**
-
-- You can find a job in ≤ 12 months (possibly at lower comp)
-- You're not forgetting hidden costs like $40K/year health insurance
-- Expense estimates include taxes, insurance, repairs, college, and emergencies
-- You've tracked expenses for years in [Monarch Money](https://www.monarchmoney.com/) and [Boldin](https://www.boldin.com/)
+  - You're not forgetting hidden costs like $40K/year health insurance
+  - Expense estimates include taxes, insurance, repairs, college, and emergencies
+  - You've tracked expenses for years in [Monarch Money](https://www.monarchmoney.com/) and [Boldin](https://www.boldin.com/)
 
 **The dragon's wisdom (when tamed):**
 From the [Prophet](https://poets.org/poem/giving-0): _"What is fear of need but need itself? Is not dread of thirst when your well is full, the thirst that is unquenchable?"_
@@ -763,10 +759,12 @@ The smaller version of squander, the idea that you can't squander your work time
 - Management!
 - Managmeent Chain!
 - Peers!
+  - NOTE: OK this is much bigger then I imagined.
 - Performance Reviews!
 - Clear Expectations!
 - Accountabilities
 - Ceremonies!
+- Someone asking you OK what have you accomplished.
 
 ### Work boxing entropy
 
