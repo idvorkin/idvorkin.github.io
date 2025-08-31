@@ -3915,14 +3915,14 @@
         },
         "/partner-trouble": {
             "description": "There are two types of couples in the world. Those who fight, and those you don’t know. Your life partnership is the most impactful relationship you have, are you investing sufficiently?\n\n",
-            "doc_size": 29000,
+            "doc_size": 30000,
             "file_path": "_site/partner-trouble.html",
             "incoming_links": [
                 "/gap-year",
                 "/money",
                 "/tori"
             ],
-            "last_modified": "2025-06-17T07:13:07-07:00",
+            "last_modified": "2025-08-31T06:35:00.985749",
             "markdown_path": "_d/partner-trouble.md",
             "outgoing_links": [
                 "/essentialism"
