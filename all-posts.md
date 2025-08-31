@@ -28,9 +28,12 @@ This page lists all blog posts for link checking purposes.
       {% endfor %}
     </span>
     {% endif %}
+    {% comment %} Only show GitHub links in development {% endcomment %}
+    {% if jekyll.environment == 'development' %}
     <a href="https://github.com/idvorkin/idvorkin.github.io/blob/main/{{ post.path }}" class="github-link" target="_blank">
       <i class="fab fa-github"></i>
     </a>
+    {% endif %}
   </li>
   {% endif %}
 {% endfor %}
@@ -45,9 +48,12 @@ This page lists all blog posts for link checking purposes.
     {% if page.date %}
     <span class="post-date">({{ page.date | date: "%Y-%m-%d" }})</span>
     {% endif %}
+    {% comment %} Only show GitHub links in development {% endcomment %}
+    {% if jekyll.environment == 'development' %}
     <a href="https://github.com/idvorkin/idvorkin.github.io/blob/main/{{ page.path }}" class="github-link" target="_blank">
       <i class="fab fa-github"></i>
     </a>
+    {% endif %}
   </li>
 {% endfor %}
 </ul>
@@ -62,9 +68,12 @@ This page lists all blog posts for link checking purposes.
     {% if item.date %}
     <span class="post-date">({{ item.date | date: "%Y-%m-%d" }})</span>
     {% endif %}
+    {% comment %} Only show GitHub links in development {% endcomment %}
+    {% if jekyll.environment == 'development' %}
     <a href="https://github.com/idvorkin/idvorkin.github.io/blob/main/{{ item.path }}" class="github-link" target="_blank">
       <i class="fab fa-github"></i>
     </a>
+    {% endif %}
   </li>
   {% endif %}
 {% endfor %}
@@ -80,9 +89,12 @@ This page lists all blog posts for link checking purposes.
     {% if item.date %}
     <span class="post-date">({{ item.date | date: "%Y-%m-%d" }})</span>
     {% endif %}
+    {% comment %} Only show GitHub links in development {% endcomment %}
+    {% if jekyll.environment == 'development' %}
     <a href="https://github.com/idvorkin/idvorkin.github.io/blob/main/{{ item.path }}" class="github-link" target="_blank">
       <i class="fab fa-github"></i>
     </a>
+    {% endif %}
   </li>
   {% endif %}
 {% endfor %}
@@ -98,9 +110,12 @@ This page lists all blog posts for link checking purposes.
     {% if item.date %}
     <span class="post-date">({{ item.date | date: "%Y-%m-%d" }})</span>
     {% endif %}
+    {% comment %} Only show GitHub links in development {% endcomment %}
+    {% if jekyll.environment == 'development' %}
     <a href="https://github.com/idvorkin/idvorkin.github.io/blob/main/{{ item.path }}" class="github-link" target="_blank">
       <i class="fab fa-github"></i>
     </a>
+    {% endif %}
   </li>
   {% endif %}
 {% endfor %}
