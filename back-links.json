@@ -3970,12 +3970,12 @@
         },
         "/physical-pain": {
             "description": "Physical pain is a universal experience, yet it remains one of the least understood aspects of human health. Whether it’s a stubbed toe or chronic back pain, understanding the nature of physical pain can empower us to manage it effectively and improve our quality of life.\n\n",
-            "doc_size": 27000,
+            "doc_size": 31000,
             "file_path": "_site/physical-pain.html",
             "incoming_links": [
                 "/mental-pain"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2025-09-01T09:31:16.180282",
             "markdown_path": "_d/physical-pain.md",
             "outgoing_links": [
                 "/coe",

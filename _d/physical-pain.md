@@ -15,21 +15,24 @@ Physical pain is a universal experience, yet it remains one of the least underst
 <!-- vim-markdown-toc-start -->
 
 - [Introduction](#introduction)
-  - [Great Books For Across the Board Improvements](#great-books-for-across-the-board-improvements)
-  - [Approaches to Managing Pain](#approaches-to-managing-pain)
-    - [Physio Therapy](#physio-therapy)
-    - [Putting up a tonne of effort to climb the wrong laddaer](#putting-up-a-tonne-of-effort-to-climb-the-wrong-laddaer)
-    - [The source of pain is rarely the place you need to fix it.](#the-source-of-pain-is-rarely-the-place-you-need-to-fix-it)
-    - [Massage, Stretch, Strengthen](#massage-stretch-strengthen)
-    - [Self Release: Massage and Foam Roller, Tennis Ball](#self-release-massage-and-foam-roller-tennis-ball)
-  - [Key Concepts for Pain Management](#key-concepts-for-pain-management)
-    - [Tightness is the signal/symptom it is not the problem.](#tightness-is-the-signalsymptom-it-is-not-the-problem)
-    - [Negative Feedback loop - When you're tight.](#negative-feedback-loop---when-your-tight)
-    - [Flexibility vs Mobility](#flexibility-vs-mobility)
-    - [So why do we do massage, and stretch](#so-why-do-we-do-massage-and-stretch)
-  - [Special Focus: Back Pain](#special-focus-back-pain)
-    - [Stuart McGill And the Big 3](#stuart-mcgill-and-the-big-3)
-    - [Using the 5 whys to understand pain](#using-the-5-whys-to-understand-pain)
+- [Great Books For Across the Board Improvements](#great-books-for-across-the-board-improvements)
+- [Approaches to Managing Pain](#approaches-to-managing-pain)
+  - [Physio Therapy](#physio-therapy)
+  - [Putting up a tonne of effort to climb the wrong laddaer](#putting-up-a-tonne-of-effort-to-climb-the-wrong-laddaer)
+  - [The source of pain is rarely the place you need to fix it.](#the-source-of-pain-is-rarely-the-place-you-need-to-fix-it)
+  - [Massage, Stretch, Strengthen](#massage-stretch-strengthen)
+  - [Self Release: Massage and Foam Roller, Tennis Ball](#self-release-massage-and-foam-roller-tennis-ball)
+- [Key Concepts for Pain Management](#key-concepts-for-pain-management)
+  - [Tightness is the signal/symptom it is not the problem.](#tightness-is-the-signalsymptom-it-is-not-the-problem)
+  - [Negative Feedback loop - When you are tight.](#negative-feedback-loop---when-you-are-tight)
+  - [Flexibility vs Mobility](#flexibility-vs-mobility)
+  - [So why do we do massage, and stretch](#so-why-do-we-do-massage-and-stretch)
+- [Special Focus: Back Pain](#special-focus-back-pain)
+  - [Stuart McGill And the Big 3](#stuart-mcgill-and-the-big-3)
+  - [Using the 5 whys to understand pain](#using-the-5-whys-to-understand-pain)
+  - [Spine Stiffness requires hip and shoulder flexibilty/mobility](#spine-stiffness-requires-hip-and-shoulder-flexibiltymobility)
+  - [Rotation for stiffness](#rotation-for-stiffness)
+  - [Flexibility vs Mobilily](#flexibility-vs-mobilily)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -74,7 +77,7 @@ Inconvenially, masssage only last 20 minutes, stretching a day or 2, but strengt
 
 Physical Pain => Tightness => Signal to Focus => Instead of asing how do I loosen, ask what is weak? how do I strengthen.
 
-#### Negative Feedback loop - When you're tight.
+#### Negative Feedback loop - When you are tight.
 
 Your body is designed to operate smoothly and symettrically. However, we can also operate with mitigations, but those are of course increasing our injury risk. So if we're tight on one side we compensate, and that puts us at higher risk of future injury
 
@@ -127,3 +130,29 @@ From our favorite COE process - the 5 whys:
   - Lack of muscular Endurance
 
 This is what's great about the mcgill big 3, it's isometrics to build endurance, as opposed to strength. And it does so with the minimal amount of back load (which would worsen the injury)
+
+#### Spine Stiffness requires hip and shoulder flexibilty/mobility
+
+Your back supposed to stay strait (especially your lower back), and your motion is supposed to come from your hips and shoulders (Ball and Sockets)
+
+#### Rotation for stiffness
+
+OK, a very hard to read book "Becoming a supple leopoard", but a point which he hammers in no one else does is the importance of external rotation, both in the hips and in the shoulders:
+
+{%include amazon.html asin="1628600837"%}
+
+Coaches talk about "bending the bar bell", or rotating your pits forward or screwing your feet into the ground. What they are "cueing" you for is to externally rotate your humorous or femor into the socket, this pulls the slack out of the joint making it stiff.
+
+Note in the hips, when you pint your feet out you have more ROM, but you loose tension, and that tension has down sides, being stiff gives you strength.
+
+Shoulder external rotation was really hard for me, and also inetsting since the way I do pushups is I let me elbows go perpendictular to my core (which is apparently not what you want).
+
+Lack of should external rotation meant i had really weeak wrists and put extra strain on my wrists.
+
+To have strength, you need stabilitiy or your body shuts off stretngth to avoid injury (hopefully), so you have a few ways to get stiffness, one is stiffning random muscles the other is to
+
+Does stiffning cause alignment?
+
+#### Flexibility vs Mobilily
+
+Flexibility - How far you can move without restriction (aka how far someone can move you) vs how far you can move yourself.
