@@ -480,6 +480,7 @@
             "doc_size": 21000,
             "file_path": "_site/activation.html",
             "incoming_links": [
+                "/addiction",
                 "/balance",
                 "/d/time-off-2021-12",
                 "/energy",
@@ -516,7 +517,7 @@
         },
         "/addiction": {
             "description": "Addiction is not about drugs or alcohol - it is about escape. Quoting “Do the Work”: When we can’t stand the fear, the shame, and the self-reproach that we feel, we obliterate it with an addiction. The addiction becomes the shadow version, the evil twin of our calling to service or to art. That’s why addicts are so interesting and so boring at the same time. They’re interesting because they’re called to something — something new, something unique, something that we, watching, can’t wait to see them bring forth into manifestation. At the same time, they’re boring because they never do the work. The addiction becomes his purpose, his novel, his adventure, his great love. The work of art or service that might have been produced is replaced by the drama, conflict, and suffering of the addict’s crazy, haunted, shattered life.\n\n",
-            "doc_size": 19000,
+            "doc_size": 22000,
             "file_path": "_site/addiction.html",
             "incoming_links": [
                 "/activation",
@@ -532,12 +533,13 @@
                 "/psychic-weight",
                 "/timeoff"
             ],
-            "last_modified": "2025-07-20T19:45:22-07:00",
+            "last_modified": "2025-09-01T09:22:47.505930",
             "markdown_path": "_d/addiction.md",
             "outgoing_links": [
+                "/activation",
                 "/covid",
-                "/elder",
                 "/mental-pain",
+                "/midlife",
                 "/mind-at-work"
             ],
             "redirect_url": "",
@@ -2189,8 +2191,7 @@
             "doc_size": 24000,
             "file_path": "_site/elder.html",
             "incoming_links": [
-                "/40yo",
-                "/addiction"
+                "/40yo"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/elder.md",
