@@ -15,7 +15,7 @@ tags:
 
 In my dream job, I learn the customer and business needs and focus the team on delivering them in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech. When talking to others I prefer a couch to a table, and when I need a break, you might see me juggling, practicing magic, or riding my folding bike—often in the office.
 
-## My Dream job via various lenses
+## My Dream job by Industry Labels
 
 ### Engineering Manager or Tech Lead: Engineering Manager
 
@@ -92,11 +92,11 @@ Technology leaders need to divide their time among the business, experiences, an
 
 **Going to work is like hanging out with friends.**
 
-## My dream job via a motivation lens
+## My Dream job by what motivates me
 
 ### Intrinsic vs Extrinsic Motivation
 
-TL;DR: The best "extrinsic reward" you can give me is more time to spend of my own choosing.
+TL;DR: The "extrinsic reward" I seek out is the intrinsic motivations of Automonmy, Mastery, Purpose
 
 At this point in my career, I'm financially confident and content with my career stage. The closest I have to extrinsic motivation is bonus time off (which ironically I spend a significant chunk of on career development—see mastery).
 
@@ -126,7 +126,7 @@ NOTE: Things that a boss can do **that do not feel like** a lack of autonomy for
   - Play with new AI models/paradigms
   - Play with new tools (now all AI-assist, Python/data libraries)
   - Contribute to open source
-- Growth as presenter
+- Growth as presenter:
   - I need to give talks, make vertical short form videos!
   - I love mixing magic and tech presentations
 - Complex people/collaboration issues
@@ -134,7 +134,7 @@ NOTE: Things that a boss can do **that do not feel like** a lack of autonomy for
 
 ### Purpose
 
-- People Axis: Grow team + Help org
+- People Axis: Grow team + Help org + Mentor others
 - Product Impact: Well-being, reduce loneliness, build relationships
 
 <!--
