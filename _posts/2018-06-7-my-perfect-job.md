@@ -15,7 +15,7 @@ tags:
 
 In my dream job, I learn the customer and business needs and focus the team on delivering them in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech. When talking to others I prefer a couch to a table, and when I need a break, you might see me juggling, practicing magic, or riding my folding bike—often in the office.
 
-## My Dream job by Industry Labels
+## My labels
 
 ### Engineering Manager or Tech Lead: Engineering Manager
 
@@ -92,13 +92,9 @@ Technology leaders need to divide their time among the business, experiences, an
 
 **Going to work is like hanging out with friends.**
 
-## My Dream job by what motivates me
+## My fuels
 
-### Intrinsic vs Extrinsic Motivation
-
-TL;DR: The "extrinsic reward" I seek out is the intrinsic motivations of Automonmy, Mastery, Purpose
-
-At this point in my career, I'm financially confident and content with my career stage. The closest I have to extrinsic motivation is bonus time off (which ironically I spend a significant chunk of on career development—see mastery).
+With 25+ years of experience, I'm both content and confidnt with my career stage. The closest I get to extrinsic motivation is bonus time off (which ironically I spend a significant chunk of on career development—see mastery).
 
 ### Autonomy
 
@@ -107,18 +103,18 @@ At this point in my career, I'm financially confident and content with my career
 - Picking side projects to invest in
 - Having room to explore
 
-NOTE: Things that a boss can do **that do not feel like** a lack of autonomy for me:
+NOTE: Things I want my boss to do **that do not feel like** a lack of autonomy for me:
 
-- It's OK to piss on my shoes, just don't tell me it's raining.
 - Reminding me what is most important
 - Aligning and understanding priorities
 - Input from another perspective (as long as you expect it to be input, for me to evaluate, not an order)
 - Telling me things you worry about and want to review together
+- It's OK to piss on my shoes, just don't tell me it's raining.
 
 ### Mastery
 
 - Dedicated time to retool/think
-- Growth as EM (From team to organization):
+- Growth in core EM skills (From team to organization):
   - Hiring
   - People Growth
   - New manager mentoring
