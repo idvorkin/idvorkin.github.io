@@ -331,8 +331,8 @@ push-backlinks:
         echo "No changes detected in backlinks."
     fi
 
-broken-links:
-    scrapy runspider linkchecker.py -O ~/tmp/brokenlinks.csv && cat ~/tmp/brokenlinks.csv
+broken-links server="localhost:4000":
+    uv run scripts/check_internal_links.py --server {{server}}
 
 prepare:
     husky install
