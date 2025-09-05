@@ -94,7 +94,7 @@ Technology leaders need to divide their time among the business, experiences, an
 
 ## My fuels
 
-With 25+ years of experience, I'm both content and confidnt with my career stage. The closest I get to extrinsic motivation is bonus time off (which ironically I spend a significant chunk of on career development—see mastery).
+With 25+ years of experience, I'm both content and confident with my career stage. The closest I get to extrinsic motivation is bonus time off (which ironically I spend a significant chunk of on career development—see mastery).
 
 ### Autonomy
 
