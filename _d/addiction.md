@@ -11,6 +11,8 @@ redirect_from:
 
 Addiction is not about drugs or alcohol - it is about escape. Quoting "Do the Work": When we can't stand the fear, the shame, and the self-reproach that we feel, we obliterate it with an addiction. The addiction becomes the shadow version, the evil twin of our calling to service or to art. That's why addicts are so interesting and so boring at the same time. They're interesting because they're called to something — something new, something unique, something that we, watching, can't wait to see them bring forth into manifestation. At the same time, they're boring because they never do the work. The addiction becomes his purpose, his novel, his adventure, his great love. The work of art or service that might have been produced is replaced by the drama, conflict, and suffering of the addict's crazy, haunted, shattered life.
 
+**Note on Terminology**: While I use the word "addiction" throughout this document, it's worth noting that clinical addiction (per DSM criteria) requires demonstrable harm. However, many of the patterns I describe here might be better understood as compulsive behaviors or opportunity costs - activities that consume time and energy that could be directed toward more meaningful pursuits. When these opportunity costs accumulate significantly, they become important to address even if they don't meet clinical thresholds for addiction. The key insight remains: these behaviors often serve as escape mechanisms from deeper fears or discomfort with our authentic work.
+
 <!-- prettier-ignore-start -->
 
 
