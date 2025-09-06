@@ -13,6 +13,7 @@ Waiting in line at the grocery store, sitting in an Uber, pooping - in these inv
 
 - [Why: Parasitic energy drain or regenerative braking](#why-parasitic-energy-drain-or-regenerative-braking)
   - [The first responder: boredom](#the-first-responder-boredom)
+  - [Mind the Gap](#mind-the-gap)
   - [Regenerative loops](#regenerative-loops)
   - [Parasitic energy drains](#parasitic-energy-drains)
 - [Other Resources](#other-resources)
@@ -35,6 +36,25 @@ This is very similar to the often phantom, physical pain of hunger. If we aren't
 
 - Junk food prevents us from eating healthy food
 - Junk food erodes our health and diet.
+
+### Mind the Gap
+
+Some more thoughts to develop here.
+
+- Exercise Snacks
+- Analogy to snacking
+- Does how we spend these gaps train our attention
+- Why we have a gap
+  - We are transitioning between activities
+  - We have time before next thing starts
+  - We need a break from what we were doing
+  - One Tasking
+- Relationship to mindfulness
+  - Mindfuless/being present is on a pedestal - maybe it should be, who knows.
+- Stopping energy. Like if you fill gap with something hard to stop you won't go back
+- Reflecting is good, needs boredom.
+- At level 0, is reach out your phone and watch TikTok
+- At Level 100, mind you descend into mindfulness, but mayble level 10 is saying it's OK to be in the gap, and be mindful.
 
 ### Regenerative loops
 
