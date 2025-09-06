@@ -50,7 +50,7 @@ This sits next to [the gap year paradox](/gap-year): same terrain, closer camera
 - [Appendix: How Work Boxed the Dragon Deep Dive.](#appendix-how-work-boxed-the-dragon-deep-dive)
   - [Work boxing Scarcity](#work-boxing-scarcity)
   - [Work boxing Squander](#work-boxing-squander)
-  - [Work boxing entropy](#work-boxing-entropy)
+  - [Work boxing Entropy](#work-boxing-entropy)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -766,7 +766,7 @@ The smaller version of squander, the idea that you can't squander your work time
 - Ceremonies!
 - Someone asking you OK what have you accomplished.
 
-### Work boxing entropy
+### Work boxing Entropy
 
 HUGE Paradox. When we are working, our **disposable time becomes scarce/precious**, increasing its value, making us scrutinize how we spend it (when we have sufficient will power), which results in very high quality time allocation, often far better then if we're on a gap year when we have more time. (Reframe - paradox of plenty) - Scarcity clarifies value. - Parkinson's law
 
@@ -775,4 +775,6 @@ HUGE Paradox. When we are working, our **disposable time becomes scarce/precious
   - Implicit: I wake up every day at 5am because I need to get to work at 6am.
   - Hybrid: I wake up every day at 5am so I'll be ready to do something in the future.
 
-By virtue of accomplishing things, having impact, providing value, you actively fight entroy.
+By virtue of accomplishing things, having impact, providing value, you actively fight entropy.
+
+You are the average of your peers - One day I was at the coffee shop in the middle of the day and I looked around and the only people there were these 3 old men just stairing off into space. We become the average of our peers, and if our peers are all just sitting there stairing off into space, we'll likely soon follow.
