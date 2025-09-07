@@ -41,6 +41,22 @@ I recommend doing the most vigorous cardio activity you can comfortably do multi
 
 Personally, I run 4 miles on a treadmill multiple times a week at the gym. I run inside so weather can't keep me from running, and I keep gym clothes in a locker at the gym so I can't have the "I forgot my gym shoes" excuse either.
 
+### The Long Game of Running: Think in Decades, Not Days
+
+One of the most powerful insights about running (and really any fitness habit) comes from [dynomight.net](https://dynomight.net/2021/01/25/how-to-run-without-all-the-agonizing-pain/):
+
+> You should think as follows: You are starting a habit you will keep for decades. It doesn't matter how hard you run today. What matters is (1) that you do run, and (2) that you enjoy it enough that you'll run again tomorrow. That's it. Are there people who run three times a week for 5 years and still suck at running, however little their willpower is in each session? No! Just go, take it easy, and let time do the work.
+
+This philosophy perfectly aligns with the [atomic habits](/habits) approach - consistency trumps intensity. The magic happens not in the heroic single workout, but in the boring repetition of showing up again and again.
+
+**Key principles for sustainable running:**
+- **Enjoyment over speed**: If you hate it today, you won't do it tomorrow
+- **Consistency over intensity**: Better to run easy three times a week than to burn out trying to run hard
+- **Time as your ally**: Let years of consistent practice do what willpower can't
+- **Remove friction**: Make it easier to run than to skip (hence my gym clothes in a locker)
+
+This isn't about becoming an elite runner tomorrow. It's about becoming someone who runs - and has been running - for decades.
+
 ### Sleeping Soundly
 
 **Sleep is essential** because it allows your body to heal, your brain to think clearly, and you to perform well throughout the day.
@@ -144,6 +160,20 @@ Here's my latest form check video (you can jump to [Hand To Hand](https://www.yo
 I like the Stuart McGill model. Keep the back stiff as a board, which requires your hips and shoulders to have the motion. I find the Heavy Clubs for shoulders and then deep squats/half lotus/pistol squats have me covered for both.
 
 Also, I feel MUCH better when I do bird dogs, but rarely do (oddly PT suggests dead bugs, which i do not enjoy).
+
+#### How do I start running without hating it?
+
+**I want to start running but I've always hated it. How do I not give up after a week?**
+
+The dynomight philosophy is key here: you're not training for a marathon next month, you're becoming someone who runs for decades. Here's how to make it sustainable:
+
+1. **Start embarrassingly slow**: If you can't hold a conversation while running, you're going too fast. Walk-jog intervals are fine.
+2. **Focus on time, not distance**: Start with "I'll move for 15 minutes" rather than "I'll run 2 miles"
+3. **Make it convenient**: Remove every possible excuse. Lay out clothes, find a route from your door, or join a gym near work.
+4. **Track consistency, not performance**: Mark an X on a calendar for every day you run, no matter how slow or short.
+5. **Find your sustainable frequency**: Maybe it's twice a week, maybe it's every other day. Consistency beats intensity.
+
+Remember: there are no people who run consistently for years and remain "bad" at running. Time does the work that willpower can't.
 
 #### What's it like waking up at 5 am
 
