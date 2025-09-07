@@ -41,6 +41,16 @@ I recommend doing the most vigorous cardio activity you can comfortably do multi
 
 Personally, I run 4 miles on a treadmill multiple times a week at the gym. I run inside so weather can't keep me from running, and I keep gym clothes in a locker at the gym so I can't have the "I forgot my gym shoes" excuse either.
 
+#### The Long Game of Running
+
+Here's a perspective that revolutionized how I think about exercise, from the brilliant thinkers at [dynomight.net](https://dynomight.net/2021/01/25/how-to-run-without-all-the-agonizing-pain/):
+
+> "You are starting a habit you will keep for decades. It doesn't matter how hard you run today. What matters is (1) that you do run, and (2) that you enjoy it enough that you'll run again tomorrow."
+
+This perfectly complements my [atomic habits approach](/habits). The key insight: **Think in decades, not days**. Are there people who run three times a week for 5 years and still suck at running, however little their willpower is in each session? No! Just go, take it easy, and let time do the work.
+
+This aligns beautifully with physical health being "rented daily" - it's about consistency over intensity, systems over heroics. The decades frame helps you stay patient with progress and focus on what truly matters: showing up.
+
 ### Sleeping Soundly
 
 **Sleep is essential** because it allows your body to heal, your brain to think clearly, and you to perform well throughout the day.
@@ -78,6 +88,19 @@ First rule of starting new habits - make it easier than you can accomplish. To t
 I don't know if there's any science here, but my target is 30 minutes of cardio.
 
 For me, it's long enough to work up a sweat, but short enough to not eat up my day. I've read that you should either do 30 minutes of low to medium intensity exercise daily or 20 minutes of high intensity exercise 3 times a week. When starting out or when old, I'd recommend low weights high reps to reduce the risk of quitting and injury.
+
+**How do I apply the "decades philosophy" to running?**
+
+Based on [dynomight's brilliant insight](/dynomight-insights), shift your entire mental framework:
+
+- **Don't**: Focus on today's pace, distance, or how you feel
+- **Do**: Focus on whether you enjoyed it enough to come back tomorrow
+- **Don't**: Push through pain or exhaustion to hit arbitrary goals  
+- **Do**: Go easy enough that running feels sustainable and pleasant
+- **Don't**: Compare yourself to other runners or your past performance
+- **Do**: Think "I'm building a habit I'll keep for decades"
+
+The magic happens when you realize: someone who runs easily 3x/week for 5 years will be incredibly fit, regardless of how slow they started. Let time do the work.
 
 #### What is your cardio HIIT protocol?
 
