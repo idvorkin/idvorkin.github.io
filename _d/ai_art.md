@@ -10,20 +10,21 @@ Creativity is a critical aspect of art, and that's something which I think AI ca
 <!-- vim-markdown-toc-start -->
 
 - [Philosophy](#philosophy)
-    - [Sandwich Model of Creativity](#sandwich-model-of-creativity)
-    - [The value of art - inspiration](#the-value-of-art---inspiration)
-    - [Augmented Intelligence](#augmented-intelligence)
-    - [Creativity](#creativity)
-    - [Emotional Impact](#emotional-impact)
-    - [Surprise](#surprise)
+  - [Sandwich Model of Creativity](#sandwich-model-of-creativity)
+  - [The value of art - inspiration](#the-value-of-art---inspiration)
+  - [Augmented Intelligence](#augmented-intelligence)
+  - [Creativity](#creativity)
+  - [Emotional Impact](#emotional-impact)
+  - [Surprise](#surprise)
 - [Tech](#tech)
-    - [Image Generators - Flux, stable diffusion](#image-generators---flux-stable-diffusion)
-    - [TTS (Text to Speech) Read the content back with a different voice](#tts-text-to-speech-read-the-content-back-with-a-different-voice)
-    - [Lipsync a video/audio](#lipsync-a-videoaudio)
-    - [NLP: GPT-3](#nlp-gpt-3)
-    - [Face Generator](#face-generator)
-    - [Word to Image Generator: DALL-E and Stable Diffusion](#word-to-image-generator-dall-e-and-stable-diffusion)
-    - [Not a X](#not-a-x)
+  - [Image Generators - Flux, stable diffusion](#image-generators---flux-stable-diffusion)
+  - [TTS (Text to Speech) Read the content back with a different voice](#tts-text-to-speech-read-the-content-back-with-a-different-voice)
+  - [Lipsync a video/audio](#lipsync-a-videoaudio)
+  - [NLP: GPT-3](#nlp-gpt-3)
+  - [Face Generator](#face-generator)
+  - [Word to Image Generator: DALL-E and Stable Diffusion](#word-to-image-generator-dall-e-and-stable-diffusion)
+  - [Not a X](#not-a-x)
+  - [Song Generator](#song-generator)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -114,3 +115,9 @@ Run stable diffusion on M1 mac (WOW!!) - <https://github.com/brycedrennan/imagin
 These use GAN to create not real things
 
 <https://thisxdoesnotexist.com/>
+
+### Song Generator
+
+- ChatGPT does a great job on lyrics
+- Suno then turns it into music
+- Crazy - back in the day I had to write the music myself and [paid someone to put it to music](https://ig66.blogspot.com/2013/12/the-wheels-full-of-grace.html)
