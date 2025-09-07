@@ -20,6 +20,8 @@ Wearing a silly hat or his zany $8 TEMU crazy shirt, his trusty folding bike at 
 
 _Add comments [here](https://hackmd.io/s90ojEpMTC-t51EFYnUuMw)_
 
+<iframe src="https://suno.com/embed/21be0b93-a44b-4a94-b2d6-39a59fff6283" width="760" height="240"><a href="https://suno.com/song/21be0b93-a44b-4a94-b2d6-39a59fff6283">Listen on Suno</a></iframe>
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
