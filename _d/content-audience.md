@@ -20,6 +20,8 @@ When I started creating content — okay, let's be honest, when I started upload
   - [Music Videos/Dances](#music-videosdances)
   - [Igor's Crazy Commute](#igors-crazy-commute)
   - [Family Adventures](#family-adventures)
+  - [Achievement Unlocked](#achievement-unlocked)
+  - [Jump in the Lake Day](#jump-in-the-lake-day)
 - [2. Welcome to Being Human](#2-welcome-to-being-human)
   - [2. Purpose/Audience](#2-purposeaudience)
   - [Emotional Health](#emotional-health)
@@ -30,6 +32,7 @@ When I started creating content — okay, let's be honest, when I started upload
 - [3. Adventures in Vibe Ville](#3-adventures-in-vibe-ville)
   - [3. Purpose/Audience](#3-purposeaudience)
   - [AI Agent Stories](#ai-agent-stories)
+  - [AI mental model changes](#ai-mental-model-changes)
   - [AI Productivity](#ai-productivity)
   - [Tech Philosophy](#tech-philosophy)
   - [Tool Reviews](#tool-reviews)
@@ -172,9 +175,17 @@ Real experiences with AI agents:
 - Keeping agents fed (managing 4+ agents)
 - Why use the best models (local vs cloud)
 
+### AI mental model changes
+
+- It's not just chatbots - talk about eulogy song (and its impact on me)
+- Dellusions
+
 ### AI Productivity
 
-Practical AI workflows
+- Don't stop thinking! (Though maybe that's OK, think about maps (scary) )
+- Should I learn a better CLI arguments library (good enough, better more DRY code handles more, but it's just an implementation detail, if I specify well, it's like a new compiler optimization for me).
+- I guess it's about better specifications (vs better malliability)
+- Practical AI workflows
 
 ### Tech Philosophy
 
