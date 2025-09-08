@@ -45,7 +45,7 @@ TL;DR:
 
 ### Hyper-personalization can go into dimensions you weren't thinking.
 
-- Not only can you personalize "thoughts and ideas" you can personalize into images, vidoes and songs!
+- Not only can you personalize "thoughts and ideas" you can personalize into images, videos and songs!
 
 ### From high price, to low price
 
