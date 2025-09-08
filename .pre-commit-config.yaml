@@ -74,3 +74,11 @@ repos:
         exclude: "^zz-chop-logs/.*$|back-links.json" # Exclude the zz-chop-logs directory
         pass_filenames: true
         verbose: true
+
+      - id: update-manager-book-toc
+        name: Update manager book table of contents
+        entry: python scripts/generate_toc.py manager-book
+        language: system
+        files: '^(_posts/2016-03-03-the-manager-book-2\.md|_d/manager-book-appendix\.md)$'
+        pass_filenames: false
+        verbose: true
