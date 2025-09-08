@@ -15,9 +15,37 @@ TL;DR:
 
 - Free intelligence, aka AI, un-locks hyper-personalization
 - Into the physical world: When AI has cameras:
+
 - Into the emotional world:
 
+## General
+
+### Why do we like personalization
+
+### Personal Trainer
+
+### Personal Chefs
+
+### TV Channels
+
+- 1 TV Channel
+- 30 TV Channel
+- 300 TV Channels
+- 1000 YouTube Channels
+- 1000000 YouTube Shorts/TikToks (Are there)
+- On Demand Content
+
+### How many flavors of icecream
+
+### How many channels
+
+### It's a matter of degree
+
 ### Like a fish in water it's everywhere
+
+### Hyper-personalization can go into dimensions you weren't thinking.
+
+- Not only can you personalize "thoughts and ideas" you can personalize into images, vidoes and songs!
 
 ### From high price, to low price
 
@@ -28,3 +56,30 @@ TL;DR:
 ### Dimensions on which to persalize
 
 ### Impact on economy
+
+### From discovery to creation
+
+- AI can help you find what you like
+  - E.g. Find movies I'm gonna like from the list
+- AI can then create it
+  - Create a song from your eulogy
+
+### Hyper-personalization to your group or tribe
+
+- Doesnt' have to hyper-personalize to you, can be for you and your partner
+-
+
+## Downside of hyper personalization
+
+### We want shared experiences
+
+- There is something wonderful about everyone knowing the same thing.
+- Like when someone gives you a quote from a movie that you know and enjoy.
+
+### Choice Paralysis
+
+- Too many choices is miserable.
+
+### When do you stop? When is it worth it?
+
+### What makes it good?
