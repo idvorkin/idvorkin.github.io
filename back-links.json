@@ -1446,7 +1446,6 @@
             "file_path": "_site/covid.html",
             "incoming_links": [
                 "/addiction",
-                "/facebook",
                 "/operating-manual"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -2471,15 +2470,15 @@
         },
         "/facebook": {
             "description": "Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven relationships, and providing skip-level escalations and support. Here are my notes on Facebook\n\n",
-            "doc_size": 33000,
+            "doc_size": 34000,
             "file_path": "_site/facebook.html",
             "incoming_links": [
                 "/manager-book-appendix"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2025-09-08T09:16:29.838010",
             "markdown_path": "_d/facebook.md",
             "outgoing_links": [
-                "/covid"
+                "/covid19"
             ],
             "redirect_url": "",
             "title": "My thoughts on Facebook",
