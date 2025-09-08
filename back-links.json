@@ -37,6 +37,7 @@
         "/bbb": "/build-bubble-bike",
         "/begin-with-the-end-in-mind": "/end-in-mind",
         "/bells": "/kettlebell",
+        "/bespoke-everything": "/hyper-personal",
         "/bestiegpt": "/ai-bestie",
         "/bikes": "/bike",
         "/biking": "/bike",
@@ -64,6 +65,8 @@
         "/couple-double-trouble": "/partner-trouble",
         "/couples": "/partner-trouble",
         "/covid19": "/covid",
+        "/create-consume": "/produce-consume",
+        "/creator": "/produce-consume",
         "/cry": "/touching",
         "/cv": "/covid",
         "/data-viz": "/viz",
@@ -97,8 +100,8 @@
         "/frugality": "/parkinson",
         "/frustration": "/anger",
         "/fuck-shame": "/shame",
-        "/future-igor": "/time-traveller",
-        "/future-self": "/time-traveller",
+        "/future-igor": "/time-traveler",
+        "/future-self": "/time-traveler",
         "/genai-intern": "/genai-talk",
         "/getting-things-done": "/gtd",
         "/getting-to-yes": "/negotiate",
@@ -119,6 +122,7 @@
         "/heavy-clubs": "/kettlebell",
         "/high-energy": "/energy-abundance",
         "/humanity": "/touching",
+        "/hyper-personalization": "/hyper-personal",
         "/idle-loop": "/idle",
         "/iina": "/vlc",
         "/imposter": "/insecure",
@@ -177,6 +181,7 @@
         "/procrastinate": "/frog",
         "/procrastination": "/frog",
         "/product-manager": "/product",
+        "/production-consumption": "/produce-consume",
         "/productivity": "/productive",
         "/psych-safety": "/insecure",
         "/psychological-safety": "/insecure",
@@ -201,9 +206,10 @@
         "/savings": "/money",
         "/savor": "/happy",
         "/search-inside-yourself": "/siy",
+        "/shadows": "/psychic-shadows",
         "/simple-and-sinister": "/kettlebell",
         "/sleepless": "/insomnia",
-        "/som": "/sleight-of-mouth",
+        "/some": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
         "/strong": "/physical-health",
@@ -219,6 +225,7 @@
         "/thedip": "/dip",
         "/think": "/writing",
         "/thinking": "/writing",
+        "/thought-spells": "/psychic-shadows",
         "/time-off": "/timeoff",
         "/time-off-2024-02": "/d/time-off-2024-02",
         "/time-off-2024-04": "/d/time-off-2024-04",
@@ -274,7 +281,7 @@
         },
         "/40yo": {
             "description": "In 2002, I started programming at MSFT with lots of other 20-year-olds. I don’t recall the age distributions, but maybe 90% of the programmers I knew were under 40. In 2020, at 41, I’m no longer a programmer, and the majority of programmers are much younger than me. This begs the question, where do all the programmers go as they get older? I’m very curious about the answer. Here are some of my theories….\n\n",
-            "doc_size": 20000,
+            "doc_size": 21000,
             "file_path": "_site/40yo.html",
             "incoming_links": [
                 "/elder"
@@ -428,7 +435,7 @@
         },
         "/Immutable-Laws-Of-Hard": {
             "description": "Exercise, Diet, Personal Development, each of these is governed by the immutable laws of hard things. It’s possible these laws don’t apply to you, but I doubt it.\n\n",
-            "doc_size": 12000,
+            "doc_size": 13000,
             "file_path": "_site/Immutable-Laws-Of-Hard.html",
             "incoming_links": [
                 "/frog",
@@ -472,13 +479,16 @@
         },
         "/activation": {
             "description": "Doing activities requires will power, addictions and procrastination require negative will power, while positive habits, especially new ones require high will power. Here’s a model for these things.\n\n",
-            "doc_size": 19000,
+            "doc_size": 21000,
             "file_path": "_site/activation.html",
             "incoming_links": [
+                "/addiction",
                 "/balance",
                 "/d/time-off-2021-12",
                 "/energy",
-                "/energy-abundance"
+                "/energy-abundance",
+                "/produce-consume",
+                "/slow"
             ],
             "last_modified": "2025-08-30T09:57:08-07:00",
             "markdown_path": "_d/activation.md",
@@ -486,6 +496,7 @@
                 "/addiction",
                 "/blueprint",
                 "/d/habits",
+                "/d/resistance",
                 "/insomnia"
             ],
             "redirect_url": "",
@@ -494,7 +505,7 @@
         },
         "/adblocker-trojan": {
             "description": "Out of the blue I started seeing ads in my google search. They were especially prominent due to the fact they were white, and I use a back background. It was caused by a trojan running in my chrome extension, which I suspect was installed by a name-jacked NPM plugin.\n\n",
-            "doc_size": 17000,
+            "doc_size": 18000,
             "file_path": "_site/adblocker-trojan.html",
             "incoming_links": [
                 "/d/time-off-2021-11"
@@ -508,7 +519,7 @@
         },
         "/addiction": {
             "description": "Addiction is not about drugs or alcohol - it is about escape. Quoting “Do the Work”: When we can’t stand the fear, the shame, and the self-reproach that we feel, we obliterate it with an addiction. The addiction becomes the shadow version, the evil twin of our calling to service or to art. That’s why addicts are so interesting and so boring at the same time. They’re interesting because they’re called to something — something new, something unique, something that we, watching, can’t wait to see them bring forth into manifestation. At the same time, they’re boring because they never do the work. The addiction becomes his purpose, his novel, his adventure, his great love. The work of art or service that might have been produced is replaced by the drama, conflict, and suffering of the addict’s crazy, haunted, shattered life.\n\n",
-            "doc_size": 19000,
+            "doc_size": 22000,
             "file_path": "_site/addiction.html",
             "incoming_links": [
                 "/activation",
@@ -520,12 +531,14 @@
                 "/mental-pain",
                 "/mind-at-work",
                 "/productive",
+                "/psychic-shadows",
                 "/psychic-weight",
                 "/timeoff"
             ],
             "last_modified": "2025-09-01T09:23:45-07:00",
             "markdown_path": "_d/addiction.md",
             "outgoing_links": [
+                "/activation",
                 "/covid",
                 "/elder",
                 "/mental-pain",
@@ -555,7 +568,7 @@
             "doc_size": 22000,
             "file_path": "_site/affirmations.html",
             "incoming_links": [
-                "/igor-gap-year",
+                "/gap-year-igor",
                 "/mortality-software",
                 "/operating-manual",
                 "/process-journal"
@@ -618,8 +631,8 @@
                 "/ai",
                 "/ai-journal"
             ],
-            "last_modified": "2025-09-07T16:44:08.039043",
-            "markdown_path": "_d/ai_art.md",
+            "last_modified": "2025-09-07T17:04:01-07:00",
+            "markdown_path": "_d/ai-art.md",
             "outgoing_links": [
                 "/ai-image",
                 "/gpt"
@@ -675,7 +688,7 @@
         },
         "/ai-image": {
             "description": "Everyone talks about GPT, but you can also generate images. Lately, I’ve been playing with Flux, which is an image generator. You can generate images of me using the idvorkin with this lora on replicate.\n\n",
-            "doc_size": 16000,
+            "doc_size": 17000,
             "file_path": "_site/ai-image.html",
             "incoming_links": [
                 "/ai",
@@ -690,18 +703,20 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get super lost\n\n",
-            "doc_size": 43000,
+            "doc_size": 63000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2025-09-07T17:30:08.133816",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
                 "/ai-security",
-                "/genai-talk",
+                "/ai-talk",
+                "/eulogy",
                 "/gpt",
+                "/hyper-personal",
                 "/idvorkin/idvorkin-flux-lora-1",
                 "/mental-pain"
             ],
@@ -740,7 +755,7 @@
         },
         "/ai-testing": {
             "description": "Testing math is easy, it’s right or wrong. Testing spelling is easy too, but testing if a joke is funny - now that’s tough. Let’s talk about how to test AI.\n\n",
-            "doc_size": 22000,
+            "doc_size": 23000,
             "file_path": "_site/ai-testing.html",
             "incoming_links": [
                 "/ai",
@@ -802,7 +817,7 @@
         },
         "/anxiety": {
             "description": "Anxiety is the difference between reality and expectations. It is the pain, while stress is the suffering. The pain of anxiety is designed for threatening circumstances drawing your attention to a problem requiring urgent attention. This narrows your perspective allowing you to focus on a resolution. However, like many autonomous systems anxiety can be over-triggered, and handled poorly without deliberate action.\n\n",
-            "doc_size": 22000,
+            "doc_size": 23000,
             "file_path": "_site/anxiety.html",
             "incoming_links": [
                 "/affirmations",
@@ -814,6 +829,7 @@
                 "/operating-manual",
                 "/overload",
                 "/productive",
+                "/slow",
                 "/touching",
                 "/voices"
             ],
@@ -823,6 +839,7 @@
                 "/anxiety-management",
                 "/be-proactive",
                 "/idle",
+                "/slow",
                 "/voices"
             ],
             "redirect_url": "",
@@ -831,11 +848,12 @@
         },
         "/anxiety-management": {
             "description": "When your emotions aren’t serving you well, it’s helpful to have a solid protocol. First you need to rebuild perspective, and then you need to focus on maximizing your influence.\n\n",
-            "doc_size": 21000,
+            "doc_size": 22000,
             "file_path": "_site/anxiety-management.html",
             "incoming_links": [
                 "/anxiety",
-                "/fail"
+                "/fail",
+                "/psychic-shadows"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/anxiety_management.md",
@@ -853,7 +871,7 @@
         },
         "/appreciate": {
             "description": "Think of the last time you were appreciated: How did you feel? Think about the last hour: How many things could you have appreciated? It takes 7 positive experiences to make up for 1 negative experience - what can you appreciate?\n\n",
-            "doc_size": 13000,
+            "doc_size": 14000,
             "file_path": "_site/appreciate.html",
             "incoming_links": [
                 "/affirmations",
@@ -870,7 +888,7 @@
         },
         "/ar": {
             "description": "My notes on AR\n\n",
-            "doc_size": 18000,
+            "doc_size": 19000,
             "file_path": "_site/ar.html",
             "incoming_links": [],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -894,7 +912,7 @@
         },
         "/ast-grep": {
             "description": "Sometimes you need to search/replace but on code, so let’s use ASTs for that. The tool is called ast-grep (which you invoke with sg).\n\n",
-            "doc_size": 16000,
+            "doc_size": 17000,
             "file_path": "_site/ast-grep.html",
             "incoming_links": [],
             "last_modified": "2024-09-22T16:18:28-07:00",
@@ -914,7 +932,8 @@
                 "/d/time-off-2021-12",
                 "/energy-abundance",
                 "/life-as-business",
-                "/productive"
+                "/productive",
+                "/slow"
             ],
             "last_modified": "2025-08-24T10:29:13-07:00",
             "markdown_path": "_d/balance2.md",
@@ -928,6 +947,7 @@
                 "/mortality-software",
                 "/parkinson",
                 "/productive",
+                "/slow",
                 "/sustainable-work",
                 "/timeoff",
                 "/weeks"
@@ -956,7 +976,7 @@
         },
         "/bc": {
             "description": "A guide to my favorite spots in British Columbia, focusing on Vancouver and Chilliwack. Whether you’re planning a quick weekend getaway or a longer adventure, here’s what you need to know. These recommendations come from my personal experiences over multiple trips - you can read about some of them in my summer 2024 adventures, Yellow Deli expedition, and various time off adventures:\n\n",
-            "doc_size": 22000,
+            "doc_size": 23000,
             "file_path": "_site/bc.html",
             "incoming_links": [],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -1111,7 +1131,7 @@
         },
         "/breath": {
             "description": "Breathing, an act so simple yet so crucial, harbors the potential to transform our health, mind, and life. This blog post is a deep dive into the world of breathing techniques, exploring a range of practices from Box Breathing and Victory Breath to Sitali Breath and the Breath Focus Technique. Each technique is detailed with its benefits and step-by-step instructions. In addition, the scientific perspective on breathing is explored. Whether you’re seeking to reduce stress, improve focus, or simply understand the science of breathing, this post is your comprehensive guide. Join us as we explore the art of breathing, its techniques, and the science behind it.\n\n",
-            "doc_size": 26000,
+            "doc_size": 27000,
             "file_path": "_site/breath.html",
             "incoming_links": [],
             "last_modified": "2025-03-02T20:00:19-08:00",
@@ -1137,7 +1157,7 @@
         },
         "/brython": {
             "description": "This page is built with brython, a python running in browser via WASM. This is my playground to try interesting things with brython.\n\n",
-            "doc_size": 14000,
+            "doc_size": 15000,
             "file_path": "_site/brython.html",
             "incoming_links": [
                 "/d/time-off-2021-11"
@@ -1182,7 +1202,7 @@
         },
         "/caring": {
             "description": "Let’s define caring, as the intensity of our emotions, critical given a lack of emotional intensity is depression. Intense emotions are synonymous with interest and mental energy, which is a double edged sword: Good caring (commitment to our identity, positive habits) charges us up, but bad caring (attachment, anger, anxiety, focus on things we don’t control), brings us down. When bad caring manifests as repetitive, ruminating thought patterns, they become psychic shadows requiring specialized techniques:\n\n",
-            "doc_size": 22000,
+            "doc_size": 23000,
             "file_path": "_site/caring.html",
             "incoming_links": [
                 "/depression"
@@ -1206,7 +1226,7 @@
             "markdown_path": "_td/fix_cert_error.md",
             "outgoing_links": [],
             "redirect_url": "",
-            "title": "The case of the cert validation error",
+            "title": "The Case of the Cert Validation Error",
             "url": "/cert-error"
         },
         "/chapters": {
@@ -1216,7 +1236,7 @@
             "incoming_links": [
                 "/42",
                 "/gap-year",
-                "/igor-gap-year",
+                "/gap-year-igor",
                 "/lonely",
                 "/retire",
                 "/y25"
@@ -1237,6 +1257,7 @@
             "doc_size": 23000,
             "file_path": "_site/chasing-daylight.html",
             "incoming_links": [
+                "/gap-year-igor",
                 "/last-year"
             ],
             "last_modified": "2025-02-23T06:32:12-08:00",
@@ -1253,7 +1274,7 @@
         },
         "/chop": {
             "description": "Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizing how we write code. Think of those old-school auto shops: AI started as the shop hand, fetching tools and cleaning parts. Then it became an apprentice mechanic, helping diagnose problems and suggesting fixes. Now? It’s a master mechanic, capable of rebuilding entire engines from your high-level specs. Our AIs are getting smarter by the day, and we’ll explore how to make the most of this evolution.\n\n",
-            "doc_size": 56000,
+            "doc_size": 57000,
             "file_path": "_site/chop.html",
             "incoming_links": [
                 "/40yo",
@@ -1319,7 +1340,7 @@
         },
         "/coaching": {
             "description": "Coaching is like midwifery. A midwife can not give birth to the baby, she facilitates the birth. Similarly, a coach can not give a solution, she must give birth to the insight from within the coachee. Coaching is asking questions, guiding, and facilitating understanding, and this post collects my studies on the topic.\n\n",
-            "doc_size": 29000,
+            "doc_size": 30000,
             "file_path": "_site/coaching.html",
             "incoming_links": [
                 "/being-a-great-manager",
@@ -1346,7 +1367,7 @@
             "url": "/coaching"
         },
         "/coe": {
-            "description": "Everyone can make a mistake once, that’s totally fine. Repeating mistakes is unacceptable. Correction of Errors (COE) is the name Amazon gives it’s mechanism for correcting errors. Microsoft uses the term Root cause analysis (RCA), it’s the same concept. This mechanism originated with service outages but can be applied for any “error”, like missing your sons kindergarden graduation, or getting fired.\n\n",
+            "description": "Everyone can make a mistake once, that’s totally fine. Repeating mistakes is unacceptable. Correction of Errors (COE) is the name Amazon gives it’s mechanism for correcting errors. Microsoft uses the term Root cause analysis (RCA), it’s the same concept. This mechanism originated with service outages but can be applied for any “error”, like missing your sons kindergarten graduation, or getting fired.\n\n",
             "doc_size": 16000,
             "file_path": "_site/coe.html",
             "incoming_links": [
@@ -1385,7 +1406,7 @@
         },
         "/content-audience": {
             "description": "When I started creating content — okay, let’s be honest, when I started uploading random videos to YouTube and TikTok — I didn’t have a plan. I’d record something, maybe clean it up in post, and toss it online. No real story, no strategy, and usually… no good. Looking back, I realize I never stopped to ask the two questions that actually matter: Who is this for? And why am I doing it? This blog is me trying to answer those questions — and maybe help you ask them too.\n\n",
-            "doc_size": 21000,
+            "doc_size": 24000,
             "file_path": "_site/content-audience.html",
             "incoming_links": [
                 "/content-creation"
@@ -1393,7 +1414,8 @@
             "last_modified": "2025-08-22T09:27:13-07:00",
             "markdown_path": "_d/content-audience.md",
             "outgoing_links": [
-                "/end-in-mind"
+                "/end-in-mind",
+                "/manager-book"
             ],
             "redirect_url": "",
             "title": "Content Audience",
@@ -1574,14 +1596,14 @@
         },
         "/d/2017-09-10-software-rot": {
             "description": "After a year of not working on one of my hobby software projects, I decided it’d be fun to make a minor change - should only be few lines of code. Should be easier still since I followed all the project best practices: I had full unit tests, and a fully automated command line build but boy was I wrong.\n\n",
-            "doc_size": 13000,
+            "doc_size": 14000,
             "file_path": "_site/d/2017-09-10-software-rot.html",
             "incoming_links": [],
             "last_modified": "2025-08-22T10:48:49-07:00",
             "markdown_path": "_d/2017-09-10-software-rot.md",
             "outgoing_links": [],
             "redirect_url": "",
-            "title": "software-rot",
+            "title": "Software Rot",
             "url": "/d/2017-09-10-software-rot"
         },
         "/d/2017-11-04-clean-architecture": {
@@ -1621,12 +1643,12 @@
             "markdown_path": "_d/2018-09-23-mind-lines.md",
             "outgoing_links": [],
             "redirect_url": "",
-            "title": "mind-lines",
+            "title": "Mind-Lines",
             "url": "/d/2018-09-23-mind-lines"
         },
         "/d/apollo": {
             "description": "The original Kenedy speech\n\n",
-            "doc_size": 15000,
+            "doc_size": 16000,
             "file_path": "_site/d/apollo.html",
             "incoming_links": [],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -1638,7 +1660,7 @@
         },
         "/d/habits": {
             "description": "Habits are the automatic actions, both positive and negative, you take through your life. Atomic Habits describes how to change habits, it’s the how-to manual for “Sharpening the Saw”.\n\n",
-            "doc_size": 20000,
+            "doc_size": 21000,
             "file_path": "_site/d/habits.html",
             "incoming_links": [
                 "/activation",
@@ -1646,7 +1668,6 @@
                 "/energy-abundance",
                 "/hobby",
                 "/idle",
-                "/igor-gap-year",
                 "/life-as-business",
                 "/manager-book",
                 "/mind-at-work",
@@ -1655,6 +1676,7 @@
                 "/productive",
                 "/psychic-weight",
                 "/sharpen-the-saw",
+                "/slow",
                 "/switch"
             ],
             "last_modified": "2025-08-13T07:43:13-07:00",
@@ -1683,6 +1705,7 @@
             "doc_size": 21000,
             "file_path": "_site/d/resistance.html",
             "incoming_links": [
+                "/activation",
                 "/books-that-defined-me",
                 "/enemy",
                 "/energy",
@@ -1691,11 +1714,13 @@
                 "/first-things-first",
                 "/frog",
                 "/gap-year",
-                "/igor-gap-year",
+                "/gap-year-igor",
                 "/mental-pain",
                 "/parkinson",
                 "/productive",
+                "/psychic-shadows",
                 "/psychic-weight",
+                "/slow",
                 "/timeoff"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -1732,7 +1757,7 @@
         },
         "/d/time-off-2020-12": {
             "description": "It’s Corona virus X-mas, and I’ve got 2 weeks off. In an attempt to maximize my personal development and satisfaction during my timeoff, by staying balanced, and minimizing my vegetation I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
-            "doc_size": 22000,
+            "doc_size": 23000,
             "file_path": "_site/d/time-off-2020-12.html",
             "incoming_links": [
                 "/d/time-off-2021-12"
@@ -1772,7 +1797,7 @@
         },
         "/d/time-off-2021-12": {
             "description": "It’s Corona virus X-mas 2021, the not so bad edition, and I’ve got 2 weeks off. In an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
-            "doc_size": 22000,
+            "doc_size": 23000,
             "file_path": "_site/d/time-off-2021-12.html",
             "incoming_links": [
                 "/d/time-off-2022-12"
@@ -1793,7 +1818,7 @@
         },
         "/d/time-off-2022-02": {
             "description": "It’mid winter break and I’ve got a week off. In an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
-            "doc_size": 19000,
+            "doc_size": 20000,
             "file_path": "_site/d/time-off-2022-02.html",
             "incoming_links": [],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -1811,7 +1836,7 @@
         },
         "/d/time-off-2022-07": {
             "description": "It’s FISM (olympics of magic), and I’m going to Quebec city to reenergize my love of magic, since I’m already in Canada I’ll also spend time with My Mom, Sister, and college room mate.\n\n",
-            "doc_size": 26000,
+            "doc_size": 27000,
             "file_path": "_site/d/time-off-2022-07.html",
             "incoming_links": [],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -1860,8 +1885,8 @@
             "url": "/d/time-off-2022-12"
         },
         "/d/time-off-2023-04": {
-            "description": "It’s spring break 2023! The kids and I are going to Canada to see Baba, Yelena, Justin, Sam and Baltasar and Rada’s Famliy. Unfortunately Tori can’t come as she’s critical to her play opening and it’ll be opening that week.\n\n",
-            "doc_size": 18000,
+            "description": "It’s spring break 2023! The kids and I are going to Canada to see Baba, Yelena, Justin, Sam and Baltasar and Rada’s Family. Unfortunately Tori can’t come as she’s critical to her play opening and it’ll be opening that week.\n\n",
+            "doc_size": 19000,
             "file_path": "_site/d/time-off-2023-04.html",
             "incoming_links": [],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -1893,7 +1918,7 @@
         },
         "/d/time-off-2023-11": {
             "description": "It’s time for our annual thanksgiving 2023 trip to Oregon!\n\n",
-            "doc_size": 17000,
+            "doc_size": 18000,
             "file_path": "_site/d/time-off-2023-11.html",
             "incoming_links": [],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -1909,7 +1934,7 @@
         },
         "/d/time-off-2024-02": {
             "description": "It’s midwinter break and I’ve got a week off. Most of these I try to do as a big family adventure. Finding something everyone wants to do is super challenging, so this time we tried something new, divide and conquer: I had a 1-2 day mini-vacations with Amelia, Zach, and even Tori. It worked out very well, the time-off was packed, Stanley Park with Amelia, Yellow Deli with Zach, and a crazy hotel on the Peninsula with Tori. On top of that restarting magic, balloons, and kettlebells and meditation in between.\n\n",
-            "doc_size": 22000,
+            "doc_size": 23000,
             "file_path": "_site/d/time-off-2024-02.html",
             "incoming_links": [
                 "/bc",
@@ -1929,7 +1954,7 @@
         },
         "/d/time-off-2024-04": {
             "description": "It’s spring break 2024 and I’ve got a week off. The last few weeks have been a bit crazy at work trying to get some big features launched and into public testing, so very excited for the time off. I usually try to avoid too much tech, but I’m looking forward to making some tech investments as it’s been a while.\n\n",
-            "doc_size": 19000,
+            "doc_size": 20000,
             "file_path": "_site/d/time-off-2024-04.html",
             "incoming_links": [],
             "last_modified": "2025-08-18T10:03:29-07:00",
@@ -1974,6 +1999,7 @@
                 "/chasing-daylight",
                 "/covid",
                 "/elder",
+                "/gap-year-igor",
                 "/last-year",
                 "/mortality-software",
                 "/psychic-weight"
@@ -2050,7 +2076,7 @@
         },
         "/depression": {
             "description": "When you’re depressed you don’t think you’ve put on a gray veil - seeing the world through the haze of a bad mood. You think that a veil has been taken away. The veil of happiness, and you believe you’re seeing the world as it truly is: alone, petrifying, and painful. But the truth lies. The depressed say “No one loves me.” And you say, “I love you, your wife loves you, your mother loves you.” and the depressed ignore you. The depressed will continue, “None of this matters, we’re just going to die in the end.” To which you have to say, “That’s true, but I think right now should focus on what to have for breakfast.”\n\n",
-            "doc_size": 21000,
+            "doc_size": 22000,
             "file_path": "_site/depression.html",
             "incoming_links": [
                 "/anger",
@@ -2099,19 +2125,20 @@
                 "/testing"
             ],
             "redirect_url": "",
-            "title": "Software Design And Architecture",
+            "title": "Software Design and Architecture",
             "url": "/design"
         },
         "/diet": {
-            "description": "Diet dominates weight, as weight is simple arithemtic -“calories in” minus “calories out”. Weight is essential because it reduces the effort required to do physical activities, and because it reduces the risk of many diseases. Exercise, while critical to energy, is mostly a red herring for weight loss. A great way to see this is comparing what you eat to physical Activity. A side of fries adds 500 calories to your day, but running for 30 minutes only burns 300 calories.\n\n",
-            "doc_size": 18000,
+            "description": "Diet dominates weight, as weight is simple arithmetic -“calories in” minus “calories out”. Weight is essential because it reduces the effort required to do physical activities, and because it reduces the risk of many diseases. Exercise, while critical to energy, is mostly a red herring for weight loss. A great way to see this is comparing what you eat to physical Activity. A side of fries adds 500 calories to your day, but running for 30 minutes only burns 300 calories.\n\n",
+            "doc_size": 19000,
             "file_path": "_site/diet.html",
             "incoming_links": [
                 "/42",
                 "/operating-manual",
                 "/physical-health",
                 "/retire",
-                "/sharpen-the-saw"
+                "/sharpen-the-saw",
+                "/timeoff"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/diet.md",
@@ -2125,7 +2152,7 @@
         },
         "/dip": {
             "description": "New things start fun, but once the new wears off they are hard because of the Dip. The Dip is the long slog between starting and mastery. Unlike Dips, cul-de-sacs are places you can put in a lot of energy and nothing will come of it. You need to quit cul-de-sacs and lean into dips. Much of our failure comes from being distracted by tasks we don’t have the guts to quit. Winners quit all the time. They quit the right stuff, so their energy can be saved to cross the Dip.\n\n",
-            "doc_size": 31000,
+            "doc_size": 32000,
             "file_path": "_site/dip.html",
             "incoming_links": [
                 "/d/2016-2-15-Seth-Godin-Notes",
@@ -2144,7 +2171,7 @@
         },
         "/docker": {
             "description": "Docker has 2 values, isolation and repeatable setup. Here are my notes\n\n",
-            "doc_size": 13000,
+            "doc_size": 14000,
             "file_path": "_site/docker.html",
             "incoming_links": [],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -2192,7 +2219,7 @@
             "file_path": "_site/emotional-health.html",
             "incoming_links": [
                 "/essentialism",
-                "/igor-gap-year",
+                "/gap-year-igor",
                 "/irl",
                 "/mania",
                 "/mind-at-work",
@@ -2216,9 +2243,11 @@
         },
         "/emotions": {
             "description": "Ever notice how emotions are like that one friend who shows up uninvited and fucks up your perfectly planned party? Sometimes they bring cake and make everything awesome, other times they’re drunk and knocking over your carefully arranged furniture while screaming “YOLO!” Well, here’s your guide to that emotional party crasher living rent-free in your head, because let’s face it - they’re not moving out anytime soon.\n\n",
-            "doc_size": 15000,
+            "doc_size": 16000,
             "file_path": "_site/emotions.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/slow"
+            ],
             "last_modified": "2024-12-25T17:59:13-08:00",
             "markdown_path": "_d/emotions.md",
             "outgoing_links": [
@@ -2267,7 +2296,7 @@
                 "/content-audience",
                 "/d/resistance",
                 "/elder",
-                "/igor-gap-year",
+                "/gap-year-igor",
                 "/manager-book",
                 "/productive",
                 "/siy"
@@ -2288,7 +2317,7 @@
         },
         "/enemy": {
             "description": "Fear, Arrogance, Authority, and Apathy are the four enemies of satisfaction as described in Don Juan’s teachings.\n\n",
-            "doc_size": 15000,
+            "doc_size": 16000,
             "file_path": "_site/enemy.html",
             "incoming_links": [
                 "/chapters",
@@ -2306,13 +2335,14 @@
         },
         "/energy": {
             "description": "We often say we don’t have time, but usually we mean we don’t have energy. That’s great news because time is finite, and monotonically decreasing. Energy, by contrast, is dynamic. Activities and experiences can create and destroy energy. What’s amazing to me is how going to the gym can be energy positive.\n\n",
-            "doc_size": 18000,
+            "doc_size": 19000,
             "file_path": "_site/energy.html",
             "incoming_links": [
                 "/balance",
                 "/energy-abundance",
                 "/mood",
                 "/productive",
+                "/slow",
                 "/timeoff"
             ],
             "last_modified": "2025-08-24T10:29:13-07:00",
@@ -2326,6 +2356,7 @@
                 "/operating-manual",
                 "/productive",
                 "/sleep",
+                "/slow",
                 "/timeoff"
             ],
             "redirect_url": "",
@@ -2394,6 +2425,7 @@
             "file_path": "_site/eulogy.html",
             "incoming_links": [
                 "/7-habits",
+                "/ai-journal",
                 "/balance",
                 "/bmy",
                 "/depression",
@@ -2409,7 +2441,7 @@
                 "/todo_enjoy",
                 "/work-satisfaction"
             ],
-            "last_modified": "2025-08-25T10:46:49-07:00",
+            "last_modified": "2025-09-07T16:11:35-07:00",
             "markdown_path": "_posts/2020-04-01-Igor-Eulogy.md",
             "outgoing_links": [
                 "/7-habits",
@@ -2426,10 +2458,11 @@
                 "/kettlebell",
                 "/magic",
                 "/physical-health",
-                "/process-jounral",
+                "/process-journal",
                 "/siy",
                 "/terzepatide",
                 "/tesla",
+                "/tori",
                 "/toysfortots"
             ],
             "redirect_url": "",
@@ -2438,7 +2471,7 @@
         },
         "/facebook": {
             "description": "Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven relationships, and providing skip-level escalations and support. Here are my notes on Facebook\n\n",
-            "doc_size": 32000,
+            "doc_size": 33000,
             "file_path": "_site/facebook.html",
             "incoming_links": [
                 "/manager-book-appendix"
@@ -2500,7 +2533,7 @@
         },
         "/first-understand": {
             "description": "Imagine going to the eye doctor. After hearing your complaint he takes off his glasses and hands them to you.\n“Put these on,” he says. “I’ve worn this pair of glasses for ten years now and they’ve really helped me. I have an extra pair at home; you can wear these.” So you put them on, but it only makes the problem worse. “This is terrible!” you exclaim. “I can’t see a thing!” “Well, what’s wrong?” he asks. “They work great for me. Try harder.” “I am trying,” you insist. “Everything is a blur.” “Well, what’s the matter with you? Think positively.” “Okay. I positively can’t see a thing.” “Boy, are you ungrateful!” he chides. “And after all I’ve done to help you!”\n\n",
-            "doc_size": 17000,
+            "doc_size": 18000,
             "file_path": "_site/first-understand.html",
             "incoming_links": [
                 "/7-habits",
@@ -2564,7 +2597,7 @@
             "doc_size": 33000,
             "file_path": "_site/gap-year.html",
             "incoming_links": [
-                "/igor-gap-year",
+                "/gap-year-igor",
                 "/monetize",
                 "/retire",
                 "/stock-concentration"
@@ -2575,7 +2608,7 @@
                 "/chapters",
                 "/d/resistance",
                 "/decisive",
-                "/igor-gap-year",
+                "/gap-year-igor",
                 "/money",
                 "/partner-trouble",
                 "/physical-health",
@@ -2587,6 +2620,45 @@
             "redirect_url": "",
             "title": "The Gap Year Paradox: Why Taking a Year Off at 50 beats retiring at 65",
             "url": "/gap-year"
+        },
+        "/gap-year-igor": {
+            "description": "Done right, a gap year isn’t a year off; it’s a year on — intentional investment in health, relationships, and mastery while you still have the capital to invest. Think of it as pursuing a PhD in Life Optimization, making deposits that compound for decades. A gap year is one of those uncharted spaces—seductive when discussed longingly over a beer, terrifying when holding a resignation letter outside your boss’s office. Early maps warned: “HC SVNT DRACONES.” Here be dragons. I’m mapping them in real time: the Scarcity Dragon whispering you can’t afford it, the Entropy Dragon promising you’ll decay without structure, and the Squander Dragon insisting you’ll waste this precious opportunity. But these dragons guard treasure — the chance to invest in what truly matters while you still have the capacity to do so. This is the map of how to tame them.\n\n",
+            "doc_size": 68000,
+            "file_path": "_site/gap-year-igor.html",
+            "incoming_links": [
+                "/gap-year",
+                "/stock-concentration",
+                "/time-off-2025-08"
+            ],
+            "last_modified": "2025-09-06T12:12:27-07:00",
+            "markdown_path": "_d/igor-gap-year.md",
+            "outgoing_links": [
+                "/affirmations",
+                "/chapters",
+                "/chasing-daylight",
+                "/d/resistance",
+                "/death",
+                "/emotional-health",
+                "/end-in-mind",
+                "/gap-year",
+                "/kettlebell",
+                "/money",
+                "/parkinson",
+                "/physical-health",
+                "/retire",
+                "/siy",
+                "/sleep",
+                "/stock-concentration",
+                "/structure",
+                "/sustainable-work",
+                "/timeoff",
+                "/tori",
+                "/y24",
+                "/y25"
+            ],
+            "redirect_url": "",
+            "title": "Will Igor Take a Gap Year? Wrestling with Dragons and Dreams",
+            "url": "/gap-year-igor"
         },
         "/genai-talk": {
             "description": "Generative AI (GenAI) is taking the world by storm, and it takes a new mindset to make use of it as a programmer. A good mental model of GenAI is interns!\n\n",
@@ -2606,7 +2678,7 @@
         },
         "/getting-to-yes-with-yourself": {
             "description": "Before you can negotiate with others, you need to be in sync with yourself. This book applies the negotiating principles to yourself. It’s an awkward application of the model, but this book is filled with good concepts regardless.\n\n",
-            "doc_size": 24000,
+            "doc_size": 25000,
             "file_path": "_site/getting-to-yes-with-yourself.html",
             "incoming_links": [
                 "/books-that-defined-me",
@@ -2642,8 +2714,8 @@
             "url": "/goals"
         },
         "/google-photos": {
-            "description": "I like having a blog, but honestly it’s faster to write it in google photos as that has a better WYSWIG viewer. But, I don’t get features like search, or previews, which matters to me. I also don’t trust Google not to break photos in the future. Of course exporting is a PITA, here are some hacks to export and make it into my blog format. NOTE: There is an API to extrat photos, but it doesn’t include the text (which I like to have, as recall WYSWIG editor)\n\n",
-            "doc_size": 15000,
+            "description": "I like having a blog, but honestly it’s faster to write it in google photos as that has a better WYSWIG viewer. But, I don’t get features like search, or previews, which matters to me. I also don’t trust Google not to break photos in the future. Of course exporting is a PITA, here are some hacks to export and make it into my blog format. NOTE: There is an API to extract photos, but it doesn’t include the text (which I like to have, as recall WYSWIG editor)\n\n",
+            "doc_size": 16000,
             "file_path": "_site/google-photos.html",
             "incoming_links": [],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -2682,7 +2754,7 @@
             "markdown_path": "_d/gpt-7-habits.md",
             "outgoing_links": [],
             "redirect_url": "",
-            "title": "LEADER: Another take on the 7 habts",
+            "title": "LEADER: Another Take on the 7 Habits",
             "url": "/gpt-7h"
         },
         "/gpt-system-design": {
@@ -2733,12 +2805,12 @@
             "markdown_path": "_d/grateful2.md",
             "outgoing_links": [],
             "redirect_url": "",
-            "title": "Gratefulnes",
+            "title": "Gratefulness",
             "url": "/grateful"
         },
         "/groupchat": {
             "description": "Imagine a group chat as the bustling kitchen of a high-end restaurant. In place of culinary masterpieces, it’s ideas, gossip, and insights that are cooked up, seasoned, and served. Just as a great dinner party brings together eclectic personalities for a memorable evening, a stellar group chat assembles diverse voices for ongoing, vibrant conversations. Basically Sriram’s awesome post on great group chats.\n\n",
-            "doc_size": 23000,
+            "doc_size": 24000,
             "file_path": "_site/groupchat.html",
             "incoming_links": [],
             "last_modified": "2024-06-08T09:10:34-07:00",
@@ -2822,7 +2894,7 @@
         },
         "/heath-class-act": {
             "description": "\n\n\n",
-            "doc_size": 31000,
+            "doc_size": 32000,
             "file_path": "_site/heath-class-act.html",
             "incoming_links": [],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -2855,7 +2927,7 @@
         },
         "/human-meetings": {
             "description": "Having our emotions heard is a fundamental human need. The modern world denies this need, but that doesn’t make the need go away. More than denying the need, society gives, and encourages, us to suppress our emotions. Feelings meetings stand in opposition. They exist to allow us, no, encourage us, to fulfill our fundamental need of expressing emotion.\n\n",
-            "doc_size": 14000,
+            "doc_size": 15000,
             "file_path": "_site/human-meetings.html",
             "incoming_links": [
                 "/being-a-great-manager",
@@ -2895,9 +2967,23 @@
             "title": "Being a GOOD Husband",
             "url": "/husband"
         },
+        "/hyper-personal": {
+            "description": "Useful writing tells people (including, possibly most importantly you) something true and important that they didn’t already know in a way that leaves no doubt. And Everyone is different. So how to do both?\n\n",
+            "doc_size": 15000,
+            "file_path": "_site/hyper-personal.html",
+            "incoming_links": [
+                "/ai-journal"
+            ],
+            "last_modified": "2025-09-07T17:01:25-07:00",
+            "markdown_path": "_d/hyper-personal.md",
+            "outgoing_links": [],
+            "redirect_url": "",
+            "title": "Hyper Personalization",
+            "url": "/hyper-personal"
+        },
         "/idle": {
             "description": "Waiting in line at the grocery store, sitting in an Uber, pooping - in these invisible times, we execute our idle loop. We spend a lot of time in our idle loop, and it can either increase our energy or drain it. By being aware of and then modifying how we spend our idle loop we can improve our lives one poop at a time.\n\n",
-            "doc_size": 17000,
+            "doc_size": 18000,
             "file_path": "_site/idle.html",
             "incoming_links": [
                 "/anxiety",
@@ -2923,44 +3009,9 @@
             "title": "Your idle loop",
             "url": "/idle"
         },
-        "/igor-gap-year": {
-            "description": "The gap year concept is compelling in theory, but what does it look like when rubber meets road? Here’s my real-time wrestling match with the dragons guarding this treasure of time, complete with all the messy financial calculations, identity crises, and voice-in-head battles that come with considering a year off at 50.\n\n",
-            "doc_size": 39000,
-            "file_path": "_site/igor-gap-year.html",
-            "incoming_links": [
-                "/gap-year",
-                "/stock-concentration",
-                "/time-off-2025-08"
-            ],
-            "last_modified": "2025-09-06T12:12:27-07:00",
-            "markdown_path": "_d/igor-gap-year.md",
-            "outgoing_links": [
-                "/affirmations",
-                "/chapters",
-                "/d/habits",
-                "/d/resistance",
-                "/emotional-health",
-                "/end-in-mind",
-                "/gap-year",
-                "/kettlebell",
-                "/lonely",
-                "/money",
-                "/physical-health",
-                "/retire",
-                "/siy",
-                "/sustainable-work",
-                "/timeoff",
-                "/voices",
-                "/y24",
-                "/y25"
-            ],
-            "redirect_url": "",
-            "title": "Will Igor Take a Gap Year? Wrestling with Dragons and Dreams at 50",
-            "url": "/igor-gap-year"
-        },
         "/insecure": {
             "description": "We all get it. Imposter syndrome, which includes shame\n\n",
-            "doc_size": 14000,
+            "doc_size": 15000,
             "file_path": "_site/insecure.html",
             "incoming_links": [
                 "/90days",
@@ -2980,7 +3031,7 @@
         },
         "/insomnia": {
             "description": "Insomnia controls you, instead of you controlling your sleep. If you want advice on how to deal with insomnia, do NOT ask a person who hasn’t slept in two nights. Instead, ask someone who’s had insomnia several times, and has a checklist on how to respond when insomnia flares up. By the way, I’ve never actually taken this advice, but maybe writing it down will make it more likely that I’ll take it in the future.\n\n",
-            "doc_size": 15000,
+            "doc_size": 16000,
             "file_path": "_site/insomnia.html",
             "incoming_links": [
                 "/activation",
@@ -3014,7 +3065,7 @@
         },
         "/ios-accessibility": {
             "description": "iOS has some great accessibility features which allow hands-free and eye-less control of the device. Here they are.\n\n",
-            "doc_size": 13000,
+            "doc_size": 14000,
             "file_path": "_site/ios-accessibility.html",
             "incoming_links": [],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -3026,7 +3077,7 @@
         },
         "/irl": {
             "description": "I started writing a technical blog to help me remember the many things I explore. One day, I realized I’ve got a real life too. Here’s a place I can remember the many things I explore IRL (In real Life)\n\n",
-            "doc_size": 78000,
+            "doc_size": 79000,
             "file_path": "_site/irl.html",
             "incoming_links": [
                 "/physical-health",
@@ -3057,7 +3108,7 @@
                 "/manager-book",
                 "/manager-book-appendix"
             ],
-            "last_modified": "2025-09-05T07:25:38-07:00",
+            "last_modified": "2025-09-07T05:53:44-07:00",
             "markdown_path": "_posts/2018-06-7-my-perfect-job.md",
             "outgoing_links": [
                 "/Human-Meetings",
@@ -3151,7 +3202,7 @@
             "file_path": "_site/kettlebell.html",
             "incoming_links": [
                 "/eulogy",
-                "/igor-gap-year",
+                "/gap-year-igor",
                 "/physical-health",
                 "/timeoff",
                 "/untangled",
@@ -3250,7 +3301,6 @@
             "doc_size": 43000,
             "file_path": "_site/lonely.html",
             "incoming_links": [
-                "/igor-gap-year",
                 "/mental-pain"
             ],
             "last_modified": "2025-07-13T06:56:50-07:00",
@@ -3287,12 +3337,13 @@
         },
         "/manager-book": {
             "description": "Being an engineering manager is hard. Supporting people well is harder. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds me how to behave and encourages my own continuous improvement.\n\n",
-            "doc_size": 168000,
+            "doc_size": 169000,
             "file_path": "_site/manager-book.html",
             "incoming_links": [
                 "/amazon",
                 "/being-a-great-manager",
                 "/coaching",
+                "/content-audience",
                 "/job",
                 "/manager-book-appendix",
                 "/retire",
@@ -3364,7 +3415,7 @@
         },
         "/mania": {
             "description": "The words that follow, I pray will never be my own – What pains me most is I see how crystal clear my illness was in the beginning and how I was surrounded by so much love. So, so many family and friends were desperately trying to intervene, and I spurned them and then reacted despicably. I am so, so sorry. I failed as a husband, a father, a brother, friend, and as a kind human being. It is a hard pill to swallow that I was the Evil one. Why did I fail? Me. My brain. My manic self. I wanted more than anything to prove them wrong. That I could do this. But I couldn’t. You can learn a lot, but you can’t unlearn bipolar disorder. I desperately wanted to believe that bipolar disorder wasn’t real and that I could stop living in fear of it. That all the doubters were wrong (from a friend with bipolar).\n\n",
-            "doc_size": 21000,
+            "doc_size": 22000,
             "file_path": "_site/mania.html",
             "incoming_links": [
                 "/energy",
@@ -3382,7 +3433,7 @@
         },
         "/media-edit": {
             "description": "Lets play with media editing. So far I’ve liked luma fusion for post:\n\n",
-            "doc_size": 12000,
+            "doc_size": 13000,
             "file_path": "_site/media-edit.html",
             "incoming_links": [],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -3408,6 +3459,7 @@
                 "/idle",
                 "/mind-monsters",
                 "/physical-pain",
+                "/psychic-shadows",
                 "/psychic-weight",
                 "/regrets",
                 "/shame",
@@ -3443,7 +3495,7 @@
         },
         "/micro-economics": {
             "description": "Supply, demands and markets, oh my!\n\n",
-            "doc_size": 13000,
+            "doc_size": 14000,
             "file_path": "_site/micro-economics.html",
             "incoming_links": [],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -3484,6 +3536,7 @@
             "incoming_links": [
                 "/being-a-great-manager",
                 "/idle",
+                "/psychic-shadows",
                 "/psychic-weight",
                 "/siy"
             ],
@@ -3535,7 +3588,7 @@
         },
         "/moments": {
             "description": "Take a few seconds to close your eyes and think back on an important memory. In that moment, did you feel a sense of elevation? Did you experience insight? Have a sense of pride? Make a connection? In the power of moments, the attributes of powerful moments are understood so that they can be better engineered.\n\n",
-            "doc_size": 25000,
+            "doc_size": 26000,
             "file_path": "_site/moments.html",
             "incoming_links": [
                 "/balance",
@@ -3601,13 +3654,13 @@
             "url": "/monetize"
         },
         "/money": {
-            "description": "Most of the tax information on the web is a mess. It’s confusing as it tries to apply to everyone, with varying situations, and is often written by non-engineers for non-engineers. I think my tax situation is common to people who have been in software engineering companies for most of their careers, and here are my notes\n\n",
-            "doc_size": 54000,
+            "description": "Most of the tax information on the web is a mess. It’s confusing as it tries to apply to everyone, with varying situations, and is often written by non-engineers for non-engineers. I think my tax situation is common to people who have been in software engineering companies for most of their careers, and here are my notes.\n\n",
+            "doc_size": 67000,
             "file_path": "_site/money.html",
             "incoming_links": [
                 "/d/time-off-2020-03",
                 "/gap-year",
-                "/igor-gap-year",
+                "/gap-year-igor",
                 "/operating-manual",
                 "/parkinson",
                 "/retire",
@@ -3625,8 +3678,8 @@
             "url": "/money"
         },
         "/mood": {
-            "description": "Let me ask an easy question: “How are you feeling?”. How long did it take you to answer? Less then a second? Impressive. Now a harder question “What makes you say that?”, or even harder “How do you ‘compute’ how are you feeling?” What is going on? Human’s have a super fast heuristic called mood giving them an insant assessement of their sujective reality. Mood is critical to understand as it drives our behaviors, has an outsized influence on our subjective experience, can be in conflict to our pursuit of happiness, and most importantly has several bugs which can be exploited by the resistance and other bad actors.\n\n",
-            "doc_size": 27000,
+            "description": "Let me ask an easy question: “How are you feeling?”. How long did it take you to answer? Less then a second? Impressive. Now a harder question “What makes you say that?”, or even harder “How do you ‘compute’ how are you feeling?” What is going on? Human’s have a super fast heuristic called mood giving them an insant assessment of their sujective reality. Mood is critical to understand as it drives our behaviors, has an outsized influence on our subjective experience, can be in conflict to our pursuit of happiness, and most importantly has several bugs which can be exploited by the resistance and other bad actors.\n\n",
+            "doc_size": 28000,
             "file_path": "_site/mood.html",
             "incoming_links": [
                 "/energy",
@@ -3643,7 +3696,8 @@
                 "/happy",
                 "/joy",
                 "/mania",
-                "/regrets"
+                "/regrets",
+                "/slow"
             ],
             "redirect_url": "",
             "title": "Mood - Our blazing fast heuristic for subjective experience",
@@ -3670,7 +3724,7 @@
         },
         "/negotiate": {
             "description": "Negotiation is the heart of collaboration. It is what makes conflict potentially meaningful and productive for all parties. Getting To Yes is the seminal book on negotiation. It’s the deep dive into win win or no deal and seek first to understand. The formal, be hard on problems and soft on people, then focus on the desired outcomes not the positions, next get more options on the table, and make sure you measure by objective criteria - lastly know your BATNA.Several years later a new book came out by a hostage negotiator. Instead of being analytic focus, it’s all about influencing the elephant.\n\n",
-            "doc_size": 21000,
+            "doc_size": 22000,
             "file_path": "_site/negotiate.html",
             "incoming_links": [
                 "/curious",
@@ -3696,7 +3750,7 @@
         },
         "/neovim": {
             "description": "Long ago a fork from vim emerged. Neovim! I avoided it for a long time, but when Bram (the inventor of vim) died, I decided it was time to switch. Now that I’ve sucked up the 20-40 hours in the conversion, I’m thrilled I did. Turns out all the “kids” have been using and developing on neovim. This results in 1, good tools, and nice best practices.\n\n",
-            "doc_size": 16000,
+            "doc_size": 17000,
             "file_path": "_site/neovim.html",
             "incoming_links": [
                 "/vim"
@@ -3745,7 +3799,7 @@
         },
         "/nurture": {
             "description": "In “Nurturing Love,” the Heath Brothers distill the wisdom of renowned relationship experts Drs. John and Julie Gottman into a concise and actionable guide for couples seeking to strengthen their relationships. Using their signature storytelling approach and evidence-based insights, the Heath Brothers create an engaging and accessible roadmap to the Gottman Method.\n\n",
-            "doc_size": 41000,
+            "doc_size": 42000,
             "file_path": "_site/nurture.html",
             "incoming_links": [
                 "/gpt"
@@ -3821,7 +3875,7 @@
         },
         "/overload": {
             "description": "We all get to a point where our boss (*) gives us more work than we can handle. This spikes our anxiety and we’ll end up in one of three conversations: 1) I’ve got too much on my plate, 2) I can’t get this done; 3) I quit. Which do you think your boss would rather have?\n\n",
-            "doc_size": 15000,
+            "doc_size": 16000,
             "file_path": "_site/overload.html",
             "incoming_links": [
                 "/manager-book",
@@ -3859,6 +3913,7 @@
             "file_path": "_site/parkinson.html",
             "incoming_links": [
                 "/balance",
+                "/gap-year-igor",
                 "/manager-book-appendix",
                 "/money",
                 "/operating-manual",
@@ -3883,11 +3938,12 @@
         },
         "/partner-trouble": {
             "description": "There are two types of couples in the world. Those who fight, and those you don’t know. Your life partnership is the most impactful relationship you have, are you investing sufficiently?\n\n",
-            "doc_size": 29000,
+            "doc_size": 30000,
             "file_path": "_site/partner-trouble.html",
             "incoming_links": [
                 "/gap-year",
-                "/money"
+                "/money",
+                "/tori"
             ],
             "last_modified": "2025-08-31T06:37:16-07:00",
             "markdown_path": "_d/partner-trouble.md",
@@ -3909,7 +3965,7 @@
                 "/essentialism",
                 "/eulogy",
                 "/gap-year",
-                "/igor-gap-year",
+                "/gap-year-igor",
                 "/irl",
                 "/operating-manual",
                 "/retire",
@@ -3936,7 +3992,7 @@
         },
         "/physical-pain": {
             "description": "Physical pain is a universal experience, yet it remains one of the least understood aspects of human health. Whether it’s a stubbed toe or chronic back pain, understanding the nature of physical pain can empower us to manage it effectively and improve our quality of life.\n\n",
-            "doc_size": 27000,
+            "doc_size": 31000,
             "file_path": "_site/physical-pain.html",
             "incoming_links": [
                 "/mental-pain"
@@ -3968,7 +4024,7 @@
         },
         "/pride": {
             "description": "“That is Pride Fucking With You” is the only scene I can quote from any movie. It’s a powerful scene, and the advice is timeless. Two thousand years ago when a Roman emperor had a victory parade, he was required to have a slave standing behind him holding his helmet high in the air and whispering continuously: “You are mortal. You are mortal”. Pride and ego are serious foes that must be kept in check.\n\n",
-            "doc_size": 20000,
+            "doc_size": 21000,
             "file_path": "_site/pride.html",
             "incoming_links": [
                 "/being-a-great-manager",
@@ -3995,6 +4051,7 @@
             "file_path": "_site/process-journal.html",
             "incoming_links": [
                 "/chop",
+                "/eulogy",
                 "/operating-manual",
                 "/y24",
                 "/y25"
@@ -4013,6 +4070,22 @@
             "title": "Daily Journaling: From Psychic Diarrhea to Polished Turds",
             "url": "/process-journal"
         },
+        "/produce-consume": {
+            "description": "Remember when you finished binge-watching that entire series and felt… empty? Now remember the last time you made something — anything — even if it sucked. Which memory makes you smile? Yeah, me too. We live in the golden age of consumption, where infinite content is one thumb-swipe away, yet we’re more anxious and less satisfied than ever. Here’s the thing: you’re not meant to be a consumer. You’re meant to be a producer.\n\n",
+            "doc_size": 20000,
+            "file_path": "_site/produce-consume.html",
+            "incoming_links": [
+                "/slow"
+            ],
+            "last_modified": "2025-08-24T08:45:07-07:00",
+            "markdown_path": "_d/produce-consume.md",
+            "outgoing_links": [
+                "/activation"
+            ],
+            "redirect_url": "",
+            "title": "The Producer's Paradox: Why Creating Beats Consuming Every Time",
+            "url": "/produce-consume"
+        },
         "/product": {
             "description": "From creating a vision that inspires to laying out the strategies to get there, product work requires a range of skills—and a good dose of creativity. Putting the puzzle pieces together is essential to creating a product that appeals to its customers. With the right combination of vision, strategy, product design and execution, anyone can create something truly remarkable. With this in mind, let’s start building the future we want to create!\n\n",
             "doc_size": 38000,
@@ -4029,7 +4102,7 @@
         },
         "/productive": {
             "description": "At the core of balance, energy, wlb, habits is being productive.\n\n",
-            "doc_size": 15000,
+            "doc_size": 16000,
             "file_path": "_site/productive.html",
             "incoming_links": [
                 "/balance",
@@ -4072,6 +4145,33 @@
             "title": "Prompts, your guide to starting a conversation",
             "url": "/prompts"
         },
+        "/psychic-shadows": {
+            "description": "It’s 3am and your brain is replaying that conversation from six months ago, calculating worst-case financial scenarios, or imagining all the ways you’ll fail at that thing you haven’t even started yet. These aren’t just ordinary worries - they’re psychic shadows, specific thought patterns that loop endlessly in your mind like restless spirits. If you’re tired of being held hostage by these ruminating thoughts, this post will teach you how to craft personalized spells that banish each shadow the moment it appears, giving you a mystical toolkit for transforming persistent mental loops into single-word circuit breakers that actually work.\n\n",
+            "doc_size": 31000,
+            "file_path": "_site/psychic-shadows.html",
+            "incoming_links": [
+                "/anxiety-management",
+                "/caring",
+                "/depression",
+                "/idle",
+                "/psychic-weight",
+                "/siy"
+            ],
+            "last_modified": "2025-08-22T11:54:12-07:00",
+            "markdown_path": "_d/psychic-shadows.md",
+            "outgoing_links": [
+                "/addiction",
+                "/anxiety-management",
+                "/d/resistance",
+                "/mental-pain",
+                "/mind-monsters",
+                "/psychic-weight",
+                "/todo_enjoy"
+            ],
+            "redirect_url": "",
+            "title": "Psychic Shadows: Crafting Spells to Banish Ruminating Thoughts",
+            "url": "/psychic-shadows"
+        },
         "/psychic-weight": {
             "description": "Imagine a weight tied around your body, imagine it dragging behind you, slowing down your motions, preventing you from going where you want to go. Imagine never taking it off, and getting no relief regardless of when you sit or sleep. Now imagine that’s not a physical weight, but instead a mental weight, a psychic weight if you will. Psychic weight are the thoughts that prevent your mind and emotions from being fluid and light.\n\n",
             "doc_size": 21000,
@@ -4080,7 +4180,8 @@
                 "/depression",
                 "/gtd",
                 "/mind-at-work",
-                "/process-journal"
+                "/process-journal",
+                "/psychic-shadows"
             ],
             "last_modified": "2025-07-18T07:57:44-07:00",
             "markdown_path": "_d/psychic-weight.md",
@@ -4131,7 +4232,7 @@
         },
         "/random-idea": {
             "description": "There are lots of rough ideas I have that are not yet categorized, or good enough to be a thought. This will be a\nplace to store them.\n\n",
-            "doc_size": 27000,
+            "doc_size": 28000,
             "file_path": "_site/random-idea.html",
             "incoming_links": [],
             "last_modified": "2025-08-22T10:48:49-07:00",
@@ -4143,7 +4244,7 @@
                 "/switch"
             ],
             "redirect_url": "",
-            "title": "random un categorized notes",
+            "title": "Random Uncategorized Notes",
             "url": "/random-idea"
         },
         "/rapport": {
@@ -4194,7 +4295,7 @@
         },
         "/reflect-tool": {
             "description": "Igor's Blog",
-            "doc_size": 11000,
+            "doc_size": 12000,
             "file_path": "_site/reflect-tool.html",
             "incoming_links": [],
             "last_modified": "2023-12-17T18:51:48+00:00",
@@ -4246,7 +4347,7 @@
             "incoming_links": [
                 "/42",
                 "/gap-year",
-                "/igor-gap-year",
+                "/gap-year-igor",
                 "/monetize",
                 "/stock-concentration"
             ],
@@ -4352,7 +4453,7 @@
             "url": "/sell"
         },
         "/shame": {
-            "description": "Shame and guilt are often confused emotions caused by self judgements that lead to contrasting behaviors. Shame drives people to hide or deny their wrongdoings while guilt, properly applied drives people to the correct behaviors. These are both examples of mental-pain and when the pain is phantom or cronic, are often well served by grandmother mind.\n\n",
+            "description": "Shame and guilt are often confused emotions caused by self judgments that lead to contrasting behaviors. Shame drives people to hide or deny their wrongdoings while guilt, properly applied drives people to the correct behaviors. These are both examples of mental-pain and when the pain is phantom or cronic, are often well served by grandmother mind.\n\n",
             "doc_size": 15000,
             "file_path": "_site/shame.html",
             "incoming_links": [
@@ -4408,12 +4509,12 @@
                 "/static/roots_of_lisp.pdf"
             ],
             "redirect_url": "",
-            "title": "Structure And Design of Computer Programs",
+            "title": "Structure and Design of Computer Programs",
             "url": "/sicp"
         },
         "/siy": {
             "description": "Training Emotional Intelligence through mindfulness. Search inside yourself is a meditation training manual for engineers. It’s also a pun as the author works at google, and built the program internally at Google. Joy on demand by the same author, is less engineer focused, and uses joy as a path to medatitive bliss.\n\n",
-            "doc_size": 60000,
+            "doc_size": 61000,
             "file_path": "_site/siy.html",
             "incoming_links": [
                 "/anxiety-management",
@@ -4426,13 +4527,14 @@
                 "/emotional-health",
                 "/eulogy",
                 "/first-understand",
+                "/gap-year-igor",
                 "/idle",
-                "/igor-gap-year",
                 "/irl",
                 "/mind-monsters",
                 "/operating-manual",
                 "/psychic-weight",
                 "/sharpen-the-saw",
+                "/slow",
                 "/timeoff"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -4458,6 +4560,7 @@
             "file_path": "_site/sleep.html",
             "incoming_links": [
                 "/energy",
+                "/gap-year-igor",
                 "/insomnia",
                 "/physical-health"
             ],
@@ -4471,17 +4574,17 @@
             "title": "Keep life on easy mode - Prioritize Sleep",
             "url": "/sleep"
         },
-        "/sleeping-bag-sacrifies": {
+        "/sleeping-bag-sacrifices": {
             "description": "I started in Windows Azure in 2007. Back then, the name “Azure” wasn’t invented, and Azure was still called “Reddog.” I started on the OS team, drawn in by my dream of changing the world, and getting to be Dave Cutler’s lackey. I didn’t get to work with Cutler, but I still may change the world - now that I’ve learned it’s OK to wake sleeping giants. My giant was named Jay.\n\n",
-            "doc_size": 15000,
-            "file_path": "_site/sleeping-bag-sacrifies.html",
+            "doc_size": 16000,
+            "file_path": "_site/sleeping-bag-sacrifices.html",
             "incoming_links": [],
-            "last_modified": "",
-            "markdown_path": "_posts/2018-11-06-sleeping-bag-sacrifies.md",
+            "last_modified": "2025-08-25T10:46:49-07:00",
+            "markdown_path": "_posts/2018-11-06-sleeping-bag-sacrifices.md",
             "outgoing_links": [],
             "redirect_url": "",
             "title": "Sleeping bag sacrifices",
-            "url": "/sleeping-bag-sacrifies"
+            "url": "/sleeping-bag-sacrifices"
         },
         "/sleight-of-mouth": {
             "description": "Language, often unknown to us, creates our mental models, our reality, and defines our meaning. But the model is not the terrain, and by engaging with the language we can change mental models. Sleight of mouth (SoM) is a series of techniques for changing our models, reality and meanings and thus our experiences. Our mental models are a frame, and we need help going from a ‘problem frame’ to a ‘desired outcome frame’ , a ‘failure frame’, to a ‘feedback frame’ and an ‘impossible frame ‘ to an ‘as if’ frame. To experience the power of language, find anything that is invisible to you, and name it. Now as you’ve given it a name, see how you perceive it, and become aware of it.\n\n",
@@ -4500,20 +4603,35 @@
             "url": "/sleight-of-mouth"
         },
         "/slow": {
-            "description": "Igor's Blog",
-            "doc_size": 14000,
+            "description": "Fight or flight, the sympathetic nervous system, gets all the attention, but its twin sister “Rest and Digest” or the parasympathetic nervous system is equally important. These are the two divisions of the Autonomic Nervous system — the stuff that operates without conscious control. While everyone’s obsessed with productivity and hustle, your body’s crying out for balance. Here’s the thing: you can’t sprint a marathon, and life’s definitely a marathon.\n\n",
+            "doc_size": 29000,
             "file_path": "_site/slow.html",
-            "incoming_links": [],
-            "last_modified": "",
-            "markdown_path": "slow.md",
-            "outgoing_links": [],
+            "incoming_links": [
+                "/anxiety",
+                "/balance",
+                "/energy",
+                "/mood"
+            ],
+            "last_modified": "2025-08-25T08:36:03-07:00",
+            "markdown_path": "_d/slow.md",
+            "outgoing_links": [
+                "/activation",
+                "/anxiety",
+                "/balance",
+                "/d/habits",
+                "/d/resistance",
+                "/emotions",
+                "/energy",
+                "/produce-consume",
+                "/siy"
+            ],
             "redirect_url": "",
             "title": "Rest and Digest - Sometimes you'd rather go slow ",
             "url": "/slow"
         },
         "/smilebox": {
             "description": "Way back in 2012 I had this idea to make a Smilebox. The tech wasn’t good enough, but in 2023 tech is right ready. Here’s quoting the original blog post … Nothing makes me happier then seeing someone smile. In fact, seeing others smile makes me smile. As a result, I’m creating a box that captures smiles, which I’m calling a smile box. If you look at the smile box, you’ll see the smiles that are already captured . If you smile at the box, it’ll capture your smile and add it to the box.\n\n",
-            "doc_size": 19000,
+            "doc_size": 20000,
             "file_path": "_site/smilebox.html",
             "incoming_links": [
                 "/joy"
@@ -4541,7 +4659,7 @@
         },
         "/software-leadership-roles": {
             "description": "The line between a technical lead and architect (and product manager and engineering manager) is fuzzy and subjective. The best articulation of the difference I’ve found is inline from Quora. In this classification I like to run a team small enough that I can be the engineering manager and step in as the software architect as required.\n\n",
-            "doc_size": 17000,
+            "doc_size": 18000,
             "file_path": "_site/software-leadership-roles.html",
             "incoming_links": [
                 "/job",
@@ -4558,16 +4676,17 @@
         },
         "/stock-concentration": {
             "description": "When you work at a tech company and receive RSUs, it’s easy to accidentally become dangerously concentrated in your company’s stock. You didn’t mean to bet your entire future on one company, but here you are - watching every earnings call with your stomach in knots because a 30% drop would devastate your net worth. This guide explains the risks and strategies for managing concentrated stock positions - from tax-efficient selling strategies to protective options that cost you nothing, and exchange funds that diversify without triggering taxes.\n\n",
-            "doc_size": 36000,
+            "doc_size": 37000,
             "file_path": "_site/stock-concentration.html",
             "incoming_links": [
+                "/gap-year-igor",
                 "/money"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/stock-concentration.md",
             "outgoing_links": [
                 "/gap-year",
-                "/igor-gap-year",
+                "/gap-year-igor",
                 "/money",
                 "/retire"
             ],
@@ -4577,7 +4696,7 @@
         },
         "/strategy": {
             "description": "As competition in the market intensifies, companies must find ways to differentiate themselves in order to have a successful business - and that means strategic positioning. If they want to get the buyers money they have to choose a strategy that works for them and make sure it has sustainable competitive advantages. From offering a different value, to providing the same value using different activities - the possibilities for positioning are endless. Ultimately, it’s all about creating trade offs and making sure those trade offs give a sustainable competitive advantage!\n\n",
-            "doc_size": 27000,
+            "doc_size": 28000,
             "file_path": "_site/strategy.html",
             "incoming_links": [
                 "/energy-abundance",
@@ -4605,14 +4724,16 @@
                 "/static/igor-enneagram.pdf"
             ],
             "redirect_url": "",
-            "title": "My Strengths from  Strength Finder",
+            "title": "My Strengths from Strength Finder",
             "url": "/strengths"
         },
         "/structure": {
             "description": "What if structure could be kind? You already know what you want to do. You know exercise is good for you. You know journaling helps. You know you should call your mom more often. The problem isn’t knowing—it’s the gap between intention and action, especially when life gets messy. Most of us recoil from the word “structure” because we’ve only experienced harsh management-style systems that treat humans like machines. But there’s another way: humane structure that works with your nature, not against it. Humane structure starts with a core assumption: You’re not broken, you just need better support. You don’t need more willpower, discipline, or motivation. You need systems that help you remember what you care about and make it easier to act on those values, especially when you’re struggling.\n\n",
-            "doc_size": 29000,
+            "doc_size": 30000,
             "file_path": "_site/structure.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/gap-year-igor"
+            ],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/structure.md",
             "outgoing_links": [],
@@ -4663,7 +4784,7 @@
                 "/balance",
                 "/being-a-great-manager",
                 "/depression",
-                "/igor-gap-year",
+                "/gap-year-igor",
                 "/overload",
                 "/regrets",
                 "/retire",
@@ -4853,12 +4974,12 @@
             "markdown_path": "_td/fix_ssh.md",
             "outgoing_links": [],
             "redirect_url": "",
-            "title": "ssh client commands timing out from some clients some times",
+            "title": "SSH Client Commands Timing Out from Some Clients Sometimes",
             "url": "/td/fix_ssh"
         },
         "/td/hack-web": {
             "description": "Copied from my GitHub techdiary\n\n",
-            "doc_size": 28000,
+            "doc_size": 29000,
             "file_path": "_site/td/hack-web.html",
             "incoming_links": [],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -4870,7 +4991,7 @@
         },
         "/td/ios": {
             "description": "Copied from my GitHub techdiary\n\n",
-            "doc_size": 19000,
+            "doc_size": 20000,
             "file_path": "_site/td/ios.html",
             "incoming_links": [
                 "/tools",
@@ -4885,7 +5006,7 @@
         },
         "/td/ios-nomad": {
             "description": "So you want to be an iPad Developer Nomad. A person who can do all their development on the iPad. I’m not sure why you’d want to be such a character, in fact, I’m not sure why I want to be such a character, but I do, and here’s how I do it. To be a developer nomad, you better already be a command line wiz. If you’re not at an expert at the terminal, vim or Emacs and TMUX - don’t even try.\n\n",
-            "doc_size": 24000,
+            "doc_size": 25000,
             "file_path": "_site/td/ios-nomad.html",
             "incoming_links": [
                 "/tools",
@@ -4897,19 +5018,19 @@
                 "/irl"
             ],
             "redirect_url": "",
-            "title": "iOS Software engineer nomad howto",
+            "title": "iOS Software Engineer Nomad How-To",
             "url": "/td/ios-nomad"
         },
         "/td/linqpad_from_redshift": {
             "description": "Copied from my GitHub techdiary\n\n",
-            "doc_size": 15000,
+            "doc_size": 16000,
             "file_path": "_site/td/linqpad_from_redshift.html",
             "incoming_links": [],
             "last_modified": "2025-08-22T10:48:49-07:00",
             "markdown_path": "_td/linqpad_from_redshift.md",
             "outgoing_links": [],
             "redirect_url": "",
-            "title": "Make linqpad work with redshift.",
+            "title": "Make LINQPad Work with Redshift",
             "url": "/td/linqpad_from_redshift"
         },
         "/td/minecraft": {
@@ -4926,7 +5047,7 @@
         },
         "/td/mosh": {
             "description": "Copied from my GitHub techdiary\n\n",
-            "doc_size": 13000,
+            "doc_size": 14000,
             "file_path": "_site/td/mosh.html",
             "incoming_links": [],
             "last_modified": "2020-04-11T16:32:11+00:00",
@@ -4983,7 +5104,7 @@
             "markdown_path": "_td/sqlalchemy-redshift.md",
             "outgoing_links": [],
             "redirect_url": "",
-            "title": "SQL Alchemy with Redshift",
+            "title": "SQLAlchemy with Redshift",
             "url": "/td/sqlalchemy-redshift"
         },
         "/td/stats": {
@@ -5002,7 +5123,7 @@
         },
         "/td/streaks": {
             "description": "Copied from my GitHub techdiary\n\n",
-            "doc_size": 13000,
+            "doc_size": 14000,
             "file_path": "_site/td/streaks.html",
             "incoming_links": [],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -5014,19 +5135,19 @@
         },
         "/td/usbtech": {
             "description": "Copied from my GitHub techdiary\n\n",
-            "doc_size": 15000,
+            "doc_size": 16000,
             "file_path": "_site/td/usbtech.html",
             "incoming_links": [],
             "last_modified": "2025-08-22T10:48:49-07:00",
             "markdown_path": "_td/usbtech.md",
             "outgoing_links": [],
             "redirect_url": "",
-            "title": "Usb Tech",
+            "title": "USB Tech",
             "url": "/td/usbtech"
         },
         "/td/virtual-desktops": {
             "description": "Copied from my GitHub techdiary\n\n",
-            "doc_size": 13000,
+            "doc_size": 14000,
             "file_path": "_site/td/virtual-desktops.html",
             "incoming_links": [],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -5052,14 +5173,14 @@
         },
         "/td/windbg": {
             "description": "Copied from my GitHub techdiary\n\n",
-            "doc_size": 12000,
+            "doc_size": 13000,
             "file_path": "_site/td/windbg.html",
             "incoming_links": [],
             "last_modified": "2025-08-22T10:48:49-07:00",
             "markdown_path": "_td/windbg.md",
             "outgoing_links": [],
             "redirect_url": "",
-            "title": "WinDBG notes",
+            "title": "WinDbg Notes",
             "url": "/td/windbg"
         },
         "/tech-health-toys": {
@@ -5094,7 +5215,7 @@
             "url": "/tech-rituals"
         },
         "/terzepatide": {
-            "description": "“You know Igor, weight loss is a solved problem” - my bestie, texted me when I complained about my pants no longer fitting. Remember - Diet dominates weight, as weight is simple arithemtic -“calories in” minus “calories out”. For me, will power dominates diet, and terzepatide dominates will power when stuffing things in my mouth. I started Terzepatide in February 2024, and so far it’s been great.\n\n",
+            "description": "“You know Igor, weight loss is a solved problem” - my bestie, texted me when I complained about my pants no longer fitting. Remember - Diet dominates weight, as weight is simple arithmetic -“calories in” minus “calories out”. For me, will power dominates diet, and terzepatide dominates will power when stuffing things in my mouth. I started Terzepatide in February 2024, and so far it’s been great.\n\n",
             "doc_size": 18000,
             "file_path": "_site/terzepatide.html",
             "incoming_links": [
@@ -5103,6 +5224,7 @@
                 "/diet",
                 "/eulogy",
                 "/physical-health",
+                "/timeoff",
                 "/voices"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -5145,7 +5267,7 @@
         },
         "/testing": {
             "description": "If it’s not tested, it doesn’t work. When your tests passing lets you deploy without any concerns, your tests are good enough. Otherwise, you’ve got more work to do.\n\n",
-            "doc_size": 28000,
+            "doc_size": 29000,
             "file_path": "_site/testing.html",
             "incoming_links": [
                 "/chop",
@@ -5196,14 +5318,14 @@
         },
         "/time-off-2025-08": {
             "description": "I’m incredibly fortunate to be able to take 6 weeks off this summer! After 5 years of service at Meta, you get 30 days (about 5 week) off!\n\n",
-            "doc_size": 28000,
+            "doc_size": 34000,
             "file_path": "_site/time-off-2025-08.html",
             "incoming_links": [],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/time-off-2025-08.md",
             "outgoing_links": [
+                "/gap-year-igor",
                 "/happy",
-                "/igor-gap-year",
                 "/moments",
                 "/mood",
                 "/terzepatie",
@@ -5213,21 +5335,21 @@
             "title": "Time off August 2025 - Meta Recharge",
             "url": "/time-off-2025-08"
         },
-        "/time-traveller": {
+        "/time-traveler": {
             "description": "What would Past Igor say if he met Future Igor? Would he be impressed by the wisdom, disappointed by the waistline, or wonder how we developed such an intense relationship with pastries? While we can’t physically time travel, we can use mental time travel as a powerful tool - imagining conversations across our past, present, and future selves. Think of it as a group chat between Past Igor (that idealistic youngster), Present Igor (hello!), and Future Igor (who’s probably shaking his head at both of us). Let’s explore how these three versions of ourselves are constantly chatting, arguing, and occasionally giving each other virtual fist bumps across the space-time continuum.\n\n\n\n",
-            "doc_size": 15000,
-            "file_path": "_site/time-traveller.html",
+            "doc_size": 16000,
+            "file_path": "_site/time-traveler.html",
             "incoming_links": [],
-            "last_modified": "",
-            "markdown_path": "_d/time-traveller.md",
+            "last_modified": "2025-08-24T09:03:19-07:00",
+            "markdown_path": "_d/time-traveler.md",
             "outgoing_links": [],
             "redirect_url": "",
             "title": "When Past Igor Meets Future Igor",
-            "url": "/time-traveller"
+            "url": "/time-traveler"
         },
         "/timeoff": {
             "description": "Time off is critical, it’s how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with turning your 1 week off into an action-packed tour of Disneyland. But, there are other kinds of time off that we’ll discuss too. Like most things, time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!\n\n",
-            "doc_size": 35000,
+            "doc_size": 37000,
             "file_path": "_site/timeoff.html",
             "incoming_links": [
                 "/balance",
@@ -5245,7 +5367,7 @@
                 "/energy",
                 "/energy-abundance",
                 "/gap-year",
-                "/igor-gap-year",
+                "/gap-year-igor",
                 "/life-as-business",
                 "/mind-at-work",
                 "/parkinson",
@@ -5259,6 +5381,7 @@
                 "/balloon",
                 "/d/resistance",
                 "/d/time-off-2024-02",
+                "/diet",
                 "/energy",
                 "/essentialism",
                 "/eulogy",
@@ -5269,6 +5392,7 @@
                 "/mind-at-work",
                 "/parkinson",
                 "/siy",
+                "/terzepatide",
                 "/time-off-2020-03"
             ],
             "redirect_url": "",
@@ -5277,10 +5401,11 @@
         },
         "/todo_enjoy": {
             "description": "It’s easy to forget the many, often tiny things that makes me happy. For when that happens, here’s some reminders:\n\n",
-            "doc_size": 17000,
+            "doc_size": 18000,
             "file_path": "_site/todo_enjoy.html",
             "incoming_links": [
-                "/operating-manual"
+                "/operating-manual",
+                "/psychic-shadows"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/enjoy2.md",
@@ -5293,7 +5418,7 @@
         },
         "/tools": {
             "description": "A collection of tips, tricks and pointers of the various tools i use\n\n",
-            "doc_size": 50000,
+            "doc_size": 51000,
             "file_path": "_site/tools.html",
             "incoming_links": [],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -5307,6 +5432,23 @@
             "redirect_url": "",
             "title": "Igor's Tech, Tricks, and Tools",
             "url": "/tools"
+        },
+        "/tori": {
+            "description": "\n\n",
+            "doc_size": 13000,
+            "file_path": "_site/tori.html",
+            "incoming_links": [
+                "/eulogy",
+                "/gap-year-igor"
+            ],
+            "last_modified": "2025-08-19T10:23:51-07:00",
+            "markdown_path": "_d/tori.md",
+            "outgoing_links": [
+                "/partner-trouble"
+            ],
+            "redirect_url": "",
+            "title": "Tori",
+            "url": "/tori"
         },
         "/touching": {
             "description": "It’s pretty easy to be overwhelmed by humanity sucking, but there is so much good in the world. Here are some great examples\n\n",
@@ -5359,7 +5501,7 @@
         },
         "/untangled": {
             "description": "Parenting a teenage girl is like mastering the Turkish Get-Up – one of the most technically challenging kettlebell movements that requires patience, balance, and careful progression through distinct phases. Just when you think you’ve got one position figured out, it’s time to transition to the next, all while maintaining your stability and form (and not dropping a heavy weight on your head!). Lisa Damour’s “Untangled” is like having a master coach by your side, breaking down these intricate transitions into seven fundamental movements that take your daughter from childhood to adulthood.\n\n",
-            "doc_size": 66000,
+            "doc_size": 67000,
             "file_path": "_site/untangled.html",
             "incoming_links": [],
             "last_modified": "2025-02-02T09:46:23-08:00",
@@ -5387,7 +5529,7 @@
         },
         "/vibe": {
             "description": "Vibe coding is the name for letting the ai write your code. The magic lies in AI’s ability to infer intent from vague input—say almost nothing, and it often gives you something surprisingly right. This works because you’re granting it wide degrees of freedom; as long as you’re flexible on the outcome, the model can generate plausible results from minimal cues. But that magic is fragile: on follow-up turns, or when you have a much tighter definition of correct, the inferred intent often changes, and the model applies a different set of constraints then you wanted or what it did previously, causing a cliff, or misery. Turns out this is the same as junior developers.\n\n",
-            "doc_size": 16000,
+            "doc_size": 17000,
             "file_path": "_site/vibe.html",
             "incoming_links": [
                 "/ai",
@@ -5435,7 +5577,7 @@
         },
         "/viz": {
             "description": "Good visualizations transform data into insights and stories into understanding. They serve as a universal language that can communicate complex ideas quickly and clearly. Whether you’re creating diagrams for technical documentation or charts for business presentations, the key is matching your visual vocabulary to your message.\n\n",
-            "doc_size": 17000,
+            "doc_size": 18000,
             "file_path": "_site/viz.html",
             "incoming_links": [
                 "/writing"
@@ -5470,7 +5612,6 @@
                 "/blueprint",
                 "/depression",
                 "/emotional-health",
-                "/igor-gap-year",
                 "/mind-monsters",
                 "/operating-manual"
             ],
@@ -5552,7 +5693,7 @@
             "markdown_path": "_posts/2015-3-13-why-is-no-one-referring.md",
             "outgoing_links": [],
             "redirect_url": "",
-            "title": "Why is noone referring my project",
+            "title": "Why Is No One Referring My Project",
             "url": "/why-is-no-one-referring"
         },
         "/win-win": {
@@ -5611,7 +5752,7 @@
         },
         "/write-book": {
             "description": "My notes on writing books, mostly from Write Useful Books\n\n",
-            "doc_size": 17000,
+            "doc_size": 18000,
             "file_path": "_site/write-book.html",
             "incoming_links": [
                 "/y24"
@@ -5624,7 +5765,7 @@
             "url": "/write-book"
         },
         "/writing": {
-            "description": "Useful writing tells people (including, possibly most importantly you) something true and important that they didn’t already know in a way that leaves no doubt. Most writing is bad. Not due to spelling, punctuation or grammer, but due to lack of critical thinking. Critical thinking like analysis, synthesis, simplification, and presentation. To quote someone smart “If you’re thinking without writing, you’re only thinking about thinking”.\n\n",
+            "description": "Useful writing tells people (including, possibly most importantly you) something true and important that they didn’t already know in a way that leaves no doubt. Most writing is bad. Not due to spelling, punctuation or grammar, but due to lack of critical thinking. Critical thinking like analysis, synthesis, simplification, and presentation. To quote someone smart “If you’re thinking without writing, you’re only thinking about thinking”.\n\n",
             "doc_size": 40000,
             "file_path": "_site/writing.html",
             "incoming_links": [
@@ -5661,7 +5802,7 @@
             "file_path": "_site/y24.html",
             "incoming_links": [
                 "/gap-year",
-                "/igor-gap-year"
+                "/gap-year-igor"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/y2024.md",
@@ -5687,7 +5828,7 @@
             "file_path": "_site/y25.html",
             "incoming_links": [
                 "/gap-year",
-                "/igor-gap-year"
+                "/gap-year-igor"
             ],
             "last_modified": "2025-06-19T08:16:44-07:00",
             "markdown_path": "_d/y2025.md",

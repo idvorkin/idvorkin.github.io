@@ -15,6 +15,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [Text to speech our friends](#text-to-speech-our-friends)
 - [RAG a psychiatrist](#rag-a-psychiatrist)
 - [What I wrote summary](#what-i-wrote-summary)
+- [Upcoming](#upcoming)
 - [Diary](#diary)
   - [2025-09-07](#2025-09-07)
   - [2025-08-21](#2025-08-21)
@@ -138,6 +139,13 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
     - Prompt generation for summarizing and reordering file changes.
   - Logging and debugging setup with Loguru and PuDB.
 
+## Upcoming
+
+- Blog: Why using AI today can be slower
+- Blog: Don't forget when AI can see!
+- Blog: Flesh out Hyper Personalization
+- AI Music: My eulogy as a rap
+
 ## Diary
 
 ### 2025-09-07
@@ -145,7 +153,7 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - Played with AI music [suno](https://suno.com/song/21be0b93-a44b-4a94-b2d6-39a59fff6283), to create a musical eulogy
     <iframe src="https://suno.com/embed/21be0b93-a44b-4a94-b2d6-39a59fff6283" width="760" height="240"><a href="https://suno.com/song/21be0b93-a44b-4a94-b2d6-39a59fff6283">Listen on Suno</a></iframe>
 - The lyrics were a oneshot [from chatgpt](https://chatgpt.com/share/68be1806-b068-8000-a2f2-c8ecdcf6a842) taking my blog and my affirmations
-
+- Starting [hyper personalization](/hyper-personal)
 
 ### 2025-08-21
 
@@ -653,6 +661,7 @@ Use meta -I (e.g. Alt-I) e.g. AI :)
 - "davinci" was the top model - no GPT-3.5-turbo, no GPT-4
 - APIs were brand new and documentation was sparse
 - "davinci" model cost $0.02/1K tokens (10x more than GPT-3.5-turbo later!)
+
   ```
 
   ```
