@@ -48,7 +48,11 @@ def generate_toc(headers: list[tuple[int, str, str, str]], min_level: int = 1, m
         if min_level <= level <= max_level:
             indent = "  " * (level - min_level)
             if url_prefix:
-                toc.append(f"{indent}- [{text}]({url_prefix}#{anchor})")
+                # Special case: if url_prefix is just an anchor reference
+                if url_prefix.startswith("#"):
+                    toc.append(f"{indent}- [{text}]({url_prefix})")
+                else:
+                    toc.append(f"{indent}- [{text}]({url_prefix}#{anchor})")
             else:
                 toc.append(f"{indent}- [{text}](#{anchor})")
     
@@ -62,7 +66,7 @@ def generate_merged_toc(main_file: Path, appendix_file: Path, for_appendix: bool
         main_file: Path to main manager book file
         appendix_file: Path to appendix file
         for_appendix: If True, generate TOC for appendix (links to main), 
-                     if False, generate for main (links to appendix)
+                     if False, generate for main (appendix items link to #appendix)
     """
     # Extract headers from both files
     main_content = main_file.read_text()
@@ -107,11 +111,20 @@ def generate_merged_toc(main_file: Path, appendix_file: Path, for_appendix: bool
             combined_headers.append((level, text, anchor, ""))
     else:
         # For main page: main content has no prefix (same page)
+        has_appendix_header = False
         for level, text, anchor in main_headers:
             combined_headers.append((level, text, anchor, ""))
-        # Appendix content needs /manager-book-appendix prefix
+            if text.lower() == "appendix":
+                has_appendix_header = True
+        
+        # Add Appendix entry if not already present
+        if not has_appendix_header:
+            combined_headers.append((2, "Appendix", "appendix", ""))
+        
+        # Appendix sub-items all link to the #appendix section
         for level, text, anchor in appendix_headers:
-            combined_headers.append((level, text, anchor, "/manager-book-appendix"))
+            # All appendix items link to the main #appendix section
+            combined_headers.append((level, text, anchor, "#appendix"))
     
     return generate_toc(combined_headers, min_level=2, max_level=3)
 
