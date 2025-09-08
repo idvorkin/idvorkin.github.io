@@ -2968,12 +2968,12 @@
         },
         "/hyper-personal": {
             "description": "Useful writing tells people (including, possibly most importantly you) something true and important that they didn’t already know in a way that leaves no doubt. And Everyone is different. So how to do both?\n\n",
-            "doc_size": 15000,
+            "doc_size": 17000,
             "file_path": "_site/hyper-personal.html",
             "incoming_links": [
                 "/ai-journal"
             ],
-            "last_modified": "2025-09-07T17:01:25-07:00",
+            "last_modified": "2025-09-08T09:30:26.070104",
             "markdown_path": "_d/hyper-personal.md",
             "outgoing_links": [],
             "redirect_url": "",

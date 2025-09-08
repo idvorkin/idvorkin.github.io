@@ -15,8 +15,36 @@ TL;DR:
 
 - Free intelligence, aka AI, un-locks hyper-personalization
 - Into the physical world: When AI has cameras:
+- Into the emotional world
 
-- Into the emotional world:
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc-start -->
+
+- [General](#general)
+  - [Why do we like personalization](#why-do-we-like-personalization)
+  - [Personal Trainer](#personal-trainer)
+  - [Personal Chefs](#personal-chefs)
+  - [TV Channels](#tv-channels)
+  - [How many flavors of icecream](#how-many-flavors-of-icecream)
+  - [How many channels](#how-many-channels)
+  - [It's a matter of degree](#its-a-matter-of-degree)
+  - [Like a fish in water it's everywhere](#like-a-fish-in-water-its-everywhere)
+  - [Hyper-personalization can go into dimensions you weren't thinking.](#hyper-personalization-can-go-into-dimensions-you-werent-thinking)
+  - [From high price, to low price](#from-high-price-to-low-price)
+  - [From pre-manufactured to on-demand](#from-pre-manufactured-to-on-demand)
+  - [From discrete to continuous](#from-discrete-to-continuous)
+  - [Dimensions on which to persalize](#dimensions-on-which-to-persalize)
+  - [Impact on economy](#impact-on-economy)
+  - [From discovery to creation](#from-discovery-to-creation)
+  - [Hyper-personalization to your group or tribe](#hyper-personalization-to-your-group-or-tribe)
+- [Downside of hyper personalization](#downside-of-hyper-personalization)
+  - [We want shared experiences](#we-want-shared-experiences)
+  - [Choice Paralysis](#choice-paralysis)
+  - [When do you stop? When is it worth it?](#when-do-you-stop-when-is-it-worth-it)
+  - [What makes it good?](#what-makes-it-good)
+
+<!-- vim-markdown-toc-end -->
+<!-- prettier-ignore-end -->
 
 ## General
 
