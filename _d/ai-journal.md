@@ -16,6 +16,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [RAG a psychiatrist](#rag-a-psychiatrist)
 - [What I wrote summary](#what-i-wrote-summary)
 - [Diary](#diary)
+  - [2025-09-07](#2025-09-07)
   - [2025-08-21](#2025-08-21)
     - [Psychic Shadows Gas Lighting](#psychic-shadows-gas-lighting)
     - [OMG I Did It Again - TWICE! Security Theater Fail](#omg-i-did-it-again---twice-security-theater-fail)
@@ -138,6 +139,13 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - Logging and debugging setup with Loguru and PuDB.
 
 ## Diary
+
+### 2025-09-07
+
+- Played with AI music [suno](https://suno.com/song/21be0b93-a44b-4a94-b2d6-39a59fff6283), to create a musical eulogy
+    <iframe src="https://suno.com/embed/21be0b93-a44b-4a94-b2d6-39a59fff6283" width="760" height="240"><a href="https://suno.com/song/21be0b93-a44b-4a94-b2d6-39a59fff6283">Listen on Suno</a></iframe>
+- The lyrics were a oneshot [from chatgpt](https://chatgpt.com/share/68be1806-b068-8000-a2f2-c8ecdcf6a842) taking my blog and my affirmations
+
 
 ### 2025-08-21
 
