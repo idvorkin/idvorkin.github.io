@@ -28,6 +28,7 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
   - [Review changes between dates](#review-changes-between-dates)
   - [Dream: Re-write commit history to break things into orthogonal changes](#dream-re-write-commit-history-to-break-things-into-orthogonal-changes)
 - [Articles](#articles)
+  - [Perfect Articultion of the future of coding and where we're at today](#perfect-articultion-of-the-future-of-coding-and-where-were-at-today)
   - [How might AI change programming?](#how-might-ai-change-programming)
   - [Will CHOP Kill the Joy of Coding?](#will-chop-kill-the-joy-of-coding)
     - [Reasons to Program - Mastery vs Getting Shit Done](#reasons-to-program---mastery-vs-getting-shit-done)
@@ -260,6 +261,29 @@ Cursor has native support for indexing docs, some projects even have llm.txt to 
 ### Dream: Re-write commit history to break things into orthogonal changes
 
 ## Articles
+
+### Perfect Articultion of the future of coding and where we're at today
+
+A very good articulation of the [future of coding](https://www.xipu.li/posts/the-last-programmers) (via [think](https://gist.github.com/idvorkin/4e7c9a91b54d58e23168da0b750d6ce2#file-summary_gpt-5-md)) his ideas that I love:
+
+- Coders divide into Experimenters and Guardians:
+
+  - "Experimenters" embrace AI tools, seek shortcuts, and focus on higher-level problem-solving, pushing the boundaries of abstraction.
+  - "Guardians" prioritize deep understanding of code, algorithms, and systems, valuing robustness and maintainability over rapid AI-driven iteration.
+  - "Experimenters" will become the majority as technology trends towards convenience and abstraction.
+
+- The New Value Proposition:
+
+  - As technical implementation becomes commoditized, the focus shifts from "can we build this?" to "should we build this?" and "how do we get people to use it?".
+  - Three non-automatable skills will become paramount: deep understanding of user needs, strategic product taste (knowing what to build and what not to build), and effective distribution/marketing.
+  - The winners in this new paradigm will be those who understand human psychology and market dynamics, not just technical execution.
+
+- Design doc as the most important artifact.
+  - We went through this before, where high level languages, got compiled to machine code, and no-one looks at that . Now it'll be design docs and evals to code. Oh yeah, and we're a very long ways out from that.
+  - Design-Doc-First, Agent-Orchestrated Development
+  - Treat the design doc as the primary artifact; edit prose to drive code changes rather than editing code directly.
+  - Parallelized agent workflow: multiple AI terminals each owning a feature. (NOTE: This is very painful)
+  - - Role fusion: developer as PM-like conductor, focusing on problem discovery and specification clarity.
 
 ### How might AI change programming?
 
@@ -642,8 +666,3 @@ That's the key:
 - From Kindergarten Student to PhD in very low years
 - From Moore's law at every 2 years, to like every 3-6 months
 - Not only smart agents, but as many as you want.
-
-
-
-
-
