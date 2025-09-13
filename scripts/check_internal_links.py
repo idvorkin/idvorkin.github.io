@@ -136,53 +136,91 @@ app = cyclopts.App()
 console = Console()
 
 @app.default
-def main(server: str = "localhost:4000") -> None:
+def main(server: str = "localhost:4000", json_output: bool = False) -> None:
     """Check internal links across the blog site using BeautifulSoup.
-    
+
     Args:
         server: Server to check (default: localhost:4000, or use idvork.in for prod)
+        json_output: Output results in JSON format instead of rich console output
     """
     server_url = f"http://{server}"
-    
-    console.print(Panel(f"🔍 Checking internal links on [bold blue]{server_url}[/bold blue]", 
-                       title="Blog Link Checker", style="cyan"))
+
+    if not json_output:
+        console.print(Panel(f"🔍 Checking internal links on [bold blue]{server_url}[/bold blue]",
+                           title="Blog Link Checker", style="cyan"))
     
     # Step 1: Get all blog pages
-    with console.status("[bold green]Getting all blog pages...", spinner="dots"):
+    if not json_output:
+        with console.status("[bold green]Getting all blog pages...", spinner="dots"):
+            blog_pages = get_all_blog_pages(server_url)
+        console.print(f"📄 Found [bold green]{len(blog_pages)}[/bold green] blog pages")
+    else:
         blog_pages = get_all_blog_pages(server_url)
-    
-    console.print(f"📄 Found [bold green]{len(blog_pages)}[/bold green] blog pages")
     
     # Step 2: Extract all internal links from all pages
     all_internal_links = set()
-    
-    with Progress(
-        SpinnerColumn(),
-        TextColumn("[progress.description]{task.description}"),
-        BarColumn(),
-        TextColumn("[progress.percentage]{task.percentage:>3.0f}%"),
-        TimeRemainingColumn(),
-        console=console
-    ) as progress:
-        task = progress.add_task("🔗 Extracting internal links...", total=len(blog_pages))
-        
+
+    if not json_output:
+        with Progress(
+            SpinnerColumn(),
+            TextColumn("[progress.description]{task.description}"),
+            BarColumn(),
+            TextColumn("[progress.percentage]{task.percentage:>3.0f}%"),
+            TimeRemainingColumn(),
+            console=console
+        ) as progress:
+            task = progress.add_task("🔗 Extracting internal links...", total=len(blog_pages))
+
+            for page in blog_pages:
+                page_links = extract_internal_links(server_url, page)
+                all_internal_links.update(page_links)
+                progress.advance(task)
+    else:
         for page in blog_pages:
             page_links = extract_internal_links(server_url, page)
             all_internal_links.update(page_links)
-            progress.advance(task)
-    
-    console.print(f"📊 Found [bold yellow]{len(all_internal_links)}[/bold yellow] unique internal links")
-    
+
+    if not json_output:
+        console.print(f"📊 Found [bold yellow]{len(all_internal_links)}[/bold yellow] unique internal links")
+
     # Step 3: Write URLs to temporary file
     with tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False) as f:
         urls_file = f.name
         for link in sorted(all_internal_links):
             f.write(f"{server_url}{link}\n")
-    
-    console.print(f"📝 Written URLs to temporary file: {urls_file}")
-    
+
+    if not json_output:
+        console.print(f"📝 Written URLs to temporary file: {urls_file}")
+
     # Step 4: Use lychee to check all links with fragment support
-    with console.status("[bold green]Running lychee to check all links (with anchor fragments)...", spinner="dots"):
+    if not json_output:
+        with console.status("[bold green]Running lychee to check all links (with anchor fragments)...", spinner="dots"):
+            try:
+                result = subprocess.run([
+                    'lychee',
+                    '--include-fragments',  # Check anchor fragments
+                    '--format', 'markdown',
+                    '--quiet', '--quiet',   # Much less verbose output
+                    '--no-progress',        # No progress bar
+                    urls_file
+                ], capture_output=True, text=True, check=False)
+
+                # Clean up temp file
+                os.unlink(urls_file)
+
+                # Parse lychee output
+                stdout = result.stdout
+                stderr = result.stderr
+
+            except FileNotFoundError:
+                console.print("[red]Error: lychee not found. Please install lychee first.[/red]")
+                os.unlink(urls_file)
+                return
+            except Exception as e:
+                console.print(f"[red]Error running lychee: {e}[/red]")
+                os.unlink(urls_file)
+                return
+    else:
         try:
             result = subprocess.run([
                 'lychee', 
@@ -201,21 +239,56 @@ def main(server: str = "localhost:4000") -> None:
             stderr = result.stderr
             
         except FileNotFoundError:
-            console.print("[red]Error: lychee not found. Please install lychee first.[/red]")
+            if not json_output:
+                console.print("[red]Error: lychee not found. Please install lychee first.[/red]")
+            else:
+                print(json.dumps({"error": "lychee not found. Please install lychee first."}))
             os.unlink(urls_file)
             return
         except Exception as e:
-            console.print(f"[red]Error running lychee: {e}[/red]")
+            if not json_output:
+                console.print(f"[red]Error running lychee: {e}[/red]")
+            else:
+                print(json.dumps({"error": f"Error running lychee: {e}"}))
             os.unlink(urls_file)
             return
-    
+
     # Step 5: Load backlinks data for source file mapping
-    console.print("📚 Loading backlinks data for source file mapping...")
+    if not json_output:
+        console.print("📚 Loading backlinks data for source file mapping...")
     backlinks_data = load_backlinks()
-    
+
     # Step 6: Parse lychee output for broken links
     broken_links = parse_lychee_errors(stdout)
-    
+
+    if json_output:
+        # Prepare JSON output
+        result_data = {
+            "server_url": server_url,
+            "total_pages": len(blog_pages),
+            "total_links": len(all_internal_links),
+            "broken_links_count": len(broken_links),
+            "broken_links": []
+        }
+
+        for broken_link in broken_links:
+            broken_url = broken_link['url']
+            error_type = broken_link['type']
+            description = broken_link['description']
+
+            # Find source files for this broken link
+            source_files = find_source_files_for_broken_link(broken_url, server_url, backlinks_data)
+
+            result_data["broken_links"].append({
+                "url": broken_url,
+                "error_type": error_type,
+                "description": description,
+                "source_files": source_files
+            })
+
+        print(json.dumps(result_data, indent=2))
+        return
+
     # Step 7: Display summary results only (without verbose successful links)
     console.print("\n" + "="*80)
     console.print("[bold cyan]🚀 LYCHEE SUMMARY:[/bold cyan]")

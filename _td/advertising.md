@@ -2,6 +2,9 @@
 layout: post
 no-render-title: true
 title: Advertising
+permalink: /advertising
+redirect_from:
+  - /td/advertising
 ---
 
 Advertising is 155 billion business in the USA. Of that 155B, 85B is Digital and 70B is TV(digital platforms are invest ing in video to capture the TV spend. This post captures my understanding of that world.
