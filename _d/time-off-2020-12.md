@@ -1,7 +1,8 @@
 ---
 layout: post
-no-render-title: true
 title: Time off X-mas 2020
+permalink: /timeoff-20-12
+no-render-title: true
 ---
 
 It's Corona virus X-mas, and I've got 2 weeks off. In an attempt to maximize my personal development and satisfaction during my timeoff, by staying balanced, and minimizing my vegetation I'm going to pre-write what I want to get done, and adjust it as I go.

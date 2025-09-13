@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Time off November 2022 - New York with Ammon, and Then Maureen and Brian for Thanksgiving
+permalink: /timeoff-22-11
 ---
 
 It's just about thanksgiving 2022, and after 2 years of not being able to go to Oregon, we're on our away! Through unexpected timing, before going to Oregon, I'm going to New York City with Ammon, and through even more unexpected timing, we just had lay offs at work, and have a major re-organization. Instead of being able to fully take the time off, I'll be working several days, so having clarity on my priorities is critical.

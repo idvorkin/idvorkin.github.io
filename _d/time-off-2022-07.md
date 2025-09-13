@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Time off July 2022 - FISM and Canada.
+permalink: /timeoff-22-07
 ---
 
 It's FISM (olympics of magic), and I'm going to Quebec city to reenergize my love of magic, since I'm already in Canada I'll also spend time with My Mom, Sister, and college room mate.

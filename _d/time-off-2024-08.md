@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Time off August 2024
+permalink: /timeoff-24-08
 imagefeaturelocal: raccoon-vacation.webp
-permalink: /time-off-2024-08
 redirect_from:
+  - /time-off-2024-08
   - /time-off-next
   - /time-off-now
 ---

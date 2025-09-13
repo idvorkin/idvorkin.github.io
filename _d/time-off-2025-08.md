@@ -1,9 +1,11 @@
 ---
 layout: post
 title: Time off August 2025 - Meta Recharge
+permalink: /timeoff-25-08
 imagefeaturelocal: raccoon-vacation.webp
-permalink: /time-off-2025-08
 sort_order: 300
+redirect_from:
+  - /time-off-2025-08
 ---
 
 I'm incredibly fortunate to be able to take 6 weeks off this summer! After 5 years of service at Meta, you get 30 days (about 5 week) off!

@@ -1,7 +1,8 @@
 ---
 layout: post
-imagefeaturelocal: raccoon-vacation.webp
 title: Adventures March and April 2020
+permalink: /timeoff-20-03
+imagefeaturelocal: raccoon-vacation.webp
 ---
 
 In March 2020, I took a 2 month sabatical between leaving Amazon and joining Facebook. Given it was a substantial amount of time, I came up with some big plans, and wrote them down. It was a great plan, BUT my time off correlated perfectly to the Corona Virus and as a result I wasted lots of my mental energy thinking about the Corona Virus, and adjusting to being in pseudo-quarantine. Took me a while, but I finally realized I should ignore corona virus, or at least minimize my time thinking about it.

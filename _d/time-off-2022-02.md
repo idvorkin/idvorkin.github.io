@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Time off Mid winter break 2022
+permalink: /timeoff-22-02
 ---
 
 It'mid winter break and I've got a week off. In an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation I'm going to pre-write what I want to get done, and adjust it as I go.
