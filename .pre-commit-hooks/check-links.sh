@@ -22,10 +22,10 @@ fi
 
 # Check if lychee is available
 if ! command -v lychee > /dev/null 2>&1; then
-    echo "⚠️  lychee not found - installing ARM64 version..."
-    curl -sSL https://github.com/lycheeverse/lychee/releases/latest/download/lychee-aarch64-unknown-linux-gnu.tar.gz | tar xz
-    sudo mv lychee /usr/local/bin/
-    echo "✅ lychee installed successfully"
+    echo "⚠️  lychee not found - skipping link check ✅"
+    echo "   💡 Install lychee to enable link checking:"
+    echo "   curl -sSL https://github.com/lycheeverse/lychee/releases/latest/download/lychee-aarch64-unknown-linux-gnu.tar.gz | tar xz && sudo mv lychee /usr/local/bin/"
+    exit 0
 fi
 
 echo "🔗 Checking internal links in staged files..."
