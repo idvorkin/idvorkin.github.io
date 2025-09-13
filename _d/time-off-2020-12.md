@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Time off X-mas 2020
-permalink: /timeoff-20-12
+permalink: /timeoff-2020-12
 no-render-title: true
 ---
 

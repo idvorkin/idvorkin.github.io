@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Adventures March and April 2020
-permalink: /timeoff-20-03
+permalink: /timeoff-2020-03
 imagefeaturelocal: raccoon-vacation.webp
 ---
 

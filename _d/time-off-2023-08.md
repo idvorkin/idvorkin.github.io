@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Time off August 2023
-permalink: /timeoff-23-08
+permalink: /timeoff-2023-08
 imagefeaturelocal: raccoon-vaccation.png
 ---
 
