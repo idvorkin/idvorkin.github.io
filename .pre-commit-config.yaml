@@ -74,3 +74,13 @@ repos:
         exclude: "^zz-chop-logs/.*$|back-links.json" # Exclude the zz-chop-logs directory
         pass_filenames: true
         verbose: true
+
+      - id: check-internal-links
+        name: Check internal links with lychee
+        entry: .pre-commit-hooks/check-links.sh
+        language: script
+        files: '\.(md|markdown)$'
+        exclude: "^zz-chop-logs/.*$|back-links.json" # Exclude the zz-chop-logs directory
+        pass_filenames: false
+        always_run: false
+        verbose: true

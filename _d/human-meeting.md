@@ -4,6 +4,7 @@ title: "Feelings/Human Meetings"
 permalink: "/human-meetings"
 redirect_from:
   - "/feeling-meetings"
+  - "/Human-Meetings"
 tags:
   - emotional intelligence
 ---
