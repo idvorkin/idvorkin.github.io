@@ -330,7 +330,7 @@ Turns out, I love this now. Check out
 
 ### Sports cars
 
-On my trip to [FISM](/d/timeoff-07-2022), the cheapest car to rent ended up being a fancy sports car. It accelerated like butter, braked on a dime, and had gear shifting paddles in full sports mode. I soon realized I could weave through traffic going 60 miles an hour easily playing peek-a-boo with regular cars.
+On my trip to [FISM](/timeoff-2022-07), the cheapest car to rent ended up being a fancy sports car. It accelerated like butter, braked on a dime, and had gear shifting paddles in full sports mode. I soon realized I could weave through traffic going 60 miles an hour easily playing peek-a-boo with regular cars.
 
 I realized 1/ no value to me in this 2/ chance of getting into or causing an accident 3/ chance of me focusing on anger that someone else is playing peek-a-boo with me and winning.
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Time off Spring break 2024 - Chillin
+permalink: /timeoff-2024-04
 imagefeaturelocal: raccoon-vacation.webp
 redirect_from:
   - /time-off-2024-04

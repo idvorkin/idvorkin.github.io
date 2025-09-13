@@ -145,7 +145,7 @@ And by making your positive habits easier. For me, this includes writing up a ti
 
 Look at the incoming links below and:
 
-- [April 2020 - Time between leaving Amazon and Joining Facebook](/time-off-2020-03)
+- [April 2020 - Time between leaving Amazon and Joining Facebook](/timeoff-2020-03)
 
 ## Making the most out of staycation
 
@@ -155,7 +155,7 @@ With staycations, it's especially easy to oscillate between vegetating, grinding
 
 I've felt guilt around this before, but this time it worked amazing:
 
-{%include summarize-page.html src="/time-off-2024-02" %}
+{%include summarize-page.html src="/timeoff-2024-02" %}
 
 Pros:
 

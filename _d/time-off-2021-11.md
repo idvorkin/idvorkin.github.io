@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Time off Turkey Day 2021
+permalink: /timeoff-2021-11
 imagefeaturelocal: raccoon-vacation.webp
 ---
 

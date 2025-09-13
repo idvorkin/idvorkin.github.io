@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Time off April Break 2023
+permalink: /timeoff-2023-04
 imagefeaturelocal: raccoon-vaccation.png
 ---
 
