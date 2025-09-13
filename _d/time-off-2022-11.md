@@ -107,6 +107,8 @@ Two days before the start of the trip we had layoffs (including my partners who 
 
 Even though we live 40 minutes part, I almost never see Ammon in person (notable exceptions being when he is bringing over a birthday cake). I prioritized spending time with him - and it's super enjoyable.
 
+{% include blob_image.html src="images/cake.png" %}
+
 ## Family (Y/5)
 
 - ☐ Call kids every day and hear what they did.
