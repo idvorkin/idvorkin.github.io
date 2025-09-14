@@ -16,6 +16,7 @@ This script checks only the files that are being committed.
 import json
 import subprocess
 import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import List, Tuple
 from typing_extensions import Annotated
@@ -24,6 +25,7 @@ import typer
 import requests
 from rich.console import Console
 from rich.panel import Panel
+from rich.progress import Progress, SpinnerColumn, TextColumn
 
 app = typer.Typer(
     help="Check internal links in staged markdown files",
@@ -117,7 +119,7 @@ def translate_files_to_urls(files: List[str]) -> Tuple[List[str], List[str]]:
     return translated_urls, files_not_in_backlinks
 
 
-def run_lychee(url: str, staged_files: List[str]) -> bool:
+def run_lychee(url: str, staged_files: List[str], verbose: bool = False) -> bool:
     """
     Run lychee on a single URL.
     Returns True if all links are valid, False otherwise.
@@ -128,7 +130,8 @@ def run_lychee(url: str, staged_files: List[str]) -> bool:
     else:
         base_url = "http://localhost:4000"
 
-    console.print(f"🌐 Checking {url} with base URL: {base_url}")
+    if verbose:
+        console.print(f"🌐 Checking {url} with base URL: {base_url}")
 
     # Build exclude arguments for GitHub links to staged files
     exclude_args = []
@@ -257,11 +260,41 @@ def check(
 
     console.print(f"🌐 Checking URLs: {' '.join(final_urls)}")
 
-    # Run lychee on each URL
+    # Run lychee checks in parallel
     all_success = True
-    for url in final_urls:
-        if not run_lychee(url, staged_files):
-            all_success = False
+    failed_urls = []
+
+    with Progress(
+        SpinnerColumn(),
+        TextColumn("[progress.description]{task.description}"),
+        console=console,
+    ) as progress:
+        task = progress.add_task(
+            f"[cyan]Checking {len(final_urls)} URLs in parallel...",
+            total=len(final_urls),
+        )
+
+        with ThreadPoolExecutor(max_workers=5) as executor:
+            # Submit all lychee checks to run in parallel
+            future_to_url = {
+                executor.submit(run_lychee, url, staged_files, verbose): url
+                for url in final_urls
+            }
+
+            # Process results as they complete
+            for future in as_completed(future_to_url):
+                url = future_to_url[future]
+                try:
+                    success = future.result()
+                    if not success:
+                        all_success = False
+                        failed_urls.append(url)
+                except Exception as e:
+                    console.print(f"[red]❌ Error checking {url}: {e}[/red]")
+                    all_success = False
+                    failed_urls.append(url)
+
+                progress.update(task, advance=1)
 
     if all_success:
         console.print(
@@ -272,11 +305,12 @@ def check(
         )
         raise typer.Exit(0)
     else:
+        error_msg = "[red]❌ Found broken links in staged files[/red]"
+        if failed_urls:
+            error_msg += f"\n[red]Failed URLs: {', '.join(failed_urls)}[/red]"
+        console.print(Panel(error_msg, title="Error"))
         console.print(
-            Panel("[red]❌ Found broken links in staged files[/red]", title="Error")
-        )
-        console.print(
-            "[yellow]💡 Run individual lychee commands shown above for details[/yellow]"
+            "[yellow]💡 Check the output above for details about broken links[/yellow]"
         )
         raise typer.Exit(1)
 
