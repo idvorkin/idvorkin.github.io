@@ -17,6 +17,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2025-09-14](#2025-09-14)
   - [2025-09-13](#2025-09-13)
   - [2025-09-07](#2025-09-07)
   - [2025-08-21](#2025-08-21)
@@ -147,6 +148,12 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2025-09-14
+
+- **NOTE** I really need to remember to only vibe code with multi monitor, just too expensive to sit there only vibe coding.
+  - Setup Secondary iPad
+  - Maybe this is why you want to use voice
 
 ### 2025-09-13
 
