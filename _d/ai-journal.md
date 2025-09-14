@@ -150,9 +150,10 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 ### 2025-09-13
 
-- Moving [Tony Blog Commands to MCP](https://github.com/idvorkin/tony_tesla/issues/5)
-  - Lots of painfulness in doing this
-  - I need to be less failed 1 shot and more deliberate
+- Great line ... Once you let vibe coding into your code, it becomes writable only by AI. So true.
+- Moving [Tony Blog Commands to MCP](https://github.com/idvorkin/tony_tesla/issues/5) - and the [MCP Server](https://github.com/idvorkin/idvorkin-blog-mcp)
+  - SO MUCH PAIN GETTING THIS SIMPLE THING TO WORK (look at all my diffs)
+  - I need to do these planning workflows - see if they help.
 - Kind of fun using claude to add missing permalinks to my [time off blog posts](https://github.com/idvorkin/idvorkin.github.io/issues/165)
   ![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250913_144726.webp)
 - Wonderful using it to fix broken links, and add a pre-commit rule to make it harder to regress
