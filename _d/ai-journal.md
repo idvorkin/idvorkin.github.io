@@ -17,6 +17,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2025-09-13](#2025-09-13)
   - [2025-09-07](#2025-09-07)
   - [2025-08-21](#2025-08-21)
     - [Psychic Shadows Gas Lighting](#psychic-shadows-gas-lighting)
@@ -147,6 +148,15 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 ## Diary
 
+### 2025-09-13
+
+- Moving [Tony Blog Commands to MCP](https://github.com/idvorkin/tony_tesla/issues/5)
+  - Lots of painfulness in doing this
+  - I need to be less failed 1 shot and more deliberate
+- Kind of fun using claude to add missing permalinks to my [time off blog posts](https://github.com/idvorkin/idvorkin.github.io/issues/165)
+  ![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250913_144726.webp)
+- Wonderful using it to fix broken links, and add a pre-commit rule to make it harder to regress
+
 ### 2025-09-07
 
 - Played with AI music [suno](https://suno.com/song/21be0b93-a44b-4a94-b2d6-39a59fff6283), to create a musical eulogy
@@ -169,6 +179,7 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - Originally created on July 18, 2025 ([commit 38d87330](https://github.com/idvorkin/idvorkin.github.io/commit/38d87330)) as "crafting spells to banish ruminating thoughts"
   - Added image features ([commit bab47de6](https://github.com/idvorkin/idvorkin.github.io/commit/bab47de6)) - a very lucky last commit or I'd never have found it.
 - **The Shocking Discovery**: File was deleted in [PR #67](https://github.com/idvorkin/idvorkin.github.io/pull/67) ([commit e73324f9](https://github.com/idvorkin/idvorkin.github.io/commit/e73324f9))
+
   - **PR title**: "Add random page navigation feature"
   - **Actual changes**: Also randomly deleted an entire page!
   - 251 lines of carefully crafted content about mental health - gone
@@ -223,21 +234,25 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 #### The Claude Review Workflow Saga - When Good Intentions Break Everything
 
 - **The Problem**: Claude Code Review had been failing on EVERY PR since August 17th with mysterious "Invalid OIDC token" errors
+
   - Someone (probably me via AI) had "fixed" the workflow to support fork PRs by changing from `pull_request` to `pull_request_target`
   - Classic case of "the fix that breaks everything else"
 
 - **The Wild Goose Chase**:
+
   - First hypothesis: OIDC tokens don't work with `pull_request_target` - let's add `github_token`!
   - Created PR #120 to add the token - still failed
   - Tested from a fork (PR #121) to be thorough - also failed
   - The beta Claude action just wasn't compatible with `pull_request_target` events
 
 - **The Real Fix**: Sometimes you just have to admit defeat and revert
+
   - PR #122: Reverted to the original `pull_request` event that actually worked
   - Lost fork PR support, but gained back ALL regular PR reviews
   - Better to have 95% working than 100% broken
 
 - **Bonus Discovery**: While debugging the Vitest workflow force-push failures
+
   - Found branch protection rules were set to `~ALL` instead of just `main`
   - This was blocking pushes to PR branches, test-results branch, everything!
   - One setting change fixed multiple mysterious CI failures
@@ -504,6 +519,7 @@ Check out the great documentation at promptfoo, including redteaming I thgues st
 ### 2024-04-06
 
 - Containerize Bot
+
   - Secret Injection
   - Auto Starting
 
