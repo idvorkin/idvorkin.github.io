@@ -77,7 +77,7 @@ repos:
 
       - id: check-internal-links
         name: Check internal links with lychee
-        entry: .pre-commit-hooks/check-links.sh
+        entry: .pre-commit-hooks/check-links.py
         language: script
         files: '\.(md|markdown)$'
         exclude: "^zz-chop-logs/.*$|back-links.json" # Exclude the zz-chop-logs directory

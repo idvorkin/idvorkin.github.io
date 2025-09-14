@@ -33,6 +33,7 @@ echo "📁 Files: $STAGED_FILES"
 
 # Translate markdown file paths to their corresponding URLs using backlinks.json
 TRANSLATED_URLS=""
+FILES_NOT_IN_BACKLINKS=""
 if [ -f "back-links.json" ]; then
     for file in $STAGED_FILES; do
         # Use Python to look up the URL for this markdown file
@@ -51,6 +52,11 @@ except:
     print('$file')
 " 2>/dev/null)
 
+        # Track files not found in backlinks
+        if [[ "$URL" == "$file" ]]; then
+            FILES_NOT_IN_BACKLINKS="$FILES_NOT_IN_BACKLINKS $file"
+        fi
+
         # Only add to the list if it's not already there
         if [[ "$TRANSLATED_URLS" != *"$URL"* ]]; then
             TRANSLATED_URLS="$TRANSLATED_URLS $URL"
@@ -59,6 +65,18 @@ except:
 else
     # Fallback to checking files directly if no backlinks.json
     TRANSLATED_URLS="$STAGED_FILES"
+    FILES_NOT_IN_BACKLINKS="$STAGED_FILES"
+fi
+
+# Warn about files not in backlinks
+if [ -n "$FILES_NOT_IN_BACKLINKS" ]; then
+    echo "⚠️  Warning: The following files are not in back-links.json:"
+    for file in $FILES_NOT_IN_BACKLINKS; do
+        echo "   - $file"
+    done
+    echo "   💡 Run 'just update-backlinks' to update the backlinks database"
+    echo "   ⚠️  Fragment validation may fail for these files"
+    echo ""
 fi
 
 # Remove any file paths that have corresponding URLs (avoid checking both)
@@ -96,7 +114,18 @@ for url in $TRANSLATED_URLS; do
     fi
 
     echo "🌐 Checking $url with base URL: $BASE_URL"
-    if ! lychee --base-url "$BASE_URL" --include-fragments --exclude 'https://github\.com/.*#L\d+' --format markdown --quiet --quiet --no-progress "$url"; then
+
+    # Build a list of exclude patterns for GitHub links to the currently staged files
+    EXCLUDE_ARGS=""
+    for staged_file in $STAGED_FILES; do
+        # Exclude GitHub links to each staged file (they may not exist in main branch yet)
+        EXCLUDE_ARGS="$EXCLUDE_ARGS --exclude 'https://github\.com/idvorkin/idvorkin\.github\.io/blob/[^/]*/$staged_file'"
+    done
+
+    # Also exclude GitHub line number fragments
+    EXCLUDE_ARGS="$EXCLUDE_ARGS --exclude 'https://github\.com/.*#L\d+'"
+
+    if ! lychee --base-url "$BASE_URL" --include-fragments $EXCLUDE_ARGS --format markdown --quiet --quiet --no-progress "$url"; then
         OVERALL_EXIT_CODE=1
         echo "❌ Found broken links in $url"
     fi
