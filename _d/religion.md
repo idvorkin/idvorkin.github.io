@@ -1,5 +1,5 @@
 ---
-title: "Religion: Practice, Community, and Meaning"
+title: "Religion: Losing belief while seeing value"
 layout: post
 permalink: /religion
 ---
@@ -14,12 +14,17 @@ I did my Bar Mitzvah at the Wailing Wall in Isreal — the holiest place in Juda
   - [When Proof Became My Religion](#when-proof-became-my-religion)
   - [The Day I valued Religion](#the-day-i-valued-religion)
   - [In my 40s all the other stuff](#in-my-40s-all-the-other-stuff)
-- [Why Religion?](#why-religion)
-- [Belief vs Practice](#belief-vs-practice)
-- [Community, Ritual, and Identity](#community-ritual-and-identity)
-- [Secular Spirituality](#secular-spirituality)
-- [My Working Principles](#my-working-principles)
-- [Related posts](#related-posts)
+- [The Hard Parts for Me](#the-hard-parts-for-me)
+  - [Proof](#proof)
+  - [Hypocrisy](#hypocrisy)
+  - [Pushiness](#pushiness)
+  - [Arbitrariness & Literalism](#arbitrariness--literalism)
+- [The Gifts I want](#the-gifts-i-want)
+- [Appendix and stuff I'm working in ...](#appendix-and-stuff-im-working-in-)
+  - [Why Religion?](#why-religion)
+  - [Belief vs Practice](#belief-vs-practice)
+  - [Community, Ritual, and Identity](#community-ritual-and-identity)
+  - [Secular Spirituality](#secular-spirituality)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -60,33 +65,50 @@ That was the day religion showed its worth to me: not in metaphysics, but in str
 
 ### In my 40s all the other stuff
 
-## Why Religion?
+## The Hard Parts for Me
+
+### Proof
+
+The problem is proof. I don’t see it. With an engineering mindset, I expect cause, effect, and data — and religion doesn’t give me that. The parts about burning in hell are especially hard to accept. If I can’t see it, measure it, or reason my way to it, it doesn’t land.
+
+_To be fair, there are things I accept as good even though the only evidence is personal and experiential. Bringing joy makes me feel happy, so I keep doing it. Gratitude practices lift my mood, even if I can’t prove why. Not everything needs to be double-blind tested to matter._
+
+### Hypocrisy
+
+The problem is hypocrisy. Religion has plenty of examples of evil done in its name, or leaders exploiting faith for personal gain. To be fair, that isn’t unique to religion — some people are just shitty and will exploit whatever they can.
+
+_To be fair, I’ve also seen religion call people to their best selves. In community, people often act with generosity and service, not exploitation. That doesn’t erase the bad, but it balances it._
+
+### Pushiness
+
+The problem is pushiness. Again, not unique to religion, but easy to see there. If someone really believes they hold the greatest gift in the world, of course they want to share it. If someone thinks they’re protecting you, of course they’ll try to stop you from doing something dangerous. I get the intent, but it can feel suffocating.
+
+_To be fair, I’ve been pushy too. When I care deeply, I want to convince people. If I believe something makes life better, I share it — sometimes too strongly. So I get where the impulse comes from, even if I don’t like being on the receiving end._
+
+### Arbitrariness & Literalism
+
+The problem is arbitrariness. I struggle with random literal interpretations, absolute faith, and the inability to question. It feels like being asked to accept rules without context, as if the meaning is locked and you’re not allowed to ask why.
+
+_To be fair, I can see the upside. If we really did have a universal standard, there would be no argument about morality. Everyone would know where the lines are, and that certainty would be a relief. It’s also comforting not to have to figure everything out on your own — sometimes having the rules spelled out is easier than reinventing the code of life from scratch._
+
+## The Gifts I want
+
+Add stuff here
+
+## Appendix and stuff I'm working in ...
+
+### Why Religion?
 
 Religions persist because they solve hard coordination problems: transmitting values across generations, creating social trust, and providing meaning under uncertainty. They encode “do this, not that” as embodied wisdom, not just abstract rules. My interest is pragmatic: learn from what works, name what harms, keep the parts that build resilient, prosocial humans.
 
-## Belief vs Practice
+### Belief vs Practice
 
 The modern debate over belief often misses the power of practice. You don’t have to resolve every metaphysical claim to benefit from disciplined rituals: weekly reflection, shared meals, service, confession/repair, sabbath-style rest. Practice shapes identity through repetition; belief often follows behavior.
 
-## Community, Ritual, and Identity
+### Community, Ritual, and Identity
 
 Healthy communities make belonging conditional on contribution, not conformity. Good rituals are scaffolding: they mark time, create memory, and bind people together without demanding uniformity of thought. The failure modes are obvious—tribalism, purity tests, coercion—so design for generosity, accountability, and repair.
 
-## Secular Spirituality
+### Secular Spirituality
 
 You can pursue awe, humility, gratitude, and service without formal religion. Meditation, nature, art, and shared work provide many of the same psychological benefits when practiced intentionally. The question isn’t “religious or not,” but “what practice reliably opens you to meaning while keeping you kind?”
-
-## My Working Principles
-
-- **Start with practice** – Small, repeated actions beat grand statements.
-- **Choose communities that repair** – Conflict is inevitable; repair is optional. Make it mandatory.
-- **Keep sabbath** – Regularly stop. Rest is a moral technology, not a luxury.
-- **Honor the dead, serve the living** – Remember where you came from; invest where you can help now.
-- **Measure by fruits** – Are people becoming kinder, braver, and more truthful?
-
-## Related posts
-
-{% include summarize-page.html src="/siy" %}
-{% include summarize-page.html src="/affirmations" %}
-{% include summarize-page.html src="/emotional-health" %}
-{% include summarize-page.html src="/chapters" %}
