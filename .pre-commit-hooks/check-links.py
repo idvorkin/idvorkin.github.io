@@ -1,7 +1,8 @@
 #!/usr/bin/env uv run
 # /// script
-# requires-python = ">=3.11"
+# requires-python = ">=3.13"
 # dependencies = [
+#     "typer",
 #     "requests",
 #     "rich",
 # ]
@@ -17,8 +18,18 @@ import subprocess
 import sys
 from pathlib import Path
 from typing import List, Tuple
+from typing_extensions import Annotated
+
+import typer
 import requests
 from rich.console import Console
+from rich.panel import Panel
+
+app = typer.Typer(
+    help="Check internal links in staged markdown files",
+    add_completion=False,
+    no_args_is_help=False,  # We want to run without args
+)
 
 console = Console()
 
@@ -166,14 +177,24 @@ def run_lychee(url: str, staged_files: List[str]) -> bool:
         return False
 
 
-def main():
-    """Main function."""
+@app.command()
+def check(
+    verbose: Annotated[
+        bool, typer.Option("--verbose", "-v", help="Show detailed output")
+    ] = False,
+) -> None:
+    """
+    Check internal links in staged markdown files.
+
+    This command checks all staged markdown files for broken links using lychee.
+    It requires Jekyll server to be running and lychee to be installed.
+    """
     # Get staged markdown files
     staged_files = get_staged_markdown_files()
 
     if not staged_files:
         console.print("📝 No markdown files to check")
-        return 0
+        raise typer.Exit(0)
 
     # Check if Jekyll server is running
     if not check_jekyll_server():
@@ -183,7 +204,7 @@ def main():
         console.print(
             "[yellow]   💡 Run 'just jekyll-serve' to enable link checking[/yellow]"
         )
-        return 0
+        raise typer.Exit(0)
 
     # Check if lychee is installed
     if not check_lychee_installed():
@@ -192,7 +213,7 @@ def main():
         console.print(
             "[yellow]   curl -sSL https://github.com/lycheeverse/lychee/releases/latest/download/lychee-aarch64-unknown-linux-gnu.tar.gz | tar xz && sudo mv lychee /usr/local/bin/[/yellow]"
         )
-        return 0
+        raise typer.Exit(0)
 
     console.print("🔗 Checking internal links in staged files...")
     console.print(f"📁 Files: {' '.join(staged_files)}")
@@ -243,15 +264,33 @@ def main():
             all_success = False
 
     if all_success:
-        console.print("[green]✅ All links in staged files are working![/green]")
-        return 0
+        console.print(
+            Panel(
+                "[green]✅ All links in staged files are working![/green]",
+                title="Success",
+            )
+        )
+        raise typer.Exit(0)
     else:
-        console.print("[red]❌ Found broken links in staged files[/red]")
+        console.print(
+            Panel("[red]❌ Found broken links in staged files[/red]", title="Error")
+        )
         console.print(
             "[yellow]💡 Run individual lychee commands shown above for details[/yellow]"
         )
-        return 1
+        raise typer.Exit(1)
+
+
+# Keep backward compatibility for pre-commit hook
+def main() -> int:
+    """Main entry point for backward compatibility."""
+    try:
+        app(standalone_mode=False)
+        return 0
+    except typer.Exit as e:
+        return e.exit_code
 
 
 if __name__ == "__main__":
+    # For pre-commit hook compatibility, call main() directly
     sys.exit(main())

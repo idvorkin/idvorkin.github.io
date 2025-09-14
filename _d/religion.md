@@ -12,7 +12,7 @@ I did my Bar Mitzvah at the Wailing Wall in Isreal — the holiest place in Juda
 - [My story](#my-story)
   - [How I Became a Man at 13](#how-i-became-a-man-at-13)
   - [When Proof Became My Religion](#when-proof-became-my-religion)
-  - [The Day I understood the value of religion at 25](#the-day-i-understood-the-value-of-religion-at-25)
+  - [The Day I valued Religion](#the-day-i-valued-religion)
   - [In my 40s all the other stuff](#in-my-40s-all-the-other-stuff)
 - [Why Religion?](#why-religion)
 - [Belief vs Practice](#belief-vs-practice)
@@ -36,15 +36,13 @@ When you’re Jewish, turning thirteen means becoming a man — you study the To
 
 ### When Proof Became My Religion
 
-I have an engineering mindset: science, cause and effect, proof. In engineering, if you can’t measure it, model it, or test it, you don’t trust it. That way of thinking trained me to look at religion with the same lens.
+I am an engineer: science, cause and effect, proof. If you can’t measure it, model it, or test it, you don’t trust it. No proof, no belief. Stories without evidence - bugs in the system. Miracles? Not reproducible. God? No causal mechanism. The whole thing looked like bad engineering.
 
-And under that lens, it failed. No proof, no belief. Stories without evidence felt like bugs in the system. Miracles? Not reproducible. God? No causal mechanism. The whole thing looked like bad engineering.
-
-So I dropped it. At the time, it felt obvious: why would I build my life on something that couldn’t even pass a basic test plan?
+Why would I build my life on something that couldn’t even pass a basic test plan?
 
 What I didn’t see then was that religion doesn’t live or die on proof — it lives in practice.
 
-### The Day I understood the value of religion at 25
+### The Day I valued Religion
 
 Just a normal day at work, the phone rang out of the blue. “Igor, please sit down.” My dad was dead. I had no idea what to do, but my synagogue — basically the Jewish version of a church — did. In Judaism, the dead are buried quickly, usually within 24 hours, so there’s no time to get lost in indecision. You just follow the steps.
 
