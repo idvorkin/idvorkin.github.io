@@ -79,6 +79,12 @@ I'll convert this to a graph, and all these numbers are made up:
 
 This is a bit of a misnomer, as the same can happen when dieting hard. I think the mitigations are lots of protein, I"m probably doing 1g\*lbs/day, and exercise, I"m currently doing 6 days/week.
 
+### Bryan Johnson's Tirzepatide Experiment Failure
+
+Bryan Johnson, who was microdosing tirzepatide (0.5mg weekly) not for weight loss but for potential longevity benefits like reduced dementia risk, [halted his experiment after just 3 weeks](https://x.com/bryan_johnson/status/1885024727095529895). The negative effects were immediate and measurable: his resting heart rate increased by 3 bpm (a 7% jump from his baseline mid-40s), his HRV dropped by 7 points, and his sleep quality deteriorated by 10%.
+
+For Johnson, this was an unacceptable trade-off. While GLP-1 drugs showed promise with a 12% reduction in Alzheimer's risk, they also carried a 12% increased risk of sleep disturbances - and sleep disorders, even for less than a year, are associated with a 63.8% increase in neurodegenerative disease risk. Since Johnson considers perfect sleep foundational to his longevity protocol, the immediate, measurable harm to his sleep and cardiovascular metrics far outweighed any theoretical long-term benefits that might take decades to materialize.
+
 ## FAQ
 
 ### Did you get a 'script, isn't there a shortage? Is this some grey market \$hit?

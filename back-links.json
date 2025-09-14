@@ -4994,7 +4994,7 @@
         },
         "/terzepatide": {
             "description": "“You know Igor, weight loss is a solved problem” - my bestie, texted me when I complained about my pants no longer fitting. Remember - Diet dominates weight, as weight is simple arithmetic -“calories in” minus “calories out”. For me, will power dominates diet, and terzepatide dominates will power when stuffing things in my mouth. I started Terzepatide in February 2024, and so far it’s been great.\n\n",
-            "doc_size": 18000,
+            "doc_size": 19000,
             "file_path": "_site/terzepatide.html",
             "incoming_links": [
                 "/42",
@@ -5005,7 +5005,7 @@
                 "/timeoff-2024-04",
                 "/voices"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2025-09-14T09:13:28.296847",
             "markdown_path": "_d/terzepatide.md",
             "outgoing_links": [],
             "redirect_url": "",
