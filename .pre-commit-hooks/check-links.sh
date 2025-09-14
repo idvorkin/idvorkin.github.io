@@ -61,17 +61,52 @@ else
     TRANSLATED_URLS="$STAGED_FILES"
 fi
 
+# Remove any file paths that have corresponding URLs (avoid checking both)
+if [ -f "back-links.json" ]; then
+    FINAL_URLS=""
+    for url in $TRANSLATED_URLS; do
+        # Skip file paths if we have a corresponding URL
+        if [[ "$url" == http://localhost:4000* ]]; then
+            FINAL_URLS="$FINAL_URLS $url"
+        elif [[ "$TRANSLATED_URLS" != *"http://localhost:4000"* ]]; then
+            # Only include files if no URL was found
+            FINAL_URLS="$FINAL_URLS $url"
+        fi
+    done
+    TRANSLATED_URLS="$FINAL_URLS"
+fi
+
 # Clean up extra spaces
 TRANSLATED_URLS=$(echo $TRANSLATED_URLS | tr -s ' ')
 
 echo "🌐 Checking URLs: $TRANSLATED_URLS"
 
-# Run lychee on the translated URLs/files
-if lychee --base-url http://localhost:4000 --include-fragments --format markdown --quiet --quiet --no-progress $TRANSLATED_URLS; then
+# Run lychee on each URL individually with the correct base URL for fragment resolution
+# Exclude GitHub URLs with line number fragments (#L\d+) from fragment validation
+# as lychee can't validate line numbers on GitHub pages with ?plain=1
+OVERALL_EXIT_CODE=0
+
+for url in $TRANSLATED_URLS; do
+    if [[ "$url" == http://localhost:4000* ]]; then
+        # For localhost URLs, use the URL itself as base for proper fragment resolution
+        BASE_URL="$url"
+    else
+        # For files, use localhost:4000 as base
+        BASE_URL="http://localhost:4000"
+    fi
+
+    echo "🌐 Checking $url with base URL: $BASE_URL"
+    if ! lychee --base-url "$BASE_URL" --include-fragments --exclude 'https://github\.com/.*#L\d+' --format markdown --quiet --quiet --no-progress "$url"; then
+        OVERALL_EXIT_CODE=1
+        echo "❌ Found broken links in $url"
+    fi
+done
+
+if [ $OVERALL_EXIT_CODE -eq 0 ]; then
     echo "✅ All links in staged files are working!"
     exit 0
 else
     echo "❌ Found broken links in staged files"
-    echo "💡 Run 'lychee --base-url http://localhost:4000 --include-fragments $TRANSLATED_URLS' for details"
+    echo "💡 Run individual lychee commands shown above for details"
     exit 1
 fi

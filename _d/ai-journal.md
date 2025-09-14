@@ -108,19 +108,18 @@ This took me about 30 minutes to setup - crazy!!
 
 OK, I used to go to this psychiatrist, who had a full "consistent model" of psychiatry
 
-[here](https://whatilearnedsofar.com/practice/)
+here (https://whatilearnedsofar.com/practice/) (broken link)
 
 lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 1. Lets use <https://github.com/paulpierre/markdown-crawler>:
 2. pip install markdown-crawler
-   markdown-crawler <https://whatilearnedsofar.com/practice/> --output-dir ./practice
+   markdown-crawler https://whatilearnedsofar.com/practice/ --output-dir ./practice (broken link)
 
 ## What I wrote summary
 
 - I tend to write a fair bit over a time span, and forget what I did. I used a simple [git log stat creator](https://github.com/idvorkin/settings/blob/7c747bf7061a2da774faedd6efe14fdff547e92d/shared/zsh_include.sh?plain=1#L133) to see it, but it was too simple
 - Turns, out LLMs are a great way to do this. So I wrote an [app for it](https://github.com/idvorkin/nlp/blob/303d7c58265b647dead79ccdbaeafd0cab58d1a0/changes.py?plain=1#L211). It does [great summaries](https://gist.github.com/idvorkin/7f457ef75330f5faee8c9a82a3d0d820). Inlining changes to this app as follows:
-
   - [changes.py](https://github.com/idvorkin/nlp/blob/303d7c58265b647dead79ccdbaeafd0cab58d1a0/changes.py)
   - Creation of a new Python script to handle Git diffs and summarize changes using OpenAI.
   - Major functionalities include:
@@ -170,7 +169,6 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - Originally created on July 18, 2025 ([commit 38d87330](https://github.com/idvorkin/idvorkin.github.io/commit/38d87330)) as "crafting spells to banish ruminating thoughts"
   - Added image features ([commit bab47de6](https://github.com/idvorkin/idvorkin.github.io/commit/bab47de6)) - a very lucky last commit or I'd never have found it.
 - **The Shocking Discovery**: File was deleted in [PR #67](https://github.com/idvorkin/idvorkin.github.io/pull/67) ([commit e73324f9](https://github.com/idvorkin/idvorkin.github.io/commit/e73324f9))
-
   - **PR title**: "Add random page navigation feature"
   - **Actual changes**: Also randomly deleted an entire page!
   - 251 lines of carefully crafted content about mental health - gone
@@ -201,7 +199,7 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - Like putting a bank vault door on a tent
 - **The Discovery**: Found I had a GitHub ruleset that SHOULD prevent this
   - It was **DISABLED** 🤦
-  - Link: [GitHub Rulesets Settings](https://github.com/idvorkin/idvorkin.github.io/settings/rules)
+  - Link: GitHub Rulesets Settings (https://github.com/idvorkin/idvorkin.github.io/settings/rules) (broken link)
   - The protection was there all along, just... turned off
 - **The Irony**:
   - Spent hours setting up container isolation
@@ -225,25 +223,21 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 #### The Claude Review Workflow Saga - When Good Intentions Break Everything
 
 - **The Problem**: Claude Code Review had been failing on EVERY PR since August 17th with mysterious "Invalid OIDC token" errors
-
   - Someone (probably me via AI) had "fixed" the workflow to support fork PRs by changing from `pull_request` to `pull_request_target`
   - Classic case of "the fix that breaks everything else"
 
 - **The Wild Goose Chase**:
-
   - First hypothesis: OIDC tokens don't work with `pull_request_target` - let's add `github_token`!
   - Created PR #120 to add the token - still failed
   - Tested from a fork (PR #121) to be thorough - also failed
   - The beta Claude action just wasn't compatible with `pull_request_target` events
 
 - **The Real Fix**: Sometimes you just have to admit defeat and revert
-
   - PR #122: Reverted to the original `pull_request` event that actually worked
   - Lost fork PR support, but gained back ALL regular PR reviews
   - Better to have 95% working than 100% broken
 
 - **Bonus Discovery**: While debugging the Vitest workflow force-push failures
-
   - Found branch protection rules were set to `~ALL` instead of just `main`
   - This was blocking pushes to PR branches, test-results branch, everything!
   - One setting change fixed multiple mysterious CI failures
@@ -390,7 +384,7 @@ Instead of having to write the code myself, I can have aider upgrade my code to 
 
 [Aider code upgrade example](https://gist.github.com/idvorkin/2f30c4f7ca2c45ab8fa534ebaeedc1e5)
 
-![Aider code upgrade example](https://private-user-images.githubusercontent.com/280981/379853492-dad3d891-15cd-4cae-b4c2-955696409002.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjk3ODcwNjIsIm5iZiI6MTcyOTc4Njc2MiwicGF0aCI6Ii8yODA5ODEvMzc5ODUzNDkyLWRhZDNkODkxLTE1Y2QtNGNhZS1iNGMyLTk1NTY5NjQwOTAwMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMDI0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTAyNFQxNjE5MjJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04YjBkYjA2NTVjOWJjNjcxYWNmMjIzYTI1Y2I2ZGI2YjM4NWI4NGM4YmQ2MjE2NzA3MjMzZWYzNDhjNDYxMWY0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.o2ZieBjjVVuYkP3vUgLPk8aEKT4LILmFyipVefHmUlU)
+Aider code upgrade example image (broken link - expired JWT): https://private-user-images.githubusercontent.com/280981/379853492-dad3d891-15cd-4cae-b4c2-955696409002.png
 
 Which makes these links:
 
@@ -450,7 +444,7 @@ Loras we can merge:
 
 The model I trained:
 
-The [model](https://replicate.com/idvorkin/idvorkin-flux-lora-1) on [hugging face](/idvorkin/idvorkin-flux-lora-1) - idvorkin/idvorkin-flux-lora-1
+The [model](https://replicate.com/idvorkin/idvorkin-flux-lora-1) on [hugging face](https://huggingface.co/idvorkin/idvorkin-flux-lora-1) - idvorkin/idvorkin-flux-lora-1
 
 ![Igor doing something](https://replicate.delivery/yhqm/CRLshgbk5ZomNp7GxHSISkMrtynHNufLEZJpFHCa7lcGvXrJA/out-0.webp)
 
@@ -510,7 +504,6 @@ Check out the great documentation at promptfoo, including redteaming I thgues st
 ### 2024-04-06
 
 - Containerize Bot
-
   - Secret Injection
   - Auto Starting
 
@@ -582,7 +575,7 @@ Check out the great documentation at promptfoo, including redteaming I thgues st
 ### 2023-07-04
 
 - Weight and Biases LangChain Traces
-  - <https://docs.wandb.ai/guides/prompts/quickstart>
+  - https://docs.wandb.ai/guides/prompts/quickstart (broken link)
   - See each call to the model
 
 ```zsh
