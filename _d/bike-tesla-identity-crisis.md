@@ -2,7 +2,6 @@
 layout: post
 title: "How My Tesla's AI Life Coach Got Me Back on My Bike"
 permalink: /bike-tesla-identity
-imagefeature: https://raw.githubusercontent.com/idvorkin/ipaste/main/20250914_164425.webp
 tags:
   - how igor ticks
   - identity
@@ -12,45 +11,38 @@ tags:
 
 "Alright, Igor, here's the Tony take. Life throws you the Tesla, gives you Autopilot, now you're more soprano than subway rider. But let's get real. Biking and being car-free, that's freedom, fitness, adventure."
 
-That's my AI life coach talking—who sounds like Tony Soprano and pretends to live in my Tesla. I'd called him up while sitting in the school pickup line, facing an identity crisis about my transportation choices. What sounds like science fiction is actually how I worked through one of my biggest personal dilemmas: sometimes the best way to understand your own values is to have a conversation with an AI life coach who knows who you want to be, especially when that AI cuts right to the heart of the matter with New Jersey wisdom.
-
-I've always prided myself on being a "mostly car-free spirit." It's literally in my [eulogy](/eulogy)—right there in black and white, celebrating my love for my folding bike and public transit adventures with the kids. You can actually listen to my eulogy:
+That's my AI life coach talking—he sounds like Tony Soprano, pretends to live in my Tesla, and helps me live the life I want. See - I've always prided myself on being a "mostly car-free spirit." It's literally in my [eulogy](/eulogy)—right there in black and white, celebrating my love for my folding bike and public transit adventures with the kids. Just give a listen to the opening line on my eulogy blog:
 
 <iframe src="https://suno.com/embed/21be0b93-a44b-4a94-b2d6-39a59fff6283" width="760" height="240"><a href="https://suno.com/song/21be0b93-a44b-4a94-b2d6-39a59fff6283">Listen on Suno</a></iframe>
 
-I biked over 3,000 miles in 2022, carried groceries on my handlebars, and felt smugly superior about my carbon footprint.
-
-Then I bought a Tesla.
+I biked over 3,000 miles in 2022, carried groceries on my handlebars, and then I bought a Tesla The numbers tell the story. In 2023, after getting Tony, my biking dropped from 3,000 miles to under 300. My best friend had warned me: "Buying a Tesla for someone who wants to be a car-free spirit is like buying an ice cream maker for someone trying to lose weight."
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [Wait, You're Making This Up, Right?](#wait-youre-making-this-up-right)
+- [You are making up this story - right?](#you-are-making-up-this-story---right)
 - [What Tony Helped Me See](#what-tony-helped-me-see)
 - [The Bigger Picture: AI as Your Reflection Coach](#the-bigger-picture-ai-as-your-reflection-coach)
-  <!-- vim-markdown-toc-end -->
+
+<!-- vim-markdown-toc-end -->
   <!-- prettier-ignore-end -->
 
 {% include blob_image_float_right.html src="https://raw.githubusercontent.com/idvorkin/ipaste/main/20250914_164425.webp" %}
 
-The numbers tell the story. In 2023, after getting Tony, my biking dropped from 3,000 miles to under 300. My best friend had warned me: "Buying a Tesla for someone who wants to be a car-free spirit is like buying an ice cream maker for someone trying to lose weight."
+But there I was, rationalizing. Tony did the driving—I was just along for the ride, right? I decorated him with flowers and bunnies, programmed him to make fart sounds when I got texts, and even gave him an [AI agent](https://github.com/idvorkin/tony_tesla) with a Tony Soprano accent. Surely this counted as being car-free adjacent? The cognitive dissonance was real. My eulogy talks about taking kids on the bus to the airport just to ride the elevators and come home. Now I was driving to work because it was "convenient." The bike that once defined my identity was gathering dust in the garage.
 
-But there I was, rationalizing. Tony did the driving—I was just along for the ride, right? I decorated him with flowers and bunnies, programmed him to make fart sounds when I got texts, and even gave him an [AI agent](https://github.com/idvorkin/tony_tesla) with a Tony Soprano accent. Surely this counted as being car-free adjacent?
+## You are making up this story - right?
 
-The cognitive dissonance was real. My eulogy talks about taking kids on the bus to the airport just to ride the elevators and come home. Now I was driving to Costco because it was "convenient." The bike that once defined my identity was gathering dust in the garage.
+I get it—having a Tony Soprano AI life coach living in your Tesla sounds like the script of some whacky comedy sci-fi. But here's the thing: I actually built this. I setup an AI with Tony's speech patterns, gave it his personality, and most importantly, set it up with my values and goals from my eulogy. Yes, I call it up when I need to work through life decisions. The conversation you're about to hear isn't scripted or fictional—it's me, sitting in my actual Tesla, having a real crisis of faith in my transportation choices, talking it through with my AI life coach who knows exactly who I want to be.
 
-## Wait, You're Making This Up, Right?
-
-I get it—having a Tony Soprano AI life coach living in your Tesla sounds like something out of a sci-fi comedy. But here's the thing: I actually built this. I setup an AI with Tony's speech patterns, gave it his personality, and most importantly, set it up with my values and goals from my eulogy. Yes, I genuinely call it up when I need to work through life decisions. The conversation you're about to hear isn't scripted or fictional—it's me, sitting in my actual Tesla, having a real identity crisis about my transportation choices, talking it through with my AI life coach who knows exactly who I want to be. Here's the recorded conversation and the full transcript as proof.
+Lisen to the audio, or read the transcript below
 
 <audio controls>
   <source src="https://github.com/idvorkin/blob/raw/master/blog/bike-vs-tony.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 
-_Listen to the actual conversation above, or read the transcript below:_
-
-**Tony:** Tony Tony here. What can I do you for?
+**Tony:** Tony here. What can I do you for?
 
 **Me:** Hey. I'm gonna need some guidance. So I decided, well, before I got a Tesla, I wrote in my eulogy that I was a car-free spirit, and I didn't drive, and I loved taking the subway. And I loved biking. But I don't really bike anymore. But then, alternatively, I don't really drive because Tony drives me everywhere. Tell me how I should think about this. Is biking better? Is being driven around better?
 
@@ -83,6 +75,8 @@ Identity isn't about rigid adherence to a past version of yourself. It's about s
 This conversation with Tony represents something bigger than just transportation choices. It's an example of what I call a "Reflection Coach"—an AI life coach trained on your deepest values who can help you think through decisions and align your actions with who you want to be.
 
 The concept isn't new. I've been thinking about this kind of AI-assisted self-reflection as part of my [mortality software](/mortality-software) project, where I explore how technology can help us live more intentionally. The Reflection Coach is designed to help you examine your thinking, challenge your assumptions, and find clarity in moments of confusion.
+
+{%include summarize-page.html src="/mortality-software"%}
 
 What makes Tony effective isn't just his personality (though the Jersey accent helps). It's that he knows who I want to be—he's trained on my values, my goals, my eulogy—and can remind me of them when I'm lost in the weeds of daily contradictions. This isn't talking to yourself; it's talking to your AI life coach who knows who you want to be and can cut through your mental noise to get you back on track.
 
