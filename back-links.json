@@ -3471,16 +3471,17 @@
         },
         "/mortality-software": {
             "description": "Mortality is a word avoided. But, earlier or later, we all face it. Life is finite, time is limited. Mortality software helps us understand and then ensure we are using our precious time well. It helps us create our future and reflect on our past. Why must we do this? Because A)”first you’ve lost a day and the day becomes a week and a week becomes a month and before you know it you’ve lost a year” and B) “At the point change is obvious it’s too late - it means the need for change is long since past”\n\n",
-            "doc_size": 32000,
+            "doc_size": 33000,
             "file_path": "_site/mortality-software.html",
             "incoming_links": [
                 "/balance",
                 "/goals"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2025-09-14T17:29:58.424607",
             "markdown_path": "_d/2018-04-29-mortality-software.md",
             "outgoing_links": [
                 "/affirmations",
+                "/bike-tesla-identity",
                 "/checklist",
                 "/death"
             ],
@@ -5014,7 +5015,7 @@
         },
         "/tesla": {
             "description": "I don’t like to drive. I don’t like to drive so much that I have it in my eulogy. Luckily, Elon Musk made a car that’s optimized for driving you. In August 2023, I treated myself to a Tesla Model Y. It has lots of trade-offs, but the key for me is its Autopilot (e.g., it driving me).\n\n",
-            "doc_size": 18000,
+            "doc_size": 19000,
             "file_path": "_site/tesla.html",
             "incoming_links": [
                 "/eulogy",
@@ -5024,9 +5025,11 @@
                 "/operating-manual",
                 "/timeoff-2024-02"
             ],
-            "last_modified": "2024-11-28T13:20:09-08:00",
+            "last_modified": "2025-09-14T17:29:58.424607",
             "markdown_path": "_d/tesla.md",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/bike-tesla-identity"
+            ],
             "redirect_url": "",
             "title": "Tony (Tessie) the Tesla",
             "url": "/tesla"

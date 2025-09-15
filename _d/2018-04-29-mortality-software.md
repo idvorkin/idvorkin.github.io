@@ -239,6 +239,10 @@ Great to have someone write for you.
 
 A module to help you reflect on what you're thinking. Probably permeates everything.
 
+This concept came to life in practice:
+
+{% include summarize-page.html src="/bike-tesla-identity" %}
+
 ### Relationship Coach
 
 #### Conversation/Relationship Analyzer

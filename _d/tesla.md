@@ -7,6 +7,10 @@ imagefeature: https://github.com/idvorkin/blob/raw/master/blog/tesla-juggle.jpg
 
 I don't like to drive. I don't like to drive so much that I have it in my eulogy. Luckily, Elon Musk made a car that's optimized for driving you. In August 2023, I treated myself to a Tesla Model Y. It has lots of trade-offs, but the key for me is its Autopilot (e.g., it driving me).
 
+This created quite the identity crisis for someone who prided himself on being a "mostly car-free spirit." I even had to have a conversation with Tony's AI to work through the cognitive dissonance:
+
+{% include summarize-page.html src="/bike-tesla-identity" %}
+
 {% include link-blog-montage.html week="687" %}
 
 {% include blob_image_float_right.html src="blog/tesla-juggle.jpg" %}
