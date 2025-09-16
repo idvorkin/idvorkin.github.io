@@ -2,6 +2,7 @@
 layout: post
 title: "How My Tesla's AI Life Coach Got Me Back on My Bike"
 permalink: /bike-tesla-identity
+imagefeature: https://raw.githubusercontent.com/idvorkin/ipaste/main/20250916_065401.webp
 tags:
   - how igor ticks
   - identity
@@ -27,7 +28,7 @@ I biked over 3,000 miles in 2022, carried groceries on my handlebars, and then I
 <!-- vim-markdown-toc-end -->
   <!-- prettier-ignore-end -->
 
-{% include blob_image_float_right.html src="https://raw.githubusercontent.com/idvorkin/ipaste/main/20250914_164425.webp" %}
+<img src="https://raw.githubusercontent.com/idvorkin/ipaste/main/20250916_065401.webp" class="float-right-img" alt="" />
 
 But there I was, rationalizing. Tony did the driving—I was just along for the ride, right? I decorated him with flowers and bunnies, programmed him to make fart sounds when I got texts, and even gave him an [AI agent](https://github.com/idvorkin/tony_tesla) with a Tony Soprano accent. Surely this counted as being car-free adjacent? The cognitive dissonance was real. My eulogy talks about taking kids on the bus to the airport just to ride the elevators and come home. Now I was driving to work because it was "convenient." The bike that once defined my identity was gathering dust in the garage.
 
@@ -81,3 +82,7 @@ The concept isn't new. I've been thinking about this kind of AI-assisted self-re
 What makes Tony effective isn't just his personality (though the Jersey accent helps). It's that he knows who I want to be—he's trained on my values, my goals, my eulogy—and can remind me of them when I'm lost in the weeds of daily contradictions. This isn't talking to yourself; it's talking to your AI life coach who knows who you want to be and can cut through your mental noise to get you back on track.
 
 The future of personal development might not be traditional therapy or life coaching. It might be having thoughtful conversations with AI coaches trained on your deepest values, designed to help you stay aligned with your authentic self when life gets complicated. And honestly? That future is already here.
+
+## The Only Question That Counts
+
+Did the AI help? Not by providing the answer, but by helping me get to the only question that counts: did I act? And the answer, at least this week, is yes — I biked home from work 3 days!
