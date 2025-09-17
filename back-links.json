@@ -1797,6 +1797,7 @@
                 "/chasing-daylight",
                 "/covid",
                 "/elder",
+                "/gap-year-igor",
                 "/last-year",
                 "/mortality-software",
                 "/psychic-weight"
@@ -2429,19 +2430,19 @@
                 "/stock-concentration",
                 "/timeoff-2025-08"
             ],
-            "last_modified": "2025-09-17T06:49:01.680108",
+            "last_modified": "2025-09-17T06:52:32-07:00",
             "markdown_path": "_d/igor-gap-year.md",
             "outgoing_links": [
                 "/affirmations",
                 "/chapters",
                 "/chasing-daylight",
                 "/d/resistance",
+                "/death",
                 "/emotional-health",
                 "/end-in-mind",
                 "/gap-year",
                 "/kettlebell",
                 "/money",
-                "/on-being-mortal",
                 "/parkinson",
                 "/physical-health",
                 "/produce-consume",
@@ -2450,10 +2451,10 @@
                 "/sleep",
                 "/stock-concentration",
                 "/structure",
+                "/sustainable-work",
                 "/timeoff",
                 "/tori",
-                "/voices",
-                "/wlb-manifesto"
+                "/voices"
             ],
             "redirect_url": "",
             "title": "Will Igor Take a Gap Year? Wrestling with Dragons and Dreams",
@@ -4597,6 +4598,7 @@
                 "/balance",
                 "/being-a-great-manager",
                 "/depression",
+                "/gap-year-igor",
                 "/overload",
                 "/regrets",
                 "/retire",
@@ -5474,7 +5476,7 @@
                 "/eulogy",
                 "/gap-year-igor"
             ],
-            "last_modified": "2025-09-17T06:24:35.631372",
+            "last_modified": "2025-09-17T06:24:37-07:00",
             "markdown_path": "_d/tori.md",
             "outgoing_links": [
                 "/partner-trouble"

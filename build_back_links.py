@@ -474,7 +474,7 @@ class LinkBuilder:
         for link in self.incoming_links.keys():
             self.incoming_links[link] = sorted(list(set(self.incoming_links[link])))
 
-        # dictionarys enumerate in insertion order, so rebuild dicts in insertion order
+        # dictionaries enumerate in insertion order, so rebuild dicts in insertion order
         def sort_dict(d):
             return {key: d[key] for key in sorted(d.keys(), key=lambda x: x.lower())}
 
@@ -491,7 +491,7 @@ class LinkBuilder:
 
     def __init__(self):
         self.incoming_links = defaultdict(list)  # forward -> back
-        self.redirects = {}  # url->[back_links]; # I don't need to serialzie these, but helpful for debugging.
+        self.redirects = {}  # url->[back_links]; # I don't need to serialize these, but helpful for debugging.
         self.pages = {}  # canonical->md
 
     def print_json(self, output_file="back-links.json"):
@@ -540,7 +540,7 @@ class LinkBuilder:
                 f,
                 default=page_encoder,
                 ensure_ascii=False,
-                indent=2,
+                indent=4,
                 sort_keys=True,
             )
 
