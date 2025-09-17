@@ -1797,7 +1797,6 @@
                 "/chasing-daylight",
                 "/covid",
                 "/elder",
-                "/gap-year-igor",
                 "/last-year",
                 "/mortality-software",
                 "/psychic-weight"
@@ -2422,7 +2421,7 @@
             "url": "/gap-year"
         },
         "/gap-year-igor": {
-            "description": "Done right, a gap year isn’t a year off; it’s a year on — intentional investment in health, relationships, and mastery while you still have the capital to invest. Think of it as pursuing a PhD in Life Optimization, making deposits that compound for decades. A gap year is one of those uncharted spaces—seductive when discussed longingly over a beer, terrifying when holding a resignation letter outside your boss’s office. Early maps warned: “HC SVNT DRACONES.” Here be dragons. I’m mapping them in real time: the Scarcity Dragon whispering you can’t afford it, the Entropy Dragon promising you’ll decay without structure, and the Squander Dragon insisting you’ll waste this precious opportunity. But these dragons guard treasure — the chance to invest in what truly matters while you still have the capacity to do so. This is the map of how to tame them.\n\n",
+            "description": "Done right, a gap year isn’t a year off; it’s a year on — intentional investment in health, relationships, and mastery while you still have the capital to invest. Think of it as pursuing a PhD in Life Optimization, making deposits that compound for decades. A gap year is one of those uncharted spaces—seductive when discussed longingly over a beer, terrifying when holding a resignation letter outside your boss’s office. Early maps warned: “HC SVNT DRACONES.” Here be dragons. I’m mapping them in real time: the Scarcity Dragon whispering you can’t afford it, the Entropy Dragon promising you’ll you’ll decay without structure, and the Squander Dragon insisting you’ll waste this precious opportunity. But these dragons guard treasure — the chance to invest in what truly matters while you still have the capacity to do so. This is the map of how to tame them.\n\n",
             "doc_size": 68000,
             "file_path": "_site/gap-year-igor.html",
             "incoming_links": [
@@ -2430,31 +2429,31 @@
                 "/stock-concentration",
                 "/timeoff-2025-08"
             ],
-            "last_modified": "2025-09-06T12:12:27-07:00",
+            "last_modified": "2025-09-17T06:49:01.680108",
             "markdown_path": "_d/igor-gap-year.md",
             "outgoing_links": [
                 "/affirmations",
                 "/chapters",
                 "/chasing-daylight",
                 "/d/resistance",
-                "/death",
                 "/emotional-health",
                 "/end-in-mind",
                 "/gap-year",
                 "/kettlebell",
                 "/money",
+                "/on-being-mortal",
                 "/parkinson",
                 "/physical-health",
+                "/produce-consume",
                 "/retire",
                 "/siy",
                 "/sleep",
                 "/stock-concentration",
                 "/structure",
-                "/sustainable-work",
                 "/timeoff",
                 "/tori",
-                "/y24",
-                "/y25"
+                "/voices",
+                "/wlb-manifesto"
             ],
             "redirect_url": "",
             "title": "Will Igor Take a Gap Year? Wrestling with Dragons and Dreams",
@@ -3876,6 +3875,7 @@
             "doc_size": 20000,
             "file_path": "_site/produce-consume.html",
             "incoming_links": [
+                "/gap-year-igor",
                 "/slow"
             ],
             "last_modified": "2025-08-24T08:45:07-07:00",
@@ -4597,7 +4597,6 @@
                 "/balance",
                 "/being-a-great-manager",
                 "/depression",
-                "/gap-year-igor",
                 "/overload",
                 "/regrets",
                 "/retire",
@@ -5646,6 +5645,7 @@
                 "/blueprint",
                 "/depression",
                 "/emotional-health",
+                "/gap-year-igor",
                 "/mind-monsters",
                 "/operating-manual"
             ],
@@ -5835,8 +5835,7 @@
             "doc_size": 25000,
             "file_path": "_site/y24.html",
             "incoming_links": [
-                "/gap-year",
-                "/gap-year-igor"
+                "/gap-year"
             ],
             "last_modified": "2025-09-13T12:56:01-07:00",
             "markdown_path": "_d/y2024.md",
@@ -5861,8 +5860,7 @@
             "doc_size": 19000,
             "file_path": "_site/y25.html",
             "incoming_links": [
-                "/gap-year",
-                "/gap-year-igor"
+                "/gap-year"
             ],
             "last_modified": "2025-06-19T08:16:44-07:00",
             "markdown_path": "_d/y2025.md",
