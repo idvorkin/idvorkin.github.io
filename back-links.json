@@ -1095,7 +1095,7 @@
                 "/mortality-software",
                 "/tesla"
             ],
-            "last_modified": "2025-09-16T07:30:52.010056",
+            "last_modified": "2025-09-16T07:31:48-07:00",
             "markdown_path": "_d/bike-tesla-identity-crisis.md",
             "outgoing_links": [
                 "/eulogy",
@@ -5468,14 +5468,14 @@
             "url": "/tools"
         },
         "/tori": {
-            "description": "\n\n",
+            "description": "Tori values her privacy, so this page is Tori-light and Igor-heavy.\n\n",
             "doc_size": 13000,
             "file_path": "_site/tori.html",
             "incoming_links": [
                 "/eulogy",
                 "/gap-year-igor"
             ],
-            "last_modified": "2025-08-19T10:23:51-07:00",
+            "last_modified": "2025-09-17T06:24:35.631372",
             "markdown_path": "_d/tori.md",
             "outgoing_links": [
                 "/partner-trouble"
