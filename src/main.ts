@@ -16,6 +16,7 @@ import "./graph";
 import { initDevInfo } from "./dev-info";
 import { enableHeaderCopyLinks } from "./header-copy-link";
 import { enableImageZoom } from "./image-zoom";
+import { enableChartZoom } from "./chart-zoom";
 
 // Type declarations for external libraries
 declare global {
@@ -509,6 +510,9 @@ function load_globals() {
   // Initialize image zoom functionality
   enableImageZoom();
 
+  // Initialize chart zoom functionality
+  enableChartZoom();
+
   // Initialize dev info display
   initDevInfo();
 }
@@ -520,6 +524,7 @@ export {
   random_from_list,
   append_randomizer_div,
   enableHeaderCopyLinks,
+  enableChartZoom,
   initDevInfo,
 };
 
