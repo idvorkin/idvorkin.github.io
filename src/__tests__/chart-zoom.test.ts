@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, afterEach, vi } from "vitest";
-import { enableChartZoom } from "../chart-zoom";
+import { enableChartZoom, resetChartZoomState } from "../chart-zoom";
 
 // Mock DOM elements and Chart.js
 const mockChart = {
@@ -42,11 +42,17 @@ beforeEach(() => {
   // Reset all mocks
   vi.clearAllMocks();
 
+  // Reset the chart zoom state for each test
+  resetChartZoomState();
+
   // Mock global objects
   global.document = mockDocument as any;
   global.window = {
     Chart: mockChartJS,
-    setTimeout: vi.fn((cb, delay) => cb())
+    setTimeout: vi.fn((cb, delay) => {
+      // Don't immediately call the callback for testing setTimeout behavior
+      return 1;
+    })
   } as any;
 
   // Mock console separately
@@ -140,7 +146,8 @@ describe("Chart Zoom", () => {
       const mockCanvasElement = {
         ...mockCanvas,
         addEventListener: vi.fn(),
-        style: {}
+        style: {},
+        parentElement: { style: {} }
       };
 
       mockDocument.querySelectorAll.mockReturnValue([mockCanvasElement]);
@@ -148,9 +155,10 @@ describe("Chart Zoom", () => {
 
       enableChartZoom();
 
-      expect(mockCanvasElement.style.width).toBe("50%");
-      expect(mockCanvasElement.style.maxWidth).toBe("400px");
-      expect(mockCanvasElement.style.cursor).toBe("pointer");
+      // Check that cssText was set with expected styles
+      expect(mockCanvasElement.style.cssText).toContain("width: 50%");
+      expect(mockCanvasElement.style.cssText).toContain("max-width: 400px");
+      expect(mockCanvasElement.style.cssText).toContain("cursor: pointer");
     });
 
     it("should add click and hover event listeners to charts", () => {
