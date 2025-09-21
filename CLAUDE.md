@@ -31,6 +31,15 @@ This file will direct you to all other convention files you need to follow.
 
 ## Blog Writing Style
 
+**VERY IMPORTANT:** Always reference and follow the comprehensive content guidelines in `content_guidelines.md` when working on any blog posts. This file contains:
+- 8 distinct content types with specific guidelines
+- Universal writing style rules
+- Technical implementation details for alert boxes, redirects, book links, and images
+- Content development workflow
+
+**Never skip consulting content_guidelines.md when creating or editing blog content.**
+
+### Quick Reference (See content_guidelines.md for full details)
 - Use "I" for personal perspective, not "we"
 - Direct and concise - avoid flowery language
 - Prefer bullet points over long paragraphs

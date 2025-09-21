@@ -294,3 +294,124 @@ You naturally build systematic approaches to complex topics. Lean into this stre
 
 ### Meta-Awareness
 Your ability to comment on your own thinking process adds depth and authenticity. Include this meta-commentary where it serves the content.
+
+---
+
+## Technical Implementation Guide
+
+### Alert Boxes
+Use alert boxes to highlight important information, warnings, or construction notices:
+
+**Syntax:**
+```liquid
+{% include alert.html content="Your message here" style="info" %}
+{% include alert.html content="Warning or caution message" style="warning" %}
+{% include alert.html content="Work in progress notice" style="danger" %}
+```
+
+**Common use cases:**
+- Construction/work-in-progress notices
+- Important caveats or disclaimers
+- Cross-references to related content
+- Privilege acknowledgments
+
+**Example:**
+```liquid
+{% include alert.html content="🚧 Construction Zone 🚧 This post is in heavy progress! 🔨 Check back later for updates ⏳" style="warning" %}
+```
+
+### URL Redirects
+Set up redirects for shorter, memorable URLs using both `redirect_from` and `alias`:
+
+**Syntax:**
+```yaml
+redirect_from:
+  - /shortname
+  - /abbreviation
+alias:
+  - /shortname
+  - /abbreviation
+```
+
+**Example:**
+```yaml
+redirect_from:
+  - /7habits
+  - /7h
+alias:
+  - /7habits
+  - /7h
+```
+
+### Book Links and Amazon Affiliate Integration
+For book references, use Amazon affiliate links with specific formatting:
+
+**Format:**
+```markdown
+[Book Title](https://www.amazon.com/[PRODUCT-PATH])
+```
+
+**Best practices:**
+- Include book cover images when available
+- Use consistent affiliate link format
+- Place links naturally within context
+- Consider using book title as the link text
+
+### Images
+Use the custom image includes for consistent formatting:
+
+**Right-floating images:**
+```liquid
+{% include blob_image_float_right.html src="blog/image-name.webp" %}
+```
+
+**Standard images:**
+```liquid
+{% include blob_image.html src="blog/image-name.webp" %}
+```
+
+**Small right-floating images (25% width):**
+```liquid
+{% include blob_image_float_right_w25.html src="blog/image-name.webp" %}
+```
+
+**Image best practices:**
+- Use WebP format for efficiency
+- Store images in the GitHub blob: `https://github.com/idvorkin/blob/raw/master/blog/filename.webp`
+- Reference using relative paths in includes: `blog/filename.webp`
+- Place floating images near relevant text sections
+
+### Cross-References and Internal Linking
+Use the summarize-page include for rich internal linking:
+
+**Syntax:**
+```liquid
+{% include summarize-page.html src="/page-name" %}
+```
+
+**When to use:**
+- Referencing related comprehensive posts
+- Building connections between related frameworks
+- Providing deeper dive options
+- Creating content clusters around themes
+
+### Jekyll Front Matter Essentials
+Include these key elements in post front matter:
+
+```yaml
+---
+title: "Your Post Title"
+layout: post
+permalink: /url-slug
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/image.webp
+tags:
+  - relevant-tag
+  - category-tag
+redirect_from:
+  - /short-url
+alias:
+  - /short-url
+---
+```
+
+**IMPORTANT IMPLEMENTATION RULE:** Always use these technical elements consistently. Alert boxes for important notices, redirects for memorable URLs, affiliate links for books, proper image includes for formatting, and summarize-page includes for internal references.
