@@ -126,6 +126,7 @@
         "/humanity": "/touching",
         "/hyper-personalization": "/hyper-personal",
         "/idle-loop": "/idle",
+        "/igor-gap-year": "/gap-year-igor",
         "/iina": "/vlc",
         "/imposter": "/insecure",
         "/in-real-life": "/irl",
@@ -257,6 +258,8 @@
         "/vr": "/ar",
         "/warmth": "/warm",
         "/what-i-wish-i-knew-at-22": "/22",
+        "/will-power": "/activation",
+        "/willpower": "/activation",
         "/win-win-or-no-deal": "/win-win",
         "/wizard-book": "/sicp",
         "/wlb": "/sustainable-work",
@@ -361,6 +364,7 @@
                 "/eulogy",
                 "/first-things-first",
                 "/first-understand",
+                "/gap-year-igor",
                 "/psychic-weight",
                 "/sharpen-the-saw",
                 "/synergize",
@@ -497,15 +501,15 @@
                 "/slow",
                 "/timeoff-2021-12"
             ],
-            "last_modified": "2025-09-21T07:18:56.835932",
+            "last_modified": "2025-09-21T07:19:19-07:00",
             "markdown_path": "_d/activation.md",
             "outgoing_links": [
                 "/addiction",
                 "/blueprint",
+                "/d/habits",
+                "/d/resistance",
                 "/gap-year-igor",
-                "/habits",
                 "/insomnia",
-                "/resistance",
                 "/timeoff"
             ],
             "redirect_url": "",
@@ -1382,7 +1386,7 @@
         },
         "/coaching": {
             "description": "Coaching is like midwifery. A midwife can not give birth to the baby, she facilitates the birth. Similarly, a coach can not give a solution, she must give birth to the insight from within the coachee. Coaching is asking questions, guiding, and facilitating understanding, and this post collects my studies on the topic.\n\n",
-            "doc_size": 30000,
+            "doc_size": 31000,
             "file_path": "_site/coaching.html",
             "incoming_links": [
                 "/being-a-great-manager",
@@ -1394,7 +1398,7 @@
                 "/prompts",
                 "/writing"
             ],
-            "last_modified": "2025-07-20T19:26:41-07:00",
+            "last_modified": "2025-09-21T05:42:29-07:00",
             "markdown_path": "_d/coaching.md",
             "outgoing_links": [
                 "/curious",
@@ -1693,6 +1697,7 @@
             "doc_size": 21000,
             "file_path": "_site/d/habits.html",
             "incoming_links": [
+                "/activation",
                 "/d/resistance",
                 "/energy-abundance",
                 "/hobby",
@@ -1734,6 +1739,7 @@
             "doc_size": 21000,
             "file_path": "_site/d/resistance.html",
             "incoming_links": [
+                "/activation",
                 "/books-that-defined-me",
                 "/enemy",
                 "/energy",
@@ -1798,6 +1804,7 @@
                 "/chasing-daylight",
                 "/covid",
                 "/elder",
+                "/gap-year-igor",
                 "/last-year",
                 "/mortality-software",
                 "/psychic-weight"
@@ -2431,21 +2438,21 @@
                 "/stock-concentration",
                 "/timeoff-2025-08"
             ],
-            "last_modified": "2025-09-21T11:04:32.243195",
+            "last_modified": "2025-09-21T11:07:31-07:00",
             "markdown_path": "_d/igor-gap-year.md",
             "outgoing_links": [
-                "/7habits",
+                "/7-habits",
                 "/activation",
                 "/affirmations",
                 "/chapters",
                 "/chasing-daylight",
                 "/d/resistance",
+                "/death",
                 "/emotional-health",
                 "/end-in-mind",
                 "/gap-year",
                 "/kettlebell",
                 "/money",
-                "/on-being-mortal",
                 "/parkinson",
                 "/physical-health",
                 "/produce-consume",
@@ -2454,10 +2461,10 @@
                 "/sleep",
                 "/stock-concentration",
                 "/structure",
+                "/sustainable-work",
                 "/timeoff",
                 "/tori",
-                "/voices",
-                "/wlb-manifesto"
+                "/voices"
             ],
             "redirect_url": "",
             "title": "Will Igor Take a Gap Year? Wrestling with Dragons and Dreams",
@@ -4601,6 +4608,7 @@
                 "/balance",
                 "/being-a-great-manager",
                 "/depression",
+                "/gap-year-igor",
                 "/overload",
                 "/regrets",
                 "/retire",
