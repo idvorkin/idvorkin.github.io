@@ -3,11 +3,9 @@ title: "Will Igor Take a Gap Year? Wrestling with Dragons and Dreams"
 layout: post
 permalink: /gap-year-igor
 imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-gapyear.webp
+redirect_from:
+  - igor-gap-year
 tags:
-  - personal
-  - gap-year
-  - decision-making
-  - life-planning
   - how igor ticks
 ---
 
@@ -49,7 +47,8 @@ This sits next to [the gap year paradox](/gap-year): same terrain, closer camera
 - [Can 1 become 2? The Extend-to-Year-2 Test](#can-1-become-2-the-extend-to-year-2-test)
 - [Appendix: How Work Boxed the Dragon Deep Dive.](#appendix-how-work-boxed-the-dragon-deep-dive)
   - [Work boxing Scarcity](#work-boxing-scarcity)
-  - [Work boxing Squander](#work-boxing-squander)
+  - [Work boxing Squander - The Production and Production Capacity](#work-boxing-squander---the-production-and-production-capacity)
+  - [Work boxing Squander - The Gap Year Terror](#work-boxing-squander---the-gap-year-terror)
   - [Work boxing Entropy](#work-boxing-entropy)
 
 <!-- vim-markdown-toc-end -->
@@ -750,25 +749,54 @@ A harder observation: You are only thinking about scarcity in terms of money, no
 
 Critical Insight: Work slays the "Money Scarcity" dragon, but creates the "Non-Work Time Scarcity" Dragon
 
-### Work boxing Squander
+### Work boxing Squander - The Production and Production Capacity
 
-Critical observation: "Gap year is an opportunity that can be squandered", implies you can't squander the time working, something is wrong with that logic, but we get back to that later.
+Work is designed to prevent squandering through external accountability - management chains, goals, performance reviews, peer pressure, ceremonies, and it's really good at that.
 
-Why can't you squander work time when you're working. How come?
+Did you think about what isn't being squandered? **Production** and **Production Capacity** (see [7 Habits](/7habits) - the golden eggs vs the goose that lays them).
 
-- Management!
-- Management Chain!
-- Peers!
-  - NOTE: OK this is much bigger then I imagined.
-- Performance Reviews!
-- Clear Expectations!
-- Accountabilities
-- Ceremonies!
-- Someone asking you OK what have you accomplished.
+Work has countless mechanisms for production (sprints, deadlines, metrics) but almost none for deliberate capacity building. Production capacity builds best through deliberate practice, but at work it's accidental - a lucky byproduct when you're thrown into hard problems. Work optimizes for eggs; strengthening the goose is serendipity.
+
+**Production (what work optimizes for):**
+
+- Code ships, features launch, documents written
+- Feels productive, provides genuine pride
+- Benefits the company, evaporates for you
+- That feature from 3 years ago? Deprecated
+
+**Production Capacity (the accidental byproduct):**
+
+- The junior you mentored, now a tech lead
+- Your expertise from debugging at 3am
+- Confidence from shipping through chaos
+- Benefits you forever, builds accidentally
+
+### Work boxing Squander - The Gap Year Terror
+
+Gap year inverts everything: Abundant time for production capacity, zero accountability for production
+
+**At work:**
+
+- External validation: "Look, I shipped!"
+- Hidden reality: Production evaporates, capacity accidentally persists
+- The illusion: Conflating activity with lasting value
+
+**During gap year:**
+
+- No due dates = Dragon roars: "You're producing nothing!"
+- No performance review for "deepening family bonds"
+- No partner teams asking "what's the earliest you can get that done"
+- No manager asking "did you grow this quarter?"
+
+The terror: You must create your own accountability for building lasting capacity. No external structures to hide behind.
+
+The opportunity: Instead of accidental growth from work chaos, you deliberately architect what production you'll need to complete to build your production capacity, and then put in mechanisms to make sure it happens
 
 ### Work boxing Entropy
 
-HUGE Paradox. When we are working, our **disposable time becomes scarce/precious**, increasing its value, making us scrutinize how we spend it (when we have sufficient will power), which results in very high quality time allocation, often far better then if we're on a gap year when we have more time. (Reframe - paradox of plenty) - Scarcity clarifies value. - Parkinson's law
+When we are working, our **disposable time becomes scarce/precious**, increasing its value, making us scrutinize how we spend it (when we have sufficient will power), which results in very high quality time allocation, often far better than if we're on a gap year when we have more time. (Reframe - paradox of plenty) - Scarcity clarifies value. - Parkinson's law
+
+And there's another layer: Work provides tonnes of support for that "Professional Fiber" that contributes to your total [willpower](/activation#willpower-as-a-bunch-of-guys-lifting-a-log). When you remove those work-imposed mechanisms, you don't just lose structure - you risk a critical component of your total willpower, weakening the rest of your willpower, putting you at risk to spiral downwards
 
 - Entropy is stopped by various forces:
   - Explicit: I wake up every day at 5am because that's my habit
