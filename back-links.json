@@ -485,7 +485,7 @@
         },
         "/activation": {
             "description": "Doing activities requires will power, addictions and procrastination require negative will power, while positive habits, especially new ones require high will power. Here’s a model for these things.\n\n",
-            "doc_size": 21000,
+            "doc_size": 27000,
             "file_path": "_site/activation.html",
             "incoming_links": [
                 "/addiction",
@@ -496,14 +496,16 @@
                 "/slow",
                 "/timeoff-2021-12"
             ],
-            "last_modified": "2025-08-30T09:57:08-07:00",
+            "last_modified": "2025-09-21T07:18:56.835932",
             "markdown_path": "_d/activation.md",
             "outgoing_links": [
                 "/addiction",
                 "/blueprint",
-                "/d/habits",
-                "/d/resistance",
-                "/insomnia"
+                "/gap-year-igor",
+                "/habits",
+                "/insomnia",
+                "/resistance",
+                "/timeoff"
             ],
             "redirect_url": "",
             "title": "Activation Energy",
@@ -1690,7 +1692,6 @@
             "doc_size": 21000,
             "file_path": "_site/d/habits.html",
             "incoming_links": [
-                "/activation",
                 "/d/resistance",
                 "/energy-abundance",
                 "/hobby",
@@ -1732,7 +1733,6 @@
             "doc_size": 21000,
             "file_path": "_site/d/resistance.html",
             "incoming_links": [
-                "/activation",
                 "/books-that-defined-me",
                 "/enemy",
                 "/energy",
@@ -2426,6 +2426,7 @@
             "doc_size": 68000,
             "file_path": "_site/gap-year-igor.html",
             "incoming_links": [
+                "/activation",
                 "/gap-year",
                 "/stock-concentration",
                 "/timeoff-2025-08"
@@ -5115,6 +5116,7 @@
             "doc_size": 37000,
             "file_path": "_site/timeoff.html",
             "incoming_links": [
+                "/activation",
                 "/balance",
                 "/energy",
                 "/energy-abundance",
