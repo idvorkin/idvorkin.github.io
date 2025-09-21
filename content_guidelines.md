@@ -30,29 +30,37 @@
 - **Always use "I"** for personal perspective, never "we"
 - **Direct and concise** - avoid flowery language where it obscures meaning
 - **Personal but pragmatic** tone
-- **Conversational** - write like you're having coffee with a thoughtful friend
+- **Conversational vulnerability** - write like you're having coffee with a thoughtful friend who shares real struggles
 - **Vulnerable but authoritative** - show uncertainty alongside expertise
+- **Systems thinking approach** - naturally build frameworks and structured approaches
+- **Metaphorical thinking** - use consistent metaphors (dragons, mountains, rivers) to explain complex concepts
 
 ### Language Patterns
 - **Questions to engage readers** and introduce new sections
 - **Concrete examples** over abstract concepts
 - **"Here's what I learned"** rather than "You should do this"
 - **Strategic use of rich metaphors** when they enhance understanding
-- **Self-deprecating humor** used sparingly but effectively
+- **Self-deprecating humor** with phrases like "completely aspirational" and acknowledgment of personal flaws
+- **Vulnerability as strength** - openly discussing fears, failures, and contradictions
+- **Research integration** - heavy citing of books, studies, and external sources
 
 ### Structure Elements
 - **Extensive use of headers** for easy scanning
 - **Bullet points** to chunk information
 - **Table of contents** for longer pieces (auto-generated via vim-markdown-toc)
-- **Cross-linking** between related content
-- **Progressive revelation** - build complexity throughout posts
+- **Heavy cross-referencing** using `{% include summarize-page.html %}` for internal linking
+- **Progressive disclosure** - start with simple concepts, then drill deeper
+- **Iterative development** - posts evolve over time with update notes
+- **Framework building** - most posts end with practical application methods
 
 ### Engagement Techniques
 - **Rhetorical questions** as section breaks
 - **Direct reader address** ("I bet you don't either")
-- **Dialog format** for internal conflicts and decision-making
+- **Dialog format** for internal conflicts and decision-making (real and imagined conversations)
 - **Real-time authenticity** - admit uncertainty and show work in progress
 - **Meta-commentary** on your own writing and thinking process
+- **Personal anecdotes as teaching tools** - stories that illustrate broader principles
+- **Pre-mortem/scenario planning** - regular use of "what if" thinking
 
 ---
 
@@ -214,6 +222,30 @@
 **Length:** Variable, grows over time
 
 **Tags:** `exploration`, `journal`, plus topic tags
+
+### 8. Personal Narrative/Story Posts
+**Purpose:** Use personal stories and experiences as teaching tools to illustrate broader principles
+
+**Structure:**
+- Set scene with personal context
+- Develop story with specific details and dialogue
+- Extract universal principles or lessons
+- Connect to broader frameworks or life philosophy
+- Invite reader reflection or application
+
+**Voice:** Reflective storyteller - "Here's what this experience taught me"
+
+**Key Elements:**
+- **AI conversations** with Tony (life coach) showing real-time processing
+- **Family adventures and moments** that illustrate larger principles
+- **Life transition narratives** about major changes and decisions
+- **Identity conflict stories** (bike vs car, work vs family, etc.)
+- **Dialogue format** showing internal or external conversations
+- **Specific sensory details** that make stories vivid and memorable
+
+**Length:** 200-800 lines typically
+
+**Tags:** `story`, `narrative`, plus relevant life area tags
 
 ---
 
