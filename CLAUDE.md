@@ -29,6 +29,48 @@ This file will direct you to all other convention files you need to follow.
 - Serve local Jekyll site: `just jekyll-serve` (usually already running at http://localhost:4000)
 - Update backlinks: `just update-backlinks`
 
+## Blog Writing Style
+
+- Use "I" for personal perspective, not "we"
+- Direct and concise - avoid flowery language
+- Prefer bullet points over long paragraphs
+- Personal but pragmatic tone
+- Use questions to engage readers
+- Avoid unnecessary adjectives (wonderful, beautiful, etc.)
+- Get to the point quickly
+- Use concrete examples over abstract concepts
+- Match existing post tone when editing
+
+### Voice Consistency
+- Conversational but not casual
+- Problem-focused rather than solution-preaching
+- Use "you" when addressing reader directly
+- Self-deprecating humor is okay, but sparingly
+
+### Structure
+- Start with the problem or question
+- Use subheadings liberally for scanning
+- One main idea per paragraph
+- Link to related posts using relative paths (/post-name)
+
+### Technical Writing
+- Code examples should be practical and runnable
+- Explain the "why" before the "how"
+- Include potential pitfalls or gotchas
+- Test all code snippets before including
+
+### Engagement Patterns
+- Ask rhetorical questions to introduce topics
+- Use "Here's what I learned" rather than "You should do this"
+- Include personal anecdotes when relevant
+- End sections with actionable takeaways
+
+### Avoid
+- Marketing speak or buzzwords
+- Overly philosophical tangents
+- Excessive self-promotion
+- Long introductions - get to the meat quickly
+
 ## Code Style Guidelines
 
 - Use TypeScript for all new code with strict typing
