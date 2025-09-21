@@ -39,17 +39,6 @@ This file will direct you to all other convention files you need to follow.
 
 **Never skip consulting content_guidelines.md when creating or editing blog content.**
 
-### Quick Reference (See content_guidelines.md for full details)
-- Use "I" for personal perspective, not "we"
-- Direct and concise - avoid flowery language
-- Prefer bullet points over long paragraphs
-- Personal but pragmatic tone
-- Use questions to engage readers
-- Avoid unnecessary adjectives (wonderful, beautiful, etc.)
-- Get to the point quickly
-- Use concrete examples over abstract concepts
-- Match existing post tone when editing
-
 ### Voice Consistency
 - Conversational but not casual
 - Problem-focused rather than solution-preaching
