@@ -114,24 +114,37 @@ export function enableChartZoom(retryCount = 0) {
 
     console.log(`📈 Processing Chart.js chart ${index + 1}: ${canvas.id || 'unnamed'}`);
 
-    // Apply half-size styling to the canvas
-    applyHalfSizeStyles(canvas);
+    // Apply half-size styling and interactive behavior
+    canvas.style.cssText = `
+      width: 50%;
+      max-width: 400px;
+      height: 200px;
+      float: right;
+      cursor: pointer;
+      position: relative;
+      z-index: 1000;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    `;
 
-    // Add click handler for zoom functionality
-    canvas.style.cursor = "pointer";
-    canvas.addEventListener("click", () => openChartModal(chart, canvas));
+    // Add chart zoom class for additional CSS styling
+    canvas.classList.add('chart-zoom-enabled');
 
     // Add hover effects
-    canvas.addEventListener("mouseenter", () => {
-      canvas.style.boxShadow = "0 4px 8px rgba(0,0,0,0.2)";
-      canvas.style.transform = "scale(1.02)";
-      canvas.style.transition = "all 0.2s ease";
-    });
+    const addHoverEffect = () => {
+      canvas.style.transform = 'scale(1.02)';
+      canvas.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+    };
 
-    canvas.addEventListener("mouseleave", () => {
-      canvas.style.boxShadow = "none";
-      canvas.style.transform = "scale(1)";
-    });
+    const removeHoverEffect = () => {
+      canvas.style.transform = 'scale(1)';
+      canvas.style.boxShadow = 'none';
+    };
+
+    canvas.addEventListener('mouseenter', addHoverEffect);
+    canvas.addEventListener('mouseleave', removeHoverEffect);
+
+    // Add click handler for zoom functionality
+    canvas.addEventListener("click", () => openChartModal(chart, canvas));
 
     // Mark this canvas as processed
     processedCanvases.add(canvas);
@@ -149,48 +162,19 @@ export function enableChartZoom(retryCount = 0) {
   }
 }
 
-function applyHalfSizeStyles(canvas: HTMLCanvasElement) {
-  // Apply responsive half-size styling with text wrapping using cssText for better performance
-  canvas.style.cssText = `
-    width: 50%;
-    max-width: 400px;
-    height: 200px;
-    border-radius: 4px;
-    border: 1px solid #e0e0e0;
-    float: right;
-    margin: 10px 0 20px 20px;
-    z-index: 1000;
-    position: relative;
-    clear: right;
-    pointer-events: auto;
-    cursor: pointer;
-  `;
 
-  // Ensure the parent container allows the canvas to float properly
-  const parent = canvas.parentElement;
-  if (parent) {
-    parent.style.position = "relative";
-  }
-}
-
-function openChartModal(originalChart: ChartInstance, originalCanvas: HTMLCanvasElement) {
-  console.log("🔍 Opening chart zoom modal");
-
-  // Prevent multiple modals from opening
-  if (activeZoomState) {
-    console.log("⚠️ Modal already open, ignoring click");
-    return;
-  }
-
-  console.log("📊 Original chart config:", originalChart.config);
-  console.log("📊 Original chart config keys:", Object.keys(originalChart.config));
-  console.log("📊 Original chart data:", originalChart.config.data);
-  console.log("📊 Original chart type:", originalChart.config.type);
-  console.log("📊 Original canvas dimensions:", originalCanvas.width, "x", originalCanvas.height);
+/**
+ * Creates modal DOM structure for chart zoom
+ */
+function createModalElements(): { modalContainer: HTMLElement; modalContent: HTMLElement; modalCanvas: HTMLCanvasElement; closeButton: HTMLElement } {
+  console.log("✅ Creating modal DOM elements");
 
   // Create modal container
   const modalContainer = document.createElement("div");
   modalContainer.className = "chart-zoom-modal";
+  modalContainer.setAttribute('role', 'dialog');
+  modalContainer.setAttribute('aria-modal', 'true');
+  modalContainer.setAttribute('aria-labelledby', 'chart-modal-title');
   modalContainer.style.cssText = `
     position: fixed;
     top: 0;
@@ -205,7 +189,6 @@ function openChartModal(originalChart: ChartInstance, originalCanvas: HTMLCanvas
     padding: 20px;
     box-sizing: border-box;
   `;
-  console.log("✅ Modal container created");
 
   // Create modal content container
   const modalContent = document.createElement("div");
@@ -218,10 +201,10 @@ function openChartModal(originalChart: ChartInstance, originalCanvas: HTMLCanvas
     position: relative;
     box-shadow: 0 20px 40px rgba(0,0,0,0.3);
   `;
-  console.log("✅ Modal content container created");
 
   // Create canvas for the zoomed chart
   const modalCanvas = document.createElement("canvas");
+  modalCanvas.setAttribute('aria-label', 'Zoomed chart view');
   modalCanvas.style.cssText = `
     width: 800px;
     height: 400px;
@@ -229,78 +212,11 @@ function openChartModal(originalChart: ChartInstance, originalCanvas: HTMLCanvas
     max-height: 60vh;
     display: block;
   `;
-  console.log("✅ Modal canvas created");
-
-  // Assemble modal
-  modalContent.appendChild(modalCanvas);
-  console.log("✅ Canvas added to modal content");
-  modalContainer.appendChild(modalContent);
-  console.log("✅ Modal content added to modal container");
-  document.body.appendChild(modalContainer);
-  console.log("✅ Modal container added to body");
-
-  // Create a proper Chart.js configuration by extracting the chart's current state
-  console.log("📊 Starting config construction...");
-  let config: any;
-  try {
-    // Extract the actual chart configuration
-    const originalConfig = originalChart.config;
-
-    config = {
-      type: originalConfig.type,
-      data: originalConfig.data,
-      options: {
-        responsive: true,
-        maintainAspectRatio: true,
-        // Copy over any original options while ensuring responsiveness
-        ...(originalConfig.options || {})
-      }
-    };
-
-    console.log("✅ Chart config constructed successfully");
-    console.log("📊 Config type:", config.type);
-    console.log("📊 Data keys:", Object.keys(config.data || {}));
-    console.log("📊 Options keys:", Object.keys(config.options || {}));
-  } catch (error) {
-    console.error("❌ Error constructing config:", error);
-    console.log("📊 Falling back to simple config copy");
-    try {
-      config = JSON.parse(JSON.stringify(originalChart.config));
-      console.log("✅ Fallback config created");
-    } catch (fallbackError) {
-      console.error("❌ Fallback also failed:", fallbackError);
-      // Create a minimal working config
-      config = {
-        type: 'line',
-        data: { labels: [], datasets: [] },
-        options: { responsive: true, maintainAspectRatio: true }
-      };
-      console.log("📊 Using minimal config");
-    }
-  }
-
-  console.log("📊 About to create Chart.js instance...");
-
-  // Create new Chart.js instance in modal
-  let modalChart: ChartInstance;
-  try {
-    modalChart = new window.Chart(modalCanvas, config);
-    console.log("✅ Modal chart created successfully:", modalChart);
-
-    // Force the chart to render and update
-    modalChart.update();
-    modalChart.resize();
-    console.log("✅ Modal chart updated and resized");
-  } catch (error) {
-    console.error("❌ Error creating modal chart:", error);
-    console.log("📊 modalCanvas:", modalCanvas);
-    console.log("📊 config:", config);
-    return; // Exit if chart creation fails
-  }
 
   // Create close button
   const closeButton = document.createElement("button");
   closeButton.textContent = "×";
+  closeButton.setAttribute('aria-label', 'Close chart zoom modal');
   closeButton.style.cssText = `
     position: absolute;
     top: 10px;
@@ -312,58 +228,106 @@ function openChartModal(originalChart: ChartInstance, originalCanvas: HTMLCanvas
     color: #666;
     z-index: 10000;
   `;
-  console.log("✅ Close button created");
 
-  // Add close button to modal
+  // Assemble modal structure
+  modalContent.appendChild(modalCanvas);
   modalContent.appendChild(closeButton);
-  console.log("✅ Close button added to modal content");
+  modalContainer.appendChild(modalContent);
 
-  // Create local close function with access to modal elements
-  const closeModal = () => {
-    console.log("🔍 Closing chart zoom modal");
+  return { modalContainer, modalContent, modalCanvas, closeButton };
+}
 
-    // Destroy modal chart
-    if (modalChart) {
-      try {
-        modalChart.destroy();
-      } catch (e) {
-        console.warn("Error destroying modal chart:", e);
+/**
+ * Creates Chart.js configuration from original chart
+ */
+function createChartConfiguration(originalChart: ChartInstance): any {
+  console.log("📊 Creating chart configuration");
+
+  try {
+    const originalConfig = originalChart.config;
+    const config = {
+      type: originalConfig.type,
+      data: originalConfig.data,
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        // Copy over any original options while ensuring responsiveness
+        ...(originalConfig.options || {})
       }
+    };
+
+    console.log("✅ Chart config constructed successfully");
+    return config;
+  } catch (error) {
+    console.error("❌ Error constructing config:", error);
+    console.log("📊 Falling back to simple config copy");
+
+    try {
+      return JSON.parse(JSON.stringify(originalChart.config));
+    } catch (fallbackError) {
+      console.error("❌ Fallback also failed:", fallbackError);
+      // Create a minimal working config
+      return {
+        type: 'line',
+        data: { labels: [], datasets: [] },
+        options: { responsive: true, maintainAspectRatio: true }
+      };
     }
+  }
+}
 
-    // Remove event listeners
-    document.removeEventListener("keydown", keydownHandler);
-    window.removeEventListener("resize", resizeHandler);
-    window.removeEventListener("orientationchange", resizeHandler);
+/**
+ * Creates and initializes Chart.js instance in modal
+ */
+function createModalChart(canvas: HTMLCanvasElement, config: any): ChartInstance | null {
+  console.log("📊 Creating modal Chart.js instance");
 
-    // Remove modal from DOM
-    if (modalContainer && modalContainer.parentNode) {
-      try {
-        modalContainer.parentNode.removeChild(modalContainer);
-      } catch (e) {
-        console.warn("Error removing modal container:", e);
-      }
-    }
+  try {
+    const modalChart = new window.Chart(canvas, config);
+    console.log("✅ Modal chart created successfully");
 
-    // Restore body scroll
-    document.body.style.overflow = "";
+    // Force the chart to render and update
+    modalChart.update();
+    modalChart.resize();
+    console.log("✅ Modal chart updated and resized");
 
-    // Clear global state
-    activeZoomState = null;
+    return modalChart;
+  } catch (error) {
+    console.error("❌ Error creating modal chart:", error);
+    return null;
+  }
+}
 
-    console.log("✅ Chart zoom modal closed");
-  };
+/**
+ * Sets up event listeners for modal interactions and accessibility
+ */
+function setupModalEventListeners(
+  modalContainer: HTMLElement,
+  closeButton: HTMLElement,
+  modalCanvas: HTMLCanvasElement,
+  modalChart: ChartInstance,
+  closeModal: () => void
+): () => void {
+  console.log("✅ Setting up modal event listeners");
 
-  // Event handler for keyboard (defined after closeModal)
+  // Focus management for accessibility
+  const previousActiveElement = document.activeElement as HTMLElement;
+  closeButton.focus();
+
+  // Event handlers
   const keydownHandler = (event: KeyboardEvent) => {
     if (event.key === "Escape") {
       event.preventDefault();
       event.stopPropagation();
       closeModal();
     }
+    // Simple focus trap - keep focus within modal
+    if (event.key === "Tab") {
+      event.preventDefault();
+      closeButton.focus();
+    }
   };
 
-  // Event handler for window resize and orientation changes
   const resizeHandler = () => {
     console.log("📱 Window resize/orientation change detected, updating modal chart");
 
@@ -385,16 +349,7 @@ function openChartModal(originalChart: ChartInstance, originalCanvas: HTMLCanvas
     }
   };
 
-  // Store state for cleanup
-  activeZoomState = {
-    originalChart,
-    modalChart,
-    originalCanvas,
-    modalCanvas,
-    modalContainer
-  };
-
-  // Add event listeners using the local close function
+  // Add event listeners
   closeButton.addEventListener("click", (e) => {
     e.preventDefault();
     e.stopPropagation();
@@ -410,10 +365,115 @@ function openChartModal(originalChart: ChartInstance, originalCanvas: HTMLCanvas
   });
 
   document.addEventListener("keydown", keydownHandler);
-
-  // Add resize and orientation change listeners
   window.addEventListener("resize", resizeHandler);
   window.addEventListener("orientationchange", resizeHandler);
+
+  // Return cleanup function
+  return () => {
+    document.removeEventListener("keydown", keydownHandler);
+    window.removeEventListener("resize", resizeHandler);
+    window.removeEventListener("orientationchange", resizeHandler);
+
+    // Restore focus for accessibility
+    if (previousActiveElement) {
+      previousActiveElement.focus();
+    }
+  };
+}
+
+/**
+ * Cleans up modal resources and state
+ */
+function cleanupModal(
+  modalChart: ChartInstance | null,
+  modalContainer: HTMLElement,
+  cleanupEventListeners: () => void
+): void {
+  console.log("🔍 Cleaning up chart zoom modal");
+
+  // Destroy modal chart
+  if (modalChart) {
+    try {
+      modalChart.destroy();
+    } catch (e) {
+      console.warn("Error destroying modal chart:", e);
+    }
+  }
+
+  // Remove event listeners
+  cleanupEventListeners();
+
+  // Remove modal from DOM
+  if (modalContainer && modalContainer.parentNode) {
+    try {
+      modalContainer.parentNode.removeChild(modalContainer);
+    } catch (e) {
+      console.warn("Error removing modal container:", e);
+    }
+  }
+
+  // Restore body scroll
+  document.body.style.overflow = "";
+
+  // Clear global state
+  activeZoomState = null;
+
+  console.log("✅ Chart zoom modal cleaned up");
+}
+
+/**
+ * Opens chart in full-screen modal with zoom functionality
+ */
+function openChartModal(originalChart: ChartInstance, originalCanvas: HTMLCanvasElement) {
+  console.log("🔍 Opening chart zoom modal");
+
+  // Prevent multiple modals from opening
+  if (activeZoomState) {
+    console.log("⚠️ Modal already open, ignoring click");
+    return;
+  }
+
+  // Create modal DOM structure
+  const { modalContainer, modalContent, modalCanvas, closeButton } = createModalElements();
+
+  // Add modal to DOM
+  document.body.appendChild(modalContainer);
+
+  // Create chart configuration and instance
+  const config = createChartConfiguration(originalChart);
+  const modalChart = createModalChart(modalCanvas, config);
+
+  if (!modalChart) {
+    // Cleanup and exit if chart creation failed
+    if (modalContainer.parentNode) {
+      modalContainer.parentNode.removeChild(modalContainer);
+    }
+    return;
+  }
+
+  // Create close function that will be used by event listeners
+  let cleanupEventListeners: () => void;
+  const closeModal = () => {
+    cleanupModal(modalChart, modalContainer, cleanupEventListeners);
+  };
+
+  // Setup event listeners and get cleanup function
+  cleanupEventListeners = setupModalEventListeners(
+    modalContainer,
+    closeButton,
+    modalCanvas,
+    modalChart,
+    closeModal
+  );
+
+  // Store state for global tracking
+  activeZoomState = {
+    originalChart,
+    modalChart,
+    originalCanvas,
+    modalCanvas,
+    modalContainer
+  };
 
   // Prevent body scroll
   document.body.style.overflow = "hidden";
