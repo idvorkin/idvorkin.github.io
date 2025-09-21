@@ -344,18 +344,32 @@ alias:
 ```
 
 ### Book Links and Amazon Affiliate Integration
-For book references, use Amazon affiliate links with specific formatting:
+Use the Amazon include for book references with ASIN numbers:
 
-**Format:**
-```markdown
-[Book Title](https://www.amazon.com/[PRODUCT-PATH])
+**Syntax:**
+```liquid
+{% include amazon.html asin="ASIN_NUMBER" %}
+{% include amazon.html asin="ASIN1;ASIN2;ASIN3" %}
 ```
 
+**Examples:**
+```liquid
+{% include amazon.html asin="0071499938" %}
+{% include amazon.html asin="B07LDSPRYM;B00506CSDQ;B07C66Z4M4" %}
+```
+
+**How it works:**
+- ASINs are looked up in `_data/asins.json` for title, image, and description
+- Automatically includes affiliate tag (`ighe-20`)
+- Falls back to generic Amazon image if product data not available
+- Supports multiple books separated by semicolons
+- Images are styled consistently with fallback text if images fail to load
+
 **Best practices:**
-- Include book cover images when available
-- Use consistent affiliate link format
-- Place links naturally within context
-- Consider using book title as the link text
+- Use ASIN numbers (found in Amazon URLs) rather than direct links
+- Group related books together in single include
+- Place near relevant text sections
+- ASIN data is managed automatically via scripts in `/scripts/` directory
 
 ### Images
 Use the custom image includes for consistent formatting:
@@ -389,11 +403,25 @@ Use the summarize-page include for rich internal linking:
 {% include summarize-page.html src="/page-name" %}
 ```
 
+**How it works:**
+- Automatically pulls title and description from the linked page
+- Creates a styled summary box with proper attribution
+- Uses data from `back-links.json` for consistent metadata
+- Provides rich preview of the linked content
+
 **When to use:**
 - Referencing related comprehensive posts
 - Building connections between related frameworks
 - Providing deeper dive options
 - Creating content clusters around themes
+- Cross-linking between book summaries and related life posts
+
+**Examples:**
+```liquid
+{% include summarize-page.html src="/7habits" %}
+{% include summarize-page.html src="/death" %}
+{% include summarize-page.html src="/gap-year" %}
+```
 
 ### Jekyll Front Matter Essentials
 Include these key elements in post front matter:
