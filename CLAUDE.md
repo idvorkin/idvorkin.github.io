@@ -83,19 +83,11 @@ When adding new features or fixing bugs, **always add both unit tests and e2e te
 - **Default**: `just jekyll-serve` (port 4000, livereload port 35729)
 - **Custom port**: `just jekyll-serve 4002`
 - **Custom ports with livereload**: `just jekyll-serve 4002 35730`
-- **Run in background**: `just jekyll-serve 4002 35730 > /tmp/jekyll-worktree.log 2>&1 &`
+- **Run in background**: `just jekyll-serve 4002 35730 > /tmp/jekyll.log 2>&1 &`
 - **Check port availability first**: If port in use, pick random port between 5000-6000
 - **Use random live reload port**: Pick a random live reload port (e.g., 35000-36000) to avoid conflicts
 - **Open page in browser**: `open http://localhost:4002/page-name`
 - **Open specific section**: `open http://localhost:4002/page-name#section-anchor`
-- **Example for worktrees**: When working in a worktree, use different ports to avoid conflicts:
-  ```bash
-  # In worktree directory - specify both server and livereload ports
-  just jekyll-serve 4002 35730 > /tmp/jekyll-worktree.log 2>&1 &
-  open http://localhost:4002/gap-year-igor
-  # To jump to a specific section
-  open http://localhost:4002/gap-year-igor#battling-loneliness
-  ```
 
 ## Git & PR Workflow
 
@@ -147,19 +139,6 @@ When resolving PR feedback:
 3. If uncommitted changes exist, ask the user before discarding them
 4. The pr-feedback-resolver agent should always push changes to remote
 
-## Git Worktrees Setup
-
-### Key Points
-- Run Claude from parent directory (/cc_blog), not from worktrees
-- Check with `pwd` - if you see `/cc_blog/worktree-name`, go up one level
-- Run `./setup-claude-parent.sh` to create config symlinks from cc_main
-
-### Working with Worktrees
-- Use full paths since `cd` has issues: `pre-commit run --files worktree/file.md`
-- For multi-commands use subshells: `(cd worktree && command1 && command2)`
-- Use `builtin cd` instead of `cd` (which points to zoxide)
-- Reference files using relative paths: `cc_main/file.txt` or `cc_blog_worktree/file.txt`
-- Create worktrees from cc_main: `cd cc_main && git worktree add ../feature-branch`
 
 ## Temporary Files
 

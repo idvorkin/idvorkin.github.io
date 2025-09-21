@@ -43,6 +43,7 @@
 - **Self-deprecating humor** with phrases like "completely aspirational" and acknowledgment of personal flaws
 - **Vulnerability as strength** - openly discussing fears, failures, and contradictions
 - **Research integration** - heavy citing of books, studies, and external sources
+- **Avoid marketing speak and buzzwords** - no "revolutionary," "game-changing," or corporate jargon
 
 ### Structure Elements
 - **Extensive use of headers** for easy scanning
