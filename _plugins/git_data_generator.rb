@@ -13,18 +13,18 @@ module Jekyll
         Dir.chdir(site.source) do
           branch = `git rev-parse --abbrev-ref HEAD 2>/dev/null`.strip
           branch = 'unknown' if branch.empty? || branch.include?('fatal')
-          
-          # Get PR number for current branch if it exists
-          if branch != 'unknown' && branch != 'main'
-            pr_output = `gh pr view --json number 2>/dev/null`.strip
-            unless pr_output.empty? || pr_output.include?('no pull requests found')
-              require 'json'
-              begin
-                pr_data = JSON.parse(pr_output)
-                pr_number = pr_data['number']
-              rescue JSON::ParserError => e
-                Jekyll.logger.warn "Git data:", "Failed to parse PR JSON: #{e.message}"
+
+          # Read PR data from YAML file
+          pr_file = File.join(site.source, '_data', 'current_pr.yml')
+          if File.exist?(pr_file)
+            begin
+              require 'yaml'
+              pr_data = YAML.load_file(pr_file)
+              if pr_data && pr_data['branch'] == branch
+                pr_number = pr_data['pr_number']
               end
+            rescue => e
+              Jekyll.logger.warn "Git data:", "Failed to read PR file: #{e.message}"
             end
           end
         end
@@ -38,7 +38,7 @@ module Jekyll
         'pr_number' => pr_number,
         'generated_at' => Time.now.to_s
       }
-      
+
       Jekyll.logger.info "Git data:", "Branch: #{branch}, PR: #{pr_number || 'none'} (from #{site.source})"
     end
   end
