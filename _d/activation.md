@@ -2,6 +2,7 @@
 layout: post
 title: "Activation Energy"
 mathjax: true
+chart_zoom: true
 
 permalink: /activation
 redirect_from:
@@ -34,7 +35,7 @@ $$
 
 The amount of energy required to begin an activity. Addictions are negative, habits are neutral, and new positive habits are positive. Things you are avoiding, your mental quick sand, can be very high positive.
 
-<canvas id="chart-starting-energy"></canvas>
+<canvas id="chart-starting-energy" class="chart-zoom-enabled"></canvas>
 
 <script>
 defer (()=>  {
@@ -83,7 +84,7 @@ console.log(ctx,myChart)
 
 The amount of energy required to stop an activity. This usually varies over time. Movies have a natural drop in stopping energy at the end of the movie, but the magic of TikTok and Casinos is they are designed so their stopping energy never declines.
 
-<canvas id="chart-stopping-over-time"></canvas>
+<canvas id="chart-stopping-over-time" class="chart-zoom-enabled"></canvas>
 
 <script>
 defer(() => {
@@ -139,7 +140,7 @@ console.log(ctx, myChart);
 
 For me, will power is very strong in the morning, but drops over time. Doing my morning habits really charges up my will power, but you can see why I can never get to the gym after work, my gym starting energy exceeds my remaining will power.
 
-<canvas id="chart-willpower-over-time"></canvas>
+<canvas id="chart-willpower-over-time" class="chart-zoom-enabled"></canvas>
 
 <script>
 defer(() => {

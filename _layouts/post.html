@@ -63,6 +63,30 @@
         async
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
       ></script>
+      {% endif %} {% if page.chart_zoom %}
+      <!-- Chart zoom functionality for interactive charts -->
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          // Wait for Chart.js to load and charts to be created
+          setTimeout(function() {
+            if (typeof window.enableChartZoom === 'function') {
+              window.enableChartZoom();
+              console.log('📊 Chart zoom enabled via frontmatter');
+            } else {
+              console.warn('⚠️ enableChartZoom function not found');
+            }
+          }, 3000);
+        });
+      </script>
+      <style>
+        canvas.chart-zoom-enabled {
+          float: right;
+          width: 40%;
+          aspect-ratio: 1;
+          margin-left: 1rem;
+          margin-bottom: 1rem;
+        }
+      </style>
       {% endif %}
       <script>
         // Bootstrap tables are opt-in, so set their class, and make them striped
