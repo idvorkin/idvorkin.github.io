@@ -1,12 +1,12 @@
-import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import { getCurrentPort, isDevServer } from "../dev-info";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { getCurrentPort, getCurrentPR, isDevServer } from "../dev-info";
 
 describe("dev-info", () => {
   let originalLocation: Location;
 
   beforeEach(() => {
     originalLocation = window.location;
-    delete (window as any).location;
+    (window as any).location = undefined;
   });
 
   afterEach(() => {
@@ -44,6 +44,23 @@ describe("dev-info", () => {
     it("should return 4000 for Jekyll default", () => {
       window.location = { port: "4000" } as Location;
       expect(getCurrentPort()).toBe("4000");
+    });
+  });
+
+  describe("getCurrentPR", () => {
+    it("should return PR number when global variable is set", () => {
+      (window as any).__GIT_PR__ = 123;
+      expect(getCurrentPR()).toBe(123);
+    });
+
+    it("should return null when PR is not set", () => {
+      (window as any).__GIT_PR__ = null;
+      expect(getCurrentPR()).toBe(null);
+    });
+
+    it("should return null when PR is not a number", () => {
+      (window as any).__GIT_PR__ = "not-a-number";
+      expect(getCurrentPR()).toBe(null);
     });
   });
 });
