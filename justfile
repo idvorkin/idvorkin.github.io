@@ -393,3 +393,27 @@ e2e-test:
 
 blog-combined:
     cat _d/* _posts/* _td/* > blog.allcontent.md
+
+set-pr:
+    #!/usr/bin/env sh
+    BRANCH=$(git rev-parse --abbrev-ref HEAD)
+    echo "Current branch: $BRANCH"
+    if [ "$BRANCH" = "main" ]; then
+        echo "On main branch - removing PR data file"
+        rm -f _data/current_pr.yml
+        exit 0
+    fi
+    echo "Looking for PR..."
+    gh pr view --json number > /tmp/pr.json 2>/dev/null
+    if [ $? -eq 0 ]; then
+        PR_NUMBER=$(cat /tmp/pr.json | jq -r '.number')
+        echo "Found PR #$PR_NUMBER"
+        echo "# Current PR information - auto-generated" > _data/current_pr.yml
+        echo "pr_number: $PR_NUMBER" >> _data/current_pr.yml
+        echo "branch: $BRANCH" >> _data/current_pr.yml
+        echo "✅ Set PR #$PR_NUMBER for branch: $BRANCH"
+        rm -f /tmp/pr.json
+    else
+        echo "❌ No PR found for branch: $BRANCH"
+        exit 1
+    fi

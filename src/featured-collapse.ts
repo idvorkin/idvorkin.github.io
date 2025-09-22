@@ -15,29 +15,29 @@ export class FeaturedCollapseManager {
   private storageKey: string;
 
   constructor(
-    buttonId: string = 'featured-collapse-btn', 
-    contentId: string = 'featured-results',
-    storageKey: string = 'featured-section-collapsed'
+    buttonId = "featured-collapse-btn",
+    contentId = "featured-results",
+    storageKey = "featured-section-collapsed",
   ) {
     this.storageKey = storageKey;
     // Load initial state from localStorage
     this.state = { isCollapsed: this.loadState() };
     this.elements = {
       button: document.getElementById(buttonId),
-      content: document.getElementById(contentId)
+      content: document.getElementById(contentId),
     };
   }
 
   public initialize(): boolean {
     if (!this.elements.button || !this.elements.content) {
-      console.warn('Featured collapse elements not found');
+      console.warn("Featured collapse elements not found");
       return false;
     }
 
     // Apply initial state from localStorage
     this.updateUI();
 
-    this.elements.button.addEventListener('click', (e) => this.handleClick(e));
+    this.elements.button.addEventListener("click", (e) => this.handleClick(e));
     return true;
   }
 
@@ -74,13 +74,13 @@ export class FeaturedCollapseManager {
     }
 
     if (this.state.isCollapsed) {
-      this.elements.content.style.display = 'none';
-      this.elements.button.textContent = 'Expand +';
-      this.elements.button.title = 'Expand section';
+      this.elements.content.style.display = "none";
+      this.elements.button.textContent = "Expand +";
+      this.elements.button.title = "Expand section";
     } else {
-      this.elements.content.style.display = 'block';
-      this.elements.button.textContent = 'Collapse −';
-      this.elements.button.title = 'Collapse section';
+      this.elements.content.style.display = "block";
+      this.elements.button.textContent = "Collapse −";
+      this.elements.button.title = "Collapse section";
     }
   }
 
@@ -96,7 +96,7 @@ export class FeaturedCollapseManager {
   // localStorage helpers
   private loadState(): boolean {
     try {
-      return localStorage.getItem(this.storageKey) === 'true';
+      return localStorage.getItem(this.storageKey) === "true";
     } catch {
       // localStorage might not be available (e.g., in tests or private browsing)
       return false;

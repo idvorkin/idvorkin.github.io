@@ -118,19 +118,19 @@ let cached_link_info: IURLInfoMap = null;
  */
 export function makeRedirectUrl(path: string, anchor?: string): string {
   const baseUrl = "https://tinyurl.com/igor-blog/";
-  
+
   // Combine path and anchor with # if anchor exists
   let fullPath = path;
   if (anchor) {
     fullPath = `${path}#${anchor}`;
   }
-  
+
   // URL encode the path parameter
   const encodedPath = encodeURIComponent(fullPath);
-  
+
   // Build the URL with query parameters
   const url = `${baseUrl}?path=${encodedPath}`;
-  
+
   return url;
 }
 

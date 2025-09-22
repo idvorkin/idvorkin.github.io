@@ -29,7 +29,7 @@ describe("Featured Posts", () => {
       const mockFeaturedContainer = {
         innerHTML: "",
       };
-      
+
       mockDocument.getElementById.mockImplementation((id: string) => {
         if (id === "featured-results") {
           return mockFeaturedContainer;
@@ -43,19 +43,19 @@ describe("Featured Posts", () => {
           title: "Igor's Eulogy",
           url: "/eulogy",
           description: "A vision of a life well-lived and the legacy to leave behind",
-          tags: ["how igor ticks", "emotional intelligence"]
+          tags: ["how igor ticks", "emotional intelligence"],
         },
         "/manager-book": {
           title: "The Manager Book",
           url: "/manager-book",
           description: "Essential guide for engineering managers and leadership",
-          tags: ["management", "software engineering"]
+          tags: ["management", "software engineering"],
         },
         "/work-life-balance": {
           title: "Work-Life Balance",
           url: "/work-life-balance",
           description: "Finding harmony between professional success and personal fulfillment",
-          tags: ["how igor ticks", "emotional intelligence"]
+          tags: ["how igor ticks", "emotional intelligence"],
         },
       };
 
@@ -63,23 +63,25 @@ describe("Featured Posts", () => {
       const featuredUrls = ["/eulogy", "/manager-book", "/work-life-balance"];
 
       // Map URLs to post data from backlinks (simulating what index.md does)
-      const featuredPosts = featuredUrls.map(url => {
-        const postInfo = mockBacklinksData[url];
-        if (postInfo) {
-          return {
-            title: postInfo.title || url,
-            url: url,
-            description: postInfo.description || ""
-          };
-        }
-        return null;
-      }).filter(post => post !== null);
+      const featuredPosts = featuredUrls
+        .map((url) => {
+          const postInfo = mockBacklinksData[url];
+          if (postInfo) {
+            return {
+              title: postInfo.title || url,
+              url: url,
+              description: postInfo.description || "",
+            };
+          }
+          return null;
+        })
+        .filter((post) => post !== null);
 
       // Simulate rendering featured posts (same logic as in index.md)
       const renderBasicItem = (item: any) => {
         let description = item.description || "";
         if (description.length > 150) {
-          description = description.substring(0, 147) + "...";
+          description = `${description.substring(0, 147)}...`;
         }
         return `<div class="result-item" onclick="window.location='${item.url}';"><div><a href="${item.url}">${item.title}</a> <span class="description">${description}</span></div></div>`;
       };
@@ -101,13 +103,13 @@ describe("Featured Posts", () => {
       const mockSearchClient = {
         initIndex: vi.fn(),
       };
-      
+
       const mockIndex = {
         search: vi.fn(),
       };
-      
+
       mockSearchClient.initIndex.mockReturnValue(mockIndex);
-      
+
       // Mock get_link_info to return backlinks data
       const mockGetLinkInfo = vi.fn().mockResolvedValue({
         "/eulogy": {
@@ -119,7 +121,7 @@ describe("Featured Posts", () => {
 
       // Featured posts should be loaded from backlinks, not Algolia search
       expect(mockIndex.search).not.toHaveBeenCalled();
-      
+
       // Simulate fetching from backlinks
       const backlinksData = await mockGetLinkInfo();
       expect(mockGetLinkInfo).toHaveBeenCalled();
@@ -128,12 +130,13 @@ describe("Featured Posts", () => {
     });
 
     it("should truncate long descriptions to 150 characters", () => {
-      const longDescription = "This is a very long description that exceeds the 150 character limit and should be truncated with ellipsis at the end. This ensures that the UI remains consistent and clean without overly long text blocks that could break the layout.";
-      
+      const longDescription =
+        "This is a very long description that exceeds the 150 character limit and should be truncated with ellipsis at the end. This ensures that the UI remains consistent and clean without overly long text blocks that could break the layout.";
+
       const renderBasicItem = (item: any) => {
         let description = item.description || "";
         if (description.length > 150) {
-          description = description.substring(0, 147) + "...";
+          description = `${description.substring(0, 147)}...`;
         }
         return `<div class="result-item"><a href="${item.url}">${item.title}</a> <span class="description">${description}</span></div>`;
       };
@@ -145,7 +148,7 @@ describe("Featured Posts", () => {
       };
 
       const rendered = renderBasicItem(item);
-      
+
       expect(rendered).toContain("...");
       expect(rendered.indexOf("...")).toBeGreaterThan(0);
       // Check that description was truncated
@@ -157,17 +160,13 @@ describe("Featured Posts", () => {
     it("should have correct data structure for featured.yml", () => {
       // Mock the featured data structure - now just URLs
       const featuredData = {
-        featured_posts: [
-          "/eulogy",
-          "/manager-book",
-          "/work-life-balance"
-        ],
+        featured_posts: ["/eulogy", "/manager-book", "/work-life-balance"],
       };
 
       // Verify data structure
       expect(featuredData.featured_posts).toBeDefined();
       expect(featuredData.featured_posts).toHaveLength(3);
-      
+
       // Check that posts are just URLs
       featuredData.featured_posts.forEach((url) => {
         expect(typeof url).toBe("string");
@@ -194,24 +193,26 @@ describe("Featured Posts", () => {
       const featuredUrls = ["/test"];
 
       // Map URLs to post data from backlinks (simulating what featured.html does)
-      const featuredPosts = featuredUrls.map(url => {
-        const postInfo = mockBacklinksData[url];
-        if (postInfo) {
-          return {
-            title: postInfo.title || url,
-            url: url,
-            description: postInfo.description || "",
-            tags: postInfo.tags || []
-          };
-        }
-        return null;
-      }).filter(post => post !== null);
+      const featuredPosts = featuredUrls
+        .map((url) => {
+          const postInfo = mockBacklinksData[url];
+          if (postInfo) {
+            return {
+              title: postInfo.title || url,
+              url: url,
+              description: postInfo.description || "",
+              tags: postInfo.tags || [],
+            };
+          }
+          return null;
+        })
+        .filter((post) => post !== null);
 
       // Create site data object
       const siteData = {
         featured: {
-          featured_posts: featuredPosts
-        }
+          featured_posts: featuredPosts,
+        },
       };
 
       // Simulate featured.html rendering logic

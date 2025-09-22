@@ -1,5 +1,12 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
-import { type IURLInfo, MakeBackLinkHTML, append_randomizer_div, random_from_list, shuffle, makeRedirectUrl } from "../../src/shared";
+import {
+  type IURLInfo,
+  MakeBackLinkHTML,
+  append_randomizer_div,
+  makeRedirectUrl,
+  random_from_list,
+  shuffle,
+} from "../../src/shared";
 
 // Add jQuery type declaration
 declare global {

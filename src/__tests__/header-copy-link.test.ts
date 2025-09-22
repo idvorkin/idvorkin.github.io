@@ -42,7 +42,7 @@ const mockWindow = {
 (globalThis as unknown as { navigator: typeof mockWindow.navigator }).navigator = mockWindow.navigator;
 
 // Mock Array.from if it doesn't exist
-if (typeof Array.from === 'undefined') {
+if (typeof Array.from === "undefined") {
   (Array as any).from = (arrayLike: any) => {
     const result = [];
     for (let i = 0; i < (arrayLike?.length || 0); i++) {
@@ -82,7 +82,7 @@ function createMockHeader(id: string, textContent: string, nextElementSibling: a
       {
         nodeType: 3, // Node.TEXT_NODE
         textContent: textContent,
-      }
+      },
     ],
   };
 }
@@ -90,7 +90,7 @@ function createMockHeader(id: string, textContent: string, nextElementSibling: a
 // Helper function to create mock paragraph element
 function createMockParagraph(textContent: string, nextElementSibling: any = null) {
   return {
-    tagName: 'P',
+    tagName: "P",
     textContent,
     nextElementSibling,
   };
@@ -146,7 +146,7 @@ describe("Header Copy Link", () => {
           {
             nodeType: 3, // Node.TEXT_NODE
             textContent: "Test Header",
-          }
+          },
         ],
       };
 
@@ -187,7 +187,7 @@ describe("Header Copy Link", () => {
           {
             nodeType: 3, // Node.TEXT_NODE
             textContent: "Test Header",
-          }
+          },
         ],
       };
 
@@ -295,13 +295,13 @@ describe("Header Copy Link", () => {
       // Get the copy icon that was appended to the header
       expect(mockHeader.appendChild).toHaveBeenCalled();
       const copyIcon = mockHeader.appendChild.mock.calls[0][0];
-      
+
       // Get the click handler from the copy icon
       expect(copyIcon.addEventListener).toHaveBeenCalled();
       const clickHandler = copyIcon.addEventListener.mock.calls.find((call) => call[0] === "click")?.[1];
 
       expect(clickHandler).toBeDefined();
-      
+
       const mockEvent = {
         preventDefault: vi.fn(),
         stopPropagation: vi.fn(),
@@ -375,12 +375,12 @@ describe("Header Copy Link", () => {
       // Get the copy icon that was appended to the header
       expect(mockHeader.appendChild).toHaveBeenCalled();
       const copyIcon = mockHeader.appendChild.mock.calls[0][0];
-      
+
       // Get the click handler from the copy icon
       const clickHandler = copyIcon.addEventListener.mock.calls.find((call) => call[0] === "click")?.[1];
 
       expect(clickHandler).toBeDefined();
-      
+
       const mockEvent = {
         preventDefault: vi.fn(),
         stopPropagation: vi.fn(),
@@ -433,8 +433,8 @@ describe("Header Copy Link", () => {
       const mockH1 = createMockHeader("title-header", "Page Title");
       const mockH2 = createMockHeader("section-header", "Section Header");
       const mockH3 = createMockHeader("subsection-header", "Subsection Header");
-      
-      [mockH1, mockH2, mockH3].forEach(header => {
+
+      [mockH1, mockH2, mockH3].forEach((header) => {
         header.querySelector = vi.fn(() => null);
       });
 
@@ -558,265 +558,265 @@ describe("Header Copy Link", () => {
     it("should build breadcrumb with page name and header hierarchy", async () => {
       // Mock the window location
       mockWindow.location.pathname = "/manager-book";
-      
+
       // Create a mock H3 header with parent H2 and H1
       const h1 = {
         tagName: "H1",
         childNodes: [{ nodeType: 3, textContent: "Managing Engineers" }],
         previousElementSibling: null,
       };
-      
+
       const h2 = {
         tagName: "H2",
         childNodes: [{ nodeType: 3, textContent: "Career Development" }],
         previousElementSibling: h1,
       };
-      
+
       const h3 = {
         id: "growing-early",
         tagName: "H3",
         childNodes: [{ nodeType: 3, textContent: "Growing Early Career" }],
         previousElementSibling: h2,
       };
-      
+
       // Mock getElementById to return our H3
       mockDocument.getElementById.mockImplementation((id: string) => {
         if (id === "growing-early") return h3;
         return null;
       });
-      
+
       // Import the module
       const module = await import("../header-copy-link");
-      
+
       // The breadcrumb should be built when copying
       // We'll test this through the share function
       const mockClipboard = {
         writeText: vi.fn().mockResolvedValue(undefined),
       };
       mockWindow.navigator.clipboard = mockClipboard;
-      
+
       // Test the function indirectly through initialization
       module.initHeaderCopyLinks();
-      
+
       // Verify the expected format would be: [manager book]: Managing Engineers > Career Development > Growing Early Career
       expect(mockWindow.location.pathname).toBe("/manager-book");
     });
-    
+
     it("should convert hyphens to spaces in page name", async () => {
       mockWindow.location.pathname = "/gap-year-igor";
-      
+
       const h1 = {
         id: "test-header",
         tagName: "H1",
         childNodes: [{ nodeType: 3, textContent: "My Gap Year" }],
         previousElementSibling: null,
       };
-      
+
       mockDocument.getElementById.mockImplementation((id: string) => {
         if (id === "test-header") return h1;
         return null;
       });
-      
+
       const module = await import("../header-copy-link");
       module.initHeaderCopyLinks();
-      
+
       // The page name should be [gap year igor] not [gap-year-igor]
       expect(mockWindow.location.pathname).toBe("/gap-year-igor");
     });
-    
+
     it("should handle index page correctly", async () => {
       mockWindow.location.pathname = "/";
-      
+
       const h1 = {
         id: "welcome",
-        tagName: "H1", 
+        tagName: "H1",
         childNodes: [{ nodeType: 3, textContent: "Welcome" }],
         previousElementSibling: null,
       };
-      
+
       mockDocument.getElementById.mockImplementation((id: string) => {
         if (id === "welcome") return h1;
         return null;
       });
-      
+
       const module = await import("../header-copy-link");
       module.initHeaderCopyLinks();
-      
+
       // Root path should show as [index]
       expect(mockWindow.location.pathname).toBe("/");
     });
-    
+
     it("should show correct hierarchy for AI Journal diary entry", async () => {
       mockWindow.location.pathname = "/ai-journal";
-      
+
       // Simulate AI Journal structure: H2 (Diary) > H3 (2025-08-21)
       const h2Diary = {
         tagName: "H2",
         childNodes: [{ nodeType: 3, textContent: "Diary" }],
         previousElementSibling: null,
       };
-      
+
       const h3Date = {
         id: "2025-08-21",
         tagName: "H3",
         childNodes: [{ nodeType: 3, textContent: "2025-08-21" }],
         previousElementSibling: h2Diary,
       };
-      
+
       mockDocument.getElementById.mockImplementation((id: string) => {
         if (id === "2025-08-21") return h3Date;
         return null;
       });
-      
+
       const module = await import("../header-copy-link");
       module.initHeaderCopyLinks();
-      
+
       // Verify the breadcrumb would be: [ai journal]: Diary > 2025-08-21
       expect(mockWindow.location.pathname).toBe("/ai-journal");
     });
-    
+
     it("should handle deeply nested headers with depth limit", async () => {
       mockWindow.location.pathname = "/ai-journal";
-      
+
       // Create deep hierarchy: H1 > H2 > H3 > H4
       const h1 = {
         tagName: "H1",
         childNodes: [{ nodeType: 3, textContent: "Level 1" }],
         previousElementSibling: null,
       };
-      
+
       const h2 = {
         tagName: "H2",
         childNodes: [{ nodeType: 3, textContent: "Level 2" }],
         previousElementSibling: h1,
       };
-      
+
       const h3 = {
         tagName: "H3",
         childNodes: [{ nodeType: 3, textContent: "Level 3" }],
         previousElementSibling: h2,
       };
-      
+
       const h4 = {
         id: "deep-section",
         tagName: "H4",
         childNodes: [{ nodeType: 3, textContent: "Level 4" }],
         previousElementSibling: h3,
       };
-      
+
       mockDocument.getElementById.mockImplementation((id: string) => {
         if (id === "deep-section") return h4;
         return null;
       });
-      
+
       const module = await import("../header-copy-link");
       module.initHeaderCopyLinks();
-      
+
       // Should limit to 3 levels: [ai journal]: Level 1 > Level 2 > Level 3 ...
       expect(mockWindow.location.pathname).toBe("/ai-journal");
     });
-    
+
     it("should use most recent parent header when duplicates exist", async () => {
       mockWindow.location.pathname = "/test-page";
-      
+
       // Structure with multiple H2s - should use the closest one
       const h2First = {
         tagName: "H2",
         childNodes: [{ nodeType: 3, textContent: "First Section" }],
         previousElementSibling: null,
       };
-      
+
       const h3Under = {
         tagName: "H3",
         childNodes: [{ nodeType: 3, textContent: "Subsection" }],
         previousElementSibling: h2First,
       };
-      
+
       const h2Second = {
         tagName: "H2",
         childNodes: [{ nodeType: 3, textContent: "Second Section" }],
         previousElementSibling: h3Under,
       };
-      
+
       const h3Target = {
         id: "target",
         tagName: "H3",
         childNodes: [{ nodeType: 3, textContent: "Target Section" }],
         previousElementSibling: h2Second,
       };
-      
+
       mockDocument.getElementById.mockImplementation((id: string) => {
         if (id === "target") return h3Target;
         return null;
       });
-      
+
       const module = await import("../header-copy-link");
       module.initHeaderCopyLinks();
-      
+
       // Should use Second Section (most recent H2): [test page]: Second Section > Target Section
       expect(mockWindow.location.pathname).toBe("/test-page");
     });
-    
+
     it("should handle missing intermediate header levels", async () => {
       mockWindow.location.pathname = "/blog-post";
-      
+
       // H1 followed directly by H3 (no H2 in between)
       const h1 = {
         tagName: "H1",
         childNodes: [{ nodeType: 3, textContent: "Main Title" }],
         previousElementSibling: null,
       };
-      
+
       const h3 = {
         id: "subsection",
         tagName: "H3",
         childNodes: [{ nodeType: 3, textContent: "Direct Subsection" }],
         previousElementSibling: h1,
       };
-      
+
       mockDocument.getElementById.mockImplementation((id: string) => {
         if (id === "subsection") return h3;
         return null;
       });
-      
+
       const module = await import("../header-copy-link");
       module.initHeaderCopyLinks();
-      
+
       // Should handle missing H2: [blog post]: Main Title > Direct Subsection
       expect(mockWindow.location.pathname).toBe("/blog-post");
     });
-    
+
     it("should handle AI Journal nested subsection breadcrumb", async () => {
       mockWindow.location.pathname = "/ai-journal";
-      
+
       // Simulate: H2 (Diary) > H3 (2025-08-21) > H4 (Psychic Shadows)
       const h2 = {
         tagName: "H2",
         childNodes: [{ nodeType: 3, textContent: "Diary" }],
         previousElementSibling: null,
       };
-      
+
       const h3 = {
         tagName: "H3",
         childNodes: [{ nodeType: 3, textContent: "2025-08-21" }],
         previousElementSibling: h2,
       };
-      
+
       const h4 = {
         id: "psychic-shadows",
         tagName: "H4",
         childNodes: [{ nodeType: 3, textContent: "Psychic Shadows Gas Lighting" }],
         previousElementSibling: h3,
       };
-      
+
       mockDocument.getElementById.mockImplementation((id: string) => {
         if (id === "psychic-shadows") return h4;
         return null;
       });
-      
+
       const module = await import("../header-copy-link");
       module.initHeaderCopyLinks();
-      
+
       // Expected: [ai journal]: Diary > 2025-08-21 > Psychic Shadows Gas Lighting
       expect(mockWindow.location.pathname).toBe("/ai-journal");
     });
@@ -834,7 +834,7 @@ describe("Header Copy Link", () => {
         if (id === "header-copy-link-styles") return null;
         return null;
       });
-      
+
       // Mock Font Awesome detection (return null to use fallback)
       mockDocument.querySelector.mockReturnValue(null);
 
@@ -842,9 +842,9 @@ describe("Header Copy Link", () => {
 
       // Should add both copy link and GitHub issue icons
       expect(mockHeader.appendChild).toHaveBeenCalledTimes(2);
-      
+
       // Check that both icons were appended
-      const appendedElements = mockHeader.appendChild.mock.calls.map(call => call[0]);
+      const appendedElements = mockHeader.appendChild.mock.calls.map((call) => call[0]);
       expect(appendedElements.length).toBe(2);
       expect(appendedElements[0].className).toContain("header-copy-link");
       expect(appendedElements[1].className).toContain("header-github-issue");
@@ -853,20 +853,20 @@ describe("Header Copy Link", () => {
     it("should show popup when GitHub icon is clicked", () => {
       const mockOpen = vi.fn();
       (globalThis as any).window.open = mockOpen;
-      
+
       // Mock the meta tag for source file path
       mockDocument.querySelector.mockImplementation((selector: string) => {
         if (selector === 'meta[property="markdown-path"]') {
           return {
-            getAttribute: (attr: string) => attr === "content" ? "_d/manager-book.md" : null
+            getAttribute: (attr: string) => (attr === "content" ? "_d/manager-book.md" : null),
           };
         }
         return null;
       });
-      
+
       const mockHeader = createMockHeader("test-header", "Test Header");
       mockHeader.querySelector = vi.fn(() => null);
-      
+
       let githubIconClickHandler: Function | null = null;
 
       // Capture the GitHub icon when it's created
@@ -879,7 +879,7 @@ describe("Header Copy Link", () => {
           style: {},
           appendChild: vi.fn((child: any) => {
             // When appendChild is called with an i element, simulate innerHTML update
-            if (child && child.className === 'fab fa-github') {
+            if (child && child.className === "fab fa-github") {
               element.innerHTML = '<i class="fab fa-github"></i>';
             }
           }),
@@ -923,16 +923,16 @@ describe("Header Copy Link", () => {
           preventDefault: vi.fn(),
           stopPropagation: vi.fn(),
         };
-        
+
         // Mock body.appendChild for popup
         const mockBodyAppendChild = vi.fn();
         mockDocument.body.appendChild = mockBodyAppendChild;
-        
+
         githubIconClickHandler(mockEvent);
-        
+
         // Should create and show a popup instead of immediately opening GitHub
         expect(mockOpen).not.toHaveBeenCalled();
-        
+
         // Verify popup was created by checking body.appendChild was called
         expect(mockBodyAppendChild).toHaveBeenCalled();
       }
@@ -941,27 +941,27 @@ describe("Header Copy Link", () => {
     it("should open GitHub issue with custom description when popup is submitted", () => {
       const mockOpen = vi.fn();
       (globalThis as any).window.open = mockOpen;
-      
+
       // Mock the meta tag for source file path
       mockDocument.querySelector.mockImplementation((selector: string) => {
         if (selector === 'meta[property="markdown-path"]') {
           return {
-            getAttribute: (attr: string) => attr === "content" ? "_d/manager-book.md" : null
+            getAttribute: (attr: string) => (attr === "content" ? "_d/manager-book.md" : null),
           };
         }
         return null;
       });
-      
+
       // Mock document.body.appendChild
       mockDocument.body.appendChild = vi.fn();
-      
+
       const mockHeader = createMockHeader("test-header", "Test Header");
       mockHeader.querySelector = vi.fn(() => null);
-      
+
       // Track popup element and its submit handler
       let popupElement: any = null;
       let submitHandler: Function | null = null;
-      
+
       mockDocument.createElement.mockImplementation((tagName: string) => {
         const element: any = {
           tagName: tagName.toUpperCase(),
@@ -997,14 +997,14 @@ describe("Header Copy Link", () => {
             appendChild: vi.fn(),
           },
         };
-        
+
         if (tagName === "div" && !popupElement) {
           popupElement = element;
         }
-        
+
         return element;
       });
-      
+
       // Mock querySelectorAll directly on document
       mockDocument.querySelectorAll.mockReturnValue([mockHeader]);
 
@@ -1014,7 +1014,7 @@ describe("Header Copy Link", () => {
       });
 
       initHeaderCopyLinks();
-      
+
       // Simulate form submission in popup
       if (submitHandler && popupElement) {
         // Mock the popup querySelector to return input values
@@ -1027,15 +1027,15 @@ describe("Header Copy Link", () => {
           }
           return null;
         });
-        
+
         submitHandler();
-        
+
         // Should open GitHub with custom title and description
         expect(mockOpen).toHaveBeenCalledWith(
           expect.stringContaining("github.com/idvorkin/idvorkin.github.io/issues/new"),
-          "_blank"
+          "_blank",
         );
-        
+
         const urlCall = mockOpen.mock.calls[0][0];
         const decodedUrl = decodeURIComponent(urlCall);
         // Title should have format: page/section: custom title
@@ -1053,34 +1053,34 @@ describe("Header Copy Link", () => {
     it("should include content excerpt when no custom description provided", () => {
       const mockOpen = vi.fn();
       (globalThis as any).window.open = mockOpen;
-      
+
       // Mock the meta tag for source file path
       mockDocument.querySelector.mockImplementation((selector: string) => {
         if (selector === 'meta[property="markdown-path"]') {
           return {
-            getAttribute: (attr: string) => attr === "content" ? "_d/test-page.md" : null
+            getAttribute: (attr: string) => (attr === "content" ? "_d/test-page.md" : null),
           };
         }
         return null;
       });
-      
+
       // Mock document.body.appendChild
       mockDocument.body.appendChild = vi.fn();
-      
+
       // Create header with next paragraph element
       const mockParagraph = {
-        tagName: 'P',
-        textContent: 'This is the first paragraph after the header with important content.',
+        tagName: "P",
+        textContent: "This is the first paragraph after the header with important content.",
         nextElementSibling: null,
       };
-      
+
       const mockHeader = createMockHeader("test-section", "Test Section");
       mockHeader.querySelector = vi.fn(() => null);
       mockHeader.nextElementSibling = mockParagraph;
-      
+
       let submitHandler: Function | null = null;
       let popupElement: any = null;
-      
+
       mockDocument.createElement.mockImplementation((tagName: string) => {
         const element: any = {
           tagName: tagName.toUpperCase(),
@@ -1116,14 +1116,14 @@ describe("Header Copy Link", () => {
             appendChild: vi.fn(),
           },
         };
-        
+
         if (tagName === "div" && !popupElement) {
           popupElement = element;
         }
-        
+
         return element;
       });
-      
+
       // Mock querySelectorAll directly on document
       mockDocument.querySelectorAll.mockReturnValue([mockHeader]);
 
@@ -1133,7 +1133,7 @@ describe("Header Copy Link", () => {
       });
 
       initHeaderCopyLinks();
-      
+
       // Simulate form submission with no custom input
       if (submitHandler && popupElement) {
         popupElement.querySelector = vi.fn((selector: string) => {
@@ -1145,15 +1145,15 @@ describe("Header Copy Link", () => {
           }
           return null;
         });
-        
+
         submitHandler();
-        
+
         // Should open GitHub with content excerpt even without custom description
         expect(mockOpen).toHaveBeenCalled();
-        
+
         const urlCall = mockOpen.mock.calls[0][0];
         const decodedUrl = decodeURIComponent(urlCall);
-        
+
         // Should still have content excerpt with section heading
         expect(decodedUrl).toContain("## Content Excerpt");
         expect(decodedUrl).toContain("#### Test Section");
@@ -1164,34 +1164,34 @@ describe("Header Copy Link", () => {
     it("should truncate long content excerpts to 500 characters", () => {
       const mockOpen = vi.fn();
       (globalThis as any).window.open = mockOpen;
-      
+
       // Mock the meta tag
       mockDocument.querySelector.mockImplementation((selector: string) => {
         if (selector === 'meta[property="markdown-path"]') {
           return {
-            getAttribute: (attr: string) => attr === "content" ? "long-content.md" : null
+            getAttribute: (attr: string) => (attr === "content" ? "long-content.md" : null),
           };
         }
         return null;
       });
-      
+
       mockDocument.body.appendChild = vi.fn();
-      
+
       // Create a very long paragraph
       const longText = "Lorem ipsum ".repeat(100); // Creates text longer than 500 chars
       const mockParagraph = {
-        tagName: 'P',
+        tagName: "P",
         textContent: longText,
         nextElementSibling: null,
       };
-      
+
       const mockHeader = createMockHeader("long-section", "Long Section");
       mockHeader.querySelector = vi.fn(() => null);
       mockHeader.nextElementSibling = mockParagraph;
-      
+
       let submitHandler: Function | null = null;
       let popupElement: any = null;
-      
+
       mockDocument.createElement.mockImplementation((tagName: string) => {
         const element: any = {
           tagName: tagName.toUpperCase(),
@@ -1216,14 +1216,14 @@ describe("Header Copy Link", () => {
             appendChild: vi.fn(),
           },
         };
-        
+
         if (tagName === "div" && !popupElement) {
           popupElement = element;
         }
-        
+
         return element;
       });
-      
+
       // Mock querySelectorAll directly on document
       mockDocument.querySelectorAll.mockReturnValue([mockHeader]);
 
@@ -1233,7 +1233,7 @@ describe("Header Copy Link", () => {
       });
 
       initHeaderCopyLinks();
-      
+
       if (submitHandler && popupElement) {
         popupElement.querySelector = vi.fn((selector: string) => {
           if (selector === ".github-issue-title") {
@@ -1244,17 +1244,17 @@ describe("Header Copy Link", () => {
           }
           return null;
         });
-        
+
         submitHandler();
-        
+
         const urlCall = mockOpen.mock.calls[0][0];
         const decodedUrl = decodeURIComponent(urlCall);
-        
+
         // Should have truncated content with ellipsis and section heading
         expect(decodedUrl).toContain("## Content Excerpt");
         expect(decodedUrl).toContain("#### Long Section");
         expect(decodedUrl).toContain("...");
-        
+
         // Extract the content excerpt from the URL
         const excerptMatch = decodedUrl.match(/## Content Excerpt\n\n> ([^\n]+)/);
         if (excerptMatch) {
@@ -1267,41 +1267,41 @@ describe("Header Copy Link", () => {
     it("should skip empty paragraphs and find first non-empty one", () => {
       const mockOpen = vi.fn();
       (globalThis as any).window.open = mockOpen;
-      
+
       // Mock the meta tag
       mockDocument.querySelector.mockImplementation((selector: string) => {
         if (selector === 'meta[property="markdown-path"]') {
           return {
-            getAttribute: (attr: string) => attr === "content" ? "test.md" : null
+            getAttribute: (attr: string) => (attr === "content" ? "test.md" : null),
           };
         }
         return null;
       });
-      
+
       mockDocument.body.appendChild = vi.fn();
-      
+
       // Create chain: header -> empty paragraph -> paragraph with content
       const emptyParagraph = {
-        tagName: 'P',
-        textContent: '   ', // Just whitespace
+        tagName: "P",
+        textContent: "   ", // Just whitespace
         nextElementSibling: null,
       };
-      
+
       const contentParagraph = {
-        tagName: 'P',
-        textContent: 'This is the actual content paragraph.',
+        tagName: "P",
+        textContent: "This is the actual content paragraph.",
         nextElementSibling: null,
       };
-      
+
       emptyParagraph.nextElementSibling = contentParagraph;
-      
+
       const mockHeader = createMockHeader("test-section", "Test Section");
       mockHeader.querySelector = vi.fn(() => null);
       mockHeader.nextElementSibling = emptyParagraph;
-      
+
       let submitHandler: Function | null = null;
       let popupElement: any = null;
-      
+
       mockDocument.createElement.mockImplementation((tagName: string) => {
         const element: any = {
           tagName: tagName.toUpperCase(),
@@ -1326,14 +1326,14 @@ describe("Header Copy Link", () => {
             appendChild: vi.fn(),
           },
         };
-        
+
         if (tagName === "div" && !popupElement) {
           popupElement = element;
         }
-        
+
         return element;
       });
-      
+
       // Mock querySelectorAll directly on document
       mockDocument.querySelectorAll.mockReturnValue([mockHeader]);
 
@@ -1343,7 +1343,7 @@ describe("Header Copy Link", () => {
       });
 
       initHeaderCopyLinks();
-      
+
       if (submitHandler && popupElement) {
         popupElement.querySelector = vi.fn((selector: string) => {
           if (selector === ".github-issue-title") {
@@ -1354,12 +1354,12 @@ describe("Header Copy Link", () => {
           }
           return null;
         });
-        
+
         submitHandler();
-        
+
         const urlCall = mockOpen.mock.calls[0][0];
         const decodedUrl = decodeURIComponent(urlCall);
-        
+
         // Should skip empty paragraph and use the one with content
         expect(decodedUrl).toContain("## Content Excerpt");
         expect(decodedUrl).toContain("#### Test Section");
@@ -1424,7 +1424,7 @@ describe("URL Transformation Logic", () => {
 
       // Get the copy icon that was appended to the header
       const copyIcon = mockHeader.appendChild.mock.calls[0][0];
-      
+
       // Get the click handler from the copy icon
       const clickHandler = copyIcon.addEventListener.mock.calls.find((call) => call[0] === "click")?.[1];
 

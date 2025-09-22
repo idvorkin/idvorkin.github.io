@@ -37,12 +37,12 @@ function createCopyLinkIcon(options: CopyLinkOptions): HTMLElement {
   icon.style.transition = "opacity 0.2s ease";
   icon.style.fontSize = "0.8em";
   icon.style.userSelect = "none";
-  
+
   // Add accessibility attributes
-  icon.setAttribute('role', 'button');
-  icon.setAttribute('tabindex', '0');
-  icon.setAttribute('aria-label', 'Share this section');
-  
+  icon.setAttribute("role", "button");
+  icon.setAttribute("tabindex", "0");
+  icon.setAttribute("aria-label", "Share this section");
+
   // iOS-style share icon - box with upward arrow
   icon.innerHTML = `<svg width="16" height="20" viewBox="0 0 16 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
     <!-- Upward arrow -->
@@ -68,34 +68,34 @@ function createGitHubIssueIcon(): HTMLElement {
   icon.style.transition = "opacity 0.2s ease";
   icon.style.fontSize = "0.8em";
   icon.style.userSelect = "none";
-  
+
   // Add accessibility attributes
-  icon.setAttribute('role', 'button');
-  icon.setAttribute('tabindex', '0');
-  icon.setAttribute('aria-label', 'Create GitHub issue for this section');
-  
+  icon.setAttribute("role", "button");
+  icon.setAttribute("tabindex", "0");
+  icon.setAttribute("aria-label", "Create GitHub issue for this section");
+
   // Check if Font Awesome is available (more robust detection)
   const hasFontAwesome = !!(
-    document.querySelector('link[href*="font-awesome"]') || 
+    document.querySelector('link[href*="font-awesome"]') ||
     document.querySelector('script[src*="font-awesome"]') ||
-    document.querySelector('.fa, .fab, .fas, .far') ||
+    document.querySelector(".fa, .fab, .fas, .far") ||
     // Check for inline styles that might include Font Awesome
-    Array.from(document.styleSheets).some(sheet => {
+    Array.from(document.styleSheets).some((sheet) => {
       try {
-        return sheet.href && sheet.href.includes('font-awesome');
+        return sheet.href?.includes("font-awesome");
       } catch (e) {
         return false; // Cross-origin stylesheets may throw
       }
     })
   );
-  
+
   if (hasFontAwesome) {
-    const faIcon = document.createElement('i');
-    faIcon.className = 'fab fa-github';
+    const faIcon = document.createElement("i");
+    faIcon.className = "fab fa-github";
     icon.appendChild(faIcon);
   } else {
     // Fallback to text or emoji
-    icon.textContent = '⚠️';
+    icon.textContent = "⚠️";
   }
 
   return icon;
@@ -109,74 +109,74 @@ function createIssuePopup(headerId: string, headerText: string): HTMLElement {
   popup.className = "github-issue-popup";
   popup.style.display = "none";
   popup.id = `github-issue-popup-${headerId}`;
-  
+
   // Create structure safely without innerHTML to prevent XSS
   const content = document.createElement("div");
   content.className = "github-issue-popup-content";
-  
+
   // Header
   const header = document.createElement("div");
   header.className = "github-issue-popup-header";
-  
+
   const h4 = document.createElement("h4");
   h4.textContent = `Report Issue: ${headerText}`; // Safe from XSS
-  
+
   const closeBtn = document.createElement("button");
   closeBtn.className = "github-issue-popup-close";
   closeBtn.title = "Close";
   closeBtn.textContent = "×";
-  
+
   header.appendChild(h4);
   header.appendChild(closeBtn);
-  
+
   // Body
   const body = document.createElement("div");
   body.className = "github-issue-popup-body";
-  
+
   // Title input
   const titleLabel = document.createElement("label");
   titleLabel.setAttribute("for", `issue-title-${headerId}`);
   titleLabel.textContent = "Issue Title:";
-  
+
   const titleInput = document.createElement("input");
   titleInput.type = "text";
   titleInput.id = `issue-title-${headerId}`;
   titleInput.className = "github-issue-title";
   titleInput.placeholder = "Brief title for the issue";
-  
+
   // Description textarea
   const descLabel = document.createElement("label");
   descLabel.setAttribute("for", `issue-comment-${headerId}`);
   descLabel.textContent = "Description:";
-  
+
   const descTextarea = document.createElement("textarea");
   descTextarea.id = `issue-comment-${headerId}`;
   descTextarea.className = "github-issue-comment";
   descTextarea.placeholder = "Describe the issue with this section...";
   descTextarea.rows = 4;
-  
+
   // Buttons
   const buttonsDiv = document.createElement("div");
   buttonsDiv.className = "github-issue-popup-buttons";
-  
+
   const submitBtn = document.createElement("button");
   submitBtn.className = "github-issue-submit";
   submitBtn.textContent = "Create Issue on GitHub";
-  
+
   const cancelBtn = document.createElement("button");
   cancelBtn.className = "github-issue-cancel";
   cancelBtn.textContent = "Cancel";
-  
+
   buttonsDiv.appendChild(submitBtn);
   buttonsDiv.appendChild(cancelBtn);
-  
+
   // Hint
   const hintDiv = document.createElement("div");
   hintDiv.className = "github-issue-popup-hint";
   const small = document.createElement("small");
   small.textContent = "Tip: Press Ctrl+Enter (Cmd+Enter on Mac) to submit";
   hintDiv.appendChild(small);
-  
+
   // Assemble body
   body.appendChild(titleLabel);
   body.appendChild(titleInput);
@@ -184,12 +184,12 @@ function createIssuePopup(headerId: string, headerText: string): HTMLElement {
   body.appendChild(descTextarea);
   body.appendChild(buttonsDiv);
   body.appendChild(hintDiv);
-  
+
   // Assemble popup
   content.appendChild(header);
   content.appendChild(body);
   popup.appendChild(content);
-  
+
   return popup;
 }
 
@@ -198,23 +198,23 @@ function createIssuePopup(headerId: string, headerText: string): HTMLElement {
  */
 function showIssuePopup(popup: HTMLElement, header: HTMLElement): void {
   // Hide any other open popups
-  document.querySelectorAll(".github-issue-popup").forEach(p => {
+  document.querySelectorAll(".github-issue-popup").forEach((p) => {
     (p as HTMLElement).style.display = "none";
   });
-  
+
   // Position the popup near the header
   popup.style.display = "block";
   popup.style.position = "absolute";
   popup.style.zIndex = "1000";
-  
+
   // Get header position
   const rect = header.getBoundingClientRect();
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-  
-  popup.style.top = (rect.bottom + scrollTop + 10) + "px";
-  popup.style.left = (rect.left + scrollLeft) + "px";
-  
+
+  popup.style.top = `${rect.bottom + scrollTop + 10}px`;
+  popup.style.left = `${rect.left + scrollLeft}px`;
+
   // Focus on the title input
   const titleInput = popup.querySelector(".github-issue-title") as HTMLInputElement;
   if (titleInput) {
@@ -271,80 +271,80 @@ function showCopiedTooltip(element: HTMLElement, duration = 2000): void {
  */
 function buildBreadcrumbFrom(header: HTMLElement | null): string {
   if (!header) return "";
-  
+
   // Get the page name from URL
   const pathname = window.location.pathname;
   const pageName = pathname.replace(/^\//, "").replace(/\.html$/, "") || "index";
-  
+
   // Convert page name to readable format (replace hyphens with spaces)
-  const readablePageName = pageName.replace(/-/g, ' ');
-  
+  const readablePageName = pageName.replace(/-/g, " ");
+
   // Build header hierarchy
   const headerHierarchy: string[] = [];
   const tagName = header.tagName;
-  const headerLevel = parseInt(tagName.substring(1)); // Get number from H1, H2, etc.
-  
+  const headerLevel = Number.parseInt(tagName.substring(1)); // Get number from H1, H2, etc.
+
   // Get the current header's text
   const currentHeaderText = Array.from(header.childNodes)
-    .filter(node => node.nodeType === Node.TEXT_NODE)
-    .map(node => node.textContent?.trim())
-    .join(' ')
+    .filter((node) => node.nodeType === Node.TEXT_NODE)
+    .map((node) => node.textContent?.trim())
+    .join(" ")
     .trim();
-  
+
   // For H2+, find parent headers
   if (headerLevel >= 2) {
     // Look for parent headers by traversing backwards through the DOM
     let prevElement = header.previousElementSibling;
     const foundHeaders: { level: number; text: string }[] = [];
     const seenLevels = new Set<number>();
-    
+
     while (prevElement) {
       const prevTagName = prevElement.tagName;
-      if (prevTagName && prevTagName.match(/^H[1-6]$/)) {
-        const prevLevel = parseInt(prevTagName.substring(1));
-        
+      if (prevTagName?.match(/^H[1-6]$/)) {
+        const prevLevel = Number.parseInt(prevTagName.substring(1));
+
         // Only collect headers that are higher level (lower number) than current
         // and we haven't seen this level yet (to get the most recent parent)
         if (prevLevel < headerLevel && !seenLevels.has(prevLevel)) {
           const prevHeaderText = Array.from(prevElement.childNodes)
-            .filter(node => node.nodeType === Node.TEXT_NODE)
-            .map(node => node.textContent?.trim())
-            .join(' ')
+            .filter((node) => node.nodeType === Node.TEXT_NODE)
+            .map((node) => node.textContent?.trim())
+            .join(" ")
             .trim();
-          
+
           if (prevHeaderText) {
             foundHeaders.push({ level: prevLevel, text: prevHeaderText });
             seenLevels.add(prevLevel);
           }
-          
+
           // If we found an H1, we can stop (top level)
           if (prevLevel === 1) break;
         }
       }
       prevElement = prevElement.previousElementSibling;
     }
-    
+
     // Add headers in hierarchical order (H1 > H2 > ...)
     foundHeaders.sort((a, b) => a.level - b.level);
-    foundHeaders.forEach(h => headerHierarchy.push(h.text));
+    foundHeaders.forEach((h) => headerHierarchy.push(h.text));
   }
-  
+
   // Add current header
   headerHierarchy.push(currentHeaderText);
-  
+
   // Build the breadcrumb string with better formatting
   let breadcrumb = `[${readablePageName}]`;
   if (headerHierarchy.length > 0) {
     // Limit to 3 levels max for readability
     const limitedHierarchy = headerHierarchy.slice(0, 3);
-    breadcrumb += `: ${limitedHierarchy.join(' > ')}`;
-    
+    breadcrumb += `: ${limitedHierarchy.join(" > ")}`;
+
     // Add ellipsis if there are more levels
     if (headerHierarchy.length > 3) {
-      breadcrumb += ' ...';
+      breadcrumb += " ...";
     }
   }
-  
+
   return breadcrumb;
 }
 
@@ -366,7 +366,7 @@ function transformUrl(url: string, options: CopyLinkOptions): string {
   const urlObj = new URL(transformedUrl);
   const pathname = urlObj.pathname.replace(/^\//, "").replace(/\.html$/, "") || "index";
   const anchor = urlObj.hash.replace("#", "");
-  
+
   // Return path#anchor format for tinyurl
   return anchor ? `${pathname}#${anchor}` : pathname;
 }
@@ -378,47 +378,48 @@ async function shareOrCopyHeaderLink(headerId: string, options: CopyLinkOptions)
   try {
     // Build the URL using tinyurl redirect format
     const currentUrl = window.location.href;
-    const anchorUrl = currentUrl.includes("#") 
+    const anchorUrl = currentUrl.includes("#")
       ? currentUrl.replace(/#.*/, `#${headerId}`)
       : `${currentUrl}#${headerId}`;
-    
-    // Transform the URL for tinyurl redirect  
+
+    // Transform the URL for tinyurl redirect
     const transformedUrl = transformUrl(anchorUrl, options);
     const tinyUrl = `https://tinyurl.com/igor-blog/?path=${encodeURIComponent(transformedUrl)}`;
-    
+
     // Get header text for share title (clean it to remove button text)
     const header = document.getElementById(headerId);
     // Get just the text content of the header, excluding child elements
-    const headerText = header ? 
-      Array.from(header.childNodes)
-        .filter(node => node.nodeType === Node.TEXT_NODE)
-        .map(node => node.textContent?.trim())
-        .join(' ')
-        .trim() : "";
+    const headerText = header
+      ? Array.from(header.childNodes)
+          .filter((node) => node.nodeType === Node.TEXT_NODE)
+          .map((node) => node.textContent?.trim())
+          .join(" ")
+          .trim()
+      : "";
     const shareTitle = `${headerText} - Igor's Blog`;
-    
+
     // Get preview text for the section
     const previewText = getPreviewText(headerId);
-    
+
     // Build breadcrumb "From" line
     const breadcrumbFrom = buildBreadcrumbFrom(header);
-    
+
     // Create share text with preview
     let shareText = `From: ${breadcrumbFrom} ...`;
     if (previewText) {
       shareText = `From: ${breadcrumbFrom} ...\n\n${previewText}`;
     }
-    
+
     // Check if this is a mobile device
     const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-    
+
     // Use native share only on mobile devices that support it
     if (navigator.share && isMobile) {
       try {
         await navigator.share({
           title: shareTitle,
           text: shareText,
-          url: tinyUrl
+          url: tinyUrl,
         });
         console.log(`📱 Shared via native share: ${tinyUrl}`);
         return true; // Indicates share was successful
@@ -427,42 +428,41 @@ async function shareOrCopyHeaderLink(headerId: string, options: CopyLinkOptions)
         console.log("Share cancelled or failed, falling back to clipboard", shareError);
       }
     }
-    
+
     // For clipboard copy, format with preview text
     let clipboardText = tinyUrl;
     if (previewText) {
       // Format as: From: Title, Preview, URL (similar to social media shares)
       clipboardText = `From: ${breadcrumbFrom} ...\n\n${previewText}\n\n${tinyUrl}`;
     }
-    
+
     // Fallback to clipboard copy for desktop or if share fails
     await navigator.clipboard.writeText(clipboardText);
     console.log(`📋 Copied to clipboard with preview: ${clipboardText.substring(0, 100)}...`);
     return false; // Indicates copy was used instead of share
-    
   } catch (error) {
     console.error("Failed to share/copy header link:", error);
 
     // Fallback: use textarea method if clipboard API fails
     try {
       const currentUrl = window.location.href;
-      const anchorUrl = currentUrl.includes("#") 
+      const anchorUrl = currentUrl.includes("#")
         ? currentUrl.replace(/#.*/, `#${headerId}`)
         : `${currentUrl}#${headerId}`;
-      
+
       const transformedUrl = transformUrl(anchorUrl, options);
       const tinyUrl = `https://tinyurl.com/igor-blog/?path=${encodeURIComponent(transformedUrl)}`;
-      
+
       // Get preview text for fallback
       const header = document.getElementById(headerId);
       const breadcrumbFrom = buildBreadcrumbFrom(header);
       const previewText = getPreviewText(headerId);
-      
+
       let clipboardText = tinyUrl;
       if (previewText) {
         clipboardText = `From: ${breadcrumbFrom} ...\n\n${previewText}\n\n${tinyUrl}`;
       }
-      
+
       // Use textarea fallback for copying
       const textArea = document.createElement("textarea");
       textArea.value = clipboardText;
@@ -470,7 +470,7 @@ async function shareOrCopyHeaderLink(headerId: string, options: CopyLinkOptions)
       textArea.select();
       document.execCommand("copy");
       document.body.removeChild(textArea);
-      
+
       console.log(`📋 Copied with preview (fallback): ${clipboardText.substring(0, 100)}...`);
       return false;
     } catch (fallbackError) {
@@ -514,58 +514,61 @@ function getOrCreateHeaderId(header: HTMLElement): string {
  */
 function getFirstParagraphAfterHeader(header: HTMLElement): string {
   let nextElement = header.nextElementSibling;
-  
+
   // Look for the first non-empty content before the next header
   while (nextElement) {
     // Stop if we hit another header
     if (nextElement.tagName.match(/^H[1-6]$/)) {
       break;
     }
-    
+
     // Check if it's a paragraph with actual content
-    if (nextElement.tagName === 'P') {
-      const text = (nextElement.textContent || '').trim();
+    if (nextElement.tagName === "P") {
+      const text = (nextElement.textContent || "").trim();
       if (text.length > 0) {
         // Found non-empty paragraph - truncate if too long
-        return text.length > 500 ? text.substring(0, 497) + '...' : text;
+        return text.length > 500 ? `${text.substring(0, 497)}...` : text;
       }
     }
-    
+
     // If it's a list (UL or OL), get text from the list items
-    if (nextElement.tagName === 'UL' || nextElement.tagName === 'OL') {
-      const listItems = nextElement.querySelectorAll('li');
+    if (nextElement.tagName === "UL" || nextElement.tagName === "OL") {
+      const listItems = nextElement.querySelectorAll("li");
       const itemTexts: string[] = [];
       let totalLength = 0;
-      
+
       for (const li of Array.from(listItems)) {
         // Only get direct text content, not nested lists
         const text = Array.from(li.childNodes)
-          .filter(node => node.nodeType === Node.TEXT_NODE || 
-                         (node.nodeType === Node.ELEMENT_NODE && 
-                          (node as Element).tagName !== 'UL' && 
-                          (node as Element).tagName !== 'OL'))
-          .map(node => (node.textContent || '').trim())
-          .join(' ')
+          .filter(
+            (node) =>
+              node.nodeType === Node.TEXT_NODE ||
+              (node.nodeType === Node.ELEMENT_NODE &&
+                (node as Element).tagName !== "UL" &&
+                (node as Element).tagName !== "OL"),
+          )
+          .map((node) => (node.textContent || "").trim())
+          .join(" ")
           .trim();
-        
+
         if (text.length > 0) {
           itemTexts.push(`• ${text}`);
           totalLength += text.length;
           if (totalLength > 400) break; // Stop if we have enough text
         }
       }
-      
+
       if (itemTexts.length > 0) {
         // Join with newlines for better formatting
-        const combinedText = itemTexts.join('\n');
-        return combinedText.length > 500 ? combinedText.substring(0, 497) + '...' : combinedText;
+        const combinedText = itemTexts.join("\n");
+        return combinedText.length > 500 ? `${combinedText.substring(0, 497)}...` : combinedText;
       }
     }
-    
+
     nextElement = nextElement.nextElementSibling;
   }
-  
-  return '';
+
+  return "";
 }
 
 /**
@@ -575,16 +578,16 @@ function truncateText(text: string, maxLength = 400): string {
   if (text.length <= maxLength) {
     return text;
   }
-  
+
   // Truncate to maxLength and find the last space
   const truncated = text.substring(0, maxLength);
-  const lastSpace = truncated.lastIndexOf(' ');
-  
+  const lastSpace = truncated.lastIndexOf(" ");
+
   if (lastSpace > 0) {
-    return truncated.substring(0, lastSpace) + '...';
+    return `${truncated.substring(0, lastSpace)}...`;
   }
-  
-  return truncated + '...';
+
+  return `${truncated}...`;
 }
 
 /**
@@ -600,129 +603,127 @@ function getPreviewText(headerId?: string): string {
       if (paragraphText) {
         return truncateText(paragraphText);
       }
-      
+
       // Try to get text from any content elements after the header
       let nextElement = header.nextElementSibling;
       const textParts: string[] = [];
       let charCount = 0;
-      
+
       while (nextElement && charCount < 400) {
         // Stop if we hit another header
         if (nextElement.tagName.match(/^H[1-6]$/)) {
           break;
         }
-        
+
         // Get text from various content elements
-        if (nextElement.tagName === 'P' || 
-            nextElement.tagName === 'LI' || 
-            nextElement.tagName === 'BLOCKQUOTE' ||
-            nextElement.tagName === 'DIV') {
-          const text = (nextElement.textContent || '').trim();
+        if (
+          nextElement.tagName === "P" ||
+          nextElement.tagName === "LI" ||
+          nextElement.tagName === "BLOCKQUOTE" ||
+          nextElement.tagName === "DIV"
+        ) {
+          const text = (nextElement.textContent || "").trim();
           if (text.length > 0) {
             textParts.push(text);
             charCount += text.length;
           }
         }
-        
+
         nextElement = nextElement.nextElementSibling;
       }
-      
+
       if (textParts.length > 0) {
-        return truncateText(textParts.join(' '));
+        return truncateText(textParts.join(" "));
       }
     }
   }
-  
+
   // Fallback: try to find preview text from various content areas
   const contentSelectors = [
-    'article',
-    'main',
-    '.content',
-    '.post-content',
-    '.entry-content',
-    '#content-holder',
-    '.content-holder'
+    "article",
+    "main",
+    ".content",
+    ".post-content",
+    ".entry-content",
+    "#content-holder",
+    ".content-holder",
   ];
-  
+
   for (const selector of contentSelectors) {
     const contentArea = document.querySelector(selector);
     if (contentArea) {
       // Find the first paragraph in the content area
-      const firstParagraph = contentArea.querySelector('p');
+      const firstParagraph = contentArea.querySelector("p");
       if (firstParagraph) {
-        const text = (firstParagraph.textContent || '').trim();
+        const text = (firstParagraph.textContent || "").trim();
         if (text.length > 0) {
           return truncateText(text);
         }
       }
     }
   }
-  
+
   // Last resort: find the first paragraph on the page
-  const firstParagraph = document.querySelector('p');
+  const firstParagraph = document.querySelector("p");
   if (firstParagraph) {
-    const text = (firstParagraph.textContent || '').trim();
+    const text = (firstParagraph.textContent || "").trim();
     if (text.length > 0) {
       return truncateText(text);
     }
   }
-  
+
   // If no preview text found, return empty string
-  return '';
+  return "";
 }
 
 /**
  * Creates a GitHub issue URL for a section with optional custom title and description
  */
 function createGitHubIssueUrl(
-  headerId: string, 
-  headerText: string, 
-  customTitle?: string, 
+  headerId: string,
+  headerText: string,
+  customTitle?: string,
   customDescription?: string,
-  header?: HTMLElement
+  header?: HTMLElement,
 ): string {
   // Get the current page path from the URL
   const pathname = window.location.pathname;
   // Remove leading slash and .html extension if present
   const pagePath = pathname.replace(/^\//, "").replace(/\.html$/, "");
-  
+
   // Get the actual source file path from the meta tag (set by Jekyll)
   const metaTag = document.querySelector('meta[property="markdown-path"]');
   const sourceFile = metaTag ? metaTag.getAttribute("content") : `${pagePath || "index"}.md`;
-  
+
   // Construct the GitHub issue URL
   const repoUrl = "https://github.com/idvorkin/idvorkin.github.io";
-  
+
   // Format title as: page/section: custom title
-  const formattedTitle = customTitle 
+  const formattedTitle = customTitle
     ? `${pagePath || "index"}/${headerId}: ${customTitle}`
     : `${pagePath || "index"}/${headerId}: Issue with ${headerText}`;
-  
+
   const issueTitle = encodeURIComponent(formattedTitle);
-  
+
   // Use description if provided, otherwise use title as description
   const description = customDescription || customTitle || `Issue with section: ${headerText}`;
-  
+
   // Get first paragraph of content if header is provided
-  const firstParagraph = header ? getFirstParagraphAfterHeader(header) : '';
-  
+  const firstParagraph = header ? getFirstParagraphAfterHeader(header) : "";
+
   // Format location as a single line with hyperlinks
   const locationLine = `📍 [${pagePath || "index"}](https://idvorkin.azurewebsites.net/${pagePath})/[${headerId}](https://idvorkin.azurewebsites.net/${pagePath}/${headerId}) - [[GitHub]](${repoUrl}/blob/main/${sourceFile}#${headerId})`;
-  
+
   // Format the issue body with location at top, then description, then content excerpt
-  let issueBodyContent = `${locationLine}\n\n` +
-    `## Description\n\n` +
-    `${description}\n\n`;
-  
+  let issueBodyContent = `${locationLine}\n\n## Description\n\n${description}\n\n`;
+
   // Add content excerpt with section heading if available
   if (firstParagraph) {
-    issueBodyContent += `## Content Excerpt\n\n` +
-      `#### ${headerText}\n\n` +
-      `> ${firstParagraph}\n\n`;
+    issueBodyContent += `## Content Excerpt\n\n#### ${headerText}\n\n> ${firstParagraph}\n\n`;
   }
-  
+
   const issueBody = encodeURIComponent(issueBodyContent);
-  
+
   return `${repoUrl}/issues/new?title=${issueTitle}&body=${issueBody}`;
 }
 
@@ -740,16 +741,16 @@ const trackedHeaders = new Set<HTMLElement>();
  */
 function getOrCreatePopup(header: HTMLElement, headerId: string): HTMLElement {
   let popup = headerPopups.get(header);
-  
+
   if (!popup) {
     popup = createIssuePopup(headerId, header.textContent || "");
     document.body.appendChild(popup);
     headerPopups.set(header, popup);
-    
+
     // Setup popup event handlers
     setupPopupEventHandlers(popup, header, headerId);
   }
-  
+
   return popup;
 }
 
@@ -758,7 +759,7 @@ function getOrCreatePopup(header: HTMLElement, headerId: string): HTMLElement {
  */
 function setupPopupEventHandlers(popup: HTMLElement, header: HTMLElement, headerId: string): void {
   const cleanupFunctions: (() => void)[] = [];
-  
+
   // Handle close button
   const closeBtn = popup.querySelector(".github-issue-popup-close");
   if (closeBtn) {
@@ -766,7 +767,7 @@ function setupPopupEventHandlers(popup: HTMLElement, header: HTMLElement, header
     closeBtn.addEventListener("click", closeHandler);
     cleanupFunctions.push(() => closeBtn.removeEventListener("click", closeHandler));
   }
-  
+
   // Handle cancel button
   const cancelBtn = popup.querySelector(".github-issue-cancel");
   if (cancelBtn) {
@@ -774,39 +775,39 @@ function setupPopupEventHandlers(popup: HTMLElement, header: HTMLElement, header
     cancelBtn.addEventListener("click", cancelHandler);
     cleanupFunctions.push(() => cancelBtn.removeEventListener("click", cancelHandler));
   }
-  
+
   // Function to submit the issue
   const submitIssue = () => {
     const titleInput = popup.querySelector(".github-issue-title") as HTMLInputElement;
     const commentTextarea = popup.querySelector(".github-issue-comment") as HTMLTextAreaElement;
-    
+
     const customTitle = titleInput?.value || "";
     const customDescription = commentTextarea?.value || "";
-    
+
     const issueUrl = createGitHubIssueUrl(headerId, header.textContent || "", customTitle, customDescription, header);
     window.open(issueUrl, "_blank");
-    
+
     hideIssuePopup(popup);
   };
-  
+
   // Handle submit button
   const submitBtn = popup.querySelector(".github-issue-submit");
   if (submitBtn) {
     submitBtn.addEventListener("click", submitIssue);
     cleanupFunctions.push(() => submitBtn.removeEventListener("click", submitIssue));
   }
-  
+
   // Handle keyboard shortcuts (Ctrl/Cmd + Enter)
   const titleInput = popup.querySelector(".github-issue-title") as HTMLInputElement;
   const commentTextarea = popup.querySelector(".github-issue-comment") as HTMLTextAreaElement;
-  
+
   const handleKeydown = (event: KeyboardEvent) => {
     if ((event.ctrlKey || event.metaKey) && event.key === "Enter") {
       event.preventDefault();
       submitIssue();
     }
   };
-  
+
   if (titleInput) {
     titleInput.addEventListener("keydown", handleKeydown);
     cleanupFunctions.push(() => titleInput.removeEventListener("keydown", handleKeydown));
@@ -815,7 +816,7 @@ function setupPopupEventHandlers(popup: HTMLElement, header: HTMLElement, header
     commentTextarea.addEventListener("keydown", handleKeydown);
     cleanupFunctions.push(() => commentTextarea.removeEventListener("keydown", handleKeydown));
   }
-  
+
   // Store cleanup functions for this popup
   const existingCleanup = headerCleanupFunctions.get(header) || [];
   headerCleanupFunctions.set(header, [...existingCleanup, ...cleanupFunctions]);
@@ -849,10 +850,10 @@ function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): voi
   };
   copyIcon.addEventListener("click", shareClickHandler);
   cleanupFunctions.push(() => copyIcon.removeEventListener("click", shareClickHandler));
-  
+
   // Add keyboard support for accessibility
   const keyboardHandler = (event: KeyboardEvent) => {
-    if (event.key === 'Enter' || event.key === ' ') {
+    if (event.key === "Enter" || event.key === " ") {
       event.preventDefault();
       shareClickHandler(event);
     }
@@ -864,24 +865,27 @@ function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): voi
   const githubClickHandler = (event: Event) => {
     event.preventDefault();
     event.stopPropagation();
-    
+
     const popup = getOrCreatePopup(header, headerId);
     showIssuePopup(popup, header);
   };
   githubIcon.addEventListener("click", githubClickHandler);
   cleanupFunctions.push(() => githubIcon.removeEventListener("click", githubClickHandler));
-  
+
   // Close popup when clicking outside (use capture phase to avoid conflicts)
   const handleOutsideClick = (event: MouseEvent) => {
     const popup = headerPopups.get(header);
-    if (popup && !popup.contains(event.target as Node) && 
-        event.target !== githubIcon && 
-        !githubIcon.contains(event.target as Node) &&
-        popup.style.display !== "none") {
+    if (
+      popup &&
+      !popup.contains(event.target as Node) &&
+      event.target !== githubIcon &&
+      !githubIcon.contains(event.target as Node) &&
+      popup.style.display !== "none"
+    ) {
       hideIssuePopup(popup);
     }
   };
-  
+
   // Add slight delay to avoid immediate closing
   const timeoutId = setTimeout(() => {
     document.addEventListener("click", handleOutsideClick, true);
@@ -902,14 +906,14 @@ function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): voi
     copyIcon.style.opacity = "0";
     githubIcon.style.opacity = "0";
   };
-  
+
   header.addEventListener("mouseenter", mouseEnterHandler);
   header.addEventListener("mouseleave", mouseLeaveHandler);
   cleanupFunctions.push(() => {
     header.removeEventListener("mouseenter", mouseEnterHandler);
     header.removeEventListener("mouseleave", mouseLeaveHandler);
   });
-  
+
   // Store cleanup functions for this header
   headerCleanupFunctions.set(header, cleanupFunctions);
   trackedHeaders.add(header);
@@ -923,19 +927,19 @@ export function cleanupHeaderCopyLinks(): void {
   trackedHeaders.forEach((header) => {
     const cleanupFns = headerCleanupFunctions.get(header);
     if (cleanupFns) {
-      cleanupFns.forEach(fn => fn());
+      cleanupFns.forEach((fn) => fn());
     }
-    
+
     // Remove popup if exists
     const popup = headerPopups.get(header);
     if (popup) {
       popup.remove();
     }
   });
-  
+
   // Clear the tracked headers set
   trackedHeaders.clear();
-  
+
   // Reset initialization flag
   isHeaderCopyLinksInitialized = false;
 }
