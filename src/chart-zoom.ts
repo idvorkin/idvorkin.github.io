@@ -91,9 +91,9 @@ export function enableChartZoom(retryCount = 0) {
     return;
   }
 
-  // Find all canvas elements (we'll filter for Chart.js instances)
-  const canvases = document.querySelectorAll("canvas");
-  console.log(`🔍 Found ${canvases.length} canvas elements marked for chart zoom`);
+  // Find only canvas elements that already have chart-zoom-enabled class
+  const canvases = document.querySelectorAll("canvas.chart-zoom-enabled");
+  console.log(`🔍 Found ${canvases.length} canvas elements with chart-zoom-enabled class`);
 
   let processedCount = 0;
 
@@ -114,20 +114,9 @@ export function enableChartZoom(retryCount = 0) {
 
     console.log(`📈 Processing Chart.js chart ${index + 1}: ${canvas.id || 'unnamed'}`);
 
-    // Apply half-size styling and interactive behavior
-    canvas.style.cssText = `
-      width: 50%;
-      max-width: 400px;
-      height: 200px;
-      float: right;
-      cursor: pointer;
-      position: relative;
-      z-index: 1000;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    `;
-
-    // Add chart zoom class for additional CSS styling
-    canvas.classList.add('chart-zoom-enabled');
+    // Only add interactive behavior - CSS styling is handled by the CSS file
+    canvas.style.cursor = 'pointer';
+    canvas.style.transition = 'transform 0.2s ease, box-shadow 0.2s ease';
 
     // Add hover effects
     const addHoverEffect = () => {
@@ -483,29 +472,4 @@ function openChartModal(originalChart: ChartInstance, originalCanvas: HTMLCanvas
 
 // Removed duplicate closeChartModal and handleModalKeydown functions - using the local closeModal and keydownHandler inside openChartModal instead
 
-// Re-check for charts that are created with defer()
-// These charts are created after the initial DOM load
-if (typeof document !== "undefined") {
-  // Check for new charts periodically
-  let checksRemaining = 3;
-
-  const checkForDeferredCharts = () => {
-    if (checksRemaining <= 0) return;
-    checksRemaining--;
-
-    enableChartZoom();
-
-    if (checksRemaining > 0) {
-      setTimeout(checkForDeferredCharts, 2000);
-    }
-  };
-
-  // Start checking after a delay to catch defer() wrapped charts
-  if (document.readyState === "complete") {
-    setTimeout(checkForDeferredCharts, 1500);
-  } else {
-    window.addEventListener("load", () => {
-      setTimeout(checkForDeferredCharts, 1500);
-    });
-  }
-}
+// Auto-initialization removed - chart zoom is now opt-in per page via frontmatter

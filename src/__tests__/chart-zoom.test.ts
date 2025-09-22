@@ -152,13 +152,11 @@ describe("Chart Zoom", () => {
       );
     });
 
-    it("should apply half-size styles to chart canvases", () => {
+    it("should apply interactive styles to chart canvases", () => {
       const mockCanvasElement = {
         ...mockCanvas,
         addEventListener: vi.fn(),
-        style: {
-          cssText: ""
-        } as CSSStyleDeclaration,
+        style: {} as CSSStyleDeclaration,
         classList: {
           add: vi.fn()
         }
@@ -169,10 +167,10 @@ describe("Chart Zoom", () => {
 
       enableChartZoom();
 
-      // Check that cssText was set with expected styles
-      expect(mockCanvasElement.style.cssText).toContain("width: 50%");
-      expect(mockCanvasElement.style.cssText).toContain("max-width: 400px");
-      expect(mockCanvasElement.style.cssText).toContain("cursor: pointer");
+      // Check that interactive styles were applied
+      expect(mockCanvasElement.style.cursor).toBe("pointer");
+      expect(mockCanvasElement.style.transition).toContain("transform");
+      expect(mockCanvasElement.style.transition).toContain("box-shadow");
     });
 
     it("should add click and hover event listeners to charts", () => {

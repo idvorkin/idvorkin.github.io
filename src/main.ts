@@ -510,8 +510,8 @@ function load_globals() {
   // Initialize image zoom functionality
   enableImageZoom();
 
-  // Initialize chart zoom functionality
-  enableChartZoom();
+  // Chart zoom is now opt-in per page via frontmatter
+  // enableChartZoom() is called only on pages with chart_zoom: true
 
   // Initialize dev info display
   initDevInfo();
