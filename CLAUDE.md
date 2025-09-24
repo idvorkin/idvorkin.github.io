@@ -32,12 +32,81 @@ This file will direct you to all other convention files you need to follow.
 ## Blog Writing Style
 
 **VERY IMPORTANT:** Always reference and follow the comprehensive content guidelines in `content_guidelines.md` when working on any blog posts. This file contains:
+
 - 8 distinct content types with specific guidelines
 - Universal writing style rules
 - Technical implementation details for alert boxes, redirects, book links, and images
 - Content development workflow
 
 **Never skip consulting content_guidelines.md when creating or editing blog content.**
+
+## Finding Related Blog Content
+
+When you need to find existing blog posts on a specific topic or merge new content into existing posts:
+
+- **Use the blog-topic-finder agent** (via Task tool with subagent_type: blog-topic-finder)
+- This agent searches through back-links.json and markdown files to identify relevant posts
+- Especially useful when:
+  - User wants to add insights or content to existing posts
+  - Finding all posts related to a specific theme
+  - Checking what's already been written before creating new content
+  - Merging journal entries or thoughts into established posts
+
+Example: When user says "I want to work on a post about X" or "merge this content into...", always use the blog-topic-finder agent first.
+
+**Important:** The blog-topic-finder agent should always start by pulling ALL titles and descriptions from back-links.json to have complete context for searching:
+
+```bash
+jq '.url_info | to_entries[] | {url: .key, title: .value.title, description: .value.description}' back-links.json
+```
+
+This ensures comprehensive searching across all blog content.
+
+### Working with back-links.json
+
+The `back-links.json` file (~283KB, ~5900 lines) contains metadata about all blog posts. Use `jq` for efficient querying instead of loading the entire file.
+
+**Structure:**
+
+```json
+{
+  "redirects": { "/old-url": "/new-url", ... },
+  "url_info": {
+    "/post-url": {
+      "title": "Post Title",
+      "description": "Post description...",
+      "doc_size": 16000,
+      "file_path": "_site/post.html",
+      "markdown_path": "_d/post.md",
+      "last_modified": "2024-05-05T08:25:00-07:00",
+      "incoming_links": ["/linking-post1", "/linking-post2"],
+      "outgoing_links": ["/linked-post1", "/linked-post2"],
+      "redirect_url": "",
+      "url": "/post-url"
+    },
+    ...
+  }
+}
+```
+
+**Efficient jq queries:**
+
+```bash
+# Get all post URLs and titles
+jq '.url_info | to_entries[] | {url: .key, title: .value.title}' back-links.json
+
+# Search for posts by title (case-insensitive)
+jq '.url_info | to_entries[] | select(.value.title | ascii_downcase | contains("family")) | {url: .key, title: .value.title}' back-links.json
+
+# Find posts with specific incoming links
+jq '.url_info | to_entries[] | select(.value.incoming_links[]? == "/eulogy") | .key' back-links.json
+
+# Get post metadata by URL
+jq '.url_info["/gap-year-igor"]' back-links.json
+
+# Search descriptions for keywords
+jq '.url_info | to_entries[] | select(.value.description | ascii_downcase | contains("priority")) | {url: .key, title: .value.title}' back-links.json
+```
 
 ## Code Style Guidelines
 
@@ -72,6 +141,7 @@ When adding new features or fixing bugs, **always add both unit tests and e2e te
 ## Development & Server
 
 ### Development Workflow
+
 - Run `just js-build` after TypeScript changes
 - Create isolated test cases for complex components
 - Use the blog's existing structure for new features
@@ -80,6 +150,7 @@ When adding new features or fixing bugs, **always add both unit tests and e2e te
 - If NPM tools are not installed, install them
 
 ### Running Jekyll Server
+
 - **Default**: `just jekyll-serve` (port 4000, livereload port 35729)
 - **Custom port**: `just jekyll-serve 4002`
 - **Custom ports with livereload**: `just jekyll-serve 4002 35730`
@@ -92,6 +163,7 @@ When adding new features or fixing bugs, **always add both unit tests and e2e te
 ## Git & PR Workflow
 
 ### Basic Workflow Rules
+
 - Always work on a PR, never on main directly
 - Use main branch (not master)
 - Start with fetch/rebase to get latest main
@@ -99,6 +171,7 @@ When adding new features or fixing bugs, **always add both unit tests and e2e te
 - Before starting work, make sure you have the latest main branch
 
 ### Commit Guidelines
+
 - **Generated JS files ARE committed** (assets/js/index.js, assets/js/index.js.map)
 - Commit both TypeScript source files (src/\*.ts) and the generated JS bundle
 - JS files are built from TypeScript and should be tracked in git for Jekyll deployment
@@ -110,6 +183,7 @@ When adding new features or fixing bugs, **always add both unit tests and e2e te
 - Always commit after making changes to claude config (agents or claude config)
 
 ### PR Best Practices
+
 - Create new PR for each task
 - When starting work on an issue, update the issue with the linked PR
 - Run code review agent before pushing
@@ -121,6 +195,7 @@ When adding new features or fixing bugs, **always add both unit tests and e2e te
 - **Never merge PRs yourself** - the user must do this from the PR
 
 ### Post-Merge Cleanup
+
 After a PR is merged, always:
 
 1. First verify the PR is actually merged: `gh pr view <pr-number> --json state,merged`
@@ -132,13 +207,13 @@ After a PR is merged, always:
 This keeps the repository clean and ensures you're always working with the latest code.
 
 ### PR Feedback Resolution
+
 When resolving PR feedback:
 
 1. Always commit and push changes after implementing feedback
 2. Check for uncommitted changes before starting or finishing work
 3. If uncommitted changes exist, ask the user before discarding them
 4. The pr-feedback-resolver agent should always push changes to remote
-
 
 ## Temporary Files
 
