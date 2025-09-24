@@ -512,6 +512,28 @@ When tamed, the Entropy Dragon becomes your personal trainer and life coach, for
 >
 > **Me:** "I'll have a stronger body at 50 than most have at 40. I'll have been present for my kids' last years at home. I'll have achieved mastery in domains I choose, not ones assigned to me. That's not squandering - that's investing."
 
+---
+
+> **Dragon:** "You are an Uber drive. You've been sitting here waiting for 20 to give the kids a 15-minute drive home."
+>
+> **Me:** "Yup - Big Shot FAANG Engineering Manager to cab driver"
+>
+> **Dragon:** "What a spectacular fall from grace. More waiting than driving."
+>
+> **Me:** "You know what's funny? When I worked, I'd have paid someone to do this. Now I'm paying WITH my career to GET to do this."
+>
+> **Dragon:** "To drive your kids for 15 minutes in a car?"
+>
+> **Me:** "Those 15 minutes? Precious. Zach tells me about the bully, Amelia the test he's worried about, or the boy who smiled at her. Unguarded moments you can't plan no matter how hard you try"
+>
+> **Dragon:** "And the 20 minutes sitting in the parking lot?"
+>
+> **Me:** "That's the next level - what if I could make them productive, or be mindful in that time? Not feeding my social media addiction or feeling sorry for myself about being an Uber service, but actually present. Breathing. Noticing. Being grateful I GET to be the one waiting. The waiting itself becomes part of the practice."
+>
+> **Dragon:** "So you're romanticizing dead time now?"
+>
+> **Me:** "I'm recognizing that when the kids are grown, I won't remember the promotions I missed to be here. But I'll remember these daily rhythms. The waiting. The driving. The being there for them. Every. Single. Day."
+
 ### Taming Squander: Making Every Day Count
 
 The Squander Dragon loses its power when you realize that "productivity" isn't about external metrics - it's about intentional investment in what matters. You're not wasting time; you're investing it in health, relationships, and mastery that compound over decades.
