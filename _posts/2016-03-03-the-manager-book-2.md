@@ -136,11 +136,10 @@ This post uses the word manager, but many topics apply to all job functions, reg
     - [Space can be successful, just hasn't yet - hold the course](#space-can-be-successful-just-hasnt-yet---hold-the-course)
     - [Space can not be successful, or can't be successful in a reasonable time frame](#space-can-not-be-successful-or-cant-be-successful-in-a-reasonable-time-frame)
     - [How long should you keep a "To Be Pivotted" project](#how-long-should-you-keep-a-to-be-pivotted-project)
-  - [Telling the team about reorg/recharter](#telling-the-team-about-reorg-recharter)
+  - [Telling the team about reorg/recharter](#telling-the-team-about-reorgrecharter)
     - [The FAQ](#the-faq)
   - [How to handle Layoffs](#how-to-handle-layoffs)
     - [What's the best way to execute layoff announcements?](#whats-the-best-way-to-execute-layoff-announcements)
-    - [The FAQ](#the-faq)
 - [Personal Motivations](#personal-motivations)
   - [Why do you find management attractive](#why-do-you-find-management-attractive)
   - [What is your dream job](#what-is-your-dream-job)
@@ -398,7 +397,7 @@ To achieve these principles there are several tools:
 | Career Growth Plan        | 6m to 2y        | 3m                |
 | Pre Write Self Assessment | 1m to 6m        | 4w to 8w          |
 | Frequent Feedback         | Immediate       | As Needed         |
-| Situational Leadership    | Stage Dependant | Stage Dependant   |
+| Situational Leadership    | Stage Dependent | Stage Dependent   |
 
 ### How do you support folks with their career growth plans (CGPs)
 
@@ -432,7 +431,7 @@ Good self assessments are concise, focus on impact, and then how you delivered t
 - _[Clearly measurable impact]_ by _[work you've done yourself and/or with others]._
   - Relevant artifacts, or quote from others validating the claim.
 
-Here are some fictitious examples modelled on my own career:
+Here are some fictitious examples modeled on my own career:
 
 - Improved Azure virtual machine boot time from 12 minutes to 2 minutes at P90 by investigating end to end system behavior, understanding end 2 end system operation, creating and driving agreement to all up goal, and then working with teams to establish budgets, and holding them accountable to delivering them.
 
@@ -519,6 +518,7 @@ My approach, and frequent peep questions.
 - [Amazon's Principle Engineer Roles](https://www.linkedin.com/pulse/principal-engineer-roles-framework-mai-lan-tomsen-bukovec-142df/)
 - Great post on being a [staff + level engineer](https://lethain.com//staff-plus-eng-resources/)
 - Are you clear on [Tech Lead, Architects and Managers](/software-leadership-roles).
+- Great articulation of [How to find the problems vs just solving them](https://www.instagram.com/p/DPAjDxxjUEf/)
 - What are you driving for our larger organization?
 - How are you maximizing our benefit?
 - How do we make sure we compliment each other?
@@ -733,7 +733,7 @@ Other thoughts:
 High order bits:
 
 1. Success is not "communication style", but ability to influence. Influence comes in many forms and mediums.
-1. Some things labelled communication problems, but they are much more serious and need to be handled differently. E.g. Lack of clarity of thought/intellectual horse power and being a jerk.
+1. Some things labeled communication problems, but they are much more serious and need to be handled differently. E.g. Lack of clarity of thought/intellectual horse power and being a jerk.
 1. Focus on strengths is 3x as effective as shoring up weaknesses. Leverage strengths and partner with others to maximize influence.
 
 There are different types of communication problems each needing a different strategy:
@@ -944,7 +944,7 @@ In the rare event you do want to die knowing you spent too much time at work, tr
 
 {%include blob_image.html src="blog/more-hours.svg" %}
 
-Equally important, when folks consider their career, I remind them there are more dimensions to their life, and they should think about their balance. There are some years and halfs where they want to focus on their career, and others where the focus will be family and health.
+Equally important, when folks consider their career, I remind them there are more dimensions to their life, and they should think about their balance. There are some years and halves where they want to focus on their career, and others where the focus will be family and health.
 
 {%include blob_image.html src="blog/career-convo.svg" %}
 
@@ -1632,7 +1632,7 @@ As a result Amazon re-instated its URA ratios.
 
 I've observed two categories of URA, those with a skill gap, and those with consistency gap.
 
-Skill Gaps are usually the result of a mis hire, an over leveled hire, or a premature promotion (the reason promos should be lagging not leading). Skill gaps often manifest as a lack of a core competency, lack of communication skill, lack of collaboration skill, or a quality gap.
+Skill Gaps are usually the result of a mismatch hire, an over leveled hire, or a premature promotion (the reason promos should be lagging not leading). Skill gaps often manifest as a lack of a core competency, lack of communication skill, lack of collaboration skill, or a quality gap.
 
 These problems usually show up quickly, and can be assessed looking at artifacts objectively, and are the easier performance management case. You explain expectations, provide coaching/mentoring/opportunity and if improvement is not seen the PIP will be very straight forward.
 
@@ -2055,9 +2055,9 @@ As always, supporting y'all is always my top priority, so if there's anything yo
 
 #### What's the best way to execute layoff announcements?
 
-When Zuck did a particular round of layoffs, he set a date in 3 months, and said we'll do them on this day. A lot of people complained, and said this is an aweful way to do it.
+When Zuck did a particular round of layoffs, he set a date in 3 months, and said we'll do them on this day. A lot of people complained, and said this is an awful way to do it.
 
-When asked about the mechanics, Zuck said: Yes, this really sucks, I think regradless of how we setup the layoffs up they will suck: my only hope is this setup will sucks less.
+When asked about the mechanics, Zuck said: Yes, this really sucks, I think regardless of how we setup the layoffs up they will suck: my only hope is this setup will sucks less.
 
 I think Reed Hastings (of Nextfix) has an interesting take here. [You want to give people good severance](https://www.instagram.com/reel/DD7Z1ptT_w0/) so they feel great leaving at any time they want instead of hanging around to get paid.
 
