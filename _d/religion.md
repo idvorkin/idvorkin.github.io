@@ -73,6 +73,14 @@ The problem is proof. I don’t see it. With an engineering mindset, I expect ca
 
 _To be fair, there are things I accept as good even though the only evidence is personal and experiential. Bringing joy makes me feel happy, so I keep doing it. Gratitude practices lift my mood, even if I can’t prove why. Not everything needs to be double-blind tested to matter._
 
+An incredibly good discussion on belief (easily applied to religion), hidden in a discussion of pychics between the host and Dan Harris. I highly, highly recommend (and much better then the Search engine on religion for the parts that pertain to belief). [Search Engine - The Psychic Question
+](https://podscan.fm/podcasts/search-engine/episodes/the-psychic-question)
+
+- While I think the tarot people are wrong, they frankly throw much better parties than the fact checkers. So there's that. But then you spend enough time around the believers and sometimes you feel your own killjoyness more acutely, like you're on a diet or fasting for reasons nobody else quite understands. Wouldn't it be nicer to just give in?
+- Open is better than closed, right? Fluid is better than rigid. People who are too sure of themselves tend to be alienating to others.
+- Dan is somebody who tries not to believe in stories just because they're comfortable. He doesn't usually get his aura read. He's not religious. He does meditate, and he's Buddhist enough that I've heard him use words like dharma in casual conversation. The story Dan tells himself, though, is that he came to Buddhism because he followed the evidence for it, which I'm sure is true, although I also think most of us decide what to believe, at least partly socially. It's much easier to surrender to an idea if we admire the people who already hold it, if they seem happy, smart, if they fit our arbitrary thumbnail sketch of a wise person."
+- As Dan and I kept talking over the months, I'd noticed how many stories he had about his teachers, memories of the lessons he'd learned by observing them. It's such a funny thing that happens in the human heart, this decision that you're going to become somebody's student, surrender to their ideas or habits
+
 ### Hypocrisy
 
 The problem is hypocrisy. Religion has plenty of examples of evil done in its name, or leaders exploiting faith for personal gain. To be fair, that isn’t unique to religion — some people are just shitty and will exploit whatever they can.
