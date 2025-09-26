@@ -282,6 +282,7 @@ Specific team members for engine, seat belts, etc
 - [Give away your legos](https://review.firstround.com/give-away-your-legos-and-other-commandments-for-scaling-startups) Dealing with org's scaling
 - [Sue's What does a manager Do, anyways](https://evilplantosavethe.world/2021/01/what-does-a-manager-do-anyway/)
 - [Sue's Manager vs IC](https://evilplantosavethe.world/2021/10/manager-vs-ic/)
+- [How good engineers break the rules](https://www.seangoedecke.com/breaking-rules/)
 
 ### Great books
 
