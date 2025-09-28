@@ -3896,16 +3896,17 @@
         },
         "/produce-consume": {
             "description": "Remember when you finished binge-watching that entire series and felt… empty? Now remember the last time you made something — anything — even if it sucked. Which memory makes you smile? Yeah, me too. We live in the golden age of consumption, where infinite content is one thumb-swipe away, yet we’re more anxious and less satisfied than ever. Here’s the thing: you’re not meant to be a consumer. You’re meant to be a producer.\n\n",
-            "doc_size": 20000,
+            "doc_size": 21000,
             "file_path": "_site/produce-consume.html",
             "incoming_links": [
                 "/gap-year-igor",
                 "/slow"
             ],
-            "last_modified": "2025-08-24T08:45:07-07:00",
+            "last_modified": "2025-09-28T14:11:34.889839",
             "markdown_path": "_d/produce-consume.md",
             "outgoing_links": [
-                "/activation"
+                "/activation",
+                "/activation-energy"
             ],
             "redirect_url": "",
             "title": "The Producer's Paradox: Why Creating Beats Consuming Every Time",
