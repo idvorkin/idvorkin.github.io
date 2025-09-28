@@ -25,7 +25,8 @@ Waiting in line at the grocery store, sitting in an Uber, pooping - in these inv
 
 ### The first responder: boredom
 
-With nothing to do, we experience the often phantom, [mental pain](/mental-pain) of boredom. To use an AI analogy, think of "not boredom" as the reward function in a reinforcement learning system. The "design intent" of the reward function is to ensure we're doing something productive (avoid doing nothing), and that we're growing (avoid monotonous tasks). However, just like ML models can do reward hacking by focusing on hacking the reward function, vs achieving the desired result, so can our brains.
+With nothing to do, we experience the often phantom, [mental pain](/mental-pain) of boredom. How bad is it? In a study [2 of 3 men and 1 in 4 women gave themselves electric shocks instead of just sitting there](https://pmc.ncbi.nlm.nih.gov/articles/PMC4330241/).
+To use an AI analogy, think of "not boredom" as the reward function in a reinforcement learning system. The "design intent" of the reward function is to ensure we're doing something productive (avoid doing nothing), and that we're growing (avoid monotonous tasks). However, just like ML models can do reward hacking by focusing on hacking the reward function, vs achieving the desired result, so can our brains.
 
 When we aren't [proactive](/7h-c1), we hack boredom via distracting parasitic loops. Parasitic loops take no energy, and are even occasionally satisfying, and they're a double whammy negative. They:
 

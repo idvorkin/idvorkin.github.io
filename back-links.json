@@ -1032,7 +1032,6 @@
                 "/d/habits",
                 "/emotions",
                 "/frog",
-                "/idle",
                 "/process-journal",
                 "/regrets",
                 "/siy"
@@ -1716,7 +1715,6 @@
                 "/d/resistance",
                 "/energy-abundance",
                 "/hobby",
-                "/idle",
                 "/life-as-business",
                 "/manager-book",
                 "/mind-at-work",
@@ -2802,13 +2800,13 @@
                 "/happy",
                 "/psychic-weight"
             ],
-            "last_modified": "2025-09-06T12:06:16-07:00",
+            "last_modified": "2025-09-28T09:56:45.599037",
             "markdown_path": "_d/idle-loop.md",
             "outgoing_links": [
+                "/7h-c1",
                 "/addiction",
-                "/be-proactive",
-                "/d/habits",
                 "/frog",
+                "/habits",
                 "/magic",
                 "/mental-pain",
                 "/mind-monsters",
