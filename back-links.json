@@ -1236,10 +1236,10 @@
         },
         "/build-life-you-want": {
             "description": "Happiness isn’t a destination you arrive at—it’s a direction you choose to walk in daily. Build The Life YOU Want by Arthur Brooks and Oprah Winfrey demolishes the myth that happiness is something that happens to you, replacing it with the empowering truth that happiness is something you actively create. This isn’t another feel-good book promising easy answers; it’s a science-backed roadmap for building genuine fulfillment through intentional choices and sustainable practices.\n\n",
-            "doc_size": 28000,
+            "doc_size": 32000,
             "file_path": "_site/build-life-you-want.html",
             "incoming_links": [],
-            "last_modified": "2025-09-28T08:49:28.248818",
+            "last_modified": "2025-09-28T09:51:59.707100",
             "markdown_path": "_d/build-the-life-you-want.md",
             "outgoing_links": [],
             "redirect_url": "",

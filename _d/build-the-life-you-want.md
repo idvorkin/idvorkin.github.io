@@ -14,16 +14,16 @@ Happiness isn't a destination you arrive at—it's a direction you choose to wal
 <!-- vim-markdown-toc-start -->
 
 - [The Book](#the-book)
-  - [Chapter One: Happiness Is Not the Goal, and Unhappiness Is Not the Enemy](#chapter-one-happiness-is-not-the-goal-and-unhappiness-is-not-the-enemy)
-  - [Chapter Two: The Power of Metacognition](#chapter-two-the-power-of-metacognition)
-- [Chapter Three: Choose a Better Emotion](#chapter-three-choose-a-better-emotion)
-- [Chapter Four: Focus Less on Yourself](#chapter-four-focus-less-on-yourself)
-- [Building What Matters](#building-what-matters)
-- [Chapter Five: Build Your Imperfect Family](#chapter-five-build-your-imperfect-family)
-- [Chapter Six: Friendship That Is Deeply Real](#chapter-six-friendship-that-is-deeply-real)
-- [Chapter Seven: Work That Is Love Made Visible](#chapter-seven-work-that-is-love-made-visible)
-- [Chapter Eight: Find Your Amazing Grace](#chapter-eight-find-your-amazing-grace)
-- [Conclusion: Now, Become the Teacher](#conclusion-now-become-the-teacher)
+  - [1. Happiness Is Not the Goal, and Unhappiness Is Not the Enemy](#1-happiness-is-not-the-goal-and-unhappiness-is-not-the-enemy)
+  - [2. The Power of Metacognition](#2-the-power-of-metacognition)
+  - [3. Choose a Better Emotion](#3-choose-a-better-emotion)
+  - [4. Focus Less on Yourself](#4-focus-less-on-yourself)
+  - [Building What Matters](#building-what-matters)
+  - [5. Build Your Imperfect Family](#5-build-your-imperfect-family)
+  - [6. Friendship That Is Deeply Real](#6-friendship-that-is-deeply-real)
+  - [7. Work That Is Love Made Visible](#7-work-that-is-love-made-visible)
+  - [8. Find Your Amazing Grace](#8-find-your-amazing-grace)
+  - [9. Now, Become the Teacher](#9-now-become-the-teacher)
 - [Concepts](#concepts)
   - [Equations of happiness](#equations-of-happiness)
 
@@ -31,7 +31,11 @@ Happiness isn't a destination you arrive at—it's a direction you choose to wal
 <!-- prettier-ignore-end -->
 
 <!--
-☐ AGENT: Excluding intro on purpose. I don't like stories
+AGENT: Here are things we like in these summaries
+- Simple numbered ToC instead of chapter names
+- Clean, scannable structure
+- Focus on actionable insights over stories
+- Consistent formatting
 -->
 
 {%include amazon.html asin="B0C38FCTJC" %}
@@ -39,7 +43,7 @@ Happiness isn't a destination you arrive at—it's a direction you choose to wal
 
 ## The Book
 
-### Chapter One: Happiness Is Not the Goal, and Unhappiness Is Not the Enemy
+### 1. Happiness Is Not the Goal, and Unhappiness Is Not the Enemy
 
 Brooks and Winfrey challenge our fundamental assumptions about happiness. Rather than treating happiness as the ultimate destination and unhappiness as something to avoid at all costs, they reframe both as natural parts of the human experience that serve important purposes.
 
@@ -56,7 +60,7 @@ Brooks and Winfrey challenge our fundamental assumptions about happiness. Rather
 2. **Defining True Happiness** - Understanding that true happiness comprises enjoyment, satisfaction, and purpose, rather than fleeting positive emotions
 3. **Embracing Unhappiness** - Learning to view unhappiness not as a barrier but as part of life's journey that can lead to growth and deeper understanding
 
-### Chapter Two: The Power of Metacognition
+### 2. The Power of Metacognition
 
 **Metacognition**—thinking about thinking—emerges as the foundational skill for emotional management. When you can observe your own mental processes without being completely absorbed by them, you gain the power to choose your response rather than simply reacting.
 
@@ -69,7 +73,7 @@ This chapter teaches you to:
 
 _Note: Specific challenges for this chapter were not detailed in available sources_
 
-## Chapter Three: Choose a Better Emotion
+### 3. Choose a Better Emotion
 
 Building on metacognition, this chapter introduces **emotional substitution**—the practice of consciously choosing more helpful emotional responses to challenging situations. This isn't about suppressing feelings or forcing positivity, but about training your mind to find more constructive ways of processing difficult experiences.
 
@@ -89,7 +93,7 @@ Building on metacognition, this chapter introduces **emotional substitution**—
 
 The chapter emphasizes that emotional substitution is a skill requiring practice and dedication, not just positive thinking.
 
-## Chapter Four: Focus Less on Yourself
+### 4. Focus Less on Yourself
 
 Paradoxically, one of the most effective ways to increase your own happiness is to focus less on it directly. This chapter explores how **self-transcendence**—directing attention toward something greater than yourself—creates deeper fulfillment than self-focused pursuits.
 
@@ -102,11 +106,11 @@ Strategies for healthy self-transcendence:
 
 _Note: Specific challenges for this chapter were not detailed in available sources_
 
-## Building What Matters
+### Building What Matters
 
 This section introduces the four pillars that form the foundation of a meaningful life. Rather than chasing external achievements or temporary pleasures, Brooks and Winfrey argue that lasting satisfaction comes from investing in these core areas.
 
-## Chapter Five: Build Your Imperfect Family
+### 5. Build Your Imperfect Family
 
 Family relationships—whether biological or chosen—provide the bedrock of emotional security. The chapter emphasizes that **healthy families aren't perfect families**; they're families that can navigate conflict constructively and support each other through difficulties.
 
@@ -123,20 +127,70 @@ Key principles for family building:
 - Invest time in shared experiences that build positive memories
 - Practice forgiveness and repair when relationships are strained
 
-## Chapter Six: Friendship That Is Deeply Real
+### 6. Friendship That Is Deeply Real
 
 Unlike family bonds, friendships are relationships we choose, making them uniquely powerful for our wellbeing. The chapter distinguishes between superficial social connections and **deeply real friendships** that provide mutual support, authentic vulnerability, and shared meaning.
 
-Elements of meaningful friendship:
+**Five Challenges Addressed:**
 
-- Prioritizing depth over breadth in relationships
-- Being fully present when spending time together
-- Offering support without trying to "fix" everything
-- Creating traditions and rituals that strengthen bonds over time
+**Challenge 1: Your Personality**
 
-_Note: Specific challenges for this chapter were not detailed in available sources_
+Personality differences can create barriers to friendship formation. **Introverts and extroverts** face different challenges in building connections. Introverts may struggle with the energy demands of socializing, while extroverts might find it difficult to go deep rather than wide in relationships. The key is understanding your personality type and working with it rather than against it.
 
-## Chapter Seven: Work That Is Love Made Visible
+- **For introverts**: Focus on one-on-one connections and deeper conversations
+- **For extroverts**: Balance social breadth with intentional depth in select relationships
+- **Both types**: Recognize that meaningful friendships require investment of time and emotional energy
+
+**Challenge 2: Excessive Usefulness**
+
+Many people fall into **transactional friendships** where relationships are based primarily on what each person can provide rather than genuine connection. This "useful friend" dynamic prevents authentic intimacy from developing.
+
+- Avoid friendships based solely on professional networking or mutual benefit
+- Focus on shared interests, values, and genuine enjoyment of each other's company
+- Be willing to be vulnerable and share struggles, not just successes
+- Invest time in activities that serve no purpose other than connection
+
+**Challenge 3: Attachment to Opinions**
+
+**Strong disagreements** can destroy friendships when people become too attached to being right. The chapter emphasizes that maintaining relationships often requires choosing connection over being correct.
+
+- Practice intellectual humility and openness to other perspectives
+- Focus on understanding rather than winning arguments
+- Separate the person from their opinions
+- Find common ground and shared values beneath surface disagreements
+- Know when to agree to disagree and move forward
+
+**Challenge 4: Magical Thinking**
+
+**Unrealistic expectations** about friendship can lead to disappointment and relationship breakdown. Many people expect friends to be mind readers or to fulfill all their emotional needs.
+
+- Communicate directly rather than expecting friends to guess your needs
+- Accept that friends are imperfect and will sometimes disappoint you
+- Don't expect one friend to fulfill all your social and emotional needs
+- Practice forgiveness and repair when conflicts arise
+- Understand that deep friendship requires ongoing effort from both parties
+
+**Challenge 5: The Virtual World**
+
+**Digital communication** has fundamentally changed how we connect, often substituting convenience for depth. While technology can supplement friendships, it cannot replace face-to-face connection.
+
+- **Prioritize in-person time** whenever possible
+- Use technology to enhance, not replace, real-world connections
+- Be fully present during interactions (put devices away)
+- Create communication hierarchies: face-to-face for important conversations, digital for coordination
+- Recognize that virtual interactions lack the full emotional richness of physical presence
+
+**Building Deeply Real Friendships:**
+
+The chapter emphasizes that meaningful friendship requires **intentional cultivation**:
+
+- **Quality over quantity**: Focus on developing fewer, deeper relationships
+- **Consistent investment**: Regular contact and shared experiences build connection
+- **Mutual vulnerability**: Share both struggles and joys authentically
+- **Presence and attention**: Give friends your full attention during time together
+- **Forgiveness and repair**: Work through conflicts rather than avoiding them
+
+### 7. Work That Is Love Made Visible
 
 Drawing from Khalil Gibran's famous quote, this chapter reframes work as an expression of love rather than merely a means to an end. The authors distinguish between **extrinsic rewards** (money, status, recognition) and **intrinsic rewards** (purpose, mastery, service) that create lasting satisfaction.
 
@@ -149,7 +203,7 @@ Approaches to meaningful work:
 
 _Note: Specific challenges for this chapter were not detailed in available sources_
 
-## Chapter Eight: Find Your Amazing Grace
+### 8. Find Your Amazing Grace
 
 The final pillar explores **faith**—not necessarily religious belief, but any practice that connects you to transcendent meaning. This chapter shows how developing a sense of something greater than yourself provides resilience during difficult times and puts daily struggles into broader perspective.
 
@@ -166,7 +220,7 @@ Ways to cultivate transcendent connection:
 - Study philosophical or spiritual texts that resonate with you
 - Participate in causes or communities that serve the greater good
 
-## Conclusion: Now, Become the Teacher
+### 9. Now, Become the Teacher
 
 The book concludes with a call to action: once you've learned these principles, your responsibility is to share them with others. **Teaching becomes the ultimate expression of what you've learned**—not only does it help others, but it deepens your own understanding and commitment to these practices.
 
