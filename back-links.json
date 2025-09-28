@@ -31,6 +31,7 @@
         "/alexa-charity": "/toysfortots",
         "/anxious": "/anxiety",
         "/architecture": "/design",
+        "/arthur-brooks-oprah": "/build-life-you-want",
         "/atomic-habits": "/d/habits",
         "/augmentedreality": "/ar",
         "/ballooning": "/balloon",
@@ -50,6 +51,7 @@
         "/breathe": "/breath",
         "/breathing": "/breath",
         "/bryan-johnson": "/blueprint",
+        "/build-life": "/build-life-you-want",
         "/care": "/caring",
         "/centenarian": "/last-year",
         "/chilliwack": "/bc",
@@ -117,6 +119,7 @@
         "/habit": "/d/habits",
         "/habits": "/d/habits",
         "/happiness": "/happy",
+        "/happiness-guide": "/build-life-you-want",
         "/healthspan": "/last-year",
         "/heap - potporri - potpori": "/random-idea",
         "/heavy-club": "/kettlebell",
@@ -278,7 +281,8 @@
             "doc_size": 16000,
             "file_path": "_site/22.html",
             "incoming_links": [
-                "/chapters"
+                "/chapters",
+                "/manager-book"
             ],
             "last_modified": "2024-05-05T08:25:00-07:00",
             "markdown_path": "_d/22.md",
@@ -363,6 +367,7 @@
                 "/eulogy",
                 "/first-things-first",
                 "/first-understand",
+                "/gap-year-igor",
                 "/psychic-weight",
                 "/sharpen-the-saw",
                 "/synergize",
@@ -1154,7 +1159,9 @@
             "doc_size": 16000,
             "file_path": "_site/books-that-defined-me.html",
             "incoming_links": [
-                "/being-a-great-manager"
+                "/being-a-great-manager",
+                "/manager-book",
+                "/manager-book-appendix"
             ],
             "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_posts/2015-11-02-books-that-defined-me.md",
@@ -1226,6 +1233,18 @@
             "redirect_url": "",
             "title": "Building a bubble bike",
             "url": "/build-bubble-bike"
+        },
+        "/build-life-you-want": {
+            "description": "Happiness isn’t a destination you arrive at—it’s a direction you choose to walk in daily. Build The Life YOU Want by Arthur Brooks and Oprah Winfrey demolishes the myth that happiness is something that happens to you, replacing it with the empowering truth that happiness is something you actively create. This isn’t another feel-good book promising easy answers; it’s a science-backed roadmap for building genuine fulfillment through intentional choices and sustainable practices.\n\n",
+            "doc_size": 28000,
+            "file_path": "_site/build-life-you-want.html",
+            "incoming_links": [],
+            "last_modified": "2025-09-28T08:49:28.248818",
+            "markdown_path": "_d/build-the-life-you-want.md",
+            "outgoing_links": [],
+            "redirect_url": "",
+            "title": "Build The Life YOU Want",
+            "url": "/build-life-you-want"
         },
         "/cache": {
             "description": "Internal incubations are fun, but I love shipping products. In the case of Microsoft Cache, before I joined, the team had been incubating OneClip, and needed help bringing it to market. My self and a top tier product manager joined the team to help them ship. We immediately got to work, recruiting senior talent, and closing the gaps. We tackled the technical, product market fit, and logistical issues required to bring the product to market.\n\n",
@@ -1699,6 +1718,7 @@
                 "/hobby",
                 "/idle",
                 "/life-as-business",
+                "/manager-book",
                 "/mind-at-work",
                 "/operating-manual",
                 "/physical-health",
@@ -1799,6 +1819,7 @@
                 "/chasing-daylight",
                 "/covid",
                 "/elder",
+                "/gap-year-igor",
                 "/last-year",
                 "/mortality-software",
                 "/psychic-weight"
@@ -1833,6 +1854,7 @@
                 "/coaching",
                 "/gap-year",
                 "/job-hunt-stress",
+                "/manager-book",
                 "/pride",
                 "/random-idea",
                 "/work-satisfaction"
@@ -2096,6 +2118,7 @@
                 "/d/resistance",
                 "/elder",
                 "/gap-year-igor",
+                "/manager-book",
                 "/productive",
                 "/siy"
             ],
@@ -2422,7 +2445,7 @@
         },
         "/gap-year-igor": {
             "description": "Done right, a gap year isn’t a year off; it’s a year on — intentional investment in health, relationships, and mastery while you still have the capital to invest. Think of it as pursuing a PhD in Life Optimization, making deposits that compound for decades. A gap year is one of those uncharted spaces—seductive when discussed longingly over a beer, terrifying when holding a resignation letter outside your boss’s office. Early maps warned: “HC SVNT DRACONES.” Here be dragons. I’m mapping them in real time: the Scarcity Dragon whispering you can’t afford it, the Entropy Dragon promising you’ll you’ll decay without structure, and the Squander Dragon insisting you’ll waste this precious opportunity. But these dragons guard treasure — the chance to invest in what truly matters while you still have the capacity to do so. This is the map of how to tame them.\n\n",
-            "doc_size": 70000,
+            "doc_size": 71000,
             "file_path": "_site/gap-year-igor.html",
             "incoming_links": [
                 "/activation",
@@ -2430,21 +2453,21 @@
                 "/stock-concentration",
                 "/timeoff-2025-08"
             ],
-            "last_modified": "2025-09-24T08:55:35.667955",
+            "last_modified": "2025-09-24T08:56:56-07:00",
             "markdown_path": "_d/igor-gap-year.md",
             "outgoing_links": [
-                "/7habits",
+                "/7-habits",
                 "/activation",
                 "/affirmations",
                 "/chapters",
                 "/chasing-daylight",
                 "/d/resistance",
+                "/death",
                 "/emotional-health",
                 "/end-in-mind",
                 "/gap-year",
                 "/kettlebell",
                 "/money",
-                "/on-being-mortal",
                 "/parkinson",
                 "/physical-health",
                 "/produce-consume",
@@ -2453,10 +2476,10 @@
                 "/sleep",
                 "/stock-concentration",
                 "/structure",
+                "/sustainable-work",
                 "/timeoff",
                 "/tori",
-                "/voices",
-                "/wlb-manifesto"
+                "/voices"
             ],
             "redirect_url": "",
             "title": "Will Igor Take a Gap Year? Wrestling with Dragons and Dreams",
@@ -2892,7 +2915,8 @@
                 "/bmy",
                 "/eulogy",
                 "/job-hunt-stress",
-                "/manager-book"
+                "/manager-book",
+                "/manager-book-appendix"
             ],
             "last_modified": "2025-09-07T05:53:44-07:00",
             "markdown_path": "_posts/2018-06-7-my-perfect-job.md",
@@ -3139,25 +3163,24 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-09-26T09:19:49.566021",
+            "last_modified": "2025-09-26T09:25:27-07:00",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
             "outgoing_links": [
-                "/7h-c2",
-                "/90-days",
+                "/22",
                 "/90days",
                 "/being-a-great-manager",
-                "/books",
-                "/coach",
+                "/books-that-defined-me",
                 "/coaching",
                 "/coe",
                 "/comp",
-                "/decide",
+                "/d/habits",
+                "/decisive",
                 "/dip",
-                "/dsat",
-                "/habits",
+                "/end-in-mind",
                 "/job",
                 "/job-hunt-stress",
                 "/manager-book-appendix",
+                "/ml",
                 "/moments-at-work",
                 "/overload",
                 "/pride",
@@ -3168,11 +3191,10 @@
                 "/static/idvorkin-linked-in-feedback-lastest.pdf",
                 "/strategy",
                 "/td/cloud-first-applications",
-                "/td/machine-learning",
                 "/testing",
-                "/twentytwo",
                 "/what-makes-a-leader",
-                "/write"
+                "/work-satisfaction",
+                "/writing"
             ],
             "redirect_url": "",
             "title": "How to EM: Be the manager everyone wants",
@@ -3186,13 +3208,13 @@
                 "/manager-book",
                 "/operating-manual"
             ],
-            "last_modified": "2025-09-26T09:00:02.789900",
+            "last_modified": "2025-09-26T09:00:23-07:00",
             "markdown_path": "_d/manager-book-appendix.md",
             "outgoing_links": [
                 "/amazon",
-                "/books",
-                "/dream-job",
+                "/books-that-defined-me",
                 "/facebook",
+                "/job",
                 "/manager-book",
                 "/parkinson",
                 "/writing"
@@ -3346,6 +3368,7 @@
             "file_path": "_site/ml.html",
             "incoming_links": [
                 "/ai",
+                "/manager-book",
                 "/td/stats"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -4132,10 +4155,10 @@
         },
         "/religion": {
             "description": "I did my Bar Mitzvah at the Wailing Wall in Isreal — the holiest place in Judaism. We flew there as a family, and I still remember stepping off the plane and feeling an intense warmth. I turned to my sister and whispered, “I can feel God.” She rolled her eyes and said, “That’s not God. That’s forty degrees Celsius.”\n\n",
-            "doc_size": 22000,
+            "doc_size": 24000,
             "file_path": "_site/religion.html",
             "incoming_links": [],
-            "last_modified": "2025-09-26T09:42:56.173384",
+            "last_modified": "2025-09-26T10:25:24-07:00",
             "markdown_path": "_d/religion.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -4600,6 +4623,7 @@
                 "/balance",
                 "/being-a-great-manager",
                 "/depression",
+                "/gap-year-igor",
                 "/overload",
                 "/regrets",
                 "/retire",
@@ -5761,6 +5785,7 @@
             "doc_size": 27000,
             "file_path": "_site/work-satisfaction.html",
             "incoming_links": [
+                "/manager-book",
                 "/mind-at-work",
                 "/retire"
             ],
@@ -5811,6 +5836,7 @@
                 "/amazon",
                 "/chow",
                 "/enable",
+                "/manager-book",
                 "/manager-book-appendix",
                 "/operating-manual"
             ],
