@@ -1,0 +1,350 @@
+{% comment %}
+Generic 2x2 Quadrant Matrix Component
+
+Parameters:
+- title: Main title for the matrix
+- subtitle: Optional subtitle
+- x_label: Label for X axis (horizontal)
+- y_label: Label for Y axis (vertical)
+- x_low: Label for low end of X axis
+- x_high: Label for high end of X axis
+- y_low: Label for low end of Y axis
+- y_high: Label for high end of Y axis
+
+Quadrants (clockwise from top-right):
+- q1_name: Top-right quadrant name
+- q1_subtitle: Top-right quadrant subtitle
+- q1_traits: Top-right quadrant traits (use <br> for line breaks)
+- q1_color: Top-right quadrant background color (hex or rgba)
+
+- q2_name: Top-left quadrant name
+- q2_subtitle: Top-left quadrant subtitle
+- q2_traits: Top-left quadrant traits
+- q2_color: Top-left quadrant background color
+
+- q3_name: Bottom-left quadrant name
+- q3_subtitle: Bottom-left quadrant subtitle
+- q3_traits: Bottom-left quadrant traits
+- q3_color: Bottom-left quadrant background color
+
+- q4_name: Bottom-right quadrant name
+- q4_subtitle: Bottom-right quadrant subtitle
+- q4_traits: Bottom-right quadrant traits
+- q4_color: Bottom-right quadrant background color
+
+Example usage:
+{% include quadrant-matrix.html
+    title="Arthur Brooks' PANAS Personality Types"
+    subtitle="Based on the Positive and Negative Affect Schedule"
+    x_label="Positive Affect →"
+    y_label="Negative Affect →"
+    x_low="Low" x_high="High"
+    y_low="Low" y_high="High"
+    q1_name="MAD SCIENTIST"
+    q1_subtitle="Creative Intensity"
+    q1_traits="Feels deeply<br>Passionate<br>Ride the waves"
+    q1_color="rgba(255, 224, 224, 0.5)"
+    q2_name="JUDGE"
+    q2_subtitle="Critical Thinker"
+    q2_traits="Spots problems<br>High standards<br>Practice gratitude"
+    q2_color="rgba(230, 230, 250, 0.5)"
+    q3_name="POET"
+    q3_subtitle="Calm Observer"
+    q3_traits="Steady emotions<br>Zen-like presence<br>Cultivate excitement"
+    q3_color="rgba(232, 244, 234, 0.5)"
+    q4_name="CHEERLEADER"
+    q4_subtitle="Natural Optimist"
+    q4_traits="Spreads joy<br>Sees bright side<br>Watch for warnings"
+    q4_color="rgba(255, 229, 180, 0.5)"
+%}
+{% endcomment %}
+
+<style>
+.quadrant-matrix {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 2em auto;
+    aspect-ratio: 1;
+    background: white;
+    border: 2px solid #333;
+    border-radius: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.quadrant-matrix-title {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.quadrant-matrix-subtitle {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 0.9em;
+    font-style: italic;
+    color: #666;
+}
+
+.quadrant-matrix::before,
+.quadrant-matrix::after {
+    content: '';
+    position: absolute;
+    background: #666;
+}
+
+.quadrant-matrix::before {
+    /* Horizontal line */
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    transform: translateY(-50%);
+}
+
+.quadrant-matrix::after {
+    /* Vertical line */
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    transform: translateX(-50%);
+}
+
+.matrix-quadrant {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.matrix-quadrant.q1 {
+    top: 0;
+    right: 0;
+}
+
+.matrix-quadrant.q2 {
+    top: 0;
+    left: 0;
+}
+
+.matrix-quadrant.q3 {
+    bottom: 0;
+    left: 0;
+}
+
+.matrix-quadrant.q4 {
+    bottom: 0;
+    right: 0;
+}
+
+.matrix-type-name {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+    text-align: center;
+}
+
+.matrix-type-subtitle {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #555;
+    margin: 0 0 10px 0;
+}
+
+.matrix-type-traits {
+    font-size: 0.85em;
+    text-align: center;
+    line-height: 1.4;
+    color: #333;
+}
+
+.matrix-axis-label {
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.9em;
+    background: white;
+    padding: 2px 8px;
+    z-index: 10;
+}
+
+.matrix-axis-label.x-axis {
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.matrix-axis-label.y-axis {
+    left: -80px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+}
+
+.matrix-axis-marker {
+    position: absolute;
+    font-size: 0.8em;
+    color: #666;
+}
+
+.matrix-axis-marker.low-x {
+    bottom: -25px;
+    left: 10px;
+}
+
+.matrix-axis-marker.high-x {
+    bottom: -25px;
+    right: 10px;
+}
+
+.matrix-axis-marker.low-y {
+    bottom: 10px;
+    left: -35px;
+}
+
+.matrix-axis-marker.high-y {
+    top: 10px;
+    left: -35px;
+}
+
+/* Arrow indicators */
+.matrix-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.matrix-arrow.x {
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 8px 0 8px 12px;
+    border-color: transparent transparent transparent #666;
+}
+
+.matrix-arrow.y {
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 0 8px 12px 8px;
+    border-color: transparent transparent #666 transparent;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .quadrant-matrix {
+        margin-top: 60px;
+    }
+
+    .matrix-type-name {
+        font-size: 1.1em;
+    }
+
+    .matrix-type-subtitle {
+        font-size: 0.8em;
+    }
+
+    .matrix-type-traits {
+        font-size: 0.75em;
+    }
+
+    .matrix-quadrant {
+        padding: 15px;
+    }
+}
+</style>
+
+<div style="position: relative; margin-top: 60px;">
+    {% if include.title %}
+    <div class="quadrant-matrix-title">{{ include.title }}</div>
+    {% endif %}
+
+    {% if include.subtitle %}
+    <div class="quadrant-matrix-subtitle">{{ include.subtitle }}</div>
+    {% endif %}
+
+    <div class="quadrant-matrix">
+        <!-- Quadrant 1 (Top-Right) -->
+        <div class="matrix-quadrant q1" style="background: {{ include.q1_color | default: 'rgba(255, 224, 224, 0.5)' }};">
+            <div class="matrix-type-name">{{ include.q1_name }}</div>
+            {% if include.q1_subtitle %}
+            <div class="matrix-type-subtitle">{{ include.q1_subtitle }}</div>
+            {% endif %}
+            <div class="matrix-type-traits">{{ include.q1_traits }}</div>
+        </div>
+
+        <!-- Quadrant 2 (Top-Left) -->
+        <div class="matrix-quadrant q2" style="background: {{ include.q2_color | default: 'rgba(230, 230, 250, 0.5)' }};">
+            <div class="matrix-type-name">{{ include.q2_name }}</div>
+            {% if include.q2_subtitle %}
+            <div class="matrix-type-subtitle">{{ include.q2_subtitle }}</div>
+            {% endif %}
+            <div class="matrix-type-traits">{{ include.q2_traits }}</div>
+        </div>
+
+        <!-- Quadrant 3 (Bottom-Left) -->
+        <div class="matrix-quadrant q3" style="background: {{ include.q3_color | default: 'rgba(232, 244, 234, 0.5)' }};">
+            <div class="matrix-type-name">{{ include.q3_name }}</div>
+            {% if include.q3_subtitle %}
+            <div class="matrix-type-subtitle">{{ include.q3_subtitle }}</div>
+            {% endif %}
+            <div class="matrix-type-traits">{{ include.q3_traits }}</div>
+        </div>
+
+        <!-- Quadrant 4 (Bottom-Right) -->
+        <div class="matrix-quadrant q4" style="background: {{ include.q4_color | default: 'rgba(255, 229, 180, 0.5)' }};">
+            <div class="matrix-type-name">{{ include.q4_name }}</div>
+            {% if include.q4_subtitle %}
+            <div class="matrix-type-subtitle">{{ include.q4_subtitle }}</div>
+            {% endif %}
+            <div class="matrix-type-traits">{{ include.q4_traits }}</div>
+        </div>
+
+        <!-- Axis labels -->
+        {% if include.x_label %}
+        <div class="matrix-axis-label x-axis">{{ include.x_label }}</div>
+        {% endif %}
+
+        {% if include.y_label %}
+        <div class="matrix-axis-label y-axis">{{ include.y_label }}</div>
+        {% endif %}
+
+        <!-- Axis markers -->
+        {% if include.x_low %}
+        <div class="matrix-axis-marker low-x">{{ include.x_low }}</div>
+        {% endif %}
+
+        {% if include.x_high %}
+        <div class="matrix-axis-marker high-x">{{ include.x_high }}</div>
+        {% endif %}
+
+        {% if include.y_low %}
+        <div class="matrix-axis-marker low-y">{{ include.y_low }}</div>
+        {% endif %}
+
+        {% if include.y_high %}
+        <div class="matrix-axis-marker high-y">{{ include.y_high }}</div>
+        {% endif %}
+
+        <!-- Arrows -->
+        {% if include.x_label %}
+        <div class="matrix-arrow x"></div>
+        {% endif %}
+
+        {% if include.y_label %}
+        <div class="matrix-arrow y"></div>
+        {% endif %}
+    </div>
+</div>

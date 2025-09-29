@@ -26,6 +26,8 @@ Happiness isn't a destination you arrive at—it's a direction you choose to wal
   - [9. Now, Become the Teacher](#9-now-become-the-teacher)
 - [Concepts](#concepts)
   - [Equations of happiness](#equations-of-happiness)
+  - [PANAS Personality Types: Understanding Your Emotional Blueprint](#panas-personality-types-understanding-your-emotional-blueprint)
+  - [Note - I'm a mad scientist](#note---im-a-mad-scientist)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -234,4 +236,43 @@ The book concludes with a call to action: once you've learned these principles, 
 
 ### Equations of happiness
 
-add stuff here.
+Brooks presents several key equations that help us understand the mechanics of happiness:
+
+- **Happiness = Enjoyment + Satisfaction + Purpose** - True happiness requires all three components
+- **Satisfaction = What you have ÷ What you want** - Managing desires is as important as achieving goals
+- **Unhappiness = Image - Reality** - The gap between expectations and experience creates suffering
+
+### PANAS Personality Types: Understanding Your Emotional Blueprint
+
+One of Brooks' most practical frameworks is his adaptation of the PANAS (Positive and Negative Affect Schedule) test into four distinct personality types. This model helps you understand your natural emotional tendencies so you can work with them rather than against them.
+
+**The Four Types:**
+
+- **Mad Scientist** (High Positive & High Negative): You experience life in technicolor—intense joy and deep sorrow. Your creativity comes from this emotional intensity, but you need strategies to manage the swings.
+
+- **Cheerleader** (High Positive & Low Negative): Natural optimist who spreads positivity wherever you go. Your challenge is acknowledging problems before they become crises and sitting with difficult emotions when necessary.
+
+- **Judge** (Low Positive & High Negative): Critical thinker who spots problems others miss. You excel at quality control but need to actively cultivate appreciation and positive experiences to balance your natural negativity bias.
+
+- **Poet** (Low Positive & Low Negative): Calm, steady observer with emotional equilibrium. Your zen-like presence is a strength, but you may need to actively seek experiences that spark joy and excitement.
+
+**Why This Matters for Building Your Life:**
+
+Understanding your PANAS type helps you:
+
+- Choose happiness strategies that work with your natural tendencies
+- Stop fighting your emotional nature and start working with it
+- Understand why certain approaches work for others but not for you
+- Build complementary relationships with people who balance your type
+
+Take the [official PANAS quiz](https://www.arthurbrooks.com/quiz/panas) to discover your type, then use this knowledge to tailor the book's strategies to your unique emotional blueprint.
+
+For a deeper dive into this framework with practical strategies for each type, see [PANAS Personality Types](/emotions#panas-personality-types).
+
+### Note - I'm a mad scientist
+
+_This totally resonated, and I realized most of my good friends are judges, folks that are also mad scientist are less enjoyable for me to be around_
+
+Mad Scientists, driven by their awesome or terrible moods, tend to make decisions rashly and spiral up or down. When things are good, they can be overconfident and blind to possible setbacks; when things are bad, they descend into unnecessary misery. They often overpromise on a wide range of issues—from attending a party that they haven’t the time for, to agreeing to an impossible work deadline. Additionally, their high energy (both good and bad) can exhaust friends, family, and work colleagues whose temperaments are more even-keeled.
+
+As a Mad Scientist, your complementary profile is a Judge—people with low positive and high negative affect. Judges can help you address the costs of your affect profile. They slow you down, help you make rational decisions, and are excellent at keeping you in check. Meanwhile, your affect profile can help Judges be a little more carefree and to embrace life's swings.

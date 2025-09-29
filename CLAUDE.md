@@ -108,6 +108,43 @@ jq '.url_info["/gap-year-igor"]' back-links.json
 jq '.url_info | to_entries[] | select(.value.description | ascii_downcase | contains("priority")) | {url: .key, title: .value.title}' back-links.json
 ```
 
+## Blog Visual Components
+
+### Quadrant Matrix (2x2 Grid)
+
+Use the `quadrant-matrix.html` include for any 2x2 grid visualization:
+
+```liquid
+{% include quadrant-matrix.html
+    title="Matrix Title"
+    subtitle="Optional subtitle"
+    x_label="X Axis →" y_label="Y Axis →"
+    x_low="Low" x_high="High"
+    y_low="Low" y_high="High"
+    q1_name="TOP-RIGHT" q1_subtitle="Subtitle" q1_traits="Trait 1<br>Trait 2" q1_color="rgba(255,224,224,0.5)"
+    q2_name="TOP-LEFT" q2_subtitle="Subtitle" q2_traits="Description" q2_color="rgba(230,230,250,0.5)"
+    q3_name="BOTTOM-LEFT" q3_subtitle="Subtitle" q3_traits="Description" q3_color="rgba(232,244,234,0.5)"
+    q4_name="BOTTOM-RIGHT" q4_subtitle="Subtitle" q4_traits="Description" q4_color="rgba(255,229,180,0.5)"
+%}
+```
+
+Common uses: PANAS personalities, Eisenhower matrix, SWOT analysis, risk assessment. Quadrants numbered clockwise from top-right.
+
+## Internal Link Guidelines
+
+**IMPORTANT**: Always use permalinks when linking between blog posts, not redirect URLs:
+
+- ✅ Correct: `[Voices in My Head](/voices)` - uses the permalink
+- ❌ Wrong: `[Voices in My Head](/voices-in-my-head)` - uses a redirect
+
+Run pre-commit before committing to check for broken links:
+
+```bash
+pre-commit run --files <your-files>
+# Or check specific files for link issues:
+./.pre-commit-hooks/check-links.sh <file.md>
+```
+
 ## Code Style Guidelines
 
 - Use TypeScript for all new code with strict typing

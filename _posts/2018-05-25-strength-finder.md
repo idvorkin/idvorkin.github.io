@@ -100,6 +100,12 @@ be sure? What you are sure of is that ideas are thrilling. And on most days this
 
 See [full Strength Finder](/static/StrengthFinderIgor.pdf).
 
+### Bonus: My PANAS Personality Type
+
+I'm a **Mad Scientist** - high on both positive and negative affect. This means I experience emotions intensely across the full spectrum. When I'm up, I'm REALLY up. When I'm down, I'm REALLY down. It's both a superpower and a challenge. The creativity and passion are amazing, but I need to actively manage the emotional rollercoaster.
+
+See more about [PANAS Personality Types](/emotions#panas-personality-types) and take the [test yourself](https://www.arthurbrooks.com/quiz/panas).
+
 ### Bonus: My Enneagram (Any-O-Gram)
 
 | Enneagram | Type              | Score |

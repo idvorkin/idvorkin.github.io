@@ -1032,9 +1032,9 @@
                 "/d/habits",
                 "/emotions",
                 "/frog",
+                "/idle",
                 "/process-journal",
-                "/regrets",
-                "/siy"
+                "/regrets"
             ],
             "last_modified": "2025-04-02T22:07:54-07:00",
             "markdown_path": "_d/7h-c1.md",
@@ -1235,12 +1235,14 @@
         },
         "/build-life-you-want": {
             "description": "Happiness isn’t a destination you arrive at—it’s a direction you choose to walk in daily. Build The Life YOU Want by Arthur Brooks and Oprah Winfrey demolishes the myth that happiness is something that happens to you, replacing it with the empowering truth that happiness is something you actively create. This isn’t another feel-good book promising easy answers; it’s a science-backed roadmap for building genuine fulfillment through intentional choices and sustainable practices.\n\n",
-            "doc_size": 32000,
+            "doc_size": 36000,
             "file_path": "_site/build-life-you-want.html",
             "incoming_links": [],
-            "last_modified": "2025-09-28T09:51:59.707100",
+            "last_modified": "2025-09-29T10:06:52.127245",
             "markdown_path": "_d/build-the-life-you-want.md",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/emotions"
+            ],
             "redirect_url": "",
             "title": "Build The Life YOU Want",
             "url": "/build-life-you-want"
@@ -1715,6 +1717,7 @@
                 "/d/resistance",
                 "/energy-abundance",
                 "/hobby",
+                "/idle",
                 "/life-as-business",
                 "/manager-book",
                 "/mind-at-work",
@@ -2062,12 +2065,15 @@
         },
         "/emotions": {
             "description": "Ever notice how emotions are like that one friend who shows up uninvited and fucks up your perfectly planned party? Sometimes they bring cake and make everything awesome, other times they’re drunk and knocking over your carefully arranged furniture while screaming “YOLO!” Well, here’s your guide to that emotional party crasher living rent-free in your head, because let’s face it - they’re not moving out anytime soon.\n\n",
-            "doc_size": 16000,
+            "doc_size": 25000,
             "file_path": "_site/emotions.html",
             "incoming_links": [
-                "/slow"
+                "/build-life-you-want",
+                "/siy",
+                "/slow",
+                "/strengths"
             ],
-            "last_modified": "2024-12-25T17:59:13-08:00",
+            "last_modified": "2025-09-29T10:06:52.127245",
             "markdown_path": "_d/emotions.md",
             "outgoing_links": [
                 "/anger",
@@ -2077,7 +2083,9 @@
                 "/joy",
                 "/regrets",
                 "/shame",
-                "/sublime"
+                "/siy",
+                "/sublime",
+                "/voices"
             ],
             "redirect_url": "",
             "title": "Emotions",
@@ -2117,8 +2125,7 @@
                 "/elder",
                 "/gap-year-igor",
                 "/manager-book",
-                "/productive",
-                "/siy"
+                "/productive"
             ],
             "last_modified": "2025-05-12T09:24:30-07:00",
             "markdown_path": "_d/7h-c2.md",
@@ -2800,13 +2807,13 @@
                 "/happy",
                 "/psychic-weight"
             ],
-            "last_modified": "2025-09-28T09:56:45.599037",
+            "last_modified": "2025-09-28T10:02:40-07:00",
             "markdown_path": "_d/idle-loop.md",
             "outgoing_links": [
-                "/7h-c1",
                 "/addiction",
+                "/be-proactive",
+                "/d/habits",
                 "/frog",
-                "/habits",
                 "/magic",
                 "/mental-pain",
                 "/mind-monsters",
@@ -3345,8 +3352,7 @@
                 "/being-a-great-manager",
                 "/idle",
                 "/psychic-shadows",
-                "/psychic-weight",
-                "/siy"
+                "/psychic-weight"
             ],
             "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_d/2015-11-11-mind-monsters.md",
@@ -3902,11 +3908,10 @@
                 "/gap-year-igor",
                 "/slow"
             ],
-            "last_modified": "2025-09-28T14:11:34.889839",
+            "last_modified": "2025-09-28T14:14:56-07:00",
             "markdown_path": "_d/produce-consume.md",
             "outgoing_links": [
-                "/activation",
-                "/activation-energy"
+                "/activation"
             ],
             "redirect_url": "",
             "title": "The Producer's Paradox: Why Creating Beats Consuming Every Time",
@@ -4362,6 +4367,7 @@
                 "/curious",
                 "/depression",
                 "/emotional-health",
+                "/emotions",
                 "/eulogy",
                 "/first-understand",
                 "/gap-year-igor",
@@ -4375,15 +4381,16 @@
                 "/timeoff",
                 "/timeoff-2020-03"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2025-09-29T10:06:38.506393",
             "markdown_path": "_d/siy.md",
             "outgoing_links": [
-                "/be-proactive",
+                "/7h-c1",
+                "/7h-c2",
                 "/emotional-health",
-                "/end-in-mind",
+                "/emotions",
                 "/happy",
                 "/ig66/685",
-                "/mind-monsters",
+                "/monsters",
                 "/psychic-shadows",
                 "/sublime",
                 "/what-makes-a-leader"
@@ -4555,9 +4562,10 @@
             "incoming_links": [
                 "/operating-manual"
             ],
-            "last_modified": "2025-08-22T10:48:49-07:00",
+            "last_modified": "2025-09-29T10:06:38.506393",
             "markdown_path": "_posts/2018-05-25-strength-finder.md",
             "outgoing_links": [
+                "/emotions",
                 "/static/StrengthFinderIgor.pdf",
                 "/static/igor-enneagram.pdf"
             ],
@@ -5672,6 +5680,7 @@
                 "/blueprint",
                 "/depression",
                 "/emotional-health",
+                "/emotions",
                 "/gap-year-igor",
                 "/mind-monsters",
                 "/operating-manual"

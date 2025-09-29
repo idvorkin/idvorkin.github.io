@@ -62,6 +62,7 @@ _Even engineers can use empathy_
 - Mindfulness is THE WAY to build those foundational skills.
 - Once have the mindfulness can use to build the components of EI.
 - Easy and Easier Mindfulness Methods. **Easy** follow the breath. **Easier** have no thoughts.
+- For a complementary personality framework, see [PANAS Personality Types](/emotions#panas-personality-types) - knowing if you're a Mad Scientist, Cheerleader, Judge, or Poet can inform your EI practice.
 
 ### 2) Theory and practice of mindfulness
 
