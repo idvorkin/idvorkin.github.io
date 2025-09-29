@@ -77,35 +77,30 @@ You're not meant to be "on" all the time. Even your heart — that tireless work
 
 Your energy state isn't just high or low — it's a combination of arousal (energy level) and valence (pleasure). Understanding where you are on this map helps you recognize when you need to shift states:
 
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': { 'quadrant1Fill': '#f0f0f0', 'quadrant2Fill': '#f0f0f0', 'quadrant3Fill': '#f0f0f0', 'quadrant4Fill': '#e8f5e9', 'quadrant1TextFill': '#999999', 'quadrant2TextFill': '#999999', 'quadrant3TextFill': '#999999', 'quadrant4TextFill': '#2e7d32'}}}%%
-quadrantChart
-  x-axis "Low Pleasure" --> "High Pleasure"
-  y-axis Low Arousal  --> "High Arousal"
-  quadrant-1 "Euphoria"
-  quadrant-2 "Agitation"
-  quadrant-3 "Melancholy"
-  quadrant-4 "✨ PNS Zone ✨"
-  "Joy": [0.8, 0.8]
-  "Thrill": [0.9, 0.9]
-  "Delight": [0.7, 0.7]
-  "Excitement": [0.85, 0.85]
-  "Anger": [0.2, 0.8]
-  "Anxiety": [0.1, 0.9]
-  "Stress": [0.15, 0.75]
-  "Frustration": [0.25, 0.85]
-  "Sadness": [0.1, 0.1]
-  "Depression": [0.05, 0.2]
-  "Boredom": [0.2, 0.2]
-  "Despair": [0.15, 0.15]
-  "Contentment": [0.7, 0.2]
-  "Relaxation": [0.8, 0.1]
-  "Peace": [0.75, 0.15]
-  "Satisfaction": [0.65, 0.25]
-  "Calm": [0.6, 0.3]
-  "Tranquility": [0.85, 0.2]
-  "Serenity": [0.9, 0.15]
-```
+{% include quadrant-matrix.html
+    title="Energy State Map"
+    subtitle="Finding your sustainable positive states"
+    x_label="Pleasure →"
+    y_label="Arousal →"
+    x_low="Low" x_high="High"
+    y_low="Low" y_high="High"
+    q1_name="EUPHORIA"
+    q1_subtitle="High Arousal + High Pleasure"
+    q1_traits="Joy<br>Thrill<br>Delight<br>Excitement"
+    q1_color="rgba(240,240,240,0.5)"
+    q2_name="AGITATION"
+    q2_subtitle="High Arousal + Low Pleasure"
+    q2_traits="Anger<br>Anxiety<br>Stress<br>Frustration"
+    q2_color="rgba(240,240,240,0.5)"
+    q3_name="MELANCHOLY"
+    q3_subtitle="Low Arousal + Low Pleasure"
+    q3_traits="Sadness<br>Depression<br>Boredom<br>Despair"
+    q3_color="rgba(240,240,240,0.5)"
+    q4_name="✨ PNS ZONE ✨"
+    q4_subtitle="Low Arousal + High Pleasure"
+    q4_traits="Contentment<br>Relaxation<br>Peace<br>Tranquility<br>Calm<br>Serenity"
+    q4_color="rgba(232,245,233,0.8)"
+%}
 
 This "PNS Zone" — the **low arousal, high pleasure** quadrant — is where your parasympathetic nervous system thrives. These are the most sustainable positive states: contentment, relaxation, peace, tranquility.
 

@@ -104,36 +104,30 @@ We all want to make the most of our lives. While not every breathing moment shou
 
 ## Work Satisfaction Matrix
 
-```mermaid
-%%{init: {'theme':'forest', 'themeVariables': { 'quadrant1Fill': '#fff2e6', 'quadrant2Fill': '#ffeeee', 'quadrant3Fill': '#fff9e6', 'quadrant4Fill': '#eef7ee', 'quadrant1TextFill': '#000000', 'quadrant2TextFill': '#000000', 'quadrant3TextFill': '#000000', 'quadrant4TextFill': '#000000'}}}%%
-quadrantChart
-    x-axis Low SAT --> High SAT
-    y-axis Low DSAT --> High DSAT
-    quadrant-1 Stressed & Amazing
-    quadrant-2 Time for Change
-    quadrant-3 Analysis Required
-    quadrant-4 You've Arrived
-
-    Startup Launch: [0.8, 0.9]
-    Product Crunch: [0.7, 0.8]
-    Promotion Pressure: [0.9, 0.7]
-    Team Conflict: [0.75, 0.85]
-
-    Toxic Boss: [0.2, 0.8]
-    Burnout Mode: [0.1, 0.9]
-    Skills Mismatch: [0.3, 0.7]
-    Company Dysfunction: [0.15, 0.75]
-
-    Comfortable Routine: [0.3, 0.2]
-    Stable but Bored: [0.2, 0.3]
-    Good Team Meh Work: [0.35, 0.15]
-    Golden Handcuffs: [0.25, 0.25]
-
-    Dream Job: [0.9, 0.1]
-    Flow State Daily: [0.85, 0.05]
-    Perfect Team Fit: [0.8, 0.2]
-    Growth Opportunity: [0.95, 0.15]
-```
+{% include quadrant-matrix.html
+    title="Work Satisfaction Matrix"
+    subtitle="Finding balance between satisfaction and dissatisfaction"
+    x_label="Satisfaction (SAT) →"
+    y_label="Dissatisfaction (DSAT) →"
+    x_low="Low" x_high="High"
+    y_low="Low" y_high="High"
+    q1_name="STRESSED & AMAZING"
+    q1_subtitle="High SAT + High DSAT"
+    q1_traits="Startup launch<br>Product crunch<br>Promotion pressure<br>Team conflict"
+    q1_color="rgba(255,242,230,0.7)"
+    q2_name="TIME FOR CHANGE"
+    q2_subtitle="Low SAT + High DSAT"
+    q2_traits="Toxic boss<br>Burnout mode<br>Skills mismatch<br>Company dysfunction"
+    q2_color="rgba(255,238,238,0.7)"
+    q3_name="ANALYSIS REQUIRED"
+    q3_subtitle="Low SAT + Low DSAT"
+    q3_traits="Comfortable routine<br>Stable but bored<br>Good team, meh work<br>Golden handcuffs"
+    q3_color="rgba(255,249,230,0.7)"
+    q4_name="YOU'VE ARRIVED"
+    q4_subtitle="High SAT + Low DSAT"
+    q4_traits="Dream job<br>Flow state daily<br>Perfect team fit<br>Growth opportunity"
+    q4_color="rgba(238,247,238,0.7)"
+%}
 
 ### High SAT and Low DSAT - You've Arrived
 

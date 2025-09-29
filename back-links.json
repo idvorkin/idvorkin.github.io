@@ -364,7 +364,6 @@
                 "/depression",
                 "/end-in-mind",
                 "/eulogy",
-                "/first-things-first",
                 "/first-understand",
                 "/gap-year-igor",
                 "/psychic-weight",
@@ -1722,7 +1721,6 @@
                 "/productive",
                 "/psychic-weight",
                 "/sharpen-the-saw",
-                "/slow",
                 "/switch"
             ],
             "last_modified": "2025-08-13T07:43:13-07:00",
@@ -1754,10 +1752,8 @@
                 "/activation",
                 "/books-that-defined-me",
                 "/enemy",
-                "/energy",
                 "/energy-abundance",
                 "/fail",
-                "/first-things-first",
                 "/frog",
                 "/gap-year",
                 "/gap-year-igor",
@@ -1766,7 +1762,6 @@
                 "/productive",
                 "/psychic-shadows",
                 "/psychic-weight",
-                "/slow",
                 "/timeoff"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -1976,8 +1971,7 @@
                 "/end-in-mind",
                 "/gtd",
                 "/manager-book",
-                "/parkinson",
-                "/work-satisfaction"
+                "/parkinson"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/2017-11-12-thedip.md",
@@ -2155,7 +2149,7 @@
         },
         "/energy": {
             "description": "We often say we don’t have time, but usually we mean we don’t have energy. That’s great news because time is finite, and monotonically decreasing. Energy, by contrast, is dynamic. Activities and experiences can create and destroy energy. What’s amazing to me is how going to the gym can be energy positive.\n\n",
-            "doc_size": 19000,
+            "doc_size": 24000,
             "file_path": "_site/energy.html",
             "incoming_links": [
                 "/balance",
@@ -2165,19 +2159,19 @@
                 "/slow",
                 "/timeoff"
             ],
-            "last_modified": "2025-08-24T10:29:13-07:00",
+            "last_modified": "2025-09-29T10:56:27.600457",
             "markdown_path": "_d/energy.md",
             "outgoing_links": [
                 "/activation",
-                "/d/resistance",
                 "/joy",
                 "/mania",
                 "/mood",
                 "/operating-manual",
                 "/productive",
+                "/resistance",
                 "/sleep",
                 "/slow",
-                "/timeoff"
+                "/time-off"
             ],
             "redirect_url": "",
             "title": "Control your Energy",
@@ -2218,7 +2212,6 @@
                 "/books-that-defined-me",
                 "/elder",
                 "/end-in-mind",
-                "/first-things-first",
                 "/frog",
                 "/gtd",
                 "/overload",
@@ -2325,7 +2318,7 @@
         },
         "/first-things-first": {
             "description": "The key to effective management, is allocating energy through the lens of importance rather than urgency. E.g, ask yourself what one thing could you do that if you did on a regular basis, would make a tremendous positive difference in your life? Lemme guess, it’s important, but not urgent so you’re not doing it. These are my insights based on the 7 habits Chapter 3.\n\n",
-            "doc_size": 23000,
+            "doc_size": 28000,
             "file_path": "_site/first-things-first.html",
             "incoming_links": [
                 "/4dx",
@@ -2335,16 +2328,16 @@
                 "/delegate",
                 "/frog"
             ],
-            "last_modified": "2025-07-20T19:26:41-07:00",
+            "last_modified": "2025-09-29T10:56:27.600457",
             "markdown_path": "_d/7h-c3.md",
             "outgoing_links": [
-                "/7-habits",
+                "/7h",
                 "/addiction",
-                "/d/resistance",
                 "/delegate",
-                "/essentialism",
+                "/essential",
                 "/frog",
                 "/gtd",
+                "/resistance",
                 "/switch",
                 "/upstream"
             ],
@@ -2363,8 +2356,7 @@
                 "/class-act",
                 "/curious",
                 "/negotiate",
-                "/sell",
-                "/work-satisfaction"
+                "/sell"
             ],
             "last_modified": "2021-10-30T10:02:27-07:00",
             "markdown_path": "_d/7h-c5.md",
@@ -3543,8 +3535,7 @@
                 "/productive",
                 "/regrets",
                 "/sell",
-                "/synergize",
-                "/work-satisfaction"
+                "/synergize"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/gty.md",
@@ -4442,7 +4433,7 @@
         },
         "/slow": {
             "description": "Fight or flight, the sympathetic nervous system, gets all the attention, but its twin sister “Rest and Digest” or the parasympathetic nervous system is equally important. These are the two divisions of the Autonomic Nervous system — the stuff that operates without conscious control. While everyone’s obsessed with productivity and hustle, your body’s crying out for balance. Here’s the thing: you can’t sprint a marathon, and life’s definitely a marathon.\n\n",
-            "doc_size": 29000,
+            "doc_size": 34000,
             "file_path": "_site/slow.html",
             "incoming_links": [
                 "/anxiety",
@@ -4450,17 +4441,17 @@
                 "/energy",
                 "/mood"
             ],
-            "last_modified": "2025-08-25T08:36:03-07:00",
+            "last_modified": "2025-09-29T10:56:27.600457",
             "markdown_path": "_d/slow.md",
             "outgoing_links": [
                 "/activation",
                 "/anxiety",
                 "/balance",
-                "/d/habits",
-                "/d/resistance",
                 "/emotions",
                 "/energy",
+                "/habits",
                 "/produce-consume",
+                "/resistance",
                 "/siy"
             ],
             "redirect_url": "",
@@ -5142,7 +5133,6 @@
             "incoming_links": [
                 "/activation",
                 "/balance",
-                "/energy",
                 "/energy-abundance",
                 "/gap-year",
                 "/gap-year-igor",
@@ -5769,8 +5759,7 @@
                 "/negotiate",
                 "/sell",
                 "/synergize",
-                "/voices",
-                "/work-satisfaction"
+                "/voices"
             ],
             "last_modified": "2024-10-05T21:24:07-07:00",
             "markdown_path": "_d/7h-c4.md",
@@ -5783,30 +5772,32 @@
         },
         "/work-satisfaction": {
             "description": "Love your work, and you’ll never work a day in your life. Sounds great, but work ain’t no Caribbean cruise - one you pay for, and the other pays you. Work should be satisfying (SAT). You should be enjoying solving hard problems, getting opportunities to talk with like-minded people, and even being forced to stretch and grow. Work should also cause you dissatisfaction (DSAT). Some days your boss will piss you off, your co-workers will misunderstand you, and you will be forced to do something you don’t want to. Satisfaction is not a lack of dissatisfaction; they are orthogonal experiences. DSAT is what makes you sleep poorly, and SAT is what makes you set your alarm early Monday morning so you can get back to your favorite project, and to hang out with your awesome team.  By understanding our SAT and DSAT, we can change them, and transform hours slogging into time at the fantasy cruise bar.\n\n",
-            "doc_size": 27000,
+            "doc_size": 32000,
             "file_path": "_site/work-satisfaction.html",
             "incoming_links": [
                 "/mind-at-work",
                 "/retire"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2025-09-29T10:56:27.600457",
             "markdown_path": "_d/sat_dsat.md",
             "outgoing_links": [
+                "/7h-c4",
+                "/7h-c5",
                 "/comp",
+                "/decide",
                 "/decisive",
-                "/dip",
                 "/eulogy",
-                "/first-understand",
+                "/gty",
                 "/insecure",
                 "/job-hunt-stress",
                 "/manager-book",
                 "/mental-pain",
                 "/mind-at-work",
-                "/negotiate",
                 "/overload",
                 "/shame",
                 "/sustainable-work",
-                "/win-win"
+                "/the-dip",
+                "/wlb"
             ],
             "redirect_url": "",
             "title": "Satisfaction is not the lack of dissatisfaction",
