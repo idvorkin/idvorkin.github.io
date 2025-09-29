@@ -469,17 +469,57 @@ More details are in my [coaching post](/coaching). Here's a preview:
 
 As people learn new skills they experience a learning curve, which requires different support at different points on the curve. [Situational leadership](https://en.wikipedia.org/wiki/Situational_leadership_theory) describes this in detail, but in a nutshell, while learning new things, people go through this grid from 1 to 4.
 
-| Competent/Confident | Confident                                                   | Scared                                                          |
-| ------------------- | ----------------------------------------------------------- | --------------------------------------------------------------- |
-| Incompetent         | 1. Foolish Novice - Thinks they can do it, but really can't | 2. Novice - Knows they can't do it, and feels bad               |
-| Competent           | 4. Expert - Know they can do it, and they're right          | 3. Journey man - Thinks they can't do it, but actually they can |
+{% include quadrant-matrix.html
+    title="Learning Stages Matrix"
+    subtitle="The journey from novice to expert"
+    x_label="Confidence →"
+    y_label="Competence →"
+    x_low="Scared" x_high="Confident"
+    y_low="Incompetent" y_high="Competent"
+    q1_name="4. EXPERT"
+    q1_subtitle="Competent + Confident"
+    q1_traits="Know they can do it<br>And they're right<br>Ready to teach others"
+    q1_color="rgba(232,244,234,0.5)"
+    q2_name="3. JOURNEYMAN"
+    q2_subtitle="Competent + Scared"
+    q2_traits="Think they can't do it<br>But actually they can<br>Need confidence boost"
+    q2_color="rgba(255,229,180,0.5)"
+    q3_name="2. NOVICE"
+    q3_subtitle="Incompetent + Scared"
+    q3_traits="Know they can't do it<br>Feel bad about it<br>Need encouragement"
+    q3_color="rgba(230,230,250,0.5)"
+    q4_name="1. FOOLISH NOVICE"
+    q4_subtitle="Incompetent + Confident"
+    q4_traits="Think they can do it<br>But really can't<br>Need reality check"
+    q4_color="rgba(255,224,224,0.5)"
+%}
 
 In each of these stages different support is required.
 
-| Competent/Confident | Confident                                      | Scared                                          |
-| ------------------- | ---------------------------------------------- | ----------------------------------------------- |
-| Incompetent         | 1. Instruct and Explain - Tell them what to do | 2. Guide and Encourage - Show them how to do it |
-| Competent           | 4. Empower - Explain Why Not                   | 3. Facilitate - Explain Why.                    |
+{% include quadrant-matrix.html
+    title="Leadership Support Matrix"
+    subtitle="How to support people at each learning stage"
+    x_label="Confidence →"
+    y_label="Competence →"
+    x_low="Scared" x_high="Confident"
+    y_low="Incompetent" y_high="Competent"
+    q1_name="4. EMPOWER"
+    q1_subtitle="For Experts"
+    q1_traits="Explain why not<br>Remove obstacles<br>Give autonomy"
+    q1_color="rgba(232,244,234,0.5)"
+    q2_name="3. FACILITATE"
+    q2_subtitle="For Journeymen"
+    q2_traits="Explain why<br>Build confidence<br>Provide context"
+    q2_color="rgba(255,229,180,0.5)"
+    q3_name="2. GUIDE & ENCOURAGE"
+    q3_subtitle="For Novices"
+    q3_traits="Show them how<br>Provide support<br>Celebrate progress"
+    q3_color="rgba(230,230,250,0.5)"
+    q4_name="1. INSTRUCT & EXPLAIN"
+    q4_subtitle="For Foolish Novices"
+    q4_traits="Tell them what to do<br>Set clear expectations<br>Provide structure"
+    q4_color="rgba(255,224,224,0.5)"
+%}
 
 ### What are the level specific career expectations and growth strategies
 
