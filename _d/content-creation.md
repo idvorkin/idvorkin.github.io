@@ -166,6 +166,8 @@ Having a script transforms your content from rambling to focused. But reading fr
 
 ### Editing
 
+**CapCut** - My go-to editor for mobile content creation. It's a bit wonky to use, but like any other skill you need to build your muscles before you're good at using it. The AI features for captions and editing are excellent once you get the hang of it.
+
 ### Distribution
 
 ## AI Tools
