@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">56.8% </span>
+                <span class="strong">56.27% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>363/639</span>
+                <span class='fraction'>363/645</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">56.8% </span>
+                <span class="strong">56.27% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>363/639</span>
+                <span class='fraction'>363/645</span>
             </div>
         
             
@@ -1247,7 +1247,11 @@
 <a name='L1182'></a><a href='#L1182'>1182</a>
 <a name='L1183'></a><a href='#L1183'>1183</a>
 <a name='L1184'></a><a href='#L1184'>1184</a>
-<a name='L1185'></a><a href='#L1185'>1185</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L1185'></a><a href='#L1185'>1185</a>
+<a name='L1186'></a><a href='#L1186'>1186</a>
+<a name='L1187'></a><a href='#L1187'>1187</a>
+<a name='L1188'></a><a href='#L1188'>1188</a>
+<a name='L1189'></a><a href='#L1189'>1189</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1639,6 +1643,7 @@
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -1688,7 +1693,6 @@
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1796,6 +1800,9 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -1862,6 +1869,8 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -1961,11 +1970,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -2122,6 +2127,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -2470,12 +2478,12 @@ function createCopyLinkIcon(options: CopyLinkOptions): HTMLElement {
   icon.style.transition = "opacity 0.2s ease";
   icon.style.fontSize = "0.8em";
   icon.style.userSelect = "none";
-  
+&nbsp;
   // Add accessibility attributes
-  icon.setAttribute('role', 'button');
-  icon.setAttribute('tabindex', '0');
-  icon.setAttribute('aria-label', 'Share this section');
-  
+  icon.setAttribute("role", "button");
+  icon.setAttribute("tabindex", "0");
+  icon.setAttribute("aria-label", "Share this section");
+&nbsp;
   // iOS-style share icon - box with upward arrow
   icon.innerHTML = `&lt;svg width="16" height="20" viewBox="0 0 16 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;"&gt;
     &lt;!-- Upward arrow --&gt;
@@ -2501,34 +2509,34 @@ function createGitHubIssueIcon(): HTMLElement {
   icon.style.transition = "opacity 0.2s ease";
   icon.style.fontSize = "0.8em";
   icon.style.userSelect = "none";
-  
+&nbsp;
   // Add accessibility attributes
-  icon.setAttribute('role', 'button');
-  icon.setAttribute('tabindex', '0');
-  icon.setAttribute('aria-label', 'Create GitHub issue for this section');
-  
+  icon.setAttribute("role", "button");
+  icon.setAttribute("tabindex", "0");
+  icon.setAttribute("aria-label", "Create GitHub issue for this section");
+&nbsp;
   // Check if Font Awesome is available (more robust detection)
   const hasFontAwesome = !!(
-    document.querySelector('link[href*="font-awesome"]') || 
+    document.querySelector('link[href*="font-awesome"]') ||
     document.querySelector('script[src*="font-awesome"]') ||
-    document.querySelector('.fa, .fab, .fas, .far') ||
+    document.querySelector(".fa, .fab, .fas, .far") ||
     // Check for inline styles that might include Font Awesome
-    Array.from(document.styleSheets).some(sheet =&gt; {
+    Array.from(document.styleSheets).some((sheet) =&gt; {
 <span class="cstat-no" title="statement not covered" >      try {</span>
-<span class="cstat-no" title="statement not covered" >        return sheet.href &amp;&amp; sheet.href.includes('font-awesome');</span>
+<span class="cstat-no" title="statement not covered" >        return sheet.href?.includes("font-awesome");</span>
 <span class="cstat-no" title="statement not covered" >      } catch (e) {</span>
 <span class="cstat-no" title="statement not covered" >        return false; // Cross-origin stylesheets may throw</span>
 <span class="cstat-no" title="statement not covered" >      }</span>
     })
   );
-  
+&nbsp;
   if (hasFontAwesome) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
-<span class="cstat-no" title="statement not covered" >    const faIcon = document.createElement('i');</span>
-<span class="cstat-no" title="statement not covered" >    faIcon.className = 'fab fa-github';</span>
+<span class="cstat-no" title="statement not covered" >    const faIcon = document.createElement("i");</span>
+<span class="cstat-no" title="statement not covered" >    faIcon.className = "fab fa-github";</span>
 <span class="cstat-no" title="statement not covered" >    icon.appendChild(faIcon);</span>
   } else {
     // Fallback to text or emoji
-    icon.textContent = '⚠️';
+    icon.textContent = "⚠️";
   }
 &nbsp;
   return icon;
@@ -2542,74 +2550,74 @@ function createIssuePopup(headerId: string, headerText: string): HTMLElement {
   popup.className = "github-issue-popup";
   popup.style.display = "none";
   popup.id = `github-issue-popup-${headerId}`;
-  
+&nbsp;
   // Create structure safely without innerHTML to prevent XSS
   const content = document.createElement("div");
   content.className = "github-issue-popup-content";
-  
+&nbsp;
   // Header
   const header = document.createElement("div");
   header.className = "github-issue-popup-header";
-  
+&nbsp;
   const h4 = document.createElement("h4");
   h4.textContent = `Report Issue: ${headerText}`; // Safe from XSS
-  
+&nbsp;
   const closeBtn = document.createElement("button");
   closeBtn.className = "github-issue-popup-close";
   closeBtn.title = "Close";
   closeBtn.textContent = "×";
-  
+&nbsp;
   header.appendChild(h4);
   header.appendChild(closeBtn);
-  
+&nbsp;
   // Body
   const body = document.createElement("div");
   body.className = "github-issue-popup-body";
-  
+&nbsp;
   // Title input
   const titleLabel = document.createElement("label");
   titleLabel.setAttribute("for", `issue-title-${headerId}`);
   titleLabel.textContent = "Issue Title:";
-  
+&nbsp;
   const titleInput = document.createElement("input");
   titleInput.type = "text";
   titleInput.id = `issue-title-${headerId}`;
   titleInput.className = "github-issue-title";
   titleInput.placeholder = "Brief title for the issue";
-  
+&nbsp;
   // Description textarea
   const descLabel = document.createElement("label");
   descLabel.setAttribute("for", `issue-comment-${headerId}`);
   descLabel.textContent = "Description:";
-  
+&nbsp;
   const descTextarea = document.createElement("textarea");
   descTextarea.id = `issue-comment-${headerId}`;
   descTextarea.className = "github-issue-comment";
   descTextarea.placeholder = "Describe the issue with this section...";
   descTextarea.rows = 4;
-  
+&nbsp;
   // Buttons
   const buttonsDiv = document.createElement("div");
   buttonsDiv.className = "github-issue-popup-buttons";
-  
+&nbsp;
   const submitBtn = document.createElement("button");
   submitBtn.className = "github-issue-submit";
   submitBtn.textContent = "Create Issue on GitHub";
-  
+&nbsp;
   const cancelBtn = document.createElement("button");
   cancelBtn.className = "github-issue-cancel";
   cancelBtn.textContent = "Cancel";
-  
+&nbsp;
   buttonsDiv.appendChild(submitBtn);
   buttonsDiv.appendChild(cancelBtn);
-  
+&nbsp;
   // Hint
   const hintDiv = document.createElement("div");
   hintDiv.className = "github-issue-popup-hint";
   const small = document.createElement("small");
   small.textContent = "Tip: Press Ctrl+Enter (Cmd+Enter on Mac) to submit";
   hintDiv.appendChild(small);
-  
+&nbsp;
   // Assemble body
   body.appendChild(titleLabel);
   body.appendChild(titleInput);
@@ -2617,12 +2625,12 @@ function createIssuePopup(headerId: string, headerText: string): HTMLElement {
   body.appendChild(descTextarea);
   body.appendChild(buttonsDiv);
   body.appendChild(hintDiv);
-  
+&nbsp;
   // Assemble popup
   content.appendChild(header);
   content.appendChild(body);
   popup.appendChild(content);
-  
+&nbsp;
   return popup;
 }
 &nbsp;
@@ -2631,23 +2639,23 @@ function createIssuePopup(headerId: string, headerText: string): HTMLElement {
  */
 function showIssuePopup(popup: HTMLElement, header: HTMLElement): void {
   // Hide any other open popups
-  document.querySelectorAll(".github-issue-popup").forEach(p =&gt; {
+  document.querySelectorAll(".github-issue-popup").forEach((p) =&gt; {
 <span class="cstat-no" title="statement not covered" >    (p as HTMLElement).style.display = "none";</span>
   });
-  
+&nbsp;
   // Position the popup near the header
   popup.style.display = "block";
   popup.style.position = "absolute";
   popup.style.zIndex = "1000";
-  
+&nbsp;
   // Get header position
   const rect = header.getBoundingClientRect();
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-  
-  popup.style.top = (rect.bottom + scrollTop + 10) + "px";
-  popup.style.left = (rect.left + scrollLeft) + "px";
-  
+&nbsp;
+  popup.style.top = `${rect.bottom + scrollTop + 10}px`;
+  popup.style.left = `${rect.left + scrollLeft}px`;
+&nbsp;
   // Focus on the title input
   const titleInput = popup.querySelector(".github-issue-title") as HTMLInputElement;
   if (titleInput) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
@@ -2704,80 +2712,80 @@ function showCopiedTooltip(element: HTMLElement, duration = 2000): void {
  */
 function buildBreadcrumbFrom(header: HTMLElement | null): string {
   if (!header) return <span class="branch-0 cbranch-no" title="branch not covered" >"";</span>
-  
+&nbsp;
   // Get the page name from URL
 <span class="cstat-no" title="statement not covered" >  const pathname = window.location.pathname;</span>
 <span class="cstat-no" title="statement not covered" >  const pageName = pathname.replace(/^\//, "").replace(/\.html$/, "") || "index";</span>
-  
+&nbsp;
   // Convert page name to readable format (replace hyphens with spaces)
-  const readablePageName = pageName.replace(/-/g, ' ');
-  
+  const readablePageName = pageName.replace(/-/g, " ");
+&nbsp;
   // Build header hierarchy
   const headerHierarchy: string[] = [];
   const tagName = header.tagName;
-  const headerLevel = parseInt(tagName.substring(1)); // Get number from H1, H2, etc.
-  
+  const headerLevel = Number.parseInt(tagName.substring(1)); // Get number from H1, H2, etc.
+&nbsp;
   // Get the current header's text
   const currentHeaderText = Array.from(header.childNodes)
-    .filter(node =&gt; node.nodeType === Node.TEXT_NODE)
-    .map(node =&gt; node.textContent?.trim())
-    .join(' ')
+    .filter((node) =&gt; node.nodeType === Node.TEXT_NODE)
+    .map((node) =&gt; node.textContent?.trim())
+    .join(" ")
     .trim();
-  
+&nbsp;
   // For H2+, find parent headers
   if (headerLevel &gt;= 2) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
     // Look for parent headers by traversing backwards through the DOM
 <span class="cstat-no" title="statement not covered" >    let prevElement = header.previousElementSibling;</span>
 <span class="cstat-no" title="statement not covered" >    const foundHeaders: { level: number; text: string }[] = [];</span>
 <span class="cstat-no" title="statement not covered" >    const seenLevels = new Set&lt;number&gt;();</span>
-    
+&nbsp;
 <span class="cstat-no" title="statement not covered" >    while (prevElement) {</span>
 <span class="cstat-no" title="statement not covered" >      const prevTagName = prevElement.tagName;</span>
-<span class="cstat-no" title="statement not covered" >      if (prevTagName &amp;&amp; prevTagName.match(/^H[1-6]$/)) {</span>
-<span class="cstat-no" title="statement not covered" >        const prevLevel = parseInt(prevTagName.substring(1));</span>
-        
+<span class="cstat-no" title="statement not covered" >      if (prevTagName?.match(/^H[1-6]$/)) {</span>
+<span class="cstat-no" title="statement not covered" >        const prevLevel = Number.parseInt(prevTagName.substring(1));</span>
+&nbsp;
         // Only collect headers that are higher level (lower number) than current
         // and we haven't seen this level yet (to get the most recent parent)
 <span class="cstat-no" title="statement not covered" >        if (prevLevel &lt; headerLevel &amp;&amp; !seenLevels.has(prevLevel)) {</span>
 <span class="cstat-no" title="statement not covered" >          const prevHeaderText = Array.from(prevElement.childNodes)</span>
-<span class="cstat-no" title="statement not covered" >            .filter(node =&gt; node.nodeType === Node.TEXT_NODE)</span>
-<span class="cstat-no" title="statement not covered" >            .map(node =&gt; node.textContent?.trim())</span>
-<span class="cstat-no" title="statement not covered" >            .join(' ')</span>
+<span class="cstat-no" title="statement not covered" >            .filter((node) =&gt; node.nodeType === Node.TEXT_NODE)</span>
+<span class="cstat-no" title="statement not covered" >            .map((node) =&gt; node.textContent?.trim())</span>
+<span class="cstat-no" title="statement not covered" >            .join(" ")</span>
 <span class="cstat-no" title="statement not covered" >            .trim();</span>
-          
+&nbsp;
 <span class="cstat-no" title="statement not covered" >          if (prevHeaderText) {</span>
 <span class="cstat-no" title="statement not covered" >            foundHeaders.push({ level: prevLevel, text: prevHeaderText });</span>
 <span class="cstat-no" title="statement not covered" >            seenLevels.add(prevLevel);</span>
 <span class="cstat-no" title="statement not covered" >          }</span>
-          
+&nbsp;
           // If we found an H1, we can stop (top level)
 <span class="cstat-no" title="statement not covered" >          if (prevLevel === 1) break;</span>
 <span class="cstat-no" title="statement not covered" >        }</span>
 <span class="cstat-no" title="statement not covered" >      }</span>
 <span class="cstat-no" title="statement not covered" >      prevElement = prevElement.previousElementSibling;</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
-    
+&nbsp;
     // Add headers in hierarchical order (H1 &gt; H2 &gt; ...)
 <span class="cstat-no" title="statement not covered" >    foundHeaders.sort((a, b) =&gt; a.level - b.level);</span>
-<span class="cstat-no" title="statement not covered" >    foundHeaders.forEach(h =&gt; headerHierarchy.push(h.text));</span>
+<span class="cstat-no" title="statement not covered" >    foundHeaders.forEach((h) =&gt; headerHierarchy.push(h.text));</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
-  
+&nbsp;
   // Add current header
 <span class="cstat-no" title="statement not covered" >  headerHierarchy.push(currentHeaderText);</span>
-  
+&nbsp;
   // Build the breadcrumb string with better formatting
 <span class="cstat-no" title="statement not covered" >  let breadcrumb = `[${readablePageName}]`;</span>
 <span class="cstat-no" title="statement not covered" >  if (headerHierarchy.length &gt; 0) {</span>
     // Limit to 3 levels max for readability
 <span class="cstat-no" title="statement not covered" >    const limitedHierarchy = headerHierarchy.slice(0, 3);</span>
-<span class="cstat-no" title="statement not covered" >    breadcrumb += `: ${limitedHierarchy.join(' &gt; ')}`;</span>
-    
+<span class="cstat-no" title="statement not covered" >    breadcrumb += `: ${limitedHierarchy.join(" &gt; ")}`;</span>
+&nbsp;
     // Add ellipsis if there are more levels
 <span class="cstat-no" title="statement not covered" >    if (headerHierarchy.length &gt; 3) {</span>
-<span class="cstat-no" title="statement not covered" >      breadcrumb += ' ...';</span>
+<span class="cstat-no" title="statement not covered" >      breadcrumb += " ...";</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
-  
+&nbsp;
 <span class="cstat-no" title="statement not covered" >  return breadcrumb;</span>
 <span class="cstat-no" title="statement not covered" >}</span>
 &nbsp;
@@ -2799,7 +2807,7 @@ function transformUrl(url: string, options: CopyLinkOptions): string {
   const urlObj = new URL(transformedUrl);
   const pathname = urlObj.pathname.replace(/^\//, "").replace(/\.html$/, ""<span class="branch-0 cbranch-no" title="branch not covered" >) || "index";</span>
   const anchor = urlObj.hash.replace("#", "");
-  
+&nbsp;
   // Return path#anchor format for tinyurl
   return anchor ? `${pathname}#${anchor<span class="branch-0 cbranch-no" title="branch not covered" >}` : pathname;</span>
 }
@@ -2811,47 +2819,48 @@ async function shareOrCopyHeaderLink(headerId: string, options: CopyLinkOptions)
   try {
     // Build the URL using tinyurl redirect format
     const currentUrl = window.location.href;
-    const anchorUrl = currentUrl.includes("#"<span class="branch-0 cbranch-no" title="branch not covered" >) </span>
+    const anchorUrl = currentUrl.includes("#"<span class="branch-0 cbranch-no" title="branch not covered" >)</span>
 <span class="cstat-no" title="statement not covered" >      ? currentUrl.replace(/#.*/, `#${headerId}`)</span>
       : `${currentUrl}#${headerId}`;
-    
-    // Transform the URL for tinyurl redirect  
+&nbsp;
+    // Transform the URL for tinyurl redirect
     const transformedUrl = transformUrl(anchorUrl, options);
     const tinyUrl = `https://tinyurl.com/igor-blog/?path=${encodeURIComponent(transformedUrl)}`;
-    
+&nbsp;
     // Get header text for share title (clean it to remove button text)
     const header = document.getElementById(headerId);
     // Get just the text content of the header, excluding child elements
-    const headerText = <span class="branch-0 cbranch-no" title="branch not covered" >header ? </span>
-<span class="cstat-no" title="statement not covered" >      Array.from(header.childNodes)</span>
-<span class="cstat-no" title="statement not covered" >        .filter(node =&gt; node.nodeType === Node.TEXT_NODE)</span>
-<span class="cstat-no" title="statement not covered" >        .map(node =&gt; node.textContent?.trim())</span>
-<span class="cstat-no" title="statement not covered" >        .join(' ')</span>
-        .trim() : "";
+    const headerText = <span class="branch-0 cbranch-no" title="branch not covered" >header</span>
+<span class="cstat-no" title="statement not covered" >      ? Array.from(header.childNodes)</span>
+<span class="cstat-no" title="statement not covered" >          .filter((node) =&gt; node.nodeType === Node.TEXT_NODE)</span>
+<span class="cstat-no" title="statement not covered" >          .map((node) =&gt; node.textContent?.trim())</span>
+<span class="cstat-no" title="statement not covered" >          .join(" ")</span>
+<span class="cstat-no" title="statement not covered" >          .trim()</span>
+      : "";
     const shareTitle = `${headerText} - Igor's Blog`;
-    
+&nbsp;
     // Get preview text for the section
     const previewText = getPreviewText(headerId);
-    
+&nbsp;
     // Build breadcrumb "From" line
     const breadcrumbFrom = buildBreadcrumbFrom(header);
-    
+&nbsp;
     // Create share text with preview
     let shareText = `From: ${breadcrumbFrom} ...`;
     if (previewText) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
 <span class="cstat-no" title="statement not covered" >      shareText = `From: ${breadcrumbFrom} ...\n\n${previewText}`;</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
-    
+&nbsp;
     // Check if this is a mobile device
     const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-    
+&nbsp;
     // Use native share only on mobile devices that support it
     if (navigator.<span class="branch-0 cbranch-no" title="branch not covered" >share &amp;&amp; isMobile) <span class="branch-0 cbranch-no" title="branch not covered" >{</span></span>
 <span class="cstat-no" title="statement not covered" >      try {</span>
 <span class="cstat-no" title="statement not covered" >        await navigator.share({</span>
 <span class="cstat-no" title="statement not covered" >          title: shareTitle,</span>
 <span class="cstat-no" title="statement not covered" >          text: shareText,</span>
-<span class="cstat-no" title="statement not covered" >          url: tinyUrl</span>
+<span class="cstat-no" title="statement not covered" >          url: tinyUrl,</span>
 <span class="cstat-no" title="statement not covered" >        });</span>
 <span class="cstat-no" title="statement not covered" >        console.log(`📱 Shared via native share: ${tinyUrl}`);</span>
 <span class="cstat-no" title="statement not covered" >        return true; // Indicates share was successful</span>
@@ -2860,42 +2869,41 @@ async function shareOrCopyHeaderLink(headerId: string, options: CopyLinkOptions)
 <span class="cstat-no" title="statement not covered" >        console.log("Share cancelled or failed, falling back to clipboard", shareError);</span>
 <span class="cstat-no" title="statement not covered" >      }</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
-    
+&nbsp;
     // For clipboard copy, format with preview text
     let clipboardText = tinyUrl;
     if (previewText) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
       // Format as: From: Title, Preview, URL (similar to social media shares)
 <span class="cstat-no" title="statement not covered" >      clipboardText = `From: ${breadcrumbFrom} ...\n\n${previewText}\n\n${tinyUrl}`;</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
-    
+&nbsp;
     // Fallback to clipboard copy for desktop or if share fails
     await navigator.clipboard.writeText(clipboardText);
     console.log(`📋 Copied to clipboard with preview: ${clipboardText.substring(0, 100)}...`);
     return false; // Indicates copy was used instead of share
-    
   } catch (error) {
     console.error("Failed to share/copy header link:", error);
 &nbsp;
     // Fallback: use textarea method if clipboard API fails
     try {
       const currentUrl = window.location.href;
-      const anchorUrl = currentUrl.includes("#"<span class="branch-0 cbranch-no" title="branch not covered" >) </span>
+      const anchorUrl = currentUrl.includes("#"<span class="branch-0 cbranch-no" title="branch not covered" >)</span>
 <span class="cstat-no" title="statement not covered" >        ? currentUrl.replace(/#.*/, `#${headerId}`)</span>
         : `${currentUrl}#${headerId}`;
-      
+&nbsp;
       const transformedUrl = transformUrl(anchorUrl, options);
       const tinyUrl = `https://tinyurl.com/igor-blog/?path=${encodeURIComponent(transformedUrl)}`;
-      
+&nbsp;
       // Get preview text for fallback
       const header = document.getElementById(headerId);
       const breadcrumbFrom = buildBreadcrumbFrom(header);
       const previewText = getPreviewText(headerId);
-      
+&nbsp;
       let clipboardText = tinyUrl;
       if (previewText) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
 <span class="cstat-no" title="statement not covered" >        clipboardText = `From: ${breadcrumbFrom} ...\n\n${previewText}\n\n${tinyUrl}`;</span>
 <span class="cstat-no" title="statement not covered" >      }</span>
-      
+&nbsp;
       // Use textarea fallback for copying
       const textArea = document.createElement("textarea");
       textArea.value = clipboardText;
@@ -2903,7 +2911,7 @@ async function shareOrCopyHeaderLink(headerId: string, options: CopyLinkOptions)
       textArea.select();
       document.execCommand("copy");
       document.body.removeChild(textArea);
-      
+&nbsp;
       console.log(`📋 Copied with preview (fallback): ${clipboardText.substring(0, 100)}...`);
       return false;
 <span class="branch-0 cbranch-no" title="branch not covered" >    } catch (fallbackError) {</span>
@@ -2947,58 +2955,61 @@ function getOrCreateHeaderId(header: HTMLElement): string {
  */
 <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function getFirstParagraphAfterHeader(header: HTMLElement): string {</span></span>
 <span class="cstat-no" title="statement not covered" >  let nextElement = header.nextElementSibling;</span>
-  
+&nbsp;
   // Look for the first non-empty content before the next header
 <span class="cstat-no" title="statement not covered" >  while (nextElement) {</span>
     // Stop if we hit another header
 <span class="cstat-no" title="statement not covered" >    if (nextElement.tagName.match(/^H[1-6]$/)) {</span>
 <span class="cstat-no" title="statement not covered" >      break;</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
-    
+&nbsp;
     // Check if it's a paragraph with actual content
-<span class="cstat-no" title="statement not covered" >    if (nextElement.tagName === 'P') {</span>
-<span class="cstat-no" title="statement not covered" >      const text = (nextElement.textContent || '').trim();</span>
+<span class="cstat-no" title="statement not covered" >    if (nextElement.tagName === "P") {</span>
+<span class="cstat-no" title="statement not covered" >      const text = (nextElement.textContent || "").trim();</span>
 <span class="cstat-no" title="statement not covered" >      if (text.length &gt; 0) {</span>
         // Found non-empty paragraph - truncate if too long
-<span class="cstat-no" title="statement not covered" >        return text.length &gt; 500 ? text.substring(0, 497) + '...' : text;</span>
+<span class="cstat-no" title="statement not covered" >        return text.length &gt; 500 ? `${text.substring(0, 497)}...` : text;</span>
 <span class="cstat-no" title="statement not covered" >      }</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
-    
+&nbsp;
     // If it's a list (UL or OL), get text from the list items
-<span class="cstat-no" title="statement not covered" >    if (nextElement.tagName === 'UL' || nextElement.tagName === 'OL') {</span>
-<span class="cstat-no" title="statement not covered" >      const listItems = nextElement.querySelectorAll('li');</span>
+<span class="cstat-no" title="statement not covered" >    if (nextElement.tagName === "UL" || nextElement.tagName === "OL") {</span>
+<span class="cstat-no" title="statement not covered" >      const listItems = nextElement.querySelectorAll("li");</span>
 <span class="cstat-no" title="statement not covered" >      const itemTexts: string[] = [];</span>
 <span class="cstat-no" title="statement not covered" >      let totalLength = 0;</span>
-      
+&nbsp;
 <span class="cstat-no" title="statement not covered" >      for (const li of Array.from(listItems)) {</span>
         // Only get direct text content, not nested lists
 <span class="cstat-no" title="statement not covered" >        const text = Array.from(li.childNodes)</span>
-<span class="cstat-no" title="statement not covered" >          .filter(node =&gt; node.nodeType === Node.TEXT_NODE || </span>
-<span class="cstat-no" title="statement not covered" >                         (node.nodeType === Node.ELEMENT_NODE &amp;&amp; </span>
-<span class="cstat-no" title="statement not covered" >                          (node as Element).tagName !== 'UL' &amp;&amp; </span>
-<span class="cstat-no" title="statement not covered" >                          (node as Element).tagName !== 'OL'))</span>
-<span class="cstat-no" title="statement not covered" >          .map(node =&gt; (node.textContent || '').trim())</span>
-<span class="cstat-no" title="statement not covered" >          .join(' ')</span>
+<span class="cstat-no" title="statement not covered" >          .filter(</span>
+<span class="cstat-no" title="statement not covered" >            (node) =&gt;</span>
+<span class="cstat-no" title="statement not covered" >              node.nodeType === Node.TEXT_NODE ||</span>
+<span class="cstat-no" title="statement not covered" >              (node.nodeType === Node.ELEMENT_NODE &amp;&amp;</span>
+<span class="cstat-no" title="statement not covered" >                (node as Element).tagName !== "UL" &amp;&amp;</span>
+<span class="cstat-no" title="statement not covered" >                (node as Element).tagName !== "OL"),</span>
+<span class="cstat-no" title="statement not covered" >          )</span>
+<span class="cstat-no" title="statement not covered" >          .map((node) =&gt; (node.textContent || "").trim())</span>
+<span class="cstat-no" title="statement not covered" >          .join(" ")</span>
 <span class="cstat-no" title="statement not covered" >          .trim();</span>
-        
+&nbsp;
 <span class="cstat-no" title="statement not covered" >        if (text.length &gt; 0) {</span>
 <span class="cstat-no" title="statement not covered" >          itemTexts.push(`• ${text}`);</span>
 <span class="cstat-no" title="statement not covered" >          totalLength += text.length;</span>
 <span class="cstat-no" title="statement not covered" >          if (totalLength &gt; 400) break; // Stop if we have enough text</span>
 <span class="cstat-no" title="statement not covered" >        }</span>
 <span class="cstat-no" title="statement not covered" >      }</span>
-      
+&nbsp;
 <span class="cstat-no" title="statement not covered" >      if (itemTexts.length &gt; 0) {</span>
         // Join with newlines for better formatting
-<span class="cstat-no" title="statement not covered" >        const combinedText = itemTexts.join('\n');</span>
-<span class="cstat-no" title="statement not covered" >        return combinedText.length &gt; 500 ? combinedText.substring(0, 497) + '...' : combinedText;</span>
+<span class="cstat-no" title="statement not covered" >        const combinedText = itemTexts.join("\n");</span>
+<span class="cstat-no" title="statement not covered" >        return combinedText.length &gt; 500 ? `${combinedText.substring(0, 497)}...` : combinedText;</span>
 <span class="cstat-no" title="statement not covered" >      }</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
-    
+&nbsp;
 <span class="cstat-no" title="statement not covered" >    nextElement = nextElement.nextElementSibling;</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
-  
-<span class="cstat-no" title="statement not covered" >  return '';</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  return "";</span>
 <span class="cstat-no" title="statement not covered" >}</span>
 &nbsp;
 /**
@@ -3008,16 +3019,16 @@ function getOrCreateHeaderId(header: HTMLElement): string {
 <span class="cstat-no" title="statement not covered" >  if (text.length &lt;= maxLength) {</span>
 <span class="cstat-no" title="statement not covered" >    return text;</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
-  
+&nbsp;
   // Truncate to maxLength and find the last space
 <span class="cstat-no" title="statement not covered" >  const truncated = text.substring(0, maxLength);</span>
-<span class="cstat-no" title="statement not covered" >  const lastSpace = truncated.lastIndexOf(' ');</span>
-  
+<span class="cstat-no" title="statement not covered" >  const lastSpace = truncated.lastIndexOf(" ");</span>
+&nbsp;
 <span class="cstat-no" title="statement not covered" >  if (lastSpace &gt; 0) {</span>
-<span class="cstat-no" title="statement not covered" >    return truncated.substring(0, lastSpace) + '...';</span>
+<span class="cstat-no" title="statement not covered" >    return `${truncated.substring(0, lastSpace)}...`;</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
-  
-<span class="cstat-no" title="statement not covered" >  return truncated + '...';</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  return `${truncated}...`;</span>
 <span class="cstat-no" title="statement not covered" >}</span>
 &nbsp;
 /**
@@ -3033,129 +3044,127 @@ function getPreviewText(headerId?: string): string {
 <span class="cstat-no" title="statement not covered" >      if (paragraphText) {</span>
 <span class="cstat-no" title="statement not covered" >        return truncateText(paragraphText);</span>
 <span class="cstat-no" title="statement not covered" >      }</span>
-      
+&nbsp;
       // Try to get text from any content elements after the header
 <span class="cstat-no" title="statement not covered" >      let nextElement = header.nextElementSibling;</span>
 <span class="cstat-no" title="statement not covered" >      const textParts: string[] = [];</span>
 <span class="cstat-no" title="statement not covered" >      let charCount = 0;</span>
-      
+&nbsp;
 <span class="cstat-no" title="statement not covered" >      while (nextElement &amp;&amp; charCount &lt; 400) {</span>
         // Stop if we hit another header
 <span class="cstat-no" title="statement not covered" >        if (nextElement.tagName.match(/^H[1-6]$/)) {</span>
 <span class="cstat-no" title="statement not covered" >          break;</span>
 <span class="cstat-no" title="statement not covered" >        }</span>
-        
+&nbsp;
         // Get text from various content elements
-<span class="cstat-no" title="statement not covered" >        if (nextElement.tagName === 'P' || </span>
-<span class="cstat-no" title="statement not covered" >            nextElement.tagName === 'LI' || </span>
-<span class="cstat-no" title="statement not covered" >            nextElement.tagName === 'BLOCKQUOTE' ||</span>
-<span class="cstat-no" title="statement not covered" >            nextElement.tagName === 'DIV') {</span>
-<span class="cstat-no" title="statement not covered" >          const text = (nextElement.textContent || '').trim();</span>
+<span class="cstat-no" title="statement not covered" >        if (</span>
+<span class="cstat-no" title="statement not covered" >          nextElement.tagName === "P" ||</span>
+<span class="cstat-no" title="statement not covered" >          nextElement.tagName === "LI" ||</span>
+<span class="cstat-no" title="statement not covered" >          nextElement.tagName === "BLOCKQUOTE" ||</span>
+<span class="cstat-no" title="statement not covered" >          nextElement.tagName === "DIV"</span>
+<span class="cstat-no" title="statement not covered" >        ) {</span>
+<span class="cstat-no" title="statement not covered" >          const text = (nextElement.textContent || "").trim();</span>
 <span class="cstat-no" title="statement not covered" >          if (text.length &gt; 0) {</span>
 <span class="cstat-no" title="statement not covered" >            textParts.push(text);</span>
 <span class="cstat-no" title="statement not covered" >            charCount += text.length;</span>
 <span class="cstat-no" title="statement not covered" >          }</span>
 <span class="cstat-no" title="statement not covered" >        }</span>
-        
+&nbsp;
 <span class="cstat-no" title="statement not covered" >        nextElement = nextElement.nextElementSibling;</span>
 <span class="cstat-no" title="statement not covered" >      }</span>
-      
+&nbsp;
 <span class="cstat-no" title="statement not covered" >      if (textParts.length &gt; 0) {</span>
-<span class="cstat-no" title="statement not covered" >        return truncateText(textParts.join(' '));</span>
+<span class="cstat-no" title="statement not covered" >        return truncateText(textParts.join(" "));</span>
 <span class="cstat-no" title="statement not covered" >      }</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
   }
-  
+&nbsp;
   // Fallback: try to find preview text from various content areas
   const contentSelectors = [
-    'article',
-    'main',
-    '.content',
-    '.post-content',
-    '.entry-content',
-    '#content-holder',
-    '.content-holder'
+    "article",
+    "main",
+    ".content",
+    ".post-content",
+    ".entry-content",
+    "#content-holder",
+    ".content-holder",
   ];
-  
+&nbsp;
   for (const selector of contentSelectors) {
     const contentArea = document.querySelector(selector);
     if (contentArea) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
       // Find the first paragraph in the content area
-<span class="cstat-no" title="statement not covered" >      const firstParagraph = contentArea.querySelector('p');</span>
+<span class="cstat-no" title="statement not covered" >      const firstParagraph = contentArea.querySelector("p");</span>
 <span class="cstat-no" title="statement not covered" >      if (firstParagraph) {</span>
-<span class="cstat-no" title="statement not covered" >        const text = (firstParagraph.textContent || '').trim();</span>
+<span class="cstat-no" title="statement not covered" >        const text = (firstParagraph.textContent || "").trim();</span>
 <span class="cstat-no" title="statement not covered" >        if (text.length &gt; 0) {</span>
 <span class="cstat-no" title="statement not covered" >          return truncateText(text);</span>
 <span class="cstat-no" title="statement not covered" >        }</span>
 <span class="cstat-no" title="statement not covered" >      }</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
   }
-  
+&nbsp;
   // Last resort: find the first paragraph on the page
-  const firstParagraph = document.querySelector('p');
+  const firstParagraph = document.querySelector("p");
   if (firstParagraph) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
-<span class="cstat-no" title="statement not covered" >    const text = (firstParagraph.textContent || '').trim();</span>
+<span class="cstat-no" title="statement not covered" >    const text = (firstParagraph.textContent || "").trim();</span>
 <span class="cstat-no" title="statement not covered" >    if (text.length &gt; 0) {</span>
 <span class="cstat-no" title="statement not covered" >      return truncateText(text);</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
-  
+&nbsp;
   // If no preview text found, return empty string
-  return '';
+  return "";
 }
 &nbsp;
 /**
  * Creates a GitHub issue URL for a section with optional custom title and description
  */
 <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function createGitHubIssueUrl(</span></span>
-<span class="cstat-no" title="statement not covered" >  headerId: string, </span>
-<span class="cstat-no" title="statement not covered" >  headerText: string, </span>
-<span class="cstat-no" title="statement not covered" >  customTitle?: string, </span>
+<span class="cstat-no" title="statement not covered" >  headerId: string,</span>
+<span class="cstat-no" title="statement not covered" >  headerText: string,</span>
+<span class="cstat-no" title="statement not covered" >  customTitle?: string,</span>
 <span class="cstat-no" title="statement not covered" >  customDescription?: string,</span>
-<span class="cstat-no" title="statement not covered" >  header?: HTMLElement</span>
+<span class="cstat-no" title="statement not covered" >  header?: HTMLElement,</span>
 <span class="cstat-no" title="statement not covered" >): string {</span>
   // Get the current page path from the URL
 <span class="cstat-no" title="statement not covered" >  const pathname = window.location.pathname;</span>
   // Remove leading slash and .html extension if present
 <span class="cstat-no" title="statement not covered" >  const pagePath = pathname.replace(/^\//, "").replace(/\.html$/, "");</span>
-  
+&nbsp;
   // Get the actual source file path from the meta tag (set by Jekyll)
 <span class="cstat-no" title="statement not covered" >  const metaTag = document.querySelector('meta[property="markdown-path"]');</span>
 <span class="cstat-no" title="statement not covered" >  const sourceFile = metaTag ? metaTag.getAttribute("content") : `${pagePath || "index"}.md`;</span>
-  
+&nbsp;
   // Construct the GitHub issue URL
 <span class="cstat-no" title="statement not covered" >  const repoUrl = "https://github.com/idvorkin/idvorkin.github.io";</span>
-  
+&nbsp;
   // Format title as: page/section: custom title
-<span class="cstat-no" title="statement not covered" >  const formattedTitle = customTitle </span>
+<span class="cstat-no" title="statement not covered" >  const formattedTitle = customTitle</span>
 <span class="cstat-no" title="statement not covered" >    ? `${pagePath || "index"}/${headerId}: ${customTitle}`</span>
 <span class="cstat-no" title="statement not covered" >    : `${pagePath || "index"}/${headerId}: Issue with ${headerText}`;</span>
-  
+&nbsp;
 <span class="cstat-no" title="statement not covered" >  const issueTitle = encodeURIComponent(formattedTitle);</span>
-  
+&nbsp;
   // Use description if provided, otherwise use title as description
 <span class="cstat-no" title="statement not covered" >  const description = customDescription || customTitle || `Issue with section: ${headerText}`;</span>
-  
+&nbsp;
   // Get first paragraph of content if header is provided
-<span class="cstat-no" title="statement not covered" >  const firstParagraph = header ? getFirstParagraphAfterHeader(header) : '';</span>
-  
+<span class="cstat-no" title="statement not covered" >  const firstParagraph = header ? getFirstParagraphAfterHeader(header) : "";</span>
+&nbsp;
   // Format location as a single line with hyperlinks
 <span class="cstat-no" title="statement not covered" >  const locationLine = `📍 [${pagePath || "index"}](https://idvorkin.azurewebsites.net/${pagePath})/[${headerId}](https://idvorkin.azurewebsites.net/${pagePath}/${headerId}) - [[GitHub]](${repoUrl}/blob/main/${sourceFile}#${headerId})`;</span>
-  
+&nbsp;
   // Format the issue body with location at top, then description, then content excerpt
-<span class="cstat-no" title="statement not covered" >  let issueBodyContent = `${locationLine}\n\n` +</span>
-    `## Description\n\n` +
-<span class="cstat-no" title="statement not covered" >    `${description}\n\n`;</span>
-  
+<span class="cstat-no" title="statement not covered" >  let issueBodyContent = `${locationLine}\n\n## Description\n\n${description}\n\n`;</span>
+&nbsp;
   // Add content excerpt with section heading if available
 <span class="cstat-no" title="statement not covered" >  if (firstParagraph) {</span>
-<span class="cstat-no" title="statement not covered" >    issueBodyContent += `## Content Excerpt\n\n` +</span>
-<span class="cstat-no" title="statement not covered" >      `#### ${headerText}\n\n` +</span>
-<span class="cstat-no" title="statement not covered" >      `&gt; ${firstParagraph}\n\n`;</span>
+<span class="cstat-no" title="statement not covered" >    issueBodyContent += `## Content Excerpt\n\n#### ${headerText}\n\n&gt; ${firstParagraph}\n\n`;</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
-  
+&nbsp;
 <span class="cstat-no" title="statement not covered" >  const issueBody = encodeURIComponent(issueBodyContent);</span>
-  
+&nbsp;
 <span class="cstat-no" title="statement not covered" >  return `${repoUrl}/issues/new?title=${issueTitle}&amp;body=${issueBody}`;</span>
 <span class="cstat-no" title="statement not covered" >}</span>
 &nbsp;
@@ -3173,16 +3182,16 @@ const trackedHeaders = new Set&lt;HTMLElement&gt;();
  */
 function getOrCreatePopup(header: HTMLElement, headerId: string): HTMLElement {
   let popup = headerPopups.get(header);
-  
+&nbsp;
   if (!popup) {
     popup = createIssuePopup(headerId, header.<span class="branch-0 cbranch-no" title="branch not covered" >textContent || "")</span>;
     document.body.appendChild(popup);
     headerPopups.set(header, popup);
-    
+&nbsp;
     // Setup popup event handlers
     setupPopupEventHandlers(popup, header, headerId);
   }
-  
+&nbsp;
   return popup;
 }
 &nbsp;
@@ -3191,7 +3200,7 @@ function getOrCreatePopup(header: HTMLElement, headerId: string): HTMLElement {
  */
 function setupPopupEventHandlers(popup: HTMLElement, header: HTMLElement, headerId: string): void {
   const cleanupFunctions: (() =&gt; void)[] = [];
-  
+&nbsp;
   // Handle close button
   const closeBtn = popup.querySelector(".github-issue-popup-close");
   if (closeBtn) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
@@ -3199,7 +3208,7 @@ function setupPopupEventHandlers(popup: HTMLElement, header: HTMLElement, header
 <span class="cstat-no" title="statement not covered" >    closeBtn.addEventListener("click", closeHandler);</span>
 <span class="cstat-no" title="statement not covered" >    cleanupFunctions.push(() =&gt; closeBtn.removeEventListener("click", closeHandler));</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
-  
+&nbsp;
   // Handle cancel button
   const cancelBtn = popup.querySelector(".github-issue-cancel");
   if (cancelBtn) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
@@ -3207,39 +3216,39 @@ function setupPopupEventHandlers(popup: HTMLElement, header: HTMLElement, header
 <span class="cstat-no" title="statement not covered" >    cancelBtn.addEventListener("click", cancelHandler);</span>
 <span class="cstat-no" title="statement not covered" >    cleanupFunctions.push(() =&gt; cancelBtn.removeEventListener("click", cancelHandler));</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
-  
+&nbsp;
   // Function to submit the issue
   const submitIssue = <span class="fstat-no" title="function not covered" >() =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >    const titleInput = popup.querySelector(".github-issue-title") as HTMLInputElement;</span>
 <span class="cstat-no" title="statement not covered" >    const commentTextarea = popup.querySelector(".github-issue-comment") as HTMLTextAreaElement;</span>
-    
+&nbsp;
 <span class="cstat-no" title="statement not covered" >    const customTitle = titleInput?.value || "";</span>
 <span class="cstat-no" title="statement not covered" >    const customDescription = commentTextarea?.value || "";</span>
-    
+&nbsp;
 <span class="cstat-no" title="statement not covered" >    const issueUrl = createGitHubIssueUrl(headerId, header.textContent || "", customTitle, customDescription, header);</span>
 <span class="cstat-no" title="statement not covered" >    window.open(issueUrl, "_blank");</span>
-    
+&nbsp;
 <span class="cstat-no" title="statement not covered" >    hideIssuePopup(popup);</span>
 <span class="cstat-no" title="statement not covered" >  };</span>
-  
+&nbsp;
   // Handle submit button
   const submitBtn = popup.querySelector(".github-issue-submit");
   if (submitBtn) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
 <span class="cstat-no" title="statement not covered" >    submitBtn.addEventListener("click", submitIssue);</span>
 <span class="cstat-no" title="statement not covered" >    cleanupFunctions.push(() =&gt; submitBtn.removeEventListener("click", submitIssue));</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
-  
+&nbsp;
   // Handle keyboard shortcuts (Ctrl/Cmd + Enter)
   const titleInput = popup.querySelector(".github-issue-title") as HTMLInputElement;
   const commentTextarea = popup.querySelector(".github-issue-comment") as HTMLTextAreaElement;
-  
+&nbsp;
   const handleKeydown = <span class="fstat-no" title="function not covered" >(event: KeyboardEvent) =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >    if ((event.ctrlKey || event.metaKey) &amp;&amp; event.key === "Enter") {</span>
 <span class="cstat-no" title="statement not covered" >      event.preventDefault();</span>
 <span class="cstat-no" title="statement not covered" >      submitIssue();</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
 <span class="cstat-no" title="statement not covered" >  };</span>
-  
+&nbsp;
   if (titleInput) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
 <span class="cstat-no" title="statement not covered" >    titleInput.addEventListener("keydown", handleKeydown);</span>
 <span class="cstat-no" title="statement not covered" >    cleanupFunctions.push(() =&gt; titleInput.removeEventListener("keydown", handleKeydown));</span>
@@ -3248,7 +3257,7 @@ function setupPopupEventHandlers(popup: HTMLElement, header: HTMLElement, header
 <span class="cstat-no" title="statement not covered" >    commentTextarea.addEventListener("keydown", handleKeydown);</span>
 <span class="cstat-no" title="statement not covered" >    cleanupFunctions.push(() =&gt; commentTextarea.removeEventListener("keydown", handleKeydown));</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
-  
+&nbsp;
   // Store cleanup functions for this popup
   const existingCleanup = headerCleanupFunctions.get(header<span class="branch-0 cbranch-no" title="branch not covered" >) || [];</span>
   headerCleanupFunctions.set(header, [...existingCleanup, ...cleanupFunctions]);
@@ -3282,10 +3291,10 @@ function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): voi
   };
   copyIcon.addEventListener("click", shareClickHandler);
   cleanupFunctions.push(() =&gt; copyIcon.removeEventListener("click", shareClickHandler));
-  
+&nbsp;
   // Add keyboard support for accessibility
   const keyboardHandler = <span class="fstat-no" title="function not covered" >(event: KeyboardEvent) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    if (event.key === 'Enter' || event.key === ' ') {</span>
+<span class="cstat-no" title="statement not covered" >    if (event.key === "Enter" || event.key === " ") {</span>
 <span class="cstat-no" title="statement not covered" >      event.preventDefault();</span>
 <span class="cstat-no" title="statement not covered" >      shareClickHandler(event);</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
@@ -3297,24 +3306,27 @@ function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): voi
   const githubClickHandler = (event: Event) =&gt; {
     event.preventDefault();
     event.stopPropagation();
-    
+&nbsp;
     const popup = getOrCreatePopup(header, headerId);
     showIssuePopup(popup, header);
   };
   githubIcon.addEventListener("click", githubClickHandler);
   cleanupFunctions.push(() =&gt; githubIcon.removeEventListener("click", githubClickHandler));
-  
+&nbsp;
   // Close popup when clicking outside (use capture phase to avoid conflicts)
   const handleOutsideClick = <span class="fstat-no" title="function not covered" >(event: MouseEvent) =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >    const popup = headerPopups.get(header);</span>
-<span class="cstat-no" title="statement not covered" >    if (popup &amp;&amp; !popup.contains(event.target as Node) &amp;&amp; </span>
-<span class="cstat-no" title="statement not covered" >        event.target !== githubIcon &amp;&amp; </span>
-<span class="cstat-no" title="statement not covered" >        !githubIcon.contains(event.target as Node) &amp;&amp;</span>
-<span class="cstat-no" title="statement not covered" >        popup.style.display !== "none") {</span>
+<span class="cstat-no" title="statement not covered" >    if (</span>
+<span class="cstat-no" title="statement not covered" >      popup &amp;&amp;</span>
+<span class="cstat-no" title="statement not covered" >      !popup.contains(event.target as Node) &amp;&amp;</span>
+<span class="cstat-no" title="statement not covered" >      event.target !== githubIcon &amp;&amp;</span>
+<span class="cstat-no" title="statement not covered" >      !githubIcon.contains(event.target as Node) &amp;&amp;</span>
+<span class="cstat-no" title="statement not covered" >      popup.style.display !== "none"</span>
+<span class="cstat-no" title="statement not covered" >    ) {</span>
 <span class="cstat-no" title="statement not covered" >      hideIssuePopup(popup);</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
 <span class="cstat-no" title="statement not covered" >  };</span>
-  
+&nbsp;
   // Add slight delay to avoid immediate closing
   const timeoutId = setTimeout(() =&gt; {
 <span class="cstat-no" title="statement not covered" >    document.addEventListener("click", handleOutsideClick, true);</span>
@@ -3335,14 +3347,14 @@ function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): voi
 <span class="cstat-no" title="statement not covered" >    copyIcon.style.opacity = "0";</span>
 <span class="cstat-no" title="statement not covered" >    githubIcon.style.opacity = "0";</span>
 <span class="cstat-no" title="statement not covered" >  };</span>
-  
+&nbsp;
   header.addEventListener("mouseenter", mouseEnterHandler);
   header.addEventListener("mouseleave", mouseLeaveHandler);
   cleanupFunctions.push(() =&gt; {
 <span class="cstat-no" title="statement not covered" >    header.removeEventListener("mouseenter", mouseEnterHandler);</span>
 <span class="cstat-no" title="statement not covered" >    header.removeEventListener("mouseleave", mouseLeaveHandler);</span>
   });
-  
+&nbsp;
   // Store cleanup functions for this header
   headerCleanupFunctions.set(header, cleanupFunctions);
   trackedHeaders.add(header);
@@ -3356,19 +3368,19 @@ export <span class="fstat-no" title="function not covered" >function cleanupHead
 <span class="cstat-no" title="statement not covered" >  trackedHeaders.forEach((header) =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >    const cleanupFns = headerCleanupFunctions.get(header);</span>
 <span class="cstat-no" title="statement not covered" >    if (cleanupFns) {</span>
-<span class="cstat-no" title="statement not covered" >      cleanupFns.forEach(fn =&gt; fn());</span>
+<span class="cstat-no" title="statement not covered" >      cleanupFns.forEach((fn) =&gt; fn());</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
-    
+&nbsp;
     // Remove popup if exists
 <span class="cstat-no" title="statement not covered" >    const popup = headerPopups.get(header);</span>
 <span class="cstat-no" title="statement not covered" >    if (popup) {</span>
 <span class="cstat-no" title="statement not covered" >      popup.remove();</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
 <span class="cstat-no" title="statement not covered" >  });</span>
-  
+&nbsp;
   // Clear the tracked headers set
 <span class="cstat-no" title="statement not covered" >  trackedHeaders.clear();</span>
-  
+&nbsp;
   // Reset initialization flag
 <span class="cstat-no" title="statement not covered" >  isHeaderCopyLinksInitialized = false;</span>
 <span class="cstat-no" title="statement not covered" >}</span>
@@ -3622,7 +3634,7 @@ export function enableHeaderCopyLinks(options: Partial&lt;CopyLinkOptions&gt; = 
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-09-30T04:37:44.440Z
+                at 2025-09-30T04:39:08.593Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

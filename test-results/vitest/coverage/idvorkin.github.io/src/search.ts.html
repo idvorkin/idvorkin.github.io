@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">22.44% </span>
+                <span class="strong">22.31% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>79/352</span>
+                <span class='fraction'>79/354</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">22.44% </span>
+                <span class="strong">22.31% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>79/352</span>
+                <span class='fraction'>79/354</span>
             </div>
         
             
@@ -570,7 +570,9 @@
 <a name='L505'></a><a href='#L505'>505</a>
 <a name='L506'></a><a href='#L506'>506</a>
 <a name='L507'></a><a href='#L507'>507</a>
-<a name='L508'></a><a href='#L508'>508</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L508'></a><a href='#L508'>508</a>
+<a name='L509'></a><a href='#L509'>509</a>
+<a name='L510'></a><a href='#L510'>510</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -844,6 +846,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -1099,29 +1103,29 @@ export const search_placeholder_text = "Search Igor's Musings ...";
  * Helper function to escape HTML to prevent XSS
  */
 function escapeHtml(text: string): string {
-    const div = document.createElement('div');
-    div.textContent = <span class="branch-0 cbranch-no" title="branch not covered" >text || '';</span>
-    return div.innerHTML;
+  const div = document.createElement("div");
+  div.textContent = <span class="branch-0 cbranch-no" title="branch not covered" >text || "";</span>
+  return div.innerHTML;
 }
 &nbsp;
 /**
  * Helper function to validate URLs
  */
 function isValidUrl(url: string): boolean {
-    if (!url) <span class="branch-0 cbranch-no" title="branch not covered" >return false;</span>
-    
-    // Allow relative URLs (starting with /)
-    if (url.startsWith('/')) {
-        return true;
-<span class="branch-0 cbranch-no" title="branch not covered" >    }</span>
-    
-    // Allow well-formed absolute URLs
-<span class="cstat-no" title="statement not covered" >    try {</span>
-<span class="cstat-no" title="statement not covered" >        const parsed = new URL(url);</span>
-<span class="cstat-no" title="statement not covered" >        return parsed.protocol === 'http:' || parsed.protocol === 'https:';</span>
-<span class="branch-0 cbranch-no" title="branch not covered" >    } catch {</span>
-<span class="cstat-no" title="statement not covered" >        return false;</span>
-<span class="cstat-no" title="statement not covered" >    }</span>
+  if (!url) <span class="branch-0 cbranch-no" title="branch not covered" >return false;</span>
+&nbsp;
+  // Allow relative URLs (starting with /)
+  if (url.startsWith("/")) {
+    return true;
+<span class="branch-0 cbranch-no" title="branch not covered" >  }</span>
+&nbsp;
+  // Allow well-formed absolute URLs
+<span class="cstat-no" title="statement not covered" >  try {</span>
+<span class="cstat-no" title="statement not covered" >    const parsed = new URL(url);</span>
+<span class="cstat-no" title="statement not covered" >    return parsed.protocol === "http:" || parsed.protocol === "https:";</span>
+<span class="branch-0 cbranch-no" title="branch not covered" >  } catch {</span>
+<span class="cstat-no" title="statement not covered" >    return false;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
 }
 &nbsp;
 /**
@@ -1152,13 +1156,13 @@ export function InstantSearchHitTemplate(hit) {
     if (hit.anchor) {
       url += `#${hit.anchor}`;
     }
-    
+&nbsp;
     // Validate URL before using it
     if (!isValidUrl(url)) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
-<span class="cstat-no" title="statement not covered" >      console.warn('Invalid URL skipped in InstantSearchHitTemplate:', url);</span>
-<span class="cstat-no" title="statement not covered" >      return '&lt;div&gt;Invalid result&lt;/div&gt;';</span>
+<span class="cstat-no" title="statement not covered" >      console.warn("Invalid URL skipped in InstantSearchHitTemplate:", url);</span>
+<span class="cstat-no" title="statement not covered" >      return "&lt;div&gt;Invalid result&lt;/div&gt;";</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
-    
+&nbsp;
     const highlighted = hit._highlightResult;
 &nbsp;
     if (!highlighted) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
@@ -1259,7 +1263,7 @@ export <span class="fstat-no" title="function not covered" >function AutoComplet
 <span class="cstat-no" title="statement not covered" >  const all_url_info = await get_link_info();</span>
 <span class="cstat-no" title="statement not covered" >  const loadTime = performance.now() - startTime;</span>
 <span class="cstat-no" title="statement not covered" >  console.log(`  📊 [get_random_post] Loaded links in ${loadTime.toFixed(0)}ms`);</span>
-  
+&nbsp;
   //  Yuk, find a clearere way to do this
 <span class="cstat-no" title="statement not covered" >  const all_pages = Object.entries(all_url_info) // returns a list of [url, info]</span>
 <span class="cstat-no" title="statement not covered" >    .map((e) =&gt; e[1]);</span>
@@ -1282,11 +1286,11 @@ export <span class="fstat-no" title="function not covered" >function AutoComplet
 <span class="cstat-no" title="statement not covered" >  const all_url_info = await get_link_info();</span>
 <span class="cstat-no" title="statement not covered" >  const loadTime = performance.now() - startTime;</span>
 <span class="cstat-no" title="statement not covered" >  console.log(`  📊 [get_random_posts_batch] Loaded links once in ${loadTime.toFixed(0)}ms`);</span>
-  
+&nbsp;
 <span class="cstat-no" title="statement not covered" >  const all_pages = Object.entries(all_url_info).map((e) =&gt; e[1]);</span>
 <span class="cstat-no" title="statement not covered" >  const results = [];</span>
 <span class="cstat-no" title="statement not covered" >  const usedIndices = new Set();</span>
-  
+&nbsp;
   // Get unique random posts
 <span class="cstat-no" title="statement not covered" >  while (results.length &lt; count &amp;&amp; results.length &lt; all_pages.length) {</span>
 <span class="cstat-no" title="statement not covered" >    const randomIndex = Math.floor(Math.random() * all_pages.length);</span>
@@ -1300,7 +1304,7 @@ export <span class="fstat-no" title="function not covered" >function AutoComplet
 <span class="cstat-no" title="statement not covered" >      });</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
-  
+&nbsp;
 <span class="cstat-no" title="statement not covered" >  return results;</span>
 <span class="cstat-no" title="statement not covered" >}</span>
 &nbsp;
@@ -1356,14 +1360,16 @@ export <span class="fstat-no" title="function not covered" >function AutoComplet
 <span class="cstat-no" title="statement not covered" >    sourceId: "random_posts",</span>
 <span class="cstat-no" title="statement not covered" >    async getItems() {</span>
 <span class="cstat-no" title="statement not covered" >      const sized_array = new Array(count).join("_").split("_");</span>
-<span class="cstat-no" title="statement not covered" >      const random_posts = await Promise.all(sized_array.map(async (e) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >        try {</span>
-<span class="cstat-no" title="statement not covered" >          return await get_random_post();</span>
-<span class="cstat-no" title="statement not covered" >        } catch (error) {</span>
-<span class="cstat-no" title="statement not covered" >          console.error('Error getting random post:', error);</span>
-<span class="cstat-no" title="statement not covered" >          return { url: '', title: 'Error', description: 'Failed to load post' };</span>
-<span class="cstat-no" title="statement not covered" >        }</span>
-<span class="cstat-no" title="statement not covered" >      }));</span>
+<span class="cstat-no" title="statement not covered" >      const random_posts = await Promise.all(</span>
+<span class="cstat-no" title="statement not covered" >        sized_array.map(async (e) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >          try {</span>
+<span class="cstat-no" title="statement not covered" >            return await get_random_post();</span>
+<span class="cstat-no" title="statement not covered" >          } catch (error) {</span>
+<span class="cstat-no" title="statement not covered" >            console.error("Error getting random post:", error);</span>
+<span class="cstat-no" title="statement not covered" >            return { url: "", title: "Error", description: "Failed to load post" };</span>
+<span class="cstat-no" title="statement not covered" >          }</span>
+<span class="cstat-no" title="statement not covered" >        }),</span>
+<span class="cstat-no" title="statement not covered" >      );</span>
 <span class="cstat-no" title="statement not covered" >      return random_posts;</span>
 <span class="cstat-no" title="statement not covered" >    },</span>
 <span class="cstat-no" title="statement not covered" >    getItemUrl({ item }) {</span>
@@ -1374,14 +1380,14 @@ export <span class="fstat-no" title="function not covered" >function AutoComplet
 <span class="cstat-no" title="statement not covered" >      item({ item, createElement }) {</span>
         // Validate URL before using it
 <span class="cstat-no" title="statement not covered" >        if (!isValidUrl(item.url)) {</span>
-<span class="cstat-no" title="statement not covered" >          console.warn('Invalid URL skipped in GetRandomSearchResults:', item.url);</span>
+<span class="cstat-no" title="statement not covered" >          console.warn("Invalid URL skipped in GetRandomSearchResults:", item.url);</span>
 <span class="cstat-no" title="statement not covered" >          return createElement("div", {</span>
 <span class="cstat-no" title="statement not covered" >            dangerouslySetInnerHTML: {</span>
-<span class="cstat-no" title="statement not covered" >              __html: '&lt;div&gt;Invalid result&lt;/div&gt;',</span>
+<span class="cstat-no" title="statement not covered" >              __html: "&lt;div&gt;Invalid result&lt;/div&gt;",</span>
 <span class="cstat-no" title="statement not covered" >            },</span>
 <span class="cstat-no" title="statement not covered" >          });</span>
 <span class="cstat-no" title="statement not covered" >        }</span>
-        
+&nbsp;
 <span class="cstat-no" title="statement not covered" >        return createElement("div", {</span>
 <span class="cstat-no" title="statement not covered" >          dangerouslySetInnerHTML: {</span>
 <span class="cstat-no" title="statement not covered" >            __html: `</span>
@@ -1423,14 +1429,14 @@ export <span class="fstat-no" title="function not covered" >function AutoComplet
 <span class="cstat-no" title="statement not covered" >      item({ item, createElement }) {</span>
         // Validate URL before using it
 <span class="cstat-no" title="statement not covered" >        if (!isValidUrl(item.url)) {</span>
-<span class="cstat-no" title="statement not covered" >          console.warn('Invalid URL skipped in GetRecentSearchResults:', item.url);</span>
+<span class="cstat-no" title="statement not covered" >          console.warn("Invalid URL skipped in GetRecentSearchResults:", item.url);</span>
 <span class="cstat-no" title="statement not covered" >          return createElement("div", {</span>
 <span class="cstat-no" title="statement not covered" >            dangerouslySetInnerHTML: {</span>
-<span class="cstat-no" title="statement not covered" >              __html: '&lt;div&gt;Invalid result&lt;/div&gt;',</span>
+<span class="cstat-no" title="statement not covered" >              __html: "&lt;div&gt;Invalid result&lt;/div&gt;",</span>
 <span class="cstat-no" title="statement not covered" >            },</span>
 <span class="cstat-no" title="statement not covered" >          });</span>
 <span class="cstat-no" title="statement not covered" >        }</span>
-        
+&nbsp;
 <span class="cstat-no" title="statement not covered" >        return createElement("div", {</span>
 <span class="cstat-no" title="statement not covered" >          dangerouslySetInnerHTML: {</span>
 <span class="cstat-no" title="statement not covered" >            __html: `</span>
@@ -1591,7 +1597,7 @@ export <span class="fstat-no" title="function not covered" >function GetAlgoliaR
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-09-30T04:37:44.440Z
+                at 2025-09-30T04:39:08.593Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
