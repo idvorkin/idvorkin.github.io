@@ -10,6 +10,7 @@ _site
 
 # Ignore git data file
 _data/git.json
+_data/current_pr.yml
 
 #Ignore vim junk
 *.swp
