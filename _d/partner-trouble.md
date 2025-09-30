@@ -140,7 +140,9 @@ Partners always bemoan growing apart and no longer having shared interests. "We 
 
 **But they overlook the biggest shared interest of all.**
 
-Ask any parent what they care about most? Regardless of their "requested preference", I assure the revealed preference is their children. Reminiscing over old photos, bragging to anyone who will listen, or most glorious of all getting to spend time with them when they're engaging with you.
+Ask any parent what they care about most? Regardless of their stated preference, I assure their revealed preference is their children. Reminiscing over old photos, bragging to anyone who will listen, or most glorious of all getting to spend time with them when they're engaging with you.
+
+_For more on [stated vs revealed preferences](/product#stated-vs-revealed-preferences), see the product management concepts._
 
 **Your kids become your biggest shared interest**. Think about it - who else will value them as much as you do? Who else will celebrate their first steps, worry about their struggles, beam with pride at their achievements?
 

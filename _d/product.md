@@ -25,6 +25,7 @@ From creating a vision that inspires to laying out the strategies to get there, 
 - [Roadmapping and User Story Mapping](#roadmapping-and-user-story-mapping)
   - [What's a story map](#whats-a-story-map)
 - [Concepts](#concepts)
+  - [Stated vs Revealed Preferences](#stated-vs-revealed-preferences)
   - [Engagement vs Growth](#engagement-vs-growth)
   - [DAU is retention and new users](#dau-is-retention-and-new-users)
   - [Gamification - Duo Playbook](#gamification---duo-playbook)
@@ -161,6 +162,33 @@ Optimal, having a designer:
 
 ## Concepts
 
+### Stated vs Revealed Preferences
+
+A critical concept from behavioral economics that every product manager must understand. **Stated preferences** are what customers say they want, while **revealed preferences** are what their actual behaviors show they value.
+
+**Why this matters for product work:**
+
+- Customer interviews can be misleading if you only listen to stated preferences
+- Users often don't know what they actually want or need
+- Past behavior is the best predictor of future behavior
+- Features that sound good in surveys may have poor adoption
+
+**In practice:**
+
+- Focus on observing actual user behavior over survey responses
+- Ask about specific past actions rather than hypothetical future intentions
+- Look at usage data, not just feature requests
+- Test with real behavior, not just stated interest
+
+**Examples:**
+
+| Domain            | Stated Preference                         | Revealed Preference                                             |
+| ----------------- | ----------------------------------------- | --------------------------------------------------------------- |
+| **Health**        | "I want to floss daily"                   | Dental visits show most people don't floss regularly            |
+| **Customization** | "I want more customization options"       | Usage data shows users rarely change default settings           |
+| **News feeds**    | "I want chronological/time-ordered feeds" | Users spend more time on relevance-ordered algorithmic feeds    |
+| **Social media**  | "I want less addictive social platforms"  | Users consistently choose the most engaging/addictive platforms |
+
 ### Engagement vs Growth
 
 - Growth is getting new users - New entry points, advertising, etc - DAU/WAU/MAU
@@ -282,6 +310,8 @@ Note, inventory is output. Not inherently useful. Outcomes is goal!
 3. Talk less and listen more.
 
 4. **Ask About Specific Behaviors**: Instead of asking for opinions about your idea, ask about specific behaviors and actions they've taken in the past. This provides more reliable data.
+
+**Stated vs Revealed Preferences**: Remember that what customers say they want (stated preferences) often differs from what they actually do (revealed preferences). Focus on understanding their actual behaviors and past actions rather than hypothetical future intentions.
 
 5. **Focus on Their Life, Not Your Idea**: Engage in discussions about the customer's life and problems instead of pitching your idea. This helps to uncover real issues that your product or service might solve.
 

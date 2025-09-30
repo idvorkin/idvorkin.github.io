@@ -3760,10 +3760,11 @@
                 "/money",
                 "/tori"
             ],
-            "last_modified": "2025-08-31T06:37:16-07:00",
+            "last_modified": "2025-09-30T06:27:54.968555",
             "markdown_path": "_d/partner-trouble.md",
             "outgoing_links": [
-                "/essentialism"
+                "/essentialism",
+                "/product"
             ],
             "redirect_url": "",
             "title": "Double Trouble: From Lust to Love to Lost",
@@ -3904,12 +3905,13 @@
         },
         "/product": {
             "description": "From creating a vision that inspires to laying out the strategies to get there, product work requires a range of skills—and a good dose of creativity. Putting the puzzle pieces together is essential to creating a product that appeals to its customers. With the right combination of vision, strategy, product design and execution, anyone can create something truly remarkable. With this in mind, let’s start building the future we want to create!\n\n",
-            "doc_size": 38000,
+            "doc_size": 41000,
             "file_path": "_site/product.html",
             "incoming_links": [
-                "/manager-book"
+                "/manager-book",
+                "/partner-trouble"
             ],
-            "last_modified": "2024-10-27T17:27:54-07:00",
+            "last_modified": "2025-09-30T06:27:54.968555",
             "markdown_path": "_d/product.md",
             "outgoing_links": [],
             "redirect_url": "",
