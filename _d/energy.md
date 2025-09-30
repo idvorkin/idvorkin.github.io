@@ -69,8 +69,6 @@ Not every situation calls for high energy. Your body has different modes for dif
     subtitle="Arousal and valence mapping"
     x_label="Pleasure →"
     y_label="Arousal →"
-    x_low="Low" x_high="High"
-    y_low="Low" y_high="High"
     q1_name="EUPHORIA"
     q1_subtitle="High Arousal + High Pleasure"
     q1_traits="Joy<br>Thrill<br>Delight<br>Excitement"

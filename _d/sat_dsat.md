@@ -109,8 +109,6 @@ We all want to make the most of our lives. While not every breathing moment shou
     subtitle="Finding balance between satisfaction and dissatisfaction"
     x_label="Satisfaction (SAT) →"
     y_label="Dissatisfaction (DSAT) →"
-    x_low="Low" x_high="High"
-    y_low="Low" y_high="High"
     q1_name="STRESSED & AMAZING"
     q1_subtitle="High SAT + High DSAT"
     q1_traits="Startup launch<br>Product crunch<br>Promotion pressure<br>Team conflict"

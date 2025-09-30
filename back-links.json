@@ -1398,7 +1398,7 @@
         },
         "/coaching": {
             "description": "Coaching is like midwifery. A midwife can not give birth to the baby, she facilitates the birth. Similarly, a coach can not give a solution, she must give birth to the insight from within the coachee. Coaching is asking questions, guiding, and facilitating understanding, and this post collects my studies on the topic.\n\n",
-            "doc_size": 42000,
+            "doc_size": 40000,
             "file_path": "_site/coaching.html",
             "incoming_links": [
                 "/being-a-great-manager",
@@ -1410,7 +1410,7 @@
                 "/prompts",
                 "/writing"
             ],
-            "last_modified": "2025-09-29T10:35:05.770760",
+            "last_modified": "2025-09-30T07:23:40.789712",
             "markdown_path": "_d/coaching.md",
             "outgoing_links": [
                 "/decisive",
@@ -2053,7 +2053,7 @@
         },
         "/emotions": {
             "description": "Ever notice how emotions are like that one friend who shows up uninvited and fucks up your perfectly planned party? Sometimes they bring cake and make everything awesome, other times they’re drunk and knocking over your carefully arranged furniture while screaming “YOLO!” Well, here’s your guide to that emotional party crasher living rent-free in your head, because let’s face it - they’re not moving out anytime soon.\n\n",
-            "doc_size": 25000,
+            "doc_size": 24000,
             "file_path": "_site/emotions.html",
             "incoming_links": [
                 "/build-life-you-want",
@@ -2061,7 +2061,7 @@
                 "/slow",
                 "/strengths"
             ],
-            "last_modified": "2025-09-29T10:06:52.127245",
+            "last_modified": "2025-09-30T07:23:40.789712",
             "markdown_path": "_d/emotions.md",
             "outgoing_links": [
                 "/anger",
@@ -2158,7 +2158,7 @@
                 "/slow",
                 "/timeoff"
             ],
-            "last_modified": "2025-09-29T10:56:27.600457",
+            "last_modified": "2025-09-30T07:23:33.576778",
             "markdown_path": "_d/energy.md",
             "outgoing_links": [
                 "/activation",
@@ -3135,7 +3135,7 @@
         },
         "/manager-book": {
             "description": "Being an engineering manager is hard. Supporting people well is harder. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds me how to behave and encourages my own continuous improvement.\n\n",
-            "doc_size": 180000,
+            "doc_size": 178000,
             "file_path": "_site/manager-book.html",
             "incoming_links": [
                 "/amazon",
@@ -3150,7 +3150,7 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-09-29T10:35:05.770760",
+            "last_modified": "2025-09-30T07:23:33.576778",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
             "outgoing_links": [
                 "/7h-c2",
@@ -4432,7 +4432,7 @@
         },
         "/slow": {
             "description": "Fight or flight, the sympathetic nervous system, gets all the attention, but its twin sister “Rest and Digest” or the parasympathetic nervous system is equally important. These are the two divisions of the Autonomic Nervous system — the stuff that operates without conscious control. While everyone’s obsessed with productivity and hustle, your body’s crying out for balance. Here’s the thing: you can’t sprint a marathon, and life’s definitely a marathon.\n\n",
-            "doc_size": 34000,
+            "doc_size": 33000,
             "file_path": "_site/slow.html",
             "incoming_links": [
                 "/anxiety",
@@ -4440,7 +4440,7 @@
                 "/energy",
                 "/mood"
             ],
-            "last_modified": "2025-09-29T10:56:27.600457",
+            "last_modified": "2025-09-30T07:23:33.576778",
             "markdown_path": "_d/slow.md",
             "outgoing_links": [
                 "/activation",
@@ -5777,7 +5777,7 @@
                 "/mind-at-work",
                 "/retire"
             ],
-            "last_modified": "2025-09-29T10:56:27.600457",
+            "last_modified": "2025-09-30T07:23:40.789712",
             "markdown_path": "_d/sat_dsat.md",
             "outgoing_links": [
                 "/7h-c4",

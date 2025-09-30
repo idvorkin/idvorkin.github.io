@@ -6,10 +6,6 @@ Parameters:
 - subtitle: Optional subtitle
 - x_label: Label for X axis (horizontal)
 - y_label: Label for Y axis (vertical)
-- x_low: Label for low end of X axis
-- x_high: Label for high end of X axis
-- y_low: Label for low end of Y axis
-- y_high: Label for high end of Y axis
 
 Quadrants (clockwise from top-right):
 - q1_name: Top-right quadrant name
@@ -38,8 +34,6 @@ Example usage:
     subtitle="Based on the Positive and Negative Affect Schedule"
     x_label="Positive Affect →"
     y_label="Negative Affect →"
-    x_low="Low" x_high="High"
-    y_low="Low" y_high="High"
     q1_name="MAD SCIENTIST"
     q1_subtitle="Creative Intensity"
     q1_traits="Feels deeply<br>Passionate<br>Ride the waves"
@@ -192,32 +186,6 @@ Example usage:
     transform: translateY(-50%) rotate(-90deg);
 }
 
-.matrix-axis-marker {
-    position: absolute;
-    font-size: 0.8em;
-    color: #666;
-}
-
-.matrix-axis-marker.low-x {
-    bottom: -25px;
-    left: 10px;
-}
-
-.matrix-axis-marker.high-x {
-    bottom: -25px;
-    right: 10px;
-}
-
-.matrix-axis-marker.low-y {
-    bottom: 10px;
-    left: -35px;
-}
-
-.matrix-axis-marker.high-y {
-    top: 10px;
-    left: -35px;
-}
-
 /* Arrow indicators */
 .matrix-arrow {
     position: absolute;
@@ -319,23 +287,6 @@ Example usage:
 
         {% if include.y_label %}
         <div class="matrix-axis-label y-axis">{{ include.y_label }}</div>
-        {% endif %}
-
-        <!-- Axis markers -->
-        {% if include.x_low %}
-        <div class="matrix-axis-marker low-x">{{ include.x_low }}</div>
-        {% endif %}
-
-        {% if include.x_high %}
-        <div class="matrix-axis-marker high-x">{{ include.x_high }}</div>
-        {% endif %}
-
-        {% if include.y_low %}
-        <div class="matrix-axis-marker low-y">{{ include.y_low }}</div>
-        {% endif %}
-
-        {% if include.y_high %}
-        <div class="matrix-axis-marker high-y">{{ include.y_high }}</div>
         {% endif %}
 
         <!-- Arrows -->

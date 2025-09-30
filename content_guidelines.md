@@ -500,8 +500,6 @@ Use the quadrant-matrix include for any 2x2 grid visualizations like personality
     subtitle="Optional subtitle"
     x_label="X Axis Label →"
     y_label="Y Axis Label →"
-    x_low="Low" x_high="High"
-    y_low="Low" y_high="High"
     q1_name="TOP-RIGHT NAME"
     q1_subtitle="Optional subtitle"
     q1_traits="Line 1<br>Line 2<br>Line 3"
@@ -525,7 +523,6 @@ Use the quadrant-matrix include for any 2x2 grid visualizations like personality
 
 - `title`, `subtitle`: Main headings for the matrix
 - `x_label`, `y_label`: Axis labels with directional arrows
-- `x_low`, `x_high`, `y_low`, `y_high`: Endpoint labels for each axis
 - `q1-q4`: Quadrants numbered clockwise from top-right
   - `q#_name`: Main heading in quadrant
   - `q#_subtitle`: Optional subtitle
@@ -548,8 +545,6 @@ Use the quadrant-matrix include for any 2x2 grid visualizations like personality
     subtitle="Based on the Positive and Negative Affect Schedule"
     x_label="Positive Affect →"
     y_label="Negative Affect →"
-    x_low="Low" x_high="High"
-    y_low="Low" y_high="High"
     q1_name="MAD SCIENTIST"
     q1_subtitle="Creative Intensity"
     q1_traits="Feels deeply<br>Passionate<br>Ride the waves"

@@ -82,8 +82,6 @@ Your energy state isn't just high or low — it's a combination of arousal (ener
     subtitle="Finding your sustainable positive states"
     x_label="Pleasure →"
     y_label="Arousal →"
-    x_low="Low" x_high="High"
-    y_low="Low" y_high="High"
     q1_name="EUPHORIA"
     q1_subtitle="High Arousal + High Pleasure"
     q1_traits="Joy<br>Thrill<br>Delight<br>Excitement"

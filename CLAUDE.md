@@ -119,8 +119,6 @@ Use the `quadrant-matrix.html` include for any 2x2 grid visualization:
     title="Matrix Title"
     subtitle="Optional subtitle"
     x_label="X Axis →" y_label="Y Axis →"
-    x_low="Low" x_high="High"
-    y_low="Low" y_high="High"
     q1_name="TOP-RIGHT" q1_subtitle="Subtitle" q1_traits="Trait 1<br>Trait 2" q1_color="rgba(255,224,224,0.5)"
     q2_name="TOP-LEFT" q2_subtitle="Subtitle" q2_traits="Description" q2_color="rgba(230,230,250,0.5)"
     q3_name="BOTTOM-LEFT" q3_subtitle="Subtitle" q3_traits="Description" q3_color="rgba(232,244,234,0.5)"

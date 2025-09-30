@@ -57,8 +57,6 @@ The PANAS (Positive and Negative Affect Schedule) is a scientific tool that meas
     subtitle="Positive vs Negative Affect"
     x_label="Positive Affect →"
     y_label="Negative Affect →"
-    x_low="Low" x_high="High"
-    y_low="Low" y_high="High"
     q1_name="MAD SCIENTIST"
     q1_subtitle="Creative Intensity"
     q1_traits="Feels deeply<br>Passionate<br>Ride the waves"
