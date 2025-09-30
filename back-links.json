@@ -539,7 +539,6 @@
                 "/activation",
                 "/anxiety-management",
                 "/d/resistance",
-                "/first-things-first",
                 "/happy",
                 "/idle",
                 "/mental-pain",
@@ -2318,7 +2317,7 @@
         },
         "/first-things-first": {
             "description": "The key to effective management, is allocating energy through the lens of importance rather than urgency. E.g, ask yourself what one thing could you do that if you did on a regular basis, would make a tremendous positive difference in your life? Lemme guess, it’s important, but not urgent so you’re not doing it. These are my insights based on the 7 habits Chapter 3.\n\n",
-            "doc_size": 28000,
+            "doc_size": 26000,
             "file_path": "_site/first-things-first.html",
             "incoming_links": [
                 "/4dx",
@@ -2328,16 +2327,14 @@
                 "/delegate",
                 "/frog"
             ],
-            "last_modified": "2025-09-29T10:56:27.600457",
+            "last_modified": "2025-09-30T06:58:49.873988",
             "markdown_path": "_d/7h-c3.md",
             "outgoing_links": [
                 "/7h",
-                "/addiction",
                 "/delegate",
                 "/essential",
                 "/frog",
                 "/gtd",
-                "/resistance",
                 "/switch",
                 "/upstream"
             ],
