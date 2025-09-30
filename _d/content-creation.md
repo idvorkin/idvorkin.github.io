@@ -139,6 +139,21 @@ Killer, just take video on your phone, then use CapCut to edit/auto-caption. It'
 
 ### Scripting
 
+Having a script transforms your content from rambling to focused. But reading from a script while maintaining eye contact and natural delivery? That's where teleprompter software becomes invaluable.
+
+**My Go-To App:**
+
+**[Teleprompter](https://apps.apple.com/us/app/teleprompter/id941620509)** (Free with Pro upgrade) - The app I actually use for mobile content creation. Import your scripts, adjust text size and scrolling speed, and record videos while reading. Works great for both iOS and Android.
+
+**Note**: Just because you have a teleprompter doesn't mean you need to be fully scripted. You can also use it for key points to keep your content focused while maintaining a natural, conversational delivery.
+
+**Pro Tips for Teleprompter Success:**
+- **Font size matters**: Use large, readable fonts (24pt+)
+- **Eye level**: Position screen at camera height to maintain natural eye contact
+- **Pace yourself**: Write conversationally, include natural pauses
+- **Practice first**: Run through without recording to nail timing
+- **Backup plan**: Always have key points memorized in case tech fails
+
 ## Production
 
 ### Lighting
@@ -150,6 +165,8 @@ Killer, just take video on your phone, then use CapCut to edit/auto-caption. It'
 ## Post-Production
 
 ### Editing
+
+**CapCut** - My go-to editor for mobile content creation. It's a bit wonky to use, but like any other skill you need to build your muscles before you're good at using it. The AI features for captions and editing are excellent once you get the hang of it.
 
 ### Distribution
 
