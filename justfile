@@ -199,6 +199,8 @@ jekyll-serve port="4000" livereload_port="35729":
     #!/usr/bin/env sh
     # Update git branch info for dev banner
     echo '{"branch": "'$(git branch --show-current)'"}' > _data/git.json
+    # Update PR data for dev banner (non-fatal if no PR found)
+    just update-pr-data || true
     if [ "$(uname)" = "Darwin" ]; then
         ~/homebrew/opt/ruby/bin/bundle exec jekyll server --incremental --livereload --host 127.0.0.1 --port {{port}} --livereload-port {{livereload_port}}
     else
@@ -206,10 +208,19 @@ jekyll-serve port="4000" livereload_port="35729":
     fi
 
 jekyll-container:
+    #!/usr/bin/env sh
+    # Update git branch info for dev banner
+    echo '{"branch": "'$(git branch --show-current)'"}' > _data/git.json
+    # Update PR data for dev banner (non-fatal if no PR found)
+    just update-pr-data || true
     bundle exec jekyll server --incremental --livereload --host 0.0.0.0
 
 jekyll-docker:
     #!/usr/bin/env sh
+    # Update git branch info for dev banner
+    echo '{"branch": "'$(git branch --show-current)'"}' > _data/git.json
+    # Update PR data for dev banner (non-fatal if no PR found)
+    just update-pr-data || true
     # Auto-detect platform and use appropriate image
     if [ "$(uname -m)" = "arm64" ]; then
         PLATFORM="--platform linux/arm64"
@@ -394,26 +405,51 @@ e2e-test:
 blog-combined:
     cat _d/* _posts/* _td/* > blog.allcontent.md
 
-set-pr:
+# Update PR data file for dev banner
+# Fetches current PR number for this branch and writes to _data/current_pr.yml
+# On main branch, removes the file
+update-pr-data:
     #!/usr/bin/env sh
+    # Check dependencies
+    if ! command -v gh >/dev/null 2>&1; then
+        echo "❌ GitHub CLI (gh) not installed"
+        exit 1
+    fi
+    if ! command -v jq >/dev/null 2>&1; then
+        echo "❌ jq not installed"
+        exit 1
+    fi
+
     BRANCH=$(git rev-parse --abbrev-ref HEAD)
-    echo "Current branch: $BRANCH"
+    echo "🔍 Checking PR for branch: $BRANCH"
     if [ "$BRANCH" = "main" ]; then
-        echo "On main branch - removing PR data file"
+        echo "📝 On main branch - removing PR data file"
         rm -f _data/current_pr.yml
         exit 0
     fi
-    echo "Looking for PR..."
-    gh pr view --json number > /tmp/pr.json 2>/dev/null
+
+    mkdir -p repo_tmp
+    gh pr view --json number > repo_tmp/pr.json 2>/dev/null
     if [ $? -eq 0 ]; then
-        PR_NUMBER=$(cat /tmp/pr.json | jq -r '.number')
-        echo "Found PR #$PR_NUMBER"
+        PR_NUMBER=$(cat repo_tmp/pr.json | jq -r '.number')
+        if [ -z "$PR_NUMBER" ] || [ "$PR_NUMBER" = "null" ]; then
+            echo "❌ Failed to parse PR number"
+            rm -f repo_tmp/pr.json
+            exit 1
+        fi
+        echo "✅ Found PR #$PR_NUMBER"
         echo "# Current PR information - auto-generated" > _data/current_pr.yml
         echo "pr_number: $PR_NUMBER" >> _data/current_pr.yml
         echo "branch: $BRANCH" >> _data/current_pr.yml
-        echo "✅ Set PR #$PR_NUMBER for branch: $BRANCH"
-        rm -f /tmp/pr.json
+        if [ ! -f _data/current_pr.yml ]; then
+            echo "❌ Failed to create PR data file"
+            exit 1
+        fi
+        rm -f repo_tmp/pr.json
     else
-        echo "❌ No PR found for branch: $BRANCH"
-        exit 1
+        echo "⚠️  No PR found for branch: $BRANCH"
+        rm -f _data/current_pr.yml
     fi
+
+# Legacy alias for update-pr-data
+set-pr: update-pr-data

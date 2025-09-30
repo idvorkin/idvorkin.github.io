@@ -19,9 +19,14 @@ module Jekyll
           if File.exist?(pr_file)
             begin
               require 'yaml'
-              pr_data = YAML.load_file(pr_file)
-              if pr_data && pr_data['branch'] == branch
+              pr_data = YAML.safe_load_file(pr_file)
+              if pr_data && pr_data.is_a?(Hash) && pr_data['branch'] == branch
                 pr_number = pr_data['pr_number']
+                # Validate PR number is a positive integer within reasonable range
+                unless pr_number.is_a?(Integer) && pr_number > 0 && pr_number < 1_000_000
+                  Jekyll.logger.warn "Git data:", "Invalid PR number: #{pr_number}"
+                  pr_number = nil
+                end
               end
             rescue => e
               Jekyll.logger.warn "Git data:", "Failed to read PR file: #{e.message}"
