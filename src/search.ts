@@ -20,29 +20,29 @@ export const search_placeholder_text = "Search Igor's Musings ...";
  * Helper function to escape HTML to prevent XSS
  */
 function escapeHtml(text: string): string {
-    const div = document.createElement('div');
-    div.textContent = text || '';
-    return div.innerHTML;
+  const div = document.createElement("div");
+  div.textContent = text || "";
+  return div.innerHTML;
 }
 
 /**
  * Helper function to validate URLs
  */
 function isValidUrl(url: string): boolean {
-    if (!url) return false;
-    
-    // Allow relative URLs (starting with /)
-    if (url.startsWith('/')) {
-        return true;
-    }
-    
-    // Allow well-formed absolute URLs
-    try {
-        const parsed = new URL(url);
-        return parsed.protocol === 'http:' || parsed.protocol === 'https:';
-    } catch {
-        return false;
-    }
+  if (!url) return false;
+
+  // Allow relative URLs (starting with /)
+  if (url.startsWith("/")) {
+    return true;
+  }
+
+  // Allow well-formed absolute URLs
+  try {
+    const parsed = new URL(url);
+    return parsed.protocol === "http:" || parsed.protocol === "https:";
+  } catch {
+    return false;
+  }
 }
 
 /**
@@ -73,13 +73,13 @@ export function InstantSearchHitTemplate(hit) {
     if (hit.anchor) {
       url += `#${hit.anchor}`;
     }
-    
+
     // Validate URL before using it
     if (!isValidUrl(url)) {
-      console.warn('Invalid URL skipped in InstantSearchHitTemplate:', url);
-      return '<div>Invalid result</div>';
+      console.warn("Invalid URL skipped in InstantSearchHitTemplate:", url);
+      return "<div>Invalid result</div>";
     }
-    
+
     const highlighted = hit._highlightResult;
 
     if (!highlighted) {
@@ -180,7 +180,7 @@ export async function get_random_post() {
   const all_url_info = await get_link_info();
   const loadTime = performance.now() - startTime;
   console.log(`  📊 [get_random_post] Loaded links in ${loadTime.toFixed(0)}ms`);
-  
+
   //  Yuk, find a clearere way to do this
   const all_pages = Object.entries(all_url_info) // returns a list of [url, info]
     .map((e) => e[1]);
@@ -203,11 +203,11 @@ export async function get_random_posts_batch(count = 4) {
   const all_url_info = await get_link_info();
   const loadTime = performance.now() - startTime;
   console.log(`  📊 [get_random_posts_batch] Loaded links once in ${loadTime.toFixed(0)}ms`);
-  
+
   const all_pages = Object.entries(all_url_info).map((e) => e[1]);
   const results = [];
   const usedIndices = new Set();
-  
+
   // Get unique random posts
   while (results.length < count && results.length < all_pages.length) {
     const randomIndex = Math.floor(Math.random() * all_pages.length);
@@ -221,7 +221,7 @@ export async function get_random_posts_batch(count = 4) {
       });
     }
   }
-  
+
   return results;
 }
 
@@ -277,14 +277,16 @@ export async function GetRandomSearchResults(count = 3) {
     sourceId: "random_posts",
     async getItems() {
       const sized_array = new Array(count).join("_").split("_");
-      const random_posts = await Promise.all(sized_array.map(async (e) => {
-        try {
-          return await get_random_post();
-        } catch (error) {
-          console.error('Error getting random post:', error);
-          return { url: '', title: 'Error', description: 'Failed to load post' };
-        }
-      }));
+      const random_posts = await Promise.all(
+        sized_array.map(async (e) => {
+          try {
+            return await get_random_post();
+          } catch (error) {
+            console.error("Error getting random post:", error);
+            return { url: "", title: "Error", description: "Failed to load post" };
+          }
+        }),
+      );
       return random_posts;
     },
     getItemUrl({ item }) {
@@ -295,14 +297,14 @@ export async function GetRandomSearchResults(count = 3) {
       item({ item, createElement }) {
         // Validate URL before using it
         if (!isValidUrl(item.url)) {
-          console.warn('Invalid URL skipped in GetRandomSearchResults:', item.url);
+          console.warn("Invalid URL skipped in GetRandomSearchResults:", item.url);
           return createElement("div", {
             dangerouslySetInnerHTML: {
-              __html: '<div>Invalid result</div>',
+              __html: "<div>Invalid result</div>",
             },
           });
         }
-        
+
         return createElement("div", {
           dangerouslySetInnerHTML: {
             __html: `
@@ -344,14 +346,14 @@ export async function GetRecentSearchResults(count = 4) {
       item({ item, createElement }) {
         // Validate URL before using it
         if (!isValidUrl(item.url)) {
-          console.warn('Invalid URL skipped in GetRecentSearchResults:', item.url);
+          console.warn("Invalid URL skipped in GetRecentSearchResults:", item.url);
           return createElement("div", {
             dangerouslySetInnerHTML: {
-              __html: '<div>Invalid result</div>',
+              __html: "<div>Invalid result</div>",
             },
           });
         }
-        
+
         return createElement("div", {
           dangerouslySetInnerHTML: {
             __html: `

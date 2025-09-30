@@ -223,6 +223,10 @@ When adding new features or fixing bugs, **always add both unit tests and e2e te
 
 - Create new PR for each task
 - When starting work on an issue, update the issue with the linked PR
+- **After creating a PR**, run `just update-pr-data` to generate PR data for the dev banner
+  - This enables the PR link to appear in the development banner
+  - If the PR link doesn't appear in your local dev environment, re-run this command
+  - The command is automatically safe to run multiple times
 - Run code review agent before pushing
 - When updating a PR with significant changes, update the PR description to reflect all current changes
 - Include any fixes or improvements made during development in the PR description
@@ -240,6 +244,7 @@ After a PR is merged, always:
 3. Pull latest changes: `git pull`
 4. Delete local branch: `git branch -d <branch-name>`
 5. Delete remote branch: `git push origin --delete <branch-name>`
+6. Clean up PR data: `just update-pr-data` (removes PR data file on main branch)
 
 This keeps the repository clean and ensures you're always working with the latest code.
 
