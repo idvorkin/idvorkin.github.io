@@ -423,8 +423,9 @@ update-pr-data:
     BRANCH=$(git rev-parse --abbrev-ref HEAD)
     echo "🔍 Checking PR for branch: $BRANCH"
     if [ "$BRANCH" = "main" ]; then
-        echo "📝 On main branch - removing PR data file"
+        echo "📝 On main branch - removing PR data file and clearing PR from git.json"
         rm -f _data/current_pr.yml
+        echo '{"branch": "main"}' > _data/git.json
         exit 0
     fi
 
@@ -441,6 +442,8 @@ update-pr-data:
         echo "# Current PR information - auto-generated" > _data/current_pr.yml
         echo "pr_number: $PR_NUMBER" >> _data/current_pr.yml
         echo "branch: $BRANCH" >> _data/current_pr.yml
+        # Also update git.json with PR number for the banner
+        echo "{\"branch\": \"$BRANCH\", \"pr_number\": $PR_NUMBER}" > _data/git.json
         if [ ! -f _data/current_pr.yml ]; then
             echo "❌ Failed to create PR data file"
             exit 1
@@ -449,6 +452,8 @@ update-pr-data:
     else
         echo "⚠️  No PR found for branch: $BRANCH"
         rm -f _data/current_pr.yml
+        # Update git.json without PR number
+        echo "{\"branch\": \"$BRANCH\"}" > _data/git.json
     fi
 
 # Legacy alias for update-pr-data
