@@ -309,7 +309,7 @@
         },
         "/42": {
             "description": "You survived young kids, marriage, house, some easy crises, and now it’s time for remember , a healthy woman has a thousand wishes, a sick woman - just one: Things i wish I knew at 42\n\n",
-            "doc_size": 20000,
+            "doc_size": 27000,
             "file_path": "_site/42.html",
             "incoming_links": [
                 "/chapters",
@@ -317,11 +317,13 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-07-20T19:13:52-07:00",
+            "last_modified": "2025-09-30T09:01:39.051067",
             "markdown_path": "_d/42.md",
             "outgoing_links": [
                 "/chapters",
                 "/diet",
+                "/gap-year",
+                "/gap-year-igor",
                 "/last-year",
                 "/physical-health",
                 "/retire",
@@ -2407,6 +2409,7 @@
             "doc_size": 33000,
             "file_path": "_site/gap-year.html",
             "incoming_links": [
+                "/42",
                 "/gap-year-igor",
                 "/monetize",
                 "/retire",
@@ -2436,6 +2439,7 @@
             "doc_size": 71000,
             "file_path": "_site/gap-year-igor.html",
             "incoming_links": [
+                "/42",
                 "/activation",
                 "/gap-year",
                 "/stock-concentration",
