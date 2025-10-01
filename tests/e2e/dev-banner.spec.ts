@@ -1,7 +1,7 @@
 import { expect, test } from "@playwright/test";
 
 test.describe("Dev Info Banner", () => {
-  test.skip("should display branch and port info on dev server", async ({ page }) => {
+  test("should display branch and port info on dev server", async ({ page }) => {
     // Test on default port 4000 with feature branch
     await page.goto("http://localhost:4000");
 
@@ -67,7 +67,7 @@ test.describe("Dev Info Banner", () => {
     await page.screenshot({ path: "dev-banner-test.png" });
   });
 
-  test.skip("should display clickable PR link when on feature branch with PR", async ({ page }) => {
+  test("should display clickable PR link when on feature branch with PR", async ({ page }) => {
     // This test assumes we're on a branch with an open PR
     await page.goto("http://localhost:4000");
     await page.waitForLoadState("networkidle");
