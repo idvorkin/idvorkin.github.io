@@ -39,17 +39,17 @@ This sits next to [the gap year paradox](/gap-year): same terrain, closer camera
   - [The Family Paradox Dialog: When Dragons Attack What You Love Most](#the-family-paradox-dialog-when-dragons-attack-what-you-love-most)
   - [Taming Entropy: Structured Freedom](#taming-entropy-structured-freedom)
   - [The Squander Dragon Dialog](#the-squander-dragon-dialog)
-  - [Taming Squander: Making Every Day Count](#taming-squander-making-every-day-count)
+  - [Taming Squander: Invest and Cherish](#taming-squander-invest-and-cherish)
 - [Dragon Transformation: When Fear Becomes Fuel](#dragon-transformation-when-fear-becomes-fuel)
 - [The Dragon Keeper's Daily Practice](#the-dragon-keepers-daily-practice)
 - [The Dragon Council: Monthly and Quarterly Reviews](#the-dragon-council-monthly-and-quarterly-reviews)
 - [Pre-Battle Preparation: Knowing Your Dragons](#pre-battle-preparation-knowing-your-dragons)
 - [Can 1 become 2? The Extend-to-Year-2 Test](#can-1-become-2-the-extend-to-year-2-test)
-- [Appendix: How Work Boxed the Dragon Deep Dive.](#appendix-how-work-boxed-the-dragon-deep-dive)
-  - [Work boxing Scarcity](#work-boxing-scarcity)
-  - [Work boxing Squander - The Production and Production Capacity](#work-boxing-squander---the-production-and-production-capacity)
-  - [Work boxing Squander - The Gap Year Terror](#work-boxing-squander---the-gap-year-terror)
-  - [Work boxing Entropy](#work-boxing-entropy)
+- [Appendix: How Work Tamed the Dragon Deep Dive.](#appendix-how-work-tamed-the-dragon-deep-dive)
+  - [Work Taming Scarcity](#work-taming-scarcity)
+  - [Work Taming Squander - The Production and Production Capacity](#work-taming-squander---the-production-and-production-capacity)
+  - [Work Taming Squander - The Gap Year Terror](#work-taming-squander---the-gap-year-terror)
+  - [Work Taming Entropy](#work-taming-entropy)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -534,7 +534,7 @@ When tamed, the Entropy Dragon becomes your personal trainer and life coach, for
 >
 > **Me:** "I'm recognizing that when the kids are grown, I won't remember the promotions I missed to be here. But I'll remember these daily rhythms. The waiting. The driving. The being there for them. Every. Single. Day."
 
-### Taming Squander: Making Every Day Count
+### Taming Squander: Invest and Cherish
 
 The Squander Dragon loses its power when you realize that "productivity" isn't about external metrics - it's about intentional investment in what matters. You're not wasting time; you're investing it in health, relationships, and mastery that compound over decades.
 
@@ -759,19 +759,19 @@ The challenge of the gap year isn't about defeating these dragons - they're immo
 
 Master this, and you don't just take a successful gap year - you learn to live with the fundamental forces that shape every human life. That's the real treasure the dragons guard.
 
-## Appendix: How Work Boxed the Dragon Deep Dive.
+## Appendix: How Work Tamed the Dragon Deep Dive.
 
 I think this deserves more thinking, after all the better we can understand this the better.
 
-### Work boxing Scarcity
+### Work Taming Scarcity
 
-An easy observation: Work results in you getting a steady pay check, implies you don't have to wrory about money so long as you're not worried about being fired, or exceptional drops in the stock market, or growth in your expenses.
+An easy observation: Work results in a steady pay check, implying you don't have to worry about money so long as you're not worried about being fired, exceptional drops in the stock market, or huge growth in your expenses.
 
-A harder observation: You are only thinking about scarcity in terms of money, not time! Of course, time is constant, so the scarcity of time available to non-work!
+A harder observation: There are multiple scarcity dragons - not just money, but health and relationships too. We focus on the money dragon because it roars loudest, but the others are just as deadly.
 
-Critical Insight: Work slays the "Money Scarcity" dragon, but creates the "Non-Work Time Scarcity" Dragon
+Work doesn't eliminate scarcity - it just chooses which scarcity to accept. Money becomes abundant; time for health and relationships becomes scarce.
 
-### Work boxing Squander - The Production and Production Capacity
+### Work Taming Squander - The Production and Production Capacity
 
 Work is designed to prevent squandering through external accountability - management chains, goals, performance reviews, peer pressure, ceremonies, and it's really good at that.
 
@@ -793,7 +793,7 @@ Work has countless mechanisms for production (sprints, deadlines, metrics) but a
 - Confidence from shipping through chaos
 - Benefits you forever, builds accidentally
 
-### Work boxing Squander - The Gap Year Terror
+### Work Taming Squander - The Gap Year Terror
 
 Gap year inverts everything: Abundant time for production capacity, zero accountability for production
 
@@ -814,7 +814,7 @@ The terror: You must create your own accountability for building lasting capacit
 
 The opportunity: Instead of accidental growth from work chaos, you deliberately architect what production you'll need to complete to build your production capacity, and then put in mechanisms to make sure it happens
 
-### Work boxing Entropy
+### Work Taming Entropy
 
 When we are working, our **disposable time becomes scarce/precious**, increasing its value, making us scrutinize how we spend it (when we have sufficient will power), which results in very high quality time allocation, often far better than if we're on a gap year when we have more time. (Reframe - paradox of plenty) - Scarcity clarifies value. - Parkinson's law
 
