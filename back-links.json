@@ -546,8 +546,7 @@
                 "/mind-at-work",
                 "/productive",
                 "/psychic-shadows",
-                "/psychic-weight",
-                "/timeoff"
+                "/psychic-weight"
             ],
             "last_modified": "2025-09-01T09:23:45-07:00",
             "markdown_path": "_d/addiction.md",
@@ -1761,8 +1760,7 @@
                 "/parkinson",
                 "/productive",
                 "/psychic-shadows",
-                "/psychic-weight",
-                "/timeoff"
+                "/psychic-weight"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/resistance.md",
@@ -2214,7 +2212,6 @@
                 "/overload",
                 "/parkinson",
                 "/partner-trouble",
-                "/timeoff",
                 "/timeoff-2022-07"
             ],
             "last_modified": "2025-08-24T09:03:19-07:00",
@@ -2409,7 +2406,8 @@
                 "/gap-year-igor",
                 "/monetize",
                 "/retire",
-                "/stock-concentration"
+                "/stock-concentration",
+                "/timeoff"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/gap-year.md",
@@ -2439,6 +2437,7 @@
                 "/activation",
                 "/gap-year",
                 "/stock-concentration",
+                "/timeoff",
                 "/timeoff-2025-08"
             ],
             "last_modified": "2025-10-01T17:38:05.640604",
@@ -3002,7 +3001,6 @@
                 "/eulogy",
                 "/gap-year-igor",
                 "/physical-health",
-                "/timeoff",
                 "/untangled",
                 "/y24"
             ],
@@ -5126,7 +5124,7 @@
         },
         "/timeoff": {
             "description": "Time off is critical, it’s how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with turning your 1 week off into an action-packed tour of Disneyland. But, there are other kinds of time off that we’ll discuss too. Like most things, time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!\n\n",
-            "doc_size": 37000,
+            "doc_size": 38000,
             "file_path": "_site/timeoff.html",
             "incoming_links": [
                 "/activation",
@@ -5151,22 +5149,24 @@
                 "/timeoff-2024-08",
                 "/timeoff-2025-08"
             ],
-            "last_modified": "2025-09-13T12:56:01-07:00",
+            "last_modified": "2025-10-03T15:30:11.304599",
             "markdown_path": "_d/time_off.md",
             "outgoing_links": [
-                "/addiction",
+                "/addictions",
                 "/balloon",
-                "/d/resistance",
                 "/diet",
                 "/energy",
-                "/essentialism",
+                "/essential",
                 "/eulogy",
                 "/frog",
+                "/gap-year",
+                "/gap-year-igor",
                 "/happy",
-                "/kettlebell",
+                "/kettlebells",
                 "/magic",
                 "/mind-at-work",
                 "/parkinson",
+                "/resistance",
                 "/siy",
                 "/terzepatide",
                 "/timeoff-2020-03",

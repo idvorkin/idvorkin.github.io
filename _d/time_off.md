@@ -78,6 +78,8 @@ A common question is should you take 2 short vacations or 1 long one. That's a t
 1. Freedom - Savoring your ability to do nothing
 1. Productivity - Realizing there are important not urgent things you can do at your own pace.
 
+These phases become even more pronounced with extended time off. For a deep exploration of what happens when you take a full year off at 50, see the [gap year paradox](/gap-year) and [my personal wrestling with the decision](/gap-year-igor).
+
 ### Vegetation
 
 Work is stressful, it follows me home, and it takes several days to "[drain](/mind-at-work)". I think there's a relation between "draining my work stress" and vegetation. It takes me a solid week to get over that.
@@ -233,7 +235,6 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
 - **Bring kettlebells and a heavy club** - Portable strength tools for short, high-value sessions.
 - **Morning movement daily** - 10–20 minutes of mobility/strength to anchor the day. On driving days, do 5–10 minute micro-sessions at rest stops.
 
-
 ### Diet
 
 #### Mindset
@@ -267,7 +268,6 @@ Family loves the free hotel breakfast (and it is a great deal), but I can't affo
 #### Terzepatide
 
 Ensure I don't run out of terzepatide during trips/time off. Plan refills ahead and pack doses appropriately. See [Terzepatide](/terzepatide).
-
 
 ### Emotional Health
 
@@ -348,7 +348,7 @@ Ensure I don't run out of terzepatide during trips/time off. Plan refills ahead 
 ### Road Trip Tips
 
 - Bring Kettlebells
- - Road-trip food plan: see Diet → Travel Nutrition → Road trips
+- Road-trip food plan: see Diet → Travel Nutrition → Road trips
 - Lots of audiobooks
 - Stop at walmart
 - Set an end-of-day location that's only 4 hours of driving, otherwise, you'll end up spending not enough time smelling the roses.
@@ -371,10 +371,12 @@ Ensure I don't run out of terzepatide during trips/time off. Plan refills ahead 
 
 ### Can you have too much time off?
 
-Need to explore further, from [this study](https://www.apa.org/pubs/journals/releases/psp-pspp0000391.pdf):
+Research suggests there's a sweet spot. From [this study](https://www.apa.org/pubs/journals/releases/psp-pspp0000391.pdf):
 
 _Many people living in modern society feel like they do not have enough time and are constantly searching
 for more. But is having limited discretionary time actually detrimental? And can there be downsides to having too much discretionary time? We find a negative quadratic relationship between discretionary time and subjective well-being. These results show that having too little time is indeed linked to lower subjective well-being caused by stress, having more time does not continually translate to greater subjective well-being._
 
 _Having an abundance of discretionary time is sometimes even linked to lower subjective well-being because of a lacking sense of productivity. In such cases, the negative effect of having too much
 discretionary time can be attenuated when people spend this time on productive activities._
+
+This research highlights the importance of **productive activities** during extended time off - which is exactly what the gap year approach emphasizes. Rather than endless leisure, a well-designed gap year focuses on intentional investment in health, relationships, and mastery. See the [gap year paradox](/gap-year) for the full framework.
