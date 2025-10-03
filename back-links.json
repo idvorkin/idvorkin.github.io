@@ -309,7 +309,7 @@
         },
         "/42": {
             "description": "You survived young kids, marriage, house, some easy crises, and now it’s time for remember , a healthy woman has a thousand wishes, a sick woman - just one: Things i wish I knew at 42\n\n",
-            "doc_size": 27000,
+            "doc_size": 28000,
             "file_path": "_site/42.html",
             "incoming_links": [
                 "/chapters",
@@ -317,7 +317,7 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-09-30T09:01:39.051067",
+            "last_modified": "2025-10-03T15:23:44.066227",
             "markdown_path": "_d/42.md",
             "outgoing_links": [
                 "/chapters",
