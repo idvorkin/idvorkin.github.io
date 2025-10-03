@@ -2005,19 +2005,19 @@
         },
         "/elder": {
             "description": "Midlife has a marketing problem, it’s always followed by the word crisis. Honestly, for good reason: Midlife is the chapter of your life where the things you and society value decline. E.g. you’re getting weaker and dumber. Embrace and optimize for this reality or suffer. Luckily there is a good formula here: both to embrace it, and to find new strengths to focus on.\n\n",
-            "doc_size": 24000,
+            "doc_size": 27000,
             "file_path": "_site/elder.html",
             "incoming_links": [
                 "/40yo",
                 "/addiction"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2025-10-03T13:06:16.385909",
             "markdown_path": "_d/elder.md",
             "outgoing_links": [
                 "/40yo",
+                "/7h-c2",
                 "/death",
-                "/end-in-mind",
-                "/essentialism"
+                "/essential"
             ],
             "redirect_url": "",
             "title": "Wrinkles and Wisdom: A Guide to Aging Like Fine Wine (Not Milk)",
@@ -2110,7 +2110,6 @@
                 "/affirmations",
                 "/content-audience",
                 "/d/resistance",
-                "/elder",
                 "/gap-year-igor",
                 "/productive"
             ],
@@ -2209,7 +2208,6 @@
                 "/balance",
                 "/be-proactive",
                 "/books-that-defined-me",
-                "/elder",
                 "/end-in-mind",
                 "/frog",
                 "/gtd",
