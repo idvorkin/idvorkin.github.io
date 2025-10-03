@@ -28,6 +28,7 @@ I did my Bar Mitzvah at the Wailing Wall in Israel — the holiest place in Juda
   - [a sense of confidence, without risk of conceit.](#a-sense-of-confidence-without-risk-of-conceit)
   - [a reminder of how small and petty my problems really are.](#a-reminder-of-how-small-and-petty-my-problems-really-are)
   - [a set of rituals to keep me on track and for complex events](#a-set-of-rituals-to-keep-me-on-track-and-for-complex-events)
+  - [A harbor of inner peace](#a-harbor-of-inner-peace)
 - [Appendix and stuff I'm working in ...](#appendix-and-stuff-im-working-in-)
   - [Why Religion?](#why-religion)
   - [Belief vs Practice](#belief-vs-practice)
@@ -133,6 +134,8 @@ Knowing there is something eternal, reminds you of your smallness, often reinfor
 ### a set of rituals to keep me on track and for complex events
 
 A ritual for death, for marriage, to remind us to forgive, and to be void of temptation
+
+### A harbor of inner peace
 
 ## Appendix and stuff I'm working in ...
 
