@@ -4,7 +4,7 @@ layout: post
 permalink: /religion
 ---
 
-I did my Bar Mitzvah at the Wailing Wall in Isreal — the holiest place in Judaism. We flew there as a family, and I still remember stepping off the plane and feeling an intense warmth. I turned to my sister and whispered, “I can feel God.” She rolled her eyes and said, “That’s not God. That’s forty degrees Celsius.”
+I did my Bar Mitzvah at the Wailing Wall in Israel — the holiest place in Judaism. We flew there as a family, and I still remember stepping off the plane and feeling an intense warmth. I turned to my sister and whispered, "I can feel God." She rolled her eyes and said, "That's not God. That's forty degrees Celsius."
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -20,10 +20,17 @@ I did my Bar Mitzvah at the Wailing Wall in Isreal — the holiest place in Juda
   - [Pushiness](#pushiness)
   - [Arbitrariness & Literalism](#arbitrariness--literalism)
 - [The Gifts I want](#the-gifts-i-want)
+  - [Unconditional Love](#unconditional-love)
+  - [to know who I am, and to know my tribe, and know where to find my tribe wherever I go.](#to-know-who-i-am-and-to-know-my-tribe-and-know-where-to-find-my-tribe-wherever-i-go)
+  - [not have to ponder the definition of the good life, or what happens after death, or what it all means](#not-have-to-ponder-the-definition-of-the-good-life-or-what-happens-after-death-or-what-it-all-means)
+  - [to have access to an accessible spiritual guide.](#to-have-access-to-an-accessible-spiritual-guide)
+  - [to have certainty over all things](#to-have-certainty-over-all-things)
+  - [a sense of confidence, without risk of conceit.](#a-sense-of-confidence-without-risk-of-conceit)
+  - [a reminder of how small and petty my problems really are.](#a-reminder-of-how-small-and-petty-my-problems-really-are)
+  - [a set of rituals to keep me on track and for complex events](#a-set-of-rituals-to-keep-me-on-track-and-for-complex-events)
 - [Appendix and stuff I'm working in ...](#appendix-and-stuff-im-working-in-)
   - [Why Religion?](#why-religion)
   - [Belief vs Practice](#belief-vs-practice)
-  - [Community, Ritual, and Identity](#community-ritual-and-identity)
   - [Secular Spirituality](#secular-spirituality)
 
 <!-- vim-markdown-toc-end -->
@@ -101,7 +108,31 @@ _To be fair, I can see the upside. If we really did have a universal standard, t
 
 ## The Gifts I want
 
-Add stuff here
+### Unconditional Love
+
+Not in all religions, but in Christianity at least, there is a notion of unconditional love. I'm certain that's incredibly important and what a wonderful feeling.
+
+### to know who I am, and to know my tribe, and know where to find my tribe wherever I go.
+
+How good it is to belong. We all need a place for like-minded people, and while you can find this in hobbies, and classes, those things tend to be time bound, and the people there come and go people there are For religions, they usually have places of worship wherever you go and times and people that are really into it.
+
+### not have to ponder the definition of the good life, or what happens after death, or what it all means
+
+### to have access to an accessible spiritual guide.
+
+### to have certainty over all things
+
+### a sense of confidence, without risk of conceit.
+
+By having confidence in god, you can have confidence without relying on self-confidence, which has a delicate balance of
+
+### a reminder of how small and petty my problems really are.
+
+Knowing there is something eternal, reminds you of your smallness, often reinforced in prayer
+
+### a set of rituals to keep me on track and for complex events
+
+A ritual for death, for marriage, to remind us to forgive, and to be void of temptation
 
 ## Appendix and stuff I'm working in ...
 
@@ -112,10 +143,6 @@ Religions persist because they solve hard coordination problems: transmitting va
 ### Belief vs Practice
 
 The modern debate over belief often misses the power of practice. You don’t have to resolve every metaphysical claim to benefit from disciplined rituals: weekly reflection, shared meals, service, confession/repair, sabbath-style rest. Practice shapes identity through repetition; belief often follows behavior.
-
-### Community, Ritual, and Identity
-
-Healthy communities make belonging conditional on contribution, not conformity. Good rituals are scaffolding: they mark time, create memory, and bind people together without demanding uniformity of thought. The failure modes are obvious—tribalism, purity tests, coercion—so design for generosity, accountability, and repair.
 
 ### Secular Spirituality
 
