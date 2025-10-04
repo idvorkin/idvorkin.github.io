@@ -26,6 +26,10 @@ Security is super interesting, AI is super interesting, the combination, is supe
   - [Adversarial Attacks on Aligned Models](#adversarial-attacks-on-aligned-models)
   - [Bijection Learning](#bijection-learning)
 - [OWASP Top 10 for LLMs](#owasp-top-10-for-llms)
+- [AI Safety/Ethics](#ai-safetyethics)
+  - [Anti Copy-Right](#anti-copy-right)
+  - [Who decides what is right](#who-decides-what-is-right)
+  - [How to record zoom](#how-to-record-zoom)
 - [To Process](#to-process)
   - [Representation Engineering](#representation-engineering)
   - [Smart guy doing Anti Censorship](#smart-guy-doing-anti-censorship)
@@ -170,6 +174,39 @@ As mapped to chapters in :qa
 - LLM08: Excessive agency | Overextending capabilities or autonomy to LLMs can enable damaging actions from ambiguous LLM responses. | Chapter 7
 - LLM09: Overreliance | Trusting erroneous or misleading outputs can result in security breaches and misinformation. | Chapter 6
 - LLM10: Model theft | Unauthorized access and extraction of LLM models can lead to economic losses and data breaches. | Chapter 8 (discussed as model cloning)
+
+## AI Safety/Ethics
+
+### Anti Copy-Right
+
+### Who decides what is right
+
+Altman has a fanstatic discussion on this with Tucker Carlson around what ethics should be applied
+
+- 6:37 What Is Morally Right and Wrong According to ChatGPT?
+  {% include youtube.html src="5KmpT-BoVf4?=411" %}
+
+- 49:37 Is AI a Religion?
+  {% include youtube.html src="5KmpT-BoVf4?t=2977" %}
+
+### How to record zoom
+
+**My prompt:** Can you rewrite this into markdown I can add to my blog?
+
+**GPT5:**
+
+It’s important to note that **discreetly recording** a Zoom meeting — meaning without the consent of other participants — can violate both **privacy laws** and **Zoom’s Terms of Service**, depending on where you are.
+
+If your goal is legitimate, such as **capturing your own meeting for notes or transcription**, Zoom already provides a built-in **Record** feature. When you use it, Zoom automatically **notifies all participants**, ensuring everyone is aware.
+
+For more detailed note-taking, you can also use **approved transcription tools** that integrate directly with Zoom. These tools follow Zoom’s compliance standards and maintain participant transparency.
+
+**Grok:**
+
+Yes, you can record audio from a Zoom meeting discreetly on macOS (without using Zoom's built-in recorder, which notifies participants) by capturing your Mac's system audio output. This works because Zoom plays the meeting audio through your speakers or headphones, and tools can intercept that silently. However, built-in macOS tools like QuickTime Player or the Screenshot toolbar (Cmd+Shift+5) only capture microphone input by default, not internal system audio—so you'll need additional free software like BlackHole (a virtual audio driver) to route and record it without alerts to others in the meeting.
+Recommended Method: Use OBS Studio (Free and Discreet)
+
+OBS Studio is a free, open-source tool that can capture Zoom's window or full screen.
 
 ## To Process
 
