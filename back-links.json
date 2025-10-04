@@ -844,7 +844,7 @@
             "url": "/anger"
         },
         "/anxiety": {
-            "description": "Anxiety is the difference between reality and expectations. It is the pain, while stress is the suffering. The pain of anxiety is designed for threatening circumstances drawing your attention to a problem requiring urgent attention. This narrows your perspective allowing you to focus on a resolution. However, like many autonomous systems anxiety can be over-triggered, and handled poorly without deliberate action.\n\n",
+            "description": "Anxiety is the difference between reality and expectations, often from the misguided belief that you control things, where all you can do is maximize your influence. Anxiety is the pain, while stress is the suffering. The pain of anxiety is designed for threatening circumstances drawing your attention to a problem requiring urgent attention. This narrows your perspective allowing you to focus on a resolution. However, like many autonomous systems anxiety can be over-triggered, and handled poorly without deliberate action.\n\n",
             "doc_size": 23000,
             "file_path": "_site/anxiety.html",
             "incoming_links": [
@@ -857,16 +857,17 @@
                 "/operating-manual",
                 "/overload",
                 "/productive",
+                "/religion",
                 "/slow",
                 "/touching",
                 "/voices"
             ],
-            "last_modified": "2025-08-24T10:29:13-07:00",
+            "last_modified": "2025-10-04T08:02:07.216075",
             "markdown_path": "_d/anxiety.md",
             "outgoing_links": [
+                "/7h-c1",
                 "/anxiety-management",
-                "/be-proactive",
-                "/idle",
+                "/idle-loop",
                 "/slow",
                 "/voices"
             ],
@@ -1025,7 +1026,6 @@
             "incoming_links": [
                 "/7-habits",
                 "/affirmations",
-                "/anxiety",
                 "/d/habits",
                 "/emotions",
                 "/frog",
@@ -2783,7 +2783,6 @@
             "doc_size": 18000,
             "file_path": "_site/idle.html",
             "incoming_links": [
-                "/anxiety",
                 "/depression",
                 "/gtd",
                 "/happy",
@@ -4141,12 +4140,14 @@
         },
         "/religion": {
             "description": "I did my Bar Mitzvah at the Wailing Wall in Israel — the holiest place in Judaism. We flew there as a family, and I still remember stepping off the plane and feeling an intense warmth. I turned to my sister and whispered, “I can feel God.” She rolled her eyes and said, “That’s not God. That’s forty degrees Celsius.”\n\n",
-            "doc_size": 26000,
+            "doc_size": 27000,
             "file_path": "_site/religion.html",
             "incoming_links": [],
-            "last_modified": "2025-10-03T13:17:17.693035",
+            "last_modified": "2025-10-04T08:00:13.004139",
             "markdown_path": "_d/religion.md",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/anxiety"
+            ],
             "redirect_url": "",
             "title": "Religion: Losing belief while seeing value",
             "url": "/religion"

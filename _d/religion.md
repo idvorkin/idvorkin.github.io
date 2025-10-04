@@ -125,7 +125,13 @@ How good it is to belong. We all need a place for like-minded people, and while 
 
 ### a sense of confidence, without risk of conceit.
 
-By having confidence in god, you can have confidence without relying on self-confidence, which has a delicate balance of
+By having confidence in god, and attributing outcomes both good and bad to god, you get two huge values:
+
+1. You can be confident without being over reliant on self-confidence, which easily can result in the very unpleasant state of conceit.
+1. You solve the biggest cause of anxiety: the false belief you have control, where instead all you have is the ability to maximize your influence.
+1. You know that if you tried your best, and maximized your influence, you did your part, but God was in control.
+
+{%include summarize-page.html src="/anxiety"%}
 
 ### a reminder of how small and petty my problems really are.
 

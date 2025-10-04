@@ -9,19 +9,19 @@ redirect_from:
   - /anxious
 ---
 
-Anxiety is the difference between reality and expectations. It is the pain, while stress is the suffering. The pain of anxiety is designed for threatening circumstances drawing your attention to a problem requiring urgent attention. This narrows your perspective allowing you to focus on a resolution. However, like many autonomous systems anxiety can be over-triggered, and handled poorly without deliberate action.
+Anxiety is the difference between reality and expectations, often from the misguided belief that you control things, where all you can do is maximize your influence. Anxiety is the pain, while stress is the suffering. The pain of anxiety is designed for threatening circumstances drawing your attention to a problem requiring urgent attention. This narrows your perspective allowing you to focus on a resolution. However, like many autonomous systems anxiety can be over-triggered, and handled poorly without deliberate action.
 
 <!-- prettier-ignore-start -->
 
 <!-- vim-markdown-toc-start -->
 
 - [Anxiety](#anxiety)
-    - [Reality](#reality)
-    - [Expectations](#expectations)
-    - [Closing the gap](#closing-the-gap)
+- [Reality](#reality)
+  - [Expectations](#expectations)
+  - [Closing the gap](#closing-the-gap)
 - [Perspective](#perspective)
-    - [Narrows perspective to resolve immediate danger](#narrows-perspective-to-resolve-immediate-danger)
-    - [Caring vs Mattering](#caring-vs-mattering)
+  - [Narrows perspective to resolve immediate danger](#narrows-perspective-to-resolve-immediate-danger)
+  - [Caring vs Mattering](#caring-vs-mattering)
 - [Detection](#detection)
 - [Antidotes](#antidotes)
 - [Quotes](#quotes)
