@@ -33,6 +33,10 @@ I did my Bar Mitzvah at the Wailing Wall in Israel — the holiest place in Juda
   - [Why Religion?](#why-religion)
   - [Belief vs Practice](#belief-vs-practice)
   - [Secular Spirituality](#secular-spirituality)
+  - [Some bible verses I really like](#some-bible-verses-i-really-like)
+    - [Tolerance](#tolerance)
+    - [Discipline](#discipline)
+    - [You don't have control, but you must still do the work](#you-dont-have-control-but-you-must-still-do-the-work)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -156,3 +160,22 @@ The modern debate over belief often misses the power of practice. You don’t ha
 ### Secular Spirituality
 
 You can pursue awe, humility, gratitude, and service without formal religion. Meditation, nature, art, and shared work provide many of the same psychological benefits when practiced intentionally. The question isn’t “religious or not,” but “what practice reliably opens you to meaning while keeping you kind?”
+
+### Some bible verses I really like
+
+#### Tolerance
+
+- Romans 14:10 - "You, then, why do you judge your brother or sister? Or why do you treat them with contempt? For we will all stand before God's judgment seat."
+- Romans 14:13 - "Therefore let us stop passing judgment on one another. Instead, make up your mind not to put any stumbling block or obstacle in the way of a brother or sister."
+
+#### Discipline
+
+- Proverbs 27:17 - "As iron sharpens iron, so one person sharpens another."
+- 1 Corinthians 9:27 - "But I discipline my body and keep it under control, lest after preaching to others I myself should be disqualified."
+- Hebrews 12:11 - "For the moment all discipline seems painful rather than pleasant, but later it yields the peaceful fruit of righteousness to those who have been trained by it."
+
+#### You don't have control, but you must still do the work
+
+- Ecclesiastes 9:10 - "Whatever your hand finds to do, do it with all your might, for in the realm of the dead, where you are going, there is neither working nor planning nor knowledge nor wisdom."
+- Proverbs 21:31 - "The horse is made ready for the day of battle, but victory rests with the Lord."
+- 2 Thessalonians 3:10 - "For even when we were with you, we gave you this rule: 'The one who is unwilling to work shall not eat.'"
