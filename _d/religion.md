@@ -170,6 +170,8 @@ You can pursue awe, humility, gratitude, and service without formal religion. Me
 
 ### Some bible verses I really like
 
+While I struggle with literal belief, I've found certain verses capture truths about how to live well. They're less about theology and more about practical wisdom - the kind that holds up whether you believe in God or not.
+
 #### Tolerance
 
 - Romans 14:10 - "You, then, why do you judge your brother or sister? Or why do you treat them with contempt? For we will all stand before God's judgment seat."
