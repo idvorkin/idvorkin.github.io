@@ -29,14 +29,14 @@ I did my Bar Mitzvah at the Wailing Wall in Israel — the holiest place in Juda
   - [a reminder of how small and petty my problems really are.](#a-reminder-of-how-small-and-petty-my-problems-really-are)
   - [a set of rituals to keep me on track and for complex events](#a-set-of-rituals-to-keep-me-on-track-and-for-complex-events)
   - [A harbor of inner peace](#a-harbor-of-inner-peace)
+- [Some bible verses I really like](#some-bible-verses-i-really-like)
+  - [Tolerance](#tolerance)
+    - [Discipline](#discipline)
+    - [You don't have control, but you must still do the work](#you-dont-have-control-but-you-must-still-do-the-work)
 - [Appendix and stuff I'm working in ...](#appendix-and-stuff-im-working-in-)
   - [Why Religion?](#why-religion)
   - [Belief vs Practice](#belief-vs-practice)
   - [Secular Spirituality](#secular-spirituality)
-  - [Some bible verses I really like](#some-bible-verses-i-really-like)
-    - [Tolerance](#tolerance)
-    - [Discipline](#discipline)
-    - [You don't have control, but you must still do the work](#you-dont-have-control-but-you-must-still-do-the-work)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -154,21 +154,7 @@ A ritual for death, for marriage, to remind us to forgive, and to be void of tem
 
 ### A harbor of inner peace
 
-## Appendix and stuff I'm working in ...
-
-### Why Religion?
-
-Religions persist because they solve hard coordination problems: transmitting values across generations, creating social trust, and providing meaning under uncertainty. They encode “do this, not that” as embodied wisdom, not just abstract rules. My interest is pragmatic: learn from what works, name what harms, keep the parts that build resilient, prosocial humans.
-
-### Belief vs Practice
-
-The modern debate over belief often misses the power of practice. You don’t have to resolve every metaphysical claim to benefit from disciplined rituals: weekly reflection, shared meals, service, confession/repair, sabbath-style rest. Practice shapes identity through repetition; belief often follows behavior.
-
-### Secular Spirituality
-
-You can pursue awe, humility, gratitude, and service without formal religion. Meditation, nature, art, and shared work provide many of the same psychological benefits when practiced intentionally. The question isn’t “religious or not,” but “what practice reliably opens you to meaning while keeping you kind?”
-
-### Some bible verses I really like
+## Some bible verses I really like
 
 While I struggle with literal belief, I've found certain verses capture truths about how to live well. They're less about theology and more about practical wisdom - the kind that holds up whether you believe in God or not.
 
@@ -188,3 +174,17 @@ While I struggle with literal belief, I've found certain verses capture truths a
 - Ecclesiastes 9:10 - "Whatever your hand finds to do, do it with all your might, for in the realm of the dead, where you are going, there is neither working nor planning nor knowledge nor wisdom."
 - Proverbs 21:31 - "The horse is made ready for the day of battle, but victory rests with the Lord."
 - 2 Thessalonians 3:10 - "For even when we were with you, we gave you this rule: 'The one who is unwilling to work shall not eat.'"
+
+## Appendix and stuff I'm working in ...
+
+### Why Religion?
+
+Religions persist because they solve hard coordination problems: transmitting values across generations, creating social trust, and providing meaning under uncertainty. They encode “do this, not that” as embodied wisdom, not just abstract rules. My interest is pragmatic: learn from what works, name what harms, keep the parts that build resilient, prosocial humans.
+
+### Belief vs Practice
+
+The modern debate over belief often misses the power of practice. You don’t have to resolve every metaphysical claim to benefit from disciplined rituals: weekly reflection, shared meals, service, confession/repair, sabbath-style rest. Practice shapes identity through repetition; belief often follows behavior.
+
+### Secular Spirituality
+
+You can pursue awe, humility, gratitude, and service without formal religion. Meditation, nature, art, and shared work provide many of the same psychological benefits when practiced intentionally. The question isn't "religious or not," but "what practice reliably opens you to meaning while keeping you kind?"
