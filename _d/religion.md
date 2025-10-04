@@ -13,7 +13,7 @@ I did my Bar Mitzvah at the Wailing Wall in Israel — the holiest place in Juda
   - [How I Became a Man at 13](#how-i-became-a-man-at-13)
   - [When Proof Became My Religion](#when-proof-became-my-religion)
   - [The Day I valued Religion](#the-day-i-valued-religion)
-  - [In my 40s all the other stuff](#in-my-40s-all-the-other-stuff)
+  - [When someone important to me found god.](#when-someone-important-to-me-found-god)
 - [The Hard Parts for Me](#the-hard-parts-for-me)
   - [Proof](#proof)
   - [Hypocrisy](#hypocrisy)
@@ -75,7 +75,14 @@ What I valued most was the certainty of what to do. I didn’t have to ask, “A
 
 That was the day religion showed its worth to me: not in metaphysics, but in structure and support when I needed them most.
 
-### In my 40s all the other stuff
+### When someone important to me found god.
+
+I won't list their name out of privacy, but in my deep respect for this person I had to really dig into god, I went to a few sermons live, and this person started reasding a daily devotional, and so did I.
+
+Some observations I've had:
+
+- There are many different religions, with deeply different beliefs
+- Much of the interpretation is that of a self help book, instead of the classic format I'm used to "build a model and describe it", "several anecodote stories", "1 chapater per story", the bible stuff I'm exposed to starts with a really old verse, then has a bunch of interpretation.
 
 ## The Hard Parts for Me
 
