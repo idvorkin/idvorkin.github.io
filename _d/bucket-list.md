@@ -99,6 +99,7 @@ Here's Brooks' counterintuitive approach:
 - Juggle Fire: [Did that](http://ig66.blogspot.com/2014/08/accomplishment-unlocked-juggling-file.html?q=torches), it was great, but now it's time to switch to LEDs.
 - Become a manager of managers: You ever hear of the "Peter Principle"? You'll be promoted to your level of incompetence. Yeah, I try to avoid that. But I do love my job, and [wrote a bunch about it](/manager-book)
 - Have a big house: I like my small house. When I moved in, I said I want to die in this house, but hopefully not soon. Maybe that was a mistake, but one I'm going to live with.
+- Learn Rust: Honestly, I don't need to learn a system programming language, and I certainly don't need to do one in the world of large language models.
 
 
 ### What was never on my list, but is common for others
