@@ -768,13 +768,13 @@
         },
         "/ai-security": {
             "description": "Security is super interesting, AI is super interesting, the combination, is super-duper interesting!\n\n",
-            "doc_size": 27000,
+            "doc_size": 30000,
             "file_path": "_site/ai-security.html",
             "incoming_links": [
                 "/ai",
                 "/ai-journal"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2025-10-04T11:26:50.752438",
             "markdown_path": "_d/ai-security.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -4140,10 +4140,10 @@
         },
         "/religion": {
             "description": "I did my Bar Mitzvah at the Wailing Wall in Israel — the holiest place in Judaism. We flew there as a family, and I still remember stepping off the plane and feeling an intense warmth. I turned to my sister and whispered, “I can feel God.” She rolled her eyes and said, “That’s not God. That’s forty degrees Celsius.”\n\n",
-            "doc_size": 29000,
+            "doc_size": 30000,
             "file_path": "_site/religion.html",
             "incoming_links": [],
-            "last_modified": "2025-10-04T10:21:11.551547",
+            "last_modified": "2025-10-04T11:35:10.996343",
             "markdown_path": "_d/religion.md",
             "outgoing_links": [
                 "/anxiety"
