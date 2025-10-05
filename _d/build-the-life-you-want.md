@@ -26,6 +26,8 @@ Happiness isn't a destination you arrive at—it's a direction you choose to wal
   - [9. Now, Become the Teacher](#9-now-become-the-teacher)
 - [Concepts](#concepts)
   - [Equations of happiness](#equations-of-happiness)
+  - [The Reverse Bucket List](#the-reverse-bucket-list)
+  - [Useless Friends: The Best Kind of Friends](#useless-friends-the-best-kind-of-friends)
   - [PANAS Personality Types: Understanding Your Emotional Blueprint](#panas-personality-types-understanding-your-emotional-blueprint)
   - [Note - I'm a mad scientist](#note---im-a-mad-scientist)
 
@@ -241,6 +243,30 @@ Brooks presents several key equations that help us understand the mechanics of h
 - **Happiness = Enjoyment + Satisfaction + Purpose** - True happiness requires all three components
 - **Satisfaction = What you have ÷ What you want** - Managing desires is as important as achieving goals
 - **Unhappiness = Image - Reality** - The gap between expectations and experience creates suffering
+
+### The Reverse Bucket List
+
+One of Brooks' most counterintuitive applications of the satisfaction formula is the concept of the reverse bucket list—deliberately crossing out desires you don't actually want to decrease the denominator (wants) and increase satisfaction. Instead of constantly adding to your bucket list, you can find greater peace by consciously choosing to want less.
+
+{% include summarize-page.html src="/bucket-list" %}
+
+### Useless Friends: The Best Kind of Friends
+
+One of Brooks' most delightful concepts is "useless friends"—relationships that have absolutely no utility whatsoever. Drawing from Aristotle's friendship ladder, Brooks identifies three types of friendships:
+
+1. **Deal Friends** (Bottom rung) - Friendships of utility where you need something from each other. Work connections, networking contacts, mutually beneficial relationships. Weak emotional bonds, minimal happiness.
+
+2. **Pleasure Friends** (Middle rung) - Friendships based on shared activities or enjoyment. Fun to be around, but the relationship depends on continued pleasure.
+
+3. **Useless Friends** (Top rung) - Aristotle's "perfect friendships" or friendships of virtue. Brooks brilliantly calls them "useless" because they provide no career advancement, no financial benefit, no social status—just pure friendship.
+
+**The paradox:** The friendships that give you the absolute most joy are those pursued for pure friendship, not as a means to something else. Ironically, the person who brings you the most happiness has "no value to you whatsoever" in practical terms.
+
+This is what Brooks means in Chapter 6 when he emphasizes "deeply real friendships"—relationships where you value the person for who they are, not what they can do for you. Your useless friends are your real friends.
+
+**The trap:** Modern life pushes us toward deal friends and away from useless friends. Professional networking, LinkedIn connections, strategic relationships—all deal friends. But research shows these are the least rewarding type of friendship.
+
+**The practice:** Intentionally cultivate friendships with people who are "useless" to your career, status, or ambitions. Text your useless friends useless things. Spend time with people just because you enjoy them. That's where the real happiness is.
 
 ### PANAS Personality Types: Understanding Your Emotional Blueprint
 
