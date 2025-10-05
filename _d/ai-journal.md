@@ -9,6 +9,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Instructions for Claude: Creating Journal Entries](#instructions-for-claude-creating-journal-entries)
 - [Visualization](#visualization)
 - [Blog to bot](#blog-to-bot)
   - [RAG Challenges](#rag-challenges)
@@ -17,6 +18,10 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2025-10-05](#2025-10-05)
+    - [Four-Hour Python Deadlock Detective Work](#four-hour-python-deadlock-detective-work)
+    - [New Tmux Extension in Less Than an Hour](#new-tmux-extension-in-less-than-an-hour)
+    - [Using Voice to Make Commands](#using-voice-to-make-commands)
   - [2025-09-14](#2025-09-14)
   - [2025-09-13](#2025-09-13)
   - [2025-09-07](#2025-09-07)
@@ -67,6 +72,43 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+## Instructions for Claude: Creating Journal Entries
+
+When creating a new AI journal entry, follow these guidelines:
+
+1. **Date Section**: Add new entries at the top of the Diary section with format `### YYYY-MM-DD`
+2. **Structure**:
+   - Start with **TOP Takeaway**: The key learning/insight (1-2 bullet points)
+   - Use bullet points for readability (see existing entries for style)
+   - Keep it concise but informative
+3. **Deep Links**:
+   - For gists: Link to specific files using `#file-filename-md` anchors
+   - For GitHub repos: Use commit permalinks with line numbers (e.g., `blob/COMMIT_HASH/path/file.py#L90-L100`)
+   - Walk the GitHub repo history to find the exact commit hash and line numbers
+   - Include both implementation and configuration files where relevant
+4. **Artifacts**:
+   - Link to gists for detailed transcripts/analysis
+   - Link to GitHub issues/PRs for context
+   - Link to writeups in other repos (e.g., stuck-investigate.md)
+5. **Voice and Tone**:
+   - Personal, reflective
+   - Focus on what worked, what didn't, and why
+   - Include specific technical details but keep it readable
+6. **Update TOC**: Add entry to the vim-markdown-toc section
+
+**Example Structure**:
+```markdown
+### YYYY-MM-DD
+
+#### Title of What You Did
+
+- **TOP Takeaway**: The key insight
+  - Supporting detail
+- **The Problem**: What you were solving
+- **What Worked**: With links to [implementation](github-permalink)
+- **What Didn't**: Honest reflection
+```
 
 ## Visualization
 
@@ -148,6 +190,55 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2025-10-05
+
+#### Four-Hour Python Deadlock Detective Work
+
+- **TOP Takeaway**: Switch from tactical to strategic
+  - Got Claude to add lots of logging
+  - I had to figure out it was hanging at the system level (spent lots of rounds trying to get Claude to guess, it failed and kept thinking I was stuck in a semaphore)
+  - Once I came up with system issue, it ran all commands and found the issue
+  - The fix didn't work, but I can try again later
+- **The Problem**: `changes.py` script hanging indefinitely during subprocess operations
+- **The Root Cause**: Three-way deadlock between gRPC's DNS initialization, macOS dyld locking, and fork preparation handlers
+  - [Debugging transcript overview](https://gist.github.com/idvorkin/591ff244147a10f53d7495d262c94682#file-a_nlp--overview-md)
+  - [Claude's analysis](https://gist.github.com/idvorkin/591ff244147a10f53d7495d262c94682#file-z_claude-sonnet-4-5-20250929-md)
+  - [Timing debug info](https://gist.github.com/idvorkin/591ff244147a10f53d7495d262c94682#file-zzz_timing_debug-md)
+- **What Claude Tried**:
+  - `grpc.experimental.fork_support()` → failed
+  - Switched Google GenAI models to REST transport → partially worked, revealed HTTP timeout issues
+  - Discovered semaphore starvation (HTTP calls holding slots indefinitely)
+  - **Final solution**: Disabled Google/Gemini models by default to eliminate the gRPC thread pool
+- Full writeup: [stuck-investigate.md](https://github.com/idvorkin/nlp/blob/ed783b2aebf9bdad2de7fedcec3a9ba9e723e7f8/docs/stuck-investigate.md)
+
+#### New Tmux Extension in Less Than an Hour
+
+I love adding tmux workflows, but they usually take me like 10 hours to get right. **This time it only took one hour**
+
+
+- **TOP Takeaway**: Have Claude test as much as possible
+  - Claude could debug by actually running the tmux commands to figure out what was going on
+- **The Commands** ([gist overview](https://gist.github.com/idvorkin/ce2f4970bc328e5346fabcf6d2de74bb#file-a_settings--overview-md)):
+  - **Rotate Command** (C-a Shift+Space): Toggles between even-horizontal and even-vertical layouts
+    - [Implementation](https://github.com/idvorkin/settings/blob/538db308ee146c69a58d97b6670e80f88328f913/py/tmux_helper.py#L386-L410) (py/tmux_helper.py:L386)
+    - [Keybinding](https://github.com/idvorkin/settings/blob/538db308ee146c69a58d97b6670e80f88328f913/shared/.tmux.conf#L224-L225) (shared/.tmux.conf:L224)
+  - **Third Command** (C-a /): Toggles between even layout and 1/3-2/3 split
+    - [Implementation](https://github.com/idvorkin/settings/blob/538db308ee146c69a58d97b6670e80f88328f913/py/tmux_helper.py#L412-L443) (py/tmux_helper.py:L412)
+    - [Keybinding](https://github.com/idvorkin/settings/blob/538db308ee146c69a58d97b6670e80f88328f913/shared/.tmux.conf#L232-L233) (shared/.tmux.conf:L232)
+  - **Rename Command** (C-a t): Auto-refresh window titles from running processes
+    - [Implementation](https://github.com/idvorkin/settings/blob/538db308ee146c69a58d97b6670e80f88328f913/py/tmux_helper.py#L363-L385) (py/tmux_helper.py:L363)
+    - [Keybinding](https://github.com/idvorkin/settings/blob/538db308ee146c69a58d97b6670e80f88328f913/shared/.tmux.conf#L241) (shared/.tmux.conf:L241)
+  - [Detailed analysis by Claude](https://gist.github.com/idvorkin/ce2f4970bc328e5346fabcf6d2de74bb#file-z_claude-sonnet-4-5-20250929-md)
+- **The Coolest Part**: Claude knew I could make commands like `:thirds`, which I'm sure I searched for before and thought was impossible
+
+#### Using Voice to Make Commands
+
+- Using Wispr Flow for voice input (only works at home where I can talk)
+- **The Flow**: Eyes closed, saying a few words, stopping, saying a few more words as I think through what I want to do
+- Saying "This is nice" when I'm thinking out loud - just verbalizing my thoughts as they come
+- **The Hardest Part**: Remembering to not type but to speak out what I'm thinking
+  - My fingers want to type but I need to force myself to just talk
 
 ### 2025-09-14
 

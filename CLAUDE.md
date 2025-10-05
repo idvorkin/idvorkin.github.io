@@ -40,6 +40,17 @@ This file will direct you to all other convention files you need to follow.
 
 **Never skip consulting content_guidelines.md when creating or editing blog content.**
 
+## AI Journal Entries
+
+When creating or updating AI journal entries in `_d/ai-journal.md`:
+
+- **Read the instructions at the top of the file first** - there's a dedicated "Instructions for Claude: Creating Journal Entries" section
+- Follow the structure: TOP Takeaway, bullet points, deep links with line numbers
+- Use commit permalinks (not branch links) for GitHub references
+- Link to gist files using `#file-filename-md` anchors
+- Include artifacts: gists for transcripts, GitHub links for implementations
+- Update the table of contents (vim-markdown-toc section)
+
 ## Finding Related Blog Content
 
 When you need to find existing blog posts on a specific topic or merge new content into existing posts:
