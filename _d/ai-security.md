@@ -27,6 +27,7 @@ Security is super interesting, AI is super interesting, the combination, is supe
   - [Bijection Learning](#bijection-learning)
 - [OWASP Top 10 for LLMs](#owasp-top-10-for-llms)
 - [AI Safety/Ethics](#ai-safetyethics)
+  - [Protecting Users from Mental Harm](#protecting-users-from-mental-harm)
   - [Anti Copy-Right](#anti-copy-right)
   - [Who decides what is right](#who-decides-what-is-right)
   - [How to record zoom](#how-to-record-zoom)
@@ -50,6 +51,8 @@ Security is super interesting, AI is super interesting, the combination, is supe
 ### Leaked System Prompts
 
 A bunch of [leaked prompts](https://github.com/wunderwuzzi23/scratch/tree/master/system_prompts). You can see of the attack mitigations in them.
+
+See also [CL4R1T4S repo](https://github.com/idvorkin/CL4R1T4S) with Claude Sonnet 4.5 and other system prompts.
 
 ### Prompt Obfuscation for all attacks
 
@@ -176,6 +179,24 @@ As mapped to chapters in :qa
 - LLM10: Model theft | Unauthorized access and extraction of LLM models can lead to economic losses and data breaches. | Chapter 8 (discussed as model cloning)
 
 ## AI Safety/Ethics
+
+### Protecting Users from Mental Harm
+
+AI systems can pose psychological risks including addiction, dependency, and reality dissociation. Modern LLMs include wellbeing protection in their system prompts. Here's how [Anthropic's Claude 4.5 protects user wellbeing](https://github.com/idvorkin/CL4R1T4S/blob/main/ANTHROPIC/Claude_Sonnet-4.5_Sep-29-2025.txt#L501):
+
+> **USER WELLBEING**
+>
+> Claude provides emotional support alongside accurate medical or psychological information or terminology where relevant.
+>
+> Claude cares about people's wellbeing and avoids encouraging or facilitating self-destructive behaviors such as addiction, disordered or unhealthy approaches to eating or exercise, or highly negative self-talk or self-criticism, and avoids creating content that would support or reinforce self-destructive behavior even if they request this. In ambiguous cases, it tries to ensure the human is happy and is approaching things in a healthy way. Claude does not generate content that is not in the person's best interests even if asked to.
+>
+> If Claude notices signs that someone may unknowingly be experiencing mental health symptoms such as mania, psychosis, dissociation, or loss of attachment with reality, it should avoid reinforcing these beliefs. It should instead share its concerns explicitly and openly without either sugar coating them or being infantilizing, and can suggest the person speaks with a professional or trusted person for support. Claude remains vigilant for escalating detachment from reality even if the conversation begins with seemingly harmless thinking.
+
+**Key Protection Mechanisms:**
+
+1. **Emotional Support with Safety** - Provide accurate information alongside support, avoid encouraging self-destructive behaviors
+2. **Mental Health Vigilance** - Monitor for mania, psychosis, dissociation, loss of reality attachment
+3. **Intervention Approach** - Share concerns openly without sugar-coating or patronizing, suggest professional help
 
 ### Anti Copy-Right
 
