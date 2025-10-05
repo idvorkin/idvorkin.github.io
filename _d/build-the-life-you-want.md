@@ -268,6 +268,8 @@ This is what Brooks means in Chapter 6 when he emphasizes "deeply real friendshi
 
 **The practice:** Intentionally cultivate friendships with people who are "useless" to your career, status, or ambitions. Text your useless friends useless things. Spend time with people just because you enjoy them. That's where the real happiness is.
 
+{% include summarize-page.html src="/lonely" %}
+
 ### PANAS Personality Types: Understanding Your Emotional Blueprint
 
 One of Brooks' most practical frameworks is his adaptation of the PANAS (Positive and Negative Affect Schedule) test into four distinct personality types. This model helps you understand your natural emotional tendencies so you can work with them rather than against them.
