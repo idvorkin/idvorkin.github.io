@@ -20,7 +20,6 @@ A running journal of days that actually worked - the ones where health habits st
 
 - [The Chronicles](#the-chronicles)
   - [2025-10-04](#2025-10-04)
-  - [2025-10-03](#2025-10-03)
   - [2018-11-06](#2018-11-06)
 
 <!-- vim-markdown-toc-end -->
@@ -66,15 +65,13 @@ A running journal of days that actually worked - the ones where health habits st
 
 - **3:30pm** - Got home. The 15-minute drive was worth it - caught Zach laughing with his friends, which is its own kind of treasure.
 
-- **3:30-6pm** - Uploaded [Fortune Cookie](https://www.youtube.com/watch?v=IQsgbcUup2M&list=PLJveOxX-mxxBsIsk83fr0sb3i7RdpaJbF), made blog updates (including this very post - meta!). Caught myself being grateful for the chaos of being a dad-taxi instead of resentful about it.
+- **3:30-6pm** - Uploaded [Fortune Cookie](https://www.youtube.com/watch?v=IQsgbcUup2M&list=PLJveOxX-mxxBsIsk83fr0sb3i7RdpaJbF), made many [blog updates (including this very post - meta!)](https://gist.github.com/idvorkin/eeab76b0d7560be4d8c6fa900d8b44e5).
+- **Uncategorized** - Very good eating
+- **Odd things about yesterday**
+  - First run in like 3 years. (2 min on, 3 min walk) × 5. Gotta start slow to avoid injury.
+  - Decided to start a [reverse bucket list](/bucket-list) and get rid of my [juggling torches](http://ig66.blogspot.com/2014/08/accomplishment-unlocked-juggling-file.html?q=torches). Time to practice wanting less.
 
 ---
-
-### 2025-10-03
-
-- First run in like 3 years. (2 min on, 3 min walk) × 5. Gotta start slow to avoid injury.
-
-- Decided to start a [reverse bucket list](/bucket-list) and get rid of my [juggling torches](http://ig66.blogspot.com/2014/08/accomplishment-unlocked-juggling-file.html?q=torches). Time to practice wanting less.
 
 ---
 
