@@ -87,6 +87,12 @@ Values I'm reinforcing (Essentialist, Class Act, etc.)
 
 {% include youtube_playlist.html list="PLJveOxX-mxxC9PYL8ElnUnFe-SDh4h_wo" %}
 
+### Igor Fortune Cookie
+
+Life wisdom in 60 seconds - leaving breadcrumbs for my kids and anyone else who finds value
+
+{% include youtube_playlist.html list="PLJveOxX-mxxBsIsk83fr0sb3i7RdpaJbF" %}
+
 ### Music Videos/Dances
 
 Movement and joy

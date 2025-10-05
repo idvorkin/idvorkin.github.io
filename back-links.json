@@ -51,6 +51,7 @@
         "/breathe": "/breath",
         "/breathing": "/breath",
         "/bryan-johnson": "/blueprint",
+        "/bucket": "/bucket-list",
         "/build-life": "/build-life-you-want",
         "/care": "/caring",
         "/centenarian": "/last-year",
@@ -202,6 +203,7 @@
         "/responsible": "/be-proactive",
         "/retirement": "/retire",
         "/retiring": "/retire",
+        "/reverse-bucket-list": "/bucket-list",
         "/rework": "/staysmallstaysmall",
         "/root-cause-analysis": "/coe",
         "/rsu-risk": "/stock-concentration",
@@ -278,10 +280,11 @@
     "url_info": {
         "/22": {
             "description": "In 2019 I created a program for 15 fantastic interns! A program highlight was my talk titled “What I wish I knew at 22, and so might you”. The talk received a 94% overall rating from over 15 interns, 10 SDE-IIs, and 1 senior developer. Even though the talk focuses on how to live the good life, a big chunk of life is work, so there’s good coverage on how to optimize your career.\n\n",
-            "doc_size": 16000,
+            "doc_size": 17000,
             "file_path": "_site/22.html",
             "incoming_links": [
-                "/chapters"
+                "/chapters",
+                "/manager-book"
             ],
             "last_modified": "2024-05-05T08:25:00-07:00",
             "markdown_path": "_d/22.md",
@@ -309,7 +312,7 @@
         },
         "/42": {
             "description": "You survived young kids, marriage, house, some easy crises, and now it’s time for remember , a healthy woman has a thousand wishes, a sick woman - just one: Things i wish I knew at 42\n\n",
-            "doc_size": 28000,
+            "doc_size": 26000,
             "file_path": "_site/42.html",
             "incoming_links": [
                 "/chapters",
@@ -317,7 +320,7 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-10-03T15:23:44.066227",
+            "last_modified": "2025-10-03T15:30:14-07:00",
             "markdown_path": "_d/42.md",
             "outgoing_links": [
                 "/chapters",
@@ -366,7 +369,9 @@
                 "/depression",
                 "/end-in-mind",
                 "/eulogy",
+                "/first-things-first",
                 "/first-understand",
+                "/gap-year-igor",
                 "/psychic-weight",
                 "/sharpen-the-saw",
                 "/synergize",
@@ -546,7 +551,8 @@
                 "/mind-at-work",
                 "/productive",
                 "/psychic-shadows",
-                "/psychic-weight"
+                "/psychic-weight",
+                "/timeoff"
             ],
             "last_modified": "2025-09-01T09:23:45-07:00",
             "markdown_path": "_d/addiction.md",
@@ -774,7 +780,7 @@
                 "/ai",
                 "/ai-journal"
             ],
-            "last_modified": "2025-10-04T11:26:50.752438",
+            "last_modified": "2025-10-04T11:26:57-07:00",
             "markdown_path": "_d/ai-security.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -862,12 +868,12 @@
                 "/touching",
                 "/voices"
             ],
-            "last_modified": "2025-10-04T08:02:07.216075",
+            "last_modified": "2025-10-04T08:02:17-07:00",
             "markdown_path": "_d/anxiety.md",
             "outgoing_links": [
-                "/7h-c1",
                 "/anxiety-management",
-                "/idle-loop",
+                "/be-proactive",
+                "/idle",
                 "/slow",
                 "/voices"
             ],
@@ -1021,17 +1027,19 @@
         },
         "/be-proactive": {
             "description": "I choose ‘.’ I am responsible for my own life ‘.’ My behavior is a function of my decisions, not my conditions ‘.’ I can subordinate feelings to values ‘.’ I have the initiative and the responsibility to make things happen. These are my insights from 7 habits Chapter 1.\n\n",
-            "doc_size": 21000,
+            "doc_size": 22000,
             "file_path": "_site/be-proactive.html",
             "incoming_links": [
                 "/7-habits",
                 "/affirmations",
+                "/anxiety",
                 "/d/habits",
                 "/emotions",
                 "/frog",
                 "/idle",
                 "/process-journal",
-                "/regrets"
+                "/regrets",
+                "/siy"
             ],
             "last_modified": "2025-04-02T22:07:54-07:00",
             "markdown_path": "_d/7h-c1.md",
@@ -1156,6 +1164,7 @@
             "file_path": "_site/books-that-defined-me.html",
             "incoming_links": [
                 "/being-a-great-manager",
+                "/manager-book",
                 "/manager-book-appendix"
             ],
             "last_modified": "2025-07-20T19:26:41-07:00",
@@ -1213,6 +1222,29 @@
             "title": "A playground for brython and pystory",
             "url": "/brython"
         },
+        "/bucket-list": {
+            "description": "I keep a bucket list. You probably do too. But here’s what I learned from Arthur Brooks, Harvard professor and happiness researcher: the most powerful thing you can do with a bucket list isn’t to achieve the items on it. It’s to cross them out by writing them on a reverse bucket list. The reverse bucket list isn’t about lowering standards or settling. It’s about raising standards—but for what counts as worthy of your precious, finite attention and desire.\n\n",
+            "doc_size": 24000,
+            "file_path": "_site/bucket-list.html",
+            "incoming_links": [
+                "/build-life-you-want"
+            ],
+            "last_modified": "2025-10-04T17:34:09-07:00",
+            "markdown_path": "_d/bucket-list.md",
+            "outgoing_links": [
+                "/chasing-daylight",
+                "/eulogy",
+                "/gap-year-igor",
+                "/last-year",
+                "/manager-book",
+                "/tesla",
+                "/y24",
+                "/y25"
+            ],
+            "redirect_url": "",
+            "title": "The Reverse Bucket List: Cross Out What You Don't Actually Want",
+            "url": "/bucket-list"
+        },
         "/build-bubble-bike": {
             "description": "What the heck is a bubble bike? Ah, you see, bringing joy for others is my thing. As they say in Buddhism there are many vehicles to bring joy, and my vehicle is the bubble bike.\n\n",
             "doc_size": 15000,
@@ -1231,13 +1263,15 @@
         },
         "/build-life-you-want": {
             "description": "Happiness isn’t a destination you arrive at—it’s a direction you choose to walk in daily. Build The Life YOU Want by Arthur Brooks and Oprah Winfrey demolishes the myth that happiness is something that happens to you, replacing it with the empowering truth that happiness is something you actively create. This isn’t another feel-good book promising easy answers; it’s a science-backed roadmap for building genuine fulfillment through intentional choices and sustainable practices.\n\n",
-            "doc_size": 36000,
+            "doc_size": 39000,
             "file_path": "_site/build-life-you-want.html",
             "incoming_links": [],
-            "last_modified": "2025-09-29T10:06:52.127245",
+            "last_modified": "2025-10-04T17:51:33-07:00",
             "markdown_path": "_d/build-the-life-you-want.md",
             "outgoing_links": [
-                "/emotions"
+                "/bucket-list",
+                "/emotions",
+                "/lonely"
             ],
             "redirect_url": "",
             "title": "Build The Life YOU Want",
@@ -1315,6 +1349,7 @@
             "doc_size": 23000,
             "file_path": "_site/chasing-daylight.html",
             "incoming_links": [
+                "/bucket-list",
                 "/gap-year-igor",
                 "/last-year"
             ],
@@ -1410,15 +1445,15 @@
                 "/prompts",
                 "/writing"
             ],
-            "last_modified": "2025-09-30T07:23:40.789712",
+            "last_modified": "2025-09-30T07:24:35-07:00",
             "markdown_path": "_d/coaching.md",
             "outgoing_links": [
+                "/curious",
                 "/decisive",
-                "/grandmother-mind",
+                "/manager-book",
                 "/pride",
                 "/prompts",
-                "/search-inside-yourself",
-                "/the-manager-book"
+                "/siy"
             ],
             "redirect_url": "",
             "title": "Coaching - How to help others find insight",
@@ -1467,7 +1502,8 @@
             "doc_size": 25000,
             "file_path": "_site/content-audience.html",
             "incoming_links": [
-                "/content-creation"
+                "/content-creation",
+                "/y25"
             ],
             "last_modified": "2025-09-08T09:25:35-07:00",
             "markdown_path": "_d/content-audience.md",
@@ -1481,13 +1517,13 @@
         },
         "/content-creation": {
             "description": "Ah, content creation! Remember when it meant awkwardly holding your phone at arm’s length, hoping your thumb wouldn’t photobomb your masterpiece? We’ve come a long way, baby! Whether you’re aiming to be the next TikTok sensation or just want to share your magic tricks without accidentally revealing them, this guide will help you level up from “my mom’s my only viewer” to “wait, is that video going viral?”\n\n",
-            "doc_size": 27000,
+            "doc_size": 29000,
             "file_path": "_site/content-creation.html",
             "incoming_links": [
                 "/monetize",
                 "/y25"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2025-09-29T21:36:57-07:00",
             "markdown_path": "_d/content-creation.md",
             "outgoing_links": [
                 "/content-audience",
@@ -1525,6 +1561,7 @@
                 "/affirmations",
                 "/being-a-great-manager",
                 "/class-act",
+                "/coaching",
                 "/emotions",
                 "/essentialism",
                 "/first-understand",
@@ -1714,12 +1751,14 @@
                 "/hobby",
                 "/idle",
                 "/life-as-business",
+                "/manager-book",
                 "/mind-at-work",
                 "/operating-manual",
                 "/physical-health",
                 "/productive",
                 "/psychic-weight",
                 "/sharpen-the-saw",
+                "/slow",
                 "/switch"
             ],
             "last_modified": "2025-08-13T07:43:13-07:00",
@@ -1751,6 +1790,7 @@
                 "/activation",
                 "/books-that-defined-me",
                 "/enemy",
+                "/energy",
                 "/energy-abundance",
                 "/fail",
                 "/frog",
@@ -1760,7 +1800,9 @@
                 "/parkinson",
                 "/productive",
                 "/psychic-shadows",
-                "/psychic-weight"
+                "/psychic-weight",
+                "/slow",
+                "/timeoff"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/resistance.md",
@@ -1809,6 +1851,7 @@
                 "/chasing-daylight",
                 "/covid",
                 "/elder",
+                "/gap-year-igor",
                 "/last-year",
                 "/mortality-software",
                 "/psychic-weight"
@@ -1843,6 +1886,7 @@
                 "/coaching",
                 "/gap-year",
                 "/job-hunt-stress",
+                "/manager-book",
                 "/pride",
                 "/random-idea",
                 "/work-satisfaction"
@@ -1968,7 +2012,8 @@
                 "/end-in-mind",
                 "/gtd",
                 "/manager-book",
-                "/parkinson"
+                "/parkinson",
+                "/work-satisfaction"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/2017-11-12-thedip.md",
@@ -2009,13 +2054,13 @@
                 "/40yo",
                 "/addiction"
             ],
-            "last_modified": "2025-10-03T13:06:16.385909",
+            "last_modified": "2025-10-03T13:06:19-07:00",
             "markdown_path": "_d/elder.md",
             "outgoing_links": [
                 "/40yo",
-                "/7h-c2",
                 "/death",
-                "/essential"
+                "/end-in-mind",
+                "/essentialism"
             ],
             "redirect_url": "",
             "title": "Wrinkles and Wisdom: A Guide to Aging Like Fine Wine (Not Milk)",
@@ -2059,7 +2104,7 @@
                 "/slow",
                 "/strengths"
             ],
-            "last_modified": "2025-09-30T07:23:40.789712",
+            "last_modified": "2025-09-30T07:24:35-07:00",
             "markdown_path": "_d/emotions.md",
             "outgoing_links": [
                 "/anger",
@@ -2108,8 +2153,11 @@
                 "/affirmations",
                 "/content-audience",
                 "/d/resistance",
+                "/elder",
                 "/gap-year-igor",
-                "/productive"
+                "/manager-book",
+                "/productive",
+                "/siy"
             ],
             "last_modified": "2025-05-12T09:24:30-07:00",
             "markdown_path": "_d/7h-c2.md",
@@ -2155,19 +2203,19 @@
                 "/slow",
                 "/timeoff"
             ],
-            "last_modified": "2025-09-30T07:23:33.576778",
+            "last_modified": "2025-09-30T07:24:35-07:00",
             "markdown_path": "_d/energy.md",
             "outgoing_links": [
                 "/activation",
+                "/d/resistance",
                 "/joy",
                 "/mania",
                 "/mood",
                 "/operating-manual",
                 "/productive",
-                "/resistance",
                 "/sleep",
                 "/slow",
-                "/time-off"
+                "/timeoff"
             ],
             "redirect_url": "",
             "title": "Control your Energy",
@@ -2206,12 +2254,15 @@
                 "/balance",
                 "/be-proactive",
                 "/books-that-defined-me",
+                "/elder",
                 "/end-in-mind",
+                "/first-things-first",
                 "/frog",
                 "/gtd",
                 "/overload",
                 "/parkinson",
                 "/partner-trouble",
+                "/timeoff",
                 "/timeoff-2022-07"
             ],
             "last_modified": "2025-08-24T09:03:19-07:00",
@@ -2236,6 +2287,7 @@
                 "/balance",
                 "/bike-tesla-identity",
                 "/bmy",
+                "/bucket-list",
                 "/depression",
                 "/end-in-mind",
                 "/frog",
@@ -2312,7 +2364,7 @@
         },
         "/first-things-first": {
             "description": "The key to effective management, is allocating energy through the lens of importance rather than urgency. E.g, ask yourself what one thing could you do that if you did on a regular basis, would make a tremendous positive difference in your life? Lemme guess, it’s important, but not urgent so you’re not doing it. These are my insights based on the 7 habits Chapter 3.\n\n",
-            "doc_size": 26000,
+            "doc_size": 25000,
             "file_path": "_site/first-things-first.html",
             "incoming_links": [
                 "/4dx",
@@ -2322,12 +2374,12 @@
                 "/delegate",
                 "/frog"
             ],
-            "last_modified": "2025-09-30T06:58:49.873988",
+            "last_modified": "2025-09-30T06:59:49-07:00",
             "markdown_path": "_d/7h-c3.md",
             "outgoing_links": [
-                "/7h",
+                "/7-habits",
                 "/delegate",
-                "/essential",
+                "/essentialism",
                 "/frog",
                 "/gtd",
                 "/switch",
@@ -2348,7 +2400,8 @@
                 "/class-act",
                 "/curious",
                 "/negotiate",
-                "/sell"
+                "/sell",
+                "/work-satisfaction"
             ],
             "last_modified": "2021-10-30T10:02:27-07:00",
             "markdown_path": "_d/7h-c5.md",
@@ -2435,26 +2488,27 @@
             "incoming_links": [
                 "/42",
                 "/activation",
+                "/bucket-list",
                 "/gap-year",
                 "/stock-concentration",
                 "/timeoff",
                 "/timeoff-2025-08"
             ],
-            "last_modified": "2025-10-01T17:38:05.640604",
+            "last_modified": "2025-10-01T17:39:27-07:00",
             "markdown_path": "_d/igor-gap-year.md",
             "outgoing_links": [
-                "/7habits",
+                "/7-habits",
                 "/activation",
                 "/affirmations",
                 "/chapters",
                 "/chasing-daylight",
                 "/d/resistance",
+                "/death",
                 "/emotional-health",
                 "/end-in-mind",
                 "/gap-year",
                 "/kettlebell",
                 "/money",
-                "/on-being-mortal",
                 "/parkinson",
                 "/physical-health",
                 "/produce-consume",
@@ -2463,10 +2517,10 @@
                 "/sleep",
                 "/stock-concentration",
                 "/structure",
+                "/sustainable-work",
                 "/timeoff",
                 "/tori",
-                "/voices",
-                "/wlb-manifesto"
+                "/voices"
             ],
             "redirect_url": "",
             "title": "Will Igor Take a Gap Year? Wrestling with Dragons and Dreams",
@@ -2539,7 +2593,7 @@
         },
         "/gpt": {
             "description": "Just like the search bar in google fills in what you’re typing when you say “Where can I ge .. “ GPT3 complete strings as well. Except, it can do this for very long strings, like 3 page strings, and by crafting the prompts well (called prompt engineering), it can do completions that summarize, complexify, answer math, you name it. But there’s a catch, GPT3 doesn’t do the same thing twice (non-deterministic), it’s like coaching a super intelligent cat into learning a new trick: you can ask it, and it will do the trick perfectly sometimes, which makes it all the more frustrating when it rolls over to lick its butt instead. You know the problem is not that it can’t but that it won’t(From Gwern).\n\n",
-            "doc_size": 25000,
+            "doc_size": 26000,
             "file_path": "_site/gpt.html",
             "incoming_links": [
                 "/ai-art",
@@ -2583,7 +2637,7 @@
         },
         "/grammerly": {
             "description": "\n\n",
-            "doc_size": 12000,
+            "doc_size": 13000,
             "file_path": "_site/grammerly.html",
             "incoming_links": [],
             "last_modified": "2025-08-24T09:03:19-07:00",
@@ -2783,6 +2837,7 @@
             "doc_size": 18000,
             "file_path": "_site/idle.html",
             "incoming_links": [
+                "/anxiety",
                 "/depression",
                 "/gtd",
                 "/happy",
@@ -3000,6 +3055,7 @@
                 "/eulogy",
                 "/gap-year-igor",
                 "/physical-health",
+                "/timeoff",
                 "/untangled",
                 "/y24"
             ],
@@ -3016,6 +3072,7 @@
             "file_path": "_site/last-year.html",
             "incoming_links": [
                 "/42",
+                "/bucket-list",
                 "/chasing-daylight",
                 "/death",
                 "/retire",
@@ -3096,6 +3153,7 @@
             "doc_size": 43000,
             "file_path": "_site/lonely.html",
             "incoming_links": [
+                "/build-life-you-want",
                 "/mental-pain"
             ],
             "last_modified": "2025-07-13T06:56:50-07:00",
@@ -3137,6 +3195,8 @@
             "incoming_links": [
                 "/amazon",
                 "/being-a-great-manager",
+                "/bucket-list",
+                "/coaching",
                 "/content-audience",
                 "/job",
                 "/manager-book-appendix",
@@ -3147,25 +3207,24 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-09-30T07:23:33.576778",
+            "last_modified": "2025-09-30T07:24:35-07:00",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
             "outgoing_links": [
-                "/7h-c2",
-                "/90-days",
+                "/22",
                 "/90days",
                 "/being-a-great-manager",
-                "/books",
-                "/coach",
+                "/books-that-defined-me",
                 "/coaching",
                 "/coe",
                 "/comp",
-                "/decide",
+                "/d/habits",
+                "/decisive",
                 "/dip",
-                "/dsat",
-                "/habits",
+                "/end-in-mind",
                 "/job",
                 "/job-hunt-stress",
                 "/manager-book-appendix",
+                "/ml",
                 "/moments-at-work",
                 "/overload",
                 "/pride",
@@ -3176,11 +3235,10 @@
                 "/static/idvorkin-linked-in-feedback-lastest.pdf",
                 "/strategy",
                 "/td/cloud-first-applications",
-                "/td/machine-learning",
                 "/testing",
-                "/twentytwo",
                 "/what-makes-a-leader",
-                "/write"
+                "/work-satisfaction",
+                "/writing"
             ],
             "redirect_url": "",
             "title": "How to EM: Be the manager everyone wants",
@@ -3279,7 +3337,7 @@
         },
         "/mermaid": {
             "description": "Lets try d2\n\n",
-            "doc_size": 14000,
+            "doc_size": 15000,
             "file_path": "_site/mermaid.html",
             "incoming_links": [],
             "last_modified": "2023-12-17T18:49:14+00:00",
@@ -3303,7 +3361,7 @@
         },
         "/mind-at-work": {
             "description": "I have a problem, an addiction, an addiction so detrimental to quality of life, it should be described as a disease. This disease is not being present. There are many symptoms of the disease, but today I’m going to talk about my most frequent symptoms, my body at home, but my mind at work.\n\n",
-            "doc_size": 19000,
+            "doc_size": 20000,
             "file_path": "_site/mind-at-work.html",
             "incoming_links": [
                 "/addiction",
@@ -3333,7 +3391,8 @@
                 "/being-a-great-manager",
                 "/idle",
                 "/psychic-shadows",
-                "/psychic-weight"
+                "/psychic-weight",
+                "/siy"
             ],
             "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_d/2015-11-11-mind-monsters.md",
@@ -3353,6 +3412,7 @@
             "file_path": "_site/ml.html",
             "incoming_links": [
                 "/ai",
+                "/manager-book",
                 "/td/stats"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -3529,7 +3589,8 @@
                 "/productive",
                 "/regrets",
                 "/sell",
-                "/synergize"
+                "/synergize",
+                "/work-satisfaction"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/gty.md",
@@ -3754,7 +3815,7 @@
                 "/money",
                 "/tori"
             ],
-            "last_modified": "2025-09-30T06:27:54.968555",
+            "last_modified": "2025-09-30T06:33:14-07:00",
             "markdown_path": "_d/partner-trouble.md",
             "outgoing_links": [
                 "/essentialism",
@@ -3905,7 +3966,7 @@
                 "/manager-book",
                 "/partner-trouble"
             ],
-            "last_modified": "2025-09-30T06:27:54.968555",
+            "last_modified": "2025-09-30T06:33:14-07:00",
             "markdown_path": "_d/product.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -4143,7 +4204,7 @@
             "doc_size": 30000,
             "file_path": "_site/religion.html",
             "incoming_links": [],
-            "last_modified": "2025-10-04T11:35:10.996343",
+            "last_modified": "2025-10-04T11:38:36-07:00",
             "markdown_path": "_d/religion.md",
             "outgoing_links": [
                 "/anxiety"
@@ -4303,7 +4364,7 @@
         },
         "/sharpen-the-saw": {
             "description": "A young man saw a woodcutter cutting down a tree and asked “What are you doing?” “Are you blind?” the woodcutter replied. “I’m cutting down this tree.” The young man continued. “You look exhausted! Take a break. Sharpen your saw.” The woodcutter explained he’d been sawing for hours and did not have time to take a break. The young man pushed back… “If you sharpen the saw, you would cut down the tree much faster.” The woodcutter said “I don’t have time to sharpen the saw. Don’t you see I’m too busy. These are my insights based on the 7 habits Chapter 7.\n\n",
-            "doc_size": 14000,
+            "doc_size": 15000,
             "file_path": "_site/sharpen-the-saw.html",
             "incoming_links": [
                 "/7-habits",
@@ -4346,6 +4407,7 @@
                 "/anxiety-management",
                 "/be-proactive",
                 "/books-that-defined-me",
+                "/coaching",
                 "/curious",
                 "/depression",
                 "/emotional-health",
@@ -4363,16 +4425,16 @@
                 "/timeoff",
                 "/timeoff-2020-03"
             ],
-            "last_modified": "2025-09-29T10:06:38.506393",
+            "last_modified": "2025-09-29T10:07:00-07:00",
             "markdown_path": "_d/siy.md",
             "outgoing_links": [
-                "/7h-c1",
-                "/7h-c2",
+                "/be-proactive",
                 "/emotional-health",
                 "/emotions",
+                "/end-in-mind",
                 "/happy",
                 "/ig66/685",
-                "/monsters",
+                "/mind-monsters",
                 "/psychic-shadows",
                 "/sublime",
                 "/what-makes-a-leader"
@@ -4439,17 +4501,17 @@
                 "/energy",
                 "/mood"
             ],
-            "last_modified": "2025-09-30T07:23:33.576778",
+            "last_modified": "2025-09-30T07:24:35-07:00",
             "markdown_path": "_d/slow.md",
             "outgoing_links": [
                 "/activation",
                 "/anxiety",
                 "/balance",
+                "/d/habits",
+                "/d/resistance",
                 "/emotions",
                 "/energy",
-                "/habits",
                 "/produce-consume",
-                "/resistance",
                 "/siy"
             ],
             "redirect_url": "",
@@ -4544,7 +4606,7 @@
             "incoming_links": [
                 "/operating-manual"
             ],
-            "last_modified": "2025-09-29T10:06:38.506393",
+            "last_modified": "2025-09-29T10:07:00-07:00",
             "markdown_path": "_posts/2018-05-25-strength-finder.md",
             "outgoing_links": [
                 "/emotions",
@@ -4612,6 +4674,7 @@
                 "/balance",
                 "/being-a-great-manager",
                 "/depression",
+                "/gap-year-igor",
                 "/overload",
                 "/regrets",
                 "/retire",
@@ -4709,7 +4772,7 @@
         },
         "/td/back_ref": {
             "description": "This blog is my collection of evergreen notes, a place to have my thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here’s my strategy to create them.\n\n",
-            "doc_size": 13000,
+            "doc_size": 14000,
             "file_path": "_site/td/back_ref.html",
             "incoming_links": [],
             "last_modified": "2022-04-16T15:22:43-07:00",
@@ -5052,6 +5115,7 @@
             "doc_size": 19000,
             "file_path": "_site/tesla.html",
             "incoming_links": [
+                "/bucket-list",
                 "/eulogy",
                 "/irl",
                 "/kayak",
@@ -5130,6 +5194,7 @@
             "incoming_links": [
                 "/activation",
                 "/balance",
+                "/energy",
                 "/energy-abundance",
                 "/gap-year",
                 "/gap-year-igor",
@@ -5150,24 +5215,24 @@
                 "/timeoff-2024-08",
                 "/timeoff-2025-08"
             ],
-            "last_modified": "2025-10-03T15:30:11.304599",
+            "last_modified": "2025-10-03T15:30:14-07:00",
             "markdown_path": "_d/time_off.md",
             "outgoing_links": [
-                "/addictions",
+                "/addiction",
                 "/balloon",
+                "/d/resistance",
                 "/diet",
                 "/energy",
-                "/essential",
+                "/essentialism",
                 "/eulogy",
                 "/frog",
                 "/gap-year",
                 "/gap-year-igor",
                 "/happy",
-                "/kettlebells",
+                "/kettlebell",
                 "/magic",
                 "/mind-at-work",
                 "/parkinson",
-                "/resistance",
                 "/siy",
                 "/terzepatide",
                 "/timeoff-2020-03",
@@ -5179,7 +5244,7 @@
         },
         "/timeoff-2020-03": {
             "description": "In March 2020, I took a 2 month sabatical between leaving Amazon and joining Facebook. Given it was a substantial amount of time, I came up with some big plans, and wrote them down. It was a great plan, BUT my time off correlated perfectly to the Corona Virus and as a result I wasted lots of my mental energy thinking about the Corona Virus, and adjusting to being in pseudo-quarantine. Took me a while, but I finally realized I should ignore corona virus, or at least minimize my time thinking about it.\n\n",
-            "doc_size": 30000,
+            "doc_size": 31000,
             "file_path": "_site/timeoff-2020-03.html",
             "incoming_links": [
                 "/timeoff"
@@ -5596,7 +5661,7 @@
         },
         "/vim": {
             "description": "I used Vim for years, but have now transitioned to Neovim. While most of these tips work in both editors, some are Neovim-specific. Here’s my collection of tips I want to practice and remember.\n\n",
-            "doc_size": 13000,
+            "doc_size": 14000,
             "file_path": "_site/vim.html",
             "incoming_links": [
                 "/enable"
@@ -5750,7 +5815,7 @@
         },
         "/win-win": {
             "description": "Win/Win is a constantly seeking mutual benefit in all interactions. Win/Win means that agreements or solutions are mutually beneficial, mutually satisfying. With a Win/Win solution, all parties feel good about the decision and feel committed to the action plan. Win/Win sees life as a cooperative, not a competitive arena. Most people tend to think in terms of dichotomies: strong or weak, hardball or softball, win or lose. But that kind of thinking is fundamentally flawed. It’s based on power and position rather than on principle. Win/Win is based on the paradigm that there is plenty for everybody, that one person’s success is not achieved at the expense or exclusion of the success of others.\n\n",
-            "doc_size": 20000,
+            "doc_size": 21000,
             "file_path": "_site/win-win.html",
             "incoming_links": [
                 "/7-habits",
@@ -5758,7 +5823,8 @@
                 "/negotiate",
                 "/sell",
                 "/synergize",
-                "/voices"
+                "/voices",
+                "/work-satisfaction"
             ],
             "last_modified": "2024-10-05T21:24:07-07:00",
             "markdown_path": "_d/7h-c4.md",
@@ -5774,29 +5840,28 @@
             "doc_size": 32000,
             "file_path": "_site/work-satisfaction.html",
             "incoming_links": [
+                "/manager-book",
                 "/mind-at-work",
                 "/retire"
             ],
-            "last_modified": "2025-09-30T07:23:40.789712",
+            "last_modified": "2025-09-30T07:24:35-07:00",
             "markdown_path": "_d/sat_dsat.md",
             "outgoing_links": [
-                "/7h-c4",
-                "/7h-c5",
                 "/comp",
-                "/decide",
                 "/decisive",
+                "/dip",
                 "/eulogy",
-                "/gty",
+                "/first-understand",
                 "/insecure",
                 "/job-hunt-stress",
                 "/manager-book",
                 "/mental-pain",
                 "/mind-at-work",
+                "/negotiate",
                 "/overload",
                 "/shame",
                 "/sustainable-work",
-                "/the-dip",
-                "/wlb"
+                "/win-win"
             ],
             "redirect_url": "",
             "title": "Satisfaction is not the lack of dissatisfaction",
@@ -5826,6 +5891,7 @@
                 "/amazon",
                 "/chow",
                 "/enable",
+                "/manager-book",
                 "/manager-book-appendix",
                 "/operating-manual"
             ],
@@ -5852,6 +5918,7 @@
             "doc_size": 25000,
             "file_path": "_site/y24.html",
             "incoming_links": [
+                "/bucket-list",
                 "/gap-year"
             ],
             "last_modified": "2025-09-13T12:56:01-07:00",
@@ -5874,17 +5941,19 @@
         },
         "/y25": {
             "description": "I like to begin in mind, so let’s write a report for 2025. This hasn’t happened, but if I don’t write it out and focus on it, it certainly won’t.\n\n",
-            "doc_size": 19000,
+            "doc_size": 20000,
             "file_path": "_site/y25.html",
             "incoming_links": [
+                "/bucket-list",
                 "/gap-year"
             ],
-            "last_modified": "2025-06-19T08:16:44-07:00",
+            "last_modified": "2025-10-04T17:59:35-07:00",
             "markdown_path": "_d/y2025.md",
             "outgoing_links": [
                 "/42",
                 "/chapters",
                 "/chop",
+                "/content-audience",
                 "/content-creation",
                 "/last-year",
                 "/manager-book",
