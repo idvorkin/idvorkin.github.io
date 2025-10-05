@@ -87,6 +87,10 @@ When creating a new AI journal entry, follow these guidelines:
    - For GitHub repos: Use commit permalinks with line numbers (e.g., `blob/COMMIT_HASH/path/file.py#L90-L100`)
    - Walk the GitHub repo history to find the exact commit hash and line numbers
    - Include both implementation and configuration files where relevant
+   - **Example from 2025-10-05 entries**:
+     - [Four-Hour Python Deadlock Detective Work](https://github.com/idvorkin/idvorkin.github.io/blob/b4251cd8c7963402044f66bcc56fd8ff0f8adf49/_d/ai-journal.md#L196-L213)
+     - [New Tmux Extension in Less Than an Hour](https://github.com/idvorkin/idvorkin.github.io/blob/b4251cd8c7963402044f66bcc56fd8ff0f8adf49/_d/ai-journal.md#L215-L233)
+     - [Using Voice to Make Commands](https://github.com/idvorkin/idvorkin.github.io/blob/b4251cd8c7963402044f66bcc56fd8ff0f8adf49/_d/ai-journal.md#L235-L241)
 4. **Artifacts**:
    - Link to gists for detailed transcripts/analysis
    - Link to GitHub issues/PRs for context
@@ -193,6 +197,8 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 ### 2025-10-05
 
+_See [Instructions for Claude: Creating Journal Entries](https://github.com/idvorkin/idvorkin.github.io/blob/b4251cd8c7963402044f66bcc56fd8ff0f8adf49/_d/ai-journal.md#L76-L111) for guidelines on adding new entries._
+
 #### Four-Hour Python Deadlock Detective Work
 
 - **TOP Takeaway**: Switch from tactical to strategic
@@ -234,11 +240,35 @@ I love adding tmux workflows, but they usually take me like 10 hours to get righ
 
 #### Using Voice to Make Commands
 
-- Using Wispr Flow for voice input (only works at home where I can talk)
+- **TOP Takeaway**: Talking to Claude is just like talking to another engineer
+  - You tell them things with voice you don't type at them
+  - More natural, conversational, less formal
+- Using [Wispr Flow](https://wisprflow.ai/) for voice input (only works at home where I can talk)
 - **The Flow**: Eyes closed, saying a few words, stopping, saying a few more words as I think through what I want to do
 - Saying "This is nice" when I'm thinking out loud - just verbalizing my thoughts as they come
 - **The Hardest Part**: Remembering to not type but to speak out what I'm thinking
   - My fingers want to type but I need to force myself to just talk
+- **[Wispr Flow](https://wisprflow.ai/) vs [SuperWhisper](https://superwhisper.com/)**:
+  - **Wispr Flow**: Seems faster and maybe more accurate, cloud-based with intelligent editing (removes filler words, formats automatically)
+  - **SuperWhisper**: Much more configurable, allows you to run local models if you care about privacy, multiple AI model sizes (Nano to Ultra)
+  - Both work on macOS and mobile (iPhone) - discovered them on mobile first
+  - Both are a billion times better than Apple's default dictation
+  - I chose Wispr Flow for the speed and automatic cleanup - worth the privacy tradeoff for me the majority of the time
+
+#### Automating Journal Entries
+
+- **TOP Takeaway**: If you're doing something repetitive, have Claude do it
+  - Like this journal entry - self-referential, I know
+  - Created instructions so Claude can write properly formatted AI journal entries automatically
+- **The Problem**: Journal entries were inconsistent, lacking proper structure and deep links to source materials
+- **What Worked**:
+  - Created [Instructions for Claude section](https://github.com/idvorkin/idvorkin.github.io/blob/b4251cd8c7963402044f66bcc56fd8ff0f8adf49/_d/ai-journal.md#L76-L111) with detailed guidelines
+  - Added examples showing proper GitHub permalink format with line numbers
+  - Documented voice and tone expectations for future entries
+- **The Result**: Now Claude can create properly formatted journal entries with:
+  - Consistent structure (TOP Takeaway, bullets, deep links)
+  - Proper artifact linking (gists with file anchors, GitHub permalinks)
+  - TOC updates automatically included
 
 ### 2025-09-14
 
