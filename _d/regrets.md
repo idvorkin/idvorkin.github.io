@@ -97,11 +97,83 @@ As we can see, regret distribution varies across age groups. People tend to have
 
 It's important to note that this is just a general trend, and individual experiences may vary.
 
-| Decade | Foundational | Boldness | Moral | Connection |
-| ------ | ------------ | -------- | ----- | ---------- |
-| 20s    | 15%          | 35%      | 25%   | 25%        |
-| 30s    | 20%          | 30%      | 20%   | 30%        |
-| 40s    | 25%          | 25%      | 20%   | 30%        |
-| 50s    | 20%          | 20%      | 30%   | 30%        |
-| 60s    | 15%          | 15%      | 35%   | 35%        |
-| 70s+   | 10%          | 10%      | 40%   | 40%        |
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js" integrity="sha512-tMabqarPtykgDtdtSqCL3uLVM0gS1ZkUAVhRFu1vSEFgvB73niFQWJuvviDyBGBH22Lcau4rHB5p2K2T0Xvr6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<canvas id="chart-regrets-over-time"></canvas>
+
+<script>
+defer(() => {
+  const ctx = "chart-regrets-over-time";
+  
+  const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ['20s', '30s', '40s', '50s', '60s', '70s+'],
+      datasets: [
+        {
+          label: 'Foundational',
+          data: [15, 20, 25, 20, 15, 10],
+          borderColor: 'rgba(255, 99, 132, 0.8)',       // Red
+          backgroundColor: 'rgba(255, 99, 132, 0.2)',
+          tension: 0.4,
+        },
+        {
+          label: 'Boldness',
+          data: [35, 30, 25, 20, 15, 10],
+          borderColor: 'rgba(54, 162, 235, 0.8)',       // Blue
+          backgroundColor: 'rgba(54, 162, 235, 0.2)',
+          tension: 0.4,
+        },
+        {
+          label: 'Moral',
+          data: [25, 20, 20, 30, 35, 40],
+          borderColor: 'rgba(255, 206, 86, 0.8)',       // Yellow
+          backgroundColor: 'rgba(255, 206, 86, 0.2)',
+          tension: 0.4,
+        },
+        {
+          label: 'Connection',
+          data: [25, 30, 30, 30, 35, 40],
+          borderColor: 'rgba(75, 192, 192, 0.8)',       // Green
+          backgroundColor: 'rgba(75, 192, 192, 0.2)',
+          tension: 0.4,
+        }
+      ]
+    },
+    options: {
+      plugins: {
+        title: {
+          display: true,
+          text: 'Regret Distribution by Age Group (%)'
+        },
+        legend: {
+          display: true,
+          position: 'top'
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          max: 45,
+          title: {
+            display: true,
+            text: 'Percentage (%)'
+          }
+        },
+        x: {
+          title: {
+            display: true,
+            text: 'Age Decade'
+          }
+        }
+      },
+      elements: {
+        point: {
+          radius: 4
+        }
+      }
+    }
+  });
+  console.log(ctx, myChart);
+});
+</script>
