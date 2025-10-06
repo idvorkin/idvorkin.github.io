@@ -97,6 +97,64 @@ As we can see, regret distribution varies across age groups. People tend to have
 
 It's important to note that this is just a general trend, and individual experiences may vary.
 
+#### Regret Data by Age Group
+
+<table id="regrets-data-table" style="margin: 20px auto; border-collapse: collapse; width: 100%; max-width: 600px;">
+  <thead>
+    <tr style="background-color: #f8f9fa; border-bottom: 2px solid #dee2e6;">
+      <th style="padding: 12px; text-align: left; border: 1px solid #dee2e6;">Age Decade</th>
+      <th style="padding: 12px; text-align: center; border: 1px solid #dee2e6;">Foundational (%)</th>
+      <th style="padding: 12px; text-align: center; border: 1px solid #dee2e6;">Boldness (%)</th>
+      <th style="padding: 12px; text-align: center; border: 1px solid #dee2e6;">Moral (%)</th>
+      <th style="padding: 12px; text-align: center; border: 1px solid #dee2e6;">Connection (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; font-weight: 500;">20s</td>
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; text-align: center;" data-regret="foundational" data-age="20s">15</td>
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; text-align: center;" data-regret="boldness" data-age="20s">35</td>
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; text-align: center;" data-regret="moral" data-age="20s">25</td>
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; text-align: center;" data-regret="connection" data-age="20s">25</td>
+    </tr>
+    <tr style="background-color: #f8f9fa;">
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; font-weight: 500;">30s</td>
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; text-align: center;" data-regret="foundational" data-age="30s">20</td>
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; text-align: center;" data-regret="boldness" data-age="30s">30</td>
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; text-align: center;" data-regret="moral" data-age="30s">20</td>
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; text-align: center;" data-regret="connection" data-age="30s">30</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; font-weight: 500;">40s</td>
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; text-align: center;" data-regret="foundational" data-age="40s">25</td>
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; text-align: center;" data-regret="boldness" data-age="40s">25</td>
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; text-align: center;" data-regret="moral" data-age="40s">20</td>
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; text-align: center;" data-regret="connection" data-age="40s">30</td>
+    </tr>
+    <tr style="background-color: #f8f9fa;">
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; font-weight: 500;">50s</td>
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; text-align: center;" data-regret="foundational" data-age="50s">20</td>
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; text-align: center;" data-regret="boldness" data-age="50s">20</td>
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; text-align: center;" data-regret="moral" data-age="50s">30</td>
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; text-align: center;" data-regret="connection" data-age="50s">30</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; font-weight: 500;">60s</td>
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; text-align: center;" data-regret="foundational" data-age="60s">15</td>
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; text-align: center;" data-regret="boldness" data-age="60s">15</td>
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; text-align: center;" data-regret="moral" data-age="60s">35</td>
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; text-align: center;" data-regret="connection" data-age="60s">35</td>
+    </tr>
+    <tr style="background-color: #f8f9fa;">
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; font-weight: 500;">70s+</td>
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; text-align: center;" data-regret="foundational" data-age="70s+">10</td>
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; text-align: center;" data-regret="boldness" data-age="70s+">10</td>
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; text-align: center;" data-regret="moral" data-age="70s+">40</td>
+      <td style="padding: 8px 12px; border: 1px solid #dee2e6; text-align: center;" data-regret="connection" data-age="70s+">40</td>
+    </tr>
+  </tbody>
+</table>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js" integrity="sha512-tMabqarPtykgDtdtSqCL3uLVM0gS1ZkUAVhRFu1vSEFgvB73niFQWJuvviDyBGBH22Lcau4rHB5p2K2T0Xvr6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <canvas id="chart-regrets-over-time" style="height: 400px;"></canvas>
@@ -109,40 +167,60 @@ defer(() => {
     return;
   }
   
+  // Extract data from the table
+  const table = document.getElementById("regrets-data-table");
+  if (!table) {
+    console.error("Data table not found");
+    return;
+  }
+  
+  // Get age labels from first column
+  const ageLabels = [];
+  const rows = table.querySelectorAll("tbody tr");
+  rows.forEach(row => {
+    const ageCell = row.querySelector("td:first-child");
+    if (ageCell) {
+      ageLabels.push(ageCell.textContent.trim());
+    }
+  });
+  
+  // Extract data for each regret type
+  const regretTypes = ['foundational', 'boldness', 'moral', 'connection'];
+  const datasets = [];
+  
+  regretTypes.forEach((regretType, index) => {
+    const data = [];
+    rows.forEach(row => {
+      const cell = row.querySelector(`[data-regret="${regretType}"]`);
+      if (cell) {
+        data.push(parseInt(cell.textContent.trim()));
+      }
+    });
+    
+    // Define colors for each regret type
+    const colors = [
+      { bg: 'rgba(255, 99, 132, 0.2)', border: 'rgba(255, 99, 132, 1)' },   // Foundational - Red
+      { bg: 'rgba(54, 162, 235, 0.2)', border: 'rgba(54, 162, 235, 1)' },   // Boldness - Blue
+      { bg: 'rgba(255, 206, 86, 0.2)', border: 'rgba(255, 206, 86, 1)' },   // Moral - Yellow
+      { bg: 'rgba(75, 192, 192, 0.2)', border: 'rgba(75, 192, 192, 1)' }    // Connection - Green
+    ];
+    
+    datasets.push({
+      label: regretType.charAt(0).toUpperCase() + regretType.slice(1),
+      data: data,
+      backgroundColor: colors[index].bg,
+      borderColor: colors[index].border,
+      borderWidth: 2,
+      tension: 0.4,
+      fill: false
+    });
+  });
+  
   const myChart = new Chart(canvas, {
-    type: 'bar',
+    type: 'line',
     data: {
-      labels: ['20s', '30s', '40s', '50s', '60s', '70s+'],
-      datasets: [
-        {
-          label: 'Foundational',
-          data: [15, 20, 25, 20, 15, 10],
-          backgroundColor: 'rgba(255, 99, 132, 0.7)',
-          borderColor: 'rgba(255, 99, 132, 1)',
-          borderWidth: 1,
-        },
-        {
-          label: 'Boldness',
-          data: [35, 30, 25, 20, 15, 10],
-          backgroundColor: 'rgba(54, 162, 235, 0.7)',
-          borderColor: 'rgba(54, 162, 235, 1)',
-          borderWidth: 1,
-        },
-        {
-          label: 'Moral',
-          data: [25, 20, 20, 30, 35, 40],
-          backgroundColor: 'rgba(255, 206, 86, 0.7)',
-          borderColor: 'rgba(255, 206, 86, 1)',
-          borderWidth: 1,
-        },
-        {
-          label: 'Connection',
-          data: [25, 30, 30, 30, 35, 40],
-          backgroundColor: 'rgba(75, 192, 192, 0.7)',
-          borderColor: 'rgba(75, 192, 192, 1)',
-          borderWidth: 1,
-        }
-      ]
+      labels: ageLabels,
+      datasets: datasets
     },
     options: {
       plugins: {
@@ -158,7 +236,7 @@ defer(() => {
           display: true,
           position: 'top',
           labels: {
-            usePointStyle: false,
+            usePointStyle: true,
             boxWidth: 20,
             padding: 15
           }
@@ -211,10 +289,9 @@ defer(() => {
           }
         }
       },
-      elements: {
-        bar: {
-          borderWidth: 1
-        }
+      interaction: {
+        mode: 'index',
+        intersect: false
       }
     }
   });
