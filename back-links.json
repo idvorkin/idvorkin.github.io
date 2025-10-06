@@ -79,6 +79,7 @@
         "/decision": "/decisive",
         "/delegation": "/delegate",
         "/diagrams": "/viz",
+        "/ditl": "/day-in-the-life",
         "/don-juan": "/enemy",
         "/double-trouble": "/partner-trouble",
         "/dream-job": "/job",
@@ -110,6 +111,7 @@
         "/getting-things-done": "/gtd",
         "/getting-to-yes": "/negotiate",
         "/goal": "/goals",
+        "/good-days": "/day-in-the-life",
         "/gopher": "/delegate",
         "/grandma": "/curious",
         "/grandmother": "/curious",
@@ -600,7 +602,7 @@
         },
         "/affirmations": {
             "description": "Every day I write out my affirmations. These positive statements help me challenge and overcome my self-sabotaging and negative thoughts and behaviors. Repeating them reinforces them, helping me be the person I want to be. My affirmations have power to me and have evolved over time. You’ll want to find the ones that speak best to you. Oh and bonus points if beyond just writing out your daily affirmations you reflect on how you can/will and have applied them.\n\n",
-            "doc_size": 22000,
+            "doc_size": 23000,
             "file_path": "_site/affirmations.html",
             "incoming_links": [
                 "/gap-year-igor",
@@ -608,7 +610,7 @@
                 "/operating-manual",
                 "/process-journal"
             ],
-            "last_modified": "2025-06-17T07:29:01-07:00",
+            "last_modified": "2025-10-05T06:17:13-07:00",
             "markdown_path": "_d/affirmations2.md",
             "outgoing_links": [
                 "/anxiety",
@@ -738,12 +740,12 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get super lost\n\n",
-            "doc_size": 64000,
+            "doc_size": 75000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai"
             ],
-            "last_modified": "2025-09-14T07:16:02-07:00",
+            "last_modified": "2025-10-05T10:42:02-07:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
@@ -774,13 +776,13 @@
         },
         "/ai-security": {
             "description": "Security is super interesting, AI is super interesting, the combination, is super-duper interesting!\n\n",
-            "doc_size": 30000,
+            "doc_size": 32000,
             "file_path": "_site/ai-security.html",
             "incoming_links": [
                 "/ai",
                 "/ai-journal"
             ],
-            "last_modified": "2025-10-04T11:26:57-07:00",
+            "last_modified": "2025-10-05T12:23:26-07:00",
             "markdown_path": "_d/ai-security.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -1224,12 +1226,13 @@
         },
         "/bucket-list": {
             "description": "I keep a bucket list. You probably do too. But here’s what I learned from Arthur Brooks, Harvard professor and happiness researcher: the most powerful thing you can do with a bucket list isn’t to achieve the items on it. It’s to cross them out by writing them on a reverse bucket list. The reverse bucket list isn’t about lowering standards or settling. It’s about raising standards—but for what counts as worthy of your precious, finite attention and desire.\n\n",
-            "doc_size": 24000,
+            "doc_size": 25000,
             "file_path": "_site/bucket-list.html",
             "incoming_links": [
-                "/build-life-you-want"
+                "/build-life-you-want",
+                "/day-in-the-life"
             ],
-            "last_modified": "2025-10-04T17:34:09-07:00",
+            "last_modified": "2025-10-05T12:02:23-07:00",
             "markdown_path": "_d/bucket-list.md",
             "outgoing_links": [
                 "/chasing-daylight",
@@ -1505,7 +1508,7 @@
                 "/content-creation",
                 "/y25"
             ],
-            "last_modified": "2025-09-08T09:25:35-07:00",
+            "last_modified": "2025-10-04T18:03:19-07:00",
             "markdown_path": "_d/content-audience.md",
             "outgoing_links": [
                 "/end-in-mind",
@@ -1842,6 +1845,21 @@
             "redirect_url": "",
             "title": "Being a Good Dad - A Guide to Fatherhood",
             "url": "/dad"
+        },
+        "/day-in-the-life": {
+            "description": "A running journal of days that actually worked - the ones where health habits stuck, family time hit different, or I remembered what it feels like to be fully alive. Not every day needs to be Instagram-worthy, but some days deserve a bookmark. This is that bookmark collection.\n\n",
+            "doc_size": 19000,
+            "file_path": "_site/day-in-the-life.html",
+            "incoming_links": [],
+            "last_modified": "2025-10-04T18:43:51-07:00",
+            "markdown_path": "_d/day-in-the-life.md",
+            "outgoing_links": [
+                "/bucket-list",
+                "/gap-year-igor"
+            ],
+            "redirect_url": "",
+            "title": "Day in the Life: Chronicles of Really Good Days",
+            "url": "/day-in-the-life"
         },
         "/death": {
             "description": "Bad news, you’re dying, so is everyone else. Good news, if we didn’t die we’d run out of resources, and our kids would be screwed. Bad news, our health care system is optimized for keeping you alive, not for maximizing the enjoyable time you have on earth. Good news, knowing is half the battle - armed with this knowledge you can decide how you want to die, which is ultimately how you want to live.\n\n",
@@ -2489,6 +2507,7 @@
                 "/42",
                 "/activation",
                 "/bucket-list",
+                "/day-in-the-life",
                 "/gap-year",
                 "/stock-concentration",
                 "/timeoff",
