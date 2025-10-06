@@ -99,44 +99,48 @@ It's important to note that this is just a general trend, and individual experie
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js" integrity="sha512-tMabqarPtykgDtdtSqCL3uLVM0gS1ZkUAVhRFu1vSEFgvB73niFQWJuvviDyBGBH22Lcau4rHB5p2K2T0Xvr6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<canvas id="chart-regrets-over-time"></canvas>
+<canvas id="chart-regrets-over-time" style="height: 400px;"></canvas>
 
 <script>
 defer(() => {
-  const ctx = "chart-regrets-over-time";
+  const canvas = document.getElementById("chart-regrets-over-time");
+  if (!canvas) {
+    console.error("Chart canvas not found");
+    return;
+  }
   
-  const myChart = new Chart(ctx, {
-    type: 'line',
+  const myChart = new Chart(canvas, {
+    type: 'bar',
     data: {
       labels: ['20s', '30s', '40s', '50s', '60s', '70s+'],
       datasets: [
         {
           label: 'Foundational',
           data: [15, 20, 25, 20, 15, 10],
-          borderColor: 'rgba(255, 99, 132, 0.8)',       // Red
-          backgroundColor: 'rgba(255, 99, 132, 0.2)',
-          tension: 0.4,
+          backgroundColor: 'rgba(255, 99, 132, 0.7)',
+          borderColor: 'rgba(255, 99, 132, 1)',
+          borderWidth: 1,
         },
         {
           label: 'Boldness',
           data: [35, 30, 25, 20, 15, 10],
-          borderColor: 'rgba(54, 162, 235, 0.8)',       // Blue
-          backgroundColor: 'rgba(54, 162, 235, 0.2)',
-          tension: 0.4,
+          backgroundColor: 'rgba(54, 162, 235, 0.7)',
+          borderColor: 'rgba(54, 162, 235, 1)',
+          borderWidth: 1,
         },
         {
           label: 'Moral',
           data: [25, 20, 20, 30, 35, 40],
-          borderColor: 'rgba(255, 206, 86, 0.8)',       // Yellow
-          backgroundColor: 'rgba(255, 206, 86, 0.2)',
-          tension: 0.4,
+          backgroundColor: 'rgba(255, 206, 86, 0.7)',
+          borderColor: 'rgba(255, 206, 86, 1)',
+          borderWidth: 1,
         },
         {
           label: 'Connection',
           data: [25, 30, 30, 30, 35, 40],
-          borderColor: 'rgba(75, 192, 192, 0.8)',       // Green
-          backgroundColor: 'rgba(75, 192, 192, 0.2)',
-          tension: 0.4,
+          backgroundColor: 'rgba(75, 192, 192, 0.7)',
+          borderColor: 'rgba(75, 192, 192, 1)',
+          borderWidth: 1,
         }
       ]
     },
@@ -144,36 +148,75 @@ defer(() => {
       plugins: {
         title: {
           display: true,
-          text: 'Regret Distribution by Age Group (%)'
+          text: 'Regret Distribution by Age Group (%)',
+          font: {
+            size: 16,
+            weight: 'bold'
+          }
         },
         legend: {
           display: true,
-          position: 'top'
+          position: 'top',
+          labels: {
+            usePointStyle: false,
+            boxWidth: 20,
+            padding: 15
+          }
+        },
+        tooltip: {
+          mode: 'index',
+          intersect: false,
+          callbacks: {
+            label: function(context) {
+              return context.dataset.label + ': ' + context.parsed.y + '%';
+            }
+          }
         }
       },
+      responsive: true,
+      maintainAspectRatio: false,
       scales: {
         y: {
           beginAtZero: true,
           max: 45,
           title: {
             display: true,
-            text: 'Percentage (%)'
+            text: 'Percentage (%)',
+            font: {
+              size: 14,
+              weight: 'bold'
+            }
+          },
+          ticks: {
+            callback: function(value) {
+              return value + '%';
+            }
+          },
+          grid: {
+            display: true,
+            color: 'rgba(0, 0, 0, 0.1)'
           }
         },
         x: {
           title: {
             display: true,
-            text: 'Age Decade'
+            text: 'Age Decade',
+            font: {
+              size: 14,
+              weight: 'bold'
+            }
+          },
+          grid: {
+            display: false
           }
         }
       },
       elements: {
-        point: {
-          radius: 4
+        bar: {
+          borderWidth: 1
         }
       }
     }
   });
-  console.log(ctx, myChart);
 });
 </script>
