@@ -48,7 +48,7 @@ _For many of my roles, I'm still figuring out who I want to be, and how I will a
 
 {% include local_image_float_right.html src="raccoon-magic.webp" %}
 
-Making cards change colors at a spectators command or passing coins through a spectator's hand -- Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles. Once Igor learned [magic](/magic), that consumed his free time and became his favorite tool.
+Making cards change colors at a spectator's command or passing coins through a spectator's hand -- Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their better judgment ("I don't normally do this..."), when a kid mid-meltdown suddenly stopped crying to ask "DO IT AGAIN!", or when a miserable-looking adult forgot they were supposed to be having a terrible day. Once Igor learned [magic](/magic), that consumed his free time, his wallet (so many decks of cards), and became his favorite tool for weaponized joy.
 
 In 2022 Igor discovered [ballooning](/balloon) which was amazing as well.
 
