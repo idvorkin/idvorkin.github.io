@@ -9,7 +9,7 @@ tags:
   - emotional intelligence
 ---
 
-Regrets, both ours and others, are a powerful tools to shape our present and future. four main types: foundation regrets related to not laying a proper base for life; boldness regrets stemming from missed opportunities and risks; moral regrets from not doing the right thing; and connection regrets from neglecting or damaging relationships. May you fin dinsights into how we can better navigate our choices to minimize regret and enhance our sense of fulfillment.
+Regrets, both ours and others, are a powerful tools to shape our present and future. four main types: foundation regrets related to not laying a proper base for life; boldness regrets stemming from missed opportunities and risks; moral regrets from not doing the right thing; and connection regrets from neglecting or damaging relationships. May you find insights into how we can better navigate our choices to minimize regret and enhance our sense of fulfillment.
 
 <!-- prettier-ignore-start -->
 
@@ -21,7 +21,7 @@ Regrets, both ours and others, are a powerful tools to shape our present and fut
 - [The Four Regrets](#the-four-regrets)
     - [Foundational - If only I'd done the work](#foundational---if-only-id-done-the-work)
     - [Boldness - If only I'd taken the risk/opportunity](#boldness---if-only-id-taken-the-riskopportunity)
-    - [Moral - If only I done the right thing](#moral---if-only-i-done-the-right-thing)
+    - [Moral - If only I'd done the right thing](#moral---if-only-id-done-the-right-thing)
     - [Connection - If only I'd reached out](#connection---if-only-id-reached-out)
     - [Regrets over time](#regrets-over-time)
 
@@ -30,7 +30,7 @@ Regrets, both ours and others, are a powerful tools to shape our present and fut
 
 ## Regrets, for the future, not the past
 
-Before we delve into regrets, we should remember a critical concept from the 7 habits "Focus on your circle of influence, not your circle of
+Before we delve into regrets, we should remember a critical concept from the 7 habits "Focus on your circle of influence, not your circle of concern."
 
 ### Concerns, Control and Influence
 
@@ -75,7 +75,7 @@ Compassion can be broken down with a time dimension.
 - Not starting that business you always dreamed of
 - Not traveling or exploring new experiences
 
-### Moral - If only I done the right thing
+### Moral - If only I'd done the right thing
 
 Examples:
 
