@@ -212,7 +212,7 @@ Altman has a fanstatic discussion on this with Tucker Carlson around what ethics
 
 ### How to record zoom
 
-**My prompt:** Can you rewrite this into markdown I can add to my blog?
+**My prompt:** How do I discreetly record Zoom?
 
 **GPT5:**
 
