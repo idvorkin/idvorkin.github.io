@@ -121,6 +121,84 @@ jq '.url_info | to_entries[] | select(.value.description | ascii_downcase | cont
 
 ## Blog Visual Components
 
+### Charts and Graphs (Chart.js)
+
+For interactive data visualizations, use Chart.js following the pattern in `_d/regrets.md` and `_d/activation.md`:
+
+**1. Add Chart.js CDN (after front matter):**
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js" integrity="sha512-tMabqarPtykgDtdtSqCL3uLVM0gS1ZkUAVhRFu1vSEFgvB73niFQWJuvviDyBGBH22Lcau4rHB5p2K2T0Xvr6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+```
+
+**2. Create chart with data in human-readable format:**
+```javascript
+<canvas id="chart-regrets-over-time"></canvas>
+
+<script>
+defer(() => {
+  const ctx = "chart-regrets-over-time";
+
+  // Data table - easy to read and edit
+  const regretsData = {
+    decades: ['20s', '30s', '40s', '50s', '60s', '70s+'],
+    regretTypes: {
+      Foundational: [15, 20, 25, 20, 15, 10],
+      Boldness:     [40, 32, 26, 22, 18, 14],
+      Moral:        [25, 20, 20, 28, 33, 38],
+      Connection:   [25, 30, 30, 32, 37, 42]
+    }
+  };
+
+  // Color scheme for each regret type
+  const colors = [
+    { border: 'rgba(54, 162, 235, 0.8)', bg: 'rgba(54, 162, 235, 0.2)' },  // Blue
+    { border: 'rgba(255, 99, 132, 0.8)', bg: 'rgba(255, 99, 132, 0.2)' },  // Red
+    { border: 'rgba(255, 206, 86, 0.8)', bg: 'rgba(255, 206, 86, 0.2)' },  // Yellow
+    { border: 'rgba(75, 192, 192, 0.8)', bg: 'rgba(75, 192, 192, 0.2)' }   // Teal
+  ];
+
+  // Convert to Chart.js dataset format - labels read from data
+  const datasets = Object.keys(regretsData.regretTypes).map((regretType, index) => ({
+    label: regretType,
+    data: regretsData.regretTypes[regretType],
+    borderColor: colors[index].border,
+    backgroundColor: colors[index].bg,
+    tension: 0.4
+  }));
+
+  const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: regretsData.decades,
+      datasets: datasets
+    },
+    options: {
+      plugins: {
+        title: { display: true, text: 'Regret Distribution by Age' },
+        legend: { display: true }
+      },
+      scales: {
+        y: { beginAtZero: true, title: { display: true, text: 'Percentage (%)' } },
+        x: { title: { display: true, text: 'Age Decade' } }
+      }
+    }
+  });
+
+  console.log(ctx, myChart);
+});
+</script>
+```
+
+**Key principles:**
+- Store data in readable table format at the top of the script (makes editing values easy)
+- **Read labels dynamically from data** using `Object.keys().map()` - never hardcode labels in datasets
+- Separate color schemes into their own array for clarity
+- Keep data editing separate from chart configuration
+- Wrap in `defer()` to ensure DOM is ready
+- Use semantic color schemes with comments (Blue, Red, etc.)
+- Don't include commented-out data tables in the final version
+- For real examples, see `_d/regrets.md` and `_d/activation.md`
+
 ### Quadrant Matrix (2x2 Grid)
 
 Use the `quadrant-matrix.html` include for any 2x2 grid visualization:
