@@ -296,6 +296,13 @@ When adding new features or fixing bugs, **always add both unit tests and e2e te
 
 ### Commit Guidelines
 
+- **ALWAYS run pre-commit checks before committing** - This is mandatory:
+  ```bash
+  pre-commit run --files <files-you-modified>
+  ```
+  - Pre-commit checks validate links, formatting, and other quality checks
+  - Never skip this step - it catches issues before they reach the repo
+  - If pre-commit modifies files, review changes and commit them too
 - **Generated JS files ARE committed** (assets/js/index.js, assets/js/index.js.map)
 - Commit both TypeScript source files (src/\*.ts) and the generated JS bundle
 - JS files are built from TypeScript and should be tracked in git for Jekyll deployment
