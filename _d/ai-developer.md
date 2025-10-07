@@ -361,6 +361,8 @@ def scratch():
 
 A bunch of [leaked prompts](https://github.com/wunderwuzzi23/scratch/tree/master/system_prompts). You can see a bunch of the current alchemy in creating these.
 
+See also: [AI Security - Leaked System Prompts](/ai-security#leaked-system-prompts) for security considerations around leaked prompts.
+
 ### Use LLMs for reasoning not for data retrieval
 
 Great line from Altman, we're currently using them for data retrieval, but their super power is reasoning. If we just focus on reasoning, let other tools do the retrieval that can be better
