@@ -9,60 +9,65 @@ tags:
   - emotional intelligence
 ---
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js" integrity="sha512-tMabqarPtykgDtdtSqCL3uLVM0gS1ZkUAVhRFu1vSEFgvB73niFQWJuvviDyBGBH22Lcau4rHB5p2K2T0Xvr6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
-
 I spent years treating regrets like a cage - replaying decisions I couldn't change, beating myself up over the past. Here's the critical reframe: regrets aren't about the past, they're guides for what you should do next. The past is outside your circle of influence, but regrets are data about your values trying to redirect your future. I've found four main types (foundation, boldness, moral, and connection), and the goal isn't avoiding regrets - it's using them as a compass instead of a cage.
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js" integrity="sha512-tMabqarPtykgDtdtSqCL3uLVM0gS1ZkUAVhRFu1vSEFgvB73niFQWJuvviDyBGBH22Lcau4rHB5p2K2T0Xvr6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
 <!-- prettier-ignore-start -->
 
 <!-- vim-markdown-toc-start -->
 
-- [Regrets, for the future, not the past](#regrets-for-the-future-not-the-past)
-    - [Concerns, Control and Influence](#concerns-control-and-influence)
-    - [Be compassionate to yourself - forgive](#be-compassionate-to-yourself---forgive)
+- [How to Think About Regrets](#how-to-think-about-regrets)
+  - [Concerns, Control and Influence](#concerns-control-and-influence)
+  - [Be compassionate to yourself - forgive](#be-compassionate-to-yourself---forgive)
+  - [Judgment vs Curiosity](#judgment-vs-curiosity)
 - [The Four Regrets](#the-four-regrets)
-    - [Foundational - If only I'd done the work](#foundational---if-only-id-done-the-work)
-    - [Boldness - If only I'd taken the risk/opportunity](#boldness---if-only-id-taken-the-riskopportunity)
-    - [Moral - If only I'd done the right thing](#moral---if-only-id-done-the-right-thing)
-    - [Connection - If only I'd reached out](#connection---if-only-id-reached-out)
-    - [How regrets change over time](#how-regrets-change-over-time)
+  - [Foundational - If only I'd done the work](#foundational---if-only-id-done-the-work)
+  - [Boldness - If only I'd taken the risk/opportunity](#boldness---if-only-id-taken-the-riskopportunity)
+  - [Moral - If only I'd done the right thing](#moral---if-only-id-done-the-right-thing)
+  - [Connection - If only I'd reached out](#connection---if-only-id-reached-out)
+  - [How regrets change over time](#how-regrets-change-over-time)
+- [Closing Thoughts](#closing-thoughts)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-## Regrets, for the future, not the past
+Most of this post comes from Daniel Pink's power of regrets: {% include amazon.html asin="0735210659" %}
 
-Before we delve into regrets, we should remember a critical concept from the 7 habits "Focus on your circle of influence, not your circle of concern."
+## How to Think About Regrets
+
+The past is completely outside your circle of influence. You can't change what happened, no matter how much mental energy you pour into guilt or rumination. That's critical to remember: regrets about past decisions are outside your circle of influence.
+
+But here's the reframe: while you can't change the past, you can use those regrets to guide your future. They're data points showing what you value most.
 
 ### Concerns, Control and Influence
 
-In the [The first of the 7 habits, be proactive](/7h-c1) requires focusing your energy on your circle of influence, not your circle of control. If you've forgotten, the past is completely outside your ability to influence, regardless of how much you think it's your concern.
+[The first of the 7 habits, be proactive](/7h-c1) requires focusing your energy on your circle of influence, not your circle of concern. A frequent source of [anxiety](/mental-pain) is trying to control things outside your influence.
 
-A frequent source of [anxiety](/mental-pain), is trying to control something, with the antidote being how to maximize your influence.
+The past? Guess what - that's 100% outside your circle of influence. You literally cannot change it.
 
-The future and present are where you can influence. Think through future regrets (both yours and others) to focus your behaviors. For example, I frequently remind myself that [no one ever uttered "God, I wish I spent more time at work" on their deathbed](/wlb-manifesto).
+So here's the shift: stop dwelling on backward-looking regrets (what you did wrong) and start using forward-looking regret avoidance (what you should do next).
 
-Avoid future regrets: Anticipate the types of regrets that could stem from a choice and weigh that against potential positives.
-Learn and Grow: Regret about past actions can motivate you to be more responsible, take healthy risks, make amends, and prioritize the connections that truly matter.
+Where do you have influence? The future (and more accurately, the present). Think through potential future regrets before making decisions. I frequently remind myself that [no one ever uttered "God, I wish I spent more time at work" on their deathbed](/wlb-manifesto).
+
+Use regrets to:
+
+- **Learn and grow**: Let past regrets motivate you to be more responsible, take healthy risks, make amends, and prioritize what truly matters
+- **Avoid future regrets**: Anticipate what you might regret and weigh that against potential benefits
 
 ### Be compassionate to yourself - forgive
 
-Compassion is about removing suffering, and accepting people as they are. This applies both to others and to yourself.
+Compassion is about removing suffering and accepting people as they are. It's easy to extend compassion to others - but it's even more important (and harder) to apply it to yourself.
 
-When someone throws a rock at you, you don't get mad at the rock, you get mad at the person. But no one wants to throw a rock at you, they likely did it due to their suffering. So, just as you don't get mad at the rock, don't get mad at the person, get mad at their suffering.
+When you have regrets, treat yourself with the same compassion you'd offer a friend struggling with similar feelings.
 
 Compassion can be broken down with a time dimension.
 
-| Time    | Behavior    | Practice     | Behavior Definition                                      |
-| ------- | ----------- | ------------ | -------------------------------------------------------- |
-| Past    | Forgiveness | Humility     | Give up hope for a better past                           |
-| Present | Acceptance  | Gratefulness | Recognizing you have received more than your fair share  |
-| Future  | Hope        | Patience     | Believe the future can be better than the present        |
-
-- When people behave poorly (in your mind), it is due to their suffering.
-- Compassion clarifies the person’s suffering, not the person, is the source of the problem. Suffering is unacceptable. The person is acceptable (see [getting to yes, hard on problems soft on people](/gty)).
-- Sounds like the fundamental attribution error: When you do something wrong, you attribute it to circumstance, when others do things wrong you attribute to malice/incompetence/personality.
+| Time    | Behavior    | Practice     | Behavior Definition                                     |
+| ------- | ----------- | ------------ | ------------------------------------------------------- |
+| Past    | Forgiveness | Humility     | Give up hope for a better past                          |
+| Present | Acceptance  | Gratefulness | Recognizing you have received more than your fair share |
+| Future  | Hope        | Patience     | Believe the future can be better than the present       |
 
 {%include summarize-page.html src="/compassion" %}
 
@@ -73,6 +78,10 @@ Judgment throws up barriers and causes us to hide the truth which can lead to gu
 When processing regrets, lead with curiosity rather than judgment. Instead of beating yourself up over past decisions, get curious about what drove those choices and what you can learn from them.
 
 ## The Four Regrets
+
+When thinking about regrets, they tend to fall into patterns. Daniel Pink's [The Power of Regret](https://www.danpink.com/the-power-of-regret/) analyzed over 16,000 regrets from 105 countries and found four core categories. Understanding these patterns helps you anticipate what you might regret before you make decisions.
+
+The four regrets operate as a photographic negative of the good life - if you know what people regret most, you can reverse the image to see what they value most.
 
 ### Foundational - If only I'd done the work
 
@@ -212,3 +221,13 @@ defer(() => {
   console.log(ctx, myChart);
 });
 </script>
+
+## Closing Thoughts
+
+Regrets will happen. That's not the problem. The problem is letting them cage you instead of guide you.
+
+The next time you feel that ache of regret, ask yourself: What is this telling me about what I value? What can I do differently going forward? How would I advise a friend in this situation?
+
+Your regrets are trying to help you. Let them be your compass pointing toward what matters most - not a cage keeping you stuck in the past.
+
+Start small: Pick one regret you're carrying. Get curious about it. What does it reveal about your values? What one thing could you do differently tomorrow?
