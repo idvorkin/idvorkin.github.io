@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Regrets"
+title: "Use Your Regrets As A Compass, Not A Cage"
 permalink: /regrets
 redirect_from:
   - /regret
@@ -12,7 +12,7 @@ tags:
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js" integrity="sha512-tMabqarPtykgDtdtSqCL3uLVM0gS1ZkUAVhRFu1vSEFgvB73niFQWJuvviDyBGBH22Lcau4rHB5p2K2T0Xvr6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
 
-Regrets, both ours and others, are a powerful tools to shape our present and future. four main types: foundation regrets related to not laying a proper base for life; boldness regrets stemming from missed opportunities and risks; moral regrets from not doing the right thing; and connection regrets from neglecting or damaging relationships. May you find insights into how we can better navigate our choices to minimize regret and enhance our sense of fulfillment.
+I spent years treating regrets like a cage - replaying decisions I couldn't change, beating myself up over the past. Here's the critical reframe: regrets aren't about the past, they're guides for what you should do next. The past is outside your circle of influence, but regrets are data about your values trying to redirect your future. I've found four main types (foundation, boldness, moral, and connection), and the goal isn't avoiding regrets - it's using them as a compass instead of a cage.
 
 <!-- prettier-ignore-start -->
 
@@ -26,7 +26,7 @@ Regrets, both ours and others, are a powerful tools to shape our present and fut
     - [Boldness - If only I'd taken the risk/opportunity](#boldness---if-only-id-taken-the-riskopportunity)
     - [Moral - If only I'd done the right thing](#moral---if-only-id-done-the-right-thing)
     - [Connection - If only I'd reached out](#connection---if-only-id-reached-out)
-    - [Regrets over time](#regrets-over-time)
+    - [How regrets change over time](#how-regrets-change-over-time)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -54,9 +54,11 @@ When someone throws a rock at you, you don't get mad at the rock, you get mad at
 
 Compassion can be broken down with a time dimension.
 
-| Time | Behavior    | Practice | Behavior Definition            |
-| ---- | ----------- | -------- | ------------------------------ |
-| Past | Forgiveness | Humility | Give up hope for a better past |
+| Time    | Behavior    | Practice     | Behavior Definition                                      |
+| ------- | ----------- | ------------ | -------------------------------------------------------- |
+| Past    | Forgiveness | Humility     | Give up hope for a better past                           |
+| Present | Acceptance  | Gratefulness | Recognizing you have received more than your fair share  |
+| Future  | Hope        | Patience     | Believe the future can be better than the present        |
 
 - When people behave poorly (in your mind), it is due to their suffering.
 - Compassion clarifies the person’s suffering, not the person, is the source of the problem. Suffering is unacceptable. The person is acceptable (see [getting to yes, hard on problems soft on people](/gty)).
@@ -64,37 +66,62 @@ Compassion can be broken down with a time dimension.
 
 {%include summarize-page.html src="/compassion" %}
 
+### Judgment vs Curiosity
+
+Judgment throws up barriers and causes us to hide the truth which can lead to guilt and [shame](/shame). Curiosity is gentle and helps us find what is going on. Compassion reduces judgment, reducing the barrier to compassion.
+
+When processing regrets, lead with curiosity rather than judgment. Instead of beating yourself up over past decisions, get curious about what drove those choices and what you can learn from them.
+
 ## The Four Regrets
 
 ### Foundational - If only I'd done the work
 
-- Not saving enough money for retirement or emergencies
-- Not prioritizing health and wellness
-- Neglecting education and opportunities for self-improvement
+Foundation regrets stem from failures to be responsible and do the hard work that builds a stable life. These are the "I should have known better" regrets about not laying proper groundwork. They often compound over time - small neglects become major problems.
+
+E.g.
+
+- **Financial stability**: Not saving for retirement. You live paycheck to paycheck in your 60s because you spent everything in your 20s.
+- **Health and wellness**: Not prioritizing exercise, sleep, and nutrition. You deal with preventable chronic conditions because you ignored your body for decades.
+- **Education and skills**: Neglecting self-improvement. You watch less experienced people get promoted because you never developed new skills.
+- **Relationships foundation**: Not learning to communicate or manage emotions. You repeat the same relationship patterns because you never did the inner work.
 
 ### Boldness - If only I'd taken the risk/opportunity
 
-- Not asking someone out on a date
-- Not starting that business you always dreamed of
-- Not traveling or exploring new experiences
+Boldness regrets come from playing it too safe - from inaction rather than action. These are the chances not taken, the words not spoken, the dreams not pursued. The pain comes from wondering "what if?" and knowing you'll never find out because fear or comfort held you back.
+
+E.g.
+
+- **Romantic risks**: Not asking someone out when you felt a connection. You wonder for years if they felt the same way.
+- **Career leaps**: Not starting the business you dreamed of. You stay in the safe corporate job while others build the company you imagined.
+- **Life experiences**: Not traveling when you had the chance. You say "someday" until health or circumstances make it impossible.
+- **Creative expression**: Not sharing your art, writing, or music. You keep your gifts hidden because you fear criticism.
+- **Speaking up**: Not saying what needed to be said. You stay silent when you should have advocated for yourself or others.
 
 ### Moral - If only I'd done the right thing
 
-Examples:
+Moral regrets arise from compromising your values or hurting others. These cut the deepest because they damage your self-image and often harm people you care about. They're about knowing you chose wrong when you knew what was right.
 
-- Cheating on a partner or in a competition
-- Lying or intentionally deceiving someone
-- Acting selfishly at the expense of others
+E.g.
+
+- **Betraying trust**: Cheating on a partner or in competition. You carry the guilt of violating someone's faith in you.
+- **Dishonesty**: Lying for personal gain. You carry the weight of a lie that affected someone's life.
+- **Selfishness**: Taking credit for someone else's work. You prioritized your comfort over another's need.
+- **Cruelty**: Being hurtful when you could have been kind. You bullied someone or said something deliberately cutting.
+- **Ethical lapses**: Going along with something wrong. You stayed silent about unethical behavior to protect yourself.
 
 ### Connection - If only I'd reached out
 
-Examples:
+Connection regrets stem from neglecting relationships or letting them wither. These hurt because relationships are central to human flourishing, and we often don't realize their value until it's too late. The regret is knowing a simple act of reaching out could have preserved or healed something precious.
 
-- Not staying in touch with friends and family.
-- Not making amends after an argument.
-- Taking loved ones for granted.
+E.g.
 
-### Regrets over time
+- **Drifting apart**: Not staying in touch with friends and family who mattered. You realize years later that a valued friendship died from neglect, not conflict.
+- **Unresolved conflicts**: Not making amends after an argument. You carry the burden of a broken relationship that could have been repaired.
+- **Missing moments**: Taking loved ones for granted. You wish you'd spent more time with a parent who's now gone, or listened when your child wanted to talk.
+- **Words unsaid**: Not expressing love or appreciation. You never told someone how much they meant before they died or moved away.
+- **Pride and stubbornness**: Letting ego prevent reconnection. You wait for them to reach out first until it becomes impossible.
+
+### How regrets change over time
 
 As we can see, regret distribution varies across age groups. People tend to have the most boldness regrets in their 20s, which may be due to feeling like they haven't taken enough chances or pursued their dreams. Regret about foundation choices tends to increase with age, possibly due to a greater awareness of long-term consequences. Connection regrets also tend to rise with age, perhaps as people reflect on lost relationships or missed opportunities for connection.
 
