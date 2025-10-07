@@ -3606,7 +3606,6 @@
                 "/getting-to-yes-with-yourself",
                 "/happy",
                 "/productive",
-                "/regrets",
                 "/sell",
                 "/synergize",
                 "/work-satisfaction"
@@ -4198,24 +4197,24 @@
             "url": "/reflect-tool"
         },
         "/regrets": {
-            "description": "Regrets, both ours and others, are a powerful tools to shape our present and future. four main types: foundation regrets related to not laying a proper base for life; boldness regrets stemming from missed opportunities and risks; moral regrets from not doing the right thing; and connection regrets from neglecting or damaging relationships. May you fin dinsights into how we can better navigate our choices to minimize regret and enhance our sense of fulfillment.\n\n",
-            "doc_size": 20000,
+            "description": "I spent years treating regrets like a cage - replaying decisions I couldn’t change, beating myself up over the past. Here’s the critical reframe: regrets aren’t about the past, they’re guides for what you should do next. The past is outside your circle of influence, but regrets are data about your values trying to redirect your future. I’ve found four main types (foundation, boldness, moral, and connection), and the goal isn’t avoiding regrets - it’s using them as a compass instead of a cage.\n\n",
+            "doc_size": 29000,
             "file_path": "_site/regrets.html",
             "incoming_links": [
                 "/emotions",
                 "/mood"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2025-10-06T19:36:46-07:00",
             "markdown_path": "_d/regrets.md",
             "outgoing_links": [
                 "/be-proactive",
                 "/curious",
                 "/mental-pain",
-                "/negotiate",
+                "/shame",
                 "/sustainable-work"
             ],
             "redirect_url": "",
-            "title": "Regrets",
+            "title": "Use Your Regrets As A Compass, Not A Cage",
             "url": "/regrets"
         },
         "/religion": {
@@ -4369,6 +4368,7 @@
                 "/emotions",
                 "/insecure",
                 "/psychic-weight",
+                "/regrets",
                 "/work-satisfaction"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
