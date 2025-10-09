@@ -136,17 +136,30 @@ Focus on ability and prompt, motivation is fickle. Use motivation waves to do th
 
 ## Influencer 2.0
 
-A different model to switch, also covering change management. Essentially you need to influence through the following dimensions
+A different model to switch, also covering change management. Essentially you need to influence through the following dimensions:
 
-```mermaid
-quadrantChart
-  x-axis Personal  --> Social
-  y-axis "Motivation" --> Ability
-  quadrant-1 "Group Ability"
-  quadrant-2 "Skills"
-  quadrant-3 "Self Regulation "
-  quadrant-4 Group Motivation
-```
+{% include quadrant-matrix.html
+    title="Influencer 2.0: Six Sources of Influence"
+    subtitle="Change happens when you influence across all dimensions"
+    x_label="Personal → Social"
+    y_label="Motivation → Ability"
+    q1_name="Social Ability"
+    q1_subtitle="Structural Support"
+    q1_traits="Enable group performance<br>Provide tools and resources<br>Remove barriers<br>Build infrastructure"
+    q1_color="rgba(255, 224, 224, 0.5)"
+    q2_name="Personal Ability"
+    q2_subtitle="Skills & Knowledge"
+    q2_traits="Build individual skills<br>Provide training<br>Practice deliberately<br>Develop competence"
+    q2_color="rgba(230, 230, 250, 0.5)"
+    q3_name="Personal Motivation"
+    q3_subtitle="Self-Regulation"
+    q3_traits="Connect to values<br>Build intrinsic motivation<br>Create emotional engagement<br>Personal 'why'"
+    q3_color="rgba(232, 244, 234, 0.5)"
+    q4_name="Social Motivation"
+    q4_subtitle="Peer Influence"
+    q4_traits="Harness peer pressure<br>Build accountability<br>Create social norms<br>Rally the herd"
+    q4_color="rgba(255, 229, 180, 0.5)"
+%}
 
 {% include amazon.html asin="0385528752;B07D23CFGR;B00BPO7710" %}
 
