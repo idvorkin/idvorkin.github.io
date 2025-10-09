@@ -18,6 +18,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2025-10-09](#2025-10-09)
+    - [Using AI to Explore and Organize Religious Understanding](#using-ai-to-explore-and-organize-religious-understanding)
   - [2025-10-05](#2025-10-05)
     - [Four-Hour Python Deadlock Detective Work](#four-hour-python-deadlock-detective-work)
     - [New Tmux Extension in Less Than an Hour](#new-tmux-extension-in-less-than-an-hour)
@@ -194,6 +196,14 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2025-10-09
+
+#### Using AI to Explore and Organize Religious Understanding
+
+- **TOP Takeaway**: AI as a collaborative explorer for sensitive personal topics - worked through skepticism to find practical wisdom in religious texts
+- **The Session**: [Full conversation](https://github.com/idvorkin/idvorkin.github.io/blob/main/zz-chop-logs/2025-10-09-religion-exploration.html)
+- **The Commit**: [Bible verses organized by practical themes](https://github.com/idvorkin/idvorkin.github.io/commit/8ab2827286911e65473b7b435f55b36fe8af76db)
 
 ### 2025-10-05
 
