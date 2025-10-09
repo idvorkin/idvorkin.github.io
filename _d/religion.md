@@ -30,9 +30,11 @@ I did my Bar Mitzvah at the Wailing Wall in Israel — the holiest place in Juda
   - [a set of rituals to keep me on track and for complex events](#a-set-of-rituals-to-keep-me-on-track-and-for-complex-events)
   - [A harbor of inner peace](#a-harbor-of-inner-peace)
 - [Some bible verses I really like](#some-bible-verses-i-really-like)
-  - [Tolerance](#tolerance)
-    - [Discipline](#discipline)
-    - [You don't have control, but you must still do the work](#you-dont-have-control-but-you-must-still-do-the-work)
+  - [Don't take Faith Blindly](#dont-take-faith-blindly)
+    - [Be Tolerant Of Others](#be-tolerant-of-others)
+    - [Be Deliberate, Disciplined, Daily](#be-deliberate-disciplined-daily)
+    - [Do the work](#do-the-work)
+  - [Others I need to categorize](#others-i-need-to-categorize)
 - [Appendix and stuff I'm working in ...](#appendix-and-stuff-im-working-in-)
   - [Why Religion?](#why-religion)
   - [Belief vs Practice](#belief-vs-practice)
@@ -158,22 +160,36 @@ A ritual for death, for marriage, to remind us to forgive, and to be void of tem
 
 While I struggle with literal belief, I've found certain verses capture truths about how to live well. They're less about theology and more about practical wisdom - the kind that holds up whether you believe in God or not.
 
-#### Tolerance
+#### Don't take Faith Blindly
 
+- 1 John 4:1 - "Beloved, do not believe every spirit, but test the spirits to see whether they are from God, for many false prophets have gone out into the world."
+- Proverbs 14:15 - "The simple believes everything, but the prudent gives thought to his steps."
+- 1 Thessalonians 5:21 - "But test everything; hold fast what is good."
+- 2 Corinthians 13:5 - "Examine yourselves to see whether you are in the faith; test yourselves."
+
+#### Be Tolerant Of Others
+
+- Matthew 7:1 - "Judge not, that you be not judged. For with the judgment you pronounce you will be judged, and with the measure you use it will be measured to you."
+- Matthew 7:12 - "So in everything, do to others what you would have them do to you, for this sums up the Law and the Prophets."
+- Galatians 3:28 - "There is neither Jew nor Gentile, neither slave nor free, nor is there male and female, for you are all one in Christ Jesus."
 - Romans 14:10 - "You, then, why do you judge your brother or sister? Or why do you treat them with contempt? For we will all stand before God's judgment seat."
 - Romans 14:13 - "Therefore let us stop passing judgment on one another. Instead, make up your mind not to put any stumbling block or obstacle in the way of a brother or sister."
 
-#### Discipline
+#### Be Deliberate, Disciplined, Daily
 
-- Proverbs 27:17 - "As iron sharpens iron, so one person sharpens another."
+- Proverbs 25:28 - "A man without self-control is like a city broken into and left without walls."
 - 1 Corinthians 9:27 - "But I discipline my body and keep it under control, lest after preaching to others I myself should be disqualified."
 - Hebrews 12:11 - "For the moment all discipline seems painful rather than pleasant, but later it yields the peaceful fruit of righteousness to those who have been trained by it."
 
-#### You don't have control, but you must still do the work
+#### Do the work
 
-- Ecclesiastes 9:10 - "Whatever your hand finds to do, do it with all your might, for in the realm of the dead, where you are going, there is neither working nor planning nor knowledge nor wisdom."
-- Proverbs 21:31 - "The horse is made ready for the day of battle, but victory rests with the Lord."
+- Colossians 3:23 - "Whatever you do, work at it with all your heart, as working for the Lord, not for human masters."
+- Proverbs 13:4 - "Lazy people want much but get little, but those who work hard will prosper."
 - 2 Thessalonians 3:10 - "For even when we were with you, we gave you this rule: 'The one who is unwilling to work shall not eat.'"
+
+### Others I need to categorize
+
+- Proverbs 27:17 - "As iron sharpens iron, so one person sharpens another."
 
 ## Appendix and stuff I'm working in ...
 

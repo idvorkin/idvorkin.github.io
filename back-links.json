@@ -4217,10 +4217,10 @@
         },
         "/religion": {
             "description": "I did my Bar Mitzvah at the Wailing Wall in Israel — the holiest place in Judaism. We flew there as a family, and I still remember stepping off the plane and feeling an intense warmth. I turned to my sister and whispered, “I can feel God.” She rolled her eyes and said, “That’s not God. That’s forty degrees Celsius.”\n\n",
-            "doc_size": 30000,
+            "doc_size": 31000,
             "file_path": "_site/religion.html",
             "incoming_links": [],
-            "last_modified": "2025-10-04T11:38:36-07:00",
+            "last_modified": "2025-10-09T07:03:48.286626",
             "markdown_path": "_d/religion.md",
             "outgoing_links": [
                 "/anxiety"
