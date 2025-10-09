@@ -51,6 +51,57 @@
 - **Research integration** - heavy citing of books, studies, and external sources
 - **Avoid marketing speak and buzzwords** - no "revolutionary," "game-changing," or corporate jargon
 
+### Avoiding AI Writing Patterns
+
+**These patterns make writing feel generic and machine-generated. Avoid them:**
+
+_Reference: [Wikipedia: Signs of AI Writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing)_
+
+**❌ Undue emphasis phrases:**
+
+- "stands as", "serves as", "plays a vital role in"
+- "underscores its significance", "highlights the importance"
+- "captivates both X and Y alike"
+- Instead: Be direct and specific about what something does or means
+
+**❌ Promotional/tourism language:**
+
+- "nestled within the breathtaking", "rich cultural heritage"
+- "must-visit", "hidden gem", "boasts a wide array"
+- Instead: Use concrete, sensory details and personal experience
+
+**❌ Editorializing phrases:**
+
+- "it's important to note that", "it's worth mentioning"
+- "notably", "importantly", "significantly"
+- Instead: Just state the point directly - if it's in your post, it's already important
+
+**❌ Superficial -ing phrase overuse:**
+
+- "highlighting the fact that", "showcasing the importance"
+- "demonstrating the value of", "emphasizing the need for"
+- Instead: Use active verbs and direct statements
+
+**❌ Formulaic conjunctions:**
+
+- Starting many sentences with "Additionally", "Furthermore", "Moreover"
+- Essay-like synthesis language that sounds academic rather than conversational
+- Instead: Use natural transitions and vary sentence structure
+
+**❌ Vague intensifiers:**
+
+- "very unique", "extremely important", "highly significant"
+- "truly remarkable", "particularly noteworthy"
+- Instead: Show don't tell - use specific examples that demonstrate importance
+
+**✅ Better approaches:**
+
+- Use specific numbers, names, and details over vague descriptions
+- Write like you're explaining to a friend, not composing an essay
+- Let the content speak for itself rather than emphasizing its importance
+- Replace abstract analysis with concrete observations
+- Use plain, direct language over formal academic phrasing
+
 ### Structure Elements
 
 - **Extensive use of headers** for easy scanning
