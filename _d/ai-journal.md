@@ -202,7 +202,7 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 #### Using AI to Explore and Organize Religious Understanding
 
 - **TOP Takeaway**: AI as a collaborative explorer for sensitive personal topics - worked through skepticism to find practical wisdom in religious texts
-- **The Session**: [Full conversation](https://github.com/idvorkin/idvorkin.github.io/blob/main/zz-chop-logs/2025-10-09-religion-exploration.html)
+- **The Session**: [Full conversation](/published-chop-logs/2025-10-09-religion-exploration.html)
 - **The Commit**: [Bible verses organized by practical themes](https://github.com/idvorkin/idvorkin.github.io/commit/8ab2827286911e65473b7b435f55b36fe8af76db)
 
 ### 2025-10-05
