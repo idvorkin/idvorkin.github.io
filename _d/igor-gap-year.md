@@ -197,7 +197,7 @@ Each ancient dragon breeds specific offspring that attack in different ways. Und
 
 ### Entropy's Spawn
 
-**Parkinson's Dragon**: Named for [Parkinson's Law](/parkinson). Tasks expand to fill infinite time. This spawn is particularly vicious because it makes you complicit in your own time theft. What should be a productive day becomes a haze of half-completed tasks.
+**Parkinson's Dragon**: Named for [Parkinson's Law](/parkinson). Tasks expand to fill infinite time. This spawn is vicious because it makes you complicit in your own time theft - you become the thief stealing from yourself. What should be a productive day becomes a haze of half-completed tasks.
 
 **The Addiction Dragon**: For me, this isn't about alcohol (I gave that up for better [sleep](/sleep)) - it's social media. The endless scroll, the dopamine hits from notifications, the fear of missing out. During a gap year, without the structure of work, these digital sirens could easily consume entire days.
 
