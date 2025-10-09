@@ -20,6 +20,7 @@
         "/90-days": "/90days",
         "/Business-Model-You": "/bmy",
         "/Coaching-Questions": "/coaching",
+        "/Human-Meetings": "/human-meetings",
         "/aGPT": "/ai-bestie",
         "/activation-energy": "/activation",
         "/addictions": "/addiction",
@@ -27,7 +28,6 @@
         "/ai-coder": "/chop",
         "/ai-papers": "/ai-paper",
         "/ai-talk": "/genai-talk",
-        "/ai-training": "/ai-training",
         "/alexa-charity": "/toysfortots",
         "/anxious": "/anxiety",
         "/architecture": "/design",
@@ -128,7 +128,6 @@
         "/heavy-club": "/kettlebell",
         "/heavy-clubs": "/kettlebell",
         "/high-energy": "/energy-abundance",
-        "/human-meetings": "/human-meetings",
         "/humanity": "/touching",
         "/hyper-personalization": "/hyper-personal",
         "/idle-loop": "/idle",
@@ -282,7 +281,7 @@
     "url_info": {
         "/22": {
             "description": "In 2019 I created a program for 15 fantastic interns! A program highlight was my talk titled “What I wish I knew at 22, and so might you”. The talk received a 94% overall rating from over 15 interns, 10 SDE-IIs, and 1 senior developer. Even though the talk focuses on how to live the good life, a big chunk of life is work, so there’s good coverage on how to optimize your career.\n\n",
-            "doc_size": 17000,
+            "doc_size": 16000,
             "file_path": "_site/22.html",
             "incoming_links": [
                 "/chapters",
@@ -373,6 +372,7 @@
                 "/eulogy",
                 "/first-things-first",
                 "/first-understand",
+                "/gap-year-igor",
                 "/psychic-weight",
                 "/sharpen-the-saw",
                 "/synergize",
@@ -744,7 +744,7 @@
             "incoming_links": [
                 "/ai"
             ],
-            "last_modified": "2025-10-05T10:42:02-07:00",
+            "last_modified": "2025-10-09T07:29:49-07:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
@@ -781,7 +781,7 @@
                 "/ai",
                 "/ai-journal"
             ],
-            "last_modified": "2025-10-05T12:23:26-07:00",
+            "last_modified": "2025-10-07T05:50:36-07:00",
             "markdown_path": "_d/ai-security.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -806,6 +806,18 @@
             "redirect_url": "",
             "title": "Testing AI",
             "url": "/ai-testing"
+        },
+        "/ai-training": {
+            "description": "Generally, I don’t deal with training or deeper tech, but might as well keep some notes on it.\n\n",
+            "doc_size": 16000,
+            "file_path": "_site/ai-training.html",
+            "incoming_links": [],
+            "last_modified": "2025-07-20T19:26:41-07:00",
+            "markdown_path": "_d/ai-training.md",
+            "outgoing_links": [],
+            "redirect_url": "",
+            "title": "Training LLMs",
+            "url": "/ai-training"
         },
         "/amazon": {
             "description": "I spent 4 years working at Amazon, some things I loved, some not so much. Amazon is a huge company and the variation of behavior within a company exceeds the variation between the “median” behavior between companies. Even within the two teams I was on at Amazon I saw the exact opposite behaviors. When I talk about the good, I’ll talk about the ideal good, and when I talk about the bad, I’ll talk to some issues I saw that were systemically bad. As a result you’ll often see me describing something as both good and bad, as it’s done differently in different parts of the company.\n\n",
@@ -1028,7 +1040,7 @@
         },
         "/be-proactive": {
             "description": "I choose ‘.’ I am responsible for my own life ‘.’ My behavior is a function of my decisions, not my conditions ‘.’ I can subordinate feelings to values ‘.’ I have the initiative and the responsibility to make things happen. These are my insights from 7 habits Chapter 1.\n\n",
-            "doc_size": 22000,
+            "doc_size": 21000,
             "file_path": "_site/be-proactive.html",
             "incoming_links": [
                 "/7-habits",
@@ -1847,7 +1859,7 @@
         },
         "/day-in-the-life": {
             "description": "A running journal of days that actually worked - the ones where health habits stuck, family time hit different, or I remembered what it feels like to be fully alive. Not every day needs to be Instagram-worthy, but some days deserve a bookmark. This is that bookmark collection.\n\n",
-            "doc_size": 19000,
+            "doc_size": 18000,
             "file_path": "_site/day-in-the-life.html",
             "incoming_links": [],
             "last_modified": "2025-10-04T18:43:51-07:00",
@@ -1868,6 +1880,7 @@
                 "/chasing-daylight",
                 "/covid",
                 "/elder",
+                "/gap-year-igor",
                 "/last-year",
                 "/mortality-software",
                 "/psychic-weight"
@@ -2321,12 +2334,12 @@
             "markdown_path": "_posts/2020-04-01-Igor-Eulogy.md",
             "outgoing_links": [
                 "/7-habits",
-                "/Human-Meetings",
                 "/The-Genesis-Node",
                 "/balloon",
                 "/being-a-great-manager",
                 "/bike",
                 "/cache",
+                "/human-meetings",
                 "/ig66/687",
                 "/ig66/717",
                 "/ig66/732",
@@ -2511,21 +2524,21 @@
                 "/timeoff",
                 "/timeoff-2025-08"
             ],
-            "last_modified": "2025-10-09T06:46:58.663456",
+            "last_modified": "2025-10-09T07:01:22-07:00",
             "markdown_path": "_d/igor-gap-year.md",
             "outgoing_links": [
-                "/7habits",
+                "/7-habits",
                 "/activation",
                 "/affirmations",
                 "/chapters",
                 "/chasing-daylight",
                 "/d/resistance",
+                "/death",
                 "/emotional-health",
                 "/end-in-mind",
                 "/gap-year",
                 "/kettlebell",
                 "/money",
-                "/on-being-mortal",
                 "/parkinson",
                 "/physical-health",
                 "/produce-consume",
@@ -2534,10 +2547,10 @@
                 "/sleep",
                 "/stock-concentration",
                 "/structure",
+                "/sustainable-work",
                 "/timeoff",
                 "/tori",
-                "/voices",
-                "/wlb-manifesto"
+                "/voices"
             ],
             "redirect_url": "",
             "title": "Will Igor Take a Gap Year? Wrestling with Dragons and Dreams",
@@ -2610,7 +2623,7 @@
         },
         "/gpt": {
             "description": "Just like the search bar in google fills in what you’re typing when you say “Where can I ge .. “ GPT3 complete strings as well. Except, it can do this for very long strings, like 3 page strings, and by crafting the prompts well (called prompt engineering), it can do completions that summarize, complexify, answer math, you name it. But there’s a catch, GPT3 doesn’t do the same thing twice (non-deterministic), it’s like coaching a super intelligent cat into learning a new trick: you can ask it, and it will do the trick perfectly sometimes, which makes it all the more frustrating when it rolls over to lick its butt instead. You know the problem is not that it can’t but that it won’t(From Gwern).\n\n",
-            "doc_size": 26000,
+            "doc_size": 25000,
             "file_path": "_site/gpt.html",
             "incoming_links": [
                 "/ai-art",
@@ -2654,7 +2667,7 @@
         },
         "/grammerly": {
             "description": "\n\n",
-            "doc_size": 13000,
+            "doc_size": 12000,
             "file_path": "_site/grammerly.html",
             "incoming_links": [],
             "last_modified": "2025-08-24T09:03:19-07:00",
@@ -2807,6 +2820,22 @@
             "redirect_url": "",
             "title": "Why a Engineering Manager masquerades as a magician on the weekends",
             "url": "/hobby"
+        },
+        "/human-meetings": {
+            "description": "Having our emotions heard is a fundamental human need. The modern world denies this need, but that doesn’t make the need go away. More than denying the need, society gives, and encourages, us to suppress our emotions. Feelings meetings stand in opposition. They exist to allow us, no, encourage us, to fulfill our fundamental need of expressing emotion.\n\n",
+            "doc_size": 15000,
+            "file_path": "_site/human-meetings.html",
+            "incoming_links": [
+                "/being-a-great-manager",
+                "/eulogy",
+                "/job"
+            ],
+            "last_modified": "2025-09-13T16:07:47-07:00",
+            "markdown_path": "_d/human-meeting.md",
+            "outgoing_links": [],
+            "redirect_url": "",
+            "title": "Feelings/Human Meetings",
+            "url": "/human-meetings"
         },
         "/humans-are-underrated": {
             "description": "As robots become better then humans at most things, what roles will be left for humans? What skills are required for those roles? Empathizing, collaborating, leading,and building relationships.\n\n",
@@ -2979,7 +3008,6 @@
             "last_modified": "2025-09-07T05:53:44-07:00",
             "markdown_path": "_posts/2018-06-7-my-perfect-job.md",
             "outgoing_links": [
-                "/Human-Meetings",
                 "/being-a-great-manager",
                 "/cache",
                 "/coaching",
@@ -3354,7 +3382,7 @@
         },
         "/mermaid": {
             "description": "Lets try d2\n\n",
-            "doc_size": 15000,
+            "doc_size": 14000,
             "file_path": "_site/mermaid.html",
             "incoming_links": [],
             "last_modified": "2023-12-17T18:49:14+00:00",
@@ -3378,7 +3406,7 @@
         },
         "/mind-at-work": {
             "description": "I have a problem, an addiction, an addiction so detrimental to quality of life, it should be described as a disease. This disease is not being present. There are many symptoms of the disease, but today I’m going to talk about my most frequent symptoms, my body at home, but my mind at work.\n\n",
-            "doc_size": 20000,
+            "doc_size": 19000,
             "file_path": "_site/mind-at-work.html",
             "incoming_links": [
                 "/addiction",
@@ -3604,6 +3632,7 @@
                 "/getting-to-yes-with-yourself",
                 "/happy",
                 "/productive",
+                "/regrets",
                 "/sell",
                 "/synergize",
                 "/work-satisfaction"
@@ -4195,8 +4224,8 @@
             "url": "/reflect-tool"
         },
         "/regrets": {
-            "description": "I spent years treating regrets like a cage - replaying decisions I couldn’t change, beating myself up over the past. Here’s the critical reframe: regrets aren’t about the past, they’re guides for what you should do next. The past is outside your circle of influence, but regrets are data about your values trying to redirect your future. I’ve found four main types (foundation, boldness, moral, and connection), and the goal isn’t avoiding regrets - it’s using them as a compass instead of a cage.\n\n",
-            "doc_size": 29000,
+            "description": "Regrets, both ours and others, are a powerful tools to shape our present and future. four main types: foundation regrets related to not laying a proper base for life; boldness regrets stemming from missed opportunities and risks; moral regrets from not doing the right thing; and connection regrets from neglecting or damaging relationships. May you find insights into how we can better navigate our choices to minimize regret and enhance our sense of fulfillment.\n\n",
+            "doc_size": 20000,
             "file_path": "_site/regrets.html",
             "incoming_links": [
                 "/emotions",
@@ -4208,19 +4237,19 @@
                 "/be-proactive",
                 "/curious",
                 "/mental-pain",
-                "/shame",
+                "/negotiate",
                 "/sustainable-work"
             ],
             "redirect_url": "",
-            "title": "Use Your Regrets As A Compass, Not A Cage",
+            "title": "Regrets",
             "url": "/regrets"
         },
         "/religion": {
             "description": "I did my Bar Mitzvah at the Wailing Wall in Israel — the holiest place in Judaism. We flew there as a family, and I still remember stepping off the plane and feeling an intense warmth. I turned to my sister and whispered, “I can feel God.” She rolled her eyes and said, “That’s not God. That’s forty degrees Celsius.”\n\n",
-            "doc_size": 31000,
+            "doc_size": 30000,
             "file_path": "_site/religion.html",
             "incoming_links": [],
-            "last_modified": "2025-10-09T07:03:48.286626",
+            "last_modified": "2025-10-09T07:04:33-07:00",
             "markdown_path": "_d/religion.md",
             "outgoing_links": [
                 "/anxiety"
@@ -4366,7 +4395,6 @@
                 "/emotions",
                 "/insecure",
                 "/psychic-weight",
-                "/regrets",
                 "/work-satisfaction"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -4691,6 +4719,7 @@
                 "/balance",
                 "/being-a-great-manager",
                 "/depression",
+                "/gap-year-igor",
                 "/overload",
                 "/regrets",
                 "/retire",
@@ -4705,7 +4734,7 @@
         },
         "/switch": {
             "description": "Human action can be modeled by an elephant, a rider, and the path. Our emotional side is the Elephant and our rational side is the Rider. Perched atop the Elephant, the Rider holds the reins and seems to be the leader. But the Rider’s control is precarious because the Rider is so small relative to the Elephant. Anytime the six-ton Elephant and the Rider disagree about which direction to go, the Rider is going to lose. He’s completely overmatched. Lastly, the path is the structural elements that nudge your elephant and your rider in a direction, without effort.\n\n",
-            "doc_size": 25000,
+            "doc_size": 30000,
             "file_path": "_site/switch.html",
             "incoming_links": [
                 "/enable",
@@ -4715,7 +4744,7 @@
                 "/random-idea",
                 "/timeoff-2022-02"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2025-10-09T19:09:10+00:00",
             "markdown_path": "_d/switch.md",
             "outgoing_links": [
                 "/coe",
@@ -4788,7 +4817,7 @@
         },
         "/td/back_ref": {
             "description": "This blog is my collection of evergreen notes, a place to have my thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here’s my strategy to create them.\n\n",
-            "doc_size": 14000,
+            "doc_size": 13000,
             "file_path": "_site/td/back_ref.html",
             "incoming_links": [],
             "last_modified": "2022-04-16T15:22:43-07:00",
@@ -5776,7 +5805,7 @@
         },
         "/weeks": {
             "description": "\n\n",
-            "doc_size": 4314000,
+            "doc_size": 4313000,
             "file_path": "_site/weeks.html",
             "incoming_links": [
                 "/balance"
