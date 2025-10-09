@@ -34,7 +34,7 @@ I did my Bar Mitzvah at the Wailing Wall in Israel — the holiest place in Juda
     - [Be Tolerant Of Others](#be-tolerant-of-others)
     - [Be Deliberate, Disciplined, Daily](#be-deliberate-disciplined-daily)
     - [Do the work](#do-the-work)
-  - [Others I need to categorize](#others-i-need-to-categorize)
+    - [Others I like and need to categorize](#others-i-like-and-need-to-categorize)
 - [Appendix and stuff I'm working in ...](#appendix-and-stuff-im-working-in-)
   - [Why Religion?](#why-religion)
   - [Belief vs Practice](#belief-vs-practice)
@@ -162,10 +162,9 @@ While I struggle with literal belief, I've found certain verses capture truths a
 
 #### Don't take Faith Blindly
 
-- 1 John 4:1 - "Beloved, do not believe every spirit, but test the spirits to see whether they are from God, for many false prophets have gone out into the world."
 - Proverbs 14:15 - "The simple believes everything, but the prudent gives thought to his steps."
 - 1 Thessalonians 5:21 - "But test everything; hold fast what is good."
-- 2 Corinthians 13:5 - "Examine yourselves to see whether you are in the faith; test yourselves."
+- 1 John 4:1 - "Beloved, do not believe every spirit, but test the spirits to see whether they are from God, for many false prophets have gone out into the world."
 
 #### Be Tolerant Of Others
 
@@ -183,11 +182,11 @@ While I struggle with literal belief, I've found certain verses capture truths a
 
 #### Do the work
 
-- Colossians 3:23 - "Whatever you do, work at it with all your heart, as working for the Lord, not for human masters."
-- Proverbs 13:4 - "Lazy people want much but get little, but those who work hard will prosper."
 - 2 Thessalonians 3:10 - "For even when we were with you, we gave you this rule: 'The one who is unwilling to work shall not eat.'"
+- Proverbs 13:4 - "Lazy people want much but get little, but those who work hard will prosper."
+- Colossians 3:23 - "Whatever you do, work at it with all your heart, as working for the Lord, not for human masters."
 
-### Others I need to categorize
+#### Others I like and need to categorize
 
 - Proverbs 27:17 - "As iron sharpens iron, so one person sharpens another."
 
