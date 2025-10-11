@@ -8,11 +8,14 @@ redirect_from:
   - activation-energy
   - willpower
   - will-power
+imagefeatureblob: blog/raccoon-activation.webp
 ---
 
 Doing activities requires will power, addictions and procrastination require negative will power, while positive habits, especially new ones require high will power. Here's a model for these things.
 
 {% include alert.html content="Note: All 'units' of willpower in this post are illustrative and not based on scientific measurement. They're meant to give a sense of relative magnitude and direction." style="info" %}
+
+{% include blob_image_float_right.html src="blog/raccoon-activation.webp" %}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js" integrity="sha512-tMabqarPtykgDtdtSqCL3uLVM0gS1ZkUAVhRFu1vSEFgvB73niFQWJuvviDyBGBH22Lcau4rHB5p2K2T0Xvr6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/1.2.1/chartjs-plugin-annotation.min.js" integrity="sha512-ooJBPaW5ClG2gzDFT6KIKVeA8Pcie6InrV/gFP+RH6P2hrCJNVjaggZrxT/CeBakKwOlSUwHEwMCa5iny0uJtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
