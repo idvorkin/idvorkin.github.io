@@ -2,9 +2,12 @@
 title: "Religion: Losing belief while seeing value"
 layout: post
 permalink: /religion
+imagefeatureblob: blog/raccoon-religion.webp
 ---
 
 I did my Bar Mitzvah at the Wailing Wall in Israel — the holiest place in Judaism. We flew there as a family, and I still remember stepping off the plane and feeling an intense warmth. I turned to my sister and whispered, "I can feel God." She rolled her eyes and said, "That's not God. That's forty degrees Celsius."
+
+{% include blob_image_float_right.html src="blog/raccoon-religion.webp" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
