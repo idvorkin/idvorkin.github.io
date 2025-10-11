@@ -420,6 +420,8 @@ There's an inherent asymmetry here: I'm giving up my career momentum to spend mo
 
 The Entropy Dragon requires constant energy input to keep at bay. This isn't a bug - it's thermodynamics. The key is building minimum viable structure that generates order without recreating the prison of work.
 
+{% include alert.html content="Being afraid of this dragon sure sounds like a victim mentality/learned helplessness. Reminder to self, when I succumb to the Entropy dragon, it's not due to an un-avoidable externality, it's an explicit choice I'm making, even though I don't want to admit it" %}
+
 At 50, you have peak capital (time, energy, resources) to invest in your body, mind and relationship infrastructure. Every dollar spent on prevention now saves $10 in treatment later. Habits are the "dividend-paying stocks" of personal development - they keep generating returns without additional input.
 
 **Where Igor Finds the Strength:**
@@ -544,6 +546,12 @@ Instead of thinking about it as a gap year (which sounds like absence), think ab
 This aligns with my approach to [continuous learning](/timeoff) and [overcoming resistance](/d/resistance) to change.
 
 The key is creating tangible artifacts that prove the year was invested, not wasted. These artifacts serve as both daily accountability and lasting proof of productivity - just productivity YOU define, not what others measure.
+
+**The it's gonna be OK Reframe**
+
+I was discussing the squander risk with a friend and they said, "Oh yeah, I'm totally cool if I squander it, I deserve it". I think that would result in a regret for me, but it's an intersesting thought in compassion. (Aside: It is so hard to differentiate cutting yourself self slack vs slackign off)
+
+{%include summarize-page.html src="/regret"%}
 
 {% include alert.html content="You think I'm doing this stuff? I wish, completely aspirational ... but gotta start with a dream" style="info" %}
 
@@ -816,15 +824,15 @@ The opportunity: Instead of accidental growth from work chaos, you deliberately 
 
 ### Work Taming Entropy
 
-When we are working, our **disposable time becomes scarce/precious**, increasing its value, making us scrutinize how we spend it (when we have sufficient will power), which results in very high quality time allocation, often far better than if we're on a gap year when we have more time. (Reframe - paradox of plenty) - Scarcity clarifies value. - Parkinson's law
+When we are working, our **disposable time becomes scarce/precious**, increasing its value, making us scrutinize how we spend it (when we have sufficient will power), and really living the 80/20 rule. This results in high quality time allocation, often far better than if we're on a gap year when we have more time. (Reframe - paradox of plenty) - Scarcity clarifies value. - Parkinson's law
 
 And there's another layer: Work provides tonnes of support for that "Professional Fiber" that contributes to your total [willpower](/activation#willpower-as-a-bunch-of-guys-lifting-a-log). When you remove those work-imposed mechanisms, you don't just lose structure - you risk a critical component of your total willpower, weakening the rest of your willpower, putting you at risk to spiral downwards
 
-- Entropy is stopped by various forces:
+- Entropy is tamed by various forces:
   - Explicit: I wake up every day at 5am because that's my habit
   - Implicit: I wake up every day at 5am because I need to get to work at 6am.
   - Hybrid: I wake up every day at 5am so I'll be ready to do something in the future.
 
 By virtue of accomplishing things, having impact, providing value, you actively fight entropy.
 
-You are the average of your peers - One day I was at the coffee shop in the middle of the day and I looked around and the only people there were these 3 old men just stairing off into space. We become the average of our peers, and if our peers are all just sitting there stairing off into space, we'll likely soon follow.
+You are the average of your peers (Or Proverbs 27:17 - Iron sharpens iron for our biblical friends)- One day I was at the coffee shop in the middle of the day and I looked around and the only people there were these 3 old men just stairing off into space. We become the average of our peers, and if our peers are all just sitting there stairing off into space, we'll likely soon follow.
