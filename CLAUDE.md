@@ -272,6 +272,50 @@ Use the `quadrant-matrix.html` include for any 2x2 grid visualization:
 
 Common uses: PANAS personalities, Eisenhower matrix, SWOT analysis, risk assessment. Quadrants numbered clockwise from top-right.
 
+### Vapi.ai Voice/Chat Widget
+
+For adding interactive AI voice or chat capabilities (like Tony the AI life coach), use the Vapi.ai web widget:
+
+**Documentation:** [https://docs.vapi.ai/chat/web-widget](https://docs.vapi.ai/chat/web-widget)
+
+**Implementation pattern (see `_d/tesla.md` for live example):**
+
+```html
+<script
+  src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js"
+  async
+></script>
+
+<vapi-widget
+  public-key="49b277de-d508-4062-bec2-503e40915be4"
+  assistant-id="f5fe3b31-0ff6-4395-bc08-bc8ebbbf48a6"
+  mode="chat"
+  theme="dark"
+  main-label="Talk to Tony"
+  base-color="#2c2c2c"
+  accent-color="#c0392b"
+></vapi-widget>
+```
+
+**Configuration options:**
+
+- `mode`: "chat" (text-based) or "voice" (voice-based)
+- `theme`: "light" or "dark"
+- `main-label`: Button/widget label text
+- `base-color`: Background color (hex or rgba)
+- `accent-color`: Accent/highlight color (hex or rgba)
+
+**Credentials:**
+
+- Public key and assistant ID are stored in the widget code
+- These are public-facing and safe to commit to the repo
+- Backend logic/API keys are managed separately in the tony_tesla project
+
+**Related projects:**
+
+- Backend: [github.com/idvorkin/tony_tesla](https://github.com/idvorkin/tony_tesla)
+- Blog integration: See `/tesla` page for reference implementation
+
 ## Internal Link Guidelines
 
 **IMPORTANT**: Always use permalinks when linking between blog posts, not redirect URLs:
