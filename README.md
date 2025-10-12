@@ -55,7 +55,7 @@ This [blog](https://idvork.in) contains my [evergreen notes](https://notes.andym
 
 ### No broken links
 
- - A script validates no broken links keeping everything nice
+- A script validates no broken links keeping everything nice
 
 ### Select a Random Page
 
@@ -170,6 +170,8 @@ rbenv install  2.7.3
 ```
 
 ### Tech issues
+
+<!-- Test comment for dev header PR functionality verification -->
 
 #### Jekyll downloading instead of rendering page
 
