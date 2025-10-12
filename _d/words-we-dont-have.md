@@ -2,7 +2,6 @@
 layout: post
 title: "The Words We Don't Have"
 permalink: /words-we-dont-have
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-magic.webp
 tags:
   - how igor ticks
   - philosophy
