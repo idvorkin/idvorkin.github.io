@@ -85,6 +85,9 @@ zsh = "zsh"
 vim = "vim"
 nvim = "nvim"
 emacs = "emacs"
+# Greek words for love (linguistic relativity post)
+Storge = "Storge"  # Greek word for familial love
+storge = "storge"  # Greek word for familial love
 
 [files]
 # Files to ignore
