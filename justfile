@@ -456,5 +456,9 @@ update-pr-data:
         echo "{\"branch\": \"$BRANCH\"}" > _data/git.json
     fi
 
+    # Force Jekyll to rebuild by deleting incremental metadata
+    # This ensures data file changes are picked up by --incremental mode
+    rm -f .jekyll-metadata
+
 # Legacy alias for update-pr-data
 set-pr: update-pr-data
