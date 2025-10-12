@@ -1769,8 +1769,7 @@
                 "/productive",
                 "/psychic-weight",
                 "/sharpen-the-saw",
-                "/slow",
-                "/switch"
+                "/slow"
             ],
             "last_modified": "2025-08-13T07:43:13-07:00",
             "markdown_path": "_d/habits.md",
@@ -4727,7 +4726,7 @@
         },
         "/switch": {
             "description": "Human action can be modeled by an elephant, a rider, and the path. Our emotional side is the Elephant and our rational side is the Rider. Perched atop the Elephant, the Rider holds the reins and seems to be the leader. But the Rider’s control is precarious because the Rider is so small relative to the Elephant. Anytime the six-ton Elephant and the Rider disagree about which direction to go, the Rider is going to lose. He’s completely overmatched. Lastly, the path is the structural elements that nudge your elephant and your rider in a direction, without effort.\n\n",
-            "doc_size": 30000,
+            "doc_size": 31000,
             "file_path": "_site/switch.html",
             "incoming_links": [
                 "/enable",
@@ -4737,11 +4736,11 @@
                 "/random-idea",
                 "/timeoff-2022-02"
             ],
-            "last_modified": "2025-10-09T19:09:10+00:00",
+            "last_modified": "2025-10-12T09:16:21.999726",
             "markdown_path": "_d/switch.md",
             "outgoing_links": [
                 "/coe",
-                "/d/habits"
+                "/habits"
             ],
             "redirect_url": "",
             "title": "Switch",

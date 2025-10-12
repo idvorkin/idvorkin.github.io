@@ -539,7 +539,9 @@ Use the summarize-page include for rich internal linking:
 {% include summarize-page.html src="/gap-year" %}
 ```
 
-### Quadrant Matrix (2x2 Grid Visualization)
+### Matrix Visualizations
+
+#### Quadrant Matrix (2x2 Grid)
 
 Use the quadrant-matrix include for any 2x2 grid visualizations like personality types, decision matrices, or prioritization frameworks:
 
@@ -612,6 +614,86 @@ Use the quadrant-matrix include for any 2x2 grid visualizations like personality
     q4_subtitle="Natural Optimist"
     q4_traits="Spreads joy<br>Sees bright side<br>Watch for warnings"
     q4_color="rgba(255, 229, 180, 0.5)"
+%}
+```
+
+#### Six-Cell Matrix (2x3 Grid)
+
+Use the six-cell-matrix include for 2x3 grid visualizations (2 rows × 3 columns). Perfect for models like Influencer 2.0 that have 6 distinct dimensions:
+
+**Syntax:**
+
+```liquid
+{% include six-cell-matrix.html
+    title="Main Title"
+    subtitle="Optional subtitle"
+    row1_label="Top Row Label"
+    row2_label="Bottom Row Label"
+    col1_label="Left Column"
+    col2_label="Middle Column"
+    col3_label="Right Column"
+    c1_name="Cell 1 (Top-Left)" c1_subtitle="Subtitle" c1_traits="Description<br>Line 2" c1_color="rgba(232,244,234,0.5)"
+    c2_name="Cell 2 (Top-Middle)" c2_subtitle="Subtitle" c2_traits="Description" c2_color="rgba(255,229,180,0.5)"
+    c3_name="Cell 3 (Top-Right)" c3_subtitle="Subtitle" c3_traits="Description" c3_color="rgba(255,224,224,0.5)"
+    c4_name="Cell 4 (Bottom-Left)" c4_subtitle="Subtitle" c4_traits="Description" c4_color="rgba(230,230,250,0.5)"
+    c5_name="Cell 5 (Bottom-Middle)" c5_subtitle="Subtitle" c5_traits="Description" c5_color="rgba(220,245,245,0.5)"
+    c6_name="Cell 6 (Bottom-Right)" c6_subtitle="Subtitle" c6_traits="Description" c6_color="rgba(255,240,220,0.5)"
+%}
+```
+
+**Parameters:**
+
+- `title`, `subtitle`: Main headings for the matrix
+- `row1_label`, `row2_label`: Labels for the two rows
+- `col1_label`, `col2_label`, `col3_label`: Labels for the three columns
+- `c1-c6`: Cells numbered left-to-right, top-to-bottom
+  - `c#_name`: Main heading in cell
+  - `c#_subtitle`: Optional subtitle
+  - `c#_traits`: Description (use `<br>` for line breaks)
+  - `c#_color`: Background color (hex or rgba)
+
+**Common use cases:**
+
+- **Influencer 2.0**: Motivation/Ability × Personal/Social/Structural
+- **Project Management**: High/Low priority × Planning/Execution/Review stages
+- **Skills Development**: Learn/Practice × Technical/Social/Strategic
+- **Any 2×3 framework**: Two categories with three levels each
+
+**Example - Influencer 2.0:**
+
+```liquid
+{% include six-cell-matrix.html
+    title="Influencer 2.0: Six Sources of Influence"
+    subtitle="Change happens when you influence across all dimensions"
+    row1_label="Motivation"
+    row2_label="Ability"
+    col1_label="Personal"
+    col2_label="Social"
+    col3_label="Structural"
+    c1_name="Personal Motivation"
+    c1_subtitle="Self-Regulation"
+    c1_traits="Connect to values<br>Build intrinsic motivation"
+    c1_color="rgba(232, 244, 234, 0.5)"
+    c2_name="Social Motivation"
+    c2_subtitle="Peer Influence"
+    c2_traits="Harness peer pressure<br>Build accountability"
+    c2_color="rgba(255, 229, 180, 0.5)"
+    c3_name="Structural Motivation"
+    c3_subtitle="Incentives"
+    c3_traits="Design reward systems<br>Align incentives"
+    c3_color="rgba(255, 224, 224, 0.5)"
+    c4_name="Personal Ability"
+    c4_subtitle="Skills"
+    c4_traits="Build individual skills<br>Provide training"
+    c4_color="rgba(230, 230, 250, 0.5)"
+    c5_name="Social Ability"
+    c5_subtitle="Support"
+    c5_traits="Enable group performance<br>Provide coaching"
+    c5_color="rgba(220, 245, 245, 0.5)"
+    c6_name="Structural Ability"
+    c6_subtitle="Environment"
+    c6_traits="Provide tools<br>Remove barriers"
+    c6_color="rgba(255, 240, 220, 0.5)"
 %}
 ```
 
