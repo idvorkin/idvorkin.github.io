@@ -393,6 +393,63 @@ Your ability to comment on your own thinking process adds depth and authenticity
 
 ## Technical Implementation Guide
 
+### Opening Paragraphs and Excerpts
+
+**CRITICAL: Always start posts with a plain text opening paragraph before any includes, alerts, or special formatting.**
+
+**Why this matters:**
+
+Jekyll automatically generates excerpts (post summaries/previews) for blog indexes, RSS feeds, and social media sharing. The excerpt is typically the first paragraph or first ~150 words of your post. If you place an alert box, image, or other include immediately after the front matter, the excerpt will be broken or empty, resulting in:
+
+- ❌ Broken previews in blog index pages
+- ❌ Empty descriptions for social media shares
+- ❌ Missing summaries in RSS feeds
+- ❌ Poor SEO snippet previews
+
+**What excerpts are:**
+
+Excerpts are automatically extracted text snippets that represent your post in:
+- Blog homepage listing pages
+- Category/tag archive pages
+- RSS/Atom feed readers
+- Social media link previews (Twitter, LinkedIn, etc.)
+- Search engine result snippets
+
+**Correct structure:**
+
+```markdown
+---
+title: "Post Title"
+permalink: /url
+---
+
+Your compelling opening paragraph goes here. This should hook the reader and give them a clear sense of what the post is about. It should be plain text without any Jekyll includes, HTML, or special formatting.
+
+{% include alert.html content="Any alerts or notices go AFTER the opening paragraph" style="warning" %}
+
+Rest of your content...
+```
+
+**Wrong structure:**
+
+```markdown
+---
+title: "Post Title"
+permalink: /url
+---
+
+{% include alert.html content="Alert immediately after front matter breaks excerpts!" style="warning" %}
+
+Your opening paragraph...
+```
+
+**Best practices:**
+- Make the opening paragraph 2-4 sentences
+- Hook the reader with a personal stake or compelling question
+- Give enough context that the excerpt works as a standalone preview
+- Keep it conversational and engaging
+- No includes, HTML tags, or special formatting in the first paragraph
+
 ### Alert Boxes
 
 Use alert boxes to highlight important information, warnings, or construction notices:
