@@ -307,3 +307,51 @@ The modern debate over belief often misses the power of practice. You don’t ha
 ### Secular Spirituality
 
 You can pursue awe, humility, gratitude, and service without formal religion. Meditation, nature, art, and shared work provide many of the same psychological benefits when practiced intentionally. The question isn't "religious or not," but "what practice reliably opens you to meaning while keeping you kind?"
+
+### Am I really a Christian? 14 Signs (A text from 300 AD)
+
+{% include youtube.html src="xoAFnsb1cmw" %}
+
+A text from around 300 AD (possibly Lactantius) defines 14 signs of being a Christian.
+
+This isn't just about Christians - these are exactly my ethics. See how they map to my affirmations:
+
+{%include summarize-page.html src="/affirmations" %}
+
+#### A class act: First Understand. Appreciate. Isn't that Curious
+
+**Sign 1: Be merciful to all.** Not just to people you like, but to everyone. We all need mercy - patient, understanding, gentle, forgiving. The question isn't whether others deserve mercy, but whether you can offer it as freely as you hope to receive it.
+
+**Sign 3: Give aid to the poor.** Not just the materially poor, but those poor in tenderness, companionship, love, kindness, and basic dignity. We're all poor in some way. The sin isn't being unable to help everyone - it's indifference, being too self-absorbed to see the neighbor right next to you who needs help.
+
+**Sign 4: Suffer with the afflicted.** Before trying to fix problems, see the person. Imagine you're going through the exact same thing they are. **Compassion means "with suffering"** - just be there with their suffering. Then figure out solutions together.
+
+**Sign 5: Participate in others' sorrows as though they were your own.** Let's go find each other's crosses and bear one another's burdens. When you see others carrying problems, don't just observe - fly to help.
+
+**Sign 6: Be an open door to the unhappy.** Be the kind of person where anyone feels comfortable coming, where they can leave feeling a little more special, a little more loved, a little happier. Is your door mostly closed?
+
+**Sign 7: Don't insult anymore.** Take a mental note of how many times you insult, mock, criticize, **judge**, or make fun of somebody throughout a day. Not just out loud - in your mind, under your breath, where only you and maybe God hears. When insulted, respond with no insult. If you say anything, answer gently.
+
+#### Calm like water: Be Present. This too shall pass. Work the problem
+
+**Sign 2: Don't get angry over small injuries.** How you react to every little annoyance is a barometer for your soul. Getting super irritated or flying off the hook over small things are symptoms that something is off inside. Your reaction is a choice.
+
+**Sign 13: Rest your spirit and place your hope in something beyond yourself.** In times of desolation, where do you turn? Try this: take whatever is giving you anxiety or stress, hold it in your heart, then release it. Hand it over. Say "I know you can handle this, let your will be done" - then say nothing else and rest. We waste so much time and energy overthinking. This takes tremendous trust, but it's the way to peace.
+
+#### Do It Anyways: Deliberate. Disciplined. Daily
+
+_These could be essentialist, but putting them here for some balance._
+
+**Sign 8: Serve what you love most.** Who or what do you worship day and night? When you look back, what's the one thing you've traded your life for? We serve who we love the most.
+
+**Sign 9: Continuously meditate on your ways.** What occupies your mind throughout the day? Following any path well means choosing it daily, and to choose to follow someone, you first have to get to know them.
+
+#### An essentialist: Know Essential. Provide Context. Prioritize Ruthlessly
+
+**Sign 10: Be poor in the eyes of the world but rich in the eyes of what matters.** There's a certain way to live that's very pleasing to the world, and a certain way that's pleasing to deeper values - and they don't always align. Sometimes they're exact opposites. When vilified, bless. When persecuted, endure. When slandered, answer gently. When the world rolls their eyes, respond with goodness.
+
+**Sign 11: Keep your soul simple and upright.** If you look inside a simple soul, you only find three things: goodness, love, and truth. An upright soul stands up for these three things. If your soul is off, you'll feel it as deep emptiness or restlessness. If it's good, you'll feel peace.
+
+**Sign 12: Keep your conscience faithful and pure.** Your conscience is that thing deep down that lets you know whether what you're thinking, doing, or have done is good or bad. A pure conscience echoes only what's right. A faithful conscience listens. The more you ignore it, the weaker it gets, opening the door for other voices. Ask yourself: Who is my conscience faithful to? Am I faithful to my conscience?
+
+**Sign 14: Prefer eternal treasures to temporary ones.** If you had a choice between all the treasure the world has to offer and all the treasure that truly matters, which would you choose? Which brings more peace, which more anxiety? Which leads to freedom, which to slavery? Which do you strive for with all your being? Which can you rely on more? Where your treasure is, your heart will be - and it can't be in two places at once.
