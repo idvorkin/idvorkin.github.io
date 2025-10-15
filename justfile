@@ -462,3 +462,10 @@ update-pr-data:
 
 # Legacy alias for update-pr-data
 set-pr: update-pr-data
+
+# ===== Navigation Tags =====
+
+# Generate tags for markdown files for Neovim navigation
+gen-tags:
+    @echo "🏷️  Generating tags for markdown files..."
+    ctags -R --languages=markdown --exclude=_site --exclude=node_modules --exclude=.git .
