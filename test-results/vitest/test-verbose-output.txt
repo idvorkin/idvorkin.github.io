@@ -5,22 +5,6 @@ npx vitest run --reporter=verbose
 [90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mCopy Functionality[2m > [22m[2mshould copy correct URL format
 [22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=manager-book%23test-section...
 
-[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mCopy Functionality[2m > [22m[2mshould handle clipboard API failure gracefully
-[22m[39m📋 Copied with preview (fallback): https://tinyurl.com/igor-blog/?path=manager-book%23test-section...
-
-[90mstderr[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mCopy Functionality[2m > [22m[2mshould handle clipboard API failure gracefully
-[22m[39mFailed to share/copy header link: Error: Clipboard failed
-    at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39msrc/__tests__/header-copy-link.test.ts:318:62
-    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:174:14
-    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:563:28
-    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:61:24
-    at new Promise (<anonymous>)
-    at runWithTimeout [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:41:12[90m)[39m
-    at runTest [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1149:17[90m)[39m
-[90m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
-    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
-
 [90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
 [22m[39mToggle element with ID missing-toggle not found
 
@@ -40,11 +24,21 @@ npx vitest run --reporter=verbose
 [90mstderr[2m | src/__tests__/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould do nothing if container is not found
 [22m[39m❌ non-existent-container container not found in DOM
 
-[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: localhost to production with long anchor
-[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=manager-book%23how-do-you-identify-and-help-eng-decide-if-manage...
+[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mCopy Functionality[2m > [22m[2mshould handle clipboard API failure gracefully
+[22m[39m📋 Copied with preview (fallback): https://tinyurl.com/igor-blog/?path=manager-book%23test-section...
 
-[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: production domain mapping
-[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=manager-book%23test-section...
+[90mstderr[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mCopy Functionality[2m > [22m[2mshould handle clipboard API failure gracefully
+[22m[39mFailed to share/copy header link: Error: Clipboard failed
+    at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39msrc/__tests__/header-copy-link.test.ts:318:62
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:174:14
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:563:28
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:61:24
+    at new Promise (<anonymous>)
+    at runWithTimeout [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:41:12[90m)[39m
+    at runTest [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1149:17[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
+    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
 
  [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould fetch and return URL info map
  [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould throw error if url_info is missing
@@ -64,41 +58,6 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found
  [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould call updateRecentPosts immediately if document is loaded
  [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould add event listener if document is still loading
-[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: simple case
-[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=simple-page%23anchor...
-
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mURL Transformation[2m > [22mshould transform localhost URL to production domain
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mURL Transformation[2m > [22mshould handle production domain mapping correctly
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mHeader ID Generation[2m > [22mshould use existing header ID if present
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mHeader ID Generation[2m > [22mshould generate ID from header text when no ID exists
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mHeader ID Generation[2m > [22mshould handle special characters in header text
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mHeader ID Generation[2m > [22mshould ensure ID uniqueness
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mCopy Functionality[2m > [22mshould copy correct URL format
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mCopy Functionality[2m > [22mshould handle clipboard API failure gracefully
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mCSS Styles[2m > [22mshould add styles only once
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mCSS Styles[2m > [22mshould create style element with correct content
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould add share links to all header types including H1
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould initialize correctly when DOM is ready
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould wait for DOM ready when loading
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould not add duplicate copy links when called multiple times
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould not add duplicate copy links when enableHeaderCopyLinks is called multiple times
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould build breadcrumb with page name and header hierarchy
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould convert hyphens to spaces in page name
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould handle index page correctly
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould show correct hierarchy for AI Journal diary entry
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould handle deeply nested headers with depth limit
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould use most recent parent header when duplicates exist
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould handle missing intermediate header levels
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould handle AI Journal nested subsection breadcrumb
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould add GitHub issue icon alongside copy link icon
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould show popup when GitHub icon is clicked
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould open GitHub issue with custom description when popup is submitted
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould include content excerpt when no custom description provided
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould truncate long content excerpts to 500 characters
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould skip empty paragraphs and find first non-empty one
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: localhost to production with long anchor
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: production domain mapping
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: simple case
 [90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould handle empty results
 [22m[39mToggle element with ID remaining-posts-toggle not found
 
@@ -141,6 +100,47 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould call updateRecentPosts immediately if document is already loaded
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould add event listener if document is still loading
+[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: localhost to production with long anchor
+[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=manager-book%23how-do-you-identify-and-help-eng-decide-if-manage...
+
+[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: production domain mapping
+[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=manager-book%23test-section...
+
+[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: simple case
+[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=simple-page%23anchor...
+
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mURL Transformation[2m > [22mshould transform localhost URL to production domain
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mURL Transformation[2m > [22mshould handle production domain mapping correctly
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mHeader ID Generation[2m > [22mshould use existing header ID if present
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mHeader ID Generation[2m > [22mshould generate ID from header text when no ID exists
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mHeader ID Generation[2m > [22mshould handle special characters in header text
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mHeader ID Generation[2m > [22mshould ensure ID uniqueness
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mCopy Functionality[2m > [22mshould copy correct URL format
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mCopy Functionality[2m > [22mshould handle clipboard API failure gracefully
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mCSS Styles[2m > [22mshould add styles only once
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mCSS Styles[2m > [22mshould create style element with correct content
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould add share links to all header types including H1
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould initialize correctly when DOM is ready
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould wait for DOM ready when loading
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould not add duplicate copy links when called multiple times
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould not add duplicate copy links when enableHeaderCopyLinks is called multiple times
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould build breadcrumb with page name and header hierarchy
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould convert hyphens to spaces in page name
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould handle index page correctly
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould show correct hierarchy for AI Journal diary entry
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould handle deeply nested headers with depth limit
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould use most recent parent header when duplicates exist
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould handle missing intermediate header levels
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould handle AI Journal nested subsection breadcrumb
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould add GitHub issue icon alongside copy link icon
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould show popup when GitHub icon is clicked
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould open GitHub issue with custom description when popup is submitted
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould include content excerpt when no custom description provided
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould truncate long content excerpts to 500 characters
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould skip empty paragraphs and find first non-empty one
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: localhost to production with long anchor
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: production domain mapping
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: simple case
  [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould create a tree node with given properties
  [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould use default values when not provided
  [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mbreadth_first_walk[2m > [22mshould return empty if node is null
@@ -207,6 +207,9 @@ npx vitest run --reporter=verbose
 [90mstderr[2m | src/__tests__/featured-collapse.test.ts[2m > [22m[2mFeaturedCollapseManager[2m > [22m[2minitialization[2m > [22m[2mshould return false when content element is missing
 [22m[39mFeatured collapse elements not found
 
+[90mstderr[2m | src/__tests__/featured-collapse.test.ts[2m > [22m[2mFeaturedCollapseManager[2m > [22m[2msetupFeaturedCollapse helper[2m > [22m[2mshould return null when elements do not exist
+[22m[39mFeatured collapse elements not found
+
  [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould log that Force Graph is loaded
  [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould not initialize the graph when the DOM element doesn't exist
  [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle ForceGraph not being defined
@@ -214,9 +217,6 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle goto control click
  [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould build graph data correctly
  [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould update detail with node information
-[90mstderr[2m | src/__tests__/featured-collapse.test.ts[2m > [22m[2mFeaturedCollapseManager[2m > [22m[2msetupFeaturedCollapse helper[2m > [22m[2mshould return null when elements do not exist
-[22m[39mFeatured collapse elements not found
-
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22minitialization[2m > [22mshould initialize successfully when elements exist
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22minitialization[2m > [22mshould return false when button element is missing
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22minitialization[2m > [22mshould return false when content element is missing
@@ -243,6 +243,21 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mlocalStorage persistence[2m > [22mshould handle localStorage errors gracefully
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mlocalStorage persistence[2m > [22mshould clear saved state
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mlocalStorage persistence[2m > [22mshould use custom storage key when provided
+ [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould exclude header icon elements when generating TOC text
+ [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle headers with nested non-icon elements correctly
+ [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle headers with only text content
+ [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould properly escape quotes in TOC text
+ [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle empty headers gracefully
+[90mstdout[2m | src/__tests__/main.test.ts
+[22m[39m🖼️ Enabling image zoom functionality
+Dev server detected, initializing dev info...
+Branch info not found
+PR info not found
+Dev info - Branch: [1mnull[22m PR: [1mnull[22m Port: 4000
+
+[90mstderr[2m | src/__tests__/main.test.ts
+[22m[39m⚠️ GLightbox not found, retrying in 100ms (attempt 1/50)
+
 [90mstdout[2m | src/__tests__/shared.test.ts[2m > [22m[2mShared Utility Functions[2m > [22m[2mappend_randomizer_div[2m > [22m[2mshould not append anything if parent is not found
 [22m[39mappend_randomizer_div #non-existent not present
 
@@ -262,21 +277,6 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould handle special characters in path
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould handle empty anchor gracefully
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould handle undefined anchor
-[90mstdout[2m | src/__tests__/main.test.ts
-[22m[39m🖼️ Enabling image zoom functionality
-Dev server detected, initializing dev info...
-Branch info not found
-PR info not found
-Dev info - Branch: [1mnull[22m PR: [1mnull[22m Port: 4000
-
-[90mstderr[2m | src/__tests__/main.test.ts
-[22m[39m⚠️ GLightbox not found, retrying in 100ms (attempt 1/50)
-
- [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould exclude header icon elements when generating TOC text
- [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle headers with nested non-icon elements correctly
- [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle headers with only text content
- [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould properly escape quotes in TOC text
- [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle empty headers gracefully
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould return an array of the same length
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould contain all the same elements
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mrandom_from_list[2m > [22mshould return an element from the list
@@ -308,14 +308,14 @@ Dev info - Branch: [1mnull[22m PR: [1mnull[22m Port: 4000
  [32m✓[39m src/__tests__/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould fetch link info from GitHub when in production
  [32m✓[39m src/__tests__/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould handle fetch errors gracefully
  [32m✓[39m src/__tests__/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould cache responses and not make additional requests
+ [32m✓[39m src/__tests__/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould not create duplicate entries when processing summary links
+ [32m✓[39m src/__tests__/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould handle redirects correctly without duplication
+ [32m✓[39m src/__tests__/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould identify the root cause of duplicate related posts
  [32m✓[39m src/__tests__/swap-prod-test.test.ts[2m > [22mSwapProdAndTest[2m > [22mwhen swapping from production to test[2m > [22mshould swap from production to localhost with default port 4000
  [32m✓[39m src/__tests__/swap-prod-test.test.ts[2m > [22mSwapProdAndTest[2m > [22mwhen swapping from production to test[2m > [22mshould preserve the current port when available
  [32m✓[39m src/__tests__/swap-prod-test.test.ts[2m > [22mSwapProdAndTest[2m > [22mwhen swapping from test to production[2m > [22mshould swap from localhost:4000 to production
  [32m✓[39m src/__tests__/swap-prod-test.test.ts[2m > [22mSwapProdAndTest[2m > [22mwhen swapping from test to production[2m > [22mshould swap from localhost:4002 to production
  [32m✓[39m src/__tests__/swap-prod-test.test.ts[2m > [22mSwapProdAndTest[2m > [22mwhen swapping from test to production[2m > [22mshould handle any port number
- [32m✓[39m src/__tests__/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould not create duplicate entries when processing summary links
- [32m✓[39m src/__tests__/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould handle redirects correctly without duplication
- [32m✓[39m src/__tests__/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould identify the root cause of duplicate related posts
  [32m✓[39m src/__tests__/index.test.ts[2m > [22mIndex Module[2m > [22mshould initialize when ready
 [90mstdout[2m | src/__tests__/dev-info.test.ts[2m > [22m[2mdev-info[2m > [22m[2mgetCurrentPR[2m > [22m[2mshould return PR number when global variable is set
 [22m[39mPR from global variable: [33m123[39m
@@ -338,6 +338,6 @@ Dev info - Branch: [1mnull[22m PR: [1mnull[22m Port: 4000
 
 [2m Test Files [22m [1m[32m19 passed[39m[22m[90m (19)[39m
 [2m      Tests [22m [1m[32m233 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (238)[39m
-[2m   Start at [22m 13:45:25
-[2m   Duration [22m 4.72s[2m (transform 596ms, setup 299ms, collect 902ms, tests 561ms, environment 7.23s, prepare 1.63s)[22m
+[2m   Start at [22m 14:14:29
+[2m   Duration [22m 4.77s[2m (transform 679ms, setup 239ms, collect 1.04s, tests 533ms, environment 7.22s, prepare 1.69s)[22m
 
