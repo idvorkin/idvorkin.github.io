@@ -30,7 +30,7 @@ repos:
       - id: prettier
         name: Prettier (Markdown & HTML only)
         files: \.(md|html)$
-        exclude: "^zz-chop-logs/.*$|back-links.json" # Exclude the zz-chop-logs directory
+        exclude: "^(zz-chop-logs|published-chop-logs)/.*$|back-links.json"
 
   # 🧐 Dasel: YAML and JSON schema/structure validator
   - repo: https://github.com/TomWright/dasel
@@ -46,7 +46,7 @@ repos:
     hooks:
       - id: typos
         name: Check for typos
-        exclude: "^(chop-logs|zz-chop-logs|cursor-logs|back-links.json|assets/models|images/.*\\.excalidraw|old_blog|assets/arbor|static)/.*$"
+        exclude: "^(chop-logs|zz-chop-logs|cursor-logs|published-chop-logs|back-links.json|assets/models|images/.*\\.excalidraw|old_blog|assets/arbor|static)/.*$"
         args: []  # Uses .typos.toml for configuration
 
   # 🧪 Local fast tests

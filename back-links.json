@@ -742,22 +742,25 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get super lost\n\n",
-            "doc_size": 76000,
+            "doc_size": 80000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai"
             ],
-            "last_modified": "2025-10-09T07:29:49-07:00",
+            "last_modified": "2025-10-16T08:11:04.952791",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
                 "/ai-security",
+                "/ai-talk",
                 "/eulogy",
-                "/genai-talk",
                 "/gpt",
                 "/hyper-personal",
                 "/mental-pain",
-                "/published-chop-logs/2025-10-09-religion-exploration.html"
+                "/published-chop-logs/2025-10-09-religion-exploration.html",
+                "/published-chop-logs/2025-10-15-jung-ego-self-post.html",
+                "/published-chop-logs/2025-10-15-mdserve-open-source-contribution.html",
+                "/published-chop-logs/2025-10-15-youtube-religion-14-signs.html"
             ],
             "redirect_url": "",
             "title": "Igor's AI Journal",

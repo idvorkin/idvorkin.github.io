@@ -98,6 +98,71 @@ When creating or updating AI journal entries in `_d/ai-journal.md`:
 - Include artifacts: gists for transcripts, GitHub links for implementations
 - Update the table of contents (vim-markdown-toc section)
 
+### Finding Conversation Files
+
+**Conversation file locations:**
+
+- **Claude Code raw logs**: `~/.claude/projects/-Users-idvorkin-gits-blog/` - JSONL session files
+- **Cursor logs**: `zz-chop-logs/` - Markdown conversation files exported by SpecStory
+- **Published HTML**: `published-chop-logs/` - HTML-rendered conversations for blog linking
+
+**To convert Claude Code logs to publishable HTML**, use [claude-code-log](https://github.com/daaain/claude-code-log):
+
+```bash
+# Install
+uv tool install claude-code-log
+
+# Interactive TUI to browse and select sessions (avoid - too expensive to render)
+claude-code-log --tui
+
+# Generate HTML for date range (creates session-*.html files in ~/.claude/projects/)
+claude-code-log --from-date "2025-10-15" --to-date "2025-10-16"
+```
+
+**Finding relevant sessions for journal entries:**
+
+1. **Identify sessions by content:**
+
+   ```bash
+   # Search for sessions mentioning specific files or topics
+   grep -l "ai-journal.md" ~/.claude/projects/-Users-idvorkin-gits-blog/session-*.html
+   grep -l "yt-dlp\|mdserve" ~/.claude/projects/-Users-idvorkin-gits-blog/session-*.html
+   ```
+
+2. **Check session titles:**
+   ```bash
+   grep -m1 "<title>" ~/.claude/projects/-Users-idvorkin-gits-blog/session-SESSIONID.html
+   ```
+
+**Security review before publishing:**
+
+```bash
+# Check for secrets (API keys, passwords, tokens)
+grep -i "secret\|password\|token\|api.key" ~/.claude/projects/-Users-idvorkin-gits-blog/session-*.html | grep -v "token-usage"
+
+# Check for private file paths (should only see public repo paths)
+grep -o "/Users/[^/]*/[^<]*" ~/.claude/projects/-Users-idvorkin-gits-blog/session-*.html | head -20
+```
+
+**When to publish conversations:**
+
+- Significant debugging sessions with valuable learnings
+- Complex feature implementations worth documenting
+- Sessions demonstrating AI workflow patterns
+- Any conversation you reference in AI journal entries
+
+**Publishing workflow:**
+
+1. Run `claude-code-log --from-date "YYYY-MM-DD" --to-date "YYYY-MM-DD"` to generate HTML
+2. Find relevant session files in `~/.claude/projects/-Users-idvorkin-gits-blog/`
+3. Review for secrets and sensitive content (see security review above)
+4. Copy safe sessions to `published-chop-logs/` with descriptive names:
+   ```bash
+   cp ~/.claude/projects/-Users-idvorkin-gits-blog/session-SESSIONID.html \
+      published-chop-logs/YYYY-MM-DD-descriptive-name.html
+   ```
+5. Link from AI journal: `[Session description](/published-chop-logs/YYYY-MM-DD-descriptive-name.html)`
+
 ## Finding Related Blog Content
 
 When you need to find existing blog posts on a specific topic or merge new content into existing posts:

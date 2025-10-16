@@ -18,12 +18,18 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2025-10-15](#2025-10-15)
+    - [Use it to update my crazy shell (Enabling Environment) configuration](#use-it-to-update-my-crazy-shell-enabling-environment-configuration)
+    - [Use it to help digest new books](#use-it-to-help-digest-new-books)
+    - [Use it to contribute to open source - It created the issue and PR by itself!!](#use-it-to-contribute-to-open-source---it-created-the-issue-and-pr-by-itself)
+    - [Used it to digest content from a YouTube video](#used-it-to-digest-content-from-a-youtube-video)
   - [2025-10-09](#2025-10-09)
     - [Using AI to Explore and Organize Religious Understanding](#using-ai-to-explore-and-organize-religious-understanding)
   - [2025-10-05](#2025-10-05)
     - [Four-Hour Python Deadlock Detective Work](#four-hour-python-deadlock-detective-work)
     - [New Tmux Extension in Less Than an Hour](#new-tmux-extension-in-less-than-an-hour)
     - [Using Voice to Make Commands](#using-voice-to-make-commands)
+    - [Automating Journal Entries](#automating-journal-entries)
   - [2025-09-14](#2025-09-14)
   - [2025-09-13](#2025-09-13)
   - [2025-09-07](#2025-09-07)
@@ -104,6 +110,7 @@ When creating a new AI journal entry, follow these guidelines:
 6. **Update TOC**: Add entry to the vim-markdown-toc section
 
 **Example Structure**:
+
 ```markdown
 ### YYYY-MM-DD
 
@@ -197,6 +204,28 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 ## Diary
 
+### 2025-10-15
+
+#### Use it to update my crazy shell (Enabling Environment) configuration
+
+- I used to have Tig and GDiff in another window in nvim only, better to have in TMUX - added [tmux command aliases](https://github.com/idvorkin/settings/blob/d046eab712dd5e7d4bc1fbb7ff77e224a66cbbce/shared/.tmux.conf#L227-L233) (`:tig/:Tig` and `:gdiff/:Gdiff`)
+- I was too lazy to learn how to configure telescope UX - [Claude did it for Tags and BTags](https://github.com/idvorkin/settings/blob/a31b2e54ca20747900d65598ab84b575352dc728/nvim/nvim_plugins.lua#L196-L210)
+
+#### Use it to help digest new books
+
+- **The Session**: [Creating the Jung Ego-Self post](/published-chop-logs/2025-10-15-jung-ego-self-post.html)
+- Created comprehensive post on Carl Jung's complex "Ego and Archetype" framework exploring the [Ego-Self relationship](https://github.com/idvorkin/idvorkin.github.io/blob/d088a41e6d587b9d08b699155226336a6454af11/_d/jung-self-ego.md) - Ego as social operating system vs Self as authentic totality, still needs personal experience integration
+
+#### Use it to contribute to open source - It created the issue and PR by itself!!
+
+- **The Session**: [mdserve open source contribution](/published-chop-logs/2025-10-15-mdserve-open-source-contribution.html)
+- Got a compilation error installing mdserve, had Claude try to build it, figure out the problem, [create the issue](https://github.com/jfernandez/mdserve/issues/28#issuecomment-3408716893), and send a [PR](https://github.com/jfernandez/mdserve/pull/29) - very little work on my part
+
+#### Used it to digest content from a YouTube video
+
+- **The Session**: [YouTube subtitle extraction and religion post](/published-chop-logs/2025-10-15-youtube-religion-14-signs.html)
+- Zach sent me a YouTube video, had Claude pull the yt-dlp subs, then summarize and help me edit - added [14 signs of being a Christian from ~300 AD](https://github.com/idvorkin/idvorkin.github.io/blob/5a1667096fa71a30505f8b7663c49a6bc70f5cbf/_d/religion.md#L123-L170) (text possibly from Lactantius)
+
 ### 2025-10-09
 
 #### Using AI to Explore and Organize Religious Understanding
@@ -218,7 +247,7 @@ _See [Instructions for Claude: Creating Journal Entries](https://github.com/idvo
   - The fix didn't work, but I can try again later
 - **The Problem**: `changes.py` script hanging indefinitely during subprocess operations
 - **The Root Cause**: Three-way deadlock between gRPC's DNS initialization, macOS dyld locking, and fork preparation handlers
-  - [Debugging transcript overview](https://gist.github.com/idvorkin/591ff244147a10f53d7495d262c94682#file-a_nlp--overview-md)
+  - [Debugging transcript overview](https://gist.github.com/idvorkin/591ff244147a10f53d7495d262c94682#file-a_nlp-overview-md)
   - [Claude's analysis](https://gist.github.com/idvorkin/591ff244147a10f53d7495d262c94682#file-z_claude-sonnet-4-5-20250929-md)
   - [Timing debug info](https://gist.github.com/idvorkin/591ff244147a10f53d7495d262c94682#file-zzz_timing_debug-md)
 - **What Claude Tried**:
@@ -232,10 +261,9 @@ _See [Instructions for Claude: Creating Journal Entries](https://github.com/idvo
 
 I love adding tmux workflows, but they usually take me like 10 hours to get right. **This time it only took one hour**
 
-
 - **TOP Takeaway**: Have Claude test as much as possible
   - Claude could debug by actually running the tmux commands to figure out what was going on
-- **The Commands** ([gist overview](https://gist.github.com/idvorkin/ce2f4970bc328e5346fabcf6d2de74bb#file-a_settings--overview-md)):
+- **The Commands** ([gist overview](https://gist.github.com/idvorkin/ce2f4970bc328e5346fabcf6d2de74bb#file-a_settings-overview-md)):
   - **Rotate Command** (C-a Shift+Space): Toggles between even-horizontal and even-vertical layouts
     - [Implementation](https://github.com/idvorkin/settings/blob/538db308ee146c69a58d97b6670e80f88328f913/py/tmux_helper.py#L386-L410) (py/tmux_helper.py:L386)
     - [Keybinding](https://github.com/idvorkin/settings/blob/538db308ee146c69a58d97b6670e80f88328f913/shared/.tmux.conf#L224-L225) (shared/.tmux.conf:L224)
