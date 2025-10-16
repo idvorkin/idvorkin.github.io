@@ -223,7 +223,7 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 #### Used it to digest content from a YouTube video
 
-- **The Session**: [YouTube subtitle extraction and religion post](/published-chop-logs/2025-10-15-youtube-religion-14-signs.html)
+- **The Session**: [Adding 14 signs content to religion post](/published-chop-logs/2025-10-15-religion-14-signs-actual-work.html)
 - Zach sent me a YouTube video, had Claude pull the yt-dlp subs, then summarize and help me edit - added [14 signs of being a Christian from ~300 AD](https://github.com/idvorkin/idvorkin.github.io/blob/5a1667096fa71a30505f8b7663c49a6bc70f5cbf/_d/religion.md#L123-L170) (text possibly from Lactantius)
 
 ### 2025-10-09
