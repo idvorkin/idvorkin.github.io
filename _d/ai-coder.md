@@ -21,6 +21,8 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
     - [Maintain Chat History with your commits](#maintain-chat-history-with-your-commits)
   - [Aider](#aider)
   - [Avante](#avante)
+  - [Claude Code](#claude-code)
+    - [claude-code-log](#claude-code-log)
 - [Use Cases and Examples](#use-cases-and-examples)
   - [Using latest docs](#using-latest-docs)
   - [Fixing an indentation handling bug in an nvim plugin](#fixing-an-indentation-handling-bug-in-an-nvim-plugin)
@@ -238,6 +240,21 @@ A promising Vim plugin for CHOP:
 - Follows best practices
 - Transparent [coding prompts](https://github.com/yetone/avante.nvim/blob/main/lua/avante/llm.lua)
 - Integrates well with the Vim workflow
+
+### Claude Code
+
+Anthropic's official CLI for AI-assisted development, featuring autonomous agents, codebase understanding, and integrated workflows.
+
+#### claude-code-log
+
+[claude-code-log on GitHub](https://github.com/daaain/claude-code-log) - Converts Claude Code conversation logs to publishable HTML.
+
+```bash
+uv tool install claude-code-log
+claude-code-log --tui
+```
+
+Example: [AI journal](/ai-journal) with [published logs](/published-chop-logs/2025-10-09-religion-exploration.html).
 
 ## Use Cases and Examples
 
