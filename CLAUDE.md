@@ -572,3 +572,52 @@ When resolving PR feedback:
 - Only extract images manually if the image-content-analyzer agent is not available
 - Ensure you never approve a PR (maintain proper review processes and security)
 - when fixing an issue with a PR, be sure to put a comment on the issue that you'er working on it via PR
+
+## Processing YouTube Videos
+
+When the user wants to extract and work with content from YouTube videos:
+
+### Extracting Subtitles
+
+Use `yt-dlp` to download auto-generated or manual subtitles without downloading the video:
+
+```bash
+# Download subtitles only (creates .vtt file)
+yt-dlp --write-auto-sub --skip-download "https://www.youtube.com/watch?v=VIDEO_ID"
+```
+
+**Key flags:**
+
+- `--write-auto-sub`: Download auto-generated subtitles
+- `--skip-download`: Don't download the video file itself
+- Output format: VTT (WebVTT) subtitle file
+
+### Processing Large Transcripts
+
+VTT files are often too large (~1M tokens) to process directly due to formatting overhead. Two approaches:
+
+**1. Use high-context models:** Google Gemini (via Vertex AI console) handles large files better than ChatGPT for initial processing
+
+**2. Convert VTT to clean text:** Use the captions.py tool from the nlp repo:
+
+```bash
+# Convert VTT to human-readable markdown
+cat ~/tmp/subtitles.vtt | ./captions.py to-human | tee transcript.md
+
+# Check token count
+cat transcript.md | gpt tokens  # Should be ~25K tokens (much smaller)
+```
+
+### Workflow Example
+
+From the [2025-10-15 YouTube session](/published-chop-logs/2025-10-15-youtube-religion-14-signs.html):
+
+1. **Extract subtitles**: `yt-dlp --write-auto-sub --skip-download <youtube-url>`
+2. **Process to clean text**: `cat file.vtt | captions.py to-human > transcript.md`
+3. **Analyze with LLM**: Feed cleaned transcript to Claude/GPT for summarization and editing
+4. **Integrate into blog**: Extract key insights and add to relevant posts
+
+**Tools:**
+
+- `yt-dlp`: [Installation instructions](https://github.com/yt-dlp/yt-dlp#installation)
+- `captions.py`: [Source](https://github.com/idvorkin/nlp/blob/c050626b4f88ffb09622938d1bb5c55c2e05618a/captions.py?plain=1#L21) in idvorkin/nlp repo
