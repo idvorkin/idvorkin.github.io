@@ -38,6 +38,7 @@ I did my Bar Mitzvah at the Wailing Wall in Israel — the holiest place in Juda
   - [Why Religion?](#why-religion)
   - [Belief vs Practice](#belief-vs-practice)
   - [Secular Spirituality](#secular-spirituality)
+  - [Am I really a Christian? 14 Signs](#am-i-really-a-christian-14-signs)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -78,12 +79,12 @@ That was the day religion showed its worth to me: not in metaphysics, but in str
 
 ### When someone important to me found god.
 
-I won't list their name out of privacy, but in my deep respect for this person I had to really dig into god, I went to a few sermons live, and this person started reasding a daily devotional, and so did I.
+I won't list their name out of privacy, but in my deep respect for this person I had to really dig into god, I went to a few sermons live, and this person started reading a daily devotional, and so did I.
 
 Some observations I've had:
 
 - There are many different religions, with deeply different beliefs
-- Much of the interpretation is that of a self help book, instead of the classic format I'm used to "build a model and describe it", "several anecodote stories", "1 chapater per story", the bible stuff I'm exposed to starts with a really old verse, then has a bunch of interpretation.
+- Much of the interpretation is that of a self help book, instead of the classic format I'm used to "build a model and describe it", "several anecdote stories", "1 chapter per story", the bible stuff I'm exposed to starts with a really old verse, then has a bunch of interpretation.
 
 ## The Hard Parts for Me
 
@@ -93,7 +94,7 @@ The problem is proof. I don’t see it. With an engineering mindset, I expect ca
 
 _To be fair, there are things I accept as good even though the only evidence is personal and experiential. Bringing joy makes me feel happy, so I keep doing it. Gratitude practices lift my mood, even if I can’t prove why. Not everything needs to be double-blind tested to matter._
 
-An incredibly good discussion on belief (easily applied to religion), hidden in a discussion of pychics between the host and Dan Harris. I highly, highly recommend (and much better then the Search engine on religion for the parts that pertain to belief). [Search Engine - The Psychic Question
+An incredibly good discussion on belief (easily applied to religion), hidden in a discussion of psychics between the host and Dan Harris. I highly, highly recommend (and much better than the Search engine on religion for the parts that pertain to belief). [Search Engine - The Psychic Question
 ](https://podscan.fm/podcasts/search-engine/episodes/the-psychic-question)
 
 - While I think the tarot people are wrong, they frankly throw much better parties than the fact checkers. So there's that. But then you spend enough time around the believers and sometimes you feel your own killjoyness more acutely, like you're on a diet or fasting for reasons nobody else quite understands. Wouldn't it be nicer to just give in?
@@ -308,17 +309,17 @@ The modern debate over belief often misses the power of practice. You don’t ha
 
 You can pursue awe, humility, gratitude, and service without formal religion. Meditation, nature, art, and shared work provide many of the same psychological benefits when practiced intentionally. The question isn't "religious or not," but "what practice reliably opens you to meaning while keeping you kind?"
 
-### Am I really a Christian? 14 Signs (A text from 300 AD)
+### Am I really a Christian? 14 Signs
 
 {% include youtube.html src="xoAFnsb1cmw" %}
 
-A text from around 300 AD (possibly Lactantius) defines 14 signs of being a Christian.
+This comes from an ancient Christian text by [Fastidius the Briton](https://churchlatin.wordpress.com/2007/11/12/fastidius-the-britain-let-us-not-be-flattered-to-be-called-christians/) (5th century), which defines what it means to truly be a Christian. The core argument: names derive from actions. A Christian must demonstrate Christian conduct, not merely bear the title.
 
 This isn't just about Christians - these are exactly my ethics. See how they map to my affirmations:
 
 {%include summarize-page.html src="/affirmations" %}
 
-#### A class act: First Understand. Appreciate. Isn't that Curious
+**A class act: First Understand. Appreciate. Isn't that Curious**
 
 **Sign 1: Be merciful to all.** Not just to people you like, but to everyone. We all need mercy - patient, understanding, gentle, forgiving. The question isn't whether others deserve mercy, but whether you can offer it as freely as you hope to receive it.
 
@@ -332,13 +333,13 @@ This isn't just about Christians - these are exactly my ethics. See how they map
 
 **Sign 7: Don't insult anymore.** Take a mental note of how many times you insult, mock, criticize, **judge**, or make fun of somebody throughout a day. Not just out loud - in your mind, under your breath, where only you and maybe God hears. When insulted, respond with no insult. If you say anything, answer gently.
 
-#### Calm like water: Be Present. This too shall pass. Work the problem
+**Calm like water: Be Present. This too shall pass. Work the problem**
 
 **Sign 2: Don't get angry over small injuries.** How you react to every little annoyance is a barometer for your soul. Getting super irritated or flying off the hook over small things are symptoms that something is off inside. Your reaction is a choice.
 
 **Sign 13: Rest your spirit and place your hope in something beyond yourself.** In times of desolation, where do you turn? Try this: take whatever is giving you anxiety or stress, hold it in your heart, then release it. Hand it over. Say "I know you can handle this, let your will be done" - then say nothing else and rest. We waste so much time and energy overthinking. This takes tremendous trust, but it's the way to peace.
 
-#### Do It Anyways: Deliberate. Disciplined. Daily
+**Do It Anyways: Deliberate. Disciplined. Daily**
 
 _These could be essentialist, but putting them here for some balance._
 
@@ -346,7 +347,7 @@ _These could be essentialist, but putting them here for some balance._
 
 **Sign 9: Continuously meditate on your ways.** What occupies your mind throughout the day? Following any path well means choosing it daily, and to choose to follow someone, you first have to get to know them.
 
-#### An essentialist: Know Essential. Provide Context. Prioritize Ruthlessly
+**An essentialist: Know Essential. Provide Context. Prioritize Ruthlessly**
 
 **Sign 10: Be poor in the eyes of the world but rich in the eyes of what matters.** There's a certain way to live that's very pleasing to the world, and a certain way that's pleasing to deeper values - and they don't always align. Sometimes they're exact opposites. When vilified, bless. When persecuted, endure. When slandered, answer gently. When the world rolls their eyes, respond with goodness.
 
@@ -355,3 +356,20 @@ _These could be essentialist, but putting them here for some balance._
 **Sign 12: Keep your conscience faithful and pure.** Your conscience is that thing deep down that lets you know whether what you're thinking, doing, or have done is good or bad. A pure conscience echoes only what's right. A faithful conscience listens. The more you ignore it, the weaker it gets, opening the door for other voices. Ask yourself: Who is my conscience faithful to? Am I faithful to my conscience?
 
 **Sign 14: Prefer eternal treasures to temporary ones.** If you had a choice between all the treasure the world has to offer and all the treasure that truly matters, which would you choose? Which brings more peace, which more anxiety? Which leads to freedom, which to slavery? Which do you strive for with all your being? Which can you rely on more? Where your treasure is, your heart will be - and it can't be in two places at once.
+
+---
+
+**Original Latin text** (from Migne's Patrologia Latina Vol. 50):
+Ancient Christian text by [Fastidius the Briton](https://churchlatin.wordpress.com/2007/11/12/fastidius-the-britain-let-us-not-be-flattered-to-be-called-christians/) (5th century).
+
+**English translation** (Sister Mary Sarah Muldowney, R.S.M., Ph.D., The Fathers of the Church vol. 16, Catholic University of America Press, 1952):
+
+> Let us not flatter ourselves in the mere fact that we are called Christians; rather, let us believe that we deserve to be judged if we assume a name to which we have no claim.
+>
+> Or, if anyone is so unbelieving, so unfaithful, so persistent, so obstinate, so bold, that he does not fear the imminent anger and indignation of God the judge, let him at least feel abashed before human judgments. Let him realize how dull, how foolish, and how senseless he is considered even by other people, since his vanity and madness are so great that he takes upon himself a name to which he is not entitled.
+>
+> For, who is so conceited and so pitiable that he would dare to establish himself as a lawyer if he is uneducated? Who is so mad and bereft of reason that he would proclaim himself a soldier if he does not know how to use arms? One does not choose such a name without reason. To be called a cobbler, one must repair shoes; to be looked upon as an artisan or workman, one must produce proof of his art; to be recognized as a trader, one exhibits costly objects originally purchased at a smaller price. From examples of this sort we realize that there is no name without the corresponding act and, furthermore, that every name is derived from the antecedent act.
+>
+> Now, then, are you called a Christian when you perform no distinctively Christian acts? The name Christian connotes justice, goodness, integrity, patience, chastity, prudence, humility, kindliness, innocence, and piety; how do you defend your assumption of that name when your conduct manifests so few out of so many virtues?
+>
+> He is truly a Christian who is one not in name only but also in deed; who imitates and follows Christ in all respects; who is holy, innocent, undefiled, chaste; in whose heart evil finds no room, since this heart is dominated by piety and by a goodness which, knowing only how to bring help to all, knows not how to harm or injure anybody. He is a Christian who, according to the example of Christ, is accustomed to do good to those who oppose him and to pray for his persecutors and his enemies rather than to hate them. Whoever is quick to hurt or harm another person lies when he calls himself a Christian; he is truly a Christian who can say in all honesty: 'I have harmed nobody; I have lived in justice with all men.'
