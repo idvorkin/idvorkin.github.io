@@ -188,12 +188,45 @@ js-clean:
 js-validate: js-typecheck js-lint
 
 # ===== Jekyll Commands =====
+# For Jekyll site development, use these commands:
+# - jekyll-clean: Clean Jekyll cache and build artifacts
+# - jekyll-rebuild: Clean and rebuild site from scratch
+# - jekyll-serve: Serve site locally with livereload (default port 4000)
+# - jekyll-container: Serve site in container environment
+# - jekyll-docker: Serve site in Docker container
+# - update-backlinks: Rebuild backlinks.json
+# - update-search: Update Algolia search index
 
 coverage-instrument:
     npx nyc instrument --compact=false _site/assets/js instrumented
 
 coverage-report:
     npx nyc report --reporter html --reporter text && open coverage/index.html
+
+# Clean Jekyll cache and build artifacts
+jekyll-clean:
+    @echo "🧹 Cleaning Jekyll artifacts..."
+    rm -rf _site
+    rm -rf .jekyll-cache
+    rm -rf .sass-cache
+    rm -f .jekyll-metadata
+    @echo "✅ Jekyll clean complete"
+
+# Clean and rebuild Jekyll site from scratch
+jekyll-rebuild: jekyll-clean
+    #!/usr/bin/env sh
+    echo "🔨 Rebuilding Jekyll site from scratch..."
+    # Update git branch info for dev banner
+    echo '{"branch": "'$(git branch --show-current)'"}' > _data/git.json
+    # Update PR data for dev banner (non-fatal if no PR found)
+    just update-pr-data || true
+    # Build the site
+    if [ "$(uname)" = "Darwin" ]; then
+        ~/homebrew/opt/ruby/bin/bundle exec jekyll build
+    else
+        bundle exec jekyll build
+    fi
+    echo "✅ Jekyll rebuild complete - site available in _site/"
 
 jekyll-serve port="4000" livereload_port="35729":
     #!/usr/bin/env sh
