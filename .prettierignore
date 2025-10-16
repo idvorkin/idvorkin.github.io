@@ -15,4 +15,5 @@ eulogy.json
 # Chop logs exclusions following chop-conventions
 .specstory/**
 zz-chop-logs
+published-chop-logs/**
 
