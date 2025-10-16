@@ -1,296 +1,295 @@
 {
     "redirects": {
-        "/2024": "/y24",
-        "/2025": "/y25",
-        "/24": "/y24",
-        "/25": "/y25",
-        "/48-laws": "/laws-of-power",
-        "/50yo": "/40yo",
-        "/7h": "/7-habits",
-        "/7h-c0": "/7h-concepts",
-        "/7h-c1": "/be-proactive",
-        "/7h-c2": "/end-in-mind",
-        "/7h-c3": "/first-things-first",
-        "/7h-c4": "/win-win",
-        "/7h-c5": "/first-understand",
-        "/7h-c6": "/synergize",
-        "/7h-c7": "/sharpen-the-saw",
-        "/7habits": "/7-habits",
-        "/90": "/90days",
-        "/90-days": "/90days",
-        "/Business-Model-You": "/bmy",
-        "/Coaching-Questions": "/coaching",
-        "/aGPT": "/ai-bestie",
-        "/activation-energy": "/activation",
-        "/addictions": "/addiction",
-        "/affirm": "/affirmations",
-        "/ai-coder": "/chop",
-        "/ai-papers": "/ai-paper",
-        "/ai-talk": "/genai-talk",
-        "/ai-training": "/ai-training",
-        "/alexa-charity": "/toysfortots",
-        "/anxious": "/anxiety",
-        "/architecture": "/design",
-        "/arthur-brooks-oprah": "/build-life-you-want",
-        "/atomic-habits": "/d/habits",
-        "/augmentedreality": "/ar",
-        "/ballooning": "/balloon",
-        "/bbb": "/build-bubble-bike",
-        "/begin-with-the-end-in-mind": "/end-in-mind",
-        "/bells": "/kettlebell",
-        "/bespoke-everything": "/hyper-personal",
-        "/bestiegpt": "/ai-bestie",
-        "/bikes": "/bike",
-        "/biking": "/bike",
-        "/bmu": "/bmy",
-        "/book-writing": "/write-book",
-        "/books": "/books-that-defined-me",
-        "/boss": "/being-a-great-manager",
-        "/brain-attack": "/suicide",
-        "/brainattack": "/suicide",
-        "/breathe": "/breath",
-        "/breathing": "/breath",
-        "/bryan-johnson": "/blueprint",
-        "/bucket": "/bucket-list",
-        "/build-life": "/build-life-you-want",
-        "/care": "/caring",
-        "/centenarian": "/last-year",
-        "/chilliwack": "/bc",
-        "/classact": "/class-act",
-        "/coach": "/coaching",
-        "/cocaine": "/mania",
-        "/cold": "/warm",
-        "/compassion": "/curious",
-        "/compensation": "/comp",
-        "/concentration-risk": "/stock-concentration",
-        "/corona": "/covid",
-        "/correct-of-errors": "/coe",
-        "/couple-double-trouble": "/partner-trouble",
-        "/couples": "/partner-trouble",
-        "/covid19": "/covid",
-        "/create-consume": "/produce-consume",
-        "/creator": "/produce-consume",
-        "/cry": "/touching",
-        "/cv": "/covid",
-        "/d/2015-11-18-Outsourcing": "/outsourcing",
-        "/data-viz": "/viz",
-        "/dealjoy": "/joy",
-        "/decide": "/decisive",
-        "/decision": "/decisive",
-        "/delegation": "/delegate",
-        "/diagrams": "/viz",
-        "/ditl": "/day-in-the-life",
-        "/don-juan": "/enemy",
-        "/double-trouble": "/partner-trouble",
-        "/dream-job": "/job",
-        "/dsat": "/work-satisfaction",
-        "/duck-pride": "/pride",
-        "/eat-that-frog": "/frog",
-        "/effectiveness": "/balance",
-        "/emotional-health-practices": "/emotional-health",
-        "/emotional-states": "/emotions",
-        "/enabling-environment": "/enable",
-        "/enemies": "/enemy",
-        "/enjoy": "/happy",
-        "/essential": "/essentialism",
-        "/exercise": "/physical-health",
-        "/failure": "/fail",
-        "/fatality": "/death",
-        "/feeling-meetings": "/human-meetings",
-        "/feelings": "/emotions",
-        "/first-thing-first": "/first-things-first",
-        "/first90days": "/90days",
-        "/forty-two": "/42",
-        "/fortytwo": "/42",
-        "/frugality": "/parkinson",
-        "/frustration": "/anger",
-        "/fuck-shame": "/shame",
-        "/future-igor": "/time-traveler",
-        "/future-self": "/time-traveler",
-        "/genai-intern": "/genai-talk",
-        "/getting-things-done": "/gtd",
-        "/getting-to-yes": "/negotiate",
-        "/goal": "/goals",
-        "/good-days": "/day-in-the-life",
-        "/gopher": "/delegate",
-        "/grandma": "/curious",
-        "/grandmother": "/curious",
-        "/grandmother-mind": "/curious",
-        "/grandmothermind": "/curious",
-        "/gty": "/negotiate",
-        "/guilt": "/shame",
-        "/habit": "/d/habits",
-        "/habits": "/d/habits",
-        "/happiness": "/happy",
-        "/happiness-guide": "/build-life-you-want",
-        "/healthspan": "/last-year",
-        "/heap - potporri - potpori": "/random-idea",
-        "/heavy-club": "/kettlebell",
-        "/heavy-clubs": "/kettlebell",
-        "/high-energy": "/energy-abundance",
-        "/human-meetings": "/human-meetings",
-        "/humanity": "/touching",
-        "/hyper-personalization": "/hyper-personal",
-        "/idle-loop": "/idle",
-        "/igor-gap-year": "/gap-year-igor",
-        "/iina": "/vlc",
-        "/imposter": "/insecure",
-        "/in-real-life": "/irl",
-        "/insecurity": "/insecure",
-        "/intern-llm": "/genai-talk",
-        "/jung-self": "/self-ego",
-        "/jupyter": "/pandas",
-        "/kb": "/kettlebell",
-        "/kettlebells": "/kettlebell",
-        "/language-limits": "/words-we-dont-have",
-        "/life-chapters": "/chapters",
-        "/life-stages": "/chapters",
-        "/linguistic-relativity": "/words-we-dont-have",
-        "/lisp": "/sicp",
-        "/llm-intern": "/genai-talk",
-        "/llm-security": "/ai-security",
-        "/llm-talk": "/genai-talk",
-        "/llm-training": "/ai-training",
-        "/loneliness": "/lonely",
-        "/machine-learning": "/ml",
-        "/machinelearning": "/ml",
-        "/makejoy": "/joy",
-        "/makes-me-cry": "/touching",
-        "/makesmile": "/joy",
-        "/manager": "/being-a-great-manager",
-        "/manic": "/mania",
-        "/mechanism": "/upstream",
-        "/meditate": "/siy",
-        "/meditation": "/siy",
-        "/mental-break-down": "/depression",
-        "/middleage": "/elder",
-        "/midlife": "/elder",
-        "/monsters": "/mind-monsters",
-        "/mortality": "/death",
-        "/mr": "/ar",
-        "/negotiation": "/negotiate",
-        "/nonjudgment": "/curious",
-        "/nvim": "/vim",
-        "/objective": "/goals",
-        "/okr": "/goals",
-        "/on-being-mortal": "/death",
-        "/overwork": "/overload",
-        "/pain": "/mental-pain",
-        "/parkinson-law": "/parkinson",
-        "/parkinsons-law": "/parkinson",
-        "/passion": "/caring",
-        "/pay": "/comp",
-        "/pd": "/timeoff",
-        "/perfect-job": "/job",
-        "/personal-development": "/timeoff",
-        "/phoney": "/insecure",
-        "/pm": "/product",
-        "/podcasting": "/podcast",
-        "/podcasts": "/podcast",
-        "/poh": "/happy",
-        "/proactive": "/be-proactive",
-        "/process": "/upstream",
-        "/procrastinate": "/frog",
-        "/procrastination": "/frog",
-        "/product-manager": "/product",
-        "/production-consumption": "/produce-consume",
-        "/productivity": "/productive",
-        "/psych-safety": "/insecure",
-        "/psychological-safety": "/insecure",
-        "/rage": "/anger",
-        "/ranking": "/recommend",
-        "/rca": "/coe",
-        "/recommender": "/recommend",
-        "/regret": "/regrets",
-        "/remote": "/remote-work",
-        "/remotework": "/remote-work",
-        "/resistance": "/d/resistance",
-        "/responsible": "/be-proactive",
-        "/retirement": "/retire",
-        "/retiring": "/retire",
-        "/reverse-bucket-list": "/bucket-list",
-        "/rework": "/staysmallstaysmall",
-        "/root-cause-analysis": "/coe",
-        "/rsu-risk": "/stock-concentration",
-        "/sat": "/work-satisfaction",
-        "/satisfaction": "/happy",
-        "/satisfied": "/happy",
-        "/saving": "/money",
-        "/savings": "/money",
-        "/savor": "/happy",
-        "/search-inside-yourself": "/siy",
-        "/self-vs-ego": "/self-ego",
-        "/shadows": "/psychic-shadows",
-        "/simple-and-sinister": "/kettlebell",
-        "/sleepless": "/insomnia",
-        "/some": "/sleight-of-mouth",
-        "/stages": "/chapters",
-        "/stewardship": "/delegate",
-        "/strong": "/physical-health",
-        "/sublime-state": "/sublime",
-        "/sublime-states": "/sublime",
-        "/taxes": "/money",
-        "/td/advertising": "/advertising",
-        "/td/design": "/design",
-        "/td/machine-learning": "/ml",
-        "/tech-ritual": "/tech-rituals",
-        "/tft": "/toysfortots",
-        "/the-dip": "/dip",
-        "/the-manager-book": "/manager-book",
-        "/the-saw": "/sharpen-the-saw",
-        "/thedip": "/dip",
-        "/think": "/writing",
-        "/thinking": "/writing",
-        "/thought-spells": "/psychic-shadows",
-        "/time-off": "/timeoff",
-        "/time-off-2024-02": "/timeoff-2024-02",
-        "/time-off-2024-04": "/timeoff-2024-04",
-        "/time-off-2024-08": "/timeoff-2024-08",
-        "/time-off-2025-08": "/timeoff-2025-08",
-        "/time-off-next": "/timeoff-2024-08",
-        "/time-off-now": "/timeoff-2024-08",
-        "/todo": "/todo_enjoy",
-        "/todo-enjoy": "/todo_enjoy",
-        "/tolerance": "/anger",
-        "/too-busy": "/overload",
-        "/training": "/ai-training",
-        "/tribes": "/tribe",
-        "/twenty-two": "/22",
-        "/twentytwo": "/22",
-        "/uncategorized": "/random-idea",
-        "/untangled-book": "/untangled",
-        "/vacation": "/timeoff",
-        "/vancouver": "/bc",
-        "/video-player": "/vlc",
-        "/videoplayer": "/vlc",
-        "/virus": "/covid",
-        "/visualizations": "/viz",
-        "/voices-in-my-head": "/voices",
-        "/vr": "/ar",
-        "/warmth": "/warm",
-        "/what-i-wish-i-knew-at-22": "/22",
-        "/will-power": "/activation",
-        "/willpower": "/activation",
-        "/win-win-or-no-deal": "/win-win",
-        "/wizard-book": "/sicp",
-        "/wlb": "/sustainable-work",
-        "/wlb-manifesto": "/sustainable-work",
-        "/work-life-balance": "/sustainable-work",
-        "/workload": "/overload",
-        "/write": "/writing",
-        "/y2024": "/y24",
-        "/y2025": "/y25",
-        "/yellow-deli": "/ig66/717",
-        "/zero": "/blueprint"
+        "/2024": "http://localhost:4567/y24",
+        "/2025": "http://localhost:4567/y25",
+        "/24": "http://localhost:4567/y24",
+        "/25": "http://localhost:4567/y25",
+        "/48-laws": "http://localhost:4567/laws-of-power",
+        "/50yo": "http://localhost:4567/40yo",
+        "/7h": "http://localhost:4567/7-habits",
+        "/7h-c0": "http://localhost:4567/7h-concepts",
+        "/7h-c1": "http://localhost:4567/be-proactive",
+        "/7h-c2": "http://localhost:4567/end-in-mind",
+        "/7h-c3": "http://localhost:4567/first-things-first",
+        "/7h-c4": "http://localhost:4567/win-win",
+        "/7h-c5": "http://localhost:4567/first-understand",
+        "/7h-c6": "http://localhost:4567/synergize",
+        "/7h-c7": "http://localhost:4567/sharpen-the-saw",
+        "/7habits": "http://localhost:4567/7-habits",
+        "/90": "http://localhost:4567/90days",
+        "/90-days": "http://localhost:4567/90days",
+        "/Business-Model-You": "http://localhost:4567/bmy",
+        "/Coaching-Questions": "http://localhost:4567/coaching",
+        "/Human-Meetings": "http://localhost:4567/human-meetings",
+        "/aGPT": "http://localhost:4567/ai-bestie",
+        "/activation-energy": "http://localhost:4567/activation",
+        "/addictions": "http://localhost:4567/addiction",
+        "/affirm": "http://localhost:4567/affirmations",
+        "/ai-coder": "http://localhost:4567/chop",
+        "/ai-papers": "http://localhost:4567/ai-paper",
+        "/ai-talk": "http://localhost:4567/genai-talk",
+        "/ai-training": "http://localhost:4567/ai-training",
+        "/alexa-charity": "http://localhost:4567/toysfortots",
+        "/anxious": "http://localhost:4567/anxiety",
+        "/architecture": "http://localhost:4567/design",
+        "/arthur-brooks-oprah": "http://localhost:4567/build-life-you-want",
+        "/atomic-habits": "http://localhost:4567/d/habits",
+        "/augmentedreality": "http://localhost:4567/ar",
+        "/ballooning": "http://localhost:4567/balloon",
+        "/bbb": "http://localhost:4567/build-bubble-bike",
+        "/begin-with-the-end-in-mind": "http://localhost:4567/end-in-mind",
+        "/bells": "http://localhost:4567/kettlebell",
+        "/bespoke-everything": "http://localhost:4567/hyper-personal",
+        "/bestiegpt": "http://localhost:4567/ai-bestie",
+        "/bikes": "http://localhost:4567/bike",
+        "/biking": "http://localhost:4567/bike",
+        "/bmu": "http://localhost:4567/bmy",
+        "/book-writing": "http://localhost:4567/write-book",
+        "/books": "http://localhost:4567/books-that-defined-me",
+        "/boss": "http://localhost:4567/being-a-great-manager",
+        "/brain-attack": "http://localhost:4567/suicide",
+        "/brainattack": "http://localhost:4567/suicide",
+        "/breathe": "http://localhost:4567/breath",
+        "/breathing": "http://localhost:4567/breath",
+        "/bryan-johnson": "http://localhost:4567/blueprint",
+        "/bucket": "http://localhost:4567/bucket-list",
+        "/build-life": "http://localhost:4567/build-life-you-want",
+        "/care": "http://localhost:4567/caring",
+        "/centenarian": "http://localhost:4567/last-year",
+        "/chilliwack": "http://localhost:4567/bc",
+        "/classact": "http://localhost:4567/class-act",
+        "/coach": "http://localhost:4567/coaching",
+        "/cocaine": "http://localhost:4567/mania",
+        "/cold": "http://localhost:4567/warm",
+        "/compassion": "http://localhost:4567/curious",
+        "/compensation": "http://localhost:4567/comp",
+        "/concentration-risk": "http://localhost:4567/stock-concentration",
+        "/corona": "http://localhost:4567/covid",
+        "/correct-of-errors": "http://localhost:4567/coe",
+        "/couple-double-trouble": "http://localhost:4567/partner-trouble",
+        "/couples": "http://localhost:4567/partner-trouble",
+        "/covid19": "http://localhost:4567/covid",
+        "/create-consume": "http://localhost:4567/produce-consume",
+        "/creator": "http://localhost:4567/produce-consume",
+        "/cry": "http://localhost:4567/touching",
+        "/cv": "http://localhost:4567/covid",
+        "/d/2015-11-18-Outsourcing": "http://localhost:4567/outsourcing",
+        "/data-viz": "http://localhost:4567/viz",
+        "/dealjoy": "http://localhost:4567/joy",
+        "/decide": "http://localhost:4567/decisive",
+        "/decision": "http://localhost:4567/decisive",
+        "/delegation": "http://localhost:4567/delegate",
+        "/diagrams": "http://localhost:4567/viz",
+        "/ditl": "http://localhost:4567/day-in-the-life",
+        "/don-juan": "http://localhost:4567/enemy",
+        "/double-trouble": "http://localhost:4567/partner-trouble",
+        "/dream-job": "http://localhost:4567/job",
+        "/dsat": "http://localhost:4567/work-satisfaction",
+        "/duck-pride": "http://localhost:4567/pride",
+        "/eat-that-frog": "http://localhost:4567/frog",
+        "/effectiveness": "http://localhost:4567/balance",
+        "/emotional-health-practices": "http://localhost:4567/emotional-health",
+        "/emotional-states": "http://localhost:4567/emotions",
+        "/enabling-environment": "http://localhost:4567/enable",
+        "/enemies": "http://localhost:4567/enemy",
+        "/enjoy": "http://localhost:4567/happy",
+        "/essential": "http://localhost:4567/essentialism",
+        "/exercise": "http://localhost:4567/physical-health",
+        "/failure": "http://localhost:4567/fail",
+        "/fatality": "http://localhost:4567/death",
+        "/feeling-meetings": "http://localhost:4567/human-meetings",
+        "/feelings": "http://localhost:4567/emotions",
+        "/first-thing-first": "http://localhost:4567/first-things-first",
+        "/first90days": "http://localhost:4567/90days",
+        "/forty-two": "http://localhost:4567/42",
+        "/fortytwo": "http://localhost:4567/42",
+        "/frugality": "http://localhost:4567/parkinson",
+        "/frustration": "http://localhost:4567/anger",
+        "/fuck-shame": "http://localhost:4567/shame",
+        "/future-igor": "http://localhost:4567/time-traveler",
+        "/future-self": "http://localhost:4567/time-traveler",
+        "/genai-intern": "http://localhost:4567/genai-talk",
+        "/getting-things-done": "http://localhost:4567/gtd",
+        "/getting-to-yes": "http://localhost:4567/negotiate",
+        "/goal": "http://localhost:4567/goals",
+        "/good-days": "http://localhost:4567/day-in-the-life",
+        "/gopher": "http://localhost:4567/delegate",
+        "/grandma": "http://localhost:4567/curious",
+        "/grandmother": "http://localhost:4567/curious",
+        "/grandmother-mind": "http://localhost:4567/curious",
+        "/grandmothermind": "http://localhost:4567/curious",
+        "/gty": "http://localhost:4567/negotiate",
+        "/guilt": "http://localhost:4567/shame",
+        "/habit": "http://localhost:4567/d/habits",
+        "/habits": "http://localhost:4567/d/habits",
+        "/happiness": "http://localhost:4567/happy",
+        "/happiness-guide": "http://localhost:4567/build-life-you-want",
+        "/healthspan": "http://localhost:4567/last-year",
+        "/heap - potporri - potpori": "http://localhost:4567/random-idea",
+        "/heavy-club": "http://localhost:4567/kettlebell",
+        "/heavy-clubs": "http://localhost:4567/kettlebell",
+        "/high-energy": "http://localhost:4567/energy-abundance",
+        "/humanity": "http://localhost:4567/touching",
+        "/hyper-personalization": "http://localhost:4567/hyper-personal",
+        "/idle-loop": "http://localhost:4567/idle",
+        "/igor-gap-year": "http://localhost:4567/gap-year-igor",
+        "/iina": "http://localhost:4567/vlc",
+        "/imposter": "http://localhost:4567/insecure",
+        "/in-real-life": "http://localhost:4567/irl",
+        "/insecurity": "http://localhost:4567/insecure",
+        "/intern-llm": "http://localhost:4567/genai-talk",
+        "/jung-self": "http://localhost:4567/self-ego",
+        "/jupyter": "http://localhost:4567/pandas",
+        "/kb": "http://localhost:4567/kettlebell",
+        "/kettlebells": "http://localhost:4567/kettlebell",
+        "/language-limits": "http://localhost:4567/words-we-dont-have",
+        "/life-chapters": "http://localhost:4567/chapters",
+        "/life-stages": "http://localhost:4567/chapters",
+        "/linguistic-relativity": "http://localhost:4567/words-we-dont-have",
+        "/lisp": "http://localhost:4567/sicp",
+        "/llm-intern": "http://localhost:4567/genai-talk",
+        "/llm-security": "http://localhost:4567/ai-security",
+        "/llm-talk": "http://localhost:4567/genai-talk",
+        "/llm-training": "http://localhost:4567/ai-training",
+        "/loneliness": "http://localhost:4567/lonely",
+        "/machine-learning": "http://localhost:4567/ml",
+        "/machinelearning": "http://localhost:4567/ml",
+        "/makejoy": "http://localhost:4567/joy",
+        "/makes-me-cry": "http://localhost:4567/touching",
+        "/makesmile": "http://localhost:4567/joy",
+        "/manager": "http://localhost:4567/being-a-great-manager",
+        "/manic": "http://localhost:4567/mania",
+        "/mechanism": "http://localhost:4567/upstream",
+        "/meditate": "http://localhost:4567/siy",
+        "/meditation": "http://localhost:4567/siy",
+        "/mental-break-down": "http://localhost:4567/depression",
+        "/middleage": "http://localhost:4567/elder",
+        "/midlife": "http://localhost:4567/elder",
+        "/monsters": "http://localhost:4567/mind-monsters",
+        "/mortality": "http://localhost:4567/death",
+        "/mr": "http://localhost:4567/ar",
+        "/negotiation": "http://localhost:4567/negotiate",
+        "/nonjudgment": "http://localhost:4567/curious",
+        "/nvim": "http://localhost:4567/vim",
+        "/objective": "http://localhost:4567/goals",
+        "/okr": "http://localhost:4567/goals",
+        "/on-being-mortal": "http://localhost:4567/death",
+        "/overwork": "http://localhost:4567/overload",
+        "/pain": "http://localhost:4567/mental-pain",
+        "/parkinson-law": "http://localhost:4567/parkinson",
+        "/parkinsons-law": "http://localhost:4567/parkinson",
+        "/passion": "http://localhost:4567/caring",
+        "/pay": "http://localhost:4567/comp",
+        "/pd": "http://localhost:4567/timeoff",
+        "/perfect-job": "http://localhost:4567/job",
+        "/personal-development": "http://localhost:4567/timeoff",
+        "/phoney": "http://localhost:4567/insecure",
+        "/pm": "http://localhost:4567/product",
+        "/podcasting": "http://localhost:4567/podcast",
+        "/podcasts": "http://localhost:4567/podcast",
+        "/poh": "http://localhost:4567/happy",
+        "/proactive": "http://localhost:4567/be-proactive",
+        "/process": "http://localhost:4567/upstream",
+        "/procrastinate": "http://localhost:4567/frog",
+        "/procrastination": "http://localhost:4567/frog",
+        "/product-manager": "http://localhost:4567/product",
+        "/production-consumption": "http://localhost:4567/produce-consume",
+        "/productivity": "http://localhost:4567/productive",
+        "/psych-safety": "http://localhost:4567/insecure",
+        "/psychological-safety": "http://localhost:4567/insecure",
+        "/rage": "http://localhost:4567/anger",
+        "/ranking": "http://localhost:4567/recommend",
+        "/rca": "http://localhost:4567/coe",
+        "/recommender": "http://localhost:4567/recommend",
+        "/regret": "http://localhost:4567/regrets",
+        "/remote": "http://localhost:4567/remote-work",
+        "/remotework": "http://localhost:4567/remote-work",
+        "/resistance": "http://localhost:4567/d/resistance",
+        "/responsible": "http://localhost:4567/be-proactive",
+        "/retirement": "http://localhost:4567/retire",
+        "/retiring": "http://localhost:4567/retire",
+        "/reverse-bucket-list": "http://localhost:4567/bucket-list",
+        "/rework": "http://localhost:4567/staysmallstaysmall",
+        "/root-cause-analysis": "http://localhost:4567/coe",
+        "/rsu-risk": "http://localhost:4567/stock-concentration",
+        "/sat": "http://localhost:4567/work-satisfaction",
+        "/satisfaction": "http://localhost:4567/happy",
+        "/satisfied": "http://localhost:4567/happy",
+        "/saving": "http://localhost:4567/money",
+        "/savings": "http://localhost:4567/money",
+        "/savor": "http://localhost:4567/happy",
+        "/search-inside-yourself": "http://localhost:4567/siy",
+        "/self-vs-ego": "http://localhost:4567/self-ego",
+        "/shadows": "http://localhost:4567/psychic-shadows",
+        "/simple-and-sinister": "http://localhost:4567/kettlebell",
+        "/sleepless": "http://localhost:4567/insomnia",
+        "/some": "http://localhost:4567/sleight-of-mouth",
+        "/stages": "http://localhost:4567/chapters",
+        "/stewardship": "http://localhost:4567/delegate",
+        "/strong": "http://localhost:4567/physical-health",
+        "/sublime-state": "http://localhost:4567/sublime",
+        "/sublime-states": "http://localhost:4567/sublime",
+        "/taxes": "http://localhost:4567/money",
+        "/td/advertising": "http://localhost:4567/advertising",
+        "/td/design": "http://localhost:4567/design",
+        "/td/machine-learning": "http://localhost:4567/ml",
+        "/tech-ritual": "http://localhost:4567/tech-rituals",
+        "/tft": "http://localhost:4567/toysfortots",
+        "/the-dip": "http://localhost:4567/dip",
+        "/the-manager-book": "http://localhost:4567/manager-book",
+        "/the-saw": "http://localhost:4567/sharpen-the-saw",
+        "/thedip": "http://localhost:4567/dip",
+        "/think": "http://localhost:4567/writing",
+        "/thinking": "http://localhost:4567/writing",
+        "/thought-spells": "http://localhost:4567/psychic-shadows",
+        "/time-off": "http://localhost:4567/timeoff",
+        "/time-off-2024-02": "http://localhost:4567/timeoff-2024-02",
+        "/time-off-2024-04": "http://localhost:4567/timeoff-2024-04",
+        "/time-off-2024-08": "http://localhost:4567/timeoff-2024-08",
+        "/time-off-2025-08": "http://localhost:4567/timeoff-2025-08",
+        "/time-off-next": "http://localhost:4567/timeoff-2024-08",
+        "/time-off-now": "http://localhost:4567/timeoff-2024-08",
+        "/todo": "http://localhost:4567/todo_enjoy",
+        "/todo-enjoy": "http://localhost:4567/todo_enjoy",
+        "/tolerance": "http://localhost:4567/anger",
+        "/too-busy": "http://localhost:4567/overload",
+        "/training": "http://localhost:4567/ai-training",
+        "/tribes": "http://localhost:4567/tribe",
+        "/twenty-two": "http://localhost:4567/22",
+        "/twentytwo": "http://localhost:4567/22",
+        "/uncategorized": "http://localhost:4567/random-idea",
+        "/untangled-book": "http://localhost:4567/untangled",
+        "/vacation": "http://localhost:4567/timeoff",
+        "/vancouver": "http://localhost:4567/bc",
+        "/video-player": "http://localhost:4567/vlc",
+        "/videoplayer": "http://localhost:4567/vlc",
+        "/virus": "http://localhost:4567/covid",
+        "/visualizations": "http://localhost:4567/viz",
+        "/voices-in-my-head": "http://localhost:4567/voices",
+        "/vr": "http://localhost:4567/ar",
+        "/warmth": "http://localhost:4567/warm",
+        "/what-i-wish-i-knew-at-22": "http://localhost:4567/22",
+        "/will-power": "http://localhost:4567/activation",
+        "/willpower": "http://localhost:4567/activation",
+        "/win-win-or-no-deal": "http://localhost:4567/win-win",
+        "/wizard-book": "http://localhost:4567/sicp",
+        "/wlb": "http://localhost:4567/sustainable-work",
+        "/wlb-manifesto": "http://localhost:4567/sustainable-work",
+        "/work-life-balance": "http://localhost:4567/sustainable-work",
+        "/workload": "http://localhost:4567/overload",
+        "/write": "http://localhost:4567/writing",
+        "/y2024": "http://localhost:4567/y24",
+        "/y2025": "http://localhost:4567/y25",
+        "/yellow-deli": "http://localhost:4567/ig66/717",
+        "/zero": "http://localhost:4567/blueprint"
     },
     "url_info": {
         "/22": {
             "description": "In 2019 I created a program for 15 fantastic interns! A program highlight was my talk titled “What I wish I knew at 22, and so might you”. The talk received a 94% overall rating from over 15 interns, 10 SDE-IIs, and 1 senior developer. Even though the talk focuses on how to live the good life, a big chunk of life is work, so there’s good coverage on how to optimize your career.\n\n",
-            "doc_size": 17000,
+            "doc_size": 16000,
             "file_path": "_site/22.html",
             "incoming_links": [
-                "/chapters",
-                "/manager-book"
+                "/chapters"
             ],
             "last_modified": "2024-05-05T08:25:00-07:00",
             "markdown_path": "_d/22.md",
@@ -309,8 +308,8 @@
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/40-yo-programmer.md",
             "outgoing_links": [
-                "/chop",
-                "/elder"
+                "/elder",
+                "http://localhost:4567/chop"
             ],
             "redirect_url": "",
             "title": "Age Before Beauty: The Vanishing Act of Older Coders",
@@ -356,8 +355,8 @@
                 "/end-in-mind",
                 "/essentialism",
                 "/first-things-first",
-                "/goals",
-                "/gtd"
+                "/gtd",
+                "http://localhost:4567/goals"
             ],
             "redirect_url": "",
             "title": "The 4 Disciplines of Execution (4DX)",
@@ -368,26 +367,15 @@
             "doc_size": 18000,
             "file_path": "_site/7-habits.html",
             "incoming_links": [
-                "/7h-concepts",
-                "/balance",
-                "/be-proactive",
                 "/books-that-defined-me",
                 "/depression",
-                "/end-in-mind",
                 "/eulogy",
-                "/first-things-first",
-                "/first-understand",
-                "/gap-year-igor",
                 "/psychic-weight",
-                "/sharpen-the-saw",
-                "/synergize",
-                "/timeoff-2020-12",
-                "/win-win"
+                "/timeoff-2020-12"
             ],
             "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_posts/2018-01-04-7-habits.md",
             "outgoing_links": [
-                "/7h-concepts",
                 "/balance",
                 "/be-proactive",
                 "/end-in-mind",
@@ -396,7 +384,8 @@
                 "/first-understand",
                 "/sharpen-the-saw",
                 "/synergize",
-                "/win-win"
+                "/win-win",
+                "http://localhost:4567/7h-concepts"
             ],
             "redirect_url": "",
             "title": "Seven Habits: A manual for life",
@@ -406,17 +395,13 @@
             "description": "To discuss the 7 habits we need some foundational ideas, P/PC, paradigms, etc. These are my insights based on the 7 habits Chapter 0.\n\n",
             "doc_size": 18000,
             "file_path": "_site/7h-concepts.html",
-            "incoming_links": [
-                "/7-habits",
-                "/advice",
-                "/writing"
-            ],
+            "incoming_links": [],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/7h-c0.md",
             "outgoing_links": [
-                "/7-habits",
                 "/balance",
-                "/sleight-of-mouth"
+                "http://localhost:4567/7-habits",
+                "http://localhost:4567/sleight-of-mouth"
             ],
             "redirect_url": "",
             "title": "7 habits concepts",
@@ -434,11 +419,12 @@
             "markdown_path": "_d/90days.md",
             "outgoing_links": [
                 "/amazon",
-                "/curious",
                 "/first-things-first",
                 "/insecure",
                 "/shame",
-                "/writing"
+                "/writing",
+                "http://localhost:4567/curious",
+                "http://localhost:4567/insecure"
             ],
             "redirect_url": "",
             "title": "The first 90 days",
@@ -502,7 +488,7 @@
         },
         "/activation": {
             "description": "Doing activities requires will power, addictions and procrastination require negative will power, while positive habits, especially new ones require high will power. Here’s a model for these things.\n\n",
-            "doc_size": 28000,
+            "doc_size": 27000,
             "file_path": "_site/activation.html",
             "incoming_links": [
                 "/addiction",
@@ -511,19 +497,18 @@
                 "/energy-abundance",
                 "/gap-year-igor",
                 "/produce-consume",
-                "/slow",
-                "/timeoff-2021-12"
+                "/slow"
             ],
             "last_modified": "2025-10-11T09:00:08-07:00",
             "markdown_path": "_d/activation.md",
             "outgoing_links": [
                 "/addiction",
                 "/blueprint",
-                "/d/habits",
-                "/d/resistance",
                 "/gap-year-igor",
                 "/insomnia",
-                "/timeoff"
+                "/timeoff",
+                "http://localhost:4567/d/habits",
+                "http://localhost:4567/d/resistance"
             ],
             "redirect_url": "",
             "title": "Activation Energy",
@@ -557,17 +542,16 @@
                 "/mind-at-work",
                 "/productive",
                 "/psychic-shadows",
-                "/psychic-weight",
-                "/timeoff"
+                "/psychic-weight"
             ],
             "last_modified": "2025-09-01T09:23:45-07:00",
             "markdown_path": "_d/addiction.md",
             "outgoing_links": [
                 "/activation",
                 "/covid",
-                "/elder",
                 "/mental-pain",
-                "/mind-at-work"
+                "/mind-at-work",
+                "http://localhost:4567/elder"
             ],
             "redirect_url": "",
             "title": "Escape Artists: The True Face of Addiction",
@@ -597,8 +581,8 @@
             "last_modified": "2025-01-26T15:44:57-08:00",
             "markdown_path": "_d/advice.md",
             "outgoing_links": [
-                "/7h-concepts",
-                "/first-understand"
+                "http://localhost:4567/7h-concepts",
+                "http://localhost:4567/first-understand"
             ],
             "redirect_url": "",
             "title": "The Advice Lab: Where Wisdom Gets Beta Tested",
@@ -613,24 +597,24 @@
                 "/mortality-software",
                 "/operating-manual",
                 "/process-journal",
-                "http://localhost:4567/religion"
+                "/religion"
             ],
             "last_modified": "2025-10-05T06:17:13-07:00",
             "markdown_path": "_d/affirmations2.md",
             "outgoing_links": [
                 "/anxiety",
                 "/appreciate",
-                "/be-proactive",
                 "/class-act",
-                "/curious",
-                "/end-in-mind",
-                "/essentialism",
-                "/first-things-first",
-                "/first-understand",
-                "/insecure",
                 "/joy",
                 "/sublime",
-                "/writing"
+                "/writing",
+                "http://localhost:4567/be-proactive",
+                "http://localhost:4567/curious",
+                "http://localhost:4567/end-in-mind",
+                "http://localhost:4567/essentialism",
+                "http://localhost:4567/first-things-first",
+                "http://localhost:4567/first-understand",
+                "http://localhost:4567/insecure"
             ],
             "redirect_url": "",
             "title": "Affirmations",
@@ -655,11 +639,11 @@
                 "/ai-paper",
                 "/ai-security",
                 "/ai-testing",
-                "/chop",
                 "/chow",
                 "/ml",
                 "/recommend",
-                "/vibe"
+                "/vibe",
+                "http://localhost:4567/chop"
             ],
             "redirect_url": "",
             "title": "All posts on AI",
@@ -749,7 +733,7 @@
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai",
-                "http://localhost:4567/chop"
+                "/chop"
             ],
             "last_modified": "2025-10-16T08:37:53-04:00",
             "markdown_path": "_d/ai-journal.md",
@@ -757,10 +741,10 @@
                 "/ai-art",
                 "/ai-security",
                 "/eulogy",
-                "/genai-talk",
                 "/gpt",
                 "/hyper-personal",
-                "/mental-pain"
+                "/mental-pain",
+                "http://localhost:4567/genai-talk"
             ],
             "redirect_url": "",
             "title": "Igor's AI Journal",
@@ -768,7 +752,7 @@
         },
         "/ai-paper": {
             "description": "The original AI papers were all about training, super technical, and not that usable as a practitioner. Nowadays papers are less “mathy” and more applicable to practitioners. Here are some worth reading\n\n",
-            "doc_size": 18000,
+            "doc_size": 17000,
             "file_path": "_site/ai-paper.html",
             "incoming_links": [
                 "/ai"
@@ -801,11 +785,11 @@
             "file_path": "_site/ai-testing.html",
             "incoming_links": [
                 "/ai",
+                "/chop",
                 "/genai-talk",
                 "/ml",
                 "/testing",
-                "/timeoff-2024-04",
-                "http://localhost:4567/chop"
+                "/timeoff-2024-04"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/ai-testing.md",
@@ -828,12 +812,12 @@
             "markdown_path": "_d/amazon.md",
             "outgoing_links": [
                 "/coe",
-                "/design",
-                "/manager-book",
                 "/td/cloud-first-applications",
                 "/td/data-systems",
-                "/toysfortots",
-                "/writing"
+                "/writing",
+                "http://localhost:4567/design",
+                "http://localhost:4567/manager-book",
+                "http://localhost:4567/toysfortots"
             ],
             "redirect_url": "",
             "title": "My thoughts on Amazon",
@@ -879,10 +863,10 @@
             "markdown_path": "_d/anxiety.md",
             "outgoing_links": [
                 "/anxiety-management",
-                "/be-proactive",
-                "/idle",
                 "/slow",
-                "/voices"
+                "/voices",
+                "http://localhost:4567/be-proactive",
+                "http://localhost:4567/idle"
             ],
             "redirect_url": "",
             "title": "Anxiety, the gap between reality and expectations",
@@ -980,19 +964,19 @@
             "last_modified": "2025-08-24T10:29:13-07:00",
             "markdown_path": "_d/balance2.md",
             "outgoing_links": [
-                "/7-habits",
                 "/activation",
                 "/energy",
-                "/essentialism",
                 "/eulogy",
                 "/moments",
                 "/mortality-software",
                 "/parkinson",
                 "/productive",
                 "/slow",
-                "/sustainable-work",
-                "/timeoff",
-                "/weeks"
+                "/weeks",
+                "http://localhost:4567/7-habits",
+                "http://localhost:4567/essentialism",
+                "http://localhost:4567/sustainable-work",
+                "http://localhost:4567/timeoff"
             ],
             "redirect_url": "",
             "title": "Balance - The Holy Grail",
@@ -1000,7 +984,7 @@
         },
         "/balloon": {
             "description": "Want to plaster a huge smile on someone’s face with 10 cents of material and 20 seconds of work? Make them a balloon! In 2022, I discovered ballooning, and have used it in my joy-delivering arsenal ever since.\n\n",
-            "doc_size": 22000,
+            "doc_size": 21000,
             "file_path": "_site/balloon.html",
             "incoming_links": [
                 "/eulogy",
@@ -1034,28 +1018,21 @@
         },
         "/be-proactive": {
             "description": "I choose ‘.’ I am responsible for my own life ‘.’ My behavior is a function of my decisions, not my conditions ‘.’ I can subordinate feelings to values ‘.’ I have the initiative and the responsibility to make things happen. These are my insights from 7 habits Chapter 1.\n\n",
-            "doc_size": 22000,
+            "doc_size": 21000,
             "file_path": "_site/be-proactive.html",
             "incoming_links": [
                 "/7-habits",
-                "/affirmations",
-                "/anxiety",
-                "/d/habits",
                 "/emotions",
-                "/frog",
-                "/idle",
                 "/process-journal",
-                "/regrets",
-                "/siy",
                 "/words-we-dont-have"
             ],
             "last_modified": "2025-04-02T22:07:54-07:00",
             "markdown_path": "_d/7h-c1.md",
             "outgoing_links": [
-                "/7-habits",
                 "/essentialism",
                 "/frog",
-                "/siy"
+                "/siy",
+                "http://localhost:4567/7-habits"
             ],
             "redirect_url": "",
             "title": "Be Proactive",
@@ -1066,25 +1043,24 @@
             "doc_size": 22000,
             "file_path": "_site/being-a-great-manager.html",
             "incoming_links": [
-                "/bmy",
-                "/eulogy",
                 "/job",
                 "/manager-book"
             ],
             "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_posts/2018-03-18-being-a-great-manager.md",
             "outgoing_links": [
-                "/books-that-defined-me",
-                "/coaching",
-                "/curious",
-                "/decisive",
                 "/human-meetings",
                 "/manager-book",
                 "/mind-monsters",
                 "/moments-at-work",
                 "/pride",
                 "/static/idvorkin-linked-in-feedback-lastest.pdf",
-                "/sustainable-work"
+                "/sustainable-work",
+                "http://localhost:4567/books-that-defined-me",
+                "http://localhost:4567/coaching",
+                "http://localhost:4567/curious",
+                "http://localhost:4567/decisive",
+                "http://localhost:4567/manager-book"
             ],
             "redirect_url": "",
             "title": "Being the best manager I can be",
@@ -1152,16 +1128,14 @@
             "description": "The business model canvas is a tool for understanding how a company makes money. This same model can be applied to a person’s career. While job hunting this was helpful figuring out my dream job. I suppose it should also prioritize my work energy, and probably how to prioritize my life energy. But that’s to come.\n\n",
             "doc_size": 24000,
             "file_path": "_site/bmy.html",
-            "incoming_links": [
-                "/job-hunt-stress"
-            ],
+            "incoming_links": [],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/bmu.md",
             "outgoing_links": [
-                "/being-a-great-manager",
                 "/eulogy",
-                "/job",
-                "/job-hunt-stress"
+                "/job-hunt-stress",
+                "http://localhost:4567/being-a-great-manager",
+                "http://localhost:4567/job"
             ],
             "redirect_url": "",
             "title": "Business Model You",
@@ -1169,23 +1143,19 @@
         },
         "/books-that-defined-me": {
             "description": "Books allow great thoughts to enter our mind and mold us into who we want to become. These are the books that are molding me.\n\n",
-            "doc_size": 17000,
+            "doc_size": 16000,
             "file_path": "_site/books-that-defined-me.html",
-            "incoming_links": [
-                "/being-a-great-manager",
-                "/manager-book",
-                "/manager-book-appendix"
-            ],
+            "incoming_links": [],
             "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_posts/2015-11-02-books-that-defined-me.md",
             "outgoing_links": [
                 "/7-habits",
-                "/d/resistance",
                 "/essentialism",
                 "/getting-to-yes-with-yourself",
                 "/gtd",
                 "/humans-are-underrated",
-                "/siy"
+                "http://localhost:4567/d/resistance",
+                "http://localhost:4567/siy"
             ],
             "redirect_url": "",
             "title": "Books that defined me",
@@ -1244,12 +1214,12 @@
             "outgoing_links": [
                 "/chasing-daylight",
                 "/eulogy",
-                "/gap-year-igor",
                 "/last-year",
                 "/manager-book",
                 "/tesla",
                 "/y24",
-                "/y25"
+                "/y25",
+                "http://localhost:4567/gap-year-igor"
             ],
             "redirect_url": "",
             "title": "The Reverse Bucket List: Cross Out What You Don't Actually Want",
@@ -1259,9 +1229,7 @@
             "description": "What the heck is a bubble bike? Ah, you see, bringing joy for others is my thing. As they say in Buddhism there are many vehicles to bring joy, and my vehicle is the bubble bike.\n\n",
             "doc_size": 15000,
             "file_path": "_site/build-bubble-bike.html",
-            "incoming_links": [
-                "/joy"
-            ],
+            "incoming_links": [],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/build-bubble-bike.md",
             "outgoing_links": [
@@ -1306,9 +1274,7 @@
             "description": "Let’s define caring, as the intensity of our emotions, critical given a lack of emotional intensity is depression. Intense emotions are synonymous with interest and mental energy, which is a double edged sword: Good caring (commitment to our identity, positive habits) charges us up, but bad caring (attachment, anger, anxiety, focus on things we don’t control), brings us down. When bad caring manifests as repetitive, ruminating thought patterns, they become psychic shadows requiring specialized techniques:\n\n",
             "doc_size": 23000,
             "file_path": "_site/caring.html",
-            "incoming_links": [
-                "/depression"
-            ],
+            "incoming_links": [],
             "last_modified": "2025-07-18T07:57:44-07:00",
             "markdown_path": "_d/caring.md",
             "outgoing_links": [
@@ -1339,7 +1305,6 @@
                 "/42",
                 "/gap-year",
                 "/gap-year-igor",
-                "/lonely",
                 "/retire",
                 "/y25"
             ],
@@ -1348,7 +1313,7 @@
             "outgoing_links": [
                 "/22",
                 "/42",
-                "/enemy"
+                "http://localhost:4567/enemy"
             ],
             "redirect_url": "",
             "title": "The chapters of our lives",
@@ -1374,6 +1339,31 @@
             "redirect_url": "",
             "title": "Chasing Daylight: Imagine you're gonna die in less then 100 days",
             "url": "/chasing-daylight"
+        },
+        "/chop": {
+            "description": "Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizing how we write code. Think of those old-school auto shops: AI started as the shop hand, fetching tools and cleaning parts. Then it became an apprentice mechanic, helping diagnose problems and suggesting fixes. Now? It’s a master mechanic, capable of rebuilding entire engines from your high-level specs. Our AIs are getting smarter by the day, and we’ll explore how to make the most of this evolution.\n\n",
+            "doc_size": 60000,
+            "file_path": "_site/chop.html",
+            "incoming_links": [
+                "/chow",
+                "/gtd",
+                "/process-journal",
+                "/y24",
+                "/y25"
+            ],
+            "last_modified": "2025-10-16T07:32:25-04:00",
+            "markdown_path": "_d/ai-coder.md",
+            "outgoing_links": [
+                "/ai-journal",
+                "/ai-testing",
+                "/humans-are-underrated",
+                "/process-journal",
+                "/testing",
+                "/vibe"
+            ],
+            "redirect_url": "",
+            "title": "The CHOP Shop: Where AI Meets Code",
+            "url": "/chop"
         },
         "/chow": {
             "description": "Welcome to The CHOW Kitchen! CHOW - or Chat-Oriented Writing - is transforming how we create content. Think of those bustling restaurant kitchens: AI started as the prep cook, chopping vegetables and measuring ingredients. Then it became a line cook, helping with recipes and plating. Now? It’s becoming a sous chef, capable of crafting entire dishes from your creative vision. Our AIs are getting more sophisticated daily, and we’ll explore how to make the most of this culinary revolution in writing.\n\n",
@@ -1405,9 +1395,9 @@
             "markdown_path": "_d/classact2.md",
             "outgoing_links": [
                 "/appreciate",
-                "/curious",
-                "/first-understand",
-                "/touching"
+                "/touching",
+                "http://localhost:4567/curious",
+                "http://localhost:4567/first-understand"
             ],
             "redirect_url": "",
             "title": "Be a class act",
@@ -1418,12 +1408,10 @@
             "doc_size": 40000,
             "file_path": "_site/coaching.html",
             "incoming_links": [
-                "/being-a-great-manager",
                 "/first-understand",
                 "/insecure",
                 "/job",
                 "/manager-book",
-                "/moments-at-work",
                 "/prompts",
                 "/self-ego",
                 "/writing"
@@ -1431,12 +1419,12 @@
             "last_modified": "2025-09-30T07:24:35-07:00",
             "markdown_path": "_d/coaching.md",
             "outgoing_links": [
-                "/curious",
                 "/decisive",
-                "/manager-book",
                 "/pride",
                 "/prompts",
-                "/siy"
+                "http://localhost:4567/curious",
+                "http://localhost:4567/manager-book",
+                "http://localhost:4567/siy"
             ],
             "redirect_url": "",
             "title": "Coaching - How to help others find insight",
@@ -1482,7 +1470,7 @@
         },
         "/content-audience": {
             "description": "When I started creating content — okay, let’s be honest, when I started uploading random videos to YouTube and TikTok — I didn’t have a plan. I’d record something, maybe clean it up in post, and toss it online. No real story, no strategy, and usually… no good. Looking back, I realize I never stopped to ask the two questions that actually matter: Who is this for? And why am I doing it? This blog is me trying to answer those questions — and maybe help you ask them too.\n\n",
-            "doc_size": 26000,
+            "doc_size": 25000,
             "file_path": "_site/content-audience.html",
             "incoming_links": [
                 "/content-creation",
@@ -1523,7 +1511,6 @@
             "file_path": "_site/covid.html",
             "incoming_links": [
                 "/addiction",
-                "/facebook",
                 "/operating-manual"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -1540,32 +1527,18 @@
             "doc_size": 19000,
             "file_path": "_site/curious.html",
             "incoming_links": [
-                "/90days",
-                "/affirmations",
-                "/being-a-great-manager",
-                "/class-act",
-                "/coaching",
                 "/emotions",
-                "/essentialism",
-                "/first-understand",
-                "/getting-to-yes-with-yourself",
-                "/happy",
-                "/negotiate",
-                "/operating-manual",
-                "/psychic-weight",
-                "/regrets",
-                "/shame",
-                "/voices"
+                "/first-understand"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/grandmother.md",
             "outgoing_links": [
-                "/first-understand",
                 "/mental-pain",
-                "/negotiate",
                 "/shame",
                 "/siy",
-                "/win-win"
+                "http://localhost:4567/first-understand",
+                "http://localhost:4567/negotiate",
+                "http://localhost:4567/win-win"
             ],
             "redirect_url": "",
             "title": "Isn't that curious",
@@ -1617,7 +1590,7 @@
             "last_modified": "2025-08-24T09:03:19-07:00",
             "markdown_path": "_d/2016-2-15-Seth-Godin-Notes.md",
             "outgoing_links": [
-                "/dip"
+                "http://localhost:4567/dip"
             ],
             "redirect_url": "",
             "title": "Seth Godin- Ideas",
@@ -1728,26 +1701,13 @@
             "doc_size": 21000,
             "file_path": "_site/d/habits.html",
             "incoming_links": [
-                "/activation",
-                "/d/resistance",
                 "/energy-abundance",
-                "/hobby",
-                "/idle",
-                "/life-as-business",
-                "/manager-book",
-                "/mind-at-work",
-                "/operating-manual",
-                "/physical-health",
-                "/productive",
-                "/psychic-weight",
-                "/sharpen-the-saw",
-                "/slow",
-                "/switch"
+                "/life-as-business"
             ],
             "last_modified": "2025-08-13T07:43:13-07:00",
             "markdown_path": "_d/habits.md",
             "outgoing_links": [
-                "/be-proactive"
+                "http://localhost:4567/be-proactive"
             ],
             "redirect_url": "",
             "title": "Atomic habits - How to add and remove habits",
@@ -1770,33 +1730,19 @@
             "doc_size": 21000,
             "file_path": "_site/d/resistance.html",
             "incoming_links": [
-                "/activation",
-                "/books-that-defined-me",
-                "/enemy",
-                "/energy",
                 "/energy-abundance",
-                "/fail",
-                "/frog",
-                "/gap-year",
-                "/gap-year-igor",
-                "/mental-pain",
-                "/parkinson",
-                "/productive",
-                "/psychic-shadows",
-                "/psychic-weight",
-                "/slow",
-                "/timeoff"
+                "/gap-year-igor"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/resistance.md",
             "outgoing_links": [
                 "/addiction",
-                "/d/habits",
-                "/end-in-mind",
                 "/frog",
                 "/gtd",
                 "/magic",
-                "/mental-pain"
+                "/mental-pain",
+                "http://localhost:4567/d/habits",
+                "http://localhost:4567/end-in-mind"
             ],
             "redirect_url": "",
             "title": "Resistance: Why you can't make yourself take an ice cold shower",
@@ -1828,7 +1774,7 @@
         },
         "/day-in-the-life": {
             "description": "A running journal of days that actually worked - the ones where health habits stuck, family time hit different, or I remembered what it feels like to be fully alive. Not every day needs to be Instagram-worthy, but some days deserve a bookmark. This is that bookmark collection.\n\n",
-            "doc_size": 19000,
+            "doc_size": 18000,
             "file_path": "_site/day-in-the-life.html",
             "incoming_links": [],
             "last_modified": "2025-10-04T18:43:51-07:00",
@@ -1849,7 +1795,6 @@
                 "/chasing-daylight",
                 "/covid",
                 "/elder",
-                "/gap-year-igor",
                 "/last-year",
                 "/mortality-software",
                 "/psychic-weight"
@@ -1865,7 +1810,7 @@
         },
         "/debug": {
             "description": "Igor's Blog",
-            "doc_size": 24000,
+            "doc_size": 23000,
             "file_path": "_site/debug.html",
             "incoming_links": [],
             "last_modified": "2025-03-16T16:15:36+00:00",
@@ -1880,13 +1825,10 @@
             "doc_size": 45000,
             "file_path": "_site/decisive.html",
             "incoming_links": [
-                "/being-a-great-manager",
                 "/coaching",
                 "/gap-year",
                 "/job-hunt-stress",
-                "/manager-book",
                 "/pride",
-                "/random-idea",
                 "/work-satisfaction"
             ],
             "last_modified": "2025-06-20T08:56:14-07:00",
@@ -1918,7 +1860,7 @@
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/delegate.md",
             "outgoing_links": [
-                "/first-things-first"
+                "http://localhost:4567/first-things-first"
             ],
             "redirect_url": "",
             "title": "Stewardship Delegation 101",
@@ -1939,20 +1881,20 @@
             "outgoing_links": [
                 "/7-habits",
                 "/anxiety",
-                "/caring",
                 "/eulogy",
                 "/getting-to-yes-with-yourself",
                 "/gtd",
-                "/idle",
-                "/insecure",
                 "/insomnia",
                 "/physical-health",
                 "/psychic-shadows",
                 "/psychic-weight",
                 "/shame",
                 "/siy",
-                "/sustainable-work",
-                "/voices"
+                "/voices",
+                "http://localhost:4567/caring",
+                "http://localhost:4567/idle",
+                "http://localhost:4567/insecure",
+                "http://localhost:4567/sustainable-work"
             ],
             "redirect_url": "",
             "title": "Depression is the opposite of vitality",
@@ -1963,7 +1905,6 @@
             "doc_size": 24000,
             "file_path": "_site/design.html",
             "incoming_links": [
-                "/amazon",
                 "/d/2017-11-04-clean-architecture",
                 "/system-design",
                 "/testing"
@@ -1994,8 +1935,8 @@
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/diet.md",
             "outgoing_links": [
-                "/physical-health",
-                "/terzepatide"
+                "/terzepatide",
+                "http://localhost:4567/physical-health"
             ],
             "redirect_url": "",
             "title": "Diet",
@@ -2006,12 +1947,10 @@
             "doc_size": 32000,
             "file_path": "_site/dip.html",
             "incoming_links": [
-                "/d/2016-2-15-Seth-Godin-Notes",
                 "/end-in-mind",
                 "/gtd",
                 "/manager-book",
-                "/parkinson",
-                "/work-satisfaction"
+                "/parkinson"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/2017-11-12-thedip.md",
@@ -2049,16 +1988,15 @@
             "doc_size": 27000,
             "file_path": "_site/elder.html",
             "incoming_links": [
-                "/40yo",
-                "/addiction"
+                "/40yo"
             ],
             "last_modified": "2025-10-03T13:06:19-07:00",
             "markdown_path": "_d/elder.md",
             "outgoing_links": [
                 "/40yo",
                 "/death",
-                "/end-in-mind",
-                "/essentialism"
+                "http://localhost:4567/end-in-mind",
+                "http://localhost:4567/essentialism"
             ],
             "redirect_url": "",
             "title": "Wrinkles and Wisdom: A Guide to Aging Like Fine Wine (Not Milk)",
@@ -2084,9 +2022,9 @@
             "markdown_path": "_d/emotional-health-hold.md",
             "outgoing_links": [
                 "/sharpen-the-saw",
-                "/siy",
                 "/sublime",
-                "/voices"
+                "/voices",
+                "http://localhost:4567/siy"
             ],
             "redirect_url": "",
             "title": "Emotional Health Practices",
@@ -2131,11 +2069,11 @@
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/enabling-environment.md",
             "outgoing_links": [
-                "/podcast",
                 "/switch",
                 "/vim",
                 "/vim-for-writing",
-                "/writing"
+                "/writing",
+                "http://localhost:4567/podcast"
             ],
             "redirect_url": "",
             "title": "Enabling Environment",
@@ -2148,24 +2086,18 @@
             "incoming_links": [
                 "/4dx",
                 "/7-habits",
-                "/affirmations",
                 "/content-audience",
-                "/d/resistance",
-                "/elder",
-                "/gap-year-igor",
-                "/manager-book",
-                "/productive",
-                "/siy"
+                "/gap-year-igor"
             ],
             "last_modified": "2025-05-12T09:24:30-07:00",
             "markdown_path": "_d/7h-c2.md",
             "outgoing_links": [
-                "/7-habits",
                 "/dip",
                 "/essentialism",
                 "/eulogy",
                 "/joy",
-                "/touching"
+                "/touching",
+                "http://localhost:4567/7-habits"
             ],
             "redirect_url": "",
             "title": "Begin with the end in mind",
@@ -2176,14 +2108,13 @@
             "doc_size": 16000,
             "file_path": "_site/enemy.html",
             "incoming_links": [
-                "/chapters",
                 "/retire"
             ],
             "last_modified": "2023-12-30T11:50:51-08:00",
             "markdown_path": "_d/don-juan2.md",
             "outgoing_links": [
-                "/d/resistance",
-                "/pride"
+                "/pride",
+                "http://localhost:4567/d/resistance"
             ],
             "redirect_url": "",
             "title": "Four enemies",
@@ -2205,7 +2136,6 @@
             "markdown_path": "_d/energy.md",
             "outgoing_links": [
                 "/activation",
-                "/d/resistance",
                 "/joy",
                 "/mania",
                 "/mood",
@@ -2213,7 +2143,8 @@
                 "/productive",
                 "/sleep",
                 "/slow",
-                "/timeoff"
+                "http://localhost:4567/d/resistance",
+                "http://localhost:4567/timeoff"
             ],
             "redirect_url": "",
             "title": "Control your Energy",
@@ -2236,7 +2167,9 @@
                 "/energy",
                 "/operating-manual",
                 "/strategy",
-                "/timeoff"
+                "/timeoff",
+                "http://localhost:4567/d/habits",
+                "http://localhost:4567/d/resistance"
             ],
             "redirect_url": "",
             "title": "Igor - how do you have the time to complete all the stuff on your blog?",
@@ -2248,28 +2181,21 @@
             "file_path": "_site/essentialism.html",
             "incoming_links": [
                 "/4dx",
-                "/affirmations",
-                "/balance",
                 "/be-proactive",
                 "/books-that-defined-me",
-                "/elder",
                 "/end-in-mind",
-                "/first-things-first",
-                "/frog",
                 "/gtd",
                 "/overload",
                 "/parkinson",
-                "/partner-trouble",
-                "/timeoff",
-                "/timeoff-2022-07"
+                "/partner-trouble"
             ],
             "last_modified": "2025-08-24T09:03:19-07:00",
             "markdown_path": "_posts/2015-11-28-essentialism.md",
             "outgoing_links": [
-                "/curious",
                 "/emotional-health",
                 "/insomnia",
-                "/physical-health"
+                "/physical-health",
+                "http://localhost:4567/curious"
             ],
             "redirect_url": "",
             "title": "Essentialism",
@@ -2303,10 +2229,8 @@
             "markdown_path": "_posts/2020-04-01-Igor-Eulogy.md",
             "outgoing_links": [
                 "/7-habits",
-                "/Human-Meetings",
                 "/The-Genesis-Node",
                 "/balloon",
-                "/being-a-great-manager",
                 "/bike",
                 "/cache",
                 "/ig66/687",
@@ -2321,7 +2245,9 @@
                 "/terzepatide",
                 "/tesla",
                 "/tori",
-                "/toysfortots"
+                "/toysfortots",
+                "http://localhost:4567/being-a-great-manager",
+                "http://localhost:4567/human-meetings"
             ],
             "redirect_url": "",
             "title": "Igor's Eulogy - How I want to live",
@@ -2337,7 +2263,7 @@
             "last_modified": "2025-09-08T09:26:52-07:00",
             "markdown_path": "_d/facebook.md",
             "outgoing_links": [
-                "/covid"
+                "http://localhost:4567/covid"
             ],
             "redirect_url": "",
             "title": "My thoughts on Facebook",
@@ -2354,7 +2280,7 @@
                 "/anxiety",
                 "/anxiety-management",
                 "/coe",
-                "/d/resistance"
+                "http://localhost:4567/d/resistance"
             ],
             "redirect_url": "",
             "title": "Failure is not an option, it is a necessity",
@@ -2362,26 +2288,24 @@
         },
         "/first-things-first": {
             "description": "The key to effective management, is allocating energy through the lens of importance rather than urgency. E.g, ask yourself what one thing could you do that if you did on a regular basis, would make a tremendous positive difference in your life? Lemme guess, it’s important, but not urgent so you’re not doing it. These are my insights based on the 7 habits Chapter 3.\n\n",
-            "doc_size": 26000,
+            "doc_size": 25000,
             "file_path": "_site/first-things-first.html",
             "incoming_links": [
                 "/4dx",
                 "/7-habits",
                 "/90days",
-                "/affirmations",
-                "/delegate",
                 "/frog"
             ],
             "last_modified": "2025-09-30T06:59:49-07:00",
             "markdown_path": "_d/7h-c3.md",
             "outgoing_links": [
-                "/7-habits",
                 "/delegate",
-                "/essentialism",
                 "/frog",
                 "/gtd",
                 "/switch",
-                "/upstream"
+                "/upstream",
+                "http://localhost:4567/7-habits",
+                "http://localhost:4567/essentialism"
             ],
             "redirect_url": "",
             "title": "First things first",
@@ -2393,23 +2317,17 @@
             "file_path": "_site/first-understand.html",
             "incoming_links": [
                 "/7-habits",
-                "/advice",
-                "/affirmations",
-                "/class-act",
-                "/curious",
-                "/negotiate",
-                "/sell",
-                "/work-satisfaction"
+                "/negotiate"
             ],
             "last_modified": "2021-10-30T10:02:27-07:00",
             "markdown_path": "_d/7h-c5.md",
             "outgoing_links": [
-                "/7-habits",
                 "/coaching",
                 "/curious",
                 "/ig66/587",
                 "/prompts",
-                "/siy"
+                "/siy",
+                "http://localhost:4567/7-habits"
             ],
             "redirect_url": "",
             "title": "Seek first to understand, then to be understood",
@@ -2437,12 +2355,12 @@
             "markdown_path": "_d/frog.md",
             "outgoing_links": [
                 "/Immutable-Laws-Of-Hard",
-                "/be-proactive",
-                "/d/resistance",
-                "/essentialism",
                 "/eulogy",
                 "/first-things-first",
-                "/gtd"
+                "/gtd",
+                "http://localhost:4567/be-proactive",
+                "http://localhost:4567/d/resistance",
+                "http://localhost:4567/essentialism"
             ],
             "redirect_url": "",
             "title": "Eat that frog",
@@ -2464,7 +2382,6 @@
             "markdown_path": "_d/gap-year.md",
             "outgoing_links": [
                 "/chapters",
-                "/d/resistance",
                 "/decisive",
                 "/gap-year-igor",
                 "/money",
@@ -2472,8 +2389,9 @@
                 "/physical-health",
                 "/retire",
                 "/timeoff",
-                "/y24",
-                "/y25"
+                "http://localhost:4567/d/resistance",
+                "http://localhost:4567/y24",
+                "http://localhost:4567/y25"
             ],
             "redirect_url": "",
             "title": "The Gap Year Paradox: Why Taking a Year Off at 50 beats retiring at 65",
@@ -2486,7 +2404,6 @@
             "incoming_links": [
                 "/42",
                 "/activation",
-                "/bucket-list",
                 "/day-in-the-life",
                 "/gap-year",
                 "/stock-concentration",
@@ -2496,13 +2413,11 @@
             "last_modified": "2025-10-11T07:52:39-07:00",
             "markdown_path": "_d/igor-gap-year.md",
             "outgoing_links": [
-                "/7-habits",
                 "/activation",
                 "/affirmations",
                 "/chapters",
                 "/chasing-daylight",
                 "/d/resistance",
-                "/death",
                 "/emotional-health",
                 "/end-in-mind",
                 "/gap-year",
@@ -2511,16 +2426,18 @@
                 "/parkinson",
                 "/physical-health",
                 "/produce-consume",
-                "/regrets",
                 "/retire",
                 "/siy",
                 "/sleep",
                 "/stock-concentration",
                 "/structure",
-                "/sustainable-work",
                 "/timeoff",
                 "/tori",
-                "/voices"
+                "/voices",
+                "http://localhost:4567/7-habits",
+                "http://localhost:4567/death",
+                "http://localhost:4567/regrets",
+                "http://localhost:4567/sustainable-work"
             ],
             "redirect_url": "",
             "title": "Will Igor Take a Gap Year? Wrestling with Dragons and Dreams",
@@ -2530,9 +2447,7 @@
             "description": "Generative AI (GenAI) is taking the world by storm, and it takes a new mindset to make use of it as a programmer. A good mental model of GenAI is interns!\n\n",
             "doc_size": 38000,
             "file_path": "_site/genai-talk.html",
-            "incoming_links": [
-                "/ai-journal"
-            ],
+            "incoming_links": [],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/genai-talk.md",
             "outgoing_links": [
@@ -2553,9 +2468,9 @@
             "last_modified": "2025-08-24T09:03:19-07:00",
             "markdown_path": "_posts/2015-12-23-getting-to-yes-with-yourself.md",
             "outgoing_links": [
-                "/curious",
-                "/negotiate",
-                "/welcome-to-holland"
+                "/welcome-to-holland",
+                "http://localhost:4567/curious",
+                "http://localhost:4567/negotiate"
             ],
             "redirect_url": "",
             "title": "Getting to yes with yourself",
@@ -2563,10 +2478,9 @@
         },
         "/goals": {
             "description": "Goals are critical, there are multiple goal systems and they have consequences. They are mechanisms to deliver without micro management.\n\n",
-            "doc_size": 21000,
+            "doc_size": 20000,
             "file_path": "_site/goals.html",
             "incoming_links": [
-                "/4dx",
                 "/parkinson"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -2593,7 +2507,7 @@
         },
         "/gpt": {
             "description": "Just like the search bar in google fills in what you’re typing when you say “Where can I ge .. “ GPT3 complete strings as well. Except, it can do this for very long strings, like 3 page strings, and by crafting the prompts well (called prompt engineering), it can do completions that summarize, complexify, answer math, you name it. But there’s a catch, GPT3 doesn’t do the same thing twice (non-deterministic), it’s like coaching a super intelligent cat into learning a new trick: you can ask it, and it will do the trick perfectly sometimes, which makes it all the more frustrating when it rolls over to lick its butt instead. You know the problem is not that it can’t but that it won’t(From Gwern).\n\n",
-            "doc_size": 26000,
+            "doc_size": 25000,
             "file_path": "_site/gpt.html",
             "incoming_links": [
                 "/ai-art",
@@ -2637,7 +2551,7 @@
         },
         "/grammerly": {
             "description": "\n\n",
-            "doc_size": 13000,
+            "doc_size": 12000,
             "file_path": "_site/grammerly.html",
             "incoming_links": [],
             "last_modified": "2025-08-24T09:03:19-07:00",
@@ -2708,9 +2622,10 @@
                 "/dip",
                 "/essentialism",
                 "/frog",
-                "/idle",
                 "/outsourcing",
-                "/psychic-weight"
+                "/psychic-weight",
+                "http://localhost:4567/frog",
+                "http://localhost:4567/idle"
             ],
             "redirect_url": "",
             "title": "Getting things done",
@@ -2745,14 +2660,14 @@
             "outgoing_links": [
                 "/addiction",
                 "/anxiety",
-                "/curious",
                 "/eulogy",
-                "/idle",
                 "/joy",
                 "/mental-pain",
                 "/moments",
                 "/mood",
-                "/negotiate"
+                "http://localhost:4567/curious",
+                "http://localhost:4567/idle",
+                "http://localhost:4567/negotiate"
             ],
             "redirect_url": "",
             "title": "Happy",
@@ -2781,11 +2696,11 @@
             "last_modified": "2022-05-09T07:53:36-07:00",
             "markdown_path": "_d/hobby.md",
             "outgoing_links": [
-                "/d/habits",
                 "/eulogy",
                 "/happy",
                 "/joy",
-                "/magic"
+                "/magic",
+                "http://localhost:4567/d/habits"
             ],
             "redirect_url": "",
             "title": "Why a Engineering Manager masquerades as a magician on the weekends",
@@ -2797,7 +2712,7 @@
             "file_path": "_site/humans-are-underrated.html",
             "incoming_links": [
                 "/books-that-defined-me",
-                "http://localhost:4567/chop"
+                "/chop"
             ],
             "last_modified": "2025-03-01T18:25:15-08:00",
             "markdown_path": "_posts/2015-12-12-humans-are-underrated.md",
@@ -2836,25 +2751,19 @@
             "description": "Waiting in line at the grocery store, sitting in an Uber, pooping - in these invisible times, we execute our idle loop. We spend a lot of time in our idle loop, and it can either increase our energy or drain it. By being aware of and then modifying how we spend our idle loop we can improve our lives one poop at a time.\n\n",
             "doc_size": 18000,
             "file_path": "_site/idle.html",
-            "incoming_links": [
-                "/anxiety",
-                "/depression",
-                "/gtd",
-                "/happy",
-                "/psychic-weight"
-            ],
+            "incoming_links": [],
             "last_modified": "2025-09-28T10:02:40-07:00",
             "markdown_path": "_d/idle-loop.md",
             "outgoing_links": [
                 "/addiction",
-                "/be-proactive",
-                "/d/habits",
                 "/frog",
                 "/magic",
                 "/mental-pain",
                 "/mind-monsters",
                 "/psychic-shadows",
-                "/siy"
+                "/siy",
+                "http://localhost:4567/be-proactive",
+                "http://localhost:4567/d/habits"
             ],
             "redirect_url": "",
             "title": "Your idle loop",
@@ -2866,8 +2775,6 @@
             "file_path": "_site/insecure.html",
             "incoming_links": [
                 "/90days",
-                "/affirmations",
-                "/depression",
                 "/work-satisfaction"
             ],
             "last_modified": "2024-09-14T14:16:00-07:00",
@@ -2953,23 +2860,20 @@
             "doc_size": 24000,
             "file_path": "_site/job.html",
             "incoming_links": [
-                "/bmy",
                 "/eulogy",
-                "/job-hunt-stress",
-                "/manager-book",
-                "/manager-book-appendix"
+                "/manager-book"
             ],
             "last_modified": "2025-09-07T05:53:44-07:00",
             "markdown_path": "_posts/2018-06-7-my-perfect-job.md",
             "outgoing_links": [
-                "/Human-Meetings",
                 "/being-a-great-manager",
                 "/cache",
                 "/coaching",
                 "/human-meetings",
                 "/manager-book",
                 "/moments-at-work",
-                "/software-leadership-roles"
+                "/software-leadership-roles",
+                "http://localhost:4567/human-meetings"
             ],
             "redirect_url": "",
             "title": "My Dream Job",
@@ -2988,12 +2892,13 @@
             "last_modified": "2025-08-24T09:03:19-07:00",
             "markdown_path": "_posts/2017-02-17-job-hunt-stress.md",
             "outgoing_links": [
-                "/bmy",
                 "/comp",
                 "/decisive",
                 "/interviewsarehard",
-                "/job",
-                "/system-design"
+                "/system-design",
+                "http://localhost:4567/bmy",
+                "http://localhost:4567/decisive",
+                "http://localhost:4567/job"
             ],
             "redirect_url": "",
             "title": "Reducing job hunt stress",
@@ -3020,14 +2925,14 @@
             "markdown_path": "_d/joy.md",
             "outgoing_links": [
                 "/balloon",
-                "/build-bubble-bike",
                 "/eulogy",
                 "/happy",
                 "/ig66/621",
                 "/like-switch",
                 "/magic",
                 "/smilebox",
-                "/touching"
+                "http://localhost:4567/build-bubble-bike",
+                "http://localhost:4567/touching"
             ],
             "redirect_url": "",
             "title": "Smiles, Joy and Wonder",
@@ -3055,7 +2960,6 @@
                 "/eulogy",
                 "/gap-year-igor",
                 "/physical-health",
-                "/timeoff",
                 "/untangled",
                 "/y24"
             ],
@@ -3103,7 +3007,7 @@
         },
         "/learn-code": {
             "description": "Coding is way easier then people think. Here’s some pointers.\n\n",
-            "doc_size": 14000,
+            "doc_size": 13000,
             "file_path": "_site/learn-code.html",
             "incoming_links": [],
             "last_modified": "2025-05-11T06:34:37-07:00",
@@ -3161,7 +3065,7 @@
             "last_modified": "2025-07-13T06:56:50-07:00",
             "markdown_path": "_d/lonely.md",
             "outgoing_links": [
-                "/chapters"
+                "http://localhost:4567/chapters"
             ],
             "redirect_url": "",
             "title": "Loneliness",
@@ -3195,10 +3099,8 @@
             "doc_size": 178000,
             "file_path": "_site/manager-book.html",
             "incoming_links": [
-                "/amazon",
                 "/being-a-great-manager",
                 "/bucket-list",
-                "/coaching",
                 "/content-audience",
                 "/job",
                 "/manager-book-appendix",
@@ -3212,21 +3114,15 @@
             "last_modified": "2025-09-30T07:24:35-07:00",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
             "outgoing_links": [
-                "/22",
                 "/90days",
                 "/being-a-great-manager",
-                "/books-that-defined-me",
                 "/coaching",
                 "/coe",
                 "/comp",
-                "/d/habits",
-                "/decisive",
                 "/dip",
-                "/end-in-mind",
                 "/job",
                 "/job-hunt-stress",
                 "/manager-book-appendix",
-                "/ml",
                 "/moments-at-work",
                 "/overload",
                 "/pride",
@@ -3239,8 +3135,16 @@
                 "/td/cloud-first-applications",
                 "/testing",
                 "/what-makes-a-leader",
-                "/work-satisfaction",
-                "/writing"
+                "http://localhost:4567/22",
+                "http://localhost:4567/90days",
+                "http://localhost:4567/books-that-defined-me",
+                "http://localhost:4567/coaching",
+                "http://localhost:4567/d/habits",
+                "http://localhost:4567/decisive",
+                "http://localhost:4567/end-in-mind",
+                "http://localhost:4567/ml",
+                "http://localhost:4567/work-satisfaction",
+                "http://localhost:4567/writing"
             ],
             "redirect_url": "",
             "title": "How to EM: Be the manager everyone wants",
@@ -3258,12 +3162,12 @@
             "markdown_path": "_d/manager-book-appendix.md",
             "outgoing_links": [
                 "/amazon",
-                "/books-that-defined-me",
                 "/facebook",
-                "/job",
                 "/manager-book",
                 "/parkinson",
-                "/writing"
+                "/writing",
+                "http://localhost:4567/books-that-defined-me",
+                "http://localhost:4567/job"
             ],
             "redirect_url": "",
             "title": "Manager Book Appendix",
@@ -3326,12 +3230,12 @@
             "markdown_path": "_d/mental-pain.md",
             "outgoing_links": [
                 "/addiction",
-                "/d/resistance",
                 "/depression",
                 "/frog",
                 "/lonely",
                 "/physical-pain",
-                "/pride"
+                "/pride",
+                "http://localhost:4567/d/resistance"
             ],
             "redirect_url": "",
             "title": "The thoughts that pain us",
@@ -3339,7 +3243,7 @@
         },
         "/mermaid": {
             "description": "Lets try d2\n\n",
-            "doc_size": 15000,
+            "doc_size": 14000,
             "file_path": "_site/mermaid.html",
             "incoming_links": [],
             "last_modified": "2023-12-17T18:49:14+00:00",
@@ -3363,7 +3267,7 @@
         },
         "/mind-at-work": {
             "description": "I have a problem, an addiction, an addiction so detrimental to quality of life, it should be described as a disease. This disease is not being present. There are many symptoms of the disease, but today I’m going to talk about my most frequent symptoms, my body at home, but my mind at work.\n\n",
-            "doc_size": 20000,
+            "doc_size": 19000,
             "file_path": "_site/mind-at-work.html",
             "incoming_links": [
                 "/addiction",
@@ -3375,11 +3279,11 @@
             "markdown_path": "_d/2016-2-10-body-at-home-mind-at-work.md",
             "outgoing_links": [
                 "/addiction",
-                "/d/habits",
                 "/emotional-health",
                 "/psychic-weight",
-                "/timeoff",
-                "/work-satisfaction"
+                "http://localhost:4567/d/habits",
+                "http://localhost:4567/timeoff",
+                "http://localhost:4567/work-satisfaction"
             ],
             "redirect_url": "",
             "title": "Body at home, mind at work",
@@ -3393,8 +3297,7 @@
                 "/being-a-great-manager",
                 "/idle",
                 "/psychic-shadows",
-                "/psychic-weight",
-                "/siy"
+                "/psychic-weight"
             ],
             "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_d/2015-11-11-mind-monsters.md",
@@ -3413,9 +3316,7 @@
             "doc_size": 52000,
             "file_path": "_site/ml.html",
             "incoming_links": [
-                "/ai",
-                "/manager-book",
-                "/td/stats"
+                "/ai"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_td/machine-learning.md",
@@ -3424,7 +3325,8 @@
                 "/gpt",
                 "/nlp",
                 "/pandas",
-                "/recommend"
+                "/recommend",
+                "http://localhost:4567/recommend"
             ],
             "redirect_url": "",
             "title": "Machine learning for regular programmers.",
@@ -3482,8 +3384,8 @@
             "last_modified": "2020-06-17T07:39:28-07:00",
             "markdown_path": "_posts/2018-04-09-moments-at-work.md",
             "outgoing_links": [
-                "/coaching",
-                "/moments"
+                "/moments",
+                "http://localhost:4567/coaching"
             ],
             "redirect_url": "",
             "title": "Moments at work",
@@ -3584,22 +3486,14 @@
             "description": "Negotiation is the heart of collaboration. It is what makes conflict potentially meaningful and productive for all parties. Getting To Yes is the seminal book on negotiation. It’s the deep dive into win win or no deal and seek first to understand. The formal, be hard on problems and soft on people, then focus on the desired outcomes not the positions, next get more options on the table, and make sure you measure by objective criteria - lastly know your BATNA.Several years later a new book came out by a hostage negotiator. Instead of being analytic focus, it’s all about influencing the elephant.\n\n",
             "doc_size": 22000,
             "file_path": "_site/negotiate.html",
-            "incoming_links": [
-                "/curious",
-                "/getting-to-yes-with-yourself",
-                "/happy",
-                "/productive",
-                "/sell",
-                "/synergize",
-                "/work-satisfaction"
-            ],
+            "incoming_links": [],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/gty.md",
             "outgoing_links": [
-                "/curious",
                 "/first-understand",
                 "/switch",
-                "/win-win"
+                "/win-win",
+                "http://localhost:4567/curious"
             ],
             "redirect_url": "",
             "title": "Getting to yes",
@@ -3686,8 +3580,6 @@
                 "/bike",
                 "/blueprint",
                 "/covid",
-                "/curious",
-                "/d/habits",
                 "/diet",
                 "/emotional-health",
                 "/eulogy",
@@ -3701,14 +3593,16 @@
                 "/physical-health",
                 "/process-journal",
                 "/siy",
-                "/sleight-of-mouth",
                 "/strengths",
                 "/tesla",
                 "/timeoff-2022-07",
-                "/todo_enjoy",
                 "/tony",
                 "/voices",
-                "/writing"
+                "/writing",
+                "http://localhost:4567/curious",
+                "http://localhost:4567/d/habits",
+                "http://localhost:4567/sleight-of-mouth",
+                "http://localhost:4567/todo_enjoy"
             ],
             "redirect_url": "",
             "title": "Igor the operating manual",
@@ -3794,14 +3688,14 @@
             "markdown_path": "_d/resource-paradox.md",
             "outgoing_links": [
                 "/amazon",
-                "/d/resistance",
                 "/dip",
                 "/essentialism",
                 "/frog",
                 "/goals",
                 "/gtd",
                 "/money",
-                "/timeoff"
+                "http://localhost:4567/d/resistance",
+                "http://localhost:4567/timeoff"
             ],
             "redirect_url": "",
             "title": "Parkinson's Law: The Paradox of Plenty",
@@ -3833,7 +3727,6 @@
             "incoming_links": [
                 "/42",
                 "/depression",
-                "/diet",
                 "/essentialism",
                 "/eulogy",
                 "/gap-year",
@@ -3847,7 +3740,6 @@
             "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_posts/2017-10-07-physical-health.md",
             "outgoing_links": [
-                "/d/habits",
                 "/diet",
                 "/insomnia",
                 "/irl",
@@ -3856,7 +3748,8 @@
                 "/sharpen-the-saw",
                 "/sleep",
                 "/tech-health-toys",
-                "/terzepatide"
+                "/terzepatide",
+                "http://localhost:4567/d/habits"
             ],
             "redirect_url": "",
             "title": "Physical Health Lets you look good in your jeans, and wrestle bears",
@@ -3884,9 +3777,7 @@
             "description": "To my amazement, I listen to podcasts. I think they’re pretty interesting, here are my notes on them.\n\n",
             "doc_size": 16000,
             "file_path": "_site/podcast.html",
-            "incoming_links": [
-                "/enable"
-            ],
+            "incoming_links": [],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/podcast.md",
             "outgoing_links": [],
@@ -3922,11 +3813,11 @@
             "doc_size": 19000,
             "file_path": "_site/process-journal.html",
             "incoming_links": [
+                "/chop",
                 "/eulogy",
                 "/operating-manual",
                 "/y24",
-                "/y25",
-                "http://localhost:4567/chop"
+                "/y25"
             ],
             "last_modified": "2025-03-02T19:25:33-08:00",
             "markdown_path": "_d/process-journal.md",
@@ -3953,7 +3844,8 @@
             "last_modified": "2025-09-28T14:14:56-07:00",
             "markdown_path": "_d/produce-consume.md",
             "outgoing_links": [
-                "/activation"
+                "/activation",
+                "http://localhost:4567/activation"
             ],
             "redirect_url": "",
             "title": "The Producer's Paradox: Why Creating Beats Consuming Every Time",
@@ -3989,13 +3881,13 @@
                 "/addiction",
                 "/anxiety",
                 "/balance",
-                "/d/habits",
-                "/d/resistance",
-                "/end-in-mind",
                 "/energy",
                 "/frog",
-                "/negotiate",
-                "/switch"
+                "/switch",
+                "http://localhost:4567/d/habits",
+                "http://localhost:4567/d/resistance",
+                "http://localhost:4567/end-in-mind",
+                "http://localhost:4567/negotiate"
             ],
             "redirect_url": "",
             "title": "Productive",
@@ -4036,11 +3928,11 @@
             "outgoing_links": [
                 "/addiction",
                 "/anxiety-management",
-                "/d/resistance",
                 "/mental-pain",
                 "/mind-monsters",
                 "/psychic-weight",
-                "/todo_enjoy"
+                "/todo_enjoy",
+                "http://localhost:4567/d/resistance"
             ],
             "redirect_url": "",
             "title": "Psychic Shadows: Crafting Spells to Banish Ruminating Thoughts",
@@ -4062,19 +3954,19 @@
             "outgoing_links": [
                 "/7-habits",
                 "/addiction",
-                "/curious",
-                "/d/habits",
-                "/d/resistance",
                 "/death",
                 "/frog",
                 "/gtd",
-                "/idle",
                 "/mental-pain",
                 "/mind-monsters",
                 "/pride",
                 "/psychic-shadows",
                 "/shame",
-                "/siy"
+                "/siy",
+                "http://localhost:4567/curious",
+                "http://localhost:4567/d/habits",
+                "http://localhost:4567/d/resistance",
+                "http://localhost:4567/idle"
             ],
             "redirect_url": "",
             "title": "Psychic Weight",
@@ -4112,10 +4004,10 @@
             "last_modified": "2025-08-22T10:48:49-07:00",
             "markdown_path": "_d/2010-2-15-2016-Misc-Uncategorized.md",
             "outgoing_links": [
-                "/decisive",
                 "/moments",
                 "/moments-at-work",
-                "/switch"
+                "/switch",
+                "http://localhost:4567/decisive"
             ],
             "redirect_url": "",
             "title": "Random Uncategorized Notes",
@@ -4157,8 +4049,7 @@
             "file_path": "_site/recommend.html",
             "incoming_links": [
                 "/ai",
-                "/ml",
-                "/timeoff-2022-07"
+                "/ml"
             ],
             "last_modified": "2025-08-24T09:03:19-07:00",
             "markdown_path": "_td/recommender.md",
@@ -4185,22 +4076,35 @@
             "file_path": "_site/regrets.html",
             "incoming_links": [
                 "/emotions",
-                "/gap-year-igor",
                 "/mood",
                 "/self-ego"
             ],
             "last_modified": "2025-10-06T19:36:46-07:00",
             "markdown_path": "_d/regrets.md",
             "outgoing_links": [
-                "/be-proactive",
-                "/curious",
                 "/mental-pain",
                 "/shame",
-                "/sustainable-work"
+                "http://localhost:4567/be-proactive",
+                "http://localhost:4567/curious",
+                "http://localhost:4567/sustainable-work"
             ],
             "redirect_url": "",
             "title": "Use Your Regrets As A Compass, Not A Cage",
             "url": "/regrets"
+        },
+        "/religion": {
+            "description": "I did my Bar Mitzvah at the Wailing Wall in Israel — the holiest place in Judaism. We flew there as a family, and I still remember stepping off the plane and feeling an intense warmth. I turned to my sister and whispered, “I can feel God.” She rolled her eyes and said, “That’s not God. That’s forty degrees Celsius.”\n\n",
+            "doc_size": 52000,
+            "file_path": "_site/religion.html",
+            "incoming_links": [],
+            "last_modified": "2025-10-16T09:54:11-04:00",
+            "markdown_path": "_d/religion.md",
+            "outgoing_links": [
+                "/affirmations"
+            ],
+            "redirect_url": "",
+            "title": "Religion: Losing belief while seeing value",
+            "url": "/religion"
         },
         "/remote-work": {
             "description": "In March 2020, the world shut down from Covid-19. In May 2020, I started a new job as a remote manager at FB. Here are my thoughts.\n\n",
@@ -4243,7 +4147,8 @@
                 "/physical-health",
                 "/static/idvorkin-linked-in-feedback-lastest.pdf",
                 "/sustainable-work",
-                "/work-satisfaction"
+                "http://localhost:4567/sustainable-work",
+                "http://localhost:4567/work-satisfaction"
             ],
             "redirect_url": "",
             "title": "Retirement: Stop Planning the Exit, Start Planning the Life",
@@ -4325,7 +4230,7 @@
                 "/life-as-business",
                 "/regrets",
                 "/siy",
-                "/timeoff"
+                "http://localhost:4567/timeoff"
             ],
             "redirect_url": "",
             "title": "The Self vs Ego: Jung's Map for Living Authentically",
@@ -4339,9 +4244,9 @@
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/2017-2-5-To-Sell-Is-Human.md",
             "outgoing_links": [
-                "/first-understand",
-                "/negotiate",
-                "/win-win"
+                "http://localhost:4567/first-understand",
+                "http://localhost:4567/negotiate",
+                "http://localhost:4567/win-win"
             ],
             "redirect_url": "",
             "title": "To Sell Is Human",
@@ -4364,8 +4269,8 @@
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/shame.md",
             "outgoing_links": [
-                "/curious",
-                "/mental-pain"
+                "/mental-pain",
+                "http://localhost:4567/curious"
             ],
             "redirect_url": "",
             "title": "Shame",
@@ -4373,7 +4278,7 @@
         },
         "/sharpen-the-saw": {
             "description": "A young man saw a woodcutter cutting down a tree and asked “What are you doing?” “Are you blind?” the woodcutter replied. “I’m cutting down this tree.” The young man continued. “You look exhausted! Take a break. Sharpen your saw.” The woodcutter explained he’d been sawing for hours and did not have time to take a break. The young man pushed back… “If you sharpen the saw, you would cut down the tree much faster.” The woodcutter said “I don’t have time to sharpen the saw. Don’t you see I’m too busy. These are my insights based on the 7 habits Chapter 7.\n\n",
-            "doc_size": 15000,
+            "doc_size": 14000,
             "file_path": "_site/sharpen-the-saw.html",
             "incoming_links": [
                 "/7-habits",
@@ -4383,12 +4288,12 @@
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/7h-c7.md",
             "outgoing_links": [
-                "/7-habits",
-                "/d/habits",
                 "/diet",
                 "/emotional-health",
                 "/physical-health",
-                "/siy"
+                "/siy",
+                "http://localhost:4567/7-habits",
+                "http://localhost:4567/d/habits"
             ],
             "redirect_url": "",
             "title": "Sharpen the saw",
@@ -4415,11 +4320,8 @@
             "incoming_links": [
                 "/anxiety-management",
                 "/be-proactive",
-                "/books-that-defined-me",
-                "/coaching",
                 "/curious",
                 "/depression",
-                "/emotional-health",
                 "/emotions",
                 "/eulogy",
                 "/first-understand",
@@ -4432,22 +4334,21 @@
                 "/self-ego",
                 "/sharpen-the-saw",
                 "/slow",
-                "/timeoff",
-                "/timeoff-2020-03"
+                "/timeoff"
             ],
             "last_modified": "2025-09-29T10:07:00-07:00",
             "markdown_path": "_d/siy.md",
             "outgoing_links": [
-                "/be-proactive",
                 "/emotional-health",
                 "/emotions",
-                "/end-in-mind",
                 "/happy",
                 "/ig66/685",
-                "/mind-monsters",
                 "/psychic-shadows",
                 "/sublime",
-                "/what-makes-a-leader"
+                "/what-makes-a-leader",
+                "http://localhost:4567/be-proactive",
+                "http://localhost:4567/end-in-mind",
+                "http://localhost:4567/mind-monsters"
             ],
             "redirect_url": "",
             "title": "Search inside yourself",
@@ -4490,8 +4391,6 @@
             "doc_size": 26000,
             "file_path": "_site/sleight-of-mouth.html",
             "incoming_links": [
-                "/7h-concepts",
-                "/operating-manual",
                 "/timeoff-2022-02",
                 "/words-we-dont-have"
             ],
@@ -4518,12 +4417,12 @@
                 "/activation",
                 "/anxiety",
                 "/balance",
-                "/d/habits",
-                "/d/resistance",
                 "/emotions",
                 "/energy",
                 "/produce-consume",
-                "/siy"
+                "/siy",
+                "http://localhost:4567/d/habits",
+                "http://localhost:4567/d/resistance"
             ],
             "redirect_url": "",
             "title": "Rest and Digest - Sometimes you'd rather go slow ",
@@ -4683,12 +4582,8 @@
             "file_path": "_site/sustainable-work.html",
             "incoming_links": [
                 "/42",
-                "/balance",
                 "/being-a-great-manager",
-                "/depression",
-                "/gap-year-igor",
                 "/overload",
-                "/regrets",
                 "/retire",
                 "/work-satisfaction"
             ],
@@ -4715,7 +4610,7 @@
             "markdown_path": "_d/switch.md",
             "outgoing_links": [
                 "/coe",
-                "/d/habits"
+                "http://localhost:4567/d/habits"
             ],
             "redirect_url": "",
             "title": "Switch",
@@ -4731,9 +4626,9 @@
             "last_modified": "2025-03-07T11:21:07-08:00",
             "markdown_path": "_d/7h-c6.md",
             "outgoing_links": [
-                "/7-habits",
-                "/negotiate",
-                "/win-win"
+                "/win-win",
+                "http://localhost:4567/7-habits",
+                "http://localhost:4567/negotiate"
             ],
             "redirect_url": "",
             "title": "Creating Synergy: Making 1+1 = 3!",
@@ -4784,7 +4679,7 @@
         },
         "/td/back_ref": {
             "description": "This blog is my collection of evergreen notes, a place to have my thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here’s my strategy to create them.\n\n",
-            "doc_size": 14000,
+            "doc_size": 13000,
             "file_path": "_site/td/back_ref.html",
             "incoming_links": [],
             "last_modified": "2022-04-16T15:22:43-07:00",
@@ -5003,7 +4898,7 @@
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_td/stats.md",
             "outgoing_links": [
-                "/ml"
+                "http://localhost:4567/ml"
             ],
             "redirect_url": "",
             "title": "Statistics",
@@ -5096,7 +4991,7 @@
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/tech-ritual.md",
             "outgoing_links": [
-                "/chop"
+                "http://localhost:4567/chop"
             ],
             "redirect_url": "",
             "title": "Tech Rituals",
@@ -5161,9 +5056,9 @@
             "doc_size": 29000,
             "file_path": "_site/testing.html",
             "incoming_links": [
+                "/chop",
                 "/design",
-                "/manager-book",
-                "http://localhost:4567/chop"
+                "/manager-book"
             ],
             "last_modified": "2024-12-31T07:15:11-08:00",
             "markdown_path": "_td/testing.md",
@@ -5205,51 +5100,33 @@
             "file_path": "_site/timeoff.html",
             "incoming_links": [
                 "/activation",
-                "/balance",
-                "/energy",
                 "/energy-abundance",
                 "/gap-year",
                 "/gap-year-igor",
-                "/life-as-business",
-                "/mind-at-work",
-                "/parkinson",
-                "/self-ego",
-                "/timeoff-2020-03",
-                "/timeoff-2020-12",
-                "/timeoff-2021-11",
-                "/timeoff-2021-12",
-                "/timeoff-2022-02",
-                "/timeoff-2022-07",
-                "/timeoff-2022-11",
-                "/timeoff-2022-12",
-                "/timeoff-2023-04",
-                "/timeoff-2023-08",
-                "/timeoff-2023-11",
-                "/timeoff-2024-08",
-                "/timeoff-2025-08"
+                "/life-as-business"
             ],
             "last_modified": "2025-10-03T15:30:14-07:00",
             "markdown_path": "_d/time_off.md",
             "outgoing_links": [
-                "/addiction",
                 "/balloon",
-                "/d/resistance",
                 "/diet",
                 "/energy",
-                "/essentialism",
                 "/eulogy",
                 "/frog",
                 "/gap-year",
                 "/gap-year-igor",
                 "/happy",
-                "/kettlebell",
                 "/magic",
                 "/mind-at-work",
                 "/parkinson",
                 "/siy",
                 "/terzepatide",
                 "/timeoff-2020-03",
-                "/timeoff-2024-02"
+                "/timeoff-2024-02",
+                "http://localhost:4567/addiction",
+                "http://localhost:4567/d/resistance",
+                "http://localhost:4567/essentialism",
+                "http://localhost:4567/kettlebell"
             ],
             "redirect_url": "",
             "title": "Getting the most out of time off",
@@ -5257,7 +5134,7 @@
         },
         "/timeoff-2020-03": {
             "description": "In March 2020, I took a 2 month sabatical between leaving Amazon and joining Facebook. Given it was a substantial amount of time, I came up with some big plans, and wrote them down. It was a great plan, BUT my time off correlated perfectly to the Corona Virus and as a result I wasted lots of my mental energy thinking about the Corona Virus, and adjusting to being in pseudo-quarantine. Took me a while, but I finally realized I should ignore corona virus, or at least minimize my time thinking about it.\n\n",
-            "doc_size": 31000,
+            "doc_size": 30000,
             "file_path": "_site/timeoff-2020-03.html",
             "incoming_links": [
                 "/timeoff"
@@ -5267,8 +5144,8 @@
             "outgoing_links": [
                 "/frog",
                 "/money",
-                "/siy",
-                "/timeoff"
+                "http://localhost:4567/siy",
+                "http://localhost:4567/timeoff"
             ],
             "redirect_url": "",
             "title": "Adventures March and April 2020",
@@ -5288,7 +5165,7 @@
                 "/happy",
                 "/mental-pain",
                 "/pandas",
-                "/timeoff"
+                "http://localhost:4567/timeoff"
             ],
             "redirect_url": "",
             "title": "Time off X-mas 2020",
@@ -5308,7 +5185,7 @@
                 "/brython",
                 "/ig66/591",
                 "/snjb",
-                "/timeoff"
+                "http://localhost:4567/timeoff"
             ],
             "redirect_url": "",
             "title": "Time off Turkey Day 2021",
@@ -5324,12 +5201,12 @@
             "last_modified": "2025-09-13T12:56:01-07:00",
             "markdown_path": "_d/time-off-2021-12.md",
             "outgoing_links": [
-                "/activation",
                 "/balance",
                 "/happy",
-                "/timeoff",
                 "/timeoff-2020-12",
-                "/timeoff-2021-11"
+                "/timeoff-2021-11",
+                "http://localhost:4567/activation",
+                "http://localhost:4567/timeoff"
             ],
             "redirect_url": "",
             "title": "Time off X-mas 2021",
@@ -5347,7 +5224,7 @@
                 "/productive",
                 "/sleight-of-mouth",
                 "/switch",
-                "/timeoff"
+                "http://localhost:4567/timeoff"
             ],
             "redirect_url": "",
             "title": "Time off Mid winter break 2022",
@@ -5363,10 +5240,10 @@
             "last_modified": "2025-09-13T12:56:01-07:00",
             "markdown_path": "_d/time-off-2022-07.md",
             "outgoing_links": [
-                "/essentialism",
                 "/happy",
-                "/recommend",
-                "/timeoff"
+                "http://localhost:4567/essentialism",
+                "http://localhost:4567/recommend",
+                "http://localhost:4567/timeoff"
             ],
             "redirect_url": "",
             "title": "Time off July 2022 - FISM and Canada.",
@@ -5382,7 +5259,7 @@
             "outgoing_links": [
                 "/happy",
                 "/mind-at-work",
-                "/timeoff"
+                "http://localhost:4567/timeoff"
             ],
             "redirect_url": "",
             "title": "Time off November 2022 - New York with Ammon, and Then Maureen and Brian for Thanksgiving",
@@ -5398,8 +5275,8 @@
             "outgoing_links": [
                 "/happy",
                 "/moments",
-                "/timeoff",
-                "/timeoff-2021-12"
+                "/timeoff-2021-12",
+                "http://localhost:4567/timeoff"
             ],
             "redirect_url": "",
             "title": "Time off X-mas 2022",
@@ -5415,7 +5292,7 @@
             "outgoing_links": [
                 "/happy",
                 "/moments",
-                "/timeoff"
+                "http://localhost:4567/timeoff"
             ],
             "redirect_url": "",
             "title": "Time off April Break 2023",
@@ -5431,7 +5308,7 @@
             "outgoing_links": [
                 "/happy",
                 "/moments",
-                "/timeoff"
+                "http://localhost:4567/timeoff"
             ],
             "redirect_url": "",
             "title": "Time off August 2023",
@@ -5447,7 +5324,7 @@
             "outgoing_links": [
                 "/happy",
                 "/moments",
-                "/timeoff"
+                "http://localhost:4567/timeoff"
             ],
             "redirect_url": "",
             "title": "Ashland T-Day 2023",
@@ -5465,9 +5342,9 @@
             "markdown_path": "_d/time-off-2024-02.md",
             "outgoing_links": [
                 "/blueprint",
-                "/ig66/717",
                 "/sublime",
-                "/tesla"
+                "/tesla",
+                "http://localhost:4567/ig66/717"
             ],
             "redirect_url": "",
             "title": "Time off Midwinter break 2024 - Divide and conquer",
@@ -5502,7 +5379,7 @@
                 "/moments",
                 "/mood",
                 "/td/slow_zsh",
-                "/timeoff"
+                "http://localhost:4567/timeoff"
             ],
             "redirect_url": "",
             "title": "Time off August 2024",
@@ -5521,7 +5398,7 @@
                 "/moments",
                 "/mood",
                 "/terzepatie",
-                "/timeoff"
+                "http://localhost:4567/timeoff"
             ],
             "redirect_url": "",
             "title": "Time off August 2025 - Meta Recharge",
@@ -5532,7 +5409,6 @@
             "doc_size": 18000,
             "file_path": "_site/todo_enjoy.html",
             "incoming_links": [
-                "/operating-manual",
                 "/psychic-shadows"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -5585,7 +5461,6 @@
             "incoming_links": [
                 "/class-act",
                 "/end-in-mind",
-                "/joy",
                 "/sublime"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -5603,7 +5478,6 @@
             "doc_size": 17000,
             "file_path": "_site/toysfortots.html",
             "incoming_links": [
-                "/amazon",
                 "/eulogy"
             ],
             "last_modified": "2025-07-20T19:13:52-07:00",
@@ -5661,12 +5535,12 @@
             "file_path": "_site/vibe.html",
             "incoming_links": [
                 "/ai",
-                "http://localhost:4567/chop"
+                "/chop"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/vibe.md",
             "outgoing_links": [
-                "/chop"
+                "http://localhost:4567/chop"
             ],
             "redirect_url": "",
             "title": "Vibe Coding: Best Practices for Flow, Fun, and Results",
@@ -5749,9 +5623,9 @@
             "markdown_path": "_posts/2017-01-01-voices-in-my-head.md",
             "outgoing_links": [
                 "/anxiety",
-                "/curious",
                 "/terzepatide",
-                "/win-win"
+                "http://localhost:4567/curious",
+                "http://localhost:4567/win-win"
             ],
             "redirect_url": "",
             "title": "Voices in my head - A survey of my personalities",
@@ -5828,21 +5702,17 @@
         },
         "/win-win": {
             "description": "Win/Win is a constantly seeking mutual benefit in all interactions. Win/Win means that agreements or solutions are mutually beneficial, mutually satisfying. With a Win/Win solution, all parties feel good about the decision and feel committed to the action plan. Win/Win sees life as a cooperative, not a competitive arena. Most people tend to think in terms of dichotomies: strong or weak, hardball or softball, win or lose. But that kind of thinking is fundamentally flawed. It’s based on power and position rather than on principle. Win/Win is based on the paradigm that there is plenty for everybody, that one person’s success is not achieved at the expense or exclusion of the success of others.\n\n",
-            "doc_size": 21000,
+            "doc_size": 20000,
             "file_path": "_site/win-win.html",
             "incoming_links": [
                 "/7-habits",
-                "/curious",
                 "/negotiate",
-                "/sell",
-                "/synergize",
-                "/voices",
-                "/work-satisfaction"
+                "/synergize"
             ],
             "last_modified": "2024-10-05T21:24:07-07:00",
             "markdown_path": "_d/7h-c4.md",
             "outgoing_links": [
-                "/7-habits"
+                "http://localhost:4567/7-habits"
             ],
             "redirect_url": "",
             "title": "Win/win or no deal",
@@ -5868,29 +5738,27 @@
             "description": "Love your work, and you’ll never work a day in your life. Sounds great, but work ain’t no Caribbean cruise - one you pay for, and the other pays you. Work should be satisfying (SAT). You should be enjoying solving hard problems, getting opportunities to talk with like-minded people, and even being forced to stretch and grow. Work should also cause you dissatisfaction (DSAT). Some days your boss will piss you off, your co-workers will misunderstand you, and you will be forced to do something you don’t want to. Satisfaction is not a lack of dissatisfaction; they are orthogonal experiences. DSAT is what makes you sleep poorly, and SAT is what makes you set your alarm early Monday morning so you can get back to your favorite project, and to hang out with your awesome team.  By understanding our SAT and DSAT, we can change them, and transform hours slogging into time at the fantasy cruise bar.\n\n",
             "doc_size": 32000,
             "file_path": "_site/work-satisfaction.html",
-            "incoming_links": [
-                "/manager-book",
-                "/mind-at-work",
-                "/retire"
-            ],
+            "incoming_links": [],
             "last_modified": "2025-09-30T07:24:35-07:00",
             "markdown_path": "_d/sat_dsat.md",
             "outgoing_links": [
                 "/comp",
                 "/decisive",
-                "/dip",
                 "/eulogy",
-                "/first-understand",
                 "/insecure",
                 "/job-hunt-stress",
                 "/manager-book",
                 "/mental-pain",
                 "/mind-at-work",
-                "/negotiate",
                 "/overload",
                 "/shame",
                 "/sustainable-work",
-                "/win-win"
+                "http://localhost:4567/decisive",
+                "http://localhost:4567/dip",
+                "http://localhost:4567/first-understand",
+                "http://localhost:4567/negotiate",
+                "http://localhost:4567/sustainable-work",
+                "http://localhost:4567/win-win"
             ],
             "redirect_url": "",
             "title": "Satisfaction is not the lack of dissatisfaction",
@@ -5920,14 +5788,12 @@
                 "/amazon",
                 "/chow",
                 "/enable",
-                "/manager-book",
                 "/manager-book-appendix",
                 "/operating-manual"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/writing.md",
             "outgoing_links": [
-                "/7h-concepts",
                 "/90days",
                 "/amazon",
                 "/coaching",
@@ -5936,7 +5802,8 @@
                 "/td/ios",
                 "/td/ios-nomad",
                 "/vim-for-writing",
-                "/viz"
+                "/viz",
+                "http://localhost:4567/7h-concepts"
             ],
             "redirect_url": "",
             "title": "Writing is Thinking",
@@ -5947,8 +5814,7 @@
             "doc_size": 25000,
             "file_path": "_site/y24.html",
             "incoming_links": [
-                "/bucket-list",
-                "/gap-year"
+                "/bucket-list"
             ],
             "last_modified": "2025-09-13T12:56:01-07:00",
             "markdown_path": "_d/y2024.md",
@@ -5973,8 +5839,7 @@
             "doc_size": 20000,
             "file_path": "_site/y25.html",
             "incoming_links": [
-                "/bucket-list",
-                "/gap-year"
+                "/bucket-list"
             ],
             "last_modified": "2025-10-04T17:59:35-07:00",
             "markdown_path": "_d/y2025.md",
@@ -5991,39 +5856,6 @@
             "redirect_url": "",
             "title": "Igor's plan for 2025",
             "url": "/y25"
-        },
-        "http://localhost:4567/chop": {
-            "description": "Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizing how we write code. Think of those old-school auto shops: AI started as the shop hand, fetching tools and cleaning parts. Then it became an apprentice mechanic, helping diagnose problems and suggesting fixes. Now? It’s a master mechanic, capable of rebuilding entire engines from your high-level specs. Our AIs are getting smarter by the day, and we’ll explore how to make the most of this evolution.\n\n",
-            "doc_size": 60000,
-            "file_path": "_site/chop.html",
-            "incoming_links": [],
-            "last_modified": "2025-10-16T07:32:25-04:00",
-            "markdown_path": "_d/ai-coder.md",
-            "outgoing_links": [
-                "/ai-journal",
-                "/ai-testing",
-                "/humans-are-underrated",
-                "/process-journal",
-                "/testing",
-                "/vibe"
-            ],
-            "redirect_url": "",
-            "title": "The CHOP Shop: Where AI Meets Code",
-            "url": "http://localhost:4567/chop"
-        },
-        "http://localhost:4567/religion": {
-            "description": "I did my Bar Mitzvah at the Wailing Wall in Israel — the holiest place in Judaism. We flew there as a family, and I still remember stepping off the plane and feeling an intense warmth. I turned to my sister and whispered, “I can feel God.” She rolled her eyes and said, “That’s not God. That’s forty degrees Celsius.”\n\n",
-            "doc_size": 49000,
-            "file_path": "_site/religion.html",
-            "incoming_links": [],
-            "last_modified": "2025-10-15T10:13:07-04:00",
-            "markdown_path": "_d/religion.md",
-            "outgoing_links": [
-                "/affirmations"
-            ],
-            "redirect_url": "",
-            "title": "Religion: Losing belief while seeing value",
-            "url": "http://localhost:4567/religion"
         }
     }
 }
