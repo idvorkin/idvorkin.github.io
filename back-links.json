@@ -138,6 +138,7 @@
         "/in-real-life": "/irl",
         "/insecurity": "/insecure",
         "/intern-llm": "/genai-talk",
+        "/jung-self": "/self-ego",
         "/jupyter": "/pandas",
         "/kb": "/kettlebell",
         "/kettlebells": "/kettlebell",
@@ -218,6 +219,7 @@
         "/savings": "/money",
         "/savor": "/happy",
         "/search-inside-yourself": "/siy",
+        "/self-vs-ego": "/self-ego",
         "/shadows": "/psychic-shadows",
         "/simple-and-sinister": "/kettlebell",
         "/sleepless": "/insomnia",
@@ -610,7 +612,8 @@
                 "/gap-year-igor",
                 "/mortality-software",
                 "/operating-manual",
-                "/process-journal"
+                "/process-journal",
+                "http://localhost:4567/religion"
             ],
             "last_modified": "2025-10-05T06:17:13-07:00",
             "markdown_path": "_d/affirmations2.md",
@@ -745,22 +748,19 @@
             "doc_size": 80000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
-                "/ai"
+                "/ai",
+                "http://localhost:4567/chop"
             ],
-            "last_modified": "2025-10-16T08:37:38.831365",
+            "last_modified": "2025-10-16T08:37:53-04:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
                 "/ai-security",
-                "/ai-talk",
                 "/eulogy",
+                "/genai-talk",
                 "/gpt",
                 "/hyper-personal",
-                "/mental-pain",
-                "/published-chop-logs/2025-10-09-religion-exploration.html",
-                "/published-chop-logs/2025-10-15-jung-ego-self-post.html",
-                "/published-chop-logs/2025-10-15-mdserve-open-source-contribution.html",
-                "/published-chop-logs/2025-10-15-religion-14-signs-actual-work.html"
+                "/mental-pain"
             ],
             "redirect_url": "",
             "title": "Igor's AI Journal",
@@ -801,11 +801,11 @@
             "file_path": "_site/ai-testing.html",
             "incoming_links": [
                 "/ai",
-                "/chop",
                 "/genai-talk",
                 "/ml",
                 "/testing",
-                "/timeoff-2024-04"
+                "/timeoff-2024-04",
+                "http://localhost:4567/chop"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/ai-testing.md",
@@ -1115,6 +1115,7 @@
             "file_path": "_site/bike-tesla-identity.html",
             "incoming_links": [
                 "/mortality-software",
+                "/self-ego",
                 "/tesla"
             ],
             "last_modified": "2025-09-16T07:31:48-07:00",
@@ -1374,34 +1375,6 @@
             "title": "Chasing Daylight: Imagine you're gonna die in less then 100 days",
             "url": "/chasing-daylight"
         },
-        "/chop": {
-            "description": "Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizing how we write code. Think of those old-school auto shops: AI started as the shop hand, fetching tools and cleaning parts. Then it became an apprentice mechanic, helping diagnose problems and suggesting fixes. Now? It’s a master mechanic, capable of rebuilding entire engines from your high-level specs. Our AIs are getting smarter by the day, and we’ll explore how to make the most of this evolution.\n\n",
-            "doc_size": 60000,
-            "file_path": "_site/chop.html",
-            "incoming_links": [
-                "/40yo",
-                "/ai",
-                "/chow",
-                "/gtd",
-                "/process-journal",
-                "/tech-rituals",
-                "/vibe",
-                "/y24",
-                "/y25"
-            ],
-            "last_modified": "2025-09-10T09:24:52-07:00",
-            "markdown_path": "_d/ai-coder.md",
-            "outgoing_links": [
-                "/ai-testing",
-                "/humans-are-underrated",
-                "/process-journal",
-                "/testing",
-                "/vibe"
-            ],
-            "redirect_url": "",
-            "title": "The CHOP Shop: Where AI Meets Code",
-            "url": "/chop"
-        },
         "/chow": {
             "description": "Welcome to The CHOW Kitchen! CHOW - or Chat-Oriented Writing - is transforming how we create content. Think of those bustling restaurant kitchens: AI started as the prep cook, chopping vegetables and measuring ingredients. Then it became a line cook, helping with recipes and plating. Now? It’s becoming a sous chef, capable of crafting entire dishes from your creative vision. Our AIs are getting more sophisticated daily, and we’ll explore how to make the most of this culinary revolution in writing.\n\n",
             "doc_size": 28000,
@@ -1452,6 +1425,7 @@
                 "/manager-book",
                 "/moments-at-work",
                 "/prompts",
+                "/self-ego",
                 "/writing"
             ],
             "last_modified": "2025-09-30T07:24:35-07:00",
@@ -2823,7 +2797,7 @@
             "file_path": "_site/humans-are-underrated.html",
             "incoming_links": [
                 "/books-that-defined-me",
-                "/chop"
+                "http://localhost:4567/chop"
             ],
             "last_modified": "2025-03-01T18:25:15-08:00",
             "markdown_path": "_posts/2015-12-12-humans-are-underrated.md",
@@ -3145,7 +3119,9 @@
             "description": "Businesses exist to generate profit. But what about life? Can we manage our lives with the same intentionality and clarity businesses use to thrive? Viewing life through this lens helps prioritize what truly matters, sustain energy, and deepen relationships. Just as businesses carefully manage resources, we can intentionally allocate our energy, nurture meaningful assets, and measure success beyond mere productivity. Life operates on two intertwined currencies—Life Value (the true worth of our existence) and energy (the operational fuel). These currencies are generated and sustained by carefully nurturing life assets such as relationships, health, skills, and character.\n\n",
             "doc_size": 36000,
             "file_path": "_site/life-as-business.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/self-ego"
+            ],
             "last_modified": "2025-03-06T06:43:27-08:00",
             "markdown_path": "_d/life-as-business.md",
             "outgoing_links": [
@@ -3946,11 +3922,11 @@
             "doc_size": 19000,
             "file_path": "_site/process-journal.html",
             "incoming_links": [
-                "/chop",
                 "/eulogy",
                 "/operating-manual",
                 "/y24",
-                "/y25"
+                "/y25",
+                "http://localhost:4567/chop"
             ],
             "last_modified": "2025-03-02T19:25:33-08:00",
             "markdown_path": "_d/process-journal.md",
@@ -4210,7 +4186,8 @@
             "incoming_links": [
                 "/emotions",
                 "/gap-year-igor",
-                "/mood"
+                "/mood",
+                "/self-ego"
             ],
             "last_modified": "2025-10-06T19:36:46-07:00",
             "markdown_path": "_d/regrets.md",
@@ -4224,18 +4201,6 @@
             "redirect_url": "",
             "title": "Use Your Regrets As A Compass, Not A Cage",
             "url": "/regrets"
-        },
-        "/religion": {
-            "description": "I did my Bar Mitzvah at the Wailing Wall in Israel — the holiest place in Judaism. We flew there as a family, and I still remember stepping off the plane and feeling an intense warmth. I turned to my sister and whispered, “I can feel God.” She rolled her eyes and said, “That’s not God. That’s forty degrees Celsius.”\n\n",
-            "doc_size": 43000,
-            "file_path": "_site/religion.html",
-            "incoming_links": [],
-            "last_modified": "2025-10-11T09:04:47-07:00",
-            "markdown_path": "_d/religion.md",
-            "outgoing_links": [],
-            "redirect_url": "",
-            "title": "Religion: Losing belief while seeing value",
-            "url": "/religion"
         },
         "/remote-work": {
             "description": "In March 2020, the world shut down from Covid-19. In May 2020, I started a new job as a remote manager at FB. Here are my thoughts.\n\n",
@@ -4347,6 +4312,25 @@
             "title": "Seattle",
             "url": "/seattle"
         },
+        "/self-ego": {
+            "description": "I’ve spent most of my life building an impressive ego. Senior engineer at Meta. Dad of two. The guy who bikes everywhere and does magic tricks at parties. These aren’t lies - they’re real parts of who I am. But here’s what I’m learning: when I’m living entirely for that résumé, when I’m performing my identity instead of living it, something feels hollow.\n\n",
+            "doc_size": 40000,
+            "file_path": "_site/self-ego.html",
+            "incoming_links": [],
+            "last_modified": "2025-10-15T09:44:21-04:00",
+            "markdown_path": "_d/jung-self-ego.md",
+            "outgoing_links": [
+                "/bike-tesla-identity",
+                "/coaching",
+                "/life-as-business",
+                "/regrets",
+                "/siy",
+                "/timeoff"
+            ],
+            "redirect_url": "",
+            "title": "The Self vs Ego: Jung's Map for Living Authentically",
+            "url": "/self-ego"
+        },
         "/sell": {
             "description": "Selling matters - it’s pitching, convincing, negotiating, hiring. Selling has a bad rap, because the seller often puts their needs ahead of the buyer - a win/lose paradigm. You should make selling win/win or no deal by needing to answer yes to these questions. 1/ If the buyer agrees, will their life improve? 2/ When the deal is done, will the world be a better place than when you began?\n\n",
             "doc_size": 21000,
@@ -4445,6 +4429,7 @@
                 "/mind-monsters",
                 "/operating-manual",
                 "/psychic-weight",
+                "/self-ego",
                 "/sharpen-the-saw",
                 "/slow",
                 "/timeoff",
@@ -5176,9 +5161,9 @@
             "doc_size": 29000,
             "file_path": "_site/testing.html",
             "incoming_links": [
-                "/chop",
                 "/design",
-                "/manager-book"
+                "/manager-book",
+                "http://localhost:4567/chop"
             ],
             "last_modified": "2024-12-31T07:15:11-08:00",
             "markdown_path": "_td/testing.md",
@@ -5228,6 +5213,7 @@
                 "/life-as-business",
                 "/mind-at-work",
                 "/parkinson",
+                "/self-ego",
                 "/timeoff-2020-03",
                 "/timeoff-2020-12",
                 "/timeoff-2021-11",
@@ -5675,7 +5661,7 @@
             "file_path": "_site/vibe.html",
             "incoming_links": [
                 "/ai",
-                "/chop"
+                "http://localhost:4567/chop"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/vibe.md",
@@ -6005,6 +5991,39 @@
             "redirect_url": "",
             "title": "Igor's plan for 2025",
             "url": "/y25"
+        },
+        "http://localhost:4567/chop": {
+            "description": "Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizing how we write code. Think of those old-school auto shops: AI started as the shop hand, fetching tools and cleaning parts. Then it became an apprentice mechanic, helping diagnose problems and suggesting fixes. Now? It’s a master mechanic, capable of rebuilding entire engines from your high-level specs. Our AIs are getting smarter by the day, and we’ll explore how to make the most of this evolution.\n\n",
+            "doc_size": 60000,
+            "file_path": "_site/chop.html",
+            "incoming_links": [],
+            "last_modified": "2025-10-16T07:32:25-04:00",
+            "markdown_path": "_d/ai-coder.md",
+            "outgoing_links": [
+                "/ai-journal",
+                "/ai-testing",
+                "/humans-are-underrated",
+                "/process-journal",
+                "/testing",
+                "/vibe"
+            ],
+            "redirect_url": "",
+            "title": "The CHOP Shop: Where AI Meets Code",
+            "url": "http://localhost:4567/chop"
+        },
+        "http://localhost:4567/religion": {
+            "description": "I did my Bar Mitzvah at the Wailing Wall in Israel — the holiest place in Judaism. We flew there as a family, and I still remember stepping off the plane and feeling an intense warmth. I turned to my sister and whispered, “I can feel God.” She rolled her eyes and said, “That’s not God. That’s forty degrees Celsius.”\n\n",
+            "doc_size": 49000,
+            "file_path": "_site/religion.html",
+            "incoming_links": [],
+            "last_modified": "2025-10-15T10:13:07-04:00",
+            "markdown_path": "_d/religion.md",
+            "outgoing_links": [
+                "/affirmations"
+            ],
+            "redirect_url": "",
+            "title": "Religion: Losing belief while seeing value",
+            "url": "http://localhost:4567/religion"
         }
     }
 }

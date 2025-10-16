@@ -262,6 +262,13 @@ class idvorkin_github_io_config:
 
         if path in "/ig66;/random;/tags;/about;/linkedin;/td".split(";"):
             return False
+
+        # Ignore links to chop logs (conversation transcripts)
+        if path.startswith("/published-chop-logs/") or path.startswith(
+            "/zz-chop-logs/"
+        ):
+            return False
+
         return path.startswith("/")
 
     def collection_dirs(self):
