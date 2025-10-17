@@ -213,17 +213,17 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 #### Use it to help digest new books
 
-- **The Session**: [Creating the Jung Ego-Self post](/published-chop-logs/2025-10-15-jung-ego-self-post.html)
+- **The Session**: [Creating the Jung Ego-Self post](/published-chop-logs/2025-10-15-jung-ego-self-post.html?filter=user,assistant)
 - Created comprehensive post on Carl Jung's complex "Ego and Archetype" framework exploring the [Ego-Self relationship](https://github.com/idvorkin/idvorkin.github.io/blob/d088a41e6d587b9d08b699155226336a6454af11/_d/jung-self-ego.md) - Ego as social operating system vs Self as authentic totality, still needs personal experience integration
 
 #### Use it to contribute to open source - It created the issue and PR by itself!!
 
-- **The Session**: [mdserve open source contribution](/published-chop-logs/2025-10-15-mdserve-open-source-contribution.html)
+- **The Session**: [mdserve open source contribution](/published-chop-logs/2025-10-15-mdserve-open-source-contribution.html?filter=user,assistant)
 - Got a compilation error installing mdserve, had Claude try to build it, figure out the problem, [create the issue](https://github.com/jfernandez/mdserve/issues/28#issuecomment-3408716893), and send a [PR](https://github.com/jfernandez/mdserve/pull/29) - very little work on my part
 
 #### Used it to digest content from a YouTube video
 
-- **The Session**: [Adding 14 signs content to religion post](/published-chop-logs/2025-10-15-religion-14-signs-actual-work.html)
+- **The Session**: [Adding 14 signs content to religion post](/published-chop-logs/2025-10-15-religion-14-signs-actual-work.html?filter=user,assistant)
 - Zach sent me a YouTube video, had Claude pull the yt-dlp subs, then summarize and help me edit - added [14 signs of being a Christian from ~300 AD](https://github.com/idvorkin/idvorkin.github.io/blob/5a1667096fa71a30505f8b7663c49a6bc70f5cbf/_d/religion.md#L123-L170) (text possibly from Lactantius)
 
 ### 2025-10-09
@@ -231,7 +231,7 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 #### Using AI to Explore and Organize Religious Understanding
 
 - **TOP Takeaway**: AI as a collaborative explorer for sensitive personal topics - worked through skepticism to find practical wisdom in religious texts
-- **The Session**: [Full conversation](/published-chop-logs/2025-10-09-religion-exploration.html)
+- **The Session**: [Full conversation](/published-chop-logs/2025-10-09-religion-exploration.html?filter=user,assistant)
 - **The Commit**: [Bible verses organized by practical themes](https://github.com/idvorkin/idvorkin.github.io/commit/8ab2827286911e65473b7b435f55b36fe8af76db)
 
 ### 2025-10-05
