@@ -377,6 +377,7 @@
                 "/eulogy",
                 "/first-things-first",
                 "/first-understand",
+                "/four-healths",
                 "/gap-year-igor",
                 "/psychic-weight",
                 "/sharpen-the-saw",
@@ -609,6 +610,7 @@
             "doc_size": 23000,
             "file_path": "_site/affirmations.html",
             "incoming_links": [
+                "/four-healths",
                 "/gap-year-igor",
                 "/mortality-software",
                 "/operating-manual",
@@ -751,7 +753,7 @@
                 "/ai",
                 "/chop"
             ],
-            "last_modified": "2025-10-16T08:37:53-04:00",
+            "last_modified": "2025-10-17T13:09:41-04:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
@@ -1275,7 +1277,9 @@
             "description": "Happiness isn’t a destination you arrive at—it’s a direction you choose to walk in daily. Build The Life YOU Want by Arthur Brooks and Oprah Winfrey demolishes the myth that happiness is something that happens to you, replacing it with the empowering truth that happiness is something you actively create. This isn’t another feel-good book promising easy answers; it’s a science-backed roadmap for building genuine fulfillment through intentional choices and sustainable practices.\n\n",
             "doc_size": 39000,
             "file_path": "_site/build-life-you-want.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/spiritual-health"
+            ],
             "last_modified": "2025-10-04T17:51:33-07:00",
             "markdown_path": "_d/build-the-life-you-want.md",
             "outgoing_links": [
@@ -1377,7 +1381,7 @@
         },
         "/chop": {
             "description": "Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizing how we write code. Think of those old-school auto shops: AI started as the shop hand, fetching tools and cleaning parts. Then it became an apprentice mechanic, helping diagnose problems and suggesting fixes. Now? It’s a master mechanic, capable of rebuilding entire engines from your high-level specs. Our AIs are getting smarter by the day, and we’ll explore how to make the most of this evolution.\n\n",
-            "doc_size": 60000,
+            "doc_size": 61000,
             "file_path": "_site/chop.html",
             "incoming_links": [
                 "/40yo",
@@ -1390,7 +1394,7 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-10-16T07:32:25-04:00",
+            "last_modified": "2025-10-17T13:47:13-04:00",
             "markdown_path": "_d/ai-coder.md",
             "outgoing_links": [
                 "/ai-journal",
@@ -1580,6 +1584,7 @@
                 "/getting-to-yes-with-yourself",
                 "/happy",
                 "/negotiate",
+                "/operating-manual",
                 "/psychic-weight",
                 "/regrets",
                 "/shame",
@@ -1759,11 +1764,13 @@
                 "/activation",
                 "/d/resistance",
                 "/energy-abundance",
+                "/four-healths",
                 "/hobby",
                 "/idle",
                 "/life-as-business",
                 "/manager-book",
                 "/mind-at-work",
+                "/operating-manual",
                 "/physical-health",
                 "/productive",
                 "/psychic-weight",
@@ -2097,6 +2104,7 @@
             "file_path": "_site/emotional-health.html",
             "incoming_links": [
                 "/essentialism",
+                "/four-healths",
                 "/gap-year-igor",
                 "/irl",
                 "/mania",
@@ -2315,6 +2323,7 @@
                 "/bucket-list",
                 "/depression",
                 "/end-in-mind",
+                "/four-healths",
                 "/frog",
                 "/happy",
                 "/hobby",
@@ -2322,6 +2331,7 @@
                 "/joy",
                 "/operating-manual",
                 "/retire",
+                "/spiritual-health",
                 "/timeoff",
                 "/todo_enjoy",
                 "/work-satisfaction"
@@ -2441,6 +2451,39 @@
             "redirect_url": "",
             "title": "Seek first to understand, then to be understood",
             "url": "/first-understand"
+        },
+        "/four-healths": {
+            "description": "Health isn’t one-dimensional. You can be physically fit but emotionally exhausted. You can be cognitively sharp but spiritually adrift. True well-being requires attending to all four dimensions of health: physical, emotional, spiritual, and cognitive. Each dimension serves a different purpose, requires different practices, and neglecting any one creates vulnerabilities that ripple across your entire life.\n\n",
+            "doc_size": 47000,
+            "file_path": "_site/four-healths.html",
+            "incoming_links": [
+                "/operating-manual",
+                "/spiritual-health"
+            ],
+            "last_modified": "2025-10-17T15:54:19-04:00",
+            "markdown_path": "_d/four-healths.md",
+            "outgoing_links": [
+                "/7-habits",
+                "/affirmations",
+                "/d/habits",
+                "/emotional-health",
+                "/eulogy",
+                "/how-to-read",
+                "/last-year",
+                "/new-skills",
+                "/operating-manual",
+                "/physical-health",
+                "/process-journal",
+                "/religion",
+                "/siy",
+                "/spiritual-health",
+                "/sublime",
+                "/time_off",
+                "/writing"
+            ],
+            "redirect_url": "",
+            "title": "The Four Kinds of Health: Physical, Emotional, Spiritual, and Cognitive",
+            "url": "/four-healths"
         },
         "/frog": {
             "description": "Procrastination is the success killer, a powerful manifestations of the resistance. Eat that frog gives 21 antidotes to procrastination. These are my re-framing of the concepts into my favorite mental models. Chapter titles come from the book.\n\n",
@@ -3101,6 +3144,7 @@
                 "/bucket-list",
                 "/chasing-daylight",
                 "/death",
+                "/four-healths",
                 "/retire",
                 "/y24",
                 "/y25"
@@ -3651,6 +3695,7 @@
             "file_path": "_site/new-skills.html",
             "incoming_links": [
                 "/about",
+                "/four-healths",
                 "/operating-manual",
                 "/physical-health",
                 "/physical-pain",
@@ -3701,9 +3746,10 @@
             "incoming_links": [
                 "/energy",
                 "/energy-abundance",
+                "/four-healths",
                 "/life-as-business"
             ],
-            "last_modified": "2025-10-17T15:54:02.161242",
+            "last_modified": "2025-10-17T15:54:19-04:00",
             "markdown_path": "_d/operating-manual-2.md",
             "outgoing_links": [
                 "/Immutable-Laws-Of-Hard",
@@ -3711,13 +3757,13 @@
                 "/anxiety",
                 "/bike",
                 "/blueprint",
-                "/compassion",
                 "/covid",
+                "/curious",
+                "/d/habits",
                 "/diet",
                 "/emotional-health",
                 "/eulogy",
                 "/four-healths",
-                "/habits",
                 "/hobby",
                 "/ig66/587",
                 "/magic",
@@ -3728,11 +3774,11 @@
                 "/physical-health",
                 "/process-journal",
                 "/siy",
-                "/some",
+                "/sleight-of-mouth",
                 "/strengths",
                 "/tesla",
                 "/timeoff-2022-07",
-                "/todo-enjoy",
+                "/todo_enjoy",
                 "/tony",
                 "/voices",
                 "/writing"
@@ -3863,6 +3909,7 @@
                 "/diet",
                 "/essentialism",
                 "/eulogy",
+                "/four-healths",
                 "/gap-year",
                 "/gap-year-igor",
                 "/irl",
@@ -3951,6 +3998,7 @@
             "incoming_links": [
                 "/chop",
                 "/eulogy",
+                "/four-healths",
                 "/operating-manual",
                 "/y24",
                 "/y25"
@@ -4233,7 +4281,10 @@
             "description": "I did my Bar Mitzvah at the Wailing Wall in Israel — the holiest place in Judaism. We flew there as a family, and I still remember stepping off the plane and feeling an intense warmth. I turned to my sister and whispered, “I can feel God.” She rolled her eyes and said, “That’s not God. That’s forty degrees Celsius.”\n\n",
             "doc_size": 52000,
             "file_path": "_site/religion.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/four-healths",
+                "/spiritual-health"
+            ],
             "last_modified": "2025-10-16T09:54:11-04:00",
             "markdown_path": "_d/religion.md",
             "outgoing_links": [
@@ -4464,6 +4515,7 @@
                 "/emotions",
                 "/eulogy",
                 "/first-understand",
+                "/four-healths",
                 "/gap-year-igor",
                 "/idle",
                 "/irl",
@@ -4532,6 +4584,7 @@
             "file_path": "_site/sleight-of-mouth.html",
             "incoming_links": [
                 "/7h-concepts",
+                "/operating-manual",
                 "/timeoff-2022-02",
                 "/words-we-dont-have"
             ],
@@ -4614,6 +4667,25 @@
             "title": "Tech leads, software architects and engineering managers - oh my!",
             "url": "/software-leadership-roles"
         },
+        "/spiritual-health": {
+            "description": "Spiritual health is one of the most confusing dimensions of well-being because different frameworks define it completely differently. After reading multiple books on happiness and energy management, I’ve realized they’re actually addressing two distinct problems that both fall under “spiritual health”: knowing your purpose (direction) and experiencing transcendence (perspective).\n\n",
+            "doc_size": 41000,
+            "file_path": "_site/spiritual-health.html",
+            "incoming_links": [
+                "/four-healths"
+            ],
+            "last_modified": "2025-10-17T15:57:17.561502",
+            "markdown_path": "_d/spiritual-health.md",
+            "outgoing_links": [
+                "/build-life-you-want",
+                "/eulogy",
+                "/four-healths",
+                "/religion"
+            ],
+            "redirect_url": "",
+            "title": "Spiritual Health: Purpose vs. Transcendence",
+            "url": "/spiritual-health"
+        },
         "/stock-concentration": {
             "description": "When you work at a tech company and receive RSUs, it’s easy to accidentally become dangerously concentrated in your company’s stock. You didn’t mean to bet your entire future on one company, but here you are - watching every earnings call with your stomach in knots because a 30% drop would devastate your net worth. This guide explains the risks and strategies for managing concentrated stock positions - from tax-efficient selling strategies to protective options that cost you nothing, and exchange funds that diversify without triggering taxes.\n\n",
             "doc_size": 37000,
@@ -4691,6 +4763,7 @@
                 "/affirmations",
                 "/emotional-health",
                 "/emotions",
+                "/four-healths",
                 "/siy",
                 "/timeoff-2024-02"
             ],
@@ -5572,6 +5645,7 @@
             "doc_size": 18000,
             "file_path": "_site/todo_enjoy.html",
             "incoming_links": [
+                "/operating-manual",
                 "/psychic-shadows"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -5959,6 +6033,7 @@
                 "/amazon",
                 "/chow",
                 "/enable",
+                "/four-healths",
                 "/manager-book",
                 "/manager-book-appendix",
                 "/operating-manual"

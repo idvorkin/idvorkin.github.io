@@ -71,6 +71,92 @@ The two primary spiritual health problems are lack of purpose (not knowing your 
 
 **Example failure case:** The person who knows exactly what they want and why, but burns out from treating every setback as catastrophic because they lack cosmic perspective.
 
+### Problem 3: Spiritual Bypass (Using Spirituality to Avoid Reality)
+
+**What breaks:**
+
+- Using spiritual practices to avoid uncomfortable emotions or unresolved issues
+- "Rising above" problems without actually facing them
+- Detachment that's really just emotional avoidance
+- Excessive positivity that denies legitimate pain or problems
+
+**The mechanism:** Coined by psychotherapist John Welwood, spiritual bypassing is "trying to rise above the raw and messy side of our humanness before we have fully faced and made peace with it." The ego uses spirituality as another defense mechanism.
+
+**Examples:**
+
+- Using meditation to suppress emotions rather than process them
+- "Everything happens for a reason" to avoid grieving or taking responsibility
+- Premature forgiveness that bypasses necessary anger
+- Spiritual platitudes instead of acknowledging real problems
+
+**What's missing:** Emotional health - the capacity to actually feel and process difficult emotions. Spiritual transcendence without emotional integration creates a false spirituality built on avoidance.
+
+**The cure:** Do the emotional work first. Feel your feelings, process your trauma, acknowledge your pain. THEN transcend. Real transcendence includes your humanity, doesn't bypass it.
+
+### Problem 4: Spiritual Materialism (Ego Hijacking Spirituality)
+
+**What breaks:**
+
+- Using spiritual practices to boost ego rather than transcend it
+- Accumulating spiritual credentials or experiences as status symbols
+- Believing your spiritual development makes you special or superior
+- Turning spirituality into another form of achievement or competition
+
+**The mechanism:** Tibetan Buddhist teacher Chögyam Trungpa warned: "The problem is that ego can convert anything to its own use, even spirituality." What starts as genuine spiritual seeking becomes about ego enhancement.
+
+**Trungpa's Three Forms:**
+
+1. **Physical materialism** - Believing possessions/status bring spiritual release
+2. **Psychological materialism** - Believing a particular belief system brings release (rigid identification with a religion or philosophy)
+3. **Spiritual materialism** - Believing a particular state of mind brings release (using meditation to create pleasant states, chasing spiritual highs)
+
+**Spiritual narcissism:** The extreme form where someone believes their spiritual wisdom makes them better than others. The ego becomes "so solid, so fixed, so unyielding in the idea of its own spiritual greatness that it is pathological."
+
+**What's missing:** True humility and self-transcendence. The spiritual practice has been co-opted by ego as another way to feel superior, special, or separate.
+
+**The cure:** Recognize when spiritual practice is feeding ego rather than dissolving it. True spiritual progress makes you more humble, not more special. If your spirituality is making you feel superior to others, that's ego, not transcendence.
+
+### Problem 5: Spiritual Crisis (Meaning System Collapse)
+
+**What breaks:**
+
+- Drastic changes to your meaning system (loss of faith, worldview shattering)
+- Existential crisis where previous sources of meaning no longer work
+- Identity crisis triggered by spiritual awakening or loss
+- Significant disruption in psychological, social, and occupational functioning
+
+**The mechanism:** When your entire framework for making meaning collapses - whether through loss, trauma, mystical experience, or philosophical crisis - you lose the capacity to find meaning, peace, comfort, or connection in life.
+
+**What's different from lack of purpose:** This isn't about never having found purpose - it's about having your purpose/meaning system COLLAPSE. The foundation you built your life on has cracked.
+
+**Examples:**
+
+- Loss of religious faith that defined your identity
+- Near-death experience that shatters your worldview
+- Trauma that makes previous meaning-making impossible
+- "Dark night of the soul" experiences in spiritual practice
+
+**What's needed:** Rebuilding a meaning system from the ground up. Often requires both psychological support (therapy) and spiritual guidance. Can't be rushed - the collapse must be honored before reconstruction.
+
+**The opportunity:** Crisis can be transformation. Sometimes the old meaning system needed to collapse for a more authentic one to emerge. As Frankl showed, even in crisis, meaning can be found through attitude and values.
+
+### Problem 6: Spiritual Distress (Unable to Access Meaning)
+
+**What breaks:**
+
+- No longer able to find meaning, peace, comfort, strength, or connection in life
+- Rupture of spiritual/religious belief systems
+- Existential suffering when facing death, loss, or terminal illness
+- Feeling spiritually abandoned or disconnected
+
+**The mechanism:** Similar to spiritual crisis but often triggered by specific circumstances (illness, loss, trauma) rather than developmental collapse. The spiritual capacity to access meaning is blocked or damaged.
+
+**What's different from lack of purpose:** You may know what should matter, but can't FEEL the connection to it anymore. The spiritual channel is blocked.
+
+**Common in:** Palliative care, severe depression, PTSD, prolonged suffering. Recognized in DSM-5 as "Religious or Spiritual Problems."
+
+**What's needed:** Often requires addressing both the underlying circumstance (grief, illness, trauma) AND rebuilding spiritual connection. Can't address spiritually without also addressing emotionally/physically.
+
 ## Four Frameworks on Spiritual Health
 
 ### Viktor Frankl: Meaning Through Self-Transcendence
