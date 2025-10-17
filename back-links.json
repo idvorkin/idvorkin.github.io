@@ -4667,13 +4667,13 @@
             "url": "/software-leadership-roles"
         },
         "/spiritual-health": {
-            "description": "Spiritual health is one of the most confusing dimensions of well-being because different frameworks define it completely differently. After reading multiple books on happiness and energy management, I’ve realized they’re actually addressing two distinct problems that both fall under “spiritual health”: knowing your purpose (direction) and experiencing transcendence (perspective).\n\n",
-            "doc_size": 41000,
+            "description": "Ever wonder why some people burn out pursuing their life’s purpose while others float aimlessly despite feeling deeply connected to the universe? The answer lies in a fundamental confusion about spiritual health. After diving into frameworks from Viktor Frankl to Arthur Brooks, I discovered that “spiritual health” isn’t one thing - it’s the integration of two distinct human needs: knowing which mountain to climb (purpose) and seeing the entire mountain range (transcendence). Miss either one, and you’ll find yourself spiritually malnourished in surprisingly different ways.\n\n",
+            "doc_size": 54000,
             "file_path": "_site/spiritual-health.html",
             "incoming_links": [
                 "/four-healths"
             ],
-            "last_modified": "2025-10-17T15:57:17.561502",
+            "last_modified": "2025-10-17T17:23:50.465065",
             "markdown_path": "_d/spiritual-health.md",
             "outgoing_links": [
                 "/build-life-you-want",
