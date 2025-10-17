@@ -259,104 +259,21 @@ Remember: practice makes permanent. Whether you design your rituals consciously 
 
 ### Spiritual Health: Purpose vs. Transcendence
 
-Spiritual health is particularly complex because different frameworks define it differently. I've written a dedicated deep-dive exploring whether spiritual health is one dimension or two: [Spiritual Health: Purpose vs. Transcendence](/spiritual-health).
+Spiritual health is particularly complex because different frameworks define it differently. After deep analysis, I've discovered that "spiritual health" actually encompasses two distinct problems that different thought leaders address:
 
-The short version: Different frameworks address different problems:
+1. **Purpose (Not Knowing Your Mountain)**: The problem of feeling directionless, not knowing your values or what you're working toward
+2. **Transcendence (Being Too Big)**: The problem of taking yourself too seriously, lacking cosmic perspective on your place in the universe
 
-**The Problem Brooks Solves: "You're Too Big"**
+These are orthogonal - you can have one without the other. A driven founder might have crystal-clear purpose but burn out from lack of perspective (purpose without transcendence). A meditation practitioner might feel deeply connected to something greater but still feel aimless about their own path (transcendence without purpose).
 
-Brooks describes faith as "anything transcendent that helps you escape the boring sitcom that is your life." His core insight: **"You need to get small."**
+Different frameworks emphasize different aspects:
 
-What breaks without transcendence:
+- Arthur Brooks focuses on transcendence through "getting small"
+- My framework emphasizes purpose as your "anchor" to meaning
+- The Power of Full Engagement bridges both, suggesting they're developmental stages
+- Viktor Frankl's logotherapy shows that purpose IS found through self-transcendence
 
-- Life feels like a tedious sitcom where you're the main character
-- Your problems loom disproportionately large
-- You lack perspective on what actually matters
-- Anxiety and depression from taking yourself too seriously
-
-His solution - **Self-Transcendence:**
-
-- Walking in nature at dawn without devices, watching sunrise
-- Meditation and prayer (he combines rosary with Tibetan meditation techniques)
-- Philosophy and deep intellectual engagement with ideas bigger than yourself
-- Service to causes larger than yourself
-- The goal: **Seek truth and serve others** (NOT pursue personal happiness - happiness follows naturally)
-
-The mechanism: Standing in awe of something vastly larger makes you appropriately small, which paradoxically provides perspective and peace. "What we need is a sense of the transcendent that makes us small, because we need perspective."
-
-**The Problem I Solve: "You Don't Know Your Mountain"**
-
-My framework addresses a different breakdown - **aimlessness despite knowing you should feel small.**
-
-What breaks without purpose:
-
-- You feel directionless even when succeeding by external measures
-- You go through motions without knowing why
-- You can't make value-aligned decisions because you don't know your values
-- The work gets done but feels hollow
-
-My solution - **Purpose Anchoring:**
-
-- Clear sense of personal purpose and values
-- Regular engagement with your eulogy - who you want to be
-- Making decisions aligned with your values
-- Knowing which mountain you're climbing and why
-
-The mechanism: Connection to your personal "why" prevents drift into optimizing for productivity without meaning. You need direction, not just perspective.
-
-**Two Orthogonal Problems**
-
-These frameworks address independent failure modes:
-
-**You can have Brooks' transcendence without my purpose:**
-
-- You feel appropriately small in the cosmic scheme
-- You experience awe regularly and escape the tedium
-- But you still don't know what YOU should be doing
-- You're inspired but aimless about your own path
-- Example: The spiritually minded person who meditates daily and feels connected to something greater but can't figure out their career or relationships
-
-**You can have my purpose without Brooks' transcendence:**
-
-- You know exactly what matters to you and why
-- Your values are crystal clear, decisions aligned
-- But you take yourself and your mission TOO seriously
-- Your problems loom too large because you lack cosmic perspective
-- Example: The driven founder who knows their mission but burns out from treating every setback as catastrophic
-
-**Both Missing:**
-
-- Aimless AND self-absorbed
-- Don't know where you're going AND take yourself too seriously
-- No direction AND no perspective
-
-**Why This Matters**
-
-These might not be two aspects of one "spiritual health" dimension - they're solving different problems:
-
-- **Brooks' Transcendence:** Treats "taking yourself too seriously" - the cure is getting small
-- **My Purpose:** Treats "not knowing your direction" - the cure is knowing your mountain
-
-You need both independently. Purpose without transcendence = burnout from overinflated importance. Transcendence without purpose = inspired aimlessness.
-
-The question I'm wrestling with: Should these be separate dimensions (Physical, Emotional, Purpose, Transcendence, Cognitive), or are they complementary aspects of "Spiritual Health" that address different failure modes within one domain?
-
-**Where Does "Power of Full Engagement" Fit?**
-
-Loehr and Schwartz define spiritual energy as "connection to deeply held values and a purpose beyond our self-interest." This definition bridges both frameworks:
-
-- **Like my framework:** Emphasizes connection to YOUR deeply held values (purpose/direction)
-- **Like Brooks:** Emphasizes "purpose beyond our self-interest" (transcendence/getting small)
-
-Their key insight: "Purpose becomes more powerful when it moves from negative to positive, external to internal, and **self to others**." This progression suggests spiritual energy starts with personal purpose but matures into transcendent service.
-
-Interestingly, they frame spiritual energy as the **force for action** - it "fuels passion, perseverance, and commitment" and "provides the force for action in all dimensions of our lives." This makes it foundational rather than separate - it's what energizes physical, emotional, and mental action.
-
-Their definition of character as "the courage and conviction to live by our deepest values" aligns perfectly with my purpose anchor - knowing your values isn't enough; spiritual health is the capacity to actually live by them under pressure.
-
-So "Power of Full Engagement" might suggest the answer: Purpose and transcendence aren't separate dimensions - they're developmental stages or complementary aspects of spiritual capacity. You start with connecting to YOUR values (purpose), and mature into connecting those values to something beyond yourself (transcendence).
-
-For the full analysis of these three frameworks and whether purpose and transcendence should be separate dimensions, see [Spiritual Health: Purpose vs. Transcendence](/spiritual-health).
+For a comprehensive analysis of these frameworks and whether purpose and transcendence are separate dimensions or complementary aspects of spiritual health, see: [Spiritual Health: Purpose vs. Transcendence](/spiritual-health)
 
 ### Spiritual vs Emotional Health Differences
 

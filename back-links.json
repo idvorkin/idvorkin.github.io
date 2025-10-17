@@ -1764,7 +1764,6 @@
                 "/activation",
                 "/d/resistance",
                 "/energy-abundance",
-                "/four-healths",
                 "/hobby",
                 "/idle",
                 "/life-as-business",
@@ -2454,20 +2453,20 @@
         },
         "/four-healths": {
             "description": "Health isn’t one-dimensional. You can be physically fit but emotionally exhausted. You can be cognitively sharp but spiritually adrift. True well-being requires attending to all four dimensions of health: physical, emotional, spiritual, and cognitive. Each dimension serves a different purpose, requires different practices, and neglecting any one creates vulnerabilities that ripple across your entire life.\n\n",
-            "doc_size": 47000,
+            "doc_size": 42000,
             "file_path": "_site/four-healths.html",
             "incoming_links": [
                 "/operating-manual",
                 "/spiritual-health"
             ],
-            "last_modified": "2025-10-17T15:54:19-04:00",
+            "last_modified": "2025-10-17T16:32:20.354181",
             "markdown_path": "_d/four-healths.md",
             "outgoing_links": [
                 "/7-habits",
                 "/affirmations",
-                "/d/habits",
                 "/emotional-health",
                 "/eulogy",
+                "/habits",
                 "/how-to-read",
                 "/last-year",
                 "/new-skills",
