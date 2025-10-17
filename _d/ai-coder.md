@@ -61,6 +61,7 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
   - [Prioritizing Skills](#prioritizing-skills)
   - [What will take AI longer to "Solve"](#what-will-take-ai-longer-to-solve)
   - [From Cheap Computing to Cheap Intelligence](#from-cheap-computing-to-cheap-intelligence)
+  - [Smart vs Fast - Tradeoffs](#smart-vs-fast---tradeoffs)
 
 <!-- vim-markdown-toc-end -->
 
@@ -683,3 +684,9 @@ That's the key:
 - From Kindergarten Student to PhD in very low years
 - From Moore's law at every 2 years, to like every 3-6 months
 - Not only smart agents, but as many as you want.
+
+### Smart vs Fast - Tradeoffs
+
+Some models are smart, some are fast. While I'd normally recommend the smartest, if smart == super slow, you lose patience for what you're working on, and life sucks. So you either go with lots of background models, or you use dumber and faster. Luckily over time "dumb" and "fast" is getting smart and smarter.w00t! Great [articulation of the problem](https://cognition.ai/blog/swe-grep#fast-context-as-the-first-step-to-fast-agents).
+
+![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20251017_134143.webp)
