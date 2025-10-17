@@ -258,6 +258,8 @@ what is wrong and resolving it.
 
 Health - physical, emotional, cognitive, and spiritual - is easy to understand but hard to maintain. My strategy to maintain health is through [habits](/habits), but thanks to the [immutable laws of hard things](/Immutable-Laws-Of-Hard), habits degrade without constant vigilance.
 
+{%include summarize-page.html src="/four-healths" %}
+
 {%include summarize-page.html src="/Immutable-Laws-Of-Hard" %}
 
 I spend lots of time thinking about how I should be working my habits, but often end up not doing them. In this case, the key is to stop moaning and restart them.

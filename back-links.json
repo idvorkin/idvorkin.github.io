@@ -1580,7 +1580,6 @@
                 "/getting-to-yes-with-yourself",
                 "/happy",
                 "/negotiate",
-                "/operating-manual",
                 "/psychic-weight",
                 "/regrets",
                 "/shame",
@@ -1765,7 +1764,6 @@
                 "/life-as-business",
                 "/manager-book",
                 "/mind-at-work",
-                "/operating-manual",
                 "/physical-health",
                 "/productive",
                 "/psychic-weight",
@@ -3705,7 +3703,7 @@
                 "/energy-abundance",
                 "/life-as-business"
             ],
-            "last_modified": "2025-09-13T12:56:01-07:00",
+            "last_modified": "2025-10-17T15:54:02.161242",
             "markdown_path": "_d/operating-manual-2.md",
             "outgoing_links": [
                 "/Immutable-Laws-Of-Hard",
@@ -3713,12 +3711,13 @@
                 "/anxiety",
                 "/bike",
                 "/blueprint",
+                "/compassion",
                 "/covid",
-                "/curious",
-                "/d/habits",
                 "/diet",
                 "/emotional-health",
                 "/eulogy",
+                "/four-healths",
+                "/habits",
                 "/hobby",
                 "/ig66/587",
                 "/magic",
@@ -3729,11 +3728,11 @@
                 "/physical-health",
                 "/process-journal",
                 "/siy",
-                "/sleight-of-mouth",
+                "/some",
                 "/strengths",
                 "/tesla",
                 "/timeoff-2022-07",
-                "/todo_enjoy",
+                "/todo-enjoy",
                 "/tony",
                 "/voices",
                 "/writing"
@@ -4533,7 +4532,6 @@
             "file_path": "_site/sleight-of-mouth.html",
             "incoming_links": [
                 "/7h-concepts",
-                "/operating-manual",
                 "/timeoff-2022-02",
                 "/words-we-dont-have"
             ],
@@ -5574,7 +5572,6 @@
             "doc_size": 18000,
             "file_path": "_site/todo_enjoy.html",
             "incoming_links": [
-                "/operating-manual",
                 "/psychic-shadows"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
