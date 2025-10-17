@@ -14,6 +14,9 @@ Spiritual health is one of the most confusing dimensions of well-being because d
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [What Do We Mean by "Meaning"?](#what-do-we-mean-by-meaning)
+  - [Three Dimensions of Meaning](#three-dimensions-of-meaning)
+  - [How Different Frameworks Define Meaning](#how-different-frameworks-define-meaning)
 - [The Two Problems Spiritual Health Solves](#the-two-problems-spiritual-health-solves)
   - [Problem 1: "You Don't Know Your Mountain" (Purpose)](#problem-1-you-dont-know-your-mountain-purpose)
   - [Problem 2: "You're Too Big" (Transcendence)](#problem-2-youre-too-big-transcendence)
@@ -29,6 +32,94 @@ Spiritual health is one of the most confusing dimensions of well-being because d
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+## What Do We Mean by "Meaning"?
+
+Before diving into frameworks, we need to address a fundamental confusion: different experts use "meaning" to describe completely different aspects of spiritual health. This isn't just semantic nitpicking - these definitional differences explain why frameworks seem to conflict and why you might have one type of meaning while desperately lacking another.
+
+### Three Dimensions of Meaning
+
+Researchers have identified three distinct components that all get called "meaning" in different contexts:
+
+**1. Meaning as Coherence (Comprehension)**
+
+This is meaning as "making sense" - your life has a narrative structure that you can understand:
+
+- Events aren't random; there's a pattern or logic
+- Your story hangs together coherently
+- You can explain how you got where you are
+- Example: "I understand why this happened to me"
+
+Without coherence, life feels chaotic and arbitrary. You might have clear goals and matter to others, but nothing makes sense.
+
+**2. Meaning as Significance (Mattering)**
+
+This is meaning as "having worth" - your existence makes a difference:
+
+- Your life has value and importance
+- What you do impacts others
+- You matter in the larger scheme of things
+- Example: "My work/relationships/contributions matter"
+
+Without significance, life feels pointless. You might understand your story and know where you're going, but wonder "so what?"
+
+**3. Meaning as Purpose (Direction)**
+
+This is meaning as "having aims" - you know where you're headed:
+
+- Clear sense of goals and intentions
+- Values that guide your decisions
+- A mission or calling to pursue
+- Example: "I know what I'm trying to accomplish"
+
+Without purpose, life feels aimless. You might matter and make sense, but have no idea what to do next.
+
+### How Different Frameworks Define Meaning
+
+Here's where the confusion becomes clear - each framework emphasizes different dimensions:
+
+**Viktor Frankl (Logotherapy):**
+
+- Primary emphasis: **Significance through self-transcendence**
+- "Meaning" = Your life matters because you contribute to something beyond yourself
+- Even suffering has meaning when you choose your attitude toward it
+- Less concerned with coherence or specific purposes
+
+**Arthur Brooks (Build the Life You Want):**
+
+- Primary emphasis: **Significance beyond self-interest**
+- "Meaning" = One of three happiness components (with enjoyment and satisfaction)
+- Specifically tied to serving others and causes greater than yourself
+- Assumes purpose emerges from significance
+
+**MLQ - Meaning in Life Questionnaire (Steger):**
+
+- Measures: **All three dimensions combined**
+- "Presence of meaning" = Having coherence + significance + purpose
+- "Search for meaning" = Actively seeking any/all of these dimensions
+- Most comprehensive definition but can obscure which dimension is missing
+
+**Four Healths Framework (Igor):**
+
+- Primary emphasis: **Purpose as direction**
+- "Meaning" = Knowing your mountain, having clear values and goals
+- Treats transcendence/significance as potentially separate
+- Focuses on the navigational aspect of meaning
+
+**Power of Full Engagement (Loehr & Schwartz):**
+
+- Primary emphasis: **Purpose that energizes action**
+- "Meaning" = Connection to values that fuel engagement
+- Bridges purpose and significance ("purpose beyond self-interest")
+- Views meaning as the energy source for all life dimensions
+
+**The critical insight:** When someone says they "lack meaning," they might be missing any combination of:
+
+- Understanding (coherence)
+- Mattering (significance)
+- Direction (purpose)
+
+And when different books promise to help you "find meaning," they might be addressing completely different problems. This explains why advice that transforms one person's life leaves another cold - they're solving different equations.
 
 ## Common Spiritual Problems
 
@@ -163,6 +254,8 @@ The two primary spiritual health problems are lack of purpose (not knowing your 
 
 Viktor Frankl's "Man's Search for Meaning" may be the foundational text on spiritual health. Written by a Holocaust survivor and psychiatrist, it introduces **logotherapy** - therapy through meaning. Frankl's core insight predates and arguably underlies all modern frameworks on purpose and transcendence.
 
+As noted in our [definitions above](#three-dimensions-of-meaning), Frankl primarily emphasizes **significance through self-transcendence** - your life matters because you contribute to something beyond yourself.
+
 {%include amazon.html asin="0807014273" %}
 
 **The Primary Human Drive:** At the heart of logotherapy is a radical claim: "The primary motivational force of individuals is to find meaning in life." Not pleasure (Freud), not power (Adler), but **meaning**. This is the fundamental human drive.
@@ -204,6 +297,8 @@ The lesson: Spiritual health isn't about finding the right circumstances. It's a
 
 In [Build The Life You Want](/build-life-you-want), Brooks describes faith as "anything transcendent that helps you escape the boring sitcom that is your life." His core insight: **"You need to get small."**
 
+Brooks' framework emphasizes **significance beyond self-interest** (see [definitions above](#three-dimensions-of-meaning)) - meaning emerges when you serve causes and people beyond yourself.
+
 **The mechanism:** Standing in awe of something vastly larger makes you appropriately small, which paradoxically provides perspective and peace. "What we need is a sense of the transcendent that makes us small, because we need perspective."
 
 **Specific practices:**
@@ -226,6 +321,8 @@ Research shows spiritual practices protect against depression and anxiety by pro
 ### My Four Healths: Purpose as Direction
 
 In my [Four Healths framework](/four-healths), I treat spiritual health as your **purpose anchor** - the connection to meaning and purpose that prevents aimlessness.
+
+This framework primarily emphasizes **purpose as direction** ([see definitions](#three-dimensions-of-meaning)) - knowing your mountain, having clear values and goals to navigate by.
 
 **What it enables:**
 
@@ -254,6 +351,8 @@ This framework emphasizes **knowing your mountain** - you need direction, not ju
 
 Loehr and Schwartz in "The Power of Full Engagement" define spiritual energy as "connection to deeply held values and a purpose beyond our self-interest." This definition brilliantly bridges both frameworks:
 
+Their approach combines **purpose as direction** with **significance beyond self** ([see definitions](#three-dimensions-of-meaning)), viewing meaning as the energy that fuels all action.
+
 - **Like my framework:** Emphasizes connection to YOUR deeply held values (purpose/direction)
 - **Like Brooks:** Emphasizes "purpose beyond our self-interest" (transcendence/getting small)
 
@@ -274,6 +373,8 @@ The supporting "muscles" of spiritual energy:
 **Rituals:** They emphasize that "rituals create a means by which to translate our values and priorities into action." Spiritual health isn't just having values - it's building the automatic behaviors that keep you aligned with them.
 
 ## Are These Two Dimensions or One?
+
+With our understanding of the [three dimensions of meaning](#three-dimensions-of-meaning), we can now see that the apparent conflict between frameworks comes from emphasizing different aspects of meaning.
 
 ### The Case for Two Separate Dimensions
 
