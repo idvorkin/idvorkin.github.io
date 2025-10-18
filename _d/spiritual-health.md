@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Spiritual Health: Purpose vs. Transcendence"
+title: "Spiritual Health: Purpose, Transcendence and Coherence"
 permalink: /spiritual-health
 tags:
   - emotional-health
   - how igor ticks
 ---
 
-Ever wonder why some people burn out pursuing their life's purpose while others float aimlessly despite feeling deeply connected to the universe? The answer lies in a fundamental confusion about spiritual health. After diving into frameworks from Viktor Frankl to Arthur Brooks, I discovered that "spiritual health" isn't one thing - it's the integration of two distinct human needs: knowing which mountain to climb (purpose) and seeing the entire mountain range (transcendence). Miss either one, and you'll find yourself spiritually malnourished in surprisingly different ways.
+Ever felt directionless despite achieving everything you "should" want? Burned out treating every setback like catastrophe? Exhausted trying to control what you can't? These are manifestations of a lack of spiritual health. "Spiritual health" is poorly defined, so I'll define it practically: **spiritual health means having a north star** (purpose/direction), **knowing you're NOT the center of the universe** (transcendence/perspective), and **accepting you have influence, not control** (coherence/acceptance). Miss any one and you'll find yourself spiritually malnourished in problems as old as time.
 
 {% include alert.html content="I know currently lots of AI slop - but I'm working on it, also using this post as an experiment in AI augmented book reading/learning!" style="info" %}
 
@@ -18,8 +18,9 @@ Ever wonder why some people burn out pursuing their life's purpose while others 
   - [Three Dimensions of Meaning](#three-dimensions-of-meaning)
   - [How Different Frameworks Define Meaning](#how-different-frameworks-define-meaning)
 - [Common Spiritual Problems](#common-spiritual-problems)
-  - [Problem 1: "You Don't Know Your Mountain" (Purpose)](#problem-1-you-dont-know-your-mountain-purpose)
-  - [Problem 2: "You're Too Big" (Transcendence)](#problem-2-youre-too-big-transcendence)
+  - [Problem 1: "You Lack a North Star" (Purpose)](#problem-1-you-lack-a-north-star-purpose)
+  - [Problem 2: "You Are the Center of the Universe" (Transcendence)](#problem-2-you-are-the-center-of-the-universe-transcendence)
+  - [Problem 3: "You Want to Control, But All You Have Is Influence" (Coherence)](#problem-3-you-want-to-control-but-all-you-have-is-influence-coherence)
 - [Four Frameworks on Spiritual Health](#four-frameworks-on-spiritual-health)
   - [Viktor Frankl: Meaning Through Self-Transcendence](#viktor-frankl-meaning-through-self-transcendence)
   - [Arthur Brooks: Transcendence Through Getting Small](#arthur-brooks-transcendence-through-getting-small)
@@ -35,6 +36,8 @@ Ever wonder why some people burn out pursuing their life's purpose while others 
   - [Transcendence (Perspective) and Purpose (Direction)](#transcendence-perspective-and-purpose-direction)
   - [Why Transcendence Matters](#why-transcendence-matters)
   - [The Paradox of Seeking Transcendence](#the-paradox-of-seeking-transcendence)
+- [How increase your purpose](#how-increase-your-purpose)
+- [What's the meaning of life?](#whats-the-meaning-of-life)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -49,14 +52,34 @@ Researchers have identified three distinct components that all get called "meani
 
 **1. Meaning as Coherence (Comprehension)**
 
-This is meaning as "making sense" - your life has a narrative structure that you can understand:
+This is meaning as "making sense" - your life has a narrative structure that you can understand. But here's the paradox: **life contains randomness AND you still need to maximize your influence.**
 
-- Events aren't random; there's a pattern or logic
-- Your story hangs together coherently
-- You can explain how you got where you are
-- Example: "I understand why this happened to me"
+The solution comes from the Serenity Prayer:
 
-Without coherence, life feels chaotic and arbitrary. You might have clear goals and matter to others, but nothing makes sense.
+> God, grant me the serenity to accept the things I cannot change,
+> The courage to change the things I can,
+> And the wisdom to know the difference.
+
+This wisdom shows up across frameworks:
+
+- **7 Habits (Covey):** Circle of Influence vs. Circle of Concern - focus energy on what you can actually affect
+- **Dr. Raph's Anxiety Solution:** Figure out what you're trying to control, then switch to maximizing your influence instead
+- **Christian Perspective:** Trust God's plan while working faithfully - "Work as if everything depends on you; pray as if everything depends on God"
+
+These problems aren't new, Christians tried to solve it way back when:
+
+- _"Trust in the LORD with all your heart and lean not on your own understanding"_ (Proverbs 3:5) - accept what you can't control
+- _"We know that in all things God works for the good of those who love him"_ (Romans 8:28) - coherence emerges through faith
+- _"Whatever your hand finds to do, do it with all your might"_ (Ecclesiastes 9:10) - maximize your influence
+
+**What coherence means:**
+
+- Events aren't all random; there's a pattern or logic (even though many are random)
+- You can explain how you got where you are (even though the story is made up)
+- You accept that you don't have control.
+- Example: "I can't control the outcome, but I can control my response"
+
+Without coherence, life feels chaotic and arbitrary. You might have clear goals and matter to others, but nothing makes sense because you're fighting battles you can't win.
 
 **2. Meaning as Significance (Mattering)**
 
@@ -132,13 +155,6 @@ When you plot these two dimensions, you get four distinct meaning profiles:
 
 This grid reveals a crucial insight: **searching for meaning isn't a sign of lacking meaning** - you can have high presence of meaning AND still be actively seeking more. In fact, the top-right quadrant (presence with seeking) often represents the healthiest spiritual state: grounded in current meaning while remaining open to growth and deeper understanding.
 
-**Four Healths Framework (Igor):**
-
-- Primary emphasis: **Purpose as direction**
-- "Meaning" = Knowing your mountain, having clear values and goals
-- Treats transcendence/significance as potentially separate
-- Focuses on the navigational aspect of meaning
-
 **Power of Full Engagement (Loehr & Schwartz):**
 
 - Primary emphasis: **Purpose that energizes action**
@@ -156,9 +172,13 @@ And when different books promise to help you "find meaning," they might be addre
 
 ## Common Spiritual Problems
 
-The two primary spiritual health problems are lack of purpose (not knowing your mountain) and lack of transcendence (taking yourself too seriously).
+Having strong spiritual health means: **having a north star** (purpose/direction), **knowing you're NOT the center of the universe** (transcendence/perspective), and **accepting you have influence, not control** (coherence/acceptance).
 
-### Problem 1: "You Don't Know Your Mountain" (Purpose)
+**Note:** Spiritual health is often confused with emotional health, but they're orthogonal dimensions - you need both independently. For the key differences, see [Spiritual vs Emotional Health in Four Healths](/four-healths#spiritual-vs-emotional-health-differences).
+
+When these break, you face three core problems:
+
+### Problem 1: "You Lack a North Star" (Purpose)
 
 **What breaks:**
 
@@ -172,18 +192,18 @@ The two primary spiritual health problems are lack of purpose (not knowing your 
 - Clear sense of personal purpose and values
 - Regular engagement with your [eulogy](/eulogy) - who you want to be
 - Making decisions aligned with your values
-- Knowing which mountain you're climbing and why
+- Finding and following your north star
 
 **Example failure case:** The professionally successful person who has achieved everything they thought they wanted but feels empty and wonders "what's the point of all this?"
 
-### Problem 2: "You're Too Big" (Transcendence)
+### Problem 2: "You Are the Center of the Universe" (Transcendence)
 
 **What breaks:**
 
 - Life feels like a tedious sitcom where you're the main character
 - Your problems loom disproportionately large
 - You lack perspective on what actually matters
-- Anxiety and depression from taking yourself too seriously
+- Anxiety and depression from thinking you're the center of the universe
 
 **The cure: Self-Transcendence**
 
@@ -194,6 +214,24 @@ The two primary spiritual health problems are lack of purpose (not knowing your 
 - Seeking truth and serving others (NOT pursuing personal happiness)
 
 **Example failure case:** The person who knows exactly what they want and why, but burns out from treating every setback as catastrophic because they lack cosmic perspective.
+
+### Problem 3: "You Want to Control, But All You Have Is Influence" (Coherence)
+
+**What breaks:**
+
+- You exhaust yourself trying to control outcomes beyond your reach
+- Life feels chaotic because you're optimizing for variables you can't actually affect
+- You lose the narrative thread because you're fighting reality instead of responding to it
+- Anxiety from the gap between effort and results in domains you don't control
+
+**The cure: Accept Your Circle of Influence**
+
+- Distinguish between what you control (your actions, attitudes) and what you don't (outcomes, others' choices)
+- Focus energy on your actual sphere of influence, not your sphere of concern
+- Find meaning in right action regardless of results
+- Accept that some things simply aren't yours to fix
+
+**Example failure case:** The parent who tries to control their adult child's life choices, burning out from attempting to influence decisions that aren't theirs to make - or the leader micromanaging every detail of their team's work instead of empowering them, creating chaos while trying to impose order.
 
 ## Four Frameworks on Spiritual Health
 
@@ -269,7 +307,7 @@ Research shows spiritual practices protect against depression and anxiety by pro
 
 In my [Four Healths framework](/four-healths), I treat spiritual health as your **purpose anchor** - the connection to meaning and purpose that prevents aimlessness.
 
-This framework primarily emphasizes **purpose as direction** ([see definitions](#three-dimensions-of-meaning)) - knowing your mountain, having clear values and goals to navigate by.
+This framework primarily emphasizes **purpose as direction** ([see definitions](#three-dimensions-of-meaning)) - having your north star, having clear values and goals to navigate by.
 
 **What it enables:**
 
@@ -292,7 +330,7 @@ This framework primarily emphasizes **purpose as direction** ([see definitions](
 - Burnout from lack of meaning
 - Difficulty making value-aligned decisions
 
-This framework emphasizes **knowing your mountain** - you need direction, not just perspective. Spiritual rituals anchor you to your deeper "why" and give ordinary moments significance.
+This framework emphasizes **having your north star** - you need direction, not just perspective. Spiritual rituals anchor you to your deeper "why" and give ordinary moments significance.
 
 ### Power of Full Engagement: The Bridge Between Both
 
@@ -349,7 +387,7 @@ These frameworks address **orthogonal failure modes** - you can have one without
 - Don't know where you're going AND take yourself too seriously
 - No direction AND no perspective
 
-This suggests they should be separate dimensions: **Purpose** (knowing your mountain) and **Transcendence** (getting appropriately small).
+This suggests they should be separate dimensions: **Purpose** (having your north star) and **Transcendence** (getting appropriately small).
 
 ### The Case for Developmental Stages
 
@@ -374,20 +412,20 @@ His three paths to meaning demonstrate this:
 
 **Spiritual energy as foundation:** Loehr/Schwartz's framing of spiritual energy as "the force for action in all dimensions" suggests it's not another pillar alongside physical/emotional/cognitive - it's the underlying capacity that energizes all of them.
 
-This view suggests: You start with personal purpose (know your mountain), and as spiritual capacity grows, that purpose naturally expands through self-transcendence (seeing your mountain as part of a vast range, climbing for something beyond yourself).
+This view suggests: You start with personal purpose (find your north star), and as spiritual capacity grows, that purpose naturally expands through self-transcendence (seeing your direction as part of something vastly larger, moving forward for something beyond yourself).
 
 ## Practical Implications
 
 Regardless of whether these are separate dimensions or developmental stages, both are needed:
 
-**If you lack purpose (don't know your mountain):**
+**If you lack purpose (don't have a north star):**
 
 - Work on clarity: [eulogy](/eulogy), values identification, reflection on what matters
 - Build rituals that keep you connected to your "why"
 - Make decisions aligned with values to build character
 - Focus inward first - you need direction before you can transcend
 
-**If you lack transcendence (taking yourself too seriously):**
+**If you lack transcendence (thinking you're the center of the universe):**
 
 - Cultivate awe: nature walks at dawn, meditation, philosophy
 - Shift focus from "what will make ME happy" to "what is true and how can I serve"
@@ -402,7 +440,7 @@ Regardless of whether these are separate dimensions or developmental stages, bot
 
 **If you have both:**
 
-- You're in the rare position of knowing your mountain AND having perspective on the range
+- You're in the rare position of having your north star AND having perspective on the universe
 - Your challenge: maintaining both through life's inevitable changes
 - Keep both practice streams active - purpose without transcendence becomes obsession, transcendence without purpose becomes escapism
 
@@ -544,6 +582,32 @@ Here's the catch: You can't achieve transcendence through effort the way you ach
 - Let it transform you rather than trying to possess it
 
 Transcendence is less something you DO and more something you ALLOW. It's not an achievement but a release - a letting go of the very self that seeks transcendence.
+
+## How increase your purpose
+
+(From Power of full engagement)
+
+1. Go from negative (not losing) to positive (thriving)
+1. Go from extrinsic motivation (money) to intrinsic motivation (autonomy, mastery, purpose)
+1. Go from self to others
+
+## What's the meaning of life?
+
+Here's where I love Viktor Frankl's insight the most: You're asking the wrong question.
+
+**You should not ask what "what's the point?" Life is asking YOU: "What's the point of YOUR life?"**
+
+And you answer not with words, but with what you decide are your responsibilities.
+
+When life presents situations - a child needing guidance, a problem needing solving, work needing doing - it's asking "what are you going to do about this?" Your meaning emerges from how you respond. From what you choose to be responsible for.
+
+This is why Frankl's three paths ([mentioned earlier](#viktor-frankl-meaning-through-self-transcendence)) are all outward expressions: creating work, loving someone, choosing your attitude toward suffering. Each is taking responsibility for something beyond just existing.
+
+My [eulogy](/eulogy) is my answer to life's question: being a great father, being present, bringing joy, helping others grow. Not abstract philosophy - commitments to show up in specific ways.
+
+The meaning gets stronger when those responsibilities extend beyond yourself - when you're responsible for your kids' growth, your partner's wellbeing, your team's success. That's when purpose and transcendence merge.
+
+Stop asking life what it means. Start answering life's question about what YOU mean to do with it.
 
 {%include summarize-page.html src="/four-healths" %}
 {%include summarize-page.html src="/build-life-you-want" %}

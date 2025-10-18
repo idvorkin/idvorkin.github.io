@@ -2459,7 +2459,7 @@
                 "/operating-manual",
                 "/spiritual-health"
             ],
-            "last_modified": "2025-10-17T16:32:20.354181",
+            "last_modified": "2025-10-18T17:10:21.001979",
             "markdown_path": "_d/four-healths.md",
             "outgoing_links": [
                 "/7-habits",
@@ -2467,17 +2467,14 @@
                 "/emotional-health",
                 "/eulogy",
                 "/habits",
-                "/how-to-read",
                 "/last-year",
                 "/new-skills",
                 "/operating-manual",
                 "/physical-health",
                 "/process-journal",
-                "/religion",
                 "/siy",
                 "/spiritual-health",
                 "/sublime",
-                "/time_off",
                 "/writing"
             ],
             "redirect_url": "",
@@ -4281,7 +4278,6 @@
             "doc_size": 52000,
             "file_path": "_site/religion.html",
             "incoming_links": [
-                "/four-healths",
                 "/spiritual-health"
             ],
             "last_modified": "2025-10-16T09:54:11-04:00",
@@ -4667,13 +4663,13 @@
             "url": "/software-leadership-roles"
         },
         "/spiritual-health": {
-            "description": "Ever wonder why some people burn out pursuing their life’s purpose while others float aimlessly despite feeling deeply connected to the universe? The answer lies in a fundamental confusion about spiritual health. After diving into frameworks from Viktor Frankl to Arthur Brooks, I discovered that “spiritual health” isn’t one thing - it’s the integration of two distinct human needs: knowing which mountain to climb (purpose) and seeing the entire mountain range (transcendence). Miss either one, and you’ll find yourself spiritually malnourished in surprisingly different ways.\n\n",
-            "doc_size": 54000,
+            "description": "Ever felt directionless despite achieving everything you “should” want? Burned out treating every setback like catastrophe? Exhausted trying to control what you can’t? These are manifestations of a lack of spiritual health. “Spiritual health” is poorly defined, so I’ll define it practically: spiritual health means having a north star (purpose/direction), knowing you’re NOT the center of the universe (transcendence/perspective), and accepting you have influence, not control (coherence/acceptance). Miss any one and you’ll find yourself spiritually malnourished in problems as old as time.\n\n",
+            "doc_size": 60000,
             "file_path": "_site/spiritual-health.html",
             "incoming_links": [
                 "/four-healths"
             ],
-            "last_modified": "2025-10-17T17:23:50.465065",
+            "last_modified": "2025-10-18T17:05:51.925241",
             "markdown_path": "_d/spiritual-health.md",
             "outgoing_links": [
                 "/build-life-you-want",
@@ -4682,7 +4678,7 @@
                 "/religion"
             ],
             "redirect_url": "",
-            "title": "Spiritual Health: Purpose vs. Transcendence",
+            "title": "Spiritual Health: Purpose, Transcendence and Coherence",
             "url": "/spiritual-health"
         },
         "/stock-concentration": {

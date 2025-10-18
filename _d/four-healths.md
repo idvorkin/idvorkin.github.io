@@ -33,7 +33,7 @@ This framework draws heavily from two foundational books on energy and happiness
 - [Common Failure Patterns](#common-failure-patterns)
 - [Building Your Health System](#building-your-health-system)
 - [Ideas I'm grinding through](#ideas-im-grinding-through)
-  - [Spiritual Health: Two Different Frameworks Solving Different Problems](#spiritual-health-two-different-frameworks-solving-different-problems)
+  - [Spiritual Health: Purpose vs. Transcendence](#spiritual-health-purpose-vs-transcendence)
   - [Spiritual vs Emotional Health Differences](#spiritual-vs-emotional-health-differences)
   - [Spiritual Health vs Identity](#spiritual-health-vs-identity)
   - [Mapping to Igor's Affirmations](#mapping-to-igors-affirmations)
@@ -126,7 +126,7 @@ Spiritual health is your connection to meaning and purpose. It's what prevents y
 - Burnout from lack of meaning
 - Difficulty making value-aligned decisions
 
-{%include summarize-page.html src="/religion" %}
+{%include summarize-page.html src="/spiritual-health" %}
 
 Even if you're not religious, spiritual rituals matter. They anchor you to your deeper "why" and give ordinary moments significance.
 
@@ -157,7 +157,7 @@ Cognitive health is your ability to think clearly, learn effectively, and grow c
 
 {%include summarize-page.html src="/writing" %}
 
-Also see: [How to read](/how-to-read) and my approach to [learning new skills](/new-skills).
+Also see my approach to [learning new skills](/new-skills).
 
 ## Why All Four Matter
 
@@ -401,4 +401,4 @@ I'm naturally incredibly curious and love digging into tech, ideas, and understa
 
 The real insight: **Affirmations should reinforce what you struggle with, not what comes naturally.** My cognitive health doesn't need daily affirmations - it needs systems and structures, which I've built through this blog and my writing practice.
 
-Related: [Igor's Operating Manual](/operating-manual), [The 7 Habits](/7-habits), [Time Off Planning](/time_off)
+Related: [Igor's Operating Manual](/operating-manual), [The 7 Habits](/7-habits)
