@@ -101,34 +101,35 @@ Emotional health is your ability to navigate feelings, maintain positive relatio
 
 See also: [Search Inside Yourself](/siy) for emotional intelligence training, and [Sublime States](/sublime) for Buddhist practices on emotional well-being.
 
-### Spiritual Health: Your Purpose Anchor
+### Spiritual Health: Your Purpose, Perspective, and Acceptance
 
-Spiritual health is your connection to meaning and purpose. It's what prevents you from feeling aimless even when you're succeeding by external measures. This has nothing to do with religion (though it can) - it's about knowing your "why."
+Spiritual health means having a north star (purpose/direction), knowing you're NOT the center of the universe (transcendence/perspective), and accepting you have influence, not control (coherence/acceptance). It's what prevents you from feeling aimless, burning out from lack of perspective, or exhausting yourself trying to control what's beyond your reach. Some people find this through [religion](/religion), but even if you're not religious, these dimensions of spiritual health remain essential.
 
 **What it enables:**
 
-- Persisting through difficulty when results are far away
+- Persisting through difficulty when results are far away (purpose)
+- Maintaining perspective on what actually matters (transcendence)
+- Focusing energy on what you can actually influence (coherence)
 - Making decisions aligned with your values
-- Finding meaning in ordinary moments
-- Staying engaged rather than just going through motions
 
 **Core components:**
 
-- Clear sense of purpose and values
-- Connection to something larger than yourself
+- Clear sense of purpose and values (your north star)
+- Practices that provide cosmic perspective and awe (getting small)
+- Distinguishing your circle of influence from circle of concern
 - Rituals that mark transitions and create meaning
-- Regular reflection on what matters
 
 **What happens when you neglect it:**
 
-- Feeling aimless despite achievement
+- Feeling aimless despite achievement (missing purpose)
+- Burning out from treating every setback as catastrophic (missing transcendence)
+- Exhausting yourself trying to control outcomes beyond your reach (missing coherence)
 - Disengagement and going through motions
-- Burnout from lack of meaning
-- Difficulty making value-aligned decisions
 
 {%include summarize-page.html src="/spiritual-health" %}
+{%include summarize-page.html src="/religion" %}
 
-Even if you're not religious, spiritual rituals matter. They anchor you to your deeper "why" and give ordinary moments significance.
+Even if you're not religious, spiritual rituals matter. They anchor you to your deeper "why," provide perspective on your place in the universe, and help you focus on what you can actually affect.
 
 ### Cognitive Health: Your Growth Engine
 
@@ -279,6 +280,8 @@ For a comprehensive analysis of these frameworks and whether purpose and transce
 
 These two dimensions are often confused, but they address completely different problems. You need both, independently.
 
+I think of emotional health as being able to get you through short term difficulties - triggers/anger/insults, while spiritual health can get you through the long slog. Using a physical analogy emotional health is your strength - the anaerobic system, while spiritual health is endurance, the aerobic system.
+
 **Spiritual Health: Connection to Meaning**
 
 Spiritual rituals anchor you to a deeper "why" - they create and maintain your connection to purpose, values, and what matters beyond immediate circumstances. When your spiritual health is strong, you know what you're working toward and why it matters.
@@ -290,23 +293,6 @@ Spiritual rituals anchor you to a deeper "why" - they create and maintain your c
 Emotional rituals maintain your ability to process feelings, regulate your responses, and stay present with whatever you're experiencing. When your emotional health is strong, you can navigate setbacks, process difficult feelings, and maintain relationships even under stress.
 
 **What breaks without it:** You experience mood swings, reactivity, relationship damage, or emotional burnout. You might know exactly what matters (spiritual health intact) but can't execute consistently because your emotional state keeps derailing you. Or you maintain your routines but can't actually feel or connect with anyone, including yourself.
-
-**Why You Need Both**
-
-These aren't hierarchical - one doesn't support the other. They're orthogonal:
-
-- You can have **strong spiritual health but poor emotional health**: You know your purpose, your values are clear, but you're emotionally volatile, burning out, or damaging relationships. You have direction but can't sustain the journey.
-
-- You can have **strong emotional health but poor spiritual health**: You're emotionally regulated, resilient, and maintain great relationships, but feel aimless and wonder why you're doing any of it. You can handle the journey but don't know where you're going.
-
-- **Without both**: You're emotionally unstable AND directionless - reactive, relationship problems, no sense of purpose or meaning.
-
-Think of it this way:
-
-- **Spiritual health** = Knowing which mountain you're climbing and why
-- **Emotional health** = Having the emotional capacity to climb, handle setbacks, and maintain relationships with your climbing partners
-
-You can't substitute one for the other. Purpose doesn't make you emotionally resilient. Emotional resilience doesn't give you purpose.
 
 ### Spiritual Health vs Identity
 

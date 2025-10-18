@@ -2459,7 +2459,7 @@
                 "/operating-manual",
                 "/spiritual-health"
             ],
-            "last_modified": "2025-10-18T17:10:21.001979",
+            "last_modified": "2025-10-18T17:37:43.940006",
             "markdown_path": "_d/four-healths.md",
             "outgoing_links": [
                 "/7-habits",
@@ -2472,6 +2472,7 @@
                 "/operating-manual",
                 "/physical-health",
                 "/process-journal",
+                "/religion",
                 "/siy",
                 "/spiritual-health",
                 "/sublime",
@@ -4278,6 +4279,7 @@
             "doc_size": 52000,
             "file_path": "_site/religion.html",
             "incoming_links": [
+                "/four-healths",
                 "/spiritual-health"
             ],
             "last_modified": "2025-10-16T09:54:11-04:00",
