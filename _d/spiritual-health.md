@@ -421,7 +421,7 @@ Regardless of whether these are separate dimensions or developmental stages, bot
 **If you lack purpose (don't have a north star):**
 
 - Work on clarity: [eulogy](/eulogy), values identification, reflection on what matters
-- Build rituals that keep you connected to your "why"
+- Build rituals that keep you connected to your "why" - like a [daily devotional practice](/walking-with-god)
 - Make decisions aligned with values to build character
 - Focus inward first - you need direction before you can transcend
 

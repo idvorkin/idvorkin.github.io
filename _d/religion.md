@@ -81,6 +81,8 @@ That was the day religion showed its worth to me: not in metaphysics, but in str
 
 I won't list their name out of privacy, but in my deep respect for this person I had to really dig into god, I went to a few sermons live, and this person started reading a daily devotional, and so did I.
 
+{%include summarize-page.html src="/walking-with-god" %}
+
 Some observations I've had:
 
 - There are many different religions, with deeply different beliefs

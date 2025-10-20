@@ -4292,10 +4292,11 @@
                 "/spiritual-health",
                 "/walking-with-god"
             ],
-            "last_modified": "2025-10-16T09:54:11-04:00",
+            "last_modified": "2025-10-20T11:28:49.801219",
             "markdown_path": "_d/religion.md",
             "outgoing_links": [
-                "/affirmations"
+                "/affirmations",
+                "/walking-with-god"
             ],
             "redirect_url": "",
             "title": "Religion: Losing belief while seeing value",
@@ -4683,13 +4684,14 @@
                 "/happy",
                 "/walking-with-god"
             ],
-            "last_modified": "2025-10-18T17:26:46-04:00",
+            "last_modified": "2025-10-20T11:28:49.801219",
             "markdown_path": "_d/spiritual-health.md",
             "outgoing_links": [
                 "/build-life-you-want",
                 "/eulogy",
                 "/four-healths",
-                "/religion"
+                "/religion",
+                "/walking-with-god"
             ],
             "redirect_url": "",
             "title": "Spiritual Health: Purpose, Transcendence and Coherence",
@@ -5883,7 +5885,10 @@
             "description": "Someone important to me has been reading a daily devotional. So even though I’m not religious, I’m studying with them to be able to have conversations about the insights - whether in a secular or religious context. This is my attempt to bridge two worlds: honoring the spiritual wisdom they’re finding while translating it into language that works for my engineer brain.\n\n",
             "doc_size": 20000,
             "file_path": "_site/walking-with-god.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/religion",
+                "/spiritual-health"
+            ],
             "last_modified": "2025-10-20T11:26:11-04:00",
             "markdown_path": "_d/walking-with-god.md",
             "outgoing_links": [
