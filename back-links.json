@@ -1275,12 +1275,12 @@
         },
         "/build-life-you-want": {
             "description": "Happiness isn’t a destination you arrive at—it’s a direction you choose to walk in daily. Build The Life YOU Want by Arthur Brooks and Oprah Winfrey demolishes the myth that happiness is something that happens to you, replacing it with the empowering truth that happiness is something you actively create. This isn’t another feel-good book promising easy answers; it’s a science-backed roadmap for building genuine fulfillment through intentional choices and sustainable practices.\n\n",
-            "doc_size": 39000,
+            "doc_size": 40000,
             "file_path": "_site/build-life-you-want.html",
             "incoming_links": [
                 "/spiritual-health"
             ],
-            "last_modified": "2025-10-04T17:51:33-07:00",
+            "last_modified": "2025-10-20T10:30:00.032221",
             "markdown_path": "_d/build-the-life-you-want.md",
             "outgoing_links": [
                 "/bucket-list",
@@ -2843,6 +2843,7 @@
             "doc_size": 19000,
             "file_path": "_site/hobby.html",
             "incoming_links": [
+                "/new-skills",
                 "/operating-manual",
                 "/retire"
             ],
@@ -3690,7 +3691,7 @@
         },
         "/new-skills": {
             "description": "Magic, Kettle Bells, Public Speaking - every skill I’ve acquired follows the same immutable laws. These laws govern how we learn, progress, and master new abilities. It’s possible these laws don’t apply to you, but I doubt it.\n\n",
-            "doc_size": 16000,
+            "doc_size": 17000,
             "file_path": "_site/new-skills.html",
             "incoming_links": [
                 "/about",
@@ -3700,9 +3701,11 @@
                 "/physical-pain",
                 "/recent"
             ],
-            "last_modified": "2025-02-09T09:50:07-08:00",
+            "last_modified": "2025-10-20T10:00:26.247708",
             "markdown_path": "_d/laws-of-new-skills.md",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/hobby"
+            ],
             "redirect_url": "",
             "title": "The Immutable Laws of New Skills",
             "url": "/new-skills"

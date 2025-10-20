@@ -15,6 +15,7 @@ Happiness isn't a destination you arrive at—it's a direction you choose to wal
 
 - [The Book](#the-book)
   - [1. Happiness Is Not the Goal, and Unhappiness Is Not the Enemy](#1-happiness-is-not-the-goal-and-unhappiness-is-not-the-enemy)
+    - [Pleasure vs Enjoyment](#pleasure-vs-enjoyment)
   - [2. The Power of Metacognition](#2-the-power-of-metacognition)
   - [3. Choose a Better Emotion](#3-choose-a-better-emotion)
   - [4. Focus Less on Yourself](#4-focus-less-on-yourself)
@@ -57,6 +58,14 @@ Brooks and Winfrey challenge our fundamental assumptions about happiness. Rather
 - Unhappiness often signals areas that need attention
 - Both positive and negative emotions provide valuable information
 - The goal is emotional intelligence, not emotional perfection
+
+#### Pleasure vs Enjoyment
+
+Brooks makes a crucial distinction: **Pleasure happens to you; enjoyment is something you create.** Pleasure is fleeting and passive (eating ice cream, watching TV), while enjoyment requires two additional elements:
+
+**Enjoyment = Pleasure + People + Memory**
+
+Example: Beer ads never show someone drinking alone—they show friends creating memories together. That's because enjoyment, not mere pleasure, creates lasting happiness.
 
 **Three Challenges Addressed:**
 
