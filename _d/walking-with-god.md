@@ -18,6 +18,19 @@ Someone important to me has been reading a daily devotional. So even though I'm 
 - [Why I'm Doing This](#why-im-doing-this)
 - [The Translation Challenge](#the-translation-challenge)
 - [Daily Insights](#daily-insights)
+  - [January](#january)
+  - [February](#february)
+  - [March](#march)
+  - [April](#april)
+  - [May](#may)
+  - [June](#june)
+  - [July](#july)
+  - [August](#august)
+  - [September](#september)
+  - [October](#october)
+    - [October 20th - Seeing His Face](#october-20th---seeing-his-face)
+  - [November](#november)
+  - [December](#december)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -85,17 +98,14 @@ _This section will grow as I continue the practice. Each entry captures both the
 
 #### October 20th - Seeing His Face
 
-_To me this is really about self-compassion._
+To me this is really about: **Self-compassion/self-acceptance.**
 
-The line that hit me: **"If God accepts me as I am, I'd better do the same."**
+My favorite line in the pasage: **"If God accepts me as I am, I'd better do the same."**
 
-This captures something I struggle with - being gentler with myself than my inner critic allows. The religious framing is "God accepts you," but the secular translation is self-compassion: treating yourself with the same kindness you'd offer a good friend.
+**Important distinction:** Acceptance isn't surrender. It's not "this is who I am and I'll never change." True acceptance means "I accept where I am right now AND I have hope for improvement." (Without the hope part, acceptance becomes resignation - that's bad)
 
 {%include summarize-page.html src="/compassion" %}
-
-**Important distinction:** Acceptance isn't surrender. It's not "this is who I am and I'll never change." True acceptance means "I accept where I am right now AND I have hope for improvement."
-
-Without the hope part, acceptance becomes resignation. With both together, it becomes the foundation for growth.
+{%include summarize-page.html src="/getting-to-yes-with-yourself" %}
 
 ### November
 
