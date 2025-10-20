@@ -1278,9 +1278,10 @@
             "doc_size": 40000,
             "file_path": "_site/build-life-you-want.html",
             "incoming_links": [
+                "/happy",
                 "/spiritual-health"
             ],
-            "last_modified": "2025-10-20T10:30:00.032221",
+            "last_modified": "2025-10-20T10:30:02-04:00",
             "markdown_path": "_d/build-the-life-you-want.md",
             "outgoing_links": [
                 "/bucket-list",
@@ -1581,7 +1582,6 @@
                 "/emotions",
                 "/essentialism",
                 "/first-understand",
-                "/getting-to-yes-with-yourself",
                 "/happy",
                 "/negotiate",
                 "/operating-manual",
@@ -1764,6 +1764,7 @@
                 "/activation",
                 "/d/resistance",
                 "/energy-abundance",
+                "/four-healths",
                 "/hobby",
                 "/idle",
                 "/life-as-business",
@@ -2453,21 +2454,21 @@
         },
         "/four-healths": {
             "description": "Health isn’t one-dimensional. You can be physically fit but emotionally exhausted. You can be cognitively sharp but spiritually adrift. True well-being requires attending to all four dimensions of health: physical, emotional, spiritual, and cognitive. Each dimension serves a different purpose, requires different practices, and neglecting any one creates vulnerabilities that ripple across your entire life.\n\n",
-            "doc_size": 42000,
+            "doc_size": 41000,
             "file_path": "_site/four-healths.html",
             "incoming_links": [
                 "/mortality-software",
                 "/operating-manual",
                 "/spiritual-health"
             ],
-            "last_modified": "2025-10-18T17:37:43.940006",
+            "last_modified": "2025-10-18T17:37:48-04:00",
             "markdown_path": "_d/four-healths.md",
             "outgoing_links": [
                 "/7-habits",
                 "/affirmations",
+                "/d/habits",
                 "/emotional-health",
                 "/eulogy",
-                "/habits",
                 "/last-year",
                 "/new-skills",
                 "/operating-manual",
@@ -2610,24 +2611,21 @@
             "title": "Your new interns - GenAI for fun and profit",
             "url": "/genai-talk"
         },
-        "/getting-to-yes-with-yourself": {
+        "/get-to-yes-with-yourself": {
             "description": "Before you can negotiate with others, you need to be in sync with yourself. This book applies the negotiating principles to yourself. It’s an awkward application of the model, but this book is filled with good concepts regardless.\n\n",
             "doc_size": 25000,
-            "file_path": "_site/getting-to-yes-with-yourself.html",
-            "incoming_links": [
-                "/books-that-defined-me",
-                "/depression"
-            ],
-            "last_modified": "2025-08-24T09:03:19-07:00",
+            "file_path": "_site/get-to-yes-with-yourself.html",
+            "incoming_links": [],
+            "last_modified": "2025-10-20T11:23:18.744146",
             "markdown_path": "_posts/2015-12-23-getting-to-yes-with-yourself.md",
             "outgoing_links": [
-                "/curious",
-                "/negotiate",
+                "/grandmother",
+                "/gty",
                 "/welcome-to-holland"
             ],
             "redirect_url": "",
             "title": "Getting to yes with yourself",
-            "url": "/getting-to-yes-with-yourself"
+            "url": "/get-to-yes-with-yourself"
         },
         "/goals": {
             "description": "Goals are critical, there are multiple goal systems and they have consequences. They are mechanisms to deliver without micro management.\n\n",
@@ -2785,8 +2783,8 @@
             "url": "/gtd"
         },
         "/happy": {
-            "description": "Happy is a 5 letter word that many use as the answer to what is the point of life. The follow up question of “How can you be happy” is usually followed by a blank stare, so here’s my study of the subject.\n\n",
-            "doc_size": 27000,
+            "description": "Happy is a 5 letter word that many use as the answer to what is the point of life. The follow up question of “How can you be happy” is usually followed by a blank stare, so here’s my study of the subject. Probably the most important thing is happiness is not a mood, it’s journey -  Like the weather vs the climate.\n\n",
+            "doc_size": 30000,
             "file_path": "_site/happy.html",
             "incoming_links": [
                 "/chasing-daylight",
@@ -2808,11 +2806,12 @@
                 "/timeoff-2024-08",
                 "/timeoff-2025-08"
             ],
-            "last_modified": "2025-07-20T19:26:41-07:00",
+            "last_modified": "2025-10-20T10:30:02-04:00",
             "markdown_path": "_posts/2017-04-12-happy.md",
             "outgoing_links": [
                 "/addiction",
                 "/anxiety",
+                "/build-life-you-want",
                 "/curious",
                 "/eulogy",
                 "/idle",
@@ -2820,7 +2819,8 @@
                 "/mental-pain",
                 "/moments",
                 "/mood",
-                "/negotiate"
+                "/negotiate",
+                "/spiritual-health"
             ],
             "redirect_url": "",
             "title": "Happy",
@@ -2840,21 +2840,22 @@
         },
         "/hobby": {
             "description": "Some days thinking about work makes me stressed, thinking of my family makes me resentful, and I don’t want to feel like a sloth feeding my addictions to TikTok, and doom scrolling. Those days, I’m grateful for my hobbies. This post gives you reasons to find a hobby and teaches you the attributes in an ideal hobby: Being accessible, Supporting mastery, Reinforcing your identity, and building relationships.\n\n",
-            "doc_size": 19000,
+            "doc_size": 20000,
             "file_path": "_site/hobby.html",
             "incoming_links": [
                 "/new-skills",
                 "/operating-manual",
                 "/retire"
             ],
-            "last_modified": "2022-05-09T07:53:36-07:00",
+            "last_modified": "2025-10-20T09:59:44-04:00",
             "markdown_path": "_d/hobby.md",
             "outgoing_links": [
                 "/d/habits",
                 "/eulogy",
                 "/happy",
                 "/joy",
-                "/magic"
+                "/magic",
+                "/new-skills"
             ],
             "redirect_url": "",
             "title": "Why a Engineering Manager masquerades as a magician on the weekends",
@@ -3637,7 +3638,7 @@
                 "/bike-tesla-identity",
                 "/goals"
             ],
-            "last_modified": "2025-10-20T09:00:10.582930",
+            "last_modified": "2025-10-20T09:00:34-04:00",
             "markdown_path": "_d/2018-04-29-mortality-software.md",
             "outgoing_links": [
                 "/affirmations",
@@ -3656,7 +3657,6 @@
             "file_path": "_site/negotiate.html",
             "incoming_links": [
                 "/curious",
-                "/getting-to-yes-with-yourself",
                 "/happy",
                 "/productive",
                 "/sell",
@@ -3696,12 +3696,13 @@
             "incoming_links": [
                 "/about",
                 "/four-healths",
+                "/hobby",
                 "/operating-manual",
                 "/physical-health",
                 "/physical-pain",
                 "/recent"
             ],
-            "last_modified": "2025-10-20T10:00:26.247708",
+            "last_modified": "2025-10-20T10:00:34-04:00",
             "markdown_path": "_d/laws-of-new-skills.md",
             "outgoing_links": [
                 "/hobby"
@@ -4285,7 +4286,8 @@
             "file_path": "_site/religion.html",
             "incoming_links": [
                 "/four-healths",
-                "/spiritual-health"
+                "/spiritual-health",
+                "/walking-with-god"
             ],
             "last_modified": "2025-10-16T09:54:11-04:00",
             "markdown_path": "_d/religion.md",
@@ -4674,9 +4676,11 @@
             "doc_size": 60000,
             "file_path": "_site/spiritual-health.html",
             "incoming_links": [
-                "/four-healths"
+                "/four-healths",
+                "/happy",
+                "/walking-with-god"
             ],
-            "last_modified": "2025-10-18T17:05:51.925241",
+            "last_modified": "2025-10-18T17:26:46-04:00",
             "markdown_path": "_d/spiritual-health.md",
             "outgoing_links": [
                 "/build-life-you-want",
@@ -5872,6 +5876,22 @@
             "title": "Voices in my head - A survey of my personalities",
             "url": "/voices"
         },
+        "/walking-with-god": {
+            "description": "Someone important to me has been reading a daily devotional. So even though I’m not religious, I’m studying with them to be able to have conversations about the insights - whether in a secular or religious context. This is my attempt to bridge two worlds: honoring the spiritual wisdom they’re finding while translating it into language that works for my engineer brain.\n\n",
+            "doc_size": 19000,
+            "file_path": "_site/walking-with-god.html",
+            "incoming_links": [],
+            "last_modified": "2025-10-20T11:23:18.744146",
+            "markdown_path": "_d/walking-with-god.md",
+            "outgoing_links": [
+                "/compassion",
+                "/religion",
+                "/spiritual-health"
+            ],
+            "redirect_url": "",
+            "title": "Walking with God: A Daily Devotional Journey",
+            "url": "/walking-with-god"
+        },
         "/warm": {
             "description": "Staying warm is important, here’s the gear I use on and off the bike\n\n",
             "doc_size": 20000,
@@ -5905,7 +5925,7 @@
             "doc_size": 15000,
             "file_path": "_site/welcome-to-holland.html",
             "incoming_links": [
-                "/getting-to-yes-with-yourself"
+                "/get-to-yes-with-yourself"
             ],
             "last_modified": "2018-12-25T15:32:00-08:00",
             "markdown_path": "_posts/2015-12-26-welcome-to-holland.md",

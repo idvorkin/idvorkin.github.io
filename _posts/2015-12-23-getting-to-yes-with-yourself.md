@@ -5,6 +5,7 @@ author: "Igor Dvorkin"
 comments: true
 inprogress: true
 collapsible: true
+permalink: /get-to-yes-with-yourself
 
 tags:
   - emotional intelligence
