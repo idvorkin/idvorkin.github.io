@@ -621,3 +621,4 @@ From the [2025-10-15 YouTube session](/published-chop-logs/2025-10-15-youtube-re
 
 - `yt-dlp`: [Installation instructions](https://github.com/yt-dlp/yt-dlp#installation)
 - `captions.py`: [Source](https://github.com/idvorkin/nlp/blob/c050626b4f88ffb09622938d1bb5c55c2e05618a/captions.py?plain=1#L21) in idvorkin/nlp repo
+- Before committing check for typos and fix
