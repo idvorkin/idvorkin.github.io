@@ -5,7 +5,7 @@ permalink: /walking-with-god
 imagefeatureblob: blog/raccoon-religion.webp
 ---
 
-Someone important to me has been reading a daily devotional. So even though I'm not religious, I'm studying with them to be able to have conversations about the insights - whether in a secular or religious context. This is my attempt to bridge two worlds: honoring the spiritual wisdom they're finding while translating it into language that works for my engineer brain.
+Someone important to me has been reading a daily devotional. Even though I'm not religious, I'm studying with them to be able to have conversations about the insights - whether in a secular or religious context. This is my attempt to bridge two worlds: honoring the spiritual wisdom they're finding while translating it into language that works for my engineer brain.
 
 {% include amazon.html asin="1414316615" %}
 
