@@ -276,8 +276,11 @@ class idvorkin_github_io_config:
 
     def make_site_relative_url_from_url(self, url: PathType) -> PathType:
         # Jekyll generates URLs that include the host
-        url = url.replace("http://localhost:4000", "")
-        url = url.replace("http://0.0.0.0:4000", "")
+        # Strip localhost URLs with any port
+        import re
+
+        url = re.sub(r"http://localhost(:\d+)?", "", url)
+        url = re.sub(r"http://0\.0\.0\.0(:\d+)?", "", url)
         url = url.replace("https://idvork.in", "")
         url = url.replace("http://idvork.in", "")
         return PathType(url)
