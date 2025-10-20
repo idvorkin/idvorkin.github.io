@@ -105,7 +105,7 @@ My favorite line in the pasage: **"If God accepts me as I am, I'd better do the 
 **Important distinction:** Acceptance isn't surrender. It's not "this is who I am and I'll never change." True acceptance means "I accept where I am right now AND I have hope for improvement." (Without the hope part, acceptance becomes resignation - that's bad)
 
 {%include summarize-page.html src="/compassion" %}
-{%include summarize-page.html src="/getting-to-yes-with-yourself" %}
+{%include summarize-page.html src="/get-to-yes-with-yourself" %}
 
 ### November
 

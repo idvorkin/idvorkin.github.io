@@ -1583,7 +1583,6 @@
                 "/essentialism",
                 "/first-understand",
                 "/get-to-yes-with-yourself",
-                "/happy",
                 "/negotiate",
                 "/operating-manual",
                 "/psychic-weight",
@@ -2616,7 +2615,9 @@
             "description": "Before you can negotiate with others, you need to be in sync with yourself. This book applies the negotiating principles to yourself. It’s an awkward application of the model, but this book is filled with good concepts regardless.\n\n",
             "doc_size": 25000,
             "file_path": "_site/get-to-yes-with-yourself.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/walking-with-god"
+            ],
             "last_modified": "2025-10-20T11:23:26-04:00",
             "markdown_path": "_posts/2015-12-23-getting-to-yes-with-yourself.md",
             "outgoing_links": [
@@ -2784,8 +2785,8 @@
             "url": "/gtd"
         },
         "/happy": {
-            "description": "Happy is a 5 letter word that many use as the answer to what is the point of life. The follow up question of “How can you be happy” is usually followed by a blank stare, so here’s my study of the subject. Probably the most important thing is happiness is not a mood, it’s journey -  Like the weather vs the climate.\n\n",
-            "doc_size": 30000,
+            "description": "Happy is a 5 letter word that many use as the answer to what is the point of life. The follow up question of “How can you be happy” is usually followed by a blank stare, so here’s my study of the subject. Probably the most important thing is happiness is not a mood, it’s journey - Like the weather vs the climate.\n\n",
+            "doc_size": 31000,
             "file_path": "_site/happy.html",
             "incoming_links": [
                 "/chasing-daylight",
@@ -2807,20 +2808,22 @@
                 "/timeoff-2024-08",
                 "/timeoff-2025-08"
             ],
-            "last_modified": "2025-10-20T10:30:02-04:00",
+            "last_modified": "2025-10-20T12:57:15.744516",
             "markdown_path": "_posts/2017-04-12-happy.md",
             "outgoing_links": [
                 "/addiction",
                 "/anxiety",
                 "/build-life-you-want",
-                "/curious",
+                "/compassion",
                 "/eulogy",
-                "/idle",
+                "/gty",
+                "/hobby",
+                "/idle-loop",
                 "/joy",
                 "/mental-pain",
                 "/moments",
                 "/mood",
-                "/negotiate",
+                "/new-skills",
                 "/spiritual-health"
             ],
             "redirect_url": "",
@@ -2844,6 +2847,7 @@
             "doc_size": 20000,
             "file_path": "_site/hobby.html",
             "incoming_links": [
+                "/happy",
                 "/new-skills",
                 "/operating-manual",
                 "/retire"
@@ -2911,7 +2915,6 @@
                 "/anxiety",
                 "/depression",
                 "/gtd",
-                "/happy",
                 "/psychic-weight"
             ],
             "last_modified": "2025-09-28T10:02:40-07:00",
@@ -3659,7 +3662,6 @@
             "incoming_links": [
                 "/curious",
                 "/get-to-yes-with-yourself",
-                "/happy",
                 "/productive",
                 "/sell",
                 "/synergize",
@@ -3698,6 +3700,7 @@
             "incoming_links": [
                 "/about",
                 "/four-healths",
+                "/happy",
                 "/hobby",
                 "/operating-manual",
                 "/physical-health",
@@ -5888,11 +5891,11 @@
                 "/religion",
                 "/spiritual-health"
             ],
-            "last_modified": "2025-10-20T12:52:55.029300",
+            "last_modified": "2025-10-20T12:57:15.744516",
             "markdown_path": "_d/walking-with-god.md",
             "outgoing_links": [
                 "/compassion",
-                "/getting-to-yes-with-yourself",
+                "/get-to-yes-with-yourself",
                 "/religion",
                 "/spiritual-health"
             ],
