@@ -29,6 +29,7 @@ Someone important to me has been reading a daily devotional. Even though I'm not
   - [September](#september)
   - [October](#october)
     - [October 20th - Seeing His Face](#october-20th---seeing-his-face)
+    - [October 21st - The Pleasure of God](#october-21st---the-pleasure-of-god)
   - [November](#november)
   - [December](#december)
 
@@ -106,6 +107,24 @@ My favorite line in the pasage: **"If God accepts me as I am, I'd better do the 
 
 {%include summarize-page.html src="/compassion" %}
 {%include summarize-page.html src="/get-to-yes-with-yourself" %}
+
+#### October 21st - The Pleasure of God
+
+To me this is really about: **You get to choose if you're happy or miserable - might as well choose happy.**
+
+My favorite line from the passage: **How would you characterize your relationship with God? Cold and sterile? Distant and frustrating? It need not be any of these. It can actually be—dare we suggest it?—fun**
+
+_Here's the tale I use that's coherent with this passage:_
+
+There's this beggar I pass every day. Dirty face, few teeth, hunched over. His life is objectively harder than mine. But he's always got the biggest smile - while I'm usually rushing past in my own head, stressed about nothing.
+
+One day, in an especially foul mood, I stopped. "How are you always so happy?"
+
+He looked me dead in the eye: "Listen man, every day I wake up and choose. Miserable or happy. I choose happy."
+
+**Important distinction:** This isn't toxic positivity or denying real hardship. It's recognizing that even in difficult circumstances, you have agency over your internal state. The beggar's life is still hard - but his choice to face it with happiness doesn't make the hardship disappear, it changes his experience of it.
+
+{%include summarize-page.html src="/happy" %}
 
 ### November
 
