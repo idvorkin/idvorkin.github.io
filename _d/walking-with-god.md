@@ -29,6 +29,7 @@ Someone important to me has been reading a daily devotional. Even though I'm not
   - [September](#september)
   - [October](#october)
     - [October 20th - Seeing His Face](#october-20th---seeing-his-face)
+    - [October 21st - The Pleasure of God](#october-21st---the-pleasure-of-god)
   - [November](#november)
   - [December](#december)
 
@@ -106,6 +107,18 @@ My favorite line in the pasage: **"If God accepts me as I am, I'd better do the 
 
 {%include summarize-page.html src="/compassion" %}
 {%include summarize-page.html src="/get-to-yes-with-yourself" %}
+
+#### October 21st - The Pleasure of God
+
+To me this is really about: **You get to choose if you're happy or miserable - might as well choose happy.**
+
+My favorite line from the passage: **"Life sounds hard, but you should really face it with joyfulness, and that'll make it the most fun."**
+
+**The homeless man with the biggest smile:** I walk past this homeless guy every day. No nice clothes, no stuff, no house - his life is objectively harder than most people around him. But he always has the biggest, happiest smile. One day I asked him, "Why are you always so happy?" He looked at me and said, "Well listen man, I have a choice. Every day I can wake up and decide that I'm miserable or that I'm happy. And I'd much rather be happy."
+
+**Important distinction:** This isn't toxic positivity or denying real hardship. It's recognizing that even in difficult circumstances, you have agency over your internal state. The homeless man's life is still hard - but his choice to face it with happiness doesn't make the hardship disappear, it changes his experience of it.
+
+{%include summarize-page.html src="/happy" %}
 
 ### November
 
