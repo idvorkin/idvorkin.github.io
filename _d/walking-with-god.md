@@ -112,11 +112,17 @@ My favorite line in the pasage: **"If God accepts me as I am, I'd better do the 
 
 To me this is really about: **You get to choose if you're happy or miserable - might as well choose happy.**
 
-My favorite line from the passage: **"Life sounds hard, but you should really face it with joyfulness, and that'll make it the most fun."**
+My favorite line from the passage: **How would you characterize your relationship with God? Cold and sterile? Distant and frustrating? It need not be any of these. It can actually be—dare we suggest it?—fun**
 
-**The homeless man with the biggest smile:** I walk past this homeless guy every day. No nice clothes, no stuff, no house - his life is objectively harder than most people around him. But he always has the biggest, happiest smile. One day I asked him, "Why are you always so happy?" He looked at me and said, "Well listen man, I have a choice. Every day I can wake up and decide that I'm miserable or that I'm happy. And I'd much rather be happy."
+_Here's the tale I use that's coherent with this passage:_
 
-**Important distinction:** This isn't toxic positivity or denying real hardship. It's recognizing that even in difficult circumstances, you have agency over your internal state. The homeless man's life is still hard - but his choice to face it with happiness doesn't make the hardship disappear, it changes his experience of it.
+There's this beggar I pass every day. Dirty face, few teeth, hunched over. His life is objectively harder than mine. But he's always got the biggest smile - while I'm usually rushing past in my own head, stressed about nothing.
+
+One day, in an especially foul mood, I stopped. "How are you always so happy?"
+
+He looked me dead in the eye: "Listen man, every day I wake up and choose. Miserable or happy. I choose happy."
+
+**Important distinction:** This isn't toxic positivity or denying real hardship. It's recognizing that even in difficult circumstances, you have agency over your internal state. The beggar's life is still hard - but his choice to face it with happiness doesn't make the hardship disappear, it changes his experience of it.
 
 {%include summarize-page.html src="/happy" %}
 
