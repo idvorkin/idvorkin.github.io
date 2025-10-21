@@ -101,7 +101,7 @@ _This section will grow as I continue the practice. Each entry captures both the
 
 To me this is really about: **Self-compassion/self-acceptance.**
 
-My favorite line in the pasage: **"If God accepts me as I am, I'd better do the same."**
+My favorite line in the passage: **"If God accepts me as I am, I'd better do the same."**
 
 **Important distinction:** Acceptance isn't surrender. It's not "this is who I am and I'll never change." True acceptance means "I accept where I am right now AND I have hope for improvement." (Without the hope part, acceptance becomes resignation - that's bad)
 
