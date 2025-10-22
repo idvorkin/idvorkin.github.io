@@ -30,6 +30,7 @@ Someone important to me has been reading a daily devotional. Even though I'm not
   - [October](#october)
     - [October 20th - Seeing His Face](#october-20th---seeing-his-face)
     - [October 21st - The Pleasure of God](#october-21st---the-pleasure-of-god)
+    - [October 22nd - Praying in God's mind](#october-22nd---praying-in-gods-mind)
   - [November](#november)
   - [December](#december)
 
@@ -125,6 +126,27 @@ He looked me dead in the eye: "Listen man, every day I wake up and choose. Miser
 **Important distinction:** This isn't toxic positivity or denying real hardship. It's recognizing that even in difficult circumstances, you have agency over your internal state. The beggar's life is still hard - but his choice to face it with happiness doesn't make the hardship disappear, it changes his experience of it.
 
 {%include summarize-page.html src="/happy" %}
+
+#### October 22nd - Praying in God's mind
+
+To me this is really about: **Soul-searching to find your essentialist position - and doing it regularly.**
+
+My favorite line from the passage: **"Ask for His wisdom. Pray for His thoughts. Look for a drastic revision to your character and your dreams, and then pray the desires of the new you."**
+
+_Here's how I translate this:_
+
+Prayers for wisdom aren't that different from doing the deep soul-searching to figure out your essentialist position. What actually matters? What's the signal versus the noise? What should I focus on versus politely decline?
+
+It's like my essentialist affirmation - reminding myself what the one thing is that makes everything else easier or unnecessary.
+
+And doing it frequently? That's the do-it-anyway affirmation. Because here's the catch: wisdom keeps changing. What mattered last month might not be the priority this month. Your circumstances shift, you grow, the world changes.
+
+So you can't just figure out your essentialist position once and be done. You have to keep looking for wisdom because it's a moving target.
+
+**Important distinction:** This isn't about being wishy-washy or lacking conviction. It's about recognizing that wisdom is context-dependent. The right answer for yesterday might not be the right answer for today. Regular reflection isn't indecision - it's staying calibrated.
+
+{%include summarize-page.html src="/essentialism" %}
+{%include summarize-page.html src="/affirmations" %}
 
 ### November
 
