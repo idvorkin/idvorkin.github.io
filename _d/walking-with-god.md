@@ -131,7 +131,7 @@ He looked me dead in the eye: "Listen man, every day I wake up and choose. Miser
 
 To me this is really about: **Soul-searching to find your essentialist position - and doing it regularly.**
 
-My favorite line from the passage: **"Praying in God's mind"** - though I'd rewrite it as "thinking in alignment with what truly matters."
+My favorite line from the passage: **"Ask for His wisdom. Pray for His thoughts. Look for a drastic revision to your character and your dreams, and then pray the desires of the new you."**
 
 _Here's how I translate this:_
 
