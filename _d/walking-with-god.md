@@ -31,6 +31,7 @@ Someone important to me has been reading a daily devotional. Even though I'm not
     - [October 20th - Seeing His Face](#october-20th---seeing-his-face)
     - [October 21st - The Pleasure of God](#october-21st---the-pleasure-of-god)
     - [October 22nd - Praying in God's mind](#october-22nd---praying-in-gods-mind)
+    - [October 23rd - Perspective](#october-23rd---perspective)
   - [November](#november)
   - [December](#december)
 
@@ -146,6 +147,25 @@ So you can't just figure out your essentialist position once and be done. You ha
 **Important distinction:** This isn't about being wishy-washy or lacking conviction. It's about recognizing that wisdom is context-dependent. The right answer for yesterday might not be the right answer for today. Regular reflection isn't indecision - it's staying calibrated.
 
 {%include summarize-page.html src="/essentialism" %}
+{%include summarize-page.html src="/affirmations" %}
+
+#### October 23rd - Perspective
+
+To me this is really about: **Transcendence - seeing beyond yourself, knowing you're not the center of the universe.**
+
+My favorite line from the passage: **"Has your perspective become distorted? Do your problems seem huge?"**
+
+_Here's how I translate this:_
+
+When you lose perspective, everything becomes catastrophic. A minor setback feels like the end of the world. A criticism feels like a personal attack. Not getting what you want feels like cosmic injustice.
+
+But perspective is about getting small - recognizing your problems are a tiny speck in the vastness of time and space. This connects to my "Calm Like Water" affirmation: "Be present, this too shall pass, work the problem." The "this too shall pass" part is both temporal (it will pass) and cosmic (you're not that important in the grand scheme).
+
+It's also about coherence - distinguishing your circle of influence from your circle of concern. Perspective lets you focus energy on what you can actually affect, instead of burning out trying to control everything beyond your reach.
+
+**Important distinction:** Perspective isn't about minimizing real problems or toxic positivity. It's about calibrating the size of your response to the actual size of the problem. A real crisis deserves a crisis response. But not every disappointment is a crisis. Perspective helps you tell the difference.
+
+{%include summarize-page.html src="/spiritual-health" %}
 {%include summarize-page.html src="/affirmations" %}
 
 ### November
