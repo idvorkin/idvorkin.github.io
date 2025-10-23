@@ -153,7 +153,7 @@ So you can't just figure out your essentialist position once and be done. You ha
 
 To me this is really about: **Transcendence - seeing beyond yourself, knowing you're not the center of the universe.**
 
-My favorite line from the passage: **"God helps us have perspective - seeing that we aren't nearly as important as we think."**
+My favorite line from the passage: **"Has your perspective become distorted? Do your problems seem huge?"**
 
 _Here's how I translate this:_
 
