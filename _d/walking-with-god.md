@@ -159,28 +159,12 @@ _Here's how I translate this:_
 
 When you lose perspective, everything becomes catastrophic. A minor setback feels like the end of the world. A criticism feels like a personal attack. Not getting what you want feels like cosmic injustice.
 
-But perspective - real perspective - is about getting small. It's recognizing that:
+But perspective is about getting small - recognizing your problems are a tiny speck in the vastness of time and space. This connects to my "Calm Like Water" affirmation: "Be present, this too shall pass, work the problem." The "this too shall pass" part is both temporal (it will pass) and cosmic (you're not that important in the grand scheme).
 
-- Your problems, while real to you, are a tiny speck in the vastness of time and space
-- Most things that feel urgent today won't matter in a year
-- You have influence, not control - and exhausting yourself trying to control outcomes beyond your reach is a recipe for burnout
+It's also about coherence - distinguishing your circle of influence from your circle of concern. Perspective lets you focus energy on what you can actually affect, instead of burning out trying to control everything beyond your reach.
 
-This connects directly to my "Calm Like Water" affirmation: **"Be present, this too shall pass, work the problem."**
+**Important distinction:** Perspective isn't about minimizing real problems or toxic positivity. It's about calibrating the size of your response to the actual size of the problem. A real crisis deserves a crisis response. But not every disappointment is a crisis. Perspective helps you tell the difference.
 
-The "this too shall pass" part isn't just about time - it's about perspective. Both temporal perspective (it will pass) and cosmic perspective (you're not that important in the grand scheme). When you internalize that, you can actually be present for joy and work the problem analytically instead of catastrophizing.
-
-This is what coherence means in spiritual health - distinguishing your circle of influence from your circle of concern. Perspective lets you focus energy on what you can actually affect, instead of burning out trying to control everything.
-
-**What happens when you lose perspective:**
-
-- Every setback becomes catastrophic
-- Pride creeps in - you start believing your importance, your rightness, your specialness
-- You burn out trying to control outcomes beyond your influence
-- You miss the actual joy and meaning available in the present moment
-
-**Important distinction:** Perspective isn't about minimizing real problems or toxic positivity ("just think positive!"). It's about calibrating the size of your response to the actual size of the problem. A real crisis deserves a crisis response. But not every disappointment is a crisis. Perspective helps you tell the difference.
-
-{%include summarize-page.html src="/four-healths" %}
 {%include summarize-page.html src="/spiritual-health" %}
 {%include summarize-page.html src="/affirmations" %}
 
