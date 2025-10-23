@@ -31,6 +31,7 @@ Someone important to me has been reading a daily devotional. Even though I'm not
     - [October 20th - Seeing His Face](#october-20th---seeing-his-face)
     - [October 21st - The Pleasure of God](#october-21st---the-pleasure-of-god)
     - [October 22nd - Praying in God's mind](#october-22nd---praying-in-gods-mind)
+    - [October 23rd - Perspective](#october-23rd---perspective)
   - [November](#november)
   - [December](#december)
 
@@ -146,6 +147,39 @@ So you can't just figure out your essentialist position once and be done. You ha
 **Important distinction:** This isn't about being wishy-washy or lacking conviction. It's about recognizing that wisdom is context-dependent. The right answer for yesterday might not be the right answer for today. Regular reflection isn't indecision - it's staying calibrated.
 
 {%include summarize-page.html src="/essentialism" %}
+{%include summarize-page.html src="/affirmations" %}
+
+#### October 23rd - Perspective
+
+To me this is really about: **Transcendence - seeing beyond yourself, knowing you're not the center of the universe.**
+
+My favorite line from the passage: **"God helps us have perspective - seeing that we aren't nearly as important as we think."**
+
+_Here's how I translate this:_
+
+When you lose perspective, everything becomes catastrophic. A minor setback feels like the end of the world. A criticism feels like a personal attack. Not getting what you want feels like cosmic injustice.
+
+But perspective - real perspective - is about getting small. It's recognizing that:
+- Your problems, while real to you, are a tiny speck in the vastness of time and space
+- Most things that feel urgent today won't matter in a year
+- You have influence, not control - and exhausting yourself trying to control outcomes beyond your reach is a recipe for burnout
+
+This connects directly to my "Calm Like Water" affirmation: **"Be present, this too shall pass, work the problem."**
+
+The "this too shall pass" part isn't just about time - it's about perspective. Both temporal perspective (it will pass) and cosmic perspective (you're not that important in the grand scheme). When you internalize that, you can actually be present for joy and work the problem analytically instead of catastrophizing.
+
+This is what coherence means in spiritual health - distinguishing your circle of influence from your circle of concern. Perspective lets you focus energy on what you can actually affect, instead of burning out trying to control everything.
+
+**What happens when you lose perspective:**
+- Every setback becomes catastrophic
+- Pride creeps in - you start believing your importance, your rightness, your specialness
+- You burn out trying to control outcomes beyond your influence
+- You miss the actual joy and meaning available in the present moment
+
+**Important distinction:** Perspective isn't about minimizing real problems or toxic positivity ("just think positive!"). It's about calibrating the size of your response to the actual size of the problem. A real crisis deserves a crisis response. But not every disappointment is a crisis. Perspective helps you tell the difference.
+
+{%include summarize-page.html src="/four-healths" %}
+{%include summarize-page.html src="/spiritual-health" %}
 {%include summarize-page.html src="/affirmations" %}
 
 ### November
