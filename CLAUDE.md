@@ -500,7 +500,6 @@ YOU MUST follow this debugging framework for ANY technical issue:
   ```bash
   pre-commit run --files <files-you-modified>
   ```
-
   - Pre-commit checks validate links, formatting, and other quality checks
   - Never skip this step - it catches issues before they reach the repo
   - If pre-commit modifies files, review changes and commit them too
@@ -513,11 +512,6 @@ YOU MUST follow this debugging framework for ANY technical issue:
 - Never bypass commit hooks
 - Put Claude/agent config changes in separate commits
 - Always commit after making changes to claude config (agents or claude config)
-- **Backlinks updates in separate commits**:
-  - Only update backlinks if markdown files changed in the last hour
-  - Run `just update-backlinks` to update back-links.json
-  - Commit backlinks changes separately from content changes
-  - This keeps backlinks updates isolated and easier to review
 
 ### PR Best Practices
 
