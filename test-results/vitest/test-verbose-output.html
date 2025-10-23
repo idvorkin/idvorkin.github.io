@@ -3,30 +3,14 @@ npx vitest run --reporter=verbose
 
 [1m[7m[36m RUN [39m[27m[22m [36mv3.0.8 [39m[90m/home/runner/work/idvorkin.github.io/idvorkin.github.io[39m
 
-[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mCopy Functionality[2m > [22m[2mshould copy correct URL format
-[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=manager-book%23test-section...
-
 [90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
 [22m[39mToggle element with ID missing-toggle not found
 
 [90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould handle empty results
 [22m[39mToggle element with ID remaining-posts-toggle not found
 
-[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mCopy Functionality[2m > [22m[2mshould handle clipboard API failure gracefully
-[22m[39m📋 Copied with preview (fallback): https://tinyurl.com/igor-blog/?path=manager-book%23test-section...
-
-[90mstderr[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mCopy Functionality[2m > [22m[2mshould handle clipboard API failure gracefully
-[22m[39mFailed to share/copy header link: Error: Clipboard failed
-    at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39msrc/__tests__/header-copy-link.test.ts:318:62
-    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:174:14
-    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:563:28
-    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:61:24
-    at new Promise (<anonymous>)
-    at runWithTimeout [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:41:12[90m)[39m
-    at runTest [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1149:17[90m)[39m
-[90m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
-    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
+[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mCopy Functionality[2m > [22m[2mshould copy correct URL format
+[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=manager-book%23test-section...
 
 [90mstderr[2m | src/__tests__/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould show error message when getProcessedPages fails
 [22m[39m❌ Error loading recent posts: Error: Test error
@@ -101,6 +85,22 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould call updateRecentPosts immediately if document is already loaded
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould add event listener if document is still loading
+[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mCopy Functionality[2m > [22m[2mshould handle clipboard API failure gracefully
+[22m[39m📋 Copied with preview (fallback): https://tinyurl.com/igor-blog/?path=manager-book%23test-section...
+
+[90mstderr[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mCopy Functionality[2m > [22m[2mshould handle clipboard API failure gracefully
+[22m[39mFailed to share/copy header link: Error: Clipboard failed
+    at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39msrc/__tests__/header-copy-link.test.ts:318:62
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:174:14
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:563:28
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:61:24
+    at new Promise (<anonymous>)
+    at runWithTimeout [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:41:12[90m)[39m
+    at runTest [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1149:17[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
+    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
+
 [90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: localhost to production with long anchor
 [22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=manager-book%23how-do-you-identify-and-help-eng-decide-if-manage...
 
@@ -197,24 +197,12 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mSevenHabits[2m > [22mshould create a tree with the correct structure
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mThingsIEnjoy[2m > [22mshould create a tree with the correct structure
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mConstants[2m > [22mshould export the correct constants
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould log that Force Graph is loaded
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould not initialize the graph when the DOM element doesn't exist
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle ForceGraph not being defined
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle node canvas object rendering
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle goto control click
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould build graph data correctly
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould update detail with node information
 [90mstderr[2m | src/__tests__/featured-collapse.test.ts[2m > [22m[2mFeaturedCollapseManager[2m > [22m[2minitialization[2m > [22m[2mshould return false when button element is missing
 [22m[39mFeatured collapse elements not found
 
 [90mstderr[2m | src/__tests__/featured-collapse.test.ts[2m > [22m[2mFeaturedCollapseManager[2m > [22m[2minitialization[2m > [22m[2mshould return false when content element is missing
 [22m[39mFeatured collapse elements not found
 
- [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mHomepage Featured Posts[2m > [22mshould fetch featured posts from backlinks data
- [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mHomepage Featured Posts[2m > [22mshould fetch from backlinks instead of Algolia search
- [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mHomepage Featured Posts[2m > [22mshould truncate long descriptions to 150 characters
- [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mFeatured Page Data Structure[2m > [22mshould have correct data structure for featured.yml
- [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mFeatured Page Data Structure[2m > [22mshould render featured posts fetched from backlinks
 [90mstderr[2m | src/__tests__/featured-collapse.test.ts[2m > [22m[2mFeaturedCollapseManager[2m > [22m[2msetupFeaturedCollapse helper[2m > [22m[2mshould return null when elements do not exist
 [22m[39mFeatured collapse elements not found
 
@@ -244,6 +232,21 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mlocalStorage persistence[2m > [22mshould handle localStorage errors gracefully
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mlocalStorage persistence[2m > [22mshould clear saved state
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mlocalStorage persistence[2m > [22mshould use custom storage key when provided
+ [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mHomepage Featured Posts[2m > [22mshould fetch featured posts from backlinks data
+ [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mHomepage Featured Posts[2m > [22mshould fetch from backlinks instead of Algolia search
+ [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mHomepage Featured Posts[2m > [22mshould truncate long descriptions to 150 characters
+ [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mFeatured Page Data Structure[2m > [22mshould have correct data structure for featured.yml
+ [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mFeatured Page Data Structure[2m > [22mshould render featured posts fetched from backlinks
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould log that Force Graph is loaded
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould not initialize the graph when the DOM element doesn't exist
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle ForceGraph not being defined
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle node canvas object rendering
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle goto control click
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould build graph data correctly
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould update detail with node information
+[90mstdout[2m | src/__tests__/shared.test.ts[2m > [22m[2mShared Utility Functions[2m > [22m[2mappend_randomizer_div[2m > [22m[2mshould not append anything if parent is not found
+[22m[39mappend_randomizer_div #non-existent not present
+
 [90mstdout[2m | src/__tests__/main.test.ts
 [22m[39m🖼️ Enabling image zoom functionality
 Dev server detected, initializing dev info...
@@ -254,14 +257,6 @@ Dev info - Branch: [1mnull[22m PR: [1mnull[22m Port: 4000
 [90mstderr[2m | src/__tests__/main.test.ts
 [22m[39m⚠️ GLightbox not found, retrying in 100ms (attempt 1/50)
 
-[90mstdout[2m | src/__tests__/shared.test.ts[2m > [22m[2mShared Utility Functions[2m > [22m[2mappend_randomizer_div[2m > [22m[2mshould not append anything if parent is not found
-[22m[39mappend_randomizer_div #non-existent not present
-
- [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould exclude header icon elements when generating TOC text
- [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle headers with nested non-icon elements correctly
- [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle headers with only text content
- [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould properly escape quotes in TOC text
- [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle empty headers gracefully
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mMakeBackLinkHTML[2m > [22mshould generate correct HTML for a backlink
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mrandom_from_list[2m > [22mshould return an element from the list
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mrandom_from_list[2m > [22mshould return undefined for empty list
@@ -278,6 +273,11 @@ Dev info - Branch: [1mnull[22m PR: [1mnull[22m Port: 4000
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould handle special characters in path
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould handle empty anchor gracefully
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould handle undefined anchor
+ [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould exclude header icon elements when generating TOC text
+ [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle headers with nested non-icon elements correctly
+ [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle headers with only text content
+ [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould properly escape quotes in TOC text
+ [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle empty headers gracefully
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould return an array of the same length
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould contain all the same elements
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mrandom_from_list[2m > [22mshould return an element from the list
@@ -339,7 +339,7 @@ Dev info - Branch: [1mnull[22m PR: [1mnull[22m Port: 4000
 
 [2m Test Files [22m [1m[32m19 passed[39m[22m[90m (19)[39m
 [2m      Tests [22m [1m[32m233 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (238)[39m
-[2m   Start at [22m 13:57:19
-[2m   Duration [22m 4.72s[2m (transform 642ms, setup 283ms, collect 956ms, tests 549ms, environment 7.16s, prepare 1.66s)[22m
+[2m   Start at [22m 12:55:14
+[2m   Duration [22m 4.59s[2m (transform 616ms, setup 331ms, collect 839ms, tests 543ms, environment 7.00s, prepare 1.61s)[22m
 
 </pre></body></html>
