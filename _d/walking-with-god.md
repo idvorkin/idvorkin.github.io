@@ -160,6 +160,7 @@ _Here's how I translate this:_
 When you lose perspective, everything becomes catastrophic. A minor setback feels like the end of the world. A criticism feels like a personal attack. Not getting what you want feels like cosmic injustice.
 
 But perspective - real perspective - is about getting small. It's recognizing that:
+
 - Your problems, while real to you, are a tiny speck in the vastness of time and space
 - Most things that feel urgent today won't matter in a year
 - You have influence, not control - and exhausting yourself trying to control outcomes beyond your reach is a recipe for burnout
@@ -171,6 +172,7 @@ The "this too shall pass" part isn't just about time - it's about perspective. B
 This is what coherence means in spiritual health - distinguishing your circle of influence from your circle of concern. Perspective lets you focus energy on what you can actually affect, instead of burning out trying to control everything.
 
 **What happens when you lose perspective:**
+
 - Every setback becomes catastrophic
 - Pride creeps in - you start believing your importance, your rightness, your specialness
 - You burn out trying to control outcomes beyond your influence
