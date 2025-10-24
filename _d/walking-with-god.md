@@ -32,6 +32,7 @@ Someone important to me has been reading a daily devotional. Even though I'm not
     - [October 21st - The Pleasure of God](#october-21st---the-pleasure-of-god)
     - [October 22nd - Praying in God's mind](#october-22nd---praying-in-gods-mind)
     - [October 23rd - Perspective](#october-23rd---perspective)
+    - [October 24th - Pure Joy](#october-24th---pure-joy)
   - [November](#november)
   - [December](#december)
 
@@ -167,6 +168,26 @@ It's also about coherence - distinguishing your circle of influence from your ci
 
 {%include summarize-page.html src="/spiritual-health" %}
 {%include summarize-page.html src="/affirmations" %}
+
+#### October 24th - Pure Joy
+
+To me this is really about: **Resilience and reframing - what doesn't kill you proves you're not dead.**
+
+My favorite line from the passage: **"What rational person would consider the trials of life pure joy? Only those who can see the surprising benefit in them."**
+
+_Here's how I translate this:_
+
+There's a version of "what doesn't kill you makes you stronger" that I actually believe: what doesn't kill you proves you're not dead. It's not that hardship automatically makes you better - it's that surviving hardship reveals you're still in the game.
+
+And there's real power in seeing the bright side when things are hard. Not toxic positivity that denies the difficulty, but genuine reframing. This too shall pass - both the good and the bad.
+
+One of my jobs as a manager is to be the person who looks on the bright side. When a seagull poops on your head, I'm the one who says "How lucky you are! This is like a glorious massage - it's warm, it's good for your skin, all that jazz." Is it ridiculous? Absolutely. But sometimes the ridiculous reframe is exactly what breaks the catastrophic thinking.
+
+The "pure joy" framing works when you can see the surprising benefit in trials. Not because suffering is good, but because you've learned that you usually find something valuable on the other side. Pattern recognition breeds optimism - not blind optimism, but earned optimism from repeatedly discovering unexpected benefits in difficulties.
+
+**Important distinction:** This isn't about pretending hardship doesn't hurt or that you should be grateful for suffering. It's about recognizing that your perspective on difficulty shapes your experience of it. The seagull poop is still poop - but choosing to find humor in it makes it less awful. This is different from denying reality; it's choosing which aspect of reality to focus on. The pain is real AND you can still find benefits. Both can be true.
+
+{%include summarize-page.html src="/happy" %}
 
 ### November
 
