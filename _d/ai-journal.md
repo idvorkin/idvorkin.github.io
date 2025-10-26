@@ -204,6 +204,20 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 ## Diary
 
+### 2025-10-26
+
+#### Cloning ScrollBuddy - Reverse Engineering a $100/year Widget
+
+- **TOP Takeaway**: Got annoyed someone was charging $100/year for a scroll buddy widget - challenged Claude to clone it through reverse engineering. Success!
+- **The Project**: [scroll-buddy repository](https://github.com/idvorkin-ai-tools/scroll-buddy)
+- **The Chat Log**: [Full conversation](https://htmlpreview.github.io/?https://gist.githubusercontent.com/idvorkin-ai-tools/3c4e0db9551270d474c82a39ba2302d4/raw/chat-log.html) | [Filtered (user/assistant only)](https://htmlpreview.github.io/?https://gist.githubusercontent.com/idvorkin-ai-tools/3c4e0db9551270d474c82a39ba2302d4/raw/chat-log.html&filter=user,assistant)
+- **The Result**: [Live Demo](https://htmlpreview.github.io/?https://gist.githubusercontent.com/idvorkin-ai-tools/62cfb5e6ed0454814ff03e2f6f450cd3/raw/demo.html)
+- Claude used Playwright to inspect the original site, extracted the JavaScript animation logic, and recreated it from scratch
+- Full reverse engineering process: WebFetch analysis → Playwright DOM inspection → JavaScript extraction → Clean reimplementation
+- Created both the walker and scuba diver characters with proper physics-based animation
+- Published chat logs using [claude-code-log](https://github.com/daaain/claude-code-log) - discovered it supports URL parameter filtering (`&filter=user,assistant`)
+- **The Commit**: [Added chat log documentation](https://github.com/idvorkin-ai-tools/scroll-buddy/commit/944ee204cd1a05d1a64ae7da7eeeebcf69d0cfd3)
+
 ### 2025-10-15
 
 #### Use it to update my crazy shell (Enabling Environment) configuration
