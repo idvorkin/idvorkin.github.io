@@ -18,6 +18,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2025-10-26](#2025-10-26)
+    - [Cloning ScrollBuddy - Reverse Engineering a $100/year Widget](#cloning-scrollbuddy---reverse-engineering-a-100year-widget)
   - [2025-10-15](#2025-10-15)
     - [Use it to update my crazy shell (Enabling Environment) configuration](#use-it-to-update-my-crazy-shell-enabling-environment-configuration)
     - [Use it to help digest new books](#use-it-to-help-digest-new-books)
