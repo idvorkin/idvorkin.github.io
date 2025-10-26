@@ -33,6 +33,7 @@ Someone important to me has been reading a daily devotional. Even though I'm not
     - [October 22nd - Praying in God's mind](#october-22nd---praying-in-gods-mind)
     - [October 23rd - Perspective](#october-23rd---perspective)
     - [October 24th - Pure Joy](#october-24th---pure-joy)
+    - [October 26th - Wisdom through Prayer](#october-26th---wisdom-through-prayer)
   - [November](#november)
   - [December](#december)
 
@@ -188,6 +189,30 @@ The "pure joy" framing works when you can see the surprising benefit in trials. 
 **Important distinction:** This isn't about pretending hardship doesn't hurt or that you should be grateful for suffering. It's about recognizing that your perspective on difficulty shapes your experience of it. The seagull poop is still poop - but choosing to find humor in it makes it less awful. This is different from denying reality; it's choosing which aspect of reality to focus on. The pain is real AND you can still find benefits. Both can be true.
 
 {%include summarize-page.html src="/happy" %}
+
+#### October 26th - Wisdom through Prayer
+
+To me this is really about: **Prayer as cognitive work - the mental labor of thinking hard and reconsidering frequently.**
+
+_This builds on [October 22nd's insight](#october-22nd---praying-in-gods-mind) about prayer as soul-searching, but with a crucial distinction:_
+
+October 22nd focused on prayer as a tool for finding wisdom and your essentialist position. But here's the key that matters even more: **prayer isn't about passively expecting God to inflate your mind with wisdom without doing the work.** Prayer IS the work itself - the active cognitive labor of thinking hard, reconsidering, and wrestling with questions.
+
+_Here's how I translate this:_
+
+Prayer for wisdom is the practice of deep, intentional thinking - not outsourcing your cognition to the divine. It's the mental work of examining your beliefs, challenging your assumptions, and reconsidering what you thought you knew. And it requires doing this work frequently because wisdom isn't static.
+
+The scriptures are clear about this:
+- **Hebrews 11:6**: God rewards those who "diligently seek him" - the Greek word means to zealously seek with all your heart, strength, and might. Not passive waiting.
+- **Matthew 7:7**: "Ask, seek, knock" - all active verbs requiring persistence and engagement.
+- **Philippians 2:12-13**: "Work out your salvation with fear and trembling" - you must actively work out what has been worked in. **Grace is opposed to earning, not effort.**
+- **Colossians 4:2**: "Devote yourselves to prayer, keeping alert in it" - the labor of prayer requires alertness and devotion.
+
+In secular terms: wisdom requires the cognitive labor of reflection. It's not about hoping the answer will magically appear - it's about putting in the mental work to find it. Like the essentialist affirmation, you have to keep doing the hard thinking to figure out what matters, and you have to do it repeatedly because the answer keeps changing.
+
+**Important distinction:** This isn't about rejecting divine help or inspiration - it's about recognizing that even divine wisdom requires human effort to receive and integrate. The religious version says "God provides wisdom to those who diligently seek it." The secular version says "wisdom emerges from consistent, intentional cognitive work." Both require you to do the actual thinking - there's no shortcut around the mental labor.
+
+{%include summarize-page.html src="/essentialism" %}
 
 ### November
 
