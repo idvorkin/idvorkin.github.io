@@ -34,6 +34,7 @@ Someone important to me has been reading a daily devotional. Even though I'm not
     - [October 23rd - Perspective](#october-23rd---perspective)
     - [October 24th - Pure Joy](#october-24th---pure-joy)
     - [October 26th - Wisdom through Prayer](#october-26th---wisdom-through-prayer)
+    - [October 27th - Wisdom through Meditation](#october-27th---wisdom-through-meditation)
     - [October 28th - Wisdom through Recall](#october-28th---wisdom-through-recall)
   - [November](#november)
   - [December](#december)
@@ -214,6 +215,33 @@ In secular terms: wisdom requires the cognitive labor of reflection. It's not ab
 **Important distinction:** This isn't about rejecting divine help or inspiration - it's about recognizing that even divine wisdom requires human effort to receive and integrate. The religious version says "God provides wisdom to those who diligently seek it." The secular version says "wisdom emerges from consistent, intentional cognitive work." Both require you to do the actual thinking - there's no shortcut around the mental labor.
 
 {%include summarize-page.html src="/essentialism" %}
+
+#### October 27th - Wisdom through Meditation
+
+To me this is really about: **Deep reflection - thinking hard about principles, not just reading them quickly.**
+
+My favorite line from the passage: **"What does that mean? It means to chew on it, think of what God does with it and why it came from His mouth, how we've failed it in our past, and how it might be applied in our everyday lives."**
+
+_This builds on both [October 22nd's insight](#october-22nd---praying-in-gods-mind) about soul-searching and [October 26th's insight](#october-26th---wisdom-through-prayer) about prayer as cognitive work:_
+
+The metaphor of "chewing on" scripture isn't about passive consumption - it's about active, repeated engagement. You don't just swallow wisdom whole. You break it down, examine it from multiple angles, extract the nutrients.
+
+_Here's how I translate this:_
+
+Real learning happens through deep reflection, not surface-level reading. Whether it's scripture, philosophy, or any principle you're trying to internalize - you need to:
+
+1. **Think about the source** - Why does this principle exist? What problem does it solve? What's the deeper logic behind it?
+2. **Examine your past** - Where have I failed to live by this? What were the consequences? What patterns do I see?
+3. **Apply to your present** - How does this show up in my everyday life? What would it look like to actually practice this today?
+
+This is the same process I do with my [essentialist affirmations](/affirmations) - I don't just recite them mechanically. I think about what they mean, how I've violated them recently, what situations call for them. The meditation isn't just sitting quietly with eyes closed - it's the active cognitive work of integration.
+
+It's also similar to my practice with [Search Inside Yourself](/siy) - the formal meditation creates space for reflection, but the real work is examining your thoughts, patterns, and behaviors with curiosity rather than judgment.
+
+**Important distinction:** This isn't about beating yourself up for past failures or overthinking until you're paralyzed. It's about engaged examination that leads to integration. You're not just memorizing the words - you're letting them reshape how you see and respond to the world. The "chewing" metaphor is perfect: it's repetitive, thorough work that breaks down what you've received so you can actually absorb it.
+
+{%include summarize-page.html src="/siy" %}
+{%include summarize-page.html src="/affirmations" %}
 
 #### October 28th - Wisdom through Recall
 
