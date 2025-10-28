@@ -217,31 +217,30 @@ In secular terms: wisdom requires the cognitive labor of reflection. It's not ab
 
 #### October 28th - Wisdom through Recall
 
-To me this is really about: **Memory as a wisdom multiplier - the practice of deliberately remembering hard-won lessons.**
+To me this is really about: **Meditation giving wisdom power - when you've internalized something deeply, it starts to guide you.**
 
-My favorite line from the passage: **"Remember the former things of old; for I am God, and there is no other."** (Isaiah 46:9)
+My favorite line from the passage: **"When you've memorized a variety of Scripture passages, you will find them deeper and more relevant than ever before. When you're in the midst of a crisis, the Spirit will bring the right word into your situation."**
 
 _Here's how I translate this:_
 
-We're terrible at remembering our own wisdom. I'll struggle through a problem for weeks, finally figure it out, feel brilliant for a moment - and then six months later face the exact same problem like it's brand new. All that hard-won wisdom? Gone. Not because I forgot the lesson existed, but because I forgot to look for it.
+After you've meditated on something enough - really internalized it, repeated it, lived with it - it starts to guide you. It gives you power. This connects to one of my favorite lines: **"Repetition births ritual. Rituals become sacred. The sacred commands power."**
 
-This is why I keep journals. Not to document my life for posterity, but as an external memory system for wisdom. When I'm stuck, I search my past entries: "Have I solved something like this before? What was I thinking then?" More often than not, past-Igor had insights that present-Igor desperately needs.
+When you memorize Scripture (or affirmations, or principles), you're not just storing data - you're making something sacred through repetition. And when something becomes sacred to you, it commands power in your life. In a crisis, the right word surfaces not because you frantically search your notes, but because you've internalized it so deeply it's become part of how you think.
 
-The religious practice of "remembering God's faithfulness" serves a similar function: cataloging past wins as evidence for hope. When things are hard now, you recall "remember that time things seemed impossible and then worked out?" It's pattern recognition that breeds resilience.
+This is the difference between:
+- **Having wisdom** (it's written down somewhere, searchable if you remember to look)
+- **Being guided by wisdom** (it's so deeply internalized it shows up automatically when you need it)
 
-But here's the catch: remembering requires active practice. You have to:
-1. **Capture** wisdom when you discover it (write it down)
-2. **Recall** it when relevant (search/review your notes)
-3. **Apply** it to the new context (don't just read, actually use it)
+My [affirmations practice](/affirmations) works the same way. I don't write them out daily just to remember them intellectually - I write them to ritualize them, to make them sacred, so they command power when I need them. When I'm stressed, "Calm like water: Be present. This too shall pass. Work the problem" surfaces automatically because I've repeated it hundreds of times.
 
-Without active recall, wisdom becomes like books you own but never read - technically available but practically useless. The insight isn't in having the memory, it's in retrieving and applying it when it matters.
+The religious practice of memorizing Scripture serves this exact function: making wisdom so deeply part of you that the Spirit can "bring the right word into your situation." In secular terms: you've internalized it enough that your subconscious can surface the right pattern when you need it.
 
-This connects to the [AI journal practice](/ai-journal) - not just logging what happened, but extracting the lessons learned so future-you can find them. And to the earlier insights about prayer as cognitive work ([October 26th](#october-26th---wisdom-through-prayer)) - sometimes the "wisdom" you're seeking isn't new revelation, it's remembering what you already figured out before.
+This also connects to how I think about journaling and the [AI journal practice](/ai-journal). The journal is the external memory system for discovering wisdom. But the affirmations are how I take discovered wisdom and make it sacred through repetition - turning it from something I know intellectually into something that actually guides me.
 
-**Important distinction:** This isn't about living in the past or believing "everything was better before." It's about learning from experience rather than repeatedly paying the cost of the same lesson. You can remember past wisdom AND still be open to new insights. The goal isn't to fossilize your thinking - it's to build on what you've already learned instead of constantly starting from scratch.
+**Important distinction:** This isn't about mindless repetition or rigid dogma. The power comes from repeatedly engaging with wisdom that actually resonates with you - that's why affirmations need to "speak to you" to work. You can't force something to become sacred through mechanical repetition alone. The ritual needs authentic meaning behind it, or it's just empty repetition. But once something truly speaks to you, consistent ritual transforms it from knowledge into power.
 
+{%include summarize-page.html src="/affirmations" %}
 {%include summarize-page.html src="/ai-journal" %}
-{%include summarize-page.html src="/essentialism" %}
 
 ### November
 
