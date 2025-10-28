@@ -202,11 +202,13 @@ npx vitest run --reporter=verbose
 [90mstderr[2m | src/__tests__/featured-collapse.test.ts[2m > [22m[2mFeaturedCollapseManager[2m > [22m[2minitialization[2m > [22m[2mshould return false when content element is missing
 [22m[39mFeatured collapse elements not found
 
- [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mHomepage Featured Posts[2m > [22mshould fetch featured posts from backlinks data
- [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mHomepage Featured Posts[2m > [22mshould fetch from backlinks instead of Algolia search
- [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mHomepage Featured Posts[2m > [22mshould truncate long descriptions to 150 characters
- [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mFeatured Page Data Structure[2m > [22mshould have correct data structure for featured.yml
- [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mFeatured Page Data Structure[2m > [22mshould render featured posts fetched from backlinks
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould log that Force Graph is loaded
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould not initialize the graph when the DOM element doesn't exist
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle ForceGraph not being defined
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle node canvas object rendering
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle goto control click
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould build graph data correctly
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould update detail with node information
 [90mstderr[2m | src/__tests__/featured-collapse.test.ts[2m > [22m[2mFeaturedCollapseManager[2m > [22m[2msetupFeaturedCollapse helper[2m > [22m[2mshould return null when elements do not exist
 [22m[39mFeatured collapse elements not found
 
@@ -236,13 +238,16 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mlocalStorage persistence[2m > [22mshould handle localStorage errors gracefully
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mlocalStorage persistence[2m > [22mshould clear saved state
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mlocalStorage persistence[2m > [22mshould use custom storage key when provided
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould log that Force Graph is loaded
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould not initialize the graph when the DOM element doesn't exist
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle ForceGraph not being defined
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle node canvas object rendering
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle goto control click
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould build graph data correctly
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould update detail with node information
+ [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mHomepage Featured Posts[2m > [22mshould fetch featured posts from backlinks data
+ [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mHomepage Featured Posts[2m > [22mshould fetch from backlinks instead of Algolia search
+ [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mHomepage Featured Posts[2m > [22mshould truncate long descriptions to 150 characters
+ [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mFeatured Page Data Structure[2m > [22mshould have correct data structure for featured.yml
+ [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mFeatured Page Data Structure[2m > [22mshould render featured posts fetched from backlinks
+ [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould exclude header icon elements when generating TOC text
+ [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle headers with nested non-icon elements correctly
+ [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle headers with only text content
+ [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould properly escape quotes in TOC text
+ [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle empty headers gracefully
 [90mstdout[2m | src/__tests__/shared.test.ts[2m > [22m[2mShared Utility Functions[2m > [22m[2mappend_randomizer_div[2m > [22m[2mshould not append anything if parent is not found
 [22m[39mappend_randomizer_div #non-existent not present
 
@@ -262,11 +267,6 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould handle special characters in path
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould handle empty anchor gracefully
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould handle undefined anchor
- [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould exclude header icon elements when generating TOC text
- [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle headers with nested non-icon elements correctly
- [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle headers with only text content
- [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould properly escape quotes in TOC text
- [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle empty headers gracefully
 [90mstdout[2m | src/__tests__/main.test.ts
 [22m[39m🖼️ Enabling image zoom functionality
 Dev server detected, initializing dev info...
@@ -287,9 +287,6 @@ Dev info - Branch: [1mnull[22m PR: [1mnull[22m Port: 4000
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould call generateToc for both toc containers
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mTOC functions[2m > [22mshould warn when TOC elements are not found
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mURL swapping function[2m > [22mshould handle production URL swapping
- [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_imported_blog_posts[2m > [22mshould fetch and process blog posts
- [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_eulogy_roles[2m > [22mshould fetch and process eulogy roles
- [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22mhtml_for_role[2m > [22mshould generate HTML for a role
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould toggle a class on an element when using a selector
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould toggle a class on an element when using an element reference
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould add a class when force parameter is true
@@ -304,6 +301,9 @@ Dev info - Branch: [1mnull[22m PR: [1mnull[22m Port: 4000
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find a distant parent element matching a selector
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find a parent element by class selector
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould return null when no matching parent is found
+ [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_imported_blog_posts[2m > [22mshould fetch and process blog posts
+ [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_eulogy_roles[2m > [22mshould fetch and process eulogy roles
+ [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22mhtml_for_role[2m > [22mshould generate HTML for a role
  [32m✓[39m src/__tests__/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould fetch link info from local path when not in production
  [32m✓[39m src/__tests__/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould fetch link info from GitHub when in production
  [32m✓[39m src/__tests__/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould handle fetch errors gracefully
@@ -338,6 +338,6 @@ Dev info - Branch: [1mnull[22m PR: [1mnull[22m Port: 4000
 
 [2m Test Files [22m [1m[32m19 passed[39m[22m[90m (19)[39m
 [2m      Tests [22m [1m[32m233 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (238)[39m
-[2m   Start at [22m 19:46:38
-[2m   Duration [22m 4.71s[2m (transform 680ms, setup 221ms, collect 1.03s, tests 560ms, environment 7.17s, prepare 1.62s)[22m
+[2m   Start at [22m 19:03:36
+[2m   Duration [22m 4.59s[2m (transform 670ms, setup 223ms, collect 956ms, tests 536ms, environment 6.99s, prepare 1.61s)[22m
 
