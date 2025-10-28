@@ -35,6 +35,7 @@ Someone important to me has been reading a daily devotional. Even though I'm not
     - [October 24th - Pure Joy](#october-24th---pure-joy)
     - [October 26th - Wisdom through Prayer](#october-26th---wisdom-through-prayer)
     - [October 27th - Wisdom through Meditation](#october-27th---wisdom-through-meditation)
+    - [October 28th - Wisdom through Recall](#october-28th---wisdom-through-recall)
   - [November](#november)
   - [December](#december)
 
@@ -241,6 +242,33 @@ It's also similar to my practice with [Search Inside Yourself](/siy) - the forma
 
 {%include summarize-page.html src="/siy" %}
 {%include summarize-page.html src="/affirmations" %}
+
+#### October 28th - Wisdom through Recall
+
+To me this is really about: **Meditation giving wisdom power - when you've internalized something deeply, it starts to guide you.**
+
+My favorite line from the passage: **"When you've memorized a variety of Scripture passages, you will find them deeper and more relevant than ever before. When you're in the midst of a crisis, the Spirit will bring the right word into your situation."**
+
+_Here's how I translate this:_
+
+After you've meditated on something enough - really internalized it, repeated it, lived with it - it starts to guide you. It gives you power. This connects to one of my favorite lines: **"Repetition births ritual. Rituals become sacred. The sacred commands power."**
+
+When you memorize Scripture (or affirmations, or principles), you're not just storing data - you're making something sacred through repetition. And when something becomes sacred to you, it commands power in your life. In a crisis, the right word surfaces not because you frantically search your notes, but because you've internalized it so deeply it's become part of how you think.
+
+This is the difference between:
+- **Having wisdom** (it's written down somewhere, searchable if you remember to look)
+- **Being guided by wisdom** (it's so deeply internalized it shows up automatically when you need it)
+
+My [affirmations practice](/affirmations) works the same way. I don't write them out daily just to remember them intellectually - I write them to ritualize them, to make them sacred, so they command power when I need them. When I'm stressed, "Calm like water: Be present. This too shall pass. Work the problem" surfaces automatically because I've repeated it hundreds of times.
+
+The religious practice of memorizing Scripture serves this exact function: making wisdom so deeply part of you that the Spirit can "bring the right word into your situation." In secular terms: you've internalized it enough that your subconscious can surface the right pattern when you need it.
+
+This also connects to how I think about journaling and the [AI journal practice](/ai-journal). The journal is the external memory system for discovering wisdom. But the affirmations are how I take discovered wisdom and make it sacred through repetition - turning it from something I know intellectually into something that actually guides me.
+
+**Important distinction:** This isn't about mindless repetition or rigid dogma. The power comes from repeatedly engaging with wisdom that actually resonates with you - that's why affirmations need to "speak to you" to work. You can't force something to become sacred through mechanical repetition alone. The ritual needs authentic meaning behind it, or it's just empty repetition. But once something truly speaks to you, consistent ritual transforms it from knowledge into power.
+
+{%include summarize-page.html src="/affirmations" %}
+{%include summarize-page.html src="/ai-journal" %}
 
 ### November
 
