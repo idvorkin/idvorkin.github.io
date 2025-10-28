@@ -34,6 +34,7 @@ Someone important to me has been reading a daily devotional. Even though I'm not
     - [October 23rd - Perspective](#october-23rd---perspective)
     - [October 24th - Pure Joy](#october-24th---pure-joy)
     - [October 26th - Wisdom through Prayer](#october-26th---wisdom-through-prayer)
+    - [October 28th - Wisdom through Recall](#october-28th---wisdom-through-recall)
   - [November](#november)
   - [December](#december)
 
@@ -212,6 +213,34 @@ In secular terms: wisdom requires the cognitive labor of reflection. It's not ab
 
 **Important distinction:** This isn't about rejecting divine help or inspiration - it's about recognizing that even divine wisdom requires human effort to receive and integrate. The religious version says "God provides wisdom to those who diligently seek it." The secular version says "wisdom emerges from consistent, intentional cognitive work." Both require you to do the actual thinking - there's no shortcut around the mental labor.
 
+{%include summarize-page.html src="/essentialism" %}
+
+#### October 28th - Wisdom through Recall
+
+To me this is really about: **Memory as a wisdom multiplier - the practice of deliberately remembering hard-won lessons.**
+
+My favorite line from the passage: **"Remember the former things of old; for I am God, and there is no other."** (Isaiah 46:9)
+
+_Here's how I translate this:_
+
+We're terrible at remembering our own wisdom. I'll struggle through a problem for weeks, finally figure it out, feel brilliant for a moment - and then six months later face the exact same problem like it's brand new. All that hard-won wisdom? Gone. Not because I forgot the lesson existed, but because I forgot to look for it.
+
+This is why I keep journals. Not to document my life for posterity, but as an external memory system for wisdom. When I'm stuck, I search my past entries: "Have I solved something like this before? What was I thinking then?" More often than not, past-Igor had insights that present-Igor desperately needs.
+
+The religious practice of "remembering God's faithfulness" serves a similar function: cataloging past wins as evidence for hope. When things are hard now, you recall "remember that time things seemed impossible and then worked out?" It's pattern recognition that breeds resilience.
+
+But here's the catch: remembering requires active practice. You have to:
+1. **Capture** wisdom when you discover it (write it down)
+2. **Recall** it when relevant (search/review your notes)
+3. **Apply** it to the new context (don't just read, actually use it)
+
+Without active recall, wisdom becomes like books you own but never read - technically available but practically useless. The insight isn't in having the memory, it's in retrieving and applying it when it matters.
+
+This connects to the [AI journal practice](/ai-journal) - not just logging what happened, but extracting the lessons learned so future-you can find them. And to the earlier insights about prayer as cognitive work ([October 26th](#october-26th---wisdom-through-prayer)) - sometimes the "wisdom" you're seeking isn't new revelation, it's remembering what you already figured out before.
+
+**Important distinction:** This isn't about living in the past or believing "everything was better before." It's about learning from experience rather than repeatedly paying the cost of the same lesson. You can remember past wisdom AND still be open to new insights. The goal isn't to fossilize your thinking - it's to build on what you've already learned instead of constantly starting from scratch.
+
+{%include summarize-page.html src="/ai-journal" %}
 {%include summarize-page.html src="/essentialism" %}
 
 ### November
