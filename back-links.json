@@ -615,7 +615,8 @@
                 "/mortality-software",
                 "/operating-manual",
                 "/process-journal",
-                "/religion"
+                "/religion",
+                "/walking-with-god"
             ],
             "last_modified": "2025-10-05T06:17:13-07:00",
             "markdown_path": "_d/affirmations2.md",
@@ -751,7 +752,8 @@
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai",
-                "/chop"
+                "/chop",
+                "/walking-with-god"
             ],
             "last_modified": "2025-10-17T13:09:41-04:00",
             "markdown_path": "_d/ai-journal.md",
@@ -2113,7 +2115,8 @@
                 "/process-journal",
                 "/sharpen-the-saw",
                 "/siy",
-                "/sublime"
+                "/sublime",
+                "/walking-with-god"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/emotional-health-hold.md",
@@ -2296,7 +2299,8 @@
                 "/parkinson",
                 "/partner-trouble",
                 "/timeoff",
-                "/timeoff-2022-07"
+                "/timeoff-2022-07",
+                "/walking-with-god"
             ],
             "last_modified": "2025-08-24T09:03:19-07:00",
             "markdown_path": "_posts/2015-11-28-essentialism.md",
@@ -4537,7 +4541,8 @@
                 "/sharpen-the-saw",
                 "/slow",
                 "/timeoff",
-                "/timeoff-2020-03"
+                "/timeoff-2020-03",
+                "/walking-with-god"
             ],
             "last_modified": "2025-09-29T10:07:00-07:00",
             "markdown_path": "_d/siy.md",
@@ -5744,7 +5749,9 @@
             "description": "Finding your tribe is important - calling it a tribe makes it sound like I’m a contributing member of the community, perhaps this is more like things I’m a fanboy of.\n\n",
             "doc_size": 15000,
             "file_path": "_site/tribe.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/walking-with-god"
+            ],
             "last_modified": "2024-11-10T16:13:17-08:00",
             "markdown_path": "_d/tribe.md",
             "outgoing_links": [
@@ -5886,20 +5893,26 @@
         },
         "/walking-with-god": {
             "description": "Someone important to me has been reading a daily devotional. Even though I’m not religious, I’m studying with them to be able to have conversations about the insights - whether in a secular or religious context. This is my attempt to bridge two worlds: honoring the spiritual wisdom they’re finding while translating it into language that works for my engineer brain.\n\n",
-            "doc_size": 22000,
+            "doc_size": 41000,
             "file_path": "_site/walking-with-god.html",
             "incoming_links": [
                 "/religion",
                 "/spiritual-health"
             ],
-            "last_modified": "2025-10-21T07:28:12.398642",
+            "last_modified": "2025-10-31T10:13:32.815829",
             "markdown_path": "_d/walking-with-god.md",
             "outgoing_links": [
+                "/affirmations",
+                "/ai-journal",
                 "/compassion",
+                "/emotional-health",
+                "/essentialism",
                 "/get-to-yes-with-yourself",
                 "/happy",
                 "/religion",
-                "/spiritual-health"
+                "/siy",
+                "/spiritual-health",
+                "/tribe"
             ],
             "redirect_url": "",
             "title": "Walking with God: A Daily Devotional Journey",

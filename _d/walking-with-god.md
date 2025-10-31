@@ -36,6 +36,7 @@ Someone important to me has been reading a daily devotional. Even though I'm not
     - [October 26th - Wisdom through Prayer](#october-26th---wisdom-through-prayer)
     - [October 27th - Wisdom through Meditation](#october-27th---wisdom-through-meditation)
     - [October 28th - Wisdom through Recall](#october-28th---wisdom-through-recall)
+    - [October 31st - Wisdom through Fellowship](#october-31st---wisdom-through-fellowship)
   - [November](#november)
   - [December](#december)
 
@@ -205,6 +206,7 @@ _Here's how I translate this:_
 Prayer for wisdom is the practice of deep, intentional thinking - not outsourcing your cognition to the divine. It's the mental work of examining your beliefs, challenging your assumptions, and reconsidering what you thought you knew. And it requires doing this work frequently because wisdom isn't static.
 
 The scriptures are clear about this:
+
 - **Hebrews 11:6**: God rewards those who "diligently seek him" - the Greek word means to zealously seek with all your heart, strength, and might. Not passive waiting.
 - **Matthew 7:7**: "Ask, seek, knock" - all active verbs requiring persistence and engagement.
 - **Philippians 2:12-13**: "Work out your salvation with fear and trembling" - you must actively work out what has been worked in. **Grace is opposed to earning, not effort.**
@@ -256,6 +258,7 @@ After you've meditated on something enough - really internalized it, repeated it
 When you memorize Scripture (or affirmations, or principles), you're not just storing data - you're making something sacred through repetition. And when something becomes sacred to you, it commands power in your life. In a crisis, the right word surfaces not because you frantically search your notes, but because you've internalized it so deeply it's become part of how you think.
 
 This is the difference between:
+
 - **Having wisdom** (it's written down somewhere, searchable if you remember to look)
 - **Being guided by wisdom** (it's so deeply internalized it shows up automatically when you need it)
 
@@ -269,6 +272,46 @@ This also connects to how I think about journaling and the [AI journal practice]
 
 {%include summarize-page.html src="/affirmations" %}
 {%include summarize-page.html src="/ai-journal" %}
+
+#### October 31st - Wisdom through Fellowship
+
+To me this is really about: **Tribe gives you wisdom, inspiration, and courage - you get smarter and braver when you're part of a group that challenges and complements your thinking.**
+
+My favorite line from the passage: **"Don't idealize the church. It is made of redeemed but flawed people in a process of transformation. But don't underestimate it, either."**
+
+_Here's how I translate this:_
+
+Wisdom isn't just individual - it's distributed across a tribe. When you're part of a tribe, you get access to perspectives you'd never generate alone. Someone sees the blind spot you can't see. Someone has lived through the thing you're facing. Someone asks the question that breaks your stuck thinking.
+
+There are sayings that capture this:
+
+- **"Iron sharpens iron"** (Proverbs 27:17) - you get sharper through friction with others
+- **"You become the average of your peers"** - so hang out with people better than you
+- **"Be the dumbest person in the room"** - though careful, this wears you down after a while
+
+What tribes actually give you:
+
+- **Wisdom on what you don't know** - filling your blind spots
+- **Inspiration when you're stuck** - seeing what's possible
+- **Courage from seeing others have gone through it** - proof that the hard thing is survivable
+
+I'm intellectually aligned with this. I know tribe matters. But I don't really do it - I don't have a tribe I regularly engage with for this kind of wisdom exchange. And that's probably costing me.
+
+The passage warns against two extremes with church (or any tribe):
+
+1. **Don't idealize it** - Tribes are made of flawed people. They'll disappoint you. They'll have bad takes. They'll fail to live up to the ideal you want them to be.
+2. **Don't underestimate it** - Even with all the flaws, there's real wisdom and transformation that happens through fellowship. The wisdom, inspiration, and courage are real.
+
+This connects to why I struggle with tribe: I tend to either idealize it (expecting perfect wisdom transmission, getting disappointed) or underestimate it (deciding I can figure everything out alone, which is hubris). Neither approach actually gets me the benefits.
+
+The secular version: **Join tribes not for perfection but for wisdom, inspiration, and courage.** Find your people - even flawed people in process - and engage regularly. These benefits emerge from the collective, not from any single perfect source.
+
+The "fellowship" isn't about blind conformity or groupthink - it's about the intellectual and emotional work that happens when you're regularly in conversation with people who care about similar things but see them differently than you do.
+
+**Important distinction:** This isn't about finding an echo chamber or seeking validation. Real fellowship challenges you - it surfaces your blind spots, questions your assumptions, and offers perspectives you wouldn't generate alone. The discomfort of having your thinking challenged is a feature, not a bug. You don't need a perfect tribe or a tribe that agrees with you on everything. You need a tribe that's wrestling with similar questions and willing to think hard together. The "flawed people in process of transformation" part is crucial - everyone is figuring it out, and that shared vulnerability is what makes the wisdom exchange possible.
+
+{%include summarize-page.html src="/emotional-health" %}
+{%include summarize-page.html src="/tribe" %}
 
 ### November
 
