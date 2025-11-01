@@ -58,7 +58,9 @@ It's designed to be read first thing in the morning, setting the tone for the da
 
 I'm not doing this to become religious. I'm doing it because:
 
-**Connection** - This person matters to me. When they talk about what they're learning, I want to actually understand, not just nod politely.
+**My 3rd Affirmation** - Of course! [Be a class act](/eulogy#be-a-class-act). This devotional practice is part of living that value with integrity.
+
+**Connection** - This person matters to me. When they talk about what they're learning, I want to actually understand, not just nod politely. This is Habit 5 in action: [Seek first to understand](/7-habits#habit-5-seek-first-to-understand-then-to-be-understood), then to be understood.
 
 **Curiosity** - If something is helping someone I respect, I want to know what's in there. What wisdom am I missing by dismissing it outright?
 
