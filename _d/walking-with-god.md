@@ -38,6 +38,7 @@ Someone important to me has been reading a daily devotional. Even though I'm not
     - [October 28th - Wisdom through Recall](#october-28th---wisdom-through-recall)
     - [October 31st - Wisdom through Fellowship](#october-31st---wisdom-through-fellowship)
   - [November](#november)
+    - [November 1st - Jesus in This World](#november-1st---jesus-in-this-world)
   - [December](#december)
 
 <!-- vim-markdown-toc-end -->
@@ -314,6 +315,32 @@ The "fellowship" isn't about blind conformity or groupthink - it's about the int
 {%include summarize-page.html src="/tribe" %}
 
 ### November
+
+#### November 1st - Jesus in This World
+
+To me this is really about: **Finding and being your true self - your essentialist self.**
+
+My favorite line from the passage: **"~~The life of Jesus in us~~ Being our essentialist self will make us ill-adapted to live comfortably in the ways of the world. But ~~the life of Jesus in us~~ being our true self will make us entirely satisfied as misfits."**
+
+_Here's how I translate this:_
+
+This is about the work of finding who you really are and then having the courage to be that person - even when the world pushes back against it. For me, finding my authentic self meant working on [my eulogy](/eulogy) - literally writing out who I want to be and how I want to be remembered. It's not a one-time decision. It's constant assessment: Am I being who I want to be? Am I living aligned with my true self? And then doing the hard work of course-correcting when the answer is no.
+
+{%include summarize-page.html src="/eulogy" %}
+
+The world wants you to fit in. To be comfortable. To not make waves. But when you're being your essentialist self - when you're living authentically as who you actually are - you won't fit comfortably into the world's boxes. You'll be ill-adapted to the standardized paths everyone else is walking.
+
+And that's the point.
+
+The misfits are the ones who know themselves deeply enough to be satisfied with not fitting in. They're not satisfied _because_ they're misfits - they're satisfied because they're being true to themselves. The misfit status is just the natural consequence of authenticity.
+
+This connects to the essentialist position from [October 22nd](#october-22nd---praying-in-gods-mind) - constantly doing the soul-searching to figure out what matters. But this takes it further: once you know what matters, you have to actually _be_ that person. Even when it's uncomfortable. Even when you don't fit.
+
+The work is worth it. Being a satisfied misfit beats being a miserable conformist.
+
+**Important distinction:** This isn't about being contrarian for its own sake or rejecting everything conventional just to be different. It's about knowing yourself well enough to recognize when fitting in would require betraying who you are. Some people's true selves happen to align well with conventional paths - that's fine. But if your true self doesn't fit the mold, forcing yourself into it creates a different kind of suffering. The goal is authenticity, not rebellion. The misfit status is a side effect, not the objective.
+
+{%include summarize-page.html src="/essentialism" %}
 
 ### December
 
