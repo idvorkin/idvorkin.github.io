@@ -71,7 +71,7 @@ This post uses the word manager, but many topics apply to all job functions, reg
   - [How do you deal with a team that disagrees with the leadership](#how-do-you-deal-with-a-team-that-disagrees-with-the-leadership)
   - [Agency and Psychological Safety](#agency-and-psychological-safety)
   - [Kudos Boards - Appreciations](#kudos-boards---appreciations)
-  - [How do you like being questioned/micromanaged?](#how-do-you-like-being-questionedmicromanaged)
+  - [Is asking "Hey, did you ..." micromanaging/demonstrate a lack of trust?](#is-asking-hey-did-you--micromanagingdemonstrate-a-lack-of-trust)
   - [How do you transition from mercenaries to missionaries](#how-do-you-transition-from-mercenaries-to-missionaries)
 - [Process and Mechanism](#process-and-mechanism)
   - [Theory of Process](#theory-of-process)
@@ -1007,15 +1007,36 @@ Both helpful for a short period of time, and for a longer period of time, kuddos
 
 A nice format for this is a "clock" with everyone's name on it, and the center of the clock having great prompts like:
 
-### How do you like being questioned/micromanaged?
+### Is asking "Hey, did you ..." micromanaging/demonstrate a lack of trust?
 
-This applies to me, and I need to think about if this is a good part of culture. I like to tell people:
+**When people ask me "Hey did you..." questions:**
 
-Never worry, I'll think you're "questioning me". I like sanity checks.
+It doesn't matter if it's "Hey did you already - try the compiler", or "talk to bob" or "consider the impact of inflation"
 
-If you already had the thought, it's free for you to say it. If I've already thought about it, it's free for me to share my reasoning.
+I LOVE these questions and sanity checks. I remind people again and again:
 
-Catching a bad assumption on my part, or even more important, something I haven't thought about - priceless.
+Never fear that I'll think you're "questioning me" or micromanaging. I love sanity checks!
+
+Lets do the math: If you already had the thought, it's free for you to say it. If I've already thought about it, it's free for me to share my reasoning.
+
+BUT - Catching a bad assumption I'm making, or even more valuable, something I haven't thought about - priceless.
+
+**Do I ask my team "Hey did you..." questions:**
+
+Power dynamics matter here. When a manager asks these questions, it can feel like scrutiny or lack of trust, even when that's not the intent:
+
+1. **Power dynamics** - A report questioning up feels different than a manager questioning down
+2. **Context** - Are you asking because you don't trust them? Or because you're genuinely curious/want to help?
+3. **Intent** - Questioning to learn/help vs. questioning to control
+
+So I start carefully - especially with new team members or in new relationships. I'm thoughtful about how I frame questions:
+
+- "I'm guessing you already thought of this, but just in case..."
+- "Hey, I'm guessing Y is hard, what's your plan to solve it?"
+
+These framings acknowledge they've likely already thought about it, rather than implying they haven't.
+
+The goal is to build enough trust that we can have symmetric behavior - where questions flow freely in both directions without defensiveness. Once my questions feel like genuine curiosity and collaboration, that's when the real magic happens.
 
 ### How do you transition from mercenaries to missionaries
 
