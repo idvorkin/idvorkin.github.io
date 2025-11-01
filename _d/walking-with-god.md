@@ -324,7 +324,7 @@ My favorite line from the passage: **"Being our essentialist self will make us i
 
 _Here's how I translate this:_
 
-This is about the work of finding who you really are and then having the courage to be that person - even when the world pushes back against it. It's not a one-time decision. It's constant assessment: Am I being who I want to be? Am I living aligned with my true self? And then doing the hard work of course-correcting when the answer is no.
+This is about the work of finding who you really are and then having the courage to be that person - even when the world pushes back against it. For me, finding my authentic self meant working on [my eulogy](/eulogy) - literally writing out who I want to be and how I want to be remembered. It's not a one-time decision. It's constant assessment: Am I being who I want to be? Am I living aligned with my true self? And then doing the hard work of course-correcting when the answer is no.
 
 The world wants you to fit in. To be comfortable. To not make waves. But when you're being your essentialist self - when you're living authentically as who you actually are - you won't fit comfortably into the world's boxes. You'll be ill-adapted to the standardized paths everyone else is walking.
 
@@ -338,6 +338,7 @@ The work is worth it. Being a satisfied misfit beats being a miserable conformis
 
 **Important distinction:** This isn't about being contrarian for its own sake or rejecting everything conventional just to be different. It's about knowing yourself well enough to recognize when fitting in would require betraying who you are. Some people's true selves happen to align well with conventional paths - that's fine. But if your true self doesn't fit the mold, forcing yourself into it creates a different kind of suffering. The goal is authenticity, not rebellion. The misfit status is a side effect, not the objective.
 
+{%include summarize-page.html src="/eulogy" %}
 {%include summarize-page.html src="/essentialism" %}
 {%include summarize-page.html src="/e1" %}
 
