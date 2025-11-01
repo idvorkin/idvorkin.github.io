@@ -14,6 +14,7 @@ Someone important to me has been reading a daily devotional. Even though I'm not
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Instructions for Adding Daily Entries](#instructions-for-adding-daily-entries)
 - [What Is a Daily Devotional?](#what-is-a-daily-devotional)
 - [Why I'm Doing This](#why-im-doing-this)
 - [The Translation Challenge](#the-translation-challenge)
@@ -44,6 +45,29 @@ Someone important to me has been reading a daily devotional. Even though I'm not
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
+## Instructions for Adding Daily Entries
+
+When adding a new daily devotional reflection, follow this format:
+
+1. **What it's really about** - Start with a clear statement: "To me this is really about: **[Your secular interpretation]**"
+
+2. **Favorite line with translation** - Use this exact format:
+   ```
+   My favorite line from the passage: **"~~Religious language crossed out~~ Secular translation will make us... But ~~religious language crossed out~~ secular translation will make us..."**
+   ```
+
+3. **Translation prompt** - Always include: "_Here's how I translate this:_"
+   - This prompts you to fully unpack the translation
+   - Explain the secular equivalent in detail
+   - Connect to your personal framework (eulogy, 7 habits, etc.)
+   - Add practical examples from your life
+
+4. **Important distinctions** - When relevant, add a paragraph starting with "**Important distinction:**" to clarify what this isn't about (contrarianism, echo chambers, etc.)
+
+5. **Related content** - Link to relevant blog posts using `{%include summarize-page.html src="/post-name" %}`
+
+See [November 1st](#november-1st---jesus-in-this-world) for a complete example of this format.
+
 ## What Is a Daily Devotional?
 
 A daily devotional is a short reading - usually a page or two - combining scripture, reflection, and prayer. The format is remarkably consistent:
@@ -60,7 +84,7 @@ I'm not doing this to become religious. I'm doing it because:
 
 **My 3rd Affirmation** - Of course! [Be a class act](/eulogy#be-a-class-act). This devotional practice is part of living that value with integrity.
 
-**Connection** - This person matters to me. When they talk about what they're learning, I want to actually understand, not just nod politely. This is Habit 5 in action: [Seek first to understand](/7-habits#habit-5-seek-first-to-understand-then-to-be-understood), then to be understood.
+**Connection** - This person matters to me. When they talk about what they're learning, I want to actually understand, not just nod politely. This is Habit 5 in action: [Seek first to understand](/7-habits), then to be understood.
 
 **Curiosity** - If something is helping someone I respect, I want to know what's in there. What wisdom am I missing by dismissing it outright?
 
