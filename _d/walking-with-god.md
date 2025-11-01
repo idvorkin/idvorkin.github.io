@@ -320,7 +320,11 @@ The "fellowship" isn't about blind conformity or groupthink - it's about the int
 
 To me this is really about: **Finding and being your true self - your essentialist self.**
 
-My favorite line from the passage: **"Being our essentialist self will make us ill-adapted to live comfortably in the ways of the world. But being our true self will make us entirely satisfied as misfits."**
+My favorite line from the passage: **"The life of Jesus in us will make us ill-adapted to live comfortably in the ways of the world. But the life of Jesus in us will make us entirely satisfied as misfits."**
+
+I translate this by substituting: ~~The life of Jesus in us~~ → Being our essentialist self, and ~~the life of Jesus in us~~ → being our true self:
+
+**"Being our essentialist self will make us ill-adapted to live comfortably in the ways of the world. But being our true self will make us entirely satisfied as misfits."**
 
 _Here's how I translate this:_
 
