@@ -129,6 +129,12 @@ describe("Header Copy Link", () => {
     mockDocument.getElementById.mockReturnValue(null);
   });
 
+  afterEach(() => {
+    // Clear all timers to prevent "document is not defined" errors
+    // when timeouts try to execute after test environment is torn down
+    vi.clearAllTimers();
+  });
+
   describe("URL Transformation", () => {
     // We need to test the transformUrl function, but it's not exported
     // So we'll test it indirectly through the copy functionality
@@ -867,7 +873,7 @@ describe("Header Copy Link", () => {
       const mockHeader = createMockHeader("test-header", "Test Header");
       mockHeader.querySelector = vi.fn(() => null);
 
-      let githubIconClickHandler: Function | null = null;
+      let githubIconClickHandler: ((event: Event) => void) | null = null;
 
       // Capture the GitHub icon when it's created
       mockDocument.createElement.mockImplementation((tagName: string) => {
@@ -883,9 +889,9 @@ describe("Header Copy Link", () => {
               element.innerHTML = '<i class="fab fa-github"></i>';
             }
           }),
-          addEventListener: vi.fn((event: string, handler: Function) => {
+          addEventListener: vi.fn((event: string, handler: (...args: any[]) => void) => {
             if (element.className === "header-github-issue" && event === "click") {
-              githubIconClickHandler = handler;
+              githubIconClickHandler = handler as (event: Event) => void;
             }
           }),
           setAttribute: vi.fn(),
@@ -960,7 +966,7 @@ describe("Header Copy Link", () => {
 
       // Track popup element and its submit handler
       let popupElement: any = null;
-      let submitHandler: Function | null = null;
+      let submitHandler: ((event: Event) => void) | null = null;
 
       mockDocument.createElement.mockImplementation((tagName: string) => {
         const element: any = {
@@ -970,9 +976,9 @@ describe("Header Copy Link", () => {
           title: "",
           style: {},
           appendChild: vi.fn(),
-          addEventListener: vi.fn((event: string, handler: Function) => {
+          addEventListener: vi.fn((event: string, handler: (...args: any[]) => void) => {
             if (element.className === "github-issue-submit" && event === "click") {
-              submitHandler = handler;
+              submitHandler = handler as (event: Event) => void;
             }
           }),
           setAttribute: vi.fn(),
@@ -1078,7 +1084,7 @@ describe("Header Copy Link", () => {
       mockHeader.querySelector = vi.fn(() => null);
       mockHeader.nextElementSibling = mockParagraph;
 
-      let submitHandler: Function | null = null;
+      let submitHandler: ((event: Event) => void) | null = null;
       let popupElement: any = null;
 
       mockDocument.createElement.mockImplementation((tagName: string) => {
@@ -1089,9 +1095,9 @@ describe("Header Copy Link", () => {
           title: "",
           style: {},
           appendChild: vi.fn(),
-          addEventListener: vi.fn((event: string, handler: Function) => {
+          addEventListener: vi.fn((event: string, handler: (...args: any[]) => void) => {
             if (element.className === "github-issue-submit" && event === "click") {
-              submitHandler = handler;
+              submitHandler = handler as (event: Event) => void;
             }
           }),
           setAttribute: vi.fn(),
@@ -1189,7 +1195,7 @@ describe("Header Copy Link", () => {
       mockHeader.querySelector = vi.fn(() => null);
       mockHeader.nextElementSibling = mockParagraph;
 
-      let submitHandler: Function | null = null;
+      let submitHandler: ((event: Event) => void) | null = null;
       let popupElement: any = null;
 
       mockDocument.createElement.mockImplementation((tagName: string) => {
@@ -1200,9 +1206,9 @@ describe("Header Copy Link", () => {
           title: "",
           style: {},
           appendChild: vi.fn(),
-          addEventListener: vi.fn((event: string, handler: Function) => {
+          addEventListener: vi.fn((event: string, handler: (...args: any[]) => void) => {
             if (element.className === "github-issue-submit" && event === "click") {
-              submitHandler = handler;
+              submitHandler = handler as (event: Event) => void;
             }
           }),
           setAttribute: vi.fn(),
@@ -1299,7 +1305,7 @@ describe("Header Copy Link", () => {
       mockHeader.querySelector = vi.fn(() => null);
       mockHeader.nextElementSibling = emptyParagraph;
 
-      let submitHandler: Function | null = null;
+      let submitHandler: ((event: Event) => void) | null = null;
       let popupElement: any = null;
 
       mockDocument.createElement.mockImplementation((tagName: string) => {
@@ -1310,9 +1316,9 @@ describe("Header Copy Link", () => {
           title: "",
           style: {},
           appendChild: vi.fn(),
-          addEventListener: vi.fn((event: string, handler: Function) => {
+          addEventListener: vi.fn((event: string, handler: (...args: any[]) => void) => {
             if (element.className === "github-issue-submit" && event === "click") {
-              submitHandler = handler;
+              submitHandler = handler as (event: Event) => void;
             }
           }),
           setAttribute: vi.fn(),
