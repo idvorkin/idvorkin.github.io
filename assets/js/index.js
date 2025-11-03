@@ -308,7 +308,7 @@ Try these shortcuts:
       text-align: center;
       color: #586069;
     }
-  `,document.head.appendChild(t)}(),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",()=>{R(e)}):R(e))}(),q(),function(){if("localhost"!==window.location.hostname&&"127.0.0.1"!==window.location.hostname){console.log("Not on dev server, skipping dev info");return}console.log("Dev server detected, initializing dev info...");let e=function(){let e=window.__GIT_BRANCH__;return e?(console.log("Branch from global variable:",e),e):(console.log("Branch info not found"),null)}(),t=function(){let e=window.__GIT_PR__;return e&&"number"==typeof e?(console.log("PR from global variable:",e),e):(console.log("PR info not found"),null)}(),n=window.location.port||"80";if(console.log("Dev info - Branch:",e,"PR:",t,"Port:",n),e&&"main"!==e||"4000"!==n){let o=document.createElement("div");o.id="dev-info-banner",o.style.cssText=`
+  `,document.head.appendChild(t)}(),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",()=>{R(e)}):R(e))}(),q(),function(){console.log("Initializing dev info...");let e=function(){let e=window.__GIT_BRANCH__;return e?(console.log("Branch from global variable:",e),e):(console.log("Branch info not found"),null)}(),t=function(){let e=window.__GIT_PR__;return e&&"number"==typeof e?(console.log("PR from global variable:",e),e):(console.log("PR info not found"),null)}(),n=window.location.port||"80";if(console.log("Dev info - Branch:",e,"PR:",t,"Port:",n),e&&"main"!==e||"4000"!==n){let o=document.createElement("div");o.id="dev-info-banner",o.style.cssText=`
       position: fixed;
       top: 60px;
       left: 0;
