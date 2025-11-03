@@ -31,12 +31,7 @@ export function getCurrentPort(): string {
 }
 
 export function initDevInfo(): void {
-  if (!isDevServer()) {
-    console.log("Not on dev server, skipping dev info");
-    return;
-  }
-
-  console.log("Dev server detected, initializing dev info...");
+  console.log("Initializing dev info...");
   const branch = getCurrentBranch();
   const pr = getCurrentPR();
   const port = getCurrentPort();
