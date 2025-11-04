@@ -38,8 +38,8 @@ export function initDevInfo(): void {
 
   console.log("Dev info - Branch:", branch, "PR:", pr, "Port:", port);
 
-  // Show banner if we have branch info and it's not main, or if we're on a non-standard port
-  if ((branch && branch !== "main") || port !== "4000") {
+  // Show banner when we have branch or PR info, but not on production ports (80/443)
+  if ((branch || pr) && port !== "80" && port !== "443") {
     const devInfoElement = document.createElement("div");
     devInfoElement.id = "dev-info-banner";
     devInfoElement.style.cssText = `
