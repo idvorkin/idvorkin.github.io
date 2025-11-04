@@ -441,6 +441,16 @@ The passage identifies these as two false extremes:
 
 The real path is neither extreme. It's **disciplining yourself to become who you ought to be while openly confessing the struggle.**
 
+{% include quadrant-matrix.html
+    title="Slacking Off vs Cutting Yourself Slack"
+    subtitle="The key is balancing self-discipline with self-compassion"
+    x_label="Self-Discipline →" y_label="Self-Compassion →"
+    q1_name="SUSTAINABLE GROWTH" q1_subtitle="The Sweet Spot" q1_traits="Working toward your values<br>+ Being kind about struggles<br>= Lasting change" q1_color="rgba(144,238,144,0.5)"
+    q2_name="SLACKING OFF" q2_subtitle="Too Much Slack" q2_traits="High self-compassion<br>Low actual effort<br>Comfortable but stuck" q2_color="rgba(255,229,180,0.5)"
+    q3_name="STAGNATION" q3_subtitle="The Worst Quadrant" q3_traits="No effort + Self-judgment<br>Stuck in shame<br>Can't move forward" q3_color="rgba(211,211,211,0.5)"
+    q4_name="BURNOUT" q4_subtitle="Too Hard on Yourself" q4_traits="High discipline<br>Zero self-compassion<br>Unsustainable" q4_color="rgba(255,182,193,0.5)"
+%}
+
 This connects directly to [getting to yes with yourself](/get-to-yes-with-yourself#1-put-yourself-in-your-shoes-). The key insight there: **When you judge yourself, you shut down and can't find what you really want. Acceptance induces safety, and only from safety can you find what you really want.**
 
 Here's how they work together:
