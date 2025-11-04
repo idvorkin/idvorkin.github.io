@@ -438,8 +438,11 @@ When adding new features or fixing bugs, **always add both unit tests and e2e te
 - **Run in background**: `just jekyll-serve 4002 35730 > /tmp/jekyll.log 2>&1 &`
 - **Check port availability first**: If port in use, pick random port between 5000-6000
 - **Use random live reload port**: Pick a random live reload port (e.g., 35000-36000) to avoid conflicts
-- **Open page in browser**: `open http://localhost:4002/page-name`
-- **Open specific section**: `open http://localhost:4002/page-name#section-anchor`
+- **Open page in browser**:
+  - On machines c-5001 to c-5009: Use hostname format `http://c-500X:4000/page-name` (e.g., `http://c-5003:4000/religion`)
+  - Check hostname with `hostname` command first
+  - Other machines: `open http://localhost:4002/page-name`
+- **Open specific section**: `open http://c-5003:4000/page-name#section-anchor` (adjust hostname/port as needed)
 
 ## Systematic Debugging Process
 
@@ -497,12 +500,15 @@ YOU MUST follow this debugging framework for ANY technical issue:
 ### Commit Guidelines
 
 - **ALWAYS run pre-commit checks before committing** - This is mandatory:
+
   ```bash
   pre-commit run --files <files-you-modified>
   ```
+
   - Pre-commit checks validate links, formatting, and other quality checks
   - Never skip this step - it catches issues before they reach the repo
   - If pre-commit modifies files, review changes and commit them too
+
 - **Generated JS files ARE committed** (assets/js/index.js, assets/js/index.js.map)
 - Commit both TypeScript source files (src/\*.ts) and the generated JS bundle
 - JS files are built from TypeScript and should be tracked in git for Jekyll deployment
@@ -610,7 +616,7 @@ cat transcript.md | gpt tokens  # Should be ~25K tokens (much smaller)
 
 ### Workflow Example
 
-From the [2025-10-15 YouTube session](/published-chop-logs/2025-10-15-youtube-religion-14-signs.html):
+From the [2025-10-15 YouTube session](/published-chop-logs/2025-10-15-religion-14-signs-actual-work.html):
 
 1. **Extract subtitles**: `yt-dlp --write-auto-sub --skip-download <youtube-url>`
 2. **Process to clean text**: `cat file.vtt | captions.py to-human > transcript.md`
