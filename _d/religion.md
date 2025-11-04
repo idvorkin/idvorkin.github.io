@@ -132,24 +132,38 @@ When I read devotionals and replace "God" with a secular concept, I realize God 
 
 **Summary: The Ten Roles God Serves**
 
-| Role                        | What It Provides                                | Religious Approach               | Secular Approach                    |
-| --------------------------- | ----------------------------------------------- | -------------------------------- | ----------------------------------- |
-| **Confidence & Resilience** | Bone-deep certainty that I'll be okay           | God's faithfulness and strength  | Self-efficacy and growth mindset    |
-| **Mission & Values**        | North Star that doesn't shift with opinions     | God's kingdom and righteousness  | Know thyself, authentic values      |
-| **Locus of Control**        | Stop carrying weight of uncontrollable outcomes | Trust in God's plan              | Serenity prayer, Stoicism           |
-| **Unconditional Love**      | Feel fundamentally okay without performing      | God's everlasting love           | Self-compassion, inherent worth     |
-| **Cosmic Perspective**      | Relief from tyranny of small anxieties          | God's eternal view               | Pale blue dot, memento mori         |
-| **Moral Framework**         | Clear answers without rebuilding ethics         | Biblical commandments            | Kant, virtue ethics, utilitarianism |
-| **Community Identity**      | Instantly find my people anywhere               | Church/synagogue/mosque          | Values-based communities            |
-| **Ritual Design**           | Know what to do for major life events           | Religious ceremonies and sabbath | Intentional habits and traditions   |
-| **Spiritual Guide**         | Access to wisdom beyond my own                  | Prayer and scripture             | Therapy, mentors, philosophy        |
-| **Inner Peace**             | Place to stop striving and just be              | "Be still and know"              | Meditation, flow states             |
+| Category                                  | Role                        | What It Provides                                | Religious Approach               | Secular Approach                    |
+| ----------------------------------------- | --------------------------- | ----------------------------------------------- | -------------------------------- | ----------------------------------- |
+| **FOUNDATION** _(Who You Are)_            |                             |                                                 |                                  |                                     |
+|                                           | **Unconditional Love**      | Feel fundamentally okay without performing      | God's everlasting love           | Self-compassion, inherent worth     |
+|                                           | **Confidence & Resilience** | Bone-deep certainty that I'll be okay           | God's faithfulness and strength  | Self-efficacy and growth mindset    |
+|                                           | **Inner Peace**             | Place to stop striving and just be              | "Be still and know"              | Meditation, flow states             |
+| **PERSPECTIVE** _(How You See the World)_ |                             |                                                 |                                  |                                     |
+|                                           | **Cosmic Perspective**      | Relief from tyranny of small anxieties          | God's eternal view               | Pale blue dot, memento mori         |
+|                                           | **Locus of Control**        | Stop carrying weight of uncontrollable outcomes | Trust in God's plan              | Serenity prayer, Stoicism           |
+| **DIRECTION** _(How You Choose)_          |                             |                                                 |                                  |                                     |
+|                                           | **Mission & Values**        | North Star that doesn't shift with opinions     | God's kingdom and righteousness  | Know thyself, authentic values      |
+|                                           | **Moral Framework**         | Clear answers without rebuilding ethics         | Biblical commandments            | Kant, virtue ethics, utilitarianism |
+|                                           | **Spiritual Guide**         | Access to wisdom beyond my own                  | Prayer and scripture             | Therapy, mentors, philosophy        |
+| **PRACTICE** _(How You Live Day-to-Day)_  |                             |                                                 |                                  |                                     |
+|                                           | **Ritual Design**           | Know what to do for major life events           | Religious ceremonies and sabbath | Intentional habits and traditions   |
+|                                           | **Community Identity**      | Instantly find my people anywhere               | Church/synagogue/mosque          | Values-based communities            |
 
-Below, I explore each role in depth with specific examples of both religious and secular wisdom:
+Below, I explore each role in depth with specific examples of both religious and secular wisdom, organized by these four levels:
 
 ---
 
-**Source of Confidence & Resilience:** The bone-deep certainty that I'll be okay, even when everything feels overwhelming.
+## FOUNDATION: Who You Are
+
+**Unconditional Love:** To feel fundamentally okay even when I'm not achieving, producing, or performing.
+
+| Religious Wisdom                                                                                                                                                                                                                                                | Secular Wisdom                                                 |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| "For I am convinced that neither death nor life, neither angels nor demons, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God" (Romans 8:38-39) | "You yourself, as much as anybody, deserve your love" - Buddha |
+| "The Lord your God is with you, the Mighty Warrior who saves. He will take great delight in you; in his love he will no longer rebuke you, but will rejoice over you with singing" (Zephaniah 3:17)                                                             | "There is nothing you need to do to be worthy" - Carl Rogers   |
+| "I have loved you with an everlasting love; I have drawn you with unfailing kindness" (Jeremiah 31:3)                                                                                                                                                           | "You are enough" - Brené Brown                                 |
+
+**Confidence & Resilience:** The bone-deep certainty that I'll be okay, even when everything feels overwhelming.
 
 | Religious Wisdom                                                                                                                                                   | Secular Wisdom                                                  |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------- |
@@ -157,68 +171,75 @@ Below, I explore each role in depth with specific examples of both religious and
 | "I can do all things through Christ who strengthens me" (Philippians 4:13)                                                                                         | "Whether you think you can or can't, you're right" - Henry Ford |
 | "Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you" (Joshua 1:9)                                           | "Courage is not the absence of fear, but acting in spite of it" |
 
-**Personal Mission & Values:** A North Star that doesn't shift based on whose opinion is loudest today.
+**Inner Peace:** A place to stop striving and just _be_, without guilt or anxiety about what I should be doing.
 
-|-----------------|----------------|
-| "Do not conform to the pattern of this world, but be transformed by the renewing of your mind" (Romans 12:2) | "The person who follows the crowd will go no further than the crowd" |
-| "Fear of man will prove to be a snare, but whoever trusts in the Lord is kept safe" (Proverbs 29:25) | "What other people think of me is none of my business" |
-| "But seek first his kingdom and his righteousness, and all these things will be given to you" (Matthew 6:33) | "Know thyself" - Socrates |
+| Religious Wisdom                                                                                                                    | Secular Wisdom                                            |
+| ----------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| "Be still, and know that I am God; I will be exalted among the nations, I will be exalted in the earth" (Psalm 46:10)               | "Meditation reduces anxiety" - neuroscience research      |
+| "Come to me, all you who are weary and burdened, and I will give you rest" (Matthew 11:28)                                          | "The answer to the agitation is stillness" - Ryan Holiday |
+| "And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus" (Philippians 4:7) | "Flow states" - Mihaly Csikszentmihalyi                   |
 
-**Locus of Control:** To stop carrying the crushing weight of believing I control outcomes I don't.
-
-|-----------------|----------------|
-| "Trust in the Lord with all your heart and lean not on your own understanding" (Proverbs 3:5) | "Grant me serenity to accept what I cannot change" - Serenity Prayer |
-| "Cast all your anxiety on him because he cares for you" (1 Peter 5:7) | "Amor fati" - love your fate (Stoicism) |
-| "Come to me, all you who are weary and burdened, and I will give you rest. For my yoke is easy and my burden is light" (Matthew 11:28-30) | "The obstacle is the way" - Marcus Aurelius |
-
-**Source of Unconditional Love:** To feel fundamentally okay even when I'm not achieving, producing, or performing.
-
-|-----------------|----------------|
-| "For I am convinced that neither death nor life, neither angels nor demons, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God" (Romans 8:38-39) | "You yourself, as much as anybody, deserve your love" - Buddha |
-| "The Lord your God is with you, the Mighty Warrior who saves. He will take great delight in you; in his love he will no longer rebuke you, but will rejoice over you with singing" (Zephaniah 3:17) | "There is nothing you need to do to be worthy" - Carl Rogers |
-| "I have loved you with an everlasting love; I have drawn you with unfailing kindness" (Jeremiah 31:3) | "You are enough" - Brené Brown |
+## PERSPECTIVE: How You See the World
 
 **Cosmic Perspective:** Relief from the tyranny of small anxieties that feel huge in the moment.
 
-|-----------------|----------------|
-| "When I consider your heavens, the work of your fingers, the moon and the stars, which you have set in place, what is mankind that you are mindful of them?" (Psalm 8:3-4) | "Pale blue dot" - Carl Sagan |
-| "As the heavens are higher than the earth, so are my ways higher than your ways and my thoughts than your thoughts" (Isaiah 55:9) | "Sub specie aeternitatis" - from the perspective of eternity (Spinoza) |
-| "Meaningless! Meaningless! says the Teacher. Utterly meaningless! Everything is meaningless" (Ecclesiastes 1:2) | "Memento mori" - remember you will die |
+| Religious Wisdom                                                                                                                                                           | Secular Wisdom                                                         |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| "When I consider your heavens, the work of your fingers, the moon and the stars, which you have set in place, what is mankind that you are mindful of them?" (Psalm 8:3-4) | "Pale blue dot" - Carl Sagan                                           |
+| "As the heavens are higher than the earth, so are my ways higher than your ways and my thoughts than your thoughts" (Isaiah 55:9)                                          | "Sub specie aeternitatis" - from the perspective of eternity (Spinoza) |
+| "Meaningless! Meaningless! says the Teacher. Utterly meaningless! Everything is meaningless" (Ecclesiastes 1:2)                                                            | "Memento mori" - remember you will die                                 |
+
+**Locus of Control:** To stop carrying the crushing weight of believing I control outcomes I don't.
+
+| Religious Wisdom                                                                                                                          | Secular Wisdom                                                       |
+| ----------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| "Trust in the Lord with all your heart and lean not on your own understanding" (Proverbs 3:5)                                             | "Grant me serenity to accept what I cannot change" - Serenity Prayer |
+| "Cast all your anxiety on him because he cares for you" (1 Peter 5:7)                                                                     | "Amor fati" - love your fate (Stoicism)                              |
+| "Come to me, all you who are weary and burdened, and I will give you rest. For my yoke is easy and my burden is light" (Matthew 11:28-30) | "The obstacle is the way" - Marcus Aurelius                          |
+
+## DIRECTION: How You Choose
+
+**Mission & Values:** A North Star that doesn't shift based on whose opinion is loudest today.
+
+| Religious Wisdom                                                                                             | Secular Wisdom                                                       |
+| ------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- |
+| "Do not conform to the pattern of this world, but be transformed by the renewing of your mind" (Romans 12:2) | "The person who follows the crowd will go no further than the crowd" |
+| "Fear of man will prove to be a snare, but whoever trusts in the Lord is kept safe" (Proverbs 29:25)         | "What other people think of me is none of my business"               |
+| "But seek first his kingdom and his righteousness, and all these things will be given to you" (Matthew 6:33) | "Know thyself" - Socrates                                            |
 
 **Moral Framework:** Clear answers to "is this right or wrong?" without having to rebuild ethics from first principles every time.
 
-|-----------------|----------------|
-| "So in everything, do to others what you would have them do to you, for this sums up the Law and the Prophets" (Matthew 7:12) | "Act only according to maxims you'd want to be universal law" - Kant |
-| "Love your neighbor as yourself. There is no commandment greater than these" (Mark 12:31) | "We are pattern-seeking, social primates" - Sam Harris |
-| "He has shown you, O mortal, what is good. And what does the Lord require of you? To act justly and to love mercy and to walk humbly with your God" (Micah 6:8) | "Virtue ethics" - Aristotle |
-
-**Community Identifier:** To walk into any city and know where to find my people, instantly.
-
-|-----------------|----------------|
-| "For where two or three gather in my name, there am I with them" (Matthew 18:20) | "We need people who share our values" |
-| "As iron sharpens iron, so one person sharpens another" (Proverbs 27:17) | "You are the average of the five people you spend time with" - Jim Rohn |
-| "Carry each other's burdens, and in this way you will fulfill the law of Christ" (Galatians 6:2) | "Social connection is a fundamental human need" - psychology |
-
-**Ritual Designer:** To know exactly what to do when life throws major events at me, without having to invent everything from scratch.
-
-|-----------------|----------------|
-| "Remember the Sabbath day by keeping it holy. Six days you shall labor and do all your work, but the seventh day is a sabbath to the Lord your God" (Exodus 20:8-10) | "Habit is second nature" - Aristotle |
-| "Give us today our daily bread" (Matthew 6:11) | "We are what we repeatedly do. Excellence, then, is not an act, but a habit" - Will Durant |
-| "Therefore what God has joined together, let no one separate" (Mark 10:9) | "Rituals mark transitions and build meaning" |
+| Religious Wisdom                                                                                                                                                | Secular Wisdom                                                       |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| "So in everything, do to others what you would have them do to you, for this sums up the Law and the Prophets" (Matthew 7:12)                                   | "Act only according to maxims you'd want to be universal law" - Kant |
+| "Love your neighbor as yourself. There is no commandment greater than these" (Mark 12:31)                                                                       | "We are pattern-seeking, social primates" - Sam Harris               |
+| "He has shown you, O mortal, what is good. And what does the Lord require of you? To act justly and to love mercy and to walk humbly with your God" (Micah 6:8) | "Virtue ethics" - Aristotle                                          |
 
 **Spiritual Guide:** Access to wisdom greater than my own when I'm stuck or confused.
 
-|-----------------|----------------|
-| "Ask and it will be given to you; seek and you will find; knock and the door will be opened to you" (Matthew 7:7) | "Therapy is cheaper than divorce" |
-| "The purposes of a person's heart are deep waters, but one who has insight draws them out" (Proverbs 20:5) | "We can't read the label from inside the jar" |
-| "Plans fail for lack of counsel, but with many advisers they succeed" (Proverbs 15:22) | "Strong opinions, weakly held" - learn and update |
+| Religious Wisdom                                                                                                  | Secular Wisdom                                    |
+| ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| "Ask and it will be given to you; seek and you will find; knock and the door will be opened to you" (Matthew 7:7) | "Therapy is cheaper than divorce"                 |
+| "The purposes of a person's heart are deep waters, but one who has insight draws them out" (Proverbs 20:5)        | "We can't read the label from inside the jar"     |
+| "Plans fail for lack of counsel, but with many advisers they succeed" (Proverbs 15:22)                            | "Strong opinions, weakly held" - learn and update |
 
-**Harbor of Inner Peace:** A place to stop striving and just _be_, without guilt or anxiety about what I should be doing.
+## PRACTICE: How You Live Day-to-Day
 
-|-----------------|----------------|
-| "Be still, and know that I am God; I will be exalted among the nations, I will be exalted in the earth" (Psalm 46:10) | "Meditation reduces anxiety" - neuroscience research |
-| "Come to me, all you who are weary and burdened, and I will give you rest" (Matthew 11:28) | "The answer to the agitation is stillness" - Ryan Holiday |
-| "And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus" (Philippians 4:7) | "Flow states" - Mihaly Csikszentmihalyi |
+**Ritual Design:** To know exactly what to do when life throws major events at me, without having to invent everything from scratch.
+
+| Religious Wisdom                                                                                                                                                     | Secular Wisdom                                                                             |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| "Remember the Sabbath day by keeping it holy. Six days you shall labor and do all your work, but the seventh day is a sabbath to the Lord your God" (Exodus 20:8-10) | "Habit is second nature" - Aristotle                                                       |
+| "Give us today our daily bread" (Matthew 6:11)                                                                                                                       | "We are what we repeatedly do. Excellence, then, is not an act, but a habit" - Will Durant |
+| "Therefore what God has joined together, let no one separate" (Mark 10:9)                                                                                            | "Rituals mark transitions and build meaning"                                               |
+
+**Community Identity:** To walk into any city and know where to find my people, instantly.
+
+| Religious Wisdom                                                                                 | Secular Wisdom                                                          |
+| ------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------- |
+| "For where two or three gather in my name, there am I with them" (Matthew 18:20)                 | "We need people who share our values"                                   |
+| "As iron sharpens iron, so one person sharpens another" (Proverbs 27:17)                         | "You are the average of the five people you spend time with" - Jim Rohn |
+| "Carry each other's burdens, and in this way you will fulfill the law of Christ" (Galatians 6:2) | "Social connection is a fundamental human need" - psychology            |
 
 ### The Secular Challenge of having to cobble together your own god
 
