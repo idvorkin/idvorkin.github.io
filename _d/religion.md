@@ -130,6 +130,25 @@ When I read devotionals each morning, I keep trying to do a mental find-and-repl
 
 When I read devotionals and replace "God" with a secular concept, I realize God serves multiple roles simultaneously. Here are the main ones I've identified, with both religious and secular wisdom for each:
 
+**Summary: The Ten Roles God Serves**
+
+| Role                        | What It Provides                                | Religious Approach               | Secular Approach                    |
+| --------------------------- | ----------------------------------------------- | -------------------------------- | ----------------------------------- |
+| **Confidence & Resilience** | Bone-deep certainty that I'll be okay           | God's faithfulness and strength  | Self-efficacy and growth mindset    |
+| **Mission & Values**        | North Star that doesn't shift with opinions     | God's kingdom and righteousness  | Know thyself, authentic values      |
+| **Locus of Control**        | Stop carrying weight of uncontrollable outcomes | Trust in God's plan              | Serenity prayer, Stoicism           |
+| **Unconditional Love**      | Feel fundamentally okay without performing      | God's everlasting love           | Self-compassion, inherent worth     |
+| **Cosmic Perspective**      | Relief from tyranny of small anxieties          | God's eternal view               | Pale blue dot, memento mori         |
+| **Moral Framework**         | Clear answers without rebuilding ethics         | Biblical commandments            | Kant, virtue ethics, utilitarianism |
+| **Community Identity**      | Instantly find my people anywhere               | Church/synagogue/mosque          | Values-based communities            |
+| **Ritual Design**           | Know what to do for major life events           | Religious ceremonies and sabbath | Intentional habits and traditions   |
+| **Spiritual Guide**         | Access to wisdom beyond my own                  | Prayer and scripture             | Therapy, mentors, philosophy        |
+| **Inner Peace**             | Place to stop striving and just be              | "Be still and know"              | Meditation, flow states             |
+
+Below, I explore each role in depth with specific examples of both religious and secular wisdom:
+
+---
+
 **Source of Confidence & Resilience:** The bone-deep certainty that I'll be okay, even when everything feels overwhelming.
 
 | Religious Wisdom                                                                                                                                                   | Secular Wisdom                                                  |
