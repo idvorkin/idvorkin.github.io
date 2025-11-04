@@ -40,6 +40,7 @@ Someone important to me has been reading a daily devotional. Even though I'm not
   - [November](#november)
     - [November 1st - Jesus in This World](#november-1st---jesus-in-this-world)
     - [November 2nd - Identity as Gift](#november-2nd---identity-as-gift)
+    - [November 3rd - Just Like Jesus](#november-3rd---just-like-jesus)
   - [December](#december)
 
 <!-- vim-markdown-toc-end -->
@@ -381,6 +382,39 @@ The genius of the "identity theft" framing is that it acknowledges the gap - you
 
 {%include summarize-page.html src="/compassion" %}
 {%include summarize-page.html src="/eulogy" %}
+
+#### November 3rd - Just Like Jesus
+
+To me this is really about: **Walking the talk - you can't just claim the label, you have to do the work.**
+
+My favorite line from the passage: **"Do we grab the free gift of our grace without forgetting the cross-carrying side of discipleship?"**
+
+_Here's how I translate this:_
+
+It's easy to claim an identity. It's hard to live it.
+
+You can call yourself a Christian, but if you're not actually doing what Jesus taught - if you're not showing compassion, loving your enemies, helping the marginalized, sacrificing for others - then you're just wearing a badge. And given all the terrible things done in Christianity's name, that badge carries a lot of baggage.
+
+The passage asks a crucial question: Do we take the easy part (grace, forgiveness, belonging) without doing the hard part (discipleship, sacrifice, actually living the principles)?
+
+In secular terms: **Do you claim values without living them?**
+
+It's like saying you value family but never showing up. Saying you value learning but never doing the work to understand something deeply. Saying you care about justice but staying silent when it matters.
+
+The "cross-carrying side" is the part where it costs you something. Where living your values makes you uncomfortable, unpopular, or requires real sacrifice. That's the work. That's what separates people who genuinely embody their principles from people who just like the identity.
+
+This connects to [November 1st](#november-1st---jesus-in-this-world) about being your true self - but takes it further. It's not enough to know who you want to be (your [eulogy](/eulogy) work). You have to actually be that person when it's hard.
+
+For Christians specifically: don't just wear the label. Do the Jesus stuff. The hard Jesus stuff - loving enemies, serving others, standing up for the vulnerable. That's what the name actually means.
+
+For everyone: whatever values you claim, whatever identity you wear - you have to actually do the work. Otherwise it's just performance.
+
+**This is where doing [affirmations](/affirmations) comes in.** Affirmations aren't just feel-good phrases - they're the daily practice of reminding yourself who you want to be and what you value. They're the repetition that turns claimed values into lived values. The work of writing them out, reconsidering them, letting them guide you when things get hard - that's part of carrying the cross. It's the discipline that bridges the gap between claiming an identity and actually living it.
+
+**Important distinction:** This isn't about perfectionism or beating yourself up for every failure to live up to your ideals. Nobody walks the talk 100% of the time. But there's a difference between "I believe this and I'm genuinely trying, even when I fall short" versus "I claim this identity but I'm not actually doing the work." The distinction is in the effort and honesty. Are you genuinely attempting to live your values and learning from failures? Or are you just enjoying the label without the substance? One is the human condition; the other is hypocrisy.
+
+{%include summarize-page.html src="/eulogy" %}
+{%include summarize-page.html src="/affirmations" %}
 
 ### December
 
