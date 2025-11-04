@@ -23,16 +23,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">76.36% </span>
+                <span class="strong">52.72% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>42/55</span>
+                <span class='fraction'>29/55</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">66.66% </span>
+                <span class="strong">71.42% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>12/18</span>
+                <span class='fraction'>10/14</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">76.36% </span>
+                <span class="strong">52.72% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>42/55</span>
+                <span class='fraction'>29/55</span>
             </div>
         
             
@@ -191,49 +191,49 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export function getCurrentBranch(): string | null {
   // Get branch info from global variable
@@ -275,11 +275,11 @@ export function initDevInfo(): void {
 &nbsp;
   console.log("Dev info - Branch:", branch, "PR:", pr, "Port:", port);
 &nbsp;
-  // Show banner if we have branch info and it's not main, or if we're on a non-standard port
-  if ((<span class="branch-0 cbranch-no" title="branch not covered" >branch &amp;&amp; branch !== "main") || p</span>ort !== "4000") {
-    const devInfoElement = document.createElement("div");
-    devInfoElement.id = "dev-info-banner";
-    devInfoElement.style.cssText = `
+  // Show banner when we have branch or PR info, but not on production ports (80/443)
+  if ((branch || <span class="branch-0 cbranch-no" title="branch not covered" >pr) &amp;&amp; port !== <span class="branch-0 cbranch-no" title="branch not covered" >"80" &amp;&amp; p</span>ort !== "443") <span class="branch-0 cbranch-no" title="branch not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >    const devInfoElement = document.createElement("div");</span>
+<span class="cstat-no" title="statement not covered" >    devInfoElement.id = "dev-info-banner";</span>
+<span class="cstat-no" title="statement not covered" >    devInfoElement.style.cssText = `</span>
       position: fixed;
       top: 60px;
       left: 0;
@@ -294,13 +294,13 @@ export function initDevInfo(): void {
       box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     `;
 &nbsp;
-    let infoContent = "";
-    if (branch) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >    let infoContent = "";</span>
+<span class="cstat-no" title="statement not covered" >    if (branch) {</span>
 <span class="cstat-no" title="statement not covered" >      infoContent += `&lt;i class="fas fa-code-branch"&gt;&lt;/i&gt; Branch: &lt;code style="background: black; color: white; padding: 2px 6px; border-radius: 3px;"&gt;${branch}&lt;/code&gt;`;</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
 &nbsp;
     // Add PR link if available
-    if (pr) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >    if (pr) {</span>
 <span class="cstat-no" title="statement not covered" >      if (branch) {</span>
 <span class="cstat-no" title="statement not covered" >        infoContent += " | ";</span>
 <span class="cstat-no" title="statement not covered" >      }</span>
@@ -308,18 +308,18 @@ export function initDevInfo(): void {
 <span class="cstat-no" title="statement not covered" >      infoContent += `&lt;i class="fas fa-code-pull-request"&gt;&lt;/i&gt; PR: &lt;a href="${prUrl}" target="_blank" style="color: #58a6ff; text-decoration: none;"&gt;&lt;code style="background: black; color: #58a6ff; padding: 2px 6px; border-radius: 3px;"&gt;#${pr}&lt;/code&gt;&lt;/a&gt;`;</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
 &nbsp;
-    if ((branch || <span class="branch-0 cbranch-no" title="branch not covered" >pr) &amp;&amp; port) <span class="branch-0 cbranch-no" title="branch not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >    if ((branch || pr) &amp;&amp; port) {</span>
 <span class="cstat-no" title="statement not covered" >      infoContent += " | ";</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
-    infoContent += `&lt;i class="fas fa-server"&gt;&lt;/i&gt; Port: &lt;code style="background: black; color: white; padding: 2px 6px; border-radius: 3px;"&gt;${port}&lt;/code&gt;`;
+<span class="cstat-no" title="statement not covered" >    infoContent += `&lt;i class="fas fa-server"&gt;&lt;/i&gt; Port: &lt;code style="background: black; color: white; padding: 2px 6px; border-radius: 3px;"&gt;${port}&lt;/code&gt;`;</span>
 &nbsp;
-    devInfoElement.innerHTML = infoContent;
-    document.body.appendChild(devInfoElement);
+<span class="cstat-no" title="statement not covered" >    devInfoElement.innerHTML = infoContent;</span>
+<span class="cstat-no" title="statement not covered" >    document.body.appendChild(devInfoElement);</span>
 &nbsp;
     // Adjust body padding to account for the banner
-    const currentPaddingTop = Number.parseInt(window.getComputedStyle(document.body).paddingTop) || 0;
-    document.body.style.paddingTop = `${currentPaddingTop + 40}px`;
-  }
+<span class="cstat-no" title="statement not covered" >    const currentPaddingTop = Number.parseInt(window.getComputedStyle(document.body).paddingTop) || 0;</span>
+<span class="cstat-no" title="statement not covered" >    document.body.style.paddingTop = `${currentPaddingTop + 40}px`;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
 }
 &nbsp;</pre></td></tr></table></pre>
 
@@ -328,7 +328,7 @@ export function initDevInfo(): void {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-11-03T21:51:42.079Z
+                at 2025-11-04T14:15:50.192Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
