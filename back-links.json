@@ -1588,7 +1588,8 @@
                 "/psychic-weight",
                 "/regrets",
                 "/shame",
-                "/voices"
+                "/voices",
+                "/walking-with-god"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/grandmother.md",
@@ -3642,7 +3643,8 @@
             "incoming_links": [
                 "/balance",
                 "/bike-tesla-identity",
-                "/goals"
+                "/goals",
+                "/walking-with-god"
             ],
             "last_modified": "2025-10-20T09:00:34-04:00",
             "markdown_path": "_d/2018-04-29-mortality-software.md",
@@ -5890,23 +5892,25 @@
         },
         "/walking-with-god": {
             "description": "Someone important to me has been reading a daily devotional. Even though I’m not religious, I’m studying with them to be able to have conversations about the insights - whether in a secular or religious context. This is my attempt to bridge two worlds: honoring the spiritual wisdom they’re finding while translating it into language that works for my engineer brain.\n\n",
-            "doc_size": 52000,
+            "doc_size": 58000,
             "file_path": "_site/walking-with-god.html",
             "incoming_links": [
                 "/religion",
                 "/spiritual-health"
             ],
-            "last_modified": "2025-11-03T22:05:03.732611",
+            "last_modified": "2025-11-04T15:06:57.936629",
             "markdown_path": "_d/walking-with-god.md",
             "outgoing_links": [
                 "/affirmations",
                 "/ai-journal",
                 "/compassion",
+                "/curious",
                 "/emotional-health",
                 "/essentialism",
                 "/eulogy",
                 "/get-to-yes-with-yourself",
                 "/happy",
+                "/mortality-software",
                 "/religion",
                 "/siy",
                 "/spiritual-health",
