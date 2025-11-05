@@ -73,40 +73,97 @@ Many of these only applied when the Temple stood in Jerusalem (destroyed in 70 C
 
 ### Relationship with God
 
-<ol start="1">
-<li>Know that God exists</li>
-<li>Believe in God's unity (God is one)</li>
-<li>Love God</li>
-<li>Fear God</li>
-<li>Serve God with all your heart</li>
-<li>Cling to God (walk in His ways)</li>
-<li>Swear only by God's name (when oath required)</li>
-<li>Emulate God's qualities (as you can)</li>
-</ol>
+1. **Know that God exists**
+
+   [Exodus 20:2](https://www.sefaria.org/Exodus.20.2): "I am your God who brought you out of the land of Egypt, the house of bondage."
+
+2. **Believe in God's unity (God is one)**
+
+   [Deuteronomy 6:4](https://www.sefaria.org/Deuteronomy.6.4): "Hear, O Israel! יהוה is our God, יהוה alone."
+
+3. **Love God**
+
+   [Deuteronomy 6:5](https://www.sefaria.org/Deuteronomy.6.5): "You shall love your God יהוה with all your heart and with all your soul and with all your might."
+
+4. **Fear God**
+
+   [Deuteronomy 10:20](https://www.sefaria.org/Deuteronomy.10.20): "You must revere יהוה: only your God shall you worship, to [God] shall you hold fast, and by God's name shall you swear."
+
+5. **Serve God with all your heart**
+
+   [Deuteronomy 10:12](https://www.sefaria.org/Deuteronomy.10.12): "And now, O Israel, what does your God יהוה demand of you? Only this: to revere your God יהוה, to walk only in divine paths, to love and to serve your God יהוה with all your heart and soul."
+
+6. **Cling to God (walk in His ways)**
+
+   [Deuteronomy 10:20](https://www.sefaria.org/Deuteronomy.10.20): "You must revere יהוה: only your God shall you worship, to [God] shall you hold fast, and by God's name shall you swear."
+
+7. **Swear only by God's name (when oath required)**
+
+   [Deuteronomy 10:20](https://www.sefaria.org/Deuteronomy.10.20): "You must revere יהוה: only your God shall you worship, to [God] shall you hold fast, and by God's name shall you swear."
+
+8. **Emulate God's qualities (as you can)**
+
+   [Deuteronomy 10:12](https://www.sefaria.org/Deuteronomy.10.12): "And now, O Israel, what does your God יהוה demand of you? Only this: to revere your God יהוה, to walk only in divine paths, to love and to serve your God יהוה with all your heart and soul."
 
 ### Torah Study and Teaching
 
-<ol start="9">
-<li>Recite the Shema twice daily</li>
-<li>Study Torah</li>
-<li>Teach Torah to your children</li>
-<li>Bind tefillin on your head</li>
-<li>Bind tefillin on your arm</li>
-<li>Make tzitzit (fringes) on four-cornered garments</li>
-<li>Affix mezuzah to doorposts</li>
-<li>Assemble every seven years to hear the Torah</li>
-<li>King must write a Torah scroll</li>
-<li>Every person should write (or acquire) a Torah scroll</li>
-</ol>
+9. **Recite the Shema twice daily**
+
+   [Deuteronomy 6:7](https://www.sefaria.org/Deuteronomy.6.7): "Impress them upon your children. Recite them when you stay at home and when you are away, when you lie down and when you get up."
+
+10. **Study Torah**
+
+    [Deuteronomy 6:7](https://www.sefaria.org/Deuteronomy.6.7): "Impress them upon your children. Recite them when you stay at home and when you are away, when you lie down and when you get up."
+
+11. **Teach Torah to your children**
+
+    [Deuteronomy 6:7](https://www.sefaria.org/Deuteronomy.6.7): "Impress them upon your children. Recite them when you stay at home and when you are away, when you lie down and when you get up."
+
+12. **Bind tefillin on your head**
+
+    [Deuteronomy 6:8](https://www.sefaria.org/Deuteronomy.6.8): "Bind them as a sign on your hand and let them serve as a symbol on your forehead."
+
+13. **Bind tefillin on your arm**
+
+    [Deuteronomy 6:8](https://www.sefaria.org/Deuteronomy.6.8): "Bind them as a sign on your hand and let them serve as a symbol on your forehead."
+
+14. **Make tzitzit (fringes) on four-cornered garments**
+
+    [Numbers 15:38](https://www.sefaria.org/Numbers.15.38): "Speak to the Israelite people and instruct them to make for themselves fringes on the corners of their garments throughout the ages; let them attach a cord of blue to the fringe at each corner."
+
+15. **Affix mezuzah to doorposts**
+
+    [Deuteronomy 6:9](https://www.sefaria.org/Deuteronomy.6.9): "Inscribe them on the doorposts of your house and on your gates."
+
+16. **Assemble every seven years to hear the Torah**
+
+    [Deuteronomy 31:12](https://www.sefaria.org/Deuteronomy.31.12): "Gather the people—men, women, children, and the strangers in your communities—that they may hear and so learn to revere your God יהוה and to observe faithfully every word of this Teaching."
+
+17. **King must write a Torah scroll**
+
+    [Deuteronomy 17:18](https://www.sefaria.org/Deuteronomy.17.18): "When he is seated on his royal throne, he shall have a copy of this Teaching written for him on a scroll by the levitical priests."
+
+18. **Every person should write (or acquire) a Torah scroll**
+
+    [Deuteronomy 31:19](https://www.sefaria.org/Deuteronomy.31.19): "Therefore, write down this poem and teach it to the people of Israel; put it in their mouths, in order that this poem may be My witness against the people of Israel."
 
 ### Prayer and Blessings
 
-<ol start="19">
-<li>Pray to God daily</li>
-<li>Priests bless Israel daily</li>
-<li>Recite grace after meals</li>
-<li>Read the Megillah (Book of Esther) on Purim</li>
-</ol>
+19. **Pray to God daily**
+
+    [Deuteronomy 6:13](https://www.sefaria.org/Deuteronomy.6.13): "Revere only your God יהוה and worship [God] alone, and swear only by God's name."
+
+20. **Priests bless Israel daily**
+
+    [Numbers 6:23](https://www.sefaria.org/Numbers.6.23): "Speak to Aaron and his sons: Thus shall you bless the people of Israel. Say to them:"
+
+21. **Recite grace after meals**
+
+    [Deuteronomy 8:10](https://www.sefaria.org/Deuteronomy.8.10): "When you have eaten your fill, give thanks to your God יהוה for the good land given to you."
+
+22. **Read the Megillah (Book of Esther) on Purim**
+
+    [Esther 9:28](https://www.sefaria.org/Esther.9.28): "And these days of Purim shall never cease among the Jews, and the memory of them shall never perish among their descendants."
 
 ### Signs and Symbols
 
@@ -114,71 +171,153 @@ _(Covered above in Torah Study)_
 
 ### Temple Service and Sacrifices
 
-<ol start="23">
-<li>Build a sanctuary (Temple)</li>
-<li>Respect the sanctuary</li>
-<li>Guard the sanctuary</li>
-<li>Daily burnt offering (twice daily)</li>
-<li>High priest's daily meal offering</li>
-<li>Additional offering every Sabbath</li>
-<li>Additional offering every New Moon</li>
-<li>Additional offering on Passover</li>
-<li>Bring the Omer offering</li>
-<li>Additional offering on Shavuot</li>
-<li>Bring two loaves of bread on Shavuot</li>
-<li>Additional offering on Rosh Hashanah</li>
-<li>Additional offering on Yom Kippur</li>
-<li>Additional offering on Sukkot</li>
-<li>Additional offering on Shemini Atzeret</li>
-<li>Pilgrimage to Temple three times yearly</li>
-<li>Celebrate on the pilgrimage festivals</li>
-<li>Burnt offering for violating positive commandment</li>
-<li>Sin offering for violating negative commandment</li>
-<li>Adjustable guilt offering</li>
-<li>Guilt offering for certain transgressions</li>
-<li>Guilt offering for robbery</li>
-<li>Peace offering</li>
-<li>Meal offering</li>
-<li>Court brings offering for erroneous ruling</li>
-<li>Every person brings sin offering for certain errors</li>
-<li>Individual brings offering when in doubt</li>
-<li>Offering for impurity regarding Temple/holy food</li>
-<li>Offer all sacrifices in the Temple</li>
-<li>Bring offerings from outside Israel to Temple</li>
-<li>Redeem dedicated animals with blemishes</li>
-<li>Burn designated portions on altar</li>
-<li>Priests eat designated portions</li>
-<li>Eat holy sacrifices in Temple courtyard</li>
-<li>Bring all offerings to first Temple built</li>
-<li>Offering for Nazirite when completing vow</li>
-<li>Nazirite offering after becoming impure</li>
-<li>Evaluate persons for Temple donation</li>
-<li>Evaluate animals for Temple donation</li>
-<li>Evaluate houses for Temple donation</li>
-<li>Evaluate fields for Temple donation</li>
-<li>Make restitution for misuse of sacred property</li>
-<li>Value and bring optional offerings</li>
-<li>Bring offerings on festivals</li>
-<li>Bring meal offering of first sheaf (Omer)</li>
-<li>Wave offering</li>
-<li>Shewbread in Temple</li>
-<li>Burn incense twice daily</li>
-<li>Keep eternal flame burning</li>
-<li>Remove ashes from altar</li>
-<li>Remove impure people from Temple</li>
-<li>Honor priests</li>
-<li>Priestly garments</li>
-<li>Carry the Ark on shoulders</li>
-<li>Anoint high priests and kings</li>
-<li>Priests serve in watches (rotations)</li>
-<li>Priests must be ritually pure for service</li>
-<li>Set aside portion for priests from grain</li>
-<li>Set aside portion from wine</li>
-<li>Set aside portion from oil</li>
-<li>First portion of dough to priest</li>
-<li>Give shoulder, cheeks, stomach to priest</li>
-<li>Give first shearing to priest</li>
-</ol>
+23. **Build a sanctuary (Temple)**
+
+    [Exodus 25:8](https://www.sefaria.org/Exodus.25.8): "And let them make Me a sanctuary that I may dwell among them."
+
+24. **Respect the sanctuary**
+
+    [Leviticus 19:30](https://www.sefaria.org/Leviticus.19.30): "You shall keep My sabbaths and venerate My sanctuary: I am יהוה."
+
+25. **Guard the sanctuary**
+
+    [Numbers 18:4](https://www.sefaria.org/Numbers.18.4): "They shall discharge their duties to you and to the Tent as a whole, but they must not have any contact with the furnishings of the Shrine or with the altar, lest both they and you die."
+
+26. **Daily burnt offering (twice daily)**
+
+    [Numbers 28:3](https://www.sefaria.org/Numbers.28.3): "Command the Israelite people and say to them: Be punctilious in presenting to Me at stated times the offerings of food due Me, as offerings by fire of pleasing odor to Me."
+
+27. **High priest's daily meal offering**
+
+    [Leviticus 6:13](https://www.sefaria.org/Leviticus.6.13): "A perpetual fire shall be kept burning on the altar, not to go out."
+
+28. **Additional offering every Sabbath**
+
+    [Numbers 28:9](https://www.sefaria.org/Numbers.28.9): "On the sabbath day: two yearling lambs without blemish, together with two-tenths of a measure of choice flour with oil mixed in as a meal offering, and with the proper libation—"
+
+29. **Additional offering every New Moon**
+
+    [Numbers 28:11](https://www.sefaria.org/Numbers.28.11): "On your new moons you shall present a burnt offering to יהוה: two bulls of the herd, one ram, and seven yearling lambs, without blemish."
+
+30. **Additional offering on Passover**
+
+    [Numbers 28:19](https://www.sefaria.org/Numbers.28.19): "You shall present an offering by fire, a burnt offering, to יהוה: two bulls of the herd, one ram, and seven yearling lambs—see that they are without blemish."
+
+31. **Bring the Omer offering**
+
+    [Leviticus 23:10](https://www.sefaria.org/Leviticus.23.10): "Speak to the Israelite people and say to them: When you enter the land that I am giving to you and you reap its harvest, you shall bring the first sheaf of your harvest to the priest."
+
+32. **Additional offering on Shavuot**
+
+    [Numbers 28:26](https://www.sefaria.org/Numbers.28.26): "On the day of the first fruits, your Feast of Weeks, when you bring an offering of new grain to יהוה, you shall observe a sacred occasion: you shall not work at your occupations."
+
+33. **Bring two loaves of bread on Shavuot**
+
+    [Leviticus 23:17](https://www.sefaria.org/Leviticus.23.17): "You shall bring from your settlements two loaves of bread as an elevation offering; each shall be made of two-tenths of a measure of choice flour, baked after leavening, as first fruits to יהוה."
+
+34. **Additional offering on Rosh Hashanah**
+
+    [Numbers 29:1](https://www.sefaria.org/Numbers.29.1): "In the seventh month, on the first day of the month, you shall observe a sacred occasion: you shall not work at your occupations. You shall observe it as a day when the horn is sounded."
+
+35. **Additional offering on Yom Kippur**
+
+    [Numbers 29:7](https://www.sefaria.org/Numbers.29.7): "On the tenth day of the same seventh month you shall observe a sacred occasion when you shall practice self-denial. You shall do no work."
+
+36. **Additional offering on Sukkot**
+
+    [Numbers 29:13](https://www.sefaria.org/Numbers.29.13): "The meal offerings with them—of choice flour with oil mixed in—shall be: three-tenths of a measure for each of the thirteen bulls, two-tenths for each of the two rams,"
+
+37. **Additional offering on Shemini Atzeret**
+
+    [Numbers 29:35](https://www.sefaria.org/Numbers.29.35): "All these you shall offer to יהוה at the stated times, in addition to your votive and freewill offerings, be they burnt offerings, meal offerings, libations, or offerings of well-being."
+
+38. **Pilgrimage to Temple three times yearly**
+
+    [Exodus 23:14](https://www.sefaria.org/Exodus.23.14): "Three times a year you shall hold a festival for Me:"
+
+39. **Celebrate on the pilgrimage festivals**
+
+    [Exodus 23:16](https://www.sefaria.org/Exodus.23.16): "and the Feast of the Harvest, of the first fruits of your work, of what you sow in the field; and the Feast of Ingathering at the end of the year, when you gather in the results of your work from the field."
+
+40. **Burnt offering for violating positive commandment**
+
+    [Leviticus 4:13](https://www.sefaria.org/Leviticus.4.13): "If it is the community leadership of Israel that has erred and the matter escapes the notice of the congregation, so that they do any of the things which by יהוה's commandments ought not to be done, and they realize guilt—"
+
+41. **Sin offering for violating negative commandment**
+
+    [Leviticus 4:27](https://www.sefaria.org/Leviticus.4.27): "If any person from among the populace unwittingly incurs guilt by doing any of the things which by יהוה's commandments ought not to be done, and realizes guilt—"
+
+42. **Adjustable guilt offering**
+
+    [Leviticus 5:1](https://www.sefaria.org/Leviticus.5.1): "If a person incurs guilt—When one has heard a public imprecation but (although able to testify as having either seen or learned of the matter) has not given information and thus is subject to punishment"
+
+43. **Guilt offering for certain transgressions**
+
+    [Leviticus 5:15](https://www.sefaria.org/Leviticus.5.15): "When a person commits a trespass, being unwittingly remiss about any of יהוה's sacred things: One shall bring as a penalty to יהוה a ram without blemish from the flock, convertible into payment in silver by the sanctuary weight, as a guilt offering."
+
+44. **Guilt offering for robbery**
+
+    [Leviticus 5:17](https://www.sefaria.org/Leviticus.5.17): "And a person who, without knowing it, sins in regard to any of יהוה's commandments about things not to be done, and then realizes guilt: Such a person shall be subject to punishment."
+
+45. **Peace offering**
+
+    [Leviticus 3:1](https://www.sefaria.org/Leviticus.3.1): "If your offering is a sacrifice of well-being—If you offer of the herd, whether a male or a female, you shall bring before יהוה one without blemish."
+
+46. **Meal offering**
+
+    [Leviticus 2:1](https://www.sefaria.org/Leviticus.2.1): "When a person presents an offering of meal to יהוה: The offering shall be of choice flour; the offerer shall pour oil upon it, lay frankincense on it,"
+
+47. **Court brings offering for erroneous ruling**
+
+    [Leviticus 4:13](https://www.sefaria.org/Leviticus.4.13): "If it is the community leadership of Israel that has erred and the matter escapes the notice of the congregation, so that they do any of the things which by יהוה's commandments ought not to be done, and they realize guilt—"
+
+48. **Every person brings sin offering for certain errors**
+
+    [Leviticus 4:27](https://www.sefaria.org/Leviticus.4.27): "If any person from among the populace unwittingly incurs guilt by doing any of the things which by יהוה's commandments ought not to be done, and realizes guilt—"
+
+49. **Individual brings offering when in doubt**
+
+    [Leviticus 5:17](https://www.sefaria.org/Leviticus.5.17): "And a person who, without knowing it, sins in regard to any of יהוה's commandments about things not to be done, and then realizes guilt: Such a person shall be subject to punishment."
+
+50. **Offering for impurity regarding Temple/holy food**
+
+    [Leviticus 5:1](https://www.sefaria.org/Leviticus.5.1): "If a person incurs guilt—When one has heard a public imprecation but (although able to testify as having either seen or learned of the matter) has not given information and thus is subject to punishment"
+
+51. **Offer all sacrifices in the Temple**
+52. **Bring offerings from outside Israel to Temple**
+53. **Redeem dedicated animals with blemishes**
+54. **Burn designated portions on altar**
+55. **Priests eat designated portions**
+56. **Eat holy sacrifices in Temple courtyard**
+57. **Bring all offerings to first Temple built**
+58. **Offering for Nazirite when completing vow**
+59. **Nazirite offering after becoming impure**
+60. **Evaluate persons for Temple donation**
+61. **Evaluate animals for Temple donation**
+62. **Evaluate houses for Temple donation**
+63. **Evaluate fields for Temple donation**
+64. **Make restitution for misuse of sacred property**
+65. **Value and bring optional offerings**
+66. **Bring offerings on festivals**
+67. **Bring meal offering of first sheaf (Omer)**
+68. **Wave offering**
+69. **Shewbread in Temple**
+70. **Burn incense twice daily**
+71. **Keep eternal flame burning**
+72. **Remove ashes from altar**
+73. **Remove impure people from Temple**
+74. **Honor priests**
+75. **Priestly garments**
+76. **Carry the Ark on shoulders**
+77. **Anoint high priests and kings**
+78. **Priests serve in watches (rotations)**
+79. **Priests must be ritually pure for service**
+80. **Set aside portion for priests from grain**
+81. **Set aside portion from wine**
+82. **Set aside portion from oil**
+83. **First portion of dough to priest**
+84. **Give shoulder, cheeks, stomach to priest**
+85. **Give first shearing to priest**
 
 ### Priests and Levites
 
@@ -186,211 +325,508 @@ _(Covered above in Temple Service)_
 
 ### Dietary Laws
 
-<ol start="86">
-<li>Eat only properly slaughtered animals</li>
-<li>Cover blood of slaughtered birds/animals</li>
-<li>Send away mother bird before taking young</li>
-<li>Check signs of kosher animals</li>
-<li>Check signs of kosher birds</li>
-<li>Check signs of kosher fish</li>
-<li>Check signs of kosher locusts</li>
-</ol>
+86. **Eat only properly slaughtered animals (shechita)**
+
+    [Deuteronomy 12:21](https://www.sefaria.org/Deuteronomy.12.21): "If the place where your God יהוה has chosen to establish the divine name is too far from you, you may slaughter any of the cattle or sheep that יהוה gives you, as I have instructed you; and you may eat to your heart's content in your settlements."
+
+87. **Cover blood of slaughtered birds and wild animals**
+
+    [Leviticus 17:13](https://www.sefaria.org/Leviticus.17.13): "And if any Israelite or any stranger who resides among them hunts down an animal or a bird that may be eaten, that person shall pour out its blood and cover it with earth."
+
+88. **Send away mother bird before taking young**
+
+    [Deuteronomy 22:6-7](https://www.sefaria.org/Deuteronomy.22.6-7): "If, along the road, you chance upon a bird's nest, in any tree or on the ground, with fledglings or eggs and the mother sitting over the fledglings or on the eggs, do not take the mother together with her young. Let the mother go, and take only the young, in order that you may fare well and have a long life."
+
+89. **Check signs of kosher land animals**
+
+    [Leviticus 11:3](https://www.sefaria.org/Leviticus.11.3): "Any animal that has true hoofs, with clefts through the hoofs, and that chews the cud—such you may eat."
+
+90. **Check signs of kosher birds**
+
+    [Deuteronomy 14:11](https://www.sefaria.org/Deuteronomy.14.11): "You may eat any pure bird." _(The Torah lists forbidden birds; permitted birds are determined by tradition and their characteristics.)_
+
+91. **Check signs of kosher fish**
+
+    [Leviticus 11:9](https://www.sefaria.org/Leviticus.11.9): "Anything in water, whether in the seas or in the streams, that has fins and scales—these you may eat."
+
+92. **Check signs of kosher locusts**
+
+    [Leviticus 11:21-22](https://www.sefaria.org/Leviticus.11.21-22): "But of these you may eat the following: locusts of every variety; all varieties of bald locust; crickets of every variety; and all varieties of grasshopper."
 
 ### Agricultural Laws
 
-<ol start="93">
-<li>Set aside terumah (portion for priests)</li>
-<li>Set aside first tithe for Levites</li>
-<li>Set aside second tithe</li>
-<li>Levites set aside portion from their tithe</li>
-<li>Set aside poor-man's tithe (third and sixth years)</li>
-<li>Set aside challah (first portion of dough)</li>
-<li>Leave corner of field for poor</li>
-<li>Leave fallen gleanings for poor</li>
-<li>Leave forgotten sheaves for poor</li>
-<li>Leave grape gleanings for poor</li>
-<li>Leave unpicked grape clusters for poor</li>
-<li>Bring first fruits to Temple</li>
-<li>Give tithes to Levites</li>
-<li>Separate tithes properly</li>
-<li>Make confession when giving tithes</li>
-<li>Read prescribed passage when bringing first fruits</li>
-</ol>
+93. **Set aside terumah (portion for priests)**
+
+    [Deuteronomy 18:4](https://www.sefaria.org/Deuteronomy.18.4): "You shall also give him the first fruits of your new grain and wine and oil, and the first shearing of your sheep."
+
+94. **Set aside first tithe for Levites**
+
+    [Numbers 18:21](https://www.sefaria.org/Numbers.18.21): "And to the Levites I hereby give all the tithes in Israel as their share in return for the services that they perform, the services of the Tent of Meeting."
+
+95. **Set aside second tithe**
+
+    [Deuteronomy 14:22](https://www.sefaria.org/Deuteronomy.14.22): "You shall set aside every year a tenth part of all the yield of your sowing that is brought from the field."
+
+96. **Levites set aside portion from their tithe**
+
+    [Numbers 18:26](https://www.sefaria.org/Numbers.18.26): "When you receive from the Israelites their tithes, which I have assigned to you as your share, you shall set aside from them one-tenth of the tithe as a gift to יהוה."
+
+97. **Set aside poor-man's tithe (third and sixth years)**
+
+    [Deuteronomy 14:28](https://www.sefaria.org/Deuteronomy.14.28): "Every third year you shall bring out the full tithe of your yield of that year, but leave it within your settlements."
+
+98. **Set aside challah (first portion of dough)**
+
+    [Numbers 15:20](https://www.sefaria.org/Numbers.15.20): "As the first yield of your baking, you shall set aside a loaf as a gift; you shall set it aside as a gift like the gift from the threshing floor."
+
+99. **Leave corner of field for poor**
+
+    [Leviticus 19:9](https://www.sefaria.org/Leviticus.19.9): "When you reap the harvest of your land, you shall not reap all the way to the edges of your field, or gather the gleanings of your harvest."
+
+100.  **Leave fallen gleanings for poor**
+
+      [Leviticus 19:10](https://www.sefaria.org/Leviticus.19.10): "You shall not pick your vineyard bare, or gather the fallen fruit of your vineyard; you shall leave them for the poor and the stranger: I יהוה am your God."
+
+101.  **Leave forgotten sheaves for poor**
+
+      [Deuteronomy 24:19](https://www.sefaria.org/Deuteronomy.24.19): "When you reap the harvest in your field and overlook a sheaf in the field, do not turn back to get it; it shall go to the stranger, the fatherless, and the widow—in order that your God יהוה may bless you in all your undertakings."
+
+102.  **Leave grape gleanings for poor**
+
+      [Leviticus 19:10](https://www.sefaria.org/Leviticus.19.10): "You shall not pick your vineyard bare, or gather the fallen fruit of your vineyard; you shall leave them for the poor and the stranger: I יהוה am your God."
+
+103.  **Leave unpicked grape clusters for poor**
+
+      [Leviticus 19:10](https://www.sefaria.org/Leviticus.19.10): "You shall not pick your vineyard bare, or gather the fallen fruit of your vineyard; you shall leave them for the poor and the stranger: I יהוה am your God."
+
+104.  **Bring first fruits to Temple**
+
+      [Deuteronomy 26:2](https://www.sefaria.org/Deuteronomy.26.2): "You shall take some of every first fruit of the soil, which you harvest from the land that your God יהוה is giving you, put it in a basket and go to the place where your God יהוה will choose to establish the divine name."
+
+105.  **Give tithes to Levites**
+
+      [Numbers 18:12](https://www.sefaria.org/Numbers.18.12): "All the best of the new oil and wine and grain—the choice parts that they present to יהוה—I give to you."
+
+106.  **Separate tithes properly**
+
+      [Deuteronomy 14:28](https://www.sefaria.org/Deuteronomy.14.28): "Every third year you shall bring out the full tithe of your yield of that year, but leave it within your settlements."
+
+107.  **Make confession when giving tithes**
+
+      [Deuteronomy 26:13](https://www.sefaria.org/Deuteronomy.26.13): "I have cleared out the consecrated portion from the house; and I have given it to the [family of the] Levite, the stranger, the fatherless, and the widow, just as You commanded me; I have neither transgressed nor neglected any of Your commandments."
+
+108.  **Read prescribed passage when bringing first fruits**
+
+      [Deuteronomy 26:5](https://www.sefaria.org/Deuteronomy.26.5): "You shall then recite as follows before your God יהוה: 'My father was a fugitive Aramean. He went down to Egypt with meager numbers and sojourned there; but there he became a great and very populous nation.'"
 
 ### Festivals and Holy Days
 
-<ol start="109">
-<li>Rest on Sabbath</li>
-<li>Sanctify Sabbath with words (Kiddush)</li>
-<li>Remove chametz (leaven) before Passover</li>
-<li>Tell story of Exodus on Passover night</li>
-<li>Eat matzah on Passover night</li>
-<li>Rest on first day of Passover</li>
-<li>Rest on seventh day of Passover</li>
-<li>Count Omer (49 days from Passover to Shavuot)</li>
-<li>Rest on Shavuot</li>
-<li>Rest on Rosh Hashanah</li>
-<li>Fast on Yom Kippur</li>
-<li>Rest on Yom Kippur</li>
-<li>Dwell in sukkah (booth) for seven days</li>
-<li>Take lulav (four species) on Sukkot</li>
-<li>Rest on first day of Sukkot</li>
-<li>Rest on eighth day (Shemini Atzeret)</li>
-<li>Hear shofar on Rosh Hashanah</li>
-</ol>
+109. **Rest on Sabbath**
+
+
+    [Exodus 20:8-11](https://www.sefaria.org/Exodus.20.8-11): "Remember the sabbath day and keep it holy. Six days you shall labor and do all your work, but the seventh day is a sabbath of your God יהוה: you shall not do any work—you, your son or daughter, your male or female slave, or your cattle, or the stranger who is within your settlements. For in six days יהוה made heaven and earth and sea—and all that is in them—and then rested on the seventh day; therefore יהוה blessed the sabbath day and hallowed it."
+
+110. **Sanctify Sabbath with words (Kiddush)**
+
+
+    [Exodus 20:8](https://www.sefaria.org/Exodus.20.8): "Remember the sabbath day and keep it holy."
+
+111. **Remove chametz (leaven) before Passover**
+
+
+    [Exodus 12:15](https://www.sefaria.org/Exodus.12.15): "Seven days you shall eat unleavened bread; on the very first day you shall remove leaven from your houses, for whoever eats leavened bread from the first day to the seventh day, that person shall be cut off from Israel."
+
+112. **Tell story of Exodus on Passover night**
+
+
+    [Exodus 13:8](https://www.sefaria.org/Exodus.13.8): "And you shall explain to your child on that day, 'It is because of what יהוה did for me when I went free from Egypt.'"
+
+113. **Eat matzah on Passover night**
+
+
+    [Exodus 12:18](https://www.sefaria.org/Exodus.12.18): "In the first month, from the fourteenth day of the month at evening, you shall eat unleavened bread until the twenty-first day of the month at evening."
+
+114. **Rest on first day of Passover**
+
+
+    [Exodus 12:16](https://www.sefaria.org/Exodus.12.16): "You shall celebrate a sacred occasion on the first day, and a sacred occasion on the seventh day; no work at all shall be done on them; only what every person is to eat, that alone may be prepared for you."
+
+115. **Rest on seventh day of Passover**
+
+
+    [Leviticus 23:8](https://www.sefaria.org/Leviticus.23.8): "Seven days you shall make offerings by fire to יהוה. The seventh day shall be a sacred occasion: you shall not work at your occupations."
+
+116. **Count Omer (49 days from Passover to Shavuot)**
+
+
+    [Leviticus 23:15-16](https://www.sefaria.org/Leviticus.23.15-16): "And from the day on which you bring the sheaf of elevation offering—the day after the sabbath—you shall count off seven weeks. They must be complete: you must count until the day after the seventh week—fifty days; then you shall bring an offering of new grain to יהוה."
+
+117. **Rest on Shavuot**
+
+
+    [Leviticus 23:21](https://www.sefaria.org/Leviticus.23.21): "On that same day you shall hold a celebration; it shall be a sacred occasion for you; you shall not work at your occupations. This is a law for all time in all your settlements, throughout the ages."
+
+118. **Rest on Rosh Hashanah**
+
+
+    [Leviticus 23:24](https://www.sefaria.org/Leviticus.23.24): "Speak to the Israelite people thus: In the seventh month, on the first day of the month, you shall observe complete rest, a sacred occasion commemorated with loud blasts."
+
+119. **Fast on Yom Kippur**
+
+
+    [Leviticus 23:27](https://www.sefaria.org/Leviticus.23.27): "Mark, the tenth day of this seventh month is the Day of Atonement. It shall be a sacred occasion for you: you shall practice self-denial, and you shall bring an offering by fire to יהוה."
+
+120. **Rest on Yom Kippur**
+
+
+    [Leviticus 23:32](https://www.sefaria.org/Leviticus.23.32): "It shall be a sabbath of complete rest for you, and you shall practice self-denial; on the ninth day of the month at evening, from evening to evening, you shall observe this your sabbath."
+
+121. **Dwell in sukkah (booth) for seven days**
+
+
+    [Leviticus 23:42](https://www.sefaria.org/Leviticus.23.42): "You shall live in booths seven days; all citizens in Israel shall live in booths."
+
+122. **Take lulav (four species) on Sukkot**
+
+
+    [Leviticus 23:40](https://www.sefaria.org/Leviticus.23.40): "On the first day you shall take the product of hadar trees, branches of palm trees, boughs of leafy trees, and willows of the brook, and you shall rejoice before your God יהוה seven days."
+
+123. **Rest on first day of Sukkot**
+
+
+    [Leviticus 23:35](https://www.sefaria.org/Leviticus.23.35): "The first day shall be a sacred occasion: you shall not work at your occupations."
+
+124. **Rest on eighth day (Shemini Atzeret)**
+
+
+    [Leviticus 23:36](https://www.sefaria.org/Leviticus.23.36): "Seven days you shall bring offerings by fire to יהוה. On the eighth day you shall observe a sacred occasion and bring an offering by fire to יהוה; it is a solemn gathering: you shall not work at your occupations."
+
+125. **Hear shofar on Rosh Hashanah**
+
+
+    [Leviticus 23:24](https://www.sefaria.org/Leviticus.23.24): "Speak to the Israelite people thus: In the seventh month, on the first day of the month, you shall observe complete rest, a sacred occasion commemorated with loud blasts."
 
 ### Family and Relationships
 
-<ol start="126">
-<li>Marry through proper ceremony</li>
-<li>Have children (be fruitful and multiply)</li>
-<li>Groom stays home first year after marriage</li>
-<li>Circumcise all males on eighth day</li>
-<li>Marry brother's widow if he died childless (yibum)</li>
-<li>Widow performs chalitzah if not marrying brother-in-law</li>
-<li>Rapist must marry victim (if she consents)</li>
-<li>Rapist may never divorce victim</li>
-<li>Seducer must marry seduced (if she consents)</li>
-<li>Female war captive must be treated properly</li>
-<li>Grant divorce with proper document (get)</li>
-<li>Woman suspected of adultery undergoes sotah ritual</li>
-</ol>
+126. **Marry through proper ceremony**
+
+     [Deuteronomy 24:1](https://www.sefaria.org/Deuteronomy.24.1): "A man takes a woman [into his household as his wife] and becomes her husband."
+
+127. **Have children (be fruitful and multiply)**
+
+     [Genesis 1:28](https://www.sefaria.org/Genesis.1.28): "Be fertile and increase, fill the earth and master it; and rule the fish of the sea, the birds of the sky, and all the living things that creep on earth."
+
+128. **Groom stays home first year after marriage**
+
+     [Deuteronomy 24:5](https://www.sefaria.org/Deuteronomy.24.5): "When a man has taken a bride, he shall not go out with the army or be assigned to it for any purpose; he shall be exempt one year for the sake of his household, to give happiness to the woman he has taken."
+
+129. **Circumcise all males on eighth day**
+
+     [Genesis 17:12](https://www.sefaria.org/Genesis.17.12): "And throughout the generations, every male among you shall be circumcised at the age of eight days."
+
+130. **Marry brother's widow if he died childless (yibum)**
+
+     [Deuteronomy 25:5](https://www.sefaria.org/Deuteronomy.25.5): "When brothers live together and one of them dies and leaves no son, the wife of the deceased shall not become that of another party, outside the family. Her husband's brother shall unite with her: he shall take her as his wife and perform the levir's duty."
+
+131. **Widow performs chalitzah if not marrying brother-in-law**
+
+     [Deuteronomy 25:9](https://www.sefaria.org/Deuteronomy.25.9): "His brother's widow shall go up to him in the presence of the elders, pull the sandal off his foot, spit in his face, and make this declaration: Thus shall be done to the man who will not build up his brother's house!"
+
+132. **Rapist must marry victim (if she consents)**
+
+     [Deuteronomy 22:29](https://www.sefaria.org/Deuteronomy.22.29): "The party who lay with her shall pay the girl's father fifty [shekels of] silver, and she shall be his wife. Because he has violated her, he can never have the right to divorce her."
+
+133. **Rapist may never divorce victim**
+
+     [Deuteronomy 22:29](https://www.sefaria.org/Deuteronomy.22.29): "Because he has violated her, he can never have the right to divorce her."
+
+134. **Seducer must marry seduced (if she consents)**
+
+     [Exodus 22:15](https://www.sefaria.org/Exodus.22.15): "If a man seduces a virgin for whom the bride-price has not been paid, and lies with her, he must make her his wife by payment of a bride-price."
+
+135. **Female war captive must be treated properly**
+
+     [Deuteronomy 21:13-14](https://www.sefaria.org/Deuteronomy.21.13-14): "She shall spend a month's time in your house lamenting her father and mother; after that you may come to her and thus become her husband, and she shall be your wife. Then, should you no longer want her, you must release her outright. You must not sell her for money: since you had your will of her, you must not enslave her."
+
+136. **Grant divorce with proper document (get)**
+
+     [Deuteronomy 24:1](https://www.sefaria.org/Deuteronomy.24.1): "He writes her a bill of divorcement, hands it to her, and sends her away from his house."
+
+137. **Woman suspected of adultery undergoes sotah ritual**
+
+     [Numbers 5:15](https://www.sefaria.org/Numbers.5.15): "The man shall bring his wife to the priest...The priest shall bring her forward and have her stand before God."
 
 ### Civil and Social Justice
 
-<ol start="138">
-<li>Return lost object to owner</li>
-<li>Help person load burden on animal</li>
-<li>Help person unload burden from animal</li>
-<li>Pay worker on time</li>
-<li>Let worker eat while working</li>
-<li>Help person redeem himself from slavery</li>
-<li>Lend to poor and needy</li>
-<li>Lend to non-Jew with interest (permitted)</li>
-<li>Restore collateral when needed by owner</li>
-<li>Pay debts</li>
-<li>Borrow if needed</li>
-<li>Ensure accuracy of scales and measures</li>
-<li>Judge righteously between parties</li>
-<li>Judge must investigate testimony thoroughly</li>
-<li>Treat litigants equally</li>
-<li>Decide by majority when judges disagree</li>
-<li>Appoint judges and officials</li>
-<li>Obey Sanhedrin (Supreme Court)</li>
-<li>In dispute, go to judge and follow ruling</li>
-<li>Testify in court</li>
-<li>Cross-examine witnesses thoroughly</li>
-<li>Warn potential transgressor</li>
-<li>Punish with lashes when appropriate</li>
-<li>Exile accidental killer to city of refuge</li>
-<li>Execute by beheading</li>
-<li>Execute by strangulation</li>
-<li>Execute by burning</li>
-<li>Execute by stoning</li>
-<li>Hang certain executed criminals</li>
-<li>Bury the executed on day of execution</li>
-</ol>
+138. **Return lost object to owner**
+
+
+    [Deuteronomy 22:1](https://www.sefaria.org/Deuteronomy.22.1): "If you see your fellow Israelite's ox or sheep gone astray, do not ignore it; you must take it back to your peer."
+
+139. **Help person load burden on animal**
+
+
+    [Deuteronomy 22:4](https://www.sefaria.org/Deuteronomy.22.4): "If you see your fellow Israelite's ass or ox fallen on the road, do not ignore it; you must raise it together."
+
+140. **Help person unload burden from animal**
+
+
+    [Exodus 23:5](https://www.sefaria.org/Exodus.23.5): "When you see the ass of your enemy lying under its burden and would refrain from raising it, you must nevertheless help raise it."
+
+141. **Pay worker on time**
+
+
+    [Leviticus 19:13](https://www.sefaria.org/Leviticus.19.13): "You shall not defraud your fellow [Israelite]. You shall not commit robbery. The wages of a laborer shall not remain with you until morning."
+
+142. **Let worker eat while working**
+
+
+    [Deuteronomy 23:25-26](https://www.sefaria.org/Deuteronomy.23.25-26): "When you enter a fellow [Israelite]'s vineyard, you may eat as many grapes as you want, until you are full, but you must not put any in your vessel. When you enter a fellow [Israelite]'s field of standing grain, you may pluck ears with your hand; but you must not put a sickle to your neighbor's grain."
+
+143. **Help person redeem himself from slavery**
+
+
+    [Leviticus 25:39-41](https://www.sefaria.org/Leviticus.25.39-41): "If your kin under you continue in straits and must be given over to you, do not subject them to the treatment of a slave. Remaining with you as a hired or bound laborer, they shall serve with you only until the jubilee year. Then they, along with any children, shall be free of your authority."
+
+144. **Lend to poor and needy**
+
+
+    [Deuteronomy 15:8](https://www.sefaria.org/Deuteronomy.15.8): "Rather, you must open your hand and lend whatever is sufficient to meet the need."
+
+145. **Lend to non-Jew with interest (permitted)**
+
+
+    [Deuteronomy 23:21](https://www.sefaria.org/Deuteronomy.23.21): "You may deduct interest from loans to foreigners. Do not deduct interest from loans to your fellow Israelites, so that your God יהוה may bless you in all your undertakings in the land that you are about to enter and possess."
+
+146. **Restore collateral when needed by owner**
+
+
+    [Deuteronomy 24:13](https://www.sefaria.org/Deuteronomy.24.13): "You must return the pledge at sundown, that its owner may sleep in the cloth and bless you; and it will be to your merit before your God יהוה."
+
+147. **Pay debts**
+
+
+    [Exodus 22:24](https://www.sefaria.org/Exodus.22.24): "If you lend money to My people, to the poor among you, do not act toward them as a creditor; exact no interest from them."
+
+148. **Borrow if needed**
+
+
+    [Deuteronomy 15:8](https://www.sefaria.org/Deuteronomy.15.8): "Rather, you must open your hand and lend whatever is sufficient to meet the need."
+
+149. **Ensure accuracy of scales and measures**
+
+
+    [Leviticus 19:36](https://www.sefaria.org/Leviticus.19.36): "You shall have an honest balance, honest weights, an honest ephah, and an honest hin. I יהוה am your God who freed you from the land of Egypt."
+
+150. **Judge righteously between parties**
+
+
+    [Leviticus 19:15](https://www.sefaria.org/Leviticus.19.15): "You shall not render an unfair decision: do not favor the poor or show deference to the rich; judge your kin fairly."
+
+151. **Judge must investigate testimony thoroughly**
+
+
+    [Deuteronomy 13:15](https://www.sefaria.org/Deuteronomy.13.15): "You shall investigate and inquire and interrogate thoroughly. If it is true, the fact is established—that abhorrent thing was perpetrated in your midst."
+
+152. **Treat litigants equally**
+
+
+    [Deuteronomy 16:18-19](https://www.sefaria.org/Deuteronomy.16.18-19): "You shall appoint magistrates and officials for your tribes, in all the settlements that your God יהוה is giving you, and they shall govern the people with due justice. You shall not judge unfairly: you shall show no partiality."
+
+153. **Decide by majority when judges disagree**
+
+
+    [Exodus 23:2](https://www.sefaria.org/Exodus.23.2): "You shall neither side with the mighty to do wrong—you shall not give perverse testimony in a dispute so as to pervert it in favor of the mighty."
+
+154. **Appoint judges and officials**
+
+
+    [Deuteronomy 16:18](https://www.sefaria.org/Deuteronomy.16.18): "You shall appoint magistrates and officials for your tribes, in all the settlements that your God יהוה is giving you, and they shall govern the people with due justice."
+
+155. **Obey Sanhedrin (Supreme Court)**
+
+
+    [Deuteronomy 17:10-11](https://www.sefaria.org/Deuteronomy.17.10-11): "You shall carry out the verdict that is announced to you from that place that יהוה chose, observing scrupulously all their instructions to you. You shall act in accordance with the instructions given you and the ruling handed down to you; you must not deviate from the verdict that they announce to you either to the right or to the left."
+
+156. **In dispute, go to judge and follow ruling**
+
+
+    [Deuteronomy 17:8-9](https://www.sefaria.org/Deuteronomy.17.8-9): "If a case is too baffling for you to decide, be it a controversy over homicide, civil law, or assault—matters of dispute in your courts—you shall promptly repair to the place that your God יהוה will have chosen, and appear before the levitical priests, or the magistrate in charge at the time, and present your problem."
+
+157. **Testify in court**
+
+
+    [Leviticus 5:1](https://www.sefaria.org/Leviticus.5.1): "If a person incurs guilt—When one has heard a public imprecation but (although able to testify as having either seen or learned of the matter) has not given information and thus is subject to punishment."
+
+158. **Cross-examine witnesses thoroughly**
+
+
+    [Deuteronomy 13:15](https://www.sefaria.org/Deuteronomy.13.15): "You shall investigate and inquire and interrogate thoroughly. If it is true, the fact is established—that abhorrent thing was perpetrated in your midst."
+
+159. **Warn potential transgressor**
+
+
+    [Leviticus 19:17](https://www.sefaria.org/Leviticus.19.17): "You shall not hate your kinsfolk in your heart. Reprove your kin but incur no guilt on their account."
+
+160. **Punish with lashes when appropriate**
+
+
+    [Deuteronomy 25:2-3](https://www.sefaria.org/Deuteronomy.25.2-3): "If the guilty one is to be flogged, the magistrate shall have the person lie down and shall supervise the giving of lashes, by count, as warranted by the offense. The guilty one may be given up to forty lashes, but not more, lest being flogged further, to excess, your peer be degraded before your eyes."
+
+161. **Exile accidental killer to city of refuge**
+
+
+    [Numbers 35:11-12](https://www.sefaria.org/Numbers.35.11-12): "You shall provide yourselves with places to serve you as cities of refuge to which [a man] who has killed someone—who has slain a person unintentionally—may flee. The cities shall serve you as a refuge from the avenger, so that the killer may not die unless tried by the assembly."
+
+162. **Execute by beheading**
+
+
+    [Exodus 21:16](https://www.sefaria.org/Exodus.21.16): "One who kidnaps another party—whether having sold or still holding the victim—shall be put to death."
+
+163. **Execute by strangulation**
+
+
+    [Exodus 21:20](https://www.sefaria.org/Exodus.21.20): "When a slave-owning party strikes a slave, male or female, with a rod, who dies there and then, this must be avenged."
+
+164. **Execute by burning**
+
+
+    [Leviticus 20:14](https://www.sefaria.org/Leviticus.20.14): "If a man takes a woman and her mother into his household as his wives, it is depravity; both he and they shall be put to the fire, that there be no depravity among you."
+
+165. **Execute by stoning**
+
+
+    [Leviticus 20:2](https://www.sefaria.org/Leviticus.20.2): "The people of the land shall pelt the person with stones."
+
+166. **Hang certain executed criminals**
+
+
+    [Deuteronomy 21:22](https://www.sefaria.org/Deuteronomy.21.22): "If any party is guilty of a capital offense and is put to death, and you impale the body on a stake, you must not let the corpse remain on the stake overnight."
+
+167. **Bury the executed on day of execution**
+
+
+    [Deuteronomy 21:23](https://www.sefaria.org/Deuteronomy.21.23): "You must not let the corpse remain on the stake overnight, but must bury it the same day. For an impaled body is an affront to God: you shall not defile the land that your God is giving you to possess."
 
 ### Tzedakah and Kindness
 
-<ol start="168">
-<li>Give charity to the poor</li>
-<li>Support poor with gifts and loans</li>
-<li>Give charity privately and with dignity</li>
-<li>Rejoice on festivals</li>
-<li>Love the stranger (convert)</li>
-<li>Love your neighbor as yourself</li>
-<li>Love your fellow Jew</li>
-</ol>
+168. **Give charity to the poor**
+
+
+    [Deuteronomy 15:7-8](https://www.sefaria.org/Deuteronomy.15.7-8): "If, however, there is a needy person among you, one of your kin in any of your settlements in the land that your God יהוה is giving you, do not harden your heart and shut your hand against your needy kin. Rather, you must open your hand and lend whatever is sufficient to meet the need."
+
+169. **Support poor with gifts and loans**
+
+
+    [Leviticus 25:35-36](https://www.sefaria.org/Leviticus.25.35-36): "If your kin, being in straits, come under your authority, and are held by you as though resident aliens, let them live by your side: do not exact advance or accrued interest, but fear your God. Let your kin live by your side as such."
+
+170. **Give charity privately and with dignity**
+
+
+    [Deuteronomy 15:10-11](https://www.sefaria.org/Deuteronomy.15.10-11): "Give readily and have no regrets when you do so, for in return your God יהוה will bless you in all your efforts and in all your undertakings. For there will never cease to be needy ones in your land, which is why I command you: open your hand to the poor and needy kin in your land."
+
+171. **Rejoice on festivals**
+
+
+    [Deuteronomy 16:14](https://www.sefaria.org/Deuteronomy.16.14): "You shall rejoice in your festival, with your son and daughter, your male and female slave, the [family of the] Levite, the stranger, the fatherless, and the widow in your communities."
+
+172. **Love the stranger (convert)**
+
+
+    [Deuteronomy 10:19](https://www.sefaria.org/Deuteronomy.10.19): "You too must befriend the stranger, for you were strangers in the land of Egypt."
+
+173. **Love your neighbor as yourself**
+
+
+    [Leviticus 19:18](https://www.sefaria.org/Leviticus.19.18): "You shall not take vengeance or bear a grudge against members of your people. Love your fellow [Israelite] as yourself: I am יהוה."
+
+174. **Love your fellow Jew**
+
+
+    [Leviticus 19:34](https://www.sefaria.org/Leviticus.19.34): "The strangers who reside with you shall be to you as your citizens; you shall love each one as yourself, for you were strangers in the land of Egypt: I יהוה am your God."
 
 ### War and Justice
 
-<ol start="175">
-<li>Prepare army for war</li>
-<li>Anoint priest for war</li>
-<li>Offer peace terms before battle</li>
-<li>Follow laws regarding beautiful captive woman</li>
-<li>Destroy Amalek's memory</li>
-<li>Remember what Amalek did</li>
-<li>Destroy the seven Canaanite nations</li>
-<li>Build fence/guardrail on roof</li>
-<li>Destroy idolatry and its accessories</li>
-</ol>
+175. **Prepare army for war**
+176. **Anoint priest for war**
+177. **Offer peace terms before battle**
+178. **Follow laws regarding beautiful captive woman**
+179. **Destroy Amalek's memory**
+180. **Remember what Amalek did**
+181. **Destroy the seven Canaanite nations**
+182. **Build fence/guardrail on roof**
+183. **Destroy idolatry and its accessories**
 
 ### Property and Commerce
 
-<ol start="184">
-<li>Respect property boundaries</li>
-<li>Weights and measures must be accurate</li>
-<li>Honor the aged and scholars</li>
-<li>Honor parents</li>
-<li>Fear/revere parents</li>
-<li>Propagate the species (have children - duplicates #127)</li>
-<li>Master must marry or designate Hebrew maidservant</li>
-<li>Redeem Hebrew maidservant</li>
-<li>Master must not sell Hebrew maidservant</li>
-<li>Keep Canaanite slave forever</li>
-<li>Don't return escaped slave to master</li>
-<li>Don't oppress escaped slave who seeks refuge</li>
-</ol>
+184. **Respect property boundaries**
+185. **Weights and measures must be accurate**
+186. **Honor the aged and scholars**
+187. **Honor parents**
+188. **Fear/revere parents**
+189. **Propagate the species (have children - duplicates #127)**
+190. **Master must marry or designate Hebrew maidservant**
+191. **Redeem Hebrew maidservant**
+192. **Master must not sell Hebrew maidservant**
+193. **Keep Canaanite slave forever**
+194. **Don't return escaped slave to master**
+195. **Don't oppress escaped slave who seeks refuge**
 
 _(Note: Some numbering variations exist in traditional sources. Continuing with commonly cited mitzvahs...)_
 
-<ol start="196">
-<li>Pay wages on time (duplicates #141)</li>
-<li>Allow worker to eat while working (duplicates #142)</li>
-<li>Unload burden from animal</li>
-<li>Assist in loading burden</li>
-<li>Return lost object (duplicates #138)</li>
-<li>Rebuke wrongdoer</li>
-<li>Do not stand by when someone's life is in danger</li>
-<li>Don't gossip or bear tales</li>
-<li>Don't take revenge</li>
-<li>Don't bear a grudge</li>
-<li>Learn to fear God</li>
-<li>Sanctify God's name</li>
-<li>Don't desecrate God's name</li>
-<li>Give half-shekel annually (when Temple stands)</li>
-<li>Listen to prophet speaking in God's name</li>
-<li>Conquer Land of Israel</li>
-<li>Divide Land among tribes</li>
-<li>Set aside cities of refuge</li>
-<li>Give Levites cities to live in</li>
-<li>Make parapet on roof (duplicates #182)</li>
-<li>Destroy idols and accessories (duplicates #183)</li>
-<li>Designate Levite cities</li>
-<li>Establish Courts of Law</li>
-<li>Judges apply laws of testimony</li>
-<li>Cross-examine witnesses (duplicates #158)</li>
-<li>Punish perjurers as they intended</li>
-<li>Decapitate calf in valley for unsolved murder</li>
-<li>Set up 6 cities of refuge</li>
-<li>Guard the Temple</li>
-<li>Respect the Temple (duplicates #24)</li>
-<li>Guard the sanctuary (duplicates #25)</li>
-<li>Levites serve in Temple</li>
-<li>Sanctify Levites</li>
-<li>Priestly gifts from offerings</li>
-<li>Redeem firstborn son</li>
-<li>Redeem firstborn donkey</li>
-<li>Break neck of unredeemed firstborn donkey</li>
-<li>Bring all offerings to Temple (duplicates #51)</li>
-<li>Red heifer ritual</li>
-<li>Ritual purity laws for leprous person</li>
-<li>Laws of ritual impurity from corpse</li>
-<li>Laws of ritual purity purification</li>
-<li>Impure person must immerse in mikvah</li>
-<li>Ritual for purification from tzara'at (skin disease)</li>
-<li>Shave all hair of leper for purification</li>
-<li>Leper must make known his impurity</li>
-<li>Burn red heifer and use ashes for purification</li>
-<li>Laws of corpse impurity evaluation</li>
-<li>Menstrual impurity laws</li>
-<li>Post-birth impurity laws</li>
-<li>Leprous garment impurity laws</li>
-<li>Leprous house impurity laws</li>
-<li>Man with discharge impurity laws</li>
-</ol>
+196. **Pay wages on time (duplicates #141)**
+197. **Allow worker to eat while working (duplicates #142)**
+198. **Unload burden from animal**
+199. **Assist in loading burden**
+200. **Return lost object (duplicates #138)**
+201. **Rebuke wrongdoer**
+202. **Do not stand by when someone's life is in danger**
+203. **Don't gossip or bear tales**
+204. **Don't take revenge**
+205. **Don't bear a grudge**
+206. **Learn to fear God**
+207. **Sanctify God's name**
+208. **Don't desecrate God's name**
+209. **Give half-shekel annually (when Temple stands)**
+210. **Listen to prophet speaking in God's name**
+211. **Conquer Land of Israel**
+212. **Divide Land among tribes**
+213. **Set aside cities of refuge**
+214. **Give Levites cities to live in**
+215. **Make parapet on roof (duplicates #182)**
+216. **Destroy idols and accessories (duplicates #183)**
+217. **Designate Levite cities**
+218. **Establish Courts of Law**
+219. **Judges apply laws of testimony**
+220. **Cross-examine witnesses (duplicates #158)**
+221. **Punish perjurers as they intended**
+222. **Decapitate calf in valley for unsolved murder**
+223. **Set up 6 cities of refuge**
+224. **Guard the Temple**
+225. **Respect the Temple (duplicates #24)**
+226. **Guard the sanctuary (duplicates #25)**
+227. **Levites serve in Temple**
+228. **Sanctify Levites**
+229. **Priestly gifts from offerings**
+230. **Redeem firstborn son**
+231. **Redeem firstborn donkey**
+232. **Break neck of unredeemed firstborn donkey**
+233. **Bring all offerings to Temple (duplicates #51)**
+234. **Red heifer ritual**
+235. **Ritual purity laws for leprous person**
+236. **Laws of ritual impurity from corpse**
+237. **Laws of ritual purity purification**
+238. **Impure person must immerse in mikvah**
+239. **Ritual for purification from tzara'at (skin disease)**
+240. **Shave all hair of leper for purification**
+241. **Leper must make known his impurity**
+242. **Burn red heifer and use ashes for purification**
+243. **Laws of corpse impurity evaluation**
+244. **Menstrual impurity laws**
+245. **Post-birth impurity laws**
+246. **Leprous garment impurity laws**
+247. **Leprous house impurity laws**
+248. **Man with discharge impurity laws**
 
 _(Traditional count is 248. Variations exist due to different enumeration methods by different authorities - Maimonides vs. other rabbis had slightly different groupings.)_
 
@@ -400,443 +836,413 @@ _(Traditional count is 248. Variations exist due to different enumeration method
 
 ### Idolatry and Blasphemy
 
-<ol start="1">
-<li>Don't believe in other gods</li>
-<li>Don't make idols for yourself</li>
-<li>Don't make idols for others</li>
-<li>Don't make human forms for decoration</li>
-<li>Don't bow to idols</li>
-<li>Don't worship idols in their customary manner</li>
-<li>Don't sacrifice children to Molech</li>
-<li>Don't practice necromancy</li>
-<li>Don't practice sorcery/magic</li>
-<li>Don't have idols in your land</li>
-<li>Don't set up pillar for worship</li>
-<li>Don't set up figured stone for worship</li>
-<li>Don't plant tree near altar</li>
-<li>Don't swear falsely by God's name</li>
-<li>Don't blaspheme God's name</li>
-<li>Don't test God excessively</li>
-<li>Don't destroy God's name or holy books</li>
-<li>Don't let condemned city be rebuilt</li>
-</ol>
+1. **Don't believe in other gods**
+2. **Don't make idols for yourself**
+3. **Don't make idols for others**
+4. **Don't make human forms for decoration**
+5. **Don't bow to idols**
+6. **Don't worship idols in their customary manner**
+7. **Don't sacrifice children to Molech**
+8. **Don't practice necromancy**
+9. **Don't practice sorcery/magic**
+10. **Don't have idols in your land**
+11. **Don't set up pillar for worship**
+12. **Don't set up figured stone for worship**
+13. **Don't plant tree near altar**
+14. **Don't swear falsely by God's name**
+15. **Don't blaspheme God's name**
+16. **Don't test God excessively**
+17. **Don't destroy God's name or holy books**
+18. **Don't let condemned city be rebuilt**
 
 ### Forbidden Worship
 
-<ol start="19">
-<li>Don't follow ways of idolaters</li>
-<li>Don't practice divination</li>
-<li>Don't practice astrology</li>
-<li>Don't practice magic</li>
-<li>Don't practice charms</li>
-<li>Don't consult spirits</li>
-<li>Don't consult familiar spirits</li>
-<li>Don't inquire of the dead</li>
-<li>Women don't wear men's clothing</li>
-<li>Men don't wear women's clothing</li>
-<li>Don't tattoo yourself</li>
-<li>Don't wear sha'atnez (wool and linen together)</li>
-<li>Don't shave sides of head</li>
-<li>Don't shave beard with razor</li>
-<li>Don't make cuts in flesh for the dead</li>
-</ol>
+19. **Don't follow ways of idolaters**
+20. **Don't practice divination**
+21. **Don't practice astrology**
+22. **Don't practice magic**
+23. **Don't practice charms**
+24. **Don't consult spirits**
+25. **Don't consult familiar spirits**
+26. **Don't inquire of the dead**
+27. **Women don't wear men's clothing**
+28. **Men don't wear women's clothing**
+29. **Don't tattoo yourself**
+30. **Don't wear sha'atnez (wool and linen together)**
+31. **Don't shave sides of head**
+32. **Don't shave beard with razor**
+33. **Don't make cuts in flesh for the dead**
 
 ### Forbidden Sexual Relations
 
-<ol start="34">
-<li>Don't have relations with your mother</li>
-<li>Don't have relations with stepmother</li>
-<li>Don't have relations with sister</li>
-<li>Don't have relations with half-sister</li>
-<li>Don't have relations with granddaughter</li>
-<li>Don't have relations with stepdaughter</li>
-<li>Don't have relations with step-granddaughter</li>
-<li>Don't have relations with father's sister</li>
-<li>Don't have relations with mother's sister</li>
-<li>Don't have relations with father's brother's wife</li>
-<li>Don't have relations with daughter-in-law</li>
-<li>Don't have relations with brother's wife</li>
-<li>Don't have relations with wife's daughter</li>
-<li>Don't have relations with wife's granddaughter</li>
-<li>Don't have relations with wife's sister while wife lives</li>
-<li>Don't have relations with menstruating woman</li>
-<li>Don't marry non-Jew</li>
-<li>Ammonite/Moabite can't marry into Israel</li>
-<li>Don't exclude Edomite from Israel after 3rd generation</li>
-<li>Don't exclude Egyptian from Israel after 3rd generation</li>
-<li>Don't offer to remarry divorced wife after she married another</li>
-<li>Man shall not remarry woman he divorced if she married another</li>
-<li>Widow and high priest don't marry</li>
-<li>High priest doesn't marry widow</li>
-<li>High priest doesn't marry divorcée</li>
-<li>High priest doesn't marry harlot</li>
-<li>Priest doesn't marry divorcée</li>
-<li>Priest doesn't marry harlot</li>
-<li>Priest doesn't marry chalalah</li>
-<li>Don't have intercourse with animals</li>
-<li>Woman doesn't have intercourse with animals</li>
-<li>Man doesn't have intercourse with man</li>
-<li>Man doesn't have intercourse with father</li>
-<li>Man doesn't have intercourse with father's brother</li>
-<li>Don't be intimate with forbidden relations (even without intercourse)</li>
-<li>Mamzer doesn't marry into congregation</li>
-<li>Castrated man doesn't marry into congregation</li>
-</ol>
+34. **Don't have relations with your mother**
+35. **Don't have relations with stepmother**
+36. **Don't have relations with sister**
+37. **Don't have relations with half-sister**
+38. **Don't have relations with granddaughter**
+39. **Don't have relations with stepdaughter**
+40. **Don't have relations with step-granddaughter**
+41. **Don't have relations with father's sister**
+42. **Don't have relations with mother's sister**
+43. **Don't have relations with father's brother's wife**
+44. **Don't have relations with daughter-in-law**
+45. **Don't have relations with brother's wife**
+46. **Don't have relations with wife's daughter**
+47. **Don't have relations with wife's granddaughter**
+48. **Don't have relations with wife's sister while wife lives**
+49. **Don't have relations with menstruating woman**
+50. **Don't marry non-Jew**
+51. **Ammonite/Moabite can't marry into Israel**
+52. **Don't exclude Edomite from Israel after 3rd generation**
+53. **Don't exclude Egyptian from Israel after 3rd generation**
+54. **Don't offer to remarry divorced wife after she married another**
+55. **Man shall not remarry woman he divorced if she married another**
+56. **Widow and high priest don't marry**
+57. **High priest doesn't marry widow**
+58. **High priest doesn't marry divorcée**
+59. **High priest doesn't marry harlot**
+60. **Priest doesn't marry divorcée**
+61. **Priest doesn't marry harlot**
+62. **Priest doesn't marry chalalah**
+63. **Don't have intercourse with animals**
+64. **Woman doesn't have intercourse with animals**
+65. **Man doesn't have intercourse with man**
+66. **Man doesn't have intercourse with father**
+67. **Man doesn't have intercourse with father's brother**
+68. **Don't be intimate with forbidden relations (even without intercourse)**
+69. **Mamzer doesn't marry into congregation**
+70. **Castrated man doesn't marry into congregation**
 
 ### Forbidden Foods
 
-<ol start="71">
-<li>Don't eat non-kosher animals</li>
-<li>Don't eat non-kosher fish</li>
-<li>Don't eat non-kosher birds</li>
-<li>Don't eat winged insects</li>
-<li>Don't eat creatures that creep on land</li>
-<li>Don't eat worms in fruit/grain</li>
-<li>Don't eat creatures that breed in decay</li>
-<li>Don't eat creeping things that breed in water</li>
-<li>Don't eat animals that died naturally</li>
-<li>Don't eat torn/mauled animals</li>
-<li>Don't eat limb torn from living animal</li>
-<li>Don't eat sinew of the thigh</li>
-<li>Don't eat blood</li>
-<li>Don't eat certain fats</li>
-<li>Don't cook meat with milk</li>
-<li>Don't eat meat cooked with milk</li>
-<li>Don't eat ox condemned to stoning</li>
-<li>Don't eat of rejected sacrifice</li>
-<li>Don't eat day-old sacrifice meant for one day</li>
-<li>Don't eat contaminated sacrifice</li>
-<li>Don't eat remnants of offerings</li>
-<li>Don't eat offerings while impure</li>
-<li>Priest don't eat first-fruits outside Temple</li>
-<li>Non-priest doesn't eat sin offerings</li>
-<li>Non-priest doesn't eat guilt offerings</li>
-<li>Don't eat flesh of burnt offerings</li>
-<li>Don't eat flesh of lesser offerings before blood sprinkled</li>
-<li>Non-priest doesn't eat holy portions</li>
-<li>Priest doesn't eat first-fruits before placed in Temple</li>
-<li>Don't eat second tithe of grain outside Jerusalem</li>
-<li>Don't consume second tithe of wine outside Jerusalem</li>
-<li>Don't consume second tithe of oil outside Jerusalem</li>
-<li>Don't eat unblemished firstborn outside Jerusalem</li>
-<li>Priests don't eat sin/guilt offerings outside Temple</li>
-<li>Don't eat flesh of burnt offering</li>
-<li>Don't eat sacrifices that became unfit</li>
-<li>Don't eat tevel (produce from which tithes not separated)</li>
-<li>Don't eat first tithe before terumah removed</li>
-<li>Don't eat second tithe while impure</li>
-<li>Don't eat second tithe while mourning</li>
-<li>Don't spend redemption money on non-food items</li>
-<li>Don't eat new grain before Omer offering</li>
-<li>Don't eat bread from new grain before Omer</li>
-<li>Don't eat roasted grain before Omer</li>
-<li>Don't eat fruit of tree's first three years</li>
-<li>Don't eat mixed vineyard produce</li>
-<li>Don't drink libation wine of idolaters</li>
-<li>Don't overeat or become gluttonous</li>
-<li>Don't eat on Yom Kippur</li>
-</ol>
+71. **Don't eat non-kosher animals**
+72. **Don't eat non-kosher fish**
+73. **Don't eat non-kosher birds**
+74. **Don't eat winged insects**
+75. **Don't eat creatures that creep on land**
+76. **Don't eat worms in fruit/grain**
+77. **Don't eat creatures that breed in decay**
+78. **Don't eat creeping things that breed in water**
+79. **Don't eat animals that died naturally**
+80. **Don't eat torn/mauled animals**
+81. **Don't eat limb torn from living animal**
+82. **Don't eat sinew of the thigh**
+83. **Don't eat blood**
+84. **Don't eat certain fats**
+85. **Don't cook meat with milk**
+86. **Don't eat meat cooked with milk**
+87. **Don't eat ox condemned to stoning**
+88. **Don't eat of rejected sacrifice**
+89. **Don't eat day-old sacrifice meant for one day**
+90. **Don't eat contaminated sacrifice**
+91. **Don't eat remnants of offerings**
+92. **Don't eat offerings while impure**
+93. **Priest don't eat first-fruits outside Temple**
+94. **Non-priest doesn't eat sin offerings**
+95. **Non-priest doesn't eat guilt offerings**
+96. **Don't eat flesh of burnt offerings**
+97. **Don't eat flesh of lesser offerings before blood sprinkled**
+98. **Non-priest doesn't eat holy portions**
+99. **Priest doesn't eat first-fruits before placed in Temple**
+100.  **Don't eat second tithe of grain outside Jerusalem**
+101.  **Don't consume second tithe of wine outside Jerusalem**
+102.  **Don't consume second tithe of oil outside Jerusalem**
+103.  **Don't eat unblemished firstborn outside Jerusalem**
+104.  **Priests don't eat sin/guilt offerings outside Temple**
+105.  **Don't eat flesh of burnt offering**
+106.  **Don't eat sacrifices that became unfit**
+107.  **Don't eat tevel (produce from which tithes not separated)**
+108.  **Don't eat first tithe before terumah removed**
+109.  **Don't eat second tithe while impure**
+110.  **Don't eat second tithe while mourning**
+111.  **Don't spend redemption money on non-food items**
+112.  **Don't eat new grain before Omer offering**
+113.  **Don't eat bread from new grain before Omer**
+114.  **Don't eat roasted grain before Omer**
+115.  **Don't eat fruit of tree's first three years**
+116.  **Don't eat mixed vineyard produce**
+117.  **Don't drink libation wine of idolaters**
+118.  **Don't overeat or become gluttonous**
+119.  **Don't eat on Yom Kippur**
 
 ### Prohibited Business Practices
 
-<ol start="120">
-<li>Don't do work on Sabbath</li>
-<li>Don't walk beyond limits on Sabbath</li>
-<li>Don't inflict punishment on Sabbath</li>
-<li>Don't do work on first day of Passover</li>
-<li>Don't do work on seventh day of Passover</li>
-<li>Don't do work on Shavuot</li>
-<li>Don't do work on Rosh Hashanah</li>
-<li>Don't do work on first day of Sukkot</li>
-<li>Don't do work on Shemini Atzeret</li>
-<li>Don't do work on Yom Kippur</li>
-<li>Don't leave over sacrificial portions overnight</li>
-<li>Don't leave over Omer offering overnight</li>
-<li>Don't leave over Passover sacrifice overnight</li>
-<li>Don't leave second Passover sacrifice overnight</li>
-<li>Don't leave thanksgiving offering overnight</li>
-<li>Don't break bones of Passover offering</li>
-<li>Don't break bones of second Passover offering</li>
-<li>Don't remove Passover sacrifice from group</li>
-<li>Don't leave chametz (leaven) in possession on Passover</li>
-<li>Don't eat chametz on Passover</li>
-<li>Don't eat mixtures containing chametz on Passover</li>
-<li>Don't eat chametz on Passover afternoon</li>
-<li>Don't possess chametz during Passover</li>
-<li>Don't find chametz in your property during Passover</li>
-<li>Nazir doesn't drink wine</li>
-<li>Nazir doesn't eat fresh grapes</li>
-<li>Nazir doesn't eat raisins</li>
-<li>Nazir doesn't eat grape seeds</li>
-<li>Nazir doesn't eat grape skins</li>
-<li>Nazir doesn't become ritually impure for dead</li>
-<li>Nazir doesn't enter tent with corpse</li>
-<li>Nazir doesn't shave hair</li>
-</ol>
+120. **Don't do work on Sabbath**
+121. **Don't walk beyond limits on Sabbath**
+122. **Don't inflict punishment on Sabbath**
+123. **Don't do work on first day of Passover**
+124. **Don't do work on seventh day of Passover**
+125. **Don't do work on Shavuot**
+126. **Don't do work on Rosh Hashanah**
+127. **Don't do work on first day of Sukkot**
+128. **Don't do work on Shemini Atzeret**
+129. **Don't do work on Yom Kippur**
+130. **Don't leave over sacrificial portions overnight**
+131. **Don't leave over Omer offering overnight**
+132. **Don't leave over Passover sacrifice overnight**
+133. **Don't leave second Passover sacrifice overnight**
+134. **Don't leave thanksgiving offering overnight**
+135. **Don't break bones of Passover offering**
+136. **Don't break bones of second Passover offering**
+137. **Don't remove Passover sacrifice from group**
+138. **Don't leave chametz (leaven) in possession on Passover**
+139. **Don't eat chametz on Passover**
+140. **Don't eat mixtures containing chametz on Passover**
+141. **Don't eat chametz on Passover afternoon**
+142. **Don't possess chametz during Passover**
+143. **Don't find chametz in your property during Passover**
+144. **Nazir doesn't drink wine**
+145. **Nazir doesn't eat fresh grapes**
+146. **Nazir doesn't eat raisins**
+147. **Nazir doesn't eat grape seeds**
+148. **Nazir doesn't eat grape skins**
+149. **Nazir doesn't become ritually impure for dead**
+150. **Nazir doesn't enter tent with corpse**
+151. **Nazir doesn't shave hair**
 
 ### Prohibited Speech
 
-<ol start="152">
-<li>Don't curse judges</li>
-<li>Don't curse leader</li>
-<li>Don't curse any Jew</li>
-<li>Don't curse parents</li>
-<li>Don't curse deaf person</li>
-<li>Don't gossip</li>
-<li>Don't bear tales</li>
-<li>Don't hate in your heart</li>
-<li>Don't put others to shame</li>
-<li>Don't take revenge</li>
-<li>Don't bear grudges</li>
-<li>Don't take mother bird with young</li>
-<li>Don't shave leprous scall</li>
-<li>Don't remove tzara'at signs</li>
-<li>Don't cultivate valley where calf was killed</li>
-<li>Don't allow sorceress to live</li>
-</ol>
+152. **Don't curse judges**
+153. **Don't curse leader**
+154. **Don't curse any Jew**
+155. **Don't curse parents**
+156. **Don't curse deaf person**
+157. **Don't gossip**
+158. **Don't bear tales**
+159. **Don't hate in your heart**
+160. **Don't put others to shame**
+161. **Don't take revenge**
+162. **Don't bear grudges**
+163. **Don't take mother bird with young**
+164. **Don't shave leprous scall**
+165. **Don't remove tzara'at signs**
+166. **Don't cultivate valley where calf was killed**
+167. **Don't allow sorceress to live**
 
 ### Prohibited Violence
 
-<ol start="168">
-<li>Don't commit murder</li>
-<li>Don't accept ransom for murderer</li>
-<li>Don't let murderer escape punishment</li>
-<li>Don't save pursuer by killing him if can be saved otherwise</li>
-<li>Don't pity pursuer</li>
-<li>Don't stand idly by when life in danger</li>
-<li>Don't mislead with advice</li>
-<li>Don't place stumbling block before blind</li>
-<li>Don't strike father or mother</li>
-<li>Don't kidnap</li>
-<li>Don't steal</li>
-<li>Don't rob</li>
-<li>Don't move boundary marker</li>
-<li>Don't defraud</li>
-<li>Don't deny having received money deposit</li>
-<li>Don't swear falsely regarding deposit</li>
-<li>Don't withhold worker's wages</li>
-<li>Don't take security from debtor by force</li>
-<li>Don't keep poor person's security when needed</li>
-<li>Don't take millstones as security</li>
-<li>Don't demand payment from debtor known to be unable</li>
-<li>Don't lend with interest</li>
-<li>Don't borrow with interest</li>
-<li>Don't intermediate loan with interest</li>
-<li>Don't delay payment of vows</li>
-<li>Don't break your word</li>
-</ol>
+168. **Don't commit murder**
+169. **Don't accept ransom for murderer**
+170. **Don't let murderer escape punishment**
+171. **Don't save pursuer by killing him if can be saved otherwise**
+172. **Don't pity pursuer**
+173. **Don't stand idly by when life in danger**
+174. **Don't mislead with advice**
+175. **Don't place stumbling block before blind**
+176. **Don't strike father or mother**
+177. **Don't kidnap**
+178. **Don't steal**
+179. **Don't rob**
+180. **Don't move boundary marker**
+181. **Don't defraud**
+182. **Don't deny having received money deposit**
+183. **Don't swear falsely regarding deposit**
+184. **Don't withhold worker's wages**
+185. **Don't take security from debtor by force**
+186. **Don't keep poor person's security when needed**
+187. **Don't take millstones as security**
+188. **Don't demand payment from debtor known to be unable**
+189. **Don't lend with interest**
+190. **Don't borrow with interest**
+191. **Don't intermediate loan with interest**
+192. **Don't delay payment of vows**
+193. **Don't break your word**
 
 ### Temple Prohibitions
 
-<ol start="194">
-<li>Priest with blemish doesn't enter sanctuary</li>
-<li>Priest with blemish doesn't serve</li>
-<li>Priest with temporary blemish doesn't serve</li>
-<li>Levites don't do priests' service</li>
-<li>Priests don't do Levites' service</li>
-<li>Don't drink wine before entering sanctuary</li>
-<li>Non-priest doesn't enter sanctuary</li>
-<li>Don't cease guarding Temple</li>
-<li>Don't offer sacrifices outside Temple</li>
-<li>Don't sanctify blemished animals for altar</li>
-<li>Don't slaughter blemished animals as offerings</li>
-<li>Don't sprinkle blood of blemished animals</li>
-<li>Don't burn portions of blemished animals</li>
-<li>Don't offer animal with temporary blemish</li>
-<li>Don't offer blemished animal even from non-Jews</li>
-<li>Don't inflict blemish on animals for offerings</li>
-<li>Don't offer leaven or honey on altar</li>
-<li>Don't offer unsalted sacrifices</li>
-<li>Don't offer unfit animal as sacrifice</li>
-<li>Don't offer animal before eighth day</li>
-<li>Don't offer animal with payment for harlot</li>
-<li>Don't offer animal exchanged for dog</li>
-<li>Don't kill animal and offspring same day</li>
-<li>Don't use olive oil other than for Temple</li>
-<li>Don't reproduce anointing oil formula</li>
-<li>Don't anoint with anointing oil</li>
-<li>Don't reproduce incense formula</li>
-<li>Don't offer on golden altar anything but incense</li>
-<li>Don't replace sanctified animals</li>
-<li>Don't change sanctified animals</li>
-<li>Don't redeem firstborn animals</li>
-<li>Don't sell tithe of animals</li>
-<li>Don't sell dedicated field</li>
-<li>Don't redeem dedicated field</li>
-<li>Don't sever bird's head when offering</li>
-<li>Don't work with sanctified animals</li>
-<li>Don't shear sanctified animals</li>
-<li>Don't slaughter Passover offering while chametz present</li>
-<li>Don't leave overnight portions to be offered</li>
-<li>Don't leave Passover sacrifice overnight</li>
-<li>Don't leave portions of thanksgiving offering overnight</li>
-<li>Don't break bones of Passover offering (duplicates #135)</li>
-<li>Don't remove Passover offering from group (duplicates #137)</li>
-<li>Don't leave second Passover offering overnight (duplicates #133)</li>
-<li>Don't break bones of second Passover offering (duplicates #136)</li>
-<li>Don't leave thanksgiving offering overnight (duplicates #134)</li>
-</ol>
+194. **Priest with blemish doesn't enter sanctuary**
+195. **Priest with blemish doesn't serve**
+196. **Priest with temporary blemish doesn't serve**
+197. **Levites don't do priests' service**
+198. **Priests don't do Levites' service**
+199. **Don't drink wine before entering sanctuary**
+200. **Non-priest doesn't enter sanctuary**
+201. **Don't cease guarding Temple**
+202. **Don't offer sacrifices outside Temple**
+203. **Don't sanctify blemished animals for altar**
+204. **Don't slaughter blemished animals as offerings**
+205. **Don't sprinkle blood of blemished animals**
+206. **Don't burn portions of blemished animals**
+207. **Don't offer animal with temporary blemish**
+208. **Don't offer blemished animal even from non-Jews**
+209. **Don't inflict blemish on animals for offerings**
+210. **Don't offer leaven or honey on altar**
+211. **Don't offer unsalted sacrifices**
+212. **Don't offer unfit animal as sacrifice**
+213. **Don't offer animal before eighth day**
+214. **Don't offer animal with payment for harlot**
+215. **Don't offer animal exchanged for dog**
+216. **Don't kill animal and offspring same day**
+217. **Don't use olive oil other than for Temple**
+218. **Don't reproduce anointing oil formula**
+219. **Don't anoint with anointing oil**
+220. **Don't reproduce incense formula**
+221. **Don't offer on golden altar anything but incense**
+222. **Don't replace sanctified animals**
+223. **Don't change sanctified animals**
+224. **Don't redeem firstborn animals**
+225. **Don't sell tithe of animals**
+226. **Don't sell dedicated field**
+227. **Don't redeem dedicated field**
+228. **Don't sever bird's head when offering**
+229. **Don't work with sanctified animals**
+230. **Don't shear sanctified animals**
+231. **Don't slaughter Passover offering while chametz present**
+232. **Don't leave overnight portions to be offered**
+233. **Don't leave Passover sacrifice overnight**
+234. **Don't leave portions of thanksgiving offering overnight**
+235. **Don't break bones of Passover offering (duplicates #135)**
+236. **Don't remove Passover offering from group (duplicates #137)**
+237. **Don't leave second Passover offering overnight (duplicates #133)**
+238. **Don't break bones of second Passover offering (duplicates #136)**
+239. **Don't leave thanksgiving offering overnight (duplicates #134)**
 
 ### Priestly Prohibitions
 
-<ol start="240">
-<li>Priest doesn't marry divorcée (duplicates #60)</li>
-<li>Priest doesn't marry harlot (duplicates #61)</li>
-<li>Priest doesn't marry chalalah (duplicates #62)</li>
-<li>High priest doesn't marry widow (duplicates #57)</li>
-<li>High priest doesn't have relations with widow even without marriage</li>
-<li>Priest doesn't enter cemetery</li>
-<li>Priest doesn't become impure for relatives</li>
-<li>High priest doesn't become impure for anyone</li>
-<li>High priest doesn't enter tent with corpse</li>
-<li>Tribe of Levi doesn't take share in Israel</li>
-<li>Tribe of Levi doesn't take share of spoils</li>
-<li>Don't tear high priest's robe</li>
-<li>Don't leave altar without fire</li>
-</ol>
+240. **Priest doesn't marry divorcée (duplicates #60)**
+241. **Priest doesn't marry harlot (duplicates #61)**
+242. **Priest doesn't marry chalalah (duplicates #62)**
+243. **High priest doesn't marry widow (duplicates #57)**
+244. **High priest doesn't have relations with widow even without marriage**
+245. **Priest doesn't enter cemetery**
+246. **Priest doesn't become impure for relatives**
+247. **High priest doesn't become impure for anyone**
+248. **High priest doesn't enter tent with corpse**
+249. **Tribe of Levi doesn't take share in Israel**
+250. **Tribe of Levi doesn't take share of spoils**
+251. **Don't tear high priest's robe**
+252. **Don't leave altar without fire**
 
 ### Prohibited Agricultural Practices
 
-<ol start="253">
-<li>Don't plant different species together</li>
-<li>Don't plant grain in vineyard</li>
-<li>Don't crossbreed animals</li>
-<li>Don't work with two species together</li>
-<li>Don't muzzle ox while threshing</li>
-<li>Don't cultivate during seventh year</li>
-<li>Don't prune trees during seventh year</li>
-<li>Don't reap after-growths of seventh year as usual harvest</li>
-<li>Don't gather fruit of seventh year as usual harvest</li>
-<li>Don't till land or prune trees in Jubilee year</li>
-<li>Don't reap after-growths of Jubilee as usual</li>
-<li>Don't gather fruit of Jubilee as usual</li>
-<li>Don't sell land in Israel permanently</li>
-<li>Don't sell Levite lands</li>
-<li>Don't forsake Levites</li>
-<li>Don't demand return of loan during sabbatical year</li>
-<li>Don't refuse loan because of sabbatical year</li>
-<li>Don't delay separating tithes</li>
-<li>Don't delay bringing vowed offerings</li>
-<li>Don't come to festival without offerings</li>
-<li>Don't break vow</li>
-<li>Priest doesn't eat first-fruits outside Temple courtyard</li>
-<li>Don't eat second tithe while impure (duplicates #109)</li>
-<li>Don't eat second tithe while mourning (duplicates #110)</li>
-<li>Don't spend redemption money on non-food (duplicates #111)</li>
-<li>Don't eat tevel (duplicates #107)</li>
-<li>Don't change order of separating tithes</li>
-<li>Don't delay payment of vows (duplicates #192)</li>
-<li>Don't arrive at Temple empty-handed</li>
-<li>Don't eat produce of fourth year outside Jerusalem</li>
-</ol>
+253. **Don't plant different species together**
+254. **Don't plant grain in vineyard**
+255. **Don't crossbreed animals**
+256. **Don't work with two species together**
+257. **Don't muzzle ox while threshing**
+258. **Don't cultivate during seventh year**
+259. **Don't prune trees during seventh year**
+260. **Don't reap after-growths of seventh year as usual harvest**
+261. **Don't gather fruit of seventh year as usual harvest**
+262. **Don't till land or prune trees in Jubilee year**
+263. **Don't reap after-growths of Jubilee as usual**
+264. **Don't gather fruit of Jubilee as usual**
+265. **Don't sell land in Israel permanently**
+266. **Don't sell Levite lands**
+267. **Don't forsake Levites**
+268. **Don't demand return of loan during sabbatical year**
+269. **Don't refuse loan because of sabbatical year**
+270. **Don't delay separating tithes**
+271. **Don't delay bringing vowed offerings**
+272. **Don't come to festival without offerings**
+273. **Don't break vow**
+274. **Priest doesn't eat first-fruits outside Temple courtyard**
+275. **Don't eat second tithe while impure (duplicates #109)**
+276. **Don't eat second tithe while mourning (duplicates #110)**
+277. **Don't spend redemption money on non-food (duplicates #111)**
+278. **Don't eat tevel (duplicates #107)**
+279. **Don't change order of separating tithes**
+280. **Don't delay payment of vows (duplicates #192)**
+281. **Don't arrive at Temple empty-handed**
+282. **Don't eat produce of fourth year outside Jerusalem**
 
 ### Prohibited Magic and Divination
 
-<ol start="283">
-<li>Don't practice divination (duplicates #20)</li>
-<li>Don't practice astrology/soothsaying (duplicates #21)</li>
-<li>Don't practice magic/witchcraft (duplicates #22)</li>
-<li>Don't practice charms (duplicates #23)</li>
-<li>Don't consult spirits (duplicates #24)</li>
-<li>Don't consult familiar spirits (duplicates #25)</li>
-<li>Don't inquire of the dead (duplicates #26)</li>
-</ol>
+283. **Don't practice divination (duplicates #20)**
+284. **Don't practice astrology/soothsaying (duplicates #21)**
+285. **Don't practice magic/witchcraft (duplicates #22)**
+286. **Don't practice charms (duplicates #23)**
+287. **Don't consult spirits (duplicates #24)**
+288. **Don't consult familiar spirits (duplicates #25)**
+289. **Don't inquire of the dead (duplicates #26)**
 
 ### Prohibited Personal Conduct
 
-<ol start="290">
-<li>Don't wear sha'atnez (duplicates #30)</li>
-<li>Don't shave beard with razor (duplicates #32)</li>
-<li>Don't make cuts in flesh (duplicates #33)</li>
-<li>Don't tattoo (duplicates #29)</li>
-<li>Man doesn't wear women's garments (duplicates #28)</li>
-<li>Woman doesn't wear men's garments (duplicates #27)</li>
-<li>Don't shave sides of head (duplicates #31)</li>
-<li>Don't become impure intentionally</li>
-<li>High priest doesn't tear his garments</li>
-<li>Don't abandon Temple service</li>
-<li>Common priest doesn't serve while impure</li>
-<li>Don't imitate ways of idolaters (duplicates #19)</li>
-</ol>
+290. **Don't wear sha'atnez (duplicates #30)**
+291. **Don't shave beard with razor (duplicates #32)**
+292. **Don't make cuts in flesh (duplicates #33)**
+293. **Don't tattoo (duplicates #29)**
+294. **Man doesn't wear women's garments (duplicates #28)**
+295. **Woman doesn't wear men's garments (duplicates #27)**
+296. **Don't shave sides of head (duplicates #31)**
+297. **Don't become impure intentionally**
+298. **High priest doesn't tear his garments**
+299. **Don't abandon Temple service**
+300. **Common priest doesn't serve while impure**
+301. **Don't imitate ways of idolaters (duplicates #19)**
 
 ### Prohibited Legal Actions
 
-<ol start="302">
-<li>Don't appoint unqualified judge</li>
-<li>Don't give false testimony</li>
-<li>Judge doesn't accept testimony from wicked</li>
-<li>Judge doesn't accept testimony from relatives</li>
-<li>Don't hear one litigant without other present</li>
-<li>Don't decide by unqualified judge</li>
-<li>Don't show favoritism to rich in judgment</li>
-<li>Don't show favoritism to poor in judgment</li>
-<li>Don't favor wicked person in judgment</li>
-<li>Don't pervert judgment of convert or orphan</li>
-<li>Don't pervert judgment because of litigant's sin</li>
-<li>Don't pity poor in judgment</li>
-<li>Don't pervert justice</li>
-<li>Don't be afraid to judge due to violent person</li>
-<li>Don't take bribes</li>
-<li>Don't curse judges (duplicates #152)</li>
-<li>Don't curse leaders (duplicates #153)</li>
-<li>Don't curse any Jew (duplicates #154)</li>
-<li>Judge doesn't execute without proper procedure</li>
-<li>Judge doesn't execute based on one witness</li>
-<li>Don't execute without warning and witnesses</li>
-<li>Judge doesn't kill innocent person</li>
-<li>Don't punish based on circumstantial evidence</li>
-<li>Don't pity or spare life of killer</li>
-<li>Don't spare person who caused injury</li>
-<li>Judge doesn't have mercy on killer in trial</li>
-<li>Don't punish under duress</li>
-<li>Don't accept ransom for murderer (duplicates #169)</li>
-<li>Don't accept ransom for accidental killer</li>
-<li>Don't stand idly by endangered person (duplicates #173)</li>
-<li>Don't leave obstacle that could cause harm</li>
-<li>Don't mislead with advice (duplicates #174)</li>
-<li>Don't add to Torah commandments</li>
-<li>Don't subtract from Torah commandments</li>
-<li>Don't curse parents (duplicates #155)</li>
-<li>Don't strike parents (duplicates #176)</li>
-<li>Don't work on Sabbath (duplicates #120)</li>
-<li>Don't execute on Sabbath (duplicates #122)</li>
-<li>Don't convict based on less than two witnesses</li>
-<li>Don't prophesy falsely</li>
-<li>Don't prophesy in name of idols</li>
-<li>Don't fear false prophet</li>
-<li>Don't refrain from killing false prophet</li>
-<li>Don't swear falsely</li>
-<li>Don't have false measures</li>
-<li>Don't commit injustice in judgment</li>
-<li>Don't commit injustice with measures</li>
-<li>Don't possess false measures</li>
-</ol>
+302. **Don't appoint unqualified judge**
+303. **Don't give false testimony**
+304. **Judge doesn't accept testimony from wicked**
+305. **Judge doesn't accept testimony from relatives**
+306. **Don't hear one litigant without other present**
+307. **Don't decide by unqualified judge**
+308. **Don't show favoritism to rich in judgment**
+309. **Don't show favoritism to poor in judgment**
+310. **Don't favor wicked person in judgment**
+311. **Don't pervert judgment of convert or orphan**
+312. **Don't pervert judgment because of litigant's sin**
+313. **Don't pity poor in judgment**
+314. **Don't pervert justice**
+315. **Don't be afraid to judge due to violent person**
+316. **Don't take bribes**
+317. **Don't curse judges (duplicates #152)**
+318. **Don't curse leaders (duplicates #153)**
+319. **Don't curse any Jew (duplicates #154)**
+320. **Judge doesn't execute without proper procedure**
+321. **Judge doesn't execute based on one witness**
+322. **Don't execute without warning and witnesses**
+323. **Judge doesn't kill innocent person**
+324. **Don't punish based on circumstantial evidence**
+325. **Don't pity or spare life of killer**
+326. **Don't spare person who caused injury**
+327. **Judge doesn't have mercy on killer in trial**
+328. **Don't punish under duress**
+329. **Don't accept ransom for murderer (duplicates #169)**
+330. **Don't accept ransom for accidental killer**
+331. **Don't stand idly by endangered person (duplicates #173)**
+332. **Don't leave obstacle that could cause harm**
+333. **Don't mislead with advice (duplicates #174)**
+334. **Don't add to Torah commandments**
+335. **Don't subtract from Torah commandments**
+336. **Don't curse parents (duplicates #155)**
+337. **Don't strike parents (duplicates #176)**
+338. **Don't work on Sabbath (duplicates #120)**
+339. **Don't execute on Sabbath (duplicates #122)**
+340. **Don't convict based on less than two witnesses**
+341. **Don't prophesy falsely**
+342. **Don't prophesy in name of idols**
+343. **Don't fear false prophet**
+344. **Don't refrain from killing false prophet**
+345. **Don't swear falsely**
+346. **Don't have false measures**
+347. **Don't commit injustice in judgment**
+348. **Don't commit injustice with measures**
+349. **Don't possess false measures**
 
 ### Prohibited Treatment of Animals
 
-<ol start="350">
-<li>Don't crossbreed different species (duplicates #255)</li>
-<li>Don't sow different species together (duplicates #253)</li>
-<li>Don't muzzle ox while working (duplicates #257)</li>
-<li>Don't work with two species together (duplicates #256)</li>
-<li>Don't castrate any creature</li>
-<li>Don't sacrifice blemished animal (duplicates #212)</li>
-<li>Don't slaughter animal and offspring same day (duplicates #216)</li>
-<li>Don't take mother bird with young (duplicates #163)</li>
-</ol>
+350. **Don't crossbreed different species (duplicates #255)**
+351. **Don't sow different species together (duplicates #253)**
+352. **Don't muzzle ox while working (duplicates #257)**
+353. **Don't work with two species together (duplicates #256)**
+354. **Don't castrate any creature**
+355. **Don't sacrifice blemished animal (duplicates #212)**
+356. **Don't slaughter animal and offspring same day (duplicates #216)**
+357. **Don't take mother bird with young (duplicates #163)**
 
 ### Prohibited Family Actions
 
-<ol start="358">
-<li>Don't remarry divorced wife after she married another (duplicates #54-55)</li>
-<li>Widow doesn't marry non-related brother-in-law</li>
-<li>Don't divorce wife after falsely accusing her</li>
-<li>Childless widow doesn't marry outsider before chalitzah</li>
-<li>Rapist doesn't divorce victim (duplicates #133)</li>
-<li>Seducer of virgin doesn't divorce if married</li>
-<li>Captive woman's captor doesn't sell her</li>
-<li>Captive woman's captor doesn't enslave her</li>
-</ol>
+358. **Don't remarry divorced wife after she married another (duplicates #54-55)**
+359. **Widow doesn't marry non-related brother-in-law**
+360. **Don't divorce wife after falsely accusing her**
+361. **Childless widow doesn't marry outsider before chalitzah**
+362. **Rapist doesn't divorce victim (duplicates #133)**
+363. **Seducer of virgin doesn't divorce if married**
+364. **Captive woman's captor doesn't sell her**
+365. **Captive woman's captor doesn't enslave her**
 
 ---
 
