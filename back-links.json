@@ -61,6 +61,7 @@
         "/coach": "/coaching",
         "/cocaine": "/mania",
         "/cold": "/warm",
+        "/commandments": "/mitzvahs",
         "/compassion": "/curious",
         "/compensation": "/comp",
         "/concentration-risk": "/stock-concentration",
@@ -165,6 +166,7 @@
         "/mental-break-down": "/depression",
         "/middleage": "/elder",
         "/midlife": "/elder",
+        "/mitzvot": "/mitzvahs",
         "/monsters": "/mind-monsters",
         "/mortality": "/death",
         "/mr": "/ar",
@@ -289,7 +291,8 @@
             "doc_size": 16000,
             "file_path": "_site/22.html",
             "incoming_links": [
-                "/chapters"
+                "/chapters",
+                "/manager-book"
             ],
             "last_modified": "2024-05-05T08:25:00-07:00",
             "markdown_path": "_d/22.md",
@@ -747,14 +750,14 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get super lost\n\n",
-            "doc_size": 80000,
+            "doc_size": 82000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai",
                 "/chop",
                 "/walking-with-god"
             ],
-            "last_modified": "2025-10-17T13:09:41-04:00",
+            "last_modified": "2025-10-26T15:45:47-04:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
@@ -1176,6 +1179,7 @@
             "file_path": "_site/books-that-defined-me.html",
             "incoming_links": [
                 "/being-a-great-manager",
+                "/manager-book",
                 "/manager-book-appendix"
             ],
             "last_modified": "2025-07-20T19:26:41-07:00",
@@ -1583,6 +1587,7 @@
                 "/essentialism",
                 "/first-understand",
                 "/get-to-yes-with-yourself",
+                "/happy",
                 "/negotiate",
                 "/operating-manual",
                 "/psychic-weight",
@@ -1769,6 +1774,7 @@
                 "/hobby",
                 "/idle",
                 "/life-as-business",
+                "/manager-book",
                 "/mind-at-work",
                 "/operating-manual",
                 "/physical-health",
@@ -1918,6 +1924,7 @@
                 "/coaching",
                 "/gap-year",
                 "/job-hunt-stress",
+                "/manager-book",
                 "/pride",
                 "/random-idea",
                 "/work-satisfaction"
@@ -2188,6 +2195,7 @@
                 "/d/resistance",
                 "/elder",
                 "/gap-year-igor",
+                "/manager-book",
                 "/productive",
                 "/siy"
             ],
@@ -2810,21 +2818,21 @@
                 "/timeoff-2025-08",
                 "/walking-with-god"
             ],
-            "last_modified": "2025-10-20T12:57:15.744516",
+            "last_modified": "2025-10-20T12:57:20-04:00",
             "markdown_path": "_posts/2017-04-12-happy.md",
             "outgoing_links": [
                 "/addiction",
                 "/anxiety",
                 "/build-life-you-want",
-                "/compassion",
+                "/curious",
                 "/eulogy",
-                "/gty",
                 "/hobby",
-                "/idle-loop",
+                "/idle",
                 "/joy",
                 "/mental-pain",
                 "/moments",
                 "/mood",
+                "/negotiate",
                 "/new-skills",
                 "/spiritual-health"
             ],
@@ -2867,6 +2875,22 @@
             "redirect_url": "",
             "title": "Why a Engineering Manager masquerades as a magician on the weekends",
             "url": "/hobby"
+        },
+        "/human-meetings": {
+            "description": "Having our emotions heard is a fundamental human need. The modern world denies this need, but that doesn’t make the need go away. More than denying the need, society gives, and encourages, us to suppress our emotions. Feelings meetings stand in opposition. They exist to allow us, no, encourage us, to fulfill our fundamental need of expressing emotion.\n\n",
+            "doc_size": 15000,
+            "file_path": "_site/human-meetings.html",
+            "incoming_links": [
+                "/being-a-great-manager",
+                "/eulogy",
+                "/job"
+            ],
+            "last_modified": "2025-09-13T16:07:47-07:00",
+            "markdown_path": "_d/human-meeting.md",
+            "outgoing_links": [],
+            "redirect_url": "",
+            "title": "Feelings/Human Meetings",
+            "url": "/human-meetings"
         },
         "/humans-are-underrated": {
             "description": "As robots become better then humans at most things, what roles will be left for humans? What skills are required for those roles? Empathizing, collaborating, leading,and building relationships.\n\n",
@@ -2917,6 +2941,7 @@
                 "/anxiety",
                 "/depression",
                 "/gtd",
+                "/happy",
                 "/psychic-weight"
             ],
             "last_modified": "2025-09-28T10:02:40-07:00",
@@ -3285,25 +3310,24 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-10-31T17:18:15.261362",
+            "last_modified": "2025-10-31T17:18:27-07:00",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
             "outgoing_links": [
-                "/7h-c2",
-                "/90-days",
+                "/22",
                 "/90days",
                 "/being-a-great-manager",
-                "/books",
-                "/coach",
+                "/books-that-defined-me",
                 "/coaching",
                 "/coe",
                 "/comp",
-                "/decide",
+                "/d/habits",
+                "/decisive",
                 "/dip",
-                "/dsat",
-                "/habits",
+                "/end-in-mind",
                 "/job",
                 "/job-hunt-stress",
                 "/manager-book-appendix",
+                "/ml",
                 "/moments-at-work",
                 "/overload",
                 "/pride",
@@ -3314,11 +3338,10 @@
                 "/static/idvorkin-linked-in-feedback-lastest.pdf",
                 "/strategy",
                 "/td/cloud-first-applications",
-                "/td/machine-learning",
                 "/testing",
-                "/twentytwo",
                 "/what-makes-a-leader",
-                "/write"
+                "/work-satisfaction",
+                "/writing"
             ],
             "redirect_url": "",
             "title": "How to EM: Be the manager everyone wants",
@@ -3486,12 +3509,25 @@
             "title": "Mind monsters",
             "url": "/mind-monsters"
         },
+        "/mitzvahs": {
+            "description": "I like saying “I have a mitzvah” - it sounds way more fun than “I have an obligation.” A mitzvah is a commandment, a good deed, a blessing all rolled into one. And lucky for us, Judaism comes with exactly 613 of them.\n\n",
+            "doc_size": 50000,
+            "file_path": "_site/mitzvahs.html",
+            "incoming_links": [],
+            "last_modified": "2025-11-05T16:59:07+00:00",
+            "markdown_path": "_d/mitzvahs.md",
+            "outgoing_links": [],
+            "redirect_url": "",
+            "title": "The 613 Mitzvahs: Your Complete Jewish Commandment Checklist",
+            "url": "/mitzvahs"
+        },
         "/ml": {
             "description": "It used to be that software was eating the world. Now ML is eating software. ML is computers building algorithms by only looking at the data. This is powerful as the computer can find patterns in large data sets that are too complicated for humans to find and express via algorithms. In human terms programming is following a check list which someone else provided (E.g. bake a cake by following the recipe). ML is following your intuition. (E.g making a stir fry from stuff in the fridge). As with ML, you can’t articulate your intuition as it built through countless experiences, but it mostly works (E.g. you never put a banana in your stirfry).\n\n",
             "doc_size": 52000,
             "file_path": "_site/ml.html",
             "incoming_links": [
                 "/ai",
+                "/manager-book",
                 "/td/stats"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -3666,6 +3702,7 @@
             "incoming_links": [
                 "/curious",
                 "/get-to-yes-with-yourself",
+                "/happy",
                 "/productive",
                 "/sell",
                 "/synergize",
@@ -4291,14 +4328,14 @@
         },
         "/religion": {
             "description": "I did my Bar Mitzvah at the Wailing Wall in Israel — the holiest place in Judaism. We flew there as a family, and I still remember stepping off the plane and feeling an intense warmth. I turned to my sister and whispered, “I can feel God.” She rolled her eyes and said, “That’s not God. That’s forty degrees Celsius.”\n\n",
-            "doc_size": 54000,
+            "doc_size": 57000,
             "file_path": "_site/religion.html",
             "incoming_links": [
                 "/four-healths",
                 "/spiritual-health",
                 "/walking-with-god"
             ],
-            "last_modified": "2025-11-04T16:26:41.882187",
+            "last_modified": "2025-11-04T08:34:24-08:00",
             "markdown_path": "_d/religion.md",
             "outgoing_links": [
                 "/affirmations",
@@ -4479,7 +4516,7 @@
         },
         "/sharpen-the-saw": {
             "description": "A young man saw a woodcutter cutting down a tree and asked “What are you doing?” “Are you blind?” the woodcutter replied. “I’m cutting down this tree.” The young man continued. “You look exhausted! Take a break. Sharpen your saw.” The woodcutter explained he’d been sawing for hours and did not have time to take a break. The young man pushed back… “If you sharpen the saw, you would cut down the tree much faster.” The woodcutter said “I don’t have time to sharpen the saw. Don’t you see I’m too busy. These are my insights based on the 7 habits Chapter 7.\n\n",
-            "doc_size": 14000,
+            "doc_size": 15000,
             "file_path": "_site/sharpen-the-saw.html",
             "incoming_links": [
                 "/7-habits",
@@ -4691,7 +4728,7 @@
                 "/happy",
                 "/walking-with-god"
             ],
-            "last_modified": "2025-10-20T11:28:49.801219",
+            "last_modified": "2025-10-20T11:28:53-04:00",
             "markdown_path": "_d/spiritual-health.md",
             "outgoing_links": [
                 "/build-life-you-want",
@@ -5388,7 +5425,7 @@
         },
         "/timeoff-2020-03": {
             "description": "In March 2020, I took a 2 month sabatical between leaving Amazon and joining Facebook. Given it was a substantial amount of time, I came up with some big plans, and wrote them down. It was a great plan, BUT my time off correlated perfectly to the Corona Virus and as a result I wasted lots of my mental energy thinking about the Corona Virus, and adjusting to being in pseudo-quarantine. Took me a while, but I finally realized I should ignore corona virus, or at least minimize my time thinking about it.\n\n",
-            "doc_size": 30000,
+            "doc_size": 31000,
             "file_path": "_site/timeoff-2020-03.html",
             "incoming_links": [
                 "/timeoff"
@@ -5898,12 +5935,11 @@
                 "/religion",
                 "/spiritual-health"
             ],
-            "last_modified": "2025-11-05T16:10:42.938760",
+            "last_modified": "2025-11-05T08:13:54-08:00",
             "markdown_path": "_d/walking-with-god.md",
             "outgoing_links": [
                 "/affirmations",
                 "/ai-journal",
-                "/compassion",
                 "/curious",
                 "/emotional-health",
                 "/essentialism",
@@ -5991,7 +6027,7 @@
         },
         "/win-win": {
             "description": "Win/Win is a constantly seeking mutual benefit in all interactions. Win/Win means that agreements or solutions are mutually beneficial, mutually satisfying. With a Win/Win solution, all parties feel good about the decision and feel committed to the action plan. Win/Win sees life as a cooperative, not a competitive arena. Most people tend to think in terms of dichotomies: strong or weak, hardball or softball, win or lose. But that kind of thinking is fundamentally flawed. It’s based on power and position rather than on principle. Win/Win is based on the paradigm that there is plenty for everybody, that one person’s success is not achieved at the expense or exclusion of the success of others.\n\n",
-            "doc_size": 20000,
+            "doc_size": 21000,
             "file_path": "_site/win-win.html",
             "incoming_links": [
                 "/7-habits",
@@ -6032,6 +6068,7 @@
             "doc_size": 32000,
             "file_path": "_site/work-satisfaction.html",
             "incoming_links": [
+                "/manager-book",
                 "/mind-at-work",
                 "/retire"
             ],
@@ -6083,6 +6120,7 @@
                 "/chow",
                 "/enable",
                 "/four-healths",
+                "/manager-book",
                 "/manager-book-appendix",
                 "/operating-manual"
             ],
