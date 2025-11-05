@@ -42,6 +42,7 @@ Someone important to me has been reading a daily devotional. Even though I'm not
     - [November 2nd - Identity as Gift](#november-2nd---identity-as-gift)
     - [November 3rd - Just Like Jesus](#november-3rd---just-like-jesus)
     - [November 4th - Authenticity](#november-4th---authenticity)
+    - [November 5th - Authentic Worship](#november-5th---authentic-worship)
   - [December](#december)
 
 <!-- vim-markdown-toc-end -->
@@ -498,6 +499,14 @@ But if I claimed to value patience while thinking "kids are annoying and I don't
 {%include summarize-page.html src="/curious" %}
 {%include summarize-page.html src="/eulogy" %}
 {%include summarize-page.html src="/affirmations" %}
+
+#### November 5th - Authentic Worship
+
+To me this is really about: **Intention matters more than presentation.**
+
+The tastiest meal is the one made with love. It's not about how it looks on the plate - it's about whether you put your soul into it.
+
+God detests superficial sacrifice but loves authentic prayer. In secular terms: going through the motions without heart is worse than not doing it at all. Whether it's cooking, parenting, managing, or any craft - the difference between mediocre and meaningful is whether you actually care.
 
 ### December
 
