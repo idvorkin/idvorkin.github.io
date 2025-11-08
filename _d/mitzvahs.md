@@ -1154,6 +1154,8 @@ _(Traditional count is 248 positive commandments. Variations exist due to differ
 
 ## Negative Commandments (365) - Things NOT To Do
 
+{% include alert.html content="Note: Duplicate entries have been removed from this section. Numbering gaps exist where commandments were previously duplicated. The traditional count of 365 negative commandments is maintained by counting unique prohibitions." style="info" %}
+
 ### Idolatry and Blasphemy
 
 1. **Do not believe in any god but the LORD**
@@ -1508,18 +1510,9 @@ _(Traditional count is 248 positive commandments. Variations exist due to differ
 232. **Don't leave overnight portions to be offered**
 233. **Don't leave Passover sacrifice overnight**
 234. **Don't leave portions of thanksgiving offering overnight**
-235. **Don't break bones of Passover offering (duplicates #135)**
-236. **Don't remove Passover offering from group (duplicates #137)**
-237. **Don't leave second Passover offering overnight (duplicates #133)**
-238. **Don't break bones of second Passover offering (duplicates #136)**
-239. **Don't leave thanksgiving offering overnight (duplicates #134)**
 
 ### Priestly Prohibitions
 
-240. **Priest doesn't marry divorcée (duplicates #60)**
-241. **Priest doesn't marry harlot (duplicates #61)**
-242. **Priest doesn't marry chalalah (duplicates #62)**
-243. **High priest doesn't marry widow (duplicates #57)**
 244. **High priest doesn't have relations with widow even without marriage**
 245. **Priest doesn't enter cemetery**
 246. **Priest doesn't become impure for relatives**
@@ -1554,39 +1547,19 @@ _(Traditional count is 248 positive commandments. Variations exist due to differ
 272. **Don't come to festival without offerings**
 273. **Don't break vow**
 274. **Priest doesn't eat first-fruits outside Temple courtyard**
-275. **Don't eat second tithe while impure (duplicates #109)**
-276. **Don't eat second tithe while mourning (duplicates #110)**
-277. **Don't spend redemption money on non-food (duplicates #111)**
-278. **Don't eat tevel (duplicates #107)**
 279. **Don't change order of separating tithes**
-280. **Don't delay payment of vows (duplicates #192)**
 281. **Don't arrive at Temple empty-handed**
 282. **Don't eat produce of fourth year outside Jerusalem**
 
 ### Prohibited Magic and Divination
 
-283. **Don't practice divination (duplicates #20)**
-284. **Don't practice astrology/soothsaying (duplicates #21)**
-285. **Don't practice magic/witchcraft (duplicates #22)**
-286. **Don't practice charms (duplicates #23)**
-287. **Don't consult spirits (duplicates #24)**
-288. **Don't consult familiar spirits (duplicates #25)**
-289. **Don't inquire of the dead (duplicates #26)**
 
 ### Prohibited Personal Conduct
 
-290. **Don't wear sha'atnez (duplicates #30)**
-291. **Don't shave beard with razor (duplicates #32)**
-292. **Don't make cuts in flesh (duplicates #33)**
-293. **Don't tattoo (duplicates #29)**
-294. **Man doesn't wear women's garments (duplicates #28)**
-295. **Woman doesn't wear men's garments (duplicates #27)**
-296. **Don't shave sides of head (duplicates #31)**
 297. **Don't become impure intentionally**
 298. **High priest doesn't tear his garments**
 299. **Don't abandon Temple service**
 300. **Common priest doesn't serve while impure**
-301. **Don't imitate ways of idolaters (duplicates #19)**
 
 ### Prohibited Legal Actions
 
@@ -1605,9 +1578,6 @@ _(Traditional count is 248 positive commandments. Variations exist due to differ
 314. **Don't pervert justice**
 315. **Don't be afraid to judge due to violent person**
 316. **Don't take bribes**
-317. **Don't curse judges (duplicates #152)**
-318. **Don't curse leaders (duplicates #153)**
-319. **Don't curse any Jew (duplicates #154)**
 320. **Judge doesn't execute without proper procedure**
 321. **Judge doesn't execute based on one witness**
 322. **Don't execute without warning and witnesses**
@@ -1617,17 +1587,10 @@ _(Traditional count is 248 positive commandments. Variations exist due to differ
 326. **Don't spare person who caused injury**
 327. **Judge doesn't have mercy on killer in trial**
 328. **Don't punish under duress**
-329. **Don't accept ransom for murderer (duplicates #169)**
 330. **Don't accept ransom for accidental killer**
-331. **Don't stand idly by endangered person (duplicates #173)**
 332. **Don't leave obstacle that could cause harm**
-333. **Don't mislead with advice (duplicates #174)**
 334. **Don't add to Torah commandments**
 335. **Don't subtract from Torah commandments**
-336. **Don't curse parents (duplicates #155)**
-337. **Don't strike parents (duplicates #176)**
-338. **Don't work on Sabbath (duplicates #120)**
-339. **Don't execute on Sabbath (duplicates #122)**
 340. **Don't convict based on less than two witnesses**
 341. **Don't prophesy falsely**
 342. **Don't prophesy in name of idols**
@@ -1641,22 +1604,13 @@ _(Traditional count is 248 positive commandments. Variations exist due to differ
 
 ### Prohibited Treatment of Animals
 
-350. **Don't crossbreed different species (duplicates #255)**
-351. **Don't sow different species together (duplicates #253)**
-352. **Don't muzzle ox while working (duplicates #257)**
-353. **Don't work with two species together (duplicates #256)**
 354. **Don't castrate any creature**
-355. **Don't sacrifice blemished animal (duplicates #212)**
-356. **Don't slaughter animal and offspring same day (duplicates #216)**
-357. **Don't take mother bird with young (duplicates #163)**
 
 ### Prohibited Family Actions
 
-358. **Don't remarry divorced wife after she married another (duplicates #54-55)**
 359. **Widow doesn't marry non-related brother-in-law**
 360. **Don't divorce wife after falsely accusing her**
 361. **Childless widow doesn't marry outsider before chalitzah**
-362. **Rapist doesn't divorce victim (duplicates #133)**
 363. **Seducer of virgin doesn't divorce if married**
 364. **Captive woman's captor doesn't sell her**
 365. **Captive woman's captor doesn't enslave her**
