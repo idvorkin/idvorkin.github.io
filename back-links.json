@@ -3511,10 +3511,10 @@
         },
         "/mitzvahs": {
             "description": "I like saying “I have a mitzvah” - it sounds way more fun than “I have an obligation.” A mitzvah is a commandment, a good deed, a blessing all rolled into one. And lucky for us, Judaism comes with exactly 613 of them.\n\n",
-            "doc_size": 103000,
+            "doc_size": 119000,
             "file_path": "_site/mitzvahs.html",
             "incoming_links": [],
-            "last_modified": "2025-11-05T17:43:07.399052",
+            "last_modified": "2025-11-08T00:43:46.385680",
             "markdown_path": "_d/mitzvahs.md",
             "outgoing_links": [],
             "redirect_url": "",

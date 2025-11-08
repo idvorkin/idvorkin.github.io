@@ -36,7 +36,6 @@ Think of this as your complete Jewish to-do list, handed down at Mount Sinai. So
   - [Tzedakah and Kindness](#tzedakah-and-kindness)
   - [War and Justice](#war-and-justice)
   - [Property and Commerce](#property-and-commerce)
-  - [Ritual Purity](#ritual-purity)
 - [Negative Commandments (365) - Things NOT To Do](#negative-commandments-365---things-not-to-do)
   - [Idolatry and Blasphemy](#idolatry-and-blasphemy)
   - [Forbidden Worship](#forbidden-worship)
@@ -284,40 +283,144 @@ _(Covered above in Torah Study)_
     [Leviticus 5:1](https://www.sefaria.org/Leviticus.5.1): "If a person incurs guilt—When one has heard a public imprecation but (although able to testify as having either seen or learned of the matter) has not given information and thus is subject to punishment"
 
 51. **Offer all sacrifices in the Temple**
+
+[Deuteronomy 12:14](https://www.sefaria.org/Deuteronomy.12.14): "But only in the place that יהוה will choose in one of your tribal territories. There you shall sacrifice your burnt offerings and there you shall observe all that I enjoin upon you."
+
 52. **Bring offerings from outside Israel to Temple**
+
+[Deuteronomy 12:26](https://www.sefaria.org/Deuteronomy.12.26): "But such sacred and votive donations as you may have shall be taken by you to the site that יהוה will choose."
+
 53. **Redeem dedicated animals with blemishes**
+
+[Leviticus 27:11](https://www.sefaria.org/Leviticus.27.11): "If it is of impure animals, it may be ransomed at its assessment, with one-fifth added; if it is not redeemed, it shall be sold at its assessment."
+
 54. **Burn designated portions on altar**
+
+[Leviticus 1:3](https://www.sefaria.org/Leviticus.1.3): "If your offering is a burnt offering from the herd, you shall make your offering a male without blemish. You shall bring it to the entrance of the Tent of Meeting, for acceptance in your behalf before יהוה."
+
 55. **Priests eat designated portions**
+
+[Leviticus 6:9](https://www.sefaria.org/Leviticus.6.9): "The priest shall dress in linen raiment, with linen breeches next to his body; and he shall take up the ashes to which the fire has reduced the burnt offering on the altar and place them beside the altar."
+
 56. **Eat holy sacrifices in Temple courtyard**
+
+[Leviticus 7:15](https://www.sefaria.org/Leviticus.7.15): "And the flesh of the thanksgiving sacrifice of well-being shall be eaten on the day that it is offered; none of it shall be set aside until morning."
+
 57. **Bring all offerings to first Temple built**
+
+[Deuteronomy 12:14](https://www.sefaria.org/Deuteronomy.12.14): "But only in the place that יהוה will choose in one of your tribal territories. There you shall sacrifice your burnt offerings and there you shall observe all that I enjoin upon you."
+
 58. **Offering for Nazirite when completing vow**
+
+[Numbers 6:13](https://www.sefaria.org/Numbers.6.13): "This is the ritual for the nazirite: On the day that the term as nazirite is completed, the person shall be brought to the entrance of the Tent of Meeting."
+
 59. **Nazirite offering after becoming impure**
+
+[Numbers 6:9](https://www.sefaria.org/Numbers.6.9): "If someone dies suddenly nearby, defiling the consecrated hair, the [nazirite] shall shave the head at the time of becoming pure, shaving it on the seventh day."
+
 60. **Evaluate persons for Temple donation**
+
+[Leviticus 27:2](https://www.sefaria.org/Leviticus.27.2): "Speak to the Israelite people and say to them: When any party explicitly vows to יהוה the equivalent for a human being,"
+
 61. **Evaluate animals for Temple donation**
+
+[Leviticus 27:11](https://www.sefaria.org/Leviticus.27.11): "If it is of impure animals, it may be ransomed at its assessment, with one-fifth added; if it is not redeemed, it shall be sold at its assessment."
+
 62. **Evaluate houses for Temple donation**
+
+[Leviticus 27:14](https://www.sefaria.org/Leviticus.27.14): "If any party consecrates a house to יהוה, the priest shall assess it. Whether high or low, as the priest assesses it, so it shall stand; and if the one who has consecrated the house wishes to redeem it, one-fifth must be added to the sum at which it was assessed, and then it shall be returned."
+
 63. **Evaluate fields for Temple donation**
+
+[Leviticus 27:16](https://www.sefaria.org/Leviticus.27.16): "If any party consecrates to יהוה any land-holding, its assessment shall be in accordance with its seed requirement: fifty shekels of silver to a ḥomer of barley seed."
+
 64. **Make restitution for misuse of sacred property**
+
+[Leviticus 5:16](https://www.sefaria.org/Leviticus.5.16): "That person shall repay the principal amount and add a fifth part to it. One shall pay it to its owner upon realizing guilt."
+
 65. **Value and bring optional offerings**
+
+[Leviticus 22:18](https://www.sefaria.org/Leviticus.22.18): "Speak to Aaron and his sons, and to all the Israelite people, and say to them: When any person of the house of Israel or of the strangers in Israel presents a burnt offering as the offering for any of the votive or any of the freewill offerings that they offer to יהוה,"
+
 66. **Bring offerings on festivals**
+
+[Exodus 34:20](https://www.sefaria.org/Exodus.34.20): "But the firstling of an ass you shall redeem with a sheep; if you do not redeem it, you must break its neck. And you must redeem every male first-born among your children. None shall appear before Me empty-handed."
+
 67. **Bring meal offering of first sheaf (Omer)**
+
+[Leviticus 23:10](https://www.sefaria.org/Leviticus.23.10): "Speak to the Israelite people and say to them: When you enter the land that I am giving to you and you reap its harvest, you shall bring the first sheaf of your harvest to the priest."
+
 68. **Wave offering**
+
+[Leviticus 23:11](https://www.sefaria.org/Leviticus.23.11): "He shall elevate the sheaf before the LORD for acceptance in your behalf; the priest shall elevate it on the day after the sabbath."
+
 69. **Shewbread in Temple**
+
+[Leviticus 24:5](https://www.sefaria.org/Leviticus.24.5): "You shall take choice flour and bake of it twelve loaves, two-tenths of a measure for each loaf."
+
 70. **Burn incense twice daily**
+
+[Exodus 30:7](https://www.sefaria.org/Exodus.30.7): "On it Aaron shall burn aromatic incense: he shall burn it every morning when he tends the lamps,"
+
 71. **Keep eternal flame burning**
+
+[Leviticus 6:6](https://www.sefaria.org/Leviticus.6.6): "A perpetual fire shall be kept burning on the altar, not to go out."
+
 72. **Remove ashes from altar**
+
+[Leviticus 6:3](https://www.sefaria.org/Leviticus.6.3): "He shall then take off his vestments and put on other vestments, and carry the ashes outside the camp to a pure place."
+
 73. **Remove impure people from Temple**
+
+[Numbers 5:2](https://www.sefaria.org/Numbers.5.2): "Instruct the Israelites to remove from camp anyone with an eruption or a discharge and anyone defiled by a corpse."
+
 74. **Honor priests**
+
+[Leviticus 21:8](https://www.sefaria.org/Leviticus.21.8): "and you must treat them as holy, since they offer the food of your God; they shall be holy to you, for I יהוה who sanctify you am holy."
+
 75. **Priestly garments**
+
+[Exodus 28:2](https://www.sefaria.org/Exodus.28.2): "Make sacral vestments for your brother Aaron, for dignity and adornment."
+
 76. **Carry the Ark on shoulders**
+
+[Numbers 7:9](https://www.sefaria.org/Numbers.7.9): "But to the Kohathites he did not give any; since theirs was the service of the [most] sacred objects, their porterage was by shoulder."
+
 77. **Anoint high priests and kings**
+
+[Exodus 30:31](https://www.sefaria.org/Exodus.30.31): "And to the Israelite people speak thus: This shall be an oil of sacred anointing unto Me throughout the ages."
+
 78. **Priests serve in watches (rotations)**
+
+[Numbers 18:23](https://www.sefaria.org/Numbers.18.23): "Only the Levites shall perform the services of the Tent of Meeting; they shall bear their guilt. It is a law for all time throughout the ages. But they shall have no territorial share among the Israelites;"
+
 79. **Priests must be ritually pure for service**
+
+[Leviticus 21:6](https://www.sefaria.org/Leviticus.21.6): "They shall be holy to their God and not profane the name of their God; for they offer יהוה's offerings by fire, the food of their God, and so must be holy."
+
 80. **Set aside portion for priests from grain**
+
+[Deuteronomy 18:4](https://www.sefaria.org/Deuteronomy.18.4): "You shall also give him the first fruits of your new grain and wine and oil, and the first shearing of your sheep."
+
 81. **Set aside portion from wine**
+
+[Deuteronomy 18:4](https://www.sefaria.org/Deuteronomy.18.4): "You shall also give him the first fruits of your new grain and wine and oil, and the first shearing of your sheep."
+
 82. **Set aside portion from oil**
+
+[Deuteronomy 18:4](https://www.sefaria.org/Deuteronomy.18.4): "You shall also give him the first fruits of your new grain and wine and oil, and the first shearing of your sheep."
+
 83. **First portion of dough to priest**
+
+[Numbers 15:20](https://www.sefaria.org/Numbers.15.20): "As the first yield of your baking, you shall set aside a loaf as a gift; you shall set it aside as a gift like the gift from the threshing floor."
+
 84. **Give shoulder, cheeks, stomach to priest**
+
+[Deuteronomy 18:3](https://www.sefaria.org/Deuteronomy.18.3): "This then shall be the priests' due from the people: Everyone who offers a sacrifice, whether an ox or a sheep, must give the shoulder, the cheeks, and the stomach to the priest."
+
 85. **Give first shearing to priest**
+
+[Deuteronomy 18:4](https://www.sefaria.org/Deuteronomy.18.4): "You shall also give him the first fruits of your new grain and wine and oil, and the first shearing of your sheep."
 
 ### Priests and Levites
 
@@ -836,42 +939,139 @@ _(Traditional count is 248. Variations exist due to different enumeration method
 
 ### Idolatry and Blasphemy
 
-1. **Don't believe in other gods**
-2. **Don't make idols for yourself**
-3. **Don't make idols for others**
-4. **Don't make human forms for decoration**
-5. **Don't bow to idols**
-6. **Don't worship idols in their customary manner**
-7. **Don't sacrifice children to Molech**
-8. **Don't practice necromancy**
-9. **Don't practice sorcery/magic**
-10. **Don't have idols in your land**
-11. **Don't set up pillar for worship**
-12. **Don't set up figured stone for worship**
-13. **Don't plant tree near altar**
-14. **Don't swear falsely by God's name**
-15. **Don't blaspheme God's name**
-16. **Don't test God excessively**
-17. **Don't destroy God's name or holy books**
-18. **Don't let condemned city be rebuilt**
+1. **Do not believe in any god but the LORD**
+
+   [Exodus 20:3](https://www.sefaria.org/Exodus.20.3): "You shall have no other gods besides Me."
+
+2. **Do not make idols for yourself**
+
+   [Exodus 20:4](https://www.sefaria.org/Exodus.20.4): "You shall not make for yourself a sculptured image, or any likeness of what is in the heavens above, or on the earth below, or in the waters under the earth."
+
+3. **Do not make idols for others**
+
+   [Leviticus 19:4](https://www.sefaria.org/Leviticus.19.4): "Do not turn to idols or make molten gods for yourselves: I יהוה am your God."
+
+4. **Do not make human forms even for decoration**
+
+   [Leviticus 26:1](https://www.sefaria.org/Leviticus.26.1): "You shall not make idols for yourselves, or set up for yourselves carved images or pillars, or place figured stones in your land to worship upon, for I יהוה am your God."
+
+5. **Do not bow down to idols**
+
+   [Exodus 20:5](https://www.sefaria.org/Exodus.20.5): "You shall not bow down to them or serve them. For I your God יהוה am an impassioned God, visiting the guilt of the parents upon the children, upon the third and upon the fourth generations of those who reject Me."
+
+6. **Do not worship idols in their customary manner**
+
+   [Exodus 20:5](https://www.sefaria.org/Exodus.20.5): "You shall not bow down to them or serve them. For I your God יהוה am an impassioned God, visiting the guilt of the parents upon the children, upon the third and upon the fourth generations of those who reject Me."
+
+7. **Do not sacrifice children to Molech**
+
+   [Leviticus 18:21](https://www.sefaria.org/Leviticus.18.21): "Do not allow any of your offspring to be offered up to Molech, and do not profane the name of your God: I am יהוה."
+
+8. **Do not practice necromancy (consulting ghosts)**
+
+   [Leviticus 19:31](https://www.sefaria.org/Leviticus.19.31): "Do not turn to ghosts and do not inquire of familiar spirits, to be defiled by them: I יהוה am your God."
+
+9. **Do not practice sorcery (consulting familiar spirits)**
+
+   [Leviticus 19:31](https://www.sefaria.org/Leviticus.19.31): "Do not turn to ghosts and do not inquire of familiar spirits, to be defiled by them: I יהוה am your God."
+
+10. **Do not study or turn your thoughts toward idolatry**
+
+    [Leviticus 19:4](https://www.sefaria.org/Leviticus.19.4): "Do not turn to idols or make molten gods for yourselves: I יהוה am your God."
+
+11. **Do not set up a pillar for worship**
+
+    [Deuteronomy 16:22](https://www.sefaria.org/Deuteronomy.16.22): "or erect a stone pillar; for such your God יהוה detests."
+
+12. **Do not set up a figured stone to bow upon**
+
+    [Leviticus 26:1](https://www.sefaria.org/Leviticus.26.1): "You shall not make idols for yourselves, or set up for yourselves carved images or pillars, or place figured stones in your land to worship upon, for I יהוה am your God."
+
+13. **Do not plant a tree near the altar**
+
+    [Deuteronomy 16:21](https://www.sefaria.org/Deuteronomy.16.21): "You shall not set up a sacred post—any kind of pole beside the altar of your God יהוה that you may make—"
+
+14. **Do not swear by idols or make others swear by them**
+
+    [Exodus 23:13](https://www.sefaria.org/Exodus.23.13): "Be on guard concerning all that I have told you. Make no mention of the names of other gods; they shall not be heard on your lips."
+
+15. **Do not blaspheme God's name**
+
+    [Leviticus 24:16](https://www.sefaria.org/Leviticus.24.16): "and one who also pronounces the name יהוה shall be put to death. The community leadership shall stone that person; stranger or citizen—having thus pronounced the Name—shall be put to death."
+
+16. **Do not test God excessively**
+
+    [Deuteronomy 6:16](https://www.sefaria.org/Deuteronomy.6.16): "Do not try your God יהוה, as you did at Massah."
+
+17. **Do not destroy God's name or erase holy writings**
+
+    [Deuteronomy 12:4](https://www.sefaria.org/Deuteronomy.12.4): "Do not worship your God יהוה in like manner,"
+
+18. **Do not let a condemned idolatrous city be rebuilt**
+
+    [Deuteronomy 13:17](https://www.sefaria.org/Deuteronomy.13.17): "And it shall remain an everlasting ruin, never to be rebuilt."
 
 ### Forbidden Worship
 
 19. **Don't follow ways of idolaters**
+
+    [Deuteronomy 18:9](https://www.sefaria.org/Deuteronomy.18.9): "When you enter the land that your God יהוה is giving you, you shall not learn to imitate the abhorrent practices of those nations."
+
 20. **Don't practice divination**
+
+    [Leviticus 19:26](https://www.sefaria.org/Leviticus.19.26): "You shall not eat anything with its blood. You shall not practice divination or soothsaying."
+
 21. **Don't practice astrology**
+
+    [Deuteronomy 18:10](https://www.sefaria.org/Deuteronomy.18.10): "Let no one be found among you who consigns a son or daughter to the fire, or who is an augur, a soothsayer, a diviner, a sorcerer,"
+
 22. **Don't practice magic**
+
+    [Deuteronomy 18:10](https://www.sefaria.org/Deuteronomy.18.10): "Let no one be found among you who consigns a son or daughter to the fire, or who is an augur, a soothsayer, a diviner, a sorcerer,"
+
 23. **Don't practice charms**
+
+    [Deuteronomy 18:11](https://www.sefaria.org/Deuteronomy.18.11): "one who casts spells, or one who consults ghosts or familiar spirits, or one who inquires of the dead."
+
 24. **Don't consult spirits**
+
+    [Deuteronomy 18:11](https://www.sefaria.org/Deuteronomy.18.11): "one who casts spells, or one who consults ghosts or familiar spirits, or one who inquires of the dead."
+
 25. **Don't consult familiar spirits**
+
+    [Deuteronomy 18:11](https://www.sefaria.org/Deuteronomy.18.11): "one who casts spells, or one who consults ghosts or familiar spirits, or one who inquires of the dead."
+
 26. **Don't inquire of the dead**
+
+    [Deuteronomy 18:11](https://www.sefaria.org/Deuteronomy.18.11): "one who casts spells, or one who consults ghosts or familiar spirits, or one who inquires of the dead."
+
 27. **Women don't wear men's clothing**
+
+    [Deuteronomy 22:5](https://www.sefaria.org/Deuteronomy.22.5): "A woman must not put on man's apparel, nor shall a man wear woman's clothing; for whoever does these things is abhorrent to your God יהוה."
+
 28. **Men don't wear women's clothing**
+
+    [Deuteronomy 22:5](https://www.sefaria.org/Deuteronomy.22.5): "A woman must not put on man's apparel, nor shall a man wear woman's clothing; for whoever does these things is abhorrent to your God יהוה."
+
 29. **Don't tattoo yourself**
+
+    [Leviticus 19:28](https://www.sefaria.org/Leviticus.19.28): "You shall not make gashes in your flesh for the dead, or incise any marks on yourselves: I am יהוה."
+
 30. **Don't wear sha'atnez (wool and linen together)**
+
+    [Deuteronomy 22:11](https://www.sefaria.org/Deuteronomy.22.11): "You shall not wear cloth combining wool and linen."
+
 31. **Don't shave sides of head**
+
+    [Leviticus 19:27](https://www.sefaria.org/Leviticus.19.27): "You [men] shall not round off the side-growth on your head, or destroy the side-growth of your beard."
+
 32. **Don't shave beard with razor**
+
+    [Leviticus 19:27](https://www.sefaria.org/Leviticus.19.27): "You [men] shall not round off the side-growth on your head, or destroy the side-growth of your beard."
+
 33. **Don't make cuts in flesh for the dead**
+
+    [Leviticus 19:28](https://www.sefaria.org/Leviticus.19.28): "You shall not make gashes in your flesh for the dead, or incise any marks on yourselves: I am יהוה."
 
 ### Forbidden Sexual Relations
 
