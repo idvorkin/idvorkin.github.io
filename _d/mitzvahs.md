@@ -852,37 +852,46 @@ _(Covered above in Temple Service)_
 
 175. **Prepare army for war**
 
+
     [Deuteronomy 20:1](https://www.sefaria.org/Deuteronomy.20.1): "When you take the field against your enemies, and see horses and chariots—forces larger than yours—have no fear of them, for your God יהוה, who brought you from the land of Egypt, is with you."
 
 176. **Anoint priest for war**
+
 
     [Deuteronomy 20:2](https://www.sefaria.org/Deuteronomy.20.2): "Before you join battle, the priest shall come forward and address the troops."
 
 177. **Offer peace terms before battle**
 
+
     [Deuteronomy 20:10](https://www.sefaria.org/Deuteronomy.20.10): "When you approach a town to attack it, you shall offer it terms of peace."
 
 178. **Follow laws regarding beautiful captive woman**
+
 
     [Deuteronomy 21:11](https://www.sefaria.org/Deuteronomy.21.11): "and you see among the captives a beautiful woman and you desire her and would take her to wife."
 
 179. **Destroy Amalek's memory**
 
+
     [Deuteronomy 25:19](https://www.sefaria.org/Deuteronomy.25.19): "Therefore, when your God יהוה grants you safety from all your enemies around you, in the land that your God יהוה is giving you as a hereditary portion, you shall blot out the memory of Amalek from under heaven. Do not forget!"
 
 180. **Remember what Amalek did**
+
 
     [Deuteronomy 25:17](https://www.sefaria.org/Deuteronomy.25.17): "Remember what Amalek did to you on your journey, after you left Egypt."
 
 181. **Destroy the seven Canaanite nations**
 
+
     [Deuteronomy 20:17](https://www.sefaria.org/Deuteronomy.20.17): "No, you must proscribe them—the Hittites and the Amorites, the Canaanites and the Perizzites, the Hivites and the Jebusites—as your God יהוה has commanded you."
 
 182. **Build fence/guardrail on roof**
 
+
     [Deuteronomy 22:8](https://www.sefaria.org/Deuteronomy.22.8): "When you build a new house, you shall make a parapet for your roof, so that you do not bring bloodguilt on your house if anyone should fall from it."
 
 183. **Destroy idolatry and its accessories**
+
 
     [Deuteronomy 12:2](https://www.sefaria.org/Deuteronomy.12.2): "You must destroy all the sites at which the nations you are to dispossess worshiped their gods, whether on lofty mountains and on hills or under any luxuriant tree."
 
@@ -890,49 +899,61 @@ _(Covered above in Temple Service)_
 
 184. **Respect property boundaries**
 
+
     [Deuteronomy 19:14](https://www.sefaria.org/Deuteronomy.19.14): "You shall not move your countryman's landmarks, set up by previous generations, in the property that will be allotted to you in the land that your God יהוה is giving you to possess."
 
 185. **Weights and measures must be accurate**
+
 
     [Deuteronomy 25:13](https://www.sefaria.org/Deuteronomy.25.13): "You shall not have in your pouch alternate weights, larger and smaller."
 
 186. **Honor the aged and scholars**
 
+
     [Leviticus 19:32](https://www.sefaria.org/Leviticus.19.32): "You shall rise before the aged and show deference to the old; you shall fear your God: I am יהוה."
 
 187. **Honor parents**
+
 
     [Exodus 20:12](https://www.sefaria.org/Exodus.20.12): "Honor your father and your mother, that you may long endure on the land that your God יהוה is assigning to you."
 
 188. **Fear/revere parents**
 
+
     [Leviticus 19:3](https://www.sefaria.org/Leviticus.19.3): "You shall each revere your mother and your father, and keep My sabbaths: I יהוה am your God."
 
 189. **Have children (be fruitful and multiply)**
+
 
     [Genesis 1:28](https://www.sefaria.org/Genesis.1.28): "Be fertile and increase, fill the earth and master it; and rule the fish of the sea, the birds of the sky, and all the living things that creep on earth."
 
 190. **Master must marry or designate Hebrew maidservant**
 
+
     [Exodus 21:8](https://www.sefaria.org/Exodus.21.8): "If she proves to be displeasing to her master, who designated her for himself, he must let her be redeemed; he shall not have the right to sell her to outsiders, since he broke faith with her."
 
 191. **Redeem Hebrew maidservant**
+
 
     [Exodus 21:8](https://www.sefaria.org/Exodus.21.8): "If she proves to be displeasing to her master, who designated her for himself, he must let her be redeemed; he shall not have the right to sell her to outsiders, since he broke faith with her."
 
 192. **Master must not sell Hebrew maidservant**
 
+
     [Exodus 21:8](https://www.sefaria.org/Exodus.21.8): "If she proves to be displeasing to her master, who designated her for himself, he must let her be redeemed; he shall not have the right to sell her to outsiders, since he broke faith with her."
 
 193. **Keep Canaanite slave forever**
+
 
     [Leviticus 25:46](https://www.sefaria.org/Leviticus.25.46): "You may keep them as a possession for your children after you, for them to inherit as property for all time. Such you may treat as slaves. But as for your Israelite kin, no one shall rule ruthlessly over another."
 
 194. **Don't return escaped slave to master**
 
+
     [Deuteronomy 23:16](https://www.sefaria.org/Deuteronomy.23.16): "You shall not turn over to the master a slave who seeks refuge with you from that master."
 
 195. **Don't oppress escaped slave who seeks refuge**
+
 
     [Deuteronomy 23:17](https://www.sefaria.org/Deuteronomy.23.17): "That slave shall live with you in any place chosen in one of your settlements, wherever that slave pleases; you must not ill-treat such a one."
 
@@ -940,211 +961,266 @@ _(Note: Some numbering variations exist in traditional sources. Continuing with 
 
 196. **Unload burden from animal**
 
+
     [Exodus 23:5](https://www.sefaria.org/Exodus.23.5): "When you see the ass of your enemy lying under its burden and would refrain from raising it, you must nevertheless help raise it."
 
 197. **Assist in loading burden**
+
 
     [Deuteronomy 22:4](https://www.sefaria.org/Deuteronomy.22.4): "If you see your fellow Israelite's ass or ox fallen on the road, do not ignore it; you must help raise it."
 
 198. **Rebuke wrongdoer**
 
+
     [Leviticus 19:17](https://www.sefaria.org/Leviticus.19.17): "You shall not hate your kinsfolk in your heart. Reprove your kin but incur no guilt on their account."
 
 199. **Love your fellow Israelite**
+
 
     [Leviticus 19:18](https://www.sefaria.org/Leviticus.19.18): "You shall not take vengeance or bear a grudge against members of your people. Love your fellow [Israelite] as yourself: I am יהוה."
 
 200. **Learn to fear God**
 
+
     [Deuteronomy 6:13](https://www.sefaria.org/Deuteronomy.6.13): "Revere only your God יהוה and worship [God] alone, and swear only by God's name."
 
 201. **Sanctify God's name**
+
 
     [Leviticus 22:32](https://www.sefaria.org/Leviticus.22.32): "You shall not profane My holy name, that I may be sanctified in the midst of the Israelite people—I יהוה who sanctify you."
 
 202. **Give half-shekel annually (when Temple stands)**
 
+
     [Exodus 30:13](https://www.sefaria.org/Exodus.30.13): "This is what everyone who is entered in the records shall pay: a half-shekel by the sanctuary weight—twenty gerahs to the shekel—a half-shekel as an offering to יהוה."
 
 203. **Listen to prophet speaking in God's name**
+
 
     [Deuteronomy 18:15](https://www.sefaria.org/Deuteronomy.18.15): "Your God יהוה will raise up for you a prophet from among your own people, like myself; that is whom you shall heed."
 
 204. **Appoint a king**
 
+
     [Deuteronomy 17:15](https://www.sefaria.org/Deuteronomy.17.15): "you shall be free to set a king over yourself, one chosen by your God יהוה."
 
 205. **Obey the Great Court (Sanhedrin)**
+
 
     [Deuteronomy 17:11](https://www.sefaria.org/Deuteronomy.17.11): "You shall act in accordance with the instructions given you and the ruling handed down to you; you must not deviate from the verdict that they announce to you either to the right or to the left."
 
 206. **In disputed matters, follow majority**
 
+
     [Exodus 23:2](https://www.sefaria.org/Exodus.23.2): "You shall neither side with the mighty to do wrong—you shall not give perverse testimony in a dispute so as to pervert it in favor of the mighty."
 
 207. **Appoint judges and officers**
+
 
     [Deuteronomy 16:18](https://www.sefaria.org/Deuteronomy.16.18): "You shall appoint magistrates and officials for your tribes, in all the settlements that your God יהוה is giving you, and they shall govern the people with due justice."
 
 208. **Treat litigants equally**
 
+
     [Leviticus 19:15](https://www.sefaria.org/Leviticus.19.15): "You shall not render an unfair decision: do not favor the poor or show deference to the rich; judge your kin fairly."
 
 209. **Testify in court**
+
 
     [Leviticus 5:1](https://www.sefaria.org/Leviticus.5.1): "If a person incurs guilt—When one has heard a public imprecation but (although able to testify as having either seen or learned of the matter) has not given information and thus is subject to punishment."
 
 210. **Interrogate witnesses thoroughly**
 
+
     [Deuteronomy 13:15](https://www.sefaria.org/Deuteronomy.13.15): "You shall investigate and inquire and interrogate thoroughly. If it is true, the fact is established—that abhorrent thing was perpetrated in your midst."
+
 211. **Designate Levite cities**
+
 
     [Numbers 35:2](https://www.sefaria.org/Numbers.35.2): "Instruct the Israelite people to assign, out of the holdings apportioned to them, towns for the Levites to dwell in; you shall also assign to the Levites pasture land around their towns."
 
 212. **Set aside cities of refuge**
 
+
     [Numbers 35:11](https://www.sefaria.org/Numbers.35.11): "You shall provide yourselves with places to serve you as cities of refuge to which [a man] who has killed someone—who has slain a person unintentionally—may flee."
 
 213. **Punish perjurers as they intended**
+
 
     [Deuteronomy 19:19](https://www.sefaria.org/Deuteronomy.19.19): "you shall do to the schemer as the schemer schemed to do to the other. Thus you will sweep out evil from your midst."
 
 214. **Decapitate calf for unsolved murder**
 
+
     [Deuteronomy 21:4](https://www.sefaria.org/Deuteronomy.21.4): "The elders of that town shall bring the heifer down to an everflowing wadi, which is not tilled or sown. There, in the wadi, they shall break the heifer's neck."
 
 215. **Prepare six cities of refuge**
+
 
     [Deuteronomy 19:3](https://www.sefaria.org/Deuteronomy.19.3): "You shall survey the distances, and divide into three parts the territory of the country that your God יהוה has allotted to you, so that any killer may have a place to flee to."
 
 216. **Levites serve in the Temple**
 
+
     [Numbers 18:23](https://www.sefaria.org/Numbers.18.23): "Only the Levites shall perform the services of the Tent of Meeting; they shall bear their guilt. It is a law for all time throughout the ages. But they shall have no territorial share among the Israelites."
 
 217. **Sanctify the Levites**
+
 
     [Numbers 8:6](https://www.sefaria.org/Numbers.8.6): "Take the Levites from among the Israelites and cleanse them."
 
 218. **Priests receive portions from offerings**
 
+
     [Deuteronomy 18:3](https://www.sefaria.org/Deuteronomy.18.3): "This then shall be the priests' due from the people: Everyone who offers a sacrifice, whether an ox or a sheep, must give the shoulder, the cheeks, and the stomach to the priest."
 
 219. **Redeem firstborn son**
+
 
     [Exodus 13:13](https://www.sefaria.org/Exodus.13.13): "But every firstling ass you shall redeem with a sheep; if you do not redeem it, you must break its neck. And you must redeem every male first-born among your children."
 
 220. **Redeem firstborn donkey**
 
+
     [Exodus 13:13](https://www.sefaria.org/Exodus.13.13): "But every firstling ass you shall redeem with a sheep; if you do not redeem it, you must break its neck. And you must redeem every male first-born among your children."
 
 221. **Break neck of unredeemed firstborn donkey**
 
+
     [Exodus 13:13](https://www.sefaria.org/Exodus.13.13): "But every firstling ass you shall redeem with a sheep; if you do not redeem it, you must break its neck. And you must redeem every male first-born among your children."
+
 222. **Perform red heifer ritual**
+
 
     [Numbers 19:2](https://www.sefaria.org/Numbers.19.2): "This is the ritual law that יהוה has commanded: Instruct the Israelite people to bring you a red cow without blemish, in which there is no defect and on which no yoke has been laid."
 
 223. **Ritually impure person must immerse in mikvah**
 
+
     [Leviticus 15:16](https://www.sefaria.org/Leviticus.15.16): "When a man has an emission of semen, he shall bathe his whole body in water and remain impure until evening."
 
 224. **Purification ritual for skin disease (tzara'at)**
+
 
     [Leviticus 14:2](https://www.sefaria.org/Leviticus.14.2): "This shall be the ritual for a leper at the time of being purified. When it has been reported to the priest."
 
 225. **Person with tzara'at must shave all hair**
 
+
     [Leviticus 14:9](https://www.sefaria.org/Leviticus.14.9): "On the seventh day all hair shall be shaved off—of head, beard, and eyebrows. Having shaved off all hair, the person shall wash those clothes and bathe the body in water—and shall be pure."
 
 226. **Person with tzara'at must make known impurity**
+
 
     [Leviticus 13:45](https://www.sefaria.org/Leviticus.13.45): "As for the person with a leprous affection: the clothes shall be rent, the head shall be left bare, and the upper lip shall be covered; and [the person] shall call out, 'Impure! Impure!'"
 
 227. **Burn red heifer and use ashes for purification**
 
+
     [Numbers 19:9](https://www.sefaria.org/Numbers.19.9): "A man who is pure shall gather up the ashes of the cow and deposit them outside the camp in a pure place, to be kept for water of lustration for the Israelite community. It is for purification."
 
 228. **Laws of corpse impurity**
+
 
     [Numbers 19:14](https://www.sefaria.org/Numbers.19.14): "This is the ritual: When a person dies in a tent, whoever enters the tent and whoever is in the tent shall be impure seven days."
 
 229. **Purification from corpse impurity with red heifer water**
 
+
     [Numbers 19:19](https://www.sefaria.org/Numbers.19.19): "The pure person shall sprinkle it upon the impure person on the third day and on the seventh day, thus purifying the latter by the seventh day. The one being purified shall then wash those clothes and bathe in water, becoming pure at nightfall."
 
 230. **Laws of menstrual impurity (niddah)**
+
 
     [Leviticus 15:19](https://www.sefaria.org/Leviticus.15.19): "When a woman has a discharge, her discharge being blood from her body, she shall remain in her menstrual separation seven days; whoever touches her shall be impure until evening."
 
 231. **Laws of post-birth impurity**
 
+
     [Leviticus 12:2](https://www.sefaria.org/Leviticus.12.2): "When a woman at childbirth bears a male, she shall be impure seven days; she shall be impure as at the time of her menstrual infirmity."
 
 232. **Laws of leprous garment impurity**
+
 
     [Leviticus 13:47](https://www.sefaria.org/Leviticus.13.47): "When an eruptive affection occurs in a cloth of wool or linen fabric."
 
 233. **Laws of leprous house impurity**
 
+
     [Leviticus 14:35](https://www.sefaria.org/Leviticus.14.35): "the owner of the house shall come and tell the priest, saying, 'Something like a plague has appeared upon my house.'"
 
 234. **Laws of male discharge (zav) impurity**
+
 
     [Leviticus 15:2](https://www.sefaria.org/Leviticus.15.2): "Speak to the Israelite people and say to them: When any man has a discharge issuing from his member, he is impure."
 
 235. **Laws of seminal emission impurity**
 
+
     [Leviticus 15:16](https://www.sefaria.org/Leviticus.15.16): "When a man has an emission of semen, he shall bathe his whole body in water and remain impure until evening."
 
 236. **Woman with discharge (zavah) becomes impure**
+
 
     [Leviticus 15:25](https://www.sefaria.org/Leviticus.15.25): "When a woman has had a discharge of blood for many days, not at the time of her menstrual impurity, or when she has a discharge beyond her period of menstrual impurity, she shall be impure, as though at the time of her menstrual impurity, as long as her discharge lasts."
 
 237. **Priest becomes impure for close relatives**
 
+
     [Leviticus 21:3](https://www.sefaria.org/Leviticus.21.3): "or for the nearest kin—mother, father, son, daughter, brother."
 
 238. **Sanctify yourself for Temple service**
+
 
     [Leviticus 21:6](https://www.sefaria.org/Leviticus.21.6): "They shall be holy to their God and not profane the name of their God; for they offer יהוה's offerings by fire, the food of their God, and so must be holy."
 
 239. **Send impure people out of the camp**
 
+
     [Numbers 5:2](https://www.sefaria.org/Numbers.5.2): "Instruct the Israelites to remove from camp anyone with an eruption or a discharge and anyone defiled by a corpse."
 
 240. **Honor the priests (descendants of Aaron)**
+
 
     [Leviticus 21:8](https://www.sefaria.org/Leviticus.21.8): "and you must treat them as holy, since they offer the food of your God; they shall be holy to you, for I יהוה who sanctify you am holy."
 
 241. **Priests must wear special garments for service**
 
+
     [Exodus 28:2](https://www.sefaria.org/Exodus.28.2): "Make sacral vestments for your brother Aaron, for dignity and adornment."
 
 242. **Carry the Ark on shoulders with poles**
+
 
     [Numbers 7:9](https://www.sefaria.org/Numbers.7.9): "But to the Kohathites he did not give any; since theirs was the service of the [most] sacred objects, their porterage was by shoulder."
 
 243. **Anoint high priests and kings with anointing oil**
 
+
     [Exodus 30:31](https://www.sefaria.org/Exodus.30.31): "And to the Israelite people speak thus: This shall be an oil of sacred anointing unto Me throughout the ages."
 
 244. **Priests must serve in rotational watches**
+
 
     [Deuteronomy 18:6-7](https://www.sefaria.org/Deuteronomy.18.6-7): "If a [family of the] Levite would go, from any of the settlements throughout Israel where they may be residing, to the place that יהוה has chosen, they may do so whenever they so desire. They may serve in the name of their God יהוה like all their fellow Levites who are there in attendance before יהוה."
 
 245. **Defile yourself for deceased relative (priests)**
 
+
     [Leviticus 21:2-3](https://www.sefaria.org/Leviticus.21.2-3): "except for the relatives that are closest: mother, father, son, daughter, and brother; also for a virgin sister, close to him because she has not married, for her he may defile himself."
 
 246. **High priest must marry a virgin**
+
 
     [Leviticus 21:13](https://www.sefaria.org/Leviticus.21.13): "He may marry only a woman who is a virgin."
 
 247. **Offer incense twice daily**
 
+
     [Exodus 30:7-8](https://www.sefaria.org/Exodus.30.7-8): "On it Aaron shall burn aromatic incense: he shall burn it every morning when he tends the lamps, and Aaron shall burn it at twilight when he lights the lamps—regular incense before יהוה throughout the ages."
 
 248. **Maintain continual fire on the altar**
+
 
     [Leviticus 6:6](https://www.sefaria.org/Leviticus.6.6): "A perpetual fire shall be kept burning on the altar, not to go out."
 
@@ -1547,12 +1623,11 @@ _(Traditional count is 248 positive commandments. Variations exist due to differ
 272. **Don't come to festival without offerings**
 273. **Don't break vow**
 274. **Priest doesn't eat first-fruits outside Temple courtyard**
-279. **Don't change order of separating tithes**
-281. **Don't arrive at Temple empty-handed**
-282. **Don't eat produce of fourth year outside Jerusalem**
+275. **Don't change order of separating tithes**
+276. **Don't arrive at Temple empty-handed**
+277. **Don't eat produce of fourth year outside Jerusalem**
 
 ### Prohibited Magic and Divination
-
 
 ### Prohibited Personal Conduct
 
@@ -1578,29 +1653,29 @@ _(Traditional count is 248 positive commandments. Variations exist due to differ
 314. **Don't pervert justice**
 315. **Don't be afraid to judge due to violent person**
 316. **Don't take bribes**
-320. **Judge doesn't execute without proper procedure**
-321. **Judge doesn't execute based on one witness**
-322. **Don't execute without warning and witnesses**
-323. **Judge doesn't kill innocent person**
-324. **Don't punish based on circumstantial evidence**
-325. **Don't pity or spare life of killer**
-326. **Don't spare person who caused injury**
-327. **Judge doesn't have mercy on killer in trial**
-328. **Don't punish under duress**
-330. **Don't accept ransom for accidental killer**
-332. **Don't leave obstacle that could cause harm**
-334. **Don't add to Torah commandments**
-335. **Don't subtract from Torah commandments**
-340. **Don't convict based on less than two witnesses**
-341. **Don't prophesy falsely**
-342. **Don't prophesy in name of idols**
-343. **Don't fear false prophet**
-344. **Don't refrain from killing false prophet**
-345. **Don't swear falsely**
-346. **Don't have false measures**
-347. **Don't commit injustice in judgment**
-348. **Don't commit injustice with measures**
-349. **Don't possess false measures**
+317. **Judge doesn't execute without proper procedure**
+318. **Judge doesn't execute based on one witness**
+319. **Don't execute without warning and witnesses**
+320. **Judge doesn't kill innocent person**
+321. **Don't punish based on circumstantial evidence**
+322. **Don't pity or spare life of killer**
+323. **Don't spare person who caused injury**
+324. **Judge doesn't have mercy on killer in trial**
+325. **Don't punish under duress**
+326. **Don't accept ransom for accidental killer**
+327. **Don't leave obstacle that could cause harm**
+328. **Don't add to Torah commandments**
+329. **Don't subtract from Torah commandments**
+330. **Don't convict based on less than two witnesses**
+331. **Don't prophesy falsely**
+332. **Don't prophesy in name of idols**
+333. **Don't fear false prophet**
+334. **Don't refrain from killing false prophet**
+335. **Don't swear falsely**
+336. **Don't have false measures**
+337. **Don't commit injustice in judgment**
+338. **Don't commit injustice with measures**
+339. **Don't possess false measures**
 
 ### Prohibited Treatment of Animals
 
@@ -1611,9 +1686,9 @@ _(Traditional count is 248 positive commandments. Variations exist due to differ
 359. **Widow doesn't marry non-related brother-in-law**
 360. **Don't divorce wife after falsely accusing her**
 361. **Childless widow doesn't marry outsider before chalitzah**
-363. **Seducer of virgin doesn't divorce if married**
-364. **Captive woman's captor doesn't sell her**
-365. **Captive woman's captor doesn't enslave her**
+362. **Seducer of virgin doesn't divorce if married**
+363. **Captive woman's captor doesn't sell her**
+364. **Captive woman's captor doesn't enslave her**
 
 ---
 
