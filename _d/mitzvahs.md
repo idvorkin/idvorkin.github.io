@@ -101,15 +101,4 @@ Categories include:
 
 The original single page was over 28,000 tokens - too large to load or edit efficiently. By splitting into positive and negative commandments, each page is more manageable and easier to reference.
 
-## Current Status
-
-- ✅ **Positive Commandments: 248/248 Complete** - All have Torah citations
-- ✅ **Negative Commandments: 365/365 Complete** - All have Torah citations
-
-All 613 mitzvahs now include their Torah source with links to [Sefaria](https://www.sefaria.org) for further study.
-
----
-
-**Note**: This list follows Maimonides' enumeration with some modern annotations. Some mitzvahs only apply when the Temple stands, or only to specific groups (priests, men, women, land-owners in Israel, etc.). Traditional sources vary slightly in how they count and categorize the 613.
-
 Now go forth and have a mitzvah! Or 613 of them.
