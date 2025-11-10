@@ -75,8 +75,6 @@ The things you **should NOT** do - from worshiping idols to wearing mixed fabric
 
 {%include summarize-page.html src="/negative-mitzvahs" %}
 
-{% include alert.html content="All 365 negative commandments now have Torah citations with Sefaria links!" style="success" %}
-
 Categories include:
 
 - Idolatry and Blasphemy
