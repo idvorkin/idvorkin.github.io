@@ -44,7 +44,7 @@ AGENT: Here are things we like in these summaries
 -->
 
 {%include amazon.html asin="B0C38FCTJC" %}
-{% include alert.html content="I know currently lots of AI slop - but I'm working on it, also using this post as an experiment in AI augmented book reading/learning!" style="info" %}
+{% include ai-slop.html percent="90" %}
 
 ## The Book
 

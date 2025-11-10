@@ -9,7 +9,7 @@ tags:
 
 Ever felt directionless despite achieving everything you "should" want? Burned out treating every setback like catastrophe? Exhausted trying to control what you can't? These are manifestations of a lack of spiritual health. "Spiritual health" is poorly defined, so I'll define it practically: **spiritual health means having a north star** (purpose/direction), **knowing you're NOT the center of the universe** (transcendence/perspective), and **accepting you have influence, not control** (coherence/acceptance). Miss any one and you'll find yourself spiritually malnourished in problems as old as time.
 
-{% include alert.html content="I know currently lots of AI slop - but I'm working on it, also using this post as an experiment in AI augmented book reading/learning!" style="info" %}
+{% include ai-slop.html percent="85" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
