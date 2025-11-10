@@ -9,7 +9,7 @@ tags:
 
 Health isn't one-dimensional. You can be physically fit but emotionally exhausted. You can be cognitively sharp but spiritually adrift. True well-being requires attending to all four dimensions of health: physical, emotional, spiritual, and cognitive. Each dimension serves a different purpose, requires different practices, and neglecting any one creates vulnerabilities that ripple across your entire life.
 
-{% include alert.html content="I know currently lots of AI slop - but I'm working on it, also using this post as an experiment in AI augmented book reading/learning!" style="info" %}
+{% include ai-slop.html percent="85" %}
 
 This framework draws heavily from two foundational books on energy and happiness:
 
@@ -21,7 +21,7 @@ This framework draws heavily from two foundational books on energy and happiness
 - [The Four Dimensions](#the-four-dimensions)
   - [Physical Health: Your Energy Foundation](#physical-health-your-energy-foundation)
   - [Emotional Health: Your Resilience System](#emotional-health-your-resilience-system)
-  - [Spiritual Health: Your Purpose Anchor](#spiritual-health-your-purpose-anchor)
+  - [Spiritual Health: Your Purpose, Perspective, and Acceptance](#spiritual-health-your-purpose-perspective-and-acceptance)
   - [Cognitive Health: Your Growth Engine](#cognitive-health-your-growth-engine)
 - [Why All Four Matter](#why-all-four-matter)
 - [Rituals for Each Dimension](#rituals-for-each-dimension)
