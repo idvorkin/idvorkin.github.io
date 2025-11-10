@@ -48,6 +48,8 @@ algolia:
     # https://community.algolia.com/jekyll-algolia/options.html#files-to-exclude
   files_to_exclude:
     - "*bak"
+    - "_d/positive-mitzvahs.md"
+    - "_d/negative-mitzvahs.md"
     - "debug.html"
     - "edit.html"
     - "edit"
