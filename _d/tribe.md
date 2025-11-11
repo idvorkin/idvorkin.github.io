@@ -37,6 +37,9 @@ Part of finding your tribe is finding [role models who inspire you](/joy#role-mo
 
 ### People who are sharing lots that they learn publicly.
 
+- [Andy Matuschak](https://notes.andymatuschak.org/Evergreen_notes)
+  - Pioneering work on evergreen notes and building tools for thought
+  - Public working notes that demonstrate learning in public
 - [Simon Willison](https://simonwillison.net/2020/Apr/20/self-rewriting-readme/)
   - Tonnes of semi-random explorations of AI
   - Amazing week notes,
