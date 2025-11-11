@@ -3118,7 +3118,8 @@
                 "/hobby",
                 "/magic",
                 "/mood",
-                "/sublime"
+                "/sublime",
+                "/tribe"
             ],
             "last_modified": "2025-11-11T23:39:44.685892",
             "markdown_path": "_d/joy.md",
@@ -5847,9 +5848,10 @@
                 "/joy",
                 "/walking-with-god"
             ],
-            "last_modified": "2024-11-10T16:13:17-08:00",
+            "last_modified": "2025-11-11T23:41:40.963158",
             "markdown_path": "_d/tribe.md",
             "outgoing_links": [
+                "/joy",
                 "/manager-book"
             ],
             "redirect_url": "",

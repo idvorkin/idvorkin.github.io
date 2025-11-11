@@ -9,6 +9,8 @@ redirect_from:
 
 Finding your tribe is important - calling it a tribe makes it sound like I'm a contributing member of the community, perhaps this is more like things I'm a fanboy of.
 
+Part of finding your tribe is finding [role models who inspire you](/joy#role-models--inspirations) - people who embody values you want to live by.
+
 <!-- prettier-ignore-start -->
 
 <!-- vim-markdown-toc-start -->
