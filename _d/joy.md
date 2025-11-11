@@ -36,7 +36,7 @@ If you could have one superpower, what would it be? At 46, you'd think I'd have 
   - [Build rapport to make people feel safe](#build-rapport-to-make-people-feel-safe)
   - [Why kids are more receptive to Joy](#why-kids-are-more-receptive-to-joy)
   - [Other things to file](#other-things-to-file)
-  - [Novely, Wonder and Surprise - Break the mundane](#novely-wonder-and-surprise---break-the-mundane)
+  - [Novelty, Wonder and Surprise - Break the mundane](#novelty-wonder-and-surprise---break-the-mundane)
   - [Joy and Overwhelming kindness from a stranger](#joy-and-overwhelming-kindness-from-a-stranger)
   - [Joy versus pleasure](#joy-versus-pleasure)
   - [Things that bring most people joy](#things-that-bring-most-people-joy)
@@ -119,7 +119,7 @@ My early [ballooning](/ig66/621) adventures:
 
 - I discovered these you are awesome cards on TEMU (add picture) they are great!
 - I wanted to push pocket them, but I can hand them out upside down and people just take them
-  - Zach observed the way I give them to people is I put it into their hand and say "Here you go", and they are stunned and take it. That didnt' work on a cop, he stepped away.
+  - Zach observed the way I give them to people is I put it into their hand and say "Here you go", and they are stunned and take it. That didn't work on a cop, he stepped away.
 - Usually by the time people read it I'm gone, but sometimes if I give them to someone in a lobby they'll catch me on the way out and be like, hey thank you so much
 
 * Also considering printing on the back of business cards,
@@ -187,13 +187,13 @@ Also look at notes from Avner class - who was all about building rapport with a 
 - Christmas Carols
 - Can't help yourself but to sing along
 
-### Novely, Wonder and Surprise - Break the mundane
+### Novelty, Wonder and Surprise - Break the mundane
 
 - You need this to snap into the present moment
 - Some connection between joy and wonder
 - Some say when you clear your mind you feel joy (or bliss) (See the Joy of Happiness)
 - Wonder/Novelty snaps you out of the mundane and makes you feel important
-- Heaht brothers:
+- Heath brothers:
   - Moments; EPIC; Elevate the script
   - Made to Stick: SUCCESs; Unexpected
 
@@ -251,11 +251,11 @@ I need more thinking here but something like.
 
 Finding role models and inspirations is part of finding [your tribe](/tribe) - the people who inspire you to be better, who share your values, and whose work you admire.
 
-### My Inspiration
+### Some Random Cool Dude
 
 ![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250803_121832.webp)
 
-#### Gayle - The Queen of Aggressive Kindness
+### Gayle - The Queen of Aggressive Kindness
 
 One of my favorite inspirations is Gayle, a 78-year-old retired engineer with over 50 patents to her name, who now dedicates her retirement to "aggressive kindness." Follow her story on Instagram [@gayle.tales](https://www.instagram.com/gayle.tales/).
 
@@ -271,7 +271,7 @@ What's particularly inspiring about Gayle is how she combines whimsy with intent
 
 Her daughter's initial embarrassment turning into deep appreciation also highlights an important lesson: sometimes what makes people remarkable is exactly what makes them seem odd at first glance.
 
-#### Steve Irwin
+### Steve Irwin
 
 Brought joy through infectious enthusiasm and genuine wonder. His "Crikey!" wasn't just a catchphrase - it was an expression of authentic amazement that invited others to share in his joy. His legacy continues through:
 
@@ -279,7 +279,7 @@ Brought joy through infectious enthusiasm and genuine wonder. His "Crikey!" wasn
 - [Robert Irwin](https://www.instagram.com/robertirwinphotography/)
 - [Bindi Irwin](https://www.instagram.com/bindisueirwin/)
 
-#### Mr. Rogers
+### Mr. Rogers
 
 The master of gentle joy-bringing through authenticity. He showed that you don't need grand gestures - sometimes just truly seeing and valuing people is enough to bring joy. His legacy lives on through [@misterrogers_neighborhood](https://www.instagram.com/misterrogers_neighborhood/) and [The Fred Rogers Center](https://www.instagram.com/fredrogerscenter/).
 
