@@ -15,6 +15,7 @@ Finding your tribe is important - calling it a tribe makes it sound like I'm a c
 
 - [Do you know X? I know X, but I'd doubt X knows me.](#do-you-know-x-i-know-x-but-id-doubt-x-knows-me)
 - [My Tribes](#my-tribes)
+  - [My Joy Tribe](#my-joy-tribe)
   - [People who are sharing lots that they learn publicly.](#people-who-are-sharing-lots-that-they-learn-publicly)
   - [Interesting technical/management writing:](#interesting-technicalmanagement-writing)
   - [Misc](#misc)
@@ -30,8 +31,15 @@ These folks have never heard of me, but I really enjoy following them.
 
 ## My Tribes
 
+### My Joy Tribe
+
+Part of finding your tribe is finding [role models who inspire you](/joy#role-models--inspirations) - people who embody values you want to live by and who show you what's possible when you dedicate yourself to bringing joy to others.
+
 ### People who are sharing lots that they learn publicly.
 
+- [Andy Matuschak](https://notes.andymatuschak.org/Evergreen_notes)
+  - Pioneering work on evergreen notes and building tools for thought
+  - Public working notes that demonstrate learning in public
 - [Simon Willison](https://simonwillison.net/2020/Apr/20/self-rewriting-readme/)
   - Tonnes of semi-random explorations of AI
   - Amazing week notes,

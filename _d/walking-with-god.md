@@ -43,6 +43,7 @@ Someone important to me has been reading a daily devotional. Even though I'm not
     - [November 3rd - Just Like Jesus](#november-3rd---just-like-jesus)
     - [November 4th - Authenticity](#november-4th---authenticity)
     - [November 5th - Authentic Worship](#november-5th---authentic-worship)
+    - [November 11th - Brotherly Devotion](#november-11th---brotherly-devotion)
   - [December](#december)
 
 <!-- vim-markdown-toc-end -->
@@ -507,6 +508,26 @@ To me this is really about: **Intention matters more than presentation.**
 The tastiest meal is the one made with love. It's not about how it looks on the plate - it's about whether you put your soul into it.
 
 God detests superficial sacrifice but loves authentic prayer. In secular terms: going through the motions without heart is worse than not doing it at all. Whether it's cooking, parenting, managing, or any craft - the difference between mediocre and meaningful is whether you actually care.
+
+#### November 11th - Brotherly Devotion
+
+To me this is really about: **Building others up instead of seeking your own advancement.**
+
+My favorite line from the passage: **"How devoted are you to the well-being of others? Do you blow wind in the sails of your brothers and sisters ~~in Christ~~?"**
+
+_Here's how I translate this:_
+
+The secular version is straightforward: Are you actively helping others succeed, or are you primarily focused on your own success? Do you celebrate and support others' wins, or only care about your own advancement?
+
+This is [grandmother mind](/grandmother) - being generous with your time, wisdom, and support. Looking for ways to help others without keeping score. "Blowing wind in their sails" means actively looking for opportunities to build them up.
+
+It also connects to my [be a class act affirmation](/affirmations#a-class-act-first-understand-appreciate-isnt-that-curious) - being the kind of person who makes others feel valued, supported, and capable. When you write your [eulogy](/eulogy), are you someone who built others up? That's the kind of person worth being.
+
+**Important distinction:** This isn't about being selfless to the point of self-destruction or ignoring your own needs. It's about shifting from a zero-sum mindset (their success threatens mine) to an abundance mindset (I can succeed AND help others succeed). Building others up doesn't require tearing yourself down.
+
+{%include summarize-page.html src="/grandmother" %}
+{%include summarize-page.html src="/affirmations" %}
+{%include summarize-page.html src="/eulogy" %}
 
 ### December
 

@@ -155,7 +155,6 @@ TODO Use Lens of Self/Other/Process
   - Is this a conn?
   - What's your angle for doing this?
 - You can increase someones comfort by getting validation from others
-
   - Someone else doing it before you
   - Reassure person
   - Smile
@@ -249,6 +248,8 @@ I need more thinking here but something like.
   - Delta Happy = (SP+K) - (SP/2) = SP/2+K (!!!!)
 
 ## Role Models & Inspirations
+
+Finding role models and inspirations is part of finding [your tribe](/tribe) - the people who inspire you to be better, who share your values, and whose work you admire.
 
 ### My Inspiration
 
