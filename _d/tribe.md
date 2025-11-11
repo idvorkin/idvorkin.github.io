@@ -13,9 +13,9 @@ Finding your tribe is important - calling it a tribe makes it sound like I'm a c
 
 <!-- vim-markdown-toc-start -->
 
-- [My Joy Tribe](#my-joy-tribe)
 - [Do you know X? I know X, but I'd doubt X knows me.](#do-you-know-x-i-know-x-but-id-doubt-x-knows-me)
 - [My Tribes](#my-tribes)
+  - [My Joy Tribe](#my-joy-tribe)
   - [People who are sharing lots that they learn publicly.](#people-who-are-sharing-lots-that-they-learn-publicly)
   - [Interesting technical/management writing:](#interesting-technicalmanagement-writing)
   - [Misc](#misc)
@@ -25,15 +25,15 @@ Finding your tribe is important - calling it a tribe makes it sound like I'm a c
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-## My Joy Tribe
-
-Part of finding your tribe is finding [role models who inspire you](/joy#role-models--inspirations) - people who embody values you want to live by and who show you what's possible when you dedicate yourself to bringing joy to others.
-
 ## Do you know X? I know X, but I'd doubt X knows me.
 
 These folks have never heard of me, but I really enjoy following them.
 
 ## My Tribes
+
+### My Joy Tribe
+
+Part of finding your tribe is finding [role models who inspire you](/joy#role-models--inspirations) - people who embody values you want to live by and who show you what's possible when you dedicate yourself to bringing joy to others.
 
 ### People who are sharing lots that they learn publicly.
 
