@@ -1289,7 +1289,7 @@
                 "/happy",
                 "/spiritual-health"
             ],
-            "last_modified": "2025-11-10T03:13:50.219512",
+            "last_modified": "2025-11-10T03:14:45+00:00",
             "markdown_path": "_d/build-the-life-you-want.md",
             "outgoing_links": [
                 "/bucket-list",
@@ -1774,6 +1774,7 @@
                 "/activation",
                 "/d/resistance",
                 "/energy-abundance",
+                "/four-healths",
                 "/hobby",
                 "/idle",
                 "/life-as-business",
@@ -2473,14 +2474,14 @@
                 "/operating-manual",
                 "/spiritual-health"
             ],
-            "last_modified": "2025-11-10T03:13:50.219512",
+            "last_modified": "2025-11-10T03:14:45+00:00",
             "markdown_path": "_d/four-healths.md",
             "outgoing_links": [
                 "/7-habits",
                 "/affirmations",
+                "/d/habits",
                 "/emotional-health",
                 "/eulogy",
-                "/habits",
                 "/last-year",
                 "/new-skills",
                 "/operating-manual",
@@ -3514,13 +3515,13 @@
         },
         "/mitzvahs": {
             "description": "I like saying “I have a mitzvah” - it sounds way more fun than “I have an obligation.” A mitzvah is a commandment, a good deed, a blessing all rolled into one. And lucky for us, Judaism comes with exactly 613 of them.\n\n",
-            "doc_size": 20000,
+            "doc_size": 19000,
             "file_path": "_site/mitzvahs.html",
             "incoming_links": [
                 "/negative-mitzvahs",
                 "/positive-mitzvahs"
             ],
-            "last_modified": "2025-11-10T02:25:57.104031",
+            "last_modified": "2025-11-10T03:10:21+00:00",
             "markdown_path": "_d/mitzvahs.md",
             "outgoing_links": [
                 "/negative-mitzvahs",
@@ -3706,13 +3707,13 @@
         },
         "/negative-mitzvahs": {
             "description": "The 365 negative commandments - things you should NOT do. According to tradition, there’s one for each day of the year.\n\n",
-            "doc_size": 126000,
+            "doc_size": 123000,
             "file_path": "_site/negative-mitzvahs.html",
             "incoming_links": [
                 "/mitzvahs",
                 "/positive-mitzvahs"
             ],
-            "last_modified": "2025-11-10T03:03:19.199307",
+            "last_modified": "2025-11-10T03:06:56+00:00",
             "markdown_path": "_d/negative-mitzvahs.md",
             "outgoing_links": [
                 "/mitzvahs",
@@ -3975,6 +3976,18 @@
             "title": "Double Trouble: From Lust to Love to Lost",
             "url": "/partner-trouble"
         },
+        "/pet-projects": {
+            "description": "As an engineer, I love to build bespoke tools that solve my unique problems exactly the way I want them solved. The bonus? This is lets me learn new technologies (did you know my blog has multiplayer support?). Sometimes I even make a tool so I have something to learn from. And with AI, this list of projects and explorations has exploded! Note to self, when I want to veg out and just feed my social media addiction I should do some vibe coding on all of these.\n\n",
+            "doc_size": 21000,
+            "file_path": "_site/pet-projects.html",
+            "incoming_links": [],
+            "last_modified": "2025-11-11T23:00:53.062656",
+            "markdown_path": "_d/pet-projects.md",
+            "outgoing_links": [],
+            "redirect_url": "",
+            "title": "Pet Projects",
+            "url": "/pet-projects"
+        },
         "/physical-health": {
             "description": "Physical health is not bought, it’s rented and rent is due every day. Physical health is the basis of energy, and thus the source of success, and a key saw to sharpen. Physical health requires weight, fitness, and sleep.\n\n",
             "doc_size": 28000,
@@ -4046,13 +4059,13 @@
         },
         "/positive-mitzvahs": {
             "description": "The 248 positive commandments - things you should do. According to tradition, there’s one for each bone and organ in the body.\n\n",
-            "doc_size": 91000,
+            "doc_size": 89000,
             "file_path": "_site/positive-mitzvahs.html",
             "incoming_links": [
                 "/mitzvahs",
                 "/negative-mitzvahs"
             ],
-            "last_modified": "2025-11-10T03:03:19.199307",
+            "last_modified": "2025-11-10T03:06:56+00:00",
             "markdown_path": "_d/positive-mitzvahs.md",
             "outgoing_links": [
                 "/mitzvahs",
@@ -4773,7 +4786,7 @@
                 "/happy",
                 "/walking-with-god"
             ],
-            "last_modified": "2025-11-10T03:13:50.219512",
+            "last_modified": "2025-11-10T03:14:45+00:00",
             "markdown_path": "_d/spiritual-health.md",
             "outgoing_links": [
                 "/build-life-you-want",
