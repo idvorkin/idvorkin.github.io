@@ -3120,18 +3120,19 @@
                 "/mood",
                 "/sublime"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2025-11-11T23:39:44.685892",
             "markdown_path": "_d/joy.md",
             "outgoing_links": [
                 "/balloon",
-                "/build-bubble-bike",
+                "/bbb",
+                "/cry",
                 "/eulogy",
                 "/happy",
                 "/ig66/621",
                 "/like-switch",
                 "/magic",
                 "/smilebox",
-                "/touching"
+                "/tribe"
             ],
             "redirect_url": "",
             "title": "Smiles, Joy and Wonder",
@@ -5811,7 +5812,6 @@
             "incoming_links": [
                 "/class-act",
                 "/end-in-mind",
-                "/joy",
                 "/sublime"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -5844,6 +5844,7 @@
             "doc_size": 15000,
             "file_path": "_site/tribe.html",
             "incoming_links": [
+                "/joy",
                 "/walking-with-god"
             ],
             "last_modified": "2024-11-10T16:13:17-08:00",
