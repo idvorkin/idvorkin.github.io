@@ -20,7 +20,6 @@
         "/90-days": "/90days",
         "/Business-Model-You": "/bmy",
         "/Coaching-Questions": "/coaching",
-        "/Human-Meetings": "/human-meetings",
         "/aGPT": "/ai-bestie",
         "/activation-energy": "/activation",
         "/addictions": "/addiction",
@@ -61,6 +60,7 @@
         "/coach": "/coaching",
         "/cocaine": "/mania",
         "/cold": "/warm",
+        "/commandments": "/mitzvahs",
         "/compassion": "/curious",
         "/compensation": "/comp",
         "/concentration-risk": "/stock-concentration",
@@ -129,6 +129,7 @@
         "/heavy-club": "/kettlebell",
         "/heavy-clubs": "/kettlebell",
         "/high-energy": "/energy-abundance",
+        "/human-meetings": "/human-meetings",
         "/humanity": "/touching",
         "/hyper-personalization": "/hyper-personal",
         "/idle-loop": "/idle",
@@ -165,9 +166,13 @@
         "/mental-break-down": "/depression",
         "/middleage": "/elder",
         "/midlife": "/elder",
+        "/mitzvot": "/mitzvahs",
+        "/mitzvot-aseh": "/positive-mitzvahs",
+        "/mitzvot-lo-taaseh": "/negative-mitzvahs",
         "/monsters": "/mind-monsters",
         "/mortality": "/death",
         "/mr": "/ar",
+        "/negative-commandments": "/negative-mitzvahs",
         "/negotiation": "/negotiate",
         "/nonjudgment": "/curious",
         "/nvim": "/vim",
@@ -188,6 +193,7 @@
         "/podcasting": "/podcast",
         "/podcasts": "/podcast",
         "/poh": "/happy",
+        "/positive-commandments": "/positive-mitzvahs",
         "/proactive": "/be-proactive",
         "/process": "/upstream",
         "/procrastinate": "/frog",
@@ -249,6 +255,7 @@
         "/time-off-2025-08": "/timeoff-2025-08",
         "/time-off-next": "/timeoff-2024-08",
         "/time-off-now": "/timeoff-2024-08",
+        "/tinkering": "/pet-projects",
         "/todo": "/todo_enjoy",
         "/todo-enjoy": "/todo_enjoy",
         "/tolerance": "/anger",
@@ -286,10 +293,11 @@
     "url_info": {
         "/22": {
             "description": "In 2019 I created a program for 15 fantastic interns! A program highlight was my talk titled “What I wish I knew at 22, and so might you”. The talk received a 94% overall rating from over 15 interns, 10 SDE-IIs, and 1 senior developer. Even though the talk focuses on how to live the good life, a big chunk of life is work, so there’s good coverage on how to optimize your career.\n\n",
-            "doc_size": 16000,
+            "doc_size": 17000,
             "file_path": "_site/22.html",
             "incoming_links": [
-                "/chapters"
+                "/chapters",
+                "/manager-book"
             ],
             "last_modified": "2024-05-05T08:25:00-07:00",
             "markdown_path": "_d/22.md",
@@ -502,7 +510,7 @@
         },
         "/activation": {
             "description": "Doing activities requires will power, addictions and procrastination require negative will power, while positive habits, especially new ones require high will power. Here’s a model for these things.\n\n",
-            "doc_size": 27000,
+            "doc_size": 28000,
             "file_path": "_site/activation.html",
             "incoming_links": [
                 "/addiction",
@@ -747,14 +755,14 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get super lost\n\n",
-            "doc_size": 80000,
+            "doc_size": 82000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai",
                 "/chop",
                 "/walking-with-god"
             ],
-            "last_modified": "2025-10-17T13:09:41-04:00",
+            "last_modified": "2025-10-26T15:45:47-04:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
@@ -1037,7 +1045,7 @@
         },
         "/be-proactive": {
             "description": "I choose ‘.’ I am responsible for my own life ‘.’ My behavior is a function of my decisions, not my conditions ‘.’ I can subordinate feelings to values ‘.’ I have the initiative and the responsibility to make things happen. These are my insights from 7 habits Chapter 1.\n\n",
-            "doc_size": 21000,
+            "doc_size": 22000,
             "file_path": "_site/be-proactive.html",
             "incoming_links": [
                 "/7-habits",
@@ -1176,6 +1184,7 @@
             "file_path": "_site/books-that-defined-me.html",
             "incoming_links": [
                 "/being-a-great-manager",
+                "/manager-book",
                 "/manager-book-appendix"
             ],
             "last_modified": "2025-07-20T19:26:41-07:00",
@@ -1281,7 +1290,7 @@
                 "/happy",
                 "/spiritual-health"
             ],
-            "last_modified": "2025-10-20T10:30:02-04:00",
+            "last_modified": "2025-11-10T03:14:45+00:00",
             "markdown_path": "_d/build-the-life-you-want.md",
             "outgoing_links": [
                 "/bucket-list",
@@ -1583,6 +1592,7 @@
                 "/essentialism",
                 "/first-understand",
                 "/get-to-yes-with-yourself",
+                "/happy",
                 "/negotiate",
                 "/operating-manual",
                 "/psychic-weight",
@@ -1769,6 +1779,7 @@
                 "/hobby",
                 "/idle",
                 "/life-as-business",
+                "/manager-book",
                 "/mind-at-work",
                 "/operating-manual",
                 "/physical-health",
@@ -1862,7 +1873,7 @@
         },
         "/day-in-the-life": {
             "description": "A running journal of days that actually worked - the ones where health habits stuck, family time hit different, or I remembered what it feels like to be fully alive. Not every day needs to be Instagram-worthy, but some days deserve a bookmark. This is that bookmark collection.\n\n",
-            "doc_size": 18000,
+            "doc_size": 19000,
             "file_path": "_site/day-in-the-life.html",
             "incoming_links": [],
             "last_modified": "2025-10-04T18:43:51-07:00",
@@ -1918,6 +1929,7 @@
                 "/coaching",
                 "/gap-year",
                 "/job-hunt-stress",
+                "/manager-book",
                 "/pride",
                 "/random-idea",
                 "/work-satisfaction"
@@ -2188,6 +2200,7 @@
                 "/d/resistance",
                 "/elder",
                 "/gap-year-igor",
+                "/manager-book",
                 "/productive",
                 "/siy"
             ],
@@ -2341,12 +2354,12 @@
             "markdown_path": "_posts/2020-04-01-Igor-Eulogy.md",
             "outgoing_links": [
                 "/7-habits",
+                "/Human-Meetings",
                 "/The-Genesis-Node",
                 "/balloon",
                 "/being-a-great-manager",
                 "/bike",
                 "/cache",
-                "/human-meetings",
                 "/ig66/687",
                 "/ig66/717",
                 "/ig66/732",
@@ -2463,7 +2476,7 @@
                 "/operating-manual",
                 "/spiritual-health"
             ],
-            "last_modified": "2025-10-18T17:37:48-04:00",
+            "last_modified": "2025-11-10T03:14:45+00:00",
             "markdown_path": "_d/four-healths.md",
             "outgoing_links": [
                 "/7-habits",
@@ -2663,7 +2676,7 @@
         },
         "/gpt": {
             "description": "Just like the search bar in google fills in what you’re typing when you say “Where can I ge .. “ GPT3 complete strings as well. Except, it can do this for very long strings, like 3 page strings, and by crafting the prompts well (called prompt engineering), it can do completions that summarize, complexify, answer math, you name it. But there’s a catch, GPT3 doesn’t do the same thing twice (non-deterministic), it’s like coaching a super intelligent cat into learning a new trick: you can ask it, and it will do the trick perfectly sometimes, which makes it all the more frustrating when it rolls over to lick its butt instead. You know the problem is not that it can’t but that it won’t(From Gwern).\n\n",
-            "doc_size": 25000,
+            "doc_size": 26000,
             "file_path": "_site/gpt.html",
             "incoming_links": [
                 "/ai-art",
@@ -2707,7 +2720,7 @@
         },
         "/grammerly": {
             "description": "\n\n",
-            "doc_size": 12000,
+            "doc_size": 13000,
             "file_path": "_site/grammerly.html",
             "incoming_links": [],
             "last_modified": "2025-08-24T09:03:19-07:00",
@@ -2811,21 +2824,21 @@
                 "/timeoff-2025-08",
                 "/walking-with-god"
             ],
-            "last_modified": "2025-10-20T12:57:15.744516",
+            "last_modified": "2025-10-20T12:57:20-04:00",
             "markdown_path": "_posts/2017-04-12-happy.md",
             "outgoing_links": [
                 "/addiction",
                 "/anxiety",
                 "/build-life-you-want",
-                "/compassion",
+                "/curious",
                 "/eulogy",
-                "/gty",
                 "/hobby",
-                "/idle-loop",
+                "/idle",
                 "/joy",
                 "/mental-pain",
                 "/moments",
                 "/mood",
+                "/negotiate",
                 "/new-skills",
                 "/spiritual-health"
             ],
@@ -2918,6 +2931,7 @@
                 "/anxiety",
                 "/depression",
                 "/gtd",
+                "/happy",
                 "/psychic-weight"
             ],
             "last_modified": "2025-09-28T10:02:40-07:00",
@@ -3039,6 +3053,7 @@
             "last_modified": "2025-09-07T05:53:44-07:00",
             "markdown_path": "_posts/2018-06-7-my-perfect-job.md",
             "outgoing_links": [
+                "/Human-Meetings",
                 "/being-a-great-manager",
                 "/cache",
                 "/coaching",
@@ -3090,9 +3105,10 @@
                 "/hobby",
                 "/magic",
                 "/mood",
-                "/sublime"
+                "/sublime",
+                "/tribe"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2025-11-11T23:54:16+00:00",
             "markdown_path": "_d/joy.md",
             "outgoing_links": [
                 "/balloon",
@@ -3103,7 +3119,8 @@
                 "/like-switch",
                 "/magic",
                 "/smilebox",
-                "/touching"
+                "/touching",
+                "/tribe"
             ],
             "redirect_url": "",
             "title": "Smiles, Joy and Wonder",
@@ -3286,25 +3303,24 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-10-31T17:18:15.261362",
+            "last_modified": "2025-10-31T17:18:27-07:00",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
             "outgoing_links": [
-                "/7h-c2",
-                "/90-days",
+                "/22",
                 "/90days",
                 "/being-a-great-manager",
-                "/books",
-                "/coach",
+                "/books-that-defined-me",
                 "/coaching",
                 "/coe",
                 "/comp",
-                "/decide",
+                "/d/habits",
+                "/decisive",
                 "/dip",
-                "/dsat",
-                "/habits",
+                "/end-in-mind",
                 "/job",
                 "/job-hunt-stress",
                 "/manager-book-appendix",
+                "/ml",
                 "/moments-at-work",
                 "/overload",
                 "/pride",
@@ -3315,11 +3331,10 @@
                 "/static/idvorkin-linked-in-feedback-lastest.pdf",
                 "/strategy",
                 "/td/cloud-first-applications",
-                "/td/machine-learning",
                 "/testing",
-                "/twentytwo",
                 "/what-makes-a-leader",
-                "/write"
+                "/work-satisfaction",
+                "/writing"
             ],
             "redirect_url": "",
             "title": "How to EM: Be the manager everyone wants",
@@ -3418,7 +3433,7 @@
         },
         "/mermaid": {
             "description": "Lets try d2\n\n",
-            "doc_size": 14000,
+            "doc_size": 15000,
             "file_path": "_site/mermaid.html",
             "incoming_links": [],
             "last_modified": "2023-12-17T18:49:14+00:00",
@@ -3442,7 +3457,7 @@
         },
         "/mind-at-work": {
             "description": "I have a problem, an addiction, an addiction so detrimental to quality of life, it should be described as a disease. This disease is not being present. There are many symptoms of the disease, but today I’m going to talk about my most frequent symptoms, my body at home, but my mind at work.\n\n",
-            "doc_size": 19000,
+            "doc_size": 20000,
             "file_path": "_site/mind-at-work.html",
             "incoming_links": [
                 "/addiction",
@@ -3487,12 +3502,31 @@
             "title": "Mind monsters",
             "url": "/mind-monsters"
         },
+        "/mitzvahs": {
+            "description": "I like saying “I have a mitzvah” - it sounds way more fun than “I have an obligation.” A mitzvah is a commandment, a good deed, a blessing all rolled into one. And lucky for us, Judaism comes with exactly 613 of them.\n\n",
+            "doc_size": 19000,
+            "file_path": "_site/mitzvahs.html",
+            "incoming_links": [
+                "/negative-mitzvahs",
+                "/positive-mitzvahs"
+            ],
+            "last_modified": "2025-11-10T03:10:21+00:00",
+            "markdown_path": "_d/mitzvahs.md",
+            "outgoing_links": [
+                "/negative-mitzvahs",
+                "/positive-mitzvahs"
+            ],
+            "redirect_url": "",
+            "title": "The 613 Mitzvahs: Your Complete Jewish Commandment Checklist",
+            "url": "/mitzvahs"
+        },
         "/ml": {
             "description": "It used to be that software was eating the world. Now ML is eating software. ML is computers building algorithms by only looking at the data. This is powerful as the computer can find patterns in large data sets that are too complicated for humans to find and express via algorithms. In human terms programming is following a check list which someone else provided (E.g. bake a cake by following the recipe). ML is following your intuition. (E.g making a stir fry from stuff in the fridge). As with ML, you can’t articulate your intuition as it built through countless experiences, but it mostly works (E.g. you never put a banana in your stirfry).\n\n",
             "doc_size": 52000,
             "file_path": "_site/ml.html",
             "incoming_links": [
                 "/ai",
+                "/manager-book",
                 "/td/stats"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -3660,6 +3694,24 @@
             "title": "Time.ltd - Mortality Software",
             "url": "/mortality-software"
         },
+        "/negative-mitzvahs": {
+            "description": "The 365 negative commandments - things you should NOT do. According to tradition, there’s one for each day of the year.\n\n",
+            "doc_size": 123000,
+            "file_path": "_site/negative-mitzvahs.html",
+            "incoming_links": [
+                "/mitzvahs",
+                "/positive-mitzvahs"
+            ],
+            "last_modified": "2025-11-10T03:06:56+00:00",
+            "markdown_path": "_d/negative-mitzvahs.md",
+            "outgoing_links": [
+                "/mitzvahs",
+                "/positive-mitzvahs"
+            ],
+            "redirect_url": "",
+            "title": "Negative Commandments (365): Things NOT To Do",
+            "url": "/negative-mitzvahs"
+        },
         "/negotiate": {
             "description": "Negotiation is the heart of collaboration. It is what makes conflict potentially meaningful and productive for all parties. Getting To Yes is the seminal book on negotiation. It’s the deep dive into win win or no deal and seek first to understand. The formal, be hard on problems and soft on people, then focus on the desired outcomes not the positions, next get more options on the table, and make sure you measure by objective criteria - lastly know your BATNA.Several years later a new book came out by a hostage negotiator. Instead of being analytic focus, it’s all about influencing the elephant.\n\n",
             "doc_size": 22000,
@@ -3667,6 +3719,7 @@
             "incoming_links": [
                 "/curious",
                 "/get-to-yes-with-yourself",
+                "/happy",
                 "/productive",
                 "/sell",
                 "/synergize",
@@ -3912,6 +3965,18 @@
             "title": "Double Trouble: From Lust to Love to Lost",
             "url": "/partner-trouble"
         },
+        "/pet-projects": {
+            "description": "As an engineer, I love to build bespoke tools that solve my unique problems exactly the way I want them solved. The bonus? This is lets me learn new technologies (did you know my blog has multiplayer support?). Sometimes I even make a tool so I have something to learn from. And with AI, this list of projects and explorations has exploded! Note to self, when I want to veg out and just feed my social media addiction I should do some vibe coding on all of these.\n\n",
+            "doc_size": 18000,
+            "file_path": "_site/pet-projects.html",
+            "incoming_links": [],
+            "last_modified": "2025-11-11T23:22:43+00:00",
+            "markdown_path": "_d/pet-projects.md",
+            "outgoing_links": [],
+            "redirect_url": "",
+            "title": "Pet Projects",
+            "url": "/pet-projects"
+        },
         "/physical-health": {
             "description": "Physical health is not bought, it’s rented and rent is due every day. Physical health is the basis of energy, and thus the source of success, and a key saw to sharpen. Physical health requires weight, fitness, and sleep.\n\n",
             "doc_size": 28000,
@@ -3980,6 +4045,24 @@
             "redirect_url": "",
             "title": "Podcasting",
             "url": "/podcast"
+        },
+        "/positive-mitzvahs": {
+            "description": "The 248 positive commandments - things you should do. According to tradition, there’s one for each bone and organ in the body.\n\n",
+            "doc_size": 89000,
+            "file_path": "_site/positive-mitzvahs.html",
+            "incoming_links": [
+                "/mitzvahs",
+                "/negative-mitzvahs"
+            ],
+            "last_modified": "2025-11-10T03:06:56+00:00",
+            "markdown_path": "_d/positive-mitzvahs.md",
+            "outgoing_links": [
+                "/mitzvahs",
+                "/negative-mitzvahs"
+            ],
+            "redirect_url": "",
+            "title": "Positive Commandments (248): Things To Do",
+            "url": "/positive-mitzvahs"
         },
         "/pride": {
             "description": "“That is Pride Fucking With You” is the only scene I can quote from any movie. It’s a powerful scene, and the advice is timeless. Two thousand years ago when a Roman emperor had a victory parade, he was required to have a slave standing behind him holding his helmet high in the air and whispering continuously: “You are mortal. You are mortal”. Pride and ego are serious foes that must be kept in check.\n\n",
@@ -4292,14 +4375,14 @@
         },
         "/religion": {
             "description": "I did my Bar Mitzvah at the Wailing Wall in Israel — the holiest place in Judaism. We flew there as a family, and I still remember stepping off the plane and feeling an intense warmth. I turned to my sister and whispered, “I can feel God.” She rolled her eyes and said, “That’s not God. That’s forty degrees Celsius.”\n\n",
-            "doc_size": 52000,
+            "doc_size": 57000,
             "file_path": "_site/religion.html",
             "incoming_links": [
                 "/four-healths",
                 "/spiritual-health",
                 "/walking-with-god"
             ],
-            "last_modified": "2025-10-20T11:28:49.801219",
+            "last_modified": "2025-11-04T08:34:24-08:00",
             "markdown_path": "_d/religion.md",
             "outgoing_links": [
                 "/affirmations",
@@ -4480,7 +4563,7 @@
         },
         "/sharpen-the-saw": {
             "description": "A young man saw a woodcutter cutting down a tree and asked “What are you doing?” “Are you blind?” the woodcutter replied. “I’m cutting down this tree.” The young man continued. “You look exhausted! Take a break. Sharpen your saw.” The woodcutter explained he’d been sawing for hours and did not have time to take a break. The young man pushed back… “If you sharpen the saw, you would cut down the tree much faster.” The woodcutter said “I don’t have time to sharpen the saw. Don’t you see I’m too busy. These are my insights based on the 7 habits Chapter 7.\n\n",
-            "doc_size": 14000,
+            "doc_size": 15000,
             "file_path": "_site/sharpen-the-saw.html",
             "incoming_links": [
                 "/7-habits",
@@ -4692,7 +4775,7 @@
                 "/happy",
                 "/walking-with-god"
             ],
-            "last_modified": "2025-10-20T11:28:49.801219",
+            "last_modified": "2025-11-10T03:14:45+00:00",
             "markdown_path": "_d/spiritual-health.md",
             "outgoing_links": [
                 "/build-life-you-want",
@@ -4916,7 +4999,7 @@
         },
         "/td/back_ref": {
             "description": "This blog is my collection of evergreen notes, a place to have my thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here’s my strategy to create them.\n\n",
-            "doc_size": 13000,
+            "doc_size": 14000,
             "file_path": "_site/td/back_ref.html",
             "incoming_links": [],
             "last_modified": "2022-04-16T15:22:43-07:00",
@@ -5389,7 +5472,7 @@
         },
         "/timeoff-2020-03": {
             "description": "In March 2020, I took a 2 month sabatical between leaving Amazon and joining Facebook. Given it was a substantial amount of time, I came up with some big plans, and wrote them down. It was a great plan, BUT my time off correlated perfectly to the Corona Virus and as a result I wasted lots of my mental energy thinking about the Corona Virus, and adjusting to being in pseudo-quarantine. Took me a while, but I finally realized I should ignore corona virus, or at least minimize my time thinking about it.\n\n",
-            "doc_size": 30000,
+            "doc_size": 31000,
             "file_path": "_site/timeoff-2020-03.html",
             "incoming_links": [
                 "/timeoff"
@@ -5747,14 +5830,16 @@
         },
         "/tribe": {
             "description": "Finding your tribe is important - calling it a tribe makes it sound like I’m a contributing member of the community, perhaps this is more like things I’m a fanboy of.\n\n",
-            "doc_size": 15000,
+            "doc_size": 16000,
             "file_path": "_site/tribe.html",
             "incoming_links": [
+                "/joy",
                 "/walking-with-god"
             ],
-            "last_modified": "2024-11-10T16:13:17-08:00",
+            "last_modified": "2025-11-11T23:43:26+00:00",
             "markdown_path": "_d/tribe.md",
             "outgoing_links": [
+                "/joy",
                 "/manager-book"
             ],
             "redirect_url": "",
@@ -5893,25 +5978,23 @@
         },
         "/walking-with-god": {
             "description": "Someone important to me has been reading a daily devotional. Even though I’m not religious, I’m studying with them to be able to have conversations about the insights - whether in a secular or religious context. This is my attempt to bridge two worlds: honoring the spiritual wisdom they’re finding while translating it into language that works for my engineer brain.\n\n",
-            "doc_size": 46000,
+            "doc_size": 68000,
             "file_path": "_site/walking-with-god.html",
             "incoming_links": [
                 "/religion",
                 "/spiritual-health"
             ],
-            "last_modified": "2025-11-12T09:52:33.823439",
+            "last_modified": "2025-11-12T09:52:40-08:00",
             "markdown_path": "_d/walking-with-god.md",
             "outgoing_links": [
                 "/affirmations",
                 "/ai-journal",
-                "/compassion",
                 "/curious",
                 "/emotional-health",
                 "/essentialism",
                 "/eulogy",
                 "/first-understand",
                 "/get-to-yes-with-yourself",
-                "/grandmother",
                 "/happy",
                 "/mortality-software",
                 "/religion",
@@ -5994,7 +6077,7 @@
         },
         "/win-win": {
             "description": "Win/Win is a constantly seeking mutual benefit in all interactions. Win/Win means that agreements or solutions are mutually beneficial, mutually satisfying. With a Win/Win solution, all parties feel good about the decision and feel committed to the action plan. Win/Win sees life as a cooperative, not a competitive arena. Most people tend to think in terms of dichotomies: strong or weak, hardball or softball, win or lose. But that kind of thinking is fundamentally flawed. It’s based on power and position rather than on principle. Win/Win is based on the paradigm that there is plenty for everybody, that one person’s success is not achieved at the expense or exclusion of the success of others.\n\n",
-            "doc_size": 20000,
+            "doc_size": 21000,
             "file_path": "_site/win-win.html",
             "incoming_links": [
                 "/7-habits",
@@ -6035,6 +6118,7 @@
             "doc_size": 32000,
             "file_path": "_site/work-satisfaction.html",
             "incoming_links": [
+                "/manager-book",
                 "/mind-at-work",
                 "/retire"
             ],
@@ -6086,6 +6170,7 @@
                 "/chow",
                 "/enable",
                 "/four-healths",
+                "/manager-book",
                 "/manager-book-appendix",
                 "/operating-manual"
             ],
