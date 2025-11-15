@@ -44,6 +44,7 @@ Someone important to me has been reading a daily devotional. Even though I'm not
     - [November 4th - Authenticity](#november-4th---authenticity)
     - [November 5th - Authentic Worship](#november-5th---authentic-worship)
     - [November 11th - Brotherly Devotion](#november-11th---brotherly-devotion)
+    - [November 13th - A Prescription for Pain](#november-13th---a-prescription-for-pain)
   - [December](#december)
 
 <!-- vim-markdown-toc-end -->
@@ -560,6 +561,44 @@ It also connects to my [be a class act affirmation](/affirmations#a-class-act-fi
 {%include summarize-page.html src="/grandmother" %}
 {%include summarize-page.html src="/affirmations" %}
 {%include summarize-page.html src="/eulogy" %}
+
+#### November 13th - A Prescription for Pain
+
+To me this is really about: **The choice to let fear thrive or to starve it - this too shall pass.**
+
+My favorite line from the passage: **"When clouds gather, we get discouraged. It's a natural reaction. Our eyes tell us to run for cover, to hang on for survival, or to prepare to die. And we believe our eyes. We put an awful lot of faith in what they tell us. We let their information sink into our hearts and thrive there—no matter how painful that is."**
+
+_Here's how I translate this:_
+
+The passage says when you face difficulty, you have a choice: let the clouds obscure God, or let God obscure the clouds. In secular terms: **let fear obscure perspective, or let perspective obscure fear.**
+
+When things look bad, your eyes (your immediate circumstances) tell you to panic. And we BELIEVE them. We let that discouragement "sink into our hearts and thrive there." We feed it. We give it power. We choose to let it live in us, even though it's painful.
+
+This passage is my [4th affirmation](/affirmations) - **Calm Like Water: "Be present. This too shall pass. Work the problem."**
+
+- **Be present** - Don't catastrophize about the future
+- **This too shall pass** - The clouds are temporary
+- **Work the problem** - Focus on your circle of influence
+
+**1. Be Present/Work the problem**
+
+Stop wasting energy trying to control the clouds. Focus on your response to the clouds. What can you actually DO?
+
+- Stop catastrophizing - What is the actual problem, not some fictitious future where everything goes wrong
+- Take action - how do you maximize your influence
+- Maintain your practices
+
+**2. If that fails, remember: This too shall pass**
+
+Sometimes you've maximized your influence and the clouds are STILL there. You've done everything you can and the pain persists. That's when you fall back to acceptance and patience: **this too shall pass.**
+
+You can't make the clouds disappear, but you can remember they're temporary. The affliction won't last forever. This is patience - enduring what you can't change while knowing it will eventually change.
+
+This connects to [mental pain](/mental-pain): You can't control pain (it happens TO you), but you can influence suffering (it happens IN you through the meaning you give it). Part 1 is about influencing suffering. Part 2 is about accepting the pain you can't eliminate.
+
+{%include summarize-page.html src="/mental-pain" %}
+
+**Important distinction:** This isn't toxic positivity or denying real hardship. The clouds are REAL. The pain is REAL. But you have agency over whether you let that reality consume your entire perspective. The prescription isn't "pretend clouds don't exist" - it's "don't let clouds become your entire sky." Hope, patience, and faithful practice are how you maintain sight of the bigger picture while the storm passes.
 
 ### December
 
