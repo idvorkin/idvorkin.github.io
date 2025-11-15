@@ -317,6 +317,7 @@ While I struggle with literal belief, I've found certain verses capture truths a
 
 - Matthew 7:1 - "Judge not, that you be not judged. For with the judgment you pronounce you will be judged, and with the measure you use it will be measured to you."
 - Matthew 7:12 - "So in everything, do to others what you would have them do to you, for this sums up the Law and the Prophets."
+- John 21:21-22 - "When Peter saw him, he asked, 'Lord, what about him?' Jesus answered, 'If I want him to remain alive until I return, what is that to you? You must follow me.'"
 - Galatians 3:28 - "There is neither Jew nor Gentile, neither slave nor free, nor is there male and female, for you are all one in Christ Jesus."
 - Romans 14:10 - "You, then, why do you judge your brother or sister? Or why do you treat them with contempt? For we will all stand before God's judgment seat."
 - Romans 14:13 - "Therefore let us stop passing judgment on one another. Instead, make up your mind not to put any stumbling block or obstacle in the way of a brother or sister."
@@ -325,6 +326,7 @@ While I struggle with literal belief, I've found certain verses capture truths a
 
 - Proverbs 25:28 - "A man without self-control is like a city broken into and left without walls."
 - 1 Corinthians 9:27 - "But I discipline my body and keep it under control, lest after preaching to others I myself should be disqualified."
+- Hebrews 12:7 - "Endure hardship as discipline; God is treating you as his children. For what children are not disciplined by their father?"
 - Hebrews 12:11 - "For the moment all discipline seems painful rather than pleasant, but later it yields the peaceful fruit of righteousness to those who have been trained by it."
 
 ### Do the work
