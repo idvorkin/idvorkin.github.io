@@ -40,6 +40,7 @@ This sits next to [the gap year paradox](/gap-year): same terrain, closer camera
 - [The Dragon Keeper's Daily Practice](#the-dragon-keepers-daily-practice)
 - [The Dragon Council: Monthly and Quarterly Reviews](#the-dragon-council-monthly-and-quarterly-reviews)
 - [Pre-Battle Preparation: Knowing Your Dragons](#pre-battle-preparation-knowing-your-dragons)
+- [Can 1 become 2? The Extend-to-Year-2 Test](#can-1-become-2-the-extend-to-year-2-test)
 - [Appendix: How Work Tamed the Dragon Deep Dive.](#appendix-how-work-tamed-the-dragon-deep-dive)
   - [Work Taming Scarcity](#work-taming-scarcity)
   - [Work Taming Squander - The Production and Production Capacity](#work-taming-squander---the-production-and-production-capacity)
@@ -49,7 +50,6 @@ This sits next to [the gap year paradox](/gap-year): same terrain, closer camera
   - [Scarcity's Spawn](#scarcitys-spawn)
   - [Entropy's Spawn](#entropys-spawn)
   - [Squander's Spawn](#squanders-spawn)
-- [Appendix: Can 1 become 2? The Extend-to-Year-2 Test](#appendix-can-1-become-2-the-extend-to-year-2-test)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -701,6 +701,38 @@ _Allies in the fight:_
 - Family members who benefit from your presence
 - AI tools that provide leverage and learning
 
+## Can 1 become 2? The Extend-to-Year-2 Test
+
+At month 10, if you are so inclined, assess whether you've tamed the dragons sufficiently to extend the gap year. This isn't about slaying them - they'll always be there. It's about whether you've built sustainable systems to live with them.
+
+**Extend to Year 2 if ALL are true:**
+
+_Entropy Tamed:_
+
+- Health adherence ≥ 80% (sleep, workouts, nutrition maintained)
+- Energy levels stable or improving
+- Relationships deepened not degraded
+
+_Squander Tamed:_
+
+- 6+ meaningful artifacts shipped
+- Clear progress on health/relationship investments
+- Tangible evidence of growth in chosen domains
+
+_Scarcity Tamed:_
+
+- Still hold ≥ 2× annual expenses in cash-like accounts
+- 5% portfolio return can replenish next year's draw
+- No financial panic despite market volatility
+
+Otherwise, use Year 2 as pre-funded job-search runway: plan in months 10-11, begin search at month 12.
+
+**The Dragons' Final Wisdom:**
+
+The challenge of the gap year isn't about defeating these dragons - they're immortal forces that exist in everyone's life. Work just hides them. The challenge is about learning to live with them consciously, transforming them from hidden fears into acknowledged teachers.
+
+Master this, and you don't just take a successful gap year - you learn to live with the fundamental forces that shape every human life. That's the real treasure the dragons guard.
+
 ## Appendix: How Work Tamed the Dragon Deep Dive.
 
 I think this deserves more thinking, after all the better we can understand this the better.
@@ -804,35 +836,3 @@ Each ancient dragon breeds specific offspring that attack in different ways. Und
 **The Pile of Crap Dragon**: "Is the stuff I built/learned useless crap no one cares about"
 
 **The FOMO Dragon**: "The industry is evolving into an AI world, you need to be there for it"
-
-## Appendix: Can 1 become 2? The Extend-to-Year-2 Test
-
-At month 10, if you are so inclined, assess whether you've tamed the dragons sufficiently to extend the gap year. This isn't about slaying them - they'll always be there. It's about whether you've built sustainable systems to live with them.
-
-**Extend to Year 2 if ALL are true:**
-
-_Entropy Tamed:_
-
-- Health adherence ≥ 80% (sleep, workouts, nutrition maintained)
-- Energy levels stable or improving
-- Relationships deepened not degraded
-
-_Squander Tamed:_
-
-- 6+ meaningful artifacts shipped
-- Clear progress on health/relationship investments
-- Tangible evidence of growth in chosen domains
-
-_Scarcity Tamed:_
-
-- Still hold ≥ 2× annual expenses in cash-like accounts
-- 5% portfolio return can replenish next year's draw
-- No financial panic despite market volatility
-
-Otherwise, use Year 2 as pre-funded job-search runway: plan in months 10-11, begin search at month 12.
-
-**The Dragons' Final Wisdom:**
-
-The challenge of the gap year isn't about defeating these dragons - they're immortal forces that exist in everyone's life. Work just hides them. The challenge is about learning to live with them consciously, transforming them from hidden fears into acknowledged teachers.
-
-Master this, and you don't just take a successful gap year - you learn to live with the fundamental forces that shape every human life. That's the real treasure the dragons guard.
