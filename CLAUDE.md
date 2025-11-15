@@ -487,6 +487,239 @@ YOU MUST follow this debugging framework for ANY technical issue:
 - Track patterns in user feedback to improve collaboration over time
 - When you notice something that should be fixed but is unrelated to your current task, document it in your journal rather than fixing it immediately
 
+## Beads Issue Tracking
+
+Beads (`bd`) is our long-term memory system for tracking work across sessions. It solves the "amnesia problem" when conversations get compacted or reset by maintaining a git-backed database of issues, dependencies, and context.
+
+**Installation:** Beads is installed via Homebrew (`brew install steveyegge/beads/bd`) at version 0.23.1. The Claude Code skill is installed at `~/.claude/skills/bd-issue-tracking`. The `bd` command is on PATH and ready to use.
+
+### When to Use Beads vs TodoWrite
+
+**Golden rule:** "If I needed to resume this work in 2 weeks with zero conversation history, would I struggle? If yes, use Beads."
+
+**Use Beads when:**
+- Work spans multiple sessions or days
+- Tasks have complex dependencies or blockers
+- Strategic context would be lost after conversation compaction
+- Discovering new work during exploration (bugs, improvements, follow-ups)
+- Resuming work after extended breaks would be difficult without persistent context
+
+**Use TodoWrite when:**
+- Work completes within the current session
+- Tasks are simple and linear with no dependencies
+- All context exists in current conversation
+- Providing immediate progress visibility to Igor
+
+**Integration pattern:** Beads tracks strategic planning and long-term context. TodoWrite tracks tactical execution within the current session. Use both together: extract Beads acceptance criteria into TodoWrite checklist for current work, then update Beads with discoveries and progress.
+
+### Session Start Protocol (MANDATORY)
+
+At the beginning of EVERY session, you MUST:
+
+1. Check for ready work: `bd ready --json`
+2. Check in-progress work: `bd list --status in_progress --json`
+3. Read the `notes` field first - it contains session handoff context
+4. Report findings to Igor with summary of available work
+
+### Progress Checkpointing (CRITICAL)
+
+Update Beads notes at these moments - this is how we survive conversation compaction:
+
+- **When approaching 70% token usage** (before compaction risk)
+- After completing major milestones
+- When hitting blockers or awaiting decisions
+- Before asking Igor for decisions
+- When transitioning between issues
+- At end of session before signing off
+
+**Notes quality test:** "Could another Claude instance resume this in 2 weeks with zero conversation history?"
+
+**Required notes format:**
+```
+COMPLETED: [specific accomplishments with details]
+IN PROGRESS: [current work state, what's partially done]
+NEXT: [concrete next step to take]
+BLOCKERS: [what's blocking progress, if any]
+KEY DECISIONS: [important technical/strategic choices made]
+```
+
+### Creating Issues
+
+**Basic creation:**
+```bash
+bd create "Issue title" -d "Description" -p 1 -t feature --json
+```
+
+**With design and acceptance criteria:**
+```bash
+bd create "Add dark mode toggle" \
+  -d "Users need dark mode for night reading" \
+  --design "Use CSS variables for theme switching. Store preference in localStorage. Toggle button in header." \
+  --acceptance-criteria "- [ ] Toggle button visible in header
+- [ ] Dark theme CSS variables defined
+- [ ] Theme persists across page loads
+- [ ] All pages support both themes" \
+  -t feature -p 2 --json
+```
+
+**Discovered work (while working on something else):**
+```bash
+# Create the discovered issue
+new_id=$(bd create "Bug: broken link in religion.md" -t bug -p 0 --json | jq -r '.id')
+
+# Link it back to current work
+bd dep add $new_id <current-issue-id> --type discovered-from
+
+# Update current issue notes
+bd update <current-issue-id> --notes "...DISCOVERED: Broken link filed as $new_id..."
+```
+
+### Field Usage Guide
+
+**Immutable fields** (set once, rarely change):
+- **description**: Problem statement - what needs to be done and why it matters
+
+**Strategic fields** (update only when approach changes):
+- **design**: HOW to build it - implementation approach, architecture decisions, trade-offs considered
+
+**Tactical fields** (update frequently during work):
+- **acceptance-criteria**: WHAT success looks like - outcome-focused, testable statements (checkbox format)
+- **notes**: Session handoff data - COMPLETED/IN PROGRESS/NEXT/BLOCKERS/KEY DECISIONS
+- **status**: Workflow state (open → in_progress → closed)
+
+**Critical distinction - Design vs Acceptance Criteria:**
+- **Design** = "Use two-phase approach: insert text first, then apply formatting" (can change if we find a better way)
+- **Acceptance** = "Formatting applies atomically (all at once or not at all)" (stays true regardless of implementation)
+
+### Dependency Types
+
+Beads supports four dependency types - choose carefully as **only `blocks` affects what shows in `bd ready`**:
+
+- **blocks**: Hard blocker - issue B cannot start until issue A completes (shows in `bd ready`)
+- **parent**: Hierarchical - epic contains child tasks (for organization, not blocking)
+- **related**: Soft connection - issues are related but independent (for context/discoverability)
+- **discovered-from**: Provenance - issue B was discovered while working on issue A (tracks exploration)
+
+**Adding dependencies:**
+```bash
+# task2 blocks task1 (task1 can't proceed without task2)
+bd dep add task2 task1 --type blocks
+
+# Set up epic hierarchy
+bd dep add task1 epic-id --type parent
+bd dep add task2 epic-id --type parent
+
+# View dependency tree
+bd dep tree epic-id
+```
+
+### Common Commands Reference
+
+```bash
+# Find work ready to start (no blockers)
+bd ready --json
+
+# List all issues (or filter by status/priority/type)
+bd list --status in_progress --json
+
+# View issue details
+bd show <issue-id>
+
+# Update issue status
+bd update <issue-id> --status in_progress
+
+# Add to notes (append mode)
+bd update <issue-id> --notes "COMPLETED: Unit tests. IN PROGRESS: E2E tests."
+
+# Close completed work
+bd close <issue-id> --reason "Implementation complete and tested"
+
+# Check for blocked work
+bd list --status blocked --json
+
+# Project statistics
+bd stats
+
+# Health check
+bd doctor
+```
+
+### Integration with Git Workflow
+
+**Protected Branch Model:**
+- Beads uses a separate `beads-metadata` branch for all issue tracking commits
+- `.beads/` directory and JSONL files are committed to `beads-metadata` branch only
+- This keeps PR workflow clean - beads commits don't interfere with feature branches
+- Configuration: `sync.branch=beads-metadata` (already set)
+
+**Workflow:**
+- All beads operations happen on any branch (main, feature branches, etc.)
+- Beads automatically commits changes to `beads-metadata` branch
+- Issues persist across all branches via the shared `beads-metadata` branch
+- Auto-syncs to `.beads/issues.jsonl` after 5 seconds
+- Pull updates from beads-metadata: `git fetch origin beads-metadata:beads-metadata`
+
+**Never manually commit .beads/ files on main or feature branches** - they only belong on `beads-metadata`
+
+### Workflow Examples
+
+**Multi-session blog post:**
+```bash
+# Session 1: Create and start
+id=$(bd create "Write walking-with-god post" \
+  -d "Comprehensive post about spiritual practice and daily devotions" \
+  --design "Multi-day research and drafting. Break into sections: intro, 5 practices, conclusion." \
+  --acceptance-criteria "- [ ] Post published at /walking-with-god
+- [ ] All 5 spiritual practices explained
+- [ ] Personal examples included
+- [ ] Links to related posts" \
+  -p 2 -t feature --json | jq -r '.id')
+
+bd update $id --status in_progress
+
+# Work on it... then before ending session:
+bd update $id --notes "COMPLETED: Research phase, outlined 5 practices. IN PROGRESS: Drafted intro and practice 1. NEXT: Write practices 2-3. KEY DECISION: Focus on daily habits, not theology."
+
+# Session 2: Resume (days later)
+bd show $id  # Read notes to understand context
+# Continue work... update notes again at checkpoints
+```
+
+**Complex feature with dependencies:**
+```bash
+# Create epic
+epic=$(bd create "YouTube content integration" -t epic -p 2 --json | jq -r '.id')
+
+# Create subtasks
+task1=$(bd create "Setup yt-dlp integration" -t task -p 2 --json | jq -r '.id')
+task2=$(bd create "Add transcript processing" -t task -p 2 --json | jq -r '.id')
+task3=$(bd create "Integrate into blog workflow" -t task -p 2 --json | jq -r '.id')
+
+# Set up dependencies
+bd dep add $task1 $epic --type parent
+bd dep add $task2 $epic --type parent
+bd dep add $task3 $epic --type parent
+bd dep add $task1 $task2 --type blocks  # task2 needs task1
+bd dep add $task2 $task3 --type blocks  # task3 needs task2
+
+# Check what's ready (only task1 will show, others are blocked)
+bd ready --json
+```
+
+**Bug discovered during feature work:**
+```bash
+# Currently working on feature bd-abc, discover a bug
+bug_id=$(bd create "Fix broken link in religion.md line 245" \
+  -d "While working on walking-with-god post, found broken link to external resource" \
+  -t bug -p 0 --json | jq -r '.id')
+
+# Link it back
+bd dep add $bug_id bd-abc --type discovered-from
+
+# Update feature notes
+bd update bd-abc --notes "...IN PROGRESS: Writing section 3. DISCOVERED: Broken link at religion.md:245 filed as $bug_id. Will fix after current section..."
+```
+
 ## Git & PR Workflow
 
 ### Basic Workflow Rules
