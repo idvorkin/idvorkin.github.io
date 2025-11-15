@@ -28,10 +28,6 @@ This sits next to [the gap year paradox](/gap-year): same terrain, closer camera
   - [The Entropy Dragon](#the-entropy-dragon)
   - [The Squander Dragon](#the-squander-dragon)
 - [How Work Kept the Dragons Boxed](#how-work-kept-the-dragons-boxed)
-- [The Dragon Spawn: How Each Ancient Manifests](#the-dragon-spawn-how-each-ancient-manifests)
-  - [Scarcity's Spawn](#scarcitys-spawn)
-  - [Entropy's Spawn](#entropys-spawn)
-  - [Squander's Spawn](#squanders-spawn)
 - [Taming the Dragons: From Fear to Power](#taming-the-dragons-from-fear-to-power)
   - [The Scarcity Dragon Dialogs](#the-scarcity-dragon-dialogs)
   - [Taming Scarcity: Building True Security](#taming-scarcity-building-true-security)
@@ -44,12 +40,16 @@ This sits next to [the gap year paradox](/gap-year): same terrain, closer camera
 - [The Dragon Keeper's Daily Practice](#the-dragon-keepers-daily-practice)
 - [The Dragon Council: Monthly and Quarterly Reviews](#the-dragon-council-monthly-and-quarterly-reviews)
 - [Pre-Battle Preparation: Knowing Your Dragons](#pre-battle-preparation-knowing-your-dragons)
-- [Can 1 become 2? The Extend-to-Year-2 Test](#can-1-become-2-the-extend-to-year-2-test)
 - [Appendix: How Work Tamed the Dragon Deep Dive.](#appendix-how-work-tamed-the-dragon-deep-dive)
   - [Work Taming Scarcity](#work-taming-scarcity)
   - [Work Taming Squander - The Production and Production Capacity](#work-taming-squander---the-production-and-production-capacity)
   - [Work Taming Squander - The Gap Year Terror](#work-taming-squander---the-gap-year-terror)
   - [Work Taming Entropy](#work-taming-entropy)
+- [Appendix: The Dragon Spawn - How Each Ancient Manifests](#appendix-the-dragon-spawn---how-each-ancient-manifests)
+  - [Scarcity's Spawn](#scarcitys-spawn)
+  - [Entropy's Spawn](#entropys-spawn)
+  - [Squander's Spawn](#squanders-spawn)
+- [Appendix: Can 1 become 2? The Extend-to-Year-2 Test](#appendix-can-1-become-2-the-extend-to-year-2-test)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -180,40 +180,6 @@ Work provided three critical pieces of dragon-management infrastructure that you
 The gap year opens the box. Suddenly there's no meeting schedule to explain away poor health habits, no work exhaustion to buffer loneliness, no legitimate crisis to postpone difficult conversations with family. You need to create your own social connections, generate your own sense of urgency and purpose, and face your habits without the comfortable excuse of being legitimately exhausted.
 
 The dragons are the same size they've always been. The difference is now you're face-to-face with them in an empty room, and the uncomfortable truth emerges: some of your struggles weren't actually about time or energy - they were about something deeper that work was helping you avoid.
-
-## The Dragon Spawn: How Each Ancient Manifests
-
-Each ancient dragon breeds specific offspring that attack in different ways. Understanding these manifestations helps you recognize which dragon is currently testing you.
-
-### Scarcity's Spawn
-
-**The Market Volatility Dragon**: Every red day feels personal when you're drawing down. This spawn makes you check your portfolio obsessively, turning market noise into existential threat.
-
-**The Employability Dragon**: "You'll never get hired again at this level." Whispers that the job market has moved on, that your skills are stale, that younger people will work for less.
-
-**The Expense Surprise Dragon**: "What if the roof needs $50K in repairs?" Manufactures anxiety about every possible financial catastrophe that could derail your plan.
-
-**The Lifestyle Creep Dragon**: "Can you really live on 60% of what you used to?" Questions every purchase, makes you second-guess if you can truly adjust to a different financial reality.
-
-### Entropy's Spawn
-
-**Parkinson's Dragon**: Named for [Parkinson's Law](/parkinson). Tasks expand to fill infinite time. This spawn is vicious because it makes you complicit in your own time theft - you become the thief stealing from yourself. What should be a productive day becomes a haze of half-completed tasks.
-
-**The Addiction Dragon**: For me, this isn't about alcohol (I gave that up for better [sleep](/sleep)) - it's social media. The endless scroll, the dopamine hits from notifications, the fear of missing out. During a gap year, without the structure of work, these digital sirens could easily consume entire days.
-
-**The Decay Dragon**: A day missed at the gym turns into a week, turns into a month. Physical decline accelerates mental decline. At 50, you still have peak physical capability, but this window closes fast - and this dragon knows it.
-
-**The Drift Dragon**: Boredom → Vegetating → Messing up sleep schedule → General lack of purpose. This spawn creates aimless days that become aimless weeks, leaving you wondering where the time went.
-
-### Squander's Spawn
-
-**The Judgment Dragon**: "Did I really set a good example for my kids?"
-
-**The Low Efficiency Dragon**: "Could I have done all of this by having been more efficient while working"
-
-**The Pile of Crap Dragon**: "Is the stuff I built/learned useless crap no one cares about"
-
-**The FOMO Dragon**: "The industry is evolving into an AI world, you need to be there for it"
 
 ## Taming the Dragons: From Fear to Power
 
@@ -735,38 +701,6 @@ _Allies in the fight:_
 - Family members who benefit from your presence
 - AI tools that provide leverage and learning
 
-## Can 1 become 2? The Extend-to-Year-2 Test
-
-At month 10, if you are so inclined, assess whether you've tamed the dragons sufficiently to extend the gap year. This isn't about slaying them - they'll always be there. It's about whether you've built sustainable systems to live with them.
-
-**Extend to Year 2 if ALL are true:**
-
-_Entropy Tamed:_
-
-- Health adherence ≥ 80% (sleep, workouts, nutrition maintained)
-- Energy levels stable or improving
-- Relationships deepened not degraded
-
-_Squander Tamed:_
-
-- 6+ meaningful artifacts shipped
-- Clear progress on health/relationship investments
-- Tangible evidence of growth in chosen domains
-
-_Scarcity Tamed:_
-
-- Still hold ≥ 2× annual expenses in cash-like accounts
-- 5% portfolio return can replenish next year's draw
-- No financial panic despite market volatility
-
-Otherwise, use Year 2 as pre-funded job-search runway: plan in months 10-11, begin search at month 12.
-
-**The Dragons' Final Wisdom:**
-
-The challenge of the gap year isn't about defeating these dragons - they're immortal forces that exist in everyone's life. Work just hides them. The challenge is about learning to live with them consciously, transforming them from hidden fears into acknowledged teachers.
-
-Master this, and you don't just take a successful gap year - you learn to live with the fundamental forces that shape every human life. That's the real treasure the dragons guard.
-
 ## Appendix: How Work Tamed the Dragon Deep Dive.
 
 I think this deserves more thinking, after all the better we can understand this the better.
@@ -836,3 +770,69 @@ And there's another layer: Work provides tonnes of support for that "Professiona
 By virtue of accomplishing things, having impact, providing value, you actively fight entropy.
 
 You are the average of your peers (Or Proverbs 27:17 - Iron sharpens iron for our biblical friends)- One day I was at the coffee shop in the middle of the day and I looked around and the only people there were these 3 old men just stairing off into space. We become the average of our peers, and if our peers are all just sitting there stairing off into space, we'll likely soon follow.
+
+## Appendix: The Dragon Spawn - How Each Ancient Manifests
+
+Each ancient dragon breeds specific offspring that attack in different ways. Understanding these manifestations helps you recognize which dragon is currently testing you.
+
+### Scarcity's Spawn
+
+**The Market Volatility Dragon**: Every red day feels personal when you're drawing down. This spawn makes you check your portfolio obsessively, turning market noise into existential threat.
+
+**The Employability Dragon**: "You'll never get hired again at this level." Whispers that the job market has moved on, that your skills are stale, that younger people will work for less.
+
+**The Expense Surprise Dragon**: "What if the roof needs $50K in repairs?" Manufactures anxiety about every possible financial catastrophe that could derail your plan.
+
+**The Lifestyle Creep Dragon**: "Can you really live on 60% of what you used to?" Questions every purchase, makes you second-guess if you can truly adjust to a different financial reality.
+
+### Entropy's Spawn
+
+**Parkinson's Dragon**: Named for [Parkinson's Law](/parkinson). Tasks expand to fill infinite time. This spawn is vicious because it makes you complicit in your own time theft - you become the thief stealing from yourself. What should be a productive day becomes a haze of half-completed tasks.
+
+**The Addiction Dragon**: For me, this isn't about alcohol (I gave that up for better [sleep](/sleep)) - it's social media. The endless scroll, the dopamine hits from notifications, the fear of missing out. During a gap year, without the structure of work, these digital sirens could easily consume entire days.
+
+**The Decay Dragon**: A day missed at the gym turns into a week, turns into a month. Physical decline accelerates mental decline. At 50, you still have peak physical capability, but this window closes fast - and this dragon knows it.
+
+**The Drift Dragon**: Boredom → Vegetating → Messing up sleep schedule → General lack of purpose. This spawn creates aimless days that become aimless weeks, leaving you wondering where the time went.
+
+### Squander's Spawn
+
+**The Judgment Dragon**: "Did I really set a good example for my kids?"
+
+**The Low Efficiency Dragon**: "Could I have done all of this by having been more efficient while working"
+
+**The Pile of Crap Dragon**: "Is the stuff I built/learned useless crap no one cares about"
+
+**The FOMO Dragon**: "The industry is evolving into an AI world, you need to be there for it"
+
+## Appendix: Can 1 become 2? The Extend-to-Year-2 Test
+
+At month 10, if you are so inclined, assess whether you've tamed the dragons sufficiently to extend the gap year. This isn't about slaying them - they'll always be there. It's about whether you've built sustainable systems to live with them.
+
+**Extend to Year 2 if ALL are true:**
+
+_Entropy Tamed:_
+
+- Health adherence ≥ 80% (sleep, workouts, nutrition maintained)
+- Energy levels stable or improving
+- Relationships deepened not degraded
+
+_Squander Tamed:_
+
+- 6+ meaningful artifacts shipped
+- Clear progress on health/relationship investments
+- Tangible evidence of growth in chosen domains
+
+_Scarcity Tamed:_
+
+- Still hold ≥ 2× annual expenses in cash-like accounts
+- 5% portfolio return can replenish next year's draw
+- No financial panic despite market volatility
+
+Otherwise, use Year 2 as pre-funded job-search runway: plan in months 10-11, begin search at month 12.
+
+**The Dragons' Final Wisdom:**
+
+The challenge of the gap year isn't about defeating these dragons - they're immortal forces that exist in everyone's life. Work just hides them. The challenge is about learning to live with them consciously, transforming them from hidden fears into acknowledged teachers.
+
+Master this, and you don't just take a successful gap year - you learn to live with the fundamental forces that shape every human life. That's the real treasure the dragons guard.
