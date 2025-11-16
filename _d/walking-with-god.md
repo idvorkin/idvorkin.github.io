@@ -45,6 +45,7 @@ Someone important to me has been reading a daily devotional. Even though I'm not
     - [November 5th - Authentic Worship](#november-5th---authentic-worship)
     - [November 11th - Brotherly Devotion](#november-11th---brotherly-devotion)
     - [November 13th - A Prescription for Pain](#november-13th---a-prescription-for-pain)
+    - [November 16th - Asa's Folly](#november-16th---asas-folly)
   - [December](#december)
 
 <!-- vim-markdown-toc-end -->
@@ -599,6 +600,42 @@ This connects to [mental pain](/mental-pain): You can't control pain (it happens
 {%include summarize-page.html src="/mental-pain" %}
 
 **Important distinction:** This isn't toxic positivity or denying real hardship. The clouds are REAL. The pain is REAL. But you have agency over whether you let that reality consume your entire perspective. The prescription isn't "pretend clouds don't exist" - it's "don't let clouds become your entire sky." Hope, patience, and faithful practice are how you maintain sight of the bigger picture while the storm passes.
+
+#### November 16th - Asa's Folly
+
+To me this is really about: **Where you turn first when you're in trouble - your default resource.**
+
+My favorite line from the passage: **"~~God~~ Your core values and principles are always our first resort."**
+
+_Here's how I translate this:_
+
+King Asa had proven track record with God - he'd seen it work. But when trouble came, he defaulted to what felt more tangible: military alliances and doctors. He treated his values as a backup plan, not his foundation.
+
+In secular terms: **What do you actually turn to first when things get hard?**
+
+It's easy to say you value certain principles - family, health, integrity, long-term thinking. But when pressure hits, what's your _actual_ first move?
+
+- Do you claim to value family first but when work gets intense, you sacrifice family time before you sacrifice anything else?
+- Do you say you value thoughtful decision-making but immediately jump to the quickest tactical fix when problems arise?
+- Do you believe in [seeking first to understand](/first-understand) but default to defending your position when challenged?
+
+The devotional warns against making God your "last resort" - only turning to prayer when medicine fails, only trusting divine protection when political alliances collapse. The secular version: **Don't treat your deepest values as gap-fillers around your real strategy.**
+
+This connects to [first things first](/first-things-first) - the discipline of putting what matters most ahead of what feels most urgent. Asa's folly wasn't that he used doctors or made alliances - those aren't inherently wrong. His folly was that he went there _first_, relegating his core principles to backup status.
+
+**The diagnostic question:** When you're in trouble, what's your gut reaction? That reveals what you actually trust, regardless of what you claim to value.
+
+The passage says "God is actually searching for hearts devoted to Him in order to bless them. He wants to protect, to guide, and to provide." Secularly: **Living aligned with your deepest values creates its own rewards.** Not because the universe magically helps those who are principled, but because a life built on your actual priorities tends to work better than a life built on expedient compromises.
+
+**Important distinction:** This isn't about rejecting modern solutions or expertise. See doctors. Make strategic alliances. Use the tools available. But don't let those tools become your foundation while your values become your afterthought.
+
+King Asa started strong - he was a spiritual reformer who removed idols from the land. But "he had not replaced the idols in his own heart." You can remove the obvious failures from your life while still worshiping at the altar of expedience, comfort, or control.
+
+The question isn't whether you use secular solutions. It's whether your values or your tactics are driving the bus.
+
+{%include summarize-page.html src="/first-things-first" %}
+{%include summarize-page.html src="/first-understand" %}
+{%include summarize-page.html src="/eulogy" %}
 
 ### December
 
