@@ -5,9 +5,6 @@ npx vitest run --reporter=verbose
 [90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mCopy Functionality[2m > [22m[2mshould copy correct URL format
 [22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=manager-book%23test-section...
 
-[90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
-[22m[39mToggle element with ID missing-toggle not found
-
 [90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mCopy Functionality[2m > [22m[2mshould handle clipboard API failure gracefully
 [22m[39m📋 Copied with preview (fallback): https://tinyurl.com/igor-blog/?path=manager-book%23test-section...
 
@@ -24,6 +21,9 @@ npx vitest run --reporter=verbose
     at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
     at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
 
+[90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
+[22m[39mToggle element with ID missing-toggle not found
+
 [90mstderr[2m | src/__tests__/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould show error message when getProcessedPages fails
 [22m[39m❌ Error loading recent posts: Error: Test error
     at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39msrc/__tests__/recent-posts.test.ts:503:69
@@ -39,6 +39,9 @@ npx vitest run --reporter=verbose
 
 [90mstderr[2m | src/__tests__/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould do nothing if container is not found
 [22m[39m❌ non-existent-container container not found in DOM
+
+[90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould handle empty results
+[22m[39mToggle element with ID remaining-posts-toggle not found
 
  [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould fetch and return URL info map
  [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould throw error if url_info is missing
@@ -58,9 +61,6 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found
  [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould call updateRecentPosts immediately if document is loaded
  [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould add event listener if document is still loading
-[90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould handle empty results
-[22m[39mToggle element with ID remaining-posts-toggle not found
-
 [90mstderr[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould handle errors
 [22m[39m❌ Error loading recent posts: Error: Test error
     at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39msrc/__tests__/recent.test.ts:392:69
@@ -74,17 +74,20 @@ npx vitest run --reporter=verbose
     at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
     at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
 
+[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: localhost to production with long anchor
+[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=manager-book%23how-do-you-identify-and-help-eng-decide-if-manage...
+
 [90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould do nothing if container is not found
 [22m[39m❌ non-existent-container container not found in DOM
+
+[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: production domain mapping
+[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=manager-book%23test-section...
 
 [90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2minitRecentAllPosts[2m > [22m[2mshould call updateRecentPosts immediately if document is already loaded
 [22m[39mToggle element with ID remaining-posts-toggle not found
 
-[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: localhost to production with long anchor
-[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=manager-book%23how-do-you-identify-and-help-eng-decide-if-manage...
-
-[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: production domain mapping
-[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=manager-book%23test-section...
+[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: simple case
+[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=simple-page%23anchor...
 
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould group pages by month and year
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould handle empty arrays
@@ -106,9 +109,6 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould call updateRecentPosts immediately if document is already loaded
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould add event listener if document is still loading
-[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: simple case
-[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=simple-page%23anchor...
-
  [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mURL Transformation[2m > [22mshould transform localhost URL to production domain
  [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mURL Transformation[2m > [22mshould handle production domain mapping correctly
  [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mHeader ID Generation[2m > [22mshould use existing header ID if present
@@ -243,13 +243,18 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mlocalStorage persistence[2m > [22mshould handle localStorage errors gracefully
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mlocalStorage persistence[2m > [22mshould clear saved state
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mlocalStorage persistence[2m > [22mshould use custom storage key when provided
- [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould exclude header icon elements when generating TOC text
- [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle headers with nested non-icon elements correctly
- [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle headers with only text content
- [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould properly escape quotes in TOC text
- [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle empty headers gracefully
 [90mstdout[2m | src/__tests__/shared.test.ts[2m > [22m[2mShared Utility Functions[2m > [22m[2mappend_randomizer_div[2m > [22m[2mshould not append anything if parent is not found
 [22m[39mappend_randomizer_div #non-existent not present
+
+[90mstdout[2m | src/__tests__/main.test.ts
+[22m[39m🖼️ Enabling image zoom functionality
+Initializing dev info...
+Branch info not found
+PR info not found
+Dev info - Branch: [1mnull[22m PR: [1mnull[22m Port: 4000
+
+[90mstderr[2m | src/__tests__/main.test.ts
+[22m[39m⚠️ GLightbox not found, retrying in 100ms (attempt 1/50)
 
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mMakeBackLinkHTML[2m > [22mshould generate correct HTML for a backlink
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mrandom_from_list[2m > [22mshould return an element from the list
@@ -267,16 +272,11 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould handle special characters in path
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould handle empty anchor gracefully
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould handle undefined anchor
-[90mstdout[2m | src/__tests__/main.test.ts
-[22m[39m🖼️ Enabling image zoom functionality
-Initializing dev info...
-Branch info not found
-PR info not found
-Dev info - Branch: [1mnull[22m PR: [1mnull[22m Port: 4000
-
-[90mstderr[2m | src/__tests__/main.test.ts
-[22m[39m⚠️ GLightbox not found, retrying in 100ms (attempt 1/50)
-
+ [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould exclude header icon elements when generating TOC text
+ [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle headers with nested non-icon elements correctly
+ [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle headers with only text content
+ [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould properly escape quotes in TOC text
+ [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle empty headers gracefully
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould return an array of the same length
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould contain all the same elements
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mrandom_from_list[2m > [22mshould return an element from the list
@@ -338,6 +338,6 @@ Dev info - Branch: [1mnull[22m PR: [1mnull[22m Port: 4000
 
 [2m Test Files [22m [1m[32m19 passed[39m[22m[90m (19)[39m
 [2m      Tests [22m [1m[32m233 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (238)[39m
-[2m   Start at [22m 15:31:23
-[2m   Duration [22m 4.73s[2m (transform 629ms, setup 212ms, collect 946ms, tests 542ms, environment 7.35s, prepare 1.64s)[22m
+[2m   Start at [22m 15:56:30
+[2m   Duration [22m 4.81s[2m (transform 677ms, setup 221ms, collect 948ms, tests 558ms, environment 7.23s, prepare 1.65s)[22m
 
