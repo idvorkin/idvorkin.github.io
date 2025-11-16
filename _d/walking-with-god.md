@@ -605,7 +605,7 @@ This connects to [mental pain](/mental-pain): You can't control pain (it happens
 
 To me this is really about: **Where you turn first when you're in trouble - your default resource.**
 
-My favorite line from the passage: **"~~God~~ Your core values and principles are always our first resort."**
+My favorite line from the passage: **"~~Asa~~ You twice made a foolish mistake. ~~He~~ You trusted something other than ~~God~~ your core values and principles."**
 
 _Here's how I translate this:_
 
@@ -621,11 +621,9 @@ It's easy to say you value certain principles - family, health, integrity, long-
 
 The devotional warns against making God your "last resort" - only turning to prayer when medicine fails, only trusting divine protection when political alliances collapse. The secular version: **Don't treat your deepest values as gap-fillers around your real strategy.**
 
-This connects to [first things first](/first-things-first) - the discipline of putting what matters most ahead of what feels most urgent. Asa's folly wasn't that he used doctors or made alliances - those aren't inherently wrong. His folly was that he went there _first_, relegating his core principles to backup status.
+This connects to [begin with the end in mind](/end-in-mind) - defining who you want to be through your [eulogy](/eulogy), then actually living that way when it counts. It also connects to the essentialist position from [October 22nd](#october-22nd---praying-in-gods-mind) - regularly doing the soul-searching to figure out what actually matters, what's your one thing that makes everything else easier or unnecessary.
 
-**The diagnostic question:** When you're in trouble, what's your gut reaction? That reveals what you actually trust, regardless of what you claim to value.
-
-The passage says "God is actually searching for hearts devoted to Him in order to bless them. He wants to protect, to guide, and to provide." Secularly: **Living aligned with your deepest values creates its own rewards.** Not because the universe magically helps those who are principled, but because a life built on your actual priorities tends to work better than a life built on expedient compromises.
+Asa's folly wasn't that he used doctors or made alliances - those aren't inherently wrong. His folly was that he went there _first_, relegating his core principles to backup status. He hadn't done the essentialist work to clarify what truly mattered to him, or if he had, he abandoned it under pressure.
 
 **Important distinction:** This isn't about rejecting modern solutions or expertise. See doctors. Make strategic alliances. Use the tools available. But don't let those tools become your foundation while your values become your afterthought.
 
@@ -633,9 +631,10 @@ King Asa started strong - he was a spiritual reformer who removed idols from the
 
 The question isn't whether you use secular solutions. It's whether your values or your tactics are driving the bus.
 
-{%include summarize-page.html src="/first-things-first" %}
+{%include summarize-page.html src="/end-in-mind" %}
 {%include summarize-page.html src="/first-understand" %}
 {%include summarize-page.html src="/eulogy" %}
+{%include summarize-page.html src="/essentialism" %}
 
 ### December
 
