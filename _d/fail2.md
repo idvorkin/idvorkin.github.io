@@ -41,9 +41,29 @@ Failures are a great opportunity to learn. Use [COEs](/coe)
 - Success is falling down 7 times and getting up 8
 - Failure isn't an option; it's a requirement
 - The default, doing nothing, is usually a failure
+- [Failure is Data not Disaster](#failure-is-data-not-disaster)
 - Fear is the mind killer
 - Fear of failure is brought to you by the [resistance](/resistance)
 - Fear is not the enemy. Paralysis is the enemy.
+
+### Failure is Data not Disaster
+
+When something doesn't work out, it's easy to catastrophize - to see it as proof of incompetence or a sign of impending doom. But failure is actually feedback. It's information about what works and what doesn't.
+
+Treating failure as data means:
+
+- Analyzing what happened without self-judgment
+- Extracting lessons and insights
+- Using those lessons to improve your next attempt
+- Moving forward rather than getting stuck in shame
+
+Treating failure as disaster means:
+
+- Taking it personally and catastrophizing
+- Letting fear paralyze future action
+- Missing the opportunity to learn
+
+The difference isn't just semantic - it's about whether failure stops you or helps you grow. Data can be analyzed, understood, and used. Disasters just hurt.
 
 ## Smart people talking about fear of failure
 

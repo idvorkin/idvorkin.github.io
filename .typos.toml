@@ -88,6 +88,9 @@ emacs = "emacs"
 # Greek words for love (linguistic relativity post)
 Storge = "Storge"  # Greek word for familial love
 storge = "storge"  # Greek word for familial love
+# Psychology/mental health terms
+catastrophize = "catastrophize"  # To view or present a situation as catastrophic
+catastrophizing = "catastrophizing"  # Present participle of catastrophize
 
 [files]
 # Files to ignore
