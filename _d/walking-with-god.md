@@ -627,8 +627,6 @@ Asa's folly wasn't that he used doctors or made alliances - those aren't inheren
 
 **Important distinction:** This isn't about rejecting modern solutions or expertise. See doctors. Make strategic alliances. Use the tools available. But don't let those tools become your foundation while your values become your afterthought.
 
-King Asa started strong - he was a spiritual reformer who removed idols from the land. But "he had not replaced the idols in his own heart." You can remove the obvious failures from your life while still worshiping at the altar of expedience, comfort, or control.
-
 The question isn't whether you use secular solutions. It's whether your values or your tactics are driving the bus.
 
 {%include summarize-page.html src="/end-in-mind" %}
