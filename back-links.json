@@ -1820,7 +1820,6 @@
                 "/enemy",
                 "/energy",
                 "/energy-abundance",
-                "/fail",
                 "/frog",
                 "/gap-year",
                 "/gap-year-igor",
@@ -2396,16 +2395,16 @@
         },
         "/fail": {
             "description": "Failure is not an option; it’s a necessity. Failure is not a person but an event. You can’t grow without failing, and you can’t beat yourself up over it. The key is to analyze without judgment, understand why it failed, and learn to move on.\n\n",
-            "doc_size": 20000,
+            "doc_size": 21000,
             "file_path": "_site/fail.html",
             "incoming_links": [],
-            "last_modified": "2025-03-11T05:04:46-07:00",
+            "last_modified": "2025-11-16T15:50:49.022763",
             "markdown_path": "_d/fail2.md",
             "outgoing_links": [
                 "/anxiety",
                 "/anxiety-management",
                 "/coe",
-                "/d/resistance"
+                "/resistance"
             ],
             "redirect_url": "",
             "title": "Failure is not an option, it is a necessity",
