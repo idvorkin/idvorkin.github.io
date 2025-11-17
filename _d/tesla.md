@@ -26,7 +26,7 @@ Tony is my callable AI life coach with a Tony Soprano personality. I named him a
 <vapi-widget
 public-key="49b277de-d508-4062-bec2-503e40915be4"
 assistant-id="f5fe3b31-0ff6-4395-bc08-bc8ebbbf48a6"
-mode="voice"
+mode="chat"
 theme="dark"
 main-label="Talk to Tony"
 base-color="#2c2c2c"

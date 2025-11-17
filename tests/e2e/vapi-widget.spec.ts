@@ -47,7 +47,7 @@ test.describe("Vapi Widget on Tesla Page", () => {
 
     expect(publicKey).toBe("49b277de-d508-4062-bec2-503e40915be4");
     expect(assistantId).toBe("f5fe3b31-0ff6-4395-bc08-bc8ebbbf48a6");
-    expect(mode).toBe("voice");
+    expect(mode).toBe("chat");
     expect(theme).toBe("dark");
     expect(mainLabel).toBe("Talk to Tony");
   });
