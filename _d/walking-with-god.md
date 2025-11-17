@@ -45,6 +45,7 @@ Someone important to me has been reading a daily devotional. Even though I'm not
     - [November 5th - Authentic Worship](#november-5th---authentic-worship)
     - [November 11th - Brotherly Devotion](#november-11th---brotherly-devotion)
     - [November 13th - A Prescription for Pain](#november-13th---a-prescription-for-pain)
+    - [November 16th - Asa's Folly](#november-16th---asas-folly)
   - [December](#december)
 
 <!-- vim-markdown-toc-end -->
@@ -599,6 +600,39 @@ This connects to [mental pain](/mental-pain): You can't control pain (it happens
 {%include summarize-page.html src="/mental-pain" %}
 
 **Important distinction:** This isn't toxic positivity or denying real hardship. The clouds are REAL. The pain is REAL. But you have agency over whether you let that reality consume your entire perspective. The prescription isn't "pretend clouds don't exist" - it's "don't let clouds become your entire sky." Hope, patience, and faithful practice are how you maintain sight of the bigger picture while the storm passes.
+
+#### November 16th - Asa's Folly
+
+To me this is really about: **Where you turn first when you're in trouble - your default resource.**
+
+My favorite line from the passage: **"~~Asa~~ You twice made a foolish mistake. ~~He~~ You trusted something other than ~~God~~ your core values and principles."**
+
+_Here's how I translate this:_
+
+King Asa had proven track record with God - he'd seen it work. But when trouble came, he defaulted to what felt more tangible: military alliances and doctors. He treated his values as a backup plan, not his foundation.
+
+In secular terms: **What do you actually turn to first when things get hard?**
+
+It's easy to say you value certain principles - family, health, integrity, long-term thinking. But when pressure hits, what's your _actual_ first move?
+
+- Do you claim to value family first but when work gets intense, you sacrifice family time before you sacrifice anything else?
+- Do you say you value thoughtful decision-making but immediately jump to the quickest tactical fix when problems arise?
+- Do you believe in [seeking first to understand](/first-understand) but default to defending your position when challenged?
+
+The devotional warns against making God your "last resort" - only turning to prayer when medicine fails, only trusting divine protection when political alliances collapse. The secular version: **Don't treat your deepest values as gap-fillers around your real strategy.**
+
+This connects to [begin with the end in mind](/end-in-mind) - defining who you want to be through your [eulogy](/eulogy), then actually living that way when it counts. It also connects to the essentialist position from [October 22nd](#october-22nd---praying-in-gods-mind) - regularly doing the soul-searching to figure out what actually matters, what's your one thing that makes everything else easier or unnecessary.
+
+Asa's folly wasn't that he used doctors or made alliances - those aren't inherently wrong. His folly was that he went there _first_, relegating his core principles to backup status. He hadn't done the essentialist work to clarify what truly mattered to him, or if he had, he abandoned it under pressure.
+
+**Important distinction:** This isn't about rejecting modern solutions or expertise. See doctors. Make strategic alliances. Use the tools available. But don't let those tools become your foundation while your values become your afterthought.
+
+The question isn't whether you use secular solutions. It's whether your values or your tactics are driving the bus.
+
+{%include summarize-page.html src="/end-in-mind" %}
+{%include summarize-page.html src="/first-understand" %}
+{%include summarize-page.html src="/eulogy" %}
+{%include summarize-page.html src="/essentialism" %}
 
 ### December
 
