@@ -20,6 +20,7 @@
         "/90-days": "/90days",
         "/Business-Model-You": "/bmy",
         "/Coaching-Questions": "/coaching",
+        "/Human-Meetings": "/human-meetings",
         "/aGPT": "/ai-bestie",
         "/activation-energy": "/activation",
         "/addictions": "/addiction",
@@ -55,6 +56,7 @@
         "/build-life": "/build-life-you-want",
         "/care": "/caring",
         "/centenarian": "/last-year",
+        "/chat-tony": "/tesla",
         "/chilliwack": "/bc",
         "/classact": "/class-act",
         "/coach": "/coaching",
@@ -129,7 +131,6 @@
         "/heavy-club": "/kettlebell",
         "/heavy-clubs": "/kettlebell",
         "/high-energy": "/energy-abundance",
-        "/human-meetings": "/human-meetings",
         "/humanity": "/touching",
         "/hyper-personalization": "/hyper-personal",
         "/idle-loop": "/idle",
@@ -235,6 +236,7 @@
         "/strong": "/physical-health",
         "/sublime-state": "/sublime",
         "/sublime-states": "/sublime",
+        "/talk-to-tony": "/tesla",
         "/taxes": "/money",
         "/td/advertising": "/advertising",
         "/td/design": "/design",
@@ -259,6 +261,8 @@
         "/todo": "/todo_enjoy",
         "/todo-enjoy": "/todo_enjoy",
         "/tolerance": "/anger",
+        "/tony": "/tesla",
+        "/tony-play": "/tesla",
         "/too-busy": "/overload",
         "/training": "/ai-training",
         "/tribes": "/tribe",
@@ -293,7 +297,7 @@
     "url_info": {
         "/22": {
             "description": "In 2019 I created a program for 15 fantastic interns! A program highlight was my talk titled “What I wish I knew at 22, and so might you”. The talk received a 94% overall rating from over 15 interns, 10 SDE-IIs, and 1 senior developer. Even though the talk focuses on how to live the good life, a big chunk of life is work, so there’s good coverage on how to optimize your career.\n\n",
-            "doc_size": 17000,
+            "doc_size": 16000,
             "file_path": "_site/22.html",
             "incoming_links": [
                 "/chapters",
@@ -510,7 +514,7 @@
         },
         "/activation": {
             "description": "Doing activities requires will power, addictions and procrastination require negative will power, while positive habits, especially new ones require high will power. Here’s a model for these things.\n\n",
-            "doc_size": 28000,
+            "doc_size": 27000,
             "file_path": "_site/activation.html",
             "incoming_links": [
                 "/addiction",
@@ -645,6 +649,27 @@
             "redirect_url": "",
             "title": "Affirmations",
             "url": "/affirmations"
+        },
+        "/agency": {
+            "description": "Two engineers, same IQ, same tools. One ships weekly. One is “researching the best approach.”, or “Waiting for someone to tell them what to do”. In six months, the gap between them will be insurmountable. Why? Not intelligence—agency. And in the AI era, this gap is about to become exponential.\n\n",
+            "doc_size": 39000,
+            "file_path": "_site/agency.html",
+            "incoming_links": [],
+            "last_modified": "2025-11-15T09:38:37-08:00",
+            "markdown_path": "_d/agency.md",
+            "outgoing_links": [
+                "/amazon",
+                "/anxiety",
+                "/be-proactive",
+                "/essentialism",
+                "/gap-year-igor",
+                "/mental-pain",
+                "/my-perfect-job",
+                "/regrets"
+            ],
+            "redirect_url": "",
+            "title": "Agency trumps Intelligence",
+            "url": "/agency"
         },
         "/ai": {
             "description": "AI becomes the\nThe transition from A landing page for all my ai pages - a nice jumping off point (especially from the graph).\n\n",
@@ -832,6 +857,7 @@
             "file_path": "_site/amazon.html",
             "incoming_links": [
                 "/90days",
+                "/agency",
                 "/manager-book-appendix",
                 "/parkinson",
                 "/writing"
@@ -875,6 +901,7 @@
             "file_path": "_site/anxiety.html",
             "incoming_links": [
                 "/affirmations",
+                "/agency",
                 "/anxiety-management",
                 "/depression",
                 "/fail",
@@ -1046,11 +1073,12 @@
         },
         "/be-proactive": {
             "description": "I choose ‘.’ I am responsible for my own life ‘.’ My behavior is a function of my decisions, not my conditions ‘.’ I can subordinate feelings to values ‘.’ I have the initiative and the responsibility to make things happen. These are my insights from 7 habits Chapter 1.\n\n",
-            "doc_size": 22000,
+            "doc_size": 21000,
             "file_path": "_site/be-proactive.html",
             "incoming_links": [
                 "/7-habits",
                 "/affirmations",
+                "/agency",
                 "/anxiety",
                 "/d/habits",
                 "/emotions",
@@ -1405,7 +1433,7 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-11-16T15:20:23.981808",
+            "last_modified": "2025-11-16T15:20:37+00:00",
             "markdown_path": "_d/ai-coder.md",
             "outgoing_links": [
                 "/ai-journal",
@@ -1821,6 +1849,7 @@
                 "/enemy",
                 "/energy",
                 "/energy-abundance",
+                "/fail",
                 "/frog",
                 "/gap-year",
                 "/gap-year-igor",
@@ -1873,7 +1902,7 @@
         },
         "/day-in-the-life": {
             "description": "A running journal of days that actually worked - the ones where health habits stuck, family time hit different, or I remembered what it feels like to be fully alive. Not every day needs to be Instagram-worthy, but some days deserve a bookmark. This is that bookmark collection.\n\n",
-            "doc_size": 19000,
+            "doc_size": 18000,
             "file_path": "_site/day-in-the-life.html",
             "incoming_links": [],
             "last_modified": "2025-10-04T18:43:51-07:00",
@@ -2297,6 +2326,7 @@
             "incoming_links": [
                 "/4dx",
                 "/affirmations",
+                "/agency",
                 "/balance",
                 "/be-proactive",
                 "/books-that-defined-me",
@@ -2355,12 +2385,12 @@
             "markdown_path": "_posts/2020-04-01-Igor-Eulogy.md",
             "outgoing_links": [
                 "/7-habits",
-                "/Human-Meetings",
                 "/The-Genesis-Node",
                 "/balloon",
                 "/being-a-great-manager",
                 "/bike",
                 "/cache",
+                "/human-meetings",
                 "/ig66/687",
                 "/ig66/717",
                 "/ig66/732",
@@ -2400,13 +2430,13 @@
             "doc_size": 21000,
             "file_path": "_site/fail.html",
             "incoming_links": [],
-            "last_modified": "2025-11-16T15:50:49.022763",
+            "last_modified": "2025-11-16T15:53:52+00:00",
             "markdown_path": "_d/fail2.md",
             "outgoing_links": [
                 "/anxiety",
                 "/anxiety-management",
                 "/coe",
-                "/resistance"
+                "/d/resistance"
             ],
             "redirect_url": "",
             "title": "Failure is not an option, it is a necessity",
@@ -2571,6 +2601,7 @@
             "incoming_links": [
                 "/42",
                 "/activation",
+                "/agency",
                 "/bucket-list",
                 "/day-in-the-life",
                 "/gap-year",
@@ -2677,7 +2708,7 @@
         },
         "/gpt": {
             "description": "Just like the search bar in google fills in what you’re typing when you say “Where can I ge .. “ GPT3 complete strings as well. Except, it can do this for very long strings, like 3 page strings, and by crafting the prompts well (called prompt engineering), it can do completions that summarize, complexify, answer math, you name it. But there’s a catch, GPT3 doesn’t do the same thing twice (non-deterministic), it’s like coaching a super intelligent cat into learning a new trick: you can ask it, and it will do the trick perfectly sometimes, which makes it all the more frustrating when it rolls over to lick its butt instead. You know the problem is not that it can’t but that it won’t(From Gwern).\n\n",
-            "doc_size": 26000,
+            "doc_size": 25000,
             "file_path": "_site/gpt.html",
             "incoming_links": [
                 "/ai-art",
@@ -2721,7 +2752,7 @@
         },
         "/grammerly": {
             "description": "\n\n",
-            "doc_size": 13000,
+            "doc_size": 12000,
             "file_path": "_site/grammerly.html",
             "incoming_links": [],
             "last_modified": "2025-08-24T09:03:19-07:00",
@@ -3054,7 +3085,6 @@
             "last_modified": "2025-09-07T05:53:44-07:00",
             "markdown_path": "_posts/2018-06-7-my-perfect-job.md",
             "outgoing_links": [
-                "/Human-Meetings",
                 "/being-a-great-manager",
                 "/cache",
                 "/coaching",
@@ -3400,6 +3430,7 @@
             "file_path": "_site/mental-pain.html",
             "incoming_links": [
                 "/addiction",
+                "/agency",
                 "/ai-journal",
                 "/anger",
                 "/anxiety-management",
@@ -3435,7 +3466,7 @@
         },
         "/mermaid": {
             "description": "Lets try d2\n\n",
-            "doc_size": 15000,
+            "doc_size": 14000,
             "file_path": "_site/mermaid.html",
             "incoming_links": [],
             "last_modified": "2023-12-17T18:49:14+00:00",
@@ -3459,7 +3490,7 @@
         },
         "/mind-at-work": {
             "description": "I have a problem, an addiction, an addiction so detrimental to quality of life, it should be described as a disease. This disease is not being present. There are many symptoms of the disease, but today I’m going to talk about my most frequent symptoms, my body at home, but my mind at work.\n\n",
-            "doc_size": 20000,
+            "doc_size": 19000,
             "file_path": "_site/mind-at-work.html",
             "incoming_links": [
                 "/addiction",
@@ -3847,7 +3878,6 @@
                 "/tesla",
                 "/timeoff-2022-07",
                 "/todo_enjoy",
-                "/tony",
                 "/voices",
                 "/writing"
             ],
@@ -4357,6 +4387,7 @@
             "doc_size": 29000,
             "file_path": "_site/regrets.html",
             "incoming_links": [
+                "/agency",
                 "/emotions",
                 "/gap-year-igor",
                 "/mood",
@@ -4384,7 +4415,7 @@
                 "/spiritual-health",
                 "/walking-with-god"
             ],
-            "last_modified": "2025-11-15T09:34:24.369028",
+            "last_modified": "2025-11-15T09:34:30-08:00",
             "markdown_path": "_d/religion.md",
             "outgoing_links": [
                 "/affirmations",
@@ -4565,7 +4596,7 @@
         },
         "/sharpen-the-saw": {
             "description": "A young man saw a woodcutter cutting down a tree and asked “What are you doing?” “Are you blind?” the woodcutter replied. “I’m cutting down this tree.” The young man continued. “You look exhausted! Take a break. Sharpen your saw.” The woodcutter explained he’d been sawing for hours and did not have time to take a break. The young man pushed back… “If you sharpen the saw, you would cut down the tree much faster.” The woodcutter said “I don’t have time to sharpen the saw. Don’t you see I’m too busy. These are my insights based on the 7 habits Chapter 7.\n\n",
-            "doc_size": 15000,
+            "doc_size": 14000,
             "file_path": "_site/sharpen-the-saw.html",
             "incoming_links": [
                 "/7-habits",
@@ -5001,7 +5032,7 @@
         },
         "/td/back_ref": {
             "description": "This blog is my collection of evergreen notes, a place to have my thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here’s my strategy to create them.\n\n",
-            "doc_size": 14000,
+            "doc_size": 13000,
             "file_path": "_site/td/back_ref.html",
             "incoming_links": [],
             "last_modified": "2022-04-16T15:22:43-07:00",
@@ -5352,7 +5383,7 @@
                 "/operating-manual",
                 "/timeoff-2024-02"
             ],
-            "last_modified": "2025-11-17T00:13:59.906977",
+            "last_modified": "2025-11-17T00:40:07+00:00",
             "markdown_path": "_d/tesla.md",
             "outgoing_links": [
                 "/ai-bestie",
@@ -5475,7 +5506,7 @@
         },
         "/timeoff-2020-03": {
             "description": "In March 2020, I took a 2 month sabatical between leaving Amazon and joining Facebook. Given it was a substantial amount of time, I came up with some big plans, and wrote them down. It was a great plan, BUT my time off correlated perfectly to the Corona Virus and as a result I wasted lots of my mental energy thinking about the Corona Virus, and adjusting to being in pseudo-quarantine. Took me a while, but I finally realized I should ignore corona virus, or at least minimize my time thinking about it.\n\n",
-            "doc_size": 31000,
+            "doc_size": 30000,
             "file_path": "_site/timeoff-2020-03.html",
             "incoming_links": [
                 "/timeoff"
@@ -5981,18 +6012,17 @@
         },
         "/walking-with-god": {
             "description": "Someone important to me has been reading a daily devotional. Even though I’m not religious, I’m studying with them to be able to have conversations about the insights - whether in a secular or religious context. This is my attempt to bridge two worlds: honoring the spiritual wisdom they’re finding while translating it into language that works for my engineer brain.\n\n",
-            "doc_size": 76000,
+            "doc_size": 75000,
             "file_path": "_site/walking-with-god.html",
             "incoming_links": [
                 "/religion",
                 "/spiritual-health"
             ],
-            "last_modified": "2025-11-16T16:03:55.585237",
+            "last_modified": "2025-11-16T16:09:08+00:00",
             "markdown_path": "_d/walking-with-god.md",
             "outgoing_links": [
                 "/affirmations",
                 "/ai-journal",
-                "/compassion",
                 "/curious",
                 "/emotional-health",
                 "/end-in-mind",
@@ -6000,7 +6030,6 @@
                 "/eulogy",
                 "/first-understand",
                 "/get-to-yes-with-yourself",
-                "/grandmother",
                 "/happy",
                 "/mental-pain",
                 "/mortality-software",
@@ -6084,7 +6113,7 @@
         },
         "/win-win": {
             "description": "Win/Win is a constantly seeking mutual benefit in all interactions. Win/Win means that agreements or solutions are mutually beneficial, mutually satisfying. With a Win/Win solution, all parties feel good about the decision and feel committed to the action plan. Win/Win sees life as a cooperative, not a competitive arena. Most people tend to think in terms of dichotomies: strong or weak, hardball or softball, win or lose. But that kind of thinking is fundamentally flawed. It’s based on power and position rather than on principle. Win/Win is based on the paradigm that there is plenty for everybody, that one person’s success is not achieved at the expense or exclusion of the success of others.\n\n",
-            "doc_size": 21000,
+            "doc_size": 20000,
             "file_path": "_site/win-win.html",
             "incoming_links": [
                 "/7-habits",
