@@ -22,6 +22,7 @@ Tony is my callable AI life coach with a Tony Soprano personality. I named him a
 
 <script src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js" async></script>
 
+<!-- prettier-ignore-start -->
 <vapi-widget
 public-key="49b277de-d508-4062-bec2-503e40915be4"
 assistant-id="f5fe3b31-0ff6-4395-bc08-bc8ebbbf48a6"
@@ -30,8 +31,8 @@ theme="dark"
 main-label="Talk to Tony"
 base-color="#2c2c2c"
 accent-color="#c0392b"
-
-> </vapi-widget>
+></vapi-widget>
+<!-- prettier-ignore-end -->
 
 Want to build your own AI coach? Check out my [AI Bestie post](/ai-bestie) for the technical details. The Tony project lives at [github.com/idvorkin/tony_tesla](https://github.com/idvorkin/tony_tesla).
 
