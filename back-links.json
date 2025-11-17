@@ -699,6 +699,7 @@
             "file_path": "_site/ai-bestie.html",
             "incoming_links": [
                 "/ai",
+                "/tesla",
                 "/y24"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -5340,7 +5341,7 @@
         },
         "/tesla": {
             "description": "I don’t like to drive. I don’t like to drive so much that I have it in my eulogy. Luckily, Elon Musk made a car that’s optimized for driving you. In August 2023, I treated myself to a Tesla Model Y. It has lots of trade-offs, but the key for me is its Autopilot (e.g., it driving me).\n\n",
-            "doc_size": 19000,
+            "doc_size": 20000,
             "file_path": "_site/tesla.html",
             "incoming_links": [
                 "/bucket-list",
@@ -5351,9 +5352,10 @@
                 "/operating-manual",
                 "/timeoff-2024-02"
             ],
-            "last_modified": "2025-09-14T17:30:06-07:00",
+            "last_modified": "2025-11-17T00:13:59.906977",
             "markdown_path": "_d/tesla.md",
             "outgoing_links": [
+                "/ai-bestie",
                 "/bike-tesla-identity"
             ],
             "redirect_url": "",
