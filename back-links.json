@@ -3294,7 +3294,7 @@
         },
         "/magic": {
             "description": "Being a dealer of smiles and wonder is a priority in my life, and magic is my instrument. This post details my history and some highlights\n\n",
-            "doc_size": 25000,
+            "doc_size": 26000,
             "file_path": "_site/magic.html",
             "incoming_links": [
                 "/d/resistance",
@@ -3306,7 +3306,7 @@
                 "/timeoff",
                 "/touching"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2025-11-22T06:46:39.484668",
             "markdown_path": "_posts/2016-04-21-magical-memories.md",
             "outgoing_links": [
                 "/joy"

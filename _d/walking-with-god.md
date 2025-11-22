@@ -46,6 +46,7 @@ Someone important to me has been reading a daily devotional. Even though I'm not
     - [November 11th - Brotherly Devotion](#november-11th---brotherly-devotion)
     - [November 13th - A Prescription for Pain](#november-13th---a-prescription-for-pain)
     - [November 16th - Asa's Folly](#november-16th---asas-folly)
+    - [November 19th - Anatomy of a Surrender: Idolatry](#november-19th---anatomy-of-a-surrender-idolatry)
   - [December](#december)
 
 <!-- vim-markdown-toc-end -->
@@ -632,6 +633,39 @@ The question isn't whether you use secular solutions. It's whether your values o
 {%include summarize-page.html src="/end-in-mind" %}
 {%include summarize-page.html src="/first-understand" %}
 {%include summarize-page.html src="/eulogy" %}
+{%include summarize-page.html src="/essentialism" %}
+
+#### November 19th - Anatomy of a Surrender: Idolatry
+
+To me this is really about: **Anything that conflicts with being at our best (our essentialist self).**
+
+{% include alert.html style="warning" content="**Big New Concept:** Idols are simply anything that keeps you from being at your best." %}
+
+My favorite line from the passage: **"We like to call them character flaws or weaknesses of the flesh. In reality, they are idols... Whatever a man seeks, honors, or exalts more than ~~God~~ their eulogy, this is the god of idolatry."**
+
+_Here's how I translate this:_
+
+We often excuse our bad habits as "little weaknesses" or "character flaws." We treat them like minor accidents. But this passage offers a brutal reframe: they are **idols**. They are things we actively choose to value more than our highest ideals.
+
+Idolatry isn't just worshipping statues. It's the act of prioritizing *anything* above your highest values (your "God" or your "Best Self").
+
+- When I give in to **[anger](/anger)**, I am worshipping my need to be right or my impulse to punish. I am exalting my immediate emotional release above my value of patience or connection.
+
+{%include summarize-page.html src="/anger" %}
+
+- When I give in to **[addiction](/addiction)** (even soft addictions like doomscrolling), I am worshipping comfort or distraction. I am exalting the dopamine hit above my value of presence and focus.
+
+{%include summarize-page.html src="/addiction" %}
+
+In economics, this is **revealed preferences**: what you do is what you value, regardless of what you say.
+
+- **Stated Preference:** "I want to be a loving father" (The Light)
+- **Revealed Preference:** "I am screaming because I'm frustrated" (The Idol of Anger)
+
+When you choose the idol, you are making a "commitment to darkness." You can't optimize for your long-term essentialist goals while maintaining your "grip on darkness."
+
+**Important distinction:** This isn't about shame. It's about ownership. As long as you call it a "weakness," you're a victim. When you call it an "idol" (a revealed preference), you acknowledge it's a choice. And if it's a choice, you can choose differently.
+
 {%include summarize-page.html src="/essentialism" %}
 
 ### December
