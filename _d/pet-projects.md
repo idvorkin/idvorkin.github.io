@@ -33,6 +33,7 @@ As an engineer, I love to build bespoke tools that solve my unique problems exac
 | Project                                                      | Description                                                                             |
 | ------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
 | [Swing Analyzer](https://github.com/idvorkin/swing-analyzer) | Browser-based kettlebell swing analyzer. [Live demo](https://swing-analyzer.vercel.app) |
+| [Magic Monitor](https://github.com/idvorkin/magic-monitor)   | Smart mirror app with instant replay and AI-powered smart zoom. [Live demo](https://magic-monitor.surge.sh) |
 | [Video Edit](https://github.com/idvorkin/video-edit)         | Computer vision explorations: YOLO object detection, OpenCV motion detection            |
 
 ## Dev Tools & Infrastructure
