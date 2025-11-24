@@ -31,15 +31,6 @@ We've been conditioned to think of career breaks as financial suicide, but this 
 - [The Dragons: Why We Don't Take Gap Years](#the-dragons-why-we-dont-take-gap-years)
 - [The Test: How to Know If You're Ready](#the-test-how-to-know-if-your-ready)
 - [Making the Decision: A Framework for the Gap Year Choice](#making-the-decision-a-framework-for-the-gap-year-choice)
-- [Is Igor Gonna take a gap year?](#is-igor-gonna-take-a-gap-year)
-- [Igor's Financial Security Dragon](#igors-financial-security-dragon)
-- [Slaying Financial Security - Gap Year Triggers](#slaying-financial-security---gap-year-triggers)
-- [Igor's Decay Dragon: Health and Habits (Physical, Emotional, Relationship)](#igors-decay-dragon-health-and-habits-physical-emotional-relationship)
-- [Slaying Decay - Reframe: Health and Habits Capital Investment (Physical, Emotional, Relationship)](#slaying-decay---reframe-health-and-habits-capital-investment-physical-emotional-relationship)
-- [Igor's Identity Dragon](#igors-identity-dragon)
-- [Slaying Identity - Reframe: PhD in AI, Content Creation, and MRR](#slaying-identity---reframe-phd-in-ai-content-creation-and-mrr)
-- [Gap Year Pre-Mortem](#gap-year-pre-mortem)
-- [Gap Year Voices in my head](#gap-year-voices-in-my-head)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -193,11 +184,30 @@ The final phase is about figuring out how to integrate what you've learned back 
 
 {% include summarize-page.html src="/timeoff" %}
 
-## The Dragons: Why We Don't Take Gap Years
+## The Three Ancient Dragons: The Challenge of the Gap Year
 
-Despite the compelling case, most people don't take gap years. The dragons guarding this treasure are:
+While the "Resistance" prevents you from starting, there are three ancient dragons that emerge once you actually begin the gap year. Work keeps these dragons in a box, but the gap year releases them:
 
-_In order for Igor_
+### The Scarcity Dragon
+_"There will never be enough"_
+
+This dragon feeds on resource anxiety. At work, the biweekly paycheck keeps it sedated. Without it, the dragon whispers constantly about market crashes, unemployability, and dwindling reserves. It makes every expense feel like bleeding out and every market dip feel personal.
+
+### The Entropy Dragon
+_"Everything tends toward disorder"_
+
+This dragon embodies the second law of thermodynamics applied to your life. Without work's external structure (deadlines, meetings, expectations) forcing order, everything naturally decays - your body, your habits, your relationships. It whispers: "You have all day, so why rush?" leading to a slow drift into inefficiency.
+
+### The Squander Dragon
+_"You will waste this precious opportunity"_
+
+This dragon feeds on the fear that you'll misuse this rare gift of time. Without external metrics of productivity, how will you know if you're succeeding? It whispers about Netflix binges and aimless days, asking: "What if you look back in a year and realize you squandered the very opportunity you sacrificed so much to create?"
+
+For a deep dive on how to tame these dragons, see the companion post: [Will Igor Take a Gap Year?](/gap-year-igor)
+
+## The Resistance: Why We Don't Start
+
+Despite the compelling case, most people don't take gap years. The resistance that prevents us from even starting comes in five forms:
 
 **The Security Dragon**: "What if I can't find work when I return?" This fear often exceeds the actual risk.
 
