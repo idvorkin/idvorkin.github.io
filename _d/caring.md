@@ -129,8 +129,6 @@ The intensity level of the emotional response (either positive or negative) to s
 
 ## Stoicism
 
-Stoicism teaches us to focus our caring on what we control (our commitment to virtue) and withdraw it from what we don't (outcomes, others' opinions).
-
 {%include summarize-page.html src="/stoicism" %}
 
 ### Q for DR. Raph

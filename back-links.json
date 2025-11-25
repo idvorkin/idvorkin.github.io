@@ -1352,11 +1352,12 @@
             "incoming_links": [
                 "/depression"
             ],
-            "last_modified": "2025-07-18T07:57:44-07:00",
+            "last_modified": "2025-11-25T14:35:26.736191",
             "markdown_path": "_d/caring.md",
             "outgoing_links": [
                 "/depression",
-                "/psychic-shadows"
+                "/psychic-shadows",
+                "/stoicism"
             ],
             "redirect_url": "",
             "title": "Caring - The story of emotional intensity",

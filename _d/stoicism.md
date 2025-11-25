@@ -14,12 +14,8 @@ Arthur Brooks and Ryan Holiday discuss how Stoicism provides a secular framework
 
 ## Core Concepts
 
-*   **Locus of Control**: Distinguishing between what we can control (our actions, thoughts) and what we cannot (external events, others' opinions).
-*   **Amor Fati**: "Love of fate" - accepting and embracing whatever happens.
-*   **Memento Mori**: Remembering that we will die, which brings clarity to what is important.
+- **Locus of Control**: Distinguishing between what we can control (our actions, thoughts) and what we cannot (external events, others' opinions).
+- **Amor Fati**: "Love of fate" - accepting and embracing whatever happens.
+- **Memento Mori**: Remembering that we will die, which brings clarity to what is important.
 
-## See Also
-
-*   [Religion](/religion)
-*   [Caring](/caring)
-*   Cool render of Aristotle's [What makes a good life](https://ralphammer.com/aristotle-how-to-live-a-good-life/)
+- Cool render of Aristotle's [What makes a good life](https://ralphammer.com/aristotle-how-to-live-a-good-life/)
