@@ -129,9 +129,7 @@ The intensity level of the emotional response (either positive or negative) to s
 
 ## Stoicism
 
-OK, this may end up in it's own section
-
-- Cool render of Aristotle's [What makes a good life](https://ralphammer.com/aristotle-how-to-live-a-good-life/)
+{%include summarize-page.html src="/stoicism" %}
 
 ### Q for DR. Raph
 

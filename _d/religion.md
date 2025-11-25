@@ -140,7 +140,7 @@ When I read devotionals and replace "God" with a secular concept, I realize God 
 |                                           | **Inner Peace**             | Place to stop striving and just be              | "Be still and know"              | Meditation, flow states             |
 | **PERSPECTIVE** _(How You See the World)_ |                             |                                                 |                                  |                                     |
 |                                           | **Cosmic Perspective**      | Relief from tyranny of small anxieties          | God's eternal view               | Pale blue dot, memento mori         |
-|                                           | **Locus of Control**        | Stop carrying weight of uncontrollable outcomes | Trust in God's plan              | Serenity prayer, Stoicism           |
+|                                           | **Locus of Control**        | Stop carrying weight of uncontrollable outcomes | Trust in God's plan              | Serenity prayer, [Stoicism](/stoicism)           |
 | **DIRECTION** _(How You Choose)_          |                             |                                                 |                                  |                                     |
 |                                           | **Mission & Values**        | North Star that doesn't shift with opinions     | God's kingdom and righteousness  | Know thyself, authentic values      |
 |                                           | **Moral Framework**         | Clear answers without rebuilding ethics         | Biblical commandments            | Kant, virtue ethics, utilitarianism |
@@ -194,7 +194,7 @@ Below, I explore each role in depth with specific examples of both religious and
 | Religious Wisdom                                                                                                                          | Secular Wisdom                                                       |
 | ----------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
 | "Trust in the Lord with all your heart and lean not on your own understanding" (Proverbs 3:5)                                             | "Grant me serenity to accept what I cannot change" - Serenity Prayer |
-| "Cast all your anxiety on him because he cares for you" (1 Peter 5:7)                                                                     | "Amor fati" - love your fate (Stoicism)                              |
+| "Cast all your anxiety on him because he cares for you" (1 Peter 5:7)                                                                     | "Amor fati" - love your fate ([Stoicism](/stoicism))                              |
 | "Come to me, all you who are weary and burdened, and I will give you rest. For my yoke is easy and my burden is light" (Matthew 11:28-30) | "The obstacle is the way" - Marcus Aurelius                          |
 
 ## DIRECTION: How You Choose
@@ -245,7 +245,7 @@ Below, I explore each role in depth with specific examples of both religious and
 
 Without a religious framework, you face the burden of construction. Look at that list above - ten fundamental roles that religion fills with one answer: God. As a secular person, I need ten different sources, ten different practices, ten different communities.
 
-How do I know my ethics are right? What gives me confidence when everything is uncertain? Where do I find community? What rituals mark important transitions? Should I follow Stoicism or Buddhism or just wing it? Is my meditation practice actually helping or am I just sitting quietly convincing myself it matters?
+How do I know my ethics are right? What gives me confidence when everything is uncertain? Where do I find community? What rituals mark important transitions? Should I follow [Stoicism](/stoicism) or Buddhism or just wing it? Is my meditation practice actually helping or am I just sitting quietly convincing myself it matters?
 
 The work is exhausting: reading philosophy, testing practices, iterating on what works, constantly second-guessing. Did I choose the right framework? Am I missing something important? There's no instruction manual, no authoritative voice saying "this is the way."
 
