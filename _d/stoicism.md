@@ -22,5 +22,7 @@ Arthur Brooks and Ryan Holiday discuss how Stoicism provides a secular framework
 
 ## See Also
 
-- [Religion](/religion)
-- [Caring](/caring)
+- [Religion](/religion) - Stoicism as secular spirituality
+- [Caring](/caring) - Focus caring on what you control
+- [Build The Life You Want](/build-life-you-want) - Arthur Brooks (in the video above) on happiness
+- [Agency](/agency) - Taking action on what you control
