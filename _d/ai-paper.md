@@ -13,6 +13,7 @@ The original AI papers were all about training, super technical, and not that us
 
 - [LLM Agents](#llm-agents)
 - [Security](#security)
+- [Relationships](#relationships)
 - [Situational Awareness](#situational-awareness)
 
 <!-- vim-markdown-toc-end -->
@@ -47,6 +48,10 @@ In a LLM-powered autonomous agent system, LLM functions as the agent’s brain, 
 ## Security
 
 {% include summarize-page.html src="ai-security" %}
+
+## Relationships
+
+{% include summarize-page.html src="ai-and-relationships" %}
 
 ## Situational Awareness
 
