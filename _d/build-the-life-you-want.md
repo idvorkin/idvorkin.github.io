@@ -313,7 +313,3 @@ _This totally resonated, and I realized most of my good friends are judges, folk
 Mad Scientists, driven by their awesome or terrible moods, tend to make decisions rashly and spiral up or down. When things are good, they can be overconfident and blind to possible setbacks; when things are bad, they descend into unnecessary misery. They often overpromise on a wide range of issues—from attending a party that they haven’t the time for, to agreeing to an impossible work deadline. Additionally, their high energy (both good and bad) can exhaust friends, family, and work colleagues whose temperaments are more even-keeled.
 
 As a Mad Scientist, your complementary profile is a Judge—people with low positive and high negative affect. Judges can help you address the costs of your affect profile. They slow you down, help you make rational decisions, and are excellent at keeping you in check. Meanwhile, your affect profile can help Judges be a little more carefree and to embrace life's swings.
-
-## See Also
-
-- [Stoicism](/stoicism) - Arthur Brooks discusses stoic practices for resilience

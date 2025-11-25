@@ -129,9 +129,9 @@ The intensity level of the emotional response (either positive or negative) to s
 
 ## Stoicism
 
-Stoicism teaches us to focus our caring on what we control (our commitment to virtue) and withdraw it from what we don't (outcomes, others' opinions). See [Stoicism](/stoicism) for more.
+Stoicism teaches us to focus our caring on what we control (our commitment to virtue) and withdraw it from what we don't (outcomes, others' opinions).
 
-- Cool render of Aristotle's [What makes a good life](https://ralphammer.com/aristotle-how-to-live-a-good-life/)
+{%include summarize-page.html src="/stoicism" %}
 
 ### Q for DR. Raph
 
