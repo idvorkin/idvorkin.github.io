@@ -57,12 +57,14 @@ Inconveniently, massage only lasts 20 minutes, stretching a day or 2, but streng
 
 #### Self Release: Massage and Foam Roller, Tennis Ball
 
-- Foam roller and Tennis ball are mostly self massage, which is mostly less effective then an expert nailing it.
+- Foam roller and Tennis ball are mostly self massage, which is mostly less effective than an expert nailing it.
 - Remember this is not fixing the problem, it's giving you a window to maximize your efficiency in fixing the problem.
 
 ### Key Concepts for Pain Management
 
 #### Tightness is the signal/symptom it is not the problem.
+
+Physical pain has a direct analog to [mental pain](/mental-pain) — both use discomfort as a signal, not the root cause:
 
 [Mental Pain](/mental-pain) => Anxiety => Signal to Focus => Instead of asking why am I anxious, and what am I trying to control, how do I maximize my influence
 
@@ -74,7 +76,7 @@ Your body is designed to operate smoothly and symmetrically. However, we can als
 
 #### Flexibility vs Mobility
 
-The distinction matters because it tells you what to train:
+These aren't synonyms — they're two different but related concepts. The distinction matters because it tells you what to train:
 
 |                | Flexibility                                                              | Mobility                                                     |
 | -------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -141,9 +143,9 @@ OK, a very hard to read book "Becoming a Supple Leopard", but a point which he h
 
 {%include amazon.html asin="1628600837"%}
 
-Coaches talk about "bending the bar bell", or rotating your pits forward or screwing your feet into the ground. What they are "cueing" you for is to externally rotate your humerus or femur into the socket, this pulls the slack out of the joint making it stiff.
+Coaches talk about "bending the barbell", or rotating your pits forward or screwing your feet into the ground. What they are "cueing" you for is to externally rotate your humerus or femur into the socket, this pulls the slack out of the joint making it stiff.
 
-Note in the hips, when you point your feet out you have more ROM, but you lose tension, and that tension has down sides — being stiff gives you strength.
+Note in the hips, when you point your feet out you have more ROM, but you lose tension, and that tension has downsides — being stiff gives you strength.
 
 Shoulder external rotation was really hard for me, and also interesting since the way I do pushups is I let my elbows go perpendicular to my core (which is apparently not what you want).
 
