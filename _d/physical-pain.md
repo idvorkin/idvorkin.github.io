@@ -14,12 +14,9 @@ Physical pain is a universal experience, yet it remains one of the least underst
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [Introduction](#introduction)
 - [Great Books For Across the Board Improvements](#great-books-for-across-the-board-improvements)
 - [Approaches to Managing Pain](#approaches-to-managing-pain)
   - [Physio Therapy](#physio-therapy)
-  - [Putting up a tonne of effort to climb the wrong laddaer](#putting-up-a-tonne-of-effort-to-climb-the-wrong-laddaer)
-  - [The source of pain is rarely the place you need to fix it.](#the-source-of-pain-is-rarely-the-place-you-need-to-fix-it)
   - [Massage, Stretch, Strengthen](#massage-stretch-strengthen)
   - [Self Release: Massage and Foam Roller, Tennis Ball](#self-release-massage-and-foam-roller-tennis-ball)
 - [Key Concepts for Pain Management](#key-concepts-for-pain-management)
@@ -30,18 +27,16 @@ Physical pain is a universal experience, yet it remains one of the least underst
 - [Special Focus: Back Pain](#special-focus-back-pain)
   - [Stuart McGill And the Big 3](#stuart-mcgill-and-the-big-3)
   - [Using the 5 whys to understand pain](#using-the-5-whys-to-understand-pain)
-  - [Spine Stiffness requires hip and shoulder flexibilty/mobility](#spine-stiffness-requires-hip-and-shoulder-flexibiltymobility)
+  - [Spine Stiffness requires hip and shoulder flexibility/mobility](#spine-stiffness-requires-hip-and-shoulder-flexibilitymobility)
   - [Rotation for stiffness](#rotation-for-stiffness)
-  - [Flexibility vs Mobilily](#flexibility-vs-mobilily)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-### Introduction
-
-Physical pain is a universal experience, yet it remains one of the least understood aspects of human health. Whether it's a stubbed toe or chronic back pain, understanding the nature of physical pain can empower us to manage it effectively and improve our quality of life.
-
 ### Great Books For Across the Board Improvements
+
+- **Rebuilding Milo** - From the Squat University guy (Aaron Horschig). Focuses on diagnosing and fixing common lifting injuries (hip, knee, shoulder, back). Very practical with specific rehab protocols and movement assessments.
+- **Built from Broken** - Scott Hogan's science-based approach to joint health and injury recovery. Covers the "why" behind pain and provides structured programs for rebuilding strength after injury. Good on nutrition's role in tissue healing.
 
 {% include amazon.html asin="B09PLKR2YT;1735728500;" %}
 
@@ -55,46 +50,53 @@ Critical because Practice makes permanent. See
 
 {%include summarize-page.html src="/new-skills"%}
 
-#### Putting up a tonne of effort to climb the wrong laddaer
-
-#### The source of pain is rarely the place you need to fix it.
-
 #### Massage, Stretch, Strengthen
 
 Massage (aka Release) feels amazing, stretching good, and Strengthening Does Nothing.
-Inconvenially, masssage only last 20 minutes, stretching a day or 2, but strengthing lasts for ever.
+Inconveniently, massage only lasts 20 minutes, stretching a day or 2, but strengthening lasts forever.
 
 #### Self Release: Massage and Foam Roller, Tennis Ball
 
-- Foam roller and Tennis ball are mostly self massage, which is mostly less effective then an expert nailing it.
+- Foam roller and Tennis ball are mostly self massage, which is mostly less effective than an expert nailing it.
 - Remember this is not fixing the problem, it's giving you a window to maximize your efficiency in fixing the problem.
 
 ### Key Concepts for Pain Management
 
 #### Tightness is the signal/symptom it is not the problem.
 
+Physical pain has a direct analog to [mental pain](/mental-pain) — both use discomfort as a signal, not the root cause:
+
 [Mental Pain](/mental-pain) => Anxiety => Signal to Focus => Instead of asking why am I anxious, and what am I trying to control, how do I maximize my influence
 
-Physical Pain => Tightness => Signal to Focus => Instead of asing how do I loosen, ask what is weak? how do I strengthen.
+Physical Pain => Tightness => Signal to Focus => Instead of asking how do I loosen, ask what is weak? how do I strengthen.
 
 #### Negative Feedback loop - When you are tight.
 
-Your body is designed to operate smoothly and symettrically. However, we can also operate with mitigations, but those are of course increasing our injury risk. So if we're tight on one side we compensate, and that puts us at higher risk of future injury
+Your body is designed to operate smoothly and symmetrically. However, we can also operate with mitigations, but those are of course increasing our injury risk. So if we're tight on one side we compensate, and that puts us at higher risk of future injury.
 
 #### Flexibility vs Mobility
 
-- Flexibility - How far you can move through a range of motion
+These aren't synonyms — they're two different but related concepts. The distinction matters because it tells you what to train:
 
-  - Stiffness
-  - Ligament
-  - Joint Connection (Like with Hip ball and socket, or ankle flexion))
+|                | Flexibility                                                              | Mobility                                                     |
+| -------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------ |
+| **Definition** | Passive ROM — how far you can be moved (by gravity, a partner, or strap) | Active ROM — how far you can move yourself under own control |
+| **Limited by** | Tissue stiffness, ligaments, joint structure                             | Strength and motor control                                   |
+| **Test**       | Can a physio push you into the position?                                 | Can you get there yourself and hold it?                      |
 
-- Mobility - How far you can move through a range of motion under your own power
-  - Strength Limited
+**The key insight:** The gap between your flexibility and mobility is a strength/control deficit, not a stretching problem.
+
+**Example:** You might be able to touch your toes when you relax and hang (flexibility), but struggle to actively lift your leg to 90° while standing (mobility). More stretching won't help — you need strength work in that range.
+
+**Practical implications:**
+
+- If you're flexible but not mobile → train strength at end-range (e.g., loaded stretches, isometrics)
+- If you're not even flexible → address tissue restrictions first, then build strength
+- Chasing flexibility without mobility creates "loose but weak" joints — injury waiting to happen
 
 #### So why do we do massage, and stretch
 
-Because while that tightness is a symptom, it's also limiting range of motion, and by loosening (even temporarily), we can be more effective at strengthing (again exactly the same as anxiety in mental pain).
+Because while that tightness is a symptom, it's also limiting range of motion, and by loosening (even temporarily), we can be more effective at strengthening (again exactly the same as anxiety in mental pain).
 
 ### Special Focus: Back Pain
 
@@ -104,7 +106,7 @@ If you've heard of the McGill big three, that's this guy. Trivia tidbits:
 
 1. He did self experimentation by sticking a needle into every muscle and zapping it with electricity to improve diagnosis
 1. He broke his cervical spine
-1. He is candian, and a professor of Waterloo (my Alama Matter)
+1. He is Canadian, and a professor at Waterloo (my Alma Mater)
 
 {% include amazon.html asin="B0BL3DFDS2;0973501839;B01BIB1PHQ" %}
 
@@ -125,34 +127,28 @@ From our favorite COE process - the 5 whys:
 - Why Tightness?
   - Body Protecting From Injury
 - Why Protecting From Injury
-  - Body feels unstability on joints
+  - Body feels instability in joints
 - Why unstable?
   - Lack of muscular Endurance
 
 This is what's great about the mcgill big 3, it's isometrics to build endurance, as opposed to strength. And it does so with the minimal amount of back load (which would worsen the injury)
 
-#### Spine Stiffness requires hip and shoulder flexibilty/mobility
+#### Spine Stiffness requires hip and shoulder flexibility/mobility
 
-Your back supposed to stay strait (especially your lower back), and your motion is supposed to come from your hips and shoulders (Ball and Sockets)
+Your back is supposed to stay straight (especially your lower back), and your motion is supposed to come from your hips and shoulders (ball and socket joints).
 
 #### Rotation for stiffness
 
-OK, a very hard to read book "Becoming a supple leopoard", but a point which he hammers in no one else does is the importance of external rotation, both in the hips and in the shoulders:
+OK, a very hard to read book "Becoming a Supple Leopard", but a point which he hammers in that no one else does is the importance of external rotation, both in the hips and in the shoulders:
 
 {%include amazon.html asin="1628600837"%}
 
-Coaches talk about "bending the bar bell", or rotating your pits forward or screwing your feet into the ground. What they are "cueing" you for is to externally rotate your humorous or femor into the socket, this pulls the slack out of the joint making it stiff.
+Coaches talk about "bending the barbell", or rotating your pits forward or screwing your feet into the ground. What they are "cueing" you for is to externally rotate your humerus or femur into the socket, this pulls the slack out of the joint making it stiff.
 
-Note in the hips, when you pint your feet out you have more ROM, but you loose tension, and that tension has down sides, being stiff gives you strength.
+Note in the hips, when you point your feet out you have more ROM, but you lose tension, and that tension has downsides — being stiff gives you strength.
 
-Shoulder external rotation was really hard for me, and also inetsting since the way I do pushups is I let me elbows go perpendictular to my core (which is apparently not what you want).
+Shoulder external rotation was really hard for me, and also interesting since the way I do pushups is I let my elbows go perpendicular to my core (which is apparently not what you want).
 
-Lack of should external rotation meant i had really weeak wrists and put extra strain on my wrists.
+Lack of shoulder external rotation meant I had really weak wrists and put extra strain on my wrists.
 
-To have strength, you need stabilitiy or your body shuts off stretngth to avoid injury (hopefully), so you have a few ways to get stiffness, one is stiffning random muscles the other is to
-
-Does stiffning cause alignment?
-
-#### Flexibility vs Mobilily
-
-Flexibility - How far you can move without restriction (aka how far someone can move you) vs how far you can move yourself.
+To have strength, you need stability or your body shuts off strength to avoid injury (hopefully). You have a few ways to get stiffness: one is stiffening random muscles, the other is external rotation.
