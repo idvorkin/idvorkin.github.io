@@ -24,10 +24,12 @@ Physical pain is a universal experience, yet it remains one of the least underst
   - [Negative Feedback loop - When you are tight.](#negative-feedback-loop---when-you-are-tight)
   - [Flexibility vs Mobility](#flexibility-vs-mobility)
   - [So why do we do massage, and stretch](#so-why-do-we-do-massage-and-stretch)
-- [Special Focus: Back Pain](#special-focus-back-pain)
+- [Shoulder Pain](#shoulder-pain)
+- [Back Pain](#back-pain)
   - [Stuart McGill And the Big 3](#stuart-mcgill-and-the-big-3)
-  - [Using the 5 whys to understand pain](#using-the-5-whys-to-understand-pain)
   - [Spine Stiffness requires hip and shoulder flexibility/mobility](#spine-stiffness-requires-hip-and-shoulder-flexibilitymobility)
+- [Other Ideas to Classify](#other-ideas-to-classify)
+  - [Using the 5 whys to understand pain](#using-the-5-whys-to-understand-pain)
   - [Rotation for stiffness](#rotation-for-stiffness)
 
 <!-- vim-markdown-toc-end -->
@@ -98,7 +100,24 @@ These aren't synonyms — they're two different but related concepts. The distin
 
 Because while that tightness is a symptom, it's also limiting range of motion, and by loosening (even temporarily), we can be more effective at strengthening (again exactly the same as anxiety in mental pain).
 
-### Special Focus: Back Pain
+### Shoulder Pain
+
+You can't fix shoulder directly. You need to go through this sequence.
+
+1. Improve Thoracic Spine Mobility
+   - Small crunches over a peanut
+   - Prayer stretch on foam roller
+   - (More intense) Box T-Spine stretch (Put elbows on box while holding a broom stick), press down
+   - Deep Squat rotations
+1. Pec and Lat Mobility
+   - Box Lat Stretch
+   - Eccentric slow pull up
+1. Maintain the length
+   - Half prone angel
+   - Shoulder swims
+1. Wall Slides
+
+### Back Pain
 
 #### Stuart McGill And the Big 3
 
@@ -116,6 +135,12 @@ If you've heard of the McGill big three, that's this guy. Trivia tidbits:
 | Back Fitness and Performance | Pretty complex, trainer/physio Therapist  |
 | Low Back Disorders           | Super Technical Doctors/Physio Therapists |
 
+#### Spine Stiffness requires hip and shoulder flexibility/mobility
+
+Your back is supposed to stay straight (especially your lower back), and your motion is supposed to come from your hips and shoulders (ball and socket joints).
+
+### Other Ideas to Classify
+
 #### Using the 5 whys to understand pain
 
 From our favorite COE process - the 5 whys:
@@ -132,10 +157,6 @@ From our favorite COE process - the 5 whys:
   - Lack of muscular Endurance
 
 This is what's great about the mcgill big 3, it's isometrics to build endurance, as opposed to strength. And it does so with the minimal amount of back load (which would worsen the injury)
-
-#### Spine Stiffness requires hip and shoulder flexibility/mobility
-
-Your back is supposed to stay straight (especially your lower back), and your motion is supposed to come from your hips and shoulders (ball and socket joints).
 
 #### Rotation for stiffness
 
