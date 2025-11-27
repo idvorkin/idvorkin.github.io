@@ -690,6 +690,22 @@ The lie isn't that the bad habit doesn't work. The lie is that it's the *only* t
 {%include summarize-page.html src="/addiction" %}
 {%include summarize-page.html src="/habits" %}
 
+#### November 21st - The Pain of Letting Go
+
+**Core insight: The deeper a habit's roots, the more painful the uprooting.**
+
+There comes a time when we're finally ready to let go. We've seen through the illusion. We know our coping mechanism is hurting us more than helping. We're ready to quit.
+
+But here's what we don't expect: **it will hurt.**
+
+These habits have grown roots in our hearts. The longer we've had them, the deeper those roots run. Uprooting them isn't a gentle weed-pulling - it's violent. It leaves a hole.
+
+The painful cycle: We put the habit down, then pick it back up. Down and up, over and over. Each relapse adds to our guilt and deepens the difficulty.
+
+**Why we relapse:** We romanticize what we're giving up. We forget how much pain our "comfort" has caused us. We think we'll miss it. We fear the emptiness it will leave behind.
+
+The hard truth: Letting go of a deep habit requires a kind of death. The person who needed that coping mechanism has to die so a new person can emerge. That's why it hurts. And that's why it's necessary.
+
 ### December
 
 ---
