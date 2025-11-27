@@ -11,27 +11,20 @@
     "@vitest/ui": "^3.1.0",
     "ansi-to-html": "^0.7.2",
     "happy-dom": "^20.0.2",
-    "parcel": "^2.16.1",
     "prettier": "^1.19.1",
+    "vite": "^7.2.4",
     "vitest": "^3.1.0"
   },
   "name": "idvorkin.github.io",
   "description": "This [blog](https://idvork.in) contains my [evergreen notes](https://notes.andymatuschak.org/z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C), and an [enabling environment](https://notes.andymatuschak.org/z3DaBP4vN1dutjUgrk3jbEeNxScccvDCxDgXe) to interact with them. These are currently intermingled, but",
   "version": "1.0.0",
-  "source": "src/index.ts",
+  "type": "module",
   "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage"
-  },
-  "targets": {
-    "default": {
-      "distDir": "assets/js",
-      "outputFormat": "esmodule",
-      "isLibrary": true,
-      "optimize": true,
-      "sourceMap": true
-    }
   },
   "repository": {
     "type": "git",
@@ -45,8 +38,8 @@
   "homepage": "https://github.com/idvorkin/idvorkin.github.io#readme",
   "dependencies": {
     "force-graph": "^1.43.5",
+    "lodash": "^4.17.21",
     "punycode": "^2.3.1",
-    "typescript": "^4.5.2",
-    "lodash": "^4.17.21"
+    "typescript": "^4.5.2"
   }
 }
