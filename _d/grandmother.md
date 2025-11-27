@@ -19,7 +19,7 @@ redirect_from:
   - /nonjudgment
 ---
 
-Lead with curiosity, not judgment. This applies to yourself and to others. Think of a grandmother - a grandmother is full of love and compassion for her grandchildren. She loves them without conditions, no strings attached.She takes care of her grandchildren without needing anything in return. She cares selflessly and she has only the children’s best interest in mind. As she loves her grandchildren, she won’t allow self-destructive behavior and will step in when necessary. But she will always do this with the utmost care and love.
+Lead with curiosity, not judgment. This applies to yourself and to others. Think of a grandmother - a grandmother is full of love and compassion for her grandchildren. She loves them without conditions, no strings attached. She takes care of her grandchildren without needing anything in return. She cares selflessly and she has only the children’s best interest in mind. As she loves her grandchildren, she won’t allow self-destructive behavior and will step in when necessary. But she will always do this with the utmost care and love.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -59,13 +59,13 @@ Compassion can be broken down with a time dimension.
 | Time    | Behavior    | Practice     | Behavior Definition                                     |
 | ------- | ----------- | ------------ | ------------------------------------------------------- |
 | Past    | Forgiveness | Humility     | Give up hope for a better past                          |
-| Present | Acceptance  | Gratefulness | Recognizing you have received more then your fair share |
-| Future  | Hope        | Patience     | Believe the future can be better then the present       |
+| Present | Acceptance  | Gratefulness | Recognizing you have received more than your fair share |
+| Future  | Hope        | Patience     | Believe the future can be better than the present       |
 
 - When people behave poorly (in your mind), it is due to their suffering.
 - Compassion clarifies the person’s suffering, not the person, is the source of the problem. Suffering is unacceptable. The person is acceptable (see [getting to yes, hard on problems soft on people](/gty)).
-- Love, especially as applied to children, is the highest form of compassion a 11/10.
-- Sounds like the fundamental attribution error: When you do something wrong, you attribute to circumstance, when others do thing wrong you attribute you malice/incompetence/personality.
+- Love, especially as applied to children, is the highest form of compassion an 11/10.
+- Sounds like the fundamental attribution error: When you do something wrong, you attribute to circumstance, when others do thing wrong you attribute to malice/incompetence/personality.
 - Being compassionate takes the focus off the ego, which is super important as the ego brings you very little.
 
 ### Judgment vs Curiosity
@@ -74,7 +74,7 @@ Judgment throws up barriers and causes us to hide the truth which can lead to gu
 
 ### Compassionate Consequences
 
-We often think of rewards and punishments, but punishments are less effective then rewards. So, what should happen if we don't follow our rule/reach our goal (do what we want, etc, etc)? What would grandma do?
+We often think of rewards and punishments, but punishments are less effective than rewards. So, what should happen if we don't follow our rule/reach our goal (do what we want, etc, etc)? What would grandma do?
 
 She'd get curious (aka have a retro!). Instead of assuming that breaking the rule was a bad thing, she'd dig in and reflect on if it was a good thing or a bad thing. If it was the right thing to do - perfect! If it was not the right thing to do, then we should reflect on why that was and why we made the wrong call.
 
@@ -86,7 +86,7 @@ Assuming we don't do what we wanted - the consequence should be 6 minute reflect
 2. 2m - what was the reason we wanted to follow the rule
 3. 2m - was it worth it.
 
-An advanced reader will notice, there are 2 cases to breaking the rule 1) deliberately 2) mindlessly. If it was broken mindlessly, then the most useful thing will be to mindful the next time we wish to break the rule. This reflection practice primes us for that. If it was broken deliberately, but we made a bad call, then further reflection on that is helpful, and it will help up again in the future.
+An advanced reader will notice, there are 2 cases to breaking the rule 1) deliberately 2) mindlessly. If it was broken mindlessly, then the most useful thing will be to be mindful the next time we wish to break the rule. This reflection practice primes us for that. If it was broken deliberately, but we made a bad call, then further reflection on that is helpful, and it will help us again in the future.
 
 | Mindfulness/Call | Right Call - Next Time                       | Wrong Call - Next Time            |
 | ---------------- | -------------------------------------------- | --------------------------------- |
@@ -97,7 +97,7 @@ An advanced reader will notice, there are 2 cases to breaking the rule 1) delibe
 
 Did I do the [best I could do](https://whatilearnedsofar.com/practice/best-i-can-do/)?
 
-What could have I actually done that would have been better than what I did?
+What could I have actually done that would have been better than what I did?
 
 - Must be indisputably a better choice than the one you made.
 - Must be a realistic option - and it may not depend on knowledge you didn't have at the time.
