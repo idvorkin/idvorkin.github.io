@@ -668,6 +668,28 @@ When you choose the idol, you are making a "commitment to darkness." You can't o
 
 {%include summarize-page.html src="/essentialism" %}
 
+#### November 20th - The Functional Utility of Bad Habits
+
+**Core insight: We do bad habits because they work (temporarily).**
+
+We often treat our bad habits and addictions as mysterious afflictions. Why do I keep doing this thing I hate?
+
+**Because we don't trust the alternative.**
+
+We cling to coping mechanisms because they solve a problem for us. They meet a need.
+- Stress? Alcohol works fast.
+- Fear of chaos? Micromanaging works fast.
+- Don't want to think about what's going on? Social media is a great distraction.
+
+We suspect that if we give up these tools - if we do things the healthy way - our needs won't be met. We'll be left vulnerable, stressed, or unsafe.
+
+The lie isn't that the bad habit doesn't work. The lie is that it's the *only* thing that works, or that the cost is worth it.
+
+**Important distinction:** Understanding the function of a behavior isn't excusing it. It's the prerequisite for changing it. You can't just "stop" a behavior that's solving a problem for you. You have to find a better way to solve that problem.
+
+{%include summarize-page.html src="/addiction" %}
+{%include summarize-page.html src="/habits" %}
+
 ### December
 
 ---
