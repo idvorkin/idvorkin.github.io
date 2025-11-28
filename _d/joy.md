@@ -31,6 +31,7 @@ If you could have one superpower, what would it be? At 46, you'd think I'd have 
   - [Surprise birthday visit to my sister](#surprise-birthday-visit-to-my-sister)
 - [Theory](#theory)
   - [Attributes of Joy](#attributes-of-joy)
+  - [Joy vs Pleasure - Key Differences](#joy-vs-pleasure---key-differences)
   - [Safety: the precondition for Joy](#safety-the-precondition-for-joy)
   - [Joy is contagious](#joy-is-contagious)
   - [Build rapport to make people feel safe](#build-rapport-to-make-people-feel-safe)
@@ -43,9 +44,10 @@ If you could have one superpower, what would it be? At 46, you'd think I'd have 
   - [Manipulation vs Augmenting Experiences](#manipulation-vs-augmenting-experiences)
   - [Imbalance of Impact](#imbalance-of-impact)
 - [Role Models & Inspirations](#role-models--inspirations)
+  - [Some Random Cool Dude](#some-random-cool-dude)
   - [Gayle - The Queen of Aggressive Kindness](#gayle---the-queen-of-aggressive-kindness)
-    - [Steve Irwin](#steve-irwin)
-    - [Mr. Rogers](#mr-rogers)
+  - [Steve Irwin](#steve-irwin)
+  - [Mr. Rogers](#mr-rogers)
 - [Future Projects](#future-projects)
   - [Smile box](#smile-box)
   - [Bubble Show](#bubble-show)
@@ -139,12 +141,16 @@ Link the YouTube Videos (merge the two together)
 
 Joy is an involuntary experience that acts on you. You can be more receptive to joy, but even when you're not you can experience joy against your will.
 
-Increasing the receptivity to Joy
+### Joy vs Pleasure - Key Differences
 
-Joy is fleeting - that seem to be in the definition
-Joy is in the present
-
-TODO Use Lens of Self/Other/Process
+| Attribute | Joy | Pleasure |
+|-----------|-----|----------|
+| **Source** | External surprise, connection, wonder | Relief from internal tension |
+| **Trigger** | Something acts on you | You consume or release something |
+| **Requires** | Novelty, safety, presence | Build-up of need or desire |
+| **Duration** | Fleeting but memorable | Fleeting and forgettable |
+| **Anticipation** | Cannot be anticipated (kills it) | Anticipation increases it |
+| **Aftereffect** | Lingers as warmth | Often followed by wanting more |
 
 ### Safety: the precondition for Joy
 
@@ -203,7 +209,7 @@ If a stranger does something really kind for you unexpectantly, that's kind of l
 
 ### Joy versus pleasure
 
-Pleasure is the release of tension. The going from anticipation of something positive to getting it. Eating chocolate cake, orgasm, getting to pee when you have to go. Eating a very tasty cake. Joy isn't like that.
+Pleasure is the release of tension—relief from what you cannot hold within. Eating chocolate cake, orgasm, getting to pee when you have to go. The [Akbar-Birbal story](/happy#akbar-birbal) illustrates this perfectly: the greatest pleasure is simply release from unbearable tension. Joy isn't like that.
 
 ### Things that bring most people joy
 
