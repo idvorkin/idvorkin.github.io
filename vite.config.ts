@@ -13,11 +13,5 @@ export default defineConfig({
     sourcemap: true,
     minify: true,
     emptyOutDir: false, // Don't delete vendor/ directory
-    rollupOptions: {
-      output: {
-        // Ensure consistent output filename
-        entryFileNames: "index.js",
-      },
-    },
   },
 });

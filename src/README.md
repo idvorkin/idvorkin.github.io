@@ -33,7 +33,7 @@ This approach provides:
 
 ## Build System
 
-We use Parcel for bundling and TypeScript for type checking. The build process is configured in the project's `justfile`, `package.json`, and `tsconfig.json`.
+We use Vite for bundling and TypeScript for type checking. The build process is configured in the project's `justfile`, `vite.config.ts`, and `tsconfig.json`.
 
 ### Available Commands
 
@@ -65,11 +65,11 @@ just js-clean
 just js-validate
 ```
 
-## Why Parcel and TypeScript?
+## Why Vite and TypeScript?
 
 We use both tools with clear separation of responsibilities:
 
-1. **Parcel** handles bundling, asset processing, and development workflow
+1. **Vite** handles bundling, asset processing, and development workflow
 2. **TypeScript** provides type checking for code quality
 
 This separation allows us to leverage the strengths of both tools while maintaining a simple workflow.
@@ -90,7 +90,7 @@ import { toggleClass } from './shared';
 
 ## Testing
 
-We use Jest for unit testing. Tests are located in the `__tests__` directory.
+We use Vitest for unit testing. Tests are located in the `__tests__` directory.
 
 To run tests:
 
