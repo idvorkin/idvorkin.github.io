@@ -2386,7 +2386,7 @@
                 "/walking-with-god",
                 "/work-satisfaction"
             ],
-            "last_modified": "2025-09-07T16:11:35-07:00",
+            "last_modified": "2025-11-28T09:45:42-08:00",
             "markdown_path": "_posts/2020-04-01-Igor-Eulogy.md",
             "outgoing_links": [
                 "/7-habits",
@@ -2839,7 +2839,7 @@
         },
         "/happy": {
             "description": "Happy is a 5 letter word that many use as the answer to what is the point of life. The follow up question of “How can you be happy” is usually followed by a blank stare, so here’s my study of the subject. Probably the most important thing is happiness is not a mood, it’s journey - Like the weather vs the climate.\n\n",
-            "doc_size": 31000,
+            "doc_size": 32000,
             "file_path": "_site/happy.html",
             "incoming_links": [
                 "/chasing-daylight",
@@ -2862,7 +2862,7 @@
                 "/timeoff-2025-08",
                 "/walking-with-god"
             ],
-            "last_modified": "2025-10-20T12:57:20-04:00",
+            "last_modified": "2025-11-28T13:14:56-08:00",
             "markdown_path": "_posts/2017-04-12-happy.md",
             "outgoing_links": [
                 "/addiction",
@@ -3129,7 +3129,7 @@
         },
         "/joy": {
             "description": "If you could have one superpower, what would it be? At 46, you’d think I’d have a quick answer, but the usual ideas—flying, invisibility, stopping time—felt childish. Probably the setting: a circle of 9-17-year-olds, breaking the ice, sharing their wished-for superpowers. As my mind scrambled, a mild panic set in. Nothing surfaced—until a bit of my eulogy came to me: Igor lived to see eyes go wide and mouths gape with wonder. He loved when strangers were drawn in against their objections, when a kid in meltdown, or an adult weighed down by life, forgot their troubles. Relief washed over me, I knew my answer. The super power I wished for:  bringing joy to others.\n\n",
-            "doc_size": 31000,
+            "doc_size": 32000,
             "file_path": "_site/joy.html",
             "incoming_links": [
                 "/affirmations",
@@ -3145,7 +3145,7 @@
                 "/sublime",
                 "/tribe"
             ],
-            "last_modified": "2025-11-11T23:54:16+00:00",
+            "last_modified": "2025-11-28T13:14:56-08:00",
             "markdown_path": "_d/joy.md",
             "outgoing_links": [
                 "/balloon",
@@ -4010,7 +4010,7 @@
             "incoming_links": [
                 "/eulogy"
             ],
-            "last_modified": "2025-11-23T07:54:04-08:00",
+            "last_modified": "2025-11-28T09:45:42-08:00",
             "markdown_path": "_d/pet-projects.md",
             "outgoing_links": [
                 "/bike-tesla-identity",
