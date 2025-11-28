@@ -570,7 +570,8 @@
                 "/productive",
                 "/psychic-shadows",
                 "/psychic-weight",
-                "/timeoff"
+                "/timeoff",
+                "/walking-with-god"
             ],
             "last_modified": "2025-09-01T09:23:45-07:00",
             "markdown_path": "_d/addiction.md",
@@ -883,7 +884,8 @@
             "file_path": "_site/anger.html",
             "incoming_links": [
                 "/emotions",
-                "/mood"
+                "/mood",
+                "/walking-with-god"
             ],
             "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_d/anger.md",
@@ -1155,6 +1157,7 @@
             "file_path": "_site/bike-tesla-identity.html",
             "incoming_links": [
                 "/mortality-software",
+                "/pet-projects",
                 "/self-ego",
                 "/tesla"
             ],
@@ -1352,7 +1355,7 @@
             "incoming_links": [
                 "/depression"
             ],
-            "last_modified": "2025-11-25T14:35:26.736191",
+            "last_modified": "2025-11-25T14:36:06-08:00",
             "markdown_path": "_d/caring.md",
             "outgoing_links": [
                 "/depression",
@@ -1609,7 +1612,7 @@
             "url": "/covid"
         },
         "/curious": {
-            "description": "Lead with curiosity, not judgment. This applies to yourself and to others. Think of a grandmother - a grandmother is full of love and compassion for her grandchildren. She loves them without conditions, no strings attached.She takes care of her grandchildren without needing anything in return. She cares selflessly and she has only the children’s best interest in mind. As she loves her grandchildren, she won’t allow self-destructive behavior and will step in when necessary. But she will always do this with the utmost care and love.\n\n",
+            "description": "Lead with curiosity, not judgment. This applies to yourself and to others. Think of a grandmother - a grandmother is full of love and compassion for her grandchildren. She loves them without conditions, no strings attached. She takes care of her grandchildren without needing anything in return. She cares selflessly and she has only the children’s best interest in mind. As she loves her grandchildren, she won’t allow self-destructive behavior and will step in when necessary. But she will always do this with the utmost care and love.\n\n",
             "doc_size": 19000,
             "file_path": "_site/curious.html",
             "incoming_links": [
@@ -1631,7 +1634,7 @@
                 "/voices",
                 "/walking-with-god"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2025-11-27T17:05:40+00:00",
             "markdown_path": "_d/grandmother.md",
             "outgoing_links": [
                 "/first-understand",
@@ -1817,7 +1820,8 @@
                 "/psychic-weight",
                 "/sharpen-the-saw",
                 "/slow",
-                "/switch"
+                "/switch",
+                "/walking-with-god"
             ],
             "last_modified": "2025-08-13T07:43:13-07:00",
             "markdown_path": "_d/habits.md",
@@ -2398,6 +2402,7 @@
                 "/job",
                 "/kettlebell",
                 "/magic",
+                "/pet-projects",
                 "/physical-health",
                 "/process-journal",
                 "/siy",
@@ -3307,7 +3312,7 @@
                 "/timeoff",
                 "/touching"
             ],
-            "last_modified": "2025-11-22T06:46:39.484668",
+            "last_modified": "2025-11-22T06:46:54-08:00",
             "markdown_path": "_posts/2016-04-21-magical-memories.md",
             "outgoing_links": [
                 "/joy"
@@ -4000,12 +4005,18 @@
         },
         "/pet-projects": {
             "description": "As an engineer, I love to build bespoke tools that solve my unique problems exactly the way I want them solved. The bonus? This is lets me learn new technologies (did you know my blog has multiplayer support?). Sometimes I even make a tool so I have something to learn from. And with AI, this list of projects and explorations has exploded! Note to self, when I want to veg out and just feed my social media addiction I should do some vibe coding on all of these.\n\n",
-            "doc_size": 18000,
+            "doc_size": 21000,
             "file_path": "_site/pet-projects.html",
-            "incoming_links": [],
-            "last_modified": "2025-11-11T23:22:43+00:00",
+            "incoming_links": [
+                "/eulogy"
+            ],
+            "last_modified": "2025-11-23T07:54:04-08:00",
             "markdown_path": "_d/pet-projects.md",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/bike-tesla-identity",
+                "/process-journal",
+                "/vibe"
+            ],
             "redirect_url": "",
             "title": "Pet Projects",
             "url": "/pet-projects"
@@ -4049,12 +4060,12 @@
         },
         "/physical-pain": {
             "description": "Physical pain is a universal experience, yet it remains one of the least understood aspects of human health. Whether it’s a stubbed toe or chronic back pain, understanding the nature of physical pain can empower us to manage it effectively and improve our quality of life.\n\n",
-            "doc_size": 30000,
+            "doc_size": 32000,
             "file_path": "_site/physical-pain.html",
             "incoming_links": [
                 "/mental-pain"
             ],
-            "last_modified": "2025-11-26T15:30:04.980572",
+            "last_modified": "2025-11-27T10:05:16-08:00",
             "markdown_path": "_d/physical-pain.md",
             "outgoing_links": [
                 "/coe",
@@ -4129,6 +4140,7 @@
                 "/eulogy",
                 "/four-healths",
                 "/operating-manual",
+                "/pet-projects",
                 "/y24",
                 "/y25"
             ],
@@ -4416,10 +4428,11 @@
                 "/spiritual-health",
                 "/walking-with-god"
             ],
-            "last_modified": "2025-11-15T09:34:30-08:00",
+            "last_modified": "2025-11-24T16:12:18+00:00",
             "markdown_path": "_d/religion.md",
             "outgoing_links": [
                 "/affirmations",
+                "/stoicism",
                 "/walking-with-god"
             ],
             "redirect_url": "",
@@ -4841,6 +4854,21 @@
             "redirect_url": "",
             "title": "Stock Concentration: How I Learned to Stop Worrying and Love the Capital Gains Tax",
             "url": "/stock-concentration"
+        },
+        "/stoicism": {
+            "description": "Stoicism is a philosophy of personal ethics informed by its system of logic and its views on the natural world. It was founded in Athens by Zeno of Citium in the early 3rd century BC.\n\n",
+            "doc_size": 13000,
+            "file_path": "_site/stoicism.html",
+            "incoming_links": [
+                "/caring",
+                "/religion"
+            ],
+            "last_modified": "2025-11-25T14:36:06-08:00",
+            "markdown_path": "_d/stoicism.md",
+            "outgoing_links": [],
+            "redirect_url": "",
+            "title": "Stoicism",
+            "url": "/stoicism"
         },
         "/strategy": {
             "description": "As competition in the market intensifies, companies must find ways to differentiate themselves in order to have a successful business - and that means strategic positioning. If they want to get the buyers money they have to choose a strategy that works for them and make sure it has sustainable competitive advantages. From offering a different value, to providing the same value using different activities - the possibilities for positioning are endless. Ultimately, it’s all about creating trade offs and making sure those trade offs give a sustainable competitive advantage!\n\n",
@@ -5915,7 +5943,8 @@
             "file_path": "_site/vibe.html",
             "incoming_links": [
                 "/ai",
-                "/chop"
+                "/chop",
+                "/pet-projects"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/vibe.md",
@@ -6013,18 +6042,21 @@
         },
         "/walking-with-god": {
             "description": "Someone important to me has been reading a daily devotional. Even though I’m not religious, I’m studying with them to be able to have conversations about the insights - whether in a secular or religious context. This is my attempt to bridge two worlds: honoring the spiritual wisdom they’re finding while translating it into language that works for my engineer brain.\n\n",
-            "doc_size": 75000,
+            "doc_size": 81000,
             "file_path": "_site/walking-with-god.html",
             "incoming_links": [
                 "/religion",
                 "/spiritual-health"
             ],
-            "last_modified": "2025-11-16T16:09:08+00:00",
+            "last_modified": "2025-11-27T09:09:47-08:00",
             "markdown_path": "_d/walking-with-god.md",
             "outgoing_links": [
+                "/addiction",
                 "/affirmations",
                 "/ai-journal",
+                "/anger",
                 "/curious",
+                "/d/habits",
                 "/emotional-health",
                 "/end-in-mind",
                 "/essentialism",
