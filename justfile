@@ -18,17 +18,13 @@ default:
 
 # Build all JavaScript/TypeScript files for production
 js-build: js-clean
-    # Using Parcel for bundling (handles TypeScript transpilation)
-    # Build the single entry point with optimization
-    npx parcel build --no-cache --no-content-hash --detailed-report
+    # Using Vite for bundling (handles TypeScript transpilation)
+    npx vite build
 
 # Watch for changes during development
 js-watch: js-clean
-    # Using Parcel for bundling with watch mode
-    rm -rf .parcel-cache dist
-    rm -f assets/js/*.js assets/js/*.map 2>/dev/null || true
-    # Watch the single entry point
-    npx parcel watch --no-cache
+    # Using Vite for bundling with watch mode
+    npx vite build --watch
 
 # Run TypeScript type checking without emitting files
 js-typecheck:
@@ -182,7 +178,7 @@ js-format:
 
 # Clean build artifacts
 js-clean:
-    rm -rf .parcel-cache dist
+    rm -rf node_modules/.vite dist
 
 # Validate code (typecheck + lint)
 js-validate: js-typecheck js-lint
