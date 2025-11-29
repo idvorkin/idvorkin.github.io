@@ -28,10 +28,6 @@ This sits next to [the gap year paradox](/gap-year): same terrain, closer camera
   - [The Entropy Dragon](#the-entropy-dragon)
   - [The Squander Dragon](#the-squander-dragon)
 - [How Work Kept the Dragons Boxed](#how-work-kept-the-dragons-boxed)
-- [The Dragon Spawn: How Each Ancient Manifests](#the-dragon-spawn-how-each-ancient-manifests)
-  - [Scarcity's Spawn](#scarcitys-spawn)
-  - [Entropy's Spawn](#entropys-spawn)
-  - [Squander's Spawn](#squanders-spawn)
 - [Taming the Dragons: From Fear to Power](#taming-the-dragons-from-fear-to-power)
   - [The Scarcity Dragon Dialogs](#the-scarcity-dragon-dialogs)
   - [Taming Scarcity: Building True Security](#taming-scarcity-building-true-security)
@@ -50,6 +46,10 @@ This sits next to [the gap year paradox](/gap-year): same terrain, closer camera
   - [Work Taming Squander - The Production and Production Capacity](#work-taming-squander---the-production-and-production-capacity)
   - [Work Taming Squander - The Gap Year Terror](#work-taming-squander---the-gap-year-terror)
   - [Work Taming Entropy](#work-taming-entropy)
+- [Appendix: The Dragon Spawn - How Each Ancient Manifests](#appendix-the-dragon-spawn---how-each-ancient-manifests)
+  - [Scarcity's Spawn](#scarcitys-spawn)
+  - [Entropy's Spawn](#entropys-spawn)
+  - [Squander's Spawn](#squanders-spawn)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -180,40 +180,6 @@ Work provided three critical pieces of dragon-management infrastructure that you
 The gap year opens the box. Suddenly there's no meeting schedule to explain away poor health habits, no work exhaustion to buffer loneliness, no legitimate crisis to postpone difficult conversations with family. You need to create your own social connections, generate your own sense of urgency and purpose, and face your habits without the comfortable excuse of being legitimately exhausted.
 
 The dragons are the same size they've always been. The difference is now you're face-to-face with them in an empty room, and the uncomfortable truth emerges: some of your struggles weren't actually about time or energy - they were about something deeper that work was helping you avoid.
-
-## The Dragon Spawn: How Each Ancient Manifests
-
-Each ancient dragon breeds specific offspring that attack in different ways. Understanding these manifestations helps you recognize which dragon is currently testing you.
-
-### Scarcity's Spawn
-
-**The Market Volatility Dragon**: Every red day feels personal when you're drawing down. This spawn makes you check your portfolio obsessively, turning market noise into existential threat.
-
-**The Employability Dragon**: "You'll never get hired again at this level." Whispers that the job market has moved on, that your skills are stale, that younger people will work for less.
-
-**The Expense Surprise Dragon**: "What if the roof needs $50K in repairs?" Manufactures anxiety about every possible financial catastrophe that could derail your plan.
-
-**The Lifestyle Creep Dragon**: "Can you really live on 60% of what you used to?" Questions every purchase, makes you second-guess if you can truly adjust to a different financial reality.
-
-### Entropy's Spawn
-
-**Parkinson's Dragon**: Named for [Parkinson's Law](/parkinson). Tasks expand to fill infinite time. This spawn is vicious because it makes you complicit in your own time theft - you become the thief stealing from yourself. What should be a productive day becomes a haze of half-completed tasks.
-
-**The Addiction Dragon**: For me, this isn't about alcohol (I gave that up for better [sleep](/sleep)) - it's social media. The endless scroll, the dopamine hits from notifications, the fear of missing out. During a gap year, without the structure of work, these digital sirens could easily consume entire days.
-
-**The Decay Dragon**: A day missed at the gym turns into a week, turns into a month. Physical decline accelerates mental decline. At 50, you still have peak physical capability, but this window closes fast - and this dragon knows it.
-
-**The Drift Dragon**: Boredom → Vegetating → Messing up sleep schedule → General lack of purpose. This spawn creates aimless days that become aimless weeks, leaving you wondering where the time went.
-
-### Squander's Spawn
-
-**The Judgment Dragon**: "Did I really set a good example for my kids?"
-
-**The Low Efficiency Dragon**: "Could I have done all of this by having been more efficient while working"
-
-**The Pile of Crap Dragon**: "Is the stuff I built/learned useless crap no one cares about"
-
-**The FOMO Dragon**: "The industry is evolving into an AI world, you need to be there for it"
 
 ## Taming the Dragons: From Fear to Power
 
@@ -836,3 +802,37 @@ And there's another layer: Work provides tonnes of support for that "Professiona
 By virtue of accomplishing things, having impact, providing value, you actively fight entropy.
 
 You are the average of your peers (Or Proverbs 27:17 - Iron sharpens iron for our biblical friends)- One day I was at the coffee shop in the middle of the day and I looked around and the only people there were these 3 old men just stairing off into space. We become the average of our peers, and if our peers are all just sitting there stairing off into space, we'll likely soon follow.
+
+## Appendix: The Dragon Spawn - How Each Ancient Manifests
+
+Each ancient dragon breeds specific offspring that attack in different ways. Understanding these manifestations helps you recognize which dragon is currently testing you.
+
+### Scarcity's Spawn
+
+**The Market Volatility Dragon**: Every red day feels personal when you're drawing down. This spawn makes you check your portfolio obsessively, turning market noise into existential threat.
+
+**The Employability Dragon**: "You'll never get hired again at this level." Whispers that the job market has moved on, that your skills are stale, that younger people will work for less.
+
+**The Expense Surprise Dragon**: "What if the roof needs $50K in repairs?" Manufactures anxiety about every possible financial catastrophe that could derail your plan.
+
+**The Lifestyle Creep Dragon**: "Can you really live on 60% of what you used to?" Questions every purchase, makes you second-guess if you can truly adjust to a different financial reality.
+
+### Entropy's Spawn
+
+**Parkinson's Dragon**: Named for [Parkinson's Law](/parkinson). Tasks expand to fill infinite time. This spawn is vicious because it makes you complicit in your own time theft - you become the thief stealing from yourself. What should be a productive day becomes a haze of half-completed tasks.
+
+**The Addiction Dragon**: For me, this isn't about alcohol (I gave that up for better [sleep](/sleep)) - it's social media. The endless scroll, the dopamine hits from notifications, the fear of missing out. During a gap year, without the structure of work, these digital sirens could easily consume entire days.
+
+**The Decay Dragon**: A day missed at the gym turns into a week, turns into a month. Physical decline accelerates mental decline. At 50, you still have peak physical capability, but this window closes fast - and this dragon knows it.
+
+**The Drift Dragon**: Boredom → Vegetating → Messing up sleep schedule → General lack of purpose. This spawn creates aimless days that become aimless weeks, leaving you wondering where the time went.
+
+### Squander's Spawn
+
+**The Judgment Dragon**: "Did I really set a good example for my kids?"
+
+**The Low Efficiency Dragon**: "Could I have done all of this by having been more efficient while working"
+
+**The Pile of Crap Dragon**: "Is the stuff I built/learned useless crap no one cares about"
+
+**The FOMO Dragon**: "The industry is evolving into an AI world, you need to be there for it"
