@@ -3,6 +3,9 @@ npx vitest run --reporter=verbose
 
 [1m[46m RUN [49m[22m [36mv3.2.4 [39m[90m/home/runner/work/idvorkin.github.io/idvorkin.github.io[39m
 
+[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mCopy Functionality[2m > [22m[2mshould copy correct URL format
+[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=manager-book%23test-section...
+
 [90mstdout[2m | src/__tests__/main.test.ts
 [22m[39m🖼️ Enabling image zoom functionality
 Initializing dev info...
@@ -12,12 +15,6 @@ Dev info - Branch: [1mnull[22m PR: [1mnull[22m Port: 4000
 
 [90mstderr[2m | src/__tests__/main.test.ts
 [22m[39m⚠️ GLightbox not found, retrying in 100ms (attempt 1/50)
-
-[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mCopy Functionality[2m > [22m[2mshould copy correct URL format
-[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=manager-book%23test-section...
-
-[90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
-[22m[39mToggle element with ID missing-toggle not found
 
 [90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mCopy Functionality[2m > [22m[2mshould handle clipboard API failure gracefully
 [22m[39m📋 Copied with preview (fallback): https://tinyurl.com/igor-blog/?path=manager-book%23test-section...
@@ -35,6 +32,50 @@ Dev info - Branch: [1mnull[22m PR: [1mnull[22m Port: 4000
     at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/chunk-hooks.js:1729:8[90m)[39m
     at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/chunk-hooks.js:1729:8[90m)[39m
 
+[90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
+[22m[39mToggle element with ID missing-toggle not found
+
+[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: localhost to production with long anchor
+[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=manager-book%23how-do-you-identify-and-help-eng-decide-if-manage...
+
+[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: production domain mapping
+[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=manager-book%23test-section...
+
+[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: simple case
+[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=simple-page%23anchor...
+
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mURL Transformation[2m > [22mshould transform localhost URL to production domain[32m 11[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mURL Transformation[2m > [22mshould handle production domain mapping correctly[32m 2[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mHeader ID Generation[2m > [22mshould use existing header ID if present[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mHeader ID Generation[2m > [22mshould generate ID from header text when no ID exists[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mHeader ID Generation[2m > [22mshould handle special characters in header text[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mHeader ID Generation[2m > [22mshould ensure ID uniqueness[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mCopy Functionality[2m > [22mshould copy correct URL format[32m 4[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mCopy Functionality[2m > [22mshould handle clipboard API failure gracefully[32m 17[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mCSS Styles[2m > [22mshould add styles only once[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mCSS Styles[2m > [22mshould create style element with correct content[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould add share links to all header types including H1[32m 11[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould initialize correctly when DOM is ready[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould wait for DOM ready when loading[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould not add duplicate copy links when called multiple times[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould not add duplicate copy links when enableHeaderCopyLinks is called multiple times[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould build breadcrumb with page name and header hierarchy[32m 0[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould convert hyphens to spaces in page name[32m 0[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould handle index page correctly[32m 0[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould show correct hierarchy for AI Journal diary entry[32m 0[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould handle deeply nested headers with depth limit[32m 0[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould use most recent parent header when duplicates exist[32m 0[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould handle missing intermediate header levels[32m 0[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould handle AI Journal nested subsection breadcrumb[32m 0[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould add GitHub issue icon alongside copy link icon[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould show popup when GitHub icon is clicked[32m 6[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould open GitHub issue with custom description when popup is submitted[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould include content excerpt when no custom description provided[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould truncate long content excerpts to 500 characters[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould skip empty paragraphs and find first non-empty one[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: localhost to production with long anchor[32m 2[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: production domain mapping[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: simple case[32m 1[2mms[22m[39m
 [90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould handle empty results
 [22m[39mToggle element with ID remaining-posts-toggle not found
 
@@ -57,86 +98,36 @@ Dev info - Branch: [1mnull[22m PR: [1mnull[22m Port: 4000
 [90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2minitRecentAllPosts[2m > [22m[2mshould call updateRecentPosts immediately if document is already loaded
 [22m[39mToggle element with ID remaining-posts-toggle not found
 
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould group pages by month and year[32m 7[2mms[22m[39m
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould group pages by month and year[32m 8[2mms[22m[39m
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould handle empty arrays[32m 2[2mms[22m[39m
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould skip pages without last_modified dates[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateGroupedPagesHTML[2m > [22mshould generate correct HTML for grouped pages[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould skip pages without last_modified dates[32m 2[2mms[22m[39m
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateGroupedPagesHTML[2m > [22mshould generate correct HTML for grouped pages[32m 2[2mms[22m[39m
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateGroupedPagesHTML[2m > [22mshould format dates in the expected format[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateGroupedPagesHTML[2m > [22mshould truncate descriptions longer than 150 characters[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mcreateToggleSection[2m > [22mshould create toggle section with correct content[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateStyles[2m > [22mshould generate CSS styles as a string[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22msetupToggleEventListener[2m > [22mshould add click event listener to toggle element[32m 4[2mms[22m[39m
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22msetupToggleEventListener[2m > [22mshould handle missing toggle element[32m 2[2mms[22m[39m
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22msetupToggleEventListener[2m > [22mshould toggle content visibility when clicked[32m 5[2mms[22m[39m
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22msetupToggleEventListener[2m > [22mshould add click event listener to toggle element[32m 6[2mms[22m[39m
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22msetupToggleEventListener[2m > [22mshould handle missing toggle element[32m 4[2mms[22m[39m
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22msetupToggleEventListener[2m > [22mshould toggle content visibility when clicked[32m 7[2mms[22m[39m
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateRecentPostsHTML[2m > [22mshould generate complete HTML for posts display[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateRecentPostsHTML[2m > [22mshould return message when no pages are provided[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateRecentPostsHTML[2m > [22mshould use default initialPostsCount of 15[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould update container with posts HTML[32m 6[2mms[22m[39m
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould handle empty results[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould handle errors[32m 10[2mms[22m[39m
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould handle errors[32m 11[2mms[22m[39m
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould call updateRecentPosts immediately if document is already loaded[32m 3[2mms[22m[39m
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould add event listener if document is still loading[32m 0[2mms[22m[39m
-[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: localhost to production with long anchor
-[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=manager-book%23how-do-you-identify-and-help-eng-decide-if-manage...
-
-[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: production domain mapping
-[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=manager-book%23test-section...
-
-[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: simple case
-[22m[39m📋 Copied to clipboard with preview: https://tinyurl.com/igor-blog/?path=simple-page%23anchor...
-
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mURL Transformation[2m > [22mshould transform localhost URL to production domain[32m 9[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mURL Transformation[2m > [22mshould handle production domain mapping correctly[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mHeader ID Generation[2m > [22mshould use existing header ID if present[32m 2[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mHeader ID Generation[2m > [22mshould generate ID from header text when no ID exists[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mHeader ID Generation[2m > [22mshould handle special characters in header text[32m 4[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mHeader ID Generation[2m > [22mshould ensure ID uniqueness[32m 2[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mCopy Functionality[2m > [22mshould copy correct URL format[32m 6[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mCopy Functionality[2m > [22mshould handle clipboard API failure gracefully[32m 16[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mCSS Styles[2m > [22mshould add styles only once[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mCSS Styles[2m > [22mshould create style element with correct content[32m 2[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould add share links to all header types including H1[32m 6[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould initialize correctly when DOM is ready[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould wait for DOM ready when loading[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould not add duplicate copy links when called multiple times[32m 4[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould not add duplicate copy links when enableHeaderCopyLinks is called multiple times[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould build breadcrumb with page name and header hierarchy[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould convert hyphens to spaces in page name[32m 0[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould handle index page correctly[32m 6[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould show correct hierarchy for AI Journal diary entry[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould handle deeply nested headers with depth limit[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould use most recent parent header when duplicates exist[32m 0[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould handle missing intermediate header levels[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mBreadcrumb Format[2m > [22mshould handle AI Journal nested subsection breadcrumb[32m 0[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould add GitHub issue icon alongside copy link icon[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould show popup when GitHub icon is clicked[32m 6[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould open GitHub issue with custom description when popup is submitted[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould include content excerpt when no custom description provided[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould truncate long content excerpts to 500 characters[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould skip empty paragraphs and find first non-empty one[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: localhost to production with long anchor[32m 2[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: production domain mapping[32m 4[2mms[22m[39m
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: simple case[32m 2[2mms[22m[39m
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould call updateRecentPosts immediately if document is already loaded[32m 4[2mms[22m[39m
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould add event listener if document is still loading[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould return an array of the same length[32m 2[2mms[22m[39m
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould contain all the same elements[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mrandom_from_list[2m > [22mshould return an element from the list[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mrandom_from_list[2m > [22mshould return undefined for empty list[32m 0[2mms[22m[39m
- [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould initialize recent posts module[32m 31[2mms[22m[39m
- [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould initialize recent all posts if container exists[32m 19[2mms[22m[39m
- [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould not initialize recent all posts if container doesn't exist[32m 16[2mms[22m[39m
- [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould call generateToc for both toc containers[32m 19[2mms[22m[39m
+ [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould initialize recent posts module[32m 28[2mms[22m[39m
+ [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould initialize recent all posts if container exists[32m 28[2mms[22m[39m
+ [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould not initialize recent all posts if container doesn't exist[32m 15[2mms[22m[39m
+ [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould call generateToc for both toc containers[32m 20[2mms[22m[39m
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mTOC functions[2m > [22mshould warn when TOC elements are not found[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mURL swapping function[2m > [22mshould handle production URL swapping[32m 0[2mms[22m[39m
-[90mstderr[2m | src/__tests__/featured-collapse.test.ts[2m > [22m[2mFeaturedCollapseManager[2m > [22m[2minitialization[2m > [22m[2mshould return false when button element is missing
-[22m[39mFeatured collapse elements not found
-
-[90mstderr[2m | src/__tests__/featured-collapse.test.ts[2m > [22m[2mFeaturedCollapseManager[2m > [22m[2minitialization[2m > [22m[2mshould return false when content element is missing
-[22m[39mFeatured collapse elements not found
-
-[90mstderr[2m | src/__tests__/featured-collapse.test.ts[2m > [22m[2mFeaturedCollapseManager[2m > [22m[2msetupFeaturedCollapse helper[2m > [22m[2mshould return null when elements do not exist
-[22m[39mFeatured collapse elements not found
-
 [90mstderr[2m | src/__tests__/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould show error message when getProcessedPages fails
 [22m[39m❌ Error loading recent posts: Error: Test error
     at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39msrc/__tests__/recent-posts.test.ts:503:69
@@ -153,23 +144,50 @@ Dev info - Branch: [1mnull[22m PR: [1mnull[22m Port: 4000
 [90mstderr[2m | src/__tests__/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould do nothing if container is not found
 [22m[39m❌ non-existent-container container not found in DOM
 
- [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22minitialization[2m > [22mshould initialize successfully when elements exist[32m 9[2mms[22m[39m
+[90mstderr[2m | src/__tests__/featured-collapse.test.ts[2m > [22m[2mFeaturedCollapseManager[2m > [22m[2minitialization[2m > [22m[2mshould return false when button element is missing
+[22m[39mFeatured collapse elements not found
+
+[90mstderr[2m | src/__tests__/featured-collapse.test.ts[2m > [22m[2mFeaturedCollapseManager[2m > [22m[2minitialization[2m > [22m[2mshould return false when content element is missing
+[22m[39mFeatured collapse elements not found
+
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould fetch and return URL info map[32m 8[2mms[22m[39m
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould throw error if url_info is missing[32m 4[2mms[22m[39m
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mconvertToPages[2m > [22mshould convert URL info map to array of page objects[32m 3[2mms[22m[39m
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mconvertToPages[2m > [22mshould handle missing properties with defaults[32m 2[2mms[22m[39m
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfilterRealPages[2m > [22mshould filter out pages with empty titles or descriptions[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22msortPagesByDate[2m > [22mshould sort pages by last_modified date, newest first[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22msortPagesByDate[2m > [22mshould fallback to doc_size if last_modified dates are missing[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22msortPagesByDate[2m > [22mshould not modify the original array[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgetRecentPages[2m > [22mshould return the specified number of pages[32m 2[2mms[22m[39m
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgetRecentPages[2m > [22mshould handle array with fewer pages than requested count[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgenerateRecentPagesHTML[2m > [22mshould generate correct HTML for recent pages[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgenerateRecentPagesHTML[2m > [22mshould truncate descriptions longer than 100 characters[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgenerateRecentPagesHTML[2m > [22mshould show message for empty pages array[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould update the container with recent posts HTML[32m 4[2mms[22m[39m
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould show error message when getProcessedPages fails[32m 13[2mms[22m[39m
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould call updateRecentPosts immediately if document is loaded[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould add event listener if document is still loading[32m 2[2mms[22m[39m
+[90mstderr[2m | src/__tests__/featured-collapse.test.ts[2m > [22m[2mFeaturedCollapseManager[2m > [22m[2msetupFeaturedCollapse helper[2m > [22m[2mshould return null when elements do not exist
+[22m[39mFeatured collapse elements not found
+
+ [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22minitialization[2m > [22mshould initialize successfully when elements exist[32m 10[2mms[22m[39m
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22minitialization[2m > [22mshould return false when button element is missing[32m 4[2mms[22m[39m
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22minitialization[2m > [22mshould return false when content element is missing[32m 2[2mms[22m[39m
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22minitialization[2m > [22mshould warn when elements are not found[32m 3[2mms[22m[39m
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mstate management[2m > [22mshould start in expanded state[32m 2[2mms[22m[39m
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mstate management[2m > [22mshould toggle to collapsed state[32m 2[2mms[22m[39m
- [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mstate management[2m > [22mshould toggle back to expanded state[32m 3[2mms[22m[39m
+ [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mstate management[2m > [22mshould toggle back to expanded state[32m 2[2mms[22m[39m
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mstate management[2m > [22mshould collapse directly[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mstate management[2m > [22mshould expand directly[32m 2[2mms[22m[39m
- [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mclick handling[2m > [22mshould toggle state on button click[32m 2[2mms[22m[39m
+ [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mstate management[2m > [22mshould expand directly[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mclick handling[2m > [22mshould toggle state on button click[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mclick handling[2m > [22mshould prevent default action on click[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mclick handling[2m > [22mshould handle multiple clicks correctly[32m 2[2mms[22m[39m
- [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mhelper methods[2m > [22mshould return elements via getElements[32m 3[2mms[22m[39m
+ [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mclick handling[2m > [22mshould handle multiple clicks correctly[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mhelper methods[2m > [22mshould return elements via getElements[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mhelper methods[2m > [22mshould return state copy via getState[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22msetupFeaturedCollapse helper[2m > [22mshould return manager when elements exist[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22msetupFeaturedCollapse helper[2m > [22mshould return null when elements do not exist[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mcustom element IDs[2m > [22mshould work with custom button and content IDs[32m 2[2mms[22m[39m
+ [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mcustom element IDs[2m > [22mshould work with custom button and content IDs[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22medge cases[2m > [22mshould handle updateUI gracefully when elements are missing[32m 2[2mms[22m[39m
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22medge cases[2m > [22mshould maintain state even when UI update fails[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mlocalStorage persistence[2m > [22mshould save collapsed state to localStorage[32m 1[2mms[22m[39m
@@ -177,81 +195,58 @@ Dev info - Branch: [1mnull[22m PR: [1mnull[22m Port: 4000
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mlocalStorage persistence[2m > [22mshould load collapsed state from localStorage on initialization[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mlocalStorage persistence[2m > [22mshould load expanded state from localStorage on initialization[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mlocalStorage persistence[2m > [22mshould handle localStorage errors gracefully[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mlocalStorage persistence[2m > [22mshould clear saved state[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mlocalStorage persistence[2m > [22mshould clear saved state[32m 6[2mms[22m[39m
  [32m✓[39m src/__tests__/featured-collapse.test.ts[2m > [22mFeaturedCollapseManager[2m > [22mlocalStorage persistence[2m > [22mshould use custom storage key when provided[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould fetch and return URL info map[32m 8[2mms[22m[39m
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould throw error if url_info is missing[32m 4[2mms[22m[39m
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mconvertToPages[2m > [22mshould convert URL info map to array of page objects[32m 2[2mms[22m[39m
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mconvertToPages[2m > [22mshould handle missing properties with defaults[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfilterRealPages[2m > [22mshould filter out pages with empty titles or descriptions[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22msortPagesByDate[2m > [22mshould sort pages by last_modified date, newest first[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22msortPagesByDate[2m > [22mshould fallback to doc_size if last_modified dates are missing[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22msortPagesByDate[2m > [22mshould not modify the original array[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgetRecentPages[2m > [22mshould return the specified number of pages[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgetRecentPages[2m > [22mshould handle array with fewer pages than requested count[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgenerateRecentPagesHTML[2m > [22mshould generate correct HTML for recent pages[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgenerateRecentPagesHTML[2m > [22mshould truncate descriptions longer than 100 characters[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgenerateRecentPagesHTML[2m > [22mshould show message for empty pages array[32m 0[2mms[22m[39m
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould update the container with recent posts HTML[32m 3[2mms[22m[39m
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould show error message when getProcessedPages fails[32m 10[2mms[22m[39m
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould call updateRecentPosts immediately if document is loaded[32m 3[2mms[22m[39m
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould add event listener if document is still loading[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould log that Force Graph is loaded[32m 24[2mms[22m[39m
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould log that Force Graph is loaded[32m 21[2mms[22m[39m
  [2m[90m↓[39m[22m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould initialize the graph when the DOM element exists
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould not initialize the graph when the DOM element doesn't exist[32m 4[2mms[22m[39m
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle ForceGraph not being defined[32m 3[2mms[22m[39m
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould not initialize the graph when the DOM element doesn't exist[32m 3[2mms[22m[39m
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle ForceGraph not being defined[32m 2[2mms[22m[39m
  [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle node canvas object rendering[32m 3[2mms[22m[39m
  [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle goto control click[32m 2[2mms[22m[39m
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould build graph data correctly[32m 3[2mms[22m[39m
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould build graph data correctly[32m 2[2mms[22m[39m
  [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould update detail with node information[32m 3[2mms[22m[39m
+ [32m✓[39m src/__tests__/index.test.ts[2m > [22mIndex Module[2m > [22mshould initialize when ready[32m 22[2mms[22m[39m
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould toggle a class on an element when using a selector[32m 10[2mms[22m[39m
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould toggle a class on an element when using an element reference[32m 2[2mms[22m[39m
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould add a class when force parameter is true[32m 2[2mms[22m[39m
- [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould remove a class when force parameter is false[32m 2[2mms[22m[39m
+ [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould remove a class when force parameter is false[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould return null when element is not found[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mcreateElement[2m > [22mshould create an element with the specified tag[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mcreateElement[2m > [22mshould set attributes on the created element[32m 2[2mms[22m[39m
+ [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mcreateElement[2m > [22mshould set attributes on the created element[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mcreateElement[2m > [22mshould append text children to the element[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mcreateElement[2m > [22mshould append node children to the element[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mcreateElement[2m > [22mshould handle mixed text and node children[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find the immediate parent element matching a selector[32m 2[2mms[22m[39m
- [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find a distant parent element matching a selector[32m 2[2mms[22m[39m
+ [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find the immediate parent element matching a selector[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find a distant parent element matching a selector[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find a parent element by class selector[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould return null when no matching parent is found[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould generate correct HTML for a post preview[32m 3[2mms[22m[39m
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould generate correct HTML for a post preview[32m 2[2mms[22m[39m
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould encode URLs correctly[32m 0[2mms[22m[39m
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_random_post_html[2m > [22mshould generate HTML for a random post[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_random_post_html[2m > [22mshould handle errors gracefully[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_random_eulogy[2m > [22mshould load random eulogy roles[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_random_eulogy[2m > [22mshould load random eulogy roles[32m 2[2mms[22m[39m
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_random_eulogy[2m > [22mshould use default element IDs if not provided[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_random_eulogy[2m > [22mshould handle errors gracefully[32m 0[2mms[22m[39m
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_enjoy2[2m > [22mshould load content for the Enjoy page[32m 2[2mms[22m[39m
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_random_eulogy[2m > [22mshould handle errors gracefully[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_enjoy2[2m > [22mshould load content for the Enjoy page[32m 3[2mms[22m[39m
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_enjoy2[2m > [22mshould handle errors gracefully[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_7_habits[2m > [22mshould load content for the 7 Habits page[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_7_habits[2m > [22mshould handle errors gracefully[32m 0[2mms[22m[39m
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_7_habits[2m > [22mshould handle errors gracefully[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_ig66[2m > [22mshould load content for the IG66 page[32m 0[2mms[22m[39m
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_ig66[2m > [22mshould handle errors gracefully[32m 0[2mms[22m[39m
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_balance[2m > [22mshould load content for the Balance page[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_balance[2m > [22mshould load content for the Balance page[32m 2[2mms[22m[39m
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_balance[2m > [22mshould handle errors gracefully[32m 0[2mms[22m[39m
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_radar_map[2m > [22mshould create a radar map visualization[32m 0[2mms[22m[39m
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_radar_map[2m > [22mshould create a radar map visualization[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_radar_map[2m > [22mshould handle missing Plotly[32m 0[2mms[22m[39m
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_radar_map[2m > [22mshould handle errors gracefully[32m 0[2mms[22m[39m
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_work[2m > [22mshould create a work balance chart[32m 0[2mms[22m[39m
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_work[2m > [22mshould create a work balance chart[32m 2[2mms[22m[39m
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_work[2m > [22mshould handle missing Plotly[32m 0[2mms[22m[39m
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_work[2m > [22mshould handle errors gracefully[32m 0[2mms[22m[39m
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_desired_time_rest[2m > [22mshould create a rest time chart[32m 0[2mms[22m[39m
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_desired_time_rest[2m > [22mshould create a rest time chart[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_desired_time_rest[2m > [22mshould handle missing Plotly[32m 0[2mms[22m[39m
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_desired_time_rest[2m > [22mshould handle errors gracefully[32m 0[2mms[22m[39m
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mSevenHabits[2m > [22mshould create a tree with the correct structure[32m 4[2mms[22m[39m
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mSevenHabits[2m > [22mshould create a tree with the correct structure[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mThingsIEnjoy[2m > [22mshould create a tree with the correct structure[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mConstants[2m > [22mshould export the correct constants[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/index.test.ts[2m > [22mIndex Module[2m > [22mshould initialize when ready[32m 22[2mms[22m[39m
- [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould exclude header icon elements when generating TOC text[32m 10[2mms[22m[39m
- [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle headers with nested non-icon elements correctly[32m 2[2mms[22m[39m
- [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle headers with only text content[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould properly escape quotes in TOC text[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle empty headers gracefully[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mConstants[2m > [22mshould export the correct constants[32m 0[2mms[22m[39m
  [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould extract a parameter from a URL[32m 2[2mms[22m[39m
  [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould return null when parameter doesn't exist[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould return empty string when parameter has no value[32m 0[2mms[22m[39m
@@ -260,21 +255,45 @@ Dev info - Branch: [1mnull[22m PR: [1mnull[22m Port: 4000
  [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould generate HTML for a hit with title and content[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould generate HTML for a hit with anchor[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould handle hits without highlighted content[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould handle errors and return 'invalid HTML'[32m 3[2mms[22m[39m
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould handle errors and return 'invalid HTML'[32m 2[2mms[22m[39m
  [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mCreateSearch[2m > [22mshould create a search instance with the correct configuration[32m 2[2mms[22m[39m
  [2m[90m↓[39m[22m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mCreateAutoComplete[2m > [22mshould create an autocomplete instance with correct configuration
  [2m[90m↓[39m[22m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mCreateAutoComplete[2m > [22mshould handle element not found error
  [2m[90m↓[39m[22m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mCreateAutoComplete[2m > [22mshould handle autocompleteId with or without # prefix
- [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould create a tree node with given properties[32m 2[2mms[22m[39m
+ [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould exclude header icon elements when generating TOC text[32m 10[2mms[22m[39m
+ [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle headers with nested non-icon elements correctly[32m 2[2mms[22m[39m
+ [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle headers with only text content[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould properly escape quotes in TOC text[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/toc-generation.test.ts[2m > [22mTOC Generation with header icons[2m > [22mshould handle empty headers gracefully[32m 1[2mms[22m[39m
+[90mstdout[2m | src/__tests__/shared.test.ts[2m > [22m[2mShared Utility Functions[2m > [22m[2mappend_randomizer_div[2m > [22m[2mshould not append anything if parent is not found
+[22m[39mappend_randomizer_div #non-existent not present
+
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mMakeBackLinkHTML[2m > [22mshould generate correct HTML for a backlink[32m 2[2mms[22m[39m
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mrandom_from_list[2m > [22mshould return an element from the list[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mrandom_from_list[2m > [22mshould return undefined for empty list[32m 0[2mms[22m[39m
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mrandom_from_list[2m > [22mshould have a roughly even distribution over many calls[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mshuffle[2m > [22mshould return an array of the same length[32m 0[2mms[22m[39m
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mshuffle[2m > [22mshould contain all the same elements[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mshuffle[2m > [22mshould change the order of elements (most of the time)[32m 0[2mms[22m[39m
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mappend_randomizer_div[2m > [22mshould not append anything if parent is not found[32m 6[2mms[22m[39m
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mappend_randomizer_div[2m > [22mshould append content from the factory when parent is found[32m 2[2mms[22m[39m
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mappend_randomizer_div[2m > [22mshould handle click events on non-link elements[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mappend_randomizer_div[2m > [22mshould not regenerate content when clicking on a link[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould generate correct URL with path only[32m 0[2mms[22m[39m
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould generate correct URL with path and anchor[32m 0[2mms[22m[39m
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould handle special characters in path[32m 0[2mms[22m[39m
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould handle empty anchor gracefully[32m 0[2mms[22m[39m
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould handle undefined anchor[32m 0[2mms[22m[39m
+ [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould create a tree node with given properties[32m 3[2mms[22m[39m
  [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould use default values when not provided[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mbreadth_first_walk[2m > [22mshould return empty if node is null[32m 0[2mms[22m[39m
  [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mbreadth_first_walk[2m > [22mshould walk the tree in breadth-first order[32m 0[2mms[22m[39m
  [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mtree_to_plotly_data_format[2m > [22mshould convert tree to plotly format[32m 1[2mms[22m[39m
  [2m[90m↓[39m[22m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mcategory_to_prompts[2m > [22mshould extract prompts from categories
- [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mrender_prompt_for_category[2m > [22mshould render a prompt for a category[32m 2[2mms[22m[39m
+ [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mrender_prompt_for_category[2m > [22mshould render a prompt for a category[32m 3[2mms[22m[39m
  [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22madd_random_prompts[2m > [22mshould add random prompts for all categories[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22madd_sunburst[2m > [22mshould create a sunburst visualization[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22madd_sunburst[2m > [22mshould handle missing Plotly[32m 0[2mms[22m[39m
+ [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22madd_sunburst[2m > [22mshould handle missing Plotly[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22madd_sunburst[2m > [22mshould handle errors during plot creation[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mrandom_prompt_for_label[2m > [22mshould find a random prompt for a label[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mcategory_to_prompts_text[2m > [22mshould convert category elements to text with prompts[32m 1[2mms[22m[39m
@@ -284,28 +303,18 @@ Dev info - Branch: [1mnull[22m PR: [1mnull[22m Port: 4000
  [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mextract_tree_from_dom[2m > [22mshould use default parameters when not provided[32m 0[2mms[22m[39m
  [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mextract_tree_from_dom[2m > [22mshould handle mixed content between H2 elements[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mextract_tree_from_dom[2m > [22mshould use container selector when provided[32m 0[2mms[22m[39m
-[90mstdout[2m | src/__tests__/shared.test.ts[2m > [22m[2mShared Utility Functions[2m > [22m[2mappend_randomizer_div[2m > [22m[2mshould not append anything if parent is not found
-[22m[39mappend_randomizer_div #non-existent not present
-
- [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mMakeBackLinkHTML[2m > [22mshould generate correct HTML for a backlink[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mrandom_from_list[2m > [22mshould return an element from the list[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mrandom_from_list[2m > [22mshould return undefined for empty list[32m 0[2mms[22m[39m
- [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mrandom_from_list[2m > [22mshould have a roughly even distribution over many calls[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mshuffle[2m > [22mshould return an array of the same length[32m 0[2mms[22m[39m
- [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mshuffle[2m > [22mshould contain all the same elements[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mshuffle[2m > [22mshould change the order of elements (most of the time)[32m 0[2mms[22m[39m
- [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mappend_randomizer_div[2m > [22mshould not append anything if parent is not found[32m 5[2mms[22m[39m
- [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mappend_randomizer_div[2m > [22mshould append content from the factory when parent is found[32m 2[2mms[22m[39m
- [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mappend_randomizer_div[2m > [22mshould handle click events on non-link elements[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mappend_randomizer_div[2m > [22mshould not regenerate content when clicking on a link[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould generate correct URL with path only[32m 0[2mms[22m[39m
- [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould generate correct URL with path and anchor[32m 0[2mms[22m[39m
- [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould handle special characters in path[32m 0[2mms[22m[39m
- [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould handle empty anchor gracefully[32m 0[2mms[22m[39m
- [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould handle undefined anchor[32m 0[2mms[22m[39m
- [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_imported_blog_posts[2m > [22mshould fetch and process blog posts[32m 6[2mms[22m[39m
- [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_eulogy_roles[2m > [22mshould fetch and process eulogy roles[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22mhtml_for_role[2m > [22mshould generate HTML for a role[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould fetch link info from local path when not in production[32m 6[2mms[22m[39m
+ [32m✓[39m src/__tests__/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould fetch link info from GitHub when in production[32m 2[2mms[22m[39m
+ [32m✓[39m src/__tests__/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould handle fetch errors gracefully[32m 2[2mms[22m[39m
+ [32m✓[39m src/__tests__/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould cache responses and not make additional requests[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mHomepage Featured Posts[2m > [22mshould fetch featured posts from backlinks data[32m 3[2mms[22m[39m
+ [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mHomepage Featured Posts[2m > [22mshould fetch from backlinks instead of Algolia search[32m 2[2mms[22m[39m
+ [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mHomepage Featured Posts[2m > [22mshould truncate long descriptions to 150 characters[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mFeatured Page Data Structure[2m > [22mshould have correct data structure for featured.yml[32m 2[2mms[22m[39m
+ [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mFeatured Page Data Structure[2m > [22mshould render featured posts fetched from backlinks[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould not create duplicate entries when processing summary links[32m 2[2mms[22m[39m
+ [32m✓[39m src/__tests__/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould handle redirects correctly without duplication[32m 2[2mms[22m[39m
+ [32m✓[39m src/__tests__/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould identify the root cause of duplicate related posts[32m 1[2mms[22m[39m
 [90mstdout[2m | src/__tests__/dev-info.test.ts[2m > [22m[2mdev-info[2m > [22m[2mgetCurrentPR[2m > [22m[2mshould return PR number when global variable is set
 [22m[39mPR from global variable: [33m123[39m
 
@@ -317,26 +326,17 @@ Dev info - Branch: [1mnull[22m PR: [1mnull[22m Port: 4000
 
  [32m✓[39m src/__tests__/dev-info.test.ts[2m > [22mdev-info[2m > [22misDevServer[2m > [22mshould return true for localhost[32m 2[2mms[22m[39m
  [32m✓[39m src/__tests__/dev-info.test.ts[2m > [22mdev-info[2m > [22misDevServer[2m > [22mshould return true for 127.0.0.1[32m 0[2mms[22m[39m
- [32m✓[39m src/__tests__/dev-info.test.ts[2m > [22mdev-info[2m > [22misDevServer[2m > [22mshould return false for production domain[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/dev-info.test.ts[2m > [22mdev-info[2m > [22misDevServer[2m > [22mshould return false for production domain[32m 0[2mms[22m[39m
  [32m✓[39m src/__tests__/dev-info.test.ts[2m > [22mdev-info[2m > [22mgetCurrentPort[2m > [22mshould return port when specified[32m 0[2mms[22m[39m
  [32m✓[39m src/__tests__/dev-info.test.ts[2m > [22mdev-info[2m > [22mgetCurrentPort[2m > [22mshould return 80 when no port specified[32m 0[2mms[22m[39m
  [32m✓[39m src/__tests__/dev-info.test.ts[2m > [22mdev-info[2m > [22mgetCurrentPort[2m > [22mshould return 4000 for Jekyll default[32m 0[2mms[22m[39m
  [32m✓[39m src/__tests__/dev-info.test.ts[2m > [22mdev-info[2m > [22mgetCurrentPR[2m > [22mshould return PR number when global variable is set[32m 2[2mms[22m[39m
  [32m✓[39m src/__tests__/dev-info.test.ts[2m > [22mdev-info[2m > [22mgetCurrentPR[2m > [22mshould return null when PR is not set[32m 0[2mms[22m[39m
  [32m✓[39m src/__tests__/dev-info.test.ts[2m > [22mdev-info[2m > [22mgetCurrentPR[2m > [22mshould return null when PR is not a number[32m 0[2mms[22m[39m
- [32m✓[39m src/__tests__/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould fetch link info from local path when not in production[32m 10[2mms[22m[39m
- [32m✓[39m src/__tests__/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould fetch link info from GitHub when in production[32m 2[2mms[22m[39m
- [32m✓[39m src/__tests__/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould handle fetch errors gracefully[32m 2[2mms[22m[39m
- [32m✓[39m src/__tests__/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould cache responses and not make additional requests[32m 2[2mms[22m[39m
- [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mHomepage Featured Posts[2m > [22mshould fetch featured posts from backlinks data[32m 3[2mms[22m[39m
- [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mHomepage Featured Posts[2m > [22mshould fetch from backlinks instead of Algolia search[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mHomepage Featured Posts[2m > [22mshould truncate long descriptions to 150 characters[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mFeatured Page Data Structure[2m > [22mshould have correct data structure for featured.yml[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/featured-posts.test.ts[2m > [22mFeatured Posts[2m > [22mFeatured Page Data Structure[2m > [22mshould render featured posts fetched from backlinks[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould not create duplicate entries when processing summary links[32m 2[2mms[22m[39m
- [32m✓[39m src/__tests__/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould handle redirects correctly without duplication[32m 2[2mms[22m[39m
- [32m✓[39m src/__tests__/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould identify the root cause of duplicate related posts[32m 1[2mms[22m[39m
- [32m✓[39m src/__tests__/swap-prod-test.test.ts[2m > [22mSwapProdAndTest[2m > [22mwhen swapping from production to test[2m > [22mshould swap from production to localhost with default port 4000[32m 2[2mms[22m[39m
+ [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_imported_blog_posts[2m > [22mshould fetch and process blog posts[32m 6[2mms[22m[39m
+ [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_eulogy_roles[2m > [22mshould fetch and process eulogy roles[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22mhtml_for_role[2m > [22mshould generate HTML for a role[32m 1[2mms[22m[39m
+ [32m✓[39m src/__tests__/swap-prod-test.test.ts[2m > [22mSwapProdAndTest[2m > [22mwhen swapping from production to test[2m > [22mshould swap from production to localhost with default port 4000[32m 1[2mms[22m[39m
  [32m✓[39m src/__tests__/swap-prod-test.test.ts[2m > [22mSwapProdAndTest[2m > [22mwhen swapping from production to test[2m > [22mshould preserve the current port when available[32m 0[2mms[22m[39m
  [32m✓[39m src/__tests__/swap-prod-test.test.ts[2m > [22mSwapProdAndTest[2m > [22mwhen swapping from test to production[2m > [22mshould swap from localhost:4000 to production[32m 0[2mms[22m[39m
  [32m✓[39m src/__tests__/swap-prod-test.test.ts[2m > [22mSwapProdAndTest[2m > [22mwhen swapping from test to production[2m > [22mshould swap from localhost:4002 to production[32m 0[2mms[22m[39m
@@ -344,7 +344,7 @@ Dev info - Branch: [1mnull[22m PR: [1mnull[22m Port: 4000
 
 [2m Test Files [22m [1m[32m19 passed[39m[22m[90m (19)[39m
 [2m      Tests [22m [1m[32m233 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (238)[39m
-[2m   Start at [22m 05:16:06
-[2m   Duration [22m 4.89s[2m (transform 605ms, setup 272ms, collect 902ms, tests 571ms, environment 7.73s, prepare 1.67s)[22m
+[2m   Start at [22m 05:20:04
+[2m   Duration [22m 4.93s[2m (transform 667ms, setup 276ms, collect 906ms, tests 572ms, environment 7.80s, prepare 1.69s)[22m
 
 </pre></body></html>
