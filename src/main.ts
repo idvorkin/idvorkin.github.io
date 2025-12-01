@@ -13,6 +13,7 @@ import {
 } from "./shared";
 // Import graph but we'll only initialize it from the graph.html page
 import "./graph";
+import { initDevInfo } from "./dev-info";
 import { enableHeaderCopyLinks } from "./header-copy-link";
 import { enableImageZoom } from "./image-zoom";
 
@@ -51,13 +52,16 @@ function SwapProdAndTest() {
   /* Find page title. */
   const url = window.location.href;
   const prodPrefix = "https://idvork.in";
-  const testPrefix = "http://localhost:4000";
+  // Get the current port from the URL
+  const currentPort = window.location.port || "4000";
+  const testPrefix = `http://localhost:${currentPort}`;
   const isProd = url.includes(prodPrefix);
   let newURL = url;
   if (isProd) {
     newURL = url.replace(prodPrefix, testPrefix);
   } else {
-    newURL = url.replace(testPrefix, prodPrefix);
+    // When swapping from test to prod, we need to handle any port number
+    newURL = url.replace(/http:\/\/localhost:\d+/, prodPrefix);
   }
 
   window.location.href = newURL;
@@ -373,7 +377,8 @@ async function get_back_links(): Promise<IBacklinks> {
 }
 
 function search() {
-  $("#autocomplete-search-box-button").click();
+  // Redirect to main page for search
+  window.location.href = "/";
 }
 
 function keyboard_shortcut_loader() {
@@ -503,9 +508,20 @@ function load_globals() {
 
   // Initialize image zoom functionality
   enableImageZoom();
+
+  // Initialize dev info display
+  initDevInfo();
 }
 
-export { load_globals, get_link_info, shuffle, random_from_list, append_randomizer_div, enableHeaderCopyLinks };
+export {
+  load_globals,
+  get_link_info,
+  shuffle,
+  random_from_list,
+  append_randomizer_div,
+  enableHeaderCopyLinks,
+  initDevInfo,
+};
 
 // Auto-initialize when the script loads
 if (typeof $ !== "undefined" && $.fn && $.fn.ready) {

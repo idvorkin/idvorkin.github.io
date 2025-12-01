@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Time off X-mas 2021
+permalink: /timeoff-2021-12
 ---
 
 It's Corona virus X-mas 2021, the not so bad edition, and I've got 2 weeks off. In an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation I'm going to pre-write what I want to get done, and adjust it as I go.
@@ -27,7 +28,7 @@ My top priorities: - Restart my morning habit routine, cardio and magic. - Figur
 - Got Zach prepped to walk home from work.
 - Ammon reminded me the importance of jumping in the lake
 - Started Intermittent Fasting
-- Honored my desire not to go deep into tech for the sake of tech (because I did it [last time off](/d/time-off-2021-11))
+- Honored my desire not to go deep into tech for the sake of tech (because I did it [last time off](/timeoff-2021-11))
 - Thought pretty deeply about balance and activation energy.
 
 <!-- prettier-ignore-start -->
@@ -68,7 +69,7 @@ My top priorities: - Restart my morning habit routine, cardio and magic. - Figur
 
 ## Top Learnings
 
-- This year, reads almost [identical to last year](/d/time-off-2020-12). Not sure if that means I've solved it, or I'm stuck in a local maximum? I guess regardless I'm not regressing.
+- This year, reads almost [identical to last year](/timeoff-2020-12). Not sure if that means I've solved it, or I'm stuck in a local maximum? I guess regardless I'm not regressing.
 - Balance, it's all about balance!
 - Prepare before you take time off so when you go in you don't need to spend much time vegetating.
 - Pre-writing your desires for time off is good and helps you hit it. Need to think through how to have the right goals, not too hard so you feel bad, but not so easy that you feel unsatisfied.

@@ -12,6 +12,6 @@ layout: post
 -->
 <grammarly-editor-plugin config.activation="immediate">
 <div class="mb-3">
-    <textarea class="form-control" id="grammarlyinput" rows="10">Try some poorly written text. Theyre dog is blue</textarea>
+    <textarea class="form-control" id="grammarlyinput" rows="10">Try some poorly written text. Their dog is blue</textarea>
 </div>
 </grammarly-editor-plugin>

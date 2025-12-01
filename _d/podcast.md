@@ -18,9 +18,9 @@ To my amazement, I listen to podcasts. I think they're pretty interesting, here 
   - [How did I end up listening to podcasts](#how-did-i-end-up-listening-to-podcasts)
   - [Why we podcast From Kris Jenkins:](#why-we-podcast-from-kris-jenkins)
   - [Links to Digest](#links-to-digest)
-  - [Podcasts I listent to.](#podcasts-i-listent-to)
+  - [Podcasts I listen to.](#podcasts-i-listen-to)
 - [Tech](#tech)
-  - [Tech Podcasts I listent to.](#tech-podcasts-i-listent-to)
+  - [Tech Podcasts I listen to.](#tech-podcasts-i-listen-to)
   - [AI Generated Podcasts - Google's NotebookLLM](#ai-generated-podcasts---googles-notebookllm)
   - [Podcast as GPT Output](#podcast-as-gpt-output)
   - [My own podcast generator](#my-own-podcast-generator)
@@ -47,11 +47,11 @@ To my amazement, I listen to podcasts. I think they're pretty interesting, here 
 
 ### Links to Digest
 
-### Podcasts I listent to.
+### Podcasts I listen to.
 
 ## Tech
 
-### Tech Podcasts I listent to.
+### Tech Podcasts I listen to.
 
 - Kris Jenkins
 - Sharp Tech
@@ -63,7 +63,7 @@ Google made [NotebookLM](https://notebooklm.google.com/) as a sleeper hit. Basic
 - Get tech depth from Simon: https://simonwillison.net/tags/notebooklm/
 - There is magic in how the hosts do the non-human banter. I lost the word for what this is.
 
-w00t - you can call the model [youself now](https://github.com/idvorkin/nlp/blob/a756b866b0cc1b6fdd24d2eb50cef9f46c749ed6/tts.py?plain=1#L169)
+w00t - you can call the model [yourself now](https://github.com/idvorkin/nlp/blob/a756b866b0cc1b6fdd24d2eb50cef9f46c749ed6/tts.py?plain=1#L169)
 
 ### Podcast as GPT Output
 

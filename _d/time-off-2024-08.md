@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Time off August 2024
-imagefeaturelocal: raccoon-vacation.png
-permalink: /time-off-2024-08
+permalink: /timeoff-2024-08
+imagefeaturelocal: raccoon-vacation.webp
 redirect_from:
+  - /time-off-2024-08
   - /time-off-next
   - /time-off-now
 ---
@@ -284,7 +285,7 @@ Using alfred and yabai:
 
 {%include youtube.html src="_isNIAuHnEg" %}
 
-OK, yabai is cool, I think aerospace will end up better, but I need to [support resizing splits](https://github.com/nikitabobko/AeroSpace/issues/266), which yabaio does very nicely as I like to switch from halfs to thirds.
+OK, yabai is cool, I think aerospace will end up better, but I need to [support resizing splits](https://github.com/nikitabobko/AeroSpace/issues/266), which yabaio does very nicely as I like to switch from halves to thirds.
 
 Using think.py:
 
@@ -296,7 +297,7 @@ Using think.py:
 
 ### CUT
 
-- Outline my talk for GPT, likley based on on Langchain tools
+- Outline my talk for GPT, likely based on on Langchain tools
 
 ## Cognitive Health (X/5)
 

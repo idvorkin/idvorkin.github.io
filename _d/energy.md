@@ -45,6 +45,12 @@ There is an analogy here with physical devices, like cars have a starter motor w
 
 Let's say I'd naturally have 4 hours of energy today. Let's say I drink a ton of coffee and add an extra 1 hours. That gives me 5 hours of energy! w00t! But then, since I'm jacked up on caffeine, I sleep poorly, and am slogging through tomorrow, and operating at 50% efficiency for most of the 4 hours the next day, basically losing 1 hour. So, now I'm actually down an hour over 2 days. Ugh. And worse, I'm in debt as that energy was probably allocated to something else.
 
+### Sometimes less energy is more
+
+Not every situation calls for high energy. Your body has different modes for different needs. Learn when to slow down and activate your parasympathetic nervous system for recovery, creativity, and deeper connection.
+
+{%include summarize-page.html src="/slow"%}
+
 ### You can reduce the energy required
 
 - See productivity
@@ -58,31 +64,28 @@ Let's say I'd naturally have 4 hours of energy today. Let's say I drink a ton of
 
 [Mood](/mood) can also look like arousal and valence
 
-```mermaid
-quadrantChart
-  x-axis "Low Pleasure" --> "High Pleasure"
-  y-axis Low Arousal  --> "High Arousal"
-  quadrant-1 "Euphoria"
-  quadrant-2 "Agitation"
-  quadrant-3 Melancholy
-  quadrant-4 Serenity
-  "Joy": [0.8, 0.8]
-  "Thrill": [0.9, 0.9]
-  "Delight": [0.7, 0.7]
-  "Excitement": [0.85, 0.85]
-  "Anger": [0.2, 0.8]
-  "Anxiety": [0.1, 0.9]
-  "Stress": [0.15, 0.75]
-  "Frustration": [0.25, 0.85]
-  "Sadness": [0.1, 0.1]
-  "Depression": [0.05, 0.2]
-  "Boredom": [0.2, 0.2]
-  "Despair": [0.15, 0.15]
-  "Contentment": [0.7, 0.2]
-  "Relaxation": [0.8, 0.1]
-  "Peace": [0.75, 0.15]
-  "Satisfaction": [0.65, 0.25]
-```
+{% include quadrant-matrix.html
+    title="Mood & Energy States"
+    subtitle="Arousal and valence mapping"
+    x_label="Pleasure →"
+    y_label="Arousal →"
+    q1_name="EUPHORIA"
+    q1_subtitle="High Arousal + High Pleasure"
+    q1_traits="Joy<br>Thrill<br>Delight<br>Excitement"
+    q1_color="rgba(255,242,230,0.7)"
+    q2_name="AGITATION"
+    q2_subtitle="High Arousal + Low Pleasure"
+    q2_traits="Anger<br>Anxiety<br>Stress<br>Frustration"
+    q2_color="rgba(255,238,238,0.7)"
+    q3_name="MELANCHOLY"
+    q3_subtitle="Low Arousal + Low Pleasure"
+    q3_traits="Sadness<br>Depression<br>Boredom<br>Despair"
+    q3_color="rgba(230,230,250,0.5)"
+    q4_name="SERENITY"
+    q4_subtitle="Low Arousal + High Pleasure"
+    q4_traits="Contentment<br>Relaxation<br>Peace<br>Satisfaction"
+    q4_color="rgba(232,244,234,0.7)"
+%}
 
 ### Do we want to always be high energy?
 

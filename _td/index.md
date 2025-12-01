@@ -142,7 +142,7 @@ Just like kanban, you don't want too many projects in flight, and this list remi
 
 ### Mothballed
 
-Several Projects that I started and deliberatly mothballed so I'd have capacity for my other projects
+Several Projects that I started and deliberately mothballed so I'd have capacity for my other projects
 
 - [Deploy a private web site](private_web_site)
 - [Windows Virtual Desktop](virtual-desktops)

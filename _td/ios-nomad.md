@@ -1,7 +1,7 @@
 ---
 layout: post
 no-render-title: true
-title: iOS Software engineer nomad howto
+title: iOS Software Engineer Nomad How-To
 ---
 
 So you want to be an iPad Developer Nomad. A person who can do all their development on the iPad. I'm not sure why you'd want to be such a character, in fact, I'm not sure why I want to be such a character, but I do, and here's how I do it. To be a developer nomad, you better already be a command line wiz. If you're not at an expert at the terminal, vim or Emacs and TMUX - don't even try.
@@ -156,7 +156,7 @@ The main complexity with hybrid development is keeping everything in sync. To do
 
 <https://github.com/idvorkin/Settings/blob/master/shared/cron_git_sync.sh>
 
-The two gaps here are merge conflicts (which I handle manually), and not syncing on my iPad, which is tricky because I haven't found a way to do a periodic timer to arbitray command execution yet (TK: Holler if you have a good way to do this)
+The two gaps here are merge conflicts (which I handle manually), and not syncing on my iPad, which is tricky because I haven't found a way to do a periodic timer to arbitrary command execution yet (TK: Holler if you have a good way to do this)
 
 ### The external keyboard
 

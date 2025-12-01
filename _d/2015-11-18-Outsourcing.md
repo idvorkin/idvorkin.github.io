@@ -4,6 +4,9 @@ title: "On outsourcing"
 author: "Igor Dvorkin"
 inprogress: true
 comments: true
+permalink: /outsourcing
+redirect_from:
+  - /d/2015-11-18-Outsourcing
 ---
 
 Time is my precious resource - I have a limited number of hours in my life, and once I've used them, I never get them back. However, I can preserve my time by outsourcing activities that don't have high enough return on investment. This post reminds me to outsource by enumerating my position on outsourcing, and the things I have outsourced.

@@ -2,6 +2,9 @@
 layout: post
 no-render-title: true
 title: Advertising
+permalink: /advertising
+redirect_from:
+  - /td/advertising
 ---
 
 Advertising is 155 billion business in the USA. Of that 155B, 85B is Digital and 70B is TV(digital platforms are invest ing in video to capture the TV spend. This post captures my understanding of that world.
@@ -21,7 +24,7 @@ Advertising is 155 billion business in the USA. Of that 155B, 85B is Digital and
     - [Performance and display](#performance-and-display)
     - [Ad Supply](#ad-supply)
     - [Ad inventory](#ad-inventory)
-    - [Retargetting](#retargetting)
+    - [Retargeting](#retargeting)
     - [CPM Cost per thousand views](#cpm-cost-per-thousand-views)
     - [ECPM Effective CPM](#ecpm-effective-cpm)
     - [CPC - Cost per click](#cpc---cost-per-click)
@@ -42,7 +45,7 @@ Advertising is 155 billion business in the USA. Of that 155B, 85B is Digital and
     - [Sponsored in feed](#sponsored-in-feed)
 - [Case study monetizing SnapChat](#case-study-monetizing-snapchat)
     - [No room in the camera](#no-room-in-the-camera)
-    - [Sponsored Lenses where a novel ad product, which they addded.](#sponsored-lenses-where-a-novel-ad-product-which-they-addded)
+    - [Sponsored Lenses where a novel ad product, which they added.](#sponsored-lenses-where-a-novel-ad-product-which-they-added)
     - [Sponsored Stories where also a novel ad product, which they added.](#sponsored-stories-where-also-a-novel-ad-product-which-they-added)
 - [Other concept](#other-concept)
     - [Gorilla Marketing](#gorilla-marketing)
@@ -53,7 +56,7 @@ Advertising is 155 billion business in the USA. Of that 155B, 85B is Digital and
     - [Brand sponsorship.](#brand-sponsorship)
     - [Consumer Payment + Tips](#consumer-payment--tips)
     - [Merch](#merch)
-    - [Bootstraping - Crowd funding](#bootstraping---crowd-funding)
+    - [Bootstrapping - Crowd funding](#bootstrapping---crowd-funding)
     - [Ads and sponsored spots](#ads-and-sponsored-spots)
 
 <!-- vim-markdown-toc-end -->
@@ -135,9 +138,9 @@ The number of sellable eyeballs. The ad load x ad supply.
 
 Creators generate "Ad Inventory", and the social media platform "sell" the inventory buy showing Ads (aka, using their Ad Supply)
 
-### Retargetting
+### Retargeting
 
-Following a user, this is when ads chase you accross sites.
+Following a user, this is when ads chase you across sites.
 
 ### CPM Cost per thousand views
 
@@ -193,9 +196,9 @@ When watching video/TicTo/Stories you get a video that iss sold from a brand,
 
 ### No room in the camera
 
-I'm not sure if this accurate, making it up. Snap had a challenge when it started life, because it was a camera company and there was no where to place ad invetory.
+I'm not sure if this accurate, making it up. Snap had a challenge when it started life, because it was a camera company and there was no where to place ad inventory.
 
-### Sponsored Lenses where a novel ad product, which they addded.
+### Sponsored Lenses where a novel ad product, which they added.
 
 ### Sponsored Stories where also a novel ad product, which they added.
 

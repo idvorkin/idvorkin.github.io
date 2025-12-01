@@ -81,7 +81,7 @@ Read my **[Eulogy](/eulogy)**. See my **[Memories ](/ig66)**
 ### Emotional
 
 - Meditate
-- Stream of conciousness journal
+- Stream of consciousness journal
 - Do altruistic joy
 - wish someone happiness (happy gun)
 - wish someone free of suffering

@@ -8,7 +8,7 @@ tags:
 permalink: /terzepatide
 ---
 
-"You know Igor, weight loss is a solved problem" - my bestie, texted me when I complained about my pants no longer fitting. Remember - Diet dominates weight, as weight is simple arithemtic -"calories in" minus "calories out". For me, will power dominates diet, and terzepatide dominates will power when stuffing things in my mouth. I started Terzepatide in February 2024, and so far it's been great.
+"You know Igor, weight loss is a solved problem" - my bestie, texted me when I complained about my pants no longer fitting. Remember - Diet dominates weight, as weight is simple arithmetic -"calories in" minus "calories out". For me, will power dominates diet, and terzepatide dominates will power when stuffing things in my mouth. I started Terzepatide in February 2024, and so far it's been great.
 
 <!-- prettier-ignore-start -->
 
@@ -29,7 +29,7 @@ permalink: /terzepatide
 
 ## What's it like?
 
-To quote Ammon again. "It's kind of how I imagined normal people are - they eat, they enjoy the food, savoring it, and then they stop". That's exatly what it's like.
+To quote Ammon again. "It's kind of how I imagined normal people are - they eat, they enjoy the food, savoring it, and then they stop". That's exactly what it's like.
 
 Do I magically lose weight? No! There is no physics defying magic here. It's still calories in minus calories out. The magic here is your body feels full, by drastically slowing your digestion and messing with some digestive plumbing.
 
@@ -77,7 +77,13 @@ I'll convert this to a graph, and all these numbers are made up:
 
 ### Muscle loss
 
-This is a bit of a misnomer, as the same can happen when dieting hard. I think the mitigations are lots of protein, I"m probably doing 1g\*lbs/day, and exercise, I"m currenlty doing 6 days/week.
+This is a bit of a misnomer, as the same can happen when dieting hard. I think the mitigations are lots of protein, I"m probably doing 1g\*lbs/day, and exercise, I"m currently doing 6 days/week.
+
+### Bryan Johnson's Tirzepatide Experiment Failure
+
+Bryan Johnson, who was microdosing tirzepatide (0.5mg weekly) not for weight loss but for potential longevity benefits like reduced dementia risk, [halted his experiment after just 3 weeks](https://x.com/bryan_johnson/status/1885024727095529895). The negative effects were immediate and measurable: his resting heart rate increased by 3 bpm (a 7% jump from his baseline mid-40s), his HRV dropped by 7 points, and his sleep quality deteriorated by 10%.
+
+For Johnson, this was an unacceptable trade-off. While GLP-1 drugs showed promise with a 12% reduction in Alzheimer's risk, they also carried a 12% increased risk of sleep disturbances - and sleep disorders, even for less than a year, are associated with a 63.8% increase in neurodegenerative disease risk. Since Johnson considers perfect sleep foundational to his longevity protocol, the immediate, measurable harm to his sleep and cardiovascular metrics far outweighed any theoretical long-term benefits that might take decades to materialize.
 
 ## FAQ
 

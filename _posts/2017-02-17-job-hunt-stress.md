@@ -20,6 +20,7 @@ Job hunts are stressful, and my goal for job hunts is getting the job I want whi
 - [Job hunt priorities](#job-hunt-priorities)
 - [Stressors and Mitigations](#stressors-and-mitigations)
 - [Learnings from my last job hunts](#learnings-from-my-last-job-hunts)
+- [Why Companies Pass on Great Candidates (And Why It's Not About You)](#why-companies-pass-on-great-candidates-and-why-its-not-about-you)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -63,7 +64,7 @@ The job hunting process is slow, with lots of unexpected and uncontrollable wait
 
 **Lack of options for next jobs**
 
-- Figure out what you want to accomplish - I throught through the [Business model You Canvas ](/bmu) and my [dream job](/dream-job) figuring it out.
+- Figure out what you want to accomplish - I thought through the [Business model You Canvas ](/bmu) and my [dream job](/dream-job) figuring it out.
 - Look around for who is hiring
 - Start and maintain a list of candidate jobs
 - Have a worst case scenario job
@@ -141,3 +142,30 @@ During your day job - your lowest priority
 During your the whole process - cut yourself some slack.
 
 {%include summarize-page.html src="/interviewsarehard" %}
+
+### Why Companies Pass on Great Candidates (And Why It's Not About You)
+
+**TL;DR**: False positives (bad hires) are extremely expensive for companies, so hiring committees will often reject really strong candidates who perform poorly in interviews (false negatives). Don't take rejection personally - keep going.
+
+The cost of a bad hire is enormous. A mis-hire can set a team back months, damage morale, require extensive management attention, and cost tens of thousands in recruiting and severance. Because of this, hiring committees are trained to be conservative - when in doubt, reject.
+
+This creates a system optimized to avoid false positives (hiring bad candidates) at the expense of creating many false negatives (rejecting good candidates). The math works in the company's favor: missing out on a great candidate costs them an opportunity, but hiring a bad candidate costs them real money and productivity.
+
+**A sobering example from Google:**
+
+From [the pragmatic engineer podcast](https://www.youtube.com/watch?v=TZE33qMYwsc&t=674s):
+
+Steve Yegge shared this story about his time on Google's hiring committee: "We were the ones that ultimately decided to make that hiring decision, you know the thumbs up, thumbs down type thing.
+
+Google tried to be the most objective in hiring, it had a separate hiring committee that looks at all interview feedback without knowing with the interviewers, or the candidates where.
+
+The recruiters did an exercise with us where they presented a bunch of packets. They just said, these were just a bunch of candidates, we're going to go and do the process on them. We Went through and we evaluated 'em all and decided we were going to not hire 60% of them.
+
+Turns out, we were reviewing our own packets, so we voted not to hire 60% of ourselves. And it was a very sobering realization! The next week or two was the best time to apply to Google. We were just like 'come on through'."
+
+**What this means for you:**
+
+- Rejection often says nothing about your actual abilities
+- Even successful people at top companies wouldn't hire themselves based on interview performance
+- The process is inherently flawed and biased toward rejection
+- Keep applying - the right opportunity and interviewer combination will happen

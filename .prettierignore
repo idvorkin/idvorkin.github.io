@@ -1,5 +1,7 @@
 # prettier messes up the jekyll tags in head
 _includes/head.html
+# prettier messes up the quadrant matrix formatting
+_includes/quadrant-matrix.html
 zz-chop-logs/**
 
 # Prettier reformats my python json
@@ -13,4 +15,5 @@ eulogy.json
 # Chop logs exclusions following chop-conventions
 .specstory/**
 zz-chop-logs
+published-chop-logs/**
 

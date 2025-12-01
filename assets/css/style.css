@@ -35,7 +35,7 @@
 /*
 All images in the container, should be full width. Can learn more markdown and re-style it
  */
-.container img {
+.container img:not(.float-right-img) {
   width: 100%;
 }
 /*
@@ -135,4 +135,26 @@ https://css-tricks.com/line-clampin/
   height: 24px !important;
   margin-right: 0 !important;
   object-fit: cover;
+}
+
+/* Float-right blog images that remain readable on mobile */
+.float-right-img {
+  float: right;
+  /* Smaller on desktop: between 140px and 220px, ~20% of content width */
+  max-width: clamp(140px, 20%, 220px);
+  width: 100%;
+  height: auto;
+  margin: 0 0 0.5rem 1rem;
+  clear: right; /* ensure a new image appears below any prior floated image */
+}
+
+@media (max-width: 768px) {
+  .float-right-img {
+    float: right;
+    display: inline;
+    /* Smaller than before on phones: between 120px and 220px, ~35% width */
+    max-width: clamp(120px, 35%, 220px);
+    width: auto;
+    margin: 0 0 0.5rem 0.75rem;
+  }
 }

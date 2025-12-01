@@ -43,6 +43,7 @@ Coaching is like midwifery. A midwife can not give birth to the baby, she facili
 - [One on One Questions](#one-on-one-questions)
 - [Situational coaching](#situational-coaching)
 - [Other coaching tools](#other-coaching-tools)
+- [Full disclosure: Coaching others is selfish too!](#full-disclosure-coaching-others-is-selfish-too)
 - [Fantastic video on coaching, improvement, and discomfort](#fantastic-video-on-coaching-improvement-and-discomfort)
 
 <!-- vim-markdown-toc-end -->
@@ -237,10 +238,28 @@ See the One on One Sections And One on One prompts in [the manager book](/the-ma
 
 As people take on new tasks requiring them to learn new skills, they go through a predictable, often painful, sequence of experiences. These experiences are based on the progression of commitment and competence, and each experience benefits from a different type of coaching described in [Situational Leadership](https://en.wikipedia.org/wiki/Situational_leadership_theory).
 
-| Competent/Confident | Committed                                                         | Discouraged                                                             |
-| ------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| **Incompetent**     | 1. Enthusiastic Beginner- Thinks they can do it, but can't        | 2. Disillusioned Learner - Knows they can't do it, and feels bad        |
-| **Competent**       | 4. Self Reliant Achiever - Know they can do it, and they're right | 3. Capable But Cautious- Thinks they can't do it, but actually they can |
+{% include quadrant-matrix.html
+    title="Learning Stages Matrix"
+    subtitle="The journey from beginner to achiever"
+    x_label="Commitment →"
+    y_label="Competence →"
+    q1_name="4. SELF-RELIANT ACHIEVER"
+    q1_subtitle="Competent + Committed"
+    q1_traits="Know they can do it<br>And they're right<br>Ready to lead"
+    q1_color="rgba(232,244,234,0.5)"
+    q2_name="3. CAPABLE BUT CAUTIOUS"
+    q2_subtitle="Competent + Discouraged"
+    q2_traits="Think they can't do it<br>But actually they can<br>Need confidence"
+    q2_color="rgba(255,229,180,0.5)"
+    q3_name="2. DISILLUSIONED LEARNER"
+    q3_subtitle="Incompetent + Discouraged"
+    q3_traits="Know they can't do it<br>Feel bad about it<br>Need support"
+    q3_color="rgba(230,230,250,0.5)"
+    q4_name="1. ENTHUSIASTIC BEGINNER"
+    q4_subtitle="Incompetent + Committed"
+    q4_traits="Think they can do it<br>But can't yet<br>Need direction"
+    q4_color="rgba(255,224,224,0.5)"
+%}
 
 When competence is low, coach for direction, when commitment is low coach for support.
 
@@ -270,10 +289,28 @@ When competence is low, coach for direction, when commitment is low coach for su
 - Share your own experiences achieving the task and goal
 - Share why the task and goal is important
 
-| Competent/Committed | Commitment                                     | Discouraged                                     |
-| ------------------- | ---------------------------------------------- | ----------------------------------------------- |
-| **Incompetent**     | 1. Instruct and Explain - Tell them what to do | 2. Guide and Encourage - Show them how to do it |
-| **Competent**       | 4. Empower - Explain Why Not                   | 3. Facilitate - Explain Why.                    |
+{% include quadrant-matrix.html
+    title="Coaching Support Matrix"
+    subtitle="How to coach at each learning stage"
+    x_label="Commitment →"
+    y_label="Competence →"
+    q1_name="4. EMPOWER"
+    q1_subtitle="For Self-Reliant Achievers"
+    q1_traits="Explain why not<br>Remove obstacles<br>Give autonomy"
+    q1_color="rgba(232,244,234,0.5)"
+    q2_name="3. FACILITATE"
+    q2_subtitle="For Capable but Cautious"
+    q2_traits="Explain why<br>Build confidence<br>Provide context"
+    q2_color="rgba(255,229,180,0.5)"
+    q3_name="2. GUIDE & ENCOURAGE"
+    q3_subtitle="For Disillusioned Learners"
+    q3_traits="Show them how<br>Provide support<br>Share experiences"
+    q3_color="rgba(230,230,250,0.5)"
+    q4_name="1. INSTRUCT & EXPLAIN"
+    q4_subtitle="For Enthusiastic Beginners"
+    q4_traits="Tell them what to do<br>Set clear goals<br>Monitor progress"
+    q4_color="rgba(255,224,224,0.5)"
+%}
 
 If you're feeling down because you are a Disillusioned Learner or Capable but Cautious, know you're not alone, and consider reading [Self leadership and the one minute manager](https://www.amazon.com/dp/0060799129), it's a quick, easy, read that has a powerful message.\*
 
@@ -286,6 +323,16 @@ Below are some other good coaching tools I need to write more details on:
 - Imagery cards - Use cards with images on them to illicit from people what picture represents what concept, then have a discussion. E.g. which of these pictures represents leadership to you? OK, help me see how that shows a leader to you.
 
 - [Prompts](/prompts)
+
+### Full disclosure: Coaching others is selfish too!
+
+Coaching has a selfish benefit - most challenges others face, we face too. It's easier to see someone else's situation clearly than our own.
+
+When I coach someone through imposter syndrome or work-life balance, I'm dealing with my own struggles too. The questions I ask others - "What would success look like?" "What's the real challenge here?" - are questions I need to ask myself.
+
+By helping others see their situation clearly, we practice seeing our own more clearly. The coaching questions that unlock insights for them work on us too. We just forget to ask them.
+
+This is the greedy part - every coaching session reminds us to apply our own coaching questions to ourselves. The clarity we help others find becomes our own.
 
 ### Fantastic video on coaching, improvement, and discomfort
 

@@ -47,7 +47,7 @@ See [them in my project](https://github.com/idvorkin/cat-lady-2/blob/main/.vscod
   - With Selene - enable roblox mode
 - Good Code Completion - Roblox LSP
 - Better Debugging in VS.Code - Roblox Output Sync
-- Langague Support - Lua Plugin
+- Language Support - Lua Plugin
 
 Not Sure I use this:
 
@@ -55,7 +55,7 @@ Not Sure I use this:
 
 ### Package managers
 
-1. crates intall foreman
+1. crates install foreman
 2. ~/.cargo/bin/foreman install
 
 #### Foreman - Install Tools

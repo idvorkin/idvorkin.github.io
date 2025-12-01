@@ -38,6 +38,8 @@ This post covers several books on the topic.
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
+{% include amazon.html asin="059319148X;0593545400" %}
+
 ## From Strength To Strength
 
 TL;DR: Not sure if you felt like you were crushing it, or not through your late 30s, but you're going to start to decline. You can either deny it and suffer, or embrace it and optimize for the next set of skills you can develop

@@ -13,7 +13,7 @@ Vibe coding is the name for letting the ai write your code. The magic lies in AI
   - [Business logic: PRD/User Stories](#business-logic-prduser-stories)
   - [Which changes go where: Architecture](#which-changes-go-where-architecture)
   - [The "taste" of code: Clean Code Best Practices](#the-taste-of-code-clean-code-best-practices)
-  - [The "readablity" of code: Language specific best practices](#the-readablity-of-code-language-specific-best-practices)
+  - [The "readability" of code: Language specific best practices](#the-readability-of-code-language-specific-best-practices)
   - [The "environment" - Tool chains, CI/CD, Commit Hooks, etc](#the-environment---tool-chains-cicd-commit-hooks-etc)
 - [The fix: Verification](#the-fix-verification)
   - [The long journey: optimizing verification](#the-long-journey-optimizing-verification)
@@ -22,7 +22,7 @@ Vibe coding is the name for letting the ai write your code. The magic lies in AI
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-The key to making vibe coding as productive as possible is having spefications, and verification.
+The key to making vibe coding as productive as possible is having specifications, and verification.
 
 ## The fix: Specifications
 
@@ -36,7 +36,7 @@ For a comprehensive example of codified development practices and conventions, s
 
 ### The "taste" of code: Clean Code Best Practices
 
-### The "readablity" of code: Language specific best practices
+### The "readability" of code: Language specific best practices
 
 ### The "environment" - Tool chains, CI/CD, Commit Hooks, etc
 

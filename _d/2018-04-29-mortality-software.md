@@ -20,9 +20,11 @@ Mortality is a word avoided. But, earlier or later, we all face it. Life is fini
   - [Why mortality software?](#why-mortality-software)
 - [How will it work?](#how-will-it-work)
   - [Creating your future - Tool overview](#creating-your-future---tool-overview)
-    - [Role and Value Finder, Eulogy Writer](#role-and-value-finder-eulogy-writer)
+    - [Progression to finding yourself](#progression-to-finding-yourself)
+    - [Value Finder](#value-finder)
+    - [Role Finder + Eulogy Writer](#role-finder--eulogy-writer)
+    - [Affirmation Builder](#affirmation-builder)
     - [Quarter Month Tools - Goal Setter](#quarter-month-tools---goal-setter)
-    - [Define yourself: Affirmation Builder](#define-yourself-affirmation-builder)
   - [Learning from your past - Tool Overview](#learning-from-your-past---tool-overview)
     - [Why This Matters](#why-this-matters)
     - [Annual Review](#annual-review)
@@ -97,7 +99,39 @@ Mortality software will be both forward and backwards facing. By this I mean it 
 | Month -> Week    | Milestones                          | Habit Tracking              |
 | Week -> Day      | Task List                           | Habit/Time Tracker          |
 
-#### Role and Value Finder, Eulogy Writer
+#### Progression to finding yourself
+
+| Inputs           | Output       | Answers                              |
+| ---------------- | ------------ | ------------------------------------ |
+| Values           | Affirmations | You at your best                     |
+| Affirmations     | Virtues[^1]  | Improved, closer to you at your best |
+| Life Experiences | Roles        | Present You                          |
+| Roles + Values   | Purpose      | Why                                  |
+| Purpose + Roles  | Eulogy       | You at your best                     |
+| Eulogy + Values  | Goals        | What                                 |
+| Eulogy + Goals   | Actions      | Improved, closer to you at your best |
+
+[^1]: Virtues are the behaviors that embody your values in action. Values are abstract principles (like "compassion" or "integrity"), virtues are how you consistently live those values through specific behaviors and habits.
+
+#### Value Finder
+
+From the book Power of full engagement (see also [The Four Healths](/four-healths)),
+
+This tool will
+
+- List of values to choose from
+
+Then help you answer questions like
+
+- Ask at end of your life, what were biggest lessons
+- Think of someone you deeply respect, what qualities did they have that you most admired
+- Who are you when you're at your best
+- What one sentence inscription on your tombstone
+- What values would you like your kids to hold
+
+Then replay these things to you asking you to test if that's what you want.
+
+#### Role Finder + Eulogy Writer
 
 To figure out who you want to be, write your eulogy. To make it easier, figure out the roles in your life. Imagine the person who would speak to each role of your life during your funeral. What would you want each person to say? That eulogy is the person you want to be.
 
@@ -109,15 +143,7 @@ Most people who have gone through the eulogy process have found it incredibly di
 
 Many people find this hard to imagine, so here's as a simple example. The eulogy module can start by presenting you different people and their values. Based on how much those people and values resonate with you, mortality software can suggest values that might appeal to you.
 
-#### Quarter Month Tools - Goal Setter
-
-Some people are allergic to goals, a few prompts that are less allergic
-
-1. If I woke up 5 years from now and everything was the same? Would I be proud?
-2. What area of my life do I want to grow, what is a small step?
-3. If future you, met current you, what would they recommend you change?
-
-#### Define yourself: Affirmation Builder
+#### Affirmation Builder
 
 The affirmation builder helps you create personalized daily affirmations based on your roles, values, and goals. Rather than generic affirmations, it crafts statements that resonate with who you want to be and what you want to achieve. For examples of powerful affirmations, see my [affirmations post](/affirmations).
 
@@ -134,9 +160,22 @@ The key is that affirmations should be:
 
 The tool can also suggest times and ways to practice your affirmations, like during your morning routine or as part of meditation. The goal is to make the practice sustainable and meaningful rather than just another task.
 
+Probably some reflection to ask like:
+
+- How did you live your affirmations yesterday
+- How can you apply your affirmations today
+
 Learn more about affirmations and how they can transform your daily practice:
 
 {% include summarize-page.html src="/affirmations" %}
+
+#### Quarter Month Tools - Goal Setter
+
+Some people are allergic to goals, a few prompts that are less allergic
+
+1. If I woke up 5 years from now and everything was the same? Would I be proud?
+2. What area of my life do I want to grow, what is a small step?
+3. If future you, met current you, what would they recommend you change?
 
 ### Learning from your past - Tool Overview
 
@@ -237,7 +276,11 @@ Great to have someone write for you.
 
 ### Reflection Coach
 
-A module to help you reflect onw hat you're thinking. Probably permeates everything.
+A module to help you reflect on what you're thinking. Probably permeates everything.
+
+This concept came to life in practice:
+
+{% include summarize-page.html src="/bike-tesla-identity" %}
 
 ### Relationship Coach
 
@@ -281,7 +324,7 @@ This software causes two things that people really don't like 1/ Thinking you've
 
 Why people avoid it:
 
-- It feels aweful, read [on being mortal](/death)
+- It feels awful, read [on being mortal](/death)
 
 Mitigations
 

@@ -13,6 +13,7 @@ Waiting in line at the grocery store, sitting in an Uber, pooping - in these inv
 
 - [Why: Parasitic energy drain or regenerative braking](#why-parasitic-energy-drain-or-regenerative-braking)
   - [The first responder: boredom](#the-first-responder-boredom)
+  - [Mind the Gap](#mind-the-gap)
   - [Regenerative loops](#regenerative-loops)
   - [Parasitic energy drains](#parasitic-energy-drains)
 - [Other Resources](#other-resources)
@@ -24,7 +25,8 @@ Waiting in line at the grocery store, sitting in an Uber, pooping - in these inv
 
 ### The first responder: boredom
 
-With nothing to do, we experience the often phantom, [mental pain](/mental-pain) of boredom. To use an AI analogy, think of "not boredom" as the reward function in a reinforcement learning system. The "design intent" of the reward function is to ensure we're doing something productive (avoid doing nothing), and that we're growing (avoid monotonous tasks). However, just like ML models can do reward hacking by focusing on hacking the reward function, vs achieving the desired result, so can our brains.
+With nothing to do, we experience the often phantom, [mental pain](/mental-pain) of boredom. How bad is it? In a study [2 of 3 men and 1 in 4 women gave themselves electric shocks instead of just sitting there](https://pmc.ncbi.nlm.nih.gov/articles/PMC4330241/).
+To use an AI analogy, think of "not boredom" as the reward function in a reinforcement learning system. The "design intent" of the reward function is to ensure we're doing something productive (avoid doing nothing), and that we're growing (avoid monotonous tasks). However, just like ML models can do reward hacking by focusing on hacking the reward function, vs achieving the desired result, so can our brains.
 
 When we aren't [proactive](/7h-c1), we hack boredom via distracting parasitic loops. Parasitic loops take no energy, and are even occasionally satisfying, and they're a double whammy negative. They:
 
@@ -35,6 +37,25 @@ This is very similar to the often phantom, physical pain of hunger. If we aren't
 
 - Junk food prevents us from eating healthy food
 - Junk food erodes our health and diet.
+
+### Mind the Gap
+
+Some more thoughts to develop here.
+
+- Exercise Snacks
+- Analogy to snacking
+- Does how we spend these gaps train our attention
+- Why we have a gap
+  - We are transitioning between activities
+  - We have time before next thing starts
+  - We need a break from what we were doing
+  - One Tasking
+- Relationship to mindfulness
+  - Mindfuless/being present is on a pedestal - maybe it should be, who knows.
+- Stopping energy. Like if you fill gap with something hard to stop you won't go back
+- Reflecting is good, needs boredom.
+- At level 0, is reach out your phone and watch TikTok
+- At Level 100, mind you descend into mindfulness, but mayble level 10 is saying it's OK to be in the gap, and be mindful.
 
 ### Regenerative loops
 

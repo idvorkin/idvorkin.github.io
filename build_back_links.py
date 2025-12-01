@@ -262,6 +262,13 @@ class idvorkin_github_io_config:
 
         if path in "/ig66;/random;/tags;/about;/linkedin;/td".split(";"):
             return False
+
+        # Ignore links to chop logs (conversation transcripts)
+        if path.startswith("/published-chop-logs/") or path.startswith(
+            "/zz-chop-logs/"
+        ):
+            return False
+
         return path.startswith("/")
 
     def collection_dirs(self):
@@ -269,8 +276,13 @@ class idvorkin_github_io_config:
 
     def make_site_relative_url_from_url(self, url: PathType) -> PathType:
         # Jekyll generates URLs that include the host
-        url = url.replace("http://localhost:4000", "")
-        url = url.replace("http://0.0.0.0:4000", "")
+        # Strip localhost URLs with any port
+        import re
+
+        url = re.sub(r"http://localhost(:\d+)?", "", url)
+        url = re.sub(r"http://0\.0\.0\.0(:\d+)?", "", url)
+        url = url.replace("https://idvork.in", "")
+        url = url.replace("http://idvork.in", "")
         return PathType(url)
 
     def make_site_relative_url_from_path(self, path: FileType) -> PathType:
@@ -474,7 +486,7 @@ class LinkBuilder:
         for link in self.incoming_links.keys():
             self.incoming_links[link] = sorted(list(set(self.incoming_links[link])))
 
-        # dictionarys enumerate in insertion order, so rebuild dicts in insertion order
+        # dictionaries enumerate in insertion order, so rebuild dicts in insertion order
         def sort_dict(d):
             return {key: d[key] for key in sorted(d.keys(), key=lambda x: x.lower())}
 
@@ -491,7 +503,7 @@ class LinkBuilder:
 
     def __init__(self):
         self.incoming_links = defaultdict(list)  # forward -> back
-        self.redirects = {}  # url->[back_links]; # I don't need to serialzie these, but helpful for debugging.
+        self.redirects = {}  # url->[back_links]; # I don't need to serialize these, but helpful for debugging.
         self.pages = {}  # canonical->md
 
     def print_json(self, output_file="back-links.json"):
@@ -540,7 +552,7 @@ class LinkBuilder:
                 f,
                 default=page_encoder,
                 ensure_ascii=False,
-                indent=2,
+                indent=4,
                 sort_keys=True,
             )
 

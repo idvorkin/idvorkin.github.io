@@ -140,7 +140,9 @@ Partners always bemoan growing apart and no longer having shared interests. "We 
 
 **But they overlook the biggest shared interest of all.**
 
-Ask any parent what they care about most? Regardless of their "requested preference", I assure the revealed preference is their children. Reminiscing over old photos, bragging to anyone who will listen, or most glorious of all getting to spend time with them when they're engaging with you.
+Ask any parent what they care about most? Regardless of their stated preference, I assure their revealed preference is their children. Reminiscing over old photos, bragging to anyone who will listen, or most glorious of all getting to spend time with them when they're engaging with you.
+
+_For more on [stated vs revealed preferences](/product#stated-vs-revealed-preferences), see the product management concepts._
 
 **Your kids become your biggest shared interest**. Think about it - who else will value them as much as you do? Who else will celebrate their first steps, worry about their struggles, beam with pride at their achievements?
 
@@ -155,6 +157,28 @@ Ask any parent what they care about most? Regardless of their "requested prefere
 
 ### Love is a Verb, Not a Noun/Emotion
 
-Love is not an emotion/noun; it's a verb, a verb meaning act of service.
+Love is not an emotion/noun; it's a **verb**, a verb meaning **act of service**.
 
-TODO: Add the anecodte from the 7 habits
+**A conversation with Stephen Covey:**
+
+**Man:** "My wife and I just don't have the same feelings for each other we used to have. I guess I just don't love her anymore and she doesn't love me. What can I do?"
+
+**Covey:** "The feeling isn't there anymore?"
+
+**Man:** "That's right. And we have three children we're really concerned about. What do you suggest?"
+
+**Covey:** "Love her."
+
+**Man:** "I told you, the feeling just isn't there anymore."
+
+**Covey:** "Love her."
+
+**Man:** "You don't understand. The feeling of love just isn't there."
+
+**Covey:** "Then love her. If the feeling isn't there, that's a good reason to love her."
+
+**Man:** "But how do you love when you don't love?"
+
+**Covey:** "My friend, love is a verb. Love - the feeling - is a fruit of love, the verb. So love her. Serve her. Sacrifice. Listen to her. Empathize. Appreciate. Affirm her. Are you willing to do that?"
+
+**Love is the fruit of the plant of service.**

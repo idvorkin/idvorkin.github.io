@@ -10,6 +10,7 @@ permalink: /manager-book
 imagefeature: https://github.com/idvorkin/blob/raw/master/blog/racoon-manager.webp
 redirect_from:
   - /the-manager-book
+sort_order: 100
 ---
 
 Being an engineering manager is hard. Supporting people well is harder. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds me how to behave and encourages my own continuous improvement.
@@ -70,7 +71,7 @@ This post uses the word manager, but many topics apply to all job functions, reg
   - [How do you deal with a team that disagrees with the leadership](#how-do-you-deal-with-a-team-that-disagrees-with-the-leadership)
   - [Agency and Psychological Safety](#agency-and-psychological-safety)
   - [Kudos Boards - Appreciations](#kudos-boards---appreciations)
-  - [How do you like being questioned/micromanaged?](#how-do-you-like-being-questionedmicromanaged)
+  - [Is asking "Hey, did you ..." micromanaging/demonstrate a lack of trust?](#is-asking-hey-did-you--micromanagingdemonstrate-a-lack-of-trust)
   - [How do you transition from mercenaries to missionaries](#how-do-you-transition-from-mercenaries-to-missionaries)
 - [Process and Mechanism](#process-and-mechanism)
   - [Theory of Process](#theory-of-process)
@@ -135,11 +136,10 @@ This post uses the word manager, but many topics apply to all job functions, reg
     - [Space can be successful, just hasn't yet - hold the course](#space-can-be-successful-just-hasnt-yet---hold-the-course)
     - [Space can not be successful, or can't be successful in a reasonable time frame](#space-can-not-be-successful-or-cant-be-successful-in-a-reasonable-time-frame)
     - [How long should you keep a "To Be Pivotted" project](#how-long-should-you-keep-a-to-be-pivotted-project)
-  - [Telling the team about reorg/recharter](#telling-the-team-about-reorg-recharter)
+  - [Telling the team about reorg/recharter](#telling-the-team-about-reorgrecharter)
     - [The FAQ](#the-faq)
   - [How to handle Layoffs](#how-to-handle-layoffs)
     - [What's the best way to execute layoff announcements?](#whats-the-best-way-to-execute-layoff-announcements)
-    - [The FAQ](#the-faq)
 - [Personal Motivations](#personal-motivations)
   - [Why do you find management attractive](#why-do-you-find-management-attractive)
   - [What is your dream job](#what-is-your-dream-job)
@@ -397,7 +397,7 @@ To achieve these principles there are several tools:
 | Career Growth Plan        | 6m to 2y        | 3m                |
 | Pre Write Self Assessment | 1m to 6m        | 4w to 8w          |
 | Frequent Feedback         | Immediate       | As Needed         |
-| Situational Leadership    | Stage Dependant | Stage Dependant   |
+| Situational Leadership    | Stage Dependent | Stage Dependent   |
 
 ### How do you support folks with their career growth plans (CGPs)
 
@@ -431,7 +431,7 @@ Good self assessments are concise, focus on impact, and then how you delivered t
 - _[Clearly measurable impact]_ by _[work you've done yourself and/or with others]._
   - Relevant artifacts, or quote from others validating the claim.
 
-Here are some fictitious examples modelled on my own career:
+Here are some fictitious examples modeled on my own career:
 
 - Improved Azure virtual machine boot time from 12 minutes to 2 minutes at P90 by investigating end to end system behavior, understanding end 2 end system operation, creating and driving agreement to all up goal, and then working with teams to establish budgets, and holding them accountable to delivering them.
 
@@ -469,17 +469,53 @@ More details are in my [coaching post](/coaching). Here's a preview:
 
 As people learn new skills they experience a learning curve, which requires different support at different points on the curve. [Situational leadership](https://en.wikipedia.org/wiki/Situational_leadership_theory) describes this in detail, but in a nutshell, while learning new things, people go through this grid from 1 to 4.
 
-| Competent/Confident | Confident                                                   | Scared                                                          |
-| ------------------- | ----------------------------------------------------------- | --------------------------------------------------------------- |
-| Incompetent         | 1. Foolish Novice - Thinks they can do it, but really can't | 2. Novice - Knows they can't do it, and feels bad               |
-| Competent           | 4. Expert - Know they can do it, and they're right          | 3. Journey man - Thinks they can't do it, but actually they can |
+{% include quadrant-matrix.html
+    title="Learning Stages Matrix"
+    subtitle="The journey from novice to expert"
+    x_label="Confidence →"
+    y_label="Competence →"
+    q1_name="4. EXPERT"
+    q1_subtitle="Competent + Confident"
+    q1_traits="Know they can do it<br>And they're right<br>Ready to teach others"
+    q1_color="rgba(232,244,234,0.5)"
+    q2_name="3. JOURNEYMAN"
+    q2_subtitle="Competent + Scared"
+    q2_traits="Think they can't do it<br>But actually they can<br>Need confidence boost"
+    q2_color="rgba(255,229,180,0.5)"
+    q3_name="2. NOVICE"
+    q3_subtitle="Incompetent + Scared"
+    q3_traits="Know they can't do it<br>Feel bad about it<br>Need encouragement"
+    q3_color="rgba(230,230,250,0.5)"
+    q4_name="1. FOOLISH NOVICE"
+    q4_subtitle="Incompetent + Confident"
+    q4_traits="Think they can do it<br>But really can't<br>Need reality check"
+    q4_color="rgba(255,224,224,0.5)"
+%}
 
 In each of these stages different support is required.
 
-| Competent/Confident | Confident                                      | Scared                                          |
-| ------------------- | ---------------------------------------------- | ----------------------------------------------- |
-| Incompetent         | 1. Instruct and Explain - Tell them what to do | 2. Guide and Encourage - Show them how to do it |
-| Competent           | 4. Empower - Explain Why Not                   | 3. Facilitate - Explain Why.                    |
+{% include quadrant-matrix.html
+    title="Leadership Support Matrix"
+    subtitle="How to support people at each learning stage"
+    x_label="Confidence →"
+    y_label="Competence →"
+    q1_name="4. EMPOWER"
+    q1_subtitle="For Experts"
+    q1_traits="Explain why not<br>Remove obstacles<br>Give autonomy"
+    q1_color="rgba(232,244,234,0.5)"
+    q2_name="3. FACILITATE"
+    q2_subtitle="For Journeymen"
+    q2_traits="Explain why<br>Build confidence<br>Provide context"
+    q2_color="rgba(255,229,180,0.5)"
+    q3_name="2. GUIDE & ENCOURAGE"
+    q3_subtitle="For Novices"
+    q3_traits="Show them how<br>Provide support<br>Celebrate progress"
+    q3_color="rgba(230,230,250,0.5)"
+    q4_name="1. INSTRUCT & EXPLAIN"
+    q4_subtitle="For Foolish Novices"
+    q4_traits="Tell them what to do<br>Set clear expectations<br>Provide structure"
+    q4_color="rgba(255,224,224,0.5)"
+%}
 
 ### What are the level specific career expectations and growth strategies
 
@@ -518,6 +554,7 @@ My approach, and frequent peep questions.
 - [Amazon's Principle Engineer Roles](https://www.linkedin.com/pulse/principal-engineer-roles-framework-mai-lan-tomsen-bukovec-142df/)
 - Great post on being a [staff + level engineer](https://lethain.com//staff-plus-eng-resources/)
 - Are you clear on [Tech Lead, Architects and Managers](/software-leadership-roles).
+- Great articulation of [How to find the problems vs just solving them](https://www.instagram.com/p/DPAjDxxjUEf/)
 - What are you driving for our larger organization?
 - How are you maximizing our benefit?
 - How do we make sure we compliment each other?
@@ -732,7 +769,7 @@ Other thoughts:
 High order bits:
 
 1. Success is not "communication style", but ability to influence. Influence comes in many forms and mediums.
-1. Some things labelled communication problems, but they are much more serious and need to be handled differently. E.g. Lack of clarity of thought/intellectual horse power and being a jerk.
+1. Some things labeled communication problems, but they are much more serious and need to be handled differently. E.g. Lack of clarity of thought/intellectual horse power and being a jerk.
 1. Focus on strengths is 3x as effective as shoring up weaknesses. Leverage strengths and partner with others to maximize influence.
 
 There are different types of communication problems each needing a different strategy:
@@ -943,7 +980,7 @@ In the rare event you do want to die knowing you spent too much time at work, tr
 
 {%include blob_image.html src="blog/more-hours.svg" %}
 
-Equally important, when folks consider their career, I remind them there are more dimensions to their life, and they should think about their balance. There are some years and halfs where they want to focus on their career, and others where the focus will be family and health.
+Equally important, when folks consider their career, I remind them there are more dimensions to their life, and they should think about their balance. There are some years and halves where they want to focus on their career, and others where the focus will be family and health.
 
 {%include blob_image.html src="blog/career-convo.svg" %}
 
@@ -970,15 +1007,36 @@ Both helpful for a short period of time, and for a longer period of time, kuddos
 
 A nice format for this is a "clock" with everyone's name on it, and the center of the clock having great prompts like:
 
-### How do you like being questioned/micromanaged?
+### Is asking "Hey, did you ..." micromanaging/demonstrate a lack of trust?
 
-This applies to me, and I need to think about if this is a good part of culture. I like to tell people:
+**When people ask me "Hey did you..." questions:**
 
-Never worry, I'll think you're "questioning me". I like sanity checks.
+It doesn't matter if it's "Hey did you already - try the compiler", or "talk to bob" or "consider the impact of inflation"
 
-If you already had the thought, it's free for you to say it. If I've already thought about it, it's free for me to share my reasoning.
+I LOVE these questions and sanity checks. I remind people again and again:
 
-Catching a bad assumption on my part, or even more important, something I haven't thought about - priceless.
+Never fear that I'll think you're "questioning me" or micromanaging. I love sanity checks!
+
+Lets do the math: If you already had the thought, it's free for you to say it. If I've already thought about it, it's free for me to share my reasoning.
+
+BUT - Catching a bad assumption I'm making, or even more valuable, something I haven't thought about - priceless.
+
+**Do I ask my team "Hey did you..." questions:**
+
+Power dynamics matter here. When a manager asks these questions, it can feel like scrutiny or lack of trust, even when that's not the intent:
+
+1. **Power dynamics** - A report questioning up feels different than a manager questioning down
+2. **Context** - Are you asking because you don't trust them? Or because you're genuinely curious/want to help?
+3. **Intent** - Questioning to learn/help vs. questioning to control
+
+So I start carefully - especially with new team members or in new relationships. I'm thoughtful about how I frame questions:
+
+- "I'm guessing you already thought of this, but just in case..."
+- "Hey, I'm guessing Y is hard, what's your plan to solve it?"
+
+These framings acknowledge they've likely already thought about it, rather than implying they haven't.
+
+The goal is to build enough trust that we can have symmetric behavior - where questions flow freely in both directions without defensiveness. Once my questions feel like genuine curiosity and collaboration, that's when the real magic happens.
 
 ### How do you transition from mercenaries to missionaries
 
@@ -1631,7 +1689,7 @@ As a result Amazon re-instated its URA ratios.
 
 I've observed two categories of URA, those with a skill gap, and those with consistency gap.
 
-Skill Gaps are usually the result of a mis hire, an over leveled hire, or a premature promotion (the reason promos should be lagging not leading). Skill gaps often manifest as a lack of a core competency, lack of communication skill, lack of collaboration skill, or a quality gap.
+Skill Gaps are usually the result of a mismatch hire, an over leveled hire, or a premature promotion (the reason promos should be lagging not leading). Skill gaps often manifest as a lack of a core competency, lack of communication skill, lack of collaboration skill, or a quality gap.
 
 These problems usually show up quickly, and can be assessed looking at artifacts objectively, and are the easier performance management case. You explain expectations, provide coaching/mentoring/opportunity and if improvement is not seen the PIP will be very straight forward.
 
@@ -2054,9 +2112,9 @@ As always, supporting y'all is always my top priority, so if there's anything yo
 
 #### What's the best way to execute layoff announcements?
 
-When Zuck did a particular round of layoffs, he set a date in 3 months, and said we'll do them on this day. A lot of people complained, and said this is an aweful way to do it.
+When Zuck did a particular round of layoffs, he set a date in 3 months, and said we'll do them on this day. A lot of people complained, and said this is an awful way to do it.
 
-When asked about the mechanics, Zuck said: Yes, this really sucks, I think regradless of how we setup the layoffs up they will suck: my only hope is this setup will sucks less.
+When asked about the mechanics, Zuck said: Yes, this really sucks, I think regardless of how we setup the layoffs up they will suck: my only hope is this setup will sucks less.
 
 I think Reed Hastings (of Nextfix) has an interesting take here. [You want to give people good severance](https://www.instagram.com/reel/DD7Z1ptT_w0/) so they feel great leaving at any time they want instead of hanging around to get paid.
 

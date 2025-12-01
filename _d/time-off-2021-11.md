@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Time off Turkey Day 2021
-imagefeaturelocal: raccoon-vacation.png
+permalink: /timeoff-2021-11
+imagefeaturelocal: raccoon-vacation.webp
 ---
 
 I should have written up a plan before this [time off](/time-off) so I'd have been more deliberate. As it stands, I did what I wanted, got a tonne done, but missed some things that bring me a lot of energy.

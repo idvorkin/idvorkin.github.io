@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Gratefulnes"
+title: "Gratefulness"
 permalink: /grateful
 alias: /grateful
 ---
@@ -25,7 +25,7 @@ I'm grateful for X, To God because Y, to Other because Z, to myself because A.
 - **The element**: To build my muscle
 - **To God**: To build my appreciation for wonder in the universe
 - **To Other**: To build my appreciation and compassion for others and their contribution
-- **To Myself**: To reinforce my good habits and behvaior.
+- **To Myself**: To reinforce my good habits and behavior.
 
 However, these start to get repetitive and stale quickly.
 

@@ -4,7 +4,7 @@ title: "To Sell Is Human"
 author: "Igor Dvorkin"
 comments: true
 inprogress: true
-collapsable: true
+collapsible: true
 permalink: /sell
 
 tags:

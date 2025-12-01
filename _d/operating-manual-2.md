@@ -13,7 +13,7 @@ I've learned what I like, how I want to spend my energy, and how I want to be th
 
 <!-- vim-markdown-toc-start -->
 
-- [Some philosphy and fortune cookies](#some-philosphy-and-fortune-cookies)
+- [Some philosophy and fortune cookies](#some-philosophy-and-fortune-cookies)
   - [On goals, aspiration and systems](#on-goals-aspiration-and-systems)
   - [On Rituals](#on-rituals)
   - [Anchors and Clips: Why Climbers Don’t Plummet to Their Death](#anchors-and-clips-why-climbers-dont-plummet-to-their-death)
@@ -75,7 +75,7 @@ I've learned what I like, how I want to spend my energy, and how I want to be th
 
 TODO: Split this post into How Igor Ticks, and igor
 
-## Some philosphy and fortune cookies
+## Some philosophy and fortune cookies
 
 ### On goals, aspiration and systems
 
@@ -258,6 +258,8 @@ what is wrong and resolving it.
 
 Health - physical, emotional, cognitive, and spiritual - is easy to understand but hard to maintain. My strategy to maintain health is through [habits](/habits), but thanks to the [immutable laws of hard things](/Immutable-Laws-Of-Hard), habits degrade without constant vigilance.
 
+{%include summarize-page.html src="/four-healths" %}
+
 {%include summarize-page.html src="/Immutable-Laws-Of-Hard" %}
 
 I spend lots of time thinking about how I should be working my habits, but often end up not doing them. In this case, the key is to stop moaning and restart them.
@@ -314,7 +316,7 @@ The words you use influence how you think.
 - This is crap --> [Help me understand](/compassion)
 - How could they -> I wish to remove their suffering
 
-{%include summarize-page.html src="/som" %}
+{%include summarize-page.html src="/some" %}
 
 ## Bad Influences
 
@@ -330,7 +332,7 @@ Turns out, I love this now. Check out
 
 ### Sports cars
 
-On my trip to [FISM](/d/timeoff-07-2022), the cheapest car to rent ended up being a fancy sports car. It accelerated like butter, braked on a dime, and had gear shifting paddles in full sports mode. I soon realized I could weave through traffic going 60 miles an hour easily playing peek-a-boo with regular cars.
+On my trip to [FISM](/timeoff-2022-07), the cheapest car to rent ended up being a fancy sports car. It accelerated like butter, braked on a dime, and had gear shifting paddles in full sports mode. I soon realized I could weave through traffic going 60 miles an hour easily playing peek-a-boo with regular cars.
 
 I realized 1/ no value to me in this 2/ chance of getting into or causing an accident 3/ chance of me focusing on anger that someone else is playing peek-a-boo with me and winning.
 

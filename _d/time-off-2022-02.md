@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Time off Mid winter break 2022
+permalink: /timeoff-2022-02
 ---
 
 It'mid winter break and I've got a week off. In an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation I'm going to pre-write what I want to get done, and adjust it as I go.
@@ -149,7 +150,7 @@ It's something that I'm over invested in, and need to put an upper bound on to l
 ### 750 words/Gratefulness
 
 - ☑ 750 words Daily
-- ☑ Explored using GPT to summarize, absoloutely amazing.
+- ☑ Explored using GPT to summarize, absolutely amazing.
 
 ## Physical Health
 
@@ -161,7 +162,7 @@ Gym Days:
 
 ### Diet
 
-- Started exploring potatos, but not really nailed it yet.
+- Started exploring potatoes, but not really nailed it yet.
 
 ### Sleep
 

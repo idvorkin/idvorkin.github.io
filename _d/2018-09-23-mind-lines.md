@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "mind-lines"
+title: "Mind-Lines"
 date: "2010-09-23 17:50:41 +0000"
 tags:
 ---
@@ -27,7 +27,7 @@ nG
 
 8. Positive Prior Framing
 
-9. Positivie Prior Causation Framing
+9. Positive Prior Causation Framing
 
 10. First outcome framing
 
@@ -55,7 +55,7 @@ nG
 
 22. Pseudo word framing
 23. Negation framing
-24. Possiblity and as if framing
+24. Possibility and as if framing
 25. Systematic and probablitily framin g
 26. Decision Framing
     k

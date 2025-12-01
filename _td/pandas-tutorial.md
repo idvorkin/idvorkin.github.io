@@ -168,7 +168,7 @@ Groupby is great, but it's a bugger to name aggregations, until [pandas 0.25 add
   - see memory - ts.memory_usage(deep=True)
 
 - [Swifter](https://github.com/jmcarpenter2/swifter) - Smart Function Application (will use Numba, or Dask, or parallel apply)
-- [Modin](https://github.com/modin-project/modin) - Parallel DataFrame, design for compatiblity first
+- [Modin](https://github.com/modin-project/modin) - Parallel DataFrame, design for compatibility first
 - [Dask](https://docs.dask.org/en/latest/) - Parallel DataFrame - but use Modin instead)
 - [Numba](http://www.google.com?btnI=1&q=Numba) - JIT your functions, but use Swifter instead.
 - [Pandarell](https://github.com/nalepae/pandarallel) - Parallel Apply (swifter equiv)

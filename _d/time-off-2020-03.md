@@ -1,7 +1,8 @@
 ---
 layout: post
-imagefeaturelocal: raccoon-vacation.png
 title: Adventures March and April 2020
+permalink: /timeoff-2020-03
+imagefeaturelocal: raccoon-vacation.webp
 ---
 
 In March 2020, I took a 2 month sabatical between leaving Amazon and joining Facebook. Given it was a substantial amount of time, I came up with some big plans, and wrote them down. It was a great plan, BUT my time off correlated perfectly to the Corona Virus and as a result I wasted lots of my mental energy thinking about the Corona Virus, and adjusting to being in pseudo-quarantine. Took me a while, but I finally realized I should ignore corona virus, or at least minimize my time thinking about it.
@@ -92,7 +93,7 @@ In March 2020, I took a 2 month sabatical between leaving Amazon and joining Fac
 #### Emotional health because that's how I experience the world
 
 - I medtate daily.
-- I do a mental wind down befor bed daily.
+- I do a mental wind down before bed daily.
 
 #### Living the 7 habits, because that's my bible
 
@@ -203,7 +204,7 @@ Too early, waiting for someone to make fine tuning easier/web service
 
 ### Biking
 
-☐ Daily bike ride - bottleneck is calfs locking up.
+☐ Daily bike ride - bottleneck is calves locking up.
 
 #### ☑ Got my e-bikes
 
@@ -220,7 +221,7 @@ Too early, waiting for someone to make fine tuning easier/web service
 
 ### Inspirations
 
-- Clown Philospoher - [Slava Polunin](https://www.youtube.com/watch?v=k4uT3ergY04)
+- Clown Philosopher - [Slava Polunin](https://www.youtube.com/watch?v=k4uT3ergY04)
 - Dude who wire walked the world trade towners [Phillipe Petit](https://en.wikipedia.org/wiki/Philippe_Petit)
 
 ### iOS
@@ -242,7 +243,7 @@ Funny story about data "everything that flies has wings", not predictive power.
 
 Chapter 2:
 
-Work Sat is two independant axis 1) Sat and 2) Hygiene
+Work Sat is two independent axis 1) Sat and 2) Hygiene
 
 1. Sat is AMP
 2. DSat is the extrinsic motivators
@@ -251,7 +252,7 @@ Money, annoying boss, nice office. !Hygiene does not equals Sat.
 
 Chapter 3:
 
-Strategy is deliberate and emmirgent, e.g. what you discover is more important then what you think. Flexibility and seeing what's most importan matters.
+Strategy is deliberate and emmirgent, e.g. what you discover is more important then what you think. Flexibility and seeing what's most important matters.
 
 - Test core strategies assumptions (Irridium cell phone)
 
@@ -292,8 +293,8 @@ Superb book. Very well written, and really speaks to the many, many, websites yo
 
 Use their awesome [online companion tool](tool://www.mystorybrand.com/)
 
-1. A charector (your customer **not** your business)
-2. Has a problem (external, interal, philisophical)
+1. A character (your customer **not** your business)
+2. Has a problem (external, internal, philosophical)
 3. Meets a guide (**your business**, empathy, authority)
 4. Who gives them a plan (process, agreement)
 5. And call them to action (direct, transitional)
@@ -301,18 +302,18 @@ Use their awesome [online companion tool](tool://www.mystorybrand.com/)
 7. And helps them avoid failure
 8. Which results in a transformation (from, to)
 
-Book well layed out:
+Book well laid out:
 
 - Why you need it
 - SummaryWhat it is
 - Combo What and How of doing it.
 - How to do the nitty gritty on your web and org and etc.
 
-Business Model of the company well layed out (customer value, franchises), and a great model of using this framework.
+Business Model of the company well laid out (customer value, franchises), and a great model of using this framework.
 
 1. SMB owners
    1. Web Seminars
-   1. Peronal Coaching
+   1. Personal Coaching
    1. IN person seminars
 1. Medium Business owners
    1. Internal culture, business problems.
@@ -329,7 +330,7 @@ Also an interesting business model for the book
 
 #### ☐ Joy on Demand
 
-[Seach inside yourself](/search-inside-yourself) v2, focused on Joy.
+[Search inside yourself](/search-inside-yourself) v2, focused on Joy.
 
 #### ☑ 5 Dysfunctions of a team
 
@@ -343,15 +344,15 @@ Fast read:
 
 I think in modern terms:
 
-1. Pyschological Safety
+1. Psychological Safety
 1. Healthy Debate
 1. Disagree and Commit
-1. Hold each othe accountable
+1. Hold each other accountable
 1. Deliver value
 
 #### ☐ Creativity
 
-Meh book from the Phillipe Petit who walked the tightrope accross the world trade center and had other great adventures. Pretty meh book designed to inspire through "poetry", pretty meh.
+Meh book from the Phillipe Petit who walked the tightrope across the world trade center and had other great adventures. Pretty meh book designed to inspire through "poetry", pretty meh.
 
 ### Family
 
@@ -360,7 +361,7 @@ Meh book from the Phillipe Petit who walked the tightrope accross the world trad
 - ☑ Reading Matilda daily
 - ☐ Roller Skating
 - ☐ Bike Dates
-- ☐ Somethign computer based(??)
+- ☐ Something computer based(??)
 - ☐ Daily Writing
 
 #### Zach

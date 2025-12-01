@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Time off April Break 2023
+permalink: /timeoff-2023-04
 imagefeaturelocal: raccoon-vaccation.png
 ---
 
-It's spring break 2023! The kids and I are going to Canada to see Baba, Yelena, Justin, Sam and Baltasar and Rada's Famliy. Unfortunately Tori can't come as she's critical to her play opening and it'll be opening that week.
+It's spring break 2023! The kids and I are going to Canada to see Baba, Yelena, Justin, Sam and Baltasar and Rada's Family. Unfortunately Tori can't come as she's critical to her play opening and it'll be opening that week.
 
 To get the most out of my time off, I'm going to follow my best practice of pre-writing what I want to get done, and adjust it as I go. This is a combination of [time off](/time-off), and all the stuff for [happiness](/happy), which I guess gets tangled up with half of my evergreen notes.
 
@@ -29,8 +30,8 @@ Humorously, I can just copy much of my todo from last year as it's pretty simila
 - POUTINE!!
 - Kids complaining about me doing stretches (Second hand embarassent)
 - Zach thinking we were sleeping in the Tesla
-- Guy on airplane saying he loved my enthusiasim.
-- Second City, me on stage, Amelia AirHart, and Amelia doing an easter skit, For not having to talk to peope
+- Guy on airplane saying he loved my enthusiasm.
+- Second City, me on stage, Amelia AirHart, and Amelia doing an easter skit, For not having to talk to people
 - Taking Zach to improv dojo (it was fun,and he loved it)
 - Cold plunge, then hottub, then sauna, and then massage chair
 - Niagra Falls
@@ -122,7 +123,7 @@ Humorously, I can just copy much of my todo from last year as it's pretty simila
 
 ### Magic
 
-- ☐ Daily practice - include anniversy card
+- ☐ Daily practice - include anniversary card
 - ☐ Every other day perform for someone
 - ☑ Do Annivery Card Twice
 

@@ -1,0 +1,316 @@
+{% comment %} Generic 2x3 Matrix Component (2 rows, 3 columns = 6 cells)
+Parameters: - title: Main title for the matrix - subtitle: Optional subtitle -
+row1_label: Label for top row - row2_label: Label for bottom row - col1_label:
+Label for left column - col2_label: Label for middle column - col3_label: Label
+for right column Cells (reading left-to-right, top-to-bottom): Row 1 (Top): -
+c1_name: Top-left cell name - c1_subtitle: Top-left cell subtitle - c1_traits:
+Top-left cell traits (use <br />
+for line breaks) - c1_color: Top-left cell background color (hex or rgba) -
+c2_name: Top-middle cell name - c2_subtitle: Top-middle cell subtitle -
+c2_traits: Top-middle cell traits - c2_color: Top-middle cell background color -
+c3_name: Top-right cell name - c3_subtitle: Top-right cell subtitle - c3_traits:
+Top-right cell traits - c3_color: Top-right cell background color Row 2
+(Bottom): - c4_name: Bottom-left cell name - c4_subtitle: Bottom-left cell
+subtitle - c4_traits: Bottom-left cell traits - c4_color: Bottom-left cell
+background color - c5_name: Bottom-middle cell name - c5_subtitle: Bottom-middle
+cell subtitle - c5_traits: Bottom-middle cell traits - c5_color: Bottom-middle
+cell background color - c6_name: Bottom-right cell name - c6_subtitle:
+Bottom-right cell subtitle - c6_traits: Bottom-right cell traits - c6_color:
+Bottom-right cell background color Example usage (Influencer 2.0): {% include
+six-cell-matrix.html title="Influencer 2.0: Six Sources of Influence"
+subtitle="Change happens when you influence across all dimensions"
+row1_label="Motivation" row2_label="Ability" col1_label="Personal"
+col2_label="Social" col3_label="Structural" c1_name="Personal Motivation"
+c1_subtitle="Self-Regulation" c1_traits="Connect to values<br />Build intrinsic
+motivation<br />Create emotional engagement" c1_color="rgba(232, 244, 234, 0.5)"
+c2_name="Social Motivation" c2_subtitle="Peer Influence" c2_traits="Harness peer
+pressure<br />Build accountability<br />Create social norms" c2_color="rgba(255,
+229, 180, 0.5)" c3_name="Structural Motivation" c3_subtitle="Incentives"
+c3_traits="Design reward systems<br />Align incentives<br />Remove
+disincentives" c3_color="rgba(255, 224, 224, 0.5)" c4_name="Personal Ability"
+c4_subtitle="Skills & Knowledge" c4_traits="Build individual skills<br />Provide
+training<br />Practice deliberately" c4_color="rgba(230, 230, 250, 0.5)"
+c5_name="Social Ability" c5_subtitle="Support Network" c5_traits="Enable group
+performance<br />Provide coaching<br />Build teams" c5_color="rgba(220, 245,
+245, 0.5)" c6_name="Structural Ability" c6_subtitle="Environment"
+c6_traits="Provide tools<br />Remove barriers<br />Build infrastructure"
+c6_color="rgba(255, 240, 220, 0.5)" %} {% endcomment %}
+
+<style>
+  .six-cell-matrix {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 2em auto;
+    background: white;
+    border: 2px solid #333;
+    border-radius: 8px;
+    font-family:
+      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
+    min-height: 500px;
+  }
+
+  .six-cell-matrix-title {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .six-cell-matrix-subtitle {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 0.9em;
+    font-style: italic;
+    color: #666;
+  }
+
+  .matrix-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    position: relative;
+  }
+
+  .matrix-cell-name {
+    font-size: 1.15em;
+    font-weight: bold;
+    margin: 0 0 6px 0;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .matrix-cell-subtitle {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #555;
+    margin: 0 0 12px 0;
+    text-align: center;
+  }
+
+  .matrix-cell-traits {
+    font-size: 0.85em;
+    text-align: center;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .matrix-row-label {
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.9em;
+    background: white;
+    padding: 4px 10px;
+    z-index: 10;
+    left: -100px;
+    transform: translateY(-50%);
+  }
+
+  .matrix-row-label.row1 {
+    top: 25%;
+  }
+
+  .matrix-row-label.row2 {
+    top: 75%;
+  }
+
+  .matrix-col-label {
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.85em;
+    background: white;
+    padding: 4px 8px;
+    z-index: 10;
+    top: -30px;
+    transform: translateX(-50%);
+  }
+
+  .matrix-col-label.col1 {
+    left: 16.67%;
+  }
+
+  .matrix-col-label.col2 {
+    left: 50%;
+  }
+
+  .matrix-col-label.col3 {
+    left: 83.33%;
+  }
+
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .six-cell-matrix {
+      margin-top: 60px;
+      min-height: 600px;
+      max-width: 95%;
+    }
+
+    .matrix-cell-name {
+      font-size: 1em;
+    }
+
+    .matrix-cell-subtitle {
+      font-size: 0.75em;
+    }
+
+    .matrix-cell-traits {
+      font-size: 0.7em;
+    }
+
+    .matrix-cell {
+      padding: 15px 10px;
+    }
+
+    .matrix-row-label {
+      left: -70px;
+      font-size: 0.75em;
+    }
+
+    .matrix-col-label {
+      font-size: 0.7em;
+      top: -25px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .six-cell-matrix {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, auto);
+      min-height: auto;
+    }
+
+    .matrix-row-label,
+    .matrix-col-label {
+      display: none;
+    }
+
+    .matrix-cell::before {
+      content: attr(data-label);
+      display: block;
+      font-weight: bold;
+      font-size: 0.75em;
+      color: #888;
+      margin-bottom: 5px;
+    }
+  }
+</style>
+
+<div style="position: relative; margin-top: 90px">
+  {% if include.title %}
+  <div class="six-cell-matrix-title">{{ include.title }}</div>
+  {% endif %} {% if include.subtitle %}
+  <div class="six-cell-matrix-subtitle">{{ include.subtitle }}</div>
+  {% endif %}
+
+  <div class="six-cell-matrix">
+    <!-- Row 1: Top row (Motivation or first row) -->
+    <!-- Cell 1: Top-Left -->
+    <div
+      class="matrix-cell"
+      style="background: {{ include.c1_color | default: 'rgba(232, 244, 234, 0.5)' }};"
+      data-label="{{ include.col1_label }} / {{ include.row1_label }}"
+    >
+      <div class="matrix-cell-name">{{ include.c1_name }}</div>
+      {% if include.c1_subtitle %}
+      <div class="matrix-cell-subtitle">{{ include.c1_subtitle }}</div>
+      {% endif %}
+      <div class="matrix-cell-traits">{{ include.c1_traits }}</div>
+    </div>
+
+    <!-- Cell 2: Top-Middle -->
+    <div
+      class="matrix-cell"
+      style="background: {{ include.c2_color | default: 'rgba(255, 229, 180, 0.5)' }};"
+      data-label="{{ include.col2_label }} / {{ include.row1_label }}"
+    >
+      <div class="matrix-cell-name">{{ include.c2_name }}</div>
+      {% if include.c2_subtitle %}
+      <div class="matrix-cell-subtitle">{{ include.c2_subtitle }}</div>
+      {% endif %}
+      <div class="matrix-cell-traits">{{ include.c2_traits }}</div>
+    </div>
+
+    <!-- Cell 3: Top-Right -->
+    <div
+      class="matrix-cell"
+      style="background: {{ include.c3_color | default: 'rgba(255, 224, 224, 0.5)' }};"
+      data-label="{{ include.col3_label }} / {{ include.row1_label }}"
+    >
+      <div class="matrix-cell-name">{{ include.c3_name }}</div>
+      {% if include.c3_subtitle %}
+      <div class="matrix-cell-subtitle">{{ include.c3_subtitle }}</div>
+      {% endif %}
+      <div class="matrix-cell-traits">{{ include.c3_traits }}</div>
+    </div>
+
+    <!-- Row 2: Bottom row (Ability or second row) -->
+    <!-- Cell 4: Bottom-Left -->
+    <div
+      class="matrix-cell"
+      style="background: {{ include.c4_color | default: 'rgba(230, 230, 250, 0.5)' }};"
+      data-label="{{ include.col1_label }} / {{ include.row2_label }}"
+    >
+      <div class="matrix-cell-name">{{ include.c4_name }}</div>
+      {% if include.c4_subtitle %}
+      <div class="matrix-cell-subtitle">{{ include.c4_subtitle }}</div>
+      {% endif %}
+      <div class="matrix-cell-traits">{{ include.c4_traits }}</div>
+    </div>
+
+    <!-- Cell 5: Bottom-Middle -->
+    <div
+      class="matrix-cell"
+      style="background: {{ include.c5_color | default: 'rgba(220, 245, 245, 0.5)' }};"
+      data-label="{{ include.col2_label }} / {{ include.row2_label }}"
+    >
+      <div class="matrix-cell-name">{{ include.c5_name }}</div>
+      {% if include.c5_subtitle %}
+      <div class="matrix-cell-subtitle">{{ include.c5_subtitle }}</div>
+      {% endif %}
+      <div class="matrix-cell-traits">{{ include.c5_traits }}</div>
+    </div>
+
+    <!-- Cell 6: Bottom-Right -->
+    <div
+      class="matrix-cell"
+      style="background: {{ include.c6_color | default: 'rgba(255, 240, 220, 0.5)' }};"
+      data-label="{{ include.col3_label }} / {{ include.row2_label }}"
+    >
+      <div class="matrix-cell-name">{{ include.c6_name }}</div>
+      {% if include.c6_subtitle %}
+      <div class="matrix-cell-subtitle">{{ include.c6_subtitle }}</div>
+      {% endif %}
+      <div class="matrix-cell-traits">{{ include.c6_traits }}</div>
+    </div>
+
+    <!-- Row labels -->
+    {% if include.row1_label %}
+    <div class="matrix-row-label row1">{{ include.row1_label }}</div>
+    {% endif %} {% if include.row2_label %}
+    <div class="matrix-row-label row2">{{ include.row2_label }}</div>
+    {% endif %}
+
+    <!-- Column labels -->
+    {% if include.col1_label %}
+    <div class="matrix-col-label col1">{{ include.col1_label }}</div>
+    {% endif %} {% if include.col2_label %}
+    <div class="matrix-col-label col2">{{ include.col2_label }}</div>
+    {% endif %} {% if include.col3_label %}
+    <div class="matrix-col-label col3">{{ include.col3_label }}</div>
+    {% endif %}
+  </div>
+</div>

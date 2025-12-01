@@ -2,6 +2,7 @@
 layout: post
 title: "The CHOP Shop: Where AI Meets Code"
 permalink: /chop
+mermaid: true
 redirect_from:
   - /ai-coder
 ---
@@ -21,6 +22,8 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
     - [Maintain Chat History with your commits](#maintain-chat-history-with-your-commits)
   - [Aider](#aider)
   - [Avante](#avante)
+  - [Claude Code](#claude-code)
+    - [claude-code-log](#claude-code-log)
 - [Use Cases and Examples](#use-cases-and-examples)
   - [Using latest docs](#using-latest-docs)
   - [Fixing an indentation handling bug in an nvim plugin](#fixing-an-indentation-handling-bug-in-an-nvim-plugin)
@@ -28,6 +31,7 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
   - [Review changes between dates](#review-changes-between-dates)
   - [Dream: Re-write commit history to break things into orthogonal changes](#dream-re-write-commit-history-to-break-things-into-orthogonal-changes)
 - [Articles](#articles)
+  - [Perfect Articultion of the future of coding and where we're at today](#perfect-articultion-of-the-future-of-coding-and-where-were-at-today)
   - [How might AI change programming?](#how-might-ai-change-programming)
   - [Will CHOP Kill the Joy of Coding?](#will-chop-kill-the-joy-of-coding)
     - [Reasons to Program - Mastery vs Getting Shit Done](#reasons-to-program---mastery-vs-getting-shit-done)
@@ -39,16 +43,18 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
   - [The Art of Prompt Engineering](#the-art-of-prompt-engineering)
   - [Integration Tips](#integration-tips)
   - [Worktree and PR Workflow](#worktree-and-pr-workflow)
+  - [YOLO Containers: Safe Full Autonomy](#yolo-containers-safe-full-autonomy)
   - [Security Considerations](#security-considerations)
   - [DRY CHOP: Your AI's Cookbook](#dry-chop-your-ais-cookbook)
 - [Congrats you've been promoted: AI Squad Manager](#congrats-youve-been-promoted-ai-squad-manager)
   - [How to be fast when AI is slow](#how-to-be-fast-when-ai-is-slow)
   - [Interventions per hour](#interventions-per-hour)
+  - [Multi-agent orchestration stress](#multi-agent-orchestration-stress)
   - [Don't be the junior developer](#dont-be-the-junior-developer)
   - [What matters most is testing/evals](#what-matters-most-is-testingevals)
 - [Igor's Predictions, Insights, and Mental Models](#igors-predictions-insights-and-mental-models)
   - [Artisanal Hand Crafted Commits](#artisanal-hand-crafted-commits)
-  - [Bespoke tools and optimisim](#bespoke-tools-and-optimisim)
+  - [Bespoke tools and optimism](#bespoke-tools-and-optimism)
   - [The Evolution of Junior Developers](#the-evolution-of-junior-developers)
   - [The Evolution of programming languages](#the-evolution-of-programming-languages)
   - [AI Rule Packs](#ai-rule-packs)
@@ -57,6 +63,7 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
   - [Prioritizing Skills](#prioritizing-skills)
   - [What will take AI longer to "Solve"](#what-will-take-ai-longer-to-solve)
   - [From Cheap Computing to Cheap Intelligence](#from-cheap-computing-to-cheap-intelligence)
+  - [Smart vs Fast - Tradeoffs](#smart-vs-fast---tradeoffs)
 
 <!-- vim-markdown-toc-end -->
 
@@ -75,13 +82,11 @@ The concept emerged from [the death of the stubborn programmer](https://gist.git
 The journey to CHOP has been fascinating:
 
 1. **Code Completion (The Tool Fetcher)**
-
    - Simple autocomplete suggestions
    - Syntax error detection
    - Basic snippet generation
 
 2. **Interactive Chat (The Apprentice)**
-
    - Contextual code suggestions
    - Problem-solving assistance
    - Documentation help
@@ -96,13 +101,11 @@ The journey to CHOP has been fascinating:
 ### Core Concepts
 
 1. **Natural Language Interface**
-
    - Express programming goals in plain English
    - Iterative refinement through dialogue
    - Context-aware responses
 
 2. **Codebase Understanding**
-
    - AI reads and understands your entire project
    - Follows established patterns and conventions
    - Maintains consistency with existing code
@@ -154,14 +157,12 @@ Pretty funny - they wanted to do tab completion, but found the VS Code extension
 #### Cursor Tips
 
 1. **YOLO Mode for Tests**
-
    - Enable "run shell commands without confirmation" in settings
    - Perfect for running tests frequently (`pytest`, `npm test`, etc.)
    - Maintains flow without constant approval prompts
    - Only enable for safe commands like tests
 
 2. **Composer-Agent Mode**
-
    - Switch to "Composer-Agent" in chat settings
    - More structured, task-focused interactions
    - Better for complex, multi-step tasks
@@ -169,7 +170,6 @@ Pretty funny - they wanted to do tab completion, but found the VS Code extension
    - Great for refactoring and architecture discussions
 
 3. **Enable Large Context**
-
    - Go to Settings -> Features
    - Enable "Large Context" option
    - Dramatically improves AI's ability to understand your entire codebase at once
@@ -182,6 +182,16 @@ Pretty funny - they wanted to do tab completion, but found the VS Code extension
    - Example:
      - [Using MCP to manage GitHub issues](https://github.com/idvorkin/idvorkin.github.io/blob/583d3c07ea12c5f131d5e8e11aa561b56ee288c8/zz-chop-logs/2025-05-17_15-26-github-issues-inquiry.md)
 
+5. **Claude Code MCP Servers**
+   - **GitHub MCP Server**: Provides GitHub API access for managing issues, PRs, repositories, and more
+     - Installation: `claude mcp add github ~/settings/mcp_servers/github-mcp-server.sh`
+     - Uses Docker container with GitHub Personal Access Token from secretBox.json
+     - Enables direct GitHub operations through Claude's chat interface
+   - **Context7 MCP Server**: Provides up-to-date documentation and code examples
+     - Installation: `claude mcp add --transport http context7 https://mcp.context7.com/mcp`
+     - Fetches current docs directly into your prompts - no outdated APIs or hallucinated functions
+     - Perfect for working with rapidly evolving frameworks and libraries
+
 #### Maintain Chat History with your commits
 
 Having the chat history for diffs is great. Here's my current workflow:
@@ -190,17 +200,14 @@ Having the chat history for diffs is great. Here's my current workflow:
 
 2. Make a zsh function to copy the latest chat history to your repo:
    Mine is called [chop-git-latest](https://github.com/idvorkin/settings/blob/7e9e90984dba2650b2cd4ee3a6c9511993ed73f4/shared/zsh_include.sh?plain=1#L708), and copies the latest chat history to zz-chop-logs, and add it to the commit.
-
    - ![Terminal screenshot showing git workflow with chop-git-latest command that copies AI collaboration session files to staging area and tracks changes for version control](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250225_093946.webp)
 
 3. Run commit, and have the AI write the commit message, but skip commenting on what's in the [zz-chop-logs](https://github.com/idvorkin/nlp/blob/2d804345426c211f34fd6990b61d9d550cbc1cd7/commit.py?plain=1#L23)
 
 4. This gives pretty github commits which include chat history like this:
-
    - Because the log directory is zz-chop-logs, it shows up after the real commit
    - Because the chat is linked to the commit it's easier to track
    - PRO TIP: When your intent is showing the CHOP session, display the rich diff before sharing the URL. E.g.
-
    * Using CHOP to add a nice [tig configuration](https://github.com/idvorkin/Settings/commit/9b73588eb304addf6e1ae8257251d39c93f740c3?short_path=cac8bdd#diff-cac8bdd2c7d1bef00dddc15e01d81bbc2030f9ec8789d2307c7bde1ce0b2c58a)
 
 ### Aider
@@ -226,6 +233,21 @@ A promising Vim plugin for CHOP:
 - Transparent [coding prompts](https://github.com/yetone/avante.nvim/blob/main/lua/avante/llm.lua)
 - Integrates well with the Vim workflow
 
+### Claude Code
+
+Anthropic's official CLI for AI-assisted development, featuring autonomous agents, codebase understanding, and integrated workflows.
+
+#### claude-code-log
+
+[claude-code-log on GitHub](https://github.com/daaain/claude-code-log) - Converts Claude Code conversation logs to publishable HTML.
+
+```bash
+uv tool install claude-code-log
+claude-code-log --tui
+```
+
+Example: [AI journal](/ai-journal) with [published logs](/published-chop-logs/2025-10-09-religion-exploration.html).
+
 ## Use Cases and Examples
 
 Not sure if this should be a separate post, but I'm going to start looking at this from the perspective of use cases.
@@ -249,6 +271,27 @@ Cursor has native support for indexing docs, some projects even have llm.txt to 
 
 ## Articles
 
+### Perfect Articultion of the future of coding and where we're at today
+
+A very good articulation of the [future of coding](https://www.xipu.li/posts/the-last-programmers) (via [think](https://gist.github.com/idvorkin/4e7c9a91b54d58e23168da0b750d6ce2#file-summary_gpt-5-md)) his ideas that I love:
+
+- Coders divide into Experimenters and Guardians:
+  - "Experimenters" embrace AI tools, seek shortcuts, and focus on higher-level problem-solving, pushing the boundaries of abstraction.
+  - "Guardians" prioritize deep understanding of code, algorithms, and systems, valuing robustness and maintainability over rapid AI-driven iteration.
+  - "Experimenters" will become the majority as technology trends towards convenience and abstraction.
+
+- The New Value Proposition:
+  - As technical implementation becomes commoditized, the focus shifts from "can we build this?" to "should we build this?" and "how do we get people to use it?".
+  - Three non-automatable skills will become paramount: deep understanding of user needs, strategic product taste (knowing what to build and what not to build), and effective distribution/marketing.
+  - The winners in this new paradigm will be those who understand human psychology and market dynamics, not just technical execution.
+
+- Design doc as the most important artifact.
+  - We went through this before, where high level languages, got compiled to machine code, and no-one looks at that . Now it'll be design docs and evals to code. Oh yeah, and we're a very long ways out from that.
+  - Design-Doc-First, Agent-Orchestrated Development
+  - Treat the design doc as the primary artifact; edit prose to drive code changes rather than editing code directly.
+  - Parallelized agent workflow: multiple AI terminals each owning a feature. (NOTE: This is very painful)
+  - - Role fusion: developer as PM-like conductor, focusing on problem discovery and specification clarity.
+
 ### How might AI change programming?
 
 [Fascinating Essay](https://gist.github.com/idvorkin/f1a4f1ccd2c9c8496101de7633d5aafc)
@@ -256,14 +299,12 @@ Cursor has native support for indexing docs, some projects even have llm.txt to 
 Worth reading the whole article but some interesting takes:
 
 - Read Path vs Write Path:
-
   - So, [data systems](td/data-systems#write-path-vs-read-path) went through this.... You used to cache/materialize all your data writes to a DB on the write path, and then read from the DB
-  - So, programs are like that, you take instructions, write a program, save the program and run it. This can be at different levels, interpretted, JIT, Compiled
+  - So, programs are like that, you take instructions, write a program, save the program and run it. This can be at different levels, interpreted, JIT, Compiled
   - But, what if (especially in a world where models are getting continuously better) you store the instructions, and write the code on the fly.
   - :mindblown:
 
 - Short term
-
   - Compilers/Linters designed to help LLMs with more context
   - More smaller single file programs
   - Better decoupling because LLMs can't keep everything in their head
@@ -287,10 +328,9 @@ Perhaps we're asking the wrong question. Instead of worrying if CHOP will kill t
 #### Reasons to Program - Mastery vs Getting Shit Done
 
 1. **For the Love of Coding: Mastery and Joy**
-
    - Programming can be intrinsically rewarding. The process of solving problems, creating something from nothing, and continuously improving one's skills offers satisfaction and joy. Mastery of coding, like any craft, provides a sense of accomplishment.
    - Using VIM key combos is especially fun, like doing joystick combos in Street Fighter II - it's a fun challenge that keeps you engaged and sharpens your skills.
-   - My pleasure is coding, but I'm guessing this applies simarly to cooking, woodworking, and stampcollecting
+   - My pleasure is coding, but I'm guessing this applies similarly to cooking, woodworking, and stampcollecting
 
 2. **To Achieve Practical Goals: Shipping Products**
    - On the other hand, programming is a means to an end. It's a tool for building and shipping products, for solving real-world problems, and for getting tangible results. Efficiency and productivity are key, and AI can help streamline these processes.
@@ -298,7 +338,6 @@ Perhaps we're asking the wrong question. Instead of worrying if CHOP will kill t
 #### How can you use AI - Research Assistant vs Code Writer
 
 1. **Getting Help: Replacing Traditional Resources**
-
    - AI as a resource for programming assistance is becoming increasingly popular. It provides a more interactive and immediate alternative to traditional platforms like Stack Overflow, documentation, or Reddit.
    - In the past, before the internet, finding solutions to programming problems was a cumbersome process. AI represents an evolution of these resources, offering instant, personalized help that can significantly speed up the problem-solving process.
 
@@ -368,7 +407,6 @@ Challenges in Measurement and Adoption
 ### The Art of Prompt Engineering
 
 1. **Be Specific, But Not Too Specific**
-
    - Good: "Create a React component for a responsive navigation bar with dark/light theme support"
    - Better: Include your project's conventions and specific requirements
    - Best: Reference existing components and patterns in your codebase
@@ -381,7 +419,6 @@ Challenges in Measurement and Adoption
 ### Integration Tips
 
 1. **Version Control Strategy**
-
    - Create separate branches for CHOP-generated code
    - Use meaningful commit messages that indicate CHOP assistance
    - Review CHOP-generated changes with extra scrutiny
@@ -420,25 +457,25 @@ A structured approach to AI-assisted development using Git worktrees and pull re
    - Enables early feedback and collaboration
 
 3. **Use PR Description as AI Context**
-
    - Include relevant background information
    - Link to related issues or discussions
    - Document the approach you want AI to take
    - Update as the feature evolves
 
 4. **Structured AI Development**
-
    - Start with high-level planning in the PR description
    - Use AI to break down tasks into implementable chunks
    - Commit frequently with descriptive messages
    - Include CHOP session logs using tools like [chop-git-latest](https://github.com/idvorkin/settings/blob/7e9e90984dba2650b2cd4ee3a6c9511993ed73f4/shared/zsh_include.sh?plain=1#L708)
 
 5. **Convert to Ready for Review**
+
    ```bash
    # When ready, mark PR as ready for review
    gh pr ready
    gh pr edit --add-reviewer team-member
    ```
+
    - Clean up commit history if needed
    - Ensure all AI-generated code is reviewed
    - Include summary of AI assistance used
@@ -451,10 +488,89 @@ A structured approach to AI-assisted development using Git worktrees and pull re
 - **Collaboration**: Team members can provide early input on AI-generated approaches
 - **Quality**: Structured review process ensures AI code meets team standards
 
+### YOLO Containers: Safe Full Autonomy
+
+{% include alert.html content="There are often extra steps/setup for YOLO containers and sometimes I'm lazy and think 'oh this is quick, I'll just run on my laptop.' I always regret this, because I end up single-stepping Claude code, or I lose progress when I need to wander off and close my laptop." style="warning" %}
+
+The ultimate productivity boost in CHOP comes from minimizing **time between interventions** - but running Claude in YOLO mode (automatic command execution without confirmation) on your main machine is dangerous (it could format your drive, force push to main with your real credentials, or delete production databases). The solution? Isolated containers where AI can run wild safely, with ports that are easy to access from your development machines.
+
+```mermaid
+graph TB
+    subgraph Tailnet["Your Tailnet - Private Mesh Network"]
+        Laptop1["💻 Laptop 1"]
+        Laptop2["💻 Laptop 2"]
+        Tablet["📱 Tablet"]
+
+        subgraph Desktop["Desktop Machine - runs containers"]
+            C5001["🐳 C-5001<br/>Claude (YOLO mode)<br/>Jekyll :4000<br/>SSH :22"]
+            C5002["🐳 C-5002<br/>Claude (YOLO mode)<br/>Jupyter :8888<br/>SSH :22"]
+        end
+    end
+
+    GitHub["🐙 GitHub<br/>idvorkin-ai-tools"]
+
+    Laptop1 -->|"ssh c-5001 (tmux dev)"| C5001
+    Laptop1 -.->|"chrome c-5001:4000"| C5001
+    Laptop2 -->|"ssh c-5002 (tmux dev)"| C5002
+    Laptop2 -.->|"chrome c-5002:8888"| C5002
+    Laptop2 -.->|"chrome c-5001:4000"| C5001
+    Tablet -.->|"chrome c-5002:8888"| C5002
+
+    C5001 -->|"gh pr create<br/>(autonomous)"| GitHub
+    C5002 -->|"gh pr create<br/>(autonomous)"| GitHub
+
+    style C5001 fill:#e1f5ff
+    style C5002 fill:#e1f5ff
+    style Laptop1 fill:#fff4e6
+    style Laptop2 fill:#fff4e6
+    style Tablet fill:#f0f0f0
+    style GitHub fill:#ffd7d7
+```
+
+**The Solution: Cattle Not Pets**
+
+Run AI in disposable, fully isolated Docker containers. These aren't precious development environments to maintain - they're **cattle, not pets**. Spin one up, let AI work autonomously, throw it away when done.
+
+**Key Architecture Principles:**
+
+1. **Complete Isolation**
+   - Container has NO access to your host filesystem (except read-only mounts you explicitly allow)
+   - AI uses its own GitHub credentials (`AI+idvorkin` / `aitools-idvorkin@gmail.com`)
+   - Container can break itself all it wants - your host is untouched
+   - Setup with [container configuration](https://github.com/idvorkin/Settings/blob/master/claude-docker/README.md) and [management script](https://github.com/idvorkin/Settings/blob/master/claude-docker/claude-docker.py)
+
+2. **Credential Separation**
+   - AI developer identity: `AI+idvorkin` / `aitools-idvorkin@gmail.com` / GitHub: [`idvorkin-ai-tools`](https://github.com/idvorkin-ai-tools) ([line 346-347](https://github.com/idvorkin/Settings/blob/master/claude-docker/claude-docker.py#L346-L347))
+   - GitHub token from 1Password (AI-specific PAT) or environment variable
+   - AI tools can only push to PRs, not directly to main branches
+
+3. **Persistent Volumes**
+   - Named Docker volumes (`C-5000-home`, `C-5000-workspace`) persist across container restarts
+   - Stop/restart containers without losing work
+   - Delete container but keep volumes, or nuke everything for fresh start
+
+4. **Tailscale Magic: Port Access Without Port Forwarding**
+   - Without Tailscale: Docker port remapping to different host ports (`-p 5001:4000`, `-p 5002:4000`), then SSH port forwarding to access remotely
+   - With Tailscale: each container gets a stable hostname on your private mesh network
+   - Bind servers to `0.0.0.0` instead of `localhost` (makes them network-accessible)
+   - Container name becomes hostname on Tailnet (C-5001 → c-5001)
+   - SSH into any container: `ssh c-5001` (drops into tmux for development)
+   - Access web servers from any device: `chrome c-5001:4000`, `chrome c-5002:4000`
+   - Location independent: same URLs work regardless of which physical machine hosts the container
+   - Containers are **cattle, not pets** - originally named after Jekyll port numbers, now serve as stable Tailscale hostnames
+
+**Benefits:**
+
+- **Zero intervention overhead** - Let Claude run tests, builds, commits autonomously
+- **True parallelism** - Run multiple AI agents in separate containers simultaneously
+- **Risk-free experimentation** - Worst case, container breaks itself and you spin up a new one
+- **Clear blast radius** - AI mistakes contained to single container
+- **Fast recovery** - Fresh container in 2-3 seconds
+- **Location-independent access** - Via Tailscale, access container services from anywhere on your network
+
 ### Security Considerations
 
 1. **Watch Out for Secrets in Chat Logs**
-
    - Be cautious when adding verbose logging or debugging output
    - Chat logs can inadvertently capture secrets, tokens, or sensitive data
    - Example: Adding detailed logging to integration tests might expose API keys or credentials
@@ -508,11 +624,21 @@ Here's a recent example of this approach in action:
 
 ### How to be fast when AI is slow
 
-One you crack the interventions per hour, and that's coming more and more, your next issue is how you task swap between projects. Trying to figure out best practices here. I predict soruce control and multi windows are part of the solution
+One you crack the interventions per hour, and that's coming more and more, your next issue is how you task swap between projects. Trying to figure out best practices here. I predict source control and multi windows are part of the solution
 
 ### Interventions per hour
 
 On Tesla self driving the thing we talk about is "% drives with interventions". This is what really matters, how often you have to take over. Your job is to figure out how to reduce your interventions. Most things apply here.
+
+### Multi-agent orchestration stress
+
+- Don't feel the need to run four agents. More agents increase cognitive load and coordination overhead.
+- When interventions per hour are high, adding agents makes confusion worse: parallel edits, re-explanations, and merge pain.
+- Default to one strong agent with clear specs and tests; let it run longer between interventions.
+- Scale cautiously to two agents only when ownership is cleanly separated and a single "conductor" coordinates.
+- Prefer sequential pipelines and handoffs (spec → tests → implementation → review) over a concurrent free‑for‑all.
+- Signs you have too many agents: constant context switching, merging conflicting changes, or feeling stressed.
+- Rule of thumb: reduce agents until stress drops and throughput rises.
 
 ### Don't be the junior developer
 
@@ -526,7 +652,7 @@ You need to figure out how to make sure your code continues to be correct over t
 
 This is of course extra challenging because the code is probabilistic and "has vibes" all over it. This is an area I'm super interested in.
 
-NOTE: Code and essentially Vibed code is very hard to keep working as it's often correct by evolution not by deliberate design. So when you make out of contex changes, stuff breaks (I had an identical experience when I worked on the windows network stack in 2003 :) )
+NOTE: Code and essentially Vibed code is very hard to keep working as it's often correct by evolution not by deliberate design. So when you make out of context changes, stuff breaks (I had an identical experience when I worked on the windows network stack in 2003 :) )
 
 {%include summarize-page.html src="/ai-testing"%}
 {%include summarize-page.html src="/testing"%}
@@ -542,7 +668,7 @@ Most of this is picked up from others (there are no unique thoughts), but here's
 - People will write code as a hobby, like wood working today.
 - I'm skeptical people will buy "Artisinal Code", but who knows, people like antiques
 
-### Bespoke tools and optimisim
+### Bespoke tools and optimism
 
 - With coding so easy, might as well make a tool just for your use case.
   - [Hand writing daily journal workflow](/process-journal#journalling-workflow-in-2025)
@@ -565,7 +691,6 @@ My most optimistic view of this is that the cost of developing software goes dow
 Two types:
 
 - Optimized for AI Reading
-
   - Think is similar to evolution
 
 - Optimized for Conveying information to AIs
@@ -620,3 +745,9 @@ That's the key:
 - From Kindergarten Student to PhD in very low years
 - From Moore's law at every 2 years, to like every 3-6 months
 - Not only smart agents, but as many as you want.
+
+### Smart vs Fast - Tradeoffs
+
+Some models are smart, some are fast. While I'd normally recommend the smartest, if smart == super slow, you lose patience for what you're working on, and life sucks. So you either go with lots of background models, or you use dumber and faster. Luckily over time "dumb" and "fast" is getting smart and smarter.w00t! Great [articulation of the problem](https://cognition.ai/blog/swe-grep#fast-context-as-the-first-step-to-fast-agents).
+
+![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20251017_134143.webp)

@@ -15,7 +15,7 @@ Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven re
 <!-- vim-markdown-toc-start -->
 
 - [The Good - Engineering Systems](#the-good---engineering-systems)
-  - [Why they're so good](#why-theyre-so-good)
+  - [Why they are so good](#why-they-are-so-good)
   - [A Trust Driven Social Company](#a-trust-driven-social-company)
   - [Open source lots](#open-source-lots)
   - [Top-notch data tools](#top-notch-data-tools)
@@ -70,7 +70,7 @@ Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven re
 
 The best I've ever used. As I learn what is public and private, I'll share more details.
 
-### Why they're so good
+### Why they are so good
 
 I don't know for sure, but I suspect a few things:
 
@@ -335,11 +335,15 @@ Used to be move fast and break stuff, but that's not good at this size. Now it's
 
 ### Crossing the Rubicon - COVID and the year of efficiency
 
-**TODO**: Make a post on the bulls and bears of the tech labor market
-
 Many employees, myself included, bemoan how Meta used to be before COVID, and (then after COVID, but before the year(s) of efficiency).
 
-Sadly, I got my job offer while the gravy was flowing smoothly, but didn't start until mid-COVID.
+Before we discuss that, I suggest reading this [post](https://www.seangoedecke.com/good-times-are-over/):
+
+_For most of the last decade, being a software engineer has been a lot of fun. Every company offered lots of perks, layoffs and firings were almost unheard of, and in general we were treated as special little geniuses who needed to be pampered so we could work our magic. That’s changed in the last two years. The first round of tech layoffs in 2023 came as a shock, but at least companies were falling over themselves to offer generous severance and teary CEO letters regretting the necessity. Two years later, Meta is explicitly branding its layoffs as “these were our lowest performers”. What the hell happened? What does it mean for us?_
+
+In absolute terms, Meta felt safer and had more benefits then it does today. However, that's likely true of the entire industry. I don't have a good way to measure, but I'm guessing while in absolute terms meta is "worse", likely in relative terms it is on the same spot on the curve (making up a random number - P90 of benefits). As an example, our daily waffles have been reduced to Wednesday only, our fresh grilled dialy chicken is gone, but we still have prime rib, and we still get smoked salmon on Friday's.
+
+I got my job offer while the gravy was flowing smoothly, but didn't start until mid-COVID when benefits reduced (no more take out meals or free ubers to work), but safety was super high (everyone got an exceeds expectation rating regardless of performance).
 
 Interestingly, it turns out when I joined MSFT the year of efficiency was just happening, so I never got to see the other side.
 

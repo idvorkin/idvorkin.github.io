@@ -31,21 +31,23 @@ If you could have one superpower, what would it be? At 46, you'd think I'd have 
   - [Surprise birthday visit to my sister](#surprise-birthday-visit-to-my-sister)
 - [Theory](#theory)
   - [Attributes of Joy](#attributes-of-joy)
+  - [Joy vs Pleasure - Key Differences](#joy-vs-pleasure---key-differences)
   - [Safety: the precondition for Joy](#safety-the-precondition-for-joy)
   - [Joy is contagious](#joy-is-contagious)
   - [Build rapport to make people feel safe](#build-rapport-to-make-people-feel-safe)
   - [Why kids are more receptive to Joy](#why-kids-are-more-receptive-to-joy)
   - [Other things to file](#other-things-to-file)
-  - [Novely, Wonder and Surprise - Break the mundane](#novely-wonder-and-surprise---break-the-mundane)
+  - [Novelty, Wonder and Surprise - Break the mundane](#novelty-wonder-and-surprise---break-the-mundane)
   - [Joy and Overwhelming kindness from a stranger](#joy-and-overwhelming-kindness-from-a-stranger)
   - [Joy versus pleasure](#joy-versus-pleasure)
   - [Things that bring most people joy](#things-that-bring-most-people-joy)
   - [Manipulation vs Augmenting Experiences](#manipulation-vs-augmenting-experiences)
   - [Imbalance of Impact](#imbalance-of-impact)
 - [Role Models & Inspirations](#role-models--inspirations)
+  - [Some Random Cool Dude](#some-random-cool-dude)
   - [Gayle - The Queen of Aggressive Kindness](#gayle---the-queen-of-aggressive-kindness)
-    - [Steve Irwin](#steve-irwin)
-    - [Mr. Rogers](#mr-rogers)
+  - [Steve Irwin](#steve-irwin)
+  - [Mr. Rogers](#mr-rogers)
 - [Future Projects](#future-projects)
   - [Smile box](#smile-box)
   - [Bubble Show](#bubble-show)
@@ -53,7 +55,7 @@ If you could have one superpower, what would it be? At 46, you'd think I'd have 
   - [Put on a kids birthday party](#put-on-a-kids-birthday-party)
 - [Crazy Dream Projects](#crazy-dream-projects)
   - [Become an executive producer for shows](#become-an-executive-producer-for-shows)
-  - [Own a vaudiville theatre](#own-a-vaudiville-theatre)
+  - [Own a vaudiville theater](#own-a-vaudiville-theater)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -119,8 +121,8 @@ My early [ballooning](/ig66/621) adventures:
 
 - I discovered these you are awesome cards on TEMU (add picture) they are great!
 - I wanted to push pocket them, but I can hand them out upside down and people just take them
-  - Zach observed the way I give them to people is I put it into their hand and say "Here you go", and they are stunned and take it. That didnt' work on a cop, he stepped away.
-- Usually by the time people read it I'm gone, but sometimes if I give them to someoen in a lobby they'll catch me on the way out and be like, hey thank you so much
+  - Zach observed the way I give them to people is I put it into their hand and say "Here you go", and they are stunned and take it. That didn't work on a cop, he stepped away.
+- Usually by the time people read it I'm gone, but sometimes if I give them to someone in a lobby they'll catch me on the way out and be like, hey thank you so much
 
 * Also considering printing on the back of business cards,
   ![Collection of business card-sized inspirational cards spread on a green surface, featuring positive messages like "YOU'RE AWESOME" with colorful text and rainbow graphics, packaged for distribution](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250505_065941.webp)
@@ -139,12 +141,16 @@ Link the YouTube Videos (merge the two together)
 
 Joy is an involuntary experience that acts on you. You can be more receptive to joy, but even when you're not you can experience joy against your will.
 
-Increasing the receptivity to Joy
+### Joy vs Pleasure - Key Differences
 
-Joy is fleeting - that seem to be in the definition
-Joy is in the present
-
-TODO Use Lens of Self/Other/Process
+| Attribute | Joy | Pleasure |
+|-----------|-----|----------|
+| **Source** | External surprise, connection, wonder | Relief from internal tension |
+| **Trigger** | Something acts on you | You consume or release something |
+| **Requires** | Novelty, safety, presence | Build-up of need or desire |
+| **Duration** | Fleeting but memorable | Fleeting and forgettable |
+| **Anticipation** | Cannot be anticipated (kills it) | Anticipation increases it |
+| **Aftereffect** | Lingers as warmth | Often followed by wanting more |
 
 ### Safety: the precondition for Joy
 
@@ -155,7 +161,6 @@ TODO Use Lens of Self/Other/Process
   - Is this a conn?
   - What's your angle for doing this?
 - You can increase someones comfort by getting validation from others
-
   - Someone else doing it before you
   - Reassure person
   - Smile
@@ -170,7 +175,7 @@ TODO Use Lens of Self/Other/Process
 
 ### Build rapport to make people feel safe
 
-Check out the [the like switch](/like-switch) to see how an FBI agent builds rapport and makes peope feel safe.
+Check out the [the like switch](/like-switch) to see how an FBI agent builds rapport and makes people feel safe.
 
 Also look at notes from Avner class - who was all about building rapport with a stage audience
 
@@ -188,13 +193,13 @@ Also look at notes from Avner class - who was all about building rapport with a 
 - Christmas Carols
 - Can't help yourself but to sing along
 
-### Novely, Wonder and Surprise - Break the mundane
+### Novelty, Wonder and Surprise - Break the mundane
 
 - You need this to snap into the present moment
 - Some connection between joy and wonder
 - Some say when you clear your mind you feel joy (or bliss) (See the Joy of Happiness)
 - Wonder/Novelty snaps you out of the mundane and makes you feel important
-- Heaht brothers:
+- Heath brothers:
   - Moments; EPIC; Elevate the script
   - Made to Stick: SUCCESs; Unexpected
 
@@ -204,7 +209,7 @@ If a stranger does something really kind for you unexpectantly, that's kind of l
 
 ### Joy versus pleasure
 
-Pleasure is the release of tension. The going from anticipation of something positive to getting it. Eating chocolate cake, orgasm, getting to pee when you have to go. Eating a very tasty cake. Joy isn't like that.
+Pleasure is the release of tension—relief from what you cannot hold within. Eating chocolate cake, orgasm, getting to pee when you have to go. The [Akbar-Birbal story](/happy#akbar-birbal) illustrates this perfectly: the greatest pleasure is simply release from unbearable tension. Joy isn't like that.
 
 ### Things that bring most people joy
 
@@ -250,7 +255,13 @@ I need more thinking here but something like.
 
 ## Role Models & Inspirations
 
-#### Gayle - The Queen of Aggressive Kindness
+Finding role models and inspirations is part of finding [your tribe](/tribe) - the people who inspire you to be better, who share your values, and whose work you admire.
+
+### Some Random Cool Dude
+
+![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250803_121832.webp)
+
+### Gayle - The Queen of Aggressive Kindness
 
 One of my favorite inspirations is Gayle, a 78-year-old retired engineer with over 50 patents to her name, who now dedicates her retirement to "aggressive kindness." Follow her story on Instagram [@gayle.tales](https://www.instagram.com/gayle.tales/).
 
@@ -266,7 +277,7 @@ What's particularly inspiring about Gayle is how she combines whimsy with intent
 
 Her daughter's initial embarrassment turning into deep appreciation also highlights an important lesson: sometimes what makes people remarkable is exactly what makes them seem odd at first glance.
 
-#### Steve Irwin
+### Steve Irwin
 
 Brought joy through infectious enthusiasm and genuine wonder. His "Crikey!" wasn't just a catchphrase - it was an expression of authentic amazement that invited others to share in his joy. His legacy continues through:
 
@@ -274,7 +285,7 @@ Brought joy through infectious enthusiasm and genuine wonder. His "Crikey!" wasn
 - [Robert Irwin](https://www.instagram.com/robertirwinphotography/)
 - [Bindi Irwin](https://www.instagram.com/bindisueirwin/)
 
-#### Mr. Rogers
+### Mr. Rogers
 
 The master of gentle joy-bringing through authenticity. He showed that you don't need grand gestures - sometimes just truly seeing and valuing people is enough to bring joy. His legacy lives on through [@misterrogers_neighborhood](https://www.instagram.com/misterrogers_neighborhood/) and [The Fred Rogers Center](https://www.instagram.com/fredrogerscenter/).
 
@@ -300,8 +311,8 @@ Who knows, maybe one day I'll actually get around to doing these.
 
 ### Become an executive producer for shows
 
-### Own a vaudiville theatre
+### Own a vaudiville theater
 
-Humoursly, I always said this, and one day when I was at the olymics of magic (FISM 2022), I went to talk titled: So you want to own a magic, theatre - you're probalby wrong. Snapped me out it.
+Humoursly, I always said this, and one day when I was at the olymics of magic (FISM 2022), I went to talk titled: So you want to own a magic, theater - you're probably wrong. Snapped me out it.
 
 Luckily Tori works in the arts, and I can say I'm a patron of the arts instead

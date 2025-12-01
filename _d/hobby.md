@@ -47,7 +47,12 @@ Performing music reinforces identity. You are a musician. If you're in a band yo
 
 ### Your turn - find a hobby
 
-You know why you need a hobby, and what makes a great one, now get out there and start looking for your ideal hobby.
+You know why you need a hobby, and what makes a great one, now get out there and start looking for your ideal hobby. As you hunt for your hobbies a few ideas to help you out:
+
+- Chase you curiosity. That's where you'll find the motivation to elevate your talent, turning interest into competency.
+- Remember the laws of new skills
+
+{%include summarize-page.html src="/new-skills"%}
 
 ### FAQ
 

@@ -12,8 +12,9 @@
     "strictNullChecks": false,
     "lib": ["dom", "es2019"],
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "types": ["vitest/globals", "jquery", "mousetrap", "plotly.js"]
   },
   "include": ["./src/**/*.ts", "./src/**/*.js"],
-  "exclude": ["node_modules", "dist", "_site"]
+  "exclude": ["node_modules", "dist", "_site", "./src/__tests__/**"]
 }

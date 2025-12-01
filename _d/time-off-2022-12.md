@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Time off X-mas 2022
+permalink: /timeoff-2022-12
 imagefeaturelocal: raccoon-vaccation.png
 ---
 
@@ -41,7 +42,7 @@ My habits and balance have been strong, just keep my streaks running!
 
 ## Top Learnings
 
-- This year, reads almost [identical to last year](/d/time-off-2021-12). Not sure if that means I've solved it, or I'm stuck in a local maximum? I guess regardless I'm not regressing.
+- This year, reads almost [identical to last year](/timeoff-2021-12). Not sure if that means I've solved it, or I'm stuck in a local maximum? I guess regardless I'm not regressing.
 - I need to plan more moments, instead of relying on "good intentions", I didn't pre-write many moments, and none happened.
 
 <!-- prettier-ignore-start -->

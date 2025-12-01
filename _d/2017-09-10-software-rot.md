@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "software-rot"
+title: "Software Rot"
 date: "2017-09-10 07:25:12 Pacific Daylight Time"
 tags:
   - software engineering

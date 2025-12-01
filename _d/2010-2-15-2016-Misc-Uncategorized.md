@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "random un categorized notes"
+title: "Random Uncategorized Notes"
 comments: true
 inprogress: true
 permalink: random-idea

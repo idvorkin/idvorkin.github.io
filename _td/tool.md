@@ -138,7 +138,7 @@ Language and Syntax:
 Tools:
 
 - PipEnv - Finally sane dependency management for python!
-- [Datalore](https://datalore.io/) - Jetbrain's version of Jupyter
+- [Datalore](https://datalore.io/) - Jetbrains's version of Jupyter
 
 CLI:
 
@@ -149,8 +149,8 @@ Debugging:
 
 - [Ice Cream](https://github.com/gruns/icecream) Simpler printf debugging.
 - pudb - Python Debugger
-- bpython - Python Interpretter (nice GUI, but no VI)
-- loguru - Output pretty exception meassages with a single type annotation
+- bpython - Python Interpreter (nice GUI, but no VI)
+- loguru - Output pretty exception messages with a single type annotation
 
 Examples:
 
@@ -297,7 +297,7 @@ function gstatdaterange() {
     git_output=`git log --since "$1" --until "$2" --pretty="%H"`
 
     # diff between first commit to last commit, and sort the output by size
-    #sort params -k=second column; -t=with delimter as |; -n=sort as numeric -r sort as reversed
+    #sort params -k=second column; -t=with delimiter as |; -n=sort as numeric -r sort as reversed
     git diff --stat `echo $git_output | tail -n 1` `echo $git_output | head -n 1` |  sort -k2 -t'|' -n -r
 }
 ```
@@ -490,7 +490,7 @@ The first -ss seeks fast to (approximately) 8min0sec, and then the second -ss se
 
 Video To Gif on iOS
 
-On github, it's common to share an inline view of a [repro](https://github.com/mzlogin/vim-markdown-toc/issues/62). A great way to do that is to make a gif of the issue. To do that on iOS you need to do do a screen recording, and then save that to a gif. I used GifMaker, seems good engouh.
+On github, it's common to share an inline view of a [repro](https://github.com/mzlogin/vim-markdown-toc/issues/62). A great way to do that is to make a gif of the issue. To do that on iOS you need to do do a screen recording, and then save that to a gif. I used GifMaker, seems good enough.
 
 ### Linters and formatters
 
@@ -553,7 +553,7 @@ setTimeout(() => customWindow.close(), 1000 * 60 * 120);
 
 ### Document conversion - Pandoc
 
-HMTL to markdown
+HTML to markdown
 pandoc x.html -t gfm-raw_html -f html > lawsofpower.md
 
 ### Programming Helpers

@@ -21,9 +21,9 @@ Negotiation is the heart of collaboration. It is what makes conflict potentially
     - [Know your BATNA](#know-your-batna)
 - [Never Split the difference](#never-split-the-difference)
     - [Mirroring and active listening](#mirroring-and-active-listening)
-    - [Tactical Empathy and Labelling](#tactical-empathy-and-labelling)
+    - [Tactical Empathy and Labeling](#tactical-empathy-and-labeling)
     - [Mirroring](#mirroring)
-    - [Labelling](#labelling)
+    - [Labeling](#labeling)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -60,7 +60,7 @@ Another book on negotiation. This one is less about logic, and more about feelin
 
 Chapter 2, you’ll learn how to avoid the assumptions that blind neophyte negotiators and replace them with Active Listening techniques like Mirroring, Silences, and the Late-Night FM DJ Voice. You’ll discover how to slow things down and make your counterpart feel safe enough to reveal themselves; to discern between wants (aspirations) and needs (the bare minimum for a deal); and to laser-focus on what the other party has to say.
 
-### Tactical Empathy and Labelling
+### Tactical Empathy and Labeling
 
 Chapter 3 will delve into Tactical Empathy. You’ll learn how to recognize your counterpart’s perspective and then gain trust and understanding through Labeling—that is, by repeating that perspective back to them. You’ll also learn how to defuse negative dynamics by bringing them into the open. Finally, I’ll explain how to disarm your counterpart’s complaints about you by speaking them aloud in an Accusation Audit. Next, in
 
@@ -80,4 +80,4 @@ Chapter 10 explains how to find and use those most rare of negotiation animals: 
 
 ### Mirroring
 
-### Labelling
+### Labeling

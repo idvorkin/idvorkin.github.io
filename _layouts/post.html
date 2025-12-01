@@ -56,14 +56,21 @@
 
     <span id="hold-scripts-so-looks-nice-debugging">
       {% include scripts.html %} {% if page.mermaid %} {% include mermaid.html
-      %} {% endif %}
+      %} {% endif %} {% if page.mathjax %}
+      <!-- MathJax for rendering mathematical equations -->
+      <script
+        id="MathJax-script"
+        async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+      ></script>
+      {% endif %}
       <script>
         // Bootstrap tables are opt-in, so set their class, and make them striped
         // https://getbootstrap.com/docs/4.0/content/tables/#table-head-options
         $("table").addClass("table table-striped");
 
-        // Make images fluid (except in the header)
-        $("#main-content img").addClass("img-fluid");
+        // Make images fluid (except ones we control with float-right-img)
+        $("#main-content img").not(".float-right-img").addClass("img-fluid");
       </script>
       <!--See: https://github.com/partykit/cursor-party-->
       <script src="https://cursor-party.idvorkin.partykit.dev/cursors.js"></script>

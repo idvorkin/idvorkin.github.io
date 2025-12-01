@@ -150,7 +150,7 @@ OSX has several built-in ways to manage screen resolutions and displays:
    - Some USB-C to HDMI adapters work better than others for high refresh rates
    - YCbCr422 color format is typically used for 4K@120Hz; RGB or YCbCr444 may require additional tweaking
 
-## Philisophy
+## Philosophy
 
 ### Do not switch back and forth between windows and osx.
 

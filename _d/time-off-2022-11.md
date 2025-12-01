@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Time off November 2022 - New York with Ammon, and Then Maureen and Brian for Thanksgiving
+permalink: /timeoff-2022-11
 ---
 
 It's just about thanksgiving 2022, and after 2 years of not being able to go to Oregon, we're on our away! Through unexpected timing, before going to Oregon, I'm going to New York City with Ammon, and through even more unexpected timing, we just had lay offs at work, and have a major re-organization. Instead of being able to fully take the time off, I'll be working several days, so having clarity on my priorities is critical.
 
-The first leg of my trip is NYC. Turns out Ammon loves musicals, and every year he makes a pilgramige to broadway to be able to see like 14 musicals in 7 days.
+The first leg of my trip is NYC. Turns out Ammon loves musicals, and every year he makes a pilgrimage to broadway to be able to see like 14 musicals in 7 days.
 
 6 months ago, Ammon was saying he loves these trips, but his wife Elise and his kids find them overwhelming and he has to go alone. I'm like "Well, I can work from the Facebook office in NYC, and seeing some shows will be fun". (Not nearly as many shows as Ammon though). We decided back then to book the week before Thanksgiving.
 
@@ -107,6 +108,8 @@ Two days before the start of the trip we had layoffs (including my partners who 
 
 Even though we live 40 minutes part, I almost never see Ammon in person (notable exceptions being when he is bringing over a birthday cake). I prioritized spending time with him - and it's super enjoyable.
 
+{% include blob_image.html src="cake.webp" %}
+
 ## Family (Y/5)
 
 - ☐ Call kids every day and hear what they did.
@@ -123,7 +126,7 @@ Even though we live 40 minutes part, I almost never see Ammon in person (notable
 
 - ☐ Practice every day
 - ☐ Bring my magic fanny pack.
-- ☐ Work on anniversery card
+- ☐ Work on anniversary card
 
 ### General Magic
 
@@ -218,7 +221,7 @@ See the section about keep work at work.
 - Playing spelling bee with Ammon was fun, and then taking time some hours to write up this travel post.
 - Note to self, read the time off post before hand.
 - Made a balloon for kid on airport to city bus
-- Did magic trick for girl, totaly missed. luckily she was drunk as a skunk and rather happy, stuffed card in her bra
+- Did magic trick for girl, totally missed. luckily she was drunk as a skunk and rather happy, stuffed card in her bra
 - Lost air tag, went on hunt to find it. Found it but too late was crushed by a car
 
 ### Saturday - Harry Potter
@@ -235,7 +238,7 @@ See the section about keep work at work.
 
 ### Sunday
 
-- Day before eating tonnes of vegtables (todo link photos)
+- Day before eating tonnes of vegetables (todo link photos)
 - Went for a walk, started to pour
   - Went to a meh coffee shop
   - Suddenly needed to poop
@@ -245,7 +248,7 @@ See the section about keep work at work.
 
   - First night, saw a comedy show one 20 year fit guy talking about healhty eating messing up your sphinctor not able to hold it in.
   - Didn't think it was funny.
-  - This morning, needed to poop, absoloutely hillarious
+  - This morning, needed to poop, absolutely hilarious
 
 - Asi Wind Show
   - Amazing Magic, but kind of slow ...
@@ -253,7 +256,7 @@ See the section about keep work at work.
   - Cool having everyone write names on their cards
 - Pizza Magic
   - Did another magic trick for girl in pizza line
-  - This time thought I got it, but it didn't have her name on it. Then looked closer, and it was just written really smal.
+  - This time thought I got it, but it didn't have her name on it. Then looked closer, and it was just written really small.
   - Not to self: Have someone else hold the cards
   -       Tell spectator: Visualize your card in your mind ... have you got it? Good
   -       now, imagine it turning over... Did you do it? Great ..

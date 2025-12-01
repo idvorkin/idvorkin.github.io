@@ -81,7 +81,7 @@ The like switch, written by an ex-FBI agent, goes into detail on how to make fri
 - Girls - wear something in your hair
 - Introduce yourself by name
 - Give something
-  - Even a smiley face on your reciept
+  - Even a smiley face on your receipt
   - Give mints
 - Reath the customers order
 - Provide good service

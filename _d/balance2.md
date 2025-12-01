@@ -147,6 +147,12 @@ Investing in a role requires activation. See [Activation Energy](/activation)
 
 {%include summarize-page.html src="/time-off" %}
 
+### Learning to slow down
+
+Balance isn't just about managing energy — it's about knowing when to stop pushing. Sometimes the most productive thing you can do is activate your rest and digest system and let your body recover. High energy isn't always the answer; learn to recognize when slowing down is the strategic choice.
+
+{%include summarize-page.html src="/slow"%}
+
 ## More resources
 
 Oddly, not a ton of books on the topic. Juggling elephants is a fun parable-style book on it.

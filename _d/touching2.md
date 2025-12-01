@@ -31,7 +31,7 @@ It's pretty easy to be overwhelmed by humanity sucking, but there is so much goo
 
 - [Grandfather getting strong](https://youtu.be/y_bYjLYXJo0)
 - [Thai Feeding the poor - sick dad](https://m.youtube.com/watch?v=iVrQqWIs6ZE)
-- [Unsung heros - Thai bank](https://m.youtube.com/watch?v=uaWA2GbcnJU)
+- [Unsung heroes - Thai bank](https://m.youtube.com/watch?v=uaWA2GbcnJU)
 - [Thai homeless with Shop Keeper](https://m.youtube.com/watch?v=S-fvxEq_3DA)
 - [Thai silence of love](https://m.youtube.com/watch?v=qZMX6H6YY1M)
 - [Lots of the commercials back to back](https://m.youtube.com/watch?v=rQcucGT6hd8)

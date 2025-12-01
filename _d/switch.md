@@ -136,17 +136,41 @@ Focus on ability and prompt, motivation is fickle. Use motivation waves to do th
 
 ## Influencer 2.0
 
-A different model to switch, also covering change management. Essentially you need to influence through the following dimensions
+A different model to switch, also covering change management. Essentially you need to influence through the following six dimensions:
 
-```mermaid
-quadrantChart
-  x-axis Personal  --> Social
-  y-axis "Motivation" --> Ability
-  quadrant-1 "Group Ability"
-  quadrant-2 "Skills"
-  quadrant-3 "Self Regulation "
-  quadrant-4 Group Motivation
-```
+{% include six-cell-matrix.html
+    title="Influencer 2.0: Six Sources of Influence"
+    subtitle="Change happens when you influence across all dimensions"
+    row1_label="Motivation"
+    row2_label="Ability"
+    col1_label="Personal"
+    col2_label="Social"
+    col3_label="Structural"
+    c1_name="Personal Motivation"
+    c1_subtitle="Self-Regulation"
+    c1_traits="Connect to values<br>Build intrinsic motivation<br>Create emotional engagement<br>Personal 'why'"
+    c1_color="rgba(232, 244, 234, 0.5)"
+    c2_name="Social Motivation"
+    c2_subtitle="Peer Influence"
+    c2_traits="Harness peer pressure<br>Build accountability<br>Create social norms<br>Rally the herd"
+    c2_color="rgba(255, 229, 180, 0.5)"
+    c3_name="Structural Motivation"
+    c3_subtitle="Incentives & Rewards"
+    c3_traits="Design reward systems<br>Align incentives<br>Remove disincentives<br>Create consequences"
+    c3_color="rgba(255, 224, 224, 0.5)"
+    c4_name="Personal Ability"
+    c4_subtitle="Skills & Knowledge"
+    c4_traits="Build individual skills<br>Provide training<br>Practice deliberately<br>Develop competence"
+    c4_color="rgba(230, 230, 250, 0.5)"
+    c5_name="Social Ability"
+    c5_subtitle="Support & Coaching"
+    c5_traits="Enable group performance<br>Provide coaching<br>Build support networks<br>Foster collaboration"
+    c5_color="rgba(220, 245, 245, 0.5)"
+    c6_name="Structural Ability"
+    c6_subtitle="Environment & Tools"
+    c6_traits="Provide tools and resources<br>Remove barriers<br>Build infrastructure<br>Shape the path"
+    c6_color="rgba(255, 240, 220, 0.5)"
+%}
 
 {% include amazon.html asin="0385528752;B07D23CFGR;B00BPO7710" %}
 

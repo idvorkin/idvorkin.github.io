@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Time off July 2022 - FISM and Canada.
+permalink: /timeoff-2022-07
 ---
 
 It's FISM (olympics of magic), and I'm going to Quebec city to reenergize my love of magic, since I'm already in Canada I'll also spend time with My Mom, Sister, and college room mate.
@@ -34,7 +35,7 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
   - Back up at 5:30
   - Writing from 7-10
   - Citadel Tour from 10-11 (pretty cool)
-  - Spontanious ran into person I split cab with to the hotel, veyr nice.
+  - Spontaneous ran into person I split cab with to the hotel, very nice.
   - Walked around all over for fun
   - Stopped listening to music and did some balloons for kids
   - Had a nice dinner
@@ -153,7 +154,7 @@ Last morning
 ### Joy Activities
 
 - ☑ Just finding joy where I am
-- Making the gym a joyful experiance.
+- Making the gym a joyful experience.
 
 ## Emotional Habits (Y/5)
 
@@ -298,7 +299,7 @@ Post-Hoc realized I was being an [essentialist](/essential):
 - Took time during intermissions to do stretching
 - I do weird stretches so people always ask if I'm OK.
 - Left the envening show 15 minutes in so I could sleep in instead. Should have not showed up.
-- Asked folks who said they do baloons and bands to show me what they do
+- Asked folks who said they do balloons and bands to show me what they do
 - Talking to Zach and Tori!
 
 ### Dani DaOrtiz - Best Magic Show of My life

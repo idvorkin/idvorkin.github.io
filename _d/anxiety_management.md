@@ -65,7 +65,7 @@ Oddly **The more you avoid your anxiety, the worse it will get**, at the same ti
 
 #### Identify the perceived threat - What is the exact/precise problem.
 
-When you're scared, you want to exaggerate and catastrophize - stop it makes it worse.
+When you're scared, you want to exaggerate and catastrophe - stop it makes it worse.
 
 - Do not amplify the problem,
 - Do not exaggerate the problem

@@ -2,30 +2,116 @@
 layout: page
 permalink: /featured/
 title: FEATURED POSTS
-description: "An archive of posts sorted by date."
+description: "Curated collection of essential posts"
 ---
 
-{% assign featuredcount = '0' %}
-<ul class="post-list">
-  {% for post in site.posts %} {% if post.featured %} {% assign featuredcount =
-  featuredcount | plus:'1' %}
-  <li>
-    <article>
-      <i class="fa fa-star-half-o"></i>
-      <a href="{{ site.url }}{{ post.url }}"
-        >{{ post.title }}
-        <span class="entry-date"
-          ><time datetime="{{ post.date | date_to_xmlschema }}"
-            >{{ post.date | date: "%B %d, %Y" }}</time
-          ></span
-        ></a
-      >
-    </article>
-  </li>
-  {% endif %} {% endfor %}
-</ul>
-{% if featuredcount == '0' %}
-<div class="notepad-page-title row">
-  <h1>No posts has been featured yet</h1>
+<div id="featured-posts-container">
+  <div class="loading">Loading featured posts...</div>
 </div>
-{% endif %}
+
+<script type="module">
+import { get_link_info } from "/assets/js/index.js";
+
+async function loadFeaturedPosts() {
+  try {
+    // Featured post URLs from _data/featured.yml (rendered by Jekyll)
+    const featuredUrls = [
+      {% for url in site.data.featured.featured_posts %}
+      "{{ url }}"{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ];
+    
+    // Fetch all link info from backlinks.json
+    const allLinkInfo = await get_link_info();
+    
+    // Map URLs to post data from backlinks
+    const featuredPosts = featuredUrls.map(url => {
+      const postInfo = allLinkInfo[url];
+      if (postInfo) {
+        return {
+          title: postInfo.title || url,
+          url: url,
+          description: postInfo.description || "",
+          tags: postInfo.tags || []
+        };
+      }
+      // Fallback if not found in backlinks
+      return {
+        title: url.replace(/^\//, '').replace(/-/g, ' '),
+        url: url,
+        description: "Post information not available",
+        tags: []
+      };
+    }).filter(post => post !== null);
+    
+    // Render the posts
+    const container = document.getElementById('featured-posts-container');
+    if (featuredPosts.length === 0) {
+      container.innerHTML = '<div class="notepad-page-title row"><h1>No posts have been featured yet</h1></div>';
+    } else {
+      container.innerHTML = `
+        <ul class="post-list">
+          ${featuredPosts.map(post => `
+            <li>
+              <article>
+                <i class="fa fa-star-half-o"></i>
+                <a href="${post.url}">${post.title}</a>
+                <div class="entry-description">${post.description}</div>
+                ${post.tags && post.tags.length > 0 ? `
+                  <div class="entry-tags">
+                    ${post.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                  </div>
+                ` : ''}
+              </article>
+            </li>
+          `).join('')}
+        </ul>
+      `;
+    }
+  } catch (error) {
+    console.error('Error loading featured posts:', error);
+    document.getElementById('featured-posts-container').innerHTML = 
+      '<div class="error">Error loading featured posts. Please try refreshing the page.</div>';
+  }
+}
+
+// Load posts when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', loadFeaturedPosts);
+} else {
+  loadFeaturedPosts();
+}
+</script>
+
+<style>
+.loading {
+  color: #999;
+  font-style: italic;
+  padding: 20px;
+}
+
+.error {
+  color: #d00;
+  padding: 20px;
+}
+
+.entry-description {
+  color: #666;
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+.entry-tags {
+  margin: 5px 0;
+}
+
+.tag {
+  display: inline-block;
+  background: #f0f0f0;
+  padding: 2px 8px;
+  margin: 2px;
+  border-radius: 3px;
+  font-size: 0.85em;
+  color: #555;
+}
+</style>

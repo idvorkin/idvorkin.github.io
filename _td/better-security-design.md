@@ -73,7 +73,7 @@ Sign can be orthogonal to identity. For example, multiple SSO services can provi
 **Why doesn’t everyone use SSO?**
 I suspect a few things, many of which I disagree with.
 
-- Dependant on a SSO providers: Transient downtime, out of business.
+- Dependent on a SSO providers: Transient downtime, out of business.
 
 If the SSO provider is down, users can’t login - this is a unfixable experience.
 
@@ -152,7 +152,7 @@ I grew up doing security at Microsoft, and at the heart of their assessment mode
 - **S**poofing - Pretending to be a user. Defeating Authentication.
 - **T**ampering - Changing data (at rest or in transit). Defeating Integrity Protection
 - **R**epudiation - Claiming something happened that didn't. Defeating Non Repudiation
-- **I**nformation disclosure - Leak dates. Defeating Confidentiality
+- **I**information disclosure - Leak dates. Defeating Confidentiality
 - **D**enial of service - Losing access to the system. Defeating Availability.
 - **E**scalation of privilege - Gaining access to stuff you should be able to. Defeating Authorization.
 

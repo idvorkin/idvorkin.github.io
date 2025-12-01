@@ -2,8 +2,15 @@
 # PROJECT-SPECIFIC
 # ================================================================================
 
+# Temporary directory for repo-specific files
+repo_tmp/
+
 # Ignore the statically generated site.
 _site
+
+# Ignore git data file
+_data/git.json
+_data/current_pr.yml
 
 #Ignore vim junk
 *.swp
@@ -213,6 +220,9 @@ Session.vim
 # Aider AI coding assistant
 .aider.*
 
+# Claude settings
+.claude/settings.local.json
+
 # Emacs
 \#*\#
 /.emacs.desktop
@@ -256,7 +266,6 @@ dist-ssr
 
 # Docker
 .dockerignore
-Dockerfile.*
 
 # Terraform
 *.tfstate

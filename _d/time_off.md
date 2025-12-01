@@ -3,7 +3,7 @@ layout: post
 title: "Getting the most out of time off"
 tags:
 permalink: /timeoff
-imagefeaturelocal: raccoon-vacation.png
+imagefeaturelocal: raccoon-vacation.webp
 redirect_from:
   - /vacation
   - /personal-development
@@ -44,6 +44,7 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
   - [Before you go](#before-you-go)
   - [Every other day check-in](#every-other-day-check-in)
   - [Physical Health](#physical-health)
+  - [Diet](#diet)
   - [Emotional Health](#emotional-health)
   - [Identity Health](#identity-health)
   - [Travel Tips - Before you go](#travel-tips---before-you-go)
@@ -68,7 +69,7 @@ Like being "money rich", being time rich can solve lots of problem, but it comes
 
 ## The phases of time off
 
-{% include local_image_float_right.html src="raccoon-vacation.png" %}
+{% include local_image_float_right.html src="raccoon-vacation.webp" %}
 
 A common question is should you take 2 short vacations or 1 long one. That's a tough choice. I'm not sure I have an opinion on that, but I've learned my time off goes through a few phases, and I suspect there's a fixed time component, and if I can better understand the phases, I can maximize the value of my time off:
 
@@ -76,6 +77,8 @@ A common question is should you take 2 short vacations or 1 long one. That's a t
 1. TODO list - Cross those small things you've been putting off your TODO list
 1. Freedom - Savoring your ability to do nothing
 1. Productivity - Realizing there are important not urgent things you can do at your own pace.
+
+These phases become even more pronounced with extended time off. For a deep exploration of what happens when you take a full year off at 50, see the [gap year paradox](/gap-year) and [my personal wrestling with the decision](/gap-year-igor).
 
 ### Vegetation
 
@@ -144,7 +147,7 @@ And by making your positive habits easier. For me, this includes writing up a ti
 
 Look at the incoming links below and:
 
-- [April 2020 - Time between leaving Amazon and Joining Facebook](/time-off-2020-03)
+- [April 2020 - Time between leaving Amazon and Joining Facebook](/timeoff-2020-03)
 
 ## Making the most out of staycation
 
@@ -154,7 +157,7 @@ With staycations, it's especially easy to oscillate between vegetating, grinding
 
 I've felt guilt around this before, but this time it worked amazing:
 
-{%include summarize-page.html src="/time-off-2024-02" %}
+{%include summarize-page.html src="/timeoff-2024-02" %}
 
 Pros:
 
@@ -221,8 +224,6 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
 
 ### Physical Health
 
-- **Nothing tastes as good as skinny feels** - So true, regardless of the metric: feeling great, looking great.
-- **No booze** - Those days are over for me. Messes up my sleep and I Feel worse. Go take a cold shower instead.
 - **GET A GYM MEMBERSHIP** - Gym is a fantastic place to focus on strength and renewal and anchor the day. I got a gym membership with GoodLife, let me do my top priorities daily, even had a massage chair.
 
 - **Bring bands, light gym equipment** - Have everything to stretch and self-massage, and light workouts
@@ -231,9 +232,42 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
 
 - **Do extra stretches/cardio** - Remember energy positive, and keeps you injury-free.
 
-- **Bring stuff to help you eat healthy**
-  - Bring the microwavable popcorn popper and instant soup. These are some of my favorite low-calorie foods.
-  - Bring a travel scale - that mindfulness around weight is great.
+- **Bring kettlebells and a heavy club** - Portable strength tools for short, high-value sessions.
+- **Morning movement daily** - 10–20 minutes of mobility/strength to anchor the day. On driving days, do 5–10 minute micro-sessions at rest stops.
+
+### Diet
+
+#### Mindset
+
+- **Nothing tastes as good as skinny feels** - So true, regardless of the metric: feeling great, looking great.
+
+#### Alcohol
+
+- **No booze** - Those days are over for me. Messes up my sleep and I Feel worse. Go take a cold shower instead.
+- Airports and trips: Don't drink too much.
+
+#### Tools and Prep
+
+- Bring the microwavable popcorn popper and instant soup. These are some of my favorite low-calorie foods.
+- Bring a travel scale - that mindfulness around weight is great.
+
+#### Travel Nutrition
+
+##### Airports
+
+- Bring power bars as reliable low-effort snacks.
+
+##### Road trips
+
+- Bring a cooler. Buy fruits/vegetables and keep them in the cooler and hotel fridge.
+
+#### Breakfast
+
+Family loves the free hotel breakfast (and it is a great deal), but I can't afford the calories. See detailed guidance under [Diet → Hotel breakfast](/diet#hotel-breakfast).
+
+#### Terzepatide
+
+Ensure I don't run out of terzepatide during trips/time off. Plan refills ahead and pack doses appropriately. See [Terzepatide](/terzepatide).
 
 ### Emotional Health
 
@@ -244,7 +278,7 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
 - **Continuous learning** - Always a learning opportunity, learn what needs to be learned and move on.
 - **Don't berate mistakes** - Getting off the plane, it was super bright in Toronto. I opened my sunglasses case, and turns out I brought a second pair of glasses. OMG, I'll be blind, this will be terrible. Meh, was on the beach 20 hours over the weekend, was fine, turns out I have an ability to squint. Nothing terrible happens.
   - TODO: Add a note on caring vs mattering. Caring is your emotional response(unavoidable), but mattering is the objective difference it makes to whom, and over what time period.
-- **Don't catastrophize** - On the flight down realized I didn't bring the credit card on which I booked the car, and need to use for insurance. Thought would need it to check out the car. Freaked out a bit, got there - turns out it was totally fine. Also though I'd lost my popcorn popper, and balloon pump, and laptop - I didn't. Also thought my forced check bags would be lost forever. It wasn't, it was right there. And as a result of waiting for it, I ended up meeting a really cool person.
+- **Don't catastrophe** - On the flight down realized I didn't bring the credit card on which I booked the car, and need to use for insurance. Thought would need it to check out the car. Freaked out a bit, got there - turns out it was totally fine. Also though I'd lost my popcorn popper, and balloon pump, and laptop - I didn't. Also thought my forced check bags would be lost forever. It wasn't, it was right there. And as a result of waiting for it, I ended up meeting a really cool person.
 - **Stop panicking and think** - Turns out my friend was flying into Toronto, so got him to bring my sunglasses.
 - **Don't fret micro-optimizations** - From Belleville to Hamilton, I spent lots of time trying to figure out what time I'd arrive, what order of gym/work/sister/lunch I'd tackle, trying to micro-optimize, spent lots of cycles. Turned out, didn't matter at all.
 - **Remember The [Sublime states](/siy)** - Loving Kindness; Compassion; Altruistic Joy; Equanimity
@@ -282,8 +316,8 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
   - Lost my popcorn popper and my balloon pump and my laptop. Turns out in the extra pocket, I forgot.
 - Airport
   - Hanging at the airport early is totally fine - don't worry it's better than being there late.
-  - Bring power bars
-  - Don't drink too much
+  - Airport snacks: see Diet → Travel Nutrition → Airports
+  - Alcohol: see Diet → Alcohol
   - Take Sudafed
   - Get AirPlugs
   - Get Nexus/Frequent Traveler card (well worth the 100 bucks)
@@ -299,13 +333,28 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
 - Force Captive Portal to appear - <http://captive.apple.com/hotspot-detect.html>
 - For the stuff I forget - Just go to Walmart/target and buy it. It's basically disposable.
 
+- Travel router
+  - Pack and pre-configure it to bypass flaky captive portals; keep SSID/password noted and the admin password saved.
+
+#### Packing Checklist
+
+- Tech: chargers, power bank, travel router, Insta360 + mounts, extra SD cards
+- Fitness: kettlebells, heavy club, bands, peanut ball, foam roller, gripper
+- Diet: popcorn popper, instant soup, travel scale, cooler (if road trip)
+- Docs: ID/passport, credit cards, Nexus, insurance
+- Comfort: earplugs, eye mask, sunglasses
+- Tracking: AirTags
+
 ### Road Trip Tips
 
 - Bring Kettlebells
-- Bring a cooler - Buy fruits/vegtables and put them in there cooler and hotel fridge.
+- Road-trip food plan: see Diet → Travel Nutrition → Road trips
 - Lots of audiobooks
 - Stop at walmart
 - Set an end-of-day location that's only 4 hours of driving, otherwise, you'll end up spending not enough time smelling the roses.
+
+- Morning movement on drive days: quick 5–10 minute kettlebell/club mobility at each stop (aim every 2–3 hours).
+- Pre-mount and configure Insta360 before departure (battery charged, card inserted, horizon lock) so it's one-button ready when you see cool stuff.
 
 ### Other learnings
 
@@ -322,10 +371,12 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
 
 ### Can you have too much time off?
 
-Need to explore further, from [this study](https://www.apa.org/pubs/journals/releases/psp-pspp0000391.pdf):
+Research suggests there's a sweet spot. From [this study](https://www.apa.org/pubs/journals/releases/psp-pspp0000391.pdf):
 
 _Many people living in modern society feel like they do not have enough time and are constantly searching
 for more. But is having limited discretionary time actually detrimental? And can there be downsides to having too much discretionary time? We find a negative quadratic relationship between discretionary time and subjective well-being. These results show that having too little time is indeed linked to lower subjective well-being caused by stress, having more time does not continually translate to greater subjective well-being._
 
 _Having an abundance of discretionary time is sometimes even linked to lower subjective well-being because of a lacking sense of productivity. In such cases, the negative effect of having too much
 discretionary time can be attenuated when people spend this time on productive activities._
+
+This research highlights the importance of **productive activities** during extended time off - which is exactly what the gap year approach emphasizes. Rather than endless leisure, a well-designed gap year focuses on intentional investment in health, relationships, and mastery. See the [gap year paradox](/gap-year) for the full framework.

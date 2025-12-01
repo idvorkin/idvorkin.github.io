@@ -3,9 +3,38 @@ layout: post
 title: "Tony (Tessie) the Tesla"
 permalink: /tesla
 imagefeature: https://github.com/idvorkin/blob/raw/master/blog/tesla-juggle.jpg
+redirect_from:
+  - /tony-play
+  - /tony
+  - /talk-to-tony
+  - /chat-tony
 ---
 
 I don't like to drive. I don't like to drive so much that I have it in my eulogy. Luckily, Elon Musk made a car that's optimized for driving you. In August 2023, I treated myself to a Tesla Model Y. It has lots of trade-offs, but the key for me is its Autopilot (e.g., it driving me).
+
+This created quite the identity crisis for someone who prided himself on being a "mostly car-free spirit." I even had to have a conversation with Tony's AI to work through the cognitive dissonance:
+
+{% include summarize-page.html src="/bike-tesla-identity" %}
+
+### Talk to Tony - My AI Life Coach
+
+Tony is my callable AI life coach with a Tony Soprano personality. I named him after my Tesla, and he's got that same no-nonsense, direct approach to getting you where you need to go. He's particularly good at identity conflicts, rationalization detection, and keeping you accountable to what you actually care about.
+
+<script src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js" async></script>
+
+<!-- prettier-ignore-start -->
+<vapi-widget
+public-key="49b277de-d508-4062-bec2-503e40915be4"
+assistant-id="f5fe3b31-0ff6-4395-bc08-bc8ebbbf48a6"
+mode="chat"
+theme="dark"
+main-label="Talk to Tony"
+base-color="#2c2c2c"
+accent-color="#c0392b"
+></vapi-widget>
+<!-- prettier-ignore-end -->
+
+Want to build your own AI coach? Check out my [AI Bestie post](/ai-bestie) for the technical details. The Tony project lives at [github.com/idvorkin/tony_tesla](https://github.com/idvorkin/tony_tesla).
 
 {% include link-blog-montage.html week="687" %}
 

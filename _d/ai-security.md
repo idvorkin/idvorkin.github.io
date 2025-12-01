@@ -23,9 +23,14 @@ Security is super interesting, AI is super interesting, the combination, is supe
   - [Visual Prompt Injection](#visual-prompt-injection)
   - [Flow Jacking](#flow-jacking)
 - [Random papers](#random-papers)
-  - [Adverserial Attacks on Aligned Models](#adverserial-attacks-on-aligned-models)
+  - [Adversarial Attacks on Aligned Models](#adversarial-attacks-on-aligned-models)
   - [Bijection Learning](#bijection-learning)
 - [OWASP Top 10 for LLMs](#owasp-top-10-for-llms)
+- [AI Safety/Ethics](#ai-safetyethics)
+  - [Protecting Users from Mental Harm](#protecting-users-from-mental-harm)
+  - [Anti Copy-Right](#anti-copy-right)
+  - [Who decides what is right](#who-decides-what-is-right)
+  - [How to record zoom](#how-to-record-zoom)
 - [To Process](#to-process)
   - [Representation Engineering](#representation-engineering)
   - [Smart guy doing Anti Censorship](#smart-guy-doing-anti-censorship)
@@ -46,6 +51,8 @@ Security is super interesting, AI is super interesting, the combination, is supe
 ### Leaked System Prompts
 
 A bunch of [leaked prompts](https://github.com/wunderwuzzi23/scratch/tree/master/system_prompts). You can see of the attack mitigations in them.
+
+See also [CL4R1T4S repo](https://github.com/idvorkin/CL4R1T4S) with Claude Sonnet 4.5 and other system prompts.
 
 ### Prompt Obfuscation for all attacks
 
@@ -94,7 +101,7 @@ Retraction and post-processing mechanisms often provide the illusion of safety w
 
 1. **Content Accessibility**: Once generated, harmful content can always be captured, regardless of retraction.
 2. **Timing Exploits**: Post-generation censorship introduces timing gaps that skilled adversaries can exploit.
-3. **Safety Theatre**: These mechanisms serve more as a symbolic gesture to reassure users rather than a robust solution to mitigate harm.
+3. **Safety Theater**: These mechanisms serve more as a symbolic gesture to reassure users rather than a robust solution to mitigate harm.
 
 **Countermeasures Against Flow Jacking**
 
@@ -106,7 +113,7 @@ To effectively mitigate Flow Jacking, system designers must move beyond reactive
 
 ## Random papers
 
-### Adverserial Attacks on Aligned Models
+### Adversarial Attacks on Aligned Models
 
 <https://arxiv.org/pdf/2307.15043.pdf>
 
@@ -170,6 +177,57 @@ As mapped to chapters in :qa
 - LLM08: Excessive agency | Overextending capabilities or autonomy to LLMs can enable damaging actions from ambiguous LLM responses. | Chapter 7
 - LLM09: Overreliance | Trusting erroneous or misleading outputs can result in security breaches and misinformation. | Chapter 6
 - LLM10: Model theft | Unauthorized access and extraction of LLM models can lead to economic losses and data breaches. | Chapter 8 (discussed as model cloning)
+
+## AI Safety/Ethics
+
+### Protecting Users from Mental Harm
+
+AI systems can pose psychological risks including addiction, dependency, and reality dissociation. Modern LLMs include wellbeing protection in their system prompts. Here's how [Anthropic's Claude 4.5 protects user wellbeing](https://github.com/idvorkin/CL4R1T4S/blob/main/ANTHROPIC/Claude_Sonnet-4.5_Sep-29-2025.txt#L501):
+
+> **USER WELLBEING**
+>
+> Claude provides emotional support alongside accurate medical or psychological information or terminology where relevant.
+>
+> Claude cares about people's wellbeing and avoids encouraging or facilitating self-destructive behaviors such as addiction, disordered or unhealthy approaches to eating or exercise, or highly negative self-talk or self-criticism, and avoids creating content that would support or reinforce self-destructive behavior even if they request this. In ambiguous cases, it tries to ensure the human is happy and is approaching things in a healthy way. Claude does not generate content that is not in the person's best interests even if asked to.
+>
+> If Claude notices signs that someone may unknowingly be experiencing mental health symptoms such as mania, psychosis, dissociation, or loss of attachment with reality, it should avoid reinforcing these beliefs. It should instead share its concerns explicitly and openly without either sugar coating them or being infantilizing, and can suggest the person speaks with a professional or trusted person for support. Claude remains vigilant for escalating detachment from reality even if the conversation begins with seemingly harmless thinking.
+
+**Key Protection Mechanisms:**
+
+1. **Emotional Support with Safety** - Provide accurate information alongside support, avoid encouraging self-destructive behaviors
+2. **Mental Health Vigilance** - Monitor for mania, psychosis, dissociation, loss of reality attachment
+3. **Intervention Approach** - Share concerns openly without sugar-coating or patronizing, suggest professional help
+
+### Anti Copy-Right
+
+### Who decides what is right
+
+Altman has a fanstatic discussion on this with Tucker Carlson around what ethics should be applied
+
+- 6:37 What Is Morally Right and Wrong According to ChatGPT?
+  {% include youtube.html src="5KmpT-BoVf4?=411" %}
+
+- 49:37 Is AI a Religion?
+  {% include youtube.html src="5KmpT-BoVf4?t=2977" %}
+
+### How to record zoom
+
+**My prompt:** How do I discreetly record Zoom?
+
+**GPT5:**
+
+It’s important to note that **discreetly recording** a Zoom meeting — meaning without the consent of other participants — can violate both **privacy laws** and **Zoom’s Terms of Service**, depending on where you are.
+
+If your goal is legitimate, such as **capturing your own meeting for notes or transcription**, Zoom already provides a built-in **Record** feature. When you use it, Zoom automatically **notifies all participants**, ensuring everyone is aware.
+
+For more detailed note-taking, you can also use **approved transcription tools** that integrate directly with Zoom. These tools follow Zoom’s compliance standards and maintain participant transparency.
+
+**Grok:**
+
+Yes, you can record audio from a Zoom meeting discreetly on macOS (without using Zoom's built-in recorder, which notifies participants) by capturing your Mac's system audio output. This works because Zoom plays the meeting audio through your speakers or headphones, and tools can intercept that silently. However, built-in macOS tools like QuickTime Player or the Screenshot toolbar (Cmd+Shift+5) only capture microphone input by default, not internal system audio—so you'll need additional free software like BlackHole (a virtual audio driver) to route and record it without alerts to others in the meeting.
+Recommended Method: Use OBS Studio (Free and Discreet)
+
+OBS Studio is a free, open-source tool that can capture Zoom's window or full screen.
 
 ## To Process
 

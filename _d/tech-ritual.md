@@ -30,7 +30,7 @@ Previous Update:
 
 - [2024-09-02](https://gist.github.com/idvorkin/50c3e17720482110efee3104daebbb05)
 
-- Who am I kidding this will probalby be weekly
+- Who am I kidding this will probably be weekly
 - Aider/Avente
 
 {%include summarize-page.html src="/ai-coder" %}
@@ -43,7 +43,7 @@ Next Update: 2025-01-01
 Previous Update:
 
 - [2024-09-02](https://gist.github.com/idvorkin/50c3e17720482110efee3104daebbb05)
-  - Woah, most important thing, is Jupyter works very well in vs.code now, renders very pretty, totally usuable.
+  - Woah, most important thing, is Jupyter works very well in vs.code now, renders very pretty, totally usable.
 
 Task: Go in and update my health tracking jupyter notebooks.
 

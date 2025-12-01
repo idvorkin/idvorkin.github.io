@@ -21,22 +21,23 @@ Being a dealer of smiles and wonder is a priority in my life, and magic is my in
 - [How I started](#how-i-started)
 - [Magic Get Together](#magic-get-together)
 - [Highlights](#highlights)
-    - [People keeping the cards and coins](#people-keeping-the-cards-and-coins)
-    - [Bar Magic](#bar-magic)
-    - [School magic](#school-magic)
-    - [Interview magic](#interview-magic)
-    - [That's the coolest guy ever](#thats-the-coolest-guy-ever)
-    - [Family Magic](#family-magic)
-    - [Purple Intern Magic](#purple-intern-magic)
-    - [Freedom Magic](#freedom-magic)
+  - [People keeping the cards and coins](#people-keeping-the-cards-and-coins)
+  - [Full Circle On the Power of Magic](#full-circle-on-the-power-of-magic)
+  - [Bar Magic](#bar-magic)
+  - [School magic](#school-magic)
+  - [Interview magic](#interview-magic)
+  - [That's the coolest guy ever](#thats-the-coolest-guy-ever)
+  - [Family Magic](#family-magic)
+  - [Purple Intern Magic](#purple-intern-magic)
+  - [Freedom Magic](#freedom-magic)
 - [Training](#training)
 - [Philosophical Questions](#philosophical-questions)
-    - [Wonder vs Joy vs Meaning vs Reactions](#wonder-vs-joy-vs-meaning-vs-reactions)
-    - [The theory of joy](#the-theory-of-joy)
+  - [Wonder vs Joy vs Meaning vs Reactions](#wonder-vs-joy-vs-meaning-vs-reactions)
+  - [The theory of joy](#the-theory-of-joy)
 - [Favorite Acts](#favorite-acts)
-    - [Lennart Green - Superb Card Handling](#lennart-green---superb-card-handling)
-    - [Brian Gillis - Top shelf Sleight of Hand](#brian-gillis---top-shelf-sleight-of-hand)
-    - [Hannibal](#hannibal)
+  - [Lennart Green - Superb Card Handling](#lennart-green---superb-card-handling)
+  - [Brian Gillis - Top shelf Sleight of Hand](#brian-gillis---top-shelf-sleight-of-hand)
+  - [Hannibal](#hannibal)
 - [FISM 2022](#fism-2022)
 
 <!-- vim-markdown-toc-end -->
@@ -84,7 +85,13 @@ This young man kept this coin for over 18 months, through a pandemic and through
 
 Did a magic trick for a kid, kid kept the card in his backpack for a year, and always showed it to folks.
 
-Anniversary card, a waitress saw me and some magicians at the bar, and said, "20 years ago, a magician did this trick, and I've carried this card in my wallet ever since."
+#### Full Circle On the Power of Magic
+
+Very early in my magic career, I went to a magic meeting and afterwards we went to the bar with a bunch of magicians. The waitress asked us what we were doing there, when we said we did magic she pulls a card out of her purse, and says - "15 years ago a magician did this trick for me and my best friend, and their was so much meaning in that trick I've carried this card in y wwallet ever since"
+
+That "magic" demonstrates the power of love, by melding multiple cards into 1. I learned how to do that magic, and amazingly got to do that same trick 15 years later at a restaurant about 1 block from that original bar, for a meeting of me, my cousin and my great cousim who got to meet in a once in a life time opportunity.
+
+Now that's pretty damn cool.
 
 #### Bar Magic
 
@@ -193,7 +200,10 @@ The Olympics of magic. Every 3 years. Amazing time.
 Amazing magicians
 Dani D'Ortiz - best card magician I've ever seen.
 Class acts:
-_ Jay Sankey, looking at you deeply and finding something positive
-_ Eric Jones, walking through audience and thanking folks from coming \* Tetro walking around saying surveying what are the best tricks to learn.
+
+- Jay Sankey, looking at you deeply and finding something positive
+- \_ Eric Jones, walking through audience and thanking folks from coming
+
+* Tetro walking around saying surveying what are the best tricks to learn.
 
 TODO: link to your FISM Post.

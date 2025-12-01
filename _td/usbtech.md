@@ -1,7 +1,7 @@
 ---
 layout: post
 no-render-title: true
-title: Usb Tech
+title: USB Tech
 ---
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/usbtech.md)_

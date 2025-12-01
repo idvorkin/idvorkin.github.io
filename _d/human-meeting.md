@@ -4,6 +4,7 @@ title: "Feelings/Human Meetings"
 permalink: "/human-meetings"
 redirect_from:
   - "/feeling-meetings"
+  - "/Human-Meetings"
 tags:
   - emotional intelligence
 ---
@@ -39,3 +40,4 @@ People ask me **why** this meeting works, here's my current theory:
   - Those around us are expressing emotions, which stirs ours.
   - Tension is forced, through deliberate activities, and blocking normal tension relief valves.
   - As tension goes up, the more you need to express your emotions.
+test

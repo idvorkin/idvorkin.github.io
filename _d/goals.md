@@ -153,7 +153,7 @@ Philosophical Difference
 
 ### Measuring goals
 
-You have to decide if metrics should be used for visiblity vs for evaluation and sticks.
+You have to decide if metrics should be used for visibility vs for evaluation and sticks.
 
 If goals are used for compensation, become very conservative.
 

@@ -62,6 +62,7 @@ _Even engineers can use empathy_
 - Mindfulness is THE WAY to build those foundational skills.
 - Once have the mindfulness can use to build the components of EI.
 - Easy and Easier Mindfulness Methods. **Easy** follow the breath. **Easier** have no thoughts.
+- For a complementary personality framework, see [PANAS Personality Types](/emotions#panas-personality-types) - knowing if you're a Mad Scientist, Cheerleader, Judge, or Poet can inform your EI practice.
 
 ### 2) Theory and practice of mindfulness
 
@@ -135,7 +136,7 @@ _Mindfulness without butt on cushion_
   - Eventually Meditation causes - Sukha - non-energy expending joy.
 - Mastering focused and open attention:
   - Focused attention - intense focus on chosen object.
-  - Open attention - let focus move to any incoming event without judgement.
+  - Open attention - let focus move to any incoming event without judgment.
   - Values from circuits
     - Requires Strong Meta Attention to stay on focus
     - Strong clarity - analogy, strong torch light
@@ -207,9 +208,9 @@ _All natural organic Self-Confidence_
       - Others are
       - I made a happy mistake
       - Love is
-  - 2m Positive Prime - Times when you did great, and are satisified.
+  - 2m Positive Prime - Times when you did great, and are satisfied.
   - 2m per Prompt/Free Associate - **1.** Things that give me pleasure are. **2.** My strengths are.
-  - 2m Negative Prime - Times when you responded negatively, where you weren't satisified.
+  - 2m Negative Prime - Times when you responded negatively, where you weren't satisfied.
   - 2m per Prompt/Free Associate - **1.** Things that annoy me are. **2.** My weaknesses are.
 - My emotions are not me.
   - Emotions go from existential -> experiential -> physiological
@@ -246,7 +247,7 @@ _Riding your emotions like a horse_
   - Start every thought with kindness and humor - It's nicer that way, gives us reserve to deal with hardship.
 - Triggers - A small event results in an objectively too big response.
   - Often have a repeated 'emotional' injury.
-  - Need to respond quickly in the moment (SBNRR), but do a SBNRR meditation afterwards to proces and get better.
+  - Need to respond quickly in the moment (SBNRR), but do a SBNRR meditation afterwards to process and get better.
   - More time you proactive long form, better you get in short form.
 - Identify triggers:
   - Body - shallow breathing, rapid heartbeat, sick to stomach.
@@ -256,7 +257,7 @@ _Riding your emotions like a horse_
   - Stop, Breathe, Notice, Reflect, Respond.
   - **Stop** is sacred, even for a few seconds. **Breathing** extends the pause.
   - **Notice** to realize and calm the is a physiological response,
-    - I am angry -> I feel angry -> my body is experiancing anger.
+    - I am angry -> I feel angry -> my body is experiencing anger.
   - **Reflect** to calm the psychological response, and engage cognative process [cognative reframe].
     - Every one wants to be happy, and act in a rationale way.
   - **Respond** think of most helpful/appropriate response you can think of.
@@ -283,7 +284,7 @@ _Riding your emotions like a horse_
 
 _Making Profits, Rowing Across Oceans, and Changing The World_
 
-- **GOAL: Find your purose then be resilliant to failure.**
+- **GOAL: Find your purpose then be resilliant to failure.**
 - Learn your **Purpose**, as you get good you hit **flow**, and then you get recognition and **pleasure**. See [post](/happy)
   - Priority order: Satisfaction, Flow, and Pleasure.
 - Motivation: **Align** work with purpose. **Envision** future we desire. **Overcome** obstacles through resilience.
@@ -324,7 +325,7 @@ _Making Profits, Rowing Across Oceans, and Changing The World_
   - Sharing with others, will inspire others, and some will help.
 - Resilience - ability to remove obstacles, and return to baseline when troubles.
   - Inner Calm - Foundation of optimism and resilience
-  - Emotional Resilience - Success/Failure are emotional experiances, build this, and can always celebrate progress.
+  - Emotional Resilience - Success/Failure are emotional experiences, build this, and can always celebrate progress.
   - Cognitive Resiliece - How to explain setbacks to ourselves and others, to develop optimism.
   - **Leaders provide this service to their organization and teams**
 - Inner calm
@@ -401,7 +402,7 @@ _Empathy and the Monkey business of brain tangos_
 - Strengthening empathic listening:
   1. Mindfulness: makes us more perceptive
   1. Kindness: lets us listen better to feeling
-  1. Curiosity: wonder at what people might be experiances
+  1. Curiosity: wonder at what people might be experiences
   1. Practice: Causes more of mindfulness, kindness, curiosity.
 - Informal practice of empathic listening
   - Harder: people don't like to hear 'I hear you feeling ...'
@@ -413,7 +414,7 @@ _Empathy and the Monkey business of brain tangos_
   - META: Was this conversation helpful to you?
 - **Political Awareness:** Empathy at the organization level, instead of personal level.
 - Political awareness practices:
-  - Empathy practices, but on steriods.
+  - Empathy practices, but on steroids.
   - Have a cross organization network of people you care about and trust and nurture them.
   - Read the currents: How are decisions made? Authority/Consensus? Who is influencer?
   - Distinguish: Your/Team/Organization's interests.
@@ -596,7 +597,7 @@ FP: INVITING AND ATTENDING TO JOY - The Joyful Mind Rocks at Meditation
 
 ### Working with suffering
 
-When suffering, you need to get to the cognative reframes, but first you need to be able to focus clearly, this requirs calming the mind and experiences the pain (and first joy) to handle the reframes.
+When suffering, you need to get to the cognative reframes, but first you need to be able to focus clearly, this requires calming the mind and experiences the pain (and first joy) to handle the reframes.
 
 Step 1: **Calm the mind** Need to be calm enough to observe and experience.
 

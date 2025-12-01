@@ -59,7 +59,7 @@ I spent a **LOT** of time on my iPhone/iPad - here are some of the tools/tips I 
 
 Sometimes iMessage gets screwed up, when that happens, it's because iPhone is using email to start convos (I think?)
 
-GoTo settings -> Imessage and ensure you're starting from your phone numbe.
+GoTo settings -> Imessage and ensure you're starting from your phone number.
 
 ### Siri (For iPhone X)
 
@@ -84,11 +84,11 @@ tbd
 
 ### Air Pods Pro
 
-OMG - This is amazing, you can customize yoru AirPods with your hearing test results (AudioGraph)!!!
+OMG - This is amazing, you can customize your AirPods with your hearing test results (AudioGraph)!!!
 
 First, create an AudioGraph using mimo app, and write it to apple health! [mimo app](https://mimi.io/)! You need to be able to see the hearing test in apple health.
 
-Next go to AirPods Settings->Accessibility->audio accessibility settings->Headphone Accommodations->transparency mode. If you added an audio graph, it wil be available to use.
+Next go to AirPods Settings->Accessibility->audio accessibility settings->Headphone Accommodations->transparency mode. If you added an audio graph, it will be available to use.
 
 There are also sliders for environmental noises and other customizations that should help under accessiblitiy.
 

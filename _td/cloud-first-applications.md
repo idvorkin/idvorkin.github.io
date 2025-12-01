@@ -42,7 +42,7 @@ The world is now on the cloud, here are my random notes on the topic.
     - [Debugging](#debugging)
 - [Data Systems](#data-systems)
 - [Challenges](#challenges)
-    - [Conway's law - Four compiler teams implies a four pass compiler](#conways-law---four-complier-teams-implies-a-four-pass-complier)
+    - [Conway's law - Four compiler teams implies a four pass compiler](#conways-law---four-compiler-teams-implies-a-four-pass-compiler)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc-end -->
@@ -70,7 +70,7 @@ We often talk about containers being a light weight VM, which they are. However,
 
 - Docker Swarm
 - Service Bus
-- Methos
+- Methods
 
 ## Front Door - AWS API Gateway
 
@@ -105,7 +105,7 @@ Now adays the majority of networking is done over HTTP. Here are the aspects of 
 
 ### Connections, data refresh and data transfer
 
-Client to server communication has three aspects, connection establishment notifications data transer.
+Client to server communication has three aspects, connection establishment notifications data transfer.
 
 #### Connection Establishment - Client or Service
 
@@ -115,7 +115,7 @@ Client to server communication has three aspects, connection establishment notif
 
 Can be either polling or event driven. Polling has the client requesting data periodically and is the simplest method to implement, however it suffers from latency. The alternative is having the server give data to the client when it is available.
 
-Websockets allow you to simply implement server initiated push notifications to clients. The client establishes a long pole connction, and server writes to it when available, allowing the client to listen.
+Websockets allow you to simply implement server initiated push notifications to clients. The client establishes a long pole connection, and server writes to it when available, allowing the client to listen.
 
 #### Data Transfer - REST vs WebSocket
 
@@ -146,7 +146,7 @@ Achieving the previously stated goal is incredibly difficult. Envoy attempts to 
 
 ![Communction Mesh](https://www.envoyproxy.io/docs/envoy/latest/_images/service_to_service.svg)
 
-Out of process architecture: Envoy is a self contained process that is designed to run alongside every application server. All of the Envoys form a transparent communication mesh in which each application sends and receives messages to and from localhost and is unaware of the network topology. The out of process architecture has two substantial benefits over the traditional library approach to service to service communication. 1) Langauge independance - everyone talks to localhost 2) Auto upgrade - since proxy service is injected into the containers.
+Out of process architecture: Envoy is a self contained process that is designed to run alongside every application server. All of the Envoys form a transparent communication mesh in which each application sends and receives messages to and from localhost and is unaware of the network topology. The out of process architecture has two substantial benefits over the traditional library approach to service to service communication. 1) Language independence - everyone talks to localhost 2) Auto upgrade - since proxy service is injected into the containers.
 
 **L7 Proxy**
 ![L7 Proxy](https://www.envoyproxy.io/docs/envoy/latest/_images/front_proxy.svg)

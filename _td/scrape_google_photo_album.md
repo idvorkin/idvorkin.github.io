@@ -4,7 +4,7 @@ title: Accessing Google Photos
 permalink: /google-photos
 ---
 
-I like having a blog, but honestly it's faster to write it in google photos as that has a better WYSWIG viewer. But, I don't get features like search, or previews, which matters to me. I also don't trust Google not to break photos in the future. Of course exporting is a PITA, here are some hacks to export and make it into my blog format. NOTE: There is an API to extrat photos, but it doesn't include the text (which I like to have, as recall WYSWIG editor)
+I like having a blog, but honestly it's faster to write it in google photos as that has a better WYSWIG viewer. But, I don't get features like search, or previews, which matters to me. I also don't trust Google not to break photos in the future. Of course exporting is a PITA, here are some hacks to export and make it into my blog format. NOTE: There is an API to extract photos, but it doesn't include the text (which I like to have, as recall WYSWIG editor)
 
 # Download the album page
 
@@ -49,5 +49,5 @@ Slopp doppy
 
 # References
 
-- iMessage Analyis in pandas: <https://github.com/yortos/imessage-analysis>
+- iMessage Analysis in pandas: <https://github.com/yortos/imessage-analysis>
 - python example: <https://github.com/mattrajca/pymessage-lite/blob/master/imessage.py>

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ashland T-Day 2023
+permalink: /timeoff-2023-11
 imagefeaturelocal: raccoon-vaccation.png
 ---
 

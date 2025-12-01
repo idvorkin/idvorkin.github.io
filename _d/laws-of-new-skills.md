@@ -18,6 +18,7 @@ Magic, Kettle Bells, Public Speaking - every skill I've acquired follows the sam
 - [Law 1: You'll Suck Until You Don't](#law-1-youll-suck-until-you-dont)
 - [Law 2: Practice Makes Permanent](#law-2-practice-makes-permanent)
 - [Law 3: Humans overestimate what can be done in a week, and underestimate what can be done in a year](#law-3-humans-overestimate-what-can-be-done-in-a-week-and-underestimate-what-can-be-done-in-a-year)
+- [Bonus: Find new skills and hobbies to master](#bonus-find-new-skills-and-hobbies-to-master)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -45,3 +46,9 @@ Just 20 minutes a day adds up to 121 hours in a year - that's three full work we
 Remember: The best time to plant a tree was 100 years ago. The second best time is now. The same applies to learning any new skill.
 
 ps. This [blog you're reading](/about), started when I heard about law 1, and made clear law 2 and law 3.
+
+### Bonus: Find new skills and hobbies to master
+
+Chase your curiosity. That's where you'll find the motivation to elevate your talent, turning interest into competency.
+
+{%include summarize-page.html src="/hobby"%}

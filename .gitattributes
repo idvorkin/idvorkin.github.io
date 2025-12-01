@@ -20,3 +20,10 @@
 *.PDF	 diff=astextplain
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
+
+# Auto-generated files - always accept incoming changes on merge conflicts
+# This helps avoid conflicts when back-links.json is regenerated
+back-links.json merge=theirs
+
+# Use bd merge for beads JSONL files
+.beads/beads.jsonl merge=beads

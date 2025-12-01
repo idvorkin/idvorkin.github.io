@@ -27,6 +27,8 @@ Every day I write out my affirmations. These positive statements help me challen
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
+![Original affirmations note - where it all started](https://raw.githubusercontent.com/idvorkin/ipaste/main/20251005_060706.webp)
+
 ## Igor's Affirmations
 
 ### Do It Anyways: Deliberate. Disciplined. Daily
@@ -153,3 +155,9 @@ Some fortune cookies to remember as you level up:
 - For times it didn't work: be compassionate, adjust strategy, and respawn tomorrow
 
 **Final boss:** When you can do all three levels consistently, you've basically become your own life coach. Congratulations, you win at being human! 🎮
+
+## Igor's Video Affirmations
+
+The video versions of my affirmations which you can see on YouTube here:
+
+{% include youtube_playlist.html list="PLJveOxX-mxxC9PYL8ElnUnFe-SDh4h_wo" %}

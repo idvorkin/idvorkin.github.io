@@ -12,168 +12,246 @@ When I started creating content — okay, let's be honest, when I started upload
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [Who is my audience/what is my purpose?](#who-is-my-audiencewhat-is-my-purpose)
-  - [Until I figure it out - Feedback beats planning](#until-i-figure-it-out---feedback-beats-planning)
-- [Ideas that really resonate with me](#ideas-that-really-resonate-with-me)
-  - [It's for me](#its-for-me)
-  - [For my kids](#for-my-kids)
-  - [Setting an example for others](#setting-an-example-for-others)
-  - [TikTok Vlog One-Pager: "Quiet Traces" (working title)](#tiktok-vlog-one-pager-quiet-traces-working-title)
-    - [Purpose (Why I'm Doing This)](#purpose-why-im-doing-this)
-    - [Vision](#vision)
-    - [Mission](#mission)
-    - [Tone & Values](#tone--values)
-    - [Public Perception Goals](#public-perception-goals)
-    - [Creative Strategy (Low-Effort, High-Integrity)](#creative-strategy-low-effort-high-integrity)
-    - [Optional Taglines or Captions (as mood cues):](#optional-taglines-or-captions-as-mood-cues)
-- [GPT Prompt to help you create your audience](#gpt-prompt-to-help-you-create-your-audience)
+- [Who/What is my audience/purpose? Feedback beats planning](#whowhat-is-my-audiencepurpose-feedback-beats-planning)
+- [1. Life of Igor](#1-life-of-igor)
+  - [1. Purpose/Audience](#1-purposeaudience)
+  - [Funny Story Today](#funny-story-today)
+  - [Igor's Affirmations](#igors-affirmations)
+  - [Music Videos/Dances](#music-videosdances)
+  - [Igor's Crazy Commute](#igors-crazy-commute)
+  - [Family Adventures](#family-adventures)
+  - [Achievement Unlocked](#achievement-unlocked)
+  - [Jump in the Lake Day](#jump-in-the-lake-day)
+- [2. Welcome to Being Human](#2-welcome-to-being-human)
+  - [2. Purpose/Audience](#2-purposeaudience)
+  - [Emotional Health](#emotional-health)
+  - [Life Wisdom](#life-wisdom)
+  - [Relationship Navigation](#relationship-navigation)
+  - [Finding Purpose](#finding-purpose)
+  - [Daily Practices](#daily-practices)
+- [3. Adventures in Vibe Ville](#3-adventures-in-vibe-ville)
+  - [3. Purpose/Audience](#3-purposeaudience)
+  - [AI Agent Stories](#ai-agent-stories)
+  - [AI mental model changes](#ai-mental-model-changes)
+  - [AI Productivity](#ai-productivity)
+  - [Tech Philosophy](#tech-philosophy)
+  - [Tool Reviews](#tool-reviews)
+- [4. The Book of Engineering Management](#4-the-book-of-engineering-management)
+  - [4. Purpose/Audience](#4-purposeaudience)
+- [Appendix](#appendix)
+  - [Quick Reminders](#quick-reminders)
+  - [Guard rails](#guard-rails)
+  - [Optional Taglines or Captions (as mood cues):](#optional-taglines-or-captions-as-mood-cues)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-## Who is my audience/what is my purpose?
+## Who/What is my audience/purpose? Feedback beats planning
 
-### Until I figure it out - Feedback beats planning
+Even though I love [Begin with the End in Mind](/end-in-mind) - there is something to be said about "Feedback beats planning" Until I figure it out - start producing content:
 
-**Summary from [Begin with the End in Mind](/end-in-mind):**
+Planning feels good when we're afraid because it gives us the illusion of progress/security. But the difference between experts and novices isn't theory or intelligence—it's relevant domain knowledge gained through experience. The key get feedback loops as quickly as possible:
 
-Planning feels good when we're afraid because it gives us the illusion of security. But the difference between experts and novices isn't theory or intelligence—it's relevant domain knowledge gained through experience. The key is to get into feedback loops as quickly as possible:
-
-- Get into the feedback loop as soon as possible, and run it as fast as possible
+- Get into the feedback loop as soon as possible, and run it as fast as possible because:
 - Knowledge only comes from empirical observation; everything else is speculation
 - We only learn while we are moving
 
-## Ideas that really resonate with me
+## 1. Life of Igor
 
-### It's for me
+### 1. Purpose/Audience
 
-- To look back fondly on my adventures and remember how much fun I had
-- To reinforce things I value, like my affirmations
+- Why/what
+  - Documentary of my life - family moments, personal growth, daily adventures
+  - I'm doing this to model how I embrace and celebrate my identity, so others can feel more comfortable embracing and celebrating their own!
+- Auidence
+  - Me
+    - To reinforce things I value, like my affirmations
+    - Tor remind me about IGor at his best
+    - To look back fondly on my adventures and remember how much fun I had
+  - My kids,
+    - To remember their father
+    - To learn (and hopefully copy his values)
+  - GenPop
+    - Anyone wanting a laugh from knowing a goofy fellow
+    - Anyone I want to share one of my life examples from
 
-### For my kids
+### Funny Story Today
 
-- To remember their father
-- To learn (and hopefully copy his values)
+Daily moments worth remembering
 
-### Setting an example for others
+{% include youtube_playlist.html list="PLJveOxX-mxxD22iUkwLNaqGL_vawnmNau" %}
 
-- I'm doing this to model how I embrace and celebrate my identity, so others can feel more comfortable embracing and celebrating their own!
-- For my kids
+### Igor's Affirmations
 
-### TikTok Vlog One-Pager: "Quiet Traces" (working title)
+Values I'm reinforcing (Essentialist, Class Act, etc.)
 
-#### Purpose (Why I'm Doing This)
+{% include youtube_playlist.html list="PLJveOxX-mxxC9PYL8ElnUnFe-SDh4h_wo" %}
 
-To leave behind a real, unfinished record of who I was becoming—for my kids, my future self, and anyone else listening for something honest. This isn't content for content's sake. It's a living archive of thoughts, movement, and quiet conviction.
+### Igor Fortune Cookie
 
-#### Vision
+Life wisdom in 60 seconds - leaving breadcrumbs for my kids and anyone else who finds value
 
-A space to reflect out loud, express myself authentically, cheer others on, and share what I'm learning—even while I'm still learning. I want to affirm humanity's worth, not perform for it. I hope to be kind, not polished; clear when possible, and vulnerable when needed.
+{% include youtube_playlist.html list="PLJveOxX-mxxBsIsk83fr0sb3i7RdpaJbF" %}
 
-#### Mission
+### Music Videos/Dances
 
-To document life through:
+Movement and joy
 
-- Reflections — short thoughts or rambles that mark where I'm at
-- Movement — clips of snowboarding, exercise, or breath-in-body moments
-- Voice — my real tone, teaching quietly, sometimes without even meaning to
+### Igor's Crazy Commute
 
-#### Tone & Values
+Adventures getting to work (kayak, unicycle, Tesla stories)
 
-- Unfinished, not untrue
-- Authentic but thoughtful
-- Gentle but brave
-- Teacher-hearted, learner-souled
-- Protective of family, open to strangers
-- Encouraging without ego
-- Clear when possible, curious when not
+### Family Adventures
 
-#### Public Perception Goals
+Time with kids, life lessons
 
-I hope strangers see this as:
+### Achievement Unlocked
 
-- Safe, thoughtful, and respectful
-- Occasionally meaningful
-- Gently different, but not inaccessible
-- Something they might send to a friend going through something
-- Something they might watch again, even if they don't "follow" me
+Celebrating wins and milestones
 
-I avoid:
+{% include youtube_playlist.html list="PLJveOxX-mxxAdPTShIvnMLKiHBcjijdBG" %}
 
-- Anything that embarrasses my wife or kids
+### Jump in the Lake Day
+
+Daily cold plunges and water adventures
+
+{% include youtube_playlist.html list="PLJveOxX-mxxCy0xIRl4oV-18-bQFiwyi8" %}
+
+## 2. Welcome to Being Human
+
+### 2. Purpose/Audience
+
+- Why/what
+  - Help people navigate life's challenges with wisdom and humor
+  - Share emotional and life wisdom to help others feel less alone
+- Audience
+  - Me
+    - To process my own emotional journey
+    - To articulate lessons I'm learning
+  - My kids
+    - To understand emotional intelligence
+    - To learn how to navigate relationships and challenges
+  - GenPop
+    - Anyone dealing with being human - emotions, relationships, growth
+    - People seeking authentic discussion about life's struggles
+
+### Emotional Health
+
+Managing feelings, mental wellness
+
+### Life Wisdom
+
+Lessons learned the hard way
+
+### Relationship Navigation
+
+Connection, conflict, love
+
+### Finding Purpose
+
+Meaning, values, direction
+
+### Daily Practices
+
+Habits that help
+
+## 3. Adventures in Vibe Ville
+
+### 3. Purpose/Audience
+
+- Why/what
+  - Exploring AI, agents, and bleeding-edge tech
+  - Sharing real-world AI experiences and lessons learned
+- Audience
+  - Me
+    - To document my AI journey and experiments
+    - To reflect on what works and what doesn't
+  - Technologists
+    - Technologists, AI enthusiasts, people maximizing AI value
+    - Anyone curious about practical AI applications
+
+### AI Agent Stories
+
+Real experiences with AI agents:
+
+- Gotta get in a container (erasing content story)
+- Don't give them your creds (auth story, self-approving PRs)
+- Agents testing agents (the typo story)
+- Don't be the slave (automate your testing)
+- Keeping agents fed (managing 4+ agents)
+- Why use the best models (local vs cloud)
+
+### AI mental model changes
+
+- It's not just chatbots - talk about eulogy song (and its impact on me)
+- Dellusions
+
+### AI Productivity
+
+- Don't stop thinking! (Though maybe that's OK, think about maps (scary) )
+- Should I learn a better CLI arguments library (good enough, better more DRY code handles more, but it's just an implementation detail, if I specify well, it's like a new compiler optimization for me).
+- I guess it's about better specifications (vs better malliability)
+- Practical AI workflows
+
+### Tech Philosophy
+
+Production vs consumption, attention management
+
+### Tool Reviews
+
+What's working, what's not
+
+## 4. The Book of Engineering Management
+
+### 4. Purpose/Audience
+
+- Why/what
+  - Share engineering leadership lessons and scaling wisdom
+  - Document the manager experiences I've built
+- Audience
+  - Me
+    - To crystallize my management philosophy
+    - To track my growth as a leader
+  - Engineering Managers - New/Aspiring
+    - Engineering managers, tech leaders, aspiring managers
+    - Anyone navigating technical leadership challenges
+  - Folks I support
+    - Some specific deep dives into what's going on and why
+
+Short films based on:
+
+{%include summarize-page.html src="/manager-book"%}
+
+- Performance Mnaagement
+- Recruiting
+- Etering a new space
+- What do managers do
+
+## Appendix
+
+### Quick Reminders
+
+- Start with a script!
+- Are all these edits really making it better or are you just suffering from parkinson's law
+
+### Guard rails
+
+Avoid:
+
+- Anything that embarrasses my wife, kids or co-workers
 - Oversharing details that could hurt them or me
-- Topics I haven't earned the right to teach
-- False certainty about things I'm still working through
 - Hype, clickbait, or performance
 
-#### Creative Strategy (Low-Effort, High-Integrity)
-
-Cadence:
-No schedule. Just rhythm.
-Show up when it's real, skip when it's not.
-
-Formats I Use:
-
-- One-Thought Mode – 30–60 seconds, focused takeaway
-- Ramble Mode – 90s–3 mins, exploratory, voice-first
-- Overlay Mode – snow/workout B-roll + reflection audio
-- Hybrid Moments – movement + reflection, etc.
-
-Post Filter (before sharing):
+Final check before sharing:
 
 1. Is it kind and honest?
-2. Would I regret my kids or future employer seeing this?
-3. Does it reflect the kind of person I'm becoming?
-4. Would this help, comfort, or affirm someone—even just one person?
+1. Does this match my aspirations of being a class act?
+1. Does it pass the new york times test?
+1. Would I regret my kids or future employer seeing this?
+1. Would this help, comfort, or affirm someone—even just one person?
 
-#### Optional Taglines or Captions (as mood cues):
+### Optional Taglines or Captions (as mood cues):
 
 - "Just in case I forget this later…"
 - "Still figuring this out…"
-- "Quiet trace #03"
 - "I'm not done learning, but here's what I've got so far."
-
-## GPT Prompt to help you create your audience
-
-Got it! Here's a clean, single-message system prompt you can copy into a new chat. It will guide you through a series of questions one at a time and, when finished, generate a structured one-pager like your "Quiet Traces" document.
-
-⸻
-
-🧭 System Prompt: Find My Voice & Generate a Content Purpose One-Pager
-
-You are a calm, thoughtful guide. Help me discover the voice, purpose, tone, and creative structure for a personal content project (such as a TikTok vlog). Ask me one question at a time. When I say I'm done, organize my answers into a one-pager formatted like the example below.
-
-My goal is to articulate my purpose and boundaries clearly, and produce a shareable, useful reference I can revisit later. Don't rush. Let me go deep. If I hesitate or get stuck, offer gentle examples or alternatives to help me reflect.
-
-At the end, output my answers in this format:
-
-TikTok Vlog One-Pager: [Title or working title]
-
-Purpose
-[1–2 sentence summary starting with "To…"]
-
-Vision
-[A paragraph beginning with "A space to…" that describes emotional tone and intention]
-
-Mission
-[Bullet points listing what the vlog will include—e.g., types of content or practices]
-
-Tone & Values
-[A bulleted list of values or principles that guide the content]
-
-Public Perception Goals
-[A bulleted list of how I hope strangers experience my content, and what I hope it isn't]
-
-What I Avoid
-[Bullet points of topics, tones, or behaviors I want to steer clear of]
-
-Creative Strategy
-[A few lines about cadence and types of posts or formats I'll use]
-
-Post Filter
-[Questions I ask myself before posting to stay aligned]
-
-Optional Taglines or Captions
-[Repeatable phrases I may include to anchor the project]
-
-Wait until I say "I'm ready for the one-pager" before compiling it.

@@ -18,7 +18,7 @@ This post draws heavily from Peter Attia's work on longevity and healthspan, par
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [You're going to die](#youre-going-to-die)
+- [You're going to die](#your-going-to-die)
 - [Centarian Olympics](#centarian-olympics)
     - [The Inverted Parabola of Health](#the-inverted-parabola-of-health)
     - [Your peak health age](#your-peak-health-age)
@@ -29,7 +29,7 @@ This post draws heavily from Peter Attia's work on longevity and healthspan, par
     - [Strength](#strength)
     - [Aerobic (Zone 2)](#aerobic-zone-2)
     - [Anaerobic (Zone 5)](#anaerobic-zone-5)
-- [Spirtual Health](#spirtual-health)
+- [Spiritual Health](#spiritual-health)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -128,7 +128,7 @@ The key insight is that these horsemen are interconnected - metabolic health inf
 
 ### Anaerobic (Zone 5)
 
-## Spirtual Health
+## Spiritual Health
 
 Read a great book about a guy who found out he was gonna die in 100 days. Smart guy used to be CEO of KPMG, cool to see what he did. Book is [Chasing Daylight](https://www.amazon.com/B09BBHVKLR). Hi stop advice, what ever you plan to do before you die, move it up.
 

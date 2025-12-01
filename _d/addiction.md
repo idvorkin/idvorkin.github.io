@@ -17,18 +17,26 @@ Addiction is not about drugs or alcohol - it is about escape. Quoting "Do the Wo
 <!-- vim-markdown-toc-start -->
 
 - [Current Addictions](#current-addictions)
-    - [Crisis Porn - Covid 19](#crisis-porn---covid-19)
 - [Hypo Addictions](#hypo-addictions)
-    - [Social Media Analytics](#social-media-analytics)
-        - [LinkedIn friend count](#linkedin-friend-count)
-        - [Stock market price](#stock-market-price)
+  - [Social Media Analytics](#social-media-analytics)
+    - [LinkedIn friend count](#linkedin-friend-count)
+    - [Stock market price](#stock-market-price)
+- [The silly things I have watched on Vertical Short Form (TikTok, Reels, Shorts)](#the-silly-things-i-have-watched-on-vertical-short-form-tiktok-reels-shorts)
+  - [Lifting Videos](#lifting-videos)
+  - [Lifting Videos - Antonly](#lifting-videos---antonly)
+  - [Retirement Videos](#retirement-videos)
+    - [Like Advice from retired people](#like-advice-from-retired-people)
+    - [Financial Advice](#financial-advice)
+  - [People living in their cars](#people-living-in-their-cars)
+  - [Truckers](#truckers)
 - [Beaten addictions (for now)](#beaten-addictions-for-now)
-    - [Pokemon Go](#pokemon-go)
-    - [TikTok](#tiktok)
-    - [Covid 19 News](#covid-19-news)
-    - [Alcohol](#alcohol)
-    - [Thinking about work while at home](#thinking-about-work-while-at-home)
-    - [Work Addiction and Success Addiction](#work-addiction-and-success-addiction)
+  - [Pokemon Go](#pokemon-go)
+  - [TikTok](#tiktok)
+  - [Covid 19 News](#covid-19-news)
+  - [Alcohol](#alcohol)
+    - ["Zero proof" drinks](#zero-proof-drinks)
+  - [Thinking about work while at home](#thinking-about-work-while-at-home)
+  - [Work Addiction and Success Addiction](#work-addiction-and-success-addiction)
 - [Getting Rid of 'em](#getting-rid-of-em)
 - [Other thoughts on addiction](#other-thoughts-on-addiction)
 - [Addiction to flow/production/productivity](#addiction-to-flowproductionproductivity)
@@ -38,10 +46,6 @@ Addiction is not about drugs or alcohol - it is about escape. Quoting "Do the Wo
 <!-- prettier-ignore-end -->
 
 ## Current Addictions
-
-### Crisis Porn - Covid 19
-
-Yeah, hard to [skip that](/covid).
 
 ## Hypo Addictions
 
@@ -55,7 +59,33 @@ There's a proxy from LinkedIn friend count to hiring, but checking your friend c
 
 #### Stock market price
 
-Well, it's only an addiction when it goes up.
+## The silly things I have watched on Vertical Short Form (TikTok, Reels, Shorts)
+
+VSF is the worst because it has such low starting energy, and such high [stopping energy](/activation). Here are some of the silly things i've gotten sucked into
+
+### Lifting Videos
+
+I do a fair bit of kettlebells, I got **lots** of people doing lifts, first it was educational and inspirational, and then I started getting pretty women, pretty easy to understand - inspirational. But theN I started getting senior citizens, doing their 80 year old PRs. Very odd.
+
+### Lifting Videos - Antonly
+
+This guy that is small and super ripped who dresses up like a custodian then surprises everyone by how good he is.
+
+### Retirement Videos
+
+#### Like Advice from retired people
+
+PEople who are retired telling their stories - I like some of these
+
+#### Financial Advice
+
+When can you retire, you have too much, you have too little, you should pay attention to retired mandatory distributions
+
+### People living in their cars
+
+I think my favorite is someone says I'm not doing this to enjoy the outdoors, I'm doing this to save money. Hers is like the most authentic.
+
+### Truckers
 
 ## Beaten addictions (for now)
 
@@ -73,7 +103,15 @@ I was taking a break from working, and [Covid 19](/covid) happened, before I kne
 
 ### Alcohol
 
+I didn't really have a hard time stopping this. It's empty calroiess, but even worse it messes up my will power and my sleep. Pretty bad.
+
+#### "Zero proof" drinks
+
+I accidentally discovered these, which really came out of nowhere in the min 2020s? At first I was thrilled, felt so good, but then I pondered, sis this just a pavolian response where I imagine I'm gonna get a hit of mild euphoria and thus I'm really enjoying it? Turns out, yes, I was waiting for that. After a few days of this I found out that since I don't get my euphoric hit, I am no longer inrestered in this.
+
 ### Thinking about work while at home
+
+This comes and goes depending on how well/poorly work is going. But I used to be really bad at it, and am now much better at it.
 
 {%include summarize-page.html src="/mind-at-work" %}
 

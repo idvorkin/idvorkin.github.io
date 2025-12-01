@@ -10,7 +10,7 @@ redirect-from:
   - /weight
 ---
 
-Diet dominates weight, as weight is simple arithemtic -"calories in" minus "calories out". Weight is essential because it reduces the effort required to do physical activities, and because it reduces the risk of many diseases. [Exercise, while critical to energy](/exercise), is mostly a red herring for weight loss. A great way to see this is comparing what you eat to physical Activity. A side of fries adds 500 calories to your day, but running for 30 minutes only burns 300 calories.
+Diet dominates weight, as weight is simple arithmetic -"calories in" minus "calories out". Weight is essential because it reduces the effort required to do physical activities, and because it reduces the risk of many diseases. [Exercise, while critical to energy](/exercise), is mostly a red herring for weight loss. A great way to see this is comparing what you eat to physical Activity. A side of fries adds 500 calories to your day, but running for 30 minutes only burns 300 calories.
 
 <!-- prettier-ignore-start -->
 
@@ -32,13 +32,15 @@ Diet dominates weight, as weight is simple arithemtic -"calories in" minus "calo
 - [A tale of mindless Eating](#a-tale-of-mindless-eating)
 - [Making it a habit](#making-it-a-habit)
     - [Breakfast Miso](#breakfast-miso)
+- [Situational strategies](#situational-strategies)
+    - [Hotel breakfast](#hotel-breakfast)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## My journey
 
-Maintaing a healthy weight has always been a challenge for me. I was obese as a kid, and at multiple times my weight has crept up to 230 lbs, and with incredible diligence it had once dropped to a 150 lbs.
+Maintaining a healthy weight has always been a challenge for me. I was obese as a kid, and at multiple times my weight has crept up to 230 lbs, and with incredible diligence it had once dropped to a 150 lbs.
 
 ### Mating weight
 
@@ -82,3 +84,15 @@ Great book - mindless eating:
 ## Making it a habit
 
 ### Breakfast Miso
+
+## Situational strategies
+
+### Hotel breakfast
+
+Family loves the free hotel breakfast (and it is a great deal), but I can't afford the calories.
+
+Waffle guidelines:
+
+1. Recall: I'm essentialist, and I'd rather be healthy than enjoy a free breakfast
+2. Best case: Just coffee, add some milk (limit to 2)
+3. Indulgent case: Waffle (I do love waffles) — only get a half waffle

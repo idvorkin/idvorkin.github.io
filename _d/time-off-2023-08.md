@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Time off August 2023
+permalink: /timeoff-2023-08
 imagefeaturelocal: raccoon-vaccation.png
 ---
 
@@ -30,7 +31,7 @@ Humorously, I can just copy much of my todo from last year as it's pretty simila
   - My brain wanted to go to store at 9pm and gorge
   - Went to store, bought stuff (mostly helahty)
   - but came home and was pretty full so didn't want to gorge
-  - Wow, tha twas great.
+  - Wow, that was great.
 
 ## Moments
 
@@ -126,7 +127,7 @@ Things to do:
 
 ## Tech Guru (X/5)
 
-- Outline my talk for GPT, likley based on on Langchain tools
+- Outline my talk for GPT, likely based on on Langchain tools
 
 ## Cognitive Health (X/5)
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 no-render-title: true
-title: SQL Alchemy with Redshift
+title: SQLAlchemy with Redshift
 ---
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/sqlalchemy-redshift.md)_
@@ -12,7 +12,7 @@ SQLAlchemy Docs:
 
 - http://docs.sqlalchemy.org/en/latest/orm/tutorial.html
 
-Install dependant package:
+Install dependent package:
 
     pip install sqlalchemy-redshift
 

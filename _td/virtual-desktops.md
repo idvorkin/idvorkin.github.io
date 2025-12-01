@@ -31,7 +31,7 @@ https://github.com/Wox-launcher/Wox/issues/2294
 
 ## Tasks
 
-#### Build Virtual Desktop Accesor
+#### Build Virtual Desktop Accessor
 
 https://github.com/Ciantic/VirtualDesktopAccessor
 There is a C++ Bridge DLL that reexposes a nicer interface to the COM APIs.

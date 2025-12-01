@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Structure And Design of Computer Programs
+title: Structure and Design of Computer Programs
 permalink: /sicp
 redirect_from:
   - /wizard-book
@@ -23,7 +23,7 @@ LISP, and SICP
     - [Why is everything recurression?](#why-is-everything-recurression)
     - [Why all those wonkey brackets?](#why-all-those-wonkey-brackets)
     - [Why cons, car, cadr](#why-cons-car-cadr)
-- [Recurssion](#recurssion)
+- [Recursion](#recursion)
     - [Basis in lambda calculus](#basis-in-lambda-calculus)
     - [Tail recurusssion](#tail-recurusssion)
 - [Data](#data)
@@ -36,7 +36,7 @@ LISP, and SICP
     - [Code as Data](#code-as-data)
 - [Modern learning using an excellent tutor.](#modern-learning-using-an-excellent-tutor)
     - [Scheme vs Lisp vs Racket](#scheme-vs-lisp-vs-racket)
-- [Language Eveolution](#language-eveolution)
+- [Language Evolution](#language-evolution)
 - [Meta programming](#meta-programming)
     - [Homoiconicity](#homoiconicity)
     - [LISP Macros](#lisp-macros)
@@ -105,7 +105,7 @@ Interestingly if you can pass in functions, then you can have functions to do th
 
 ### Why is everything recurression?
 
-Actuall, it's more fundamental, it's that everything is na expression, and if everything is an expression, the only looping has to be recurssion
+Actually, it's more fundamental, it's that everything is an expression, and if everything is an expression, the only looping has to be recursion
 
 ### Why all those wonkey brackets?
 
@@ -116,7 +116,7 @@ The things:
 
 This is in contrast to procedural languages which contain statements and think of "functions/sub routines as special".
 
-This corresonds to the models of computation:
+This corresponds to the models of computation:
 
 1/ The teuring machine
 
@@ -149,7 +149,7 @@ The names `cons`, `car`, and `cadr` come from the historical development of Lisp
 
 The terms `car` and `cdr` were retained in Lisp to refer to the first and rest of a cons cell. Over time, as Lisp evolved, additional shorthand functions were created by combining `car` and `cdr` in various ways. These names stuck and became a part of the Lisp family of languages' common vernacular, despite their somewhat cryptic appearance to newcomers.
 
-## Recurssion
+## Recursion
 
 ### Basis in lambda calculus
 
@@ -175,7 +175,7 @@ If all you have is substitution, how do you get stuff done?
   - {1 2} (Pair 2 (Pair 1 ()))
 - Maybes ->
 
-- Recurssion
+- Recursion
 - Only subsititutions
 
 ### Church Pairs
@@ -280,7 +280,7 @@ Hymogophony? What if you can edit the source code just as easily as you can edit
 
 How to learn when you don't know everything. Books are linear.
 
-Really concepts are a dag. so where ever you end, you probably need eveything... And that'st he beter way to go. Ideally the book has this linear aspect to it. The problem with books is.
+Really concepts are a dag. so where ever you end, you probably need everything... And that'st he better way to go. Ideally the book has this linear aspect to it. The problem with books is.
 
 The problemw ith the interjnnet
 
@@ -292,7 +292,7 @@ The Choose your own adventure
 
 ### Scheme vs Lisp vs Racket
 
-## Language Eveolution
+## Language Evolution
 
 - Lisp (list procssing)
   - -> Scheme -> Racket

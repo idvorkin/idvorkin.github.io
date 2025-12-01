@@ -12,7 +12,7 @@ Turns out the apps streaks built this perfectly - and that's what i use. This co
 
 # Habit tracking app
 
-## Success Critera
+## Success Criteria
 
 - Learn Firebase and React JS
 - App to track streaks of daily habits.
@@ -25,7 +25,7 @@ Turns out the apps streaks built this perfectly - and that's what i use. This co
 
 ### (Responsive) User can see their data on desktop and mobile
 
-### User can track mutiple streaks
+### User can track multiple streaks
 
 ### User can say they did their task to get a streak.
 

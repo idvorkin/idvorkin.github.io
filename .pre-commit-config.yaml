@@ -30,7 +30,7 @@ repos:
       - id: prettier
         name: Prettier (Markdown & HTML only)
         files: \.(md|html)$
-        exclude: "^zz-chop-logs/.*$|back-links.json" # Exclude the zz-chop-logs directory
+        exclude: "^(zz-chop-logs|published-chop-logs)/.*$|back-links.json"
 
   # 🧐 Dasel: YAML and JSON schema/structure validator
   - repo: https://github.com/TomWright/dasel
@@ -39,6 +39,15 @@ repos:
       - id: dasel-validate
         name: Dasel YAML/JSON Validator
         files: \.(json|yaml|yml)$
+
+  # ✍️ Typos: Spell checking for code and prose
+  - repo: https://github.com/crate-ci/typos
+    rev: v1.28.4
+    hooks:
+      - id: typos
+        name: Check for typos
+        exclude: "^(assets|chop-logs|zz-chop-logs|cursor-logs|published-chop-logs|back-links.json|images/.*\\.excalidraw|old_blog|static)/.*$"
+        args: []  # Uses .typos.toml for configuration
 
   # 🧪 Local fast tests
   - repo: local
@@ -64,4 +73,14 @@ repos:
         files: '\.(md|markdown)$'
         exclude: "^zz-chop-logs/.*$|back-links.json" # Exclude the zz-chop-logs directory
         pass_filenames: true
+        verbose: true
+
+      - id: check-internal-links
+        name: Check internal links with lychee
+        entry: .pre-commit-hooks/check-links.py
+        language: script
+        files: '\.(md|markdown)$'
+        exclude: "^zz-chop-logs/.*$|back-links.json" # Exclude the zz-chop-logs directory
+        pass_filenames: false
+        always_run: false
         verbose: true

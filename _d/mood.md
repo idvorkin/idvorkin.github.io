@@ -7,7 +7,7 @@ permalink: /mood
 imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-shrink-couch.webp
 ---
 
-Let me ask an easy question: "How are you feeling?". How long did it take you to answer? Less then a second? Impressive. Now a harder question "What makes you say that?", or even harder "How do you 'compute' how are you feeling?" What is going on? Human's have a super fast heuristic called mood giving them an insant assessement of their sujective reality. Mood is critical to understand as it drives our behaviors, has an outsized influence on our subjective experience, can be in conflict to our pursuit of happiness, and most importantly has several bugs which can be exploited by the resistance and other bad actors.
+Let me ask an easy question: "How are you feeling?". How long did it take you to answer? Less then a second? Impressive. Now a harder question "What makes you say that?", or even harder "How do you 'compute' how are you feeling?" What is going on? Human's have a super fast heuristic called mood giving them an insant assessment of their sujective reality. Mood is critical to understand as it drives our behaviors, has an outsized influence on our subjective experience, can be in conflict to our pursuit of happiness, and most importantly has several bugs which can be exploited by the resistance and other bad actors.
 
 <!-- prettier-ignore-start -->
 
@@ -78,7 +78,7 @@ Mood = Heuristic Fast Assess(Quality of Present Reality)
 
 **Is it a one way street?** Interestingly it's bi-directional. The link between mood and the brain’s assessment of the quality of the present is bidirectional. Smiling when in a bad mood makes you in a good mood.
 
-**Is it balanced?** "Reality" can be formed Combiation(Self, Other, Process). Even if one of these components is good, you may over attribute to the others, and vice versa. For exampe, if you're in physical in pain, you'll perceive a relationship as worse then it is.
+**Is it balanced?** "Reality" can be formed Combination(Self, Other, Process). Even if one of these components is good, you may over attribute to the others, and vice versa. For exampe, if you're in physical in pain, you'll perceive a relationship as worse then it is.
 
 As a model,
 
@@ -94,9 +94,15 @@ As a model,
 | Other   |      |         |        |
 | Process |      |         |        |
 
-**Mood vs Energy/Arrousal**
+**Mood vs Energy/Arousal**
 
 {%include summarize-page.html src="/energy" %}
+
+**The role of the nervous system in mood**
+
+Your mood is deeply influenced by which branch of your autonomic nervous system is dominant. When stuck in sympathetic (fight-or-flight) mode, everything feels urgent and threatening. Learning to activate your parasympathetic nervous system can help regulate mood by bringing you back to baseline.
+
+{%include summarize-page.html src="/slow"%}
 
 ## Mood disorders vs working moods responding to life
 

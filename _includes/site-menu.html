@@ -73,20 +73,31 @@
 <div id="autocomplete-search-box" style="display: none">
   <!-- Keep search box hidden, and only access the detached state -->
 </div>
+<!-- Branch info for dev server -->
+<script>
+  // Embed branch info directly for dev server
+  window.__GIT_BRANCH__ = "{{ site.data.git.branch }}";
+  window.__GIT_PR__ = {{ site.data.git.pr_number | jsonify }};
+</script>
 
 <script type="module">
   import { CreateAutoComplete } from "/assets/js/index.js";
   $(document).ready(function () {
-    CreateAutoComplete(
-      "{{ site.algolia.application_id}}",
-      "{{ site.algolia.search_only_api_key }}",
-      "{{ site.algolia.index_name }}",
-      "#autocomplete-search-box",
-      false
-    );
+    // Only initialize autocomplete if we're not on the index page
+    // The index page has its own initialization with custom settings
+    if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') {
+      CreateAutoComplete(
+        "{{ site.algolia.application_id}}",
+        "{{ site.algolia.search_only_api_key }}",
+        "{{ site.algolia.index_name }}",
+        "#autocomplete-search-box",
+        false
+      );
+    }
   });
 
   $("#autocomplete-search-box-button").click(function () {
-    $("#autocomplete-search-box > div > button").click();
+    // Redirect to main page for search
+    window.location.href = '/';
   });
 </script>

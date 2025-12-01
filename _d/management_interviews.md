@@ -196,7 +196,7 @@ dimensions of the design.
 - Handle data: segment the problem into pieces, build a logical and physical data model, and discuss the read/write/update path
 - Component responsibilities: tackle the individual parts of the problem while keeping in mind the larger goals
 - Completeness of the solution: generate a design for a system that addresses the requirements
-- Trade-offs: discuss the positives and negatives of the design that was proposed - System evolution: Show good intuition and judgement regarding what degrees of freedom within the system that are introduced. Evolve the software system in a coherent way as you introduce additional requirements
+- Trade-offs: discuss the positives and negatives of the design that was proposed - System evolution: Show good intuition and judgment regarding what degrees of freedom within the system that are introduced. Evolve the software system in a coherent way as you introduce additional requirements
 - References:
   - https://github.com/donnemartin/system-design-primer
   - https://www.hiredintech.com/classrooms/system-design/lesson/52

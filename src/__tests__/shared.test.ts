@@ -1,5 +1,12 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
-import { type IURLInfo, MakeBackLinkHTML, append_randomizer_div, random_from_list, shuffle } from "../../src/shared";
+import {
+  type IURLInfo,
+  MakeBackLinkHTML,
+  append_randomizer_div,
+  makeRedirectUrl,
+  random_from_list,
+  shuffle,
+} from "../../src/shared";
 
 // Add jQuery type declaration
 declare global {
@@ -201,6 +208,33 @@ describe("Shared Utility Functions", () => {
 
       // Verify no new content was generated
       expect(htmlFactory).not.toHaveBeenCalled();
+    });
+  });
+
+  describe("makeRedirectUrl", () => {
+    it("should generate correct URL with path only", () => {
+      const url = makeRedirectUrl("timeoff");
+      expect(url).toBe("https://tinyurl.com/igor-blog/?path=timeoff");
+    });
+
+    it("should generate correct URL with path and anchor", () => {
+      const url = makeRedirectUrl("timeoff", "very-vegetating");
+      expect(url).toBe("https://tinyurl.com/igor-blog/?path=timeoff%23very-vegetating");
+    });
+
+    it("should handle special characters in path", () => {
+      const url = makeRedirectUrl("time off/test", "anchor name");
+      expect(url).toBe("https://tinyurl.com/igor-blog/?path=time%20off%2Ftest%23anchor%20name");
+    });
+
+    it("should handle empty anchor gracefully", () => {
+      const url = makeRedirectUrl("page", "");
+      expect(url).toBe("https://tinyurl.com/igor-blog/?path=page");
+    });
+
+    it("should handle undefined anchor", () => {
+      const url = makeRedirectUrl("page", undefined);
+      expect(url).toBe("https://tinyurl.com/igor-blog/?path=page");
     });
   });
 });

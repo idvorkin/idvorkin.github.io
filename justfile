@@ -18,17 +18,13 @@ default:
 
 # Build all JavaScript/TypeScript files for production
 js-build: js-clean
-    # Using Parcel for bundling (handles TypeScript transpilation)
-    # Build the single entry point with optimization
-    npx parcel build --no-cache --no-content-hash --detailed-report
+    # Using Vite for bundling (handles TypeScript transpilation)
+    npx vite build
 
 # Watch for changes during development
 js-watch: js-clean
-    # Using Parcel for bundling with watch mode
-    rm -rf .parcel-cache dist
-    rm -f assets/js/*.js assets/js/*.map 2>/dev/null || true
-    # Watch the single entry point
-    npx parcel watch --no-cache
+    # Using Vite for bundling with watch mode
+    npx vite build --watch
 
 # Run TypeScript type checking without emitting files
 js-typecheck:
@@ -182,12 +178,20 @@ js-format:
 
 # Clean build artifacts
 js-clean:
-    rm -rf .parcel-cache dist
+    rm -rf node_modules/.vite dist
 
 # Validate code (typecheck + lint)
 js-validate: js-typecheck js-lint
 
 # ===== Jekyll Commands =====
+# For Jekyll site development, use these commands:
+# - jekyll-clean: Clean Jekyll cache and build artifacts
+# - jekyll-rebuild: Clean and rebuild site from scratch
+# - jekyll-serve: Serve site locally with livereload (default port 4000)
+# - jekyll-container: Serve site in container environment
+# - jekyll-docker: Serve site in Docker container
+# - update-backlinks: Rebuild backlinks.json
+# - update-search: Update Algolia search index
 
 coverage-instrument:
     npx nyc instrument --compact=false _site/assets/js instrumented
@@ -195,22 +199,57 @@ coverage-instrument:
 coverage-report:
     npx nyc report --reporter html --reporter text && open coverage/index.html
 
-jekyll-serve:
+# Clean Jekyll cache and build artifacts
+jekyll-clean:
+    @echo "🧹 Cleaning Jekyll artifacts..."
+    rm -rf _site
+    rm -rf .jekyll-cache
+    rm -rf .sass-cache
+    rm -f .jekyll-metadata
+    @echo "✅ Jekyll clean complete"
+
+# Clean and rebuild Jekyll site from scratch
+jekyll-rebuild: jekyll-clean
     #!/usr/bin/env sh
+    echo "🔨 Rebuilding Jekyll site from scratch..."
+    # Update git branch info for dev banner
+    echo '{"branch": "'$(git branch --show-current)'"}' > _data/git.json
+    # Update PR data for dev banner (non-fatal if no PR found)
+    just update-pr-data || true
+    # Build the site
     if [ "$(uname)" = "Darwin" ]; then
-        just internal-jekyll-mac-serve
+        ~/homebrew/opt/ruby/bin/bundle exec jekyll build
     else
-        bundle exec jekyll server --incremental --livereload --host 127.0.0.1
+        bundle exec jekyll build
+    fi
+    echo "✅ Jekyll rebuild complete - site available in _site/"
+
+jekyll-serve port="4000" livereload_port="35729":
+    #!/usr/bin/env sh
+    # Update git branch info for dev banner
+    echo '{"branch": "'$(git branch --show-current)'"}' > _data/git.json
+    # Update PR data for dev banner (non-fatal if no PR found)
+    just update-pr-data || true
+    if [ "$(uname)" = "Darwin" ]; then
+        ~/homebrew/opt/ruby/bin/bundle exec jekyll server --incremental --livereload --host 127.0.0.1 --port {{port}} --livereload-port {{livereload_port}}
+    else
+        bundle exec jekyll server --incremental --livereload --host 127.0.0.1 --port {{port}} --livereload-port {{livereload_port}}
     fi
 
-internal-jekyll-mac-serve:
-    ~/homebrew/opt/ruby/bin/bundle exec jekyll server --incremental --livereload --host 127.0.0.1
-
 jekyll-container:
+    #!/usr/bin/env sh
+    # Update git branch info for dev banner
+    echo '{"branch": "'$(git branch --show-current)'"}' > _data/git.json
+    # Update PR data for dev banner (non-fatal if no PR found)
+    just update-pr-data || true
     bundle exec jekyll server --incremental --livereload --host 0.0.0.0
 
 jekyll-docker:
     #!/usr/bin/env sh
+    # Update git branch info for dev banner
+    echo '{"branch": "'$(git branch --show-current)'"}' > _data/git.json
+    # Update PR data for dev banner (non-fatal if no PR found)
+    just update-pr-data || true
     # Auto-detect platform and use appropriate image
     if [ "$(uname -m)" = "arm64" ]; then
         PLATFORM="--platform linux/arm64"
@@ -332,8 +371,8 @@ push-backlinks:
         echo "No changes detected in backlinks."
     fi
 
-broken-links:
-    scrapy runspider linkchecker.py -O ~/tmp/brokenlinks.csv && cat ~/tmp/brokenlinks.csv
+broken-links server="localhost:4000":
+    uv run scripts/check_internal_links.py --server {{server}}
 
 prepare:
     husky install
@@ -394,3 +433,68 @@ e2e-test:
 
 blog-combined:
     cat _d/* _posts/* _td/* > blog.allcontent.md
+
+# Update PR data file for dev banner
+# Fetches current PR number for this branch and writes to _data/current_pr.yml
+# On main branch, removes the file
+update-pr-data:
+    #!/usr/bin/env sh
+    # Check dependencies
+    if ! command -v gh >/dev/null 2>&1; then
+        echo "❌ GitHub CLI (gh) not installed"
+        exit 1
+    fi
+    if ! command -v jq >/dev/null 2>&1; then
+        echo "❌ jq not installed"
+        exit 1
+    fi
+
+    BRANCH=$(git rev-parse --abbrev-ref HEAD)
+    echo "🔍 Checking PR for branch: $BRANCH"
+    if [ "$BRANCH" = "main" ]; then
+        echo "📝 On main branch - removing PR data file and clearing PR from git.json"
+        rm -f _data/current_pr.yml
+        echo '{"branch": "main"}' > _data/git.json
+        exit 0
+    fi
+
+    mkdir -p repo_tmp
+    gh pr view --json number > repo_tmp/pr.json 2>/dev/null
+    if [ $? -eq 0 ]; then
+        PR_NUMBER=$(cat repo_tmp/pr.json | jq -r '.number')
+        if [ -z "$PR_NUMBER" ] || [ "$PR_NUMBER" = "null" ]; then
+            echo "❌ Failed to parse PR number"
+            rm -f repo_tmp/pr.json
+            exit 1
+        fi
+        echo "✅ Found PR #$PR_NUMBER"
+        echo "# Current PR information - auto-generated" > _data/current_pr.yml
+        echo "pr_number: $PR_NUMBER" >> _data/current_pr.yml
+        echo "branch: $BRANCH" >> _data/current_pr.yml
+        # Also update git.json with PR number for the banner
+        echo "{\"branch\": \"$BRANCH\", \"pr_number\": $PR_NUMBER}" > _data/git.json
+        if [ ! -f _data/current_pr.yml ]; then
+            echo "❌ Failed to create PR data file"
+            exit 1
+        fi
+        rm -f repo_tmp/pr.json
+    else
+        echo "⚠️  No PR found for branch: $BRANCH"
+        rm -f _data/current_pr.yml
+        # Update git.json without PR number
+        echo "{\"branch\": \"$BRANCH\"}" > _data/git.json
+    fi
+
+    # Force Jekyll to rebuild by deleting incremental metadata
+    # This ensures data file changes are picked up by --incremental mode
+    rm -f .jekyll-metadata
+
+# Legacy alias for update-pr-data
+set-pr: update-pr-data
+
+# ===== Navigation Tags =====
+
+# Generate tags for markdown files for Neovim navigation
+gen-tags:
+    @echo "🏷️  Generating tags for markdown files..."
+    ctags -R --languages=markdown --exclude=_site --exclude=node_modules --exclude=.git .

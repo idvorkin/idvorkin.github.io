@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "LEADER: Another take on the 7 habts"
+title: "LEADER: Another Take on the 7 Habits"
 tags:
   - book-notes
   - gpt

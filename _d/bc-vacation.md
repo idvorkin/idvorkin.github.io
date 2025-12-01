@@ -13,7 +13,7 @@ tags:
 
 A guide to my favorite spots in British Columbia, focusing on Vancouver and Chilliwack. Whether you're planning a quick weekend getaway or a longer adventure, here's what you need to know. These recommendations come from my personal experiences over multiple trips - you can read about some of them in my [summer 2024 adventures](/ig66/749), [Yellow Deli expedition](/ig66/718), and various time off adventures:
 
-{% include summarize-page.html src="/time-off-2024-02" %}
+{% include summarize-page.html src="/timeoff-2024-02" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -40,7 +40,7 @@ A guide to my favorite spots in British Columbia, focusing on Vancouver and Chil
 
 ## Vancouver
 
-Vancouver is a vibrant city that perfectly blends urban life with natural beauty. Here are some must-visit spots from [our recent family adventures](/time-off-2024-02):
+Vancouver is a vibrant city that perfectly blends urban life with natural beauty. Here are some must-visit spots from [our recent family adventures](/timeoff-2024-02):
 
 ### Stanley Park
 
@@ -152,7 +152,7 @@ Victoria's food scene is a delightful mix of traditional and modern. Here are so
 
 Must-see spots in Victoria:
 
-- Inner Harbour - Beautiful waterfront area
+- Inner Harbor - Beautiful waterfront area
 - Parliament Buildings - Especially stunning at night
 - Butchart Gardens - World-famous gardens
 - Fisherman's Wharf - Floating homes and food kiosks
@@ -182,7 +182,7 @@ The Yellow Deli is more than just a restaurant - it's an experience. You can rea
 
 ### Hotel: Hampton Inn
 
-Has a water slide, great gym, and a really "Happines" Theme
+Has a water slide, great gym, and a really "Happiness" Theme
 
 ### Waterfalls
 

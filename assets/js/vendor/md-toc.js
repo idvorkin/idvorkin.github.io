@@ -62,11 +62,36 @@
             var elementTag = element.tagName.toLowerCase();
             // We only care about tags on our level to add them as list item
             if (elementTag == iterTag) {
-                // Let's do some cleaning
-                var elementTitle = element.textContent.replace(/"/g, "&quot;");
-                var elementText = (typeof this.process === "function"
-                    ? this.process(element)
-                    : element.innerHTML).replace(/<(?:.|\n)*?>/gm, "");
+                // Let's do some cleaning - exclude icon elements when getting text
+                var textNodes = [];
+                for (var i = 0; i < element.childNodes.length; i++) {
+                    var node = element.childNodes[i];
+                    // Use numeric constants for better browser compatibility
+                    if (node.nodeType === 3) { // Node.TEXT_NODE = 3
+                        if (node.textContent) {
+                            textNodes.push(node.textContent);
+                        }
+                    } else if (node.nodeType === 1) { // Node.ELEMENT_NODE = 1
+                        // Check if element has classList (for older browser compatibility)
+                        var isIconElement = false;
+                        if (node.classList && node.classList.contains) {
+                            isIconElement = node.classList.contains('header-copy-link') || 
+                                           node.classList.contains('header-github-issue');
+                        } else if (node.className) {
+                            // Fallback for older browsers without classList
+                            var className = ' ' + node.className + ' ';
+                            isIconElement = className.indexOf(' header-copy-link ') > -1 || 
+                                           className.indexOf(' header-github-issue ') > -1;
+                        }
+                        
+                        if (!isIconElement && node.textContent) {
+                            textNodes.push(node.textContent);
+                        }
+                    }
+                }
+                var elementTitle = textNodes.join('').trim().replace(/"/g, "&quot;");
+                // Use the same cleaned text for elementText
+                var elementText = elementTitle;
                 var id = element.getAttribute("id");
                 if (!id) {
                     element.setAttribute("id", "tip" + ++index);

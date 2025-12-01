@@ -105,7 +105,7 @@ tests:
 
 ### Git commit message for blog content avoid ToC updates
 
-I use a tool to write my git commit messages. It can get slow, so I like to run it with maverik when it's not that important. However, when summarizing changes to my blog there are always changes to the auto generated ToC, which I don't want to be included, I have trouble gettign Maverik to honor [this](https://github.com/idvorkin/nlp/blob/03fe037a2323f21dd1728862dbf598d8af541fec/commit.py?plain=1#L146).
+I use a tool to write my git commit messages. It can get slow, so I like to run it with maverik when it's not that important. However, when summarizing changes to my blog there are always changes to the auto generated ToC, which I don't want to be included, I have trouble getting Maverik to honor [this](https://github.com/idvorkin/nlp/blob/03fe037a2323f21dd1728862dbf598d8af541fec/commit.py?plain=1#L146).
 
 ```
 - **Do not** mention discuss changes to the table of content.

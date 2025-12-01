@@ -31,7 +31,7 @@ My explorations of recommender and ranking systems, heavly based on the superb b
         - [Business Rules](#business-rules)
         - [How to engage biz rules](#how-to-engage-biz-rules)
         - [Semi-personalized by geo/segment/demographic](#semi-personalized-by-geosegmentdemographic)
-    - [Similary between content and users](#similary-between-content-and-users)
+    - [Similarly between content and users](#similarly-between-content-and-users)
     - [How to represent content/users](#how-to-represent-contentusers)
         - [How to measure similarity](#how-to-measure-similarity)
     - [Collaborative Filtering](#collaborative-filtering)
@@ -45,7 +45,7 @@ My explorations of recommender and ranking systems, heavly based on the superb b
     - [Hidden Gems: Matrix Factorization](#hidden-gems-matrix-factorization)
     - [Hybrid Recommenders](#hybrid-recommenders)
     - [From recommending to ranking](#from-recommending-to-ranking)
-    - [Future of Recommendors](#future-of-recommendors)
+    - [Future of Recommends](#future-of-recommends)
 - [Datasets](#datasets)
     - [Real Movie Datasets](#real-movie-datasets)
 - [Ideas](#ideas)
@@ -68,7 +68,7 @@ My explorations of recommender and ranking systems, heavly based on the superb b
 
 ### Recommender processes
 
-Candidate Generation - huge corpus, can't search all on-line. Offline generate candidates, down to order of hunderds
+Candidate Generation - huge corpus, can't search all on-line. Offline generate candidates, down to order of hundreds
 Scoring - Next round goes from 100s to 10s. Can be more precise, and take into consideration more things.
 Re-ranking - Final online ranking, remove dislikes, fairness, etc. Since online needs to be super fast.
 
@@ -80,7 +80,7 @@ Re-ranking - Final online ranking, remove dislikes, fairness, etc. Since online 
 
 ### Understand Netflix (collect user behavior and present recommendations)
 
-- Connect a snitch to a website by attaching a call to all events happing on a site. Good evidence provides information to the system about a user’s taste.
+- Connect a snitch to a website by attaching a call to all events happening on a site. Good evidence provides information to the system about a user's taste.
 - It’s good to record all events because they might turn out to be useful later.
 - Implicit ratings are deduced from the events triggered by the user, while explicit ratings are the actual ratings a user inserts.
 
@@ -93,7 +93,7 @@ Re-ranking - Final online ranking, remove dislikes, fairness, etc. Since online 
 
 ### How to calculate ratings
 
-- Implict vs Explicit Rating - Users lie, implicit is better (see flossing example)
+- Implicit vs Explicit Rating - Users lie, implicit is better (see flossing example)
 - The bannana problem - knowing someone buys a bananna doesn't tell you much (See TF-IFD)
 
 - A user-item matrix is the data format for recommender algorithms. You can populate them by using explicit as well as implicit ratings or by indicating which items were consumed by the user in a binary matrix.
@@ -126,7 +126,7 @@ Re-ranking - Final online ranking, remove dislikes, fairness, etc. Since online 
 - Can build clusters on stuff bought together. If you buy shoes, you probably want socks
 - Cross Selling See what we have
 
-**Item Set** Bought together, but not with everthing else.
+**Item Set** Bought together, but not with everything else.
 
 **Confidence** Number of times have that subset/(number of times first item present)
 
@@ -163,12 +163,12 @@ Keeping track of visitors
 
 Using Algos for cold start
 
-Thow who won't ask, won't know
+Those who won't ask, won't know
 
 Association rules to start recommending fast
 
 - Cold start = What to recommend to the new users
-- Concious ordering
+- Conscious ordering
 - Grey sheep = Users who don't cluster with others, could help them with genres
 
 #### Business Rules
@@ -196,7 +196,7 @@ Age, Star Wars
 
 Great for folks who saw them as kids (now 40) and their kids who have watched them. In the middle group, they are boring.
 
-### Similary between content and users
+### Similarly between content and users
 
 ### How to represent content/users
 
@@ -208,7 +208,7 @@ Given two things (people or items), how similar or different are they, 1 is the 
 
 There are multiple ways to measure, and depends on the representation of the thing, and the domain (#ml_art)
 
-- Euclidian Distance - just like you remember from lines in algebra sqrt(Sum(yi-xi)^2)
+- Euclidean Distance - just like you remember from lines in algebra sqrt(Sum(yi-xi)^2)
 - Dot product -
 - Cosine Similarity - The angle between the djfh distance, without the magnitude/intensity.
 
@@ -228,7 +228,7 @@ There are multiple ways to measure, and depends on the representation of the thi
   - Too bad, bugs are harder.
   - Both UT and regression testing
   - Test every part you can
-  - Similary methods, anything you can
+  - Similarly methods, anything you can
   - Use small dataset to verify everything you can
 - Test Scenarios
   - Offline
@@ -237,7 +237,7 @@ There are multiple ways to measure, and depends on the representation of the thi
 - Offline Evaluation
   - Assume data set is accurate
   - Train on the training data
-  - Verify with the test data if it recommeneded success
+  - Verify with the test data if it recommended success
   - Verification based on the inferior algorithm
 - Measuring error metrics
   - Hidden data vs new algo recommendations
@@ -246,8 +246,8 @@ There are multiple ways to measure, and depends on the representation of the thi
     - Mean Absolute Error
     - Root Mean Squared Error
     - Not these correct for +/- cancelling each other out
-    - RMSE - Sensetive to really bad errors
-    - MAE - Not sensetive. Decent when a terrible rating is OK.
+    - RMSE - Sensitive to really bad errors
+    - MAE - Not sensitive. Decent when a terrible rating is OK.
     - Be careful if you have user with lots of recommendation and popular items that will overweight in the results
 - Decision Support - Precision and Recall
 
@@ -272,7 +272,7 @@ There are multiple ways to measure, and depends on the representation of the thi
 
 - Data Sets
   - Test - only used once on final recommendations
-  - Validate Set - Optimize the model. Optimzie one param at a time. Then test it.
+  - Validate Set - Optimize the model. Optimize one param at a time. Then test it.
   - Training Set - Use it to give data to the recommender.
   - How to split data sets
     _ Random
@@ -331,7 +331,7 @@ Use a category, not just the collaborative filtering
 
 - Give a list of stuff users like, don't need a score, just give a top N order.
 
-### Future of Recommendors
+### Future of Recommends
 
 ## Datasets
 
@@ -360,7 +360,7 @@ Use a category, not just the collaborative filtering
 
 ## Code
 
-This stuff is kind of complicated, so I'm workign throught eh code in the book. Follow along at <https://github.com/idvorkin/moviegeek>
+This stuff is kind of complicated, so I'm working through the code in the book. Follow along at <https://github.com/idvorkin/moviegeek>
 
 If you're running the docker setup locally, you can run the webpage at ...
 

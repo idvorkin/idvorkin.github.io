@@ -4,7 +4,8 @@ title: "Getting to yes with yourself"
 author: "Igor Dvorkin"
 comments: true
 inprogress: true
-collapsable: true
+collapsible: true
+permalink: /get-to-yes-with-yourself
 
 tags:
   - emotional intelligence
@@ -62,12 +63,12 @@ Before you can negotiate with others, you need to be in sync with yourself. This
   - Magic Question Why? Why? Why?
   - Deepest needs: Happiness: Protection/Safety and Love/Connection
 - From Self Judgment to Self Understanding
-  - Before fighting with others, need to make sure you TRUELY know what you want.
+  - Before fighting with others, need to make sure you TRULY know what you want.
   - Accepting yourself for who you are is NOT a cop out. Acceptance produces safety, which lets us digg deater.
 
 ### 2) Develop your inner BATNA &#x2611;
 
-_The ideas in this chapter are great, but I think connecting the concepts to inner BATNA is ackward. Thus my summary doesn't track well with the books_
+_The ideas in this chapter are great, but I think connecting the concepts to inner BATNA is awkward. Thus my summary doesn't track well with the books_
 
 - A cross between 7H: Be Proactive, AND take responsibility for meeting your own needs.
 - When you COMMIT to unconditionally take care of your needs, you have all the power.
@@ -110,7 +111,7 @@ _The ideas in this chapter are great, but I think connecting the concepts to inn
 
 **Abundance not Scarcity: A rising tide raises all boats**
 
-**Expecations are a self fulling prophecy. Believe the world good or bad, and that's how you'll interpret it, and that's how it will become**
+**Expectations are a self fulling prophecy. Believe the world good or bad, and that's how you'll interpret it, and that's how it will become**
 
 - Remember your connection to life
 - Make your own happiness
@@ -146,7 +147,7 @@ _The ideas in this chapter are great, but I think connecting the concepts to inn
 - **We choose to be our own ally or our enemy. and we choose to be the ally or enemy in our relationships.**
 - A win within
   - **I will give myself the most trouble today. I stand in the way of my goals.**
-  - **Do the practices in this book, to be satisified with yourself**
+  - **Do the practices in this book, to be satisfied with yourself**
 - A win with others
   - **Every thing you do to get to yes with yourself, makes it easier to get to yes with others**
 - A win for the whole

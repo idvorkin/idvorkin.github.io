@@ -10,7 +10,7 @@ redirect_from:
   - /guilt
 ---
 
-Shame and guilt are often confused emotions caused by self judgements that lead to contrasting behaviors. Shame drives people to hide or deny their wrongdoings while guilt, properly applied drives people to the correct behaviors. These are both examples of [mental-pain](/mental-pain) and when the pain is phantom or cronic, are often well served by [grandmother mind](/grandmother-mind).
+Shame and guilt are often confused emotions caused by self judgments that lead to contrasting behaviors. Shame drives people to hide or deny their wrongdoings while guilt, properly applied drives people to the correct behaviors. These are both examples of [mental-pain](/mental-pain) and when the pain is phantom or cronic, are often well served by [grandmother mind](/grandmother-mind).
 
 | Emotion | Judgment                      | Accuracy Test                        | Alternate Emotion      |
 | ------- | ----------------------------- | ------------------------------------ | ---------------------- |

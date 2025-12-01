@@ -9,7 +9,7 @@ redirect_from:
   - think
 ---
 
-Useful writing tells people (including, possibly most importantly you) something true and important that they didn't already know in a way that leaves no doubt. Most writing is bad. Not due to spelling, punctuation or grammer, but due to lack of critical thinking. Critical thinking like analysis, synthesis, simplification, and presentation. To quote someone smart "If you're thinking without writing, you're only thinking about thinking".
+Useful writing tells people (including, possibly most importantly you) something true and important that they didn't already know in a way that leaves no doubt. Most writing is bad. Not due to spelling, punctuation or grammar, but due to lack of critical thinking. Critical thinking like analysis, synthesis, simplification, and presentation. To quote someone smart "If you're thinking without writing, you're only thinking about thinking".
 
 <!-- prettier-ignore-start -->
 
@@ -24,7 +24,7 @@ Useful writing tells people (including, possibly most importantly you) something
 - [Writing to understand](#writing-to-understand)
   - [All Mental models are wrong](#all-mental-models-are-wrong)
   - [SWOT and SOAR - Exploring the space](#swot-and-soar---exploring-the-space)
-  - [MECE - How you know you're done](#mece---how-you-know-youre-done)
+  - [MECE - How you know you're done](#mece---how-you-know-your-done)
   - [Minto's Pyramid Principle](#mintos-pyramid-principle)
   - [Elon's First Principles](#elons-first-principles)
   - [Five Whys](#five-whys)
@@ -36,7 +36,7 @@ Useful writing tells people (including, possibly most importantly you) something
   - [The Pixar Formula](#the-pixar-formula)
   - [The feedback formula: Situation, Behavior, Impact](#the-feedback-formula-situation-behavior-impact)
   - [The crappy modern business book](#the-crappy-modern-business-book)
-  - [The Hero's Journey - For very long form](#the-heros-journey---for-very-long-form)
+  - [The Hero's Journey - For very long form](#the-heroes-journey---for-very-long-form)
 - [Pen to paper](#pen-to-paper)
   - [Madman, Architect, Carpenter, Judge](#madman-architect-carpenter-judge)
   - [On essay's and writing](#on-essays-and-writing)
@@ -73,7 +73,7 @@ TODO: XREF - Stages of writing
 
 My favorite thing about [Amazon](/amazon) is the writing culture. Every 60 minute meeting starts with the presenter handing out a 6 page document, and asking if anyone needs a pen. The next 30 minutes is spent reading, with the silence barely puncuated with the sound of a pen underlining a key figure. At around the 30 minute mark, the presenter will ask, does anyone need more time? Which signals to the stragglers to start skimming as the discussion will start.
 
-On my second day at [Amazon](/amazon) I had my first meeting. After we went around the room introducing the new guy (me), a stapled 6 page printout was handed out and silence descended on the room. I went throught the document in 5 minutes. I didn't understand much of it, after all I was new and didn't know what these guys worked on. I then had to sit in silence fidgetting for the next 25 minutes. At the 30 minute mark, people started discussion. "I understand your reasoning, but did you consider the new market trends?", "How do you imagine things will change if we don't complete this within a month?" I was really surprised. I didn't notice any of these things in the document. How did these folks get this deep understanding of the document? They must have had a deep knowledge of the domain I thought. Nope.
+On my second day at [Amazon](/amazon) I had my first meeting. After we went around the room introducing the new guy (me), a stapled 6 page printout was handed out and silence descended on the room. I went through the document in 5 minutes. I didn't understand much of it, after all I was new and didn't know what these guys worked on. I then had to sit in silence fidgetting for the next 25 minutes. At the 30 minute mark, people started discussion. "I understand your reasoning, but did you consider the new market trends?", "How do you imagine things will change if we don't complete this within a month?" I was really surprised. I didn't notice any of these things in the document. How did these folks get this deep understanding of the document? They must have had a deep knowledge of the domain I thought. Nope.
 
 Turns out, to build a clear writing muscle, you must build a critical thinking muscle, which requires a critical reading muscle. After 3 years at Amazon, my skills had increased drastically, but I was still weak at these by Amazon standards.
 
@@ -100,7 +100,7 @@ You're going to suck till you don't. I could never explain it as well as Ira Gla
 
 ### Building Knowledge - Evergreen notes
 
-[Evergreen notes](https://notes.andymatuschak.org/z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C), are a concept brilliantly articulated by Andy Matuschak. Worth a read in its entirety, but I'll inline his definiton:
+[Evergreen notes](https://notes.andymatuschak.org/z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C), are a concept brilliantly articulated by Andy Matuschak. Worth a read in its entirety, but I'll inline his definition:
 
 Evergreen notes are written and organized to evolve, contribute, and accumulate over time, across projects. This is an unusual way to think about writing notes: Most people take only transient notes. That’s because these practices aren’t about writing notes; they’re about effectively developing insight: “Better note-taking” misses the point; what matters is “better thinking”. When done well, these notes can be quite valuable: Evergreen note-writing as fundamental unit of knowledge work.
 
@@ -113,7 +113,7 @@ Evergreen notes should be:
 - densely linked
 - interlinked (like the web), as opposed to hierarchal (like file folders).
 
-You'll note, this blog is my implementaiton of evergreen notes.
+You'll note, this blog is my implementation of evergreen notes.
 
 ## Writing to understand
 
@@ -123,7 +123,7 @@ See [7 habits concepts](/7h-c0) Maps vs Terrain
 
 Using your eyes you can look at the road outside your house. It has a color, a specific width, perhaps some potholes. This the terrain, the physical reality, but you won't see any of this google maps. Your eyes won't let you see the networks of sewers underneath your street. Fort that, there are maps that show the sewers, but those maps lack houses.
 
-Maps are required as the world is infinitly complex, and we need simpler models to understand what is going on. A similar thing happens at the restaurant, your order of the menu which is a simplification of the food. And to understand the world, we need mental models, like the ones presented in most non-fiction books.
+Maps are required as the world is infinitely complex, and we need simpler models to understand what is going on. A similar thing happens at the restaurant, your order of the menu which is a simplification of the food. And to understand the world, we need mental models, like the ones presented in most non-fiction books.
 
 While maps are useful, they are not the terrain, in some dimensiosn the map is always wrong, and classifying the edges is hard.
 
@@ -147,7 +147,7 @@ SOAR:
 
 ### MECE - How you know you're done
 
-Mutually Exclusive, Collectively Exhausted (MECE), is two distint ideas.
+Mutually Exclusive, Collectively Exhausted (MECE), is two distinct ideas.
 
 “Mutually exclusive” is a concept from probability theory that says two events cannot occur at the same time. For example, if you roll a six-sided die, the outcomes of a six or a three are mutually exclusive. When applied to information, mutually exclusive ideas would be distinctly separate and not overlapping.
 
@@ -269,7 +269,7 @@ The modern business/self-help book formula is:
     - Several stories per sub point
 - Weak summary
 
-Generally, these books can be summarized in a short 5 page essay. In fact they often have an HBR (Harvard Business Review) article from the auther which does exactly that.
+Generally, these books can be summarized in a short 5 page essay. In fact they often have an HBR (Harvard Business Review) article from the author which does exactly that.
 
 Business book don't have to be crappy by laws of physics, some are excellent like the [first 90 days](/90days). I highly recommend reading both for the content, and the structure. The structure is awesome because
 
@@ -358,7 +358,7 @@ Second, outage is expensive, as is incorrect action,
 
 ### Writing in the age of AI
 
-Fascinating idea from [Paul Graham](https://gist.github.com/idvorkin/68c59484cb8f18ced9d197abae907848/) that AI will make writing easy. That part is easy, the novel idea is that the consequence of this will be critical thought (the real value prop of writing) will atrophy. He notes this has a a historical precidence, we used to all have to be physically strong, there are currently people who are physically strong, but they are rare and have to work out to maintain that strength, as in our society it's mostly optional.
+Fascinating idea from [Paul Graham](https://gist.github.com/idvorkin/68c59484cb8f18ced9d197abae907848/) that AI will make writing easy. That part is easy, the novel idea is that the consequence of this will be critical thought (the real value prop of writing) will atrophy. He notes this has a a historical precedence, we used to all have to be physically strong, there are currently people who are physically strong, but they are rare and have to work out to maintain that strength, as in our society it's mostly optional.
 
 This begs the question how to use AI to help you think, not help you write.
 

@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Software Design And Architecture
+title: Software Design and Architecture
 permalink: /design
 redirect_from:
   - /architecture
+  - /td/design
 ---
 
 Software is measured in two dimensions: use cases (end user behavior) and malleability. End user behavior is the delivery of use cases, while malleability is the ease with which the software can modify the existing use cases, or add new ones. Software malleability is the evaluation function for an architecture. Malleability is the more important of these dimensions because over time there will be far more changes to the software then the original use case (e.g. the cost of maintenance far exceeds the software writing cost). A key property of software architecture is it's obvious there is one place to make changes, and where that place is.
@@ -52,7 +53,7 @@ Developers love building complex technically challenging systems - makes them fe
 
 ### Picking the right level of abstraction for your business logic
 
-Today's "too low level of abstraction" is yesterday's "too high level of abstraction". E.g. assembly lanaguage, c and c# and javascript.
+Today's "too low level of abstraction" is yesterday's "too high level of abstraction". E.g. assembly language, c and c# and javascript.
 
 ### Is Fault Free possible
 
@@ -121,7 +122,7 @@ Good list [here](https://orkhanscience.medium.com/software-architecture-patterns
 
 - Layered
 - Event Driven
-- MicroKernal (Plugin Based)
+- MicroKernel (Plugin Based)
 - Micro Service (Service instead of plugin)
 - [Cloud Architecture](/td/cloud-first-applications)
 
@@ -131,7 +132,7 @@ Good list [here](https://orkhanscience.medium.com/software-architecture-patterns
 - Open Closed Principle - Classes should be open to extension but closed to modification.
 - Liskov Substitution Principle - Any instantiation of an interface should work properly
 - Interface Segregation Principle - Break up complex Interfaces
-- Dependency Inversion Principle - A class should not depend on it's implementaiton details
+- Dependency Inversion Principle - A class should not depend on it's implementation details
   - Business Logic should not have a dependency on goop/platform, but should interfaces to them.
   - Goop should implement the binding between the Business Logic Interfaces and the platform.
   - Ideally handled by a Dependency Injection (DI) system

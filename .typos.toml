@@ -1,0 +1,136 @@
+[default]
+# Language preferences
+locale = "en-us"
+
+[default.extend-words]
+# Common tech/domain-specific terms that might be flagged
+"iterm" = "iterm"  # iTerm is a terminal application for Mac
+"iTerm" = "iTerm"  # iTerm is a terminal application for Mac
+"UE9QZ8" = "UE9QZ8"  # YouTube video ID
+"UE" = "UE"  # Part of YouTube ID
+"BA" = "BA"  # Part of Asciinema ID
+"NAEuBAJhe9qdU" = "NAEuBAJhe9qdU"  # Asciinema ID  
+"mis-hire" = "mis-hire"  # Common term in hiring
+"MoFo" = "MoFo"  # Slang term used intentionally
+"oter" = "oter"  # Part of YouTube ID 002oterS2Wg
+"vizualization" = "vizualization"  # In JS library
+"youre" = "youre"  # Intentional usage in TOC/headers
+"theatre" = "theatre"  # British spelling used intentionally
+"gruelling" = "gruelling"  # British spelling used intentionally
+ig = "ig"  # Your name/handle
+igor = "igor"
+dvorkin = "dvorkin"
+idvorkin = "idvorkin"
+zach = "zach"
+amelia = "amelia"
+alz = "alz"  # Alzheimer's abbreviation
+psyc = "psyc"  # Psychology abbreviation
+lsat = "lsat"
+gpa = "gpa"
+toc = "toc"  # Table of contents
+lil = "lil"  # Little
+nd = "nd"  # And
+pre = "pre"  # HTML tag
+br = "br"  # HTML tag
+ul = "ul"  # HTML tag
+li = "li"  # HTML tag
+ol = "ol"  # HTML tag
+href = "href"
+async = "async"
+params = "params"
+config = "config"
+repo = "repo"
+dev = "dev"
+env = "env"
+args = "args"
+func = "func"
+utils = "utils"
+init = "init"
+vals = "vals"
+attr = "attr"
+elem = "elem"
+btn = "btn"
+nav = "nav"
+img = "img"
+src = "src"
+dest = "dest"
+dir = "dir"
+tmp = "tmp"
+db = "db"
+api = "api"
+auth = "auth"
+uuid = "uuid"
+guid = "guid"
+json = "json"
+yaml = "yaml"
+toml = "toml"
+xml = "xml"
+csv = "csv"
+pdf = "pdf"
+png = "png"
+jpg = "jpg"
+gif = "gif"
+svg = "svg"
+md = "md"
+txt = "txt"
+html = "html"
+css = "css"
+js = "js"
+ts = "ts"
+py = "py"
+rb = "rb"
+sh = "sh"
+bash = "bash"
+zsh = "zsh"
+vim = "vim"
+nvim = "nvim"
+emacs = "emacs"
+# Greek words for love (linguistic relativity post)
+Storge = "Storge"  # Greek word for familial love
+storge = "storge"  # Greek word for familial love
+# Psychology/mental health terms
+catastrophize = "catastrophize"  # To view or present a situation as catastrophic
+catastrophizing = "catastrophizing"  # Present participle of catastrophize
+
+[files]
+# Files to ignore
+extend-exclude = [
+    "*.min.js",
+    "*.min.css",
+    "node_modules/",
+    ".git/",
+    "*.lock",
+    "package-lock.json",
+    "yarn.lock",
+    "Gemfile.lock",
+    "_site/",
+    ".jekyll-cache/",
+    "vendor/",
+    "*.jpg",
+    "*.jpeg",
+    "*.png",
+    "*.gif",
+    "*.svg",
+    "*.ico",
+    "*.webp",
+    "*.mp4",
+    "*.webm",
+    "*.mp3",
+    "*.pdf",
+    "*.zip",
+    "*.tar",
+    "*.gz",
+    "assets/**",
+    "back-links.json",
+    "search_index.json",
+    "chop-logs/**",
+    "zz-chop-logs/**",
+    "cursor-logs/**",
+    "published-chop-logs/**",
+    "assets/models/**",
+    "images/*.excalidraw",
+    "old_blog/**",
+    "assets/arbor/**",
+    "static/**",
+    "_ig66/ig66-export.json",
+]
