@@ -2,6 +2,8 @@
 _includes/head.html
 # prettier messes up the quadrant matrix formatting
 _includes/quadrant-matrix.html
+# prettier messes up the liquid filters in alert
+_includes/alert.html
 zz-chop-logs/**
 
 # Prettier reformats my python json

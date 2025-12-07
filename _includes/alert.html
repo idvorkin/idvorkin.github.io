@@ -1,2 +1,2 @@
 {% assign style = include.style | default: "info" %}
-<div class="alert alert-{{ style }}" role="alert">{{ include.content }}</div>
+<div class="alert alert-{{ style }}" role="alert">{{ include.content | markdownify | remove: '<p>' | remove: '</p>' | strip }}</div>
