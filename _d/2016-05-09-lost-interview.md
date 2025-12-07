@@ -7,7 +7,7 @@ tags:
 author: "Igor Dvorkin"
 ---
 
-Uneditted notes on a Q+A with Steve Jobs.
+Unedited notes on a Q+A with Steve Jobs.
 
 ### Best handling of an insult
 
@@ -15,7 +15,7 @@ Uneditted notes on a Q+A with Steve Jobs.
 
 ### How did you learn about hewett packard?
 
-Just called him up (everything was ina phone book) and asked him for spare parts
+Just called him up (everything was in a phone book) and asked him for spare parts
 
 #### How did Xerox Park Die?
 
@@ -35,11 +35,11 @@ IBM product sucked, and if it was up to them it would have failed, but they had 
 
 When companies get bigger they want to replicate that success. They assume the 'magic' was the process, so they institutionalize the process in the hope that'll bring success. **People think the process is the content**
 
-Best people are the content, and are a pain in the but to manage, but it's worth it!
+Best people are the content, and are a pain in the butt to manage, but it's worth it!
 
 #### Inspiration vs Perspiration
 
-Disease = Idea is 90% of the work. Tonne of craftmanship into a great product. Building it makes a huge variance to the project, there are a huge # of trade offs into the product. The laws of physics dominate. Design a product is keepng 5000 things in your brain, fitting them all together in the best way possible that gets what you want. Every day you learn something new that changes the equation. That process is the magic of product development.
+Disease = Idea is 90% of the work. Tonne of craftsmanship into a great product. Building it makes a huge variance to the project, there are a huge # of trade offs into the product. The laws of physics dominate. Design a product is keepng 5000 things in your brain, fitting them all together in the best way possible that gets what you want. Every day you learn something new that changes the equation. That process is the magic of product development.
 
 Old guy takes him out back to make a rock clean. A bunch of common rocks go in , and then get banged around with friction, and noise, and come out these beautiful polished rocks. Metaphor for a team working hard on something they're passionate about. It's that bumping up, those arguments, those fights, working together they polish each others, polish the ideas making beautiful stones.
 
@@ -55,7 +55,7 @@ Adobe from Xerox, in garage wanting to be hardware, Apple convinced them to beco
 
 #### What is MS good at
 
-1. Opportunist, 2) Keep coming (like japanese). The problem though, is they have no taste. No original ideas, no culture in the product. Why important? No problem with success, but products have no spirit or enlightenment, they're just pedestrian. And most customers don't have the spirit either. MS is just McDonanlds. I'm not sad MS won, I'm sad that MS products don't have more insight and creativity.
+1. Opportunist, 2) Keep coming (like japanese). The problem though, is they have no taste. No original ideas, no culture in the product. Why important? No problem with success, but products have no spirit or enlightenment, they're just pedestrian. And most customers don't have the spirit either. MS is just McDonalds. I'm not sad MS won, I'm sad that MS products don't have more insight and creativity.
 
 #### The future (from 1995):
 
