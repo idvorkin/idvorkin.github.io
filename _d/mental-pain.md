@@ -8,7 +8,7 @@ redirect_from:
   - pain
 ---
 
-Pain is in the brain as they say, which is especially true for mental pains. Pain isn't the enemy though, pain is a signal. The pain system, when working properly draws our attention to a problem so that we can deal with it. However, our pain can evolve into unecassary suffering, be phantom pain, meaning it is being applied when it should not be, or chronic pain, which flares up even though it is no longer providing value.
+Pain is in the brain as they say, which is especially true for mental pains. Pain isn't the enemy though, pain is a signal. The pain system, when working properly draws our attention to a problem so that we can deal with it. However, our pain can evolve into unnecessary suffering, be phantom pain, meaning it is being applied when it should not be, or chronic pain, which flares up even though it is no longer providing value.
 
 {% include blob_image_float_right.html src="blog/raccoon-mental-pain.webp" %}
 
@@ -156,7 +156,7 @@ But here's a short version:
 
 - **Don't take a step forward and a step backward** - Like dieting for half a day then binging the other half. Either commit to the day or don't. If you study, write down your notes. "Just thinking about it" without completion is pure waste.
 
-Amazingly, and regardless of how often you experience the, resistance prevents you from remembering it --
+Amazingly, and regardless of how often you experience the resistance, it prevents you from remembering it --
 
 **Once you take action, you transform pointless suffering into purposeful pain that actually leads somewhere.**
 
@@ -394,9 +394,9 @@ The correct responses to boredom:
 - “What could I care about here?”
 - Is there a way I can serve, create, or connect?”
 
-Use boredom as a trigger for redirection—not suppression. It invites deliberate design: re-engaging attention, crafting purpose, or revisiting your aspirationsglossary.
+Use boredom as a trigger for redirection—not suppression. It invites deliberate design: re-engaging attention, crafting purpose, or revisiting your aspirations.
 
-Be careful boredom is a breading ground for addiction
+Be careful boredom is a breeding ground for addiction
 
 {%include summarize-page.html src="/addiction"%}
 
