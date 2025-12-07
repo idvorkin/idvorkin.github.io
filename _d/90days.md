@@ -108,7 +108,7 @@ _Sadly I didn't write them down at the time, so this is from fuzzy memory_
 
 My transition to Meta was much easier, because I now understood that culture and physics are different, and that problems had many solutions.
 
-Some things i wisely came in doing differently:
+Some things I wisely came in doing differently:
 
 - Instead of asking for the solution I'd seen in Amazon or Microsoft, I described the problem I was seeing and asked what word we used to describe it, and how we solved it.
 
@@ -130,7 +130,7 @@ Without learning, you risk the the equivalent of org organ rejection syndrome (y
 **Desire for action**
 
 - Uneducated action is a mistake
-- External pressure can be magnified by insecurity. Remember, shit was broken before you arrived, and would still be broken a few weeks later if it took yo u a few extra weeks to join.
+- External pressure can be magnified by insecurity. Remember, shit was broken before you arrived, and would still be broken a few weeks later if it took you a few extra weeks to join.
 - Anxious to prove yourself, but you prove yourself by listening and being curious
 - Too busy to learn will result in a death spiral
 
@@ -160,7 +160,7 @@ Ramping up is the same as delivering any project. You need to start with a delib
 - How has this organization performed in the past?
 - How do people think it performed?
 - How were goals set? Were they too easy or too hard?
-- How where the goals measured?
+- How were the goals measured?
 - What behaviors did they encourage and discourage?
 - What happened if goals were missed?
 
@@ -363,7 +363,7 @@ Your early actions will be written into stories that will turn you into a loved 
 1. Do you have the right energy?
 1. Do you insist on high standards for yourself and others?
 
-Good leaders thrive to be :
+Good leaders strive to be:
 
 1. Demanding, but be satisfiable
 1. Accessible, but not too familiar
