@@ -45,7 +45,7 @@ _Operational Effectiveness (Going Faster) Is Not Strategy_
 
 - If there is one carrot farmer at the market, the farmer can charge whatever the buyer is willing to pay. BUT - if there are two carrot farmers, the farmers compete with each other to the get the buyers money.
 - The QUESTION is how can the farmers compete?
-- Being as efficient as possible, Operational Effectiveness, is important. For short periods of time, one carrot farmer can get more profit then the other carrot farmer, by being more efficient. But the other carrot farmer will soon be able to emulate the tactics of the first farmer, and before you know it the competitive advantage will disappear. **Operational efficiency is not a sustainable competitive strategy.**
+- Being as efficient as possible, Operational Effectiveness, is important. For short periods of time, one carrot farmer can get more profit than the other carrot farmer, by being more efficient. But the other carrot farmer will soon be able to emulate the tactics of the first farmer, and before you know it the competitive advantage will disappear. **Operational efficiency is not a sustainable competitive strategy.**
 - Strategy positioning is defining how your company is different. By providing a different value, or providing the same value using different activities. For example, instead of selling carrots, the farmer can sell carrot jam. **Strategic positioning, is the only way to get a competitive advantage**.
 
 ### II. What is a strategy?
@@ -83,7 +83,7 @@ Focus on a niche (or large market) and provide everything required to serve the 
 
 Examples:
 
-- IKEA try's to get all the needs of the home of young not rich people.
+- IKEA tries to get all the needs of the home of young not rich people.
   - Cheap Furniture because no sales force, and customer put together themselves
   - Child care since many have families.
   - Late hours since most work during the day.
@@ -140,7 +140,7 @@ Building a stronger activity map
 
 #### Fit and sustainability
 
-Copying fit is much harder then copying an activity, imagine you need 3 activities, and you copy each at .9, you end up with a copy .9^N activities.
+Copying fit is much harder than copying an activity, imagine you need 3 activities, and you copy each at .9, you end up with a copy .9^N activities.
 
 Since there's little value in copying a single activity, need to copy all activities which makes a BIG step function, others don't want to take.
 
@@ -153,7 +153,7 @@ Operational Effectiveness over a big activity map is really hard to copy. And le
 - Belief that committing is a sign of weakness
 - Focusing on efficiency is concrete, actionable and measurable.
 - Think Customer Focus == All needs of all customers
-- Trade offs scary to big bosses, don't make trade offs since don't' want to look bad or make the wrong call.
+- Trade offs scary to big bosses, don't make trade offs since don't want to look bad or make the wrong call.
 
 #### The Growth trap
 
