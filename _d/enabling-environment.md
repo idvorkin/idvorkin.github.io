@@ -77,7 +77,7 @@ At its core, is writing:
 
 ### Consumption
 
-- Having custom made [podcasts](/podcasts) can be better then books.
+- Having custom made [podcasts](/podcasts) can be better than books.
 
 ### Reflection
 

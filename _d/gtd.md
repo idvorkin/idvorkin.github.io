@@ -56,7 +56,7 @@ Your brain is terrible at remembering stuff, often forgetting the important, and
 All incoming tasks should handled by one of the four workflows and ignored from that point forward:
 
 - Drop - Best case :) See [Essentialism](/essentialism) and [the dip](/dip)
-- Do - If it takes less then 2 minutes, [get it done](/frog). Otherwise the overhead is too high.
+- Do - If it takes less than 2 minutes, [get it done](/frog). Otherwise the overhead is too high.
 - Delegate - Get someone else to do it, [outsourcing](/outsourcing) is great.
 - Defer - Convert it into a "next action", words you'll understand later context free, and add it to a project
 

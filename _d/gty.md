@@ -34,7 +34,7 @@ Negotiation is the heart of collaboration. It is what makes conflict potentially
 
 Let [compassion](/compassion) be a guide.
 
-_When someone throws a rock at you, you don't get mad at the rock, you get mad at the person. But no one wants to throw a rock at you, they likely did it due to their suffering. So, just as you don't get mad at the rock, don't get ad at the person, get mad at their suffering_
+_When someone throws a rock at you, you don't get mad at the rock, you get mad at the person. But no one wants to throw a rock at you, they likely did it due to their suffering. So, just as you don't get mad at the rock, don't get mad at the person, get mad at their suffering_
 
 ### Focus on outcomes not positions
 
@@ -46,7 +46,7 @@ _When someone throws a rock at you, you don't get mad at the rock, you get mad a
 
 Best Alternative to Negotiated Agreement. Essentially what you get if you don't reach an agreement. If your BATNA exceeds what you'd get in the negotiation, you should walk away and take your BATNA. E.g.
 
-Imagine you're negotiating with Jerry on selling a knife. If Jerry doesn't take the knife you can always sell the knife to Bob for 100$, so if Jerry gives you less then 100$, you can walk away and sell it to Jerry.
+Imagine you're negotiating with Jerry on selling a knife. If Jerry doesn't take the knife you can always sell the knife to Bob for 100$, so if Jerry gives you less than 100$, you can walk away and sell it to Bob.
 
 {%include amazon.html asin="B0051SDM5Q" %}
 
