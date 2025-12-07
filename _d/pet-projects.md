@@ -8,6 +8,8 @@ redirect_from:
 
 As an engineer, I love to build bespoke tools that solve my unique problems exactly the way I want them solved. The bonus? This is lets me learn new technologies (did you know my blog has multiplayer support?). Sometimes I even make a tool so I have something to learn from. And with AI, this list of projects and explorations has exploded! Note to self, when I want to veg out and just feed my social media addiction I should do some vibe coding on all of these.
 
+{% include alert.html content="Check out the pretty landing page at [pet-projects.surge.sh](https://pet-projects.surge.sh/)" %}
+
 ## Self Reflection
 
 | Project                                                                        | Description                                                                                                                                      |
