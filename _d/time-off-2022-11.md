@@ -52,7 +52,7 @@ Two days before the start of the trip we had layoffs (including my partners who 
 ## Moments
 
 - Getting to tell Ammon all the stuff in my life in the first 2 hours of our flight
-- Doing ballon for kid on the bus
+- Doing balloon for kid on the bus
 - Seeing Harry Potter and crying
 - Poop story from cofffee shop
 - Not eating the M&Ms at the store
@@ -227,7 +227,6 @@ See the section about keep work at work.
 ### Saturday - Harry Potter
 
 - Saw the best play of my life Happy Potter
-
   - Cried through the whole second act
   - Amazing blocking and transitions and special effects
   - Great story about a dad accepting his son
@@ -245,7 +244,6 @@ See the section about keep work at work.
   - No bathroom at coffee shop, none near
   - Luckily citi bike, raced to hotle, and got it done
 - Funny part about emergenncy poop
-
   - First night, saw a comedy show one 20 year fit guy talking about healhty eating messing up your sphinctor not able to hold it in.
   - Didn't think it was funny.
   - This morning, needed to poop, absolutely hilarious

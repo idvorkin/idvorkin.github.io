@@ -28,20 +28,20 @@ Humorously, I can just copy much of my todo from last year as it's pretty simila
 - Went to circus
 - Got Zach his A&W diet rootbeer
 - POUTINE!!
-- Kids complaining about me doing stretches (Second hand embarassent)
+- Kids complaining about me doing stretches (Second hand embarrassment)
 - Zach thinking we were sleeping in the Tesla
 - Guy on airplane saying he loved my enthusiasm.
 - Second City, me on stage, Amelia AirHart, and Amelia doing an easter skit, For not having to talk to people
 - Taking Zach to improv dojo (it was fun,and he loved it)
 - Cold plunge, then hottub, then sauna, and then massage chair
-- Niagra Falls
+- Niagara Falls
 - The boys getting photos like their Dad
 - After: Ron learning to do magic
 - Zach and Ben forcing down their stakes and drinking shots
 - Strong Man Act
 - Kids getting time with their cousins
 - Not having to worry about driving
-- Amazing Hotl
+- Amazing Hotel
 - Perfect Weather
 - Calling Tori everynight and sending video messages as needed
 

@@ -80,7 +80,7 @@ Tori and I spent a lot of time on our relationship this year, and she's organize
 
 ### From 12 months to 6 weeks
 
-Five years ago, I dreamed of taking a year off of work - [a gap year](/gap-year-igor) if you will. I spent a lot of time thinking through a gap year, and it's more important then ever now that the kids are running out of time. But that's a separate blog post
+Five years ago, I dreamed of taking a year off of work - [a gap year](/gap-year-igor) if you will. I spent a lot of time thinking through a gap year, and it's more important than ever now that the kids are running out of time. But that's a separate blog post
 
 {%include summarize-page.html src="/gap-year-igor"%}
 
@@ -174,45 +174,37 @@ AGENT: Make this image right aligned
 ![Map of week 3 trip](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250818_083503.webp)
 
 - Highlights:
-
   - Zach got Covid
   - Amelia got Covid
   - OMG so hot, like 100 degrees!
 
 - Thorp/Ellensburg/Yakima
-
   - A pretty cool part of the country
   - We got a 2$ Iced Americano! Wow!
   - They were selling cherries that they were loading into bag right off the back of the cherry truck
   - We took 821 which was cool winding river roads, if it wasn't 100 degrees, I should have gone rafting.
 
 - Bend Orgeon
-
   - Wow, so much beauty
   - Tried to book wizard island book tour, sold out in in like 2 minutes
   - Restarted giving out balloons!!
   - Very Yummy Mexican Food
 
 - Drive to Crater Lake
-
   - Wind farms are awesome - so big!
 
 - Crater Lake
-
   - Poor Zach was in the back groaning and moaning going through hot flashes and ice chills
   - Amelia and I hiked to the tippy top and saw an amazing view
   - That is a super cool place
 
 - Grants Pass
-
   - Beautiful, but I didn't spend it well. I just spent like 6 hours trying to setup a vibe coding environment.
 
 - Thor's Hammer/Cooks Casm
-
   - Amazing as usual
 
-- The great alsi hotel - The weirest hotel ever
-
+- The great alsi hotel - The weirdest hotel ever
   - Getting a hotel on the coast is like impossible on a Friday or Saturday
   - But this place was huge, like 200 rooms, and we were the only car there.
   - WHAT:mindblown: This was the old cult [suicide hotel](https://www.washingtonpost.com/archive/politics/1997/03/29/the-two-lured-oregon-recruits-with-promise-of-space-transport/445401f0-7d54-49cc-b92d-3779b10aba7a/?utm_source=chatgpt.com)
@@ -221,7 +213,6 @@ AGENT: Make this image right aligned
     ![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250818_084418.webp)
 
 - Final Leg home - Tony forgot how to drive
-
   - Igor had to drive instead.
   - BUT, Igor forgot how to drive!
   - Took the 405 as i5 was closed, but then forgot I need to follow directions and didn't take 520 exist,
@@ -230,7 +221,6 @@ AGENT: Make this image right aligned
     ![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250818_084632.webp)
 
 - Physical Health
-
   - Realized I can just carry my heavy club around everywhere.
 
 - Meetups
@@ -267,12 +257,10 @@ AGENT: Make this image right aligned
 ### Health and Habits
 
 - **Diet** - I should be pretty close to steady state goal (165 ish). I guess don't go up more than 5 lbs
-
   - Go to grocery store and load up on healthy food
   - Bring my travel scale
 
 - **Sleep** - Up every day at 5.
-
   - When drifting cut caffeine
   - Bring earplugs and sleep mask
   - Nap while charging the Tesla
@@ -431,7 +419,7 @@ Gym Days: -
 
 ### Sleep
 
-- It's been super hot latly, has made it hard
+- It's been super hot lately, has made it hard
 - Real key here is to get to bed early, and not get stuck on the phone.
 - Bring and use a sleeping mask
 - Sometimes tape my mouth shut.

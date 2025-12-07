@@ -755,7 +755,7 @@ Check out the great documentation at promptfoo, including redteaming I thgues st
 
 ### 2023-07-16
 
-- Doing Q&A for my blog w/ChromaDB and LandChain
+- Doing Q&A for my blog w/ChromaDB and LangChain
   - Bleh, Langchain is hard to grok, changing on the daily
   - <https://github.com/idvorkin/idvorkin.github.io/blob/master/scripts/qa_blog.py?plain=1#L99>
 

@@ -13,7 +13,7 @@ Just like the search bar in google fills in what you're typing when you say "Whe
 <!-- vim-markdown-toc-start -->
 
 - [Philosophy](#philosophy)
-    - [How humans tell if we're being lied too, accuracy versus precision](#how-humans-tell-if-were-being-lied-too-accuracy-versus-precision)
+    - [How humans tell if we're being lied to, accuracy versus precision](#how-humans-tell-if-were-being-lied-too-accuracy-versus-precision)
     - [Is it thinking?](#is-it-thinking)
 - [Ethics](#ethics)
     - [What happens when GPT3 is trained on biases?](#what-happens-when-gpt3-is-trained-on-biases)
@@ -40,7 +40,7 @@ Step #1 - check out some [demos here](https://herbertlui.net/9-examples-of-writi
 
 GPT 3 is a huge language model that has the ability to complete sentences
 
-### How humans tell if we're being lied too, accuracy versus precision
+### How humans tell if we're being lied to, accuracy versus precision
 
 How do we evaluate if something is right? I'm guessing 99.99% of the time it's trusting an expert. Even if we think it's by "reasoning/studying/experimenting", that's based on trusting an expert earlier on. Notice similarity here with art or religion or science.
 

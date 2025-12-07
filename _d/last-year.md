@@ -18,8 +18,8 @@ This post draws heavily from Peter Attia's work on longevity and healthspan, par
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [You're going to die](#your-going-to-die)
-- [Centarian Olympics](#centarian-olympics)
+- [You're going to die](#youre-going-to-die)
+- [Centenarian Olympics](#centarian-olympics)
     - [The Inverted Parabola of Health](#the-inverted-parabola-of-health)
     - [Your peak health age](#your-peak-health-age)
     - [Your rate of decline](#your-rate-of-decline)
@@ -44,7 +44,7 @@ Now watch this ...
 
 {% include youtube.html src="y_bYjLYXJo0" %}
 
-## Centarian Olympics
+## Centenarian Olympics
 
 Compressed Morbidity. Ideally you'll stay healthy till the very end. What does that mean when you're a 100? It means you have the strength to do the functional things you'd like. So what should we call this set of activities? How about the [Centenarian Olympics](https://peterattiamd.com/how-to-train-for-the-centenarian-olympics/), containing the following activities:
 

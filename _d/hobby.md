@@ -2,7 +2,7 @@
 layout: post
 title: "Why a Engineering Manager masquerades as a magician on the weekends"
 permalink: /hobby
-redirect-from:
+redirect_from:
   - /hobbies
 ---
 

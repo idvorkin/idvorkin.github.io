@@ -33,7 +33,7 @@ TL;DR:
   - [From high price, to low price](#from-high-price-to-low-price)
   - [From pre-manufactured to on-demand](#from-pre-manufactured-to-on-demand)
   - [From discrete to continuous](#from-discrete-to-continuous)
-  - [Dimensions on which to persalize](#dimensions-on-which-to-persalize)
+  - [Dimensions on which to personalize](#dimensions-on-which-to-personalize)
   - [Impact on economy](#impact-on-economy)
   - [From discovery to creation](#from-discovery-to-creation)
   - [Hyper-personalization to your group or tribe](#hyper-personalization-to-your-group-or-tribe)
@@ -81,7 +81,7 @@ TL;DR:
 
 ### From discrete to continuous
 
-### Dimensions on which to persalize
+### Dimensions on which to personalize
 
 ### Impact on economy
 
@@ -94,7 +94,7 @@ TL;DR:
 
 ### Hyper-personalization to your group or tribe
 
-- Doesnt' have to hyper-personalize to you, can be for you and your partner
+- Doesn't have to hyper-personalize to you, can be for you and your partner
 -
 
 ## Downside of hyper personalization

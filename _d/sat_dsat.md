@@ -46,7 +46,7 @@ Embrace the greatest parts of your work, mull over them, whether it's the bike r
 
 - [General](#general)
   - [What's keeping you awake?](#whats-keeping-you-awake)
-  - [What about the time you're not working?](#what-about-the-time-your-not-working)
+  - [What about the time you're not working?](#what-about-the-time-youre-not-working)
 - [The situation's a 2x2 matrix](#the-situations-a-2x2-matrix)
   - [High SAT Low DSAT](#high-sat-low-dsat)
   - [High DSAT, Low SAT](#high-dsat-low-sat)

@@ -2,7 +2,7 @@
 layout: post
 title: Igor's OSX Tools
 permalink: /osx
-redirect-from:
+redirect_from:
   - /mac
 ---
 

@@ -134,7 +134,7 @@ The digital revolution has gone through 3 changes: the copy of the industrial ag
   - Amazon's big value is reviews.
 - Content Manufacturing
   - High value content is NOT created by commercial entities (or classic commercial entities)
-- Web in 2050, not a better web, no more then Web 2.0 is a better TV.
+- Web in 2050, not a better web, no more than Web 2.0 is a better TV.
 - WEB TODAY:
   - What can be searched on google.
   - File searchable via hyperlink - BUT - So many things not linkable.
@@ -146,7 +146,7 @@ The digital revolution has gone through 3 changes: the copy of the industrial ag
 - Web becomes conversational interface (as opposed to a place)
   - Went from cyber space -> ubiquitous assistant -> electricity.
 
-### Cognifying - It's better then AI.
+### Cognifying - It's better than AI.
 
     * It's better with AI
 

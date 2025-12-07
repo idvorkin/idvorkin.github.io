@@ -2,7 +2,7 @@
 layout: post
 title: "My thoughts on Facebook"
 permalink: /facebook
-redirects_from:
+redirect_from:
   - /meta
   - /fb
 ---
@@ -153,14 +153,12 @@ Facebook has an enterprise product called Workspace, which is essentially FB. FB
 I was very skeptical of this at first, and always concerned I'd miss something, but after a few months of use, I acclimatized, and now I love it, and would hate going back to email. Here are some translations/great things about it.
 
 - Stuff that translates to email.
-
   - Groups are essentially public email lists.
   - Notifications are your unread email inbox.
   - You cc by doing an @mention, and it shows up in the notification feed.
   - Sharing across groups is like cross-posting multiple lists.
 
 - Everything is public
-
   - You can see everything someone posts (regardless of being subscribed)
   - You can share a permalink
   - Search is across all groups
@@ -341,7 +339,7 @@ Before we discuss that, I suggest reading this [post](https://www.seangoedecke.c
 
 _For most of the last decade, being a software engineer has been a lot of fun. Every company offered lots of perks, layoffs and firings were almost unheard of, and in general we were treated as special little geniuses who needed to be pampered so we could work our magic. That’s changed in the last two years. The first round of tech layoffs in 2023 came as a shock, but at least companies were falling over themselves to offer generous severance and teary CEO letters regretting the necessity. Two years later, Meta is explicitly branding its layoffs as “these were our lowest performers”. What the hell happened? What does it mean for us?_
 
-In absolute terms, Meta felt safer and had more benefits then it does today. However, that's likely true of the entire industry. I don't have a good way to measure, but I'm guessing while in absolute terms meta is "worse", likely in relative terms it is on the same spot on the curve (making up a random number - P90 of benefits). As an example, our daily waffles have been reduced to Wednesday only, our fresh grilled dialy chicken is gone, but we still have prime rib, and we still get smoked salmon on Friday's.
+In absolute terms, Meta felt safer and had more benefits then it does today. However, that's likely true of the entire industry. I don't have a good way to measure, but I'm guessing while in absolute terms meta is "worse", likely in relative terms it is on the same spot on the curve (making up a random number - P90 of benefits). As an example, our daily waffles have been reduced to Wednesday only, our fresh grilled daily chicken is gone, but we still have prime rib, and we still get smoked salmon on Friday's.
 
 I got my job offer while the gravy was flowing smoothly, but didn't start until mid-COVID when benefits reduced (no more take out meals or free ubers to work), but safety was super high (everyone got an exceeds expectation rating regardless of performance).
 

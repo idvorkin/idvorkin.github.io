@@ -5,7 +5,7 @@ permalink: /timeoff-2020-03
 imagefeaturelocal: raccoon-vacation.webp
 ---
 
-In March 2020, I took a 2 month sabatical between leaving Amazon and joining Facebook. Given it was a substantial amount of time, I came up with some big plans, and wrote them down. It was a great plan, BUT my time off correlated perfectly to the Corona Virus and as a result I wasted lots of my mental energy thinking about the Corona Virus, and adjusting to being in pseudo-quarantine. Took me a while, but I finally realized I should ignore corona virus, or at least minimize my time thinking about it.
+In March 2020, I took a 2 month sabbatical between leaving Amazon and joining Facebook. Given it was a substantial amount of time, I came up with some big plans, and wrote them down. It was a great plan, BUT my time off correlated perfectly to the Corona Virus and as a result I wasted lots of my mental energy thinking about the Corona Virus, and adjusting to being in pseudo-quarantine. Took me a while, but I finally realized I should ignore corona virus, or at least minimize my time thinking about it.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -92,7 +92,7 @@ In March 2020, I took a 2 month sabatical between leaving Amazon and joining Fac
 
 #### Emotional health because that's how I experience the world
 
-- I medtate daily.
+- I meditate daily.
 - I do a mental wind down before bed daily.
 
 #### Living the 7 habits, because that's my bible

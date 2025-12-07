@@ -9,7 +9,7 @@ tags:
   - how igor ticks
 ---
 
-Done right, a gap year isn't a year off; it's a year on — intentional investment in health, relationships, and mastery while you still have the capital to invest. Think of it as pursuing a PhD in Life Optimization, making deposits that compound for decades. A gap year is one of those uncharted spaces—seductive when discussed longingly over a beer, terrifying when holding a resignation letter outside your boss's office. Early maps warned: "HC SVNT DRACONES." Here be dragons. I'm mapping them in real time: the Scarcity Dragon whispering you can't afford it, the Entropy Dragon promising you'll you'll decay without structure, and the Squander Dragon insisting you'll waste this precious opportunity. But these dragons guard treasure — the chance to invest in what truly matters while you still have the capacity to do so. This is the map of how to tame them.
+Done right, a gap year isn't a year off; it's a year on — intentional investment in health, relationships, and mastery while you still have the capital to invest. Think of it as pursuing a PhD in Life Optimization, making deposits that compound for decades. A gap year is one of those uncharted spaces—seductive when discussed longingly over a beer, terrifying when holding a resignation letter outside your boss's office. Early maps warned: "HC SVNT DRACONES." Here be dragons. I'm mapping them in real time: the Scarcity Dragon whispering you can't afford it, the Entropy Dragon promising you'll decay without structure, and the Squander Dragon insisting you'll waste this precious opportunity. But these dragons guard treasure — the chance to invest in what truly matters while you still have the capacity to do so. This is the map of how to tame them.
 
 {% include alert.html content="I'm incredibly privileged to have both line of sight on savings and the support of my family to even consider a gap year" style="info" %}
 This sits next to [the gap year paradox](/gap-year): same terrain, closer camera.
@@ -611,7 +611,6 @@ The ultimate goal isn't to eliminate these dragons but to transform them from ad
 Living with dragons requires daily attention. They're not pets, but they're not enemies either - they're forces that must be acknowledged and managed through consistent practice. I have a long list
 
 - **Entropy Check**:
-
   - Get up before 5am
     - Anchor my day before I'm overrun by noise
     - Make a priority list

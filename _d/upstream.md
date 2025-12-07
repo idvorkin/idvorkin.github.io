@@ -29,7 +29,7 @@ This is my summary of [upstream](https://www.amazon.com/Upstream-Quest-Problems-
     - [How will you change the system](#how-will-you-change-the-system)
     - [Where can you find leverage](#where-can-you-find-leverage)
     - [How will you get early warning signs](#how-will-you-get-early-warning-signs)
-    - [How will you know you're successful](#how-will-you-know-your-successful)
+    - [How will you know you're successful](#how-will-you-know-youre-successful)
     - [How will you avoid doing harm](#how-will-you-avoid-doing-harm)
     - [Who will pay](#who-will-pay)
 - [Far Upstream](#far-upstream)

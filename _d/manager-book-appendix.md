@@ -139,7 +139,7 @@ _You'll also notice the principles are deliberately not ranked, and have tension
 <https://www.geekwire.com/2016/zillow-built-culture-around-6-core-values-empower-employees/>
 
 - Act with integrity
-- Move Fast, TThink Big
+- Move Fast, Think Big
 - Own it
 - Zillow is a team sport
 - Turn on the lights
@@ -154,7 +154,6 @@ _You'll also notice the principles are deliberately not ranked, and have tension
 3. My goal is to do nothing. If I'm doing anything you should do, want to do, or want to learn to do - lets make it happen.
 4. I'm super transparent
 5. Platforms;
-
    - If you build it they will not come.
    - If its a platform you'll have lots of opportunities to iterate before you're done.
    - Built every iteration with a committed partner
@@ -207,7 +206,7 @@ At the end of 2016, I joined [Amazon](/amazon) to learn the business of software
 - **Parkinson's Law of Triviality - (Bike Shedding)** Members of an organization give disproportionate weight to trivial issues. A nuclear power plant funding committee focus most time on how to paint the bike shed since it's easy, and they feel they are providing value
 - **Yak Shaving** - Not a law but a great term for when you go down the [rabbit hole](https://americanexpress.io/yak-shaving/) going several steps away from the task at hand (a common cause for the delay in Parkinson's Law)
 
-### Who has the monkey - fanstic advice from 1974!
+### Who has the monkey - fantastic advice from 1974!
 
 An absolute classic article - must read "Who has the monkey"(https://hbr.org/1999/11/management-time-whos-got-the-monkey)
 

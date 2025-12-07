@@ -13,7 +13,7 @@ Humorously, I can just copy much of my todo from last year as it's pretty simila
 
 ## My top priorities
 
-### Back to generating artificats
+### Back to generating artifacts
 
 - Bang out a daily blog post
 - Write 4 family journal entries (!!)
