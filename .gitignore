@@ -5,6 +5,9 @@
 # Temporary directory for repo-specific files
 repo_tmp/
 
+# Beads issue tracking (uses separate beads-metadata branch)
+.beads/
+
 # Ignore the statically generated site.
 _site
 
