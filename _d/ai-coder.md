@@ -31,7 +31,7 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
   - [Review changes between dates](#review-changes-between-dates)
   - [Dream: Re-write commit history to break things into orthogonal changes](#dream-re-write-commit-history-to-break-things-into-orthogonal-changes)
 - [Articles](#articles)
-  - [Perfect Articultion of the future of coding and where we're at today](#perfect-articultion-of-the-future-of-coding-and-where-were-at-today)
+  - [Perfect Articulation of the future of coding and where we're at today](#perfect-articulation-of-the-future-of-coding-and-where-were-at-today)
   - [How might AI change programming?](#how-might-ai-change-programming)
   - [Will CHOP Kill the Joy of Coding?](#will-chop-kill-the-joy-of-coding)
     - [Reasons to Program - Mastery vs Getting Shit Done](#reasons-to-program---mastery-vs-getting-shit-done)
