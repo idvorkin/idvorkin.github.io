@@ -18,7 +18,7 @@ Goals are critical, there are multiple goal systems and they have consequences. 
 
 - [Why goals](#why-goals)
   - [Goals vs Systems](#goals-vs-systems)
-  - [Mission, Vision, Tenets, Goals](#mission-vision-tenants-goals)
+  - [Mission, Vision, Tenets, Goals](#mission-vision-tenets-goals)
   - [What vs How](#what-vs-how)
 - [Goal Measurement](#goal-measurement)
   - [Input vs Output Metrics](#input-vs-output-metrics)
