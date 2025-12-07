@@ -160,7 +160,7 @@ Ramping up is the same as delivering any project. You need to start with a delib
 - How has this organization performed in the past?
 - How do people think it performed?
 - How were goals set? Were they too easy or too hard?
-- How where the goals measured?
+- How were the goals measured?
 - What behaviors did they encourage and discourage?
 - What happened if goals were missed?
 

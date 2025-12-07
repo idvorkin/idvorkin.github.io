@@ -43,7 +43,7 @@ As competition in the market intensifies, companies must find ways to differenti
 
 _Operational Effectiveness (Going Faster) Is Not Strategy_
 
-- If there is one carrot farmer at the market, the farmer can charge whatever the buyer is willing to pay. BUT - if there are two carrot farmers, the farmers compete with each other to the get the buyers money.
+- If there is one carrot farmer at the market, the farmer can charge whatever the buyer is willing to pay. BUT - if there are two carrot farmers, the farmers compete with each other to get the buyer's money.
 - The QUESTION is how can the farmers compete?
 - Being as efficient as possible, Operational Effectiveness, is important. For short periods of time, one carrot farmer can get more profit then the other carrot farmer, by being more efficient. But the other carrot farmer will soon be able to emulate the tactics of the first farmer, and before you know it the competitive advantage will disappear. **Operational efficiency is not a sustainable competitive strategy.**
 - Strategy positioning is defining how your company is different. By providing a different value, or providing the same value using different activities. For example, instead of selling carrots, the farmer can sell carrot jam. **Strategic positioning, is the only way to get a competitive advantage**.
