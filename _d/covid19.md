@@ -20,7 +20,7 @@ Corona Virus (CV) may be the defining moment in our lives. In such times, lets r
 <!-- vim-markdown-toc-start -->
 
 - [Don't feed mind monsters, focus on the positive.](#dont-feed-mind-monsters-focus-on-the-positive)
-  - [Leave quarantine better then when you started](#leave-quarantine-better-then-when-you-started)
+  - [Leave quarantine better than when you started](#leave-quarantine-better-than-when-you-started)
   - [Media's incentive is scaring you](#medias-incentive-is-scaring-you)
 - [Crisis Porn](#crisis-porn)
   - [Humanity has prioritize lives over profits](#humanity-has-prioritize-lives-over-profits)
@@ -60,9 +60,9 @@ Corona Virus (CV) may be the defining moment in our lives. In such times, lets r
 
 ## Don't feed mind monsters, focus on the positive.
 
-### Leave quarantine better then when you started
+### Leave quarantine better than when you started
 
-Hard to articulate it better then this video:
+Hard to articulate it better than this video:
 
 {% include youtube.html src="snAhsXyO3Ck" %}
 
@@ -141,7 +141,7 @@ I didn't realize this was a thing, but people buy stuff locally (often at thrift
 
 ### Glut of lobsters
 
-Because no one can celebrate Chinese new years which is a major consumer of lobsters, and lobster production was done pre-corona virus, lobsters are no dirt cheap.
+Because no one can celebrate Chinese new years which is a major consumer of lobsters, and lobster production was done pre-corona virus, lobsters are now dirt cheap.
 
 ### Prisoners making hand sanitizer.
 
@@ -161,7 +161,7 @@ The New York prison system is making inmates create hand sanitizer - that is awe
 
 ### Stop watching the news.
 
-It's a waste of your time, and your energy. Remember no one wants your option.
+It's a waste of your time, and your energy. Remember no one wants your opinion.
 
 ### Meet people for virtual coffees
 
@@ -177,7 +177,7 @@ It's a waste of your time, and your energy. Remember no one wants your option.
 
 The data analysis during this defining event has been terrible. However, focusing on the positive, the gives me a chance to see how "good data is presented" and to build some of my own data visualization skills.
 
-Here is [the best](https://ourworldindata.org/coronavirus#growth-in-covid-19-deaths-by-country) visualizer. Its good for may reasons, I should study it in the future.
+Here is [the best](https://ourworldindata.org/coronavirus#growth-in-covid-19-deaths-by-country) visualizer. It's good for many reasons, I should study it in the future.
 
 I've also got some relative data on my [mortality post](/death), however I don't think the problem is mortality, it's the health system being overwhelmed and the economy, neither of which is reported.
 

@@ -477,7 +477,7 @@ the following:
 –  Instances when they behave like a child, which indicates some
 unresolved trauma in childhood
 
-– Contrasts, as an overt trait often conceals it opposite (i.e.,
+– Contrasts, as an overt trait often conceals its opposite (i.e.,
 arrogance is often hiding insecurity)
 
 – The weak link, which is often someone behind the scenes controlling

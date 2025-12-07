@@ -111,13 +111,13 @@ I use a tool to write my git commit messages. It can get slow, so I like to run 
 - **Do not** mention discuss changes to the table of content.
 ```
 
-Teting this is normally a PITA with me doing manual testing, lets see if I can make some evals to fix this. I think I have a few choices
+Testing this is normally a PITA with me doing manual testing, let's see if I can make some evals to fix this. I think I have a few choices
 
 1. Prompt Foo
 2. DeepEval
 3. Giskard
 
-Ltes start with promptfoo
+Let's start with promptfoo
 
 ## Eval Systems
 

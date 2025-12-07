@@ -101,7 +101,6 @@ Vancouver area offers several spectacular suspension bridges:
 I think I went to some of these pre-COVID, it's time to go again.
 
 - Capilano Suspension Bridge
-
   - Most famous and touristy
   - 140 meters long, 70 meters high
   - Includes treetop adventure and cliff walk
@@ -109,7 +108,6 @@ I think I went to some of these pre-COVID, it's time to go again.
   - Admission is pricey but worth it
 
 - Sea to Sky Gondola Suspension Bridge
-
   - Located in Squamish (1 hour from Vancouver)
   - Spectacular mountain and ocean views
   - Combined with gondola experience
@@ -176,7 +174,7 @@ The Yellow Deli is more than just a restaurant - it's an experience. You can rea
 
 #### What I like to order there
 
-- They never have the cold Matte - I'm looking fowrad to getting it!
+- They never have the cold Matte - I'm looking forward to getting it!
 - I like the Reuben, and the Deli Rose (Amelia prefers Deli Rose)
 - Tori Enjoys The yellow Submarine
 
@@ -190,7 +188,7 @@ Let me search for waterfalls near Chilliwack to provide accurate information.
 
 I'll use the web_search tool to find the other major waterfalls in the area.
 
-There's a great water fall super easy to Drive+Walkt to:
+There's a great waterfall super easy to drive and walk to:
 
 - Bridal Veil Falls
 

@@ -21,6 +21,6 @@ I have lots of thoughts tied up in appreciation, here are some of them until I c
 
     * tbd
 
-### Won't appreciating people let people get a way with less then they can accomplish
+### Won't appreciating people let people get away with less than they can accomplish
 
     * tbd

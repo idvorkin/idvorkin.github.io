@@ -49,7 +49,7 @@ My notes on AR
     - [Working in VR](#working-in-vr)
 - [Philosophy](#philosophy)
     - [The Matrix - Simulation](#the-matrix---simulation)
-    - [Why is IRL better then VR](#why-is-irl-better-then-vr)
+    - [Why is IRL better than VR](#why-is-irl-better-than-vr)
 - [Tactile Hardware](#tactile-hardware)
 - [Other Resources](#other-resources)
 
@@ -70,11 +70,11 @@ Location and Mapping
 
 ### IMU - Inertial Measurement Unit
 
-Where you are with a combo gyroscope and acceleromater
+Where you are with a combo gyroscope and accelerometer
 
 ### VIO - Visual Inertial Odometry
 
-Figuring out where you by combo vison and inertial sensors
+Figuring out where you are by combo vision and inertial sensors
 
 ### 6 Dimensions X,Y,Z, Yaw, Pitch, Roll
 
@@ -148,7 +148,7 @@ Funny quote from Elon Musk about being in a [simulattion](https://www.theverge.c
 
 _If you assume any rate of improvement at all then games will become indistinguishable from reality," Musk said. "Even if that rate of advancement drops by a thousand from what it is now, let's just imagine it's 10,000 years in the future, which is nothing on the evolutionary scale." Given that we're on that trajectory and that these games are increasingly playable on any device, Musk said, the odds that we are living our lives in base reality — that is, "real" reality — is one in billions._
 
-### Why is IRL better then VR
+### Why is IRL better than VR
 
 I think the big philosophical question, especially for AR, is why be IRL? After all, IRL is just nicer.
 
