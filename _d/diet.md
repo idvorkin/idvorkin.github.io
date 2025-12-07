@@ -73,7 +73,7 @@ Maintaining a healthy weight has always been a challenge for me. I was obese as 
 
 ### Popcorn
 
-## Thinks that have been successful
+## Things that have been successful
 
 ## A tale of mindless Eating
 
