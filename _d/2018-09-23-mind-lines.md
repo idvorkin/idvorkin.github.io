@@ -21,7 +21,7 @@ nG
 
 5. Reflexively applying to self
 
-6. Reflexicvly apply to listener
+6. Reflexively apply to listener
 
 7. Counter Example Framing
 
@@ -49,13 +49,13 @@ nG
 
 19. Other abstractions framing
 
-20. Metaphoring and Sotrying framing
+20. Metaphoring and Storying framing
 
 21. Both/And framing
 
 22. Pseudo word framing
 23. Negation framing
 24. Possibility and as if framing
-25. Systematic and probablitily framin g
+25. Systematic and probability framing
 26. Decision Framing
     k
