@@ -113,7 +113,7 @@ Depending on what insights you want to provide, you need to use different questi
 
 - What is the counter argument?
 - What other options have you considered?
-- What would happen i this option disappeared?
+- What would happen if this option disappeared?
 - What is the next best use of resources?
 - How can you do A and B?
 - How would you decide if you had double the resources?

@@ -477,4 +477,4 @@ These are my personal opinions and are not related to the opinions of my employe
 
 ### What is a prompt engineer?
 
-An interesting take - "a prompt engineer" is a word that can go the way of things like "information super highway", but if you think about what it is doing is saying instructions in a way that can be understood by another. This requires understanding requirements, and articulating them to match the person to whom you are giving them. Honestly,s ounds like a Product Manager
+An interesting take - "a prompt engineer" is a word that can go the way of things like "information super highway", but if you think about what it is doing is saying instructions in a way that can be understood by another. This requires understanding requirements, and articulating them to match the person to whom you are giving them. Honestly, sounds like a Product Manager
