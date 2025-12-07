@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Start small,stay small/Re-Work"
+title: "Start small, stay small/Re-Work"
 permalink: /staysmallstaysmall
 redirect_from:
   - /rework
@@ -22,7 +22,7 @@ There is a world where growth is put on a pedestal. And there's another world wh
     - [7. Embrace Constraints](#7-embrace-constraints)
     - [8. Forget Growth for Growth’s Sake](#8-forget-growth-for-growths-sake)
     - [9. Culture and Team](#9-culture-and-team)
-  - [Start smalls stay small](#start-smalls-stay-small)
+  - [Start small stay small](#start-small-stay-small)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -84,6 +84,6 @@ There is a world where growth is put on a pedestal. And there's another world wh
 
 The authors argue for a less-is-more approach to business. They promote practicality, sustainability, and staying true to your core values while rejecting common business clichés.
 
-### Start smalls stay small
+### Start small stay small
 
 Another old book on this topic

@@ -18,7 +18,7 @@ alias:
 permalink: /siy
 ---
 
-Training Emotional Intelligence through mindfulness. Search inside yourself is a meditation training manual for engineers. It's also a pun as the author works at google, and built the program internally at Google. Joy on demand by the same author, is less engineer focused, and uses joy as a path to medatitive bliss.
+Training Emotional Intelligence through mindfulness. Search inside yourself is a meditation training manual for engineers. It's also a pun as the author works at google, and built the program internally at Google. Joy on demand by the same author, is less engineer focused, and uses joy as a path to meditative bliss.
 
 This is a summary of [Search Inside Yourself](http://www.amazon.com/gp/product/B0070XF474/ref=dp-kindle-redirect?ie=UTF8&btkr=1) and [Joy on Demand](https://www.amazon.com/Joy-Demand-Discovering-Happiness-Within/dp/0062378872), and the place I learned many of my [emotional health practices](/emotional-health)
 
@@ -258,7 +258,7 @@ _Riding your emotions like a horse_
   - **Stop** is sacred, even for a few seconds. **Breathing** extends the pause.
   - **Notice** to realize and calm the is a physiological response,
     - I am angry -> I feel angry -> my body is experiencing anger.
-  - **Reflect** to calm the psychological response, and engage cognative process [cognative reframe].
+  - **Reflect** to calm the psychological response, and engage cognitive process [cognitive reframe].
     - Every one wants to be happy, and act in a rationale way.
   - **Respond** think of most helpful/appropriate response you can think of.
     - Triggering the other person, will make situation escalate. Be calm.
@@ -284,7 +284,7 @@ _Riding your emotions like a horse_
 
 _Making Profits, Rowing Across Oceans, and Changing The World_
 
-- **GOAL: Find your purpose then be resilliant to failure.**
+- **GOAL: Find your purpose then be resilient to failure.**
 - Learn your **Purpose**, as you get good you hit **flow**, and then you get recognition and **pleasure**. See [post](/happy)
   - Priority order: Satisfaction, Flow, and Pleasure.
 - Motivation: **Align** work with purpose. **Envision** future we desire. **Overcome** obstacles through resilience.
@@ -419,7 +419,7 @@ _Empathy and the Monkey business of brain tangos_
   - Read the currents: How are decisions made? Authority/Consensus? Who is influencer?
   - Distinguish: Your/Team/Organization's interests.
   - Use Self awareness to understand your role.
-  - Use Empathic listening to undresatnd how people feel about situation and each other.
+  - Use Empathic listening to understand how people feel about situation and each other.
 - **Political awareness exercise**:
   - Journal, or tell a friend
   - PRIME: Think of a big, real conflict with lots of potency to you.
@@ -473,7 +473,6 @@ _Being Effective and Loved at the same time_
   - 2m pause
   - 1m mindfulness
 - Why multiply goodness works - it trains
-
   - Seeing goodness in others - Builds (I understand you, and feel for you)
   - Giving goodness to all - Builds I want to help you.
   - Confidence that you can do it - Become comfortable doing it more and more.
@@ -551,7 +550,6 @@ _Being Effective and Loved at the same time_
   - Worse, lack of information makes us assume the worst AND believe it to be true.
   - Remember human on other end, just like me. Will make up missing information.
 - Practice Difficult E-mail.
-
   - Deep breath.
   - Reflect what the other person will read, think about 3 conversations.
   - Write e-mail.

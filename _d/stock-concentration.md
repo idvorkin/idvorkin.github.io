@@ -37,7 +37,7 @@ When you work at a tech company and receive RSUs, it's easy to accidentally beco
 
 - [The RSU Trap: How You Became Overweight on Company Stock](#the-rsu-trap-how-you-became-overweight-on-company-stock)
 - [Don't Confuse a Good Outcome with a Good Decision](#dont-confuse-a-good-outcome-with-a-good-decision)
-- [You're Already Concentrated Enough](#your-already-concentrated-enough)
+- [You're Already Concentrated Enough](#youre-already-concentrated-enough)
 - [Watering down your concentration](#watering-down-your-concentration)
 - [Risk Management Strategies](#risk-management-strategies)
   - [Buying Put Options for Protection](#buying-put-options-for-protection)
@@ -94,6 +94,7 @@ Here's what most people don't understand about RSUs:
 3. **The "one-year hold" confusion** - Many people think they need to hold RSUs for a year to get long-term capital gains treatment. This is wrong! The one-year clock for LTCG starts from the vest date, not the grant date. But more importantly, you've already been taxed at ordinary income rates on the full value at vesting.
 
 **Think of it this way**:
+
 - Day 0 (vest): Stock worth $100K vests. You owe ~$35K in income tax regardless of what you do next.
 - Option A: Sell immediately for $100K. Total tax: $35K.
 - Option B: Hold for a year. Stock drops to $70K. You still owed $35K in tax on the original $100K. You lost $30K hoping to save on taxes you never would have owed anyway.
@@ -112,20 +113,21 @@ Look, even if you just hold a broad market index fund, you're already heavily ex
 
 **Example portfolio showing tech concentration:**
 
-| Ticker | Company | Portfolio % |
-|--------|---------|------------|
-| AAPL | Apple | 9.27% |
-| NVDA | Nvidia | 7.78% |
-| MSFT | Microsoft | 7.78% |
-| AMZN | Amazon | 5.83% |
-| AVGO | Broadcom | 4.86% |
-| GOOG | Alphabet Class C | 3.89% |
-| META | Meta Platforms | 3.89% |
-| **Total** | **Top 7 Tech Holdings** | **43.30%** |
+| Ticker    | Company                 | Portfolio % |
+| --------- | ----------------------- | ----------- |
+| AAPL      | Apple                   | 9.27%       |
+| NVDA      | Nvidia                  | 7.78%       |
+| MSFT      | Microsoft               | 7.78%       |
+| AMZN      | Amazon                  | 5.83%       |
+| AVGO      | Broadcom                | 4.86%       |
+| GOOG      | Alphabet Class C        | 3.89%       |
+| META      | Meta Platforms          | 3.89%       |
+| **Total** | **Top 7 Tech Holdings** | **43.30%**  |
 
 This portfolio shows how even a "diversified" portfolio can end up with nearly half its value (43.30%) concentrated in just 7 tech stocks, with the top 3 alone representing almost 25% of total portfolio value.
 
 **The NASDAQ is even worse:**
+
 - Top 10 stocks represent ~50% of the NASDAQ-100
 - Your FANG employer could be 5-15% of the index
 - Tech correlation approaches 80-90%
@@ -151,22 +153,22 @@ The raw numbers - total taxes paid
 
 **Tax impact on capital gains at different income levels (selling $200K in Washington State):**
 
-| Your Income Level | Cap Gain Sales | Average Tax Rate | Tax Breakdown |
-|-------------------|----------------|------------------|---------------|
-| **Under $270K income** | $200,000 | 15.0% | 15% federal only |
-| **$270K-$553K income** | $200,000 | 18.8% | 15% fed + 3.8% NIIT (no WA tax on first $270K gains) |
-| **$553K-$600K income** | $200,000 | 18.8% | 15% fed + 3.8% NIIT (no WA tax on first $270K gains) |
-| **Over $600K income** | $200,000 | 23.8% | 20% fed + 3.8% NIIT (no WA tax on first $270K gains) |
+| Your Income Level      | Cap Gain Sales | Average Tax Rate | Tax Breakdown                                        |
+| ---------------------- | -------------- | ---------------- | ---------------------------------------------------- |
+| **Under $270K income** | $200,000       | 15.0%            | 15% federal only                                     |
+| **$270K-$553K income** | $200,000       | 18.8%            | 15% fed + 3.8% NIIT (no WA tax on first $270K gains) |
+| **$553K-$600K income** | $200,000       | 18.8%            | 15% fed + 3.8% NIIT (no WA tax on first $270K gains) |
+| **Over $600K income**  | $200,000       | 23.8%            | 20% fed + 3.8% NIIT (no WA tax on first $270K gains) |
 
 **Tax impact when selling different amounts (assuming $50K ordinary income in Washington State):**
 
-| Capital Gains Sold | Average Tax Rate | Tax Breakdown |
-|---------------------|------------------|---------------|
-| **$100K** | 6.5% | First $70K at 0%, next $30K at 15% federal |
-| **$200K** | 10.8% | First $70K at 0%, next $130K at 15% federal |
-| **$300K** | 13.5% | 15% fed on most + 3.8% NIIT on portion over $270K total income + 7% WA on $30K over $270K |
-| **$400K** | 15.9% | 15% fed + 3.8% NIIT + 7% WA on $130K over $270K |
-| **$500K** | 17.3% | 15% fed + 3.8% NIIT + 7% WA on $230K over $270K |
+| Capital Gains Sold | Average Tax Rate | Tax Breakdown                                                                             |
+| ------------------ | ---------------- | ----------------------------------------------------------------------------------------- |
+| **$100K**          | 6.5%             | First $70K at 0%, next $30K at 15% federal                                                |
+| **$200K**          | 10.8%            | First $70K at 0%, next $130K at 15% federal                                               |
+| **$300K**          | 13.5%            | 15% fed on most + 3.8% NIIT on portion over $270K total income + 7% WA on $30K over $270K |
+| **$400K**          | 15.9%            | 15% fed + 3.8% NIIT + 7% WA on $130K over $270K                                           |
+| **$500K**          | 17.3%            | 15% fed + 3.8% NIIT + 7% WA on $230K over $270K                                           |
 
 _Key thresholds: NIIT starts at $270K total income (married filing jointly). WA state tax applies to capital gains over $270K. Federal LTCG rate jumps from 15% to 20% at $553K taxable income._
 
@@ -178,18 +180,20 @@ When you're sitting on a concentrated position, you have several tools beyond ju
 
 **TL;DR**: Pay ~3-5% annually to guarantee you can sell your stock at a minimum price, protecting against crashes while keeping upside potential.
 
-*NOTE: This will still be a taxable event, but you'll feel better knowing you didn't lose it all*
+_NOTE: This will still be a taxable event, but you'll feel better knowing you didn't lose it all_
 
 **How it works**: Buy put options on your company stock to create a "floor" - a guaranteed minimum sale price even if the stock crashes.
 
 **Example**: You own $2M in company stock currently trading at $400/share. You buy put options with a $350 strike price expiring in 6 months for $15/share. If the stock drops to $300, you can exercise your put and sell at $350, limiting your loss to $50/share plus the $15 option cost.
 
 **Pros:**
+
 - Caps your downside risk while maintaining upside potential
 - No immediate tax consequences
 - Can be renewed or adjusted as needed
 
 **Cons:**
+
 - Costs money upfront (premium decay if stock doesn't drop)
 - Only provides protection for the option duration
 - May trigger "constructive sale" rules if strike is too close to current price
@@ -198,7 +202,7 @@ When you're sitting on a concentrated position, you have several tools beyond ju
 
 **TL;DR**: Get downside protection for nearly free by giving up some upside - like insurance with a deductible that pays for itself.
 
-*NOTE: Exercising the options will still be a taxable event, but you'll feel better knowing you didn't lose it all*
+_NOTE: Exercising the options will still be a taxable event, but you'll feel better knowing you didn't lose it all_
 
 **How it works**: Combine buying a put (protection) with selling a call (give up some upside) to reduce or eliminate the net cost.
 
@@ -207,6 +211,7 @@ When you're sitting on a concentrated position, you have several tools beyond ju
 **The sweet spot**: You keep gains between $350-$450 while being protected from major losses and paying almost nothing for the protection.
 
 **Variations:**
+
 - **Zero-cost collar**: Adjust strikes so call premium exactly pays for put premium
 - **Partial collar**: Only collar a portion of your holdings
 - **Rolling collar**: Renew with new strikes as stock price moves
@@ -220,22 +225,26 @@ When you're sitting on a concentrated position, you have several tools beyond ju
 **How it works**: Pool your concentrated single stock with other investors' concentrated positions to create instant diversification without triggering capital gains.
 
 **Requirements:**
+
 - Min Investment: $1 million in a single stock
 - Min Hold Time: 7 years to avoid triggering taxes
 - Must be publicly traded stock with sufficient liquidity
 
 **The process:**
+
 1. Contribute your stock to the exchange fund
 2. Receive partnership units representing a diversified basket
 3. After 7 years, you can withdraw a diversified portfolio
 4. Your original cost basis is preserved and spread across the basket
 
 **Pros:**
+
 - Immediate diversification without tax hit
 - Professional management during the holding period
 - Maintains cost basis for future tax planning
 
 **Cons:**
+
 - Long 7-year lockup period
 - High minimum investment
 - Management fees (typically 1-2% annually)
@@ -246,7 +255,7 @@ When you're sitting on a concentrated position, you have several tools beyond ju
 
 **The cool new kid on the block**
 
-* [Cache Exchange Funds](https://usecache.com/product/exchange-funds) is one provider offering exchange funds for concentrated stock positions, with quarterly fund launches and professional diversification strategies. Note: 1% management fee + $100K minimum (most other providers require $1M+)
+- [Cache Exchange Funds](https://usecache.com/product/exchange-funds) is one provider offering exchange funds for concentrated stock positions, with quarterly fund launches and professional diversification strategies. Note: 1% management fee + $100K minimum (most other providers require $1M+)
 
 **Management fees vs capital gains tax - the math:**
 
@@ -256,22 +265,23 @@ Exchange funds charge management fees on your entire position, while taxes are o
 
 **Example 1: $100K position with $10K cost basis ($90K unrealized gain) - assumes varying income levels**
 
-| Your Income Level | Management Fees (7yr) | Capital Gains Tax | Tax Breakdown |
-|---------------------|----------------------|-------------------|---------------|
-| **Under $270K income** | $7,000 | $13,500 | 15% federal only |
-| **$270K-$553K income** | $7,000 | $16,920 | 15% fed + 3.8% NIIT |
-| **$553K-$600K income** | $7,000 | $16,920 | 15% fed + 3.8% NIIT |
-| **Over $600K income** | $7,000 | $21,420 | 20% fed + 3.8% NIIT |
+| Your Income Level      | Management Fees (7yr) | Capital Gains Tax | Tax Breakdown       |
+| ---------------------- | --------------------- | ----------------- | ------------------- |
+| **Under $270K income** | $7,000                | $13,500           | 15% federal only    |
+| **$270K-$553K income** | $7,000                | $16,920           | 15% fed + 3.8% NIIT |
+| **$553K-$600K income** | $7,000                | $16,920           | 15% fed + 3.8% NIIT |
+| **Over $600K income**  | $7,000                | $21,420           | 20% fed + 3.8% NIIT |
 
 **Example 2: $1M position with $100K cost basis ($900K unrealized gain) - assumes married filing jointly with no other income**
 
-| Capital Gains Amount | Management Fees (7yr) | Capital Gains Tax | Tax Breakdown |
-|---------------------|----------------------|-------------------|---------------|
-| **First $270K** | $70,000 | $22,050 | 0% on first $123K, 15% on next $147K |
-| **$270K - $553K** | $70,000 | $75,254 | 15% fed + 3.8% NIIT |
-| **$553K - $900K** | $70,000 | $182,130 | 20% fed + 3.8% NIIT + 7% WA on gains over $270K |
+| Capital Gains Amount | Management Fees (7yr) | Capital Gains Tax | Tax Breakdown                                   |
+| -------------------- | --------------------- | ----------------- | ----------------------------------------------- |
+| **First $270K**      | $70,000               | $22,050           | 0% on first $123K, 15% on next $147K            |
+| **$270K - $553K**    | $70,000               | $75,254           | 15% fed + 3.8% NIIT                             |
+| **$553K - $900K**    | $70,000               | $182,130          | 20% fed + 3.8% NIIT + 7% WA on gains over $270K |
 
 **Key insights:**
+
 - At $100K position: Cache allows entry at $100K (most others require $1M), making exchange funds accessible for smaller positions
 - Your income dramatically affects tax on gains: $90K gain costs $13.5K to $21.4K depending on income
 - High earners (>$600K) pay 58% more tax than low earners (<$270K) on the same gains
@@ -279,12 +289,14 @@ Exchange funds charge management fees on your entire position, while taxes are o
 - Remember: You still owe capital gains tax eventually when exiting the exchange fund
 
 **Key differences:**
+
 - Management fees are paid annually on the **entire position**, not just gains
 - Capital gains tax is one-time and only on the **gain portion**
 - After 7 years in an exchange fund, you still owe capital gains tax when you eventually sell the diversified portfolio
 - Exchange funds preserve your cost basis, allowing continued tax deferral
 
 **When exchange funds make sense despite fees:**
+
 - Your position is so large that concentration risk outweighs the fee drag
 - You're in a very high tax bracket now but expect lower rates in retirement
 - You value the immediate diversification without triggering a taxable event

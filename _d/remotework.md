@@ -63,7 +63,7 @@ In March 2020, the world shut down from Covid-19. In May 2020, I started a new j
 
 ### One head per box(screen)
 
-Video calls are optimized for one her per box. E.g. every person has their own camera. This breaks down when you have one camera for 10 people in a conference room. When there are many people in a room, but someone is remote, it's really hard for them to understands what is happneing in the room, especially when they're talking.
+Video calls are optimized for one her per box. E.g. every person has their own camera. This breaks down when you have one camera for 10 people in a conference room. When there are many people in a room, but someone is remote, it's really hard for them to understands what is happening in the room, especially when they're talking.
 
 Ideally you setup one head per box, wherever everyone joins on their laptop (camera on, microphone off), at least then you can see who is talking, even if they're not looking directly into their screen.
 
@@ -75,7 +75,7 @@ You need a collaborative whiteboard app. My favorite is Excalidraw. Open source,
 
 ### Shared Realtime Editing
 
-While not as good as a whiteboard, opening a collaborative document ala google docs or some such, works surpringly well. You can all follow along and contribute at the same time
+While not as good as a whiteboard, opening a collaborative document ala google docs or some such, works surprisingly well. You can all follow along and contribute at the same time
 
 ## Sync vs Async, Real Time vs Delayed
 
@@ -164,7 +164,7 @@ A shared doc system like Quip is far superior for this use case. History, collab
 
 In an e-mail world, I'd have folders for followup_today, followup_this_week, follow_up_next_week, follow_up_next_month. I don't have a great solution for this - In theory a task system, but that kind of sucks as it loses too much context.
 
-We have a reminder bot, which is surpringly good, as it forces stuff too top.
+We have a reminder bot, which is surprisingly good, as it forces stuff too top.
 
 ### Grouping everything at self controlled granularity with rules and folders
 
