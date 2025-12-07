@@ -297,13 +297,13 @@
     "url_info": {
         "/22": {
             "description": "In 2019 I created a program for 15 fantastic interns! A program highlight was my talk titled “What I wish I knew at 22, and so might you”. The talk received a 94% overall rating from over 15 interns, 10 SDE-IIs, and 1 senior developer. Even though the talk focuses on how to live the good life, a big chunk of life is work, so there’s good coverage on how to optimize your career.\n\n",
-            "doc_size": 16000,
+            "doc_size": 17000,
             "file_path": "_site/22.html",
             "incoming_links": [
                 "/chapters",
                 "/manager-book"
             ],
-            "last_modified": "2024-05-05T08:25:00-07:00",
+            "last_modified": "2025-12-06T16:13:00.778113",
             "markdown_path": "_d/22.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -379,7 +379,6 @@
             "doc_size": 18000,
             "file_path": "_site/7-habits.html",
             "incoming_links": [
-                "/7h-concepts",
                 "/balance",
                 "/be-proactive",
                 "/books-that-defined-me",
@@ -419,12 +418,12 @@
                 "/advice",
                 "/writing"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2025-12-06T16:13:06.689687",
             "markdown_path": "_d/7h-c0.md",
             "outgoing_links": [
-                "/7-habits",
+                "/7h",
                 "/balance",
-                "/sleight-of-mouth"
+                "/some"
             ],
             "redirect_url": "",
             "title": "7 habits concepts",
@@ -4722,7 +4721,6 @@
             "doc_size": 26000,
             "file_path": "_site/sleight-of-mouth.html",
             "incoming_links": [
-                "/7h-concepts",
                 "/operating-manual",
                 "/timeoff-2022-02",
                 "/words-we-dont-have"
