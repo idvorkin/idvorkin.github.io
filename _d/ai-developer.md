@@ -34,7 +34,7 @@ ML Engineer is a hot new job. It's the boys and girls who train and deploy model
   - [AI Engagement Model: Tools/Copilots/Chat/Agents](#ai-engagement-model-toolscopilotschatagents)
 - [Tech Deep Dive - Use case to Model](#tech-deep-dive---use-case-to-model)
   - [Fast Model](#fast-model)
-  - [Hand writing recognition](#hand-writing-recognition)
+  - [Handwriting recognition](#handwriting-recognition)
   - [Coding - with Cursor](#coding---with-cursor)
   - [Coding - with Aider](#coding---with-aider)
   - [Coding - Make a PR for me](#coding---make-a-pr-for-me)
