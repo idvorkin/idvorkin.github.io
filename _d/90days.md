@@ -108,7 +108,7 @@ _Sadly I didn't write them down at the time, so this is from fuzzy memory_
 
 My transition to Meta was much easier, because I now understood that culture and physics are different, and that problems had many solutions.
 
-Some things i wisely came in doing differently:
+Some things I wisely came in doing differently:
 
 - Instead of asking for the solution I'd seen in Amazon or Microsoft, I described the problem I was seeing and asked what word we used to describe it, and how we solved it.
 
@@ -363,7 +363,7 @@ Your early actions will be written into stories that will turn you into a loved 
 1. Do you have the right energy?
 1. Do you insist on high standards for yourself and others?
 
-Good leaders thrive to be :
+Good leaders strive to be :
 
 1. Demanding, but be satisfiable
 1. Accessible, but not too familiar
