@@ -77,7 +77,7 @@ New Learnings
 
 - Toe spreaders are fun
 - I should eat fruit before a workout (else go lightheaded)
-- Talking to an agent is way more fun then texting (See [Tony](https://github.com/idvorkin/nlp/blob/3ac6a14389f8c5a42a270dcd6b5e9cfd92c7b42e/convos/lifecoach.convo.md?plain=1#L3))
+- Talking to an agent is way more fun than texting (See [Tony](https://github.com/idvorkin/nlp/blob/3ac6a14389f8c5a42a270dcd6b5e9cfd92c7b42e/convos/lifecoach.convo.md?plain=1#L3))
 
 ## Relationships
 

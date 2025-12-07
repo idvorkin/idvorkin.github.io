@@ -4,7 +4,7 @@ title: Time off Mid winter break 2022
 permalink: /timeoff-2022-02
 ---
 
-It'mid winter break and I've got a week off. In an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation I'm going to pre-write what I want to get done, and adjust it as I go.
+It's mid winter break and I've got a week off. In an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation I'm going to pre-write what I want to get done, and adjust it as I go.
 
 This is a combination of [time off](/time-off), and all the stuff for [happiness](/happy), which I guess gets tangled up with half of my evergreen notes.
 

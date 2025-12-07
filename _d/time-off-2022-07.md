@@ -13,7 +13,7 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
 ### Maintain Healthy habits
 
 - Keep my weight at 200 lbs (though dropping 5 extra would be amazing
-- Maintaining my mobilily, and cardio routine (can skip strength)
+- Maintaining my mobility, and cardio routine (can skip strength)
 - Maintaining my emotional health habits
 - Minimize Procrastination
 - Disconnect from work as soon as I'm done work.

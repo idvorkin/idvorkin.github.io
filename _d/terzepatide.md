@@ -19,7 +19,7 @@ permalink: /terzepatide
 - [Differences from calorie restriction](#differences-from-calorie-restriction)
 - [Side effects](#side-effects)
     - [It's mostly the side effects of dieting hard (if you are)](#its-mostly-the-side-effects-of-dieting-hard-if-you-are)
-    - [Gastroinstronal](#gastroinstronal)
+    - [Gastrointestinal](#gastroinstronal)
     - [Muscle loss](#muscle-loss)
 - [FAQ](#faq)
     - [Did you get a 'script, isn't there a shortage? Is this some grey market \$hit?](#did-you-get-a-script-isnt-there-a-shortage-is-this-some-grey-market-hit)
@@ -69,7 +69,7 @@ I'll convert this to a graph, and all these numbers are made up:
 - Lower energy
 - Less Sleep (when calories go low, your body assuming you need to find food, and produces some sleep reduction drugs)
 
-### Gastroinstronal
+### Gastrointestinal
 
 - Constipation, not terrible.
 - Burps - the first few days

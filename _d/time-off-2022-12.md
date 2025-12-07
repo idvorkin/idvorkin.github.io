@@ -251,7 +251,7 @@ Zero stress here, funny given last year ...
 
 **Spending vacation days when it's "fun time at work"** Not a problem at all this year.
 
-**January is going to be a tough month at work.** January is calibration time at Meta. The team is a fair bit smaller then last year so I'm feeling good about this.
+**January is going to be a tough month at work.** January is calibration time at Meta. The team is a fair bit smaller than last year so I'm feeling good about this.
 
 ### Family
 

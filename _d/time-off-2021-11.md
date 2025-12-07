@@ -145,7 +145,7 @@ Gym Days: 0
 
 ### Diet
 
-My diet discipline has been week. But had food poisoning and super puked on Friday, so didn't eat much through the weekend.
+My diet discipline has been weak. But had food poisoning and super puked on Friday, so didn't eat much through the weekend.
 
 ### Sleep
 

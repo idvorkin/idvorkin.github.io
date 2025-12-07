@@ -33,9 +33,9 @@ The like switch, written by an ex-FBI agent, goes into detail on how to make fri
     - [Eye Rolls](#eye-rolls)
     - [Squinting](#squinting)
     - [Furrowed Eyebrows](#furrowed-eyebrows)
-    - [Faical Tension](#faical-tension)
+    - [Facial Tension](#faical-tension)
     - [Aggressive Stance](#aggressive-stance)
-    - [Scrunched Noes](#scrunched-noes)
+    - [Scrunched Nose](#scrunched-noes)
 - [Feet Position](#feet-position)
 - [Gauge depth of a relationship](#gauge-depth-of-a-relationship)
 - [Golden rule of friendship - Make others feel good about themselves](#golden-rule-of-friendship---make-others-feel-good-about-themselves)
@@ -101,11 +101,11 @@ The like switch, written by an ex-FBI agent, goes into detail on how to make fri
 
 ### Furrowed Eyebrows
 
-### Faical Tension
+### Facial Tension
 
 ### Aggressive Stance
 
-### Scrunched Noes
+### Scrunched Nose
 
 ## Feet Position
 

@@ -14,4 +14,4 @@ Does your team have open and clear communication?
 How do you know your boss cares about your career?
 Does your team have clear goals?
 
-The difference within teams in a company are bigger then the differences between companies.
+The difference within teams in a company are bigger than the differences between companies.
