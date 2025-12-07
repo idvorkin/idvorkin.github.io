@@ -10,4 +10,4 @@
 ### The only improvements I can think of for the Brompton:
 
 1. More gears - the gear range is good enough, but having more than 6 gears would be so much more helpful.
-2. A water bottle holder. For a bike that is perfect in every way, it's surpsing there is no water bottle holder.
+2. A water bottle holder. For a bike that is perfect in every way, it's surprising there is no water bottle holder.

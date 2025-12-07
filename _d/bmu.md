@@ -73,7 +73,6 @@ See my [dream job](/dream-job)
 - Hiring and Retaining
 
 - Abilities _(Things that are effortless)_
-
   - Motivating Others
   - Creative
   - Moving peoples emotions
@@ -85,7 +84,6 @@ See my [dream job](/dream-job)
   - Being Comfortable
 
 - Skills _(Learned or Acquired Talents)_
-
   - Rapid Prototyping
   - Leading People
   - Recruiting
@@ -94,12 +92,12 @@ See my [dream job](/dream-job)
 
 - Personality - How people describe 'you'
   - Passionate
-  - Quirky, Whimisical.
+  - Quirky, Whimsical.
   - Gregarious
   - Tenacious
   - Confident
 
-* Intangible Assets - IP/Goodwill/Brand Recogintion
+* Intangible Assets - IP/Goodwill/Brand Recognition
 * Physical Assets - N/A for computer people.
 
 ### Key Partners - Who helps you?
@@ -114,7 +112,7 @@ See my [dream job](/dream-job)
 
 ### Channels - How they know you, how you deliver
 
-More complex then it sounds, need to do this per customer segment:
+More complex than it sounds, need to do this per customer segment:
 
 - How will potential customers discover how you help them?
 - How will they decide whether to buy your product or services?
@@ -183,7 +181,6 @@ More complex then it sounds, need to do this per customer segment:
 ### Revenue - What you get?
 
 - Tangible
-
   - Salary
   - Expected Value of Bonuses
   - Health Insurance
