@@ -218,7 +218,7 @@ Chilliwack offers beautiful outdoor experiences:
 
 #### Notable BorderCrossings
 
-- What you're coming for a sandwidch?
+- What you're coming for a sandwich?
 - Why are you coming (angry), then wait, are those flowers on your car? Yes. And bunnies. Suddenly smiling
 
 ### Getting Around

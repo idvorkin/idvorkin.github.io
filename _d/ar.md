@@ -100,9 +100,9 @@ Google vs Apple.
 
 ### Holo Lens
 
-### Occolus Go
+### Oculus Go
 
-### Occulus Rift
+### Oculus Rift
 
 ### iPad Pro 2020 Depth Sensors
 
@@ -144,7 +144,7 @@ I accidentally punched a hole in my TV.
 
 ### The Matrix - Simulation
 
-Funny quote from Elon Musk about being in a [simulattion](https://www.theverge.com/2016/6/2/11837874/elon-musk-says-odds-living-in-simulation).
+Funny quote from Elon Musk about being in a [simulation](https://www.theverge.com/2016/6/2/11837874/elon-musk-says-odds-living-in-simulation).
 
 _If you assume any rate of improvement at all then games will become indistinguishable from reality," Musk said. "Even if that rate of advancement drops by a thousand from what it is now, let's just imagine it's 10,000 years in the future, which is nothing on the evolutionary scale." Given that we're on that trajectory and that these games are increasingly playable on any device, Musk said, the odds that we are living our lives in base reality — that is, "real" reality — is one in billions._
 

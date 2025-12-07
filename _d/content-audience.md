@@ -63,10 +63,10 @@ Planning feels good when we're afraid because it gives us the illusion of progre
 - Why/what
   - Documentary of my life - family moments, personal growth, daily adventures
   - I'm doing this to model how I embrace and celebrate my identity, so others can feel more comfortable embracing and celebrating their own!
-- Auidence
+- Audience
   - Me
     - To reinforce things I value, like my affirmations
-    - Tor remind me about IGor at his best
+    - To remind me about Igor at his best
     - To look back fondly on my adventures and remember how much fun I had
   - My kids,
     - To remember their father
@@ -184,7 +184,7 @@ Real experiences with AI agents:
 ### AI mental model changes
 
 - It's not just chatbots - talk about eulogy song (and its impact on me)
-- Dellusions
+- Delusions
 
 ### AI Productivity
 
@@ -222,9 +222,9 @@ Short films based on:
 
 {%include summarize-page.html src="/manager-book"%}
 
-- Performance Mnaagement
+- Performance Management
 - Recruiting
-- Etering a new space
+- Entering a new space
 - What do managers do
 
 ## Appendix
