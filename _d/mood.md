@@ -7,7 +7,7 @@ permalink: /mood
 imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-shrink-couch.webp
 ---
 
-Let me ask an easy question: "How are you feeling?". How long did it take you to answer? Less then a second? Impressive. Now a harder question "What makes you say that?", or even harder "How do you 'compute' how are you feeling?" What is going on? Human's have a super fast heuristic called mood giving them an insant assessment of their sujective reality. Mood is critical to understand as it drives our behaviors, has an outsized influence on our subjective experience, can be in conflict to our pursuit of happiness, and most importantly has several bugs which can be exploited by the resistance and other bad actors.
+Let me ask an easy question: "How are you feeling?". How long did it take you to answer? Less than a second? Impressive. Now a harder question "What makes you say that?", or even harder "How do you 'compute' how are you feeling?" What is going on? Humans have a super fast heuristic called mood giving them an instant assessment of their subjective reality. Mood is critical to understand as it drives our behaviors, has an outsized influence on our subjective experience, can be in conflict to our pursuit of happiness, and most importantly has several bugs which can be exploited by the resistance and other bad actors.
 
 <!-- prettier-ignore-start -->
 
@@ -18,7 +18,7 @@ Let me ask an easy question: "How are you feeling?". How long did it take you to
 - [Why mood matters so much](#why-mood-matters-so-much)
     - [Mood does not equal quality of the present](#mood-does-not-equal-quality-of-the-present)
     - [Our actions are heavily influenced by our mood](#our-actions-are-heavily-influenced-by-our-mood)
-    - [Our subjective reality is heavily infuenced by our mood](#our-subjective-reality-is-heavily-infuenced-by-our-mood)
+    - [Our subjective reality is heavily influenced by our mood](#our-subjective-reality-is-heavily-influenced-by-our-mood)
     - [Good Mood does not equal the pursuit of happiness](#good-mood-does-not-equal-the-pursuit-of-happiness)
     - [The heuristic is buggy](#the-heuristic-is-buggy)
     - [The heuristic is bi-directional](#the-heuristic-is-bi-directional)
@@ -50,7 +50,7 @@ Another example of the practical value of understanding the connection between â
 
 ### Our actions are heavily influenced by our mood
 
-### Our subjective reality is heavily infuenced by our mood
+### Our subjective reality is heavily influenced by our mood
 
 ### Good Mood does not equal the pursuit of happiness
 
@@ -78,15 +78,15 @@ Mood = Heuristic Fast Assess(Quality of Present Reality)
 
 **Is it a one way street?** Interestingly it's bi-directional. The link between mood and the brainâ€™s assessment of the quality of the present is bidirectional. Smiling when in a bad mood makes you in a good mood.
 
-**Is it balanced?** "Reality" can be formed Combination(Self, Other, Process). Even if one of these components is good, you may over attribute to the others, and vice versa. For exampe, if you're in physical in pain, you'll perceive a relationship as worse then it is.
+**Is it balanced?** "Reality" can be formed Combination(Self, Other, Process). Even if one of these components is good, you may over attribute to the others, and vice versa. For example, if you're in physical pain, you'll perceive a relationship as worse than it is.
 
 As a model,
 
-| State   | Description                                                         |
-| ------- | ------------------------------------------------------------------- |
-| Self    | My assessment of self                                               |
-| Other   | My assessment of others (including inanimate objects like possions) |
-| Process | My interactions with said objects                                   |
+| State   | Description                                                            |
+| ------- | ---------------------------------------------------------------------- |
+| Self    | My assessment of self                                                  |
+| Other   | My assessment of others (including inanimate objects like possessions) |
+| Process | My interactions with said objects                                      |
 
 | State   | Past | Present | Future |
 | ------- | ---- | ------- | ------ |

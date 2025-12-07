@@ -31,7 +31,7 @@ From creating a vision that inspires to laying out the strategies to get there, 
   - [Gamification - Duo Playbook](#gamification---duo-playbook)
 - [Business and Funding Models and their impacts](#business-and-funding-models-and-their-impacts)
   - [Venture Capital = Growth Models](#venture-capital--growth-models)
-  - [Lifestyele Business](#lifestyele-business)
+  - [Lifestyle Business](#lifestyele-business)
 - [Business and Funding Models and their impacts](#business-and-funding-models-and-their-impacts-1)
   - [Venture Capital = Growth Models](#venture-capital--growth-models-1)
   - [Lifestyele Business](#lifestyele-business-1)
@@ -96,7 +96,6 @@ Pleasing everyone pleases no one. So this is where we decide what we're going to
 The key of product discovery framing is:
 
 1. Team is in sync on
-
    - The objective,
    - Problem we solve for the customers,
    - which target is the customers
@@ -231,7 +230,7 @@ _From Duolingo: $12B gamification design playbook_
 - Only suitable when you are in a winner take all market like social networking
 - Growth above all else
 
-### Lifestyele Business
+### Lifestyle Business
 
 Primary Objective: To create a sustainable income that supports the owner’s desired lifestyle rather than pursuing aggressive growth or scaling.
 
@@ -244,7 +243,7 @@ A lifestyle business is an ideal choice for entrepreneurs who prioritize autonom
 - Only suitable when you are in a winner take all market like social networking
 - Growth above all else
 
-### Lifestyele Business
+### Lifestyle Business
 
 Primary Objective: To create a sustainable income that supports the owner’s desired lifestyle rather than pursuing aggressive growth or scaling.
 
@@ -328,39 +327,30 @@ Note, inventory is output. Not inherently useful. Outcomes is goal!
 Examples of turning accusatory "why questions" into less threatening data gathering questions:
 
 - **Bad**: "Why didn't you like our product?"
-
   - **Good**: "What were you hoping to achieve with our product, and how did it fall short of those expectations?"
 
 - **Bad**: "Why aren't you using the feature we built?"
-
   - **Good**: "Can you walk me through a recent time when you considered using the feature and what your thought process was?"
 
 - **Bad**: "Why do you think people will buy this?"
-
   - **Good**: "What kinds of problems have people encountered that might lead them to look for a solution like ours?"
 
 - **Bad**: "Why do you prefer our competitor's product?"
-
   - **Good**: "What aspects of our competitor's product made a difference in your decision to use it?"
 
 - **Bad**: "Why haven't you tried solving this problem before?"
-
   - **Good**: "What has prevented you from addressing this issue until now?"
 
 - **Bad**: "Why would you pay for this service?"
-
   - **Good**: "Can you describe a situation where you felt this service would be worth paying for?"
 
 - **Bad**: "Why do you find this task difficult?"
-
   - **Good**: "What challenges do you face when you're trying to accomplish this task?"
 
 - **Bad**: "Why do you like this feature so much?"
-
   - **Good**: "What specific benefits do you get from this feature that you value the most?"
 
 - **Bad**: "Why don't you track your expenses?"
-
   - **Good**: "What has your experience been with tracking expenses, and what has made it difficult or unappealing for you?"
 
 - **Bad**: "Why do you need this solution right now?"
