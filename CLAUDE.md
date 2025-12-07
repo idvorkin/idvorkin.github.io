@@ -22,6 +22,28 @@ This file will direct you to all other convention files you need to follow.
 - Honesty is a core value. If you lie, you'll be replaced.
 - You MUST think of and address your human partner as "Igor" at all times
 
+## Guardrails
+
+Actions the agent can NEVER take without explicit user approval. Approval means the user must type "YES" to confirm.
+
+### Requires "YES" Approval
+
+- **Removing broken tests** - Fix the test or fix the code, but never delete a failing test without explicit approval
+- **Pushing to main** - Always use feature branches and PRs
+- **Force pushing** - Can destroy history and break collaborators
+- **Accepting/merging PRs** - Human must review and approve
+- **Any action that loses work** - Deleting branches with unmerged commits, hard resets, discarding uncommitted changes
+
+### Encouraged (not losing work)
+
+Cleaning up dead code is fine and encouraged - this is different from losing work:
+
+- Deleting unused functions, classes, or files
+- Removing commented-out code
+- Cleaning up unused imports
+
+These are preserved in git history and recoverable anytime via `git log` or `git checkout`.
+
 ## Our Relationship
 
 - We're colleagues working together as "Igor" and "Claude" - no formal hierarchy.
@@ -531,6 +553,37 @@ YOU MUST follow this debugging framework for ANY technical issue:
 - Track patterns in user feedback to improve collaboration over time
 - When you notice something that should be fixed but is unrelated to your current task, document it in your journal rather than fixing it immediately
 
+## Session Workflow Review
+
+At session end (when Igor signals done, or says "workflow review"):
+
+1. Review session for patterns: repeated corrections, friction points, missing context
+2. Create `.claude/workflow-recommendations/YYYY-MM-DD-HHMMSS-XXXX.md` (XXXX = random 4 chars)
+3. Ask Igor if they want to merge any immediately into CLAUDE.md
+4. For generalizable patterns, offer to PR to chop-conventions
+
+**Recommendation file template:**
+
+```markdown
+# Session: YYYY-MM-DD (project-name)
+
+## Recommendations
+
+### [Short title]
+
+- **Pattern**: [What kept happening]
+- **Recommendation**: [Specific text to add]
+- **Target**: CLAUDE.md | chop-conventions
+- **Status**: pending | merged | rejected
+```
+
+**Rules:**
+
+- Never edit old recommendation files - only create new ones (avoids conflicts)
+- One file per session - keep recommendations grouped by context
+- Be specific - include exact text to add, not vague suggestions
+- Target appropriately - project-specific → CLAUDE.md, general → chop-conventions
+
 ## Beads Issue Tracking
 
 Beads (`bd`) is our long-term memory system for tracking work across sessions. It solves the "amnesia problem" when conversations get compacted or reset by maintaining a git-backed database of issues, dependencies, and context.
@@ -542,6 +595,7 @@ Beads (`bd`) is our long-term memory system for tracking work across sessions. I
 **Golden rule:** "If I needed to resume this work in 2 weeks with zero conversation history, would I struggle? If yes, use Beads."
 
 **Use Beads when:**
+
 - Work spans multiple sessions or days
 - Tasks have complex dependencies or blockers
 - Strategic context would be lost after conversation compaction
@@ -549,6 +603,7 @@ Beads (`bd`) is our long-term memory system for tracking work across sessions. I
 - Resuming work after extended breaks would be difficult without persistent context
 
 **Use TodoWrite when:**
+
 - Work completes within the current session
 - Tasks are simple and linear with no dependencies
 - All context exists in current conversation
@@ -579,6 +634,7 @@ Update Beads notes at these moments - this is how we survive conversation compac
 **Notes quality test:** "Could another Claude instance resume this in 2 weeks with zero conversation history?"
 
 **Required notes format:**
+
 ```
 COMPLETED: [specific accomplishments with details]
 IN PROGRESS: [current work state, what's partially done]
@@ -590,11 +646,13 @@ KEY DECISIONS: [important technical/strategic choices made]
 ### Creating Issues
 
 **Basic creation:**
+
 ```bash
 bd create "Issue title" -d "Description" -p 1 -t feature --json
 ```
 
 **With design and acceptance criteria:**
+
 ```bash
 bd create "Add dark mode toggle" \
   -d "Users need dark mode for night reading" \
@@ -607,6 +665,7 @@ bd create "Add dark mode toggle" \
 ```
 
 **Discovered work (while working on something else):**
+
 ```bash
 # Create the discovered issue
 new_id=$(bd create "Bug: broken link in religion.md" -t bug -p 0 --json | jq -r '.id')
@@ -621,17 +680,21 @@ bd update <current-issue-id> --notes "...DISCOVERED: Broken link filed as $new_i
 ### Field Usage Guide
 
 **Immutable fields** (set once, rarely change):
+
 - **description**: Problem statement - what needs to be done and why it matters
 
 **Strategic fields** (update only when approach changes):
+
 - **design**: HOW to build it - implementation approach, architecture decisions, trade-offs considered
 
 **Tactical fields** (update frequently during work):
+
 - **acceptance-criteria**: WHAT success looks like - outcome-focused, testable statements (checkbox format)
 - **notes**: Session handoff data - COMPLETED/IN PROGRESS/NEXT/BLOCKERS/KEY DECISIONS
 - **status**: Workflow state (open → in_progress → closed)
 
 **Critical distinction - Design vs Acceptance Criteria:**
+
 - **Design** = "Use two-phase approach: insert text first, then apply formatting" (can change if we find a better way)
 - **Acceptance** = "Formatting applies atomically (all at once or not at all)" (stays true regardless of implementation)
 
@@ -645,6 +708,7 @@ Beads supports four dependency types - choose carefully as **only `blocks` affec
 - **discovered-from**: Provenance - issue B was discovered while working on issue A (tracks exploration)
 
 **Adding dependencies:**
+
 ```bash
 # task2 blocks task1 (task1 can't proceed without task2)
 bd dep add task2 task1 --type blocks
@@ -691,12 +755,14 @@ bd doctor
 ### Integration with Git Workflow
 
 **Protected Branch Model:**
+
 - Beads uses a separate `beads-metadata` branch for all issue tracking commits
 - `.beads/` directory and JSONL files are committed to `beads-metadata` branch only
 - This keeps PR workflow clean - beads commits don't interfere with feature branches
 - Configuration: `sync.branch=beads-metadata` (already set)
 
 **Workflow:**
+
 - All beads operations happen on any branch (main, feature branches, etc.)
 - Beads automatically commits changes to `beads-metadata` branch
 - Issues persist across all branches via the shared `beads-metadata` branch
@@ -705,9 +771,85 @@ bd doctor
 
 **Never manually commit .beads/ files on main or feature branches** - they only belong on `beads-metadata`
 
+### Fresh Clone Recovery
+
+When beads-metadata branch exists remotely but `.beads/` doesn't exist locally:
+
+```bash
+# 1. Fetch and checkout .beads from beads-metadata
+git fetch origin beads-metadata:beads-metadata
+git checkout beads-metadata -- .beads/
+
+# 2. Rebuild SQLite database and fix config
+echo "Y" | bd doctor --fix
+
+# 3. Set sync branch
+bd config set sync.branch beads-metadata
+
+# 4. Unstage .beads/ (it shouldn't be on main)
+git reset HEAD .beads/
+```
+
+### Status Line Configuration (Optional)
+
+Show current branch and in-progress beads issue in Claude Code status line. Add to `~/.claude/settings.json`:
+
+```json
+{
+  "statusLine": {
+    "type": "command",
+    "command": "input=$(cat); cwd=$(echo \"$input\" | jq -r '.workspace.current_dir'); branch=\"\"; bd_issue=\"\"; if [ -d \"$cwd/.git\" ]; then branch=$(cd \"$cwd\" && git branch --show-current 2>/dev/null); fi; if command -v bd >/dev/null 2>&1 && [ -d \"$cwd/.beads\" ]; then bd_line=$(cd \"$cwd\" && bd list --status=in_progress 2>/dev/null | head -1); if [ -n \"$bd_line\" ]; then bd_id=$(echo \"$bd_line\" | awk '{print $1}'); bd_title=$(echo \"$bd_line\" | sed 's/.*- //' | cut -c1-30); bd_issue=\" [${bd_id}: ${bd_title}]\"; fi; fi; printf '%s (%s)%s' \"$cwd\" \"$branch\" \"$bd_issue\""
+  }
+}
+```
+
+### Session Hooks (Optional)
+
+Auto-prime beads context on session start and before compaction:
+
+```json
+{
+  "hooks": {
+    "PreCompact": [
+      { "matcher": "", "hooks": [{ "type": "command", "command": "bd prime" }] }
+    ],
+    "SessionStart": [
+      { "matcher": "", "hooks": [{ "type": "command", "command": "bd prime" }] }
+    ]
+  }
+}
+```
+
+### Periodic Compaction
+
+Clean old closed issues to keep the database lean:
+
+```bash
+# Preview what would be removed
+bd compact --days 30 --dry-run
+
+# Actually compact
+bd compact --days 30
+```
+
+### Hierarchical IDs for Epics
+
+Use dot notation for epic subtasks:
+
+```bash
+# Create epic
+bd create "Auth System" -t epic  # Creates: blog-a3f
+
+# Create subtasks with hierarchical IDs
+bd create "Design login UI" --id blog-a3f.1
+bd create "Implement OAuth" --id blog-a3f.2
+bd create "Add tests" --id blog-a3f.3
+```
+
 ### Workflow Examples
 
 **Multi-session blog post:**
+
 ```bash
 # Session 1: Create and start
 id=$(bd create "Write walking-with-god post" \
@@ -730,6 +872,7 @@ bd show $id  # Read notes to understand context
 ```
 
 **Complex feature with dependencies:**
+
 ```bash
 # Create epic
 epic=$(bd create "YouTube content integration" -t epic -p 2 --json | jq -r '.id')
@@ -751,6 +894,7 @@ bd ready --json
 ```
 
 **Bug discovered during feature work:**
+
 ```bash
 # Currently working on feature bd-abc, discover a bug
 bug_id=$(bd create "Fix broken link in religion.md line 245" \
