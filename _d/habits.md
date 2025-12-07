@@ -103,7 +103,7 @@ Think about the habits that the person you want to be. What habits will they hav
 
 #### Designing for behavior change
 
-You'll only act with a prompt (Cue), but your likely hood of taking action is dependent on your ability and motivation.
+You'll only act with a prompt (Cue), but your likelihood of taking action is dependent on your ability and motivation.
 
 When making change, motivation is hardest to change, and wanes the most, so tackle prompt first, then ability, and lastly motivation.
 
