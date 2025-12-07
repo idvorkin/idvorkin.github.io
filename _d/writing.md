@@ -60,7 +60,7 @@ Useful writing tells people (including, possibly most importantly you) something
 
 You write to understand a topic, and to help others understand.
 
-**Writing to understand** is capturing and categorizing lots of information. You don't know what you're looking for as your trying to build your own coherent, complete, mental models.
+**Writing to understand** is capturing and categorizing lots of information. You don't know what you're looking for as you're trying to build your own coherent, complete, mental models.
 
 **Writing to be understood** is figuring out what a reader (sometimes you!) needs to understand, and focusing and simplifying your understanding to optimize presentation.
 
@@ -71,7 +71,7 @@ TODO: XREF - Stages of writing
 
 ### Amazon's Writing Culture
 
-My favorite thing about [Amazon](/amazon) is the writing culture. Every 60 minute meeting starts with the presenter handing out a 6 page document, and asking if anyone needs a pen. The next 30 minutes is spent reading, with the silence barely puncuated with the sound of a pen underlining a key figure. At around the 30 minute mark, the presenter will ask, does anyone need more time? Which signals to the stragglers to start skimming as the discussion will start.
+My favorite thing about [Amazon](/amazon) is the writing culture. Every 60 minute meeting starts with the presenter handing out a 6 page document, and asking if anyone needs a pen. The next 30 minutes is spent reading, with the silence barely punctuated with the sound of a pen underlining a key figure. At around the 30 minute mark, the presenter will ask, does anyone need more time? Which signals to the stragglers to start skimming as the discussion will start.
 
 On my second day at [Amazon](/amazon) I had my first meeting. After we went around the room introducing the new guy (me), a stapled 6 page printout was handed out and silence descended on the room. I went through the document in 5 minutes. I didn't understand much of it, after all I was new and didn't know what these guys worked on. I then had to sit in silence fidgetting for the next 25 minutes. At the 30 minute mark, people started discussion. "I understand your reasoning, but did you consider the new market trends?", "How do you imagine things will change if we don't complete this within a month?" I was really surprised. I didn't notice any of these things in the document. How did these folks get this deep understanding of the document? They must have had a deep knowledge of the domain I thought. Nope.
 
@@ -121,11 +121,11 @@ You'll note, this blog is my implementation of evergreen notes.
 
 See [7 habits concepts](/7h-c0) Maps vs Terrain
 
-Using your eyes you can look at the road outside your house. It has a color, a specific width, perhaps some potholes. This the terrain, the physical reality, but you won't see any of this google maps. Your eyes won't let you see the networks of sewers underneath your street. Fort that, there are maps that show the sewers, but those maps lack houses.
+Using your eyes you can look at the road outside your house. It has a color, a specific width, perhaps some potholes. This the terrain, the physical reality, but you won't see any of this google maps. Your eyes won't let you see the networks of sewers underneath your street. For that, there are maps that show the sewers, but those maps lack houses.
 
 Maps are required as the world is infinitely complex, and we need simpler models to understand what is going on. A similar thing happens at the restaurant, your order of the menu which is a simplification of the food. And to understand the world, we need mental models, like the ones presented in most non-fiction books.
 
-While maps are useful, they are not the terrain, in some dimensiosn the map is always wrong, and classifying the edges is hard.
+While maps are useful, they are not the terrain, in some dimensions the map is always wrong, and classifying the edges is hard.
 
 There will be several maps to understand the terrain. Like the street map and the sewer map. These maps will often disagree, or be non-overlapping, and that's completely fine each map has its own purpose.
 
@@ -167,7 +167,7 @@ A [rare book](https://www.amazon.com/Pyramid-Principle-Logic-Writing-Thinking/dp
 
 _TODO: Move to COE post_
 
-Ask why 5 times till you get to a root understanding. Exactly 5 why's doesn't matter, getting no deep then why does. Also forks in the answers usually happen. Lets dig in...
+Ask why 5 times till you get to a root understanding. Exactly 5 why's doesn't matter, getting no deeper than why does. Also forks in the answers usually happen. Lets dig in...
 
 **1 - Why am I bad shape?**
 
@@ -261,7 +261,7 @@ Very useful in giving feedback and [coaching](/coaching)
 The modern business/self-help book formula is:
 
 - Long Introduction
-  - A few stories and personal engagmenet
+  - A few stories and personal engagement
 - Introduce 3 point model, with sub points
   - Includes a picture or acronym
 - 1 section per point model
@@ -350,7 +350,7 @@ When something goes wrong at amazon you write a [correction of errors(COE)](/coe
 
 This was some deeply technical stuff, but needed to be clear so non-domain experts could understand what happened. I ended up spending over 80 hours on this, and even enlisted the help of a marketing person who had no idea how Alexa worked to ensure my writing was crystal clear.
 
-Some people might be appled. 80 hours is 2 strait weeks of work, (which I stretched out over 4 weeks). I think it was time well spent for two reasons.
+Some people might be appalled. 80 hours is 2 straight weeks of work, (which I stretched out over 4 weeks). I think it was time well spent for two reasons.
 
 First, I was muscle building. I'm pretty sure if my writing muscle was fully matured, and I had already understood the ASR and NLU space, I could have written this document in 20 hours, meaning 60 hours was just training, which is always worth it.
 
