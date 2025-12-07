@@ -4,7 +4,7 @@ layout: post
 permalink: /vibe
 ---
 
-Vibe coding is the name for letting the ai write your code. The magic lies in AI's ability to infer intent from vague input—say almost nothing, and it often gives you something surprisingly right. This works because you're granting it wide degrees of freedom; as long as you're flexible on the outcome, the model can generate plausible results from minimal cues. But that magic is fragile: on follow-up turns, or when you have a much tighter definition of correct, the inferred intent often changes, and the model applies a different set of constraints then you wanted or what it did previously, causing a cliff, or misery. Turns out this is the same as junior developers.
+Vibe coding is the name for letting the ai write your code. The magic lies in AI's ability to infer intent from vague input—say almost nothing, and it often gives you something surprisingly right. This works because you're granting it wide degrees of freedom; as long as you're flexible on the outcome, the model can generate plausible results from minimal cues. But that magic is fragile: on follow-up turns, or when you have a much tighter definition of correct, the inferred intent often changes, and the model applies a different set of constraints than you wanted or what it did previously, causing a cliff, or misery. Turns out this is the same as junior developers.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -26,7 +26,7 @@ The key to making vibe coding as productive as possible is having specifications
 
 ## The fix: Specifications
 
-The key to success is specifying your many implicit constraints. And just like in real life, you don't know them all up, so build up the rules gradually. But I bet the learnings apply across projects so wwrite them out explicitly and then you can pply them to many projects.
+The key to success is specifying your many implicit constraints. And just like in real life, you don't know them all up, so build up the rules gradually. But I bet the learnings apply across projects so write them out explicitly and then you can apply them to many projects.
 
 For a comprehensive example of codified development practices and conventions, see [chop-conventions](https://github.com/idvorkin/chop-conventions), which demonstrates how to document and standardize development workflows.
 
