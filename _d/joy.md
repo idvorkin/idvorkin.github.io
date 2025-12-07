@@ -181,10 +181,10 @@ Also look at notes from Avner class - who was all about building rapport with a 
 
 ### Why kids are more receptive to Joy
 
-- Thing are more novel
+- Things are more novel
 - Naturally feel safe
 - Less need for validation of peers
-- Except things to be wholesome and good
+- Expect things to be wholesome and good
 
 ### Other things to file
 
