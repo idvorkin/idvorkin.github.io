@@ -230,19 +230,59 @@ jekyll-serve port="4000" livereload_port="35729":
     echo '{"branch": "'$(git branch --show-current)'"}' > _data/git.json
     # Update PR data for dev banner (non-fatal if no PR found)
     just update-pr-data || true
-    if [ "$(uname)" = "Darwin" ]; then
-        ~/homebrew/opt/ruby/bin/bundle exec jekyll server --incremental --livereload --host 127.0.0.1 --port {{port}} --livereload-port {{livereload_port}}
-    else
-        bundle exec jekyll server --incremental --livereload --host 127.0.0.1 --port {{port}} --livereload-port {{livereload_port}}
+
+    # Container and Tailscale detection (like Swing Analyzer)
+    IN_CONTAINER=false
+    if [ -f "/.dockerenv" ]; then
+        IN_CONTAINER=true
     fi
 
-jekyll-container:
-    #!/usr/bin/env sh
+    TAILSCALE_HOST=""
+    if command -v tailscale >/dev/null 2>&1 && command -v jq >/dev/null 2>&1; then
+        TAILSCALE_HOST=$(tailscale status --json 2>/dev/null | jq -r '.Self.DNSName // empty' 2>/dev/null | sed 's/\.$//')
+    fi
+
+    # Determine bind host based on environment
+    if [ "$IN_CONTAINER" = "true" ] && [ -n "$TAILSCALE_HOST" ]; then
+        BIND_HOST="0.0.0.0"
+        echo "╔════════════════════════════════════════════════════════════════════╗"
+        echo "║                    Jekyll Development Server                       ║"
+        echo "╚════════════════════════════════════════════════════════════════════╝"
+        echo ""
+        echo "🔗 Tailscale detected in container"
+        echo "   Local:     http://localhost:{{port}}"
+        echo "   Tailscale: http://$TAILSCALE_HOST:{{port}}"
+        echo ""
+        echo "──────────────────────────────────────────────────────────────────────"
+    else
+        BIND_HOST="127.0.0.1"
+    fi
+
+    if [ "$(uname)" = "Darwin" ]; then
+        ~/homebrew/opt/ruby/bin/bundle exec jekyll server --incremental --livereload --host $BIND_HOST --port {{port}} --livereload-port {{livereload_port}}
+    else
+        bundle exec jekyll server --incremental --livereload --host $BIND_HOST --port {{port}} --livereload-port {{livereload_port}}
+    fi
+
+jekyll-container port="4000":
+    #!/usr/bin/env bash
+    HOSTNAME=$(hostname)
+    echo "╔════════════════════════════════════════════════════════════════════╗"
+    echo "║                    Jekyll Development Server                       ║"
+    echo "╚════════════════════════════════════════════════════════════════════╝"
+    echo ""
+    echo "📊 Site Access:"
+    echo "   Local:     http://localhost:{{port}}"
+    echo "   Tailscale: http://$HOSTNAME:{{port}}"
+    echo ""
+    echo "──────────────────────────────────────────────────────────────────────"
+    echo "Press Ctrl+C to stop the server"
+    echo ""
     # Update git branch info for dev banner
     echo '{"branch": "'$(git branch --show-current)'"}' > _data/git.json
     # Update PR data for dev banner (non-fatal if no PR found)
     just update-pr-data || true
-    bundle exec jekyll server --incremental --livereload --host 0.0.0.0
+    bundle exec jekyll server --incremental --livereload --host 0.0.0.0 --port {{port}}
 
 jekyll-docker:
     #!/usr/bin/env sh
