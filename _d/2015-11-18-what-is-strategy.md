@@ -153,7 +153,7 @@ Operational Effectiveness over a big activity map is really hard to copy. And le
 - Belief that committing is a sign of weakness
 - Focusing on efficiency is concrete, actionable and measurable.
 - Think Customer Focus == All needs of all customers
-- Trade offs scary to big bosses, don't make trade offs since don't' want to look bad or make the wrong call.
+- Trade offs scary to big bosses, don't make trade offs since don't want to look bad or make the wrong call.
 
 #### The Growth trap
 
@@ -204,7 +204,7 @@ The four is a fantastic book describing the value of the FANG companies.
 - Instagram is like high school cliques
 - Facebook is like thanksgiving with your uncle who believes all the conspiracy theories
 - Amazon is the mall.
-- NextDoor is like that lady who watches everything that happens on the block put her window. But also yelling
+- NextDoor is like that lady who watches everything that happens on the block out her window. But also yelling
 - Snapchat is like frat parties?
 - Zillow is like the real estate agent who can't close the deal.
 
