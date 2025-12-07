@@ -28,7 +28,7 @@ Hi reps, low weight.
 Habit stacking
 Systems drive input KPIs.
 Output KPIs lag input KPIs.
-A easy way to say this is "Compensation lags competence"
+An easy way to say this is "Compensation lags competence"
 
 #### Habits in context
 
@@ -40,7 +40,7 @@ Your identity re-enforces your habits, which in turn creates your outcomes.
 
 ### Habit model
 
-Lets go back to that other idea: How a habit is formed.
+Let's go back to that other idea: How a habit is formed.
 
 | State    | Description                      | Negative          | Positive                            |
 | -------- | -------------------------------- | ----------------- | ----------------------------------- |

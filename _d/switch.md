@@ -112,7 +112,7 @@ Human action can be modeled by an elephant, a rider, and the path. Our emotional
 - How to make undesirable outcomes structurally impossible.
 - Look at Amazon's [COEs](/coe)
 - Machine that can cut off hands by accident. Structural fix, only turn on the machine by making 2 buttons you need to touch with a large Y shape, so hands can't be near it.
-- Can't life parking break off without touching brake.
+- Can't lift parking brake off without touching brake.
 - Focus - Pre-Event; - Seat belts - Air Bags - Mid-Event ; - Post-Event - Get Ambulance There quickly - Training for physiotherapy
   Note, nothing about people's motivations or discipline.
 

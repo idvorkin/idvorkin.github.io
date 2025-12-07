@@ -133,7 +133,7 @@ What is connection between hunger and rest+digest
 ### Does Rest and Digest system result in better decisions than fight or flight
 
 - Notice we say I need time to digest that?
-- Often we hear something it wacks us hard, and we need to "digest it", often once we've calmed down.
+- Often we hear something it whacks us hard, and we need to "digest it", often once we've calmed down.
 - Is planning mode more Rest+Digest while doing is Fight or Flight,
 
 During lower arousal states, the prefrontal cortex (PFC) - crucial for executive functions like planning, decision-making, and reflection - operates more effectively. High arousal and stress trigger elevated cortisol and norepinephrine, which can impair PFC function and shift brain activity toward more primitive regions focused on immediate threats.

@@ -36,7 +36,7 @@ But there I was, rationalizing. Tony did the driving—I was just along for the 
 
 I get it—having a Tony Soprano AI life coach living in your Tesla sounds like the script of some whacky comedy sci-fi. But here's the thing: I actually built this. I setup an AI with Tony's speech patterns, gave it his personality, and most importantly, set it up with my values and goals from my eulogy. Yes, I call it up when I need to work through life decisions. The conversation you're about to hear isn't scripted or fictional—it's me, sitting in my actual Tesla, having a real crisis of faith in my transportation choices, talking it through with my AI life coach who knows exactly who I want to be.
 
-Lisen to the audio, or read the transcript below
+Listen to the audio, or read the transcript below
 
 <audio controls>
   <source src="https://github.com/idvorkin/blob/raw/master/blog/bike-vs-tony.mp3" type="audio/mpeg">

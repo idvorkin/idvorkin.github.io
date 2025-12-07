@@ -89,7 +89,7 @@ Service is about improving others lives, and in the process improving the world.
   - Put your personal brand behind what you're doing (put your phone number on your product)
 - Make it purposeful
   - People aren't just selfish, they feel great when they help others.
-  - Washing helps stops patients from getting sick, much more effective then washing hands kills germs.
+  - Washing helps stop patients from getting sick, much more effective than washing hands kills germs.
 - Upserve don't upsell.
   - How can I provide even more value in this experience?
   - Always imagine the other guy is doing you a favor.

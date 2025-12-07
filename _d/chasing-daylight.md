@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chasing Daylight: Imagine you're gonna die in less then 100 days"
+title: "Chasing Daylight: Imagine you're gonna die in less than 100 days"
 tags:
   - death
   - how-igor-ticks

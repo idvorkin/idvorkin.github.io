@@ -132,22 +132,18 @@ Depending on what insights you want to provide, you need to use different questi
 This request often comes in as the wrong question, need to deep dive into where the problem is coming from.
 
 1. Find the right thing:
-
    - The top optimization is spending zero time on the wrong thing. How often do you feel your spending time on the wrong thing?
    - Taking time to explore is important, how are you splitting time between, learning, exploring and doing?
    - What does success look like, how is your work supporting that success?
 
 2. Test for motivation:
-
    - On a scale of 1/10 how energized are you doing this work?
    - When are times you're most energized and most drained? Any patterns
 
 3. Realistic Expectations + Estimations
-
    - Anxiety is the difference between expectations and reality. How are you validating your estimates/expectations are reasonable?
 
 4. Having the required resources
-
    - How often are you getting blocked?
    - What things would help you get done this faster?
    - Are there things that if you had, would speed you up?
@@ -194,7 +190,7 @@ _More details in [Search inside yourself - Leadership and social skills](/search
 
 - Out of curiosity
 - Just so I know
-- To help my understand better
+- To help me understand better
 - To make sure I'm clear
 - That is a hard problem
 - Not alone, lots of people struggle with this.

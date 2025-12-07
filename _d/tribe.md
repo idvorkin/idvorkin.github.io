@@ -60,7 +60,7 @@ Part of finding your tribe is finding [role models who inspire you](/joy#role-mo
 
 https://www.perplexity.ai/page/can-i-get-substack-to-rss-ipB5NhfrSVSzuoywtaExEA
 
-Regular substrack feed:
+Regular substack feed:
 
 - https://example.substack.com/feed
 

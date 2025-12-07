@@ -38,7 +38,7 @@ Had with a GPT simulation of my best friends, a senior staff engineer
 - **Igor**:Oh? What do you think it should be?
 - **aGPT**:I think you want to inspire people to think about what an EM does and how to do it. Because there's a missing piece about why do we
   care?
-- **Igor**:Hymn, can you go into that more?
+- **Igor**:Hmm, can you go into that more?
 - **aGPT**:When you say why they do what they do, do you mean why do they do the things they do within management? Or why do they do
 - management?
 - **Igor**:The former

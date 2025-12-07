@@ -8,7 +8,7 @@ redirect_from:
   - /classact
 ---
 
-Be a class act. Fantatic advice.
+Be a class act. Fantastic advice.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->

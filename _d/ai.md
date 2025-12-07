@@ -13,7 +13,7 @@ The transition from A landing page for all my ai pages - a nice jumping off poin
 - [Posts](#posts)
 - [Ideas/Thoughts/Tidbits](#ideasthoughtstidbits)
   - [AI in larger context/Democratization of Knowledge Expertise.](#ai-in-larger-contextdemocratization-of-knowledge-expertise)
-  - [Examples of Alchamey](#examples-of-alchamey)
+  - [Examples of Alchemy](#examples-of-alchemy)
   - [How do LLMs think?](#how-do-llms-think)
   - [LLM training efficiency](#llm-training-efficiency)
   - [It's not good enough today](#its-not-good-enough-today)
@@ -153,12 +153,10 @@ Revolution 7: Computing → Cheap Information Processing & Cheap Logic\*\*
 If **Computing made logic cheap** and **AI made expertise cheap**, what's next?
 
 1. **AI + Robotics → Cheap Skilled Physical Labor**
-
    - AI-powered robots replacing **electricians, plumbers, chefs, surgeons**.
    - AI-driven factories with **zero human workers**.
 
 2. **AI + Biology → Cheap Health & Longevity**
-
    - AI designing **new drugs & personalized treatments**.
    - AI managing healthcare, **eliminating most routine doctor visits**.
 
@@ -173,11 +171,11 @@ If **Computing made logic cheap** and **AI made expertise cheap**, what's next?
 
 Would you like to focus on a particular area of Revolution 8 or explore Revolution 9 in more depth? 🚀
 
-### Examples of Alchamey
+### Examples of Alchemy
 
 - Doing worst job in dec, (and July for European models) - [crappy source](https://www.techradar.com/computing/artificial-intelligence/ai-might-take-a-winter-break-as-gpt-4-turbo-apparently-learns-from-us-to-wind-down-for-the-holidays)
 - Doing a better job if you say you are stressed
-- Telling the LLM not to hallucinate (fasicnating, this only works now, not in early models as early training data didn't talk about hallucinations)
+- Telling the LLM not to hallucinate (fascinating, this only works now, not in early models as early training data didn't talk about hallucinations)
 
 ### How do LLMs think?
 

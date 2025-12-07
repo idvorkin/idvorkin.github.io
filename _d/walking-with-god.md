@@ -149,7 +149,7 @@ _This section will grow as I continue the practice. Each entry captures both the
 
 To me this is really about: **Self-compassion/self-acceptance.**
 
-My favorite line in the pasage: **"If God accepts me as I am, I'd better do the same."**
+My favorite line in the passage: **"If God accepts me as I am, I'd better do the same."**
 
 **Important distinction:** Acceptance isn't surrender. It's not "this is who I am and I'll never change." True acceptance means "I accept where I am right now AND I have hope for improvement." (Without the hope part, acceptance becomes resignation - that's bad)
 
@@ -647,13 +647,13 @@ _Here's how I translate this:_
 
 We often excuse our bad habits as "little weaknesses" or "character flaws." We treat them like minor accidents. But this passage offers a brutal reframe: they are **idols**. They are things we actively choose to value more than our highest ideals.
 
-Idolatry isn't just worshipping statues. It's the act of prioritizing *anything* above your highest values (your "God" or your "Best Self").
+Idolatry isn't just worshiping statues. It's the act of prioritizing _anything_ above your highest values (your "God" or your "Best Self").
 
-- When I give in to **[anger](/anger)**, I am worshipping my need to be right or my impulse to punish. I am exalting my immediate emotional release above my value of patience or connection.
+- When I give in to **[anger](/anger)**, I am worshiping my need to be right or my impulse to punish. I am exalting my immediate emotional release above my value of patience or connection.
 
 {%include summarize-page.html src="/anger" %}
 
-- When I give in to **[addiction](/addiction)** (even soft addictions like doomscrolling), I am worshipping comfort or distraction. I am exalting the dopamine hit above my value of presence and focus.
+- When I give in to **[addiction](/addiction)** (even soft addictions like doomscrolling), I am worshiping comfort or distraction. I am exalting the dopamine hit above my value of presence and focus.
 
 {%include summarize-page.html src="/addiction" %}
 
@@ -677,13 +677,14 @@ We often treat our bad habits and addictions as mysterious afflictions. Why do I
 **Because we don't trust the alternative.**
 
 We cling to coping mechanisms because they solve a problem for us. They meet a need.
+
 - Stress? Alcohol works fast.
 - Fear of chaos? Micromanaging works fast.
 - Don't want to think about what's going on? Social media is a great distraction.
 
 We suspect that if we give up these tools - if we do things the healthy way - our needs won't be met. We'll be left vulnerable, stressed, or unsafe.
 
-The lie isn't that the bad habit doesn't work. The lie is that it's the *only* thing that works, or that the cost is worth it.
+The lie isn't that the bad habit doesn't work. The lie is that it's the _only_ thing that works, or that the cost is worth it.
 
 **Important distinction:** Understanding the function of a behavior isn't excusing it. It's the prerequisite for changing it. You can't just "stop" a behavior that's solving a problem for you. You have to find a better way to solve that problem.
 

@@ -6,7 +6,7 @@ mermaid: true
 permalink: /learn-code
 ---
 
-Coding is way easier then people think. Here's some pointers.
+Coding is way easier than people think. Here's some pointers.
 
 {% include blob_image_float_right.html src="blog/raccoon-learn-to-code.webp" %}
 
