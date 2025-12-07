@@ -93,7 +93,7 @@ The two attack types are Second Thoughts and Stop and Roll.
 
 For instance, if an LLM generates sensitive or harmful content and displays it for a fraction of a second before retracting it, a malicious user could easily record their screen or intercept the output using automated tools.
 
-**Stop and Roll** attacks bypassthe retraction mechanism by exploiting timing vulnerabilities. By interrupting the LLM system mid-query—before the censorship layer can act—attackers can prevent unsafe outputs from being redacted. This is often achieved by:
+**Stop and Roll** attacks bypass the retraction mechanism by exploiting timing vulnerabilities. By interrupting the LLM system mid-query—before the censorship layer can act—attackers can prevent unsafe outputs from being redacted. This is often achieved by:
 
 **Why Post-Processing Layers Fail**
 
@@ -202,7 +202,7 @@ AI systems can pose psychological risks including addiction, dependency, and rea
 
 ### Who decides what is right
 
-Altman has a fanstatic discussion on this with Tucker Carlson around what ethics should be applied
+Altman has a fantastic discussion on this with Tucker Carlson around what ethics should be applied
 
 - 6:37 What Is Morally Right and Wrong According to ChatGPT?
   {% include youtube.html src="5KmpT-BoVf4?=411" %}
