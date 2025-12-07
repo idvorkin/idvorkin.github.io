@@ -386,13 +386,9 @@
                 "/depression",
                 "/end-in-mind",
                 "/eulogy",
-                "/first-things-first",
-                "/first-understand",
                 "/four-healths",
                 "/gap-year-igor",
                 "/psychic-weight",
-                "/sharpen-the-saw",
-                "/synergize",
                 "/timeoff-2020-12",
                 "/win-win"
             ],
@@ -1818,7 +1814,6 @@
                 "/physical-health",
                 "/productive",
                 "/psychic-weight",
-                "/sharpen-the-saw",
                 "/slow",
                 "/switch",
                 "/walking-with-god"
@@ -2337,7 +2332,6 @@
                 "/books-that-defined-me",
                 "/elder",
                 "/end-in-mind",
-                "/first-things-first",
                 "/frog",
                 "/gtd",
                 "/overload",
@@ -2460,12 +2454,12 @@
                 "/delegate",
                 "/frog"
             ],
-            "last_modified": "2025-09-30T06:59:49-07:00",
+            "last_modified": "2025-12-06T16:12:54.901449",
             "markdown_path": "_d/7h-c3.md",
             "outgoing_links": [
-                "/7-habits",
+                "/7h",
                 "/delegate",
-                "/essentialism",
+                "/essential",
                 "/frog",
                 "/gtd",
                 "/switch",
@@ -2490,10 +2484,10 @@
                 "/walking-with-god",
                 "/work-satisfaction"
             ],
-            "last_modified": "2021-10-30T10:02:27-07:00",
+            "last_modified": "2025-12-06T16:12:59.433019",
             "markdown_path": "_d/7h-c5.md",
             "outgoing_links": [
-                "/7-habits",
+                "/7h",
                 "/coaching",
                 "/curious",
                 "/ig66/587",
@@ -3761,7 +3755,6 @@
                 "/happy",
                 "/productive",
                 "/sell",
-                "/synergize",
                 "/work-satisfaction"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -4610,18 +4603,18 @@
         },
         "/sharpen-the-saw": {
             "description": "A young man saw a woodcutter cutting down a tree and asked “What are you doing?” “Are you blind?” the woodcutter replied. “I’m cutting down this tree.” The young man continued. “You look exhausted! Take a break. Sharpen your saw.” The woodcutter explained he’d been sawing for hours and did not have time to take a break. The young man pushed back… “If you sharpen the saw, you would cut down the tree much faster.” The woodcutter said “I don’t have time to sharpen the saw. Don’t you see I’m too busy. These are my insights based on the 7 habits Chapter 7.\n\n",
-            "doc_size": 14000,
+            "doc_size": 15000,
             "file_path": "_site/sharpen-the-saw.html",
             "incoming_links": [
                 "/7-habits",
                 "/emotional-health",
                 "/physical-health"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2025-12-06T16:12:52.811582",
             "markdown_path": "_d/7h-c7.md",
             "outgoing_links": [
-                "/7-habits",
-                "/d/habits",
+                "/7h",
+                "/atomic-habits",
                 "/diet",
                 "/emotional-health",
                 "/physical-health",
@@ -5005,11 +4998,11 @@
             "incoming_links": [
                 "/7-habits"
             ],
-            "last_modified": "2025-03-07T11:21:07-08:00",
+            "last_modified": "2025-12-06T16:12:55.006680",
             "markdown_path": "_d/7h-c6.md",
             "outgoing_links": [
-                "/7-habits",
-                "/negotiate",
+                "/7h",
+                "/gty",
                 "/win-win"
             ],
             "redirect_url": "",
