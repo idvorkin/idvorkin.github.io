@@ -256,7 +256,7 @@ _surprise: these are my daily affirmations_
 ### From Clarisaa Magic Lecture
 
 - Take the peas out of your shoes. If something causes a problem, even a tiny one fix it as it can drag on for ever. Plus fixing it makes you happy
-  - Her example w ssetting up her suit case so that she everything had a place. That way she could see if she had forgotten anything, and it was perfect
+  - Her example with setting up her suit case so that everything had a place. That way she could see if she had forgotten anything, and it was perfect
 - Keep the core there, but leave in space to pack in new stuff
   - Core suit case, but another suit case of new stuff, that way always have a good show, but don't get bored.
   - When stuff get good graduate it into the core

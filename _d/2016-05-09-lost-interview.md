@@ -13,7 +13,7 @@ Unedited notes on a Q+A with Steve Jobs.
 
 {% include youtube.html src="FF-tKLISfPE" %}
 
-### How did you learn about hewett packard?
+### How did you learn about Hewlett-Packard?
 
 Just called him up (everything was in a phone book) and asked him for spare parts
 
@@ -45,7 +45,7 @@ Old guy takes him out back to make a rock clean. A bunch of common rocks go in ,
 
 #### Harsh feedback
 
-What does it mean when you say 'your work is shit'. Usually it means your work is shit. Sometimes it means 'I think you're work is shit, but I'm wrong', but most of the time it means your work isn't good enough.
+What does it mean when you say 'your work is shit'. Usually it means your work is shit. Sometimes it means 'I think your work is shit, but I'm wrong', but most of the time it means your work isn't good enough.
 
 Good people don't need their egos babied. The most valuable thing you can do is tell them when they aren't living up to the team's need, but do it in a way that doesn't question their abilities. Very hard to do, and I do it in a very direct way.
 
