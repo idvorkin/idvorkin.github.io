@@ -23,9 +23,9 @@ Thus, I'm working hard to reduce symptoms of the disease -- in fact, I'm incredi
 
 Future posts will document my journey, and the [activities](/emotional-health) that support this.
 
-### It's not always conscious, sometimes it's just phychic weight
+### It's not always conscious, sometimes it's just psychic weight
 
-Sometimes when you find life less fun and you can't tell why it might be body at home, mind at work, subconcious edition
+Sometimes when you find life less fun and you can't tell why it might be body at home, mind at work, subconscious edition
 
 {%include summarize-page.html src="/dsat" %}
 {%include summarize-page.html src="/psychic-weight" %}
@@ -72,6 +72,6 @@ However, I have met a lot of people who cross over into workaholism, and I am gu
 
 #### Workaholic in the context of Addiction
 
-Sure makes sense when you read about addicition
+Sure makes sense when you read about addiction
 
 {%include summarize-page.html src="/addiction" %}

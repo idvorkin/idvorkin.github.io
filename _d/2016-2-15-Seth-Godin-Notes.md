@@ -50,7 +50,7 @@ Sources:
 - Tribe(Fans) vs Friends:
   - Friend - Wants to know you, and see your art to make YOU happy. If you change your art, they're there for you.
   - Tribe - Wants your art, doesn't care about you, unless grows appreciate of your art.
-  - Change yourt art: lose your tribe, keep your friends.
+  - Change your art: lose your tribe, keep your friends.
 - Once you've found your tribe, give them art they'll tell their friends/family about.
 - Wants personal attention - wants to feel special.
 
@@ -72,7 +72,7 @@ Sources:
 
 #### Anchoring/Postioning:
 
-- Careful how you ask for feedback/position yoruself.
+- Careful how you ask for feedback/position yourself.
 - Give me feedback on my ppt -> feedback on ppt.
 - I want to get this point across => Don't make a ppt, do a memo!
 - DON'T BREAK INTO JAIL.
@@ -100,7 +100,7 @@ Sources:
   - DIP prevents others from doing your thing.
   - Cul de'sac is a dead end.
   - Single people/small group is often a cul desac.
-  - Need to find 1000 people of the whole word - DIP
+  - Need to find 1000 people of the whole world - DIP
   - Need to change mind of 5 specific people, probably cul de sac.
 - Quitting:
   - You only get 1000 units of energy in your life.

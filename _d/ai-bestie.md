@@ -66,7 +66,7 @@ Prompts didn't work that well. Still sounded like GPT
 
 Fine tuning makes it sound like my bestie, but a few observations:
 
-1. It's very bad at telling me about itself/it's day
+1. It's very bad at telling me about itself/its day
 2. It's pretty good at giving me advice.
 
 I think part of the problem with 1, as fine tuning doesn't have a sense of "context", or a sense of "utility". I think I need to inject those. So example context:

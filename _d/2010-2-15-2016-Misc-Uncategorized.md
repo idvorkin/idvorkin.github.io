@@ -7,8 +7,7 @@ permalink: random-idea
 redirect_from:
   - uncategorized
   - heap
-    - potporri
-    - potpori
+  - potpourri
 tags:
   - how igor ticks
 author: "Igor Dvorkin"
@@ -249,7 +248,7 @@ _surprise: these are my daily affirmations_
 - Deliberate, Disciplined, Daily
 - Essentialism (I choose to do the most important thing)
 - Appreciate
-- First Understand, then be understated
+- First Understand, then be understood
 - Provide Context
 
 ## Random Stuff

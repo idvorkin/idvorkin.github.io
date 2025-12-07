@@ -29,7 +29,7 @@ Buried in the google maps app is a feature called Timelines. Timelines tracks yo
 
 ### Selfie Sticks
 
-Many people complain about selfie stick users, calling them vain, but in my experience they are great! You get the feature everyone knows, taking a photo of yourself (and your companions), but you also get the ability to take photos from non-standard angles even when while using the rear camera.
+Many people complain about selfie stick users, calling them vain, but in my experience they are great! You get the feature everyone knows, taking a photo of yourself (and your companions), but you also get the ability to take photos from non-standard angles even while using the rear camera.
 
 I've recently begun my selfie-stick journey so I expect more updates here. So far I've realized there are short sticks (7' retracted, 32' extended), and long sticks (about to try 'em). The short stick is good because retracted it fits in your pocket, but when extended I often wish it was a foot longer. For long sticks, reviewers complain the collapsed length is too long, and I've got one in the mail so I'll tell you about it soon.
 

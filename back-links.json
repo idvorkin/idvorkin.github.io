@@ -1717,7 +1717,7 @@
             "doc_size": 24000,
             "file_path": "_site/d/2016-8-1-Twelve-Tech-Forces.html",
             "incoming_links": [],
-            "last_modified": "2025-08-24T09:03:19-07:00",
+            "last_modified": "2025-12-07T02:26:10.824349",
             "markdown_path": "_d/2016-8-1-Twelve-Tech-Forces.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -1813,7 +1813,6 @@
                 "/idle",
                 "/life-as-business",
                 "/manager-book",
-                "/mind-at-work",
                 "/operating-manual",
                 "/physical-health",
                 "/productive",
@@ -1965,7 +1964,6 @@
                 "/job-hunt-stress",
                 "/manager-book",
                 "/pride",
-                "/random-idea",
                 "/work-satisfaction"
             ],
             "last_modified": "2025-06-20T08:56:14-07:00",
@@ -2092,7 +2090,7 @@
                 "/parkinson",
                 "/work-satisfaction"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2025-12-07T02:26:02.982693",
             "markdown_path": "_d/2017-11-12-thedip.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -3496,7 +3494,7 @@
         },
         "/mind-at-work": {
             "description": "I have a problem, an addiction, an addiction so detrimental to quality of life, it should be described as a disease. This disease is not being present. There are many symptoms of the disease, but today I’m going to talk about my most frequent symptoms, my body at home, but my mind at work.\n\n",
-            "doc_size": 19000,
+            "doc_size": 20000,
             "file_path": "_site/mind-at-work.html",
             "incoming_links": [
                 "/addiction",
@@ -3504,15 +3502,15 @@
                 "/timeoff-2022-11",
                 "/work-satisfaction"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2025-12-07T02:26:10.824349",
             "markdown_path": "_d/2016-2-10-body-at-home-mind-at-work.md",
             "outgoing_links": [
                 "/addiction",
-                "/d/habits",
+                "/dsat",
                 "/emotional-health",
+                "/habits",
                 "/psychic-weight",
-                "/timeoff",
-                "/work-satisfaction"
+                "/time-off"
             ],
             "redirect_url": "",
             "title": "Body at home, mind at work",
@@ -4325,10 +4323,10 @@
             "doc_size": 28000,
             "file_path": "_site/random-idea.html",
             "incoming_links": [],
-            "last_modified": "2025-08-22T10:48:49-07:00",
+            "last_modified": "2025-12-07T02:26:10.824349",
             "markdown_path": "_d/2010-2-15-2016-Misc-Uncategorized.md",
             "outgoing_links": [
-                "/decisive",
+                "/decide",
                 "/moments",
                 "/moments-at-work",
                 "/switch"
@@ -4734,7 +4732,7 @@
                 "/timeoff-2022-02",
                 "/words-we-dont-have"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2025-12-07T02:26:10.824349",
             "markdown_path": "_d/2016-3-12-sleight-of-mouth.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -5489,7 +5487,6 @@
                 "/gap-year",
                 "/gap-year-igor",
                 "/life-as-business",
-                "/mind-at-work",
                 "/parkinson",
                 "/self-ego",
                 "/timeoff-2020-03",
@@ -6188,7 +6185,6 @@
             "file_path": "_site/work-satisfaction.html",
             "incoming_links": [
                 "/manager-book",
-                "/mind-at-work",
                 "/retire"
             ],
             "last_modified": "2025-09-30T07:24:35-07:00",
@@ -6310,6 +6306,13 @@
             "redirect_url": "",
             "title": "Igor's plan for 2025",
             "url": "/y25"
+        }
+    }
+}     "title": "Igor's plan for 2025",
+            "url": "/y25"
+        }
+    }
+}25"
         }
     }
 }
