@@ -158,7 +158,7 @@ Joy is an involuntary experience that acts on you. You can be more receptive to 
   - Think about teenagers wanting to look cool
   - This is why folks only sing in the shower
 - Don't want to be ripped off
-  - Is this a conn?
+  - Is this a con?
   - What's your angle for doing this?
 - You can increase someones comfort by getting validation from others
   - Someone else doing it before you
@@ -311,8 +311,8 @@ Who knows, maybe one day I'll actually get around to doing these.
 
 ### Become an executive producer for shows
 
-### Own a vaudiville theater
+### Own a vaudeville theater
 
-Humoursly, I always said this, and one day when I was at the olymics of magic (FISM 2022), I went to talk titled: So you want to own a magic, theater - you're probably wrong. Snapped me out it.
+Humorously, I always said this, and one day when I was at the Olympics of magic (FISM 2022), I went to talk titled: So you want to own a magic, theater - you're probably wrong. Snapped me out it.
 
 Luckily Tori works in the arts, and I can say I'm a patron of the arts instead

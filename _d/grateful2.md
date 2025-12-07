@@ -31,7 +31,7 @@ However, these start to get repetitive and stale quickly.
 
 ### Longer prompts
 
-From: https://www.academicwritingsuccess.com/15-fabulous-gratitude-writing-prompts/n
+From: https://www.academicwritingsuccess.com/15-fabulous-gratitude-writing-prompts/
 
 - Describe your favorite moment of the day.
 - Describe your favorite person and list all of that person’s good qualities.

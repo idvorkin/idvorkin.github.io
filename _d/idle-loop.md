@@ -55,7 +55,7 @@ Some more thoughts to develop here.
 - Stopping energy. Like if you fill gap with something hard to stop you won't go back
 - Reflecting is good, needs boredom.
 - At level 0, is reach out your phone and watch TikTok
-- At Level 100, mind you descend into mindfulness, but mayble level 10 is saying it's OK to be in the gap, and be mindful.
+- At Level 100, mind you descend into mindfulness, but maybe level 10 is saying it's OK to be in the gap, and be mindful.
 
 ### Regenerative loops
 
