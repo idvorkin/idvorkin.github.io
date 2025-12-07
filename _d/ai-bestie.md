@@ -23,7 +23,7 @@ My best friend and I communicate over chat lots (33,60,101 messages/day P50, P75
     - [Observation](#observation)
 - [Coaching/Mentoring](#coachingmentoring)
     - [Habit Tracking](#habit-tracking)
-- [Embodiment](#embodiement)
+- [Embodiment](#embodiment)
     - [Callable Agent Platforms](#callable-agent-platforms)
     - [Discord Bot](#discord-bot)
     - [Voice of our friends](#voice-of-our-friends)
@@ -41,7 +41,7 @@ Playing around with [a bestie simulator](https://python.langchain.com/docs/integ
 
 ### Idea: Inject Recent chat history
 
-I've been thinking about how to inject "state", perhaps the easiest thing is just injet our last few days of discussion. Need to do the math on how much room I have in the prompt ...
+I've been thinking about how to inject "state", perhaps the easiest thing is just inject our last few days of discussion. Need to do the math on how much room I have in the prompt ...
 
 Can also use semantic summarization if that's too big
 
@@ -134,7 +134,7 @@ I have daily and weekly habits. I use an app called streaks for that. But I coul
 
 ### Callable Agent Platforms
 
-[VAPI](https://vapi.canny.io/feature-requests) - ties the Transcription/TTS/S2T agent and fuc calls together to let you call your agent. That's certainly where I'll end up.
+[VAPI](https://vapi.canny.io/feature-requests) - ties the Transcription/TTS/S2T agent and func calls together to let you call your agent. That's certainly where I'll end up.
 
 ### Discord Bot
 
@@ -157,8 +157,8 @@ Haven't looked at this yet, but for sure it's coming. You can probably make life
 
 ### Tooling learnings
 
-- Pre-commit - Nicer version of husky (which was always kind of flacky)
-- Ruff - Nicer version of black. Written in black, so much faster, and also supports fixing some simple stuff, has nvim support
+- Pre-commit - Nicer version of husky (which was always kind of flaky)
+- Ruff - Nicer version of black. Written in Rust, so much faster, and also supports fixing some simple stuff, has nvim support
 - Path from pathlib. Lets you use Path.home() vs os.expanduser(), and a type safe path parameter, avoiding sending in strings by accident (God Bless Typing)
 
 ### Upstream fixes

@@ -47,7 +47,7 @@ History:
 
   - I had 'Always Improving', but it just didn't sound like me.
   - 'Do It Anyways' better captures my grit and recommendation.
-  - Cracked this owrking on my TikTok for the video
+  - Cracked this working on my TikTok for the video
 
 - 2025-02-01
   - I used to call this pay myself first, but it wasn't what it was about.

@@ -65,7 +65,7 @@ VSF is the worst because it has such low starting energy, and such high [stoppin
 
 ### Lifting Videos
 
-I do a fair bit of kettlebells, I got **lots** of people doing lifts, first it was educational and inspirational, and then I started getting pretty women, pretty easy to understand - inspirational. But theN I started getting senior citizens, doing their 80 year old PRs. Very odd.
+I do a fair bit of kettlebells, I got **lots** of people doing lifts, first it was educational and inspirational, and then I started getting pretty women, pretty easy to understand - inspirational. But then I started getting senior citizens, doing their 80 year old PRs. Very odd.
 
 ### Lifting Videos - Antonly
 
@@ -75,7 +75,7 @@ This guy that is small and super ripped who dresses up like a custodian then sur
 
 #### Like Advice from retired people
 
-PEople who are retired telling their stories - I like some of these
+People who are retired telling their stories - I like some of these
 
 #### Financial Advice
 
@@ -103,11 +103,11 @@ I was taking a break from working, and [Covid 19](/covid) happened, before I kne
 
 ### Alcohol
 
-I didn't really have a hard time stopping this. It's empty calroiess, but even worse it messes up my will power and my sleep. Pretty bad.
+I didn't really have a hard time stopping this. It's empty calories, but even worse it messes up my will power and my sleep. Pretty bad.
 
 #### "Zero proof" drinks
 
-I accidentally discovered these, which really came out of nowhere in the min 2020s? At first I was thrilled, felt so good, but then I pondered, sis this just a pavolian response where I imagine I'm gonna get a hit of mild euphoria and thus I'm really enjoying it? Turns out, yes, I was waiting for that. After a few days of this I found out that since I don't get my euphoric hit, I am no longer inrestered in this.
+I accidentally discovered these, which really came out of nowhere in the min 2020s? At first I was thrilled, felt so good, but then I pondered, is this just a Pavlovian response where I imagine I'm gonna get a hit of mild euphoria and thus I'm really enjoying it? Turns out, yes, I was waiting for that. After a few days of this I found out that since I don't get my euphoric hit, I am no longer interested in this.
 
 ### Thinking about work while at home
 

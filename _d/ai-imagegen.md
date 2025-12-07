@@ -12,7 +12,7 @@ Everyone talks about GPT, but you can also generate images. Lately, I've been pl
 <!-- vim-markdown-toc-start -->
 
 - [Fun Demo](#fun-demo)
-- [Talking Head Videos From your Heard](#talking-head-videos-from-your-heard)
+- [Talking Head Videos From your Head](#talking-head-videos-from-your-head)
 - [Igor Image Generation](#igor-image-generation)
 - [Flux](#flux)
 - [History Lessons](#history-lessons)
@@ -40,7 +40,7 @@ _"A portrait of a woman with an enigmatic smile, seated in front of a distant la
 - Now, let's add [me to that scene](https://replicate.com/idvorkin/idvorkin-flux-lora-1?prediction=a2g5p4az7nrm60chn7ts0pdd0c)
   _"A portrait of MNALSA with an enigmatic smile, seated in front of a distant landscape. She has dark, flowing hair and is wearing a modest dark dress with a translucent veil. She is sitting beside her boyfriend, a middle-aged bald man, idvorkin. The background features a winding path and a bridge, with a serene and dreamy landscape under a soft, diffused light. The overall mood is mysterious and timeless."_
 
-## Talking Head Videos From your Heard
+## Talking Head Videos From your Head
 
 Woah, this works surprisingly well:
 

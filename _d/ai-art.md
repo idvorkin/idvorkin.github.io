@@ -41,7 +41,7 @@ From Stratechary:
 
 _For most folks the sandwich workflow is very different from how people are used to working. There’s a natural worry that prompting and editing are inherently less creative and fun than generating ideas yourself, and that this will make jobs more rote and mechanical. Perhaps some of this is unavoidable, as when artisanal manufacturing gave way to mass production. The increased wealth that AI delivers to society should allow us to afford more leisure time for our creative hobbies…_
 
-This matches a a delegation model well from a senior to a junior, in fact this is exactly the model. The senior shares an intent and gaurdrails. The junior comes back with various options and a recommentation, the junior tweaks it, and then you've got an approach
+This matches a a delegation model well from a senior to a junior, in fact this is exactly the model. The senior shares an intent and guardrails. The junior comes back with various options and a recommendation, the junior tweaks it, and then you've got an approach
 
 ### The value of art - inspiration
 
@@ -71,7 +71,7 @@ We can have text to speech (TTS) with any voice, perhaps a famous voice saying s
 
 OK, this one is much better - it can clone my voice
 
-TODO: Add my cloned vioce
+TODO: Add my cloned voice
 
 <https://beta.elevenlabs.io/>
 

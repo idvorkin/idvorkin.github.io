@@ -31,7 +31,7 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
   - [Review changes between dates](#review-changes-between-dates)
   - [Dream: Re-write commit history to break things into orthogonal changes](#dream-re-write-commit-history-to-break-things-into-orthogonal-changes)
 - [Articles](#articles)
-  - [Perfect Articultion of the future of coding and where we're at today](#perfect-articultion-of-the-future-of-coding-and-where-were-at-today)
+  - [Perfect Articulation of the future of coding and where we're at today](#perfect-articulation-of-the-future-of-coding-and-where-were-at-today)
   - [How might AI change programming?](#how-might-ai-change-programming)
   - [Will CHOP Kill the Joy of Coding?](#will-chop-kill-the-joy-of-coding)
     - [Reasons to Program - Mastery vs Getting Shit Done](#reasons-to-program---mastery-vs-getting-shit-done)
@@ -271,7 +271,7 @@ Cursor has native support for indexing docs, some projects even have llm.txt to 
 
 ## Articles
 
-### Perfect Articultion of the future of coding and where we're at today
+### Perfect Articulation of the future of coding and where we're at today
 
 A very good articulation of the [future of coding](https://www.xipu.li/posts/the-last-programmers) (via [think](https://gist.github.com/idvorkin/4e7c9a91b54d58e23168da0b750d6ce2#file-summary_gpt-5-md)) his ideas that I love:
 
@@ -312,7 +312,7 @@ Worth reading the whole article but some interesting takes:
 - What are the limitations of the volume of existing training data?
   - Author Talks about this in the context of creating new programming languages, and ratio of corpus of old language to new language as a blocker.
   - I think this is a red-herring. Models can generate their own synthetic data.
-- What about new programming lanuges?
+- What about new programming languages?
   - The reason existing corpus doesn't matter is the AI can generate synthetic data easily (see the recent term distillation/RL)
   - But the new languages will be of two forms:
     - New highlevel languages like english to instruct the AI

@@ -35,12 +35,12 @@ So there's this guy who measures his nightly erections, doesn't go out into the 
 ## Goofy stuff
 
 - Doesn't go out in the sun during the day, bad for the skin
-- Measures everything he can including evening errections
+- Measures everything he can including evening erections
 - (I can relate) Hates seeing grey hair, but also hates dying his hair (I took some stabs at [dying my beard](/ig66/663))
 
 ## Sleep
 
-How good a nights sleep you have is really sets the difficulty level of the next day. How could you not go all in on this.
+How good a night's sleep you have is really sets the difficulty level of the next day. How could you not go all in on this.
 
 ## Don't Die - Voices in his head
 
@@ -48,7 +48,7 @@ He wrote a book, that is a conversation between the voices in his head. I was di
 
 ## Who holds the reins, morning or evening Igor
 
-A core concept is there are really two Igors, the morning, who is full of discipline, and the evening one who makes terrilbe decisions. Who should have "control of the body"? I think future Igor would prefer morning Igor, but when evening Igor is in control, he's king of the world with accountability to no one.
+A core concept is there are really two Igors, the morning, who is full of discipline, and the evening one who makes terrible decisions. Who should have "control of the body"? I think future Igor would prefer morning Igor, but when evening Igor is in control, he's king of the world with accountability to no one.
 
 ## Why not defer control to an algorithm?
 
@@ -58,7 +58,7 @@ I also try to do this for my finances using zero index funds vs lottery tickets.
 
 ## Attitude to others
 
-He is like, I want to be an inspiriation, don't feel you need to do what I do, just realize it can be done, and let it be an inspiration
+He is like, I want to be an inspiration, don't feel you need to do what I do, just realize it can be done, and let it be an inspiration
 
 ## Changes he's made me consider
 
