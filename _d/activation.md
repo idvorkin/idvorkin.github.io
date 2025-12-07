@@ -237,7 +237,7 @@ console.log(ctx, myChart);
 })
 </script>
 
-### Habits and addicitions
+### Habits and addictions
 
 [Habits](/habits) are tools to help us reduce the starting energy for things we want to do, and increase the starting energy (and decrease the stopping energy) for our [addictions](/addiction).
 
@@ -340,7 +340,7 @@ We become the average of our peers, your peers pull you towards them, and you pu
 
 ### Schedules
 
-The calendar is a simple tool to reduce stopping and starting energy. If you think about going to the gym, but then need to think about when to go the gym, there's an excellent change you won't go. However, if you know you go to the gym after your morning coffee, the come home and take the kids to school - it's way easier to get it done.
+The calendar is a simple tool to reduce stopping and starting energy. If you think about going to the gym, but then need to think about when to go the gym, there's an excellent chance you won't go. However, if you know you go to the gym after your morning coffee, the come home and take the kids to school - it's way easier to get it done.
 
 ### Sleep and activation Energy
 

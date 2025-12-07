@@ -12,7 +12,7 @@ Customer obsession, manifest in customer service, can be a key differentiator. T
 
 Customers hooked by customer obsession provide benefits to the company. First the customer retention goes up, second current customers become fans, and provide free highly genuine advertising.
 
-Customer obsession can also make up for other company disadvantages. For example, Amex has high annual fees, and is taken at less places then Visa and Master Card. T-mobile has worse cell coverage then AT&T. Starbucks, REI, and Apple have higher prices for equivalent products. Amazon has no retail presence for checking out products in person, quick purchases, or returns.
+Customer obsession can also make up for other company disadvantages. For example, Amex has high annual fees, and is taken at less places than Visa and Master Card. T-mobile has worse cell coverage than AT&T. Starbucks, REI, and Apple have higher prices for equivalent products. Amazon has no retail presence for checking out products in person, quick purchases, or returns.
 
 To build a business focused on customer obsession, there are impacts on the business model, here are the things I'm thinking.
 

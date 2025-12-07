@@ -23,11 +23,10 @@ The digital revolution has gone through 3 changes: the copy of the industrial ag
 
 ### Streaming age
 
-- Instant more important then access
+- Instant more important than access
   - non-netflix movies don't exist.
   - not on kindle doesn't exist
 - Nouns liquify and shift to verbs\*
-
   - One Note -> Work Flowy | Google Keep
   - Documents -> editing/sharing/reading/content snacking.
   - Seems deep - find others.
@@ -42,7 +41,6 @@ The digital revolution has gone through 3 changes: the copy of the industrial ag
 ### How to add value when copies are free
 
 - Immediacy (Realtime/On Demand Value Add)
-
   - Give it to you now.
   - First for online banking
   - Amazon Prime
@@ -50,27 +48,23 @@ The digital revolution has gone through 3 changes: the copy of the industrial ag
   - Early Access/Betas (Kick starter)
 
 - Personalization
-
   - Change the movie to have more of what I like in it.
   - Watching with Family make it 'G Rated'
   - Some time to talk with the author. (Kick starter)
 
 - Interpretation (Consulting/Coaching)
-
   - Software is free, but I show you how to use it.
   - Consulting business model.
   - Red hat, MS consulting services.
   - Squash coach
 
 - Authenticity (Status, Moral Value, Risk Reduction)
-
   - Some people really value that for brand status.
   - Important if risk possible - like stolen software tampered with.
   - IPhone and Jail Breaking.
   - Software on the internet.
 
 - Accessibility (Storage provider Value add)
-
   - Physical assets as a service (Uber)
   - Production tool as a service (Creative Cloud)
   - My owned content as a service (Flickr)
@@ -79,13 +73,11 @@ The digital revolution has gone through 3 changes: the copy of the industrial ag
   - My photo provide - Google Photos/Flickr
 
 - Embodiment (The physical experience/scarcity value add)
-
   - People really value this - music concerts/live theatre/physical book
   - Book free, but generic author talk.
   - Holding a book.
 
 - Patronage (I'm part of the process value add - Kick Starter)
-
   - Fans want to support.
   - 4 conditions: Easy; Reasonable Amount; Clear Benefit; Money goes to creator
 
@@ -108,7 +100,6 @@ The digital revolution has gone through 3 changes: the copy of the industrial ag
 ### Fixity vs Fluidity of industrial age goods (E.g. book)
 
 - The old fixed way:
-
   - Fixed Content
   - Fixed Presentation
   - Fixed Container (Durable)
@@ -133,24 +124,24 @@ The digital revolution has gone through 3 changes: the copy of the industrial ag
 - You'll always be a newbie, since software is self updating, and changing quickly.
 - Life span most phone apps is 30 days - everything is displaced before you can figure it out.
 - Today's problems caused by yesterday's success - so pain causes a a steady accumulation of small benefits.
-- Protopyia - (Process and Progress): Every day is a bit better then yesterday, and really adds up.
+- Protopyia - (Process and Progress): Every day is a bit better than yesterday, and really adds up.
 - When making new tech, always start by cloning old tech - web sites clones of desktop apps. Office clone of 'physical office'
 - Original idea of web -> TV, but with infinite channels.
   - This model is blocked by who can afford to create so much content?
   - Magic - people create their own content - WHO'D HAVE THOUGHT?
 - Modern system:
-  - Users do most of the work - craigs list, e-bay, youtube, facebook - platforms fasicilate but create no content.
+  - Users do most of the work - craigs list, e-bay, youtube, facebook - platforms facilitate but create no content.
   - Amazon's big value is reviews.
 - Content Manufacturing
   - High value content is NOT created by commercial entities (or classic commercial entities)
 - Web in 2050, not a better web, no more then Web 2.0 is a better TV.
 - WEB TODAY:
   - What can be searched on google.
-  - File sreachable via hyperlink - BUT - So mNAY things not linkable.
+  - File searchable via hyperlink - BUT - So many things not linkable.
 - WEB FUTURE:
   - More digital content - specific facebook messages
-  - Image search, blue pails in my photot
-  - PHysical world - keys in my room
+  - Image search, blue pails in my photo
+  - Physical world - keys in my room
   - Time - Last year - with models, predict into future.
 - Web becomes conversational interface (as opposed to a place)
   - Went from cyber space -> ubiquitous assistant -> electricity.
@@ -162,7 +153,7 @@ The digital revolution has gone through 3 changes: the copy of the industrial ag
 ### Flowing - From noun to verb
 
 - Copyable products are the most valuable products - and that's a good thing.
-- Old 'solids' are being maluable (??)
+- Old 'solids' are being malleable (??)
   - Durable goods as a Service/On Demand
     - Cars - Lyft/Uber
     - Vacations - Air BNB
@@ -180,12 +171,11 @@ The digital revolution has gone through 3 changes: the copy of the industrial ag
 - The Word - Ancient Times
   - Copy Tech: Human Memory
   - Top Skills: memorization, recitation and rhetoric
-  - Audience Valued: Reverence for the past, ambiguuius, ornate and subjective.
+  - Audience Valued: Reverence for the past, ambiguous, ornate and subjective.
   - Truth: The thing you remember (likely the best story)
 - The Book - Uptil we got screens
-
   - Copy Tech: Cheap mass copies of words on paper
-  - Top Skills: Precision (ink on paper), Linear Logic (sentences), objectivity (printed fact), authoriity (fixed in a book).
+  - Top Skills: Precision (ink on paper), Linear Logic (sentences), objectivity (printed fact), authority (fixed in a book).
   - Societal Impacts - 50K - 1M english words. Culture of experts. Roots are the written document (lawg
   - Truth: What is written down by the authority.
   - Solve problems by applying laws ( Process)
@@ -207,8 +197,8 @@ The digital revolution has gone through 3 changes: the copy of the industrial ag
 ### Will screens make us stupid?
 
 - Argument started in the 50s saying TVs will make illiterate,
-  - For short time, no one read, and reading scores where way down.
-  - but NOW, more people write then ever before.
+  - For short time, no one read, and reading scores were way down.
+  - but NOW, more people write than ever before.
   - People 3x as much now since the 80s
 
 ### Screening (Reading 2.0)

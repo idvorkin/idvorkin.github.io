@@ -45,7 +45,7 @@ From there you apply a series of questions/concepts (Page 318):
 9. Look through a different world view - What different model of the world would you need for this to be positive?
 10. Reality Strategy - How would you need to perceive the world for this belief to be true.
 11. Counter Example - Find an exception to the rule
-12. Hierarchy of Criteria - What criteria is more important then the one you are considering.
+12. Hierarchy of Criteria - What criteria is more important than the one you are considering.
 13. Apply to Self - ??
 14. Meta frame - What other belief about this belief could change or enrich the perception of this belief?
 
@@ -73,7 +73,6 @@ Frame is how we experience the world. Think about picture frames, it bounds how 
 Not I have a problem, but I want this outcome. Outcome frame is more powerful and action oriented.
 
 - Outcome frame
-
   - What do I want?
   - How do I get it?
   - What resources are available?
@@ -215,7 +214,7 @@ Failure -> Goal Setting, Planning, Execution
 #### Punctuation and Punctuation
 
 - Framing is the punctuation of objective reality into our subjective reality.
-- See great examples from book that,that,is - with comma's periods and question marks
+- See great examples from book that,that,is - with commas periods and question marks
 
 ### 4: Values and Criteria
 
@@ -260,7 +259,7 @@ Criteria -> standard/evidence we use to make decisions.
 
 - Using multiple avenues to attack the problem.
 - Examples of using the tools against beliefs.
-- Also example of creating a positive "though virus"
+- Also example of creating a positive "thought virus"
 
 ### Bonus Levels of experience
 

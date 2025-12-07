@@ -34,7 +34,7 @@ ML Engineer is a hot new job. It's the boys and girls who train and deploy model
   - [AI Engagement Model: Tools/Copilots/Chat/Agents](#ai-engagement-model-toolscopilotschatagents)
 - [Tech Deep Dive - Use case to Model](#tech-deep-dive---use-case-to-model)
   - [Fast Model](#fast-model)
-  - [Hand writing recognition](#hand-writing-recognition)
+  - [Handwriting recognition](#handwriting-recognition)
   - [Coding - with Cursor](#coding---with-cursor)
   - [Coding - with Aider](#coding---with-aider)
   - [Coding - Make a PR for me](#coding---make-a-pr-for-me)
@@ -240,21 +240,18 @@ If you want to understand apps, and how they should evolve, it's helpful to have
 ### AI Engagement Model: Tools/Copilots/Chat/Agents
 
 - Tools: Users control AI to generate something.
-
   - Use case: Image generation, Text-to-speech conversion, 3D model creation
   - Example product: DALL-E, Midjourney, Stable Diffusion
   - Value prop: On-demand creative assets, Rapid prototyping, Customized content generation
   - Challenge: Ensuring output quality and relevance, Managing copyright concerns, Avoiding biased or inappropriate results
 
 - Copilots: The AI works alongside the user in an app in multiple ways.
-
   - Use case: Code assistance, Writing enhancement, Design suggestions
   - Example product: GitHub Copilot, Grammarly, Adobe Sensei
   - Value prop: Increased developer productivity, Improved writing quality, Faster design iterations
   - Challenge: Integrating seamlessly into existing workflows, Maintaining user agency, Ensuring accuracy of suggestions
 
 - Agents: The AI has some autonomy over how it approaches a task.
-
   - Use case: Task automation, Personal assistance, Data analysis
   - Example product: AutoGPT, GPT-Agent, AI-powered virtual assistants
   - Value prop: Handling complex, multi-step processes, Autonomous problem-solving, Continuous learning and adaptation

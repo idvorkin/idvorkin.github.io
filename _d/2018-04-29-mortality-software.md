@@ -139,9 +139,9 @@ Now imagine how you'd want people to remember the way you acted, especially duri
 
 Your roles, how you balance your between them, and your values are the person you want to be, your north star.
 
-Most people who have gone through the eulogy process have found it incredibly difficult. Morality software will make the eulogy process easier.
+Most people who have gone through the eulogy process have found it incredibly difficult. Mortality software will make the eulogy process easier.
 
-Many people find this hard to imagine, so here's as a simple example. The eulogy module can start by presenting you different people and their values. Based on how much those people and values resonate with you, mortality software can suggest values that might appeal to you.
+Many people find this hard to imagine, so here's a simple example. The eulogy module can start by presenting you different people and their values. Based on how much those people and values resonate with you, mortality software can suggest values that might appeal to you.
 
 #### Affirmation Builder
 
@@ -182,43 +182,34 @@ Some people are allergic to goals, a few prompts that are less allergic
 #### Why This Matters
 
 - **Brings Systematic Thinking to Life:**
-
   - It's hard to consider all areas of life on the fly.
   - This report helps ensure steady investment across key roles, such as father, husband, manager, magician, and athlete.
 
 - **Motivation Through Reflection:**
-
   - When you notice value created, even in small ways, it highlights meaningful progress rather than just busywork.
 
 - **Gap Spotting and Growth:**
-
   - By seeing where energy was spent or missing, you can reflect thoughtfully and adjust—without judgment.
 
 - **Memory Preservation:**
-
   - It's difficult to remember the texture of a well-lived life week to week.
   - These reports create a personal memory archive—a treasure to look back on later.
 
 - **Flexible, Human Coaching Feel:**
-
   - The assistant lets you jump around as you wish, rather than forcing a rigid, section-by-section march.
   - The goal is to flow with curiosity, not bureaucracy.
 
 - **Future Leverage:**
-
   - Previous learnings can be incorporated dynamically to deepen future reflections.
 
 - **Plug Into Mortality Software Vision:**
-
   - Every week is a transaction you can't undo.
   - The report ensures your real capital—time, energy, emotion—is intentionally invested in what will matter at your eulogy, not just what was urgent or noisy.
 
 - **Blends Qualitative and Quantitative Reflection:**
-
   - The weekly report combines stories and numbers, so growth is visible but not reduced to lifeless metrics.
 
 - **Amplifies Role and Goal Awareness:**
-
   - When clear roles and goals are defined (for example, father, magician, athlete), the report becomes a real-time snapshot of how each investment is performing across life's portfolio.
   - Without regular reflection, inertia and noise can quietly steal your time, and your days may be spent on what is urgent, not what is meaningful.
 
@@ -310,7 +301,7 @@ This concept came to life in practice:
 
 ### What is similar to this?
 
-Life coaches, positive pychiatry, worklife balance.
+Life coaches, positive psychiatry, worklife balance.
 
 ### Are there societal structures like this?
 
@@ -359,5 +350,5 @@ While checklists may seem overly rigid at first glance, they actually serve an i
 
 ### Ambient Coaches/An outer inner voice.
 
-- Nice to be heard/acknolwedged
+- Nice to be heard/acknowledged
 - Nice to have someone to remind you of what you want to do.

@@ -132,7 +132,7 @@ When creating a new AI journal entry, follow these guidelines:
 Join the [discord here](https://discord.gg/S2s24P6JtU), and then just '/ask'. See the source [on github](https://github.com/idvorkin/nlp/blob/d9f24b7aa5a046f78147c2e53144a9258c91894f/qa_blog.py?plain=1#L393)
 Standard workflow,
 chunk blog -> Embedding(chunk) -> vector DB <- Retrieve <- Project Inject <- Rago
-this begs the Q what to chuck, and how to chunk it
+this begs the Q what to chunk, and how to chunk it
 
 Useful features:
 
@@ -362,7 +362,6 @@ I love adding tmux workflows, but they usually take me like 10 hours to get righ
   - Originally created on July 18, 2025 ([commit 38d87330](https://github.com/idvorkin/idvorkin.github.io/commit/38d87330)) as "crafting spells to banish ruminating thoughts"
   - Added image features ([commit bab47de6](https://github.com/idvorkin/idvorkin.github.io/commit/bab47de6)) - a very lucky last commit or I'd never have found it.
 - **The Shocking Discovery**: File was deleted in [PR #67](https://github.com/idvorkin/idvorkin.github.io/pull/67) ([commit e73324f9](https://github.com/idvorkin/idvorkin.github.io/commit/e73324f9))
-
   - **PR title**: "Add random page navigation feature"
   - **Actual changes**: Also randomly deleted an entire page!
   - 251 lines of carefully crafted content about mental health - gone
@@ -417,25 +416,21 @@ I love adding tmux workflows, but they usually take me like 10 hours to get righ
 #### The Claude Review Workflow Saga - When Good Intentions Break Everything
 
 - **The Problem**: Claude Code Review had been failing on EVERY PR since August 17th with mysterious "Invalid OIDC token" errors
-
   - Someone (probably me via AI) had "fixed" the workflow to support fork PRs by changing from `pull_request` to `pull_request_target`
   - Classic case of "the fix that breaks everything else"
 
 - **The Wild Goose Chase**:
-
   - First hypothesis: OIDC tokens don't work with `pull_request_target` - let's add `github_token`!
   - Created PR #120 to add the token - still failed
   - Tested from a fork (PR #121) to be thorough - also failed
   - The beta Claude action just wasn't compatible with `pull_request_target` events
 
 - **The Real Fix**: Sometimes you just have to admit defeat and revert
-
   - PR #122: Reverted to the original `pull_request` event that actually worked
   - Lost fork PR support, but gained back ALL regular PR reviews
   - Better to have 95% working than 100% broken
 
 - **Bonus Discovery**: While debugging the Vitest workflow force-push failures
-
   - Found branch protection rules were set to `~ALL` instead of just `main`
   - This was blocking pushes to PR branches, test-results branch, everything!
   - One setting change fixed multiple mysterious CI failures
@@ -702,7 +697,6 @@ Check out the great documentation at promptfoo, including redteaming I thgues st
 ### 2024-04-06
 
 - Containerize Bot
-
   - Secret Injection
   - Auto Starting
 
