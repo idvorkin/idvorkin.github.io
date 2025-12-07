@@ -8,7 +8,7 @@ redirect-from:
 
 {% include alert.html style="info" content="Check out my [Mac install script](https://github.com/idvorkin/Settings/blob/master/mac/install.sh) for automated setup of my Mac environment." %}
 
-I pretty much use mac exclusively. I have 3 at work, and a mac mini at home, and I'm an automation nerd so I try to have everything auto install/syncronize across the machines. On the mac, I'm either in chrome/edge, Cursor (the new VS.code), the terminal (I use iterm), capcut (video editor), zoom, or the few super handy utilities I list below.
+I pretty much use mac exclusively. I have 3 at work, and a mac mini at home, and I'm an automation nerd so I try to have everything auto install/synchronize across the machines. On the mac, I'm either in chrome/edge, Cursor (the new VS.code), the terminal (I use iterm), capcut (video editor), zoom, or the few super handy utilities I list below.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -85,12 +85,10 @@ My personal plugin:
 OSX has several built-in ways to manage screen resolutions and displays:
 
 1. **Default Settings**: System Settings -> Displays
-
    - Choose between Default or Scaled resolution
    - In Scaled mode, you can select from several preset options
 
 2. **Advanced Resolution Options**:
-
    - Hold Option key while clicking "Scaled" to see all available resolutions
    - This reveals additional resolutions your display supports
 
@@ -105,7 +103,6 @@ OSX has several built-in ways to manage screen resolutions and displays:
    ```
 
 4. **Third-Party Tools**:
-
    - [BetterDisplay](https://github.com/waydabber/BetterDisplay) - Force custom resolutions, manage display settings, and override system limitations
      - Allows forcing any resolution your display can handle
      - Supports HiDPI and scaled resolutions
@@ -119,7 +116,6 @@ OSX has several built-in ways to manage screen resolutions and displays:
      ```
 
 5. **EDID Override Method for 4K@120Hz**:
-
    - Apple Silicon Macs can be tricked into supporting 4K@120Hz over HDMI using EDID overrides
    - This method works with compatible USB-C to HDMI 2.1 adapters
    - Steps to enable:
@@ -135,7 +131,6 @@ OSX has several built-in ways to manage screen resolutions and displays:
    - More details in this [MacRumors forum thread](https://forums.macrumors.com/threads/mac-mini-4k-120hz.2267035/page-31?post=31952813#post-31952813)
 
 6. **Testing Your Display**:
-
    - Use [TestUFO Refresh Rate Test](https://www.testufo.com/refreshrate) to verify your display's refresh rate and resolution
    - For accurate results:
      - Close other applications and browser tabs
