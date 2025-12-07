@@ -542,6 +542,7 @@ Beads (`bd`) is our long-term memory system for tracking work across sessions. I
 **Golden rule:** "If I needed to resume this work in 2 weeks with zero conversation history, would I struggle? If yes, use Beads."
 
 **Use Beads when:**
+
 - Work spans multiple sessions or days
 - Tasks have complex dependencies or blockers
 - Strategic context would be lost after conversation compaction
@@ -549,6 +550,7 @@ Beads (`bd`) is our long-term memory system for tracking work across sessions. I
 - Resuming work after extended breaks would be difficult without persistent context
 
 **Use TodoWrite when:**
+
 - Work completes within the current session
 - Tasks are simple and linear with no dependencies
 - All context exists in current conversation
@@ -579,6 +581,7 @@ Update Beads notes at these moments - this is how we survive conversation compac
 **Notes quality test:** "Could another Claude instance resume this in 2 weeks with zero conversation history?"
 
 **Required notes format:**
+
 ```
 COMPLETED: [specific accomplishments with details]
 IN PROGRESS: [current work state, what's partially done]
@@ -590,11 +593,13 @@ KEY DECISIONS: [important technical/strategic choices made]
 ### Creating Issues
 
 **Basic creation:**
+
 ```bash
 bd create "Issue title" -d "Description" -p 1 -t feature --json
 ```
 
 **With design and acceptance criteria:**
+
 ```bash
 bd create "Add dark mode toggle" \
   -d "Users need dark mode for night reading" \
@@ -607,6 +612,7 @@ bd create "Add dark mode toggle" \
 ```
 
 **Discovered work (while working on something else):**
+
 ```bash
 # Create the discovered issue
 new_id=$(bd create "Bug: broken link in religion.md" -t bug -p 0 --json | jq -r '.id')
@@ -621,17 +627,21 @@ bd update <current-issue-id> --notes "...DISCOVERED: Broken link filed as $new_i
 ### Field Usage Guide
 
 **Immutable fields** (set once, rarely change):
+
 - **description**: Problem statement - what needs to be done and why it matters
 
 **Strategic fields** (update only when approach changes):
+
 - **design**: HOW to build it - implementation approach, architecture decisions, trade-offs considered
 
 **Tactical fields** (update frequently during work):
+
 - **acceptance-criteria**: WHAT success looks like - outcome-focused, testable statements (checkbox format)
 - **notes**: Session handoff data - COMPLETED/IN PROGRESS/NEXT/BLOCKERS/KEY DECISIONS
 - **status**: Workflow state (open → in_progress → closed)
 
 **Critical distinction - Design vs Acceptance Criteria:**
+
 - **Design** = "Use two-phase approach: insert text first, then apply formatting" (can change if we find a better way)
 - **Acceptance** = "Formatting applies atomically (all at once or not at all)" (stays true regardless of implementation)
 
@@ -645,6 +655,7 @@ Beads supports four dependency types - choose carefully as **only `blocks` affec
 - **discovered-from**: Provenance - issue B was discovered while working on issue A (tracks exploration)
 
 **Adding dependencies:**
+
 ```bash
 # task2 blocks task1 (task1 can't proceed without task2)
 bd dep add task2 task1 --type blocks
@@ -691,12 +702,14 @@ bd doctor
 ### Integration with Git Workflow
 
 **Protected Branch Model:**
+
 - Beads uses a separate `beads-metadata` branch for all issue tracking commits
 - `.beads/` directory and JSONL files are committed to `beads-metadata` branch only
 - This keeps PR workflow clean - beads commits don't interfere with feature branches
 - Configuration: `sync.branch=beads-metadata` (already set)
 
 **Workflow:**
+
 - All beads operations happen on any branch (main, feature branches, etc.)
 - Beads automatically commits changes to `beads-metadata` branch
 - Issues persist across all branches via the shared `beads-metadata` branch
@@ -708,6 +721,7 @@ bd doctor
 ### Workflow Examples
 
 **Multi-session blog post:**
+
 ```bash
 # Session 1: Create and start
 id=$(bd create "Write walking-with-god post" \
@@ -730,6 +744,7 @@ bd show $id  # Read notes to understand context
 ```
 
 **Complex feature with dependencies:**
+
 ```bash
 # Create epic
 epic=$(bd create "YouTube content integration" -t epic -p 2 --json | jq -r '.id')
@@ -751,6 +766,7 @@ bd ready --json
 ```
 
 **Bug discovered during feature work:**
+
 ```bash
 # Currently working on feature bd-abc, discover a bug
 bug_id=$(bd create "Fix broken link in religion.md line 245" \
@@ -804,7 +820,7 @@ bd update bd-abc --notes "...IN PROGRESS: Writing section 3. DISCOVERED: Broken 
   - This enables the PR link to appear in the development banner
   - If the PR link doesn't appear in your local dev environment, re-run this command
   - The command is automatically safe to run multiple times
-- Run code review agent before pushing
+- **Run PR review agents before creating or pushing PRs** - use pr-review-toolkit:code-reviewer agent via Task tool to review changes before submitting
 - When updating a PR with significant changes, update the PR description to reflect all current changes
 - Include any fixes or improvements made during development in the PR description
 - After updating PR, open in the web browser
