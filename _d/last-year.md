@@ -76,7 +76,6 @@ You can't stop your decline but you can slow it down. Same as the plan to build 
 While the Centenarian Olympics give us functional goals to strive for, we must understand what we're training against. Peter Attia describes four major threats to our longevity and health span - the Four Horsemen of Death. Let's examine them from most to least influenceable through our actions, starting with the foundation we have the most control over:
 
 1. **Type 2 Diabetes and Metabolic Dysfunction**
-
    - The foundation that influences all other horsemen
    - Characterized by insulin resistance and blood sugar dysregulation
    - Increases risk of cardiovascular disease, cancer, and neurodegeneration
@@ -84,7 +83,6 @@ While the Centenarian Olympics give us functional goals to strive for, we must u
    - Regular monitoring of markers like HbA1c, fasting glucose, insulin
 
 2. **Cardiovascular Disease**
-
    - Heart attacks, strokes, and other cardiovascular issues remain the leading cause of death
    - Risk factors include high blood pressure, high cholesterol, inflammation
    - Prevention through cardiovascular fitness, diet, stress management
@@ -92,7 +90,6 @@ While the Centenarian Olympics give us functional goals to strive for, we must u
    - Zone 2 cardio training is crucial for prevention
 
 3. **Neurodegenerative Disease**
-
    - Including Alzheimer's, dementia, and cognitive decline
    - Risk factors include genetics, cardiovascular health, metabolic health
    - Prevention through cognitive engagement, physical exercise, sleep quality
@@ -130,6 +127,6 @@ The key insight is that these horsemen are interconnected - metabolic health inf
 
 ## Spiritual Health
 
-Read a great book about a guy who found out he was gonna die in 100 days. Smart guy used to be CEO of KPMG, cool to see what he did. Book is [Chasing Daylight](https://www.amazon.com/B09BBHVKLR). Hi stop advice, what ever you plan to do before you die, move it up.
+Read a great book about a guy who found out he was gonna die in 100 days. Smart guy used to be CEO of KPMG, cool to see what he did. Book is [Chasing Daylight](https://www.amazon.com/B09BBHVKLR). His top advice: whatever you plan to do before you die, move it up.
 
 {%include summarize-page.html src="/chasing-daylight" %}

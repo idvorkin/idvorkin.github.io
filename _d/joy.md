@@ -55,7 +55,7 @@ If you could have one superpower, what would it be? At 46, you'd think I'd have 
   - [Put on a kids birthday party](#put-on-a-kids-birthday-party)
 - [Crazy Dream Projects](#crazy-dream-projects)
   - [Become an executive producer for shows](#become-an-executive-producer-for-shows)
-  - [Own a vaudiville theater](#own-a-vaudiville-theater)
+  - [Own a vaudeville theater](#own-a-vaudeville-theater)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -143,14 +143,14 @@ Joy is an involuntary experience that acts on you. You can be more receptive to 
 
 ### Joy vs Pleasure - Key Differences
 
-| Attribute | Joy | Pleasure |
-|-----------|-----|----------|
-| **Source** | External surprise, connection, wonder | Relief from internal tension |
-| **Trigger** | Something acts on you | You consume or release something |
-| **Requires** | Novelty, safety, presence | Build-up of need or desire |
-| **Duration** | Fleeting but memorable | Fleeting and forgettable |
-| **Anticipation** | Cannot be anticipated (kills it) | Anticipation increases it |
-| **Aftereffect** | Lingers as warmth | Often followed by wanting more |
+| Attribute        | Joy                                   | Pleasure                         |
+| ---------------- | ------------------------------------- | -------------------------------- |
+| **Source**       | External surprise, connection, wonder | Relief from internal tension     |
+| **Trigger**      | Something acts on you                 | You consume or release something |
+| **Requires**     | Novelty, safety, presence             | Build-up of need or desire       |
+| **Duration**     | Fleeting but memorable                | Fleeting and forgettable         |
+| **Anticipation** | Cannot be anticipated (kills it)      | Anticipation increases it        |
+| **Aftereffect**  | Lingers as warmth                     | Often followed by wanting more   |
 
 ### Safety: the precondition for Joy
 
