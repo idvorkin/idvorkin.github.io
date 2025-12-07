@@ -10,7 +10,7 @@ tags:
 
 Positive computing is the software branch focused on increasing human well being. Similar to positive psychology, it is a brand new field and our industry has barely begun. I'll use this post to gather my half baked thoughts on the various applications I've seen. For now it'll be confusing as I'm brain dumping to various audiences with various knowledge.
 
-[Cognitive Behavior Therapy](https://en.wikipedia.org/wiki/Cognitive_behavioral_therapy) (CBT) is a form of psychotherapy that treats problems and boosts happiness by modifying dysfunctional emotions, behaviors, and thoughts. Unlike traditional Freudian psychoanalysis, which probes childhood wounds to get at the root causes of conflict, CBT focuses on solutions, encouraging patients to challenge distorted cognitions and change destructive patterns of behavior. Because of it's 'shallow' depth, CBT is the basis of many of the positive psychology apps.
+[Cognitive Behavior Therapy](https://en.wikipedia.org/wiki/Cognitive_behavioral_therapy) (CBT) is a form of psychotherapy that treats problems and boosts happiness by modifying dysfunctional emotions, behaviors, and thoughts. Unlike traditional Freudian psychoanalysis, which probes childhood wounds to get at the root causes of conflict, CBT focuses on solutions, encouraging patients to challenge distorted cognitions and change destructive patterns of behavior. Because of its 'shallow' depth, CBT is the basis of many of the positive psychology apps.
 
 #### Frequent Features
 
@@ -31,7 +31,7 @@ Many positive computing apps mix and match the following features. Some apps foc
 
 - This looks like it's targeting clinical support.
 
-[Mood Notes](http://moodnotes.thriveport.com/)([Crunchase](https://www.crunchbase.com/organization/thriveport)) - Basic mood tracking + CBT exercise like self reflection and common distortion evaluation.
+[Mood Notes](http://moodnotes.thriveport.com/)([CrunchBase](https://www.crunchbase.com/organization/thriveport)) - Basic mood tracking + CBT exercise like self reflection and common distortion evaluation.
 
 - Very cool mood entering by doing an up/down on a face - very cool.
 
@@ -58,7 +58,7 @@ These apps help you train mindfulness, usually via meditation courses, meditatio
 #### Yet to research
 
 - Ginger.io
-- Quit Genius - A tool to help you quick smoking based on CBT. Could apply to any domain.
+- Quit Genius - A tool to help you quit smoking based on CBT. Could apply to any domain.
 
 #### Random Links
 
