@@ -58,8 +58,8 @@ Maintaining a healthy weight has always been a challenge for me. I was obese as 
 - Nothing crazy, just low calories
 - Added Hard cardio once Gym re-opened
 - Staying low avoiding the in and out transitions
-- Lots of porpcorn
-- Only sads at work.
+- Lots of popcorn
+- Only salads at work.
 
 ## Terzepatide
 

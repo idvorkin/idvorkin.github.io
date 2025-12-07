@@ -86,7 +86,7 @@ Read my **[Eulogy](/eulogy)**. See my **[Memories ](/ig66)**
 - wish someone happiness (happy gun)
 - wish someone free of suffering
 
-### Cognative
+### Cognitive
 
 - Grab my e-ink tablet and write stuff out
 - Wake up early and work on my eulogy

@@ -135,7 +135,7 @@ Having used both models the InstructGPT model (now called GPT3), is more accurat
 
 ### Using GPT to write book summaries, even for books that don't exist
 
-Woah, this has been working with GPT4... These prompts are amazing ... My favorite books are by the heath brothres
+Woah, this has been working with GPT4... These prompts are amazing ... My favorite books are by the Heath Brothers
 
 Regardless of the book.
 

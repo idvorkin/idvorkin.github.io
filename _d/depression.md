@@ -67,7 +67,7 @@ I've tried lots of things, being consistent is hard, especially when you get dep
 - [Getting to yes with yourself](/getting-to-yes-with-yourself)
 - Talking to the [voices in my head](/voices)
 - Crafting spells to banish [psychic shadows](/psychic-shadows)
-- [Getting things done ([GTD](/gtd))
+- Getting things done ([GTD](/gtd))
 - Fierce [Work life balance](/wlb)
 
 {%include blob_image_float_right.html src="noun-depression.png" %}
@@ -103,7 +103,7 @@ I find these videos great discussions on how to head off depression, especially 
 
 {% include youtube.html src="snAhsXyO3Ck" %}
 
-**On Depression** - Good talk on bioloigical take on depression, symptoms, and implicit stress. (Author has a great book why Zebra's don't get ulcers)
+**On Depression** - Good talk on biological take on depression, symptoms, and implicit stress. (Author has a great book why Zebra's don't get ulcers)
 
 {% include youtube.html src="NOAgplgTxfc" %}
 
