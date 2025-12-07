@@ -271,7 +271,7 @@ Cursor has native support for indexing docs, some projects even have llm.txt to 
 
 ## Articles
 
-### Perfect Articultion of the future of coding and where we're at today
+### Perfect Articulation of the future of coding and where we're at today
 
 A very good articulation of the [future of coding](https://www.xipu.li/posts/the-last-programmers) (via [think](https://gist.github.com/idvorkin/4e7c9a91b54d58e23168da0b750d6ce2#file-summary_gpt-5-md)) his ideas that I love:
 
