@@ -9,7 +9,7 @@ tags:
 permalink: /strategy
 ---
 
-As competition in the market intensifies, companies must find ways to differentiate themselves in order to have a successful business - and that means strategic positioning. If they want to get the buyers money they have to choose a strategy that works for them and make sure it has sustainable competitive advantages. From offering a different value, to providing the same value using different activities - the possibilities for positioning are endless. Ultimately, it's all about creating trade offs and making sure those trade offs give a sustainable competitive advantage!
+As competition in the market intensifies, companies must find ways to differentiate themselves in order to have a successful business - and that means strategic positioning. If they want to get the buyer's money they have to choose a strategy that works for them and make sure it has sustainable competitive advantages. From offering a different value, to providing the same value using different activities - the possibilities for positioning are endless. Ultimately, it's all about creating trade offs and making sure those trade offs give a sustainable competitive advantage!
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->

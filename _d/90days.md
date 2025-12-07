@@ -130,7 +130,7 @@ Without learning, you risk the the equivalent of org organ rejection syndrome (y
 **Desire for action**
 
 - Uneducated action is a mistake
-- External pressure can be magnified by insecurity. Remember, shit was broken before you arrived, and would still be broken a few weeks later if it took yo u a few extra weeks to join.
+- External pressure can be magnified by insecurity. Remember, shit was broken before you arrived, and would still be broken a few weeks later if it took you a few extra weeks to join.
 - Anxious to prove yourself, but you prove yourself by listening and being curious
 - Too busy to learn will result in a death spiral
 
