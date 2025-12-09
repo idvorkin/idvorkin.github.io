@@ -948,7 +948,7 @@ bd update bd-abc --notes "...IN PROGRESS: Writing section 3. DISCOVERED: Broken 
   - This enables the PR link to appear in the development banner
   - If the PR link doesn't appear in your local dev environment, re-run this command
   - The command is automatically safe to run multiple times
-- Run code review agent before pushing
+- **Run PR review agents before creating or pushing PRs** - use pr-review-toolkit:code-reviewer agent via Task tool to review changes before submitting
 - When updating a PR with significant changes, update the PR description to reflect all current changes
 - Include any fixes or improvements made during development in the PR description
 - After updating PR, open in the web browser
