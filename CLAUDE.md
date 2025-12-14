@@ -988,6 +988,23 @@ When resolving PR feedback:
   - Test output: `repo_tmp/test-output.txt`
   - Jekyll logs: `repo_tmp/jekyll.log`
 
+## Opening Files in Neovim
+
+Open files for user review in a tmux split (keeps Claude's terminal available):
+
+```bash
+# Open file in 2/3 width split on right
+tmux split-window -h -l 66% "nvim /path/to/file"
+
+# Open specific file at line number
+tmux split-window -h -l 66% "nvim +42 /path/to/file"
+
+# Open git diff in nvim
+tmux split-window -h -l 66% "nvim -c 'Git diff'"
+```
+
+Use this when showing files for user review, diffs, or when the user wants to edit while Claude continues working.
+
 ## Clipboard Access
 
 - Use `osascript` instead of `pbpaste` for checking clipboard content as it can handle multiple content types (images, HTML, text)
