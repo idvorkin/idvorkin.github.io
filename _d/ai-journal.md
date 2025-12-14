@@ -18,6 +18,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2025-12-14](#2025-12-14)
+    - [Stream Deck Plugin in 30 Minutes](#stream-deck-plugin-in-30-minutes)
   - [2025-10-26](#2025-10-26)
     - [Cloning ScrollBuddy - Reverse Engineering a $100/year Widget](#cloning-scrollbuddy---reverse-engineering-a-100year-widget)
   - [2025-10-15](#2025-10-15)
@@ -205,6 +207,20 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2025-12-14
+
+#### Stream Deck Plugin in 30 Minutes
+
+- **TOP Takeaway**: Built a full Stream Deck plugin from scratch in 30 minutes - the barrier to custom hardware integrations is basically gone
+- **The Project**: [streamdeck-igor-vibe](https://github.com/idvorkin/streamdeck-igor-vibe) - Personal Stream Deck plugin for tmux navigation, voice activation, and utility keys
+- **Key Features**:
+  - Tmux pane navigation (prev/next) via single button presses
+  - Voice activation trigger for Wispr Flow (Right Cmd + Right Shift)
+  - Hot-reload for live action updates without plugin restart
+  - Python-based action handlers for easy customization
+- **Philosophy**: "In the future we'll just need keyboards with two buttons: yes or no" - consolidating frequent commands into single presses
+- This is the kind of niche personal tooling that would have taken days before AI coding assistants
 
 ### 2025-10-26
 
