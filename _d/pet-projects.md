@@ -6,6 +6,37 @@ redirect_from:
   - /tinkering
 ---
 
+<!-- MAINTENANCE INSTRUCTIONS FOR CLAUDE
+
+This page has TWO parts that need to stay in sync:
+1. This markdown file (_d/pet-projects.md) - the detailed list
+2. The landing page (static/pet-projects.html) - the beautiful visual showcase
+
+WHEN TO UPDATE THE HTML LANDING PAGE:
+- Ask Igor: "Should this project be added to the pet-projects HTML landing page?"
+- The HTML page is for SHOWCASE projects - things Igor wants to highlight
+- Not every project in this markdown needs to be in the HTML
+
+HOW TO UPDATE THE HTML (static/pet-projects.html):
+The HTML uses React with inline data arrays. Find the appropriate array:
+- activeProjects: Main projects Igor actively uses/maintains
+- devToolsProjects: Developer tools and infrastructure
+- comingSoonProjects: Ideas being developed
+
+Add entries following this format:
+{ id: "slug", name: "Name", tagline: "Phrase", description: "...",
+  emoji: "🔧", links: { live: "...", github: "...", blog: "..." }, color: "#hex" }
+
+IMPORTANT - VERIFY ALL URLs before committing:
+- GitHub repos: Check they exist and aren't private
+- Live links: Check the site is actually deployed
+- Blog links: Use permalinks (e.g., /vibe) not redirects
+
+GitHub orgs to check:
+- github.com/idvorkin (main)
+- github.com/idvorkin-ai-tools (AI tools org)
+-->
+
 As an engineer, I love to build bespoke tools that solve my unique problems exactly the way I want them solved. The bonus? This is lets me learn new technologies (did you know my blog has multiplayer support?). Sometimes I even make a tool so I have something to learn from. And with AI, this list of projects and explorations has exploded! Note to self, when I want to veg out and just feed my social media addiction I should do some vibe coding on all of these.
 
 {% include alert.html content='[Here is a beautiful landing page for my pet projects](/static/pet-projects.html)' style="info" %}
@@ -42,16 +73,18 @@ As an engineer, I love to build bespoke tools that solve my unique problems exac
 
 ## Computer Vision & Motion
 
-| Project                                              | Description                                                                                                                               |
-| ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| [Swing Analyzer](https://swing-analyzer.surge.sh/)   | Browser-based kettlebell swing analyzer. [<i class="fa fa-github"></i>](https://github.com/idvorkin/swing-analyzer)                       |
-| [Magic Monitor](https://magic-monitor.surge.sh)      | Smart mirror app with instant replay and AI-powered smart zoom. [<i class="fa fa-github"></i>](https://github.com/idvorkin/magic-monitor) |
-| [Video Edit](https://github.com/idvorkin/video-edit) | Computer vision explorations: YOLO object detection, OpenCV motion detection                                                              |
+| Project                                                                             | Description                                                                                                                               |
+| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| [Swing Analyzer](https://swing-analyzer.surge.sh/)                                  | Browser-based kettlebell swing analyzer. [<i class="fa fa-github"></i>](https://github.com/idvorkin/swing-analyzer)                       |
+| [Form Analyzer Samples](https://github.com/idvorkin-ai-tools/form-analyzer-samples) | Exercise video library for form analysis: kettlebell swings, pull-ups, pistol squats                                                      |
+| [Magic Monitor](https://magic-monitor.surge.sh)                                     | Smart mirror app with instant replay and AI-powered smart zoom. [<i class="fa fa-github"></i>](https://github.com/idvorkin/magic-monitor) |
+| [Video Edit](https://github.com/idvorkin/video-edit)                                | Computer vision explorations: YOLO object detection, OpenCV motion detection                                                              |
 
 ## Dev Tools & Infrastructure
 
 | Project                                                                    | Description                                                                                                                                   |
 | -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Agent Dashboard](https://github.com/idvorkin-ai-tools/agent-dashboard)    | Central portal for monitoring multi-agent dev sessions. Auto-discovers agents, shows git/PR/server status. _Self-written by AI!_              |
 | [Chop Conventions](https://github.com/idvorkin/chop-conventions)           | Development conventions for AI-assisted coding. [Blog post](/vibe)                                                                            |
 | [mdserve](https://github.com/idvorkin/mdserve)                             | Fast markdown preview server with live reload and theme support                                                                               |
 | [VAPI Call Viewer](https://www.youtube.com/watch?v=hE-qimUbKdg)            | TUI for viewing Vapi.ai call transcripts. [<i class="fa fa-github"></i>](https://github.com/idvorkin/vapi-call-viewer)                        |
@@ -70,3 +103,9 @@ As an engineer, I love to build bespoke tools that solve my unique problems exac
 | [nvim-messages](https://github.com/idvorkin/nvim-messages)                             | Neovim plugin to read iMessage and other chat apps      |
 | [Dotfiles](https://github.com/idvorkin/settings)                                       | VIM, TMUX, and shell configuration                      |
 | [Tech Diary](https://github.com/idvorkin/techdiary)                                    | Technical notes and learnings                           |
+
+## Fun & Experiments
+
+| Project                                                           | Description                                                                                  |
+| ----------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| [Scroll Buddy](https://github.com/idvorkin-ai-tools/scroll-buddy) | Animated scroll companions: walking stick figure and swimming scuba diver follow your scroll |
