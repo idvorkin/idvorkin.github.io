@@ -8,7 +8,7 @@ redirect_from:
 
 As an engineer, I love to build bespoke tools that solve my unique problems exactly the way I want them solved. The bonus? This is lets me learn new technologies (did you know my blog has multiplayer support?). Sometimes I even make a tool so I have something to learn from. And with AI, this list of projects and explorations has exploded! Note to self, when I want to veg out and just feed my social media addiction I should do some vibe coding on all of these.
 
-{% include alert.html content='[Here is a beautiful landing page for my pet projects](https://pet-projects.surge.sh/)' style="info" %}
+{% include alert.html content='[Here is a beautiful landing page for my pet projects](/static/pet-projects.html)' style="info" %}
 
 ## Self Reflection
 
@@ -24,6 +24,7 @@ As an engineer, I love to build bespoke tools that solve my unique problems exac
 | Project                                                                        | Description                                                                                                                                                                  |
 | ------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Humane Tracker](https://humane-tracker.surge.sh/)                             | Habit tracking across 5 wellness categories. Firebase-based with weekly views. [<i class="fa fa-github"></i>](https://github.com/idvorkin/humane-tracker-1)                  |
+| [Gym Timer](https://idvorkin.github.io/igor-timer/)                            | Interval training timer PWA with presets, work/rest phases, and wake lock. [<i class="fa fa-github"></i>](https://github.com/idvorkin/igor-timer)                            |
 | [Tax Calculator](https://idvorkin.github.io/tax-calculator/)                   | Interactive tax bracket visualizer. [<i class="fa fa-github"></i>](https://github.com/idvorkin/tax-calculator)                                                               |
 | [Weight Analysis](https://weight-analysis.surge.sh/)                           | Jupyter notebook analyzing Apple Health weight data. Box plots, time series, interactive visualizations. [<i class="fa fa-github"></i>](https://github.com/idvorkin/jupyter) |
 | [OmniFocus CLI](https://github.com/idvorkin/omnifocus_cli)                     | Command-line interface for OmniFocus task management                                                                                                                         |
@@ -58,6 +59,7 @@ As an engineer, I love to build bespoke tools that solve my unique problems exac
 | [Jupyter Notebooks](http://nbviewer.jupyter.org/github/idvorkin/jupyter)   | Data exploration notebooks. [<i class="fa fa-github"></i>](https://github.com/idvorkin/jupyter)                                               |
 | [Blog MCP Server](https://github.com/idvorkin/idvorkin-blog-mcp)           | MCP server for AI assistants to query blog content                                                                                            |
 | [Cursor Chat Browser](https://github.com/idvorkin/cursor-chat-browser)     | Browse and export Cursor AI chat histories                                                                                                    |
+| [Stream Deck Plugin](https://github.com/idvorkin/streamdeck-igor-vibe)     | Personal Stream Deck plugin for tmux navigation, voice activation, and utility keys                                                           |
 
 ## VIM & Editor Tools
 
