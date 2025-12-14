@@ -956,6 +956,19 @@ bd update bd-abc --notes "...IN PROGRESS: Writing section 3. DISCOVERED: Broken 
 - On startup, ask user if they want to continue a PR, list the PRs in the subdirectories (named after their branches)
 - **Never merge PRs yourself** - the user must do this from the PR
 
+### Before Pushing to a PR Branch
+
+**CRITICAL**: Always check if the PR is still open before pushing additional commits:
+
+```bash
+gh pr view <pr-number> --json state --jq '.state'
+```
+
+If the state is "MERGED", do NOT push to that branch - your commits won't be included. Instead:
+1. Switch to main and pull latest
+2. Create a new branch for any additional changes
+3. Create a new PR
+
 ### Post-Merge Cleanup
 
 After a PR is merged, always:
