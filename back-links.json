@@ -62,6 +62,7 @@
         "/coach": "/coaching",
         "/cocaine": "/mania",
         "/cold": "/warm",
+        "/commandments": "/mitzvahs",
         "/compassion": "/curious",
         "/compensation": "/comp",
         "/concentration-risk": "/stock-concentration",
@@ -98,6 +99,7 @@
         "/exercise": "/physical-health",
         "/failure": "/fail",
         "/fatality": "/death",
+        "/fb": "/facebook",
         "/feeling-meetings": "/human-meetings",
         "/feelings": "/emotions",
         "/first-thing-first": "/first-things-first",
@@ -126,10 +128,11 @@
         "/happiness": "/happy",
         "/happiness-guide": "/build-life-you-want",
         "/healthspan": "/last-year",
-        "/heap - potporri - potpori": "/random-idea",
+        "/heap": "/random-idea",
         "/heavy-club": "/kettlebell",
         "/heavy-clubs": "/kettlebell",
         "/high-energy": "/energy-abundance",
+        "/hobbies": "/hobby",
         "/humanity": "/touching",
         "/hyper-personalization": "/hyper-personal",
         "/idle-loop": "/idle",
@@ -139,17 +142,21 @@
         "/in-real-life": "/irl",
         "/insecurity": "/insecure",
         "/intern-llm": "/genai-talk",
+        "/jung-self": "/self-ego",
         "/jupyter": "/pandas",
         "/kb": "/kettlebell",
         "/kettlebells": "/kettlebell",
+        "/language-limits": "/words-we-dont-have",
         "/life-chapters": "/chapters",
         "/life-stages": "/chapters",
+        "/linguistic-relativity": "/words-we-dont-have",
         "/lisp": "/sicp",
         "/llm-intern": "/genai-talk",
         "/llm-security": "/ai-security",
         "/llm-talk": "/genai-talk",
         "/llm-training": "/ai-training",
         "/loneliness": "/lonely",
+        "/mac": "/osx",
         "/machine-learning": "/ml",
         "/machinelearning": "/ml",
         "/makejoy": "/joy",
@@ -161,11 +168,18 @@
         "/meditate": "/siy",
         "/meditation": "/siy",
         "/mental-break-down": "/depression",
+        "/meta": "/facebook",
+        "/microecon": "/micro-economics",
+        "/microeconomics": "/micro-economics",
         "/middleage": "/elder",
         "/midlife": "/elder",
+        "/mitzvot": "/mitzvahs",
+        "/mitzvot-aseh": "/positive-mitzvahs",
+        "/mitzvot-lo-taaseh": "/negative-mitzvahs",
         "/monsters": "/mind-monsters",
         "/mortality": "/death",
         "/mr": "/ar",
+        "/negative-commandments": "/negative-mitzvahs",
         "/negotiation": "/negotiate",
         "/nonjudgment": "/curious",
         "/nvim": "/vim",
@@ -186,6 +200,8 @@
         "/podcasting": "/podcast",
         "/podcasts": "/podcast",
         "/poh": "/happy",
+        "/positive-commandments": "/positive-mitzvahs",
+        "/potpourri": "/random-idea",
         "/proactive": "/be-proactive",
         "/process": "/upstream",
         "/procrastinate": "/frog",
@@ -217,6 +233,7 @@
         "/savings": "/money",
         "/savor": "/happy",
         "/search-inside-yourself": "/siy",
+        "/self-vs-ego": "/self-ego",
         "/shadows": "/psychic-shadows",
         "/simple-and-sinister": "/kettlebell",
         "/sleepless": "/insomnia",
@@ -247,6 +264,7 @@
         "/time-off-2025-08": "/timeoff-2025-08",
         "/time-off-next": "/timeoff-2024-08",
         "/time-off-now": "/timeoff-2024-08",
+        "/tinkering": "/pet-projects",
         "/todo": "/todo_enjoy",
         "/todo-enjoy": "/todo_enjoy",
         "/tolerance": "/anger",
@@ -317,7 +335,7 @@
             "url": "/40yo"
         },
         "/42": {
-            "description": "You survived young kids, marriage, house, some easy crises, and now it’s time for remember , a healthy woman has a thousand wishes, a sick woman - just one: Things i wish I knew at 42\n\n",
+            "description": "You survived young kids, marriage, house, some easy crises, and now it’s time for remember, a healthy woman has a thousand wishes, a sick woman - just one: Things I wish I knew at 42\n\n",
             "doc_size": 26000,
             "file_path": "_site/42.html",
             "incoming_links": [
@@ -377,6 +395,7 @@
                 "/eulogy",
                 "/first-things-first",
                 "/first-understand",
+                "/four-healths",
                 "/gap-year-igor",
                 "/psychic-weight",
                 "/sharpen-the-saw",
@@ -558,7 +577,8 @@
                 "/productive",
                 "/psychic-shadows",
                 "/psychic-weight",
-                "/timeoff"
+                "/timeoff",
+                "/walking-with-god"
             ],
             "last_modified": "2025-12-06T18:03:02-08:00",
             "markdown_path": "_d/addiction.md",
@@ -609,10 +629,13 @@
             "doc_size": 23000,
             "file_path": "_site/affirmations.html",
             "incoming_links": [
+                "/four-healths",
                 "/gap-year-igor",
                 "/mortality-software",
                 "/operating-manual",
-                "/process-journal"
+                "/process-journal",
+                "/religion",
+                "/walking-with-god"
             ],
             "last_modified": "2025-12-06T18:03:02-08:00",
             "markdown_path": "_d/affirmations2.md",
@@ -634,6 +657,27 @@
             "redirect_url": "",
             "title": "Affirmations",
             "url": "/affirmations"
+        },
+        "/agency": {
+            "description": "Two engineers, same IQ, same tools. One ships weekly. One is “researching the best approach.”, or “Waiting for someone to tell them what to do”. In six months, the gap between them will be insurmountable. Why? Not intelligence—agency. And in the AI era, this gap is about to become exponential.\n\n",
+            "doc_size": 39000,
+            "file_path": "_site/agency.html",
+            "incoming_links": [],
+            "last_modified": "2025-11-15T09:38:37-08:00",
+            "markdown_path": "_d/agency.md",
+            "outgoing_links": [
+                "/amazon",
+                "/anxiety",
+                "/be-proactive",
+                "/essentialism",
+                "/gap-year-igor",
+                "/mental-pain",
+                "/my-perfect-job",
+                "/regrets"
+            ],
+            "redirect_url": "",
+            "title": "Agency trumps Intelligence",
+            "url": "/agency"
         },
         "/ai": {
             "description": "AI becomes the\nThe transition from A landing page for all my ai pages - a nice jumping off point (especially from the graph).\n\n",
@@ -745,12 +789,14 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get super lost\n\n",
-            "doc_size": 76000,
+            "doc_size": 83000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
-                "/ai"
+                "/ai",
+                "/chop",
+                "/walking-with-god"
             ],
-            "last_modified": "2025-12-07T03:00:13+00:00",
+            "last_modified": "2025-12-14T16:47:18+00:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
@@ -819,6 +865,7 @@
             "file_path": "_site/amazon.html",
             "incoming_links": [
                 "/90days",
+                "/agency",
                 "/manager-book-appendix",
                 "/parkinson",
                 "/writing"
@@ -844,7 +891,8 @@
             "file_path": "_site/anger.html",
             "incoming_links": [
                 "/emotions",
-                "/mood"
+                "/mood",
+                "/walking-with-god"
             ],
             "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_d/anger.md",
@@ -862,6 +910,7 @@
             "file_path": "_site/anxiety.html",
             "incoming_links": [
                 "/affirmations",
+                "/agency",
                 "/anxiety-management",
                 "/depression",
                 "/fail",
@@ -1038,6 +1087,7 @@
             "incoming_links": [
                 "/7-habits",
                 "/affirmations",
+                "/agency",
                 "/anxiety",
                 "/d/habits",
                 "/emotions",
@@ -1045,7 +1095,8 @@
                 "/idle",
                 "/process-journal",
                 "/regrets",
-                "/siy"
+                "/siy",
+                "/words-we-dont-have"
             ],
             "last_modified": "2025-04-02T22:07:54-07:00",
             "markdown_path": "_d/7h-c1.md",
@@ -1113,6 +1164,8 @@
             "file_path": "_site/bike-tesla-identity.html",
             "incoming_links": [
                 "/mortality-software",
+                "/pet-projects",
+                "/self-ego",
                 "/tesla"
             ],
             "last_modified": "2025-12-07T02:39:31+00:00",
@@ -1270,9 +1323,12 @@
         },
         "/build-life-you-want": {
             "description": "Happiness isn’t a destination you arrive at—it’s a direction you choose to walk in daily. Build The Life YOU Want by Arthur Brooks and Oprah Winfrey demolishes the myth that happiness is something that happens to you, replacing it with the empowering truth that happiness is something you actively create. This isn’t another feel-good book promising easy answers; it’s a science-backed roadmap for building genuine fulfillment through intentional choices and sustainable practices.\n\n",
-            "doc_size": 39000,
+            "doc_size": 40000,
             "file_path": "_site/build-life-you-want.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/happy",
+                "/spiritual-health"
+            ],
             "last_modified": "2025-11-10T03:14:45+00:00",
             "markdown_path": "_d/build-the-life-you-want.md",
             "outgoing_links": [
@@ -1310,7 +1366,8 @@
             "markdown_path": "_d/caring.md",
             "outgoing_links": [
                 "/depression",
-                "/psychic-shadows"
+                "/psychic-shadows",
+                "/stoicism"
             ],
             "redirect_url": "",
             "title": "Caring - The story of emotional intensity",
@@ -1369,12 +1426,12 @@
                 "/moments"
             ],
             "redirect_url": "",
-            "title": "Chasing Daylight: Imagine you're gonna die in less then 100 days",
+            "title": "Chasing Daylight: Imagine you're gonna die in less than 100 days",
             "url": "/chasing-daylight"
         },
         "/chop": {
             "description": "Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizing how we write code. Think of those old-school auto shops: AI started as the shop hand, fetching tools and cleaning parts. Then it became an apprentice mechanic, helping diagnose problems and suggesting fixes. Now? It’s a master mechanic, capable of rebuilding entire engines from your high-level specs. Our AIs are getting smarter by the day, and we’ll explore how to make the most of this evolution.\n\n",
-            "doc_size": 60000,
+            "doc_size": 68000,
             "file_path": "_site/chop.html",
             "incoming_links": [
                 "/40yo",
@@ -1390,6 +1447,7 @@
             "last_modified": "2025-12-06T18:03:02-08:00",
             "markdown_path": "_d/ai-coder.md",
             "outgoing_links": [
+                "/ai-journal",
                 "/ai-testing",
                 "/humans-are-underrated",
                 "/process-journal",
@@ -1420,7 +1478,7 @@
             "url": "/chow"
         },
         "/class-act": {
-            "description": "Be a class act. Fantatic advice.\n\n",
+            "description": "Be a class act. Fantastic advice.\n\n",
             "doc_size": 15000,
             "file_path": "_site/class-act.html",
             "incoming_links": [
@@ -1450,6 +1508,7 @@
                 "/manager-book",
                 "/moments-at-work",
                 "/prompts",
+                "/self-ego",
                 "/writing"
             ],
             "last_modified": "2025-12-07T02:39:31+00:00",
@@ -1467,7 +1526,7 @@
             "url": "/coaching"
         },
         "/coe": {
-            "description": "Everyone can make a mistake once, that’s totally fine. Repeating mistakes is unacceptable. Correction of Errors (COE) is the name Amazon gives it’s mechanism for correcting errors. Microsoft uses the term Root cause analysis (RCA), it’s the same concept. This mechanism originated with service outages but can be applied for any “error”, like missing your sons kindergarten graduation, or getting fired.\n\n",
+            "description": "Everyone can make a mistake once, that’s totally fine. Repeating mistakes is unacceptable. Correction of Errors (COE) is the name Amazon gives its mechanism for correcting errors. Microsoft uses the term Root cause analysis (RCA), it’s the same concept. This mechanism originated with service outages but can be applied for any “error”, like missing your sons kindergarten graduation, or getting fired.\n\n",
             "doc_size": 16000,
             "file_path": "_site/coe.html",
             "incoming_links": [
@@ -1560,7 +1619,7 @@
             "url": "/covid"
         },
         "/curious": {
-            "description": "Lead with curiosity, not judgment. This applies to yourself and to others. Think of a grandmother - a grandmother is full of love and compassion for her grandchildren. She loves them without conditions, no strings attached.She takes care of her grandchildren without needing anything in return. She cares selflessly and she has only the children’s best interest in mind. As she loves her grandchildren, she won’t allow self-destructive behavior and will step in when necessary. But she will always do this with the utmost care and love.\n\n",
+            "description": "Lead with curiosity, not judgment. This applies to yourself and to others. Think of a grandmother - a grandmother is full of love and compassion for her grandchildren. She loves them without conditions, no strings attached. She takes care of her grandchildren without needing anything in return. She cares selflessly and she has only the children’s best interest in mind. As she loves her grandchildren, she won’t allow self-destructive behavior and will step in when necessary. But she will always do this with the utmost care and love.\n\n",
             "doc_size": 19000,
             "file_path": "_site/curious.html",
             "incoming_links": [
@@ -1572,14 +1631,15 @@
                 "/emotions",
                 "/essentialism",
                 "/first-understand",
-                "/getting-to-yes-with-yourself",
+                "/get-to-yes-with-yourself",
                 "/happy",
                 "/negotiate",
                 "/operating-manual",
                 "/psychic-weight",
                 "/regrets",
                 "/shame",
-                "/voices"
+                "/voices",
+                "/walking-with-god"
             ],
             "last_modified": "2025-11-27T17:05:40+00:00",
             "markdown_path": "_d/grandmother.md",
@@ -1610,7 +1670,7 @@
             "url": "/d/2016-02-03-positive-computing-survey"
         },
         "/d/2016-05-09-lost-interview": {
-            "description": "Uneditted notes on a Q+A with Steve Jobs.\n\n",
+            "description": "Unedited notes on a Q+A with Steve Jobs.\n\n",
             "doc_size": 17000,
             "file_path": "_site/d/2016-05-09-lost-interview.html",
             "incoming_links": [],
@@ -1755,6 +1815,7 @@
                 "/activation",
                 "/d/resistance",
                 "/energy-abundance",
+                "/four-healths",
                 "/hobby",
                 "/idle",
                 "/life-as-business",
@@ -1766,7 +1827,8 @@
                 "/psychic-weight",
                 "/sharpen-the-saw",
                 "/slow",
-                "/switch"
+                "/switch",
+                "/walking-with-god"
             ],
             "last_modified": "2025-12-07T02:40:46+00:00",
             "markdown_path": "_d/habits.md",
@@ -2094,6 +2156,7 @@
             "file_path": "_site/emotional-health.html",
             "incoming_links": [
                 "/essentialism",
+                "/four-healths",
                 "/gap-year-igor",
                 "/irl",
                 "/mania",
@@ -2102,7 +2165,8 @@
                 "/process-journal",
                 "/sharpen-the-saw",
                 "/siy",
-                "/sublime"
+                "/sublime",
+                "/walking-with-god"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/emotional-health-hold.md",
@@ -2179,7 +2243,8 @@
                 "/gap-year-igor",
                 "/manager-book",
                 "/productive",
-                "/siy"
+                "/siy",
+                "/walking-with-god"
             ],
             "last_modified": "2025-05-12T09:24:30-07:00",
             "markdown_path": "_d/7h-c2.md",
@@ -2273,6 +2338,7 @@
             "incoming_links": [
                 "/4dx",
                 "/affirmations",
+                "/agency",
                 "/balance",
                 "/be-proactive",
                 "/books-that-defined-me",
@@ -2285,7 +2351,8 @@
                 "/parkinson",
                 "/partner-trouble",
                 "/timeoff",
-                "/timeoff-2022-07"
+                "/timeoff-2022-07",
+                "/walking-with-god"
             ],
             "last_modified": "2025-08-24T09:03:19-07:00",
             "markdown_path": "_posts/2015-11-28-essentialism.md",
@@ -2312,6 +2379,7 @@
                 "/bucket-list",
                 "/depression",
                 "/end-in-mind",
+                "/four-healths",
                 "/frog",
                 "/happy",
                 "/hobby",
@@ -2319,8 +2387,10 @@
                 "/joy",
                 "/operating-manual",
                 "/retire",
+                "/spiritual-health",
                 "/timeoff",
                 "/todo_enjoy",
+                "/walking-with-god",
                 "/work-satisfaction"
             ],
             "last_modified": "2025-11-28T09:45:42-08:00",
@@ -2339,6 +2409,7 @@
                 "/job",
                 "/kettlebell",
                 "/magic",
+                "/pet-projects",
                 "/physical-health",
                 "/process-journal",
                 "/siy",
@@ -2369,7 +2440,7 @@
         },
         "/fail": {
             "description": "Failure is not an option; it’s a necessity. Failure is not a person but an event. You can’t grow without failing, and you can’t beat yourself up over it. The key is to analyze without judgment, understand why it failed, and learn to move on.\n\n",
-            "doc_size": 20000,
+            "doc_size": 21000,
             "file_path": "_site/fail.html",
             "incoming_links": [],
             "last_modified": "2025-11-16T15:53:52+00:00",
@@ -2423,6 +2494,7 @@
                 "/curious",
                 "/negotiate",
                 "/sell",
+                "/walking-with-god",
                 "/work-satisfaction"
             ],
             "last_modified": "2025-12-06T18:12:26-08:00",
@@ -2438,6 +2510,38 @@
             "redirect_url": "",
             "title": "Seek first to understand, then to be understood",
             "url": "/first-understand"
+        },
+        "/four-healths": {
+            "description": "Health isn’t one-dimensional. You can be physically fit but emotionally exhausted. You can be cognitively sharp but spiritually adrift. True well-being requires attending to all four dimensions of health: physical, emotional, spiritual, and cognitive. Each dimension serves a different purpose, requires different practices, and neglecting any one creates vulnerabilities that ripple across your entire life.\n\n",
+            "doc_size": 41000,
+            "file_path": "_site/four-healths.html",
+            "incoming_links": [
+                "/mortality-software",
+                "/operating-manual",
+                "/spiritual-health"
+            ],
+            "last_modified": "2025-11-10T03:14:45+00:00",
+            "markdown_path": "_d/four-healths.md",
+            "outgoing_links": [
+                "/7-habits",
+                "/affirmations",
+                "/d/habits",
+                "/emotional-health",
+                "/eulogy",
+                "/last-year",
+                "/new-skills",
+                "/operating-manual",
+                "/physical-health",
+                "/process-journal",
+                "/religion",
+                "/siy",
+                "/spiritual-health",
+                "/sublime",
+                "/writing"
+            ],
+            "redirect_url": "",
+            "title": "The Four Kinds of Health: Physical, Emotional, Spiritual, and Cognitive",
+            "url": "/four-healths"
         },
         "/frog": {
             "description": "Procrastination is the success killer, a powerful manifestations of the resistance. Eat that frog gives 21 antidotes to procrastination. These are my re-framing of the concepts into my favorite mental models. Chapter titles come from the book.\n\n",
@@ -2504,12 +2608,13 @@
             "url": "/gap-year"
         },
         "/gap-year-igor": {
-            "description": "Done right, a gap year isn’t a year off; it’s a year on — intentional investment in health, relationships, and mastery while you still have the capital to invest. Think of it as pursuing a PhD in Life Optimization, making deposits that compound for decades. A gap year is one of those uncharted spaces—seductive when discussed longingly over a beer, terrifying when holding a resignation letter outside your boss’s office. Early maps warned: “HC SVNT DRACONES.” Here be dragons. I’m mapping them in real time: the Scarcity Dragon whispering you can’t afford it, the Entropy Dragon promising you’ll you’ll decay without structure, and the Squander Dragon insisting you’ll waste this precious opportunity. But these dragons guard treasure — the chance to invest in what truly matters while you still have the capacity to do so. This is the map of how to tame them.\n\n",
+            "description": "Done right, a gap year isn’t a year off; it’s a year on — intentional investment in health, relationships, and mastery while you still have the capital to invest. Think of it as pursuing a PhD in Life Optimization, making deposits that compound for decades. A gap year is one of those uncharted spaces—seductive when discussed longingly over a beer, terrifying when holding a resignation letter outside your boss’s office. Early maps warned: “HC SVNT DRACONES.” Here be dragons. I’m mapping them in real time: the Scarcity Dragon whispering you can’t afford it, the Entropy Dragon promising you’ll decay without structure, and the Squander Dragon insisting you’ll waste this precious opportunity. But these dragons guard treasure — the chance to invest in what truly matters while you still have the capacity to do so. This is the map of how to tame them.\n\n",
             "doc_size": 72000,
             "file_path": "_site/gap-year-igor.html",
             "incoming_links": [
                 "/42",
                 "/activation",
+                "/agency",
                 "/bucket-list",
                 "/day-in-the-life",
                 "/gap-year",
@@ -2566,13 +2671,12 @@
             "title": "Your new interns - GenAI for fun and profit",
             "url": "/genai-talk"
         },
-        "/getting-to-yes-with-yourself": {
+        "/get-to-yes-with-yourself": {
             "description": "Before you can negotiate with others, you need to be in sync with yourself. This book applies the negotiating principles to yourself. It’s an awkward application of the model, but this book is filled with good concepts regardless.\n\n",
             "doc_size": 25000,
-            "file_path": "_site/getting-to-yes-with-yourself.html",
+            "file_path": "_site/get-to-yes-with-yourself.html",
             "incoming_links": [
-                "/books-that-defined-me",
-                "/depression"
+                "/walking-with-god"
             ],
             "last_modified": "2025-10-20T11:23:26-04:00",
             "markdown_path": "_posts/2015-12-23-getting-to-yes-with-yourself.md",
@@ -2583,7 +2687,7 @@
             ],
             "redirect_url": "",
             "title": "Getting to yes with yourself",
-            "url": "/getting-to-yes-with-yourself"
+            "url": "/get-to-yes-with-yourself"
         },
         "/goals": {
             "description": "Goals are critical, there are multiple goal systems and they have consequences. They are mechanisms to deliver without micro management.\n\n",
@@ -2741,8 +2845,8 @@
             "url": "/gtd"
         },
         "/happy": {
-            "description": "Happy is a 5 letter word that many use as the answer to what is the point of life. The follow up question of “How can you be happy” is usually followed by a blank stare, so here’s my study of the subject.\n\n",
-            "doc_size": 27000,
+            "description": "Happy is a 5 letter word that many use as the answer to what is the point of life. The follow up question of “How can you be happy” is usually followed by a blank stare, so here’s my study of the subject. Probably the most important thing is happiness is not a mood, it’s journey - Like the weather vs the climate.\n\n",
+            "doc_size": 32000,
             "file_path": "_site/happy.html",
             "incoming_links": [
                 "/chasing-daylight",
@@ -2762,21 +2866,26 @@
                 "/timeoff-2023-08",
                 "/timeoff-2023-11",
                 "/timeoff-2024-08",
-                "/timeoff-2025-08"
+                "/timeoff-2025-08",
+                "/walking-with-god"
             ],
             "last_modified": "2025-11-28T13:14:56-08:00",
             "markdown_path": "_posts/2017-04-12-happy.md",
             "outgoing_links": [
                 "/addiction",
                 "/anxiety",
+                "/build-life-you-want",
                 "/curious",
                 "/eulogy",
+                "/hobby",
                 "/idle",
                 "/joy",
                 "/mental-pain",
                 "/moments",
                 "/mood",
-                "/negotiate"
+                "/negotiate",
+                "/new-skills",
+                "/spiritual-health"
             ],
             "redirect_url": "",
             "title": "Happy",
@@ -2796,9 +2905,11 @@
         },
         "/hobby": {
             "description": "Some days thinking about work makes me stressed, thinking of my family makes me resentful, and I don’t want to feel like a sloth feeding my addictions to TikTok, and doom scrolling. Those days, I’m grateful for my hobbies. This post gives you reasons to find a hobby and teaches you the attributes in an ideal hobby: Being accessible, Supporting mastery, Reinforcing your identity, and building relationships.\n\n",
-            "doc_size": 19000,
+            "doc_size": 20000,
             "file_path": "_site/hobby.html",
             "incoming_links": [
+                "/happy",
+                "/new-skills",
                 "/operating-manual",
                 "/retire"
             ],
@@ -2809,7 +2920,8 @@
                 "/eulogy",
                 "/happy",
                 "/joy",
-                "/magic"
+                "/magic",
+                "/new-skills"
             ],
             "redirect_url": "",
             "title": "Why a Engineering Manager masquerades as a magician on the weekends",
@@ -3040,7 +3152,7 @@
         },
         "/joy": {
             "description": "If you could have one superpower, what would it be? At 46, you’d think I’d have a quick answer, but the usual ideas—flying, invisibility, stopping time—felt childish. Probably the setting: a circle of 9-17-year-olds, breaking the ice, sharing their wished-for superpowers. As my mind scrambled, a mild panic set in. Nothing surfaced—until a bit of my eulogy came to me: Igor lived to see eyes go wide and mouths gape with wonder. He loved when strangers were drawn in against their objections, when a kid in meltdown, or an adult weighed down by life, forgot their troubles. Relief washed over me, I knew my answer. The super power I wished for:  bringing joy to others.\n\n",
-            "doc_size": 31000,
+            "doc_size": 32000,
             "file_path": "_site/joy.html",
             "incoming_links": [
                 "/affirmations",
@@ -3053,7 +3165,8 @@
                 "/hobby",
                 "/magic",
                 "/mood",
-                "/sublime"
+                "/sublime",
+                "/tribe"
             ],
             "last_modified": "2025-12-07T03:09:30+00:00",
             "markdown_path": "_d/joy.md",
@@ -3066,7 +3179,8 @@
                 "/like-switch",
                 "/magic",
                 "/smilebox",
-                "/touching"
+                "/touching",
+                "/tribe"
             ],
             "redirect_url": "",
             "title": "Smiles, Joy and Wonder",
@@ -3114,6 +3228,7 @@
                 "/bucket-list",
                 "/chasing-daylight",
                 "/death",
+                "/four-healths",
                 "/retire",
                 "/y24",
                 "/y25"
@@ -3141,7 +3256,7 @@
             "url": "/laws-of-power"
         },
         "/learn-code": {
-            "description": "Coding is way easier then people think. Here’s some pointers.\n\n",
+            "description": "Coding is way easier than people think. Here’s some pointers.\n\n",
             "doc_size": 14000,
             "file_path": "_site/learn-code.html",
             "incoming_links": [],
@@ -3158,7 +3273,9 @@
             "description": "Businesses exist to generate profit. But what about life? Can we manage our lives with the same intentionality and clarity businesses use to thrive? Viewing life through this lens helps prioritize what truly matters, sustain energy, and deepen relationships. Just as businesses carefully manage resources, we can intentionally allocate our energy, nurture meaningful assets, and measure success beyond mere productivity. Life operates on two intertwined currencies—Life Value (the true worth of our existence) and energy (the operational fuel). These currencies are generated and sustained by carefully nurturing life assets such as relationships, health, skills, and character.\n\n",
             "doc_size": 36000,
             "file_path": "_site/life-as-business.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/self-ego"
+            ],
             "last_modified": "2025-03-06T06:43:27-08:00",
             "markdown_path": "_d/life-as-business.md",
             "outgoing_links": [
@@ -3206,7 +3323,7 @@
         },
         "/magic": {
             "description": "Being a dealer of smiles and wonder is a priority in my life, and magic is my instrument. This post details my history and some highlights\n\n",
-            "doc_size": 25000,
+            "doc_size": 26000,
             "file_path": "_site/magic.html",
             "incoming_links": [
                 "/d/resistance",
@@ -3229,7 +3346,7 @@
         },
         "/manager-book": {
             "description": "Being an engineering manager is hard. Supporting people well is harder. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds me how to behave and encourages my own continuous improvement.\n\n",
-            "doc_size": 178000,
+            "doc_size": 180000,
             "file_path": "_site/manager-book.html",
             "incoming_links": [
                 "/amazon",
@@ -3337,11 +3454,12 @@
             "url": "/media-edit"
         },
         "/mental-pain": {
-            "description": "Pain is in the brain as they say, which is especially true for mental pains. Pain isn’t the enemy though, pain is a signal. The pain system, when working properly draws our attention to a problem so that we can deal with it. However, our pain can evolve into unecassary suffering, be phantom pain, meaning it is being applied when it should not be, or chronic pain, which flares up even though it is no longer providing value.\n\n",
+            "description": "Pain is in the brain as they say, which is especially true for mental pains. Pain isn’t the enemy though, pain is a signal. The pain system, when working properly draws our attention to a problem so that we can deal with it. However, our pain can evolve into unnecessary suffering, be phantom pain, meaning it is being applied when it should not be, or chronic pain, which flares up even though it is no longer providing value.\n\n",
             "doc_size": 37000,
             "file_path": "_site/mental-pain.html",
             "incoming_links": [
                 "/addiction",
+                "/agency",
                 "/ai-journal",
                 "/anger",
                 "/anxiety-management",
@@ -3356,6 +3474,7 @@
                 "/regrets",
                 "/shame",
                 "/timeoff-2020-12",
+                "/walking-with-god",
                 "/work-satisfaction",
                 "/y24"
             ],
@@ -3444,6 +3563,24 @@
             "redirect_url": "",
             "title": "Mind monsters",
             "url": "/mind-monsters"
+        },
+        "/mitzvahs": {
+            "description": "I like saying “I have a mitzvah” - it sounds way more fun than “I have an obligation.” A mitzvah is a commandment, a good deed, a blessing all rolled into one. And lucky for us, Judaism comes with exactly 613 of them.\n\n",
+            "doc_size": 19000,
+            "file_path": "_site/mitzvahs.html",
+            "incoming_links": [
+                "/negative-mitzvahs",
+                "/positive-mitzvahs"
+            ],
+            "last_modified": "2025-11-10T03:10:21+00:00",
+            "markdown_path": "_d/mitzvahs.md",
+            "outgoing_links": [
+                "/negative-mitzvahs",
+                "/positive-mitzvahs"
+            ],
+            "redirect_url": "",
+            "title": "The 613 Mitzvahs: Your Complete Jewish Commandment Checklist",
+            "url": "/mitzvahs"
         },
         "/ml": {
             "description": "It used to be that software was eating the world. Now ML is eating software. ML is computers building algorithms by only looking at the data. This is powerful as the computer can find patterns in large data sets that are too complicated for humans to find and express via algorithms. In human terms programming is following a check list which someone else provided (E.g. bake a cake by following the recipe). ML is following your intuition. (E.g making a stir fry from stuff in the fridge). As with ML, you can’t articulate your intuition as it built through countless experiences, but it mostly works (E.g. you never put a banana in your stirfry).\n\n",
@@ -3571,7 +3708,7 @@
             "url": "/money"
         },
         "/mood": {
-            "description": "Let me ask an easy question: “How are you feeling?”. How long did it take you to answer? Less then a second? Impressive. Now a harder question “What makes you say that?”, or even harder “How do you ‘compute’ how are you feeling?” What is going on? Human’s have a super fast heuristic called mood giving them an insant assessment of their sujective reality. Mood is critical to understand as it drives our behaviors, has an outsized influence on our subjective experience, can be in conflict to our pursuit of happiness, and most importantly has several bugs which can be exploited by the resistance and other bad actors.\n\n",
+            "description": "Let me ask an easy question: “How are you feeling?”. How long did it take you to answer? Less than a second? Impressive. Now a harder question “What makes you say that?”, or even harder “How do you ‘compute’ how are you feeling?” What is going on? Humans have a super fast heuristic called mood giving them an instant assessment of their subjective reality. Mood is critical to understand as it drives our behaviors, has an outsized influence on our subjective experience, can be in conflict to our pursuit of happiness, and most importantly has several bugs which can be exploited by the resistance and other bad actors.\n\n",
             "doc_size": 28000,
             "file_path": "_site/mood.html",
             "incoming_links": [
@@ -3598,12 +3735,13 @@
         },
         "/mortality-software": {
             "description": "Mortality is a word avoided. But, earlier or later, we all face it. Life is finite, time is limited. Mortality software helps us understand and then ensure we are using our precious time well. It helps us create our future and reflect on our past. Why must we do this? Because A)”first you’ve lost a day and the day becomes a week and a week becomes a month and before you know it you’ve lost a year” and B) “At the point change is obvious it’s too late - it means the need for change is long since past”\n\n",
-            "doc_size": 33000,
+            "doc_size": 35000,
             "file_path": "_site/mortality-software.html",
             "incoming_links": [
                 "/balance",
                 "/bike-tesla-identity",
-                "/goals"
+                "/goals",
+                "/walking-with-god"
             ],
             "last_modified": "2025-12-07T02:28:40+00:00",
             "markdown_path": "_d/2018-04-29-mortality-software.md",
@@ -3611,11 +3749,30 @@
                 "/affirmations",
                 "/bike-tesla-identity",
                 "/checklist",
-                "/death"
+                "/death",
+                "/four-healths"
             ],
             "redirect_url": "",
             "title": "Time.ltd - Mortality Software",
             "url": "/mortality-software"
+        },
+        "/negative-mitzvahs": {
+            "description": "The 365 negative commandments - things you should NOT do. According to tradition, there’s one for each day of the year.\n\n",
+            "doc_size": 123000,
+            "file_path": "_site/negative-mitzvahs.html",
+            "incoming_links": [
+                "/mitzvahs",
+                "/positive-mitzvahs"
+            ],
+            "last_modified": "2025-11-10T03:06:56+00:00",
+            "markdown_path": "_d/negative-mitzvahs.md",
+            "outgoing_links": [
+                "/mitzvahs",
+                "/positive-mitzvahs"
+            ],
+            "redirect_url": "",
+            "title": "Negative Commandments (365): Things NOT To Do",
+            "url": "/negative-mitzvahs"
         },
         "/negotiate": {
             "description": "Negotiation is the heart of collaboration. It is what makes conflict potentially meaningful and productive for all parties. Getting To Yes is the seminal book on negotiation. It’s the deep dive into win win or no deal and seek first to understand. The formal, be hard on problems and soft on people, then focus on the desired outcomes not the positions, next get more options on the table, and make sure you measure by objective criteria - lastly know your BATNA.Several years later a new book came out by a hostage negotiator. Instead of being analytic focus, it’s all about influencing the elephant.\n\n",
@@ -3623,7 +3780,7 @@
             "file_path": "_site/negotiate.html",
             "incoming_links": [
                 "/curious",
-                "/getting-to-yes-with-yourself",
+                "/get-to-yes-with-yourself",
                 "/happy",
                 "/productive",
                 "/sell",
@@ -3658,10 +3815,13 @@
         },
         "/new-skills": {
             "description": "Magic, Kettle Bells, Public Speaking - every skill I’ve acquired follows the same immutable laws. These laws govern how we learn, progress, and master new abilities. It’s possible these laws don’t apply to you, but I doubt it.\n\n",
-            "doc_size": 16000,
+            "doc_size": 17000,
             "file_path": "_site/new-skills.html",
             "incoming_links": [
                 "/about",
+                "/four-healths",
+                "/happy",
+                "/hobby",
                 "/operating-manual",
                 "/physical-health",
                 "/physical-pain",
@@ -3669,7 +3829,9 @@
             ],
             "last_modified": "2025-10-20T10:00:34-04:00",
             "markdown_path": "_d/laws-of-new-skills.md",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/hobby"
+            ],
             "redirect_url": "",
             "title": "The Immutable Laws of New Skills",
             "url": "/new-skills"
@@ -3712,6 +3874,7 @@
             "incoming_links": [
                 "/energy",
                 "/energy-abundance",
+                "/four-healths",
                 "/life-as-business"
             ],
             "last_modified": "2025-10-17T15:54:19-04:00",
@@ -3728,6 +3891,7 @@
                 "/diet",
                 "/emotional-health",
                 "/eulogy",
+                "/four-healths",
                 "/hobby",
                 "/ig66/587",
                 "/magic",
@@ -3751,7 +3915,7 @@
             "url": "/operating-manual"
         },
         "/osx": {
-            "description": "\nCheck out my [Mac install script](https://github.com/idvorkin/Settings/blob/master/mac/install.sh) for automated setup of my Mac environment.\n\n",
+            "description": "\nCheck out my Mac install script for automated setup of my Mac environment.\n\n",
             "doc_size": 21000,
             "file_path": "_site/osx.html",
             "incoming_links": [
@@ -3862,6 +4026,25 @@
             "title": "Double Trouble: From Lust to Love to Lost",
             "url": "/partner-trouble"
         },
+        "/pet-projects": {
+            "description": "<!– MAINTENANCE INSTRUCTIONS FOR CLAUDE\n\n",
+            "doc_size": 24000,
+            "file_path": "_site/pet-projects.html",
+            "incoming_links": [
+                "/eulogy"
+            ],
+            "last_modified": "2025-12-14T18:54:21+00:00",
+            "markdown_path": "_d/pet-projects.md",
+            "outgoing_links": [
+                "/bike-tesla-identity",
+                "/process-journal",
+                "/static/pet-projects.html",
+                "/vibe"
+            ],
+            "redirect_url": "",
+            "title": "Pet Projects",
+            "url": "/pet-projects"
+        },
         "/physical-health": {
             "description": "Physical health is not bought, it’s rented and rent is due every day. Physical health is the basis of energy, and thus the source of success, and a key saw to sharpen. Physical health requires weight, fitness, and sleep.\n\n",
             "doc_size": 28000,
@@ -3872,6 +4055,7 @@
                 "/diet",
                 "/essentialism",
                 "/eulogy",
+                "/four-healths",
                 "/gap-year",
                 "/gap-year-igor",
                 "/irl",
@@ -3900,7 +4084,7 @@
         },
         "/physical-pain": {
             "description": "Physical pain is a universal experience, yet it remains one of the least understood aspects of human health. Whether it’s a stubbed toe or chronic back pain, understanding the nature of physical pain can empower us to manage it effectively and improve our quality of life.\n\n",
-            "doc_size": 31000,
+            "doc_size": 32000,
             "file_path": "_site/physical-pain.html",
             "incoming_links": [
                 "/mental-pain"
@@ -3929,6 +4113,24 @@
             "redirect_url": "",
             "title": "Podcasting",
             "url": "/podcast"
+        },
+        "/positive-mitzvahs": {
+            "description": "The 248 positive commandments - things you should do. According to tradition, there’s one for each bone and organ in the body.\n\n",
+            "doc_size": 89000,
+            "file_path": "_site/positive-mitzvahs.html",
+            "incoming_links": [
+                "/mitzvahs",
+                "/negative-mitzvahs"
+            ],
+            "last_modified": "2025-11-10T03:06:56+00:00",
+            "markdown_path": "_d/positive-mitzvahs.md",
+            "outgoing_links": [
+                "/mitzvahs",
+                "/negative-mitzvahs"
+            ],
+            "redirect_url": "",
+            "title": "Positive Commandments (248): Things To Do",
+            "url": "/positive-mitzvahs"
         },
         "/pride": {
             "description": "“That is Pride Fucking With You” is the only scene I can quote from any movie. It’s a powerful scene, and the advice is timeless. Two thousand years ago when a Roman emperor had a victory parade, he was required to have a slave standing behind him holding his helmet high in the air and whispering continuously: “You are mortal. You are mortal”. Pride and ego are serious foes that must be kept in check.\n\n",
@@ -3960,7 +4162,9 @@
             "incoming_links": [
                 "/chop",
                 "/eulogy",
+                "/four-healths",
                 "/operating-manual",
+                "/pet-projects",
                 "/y24",
                 "/y25"
             ],
@@ -4220,9 +4424,11 @@
             "doc_size": 29000,
             "file_path": "_site/regrets.html",
             "incoming_links": [
+                "/agency",
                 "/emotions",
                 "/gap-year-igor",
-                "/mood"
+                "/mood",
+                "/self-ego"
             ],
             "last_modified": "2025-10-06T19:36:46-07:00",
             "markdown_path": "_d/regrets.md",
@@ -4239,12 +4445,20 @@
         },
         "/religion": {
             "description": "I did my Bar Mitzvah at the Wailing Wall in Israel — the holiest place in Judaism. We flew there as a family, and I still remember stepping off the plane and feeling an intense warmth. I turned to my sister and whispered, “I can feel God.” She rolled her eyes and said, “That’s not God. That’s forty degrees Celsius.”\n\n",
-            "doc_size": 43000,
+            "doc_size": 57000,
             "file_path": "_site/religion.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/four-healths",
+                "/spiritual-health",
+                "/walking-with-god"
+            ],
             "last_modified": "2025-11-24T16:12:18+00:00",
             "markdown_path": "_d/religion.md",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/affirmations",
+                "/stoicism",
+                "/walking-with-god"
+            ],
             "redirect_url": "",
             "title": "Religion: Losing belief while seeing value",
             "url": "/religion"
@@ -4359,6 +4573,25 @@
             "title": "Seattle",
             "url": "/seattle"
         },
+        "/self-ego": {
+            "description": "I’ve spent most of my life building an impressive ego. Senior engineer at Meta. Dad of two. The guy who bikes everywhere and does magic tricks at parties. These aren’t lies - they’re real parts of who I am. But here’s what I’m learning: when I’m living entirely for that résumé, when I’m performing my identity instead of living it, something feels hollow.\n\n",
+            "doc_size": 40000,
+            "file_path": "_site/self-ego.html",
+            "incoming_links": [],
+            "last_modified": "2025-10-15T09:44:21-04:00",
+            "markdown_path": "_d/jung-self-ego.md",
+            "outgoing_links": [
+                "/bike-tesla-identity",
+                "/coaching",
+                "/life-as-business",
+                "/regrets",
+                "/siy",
+                "/timeoff"
+            ],
+            "redirect_url": "",
+            "title": "The Self vs Ego: Jung's Map for Living Authentically",
+            "url": "/self-ego"
+        },
         "/sell": {
             "description": "Selling matters - it’s pitching, convincing, negotiating, hiring. Selling has a bad rap, because the seller often puts their needs ahead of the buyer - a win/lose paradigm. You should make selling win/win or no deal by needing to answer yes to these questions. 1/ If the buyer agrees, will their life improve? 2/ When the deal is done, will the world be a better place than when you began?\n\n",
             "doc_size": 21000,
@@ -4376,7 +4609,7 @@
             "url": "/sell"
         },
         "/shame": {
-            "description": "Shame and guilt are often confused emotions caused by self judgments that lead to contrasting behaviors. Shame drives people to hide or deny their wrongdoings while guilt, properly applied drives people to the correct behaviors. These are both examples of mental-pain and when the pain is phantom or cronic, are often well served by grandmother mind.\n\n",
+            "description": "Shame and guilt are often confused emotions caused by self judgments that lead to contrasting behaviors. Shame drives people to hide or deny their wrongdoings while guilt, properly applied drives people to the correct behaviors. These are both examples of mental-pain and when the pain is phantom or chronic, are often well served by grandmother mind.\n\n",
             "doc_size": 15000,
             "file_path": "_site/shame.html",
             "incoming_links": [
@@ -4437,7 +4670,7 @@
             "url": "/sicp"
         },
         "/siy": {
-            "description": "Training Emotional Intelligence through mindfulness. Search inside yourself is a meditation training manual for engineers. It’s also a pun as the author works at google, and built the program internally at Google. Joy on demand by the same author, is less engineer focused, and uses joy as a path to medatitive bliss.\n\n",
+            "description": "Training Emotional Intelligence through mindfulness. Search inside yourself is a meditation training manual for engineers. It’s also a pun as the author works at google, and built the program internally at Google. Joy on demand by the same author, is less engineer focused, and uses joy as a path to meditative bliss.\n\n",
             "doc_size": 61000,
             "file_path": "_site/siy.html",
             "incoming_links": [
@@ -4451,16 +4684,19 @@
                 "/emotions",
                 "/eulogy",
                 "/first-understand",
+                "/four-healths",
                 "/gap-year-igor",
                 "/idle",
                 "/irl",
                 "/mind-monsters",
                 "/operating-manual",
                 "/psychic-weight",
+                "/self-ego",
                 "/sharpen-the-saw",
                 "/slow",
                 "/timeoff",
-                "/timeoff-2020-03"
+                "/timeoff-2020-03",
+                "/walking-with-god"
             ],
             "last_modified": "2025-12-07T03:13:57+00:00",
             "markdown_path": "_d/siy.md",
@@ -4519,7 +4755,8 @@
             "incoming_links": [
                 "/7h-concepts",
                 "/operating-manual",
-                "/timeoff-2022-02"
+                "/timeoff-2022-02",
+                "/words-we-dont-have"
             ],
             "last_modified": "2025-12-07T02:26:29+00:00",
             "markdown_path": "_d/2016-3-12-sleight-of-mouth.md",
@@ -4600,6 +4837,28 @@
             "title": "Tech leads, software architects and engineering managers - oh my!",
             "url": "/software-leadership-roles"
         },
+        "/spiritual-health": {
+            "description": "Ever felt directionless despite achieving everything you “should” want? Burned out treating every setback like catastrophe? Exhausted trying to control what you can’t? These are manifestations of a lack of spiritual health. “Spiritual health” is poorly defined, so I’ll define it practically: spiritual health means having a north star (purpose/direction), knowing you’re NOT the center of the universe (transcendence/perspective), and accepting you have influence, not control (coherence/acceptance). Miss any one and you’ll find yourself spiritually malnourished in problems as old as time.\n\n",
+            "doc_size": 60000,
+            "file_path": "_site/spiritual-health.html",
+            "incoming_links": [
+                "/four-healths",
+                "/happy",
+                "/walking-with-god"
+            ],
+            "last_modified": "2025-11-10T03:14:45+00:00",
+            "markdown_path": "_d/spiritual-health.md",
+            "outgoing_links": [
+                "/build-life-you-want",
+                "/eulogy",
+                "/four-healths",
+                "/religion",
+                "/walking-with-god"
+            ],
+            "redirect_url": "",
+            "title": "Spiritual Health: Purpose, Transcendence and Coherence",
+            "url": "/spiritual-health"
+        },
         "/stock-concentration": {
             "description": "When you work at a tech company and receive RSUs, it’s easy to accidentally become dangerously concentrated in your company’s stock. You didn’t mean to bet your entire future on one company, but here you are - watching every earnings call with your stomach in knots because a 30% drop would devastate your net worth. This guide explains the risks and strategies for managing concentrated stock positions - from tax-efficient selling strategies to protective options that cost you nothing, and exchange funds that diversify without triggering taxes.\n\n",
             "doc_size": 37000,
@@ -4619,6 +4878,21 @@
             "redirect_url": "",
             "title": "Stock Concentration: How I Learned to Stop Worrying and Love the Capital Gains Tax",
             "url": "/stock-concentration"
+        },
+        "/stoicism": {
+            "description": "Stoicism is a philosophy of personal ethics informed by its system of logic and its views on the natural world. It was founded in Athens by Zeno of Citium in the early 3rd century BC.\n\n",
+            "doc_size": 13000,
+            "file_path": "_site/stoicism.html",
+            "incoming_links": [
+                "/caring",
+                "/religion"
+            ],
+            "last_modified": "2025-11-25T14:36:06-08:00",
+            "markdown_path": "_d/stoicism.md",
+            "outgoing_links": [],
+            "redirect_url": "",
+            "title": "Stoicism",
+            "url": "/stoicism"
         },
         "/strategy": {
             "description": "As competition in the market intensifies, companies must find ways to differentiate themselves in order to have a successful business - and that means strategic positioning. If they want to get the buyers money they have to choose a strategy that works for them and make sure it has sustainable competitive advantages. From offering a different value, to providing the same value using different activities - the possibilities for positioning are endless. Ultimately, it’s all about creating trade offs and making sure those trade offs give a sustainable competitive advantage!\n\n",
@@ -4659,7 +4933,8 @@
             "doc_size": 30000,
             "file_path": "_site/structure.html",
             "incoming_links": [
-                "/gap-year-igor"
+                "/gap-year-igor",
+                "/words-we-dont-have"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/structure.md",
@@ -4676,6 +4951,7 @@
                 "/affirmations",
                 "/emotional-health",
                 "/emotions",
+                "/four-healths",
                 "/siy",
                 "/timeoff-2024-02"
             ],
@@ -4726,7 +5002,7 @@
         },
         "/switch": {
             "description": "Human action can be modeled by an elephant, a rider, and the path. Our emotional side is the Elephant and our rational side is the Rider. Perched atop the Elephant, the Rider holds the reins and seems to be the leader. But the Rider’s control is precarious because the Rider is so small relative to the Elephant. Anytime the six-ton Elephant and the Rider disagree about which direction to go, the Rider is going to lose. He’s completely overmatched. Lastly, the path is the structural elements that nudge your elephant and your rider in a direction, without effort.\n\n",
-            "doc_size": 30000,
+            "doc_size": 31000,
             "file_path": "_site/switch.html",
             "incoming_links": [
                 "/enable",
@@ -4747,7 +5023,7 @@
             "url": "/switch"
         },
         "/synergize": {
-            "description": "We’ve all got stuff we’re good at, and stuff we’re bad at. We can combine these in ways that make the system greater then the sum of its parts.\n\n",
+            "description": "We’ve all got stuff we’re good at, and stuff we’re bad at. We can combine these in ways that make the system greater than the sum of its parts.\n\n",
             "doc_size": 27000,
             "file_path": "_site/synergize.html",
             "incoming_links": [
@@ -4852,7 +5128,7 @@
         },
         "/td/data-systems": {
             "description": "This page contains my knowledge of data systems. Mostly just a summary of Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems\n\n",
-            "doc_size": 24000,
+            "doc_size": 25000,
             "file_path": "_site/td/data-systems.html",
             "incoming_links": [
                 "/amazon",
@@ -5239,6 +5515,7 @@
                 "/life-as-business",
                 "/mind-at-work",
                 "/parkinson",
+                "/self-ego",
                 "/timeoff-2020-03",
                 "/timeoff-2020-12",
                 "/timeoff-2021-11",
@@ -5281,7 +5558,7 @@
             "url": "/timeoff"
         },
         "/timeoff-2020-03": {
-            "description": "In March 2020, I took a 2 month sabatical between leaving Amazon and joining Facebook. Given it was a substantial amount of time, I came up with some big plans, and wrote them down. It was a great plan, BUT my time off correlated perfectly to the Corona Virus and as a result I wasted lots of my mental energy thinking about the Corona Virus, and adjusting to being in pseudo-quarantine. Took me a while, but I finally realized I should ignore corona virus, or at least minimize my time thinking about it.\n\n",
+            "description": "In March 2020, I took a 2 month sabbatical between leaving Amazon and joining Facebook. Given it was a substantial amount of time, I came up with some big plans, and wrote them down. It was a great plan, BUT my time off correlated perfectly to the Corona Virus and as a result I wasted lots of my mental energy thinking about the Corona Virus, and adjusting to being in pseudo-quarantine. Took me a while, but I finally realized I should ignore corona virus, or at least minimize my time thinking about it.\n\n",
             "doc_size": 31000,
             "file_path": "_site/timeoff-2020-03.html",
             "incoming_links": [
@@ -5361,7 +5638,7 @@
             "url": "/timeoff-2021-12"
         },
         "/timeoff-2022-02": {
-            "description": "It’mid winter break and I’ve got a week off. In an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
+            "description": "It’s mid winter break and I’ve got a week off. In an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
             "doc_size": 20000,
             "file_path": "_site/timeoff-2022-02.html",
             "incoming_links": [],
@@ -5399,7 +5676,7 @@
         },
         "/timeoff-2022-11": {
             "description": "It’s just about thanksgiving 2022, and after 2 years of not being able to go to Oregon, we’re on our away! Through unexpected timing, before going to Oregon, I’m going to New York City with Ammon, and through even more unexpected timing, we just had lay offs at work, and have a major re-organization. Instead of being able to fully take the time off, I’ll be working several days, so having clarity on my priorities is critical.\n\n",
-            "doc_size": 27000,
+            "doc_size": 26000,
             "file_path": "_site/timeoff-2022-11.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T03:17:42+00:00",
@@ -5640,12 +5917,16 @@
         },
         "/tribe": {
             "description": "Finding your tribe is important - calling it a tribe makes it sound like I’m a contributing member of the community, perhaps this is more like things I’m a fanboy of.\n\n",
-            "doc_size": 15000,
+            "doc_size": 16000,
             "file_path": "_site/tribe.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/joy",
+                "/walking-with-god"
+            ],
             "last_modified": "2025-12-07T02:50:22+00:00",
             "markdown_path": "_d/tribe.md",
             "outgoing_links": [
+                "/joy",
                 "/manager-book"
             ],
             "redirect_url": "",
@@ -5653,8 +5934,8 @@
             "url": "/tribe"
         },
         "/untangled": {
-            "description": "Parenting a teenage girl is like mastering the Turkish Get-Up – one of the most technically challenging kettlebell movements that requires patience, balance, and careful progression through distinct phases. Just when you think you’ve got one position figured out, it’s time to transition to the next, all while maintaining your stability and form (and not dropping a heavy weight on your head!). Lisa Damour’s “Untangled” is like having a master coach by your side, breaking down these intricate transitions into seven fundamental movements that take your daughter from childhood to adulthood.\n\n",
-            "doc_size": 67000,
+            "description": "Remember when your daughter was little and you could fix almost anything with a hug and a Band-Aid? Those days feel like a different lifetime now. Parenting a teenage girl means navigating a completely new terrain – one where the problems are more complex, the emotions run deeper, and your old playbook doesn’t quite work anymore.\n\n",
+            "doc_size": 68000,
             "file_path": "_site/untangled.html",
             "incoming_links": [],
             "last_modified": "2025-11-29T15:04:06+00:00",
@@ -5681,12 +5962,13 @@
             "url": "/upstream"
         },
         "/vibe": {
-            "description": "Vibe coding is the name for letting the ai write your code. The magic lies in AI’s ability to infer intent from vague input—say almost nothing, and it often gives you something surprisingly right. This works because you’re granting it wide degrees of freedom; as long as you’re flexible on the outcome, the model can generate plausible results from minimal cues. But that magic is fragile: on follow-up turns, or when you have a much tighter definition of correct, the inferred intent often changes, and the model applies a different set of constraints then you wanted or what it did previously, causing a cliff, or misery. Turns out this is the same as junior developers.\n\n",
+            "description": "Vibe coding is the name for letting the ai write your code. The magic lies in AI’s ability to infer intent from vague input—say almost nothing, and it often gives you something surprisingly right. This works because you’re granting it wide degrees of freedom; as long as you’re flexible on the outcome, the model can generate plausible results from minimal cues. But that magic is fragile: on follow-up turns, or when you have a much tighter definition of correct, the inferred intent often changes, and the model applies a different set of constraints than you wanted or what it did previously, causing a cliff, or misery. Turns out this is the same as junior developers.\n\n",
             "doc_size": 17000,
             "file_path": "_site/vibe.html",
             "incoming_links": [
                 "/ai",
-                "/chop"
+                "/chop",
+                "/pet-projects"
             ],
             "last_modified": "2025-12-07T03:19:48+00:00",
             "markdown_path": "_d/vibe.md",
@@ -5782,6 +6064,41 @@
             "title": "Voices in my head - A survey of my personalities",
             "url": "/voices"
         },
+        "/walking-with-god": {
+            "description": "Someone important to me has been reading a daily devotional. Even though I’m not religious, I’m studying with them to be able to have conversations about the insights - whether in a secular or religious context. This is my attempt to bridge two worlds: honoring the spiritual wisdom they’re finding while translating it into language that works for my engineer brain.\n\n",
+            "doc_size": 81000,
+            "file_path": "_site/walking-with-god.html",
+            "incoming_links": [
+                "/religion",
+                "/spiritual-health"
+            ],
+            "last_modified": "2025-12-07T02:50:22+00:00",
+            "markdown_path": "_d/walking-with-god.md",
+            "outgoing_links": [
+                "/addiction",
+                "/affirmations",
+                "/ai-journal",
+                "/anger",
+                "/curious",
+                "/d/habits",
+                "/emotional-health",
+                "/end-in-mind",
+                "/essentialism",
+                "/eulogy",
+                "/first-understand",
+                "/get-to-yes-with-yourself",
+                "/happy",
+                "/mental-pain",
+                "/mortality-software",
+                "/religion",
+                "/siy",
+                "/spiritual-health",
+                "/tribe"
+            ],
+            "redirect_url": "",
+            "title": "Walking with God: A Daily Devotional Journey",
+            "url": "/walking-with-god"
+        },
         "/warm": {
             "description": "Staying warm is important, here’s the gear I use on and off the bike\n\n",
             "doc_size": 20000,
@@ -5815,7 +6132,7 @@
             "doc_size": 15000,
             "file_path": "_site/welcome-to-holland.html",
             "incoming_links": [
-                "/getting-to-yes-with-yourself"
+                "/get-to-yes-with-yourself"
             ],
             "last_modified": "2018-12-25T15:32:00-08:00",
             "markdown_path": "_posts/2015-12-26-welcome-to-holland.md",
@@ -5873,6 +6190,22 @@
             "title": "Win/win or no deal",
             "url": "/win-win"
         },
+        "/words-we-dont-have": {
+            "description": "The words you use don’t just describe your thinking. They shape it. Change “I have to” to “I choose to” and suddenly I have increased my agency. Replace “I failed” with “when I’m at my best” and the shame lifts. Language doesn’t describe experience—it creates it. Another powerful thought: Are there thoughts I can’t have because I don’t have the words for them? What about the distinctions my language doesn’t make, the concepts it doesn’t carve out, the realities it doesn’t acknowledge? English gives me one word for love. Greek gives you four. Are Greek speakers able to think about love in ways I literally cannot?\n\n",
+            "doc_size": 26000,
+            "file_path": "_site/words-we-dont-have.html",
+            "incoming_links": [],
+            "last_modified": "2025-10-12T10:20:42-07:00",
+            "markdown_path": "_d/words-we-dont-have.md",
+            "outgoing_links": [
+                "/be-proactive",
+                "/sleight-of-mouth",
+                "/structure"
+            ],
+            "redirect_url": "",
+            "title": "The Words We Don't Have",
+            "url": "/words-we-dont-have"
+        },
         "/work-satisfaction": {
             "description": "Love your work, and you’ll never work a day in your life. Sounds great, but work ain’t no Caribbean cruise - one you pay for, and the other pays you. Work should be satisfying (SAT). You should be enjoying solving hard problems, getting opportunities to talk with like-minded people, and even being forced to stretch and grow. Work should also cause you dissatisfaction (DSAT). Some days your boss will piss you off, your co-workers will misunderstand you, and you will be forced to do something you don’t want to. Satisfaction is not a lack of dissatisfaction; they are orthogonal experiences. DSAT is what makes you sleep poorly, and SAT is what makes you set your alarm early Monday morning so you can get back to your favorite project, and to hang out with your awesome team.  By understanding our SAT and DSAT, we can change them, and transform hours slogging into time at the fantasy cruise bar.\n\n",
             "doc_size": 32000,
@@ -5929,6 +6262,7 @@
                 "/amazon",
                 "/chow",
                 "/enable",
+                "/four-healths",
                 "/manager-book",
                 "/manager-book-appendix",
                 "/operating-manual"
