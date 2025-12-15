@@ -409,6 +409,7 @@ Jekyll automatically generates excerpts (post summaries/previews) for blog index
 **What excerpts are:**
 
 Excerpts are automatically extracted text snippets that represent your post in:
+
 - Blog homepage listing pages
 - Category/tag archive pages
 - RSS/Atom feed readers
@@ -444,6 +445,7 @@ Your opening paragraph...
 ```
 
 **Best practices:**
+
 - Make the opening paragraph 2-4 sentences
 - Hook the reader with a personal stake or compelling question
 - Give enough context that the excerpt works as a standalone preview
@@ -474,6 +476,30 @@ Use alert boxes to highlight important information, warnings, or construction no
 ```liquid
 {% include alert.html content="🚧 Construction Zone 🚧 This post is in heavy progress! 🔨 Check back later for updates ⏳" style="warning" %}
 ```
+
+### AI Slop Notice
+
+Use the AI slop include to mark posts that are heavily AI-generated and need human refinement:
+
+**Syntax:**
+
+```liquid
+{% include ai-slop.html percent="90" %}
+```
+
+**Parameters:**
+
+- `percent`: Estimated percentage of AI-generated content (0-100)
+
+**When to use:**
+
+- Posts drafted primarily by AI that need Igor's real voice and stories
+- Book processing experiments
+- AI-augmented learning content in draft state
+
+**Example output:** "AI Slop Notice: This post is approximately 90% AI slop. I'm using this as an experiment in AI-augmented learning and book processing. Working on refining it!"
+
+As the post gets refined with real voice, stories, and human editing, reduce the percentage or remove the notice entirely.
 
 ### URL Redirects
 
