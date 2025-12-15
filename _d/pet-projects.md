@@ -54,6 +54,7 @@ GitHub orgs to check:
 
 | Project                                                                        | Description                                                                                                                                                                  |
 | ------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Breathing Shapes](https://igor-breathe.surge.sh/)                             | Visual breathing exercise guide with animated shapes. [<i class="fa fa-github"></i>](https://github.com/idvorkin/igor-breathe)                                               |
 | [Humane Tracker](https://humane-tracker.surge.sh/)                             | Habit tracking across 5 wellness categories. Firebase-based with weekly views. [<i class="fa fa-github"></i>](https://github.com/idvorkin/humane-tracker-1)                  |
 | [Gym Timer](https://idvorkin.github.io/igor-timer/)                            | Interval training timer PWA with presets, work/rest phases, and wake lock. [<i class="fa fa-github"></i>](https://github.com/idvorkin/igor-timer)                            |
 | [Tax Calculator](https://idvorkin.github.io/tax-calculator/)                   | Interactive tax bracket visualizer. [<i class="fa fa-github"></i>](https://github.com/idvorkin/tax-calculator)                                                               |
