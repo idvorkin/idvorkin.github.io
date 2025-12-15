@@ -27,7 +27,7 @@ from dataclasses import dataclass
 import copy
 import typer
 import pudb
-from datetime import datetime
+from datetime import datetime, timezone
 import git
 import time
 import asyncio
@@ -48,6 +48,11 @@ PathType = NewType("PathType", str)
 
 # Set a maximum number of concurrent operations to prevent "too many files open" error
 MAX_CONCURRENT_OPERATIONS = 50  # Adjust this value based on system limits
+
+
+def current_time_iso() -> str:
+    """Return current UTC time in ISO format with timezone offset."""
+    return datetime.now(timezone.utc).isoformat()
 
 
 @lru_cache(maxsize=1024)
@@ -135,7 +140,7 @@ async def process_markdown_paths_in_parallel(
                     is_tracked = True
                 except git.GitCommandError:
                     # File is not tracked by git, use current time
-                    current_time = datetime.now().isoformat()
+                    current_time = current_time_iso()
                     console.print(
                         f"[yellow]File not tracked by git, using current time for:[/] {path}"
                     )
@@ -143,7 +148,7 @@ async def process_markdown_paths_in_parallel(
 
                 if not is_tracked:
                     # File is not tracked by git, use current time
-                    current_time = datetime.now().isoformat()
+                    current_time = current_time_iso()
                     console.print(
                         f"[yellow]File not tracked by git, using current time for:[/] {path}"
                     )
@@ -173,7 +178,7 @@ async def process_markdown_paths_in_parallel(
 
                     if not git_log:
                         # No git history, use current time
-                        current_time = datetime.now().isoformat()
+                        current_time = current_time_iso()
                         console.print(
                             f"[yellow]No git history, using current time for:[/] {path}"
                         )
@@ -185,21 +190,21 @@ async def process_markdown_paths_in_parallel(
                         return path, iso_date
                     except ValueError:
                         # Invalid date format, use current time
-                        current_time = datetime.now().isoformat()
+                        current_time = current_time_iso()
                         console.print(
                             f"[yellow]Invalid git date format, using current time for:[/] {path}"
                         )
                         return path, current_time
                 else:
                     # Git command failed, use current time
-                    current_time = datetime.now().isoformat()
+                    current_time = current_time_iso()
                     console.print(
                         f"[yellow]Git command failed, using current time for:[/] {path}"
                     )
                     return path, current_time
             except Exception as e:
                 # Any other exception, use current time
-                current_time = datetime.now().isoformat()
+                current_time = current_time_iso()
                 console.print(
                     f"[yellow]Exception ({str(e)}), using current time for:[/] {path}"
                 )
@@ -1074,7 +1079,7 @@ def delta(
         "doc_size",
         "last_modified",
     ]
-    current_time = datetime.now().isoformat()
+    current_time = current_time_iso()
     console.print("[blue]Will update all available fields[/]")
     console.print("[bold green]Script Version: v2.1-threshold-fix[/]")
     console.print(f"[blue]Using current time ({current_time}) for last_modified[/]")
