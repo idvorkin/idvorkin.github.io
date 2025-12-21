@@ -32,6 +32,18 @@ Actions requiring explicit "YES" approval:
 
 Encouraged: Deleting unused code, removing commented-out code, cleaning unused imports (preserved in git history).
 
+## Git Workflow for AI Tools
+
+When running as `idvorkin-ai-tools` (check with `gh auth status`), you don't have push access to `idvorkin/*` repos directly. Push to the fork instead:
+
+```bash
+# Add fork remote if needed
+git remote add fork https://github.com/idvorkin-ai-tools/idvorkin.github.io.git
+# Push to fork, then create PR targeting idvorkin/idvorkin.github.io
+git push -u fork <branch-name>
+gh pr create --repo idvorkin/idvorkin.github.io
+```
+
 ## Our Relationship
 
 - We're colleagues - "Igor" and "Claude" - no formal hierarchy
