@@ -358,6 +358,8 @@ def scratch():
 
 A bunch of [leaked prompts](https://github.com/wunderwuzzi23/scratch/tree/master/system_prompts). You can see a bunch of the current alchemy in creating these.
 
+Another comprehensive collection: [system-prompts-and-models-of-ai-tools](https://github.com/idvorkin-ai-tools/system-prompts-and-models-of-ai-tools) covering Anthropic, OpenAI, Cursor, and more.
+
 ### Use LLMs for reasoning not for data retrieval
 
 Great line from Altman, we're currently using them for data retrieval, but their super power is reasoning. If we just focus on reasoning, let other tools do the retrieval that can be better

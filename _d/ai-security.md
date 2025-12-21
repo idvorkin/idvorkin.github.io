@@ -54,6 +54,8 @@ A bunch of [leaked prompts](https://github.com/wunderwuzzi23/scratch/tree/master
 
 See also [CL4R1T4S repo](https://github.com/idvorkin/CL4R1T4S) with Claude Sonnet 4.5 and other system prompts.
 
+Another comprehensive collection: [system-prompts-and-models-of-ai-tools](https://github.com/idvorkin-ai-tools/system-prompts-and-models-of-ai-tools) covering Anthropic, OpenAI, Cursor, and more.
+
 ### Prompt Obfuscation for all attacks
 
 You can obfusicate the prompts to get past system prompts, and trick users into pasting something safe. By using different languages etc.
