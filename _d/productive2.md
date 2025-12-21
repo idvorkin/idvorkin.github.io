@@ -53,6 +53,8 @@ No point spending "my high energy/willpower time" on a low energy activity. It's
 
 ### Motivation
 
+[Momentum is emotional gravity](/energy#momentum-is-emotional-gravity). The feeling of shipping, completing, moving forward—it compounds. When you're making progress, everything feels lighter. When you're stuck, everything feels heavier than it is. Forward motion creates its own fuel.
+
 ### Realistic Expectations
 
 ### Flow

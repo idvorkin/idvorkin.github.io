@@ -434,13 +434,11 @@ Good self assessments are concise, focus on impact, and then how you delivered t
 Here are some fictitious examples modeled on my own career:
 
 - Improved Azure virtual machine boot time from 12 minutes to 2 minutes at P90 by investigating end to end system behavior, understanding end 2 end system operation, creating and driving agreement to all up goal, and then working with teams to establish budgets, and holding them accountable to delivering them.
-
   - > At first my team was skeptical that the performance improvements could be achieved and were hesitant to invest, but once we saw the organizational support and monthly meetings of progress we found it inspiring and made sure we contributed to the goal.
 
 - Drove XXX\$ to charities, and increased Alexa Shopping DAU XXX % (XXX to YYY) to by proposing a charity giving feature and implementing it in 5 months. Complexity, 20 eng/months, supporting work from 5 teams, across multiple divisions
 
 - Delivered XYZ, required to deliver TLS support on windows phone at very high quality. Complexity 1 engineer, 4 months - however required ramping up on complex error prone C++ code base, and no bugs found
-
   - > Igor's delivery was on time and of high quality. The feature had no bugs in production, due to high test coverage, which was impressive given the high complexity of the C++ code.
 
 - Increased team morale and cross group collaboration by proposing weekly team lunches, and monthly lunches with the broader organization.
@@ -1201,20 +1199,17 @@ When looking at code reviews as a teaching tool:
 When planning execution, follow this order:
 
 1. **Why** - Start with the purpose and impact
-
    - What problem are we solving?
    - What's the business value?
    - Why is this important now?
 
 2. **What** - Define Success
-
    - What does success look like?
    - What are we building?
    - What are the key requirements?
    - What are the constraints?
 
 3. **When** - Establish timeline and milestones
-
    - When do we need this by?
    - What are the key dependencies?
    - What's the critical path?
@@ -1465,14 +1460,12 @@ Recruiting is ultimately product sales, where you're selling the team you suppor
 ### What about structured vs free form interview loops
 
 - External Structured
-
   - Leadership skills - most important
   - Self aware - a [critical part of being a leader](/what-makes-a-leader)
   - Design
   - Coding
 
 - Internal, Structured but Different
-
   - Review internal code/design/documentation artifacts. Ask candidate for artifacts they're proud of.
   - Go on a whiteboard to have them explain one of their systems, or help you on yours. No need for the candidate to practice, this is just them doing their day job.
   - Talk about hard situations they've had. Listen for the criteria smart/gets things done/emotionally intelligent
@@ -1553,7 +1546,6 @@ Also good to refresh yourself on total compensation vs salary. It's important to
 ### Best Practices For Performance Reviews
 
 - Before Calibrations:
-
   - Continue seeking feedback for team members, and anonymizing and providing feedback
   - Continue explaining how tracking is occurring
   - Do mid-point checkins and peer manager review for hard situations (e.g. bottom performers and pending promotions)
@@ -1561,7 +1553,6 @@ Also good to refresh yourself on total compensation vs salary. It's important to
   - Remind engineers you might find new data late, and what you do that could change their assessment
 
 - At the start of every calibration session. Reminder that:
-
   - Confidentiality is critical - Amazon says breaking confidentiality is a firing offense, which is great.
   - Reminder of the importance of catching unconscious bias.
   - Point is to calibrate the assessment process so it's fair.
@@ -1596,7 +1587,6 @@ The pains of the PSC - _Pain is a good thing, it tells you to pay attention, and
 The things I suffer about during PSCs - _Suffering is unhelpful, try to avoid it_
 
 - Someone gets a bad outcome because I :
-
   - didn't give them the right opportunity or sufficient feedback
   - missed something critical during the year that I should have caught
   - wrote the packet poorly, or presented the packet poorly (or both)
@@ -1716,7 +1706,6 @@ This applies to work, and to life. You could buy a lemon of a car, get brain can
 Three "Players" in this situation:
 
 - The struggling employee
-
   - Remember being in the wrong role SUCKS. Employee is going home after long day, and feeling like shit (rinse and repeat)
   - Once in right role - will feel great. Seen lots of times this happens.
 
@@ -2128,7 +2117,7 @@ Few things make me prouder then this [public feedback on LinkedIn](/static/idvor
 
 On my deathbed, the product I will be most proud of is the people who I watched blossom and grow. It's cliche, but when you love your people they know it, they thrive, and do their best work. It's not just about the work, I want to make sure people think of their lives as well, because, well, that's even more important.
 
-I'm also energized by getting shit done. The thought of shipping, clearing roadblocks, and never being blocked puts a smile on my face.
+I'm also energized by getting shit done. The thought of shipping, clearing roadblocks, and never being blocked puts a smile on my face. [Momentum is emotional gravity](/energy#momentum-is-emotional-gravity)—forward motion creates its own fuel, and teams thrive when they feel that energy.
 
 Speaking of smiling, nothing brings me back up like reading this kind of feedback that I got when I left a team.
 

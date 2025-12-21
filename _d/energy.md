@@ -19,6 +19,14 @@ You can get a blast of energy when someone smiles at you. [Joy](/joy) is like th
 
 It's amazing to me that a good workout does this. So does a productive day at work.
 
+### Momentum is emotional gravity
+
+Momentum is more than progress—it's emotional gravity. When you're moving fast, people want to join you, invest in you, and stay committed. When you're stuck, everything feels heavier than it is.
+
+Most teams don't fail from competition. They fail from losing the energy that made everyone believe in the first place.
+
+Forward motion creates its own fuel. The [productive](/productive) feeling of shipping, completing, moving—it compounds. Stagnation compounds too, but in the wrong direction.
+
 ### Energy drains, regardless of if it's being applied to do work
 
 In fact, sometimes it even drains worse, so care deeply about
