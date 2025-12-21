@@ -18,6 +18,10 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2025-12-21](#2025-12-21)
+    - [obs-cli: Rust TUI for Camera Control](#obs-cli-rust-tui-for-camera-control)
+    - [Rust tmux_helper: 10x Speedup from Python](#rust-tmux_helper-10x-speedup-from-python)
+    - [Tmux Config Overhaul](#tmux-config-overhaul)
   - [2025-12-14](#2025-12-14)
     - [Stream Deck Plugin in 30 Minutes](#stream-deck-plugin-in-30-minutes)
   - [2025-10-26](#2025-10-26)
@@ -207,6 +211,37 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2025-12-21
+
+#### obs-cli: Rust TUI for Camera Control
+
+- **TOP Takeaway**: Built a complete TUI for OBSBOT camera control via OSC protocol - vibe coding makes hardware integration projects trivially accessible
+- **The Project**: [obs-cli](https://github.com/idvorkin/obs-cli) - Terminal UI for controlling OBSBOT robotic cameras
+- **Key Features**:
+  - Vim-style keybindings: h/j/k/l for pan/tilt, i/o for zoom
+  - 9 preset positions (save/recall)
+  - AI tracking toggle, gimbal reset, sleep/wake
+  - Config persisted in `~/.config/obsbot-cli/config.toml`
+- Another niche personal tool that would have taken much longer without AI assistance
+
+#### Rust tmux_helper: 10x Speedup from Python
+
+- **TOP Takeaway**: Porting slow Python CLI tools to Rust is now trivial - went from 100ms to 14ms execution time
+- **The Problem**: Python tmux_helper had noticeable lag on every tmux operation
+- **The Fix**: [Rust implementation](https://github.com/idvorkin/Settings/commit/51cbe99e093f433905baa4fa69b9b1fdcff743de) - complete rewrite with same commands (info, rename-all, rotate, third)
+- **Why It Was Easy**: Claude handled the port with minimal guidance - the translation was mechanical, unit tests included
+- **Result**: 10x speedup (100ms → 14ms), updated `.tmux.conf` to use new binary
+- This pattern applies broadly: identify slow Python CLI tools, ask AI to port to Rust
+
+#### Tmux Config Overhaul
+
+- **TOP Takeaway**: AI-assisted config refactoring makes it easy to finally fix long-standing annoyances
+- **Theme**: Switched from themepack to [Catppuccin](https://github.com/idvorkin/Settings/commit/d43239b) - modern, cohesive look
+- **Status Bar**: [2-row layout](https://github.com/idvorkin/Settings/commit/1ed4c56) - info on top (CPU/RAM/host), windows on bottom
+- **Session Management**: Added [sessionx plugin](https://github.com/idvorkin/Settings/commit/5953fe0) + [launch-servers command](https://github.com/idvorkin/Settings/commit/8c7189c) for dev session management
+- **Auto-rename**: Windows auto-rename every 10s based on running process, "claude" shortened to "cl"
+- ~20 commits of iterative fixes - the kind of tedious config work that AI makes painless
 
 ### 2025-12-14
 
