@@ -788,20 +788,20 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get super lost\n\n",
-            "doc_size": 83000,
+            "doc_size": 82000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai",
                 "/chop",
                 "/walking-with-god"
             ],
-            "last_modified": "2025-12-14T16:47:18+00:00",
+            "last_modified": "2025-12-21T21:51:20.852407+00:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
                 "/ai-security",
+                "/ai-talk",
                 "/eulogy",
-                "/genai-talk",
                 "/gpt",
                 "/hyper-personal",
                 "/mental-pain"
@@ -4019,17 +4019,16 @@
         },
         "/pet-projects": {
             "description": "As an engineer, I love to build bespoke tools that solve my unique problems exactly the way I want them solved. The bonus? This is lets me learn new technologies (did you know my blog has multiplayer support?). Sometimes I even make a tool so I have something to learn from. And with AI, this list of projects and explorations has exploded! Note to self, when I want to veg out and just feed my social media addiction I should do some vibe coding on all of these.\n\n",
-            "doc_size": 24000,
+            "doc_size": 21000,
             "file_path": "_site/pet-projects.html",
             "incoming_links": [
                 "/eulogy"
             ],
-            "last_modified": "2025-12-15T04:21:12+00:00",
+            "last_modified": "2025-12-21T21:51:20.852407+00:00",
             "markdown_path": "_d/pet-projects.md",
             "outgoing_links": [
                 "/bike-tesla-identity",
                 "/process-journal",
-                "/static/pet-projects.html",
                 "/vibe"
             ],
             "redirect_url": "",
