@@ -307,8 +307,7 @@
             "doc_size": 17000,
             "file_path": "_site/22.html",
             "incoming_links": [
-                "/chapters",
-                "/manager-book"
+                "/chapters"
             ],
             "last_modified": "2025-12-06T18:12:26-08:00",
             "markdown_path": "_d/22.md",
@@ -1223,7 +1222,6 @@
             "file_path": "_site/books-that-defined-me.html",
             "incoming_links": [
                 "/being-a-great-manager",
-                "/manager-book",
                 "/manager-book-appendix"
             ],
             "last_modified": "2025-07-20T19:26:41-07:00",
@@ -1819,11 +1817,9 @@
                 "/hobby",
                 "/idle",
                 "/life-as-business",
-                "/manager-book",
                 "/mind-at-work",
                 "/operating-manual",
                 "/physical-health",
-                "/productive",
                 "/psychic-weight",
                 "/sharpen-the-saw",
                 "/slow",
@@ -1859,7 +1855,6 @@
                 "/activation",
                 "/books-that-defined-me",
                 "/enemy",
-                "/energy",
                 "/energy-abundance",
                 "/fail",
                 "/frog",
@@ -1867,7 +1862,6 @@
                 "/gap-year-igor",
                 "/mental-pain",
                 "/parkinson",
-                "/productive",
                 "/psychic-shadows",
                 "/psychic-weight",
                 "/slow",
@@ -1970,7 +1964,6 @@
                 "/coaching",
                 "/gap-year",
                 "/job-hunt-stress",
-                "/manager-book",
                 "/pride",
                 "/random-idea",
                 "/work-satisfaction"
@@ -2241,8 +2234,6 @@
                 "/d/resistance",
                 "/elder",
                 "/gap-year-igor",
-                "/manager-book",
-                "/productive",
                 "/siy",
                 "/walking-with-god"
             ],
@@ -2290,19 +2281,19 @@
                 "/slow",
                 "/timeoff"
             ],
-            "last_modified": "2025-09-30T07:24:35-07:00",
+            "last_modified": "2025-12-21T15:23:15.432495+00:00",
             "markdown_path": "_d/energy.md",
             "outgoing_links": [
                 "/activation",
-                "/d/resistance",
                 "/joy",
                 "/mania",
                 "/mood",
                 "/operating-manual",
                 "/productive",
+                "/resistance",
                 "/sleep",
                 "/slow",
-                "/timeoff"
+                "/time-off"
             ],
             "redirect_url": "",
             "title": "Control your Energy",
@@ -3363,24 +3354,25 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-10-31T17:18:27-07:00",
+            "last_modified": "2025-12-21T15:35:58.643459+00:00",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
             "outgoing_links": [
-                "/22",
+                "/7h-c2",
+                "/90-days",
                 "/90days",
                 "/being-a-great-manager",
-                "/books-that-defined-me",
+                "/books",
+                "/coach",
                 "/coaching",
                 "/coe",
                 "/comp",
-                "/d/habits",
-                "/decisive",
+                "/decide",
                 "/dip",
-                "/end-in-mind",
+                "/dsat",
+                "/habits",
                 "/job",
                 "/job-hunt-stress",
                 "/manager-book-appendix",
-                "/ml",
                 "/moments-at-work",
                 "/overload",
                 "/pride",
@@ -3391,10 +3383,11 @@
                 "/static/idvorkin-linked-in-feedback-lastest.pdf",
                 "/strategy",
                 "/td/cloud-first-applications",
+                "/td/machine-learning",
                 "/testing",
+                "/twentytwo",
                 "/what-makes-a-leader",
-                "/work-satisfaction",
-                "/writing"
+                "/write"
             ],
             "redirect_url": "",
             "title": "How to EM: Be the manager everyone wants",
@@ -3588,7 +3581,6 @@
             "file_path": "_site/ml.html",
             "incoming_links": [
                 "/ai",
-                "/manager-book",
                 "/td/stats"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -3782,7 +3774,6 @@
                 "/curious",
                 "/get-to-yes-with-yourself",
                 "/happy",
-                "/productive",
                 "/sell",
                 "/synergize",
                 "/work-satisfaction"
@@ -4223,18 +4214,18 @@
                 "/energy",
                 "/timeoff-2022-02"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2025-12-21T15:35:58.643459+00:00",
             "markdown_path": "_d/productive2.md",
             "outgoing_links": [
+                "/7h-c2",
                 "/addiction",
                 "/anxiety",
                 "/balance",
-                "/d/habits",
-                "/d/resistance",
-                "/end-in-mind",
                 "/energy",
                 "/frog",
-                "/negotiate",
+                "/gty",
+                "/habits",
+                "/resistance",
                 "/switch"
             ],
             "redirect_url": "",
@@ -5508,7 +5499,6 @@
             "incoming_links": [
                 "/activation",
                 "/balance",
-                "/energy",
                 "/energy-abundance",
                 "/gap-year",
                 "/gap-year-igor",
@@ -6211,7 +6201,6 @@
             "doc_size": 32000,
             "file_path": "_site/work-satisfaction.html",
             "incoming_links": [
-                "/manager-book",
                 "/mind-at-work",
                 "/retire"
             ],
@@ -6263,7 +6252,6 @@
                 "/chow",
                 "/enable",
                 "/four-healths",
-                "/manager-book",
                 "/manager-book-appendix",
                 "/operating-manual"
             ],
