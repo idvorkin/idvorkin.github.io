@@ -7,7 +7,7 @@ imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-fortune-c
 
 Life wisdom in bite-sized pieces. Some from actual fortune cookies, some from conversations, some from that moment at 3am when something finally clicks. These are the breadcrumbs I'm leaving for my kids—and anyone else who finds value in them.
 
-See also: [Igor Fortune Cookie videos](/content-audience#igor-fortune-cookie)
+See also: [Igor Fortune Cookie videos](/content-audience#life-wisdom--igor-fortune-cookie)
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
