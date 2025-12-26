@@ -304,10 +304,11 @@
     "url_info": {
         "/22": {
             "description": "In 2019 I created a program for 15 fantastic interns! A program highlight was my talk titled “What I wish I knew at 22, and so might you”. The talk received a 94% overall rating from over 15 interns, 10 SDE-IIs, and 1 senior developer. Even though the talk focuses on how to live the good life, a big chunk of life is work, so there’s good coverage on how to optimize your career.\n\n",
-            "doc_size": 17000,
+            "doc_size": 16000,
             "file_path": "_site/22.html",
             "incoming_links": [
-                "/chapters"
+                "/chapters",
+                "/manager-book"
             ],
             "last_modified": "2025-12-06T18:12:26-08:00",
             "markdown_path": "_d/22.md",
@@ -520,7 +521,7 @@
         },
         "/activation": {
             "description": "Doing activities requires will power, addictions and procrastination require negative will power, while positive habits, especially new ones require high will power. Here’s a model for these things.\n\n",
-            "doc_size": 28000,
+            "doc_size": 27000,
             "file_path": "_site/activation.html",
             "incoming_links": [
                 "/addiction",
@@ -762,7 +763,7 @@
             "incoming_links": [
                 "/ai"
             ],
-            "last_modified": "2025-12-07T02:26:29+00:00",
+            "last_modified": "2025-12-21T16:27:51+00:00",
             "markdown_path": "_d/ai-developer.md",
             "outgoing_links": [
                 "/ai"
@@ -788,7 +789,7 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get super lost\n\n",
-            "doc_size": 82000,
+            "doc_size": 86000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai",
@@ -800,8 +801,8 @@
             "outgoing_links": [
                 "/ai-art",
                 "/ai-security",
-                "/ai-talk",
                 "/eulogy",
+                "/genai-talk",
                 "/gpt",
                 "/hyper-personal",
                 "/mental-pain"
@@ -812,7 +813,7 @@
         },
         "/ai-paper": {
             "description": "The original AI papers were all about training, super technical, and not that usable as a practitioner. Nowadays papers are less “mathy” and more applicable to practitioners. Here are some worth reading\n\n",
-            "doc_size": 18000,
+            "doc_size": 17000,
             "file_path": "_site/ai-paper.html",
             "incoming_links": [
                 "/ai"
@@ -832,7 +833,7 @@
                 "/ai",
                 "/ai-journal"
             ],
-            "last_modified": "2025-12-06T18:03:02-08:00",
+            "last_modified": "2025-12-21T16:27:51+00:00",
             "markdown_path": "_d/ai-security.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -1047,7 +1048,7 @@
         },
         "/balloon": {
             "description": "Want to plaster a huge smile on someone’s face with 10 cents of material and 20 seconds of work? Make them a balloon! In 2022, I discovered ballooning, and have used it in my joy-delivering arsenal ever since.\n\n",
-            "doc_size": 22000,
+            "doc_size": 21000,
             "file_path": "_site/balloon.html",
             "incoming_links": [
                 "/eulogy",
@@ -1065,7 +1066,7 @@
         },
         "/bc": {
             "description": "A guide to my favorite spots in British Columbia, focusing on Vancouver and Chilliwack. Whether you’re planning a quick weekend getaway or a longer adventure, here’s what you need to know. These recommendations come from my personal experiences over multiple trips - you can read about some of them in my summer 2024 adventures, Yellow Deli expedition, and various time off adventures:\n\n",
-            "doc_size": 23000,
+            "doc_size": 22000,
             "file_path": "_site/bc.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T03:02:44+00:00",
@@ -1081,7 +1082,7 @@
         },
         "/be-proactive": {
             "description": "I choose ‘.’ I am responsible for my own life ‘.’ My behavior is a function of my decisions, not my conditions ‘.’ I can subordinate feelings to values ‘.’ I have the initiative and the responsibility to make things happen. These are my insights from 7 habits Chapter 1.\n\n",
-            "doc_size": 22000,
+            "doc_size": 21000,
             "file_path": "_site/be-proactive.html",
             "incoming_links": [
                 "/7-habits",
@@ -1218,10 +1219,11 @@
         },
         "/books-that-defined-me": {
             "description": "Books allow great thoughts to enter our mind and mold us into who we want to become. These are the books that are molding me.\n\n",
-            "doc_size": 17000,
+            "doc_size": 16000,
             "file_path": "_site/books-that-defined-me.html",
             "incoming_links": [
                 "/being-a-great-manager",
+                "/manager-book",
                 "/manager-book-appendix"
             ],
             "last_modified": "2025-07-20T19:26:41-07:00",
@@ -1567,12 +1569,14 @@
             "file_path": "_site/content-audience.html",
             "incoming_links": [
                 "/content-creation",
+                "/fortune-cookies",
                 "/y25"
             ],
             "last_modified": "2025-12-07T03:02:44+00:00",
             "markdown_path": "_d/content-audience.md",
             "outgoing_links": [
                 "/end-in-mind",
+                "/fortune-cookies",
                 "/manager-book"
             ],
             "redirect_url": "",
@@ -1817,9 +1821,11 @@
                 "/hobby",
                 "/idle",
                 "/life-as-business",
+                "/manager-book",
                 "/mind-at-work",
                 "/operating-manual",
                 "/physical-health",
+                "/productive",
                 "/psychic-weight",
                 "/sharpen-the-saw",
                 "/slow",
@@ -1855,6 +1861,7 @@
                 "/activation",
                 "/books-that-defined-me",
                 "/enemy",
+                "/energy",
                 "/energy-abundance",
                 "/fail",
                 "/frog",
@@ -1862,6 +1869,7 @@
                 "/gap-year-igor",
                 "/mental-pain",
                 "/parkinson",
+                "/productive",
                 "/psychic-shadows",
                 "/psychic-weight",
                 "/slow",
@@ -1908,7 +1916,7 @@
         },
         "/day-in-the-life": {
             "description": "A running journal of days that actually worked - the ones where health habits stuck, family time hit different, or I remembered what it feels like to be fully alive. Not every day needs to be Instagram-worthy, but some days deserve a bookmark. This is that bookmark collection.\n\n",
-            "doc_size": 19000,
+            "doc_size": 18000,
             "file_path": "_site/day-in-the-life.html",
             "incoming_links": [],
             "last_modified": "2025-10-04T18:43:51-07:00",
@@ -1945,7 +1953,7 @@
         },
         "/debug": {
             "description": "Igor's Blog",
-            "doc_size": 24000,
+            "doc_size": 23000,
             "file_path": "_site/debug.html",
             "incoming_links": [],
             "last_modified": "2025-03-16T16:15:36+00:00",
@@ -1964,6 +1972,7 @@
                 "/coaching",
                 "/gap-year",
                 "/job-hunt-stress",
+                "/manager-book",
                 "/pride",
                 "/random-idea",
                 "/work-satisfaction"
@@ -2234,6 +2243,8 @@
                 "/d/resistance",
                 "/elder",
                 "/gap-year-igor",
+                "/manager-book",
+                "/productive",
                 "/siy",
                 "/walking-with-god"
             ],
@@ -2276,24 +2287,25 @@
             "incoming_links": [
                 "/balance",
                 "/energy-abundance",
+                "/manager-book",
                 "/mood",
                 "/productive",
                 "/slow",
                 "/timeoff"
             ],
-            "last_modified": "2025-12-21T15:23:15.432495+00:00",
+            "last_modified": "2025-12-21T15:38:26+00:00",
             "markdown_path": "_d/energy.md",
             "outgoing_links": [
                 "/activation",
+                "/d/resistance",
                 "/joy",
                 "/mania",
                 "/mood",
                 "/operating-manual",
                 "/productive",
-                "/resistance",
                 "/sleep",
                 "/slow",
-                "/time-off"
+                "/timeoff"
             ],
             "redirect_url": "",
             "title": "Control your Energy",
@@ -2448,7 +2460,7 @@
         },
         "/first-things-first": {
             "description": "The key to effective management, is allocating energy through the lens of importance rather than urgency. E.g, ask yourself what one thing could you do that if you did on a regular basis, would make a tremendous positive difference in your life? Lemme guess, it’s important, but not urgent so you’re not doing it. These are my insights based on the 7 habits Chapter 3.\n\n",
-            "doc_size": 26000,
+            "doc_size": 25000,
             "file_path": "_site/first-things-first.html",
             "incoming_links": [
                 "/4dx",
@@ -2501,6 +2513,22 @@
             "redirect_url": "",
             "title": "Seek first to understand, then to be understood",
             "url": "/first-understand"
+        },
+        "/fortune-cookies": {
+            "description": "Life wisdom in bite-sized pieces. Some from actual fortune cookies, some from conversations, some from that moment at 3am when something finally clicks. These are the breadcrumbs I’m leaving for my kids—and anyone else who finds value in them.\n\n",
+            "doc_size": 20000,
+            "file_path": "_site/fortune-cookies.html",
+            "incoming_links": [
+                "/content-audience"
+            ],
+            "last_modified": "2025-12-26T18:09:03.399351+00:00",
+            "markdown_path": "_d/fortune-cookies.md",
+            "outgoing_links": [
+                "/content-audience"
+            ],
+            "redirect_url": "",
+            "title": "Fortune Cookies",
+            "url": "/fortune-cookies"
         },
         "/four-healths": {
             "description": "Health isn’t one-dimensional. You can be physically fit but emotionally exhausted. You can be cognitively sharp but spiritually adrift. True well-being requires attending to all four dimensions of health: physical, emotional, spiritual, and cognitive. Each dimension serves a different purpose, requires different practices, and neglecting any one creates vulnerabilities that ripple across your entire life.\n\n",
@@ -2682,7 +2710,7 @@
         },
         "/goals": {
             "description": "Goals are critical, there are multiple goal systems and they have consequences. They are mechanisms to deliver without micro management.\n\n",
-            "doc_size": 21000,
+            "doc_size": 20000,
             "file_path": "_site/goals.html",
             "incoming_links": [
                 "/4dx",
@@ -2712,7 +2740,7 @@
         },
         "/gpt": {
             "description": "Just like the search bar in google fills in what you’re typing when you say “Where can I ge .. “ GPT3 complete strings as well. Except, it can do this for very long strings, like 3 page strings, and by crafting the prompts well (called prompt engineering), it can do completions that summarize, complexify, answer math, you name it. But there’s a catch, GPT3 doesn’t do the same thing twice (non-deterministic), it’s like coaching a super intelligent cat into learning a new trick: you can ask it, and it will do the trick perfectly sometimes, which makes it all the more frustrating when it rolls over to lick its butt instead. You know the problem is not that it can’t but that it won’t(From Gwern).\n\n",
-            "doc_size": 26000,
+            "doc_size": 25000,
             "file_path": "_site/gpt.html",
             "incoming_links": [
                 "/ai-art",
@@ -2756,7 +2784,7 @@
         },
         "/grammerly": {
             "description": "\n\n",
-            "doc_size": 13000,
+            "doc_size": 12000,
             "file_path": "_site/grammerly.html",
             "incoming_links": [],
             "last_modified": "2025-08-24T09:03:19-07:00",
@@ -3248,7 +3276,7 @@
         },
         "/learn-code": {
             "description": "Coding is way easier than people think. Here’s some pointers.\n\n",
-            "doc_size": 14000,
+            "doc_size": 13000,
             "file_path": "_site/learn-code.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T02:47:07+00:00",
@@ -3357,22 +3385,22 @@
             "last_modified": "2025-12-21T15:35:58.643459+00:00",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
             "outgoing_links": [
-                "/7h-c2",
-                "/90-days",
+                "/22",
                 "/90days",
                 "/being-a-great-manager",
-                "/books",
-                "/coach",
+                "/books-that-defined-me",
                 "/coaching",
                 "/coe",
                 "/comp",
-                "/decide",
+                "/d/habits",
+                "/decisive",
                 "/dip",
-                "/dsat",
-                "/habits",
+                "/end-in-mind",
+                "/energy",
                 "/job",
                 "/job-hunt-stress",
                 "/manager-book-appendix",
+                "/ml",
                 "/moments-at-work",
                 "/overload",
                 "/pride",
@@ -3383,11 +3411,10 @@
                 "/static/idvorkin-linked-in-feedback-lastest.pdf",
                 "/strategy",
                 "/td/cloud-first-applications",
-                "/td/machine-learning",
                 "/testing",
-                "/twentytwo",
                 "/what-makes-a-leader",
-                "/write"
+                "/work-satisfaction",
+                "/writing"
             ],
             "redirect_url": "",
             "title": "How to EM: Be the manager everyone wants",
@@ -3488,7 +3515,7 @@
         },
         "/mermaid": {
             "description": "Lets try d2\n\n",
-            "doc_size": 15000,
+            "doc_size": 14000,
             "file_path": "_site/mermaid.html",
             "incoming_links": [],
             "last_modified": "2023-12-17T18:49:14+00:00",
@@ -3512,7 +3539,7 @@
         },
         "/mind-at-work": {
             "description": "I have a problem, an addiction, an addiction so detrimental to quality of life, it should be described as a disease. This disease is not being present. There are many symptoms of the disease, but today I’m going to talk about my most frequent symptoms, my body at home, but my mind at work.\n\n",
-            "doc_size": 20000,
+            "doc_size": 19000,
             "file_path": "_site/mind-at-work.html",
             "incoming_links": [
                 "/addiction",
@@ -3581,6 +3608,7 @@
             "file_path": "_site/ml.html",
             "incoming_links": [
                 "/ai",
+                "/manager-book",
                 "/td/stats"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -3774,6 +3802,7 @@
                 "/curious",
                 "/get-to-yes-with-yourself",
                 "/happy",
+                "/productive",
                 "/sell",
                 "/synergize",
                 "/work-satisfaction"
@@ -4019,7 +4048,7 @@
         },
         "/pet-projects": {
             "description": "As an engineer, I love to build bespoke tools that solve my unique problems exactly the way I want them solved. The bonus? This is lets me learn new technologies (did you know my blog has multiplayer support?). Sometimes I even make a tool so I have something to learn from. And with AI, this list of projects and explorations has exploded! Note to self, when I want to veg out and just feed my social media addiction I should do some vibe coding on all of these.\n\n",
-            "doc_size": 21000,
+            "doc_size": 24000,
             "file_path": "_site/pet-projects.html",
             "incoming_links": [
                 "/eulogy"
@@ -4029,6 +4058,7 @@
             "outgoing_links": [
                 "/bike-tesla-identity",
                 "/process-journal",
+                "/static/pet-projects.html",
                 "/vibe"
             ],
             "redirect_url": "",
@@ -4216,15 +4246,15 @@
             "last_modified": "2025-12-21T15:35:58.643459+00:00",
             "markdown_path": "_d/productive2.md",
             "outgoing_links": [
-                "/7h-c2",
                 "/addiction",
                 "/anxiety",
                 "/balance",
+                "/d/habits",
+                "/d/resistance",
+                "/end-in-mind",
                 "/energy",
                 "/frog",
-                "/gty",
-                "/habits",
-                "/resistance",
+                "/negotiate",
                 "/switch"
             ],
             "redirect_url": "",
@@ -5075,7 +5105,7 @@
         },
         "/td/back_ref": {
             "description": "This blog is my collection of evergreen notes, a place to have my thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here’s my strategy to create them.\n\n",
-            "doc_size": 14000,
+            "doc_size": 13000,
             "file_path": "_site/td/back_ref.html",
             "incoming_links": [],
             "last_modified": "2022-04-16T15:22:43-07:00",
@@ -5118,7 +5148,7 @@
         },
         "/td/data-systems": {
             "description": "This page contains my knowledge of data systems. Mostly just a summary of Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems\n\n",
-            "doc_size": 25000,
+            "doc_size": 24000,
             "file_path": "_site/td/data-systems.html",
             "incoming_links": [
                 "/amazon",
@@ -5498,6 +5528,7 @@
             "incoming_links": [
                 "/activation",
                 "/balance",
+                "/energy",
                 "/energy-abundance",
                 "/gap-year",
                 "/gap-year-igor",
@@ -6200,6 +6231,7 @@
             "doc_size": 32000,
             "file_path": "_site/work-satisfaction.html",
             "incoming_links": [
+                "/manager-book",
                 "/mind-at-work",
                 "/retire"
             ],
@@ -6251,6 +6283,7 @@
                 "/chow",
                 "/enable",
                 "/four-healths",
+                "/manager-book",
                 "/manager-book-appendix",
                 "/operating-manual"
             ],

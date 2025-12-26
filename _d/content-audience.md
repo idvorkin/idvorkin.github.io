@@ -77,21 +77,19 @@ Planning feels good when we're afraid because it gives us the illusion of progre
 
 ### Funny Story Today
 
+{% include youtube_playlist_float_left.html list="PLJveOxX-mxxD22iUkwLNaqGL_vawnmNau" %}
+
 Daily moments worth remembering
 
-{% include youtube_playlist.html list="PLJveOxX-mxxD22iUkwLNaqGL_vawnmNau" %}
+<div style="clear:both"></div>
 
 ### Igor's Affirmations
 
+{% include youtube_playlist_float_left.html list="PLJveOxX-mxxC9PYL8ElnUnFe-SDh4h_wo" %}
+
 Values I'm reinforcing (Essentialist, Class Act, etc.)
 
-{% include youtube_playlist.html list="PLJveOxX-mxxC9PYL8ElnUnFe-SDh4h_wo" %}
-
-### Igor Fortune Cookie
-
-Life wisdom in 60 seconds - leaving breadcrumbs for my kids and anyone else who finds value
-
-{% include youtube_playlist.html list="PLJveOxX-mxxBsIsk83fr0sb3i7RdpaJbF" %}
+<div style="clear:both"></div>
 
 ### Music Videos/Dances
 
@@ -107,15 +105,19 @@ Time with kids, life lessons
 
 ### Achievement Unlocked
 
+{% include youtube_playlist_float_left.html list="PLJveOxX-mxxAdPTShIvnMLKiHBcjijdBG" %}
+
 Celebrating wins and milestones
 
-{% include youtube_playlist.html list="PLJveOxX-mxxAdPTShIvnMLKiHBcjijdBG" %}
+<div style="clear:both"></div>
 
 ### Jump in the Lake Day
 
+{% include youtube_playlist_float_left.html list="PLJveOxX-mxxCy0xIRl4oV-18-bQFiwyi8" %}
+
 Daily cold plunges and water adventures
 
-{% include youtube_playlist.html list="PLJveOxX-mxxCy0xIRl4oV-18-bQFiwyi8" %}
+<div style="clear:both"></div>
 
 ## 2. Welcome to Being Human
 
@@ -139,9 +141,15 @@ Daily cold plunges and water adventures
 
 Managing feelings, mental wellness
 
-### Life Wisdom
+### Life Wisdom / Igor Fortune Cookie
 
-Lessons learned the hard way
+{% include youtube_playlist_float_left.html list="PLJveOxX-mxxBsIsk83fr0sb3i7RdpaJbF" %}
+
+Life wisdom in 60 seconds - leaving breadcrumbs for my kids and anyone else who finds value. Lessons learned the hard way.
+
+{%include summarize-page.html src="/fortune-cookies"%}
+
+<div style="clear:both"></div>
 
 ### Relationship Navigation
 
