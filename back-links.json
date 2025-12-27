@@ -100,6 +100,7 @@
         "/failure": "/fail",
         "/fatality": "/death",
         "/fb": "/facebook",
+        "/feedback-beats-planning": "/planning",
         "/feeling-meetings": "/human-meetings",
         "/feelings": "/emotions",
         "/first-thing-first": "/first-things-first",
@@ -196,6 +197,7 @@
         "/perfect-job": "/job",
         "/personal-development": "/timeoff",
         "/phoney": "/insecure",
+        "/plan": "/planning",
         "/pm": "/product",
         "/podcasting": "/podcast",
         "/podcasts": "/podcast",
@@ -529,6 +531,7 @@
                 "/energy",
                 "/energy-abundance",
                 "/gap-year-igor",
+                "/planning",
                 "/produce-consume",
                 "/slow",
                 "/timeoff-2021-12"
@@ -1572,7 +1575,7 @@
                 "/fortune-cookies",
                 "/y25"
             ],
-            "last_modified": "2025-12-07T03:02:44+00:00",
+            "last_modified": "2025-12-26T18:36:31+00:00",
             "markdown_path": "_d/content-audience.md",
             "outgoing_links": [
                 "/end-in-mind",
@@ -2233,7 +2236,7 @@
         },
         "/end-in-mind": {
             "description": "All things are created twice, once in the design phase, and then again in the implementation phase. If you don’t perform the first creation, someone else will. At the extreme, imagine your eulogy, that’s the end too.\n\n",
-            "doc_size": 17000,
+            "doc_size": 16000,
             "file_path": "_site/end-in-mind.html",
             "incoming_links": [
                 "/4dx",
@@ -2243,20 +2246,19 @@
                 "/d/resistance",
                 "/elder",
                 "/gap-year-igor",
-                "/manager-book",
+                "/planning",
                 "/productive",
                 "/siy",
                 "/walking-with-god"
             ],
-            "last_modified": "2025-05-12T09:24:30-07:00",
+            "last_modified": "2025-12-27T18:06:18+00:00",
             "markdown_path": "_d/7h-c2.md",
             "outgoing_links": [
                 "/7-habits",
                 "/dip",
                 "/essentialism",
                 "/eulogy",
-                "/joy",
-                "/touching"
+                "/planning"
             ],
             "redirect_url": "",
             "title": "Begin with the end in mind",
@@ -2289,6 +2291,7 @@
                 "/energy-abundance",
                 "/manager-book",
                 "/mood",
+                "/planning",
                 "/productive",
                 "/slow",
                 "/timeoff"
@@ -2516,12 +2519,12 @@
         },
         "/fortune-cookies": {
             "description": "Life wisdom in bite-sized pieces. Some from actual fortune cookies, some from conversations, some from that moment at 3am when something finally clicks. These are the breadcrumbs I’m leaving for my kids—and anyone else who finds value in them.\n\n",
-            "doc_size": 20000,
+            "doc_size": 22000,
             "file_path": "_site/fortune-cookies.html",
             "incoming_links": [
                 "/content-audience"
             ],
-            "last_modified": "2025-12-26T18:09:03.399351+00:00",
+            "last_modified": "2025-12-26T18:41:52+00:00",
             "markdown_path": "_d/fortune-cookies.md",
             "outgoing_links": [
                 "/content-audience"
@@ -3178,7 +3181,6 @@
                 "/balloon",
                 "/build-bubble-bike",
                 "/emotions",
-                "/end-in-mind",
                 "/energy",
                 "/happy",
                 "/hobby",
@@ -3365,7 +3367,7 @@
         },
         "/manager-book": {
             "description": "Being an engineering manager is hard. Supporting people well is harder. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds me how to behave and encourages my own continuous improvement.\n\n",
-            "doc_size": 180000,
+            "doc_size": 179000,
             "file_path": "_site/manager-book.html",
             "incoming_links": [
                 "/amazon",
@@ -3375,6 +3377,7 @@
                 "/content-audience",
                 "/job",
                 "/manager-book-appendix",
+                "/planning",
                 "/retire",
                 "/software-leadership-roles",
                 "/tribe",
@@ -3382,7 +3385,7 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-12-21T15:35:58.643459+00:00",
+            "last_modified": "2025-12-27T18:11:33+00:00",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
             "outgoing_links": [
                 "/22",
@@ -3395,7 +3398,6 @@
                 "/d/habits",
                 "/decisive",
                 "/dip",
-                "/end-in-mind",
                 "/energy",
                 "/job",
                 "/job-hunt-stress",
@@ -3403,6 +3405,7 @@
                 "/ml",
                 "/moments-at-work",
                 "/overload",
+                "/planning",
                 "/pride",
                 "/product",
                 "/prompts",
@@ -4119,6 +4122,26 @@
             "redirect_url": "",
             "title": "Physical Pain: Understanding and Managing It",
             "url": "/physical-pain"
+        },
+        "/planning": {
+            "description": "The plan trains the planner. Planning isn’t about predicting the future—it’s about preparing your mind to meet it. It clarifies goals, surfaces unknowns, and builds the pattern recognition you’ll need when reality punches your plan in the face. But the goal of planning is action, not the plan. The moment you’re polishing instead of testing, you’ve crossed from preparation into procrastination.\n\n",
+            "doc_size": 19000,
+            "file_path": "_site/planning.html",
+            "incoming_links": [
+                "/end-in-mind",
+                "/manager-book"
+            ],
+            "last_modified": "2025-12-27T18:11:33+00:00",
+            "markdown_path": "_d/planning.md",
+            "outgoing_links": [
+                "/activation",
+                "/end-in-mind",
+                "/energy",
+                "/manager-book"
+            ],
+            "redirect_url": "",
+            "title": "Planning: When to Think, When to Act",
+            "url": "/planning"
         },
         "/podcast": {
             "description": "To my amazement, I listen to podcasts. I think they’re pretty interesting, here are my notes on them.\n\n",
@@ -5906,7 +5929,6 @@
             "file_path": "_site/touching.html",
             "incoming_links": [
                 "/class-act",
-                "/end-in-mind",
                 "/joy",
                 "/sublime"
             ],

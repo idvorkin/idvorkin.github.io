@@ -49,9 +49,16 @@ repos:
         exclude: "^(assets|chop-logs|zz-chop-logs|cursor-logs|published-chop-logs|back-links.json|images/.*\\.excalidraw|old_blog|static)/.*$"
         args: []  # Uses .typos.toml for configuration
 
-  # 🧪 Local fast tests
+  # 🧪 Local hooks
   - repo: local
     hooks:
+      - id: beads-sync
+        name: Flush beads changes
+        entry: bash -c 'command -v bd >/dev/null && [ -d .beads ] && bd sync --flush-only && git add .beads/issues.jsonl 2>/dev/null; true'
+        language: system
+        pass_filenames: false
+        always_run: true
+
       - id: test
         name: Run Fast Tests
         entry: just fast-test
