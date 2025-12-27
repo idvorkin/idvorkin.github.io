@@ -1,0 +1,99 @@
+---
+layout: post
+title: "Planning: When to Think, When to Act"
+tags:
+  - how igor ticks
+  - book-notes
+permalink: /planning
+redirect_from:
+  - /plan
+  - /feedback-beats-planning
+---
+
+Planning is powerful - [begin with the end in mind](/end-in-mind). But planning can also become a trap. This post explores the tension between thinking and doing.
+
+{% include ai-slop.html percent="50" %}
+
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc-start -->
+
+- [The Value of Planning](#the-value-of-planning)
+- [The Danger of Over-Planning](#the-danger-of-over-planning)
+  - [Planning as Security Theater](#planning-as-security-theater)
+  - [Feedback Loops Beat Forecasting](#feedback-loops-beat-forecasting)
+  - [The SpaceX Way vs. The NASA Way](#the-spacex-way-vs-the-nasa-way)
+  - [Knowledge Only Comes From Empirical Observation](#knowledge-only-comes-from-empirical-observation)
+  - [Cowboy Style](#cowboy-style)
+- [Finding the Balance](#finding-the-balance)
+
+<!-- vim-markdown-toc-end -->
+<!-- prettier-ignore-end -->
+
+## The Value of Planning
+
+All things are created twice - once in the design phase, and then again in the implementation phase. If you don't perform the first creation, someone else will.
+
+{% include summarize-page.html src="/end-in-mind" %}
+
+**The plan trains the planner.** Planning isn't about predicting the future—it's about preparing your mind to meet it:
+
+- **Clarifies the goal** - Forces you to articulate what success actually looks like
+- **Surfaces unknowns** - Planning walks you toward the edges where risks hide; without it, you wander randomly and may never find them until they find you
+- **Prepares pattern recognition** - When reality diverges, you notice faster because you thought through scenarios
+- **Builds alignment** - Gets others on the same page before chaos hits
+- **Lowers activation energy** - Sometimes you need enough plan to feel ready to start
+
+## The Danger of Over-Planning
+
+> "Everyone has a plan until they get punched in the face." — Mike Tyson
+
+> "No plan survives first contact with the enemy." — Helmuth von Moltke
+
+> "Plans are worthless, but planning is everything." — Eisenhower
+
+But here's the counter: if you have no plan at all, there's nothing to adapt. The plan gives you a starting point—a hypothesis to test against reality. Without it, you're just reacting randomly.
+
+### Planning as Security Theater
+
+_Based on this [tweet](https://x.com/Devon_Eriksen_/status/1910314718998192537)_
+
+If there's something you want to do, some goal you have, it's easy to dip a toe in the water, test the temperature, and plan. A lot.
+
+Planning makes us feel good if we're afraid. It provides the illusion of security. Never mind that we don't know which scenarios are actually going to happen, never mind that we're planning for the wrong thing—planning makes us feel safe. And if we're nervous, we can plan forever.
+
+### Feedback Loops Beat Forecasting
+
+The difference between the expert and the novice isn't theory or intelligence or plans. It's relevant domain knowledge—gathered from empirical observation and experience.
+
+The trick is to get into that feedback loop as soon as possible, and run it as fast as possible. Give yourself the most possible opportunities to learn, per unit time.
+
+**We only learn while we are moving.** [Momentum is emotional gravity](/energy#momentum-is-emotional-gravity)—forward motion creates its own fuel. See also [Activation Energy](/activation).
+
+### The SpaceX Way vs. The NASA Way
+
+NASA gold-plated everything: plan and test and plan and test, generating mountains of paper detailing every contingency.
+
+SpaceX just shrugs, says "it's unmanned," and sends it. Half the time it blows up. That's the whole point.
+
+One rocket blowing up in an actual end-to-end test beats many man-years of planning and plotting.
+
+### Knowledge Only Comes From Empirical Observation
+
+Everything else is speculative. The sooner you get into a feedback loop, and the faster you run it, the more iterations you can do in less time. While others are planning and speculating, you actually learn something.
+
+Relevant data is the most precious thing in the universe. Worth blowing up any number of rockets to get it.
+
+Rockets are just stuff. You can always get more stuff. You can never get more time.
+
+### Cowboy Style
+
+Expect things to go wrong. Anticipate it. Accept it when it happens. Doesn't mean the dream is dead.
+
+It just means we're doing it cowboy style.
+
+## Finding the Balance
+
+- Plan enough to have direction, not so much that you're avoiding action
+- Use planning to clarify the goal, then get into a feedback loop
+- When nervous, notice if planning is productive or procrastination
+- Ship early, learn fast, iterate
