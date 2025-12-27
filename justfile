@@ -1,6 +1,10 @@
 default:
     @just --list
 
+# Setup development environment (run once after clone)
+setup:
+    pre-commit install
+
 # ===== JavaScript/TypeScript Build System =====
 # For JavaScript/TypeScript development, use these commands:
 # - js-build: Build all JavaScript/TypeScript files for production
