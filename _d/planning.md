@@ -10,7 +10,7 @@ redirect_from:
   - /feedback-beats-planning
 ---
 
-Planning is powerful - [begin with the end in mind](/end-in-mind). But planning can also become a trap. This post explores the tension between thinking and doing.
+The plan trains the planner. Planning isn't about predicting the future—it's about preparing your mind to meet it. It clarifies goals, surfaces unknowns, and builds the pattern recognition you'll need when reality punches your plan in the face. But the goal of planning is action, not the plan. The moment you're polishing instead of testing, you've crossed from preparation into procrastination.
 
 {% include ai-slop.html percent="50" %}
 
@@ -93,7 +93,12 @@ It just means we're doing it cowboy style.
 
 ## Finding the Balance
 
+**The goal of planning is to get you into action and make progress. It's not to have a plan.**
+
+The plan is a means, not an end. The moment it stops propelling you forward—the moment you're polishing the plan instead of testing it—you've crossed from preparation into procrastination.
+
 - Plan enough to have direction, not so much that you're avoiding action
 - Use planning to clarify the goal, then get into a feedback loop
 - When nervous, notice if planning is productive or procrastination
 - Ship early, learn fast, iterate
+- A "good enough" plan executed today beats a perfect plan next month
