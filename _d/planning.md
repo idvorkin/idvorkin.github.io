@@ -102,3 +102,7 @@ The plan is a means, not an end. The moment it stops propelling you forward—th
 - When nervous, notice if planning is productive or procrastination
 - Ship early, learn fast, iterate
 - A "good enough" plan executed today beats a perfect plan next month
+
+## See also
+
+- [Manager Book: Planning, Roadmaps and Resource Allocation](/manager-book#planning-roadmaps-and-resource-allocation)

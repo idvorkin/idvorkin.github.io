@@ -1347,18 +1347,7 @@ Suppose it takes 1 quarter for backend, 1 for Android, and 3 for iOS, but the ta
 
 ### Be wary the planning trap
 
-- _xref: [Begin with the end in mind](/7h-c2)_
-- _Copied from this [tweet](https://x.com/Devon_Eriksen_/status/1910314718998192537)\_
-
-This is a valuable lesson for our own lives. If there's something you want to do, something you want to try, some goal you have, it's easy to dip a toe in the water, test the temperature, and plan. A lot.
-
-Planning makes us feel good if we're afraid. Because it provides us with the illusion of security. Never mind that we don't know which scenarios are actually going to happen, never mind that we're planning for the wrong thing, planning makes us feel safe. And if we're nervous, we can plan forever.
-
-But the difference between the expert and the novice isn't theory or intelligence or plans. It's relevant domain knowledge. Gathered from empirical observation and experience.
-
-So the trick is to get into that feedback loop as soon as possible, and run it as fast as possible. Give yourself the most possible opportunities to learn, per unit time.
-
-We only learn while we are moving.
+{% include summarize-page.html src="/planning" %}
 
 ## Hiring
 
