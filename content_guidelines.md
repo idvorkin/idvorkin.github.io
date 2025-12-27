@@ -475,6 +475,32 @@ Use alert boxes to highlight important information, warnings, or construction no
 {% include alert.html content="🚧 Construction Zone 🚧 This post is in heavy progress! 🔨 Check back later for updates ⏳" style="warning" %}
 ```
 
+### AI Slop Notice
+
+For posts with significant AI-generated content, use the ai-slop include:
+
+**Syntax:**
+
+```liquid
+{% include ai-slop.html percent="85" %}
+```
+
+**CRITICAL: Place after the first paragraph, not before.** Putting it in the first paragraph breaks page previews/excerpts (see "Lead Paragraph / Post Excerpt" section above).
+
+**Correct placement:**
+
+```markdown
+---
+[front matter]
+---
+
+Your compelling first paragraph that serves as the excerpt...
+
+{% include ai-slop.html percent="85" %}
+
+Rest of post content...
+```
+
 ### URL Redirects
 
 Set up redirects for shorter, memorable URLs using both `redirect_from` and `alias`:

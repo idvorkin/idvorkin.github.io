@@ -134,6 +134,19 @@ Use `{% include quadrant-matrix.html %}` - see existing uses for parameter refer
 
 See `_d/tesla.md` for implementation. Backend: [github.com/idvorkin/tony_tesla](https://github.com/idvorkin/tony_tesla)
 
+## Previewing Pages
+
+When giving preview links, check if Tailscale is available:
+
+```bash
+tailscale status --json | jq -r '.Self.DNSName' | sed 's/\.$//'
+```
+
+- **If on Tailscale**: Use `http://<tailscale-host>:<port>/<permalink>`
+- **If not on Tailscale**: Use `http://localhost:<port>/<permalink>`
+
+The `just serve` command outputs the appropriate URL and port automatically.
+
 ## Internal Link Guidelines
 
 **Always use permalinks**, not redirect URLs:
