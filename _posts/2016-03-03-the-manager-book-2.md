@@ -1,16 +1,5 @@
 ---
-layout: post
-title: "How to EM: Be the manager everyone wants"
-imagefeature: https://github.com/idvorkin/blob/raw/master/idvorkin-manager-book-1200-628.png
-tags:
-  - manager
-  - search-featured
-  - manager-book
-permalink: /manager-book
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/racoon-manager.webp
-redirect_from:
-  - /the-manager-book
-sort_order: 100
+{}
 ---
 
 Being an engineering manager is hard. Supporting people well is harder. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds me how to behave and encourages my own continuous improvement.
@@ -140,6 +129,14 @@ This post uses the word manager, but many topics apply to all job functions, reg
     - [The FAQ](#the-faq)
   - [How to handle Layoffs](#how-to-handle-layoffs)
     - [What's the best way to execute layoff announcements?](#whats-the-best-way-to-execute-layoff-announcements)
+- [Igor's Management Manifesto](#igors-management-manifesto)
+  - [My Purpose](#my-purpose)
+  - [How I Lead](#how-i-lead)
+  - [How I Communicate](#how-i-communicate)
+  - [The Culture I Build](#the-culture-i-build)
+  - [What You Can Expect From Me](#what-you-can-expect-from-me)
+  - [What I Expect From You](#what-i-expect-from-you)
+  - [How I Measure Myself](#how-i-measure-myself)
 - [Personal Motivations](#personal-motivations)
   - [Why do you find management attractive](#why-do-you-find-management-attractive)
   - [What is your dream job](#what-is-your-dream-job)
