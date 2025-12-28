@@ -1,16 +1,5 @@
 ---
-layout: post
-title: "How to EM: Be the manager everyone wants"
-imagefeature: https://github.com/idvorkin/blob/raw/master/idvorkin-manager-book-1200-628.png
-tags:
-  - manager
-  - search-featured
-  - manager-book
-permalink: /manager-book
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/racoon-manager.webp
-redirect_from:
-  - /the-manager-book
-sort_order: 100
+{}
 ---
 
 Being an engineering manager is hard. Supporting people well is harder. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds me how to behave and encourages my own continuous improvement.
@@ -18,73 +7,6 @@ Being an engineering manager is hard. Supporting people well is harder. Lessons 
 This post uses the word manager, but many topics apply to all job functions, regardless of seniority or number of direct reports, zero direct reports included.
 
 {%include blob_image_float_right.html src="blog/racoon-manager.webp" %}
-
-## Igor's Management Manifesto
-
-_The beliefs that drive everything else in this book._
-
-### My Purpose
-
-**My success is your success.** I have no product except the team. When you thrive, grow, and ship great work - that's my job done right. On my deathbed, the product I'll be proudest of is the people I watched blossom.
-
-**You are not a resource.** You're a three-dimensional human with a life outside work, emotions, and dreams. I can't be efficient with people - only effective. It always pays off.
-
-**Coaching is midwifery.** I can't give birth to your insights - I can only help you deliver them yourself. My job is asking the right questions, not having all the answers.
-
-### How I Lead
-
-**Autonomy, Mastery, Purpose.** Carrots and sticks fail for creative work. You choose what you work on. You own it end-to-end. I protect you from harmful rays of upper management. We focus on the why.
-
-**Momentum is emotional gravity.** Forward motion creates its own fuel. Teams thrive when they feel progress. We ship fast, never get stuck, and find creative ways forward.
-
-**Grandmother mind.** I practice [non-judgment](/grandmother-mind). When you mess up, I'm not thinking "what's wrong with you" - I'm thinking "what happened and how do we move forward." I extend this grace to myself too.
-
-### How I Communicate
-
-**No surprises.** Especially about performance, promotions, and reorgs. If I'm doing my job, you already know where you stand. Surprises mean I failed.
-
-**Feedback is a gift.** I aspire to catch you doing things right. When feedback is hard, I'll give it anyway - because I care about your growth more than your comfort in this moment.
-
-### The Culture I Build
-
-**The team wins together or loses together.** We put the team first. We trust each other. We can't win if the team loses, and we can't lose if the team wins.
-
-**We make it fun.** Life's too short for dreary work. We celebrate wins loudly, create [moments](/moments-at-work), and remember that we chose to be here.
-
-**Career is one part of life.** I'll remind you of this. Some seasons you push hard at work; others you focus on family and health. I wrote a [whole manifesto](https://bit.ly/igor-wlb-manifesto) about this.
-
-**Happiness is a choice.** A one-legged beggar taught me this. Every day we choose. I choose to find joy in this work, and I hope you do too.
-
----
-
-### What You Can Expect From Me
-
-- I'll share context - you'll know what I know
-- I'll give you feedback fast - positive loudly, constructive privately
-- I'll fight for your growth, promotion, and recognition
-- I'll own my mistakes publicly
-- I'll know what you're working on and why it matters
-
-### What I Expect From You
-
-- Own your work end-to-end - you're the expert, not me
-- No surprises - if something's broken or you're stuck, tell me early
-- Put the team first - help others, ask for help
-- Bring ideas, even half-baked ones - the team can help shape them
-- Tell me when I'm wrong - I depend on this
-
----
-
-### How I Measure Myself
-
-- **Your career velocity** - Are you growing faster than you would elsewhere?
-- **Your feedback** - What do [people say about working with me](/static/idvorkin-linked-in-feedback-lastest.pdf)?
-- **Trains run on time** - Do we ship what we say we'll ship?
-- **No regretted attrition** - Do the right people stay?
-
----
-
-_The rest of this book unpacks these beliefs into specific practices._
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -207,6 +129,14 @@ _The rest of this book unpacks these beliefs into specific practices._
     - [The FAQ](#the-faq)
   - [How to handle Layoffs](#how-to-handle-layoffs)
     - [What's the best way to execute layoff announcements?](#whats-the-best-way-to-execute-layoff-announcements)
+- [Igor's Management Manifesto](#igors-management-manifesto)
+  - [My Purpose](#my-purpose)
+  - [How I Lead](#how-i-lead)
+  - [How I Communicate](#how-i-communicate)
+  - [The Culture I Build](#the-culture-i-build)
+  - [What You Can Expect From Me](#what-you-can-expect-from-me)
+  - [What I Expect From You](#what-i-expect-from-you)
+  - [How I Measure Myself](#how-i-measure-myself)
 - [Personal Motivations](#personal-motivations)
   - [Why do you find management attractive](#why-do-you-find-management-attractive)
   - [What is your dream job](#what-is-your-dream-job)
@@ -2162,6 +2092,69 @@ When Zuck did a particular round of layoffs, he set a date in 3 months, and said
 When asked about the mechanics, Zuck said: Yes, this really sucks, I think regardless of how we setup the layoffs up they will suck: my only hope is this setup will sucks less.
 
 I think Reed Hastings (of Nextfix) has an interesting take here. [You want to give people good severance](https://www.instagram.com/reel/DD7Z1ptT_w0/) so they feel great leaving at any time they want instead of hanging around to get paid.
+
+## Igor's Management Manifesto
+
+_The beliefs that drive everything else in this book._
+
+### My Purpose
+
+**My success is your success.** I have no product except the team. When you thrive, grow, and ship great work - that's my job done right. On my deathbed, the product I'll be proudest of is the people I watched blossom.
+
+**You are not a resource.** You're a three-dimensional human with a life outside work, emotions, and dreams. I can't be efficient with people - only effective. It always pays off.
+
+**Coaching is midwifery.** I can't give birth to your insights - I can only help you deliver them yourself. My job is asking the right questions, not having all the answers.
+
+### How I Lead
+
+**Autonomy, Mastery, Purpose.** Carrots and sticks fail for creative work. You choose what you work on. You own it end-to-end. I protect you from harmful rays of upper management. We focus on the why.
+
+**Momentum is emotional gravity.** Forward motion creates its own fuel. Teams thrive when they feel progress. We ship fast, never get stuck, and find creative ways forward.
+
+**Grandmother mind.** I practice [non-judgment](/grandmother-mind). When you mess up, I'm not thinking "what's wrong with you" - I'm thinking "what happened and how do we move forward." I extend this grace to myself too.
+
+### How I Communicate
+
+**No surprises.** Especially about performance, promotions, and reorgs. If I'm doing my job, you already know where you stand. Surprises mean I failed.
+
+**Feedback is a gift.** I aspire to catch you doing things right. When feedback is hard, I'll give it anyway - because I care about your growth more than your comfort in this moment.
+
+### The Culture I Build
+
+**The team wins together or loses together.** We put the team first. We trust each other. We can't win if the team loses, and we can't lose if the team wins.
+
+**We make it fun.** Life's too short for dreary work. We celebrate wins loudly, create [moments](/moments-at-work), and remember that we chose to be here.
+
+**Career is one part of life.** I'll remind you of this. Some seasons you push hard at work; others you focus on family and health. I wrote a [whole manifesto](https://bit.ly/igor-wlb-manifesto) about this.
+
+**Happiness is a choice.** A one-legged beggar taught me this. Every day we choose. I choose to find joy in this work, and I hope you do too.
+
+---
+
+### What You Can Expect From Me
+
+- I'll share context - you'll know what I know
+- I'll give you feedback fast - positive loudly, constructive privately
+- I'll fight for your growth, promotion, and recognition
+- I'll own my mistakes publicly
+- I'll know what you're working on and why it matters
+
+### What I Expect From You
+
+- Own your work end-to-end - you're the expert, not me
+- No surprises - if something's broken or you're stuck, tell me early
+- Put the team first - help others, ask for help
+- Bring ideas, even half-baked ones - the team can help shape them
+- Tell me when I'm wrong - I depend on this
+
+---
+
+### How I Measure Myself
+
+- **Your career velocity** - Are you growing faster than you would elsewhere?
+- **Your feedback** - What do [people say about working with me](/static/idvorkin-linked-in-feedback-lastest.pdf)?
+- **Trains run on time** - Do we ship what we say we'll ship?
+- **No regretted attrition** - Do the right people stay?
 
 ## Personal Motivations
 
