@@ -309,8 +309,7 @@
             "doc_size": 16000,
             "file_path": "_site/22.html",
             "incoming_links": [
-                "/chapters",
-                "/manager-book"
+                "/chapters"
             ],
             "last_modified": "2025-12-06T18:12:26-08:00",
             "markdown_path": "_d/22.md",
@@ -1226,7 +1225,6 @@
             "file_path": "_site/books-that-defined-me.html",
             "incoming_links": [
                 "/being-a-great-manager",
-                "/manager-book",
                 "/manager-book-appendix"
             ],
             "last_modified": "2025-07-20T19:26:41-07:00",
@@ -1824,7 +1822,6 @@
                 "/hobby",
                 "/idle",
                 "/life-as-business",
-                "/manager-book",
                 "/mind-at-work",
                 "/operating-manual",
                 "/physical-health",
@@ -1975,7 +1972,6 @@
                 "/coaching",
                 "/gap-year",
                 "/job-hunt-stress",
-                "/manager-book",
                 "/pride",
                 "/random-idea",
                 "/work-satisfaction"
@@ -3367,7 +3363,7 @@
         },
         "/manager-book": {
             "description": "Being an engineering manager is hard. Supporting people well is harder. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds me how to behave and encourages my own continuous improvement.\n\n",
-            "doc_size": 179000,
+            "doc_size": 183000,
             "file_path": "_site/manager-book.html",
             "incoming_links": [
                 "/amazon",
@@ -3385,24 +3381,26 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-12-27T18:11:33+00:00",
+            "last_modified": "2025-12-28T19:10:35.548669+00:00",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
             "outgoing_links": [
-                "/22",
+                "/90-days",
                 "/90days",
                 "/being-a-great-manager",
-                "/books-that-defined-me",
+                "/books",
+                "/coach",
                 "/coaching",
                 "/coe",
                 "/comp",
-                "/d/habits",
-                "/decisive",
+                "/decide",
                 "/dip",
+                "/dsat",
                 "/energy",
+                "/grandmother-mind",
+                "/habits",
                 "/job",
                 "/job-hunt-stress",
                 "/manager-book-appendix",
-                "/ml",
                 "/moments-at-work",
                 "/overload",
                 "/planning",
@@ -3414,10 +3412,11 @@
                 "/static/idvorkin-linked-in-feedback-lastest.pdf",
                 "/strategy",
                 "/td/cloud-first-applications",
+                "/td/machine-learning",
                 "/testing",
+                "/twentytwo",
                 "/what-makes-a-leader",
-                "/work-satisfaction",
-                "/writing"
+                "/write"
             ],
             "redirect_url": "",
             "title": "How to EM: Be the manager everyone wants",
@@ -3611,7 +3610,6 @@
             "file_path": "_site/ml.html",
             "incoming_links": [
                 "/ai",
-                "/manager-book",
                 "/td/stats"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -6253,7 +6251,6 @@
             "doc_size": 32000,
             "file_path": "_site/work-satisfaction.html",
             "incoming_links": [
-                "/manager-book",
                 "/mind-at-work",
                 "/retire"
             ],
@@ -6305,7 +6302,6 @@
                 "/chow",
                 "/enable",
                 "/four-healths",
-                "/manager-book",
                 "/manager-book-appendix",
                 "/operating-manual"
             ],
