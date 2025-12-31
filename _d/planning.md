@@ -26,6 +26,7 @@ The plan trains the planner. Planning isn't about predicting the future—it's a
   - [Cowboy Style](#cowboy-style)
 - [The Missing Third: Review](#the-missing-third-review)
   - [Why People Skip Review](#why-people-skip-review)
+  - [How to Make Review Actually Happen](#how-to-make-review-actually-happen)
 - [Finding the Balance](#finding-the-balance)
 - [See also](#see-also)
 
@@ -132,6 +133,19 @@ Review forces you to check your excuses. That comfortable narrative about why th
 - **You have to confront yourself.** You can't review effectively while protecting your ego. You have to admit what you actually did, not the story you tell yourself.
 
 This is why external structures help: coaches, retrospectives, weekly reviews, journaling. They create forcing functions for the thing you'd otherwise skip. A coach won't let you get away with your excuses—and that's the point.
+
+### How to Make Review Actually Happen
+
+Since you'll avoid it, you need to trick yourself into doing it:
+
+- **Schedule it.** Put it on the calendar. Weekly review, project post-mortem, whatever. If it's not scheduled, it won't happen.
+- **Make it social.** Review with someone else—a coach, a partner, a team. Harder to skip when someone's waiting for you. Harder to lie when someone's watching.
+- **Lower the bar.** A 5-minute "what worked, what didn't" beats a 2-hour retrospective you'll never do. Start small. Something beats nothing.
+- **Attach it to existing rituals.** End of week, end of project, end of quarter. Piggyback on transitions you're already marking.
+- **Write it down.** Journaling forces articulation. You can't just vaguely feel like it went okay—you have to say what actually happened.
+- **Separate review from judgment.** Review is data collection. What happened? The judgment comes later. When you conflate them, you avoid both.
+
+The goal isn't perfect review. It's _some_ review. Consistency beats depth.
 
 **The ratio matters.** Most people over-plan, under-do, and skip review entirely. If you're going to skimp on something, skimp on planning. But never skip review.
 
