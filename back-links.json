@@ -1508,6 +1508,7 @@
                 "/job",
                 "/manager-book",
                 "/moments-at-work",
+                "/planning",
                 "/prompts",
                 "/self-ego",
                 "/writing"
@@ -4123,16 +4124,17 @@
         },
         "/planning": {
             "description": "The plan trains the planner. Planning isn’t about predicting the future—it’s about preparing your mind to meet it. It clarifies goals, surfaces unknowns, and builds the pattern recognition you’ll need when reality punches your plan in the face. But the goal of planning is action, not the plan. The moment you’re polishing instead of testing, you’ve crossed from preparation into procrastination.\n\n",
-            "doc_size": 19000,
+            "doc_size": 21000,
             "file_path": "_site/planning.html",
             "incoming_links": [
                 "/end-in-mind",
                 "/manager-book"
             ],
-            "last_modified": "2025-12-27T18:11:33+00:00",
+            "last_modified": "2025-12-31T17:28:57.474824+00:00",
             "markdown_path": "_d/planning.md",
             "outgoing_links": [
                 "/activation",
+                "/coaching",
                 "/end-in-mind",
                 "/energy",
                 "/manager-book"

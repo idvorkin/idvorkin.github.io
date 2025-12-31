@@ -24,6 +24,7 @@ The plan trains the planner. Planning isn't about predicting the future—it's a
   - [The SpaceX Way vs. The NASA Way](#the-spacex-way-vs-the-nasa-way)
   - [Knowledge Only Comes From Empirical Observation](#knowledge-only-comes-from-empirical-observation)
   - [Cowboy Style](#cowboy-style)
+- [The Missing Third: Review](#the-missing-third-review)
 - [Finding the Balance](#finding-the-balance)
 
 <!-- vim-markdown-toc-end -->
@@ -55,7 +56,7 @@ But here's the counter: if you have no plan at all, there's nothing to adapt. Th
 
 ### Planning as Security Theater
 
-_Based on this [tweet](https://x.com/Devon_Eriksen_/status/1910314718998192537)_
+_Based on this [tweet](https://x.com/Devon_Eriksen_/status/1910314718998192537)\_
 
 If there's something you want to do, some goal you have, it's easy to dip a toe in the water, test the temperature, and plan. A lot.
 
@@ -91,6 +92,33 @@ Expect things to go wrong. Anticipate it. Accept it when it happens. Doesn't mea
 
 It just means we're doing it cowboy style.
 
+## The Missing Third: Review
+
+We talk about "planning vs. doing" as if there are only two modes. But there's a critical third part: **Review**.
+
+**Plan → Do → Review**
+
+Without review, you're just spinning. You do things, but you don't learn from them. You make the same mistakes. You can't tell what's working. The feedback loop that makes "just ship it" powerful? Review is what closes that loop.
+
+Review is where learning happens:
+
+- **What actually happened?** Not what you hoped or feared—what occurred?
+- **What worked?** Double down on this.
+- **What didn't?** Why? What would you do differently?
+- **What did you learn?** This is the gold. This is why you did the thing.
+
+This is why [coaching](/coaching) is so powerful—it's structured review. A coach helps you see what you can't see yourself, asks the questions you're avoiding, and holds up a mirror to your patterns.
+
+Without review:
+
+- Planning becomes guessing (you never learn if your predictions were right)
+- Doing becomes busywork (activity without progress)
+- Mistakes repeat (because you never extracted the lesson)
+
+The SpaceX rockets blow up—but then engineers pore over telemetry, find the failure mode, and fix it. The explosion is "Do." The analysis is "Review." Without review, you just have expensive fireworks.
+
+**The ratio matters.** Most people over-plan, under-do, and skip review entirely. If you're going to skimp on something, skimp on planning. But never skip review.
+
 ## Finding the Balance
 
 **The goal of planning is to get you into action and make progress. It's not to have a plan.**
@@ -105,4 +133,5 @@ The plan is a means, not an end. The moment it stops propelling you forward—th
 
 ## See also
 
+- [Coaching](/coaching) - Structured review with a partner
 - [Manager Book: Planning, Roadmaps and Resource Allocation](/manager-book#planning-roadmaps-and-resource-allocation)
