@@ -139,15 +139,8 @@ This post uses the word manager, but many topics apply to all job functions, reg
     - [The FAQ](#the-faq)
   - [How to handle Layoffs](#how-to-handle-layoffs)
     - [What's the best way to execute layoff announcements?](#whats-the-best-way-to-execute-layoff-announcements)
-- [Igor's Management Manifesto](#igors-management-manifesto)
-  - [My Purpose](#my-purpose)
-  - [How I Lead](#how-i-lead)
-  - [How I Communicate](#how-i-communicate)
-  - [The Culture I Build](#the-culture-i-build)
-  - [What You Can Expect From Me](#what-you-can-expect-from-me)
-  - [What I Expect From You](#what-i-expect-from-you)
-  - [How I Measure Myself](#how-i-measure-myself)
 - [Personal Motivations](#personal-motivations)
+  - [Igor's Management Manifesto](#igors-management-manifesto)
   - [Why do you find management attractive](#why-do-you-find-management-attractive)
   - [What is your dream job](#what-is-your-dream-job)
   - [What are your career aspirations](#what-are-your-career-aspirations)
@@ -2103,11 +2096,13 @@ When asked about the mechanics, Zuck said: Yes, this really sucks, I think regar
 
 I think Reed Hastings (of Nextfix) has an interesting take here. [You want to give people good severance](https://www.instagram.com/reel/DD7Z1ptT_w0/) so they feel great leaving at any time they want instead of hanging around to get paid.
 
-## Igor's Management Manifesto
+## Personal Motivations
+
+I guess the whole post is personal, as these are my opinions. The questions below can't be "evaluated" as they deal with internal motivations, however they can be questioned to determine if these are really my motivations, and if I"m being consistent between my actions and motivations.
+
+### Igor's Management Manifesto
 
 _The beliefs that drive everything else in this book._
-
-### My Purpose
 
 **My success is your success.** I have no product except the team. When you thrive, grow, and ship great work - that's my job done right. On my deathbed, the product I'll be proudest of is the people I watched blossom.
 
@@ -2115,21 +2110,15 @@ _The beliefs that drive everything else in this book._
 
 **Coaching is midwifery.** I can't give birth to your insights - I can only help you deliver them yourself. My job is asking the right questions, not having all the answers.
 
-### How I Lead
-
 **Autonomy, Mastery, Purpose.** Carrots and sticks fail for creative work. You choose what you work on. You own it end-to-end. I protect you from harmful rays of upper management. We focus on the why.
 
 **Momentum is emotional gravity.** Forward motion creates its own fuel. Teams thrive when they feel progress. We ship fast, never get stuck, and find creative ways forward.
 
 **Grandmother mind.** I practice [non-judgment](/grandmother-mind). When you mess up, I'm not thinking "what's wrong with you" - I'm thinking "what happened and how do we move forward." I extend this grace to myself too.
 
-### How I Communicate
-
 **No surprises.** Especially about performance, promotions, and reorgs. If I'm doing my job, you already know where you stand. Surprises mean I failed.
 
 **Feedback is a gift.** I aspire to catch you doing things right. When feedback is hard, I'll give it anyway - because I care about your growth more than your comfort in this moment.
-
-### The Culture I Build
 
 **The team wins together or loses together.** We put the team first. We trust each other. We can't win if the team loses, and we can't lose if the team wins.
 
@@ -2139,36 +2128,11 @@ _The beliefs that drive everything else in this book._
 
 **Happiness is a choice.** A one-legged beggar taught me this. Every day we choose. I choose to find joy in this work, and I hope you do too.
 
----
+**What you can expect from me:** I'll share context, give feedback fast (positive loudly, constructive privately), fight for your growth, own my mistakes publicly, and know what you're working on.
 
-### What You Can Expect From Me
+**What I expect from you:** Own your work end-to-end, no surprises, put the team first, bring ideas, and tell me when I'm wrong.
 
-- I'll share context - you'll know what I know
-- I'll give you feedback fast - positive loudly, constructive privately
-- I'll fight for your growth, promotion, and recognition
-- I'll own my mistakes publicly
-- I'll know what you're working on and why it matters
-
-### What I Expect From You
-
-- Own your work end-to-end - you're the expert, not me
-- No surprises - if something's broken or you're stuck, tell me early
-- Put the team first - help others, ask for help
-- Bring ideas, even half-baked ones - the team can help shape them
-- Tell me when I'm wrong - I depend on this
-
----
-
-### How I Measure Myself
-
-- **Your career velocity** - Are you growing faster than you would elsewhere?
-- **Your feedback** - What do [people say about working with me](/static/idvorkin-linked-in-feedback-lastest.pdf)?
-- **Trains run on time** - Do we ship what we say we'll ship?
-- **No regretted attrition** - Do the right people stay?
-
-## Personal Motivations
-
-I guess the whole post is personal, as these are my opinions. The questions below can't be "evaluated" as they deal with internal motivations, however they can be questioned to determine if these are really my motivations, and if I"m being consistent between my actions and motivations.
+**How I measure myself:** Your career velocity, your feedback, trains running on time, and no regretted attrition.
 
 ### Why do you find management attractive
 
