@@ -1536,6 +1536,7 @@
                 "/fail",
                 "/manager-book",
                 "/physical-pain",
+                "/planning",
                 "/switch",
                 "/writing"
             ],
@@ -4130,11 +4131,12 @@
                 "/end-in-mind",
                 "/manager-book"
             ],
-            "last_modified": "2025-12-31T17:28:57.474824+00:00",
+            "last_modified": "2025-12-31T17:42:48.748372+00:00",
             "markdown_path": "_d/planning.md",
             "outgoing_links": [
                 "/activation",
                 "/coaching",
+                "/coe",
                 "/end-in-mind",
                 "/energy",
                 "/manager-book"

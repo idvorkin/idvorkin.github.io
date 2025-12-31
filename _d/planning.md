@@ -147,6 +147,8 @@ Since you'll avoid it, you need to trick yourself into doing it:
 
 The goal isn't perfect review. It's _some_ review. Consistency beats depth.
 
+When things go really wrong, you need structured review. In engineering we call this a [Correction of Errors](/coe)—a blameless post-mortem that asks "what happened?" and "how do we prevent it next time?" The key word is _blameless_. COEs work because they separate the person from the failure. You can be honest about what went wrong because you're not on trial. The same principle applies to personal review: you're not judging yourself as a person, you're examining what happened so you can do better.
+
 **The ratio matters.** Most people over-plan, under-do, and skip review entirely. If you're going to skimp on something, skimp on planning. But never skip review.
 
 ## Finding the Balance
