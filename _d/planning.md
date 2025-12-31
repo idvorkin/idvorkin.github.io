@@ -25,6 +25,7 @@ The plan trains the planner. Planning isn't about predicting the future—it's a
   - [Knowledge Only Comes From Empirical Observation](#knowledge-only-comes-from-empirical-observation)
   - [Cowboy Style](#cowboy-style)
 - [The Missing Third: Review](#the-missing-third-review)
+  - [Why People Skip Review](#why-people-skip-review)
 - [Finding the Balance](#finding-the-balance)
 
 <!-- vim-markdown-toc-end -->
@@ -116,6 +117,18 @@ Without review:
 - Mistakes repeat (because you never extracted the lesson)
 
 The SpaceX rockets blow up—but then engineers pore over telemetry, find the failure mode, and fix it. The explosion is "Do." The analysis is "Review." Without review, you just have expensive fireworks.
+
+### Why People Skip Review
+
+If review is so valuable, why do most people avoid it?
+
+- **It's uncomfortable.** Review means looking at what went wrong. That's ego-threatening. Planning feels optimistic; review feels like judgment.
+- **It feels unproductive.** You're not "doing" anything. No new output. It feels like navel-gazing when you could be shipping.
+- **The lesson isn't always clear.** Sometimes you review and just feel confused. Was it bad luck? Bad execution? Wrong goal? The ambiguity is frustrating.
+- **No one makes you.** Planning has deadlines. Doing has deadlines. Review? Optional. Easy to skip "just this once" forever.
+- **It requires honesty.** You can't review effectively while protecting your ego. You have to admit what you actually did, not the story you tell yourself.
+
+This is why external structures help: coaches, retrospectives, weekly reviews, journaling. They create forcing functions for the thing you'd otherwise skip.
 
 **The ratio matters.** Most people over-plan, under-do, and skip review entirely. If you're going to skimp on something, skimp on planning. But never skip review.
 
