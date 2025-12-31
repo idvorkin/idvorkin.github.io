@@ -27,6 +27,7 @@ The plan trains the planner. Planning isn't about predicting the future—it's a
 - [The Missing Third: Review](#the-missing-third-review)
   - [Why People Skip Review](#why-people-skip-review)
 - [Finding the Balance](#finding-the-balance)
+- [See also](#see-also)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -122,13 +123,15 @@ The SpaceX rockets blow up—but then engineers pore over telemetry, find the fa
 
 If review is so valuable, why do most people avoid it?
 
-- **It's uncomfortable.** Review means looking at what went wrong. That's ego-threatening. Planning feels optimistic; review feels like judgment.
-- **It feels unproductive.** You're not "doing" anything. No new output. It feels like navel-gazing when you could be shipping.
-- **The lesson isn't always clear.** Sometimes you review and just feel confused. Was it bad luck? Bad execution? Wrong goal? The ambiguity is frustrating.
-- **No one makes you.** Planning has deadlines. Doing has deadlines. Review? Optional. Easy to skip "just this once" forever.
-- **It requires honesty.** You can't review effectively while protecting your ego. You have to admit what you actually did, not the story you tell yourself.
+**Review is threatening.** Not because someone else will judge you—but because _you_ will judge you. And you're the harshest critic. You know exactly where you cut corners, where you made excuses, where you told yourself a story instead of facing the truth.
 
-This is why external structures help: coaches, retrospectives, weekly reviews, journaling. They create forcing functions for the thing you'd otherwise skip.
+Review forces you to check your excuses. That comfortable narrative about why things didn't work? Review makes you hold it up to the light. Was it really bad luck? Really someone else's fault? Really impossible given the constraints? Or did you just... not do the thing?
+
+- **It's ego-threatening.** Planning feels optimistic; review feels like judgment.
+- **No one makes you.** Planning has deadlines. Doing has deadlines. Review? Optional. Easy to skip "just this once" forever.
+- **You have to confront yourself.** You can't review effectively while protecting your ego. You have to admit what you actually did, not the story you tell yourself.
+
+This is why external structures help: coaches, retrospectives, weekly reviews, journaling. They create forcing functions for the thing you'd otherwise skip. A coach won't let you get away with your excuses—and that's the point.
 
 **The ratio matters.** Most people over-plan, under-do, and skip review entirely. If you're going to skimp on something, skimp on planning. But never skip review.
 
