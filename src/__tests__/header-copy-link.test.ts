@@ -98,6 +98,8 @@ function createMockParagraph(textContent: string, nextElementSibling: any = null
 
 describe("Header Copy Link", () => {
   beforeEach(() => {
+    // Use fake timers to prevent real timeouts from executing after test teardown
+    vi.useFakeTimers();
     // Reset the global initialization flag before each test
     resetHeaderCopyLinksInitialization();
     vi.clearAllMocks();
@@ -133,6 +135,8 @@ describe("Header Copy Link", () => {
     // Clear all timers to prevent "document is not defined" errors
     // when timeouts try to execute after test environment is torn down
     vi.clearAllTimers();
+    // Restore real timers
+    vi.useRealTimers();
   });
 
   describe("URL Transformation", () => {
