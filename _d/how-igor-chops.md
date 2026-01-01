@@ -18,7 +18,7 @@ Curious how I actually use AI for coding day-to-day? This is my current setup, w
 
 {% include alert.html content="**On terminology:** Before 'vibe coding' became the buzzword, I called this CHOP - Chat-Oriented Programming. The nice thing about the CHO* pattern is it extends naturally: [CHOW](/chow) for Chat-Oriented Writing, and really, Chat-Oriented Anything you want. The core idea is the same: natural language dialogue with AI as the primary interface." style="info" %}
 
-<img src="https://raw.githubusercontent.com/idvorkin/ipaste/main/20260101_093434.webp" style="float:right;max-width:350px;width:50%;margin:0 0 1em 1em;" />
+{% include image_float_right.html src="https://raw.githubusercontent.com/idvorkin/ipaste/main/20260101_093434.webp" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
