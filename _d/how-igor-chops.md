@@ -99,9 +99,9 @@ Sometimes I need really low latency. For those cases I run models served off [Gr
 
 ### When Models Get Smarter
 
-Looking at [how fast things are moving](https://idvorkin-how-long-since-ai.surge.sh/?show=tool), a natural question: what happens when models get smarter? For this, read [Situational Awareness](https://situational-awareness.ai/) - it introduces the concept of "rooms" or orders of magnitude in capability.
+Looking at [how fast things are moving](https://idvorkin-how-long-since-ai.surge.sh/?show=tool), a natural question: what happens when models get smarter? For this, read [Situational Awareness](https://situational-awareness.ai/) - it introduces the concept of "OOMs" or orders of magnitude in capability.
 
-Given history, I imagine there will be more rooms. But honestly, even if there aren't, we're at the point of electricity being invented. Thomas Edison invented it, and then how long did it take to find all the applications? A really long time. We're still early.
+Given history, I imagine there will be more OOMs. But honestly, even if there aren't, we're at the point of electricity being invented. Thomas Edison invented it, and then how long did it take to find all the applications? A really long time. We're still early.
 
 ## Tools of the Trade
 
