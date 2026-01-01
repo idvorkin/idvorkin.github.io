@@ -43,6 +43,10 @@ I also wrote an [app](https://github.com/idvorkin/video-edit/blob/3676fd9d827ee8
 
 {% include youtube.html src="D_SYiBdeUEE" %}
 
+**Warning from experience:** TGUs are fantastic for shoulder stability - if you have the mobility to do them properly. I didn't, and I paid for it with shoulder impingement. The problem: without adequate thoracic spine mobility, you compensate by shrugging with your trap instead of packing your shoulder. Every rep reinforces the bad pattern. If you're self-training, it's hard to know you're doing it wrong until the damage is done.
+
+{%include summarize-page.html src="/shoulder-pain"%}
+
 ### Goals
 
 I'm applying a goal from a book called _Kettlebell Simple and Sinister_.

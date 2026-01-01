@@ -12,7 +12,7 @@ tags:
 
 {% include local_image_float_right.html src="raccoon-shoulder.webp" %}
 
-Shoulder pain is frustrating because direct treatment rarely works. The shoulder is a symptom of upstream problems - primarily thoracic spine stiffness and pec/lat tightness. Fix those first, and the shoulder often resolves itself.
+I developed shoulder impingement from Turkish Get-Ups - grinding through reps without the mobility or form to do them safely. Direct treatment didn't help. The fix requires an indirect approach: restore thoracic spine mobility, loosen pecs and lats, then rebuild rotator cuff strength. The shoulder is a symptom of upstream problems - fix those first, and it often resolves itself.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
