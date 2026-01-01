@@ -1,1 +1,1 @@
-<img src="{{include.src}}" class="float-right-img" alt="" />
+{% if include.link %}<a href="{{include.link}}">{% endif %}<img src="{{include.src}}" class="float-right-img" alt="" />{% if include.link %}</a>{% endif %}
