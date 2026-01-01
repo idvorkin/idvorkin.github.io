@@ -108,6 +108,7 @@ TODO: Your keyboard setup - mechanical? Layout? Why it matters for CHOP?
 ### Stream Deck
 
 [Stream Deck Plugin](https://github.com/idvorkin/streamdeck-igor-vibe) - physical buttons for:
+
 - Tmux navigation (jump between containers/sessions)
 - Voice activation
 - Utility keys
@@ -117,6 +118,7 @@ TODO: Your keyboard setup - mechanical? Layout? Why it matters for CHOP?
 ### Agent Dashboard
 
 [Agent Dashboard](https://github.com/idvorkin-ai-tools/agent-dashboard) - central portal for monitoring multi-agent sessions:
+
 - Auto-discovers running agents
 - Shows git status, PR status, server status
 - Written by AI, for monitoring AI
@@ -126,6 +128,7 @@ TODO: Your keyboard setup - mechanical? Layout? Why it matters for CHOP?
 ### Terminal (tmod)
 
 [tmod](https://github.com/idvorkin/tmod) - Rust-based tmux helper (10x faster than the Python version):
+
 - Fast session/window management
 - Integrates with Stream Deck
 
@@ -169,7 +172,7 @@ My CLAUDE.md files follow a consistent pattern:
 4. **Our Relationship**: We're colleagues, not master/servant - push back when I'm wrong
 5. **Project-Specific Guidance**: Blog guidelines, coding conventions, etc.
 
-The key insight: I tell Claude *how to think*, not just *what to do*. "Don't glaze me" and "call out bad ideas" shape behavior across hundreds of interactions.
+The key insight: I tell Claude _how to think_, not just _what to do_. "Don't glaze me" and "call out bad ideas" shape behavior across hundreds of interactions.
 
 ## A Typical CHOP Session
 
@@ -199,7 +202,7 @@ TODO: Other open questions you're wrestling with?
 
 {% include summarize-page.html src="/enable" %}
 
-This philosophy is *why* I invest in CHOP infrastructure. Every minute spent on container setup, conventions, and tooling is friction removed from future work. The enabling environment isn't about productivity for its own sake - it's about creating the conditions where good work can happen naturally.
+This philosophy is _why_ I invest in CHOP infrastructure. Every minute spent on container setup, conventions, and tooling is friction removed from future work. The enabling environment isn't about productivity for its own sake - it's about creating the conditions where good work can happen naturally.
 
 CHOP is the latest chapter in this story: building systems that let me focus on the interesting problems while automating the tedious ones.
 
@@ -222,7 +225,7 @@ My answer: **it depends on what you're actually learning.**
 - Learning a specific tool's quirks? Probably temporary.
 - Learning how to delegate effectively to agents? That's the new core skill.
 
-The meta-skill is knowing which investments compound and which depreciate. Right now, I'm betting that *orchestration* skills (conventions, delegation, verification) will outlast *implementation* skills (specific languages, specific tools).
+The meta-skill is knowing which investments compound and which depreciate. Right now, I'm betting that _orchestration_ skills (conventions, delegation, verification) will outlast _implementation_ skills (specific languages, specific tools).
 
 ## Appendix: Who I Follow
 
@@ -245,6 +248,7 @@ Huge mixed bag. Sometimes there's something genuinely good. Usually it's people 
 Good delegation to humans requires clear expectations, appropriate context, and defined success criteria. Same with AI.
 
 When delegation fails, it's usually because:
+
 - The task wasn't well-specified (AI hallucinates requirements)
 - Success criteria were unclear (AI optimizes for the wrong thing)
 - I didn't give enough context (AI makes reasonable but wrong assumptions)
@@ -256,6 +260,7 @@ The conventions repo and CLAUDE.md are essentially delegation infrastructure - e
 Does CHOP kill the joy of coding? See the deeper exploration in [Will CHOP Kill the Joy of Coding?](/chop#will-chop-kill-the-joy-of-coding).
 
 My take: the joy shifts, it doesn't disappear. Less joy in typing code, more joy in:
+
 - Designing systems at a higher level
 - Crafting the perfect specification
 - Building the enabling environment itself
@@ -266,7 +271,7 @@ It's like the transition from assembly to high-level languages. Some people mour
 ### What I'm Betting On
 
 - **Conventions become critical**: As AI gets smarter, the bottleneck shifts to specification quality. CLAUDE.md-style files will matter more, not less.
-- **Verification beats implementation**: Knowing *what* to build and *how to verify* it matters more than *how* to build it.
+- **Verification beats implementation**: Knowing _what_ to build and _how to verify_ it matters more than _how_ to build it.
 - **Multi-agent coordination will improve**: Today's pain of running parallel agents is a tooling problem, not a fundamental limit.
 - **The enabling environment philosophy applies more than ever**: The winners will be those who invest in reducing friction.
 
