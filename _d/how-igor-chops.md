@@ -2,6 +2,7 @@
 layout: post
 title: "How Igor CHOPs: My AI-Assisted Development Setup"
 permalink: /how-igor-chops
+imagefeature: https://raw.githubusercontent.com/idvorkin/ipaste/main/20260101_093434.webp
 tags:
   - ai
   - tools
@@ -10,6 +11,8 @@ redirect_from:
   - /igor-chop
   - /my-chop-setup
 ---
+
+![Raccoon at the CHOP shop](https://raw.githubusercontent.com/idvorkin/ipaste/main/20260101_093434.webp)
 
 Curious how I actually use AI for coding day-to-day? This is my current setup, workflows, and lessons learned. For the conceptual "what is CHOP and why it matters," see [The CHOP Shop](/chop).
 
