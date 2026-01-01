@@ -1,1 +1,2 @@
-<img src="https://github.com/idvorkin/blob/raw/master/{{include.src}}" class="float-right-img" alt="" />
+{%- capture full_url %}https://github.com/idvorkin/blob/raw/master/{{include.src}}{%- endcapture -%}
+{% include image_float_right.html src=full_url %}
