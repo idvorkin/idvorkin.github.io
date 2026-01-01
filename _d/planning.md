@@ -165,5 +165,6 @@ The plan is a means, not an end. The moment it stops propelling you forward—th
 
 ## See also
 
+- [Goals](/goals) - Planning without clear goals is just motion
 - [Coaching](/coaching) - Structured review with a partner
 - [Manager Book: Planning, Roadmaps and Resource Allocation](/manager-book#planning-roadmaps-and-resource-allocation)
