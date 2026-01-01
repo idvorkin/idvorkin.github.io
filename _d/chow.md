@@ -32,6 +32,7 @@ The concept emerged from the realization that traditional writing processes are 
   - [The Judge: Polishing Your Work](#the-judge-polishing-your-work)
   - [Key Principles for AI-Enhanced Writing](#key-principles-for-ai-enhanced-writing)
 - [Deep ideas](#deep-ideas)
+  - [Beyond Images: Interactive Visualizations as Apps](#beyond-images-interactive-visualizations-as-apps)
   - [Generating the content for the reader](#generating-the-content-for-the-reader)
   - [New monetization strategies](#new-monetization-strategies)
 
@@ -61,14 +62,12 @@ CHOW builds on the principles of Chat-Oriented Programming (CHOP). While CHOP re
 The journey to CHOW has been remarkable:
 
 1. **Basic Assistance (The Prep Cook)**
-
    - Simple grammar checking
    - Spell checking
    - Basic synonym suggestions
    - Word count tools
 
 2. **Interactive Support (The Line Cook)**
-
    - Style suggestions
    - Tone analysis
    - Content organization help
@@ -89,14 +88,12 @@ CHOW (Chat-Oriented Writing) represents a fundamental shift in how we create wri
 The journey to CHOW has been remarkable:
 
 1. **Basic Assistance (The Prep Cook)**
-
    - Simple grammar checking
    - Spell checking
    - Basic synonym suggestions
    - Word count tools
 
 2. **Interactive Support (The Line Cook)**
-
    - Style suggestions
    - Tone analysis
    - Content organization help
@@ -111,13 +108,11 @@ The journey to CHOW has been remarkable:
 ### Core Concepts
 
 1. **Natural Language Collaboration**
-
    - Express writing goals conversationally
    - Iterative refinement through dialogue
    - Style-aware responses
 
 2. **Content Understanding**
-
    - AI comprehends your writing style
    - Follows established conventions
    - Maintains consistency across pieces
@@ -263,13 +258,11 @@ Consider the audience's viewpoint:
 ### Key Principles for AI-Enhanced Writing
 
 1. **Keep the Phases Separate**:
-
    - Don't let AI's capabilities tempt you to mix phases
    - Complete each phase before moving to the next
    - Use different prompts for different phases
 
 2. **Maintain Creative Control**:
-
    - AI is your assistant, not your replacement
    - Use AI to enhance your ideas, not generate them entirely
    - Trust your instincts when AI suggestions don't feel right
@@ -280,6 +273,29 @@ Consider the audience's viewpoint:
    - Know when to move forward
 
 ## Deep ideas
+
+### Beyond Images: Interactive Visualizations as Apps
+
+When you first think about AI-generated content, images come to mind. But why stop there? CHOW can generate interactive visualizations - essentially small apps that let readers explore ideas dynamically rather than passively consuming static content.
+
+Consider the difference:
+
+- **Static image**: A diagram showing how religions evolved
+- **Interactive app**: An [explorer](https://religion-evolution-explorer.surge.sh/) where readers can click through religious traditions, see connections, and discover relationships themselves
+
+Or:
+
+- **Static text**: "This post was written 3 years ago"
+- **Interactive widget**: A [timeline visualization](https://idvorkin-how-long-since-ai.surge.sh/?show=tool) showing exactly how old content is, updating in real-time
+
+These aren't just prettier presentations - they're fundamentally different experiences. Interactive content lets readers:
+
+- Explore at their own pace and interest level
+- Discover insights you didn't explicitly write
+- Engage more deeply with the material
+- Return and find new things each time
+
+The tooling for this is increasingly accessible: React, Vite, and modern JavaScript frameworks make it straightforward to create these micro-apps. CHOW can help you design and build them conversationally, turning your content ideas into interactive experiences.
 
 ### Generating the content for the reader
 
