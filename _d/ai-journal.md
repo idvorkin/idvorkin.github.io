@@ -18,6 +18,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-01-01](#2026-01-01)
+    - [CHOW for Blog Posts: "How Igor CHOPs" Written with AI](#chow-for-blog-posts-how-igor-chops-written-with-ai)
   - [2025-12-21](#2025-12-21)
     - [obs-cli: Rust TUI for Camera Control](#obs-cli-rust-tui-for-camera-control)
     - [Rust tmux_helper: 10x Speedup from Python](#rust-tmux_helper-10x-speedup-from-python)
@@ -211,6 +213,15 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2026-01-01
+
+#### CHOW for Blog Posts: "How Igor CHOPs" Written with AI
+
+- **TOP Takeaway**: Applied [CHOW](/chow) to write the [How Igor CHOPs](/how-igor-chops) post - it's pretty frickin' good
+- CHOW isn't just for code anymore - it's becoming my go-to for writing entire blog posts
+- The post covers my personal CHOP setup, tooling choices, and daily workflows
+- Also added interactive visualization examples to the CHOW post: [Religion Evolution Explorer](https://religion-evolution-explorer.surge.sh/) and [How Long Since](https://idvorkin-how-long-since-ai.surge.sh/?show=tool)
 
 ### 2025-12-21
 
