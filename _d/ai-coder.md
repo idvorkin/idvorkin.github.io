@@ -9,7 +9,11 @@ redirect_from:
 
 Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizing how we write code. Think of those old-school auto shops: AI started as the shop hand, fetching tools and cleaning parts. Then it became an apprentice mechanic, helping diagnose problems and suggesting fixes. Now? It's a master mechanic, capable of rebuilding entire engines from your high-level specs. Our AIs are getting smarter by the day, and we'll explore how to make the most of this evolution.
 
-**Want to see this in practice?** Check out [How Igor CHOPs](/how-igor-chops) for my personal setup, tooling choices, and daily workflows.
+{% include alert.html content="This post is evolving! Much of the content is moving to [CHOW (Chat-Oriented Writing)](/chow) which covers AI-assisted content creation more broadly - including interactive visualizations and apps, not just code." style="warning" %}
+
+**Want to see this in practice?**
+
+{% include summarize-page.html src="/how-igor-chops" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
