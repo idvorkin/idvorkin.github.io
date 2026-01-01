@@ -12,13 +12,13 @@ redirect_from:
   - /my-chop-setup
 ---
 
-![Raccoon at the CHOP shop](https://raw.githubusercontent.com/idvorkin/ipaste/main/20260101_093434.webp)
-
 Curious how I actually use AI for coding day-to-day? This is my current setup, workflows, and lessons learned. For the conceptual "what is CHOP and why it matters," see [The CHOP Shop](/chop).
 
 {% include ai-slop.html percent="15" %}
 
 {% include alert.html content="**On terminology:** Before 'vibe coding' became the buzzword, I called this CHOP - Chat-Oriented Programming. The nice thing about the CHO* pattern is it extends naturally: [CHOW](/chow) for Chat-Oriented Writing, and really, Chat-Oriented Anything you want. The core idea is the same: natural language dialogue with AI as the primary interface." style="info" %}
+
+![Raccoon at the CHOP shop](https://raw.githubusercontent.com/idvorkin/ipaste/main/20260101_093434.webp)
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
