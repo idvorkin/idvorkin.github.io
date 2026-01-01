@@ -136,16 +136,31 @@ See `_d/tesla.md` for implementation. Backend: [github.com/idvorkin/tony_tesla](
 
 ## Previewing Pages
 
-When giving preview links, check if Tailscale is available:
+**Use `jekyll_server.py` to manage Jekyll servers across multiple directories:**
 
 ```bash
-tailscale status --json | jq -r '.Self.DNSName' | sed 's/\.$//'
+# Check if a server is running for this directory
+python3 ~/gits/settings/py/jekyll_server.py check
+
+# See all running Jekyll servers
+python3 ~/gits/settings/py/jekyll_server.py status
+
+# Get suggested command to start server (finds available port)
+python3 ~/gits/settings/py/jekyll_server.py suggest
 ```
 
-- **If on Tailscale**: Use `http://<tailscale-host>:<port>/<permalink>`
-- **If not on Tailscale**: Use `http://localhost:<port>/<permalink>`
+The script automatically detects the Tailscale hostname and provides clickable URLs.
 
-The `just serve` command outputs the appropriate URL and port automatically.
+**Starting a server**: If no server is running for the current directory, use the command suggested by the script:
+
+```bash
+just jekyll-serve <port> <livereload_port>
+# e.g., just jekyll-serve 4001 35730
+```
+
+**IMPORTANT**: Each Jekyll server uses TWO ports - main port and LiveReload port. The script calculates both using the convention: `livereload = 35729 + (port - 4000)`. Always use both ports to avoid conflicts.
+
+**Why multiple servers**: Igor runs parallel CHOP sessions in different directories (blog2, blog3, etc.). Each needs its own Jekyll server on different ports. The script tracks which directory each server is serving.
 
 ## Internal Link Guidelines
 
