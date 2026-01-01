@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "How Igor CHOPs: My AI-Assisted Development Setup"
+title: "Mumbling on My Couch: My CHOP Setup"
 permalink: /how-igor-chops
-imagefeature: https://raw.githubusercontent.com/idvorkin/ipaste/main/20260101_093434.webp
+imagefeature: https://raw.githubusercontent.com/idvorkin/ipaste/main/20260101_100048.webp
 tags:
   - ai
   - tools
@@ -10,40 +10,51 @@ tags:
 redirect_from:
   - /igor-chop
   - /my-chop-setup
+  - /chop-igor
 ---
 
-Curious how I actually use AI for coding day-to-day? This is my current setup, workflows, and lessons learned. For the conceptual "what is CHOP and why it matters," see [The CHOP Shop](/chop).
+I mumble to Claude on my couch while my family wonders who I'm talking to. I vibe code in the car while my son drives. I rent the most expensive brain I can get. This is my CHOP (Chat-Oriented Programming) setup: the infrastructure, the tools, and what I've learned.
 
-{% include ai-slop.html percent="15" %}
-
-{% include alert.html content="**On terminology:** Before 'vibe coding' became the buzzword, I called this CHOP - Chat-Oriented Programming. The nice thing about the CHO* pattern is it extends naturally: [CHOW](/chow) for Chat-Oriented Writing, and really, Chat-Oriented Anything you want. The core idea is the same: natural language dialogue with AI as the primary interface." style="info" %}
-
-{% include image_float_right.html src="https://raw.githubusercontent.com/idvorkin/ipaste/main/20260101_093434.webp" %}
+{% include image_float_right.html src="https://raw.githubusercontent.com/idvorkin/ipaste/main/20260101_100048.webp" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [The Brain I Rent](#the-brain-i-rent)
+  - [The Most Expensive I Can Get](#the-most-expensive-i-can-get)
+  - [Why Not Codex, Gemini, etc.?](#why-not-codex-gemini-etc)
+  - [When I Need Speed: Groq](#when-i-need-speed-groq)
+  - [When Models Get Smarter](#when-models-get-smarter)
+- [Tools of the Trade](#tools-of-the-trade)
+  - [The Past: Cursor](#the-past-cursor)
+  - [The Present: Claude Code](#the-present-claude-code)
+  - [The Future: Multi-Agent Dashboard](#the-future-multi-agent-dashboard)
+- [Lessons Learned](#lessons-learned)
+  - [What Works Well](#what-works-well)
+  - [What I'm Still Figuring Out](#what-im-still-figuring-out)
+- [My Driver's Seat](#my-drivers-seat)
+  - [Voice](#voice)
+  - [Stream Deck](#stream-deck)
+  - [Agent Dashboard](#agent-dashboard)
+  - [Tmux on Super Steroids](#tmux-on-super-steroids)
+- [Where I Code](#where-i-code)
+  - [The Couch](#the-couch)
+  - [The Coffee Shop](#the-coffee-shop)
+  - [The Desktop Setup](#the-desktop-setup)
+  - [The Walking Treadmill](#the-walking-treadmill)
+  - [The Car](#the-car)
+  - [Ergonomics](#ergonomics)
+- [My Conventions Workflow](#my-conventions-workflow)
+  - [The chop-conventions Repo](#the-chop-conventions-repo)
+  - [CLAUDE.md Structure](#claudemd-structure)
+  - [Command Line and PWAs](#command-line-and-pwas)
+  - [MCP Servers and Skills](#mcp-servers-and-skills)
+  - [My Projects](#my-projects)
 - [My Hosting Environment](#my-hosting-environment)
   - [Hardware Setup](#hardware-setup)
   - [Container Setup](#container-setup)
   - [Network Setup](#network-setup)
-- [My Driver's Seat](#my-drivers-seat)
-  - [The Vibe](#the-vibe)
-  - [Keyboard](#keyboard)
-  - [Stream Deck](#stream-deck)
-  - [Agent Dashboard](#agent-dashboard)
-  - [Terminal (tmod)](#terminal-tmod)
-- [My Tooling Choices](#my-tooling-choices)
-  - [When I Use Cursor](#when-i-use-cursor)
-  - [When I Use Claude Code](#when-i-use-claude-code)
-  - [Supporting Cast](#supporting-cast)
-- [My Conventions Workflow](#my-conventions-workflow)
-  - [The chop-conventions Repo](#the-chop-conventions-repo)
-  - [CLAUDE.md Structure](#claudemd-structure)
 - [A Typical CHOP Session](#a-typical-chop-session)
-- [Lessons Learned](#lessons-learned)
-  - [What Works Well](#what-works-well)
-  - [What I'm Still Figuring Out](#what-im-still-figuring-out)
 - [Appendix: Why I'm Like This](#appendix-why-im-like-this)
   - [The Enabling Environment](#the-enabling-environment)
   - [My Relationship with Tools](#my-relationship-with-tools)
@@ -59,6 +70,199 @@ Curious how I actually use AI for coding day-to-day? This is my current setup, w
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+{% include alert.html content="**On terminology:** Before 'vibe coding' became the buzzword, I called this CHOP - Chat-Oriented Programming. The nice thing about the CHO* pattern is it extends naturally: [CHOW](/chow) for Chat-Oriented Writing, and really, Chat-Oriented Anything you want. The core idea is the same: natural language dialogue with AI as the primary interface." style="info" %}
+
+## The Brain I Rent
+
+**The core problem:** Different models have different intelligence, and you get what you pay for. You can get a middle schooler or you can get a university student.
+
+### The Most Expensive I Can Get
+
+Currently I'm using Claude Opus 4.5 on the $200/month plan.
+
+On one hand you might think I'm crazy spending $2,400 a year. On the other hand, imagine having brilliant collaborators who force multiply everything you do, train you up, and basically give you a PhD in whatever you're working on.
+
+### Why Not Codex, Gemini, etc.?
+
+In November 2025, Gemini came out and I was like "Oh my god, I've got to try this, this is awesome." Then the new Codex came out three days later and I was like "Oh my god, I've got to try this, this is awesome." Then Opus 4.5 came out and I was like "Oh my god, I've got to try this, this is awesome."
+
+Then I realized: all I'm doing is spinning between tools that keep leapfrogging each other. I decided to standardize on Claude Code and assume it'll catch up quickly if it ever falls behind.
+
+The one gap: Claude Code can't generate images. I use ChatGPT for that, currently manually. (Note to self: I should write a script to generate images via the API.)
+
+### When I Need Speed: Groq
+
+Sometimes I need really low latency. For those cases I run models served off [Groq](https://groq.com/). They can get down to ~100ms response times, which is pretty awesome for interactive use cases.
+
+(A terminology nit: "Claude" and "ChatGPT" are products, not models. The actual models are Opus, Haiku, GPT-4o, Llama - with version numbers. Groq is an inference provider. Everyone, including me, uses these terms loosely.)
+
+### When Models Get Smarter
+
+Looking at [how fast things are moving](https://idvorkin-how-long-since-ai.surge.sh/?show=tool), a natural question: what happens when models get smarter? For this, read [Situational Awareness](https://situational-awareness.ai/) - it introduces the concept of "rooms" or orders of magnitude in capability.
+
+Given history, I imagine there will be more rooms. But honestly, even if there aren't, we're at the point of electricity being invented. Thomas Edison invented it, and then how long did it take to find all the applications? A really long time. We're still early.
+
+## Tools of the Trade
+
+**The core problem:** The tools keep changing. What was state-of-the-art six months ago is now deprecated. How do you invest wisely when the ground keeps shifting?
+
+### The Past: Cursor
+
+It's crazy [how fast AI evolves](https://idvorkin-how-long-since-ai.surge.sh/?show=tool). In 2024, [Cursor was the hot new thing](/chop#cursor-from-amazing-tab-completion-to-the-best-agent). It was really about super-powered tab completion - you'd type a bit and it would complete intelligently. That model is already long gone.
+
+### The Present: Claude Code
+
+Claude Code is really about autonomous agents that run in your terminal. As a terminal guy, I can speak to why this is so awesome - it fits my workflow perfectly. The agent runs commands, edits files, and iterates without me micromanaging every step.
+
+### The Future: Multi-Agent Dashboard
+
+I was surprised when Steve Yegge mentioned this is the future - orchestrating multiple specialized agents. Surprised because I'd been accidentally building toward this. The [Agent Dashboard](#agent-dashboard) I mentioned earlier? By the way, I didn't build that at all. I just gave the requirements and Claude built it itself.
+
+## Lessons Learned
+
+### What Works Well
+
+- **Isolation is freedom**: YOLO containers let Claude run autonomously without risk to my real environment
+- **Conventions compound**: Time spent on CLAUDE.md pays off across every session
+- **Don't be the junior tester**: If AI writes code and I manually test, I've outsourced the wrong job. Make AI the tester too.
+- **Tests as specification**: The clearer the tests, the less I need to intervene
+- **"Don't glaze me" changes everything**: Claude is far more useful when it pushes back on bad ideas
+
+### What I'm Still Figuring Out
+
+- **How to handle merges**: When multiple agents touch related code, merging gets messy fast.
+- **Optimal number of agents**: How many can you actually juggle before context switching kills the benefit?
+- **Libraries vs. self-contained repos**: Should conventions be shared libraries, or should every repo implement its own? Still experimenting.
+- **Planning vs. iterating**: When you can execute so quickly, is planning even worth it? Or are you better off just iterating fast?
+
+## My Driver's Seat
+
+**The core problem**: agents are slow, not fast. The mitigation? Run several in parallel. Most of the optimizations below are about exactly that - how do you run more agents in parallel?
+
+But here's the challenge: humans aren't really designed for running things in parallel. So maybe this is more efficient, maybe it's not. At the end of the day, I think I'd prefer it if agents were instantaneous so you didn't have to do all this task switching.
+
+Until then, I need a physical setup that keeps me in flow and gives me visibility into what my agents are doing.
+
+### Voice
+
+Originally I was skeptical, but honestly it's awesome - though hard to articulate exactly why. Talking to Claude is just like talking to another engineer. You tell them things with voice you don't type at them - more natural, conversational, less formal.
+
+**Why voice?** It's natural, and agents are resilient to typos. Whatever you say, even if it's poorly transcribed, generally just works. You can move around, shake your head, close your eyes when thinking hard.
+
+At home I use [Wispr Flow](https://wisprflow.ai/) - faster transcription and automatically cleans up filler words. At work I can't use cloud services (don't want to leak anything), so I use [SuperWhisper](https://superwhisper.com/) which runs local models. Luckily my work machines have 48GB and 64GB of RAM with M4 Max chips, so local models run pretty fast.
+
+(Sometimes transcription can be funny. Every once in a while it'll insert Chinese characters or Russian characters or just make something up. I have no idea where that comes from. But sometimes I'll look up the translation and it's often surprisingly appropriate.)
+
+See more in my [AI Journal entry on voice coding](/ai-journal#using-voice-to-make-commands).
+
+### Stream Deck
+
+{% include image_float_right.html src="https://raw.githubusercontent.com/idvorkin/ipaste/main/20260101_070739.webp" link="https://github.com/idvorkin/streamdeck-igor-vibe" %}
+
+[Stream Deck Plugin](https://github.com/idvorkin/streamdeck-igor-vibe) - physical buttons for:
+
+- Tmux navigation (jump between containers/sessions)
+- Voice activation
+- Utility keys
+
+**Why it matters**: One button to switch contexts instead of typing commands. Reduces friction when juggling multiple agents.
+
+### Agent Dashboard
+
+{% include image_float_right.html src="https://raw.githubusercontent.com/idvorkin-ai-tools/agent-dashboard/main/docs/dashboard-screenshot.png" link="https://github.com/idvorkin-ai-tools/agent-dashboard" %}
+
+[Agent Dashboard](https://github.com/idvorkin-ai-tools/agent-dashboard) - central portal for monitoring multi-agent sessions:
+
+- Auto-discovers running agents
+- Shows git status, PR status, server status
+- Written by AI, for monitoring AI
+
+**Why it matters**: When you have 2-3 agents running in parallel, you need a single view of what's happening. Otherwise you're constantly SSH-ing around to check status.
+
+### Tmux on Super Steroids
+
+{% include image_float_right.html src="https://raw.githubusercontent.com/idvorkin/ipaste/main/20260101_103326.webp" link="https://github.com/idvorkin/settings/tree/main/rust/tmux_helper" %}
+
+Tmux is the backbone of multi-agent work. I've built a [hand-written Rust picker](https://github.com/idvorkin/settings/tree/main/rust/tmux_helper) that's hyper-optimized for me - down to the exact amount of space for window/pane titles so I can maximize the context I see.
+
+- Token-based fuzzy matching ("cl set" finds panes with both terms)
+- Visual markers: `◀` for current pane, `◁` for previous (Tab toggles between them)
+- Auto-switches between horizontal/vertical layout based on terminal size
+- Windows auto-rename every 10s based on running process ("claude" → "cl")
+- Integrates with Stream Deck for one-button navigation
+
+I started with [sessionx](https://github.com/omerxx/tmux-sessionx), then ported my own version from Python to Rust - went from 100ms to 14ms. I don't even know Rust, but AI made it trivial. See the [full story in my AI journal](/ai-journal#rust-tmux_helper-10x-speedup-from-python).
+
+**Why it matters**: When juggling multiple agents across containers, you need instant context switching. One keystroke to jump between sessions.
+
+## Where I Code
+
+**Not a problem - an opportunity.** When things change, previous constraints change too. Voice coding + cloud containers = newfound freedom. I'm no longer tethered to a desk with a keyboard. I'm still figuring out how to use this freedom.
+
+### The Couch
+
+I really like coding on the couch because I feel like I'm with my family even though I'm there mumbling. There's a bit of a lie here - I kind of don't see my family and they're very confused about who I'm talking to.
+
+Humorous side note: after a coding binge where I did 60 hours of vibing two weeks in a row, when I stopped my family asked "Are you okay? You're not just mumbling to yourself anymore."
+
+### The Coffee Shop
+
+Unfortunately I can't use voice here, but I really enjoy being at a coffee shop - seeing the people, the ambient noise, all that jazz. There's something about the energy of a public space that keeps me focused.
+
+### The Desktop Setup
+
+Using a big monitor is awesome - all that real estate. I've also experimented with using multiple monitors to help me keep track of different things: agents running in one screen, code in another, docs in a third.
+
+### The Walking Treadmill
+
+Just today, as I was writing this post, I realized: "Hey, I could do this walking since I'm using voice." So parts of this post were spoken while walking on my under-desk treadmill. Kind of cool.
+
+### The Car
+
+Yes, I can vibe code in the car too. My 16-year-old son is learning to drive and drove us back from a 10-hour drive from Ashland, Oregon. I spent the entire time vibecoding. That probably contributed to my [shoulder impingement](/shoulder-pain).
+
+### Ergonomics ⚠️
+
+{% include local_image_float_right.html src="raccoon-shoulder.webp" %}
+
+**The danger of all this freedom.** Be careful about ergonomics, especially if you're an [older coder](/40yo). Coding on couches, in cars, and in awkward positions adds up. Your body will eventually present the bill.
+
+## My Conventions Workflow
+
+**The core problem:** Every session, the AI starts fresh. It doesn't remember your preferences, your project structure, or what you've already discussed. Conventions are how you encode context that persists.
+
+### The chop-conventions Repo
+
+I maintain a shared conventions repo at [idvorkin/chop-conventions](https://github.com/idvorkin/chop-conventions) that I link into projects. This gives me:
+
+- Consistent rules across all my repos
+- Easy updates - change once, propagate everywhere
+- Version controlled evolution of my AI instructions
+
+The first thing I tell Claude to do in any project: clone this repo and read the starting guide.
+
+### CLAUDE.md Structure
+
+{% include alert.html content="**Honestly?** I'm not convinced this stuff actually works. But it feels right, and maybe that's enough for now." style="warning" %}
+
+My CLAUDE.md files follow a pattern: foundational rules (honesty, call out bad ideas), guardrails (no pushing to main, no removing tests), relationship framing (we're colleagues, push back when I'm wrong), and project-specific guidance.
+
+The theory: tell Claude _how to think_, not just _what to do_. Whether "don't glaze me" actually shapes behavior across sessions? I genuinely don't know.
+
+### Command Line and PWAs
+
+Most of my tools are either command line or PWAs. Command line - obviously, when I'm on the command line, which is often. For everything else, PWAs: local-first, run everywhere, no app store hassle. They're awesome. Most of my [visualization tools](https://github.com/idvorkin/pwa-utils) are PWAs.
+
+### MCP Servers and Skills
+
+MCP (Model Context Protocol) servers, skills, plugins - honestly I don't look at this very much yet. GitHub MCP for issue/PR management, some doc fetching. This is something that will evolve. Right now it feels like plumbing that works in the background.
+
+### My Projects
+
+{% include summarize-page.html src="/pet-projects" %}
+
+CHOP has made it so much easier to spin up new ideas and actually finish them.
 
 ## My Hosting Environment
 
@@ -93,105 +297,9 @@ Every container joins my Tailscale mesh network and gets a stable hostname:
 - Servers bind to `0.0.0.0` so they're network-accessible
 - Same URLs work from home, coffee shop, or traveling
 
-## My Driver's Seat
-
-The hosting environment runs in the cloud. But when I sit down to CHOP, I need a physical setup that keeps me in flow and gives me visibility into what my agents are doing.
-
-### The Vibe
-
-TODO: What puts you in the zone? Music, environment, rituals?
-
-### Keyboard
-
-TODO: Your keyboard setup - mechanical? Layout? Why it matters for CHOP?
-
-### Stream Deck
-
-[Stream Deck Plugin](https://github.com/idvorkin/streamdeck-igor-vibe) - physical buttons for:
-- Tmux navigation (jump between containers/sessions)
-- Voice activation
-- Utility keys
-
-**Why it matters**: One button to switch contexts instead of typing commands. Reduces friction when juggling multiple agents.
-
-### Agent Dashboard
-
-[Agent Dashboard](https://github.com/idvorkin-ai-tools/agent-dashboard) - central portal for monitoring multi-agent sessions:
-- Auto-discovers running agents
-- Shows git status, PR status, server status
-- Written by AI, for monitoring AI
-
-**Why it matters**: When you have 2-3 agents running in parallel, you need a single view of what's happening. Otherwise you're constantly SSH-ing around to check status.
-
-### Terminal (tmod)
-
-[tmod](https://github.com/idvorkin/tmod) - Rust-based tmux helper (10x faster than the Python version):
-- Fast session/window management
-- Integrates with Stream Deck
-
-**Why it matters**: Tmux is the backbone of multi-agent work. tmod makes navigation instant.
-
-## My Tooling Choices
-
-### When I Use Cursor
-
-TODO: Scenarios where Cursor is your go-to - visual diffs? Specific file editing? Tab completion for flow?
-
-### When I Use Claude Code
-
-TODO: Scenarios where Claude Code wins - autonomous long-running tasks? YOLO containers? Better agent behavior?
-
-### Supporting Cast
-
-- **MCP Servers**: GitHub MCP for issue/PR management, Context7 for up-to-date docs
-- **SpecStory**: Exports Cursor chat history for commit logs
-- **chop-git-latest**: My zsh function that copies latest chat history to `zz-chop-logs`
-
-## My Conventions Workflow
-
-### The chop-conventions Repo
-
-I maintain a shared conventions repo at [idvorkin/chop-conventions](https://github.com/idvorkin/chop-conventions) that I link into projects. This gives me:
-
-- Consistent rules across all my repos
-- Easy updates - change once, propagate everywhere
-- Version controlled evolution of my AI instructions
-
-The first thing I tell Claude to do in any project: clone this repo and read the starting guide.
-
-### CLAUDE.md Structure
-
-My CLAUDE.md files follow a consistent pattern:
-
-1. **Read First**: Point to chop-conventions repo for shared context
-2. **Foundational Rules**: Non-negotiables (honesty, call out bad ideas, address me as "Igor")
-3. **Guardrails**: Actions needing explicit approval (pushing to main, removing tests, force push)
-4. **Our Relationship**: We're colleagues, not master/servant - push back when I'm wrong
-5. **Project-Specific Guidance**: Blog guidelines, coding conventions, etc.
-
-The key insight: I tell Claude *how to think*, not just *what to do*. "Don't glaze me" and "call out bad ideas" shape behavior across hundreds of interactions.
-
 ## A Typical CHOP Session
 
 TODO: Still figuring this out. The workflow changes frequently as tools evolve.
-
-## Lessons Learned
-
-### What Works Well
-
-- **Isolation is freedom**: YOLO containers let Claude run autonomously without risk to my real environment
-- **Conventions compound**: Time spent on CLAUDE.md pays off across every session
-- **Don't be the junior tester**: If AI writes code and I manually test, I've outsourced the wrong job. Make AI the tester too.
-- **Tests as specification**: The clearer the tests, the less I need to intervene
-- **"Don't glaze me" changes everything**: Claude is far more useful when it pushes back on bad ideas
-
-### What I'm Still Figuring Out
-
-- **Multi-agent coordination**: Running 2+ agents on related work gets messy fast. When does parallelism help vs hurt?
-- **When to use which tool**: Cursor vs Claude Code decision still feels situational rather than principled
-- **Optimal intervention frequency**: Sometimes I intervene too early, sometimes too late. Still calibrating.
-
-TODO: Other open questions you're wrestling with?
 
 ## Appendix: Why I'm Like This
 
@@ -199,7 +307,7 @@ TODO: Other open questions you're wrestling with?
 
 {% include summarize-page.html src="/enable" %}
 
-This philosophy is *why* I invest in CHOP infrastructure. Every minute spent on container setup, conventions, and tooling is friction removed from future work. The enabling environment isn't about productivity for its own sake - it's about creating the conditions where good work can happen naturally.
+This philosophy is _why_ I invest in CHOP infrastructure. Every minute spent on container setup, conventions, and tooling is friction removed from future work. The enabling environment isn't about productivity for its own sake - it's about creating the conditions where good work can happen naturally.
 
 CHOP is the latest chapter in this story: building systems that let me focus on the interesting problems while automating the tedious ones.
 
@@ -222,7 +330,7 @@ My answer: **it depends on what you're actually learning.**
 - Learning a specific tool's quirks? Probably temporary.
 - Learning how to delegate effectively to agents? That's the new core skill.
 
-The meta-skill is knowing which investments compound and which depreciate. Right now, I'm betting that *orchestration* skills (conventions, delegation, verification) will outlast *implementation* skills (specific languages, specific tools).
+The meta-skill is knowing which investments compound and which depreciate. Right now, I'm betting that _orchestration_ skills (conventions, delegation, verification) will outlast _implementation_ skills (specific languages, specific tools).
 
 ## Appendix: Who I Follow
 
@@ -245,6 +353,7 @@ Huge mixed bag. Sometimes there's something genuinely good. Usually it's people 
 Good delegation to humans requires clear expectations, appropriate context, and defined success criteria. Same with AI.
 
 When delegation fails, it's usually because:
+
 - The task wasn't well-specified (AI hallucinates requirements)
 - Success criteria were unclear (AI optimizes for the wrong thing)
 - I didn't give enough context (AI makes reasonable but wrong assumptions)
@@ -256,6 +365,7 @@ The conventions repo and CLAUDE.md are essentially delegation infrastructure - e
 Does CHOP kill the joy of coding? See the deeper exploration in [Will CHOP Kill the Joy of Coding?](/chop#will-chop-kill-the-joy-of-coding).
 
 My take: the joy shifts, it doesn't disappear. Less joy in typing code, more joy in:
+
 - Designing systems at a higher level
 - Crafting the perfect specification
 - Building the enabling environment itself
@@ -265,9 +375,8 @@ It's like the transition from assembly to high-level languages. Some people mour
 
 ### What I'm Betting On
 
+- **Practice and self-improvement always win**: The tools change, but [learning new skills](/new-skills) is the constant. You're going to suck until you die - that's just how mastery works.
 - **Conventions become critical**: As AI gets smarter, the bottleneck shifts to specification quality. CLAUDE.md-style files will matter more, not less.
-- **Verification beats implementation**: Knowing *what* to build and *how to verify* it matters more than *how* to build it.
+- **Verification beats implementation**: Knowing _what_ to build and _how to verify_ it matters more than _how_ to build it.
 - **Multi-agent coordination will improve**: Today's pain of running parallel agents is a tooling problem, not a fundamental limit.
 - **The enabling environment philosophy applies more than ever**: The winners will be those who invest in reducing friction.
-
-TODO: Other bets you're making?
