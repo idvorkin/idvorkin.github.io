@@ -453,3 +453,13 @@ At that point, two problems:
 
 1. **How do people eat?** There are solutions - easier said than done - like UBI.
 2. **How do people have purpose?** This one is even harder. I feel it in my bones. But you know what? Humans have always figured it out, and I'm sure they'll do it again.
+
+### Is sloppy process okay if agents can clean up the mess?
+
+[Beads](https://github.com/steveyegge/beads) constantly gets into broken states - leftover file leases, corrupted issue data, stale git references. Traditional software engineering says: prevent these states, make workflows deterministic, fail fast. But here's the thing: agents just... fix it. They see the mess, figure out what went wrong, and recover.
+
+Steve Yegge describes using [MCP Agent Mail](https://github.com/Dicklesworthstone/mcp_agent_mail) for multi-agent coordination: "You just give them a task and tell them to sort it out amongst themselves. There's no ego, so they quickly decide on a leader and split things up... Although it seems crazy to work that way, the agents just figure it out—they're quite resilient." See his [Beads Best Practices](https://steve-yegge.medium.com/beads-best-practices-2db636b9760c) post.
+
+This raises uncomfortable questions: If agents can recover from any workflow mess, do we still need disciplined processes? We've spent decades building guardrails to prevent non-deterministic states because *humans* can't handle the chaos. But agents can. Maybe the discipline shifts from *how you work* to *what you produce*. Maybe it's fine if your agents are sloppy, leave garbage lying around, and get into weird states - as long as the output is correct. The craftsmanship moves from the process to the artifact. I don't know what to do with this yet.
+
+(By the way, this is how I use voice. My voice input ends up being garbage - half-formed thoughts, wrong words, trailing off mid-sentence - but agents figure out what I meant and respond to my intent, not my mangled transcription. Even the *input* can be sloppy now.)
