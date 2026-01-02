@@ -52,7 +52,7 @@ Security is super interesting, AI is super interesting, the combination, is supe
 
 A bunch of [leaked prompts](https://github.com/wunderwuzzi23/scratch/tree/master/system_prompts). You can see of the attack mitigations in them.
 
-See also [CL4R1T4S repo](https://github.com/idvorkin/CL4R1T4S) with Claude Sonnet 4.5 and other system prompts.
+See also [CL4R1T4S repo](https://github.com/idvorkin/CL4R1T4S) with Claude Sonnet 4.5 and other system prompts, and the [Claude 4.5 Opus Soul Document](https://gist.github.com/idvorkin/8c04a280fcc54b4fc4eee51df6fdab92) - a cleaned-up version of Anthropic's internal guidelines covering Claude's mission, values, identity, and safety principles.
 
 Another comprehensive collection: [system-prompts-and-models-of-ai-tools](https://github.com/idvorkin-ai-tools/system-prompts-and-models-of-ai-tools) covering Anthropic, OpenAI, Cursor, and more.
 
