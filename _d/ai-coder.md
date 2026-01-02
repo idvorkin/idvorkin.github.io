@@ -254,6 +254,17 @@ claude-code-log --tui
 
 Example: [AI journal](/ai-journal) with [published logs](/published-chop-logs/2025-10-09-religion-exploration.html).
 
+#### claude-code-transcripts
+
+[claude-code-transcripts on GitHub](https://github.com/simonw/claude-code-transcripts) - Simon Willison's tool for converting Claude Code sessions to mobile-friendly HTML with pagination and batch processing.
+
+```bash
+uv tool install claude-code-transcripts
+claude-code-transcripts --help
+```
+
+Features: GitHub Gist upload, batch index generation, repository commit linking.
+
 ## Use Cases and Examples
 
 Not sure if this should be a separate post, but I'm going to start looking at this from the perspective of use cases.
