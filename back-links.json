@@ -58,6 +58,7 @@
         "/chat-tony": "/tesla",
         "/chilliwack": "/bc",
         "/chop-igor": "/how-igor-chops",
+        "/chot": "/chow",
         "/classact": "/class-act",
         "/coach": "/coaching",
         "/cocaine": "/mania",
@@ -284,7 +285,7 @@
         "/vacation": "/timeoff",
         "/vancouver": "/bc",
         "/vibe": "/how-igor-chops",
-        "/vibe-coding": "/vibe",
+        "/vibe-coding": "/how-igor-chops",
         "/video-player": "/vlc",
         "/videoplayer": "/vlc",
         "/virus": "/covid",
@@ -694,7 +695,7 @@
             "incoming_links": [
                 "/ai-developer"
             ],
-            "last_modified": "2025-12-07T02:37:56+00:00",
+            "last_modified": "2026-01-02T15:26:54+00:00",
             "markdown_path": "_d/ai.md",
             "outgoing_links": [
                 "/ai-art",
@@ -771,7 +772,7 @@
             "incoming_links": [
                 "/ai"
             ],
-            "last_modified": "2025-12-21T16:27:51+00:00",
+            "last_modified": "2026-01-02T15:26:54+00:00",
             "markdown_path": "_d/ai-developer.md",
             "outgoing_links": [
                 "/ai",
@@ -840,7 +841,7 @@
         },
         "/ai-security": {
             "description": "Security is super interesting, AI is super interesting, the combination, is super-duper interesting!\n\n",
-            "doc_size": 32000,
+            "doc_size": 33000,
             "file_path": "_site/ai-security.html",
             "incoming_links": [
                 "/ai",
@@ -1490,12 +1491,11 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2026-01-02T14:45:11+00:00",
+            "last_modified": "2026-01-02T15:26:54+00:00",
             "markdown_path": "_d/ai-coder.md",
             "outgoing_links": [
                 "/ai-journal",
                 "/ai-testing",
-                "/chow",
                 "/how-igor-chops",
                 "/humans-are-underrated",
                 "/process-journal",
@@ -1506,25 +1506,23 @@
             "url": "/chop"
         },
         "/chow": {
-            "description": "Welcome to The CHOW Kitchen! CHOW - or Chat-Oriented Writing - is transforming how we create content. Think of those bustling restaurant kitchens: AI started as the prep cook, chopping vegetables and measuring ingredients. Then it became a line cook, helping with recipes and plating. Now? It’s becoming a sous chef, capable of crafting entire dishes from your creative vision. Our AIs are getting more sophisticated daily, and we’ll explore how to make the most of this culinary revolution in writing.\n\n",
-            "doc_size": 33000,
+            "description": "I used to stare at blank pages. Now I have a different problem: AI will happily fill those pages for me, but my brain stays empty. CHOW - Chat-Oriented Writing - is my answer: using AI to think better, not just write faster. The written artifact is a side effect. The real product is clarity in your head. This post covers why writing equals thinking, the risk of outsourcing that thinking to AI, and the four thinking modes - Madman, Architect, Carpenter, Judge - that help you partner with AI instead of just delegating to it.\n\n",
+            "doc_size": 32000,
             "file_path": "_site/chow.html",
             "incoming_links": [
                 "/ai",
                 "/ai-journal",
-                "/chop",
                 "/how-igor-chops"
             ],
             "last_modified": "2026-01-02T02:18:59+00:00",
             "markdown_path": "_d/chow.md",
             "outgoing_links": [
                 "/chop",
-                "/enable",
                 "/td/data-systems",
                 "/writing"
             ],
             "redirect_url": "",
-            "title": "The CHOW Kitchen: Where AI Meets Writing",
+            "title": "CHOW: Chat-Oriented Writing",
             "url": "/chow"
         },
         "/class-act": {
@@ -2269,7 +2267,6 @@
             "doc_size": 21000,
             "file_path": "_site/enable.html",
             "incoming_links": [
-                "/chow",
                 "/how-igor-chops",
                 "/writing"
             ],
@@ -3012,7 +3009,7 @@
                 "/chop",
                 "/pet-projects"
             ],
-            "last_modified": "2026-01-02T01:44:02+00:00",
+            "last_modified": "2026-01-02T15:26:54+00:00",
             "markdown_path": "_d/how-igor-chops.md",
             "outgoing_links": [
                 "/40yo",
