@@ -50,6 +50,7 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
   - [Command Line and PWAs](#command-line-and-pwas)
   - [MCP Servers and Skills](#mcp-servers-and-skills)
   - [My Projects](#my-projects)
+  - [Testing and Evals](#testing-and-evals)
 - [My Hosting Environment](#my-hosting-environment)
   - [Hardware Setup](#hardware-setup)
   - [Container Setup](#container-setup)
@@ -65,8 +66,14 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
   - [Twitter](#twitter)
 - [Appendix: Thoughts on CHOP](#appendix-thoughts-on-chop)
   - [CHOP as Delegation](#chop-as-delegation)
+  - [The Evolution of Junior Developers](#the-evolution-of-junior-developers)
+  - [Revenge of the SDET](#revenge-of-the-sdet)
+  - [Hyper-Personalized Software](#hyper-personalized-software)
   - [The Joy Question](#the-joy-question)
   - [What I'm Betting On](#what-im-betting-on)
+- [Appendix: Open Questions](#appendix-open-questions)
+  - [What happens when execution is no longer the bottleneck?](#what-happens-when-execution-is-no-longer-the-bottleneck)
+  - [What happens post-singularity?](#what-happens-post-singularity)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -132,9 +139,14 @@ I was surprised when Steve Yegge mentioned this is the future - orchestrating mu
 ### What I'm Still Figuring Out
 
 - **How to handle merges**: When multiple agents touch related code, merging gets messy fast.
-- **Optimal number of agents**: How many can you actually juggle before context switching kills the benefit?
-- **Libraries vs. self-contained repos**: Should conventions be shared libraries, or should every repo implement its own? Still experimenting.
+
+**The optimal number of agents** deserves its own callout. On one hand, the number you can run in parallel seems to be the limiting factor for throughput. On the other hand - man, it's easy to get confused. Sending the wrong commands to the wrong agents. Forgetting what each one is doing. Brutal merge conflicts when they touch the same files. It's quite the challenge, and I'm nowhere close to having it figured out.
+
+**Rethinking conventional coding wisdom:**
+
+- **DRY vs. self-contained**: Should conventions be shared libraries, or should every repo implement its own? When execution is cheap, maybe copy-paste isn't so bad.
 - **Planning vs. iterating**: When you can execute so quickly, is planning even worth it? Or are you better off just iterating fast?
+- **Tests first vs. tests after**: If AI can generate tests instantly, does TDD still matter? Or is "describe what you want, let AI figure out the tests" the new workflow?
 
 ## My Driver's Seat
 
@@ -250,6 +262,8 @@ My CLAUDE.md files follow a pattern: foundational rules (honesty, call out bad i
 
 The theory: tell Claude _how to think_, not just _what to do_. Whether "don't glaze me" actually shapes behavior across sessions? I genuinely don't know.
 
+Here's the thing: every time models get smarter and tools get better, my CLAUDE.md becomes partially obsolete. Especially the alchemy - yelling at the model, begging it not to do a bad job, elaborate prompting tricks. That stuff has a short half-life. But some things stay useful: custom commands to run, project-specific context, where to find things. The challenge is knowing which is which.
+
 ### Command Line and PWAs
 
 Most of my tools are either command line or PWAs. Command line - obviously, when I'm on the command line, which is often. For everything else, PWAs: local-first, run everywhere, no app store hassle. They're awesome. Most of my [visualization tools](https://github.com/idvorkin/pwa-utils) are PWAs.
@@ -263,6 +277,12 @@ MCP (Model Context Protocol) servers, skills, plugins - honestly I don't look at
 {% include summarize-page.html src="/pet-projects" %}
 
 CHOP has made it so much easier to spin up new ideas and actually finish them.
+
+### Testing and Evals
+
+This might be the most important thing. In the CHOP world, knowing how to verify that AI output is correct matters more than knowing how to produce it. It's all about evals - can you define what "good" looks like and measure whether you're there?
+
+{% include alert.html content="This section deserves a deep dive. More content coming." style="info" %}
 
 ## My Hosting Environment
 
@@ -360,6 +380,33 @@ When delegation fails, it's usually because:
 
 The conventions repo and CLAUDE.md are essentially delegation infrastructure - encoding all the context an AI needs to work autonomously.
 
+### The Evolution of Junior Developers
+
+You don't need to know the "how" nearly as much anymore. The key skill becomes spec/verify - which is closer to PM than traditional engineering.
+
+And what do PMs do? Two things: understand the business, and understand people - helping people feel good about what's happening. Those skills don't go away. If anything, they become more important when the "how" is increasingly handled by AI.
+
+We have junior PMs. Maybe that's the new on-ramp.
+
+### Revenge of the SDET
+
+Back when I started in programming, we had SDETs - Software Development Engineers in Test. They were software engineers who focused more on testing than writing the actual code. These folks were kind of looked down upon, and the role eventually disappeared at most companies.
+
+But now in the CHOP world? Testing is actually the most important thing. It's all about the evals. The person who can specify what "correct" looks like, write the tests that verify it, and evaluate whether the AI's output meets the bar - that's the bottleneck skill now.
+
+The SDETs were ahead of their time.
+
+### Hyper-Personalized Software
+
+With coding so easy, might as well make a tool just for your use case. No need to find an app that's 80% right - build exactly what you want in an afternoon.
+
+I think there's a pendulum here:
+- 90s: Every company needed their own IT department
+- 2000s: SaaS - rent the same software as everyone else
+- 2030s: Single dev does all the required tooling, personalized to their exact needs
+
+See more in my [hyper-personalization](/hyper-personal) post. Examples from my own life: [handwriting journal workflow](/process-journal#journalling-workflow-in-2025), [mortality software](/mortality-software), [all my pet projects](/pet-projects).
+
 ### The Joy Question
 
 Does CHOP kill the joy of coding? See the deeper exploration in [Will CHOP Kill the Joy of Coding?](/chop#will-chop-kill-the-joy-of-coding).
@@ -380,3 +427,22 @@ It's like the transition from assembly to high-level languages. Some people mour
 - **Verification beats implementation**: Knowing _what_ to build and _how to verify_ it matters more than _how_ to build it.
 - **Multi-agent coordination will improve**: Today's pain of running parallel agents is a tooling problem, not a fundamental limit.
 - **The enabling environment philosophy applies more than ever**: The winners will be those who invest in reducing friction.
+
+## Appendix: Open Questions
+
+### What happens when execution is no longer the bottleneck?
+
+Right now, we're still limited by how fast we can build things. But that's changing fast. What becomes the constraint then?
+
+**How do organizations handle 200x more projects?** Imagine a company like Meta that used to run N projects because engineering capacity was the limit. Now they can run 200N projects. How do they even assess them all? How do they A/B test that many variants? It's going to be a crazy world.
+
+**Reviews become more expensive than creation.** LLVM hit this with PRs - they had to create a [whole AI tool policy](https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159) because reviewing AI-generated contributions takes more human time than the AI spent creating them. TL;DR: You're responsible for anything your AI creates. If you can't answer questions about what the AI did, your PR fails. But this applies to everything - not just code.
+
+### What happens post-singularity?
+
+First, what's a singularity? It's when AI can generate the majority of economic value with a very small group of people who have a ton of leverage.
+
+At that point, two problems:
+
+1. **How do people eat?** There are solutions - easier said than done - like UBI.
+2. **How do people have purpose?** This one is even harder. I feel it in my bones. But you know what? Humans have always figured it out, and I'm sure they'll do it again.
