@@ -29,10 +29,10 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
   - [The Past: Cursor](#the-past-cursor)
   - [The Present: Claude Code](#the-present-claude-code)
   - [The Future: Multi-Agent Dashboard](#the-future-multi-agent-dashboard)
-- [Lessons Learned](#lessons-learned)
+- [Notes from the Trenches](#notes-from-the-trenches)
   - [What Works Well](#what-works-well)
   - [What I'm Still Figuring Out](#what-im-still-figuring-out)
-- [My Driver's Seat](#my-drivers-seat)
+- [The Control Panel - For This Human](#the-control-panel---for-this-human)
   - [Voice](#voice)
   - [Stream Deck](#stream-deck)
   - [Agent Dashboard](#agent-dashboard)
@@ -44,19 +44,20 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
   - [The Walking Treadmill](#the-walking-treadmill)
   - [The Car](#the-car)
   - [Ergonomics](#ergonomics)
-- [My Conventions Workflow](#my-conventions-workflow)
+- [Making AI Work My Way](#making-ai-work-my-way)
   - [The chop-conventions Repo](#the-chop-conventions-repo)
   - [CLAUDE.md Structure](#claudemd-structure)
   - [Command Line and PWAs](#command-line-and-pwas)
   - [MCP Servers and Skills](#mcp-servers-and-skills)
   - [My Projects](#my-projects)
   - [Testing and Evals](#testing-and-evals)
-- [My Hosting Environment](#my-hosting-environment)
+- [The Server Behind the Curtain](#the-server-behind-the-curtain)
+  - [Why Not Cloud Environments?](#why-not-cloud-environments)
   - [Hardware Setup](#hardware-setup)
   - [Container Setup](#container-setup)
   - [Network Setup](#network-setup)
 - [A Typical CHOP Session](#a-typical-chop-session)
-- [Appendix: Why I'm Like This](#appendix-why-im-like-this)
+- [Appendix: Origin of a Tool Nerd](#appendix-origin-of-a-tool-nerd)
   - [The Enabling Environment](#the-enabling-environment)
   - [My Relationship with Tools](#my-relationship-with-tools)
   - [Is This a Waste?](#is-this-a-waste)
@@ -64,8 +65,8 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
   - [Simon Willison](#simon-willison)
   - [Steve Yegge](#steve-yegge)
   - [Twitter](#twitter)
-- [Appendix: Thoughts on CHOP](#appendix-thoughts-on-chop)
-  - [CHOP as Delegation](#chop-as-delegation)
+- [Appendix: The Long View](#appendix-the-long-view)
+  - [What Management Taught Me About AI](#what-management-taught-me-about-ai)
   - [The Evolution of Junior Developers](#the-evolution-of-junior-developers)
   - [Revenge of the SDET](#revenge-of-the-sdet)
   - [Hyper-Personalized Software](#hyper-personalized-software)
@@ -126,7 +127,7 @@ Claude Code is really about autonomous agents that run in your terminal. As a te
 
 I was surprised when Steve Yegge mentioned this is the future - orchestrating multiple specialized agents. Surprised because I'd been accidentally building toward this. The [Agent Dashboard](#agent-dashboard) I mentioned earlier? By the way, I didn't build that at all. I just gave the requirements and Claude built it itself.
 
-## Lessons Learned
+## Notes from the Trenches
 
 ### What Works Well
 
@@ -148,7 +149,7 @@ I was surprised when Steve Yegge mentioned this is the future - orchestrating mu
 - **Planning vs. iterating**: When you can execute so quickly, is planning even worth it? Or are you better off just iterating fast?
 - **Tests first vs. tests after**: If AI can generate tests instantly, does TDD still matter? Or is "describe what you want, let AI figure out the tests" the new workflow?
 
-## My Driver's Seat
+## The Control Panel - For This Human
 
 **The core problem**: agents are slow, not fast. The mitigation? Run several in parallel. Most of the optimizations below are about exactly that - how do you run more agents in parallel?
 
@@ -240,7 +241,7 @@ Yes, I can vibe code in the car too. My 16-year-old son is learning to drive and
 
 **The danger of all this freedom.** Be careful about ergonomics, especially if you're an [older coder](/40yo). Coding on couches, in cars, and in awkward positions adds up. Your body will eventually present the bill.
 
-## My Conventions Workflow
+## Making AI Work My Way
 
 **The core problem:** Every session, the AI starts fresh. It doesn't remember your preferences, your project structure, or what you've already discussed. Conventions are how you encode context that persists.
 
@@ -284,11 +285,15 @@ This might be the most important thing. In the CHOP world, knowing how to verify
 
 {% include alert.html content="This section deserves a deep dive. More content coming." style="info" %}
 
-## My Hosting Environment
+## The Server Behind the Curtain
 
 The metric that matters most in CHOP is **time between interventions**. Like Tesla's self-driving, the goal is reducing how often you need to take over. Every friction point - waiting for a slow laptop, losing context when you switch machines, being scared to let the AI run autonomously - increases interventions and kills your flow.
 
 My hosting environment is designed to minimize these interruptions.
+
+### Why Not Cloud Environments?
+
+Why not just use Claude Cloud, Jules, Codespaces, or other hosted environments? They're limited in their setup - you can't customize the tooling, install arbitrary dependencies, or configure things exactly how you want. And honestly, it's easy enough to set up your own. The initial investment pays off quickly when you're not fighting constraints.
 
 ### Hardware Setup
 
@@ -321,7 +326,7 @@ Every container joins my Tailscale mesh network and gets a stable hostname:
 
 TODO: Still figuring this out. The workflow changes frequently as tools evolve.
 
-## Appendix: Why I'm Like This
+## Appendix: Origin of a Tool Nerd
 
 ### The Enabling Environment
 
@@ -366,9 +371,9 @@ I read [Simon Willison](https://simonwillison.net/) religiously. So much content
 
 Huge mixed bag. Sometimes there's something genuinely good. Usually it's people selling stuff. I keep a list but approach with skepticism.
 
-## Appendix: Thoughts on CHOP
+## Appendix: The Long View
 
-### CHOP as Delegation
+### What Management Taught Me About AI
 
 Good delegation to humans requires clear expectations, appropriate context, and defined success criteria. Same with AI.
 
