@@ -3,7 +3,6 @@ layout: post
 title: "Training LLMs"
 permalink: /ai-training
 redirect_from:
-  - /ai-training
   - /training
   - /llm-training
 ---

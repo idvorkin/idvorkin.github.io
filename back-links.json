@@ -57,6 +57,7 @@
         "/centenarian": "/last-year",
         "/chat-tony": "/tesla",
         "/chilliwack": "/bc",
+        "/chop-igor": "/how-igor-chops",
         "/classact": "/class-act",
         "/coach": "/coaching",
         "/cocaine": "/mania",
@@ -136,6 +137,7 @@
         "/humanity": "/touching",
         "/hyper-personalization": "/hyper-personal",
         "/idle-loop": "/idle",
+        "/igor-chop": "/how-igor-chops",
         "/igor-gap-year": "/gap-year-igor",
         "/iina": "/vlc",
         "/imposter": "/insecure",
@@ -179,6 +181,7 @@
         "/monsters": "/mind-monsters",
         "/mortality": "/death",
         "/mr": "/ar",
+        "/my-chop-setup": "/how-igor-chops",
         "/negative-commandments": "/negative-mitzvahs",
         "/negotiation": "/negotiate",
         "/nonjudgment": "/curious",
@@ -323,7 +326,8 @@
             "doc_size": 21000,
             "file_path": "_site/40yo.html",
             "incoming_links": [
-                "/elder"
+                "/elder",
+                "/how-igor-chops"
             ],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/40-yo-programmer.md",
@@ -791,21 +795,24 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get super lost\n\n",
-            "doc_size": 86000,
+            "doc_size": 87000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai",
                 "/chop",
+                "/how-igor-chops",
                 "/walking-with-god"
             ],
-            "last_modified": "2025-12-21T21:51:20.852407+00:00",
+            "last_modified": "2026-01-01T19:26:12+00:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
                 "/ai-security",
+                "/chow",
                 "/eulogy",
                 "/genai-talk",
                 "/gpt",
+                "/how-igor-chops",
                 "/hyper-personal",
                 "/mental-pain"
             ],
@@ -1034,7 +1041,7 @@
                 "/knee-pain",
                 "/physical-pain"
             ],
-            "last_modified": "2026-01-01T16:48:36.528062+00:00",
+            "last_modified": "2026-01-01T17:03:05+00:00",
             "markdown_path": "_d/back-pain.md",
             "outgoing_links": [
                 "/coe",
@@ -1471,17 +1478,20 @@
                 "/ai",
                 "/chow",
                 "/gtd",
+                "/how-igor-chops",
                 "/process-journal",
                 "/tech-rituals",
                 "/vibe",
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-12-06T18:03:02-08:00",
+            "last_modified": "2026-01-01T19:26:12+00:00",
             "markdown_path": "_d/ai-coder.md",
             "outgoing_links": [
                 "/ai-journal",
                 "/ai-testing",
+                "/chow",
+                "/how-igor-chops",
                 "/humans-are-underrated",
                 "/process-journal",
                 "/testing",
@@ -1493,12 +1503,15 @@
         },
         "/chow": {
             "description": "Welcome to The CHOW Kitchen! CHOW - or Chat-Oriented Writing - is transforming how we create content. Think of those bustling restaurant kitchens: AI started as the prep cook, chopping vegetables and measuring ingredients. Then it became a line cook, helping with recipes and plating. Now? It’s becoming a sous chef, capable of crafting entire dishes from your creative vision. Our AIs are getting more sophisticated daily, and we’ll explore how to make the most of this culinary revolution in writing.\n\n",
-            "doc_size": 28000,
+            "doc_size": 30000,
             "file_path": "_site/chow.html",
             "incoming_links": [
-                "/ai"
+                "/ai",
+                "/ai-journal",
+                "/chop",
+                "/how-igor-chops"
             ],
-            "last_modified": "2026-01-01T18:59:14.546052+00:00",
+            "last_modified": "2026-01-01T19:06:05+00:00",
             "markdown_path": "_d/chow.md",
             "outgoing_links": [
                 "/chop",
@@ -2253,6 +2266,7 @@
             "file_path": "_site/enable.html",
             "incoming_links": [
                 "/chow",
+                "/how-igor-chops",
                 "/writing"
             ],
             "last_modified": "2025-12-07T02:46:00+00:00",
@@ -2497,7 +2511,7 @@
         },
         "/first-things-first": {
             "description": "The key to effective management, is allocating energy through the lens of importance rather than urgency. E.g, ask yourself what one thing could you do that if you did on a regular basis, would make a tremendous positive difference in your life? Lemme guess, it’s important, but not urgent so you’re not doing it. These are my insights based on the 7 habits Chapter 3.\n\n",
-            "doc_size": 25000,
+            "doc_size": 26000,
             "file_path": "_site/first-things-first.html",
             "incoming_links": [
                 "/4dx",
@@ -2984,6 +2998,33 @@
             "title": "Why a Engineering Manager masquerades as a magician on the weekends",
             "url": "/hobby"
         },
+        "/how-igor-chops": {
+            "description": "I mumble to Claude on my couch while my family wonders who I’m talking to. I vibe code in the car while my son drives. I rent the most expensive brain I can get. This is my CHOP (Chat-Oriented Programming) setup: the infrastructure, the tools, and what I’ve learned.\n\n",
+            "doc_size": 46000,
+            "file_path": "_site/how-igor-chops.html",
+            "incoming_links": [
+                "/ai-journal",
+                "/chop"
+            ],
+            "last_modified": "2026-01-02T01:26:57+00:00",
+            "markdown_path": "_d/how-igor-chops.md",
+            "outgoing_links": [
+                "/40yo",
+                "/ai-journal",
+                "/chop",
+                "/chow",
+                "/enable",
+                "/hyper-personal",
+                "/mortality-software",
+                "/new-skills",
+                "/pet-projects",
+                "/process-journal",
+                "/shoulder-pain"
+            ],
+            "redirect_url": "",
+            "title": "Mumbling on My Couch: My CHOP Setup",
+            "url": "/how-igor-chops"
+        },
         "/human-meetings": {
             "description": "Having our emotions heard is a fundamental human need. The modern world denies this need, but that doesn’t make the need go away. More than denying the need, society gives, and encourages, us to suppress our emotions. Feelings meetings stand in opposition. They exist to allow us, no, encourage us, to fulfill our fundamental need of expressing emotion.\n\n",
             "doc_size": 15000,
@@ -3032,7 +3073,8 @@
             "doc_size": 17000,
             "file_path": "_site/hyper-personal.html",
             "incoming_links": [
-                "/ai-journal"
+                "/ai-journal",
+                "/how-igor-chops"
             ],
             "last_modified": "2025-12-07T03:09:30+00:00",
             "markdown_path": "_d/hyper-personal.md",
@@ -3258,7 +3300,7 @@
         },
         "/kettlebell": {
             "description": "There’s no way I’m swinging that thing between my legs; I’m going to kill my back. When I started working out with a trainer in 2020, they tried to get me to do a kettlebell swing, and I was like, no way. Then they spent 3 weeks teaching me Turkish Get-Ups (TGUs), which I absolutely loved. Then I read Simple and Sinister, and now I’ve achieved Timeless Simple and do heavy clubs instead of halos.\n\n",
-            "doc_size": 17000,
+            "doc_size": 18000,
             "file_path": "_site/kettlebell.html",
             "incoming_links": [
                 "/eulogy",
@@ -3269,9 +3311,11 @@
                 "/untangled",
                 "/y24"
             ],
-            "last_modified": "2025-11-30T21:23:15-08:00",
+            "last_modified": "2026-01-01T17:07:34+00:00",
             "markdown_path": "_d/bells.md",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/shoulder-pain"
+            ],
             "redirect_url": "",
             "title": "Kettlebells - A rock with a handle",
             "url": "/kettlebell"
@@ -3283,7 +3327,7 @@
             "incoming_links": [
                 "/physical-pain"
             ],
-            "last_modified": "2026-01-01T16:48:36.667735+00:00",
+            "last_modified": "2026-01-01T17:03:05+00:00",
             "markdown_path": "_d/knee-pain.md",
             "outgoing_links": [
                 "/back-pain",
@@ -3819,6 +3863,7 @@
                 "/balance",
                 "/bike-tesla-identity",
                 "/goals",
+                "/how-igor-chops",
                 "/walking-with-god"
             ],
             "last_modified": "2025-12-07T02:28:40+00:00",
@@ -3900,6 +3945,7 @@
                 "/four-healths",
                 "/happy",
                 "/hobby",
+                "/how-igor-chops",
                 "/operating-manual",
                 "/physical-health",
                 "/physical-pain",
@@ -4109,7 +4155,8 @@
             "doc_size": 24000,
             "file_path": "_site/pet-projects.html",
             "incoming_links": [
-                "/eulogy"
+                "/eulogy",
+                "/how-igor-chops"
             ],
             "last_modified": "2025-12-21T21:51:20.852407+00:00",
             "markdown_path": "_d/pet-projects.md",
@@ -4161,7 +4208,7 @@
             "url": "/physical-health"
         },
         "/physical-pain": {
-            "description": "Physical pain is a universal experience, yet it remains one of the least understood aspects of human health. Whether it’s a stubbed toe or chronic back pain, understanding the nature of physical pain can empower us to manage it effectively and improve our quality of life.\n\n",
+            "description": "Physical pain has been a recurring teacher in my life. Each injury forced me to learn something about how my body works (and doesn’t). This page is the hub for my pain-related learnings, with dedicated pages for each area where I’ve had issues.\n\n",
             "doc_size": 27000,
             "file_path": "_site/physical-pain.html",
             "incoming_links": [
@@ -4170,7 +4217,7 @@
                 "/mental-pain",
                 "/shoulder-pain"
             ],
-            "last_modified": "2025-11-27T10:05:16-08:00",
+            "last_modified": "2026-01-01T17:03:05+00:00",
             "markdown_path": "_d/physical-pain.md",
             "outgoing_links": [
                 "/back-pain",
@@ -4181,7 +4228,7 @@
                 "/shoulder-pain"
             ],
             "redirect_url": "",
-            "title": "Physical Pain: Understanding and Managing It",
+            "title": "Physical Pain: Places I've Had Pain",
             "url": "/physical-pain"
         },
         "/planning": {
@@ -4270,6 +4317,7 @@
                 "/chop",
                 "/eulogy",
                 "/four-healths",
+                "/how-igor-chops",
                 "/operating-manual",
                 "/pet-projects",
                 "/y24",
@@ -4768,10 +4816,12 @@
             "file_path": "_site/shoulder-pain.html",
             "incoming_links": [
                 "/back-pain",
+                "/how-igor-chops",
+                "/kettlebell",
                 "/knee-pain",
                 "/physical-pain"
             ],
-            "last_modified": "2026-01-01T16:48:36.742875+00:00",
+            "last_modified": "2026-01-01T17:07:34+00:00",
             "markdown_path": "_d/shoulder-pain.md",
             "outgoing_links": [
                 "/kettlebell",
