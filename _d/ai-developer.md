@@ -6,6 +6,8 @@ permalink: /ai-developer
 
 ML Engineer is a hot new job. It's the boys and girls who train and deploy models. I heard the word AI developer the other day, and I'll refer to it as AI application engineers. People who use AI to solve use cases. NOTE: This is not what most developers do today. What most developers do today is ask how can AI do the things I would have done (e.g. write the function).
 
+{% include alert.html content="**This is NOT about vibe coding.** Using AI to write code for you? That's [CHOP](/chop). This post is about building AI applications - using AI to replace conventional software, not to write it." style="info" %}
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
@@ -35,9 +37,7 @@ ML Engineer is a hot new job. It's the boys and girls who train and deploy model
 - [Tech Deep Dive - Use case to Model](#tech-deep-dive---use-case-to-model)
   - [Fast Model](#fast-model)
   - [Handwriting recognition](#handwriting-recognition)
-  - [Coding - with Cursor](#coding---with-cursor)
-  - [Coding - with Aider](#coding---with-aider)
-  - [Coding - Make a PR for me](#coding---make-a-pr-for-me)
+  - [Coding Tools](#coding-tools)
   - [Default](#default)
 - [Tech Deep Dive - Models](#tech-deep-dive---models)
   - [Model and Service Dashboards](#model-and-service-dashboards)
@@ -47,7 +47,6 @@ ML Engineer is a hot new job. It's the boys and girls who train and deploy model
   - [Ell](#ell)
   - [Commercial vs Open Source Models](#commercial-vs-open-source-models)
 - [Data Access](#data-access)
-  - [Leaked System Prompts](#leaked-system-prompts)
   - [Use LLMs for reasoning not for data retrieval](#use-llms-for-reasoning-not-for-data-retrieval)
 - [External Posts](#external-posts)
 - [Several posts on this topic](#several-posts-on-this-topic)
@@ -289,15 +288,11 @@ Having a fast model just changes the game, you can do stuff in real time like sp
 
 Right now I'm using Gemini Pro - it does a great job, and I can just inline the binary content.
 
-### Coding - with Cursor
+### Coding Tools
 
-It's been Claude 4 sonnet thinking for a while, need to think about trying others.
+For AI-assisted coding tools (Cursor, Claude Code, Aider, etc.), see the dedicated post:
 
-### Coding - with Aider
-
-### Coding - Make a PR for me
-
-- I'm not sure how to differentiate codex, google jules and anything else, I guess I will soon.
+{%include summarize-page.html src="/chop" %}
 
 ### Default
 
@@ -354,11 +349,9 @@ def scratch():
 
 ## Data Access
 
-### Leaked System Prompts
+For leaked system prompts and security considerations, see:
 
-A bunch of [leaked prompts](https://github.com/wunderwuzzi23/scratch/tree/master/system_prompts). You can see a bunch of the current alchemy in creating these.
-
-Another comprehensive collection: [system-prompts-and-models-of-ai-tools](https://github.com/idvorkin-ai-tools/system-prompts-and-models-of-ai-tools) covering Anthropic, OpenAI, Cursor, and more.
+{%include summarize-page.html src="/ai-security" %}
 
 ### Use LLMs for reasoning not for data retrieval
 
