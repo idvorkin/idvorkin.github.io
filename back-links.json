@@ -283,6 +283,8 @@
         "/untangled-book": "/untangled",
         "/vacation": "/timeoff",
         "/vancouver": "/bc",
+        "/vibe": "/how-igor-chops",
+        "/vibe-coding": "/vibe",
         "/video-player": "/vlc",
         "/videoplayer": "/vlc",
         "/virus": "/covid",
@@ -308,7 +310,7 @@
     "url_info": {
         "/22": {
             "description": "In 2019 I created a program for 15 fantastic interns! A program highlight was my talk titled “What I wish I knew at 22, and so might you”. The talk received a 94% overall rating from over 15 interns, 10 SDE-IIs, and 1 senior developer. Even though the talk focuses on how to live the good life, a big chunk of life is work, so there’s good coverage on how to optimize your career.\n\n",
-            "doc_size": 17000,
+            "doc_size": 16000,
             "file_path": "_site/22.html",
             "incoming_links": [
                 "/chapters",
@@ -526,7 +528,7 @@
         },
         "/activation": {
             "description": "Doing activities requires will power, addictions and procrastination require negative will power, while positive habits, especially new ones require high will power. Here’s a model for these things.\n\n",
-            "doc_size": 28000,
+            "doc_size": 27000,
             "file_path": "_site/activation.html",
             "incoming_links": [
                 "/addiction",
@@ -706,9 +708,9 @@
                 "/ai-testing",
                 "/chop",
                 "/chow",
+                "/how-igor-chops",
                 "/ml",
-                "/recommend",
-                "/vibe"
+                "/recommend"
             ],
             "redirect_url": "",
             "title": "All posts on AI",
@@ -772,7 +774,9 @@
             "last_modified": "2025-12-21T16:27:51+00:00",
             "markdown_path": "_d/ai-developer.md",
             "outgoing_links": [
-                "/ai"
+                "/ai",
+                "/ai-security",
+                "/chop"
             ],
             "redirect_url": "",
             "title": "AI Developer",
@@ -822,7 +826,7 @@
         },
         "/ai-paper": {
             "description": "The original AI papers were all about training, super technical, and not that usable as a practitioner. Nowadays papers are less “mathy” and more applicable to practitioners. Here are some worth reading\n\n",
-            "doc_size": 18000,
+            "doc_size": 17000,
             "file_path": "_site/ai-paper.html",
             "incoming_links": [
                 "/ai"
@@ -840,9 +844,10 @@
             "file_path": "_site/ai-security.html",
             "incoming_links": [
                 "/ai",
+                "/ai-developer",
                 "/ai-journal"
             ],
-            "last_modified": "2025-12-21T16:27:51+00:00",
+            "last_modified": "2026-01-02T14:58:41+00:00",
             "markdown_path": "_d/ai-security.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -873,7 +878,7 @@
             "doc_size": 16000,
             "file_path": "_site/ai-training.html",
             "incoming_links": [],
-            "last_modified": "2025-07-20T19:26:41-07:00",
+            "last_modified": "2026-01-02T01:31:44+00:00",
             "markdown_path": "_d/ai-training.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -1106,7 +1111,7 @@
         },
         "/bc": {
             "description": "A guide to my favorite spots in British Columbia, focusing on Vancouver and Chilliwack. Whether you’re planning a quick weekend getaway or a longer adventure, here’s what you need to know. These recommendations come from my personal experiences over multiple trips - you can read about some of them in my summer 2024 adventures, Yellow Deli expedition, and various time off adventures:\n\n",
-            "doc_size": 23000,
+            "doc_size": 22000,
             "file_path": "_site/bc.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T03:02:44+00:00",
@@ -1122,7 +1127,7 @@
         },
         "/be-proactive": {
             "description": "I choose ‘.’ I am responsible for my own life ‘.’ My behavior is a function of my decisions, not my conditions ‘.’ I can subordinate feelings to values ‘.’ I have the initiative and the responsibility to make things happen. These are my insights from 7 habits Chapter 1.\n\n",
-            "doc_size": 22000,
+            "doc_size": 21000,
             "file_path": "_site/be-proactive.html",
             "incoming_links": [
                 "/7-habits",
@@ -1471,21 +1476,21 @@
         },
         "/chop": {
             "description": "Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizing how we write code. Think of those old-school auto shops: AI started as the shop hand, fetching tools and cleaning parts. Then it became an apprentice mechanic, helping diagnose problems and suggesting fixes. Now? It’s a master mechanic, capable of rebuilding entire engines from your high-level specs. Our AIs are getting smarter by the day, and we’ll explore how to make the most of this evolution.\n\n",
-            "doc_size": 68000,
+            "doc_size": 69000,
             "file_path": "_site/chop.html",
             "incoming_links": [
                 "/40yo",
                 "/ai",
+                "/ai-developer",
                 "/chow",
                 "/gtd",
                 "/how-igor-chops",
                 "/process-journal",
                 "/tech-rituals",
-                "/vibe",
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2026-01-01T19:26:12+00:00",
+            "last_modified": "2026-01-02T14:45:11+00:00",
             "markdown_path": "_d/ai-coder.md",
             "outgoing_links": [
                 "/ai-journal",
@@ -1494,8 +1499,7 @@
                 "/how-igor-chops",
                 "/humans-are-underrated",
                 "/process-journal",
-                "/testing",
-                "/vibe"
+                "/testing"
             ],
             "redirect_url": "",
             "title": "The CHOP Shop: Where AI Meets Code",
@@ -1503,7 +1507,7 @@
         },
         "/chow": {
             "description": "Welcome to The CHOW Kitchen! CHOW - or Chat-Oriented Writing - is transforming how we create content. Think of those bustling restaurant kitchens: AI started as the prep cook, chopping vegetables and measuring ingredients. Then it became a line cook, helping with recipes and plating. Now? It’s becoming a sous chef, capable of crafting entire dishes from your creative vision. Our AIs are getting more sophisticated daily, and we’ll explore how to make the most of this culinary revolution in writing.\n\n",
-            "doc_size": 30000,
+            "doc_size": 33000,
             "file_path": "_site/chow.html",
             "incoming_links": [
                 "/ai",
@@ -1511,7 +1515,7 @@
                 "/chop",
                 "/how-igor-chops"
             ],
-            "last_modified": "2026-01-01T19:06:05+00:00",
+            "last_modified": "2026-01-02T02:18:59+00:00",
             "markdown_path": "_d/chow.md",
             "outgoing_links": [
                 "/chop",
@@ -1966,7 +1970,7 @@
         },
         "/day-in-the-life": {
             "description": "A running journal of days that actually worked - the ones where health habits stuck, family time hit different, or I remembered what it feels like to be fully alive. Not every day needs to be Instagram-worthy, but some days deserve a bookmark. This is that bookmark collection.\n\n",
-            "doc_size": 19000,
+            "doc_size": 18000,
             "file_path": "_site/day-in-the-life.html",
             "incoming_links": [],
             "last_modified": "2025-10-04T18:43:51-07:00",
@@ -2003,7 +2007,7 @@
         },
         "/debug": {
             "description": "Igor's Blog",
-            "doc_size": 24000,
+            "doc_size": 23000,
             "file_path": "_site/debug.html",
             "incoming_links": [],
             "last_modified": "2025-03-16T16:15:36+00:00",
@@ -2511,7 +2515,7 @@
         },
         "/first-things-first": {
             "description": "The key to effective management, is allocating energy through the lens of importance rather than urgency. E.g, ask yourself what one thing could you do that if you did on a regular basis, would make a tremendous positive difference in your life? Lemme guess, it’s important, but not urgent so you’re not doing it. These are my insights based on the 7 habits Chapter 3.\n\n",
-            "doc_size": 26000,
+            "doc_size": 25000,
             "file_path": "_site/first-things-first.html",
             "incoming_links": [
                 "/4dx",
@@ -2761,7 +2765,7 @@
         },
         "/goals": {
             "description": "Goals are critical, there are multiple goal systems and they have consequences. They are mechanisms to deliver without micro management.\n\n",
-            "doc_size": 21000,
+            "doc_size": 20000,
             "file_path": "_site/goals.html",
             "incoming_links": [
                 "/4dx",
@@ -2792,7 +2796,7 @@
         },
         "/gpt": {
             "description": "Just like the search bar in google fills in what you’re typing when you say “Where can I ge .. “ GPT3 complete strings as well. Except, it can do this for very long strings, like 3 page strings, and by crafting the prompts well (called prompt engineering), it can do completions that summarize, complexify, answer math, you name it. But there’s a catch, GPT3 doesn’t do the same thing twice (non-deterministic), it’s like coaching a super intelligent cat into learning a new trick: you can ask it, and it will do the trick perfectly sometimes, which makes it all the more frustrating when it rolls over to lick its butt instead. You know the problem is not that it can’t but that it won’t(From Gwern).\n\n",
-            "doc_size": 26000,
+            "doc_size": 25000,
             "file_path": "_site/gpt.html",
             "incoming_links": [
                 "/ai-art",
@@ -2836,7 +2840,7 @@
         },
         "/grammerly": {
             "description": "\n\n",
-            "doc_size": 13000,
+            "doc_size": 12000,
             "file_path": "_site/grammerly.html",
             "incoming_links": [],
             "last_modified": "2025-08-24T09:03:19-07:00",
@@ -3000,13 +3004,15 @@
         },
         "/how-igor-chops": {
             "description": "I mumble to Claude on my couch while my family wonders who I’m talking to. I vibe code in the car while my son drives. I rent the most expensive brain I can get. This is my CHOP (Chat-Oriented Programming) setup: the infrastructure, the tools, and what I’ve learned.\n\n",
-            "doc_size": 46000,
+            "doc_size": 47000,
             "file_path": "_site/how-igor-chops.html",
             "incoming_links": [
+                "/ai",
                 "/ai-journal",
-                "/chop"
+                "/chop",
+                "/pet-projects"
             ],
-            "last_modified": "2026-01-02T01:26:57+00:00",
+            "last_modified": "2026-01-02T01:44:02+00:00",
             "markdown_path": "_d/how-igor-chops.md",
             "outgoing_links": [
                 "/40yo",
@@ -3376,7 +3382,7 @@
         },
         "/learn-code": {
             "description": "Coding is way easier than people think. Here’s some pointers.\n\n",
-            "doc_size": 14000,
+            "doc_size": 13000,
             "file_path": "_site/learn-code.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T02:47:07+00:00",
@@ -3617,7 +3623,7 @@
         },
         "/mermaid": {
             "description": "Lets try d2\n\n",
-            "doc_size": 15000,
+            "doc_size": 14000,
             "file_path": "_site/mermaid.html",
             "incoming_links": [],
             "last_modified": "2023-12-17T18:49:14+00:00",
@@ -3641,7 +3647,7 @@
         },
         "/mind-at-work": {
             "description": "I have a problem, an addiction, an addiction so detrimental to quality of life, it should be described as a disease. This disease is not being present. There are many symptoms of the disease, but today I’m going to talk about my most frequent symptoms, my body at home, but my mind at work.\n\n",
-            "doc_size": 20000,
+            "doc_size": 19000,
             "file_path": "_site/mind-at-work.html",
             "incoming_links": [
                 "/addiction",
@@ -4162,9 +4168,9 @@
             "markdown_path": "_d/pet-projects.md",
             "outgoing_links": [
                 "/bike-tesla-identity",
+                "/how-igor-chops",
                 "/process-journal",
-                "/static/pet-projects.html",
-                "/vibe"
+                "/static/pet-projects.html"
             ],
             "redirect_url": "",
             "title": "Pet Projects",
@@ -5261,7 +5267,7 @@
         },
         "/td/back_ref": {
             "description": "This blog is my collection of evergreen notes, a place to have my thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here’s my strategy to create them.\n\n",
-            "doc_size": 14000,
+            "doc_size": 13000,
             "file_path": "_site/td/back_ref.html",
             "incoming_links": [],
             "last_modified": "2022-04-16T15:22:43-07:00",
@@ -6135,24 +6141,6 @@
             "redirect_url": "",
             "title": "Upstream - How to solve problems before they happen",
             "url": "/upstream"
-        },
-        "/vibe": {
-            "description": "Vibe coding is the name for letting the ai write your code. The magic lies in AI’s ability to infer intent from vague input—say almost nothing, and it often gives you something surprisingly right. This works because you’re granting it wide degrees of freedom; as long as you’re flexible on the outcome, the model can generate plausible results from minimal cues. But that magic is fragile: on follow-up turns, or when you have a much tighter definition of correct, the inferred intent often changes, and the model applies a different set of constraints than you wanted or what it did previously, causing a cliff, or misery. Turns out this is the same as junior developers.\n\n",
-            "doc_size": 17000,
-            "file_path": "_site/vibe.html",
-            "incoming_links": [
-                "/ai",
-                "/chop",
-                "/pet-projects"
-            ],
-            "last_modified": "2025-12-07T03:19:48+00:00",
-            "markdown_path": "_d/vibe.md",
-            "outgoing_links": [
-                "/chop"
-            ],
-            "redirect_url": "",
-            "title": "Vibe Coding: Best Practices for Flow, Fun, and Results",
-            "url": "/vibe"
         },
         "/vim": {
             "description": "I used Vim for years, but have now transitioned to Neovim. While most of these tips work in both editors, some are Neovim-specific. Here’s my collection of tips I want to practice and remember.\n\n",

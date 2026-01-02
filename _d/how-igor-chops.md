@@ -11,6 +11,8 @@ redirect_from:
   - /igor-chop
   - /my-chop-setup
   - /chop-igor
+  - /vibe
+  - /vibe-coding
 ---
 
 I mumble to Claude on my couch while my family wonders who I'm talking to. I vibe code in the car while my son drives. I rent the most expensive brain I can get. This is my CHOP (Chat-Oriented Programming) setup: the infrastructure, the tools, and what I've learned.
