@@ -801,3 +801,71 @@ alias:
 ```
 
 **IMPORTANT IMPLEMENTATION RULE:** Always use these technical elements consistently. Alert boxes for important notices, redirects for memorable URLs, affiliate links for books, proper image includes for formatting, summarize-page includes for internal references, and quadrant-matrix includes for 2x2 visualizations.
+
+---
+
+## PR Review Checklist
+
+At the end of a content PR review, include this summary format. These checks map to the [thinking phases in CHOW](/chow#the-four-thinking-modes).
+
+```
+Architect: 🟢 headers 🟢 front-matter 🟢 internal-links
+Carpenter: 🟢 opening 🟢 voice 🟢 ai-patterns
+Judge: 🟢 alerts 🟢 images ⚪ books ⚪ ai-slop
+Workflow: 🟢 rebased 🟢 backlinks
+
+Issues:
+- [list any 🔴 items with actionable fix]
+```
+
+**Status indicators:**
+- 🟢 Pass
+- 🔴 Fail (requires fix)
+- ⚪ N/A (not applicable to this PR)
+
+**Checklist items by phase:**
+
+**Architect** (structure):
+
+| Key | Check |
+|-----|-------|
+| `headers` | Headers used for easy scanning |
+| `front-matter` | Complete front matter (title, permalink, tags) |
+| `internal-links` | Internal links use permalinks (not redirects), relative paths (no hostname), proper format |
+
+**Carpenter** (prose):
+
+| Key | Check |
+|-----|-------|
+| `opening` | First paragraph is plain text (no includes/alerts) for excerpt generation |
+| `voice` | Consistent voice throughout (no "I"/"we" mixing, consistent tone) |
+| `ai-patterns` | No AI writing patterns (undue emphasis, "it's important to note", etc.) |
+
+**Judge** (polish):
+
+| Key | Check |
+|-----|-------|
+| `alerts` | Alert boxes placed AFTER opening paragraph |
+| `images` | Images use proper includes (`blob_image.html`, etc.) |
+| `books` | Book links use `{% include amazon.html asin="..." %}` |
+| `ai-slop` | AI slop notice (if needed) placed after first paragraph |
+
+**Workflow** (process):
+
+| Key | Check |
+|-----|-------|
+| `rebased` | Branch rebased onto upstream main |
+| `backlinks` | Backlinks regenerated (`just back-links`) |
+
+**Example with issues:**
+
+```
+Architect: 🟢 headers 🟢 front-matter 🟢 internal-links
+Carpenter: 🟢 opening 🟢 voice 🔴 ai-patterns
+Judge: 🟢 alerts 🟢 images ⚪ books ⚪ ai-slop
+Workflow: 🟢 rebased 🔴 backlinks
+
+Issues:
+- ai-patterns — line 42: remove "it's important to note that"
+- backlinks — run `just backlinks` to regenerate
+```
