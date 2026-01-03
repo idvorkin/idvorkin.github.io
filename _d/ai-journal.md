@@ -18,6 +18,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-01-03](#2026-01-03)
+    - [Testing Codex (After Running Out of Tokens)](#testing-codex-after-running-out-of-tokens)
   - [2026-01-01](#2026-01-01)
     - [CHOW for Blog Posts: "How Igor CHOPs" Written with AI](#chow-for-blog-posts-how-igor-chops-written-with-ai)
   - [2025-12-21](#2025-12-21)
@@ -213,6 +215,16 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2026-01-03
+
+#### Testing Codex (After Running Out of Tokens)
+
+- **TOP Takeaway**: Codex reads a lot more of the content, which is great, but it struggles with really messy input compared to Opus
+- **Why I Tried It**: Ran out of tokens and decided to try Codex after all
+- **Big Observations**:
+  - It comprehends more of the surrounding context and file content
+  - It doesn't handle badly garbled input as well as Opus (a problem for voice input)
 
 ### 2026-01-01
 
