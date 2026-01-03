@@ -18,11 +18,12 @@ permalink: /terzepatide
 - [What's it like?](#whats-it-like)
 - [Differences from calorie restriction](#differences-from-calorie-restriction)
 - [Side effects](#side-effects)
-    - [It's mostly the side effects of dieting hard (if you are)](#its-mostly-the-side-effects-of-dieting-hard-if-you-are)
-    - [Gastrointestinal](#gastroinstronal)
-    - [Muscle loss](#muscle-loss)
+  - [It's mostly the side effects of dieting hard (if you are)](#its-mostly-the-side-effects-of-dieting-hard-if-you-are)
+  - [Gastrointestinal](#gastrointestinal)
+  - [Muscle loss](#muscle-loss)
+  - [Bryan Johnson's Tirzepatide Experiment Failure](#bryan-johnsons-tirzepatide-experiment-failure)
 - [FAQ](#faq)
-    - [Did you get a 'script, isn't there a shortage? Is this some grey market \$hit?](#did-you-get-a-script-isnt-there-a-shortage-is-this-some-grey-market-hit)
+  - [Did you get a 'script, isn't there a shortage? Is this some grey market \$hit?](#did-you-get-a-script-isnt-there-a-shortage-is-this-some-grey-market-hit)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->

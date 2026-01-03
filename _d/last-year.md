@@ -19,16 +19,16 @@ This post draws heavily from Peter Attia's work on longevity and healthspan, par
 <!-- vim-markdown-toc-start -->
 
 - [You're going to die](#youre-going-to-die)
-- [Centenarian Olympics](#centarian-olympics)
-    - [The Inverted Parabola of Health](#the-inverted-parabola-of-health)
-    - [Your peak health age](#your-peak-health-age)
-    - [Your rate of decline](#your-rate-of-decline)
+- [Centenarian Olympics](#centenarian-olympics)
+  - [The Inverted Parabola of Health](#the-inverted-parabola-of-health)
+  - [Your peak health age](#your-peak-health-age)
+  - [Your rate of decline](#your-rate-of-decline)
 - [The Four Horsemen of Death](#the-four-horsemen-of-death)
 - [Physical Health Components](#physical-health-components)
-    - [Stability](#stability)
-    - [Strength](#strength)
-    - [Aerobic (Zone 2)](#aerobic-zone-2)
-    - [Anaerobic (Zone 5)](#anaerobic-zone-5)
+  - [Stability](#stability)
+  - [Strength](#strength)
+  - [Aerobic (Zone 2)](#aerobic-zone-2)
+  - [Anaerobic (Zone 5)](#anaerobic-zone-5)
 - [Spiritual Health](#spiritual-health)
 
 <!-- vim-markdown-toc-end -->

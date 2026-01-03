@@ -10,9 +10,6 @@ Let's talk money. Whether you're a content creator dreaming of YouTube riches or
 <!-- vim-markdown-toc-start -->
 
 - [The Advertising Landscape](#the-advertising-landscape)
-  - [Why Brands Advertise](#why-brands-advertise)
-  - [How Much Do Companies Spend?](#how-much-do-companies-spend)
-  - [Advertising Spend by Industry](#advertising-spend-by-industry)
   - [How Much Do Ad Platforms Make?](#how-much-do-ad-platforms-make)
 - [Creator Monetization Models](#creator-monetization-models)
   - [The Hard Truth](#the-hard-truth)
@@ -30,6 +27,12 @@ Let's talk money. Whether you're a content creator dreaming of YouTube riches or
   - [LinusTechTips Revenue Breakdown](#linustechtips-revenue-breakdown)
   - [Snapchat's Novel Ad Products](#snapchats-novel-ad-products)
 - [The Bottom Line](#the-bottom-line)
+  - [A Reality Check on Ads](#a-reality-check-on-ads)
+- [How Much Has Igor Made?](#how-much-has-igor-made)
+  - [Amazon Associates](#amazon-associates)
+  - [YouTube Ad Revenue](#youtube-ad-revenue)
+  - [Direct Sponsorships](#direct-sponsorships)
+  - [My Monetization Strategy](#my-monetization-strategy)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->

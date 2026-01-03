@@ -23,15 +23,14 @@ I keep a bucket list. You probably do too. But here's what I learned from Arthur
 - [The Satisfaction Formula](#the-satisfaction-formula)
 - [The Reverse Bucket List Method](#the-reverse-bucket-list-method)
   - [How it works](#how-it-works)
-  - [Why this is hard](#why-this-is-hard)
-- [My Reverse Bucket List Exercise](#my-reverse-bucket-list-exercise)
+  - [The dragon's protest](#the-dragon-s-protest)
+- [My Reverse Bucket List](#my-reverse-bucket-list)
   - [What I crossed out](#what-i-crossed-out)
+  - [What was never on my list, but is common for others](#what-was-never-on-my-list-but-is-common-for-others)
   - [What stayed](#what-stayed)
-  - [The dragon's protest](#the-dragons-protest)
 - [Intention Without Attachment](#intention-without-attachment)
   - [The neurophysiology of ghostly goals](#the-neurophysiology-of-ghostly-goals)
   - [Practicing detachment](#practicing-detachment)
-- [When to Review Your Reverse Bucket List](#when-to-review-your-reverse-bucket-list)
 - [The Paradox of Wanting Less](#the-paradox-of-wanting-less)
 
 <!-- vim-markdown-toc -->

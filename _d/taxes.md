@@ -56,7 +56,8 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
     - [The company can't go up that high - sell a put](#the-company-cant-go-up-that-high---sell-a-put)
     - [Summary](#summary)
 - [Metrics](#metrics)
-  - [ARR and NPV](#arr-and-npv)
+  - [NPV (Net Present Value), ARR (Annualized Rate of Return), and IRR (Internal Rate of Return)](#npv-net-present-value-arr-annualized-rate-of-return-and-irr-internal-rate-of-return)
+  - [Stock Market Metrics - P/E Ratio and Market Cap](#stock-market-metrics---pe-ratio-and-market-cap)
 - [Philosophy](#philosophy)
   - [The point of money](#the-point-of-money)
   - [Retirement Ideas](#retirement-ideas)
@@ -64,7 +65,7 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
   - [Making more vs spending more](#making-more-vs-spending-more)
   - [Does money make you happy?](#does-money-make-you-happy)
   - [Believing the market only goes up](#believing-the-market-only-goes-up)
-  - [Keeping a mortgage you can pay of since interest rates are low](#keeping-a-mortgage-you-can-pay-of-since-interest-rates-are-low)
+  - [Keeping a mortgage you can pay off since interest rates are low](#keeping-a-mortgage-you-can-pay-off-since-interest-rates-are-low)
   - [Generational wealth and camels](#generational-wealth-and-camels)
   - [Timing the markets](#timing-the-markets)
   - [The 3 types of rich](#the-3-types-of-rich)
@@ -410,7 +411,7 @@ Metrics help you compare different investments and understand their true value. 
 
 ### NPV (Net Present Value), ARR (Annualized Rate of Return), and IRR (Internal Rate of Return)
 
-**NPV (Net Present Value):** A somewhat awkward metric that tells you what future money is worth today - but you have to pick a discount rate, which makes it subjective. 
+**NPV (Net Present Value):** A somewhat awkward metric that tells you what future money is worth today - but you have to pick a discount rate, which makes it subjective.
 
 Example: If you assume 8% discount rate (inflation + opportunity cost), then $100 in 3 years is worth only $100 ÷ (1.08)³ = $79 today. But if you picked 5% instead, it would be worth $86. The whole answer depends on your assumption, which is why NPV is less useful than IRR for comparing investments.
 
@@ -443,7 +444,7 @@ To verify: $100,000 × (1.0875)^7 = $180,000 ✓
 - Sell after 7 years for $178,000 (78% appreciation!)
 - Total cash received: $21,000 (rent) + $178,000 (sale) = $199,000
 
-**Common Mistake:** "I get 3% annually from rent. The property appreciates 78% over 7 years, which is 78% ÷ 7 = 11.14% per year. So my total return is 3% + 11.14% = 14.14% per year!" 
+**Common Mistake:** "I get 3% annually from rent. The property appreciates 78% over 7 years, which is 78% ÷ 7 = 11.14% per year. So my total return is 3% + 11.14% = 14.14% per year!"
 
 **Why this is spectacularly wrong:**
 1. The 78% appreciation doesn't compound to 11.14% annually
@@ -539,7 +540,7 @@ A "cheap" P/E of 10 might be expensive if earnings are about to collapse. A "ric
 **Industry Patterns You Can See:**
 - **Tech dominates:** Top 8 are all tech/tech-adjacent ($19 trillion combined!)
 - **P/E varies by industry:** Banks (12), Tech (30s), Tesla (200+), Pharma (25-45)
-- **Dividend patterns:** 
+- **Dividend patterns:**
   - Old economy (Banks, Pharma): 2-3% yields
   - Big Tech: 0-0.7% (growth > dividends)
   - Retail: Mixed (Walmart 1%, Home Depot 2.3%)

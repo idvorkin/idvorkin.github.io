@@ -37,7 +37,7 @@ I aspire to be the best manager I can be. I'll often fall short of my goal, but 
   - [Some behaviors I'm just starting, these include](#some-behaviors-im-just-starting-these-include)
   - [Establishing Process, Project Lifecycle, and Artifacts](#establishing-process-project-lifecycle-and-artifacts)
 - [Igors Super Powers](#igors-super-powers)
-  - [What is Igor's Management Philosopy](#what-is-igors-management-philosopy)
+  - [What is Igor's Management Philosophy](#what-is-igors-management-philosophy)
   - [Why do people think Igor is a good coach?](#why-do-people-think-igor-is-a-good-coach)
 
 <!-- vim-markdown-toc-end -->

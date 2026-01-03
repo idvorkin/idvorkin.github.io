@@ -42,15 +42,7 @@ Ah, content creation! Remember when it meant awkwardly holding your phone at arm
   - [Thumbnails](#thumbnails)
   - [Transcription](#transcription)
 - [Monetization: The Reality Check](#monetization-the-reality-check)
-  - [The Hard Truth](#the-hard-truth)
-  - [Amazon Associates: The Classic Disappointment](#amazon-associates-the-classic-disappointment)
-  - [YouTube: The Long Game](#youtube-the-long-game)
-  - [TikTok Creator Fund: Pennies for Views](#tiktok-creator-fund-pennies-for-views)
-  - [Sponsorships: The Real Money](#sponsorships-the-real-money)
-  - [Digital Products: Build Once, Sell Forever](#digital-products-build-once-sell-forever)
-  - [Patreon/Memberships: Your True Fans](#patreonmemberships-your-true-fans)
-  - [Platform-Specific Programs](#platform-specific-programs)
-  - [The Bottom Line](#the-bottom-line)
+  - [Quick Summary](#quick-summary)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
