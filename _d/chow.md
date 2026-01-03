@@ -60,11 +60,11 @@ When AI writes for you, you skip the struggle. And the struggle was doing the wo
 
 This is why CHOW matters. The goal isn't "get AI to write stuff." The goal is "use AI to think better." The difference:
 
-| Outsourcing | Partnering |
-|-------------|------------|
-| "Write me a blog post about X" | "Help me figure out what I actually think about X" |
-| AI generates, you approve | AI challenges, you clarify |
-| Words appear, thinking optional | Thinking required, words are the receipt |
+| Outsourcing                     | Partnering                                         |
+| ------------------------------- | -------------------------------------------------- |
+| "Write me a blog post about X"  | "Help me figure out what I actually think about X" |
+| AI generates, you approve       | AI challenges, you clarify                         |
+| Words appear, thinking optional | Thinking required, words are the receipt           |
 
 ### For You vs. For Them
 
@@ -80,14 +80,14 @@ AI can help with both, but you have to know which mode you're in.
 
 ## The Four Thinking Modes
 
-The Madman, Architect, Carpenter, and Judge aren't just writing phases - they're thinking phases. Each serves two purposes: helping *you* understand, and helping *others* understand.
+The Madman, Architect, Carpenter, and Judge aren't just writing phases - they're thinking phases. Each serves two purposes: helping _you_ understand, and helping _others_ understand.
 
-| Persona | For You (Understanding) | For Them (Being Understood) |
-|---------|------------------------|----------------------------|
-| **Madman** | Explore what you're confused about, dump half-formed thoughts | Brainstorm what the reader needs, what angles might resonate |
-| **Architect** | Organize your own mental model, find gaps in your logic | Structure the reader's journey, decide what order they need things |
-| **Carpenter** | Precision forces clarity - "I can't write this, so I don't actually understand it" | Choose words for the reader, craft sentences they'll follow |
-| **Judge** | Poke holes in your own reasoning, find where you're fooling yourself | Edit for clarity, catch what will confuse the reader |
+| Persona       | For You (Understanding)                                                            | For Them (Being Understood)                                        |
+| ------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| **Madman**    | Explore what you're confused about, dump half-formed thoughts                      | Brainstorm what the reader needs, what angles might resonate       |
+| **Architect** | Organize your own mental model, find gaps in your logic                            | Structure the reader's journey, decide what order they need things |
+| **Carpenter** | Precision forces clarity - "I can't write this, so I don't actually understand it" | Choose words for the reader, craft sentences they'll follow        |
+| **Judge**     | Poke holes in your own reasoning, find where you're fooling yourself               | Edit for clarity, catch what will confuse the reader               |
 
 AI can be a powerful partner in each phase. Let's explore how:
 
@@ -242,9 +242,11 @@ Here's the core insight: **your taste is the bottleneck, not your idea generatio
 Creating from scratch is hard. Staring at a blank page, pulling ideas from nothing - that's cognitively expensive. But looking at five options and saying "that one, but tweak it this way"? That's easy. Your brain is wired for pattern recognition and preference, not ex nihilo creation.
 
 This flips the traditional writing process. Instead of:
+
 1. Think hard → produce draft → revise
 
 You get:
+
 1. Describe what you want → AI proposes options → you filter and refine
 
 The AI handles the generative load. You handle the taste. Both play to their strengths.
@@ -314,3 +316,7 @@ For computer folks this is like [write path vs read path in data systems](/td/da
 ### New monetization strategies
 
 Instead of selling static assets (book, video) - you provide the content and it is generated for the reader.
+
+---
+
+See also: [AI FAQ](/ai-faq) - The deeper questions: Am I outsourcing my thinking? Is AI actually thinking? Who decides what AI should say?

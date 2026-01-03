@@ -672,14 +672,15 @@
             "doc_size": 39000,
             "file_path": "_site/agency.html",
             "incoming_links": [],
-            "last_modified": "2025-11-15T09:38:37-08:00",
+            "last_modified": "2026-01-03T14:35:14.384003+00:00",
             "markdown_path": "_d/agency.md",
             "outgoing_links": [
+                "/7h-c1",
+                "/ai-faq",
                 "/amazon",
                 "/anxiety",
-                "/be-proactive",
                 "/essentialism",
-                "/gap-year-igor",
+                "/igor-gap-year",
                 "/mental-pain",
                 "/my-perfect-job",
                 "/regrets"
@@ -690,24 +691,25 @@
         },
         "/ai": {
             "description": "AI becomes the\nThe transition from A landing page for all my ai pages - a nice jumping off point (especially from the graph).\n\n",
-            "doc_size": 26000,
+            "doc_size": 27000,
             "file_path": "_site/ai.html",
             "incoming_links": [
                 "/ai-developer"
             ],
-            "last_modified": "2026-01-02T15:26:54+00:00",
+            "last_modified": "2026-01-03T14:35:50.326181+00:00",
             "markdown_path": "_d/ai.md",
             "outgoing_links": [
                 "/ai-art",
                 "/ai-bestie",
                 "/ai-bm",
+                "/ai-coder",
                 "/ai-developer",
+                "/ai-faq",
                 "/ai-image",
                 "/ai-journal",
                 "/ai-paper",
                 "/ai-security",
                 "/ai-testing",
-                "/chop",
                 "/chow",
                 "/how-igor-chops",
                 "/ml",
@@ -848,9 +850,11 @@
                 "/ai-developer",
                 "/ai-journal"
             ],
-            "last_modified": "2026-01-02T14:58:41+00:00",
+            "last_modified": "2026-01-03T14:35:14.384003+00:00",
             "markdown_path": "_d/ai-security.md",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/ai-faq"
+            ],
             "redirect_url": "",
             "title": "AI Security",
             "url": "/ai-security"
@@ -1133,7 +1137,6 @@
             "incoming_links": [
                 "/7-habits",
                 "/affirmations",
-                "/agency",
                 "/anxiety",
                 "/d/habits",
                 "/emotions",
@@ -1481,7 +1484,6 @@
             "file_path": "_site/chop.html",
             "incoming_links": [
                 "/40yo",
-                "/ai",
                 "/ai-developer",
                 "/chow",
                 "/gtd",
@@ -1514,9 +1516,10 @@
                 "/ai-journal",
                 "/how-igor-chops"
             ],
-            "last_modified": "2026-01-02T02:18:59+00:00",
+            "last_modified": "2026-01-03T14:35:50.326181+00:00",
             "markdown_path": "_d/chow.md",
             "outgoing_links": [
+                "/ai-faq",
                 "/chop",
                 "/td/data-systems",
                 "/writing"
@@ -2685,7 +2688,6 @@
             "incoming_links": [
                 "/42",
                 "/activation",
-                "/agency",
                 "/bucket-list",
                 "/day-in-the-life",
                 "/gap-year",
@@ -2793,7 +2795,7 @@
         },
         "/gpt": {
             "description": "Just like the search bar in google fills in what you’re typing when you say “Where can I ge .. “ GPT3 complete strings as well. Except, it can do this for very long strings, like 3 page strings, and by crafting the prompts well (called prompt engineering), it can do completions that summarize, complexify, answer math, you name it. But there’s a catch, GPT3 doesn’t do the same thing twice (non-deterministic), it’s like coaching a super intelligent cat into learning a new trick: you can ask it, and it will do the trick perfectly sometimes, which makes it all the more frustrating when it rolls over to lick its butt instead. You know the problem is not that it can’t but that it won’t(From Gwern).\n\n",
-            "doc_size": 25000,
+            "doc_size": 26000,
             "file_path": "_site/gpt.html",
             "incoming_links": [
                 "/ai-art",
@@ -2801,9 +2803,10 @@
                 "/ml",
                 "/nlp"
             ],
-            "last_modified": "2025-12-07T03:06:25+00:00",
+            "last_modified": "2026-01-03T14:35:14.384003+00:00",
             "markdown_path": "_d/gpt2.md",
             "outgoing_links": [
+                "/ai-faq",
                 "/nurture",
                 "/rapport"
             ],

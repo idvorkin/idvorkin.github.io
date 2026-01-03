@@ -24,6 +24,8 @@ The transition from A landing page for all my ai pages - a nice jumping off poin
 
 ## Posts
 
+{%include summarize-page.html src="/ai-faq" %}
+
 {%include summarize-page.html src="/how-igor-chops" %}
 
 {%include summarize-page.html src="/ai-art" %}
