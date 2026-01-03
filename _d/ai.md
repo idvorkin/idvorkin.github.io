@@ -38,6 +38,8 @@ The transition from A landing page for all my ai pages - a nice jumping off poin
 
 {%include summarize-page.html src="/ai-paper" %}
 
+{%include summarize-page.html src="/ai-relationships" %}
+
 {%include summarize-page.html src="/ai-bestie" %}
 
 {%include summarize-page.html src="/ai-developer" %}
