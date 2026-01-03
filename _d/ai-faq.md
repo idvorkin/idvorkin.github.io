@@ -6,10 +6,6 @@ redirect_from:
   - /ai-open-questions
   - /ai-philosophy
   - /ai-questions
-alias:
-  - /ai-open-questions
-  - /ai-philosophy
-  - /ai-questions
 tags:
   - ai
 ---
