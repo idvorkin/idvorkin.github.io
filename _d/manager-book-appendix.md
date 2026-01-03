@@ -27,7 +27,7 @@ A hodgepodge of additional resources for the manager book.
     - [Joining Amazon](#joining-amazon)
     - [Dream Job](#dream-job)
   - [Laws to remember](#laws-to-remember)
-  - [Who has the monkey - fanstic advice from 1974!](#who-has-the-monkey---fanstic-advice-from-1974)
+  - [Who has the monkey - fantastic advice from 1974!](#who-has-the-monkey---fantastic-advice-from-1974)
   - [The Resilience of Alien Chess](#the-resilience-of-alien-chess)
   - [How you need to communicate differently](#how-you-need-to-communicate-differently)
 - [Analogies to be fleshed out](#analogies-to-be-fleshed-out)

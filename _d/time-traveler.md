@@ -19,9 +19,14 @@ What would Past Igor say if he met Future Igor? Would he be impressed by the wis
 <!-- vim-markdown-toc GFM -->
 
 - [Overview](#overview)
-- [Letters to Future Igor](#letters-to-future-igor)
-- [Letters from Future Igor](#letters-from-future-igor)
-- [Letters to Past Igor](#letters-to-past-igor)
+- [The Marshmallow Test](#the-marshmallow-test)
+- [The Regrets Framework](#the-regrets-framework)
+- [Optimizing for Tomorrow vs Feeling Good Today](#optimizing-for-tomorrow-vs-feeling-good-today)
+- [Work/Life Balance Through Time](#work-life-balance-through-time)
+- [Bad Uses of Time](#bad-uses-of-time)
+  - [Creating Twice](#creating-twice)
+  - [Under/Over Preparing](#under-over-preparing)
+  - [The Eulogy Paradox](#the-eulogy-paradox)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->

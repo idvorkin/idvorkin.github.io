@@ -30,7 +30,7 @@ A very cynical book about the laws of power. Probably worth a read in case you w
 - [16. Use Absence to Increase Respect and Honor](#16-use-absence-to-increase-respect-and-honor)
 - [17. Keep Others in Suspended Terror: Cultivate an Air of Unpredictability](#17-keep-others-in-suspended-terror-cultivate-an-air-of-unpredictability)
 - [18. Do Not Build Fortresses to Protect Yourself – Isolation is Dangerous](#18-do-not-build-fortresses-to-protect-yourself--isolation-is-dangerous)
-- [19. Know Who You’re Dealing With – Don’t Offend the Wrong Person](#19-know-who-your-dealing-with--dont-offend-the-wrong-person)
+- [19. Know Who You’re Dealing With – Don’t Offend the Wrong Person](#19-know-who-youre-dealing-with--dont-offend-the-wrong-person)
 - [20. Don’t Commit to Anyone](#20-dont-commit-to-anyone)
 - [21. Play a Sucker to Catch a Sucker – Appear Dumber Than Your Mark](#21-play-a-sucker-to-catch-a-sucker--appear-dumber-than-your-mark)
 - [22. Use the Surrender Tactic: Transform Weakness Into Power](#22-use-the-surrender-tactic-transform-weakness-into-power)

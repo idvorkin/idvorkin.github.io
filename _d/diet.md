@@ -18,22 +18,22 @@ Diet dominates weight, as weight is simple arithmetic -"calories in" minus "calo
 <!-- vim-markdown-toc-start -->
 
 - [My journey](#my-journey)
-    - [Mating weight](#mating-weight)
-    - [The bikini diet](#the-bikini-diet)
-    - [Juice fasting - Fat sick and nearly dead](#juice-fasting---fat-sick-and-nearly-dead)
-    - [The weight pledge - down to 149 lbs](#the-weight-pledge---down-to-149-lbs)
-    - [Post Corona Virus](#post-corona-virus)
+  - [Mating weight](#mating-weight)
+  - [The bikini diet](#the-bikini-diet)
+  - [Juice fasting - Fat sick and nearly dead](#juice-fasting---fat-sick-and-nearly-dead)
+  - [The weight pledge - down to 149 lbs](#the-weight-pledge---down-to-149-lbs)
+  - [Post Corona Virus](#post-corona-virus)
 - [Terzepatide](#terzepatide)
 - [Great lo-cal foods](#great-lo-cal-foods)
-    - [Miso soup](#miso-soup)
-    - [Radishes/Kimchi/Frozen carrots/Canned baby corn](#radisheskimchifrozen-carrotscanned-baby-corn)
-    - [Popcorn](#popcorn)
-- [Thinks that have been successful](#thinks-that-have-been-successful)
+  - [Miso soup](#miso-soup)
+  - [Radishes/Kimchi/Frozen carrots/Canned baby corn](#radisheskimchifrozen-carrotscanned-baby-corn)
+  - [Popcorn](#popcorn)
+- [Things that have been successful](#things-that-have-been-successful)
 - [A tale of mindless Eating](#a-tale-of-mindless-eating)
 - [Making it a habit](#making-it-a-habit)
-    - [Breakfast Miso](#breakfast-miso)
+  - [Breakfast Miso](#breakfast-miso)
 - [Situational strategies](#situational-strategies)
-    - [Hotel breakfast](#hotel-breakfast)
+  - [Hotel breakfast](#hotel-breakfast)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->

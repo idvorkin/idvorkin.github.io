@@ -12,9 +12,6 @@ Architecture is the highest level of abstraction that models a software system. 
 
 <!-- TOC -->
 
-    - [User Behavior and Malleability](#user-behavior-and-malleability)
-    - [Software Paradigms](#software-paradigms)
-
 - [II.Object Oriented design principles](#iiobject-oriented-design-principles)
   - [7. srp: the single responsibility principle](#7-srp-the-single-responsibility-principle)
     - [Symptom 1: accidental duplication](#symptom-1-accidental-duplication)

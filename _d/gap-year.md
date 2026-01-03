@@ -29,17 +29,9 @@ We've been conditioned to think of career breaks as financial suicide, but this 
 - [Making the Gap Year Financially Viable](#making-the-gap-year-financially-viable)
 - [What Actually Happens During a Gap Year](#what-actually-happens-during-a-gap-year)
 - [The Dragons: Why We Don't Take Gap Years](#the-dragons-why-we-dont-take-gap-years)
-- [The Test: How to Know If You're Ready](#the-test-how-to-know-if-your-ready)
+- [The Test: How to Know If You're Ready](#the-test-how-to-know-if-youre-ready)
 - [Making the Decision: A Framework for the Gap Year Choice](#making-the-decision-a-framework-for-the-gap-year-choice)
-- [Is Igor Gonna take a gap year?](#is-igor-gonna-take-a-gap-year)
-- [Igor's Financial Security Dragon](#igors-financial-security-dragon)
-- [Slaying Financial Security - Gap Year Triggers](#slaying-financial-security---gap-year-triggers)
-- [Igor's Decay Dragon: Health and Habits (Physical, Emotional, Relationship)](#igors-decay-dragon-health-and-habits-physical-emotional-relationship)
-- [Slaying Decay - Reframe: Health and Habits Capital Investment (Physical, Emotional, Relationship)](#slaying-decay---reframe-health-and-habits-capital-investment-physical-emotional-relationship)
-- [Igor's Identity Dragon](#igors-identity-dragon)
-- [Slaying Identity - Reframe: PhD in AI, Content Creation, and MRR](#slaying-identity---reframe-phd-in-ai-content-creation-and-mrr)
-- [Gap Year Pre-Mortem](#gap-year-pre-mortem)
-- [Gap Year Voices in my head](#gap-year-voices-in-my-head)
+- [The Choice Is Yours](#the-choice-is-yours)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->

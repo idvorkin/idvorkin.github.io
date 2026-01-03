@@ -25,7 +25,6 @@ Think of this as your complete Jewish to-do list, handed down at Mount Sinai. So
   - [Positive Commandments (248)](#positive-commandments-248)
   - [Negative Commandments (365)](#negative-commandments-365)
 - [Why Split Into Two Pages?](#why-split-into-two-pages)
-- [Current Status](#current-status)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->

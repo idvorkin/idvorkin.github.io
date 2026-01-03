@@ -13,8 +13,16 @@ I pretty much use mac exclusively. I have 3 at work, and a mac mini at home, and
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [Alfred](#alfred)
-- [Random](#random)
+- [Apps](#apps)
+  - [Alfred - The everything launcher/doer!](#alfred-the-everything-launcher-doer)
+    - [3rd Party Plugins:](#3rd-party-plugins)
+    - [2nd Party - E.g., Igor wrote it.](#2nd-party-e-g-igor-wrote-it)
+  - [Productivity](#productivity)
+  - [Quality of life utility](#quality-of-life-utility)
+  - [Screen Resolutions and Display Settings](#screen-resolutions-and-display-settings)
+- [Philosophy](#philosophy)
+  - [Do not switch back and forth between windows and osx.](#do-not-switch-back-and-forth-between-windows-and-osx)
+  - [When you go all in on the appleverse, it's glorious](#when-you-go-all-in-on-the-appleverse-it-s-glorious)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->

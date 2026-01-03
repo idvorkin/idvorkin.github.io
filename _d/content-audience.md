@@ -25,7 +25,7 @@ When I started creating content — okay, let's be honest, when I started upload
 - [2. Welcome to Being Human](#2-welcome-to-being-human)
   - [2. Purpose/Audience](#2-purposeaudience)
   - [Emotional Health](#emotional-health)
-  - [Life Wisdom](#life-wisdom)
+  - [Life Wisdom / Igor Fortune Cookie](#life-wisdom--igor-fortune-cookie)
   - [Relationship Navigation](#relationship-navigation)
   - [Finding Purpose](#finding-purpose)
   - [Daily Practices](#daily-practices)
