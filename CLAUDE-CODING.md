@@ -72,6 +72,29 @@ Names MUST tell what code does, not how it's implemented or its history:
 - **Run in background**: `just jekyll-serve 4002 35730 > /tmp/jekyll.log 2>&1 &`
 - **On c-500X machines**: Use `http://c-500X:4000/page-name`
 
+### Checking Running Servers
+
+Use `running-servers` to discover what's running:
+
+```bash
+running-servers status              # List all servers (compact)
+running-servers status --full       # Full process tree with command lines
+running-servers status --json       # JSON output for scripts
+running-servers port 4000           # Check what's on port 4000
+running-servers check .             # Check if server running for current dir
+```
+
+Example output with `--full`:
+```
+:4000 (pid 675062)
+  dir: /home/developer/gits/blog2
+  url: http://c-5001.squeaker-teeth.ts.net:4000
+  tree:
+    [675041] just jekyll-serve 4000 35729
+    └─ [675045] sh /tmp/just-I1g70G/jekyll-serve
+        └─ [675062] jekyll server --incremental --livereload ...
+```
+
 ## Systematic Debugging Process
 
 YOU MUST find the root cause - NEVER fix symptoms or add workarounds.

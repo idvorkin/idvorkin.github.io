@@ -136,17 +136,26 @@ See `_d/tesla.md` for implementation. Backend: [github.com/idvorkin/tony_tesla](
 
 ## Previewing Pages
 
-**Use `jekyll_server.py` to manage Jekyll servers across multiple directories:**
+**Use `running-servers` to discover and manage servers:**
 
 ```bash
 # Check if a server is running for this directory
-python3 ~/gits/settings/py/jekyll_server.py check
+running-servers check .
 
-# See all running Jekyll servers
-python3 ~/gits/settings/py/jekyll_server.py status
+# See all running servers (compact view)
+running-servers status
 
-# Get suggested command to start server (finds available port)
-python3 ~/gits/settings/py/jekyll_server.py suggest
+# See full process tree with command lines
+running-servers status --full
+
+# JSON output for scripts
+running-servers status --json
+
+# Check what's on a specific port
+running-servers port 4000
+
+# Get suggested available port
+running-servers suggest
 ```
 
 The script automatically detects the Tailscale hostname and provides clickable URLs.
