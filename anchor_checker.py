@@ -1,4 +1,4 @@
-#!/usr/bin/env -S uv run
+#!/usr/bin/env -S UV_CACHE_DIR=.uv-cache uv run
 # /// script
 # requires-python = ">=3.10"
 # dependencies = [
@@ -19,6 +19,7 @@ Usage:
     ./anchor_checker.py _d/specific.md     # Check specific file(s)
 """
 
+import html
 import json
 import re
 from dataclasses import dataclass, field
@@ -42,6 +43,33 @@ SAME_PAGE_ANCHOR_RE = re.compile(r"\]\(#([^)\s]+)\)")
 INTERNAL_LINK_RE = re.compile(r"\]\((/[^)#\s]+)\)")
 # Fast regex to extract all id attributes from HTML
 HTML_ID_RE = re.compile(r'id="([^"]+)"')
+ENTITY_HEX_RE = re.compile(r"-?x[0-9a-f]{3,6}")
+ENTITY_DECIMAL_IN_WORD_RE = re.compile(r"([a-z])([0-9]{4,5})([a-z])")
+ENTITY_DECIMAL_SUFFIX_RE = re.compile(r"-[0-9]{4,5}$")
+HEADING_RE = re.compile(r"^(#{1,6})\s+(.*)$")
+EXPLICIT_ID_RE = re.compile(r"\{#([^}]+)\}\s*$")
+
+
+def slugify_heading(text: str) -> str:
+    """Best-effort kramdown-style slug for markdown headings."""
+    text = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", text)
+    text = text.replace("`", "").replace("*", "").replace("_", "")
+    text = html.unescape(text).lower()
+    text = re.sub(r"[^a-z0-9]+", "-", text)
+    return text.strip("-")
+
+
+def normalize_anchor(anchor: str) -> str:
+    """Normalize anchors to match kramdown/Jekyll id behavior for comparisons."""
+    text = anchor.strip().lower()
+    if text.startswith("#"):
+        text = text[1:]
+    text = html.unescape(text)
+    text = ENTITY_HEX_RE.sub("", text)
+    text = ENTITY_DECIMAL_IN_WORD_RE.sub(r"\1\3", text)
+    text = ENTITY_DECIMAL_SUFFIX_RE.sub("", text)
+    text = re.sub(r"-{2,}", "-", text)
+    return text.strip("-")
 
 
 @dataclass
@@ -76,6 +104,7 @@ class AnchorChecker:
         self._valid_urls: set[str] = set()
         self._redirects: dict[str, str] = {}
         self._missing_html: set[str] = set()  # Track pages with missing HTML
+        self._url_to_md: dict[str, str] = {}
         self._load_backlinks()
 
     def _load_backlinks(self) -> None:
@@ -95,6 +124,11 @@ class AnchorChecker:
         # Load valid URLs from url_info
         url_info = data.get("url_info", {})
         self._valid_urls = set(url_info.keys())
+        self._url_to_md = {
+            url: info["markdown_path"]
+            for url, info in url_info.items()
+            if info.get("markdown_path")
+        }
 
         # Also add redirect sources as "valid" (they resolve to real pages)
         self._valid_urls.update(self._redirects.keys())
@@ -137,12 +171,22 @@ class AnchorChecker:
                 self._missing_html.add(url)
                 return set()
 
+        anchors: set[str] = set()
         # Fast regex extraction of all id attributes
         try:
             content = html_path.read_text(encoding="utf-8")
-            return set(HTML_ID_RE.findall(content))
+            anchors.update(HTML_ID_RE.findall(content))
         except Exception:
-            return set()
+            anchors = set()
+
+        md_path = self._url_to_md.get(resolved_url)
+        if md_path:
+            anchors.update(self.get_anchors_for_markdown_headings(md_path))
+        return anchors
+
+    @lru_cache(maxsize=512)
+    def get_normalized_anchors_for_page(self, url: str) -> set[str]:
+        return {normalize_anchor(anchor) for anchor in self.get_anchors_for_page(url)}
 
     def get_anchors_for_markdown(self, md_path: Path) -> set[str]:
         """
@@ -172,12 +216,75 @@ class AnchorChecker:
         # Fallback: try to derive URL from path
         # _d/foo.md -> /foo (common pattern)
         if md_path.parent.name == "_d":
-            guessed_url = f"/{md_path.stem}"
+            guessed_url = f"/d/{md_path.stem}"
             if guessed_url in self._valid_urls:
                 return self.get_anchors_for_page(guessed_url)
 
+        # _td/foo.md -> /td/foo (redirects to /foo in this repo)
+        if md_path.parent.name == "_td":
+            if md_path.stem == "index":
+                guessed_url = "/td"
+            else:
+                guessed_url = f"/td/{md_path.stem}"
+            return self.get_anchors_for_page(guessed_url)
+
         # Final fallback: read permalink from frontmatter and check HTML directly
         return self._get_anchors_from_frontmatter(md_path)
+
+    @lru_cache(maxsize=512)
+    def get_anchors_for_markdown_headings(self, md_path_str: str) -> set[str]:
+        md_path = Path(md_path_str)
+        if not md_path.exists():
+            return set()
+
+        try:
+            content = md_path.read_text(encoding="utf-8")
+        except Exception:
+            return set()
+
+        anchors: set[str] = set()
+        in_fenced_code = False
+        in_toc_block = False
+        after_toc_marker = False
+        for line in content.splitlines():
+            stripped = line.strip()
+            if "vim-markdown-toc" in line:
+                if "vim-markdown-toc-end" in line or stripped == "<!-- vim-markdown-toc -->":
+                    in_toc_block = False
+                else:
+                    in_toc_block = True
+                continue
+            if "<!-- TOC -->" in line:
+                after_toc_marker = True
+                continue
+            if stripped.startswith("```") or stripped.startswith("~~~"):
+                in_fenced_code = not in_fenced_code
+                continue
+            if in_fenced_code or in_toc_block:
+                continue
+            if after_toc_marker:
+                if line.startswith("    ") or line.startswith("\t") or stripped == "":
+                    continue
+                after_toc_marker = False
+
+            match = HEADING_RE.match(line)
+            if not match:
+                continue
+            heading_text = match.group(2).strip()
+            explicit_id_match = EXPLICIT_ID_RE.search(heading_text)
+            if explicit_id_match:
+                anchors.add(explicit_id_match.group(1))
+                heading_text = heading_text[: explicit_id_match.start()].strip()
+
+            slug = slugify_heading(heading_text)
+            if slug:
+                anchors.add(slug)
+
+        return anchors
+
+    @lru_cache(maxsize=512)
+    def get_normalized_anchors_for_markdown(self, md_path_str: str) -> set[str]:
+        return {normalize_anchor(anchor) for anchor in self.get_anchors_for_markdown(Path(md_path_str))}
 
     def _get_anchors_from_frontmatter(self, md_path: Path) -> set[str]:
         """
@@ -217,8 +324,17 @@ class AnchorChecker:
 
         lines = content.splitlines()
         stats.files_checked += 1
+        in_fenced_code = False
 
         for line_num, line in enumerate(lines, start=1):
+            stripped = line.strip()
+            if stripped.startswith("```") or stripped.startswith("~~~"):
+                in_fenced_code = not in_fenced_code
+                continue
+
+            if in_fenced_code:
+                continue
+
             # Check internal links with anchors: [text](/page#anchor)
             for match in INTERNAL_ANCHOR_LINK_RE.finditer(line):
                 target_page = match.group(1)
@@ -246,6 +362,10 @@ class AnchorChecker:
                 # Page exists, check anchor
                 valid_anchors = self.get_anchors_for_page(target_page)
                 if anchor not in valid_anchors:
+                    normalized_anchors = self.get_normalized_anchors_for_page(target_page)
+                    normalized_anchor = normalize_anchor(anchor)
+                    if normalized_anchor in normalized_anchors:
+                        continue
                     stats.broken_anchors += 1
                     stats.broken_links.append(
                         BrokenLink(
@@ -266,8 +386,14 @@ class AnchorChecker:
                 if verbose:
                     console.print(f"  [dim]{md_path}:{line_num}[/] -> #{anchor}")
 
-                valid_anchors = self.get_anchors_for_markdown(md_path)
+                valid_anchors = self.get_anchors_for_markdown_headings(str(md_path))
+                if not valid_anchors:
+                    valid_anchors = self.get_anchors_for_markdown(md_path)
                 if anchor not in valid_anchors:
+                    normalized_anchors = self.get_normalized_anchors_for_markdown(str(md_path))
+                    normalized_anchor = normalize_anchor(anchor)
+                    if normalized_anchor in normalized_anchors:
+                        continue
                     stats.broken_anchors += 1
                     stats.broken_links.append(
                         BrokenLink(

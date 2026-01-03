@@ -91,3 +91,12 @@ repos:
         pass_filenames: false
         always_run: false
         verbose: true
+
+      - id: anchor-checker
+        name: Check markdown anchors
+        entry: .pre-commit-hooks/anchor-checker.sh
+        language: script
+        files: '\.(md|markdown)$'
+        exclude: "^zz-chop-logs/.*$|back-links.json"
+        pass_filenames: false
+        always_run: false
