@@ -251,3 +251,7 @@ OBS Studio is a free, open-source tool that can capture Zoom's window or full sc
 - <https://llmsecurity.net/>
 - <https://github.com/mlabonne/llm-course?tab=readme-ov-file>
 - <https://rentry.org/llm-training>
+
+---
+
+See also: [AI FAQ](/ai-faq) - Who decides what AI should say? Whose biases are baked in? The philosophical tensions around AI control.

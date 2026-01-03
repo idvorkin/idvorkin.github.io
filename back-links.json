@@ -26,7 +26,10 @@
         "/addictions": "/addiction",
         "/affirm": "/affirmations",
         "/ai-coder": "/chop",
+        "/ai-open-questions": "/ai-faq",
         "/ai-papers": "/ai-paper",
+        "/ai-philosophy": "/ai-faq",
+        "/ai-questions": "/ai-faq",
         "/ai-talk": "/genai-talk",
         "/alexa-charity": "/toysfortots",
         "/anxious": "/anxiety",
@@ -671,10 +674,13 @@
             "description": "Two engineers, same IQ, same tools. One ships weekly. One is “researching the best approach.”, or “Waiting for someone to tell them what to do”. In six months, the gap between them will be insurmountable. Why? Not intelligence—agency. And in the AI era, this gap is about to become exponential.\n\n",
             "doc_size": 39000,
             "file_path": "_site/agency.html",
-            "incoming_links": [],
-            "last_modified": "2025-11-15T09:38:37-08:00",
+            "incoming_links": [
+                "/ai-faq"
+            ],
+            "last_modified": "2026-01-03T14:35:14.384003+00:00",
             "markdown_path": "_d/agency.md",
             "outgoing_links": [
+                "/ai-faq",
                 "/amazon",
                 "/anxiety",
                 "/be-proactive",
@@ -690,18 +696,19 @@
         },
         "/ai": {
             "description": "AI becomes the\nThe transition from A landing page for all my ai pages - a nice jumping off point (especially from the graph).\n\n",
-            "doc_size": 26000,
+            "doc_size": 27000,
             "file_path": "_site/ai.html",
             "incoming_links": [
                 "/ai-developer"
             ],
-            "last_modified": "2026-01-02T15:26:54+00:00",
+            "last_modified": "2026-01-03T14:35:50.326181+00:00",
             "markdown_path": "_d/ai.md",
             "outgoing_links": [
                 "/ai-art",
                 "/ai-bestie",
                 "/ai-bm",
                 "/ai-developer",
+                "/ai-faq",
                 "/ai-image",
                 "/ai-journal",
                 "/ai-paper",
@@ -741,6 +748,7 @@
             "file_path": "_site/ai-bestie.html",
             "incoming_links": [
                 "/ai",
+                "/ai-faq",
                 "/tesla",
                 "/y24"
             ],
@@ -782,6 +790,31 @@
             "redirect_url": "",
             "title": "AI Developer",
             "url": "/ai-developer"
+        },
+        "/ai-faq": {
+            "description": "Questions I keep getting asked about AI, and my current (probably wrong) answers. The ones that don’t resolve cleanly.\n\n",
+            "doc_size": 24000,
+            "file_path": "_site/ai-faq.html",
+            "incoming_links": [
+                "/agency",
+                "/ai",
+                "/ai-security",
+                "/chow",
+                "/gpt"
+            ],
+            "last_modified": "2026-01-03T14:37:34+00:00",
+            "markdown_path": "_d/ai-faq.md",
+            "outgoing_links": [
+                "/agency",
+                "/ai-bestie",
+                "/ai-paper",
+                "/ai-security",
+                "/chow",
+                "/gpt"
+            ],
+            "redirect_url": "",
+            "title": "AI FAQ",
+            "url": "/ai-faq"
         },
         "/ai-image": {
             "description": "Everyone talks about GPT, but you can also generate images. Lately, I’ve been playing with Flux, which is an image generator. You can generate images of me using the idvorkin with this lora on replicate.\n\n",
@@ -830,7 +863,8 @@
             "doc_size": 17000,
             "file_path": "_site/ai-paper.html",
             "incoming_links": [
-                "/ai"
+                "/ai",
+                "/ai-faq"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/ai-paper.md",
@@ -846,11 +880,14 @@
             "incoming_links": [
                 "/ai",
                 "/ai-developer",
+                "/ai-faq",
                 "/ai-journal"
             ],
-            "last_modified": "2026-01-02T14:58:41+00:00",
+            "last_modified": "2026-01-03T14:35:14.384003+00:00",
             "markdown_path": "_d/ai-security.md",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/ai-faq"
+            ],
             "redirect_url": "",
             "title": "AI Security",
             "url": "/ai-security"
@@ -1511,12 +1548,14 @@
             "file_path": "_site/chow.html",
             "incoming_links": [
                 "/ai",
+                "/ai-faq",
                 "/ai-journal",
                 "/how-igor-chops"
             ],
-            "last_modified": "2026-01-02T02:18:59+00:00",
+            "last_modified": "2026-01-03T14:35:50.326181+00:00",
             "markdown_path": "_d/chow.md",
             "outgoing_links": [
+                "/ai-faq",
                 "/chop",
                 "/td/data-systems",
                 "/writing"
@@ -2793,17 +2832,19 @@
         },
         "/gpt": {
             "description": "Just like the search bar in google fills in what you’re typing when you say “Where can I ge .. “ GPT3 complete strings as well. Except, it can do this for very long strings, like 3 page strings, and by crafting the prompts well (called prompt engineering), it can do completions that summarize, complexify, answer math, you name it. But there’s a catch, GPT3 doesn’t do the same thing twice (non-deterministic), it’s like coaching a super intelligent cat into learning a new trick: you can ask it, and it will do the trick perfectly sometimes, which makes it all the more frustrating when it rolls over to lick its butt instead. You know the problem is not that it can’t but that it won’t(From Gwern).\n\n",
-            "doc_size": 25000,
+            "doc_size": 26000,
             "file_path": "_site/gpt.html",
             "incoming_links": [
                 "/ai-art",
+                "/ai-faq",
                 "/ai-journal",
                 "/ml",
                 "/nlp"
             ],
-            "last_modified": "2025-12-07T03:06:25+00:00",
+            "last_modified": "2026-01-03T14:35:14.384003+00:00",
             "markdown_path": "_d/gpt2.md",
             "outgoing_links": [
+                "/ai-faq",
                 "/nurture",
                 "/rapport"
             ],
@@ -3001,7 +3042,7 @@
         },
         "/how-igor-chops": {
             "description": "I mumble to Claude on my couch while my family wonders who I’m talking to. I vibe code in the car while my son drives. I rent the most expensive brain I can get. This is my CHOP (Chat-Oriented Programming) setup: the infrastructure, the tools, and what I’ve learned.\n\n",
-            "doc_size": 47000,
+            "doc_size": 49000,
             "file_path": "_site/how-igor-chops.html",
             "incoming_links": [
                 "/ai",
@@ -3009,7 +3050,7 @@
                 "/chop",
                 "/pet-projects"
             ],
-            "last_modified": "2026-01-02T15:26:54+00:00",
+            "last_modified": "2026-01-02T08:13:57-08:00",
             "markdown_path": "_d/how-igor-chops.md",
             "outgoing_links": [
                 "/40yo",
@@ -3414,12 +3455,12 @@
         },
         "/like-switch": {
             "description": "The like switch, written by an ex-FBI agent, goes into detail on how to make friends and influence people in a much more modern form.\n\n",
-            "doc_size": 21000,
+            "doc_size": 30000,
             "file_path": "_site/like-switch.html",
             "incoming_links": [
                 "/joy"
             ],
-            "last_modified": "2025-12-07T03:17:42+00:00",
+            "last_modified": "2025-12-22T02:18:29+00:00",
             "markdown_path": "_d/the-like-switch.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -4792,7 +4833,7 @@
         },
         "/sharpen-the-saw": {
             "description": "A young man saw a woodcutter cutting down a tree and asked “What are you doing?” “Are you blind?” the woodcutter replied. “I’m cutting down this tree.” The young man continued. “You look exhausted! Take a break. Sharpen your saw.” The woodcutter explained he’d been sawing for hours and did not have time to take a break. The young man pushed back… “If you sharpen the saw, you would cut down the tree much faster.” The woodcutter said “I don’t have time to sharpen the saw. Don’t you see I’m too busy. These are my insights based on the 7 habits Chapter 7.\n\n",
-            "doc_size": 15000,
+            "doc_size": 14000,
             "file_path": "_site/sharpen-the-saw.html",
             "incoming_links": [
                 "/7-habits",
@@ -5738,7 +5779,7 @@
         },
         "/timeoff-2020-03": {
             "description": "In March 2020, I took a 2 month sabbatical between leaving Amazon and joining Facebook. Given it was a substantial amount of time, I came up with some big plans, and wrote them down. It was a great plan, BUT my time off correlated perfectly to the Corona Virus and as a result I wasted lots of my mental energy thinking about the Corona Virus, and adjusting to being in pseudo-quarantine. Took me a while, but I finally realized I should ignore corona virus, or at least minimize my time thinking about it.\n\n",
-            "doc_size": 31000,
+            "doc_size": 30000,
             "file_path": "_site/timeoff-2020-03.html",
             "incoming_links": [
                 "/timeoff"
@@ -6330,7 +6371,7 @@
         },
         "/win-win": {
             "description": "Win/Win is a constantly seeking mutual benefit in all interactions. Win/Win means that agreements or solutions are mutually beneficial, mutually satisfying. With a Win/Win solution, all parties feel good about the decision and feel committed to the action plan. Win/Win sees life as a cooperative, not a competitive arena. Most people tend to think in terms of dichotomies: strong or weak, hardball or softball, win or lose. But that kind of thinking is fundamentally flawed. It’s based on power and position rather than on principle. Win/Win is based on the paradigm that there is plenty for everybody, that one person’s success is not achieved at the expense or exclusion of the success of others.\n\n",
-            "doc_size": 21000,
+            "doc_size": 20000,
             "file_path": "_site/win-win.html",
             "incoming_links": [
                 "/7-habits",

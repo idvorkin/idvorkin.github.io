@@ -210,3 +210,5 @@ With source code [here](https://github.com/idvorkin/LinqPadSnippets/blob/master/
 - [Used as an excel macro to perform complex extractions](https://twitter.com/shubroski/status/1587136794797244417)
 
 ## Related ideas
+
+- [AI FAQ](/ai-faq) - Open questions about AI: Is it thinking? Who controls it? Where is this going?

@@ -94,6 +94,12 @@ _Reference: [Wikipedia: Signs of AI Writing](https://en.wikipedia.org/wiki/Wikip
 - "truly remarkable", "particularly noteworthy"
 - Instead: Show don't tell - use specific examples that demonstrate importance
 
+**❌ Melodramatic framing:**
+
+- "the question that haunts me", "what keeps me up at night"
+- "the thing that terrifies me", "my deepest fear"
+- Instead: Use direct framing like "the open question" or "what I can't resolve"
+
 **✅ Better approaches:**
 
 - Use specific numbers, names, and details over vague descriptions
@@ -409,6 +415,7 @@ Jekyll automatically generates excerpts (post summaries/previews) for blog index
 **What excerpts are:**
 
 Excerpts are automatically extracted text snippets that represent your post in:
+
 - Blog homepage listing pages
 - Category/tag archive pages
 - RSS/Atom feed readers
@@ -444,6 +451,7 @@ Your opening paragraph...
 ```
 
 **Best practices:**
+
 - Make the opening paragraph 2-4 sentences
 - Hook the reader with a personal stake or compelling question
 - Give enough context that the excerpt works as a standalone preview
@@ -819,6 +827,7 @@ Issues:
 ```
 
 **Status indicators:**
+
 - 🟢 Pass
 - 🔴 Fail (requires fix)
 - ⚪ N/A (not applicable to this PR)
@@ -827,34 +836,34 @@ Issues:
 
 **Architect** (structure):
 
-| Key | Check |
-|-----|-------|
-| `headers` | Headers used for easy scanning |
-| `front-matter` | Complete front matter (title, permalink, tags) |
+| Key              | Check                                                                                      |
+| ---------------- | ------------------------------------------------------------------------------------------ |
+| `headers`        | Headers used for easy scanning                                                             |
+| `front-matter`   | Complete front matter (title, permalink, tags)                                             |
 | `internal-links` | Internal links use permalinks (not redirects), relative paths (no hostname), proper format |
 
 **Carpenter** (prose):
 
-| Key | Check |
-|-----|-------|
-| `opening` | First paragraph is plain text (no includes/alerts) for excerpt generation |
-| `voice` | Consistent voice throughout (no "I"/"we" mixing, consistent tone) |
-| `ai-patterns` | No AI writing patterns (undue emphasis, "it's important to note", etc.) |
+| Key           | Check                                                                     |
+| ------------- | ------------------------------------------------------------------------- |
+| `opening`     | First paragraph is plain text (no includes/alerts) for excerpt generation |
+| `voice`       | Consistent voice throughout (no "I"/"we" mixing, consistent tone)         |
+| `ai-patterns` | No AI writing patterns (undue emphasis, "it's important to note", etc.)   |
 
 **Judge** (polish):
 
-| Key | Check |
-|-----|-------|
-| `alerts` | Alert boxes placed AFTER opening paragraph |
-| `images` | Images use proper includes (`blob_image.html`, etc.) |
-| `books` | Book links use `{% include amazon.html asin="..." %}` |
+| Key       | Check                                                   |
+| --------- | ------------------------------------------------------- |
+| `alerts`  | Alert boxes placed AFTER opening paragraph              |
+| `images`  | Images use proper includes (`blob_image.html`, etc.)    |
+| `books`   | Book links use `{% include amazon.html asin="..." %}`   |
 | `ai-slop` | AI slop notice (if needed) placed after first paragraph |
 
 **Workflow** (process):
 
-| Key | Check |
-|-----|-------|
-| `rebased` | Branch rebased onto upstream main |
+| Key         | Check                                     |
+| ----------- | ----------------------------------------- |
+| `rebased`   | Branch rebased onto upstream main         |
 | `backlinks` | Backlinks regenerated (`just back-links`) |
 
 **Example with issues:**

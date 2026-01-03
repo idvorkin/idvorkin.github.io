@@ -209,22 +209,18 @@ defer(() => {
 ### Where Deep Technologists Become Critical
 
 1. **Performance optimization at scale**
-
    - Pre-AI: Needed at 100 users
    - Post-AI: Needed at 10K+ users
 
 2. **Complex system architecture**
-
    - Pre-AI: Needed for MVP
    - Post-AI: Needed when you're actually scaling
 
 3. **Security hardening**
-
    - Pre-AI: Needed before shipping
    - Post-AI: Needed before significant scale
 
 4. **Database optimization**
-
    - Pre-AI: Needed to handle any real data
    - Post-AI: Needed when queries slow down at scale
 
@@ -438,22 +434,18 @@ If AI can handle the technical details, what's your actual value?
 **Micro-habits for high-intelligence people recovering from analysis paralysis:**
 
 1. **The 2-hour rule:** If you've been researching/planning for 2 hours, you must ship something (even if broken)
-
    - Use AI to ship faster, not to research more
 
 2. **Bias for "good enough + action":**
-
    - AI can generate code instantly → your job is to run it, not perfect it
    - Ship first draft. Let reality teach you what needs improving
 
 3. **Count attempts, not quality:**
-
    - How many times did you try something this week?
    - High agency: 20 failed experiments
    - Low agency: 1 perfect plan
 
 4. **Circle of Influence audit:**
-
    - What can you execute on TODAY with AI's help?
    - Stop debating theoretical approaches, start testing real ones
 
@@ -549,3 +541,5 @@ Cross-link to [Anxiety](/anxiety): The paradox of control—by accepting you can
 Cross-link to [Essentialism](/essentialism): Choose deliberately where to apply your agency. Say no to perfect plans. Say yes to imperfect action.
 
 **Start now:** What's one thing you can ship today with AI's help? Not perfect. Not polished. Just shipped.
+
+See also: [AI FAQ](/ai-faq) - More open questions about AI's impact on expertise, thinking, and society.
