@@ -136,6 +136,22 @@ See `_d/tesla.md` for implementation. Backend: [github.com/idvorkin/tony_tesla](
 
 ## Previewing Pages
 
+### Ruby Version Requirement
+
+This project requires **Ruby 3.3.x** (set via `.ruby-version`). The github-pages gem is incompatible with Ruby 4.0+.
+
+**Important:** Homebrew Ruby may take precedence in PATH over rbenv shims. Always use `rbenv exec` to ensure the correct Ruby version:
+
+```bash
+# Install dependencies
+rbenv exec bundle install
+
+# Start Jekyll server
+rbenv exec bundle exec jekyll serve --port 4000 --livereload-port 35729 --livereload
+```
+
+### Managing Multiple Jekyll Servers
+
 **Use `running-servers` to discover and manage servers:**
 
 ```bash
@@ -160,9 +176,10 @@ running-servers suggest
 
 The script automatically detects the Tailscale hostname and provides clickable URLs.
 
-**Starting a server**: If no server is running for the current directory, use the command suggested by the script:
+**Starting a server**: If no server is running for the current directory:
 
 ```bash
+# Using just (wraps the rbenv exec command)
 just jekyll-serve <port> <livereload_port>
 # e.g., just jekyll-serve 4001 35730
 ```

@@ -262,8 +262,9 @@ jekyll-serve port="4000" livereload_port="35729":
         BIND_HOST="127.0.0.1"
     fi
 
+    # Use rbenv to ensure correct Ruby version (3.3.x required for github-pages gem)
     if [ "$(uname)" = "Darwin" ]; then
-        ~/homebrew/opt/ruby/bin/bundle exec jekyll server --incremental --livereload --host $BIND_HOST --port {{port}} --livereload-port {{livereload_port}}
+        rbenv exec bundle exec jekyll server --incremental --livereload --host $BIND_HOST --port {{port}} --livereload-port {{livereload_port}}
     else
         bundle exec jekyll server --incremental --livereload --host $BIND_HOST --port {{port}} --livereload-port {{livereload_port}}
     fi
