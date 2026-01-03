@@ -319,4 +319,4 @@ Instead of selling static assets (book, video) - you provide the content and it 
 
 ---
 
-See also: [AI FAQ](/ai-faq) - The deeper questions: Am I outsourcing my thinking? Is AI actually thinking? Who decides what AI should say?
+See also: [AI FAQ](/ai-faq) - Open questions: Am I outsourcing my thinking? Is AI actually thinking? Who decides what AI should say?

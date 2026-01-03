@@ -105,7 +105,7 @@ The risks nobody discusses: addiction to an infinitely patient companion, depend
 
 ### Will AI be your bestie?
 
-The uncomfortable truth: an AI bestie could be _better_ than a human one. Always available. Infinitely patient. Remembers everything you've told it. Never judges. Never tired. Never has its own problems competing for attention. Knows exactly what to say.
+The uncomfortable truth: an AI bestie could be _better_ than a human one. Always available. Infinitely patient. Remembers everything you've told it. It never judges, gets tired, or has competing priorities. It knows exactly what to say.
 
 Will it replace your human bestie? Probably not - but it might become easier to talk to. And that's the hard part. Human relationships require effort, friction, reciprocity. AI relationships are frictionless. The question isn't whether AI companions will exist - they already do. The question is what happens to us when the easy option is always there. See also: [/ai-bestie](/ai-bestie)
 
