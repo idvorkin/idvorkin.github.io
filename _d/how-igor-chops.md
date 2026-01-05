@@ -49,9 +49,9 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
 - [Making AI Work My Way](#making-ai-work-my-way)
   - [The chop-conventions Repo](#the-chop-conventions-repo)
   - [CLAUDE.md Structure](#claudemd-structure)
-  - [Command Line and PWAs](#command-line-and-pwas)
   - [MCP Servers and Skills](#mcp-servers-and-skills)
-  - [My Projects](#my-projects)
+- [My Projects](#my-projects)
+  - [Command Line and PWAs](#command-line-and-pwas)
   - [Testing and Evals](#testing-and-evals)
 - [The Server Behind the Curtain](#the-server-behind-the-curtain)
   - [Why Not Cloud Environments?](#why-not-cloud-environments)
@@ -77,6 +77,7 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
 - [Appendix: Open Questions](#appendix-open-questions)
   - [What happens when execution is no longer the bottleneck?](#what-happens-when-execution-is-no-longer-the-bottleneck)
   - [What happens post-singularity?](#what-happens-post-singularity)
+  - [Is sloppy process okay if agents can clean up the mess?](#is-sloppy-process-okay-if-agents-can-clean-up-the-mess)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -237,13 +238,17 @@ Just today, as I was writing this post, I realized: "Hey, I could do this walkin
 
 Yes, I can vibe code in the car too. My 16-year-old son is learning to drive and drove us back from a 10-hour drive from Ashland, Oregon. I spent the entire time vibecoding. That probably contributed to my [shoulder impingement](/shoulder-pain).
 
-### Ergonomics ⚠️
+### Ergonomics
 
 {% include local_image_float_right.html src="raccoon-shoulder.webp" %}
 
 **The danger of all this freedom.** Be careful about ergonomics, especially if you're an [older coder](/40yo). Coding on couches, in cars, and in awkward positions adds up. Your body will eventually present the bill.
 
 ## Making AI Work My Way
+
+{% include alert.html content="**Honestly?** I'm not convinced this stuff actually works. But until models are smart enough to just figure it out, you have to do something. Keep it lightweight—it might not outlive the next model iteration." style="warning" %}
+
+**For nerds:** This whole strategy fights against the [Bitter Lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html). Rich Sutton argued that simple methods + more compute beats hand-crafted human knowledge. Building elaborate CLAUDE.md files and conventions is exactly that - encoding human knowledge instead of letting models get smarter. The irony isn't lost on me.
 
 **The core problem:** Every session, the AI starts fresh. It doesn't remember your preferences, your project structure, or what you've already discussed. Conventions are how you encode context that persists.
 
@@ -259,23 +264,27 @@ The first thing I tell Claude to do in any project: clone this repo and read the
 
 ### CLAUDE.md Structure
 
-{% include alert.html content="**Honestly?** I'm not convinced this stuff actually works. But it feels right, and maybe that's enough for now." style="warning" %}
-
 My CLAUDE.md files follow a pattern: foundational rules (honesty, call out bad ideas), guardrails (no pushing to main, no removing tests), relationship framing (we're colleagues, push back when I'm wrong), and project-specific guidance.
 
 The theory: tell Claude _how to think_, not just _what to do_. Whether "don't glaze me" actually shapes behavior across sessions? I genuinely don't know.
 
 Here's the thing: every time models get smarter and tools get better, my CLAUDE.md becomes partially obsolete. Especially the alchemy - yelling at the model, begging it not to do a bad job, elaborate prompting tricks. That stuff has a short half-life. But some things stay useful: custom commands to run, project-specific context, where to find things. The challenge is knowing which is which.
 
-### Command Line and PWAs
-
-Most of my tools are either command line or PWAs. Command line - obviously, when I'm on the command line, which is often. For everything else, PWAs: local-first, run everywhere, no app store hassle. They're awesome. Most of my [visualization tools](https://github.com/idvorkin/pwa-utils) are PWAs.
-
 ### MCP Servers and Skills
 
-MCP (Model Context Protocol) servers, skills, plugins - honestly I don't look at this very much yet. GitHub MCP for issue/PR management, some doc fetching. This is something that will evolve. Right now it feels like plumbing that works in the background.
+At the end of the day, I don't use much of this. Often I'll install something, try it out, and it just gets left running in the background. GitHub MCP for issue/PR management, maybe some doc fetching. That's about it.
 
-### My Projects
+This stuff changes so fast, and with models getting smarter (see the Bitter Lesson discussion in [Making AI Work My Way](#making-ai-work-my-way)), we'll just get to it later. Two or three max.
+
+**What does matter:** Little CLI programs for my agents to run. Same principle as with humans - instead of giving someone detailed directions, give them a tool that just works perfectly to solve the problem.
+
+For example, I have [`running-servers`](https://github.com/idvorkin/settings/blob/main/shared/running-servers) that checks if a Jekyll server is already running for a directory, so agents don't try to recreate them. Instead of prompting the agent through "check ps, grep for jekyll, parse the port numbers, compare to current directory..." - just give them a tool that answers "is there a server for this directory?" These custom tools that extend what agents can do - those are worth building.
+
+## My Projects
+
+### Command Line and PWAs
+
+Most of my tools are either command line or PWAs. Command line - obviously, when I'm on the command line, which is often. For everything else, PWAs: local-first, run everywhere, no app store hassle. They're remarkably flexible.
 
 {% include summarize-page.html src="/pet-projects" %}
 
