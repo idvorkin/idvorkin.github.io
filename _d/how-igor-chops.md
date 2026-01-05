@@ -45,13 +45,13 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
   - [The Desktop Setup](#the-desktop-setup)
   - [The Walking Treadmill](#the-walking-treadmill)
   - [The Car](#the-car)
-  - [Ergonomics ⚠️](#ergonomics-)
+  - [Ergonomics](#ergonomics)
 - [Making AI Work My Way](#making-ai-work-my-way)
   - [The chop-conventions Repo](#the-chop-conventions-repo)
   - [CLAUDE.md Structure](#claudemd-structure)
-  - [Command Line and PWAs](#command-line-and-pwas)
   - [MCP Servers and Skills](#mcp-servers-and-skills)
-  - [My Projects](#my-projects)
+- [My Projects](#my-projects)
+  - [Command Line and PWAs](#command-line-and-pwas)
   - [Testing and Evals](#testing-and-evals)
 - [The Server Behind the Curtain](#the-server-behind-the-curtain)
   - [Why Not Cloud Environments?](#why-not-cloud-environments)
@@ -238,7 +238,7 @@ Just today, as I was writing this post, I realized: "Hey, I could do this walkin
 
 Yes, I can vibe code in the car too. My 16-year-old son is learning to drive and drove us back from a 10-hour drive from Ashland, Oregon. I spent the entire time vibecoding. That probably contributed to my [shoulder impingement](/shoulder-pain).
 
-### Ergonomics ⚠️
+### Ergonomics
 
 {% include local_image_float_right.html src="raccoon-shoulder.webp" %}
 
@@ -246,9 +246,9 @@ Yes, I can vibe code in the car too. My 16-year-old son is learning to drive and
 
 ## Making AI Work My Way
 
-{% include alert.html content="**Honestly?** I'm not convinced this stuff actually works. But until models are smart enough to just figure it out, you gotta do something. Just not worth going overly crazy on it - it might not outlive the next model iteration." style="warning" %}
+{% include alert.html content="**Honestly?** I'm not convinced this stuff actually works. But until models are smart enough to just figure it out, you have to do something. Keep it lightweight—it might not outlive the next model iteration." style="warning" %}
 
-**For nerds:** This whole strategy fights against the Bitter Lesson. Rich Sutton argued that simple methods + more compute beats hand-crafted human knowledge. Building elaborate CLAUDE.md files and conventions is exactly that - encoding human knowledge instead of letting models get smarter. The irony isn't lost on me.
+**For nerds:** This whole strategy fights against the [Bitter Lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html). Rich Sutton argued that simple methods + more compute beats hand-crafted human knowledge. Building elaborate CLAUDE.md files and conventions is exactly that - encoding human knowledge instead of letting models get smarter. The irony isn't lost on me.
 
 **The core problem:** Every session, the AI starts fresh. It doesn't remember your preferences, your project structure, or what you've already discussed. Conventions are how you encode context that persists.
 
@@ -284,7 +284,7 @@ For example, I have [`running-servers`](https://github.com/idvorkin/settings/blo
 
 ### Command Line and PWAs
 
-Most of my tools are either command line or PWAs. Command line - obviously, when I'm on the command line, which is often. For everything else, PWAs: local-first, run everywhere, no app store hassle. They're awesome.
+Most of my tools are either command line or PWAs. Command line - obviously, when I'm on the command line, which is often. For everything else, PWAs: local-first, run everywhere, no app store hassle. They're remarkably flexible.
 
 {% include summarize-page.html src="/pet-projects" %}
 
