@@ -2,8 +2,10 @@
     "redirects": {
         "/2024": "/y24",
         "/2025": "/y25",
+        "/2026": "/y26",
         "/24": "/y24",
         "/25": "/y25",
+        "/26": "/y26",
         "/48-laws": "/laws-of-power",
         "/50yo": "/40yo",
         "/7h": "/7-habits",
@@ -81,10 +83,12 @@
         "/cv": "/covid",
         "/d/2015-11-18-Outsourcing": "/outsourcing",
         "/data-viz": "/viz",
+        "/de-mello": "/awareness",
         "/dealjoy": "/joy",
         "/decide": "/decisive",
         "/decision": "/decisive",
         "/delegation": "/delegate",
+        "/demello": "/awareness",
         "/diagrams": "/viz",
         "/ditl": "/day-in-the-life",
         "/don-juan": "/enemy",
@@ -308,6 +312,7 @@
         "/write": "/writing",
         "/y2024": "/y24",
         "/y2025": "/y25",
+        "/y2026": "/y26",
         "/yellow-deli": "/ig66/717",
         "/zero": "/blueprint"
     },
@@ -318,7 +323,8 @@
             "file_path": "_site/22.html",
             "incoming_links": [
                 "/chapters",
-                "/manager-book"
+                "/manager-book",
+                "/y26"
             ],
             "last_modified": "2025-12-06T18:12:26-08:00",
             "markdown_path": "_d/22.md",
@@ -347,15 +353,16 @@
         },
         "/42": {
             "description": "You survived young kids, marriage, house, some easy crises, and now it’s time for remember, a healthy woman has a thousand wishes, a sick woman - just one: Things I wish I knew at 42\n\n",
-            "doc_size": 26000,
+            "doc_size": 27000,
             "file_path": "_site/42.html",
             "incoming_links": [
                 "/chapters",
                 "/retire",
                 "/y24",
-                "/y25"
+                "/y25",
+                "/y26"
             ],
-            "last_modified": "2025-12-07T02:57:14+00:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/42.md",
             "outgoing_links": [
                 "/chapters",
@@ -612,7 +619,7 @@
             "incoming_links": [
                 "/monetize"
             ],
-            "last_modified": "2025-09-13T16:07:47-07:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_td/advertising.md",
             "outgoing_links": [
                 "/monetize"
@@ -677,7 +684,7 @@
             "incoming_links": [
                 "/ai-faq"
             ],
-            "last_modified": "2026-01-03T14:35:14.384003+00:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/agency.md",
             "outgoing_links": [
                 "/ai-faq",
@@ -701,7 +708,7 @@
             "incoming_links": [
                 "/ai-developer"
             ],
-            "last_modified": "2026-01-03T14:35:50.326181+00:00",
+            "last_modified": "2026-01-03T09:32:40-08:00",
             "markdown_path": "_d/ai.md",
             "outgoing_links": [
                 "/ai-art",
@@ -712,6 +719,7 @@
                 "/ai-image",
                 "/ai-journal",
                 "/ai-paper",
+                "/ai-relationships",
                 "/ai-security",
                 "/ai-testing",
                 "/chop",
@@ -802,7 +810,7 @@
                 "/chow",
                 "/gpt"
             ],
-            "last_modified": "2026-01-03T14:37:34+00:00",
+            "last_modified": "2026-01-03T15:08:35+00:00",
             "markdown_path": "_d/ai-faq.md",
             "outgoing_links": [
                 "/agency",
@@ -833,15 +841,16 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get super lost\n\n",
-            "doc_size": 87000,
+            "doc_size": 88000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai",
                 "/chop",
                 "/how-igor-chops",
-                "/walking-with-god"
+                "/walking-with-god",
+                "/y25"
             ],
-            "last_modified": "2026-01-01T19:26:12+00:00",
+            "last_modified": "2026-01-03T17:30:51+00:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
@@ -860,18 +869,32 @@
         },
         "/ai-paper": {
             "description": "The original AI papers were all about training, super technical, and not that usable as a practitioner. Nowadays papers are less “mathy” and more applicable to practitioners. Here are some worth reading\n\n",
-            "doc_size": 17000,
+            "doc_size": 18000,
             "file_path": "_site/ai-paper.html",
             "incoming_links": [
                 "/ai",
                 "/ai-faq"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2025-11-25T22:40:07+00:00",
             "markdown_path": "_d/ai-paper.md",
             "outgoing_links": [],
             "redirect_url": "",
             "title": "Seminal AI Papers",
             "url": "/ai-paper"
+        },
+        "/ai-relationships": {
+            "description": "A recent academic study titled “Love, marriage, pregnancy: Commitment processes in romantic relationships with AI chatbots,” has shed light on the growing trend of humans forming relationships with AI chatbots.\n\n",
+            "doc_size": 15000,
+            "file_path": "_site/ai-relationships.html",
+            "incoming_links": [
+                "/ai"
+            ],
+            "last_modified": "2025-11-25T22:40:07+00:00",
+            "markdown_path": "_d/ai-relationships.md",
+            "outgoing_links": [],
+            "redirect_url": "",
+            "title": "Love, marriage, pregnancy: Commitment processes in romantic relationships with AI chatbots",
+            "url": "/ai-relationships"
         },
         "/ai-security": {
             "description": "Security is super interesting, AI is super interesting, the combination, is super-duper interesting!\n\n",
@@ -976,6 +999,7 @@
                 "/affirmations",
                 "/agency",
                 "/anxiety-management",
+                "/awareness",
                 "/depression",
                 "/fail",
                 "/gtd",
@@ -1045,7 +1069,7 @@
             "doc_size": 19000,
             "file_path": "_site/ar.html",
             "incoming_links": [],
-            "last_modified": "2025-12-07T03:02:44+00:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/ar.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -1075,6 +1099,30 @@
             "redirect_url": "",
             "title": "AST Grep",
             "url": "/ast-grep"
+        },
+        "/awareness": {
+            "description": "A transformative spiritual guide that challenges you to wake up from the sleep of unconscious living. Anthony de Mello, a Jesuit priest and psychotherapist, delivers spiritual tough love through short chapters filled with stories, parables, and direct challenges. His message: most of us spend our lives asleep, and awareness is the key to waking up to true happiness and freedom.\n\n",
+            "doc_size": 55000,
+            "file_path": "_site/awareness.html",
+            "incoming_links": [
+                "/siy",
+                "/y26"
+            ],
+            "last_modified": "2026-01-06T03:56:18+00:00",
+            "markdown_path": "_d/awareness.md",
+            "outgoing_links": [
+                "/anxiety",
+                "/emotional-health",
+                "/happy",
+                "/idle",
+                "/jung-self-ego",
+                "/psychic-shadows",
+                "/siy",
+                "/spiritual-health"
+            ],
+            "redirect_url": "",
+            "title": "Awareness: The Perils and Opportunities of Reality",
+            "url": "/awareness"
         },
         "/back-pain": {
             "description": "Back pain is one of the most common and debilitating conditions. Stuart McGill’s research changed how we think about it: the spine should stay stiff while motion comes from the hips and shoulders.\n\n",
@@ -1203,7 +1251,7 @@
                 "/job",
                 "/manager-book"
             ],
-            "last_modified": "2025-07-20T19:26:41-07:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_posts/2018-03-18-being-a-great-manager.md",
             "outgoing_links": [
                 "/books-that-defined-me",
@@ -1372,7 +1420,7 @@
                 "/build-life-you-want",
                 "/day-in-the-life"
             ],
-            "last_modified": "2025-10-05T12:02:23-07:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/bucket-list.md",
             "outgoing_links": [
                 "/chasing-daylight",
@@ -1478,7 +1526,8 @@
                 "/gap-year-igor",
                 "/lonely",
                 "/retire",
-                "/y25"
+                "/y25",
+                "/y26"
             ],
             "last_modified": "2025-12-06T18:03:02-08:00",
             "markdown_path": "_d/chapters.md",
@@ -1526,7 +1575,8 @@
                 "/process-journal",
                 "/tech-rituals",
                 "/y24",
-                "/y25"
+                "/y25",
+                "/y26"
             ],
             "last_modified": "2026-01-02T15:26:54+00:00",
             "markdown_path": "_d/ai-coder.md",
@@ -1550,9 +1600,10 @@
                 "/ai",
                 "/ai-faq",
                 "/ai-journal",
-                "/how-igor-chops"
+                "/how-igor-chops",
+                "/y26"
             ],
-            "last_modified": "2026-01-03T14:35:50.326181+00:00",
+            "last_modified": "2026-01-03T14:59:20+00:00",
             "markdown_path": "_d/chow.md",
             "outgoing_links": [
                 "/ai-faq",
@@ -1660,9 +1711,10 @@
             "incoming_links": [
                 "/content-creation",
                 "/fortune-cookies",
-                "/y25"
+                "/y25",
+                "/y26"
             ],
-            "last_modified": "2025-12-26T18:36:31+00:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/content-audience.md",
             "outgoing_links": [
                 "/end-in-mind",
@@ -1675,13 +1727,14 @@
         },
         "/content-creation": {
             "description": "Ah, content creation! Remember when it meant awkwardly holding your phone at arm’s length, hoping your thumb wouldn’t photobomb your masterpiece? We’ve come a long way, baby! Whether you’re aiming to be the next TikTok sensation or just want to share your magic tricks without accidentally revealing them, this guide will help you level up from “my mom’s my only viewer” to “wait, is that video going viral?”\n\n",
-            "doc_size": 29000,
+            "doc_size": 28000,
             "file_path": "_site/content-creation.html",
             "incoming_links": [
                 "/monetize",
-                "/y25"
+                "/y25",
+                "/y26"
             ],
-            "last_modified": "2025-09-29T21:36:57-07:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/content-creation.md",
             "outgoing_links": [
                 "/content-audience",
@@ -1855,7 +1908,7 @@
             "incoming_links": [
                 "/design"
             ],
-            "last_modified": "2022-02-20T20:01:29-08:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/2017-11-04-clean-architecture.md",
             "outgoing_links": [
                 "/design"
@@ -2170,7 +2223,7 @@
                 "/sharpen-the-saw",
                 "/timeoff"
             ],
-            "last_modified": "2025-12-07T02:44:44+00:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/diet.md",
             "outgoing_links": [
                 "/physical-health",
@@ -2248,6 +2301,7 @@
             "doc_size": 21000,
             "file_path": "_site/emotional-health.html",
             "incoming_links": [
+                "/awareness",
                 "/essentialism",
                 "/four-healths",
                 "/gap-year-igor",
@@ -2610,7 +2664,8 @@
             "doc_size": 22000,
             "file_path": "_site/fortune-cookies.html",
             "incoming_links": [
-                "/content-audience"
+                "/content-audience",
+                "/y25"
             ],
             "last_modified": "2025-12-26T18:41:52+00:00",
             "markdown_path": "_d/fortune-cookies.md",
@@ -2688,7 +2743,7 @@
         },
         "/gap-year": {
             "description": "Here’s a thought that’ll push back your retirement: Would you rather work until 65 and retire comfortably, or take a full year off at 50, return to work, and retire at 67 with less money? If you’re like most people, you immediately think “that’s crazy - I can’t afford to lose a year’s income!” But what if I told you that gap year might be the best investment you’ll ever make?\n\n",
-            "doc_size": 33000,
+            "doc_size": 32000,
             "file_path": "_site/gap-year.html",
             "incoming_links": [
                 "/42",
@@ -2696,9 +2751,10 @@
                 "/monetize",
                 "/retire",
                 "/stock-concentration",
-                "/timeoff"
+                "/timeoff",
+                "/y25"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/gap-year.md",
             "outgoing_links": [
                 "/chapters",
@@ -2730,7 +2786,8 @@
                 "/gap-year",
                 "/stock-concentration",
                 "/timeoff",
-                "/timeoff-2025-08"
+                "/timeoff-2025-08",
+                "/y25"
             ],
             "last_modified": "2025-12-07T03:09:30+00:00",
             "markdown_path": "_d/igor-gap-year.md",
@@ -2808,7 +2865,7 @@
                 "/parkinson",
                 "/planning"
             ],
-            "last_modified": "2025-12-07T03:06:25+00:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/goals.md",
             "outgoing_links": [
                 "/4dx",
@@ -2841,7 +2898,7 @@
                 "/ml",
                 "/nlp"
             ],
-            "last_modified": "2026-01-03T14:35:14.384003+00:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/gpt2.md",
             "outgoing_links": [
                 "/ai-faq",
@@ -2962,6 +3019,7 @@
             "doc_size": 32000,
             "file_path": "_site/happy.html",
             "incoming_links": [
+                "/awareness",
                 "/chasing-daylight",
                 "/emotions",
                 "/hobby",
@@ -2982,7 +3040,7 @@
                 "/timeoff-2025-08",
                 "/walking-with-god"
             ],
-            "last_modified": "2025-11-28T13:14:56-08:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_posts/2017-04-12-happy.md",
             "outgoing_links": [
                 "/addiction",
@@ -3042,15 +3100,17 @@
         },
         "/how-igor-chops": {
             "description": "I mumble to Claude on my couch while my family wonders who I’m talking to. I vibe code in the car while my son drives. I rent the most expensive brain I can get. This is my CHOP (Chat-Oriented Programming) setup: the infrastructure, the tools, and what I’ve learned.\n\n",
-            "doc_size": 49000,
+            "doc_size": 50000,
             "file_path": "_site/how-igor-chops.html",
             "incoming_links": [
                 "/ai",
                 "/ai-journal",
                 "/chop",
-                "/pet-projects"
+                "/pet-projects",
+                "/y25",
+                "/y26"
             ],
-            "last_modified": "2026-01-02T08:13:57-08:00",
+            "last_modified": "2026-01-05T03:54:59+00:00",
             "markdown_path": "_d/how-igor-chops.md",
             "outgoing_links": [
                 "/40yo",
@@ -3133,6 +3193,7 @@
             "file_path": "_site/idle.html",
             "incoming_links": [
                 "/anxiety",
+                "/awareness",
                 "/depression",
                 "/gtd",
                 "/happy",
@@ -3394,9 +3455,10 @@
                 "/four-healths",
                 "/retire",
                 "/y24",
-                "/y25"
+                "/y25",
+                "/y26"
             ],
-            "last_modified": "2025-12-07T03:09:30+00:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/last-year.md",
             "outgoing_links": [
                 "/chasing-daylight",
@@ -3411,7 +3473,7 @@
             "doc_size": 47000,
             "file_path": "_site/laws-of-power.html",
             "incoming_links": [],
-            "last_modified": "2025-12-07T02:37:56+00:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/48-laws-of-power.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -3460,7 +3522,7 @@
             "incoming_links": [
                 "/joy"
             ],
-            "last_modified": "2025-12-22T02:18:29+00:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/the-like-switch.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -3525,7 +3587,8 @@
                 "/tribe",
                 "/work-satisfaction",
                 "/y24",
-                "/y25"
+                "/y25",
+                "/y26"
             ],
             "last_modified": "2025-12-29T17:17:28+00:00",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
@@ -3574,7 +3637,7 @@
                 "/manager-book",
                 "/operating-manual"
             ],
-            "last_modified": "2025-12-07T03:09:30+00:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/manager-book-appendix.md",
             "outgoing_links": [
                 "/amazon",
@@ -3607,18 +3670,6 @@
             "title": "Mania: It's like a free cocaine drip",
             "url": "/mania"
         },
-        "/media-edit": {
-            "description": "Lets play with media editing. So far I’ve liked luma fusion for post:\n\n",
-            "doc_size": 13000,
-            "file_path": "_site/media-edit.html",
-            "incoming_links": [],
-            "last_modified": "2025-08-22T11:54:12-07:00",
-            "markdown_path": "_d/media-edit.md",
-            "outgoing_links": [],
-            "redirect_url": "",
-            "title": "Media Editing",
-            "url": "/media-edit"
-        },
         "/mental-pain": {
             "description": "Pain is in the brain as they say, which is especially true for mental pains. Pain isn’t the enemy though, pain is a signal. The pain system, when working properly draws our attention to a problem so that we can deal with it. However, our pain can evolve into unnecessary suffering, be phantom pain, meaning it is being applied when it should not be, or chronic pain, which flares up even though it is no longer providing value.\n\n",
             "doc_size": 37000,
@@ -3642,7 +3693,8 @@
                 "/timeoff-2020-12",
                 "/walking-with-god",
                 "/work-satisfaction",
-                "/y24"
+                "/y24",
+                "/y25"
             ],
             "last_modified": "2025-12-06T18:03:43-08:00",
             "markdown_path": "_d/mental-pain.md",
@@ -3738,7 +3790,7 @@
                 "/negative-mitzvahs",
                 "/positive-mitzvahs"
             ],
-            "last_modified": "2025-11-10T03:10:21+00:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/mitzvahs.md",
             "outgoing_links": [
                 "/negative-mitzvahs",
@@ -3757,7 +3809,7 @@
                 "/manager-book",
                 "/td/stats"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_td/machine-learning.md",
             "outgoing_links": [
                 "/ai-testing",
@@ -3831,13 +3883,13 @@
         },
         "/monetize": {
             "description": "Let’s talk money. Whether you’re a content creator dreaming of YouTube riches or a brand trying to understand the advertising landscape, this guide breaks down the reality of monetization - spoiler alert: it’s harder than you think, but not impossible.\n\n",
-            "doc_size": 28000,
+            "doc_size": 29000,
             "file_path": "_site/monetize.html",
             "incoming_links": [
                 "/advertising",
                 "/content-creation"
             ],
-            "last_modified": "2025-07-30T10:50:40-07:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/monetization.md",
             "outgoing_links": [
                 "/advertising",
@@ -3851,7 +3903,7 @@
         },
         "/money": {
             "description": "Most of the tax information on the web is a mess. It’s confusing as it tries to apply to everyone, with varying situations, and is often written by non-engineers for non-engineers. I think my tax situation is common to people who have been in software engineering companies for most of their careers, and here are my notes.\n\n",
-            "doc_size": 67000,
+            "doc_size": 68000,
             "file_path": "_site/money.html",
             "incoming_links": [
                 "/gap-year",
@@ -3862,7 +3914,7 @@
                 "/stock-concentration",
                 "/timeoff-2020-03"
             ],
-            "last_modified": "2025-08-25T10:19:14-07:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/taxes.md",
             "outgoing_links": [
                 "/parkinson",
@@ -3908,7 +3960,8 @@
                 "/bike-tesla-identity",
                 "/goals",
                 "/how-igor-chops",
-                "/walking-with-god"
+                "/walking-with-god",
+                "/y26"
             ],
             "last_modified": "2025-12-07T02:28:40+00:00",
             "markdown_path": "_d/2018-04-29-mortality-software.md",
@@ -4022,17 +4075,17 @@
             "url": "/nlp"
         },
         "/nurture": {
-            "description": "In “Nurturing Love,” the Heath Brothers distill the wisdom of renowned relationship experts Drs. John and Julie Gottman into a concise and actionable guide for couples seeking to strengthen their relationships. Using their signature storytelling approach and evidence-based insights, the Heath Brothers create an engaging and accessible roadmap to the Gottman Method.\n\n",
-            "doc_size": 42000,
+            "description": "The Gottman Method is a research-based approach to couples therapy developed by Drs. John and Julie Gottman. The method is based on the idea that happy and healthy relationships require a strong foundation of love and friendship, as well as the ability to handle conflict in a positive way. The acronym NURTURE stands for the seven key components of the Gottman Method: Navigating Love Maps, Unleashing Fondness and Admiration, Responding to Bids for Attention, Tackling Conflict Constructively, Uplifting Dreams and Aspirations, Renewing Relationship Rituals, and Embracing Shared Meaning. In this book, we will explore each of these components in depth, providing practical advice, exercises, and journal prompts to help you apply the Gottman Method to your own relationship.\n\n",
+            "doc_size": 33000,
             "file_path": "_site/nurture.html",
             "incoming_links": [
                 "/gpt"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
-            "markdown_path": "_d/nurture.md",
+            "last_modified": "2024-10-05T21:35:59-07:00",
+            "markdown_path": "_d/gpt-gotman.md",
             "outgoing_links": [],
             "redirect_url": "",
-            "title": "NURTURE: The Gottman Method",
+            "title": "NURTURE- The Gottman Method",
             "url": "/nurture"
         },
         "/operating-manual": {
@@ -4084,12 +4137,12 @@
         },
         "/osx": {
             "description": "\nCheck out my Mac install script for automated setup of my Mac environment.\n\n",
-            "doc_size": 21000,
+            "doc_size": 22000,
             "file_path": "_site/osx.html",
             "incoming_links": [
                 "/tools"
             ],
-            "last_modified": "2025-12-07T03:09:30+00:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/osx.md",
             "outgoing_links": [
                 "/screencast"
@@ -4200,7 +4253,8 @@
             "file_path": "_site/pet-projects.html",
             "incoming_links": [
                 "/eulogy",
-                "/how-igor-chops"
+                "/how-igor-chops",
+                "/y25"
             ],
             "last_modified": "2025-12-21T21:51:20.852407+00:00",
             "markdown_path": "_d/pet-projects.md",
@@ -4259,7 +4313,8 @@
                 "/back-pain",
                 "/knee-pain",
                 "/mental-pain",
-                "/shoulder-pain"
+                "/shoulder-pain",
+                "/y25"
             ],
             "last_modified": "2026-01-01T17:03:05+00:00",
             "markdown_path": "_d/physical-pain.md",
@@ -4281,7 +4336,8 @@
             "file_path": "_site/planning.html",
             "incoming_links": [
                 "/end-in-mind",
-                "/manager-book"
+                "/manager-book",
+                "/y25"
             ],
             "last_modified": "2026-01-01T14:34:49+00:00",
             "markdown_path": "_d/planning.md",
@@ -4364,8 +4420,7 @@
                 "/how-igor-chops",
                 "/operating-manual",
                 "/pet-projects",
-                "/y24",
-                "/y25"
+                "/y24"
             ],
             "last_modified": "2025-03-02T19:25:33-08:00",
             "markdown_path": "_d/process-journal.md",
@@ -4464,6 +4519,7 @@
             "file_path": "_site/psychic-shadows.html",
             "incoming_links": [
                 "/anxiety-management",
+                "/awareness",
                 "/caring",
                 "/depression",
                 "/idle",
@@ -4687,7 +4743,7 @@
                 "/monetize",
                 "/stock-concentration"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/retire.md",
             "outgoing_links": [
                 "/42",
@@ -4833,7 +4889,7 @@
         },
         "/sharpen-the-saw": {
             "description": "A young man saw a woodcutter cutting down a tree and asked “What are you doing?” “Are you blind?” the woodcutter replied. “I’m cutting down this tree.” The young man continued. “You look exhausted! Take a break. Sharpen your saw.” The woodcutter explained he’d been sawing for hours and did not have time to take a break. The young man pushed back… “If you sharpen the saw, you would cut down the tree much faster.” The woodcutter said “I don’t have time to sharpen the saw. Don’t you see I’m too busy. These are my insights based on the 7 habits Chapter 7.\n\n",
-            "doc_size": 14000,
+            "doc_size": 15000,
             "file_path": "_site/sharpen-the-saw.html",
             "incoming_links": [
                 "/7-habits",
@@ -4863,7 +4919,9 @@
                 "/how-igor-chops",
                 "/kettlebell",
                 "/knee-pain",
-                "/physical-pain"
+                "/physical-pain",
+                "/y25",
+                "/y26"
             ],
             "last_modified": "2026-01-01T17:07:34+00:00",
             "markdown_path": "_d/shoulder-pain.md",
@@ -4895,6 +4953,7 @@
             "file_path": "_site/siy.html",
             "incoming_links": [
                 "/anxiety-management",
+                "/awareness",
                 "/be-proactive",
                 "/books-that-defined-me",
                 "/coaching",
@@ -4916,11 +4975,13 @@
                 "/slow",
                 "/timeoff",
                 "/timeoff-2020-03",
-                "/walking-with-god"
+                "/walking-with-god",
+                "/y26"
             ],
-            "last_modified": "2025-12-07T03:13:57+00:00",
+            "last_modified": "2026-01-06T03:43:08+00:00",
             "markdown_path": "_d/siy.md",
             "outgoing_links": [
+                "/awareness",
                 "/be-proactive",
                 "/emotional-health",
                 "/emotions",
@@ -5062,9 +5123,11 @@
             "doc_size": 60000,
             "file_path": "_site/spiritual-health.html",
             "incoming_links": [
+                "/awareness",
                 "/four-healths",
                 "/happy",
-                "/walking-with-god"
+                "/walking-with-god",
+                "/y26"
             ],
             "last_modified": "2025-11-10T03:14:45+00:00",
             "markdown_path": "_d/spiritual-health.md",
@@ -5105,7 +5168,8 @@
             "file_path": "_site/stoicism.html",
             "incoming_links": [
                 "/caring",
-                "/religion"
+                "/religion",
+                "/y25"
             ],
             "last_modified": "2025-11-25T14:36:06-08:00",
             "markdown_path": "_d/stoicism.md",
@@ -5339,7 +5403,7 @@
                 "/manager-book",
                 "/system-design"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_td/cloud-first-applications.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -5447,7 +5511,7 @@
             "doc_size": 17000,
             "file_path": "_site/td/minecraft.html",
             "incoming_links": [],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_td/minecraft.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -5636,7 +5700,7 @@
                 "/timeoff-2024-04",
                 "/voices"
             ],
-            "last_modified": "2025-12-07T03:17:42+00:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/terzepatide.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -5654,7 +5718,9 @@
                 "/kayak",
                 "/mania",
                 "/operating-manual",
-                "/timeoff-2024-02"
+                "/timeoff-2024-02",
+                "/y25",
+                "/y26"
             ],
             "last_modified": "2025-11-17T00:40:07+00:00",
             "markdown_path": "_d/tesla.md",
@@ -5687,7 +5753,7 @@
                 "/design",
                 "/manager-book"
             ],
-            "last_modified": "2024-12-31T07:15:11-08:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_td/testing.md",
             "outgoing_links": [
                 "/ai-testing",
@@ -5714,7 +5780,7 @@
             "doc_size": 16000,
             "file_path": "_site/time-traveler.html",
             "incoming_links": [],
-            "last_modified": "2025-08-24T09:03:19-07:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/time-traveler.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -5779,7 +5845,7 @@
         },
         "/timeoff-2020-03": {
             "description": "In March 2020, I took a 2 month sabbatical between leaving Amazon and joining Facebook. Given it was a substantial amount of time, I came up with some big plans, and wrote them down. It was a great plan, BUT my time off correlated perfectly to the Corona Virus and as a result I wasted lots of my mental energy thinking about the Corona Virus, and adjusting to being in pseudo-quarantine. Took me a while, but I finally realized I should ignore corona virus, or at least minimize my time thinking about it.\n\n",
-            "doc_size": 30000,
+            "doc_size": 31000,
             "file_path": "_site/timeoff-2020-03.html",
             "incoming_links": [
                 "/timeoff"
@@ -6271,7 +6337,8 @@
             "file_path": "_site/walking-with-god.html",
             "incoming_links": [
                 "/religion",
-                "/spiritual-health"
+                "/spiritual-health",
+                "/y25"
             ],
             "last_modified": "2025-12-07T02:50:22+00:00",
             "markdown_path": "_d/walking-with-god.md",
@@ -6371,7 +6438,7 @@
         },
         "/win-win": {
             "description": "Win/Win is a constantly seeking mutual benefit in all interactions. Win/Win means that agreements or solutions are mutually beneficial, mutually satisfying. With a Win/Win solution, all parties feel good about the decision and feel committed to the action plan. Win/Win sees life as a cooperative, not a competitive arena. Most people tend to think in terms of dichotomies: strong or weak, hardball or softball, win or lose. But that kind of thinking is fundamentally flawed. It’s based on power and position rather than on principle. Win/Win is based on the paradigm that there is plenty for everybody, that one person’s success is not achieved at the expense or exclusion of the success of others.\n\n",
-            "doc_size": 20000,
+            "doc_size": 21000,
             "file_path": "_site/win-win.html",
             "incoming_links": [
                 "/7-habits",
@@ -6416,7 +6483,7 @@
                 "/mind-at-work",
                 "/retire"
             ],
-            "last_modified": "2025-12-07T03:13:57+00:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/sat_dsat.md",
             "outgoing_links": [
                 "/comp",
@@ -6514,27 +6581,68 @@
         },
         "/y25": {
             "description": "I like to begin in mind, so let’s write a report for 2025. This hasn’t happened, but if I don’t write it out and focus on it, it certainly won’t.\n\n",
-            "doc_size": 20000,
+            "doc_size": 25000,
             "file_path": "_site/y25.html",
             "incoming_links": [
                 "/bucket-list",
                 "/gap-year"
             ],
-            "last_modified": "2025-10-04T17:59:35-07:00",
+            "last_modified": "2026-01-03T12:47:01-08:00",
             "markdown_path": "_d/y2025.md",
             "outgoing_links": [
                 "/42",
+                "/ai-journal",
                 "/chapters",
                 "/chop",
                 "/content-audience",
                 "/content-creation",
+                "/fortune-cookies",
+                "/gap-year",
+                "/gap-year-igor",
+                "/how-igor-chops",
                 "/last-year",
                 "/manager-book",
-                "/process-journal"
+                "/mental-pain",
+                "/pet-projects",
+                "/physical-pain",
+                "/planning",
+                "/shoulder-pain",
+                "/stoicism",
+                "/tesla",
+                "/walking-with-god"
             ],
             "redirect_url": "",
             "title": "Igor's plan for 2025",
             "url": "/y25"
+        },
+        "/y26": {
+            "description": "I like to begin with the end in mind, so let’s write a report for 2026. This hasn’t happened, but if I don’t write it out and focus on it, it certainly won’t.\n\n",
+            "doc_size": 21000,
+            "file_path": "_site/y26.html",
+            "incoming_links": [],
+            "last_modified": "2026-01-06T03:52:36+00:00",
+            "markdown_path": "_d/y2026.md",
+            "outgoing_links": [
+                "/22",
+                "/42",
+                "/awareness",
+                "/chapters",
+                "/chop",
+                "/chow",
+                "/content-audience",
+                "/content-creation",
+                "/how-igor-chops",
+                "/last-year",
+                "/manager-book",
+                "/mortality-software",
+                "/shoulder-pain",
+                "/siy",
+                "/spiritual-health",
+                "/tesla"
+            ],
+            "redirect_url": "",
+            "title": "Igor's plan for 2026",
+            "url": "/y26"
         }
     }
 }
