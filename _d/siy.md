@@ -24,6 +24,8 @@ This is a summary of [Search Inside Yourself](http://www.amazon.com/gp/product/B
 
 FYI, I now do a different practice; See my experience with [SKY](/ig66/685)
 
+**Looking for deeper spiritual work?** If you want to go beyond emotional intelligence skills and explore the root of suffering and freedom from conditioning, see [Awareness by Anthony de Mello](/awareness) - it's provocative spiritual tough love that complements SIY's gentle approach.
+
 {%include amazon.html asin="B0070XF474;0062378872" %}
 
 <!-- prettier-ignore-start -->
