@@ -486,7 +486,27 @@ _Understanding is one thing, living it is another._
 
 ---
 
-## Appendix: A Computing Analogy for Awareness
+## Appendix
+
+### Two Types of Meditation: Concentration vs. Awareness
+
+Before understanding the computing analogy, it's important to know that meditation has two fundamental forms:
+
+**Concentration meditation** (Samatha):
+- Focus attention on a single object (breath, mantra, visualization)
+- Train the mind to stay focused, returning when it wanders
+- Builds mental stability and calm
+- Examples: Following the breath, body scan, focused attention practices
+- **Computing analogy**: Keeping the main thread from [paging out](https://en.wikipedia.org/wiki/Memory_paging) - maintaining continuous focus loaded in active memory instead of getting swapped out by distractions
+
+**Awareness meditation** (Vipassana):
+- Open, non-judgmental observation of whatever arises
+- Watch thoughts, emotions, sensations without trying to control them
+- Develops insight into the nature of mind and reality
+- Examples: Self-observation, mindful awareness, choiceless awareness
+- Like being a scientist observing phenomena
+
+### A Computing Analogy for Awareness
 
 Think of your mind as a multi-core processor:
 
@@ -541,6 +561,38 @@ Think of your mind as a multi-core processor:
 - Can you run too much watchdog and not enough main process? (Over-analyzing vs. living?)
 - Is "flow state" when the main process runs efficiently with minimal rogue processes, or something else entirely?
 - How does this model map to actual neuroscience? Different brain regions/networks?
+
+### The Path to Non-Duality (Advanced Territory)
+
+De Mello's teachings point toward **non-duality** - a state where the illusion of separation dissolves.
+
+**What is non-duality?**
+- The recognition that there's no separation between "observer" and "observed"
+- The sense of being a separate "self" is revealed as an illusion
+- Instead of "I am watching my thoughts," there's just awareness and thoughts arising
+- No boundary between "me" and "the world" - just one unified experience
+- The "death of me" isn't metaphorical - it's the dissolution of the false self that creates duality
+
+**How this relates to Awareness meditation:**
+- Concentration meditation strengthens attention but maintains the "I am focusing" duality
+- Awareness meditation reveals there's just awareness - no "you" doing the observing
+- When you observe without identifying, you realize you are not the observed
+- Keep going: you're also not the observer - you're the awareness itself
+- The ultimate insight: no separate self exists - just awareness experiencing itself
+
+**Traditional paths to non-duality:**
+- **Advaita Vedanta** (Hindu): "Thou art That" - you are already the infinite awareness
+- **Zen Buddhism**: Direct pointing to the nature of mind, koans, sudden awakening
+- **Dzogchen** (Tibetan): Resting in natural awareness, recognizing the true nature of mind
+- **Christian mysticism** (de Mello's tradition): "I live, yet not I, but Christ lives in me"
+
+**Igor's honest take: This is still gobbledygook to me.**
+
+I can write about it because I've read the explanations. I can explain the concept: "no separate self, just awareness experiencing itself." But do I actually *get* it? Nope. It's like someone describing the color blue to me - I can repeat the words, but I don't have the experience.
+
+When I meditate, there's definitely an "Igor" sitting there watching thoughts. When I'm upset, there's an "Igor" who's upset. The idea that this separate self is an illusion? Intellectually interesting. Experientially? Still waiting for that insight to land.
+
+De Mello's book points toward this. Other teachers talk about it. Smart people say they've experienced it. But for me right now, it's pointing at something I can't quite see yet. Maybe someday it'll click. Or maybe I'll spend my whole life reading about non-duality while living firmly in duality.
 
 ---
 
