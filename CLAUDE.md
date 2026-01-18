@@ -99,7 +99,17 @@ To publish: Use the `conversation-log-publisher` agent - it handles security rev
 
 ## Finding Related Blog Content
 
-Use the `blog-topic-finder` agent to search existing posts before creating new content or merging content into existing posts.
+**For simple keyword searches** ("does my blog mention X?"):
+- Use direct Grep: `grep -ri "keyword" _d _posts _td`
+- Fast and efficient for finding specific terms
+
+**For thematic/conceptual searches** ("what content relates to productivity?"):
+- Use the Explore agent - it can understand context and relationships
+- Good for discovering related content that doesn't use exact keywords
+
+**For metadata queries** (titles, tags, links):
+- Use jq on backlinks.json (see examples below)
+- Fastest for structured data queries
 
 ### Working with back-links.json
 

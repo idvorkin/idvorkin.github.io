@@ -22,6 +22,7 @@ Physical pain has been a recurring teacher in my life. Each injury forced me to 
   - [Tightness is the signal/symptom it is not the problem.](#tightness-is-the-signalsymptom-it-is-not-the-problem)
   - [Negative Feedback loop - When you are tight.](#negative-feedback-loop---when-you-are-tight)
   - [Flexibility vs Mobility](#flexibility-vs-mobility)
+  - [The Tendon Problem: No Pain Until It's Too Late](#the-tendon-problem-no-pain-until-its-too-late)
   - [So why do we do massage, and stretch](#so-why-do-we-do-massage-and-stretch)
 - [Approaches to Managing Pain](#approaches-to-managing-pain)
   - [Physio Therapy](#physio-therapy)
@@ -82,6 +83,65 @@ These aren't synonyms — they're two different but related concepts. The distin
 - If you're flexible but not mobile → train strength at end-range (e.g., loaded stretches, isometrics)
 - If you're not even flexible → address tissue restrictions first, then build strength
 - Chasing flexibility without mobility creates "loose but weak" joints — injury waiting to happen
+
+### The Tendon Problem: No Pain Until It's Too Late
+
+**Tendons don't have nerve endings.** Unlike muscles that scream at you when you're overdoing it, tendons can degrade, fray, and even partially tear without sending pain signals. By the time you feel tendon pain, you've often already done significant damage.
+
+This is the literal truth behind the "Achilles heel" metaphor — your Achilles tendon (and all tendons) are vulnerable precisely because they can't warn you they're failing.
+
+**Why this matters:**
+
+- Muscles hurt when you overwork them → you rest → they recover stronger
+- Tendons silently degrade when you overwork them → you don't notice → they fail catastrophically
+- Tendinosis (chronic tendon damage) develops over weeks/months without symptoms
+- By the time you feel pain, healing takes 3-6 months minimum (tendons heal SLOWLY)
+
+**Form is non-negotiable for tendons**
+
+Because you can't feel tendon stress accumulating:
+
+- Perfect form isn't about looking good — it's about not destroying your tendons
+- Bad form under load = invisible tendon damage compounding every rep
+- The shoulder impingement example: grinding your rotator cuff tendons every arm raise until they tear
+- Turkish Get-Ups without mobility: compensating in ways that silently damage shoulder tendons
+
+**Pacing and progression rules**
+
+The classic mistakes that destroy tendons:
+
+1. **Restarting too aggressively** - "I used to run 5 miles, so I'll start with 3"
+   - Wrong. Tendons decondition faster than cardiovascular fitness
+   - Your lungs might be ready, but your tendons aren't
+2. **The 10% rule for running** - Increase weekly mileage by no more than 10% per week
+   - This isn't conservative, it's the MAXIMUM safe rate
+   - After time off, start even slower
+3. **Ignoring early warning signs** - "It's just a little stiff, I'll run through it"
+   - That stiffness IS the warning — you've already damaged the tendon
+   - Stop immediately, rest, and restart more gradually
+
+**Restarting running after time off**
+
+If you've taken weeks/months off running:
+
+1. **Week 1-2:** Walk-run intervals. Run 1 minute, walk 4 minutes. Total 20-30 minutes.
+2. **Week 3-4:** Increase run intervals to 2 minutes, walk 3 minutes
+3. **Week 5-6:** Run 3 minutes, walk 2 minutes
+4. **Week 7-8:** Run 5 minutes, walk 1 minute
+5. **Week 9+:** Continuous running, but still following 10% rule for weekly mileage
+
+**Yes, this feels absurdly slow.** That's your cardiovascular system talking. Your tendons are thanking you.
+
+**Other tendon best practices:**
+
+- **Respect rest days** - Tendons need 48+ hours to recover from loading
+- **Cross-train** - Vary activities to avoid repetitive stress on same tendons
+- **Eccentric exercises** - Slow, controlled lowering phases strengthen tendons
+- **Don't train through pain** - Pain = damage already done. Stop immediately.
+- **Load management** - Sudden spikes in volume/intensity are tendon killers
+- **Quality over quantity** - 3 perfect reps beat 10 sloppy ones
+
+**The paradox:** Tendons need loading to stay strong, but can't tell you when you're overloading them. The answer is systematic progression, not feel-based training.
 
 ### So why do we do massage, and stretch
 
