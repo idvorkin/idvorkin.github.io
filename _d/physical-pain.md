@@ -124,15 +124,6 @@ The classic mistakes that destroy tendons:
 
 **Reminder to self on rebuilding running:** Even if my ticker feels good, take it easy. My cardiovascular system recovers faster than my tendons.
 
-**Other tendon best practices:**
-
-- **Respect rest days** - Tendons need 48+ hours to recover from loading
-- **Cross-train** - Vary activities to avoid repetitive stress on same tendons
-- **Eccentric exercises** - Slow, controlled lowering phases strengthen tendons
-- **Don't train through pain** - Pain = damage already done. Stop immediately.
-- **Load management** - Sudden spikes in volume/intensity are tendon killers
-- **Quality over quantity** - 3 perfect reps beat 10 sloppy ones
-
 ### So why do we do massage, and stretch
 
 Because while that tightness is a symptom, it's also limiting range of motion, and by loosening (even temporarily), we can be more effective at strengthening (again exactly the same as anxiety in mental pain).
