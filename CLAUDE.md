@@ -108,7 +108,7 @@ To publish: Use the `conversation-log-publisher` agent - it handles security rev
 - Good for discovering related content that doesn't use exact keywords
 
 **For metadata queries** (titles, tags, links):
-- Use jq on backlinks.json (see examples below)
+- Use jq on back-links.json (see examples below)
 - Fastest for structured data queries
 
 ### Working with back-links.json

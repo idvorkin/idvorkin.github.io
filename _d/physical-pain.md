@@ -88,7 +88,9 @@ These aren't synonyms — they're two different but related concepts. The distin
 
 **Tendons don't have nerve endings.** Unlike muscles that scream at you when you're overdoing it, tendons can degrade, fray, and even partially tear without sending pain signals. By the time you feel tendon pain, you've often already done significant damage.
 
-This is the literal truth behind the "Achilles heel" metaphor — your Achilles tendon (and all tendons) are vulnerable precisely because they can't warn you they're failing.
+**The Achilles heel is literal:** Your Achilles tendon can rupture completely while running, with people describing it as feeling like someone kicked them in the calf. Same with ACL tears in the knee — the ligament snaps before you feel real pain. These structures fail catastrophically precisely because they can't warn you they're failing.
+
+**The paradox:** Tendons need loading to stay strong, but can't tell you when you're overloading them. The answer is systematic progression, not feel-based training.
 
 **Why this matters:**
 
@@ -120,17 +122,7 @@ The classic mistakes that destroy tendons:
    - That stiffness IS the warning — you've already damaged the tendon
    - Stop immediately, rest, and restart more gradually
 
-**Restarting running after time off**
-
-If you've taken weeks/months off running:
-
-1. **Week 1-2:** Walk-run intervals. Run 1 minute, walk 4 minutes. Total 20-30 minutes.
-2. **Week 3-4:** Increase run intervals to 2 minutes, walk 3 minutes
-3. **Week 5-6:** Run 3 minutes, walk 2 minutes
-4. **Week 7-8:** Run 5 minutes, walk 1 minute
-5. **Week 9+:** Continuous running, but still following 10% rule for weekly mileage
-
-**Yes, this feels absurdly slow.** That's your cardiovascular system talking. Your tendons are thanking you.
+**Reminder to self on rebuilding running:** Even if my ticker feels good, take it easy. My cardiovascular system recovers faster than my tendons.
 
 **Other tendon best practices:**
 
@@ -140,8 +132,6 @@ If you've taken weeks/months off running:
 - **Don't train through pain** - Pain = damage already done. Stop immediately.
 - **Load management** - Sudden spikes in volume/intensity are tendon killers
 - **Quality over quantity** - 3 perfect reps beat 10 sloppy ones
-
-**The paradox:** Tendons need loading to stay strong, but can't tell you when you're overloading them. The answer is systematic progression, not feel-based training.
 
 ### So why do we do massage, and stretch
 
