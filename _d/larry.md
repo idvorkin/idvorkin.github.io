@@ -35,7 +35,7 @@ Larry has access to my full context:
 - **Weekly reports** — Scored reviews across 11 life domains
 - **Goals** — Annual intentions and current focus areas
 - **Todo list** — What's on my plate right now
-- **Health tracking** — Data from [Humane Tracker](https://humanetracker.web.app/)
+- **Health tracking** — Data from [Humane Tracker](https://humane-tracker.surge.sh/)
 - **Direct conversations** — Real-time coaching sessions
 - **Patterns** — What I've committed to before, how many times, what actually happened
 

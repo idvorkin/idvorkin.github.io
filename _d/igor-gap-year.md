@@ -611,11 +611,12 @@ The ultimate goal isn't to eliminate these dragons but to transform them from ad
 Living with dragons requires daily attention. They're not pets, but they're not enemies either - they're forces that must be acknowledged and managed through consistent practice. I have a long list
 
 - **Entropy Check**:
+
   - Get up before 5am
     - Anchor my day before I'm overrun by noise
     - Make a priority list
   - Physical/Emotional/Joy habits/practice
-    - I have a log list, and need to create my own [tracker](https://humanetracker.web.app/), which needs to evolve to become [humane](/structure)
+    - I have a log list, and need to create my own [tracker](https://humane-tracker.surge.sh/), which needs to evolve to become [humane](/structure)
 
 - **Squander Check**:
   - Ensure I'm operating off my priority list
