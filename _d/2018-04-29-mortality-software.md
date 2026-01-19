@@ -182,34 +182,43 @@ Some people are allergic to goals, a few prompts that are less allergic
 #### Why This Matters
 
 - **Brings Systematic Thinking to Life:**
+
   - It's hard to consider all areas of life on the fly.
   - This report helps ensure steady investment across key roles, such as father, husband, manager, magician, and athlete.
 
 - **Motivation Through Reflection:**
+
   - When you notice value created, even in small ways, it highlights meaningful progress rather than just busywork.
 
 - **Gap Spotting and Growth:**
+
   - By seeing where energy was spent or missing, you can reflect thoughtfully and adjust—without judgment.
 
 - **Memory Preservation:**
+
   - It's difficult to remember the texture of a well-lived life week to week.
   - These reports create a personal memory archive—a treasure to look back on later.
 
 - **Flexible, Human Coaching Feel:**
+
   - The assistant lets you jump around as you wish, rather than forcing a rigid, section-by-section march.
   - The goal is to flow with curiosity, not bureaucracy.
 
 - **Future Leverage:**
+
   - Previous learnings can be incorporated dynamically to deepen future reflections.
 
 - **Plug Into Mortality Software Vision:**
+
   - Every week is a transaction you can't undo.
   - The report ensures your real capital—time, energy, emotion—is intentionally invested in what will matter at your eulogy, not just what was urgent or noisy.
 
 - **Blends Qualitative and Quantitative Reflection:**
+
   - The weekly report combines stories and numbers, so growth is visible but not reduced to lifeless metrics.
 
 - **Amplifies Role and Goal Awareness:**
+
   - When clear roles and goals are defined (for example, father, magician, athlete), the report becomes a real-time snapshot of how each investment is performing across life's portfolio.
   - Without regular reflection, inertia and noise can quietly steal your time, and your days may be spent on what is urgent, not what is meaningful.
 
@@ -294,6 +303,15 @@ This concept came to life in practice:
 - The suffering you add to them
 
 #### Love languages disconnects, DRAIN behaviors
+
+## Pet Projects Implementing Time.ltd
+
+These are real tools I've built as part of the Time.ltd vision:
+
+- **[Larry the Life Coach](/larry)** - My AI life coach who helps me reflect, set goals, and stay aligned with my eulogy. He's someone I talk to, not just a dashboard.
+- **[Tony the Tesla](/tesla)** - An AI coach with a Tony Soprano personality. Great for identity conflicts, rationalization detection, and accountability.
+- **[Humane Tracker](https://humane-tracker.surge.sh/)** - Habit tracking across 5 wellness categories with weekly views.
+- **[OmniFocus CLI](https://github.com/idvorkin/omnifocus_cli)** - Command-line interface for task management. Larry can see what's on my plate.
 
 ## Appendix: Product Market Fit
 

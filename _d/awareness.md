@@ -60,7 +60,7 @@ This is a summary of [Awareness: The Perils and Opportunities of Reality](https:
 
 This book is primarily about awareness meditation - the practice of watching everything that arises in consciousness without judgment or interference. While SIY teaches both types (with more emphasis on concentration practices like breath meditation), de Mello's "Awareness" is almost entirely focused on the awareness/insight approach. His core teaching is: just observe, don't try to change anything, and understanding will transform you naturally.
 
-*For engineers: See [Appendix - A Computing Analogy](#appendix-a-computing-analogy-for-awareness) for a technical metaphor using threads, processes, and CPU allocation.*
+_For engineers: See [Appendix - A Computing Analogy](#a-computing-analogy-for-awareness) for a technical metaphor using threads, processes, and CPU allocation._
 
 ---
 
@@ -499,6 +499,7 @@ _Understanding is one thing, living it is another._
 Before understanding the computing analogy, it's important to know that meditation has two fundamental forms:
 
 **Concentration meditation** (Samatha):
+
 - Focus attention on a single object (breath, mantra, visualization)
 - Train the mind to stay focused, returning when it wanders
 - Builds mental stability and calm
@@ -506,6 +507,7 @@ Before understanding the computing analogy, it's important to know that meditati
 - **Computing analogy**: Keeping the main thread from [paging out](https://en.wikipedia.org/wiki/Memory_paging) - maintaining continuous focus loaded in active memory instead of getting swapped out by distractions
 
 **Awareness meditation** (Vipassana):
+
 - Open, non-judgmental observation of whatever arises
 - Watch thoughts, emotions, sensations without trying to control them
 - Develops insight into the nature of mind and reality
@@ -517,6 +519,7 @@ Before understanding the computing analogy, it's important to know that meditati
 Think of your mind as a multi-core processor:
 
 **Without awareness (default state):**
+
 - **Main thread**: "You" running your life program - working, talking, making decisions
 - **Rogue background processes**: Mental noise constantly running - worry, rumination, mental loops, anxiety
 - **Resource drain**: These rogue processes eat up your cores. [Anxiety keeps problems in the foreground](/anxiety), consuming % of CPU you need for actual thinking
@@ -524,6 +527,7 @@ Think of your mind as a multi-core processor:
 - **System problem - constant paging out**: By default, your focus keeps getting [paged out](https://en.wikipedia.org/wiki/Memory_paging) - swapped out of active memory by every distraction. You can't maintain continuous focus because you're constantly context-switching between rogue processes
 
 **With awareness meditation (building the watchdog):**
+
 - **Kernel monitor thread**: A separate process that watches everything - "Oh, I'm anxious right now", "There's a thought about tomorrow", "Body is tense"
 - **Resource allocation**: The more % of CPU you dedicate to the watchdog, the less % available for rogue noise processes
 - **Not the same as concentration**:
@@ -531,6 +535,7 @@ Think of your mind as a multi-core processor:
   - **Awareness meditation** = spinning up a monitoring process that observes EVERYTHING in parallel (the watchdog)
 
 **Why this matters:**
+
 - Rogue processes run when you're not watching - they're automatic, conditioned responses
 - The watchdog doesn't stop the processes, it just observes them
 - Paradox: Observation itself often reduces their resource consumption
@@ -538,6 +543,7 @@ Think of your mind as a multi-core processor:
 - But when the watchdog sees them clearly, they often spin down on their own
 
 **What your cores are actually for:**
+
 - You need to process some volume of input to feel happy - your brain wants to be doing work
 - But normally too much % of CPU is consumed by:
   - **Dumb noise**: Mental chatter, worry loops, rumination
@@ -552,6 +558,7 @@ Think of your mind as a multi-core processor:
 - Mental loops about yesterday/tomorrow - burning % of CPU on nothing, leaving you depleted
 
 **The efficiency problem:**
+
 - Awareness shows you how much % of CPU goes to waste
 - All those cores spinning on anxiety about things that haven't happened
 - All that % of CPU on resentment about things that already happened
@@ -561,6 +568,7 @@ Think of your mind as a multi-core processor:
 **De Mello's insight:** Most people have no watchdog thread at all. They ARE the main process, completely identified with it, unaware of the rogue processes eating their resources. Building the watchdog is waking up. Realizing you're not the main process OR the watchdog - you're the computer itself? That's the non-duality thing I don't get yet.
 
 **Open questions:**
+
 - **CPU vs GPU processing**: Is there value in extending this analogy? Maybe CPU = conscious mind (serial, deliberate) and GPU = subconscious (parallel, automatic processing of tons of inputs)? How does this map to awareness vs concentration?
 - How do you actually train the watchdog thread? Is it just repetition, or is there a specific technique?
 - What's the optimal resource allocation between main process, watchdog, and environmental processing?
@@ -573,6 +581,7 @@ Think of your mind as a multi-core processor:
 De Mello's teachings point toward **non-duality** - a state where the illusion of separation dissolves.
 
 **What is non-duality?**
+
 - The recognition that there's no separation between "observer" and "observed"
 - The sense of being a separate "self" is revealed as an illusion
 - Instead of "I am watching my thoughts," there's just awareness and thoughts arising
@@ -580,6 +589,7 @@ De Mello's teachings point toward **non-duality** - a state where the illusion o
 - The "death of me" isn't metaphorical - it's the dissolution of the false self that creates duality
 
 **How this relates to Awareness meditation:**
+
 - Concentration meditation strengthens attention but maintains the "I am focusing" duality
 - Awareness meditation reveals there's just awareness - no "you" doing the observing
 - When you observe without identifying, you realize you are not the observed
@@ -587,6 +597,7 @@ De Mello's teachings point toward **non-duality** - a state where the illusion o
 - The ultimate insight: no separate self exists - just awareness experiencing itself
 
 **Traditional paths to non-duality:**
+
 - **Advaita Vedanta** (Hindu): "Thou art That" - you are already the infinite awareness
 - **Zen Buddhism**: Direct pointing to the nature of mind, koans, sudden awakening
 - **Dzogchen** (Tibetan): Resting in natural awareness, recognizing the true nature of mind
@@ -594,7 +605,7 @@ De Mello's teachings point toward **non-duality** - a state where the illusion o
 
 **Igor's honest take: This is still gobbledygook to me.**
 
-I can write about it because I've read the explanations. I can explain the concept: "no separate self, just awareness experiencing itself." But do I actually *get* it? Nope. It's like someone describing the color blue to me - I can repeat the words, but I don't have the experience.
+I can write about it because I've read the explanations. I can explain the concept: "no separate self, just awareness experiencing itself." But do I actually _get_ it? Nope. It's like someone describing the color blue to me - I can repeat the words, but I don't have the experience.
 
 When I meditate, there's definitely an "Igor" sitting there watching thoughts. When I'm upset, there's an "Igor" who's upset. The idea that this separate self is an illusion? Intellectually interesting. Experientially? Still waiting for that insight to land.
 
