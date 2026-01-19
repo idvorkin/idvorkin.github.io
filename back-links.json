@@ -1108,7 +1108,7 @@
                 "/siy",
                 "/y26"
             ],
-            "last_modified": "2026-01-06T03:56:18+00:00",
+            "last_modified": "2026-01-19T01:58:35.714846+00:00",
             "markdown_path": "_d/awareness.md",
             "outgoing_links": [
                 "/anxiety",
@@ -3953,7 +3953,7 @@
         },
         "/mortality-software": {
             "description": "Mortality is a word avoided. But, earlier or later, we all face it. Life is finite, time is limited. Mortality software helps us understand and then ensure we are using our precious time well. It helps us create our future and reflect on our past. Why must we do this? Because A)”first you’ve lost a day and the day becomes a week and a week becomes a month and before you know it you’ve lost a year” and B) “At the point change is obvious it’s too late - it means the need for change is long since past”\n\n",
-            "doc_size": 35000,
+            "doc_size": 36000,
             "file_path": "_site/mortality-software.html",
             "incoming_links": [
                 "/balance",
@@ -3963,14 +3963,16 @@
                 "/walking-with-god",
                 "/y26"
             ],
-            "last_modified": "2025-12-07T02:28:40+00:00",
+            "last_modified": "2026-01-19T01:21:45.034345+00:00",
             "markdown_path": "_d/2018-04-29-mortality-software.md",
             "outgoing_links": [
                 "/affirmations",
                 "/bike-tesla-identity",
                 "/checklist",
                 "/death",
-                "/four-healths"
+                "/four-healths",
+                "/larry",
+                "/tesla"
             ],
             "redirect_url": "",
             "title": "Time.ltd - Mortality Software",
@@ -5717,6 +5719,7 @@
                 "/irl",
                 "/kayak",
                 "/mania",
+                "/mortality-software",
                 "/operating-manual",
                 "/timeoff-2024-02",
                 "/y25",
