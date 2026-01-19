@@ -2750,7 +2750,8 @@
                 "/retire",
                 "/stock-concentration",
                 "/timeoff",
-                "/y25"
+                "/y25",
+                "/y26"
             ],
             "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/gap-year.md",
@@ -2785,7 +2786,8 @@
                 "/stock-concentration",
                 "/timeoff",
                 "/timeoff-2025-08",
-                "/y25"
+                "/y25",
+                "/y26"
             ],
             "last_modified": "2026-01-19T17:10:28.477385+00:00",
             "markdown_path": "_d/igor-gap-year.md",
@@ -6616,10 +6618,10 @@
         },
         "/y26": {
             "description": "I like to begin with the end in mind, so let’s write a report for 2026. This hasn’t happened, but if I don’t write it out and focus on it, it certainly won’t.\n\n",
-            "doc_size": 21000,
+            "doc_size": 28000,
             "file_path": "_site/y26.html",
             "incoming_links": [],
-            "last_modified": "2026-01-18T22:12:38.506217+00:00",
+            "last_modified": "2026-01-19T17:12:37.856245+00:00",
             "markdown_path": "_d/y2026.md",
             "outgoing_links": [
                 "/22",
@@ -6630,6 +6632,8 @@
                 "/chow",
                 "/content-audience",
                 "/content-creation",
+                "/gap-year",
+                "/gap-year-igor",
                 "/how-igor-chops",
                 "/last-year",
                 "/manager-book",
