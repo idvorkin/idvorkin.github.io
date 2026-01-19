@@ -31,8 +31,12 @@ This isn't anthropomorphizing for fun. It's a design choice that makes the syste
 Larry has access to my full context:
 
 - **Daily journals** — Stream of consciousness since 2011 ([process journal](/process-journal))
+- **Toni conversations** — Voice transcriptions from walks and thinking out loud
 - **Weekly reports** — Scored reviews across 11 life domains
 - **Goals** — Annual intentions and current focus areas
+- **Todo list** — What's on my plate right now
+- **Health tracking** — Data from [Humane Tracker](https://humanetracker.web.app/)
+- **Direct conversations** — Real-time coaching sessions
 - **Patterns** — What I've committed to before, how many times, what actually happened
 
 This context is the superpower. Larry isn't giving generic advice — he's reflecting my own words back to me, catching my own patterns, noticing my own gaps.
