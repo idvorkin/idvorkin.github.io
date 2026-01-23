@@ -135,6 +135,8 @@ I was surprised when Steve Yegge mentioned this is the future - orchestrating mu
 
 ![The 8 stages of AI coding evolution - from manual coding to orchestrated multi-agent systems](https://raw.githubusercontent.com/idvorkin/ipaste/main/20260123_070344.webp)
 
+{% include alert.html content="This visualization comes from Steve Yegge's excellent article [Welcome to Gas Town](https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04), which explores the future of AI-assisted development and multi-agent orchestration." style="info" %}
+
 This diagram perfectly captures the evolution I've lived through. Let me break down what each stage actually means:
 
 **Stages 1-4: The Solo Developer Journey**
