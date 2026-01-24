@@ -31,6 +31,7 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
   - [The Past: Cursor](#the-past-cursor)
   - [The Present: Claude Code](#the-present-claude-code)
   - [The Future: Multi-Agent Dashboard](#the-future-multi-agent-dashboard)
+  - [The 8 Stages of AI Coding](#the-8-stages-of-ai-coding)
 - [Notes from the Trenches](#notes-from-the-trenches)
   - [What Works Well](#what-works-well)
   - [What I'm Still Figuring Out](#what-im-still-figuring-out)
@@ -129,6 +130,36 @@ Claude Code is really about autonomous agents that run in your terminal. As a te
 ### The Future: Multi-Agent Dashboard
 
 I was surprised when Steve Yegge mentioned this is the future - orchestrating multiple specialized agents. Surprised because I'd been accidentally building toward this. The [Agent Dashboard](#agent-dashboard) I mentioned earlier? By the way, I didn't build that at all. I just gave the requirements and Claude built it itself.
+
+### The 8 Stages of AI Coding
+
+![The 8 stages of AI coding evolution - from manual coding to orchestrated multi-agent systems](https://raw.githubusercontent.com/idvorkin/ipaste/main/20260123_070344.webp)
+
+{% include alert.html content="This visualization comes from Steve Yegge's excellent article [Welcome to Gas Town](https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04), which explores the future of AI-assisted development and multi-agent orchestration." style="info" %}
+
+This diagram perfectly captures the evolution I've lived through. Let me break down what each stage actually means:
+
+**Stages 1-4: The Solo Developer Journey**
+
+1. **Manual Coding** - Just you and your editor. Every line typed by hand. The good old days (which weren't always that good).
+
+1. **Approval-Based Agent (Y/N?)** - AI suggests changes, but stops to ask permission for each action. This is where Cursor started - tab completion evolved into "should I run this test?"
+
+1. **YOLO Mode** - The turning point. AI can execute commands, make commits, run tests without asking each time. This is what [YOLO Containers](/chop#yolo-containers-safe-full-autonomy) enable safely.
+
+1. **Full Autonomy** - AI doesn't just execute commands - it plans multi-step workflows and handles the entire development cycle. This is where Claude Code shines today.
+
+**Stages 5-8: The Multi-Agent Era**
+
+1. **Single Agent** - One Claude Code session per project. Good for focused work, but limited by serial execution. This is where most people are today.
+
+1. **Parallel Agents** - Multiple Claude Code instances working on different features simultaneously. You become a coordinator, switching between agents. This is when you discover the pain of merge conflicts and context switching.
+
+1. **Specialized Tools** - Different agents have different capabilities. One handles tests, another docs, another deployment. You're orchestrating specialists, not generalists. The [optimal number of agents](#what-im-still-figuring-out) becomes critical.
+
+1. **Orchestrated System** - This is the vision: a central dashboard managing dozens of specialized agents. The [Agent Dashboard](#agent-dashboard) is an early step toward this. You're no longer coordinating individual agents - you're managing the system that coordinates them.
+
+**Where I Am Today:** Somewhere between stages 6 and 7. Running 2-3 parallel agents on different features, learning how to avoid merge hell, figuring out when to use specialized vs. generalist agents. Stage 8 is the dream, but the tooling isn't quite there yet.
 
 ## Notes from the Trenches
 
