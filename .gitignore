@@ -8,6 +8,9 @@ repo_tmp/
 # Beads issue tracking (uses separate beads-metadata branch)
 .beads/
 
+# Serena MCP server configuration
+.serena/
+
 # Ignore the statically generated site.
 _site
 
