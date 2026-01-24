@@ -25,6 +25,7 @@ I developed shoulder impingement from Turkish Get-Ups - grinding through reps wi
 - [Step 3: Maintain the Length](#step-3-maintain-the-length)
 - [Step 4: Wall Slides](#step-4-wall-slides)
 - [Heavy Clubs for Shoulder Health](#heavy-clubs-for-shoulder-health)
+- [Inspiration: Amazing Shoulder Control](#inspiration-amazing-shoulder-control)
 - [See Also](#see-also)
 
 <!-- vim-markdown-toc-end -->
@@ -108,6 +109,10 @@ The final step builds strength and control in the new range of motion.
 {%include summarize-page.html src="/kettlebell"%}
 
 Heavy clubs are excellent for shoulder mobility and strength. They replaced KB halos in my routine because they provide better shoulder mobility work plus grip and core benefits.
+
+### Inspiration: Amazing Shoulder Control
+
+[This woman demonstrates exceptional shoulder mobility and control](https://www.facebook.com/story.php?story_fbid=838970095560347&id=100083420914932#) - watch how her shoulders move independently with complete control and range of motion. This is the kind of shoulder health and mobility you're working toward.
 
 ### See Also
 
