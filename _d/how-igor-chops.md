@@ -143,21 +143,21 @@ This diagram perfectly captures the evolution I've lived through. Let me break d
 
 1. **Manual Coding** - Just you and your editor. Every line typed by hand. The good old days (which weren't always that good).
 
-2. **Approval-Based Agent (Y/N?)** - AI suggests changes, but stops to ask permission for each action. This is where Cursor started - tab completion evolved into "should I run this test?"
+1. **Approval-Based Agent (Y/N?)** - AI suggests changes, but stops to ask permission for each action. This is where Cursor started - tab completion evolved into "should I run this test?"
 
-3. **YOLO Mode** - The turning point. AI can execute commands, make commits, run tests without asking each time. This is what [YOLO Containers](#yolo-containers-safe-full-autonomy) enable safely.
+1. **YOLO Mode** - The turning point. AI can execute commands, make commits, run tests without asking each time. This is what [YOLO Containers](/chop#yolo-containers-safe-full-autonomy) enable safely.
 
-4. **Full Autonomy** - AI doesn't just execute commands - it plans multi-step workflows and handles the entire development cycle. This is where Claude Code shines today.
+1. **Full Autonomy** - AI doesn't just execute commands - it plans multi-step workflows and handles the entire development cycle. This is where Claude Code shines today.
 
 **Stages 5-8: The Multi-Agent Era**
 
-5. **Single Agent** - One Claude Code session per project. Good for focused work, but limited by serial execution. This is where most people are today.
+1. **Single Agent** - One Claude Code session per project. Good for focused work, but limited by serial execution. This is where most people are today.
 
-6. **Parallel Agents** - Multiple Claude Code instances working on different features simultaneously. You become a coordinator, switching between agents. This is when you discover the pain of merge conflicts and context switching.
+1. **Parallel Agents** - Multiple Claude Code instances working on different features simultaneously. You become a coordinator, switching between agents. This is when you discover the pain of merge conflicts and context switching.
 
-7. **Specialized Tools** - Different agents have different capabilities. One handles tests, another docs, another deployment. You're orchestrating specialists, not generalists. The [optimal number of agents](#what-im-still-figuring-out) becomes critical.
+1. **Specialized Tools** - Different agents have different capabilities. One handles tests, another docs, another deployment. You're orchestrating specialists, not generalists. The [optimal number of agents](#what-im-still-figuring-out) becomes critical.
 
-8. **Orchestrated System** - This is the vision: a central dashboard managing dozens of specialized agents. The [Agent Dashboard](#agent-dashboard) is an early step toward this. You're no longer coordinating individual agents - you're managing the system that coordinates them.
+1. **Orchestrated System** - This is the vision: a central dashboard managing dozens of specialized agents. The [Agent Dashboard](#agent-dashboard) is an early step toward this. You're no longer coordinating individual agents - you're managing the system that coordinates them.
 
 **Where I Am Today:** Somewhere between stages 6 and 7. Running 2-3 parallel agents on different features, learning how to avoid merge hell, figuring out when to use specialized vs. generalist agents. Stage 8 is the dream, but the tooling isn't quite there yet.
 
