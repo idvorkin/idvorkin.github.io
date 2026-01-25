@@ -272,11 +272,14 @@ I had lots of wrist issues from 20 years of typing. If I use a laptop or straigh
 
 - I used to use an iconic MS Sculpt, they stopped making that forever ago, luckily I bought like 6 spares.
 - I switched to the Logitech Ergo K860, which is similar and has Bluetooth, but has an annoying number pad.
-- Then I realized, my wrist pain actually comes not being able to externally rotate my shoulders, and a bigger split (like hands 3 feet apart), would support that, so I got the [Kinesis Freestyle (Quiet)](https://kinesis-ergo.com/products/#keyboards)
+- Then I realized, my wrist pain actually comes not being able to [externally rotate my shoulders](/shoulder-pain), and a bigger split (like hands 3 feet apart), would support that, so I got the [Kinesis Freestyle (Quiet)](https://kinesis-ergo.com/products/#keyboards)
   - Awesome having the ability to go really wide - but sucks that it's wired across the split and plugs in over USB A.
   - BTW I tried the Kinesis Advantage, I really don't like the ortholinear keyboards.
 - Then I discovered, I can do 2 folding split Bluetooth keyboards, and patch the software to still work with [Karabiner Elements](https://github.com/idvorkin/settings/blob/d37d021f27bdec58dfd9e80fc727d9c00f5c103d/mac/multi_keyboard_sync.json?plain=1#L210), which is what I'm using as my coffee shop setup.
 - Bluetooth [Folding Split Keyboard](https://www.amazon.com/iClever-Rechargeable-Bluetooth-Smartphones-IC-BK06/dp/B01JA6HG88) - I have literally bought 9 of these!
+
+{%include amazon.html asin="B07ZWK2TQT;B01JA6HG88;B0FGN9GC2G" %}
+
 - Notes on mechanical keyboards:
   - I deliberately decided not to get into mechanical keyboards.
   - But the Freestyle only comes in mechanical, so I got stuck.
@@ -289,9 +292,9 @@ I had lots of wrist issues from 20 years of typing. If I use a laptop or straigh
 - Notes on my wrist problems:
   - Most of my career my wrists would flair for a week or so, I'd wear a brace and be fine in a week.
   - In 2022, my wrists completely gave out (after 24 hours of straight magic practice)
-  - After lots of physical therapy, I discovered I don't have the ability to externally rotate my shoulders,
+  - After lots of physical therapy, I discovered I don't have the ability to [externally rotate my shoulders](/shoulder-pain),
   - That's why the split is so helpful.
-  - I did like a year of shoulder work, and now I'm better - thanks for asking!
+  - I did like a year of [shoulder work](/shoulder-pain), and now I'm better - thanks for asking!
   - Also zero grip strength (like I couldn't squeeze 15 lbs, now I do 135)
 
 My Dual Keyboard
