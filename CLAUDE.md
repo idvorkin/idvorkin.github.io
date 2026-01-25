@@ -213,6 +213,49 @@ Section anchors are the slugified version of the header (lowercase, hyphens for 
 - `### My Dual Keyboard` → `#my-dual-keyboard`
 - `## Blog Writing Style` → `#blog-writing-style`
 
+## Testing Changes
+
+**Always test includes and components with Playwright before claiming work is complete.**
+
+### Test Pages for Includes
+
+Test pages live in the `_test/` collection and are excluded from search/algolia. Create isolated test pages for each include component:
+
+**Pattern:** `_test/include-{component-name}.md`
+
+Example (`_test/include-amazon.md`):
+```markdown
+---
+layout: post
+title: Test - Amazon Include
+permalink: /test/include-amazon
+---
+
+# Test Page: Amazon Include
+
+## Single ASIN
+{% include amazon.html asin="B07ZWK2TQT" %}
+
+## Multiple ASINs
+{% include amazon.html asin="B07ZWK2TQT;B01JA6HG88;B0FGN9GC2G" %}
+```
+
+### Playwright Testing
+
+Create corresponding e2e tests in `tests/e2e/test-include-{name}.spec.ts`:
+
+1. **Screenshot tests** - Visual verification
+2. **Structure tests** - Verify DOM structure, classes, attributes
+3. **Integration tests** - Test component behavior
+
+Run tests: `npx playwright test tests/e2e/test-include-amazon.spec.ts --project=chromium`
+
+**Before marking work complete:**
+- ✅ Create test page in `_test/`
+- ✅ Write Playwright test with screenshots
+- ✅ Run test and verify screenshots look correct
+- ✅ Commit test page and test spec
+
 ## Internal Link Guidelines
 
 **Always use permalinks**, not redirect URLs:
