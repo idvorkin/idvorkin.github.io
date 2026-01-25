@@ -269,6 +269,10 @@ I've gotten 3 cheap pieces of aftermarket tech that transformed my car to awesom
 | **Super-ultrawide** | 32:9 | 49" | 5120×1440 | 27" × 2.0 wide |
 | **Super-ultrawide** | 32:9 | 57" | 7680×2160 | 32" × 2.0 wide |
 
+**Visual size comparison (to scale):**
+
+{% include monitor-comparison.html %}
+
 **My setup:**
 
 - **At work: 32" 4K (3840×2160, 16:9)** - Standard 4K monitor, excellent all-around
