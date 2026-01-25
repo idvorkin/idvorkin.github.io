@@ -7,6 +7,9 @@ imagefeatureblob: blog/raccoon-religion.webp
 
 I did my Bar Mitzvah at the Wailing Wall in Israel — the holiest place in Judaism. We flew there as a family, and I still remember stepping off the plane and feeling an intense warmth. I turned to my sister and whispered, "I can feel God." She rolled her eyes and said, "That's not God. That's forty degrees Celsius."
 
+> "God is the name of the blanket we throw over mystery to give it shape."
+> — Barry Taylor, former AC/DC road manager turned Episcopal priest
+
 {% include blob_image_float_right.html src="blog/raccoon-religion.webp" %}
 
 <!-- prettier-ignore-start -->
@@ -124,12 +127,7 @@ _To be fair, I can see the upside. If we really did have a universal standard, t
 
 ## What Is God Anyway?
 
-> "God is the name of the blanket we throw over mystery to give it shape."
-> — Barry Taylor, former AC/DC road manager turned Episcopal priest
-
 When I read devotionals each morning, I keep trying to do a mental find-and-replace - if I swap out "God" with something secular, what word would I use? "Universe" feels like a cop-out. "Myself" doesn't capture it either. Then it hit me: I can't do a simple find-and-replace because God isn't one thing - God is doing ten different jobs simultaneously: source of confidence, moral framework, community identifier, ritual designer. Religious people get all of that in one package. Secular people have to cobble together ten different solutions from ten different sources. But here's the twist: religious people face their own cobbling challenge. With conflicting scriptures, denominations, and interpretations, how do they know THEIR understanding of God is correct? And what makes their path actually different from mine?
-
-Barry Taylor's metaphor captures this perfectly - God is "the blanket we throw over mystery to give it shape." Both religious and secular people are in the business of shape-making. We're all throwing blankets over the fundamental mysteries of existence, trying to give them form we can work with. The difference isn't whether we're shaping mystery, but how we do it and what tools we use.
 
 ### The many meanings of God
 
