@@ -124,6 +124,9 @@ _To be fair, I can see the upside. If we really did have a universal standard, t
 
 ## What Is God Anyway?
 
+> "God is the name of the blanket we throw over mystery to give it shape."
+> — Barry Taylor, former AC/DC road manager turned Episcopal priest
+
 When I read devotionals each morning, I keep trying to do a mental find-and-replace - if I swap out "God" with something secular, what word would I use? "Universe" feels like a cop-out. "Myself" doesn't capture it either. Then it hit me: I can't do a simple find-and-replace because God isn't one thing - God is doing ten different jobs simultaneously: source of confidence, moral framework, community identifier, ritual designer. Religious people get all of that in one package. Secular people have to cobble together ten different solutions from ten different sources. But here's the twist: religious people face their own cobbling challenge. With conflicting scriptures, denominations, and interpretations, how do they know THEIR understanding of God is correct? And what makes their path actually different from mine?
 
 ### The many meanings of God
