@@ -198,6 +198,21 @@ just jekyll-serve <port> <livereload_port>
 
 **Why multiple servers**: Igor runs parallel CHOP sessions in different directories (blog2, blog3, etc.). Each needs its own Jekyll server on different ports. The script tracks which directory each server is serving.
 
+### Providing Preview Links
+
+**Always provide direct section links, not just page links.** When you make changes to a specific section of a page, construct the full URL with the section anchor.
+
+Format: `http://[tailscale-hostname]:4000/[page-permalink]#[section-slug]`
+
+Example:
+- ❌ Wrong: `http://c-5001.squeaker-teeth.ts.net:4000/irl`
+- ✅ Right: `http://c-5001.squeaker-teeth.ts.net:4000/irl#keyboards`
+
+Section anchors are the slugified version of the header (lowercase, hyphens for spaces):
+- `### Keyboards` → `#keyboards`
+- `### My Dual Keyboard` → `#my-dual-keyboard`
+- `## Blog Writing Style` → `#blog-writing-style`
+
 ## Internal Link Guidelines
 
 **Always use permalinks**, not redirect URLs:
