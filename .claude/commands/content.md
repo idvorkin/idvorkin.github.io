@@ -63,7 +63,12 @@ Comprehensive workflow for working on blog content (new or existing) following p
    git checkout {branch-name}
    ```
 
-### Phase 3: Check/Start Jekyll Server
+6. **When branch was created or switched:**
+   - Set flag to restart Jekyll server (branches may have different content)
+
+### Phase 3: Check/Restart Jekyll Server
+
+**IMPORTANT:** When switching/creating branches, restart Jekyll to pick up any content changes.
 
 **IMPORTANT:** Use the `running-servers` pattern from CLAUDE.md if available, otherwise check manually.
 
@@ -72,7 +77,13 @@ Comprehensive workflow for working on blog content (new or existing) following p
    lsof -Pi :4000 -sTCP:LISTEN -t
    ```
 
-2. **If running:**
+2. **If branch was switched/created AND server is running:**
+   - Stop the current server: `kill {PID}`
+   - Wait 1-2 seconds for clean shutdown
+   - Start new server (see step 4)
+   - Inform Igor: "🔄 Restarted Jekyll server for new branch"
+
+3. **If server running and branch NOT changed:**
    - Get the PID
    - Check if Tailscale hostname is available
    - Display access URLs:
@@ -82,12 +93,13 @@ Comprehensive workflow for working on blog content (new or existing) following p
         Tailscale: http://{hostname}:4000 (if available)
      ```
 
-3. **If not running:**
+4. **If not running (or after stopping for branch change):**
    - Inform Igor that server needs to start
-   - Explain: "I'll start the Jekyll server. This will run in the foreground, so you'll need to open a new terminal tab for editing."
-   - Start server:
+   - If restarting after branch change: "Restarting server for branch {branch-name}"
+   - If first start: "I'll start the Jekyll server. This will run in the background."
+   - Start server in background:
      ```bash
-     just jekyll-serve
+     rbenv exec bundle exec jekyll serve --port 4000 --livereload-port 35729 --livereload
      ```
 
 ### Phase 4: Ready for Content Work
