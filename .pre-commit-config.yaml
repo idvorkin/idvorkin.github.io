@@ -100,3 +100,11 @@ repos:
         exclude: "^zz-chop-logs/.*$|back-links.json"
         pass_filenames: false
         always_run: false
+
+      - id: check-asin-placeholders
+        name: Check ASIN placeholders need validation
+        entry: .pre-commit-hooks/check-asin-placeholders.py
+        language: script
+        files: '_data/asins\.json$'
+        pass_filenames: false
+        verbose: true

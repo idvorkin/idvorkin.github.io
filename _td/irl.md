@@ -382,7 +382,7 @@ Some good links:
 
 Who doesn't like fire, just plug in the propane, turn the dial, and you've got a fire ready to go for enjoyment or some s'mores
 
-{%include amazon.html asin="B07ZVS4YPN" %}
+{%include amazon.html asin="B0DP79LBNT" %}
 
 Add the fire pit glass and cover and you're good to go.
 
