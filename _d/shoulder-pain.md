@@ -19,11 +19,14 @@ I developed shoulder impingement from Turkish Get-Ups - grinding through reps wi
 
 - [How I Got Here: Turkish Get-Ups Gone Wrong](#how-i-got-here-turkish-get-ups-gone-wrong)
 - [My Problem: Shoulder Impingement](#my-problem-shoulder-impingement)
+- [Shoulder Movement Directions and Muscles](#shoulder-movement-directions-and-muscles)
 - [The Indirect Approach](#the-indirect-approach)
 - [Step 1: Thoracic Spine Mobility](#step-1-thoracic-spine-mobility)
 - [Step 2: Pec and Lat Mobility](#step-2-pec-and-lat-mobility)
-- [Step 3: Maintain the Length](#step-3-maintain-the-length)
-- [Step 4: Wall Slides](#step-4-wall-slides)
+- [Step 3: Scapular Control](#step-3-scapular-control)
+- [Step 4: Rotator Cuff Strengthening - External Rotation](#step-4-rotator-cuff-strengthening---external-rotation)
+- [Step 5: Maintain the Length](#step-5-maintain-the-length)
+- [Step 6: Wall Slides - The Final Boss](#step-6-wall-slides---the-final-boss)
 - [Heavy Clubs for Shoulder Health](#heavy-clubs-for-shoulder-health)
 - [Inspiration: Amazing Shoulder Control](#inspiration-amazing-shoulder-control)
 - [See Also](#see-also)
@@ -58,14 +61,61 @@ My shoulder issue is impingement - the ball isn't staying centered in the socket
 3. **Train scapular control** - Your shoulder blade needs to move in sync with your arm; wall slides and prone exercises teach this
 4. **Avoid overhead work until stable** - Pressing and reaching overhead with a migrating ball just accelerates the damage
 
+### Shoulder Movement Directions and Muscles
+
+Before diving into the fix, here's the vocabulary of shoulder movements. Understanding these directions helps you know what you're working on.
+
+**Flexion** (raising arm forward and overhead):
+- **What it looks like:** Arm moves from your side, forward, and up toward the ceiling (like raising your hand in class)
+- **Muscles:** Anterior deltoid (front of shoulder), upper pec, biceps (long head)
+- **Common exercises:** Front raises, overhead press
+
+**Extension** (moving arm backward):
+- **What it looks like:** Arm moves from your side backward behind you (like reaching for your back pocket)
+- **Muscles:** Lats, posterior deltoid (rear shoulder), teres major, triceps (long head)
+- **Common exercises:** Pull-ups, rows, straight-arm pulldowns
+
+**Abduction** (raising arm out to the side):
+- **What it looks like:** Arm moves from your side, out to the side, and up overhead (like making a snow angel)
+- **Muscles:** Supraspinatus (rotator cuff) initiates 0-15°, then middle deltoid takes over
+- **Common exercises:** Lateral raises, overhead press
+- **Critical:** Your shoulder blade MUST rotate upward or you get impingement
+
+**Adduction** (bringing arm down to your side or across body):
+- **What it looks like:** Arm moves from overhead or out to the side, down toward your body
+- **Muscles:** Lats, pecs, teres major
+- **Common exercises:** Pull-ups, lat pulldowns
+
+**External Rotation** (turning arm outward):
+- **What it looks like:** Elbow at your side, bent 90°, forearm rotates away from your body (like opening a door)
+- **Muscles:** Infraspinatus, teres minor (both rotator cuff muscles)
+- **WHY THIS MATTERS:** This is THE critical movement for fixing impingement. Most people are weak here.
+- **Common exercises:** Side-lying external rotation, face pulls
+
+**Internal Rotation** (turning arm inward):
+- **What it looks like:** Elbow at your side, bent 90°, forearm rotates toward your body (like closing a door)
+- **Muscles:** Subscapularis (rotator cuff), pecs, lats
+- **Note:** Usually overtrained from push-ups, bench press, desk work. Most people don't need MORE internal rotation.
+
+**Horizontal movements** (arm at shoulder height):
+- **Horizontal abduction (pulling back):** Rear delts, rhomboids, mid-traps - like reverse flyes
+- **Horizontal adduction (pulling across):** Pecs, anterior delt - like cable crossovers
+
+**What matters most for fixing impingement:**
+- **External rotation** - Weak in almost everyone, essential for centering the ball
+- **Scapular control** - Depression and retraction, the foundation for everything
+- **Avoid excessive internal rotation** - You're probably already too internally rotated
+
 ### The Indirect Approach
 
 You can't fix shoulder directly. You need to go through this sequence:
 
 1. Improve Thoracic Spine Mobility
 2. Improve Pec and Lat Mobility
-3. Maintain the length you've gained
-4. Wall Slides for strength and control
+3. Build Scapular Control
+4. Strengthen Rotator Cuff - External Rotation
+5. Maintain the length you've gained
+6. Wall Slides - The Final Boss
 
 ### Step 1: Thoracic Spine Mobility
 
@@ -87,7 +137,72 @@ Exercises:
 - **Box lat stretch** - Kneel facing a box, put elbows on box with palms together, sink hips back
 - **Eccentric slow pull-up** - Jump to top of pull-up, lower yourself as slowly as possible (5-10 seconds)
 
-### Step 3: Maintain the Length
+### Step 3: Scapular Control
+
+Your shoulder blade (scapula) is the foundation for healthy shoulder movement. The ball-and-socket joint sits ON the scapula, so if the scapula is in the wrong position or doesn't move properly, the ball can't track correctly in the socket.
+
+**The problem:** Most people have scapular dysfunction - shoulder blades that sit too high (elevated), too far forward (protracted), or don't rotate upward when raising the arm. This forces the humeral head into bad positions and creates impingement.
+
+**What you need:**
+
+- **Scapular depression** - Pull the shoulder blade DOWN, away from your ear. This creates space under the acromion and prevents pinching.
+- **Scapular retraction** - Pull the shoulder blade BACK toward your spine. Counteracts the forward-rounded posture from desk work.
+- **Upward rotation** - The shoulder blade has to rotate upward as your arm goes overhead. If it doesn't, you're grinding bone on bone.
+
+**Exercises:**
+
+- **Scapular wall slides** - Stand facing wall, arms overhead, slide down while actively pulling shoulder blades down and together
+- **Prone Y raises** - Lie face down, arms in Y position overhead, lift arms while squeezing shoulder blades down and together (not up toward ears!)
+- **Dead hangs** - Hang from pull-up bar, actively pull shoulders DOWN (scapular depression). Feel the stretch, don't just dangle.
+- **Band pull-aparts** - Hold resistance band, pull apart while squeezing shoulder blades together, keep shoulders DOWN
+
+**Key cue:** "Shoulders down and back" - This isn't just a posture cue, it's the actual scapular position you need to train.
+
+### Step 4: Rotator Cuff Strengthening - External Rotation
+
+This is THE critical step for fixing impingement. The rotator cuff's job is to pull the humeral head down into the socket and keep it centered. When these muscles are weak, the ball migrates upward and you get pinching.
+
+**Why external rotation matters most:** Modern life creates massive internal rotation dominance. Desk work, driving, push-ups, bench press - all internal rotation. Your pecs and lats get strong and tight, pulling your arm forward and inward. The posterior rotator cuff (infraspinatus, teres minor) gets weak and overstretched. This imbalance lets the humeral head drift forward and up into impingement territory.
+
+**The fix is simple but tedious:** Train external rotation with light weight, high reps, frequently. This isn't about ego - you'll use embarrassingly light weight. A 5-10 pound dumbbell is typical. The goal is to build endurance in small stabilizer muscles, not to lift heavy.
+
+**Exercises:**
+
+**Side-lying external rotation** (fundamental movement):
+- Lie on your side, bottom arm tucked under head
+- Top arm bent 90°, elbow pinned to your side
+- Hold light dumbbell, rotate forearm up toward ceiling
+- Key: Keep elbow GLUED to your side, only the forearm moves
+- 3 sets of 15-20 reps, multiple times per week
+
+**90/90 external rotation** (arm abducted position):
+- Lie on your side, upper arm out perpendicular to body, elbow bent 90°
+- Rotate forearm up toward ceiling
+- This trains external rotation with the arm in a more vulnerable position (mimics overhead movements)
+- 3 sets of 12-15 reps
+
+**Face pulls** (compound movement):
+- Cable or band at face height
+- Pull toward face, separating hands and rotating arms outward
+- Finish with hands by ears, thumbs pointing back
+- Trains external rotation PLUS scapular retraction and rear delts
+- 3-4 sets of 15-20 reps
+
+**Banded external rotation at side** (warm-up/daily maintenance):
+- Band anchored at elbow height, stand sideways to anchor
+- Elbow bent 90°, pinned to side
+- Rotate arm outward against band resistance
+- Can do this daily as prehab before workouts
+- 2-3 sets of 20 reps
+
+**Programming notes:**
+- Frequency matters more than intensity - 3-4x per week minimum
+- Always do BEFORE pressing movements (bench, overhead press) as prehab
+- Use tempo: 2 seconds up, pause, 2 seconds down
+- If you feel it in your trap or shoulder top, you're compensating - lighten the weight
+- Progress is slow - expect 6-12 weeks before you notice significant improvement
+
+### Step 5: Maintain the Length
 
 After creating mobility, you need to maintain it with daily movement.
 
@@ -96,13 +211,31 @@ Exercises:
 - **Half prone angel** - Lie face down, arms out to sides, slowly raise arms while squeezing shoulder blades
 - **Shoulder swims** - Lie face down, arms overhead, "swim" them down to your sides and back up
 
-### Step 4: Wall Slides
+### Step 6: Wall Slides - The Final Boss
 
-The final step builds strength and control in the new range of motion.
+Wall slides are both a diagnostic tool and the graduation test. They combine everything you've built in the previous steps into one integrated movement. If you can't do them smoothly, they show you exactly where your limitations are.
 
-- Stand with back, head, and arms against wall
-- Slide arms up and down while maintaining contact with wall
-- This is harder than it sounds if your mobility was limited
+**What wall slides require:**
+1. **T-spine extension** - to keep your back flat against the wall
+2. **Scapular upward rotation** - shoulder blades have to rotate smoothly as arms go up
+3. **External rotation** - to keep arms against the wall throughout the movement
+4. **Rotator cuff control** - to keep the humeral head centered (no pinching)
+5. **Pec/lat length** - tight pecs or lats prevent arms from staying against the wall
+
+**How to do them:**
+- Stand with back against wall
+- Put arms against wall in "W" or "goal post" position (elbows bent 90°, upper arms out to sides)
+- Slide arms up overhead while keeping your back, head, and arms in contact with the wall
+- Slide back down
+- Repeat for 10-15 reps
+
+**What goes wrong if you have limitations:**
+- **Back arches off wall** → Stiff T-spine
+- **Arms pull forward off wall** → Tight pecs, weak external rotators
+- **Pain in shoulder** → Rotator cuff still weak, ball migrating up
+- **Can't get arms overhead** → Tight lats or poor scapular upward rotation
+
+If you can do 15 clean reps with full range, arms and back staying on the wall, no pain - your shoulder is working properly. That's the graduation test.
 
 ### Heavy Clubs for Shoulder Health
 
