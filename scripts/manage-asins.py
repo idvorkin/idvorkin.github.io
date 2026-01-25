@@ -44,7 +44,8 @@ class OpenGraphParser(HTMLParser):
 def find_all_asins(root_dir):
     """Find all ASINs used in markdown files"""
     asins = set()
-    asin_pattern = re.compile(r'asin="([A-Z0-9]{10})"')
+    # Match the full asin="..." attribute value, which may contain semicolon-separated ASINs
+    asin_pattern = re.compile(r'asin="([^"]+)"')
 
     for path in Path(root_dir).rglob("*.md"):
         if "chop-logs" in str(path) or "node_modules" in str(path):
@@ -53,7 +54,14 @@ def find_all_asins(root_dir):
         try:
             content = path.read_text()
             matches = asin_pattern.findall(content)
-            asins.update(matches)
+            # Split on semicolons and extract individual ASINs
+            for match in matches:
+                # Split on semicolon and strip whitespace
+                individual_asins = [a.strip() for a in match.split(';') if a.strip()]
+                # Validate each is a proper ASIN (10 alphanumeric chars)
+                for asin in individual_asins:
+                    if re.match(r'^[A-Z0-9]{10}$', asin):
+                        asins.add(asin)
         except Exception as e:
             print(f"Error reading {path}: {e}")
 
