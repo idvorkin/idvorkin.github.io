@@ -268,36 +268,43 @@ I've gotten 3 cheap pieces of aftermarket tech that transformed my car to awesom
 
 {%include blob_image_float_right.html src="blog/dual_keyboard.jpg" %}
 
-I had lots of wrist issues from 20 years of typing. If I use a laptop or straight keyboard my wrists hurt on low days. So I need ergo keyboards. Here's the rambling story
+**Current setup (dual Bluetooth):**
 
-- I used to use an iconic MS Sculpt, they stopped making that forever ago, luckily I bought like 6 spares.
-- I switched to the Logitech Ergo K860, which is similar and has Bluetooth, but has an annoying number pad.
-- Then I realized, my wrist pain actually comes not being able to [externally rotate my shoulders](/shoulder-pain), and a bigger split (like hands 3 feet apart), would support that, so I got the [Kinesis Freestyle (Quiet)](https://kinesis-ergo.com/products/#keyboards)
-  - Awesome having the ability to go really wide - but sucks that it's wired across the split and plugs in over USB A.
-  - BTW I tried the Kinesis Advantage, I really don't like the ortholinear keyboards.
-- Then I discovered, I can do 2 folding split Bluetooth keyboards, and patch the software to still work with [Karabiner Elements](https://github.com/idvorkin/settings/blob/d37d021f27bdec58dfd9e80fc727d9c00f5c103d/mac/multi_keyboard_sync.json?plain=1#L210), which is what I'm using as my coffee shop setup.
-- Bluetooth [Folding Split Keyboard](https://www.amazon.com/iClever-Rechargeable-Bluetooth-Smartphones-IC-BK06/dp/B01JA6HG88) - I have literally bought 9 of these!
+My coffee shop solution: Two folding Bluetooth keyboards synced via [Karabiner Elements](https://github.com/idvorkin/settings/blob/d37d021f27bdec58dfd9e80fc727d9c00f5c103d/mac/multi_keyboard_sync.json?plain=1#L210). I position them 3+ feet apart to allow proper shoulder rotation.
 
 {%include amazon.html asin="B07ZWK2TQT;B01JA6HG88;B0FGN9GC2G" %}
 
-- Notes on mechanical keyboards:
-  - I deliberately decided not to get into mechanical keyboards.
-  - But the Freestyle only comes in mechanical, so I got stuck.
-  - The Advantage Quiet uses linear keys (cherry red), which I like much more than clicky.
-  - Eventually I gave up trying to avoid mechanicals and embraced them.
-  - My current favorite is the [RK ROYAL KLUDGE Ergonomic Mechanical](https://www.amazon.com/RK-ROYAL-KLUDGE-Ergonomic-Mechanical/dp/B0FGN9GC2G) because you can hot-swap the switches - meaning you can replace individual keys without soldering!
+I've bought 9 of these iClever folding keyboards - they're compact, reliable, and let me position my hands exactly where my shoulders need them.
+
+**Why the wide split matters:**
+
+At 40, after 20 years of typing, my wrists started giving out. Using a laptop or straight keyboard causes pain within hours. The breakthrough came from discovering that my wrist issues stemmed from an inability to [externally rotate my shoulders](/shoulder-pain) - meaning I needed keyboards that could sit 3+ feet apart.
+
+**The journey to get here:**
+
+- MS Sculpt - The classic ergo keyboard. Bought 6 spares before they discontinued it.
+- Logitech Ergo K860 - Similar feel, adds Bluetooth, but the number pad wastes desk space.
+- [Kinesis Freestyle (Quiet)](https://kinesis-ergo.com/products/#keyboards) - First true wide-split keyboard
+  - Pros: Adjustable width, Cherry Red linear switches (quiet, smooth)
+  - Cons: Wired connection between halves, USB-A only
+  - Note: I tried the Kinesis Advantage but dislike ortholinear layouts
+- Dual folding Bluetooth keyboards - Current setup, most flexible solution
+
+**The mechanical keyboard rabbit hole:**
+
+I deliberately avoided mechanical keyboards for years. The Kinesis Freestyle forced my hand - it only comes in mechanical. Turns out linear keys (Cherry Red) are much better than clicky for me. Eventually I gave up trying to avoid mechanicals and embraced them.
+
+My current favorite is the [RK ROYAL KLUDGE Ergonomic Mechanical](https://www.amazon.com/RK-ROYAL-KLUDGE-Ergonomic-Mechanical/dp/B0FGN9GC2G) because you can hot-swap the switches - meaning you can replace individual keys without soldering!
 
 {% include alert.html content="⚠️ CRITICAL: Make sure whatever mechanical keyboard you get has hot-swappable keys! This lets you replace individual switches without soldering. Total game-changer." style="warning" %}
 
-- Notes on my wrist problems:
-  - Most of my career my wrists would flair for a week or so, I'd wear a brace and be fine in a week.
-  - In 2022, my wrists completely gave out (after 24 hours of straight magic practice)
-  - After lots of physical therapy, I discovered I don't have the ability to [externally rotate my shoulders](/shoulder-pain),
-  - That's why the split is so helpful.
-  - I did like a year of [shoulder work](/shoulder-pain), and now I'm better - thanks for asking!
-  - Also zero grip strength (like I couldn't squeeze 15 lbs, now I do 135)
+**What fixed my wrists:**
 
-My Dual Keyboard
+- **2022**: Complete wrist failure after 24 hours of magic practice
+- **Discovery**: Zero shoulder external rotation, grip strength at 15 lbs
+- **Solution**: Year of [physical therapy focused on shoulders](/shoulder-pain)
+- **Result**: Grip strength now 135 lbs, wrists functional with proper keyboard setup
+- **Key insight**: The split isn't just comfort - it's necessary for my shoulder mechanics
 
 ## Camera
 
