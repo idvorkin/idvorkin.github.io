@@ -281,7 +281,11 @@ I had lots of wrist issues from 20 years of typing. If I use a laptop or straigh
   - I deliberately decided not to get into mechanical keyboards.
   - But the Freestyle only comes in mechanical, so I got stuck.
   - The Advantage Quiet uses linear keys (cherry red), which I like much more than clicky.
-  - I continue to try to avoid learning more about mechanical keyboards.
+  - Eventually I gave up trying to avoid mechanicals and embraced them.
+  - My current favorite is the [RK ROYAL KLUDGE Ergonomic Mechanical](https://www.amazon.com/RK-ROYAL-KLUDGE-Ergonomic-Mechanical/dp/B0FGN9GC2G) because you can hot-swap the switches - meaning you can replace individual keys without soldering!
+
+{% include alert.html content="⚠️ CRITICAL: Make sure whatever mechanical keyboard you get has hot-swappable keys! This lets you replace individual switches without soldering. Total game-changer." style="warning" %}
+
 - Notes on my wrist problems:
   - Most of my career my wrists would flair for a week or so, I'd wear a brace and be fine in a week.
   - In 2022, my wrists completely gave out (after 24 hours of straight magic practice)
