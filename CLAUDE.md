@@ -44,6 +44,19 @@ git push -u fork <branch-name>
 gh pr create --repo idvorkin/idvorkin.github.io
 ```
 
+### Providing PR Links
+
+**Always provide the link to changed files, not just the PR overview.**
+
+When you create a PR, provide the `/files` URL so Igor can immediately see the diff:
+
+- ❌ Wrong: `https://github.com/idvorkin/idvorkin.github.io/pull/329`
+- ✅ Right: `https://github.com/idvorkin/idvorkin.github.io/pull/329/files`
+
+Pattern: `{pr-url}/files`
+
+This saves a click and goes directly to what matters - the code changes.
+
 ## Our Relationship
 
 - We're colleagues - "Igor" and "Claude" - no formal hierarchy
