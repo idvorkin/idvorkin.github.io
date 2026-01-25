@@ -258,9 +258,32 @@ I've gotten 3 cheap pieces of aftermarket tech that transformed my car to awesom
 
 ### Monitors
 
-- 34" wide screen - not a huge fan. Good for widescreen movies (but Netflix/YouTube rarely has this resolution)
-- 40" 3840x2160 - Awesome, I love it! Highly recommend
-- [Beefy Monitor Stand](https://www.amazon.com/dp/B01BXP9LT6) - If you're getting a good monitor make sure it floats with a pneumatic monitor stand.
+**Understanding monitor dimensions:** Monitors are defined by three factors: aspect ratio, resolution, and diagonal size. The mental model that helps: ultrawides are basically standard monitors stretched wider (keeping height roughly the same).
+
+| Format | Aspect Ratio | Example Size | Resolution | Mental Model |
+|--------|-------------|--------------|------------|--------------|
+| **Standard** | 16:9 | 27" | 2560×1440 (QHD) | Baseline |
+| **Standard** | 16:9 | 32" | 3840×2160 (4K) | Bigger baseline |
+| **Ultrawide** | 21:9 | 34" | 3440×1440 | 27" × 1.33 wide |
+| **Ultrawide** | 21:9 | 40" | 5120×2160 | 32" × 1.32 wide |
+| **Super-ultrawide** | 32:9 | 49" | 5120×1440 | 27" × 2.0 wide |
+| **Super-ultrawide** | 32:9 | 57" | 7680×2160 | 32" × 2.0 wide |
+
+**My setup:**
+
+- **At work: 32" 4K (3840×2160, 16:9)** - Standard 4K monitor, excellent all-around
+- **At home: 43" 4K (3840×2160, 16:9)** - Same resolution as the 32", just bigger. Loved it! (discontinued)
+- **At home ultrawide: 40" Samsung Odyssey G7** (Upgraded from 34" ultrawide) - 5120×2160, 21:9, 180Hz, DisplayHDR 600. Think of it as a 32" 4K monitor stretched 32% wider. Excellent for productivity with vertical space of 4K but extra width for side-by-side windows.
+
+**Previous:**
+
+- **34" ultrawide (3440×1440, 21:9)** - Not a huge fan. Good for widescreen movies, but Netflix/YouTube rarely use this aspect ratio
+
+{%include amazon.html asin="B0FJYNVR3R" %}
+
+**Essential accessory:**
+
+[Beefy Monitor Stand](https://www.amazon.com/dp/B01BXP9LT6) - If you're getting a good monitor, make sure it floats with a pneumatic monitor stand.
 
 {%include amazon.html asin="B01BXP9LT6" %}
 
