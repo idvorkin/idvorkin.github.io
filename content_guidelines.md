@@ -152,6 +152,14 @@ _Reference: [Wikipedia: Signs of AI Writing](https://en.wikipedia.org/wiki/Wikip
 - Quote key passages that resonated
 - Connect to your existing frameworks and other books
 
+**Amazon affiliate links:**
+
+- Always use `{% include amazon.html asin="..." %}` for book links
+- Find ASINs in Amazon URLs: `amazon.com/dp/B0D54JZTHY` → `asin="B0D54JZTHY"`
+- Run `python3 scripts/manage-asins.py sync --update` after adding new ASINs
+- Product metadata is cached in `_data/asins.json` for performance and resilience
+- See CLAUDE.md for troubleshooting broken images
+
 **Length:** 300-600 lines typically
 
 **Tags:** `book-notes`, plus relevant topic tags

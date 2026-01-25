@@ -153,7 +153,7 @@ Inconveniently, massage only lasts 20 minutes, stretching a day or 2, but streng
 - **Rebuilding Milo** - From the Squat University guy (Aaron Horschig). Focuses on diagnosing and fixing common lifting injuries (hip, knee, shoulder, back). Very practical with specific rehab protocols and movement assessments.
 - **Built from Broken** - Scott Hogan's science-based approach to joint health and injury recovery. Covers the "why" behind pain and provides structured programs for rebuilding strength after injury. Good on nutrition's role in tissue healing.
 
-{% include amazon.html asin="B09PLKR2YT;1735728500;" %}
+{% include amazon.html asin="1628604220;1735728500" %}
 
 ## Other Ideas to Classify
 

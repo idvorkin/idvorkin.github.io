@@ -157,6 +157,47 @@ Use `{% include quadrant-matrix.html %}` - see existing uses for parameter refer
 
 See `_d/tesla.md` for implementation. Backend: [github.com/idvorkin/tony_tesla](https://github.com/idvorkin/tony_tesla)
 
+### Amazon Product Links (Affiliate)
+
+**Why we use the ASIN system:**
+
+- **Performance**: Pre-fetches product metadata (title, image, price) so pages load fast
+- **Resilience**: Caches data in `_data/asins.json` so broken Amazon links don't break the blog
+- **Affiliate revenue**: All links automatically include `?tag=ighe-20` affiliate parameter
+- **Graceful degradation**: JavaScript fallback shows "View on Amazon →" button if images break
+
+**Usage:**
+
+```liquid
+{% include amazon.html asin="B0D54JZTHY" %}
+```
+
+**Multiple products (semicolon-separated):**
+
+```liquid
+{% include amazon.html asin="B0D54JZTHY;B01JA6HG88;B0FGN9GC2G" %}
+```
+
+**After adding new ASINs, update the product database:**
+
+```bash
+# Discover new ASINs and fetch product metadata
+python3 scripts/manage-asins.py sync --update
+
+# Or just validate specific ASINs
+python3 scripts/manage-asins.py validate B0D54JZTHY --update
+```
+
+**The system:**
+
+- Scans markdown files for `asin="..."` patterns
+- Fetches product data from Amazon OpenGraph metadata
+- Stores in `_data/asins.json` for Jekyll to read
+- Validates images (rejects 1x1 tracking pixels)
+- Pre-commit hook warns about placeholders
+
+For troubleshooting broken images, see `scripts/README.md`.
+
 ## Previewing Pages
 
 ### Ruby Version Requirement
