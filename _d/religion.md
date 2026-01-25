@@ -7,6 +7,9 @@ imagefeatureblob: blog/raccoon-religion.webp
 
 I did my Bar Mitzvah at the Wailing Wall in Israel — the holiest place in Judaism. We flew there as a family, and I still remember stepping off the plane and feeling an intense warmth. I turned to my sister and whispered, "I can feel God." She rolled her eyes and said, "That's not God. That's forty degrees Celsius."
 
+> "God is the name of the blanket we throw over mystery to give it shape."
+> — Barry Taylor, former AC/DC road manager turned Episcopal priest
+
 {% include blob_image_float_right.html src="blog/raccoon-religion.webp" %}
 
 <!-- prettier-ignore-start -->
