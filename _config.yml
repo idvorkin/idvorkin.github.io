@@ -32,6 +32,8 @@ collections:
     output: true
   ig66:
     output: true
+  test:
+    output: true
 
 # See directions @
 # https://community.algolia.com/jekyll-algolia/getting-started.html
@@ -67,6 +69,7 @@ algolia:
     - "scripts/*"
     - "tests/*"
     - "src/__tests__/*"
+    - "_test/*"
 
 # plugins_dir: _plugins (default)
 include: [".htaccess", "__init__.py"]

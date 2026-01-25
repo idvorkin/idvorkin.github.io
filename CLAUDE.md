@@ -44,6 +44,19 @@ git push -u fork <branch-name>
 gh pr create --repo idvorkin/idvorkin.github.io
 ```
 
+### Providing PR Links
+
+**Always provide the link to changed files, not just the PR overview.**
+
+When you create a PR, provide the `/files` URL so Igor can immediately see the diff:
+
+- ❌ Wrong: `https://github.com/idvorkin/idvorkin.github.io/pull/329`
+- ✅ Right: `https://github.com/idvorkin/idvorkin.github.io/pull/329/files`
+
+Pattern: `{pr-url}/files`
+
+This saves a click and goes directly to what matters - the code changes.
+
 ## Our Relationship
 
 - We're colleagues - "Igor" and "Claude" - no formal hierarchy
@@ -197,6 +210,64 @@ just jekyll-serve <port> <livereload_port>
 **IMPORTANT**: Each Jekyll server uses TWO ports - main port and LiveReload port. The script calculates both using the convention: `livereload = 35729 + (port - 4000)`. Always use both ports to avoid conflicts.
 
 **Why multiple servers**: Igor runs parallel CHOP sessions in different directories (blog2, blog3, etc.). Each needs its own Jekyll server on different ports. The script tracks which directory each server is serving.
+
+### Providing Preview Links
+
+**Always provide direct section links, not just page links.** When you make changes to a specific section of a page, construct the full URL with the section anchor.
+
+Format: `http://[tailscale-hostname]:4000/[page-permalink]#[section-slug]`
+
+Example:
+- ❌ Wrong: `http://c-5001.squeaker-teeth.ts.net:4000/irl`
+- ✅ Right: `http://c-5001.squeaker-teeth.ts.net:4000/irl#keyboards`
+
+Section anchors are the slugified version of the header (lowercase, hyphens for spaces):
+- `### Keyboards` → `#keyboards`
+- `### My Dual Keyboard` → `#my-dual-keyboard`
+- `## Blog Writing Style` → `#blog-writing-style`
+
+## Testing Changes
+
+**Always test includes and components with Playwright before claiming work is complete.**
+
+### Test Pages for Includes
+
+Test pages live in the `_test/` collection and are excluded from search/algolia. Create isolated test pages for each include component:
+
+**Pattern:** `_test/include-{component-name}.md`
+
+Example (`_test/include-amazon.md`):
+```markdown
+---
+layout: post
+title: Test - Amazon Include
+permalink: /test/include-amazon
+---
+
+# Test Page: Amazon Include
+
+## Single ASIN
+{% include amazon.html asin="B07ZWK2TQT" %}
+
+## Multiple ASINs
+{% include amazon.html asin="B07ZWK2TQT;B01JA6HG88;B0FGN9GC2G" %}
+```
+
+### Playwright Testing
+
+Create corresponding e2e tests in `tests/e2e/test-include-{name}.spec.ts`:
+
+1. **Screenshot tests** - Visual verification
+2. **Structure tests** - Verify DOM structure, classes, attributes
+3. **Integration tests** - Test component behavior
+
+Run tests: `npx playwright test tests/e2e/test-include-amazon.spec.ts --project=chromium`
+
+**Before marking work complete:**
+- ✅ Create test page in `_test/`
+- ✅ Write Playwright test with screenshots
+- ✅ Run test and verify screenshots look correct
+- ✅ Commit test page and test spec
 
 ## Internal Link Guidelines
 
