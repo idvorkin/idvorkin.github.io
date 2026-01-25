@@ -20,6 +20,7 @@ I developed shoulder impingement from Turkish Get-Ups - grinding through reps wi
 - [How I Got Here: Turkish Get-Ups Gone Wrong](#how-i-got-here-turkish-get-ups-gone-wrong)
 - [My Problem: Shoulder Impingement](#my-problem-shoulder-impingement)
 - [Shoulder Movement Directions and Muscles](#shoulder-movement-directions-and-muscles)
+- [Key Muscles and Their Roles](#key-muscles-and-their-roles)
 - [The Indirect Approach](#the-indirect-approach)
 - [Step 1: Thoracic Spine Mobility](#step-1-thoracic-spine-mobility)
 - [Step 2: Pec and Lat Mobility](#step-2-pec-and-lat-mobility)
@@ -105,6 +106,114 @@ Before diving into the fix, here's the vocabulary of shoulder movements. Underst
 - **External rotation** - Weak in almost everyone, essential for centering the ball
 - **Scapular control** - Depression and retraction, the foundation for everything
 - **Avoid excessive internal rotation** - You're probably already too internally rotated
+
+### Key Muscles and Their Roles
+
+Now that you understand the movements, here are the muscles that make them happen - and their specific roles in shoulder health.
+
+#### The Rotator Cuff (SITS) - Your Stabilizers
+
+These four small muscles wrap around the humeral head and are the only thing keeping the ball centered in the socket. If they're weak, the ball migrates and you get impingement.
+
+**Supraspinatus** (top of shoulder):
+- **Job:** Initiates abduction (first 0-15° of raising arm to side), pulls humeral head DOWN into socket
+- **Problem when weak:** Ball rides up, impingement starts immediately when raising arm
+- **Common issue:** First to get injured, prone to tears from overhead work
+- **Test:** Empty can test - arm straight out to side at 30° forward, thumb down (like emptying a can), raise 12-15 times with 2-5 lb weight. Pain or inability = weakness or injury.
+
+**Infraspinatus** (back of shoulder):
+- **Job:** External rotation, pulls humeral head DOWN and IN to center it
+- **Problem when weak:** Ball drifts forward and up, you lose external rotation range
+- **Critical:** This is THE muscle to strengthen for fixing impingement
+- **Test:** Elbow at side bent 90°, externally rotate against resistance (band or partner's hand). Can you do 15+ reps without shoulder hiking up toward ear? If shoulder elevates or you compensate = weak.
+
+**Teres Minor** (back of shoulder, below infraspinatus):
+- **Job:** External rotation, assists infraspinatus in pulling head down
+- **Problem when weak:** Same as infraspinatus - ball migrates forward/up
+- **Note:** Functionally very similar to infraspinatus - think of them as a team like biceps short head and long head. Anatomically distinct muscles, but in practice they fire together during external rotation. Almost impossible to isolate or test separately.
+- **Test:** Same as infraspinatus test - works together with it.
+
+**Subscapularis** (front of shoulder, against ribcage):
+- **Job:** Internal rotation, pulls humeral head forward INTO the socket (anteriorly)
+- **Problem when weak:** Ball can drift backward (rare)
+- **Problem when tight:** Restricts external rotation, contributes to forward shoulder posture
+- **Note:** Usually NOT weak - gets plenty of work from push-ups, bench press
+- **Test for tightness:** Lie on back, arm out to side at 90°, elbow bent 90°. Let forearm drop back toward floor. If forearm can't reach horizontal or beyond = tight subscapularis.
+
+#### The Deltoids - Your Prime Movers
+
+The three deltoid heads are the big muscles that actually move your arm. They're strong, but if the rotator cuff is weak, they'll yank the ball out of position.
+
+**Anterior Deltoid** (front):
+- **Movements:** Flexion (raising arm forward), assists internal rotation
+- **Problem:** Often overdeveloped from pressing movements, contributes to forward shoulder posture
+- **Balance check:** Can you do as many overhead presses as bench presses?
+
+**Middle Deltoid** (side):
+- **Movements:** Abduction (raising arm to side)
+- **Critical coordination:** Works with supraspinatus - supraspinatus starts 0-15°, middle delt takes over
+- **Problem:** If supraspinatus is weak, middle delt takes over too early and yanks the ball upward
+- **Test:** Lateral raises with 5-10 lb dumbbells for 12-15 reps. Watch for shoulder hiking up - if it does, middle delt is compensating for weak supraspinatus.
+
+**Posterior Deltoid** (rear):
+- **Movements:** Extension (arm backward), external rotation, horizontal abduction
+- **Problem when weak:** Can't counteract forward pull from anterior delt and pecs
+- **Test:** Reverse flyes - bend forward 90°, arms hanging, raise arms out to sides. Can you do 15 reps with 5-10 lbs keeping shoulder blades squeezed? Weak = can't complete reps or upper traps take over.
+
+#### Scapular Stabilizers - Your Foundation
+
+The shoulder blade is the platform the ball-and-socket sits on. If the platform doesn't move correctly, the joint can't work properly.
+
+**Trapezius** (upper, middle, lower - three distinct sections):
+- **Upper trap:** Elevates shoulder (shrugging) - usually overactive, pulls shoulder up toward ear
+- **Middle trap:** Retracts scapula (pulls shoulder blade toward spine) - usually weak
+- **Lower trap:** Depresses and upwardly rotates scapula - CRITICAL for healthy overhead movement, usually very weak
+- **Key insight:** Most people are upper-trap dominant. You need to strengthen mid/lower trap to balance this.
+- **Test for middle trap:** Lie face down, arm out to side at 90°, thumb up. Lift arm while squeezing shoulder blade toward spine. Can you hold for 30 seconds without cramping? Weak = can't hold or upper trap takes over.
+- **Test for lower trap:** Stand, raise arms overhead in Y position. Can you hold 60 seconds without shoulders hiking toward ears? If shoulders elevate = weak lower trap, overactive upper trap.
+
+**Rhomboids** (between shoulder blades):
+- **Job:** Retract scapula, pull shoulder blades together
+- **Problem when weak:** Shoulder blades wing out, scapula sits too far forward
+- **Test:** Can you squeeze your shoulder blades together and hold for 10 seconds?
+
+**Serratus Anterior** (side of ribcage, wraps around):
+- **Job:** Protracts scapula (pushes it forward), upwardly rotates scapula
+- **Critical for:** Push-ups, punching, reaching forward, overhead movements
+- **Problem when weak:** Scapular winging (shoulder blade sticks out like a wing), can't push overhead properly
+- **Test:** Push-up position - do your shoulder blades stick out off your back?
+
+#### Problem Muscles - Usually Too Tight
+
+These large muscles get strong and tight from modern life and common exercises. When tight, they pull the shoulder into bad positions.
+
+**Pectorals** (chest - major and minor):
+- **Movements:** Internal rotation, adduction, horizontal adduction
+- **Problem:** Desk work, driving, bench press all shorten pecs. Tight pecs pull shoulder forward and internally rotated.
+- **Result:** Rounded shoulder posture, restricts external rotation, forces humeral head forward
+- **Fix:** Stretch them (doorway stretch, box stretch), don't do MORE pressing
+- **Test for tightness:** Stand in doorway, arm on doorframe at 90°. Step through doorway - you should feel a stretch across chest. If no stretch or can't get arm back to doorframe = very tight pecs.
+
+**Latissimus Dorsi** (lats - broad back muscle):
+- **Movements:** Extension, adduction, internal rotation
+- **Problem:** Pull-ups, rows, and sitting all tighten lats. Tight lats restrict overhead range.
+- **Result:** Can't raise arms fully overhead without arching back, pulls shoulder down and forward
+- **Fix:** Lat stretches (box lat stretch), eccentric pull-ups for lengthening
+- **Test for tightness:** Lie on back, raise both arms overhead toward floor behind you, keep low back flat on ground. Can't touch floor with arms or back arches = tight lats restricting shoulder flexion.
+
+**Teres Major** (small muscle near lat):
+- **Movements:** Extension, internal rotation
+- **Problem:** Functions like a "mini lat" - often tight alongside lats
+- **Result:** Restricts overhead movement
+- **Test:** Same as lat test - functions as a unit with lats, difficult to isolate.
+
+**Key Principle - The Imbalance:**
+
+Modern life creates:
+- **Too much:** Internal rotation (pecs, lats, subscapularis), upper trap dominance, anterior delt work
+- **Too little:** External rotation (infraspinatus, teres minor), scapular retraction (mid/lower trap, rhomboids), scapular depression (lower trap)
+
+The fix isn't just "strengthen everything" - it's specifically addressing this imbalance.
 
 ### The Indirect Approach
 
