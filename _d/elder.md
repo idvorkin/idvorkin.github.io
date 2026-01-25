@@ -82,7 +82,137 @@ _Huh, this is true for all who moved my cheese situations_
 
 ### Start your vanaprastha
 
-- Find spirituality, helps you avoid thinking about yourself (todo add notes about this)
+The word _vanaprastha_ comes from two Sanskrit words meaning "retiring" and "into the forest." In the Hindu tradition, life is lived in four stages (_ashramas_), ideally ~25 years each:
+
+| Stage              | Age   | Focus                                                                    |
+| ------------------ | ----- | ------------------------------------------------------------------------ |
+| **Brahmacharya**   | 0-25  | Youth dedicated to learning                                              |
+| **Grihastha**      | 25-50 | Career building, wealth accumulation, family                             |
+| **Vanaprastha**    | 50-75 | Pulling back from professional duties; spirituality, wisdom, teaching    |
+| **Sannyasa**       | 75+   | Total dedication to enlightenment                                        |
+
+**The Grihastha Trap**
+
+The second stage is where strivers get stuck. You become attached to earthly rewards—money, power, sex, prestige—and try to make this stage last forever. Sound familiar? This is another description of being stuck on the fluid intelligence curve, chasing Aquinas's four idols that lead to self-objectification but never satisfy.
+
+Brooks met a guru named Acharya in India who diagnosed the "man on the plane" (the miserable former CEO from Chapter 1): _"He failed to leave grihastha. He was addicted to the rewards of the world."_
+
+**Vanaprastha = The Second Curve**
+
+Vanaprastha is the metaphysical context of the second curve. It doesn't mean literally retiring at age fifty into a forest. Rather, it means your life goals must readjust—purposively pulling back from old personal and professional duties, becoming more devoted to:
+
+- Spirituality and deep wisdom
+- Crystallized intelligence
+- Teaching and sharing with others
+- Faith (in whatever form resonates with you)
+
+**The Key Transition**
+
+Breaking attachment to worldly rewards requires developing _spiritual skills_. Acharya warned: "The change can be painful, like becoming an adult for a second time." It means letting go of things that defined you in the eyes of the world. You can't just show up and expect to be enlightened—that would be like showing up to the Olympics without ever having trained as an athlete.
+
+**Acharya's Core Advice**
+
+When Brooks asked what advice he'd give workaholics and success addicts who tremble at leaving grihastha, Acharya paused for a long time:
+
+> "Know yourself. That is all. Nothing else. Nothing else can release."
+
+"How?" Brooks asked.
+
+> "By going within. When your mind is quieter, you will find that treasure waiting for you within."
+
+**Faith Rises As We Age**
+
+Many people find that in a midlife transitional state, their interest in religion and spirituality unexpectedly increases. This seems odd because people often become _more_ skeptical of "magical" things as they age. But it's strikingly common to find religious yearnings creeping in during one's forties and fifties. For many, the metaphysical begins to feel _real_.
+
+James Fowler's research (_Stages of Faith_) confirms this pattern:
+
+- Young adults are often put off by ideas that seem arbitrary or morally retrograde (rules about sexuality, the problem of suffering)
+- As they get older, people become tolerant of religion's ambiguities and inconsistencies
+- They start to see the beauty and transcendence in faith and spirituality
+
+**The Problem for Strivers**
+
+Strivers are often the least prepared for this change. On the way up professionally, faith and spirituality might be "nice to have" but not any kind of priority. So they languish when they need it most.
+
+For those who embrace faith at this stage, however, it is a joyful epiphany. Research shows that religious and spiritual adults are generally happier, suffer less depression, have better physical health, and are less likely to abuse drugs and alcohol.
+
+**Why Spirituality Helps**
+
+The best explanation for the happiness bump isn't just healthy lifestyles or social interaction from attending services. It's this: _When you spend serious time and effort focused on transcendental things, it puts your little world into proper context and takes the focus off yourself._
+
+Most of our days, we're thinking _me, me, me_. It's like watching the same dreary television show, over and over, all day long. It's so _boring_. Faith forces you into the cosmos, to consider the source of truth, the origin of life, and the good of others. This focus brings refreshment and relief.
+
+**Philosophy Counts Too**
+
+A common question: does this higher focus have to be religious or spiritual? Can it be, say, an interest in philosophy? **Yes.** A perfect example is the growing interest today among young people in ancient Greek thinking—specifically, Epicurean and Stoic philosophy. Many have taken a keen interest in the works of Epicurus, Epictetus, Seneca, and Marcus Aurelius. And not for intellectual reasons—they find secrets to the meaning of their lives therein, and it brings them happiness.
+
+**The Bottom Line**
+
+> If you are in a transitional state in your life and find your interest in the transcendental growing—even if you have marginalized this part of life in the past—you are right on schedule. Don't resist.
+
+#### Overcoming Obstacles to Vanaprastha
+
+**1. The "None" in the Mirror**
+
+Many middle-aged people having religious stirrings for the first time find these urges confusing and even troubling—especially if they always neglected faith as unimportant, or moved away from faith earlier in life, or even redefined themselves as non-religious or anti-religious.
+
+To relax this stance makes people feel like others will find them weak, or flaky.
+
+Carl Rogers argued that we develop our self-concept as we grow. We resist any deviation from our self-concept because it provokes feelings of insecurity. Calling yourself a "none" is actually a commitment, an identity as powerful as "Jew" or "Buddhist."
+
+But even if "none" is an accurate portrayal of you at the moment, it does not have to hamstring your openness to religion and spirituality. The key is to subtly shift your self-concept from "none" to "none right now" or, perhaps, "none, but open to suggestion." This injects the element of vulnerability to your understanding of yourself. While you may not have faith right now, the door is cracked open. Something might wander in.
+
+**2. Santa in the Church**
+
+Our first impression of faith and spirituality tends to be childish—and that impression can haunt us as we mature. We often dismiss religion as a mishmash of myths and childish nonsense that well-adjusted adults should logically leave behind.
+
+Many opponents of religion attack it by appealing to these memories. (Billboard at the mouth of the Lincoln Tunnel: "You KNOW it's a Myth. This Season, Celebrate REASON!")
+
+When spiritual urges arise, the appropriate course of action for adults is not to cross-reference them to naïve ideas we had as children—we wouldn't do that in any other area of life. Rather, it is to look to greater minds than our own. Thomas Aquinas's _Summa Theologica_ anticipated almost every serious objection to faith.
+
+If you admit your view of childhood religion was naïve, you can allow yourself to search for transcendental truths not as you first learned them, but from a mature, critical perspective. Emancipate yourself from the cartoon versions in your mind—leave them behind—and expose yourself with an openness to the thinking and writing of scholars and worthy practitioners.
+
+**3. The Tyranny of Time**
+
+Faith requires time and effort; there's no getting around this. It competes with the demands of our ordinary lives. You can't really contemplate the secrets of the universe in a couple of hours; that's more like a commitment to watching a movie. If you read, pray, or meditate—and want to get something out of it—that's time every day. Advanced practitioners of faith or spirituality spend as much time on this as a fitness buff does at the gym.
+
+Many people craving faith simply never find the time or never devote enough effort to develop anything meaningful. They just kick the can of faith down the road of life and wind up saying, "My one true regret is not having gotten around to my faith."
+
+**The solution:** Stop seeing your spiritual development as a side interest but rather put it front and center. You must make the time by scheduling your meditation, prayer, reading, and practice. **Every day.**
+
+#### Walking Into Transcendence
+
+For many, what's needed is simply an excuse to get started—a punctuation to the equilibrium of life that allows them to try something new. Here's a simple suggestion: **go for a walk.**
+
+Nearly all major religions have pilgrimages—"the physical traversing of some distance from home to the holy place," motivated by sentiment or belief. For Catholics, there is the famous Camino de Santiago (Way of Saint James) across northern Spain.
+
+The Camino de Santiago has seen an explosion in pilgrims, rising from 145,877 in 2009 to 347,578 in 2019.
+
+Why do they do it? Walking is excellent exercise; it's one of the best exercises we can engage in for health and happiness. But the secret of the Camino is, on the contrary, _the utter lack of thrills_. At the beginning, interior shouting torments the pilgrim. One is tempted to stop at every roadside café offering Wi-Fi. But by about day three, this begins to subside as the walk begins to harmonize the mind with the body to a pace that is natural and unforced. The walk becomes a long piece of music—an _andante_—which neither lags nor hurries, and thus brings a sense of ease.
+
+The Camino is a form of extended walking meditation. "Each mindful breath, each mindful step, reminds us that we are alive on this beautiful planet," explains Thich Nhat Hanh.
+
+**The transcendent effects of a pilgrimage appear after a few days, in waves of perception.** The Camino is all about walking, not arriving. Fulfillment cannot come when the present moment is little more than a struggle to bear in order to attain the future. The focus must be on the walk—life with its string of present moments.
+
+Each present moment, in turn, provides small satisfactions we miss when the focus is only on bigger and better. For example, one morning Brooks and his wife spotted the oddest flower—the blue passion flower (_Passiflora caerulea_)—and stared at it, transfixed, for ten minutes. This would be impossible on the hedonic treadmill, running for prizes that pale in comparison.
+
+**Gratitude Walks**
+
+You don't need to walk the Camino. Brooks practiced "gratitude walks" during COVID lockdowns—around his neighborhood nightly after dinner. Almost the moment he began the journey, gratitude began to bubble up—for family, faith, friends, work; but also for a cool drink of water, taking off his shoes, a soft pillow at night.
+
+While the steps mark each present moment, a day is a perfect span of time to dedicate to different intentions—to focus in prayer or meditation on the good of another. One day personal (his son in the Marines), another day global (people suffering from poverty and conflict). The walking meditation creates a sense of love and compassion for the objects of each intention, and finishes with a concrete resolution to act accordingly.
+
+> "It's your road and yours alone," wrote the Sufi poet Rumi. "Others may walk it with you, but no one can walk it for you." All I can say is that you won't be the same afterward. It will supercharge your vanaprastha. You might just walk right onto your second curve.
+
+#### The Strength to Jump
+
+When we think of our identities as fixed and unchanging—_I am this kind of person; I am not that kind of person_—we're shutting ourselves off from many of life's possibilities. Being open to reevaluating our ideas about ourselves can keep us from getting stuck in patterns that aren't true to our changing selves. Many people _do_ change with age. Allowing that change to happen and developing our inner life helps us get onto the second curve.
+
+What so often holds people back, as in the case of Nicodemus, is that it feels like a kind of weakness to lean on spirituality after a lifetime of holding up oneself. If there's one thing strivers hate, it's weakness.
+
+As Brooks shows in the next chapter, however, wanting spiritual depth is not a weakness—it is a new source of strength needed to jump to the crystallized intelligence curve.
+
+**Spiritual longings are not just a special case of strengths looking like weaknesses. Our lives are full of these things, and that is the next lesson we need to learn to get on the second curve.**
 
 ### Make your weakness your strength
 
