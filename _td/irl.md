@@ -266,45 +266,65 @@ I've gotten 3 cheap pieces of aftermarket tech that transformed my car to awesom
 
 ### Keyboards
 
-{%include blob_image_float_right.html src="blog/dual_keyboard.jpg" %}
+**If you just want a good ergo keyboard:**
 
-**Current setup (dual Bluetooth):**
+Logitech Ergo K860 - If you liked the classic MS Sculpt or Surface Sculpt keyboard, this is the modern version. Bluetooth, comfortable split design, good palm rest. This is what I'd recommend for most people with wrist issues.
 
-My coffee shop solution: Two folding Bluetooth keyboards synced via [Karabiner Elements](https://github.com/idvorkin/settings/blob/d37d021f27bdec58dfd9e80fc727d9c00f5c103d/mac/multi_keyboard_sync.json?plain=1#L210). I position them 3+ feet apart to allow proper shoulder rotation.
+{%include amazon.html asin="B07ZWK2TQT" %}
 
-{%include amazon.html asin="B07ZWK2TQT;B01JA6HG88;B0FGN9GC2G" %}
+**My specialized setups (for extreme shoulder issues):**
 
-I've bought 9 of these iClever folding keyboards - they're compact, reliable, and let me position my hands exactly where my shoulders need them.
+I need keyboards 3+ feet apart due to shoulder mobility problems. Most people don't need this level of split:
 
-**Why the wide split matters:**
+**Home setup:**
 
-At 40, after 20 years of typing, my wrists started giving out. Using a laptop or straight keyboard causes pain within hours. The breakthrough came from discovering that my wrist issues stemmed from an inability to [externally rotate my shoulders](/shoulder-pain) - meaning I needed keyboards that could sit 3+ feet apart.
+{%include ipaste_image_float_right.html src="20260125_091437.webp" alt="RK ROYAL KLUDGE ergonomic mechanical keyboard at home desk setup" %}
 
-**The journey to get here:**
+[RK ROYAL KLUDGE Ergonomic Mechanical](https://www.amazon.com/RK-ROYAL-KLUDGE-Ergonomic-Mechanical/dp/B0FGN9GC2G) - Full-featured mechanical keyboard with hot-swappable switches (meaning you can replace individual keys without soldering). This is my daily driver at home.
 
-- MS Sculpt - The classic ergo keyboard. Bought 6 spares before they discontinued it.
-- Logitech Ergo K860 - Similar feel, adds Bluetooth, but the number pad wastes desk space.
-- [Kinesis Freestyle (Quiet)](https://kinesis-ergo.com/products/#keyboards) - First true wide-split keyboard
-  - Pros: Adjustable width, Cherry Red linear switches (quiet, smooth)
-  - Cons: Wired connection between halves, USB-A only
-  - Note: I tried the Kinesis Advantage but dislike ortholinear layouts
-- Dual folding Bluetooth keyboards - Current setup, most flexible solution
-
-**The mechanical keyboard rabbit hole:**
-
-I deliberately avoided mechanical keyboards for years. The Kinesis Freestyle forced my hand - it only comes in mechanical. Turns out linear keys (Cherry Red) are much better than clicky for me. Eventually I gave up trying to avoid mechanicals and embraced them.
-
-My current favorite is the [RK ROYAL KLUDGE Ergonomic Mechanical](https://www.amazon.com/RK-ROYAL-KLUDGE-Ergonomic-Mechanical/dp/B0FGN9GC2G) because you can hot-swap the switches - meaning you can replace individual keys without soldering!
+{%include amazon.html asin="B0FGN9GC2G" %}
 
 {% include alert.html content="⚠️ CRITICAL: Make sure whatever mechanical keyboard you get has hot-swappable keys! This lets you replace individual switches without soldering. Total game-changer." style="warning" %}
 
-**What fixed my wrists:**
+**Coffee shop setup:**
 
-- **2022**: Complete wrist failure after 24 hours of magic practice
+{%include blob_image_float_right.html src="blog/dual_keyboard.jpg" alt="Dual folding Bluetooth keyboards positioned wide apart for coffee shop setup" %}
+
+Two folding Bluetooth keyboards synced via [Karabiner Elements](https://github.com/idvorkin/settings/blob/d37d021f27bdec58dfd9e80fc727d9c00f5c103d/mac/multi_keyboard_sync.json?plain=1#L210). I position them 3+ feet apart to allow proper shoulder rotation. Portable and flexible.
+
+{%include amazon.html asin="B01JA6HG88" %}
+
+I've bought 9 of these iClever folding keyboards - they're compact, reliable, and let me position my hands exactly where my shoulders need them.
+
+<div style="clear: both;"></div>
+
+**Why the wide split matters:**
+
+My wrist issues aren't about wrists - they're about shoulders. I can't [externally rotate my shoulders](/shoulder-pain), which means I need keyboards that can sit 3+ feet apart. This isn't preference, it's medical necessity. Using a laptop or straight keyboard causes pain within hours.
+
+**The backstory (if you're interested):**
+
+- **1996**: High school - played countless hours of Street Fighter II. The damage was done early.
+- **2010-2021**: Decade of flare-ups. Wrists would hurt for a week or so, I'd wear a brace, and they'd be fine again. Repeat.
+- **2022**: Complete wrist failure after 24 hours of magic practice. Took months to recover. Miserable - couldn't do magic, which was extra painful since I was already in a COVID funk.
 - **Discovery**: Zero shoulder external rotation, grip strength at 15 lbs
 - **Solution**: Year of [physical therapy focused on shoulders](/shoulder-pain)
 - **Result**: Grip strength now 135 lbs, wrists functional with proper keyboard setup
 - **Key insight**: The split isn't just comfort - it's necessary for my shoulder mechanics
+
+**Other keyboards I tried:**
+
+- MS Sculpt - The classic ergo keyboard. Bought 6 spares before they discontinued it. Great keyboard, but they stopped making it.
+- [Kinesis Freestyle (Quiet)](https://kinesis-ergo.com/products/#keyboards) - First true wide-split keyboard. Adjustable width, Cherry Red linear switches (quiet, smooth). Wired connection between halves, USB-A only. Note: I tried the Kinesis Advantage but dislike ortholinear layouts.
+
+**On mechanical keyboards:**
+
+I deliberately avoided mechanical keyboards for years. The Kinesis Freestyle forced my hand - it only comes in mechanical. Turns out linear keys (Cherry Red) are much better than clicky for me. Eventually I gave up resisting and embraced them - hence the RK ROYAL KLUDGE at home.
+
+**Simple switch guide** (if you're trying to figure it out):
+- Want clickity? Get **brown** switches
+- Want quiet (linear, no click)? Get **red** switches
+- Otherwise, prepare to go down a very long rabbit hole
 
 ## Camera
 
