@@ -19,11 +19,25 @@ module Jekyll
           # Auto-detect PR number using gh CLI
           if branch != 'unknown' && branch != 'main' && branch != 'master'
             begin
-              # Use full path to gh command to ensure it's found
-              gh_cmd = '/home/linuxbrew/.linuxbrew/bin/gh'
+              # Find gh command - check PATH first, then common install locations
+              gh_cmd = `which gh 2>/dev/null`.strip
+              if gh_cmd.empty?
+                # Check common installation paths
+                [
+                  '/opt/homebrew/bin/gh',        # Mac M1/M2 Homebrew
+                  '/usr/local/bin/gh',           # Mac Intel Homebrew
+                  '/home/linuxbrew/.linuxbrew/bin/gh'  # Linux Homebrew
+                ].each do |path|
+                  if File.exist?(path)
+                    gh_cmd = path
+                    break
+                  end
+                end
+              end
+
               Jekyll.logger.info "Git data:", "Attempting to detect PR for branch '#{branch}'"
 
-              if File.exist?(gh_cmd)
+              if !gh_cmd.empty? && File.exist?(gh_cmd)
                 pr_output = `#{gh_cmd} pr list --head #{branch} --json number --jq '.[0].number' 2>&1`.strip
                 Jekyll.logger.info "Git data:", "gh output: '#{pr_output}'"
 
