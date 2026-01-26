@@ -30,6 +30,13 @@ Ever felt directionless despite achieving everything you "should" want? Burned o
   - [The Case for Two Separate Dimensions](#the-case-for-two-separate-dimensions)
   - [The Case for Developmental Stages](#the-case-for-developmental-stages)
 - [Practical Implications](#practical-implications)
+- [Getting Started: For Those Who've Never Done This](#getting-started-for-those-whove-never-done-this)
+  - [The Lifecycle Pattern: Why Faith Rises With Age](#the-lifecycle-pattern-why-faith-rises-with-age)
+  - [Why Spirituality Actually Helps](#why-spirituality-actually-helps)
+  - [Three Obstacles (And How to Overcome Them)](#three-obstacles-and-how-to-overcome-them)
+  - [How to Actually Start: Walk](#how-to-actually-start-walk)
+  - [The Core Practice: Go Within](#the-core-practice-go-within)
+  - [Start Now, Not Later](#start-now-not-later)
 - [What the heck is transcendence?](#what-the-heck-is-transcendence)
   - [Which direction](#which-direction)
   - [What Transcendence Feels Like](#what-transcendence-feels-like)
@@ -446,6 +453,126 @@ Regardless of whether these are separate dimensions or developmental stages, bot
 
 The key insight from all three frameworks: Spiritual health requires intentional practice. Whether you call it rituals (Power of Full Engagement), spiritual practices (Brooks), or purpose anchoring (Four Healths), you need consistent actions that keep you connected to both your personal values and something beyond yourself.
 
+## Getting Started: For Those Who've Never Done This
+
+**"I've never been spiritual. Why should I start now?"**
+
+This is the question many strivers face in their forties and fifties when spiritual yearnings unexpectedly arise. You spent decades focused on achievement, career, building—and it worked. Now something's shifting, but you feel ridiculous even considering "spirituality" after a lifetime of dismissing it as unimportant.
+
+Here's the reality: **You're right on schedule.**
+
+### The Lifecycle Pattern: Why Faith Rises With Age
+
+Research shows that spiritual interest increases predictably in midlife, even among lifelong skeptics. James Fowler's _Stages of Faith_ research found:
+
+- Young adults are often put off by religion's arbitrary rules and apparent contradictions
+- As people age into their 40s-50s, they become tolerant of ambiguities and inconsistencies
+- They start seeing beauty and transcendence where they once saw only superstition
+- For many, the metaphysical begins to feel _real_ for the first time
+
+**Why this happens:** The skills that got you to midlife—fluid intelligence, raw horsepower, control, achievement—begin declining. What you valued starts failing you. Your body weakens. Your mind slows. The worldly rewards that drove you start feeling hollow.
+
+This is what the Hindu tradition calls the **Grihastha trap** - getting stuck in the second life stage (career, wealth, family, achievement) and trying to make it last forever. In their framework, life has four stages (see [the full vanaprastha framework](/elder#start-your-vanaprastha)):
+
+| Stage | Age | Focus |
+|-------|-----|-------|
+| **Brahmacharya** | 0-25 | Learning |
+| **Grihastha** | 25-50 | Career, wealth, family |
+| **Vanaprastha** | 50-75 | Spirituality, wisdom, teaching |
+| **Sannyasa** | 75+ | Enlightenment |
+
+The transition from Grihastha to Vanaprastha requires developing **spiritual skills**. And here's the critical insight: _You can't just show up and expect to be enlightened—that would be like showing up to the Olympics without ever having trained as an athlete._
+
+### Why Spirituality Actually Helps
+
+The best explanation for why spiritual practice increases happiness isn't healthy lifestyles or social connection from attending services. It's this:
+
+**When you spend serious time focused on transcendental things, it takes the focus off yourself.**
+
+Most days, we're thinking _me, me, me_. It's like watching the same dreary television show over and over. Faith forces you into the cosmos—to consider truth, the origin of life, the good of others. This brings refreshment and relief from the tedious sitcom of your own concerns.
+
+Research confirms: religious and spiritual adults are generally happier, suffer less depression, have better physical health, and are less likely to abuse substances.
+
+### Three Obstacles (And How to Overcome Them)
+
+If you've never practiced spirituality and find yourself drawn to it now, you'll face three common obstacles (from [Arthur Brooks' work on vanaprastha](/elder#start-your-vanaprastha)):
+
+#### Obstacle 1: The "None" in the Mirror
+
+Many people having religious stirrings find them confusing or even troubling—especially if you've defined yourself as non-religious or anti-religious. To reverse this stance feels like weakness or flakiness.
+
+But calling yourself a "none" is actually a commitment—an identity as powerful as "Jew" or "Buddhist." And it can trap you.
+
+**The solution:** Shift your self-concept from "none" to "none right now" or "none, but open to suggestion." This injects vulnerability into your self-understanding. While you may not have faith right now, the door is cracked open. Something might wander in.
+
+#### Obstacle 2: Santa in the Church
+
+Our first impression of faith tends to be childish—and that impression haunts us. We dismiss religion as a mishmash of myths and childish nonsense that well-adjusted adults should logically leave behind.
+
+When spiritual urges arise, we cross-reference them to naïve ideas from childhood. But we wouldn't do that in any other area of life.
+
+**The solution:** Look to greater minds than your own. Thomas Aquinas's _Summa Theologica_ anticipated almost every serious objection to faith. Expose yourself to the thinking and writing of scholars and worthy practitioners—not the cartoon versions in your mind.
+
+Emancipate yourself from childhood religion. Leave it behind. Approach transcendental truths from a mature, critical perspective.
+
+#### Obstacle 3: The Tyranny of Time
+
+Faith requires time and effort—there's no getting around this. If you read, pray, or meditate and want to get something out of it, that's time every day. Advanced practitioners spend as much time on this as a fitness buff does at the gym.
+
+Many people craving faith simply never find the time. They kick the can down the road and wind up saying, "My one true regret is not having gotten around to my faith."
+
+**The solution:** Stop seeing spiritual development as a side interest. Put it front and center. Make the time by scheduling your meditation, prayer, reading, and practice. **Every day.**
+
+You wouldn't expect to get fit by thinking about the gym. You schedule workouts. Same here.
+
+### How to Actually Start: Walk
+
+For many people, what's needed is simply an excuse to get started—a punctuation to life's equilibrium that allows trying something new.
+
+Here's the simplest suggestion: **Go for a walk.**
+
+Nearly all major religions have pilgrimages—physical journeys from home to holy places. For Catholics, there's the famous Camino de Santiago across northern Spain. The Camino has exploded in popularity (145,877 pilgrims in 2009 to 347,578 in 2019).
+
+Why? The secret of the Camino is the utter _lack_ of thrills. At the beginning, interior shouting torments the pilgrim. You're tempted to stop at every café with Wi-Fi. But by day three, this subsides. The walk harmonizes mind with body at a pace that's natural and unforced. It becomes a long piece of music—an _andante_—that neither lags nor hurries.
+
+**The transcendent effects appear after a few days, in waves of perception.** The focus shifts from arriving to walking—from future achievement to present moments.
+
+You don't need to walk the Camino. Arthur Brooks practiced "gratitude walks" during COVID lockdowns—nightly walks around his neighborhood after dinner. Almost immediately, gratitude bubbled up—for family, faith, friends, work; but also for cool water, taking off shoes, a soft pillow.
+
+Each day he dedicated to different intentions—one day personal (his son in the Marines), another day global (people suffering from poverty). The walking meditation created a sense of love and compassion, finishing with concrete resolutions to act accordingly.
+
+### The Core Practice: Go Within
+
+When Arthur Brooks met a guru named Acharya in India, he asked what advice he'd give workaholics and success addicts who tremble at leaving the achievement stage of life.
+
+Acharya paused for a long time:
+
+> "Know yourself. That is all. Nothing else. Nothing else can release."
+
+"How?" Brooks asked.
+
+> "By going within. When your mind is quieter, you will find that treasure waiting for you within."
+
+This is the foundation: going within to know yourself. Not to fix yourself or improve yourself, but to _know_ yourself. That self-knowledge—that quiet mind—is where purpose, transcendence, and coherence emerge.
+
+### Start Now, Not Later
+
+The transition can be painful. It's like becoming an adult for a second time. It means letting go of things that defined you in the eyes of the world.
+
+But if you're in a transitional state and finding your interest in the transcendental growing—even if you marginalized this part of life in the past—you're right on schedule.
+
+**Don't resist.**
+
+And don't wait. Spiritual skills take time to develop. Start with one thing:
+- A daily walk with no devices
+- Five minutes of morning meditation
+- Reading one page of philosophy or scripture
+- Prayer before bed
+
+Just start. The path reveals itself through walking, not through planning the perfect route.
+
+For the full context on the lifecycle of spiritual development, see [Start Your Vanaprastha](/elder#start-your-vanaprastha).
+
 ## What the heck is transcendence?
 
 **Transcendence literally means "going beyond" or "climbing across"** (from Latin trans- "across" + scandere "to climb"). In spiritual health, it refers to the capacity to connect with something larger than your immediate self-concerns.
@@ -611,4 +738,5 @@ Stop asking life what it means. Start answering life's question about what YOU m
 
 {%include summarize-page.html src="/four-healths" %}
 {%include summarize-page.html src="/build-life-you-want" %}
+{%include summarize-page.html src="/elder" %}
 {%include summarize-page.html src="/religion" %}
