@@ -34,6 +34,9 @@ Ever felt directionless despite achieving everything you "should" want? Burned o
   - [The Lifecycle Pattern: Why Faith Rises With Age](#the-lifecycle-pattern-why-faith-rises-with-age)
   - [Why Spirituality Actually Helps](#why-spirituality-actually-helps)
   - [Three Obstacles (And How to Overcome Them)](#three-obstacles-and-how-to-overcome-them)
+    - [Obstacle 1: The "None" in the Mirror](#obstacle-1-the-none-in-the-mirror)
+    - [Obstacle 2: Santa in the Church](#obstacle-2-santa-in-the-church)
+    - [Obstacle 3: The Tyranny of Time](#obstacle-3-the-tyranny-of-time)
   - [How to Actually Start: Walk](#how-to-actually-start-walk)
   - [The Core Practice: Go Within](#the-core-practice-go-within)
   - [Start Now, Not Later](#start-now-not-later)
@@ -463,7 +466,7 @@ This is the question many strivers face in their forties and fifties when spirit
 
 Here's the reality: **You're right on schedule.**
 
-The insights below come from Arthur Brooks' _From Strength to Strength_ (see [full notes on aging and the second curve](/elder#from-strength-to-strength)):
+The insights below come from Arthur Brooks' _From Strength to Strength_ chapter 7 (see [full notes on aging and the second curve](/elder#from-strength-to-strength)):
 
 {% include amazon.html asin="059319148X" %}
 
