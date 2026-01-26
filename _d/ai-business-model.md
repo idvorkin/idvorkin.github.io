@@ -9,13 +9,17 @@ tags:
 
 Business Models drive the world, and they'll drive the world of AI too.
 
+{% include ai-slop.html percent="75" %}
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [AI as a business model stress test](#ai-as-a-business-model-stress-test)
-  - [The Tailwind Labs story](#the-tailwind-labs-story)
-  - [What AI commoditizes](#what-ai-commoditizes)
-  - [What remains valuable](#what-remains-valuable)
+- [Business models AI kills](#business-models-ai-kills)
+  - [How Tailwind Labs died (both patterns at once)](#how-tailwind-labs-died-both-patterns-at-once)
+  - [The specification test](#the-specification-test)
+  - [Discovery funnels at risk](#discovery-funnels-at-risk)
+  - [What survives: operations](#what-survives-operations)
+  - [Questions this raises for me](#questions-this-raises-for-me)
 - [Gen AI in the enterprise](#gen-ai-in-the-enterprise)
   - [Frontier Model Companies make poor business models](#frontier-model-companies-make-poor-business-models)
   - [Economics of renting GPUs](#economics-of-renting-gpus)
@@ -23,49 +27,103 @@ Business Models drive the world, and they'll drive the world of AI too.
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-## AI as a business model stress test
+## Business models AI kills
 
 _Source: [Dries Buytaert - AI is a business model stress test](https://dri.es/ai-is-a-business-model-stress-test) (January 2026)_
 
-AI doesn't destroy viable businesses. It reveals structural vulnerabilities in models built on commodifiable specifications.
+I've been watching AI destroy certain business models while leaving others untouched. This Dries Buytaert article crystallized the pattern for me.
 
-### The Tailwind Labs story
+**Two types of businesses die:**
 
-Tailwind CSS got more popular. Their business collapsed anyway.
+1. **Anything you can fully specify** - documentation, component libraries, templates, code snippets
+2. **Discovery-based funnels** - free content that drives traffic to paid products
 
-In early 2025, Tailwind Labs laid off 75% of their engineering team. Traffic to their documentation dropped 40% since early 2023, even as Tailwind CSS usage grew. CEO Adam Wathan explained: "75% of the people on our engineering team lost their jobs...because of the brutal impact AI has had on our business."
+The Tailwind story shows both dying at once.
 
-The problem: developers now ask AI for Tailwind code instead of visiting docs. That broke the discovery funnel that sold Tailwind Plus ($299 for pre-built component collections).
+### How Tailwind Labs died (both patterns at once)
 
-### What AI commoditizes
+**The old model:**
 
-Dries Buytaert's insight: **AI commoditizes anything you can fully specify.**
+Tailwind CSS was free. The business model was a discovery funnel:
+1. Developers visit docs to learn Tailwind
+2. Browse docs for examples and patterns
+3. Discover Tailwind Plus ($299 component collections)
+4. Buy components to save time
 
-That includes:
-- Documentation
-- Component libraries
-- Code snippets
-- CSS frameworks
-- Pre-built templates
+Free docs → Traffic → Discovery → $299 sale
 
-If you can describe it precisely enough for AI to generate it, you can't charge for it.
+**What AI killed:**
 
-### What remains valuable
+In early 2025, Tailwind Labs laid off 75% of their engineering team. Documentation traffic dropped 40%. But Tailwind CSS usage kept growing.
 
-AI can't replace operations:
-- Deployment infrastructure
-- Testing and CI/CD pipelines
-- Security maintenance
-- Reliability guarantees
-- Performance optimization
-- Rollback capabilities
+CEO Adam Wathan: "75% of the people on our engineering team lost their jobs...because of the brutal impact AI has had on our business."
 
-This is why sustainable Open Source business models are migrating to operational services:
+**Death pattern #1 - Specifications commodified:**
 
-- **Vercel/Next.js**: Framework is free, hosting is the product
-- **Acquia/Drupal**: Sells hosting and operational infrastructure, not the CMS itself
+Developers stopped buying component libraries. Why pay $299 when I can ask: "Claude, give me a Tailwind hero section with a gradient background"? AI generates it instantly.
 
-The pattern: give away the specifications, charge for keeping it running.
+**Death pattern #2 - Discovery funnel broken:**
+
+Developers stopped visiting docs. No traffic. No discovery moment. No premium product sale.
+
+Both the product (specifiable components) and the funnel (docs-driven discovery) died simultaneously. Usage up, business collapsed.
+
+### The specification test
+
+Can you write down exactly what something should do? Then AI commoditizes it.
+
+- **Documentation**: "Claude, explain how React hooks work"
+- **Component libraries**: "Claude, give me a pricing table component"
+- **Code snippets**: "Claude, write a function to validate emails"
+- **Templates**: "Claude, create a landing page layout"
+
+If you can specify it precisely enough for me to ask AI, I won't pay you for it.
+
+This kills businesses built on selling specifications: template marketplaces, component libraries, documentation-as-a-product, tutorial content.
+
+### Discovery funnels at risk
+
+Even if your paid product isn't specifiable, AI threatens traffic-based discovery models.
+
+The old funnel:
+1. Search Google for a problem
+2. Land on free content (docs, blog, tutorial)
+3. Browse around
+4. Discover paid product
+5. Buy
+
+AI breaks step 1. I don't search anymore. I ask Claude. No Google search. No landing on your site. No browsing. No discovery moment.
+
+This puts at risk:
+- **Freemium models** that depend on free users discovering premium features
+- **Content marketing** that drives awareness through SEO
+- **Documentation sites** that upsell to paid tiers
+- **Tutorial platforms** that convert free learners to paid courses
+
+Your paid product might be un-specifiable. But if nobody visits your site, they never find out it exists.
+
+### What survives: operations
+
+Operations. The messy reality of keeping things running in production.
+
+AI can't deploy your code. Can't monitor it. Can't roll it back when it breaks at 2am. Can't patch security vulnerabilities under real load. Can't guarantee 99.9% uptime. Can't optimize performance for your specific traffic patterns.
+
+You can specify "deploy my app" but you can't specify all the edge cases, monitoring, incident response, and ongoing maintenance.
+
+This explains why successful Open Source companies are migrating here:
+
+- **Vercel/Next.js**: Framework is free (specifiable), hosting is paid (operations)
+- **Acquia/Drupal**: CMS is free (specifiable), infrastructure is paid (operations)
+
+The new model: give away specifications, charge for keeping it running.
+
+### Questions this raises for me
+
+What am I selling that's specifiable? My blog content could be summarized by AI. My frameworks could be explained by AI. My advice could be generated by AI.
+
+What am I selling that's operational? My actual coaching time. Real-time processing with clients. The messy work of helping someone through a specific situation that can't be fully specified in advance.
+
+And my discovery funnel? You're reading this because... you searched for something? Someone linked to it? Or did Claude send you here? I honestly don't know anymore.
 
 ## Gen AI in the enterprise
 
