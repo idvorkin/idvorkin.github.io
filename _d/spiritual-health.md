@@ -289,6 +289,8 @@ The lesson: Spiritual health isn't about finding the right circumstances. It's a
 
 In [Build The Life You Want](/build-life-you-want), Brooks describes faith as "anything transcendent that helps you escape the boring sitcom that is your life." His core insight: **"You need to get small."**
 
+{%include amazon.html asin="B0C38FCTJC" %}
+
 Brooks' framework emphasizes **significance beyond self-interest** (see [definitions above](#three-dimensions-of-meaning)) - meaning emerges when you serve causes and people beyond yourself.
 
 **The mechanism:** Standing in awe of something vastly larger makes you appropriately small, which paradoxically provides perspective and peace. "What we need is a sense of the transcendent that makes us small, because we need perspective."
@@ -460,6 +462,10 @@ The key insight from all three frameworks: Spiritual health requires intentional
 This is the question many strivers face in their forties and fifties when spiritual yearnings unexpectedly arise. You spent decades focused on achievement, career, building—and it worked. Now something's shifting, but you feel ridiculous even considering "spirituality" after a lifetime of dismissing it as unimportant.
 
 Here's the reality: **You're right on schedule.**
+
+The insights below come from Arthur Brooks' _From Strength to Strength_ (see [full notes on aging and the second curve](/elder#from-strength-to-strength)):
+
+{% include amazon.html asin="059319148X" %}
 
 ### The Lifecycle Pattern: Why Faith Rises With Age
 
