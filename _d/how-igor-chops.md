@@ -33,7 +33,7 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
   - [The Future: Multi-Agent Dashboard](#the-future-multi-agent-dashboard)
   - [The 8 Stages of AI Coding](#the-8-stages-of-ai-coding)
 - [Notes from the Trenches](#notes-from-the-trenches)
-  - [What Works Well](#what-works-well)
+  - [What Works Well - REVIEW THIS WEEKLY!](#what-works-well---review-this-weekly)
   - [What I'm Still Figuring Out](#what-im-still-figuring-out)
 - [The Control Panel - For This Human](#the-control-panel---for-this-human)
   - [Voice](#voice)
