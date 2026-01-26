@@ -214,6 +214,8 @@ As Brooks shows in the next chapter, however, wanting spiritual depth is not a w
 
 **Spiritual longings are not just a special case of strengths looking like weaknesses. Our lives are full of these things, and that is the next lesson we need to learn to get on the second curve.**
 
+For practical guidance on how to actually start your spiritual practice—especially if you've never done it before—see [Getting Started: For Those Who've Never Done This](/spiritual-health#getting-started-for-those-whove-never-done-this).
+
 ### Make your weakness your strength
 
 - Share that you're in decline, being vulnerable is a strength
