@@ -63,44 +63,22 @@ Comprehensive workflow for working on blog content (new or existing) following p
    git checkout {branch-name}
    ```
 
-6. **When branch was created or switched:**
-   - Set flag to restart Jekyll server (branches may have different content)
+### Phase 3: Check/Start Jekyll Server
 
-### Phase 3: Check/Restart Jekyll Server
+**Use `running-servers` to check status (see CLAUDE-CODING.md for details):**
 
-**IMPORTANT:** When switching/creating branches, restart Jekyll to pick up any content changes.
-
-**IMPORTANT:** Use the `running-servers` pattern from CLAUDE.md if available, otherwise check manually.
-
-1. **Check if Jekyll is running on port 4000**
+1. **Check if server is running for this directory**
    ```bash
-   lsof -Pi :4000 -sTCP:LISTEN -t
+   running-servers check .
    ```
 
-2. **If branch was switched/created AND server is running:**
-   - Stop the current server: `kill {PID}`
-   - Wait 1-2 seconds for clean shutdown
-   - Start new server (see step 4)
-   - Inform Igor: "🔄 Restarted Jekyll server for new branch"
+2. **If server is running:**
+   - Display the URL from `running-servers` output
+   - No restart needed - plugin auto-detects branch/PR changes
 
-3. **If server running and branch NOT changed:**
-   - Get the PID
-   - Check if Tailscale hostname is available
-   - Display access URLs:
-     ```
-     ✅ Jekyll server running
-        Local:     http://localhost:4000
-        Tailscale: http://{hostname}:4000 (if available)
-     ```
-
-4. **If not running (or after stopping for branch change):**
-   - Inform Igor that server needs to start
-   - If restarting after branch change: "Restarting server for branch {branch-name}"
-   - If first start: "I'll start the Jekyll server. This will run in the background."
-   - Start server in background:
-     ```bash
-     rbenv exec bundle exec jekyll serve --port 4000 --livereload-port 35729 --livereload
-     ```
+3. **If not running:**
+   - Start server using `just jekyll-serve` (defaults to port 4000)
+   - Or specify custom port: `just jekyll-serve 4001 35730`
 
 ### Phase 4: Ready for Content Work
 
