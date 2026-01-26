@@ -14,22 +14,36 @@ module Jekyll
           branch = `git rev-parse --abbrev-ref HEAD 2>/dev/null`.strip
           branch = 'unknown' if branch.empty? || branch.include?('fatal')
 
-          # Read PR data from YAML file
-          pr_file = File.join(site.source, '_data', 'current_pr.yml')
-          if File.exist?(pr_file)
+          Jekyll.logger.info "Git data:", "Detected branch: '#{branch}' (type: #{branch.class})"
+
+          # Auto-detect PR number using gh CLI
+          if branch != 'unknown' && branch != 'main' && branch != 'master'
             begin
-              require 'yaml'
-              pr_data = YAML.safe_load_file(pr_file)
-              if pr_data && pr_data.is_a?(Hash) && pr_data['branch'] == branch
-                pr_number = pr_data['pr_number']
-                # Validate PR number is a positive integer within reasonable range
-                unless pr_number.is_a?(Integer) && pr_number > 0 && pr_number < 1_000_000
-                  Jekyll.logger.warn "Git data:", "Invalid PR number: #{pr_number}"
-                  pr_number = nil
+              # Use full path to gh command to ensure it's found
+              gh_cmd = '/home/linuxbrew/.linuxbrew/bin/gh'
+              Jekyll.logger.info "Git data:", "Attempting to detect PR for branch '#{branch}'"
+
+              if File.exist?(gh_cmd)
+                pr_output = `#{gh_cmd} pr list --head #{branch} --json number --jq '.[0].number' 2>&1`.strip
+                Jekyll.logger.info "Git data:", "gh output: '#{pr_output}'"
+
+                if !pr_output.empty? && pr_output != 'null' && !pr_output.include?('error') && !pr_output.include?('fatal')
+                  pr_number = pr_output.to_i
+                  Jekyll.logger.info "Git data:", "Parsed PR number: #{pr_number}"
+
+                  # Validate PR number is a positive integer within reasonable range
+                  unless pr_number > 0 && pr_number < 1_000_000
+                    Jekyll.logger.warn "Git data:", "Invalid PR number detected: #{pr_number}"
+                    pr_number = nil
+                  end
+                else
+                  Jekyll.logger.info "Git data:", "No valid PR number in output"
                 end
+              else
+                Jekyll.logger.warn "Git data:", "gh command not found at #{gh_cmd}"
               end
             rescue => e
-              Jekyll.logger.warn "Git data:", "Failed to read PR file: #{e.message}"
+              Jekyll.logger.warn "Git data:", "Failed to detect PR via gh: #{e.message}"
             end
           end
         end
