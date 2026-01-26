@@ -351,6 +351,10 @@ The name - I think it comes from a line in the book: people think doggy style is
 
 ## Related posts
 
+**Understanding the three dimensions of spiritual health**
+
+{% include summarize-page.html src="/spiritual-health" %}
+
 **Are there 40 year old programmers?**
 
 {% include summarize-page.html src="/40yo" %}
