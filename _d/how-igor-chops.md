@@ -163,7 +163,7 @@ This diagram perfectly captures the evolution I've lived through. Let me break d
 
 ## Notes from the Trenches
 
-### What Works Well
+### What Works Well - REVIEW THIS WEEKLY!
 
 **Note to self: Review this section regularly. These principles are easy to forget when you're heads-down in a session.**
 
