@@ -165,10 +165,15 @@ This diagram perfectly captures the evolution I've lived through. Let me break d
 
 ### What Works Well
 
+**Note to self: Review this section regularly. These principles are easy to forget when you're heads-down in a session.**
+
+- **Rent the most expensive brain you can**: Spend tokens liberally. Don't be cheap with AI usage - the $200/month is nothing compared to the force multiplication you get
+- **Maximize time between interventions**: Like Tesla's self-driving metrics, the goal is reducing how often you need to take over. Every friction point kills flow
+  - **Don't be the intern doing grudge work**: If AI writes code and you manually test it, you've got the roles backwards. Make AI the tester too - be the architect, not the QA intern
+  - **Tests as specification**: The clearer the tests, the less I need to intervene
+  - **Always be able to rewind**: YOLO containers and git workflows mean you can experiment fearlessly. If something breaks, spin up a fresh container in seconds
+  - **Conventions compound**: Time spent on CLAUDE.md pays off across every session
 - **Isolation is freedom**: YOLO containers let Claude run autonomously without risk to my real environment
-- **Conventions compound**: Time spent on CLAUDE.md pays off across every session
-- **Don't be the junior tester**: If AI writes code and I manually test, I've outsourced the wrong job. Make AI the tester too.
-- **Tests as specification**: The clearer the tests, the less I need to intervene
 - **"Don't glaze me" changes everything**: Claude is far more useful when it pushes back on bad ideas
 
 ### What I'm Still Figuring Out
