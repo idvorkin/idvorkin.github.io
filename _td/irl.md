@@ -258,63 +258,7 @@ I've gotten 3 cheap pieces of aftermarket tech that transformed my car to awesom
 
 ### Monitors
 
-**Understanding monitor dimensions:** Monitors vary across three dimensions:
-
-1. **Aspect ratio** (horizontal): 16:9 (standard) → 21:9 (ultrawide) → 32:9 (super-ultrawide)
-2. **Physical size/height** (vertical): Small (~13" tall) → Large (~16" tall)
-3. **Resolution**: Lower (1440p) → Higher (4K/2160p)
-
-**Critical insight about resolution vs size:** You can get a bigger monitor without increasing resolution, but it'll look pixelated and crappy because pixel density decreases. Example: My 32" 4K (3840×2160) at work vs my 43" 4K (3840×2160) at home - same number of pixels, but spread across more physical space on the 43", so slightly less sharp.
-
-You could also have a 40" or even 45" monitor that's still only 2K (2560×1440) - it'll be physically huge but have the same pixel count as a 27" 2K monitor, so things will look noticeably less sharp.
-
-**Resolution terminology confusion (2K vs 4K vs "p"):**
-
-There are two naming conventions that measure different dimensions:
-
-- **"K" notation** (horizontal pixels): 2K ≈ 2000 pixels wide, 4K ≈ 4000 pixels wide
-- **"p" notation** (vertical pixels): 1080p = 1080 pixels tall, 1440p = 1440 pixels tall, 2160p = 2160 pixels tall
-
-**The problem with "p" notation:** It only tells you height, not width! Width depends on aspect ratio:
-- **1440p at 16:9**: 2560×1440 (standard monitor)
-- **1440p at 21:9**: 3440×1440 (ultrawide monitor)
-- **2160p at 16:9**: 3840×2160 (standard 4K)
-- **2160p at 21:9**: 5120×2160 (ultrawide 4K)
-
-Common resolutions decoded:
-- **1080p / Full HD**: 1920×1080 (assuming 16:9)
-- **1440p / 2K / QHD**: 2560×1440 (assuming 16:9)
-- **2160p / 4K / UHD**: 3840×2160 (assuming 16:9)
-
-So "4K" and "2160p" refer to the same resolution class, just measuring different axes. But "2160p" alone doesn't tell you if it's standard (3840 wide) or ultrawide (5120 wide) - you need the aspect ratio too.
-
-**The stretching insight:** Diagonal size changes when you stretch wider, but height stays the same. A 27" standard monitor is ~13" tall. Stretch it to 21:9 and it becomes 34" diagonal. Stretch it to 32:9 and it becomes 49" diagonal - but all three are the same height!
-
-**Refresh rate (Hz) - the fourth dimension:**
-
-How many times per second the screen updates. Higher = smoother motion.
-
-- **30 Hz**: Too low. Gives me headaches. Avoid.
-- **60 Hz**: Fine for most work. The standard.
-- **120 Hz**: I thought I couldn't tell the difference from 60 Hz, but macOS side-swiping between desktops looks super smooth at 120 Hz. Noticeable improvement.
-- **240 Hz**: Not sure I can tell the difference from 120 Hz. Probably overkill for productivity work.
-
-**Mac tools for checking and setting resolution/refresh rate:**
-
-See my [Mac software page](/osx#screen-resolutions-and-display-settings) for:
-- **BetterDisplay** - Force custom resolutions and refresh rates
-- **Command line tools** - Check current resolution/refresh rate
-- **TestUFO** - Verify your actual refresh rate is working
-- **EDID overrides** - Force 4K@120Hz on Apple Silicon Macs
-
-| Height Class | 16:9 Standard | 21:9 Ultrawide | 32:9 Super-wide |
-|--------------|---------------|----------------|-----------------|
-| **~13" tall** | 27" (2560×1440) | 34" (3440×1440) | 49" (5120×1440) |
-| **~16" tall** | 32" (3840×2160) | 40" (5120×2160) | 57" (7680×2160) |
-
-**Think of it like this:**
-- Going **right** in the table = same height, stretched wider (aspect ratio increases)
-- Going **down** in the table = same aspect ratio, physically bigger (height increases)
+**[Interactive Monitor Explorer](https://monitor-explorer.surge.sh)** - Want to understand monitor dimensions, aspect ratios, and the confusing "p" vs "K" terminology? I built a visual tool that explains all this marketing gobbledygook. Includes Mac display management tools. ([GitHub repo](https://github.com/idvorkin/monitor-explainer))
 
 **My setup:**
 
