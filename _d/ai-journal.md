@@ -280,16 +280,14 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 #### Review Cost < Generation Cost = PRs Were Net Win
 
-- **TOP Takeaway**: External code contributions now have negative value - review cost exceeds generation cost, and code no longer signals understanding
+- **TOP Takeaway**: Code was a costly signal that showed understanding, commitment, relationship with the project, being valuable. That's why you used to invest in reviews. Now it's cheap and signals nothing.
 - **The Economic Flip**:
-  - **Before**: Review cost < generation cost → PRs were net positive
-  - **After**: Review cost > generation cost → PRs are net negative
+  - **Before**: Review cost < generation cost, and code was a costly signal → worth reviewing
+  - **After**: Review cost > generation cost, and code signals nothing → not worth reviewing
 - **The Grip Strength Analogy**:
   - We conflated "ability to write code" with "understanding the system"
   - Like grip strength: You couldn't cheat before AI, so writing code was a reliable proxy
-  - AI broke the proxy - you can now generate code without any of it
-  - **What code actually signaled**: Understanding, commitment to understanding, relationship with the project, being valuable
-  - Code was a costly signal that required investment - now it's cheap and signals nothing
+  - AI broke the proxy - you can now generate code without investment
 - **Real Examples**:
   - [tldraw](https://tldraw.dev/blog/stay-away-from-my-trash): Automatically closing external PRs
   - [LLVM](https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159): Review time > AI generation time
