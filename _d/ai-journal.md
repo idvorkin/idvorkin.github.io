@@ -286,9 +286,10 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - **After**: Review cost > generation cost → PRs are net negative
 - **The Grip Strength Analogy**:
   - We conflated "ability to write code" with "understanding the system"
-  - Like grip strength: You couldn't cheat before AI, so writing code was a reliable proxy for understanding
-  - AI broke the proxy - you can now generate code without understanding
-  - **What we actually valued**: Understanding, not code. Code was just the measurable signal.
+  - Like grip strength: You couldn't cheat before AI, so writing code was a reliable proxy
+  - AI broke the proxy - you can now generate code without any of it
+  - **What code actually signaled**: Understanding, commitment to understanding, relationship with the project, being valuable
+  - Code was a costly signal that required investment - now it's cheap and signals nothing
 - **Real Examples**:
   - [tldraw](https://tldraw.dev/blog/stay-away-from-my-trash): Automatically closing external PRs
   - [LLVM](https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159): Review time > AI generation time
