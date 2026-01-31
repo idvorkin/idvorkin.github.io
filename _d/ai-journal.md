@@ -293,7 +293,7 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - You couldn't cheat before AI - writing code required understanding
   - Now you can generate code without any understanding of constraints, design systems, implications
 - **The Second Loss - Identifying Committed Contributors**:
-  - The grip strength analogy: Code was a costly signal showing commitment
+  - The grip strength analogy (grip strength correlates with longevity not because it causes it, but because you can't cheat to build it - reliable proxy for overall health): Code was a costly signal showing commitment
   - It was worth investing in people who wanted to make changes - building relationships
   - You don't have that signal anymore
   - It's a shame - we'll have to find something else to identify people worth investing in
