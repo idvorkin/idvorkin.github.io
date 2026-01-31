@@ -280,19 +280,19 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 #### Review Cost < Generation Cost = PRs Were Net Win
 
-- **TOP Takeaway**: Code was a costly signal that showed understanding, commitment, relationship with the project, being valuable. That's why you used to invest in reviews. Now it's cheap and signals nothing.
+- **TOP Takeaway**: You're not changing code, you're changing system behavior. The value isn't in making the change - it's in understanding the constraints and implications. AI can change blue to pink instantly; what's valuable is knowing why that color exists, how it fits the design system, localization needs, monitor compatibility.
+- **What This Means for PRs**:
+  - **Trivial contribution**: "Here's code that changes blue to pink" → Your agent can do this in seconds
+  - **Valuable contribution**: "Here's why we need pink, design system implications, accessibility concerns"
+  - A PR that just changes the color provides no value - you could have your agent do it
 - **The Economic Flip**:
-  - **Before**: Review cost < generation cost, and code was a costly signal → worth reviewing
-  - **After**: Review cost > generation cost, and code signals nothing → not worth reviewing
-- **The Grip Strength Analogy**:
+  - **Before**: Making the code change was hard → PR with code change was valuable
+  - **After**: Making the code change is trivial → only system understanding is valuable
+- **The Proxy That Broke**:
   - We conflated "ability to write code" with "understanding the system"
-  - Like grip strength: You couldn't cheat before AI, so writing code was a reliable proxy
-  - AI broke the proxy - you can now generate code without investment
-- **Real Examples**:
-  - [tldraw](https://tldraw.dev/blog/stay-away-from-my-trash): Automatically closing external PRs
-  - [LLVM](https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159): Review time > AI generation time
-- **What Still Matters**: Reporting, discussion, perspective, care - things requiring understanding
-- **The Shift**: Open source optimized for "writing code is the bottleneck" → now it's "understanding what to build" and "verifying it works"
+  - You couldn't cheat before AI - writing code required understanding
+  - Now you can generate code without any understanding of constraints, design systems, implications
+- **Real Examples**: [tldraw](https://tldraw.dev/blog/stay-away-from-my-trash) closing external PRs, [LLVM](https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159) AI tool policy
 
 ### 2026-01-03
 
