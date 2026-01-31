@@ -188,6 +188,71 @@ A critical concept from behavioral economics that every product manager must und
 | **News feeds**    | "I want chronological/time-ordered feeds" | Users spend more time on relevance-ordered algorithmic feeds    |
 | **Social media**  | "I want less addictive social platforms"  | Users consistently choose the most engaging/addictive platforms |
 
+#### Desire Paths: A Methodology for Discovering Revealed Preferences
+
+The concept of "desire paths" provides a powerful framework for systematically discovering revealed preferences. In landscape architecture, desire paths are the worn trails that emerge where people actually walk—not where planners intended them to walk. The grass wears away, revealing the true paths users prefer.
+
+**Classic physical example:**
+
+Michigan State University's campus designers made a brilliant choice: they built the buildings first, then waited a year to see where students actually walked. The worn paths in the grass revealed the natural flow between buildings. Only then did they pave the sidewalks—directly over the desire paths. Result: nobody walks on the grass, because the pavement goes exactly where people want to walk.
+
+Contrast this with campuses where designers drew "logical" paths on a map, paved them, then had to install fences and signs saying "Keep off the grass" because students refused to take the inefficient routes.
+
+**Physical desire paths teach us:**
+- Ignore the intended design; watch actual behavior
+- The shortest path isn't always the preferred path (people value shade, views, avoiding mud)
+- Users vote with their feet, not their words
+- Smart designers pave the desire paths, not fight them
+
+**Classic software example: Twitter's @ and #**
+
+Twitter didn't design @mentions or #hashtags. Users invented them organically:
+- Users started typing "@username" to reference other users
+- Users started typing "#topic" to group conversations
+- Twitter watched these patterns emerge in failed searches and awkward workarounds
+- Then Twitter paved the desire paths: they made @mentions and #hashtags first-class features
+
+The brilliant part: Twitter could have fought this ("that's not how our system works!") or ignored it. Instead, they watched what users were trying to do and made it work.
+
+**Steve Yegge's "hallucination squatting" approach:**
+
+In his [Software Survival 3.0](https://steve-yegge.medium.com/software-survival-3-0-97a2a6255f7b), Yegge applied desire paths to designing tools for AI agents—he calls it "hallucination squatting":
+
+> "I implemented whatever I saw the agents trying to do with Beads, over and over, making their hallucinations real, until nearly every guess by an agent is now correct."
+
+Like domain squatting, but for features: when users/agents try to use something that doesn't exist, you "squat" on that desire by implementing it before someone else does.
+
+His methodology:
+1. Watch what users (or AI) *try* to do—even when they fail
+2. Implement what they tried
+3. Repeat until their natural attempts actually work
+4. The tool now matches their mental model, not your intended design
+
+**Why this works:**
+- Users reveal their mental model through failed attempts
+- What they hallucinate or guess shows what feels natural
+- Repeated patterns indicate universal expectations
+- Implementation creates a self-reinforcing cycle (successful attempts become learned patterns)
+
+**Applying desire paths to product development:**
+
+| Traditional Approach              | Desire Paths Approach                               |
+| --------------------------------- | --------------------------------------------------- |
+| Design the "right" interface      | Watch what users actually try                       |
+| Train users on your system        | Make their natural attempts work                    |
+| Force users to your mental model  | Adapt your system to their mental model             |
+| Fight "incorrect" usage           | Pave the paths users are already walking            |
+| Rely on documentation             | Make intuitive guesses succeed                      |
+
+**In practice:**
+- Instrument failed attempts, not just successes
+- Look for patterns in support tickets (what are users trying to do?)
+- Watch session recordings for "struggle patterns"
+- Test by asking users to complete tasks without documentation
+- When everyone makes the same "mistake," it's not a mistake—it's a desire path
+
+The desire paths principle is revealed preferences in action: rather than asking what users want (stated preferences) or even what they do (behavioral data), observe what they *try* to do—their attempts reveal their deepest expectations.
+
 ### Engagement vs Growth
 
 - Growth is getting new users - New entry points, advertising, etc - DAU/WAU/MAU
