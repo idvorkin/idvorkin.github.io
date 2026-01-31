@@ -22,7 +22,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
     - [A Step Behind the Bleeding Edge: AI Tool Philosophy](#a-step-behind-the-bleeding-edge-ai-tool-philosophy)
     - [Code as Cattle, Not Pets](#code-as-cattle-not-pets)
     - [whenwords: The Ghost Library](#whenwords-the-ghost-library)
-    - [The Real Threat to GitHub: External Code Has Negative Value](#the-real-threat-to-github-external-code-has-negative-value)
+    - [Review Cost < Generation Cost = PRs Were Net Win](#review-cost--generation-cost--prs-were-net-win)
   - [2026-01-03](#2026-01-03)
     - [Testing Codex (After Running Out of Tokens)](#testing-codex-after-running-out-of-tokens)
   - [2026-01-01](#2026-01-01)
@@ -278,7 +278,7 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - **Connection to "Code as Cattle"**: This takes it further - not just the implementation is disposable, but the library distribution model itself assumes ephemeral code generation
 - **Related Reading**: [Lobsters discussion](https://lobste.rs/s/fr9pyv/whenwords_relative_time_formatting)
 
-#### The Real Threat to GitHub: External Code Has Negative Value
+#### Review Cost < Generation Cost = PRs Were Net Win
 
 - **TOP Takeaway**: The biggest threat to GitHub isn't poor investment - it's that external code contributions now have negative value because review cost exceeds generation cost
 - **The Article**: [Stay away from my trash!](https://tldraw.dev/blog/stay-away-from-my-trash) - tldraw's decision to automatically close external PRs due to flood of low-quality AI-generated contributions
