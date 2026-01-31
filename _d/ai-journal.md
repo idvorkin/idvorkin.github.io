@@ -292,6 +292,11 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - We conflated "ability to write code" with "understanding the system"
   - You couldn't cheat before AI - writing code required understanding
   - Now you can generate code without any understanding of constraints, design systems, implications
+- **The Second Loss - Identifying Committed Contributors**:
+  - The grip strength analogy: Code was a costly signal showing commitment
+  - It was worth investing in people who wanted to make changes - building relationships
+  - You don't have that signal anymore
+  - It's a shame - we'll have to find something else to identify people worth investing in
 - **Real Examples**: [tldraw](https://tldraw.dev/blog/stay-away-from-my-trash) closing external PRs, [LLVM](https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159) AI tool policy
 
 ### 2026-01-03
