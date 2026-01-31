@@ -18,6 +18,10 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-01-31](#2026-01-31)
+    - [A Step Behind the Bleeding Edge: AI Tool Philosophy](#a-step-behind-the-bleeding-edge-ai-tool-philosophy)
+    - [Code as Cattle, Not Pets](#code-as-cattle-not-pets)
+    - [whenwords: The Ghost Library](#whenwords-the-ghost-library)
   - [2026-01-03](#2026-01-03)
     - [Testing Codex (After Running Out of Tokens)](#testing-codex-after-running-out-of-tokens)
   - [2026-01-01](#2026-01-01)
@@ -215,6 +219,63 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2026-01-31
+
+#### A Step Behind the Bleeding Edge: AI Tool Philosophy
+
+- **TOP Takeaway**: Monarch's "step behind the bleeding edge" philosophy validates the decision to standardize on proven tools rather than chasing every new release
+  - Five core principles: Own your work, do deep thinking yourself, leave room for inspiration, design validation loops, use AI liberally in safe settings
+- **The Article**: [A Step Behind the Bleeding Edge](https://somehowmanage.com/2026/01/22/a-step-behind-the-bleeding-edge-monarchs-philosophy-on-ai-in-dev/) - Monarch's philosophy on AI tool adoption
+- **Key Insight**: Deliberately working slightly behind the cutting edge balances innovation with stability, avoiding thrash from constantly switching tools
+- **Connection to My Practice**: Aligns with my decision to standardize on Claude Code rather than jumping between Gemini, Codex, and Opus every few days (see [How Igor CHOPs](/how-igor-chops#why-not-codex-gemini-etc))
+- **The Tension**: Productivity gains shouldn't eliminate the human thinking necessary for expertise, quality, and innovation
+- **Where I Apply This**:
+  - Delegate toil to AI (testing, boilerplate), keep judgment and design for myself
+  - Use AI autonomously in safe environments (YOLO containers, internal prototypes)
+  - Maintain critical review loops - AI suggests, human validates
+- **Great FAQ Questions from the Article**:
+  - **Will AI replace my job?** "If you consider your job to be 'typing code into an editor', AI will replace it." But if your role involves using software to build products and solve problems, your work will evolve rather than disappear.
+  - **Am I falling behind if I'm not using AI constantly?** Constant worry creates unnecessary anxiety. Explore collectively while maintaining adoption one step behind the bleeding edge.
+  - **Is the code AI writes actually good?** Quality assessment is the developer's responsibility. With proper context and prompting, AI can produce good code - but you review and determine if it's appropriate.
+  - **Am I losing skills by relying on AI?** Skills won't atrophy if you maintain ownership and conduct thorough reviews. Capabilities should improve through continuous access to "a somewhat knowledgeable resource" during deep work.
+
+#### Code as Cattle, Not Pets
+
+- **TOP Takeaway**: Development tools (GitHub, PRs, tickets) were built assuming code is expensive and slow - but AI agents make code cheap and fast, fundamentally changing the entire development paradigm
+- **The Speech**: [Video transcript](https://pbs.twimg.com/media/G_HQ5GRW4AArPdO?format=png&name=large) on how software development is undergoing the same transformation infrastructure went through
+- **The Old Assumption**: Code is expensive, slow to produce, written by humans, and valuable. Pull requests are "first-class features" you can heart-react to, bookmark, assign. Planning takes weeks.
+- **The New Reality**: With AI agents, code becomes cheap and fast to produce - "as fast as you can paste a screenshot in a Slack chat"
+- **The Infrastructure Parallel**:
+  - **Before**: Servers were "pets" - unique hostnames, managed config files, you cared which server ran what
+  - **After**: Servers became "cattle" - who cares which server it runs on? (Docker, Terraform, cloud abstraction)
+  - **Now**: Code contributions are making the same shift from pets to cattle
+- **The Prediction**: "Most development tools we've been using will completely flip in the next 10 years. Everything we've been using before is either dead or slowly dying, or will completely change the way it works."
+- **Quote**: "The system is dead, long live the factory"
+- **Connection to My Practice**: This is exactly why I use [YOLO containers](/chop#yolo-containers-safe-full-autonomy) - containers are cattle, not pets. Spin up, let AI work, throw away. Same principle applies to AI-generated code.
+
+#### whenwords: The Ghost Library
+
+- **TOP Takeaway**: A library distributed as specification + tests, with ZERO implementation code - you paste a prompt into an LLM and it generates the implementation in your language
+- **The Repository**: [whenwords](https://github.com/dbreunig/whenwords) - "A relative time formatting library, with no code"
+- **What It Contains**:
+  - **SPEC.md** - Detailed behavioral specification and implementation guidance
+  - **tests.yaml** - 125+ language-agnostic test cases as input/output pairs
+  - **INSTALL.md** - A copy-paste prompt for AI assistants
+- **The Five Functions**: timeago, duration, parse_duration, human_date, date_range
+- **How You "Install" It**: Copy this prompt to Claude/Cursor/whatever:
+  ```
+  Implement the whenwords library in [LANGUAGE].
+  1. Read SPEC.md for complete behavior specification
+  2. Parse tests.yaml and generate a test file
+  3. Implement all five functions
+  4. Run tests until all pass
+  5. Place implementation in [LOCATION]
+  ```
+- **The Philosophy**: "The prompt IS the code" - flies against the orthodoxy that "code is a liability"
+- **Proven Cross-Language**: Works in Ruby, Python, Rust, Elixir, Swift, PHP, Bash - true language agnosticism through specification
+- **Connection to "Code as Cattle"**: This takes it further - not just the implementation is disposable, but the library distribution model itself assumes ephemeral code generation
+- **Related Reading**: [Lobsters discussion](https://lobste.rs/s/fr9pyv/whenwords_relative_time_formatting)
 
 ### 2026-01-03
 
