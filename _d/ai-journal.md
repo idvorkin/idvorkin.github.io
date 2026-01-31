@@ -280,37 +280,20 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 #### Review Cost < Generation Cost = PRs Were Net Win
 
-- **TOP Takeaway**: The biggest threat to GitHub isn't poor investment - it's that external code contributions now have negative value because review cost exceeds generation cost
-- **The Article**: [Stay away from my trash!](https://tldraw.dev/blog/stay-away-from-my-trash) - tldraw's decision to automatically close external PRs due to flood of low-quality AI-generated contributions
-- **The Old Economics**:
-  - Code was expensive to write
-  - Good work was easy to identify
-  - Review cost < generation cost = accepting PRs was a net win
-- **The New Reality**:
-  - Code is cheap to write (AI generates it in seconds)
-  - Bad work is virtually indistinguishable from good (polished but subtly wrong)
-  - Review cost > generation cost = **external contributions are a liability**
-- **The LLVM Example**: They had to create an [AI tool policy](https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159) because reviewing AI-generated PRs takes more human time than the AI spent creating them
-- **What Still Matters** in community contribution:
-  - **Reporting** - Bug reports, edge cases, real-world usage patterns
-  - **Discussion** - Architecture debates, API design feedback, use case exploration
-  - **Perspective** - Domain expertise, user needs, accessibility considerations
-  - **Care** - Long-term maintenance, community building, documentation
-- **The Deeper Insight - The Grip Strength Analogy**:
-  - **What we conflated**: We valued "ability to write code" as proof of "understanding the system"
-  - **Why the conflation worked**: Before AI, you couldn't cheat - to write good code you HAD to understand the system
-  - **The grip strength parallel**: Grip strength correlates with longevity, not because grip strength causes longevity, but because you can't easily cheat to build grip strength - it's a proxy for overall health
-  - **What AI broke**: Now you CAN cheat - you can generate code without understanding the system
-  - **The real loss**: Code contributions were valuable as a **signal of understanding**, not for the code itself. That signal is now unreliable.
-- **The Key Insight from tldraw**: When code is easy to write and bad work is virtually indistinguishable from good, external contribution value becomes negative - better to limit community contribution to reporting, discussion, perspective, and care
-- **The Problem**: AI-generated PRs that ignore existing patterns, inline other parts of the codebase, or go in random directions - review burden exceeds value
-- **tldraw's Solution**: Automatically close external PRs until GitHub offers better controls over who can contribute, when, and where
-- **The Shift**:
-  - From implementation to specification
-  - From code to tests/evals
-  - From pets to cattle
-  - Open source was optimized for "writing code is the bottleneck" - but now **understanding what to build** and **verifying it works** are the bottlenecks
-- **GitHub's Real Challenge**: Not technical infrastructure, but rethinking what "contribution" means when code contributions have negative value
+- **TOP Takeaway**: External code contributions now have negative value - review cost exceeds generation cost, and code no longer signals understanding
+- **The Economic Flip**:
+  - **Before**: Review cost < generation cost → PRs were net positive
+  - **After**: Review cost > generation cost → PRs are net negative
+- **The Grip Strength Analogy**:
+  - We conflated "ability to write code" with "understanding the system"
+  - Like grip strength: You couldn't cheat before AI, so writing code was a reliable proxy for understanding
+  - AI broke the proxy - you can now generate code without understanding
+  - **What we actually valued**: Understanding, not code. Code was just the measurable signal.
+- **Real Examples**:
+  - [tldraw](https://tldraw.dev/blog/stay-away-from-my-trash): Automatically closing external PRs
+  - [LLVM](https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159): Review time > AI generation time
+- **What Still Matters**: Reporting, discussion, perspective, care - things requiring understanding
+- **The Shift**: Open source optimized for "writing code is the bottleneck" → now it's "understanding what to build" and "verifying it works"
 
 ### 2026-01-03
 
