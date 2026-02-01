@@ -280,19 +280,9 @@ For a comprehensive analysis of these frameworks and whether purpose and transce
 
 These two dimensions are often confused, but they address completely different problems. You need both, independently.
 
-I think of emotional health as being able to get you through short term difficulties - triggers/anger/insults, while spiritual health can get you through the long slog. Using a physical analogy emotional health is your strength - the anaerobic system, while spiritual health is endurance, the aerobic system.
+In short: **emotional health** gets you through the sprint (handling triggers, anger, insults), while **spiritual health** gets you through the marathon (the long slog when you need to remember why it matters).
 
-**Spiritual Health: Connection to Meaning**
-
-Spiritual rituals anchor you to a deeper "why" - they create and maintain your connection to purpose, values, and what matters beyond immediate circumstances. When your spiritual health is strong, you know what you're working toward and why it matters.
-
-**What breaks without it:** You feel aimless - going through the motions, checking boxes, wondering "what's the point?" even when succeeding by external measures. The work gets done, but it feels hollow. You might be emotionally stable but spiritually adrift.
-
-**Emotional Health: Processing and Resilience**
-
-Emotional rituals maintain your ability to process feelings, regulate your responses, and stay present with whatever you're experiencing. When your emotional health is strong, you can navigate setbacks, process difficult feelings, and maintain relationships even under stress.
-
-**What breaks without it:** You experience mood swings, reactivity, relationship damage, or emotional burnout. You might know exactly what matters (spiritual health intact) but can't execute consistently because your emotional state keeps derailing you. Or you maintain your routines but can't actually feel or connect with anyone, including yourself.
+For the full breakdown with two helpful analogies, see [Spiritual vs Emotional Health](/spiritual-health#spiritual-vs-emotional-health).
 
 ### Spiritual Health vs Identity
 
