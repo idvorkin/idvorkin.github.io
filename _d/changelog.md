@@ -77,25 +77,25 @@ Behind-the-scenes improvements:
 
 Updates across the ecosystem:
 
-**Settings** (dotfiles & tools)
+**[Settings](https://github.com/idvorkin/Settings)** (dotfiles & tools)
 - Added `ter` command for terminal tab switching [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/c5a71186c)
 - Added parameter completion infrastructure to y.py [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/2d7e81279)
 - Fixed Alfred integration and added universal tab completion [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/cf807d832)
 
-**nlp** (AI/NLP tools)
+**[nlp](https://github.com/idvorkin/nlp)** (AI/NLP tools)
 - Added local MLX TTS support for Apple Silicon [<i class="fa fa-github"></i>](https://github.com/idvorkin/nlp/commit/61aa07c58)
 - Upgraded to Gemini 3 Pro model [<i class="fa fa-github"></i>](https://github.com/idvorkin/nlp/commit/ab8078928)
 - Added circled L symbol for life coach journal notes [<i class="fa fa-github"></i>](https://github.com/idvorkin/nlp/commit/a03571e50)
 
-**how-long-since-ai** (time tracker)
+**[how-long-since-ai](https://idvorkin-how-long-since-ai.surge.sh)** (time tracker) [<i class="fa fa-github"></i>](https://github.com/idvorkin/how-long-since-ai)
 - Fixed GitHub build workflow [<i class="fa fa-github"></i>](https://github.com/idvorkin/how-long-since-ai/commit/e9f56a898)
 - Added deployment information to README [<i class="fa fa-github"></i>](https://github.com/idvorkin/how-long-since-ai/commit/93061f9d7)
 
-**monitor-explainer** (visualization)
+**[monitor-explainer](https://monitor-explorer.surge.sh)** (visualization) [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer)
 - Added comprehensive monitor explainer content and features [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer/commit/2ccc67daa)
 - Added Surge deployment workflows [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer/commit/9ceeaea4a)
 
-**chop-conventions** (CHOP workflow docs)
+**[chop-conventions](https://github.com/idvorkin/chop-conventions)** (CHOP workflow docs)
 - Updated up-to-date skill with leftover commit handling [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/8c0290552)
 - Added snippet for applying issues across similar projects [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/ae44cb53c)
 - Added PR commit history cleanup guide [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/929e23d82)
