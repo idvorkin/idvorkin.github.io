@@ -21,6 +21,17 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
   - [How Igor CHOPs](#how-igor-chops)
   - [Infrastructure & Tooling](#infrastructure--tooling)
   - [Other Projects](#other-projects)
+- [December 2025](#december-2025)
+  - [Fortune Cookies](#fortune-cookies)
+  - [Management Manifesto](#management-manifesto)
+  - [Vibe Coding Hardware](#vibe-coding-hardware)
+  - [Pet Projects](#pet-projects)
+- [November 2025](#november-2025)
+  - [Walking With God](#walking-with-god)
+  - [Eulogy Reflection Agents](#eulogy-reflection-agents)
+  - [Stoicism](#stoicism)
+  - [Physical Pain](#physical-pain)
+  - [Infrastructure](#infrastructure)
     <!-- vim-markdown-toc-end -->
     <!-- prettier-ignore-end -->
 
@@ -120,6 +131,84 @@ Built from scratch this week - React + TypeScript + Vite interactive tool:
 
 **[chop-conventions](https://github.com/idvorkin/chop-conventions)** (CHOP workflow docs)
 - up-to-date skill: detect commits on feature branch not in main after PR merge [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/8c0290552)
+
+---
+
+## December 2025
+
+_96 commits_
+
+### Fortune Cookies ([blog](/fortune-cookies))
+
+Life wisdom in bite-sized pieces, each with a YouTube short:
+
+- **Growing older is mandatory, growing up is not** - That's not cute. That's a warning. Growing up means trading curiosity for efficiency, labeling wonder as childish. Guard your wonder. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/007521ee3)
+- **The best time to plant a tree was 100 years ago** - Second best time is today. Guilt keeps you stuck in the past; action only lives in the present.
+- **Cannibals prefer those without spines** - When you say yes to everything, you get eaten alive. Your spine is your filter, your courage to say no.
+- **Failure is not disaster, it's data**
+
+### Management Manifesto ([blog](/manager-book#igors-management-manifesto))
+
+The beliefs that drive everything in the manager book:
+
+- **My success is your success** - I have no product except the team. On my deathbed, the product I'll be proudest of is the people I watched blossom. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/c6a7116ec)
+- **You are not a resource** - I can't be efficient with people—only effective.
+- **Coaching is midwifery** - I can't give birth to your insights—I can only help you deliver them yourself.
+- **Momentum is emotional gravity** - Forward motion creates its own fuel. Teams thrive when they feel progress.
+- **Grandmother mind** - When you mess up, I'm not thinking "what's wrong with you"—I'm thinking "what happened and how do we move forward."
+
+### Vibe Coding Hardware ([blog](/ai-journal#2025-12-21))
+
+- **obs-cli** - TUI for OBSBOT camera control. Vim-style h/j/k/l for pan/tilt, 9 preset positions, AI tracking toggle. Vibe coding makes hardware integration trivially accessible. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e533570e9)
+- **Rust tmux_helper** - Ported Python to Rust: 100ms → 14ms. Claude handled the port with minimal guidance—the translation was mechanical.
+- **Tmux overhaul** - Catppuccin theme, 2-row status bar, sessionx plugin. ~20 commits of iterative fixes—the kind of tedious config work that AI makes painless.
+
+### Pet Projects
+
+- [Breathing Shapes](https://igor-breathe.surge.sh/) - Visual breathing exercise guide [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/a3431a85d)
+
+---
+
+## November 2025
+
+_85 commits_
+
+### Walking With God ([blog](/walking-with-god))
+
+Daily devotionals translating religious concepts into secular wisdom:
+
+- **Just Like Jesus** - You can call yourself a Christian, but if you're not actually doing what Jesus taught—showing compassion, loving enemies, helping the marginalized—you're just wearing a badge. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/191bc0ebf)
+- **Asa's Folly** - The trap of half-measures and partial commitment.
+- **Idolatry as Revealed Preferences** - What you do shows what you actually worship, not what you claim to worship.
+- **A Prescription for Pain** - Finding meaning in suffering.
+- **Brotherly Devotion** - Commitment to community beyond convenience.
+
+### Eulogy Reflection Agents ([blog](/eulogy))
+
+Claude agents for examining each role from my eulogy—asking the hard questions:
+
+- **7 habits** - Are you choosing your response to circumstances, or reacting? How recently have you reviewed your eulogy? [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e3bebb863)
+- **Father to Zach/Amelia** - What do you cherish about them? How are you showing up?
+- **Husband to Tori** - How's the partnership?
+- **Professional** - Does your job align with your dream job?
+- **Technologist** - Side projects, teaching, VIM devotion.
+- **Fit fellow** - Running, kettlebells, sleep.
+- **Emotional health** - Meditation practice, gratitude journaling, grandmother mind.
+- **Car-free spirit** - Biking adventures, the tension with Tony the Tesla.
+- **Dealer of smiles and wonder** - Magic, ballooning, bringing joy to strangers.
+
+### Stoicism ([blog](/stoicism))
+
+Stoic philosophy content pulled into its own page—separated from religion for clarity. The dichotomy of control, negative visualization, memento mori. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8082662ae)
+
+### Physical Pain ([blog](/physical-pain))
+
+Shoulder pain guidance, book recommendations, better structure for managing different pain types. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d4158c113)
+
+### Infrastructure
+
+- Parcel → Vite migration [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/ff12c59cc)
+- Vapi widget for Tony the Tesla [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/dd5132c54)
 
 ---
 
