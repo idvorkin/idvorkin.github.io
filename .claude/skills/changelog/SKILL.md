@@ -40,22 +40,39 @@ git log --since="$START_DATE" --name-only --pretty=format: upstream/main \
   | sort | uniq -c | sort -rn | head -20
 ```
 
-### 3. Group Commits by Theme
+### 3. Read Actual Content Diffs (NOT commit messages!)
 
-Analyze commit messages to identify themes:
+**IMPORTANT**: Descriptions must be based on the ACTUAL CONTENT added, not commit messages. Commit messages are often vague or misleading.
+
+For blog content, read the diffs to see what was actually written:
 
 ```bash
-# AI/tech content
-git log --since="$START_DATE" --oneline upstream/main -- _d/ai-*.md
+# Get the actual content diff for a file
+git diff upstream/main~N..upstream/main -- _d/ai-journal.md | head -200
 
-# Health content
-git log --since="$START_DATE" --oneline upstream/main -- _d/*-pain.md _d/physical-*.md
+# For a specific commit
+git show COMMIT_HASH -- _d/filename.md
+```
 
-# Spiritual/life content
-git log --since="$START_DATE" --oneline upstream/main -- _d/spiritual-*.md _d/religion.md _d/elder.md
+**What to extract from diffs:**
+- New section headers (what topics were added?)
+- Key concepts, frameworks, or models introduced
+- Specific examples or case studies
+- Quotes or references to external sources
+- Tables, lists, or structured content
 
-# Infrastructure
-git log --since="$START_DATE" --oneline upstream/main -- .claude/ scripts/ _plugins/
+**Example - BAD (from commit message):**
+> "Add spiritual health content"
+
+**Example - GOOD (from actual diff):**
+> "Vanaprastha framework: 4-stage Hindu life model (Brahmacharya→Grihastha→Vanaprastha→Sannyasa). Three obstacles: 'None' identity trap, Santa in the Church, Tyranny of Time."
+
+For other repos, get diff summaries:
+
+```bash
+# Get commit with file changes and patch preview
+gh api "repos/idvorkin/REPO/commits/HASH" \
+  --jq '{message: .commit.message, files: [.files[] | {name: .filename, patch: .patch[0:500]}]}'
 ```
 
 ### 4. Generate Changelog Entry
@@ -98,6 +115,13 @@ Section anchors are slugified headers:
 
 ## Example Output
 
+**BAD - based on commit messages (vague, unhelpful):**
+```markdown
+- **Software Survival 3.0** - Added Steve Yegge's framework
+- **Code as Costly Signal** - Discussed what code signals
+```
+
+**GOOD - based on actual content diffs (specific, informative):**
 ```markdown
 ## Week of 2026-01-25
 
@@ -105,11 +129,17 @@ _41 commits this week_
 
 ### AI Journal Updates
 
-Several new entries exploring the economics and philosophy of AI-assisted development:
+Five new entries on AI-era software development ([blog](/ai-journal#2026-01-31)):
 
-- **Software Survival 3.0** - Added Steve Yegge's framework ([blog](/ai-journal#software-survival-30)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/bdedc6f02)
-- **Code as Costly Signal** - What code used to signal and how AI disrupts this [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8cdd7f688)
+- **Software Survival 3.0** - Yegge's survival ratio: `Survival ∝ (Savings × Usage × H) / (Awareness + Friction)`. Six levers: insight compression, substrate efficiency, broad utility, publicity, minimize friction, human coefficient. "Nobody is coming for grep." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/bdedc6f02)
+- **Code as Cattle, Not Pets** - Infrastructure parallel: servers went from pets (unique hostnames) to cattle (who cares which server). Code making same shift. "The system is dead, long live the factory." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/81b465c2c)
 ```
+
+Notice how the GOOD version includes:
+- Actual formulas/frameworks from the content
+- Specific quotes
+- Key concepts explained
+- Concrete examples mentioned in the post
 
 ## Common Themes to Look For
 
