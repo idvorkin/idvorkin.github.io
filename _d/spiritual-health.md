@@ -184,7 +184,7 @@ And when different books promise to help you "find meaning," they might be addre
 
 Having strong spiritual health means: **having a north star** (purpose/direction), **knowing you're NOT the center of the universe** (transcendence/perspective), and **accepting you have influence, not control** (coherence/acceptance).
 
-**Note:** Spiritual health is often confused with emotional health, but they're orthogonal dimensions - you need both independently. For the key differences, see [Spiritual vs Emotional Health in Four Healths](/four-healths#spiritual-vs-emotional-health-differences).
+**Note:** Spiritual health is often confused with emotional health, but they're orthogonal dimensions - you need both independently. See [Spiritual vs Emotional Health](#spiritual-vs-emotional-health) below.
 
 When these break, you face three core problems:
 
@@ -242,6 +242,56 @@ When these break, you face three core problems:
 - Accept that some things simply aren't yours to fix
 
 **Example failure case:** The parent who tries to control their adult child's life choices, burning out from attempting to influence decisions that aren't theirs to make - or the leader micromanaging every detail of their team's work instead of empowering them, creating chaos while trying to impose order.
+
+## Spiritual vs Emotional Health
+
+Fair warning: none of this stuff has clean definitions. "Spiritual health," "emotional health," "transcendence" - ask ten experts and you'll get twelve answers. So you'll have to use someone's definitions, and it might as well be mine. (If you want to dig into what I mean by transcendence specifically, see [What the heck is transcendence?](#what-the-heck-is-transcendence) below.)
+
+Spiritual health and emotional health are often confused, but they address completely different problems. You need both, independently.
+
+### The Endurance Analogy
+
+I think of emotional health as being able to get you through short term difficulties - triggers, anger, insults - while spiritual health can get you through the long slog. Using a physical analogy: emotional health is your strength - the anaerobic system, while spiritual health is endurance - the aerobic system.
+
+**Emotional health** lets you handle the sprint: someone cuts you off in traffic and you don't lose your composure. You get criticized at work and you process it without spiraling. Your kid has a meltdown and you stay regulated.
+
+**Spiritual health** lets you handle the marathon: you're two years into a difficult career transition and you keep going because you know why it matters. Your parent has dementia and you show up week after week because you're connected to something larger than your exhaustion.
+
+### The Game Analogy
+
+Another way to think about it: emotional health is your athletic ability - strength, coordination, reaction time - while spiritual health is the game you're playing. You need physical fitness to compete, but fitness alone doesn't tell you what sport to play or why you're on the field.
+
+And here's the interesting part: **everyone needs similar emotional skills** (regulating anger, processing grief, maintaining relationships), but **spiritual health is personal** - different people play different sports. Your purpose isn't my purpose, just like some people play basketball while others run marathons.
+
+The analogy maps to the three components of spiritual health:
+
+**Purpose (Your North Star) = The sport you play**
+
+What game are you in? Basketball, marathon running, tennis? This is your direction - what you're training for, what success looks like. Some people are playing "build a company," others are playing "raise great kids," others are playing "create art." You can't borrow someone else's sport and expect it to feel meaningful. A marathoner forcing themselves to play football will feel hollow even if they win.
+
+**Transcendence (Getting Small) = Being part of a team, league, or tradition**
+
+No athlete plays alone. You're part of a team, a league, a long tradition of people who played before you. The game is bigger than you. When you watch the Olympics, you feel connected to something vast - the history of the sport, the community of athletes, the human drive for excellence. This is what keeps you going when your personal performance suffers. You're not just playing for yourself; you're part of something that transcends your individual experience.
+
+**Coherence (Influence vs Control) = The rules of the game**
+
+You don't get to change the rules. The court is a certain size. The clock runs down. The ref makes bad calls. You can influence the game through your effort, strategy, and skill - but you can't control the outcome. Great athletes accept this: they focus on their performance, not on complaining that the game should work differently. They maximize their influence within constraints they didn't choose.
+
+**Why this matters:** You can have elite athletic ability (emotional health) but still be lost if you don't know what game you're playing (purpose), don't feel connected to anything larger (transcendence), or keep fighting the rules instead of playing within them (coherence). Conversely, you can know exactly what game you're in and feel connected to your team, but if you can't regulate your emotions when things go wrong, you'll flame out.
+
+### What Breaks Without Each
+
+**Spiritual Health: Connection to Meaning**
+
+Spiritual rituals anchor you to a deeper "why" - they create and maintain your connection to purpose, values, and what matters beyond immediate circumstances. When your spiritual health is strong, you know what you're working toward and why it matters.
+
+**What breaks without it:** You feel aimless - going through the motions, checking boxes, wondering "what's the point?" even when succeeding by external measures. The work gets done, but it feels hollow. You might be emotionally stable but spiritually adrift.
+
+**Emotional Health: Processing and Resilience**
+
+Emotional rituals maintain your ability to process feelings, regulate your responses, and stay present with whatever you're experiencing. When your emotional health is strong, you can navigate setbacks, process difficult feelings, and maintain relationships even under stress.
+
+**What breaks without it:** You experience mood swings, reactivity, relationship damage, or emotional burnout. You might know exactly what matters (spiritual health intact) but can't execute consistently because your emotional state keeps derailing you. Or you maintain your routines but can't actually feel or connect with anyone, including yourself.
 
 ## Four Frameworks on Spiritual Health
 
