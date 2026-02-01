@@ -78,27 +78,32 @@ Behind-the-scenes improvements:
 Updates across the ecosystem:
 
 **[Settings](https://github.com/idvorkin/Settings)** (dotfiles & tools)
-- Added `ter` command for terminal tab switching [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/c5a71186c)
-- Added parameter completion infrastructure to y.py [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/2d7e81279)
-- Fixed Alfred integration and added universal tab completion [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/cf807d832)
+- `ter` command: 432-line addition to y.py for terminal tab switching between named sessions [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/c5a71186c)
+- Neovim `:PRStatus` and `:PRDiff` commands to view all changes in current PR against main [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/9caa71bcd)
+- Fix tmux `C-o` binding reset: explicit bind-key so config reload preserves rotate-window [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/d41d98f38)
+- Auto-detect PR base ref (upstream vs origin, main vs master) for fork workflows [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/0df43e437)
+- gmail_reader: optional filename parameter to ping_url for clearer download logging [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/d658f0209)
+- Parameter completion infrastructure for y.py CLI [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/2d7e81279)
 
 **[nlp](https://github.com/idvorkin/nlp)** (AI/NLP tools)
-- Added local MLX TTS support for Apple Silicon [<i class="fa fa-github"></i>](https://github.com/idvorkin/nlp/commit/61aa07c58)
-- Upgraded to Gemini 3 Pro model [<i class="fa fa-github"></i>](https://github.com/idvorkin/nlp/commit/ab8078928)
-- Added circled L symbol for life coach journal notes [<i class="fa fa-github"></i>](https://github.com/idvorkin/nlp/commit/a03571e50)
+- Local MLX TTS: text-to-speech on Apple Silicon without cloud API calls [<i class="fa fa-github"></i>](https://github.com/idvorkin/nlp/commit/61aa07c58)
+
+**[monitor-explainer](https://monitor-explorer.surge.sh)** (new project!) [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer)
+
+Built from scratch this week - React + TypeScript + Vite interactive tool:
+- SVG visualization comparing monitors by aspect ratio (16:9, 21:9, 32:9) and size [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer/commit/3945f2323)
+- Pan and zoom functionality for the visualization [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer/commit/01ee334d8)
+- Individual monitor dragging with snapping + duplicate monitors [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer/commit/dd0ac4254)
+- Monitor rotation support (portrait mode) [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer/commit/de9f77fb8)
+- View mode selector with overlay and animated transitions [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer/commit/031684aab)
+- Organize monitor selection by aspect ratio categories [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer/commit/b4c7e64ff)
+- Surge deployment with PR previews [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer/commit/9ceeaea4a)
 
 **[how-long-since-ai](https://idvorkin-how-long-since-ai.surge.sh)** (time tracker) [<i class="fa fa-github"></i>](https://github.com/idvorkin/how-long-since-ai)
-- Fixed GitHub build workflow [<i class="fa fa-github"></i>](https://github.com/idvorkin/how-long-since-ai/commit/e9f56a898)
-- Added deployment information to README [<i class="fa fa-github"></i>](https://github.com/idvorkin/how-long-since-ai/commit/93061f9d7)
-
-**[monitor-explainer](https://monitor-explorer.surge.sh)** (visualization) [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer)
-- Added comprehensive monitor explainer content and features [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer/commit/2ccc67daa)
-- Added Surge deployment workflows [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer/commit/9ceeaea4a)
+- Added deployment docs: Surge.sh production + PR preview URLs [<i class="fa fa-github"></i>](https://github.com/idvorkin/how-long-since-ai/commit/93061f9d7)
 
 **[chop-conventions](https://github.com/idvorkin/chop-conventions)** (CHOP workflow docs)
-- Updated up-to-date skill with leftover commit handling [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/8c0290552)
-- Added snippet for applying issues across similar projects [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/ae44cb53c)
-- Added PR commit history cleanup guide [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/929e23d82)
+- up-to-date skill: detect commits on feature branch not in main after PR merge [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/8c0290552)
 
 ---
 
