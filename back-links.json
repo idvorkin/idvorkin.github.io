@@ -1526,7 +1526,7 @@
         },
         "/changelog": {
             "description": "A weekly summary of what changed on this blog and across my GitHub projects. Useful for returning readers who want to catch up on new content and updates.\n\n",
-            "doc_size": 25000,
+            "doc_size": 34000,
             "file_path": "_site/changelog.html",
             "incoming_links": [],
             "last_modified": "2026-02-01T18:49:48+00:00",
@@ -1535,10 +1535,16 @@
                 "/addiction",
                 "/ai-journal",
                 "/chop",
+                "/eulogy",
+                "/fortune-cookies",
+                "/manager-book",
+                "/physical-pain",
                 "/product",
                 "/recent",
                 "/shoulder-pain",
-                "/spiritual-health"
+                "/spiritual-health",
+                "/stoicism",
+                "/walking-with-god"
             ],
             "redirect_url": "",
             "title": "Changelog",
@@ -2559,6 +2565,7 @@
                 "/bike-tesla-identity",
                 "/bmy",
                 "/bucket-list",
+                "/changelog",
                 "/depression",
                 "/end-in-mind",
                 "/four-healths",
@@ -2698,6 +2705,7 @@
             "doc_size": 22000,
             "file_path": "_site/fortune-cookies.html",
             "incoming_links": [
+                "/changelog",
                 "/content-audience",
                 "/y25"
             ],
@@ -3632,6 +3640,7 @@
                 "/amazon",
                 "/being-a-great-manager",
                 "/bucket-list",
+                "/changelog",
                 "/coaching",
                 "/content-audience",
                 "/job",
@@ -4369,6 +4378,7 @@
             "file_path": "_site/physical-pain.html",
             "incoming_links": [
                 "/back-pain",
+                "/changelog",
                 "/knee-pain",
                 "/mental-pain",
                 "/shoulder-pain",
@@ -5232,6 +5242,7 @@
             "file_path": "_site/stoicism.html",
             "incoming_links": [
                 "/caring",
+                "/changelog",
                 "/religion",
                 "/y25"
             ],
@@ -6401,6 +6412,7 @@
             "doc_size": 82000,
             "file_path": "_site/walking-with-god.html",
             "incoming_links": [
+                "/changelog",
                 "/religion",
                 "/spiritual-health",
                 "/y25"
