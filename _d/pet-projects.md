@@ -106,6 +106,18 @@ GitHub orgs to check:
 | [Dotfiles](https://github.com/idvorkin/settings)                                       | VIM, TMUX, and shell configuration                      |
 | [Tech Diary](https://github.com/idvorkin/techdiary)                                    | Technical notes and learnings                           |
 
+## Explainers: The Future of Content
+
+In the past, we were constrained by format. Want to share an idea? Write an essay. Want to show something? Add a photo. Want to demonstrate? Record a video. All passive consumption - you read, you watch, you move on.
+
+But now we can build **explainers** - interactive experiences that let you *do* the thing, not just read about it. This is richer. This sticks.
+
+| Explainer | What It Does | Instead Of |
+|-----------|--------------|------------|
+| [Monitor Explainer](https://monitor-explorer.surge.sh/) | Explains monitor dimensions, aspect ratios, and the "p" vs "K" confusion | Reading spec sheets |
+| [How Long Since AI](https://idvorkin-how-long-since-ai.surge.sh/) | Track time since AI milestones - ChatGPT, GPT-4, Claude, Gemini | Searching for release dates |
+| [Religion Evolution Explorer](https://religion-evolution-explorer.surge.sh/) | Interactive timeline of how religions evolved and influenced each other | Reading history books |
+
 ## Fun & Experiments
 
 | Project                                                           | Description                                                                                  |
