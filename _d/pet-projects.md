@@ -112,11 +112,11 @@ In the past, we were constrained by format. Want to share an idea? Write an essa
 
 But now we can build **explainers** - interactive experiences that let you *do* the thing, not just read about it. This is richer. This sticks.
 
-| Explainer | What It Does | Instead Of |
-|-----------|--------------|------------|
-| [Monitor Explainer](https://monitor-explorer.surge.sh/) | Explains monitor dimensions, aspect ratios, and the "p" vs "K" confusion | Reading spec sheets |
-| [How Long Since AI](https://idvorkin-how-long-since-ai.surge.sh/) | Track time since AI milestones - ChatGPT, GPT-4, Claude, Gemini | Searching for release dates |
-| [Religion Evolution Explorer](https://religion-evolution-explorer.surge.sh/) | Interactive timeline of how religions evolved and influenced each other | Reading history books |
+| Explainer | What It Does | Instead Of | |
+|-----------|--------------|------------|---|
+| [Monitor Explainer](https://monitor-explorer.surge.sh/) | Explains monitor dimensions, aspect ratios, and the "p" vs "K" confusion | Reading spec sheets | [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer) |
+| [How Long Since AI](https://idvorkin-how-long-since-ai.surge.sh/) | Track time since AI milestones - ChatGPT, GPT-4, Claude, Gemini | Searching for release dates | [<i class="fa fa-github"></i>](https://github.com/idvorkin/how-long-since-ai) |
+| [Religion Evolution Explorer](https://religion-evolution-explorer.surge.sh/) | Interactive timeline of how religions evolved and influenced each other | Reading history books | [<i class="fa fa-github"></i>](https://github.com/idvorkin/religion-evolution-explorer) |
 
 ## Fun & Experiments
 
