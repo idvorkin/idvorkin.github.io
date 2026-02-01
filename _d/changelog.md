@@ -1,13 +1,13 @@
 ---
 layout: post
 permalink: /changelog
-title: "Blog Changelog"
+title: "Changelog"
 tags:
   - meta
   - navigation
 ---
 
-A weekly summary of what changed on this blog. Useful for returning readers who want to catch up on new content and updates.
+A weekly summary of what changed on this blog and across my GitHub projects. Useful for returning readers who want to catch up on new content and updates.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -19,6 +19,7 @@ A weekly summary of what changed on this blog. Useful for returning readers who 
   - [How Igor CHOPs](#how-igor-chops)
   - [Pet Projects](#pet-projects)
   - [Infrastructure & Tooling](#infrastructure--tooling)
+  - [Other Projects](#other-projects)
     <!-- vim-markdown-toc-end -->
     <!-- prettier-ignore-end -->
 
@@ -71,6 +72,33 @@ Behind-the-scenes improvements:
 - Improved keyboard section with better image alt text ([github](https://github.com/idvorkin/idvorkin.github.io/commit/79ee8d19a))
 - Made gh command detection portable across Mac and Linux ([github](https://github.com/idvorkin/idvorkin.github.io/commit/ee28e633a))
 - Auto-detect PR number in git_data_generator plugin ([github](https://github.com/idvorkin/idvorkin.github.io/commit/82b5d8295))
+
+### Other Projects
+
+Updates across the ecosystem:
+
+**Settings** (dotfiles & tools)
+- Added `ter` command for terminal tab switching ([github](https://github.com/idvorkin/Settings/commit/c5a71186c))
+- Added parameter completion infrastructure to y.py ([github](https://github.com/idvorkin/Settings/commit/2d7e81279))
+- Fixed Alfred integration and added universal tab completion ([github](https://github.com/idvorkin/Settings/commit/cf807d832))
+
+**nlp** (AI/NLP tools)
+- Added local MLX TTS support for Apple Silicon ([github](https://github.com/idvorkin/nlp/commit/61aa07c58))
+- Upgraded to Gemini 3 Pro model ([github](https://github.com/idvorkin/nlp/commit/ab8078928))
+- Added circled L symbol for life coach journal notes ([github](https://github.com/idvorkin/nlp/commit/a03571e50))
+
+**how-long-since-ai** (time tracker)
+- Fixed GitHub build workflow ([github](https://github.com/idvorkin/how-long-since-ai/commit/e9f56a898))
+- Added deployment information to README ([github](https://github.com/idvorkin/how-long-since-ai/commit/93061f9d7))
+
+**monitor-explainer** (visualization)
+- Added comprehensive monitor explainer content and features ([github](https://github.com/idvorkin/monitor-explainer/commit/2ccc67daa))
+- Added Surge deployment workflows ([github](https://github.com/idvorkin/monitor-explainer/commit/9ceeaea4a))
+
+**chop-conventions** (CHOP workflow docs)
+- Updated up-to-date skill with leftover commit handling ([github](https://github.com/idvorkin/chop-conventions/commit/8c0290552))
+- Added snippet for applying issues across similar projects ([github](https://github.com/idvorkin/chop-conventions/commit/ae44cb53c))
+- Added PR commit history cleanup guide ([github](https://github.com/idvorkin/chop-conventions/commit/929e23d82))
 
 ---
 
