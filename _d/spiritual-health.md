@@ -21,6 +21,10 @@ Ever felt directionless despite achieving everything you "should" want? Burned o
   - [Problem 1: "You Lack a North Star" (Purpose)](#problem-1-you-lack-a-north-star-purpose)
   - [Problem 2: "You Are the Center of the Universe" (Transcendence)](#problem-2-you-are-the-center-of-the-universe-transcendence)
   - [Problem 3: "You Want to Control, But All You Have Is Influence" (Coherence)](#problem-3-you-want-to-control-but-all-you-have-is-influence-coherence)
+- [Spiritual vs Emotional Health](#spiritual-vs-emotional-health)
+  - [The Endurance Analogy](#the-endurance-analogy)
+  - [The Game Analogy](#the-game-analogy)
+  - [What Breaks Without Each](#what-breaks-without-each)
 - [Four Frameworks on Spiritual Health](#four-frameworks-on-spiritual-health)
   - [Viktor Frankl: Meaning Through Self-Transcendence](#viktor-frankl-meaning-through-self-transcendence)
   - [Arthur Brooks: Transcendence Through Getting Small](#arthur-brooks-transcendence-through-getting-small)
@@ -533,12 +537,12 @@ Research shows that spiritual interest increases predictably in midlife, even am
 
 This is what the Hindu tradition calls the **Grihastha trap** - getting stuck in the second life stage (career, wealth, family, achievement) and trying to make it last forever. In their framework, life has four stages (see [the full vanaprastha framework](/elder#start-your-vanaprastha)):
 
-| Stage | Age | Focus |
-|-------|-----|-------|
-| **Brahmacharya** | 0-25 | Learning |
-| **Grihastha** | 25-50 | Career, wealth, family |
-| **Vanaprastha** | 50-75 | Spirituality, wisdom, teaching |
-| **Sannyasa** | 75+ | Enlightenment |
+| Stage            | Age   | Focus                          |
+| ---------------- | ----- | ------------------------------ |
+| **Brahmacharya** | 0-25  | Learning                       |
+| **Grihastha**    | 25-50 | Career, wealth, family         |
+| **Vanaprastha**  | 50-75 | Spirituality, wisdom, teaching |
+| **Sannyasa**     | 75+   | Enlightenment                  |
 
 The transition from Grihastha to Vanaprastha requires developing **spiritual skills**. And here's the critical insight: _You can't just show up and expect to be enlightened—that would be like showing up to the Olympics without ever having trained as an athlete._
 
@@ -623,6 +627,7 @@ But if you're in a transitional state and finding your interest in the transcend
 **Don't resist.**
 
 And don't wait. Spiritual skills take time to develop. Start with one thing:
+
 - A daily walk with no devices
 - Five minutes of morning meditation
 - Reading one page of philosophy or scripture
