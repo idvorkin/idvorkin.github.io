@@ -19,11 +19,11 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [Upcoming](#upcoming)
 - [Diary](#diary)
   - [2026-01-31](#2026-01-31)
+    - [Software Survival 3.0 - Steve Yegge's Framework for AI-Era Software](#software-survival-30---steve-yegges-framework-for-ai-era-software)
     - [A Step Behind the Bleeding Edge: AI Tool Philosophy](#a-step-behind-the-bleeding-edge-ai-tool-philosophy)
     - [Code as Cattle, Not Pets](#code-as-cattle-not-pets)
     - [whenwords: The Ghost Library](#whenwords-the-ghost-library)
     - [Review Cost < Generation Cost = PRs Were Net Win](#review-cost--generation-cost--prs-were-net-win)
-  - [2026-01-03](#2026-01-03)
     - [Testing Codex (After Running Out of Tokens)](#testing-codex-after-running-out-of-tokens)
   - [2026-01-01](#2026-01-01)
     - [CHOW for Blog Posts: "How Igor CHOPs" Written with AI](#chow-for-blog-posts-how-igor-chops-written-with-ai)
@@ -222,6 +222,48 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 ## Diary
 
 ### 2026-01-31
+
+#### Software Survival 3.0 - Steve Yegge's Framework for AI-Era Software
+
+- **TOP Takeaway**: Software survives in the AI era by saving cognition (tokens/energy) - think Git, grep, calculators - not by being hard to build
+  - The "Survival Ratio": `Survival(T) ∝ (Savings × Usage × H) / (Awareness_cost + Friction_cost)`
+  - Tools below ratio of 1.0 get selected against; LLMs will synthesize alternatives
+- **Understanding the Ratio** (bigger = better, threshold > 1.0):
+  - **NUMERATOR** (want bigger):
+    - **Savings**: How many tokens saved vs building from scratch? (Git = huge, wrapper script = tiny)
+    - **Usage**: How often/broadly applicable? (Postgres = everywhere, niche tool = narrow)
+    - **H (Human Coefficient)**: Do humans specifically want THIS? (teachers, curated playlists)
+  - **DENOMINATOR** (want smaller):
+    - **Awareness_cost**: Energy to know it exists (Git = low, your new tool = high)
+    - **Friction_cost**: Errors, retries, confusion (grep = low, complex API = high)
+- **This Framework Applies to People Too**: `Survival(Person) ∝ (Value Saved × Breadth × Humanity) / (Onboarding + Drama)`
+  - Same selection pressure for employees/contractors in resource-constrained orgs
+  - Ratio > 1 means you're worth keeping; < 1 means org routes around you
+- **The Evolution**: Completions (2023) → Chat (2024) → Agents (2025) → **Orchestration (2026)**
+- **Six Levers for Software Survival**:
+  1. **Insight Compression** - Crystallized hard-won knowledge
+     - **Survives**: Git (DAG model, decades of distributed systems wisdom)
+     - **Dies**: Simple CRUD framework wrapper (no real insights compressed)
+  2. **Substrate Efficiency** - Cheaper compute substrates
+     - **Survives**: grep (CPU pattern matching beats GPU inference)
+     - **Dies**: LLM-based text search for simple queries (expensive substrate)
+  3. **Broad Utility** - Amortize awareness costs
+     - **Survives**: Postgres (handles most data storage needs), Temporal (most workflows)
+     - **Dies**: Hyper-niche tool for one edge case (can't justify awareness cost)
+  4. **Publicity/Awareness** - Get into training data or pay for it
+     - **Survives**: Tools in training data, OpenAI training partnerships
+     - **Dies**: Unknown tool with no docs, no marketing, agents never heard of it
+  5. **Minimize Friction** - Agent UX via "desire paths"
+     - **Survives**: Beads (100+ subcommands agents hallucinated, made them all real)
+     - **Dies**: Tool with complex auth, weird API quirks, frequent errors/retries
+  6. **Human Coefficient** - Value from human curation/creativity
+     - **Survives**: Human teachers, curated playlists, social networks with real people
+     - **Dies**: Generic AI-generated content with no human touch
+- **The Key Insight**: "Nobody is coming for grep" - it would be economically/ecologically irrational to reinvent via inference
+- **Agent UX Matters**: "Hallucination squatting" - reverse engineer what LLMs hallucinate and make it real
+- **The Optimistic Take**: Demand for software is infinite, we'll always outstrip available cognition, token costs fall but ambitions rise
+
+**Article**: [Software Survival 3.0](https://steve-yegge.medium.com/software-survival-3-0-97a2a6255f7b) by Steve Yegge (Jan 2026)
 
 #### A Step Behind the Bleeding Edge: AI Tool Philosophy
 
