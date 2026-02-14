@@ -53,9 +53,9 @@ A cockpit solves this. Not with one tool, but with a stack of tools that each ha
 
 ### Voice Input - The Primary Interface
 
-I talk to my agents. It sounds ridiculous until you try it - then you can't go back. Talking to Claude is just like talking to another engineer. You say things with voice you'd never bother typing. More natural, more conversational, less formal.
+I talk to my agents. It sounds ridiculous until you try it - then you can't go back. Talking to Claude is just like talking to another engineer - and that's the real insight. It's not about voice-as-input-method. It's that **talking** changes how you think. You do more stream of consciousness back and forth. You say things you'd never bother typing. Half-formed thoughts, rough directions, "actually wait, no, try this instead" - the kind of thing you'd say to a colleague at a whiteboard.
 
-**Why voice for the cockpit specifically?** Because my hands are free. I can look at the dashboard, glance at a Stream Deck button, switch tmux panes - all while giving instructions. Voice is the interface that doesn't compete with the other interfaces.
+**Why voice for the cockpit specifically?** Two reasons. First, hands-free: I can look at the dashboard, glance at a Stream Deck button, switch tmux panes - all while giving instructions. Voice doesn't compete with the other interfaces. Second, mobility: voice works from a phone, from the couch, from a treadmill. When agents are slow and you're waiting anyway, you don't need to be at a keyboard.
 
 At home I use [Wispr Flow](https://wisprflow.ai/) for its speed and filler-word cleanup. At work, [SuperWhisper](https://superwhisper.com/) runs local models on M4 Max chips - no cloud, no privacy concerns.
 
