@@ -9,8 +9,10 @@ tags:
 redirect_from:
   - /ai-em
   - /ai-native-em
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-ai-native-em.webp
+imagefeature: https://raw.githubusercontent.com/idvorkin/ipaste/main/20260214_103412.webp
 ---
+
+{% include ipaste_image_float_right.html src="20260214_103412.webp" alt="AI Native EM raccoon coaching robots through the AI adoption curve" %}
 
 What does it mean to be an engineering manager when AI is rewriting every assumption you have about software, teams, and your own role? I don't know yet. Nobody does. But I'm figuring it out in real time, and these are my notes from the chaos.
 
