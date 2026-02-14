@@ -9,16 +9,10 @@ tags:
 redirect_from:
   - /ai-em
   - /ai-native-em
-alias:
-  - /ai-em
-  - /ai-native-em
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon_ai.webp
 ---
 
 What does it mean to be an engineering manager when AI is rewriting every assumption you have about software, teams, and your own role? I don't know yet. Nobody does. But I'm figuring it out in real time, and these are my notes from the chaos.
-
-{% include ai-slop.html percent="50" %}
-
-{% include alert.html content="These are my personal opinions, not those of any employer, past or present. No one knows the future, especially me." style="warning" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -35,6 +29,7 @@ What does it mean to be an engineering manager when AI is rewriting every assump
 - [Making AI a Team Sport](#making-ai-a-team-sport)
   - [Divide and Conquer](#divide-and-conquer)
   - [Share the Learnings](#share-the-learnings)
+  - [AI Free Zones](#ai-free-zones)
 - [Should EMs Code?](#should-ems-code)
 - [Open Questions](#open-questions)
 - [Appendix: New Words for a New World](#appendix-new-words-for-a-new-world)
@@ -43,6 +38,10 @@ What does it mean to be an engineering manager when AI is rewriting every assump
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+{% include ai-slop.html percent="50" %}
+
+{% include alert.html content="These are my personal opinions, not those of any employer, past or present. No one knows the future, especially me." style="warning" %}
 
 ## What is AI Native?
 
@@ -114,6 +113,8 @@ The lone wolf vibe coder gets all the Twitter glory, but that's not how teams wo
 
 ### Divide and Conquer
 
+Ramping up into AI is like ramping up into any new technical space. You don't have everyone learn everything — you divide the stuff to learn, have folks figure out their piece, and report back to the team. That's how you turn an overwhelming firehose into manageable streams.
+
 Not everyone needs to be good at the same things. AI opens up new roles within the team that didn't exist before:
 
 - **The Trailblazer** — Someone who's always trying the latest tools, workflows, models. They break things, they find what works, they report back. You need one of these, not five. Let them run ahead and scout.
@@ -131,6 +132,14 @@ AI fluency compounds faster in teams than in individuals — but only if you cre
 - **Shared prompt libraries and configs** — One person's breakthrough becomes everyone's baseline. This is the [integral](/ai-journal#ai-value-capture---its-the-integral-not-the-point) in action.
 - **Pair programming with AI** — Two people, one AI session. The person driving learns the tools; the person watching catches mistakes and learns the workflow. Rotate.
 - **Failure sharing** — "Here's where AI completely botched it and what I learned" is more valuable than success stories. Normalize talking about AI failures so people don't waste time on the same dead ends.
+
+### AI Free Zones
+
+While some folks are excited about AI, sometimes we need a break. The AI Vampire is real, and part of making AI a team sport is knowing when to put the ball down.
+
+Consider creating AI sabbath zones — designated times or spaces where AI is off the table. Maybe lunch on Wednesdays and Fridays is just humans talking to humans. Maybe the weekly design review is a no-AI zone where people have to think through problems the old-fashioned way. I'm not sure what the right cadence is yet.
+
+The point isn't that AI is bad. The point is that the muscles you build without AI (deep thinking, system design intuition, interpersonal skills) are the same muscles that make you effective with AI. If you never exercise them independently, they atrophy. And a team that only knows how to work with AI is fragile — they need the underlying skills to stay sharp.
 
 ## Should EMs Code?
 
