@@ -69,11 +69,13 @@
         "/classact": "/class-act",
         "/coach": "/coaching",
         "/cocaine": "/mania",
+        "/cockpit": "/ai-cockpit",
         "/cold": "/warm",
         "/commandments": "/mitzvahs",
         "/compassion": "/curious",
         "/compensation": "/comp",
         "/concentration-risk": "/stock-concentration",
+        "/control-panel": "/ai-cockpit",
         "/corona": "/covid",
         "/correct-of-errors": "/coe",
         "/couple-double-trouble": "/partner-trouble",
@@ -789,6 +791,22 @@
             "title": "AI Business Models",
             "url": "/ai-bm"
         },
+        "/ai-cockpit": {
+            "description": "Agents are slow. Not slow like “wait a second,” slow like “go make coffee and come back.” So you run several in parallel. But now you’ve got a different problem: you’re an air traffic controller with no radar. You need a cockpit - a physical and software control surface that gives you visibility into what your agents are doing and lets you switch between them instantly.\n\n",
+            "doc_size": 25000,
+            "file_path": "_site/ai-cockpit.html",
+            "incoming_links": [],
+            "last_modified": "2026-02-14T18:18:35.520384+00:00",
+            "markdown_path": "_d/ai-cockpit.md",
+            "outgoing_links": [
+                "/ai-journal",
+                "/chop",
+                "/how-igor-chops"
+            ],
+            "redirect_url": "",
+            "title": "The AI Cockpit: My Control Surface for Multi-Agent Development",
+            "url": "/ai-cockpit"
+        },
         "/ai-developer": {
             "description": "ML Engineer is a hot new job. It’s the boys and girls who train and deploy models. I heard the word AI developer the other day, and I’ll refer to it as AI application engineers. People who use AI to solve use cases. NOTE: This is not what most developers do today. What most developers do today is ask how can AI do the things I would have done (e.g. write the function).\n\n",
             "doc_size": 40000,
@@ -871,17 +889,18 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get super lost\n\n",
-            "doc_size": 103000,
+            "doc_size": 107000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai",
+                "/ai-cockpit",
                 "/changelog",
                 "/chop",
                 "/how-igor-chops",
                 "/walking-with-god",
                 "/y25"
             ],
-            "last_modified": "2026-02-01T06:23:52-08:00",
+            "last_modified": "2026-02-14T09:13:53-08:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
@@ -1596,6 +1615,7 @@
             "incoming_links": [
                 "/40yo",
                 "/ai",
+                "/ai-cockpit",
                 "/ai-developer",
                 "/ai-hiring",
                 "/ai-journal",
@@ -3139,6 +3159,7 @@
             "file_path": "_site/how-igor-chops.html",
             "incoming_links": [
                 "/ai",
+                "/ai-cockpit",
                 "/ai-journal",
                 "/chop",
                 "/pet-projects",
