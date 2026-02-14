@@ -37,10 +37,10 @@ Encouraged: Deleting unused code, removing commented-out code, cleaning unused i
 When running as `idvorkin-ai-tools` (check with `gh auth status`), you don't have push access to `idvorkin/*` repos directly. Push to the fork instead:
 
 ```bash
-# Add fork remote if needed
-git remote add fork https://github.com/idvorkin-ai-tools/idvorkin.github.io.git
-# Push to fork, then create PR targeting idvorkin/idvorkin.github.io
-git push -u fork <branch-name>
+# Check which remote points to the fork (idvorkin-ai-tools)
+git remote -v
+# It's usually `origin` — push there, then create PR targeting upstream
+git push -u origin <branch-name>
 gh pr create --repo idvorkin/idvorkin.github.io
 ```
 
