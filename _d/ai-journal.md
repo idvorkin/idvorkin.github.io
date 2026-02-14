@@ -18,6 +18,9 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-02-14](#2026-02-14)
+    - [Steve Yegge's AI Vampire - Who Captures the 10x?](#steve-yegges-ai-vampire---who-captures-the-10x)
+    - [AI Value Capture - It's the Integral, Not the Point](#ai-value-capture---its-the-integral-not-the-point)
   - [2026-01-31](#2026-01-31)
     - [Software Survival 3.0 - Steve Yegge's Framework for AI-Era Software](#software-survival-30---steve-yegges-framework-for-ai-era-software)
     - [A Step Behind the Bleeding Edge: AI Tool Philosophy](#a-step-behind-the-bleeding-edge-ai-tool-philosophy)
@@ -220,6 +223,38 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2026-02-14
+
+#### Steve Yegge's AI Vampire - Who Captures the 10x?
+
+- **TOP Takeaway**: AI makes you 10x productive, but that creates a vampire dynamic — companies extract all the value while workers burn out. The fix is shorter workdays and pushing back.
+- **Article**: [The AI Vampire](https://steve-yegge.medium.com/the-ai-vampire-eda6e4f07163) by Steve Yegge (Feb 2026)
+- **10x is real**: Specifically Opus 4.5/4.6 + Claude Code. Even Microsoft engineers are switching from Copilot to Claude Code when given open season.
+- **The Value Capture Dilemma**:
+  - **Scenario A** (company captures all): You work 8 hours at 10x, employer gets 9 engineers of free value, you get burnout and everyone hates you
+  - **Scenario B** (employee captures all): You work 1 hour, match pre-AI peers, company dies competitively. Pyrrhic victory.
+  - The answer must be somewhere in the middle.
+- **The Vampire**: AI is an energy vampire (Colin Robinson from What We Do In The Shadows). Addictive — dopamine and adrenaline like a slot machine. Then massive fatigue, "nap attacks," falling asleep at random hours.
+- **Unrealistic beauty standards**: Early adopters like Yegge (40 years experience, unlimited time/tokens) set impossible benchmarks. CEOs see that and get dollar-sign eyes — reframing it as "a recruiting problem," finding people ripest for extraction.
+- **Startups poisoning the well**: Thousands throwing talent at the same six tired pitches ("AI personas!", "Agent memory!", "Better RAG!"), burning people out chasing ideas that won't sell a dollar of ARR
+- **The $/hr formula** from his Amazon days (2001): You can't control the numerator (salary), but you control the denominator (hours). Collectively, employees have all the power.
+- **His prescription**: 3-4 hour workdays. AI turns us all into Jeff Bezos — only hard decisions left. You can only sustain that pace in short bursts. "Go touch grass every day. Close the computer. Go be a human."
+
+#### AI Value Capture - It's the Integral, Not the Point
+
+- **TOP Takeaway**: Yegge frames value capture as a present-tense question — who gets the 10x now? But the real prize is future value: the integral of your AI learning curve over time.
+  - Present value (today's 10x output) is a point on the curve. Future value (compounding AI fluency) is the area under the curve. You want the integral.
+- **Present value is a negotiation over today's surplus.** Interesting but not the main event.
+- **Future value is about learning rate.** Every hour you spend struggling with AI, prompting badly, fixing hallucinations, developing intuition — that's building the skill that compounds.
+- The person who invested early in AI fluency has a massive integral advantage over someone who starts later, even if the daily productivity multiplier is the same.
+- Think of it like compound interest: the question isn't "what's my return today?" but "what's my cumulative return over the next 5 years?"
+- **How do you capture the integral better? Your team.**
+  - Individual AI fluency compounds. Team AI fluency compounds faster.
+  - When one person figures out a better prompting pattern, debugging approach, or workflow — the whole team levels up
+  - The team is a learning multiplier on the integral: shared context, shared mistakes, shared breakthroughs
+  - A team that learns AI together captures more future value than any individual genius
+  - This is why the "work 3 hours alone" framing misses the point — the collaboration IS the value capture mechanism
 
 ### 2026-01-31
 
