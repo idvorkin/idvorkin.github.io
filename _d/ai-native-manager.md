@@ -137,9 +137,13 @@ AI fluency compounds faster in teams than in individuals — but only if you cre
 
 While some folks are excited about AI, sometimes we need a break. The AI Vampire is real, and part of making AI a team sport is knowing when to put the ball down.
 
-Consider creating AI sabbath zones — designated times or spaces where AI is off the table. Maybe lunch on Wednesdays and Fridays is just humans talking to humans. Maybe the weekly design review is a no-AI zone where people have to think through problems the old-fashioned way. I'm not sure what the right cadence is yet.
+There are two reasons to create AI-free zones, and both matter:
 
-The point isn't that AI is bad. The point is that the muscles you build without AI (deep thinking, system design intuition, interpersonal skills) are the same muscles that make you effective with AI. If you never exercise them independently, they atrophy. And a team that only knows how to work with AI is fragile — they need the underlying skills to stay sharp.
+**Don't stop thinking.** If you reach for AI every time something is hard, you stop exercising the muscles that make you good at your job. Deep thinking, system design intuition, debugging by reasoning about code — these skills atrophy when you outsource them. The paradox is that the people who are best with AI are the ones who can think clearly without it. AI-free time is training time for the skills that make your AI-augmented time more effective.
+
+**Sometimes you just need a break.** Not everything has to be about AI. Social interactions — lunch, coffee, hallway conversations — shouldn't become another AI discussion forum. People need spaces where they can be humans talking to humans about human things. When every lunch turns into "have you tried this new model?" it gets exhausting, even for the enthusiasts. Consider designating some social time as AI-free: maybe lunch on certain days, maybe Friday afternoon hangouts, maybe the first 10 minutes of every meeting. The right cadence depends on your team, but the principle is: protect some space where people can just be people.
+
+The broader point: a team that only knows how to work with AI is fragile. They need the underlying skills to stay sharp, and they need the social fabric that comes from connecting as humans, not just as AI practitioners.
 
 ## Should EMs Code?
 
