@@ -9,7 +9,7 @@ tags:
 redirect_from:
   - /ai-em
   - /ai-native-em
-imagefeature: https://raw.githubusercontent.com/idvorkin/ipaste/main/20260214_103412.webp
+imagefeature: /images/raccoon-ai-native-em.webp
 ---
 
 What does it mean to be an engineering manager when AI is rewriting every assumption you have about software, teams, and your own role? I don't know yet. Nobody does. But I'm figuring it out in real time, and these are my notes from the chaos.
@@ -43,7 +43,7 @@ What does it mean to be an engineering manager when AI is rewriting every assump
 
 {% include alert.html content="These are my personal opinions, not those of any employer, past or present. No one knows the future, especially me." style="warning" %}
 
-{% include ipaste_image_float_right.html src="20260214_103412.webp" alt="AI Native EM raccoon coaching robots through the AI adoption curve" %}
+{% include local_image_float_right.html src="raccoon-ai-native-em.webp" %}
 
 ## What is AI Native?
 
