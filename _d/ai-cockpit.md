@@ -17,6 +17,8 @@ alias:
 
 Agents are slow. Not slow like "wait a second," slow like "go make coffee and come back." So you run several in parallel. But now you've got a different problem: you're an air traffic controller with no radar. You need a cockpit - a physical and software control surface that gives you visibility into what your agents are doing and lets you switch between them instantly.
 
+{% include ai-slop.html percent="85" %}
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
