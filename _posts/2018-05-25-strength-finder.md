@@ -123,6 +123,20 @@ See more about [PANAS Personality Types](/emotions#panas-personality-types) and 
 
 **Type 5 - The Investigator** - Perceptive, innovative, and independent. Fives love the life of the mind, preferring to understand things deeply rather than skim the surface. They have an extraordinary ability to focus their attention on problems until solved. At their best, they are visionary, pioneering, and playful.
 
-_These types are congruent — 7 and 8 are adjacent on the Enneagram circle (8 is a common wing for 7), so high scores in both reflect an energetic, action-oriented person who is both enthusiastic and assertive. The 2 and 5 tie is an interesting tension: the warmth and people-focus of the Helper balanced by the independence and cerebral depth of the Investigator. Under stress, 7 moves toward 1 (becoming self-critical and perfectionistic), and in security, 7 integrates toward 5 (becoming more focused and deeply engaged)._
-
 See [full Enneagram](/static/igor-enneagram.pdf)
+
+### How these assessments tell the same story
+
+These three frameworks — StrengthsFinder, PANAS, and Enneagram — independently converge on the same person:
+
+**Energy into action** — Activator (SF) maps directly to Enthusiast (7) and Challenger (8). All three describe someone who can't sit still once a decision is made, who turns thoughts into motion and thrives on getting things going.
+
+**Idea machine** — Ideation (SF) and Investigator (5) both describe a mind that's always looking for connections, fascinated by concepts, and delighted by elegant explanations. The Enthusiast (7) adds the variety-seeking — not just one idea, but all the ideas.
+
+**People and storytelling** — Communication (SF) and Helper (2) both point to someone who is drawn to people, who wants to bring ideas to life for others, and who genuinely cares about the humans in the room.
+
+**Rolling with it** — Adaptability (SF) and Enthusiast (7) both describe someone who doesn't resent sudden detours but actually looks forward to them. Plans are suggestions; the present moment is where the action is.
+
+**Fix what's broken** — Restorative (SF) and Challenger (8) both describe someone energized by problems, who steps up when things are broken and finds satisfaction in making them work again.
+
+**Emotional intensity** — The Mad Scientist (PANAS) ties it all together. High positive and negative affect means all of the above happens at full volume. The enthusiasm is REALLY enthusiastic, the problem-solving is REALLY intense, the caring is REALLY caring. It's the engine that drives everything else — and the thing that most needs managing.
