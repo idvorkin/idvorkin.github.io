@@ -60,9 +60,13 @@ No single tool does all four well. That's the landscape.
 | Screenshots | No | No | No | Yes | Yes |
 | CSS/Layout | No | No | No | Yes | Yes |
 | Interactivity | No | No | No | Yes | Yes |
+| Latency | ~5ms | ~200ms | ~500ms | ~1s warm, ~6s cold | ~2s |
 | Token Cost | 0 | Low | 0 | ~27K/task | ~114K/task |
+| Cloudflare | Blocked | Sometimes | Blocked | Sometimes | Sometimes |
 | Setup | Built-in | Built-in | Binary | npm global | npm + config |
 | Best For | Scripts/pipes | Static pages | JS content | Automation | Browser sessions |
+
+_Latency measured against a local Jekyll server. External sites add network RTT. Playwright CLI "warm" means browser already running; "cold" includes Chromium launch._
 
 ## Lightpanda: The Browser That Can't See
 
