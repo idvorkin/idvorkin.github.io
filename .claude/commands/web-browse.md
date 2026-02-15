@@ -44,10 +44,10 @@ lightpanda fetch --dump --strip_mode full "$URL" 2>/dev/null | pandoc -f html -t
 
 #### Mode: `screenshot`
 
-Take a screenshot using Playwright CLI:
+Take a screenshot using Playwright CLI (requires `--browser chromium`):
 
 ```bash
-npx --yes @anthropic-ai/playwright-cli screenshot "$URL" --output /tmp/screenshot.png
+playwright-cli --browser chromium screenshot "$URL" --output /tmp/screenshot.png
 ```
 
 Then read the screenshot file to show the user what the page looks like.
@@ -57,16 +57,11 @@ Then read the screenshot file to show the user what the page looks like.
 Open an interactive Playwright CLI session:
 
 ```bash
-npx --yes @anthropic-ai/playwright-cli open "$URL"
-```
-
-Then list available commands:
-
-```bash
-npx --yes @anthropic-ai/playwright-cli --help
+playwright-cli --browser chromium open "$URL"
 ```
 
 Use subsequent Playwright CLI commands as needed: `click`, `fill`, `snapshot`, `screenshot`, etc.
+When done: `playwright-cli session-stop`
 
 ### 3. Present Results
 
@@ -74,20 +69,35 @@ Use subsequent Playwright CLI commands as needed: `click`, `fill`, `snapshot`, `
 - If content was truncated, mention that and offer to extract specific sections
 - Highlight key information the user might be looking for
 
-### 4. Troubleshooting
+### 4. Fallback Chain
 
-If Lightpanda fails or returns empty content (content mode):
+If the primary tool fails, try the next one in order:
+
+1. **Lightpanda** → fast, zero tokens, handles JS
+2. **WebFetch** → built-in, sometimes passes Cloudflare where Lightpanda doesn't
+3. **Playwright CLI** → real Chromium, handles most sites but heavier
+4. **Give up** → tell the user the site has aggressive bot protection, ask them to paste content
+
+### 5. Troubleshooting
+
+**Lightpanda fails or returns empty/Cloudflare challenge:**
 - Try without strip_mode: `lightpanda fetch --dump "$URL" 2>/dev/null`
 - Try with a longer timeout: `lightpanda fetch --dump --http_timeout 30000 "$URL" 2>/dev/null`
-- Note: Lightpanda is beta software — some sites may not render correctly
-- Fall back to WebFetch if Lightpanda can't handle the site
+- Lightpanda is beta — some sites crash, Cloudflare-protected sites always fail
 
-If Playwright CLI fails (screenshot/interact mode):
-- Ensure it's installed: `npx --yes @anthropic-ai/playwright-cli --help`
-- Check if a browser is available: `npx playwright install chromium`
+**Playwright CLI errors:**
+- "Chromium distribution 'chrome' is not found" → use `--browser chromium` flag
+- "Browser specified in your config is not installed" → run `npx playwright install chromium` from the playwright-cli package dir
+- Session stuck → `playwright-cli session-stop && playwright-cli session-delete`
+
+**Cloudflare-protected sites (Medium, etc.):**
+- Lightpanda: always blocked (fails JS fingerprint challenge)
+- WebFetch: usually 403
+- Headless Chromium: stuck on "Just a moment..." (detects headless mode)
+- No good workaround — ask user to paste content or use a different source
 
 ## When to Use Each Mode
 
-- **content** — Default. Fast, zero token overhead. Use when you need text from JS-rendered pages, SPAs, documentation sites
-- **screenshot** — When visual verification matters. Layout, styling, visual bugs
-- **interact** — When you need to fill forms, click buttons, navigate multi-step flows
+- **content** — Default. Fast, zero token overhead. JS-rendered pages, SPAs, docs sites
+- **screenshot** — Visual verification. Layout, styling, visual bugs
+- **interact** — Fill forms, click buttons, multi-step navigation flows

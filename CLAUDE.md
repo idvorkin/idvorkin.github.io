@@ -319,6 +319,24 @@ Run tests: `npx playwright test tests/e2e/test-include-amazon.spec.ts --project=
 
 Run pre-commit to check: `pre-commit run --files <your-files>`
 
+## Fetching Web Content
+
+Use the right tool for the job — each has different tradeoffs:
+
+| Need | Tool | When |
+|------|------|------|
+| Static page / API | **WebFetch** (built-in) | Default for simple pages, no JS needed |
+| JS-rendered page | **`/web-browse <url>`** | SPAs, docs sites, dynamic content |
+| Screenshot | **`/web-browse <url> screenshot`** | Visual verification, layout checks |
+| Interact with page | **`/web-browse <url> interact`** | Forms, buttons, multi-step flows |
+
+**Fallback chain:** Lightpanda → WebFetch → Playwright CLI → ask user to paste
+
+**Known limitations:**
+- Cloudflare-protected sites (Medium, etc.) block all headless browsers — no workaround
+- Lightpanda is beta — some sites crash or return incomplete content
+- Playwright CLI needs `--browser chromium` flag (not Chrome, which isn't on ARM64)
+
 ## Processing YouTube Videos
 
 Use the `youtube-content-processor` agent for the complete workflow (subtitle extraction, conversion, analysis).
