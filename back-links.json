@@ -28,6 +28,8 @@
         "/addictions": "/addiction",
         "/affirm": "/affirmations",
         "/ai-coder": "/chop",
+        "/ai-em": "/ai-native-manager",
+        "/ai-native-em": "/ai-native-manager",
         "/ai-open-questions": "/ai-faq",
         "/ai-papers": "/ai-paper",
         "/ai-philosophy": "/ai-faq",
@@ -556,6 +558,7 @@
                 "/planning",
                 "/produce-consume",
                 "/slow",
+                "/spiritual-health",
                 "/timeoff-2021-12"
             ],
             "last_modified": "2025-12-07T02:26:29+00:00",
@@ -691,7 +694,8 @@
             "file_path": "_site/agency.html",
             "incoming_links": [
                 "/ai-faq",
-                "/ai-hiring"
+                "/ai-hiring",
+                "/ai-native-manager"
             ],
             "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/agency.md",
@@ -795,8 +799,10 @@
             "description": "Agents are slow. Not slow like “wait a second,” slow like “go make coffee and come back.” So you run several in parallel. But now you’ve got a different problem: you’re an air traffic controller with no radar. You need a cockpit - a physical and software control surface that gives you visibility into what your agents are doing and lets you switch between them instantly.\n\n",
             "doc_size": 25000,
             "file_path": "_site/ai-cockpit.html",
-            "incoming_links": [],
-            "last_modified": "2026-02-14T18:18:35.520384+00:00",
+            "incoming_links": [
+                "/ai-native-manager"
+            ],
+            "last_modified": "2026-02-14T10:44:54-08:00",
             "markdown_path": "_d/ai-cockpit.md",
             "outgoing_links": [
                 "/ai-journal",
@@ -856,7 +862,8 @@
             "doc_size": 20000,
             "file_path": "_site/ai-hiring.html",
             "incoming_links": [
-                "/ai"
+                "/ai",
+                "/ai-native-manager"
             ],
             "last_modified": "2026-01-24T16:52:54+00:00",
             "markdown_path": "_d/ai-hiring.md",
@@ -894,6 +901,7 @@
             "incoming_links": [
                 "/ai",
                 "/ai-cockpit",
+                "/ai-native-manager",
                 "/changelog",
                 "/chop",
                 "/how-igor-chops",
@@ -917,6 +925,25 @@
             "redirect_url": "",
             "title": "Igor's AI Journal",
             "url": "/ai-journal"
+        },
+        "/ai-native-manager": {
+            "description": "What does it mean to be an engineering manager when AI is rewriting every assumption you have about software, teams, and your own role? I don’t know yet. Nobody does. But I’m figuring it out in real time, and these are my notes from the chaos.\n\n",
+            "doc_size": 35000,
+            "file_path": "_site/ai-native-manager.html",
+            "incoming_links": [],
+            "last_modified": "2026-02-15T08:46:17-08:00",
+            "markdown_path": "_d/ai-native-manager.md",
+            "outgoing_links": [
+                "/agency",
+                "/ai-cockpit",
+                "/ai-hiring",
+                "/ai-journal",
+                "/coaching",
+                "/manager-book"
+            ],
+            "redirect_url": "",
+            "title": "The AI Native Engineering Manager",
+            "url": "/ai-native-manager"
         },
         "/ai-paper": {
             "description": "The original AI papers were all about training, super technical, and not that usable as a practitioner. Nowadays papers are less “mathy” and more applicable to practitioners. Here are some worth reading\n\n",
@@ -1206,7 +1233,7 @@
         },
         "/balloon": {
             "description": "Want to plaster a huge smile on someone’s face with 10 cents of material and 20 seconds of work? Make them a balloon! In 2022, I discovered ballooning, and have used it in my joy-delivering arsenal ever since.\n\n",
-            "doc_size": 22000,
+            "doc_size": 21000,
             "file_path": "_site/balloon.html",
             "incoming_links": [
                 "/eulogy",
@@ -1240,7 +1267,7 @@
         },
         "/be-proactive": {
             "description": "I choose ‘.’ I am responsible for my own life ‘.’ My behavior is a function of my decisions, not my conditions ‘.’ I can subordinate feelings to values ‘.’ I have the initiative and the responsibility to make things happen. These are my insights from 7 habits Chapter 1.\n\n",
-            "doc_size": 23000,
+            "doc_size": 22000,
             "file_path": "_site/be-proactive.html",
             "incoming_links": [
                 "/7-habits",
@@ -1377,7 +1404,7 @@
         },
         "/books-that-defined-me": {
             "description": "Books allow great thoughts to enter our mind and mold us into who we want to become. These are the books that are molding me.\n\n",
-            "doc_size": 17000,
+            "doc_size": 16000,
             "file_path": "_site/books-that-defined-me.html",
             "incoming_links": [
                 "/being-a-great-manager",
@@ -1690,6 +1717,7 @@
             "doc_size": 40000,
             "file_path": "_site/coaching.html",
             "incoming_links": [
+                "/ai-native-manager",
                 "/being-a-great-manager",
                 "/first-understand",
                 "/insecure",
@@ -2150,7 +2178,7 @@
         },
         "/debug": {
             "description": "Igor's Blog",
-            "doc_size": 24000,
+            "doc_size": 23000,
             "file_path": "_site/debug.html",
             "incoming_links": [],
             "last_modified": "2025-03-16T16:15:36+00:00",
@@ -2659,7 +2687,7 @@
         },
         "/first-things-first": {
             "description": "The key to effective management, is allocating energy through the lens of importance rather than urgency. E.g, ask yourself what one thing could you do that if you did on a regular basis, would make a tremendous positive difference in your life? Lemme guess, it’s important, but not urgent so you’re not doing it. These are my insights based on the 7 habits Chapter 3.\n\n",
-            "doc_size": 26000,
+            "doc_size": 25000,
             "file_path": "_site/first-things-first.html",
             "incoming_links": [
                 "/4dx",
@@ -2914,7 +2942,7 @@
         },
         "/goals": {
             "description": "Goals are critical, there are multiple goal systems and they have consequences. They are mechanisms to deliver without micro management.\n\n",
-            "doc_size": 21000,
+            "doc_size": 20000,
             "file_path": "_site/goals.html",
             "incoming_links": [
                 "/4dx",
@@ -3072,7 +3100,7 @@
         },
         "/happy": {
             "description": "Happy is a 5 letter word that many use as the answer to what is the point of life. The follow up question of “How can you be happy” is usually followed by a blank stare, so here’s my study of the subject. Probably the most important thing is happiness is not a mood, it’s journey - Like the weather vs the climate.\n\n",
-            "doc_size": 33000,
+            "doc_size": 32000,
             "file_path": "_site/happy.html",
             "incoming_links": [
                 "/chasing-daylight",
@@ -3558,7 +3586,7 @@
         },
         "/learn-code": {
             "description": "Coding is way easier than people think. Here’s some pointers.\n\n",
-            "doc_size": 14000,
+            "doc_size": 13000,
             "file_path": "_site/learn-code.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T02:47:07+00:00",
@@ -3650,6 +3678,7 @@
             "doc_size": 182000,
             "file_path": "_site/manager-book.html",
             "incoming_links": [
+                "/ai-native-manager",
                 "/amazon",
                 "/being-a-great-manager",
                 "/bucket-list",
@@ -3666,7 +3695,7 @@
                 "/y25",
                 "/y26"
             ],
-            "last_modified": "2025-12-29T17:17:28+00:00",
+            "last_modified": "2026-02-15T08:06:56-08:00",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
             "outgoing_links": [
                 "/22",
@@ -3813,7 +3842,7 @@
         },
         "/mind-at-work": {
             "description": "I have a problem, an addiction, an addiction so detrimental to quality of life, it should be described as a disease. This disease is not being present. There are many symptoms of the disease, but today I’m going to talk about my most frequent symptoms, my body at home, but my mind at work.\n\n",
-            "doc_size": 20000,
+            "doc_size": 19000,
             "file_path": "_site/mind-at-work.html",
             "incoming_links": [
                 "/addiction",
@@ -4787,7 +4816,8 @@
             "incoming_links": [
                 "/four-healths",
                 "/spiritual-health",
-                "/walking-with-god"
+                "/walking-with-god",
+                "/y26"
             ],
             "last_modified": "2026-01-25T15:13:40+00:00",
             "markdown_path": "_d/religion.md",
@@ -5202,8 +5232,8 @@
             "url": "/software-leadership-roles"
         },
         "/spiritual-health": {
-            "description": "Ever felt directionless despite achieving everything you “should” want? Burned out treating every setback like catastrophe? Exhausted trying to control what you can’t? These are manifestations of a lack of spiritual health. “Spiritual health” is poorly defined, so I’ll define it practically: spiritual health means having a north star (purpose/direction), knowing you’re NOT the center of the universe (transcendence/perspective), and accepting you have influence, not control (coherence/acceptance). Miss any one and you’ll find yourself spiritually malnourished in problems as old as time.\n\n",
-            "doc_size": 82000,
+            "description": "I’m not sure spiritual health is real. It might be a fancy label for “stuff that makes you feel less lost,” or it might be the most important thing you’re neglecting. This page is where I muddle through that question — building up frameworks, stress-testing them, and honestly considering whether it’s all bullshit. So far, the best test I’ve found: are you sustainably motivated in a way you’d be proud to see in your child? If yes, you’ve probably cracked it — even if you can’t explain how. If no, the word to focus on is motivated, not meaning. You can philosophize about meaning forever and never become more spiritually healthy. That’s the biggest trap. Motivation is the proof that meaning is present. When it’s missing, the question is whether you’re lacking purpose, transcendence, or coherence — and what to do about it.\n\n",
+            "doc_size": 89000,
             "file_path": "_site/spiritual-health.html",
             "incoming_links": [
                 "/changelog",
@@ -5213,9 +5243,10 @@
                 "/walking-with-god",
                 "/y26"
             ],
-            "last_modified": "2026-02-01T10:48:25-08:00",
+            "last_modified": "2026-02-15T09:09:55-08:00",
             "markdown_path": "_d/spiritual-health.md",
             "outgoing_links": [
+                "/activation",
                 "/build-life-you-want",
                 "/elder",
                 "/eulogy",
@@ -6419,12 +6450,13 @@
         },
         "/walking-with-god": {
             "description": "Someone important to me has been reading a daily devotional. Even though I’m not religious, I’m studying with them to be able to have conversations about the insights - whether in a secular or religious context. This is my attempt to bridge two worlds: honoring the spiritual wisdom they’re finding while translating it into language that works for my engineer brain.\n\n",
-            "doc_size": 82000,
+            "doc_size": 81000,
             "file_path": "_site/walking-with-god.html",
             "incoming_links": [
                 "/religion",
                 "/spiritual-health",
-                "/y25"
+                "/y25",
+                "/y26"
             ],
             "last_modified": "2025-12-07T02:50:22+00:00",
             "markdown_path": "_d/walking-with-god.md",
@@ -6703,7 +6735,7 @@
         },
         "/y26": {
             "description": "I like to begin with the end in mind, so let’s write a report for 2026. This hasn’t happened, but if I don’t write it out and focus on it, it certainly won’t.\n\n",
-            "doc_size": 28000,
+            "doc_size": 29000,
             "file_path": "_site/y26.html",
             "incoming_links": [],
             "last_modified": "2026-01-19T17:12:37.856245+00:00",
@@ -6725,10 +6757,12 @@
                 "/manager-book",
                 "/mind-at-home-body-at-work",
                 "/mortality-software",
+                "/religion",
                 "/shoulder-pain",
                 "/siy",
                 "/spiritual-health",
-                "/tesla"
+                "/tesla",
+                "/walking-with-god"
             ],
             "redirect_url": "",
             "title": "Igor's plan for 2026",
