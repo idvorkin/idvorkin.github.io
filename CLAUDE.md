@@ -337,7 +337,8 @@ Use the right tool for the job — each has different tradeoffs:
 **Fallback chain:** Lightpanda → WebFetch → Playwright CLI → ask user to paste
 
 **Known limitations:**
-- Cloudflare-protected sites (Medium, etc.) block all headless browsers — no workaround
+- Cloudflare-protected sites block all headless browsers
+- **Medium workaround**: use RSS feeds (`curl -s "https://{username}.medium.com/feed"`) — bypasses Cloudflare entirely, returns full article content
 - Lightpanda is beta — some sites crash or return incomplete content
 - Playwright CLI needs `--browser chromium` flag (not Chrome, which isn't on ARM64)
 

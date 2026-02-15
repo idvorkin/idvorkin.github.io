@@ -94,7 +94,15 @@ If the primary tool fails, try the next one in order:
 - Lightpanda: always blocked (fails JS fingerprint challenge)
 - WebFetch: usually 403
 - Headless Chromium: stuck on "Just a moment..." (detects headless mode)
-- No good workaround — ask user to paste content or use a different source
+- **Medium workaround — use RSS feeds:**
+  ```bash
+  # Full article content via RSS (no Cloudflare, no JS needed)
+  curl -s "https://{username}.medium.com/feed" | pandoc -f html -t plain --wrap=none
+  ```
+  RSS returns the latest ~10 articles with full HTML in `<content:encoded>`.
+  Extract the article you need by title from the XML.
+- **Scribe.rip** as backup: replace `medium.com` with `scribe.rip` in the URL
+- For other Cloudflare sites with no RSS: ask user to paste content
 
 ## When to Use Each Mode
 
