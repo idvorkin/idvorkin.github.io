@@ -108,16 +108,21 @@ See more about [PANAS Personality Types](/emotions#panas-personality-types) and 
 
 ### Bonus: My Enneagram (Any-O-Gram)
 
-| Enneagram | Type              | Score |
-| --------- | ----------------- | ----- |
-| 7         | The Enthusiast    | 29    |
-| 8         | The Challenger    | 23    |
-| 2         | The Helper        | 19    |
-| 5         | The Investigator  | 18    |
-| 4         | The Individualist | 15    |
-| 3         | The Achiever      | 13    |
-| 1         | The Reformer      | 10    |
-| 6         | The Loyalist      | 9     |
-| 9         | The Peacemaker    | 8     |
+| Enneagram | Type             | Score |
+| --------- | ---------------- | ----- |
+| 7         | The Enthusiast   | 29    |
+| 8         | The Challenger   | 23    |
+| 2         | The Helper       | 19    |
+| 5         | The Investigator | 18    |
+
+**Type 7 - The Enthusiast** - Spontaneous, versatile, and variety-seeking. Sevens are the most enthusiastic and outgoing type — they find life exhilarating and fill their calendars with things to do. They are future-oriented, quick, and talkative. At their best, they are appreciative, accomplished, and deeply grateful. Their challenge is staying focused rather than scattering their energy across too many things.
+
+**Type 8 - The Challenger** - Self-confident, decisive, and confrontational. Eights are natural leaders who take initiative and make things happen. They are protective and empowering, with a "can-do" attitude and a strong sense of honor — their word is their bond. At their best, they are heroic, magnanimous, and use their strength to champion others.
+
+**Type 2 - The Helper** - Caring, empathetic, and generous. Twos are the most people-oriented type, focusing on relationships and supporting others with attention and care. They remember the details of your life and are the first to help. At their best, they are encouraging, loving, and compassionate while also nurturing themselves.
+
+**Type 5 - The Investigator** - Perceptive, innovative, and independent. Fives love the life of the mind, preferring to understand things deeply rather than skim the surface. They have an extraordinary ability to focus their attention on problems until solved. At their best, they are visionary, pioneering, and playful.
+
+_These types are congruent — 7 and 8 are adjacent on the Enneagram circle (8 is a common wing for 7), so high scores in both reflect an energetic, action-oriented person who is both enthusiastic and assertive. The 2 and 5 tie is an interesting tension: the warmth and people-focus of the Helper balanced by the independence and cerebral depth of the Investigator. Under stress, 7 moves toward 1 (becoming self-critical and perfectionistic), and in security, 7 integrates toward 5 (becoming more focused and deeply engaged)._
 
 See [full Enneagram](/static/igor-enneagram.pdf)
