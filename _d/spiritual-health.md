@@ -7,7 +7,7 @@ tags:
   - how igor ticks
 ---
 
-Here's the test for spiritual health: **are you sustainably motivated in a way that would make you proud to see in your child?** If yes, you've probably cracked it. If no, be careful — the word to focus on is *motivated*, not *meaning*. You can philosophize about meaning forever and never become more spiritually healthy. That's the biggest trap. Motivation is the proof that meaning is present. This page is here to help you muddle through when it's not — diagnosing whether you're missing purpose, transcendence, or coherence, and what to do about it.
+I'm not sure spiritual health is real. It might be a fancy label for "stuff that makes you feel less lost," or it might be the most important thing you're neglecting. This page is where I muddle through that question — building up frameworks, stress-testing them, and honestly considering whether it's all bullshit. So far, the best test I've found: **are you sustainably motivated in a way you'd be proud to see in your child?** If yes, you've probably cracked it — even if you can't explain how. If no, the word to focus on is *motivated*, not *meaning*. You can philosophize about meaning forever and never become more spiritually healthy. That's the biggest [trap](#the-meaning-traps). Motivation is the proof that meaning is present. When it's missing, the question is whether you're lacking purpose, transcendence, or coherence — and what to do about it.
 
 {% include ai-slop.html percent="85" %}
 
