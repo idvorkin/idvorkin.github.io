@@ -427,6 +427,29 @@ prepare:
 # - pw-test-ui: Run tests with UI
 # - pw-install: Install Playwright browsers
 
+# Run tests against Lightpanda (DOM/content tests only)
+pw-test-lightpanda:
+    #!/usr/bin/env sh
+    STARTED_LP=false
+    if ! curl -s -o /dev/null ws://127.0.0.1:9222 2>/dev/null && ! ss -tln | grep -q ':9222 '; then
+        echo "Starting Lightpanda CDP server..."
+        lightpanda serve --port 9222 &
+        LP_PID=$!
+        STARTED_LP=true
+        sleep 2
+    else
+        echo "Lightpanda already running on port 9222"
+    fi
+    echo "Running Lightpanda content tests..."
+    npx playwright test --config playwright.lightpanda.config.ts
+    EXIT_CODE=$?
+    if [ "$STARTED_LP" = "true" ]; then
+        echo "Stopping Lightpanda (PID $LP_PID)..."
+        kill $LP_PID 2>/dev/null || true
+        wait $LP_PID 2>/dev/null || true
+    fi
+    exit $EXIT_CODE
+
 # Run all Playwright E2E tests
 pw-test:
     npx playwright test
