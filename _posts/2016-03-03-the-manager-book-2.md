@@ -21,6 +21,7 @@ This post uses the word manager, but many topics apply to all job functions, reg
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [AI Native Manager](#ai-native-manager)
 - [What does a manager do](#what-does-a-manager-do)
   - [What are a manager's responsibilities](#what-are-a-managers-responsibilities)
   - [How do you measure their success](#how-do-you-measure-their-success)
@@ -159,6 +160,10 @@ This post uses the word manager, but many topics apply to all job functions, reg
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+## AI Native Manager
+
+{% include summarize-page.html src="/ai-native-manager" %}
 
 ## What does a manager do
 

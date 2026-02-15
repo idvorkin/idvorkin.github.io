@@ -30,11 +30,14 @@ What does it mean to be an engineering manager when AI is rewriting every assump
   - [Divide and Conquer](#divide-and-conquer)
   - [Share the Learnings](#share-the-learnings)
   - [AI Free Zones](#ai-free-zones)
-- [Should EMs Code?](#should-ems-code)
 - [Open Questions](#open-questions)
 - [Appendix: New Words for a New World](#appendix-new-words-for-a-new-world)
   - [Functional Collapse](#functional-collapse)
-  - [Hot Take: Should XFN Code?](#hot-take-should-xfn-code)
+  - [AI Cockpit](#ai-cockpit)
+- [Appendix: Hot Takes](#appendix-hot-takes)
+  - [Should XFN Code?](#should-xfn-code)
+- [Appendix: Old Questions, New Answers](#appendix-old-questions-new-answers)
+  - [Should EMs Code?](#should-ems-code)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -147,14 +150,6 @@ There are two reasons to create AI-free zones, and both matter:
 
 The broader point: a team that only knows how to work with AI is fragile. They need the underlying skills to stay sharp, and they need the social fabric that comes from connecting as humans, not just as AI practitioners.
 
-## Should EMs Code?
-
-In the [old world](/manager-book#should-managers-code), my answer was: read code occasionally for spot-checking and context, but don't be on the critical path. AI changes this question completely.
-
-With AI, an EM can vibe-code a prototype in an afternoon that would have taken a week to spec and assign. You can build team tools, automate toil, and stay closer to the technical reality. The cost of coding dropped so much that the old "you can't afford to code, you have people to manage" calculus is different now.
-
-But the trap is real: if you're vibe-coding all day, you're not managing. The AI Vampire doesn't care about your title. You can burn out just as fast as your ICs, and then who's looking out for them?
-
 ## Open Questions
 
 Things I'm actively trying to figure out:
@@ -178,7 +173,13 @@ The same thing is happening now. In my world, TPM may have collapsed into the en
 
 So yes, AI enables functional collapse in the sense that anyone _can_ write a PRD or build a prototype or sketch a design. But "can" and "good at" are different things. The easy stuff gets democratized. The hard stuff still needs people who go deep. We might all be "builders" on paper, but we'll all have specialties where we're better than others.
 
-### Hot Take: Should XFN Code?
+### AI Cockpit
+
+{% include summarize-page.html src="/ai-cockpit" %}
+
+## Appendix: Hot Takes
+
+### Should XFN Code?
 
 Depends on why.
 
@@ -191,3 +192,13 @@ But if the goal is something else, then yes:
 - **To build agentic workflows** — XFN building agents that automate their own domain tasks (data analysis, user research synthesis, A/B test configuration). This is the real unlock — not coding for engineers, but coding for themselves.
 
 The line: are you producing code that engineers need to own and maintain? Then you're adding to their burden. Are you producing tools that make your own work better? Then go for it.
+
+## Appendix: Old Questions, New Answers
+
+### Should EMs Code?
+
+In the [old world](/manager-book#should-managers-code), my answer was: read code occasionally for spot-checking and context, but don't be on the critical path. AI changes this question completely.
+
+With AI, an EM can vibe-code a prototype in an afternoon that would have taken a week to spec and assign. You can build team tools, automate toil, and stay closer to the technical reality. The cost of coding dropped so much that the old "you can't afford to code, you have people to manage" calculus is different now.
+
+But the trap is real: if you're vibe-coding all day, you're not managing. The AI Vampire doesn't care about your title. You can burn out just as fast as your ICs, and then who's looking out for them?
