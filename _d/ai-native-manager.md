@@ -33,10 +33,12 @@ What does it mean to be an engineering manager when AI is rewriting every assump
 - [Open Questions](#open-questions)
 - [Appendix: New Words for a New World](#appendix-new-words-for-a-new-world)
   - [Functional Collapse](#functional-collapse)
+  - [Agency](#agency)
   - [AI Cockpit](#ai-cockpit)
 - [Appendix: Hot Takes](#appendix-hot-takes)
   - [Should XFN Code?](#should-xfn-code)
 - [Appendix: Old Questions, New Answers](#appendix-old-questions-new-answers)
+  - [How Should Hiring Change?](#how-should-hiring-change)
   - [Should EMs Code?](#should-ems-code)
 
 <!-- vim-markdown-toc-end -->
@@ -108,7 +110,7 @@ I wrote a whole [manager book](/manager-book) in the pre-AI world. Some of it ca
 ### Completely Different
 
 - **The 4 dimensions of success** — Business Results, People, Process, Tech Assets. The weights are shifting. Tech Assets matter less when code is cattle not pets. People matter more because AI fluency is the multiplier. Process is up for complete reinvention.
-- **Hiring: "Smart + Gets Things Done + EQ"** — Still true, but what does "Gets Things Done" mean when the tools change every month? AI fluency and learning rate might matter more than current skill. You're hiring for the integral, not the point.
+- **Hiring** — See [Old Questions, New Answers](#how-should-hiring-change) below.
 - **Planning and estimation** — The [execution order](/manager-book#planning-roadmaps-and-resource-allocation) (Why → What → When → Who) still holds, but timelines are compressing in unpredictable ways. A project that would have taken a quarter might take a week. Or it might still take a quarter because the hard part was never the code.
 - **The schedule** — My old 44-hour week breakdown (8hrs 1:1s, 6hrs partner meetings, 6hrs reviews...) assumes a stable world where you can plan your week. In the Year of Chaos, you need more slack for learning, experimenting, and helping people through the AI chasm.
 
@@ -173,6 +175,12 @@ The same thing is happening now. In my world, TPM may have collapsed into the en
 
 So yes, AI enables functional collapse in the sense that anyone _can_ write a PRD or build a prototype or sketch a design. But "can" and "good at" are different things. The easy stuff gets democratized. The hard stuff still needs people who go deep. We might all be "builders" on paper, but we'll all have specialties where we're better than others.
 
+### Agency
+
+The fancy new word for "Gets Shit Done." It's not new — it's always been the thing that separates people who drive outcomes from people who wait to be told what to do. But AI made it more visible. When AI handles the boilerplate, the gap between someone with agency and someone without it is enormous. The person with agency sees the problem, figures out the approach, uses whatever tools exist (AI or not), and ships. The person without agency asks for a ticket.
+
+{% include summarize-page.html src="/agency" %}
+
 ### AI Cockpit
 
 {% include summarize-page.html src="/ai-cockpit" %}
@@ -202,3 +210,13 @@ In the [old world](/manager-book#should-managers-code), my answer was: read code
 With AI, an EM can vibe-code a prototype in an afternoon that would have taken a week to spec and assign. You can build team tools, automate toil, and stay closer to the technical reality. The cost of coding dropped so much that the old "you can't afford to code, you have people to manage" calculus is different now.
 
 But the trap is real: if you're vibe-coding all day, you're not managing. The AI Vampire doesn't care about your title. You can burn out just as fast as your ICs, and then who's looking out for them?
+
+### How Should Hiring Change?
+
+In the [old world](/manager-book), the hiring formula was: Smart, Gets Shit Done, Not an Asshole. Guess what? That hasn't changed. The fundamentals are the fundamentals.
+
+What changed is "Gets Shit Done" got a fancy new word — [Agency](/agency). But it's the same thing it always was: seeing what needs to happen and making it happen, without someone holding your hand. AI didn't invent agency, it just made it more visible. When AI handles the boilerplate, the people who drive outcomes stand out even more from the people who were hiding behind busy work.
+
+The real question isn't _what_ to hire for — it's _how_ to assess it when AI changes what the work looks like. That's a whole separate rabbit hole.
+
+{% include summarize-page.html src="/ai-hiring" %}
