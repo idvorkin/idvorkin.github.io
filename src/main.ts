@@ -48,23 +48,58 @@ function checkExpandToggle() {
   }
 }
 
-function SwapProdAndTest() {
-  /* Find page title. */
-  const url = window.location.href;
-  const prodPrefix = "https://idvork.in";
-  // Get the current port from the URL
-  const currentPort = window.location.port || "4000";
-  const testPrefix = `http://localhost:${currentPort}`;
-  const isProd = url.includes(prodPrefix);
-  let newURL = url;
-  if (isProd) {
-    newURL = url.replace(prodPrefix, testPrefix);
-  } else {
-    // When swapping from test to prod, we need to handle any port number
-    newURL = url.replace(/http:\/\/localhost:\d+/, prodPrefix);
-  }
+const PROD_ORIGIN = "https://idvork.in";
+const DEV_ORIGIN_KEY = "idvorkin_dev_origin";
 
-  window.location.href = newURL;
+function isProduction(): boolean {
+  return window.location.hostname === "idvork.in";
+}
+
+/** Returns true if origin looks like a dev server (hostname or non-standard port). */
+function isDevOrigin(origin: string): boolean {
+  try {
+    const url = new URL(origin);
+    const host = url.hostname;
+    // Hostname patterns that are always dev
+    if (host === "localhost" || host === "127.0.0.1" || host.endsWith(".ts.net")) {
+      return true;
+    }
+    // Non-standard port is a strong dev signal
+    return url.port !== "" && url.port !== "80" && url.port !== "443";
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * On page load: detect if we arrived from a dev server via document.referrer.
+ * Cross-origin referrer policy (strict-origin-when-cross-origin) only sends
+ * the origin, not the full path, so we can only check isDevOrigin on it.
+ * The isDevOrigin guard prevents external sites from poisoning the value.
+ */
+function saveDevOriginFromReferrer() {
+  if (!document.referrer) return;
+  try {
+    const referrerOrigin = new URL(document.referrer).origin;
+    if (isDevOrigin(referrerOrigin)) {
+      localStorage.setItem(DEV_ORIGIN_KEY, referrerOrigin);
+    }
+  } catch {
+    // Invalid referrer URL, ignore
+  }
+}
+
+function SwapProdAndTest() {
+  const path = `${window.location.pathname}${window.location.search}${window.location.hash}`;
+  if (isProduction()) {
+    // Prod → Dev: use stored dev origin, fallback to localhost:4000
+    const devOrigin = localStorage.getItem(DEV_ORIGIN_KEY) || "http://localhost:4000";
+    window.location.href = `${devOrigin}${path}`;
+  } else {
+    // Dev → Prod: save origin locally, navigate with clean URL
+    localStorage.setItem(DEV_ORIGIN_KEY, window.location.origin);
+    window.location.href = `${PROD_ORIGIN}${path}`;
+  }
 }
 
 function ForceShowRightSideBar() {
@@ -476,6 +511,9 @@ function load_globals() {
     return;
   }
   (window as any)[globalFlag] = true;
+
+  // If we arrived from a dev server, remember its origin for the "p" key
+  saveDevOriginFromReferrer();
 
   $(add_link_loader);
   $(keyboard_shortcut_loader);
