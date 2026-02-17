@@ -193,6 +193,8 @@ The fancy new word for "Gets Shit Done." It's not new — it's always been the t
 
 My take: this is the hidden cost of the [Frenzy](#the-ai-chasm-assessment-and-adoption-stages) stage. Someone in Frenzy ships ten features in a week, and the team's cognitive debt goes through the roof. As an EM, you need to watch for this — not just "is the code working?" but "does the team understand what they built?" Code review isn't just about catching bugs anymore; it's about maintaining the team's shared understanding. If you can't explain what you shipped, you can't confidently change it, and that's where progress stalls.
 
+The good news: the same AI that creates cognitive debt can pay it down. We need to get better at using AI to explain systems back to us — sequence diagrams, class diagrams, architecture charts, data flow visualizations. The AI that wrote the code can also draw you a picture of what it built. Make this part of the workflow: don't just ship the feature, ship the diagram. Sequence diagrams are your friend. Class diagrams are your friend. If the AI can't explain what it just built in a picture, that's a red flag that nobody else will understand it either.
+
 ### Deep Blue
 
 [Deep Blue](https://simonwillison.net/2026/Feb/15/deep-blue/) is the psychological ennui leading into existential dread that software engineers feel when AI encroaches on their craft. Named after IBM's chess computer that beat Kasparov in 1997, it was coined by Adam Leventhal on the Oxide and Friends podcast. The core feeling: "I dedicated my career to learning this thing and now it does it. What am I even for?"
