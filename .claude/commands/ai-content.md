@@ -116,8 +116,23 @@ AI Content Tips:
 
 Igor frequently draws on these writers for AI content. Check their latest posts when looking for new material:
 
-- **Steve Yegge** - [steve-yegge.medium.com](https://steve-yegge.medium.com/) - AI productivity, value capture, software survival. Already referenced in ai-journal (AI Vampire, Software Survival 3.0).
-- **Simon Willison** - [simonwillison.net](https://simonwillison.net/) - AI tooling, LLM practical usage, open source + AI dynamics. Creator of Datasette/django co-creator. Prolific blogger on AI developments.
+- **Steve Yegge** - AI productivity, value capture, software survival. Already referenced in ai-journal (AI Vampire, Software Survival 3.0).
+  - Blog is on Medium (Cloudflare-protected, blocks headless browsers)
+  - **Use RSS feed to read his posts**: `curl -s "https://steve-yegge.medium.com/feed"` — returns full article content, bypasses Cloudflare entirely
+- **Simon Willison** - [simonwillison.net](https://simonwillison.net/) - AI tooling, LLM practical usage, open source + AI dynamics. Creator of Datasette, Django co-creator. Prolific blogger on AI developments.
+  - **Atom feed**: `curl -s "https://simonwillison.net/atom/everything/"` — his site is direct-fetchable too, but the feed is great for scanning recent posts
+
+### How to fetch their latest posts
+
+```bash
+# Yegge (Medium) — RSS is the only reliable way, Medium blocks WebFetch
+curl -s "https://steve-yegge.medium.com/feed" | xmllint --xpath '//item/title/text()' - 2>/dev/null
+
+# Willison — Atom feed for recent posts
+curl -s "https://simonwillison.net/atom/everything/" | xmllint --xpath '//*[local-name()="entry"]/*[local-name()="title"]/text()' - 2>/dev/null
+```
+
+For full article content from Yegge, pipe the RSS through WebFetch or parse the `<content:encoded>` field directly — the feed includes the complete post body.
 
 ## Examples
 
