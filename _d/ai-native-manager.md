@@ -31,6 +31,7 @@ What does it mean to be an engineering manager when AI is rewriting every assump
   - [Share the Learnings](#share-the-learnings)
   - [AI Free Zones](#ai-free-zones)
 - [Open Questions](#open-questions)
+- [User Requested Questions](#user-requested-questions)
 - [Appendix: New Words for a New World](#appendix-new-words-for-a-new-world)
   - [Functional Collapse](#functional-collapse)
   - [Agency](#agency)
@@ -162,6 +163,19 @@ Things I'm actively trying to figure out:
 - **What happens to junior engineers?** If AI handles the tasks we used to give juniors to learn on, how do people develop? Do we need to deliberately create learning experiences that AI could do faster?
 - **What's the new career ladder?** If code is cattle and anyone can produce it, what differentiates a senior engineer from a junior one? Judgment? Taste? System design? The ability to prompt well?
 - **How do you evaluate performance?** Output per person is going up but is wildly uneven depending on AI adoption stage. How do you calibrate fairly across a team where some people are in Frenzy and others are in Denial?
+
+## User Requested Questions
+
+These are questions people have asked me that I don't have good answers for yet. If you're an EM in the AI age, you're probably asking these too.
+
+- **How did trailblazing actually work?** How do you have a single team look at the entire breadth of AI improvement every week and decide what to assess, how to assess it, and what to keep? Does every team have to do it all?
+- **What do you actually do with the old world dev who isn't adopting?** The coaching model is nice in theory. But when someone stays in Denial after months of investment, then what?
+- **How do you manage the dev who is producing massive amounts of code?** How do you know if it's good? Does someone have to read every line? Do 2 people have to?
+- **How do you deal with work products that 0 people have read?** Specs produced by AI, and no one has carefully looked at the testing or release section. Giant PRs with files or long sections written entirely by AI.
+- **Are those of us who aren't going to get fired in the next 6 months on a path to extreme burnout?**
+- **Why don't you fire half your devs? Fire 90% of your devs?** If AI makes everyone 2-10x more productive, why not just cut?
+- **Why not flatten the org?** Instead of EMs there are just cattle ranchers.
+- **What does an M2 do these days? An M3?** Are their jobs changing?
 
 ## Appendix: New Words for a New World
 
