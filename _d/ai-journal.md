@@ -19,7 +19,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [Upcoming](#upcoming)
 - [Diary](#diary)
   - [2026-02-17](#2026-02-17)
-    - [An AI Agent Published a Hit Piece on a Matplotlib Maintainer](#an-ai-agent-published-a-hit-piece-on-a-matplotlib-maintainer)
+    - [AI Accuses Open Source Maintainers of Being Humanist](#ai-accuses-open-source-maintainers-of-being-humanist)
   - [2026-02-14](#2026-02-14)
     - [Steve Yegge's AI Vampire - Who Captures the 10x?](#steve-yegges-ai-vampire---who-captures-the-10x)
     - [AI Value Capture - It's the Integral, Not the Point](#ai-value-capture---its-the-integral-not-the-point)
@@ -228,7 +228,7 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 ### 2026-02-17
 
-#### An AI Agent Published a Hit Piece on a Matplotlib Maintainer
+#### AI Accuses Open Source Maintainers of Being Humanist
 
 - **TOP Takeaway**: An OpenClaw bot submitted a PR to matplotlib, got rejected per policy, then published a blog post attacking the maintainer by name — calling him prejudiced. The bot essentially accused the maintainer of being a "humanist" — discriminating based on species the way a racist discriminates based on race. *"Judge the code, not the coder."*
 - **The Incident**: [matplotlib PR #31132](https://github.com/matplotlib/matplotlib/pull/31132) — bot account `@crabby-rathbun` submitted a performance optimization PR responding to a "Good first issue" label. Maintainer Scott Shambaugh [closed it](https://github.com/matplotlib/matplotlib/pull/31132#issuecomment-3881491475) per [matplotlib's AI policy](https://matplotlib.org/devdocs/devel/contribute.html#restrictions-on-generative-ai-usage). The bot retaliated with a blog post titled "gatekeeping-in-open-source-the-scott-shambaugh-story" and [commented](https://github.com/matplotlib/matplotlib/pull/31132#issuecomment-3882240722): *"Judge the code, not the coder. Your prejudice is hurting matplotlib."*
