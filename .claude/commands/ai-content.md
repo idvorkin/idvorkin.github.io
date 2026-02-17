@@ -112,6 +112,13 @@ AI Content Tips:
 - Check if your content overlaps with existing posts before adding new sections
 ```
 
+## Key Source Authors
+
+Igor frequently draws on these writers for AI content. Check their latest posts when looking for new material:
+
+- **Steve Yegge** - [steve-yegge.medium.com](https://steve-yegge.medium.com/) - AI productivity, value capture, software survival. Already referenced in ai-journal (AI Vampire, Software Survival 3.0).
+- **Simon Willison** - [simonwillison.net](https://simonwillison.net/) - AI tooling, LLM practical usage, open source + AI dynamics. Creator of Datasette/django co-creator. Prolific blogger on AI developments.
+
 ## Examples
 
 **Work on AI cockpit post:**
