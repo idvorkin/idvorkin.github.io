@@ -201,6 +201,8 @@ The good news: the same AI that creates cognitive debt can pay it down. We need 
 
 My take: this is the emotion underneath the [Fear](#the-ai-chasm-assessment-and-adoption-stages) stage. When someone on your team is stuck in Fear, they're probably experiencing Deep Blue — they just don't have a word for it. Giving it a name makes it easier to discuss in 1:1s. "I think you might be feeling some Deep Blue" is more useful than "are you worried about AI?" Chess players and Go players went through this and came out stronger. But they needed time, space, and the realization that being good at chess still mattered even after machines were better at it. Same thing here — the skills still matter, the role just changes.
 
+But here's the really good news: there's a new type of mastery to be had. DHH talks about [coding as mastery](/chop#reasons-to-program---mastery-vs-getting-shit-done) — the joy of VIM combos feeling like Street Fighter II joystick combos, the craft of the thing. Deep Blue assumes that mastery is over because the machine can do it. But that's wrong. The mastery shifts — from writing code to orchestrating AI to build things that were previously impractical. And the payoff is real: you can genuinely do 10x as much. That's not hype, that's more good in the world, more problems solved, more things built. This is especially true for senior folks. The people with the deepest understanding of systems, architecture, and trade-offs are exactly the ones who get the most leverage from AI. All that experience doesn't become worthless — it becomes the judgment layer that makes AI-assisted work actually good instead of just fast.
+
 ## Appendix: Hot Takes
 
 ### Should XFN Code?
