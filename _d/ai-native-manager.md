@@ -35,6 +35,8 @@ What does it mean to be an engineering manager when AI is rewriting every assump
   - [Functional Collapse](#functional-collapse)
   - [Agency](#agency)
   - [AI Cockpit](#ai-cockpit)
+  - [Cognitive Debt](#cognitive-debt)
+  - [Deep Blue](#deep-blue)
 - [Appendix: Hot Takes](#appendix-hot-takes)
   - [Should XFN Code?](#should-xfn-code)
 - [Appendix: Old Questions, New Answers](#appendix-old-questions-new-answers)
@@ -184,6 +186,18 @@ The fancy new word for "Gets Shit Done." It's not new — it's always been the t
 ### AI Cockpit
 
 {% include summarize-page.html src="/ai-cockpit" %}
+
+### Cognitive Debt
+
+[Cognitive debt](https://simonwillison.net/2026/Feb/15/cognitive-debt/) is the debt that accumulates not in the code, but in developers' brains. When you go fast with AI — prompting entire features into existence without reviewing the implementation — you lose the shared mental model of what the system does and why. The code might work fine. But nobody on the team can explain why it works, what the design decisions were, or what will break if you change it.
+
+My take: this is the hidden cost of the [Frenzy](#the-ai-chasm-assessment-and-adoption-stages) stage. Someone in Frenzy ships ten features in a week, and the team's cognitive debt goes through the roof. As an EM, you need to watch for this — not just "is the code working?" but "does the team understand what they built?" Code review isn't just about catching bugs anymore; it's about maintaining the team's shared understanding. If you can't explain what you shipped, you can't confidently change it, and that's where progress stalls.
+
+### Deep Blue
+
+[Deep Blue](https://simonwillison.net/2026/Feb/15/deep-blue/) is the psychological ennui leading into existential dread that software engineers feel when AI encroaches on their craft. Named after IBM's chess computer that beat Kasparov in 1997, it was coined by Adam Leventhal on the Oxide and Friends podcast. The core feeling: "I dedicated my career to learning this thing and now it does it. What am I even for?"
+
+My take: this is the emotion underneath the [Fear](#the-ai-chasm-assessment-and-adoption-stages) stage. When someone on your team is stuck in Fear, they're probably experiencing Deep Blue — they just don't have a word for it. Giving it a name makes it easier to discuss in 1:1s. "I think you might be feeling some Deep Blue" is more useful than "are you worried about AI?" Chess players and Go players went through this and came out stronger. But they needed time, space, and the realization that being good at chess still mattered even after machines were better at it. Same thing here — the skills still matter, the role just changes.
 
 ## Appendix: Hot Takes
 
