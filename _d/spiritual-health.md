@@ -9,6 +9,18 @@ tags:
 
 I'm not sure spiritual health is real. It might be a fancy label for "stuff that makes you feel less lost," or it might be the most important thing you're neglecting. This page is where I muddle through that question — building up frameworks, stress-testing them, and honestly considering whether it's all bullshit. So far, the best test I've found: **are you sustainably motivated in a way you'd be proud to see in your child?** If yes, you've probably cracked it — even if you can't explain how. If no, the word to focus on is *motivated*, not *meaning*. You can philosophize about meaning forever and never become more spiritually healthy. That's the biggest [trap](#the-meaning-traps). Motivation is the proof that meaning is present. When it's missing, the question is whether you're lacking purpose, transcendence, or coherence — and what to do about it.
 
+**Breaking down that test.** Two parts:
+
+1. **Sustainably motivated** — a bit of a weasel word. How long counts? What if circumstances change? But I think that's actually OK: while you're motivated, you're spiritually healthy. When the motivation dies, that's when you have a spiritual health problem to solve. It's like fitness — you're fit while you're fit, and when you're not, you train.
+
+2. **Proud to see in your child** — this is subjective, on purpose. Spiritual health isn't blood pressure; there's no objective reading. A drug addict is sustainably motivated, but you wouldn't want that for your kid. The "your child" framing works because you can lie to yourself about your own life, but it's much harder to lie about what you'd want for your kid.
+
+**Two challenges I'd love to better understand:**
+
+1. **Boolean to continuum** — the test above gives you a yes/no, but spiritual health is clearly a spectrum. How motivated? Across how many parts of your life? How resilient is that motivation when things get hard? I don't have a good way to measure degrees of spiritual health yet, beyond "more motivated = more healthy." Let's try to figure it out together.
+
+2. **How to build sustained motivation** — the test is diagnostic, not prescriptive. It tells you whether you're spiritually healthy, but not how to get there. The [frameworks below](#four-frameworks-on-spiritual-health) offer some paths (Frankl's self-transcendence, Brooks' getting small, rituals from Power of Full Engagement), but I haven't tied them back into a clear "if your motivation is low, do X" playbook.
+
 {% include ai-slop.html percent="85" %}
 
 <!-- prettier-ignore-start -->
