@@ -36,10 +36,6 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
   - [What Works Well - REVIEW THIS WEEKLY!](#what-works-well---review-this-weekly)
   - [What I'm Still Figuring Out](#what-im-still-figuring-out)
 - [The Control Panel - For This Human](#the-control-panel---for-this-human)
-  - [Voice](#voice)
-  - [Stream Deck](#stream-deck)
-  - [Agent Dashboard](#agent-dashboard)
-  - [Tmux on Super Steroids](#tmux-on-super-steroids)
 - [Where I Code](#where-i-code)
   - [The Couch](#the-couch)
   - [The Coffee Shop](#the-coffee-shop)
@@ -190,63 +186,11 @@ This diagram perfectly captures the evolution I've lived through. Let me break d
 
 ## The Control Panel - For This Human
 
-**The core problem**: agents are slow, not fast. The mitigation? Run several in parallel. Most of the optimizations below are about exactly that - how do you run more agents in parallel?
+**The core problem**: agents are slow, not fast. The mitigation? Run several in parallel. But humans aren't designed for parallel orchestration. You need a cockpit — voice input, physical buttons, a dashboard, and instant session switching — to keep track of it all without losing your mind.
 
-But here's the challenge: humans aren't really designed for running things in parallel. So maybe this is more efficient, maybe it's not. At the end of the day, I think I'd prefer it if agents were instantaneous so you didn't have to do all this task switching.
+I wrote up the full cockpit setup separately:
 
-Until then, I need a physical setup that keeps me in flow and gives me visibility into what my agents are doing.
-
-### Voice
-
-Originally I was skeptical, but honestly it's awesome - though hard to articulate exactly why. Talking to Claude is just like talking to another engineer. You tell them things with voice you don't type at them - more natural, conversational, less formal.
-
-**Why voice?** It's natural, and agents are resilient to typos. Whatever you say, even if it's poorly transcribed, generally just works. You can move around, shake your head, close your eyes when thinking hard.
-
-At home I use [Wispr Flow](https://wisprflow.ai/) - faster transcription and automatically cleans up filler words. At work I can't use cloud services (don't want to leak anything), so I use [SuperWhisper](https://superwhisper.com/) which runs local models. Luckily my work machines have 48GB and 64GB of RAM with M4 Max chips, so local models run pretty fast.
-
-(Sometimes transcription can be funny. Every once in a while it'll insert Chinese characters or Russian characters or just make something up. I have no idea where that comes from. But sometimes I'll look up the translation and it's often surprisingly appropriate.)
-
-See more in my [AI Journal entry on voice coding](/ai-journal#using-voice-to-make-commands).
-
-### Stream Deck
-
-{% include image_float_right.html src="https://raw.githubusercontent.com/idvorkin/ipaste/main/20260101_070739.webp" link="https://github.com/idvorkin/streamdeck-igor-vibe" %}
-
-[Stream Deck Plugin](https://github.com/idvorkin/streamdeck-igor-vibe) - physical buttons for:
-
-- Tmux navigation (jump between containers/sessions)
-- Voice activation
-- Utility keys
-
-**Why it matters**: One button to switch contexts instead of typing commands. Reduces friction when juggling multiple agents.
-
-### Agent Dashboard
-
-{% include image_float_right.html src="https://raw.githubusercontent.com/idvorkin-ai-tools/agent-dashboard/main/docs/dashboard-screenshot.png" link="https://github.com/idvorkin-ai-tools/agent-dashboard" %}
-
-[Agent Dashboard](https://github.com/idvorkin-ai-tools/agent-dashboard) - central portal for monitoring multi-agent sessions:
-
-- Auto-discovers running agents
-- Shows git status, PR status, server status
-- Written by AI, for monitoring AI
-
-**Why it matters**: When you have 2-3 agents running in parallel, you need a single view of what's happening. Otherwise you're constantly SSH-ing around to check status.
-
-### Tmux on Super Steroids
-
-{% include image_float_right.html src="https://raw.githubusercontent.com/idvorkin/ipaste/main/20260101_103326.webp" link="https://github.com/idvorkin/settings/tree/main/rust/tmux_helper" %}
-
-Tmux is the backbone of multi-agent work. I've built a [hand-written Rust picker](https://github.com/idvorkin/settings/tree/main/rust/tmux_helper) that's hyper-optimized for me - down to the exact amount of space for window/pane titles so I can maximize the context I see.
-
-- Token-based fuzzy matching ("cl set" finds panes with both terms)
-- Visual markers: `◀` for current pane, `◁` for previous (Tab toggles between them)
-- Auto-switches between horizontal/vertical layout based on terminal size
-- Windows auto-rename every 10s based on running process ("claude" → "cl")
-- Integrates with Stream Deck for one-button navigation
-
-I started with [sessionx](https://github.com/omerxx/tmux-sessionx), then ported my own version from Python to Rust - went from 100ms to 14ms. I don't even know Rust, but AI made it trivial. See the [full story in my AI journal](/ai-journal#rust-tmux_helper-10x-speedup-from-python).
-
-**Why it matters**: When juggling multiple agents across containers, you need instant context switching. One keystroke to jump between sessions.
+{% include summarize-page.html src="/ai-cockpit" %}
 
 ## Where I Code
 
