@@ -118,7 +118,7 @@ For searching blog posts by keyword, theme, or metadata, use `/find-content`.
 
 For charts, summary cards, matrices, and voice widgets, use `/blog-visuals`.
 
-### Amazon Product Links
+## Amazon Product Links
 
 For Amazon affiliate product links, use `/amazon-asin`.
 
@@ -146,4 +146,3 @@ Use `/web-browse` for fetching web content (fallback chain and Cloudflare workar
 ## Processing YouTube Videos
 
 Use the `youtube-content-processor` agent for subtitle extraction, conversion, and analysis.
-
