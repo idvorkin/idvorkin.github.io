@@ -112,207 +112,23 @@ To publish: Use the `conversation-log-publisher` agent - it handles security rev
 
 ## Finding Related Blog Content
 
-**For simple keyword searches** ("does my blog mention X?"):
-- Use direct Grep: `grep -ri "keyword" _d _posts _td`
-- Fast and efficient for finding specific terms
-
-**For thematic/conceptual searches** ("what content relates to productivity?"):
-- Use the Explore agent - it can understand context and relationships
-- Good for discovering related content that doesn't use exact keywords
-
-**For metadata queries** (titles, tags, links):
-- Use jq on back-links.json (see examples below)
-- Fastest for structured data queries
-
-### Working with back-links.json
-
-Use `jq` for efficient querying:
-
-```bash
-# Search by title
-jq '.url_info | to_entries[] | select(.value.title | ascii_downcase | contains("family")) | {url: .key, title: .value.title}' back-links.json
-
-# Get post metadata
-jq '.url_info["/gap-year-igor"]' back-links.json
-
-# Find posts linking to a URL
-jq '.url_info | to_entries[] | select(.value.incoming_links[]? == "/eulogy") | .key' back-links.json
-```
+For searching blog posts by keyword, theme, or metadata, use `/find-content`.
 
 ## Blog Visual Components
 
-### Charts (Chart.js)
+For charts, summary cards, matrices, and voice widgets, use `/blog-visuals`.
 
-For patterns, see `_d/regrets.md` and `_d/activation.md`. Key principles:
+### Amazon Product Links
 
-- Store data in readable table format at top of script
-- Read labels dynamically from data using `Object.keys().map()`
-- Wrap in `defer()` to ensure DOM is ready
-
-### Summarize Page (Cross-linking)
-
-Use `{% include summarize-page.html src="/permalink" %}` to embed an auto-generated summary card linking to another post. Igor calls this "esummarize".
-
-### Quadrant Matrix (2x2 Grid)
-
-Use `{% include quadrant-matrix.html %}` - see existing uses for parameter reference.
-
-### Vapi.ai Voice Widget
-
-See `_d/tesla.md` for implementation. Backend: [github.com/idvorkin/tony_tesla](https://github.com/idvorkin/tony_tesla)
-
-### Amazon Product Links (Affiliate)
-
-**Why we use the ASIN system:**
-
-- **Performance**: Pre-fetches product metadata (title, image, price) so pages load fast
-- **Resilience**: Caches data in `_data/asins.json` so broken Amazon links don't break the blog
-- **Affiliate revenue**: All links automatically include `?tag=ighe-20` affiliate parameter
-- **Graceful degradation**: JavaScript fallback shows "View on Amazon →" button if images break
-
-**Usage:**
-
-```liquid
-{% include amazon.html asin="B0D54JZTHY" %}
-```
-
-**Multiple products (semicolon-separated):**
-
-```liquid
-{% include amazon.html asin="B0D54JZTHY;B01JA6HG88;B0FGN9GC2G" %}
-```
-
-**After adding new ASINs, update the product database:**
-
-```bash
-# Discover new ASINs and fetch product metadata
-python3 scripts/manage-asins.py sync --update
-
-# Or just validate specific ASINs
-python3 scripts/manage-asins.py validate B0D54JZTHY --update
-```
-
-**The system:**
-
-- Scans markdown files for `asin="..."` patterns
-- Fetches product data from Amazon OpenGraph metadata
-- Stores in `_data/asins.json` for Jekyll to read
-- Validates images (rejects 1x1 tracking pixels)
-- Pre-commit hook warns about placeholders
-
-For troubleshooting broken images, see `scripts/README.md`.
+For Amazon affiliate product links, use `/amazon-asin`.
 
 ## Previewing Pages
 
-### Ruby Version Requirement
-
-This project requires **Ruby 3.3.x** (set via `.ruby-version`). The github-pages gem is incompatible with Ruby 4.0+.
-
-**Important:** Homebrew Ruby may take precedence in PATH over rbenv shims. Always use `rbenv exec` to ensure the correct Ruby version:
-
-```bash
-# Install dependencies
-rbenv exec bundle install
-
-# Start Jekyll server
-rbenv exec bundle exec jekyll serve --port 4000 --livereload-port 35729 --livereload
-```
-
-### Managing Multiple Jekyll Servers
-
-**Use `running-servers` to discover and manage servers:**
-
-```bash
-# Check if a server is running for this directory
-running-servers check .
-
-# See all running servers (compact view)
-running-servers status
-
-# See full process tree with command lines
-running-servers status --full
-
-# JSON output for scripts
-running-servers status --json
-
-# Check what's on a specific port
-running-servers port 4000
-
-# Get suggested available port
-running-servers suggest
-```
-
-The script automatically detects the Tailscale hostname and provides clickable URLs.
-
-**Starting a server**: If no server is running for the current directory:
-
-```bash
-# Using just (wraps the rbenv exec command)
-just jekyll-serve <port> <livereload_port>
-# e.g., just jekyll-serve 4001 35730
-```
-
-**IMPORTANT**: Each Jekyll server uses TWO ports - main port and LiveReload port. The script calculates both using the convention: `livereload = 35729 + (port - 4000)`. Always use both ports to avoid conflicts.
-
-**Why multiple servers**: Igor runs parallel CHOP sessions in different directories (blog2, blog3, etc.). Each needs its own Jekyll server on different ports. The script tracks which directory each server is serving.
-
-### Providing Preview Links
-
-**Always provide direct section links, not just page links.** When you make changes to a specific section of a page, construct the full URL with the section anchor.
-
-Format: `http://[tailscale-hostname]:4000/[page-permalink]#[section-slug]`
-
-Example:
-- ❌ Wrong: `http://c-5001.squeaker-teeth.ts.net:4000/irl`
-- ✅ Right: `http://c-5001.squeaker-teeth.ts.net:4000/irl#keyboards`
-
-Section anchors are the slugified version of the header (lowercase, hyphens for spaces):
-- `### Keyboards` → `#keyboards`
-- `### My Dual Keyboard` → `#my-dual-keyboard`
-- `## Blog Writing Style` → `#blog-writing-style`
+Use `/serve` to check or start the Jekyll server. Always provide direct section links in preview URLs: `http://[hostname]:4000/[permalink]#[section-slug]`.
 
 ## Testing Changes
 
-**Always test includes and components with Playwright before claiming work is complete.**
-
-### Test Pages for Includes
-
-Test pages live in the `_test/` collection and are excluded from search/algolia. Create isolated test pages for each include component:
-
-**Pattern:** `_test/include-{component-name}.md`
-
-Example (`_test/include-amazon.md`):
-```markdown
----
-layout: post
-title: Test - Amazon Include
-permalink: /test/include-amazon
----
-
-# Test Page: Amazon Include
-
-## Single ASIN
-{% include amazon.html asin="B07ZWK2TQT" %}
-
-## Multiple ASINs
-{% include amazon.html asin="B07ZWK2TQT;B01JA6HG88;B0FGN9GC2G" %}
-```
-
-### Playwright Testing
-
-Create corresponding e2e tests in `tests/e2e/test-include-{name}.spec.ts`:
-
-1. **Screenshot tests** - Visual verification
-2. **Structure tests** - Verify DOM structure, classes, attributes
-3. **Integration tests** - Test component behavior
-
-Run tests: `npx playwright test tests/e2e/test-include-amazon.spec.ts --project=chromium`
-
-**Before marking work complete:**
-- ✅ Create test page in `_test/`
-- ✅ Write Playwright test with screenshots
-- ✅ Run test and verify screenshots look correct
-- ✅ Commit test page and test spec
+For testing includes and components with Playwright, use `/test-includes`.
 
 ## Internal Link Guidelines
 
@@ -325,48 +141,9 @@ Run pre-commit to check: `pre-commit run --files <your-files>`
 
 ## Fetching Web Content
 
-Use the right tool for the job — each has different tradeoffs:
-
-| Need | Tool | When |
-|------|------|------|
-| Static page / API | **WebFetch** (built-in) | Default for simple pages, no JS needed |
-| JS-rendered page | **`/web-browse <url>`** | SPAs, docs sites, dynamic content |
-| Screenshot | **`/web-browse <url> screenshot`** | Visual verification, layout checks |
-| Interact with page | **`/web-browse <url> interact`** | Forms, buttons, multi-step flows |
-
-**Fallback chain:** Lightpanda → WebFetch → Playwright CLI → ask user to paste
-
-**Known limitations:**
-- Cloudflare-protected sites block all headless browsers
-- **Medium workaround**: use RSS feeds (`curl -s "https://{username}.medium.com/feed"`) — bypasses Cloudflare entirely, returns full article content
-- Lightpanda is beta — some sites crash or return incomplete content
-- Playwright CLI needs `--browser chromium` flag (not Chrome, which isn't on ARM64)
+Use `/web-browse` for fetching web content (fallback chain and Cloudflare workarounds).
 
 ## Processing YouTube Videos
 
-Use the `youtube-content-processor` agent for the complete workflow (subtitle extraction, conversion, analysis).
+Use the `youtube-content-processor` agent for subtitle extraction, conversion, and analysis.
 
-Manual approach if needed:
-
-```bash
-yt-dlp --write-auto-sub --skip-download "https://www.youtube.com/watch?v=VIDEO_ID"
-```
-
----
-
-# Session Management
-
-## Learning and Memory
-
-- Use your journal frequently to capture technical insights and user preferences
-- Search journal before starting complex tasks for past lessons
-- Document architectural decisions for future reference
-
-## Session Workflow Review
-
-At session end (when Igor signals done or says "workflow review"):
-
-1. Review session for patterns: repeated corrections, friction points
-2. Create `.claude/workflow-recommendations/YYYY-MM-DD-HHMMSS-XXXX.md`
-3. Ask Igor if they want to merge any into CLAUDE.md
-4. For generalizable patterns, offer to PR to chop-conventions
