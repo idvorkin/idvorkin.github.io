@@ -15,6 +15,7 @@ locale = "en-us"
 "oter" = "oter"  # Part of YouTube ID 002oterS2Wg
 "vizualization" = "vizualization"  # In JS library
 "youre" = "youre"  # Intentional usage in TOC/headers
+"alls" = "alls"  # All's in TOC anchor (All's Right with the World)
 "heros" = "heros"  # Hero's without apostrophe in TOC anchors
 "theatre" = "theatre"  # British spelling used intentionally
 "gruelling" = "gruelling"  # British spelling used intentionally
