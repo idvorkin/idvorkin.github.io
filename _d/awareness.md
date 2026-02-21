@@ -8,7 +8,6 @@ tags:
   - meditation
 imagefeaturelocal: raccoon-meditate.png
 redirect_from:
-  - /awareness
   - /demello
   - /de-mello
 alias:
