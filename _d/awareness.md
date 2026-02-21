@@ -30,6 +30,7 @@ This is a summary of [Awareness: The Perils and Opportunities of Reality](https:
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [How This Relates to Mindfulness and Search Inside Yourself](#how-this-relates-to-mindfulness-and-search-inside-yourself)
 - [Part 1: The Wake-Up Call (Ch 1-10)](#part-1-the-wake-up-call-ch-1-10)
   - [Ch 1 -- On Waking Up](#ch-1----on-waking-up)
   - [Ch 2 -- Will I Be of Help to You?](#ch-2----will-i-be-of-help-to-you)
@@ -91,12 +92,21 @@ This is a summary of [Awareness: The Perils and Opportunities of Reality](https:
   - [Ch 55 -- Dead Ahead](#ch-55----dead-ahead)
   - [Ch 56 -- The Land of Love](#ch-56----the-land-of-love)
 - [Appendix](#appendix)
+  - [Two Types of Meditation: Concentration vs. Awareness](#two-types-of-meditation-concentration-vs-awareness)
   - [A Computing Analogy for Awareness](#a-computing-analogy-for-awareness)
   - [The Path to Non-Duality (Advanced Territory)](#the-path-to-non-duality-advanced-territory)
 - [Sources](#sources)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+## How This Relates to Mindfulness and Search Inside Yourself
+
+[Search Inside Yourself (SIY)](/siy) is a meditation training program for engineers developed at Google, teaching emotional intelligence through mindfulness. It provides structured, gentle practices for building self-awareness, managing emotions, and improving relationships -- think of it as practical Buddhism for the workplace. SIY emphasizes concentration practices (like following the breath) to build mental stability, then uses that stability for developing empathy, leadership skills, and resilience. It's the "how to meditate" manual with specific exercises and techniques you can practice immediately. For a broader context on mindfulness and meditation, see my [emotional health practices](/emotional-health) and [spiritual health](/spiritual-health) posts.
+
+This book is primarily about awareness meditation -- the practice of watching everything that arises in consciousness without judgment or interference. While SIY teaches both types (with more emphasis on concentration practices like breath meditation), de Mello's "Awareness" is almost entirely focused on the awareness/insight approach. His core teaching is: just observe, don't try to change anything, and understanding will transform you naturally.
+
+_For engineers: See [Appendix - A Computing Analogy](#a-computing-analogy-for-awareness) for a technical metaphor using threads, processes, and CPU allocation._
 
 ---
 
@@ -670,6 +680,26 @@ _"To come to the land of love, you must pass through the pains of death."_
 ---
 
 ## Appendix
+
+### Two Types of Meditation: Concentration vs. Awareness
+
+Before understanding the computing analogy, it's important to know that meditation has two fundamental forms:
+
+**Concentration meditation** (Samatha):
+
+- Focus attention on a single object (breath, mantra, visualization)
+- Train the mind to stay focused, returning when it wanders
+- Builds mental stability and calm
+- Examples: Following the breath, body scan, focused attention practices
+- **Computing analogy**: Keeping the main thread from [paging out](https://en.wikipedia.org/wiki/Memory_paging) -- maintaining continuous focus loaded in active memory instead of getting swapped out by distractions
+
+**Awareness meditation** (Vipassana):
+
+- Open, non-judgmental observation of whatever arises
+- Watch thoughts, emotions, sensations without trying to control them
+- Develops insight into the nature of mind and reality
+- Examples: Self-observation, mindful awareness, choiceless awareness
+- Like being a scientist observing phenomena
 
 ### A Computing Analogy for Awareness
 
