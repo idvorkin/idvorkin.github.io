@@ -112,6 +112,8 @@ This is a summary of [Awareness: The Perils and Opportunities of Reality](https:
 
 De Mello draws a sharp line between **"I"** (the awareness that observes) and **"me"** (the bundle of labels, roles, and identifications you carry around). "I" is never threatened -- it can't be. When someone criticizes you and you feel hurt, it's "me" that's hurt: your identity as a good parent, a competent worker, a likable person. Strip away every label -- your name, nationality, profession, beliefs, achievements -- and what remains is "I," the awareness itself. Nothing can touch it. The moment you see this, threats lose their power, because they were always aimed at "me," never at "I."
 
+_Computing analogy: "I" is the kernel-mode supervisor -- the OS itself, always running, never threatened by any user-space crash. "Me" is a user-mode identity process: your roles, labels, and self-image running in user space. When someone insults "me," a user-mode process panics. But the kernel doesn't care -- it just observes the panic. Awareness practice is learning to operate from kernel mode instead of being trapped in user space. See the [full computing analogy](#a-computing-analogy-for-awareness) below._
+
 ### The Four Steps to Wisdom
 
 The only structured program in the book ([Ch 25](#ch-25----four-steps-to-wisdom)):
