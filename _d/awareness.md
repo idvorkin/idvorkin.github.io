@@ -29,6 +29,12 @@ This is a summary of [Awareness: The Perils and Opportunities of Reality](https:
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Key Ideas](#key-ideas)
+  - ["I" vs. "Me"](#i-vs-me)
+  - [The Four Steps to Wisdom](#the-four-steps-to-wisdom)
+  - [Attachment vs. Preference](#attachment-vs-preference)
+  - [Understanding, Not Effort](#understanding-not-effort)
+- [Key Practices](#key-practices)
 - [How This Relates to Mindfulness and Search Inside Yourself](#how-this-relates-to-mindfulness-and-search-inside-yourself)
 - [Part 1: The Wake-Up Call (Ch 1-10)](#part-1-the-wake-up-call-ch-1-10)
   - [Ch 1 -- On Waking Up](#ch-1----on-waking-up)
@@ -98,6 +104,46 @@ This is a summary of [Awareness: The Perils and Opportunities of Reality](https:
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+## Key Ideas
+
+### "I" vs. "Me"
+
+De Mello draws a sharp line between **"I"** (the awareness that observes) and **"me"** (the bundle of labels, roles, and identifications you carry around). "I" is never threatened -- it can't be. When someone criticizes you and you feel hurt, it's "me" that's hurt: your identity as a good parent, a competent worker, a likable person. Strip away every label -- your name, nationality, profession, beliefs, achievements -- and what remains is "I," the awareness itself. Nothing can touch it. The moment you see this, threats lose their power, because they were always aimed at "me," never at "I."
+
+### The Four Steps to Wisdom
+
+The only structured program in the book ([Ch 25](#ch-25----four-steps-to-wisdom)):
+
+1. **Detect the negative feeling.** You can't deal with a cancer you haven't detected. Many people are depressed, anxious, or resentful without even knowing it.
+2. **The feeling is in you, not in reality.** The rain isn't negative -- you are. The pain is in your knee, not in the table you bumped. No person on earth has the power to make you unhappy.
+3. **Don't identify with the feeling.** Not "I am depressed" but "depression is there." You are the sky; the feeling is a cloud passing through.
+4. **Don't try to change -- just see.** Understanding is fire; it burns everything else away. When you truly see, change happens by itself.
+
+De Mello says: do this a thousand times and you'll make the biggest discovery of your life.
+
+### Attachment vs. Preference
+
+You can want things without needing them. **Attachment** says "I can't be happy without this." **Preference** says "I'd like this, but I'm fine either way." The shift from attachment to preference doesn't come through willpower or renunciation -- it comes through seeing what your desire is really worth ([Ch 33](#ch-33----desire-not-preference)).
+
+### Understanding, Not Effort
+
+Change doesn't come from pushing harder, cultivating habits, or imitating ideals. It comes from insight -- seeing clearly what is actually going on. The car metaphor ([Ch 48](#ch-48----not-pushing-it)): you don't push the car to the next city, you turn the ignition key. The key is awareness.
+
+## Key Practices
+
+- **Self-observation without judgment** -- Watch everything in you and around you as if it were happening to someone else. Don't judge, don't interfere, don't fix. ([Ch 12](#ch-12----self-observation))
+- **"I'd rather have happiness than have you"** -- Say this to someone you love in your mind. Notice the resistance. That's your conditioning showing. ([Ch 3](#ch-3----on-the-proper-kind-of-selfishness))
+- **"I really do not need you to be happy"** -- Say this to any attachment: a person, your job, your reputation. You're making contact with truth. ([Ch 40](#ch-40----detachment))
+- **"I have no right to make any demands on you"** -- Say this to someone who irritates you. Watch what happens inside. If there's resistance, you've found the dictator in you. ([Ch 28](#ch-28----change-as-greed))
+- **When angry, find the fear** -- Every angry person is a frightened person. Search for what you're afraid of losing. ([Ch 20](#ch-20----fear-the-root-of-violence))
+- **When unhappy, find what you added to reality** -- There's always an illusion, a demand, an expectation, a craving. ([Ch 33](#ch-33----desire-not-preference))
+- **Coffin meditation** -- Imagine lying in your coffin. Look at your problems from there. Do it daily. ([Ch 55](#ch-55----dead-ahead))
+- **Listen to all sounds** -- Sit quietly and hear everything around you without focusing on any one sound. Your senses come unclogged. ([Ch 53](#ch-53----listening-to-life))
+- **Spend hours observing anything** -- Faces, trees, birds in flight, a pile of stones. Break out of the prison of concepts. ([Ch 36](#ch-36----getting-concrete))
+- **Compare soul feelings vs. worldly feelings** -- The feeling from nature, absorbing work, real conversation vs. winning an argument or receiving applause. Notice which ones you feed on. ([Ch 56](#ch-56----the-land-of-love))
+
+---
 
 ## How This Relates to Mindfulness and Search Inside Yourself
 
