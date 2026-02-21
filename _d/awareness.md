@@ -20,7 +20,7 @@ permalink: /awareness
 
 A transformative spiritual guide that challenges you to wake up from the sleep of unconscious living. Anthony de Mello, a Jesuit priest and psychotherapist, delivers spiritual tough love through short chapters filled with stories, parables, and direct challenges. His message: most of us spend our lives asleep, and awareness is the key to waking up to true happiness and freedom.
 
-{% include ai-slop.html percent="60" %}
+{% include ai-slop.html percent="90" %}
 
 This is a summary of [Awareness: The Perils and Opportunities of Reality](https://www.amazon.com/Awareness-Opportunities-Reality-Anthony-Mello/dp/0385249373) - recommended by Eckhart Tolle and Naval Ravikant, and one of my guides to [spiritual health](/spiritual-health).
 
