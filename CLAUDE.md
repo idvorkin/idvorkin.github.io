@@ -137,7 +137,7 @@ For testing includes and components with Playwright, use `/test-includes`.
 - Correct: `[Voices in My Head](/voices)`
 - Wrong: `[Voices in My Head](/voices-in-my-head)`
 
-Run pre-commit to check: `pre-commit run --files <your-files>`
+Run pre-commit to check: `prek run --files <your-files>`
 
 ## Fetching Web Content
 

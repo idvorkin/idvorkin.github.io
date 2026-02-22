@@ -1190,7 +1190,7 @@
         },
         "/awareness": {
             "description": "A transformative spiritual guide that challenges you to wake up from the sleep of unconscious living. Anthony de Mello, a Jesuit priest and psychotherapist, delivers spiritual tough love through short chapters filled with stories, parables, and direct challenges. His message: most of us spend our lives asleep, and awareness is the key to waking up to true happiness and freedom.\n\n",
-            "doc_size": 56000,
+            "doc_size": 104000,
             "file_path": "_site/awareness.html",
             "incoming_links": [
                 "/siy",
@@ -1200,11 +1200,11 @@
             "markdown_path": "_d/awareness.md",
             "outgoing_links": [
                 "/anxiety",
+                "/death",
                 "/emotional-health",
                 "/happy",
                 "/idle",
-                "/jung-self-ego",
-                "/psychic-shadows",
+                "/religion",
                 "/siy",
                 "/spiritual-health"
             ],
@@ -1267,7 +1267,7 @@
         },
         "/balloon": {
             "description": "Want to plaster a huge smile on someone’s face with 10 cents of material and 20 seconds of work? Make them a balloon! In 2022, I discovered ballooning, and have used it in my joy-delivering arsenal ever since.\n\n",
-            "doc_size": 22000,
+            "doc_size": 21000,
             "file_path": "_site/balloon.html",
             "incoming_links": [
                 "/eulogy",
@@ -1301,7 +1301,7 @@
         },
         "/be-proactive": {
             "description": "I choose ‘.’ I am responsible for my own life ‘.’ My behavior is a function of my decisions, not my conditions ‘.’ I can subordinate feelings to values ‘.’ I have the initiative and the responsibility to make things happen. These are my insights from 7 habits Chapter 1.\n\n",
-            "doc_size": 23000,
+            "doc_size": 22000,
             "file_path": "_site/be-proactive.html",
             "incoming_links": [
                 "/7-habits",
@@ -1438,7 +1438,7 @@
         },
         "/books-that-defined-me": {
             "description": "Books allow great thoughts to enter our mind and mold us into who we want to become. These are the books that are molding me.\n\n",
-            "doc_size": 17000,
+            "doc_size": 16000,
             "file_path": "_site/books-that-defined-me.html",
             "incoming_links": [
                 "/being-a-great-manager",
@@ -1621,7 +1621,7 @@
             "doc_size": 34000,
             "file_path": "_site/changelog.html",
             "incoming_links": [],
-            "last_modified": "2026-02-17T08:32:01-08:00",
+            "last_modified": "2026-02-22T22:09:55+00:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
                 "/activation",
@@ -1629,7 +1629,7 @@
                 "/ai-cockpit",
                 "/ai-journal",
                 "/ai-native-manager",
-                "/chop",
+                "/how-igor-chops",
                 "/product",
                 "/recent",
                 "/shoulder-pain",
@@ -1697,7 +1697,6 @@
                 "/ai-hiring",
                 "/ai-journal",
                 "/ai-native-manager",
-                "/changelog",
                 "/chow",
                 "/gtd",
                 "/how-igor-chops",
@@ -2210,6 +2209,7 @@
             "doc_size": 24000,
             "file_path": "_site/death.html",
             "incoming_links": [
+                "/awareness",
                 "/chasing-daylight",
                 "/covid",
                 "/elder",
@@ -2229,7 +2229,7 @@
         },
         "/debug": {
             "description": "Igor's Blog",
-            "doc_size": 24000,
+            "doc_size": 23000,
             "file_path": "_site/debug.html",
             "incoming_links": [],
             "last_modified": "2025-03-16T16:15:36+00:00",
@@ -2739,7 +2739,7 @@
         },
         "/first-things-first": {
             "description": "The key to effective management, is allocating energy through the lens of importance rather than urgency. E.g, ask yourself what one thing could you do that if you did on a regular basis, would make a tremendous positive difference in your life? Lemme guess, it’s important, but not urgent so you’re not doing it. These are my insights based on the 7 habits Chapter 3.\n\n",
-            "doc_size": 26000,
+            "doc_size": 25000,
             "file_path": "_site/first-things-first.html",
             "incoming_links": [
                 "/4dx",
@@ -2994,7 +2994,7 @@
         },
         "/goals": {
             "description": "Goals are critical, there are multiple goal systems and they have consequences. They are mechanisms to deliver without micro management.\n\n",
-            "doc_size": 21000,
+            "doc_size": 20000,
             "file_path": "_site/goals.html",
             "incoming_links": [
                 "/4dx",
@@ -3152,7 +3152,7 @@
         },
         "/happy": {
             "description": "Happy is a 5 letter word that many use as the answer to what is the point of life. The follow up question of “How can you be happy” is usually followed by a blank stare, so here’s my study of the subject. Probably the most important thing is happiness is not a mood, it’s journey - Like the weather vs the climate.\n\n",
-            "doc_size": 33000,
+            "doc_size": 32000,
             "file_path": "_site/happy.html",
             "incoming_links": [
                 "/awareness",
@@ -3242,12 +3242,13 @@
                 "/ai",
                 "/ai-cockpit",
                 "/ai-journal",
+                "/changelog",
                 "/chop",
                 "/pet-projects",
                 "/y25",
                 "/y26"
             ],
-            "last_modified": "2026-02-17T18:51:28-08:00",
+            "last_modified": "2026-02-22T22:09:55+00:00",
             "markdown_path": "_d/how-igor-chops.md",
             "outgoing_links": [
                 "/40yo",
@@ -3640,7 +3641,7 @@
         },
         "/learn-code": {
             "description": "Coding is way easier than people think. Here’s some pointers.\n\n",
-            "doc_size": 14000,
+            "doc_size": 13000,
             "file_path": "_site/learn-code.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T02:47:07+00:00",
@@ -3897,7 +3898,7 @@
         },
         "/mind-at-work": {
             "description": "I have a problem, an addiction, an addiction so detrimental to quality of life, it should be described as a disease. This disease is not being present. There are many symptoms of the disease, but today I’m going to talk about my most frequent symptoms, my body at home, but my mind at work.\n\n",
-            "doc_size": 20000,
+            "doc_size": 19000,
             "file_path": "_site/mind-at-work.html",
             "incoming_links": [
                 "/addiction",
@@ -4685,7 +4686,6 @@
             "file_path": "_site/psychic-shadows.html",
             "incoming_links": [
                 "/anxiety-management",
-                "/awareness",
                 "/caring",
                 "/depression",
                 "/idle",
@@ -4870,6 +4870,7 @@
             "doc_size": 57000,
             "file_path": "_site/religion.html",
             "incoming_links": [
+                "/awareness",
                 "/four-healths",
                 "/spiritual-health",
                 "/walking-with-god",
@@ -6508,7 +6509,7 @@
         },
         "/walking-with-god": {
             "description": "Someone important to me has been reading a daily devotional. Even though I’m not religious, I’m studying with them to be able to have conversations about the insights - whether in a secular or religious context. This is my attempt to bridge two worlds: honoring the spiritual wisdom they’re finding while translating it into language that works for my engineer brain.\n\n",
-            "doc_size": 82000,
+            "doc_size": 81000,
             "file_path": "_site/walking-with-god.html",
             "incoming_links": [
                 "/religion",
@@ -6798,7 +6799,7 @@
             "incoming_links": [
                 "/changelog"
             ],
-            "last_modified": "2026-02-15T09:21:54-08:00",
+            "last_modified": "2026-02-22T22:09:55+00:00",
             "markdown_path": "_d/y2026.md",
             "outgoing_links": [
                 "/22",

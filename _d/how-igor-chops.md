@@ -125,7 +125,7 @@ Claude Code is really about autonomous agents that run in your terminal. As a te
 
 ### The Future: Multi-Agent Dashboard
 
-I was surprised when Steve Yegge mentioned this is the future - orchestrating multiple specialized agents. Surprised because I'd been accidentally building toward this. The [Agent Dashboard](#agent-dashboard) I mentioned earlier? By the way, I didn't build that at all. I just gave the requirements and Claude built it itself.
+I was surprised when Steve Yegge mentioned this is the future - orchestrating multiple specialized agents. Surprised because I'd been accidentally building toward this. The [Agent Dashboard](#the-future-multi-agent-dashboard) I mentioned earlier? By the way, I didn't build that at all. I just gave the requirements and Claude built it itself.
 
 ### The 8 Stages of AI Coding
 
@@ -153,7 +153,7 @@ This diagram perfectly captures the evolution I've lived through. Let me break d
 
 1. **Specialized Tools** - Different agents have different capabilities. One handles tests, another docs, another deployment. You're orchestrating specialists, not generalists. The [optimal number of agents](#what-im-still-figuring-out) becomes critical.
 
-1. **Orchestrated System** - This is the vision: a central dashboard managing dozens of specialized agents. The [Agent Dashboard](#agent-dashboard) is an early step toward this. You're no longer coordinating individual agents - you're managing the system that coordinates them.
+1. **Orchestrated System** - This is the vision: a central dashboard managing dozens of specialized agents. The [Agent Dashboard](#the-future-multi-agent-dashboard) is an early step toward this. You're no longer coordinating individual agents - you're managing the system that coordinates them.
 
 **Where I Am Today:** Somewhere between stages 6 and 7. Running 2-3 parallel agents on different features, learning how to avoid merge hell, figuring out when to use specialized vs. generalist agents. Stage 8 is the dream, but the tooling isn't quite there yet.
 
@@ -397,6 +397,7 @@ The SDETs were ahead of their time.
 With coding so easy, might as well make a tool just for your use case. No need to find an app that's 80% right - build exactly what you want in an afternoon.
 
 I think there's a pendulum here:
+
 - 90s: Every company needed their own IT department
 - 2000s: SaaS - rent the same software as everyone else
 - 2030s: Single dev does all the required tooling, personalized to their exact needs
@@ -449,6 +450,6 @@ At that point, two problems:
 
 Steve Yegge describes using [MCP Agent Mail](https://github.com/Dicklesworthstone/mcp_agent_mail) for multi-agent coordination: "You just give them a task and tell them to sort it out amongst themselves. There's no ego, so they quickly decide on a leader and split things up... Although it seems crazy to work that way, the agents just figure it out—they're quite resilient." See his [Beads Best Practices](https://steve-yegge.medium.com/beads-best-practices-2db636b9760c) post.
 
-This raises uncomfortable questions: If agents can recover from any workflow mess, do we still need disciplined processes? We've spent decades building guardrails to prevent non-deterministic states because *humans* can't handle the chaos. But agents can. Maybe the discipline shifts from *how you work* to *what you produce*. Maybe it's fine if your agents are sloppy, leave garbage lying around, and get into weird states - as long as the output is correct. The craftsmanship moves from the process to the artifact. I don't know what to do with this yet.
+This raises uncomfortable questions: If agents can recover from any workflow mess, do we still need disciplined processes? We've spent decades building guardrails to prevent non-deterministic states because _humans_ can't handle the chaos. But agents can. Maybe the discipline shifts from _how you work_ to _what you produce_. Maybe it's fine if your agents are sloppy, leave garbage lying around, and get into weird states - as long as the output is correct. The craftsmanship moves from the process to the artifact. I don't know what to do with this yet.
 
-(By the way, this is how I use voice. My voice input ends up being garbage - half-formed thoughts, wrong words, trailing off mid-sentence - but agents figure out what I meant and respond to my intent, not my mangled transcription. Even the *input* can be sloppy now.)
+(By the way, this is how I use voice. My voice input ends up being garbage - half-formed thoughts, wrong words, trailing off mid-sentence - but agents figure out what I meant and respond to my intent, not my mangled transcription. Even the _input_ can be sloppy now.)
