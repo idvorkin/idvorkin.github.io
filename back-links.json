@@ -27,6 +27,7 @@
         "/activation-energy": "/activation",
         "/addictions": "/addiction",
         "/affirm": "/affirmations",
+        "/ai-browsers": "/browsers-for-machines",
         "/ai-coder": "/chop",
         "/ai-em": "/ai-native-manager",
         "/ai-native-em": "/ai-native-manager",
@@ -42,7 +43,6 @@
         "/arthur-brooks-oprah": "/build-life-you-want",
         "/atomic-habits": "/d/habits",
         "/augmentedreality": "/ar",
-        "/awareness": "/awareness",
         "/ballooning": "/balloon",
         "/bbb": "/build-bubble-bike",
         "/begin-with-the-end-in-mind": "/end-in-mind",
@@ -142,6 +142,7 @@
         "/habits": "/d/habits",
         "/happiness": "/happy",
         "/happiness-guide": "/build-life-you-want",
+        "/headless-browsers": "/browsers-for-machines",
         "/healthspan": "/last-year",
         "/heap": "/random-idea",
         "/heavy-club": "/kettlebell",
@@ -167,6 +168,7 @@
         "/life-chapters": "/chapters",
         "/life-coach": "/larry",
         "/life-stages": "/chapters",
+        "/lightpanda": "/browsers-for-machines",
         "/linguistic-relativity": "/words-we-dont-have",
         "/lisp": "/sicp",
         "/llm-intern": "/genai-talk",
@@ -216,6 +218,7 @@
         "/personal-development": "/timeoff",
         "/phoney": "/insecure",
         "/plan": "/planning",
+        "/playwright-cli": "/browsers-for-machines",
         "/pm": "/product",
         "/podcasting": "/podcast",
         "/podcasts": "/podcast",
@@ -552,6 +555,7 @@
             "incoming_links": [
                 "/addiction",
                 "/balance",
+                "/changelog",
                 "/energy",
                 "/energy-abundance",
                 "/gap-year-igor",
@@ -800,7 +804,9 @@
             "doc_size": 25000,
             "file_path": "_site/ai-cockpit.html",
             "incoming_links": [
-                "/ai-native-manager"
+                "/ai-native-manager",
+                "/changelog",
+                "/how-igor-chops"
             ],
             "last_modified": "2026-02-14T10:44:54-08:00",
             "markdown_path": "_d/ai-cockpit.md",
@@ -896,7 +902,7 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get super lost\n\n",
-            "doc_size": 107000,
+            "doc_size": 116000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai",
@@ -904,11 +910,10 @@
                 "/ai-native-manager",
                 "/changelog",
                 "/chop",
-                "/how-igor-chops",
                 "/walking-with-god",
                 "/y25"
             ],
-            "last_modified": "2026-02-14T09:13:53-08:00",
+            "last_modified": "2026-02-17T09:40:55-08:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
@@ -928,16 +933,20 @@
         },
         "/ai-native-manager": {
             "description": "What does it mean to be an engineering manager when AI is rewriting every assumption you have about software, teams, and your own role? I don’t know yet. Nobody does. But I’m figuring it out in real time, and these are my notes from the chaos.\n\n",
-            "doc_size": 35000,
+            "doc_size": 41000,
             "file_path": "_site/ai-native-manager.html",
-            "incoming_links": [],
-            "last_modified": "2026-02-15T08:46:17-08:00",
+            "incoming_links": [
+                "/changelog",
+                "/manager-book"
+            ],
+            "last_modified": "2026-02-17T09:17:40-08:00",
             "markdown_path": "_d/ai-native-manager.md",
             "outgoing_links": [
                 "/agency",
                 "/ai-cockpit",
                 "/ai-hiring",
                 "/ai-journal",
+                "/chop",
                 "/coaching",
                 "/manager-book"
             ],
@@ -984,7 +993,7 @@
                 "/ai-faq",
                 "/ai-journal"
             ],
-            "last_modified": "2026-01-03T14:35:14.384003+00:00",
+            "last_modified": "2026-01-03T14:37:34+00:00",
             "markdown_path": "_d/ai-security.md",
             "outgoing_links": [
                 "/ai-faq"
@@ -1078,6 +1087,7 @@
                 "/affirmations",
                 "/agency",
                 "/anxiety-management",
+                "/awareness",
                 "/depression",
                 "/fail",
                 "/gtd",
@@ -1178,6 +1188,30 @@
             "title": "AST Grep",
             "url": "/ast-grep"
         },
+        "/awareness": {
+            "description": "A transformative spiritual guide that challenges you to wake up from the sleep of unconscious living. Anthony de Mello, a Jesuit priest and psychotherapist, delivers spiritual tough love through short chapters filled with stories, parables, and direct challenges. His message: most of us spend our lives asleep, and awareness is the key to waking up to true happiness and freedom.\n\n",
+            "doc_size": 56000,
+            "file_path": "_site/awareness.html",
+            "incoming_links": [
+                "/siy",
+                "/y26"
+            ],
+            "last_modified": "2026-02-21T07:45:09-08:00",
+            "markdown_path": "_d/awareness.md",
+            "outgoing_links": [
+                "/anxiety",
+                "/emotional-health",
+                "/happy",
+                "/idle",
+                "/jung-self-ego",
+                "/psychic-shadows",
+                "/siy",
+                "/spiritual-health"
+            ],
+            "redirect_url": "",
+            "title": "Awareness: The Perils and Opportunities of Reality",
+            "url": "/awareness"
+        },
         "/back-pain": {
             "description": "Back pain is one of the most common and debilitating conditions. Stuart McGill’s research changed how we think about it: the spine should stay stiff while motion comes from the hips and shoulders.\n\n",
             "doc_size": 21000,
@@ -1233,7 +1267,7 @@
         },
         "/balloon": {
             "description": "Want to plaster a huge smile on someone’s face with 10 cents of material and 20 seconds of work? Make them a balloon! In 2022, I discovered ballooning, and have used it in my joy-delivering arsenal ever since.\n\n",
-            "doc_size": 21000,
+            "doc_size": 22000,
             "file_path": "_site/balloon.html",
             "incoming_links": [
                 "/eulogy",
@@ -1267,7 +1301,7 @@
         },
         "/be-proactive": {
             "description": "I choose ‘.’ I am responsible for my own life ‘.’ My behavior is a function of my decisions, not my conditions ‘.’ I can subordinate feelings to values ‘.’ I have the initiative and the responsibility to make things happen. These are my insights from 7 habits Chapter 1.\n\n",
-            "doc_size": 22000,
+            "doc_size": 23000,
             "file_path": "_site/be-proactive.html",
             "incoming_links": [
                 "/7-habits",
@@ -1404,7 +1438,7 @@
         },
         "/books-that-defined-me": {
             "description": "Books allow great thoughts to enter our mind and mold us into who we want to become. These are the books that are molding me.\n\n",
-            "doc_size": 16000,
+            "doc_size": 17000,
             "file_path": "_site/books-that-defined-me.html",
             "incoming_links": [
                 "/being-a-great-manager",
@@ -1451,6 +1485,18 @@
             "redirect_url": "",
             "title": "My Brompton and its accoutrements",
             "url": "/brompton-toys"
+        },
+        "/browsers-for-machines": {
+            "description": "Chrome was built for humans and retrofitted for automation. That era is ending. A new generation of tools is purpose-built for AI agents — and the tradeoffs are fascinating.\n\n",
+            "doc_size": 28000,
+            "file_path": "_site/browsers-for-machines.html",
+            "incoming_links": [],
+            "last_modified": "2026-02-15T10:08:10-08:00",
+            "markdown_path": "_d/browsers-for-machines.md",
+            "outgoing_links": [],
+            "redirect_url": "",
+            "title": "Browsers for Machines: The Headless Browser Landscape for AI Agents",
+            "url": "/browsers-for-machines"
         },
         "/brython": {
             "description": "This page is built with brython, a python running in browser via WASM. This is my playground to try interesting things with brython.\n\n",
@@ -1572,19 +1618,23 @@
         },
         "/changelog": {
             "description": "A weekly summary of what changed on this blog and across my GitHub projects. Useful for returning readers who want to catch up on new content and updates.\n\n",
-            "doc_size": 25000,
+            "doc_size": 34000,
             "file_path": "_site/changelog.html",
             "incoming_links": [],
-            "last_modified": "2026-02-01T18:49:48+00:00",
+            "last_modified": "2026-02-17T08:32:01-08:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
+                "/activation",
                 "/addiction",
+                "/ai-cockpit",
                 "/ai-journal",
+                "/ai-native-manager",
                 "/chop",
                 "/product",
                 "/recent",
                 "/shoulder-pain",
-                "/spiritual-health"
+                "/spiritual-health",
+                "/y26"
             ],
             "redirect_url": "",
             "title": "Changelog",
@@ -1646,6 +1696,7 @@
                 "/ai-developer",
                 "/ai-hiring",
                 "/ai-journal",
+                "/ai-native-manager",
                 "/changelog",
                 "/chow",
                 "/gtd",
@@ -2178,7 +2229,7 @@
         },
         "/debug": {
             "description": "Igor's Blog",
-            "doc_size": 23000,
+            "doc_size": 24000,
             "file_path": "_site/debug.html",
             "incoming_links": [],
             "last_modified": "2025-03-16T16:15:36+00:00",
@@ -2384,6 +2435,7 @@
             "doc_size": 21000,
             "file_path": "_site/emotional-health.html",
             "incoming_links": [
+                "/awareness",
                 "/essentialism",
                 "/four-healths",
                 "/gap-year-igor",
@@ -2687,7 +2739,7 @@
         },
         "/first-things-first": {
             "description": "The key to effective management, is allocating energy through the lens of importance rather than urgency. E.g, ask yourself what one thing could you do that if you did on a regular basis, would make a tremendous positive difference in your life? Lemme guess, it’s important, but not urgent so you’re not doing it. These are my insights based on the 7 habits Chapter 3.\n\n",
-            "doc_size": 25000,
+            "doc_size": 26000,
             "file_path": "_site/first-things-first.html",
             "incoming_links": [
                 "/4dx",
@@ -2873,7 +2925,7 @@
                 "/y25",
                 "/y26"
             ],
-            "last_modified": "2026-01-19T17:10:28.477385+00:00",
+            "last_modified": "2026-01-19T09:10:34-08:00",
             "markdown_path": "_d/igor-gap-year.md",
             "outgoing_links": [
                 "/7-habits",
@@ -2942,7 +2994,7 @@
         },
         "/goals": {
             "description": "Goals are critical, there are multiple goal systems and they have consequences. They are mechanisms to deliver without micro management.\n\n",
-            "doc_size": 20000,
+            "doc_size": 21000,
             "file_path": "_site/goals.html",
             "incoming_links": [
                 "/4dx",
@@ -3100,9 +3152,10 @@
         },
         "/happy": {
             "description": "Happy is a 5 letter word that many use as the answer to what is the point of life. The follow up question of “How can you be happy” is usually followed by a blank stare, so here’s my study of the subject. Probably the most important thing is happiness is not a mood, it’s journey - Like the weather vs the climate.\n\n",
-            "doc_size": 32000,
+            "doc_size": 33000,
             "file_path": "_site/happy.html",
             "incoming_links": [
+                "/awareness",
                 "/chasing-daylight",
                 "/emotions",
                 "/hobby",
@@ -3183,7 +3236,7 @@
         },
         "/how-igor-chops": {
             "description": "I mumble to Claude on my couch while my family wonders who I’m talking to. I vibe code in the car while my son drives. I rent the most expensive brain I can get. This is my CHOP (Chat-Oriented Programming) setup: the infrastructure, the tools, and what I’ve learned.\n\n",
-            "doc_size": 54000,
+            "doc_size": 50000,
             "file_path": "_site/how-igor-chops.html",
             "incoming_links": [
                 "/ai",
@@ -3194,11 +3247,11 @@
                 "/y25",
                 "/y26"
             ],
-            "last_modified": "2026-01-25T17:19:09-08:00",
+            "last_modified": "2026-02-17T18:51:28-08:00",
             "markdown_path": "_d/how-igor-chops.md",
             "outgoing_links": [
                 "/40yo",
-                "/ai-journal",
+                "/ai-cockpit",
                 "/chop",
                 "/chow",
                 "/enable",
@@ -3277,6 +3330,7 @@
             "file_path": "_site/idle.html",
             "incoming_links": [
                 "/anxiety",
+                "/awareness",
                 "/depression",
                 "/gtd",
                 "/happy",
@@ -3586,7 +3640,7 @@
         },
         "/learn-code": {
             "description": "Coding is way easier than people think. Here’s some pointers.\n\n",
-            "doc_size": 13000,
+            "doc_size": 14000,
             "file_path": "_site/learn-code.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T02:47:07+00:00",
@@ -3700,6 +3754,7 @@
             "outgoing_links": [
                 "/22",
                 "/90days",
+                "/ai-native-manager",
                 "/being-a-great-manager",
                 "/books-that-defined-me",
                 "/coaching",
@@ -3842,7 +3897,7 @@
         },
         "/mind-at-work": {
             "description": "I have a problem, an addiction, an addiction so detrimental to quality of life, it should be described as a disease. This disease is not being present. There are many symptoms of the disease, but today I’m going to talk about my most frequent symptoms, my body at home, but my mind at work.\n\n",
-            "doc_size": 19000,
+            "doc_size": 20000,
             "file_path": "_site/mind-at-work.html",
             "incoming_links": [
                 "/addiction",
@@ -4069,7 +4124,7 @@
                 "/walking-with-god",
                 "/y26"
             ],
-            "last_modified": "2026-01-19T02:00:19.657325+00:00",
+            "last_modified": "2026-01-18T18:00:27-08:00",
             "markdown_path": "_d/2018-04-29-mortality-software.md",
             "outgoing_links": [
                 "/affirmations",
@@ -4588,7 +4643,7 @@
                 "/energy",
                 "/timeoff-2022-02"
             ],
-            "last_modified": "2025-12-21T15:35:58.643459+00:00",
+            "last_modified": "2025-12-21T15:38:26+00:00",
             "markdown_path": "_d/productive2.md",
             "outgoing_links": [
                 "/addiction",
@@ -4630,6 +4685,7 @@
             "file_path": "_site/psychic-shadows.html",
             "incoming_links": [
                 "/anxiety-management",
+                "/awareness",
                 "/caring",
                 "/depression",
                 "/idle",
@@ -5067,6 +5123,7 @@
             "file_path": "_site/siy.html",
             "incoming_links": [
                 "/anxiety-management",
+                "/awareness",
                 "/be-proactive",
                 "/books-that-defined-me",
                 "/coaching",
@@ -5233,9 +5290,10 @@
         },
         "/spiritual-health": {
             "description": "I’m not sure spiritual health is real. It might be a fancy label for “stuff that makes you feel less lost,” or it might be the most important thing you’re neglecting. This page is where I muddle through that question — building up frameworks, stress-testing them, and honestly considering whether it’s all bullshit. So far, the best test I’ve found: are you sustainably motivated in a way you’d be proud to see in your child? If yes, you’ve probably cracked it — even if you can’t explain how. If no, the word to focus on is motivated, not meaning. You can philosophize about meaning forever and never become more spiritually healthy. That’s the biggest trap. Motivation is the proof that meaning is present. When it’s missing, the question is whether you’re lacking purpose, transcendence, or coherence — and what to do about it.\n\n",
-            "doc_size": 89000,
+            "doc_size": 90000,
             "file_path": "_site/spiritual-health.html",
             "incoming_links": [
+                "/awareness",
                 "/changelog",
                 "/elder",
                 "/four-healths",
@@ -5243,7 +5301,7 @@
                 "/walking-with-god",
                 "/y26"
             ],
-            "last_modified": "2026-02-15T09:09:55-08:00",
+            "last_modified": "2026-02-17T16:38:50-08:00",
             "markdown_path": "_d/spiritual-health.md",
             "outgoing_links": [
                 "/activation",
@@ -6450,7 +6508,7 @@
         },
         "/walking-with-god": {
             "description": "Someone important to me has been reading a daily devotional. Even though I’m not religious, I’m studying with them to be able to have conversations about the insights - whether in a secular or religious context. This is my attempt to bridge two worlds: honoring the spiritual wisdom they’re finding while translating it into language that works for my engineer brain.\n\n",
-            "doc_size": 81000,
+            "doc_size": 82000,
             "file_path": "_site/walking-with-god.html",
             "incoming_links": [
                 "/religion",
@@ -6737,8 +6795,10 @@
             "description": "I like to begin with the end in mind, so let’s write a report for 2026. This hasn’t happened, but if I don’t write it out and focus on it, it certainly won’t.\n\n",
             "doc_size": 29000,
             "file_path": "_site/y26.html",
-            "incoming_links": [],
-            "last_modified": "2026-01-19T17:12:37.856245+00:00",
+            "incoming_links": [
+                "/changelog"
+            ],
+            "last_modified": "2026-02-15T09:21:54-08:00",
             "markdown_path": "_d/y2026.md",
             "outgoing_links": [
                 "/22",
