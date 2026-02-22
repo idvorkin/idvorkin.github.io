@@ -97,7 +97,7 @@ YOU MUST find the root cause - NEVER fix symptoms or add workarounds.
 
 ### Commit Guidelines
 
-- **ALWAYS run pre-commit checks before committing**: `pre-commit run --files <files>`
+- **ALWAYS run pre-commit checks before committing**: `prek run --files <files>`
 - **Generated JS files ARE committed** (assets/js/index.js, assets/js/index.js.map)
 - Run `just js-build` before committing to ensure JS bundle is up to date
 - Break commits into logical changes

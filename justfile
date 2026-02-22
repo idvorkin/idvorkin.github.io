@@ -3,7 +3,7 @@ default:
 
 # Setup development environment (run once after clone)
 setup:
-    pre-commit install
+    prek install
 
 # ===== JavaScript/TypeScript Build System =====
 # For JavaScript/TypeScript development, use these commands:
