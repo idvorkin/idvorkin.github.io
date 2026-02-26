@@ -9,6 +9,11 @@ tags:
   - how
 redirect_from:
   - /chot
+  - /trampoline
+  - /trampoline-prompt
+alias:
+  - /trampoline
+  - /trampoline-prompt
 ---
 
 I used to stare at blank pages. Now I have a different problem: AI will happily fill those pages for me, but my brain stays empty. CHOW - Chat-Oriented Writing - is my answer: using AI to think better, not just write faster. The written artifact is a side effect. The real product is clarity in your head. This post covers why writing equals thinking, the risk of outsourcing that thinking to AI, and the four thinking modes - Madman, Architect, Carpenter, Judge - that help you partner with AI instead of just delegating to it.
@@ -32,6 +37,10 @@ I used to stare at blank pages. Now I have a different problem: AI will happily 
   - [Filtering Is Easier Than Creating](#filtering-is-easier-than-creating)
   - [The Collaboration Patterns](#the-collaboration-patterns)
   - [AI Slop vs. Human Sludge](#ai-slop-vs-human-sludge)
+- [Trampoline Prompts](#trampoline-prompts)
+  - [What Makes a Prompt a Trampoline](#what-makes-a-prompt-a-trampoline)
+  - [Trampoline vs. Delegation](#trampoline-vs-delegation)
+  - [Trampoline Prompt Patterns](#trampoline-prompt-patterns)
 - [Deep ideas](#deep-ideas)
   - [Beyond Images: Interactive Visualizations as Apps](#beyond-images-interactive-visualizations-as-apps)
   - [Generating the content for the reader](#generating-the-content-for-the-reader)
@@ -274,6 +283,79 @@ Here's the thing: **AI can be a hell of a lot better than human sludge.** At lea
 The bar isn't "as good as a human." The bar is "as good as the actual content humans produce" - and that bar is surprisingly low.
 
 But of course, the real value isn't replacing human sludge with AI slop. It's using AI to **augment**: take human sludge and make it good, or take high-quality human content and make it even better. That's what CHOW is actually about.
+
+## Trampoline Prompts
+
+{% include blob_image_float_right.html src="blog/raccoon-trampoline-prompts.webp" %}
+
+Most prompts land flat. You ask, AI answers, you move on. Your brain never left the ground.
+
+A trampoline prompt is different. It bounces you — the human — into thinking you wouldn't have done on your own. The AI's response isn't the point. Your reaction to it is. You land somewhere higher than where you started.
+
+This is the core mechanic of CHOW working well. When the prompt is a trampoline, the conversation becomes a thinking tool. When it's not, you're just generating text.
+
+### What Makes a Prompt a Trampoline
+
+A trampoline prompt has three properties:
+
+1. **It creates a gap.** The prompt surfaces a tension, contradiction, or question you hadn't noticed. Your brain has to work to close the gap.
+2. **It requires your knowledge.** The AI can't answer it alone — it needs what's in your head. This forces you to articulate things you've been carrying around as vague intuitions.
+3. **The answer surprises you.** Not the AI's answer — yours. When you respond to a trampoline prompt, you discover you think something you didn't know you thought.
+
+Compare: "Write me a summary of this meeting" is a delegation prompt. Your brain idles. But "What decision did we actually make in this meeting, and does everyone agree?" — that's a trampoline. You have to think. You might realize you don't know the answer.
+
+### Trampoline vs. Delegation
+
+Both are useful. But they do different things.
+
+| Delegation Prompt           | Trampoline Prompt                                                |
+| --------------------------- | ---------------------------------------------------------------- |
+| "Write a blog post about X" | "What do I actually believe about X that most people get wrong?" |
+| "Summarize this article"    | "What in this article contradicts what I wrote last month?"      |
+| "Give me 5 ideas for Y"     | "Why haven't I done Y yet? What's the real blocker?"             |
+| "Draft an email to Z"       | "What am I avoiding saying to Z?"                                |
+| AI does the work            | You do the thinking                                              |
+| Output is the product       | Clarity is the product                                           |
+
+Delegation prompts have their place — sometimes you genuinely need AI to handle the generative load (see [Filtering Is Easier Than Creating](#filtering-is-easier-than-creating)). But if every prompt you write is delegation, you're outsourcing your thinking. CHOW dies.
+
+The ratio matters. If I look back at a session and every prompt was delegation, I didn't learn anything. If at least a third were trampolines, I probably came out sharper than I went in.
+
+### Trampoline Prompt Patterns
+
+Here are patterns I use, especially with [Larry](/larry):
+
+**The Mirror** — Force yourself to see your own pattern.
+
+- "I've said I'd do X three times now. What's actually stopping me?"
+- "What would someone who reads my last five journal entries conclude about my priorities?"
+
+**The Contradiction** — Surface the tension between what you say and what you do.
+
+- "I say I value Y, but my calendar shows Z. What's going on?"
+- "Where am I fooling myself right now?"
+
+**The Pre-mortem** — Think backward from failure.
+
+- "It's six months from now and this project failed. What happened?"
+- "What's the most likely way I'll sabotage this?"
+
+**The Outsider** — Borrow a perspective you don't naturally take.
+
+- "How would my manager describe what I'm struggling with?"
+- "If I were coaching someone in my exact situation, what would I tell them?"
+
+**The Zoom** — Change the altitude of your thinking.
+
+- "Forget the details — what's the actual question I'm trying to answer?"
+- "I've been thinking about this abstractly. What's the concrete next action?"
+
+**The Gap** — Find what's missing from your reasoning.
+
+- "What am I not considering?"
+- "What question should I be asking that I haven't asked?"
+
+The best trampoline prompts feel slightly uncomfortable. That's the bounce.
 
 ## Deep ideas
 
