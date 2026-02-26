@@ -11,9 +11,6 @@ redirect_from:
   - /chot
   - /trampoline
   - /trampoline-prompt
-alias:
-  - /trampoline
-  - /trampoline-prompt
 ---
 
 I used to stare at blank pages. Now I have a different problem: AI will happily fill those pages for me, but my brain stays empty. CHOW - Chat-Oriented Writing - is my answer: using AI to think better, not just write faster. The written artifact is a side effect. The real product is clarity in your head. This post covers why writing equals thinking, the risk of outsourcing that thinking to AI, and the four thinking modes - Madman, Architect, Carpenter, Judge - that help you partner with AI instead of just delegating to it.
