@@ -11,7 +11,6 @@ alias:
 
 My son is fifteen and converting to Greek Orthodox Christianity. Guess that means I'm going to learn a lot about it. Six months ago I couldn't tell you the difference between Catholic and Christian — now I'm casually dropping words like theosis and the Great Schism. When someone you love finds something meaningful, you learn about it. It's been a fun challenge: find the good stuff, name the hard parts, figure out what maps to things I already care about. That's what this page is.
 
-
 {% include ai-slop.html percent="80" %}
 
 {% include local_image_float_right.html src="raccoon-zach-orthodox-church.webp" %}
@@ -31,7 +30,7 @@ My son is fifteen and converting to Greek Orthodox Christianity. Guess that mean
   - [Big upsides to the greek orthodox way](#big-upsides-to-the-greek-orthodox-way)
 - [Stuff I Like](#stuff-i-like)
 - [Stuff That Would Make It More Compatible With Me](#stuff-that-would-make-it-more-compatible-with-me)
-- [Appendix: Random Connections](#apepndix-random-connections)
+- [Appendix: Random Connections](#appendix-random-connections)
 - [Appendix: What Appeals to Zach](#appendix-what-appeals-to-zach)
 
 <!-- vim-markdown-toc-end -->
@@ -74,13 +73,13 @@ What's left? Bread, vegetables, fruit, grains, legumes, shellfish (oddly enough,
 
 **The major fasting periods:**
 
-| Fast | When | Duration | How Strict |
-|------|------|----------|------------|
-| **Great Lent** | 40 days before Pascha (Easter) | ~7 weeks | The strictest — no meat, dairy, fish, wine, or oil on many days. Holy Week (the final week) is the most intense |
-| **Nativity Fast (Advent)** | Nov 15 – Dec 24 | 40 days | Moderate — fish allowed on most days, stricter toward Christmas |
-| **Apostles' Fast** | Monday after All Saints Day – June 28 | Varies (1–6 weeks) | Lighter — fish allowed on most days |
-| **Dormition Fast** | Aug 1–14 | 2 weeks | Strict — similar to Great Lent, honoring the Virgin Mary |
-| **Weekly fasts** | Every Wednesday and Friday, year-round | — | No meat or dairy; strictness varies by season |
+| Fast                       | When                                   | Duration           | How Strict                                                                                                      |
+| -------------------------- | -------------------------------------- | ------------------ | --------------------------------------------------------------------------------------------------------------- |
+| **Great Lent**             | 40 days before Pascha (Easter)         | ~7 weeks           | The strictest — no meat, dairy, fish, wine, or oil on many days. Holy Week (the final week) is the most intense |
+| **Nativity Fast (Advent)** | Nov 15 – Dec 24                        | 40 days            | Moderate — fish allowed on most days, stricter toward Christmas                                                 |
+| **Apostles' Fast**         | Monday after All Saints Day – June 28  | Varies (1–6 weeks) | Lighter — fish allowed on most days                                                                             |
+| **Dormition Fast**         | Aug 1–14                               | 2 weeks            | Strict — similar to Great Lent, honoring the Virgin Mary                                                        |
+| **Weekly fasts**           | Every Wednesday and Friday, year-round | —                  | No meat or dairy; strictness varies by season                                                                   |
 
 Add it up and Orthodox Christians are fasting roughly **180–200 days per year**. That's not a diet. That's a way of life — a rhythm where simplicity is the default and feasting is the exception, not the other way around.
 
@@ -106,15 +105,15 @@ The Orthodox don't think of humans as fundamentally broken and in need of a lega
 
 ### Theosis vs. Protestant Salvation
 
-| | Protestant Salvation | Orthodox Theosis |
-|---|---|---|
-| **Metaphor** | Courtroom — guilty, then pardoned | Hospital — sick, then healed over time |
-| **Mechanism** | Accept Jesus → saved (event) | Lifelong transformation (process) |
-| **Human problem** | Guilt from sin | Incompleteness, mortality |
-| **What changes** | Your legal status before God | Your actual nature and character |
-| **Role of effort** | Faith alone (works can't save you) | Synergy — God's grace + your effort together |
-| **Completion** | At the moment of faith | Never fully complete in this life |
-| **Daily practice** | Bible study, prayer, fellowship | Fasting, liturgy, prayer, confession, asceticism |
+|                    | Protestant Salvation               | Orthodox Theosis                                 |
+| ------------------ | ---------------------------------- | ------------------------------------------------ |
+| **Metaphor**       | Courtroom — guilty, then pardoned  | Hospital — sick, then healed over time           |
+| **Mechanism**      | Accept Jesus → saved (event)       | Lifelong transformation (process)                |
+| **Human problem**  | Guilt from sin                     | Incompleteness, mortality                        |
+| **What changes**   | Your legal status before God       | Your actual nature and character                 |
+| **Role of effort** | Faith alone (works can't save you) | Synergy — God's grace + your effort together     |
+| **Completion**     | At the moment of faith             | Never fully complete in this life                |
+| **Daily practice** | Bible study, prayer, fellowship    | Fasting, liturgy, prayer, confession, asceticism |
 
 ### Theosis vs. Secular Self-Improvement
 
@@ -130,18 +129,18 @@ Both frameworks say:
 
 ### The Translation Table
 
-| Orthodox Theosis | My Secular Framework |
-|---|---|
-| Becoming like God | Growing toward my [eulogy virtues](/eulogy) |
-| Ascetic discipline (fasting, prayer) | [Deliberate. Disciplined. Daily.](/affirmations) |
-| The whole person in worship | [Four Healths](/four-healths) — physical, emotional, cognitive, spiritual |
-| Image and likeness of God | The person described in my eulogy |
-| Synergy (grace + effort) | Growth mindset + systems + self-compassion |
-| Liturgical rhythm (daily, weekly, yearly) | Morning routine, weekly review, annual reflection |
-| Confession and repentance | [Regrets as compass](/regrets) — use failure as data |
-| Theosis is never complete | "Completely aspirational" — always becoming, never arrived |
-| Communion with saints | Mentors, authors, communities that shape you |
-| Holy Tradition alongside Scripture | Experience alongside theory — both matter |
+| Orthodox Theosis                          | My Secular Framework                                                      |
+| ----------------------------------------- | ------------------------------------------------------------------------- |
+| Becoming like God                         | Growing toward my [eulogy virtues](/eulogy)                               |
+| Ascetic discipline (fasting, prayer)      | [Deliberate. Disciplined. Daily.](/affirmations)                          |
+| The whole person in worship               | [Four Healths](/four-healths) — physical, emotional, cognitive, spiritual |
+| Image and likeness of God                 | The person described in my eulogy                                         |
+| Synergy (grace + effort)                  | Growth mindset + systems + self-compassion                                |
+| Liturgical rhythm (daily, weekly, yearly) | Morning routine, weekly review, annual reflection                         |
+| Confession and repentance                 | [Regrets as compass](/regrets) — use failure as data                      |
+| Theosis is never complete                 | "Completely aspirational" — always becoming, never arrived                |
+| Communion with saints                     | Mentors, authors, communities that shape you                              |
+| Holy Tradition alongside Scripture        | Experience alongside theory — both matter                                 |
 
 ### Big upsides to the greek orthodox way
 
