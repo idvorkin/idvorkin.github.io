@@ -79,7 +79,9 @@ The concept isn't new. I've been thinking about this kind of AI-assisted self-re
 
 {%include summarize-page.html src="/mortality-software"%}
 
-What makes Tony effective isn't just his personality (though the Jersey accent helps). It's that he knows who I want to be—he's trained on my values, my goals, my eulogy—and can remind me of them when I'm lost in the weeds of daily contradictions. This isn't talking to yourself; it's talking to your AI life coach who knows who you want to be and can cut through your mental noise to get you back on track.
+What makes Tony effective isn't just his personality (though the Jersey accent helps). It's that he uses [trampoline prompts](/chow#trampoline-prompts) — questions that bounce your own words back at you harder than you sent them. "You wrote 'car-free spirit' in your eulogy, but you drove every day this week" isn't advice. It's a mirror. The insight comes from you, not Tony.
+
+He knows who I want to be—he's trained on my values, my goals, my eulogy—and can remind me of them when I'm lost in the weeds of daily contradictions. This isn't talking to yourself; it's talking to your AI life coach who knows who you want to be and can cut through your mental noise to get you back on track.
 
 The future of personal development might not be traditional therapy or life coaching. It might be having thoughtful conversations with AI coaches trained on your deepest values, designed to help you stay aligned with your authentic self when life gets complicated. And honestly? That future is already here.
 
