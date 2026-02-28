@@ -36,6 +36,7 @@ I did my Bar Mitzvah at the Wailing Wall in Israel — the holiest place in Juda
   - [Be Tolerant Of Others](#be-tolerant-of-others)
   - [Be Deliberate, Disciplined, Daily](#be-deliberate-disciplined-daily)
   - [Do the work](#do-the-work)
+  - [Choose Joy](#choose-joy)
   - [Others I like and need to categorize](#others-i-like-and-need-to-categorize)
 - [Appendix and stuff I'm working in ...](#appendix-and-stuff-im-working-in-)
   - [Why Religion?](#why-religion)
@@ -337,6 +338,15 @@ While I struggle with literal belief, I've found certain verses capture truths a
 - 2 Thessalonians 3:10 - "For even when we were with you, we gave you this rule: 'The one who is unwilling to work shall not eat.'"
 - Proverbs 13:4 - "Lazy people want much but get little, but those who work hard will prosper."
 - Colossians 3:23 - "Whatever you do, work at it with all your heart, as working for the Lord, not for human masters."
+
+### Choose Joy
+
+- Philippians 4:4 - "Rejoice in the Lord always; again I will say, rejoice."
+- Nehemiah 8:10 - "Do not grieve, for the joy of the Lord is your strength."
+- Psalm 16:11 - "You make known to me the path of life; in your presence there is fullness of joy; at your right hand are pleasures forevermore."
+- Romans 15:13 - "May the God of hope fill you with all joy and peace in believing, so that by the power of the Holy Spirit you may abound in hope."
+- James 1:2-3 - "Count it all joy, my brothers, when you meet trials of various kinds, for you know that the testing of your faith produces steadfastness."
+- Psalm 30:5 - "Weeping may tarry for the night, but joy comes with the morning."
 
 ### Others I like and need to categorize
 
