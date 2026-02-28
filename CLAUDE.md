@@ -61,6 +61,24 @@ This saves a click and goes directly to what matters - the code changes.
 
 For content/visual PRs, include a rendered screenshot in the PR description. Protocol:
 
+0. **Ensure Jekyll server is running** (screenshots will be blank/wrong without it):
+
+   ```bash
+   # Check if already running
+   running-servers check .
+
+   # If not running, start it (blocks terminal — use background or separate shell)
+   just jekyll-serve 4000 35729 > /tmp/jekyll.log 2>&1 &
+
+   # Wait for it to be ready (first build takes ~30s)
+   timeout 60 bash -c 'until curl -s -o /dev/null -w "%{http_code}" http://localhost:4000/ | grep -q 200; do sleep 2; done'
+   ```
+
+   Common gotchas:
+   - Server takes ~30s on first build — screenshot before it's ready = blank page
+   - Port 4000 may be taken — check with `running-servers check .` first
+   - Content changes need a rebuild — wait for livereload or give it a few seconds after saving
+
 1. **Take screenshot** of the rendered page section:
 
    ```bash
@@ -68,7 +86,9 @@ For content/visual PRs, include a rendered screenshot in the PR description. Pro
      --wait-for-timeout 3000 "http://localhost:4000/{permalink}#{section}" /tmp/screenshot.png
    ```
 
-   If you need to scroll to a specific section, use a node one-liner with `scrollIntoView`.
+   - `--wait-for-timeout 3000` is critical — without it pages render blank (JS needs time)
+   - Verify screenshot size is >50KB; if ~5KB it's blank
+   - If you need to scroll to a specific section, use a node one-liner with `scrollIntoView`
 
 2. **Create a gist** to host the image:
 
