@@ -18,6 +18,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-02-28](#2026-02-28)
+    - [Debugging AI Image Generation: Gemini 2.5 → 3.1 Model Migration](#debugging-ai-image-generation-gemini-25--31-model-migration)
   - [2026-02-17](#2026-02-17)
     - [AI Accuses Open Source Maintainers of Being Humanist](#ai-accuses-open-source-maintainers-of-being-humanist)
   - [2026-02-16](#2026-02-16)
@@ -227,6 +229,24 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2026-02-28
+
+#### Debugging AI Image Generation: Gemini 2.5 → 3.1 Model Migration
+
+- **TOP Takeaway**: Model upgrades break prompts. Gemini 3.1 Flash weights the end of style descriptions more heavily than 2.5 — "children's book style" at the end overrode "3D/vinyl toy" earlier, producing flat 2D illustrations instead of 3D plush renders. Negative prompting ("NOT 2D", "NOT flat art") fixed it.
+
+<table><tr>
+<td align="center"><strong>v1: Gemini 2.5 (baseline)</strong><br/><a href="https://gist.githubusercontent.com/idvorkin-ai-tools/f144b836b1e5b2f41ea95cd4bb100776/raw/raccoon-zach-orthodox-church.jpg"><img src="https://gist.githubusercontent.com/idvorkin-ai-tools/f144b836b1e5b2f41ea95cd4bb100776/raw/raccoon-zach-orthodox-church.jpg" width="200"/></a><br/>3D plush ✅</td>
+<td align="center"><strong>v2: Gemini 3.1 (broken)</strong><br/><a href="https://gist.githubusercontent.com/idvorkin-ai-tools/f144b836b1e5b2f41ea95cd4bb100776/raw/raccoon-zach-orthodox-church-v2.jpg"><img src="https://gist.githubusercontent.com/idvorkin-ai-tools/f144b836b1e5b2f41ea95cd4bb100776/raw/raccoon-zach-orthodox-church-v2.jpg" width="200"/></a><br/>Flat 2D ❌</td>
+<td align="center"><strong>v3: Gemini 3.1 (fixed)</strong><br/><a href="https://gist.githubusercontent.com/idvorkin-ai-tools/f144b836b1e5b2f41ea95cd4bb100776/raw/raccoon-zach-orthodox-church-v3.jpg"><img src="https://gist.githubusercontent.com/idvorkin-ai-tools/f144b836b1e5b2f41ea95cd4bb100776/raw/raccoon-zach-orthodox-church-v3.jpg" width="200"/></a><br/>3D plush restored ✅</td>
+</tr></table>
+
+- **The Problem**: Upgraded default model in `gemini-image.sh` from `gemini-2.5-flash-image` to `gemini-3.1-flash-image-preview` (released Feb 26, 2026). Same prompt, same reference image — completely different output style.
+- **Root Cause**: End-of-prompt bias. Gemini 3.1 gave "children's book style" (last phrase) priority over "3D/vinyl toy" (earlier). The old model balanced them; the new model doesn't.
+- **The Fix**: Removed "children's book style", added `IMPORTANT STYLE:` prefix, added negative prompting "NOT 2D illustration, NOT flat art", strengthened 3D language with "visible texture" and "soft shadows".
+- **Takeaways**: (1) Always A/B test prompts across model versions. (2) Negative prompting matters more in newer models. (3) Put critical style directives at the end or use "IMPORTANT" prefixes. (4) Keep baselines for comparison.
+- **Full writeup with side-by-side comparison**: [Debugging AI Image Generation](https://gisthost.github.io/?f144b836b1e5b2f41ea95cd4bb100776)
 
 ### 2026-02-17
 
