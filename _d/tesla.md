@@ -20,6 +20,8 @@ This created quite the identity crisis for someone who prided himself on being a
 
 Tony is my callable AI life coach with a Tony Soprano personality. I named him after my Tesla, and he's got that same no-nonsense, direct approach to getting you where you need to go. He's particularly good at identity conflicts, rationalization detection, and keeping you accountable to what you actually care about.
 
+Tony's power comes from [trampoline prompts](/chow#trampoline-prompts) — he doesn't give you advice, he bounces your own words back harder. "You said you'd bike more, but you drove every day this week" isn't coaching. It's a mirror with a Jersey accent.
+
 <script src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js" async></script>
 
 <!-- prettier-ignore-start -->
