@@ -53,6 +53,8 @@ Larry helps with:
 
 The tone is direct. Larry references my own [affirmations](/affirmations) back to me. He asks questions more than gives answers. He's curious, not preachy.
 
+Larry's secret weapon is [trampoline prompts](/chow#trampoline-prompts) — questions that bounce your thinking back at you harder than you sent it. "You've committed to restart meditation 5 times since November" isn't advice. It's a mirror. The insight comes from you, not Larry.
+
 ## The Feedback Loop
 
 Most productivity systems focus on planning. But planning is the easy part. The hard part is closing the loop.
