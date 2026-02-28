@@ -136,22 +136,22 @@ When I read devotionals and replace "God" with a secular concept, I realize God 
 
 **Summary: The Ten Roles God Serves**
 
-| Category                                  | Role                        | What It Provides                                | Religious Approach               | Secular Approach                    |
-| ----------------------------------------- | --------------------------- | ----------------------------------------------- | -------------------------------- | ----------------------------------- |
-| **FOUNDATION** _(Who You Are)_            |                             |                                                 |                                  |                                     |
-|                                           | **Unconditional Love**      | Feel fundamentally okay without performing      | God's everlasting love           | Self-compassion, inherent worth     |
-|                                           | **Confidence & Resilience** | Bone-deep certainty that I'll be okay           | God's faithfulness and strength  | Self-efficacy and growth mindset    |
-|                                           | **Inner Peace**             | Place to stop striving and just be              | "Be still and know"              | Meditation, flow states             |
-| **PERSPECTIVE** _(How You See the World)_ |                             |                                                 |                                  |                                     |
-|                                           | **Cosmic Perspective**      | Relief from tyranny of small anxieties          | God's eternal view               | Pale blue dot, memento mori         |
-|                                           | **Locus of Control**        | Stop carrying weight of uncontrollable outcomes | Trust in God's plan              | Serenity prayer, [Stoicism](/stoicism)           |
-| **DIRECTION** _(How You Choose)_          |                             |                                                 |                                  |                                     |
-|                                           | **Mission & Values**        | North Star that doesn't shift with opinions     | God's kingdom and righteousness  | Know thyself, authentic values      |
-|                                           | **Moral Framework**         | Clear answers without rebuilding ethics         | Biblical commandments            | Kant, virtue ethics, utilitarianism |
-|                                           | **Spiritual Guide**         | Access to wisdom beyond my own                  | Prayer and scripture             | Therapy, mentors, philosophy        |
-| **PRACTICE** _(How You Live Day-to-Day)_  |                             |                                                 |                                  |                                     |
-|                                           | **Ritual Design**           | Know what to do for major life events           | Religious ceremonies and sabbath | Intentional habits and traditions   |
-|                                           | **Community Identity**      | Instantly find my people anywhere               | Church/synagogue/mosque          | Values-based communities            |
+| Category                                  | Role                        | What It Provides                                | Religious Approach               | Secular Approach                       |
+| ----------------------------------------- | --------------------------- | ----------------------------------------------- | -------------------------------- | -------------------------------------- |
+| **FOUNDATION** _(Who You Are)_            |                             |                                                 |                                  |                                        |
+|                                           | **Unconditional Love**      | Feel fundamentally okay without performing      | God's everlasting love           | Self-compassion, inherent worth        |
+|                                           | **Confidence & Resilience** | Bone-deep certainty that I'll be okay           | God's faithfulness and strength  | Self-efficacy and growth mindset       |
+|                                           | **Inner Peace**             | Place to stop striving and just be              | "Be still and know"              | Meditation, flow states                |
+| **PERSPECTIVE** _(How You See the World)_ |                             |                                                 |                                  |                                        |
+|                                           | **Cosmic Perspective**      | Relief from tyranny of small anxieties          | God's eternal view               | Pale blue dot, memento mori            |
+|                                           | **Locus of Control**        | Stop carrying weight of uncontrollable outcomes | Trust in God's plan              | Serenity prayer, [Stoicism](/stoicism) |
+| **DIRECTION** _(How You Choose)_          |                             |                                                 |                                  |                                        |
+|                                           | **Mission & Values**        | North Star that doesn't shift with opinions     | God's kingdom and righteousness  | Know thyself, authentic values         |
+|                                           | **Moral Framework**         | Clear answers without rebuilding ethics         | Biblical commandments            | Kant, virtue ethics, utilitarianism    |
+|                                           | **Spiritual Guide**         | Access to wisdom beyond my own                  | Prayer and scripture             | Therapy, mentors, philosophy           |
+| **PRACTICE** _(How You Live Day-to-Day)_  |                             |                                                 |                                  |                                        |
+|                                           | **Ritual Design**           | Know what to do for major life events           | Religious ceremonies and sabbath | Intentional habits and traditions      |
+|                                           | **Community Identity**      | Instantly find my people anywhere               | Church/synagogue/mosque          | Values-based communities               |
 
 Below, I explore each role in depth with specific examples of both religious and secular wisdom, organized by these four levels:
 
@@ -198,7 +198,7 @@ Below, I explore each role in depth with specific examples of both religious and
 | Religious Wisdom                                                                                                                          | Secular Wisdom                                                       |
 | ----------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
 | "Trust in the Lord with all your heart and lean not on your own understanding" (Proverbs 3:5)                                             | "Grant me serenity to accept what I cannot change" - Serenity Prayer |
-| "Cast all your anxiety on him because he cares for you" (1 Peter 5:7)                                                                     | "Amor fati" - love your fate ([Stoicism](/stoicism))                              |
+| "Cast all your anxiety on him because he cares for you" (1 Peter 5:7)                                                                     | "Amor fati" - love your fate ([Stoicism](/stoicism))                 |
 | "Come to me, all you who are weary and burdened, and I will give you rest. For my yoke is easy and my burden is light" (Matthew 11:28-30) | "The obstacle is the way" - Marcus Aurelius                          |
 
 ## DIRECTION: How You Choose
