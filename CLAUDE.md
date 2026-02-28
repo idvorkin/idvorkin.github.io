@@ -62,19 +62,23 @@ This saves a click and goes directly to what matters - the code changes.
 For content/visual PRs, include a rendered screenshot in the PR description. Protocol:
 
 1. **Take screenshot** of the rendered page section:
+
    ```bash
    npx playwright screenshot --browser chromium --viewport-size "1280,900" \
      --wait-for-timeout 3000 "http://localhost:4000/{permalink}#{section}" /tmp/screenshot.png
    ```
+
    If you need to scroll to a specific section, use a node one-liner with `scrollIntoView`.
 
 2. **Create a gist** to host the image:
+
    ```bash
    echo "Screenshots for PR #N" > /tmp/readme.md
    gh gist create --public -d "Screenshots for PR #N" /tmp/readme.md
    ```
 
 3. **Clone gist, add image, push** (gist API doesn't support binary uploads):
+
    ```bash
    git clone https://gist.github.com/GIST_ID.git /tmp/gist-pr
    magick /tmp/screenshot.png -quality 80 /tmp/gist-pr/screenshot.jpg
