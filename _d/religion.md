@@ -87,6 +87,8 @@ I won't list their name out of privacy, but in my deep respect for this person I
 
 {%include summarize-page.html src="/walking-with-god" %}
 
+{%include summarize-page.html src="/greek-orthodox" %}
+
 Some observations I've had:
 
 - There are many different religions, with deeply different beliefs
