@@ -902,7 +902,7 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get super lost\n\n",
-            "doc_size": 116000,
+            "doc_size": 120000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai",
@@ -913,15 +913,15 @@
                 "/walking-with-god",
                 "/y25"
             ],
-            "last_modified": "2026-02-17T09:40:55-08:00",
+            "last_modified": "2026-02-28T17:10:07.632470+00:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
                 "/ai-security",
+                "/ai-talk",
                 "/chop",
                 "/chow",
                 "/eulogy",
-                "/genai-talk",
                 "/gpt",
                 "/how-igor-chops",
                 "/hyper-personal",
