@@ -110,13 +110,13 @@ GitHub orgs to check:
 
 In the past, we were constrained by format. Want to share an idea? Write an essay. Want to show something? Add a photo. Want to demonstrate? Record a video. All passive consumption - you read, you watch, you move on.
 
-But now we can build **explainers** - interactive experiences that let you *do* the thing, not just read about it. This is richer. This sticks.
+But now we can build **explainers** - interactive experiences that let you _do_ the thing, not just read about it. This is richer. This sticks. Explainers are also an antidote to [cognitive debt](/ai-native-manager#cognitive-debt) — see [why I think they matter](/chow#explainers-ai-generated-interactive-understanding).
 
-| Explainer | What It Does | Instead Of | |
-|-----------|--------------|------------|---|
-| [Monitor Explainer](https://monitor-explorer.surge.sh/) | Explains monitor dimensions, aspect ratios, and the "p" vs "K" confusion | Reading spec sheets | [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer) |
-| [How Long Since AI](https://idvorkin-how-long-since-ai.surge.sh/) | Track time since AI milestones - ChatGPT, GPT-4, Claude, Gemini | Searching for release dates | [<i class="fa fa-github"></i>](https://github.com/idvorkin/how-long-since-ai) |
-| [Religion Evolution Explorer](https://religion-evolution-explorer.surge.sh/) | Interactive timeline of how religions evolved and influenced each other | Reading history books | [<i class="fa fa-github"></i>](https://github.com/idvorkin/religion-evolution-explorer) |
+| Explainer                                                                    | What It Does                                                             | Instead Of                  |                                                                                         |
+| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------ | --------------------------- | --------------------------------------------------------------------------------------- |
+| [Monitor Explainer](https://monitor-explorer.surge.sh/)                      | Explains monitor dimensions, aspect ratios, and the "p" vs "K" confusion | Reading spec sheets         | [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer)           |
+| [How Long Since AI](https://idvorkin-how-long-since-ai.surge.sh/)            | Track time since AI milestones - ChatGPT, GPT-4, Claude, Gemini          | Searching for release dates | [<i class="fa fa-github"></i>](https://github.com/idvorkin/how-long-since-ai)           |
+| [Religion Evolution Explorer](https://religion-evolution-explorer.surge.sh/) | Interactive timeline of how religions evolved and influenced each other  | Reading history books       | [<i class="fa fa-github"></i>](https://github.com/idvorkin/religion-evolution-explorer) |
 
 ## Fun & Experiments
 

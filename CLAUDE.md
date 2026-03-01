@@ -167,7 +167,9 @@ To publish: Use the `conversation-log-publisher` agent - it handles security rev
 
 ## Finding Related Blog Content
 
-For searching blog posts by keyword, theme, or metadata, use `/find-content`.
+When searching for existing blog content in this repository, use Grep/Glob directly on `_d/`, `_posts/`, and `_td/` directories — not the blog MCP. Direct file search is faster and more reliable for finding text in the repo.
+
+For querying by frontmatter metadata (tags, dates, incoming/outgoing links), use `/find-content`.
 
 ## Blog Visual Components
 
