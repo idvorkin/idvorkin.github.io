@@ -2728,7 +2728,7 @@
             "url": "/eulogy"
         },
         "/explainers": {
-            "description": "\n  AI Slop Notice: This post is approximately 90% AI slop. I'm using this as an experiment in AI-augmented learning and book processing. Working on refining it!\n\n\n",
+            "description": "You don’t really understand something until you can play with it. That’s the premise behind explainers — interactive experiences that let you do the thing, not just read about it. Instead of reading that monitors come in 16:9 and 21:9 aspect ratios, you drag them around and see them side by side. Instead of reading that religions evolved from shared roots, you click through a timeline and discover the connections yourself.\n\n",
             "doc_size": 24000,
             "file_path": "_site/explainers.html",
             "incoming_links": [
@@ -2737,7 +2737,7 @@
                 "/chow",
                 "/pet-projects"
             ],
-            "last_modified": "2026-03-01T19:23:56.617718+00:00",
+            "last_modified": "2026-03-01T20:07:03.167895+00:00",
             "markdown_path": "_d/explainers.md",
             "outgoing_links": [
                 "/ai-native-manager",
