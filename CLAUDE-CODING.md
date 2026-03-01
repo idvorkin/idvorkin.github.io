@@ -67,6 +67,8 @@ Names MUST tell what code does, not how it's implemented or its history:
 
 ### Running Jekyll Server
 
+**IMPORTANT:** For ALL local dev servers (Vite, Jekyll, etc.): always bind to `--host 0.0.0.0` for Tailscale/external access. Kill stale servers before starting new ones on the same port. When changing directories, verify CWD is correct before running commands.
+
 - **Default**: `just jekyll-serve` (port 4000, livereload port 35729)
 - **Custom port**: `just jekyll-serve 4002`
 - **Run in background**: `just jekyll-serve 4002 35730 > /tmp/jekyll.log 2>&1 &`
@@ -91,6 +93,7 @@ YOU MUST find the root cause - NEVER fix symptoms or add workarounds.
 
 ### Basic Rules
 
+- **Never fabricate or guess remote URLs or deployment URLs** — always verify by checking `git remote -v` or existing config files first
 - Always work on a PR, never on main directly
 - Start with fetch/rebase to get latest main
 - Before starting work, get latest main branch

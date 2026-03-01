@@ -124,6 +124,10 @@ For content/visual PRs, include a rendered screenshot in the PR description. Pro
 - Use your journal to record important facts before you forget them
 - We discuss architectural decisions together before implementation
 
+## Skills Execution
+
+When executing skills, follow ALL phases/steps defined in the SKILL.md — do not skip phases. If a phase seems unnecessary, ask before skipping.
+
 ## Proactiveness
 
 Just do it - including obvious follow-up actions. Only pause when:
@@ -142,6 +146,8 @@ Just do it - including obvious follow-up actions. Only pause when:
 # Blog Content Guidelines
 
 ## Blog Writing Style
+
+**AI Slop Label:** Posts with significant AI-generated content should include `{% include ai-slop.html percent="NN" %}` near the top, where NN is the estimated percentage of AI slop (0-100).
 
 **ALWAYS reference `content_guidelines.md`** when working on blog posts. It contains:
 
