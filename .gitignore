@@ -385,3 +385,7 @@ ENV/
 sitemap.xml
 robots.txt
 .aider*
+
+# Dolt database files (added by bd init)
+.dolt/
+*.db
