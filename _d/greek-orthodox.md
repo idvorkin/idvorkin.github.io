@@ -2,7 +2,7 @@
 title: "Greek Orthodox: What Makes It Different"
 layout: post
 permalink: /greek-orthodox
-imagefeatureblob: blog/raccoon-religion.webp
+imagefeature: /images/raccoon-zach-orthodox-church.webp
 redirect_from:
   - /orthodox
 alias:
