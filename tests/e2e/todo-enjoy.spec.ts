@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./base-test";
 import { checkForJsErrors } from "./js-error-checker";
 
 test.describe("Things I enjoy page", () => {
@@ -106,15 +106,15 @@ test.describe("Things I enjoy page", () => {
     // Try clicking on different path elements to trigger prompt changes
     const pathElements = page.locator("#sunburst path");
     const pathCount = await pathElements.count();
-    
+
     let textChanged = false;
     let lastText = originalText;
-    
+
     // Try clicking different paths to find one that has prompts
     for (let i = 1; i < Math.min(pathCount, 10); i++) {
       await pathElements.nth(i).click({ force: true });
       await page.waitForTimeout(500);
-      
+
       const newText = await promptElement.textContent();
       if (newText?.trim() !== lastText?.trim() && newText?.trim() !== "Click in any box or circle") {
         textChanged = true;
@@ -122,13 +122,13 @@ test.describe("Things I enjoy page", () => {
         break;
       }
     }
-    
+
     // If we found a path with prompts, try to verify randomization
     if (textChanged) {
       // Click the same path again to see if it randomizes
       await promptElement.click();
       await page.waitForTimeout(500);
-      
+
       const secondText = await promptElement.textContent();
       // It might give the same prompt sometimes, so we just verify it's still a valid prompt
       expect(secondText).toBeTruthy();
@@ -137,7 +137,7 @@ test.describe("Things I enjoy page", () => {
       // No prompts available is also a valid state
       console.log("Note: No prompts available for clicked elements - this is acceptable");
     }
-    
+
     // Test passes either way - with or without prompt changes
     expect(true).toBe(true);
   });

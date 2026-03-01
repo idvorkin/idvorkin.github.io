@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./base-test";
 
 test.describe("Dev Info Banner", () => {
   test("should display branch and port info on dev server", async ({ page }) => {
@@ -57,7 +57,7 @@ test.describe("Dev Info Banner", () => {
     if (prInfo) {
       const prLink = await page.locator("#dev-info-banner a[href*='/pull/']");
       await expect(prLink).toBeVisible();
-      
+
       const href = await prLink.getAttribute("href");
       expect(href).toContain(`/pull/${prInfo}`);
       console.log("PR link href:", href);
@@ -73,7 +73,7 @@ test.describe("Dev Info Banner", () => {
     await page.waitForLoadState("networkidle");
 
     const prInfo = await page.evaluate(() => (window as any).__GIT_PR__);
-    
+
     if (prInfo) {
       const banner = await page.locator("#dev-info-banner");
       await expect(banner).toBeVisible();

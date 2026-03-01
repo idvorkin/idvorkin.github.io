@@ -110,6 +110,7 @@ exclude:
     "docs",
     "tech_graveyard",
     "test-results",
+    "playwright-report",
     "tests",
     "src/__tests__",
     "repo_tmp",

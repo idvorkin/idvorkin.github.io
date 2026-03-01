@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./base-test";
 
 test.describe("Vapi Widget on Tesla Page", () => {
   test("should load Vapi widget script and render widget element", async ({ page }) => {

@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./base-test";
 import { checkForJsErrors } from "./js-error-checker";
 
 test.describe("7 habits", () => {

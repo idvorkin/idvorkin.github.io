@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./base-test";
 
 test.describe("IRL Keyboards Section - Layout Testing", () => {
   test("desktop layout - full width", async ({ page }) => {
@@ -8,7 +8,7 @@ test.describe("IRL Keyboards Section - Layout Testing", () => {
     await page.waitForTimeout(3000);
 
     // Find the keyboards section
-    const keyboardsSection = page.locator('h3:has-text("Keyboards")').locator('..');
+    const keyboardsSection = page.locator('h3:has-text("Keyboards")').locator("..");
     await keyboardsSection.scrollIntoViewIfNeeded();
     await page.waitForTimeout(1000);
 
@@ -27,7 +27,7 @@ test.describe("IRL Keyboards Section - Layout Testing", () => {
     await page.waitForTimeout(3000);
 
     // Find the keyboards section
-    const keyboardsSection = page.locator('h3:has-text("Keyboards")').locator('..');
+    const keyboardsSection = page.locator('h3:has-text("Keyboards")').locator("..");
     await keyboardsSection.scrollIntoViewIfNeeded();
     await page.waitForTimeout(1000);
 
@@ -60,7 +60,7 @@ test.describe("IRL Keyboards Section - Layout Testing", () => {
     await page.waitForLoadState("domcontentloaded");
 
     // Navigate to keyboards section
-    await page.locator('#keyboards').scrollIntoViewIfNeeded();
+    await page.locator("#keyboards").scrollIntoViewIfNeeded();
     await page.waitForTimeout(2000);
 
     // Check both keyboard images exist with alt text
@@ -72,8 +72,8 @@ test.describe("IRL Keyboards Section - Layout Testing", () => {
     await expect(blobImg).toHaveCount(1);
 
     // Get alt text
-    const ipasteAlt = await ipasteImg.getAttribute('alt');
-    const blobAlt = await blobImg.getAttribute('alt');
+    const ipasteAlt = await ipasteImg.getAttribute("alt");
+    const blobAlt = await blobImg.getAttribute("alt");
 
     // Verify both have alt text (not null, not empty)
     expect(ipasteAlt).toBeTruthy();
