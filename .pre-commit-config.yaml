@@ -52,13 +52,6 @@ repos:
   # 🧪 Local hooks
   - repo: local
     hooks:
-      - id: beads-sync
-        name: Flush beads changes
-        entry: bash -c 'command -v bd >/dev/null && [ -d .beads ] && bd sync --flush-only && git add .beads/issues.jsonl 2>/dev/null; true'
-        language: system
-        pass_filenames: false
-        always_run: true
-
       - id: test
         name: Run Fast Tests
         entry: just fast-test
