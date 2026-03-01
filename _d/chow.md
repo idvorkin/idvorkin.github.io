@@ -37,7 +37,7 @@ I used to stare at blank pages. Now I have a different problem: AI will happily 
   - [Trampoline vs. Delegation](#trampoline-vs-delegation)
   - [Trampoline Prompt Patterns](#trampoline-prompt-patterns)
 - [Deep ideas](#deep-ideas)
-  - [Beyond Images: Interactive Visualizations as Apps](#beyond-images-interactive-visualizations-as-apps)
+  - [Explainers: AI-Generated Interactive Understanding](#explainers-ai-generated-interactive-understanding)
   - [Generating the content for the reader](#generating-the-content-for-the-reader)
   - [New monetization strategies](#new-monetization-strategies)
 
@@ -354,28 +354,24 @@ The best trampoline prompts feel slightly uncomfortable. That's the bounce.
 
 ## Deep ideas
 
-### Beyond Images: Interactive Visualizations as Apps
+### Explainers: AI-Generated Interactive Understanding
 
-When you first think about AI-generated content, images come to mind. But why stop there? CHOW can generate interactive visualizations - essentially small apps that let readers explore ideas dynamically rather than passively consuming static content.
+When AI writes code or explains a concept, the default output is text. But text is passive — you read it, nod, and forget. **Explainers** are interactive visualizations that let you _do_ the thing instead of just reading about it. And AI can build them for you in minutes.
+
+Simon Willison calls this [interactive explanations](https://simonwillison.net/guides/agentic-engineering-patterns/interactive-explanations/) — one of his [Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/). His example: he had an AI build a word cloud tool in Rust, but the algorithm description — "Archimedean spiral placement with per-word random angular offset" — meant nothing to him. So he asked the AI to build an animated HTML page where you can step through the algorithm frame by frame, watching each word try positions in a spiral until it finds one that fits. _That_ made it click.
+
+This is a weapon against [cognitive debt](/ai-native-manager#cognitive-debt) — the understanding gap that grows when AI writes code faster than humans can comprehend it. The same AI that creates the debt can pay it down: ask it to build you an interactive explanation of what it just built.
 
 Consider the difference:
 
 - **Static image**: A diagram showing how religions evolved
-- **Interactive app**: An [explorer](https://religion-evolution-explorer.surge.sh/) where readers can click through religious traditions, see connections, and discover relationships themselves
-
-Or:
-
+- **Explainer**: An [explorer](https://religion-evolution-explorer.surge.sh/) where you click through traditions, see connections, and discover relationships yourself
 - **Static text**: "This post was written 3 years ago"
-- **Interactive widget**: A [timeline visualization](https://idvorkin-how-long-since-ai.surge.sh/?show=tool) showing exactly how old content is, updating in real-time
+- **Explainer**: A [timeline visualization](https://idvorkin-how-long-since-ai.surge.sh/?show=tool) showing exactly how old content is, updating in real-time
 
-These aren't just prettier presentations - they're fundamentally different experiences. Interactive content lets readers:
+These aren't prettier presentations — they're fundamentally different experiences. You explore at your own pace, discover things the author didn't explicitly write, and actually retain what you learned.
 
-- Explore at their own pace and interest level
-- Discover insights you didn't explicitly write
-- Engage more deeply with the material
-- Return and find new things each time
-
-The tooling for this is increasingly accessible: React, Vite, and modern JavaScript frameworks make it straightforward to create these micro-apps. CHOW can help you design and build them conversationally, turning your content ideas into interactive experiences.
+I've been building these as [pet projects](/pet-projects#explainers-the-future-of-content) — monitor comparisons, AI timelines, religion evolution. The pattern is the same every time: take something that's hard to grasp as text, ask AI to build an interactive version, and suddenly it makes sense.
 
 ### Generating the content for the reader
 
