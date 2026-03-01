@@ -11,9 +11,9 @@ redirect_from:
   - /interactive-explanations
 ---
 
-{% include ai-slop.html percent="90" %}
-
 You don't really understand something until you can play with it. That's the premise behind explainers — interactive experiences that let you _do_ the thing, not just read about it. Instead of reading that monitors come in 16:9 and 21:9 aspect ratios, you drag them around and see them side by side. Instead of reading that religions evolved from shared roots, you click through a timeline and discover the connections yourself.
+
+{% include ai-slop.html percent="90" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
