@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./base-test";
 
 test.describe("Amazon Include Test Page", () => {
   test("should take screenshot of full page", async ({ page }) => {

@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./base-test";
 
 test.describe("Amazon affiliate links", () => {
   test("should display Amazon links with proper affiliate tags", async ({ page }) => {

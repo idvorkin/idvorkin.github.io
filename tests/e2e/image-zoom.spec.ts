@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./base-test";
 
 test.describe("Image Zoom Functionality", () => {
   test("images should be clickable and open in lightbox", async ({ page }) => {

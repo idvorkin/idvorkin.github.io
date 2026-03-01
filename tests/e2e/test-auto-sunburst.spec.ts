@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./base-test";
 
 test.describe("Auto-generated Sunburst", () => {
   test.beforeEach(async ({ page }) => {

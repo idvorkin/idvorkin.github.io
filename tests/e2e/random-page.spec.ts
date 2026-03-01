@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./base-test";
 
 test.describe("Random Page Navigation", () => {
   test("should redirect from /random to a content page", async ({ page }) => {

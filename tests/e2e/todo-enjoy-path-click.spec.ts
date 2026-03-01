@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./base-test";
 
 test.describe("Sunburst path element clicks", () => {
   test("Clicking sunburst text div can trigger prompt change", async ({ page }) => {
@@ -26,17 +26,17 @@ test.describe("Sunburst path element clicks", () => {
     await page.waitForTimeout(500);
 
     let newText = await promptElement.textContent();
-    
+
     // If text didn't change from clicking the div, try clicking a path element
     if (newText?.trim() === initialText?.trim()) {
       const pathElements = page.locator("#sunburst path");
       const pathCount = await pathElements.count();
-      
+
       // Try clicking different path elements until we find one that triggers a change
       for (let i = 1; i < Math.min(pathCount, 5); i++) {
         await pathElements.nth(i).click({ force: true });
         await page.waitForTimeout(500);
-        
+
         newText = await promptElement.textContent();
         if (newText?.trim() !== initialText?.trim()) {
           break; // Found a path that triggers a change
@@ -91,9 +91,9 @@ test.describe("Sunburst path element clicks", () => {
     // Test passes if we could click multiple elements without errors
     // The texts may or may not change depending on whether prompts are available
     expect(texts.length).toBeGreaterThan(0);
-    
+
     // Log for debugging but don't fail if all texts are the same
-    if (texts.every(t => t === "Click in any box or circle")) {
+    if (texts.every((t) => t === "Click in any box or circle")) {
       console.log("Note: All clicks resulted in the same text - might be due to no prompts for clicked elements");
     }
   });

@@ -1,5 +1,5 @@
-import { expect, test } from "@playwright/test";
 import _ from "lodash";
+import { expect, test } from "./base-test";
 import { checkForJsErrors } from "./js-error-checker";
 
 const SERVER_PORT = process.env.SERVER_PORT || "4000";

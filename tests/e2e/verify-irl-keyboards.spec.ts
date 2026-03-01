@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./base-test";
 
 test.describe("IRL Page Keyboards Section", () => {
   test("should take screenshot of keyboard products", async ({ page }) => {

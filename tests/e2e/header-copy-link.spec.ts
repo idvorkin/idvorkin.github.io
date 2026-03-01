@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./base-test";
 
 test.describe("Header Copy Link Feature", () => {
   test.beforeEach(async ({ page }) => {
@@ -97,12 +97,12 @@ test.describe("Header Copy Link Feature", () => {
 
       // Verify breadcrumb format: From: [page name]: header hierarchy
       // Check for new format or old format (for backwards compatibility during deployment)
-      const hasBreadcrumbFormat = clipboardText.includes("From: [manager book]:") || 
-                                   clipboardText.includes("From: What does a manager do");
+      const hasBreadcrumbFormat =
+        clipboardText.includes("From: [manager book]:") || clipboardText.includes("From: What does a manager do");
       expect(hasBreadcrumbFormat).toBeTruthy();
-      
+
       // If it's the new format and an H3, it should have hierarchy with >
-      const tagName = await deepHeader.evaluate(el => el.tagName);
+      const tagName = await deepHeader.evaluate((el) => el.tagName);
       if (tagName === "H3" && clipboardText.includes("[manager book]:")) {
         expect(clipboardText).toContain(" > ");
       }
@@ -166,7 +166,7 @@ test.describe("Header Copy Link Feature", () => {
 
       // Move away from header
       await page.locator("body").hover({ position: { x: 0, y: 0 } });
-      
+
       // Wait a moment for the hover effect to clear
       await page.waitForTimeout(300);
 
@@ -203,7 +203,7 @@ test.describe("Header Copy Link Feature", () => {
       const titleInput = popup.locator(".github-issue-title");
       const commentTextarea = popup.locator(".github-issue-comment");
       const submitButton = popup.locator(".github-issue-submit");
-      
+
       await expect(titleInput).toBeVisible();
       await expect(commentTextarea).toBeVisible();
       await expect(submitButton).toBeVisible();
@@ -244,7 +244,7 @@ test.describe("Header Copy Link Feature", () => {
 
       // Close the new page
       await newPage.close();
-      
+
       // Verify popup is closed
       await expect(popup).not.toBeVisible();
     }
