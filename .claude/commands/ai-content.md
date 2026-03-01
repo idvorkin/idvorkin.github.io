@@ -25,6 +25,7 @@ CHOP / Vibe Coding:
   /chop             (_d/ai-coder.md)       - AI-assisted coding (CHOP method)
   /ai-cockpit       (_d/ai-cockpit.md)     - The AI cockpit metaphor
   /ai-journal        (_d/ai-journal.md)     - AI journal/log entries
+  /ai-feed           (_d/ai-feed.md)        - Curated reading feed via Claude
 
 Building AI Apps:
   /ai-developer     (_d/ai-developer.md)   - Being an AI-age developer
@@ -91,6 +92,7 @@ This returns all posts that link to or are linked from the target. Filter the re
 ### Phase 4: Delegate to /content Workflow
 
 After loading AI context, delegate to the `/content` skill for:
+
 - Feature branch setup
 - Jekyll server check
 - Content guidelines
@@ -137,18 +139,21 @@ For full article content from Yegge, pipe the RSS through WebFetch or parse the 
 ## Examples
 
 **Work on AI cockpit post:**
+
 ```
 /ai-content ai-cockpit
 # Loads cockpit + related CHOP posts, sets up branch/server
 ```
 
 **Work on a new AI post:**
+
 ```
 /ai-content
 # Shows AI map, asks Igor what to work on
 ```
 
 **Work on AI hiring:**
+
 ```
 /ai-content ai-hiring
 # Loads hiring + related people/management posts
