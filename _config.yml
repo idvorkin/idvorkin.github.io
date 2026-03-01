@@ -114,6 +114,7 @@ exclude:
     "tests",
     "src/__tests__",
     "repo_tmp",
+    ".beads",
   ]
 
 permalink: /:title
