@@ -33,12 +33,18 @@ Otherwise, treat all arguments as URLs and go to **Phase 1: Triage**.
 
 Process a batch of URLs into the feed.
 
-### Step 1: Fetch & Summarize
+### Step 0: Extract Links from Newsletters
 
-For each URL:
+If a URL points to a newsletter or link roundup (not a single article), fetch it and extract ALL external content links. Present them as a numbered list so Igor can pick which ones to process. Wait for his selection before proceeding.
+
+### Step 1: Fetch & Summarize (Parallel)
+
+**Use subagents** to fetch all URLs in parallel — launch one Agent per URL with subagent_type="general-purpose" to fetch and summarize concurrently. Each agent should:
 
 1. Fetch content using WebFetch (or `/web-browse` skill for tricky sites)
 2. Produce a 2-3 sentence summary highlighting the **core argument** — not just what the article covers, but what position it takes
+
+Similarly, use a parallel Agent (subagent_type="Explore") to cross-link all articles against the blog at the same time.
 
 ### Step 2: Cross-Link
 
@@ -55,17 +61,24 @@ Surface the top 2-3 matches with their permalinks. Use `back-links.json` to find
 jq '.url_info | to_entries[] | select(.value.markdown_path | test("keyword")) | .key' back-links.json
 ```
 
-### Step 3: Predict
+### Step 3: Predict & Rank
 
-Read the taste profile from the "What I Gravitate Toward" section of `_d/ai-feed.md`.
+Read the full taste profile from the "What I Gravitate Toward" section of `_d/ai-feed.md`. This includes:
 
-For each link, predict Igor's interest level:
+- **Stack-ranked content attributes** (practitioner reflection > connects to existing writing > contrarian > systems thinking > case studies > management)
+- **Skip signals** (hype, benchmarks, already-seen, tutorials, political framing)
+- **Mood modifiers** (deep focus, quick scan, creative, management)
+- **Calibration notes** from previous sessions
 
-- "I think you'll **love** this because [reason]"
+For each link, score it against the attribute stack and predict Igor's interest:
+
+- "I think you'll **love** this because [reason mapped to specific attributes]"
 - "I think you'll **find this interesting** because [reason]"
-- "I think you'll **probably skip** this because [reason]"
+- "I think you'll **probably skip** this because [reason mapped to skip signals]"
 
-Present ALL predictions to Igor at once so he can see the full batch ranked by predicted interest.
+Present ALL predictions ranked by predicted interest (loves first, skips last). Ask Igor his current mood to apply mood modifiers.
+
+**After Igor selects links**: If he skips any you predicted he'd love, or picks any you predicted he'd skip, **ask why**. His answer becomes a calibration note for updating the taste profile.
 
 ### Step 4: Tag
 
@@ -128,11 +141,14 @@ After walking through all entries, note:
 
 ### Step 5: Update Taste Profile
 
-Based on the session's data, propose updates to the "What I Gravitate Toward" section:
+Based on the session's data, propose updates to the "What I Gravitate Toward" section. The profile has structured subsections — update the right ones:
 
-- Show the current profile
-- Show what you'd change and why
-- Get Igor's approval before editing
+- **Content Attributes I Love** — Re-rank if evidence suggests different ordering. Add new attributes discovered.
+- **Content Attributes I Skip** — Add new skip signals. Remove any that turned out wrong.
+- **Mood Modifiers** — Refine mood categories based on observed patterns.
+- **Calibration Notes** — Append a dated note summarizing this session's prediction accuracy and what was learned.
+
+Show the current profile, show the proposed diff, get Igor's approval before editing. The goal is to build a detailed enough profile to function as a recommender for larger content ingress — every session makes the ranker better.
 
 ---
 

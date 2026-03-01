@@ -18,9 +18,35 @@ It's [GTD](/gtd) capture meets AI triage. And unlike passive consumption, this p
 
 ## What I Gravitate Toward
 
-_This section evolves as patterns emerge from what I read and skip._
+_This section is my recommender training data. It evolves as patterns emerge from what I read, skip, and love — building toward a personalized content ranker. The more detailed this gets, the better predictions become._
 
-Still calibrating — check back after a few sessions.
+### Content Attributes I Love (stack-ranked)
+
+1. **Practitioner reflection on craft** — Someone who actually does the work reflecting on what they learned, not theorizing from the sidelines. Bonus if they challenge their own assumptions.
+2. **Connects to my existing writing** — If it extends, challenges, or provides evidence for something I've already written about (cognitive debt, agency, AI-native management), I'm almost always in.
+3. **Contrarian takes with substance** — Not contrarian for shock value, but genuinely questioning mainstream consensus with real reasoning. "AI will replace X" hot takes = skip. "Here's why AI actually makes X harder" = love.
+4. **Systems thinking** — How parts interact, emergent complexity, unintended consequences. Especially when applied to AI's second-order effects on teams and organizations.
+5. **Real case studies over theory** — One company's actual experience beats ten thought pieces. Show me the receipts.
+6. **Management/leadership in AI era** — How should orgs adapt? What's breaking? What's working?
+
+### Content Attributes I Skip
+
+- **Hype pieces** — "AI will revolutionize X" without specifics
+- **Benchmark comparisons** — Model A vs Model B on task C
+- **Already-seen insights** — If I've internalized the core idea (e.g., PG startup lessons), I skip even good writing about it
+- **Pure tutorials** — Step-by-step how-tos without opinions or reflection
+- **Political framing of AI** — Left/right lens on technology
+
+### Mood Modifiers
+
+- **Deep focus mood**: Long-form practitioner essays, systems thinking, anything requiring concentration
+- **Quick scan mood**: Case studies, data points, contrarian one-pagers
+- **Creative/playful mood**: Design analysis, craft deep-dives, unexpected connections between fields
+- **Management mood**: Hiring, culture, team dynamics, organizational design
+
+### Calibration Notes
+
+- _2026-03-01_: First session. From Joy & Curiosity #76, picked 10 of 19 links. Strong bias toward cognitive debt / AI practice / management cluster. Skipped PG startup essay (already internalized), political AI framing, and pure X/Twitter commentary. Already had read Claude Code research — actively follows AI tooling research independently.
 
 ## Feed
 
