@@ -918,15 +918,15 @@
                 "/walking-with-god",
                 "/y25"
             ],
-            "last_modified": "2026-02-28T17:10:07.632470+00:00",
+            "last_modified": "2026-03-01T20:22:17.372464+00:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
                 "/ai-security",
+                "/ai-talk",
                 "/chop",
                 "/chow",
                 "/eulogy",
-                "/genai-talk",
                 "/gpt",
                 "/how-igor-chops",
                 "/hyper-personal",

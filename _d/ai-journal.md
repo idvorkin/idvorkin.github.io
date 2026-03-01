@@ -133,7 +133,7 @@ When creating a new AI journal entry, follow these guidelines:
    - Personal, reflective
    - Focus on what worked, what didn't, and why
    - Include specific technical details but keep it readable
-6. **Update TOC**: Add entry to the vim-markdown-toc section
+6. **Update TOC**: Add entry to the table of contents section
 
 **Example Structure**:
 
