@@ -688,6 +688,7 @@ Most of this is picked up from others (there are no unique thoughts), but here's
 ### Bespoke tools and optimism
 
 - With coding so easy, might as well make a tool just for your use case.
+  - [Explainers](/explainers) — interactive visualizations that let you _play_ with a concept instead of reading about it. AI makes them trivially easy to build
   - [Hand writing daily journal workflow](/process-journal#journalling-workflow-in-2025)
   - A grab bag of randomness called y.py [upload clipboard to git, start a flow session, move windows around](https://github.com/idvorkin/settings/blob/db1ca0310d79c9db8b3cc7092cb14904a560eb6d/py/y.py?plain=1#L744)
 - Probably a pendulum swings from:

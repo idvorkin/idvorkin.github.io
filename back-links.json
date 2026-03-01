@@ -1718,15 +1718,17 @@
                 "/y25",
                 "/y26"
             ],
-            "last_modified": "2026-01-02T15:26:54+00:00",
+            "last_modified": "2026-03-01T19:14:13.676384+00:00",
             "markdown_path": "_d/ai-coder.md",
             "outgoing_links": [
                 "/ai-journal",
                 "/ai-testing",
+                "/explainers",
                 "/how-igor-chops",
                 "/humans-are-underrated",
                 "/process-journal",
-                "/testing"
+                "/testing",
+                "/vibe"
             ],
             "redirect_url": "",
             "title": "The CHOP Shop: Where AI Meets Code",
@@ -2731,10 +2733,11 @@
             "file_path": "_site/explainers.html",
             "incoming_links": [
                 "/ai-native-manager",
+                "/chop",
                 "/chow",
                 "/pet-projects"
             ],
-            "last_modified": "2026-03-01T19:00:40.540874+00:00",
+            "last_modified": "2026-03-01T19:14:57.300618+00:00",
             "markdown_path": "_d/explainers.md",
             "outgoing_links": [
                 "/ai-native-manager",
