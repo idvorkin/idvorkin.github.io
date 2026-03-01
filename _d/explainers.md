@@ -39,6 +39,8 @@ You don't really understand something until you can play with it. That's the pre
 
 Explainers aren't new — Bret Victor wrote about [explorable explanations](https://worrydream.com/ExplorableExplanations/) in 2011, and Nicky Case has been building brilliant ones for a decade. What's new is that AI flipped both sides of the equation at once: explainers became trivially easy to build _and_ critically necessary to have.
 
+90% of AI output is [slop](/chow#ai-slop-vs-human-sludge) — generic, forgettable, interchangeable with what any other AI would produce. Explainers are in the other 10%. They're specific to a concept, interactive, and genuinely useful. When AI builds you a draggable monitor comparison tool or a step-through animation of an algorithm, that's not slop — that's a thing that didn't exist before and couldn't have been made this easily without AI. The best use of AI isn't generating more text the world doesn't need. It's building interactive experiences that help people actually understand things.
+
 ### AI Makes Explainers Trivially Easy to Build
 
 Before AI, building an interactive explainer meant weeks of work — designing the visualization, writing the code, debugging cross-browser issues, deploying it. That's why so few people made them. Nicky Case spent months on each piece. Red Blob Games articles take serious engineering effort.
