@@ -111,6 +111,7 @@
         "/enjoy": "/happy",
         "/essential": "/essentialism",
         "/exercise": "/physical-health",
+        "/explorable-explanations": "/explainers",
         "/failure": "/fail",
         "/fatality": "/death",
         "/fb": "/facebook",
@@ -158,6 +159,7 @@
         "/imposter": "/insecure",
         "/in-real-life": "/irl",
         "/insecurity": "/insecure",
+        "/interactive-explanations": "/explainers",
         "/intern-llm": "/genai-talk",
         "/jung-self": "/self-ego",
         "/jupyter": "/pandas",
@@ -207,6 +209,7 @@
         "/objective": "/goals",
         "/okr": "/goals",
         "/on-being-mortal": "/death",
+        "/orthodox": "/greek-orthodox",
         "/overwork": "/overload",
         "/pain": "/mental-pain",
         "/parkinson-law": "/parkinson",
@@ -457,6 +460,7 @@
             "incoming_links": [
                 "/7-habits",
                 "/advice",
+                "/greek-orthodox",
                 "/writing"
             ],
             "last_modified": "2025-12-06T16:22:23-08:00",
@@ -664,6 +668,7 @@
             "incoming_links": [
                 "/four-healths",
                 "/gap-year-igor",
+                "/greek-orthodox",
                 "/larry",
                 "/mortality-software",
                 "/operating-manual",
@@ -902,7 +907,7 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get super lost\n\n",
-            "doc_size": 120000,
+            "doc_size": 119000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai",
@@ -918,10 +923,10 @@
             "outgoing_links": [
                 "/ai-art",
                 "/ai-security",
-                "/ai-talk",
                 "/chop",
                 "/chow",
                 "/eulogy",
+                "/genai-talk",
                 "/gpt",
                 "/how-igor-chops",
                 "/hyper-personal",
@@ -938,10 +943,11 @@
             "incoming_links": [
                 "/changelog",
                 "/chow",
+                "/explainers",
                 "/manager-book",
                 "/pet-projects"
             ],
-            "last_modified": "2026-03-01T18:16:36.130101+00:00",
+            "last_modified": "2026-03-01T19:00:40.540874+00:00",
             "markdown_path": "_d/ai-native-manager.md",
             "outgoing_links": [
                 "/agency",
@@ -949,8 +955,8 @@
                 "/ai-hiring",
                 "/ai-journal",
                 "/chop",
-                "/chow",
                 "/coaching",
+                "/explainers",
                 "/manager-book"
             ],
             "redirect_url": "",
@@ -1390,9 +1396,10 @@
                 "/self-ego",
                 "/tesla"
             ],
-            "last_modified": "2025-12-07T02:39:31+00:00",
+            "last_modified": "2026-02-28T09:02:01-08:00",
             "markdown_path": "_d/bike-tesla-identity-crisis.md",
             "outgoing_links": [
+                "/chow",
                 "/eulogy",
                 "/mortality-software"
             ],
@@ -1632,7 +1639,7 @@
                 "/ai-cockpit",
                 "/ai-journal",
                 "/ai-native-manager",
-                "/how-igor-chops",
+                "/chop",
                 "/product",
                 "/recent",
                 "/shoulder-pain",
@@ -1700,7 +1707,9 @@
                 "/ai-hiring",
                 "/ai-journal",
                 "/ai-native-manager",
+                "/changelog",
                 "/chow",
+                "/explainers",
                 "/gtd",
                 "/how-igor-chops",
                 "/process-journal",
@@ -1731,9 +1740,11 @@
                 "/ai",
                 "/ai-faq",
                 "/ai-journal",
-                "/ai-native-manager",
+                "/bike-tesla-identity",
+                "/explainers",
                 "/how-igor-chops",
-                "/pet-projects",
+                "/larry",
+                "/tesla",
                 "/y26"
             ],
             "last_modified": "2026-03-01T18:16:36.130101+00:00",
@@ -1742,8 +1753,8 @@
                 "/ai-faq",
                 "/ai-native-manager",
                 "/chop",
+                "/explainers",
                 "/larry",
-                "/pet-projects",
                 "/td/data-systems",
                 "/writing"
             ],
@@ -1914,6 +1925,7 @@
                 "/essentialism",
                 "/first-understand",
                 "/get-to-yes-with-yourself",
+                "/greek-orthodox",
                 "/happy",
                 "/manager-book",
                 "/negotiate",
@@ -2671,6 +2683,7 @@
                 "/end-in-mind",
                 "/four-healths",
                 "/frog",
+                "/greek-orthodox",
                 "/happy",
                 "/hobby",
                 "/irl",
@@ -2711,6 +2724,27 @@
             "redirect_url": "",
             "title": "Igor's Eulogy - How I want to live",
             "url": "/eulogy"
+        },
+        "/explainers": {
+            "description": "You don’t really understand something until you can play with it. That’s the premise behind explainers — interactive experiences that let you do the thing, not just read about it. Instead of reading that monitors come in 16:9 and 21:9 aspect ratios, you drag them around and see them side by side. Instead of reading that religions evolved from shared roots, you click through a timeline and discover the connections yourself.\n\n",
+            "doc_size": 24000,
+            "file_path": "_site/explainers.html",
+            "incoming_links": [
+                "/ai-native-manager",
+                "/chow",
+                "/pet-projects"
+            ],
+            "last_modified": "2026-03-01T19:00:40.540874+00:00",
+            "markdown_path": "_d/explainers.md",
+            "outgoing_links": [
+                "/ai-native-manager",
+                "/chop",
+                "/chow",
+                "/pet-projects"
+            ],
+            "redirect_url": "",
+            "title": "Explainers: Interactive Understanding",
+            "url": "/explainers"
         },
         "/facebook": {
             "description": "Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven relationships, and providing skip-level escalations and support. Here are my notes on Facebook\n\n",
@@ -2823,6 +2857,7 @@
             "doc_size": 41000,
             "file_path": "_site/four-healths.html",
             "incoming_links": [
+                "/greek-orthodox",
                 "/mortality-software",
                 "/operating-manual",
                 "/spiritual-health"
@@ -3116,6 +3151,32 @@
             "title": "Gratefulness",
             "url": "/grateful"
         },
+        "/greek-orthodox": {
+            "description": "My son is fifteen and converting to Greek Orthodox Christianity. Guess that means I’m going to learn a lot about it. Six months ago I couldn’t tell you the difference between Catholic and Christian — now I’m casually dropping words like theosis and the Great Schism. When someone you love finds something meaningful, you learn about it. It’s been a fun challenge: find the good stuff, name the hard parts, figure out what maps to things I already care about. That’s what this page is.\n\n",
+            "doc_size": 32000,
+            "file_path": "_site/greek-orthodox.html",
+            "incoming_links": [
+                "/religion"
+            ],
+            "last_modified": "2026-02-28T09:01:21-08:00",
+            "markdown_path": "_d/greek-orthodox.md",
+            "outgoing_links": [
+                "/7h-concepts",
+                "/affirmations",
+                "/curious",
+                "/eulogy",
+                "/four-healths",
+                "/operating-manual",
+                "/psychic-weight",
+                "/regrets",
+                "/religion",
+                "/spiritual-health",
+                "/walking-with-god"
+            ],
+            "redirect_url": "",
+            "title": "Greek Orthodox: What Makes It Different",
+            "url": "/greek-orthodox"
+        },
         "/groupchat": {
             "description": "Imagine a group chat as the bustling kitchen of a high-end restaurant. In place of culinary masterpieces, it’s ideas, gossip, and insights that are cooked up, seasoned, and served. Just as a great dinner party brings together eclectic personalities for a memorable evening, a stellar group chat assembles diverse voices for ongoing, vibrant conversations. Basically Sriram’s awesome post on great group chats.\n\n",
             "doc_size": 24000,
@@ -3250,7 +3311,6 @@
                 "/ai",
                 "/ai-cockpit",
                 "/ai-journal",
-                "/changelog",
                 "/chop",
                 "/y25",
                 "/y26"
@@ -3598,10 +3658,11 @@
                 "/mortality-software",
                 "/y26"
             ],
-            "last_modified": "2026-01-19T09:10:34-08:00",
+            "last_modified": "2026-02-28T09:02:01-08:00",
             "markdown_path": "_d/larry.md",
             "outgoing_links": [
                 "/affirmations",
+                "/chow",
                 "/mortality-software",
                 "/planning",
                 "/process-journal"
@@ -4268,6 +4329,7 @@
                 "/energy",
                 "/energy-abundance",
                 "/four-healths",
+                "/greek-orthodox",
                 "/life-as-business"
             ],
             "last_modified": "2025-10-17T15:54:19-04:00",
@@ -4424,17 +4486,17 @@
             "doc_size": 26000,
             "file_path": "_site/pet-projects.html",
             "incoming_links": [
-                "/chow",
                 "/eulogy",
+                "/explainers",
                 "/how-igor-chops",
                 "/y25"
             ],
-            "last_modified": "2026-03-01T18:16:36.130101+00:00",
+            "last_modified": "2026-03-01T18:45:36.582142+00:00",
             "markdown_path": "_d/pet-projects.md",
             "outgoing_links": [
                 "/ai-native-manager",
                 "/bike-tesla-identity",
-                "/chow",
+                "/explainers",
                 "/process-journal",
                 "/static/pet-projects.html",
                 "/vibe"
@@ -4724,6 +4786,7 @@
             "file_path": "_site/psychic-weight.html",
             "incoming_links": [
                 "/depression",
+                "/greek-orthodox",
                 "/gtd",
                 "/mind-at-work",
                 "/process-journal",
@@ -4860,6 +4923,7 @@
                 "/agency",
                 "/emotions",
                 "/gap-year-igor",
+                "/greek-orthodox",
                 "/mood",
                 "/self-ego"
             ],
@@ -4883,6 +4947,7 @@
             "incoming_links": [
                 "/awareness",
                 "/four-healths",
+                "/greek-orthodox",
                 "/spiritual-health",
                 "/walking-with-god",
                 "/y26"
@@ -5310,6 +5375,7 @@
                 "/changelog",
                 "/elder",
                 "/four-healths",
+                "/greek-orthodox",
                 "/happy",
                 "/walking-with-god",
                 "/y26"
@@ -5910,11 +5976,12 @@
                 "/y25",
                 "/y26"
             ],
-            "last_modified": "2025-11-17T00:40:07+00:00",
+            "last_modified": "2026-02-28T09:02:01-08:00",
             "markdown_path": "_d/tesla.md",
             "outgoing_links": [
                 "/ai-bestie",
-                "/bike-tesla-identity"
+                "/bike-tesla-identity",
+                "/chow"
             ],
             "redirect_url": "",
             "title": "Tony (Tessie) the Tesla",
@@ -6524,6 +6591,7 @@
             "doc_size": 81000,
             "file_path": "_site/walking-with-god.html",
             "incoming_links": [
+                "/greek-orthodox",
                 "/religion",
                 "/spiritual-health",
                 "/y25",
