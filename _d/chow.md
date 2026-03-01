@@ -356,7 +356,7 @@ The best trampoline prompts feel slightly uncomfortable. That's the bounce.
 
 ### Explainers: AI-Generated Interactive Understanding
 
-When AI writes code or explains a concept, the default output is text. But text is passive — you read it, nod, and forget. **Explainers** are interactive visualizations that let you _do_ the thing instead of just reading about it. And AI can build them for you in minutes.
+When AI writes code or explains a concept, the default output is text. But text is passive — you read it, nod, and forget. **[Explainers](/explainers)** are interactive visualizations that let you _do_ the thing instead of just reading about it. And AI can build them for you in minutes.
 
 Simon Willison calls this [interactive explanations](https://simonwillison.net/guides/agentic-engineering-patterns/interactive-explanations/) — one of his [Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/). His example: he had an AI build a word cloud tool in Rust, but the algorithm description — "Archimedean spiral placement with per-word random angular offset" — meant nothing to him. So he asked the AI to build an animated HTML page where you can step through the algorithm frame by frame, watching each word try positions in a spiral until it finds one that fits. _That_ made it click.
 
@@ -364,14 +364,12 @@ This is a weapon against [cognitive debt](/ai-native-manager#cognitive-debt) —
 
 Consider the difference:
 
-- **Static image**: A diagram showing how religions evolved
+- **Static text**: "Religions evolved from shared roots, with Buddhism emerging from Hinduism around 500 BCE"
 - **Explainer**: An [explorer](https://religion-evolution-explorer.surge.sh/) where you click through traditions, see connections, and discover relationships yourself
-- **Static text**: "This post was written 3 years ago"
-- **Explainer**: A [timeline visualization](https://idvorkin-how-long-since-ai.surge.sh/?show=tool) showing exactly how old content is, updating in real-time
+- **Static text**: "ChatGPT launched in November 2022"
+- **Explainer**: A [timeline visualization](https://idvorkin-how-long-since-ai.surge.sh/?show=tool) showing exactly how long ago each AI milestone happened, updating in real-time
 
-These aren't prettier presentations — they're fundamentally different experiences. You explore at your own pace, discover things the author didn't explicitly write, and actually retain what you learned.
-
-I've been building these as [pet projects](/pet-projects#explainers-the-future-of-content) — monitor comparisons, AI timelines, religion evolution. The pattern is the same every time: take something that's hard to grasp as text, ask AI to build an interactive version, and suddenly it makes sense.
+Text gives you information. Explainers give you understanding. See the [full explainers page](/explainers) for great examples from Nicky Case, Red Blob Games, and others — plus the AI-powered workflow for building them.
 
 ### Generating the content for the reader
 

@@ -3,6 +3,7 @@
 # requires-python = ">=3.13"
 # dependencies = [
 #     "typer",
+#     "typing_extensions",
 #     "requests",
 #     "rich",
 # ]
