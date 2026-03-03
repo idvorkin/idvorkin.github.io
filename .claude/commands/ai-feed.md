@@ -94,7 +94,7 @@ Append entries to `_d/ai-feed.md` under today's date heading.
 ```markdown
 - **[Article Title](url)** — Author on topic
   - _Summary_: 2-3 sentence summary
-  - _Why I'd like it_: Prediction reasoning
+  - _Why Randy thinks I'd like it_: Prediction reasoning
   - _Cross-links_: [Related Post](/permalink), [Another](/permalink)
   - _Tags_: #tag1 #tag2 #tag3
   - _Reaction_:
