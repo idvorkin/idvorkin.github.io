@@ -10,6 +10,8 @@ tags:
   - productivity
 ---
 
+{% include ai-slop.html percent="50" %}
+
 Pretty common: I get a bag of links — a newsletter, a Twitter thread, a friend's Slack message. I open them all in tabs, skim, close most, and forget. Maybe one in ten sticks. The rest vanish into the consumption void.
 
 This is my attempt to fix that using Randy the Raccoon — my AI reading partner. [Why give AI a name?](/larry#why-larry-has-a-name) Same reason Larry the Life Coach has one: humans talk to people, not systems. Instead of the tab-explosion-and-forget cycle, I paste links into Randy, who fetches, summarizes, predicts what I'll like, and captures everything here. Later, when I actually read the good ones, I come back and debrief — recording what resonated and what didn't.
