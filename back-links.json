@@ -35,6 +35,7 @@
         "/ai-papers": "/ai-paper",
         "/ai-philosophy": "/ai-faq",
         "/ai-questions": "/ai-faq",
+        "/ai-reading": "/ai-feed",
         "/ai-slop": "/ai-hiring",
         "/ai-talk": "/genai-talk",
         "/alexa-charity": "/toysfortots",
@@ -86,6 +87,7 @@
         "/create-consume": "/produce-consume",
         "/creator": "/produce-consume",
         "/cry": "/touching",
+        "/curated-feed": "/ai-feed",
         "/cv": "/covid",
         "/d/2015-11-18-Outsourcing": "/outsourcing",
         "/data-viz": "/viz",
@@ -333,7 +335,7 @@
     "url_info": {
         "/22": {
             "description": "In 2019 I created a program for 15 fantastic interns! A program highlight was my talk titled “What I wish I knew at 22, and so might you”. The talk received a 94% overall rating from over 15 interns, 10 SDE-IIs, and 1 senior developer. Even though the talk focuses on how to live the good life, a big chunk of life is work, so there’s good coverage on how to optimize your career.\n\n",
-            "doc_size": 17000,
+            "doc_size": 16000,
             "file_path": "_site/22.html",
             "incoming_links": [
                 "/chapters",
@@ -460,6 +462,7 @@
             "incoming_links": [
                 "/7-habits",
                 "/advice",
+                "/greek-orthodox",
                 "/writing"
             ],
             "last_modified": "2025-12-06T16:22:23-08:00",
@@ -565,6 +568,7 @@
                 "/planning",
                 "/produce-consume",
                 "/slow",
+                "/spiritual-health",
                 "/timeoff-2021-12"
             ],
             "last_modified": "2025-12-07T02:26:29+00:00",
@@ -701,6 +705,7 @@
             "file_path": "_site/agency.html",
             "incoming_links": [
                 "/ai-faq",
+                "/ai-feed",
                 "/ai-hiring",
                 "/ai-native-manager"
             ],
@@ -807,6 +812,7 @@
             "doc_size": 25000,
             "file_path": "_site/ai-cockpit.html",
             "incoming_links": [
+                "/ai-feed",
                 "/ai-native-manager",
                 "/changelog",
                 "/how-igor-chops"
@@ -828,6 +834,7 @@
             "file_path": "_site/ai-developer.html",
             "incoming_links": [
                 "/ai",
+                "/ai-feed",
                 "/ai-hiring"
             ],
             "last_modified": "2026-01-02T15:26:54+00:00",
@@ -866,12 +873,41 @@
             "title": "AI FAQ",
             "url": "/ai-faq"
         },
+        "/ai-feed": {
+            "description": "Pretty common: I get a bag of links — a newsletter, a Twitter thread, a friend’s Slack message. I open them all in tabs, skim, close most, and forget. Maybe one in ten sticks. The rest vanish into the consumption void.\n\n",
+            "doc_size": 28000,
+            "file_path": "_site/ai-feed.html",
+            "incoming_links": [],
+            "last_modified": "2026-03-03T14:51:00+00:00",
+            "markdown_path": "_d/ai-feed.md",
+            "outgoing_links": [
+                "/agency",
+                "/ai-cockpit",
+                "/ai-developer",
+                "/ai-hiring",
+                "/ai-journal",
+                "/ai-native-manager",
+                "/chop",
+                "/chow",
+                "/explainers",
+                "/gtd",
+                "/how-igor-chops",
+                "/joy",
+                "/larry",
+                "/pet-projects",
+                "/produce-consume"
+            ],
+            "redirect_url": "",
+            "title": "AI Feed — Curated Reading Through Claude",
+            "url": "/ai-feed"
+        },
         "/ai-hiring": {
             "description": "Like everything else in the new AI world, hiring is gonna change. I don’t know where we’ll land, but I’m collecting thoughts as this plays out. The industry is all over the map - some companies now require AI use in interviews, others ban it entirely, most are somewhere in between trying to figure it out. How do we assess working with AI? What new behaviors/skills should we be testing for? I don’t have answers, just observations.\n\n",
             "doc_size": 20000,
             "file_path": "_site/ai-hiring.html",
             "incoming_links": [
                 "/ai",
+                "/ai-feed",
                 "/ai-native-manager"
             ],
             "last_modified": "2026-01-24T16:52:54+00:00",
@@ -910,21 +946,22 @@
             "incoming_links": [
                 "/ai",
                 "/ai-cockpit",
+                "/ai-feed",
                 "/ai-native-manager",
                 "/changelog",
                 "/chop",
                 "/walking-with-god",
                 "/y25"
             ],
-            "last_modified": "2026-03-01T20:22:17.372464+00:00",
+            "last_modified": "2026-03-01T13:13:14-08:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
                 "/ai-security",
-                "/ai-talk",
                 "/chop",
                 "/chow",
                 "/eulogy",
+                "/genai-talk",
                 "/gpt",
                 "/how-igor-chops",
                 "/hyper-personal",
@@ -939,13 +976,14 @@
             "doc_size": 41000,
             "file_path": "_site/ai-native-manager.html",
             "incoming_links": [
+                "/ai-feed",
                 "/changelog",
                 "/chow",
                 "/explainers",
                 "/manager-book",
                 "/pet-projects"
             ],
-            "last_modified": "2026-03-01T19:00:40.540874+00:00",
+            "last_modified": "2026-03-01T12:10:54-08:00",
             "markdown_path": "_d/ai-native-manager.md",
             "outgoing_links": [
                 "/agency",
@@ -1629,7 +1667,7 @@
             "doc_size": 34000,
             "file_path": "_site/changelog.html",
             "incoming_links": [],
-            "last_modified": "2026-02-22T22:09:55+00:00",
+            "last_modified": "2026-02-22T14:11:56-08:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
                 "/activation",
@@ -1637,7 +1675,7 @@
                 "/ai-cockpit",
                 "/ai-journal",
                 "/ai-native-manager",
-                "/chop",
+                "/how-igor-chops",
                 "/product",
                 "/recent",
                 "/shoulder-pain",
@@ -1702,10 +1740,10 @@
                 "/ai",
                 "/ai-cockpit",
                 "/ai-developer",
+                "/ai-feed",
                 "/ai-hiring",
                 "/ai-journal",
                 "/ai-native-manager",
-                "/changelog",
                 "/chow",
                 "/explainers",
                 "/gtd",
@@ -1716,7 +1754,7 @@
                 "/y25",
                 "/y26"
             ],
-            "last_modified": "2026-03-01T19:14:13.676384+00:00",
+            "last_modified": "2026-03-01T12:10:54-08:00",
             "markdown_path": "_d/ai-coder.md",
             "outgoing_links": [
                 "/ai-journal",
@@ -1725,8 +1763,7 @@
                 "/how-igor-chops",
                 "/humans-are-underrated",
                 "/process-journal",
-                "/testing",
-                "/vibe"
+                "/testing"
             ],
             "redirect_url": "",
             "title": "The CHOP Shop: Where AI Meets Code",
@@ -1739,6 +1776,7 @@
             "incoming_links": [
                 "/ai",
                 "/ai-faq",
+                "/ai-feed",
                 "/ai-journal",
                 "/bike-tesla-identity",
                 "/explainers",
@@ -1747,7 +1785,7 @@
                 "/tesla",
                 "/y26"
             ],
-            "last_modified": "2026-03-01T18:16:36.130101+00:00",
+            "last_modified": "2026-03-01T12:10:54-08:00",
             "markdown_path": "_d/chow.md",
             "outgoing_links": [
                 "/ai-faq",
@@ -1925,6 +1963,7 @@
                 "/essentialism",
                 "/first-understand",
                 "/get-to-yes-with-yourself",
+                "/greek-orthodox",
                 "/happy",
                 "/manager-book",
                 "/negotiate",
@@ -2433,7 +2472,8 @@
             "file_path": "_site/elder.html",
             "incoming_links": [
                 "/40yo",
-                "/addiction"
+                "/addiction",
+                "/spiritual-health"
             ],
             "last_modified": "2026-01-25T16:42:46-08:00",
             "markdown_path": "_d/elder.md",
@@ -2725,15 +2765,16 @@
         },
         "/explainers": {
             "description": "You don’t really understand something until you can play with it. That’s the premise behind explainers — interactive experiences that let you do the thing, not just read about it. Instead of reading that monitors come in 16:9 and 21:9 aspect ratios, you drag them around and see them side by side. Instead of reading that religions evolved from shared roots, you click through a timeline and discover the connections yourself.\n\n",
-            "doc_size": 24000,
+            "doc_size": 29000,
             "file_path": "_site/explainers.html",
             "incoming_links": [
+                "/ai-feed",
                 "/ai-native-manager",
                 "/chop",
                 "/chow",
                 "/pet-projects"
             ],
-            "last_modified": "2026-03-01T20:07:03.167895+00:00",
+            "last_modified": "2026-03-01T12:10:54-08:00",
             "markdown_path": "_d/explainers.md",
             "outgoing_links": [
                 "/ai-native-manager",
@@ -3157,12 +3198,12 @@
             "incoming_links": [
                 "/religion"
             ],
-            "last_modified": "2026-03-01T22:19:45.142165+00:00",
+            "last_modified": "2026-03-01T14:23:50-08:00",
             "markdown_path": "_d/greek-orthodox.md",
             "outgoing_links": [
-                "/7h-c0",
+                "/7h-concepts",
                 "/affirmations",
-                "/compassion",
+                "/curious",
                 "/eulogy",
                 "/four-healths",
                 "/operating-manual",
@@ -3194,6 +3235,7 @@
             "file_path": "_site/gtd.html",
             "incoming_links": [
                 "/4dx",
+                "/ai-feed",
                 "/books-that-defined-me",
                 "/d/resistance",
                 "/depression",
@@ -3309,8 +3351,11 @@
             "incoming_links": [
                 "/ai",
                 "/ai-cockpit",
+                "/ai-feed",
                 "/ai-journal",
+                "/changelog",
                 "/chop",
+                "/pet-projects",
                 "/y25",
                 "/y26"
             ],
@@ -3565,6 +3610,7 @@
             "file_path": "_site/joy.html",
             "incoming_links": [
                 "/affirmations",
+                "/ai-feed",
                 "/balloon",
                 "/build-bubble-bike",
                 "/emotions",
@@ -3653,6 +3699,7 @@
             "doc_size": 17000,
             "file_path": "_site/larry.html",
             "incoming_links": [
+                "/ai-feed",
                 "/chow",
                 "/mortality-software",
                 "/y26"
@@ -4485,20 +4532,21 @@
             "doc_size": 26000,
             "file_path": "_site/pet-projects.html",
             "incoming_links": [
+                "/ai-feed",
                 "/eulogy",
                 "/explainers",
                 "/how-igor-chops",
                 "/y25"
             ],
-            "last_modified": "2026-03-01T18:45:36.582142+00:00",
+            "last_modified": "2026-03-01T12:10:54-08:00",
             "markdown_path": "_d/pet-projects.md",
             "outgoing_links": [
                 "/ai-native-manager",
                 "/bike-tesla-identity",
                 "/explainers",
+                "/how-igor-chops",
                 "/process-journal",
-                "/static/pet-projects.html",
-                "/vibe"
+                "/static/pet-projects.html"
             ],
             "redirect_url": "",
             "title": "Pet Projects",
@@ -4679,6 +4727,7 @@
             "doc_size": 21000,
             "file_path": "_site/produce-consume.html",
             "incoming_links": [
+                "/ai-feed",
                 "/gap-year-igor",
                 "/slow"
             ],
@@ -5366,8 +5415,8 @@
             "url": "/software-leadership-roles"
         },
         "/spiritual-health": {
-            "description": "Ever felt directionless despite achieving everything you “should” want? Burned out treating every setback like catastrophe? Exhausted trying to control what you can’t? These are manifestations of a lack of spiritual health. “Spiritual health” is poorly defined, so I’ll define it practically: spiritual health means having a north star (purpose/direction), knowing you’re NOT the center of the universe (transcendence/perspective), and accepting you have influence, not control (coherence/acceptance). Miss any one and you’ll find yourself spiritually malnourished in problems as old as time.\n\n",
-            "doc_size": 60000,
+            "description": "I’m not sure spiritual health is real. It might be a fancy label for “stuff that makes you feel less lost,” or it might be the most important thing you’re neglecting. This page is where I muddle through that question — building up frameworks, stress-testing them, and honestly considering whether it’s all bullshit. So far, the best test I’ve found: are you sustainably motivated in a way you’d be proud to see in your child? If yes, you’ve probably cracked it — even if you can’t explain how. If no, the word to focus on is motivated, not meaning. You can philosophize about meaning forever and never become more spiritually healthy. That’s the biggest trap. Motivation is the proof that meaning is present. When it’s missing, the question is whether you’re lacking purpose, transcendence, or coherence — and what to do about it.\n\n",
+            "doc_size": 91000,
             "file_path": "_site/spiritual-health.html",
             "incoming_links": [
                 "/awareness",
@@ -5382,7 +5431,9 @@
             "last_modified": "2026-03-03T14:50:35.500730+00:00",
             "markdown_path": "_d/spiritual-health.md",
             "outgoing_links": [
+                "/activation",
                 "/build-life-you-want",
+                "/elder",
                 "/eulogy",
                 "/four-healths",
                 "/religion",
