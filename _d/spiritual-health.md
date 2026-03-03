@@ -7,7 +7,7 @@ tags:
   - how igor ticks
 ---
 
-I'm not sure spiritual health is real. It might be a fancy label for "stuff that makes you feel less lost," or it might be the most important thing you're neglecting. This page is where I muddle through that question — building up frameworks, stress-testing them, and honestly considering whether it's all bullshit. So far, the best test I've found: **are you sustainably motivated in a way you'd be proud to see in your child?** If yes, you've probably cracked it — even if you can't explain how. If no, the word to focus on is *motivated*, not *meaning*. You can philosophize about meaning forever and never become more spiritually healthy. That's the biggest [trap](#the-meaning-traps). Motivation is the proof that meaning is present. When it's missing, the question is whether you're lacking purpose, transcendence, or coherence — and what to do about it.
+I'm not sure spiritual health is real. It might be a fancy label for "stuff that makes you feel less lost," or it might be the most important thing you're neglecting. This page is where I muddle through that question — building up frameworks, stress-testing them, and honestly considering whether it's all bullshit. So far, the best test I've found: **are you sustainably motivated in a way you'd be proud to see in your child?** If yes, you've probably cracked it — even if you can't explain how. If no, the word to focus on is _motivated_, not _meaning_. You can philosophize about meaning forever and never become more spiritually healthy. That's the biggest [trap](#the-meaning-traps). Motivation is the proof that meaning is present. When it's missing, the question is whether you're lacking purpose, transcendence, or coherence — and what to do about it.
 
 **Breaking down that test.** Two parts:
 
@@ -207,9 +207,9 @@ All those definitions are useful, but they come with a warning: most people who 
 
 ### Trap 1: The Philosophy Pit
 
-"What does meaning *mean*?" You read Frankl. You compare three dimensions of meaning. You debate whether purpose and transcendence are separate dimensions or developmental stages. You build a beautiful mental model of spiritual health. And you're still sitting on the couch.
+"What does meaning _mean_?" You read Frankl. You compare three dimensions of meaning. You debate whether purpose and transcendence are separate dimensions or developmental stages. You build a beautiful mental model of spiritual health. And you're still sitting on the couch.
 
-This is the most seductive trap because it feels like progress. You're *thinking* about meaning! You're *learning*! But philosophizing about meaning is not the same as having it. You can define all three dimensions perfectly and still be spiritually empty.
+This is the most seductive trap because it feels like progress. You're _thinking_ about meaning! You're _learning_! But philosophizing about meaning is not the same as having it. You can define all three dimensions perfectly and still be spiritually empty.
 
 **The tell:** You can explain what meaning is but can't point to what gets you out of bed tomorrow.
 
@@ -221,7 +221,7 @@ Here's the uncomfortable truth: **motivation is the proof that meaning has been 
 
 And if you're not motivated? No amount of reading about meaning will fix it.
 
-This works because motivation and meaning are connected at the root. Frankl himself said it: "The primary motivational force of individuals is to find meaning in life." He didn't say the primary *intellectual* force or the primary *philosophical* force. He said *motivational*. When meaning is present, motivation follows. When motivation is absent, meaning is missing — no matter what your journal says.
+This works because motivation and meaning are connected at the root. Frankl himself said it: "The primary motivational force of individuals is to find meaning in life." He didn't say the primary _intellectual_ force or the primary _philosophical_ force. He said _motivational_. When meaning is present, motivation follows. When motivation is absent, meaning is missing — no matter what your journal says.
 
 The [activation energy](/activation) model explains why this matters practically. Every activity requires willpower to start. When you have genuine meaning — when your purpose is alive, not just written down — the [activation energy](/activation) for meaningful activities drops dramatically. You don't need to force yourself to do what matters. The meaning provides the energy. But when meaning is absent, even low-effort activities feel impossible because there's no underlying "why" to power through the [activation threshold](/activation#activation-energy).
 
@@ -231,13 +231,13 @@ The [activation energy](/activation) model explains why this matters practically
 
 ### Trap 3: Meaning Without Motion
 
-You found meaning once. Maybe it was when the kids were small and needed you. Maybe it was a job that mattered. Maybe it was a cause that lit you up. But circumstances changed, and the meaning source dried up. You still *remember* having meaning but you don't *have* it anymore.
+You found meaning once. Maybe it was when the kids were small and needed you. Maybe it was a job that mattered. Maybe it was a cause that lit you up. But circumstances changed, and the meaning source dried up. You still _remember_ having meaning but you don't _have_ it anymore.
 
 This is the [Grihastha trap](#the-lifecycle-pattern-why-faith-rises-with-age) in a different form — clinging to a meaning source that's no longer available instead of finding a new one. The person whose kids left home and who built their entire identity around parenting. The retiree who was their job title. The activist whose cause was won (or lost).
 
 **The tell:** You talk about meaning in the past tense. "I used to feel so purposeful when..."
 
-**The escape:** Meaning isn't found once and banked forever. It requires continuous renewal through new responsibilities, new service, new commitments. As Frankl showed, you answer life's question about your purpose with what you *decide to be responsible for* — and that answer needs updating as life changes. See [What's the meaning of life?](#whats-the-meaning-of-life)
+**The escape:** Meaning isn't found once and banked forever. It requires continuous renewal through new responsibilities, new service, new commitments. As Frankl showed, you answer life's question about your purpose with what you _decide to be responsible for_ — and that answer needs updating as life changes. See [What's the meaning of life?](#whats-the-meaning-of-life)
 
 ### Trap 4: Borrowed Meaning
 
@@ -846,6 +846,8 @@ Transcendence is less something you DO and more something you ALLOW. It's not an
 1. Go from negative (not losing) to positive (thriving)
 1. Go from extrinsic motivation (money) to intrinsic motivation (autonomy, mastery, purpose)
 1. Go from self to others
+
+Ben Wallace's [The Happiest I've Ever Been](https://ben-mini.com/2026/the-happiest-ive-ever-been) is a case study of all three shifts. He left a corporate career that looked great on paper but felt hollow, and found that coaching youth basketball — an activity aligned with his intrinsic values, focused on others — made him happier than professional success ever did. It's a good antidote to Silicon Valley's conflation of professional value with personal worth.
 
 ## What's the meaning of life?
 
