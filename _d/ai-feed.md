@@ -35,49 +35,49 @@ _Source: [Joy & Curiosity #76](https://registerspill.thorstenball.com/p/joy-and-
   - _Why Randy thinks I'd like it_: Direct extension of your /ai-hiring post. Real company doing it, not just theorizing.
   - _Cross-links_: [AI Hiring](/ai-hiring), [Agency](/agency), [AI Native Manager](/ai-native-manager)
   - _Tags_: #ai-hiring #management #craft
-  - _Reaction_:
+  - _Reaction_: Shallow. Basically "give candidate AI tools and watch them build something for 4 hours" — which is the classic take-home-but-onsite format. I like the idea in principle but it has the same cost problem I flag in my ai-hiring post: it's expensive for both sides. If that's the entire interview day, maybe it works. Was hoping for deeper insight into what signals they actually extract and how they evaluate judgment vs. just watching someone vibe-code.
 - **[747s and Coding Agents](https://carlkolon.com/2026/02/27/engineering-747-coding-agents/)** — Carl Kolon on AI eroding deep understanding
   - _Summary_: AI agents boost output but erode deep understanding — like a 747 pilot who stops learning because the plane flies itself. Programmers risk becoming operators, not engineers, if they don't deliberately maintain domain knowledge through hands-on problem-solving.
   - _Why Randy thinks I'd like it_: Maps directly to your "Don't stop thinking" and "Deep Blue" sections in /ai-native-manager.
   - _Cross-links_: [AI Native Manager](/ai-native-manager), [CHOP](/chop)
   - _Tags_: #skill-atrophy #ai-practice #contrarian
-  - _Reaction_:
+  - _Reaction_: Already-seen insight dressed up with a metaphor. "AI makes you lazy if you let it" — I've already written this. Nothing novel in the execution or the framing. Need either a genuinely new angle or exceptional writing to justify retreading familiar ground.
 - **[Nobody Knows How the Whole System Works](https://surfingcomplexity.blog/2026/02/08/nobody-knows-how-the-whole-system-works/)** — Lorin Hochstein on irreducible complexity
   - _Summary_: Complete comprehension across all layers of modern systems is impossible — a reality AI is making more acute, not fundamentally changing. Synthesizes perspectives from Simon Wardley, Adam Jacob, and others to argue it's dangerous to build without understanding, but full understanding is a myth.
   - _Why Randy thinks I'd like it_: Systems thinking is your jam. Connects to your complexity-per-person concerns in /ai-native-manager.
   - _Cross-links_: [AI Native Manager](/ai-native-manager), [Explainers](/explainers)
   - _Tags_: #complexity #systems-thinking #cognitive-debt
-  - _Reaction_:
+  - _Reaction_: Nothing new or novel. "You can't understand the whole system" is well-trodden ground.
 - **[Building An Elite AI Engineering Culture](https://www.cjroth.com/blog/2026-02-18-building-an-elite-engineering-culture)** — Chris Roth on AI amplifying organizational strengths
   - _Summary_: AI amplifies existing organizational strengths and weaknesses — creating a 5.7x efficiency gap between disciplined teams and the rest. Without engineering rigor (specs, testing, reviews), AI tools just make your problems louder.
   - _Why Randy thinks I'd like it_: Relevant to your management writing, concrete data on the amplification effect.
   - _Cross-links_: [AI Native Manager](/ai-native-manager), [CHOP](/chop), [AI Hiring](/ai-hiring)
   - _Tags_: #management #ai-practice #engineering-culture
-  - _Reaction_:
+  - _Reaction_: Long, not powerful. Meh writing. Some interesting points buried in there but doesn't earn the length.
 - **[Scattered Thoughts on LLM Tools](https://www.jmduke.com/posts/five-observations-ai-tools.html)** — Justin Duke on practical AI tool challenges
   - _Summary_: LLM tools are improving incrementally but remain fundamentally flawed as software products. The real bottleneck isn't AI capability but infrastructure — sandboxed environments, data integration, feedback loops, and systemic process gaps.
   - _Why Randy thinks I'd like it_: Practitioner perspective on the gap between AI hype and actual tool experience. Grounded.
   - _Cross-links_: [CHOP](/chop), [AI Cockpit](/ai-cockpit), [How Igor CHOPs](/how-igor-chops)
   - _Tags_: #ai-tools #practitioner #infrastructure
-  - _Reaction_:
+  - _Reaction_: Weird grab bag. Liked it but not insightful — scattered observations without a unifying thread.
 - **[Cloudflare vinext](https://blog.cloudflare.com/vinext/)** — Steve Faulkner on one engineer rebuilding Next.js with AI
   - _Summary_: One engineer rebuilt Next.js as "vinext" in a week for $1,100 in AI tokens. AI doesn't need the intermediate abstractions humans created to manage complexity — many existing software layers will become obsolete.
   - _Why Randy thinks I'd like it_: Great case study of AI productivity, but more "look what AI can do" than practitioner reflection.
   - _Cross-links_: [CHOP](/chop), [AI Developer](/ai-developer), [Produce vs Consume](/produce-consume)
   - _Tags_: #ai-productivity #vibe-coding #case-study
-  - _Reaction_:
+  - _Reaction_: Didn't land because I don't know Next.js well enough to appreciate the technical achievement. But the underlying pattern — AI reimplements a well-documented API surface from scratch, skipping all the human-cognitive-load abstractions — is interesting. Would love to see this pattern applied to a domain I know better.
 - **[The Happiest I've Ever Been](https://ben-mini.com/2026/the-happiest-ive-ever-been)** — Ben Wallace on finding joy outside career
   - _Summary_: True happiness comes from activities aligned with intrinsic values, not career prestige. Coaching youth basketball fulfilled him more than his corporate job. Tech workers should question Silicon Valley's propaganda about professional value equaling personal worth.
   - _Why Randy thinks I'd like it_: Connects to your joy/meaning writing but not AI-specific.
   - _Cross-links_: [Joy](/joy), [Produce vs Consume](/produce-consume)
   - _Tags_: #happiness #meaning #anti-hustle
-  - _Reaction_:
+  - _Reaction_: Interesting post on purpose. Worth linking from spiritual health content somewhere.
 - **[The Very Hungry Caterpillar Design Analysis](https://lookingatpicturebooks.com/p/the-very-hungry-caterpillar)** — Mac Barnett & Jon Klassen on Eric Carle's craft
   - _Summary_: Carle's book succeeds through masterful control of color, shape, and die-cut innovation — not expressive character design. Deliberately stripped away emotional facial features to create warmth, bridging toys and books while carrying bittersweet melancholy about transformation.
   - _Why Randy thinks I'd like it_: Beautiful craft analysis but tangential to your usual themes.
   - _Cross-links_: [AI Journal](/ai-journal)
   - _Tags_: #design #craft #children
-  - _Reaction_:
+  - _Reaction_: Skimmed, didn't hook me.
 - **[What Claude Code Actually Chooses](https://amplifying.ai/research/claude-code-picks)** — Research on AI code assistant tool selection
   - _Summary_: (Already read — Igor noted it was excellent)
   - _Why Randy thinks I'd like it_: Directly relevant to your daily CHOP workflow.
@@ -102,7 +102,8 @@ _This section is Randy's recommender training data. It evolves as patterns emerg
 
 - **Hype pieces** — "AI will revolutionize X" without specifics
 - **Benchmark comparisons** — Model A vs Model B on task C
-- **Already-seen insights** — If I've internalized the core idea (e.g., PG startup lessons), I skip even good writing about it
+- **Already-seen insights** — If I've internalized the core idea (e.g., PG startup lessons, "AI erodes deep skills"), I skip even good writing about it. Topic match alone doesn't save a shallow article. The bar for familiar territory: either a genuinely novel angle or exceptional writing. Hard to know depth before reading though — flag the risk, don't predict love or skip.
+- **Mediocre writing** — Good ideas in long, underpowered prose get downgraded. Length must be earned.
 - **Pure tutorials** — Step-by-step how-tos without opinions or reflection
 - **Political framing of AI** — Left/right lens on technology
 
@@ -116,3 +117,4 @@ _This section is Randy's recommender training data. It evolves as patterns emerg
 ### Calibration Notes
 
 - _2026-03-01_: First session. From Joy & Curiosity #76, picked 10 of 19 links. Strong bias toward cognitive debt / AI practice / management cluster. Skipped PG startup essay (already internalized), political AI framing, and pure X/Twitter commentary. Already had read Claude Code research — actively follows AI tooling research independently.
+- _2026-03-03_: Debrief on 8 articles. Most landed as "familiar territory, nothing new." Key lessons: (1) Topic relevance alone doesn't save shallow execution — 4 of 8 were right topic but underwhelming depth. (2) Writing quality is a real filter — good ideas in mediocre prose get downgraded. (3) Domain knowledge matters — vinext pattern was interesting but didn't land because Igor doesn't know Next.js. (4) Non-AI content (happiness/purpose) can land when it connects to personal writing themes. (5) For familiar territory, flag "you've written about this — worth a skim for new angles" rather than predicting love.
