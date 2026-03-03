@@ -145,15 +145,48 @@ Just do it - including obvious follow-up actions. Only pause when:
 
 # Blog Content Guidelines
 
-## Blog Writing Style
+## Content Skills — Use These First
 
-**AI Slop Label:** Posts with significant AI-generated content should include `{% include ai-slop.html percent="NN" %}` near the top, where NN is the estimated percentage of AI slop (0-100).
+**Before working on any blog content, invoke the appropriate skill.** Skills load full guidelines, set up branches, and enforce correct workflows. Skipping them leads to mistakes (wrong ai-slop placement, missing cross-links, etc).
 
-**ALWAYS reference `content_guidelines.md`** when working on blog posts. It contains:
+| Task                      | Skill                             | What it does                                                         |
+| ------------------------- | --------------------------------- | -------------------------------------------------------------------- |
+| General blog content      | `/content`                        | Loads `content_guidelines.md`, ensures feature branch, starts server |
+| AI-related posts          | `/ai-content`                     | Full context of related AI posts + content guidelines                |
+| Spiritual/emotional posts | `/spiritual-content`              | Full context of related spiritual posts + content guidelines         |
+| AI feed curation          | `/ai-feed`                        | Triage links or debrief on reading                                   |
+| Find related posts        | `/find-content`                   | Search by keyword, theme, or frontmatter metadata                    |
+| Charts, cards, matrices   | `/blog-visuals`                   | Visual components for blog posts                                     |
+| Amazon product links      | `/amazon-asin`                    | Affiliate links with cached metadata                                 |
+| Preview pages             | `/serve`                          | Start/check Jekyll server, get Tailscale URL                         |
+| Test components           | `/test-includes`                  | Playwright tests for includes and components                         |
+| Fetch web content         | `/web-browse`                     | Fallback chain: Lightpanda, Playwright CLI, WebFetch                 |
+| Process YouTube videos    | `youtube-content-processor` agent | Subtitle extraction, conversion, analysis                            |
 
-- 8 distinct content types with specific guidelines
-- Universal writing style rules
-- Technical implementation for alert boxes, redirects, book links, images
+## AI Slop Label
+
+Posts with significant AI-generated content need an ai-slop label. **Place it after the first paragraph** — putting it before or inside the first paragraph breaks page previews/excerpts.
+
+```markdown
+Your compelling first paragraph that serves as the excerpt...
+
+{% include ai-slop.html percent="NN" %}
+
+Rest of post content...
+```
+
+## Internal Link Guidelines
+
+**Always use permalinks**, not redirect URLs:
+
+- Correct: `[Voices in My Head](/voices)`
+- Wrong: `[Voices in My Head](/voices-in-my-head)`
+
+Run pre-commit to check: `prek run --files <your-files>`
+
+## Finding Related Blog Content
+
+Use Grep/Glob directly on `_d/`, `_posts/`, and `_td/` directories for text search — faster than the blog MCP. For frontmatter metadata queries (tags, dates, incoming/outgoing links), use `/find-content`.
 
 ## AI Journal Entries
 
@@ -169,43 +202,4 @@ When updating `_d/ai-journal.md`:
 - **Claude Code logs**: `~/.claude/projects/-Users-idvorkin-gits-blog/` (JSONL)
 - **Published HTML**: `published-chop-logs/`
 
-To publish: Use the `conversation-log-publisher` agent - it handles security review and file organization.
-
-## Finding Related Blog Content
-
-When searching for existing blog content in this repository, use Grep/Glob directly on `_d/`, `_posts/`, and `_td/` directories — not the blog MCP. Direct file search is faster and more reliable for finding text in the repo.
-
-For querying by frontmatter metadata (tags, dates, incoming/outgoing links), use `/find-content`.
-
-## Blog Visual Components
-
-For charts, summary cards, matrices, and voice widgets, use `/blog-visuals`.
-
-## Amazon Product Links
-
-For Amazon affiliate product links, use `/amazon-asin`.
-
-## Previewing Pages
-
-Use `/serve` to check or start the Jekyll server. Always provide direct section links in preview URLs: `http://[hostname]:4000/[permalink]#[section-slug]`.
-
-## Testing Changes
-
-For testing includes and components with Playwright, use `/test-includes`.
-
-## Internal Link Guidelines
-
-**Always use permalinks**, not redirect URLs:
-
-- Correct: `[Voices in My Head](/voices)`
-- Wrong: `[Voices in My Head](/voices-in-my-head)`
-
-Run pre-commit to check: `prek run --files <your-files>`
-
-## Fetching Web Content
-
-Use `/web-browse` for fetching web content (fallback chain and Cloudflare workarounds).
-
-## Processing YouTube Videos
-
-Use the `youtube-content-processor` agent for subtitle extraction, conversion, and analysis.
+To publish: Use the `conversation-log-publisher` agent — it handles security review and file organization.
