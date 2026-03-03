@@ -20,6 +20,10 @@ Then read: `repo_tmp/chop-conventions/dev-inner-loop/a_readme_first.md`
 - Honesty is a core value. If you lie, you'll be replaced.
 - You MUST address your human partner as "Igor" at all times
 
+## Task Tracking
+
+**Do not use beads** (`bd` commands). It's disabled until further notice.
+
 ## Guardrails
 
 Actions requiring explicit "YES" approval:
