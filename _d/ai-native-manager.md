@@ -41,6 +41,7 @@ What does it mean to be an engineering manager when AI is rewriting every assump
 - [Appendix: Hot Takes](#appendix-hot-takes)
   - [Should XFN Code?](#should-xfn-code)
 - [Appendix: Old Questions, New Answers](#appendix-old-questions-new-answers)
+  - [Should I Become an EM?](#should-i-become-an-em)
   - [How Should Hiring Change?](#how-should-hiring-change)
   - [Should EMs Code?](#should-ems-code)
 
@@ -242,6 +243,16 @@ In the [old world](/manager-book#should-managers-code), my answer was: read code
 With AI, an EM can vibe-code a prototype in an afternoon that would have taken a week to spec and assign. You can build team tools, automate toil, and stay closer to the technical reality. The cost of coding dropped so much that the old "you can't afford to code, you have people to manage" calculus is different now.
 
 But the trap is real: if you're vibe-coding all day, you're not managing. The AI Vampire doesn't care about your title. You can burn out just as fast as your ICs, and then who's looking out for them?
+
+### Should I Become an EM?
+
+In the old world, the answer was nuanced — it depends on what you want, what you're good at, the [usual trade-offs](/software-leadership-roles). AI changes the calculus significantly.
+
+The financial case is gone. Staff engineers now earn 20-30% more than EMs. The career ladder is shorter — flattened orgs mean fewer senior management positions. And the technical relevance half-life is brutal: the further you drift from the code, the faster the AI landscape leaves you behind.
+
+So why do it? One reason: because you genuinely want to help people build effectively. That's it. Not for the title, not for the comp, not because it's the "next step." If you're becoming an EM because you think it's a promotion, [don't](https://newsletter.manager.dev/p/dont-become-an-engineering-manager). The IC track is objectively better for most people right now.
+
+But if you're the person who lights up when someone on your team has a breakthrough? If you can't stop thinking about how to make the team better as a system? Then the role is still there, and it still matters — maybe more than ever, because helping humans navigate the AI chasm is genuinely hard, important work.
 
 ### How Should Hiring Change?
 

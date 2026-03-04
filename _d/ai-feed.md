@@ -20,6 +20,15 @@ It's [GTD](/gtd) capture meets AI triage. And unlike passive consumption, this p
 
 ## Feed
 
+### 2026-03-04
+
+- **[Don't Become an Engineering Manager](https://newsletter.manager.dev/p/dont-become-an-engineering-manager)** — Anton Zaides on why the EM career path no longer makes sense
+  - _Summary_: Zaides argues that senior engineers should no longer pursue management roles — rapid tech change makes it hard for managers to stay current, flattened orgs mean fewer senior management positions, and Staff engineers now earn 20-30% more than EMs. He reverses his previous advice, positioning the IC track as more rational, though acknowledges genuine interest in management work should still outweigh financial optimization.
+  - _Why Randy thinks I'd like it_: Management/leadership in AI era — directly relevant to your ai-native-manager post. Contrarian reversal from someone who previously advocated for the EM path.
+  - _Cross-links_: [AI Native Manager](/ai-native-manager), [Manager Book](/manager-book), [Software Leadership Roles](/software-leadership-roles)
+  - _Tags_: #management #contrarian #career
+  - _Reaction_: This is good. These are the reasons — the only reason to be an EM is because you want to. Adding to "Should I become an EM?" on the AI native EM post.
+
 ### 2026-03-01
 
 _Source: [Joy & Curiosity #76](https://registerspill.thorstenball.com/p/joy-and-curiosity-76) by Thorsten Ball_
