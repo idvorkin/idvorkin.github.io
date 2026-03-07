@@ -410,6 +410,9 @@ async function shareOrCopyHeaderLink(headerId: string, options: CopyLinkOptions)
       shareText = `From: ${breadcrumbFrom} ...\n\n${previewText}`;
     }
 
+    // Fire-and-forget: warm up the redirect chain so it loads fast for the recipient
+    fetch(tinyUrl).catch(() => {});
+
     // Check if this is a mobile device
     const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
