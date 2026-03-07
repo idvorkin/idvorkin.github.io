@@ -145,7 +145,7 @@ I wrote a whole [manager book](/manager-book) in the pre-AI world. Some of it ca
 
 ## Making AI a Team Sport
 
-{% include local_image_float_right.html src="raccoon-ai-team-sport.webp" %}
+![AI-Naive vs AI-Native](/images/raccoon-ai-naive-vs-native.webp)
 
 The lone wolf vibe coder gets all the Twitter glory, but that's not how teams work. Your job as an EM is to make AI a team sport — divide and conquer, match people to their strengths, and make the whole team successful, not just the one person who happens to be in Frenzy.
 
