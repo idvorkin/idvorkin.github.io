@@ -55,7 +55,7 @@ What does it mean to be an engineering manager when AI is rewriting every assump
 
 {% include alert.html content="These are my personal opinions, not those of any employer, past or present. No one knows the future, especially me." style="warning" %}
 
-{% include local_image_float_right.html src="raccoon-ai-native-em.webp" %}
+{% include local_image_float_right.html src="raccoon-ai-native-em-plates.webp" %}
 
 ## What is AI Native?
 
@@ -144,6 +144,8 @@ I wrote a whole [manager book](/manager-book) in the pre-AI world. Some of it ca
 - **The schedule** — My old 44-hour week breakdown (8hrs 1:1s, 6hrs partner meetings, 6hrs reviews...) assumes a stable world where you can plan your week. In the Year of Chaos, you need more slack for learning, experimenting, and helping people through the AI chasm.
 
 ## Making AI a Team Sport
+
+{% include local_image_float_right.html src="raccoon-ai-team-sport.webp" %}
 
 The lone wolf vibe coder gets all the Twitter glory, but that's not how teams work. Your job as an EM is to make AI a team sport — divide and conquer, match people to their strengths, and make the whole team successful, not just the one person who happens to be in Frenzy.
 
