@@ -973,7 +973,7 @@
         },
         "/ai-native-manager": {
             "description": "What does it mean to be an engineering manager when AI is rewriting every assumption you have about software, teams, and your own role? I don’t know yet. Nobody does. But I’m figuring it out in real time, and these are my notes from the chaos.\n\n",
-            "doc_size": 41000,
+            "doc_size": 44000,
             "file_path": "_site/ai-native-manager.html",
             "incoming_links": [
                 "/ai-feed",
@@ -983,7 +983,7 @@
                 "/manager-book",
                 "/pet-projects"
             ],
-            "last_modified": "2026-03-01T12:10:54-08:00",
+            "last_modified": "2026-03-07T15:42:55.253444+00:00",
             "markdown_path": "_d/ai-native-manager.md",
             "outgoing_links": [
                 "/agency",
@@ -993,7 +993,8 @@
                 "/chop",
                 "/coaching",
                 "/explainers",
-                "/manager-book"
+                "/manager-book",
+                "/software-leadership-roles"
             ],
             "redirect_url": "",
             "title": "The AI Native Engineering Manager",
@@ -5402,6 +5403,7 @@
             "doc_size": 18000,
             "file_path": "_site/software-leadership-roles.html",
             "incoming_links": [
+                "/ai-native-manager",
                 "/job",
                 "/manager-book"
             ],

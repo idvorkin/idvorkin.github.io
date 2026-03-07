@@ -18,7 +18,10 @@ What does it mean to be an engineering manager when AI is rewriting every assump
 <!-- vim-markdown-toc-start -->
 
 - [What is AI Native?](#what-is-ai-native)
-- [The Year of Chaos](#the-year-of-chaos)
+- [The Year of Chaos, The Year of Wonder](#the-year-of-chaos-the-year-of-wonder)
+  - [The Year of Chaos](#the-year-of-chaos)
+  - [The Year of Wonder](#the-year-of-wonder)
+  - [Choosing Your Frame](#choosing-your-frame)
 - [The AI Native EM Job](#the-ai-native-em-job)
   - [First Principles: Help People Build Effectively](#first-principles-help-people-build-effectively)
   - [The AI Chasm: Assessment and Adoption Stages](#the-ai-chasm-assessment-and-adoption-stages)
@@ -58,13 +61,35 @@ What does it mean to be an engineering manager when AI is rewriting every assump
 
 AI native doesn't mean "we use AI." Everyone uses AI. AI native means you reimagine the world assuming AI exists from the ground up. You don't bolt AI onto your existing processes — you ask what processes would look like if you designed them today, knowing what AI can do.
 
-## The Year of Chaos
+## The Year of Chaos, The Year of Wonder
+
+{% include local_image_float_right.html src="raccoon-year-of-chaos-wonder.webp" %}
+
+> Pessimists are right, but optimists are successful.
+
+Same facts. Same chaos. What separates the managers who thrive from the ones who drown is the mental frame they bring to it. You can look at AI and see a threat to everything you've built — or you can see the biggest expansion of what's possible in your entire career. Both readings are defensible. Only one of them leads somewhere good.
+
+### The Year of Chaos
 
 The definition of roles is completely changing, and we don't know to what. And we have to switch to the new roles while we keep doing our day job. It's like rebuilding the airplane while flying it, except someone also keeps changing what an airplane is.
 
 Every few days we find out something that shatters our world views and assumptions.
 
 Every week there are 30 new things to look at. 29 of them are probably trash. But you don't know which one isn't, and you can't afford to miss it.
+
+### The Year of Wonder
+
+The same chaos that exhausts you is also the most creative period in the history of software. Your team can build in a week what used to take a quarter. Junior engineers are punching above their weight class. Problems you shelved years ago because "we'll never have the bandwidth" are suddenly tractable.
+
+If you only see the chaos, you'll manage defensively — tightening processes, slowing down, protecting what exists. If you also see the wonder, you'll manage expansively — experimenting more, raising ambitions, asking "what could we build now that we couldn't before?"
+
+### Choosing Your Frame
+
+The pessimist's frame is accurate: jobs are changing, skills are devaluing, nobody knows what's next, and half the AI hype is garbage. All true.
+
+The optimist's frame is also accurate: the tools are extraordinary, the ceiling on what small teams can achieve has exploded, and the managers who lean in will define the next era. Also true.
+
+You don't get to pick the facts. You get to pick which facts you orient around. The managers who orient around wonder — while staying honest about the chaos — are the ones whose teams want to follow them into the unknown.
 
 ## The AI Native EM Job
 
