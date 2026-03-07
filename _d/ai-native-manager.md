@@ -9,7 +9,7 @@ tags:
 redirect_from:
   - /ai-em
   - /ai-native-em
-imagefeature: /images/raccoon-ai-naive-vs-native.webp
+imagefeature: /images/raccoon-ai-native-em-plates.webp
 ---
 
 What does it mean to be an engineering manager when AI is rewriting every assumption you have about software, teams, and your own role? I don't know yet. Nobody does. But I'm figuring it out in real time, and these are my notes from the chaos.
