@@ -41,6 +41,9 @@ What does it mean to be an engineering manager when AI is rewriting every assump
   - [AI Cockpit](#ai-cockpit)
   - [Cognitive Debt](#cognitive-debt)
   - [Deep Blue](#deep-blue)
+  - [Heresies](#heresies)
+  - [Infinite Loop](#infinite-loop)
+  - [Human In, On, and Out of the Loop](#human-in-on-and-out-of-the-loop)
 - [Appendix: Hot Takes](#appendix-hot-takes)
   - [Should XFN Code?](#should-xfn-code)
 - [Appendix: Old Questions, New Answers](#appendix-old-questions-new-answers)
@@ -244,6 +247,48 @@ The good news: the same AI that creates cognitive debt can pay it down. Willison
 My take: this is the emotion underneath the [Fear](#the-ai-chasm-assessment-and-adoption-stages) stage. When someone on your team is stuck in Fear, they're probably experiencing Deep Blue — they just don't have a word for it. Giving it a name makes it easier to discuss in 1:1s. "I think you might be feeling some Deep Blue" is more useful than "are you worried about AI?" Chess players and Go players went through this and came out stronger. But they needed time, space, and the realization that being good at chess still mattered even after machines were better at it. Same thing here — the skills still matter, the role just changes.
 
 But here's the really good news: there's a new type of mastery to be had. DHH talks about [coding as mastery](/chop#reasons-to-program---mastery-vs-getting-shit-done) — the joy of VIM combos feeling like Street Fighter II joystick combos, the craft of the thing. Deep Blue assumes that mastery is over because the machine can do it. But that's wrong. The mastery shifts — from writing code to orchestrating AI to build things that were previously impractical. And the payoff is real: you can genuinely do 10x as much. That's not hype, that's more good in the world, more problems solved, more things built. This is especially true for senior folks. The people with the deepest understanding of systems, architecture, and trade-offs are exactly the ones who get the most leverage from AI. All that experience doesn't become worthless — it becomes the judgment layer that makes AI-assisted work actually good instead of just fast.
+
+### Heresies
+
+Yegge nails this one in his [Gas Town Emergency User Manual](https://steve-yegge.medium.com/gas-town-emergency-user-manual-cf0e4556d74b). A heresy is when AI develops a compelling but wrong belief about your system — not a hallucination about the world, but a false conviction about _your_ codebase. And the killer property is that they spread and persist:
+
+{% include quote.html text="Agents are very approximate workers and they like to guess at stuff. They will often make wrong guesses about how your system is supposed to work. If that wrong guess makes it into the code, sneaking through the review process, then it becomes enshrined and other agents may notice it and propagate the heresy in their own work." author="Steve Yegge" url="https://steve-yegge.medium.com/gas-town-emergency-user-manual-cf0e4556d74b" %}
+
+His example is "idle polecats" — a concept that doesn't exist in Gas Town but keeps reappearing:
+
+{% include quote.html text='"Idle polecats" is an example of a heresy that plagues Gas Town. There is no such thing as an idle polecat; it&apos;s not a pool, and they vanish when their work is done. So "idle polecats" make it back into the code base, comments, and docs all the time.' author="Steve Yegge" url="https://steve-yegge.medium.com/gas-town-emergency-user-manual-cf0e4556d74b" %}
+
+That's the part that makes heresies so maddening. You correct it. It comes back. You correct it again. It comes back in a different file. You add it to your CLAUDE.md. It _still_ comes back, because some other agent read the enshrined heresy in a comment before it read your instructions. It's not a one-time fix — it's a recurring battle against false beliefs that have infected your codebase.
+
+{% include quote.html text="I've found the most helpful way to rid yourself of persistent heresies is to capture your guiding principles in the agent priming (onboarding). The more coverage you can get with them, the more classes of heresy you can avoid or easily correct simply by pointing at the principle they violate." author="Steve Yegge" url="https://steve-yegge.medium.com/gas-town-emergency-user-manual-cf0e4556d74b" %}
+
+In other words, your CLAUDE.md and onboarding docs aren't just nice-to-haves — they're your immune system against heresies.
+
+### Infinite Loop
+
+When AI gets stuck cycling between broken solutions — oscillating between two approaches that don't work, or repeatedly applying the same wrong fix because it's acting on a [heresy](#heresies). The AI isn't making progress; it's burning tokens and time while going nowhere.
+
+The real damage isn't the wasted AI cycles — it's what happens to the human. You notice the AI is stuck, so you start trying to break it out. You rephrase the prompt. You add context. You explain what the system _actually_ does. Twenty minutes later, you're debugging the AI's mental model instead of debugging your code. You went from warp speed to impulse to maneuvering thrusters, and the difference is mind-boggling — the same tool that wrote three features before lunch now can't fix a four-line function, and you're somehow making it worse by trying to help.
+
+The right move is to recognize the infinite loop early and then figure out how to break it — same as when a human is stuck and you need to get them unstuck. A few patterns that work:
+
+- **Surface the false belief** — Ask the AI "why do you think X works this way?" Sometimes it'll reveal the [heresy](#heresies) it's operating on, and you can correct it directly.
+- **Burn it down and restart** — Throw out the broken code, start a fresh session with clean context. The AI's context is poisoned; no amount of "no, actually..." will fix it. A new conversation with good priming is often faster than arguing with a confused one.
+- **Narrow the scope** — The AI is trying to solve too much at once and thrashing. Give it a smaller, more constrained problem. "Just fix this one function" instead of "fix the whole feature."
+- **Read the code yourself** — Sometimes the fastest way to break the loop is to actually understand what's happening. Read the code the AI wrote, find the wrong assumption, and tell it exactly what's true.
+- **Just do it manually** — Sometimes the right answer really is to take over. The hardest part is accepting the transition from 10x to "I'll write it myself" — it feels like defeat, but it's the fastest path forward when nothing else works.
+
+The teams that struggle most are the ones where nobody has permission to say "the AI is stuck, I'm changing approach."
+
+### Human In, On, and Out of the Loop
+
+Three modes of working with AI, borrowed from autonomous systems:
+
+- **Human in the loop** — The human approves every AI action before it takes effect. Every PR reviewed, every spec read, every generated test validated. This is where most teams start and it's the safest default.
+- **Human on the loop** — The AI acts autonomously, but the human monitors and can intervene. Think: AI-generated PRs that auto-merge if CI passes, but the EM watches dashboards and can halt the pipeline. The human isn't approving each action — they're supervising the system.
+- **Human out of the loop** — Fully autonomous. No human reviews the output.
+
+The EM question isn't "which mode should we be in?" — it's "are we actually in the mode we think we're in?" A team that claims human-in-the-loop but reviews 50 AI-generated PRs a day is kidding itself. That's rubber-stamping, which gives you the overhead of in-the-loop with the safety of out-of-the-loop — the worst of both worlds. And when the AI hits an [infinite loop](#infinite-loop) in on-the-loop mode, someone needs to notice before it burns hours on nothing.
 
 ## Appendix: Hot Takes
 

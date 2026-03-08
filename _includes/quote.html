@@ -1,0 +1,4 @@
+<!-- prettier-ignore -->
+<blockquote style="border-left: 4px solid #4a90d9; padding: 0.75em 1.25em; margin: 1.5em 0; background: rgba(74, 144, 217, 0.05); font-style: italic;">
+{{ include.text }}{% if include.author %} <span style="font-style: normal; font-size: 0.9em; color: #666; white-space: nowrap;">— {% if include.url %}<a href="{{ include.url }}">{{ include.author }}</a>{% else %}{{ include.author }}{% endif %}</span>{% endif %}
+</blockquote>
