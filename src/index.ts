@@ -6,7 +6,7 @@
  */
 
 // Import main functionality
-import { load_globals } from "./main";
+import { load_globals, enableChartZoom } from "./main";
 // Import page-loader functionality
 import {
   load_7_habits,
@@ -56,6 +56,13 @@ declare let $: {
 declare let Mousetrap: {
   bind: (key: string, callback: () => void) => void;
 };
+
+// Declare global window extension
+declare global {
+  interface Window {
+    enableChartZoom: typeof enableChartZoom;
+  }
+}
 
 // Main initialization
 $(document).ready(() => {
@@ -129,6 +136,7 @@ export {
   type IURLInfo,
   type IURLInfoMap,
   load_globals,
+  enableChartZoom,
   MakeBackLinkHTML,
   CreateAutoComplete,
   get_random_post,
@@ -151,3 +159,8 @@ export {
   load_balance,
   load_random_eulogy,
 };
+
+// Expose enableChartZoom globally for conditional loading
+if (typeof window !== "undefined") {
+  window.enableChartZoom = enableChartZoom;
+}
