@@ -81,6 +81,10 @@ TL;DR:
 
 ### From discrete to continuous
 
+### Your AI Second Brain — The Ultimate Personalization
+
+The most powerful form of hyper-personalization isn't a product customized for you — it's an [AI second brain](/ai-second-brain) that knows your entire context: what you've read, what you've written, your health data, your goals, your patterns. When AI has that depth of context, everything it does for you becomes hyper-personalized by default. Your life coach knows your actual struggles. Your reading assistant knows your taste. Your coding assistant knows your codebase and conventions. The second brain is the foundation layer that makes all other personalization possible.
+
 ### Dimensions on which to personalize
 
 ### Impact on economy
