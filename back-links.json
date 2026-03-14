@@ -239,6 +239,7 @@
         "/productivity": "/productive",
         "/psych-safety": "/insecure",
         "/psychological-safety": "/insecure",
+        "/quests": "/side-quests",
         "/rage": "/anger",
         "/ranking": "/recommend",
         "/rca": "/coe",
@@ -263,6 +264,7 @@
         "/search-inside-yourself": "/siy",
         "/self-vs-ego": "/self-ego",
         "/shadows": "/psychic-shadows",
+        "/side-quest": "/side-quests",
         "/simple-and-sinister": "/kettlebell",
         "/sleepless": "/insomnia",
         "/some": "/sleight-of-mouth",
@@ -335,7 +337,7 @@
     "url_info": {
         "/22": {
             "description": "In 2019 I created a program for 15 fantastic interns! A program highlight was my talk titled “What I wish I knew at 22, and so might you”. The talk received a 94% overall rating from over 15 interns, 10 SDE-IIs, and 1 senior developer. Even though the talk focuses on how to live the good life, a big chunk of life is work, so there’s good coverage on how to optimize your career.\n\n",
-            "doc_size": 16000,
+            "doc_size": 17000,
             "file_path": "_site/22.html",
             "incoming_links": [
                 "/chapters",
@@ -875,10 +877,10 @@
         },
         "/ai-feed": {
             "description": "Pretty common: I get a bag of links — a newsletter, a Twitter thread, a friend’s Slack message. I open them all in tabs, skim, close most, and forget. Maybe one in ten sticks. The rest vanish into the consumption void.\n\n",
-            "doc_size": 28000,
+            "doc_size": 30000,
             "file_path": "_site/ai-feed.html",
             "incoming_links": [],
-            "last_modified": "2026-03-03T14:51:00+00:00",
+            "last_modified": "2026-03-03T19:00:16-08:00",
             "markdown_path": "_d/ai-feed.md",
             "outgoing_links": [
                 "/agency",
@@ -894,8 +896,10 @@
                 "/how-igor-chops",
                 "/joy",
                 "/larry",
+                "/manager-book",
                 "/pet-projects",
-                "/produce-consume"
+                "/produce-consume",
+                "/software-leadership-roles"
             ],
             "redirect_url": "",
             "title": "AI Feed — Curated Reading Through Claude",
@@ -3757,7 +3761,7 @@
         },
         "/learn-code": {
             "description": "Coding is way easier than people think. Here’s some pointers.\n\n",
-            "doc_size": 13000,
+            "doc_size": 14000,
             "file_path": "_site/learn-code.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T02:47:07+00:00",
@@ -3849,6 +3853,7 @@
             "doc_size": 182000,
             "file_path": "_site/manager-book.html",
             "incoming_links": [
+                "/ai-feed",
                 "/ai-native-manager",
                 "/amazon",
                 "/being-a-great-manager",
@@ -4014,7 +4019,7 @@
         },
         "/mind-at-work": {
             "description": "I have a problem, an addiction, an addiction so detrimental to quality of life, it should be described as a disease. This disease is not being present. There are many symptoms of the disease, but today I’m going to talk about my most frequent symptoms, my body at home, but my mind at work.\n\n",
-            "doc_size": 19000,
+            "doc_size": 20000,
             "file_path": "_site/mind-at-work.html",
             "incoming_links": [
                 "/addiction",
@@ -5244,6 +5249,18 @@
             "title": "Structure and Design of Computer Programs",
             "url": "/sicp"
         },
+        "/side-quests": {
+            "description": "Tech is cheap, curiosity is free, and side quests are how I scratch the itch without derailing the main storyline. These are random explorations — little adventures where I poke at something interesting, learn just enough to be dangerous, and move on. No deadlines, no deliverables, just play.\n\n",
+            "doc_size": 14000,
+            "file_path": "_site/side-quests.html",
+            "incoming_links": [],
+            "last_modified": "2026-03-14T13:14:29-07:00",
+            "markdown_path": "_d/side-quests.md",
+            "outgoing_links": [],
+            "redirect_url": "",
+            "title": "Side Quests: Random Tech Explorations",
+            "url": "/side-quests"
+        },
         "/siy": {
             "description": "Training Emotional Intelligence through mindfulness. Search inside yourself is a meditation training manual for engineers. It’s also a pun as the author works at google, and built the program internally at Google. Joy on demand by the same author, is less engineer focused, and uses joy as a path to meditative bliss.\n\n",
             "doc_size": 62000,
@@ -5403,6 +5420,7 @@
             "doc_size": 18000,
             "file_path": "_site/software-leadership-roles.html",
             "incoming_links": [
+                "/ai-feed",
                 "/ai-native-manager",
                 "/job",
                 "/manager-book"
@@ -5430,7 +5448,7 @@
                 "/walking-with-god",
                 "/y26"
             ],
-            "last_modified": "2026-03-03T14:50:35.500730+00:00",
+            "last_modified": "2026-03-03T07:02:32-08:00",
             "markdown_path": "_d/spiritual-health.md",
             "outgoing_links": [
                 "/activation",
@@ -6638,7 +6656,7 @@
         },
         "/walking-with-god": {
             "description": "Someone important to me has been reading a daily devotional. Even though I’m not religious, I’m studying with them to be able to have conversations about the insights - whether in a secular or religious context. This is my attempt to bridge two worlds: honoring the spiritual wisdom they’re finding while translating it into language that works for my engineer brain.\n\n",
-            "doc_size": 81000,
+            "doc_size": 82000,
             "file_path": "_site/walking-with-god.html",
             "incoming_links": [
                 "/greek-orthodox",
