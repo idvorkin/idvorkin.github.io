@@ -262,8 +262,12 @@ jekyll-serve port="4000" livereload_port="35729":
         BIND_HOST="127.0.0.1"
     fi
 
-    # Use rbenv to ensure correct Ruby version (3.3.x required for github-pages gem)
-    if [ "$(uname)" = "Darwin" ]; then
+    # Use rbenv to ensure correct Ruby version (3.2.x required for github-pages gem)
+    # Ruby 4.0+ and 3.3+ break old github-pages gems (tainted?, pathutil, etc.)
+    # _ruby_compat.rb monkey-patches tainted?/taint/untaint removed in Ruby 3.2
+    export RUBYOPT="-r$(pwd)/_ruby_compat.rb"
+    if command -v rbenv >/dev/null 2>&1; then
+        eval "$(rbenv init - sh)"
         rbenv exec bundle exec jekyll server --incremental --livereload --host $BIND_HOST --port {{port}} --livereload-port {{livereload_port}}
     else
         bundle exec jekyll server --incremental --livereload --host $BIND_HOST --port {{port}} --livereload-port {{livereload_port}}
@@ -287,7 +291,13 @@ jekyll-container port="4000":
     echo '{"branch": "'$(git branch --show-current)'"}' > _data/git.json
     # Update PR data for dev banner (non-fatal if no PR found)
     just update-pr-data || true
-    bundle exec jekyll server --incremental --livereload --host 0.0.0.0 --port {{port}}
+    export RUBYOPT="-r$(pwd)/_ruby_compat.rb"
+    if command -v rbenv >/dev/null 2>&1; then
+        eval "$(rbenv init - bash)"
+        rbenv exec bundle exec jekyll server --incremental --livereload --host 0.0.0.0 --port {{port}}
+    else
+        bundle exec jekyll server --incremental --livereload --host 0.0.0.0 --port {{port}}
+    fi
 
 jekyll-docker:
     #!/usr/bin/env sh

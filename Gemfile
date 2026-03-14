@@ -5,6 +5,8 @@ source 'https://rubygems.org'
 gem 'github-pages'
 gem 'webrick'
 gem 'csv'
+gem 'bigdecimal'
+gem 'ostruct'
 
 group :jekyll_plugins do
   gem 'jekyll-algolia', '~> 1.0'

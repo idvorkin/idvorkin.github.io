@@ -1,2 +1,3 @@
 ---
 BUNDLE_PATH: "~/.bundle"
+BUNDLE_BUILD__COMMONMARKER: "--with-cflags=-std=gnu99 -Wno-error"
