@@ -27,6 +27,7 @@
         "/activation-energy": "/activation",
         "/addictions": "/addiction",
         "/affirm": "/affirmations",
+        "/ai-brain": "/ai-second-brain",
         "/ai-browsers": "/browsers-for-machines",
         "/ai-coder": "/chop",
         "/ai-em": "/ai-native-manager",
@@ -262,6 +263,7 @@
         "/savings": "/money",
         "/savor": "/happy",
         "/search-inside-yourself": "/siy",
+        "/second-brain": "/ai-second-brain",
         "/self-vs-ego": "/self-ego",
         "/shadows": "/psychic-shadows",
         "/side-quest": "/side-quests",
@@ -816,6 +818,7 @@
             "incoming_links": [
                 "/ai-feed",
                 "/ai-native-manager",
+                "/ai-second-brain",
                 "/changelog",
                 "/how-igor-chops"
             ],
@@ -879,7 +882,9 @@
             "description": "Pretty common: I get a bag of links — a newsletter, a Twitter thread, a friend’s Slack message. I open them all in tabs, skim, close most, and forget. Maybe one in ten sticks. The rest vanish into the consumption void.\n\n",
             "doc_size": 30000,
             "file_path": "_site/ai-feed.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/ai-second-brain"
+            ],
             "last_modified": "2026-03-03T19:00:16-08:00",
             "markdown_path": "_d/ai-feed.md",
             "outgoing_links": [
@@ -952,6 +957,7 @@
                 "/ai-cockpit",
                 "/ai-feed",
                 "/ai-native-manager",
+                "/ai-second-brain",
                 "/changelog",
                 "/chop",
                 "/walking-with-god",
@@ -981,19 +987,21 @@
             "file_path": "_site/ai-native-manager.html",
             "incoming_links": [
                 "/ai-feed",
+                "/ai-second-brain",
                 "/changelog",
                 "/chow",
                 "/explainers",
                 "/manager-book",
                 "/pet-projects"
             ],
-            "last_modified": "2026-03-08T17:18:32.621571+00:00",
+            "last_modified": "2026-03-14T22:56:00.189040+00:00",
             "markdown_path": "_d/ai-native-manager.md",
             "outgoing_links": [
                 "/agency",
                 "/ai-cockpit",
                 "/ai-hiring",
                 "/ai-journal",
+                "/ai-second-brain",
                 "/chop",
                 "/coaching",
                 "/explainers",
@@ -1032,6 +1040,31 @@
             "redirect_url": "",
             "title": "Love, marriage, pregnancy: Commitment processes in romantic relationships with AI chatbots",
             "url": "/ai-relationships"
+        },
+        "/ai-second-brain": {
+            "description": "Your brain is for thinking, not storage. That was the promise of the “second brain” movement — offload everything to a trusted external system, free your mind for actual thought. Great idea. Most people failed at it, because the system demanded you become a librarian. AI changes that equation completely.\n\n",
+            "doc_size": 27000,
+            "file_path": "_site/ai-second-brain.html",
+            "incoming_links": [
+                "/ai-native-manager",
+                "/hyper-personal"
+            ],
+            "last_modified": "2026-03-14T22:56:00.189040+00:00",
+            "markdown_path": "_d/ai-second-brain.md",
+            "outgoing_links": [
+                "/ai-cockpit",
+                "/ai-feed",
+                "/ai-journal",
+                "/ai-native-manager",
+                "/hyper-personal",
+                "/larry",
+                "/process-journal",
+                "/side-quests",
+                "/tesla"
+            ],
+            "redirect_url": "",
+            "title": "AI as Your Second Brain",
+            "url": "/ai-second-brain"
         },
         "/ai-security": {
             "description": "Security is super interesting, AI is super interesting, the combination, is super-duper interesting!\n\n",
@@ -3428,15 +3461,18 @@
         },
         "/hyper-personal": {
             "description": "Useful writing tells people (including, possibly most importantly you) something true and important that they didn’t already know in a way that leaves no doubt. And Everyone is different. So how to do both?\n\n",
-            "doc_size": 17000,
+            "doc_size": 18000,
             "file_path": "_site/hyper-personal.html",
             "incoming_links": [
                 "/ai-journal",
+                "/ai-second-brain",
                 "/how-igor-chops"
             ],
-            "last_modified": "2025-12-07T03:09:30+00:00",
+            "last_modified": "2026-03-14T22:56:00.189040+00:00",
             "markdown_path": "_d/hyper-personal.md",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/ai-second-brain"
+            ],
             "redirect_url": "",
             "title": "Hyper Personalization",
             "url": "/hyper-personal"
@@ -3705,6 +3741,7 @@
             "file_path": "_site/larry.html",
             "incoming_links": [
                 "/ai-feed",
+                "/ai-second-brain",
                 "/chow",
                 "/mortality-software",
                 "/y26"
@@ -4705,6 +4742,7 @@
             "doc_size": 19000,
             "file_path": "_site/process-journal.html",
             "incoming_links": [
+                "/ai-second-brain",
                 "/chop",
                 "/eulogy",
                 "/four-healths",
@@ -5251,10 +5289,12 @@
         },
         "/side-quests": {
             "description": "Tech is cheap, curiosity is free, and side quests are how I scratch the itch without derailing the main storyline. These are random explorations — little adventures where I poke at something interesting, learn just enough to be dangerous, and move on. No deadlines, no deliverables, just play.\n\n",
-            "doc_size": 14000,
+            "doc_size": 17000,
             "file_path": "_site/side-quests.html",
-            "incoming_links": [],
-            "last_modified": "2026-03-14T13:14:29-07:00",
+            "incoming_links": [
+                "/ai-second-brain"
+            ],
+            "last_modified": "2026-03-14T13:24:26-07:00",
             "markdown_path": "_d/side-quests.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -6033,6 +6073,7 @@
             "doc_size": 20000,
             "file_path": "_site/tesla.html",
             "incoming_links": [
+                "/ai-second-brain",
                 "/bucket-list",
                 "/eulogy",
                 "/irl",
