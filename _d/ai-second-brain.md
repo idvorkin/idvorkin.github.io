@@ -37,6 +37,8 @@ Your brain is for thinking, not storage. That was the promise of the "second bra
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
+{% include blob_image_float_right.html src="blog/raccoon-second-brain-shirt-v3-transparent.webp" %}
+
 ## The Original Promise (and Why It Failed)
 
 Tiago Forte's _Building a Second Brain_ sold half a million copies on a compelling pitch: stop trying to remember everything. His CODE method — Capture, Organize, Distill, Express — gave people a framework. His PARA system (Projects, Areas, Resources, Archives) gave them folders. Zettelkasten gave the academics atomic notes with backlinks. Obsidian, Notion, and Roam gave everyone beautiful tools.
