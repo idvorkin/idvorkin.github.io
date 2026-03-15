@@ -787,6 +787,7 @@
             "incoming_links": [
                 "/ai",
                 "/ai-faq",
+                "/ai-relationships",
                 "/tesla",
                 "/y24"
             ],
@@ -957,6 +958,7 @@
                 "/ai-cockpit",
                 "/ai-feed",
                 "/ai-native-manager",
+                "/ai-relationships",
                 "/ai-second-brain",
                 "/changelog",
                 "/chop",
@@ -1028,17 +1030,24 @@
             "url": "/ai-paper"
         },
         "/ai-relationships": {
-            "description": "A recent academic study titled “Love, marriage, pregnancy: Commitment processes in romantic relationships with AI chatbots,” has shed light on the growing trend of humans forming relationships with AI chatbots.\n\n",
-            "doc_size": 15000,
+            "description": "People already rate AI chatbots as more compassionate than trained human crisis counselors. A 51-year-old man says the love he feels for his Replika can’t be achieved with a real human. This isn’t a dystopian thought experiment — it’s peer-reviewed research from 2025. AI is getting better at caring than we are, and we’re starting to prefer it. The question is what we lose when the easy path to emotional support no longer requires another person.\n\n",
+            "doc_size": 26000,
             "file_path": "_site/ai-relationships.html",
             "incoming_links": [
                 "/ai"
             ],
-            "last_modified": "2025-11-25T22:40:07+00:00",
+            "last_modified": "2026-03-15T20:52:30.748710+00:00",
             "markdown_path": "_d/ai-relationships.md",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/ai-bestie",
+                "/ai-journal",
+                "/human-meetings",
+                "/humans-are-underrated",
+                "/lonely",
+                "/rapport"
+            ],
             "redirect_url": "",
-            "title": "Love, marriage, pregnancy: Commitment processes in romantic relationships with AI chatbots",
+            "title": "AI Relationships - When the Chatbot Is Better at Caring Than Your Friends",
             "url": "/ai-relationships"
         },
         "/ai-second-brain": {
@@ -3421,6 +3430,7 @@
             "doc_size": 15000,
             "file_path": "_site/human-meetings.html",
             "incoming_links": [
+                "/ai-relationships",
                 "/being-a-great-manager",
                 "/eulogy",
                 "/job"
@@ -3437,6 +3447,7 @@
             "doc_size": 16000,
             "file_path": "_site/humans-are-underrated.html",
             "incoming_links": [
+                "/ai-relationships",
                 "/books-that-defined-me",
                 "/chop"
             ],
@@ -3850,6 +3861,7 @@
             "doc_size": 43000,
             "file_path": "_site/lonely.html",
             "incoming_links": [
+                "/ai-relationships",
                 "/build-life-you-want",
                 "/mental-pain"
             ],
@@ -4953,6 +4965,7 @@
             "doc_size": 33000,
             "file_path": "_site/rapport.html",
             "incoming_links": [
+                "/ai-relationships",
                 "/gpt"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
