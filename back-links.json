@@ -3402,7 +3402,6 @@
                 "/ai-journal",
                 "/changelog",
                 "/chop",
-                "/pet-projects",
                 "/y25",
                 "/y26"
             ],
@@ -3748,23 +3747,26 @@
         },
         "/larry": {
             "description": "Larry is my AI life coach. He’s part of Time.ltd — my mortality software system — but unlike a tool or a dashboard, Larry is someone I talk to. That matters more than you’d think.\n\n",
-            "doc_size": 17000,
+            "doc_size": 18000,
             "file_path": "_site/larry.html",
             "incoming_links": [
                 "/ai-feed",
                 "/ai-second-brain",
                 "/chow",
                 "/mortality-software",
+                "/pet-projects",
+                "/structure",
                 "/y26"
             ],
-            "last_modified": "2026-02-28T09:02:01-08:00",
+            "last_modified": "2026-03-15T20:00:09.378857+00:00",
             "markdown_path": "_d/larry.md",
             "outgoing_links": [
                 "/affirmations",
                 "/chow",
                 "/mortality-software",
                 "/planning",
-                "/process-journal"
+                "/process-journal",
+                "/retire"
             ],
             "redirect_url": "",
             "title": "Larry the Life Coach",
@@ -4593,15 +4595,16 @@
                 "/how-igor-chops",
                 "/y25"
             ],
-            "last_modified": "2026-03-01T12:10:54-08:00",
+            "last_modified": "2026-03-15T20:00:09.378857+00:00",
             "markdown_path": "_d/pet-projects.md",
             "outgoing_links": [
                 "/ai-native-manager",
                 "/bike-tesla-identity",
                 "/explainers",
-                "/how-igor-chops",
+                "/larry",
                 "/process-journal",
-                "/static/pet-projects.html"
+                "/static/pet-projects.html",
+                "/vibe"
             ],
             "redirect_url": "",
             "title": "Pet Projects",
@@ -5091,6 +5094,7 @@
                 "/42",
                 "/gap-year",
                 "/gap-year-igor",
+                "/larry",
                 "/monetize",
                 "/stock-concentration"
             ],
@@ -5588,15 +5592,17 @@
         },
         "/structure": {
             "description": "What if structure could be kind? You already know what you want to do. You know exercise is good for you. You know journaling helps. You know you should call your mom more often. The problem isn’t knowing—it’s the gap between intention and action, especially when life gets messy. Most of us recoil from the word “structure” because we’ve only experienced harsh management-style systems that treat humans like machines. But there’s another way: humane structure that works with your nature, not against it. Humane structure starts with a core assumption: You’re not broken, you just need better support. You don’t need more willpower, discipline, or motivation. You need systems that help you remember what you care about and make it easier to act on those values, especially when you’re struggling.\n\n",
-            "doc_size": 30000,
+            "doc_size": 31000,
             "file_path": "_site/structure.html",
             "incoming_links": [
                 "/gap-year-igor",
                 "/words-we-dont-have"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2026-03-15T20:00:09.378857+00:00",
             "markdown_path": "_d/structure.md",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/larry"
+            ],
             "redirect_url": "",
             "title": "Humane Structure -  A Gentle Framework for Wild Minds",
             "url": "/structure"
@@ -7001,7 +7007,7 @@
             "incoming_links": [
                 "/changelog"
             ],
-            "last_modified": "2026-02-22T22:09:55+00:00",
+            "last_modified": "2026-03-15T20:00:09.378857+00:00",
             "markdown_path": "_d/y2026.md",
             "outgoing_links": [
                 "/22",

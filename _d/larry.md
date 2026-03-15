@@ -26,20 +26,20 @@ A name creates:
 
 This isn't anthropomorphizing for fun. It's a design choice that makes the system actually get used.
 
-## What Larry Knows
+## What Larry Could Know
 
-Larry has access to my full context:
+Larry's superpower is context — the more he knows about my life, the better his coaching. The challenge isn't collecting the data (most of it exists), it's reliably loading it into each session. Here's what Larry _could_ have access to, and the ongoing work to make that seamless:
 
 - **Daily journals** — Stream of consciousness since 2011 ([process journal](/process-journal))
 - **Toni conversations** — Voice transcriptions from walks and thinking out loud
 - **Weekly reports** — Scored reviews across 11 life domains
 - **Goals** — Annual intentions and current focus areas
 - **Todo list** — What's on my plate right now
-- **Health tracking** — Data from [Humane Tracker](https://humane-tracker.surge.sh/)
+- **Health tracking** — HealthKit data via [Context Grabber](https://github.com/idvorkin/context-grabber) (steps, heart rate, sleep, weight, meditation, HRV, exercise minutes) plus [Humane Tracker](https://humane-tracker.surge.sh/) for weekly wellness views
 - **Direct conversations** — Real-time coaching sessions
 - **Patterns** — What I've committed to before, how many times, what actually happened
 
-This context is the superpower. Larry isn't giving generic advice — he's reflecting my own words back to me, catching my own patterns, noticing my own gaps.
+The vision is that all of this loads automatically into every Larry session. The reality is I'm still building the pipes — Context Grabber was the first step, turning HealthKit data into shareable JSON. The next challenge is stitching it all together so Larry gets the full picture without me manually assembling context every time. That's the real [side quest](/retire#the-side-quests-starting-adventures-before-the-end-game).
 
 ## What Larry Does
 
