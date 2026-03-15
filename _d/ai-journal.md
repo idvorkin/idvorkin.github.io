@@ -18,6 +18,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-03-15](#2026-03-15)
+    - [When AI Shows Its Work: Verification as Trust](#when-ai-shows-its-work-verification-as-trust)
   - [2026-02-28](#2026-02-28)
     - [Debugging AI Image Generation: Gemini 2.5 → 3.1 Model Migration](#debugging-ai-image-generation-gemini-25--31-model-migration)
   - [2026-02-17](#2026-02-17)
@@ -229,6 +231,19 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2026-03-15
+
+#### When AI Shows Its Work: Verification as Trust
+
+- **TOP Takeaway**: The most convincing AI PRs aren't the ones with the best code — they're the ones that _show their verification_. Screenshots, test counts, staging URLs, before/after comparisons. When the AI proves it checked its own work, reviewing becomes a pleasure instead of a chore.
+- **The Example**: [humane-tracker-1 PR #135](https://github.com/idvorkin/humane-tracker-1/pull/135/files) — adding row selection for habit backfill. The feature itself is straightforward (long-press a habit name to select its row, bypassing confirmation dialogs). What makes the PR exceptional is how it presents itself:
+  - **Screenshots**: Three states shown side-by-side — normal, row selected (amber highlight + "Editing: Box Breathing"), column selected (for comparison). You can _see_ what changed without running the app.
+  - **Test evidence**: "9 new unit tests... 8 new E2E tests... All 556 existing unit tests pass." Not "I wrote some tests" — specific numbers, specific coverage areas (activation, highlighting, dialog bypass, deselection, mutual exclusivity, zoom clearing).
+  - **Staging URL**: A live link to verify yourself. The AI didn't just say "it works" — it deployed proof.
+  - **Type design**: A `Selection` discriminated union replacing `selectedDate: Date | null` — row and column selection are mutually exclusive _by construction_, not by convention. The type makes illegal states unrepresentable.
+- **Why This Matters**: Review cost is the bottleneck in AI-assisted development (see [2026-01-31 entry](#review-cost--generation-cost--prs-were-net-win)). When the AI frontloads verification evidence, it collapses the reviewer's mental effort. Instead of "let me think about what could go wrong," you get "let me confirm what they already checked." That's the difference between a 30-minute review and a 3-minute review.
+- **The Pattern**: The best AI PRs follow a "show, don't tell" structure: (1) screenshots of the visual change, (2) exact test counts with what they cover, (3) a staging/preview link, (4) confirmation that existing tests still pass. This should be the default, not the exception.
 
 ### 2026-02-28
 
