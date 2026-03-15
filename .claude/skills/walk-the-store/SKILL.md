@@ -36,6 +36,7 @@ Parse the user's input for:
 2. **Set up output directory:**
 
    ```bash
+   # This directory is always ephemeral diagnostic output — safe to blow away
    rm -rf docs/walk-the-store && mkdir -p docs/walk-the-store
    ```
 
@@ -59,6 +60,8 @@ if [ "$BRANCH" != "main" ]; then
       SHOTS="$SHOTS\n$NAME|$PERMALINK|desktop"
     fi
   done
+else
+  echo "On main branch — defaulting to home page only. Use 'full' for comprehensive audit."
 fi
 ```
 
@@ -82,7 +85,9 @@ To find the recently modified post:
 
 ```bash
 RECENT_FILE=$(git log --diff-filter=M --name-only -1 --pretty=format: -- '_d/*.md' | head -1)
-RECENT_PERMALINK=$(grep -m1 'permalink:' "$RECENT_FILE" | awk '{print $2}' | tr -d '"')
+if [ -n "$RECENT_FILE" ]; then
+  RECENT_PERMALINK=$(grep -m1 'permalink:' "$RECENT_FILE" | awk '{print $2}' | tr -d '"')
+fi
 ```
 
 **Specific page mode** (`/walk-the-store /ai-second-brain`):
@@ -173,13 +178,15 @@ PYEOF
 ### Phase 5: Serve Gallery
 
 ```bash
-cd docs/walk-the-store && python3 -m http.server PORT &>/dev/null &
-```
+# Find an available port
+PORT=4010
+while lsof -i :$PORT &>/dev/null; do PORT=$((PORT + 1)); done
 
-Pick an available port (try 4010, 4011, etc.). Print the Tailscale URL:
+cd docs/walk-the-store && python3 -m http.server $PORT &>/dev/null &
 
-```
-Walk the Store gallery: http://HOSTNAME:PORT/demo.html
+# Get Tailscale hostname for remote access
+HOSTNAME=$(hostname)
+echo "Walk the Store gallery: http://${HOSTNAME}:${PORT}/demo.html"
 ```
 
 ### Phase 6: Present Summary
