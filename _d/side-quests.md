@@ -39,7 +39,7 @@ _No active quests right now. Exploring what's next._
 
 ### Magic Monitor Card Detection
 
-_Started: 2026-03-08_ | [GitHub](https://github.com/idvorkin/magic-monitor) | [Live Demo](https://magic-monitor.surge.sh)
+_Started: 2026-03-08_ | [GitHub](https://github.com/idvorkin/magic-monitor) | [Live Demo](https://magic-monitor.surge.sh) | [PR #60](https://github.com/idvorkin/magic-monitor/pull/60)
 
 Real-time playing card detection in the browser using YOLO + ONNX Runtime Web. Hold up a card to your webcam and it identifies all 52 cards with bounding boxes. Part of [Magic Monitor](/pet-projects), my smart mirror app.
 
@@ -54,13 +54,10 @@ Training a YOLO model was the easy part. Getting it to actually work in the brow
 
 _Recall = how many cards it finds. Precision = how often it's right about what it found._
 
-**Before (YOLO26n @ 416):** One wrong detection at 11% confidence. The model couldn't see anything useful.
-
-![YOLO26n debug snapshot - one wrong detection at 11%](https://raw.githubusercontent.com/idvorkin/ipaste/main/20260315_095931.webp)
-
-**After (YOLO26s @ 640):** Four correct detections at 57-84% confidence. Boxes land right on the card corners.
-
-![YOLO26s debug snapshot - four correct detections](https://raw.githubusercontent.com/idvorkin/ipaste/main/20260315_132529.webp)
+| **Before (YOLO26n @ 416)** | **After (YOLO26s @ 640)** |
+| --- | --- |
+| One wrong detection at 11% confidence. The model couldn't see anything useful. | Four correct detections at 57-84% confidence. Boxes land right on the card corners. |
+| ![YOLO26n debug snapshot - one wrong detection at 11%](https://raw.githubusercontent.com/idvorkin/ipaste/main/20260315_095931.webp) | ![YOLO26s debug snapshot - four correct detections](https://raw.githubusercontent.com/idvorkin/ipaste/main/20260315_132529.webp) |
 
 **Key learnings:**
 
