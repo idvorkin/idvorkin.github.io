@@ -22,8 +22,8 @@ Tech is cheap, curiosity is free, and side quests are how I scratch the itch wit
 <!-- vim-markdown-toc-start -->
 
 - [Active Quests](#active-quests)
-  - [Magic Monitor Card Detection](#magic-monitor-card-detection)
 - [Completed / Graduated](#completed--graduated)
+  - [Magic Monitor Card Detection](#magic-monitor-card-detection)
   - [Context Grabber](#context-grabber)
 - [Shelved Quests](#shelved-quests)
   - [Apple Virtualization](#apple-virtualization)
@@ -32,6 +32,10 @@ Tech is cheap, curiosity is free, and side quests are how I scratch the itch wit
 <!-- prettier-ignore-end -->
 
 ## Active Quests
+
+_No active quests right now. Exploring what's next._
+
+## Completed / Graduated
 
 ### Magic Monitor Card Detection
 
@@ -68,8 +72,6 @@ _Recall = how many cards it finds. Precision = how often it's right about what i
 **Training was shockingly easy:** Open a Google Colab notebook, select an A100 GPU (~$1.30/hr in compute units), crank the batch size from 16 to 128 (the A100 has 80GB of VRAM so why not), and hit run. 50 epochs on 21K synthetic images finished in under 30 minutes for less than a dollar. The hardest part was remembering my Roboflow API key. [Colab notebook](https://colab.research.google.com/github/idvorkin-ai-tools/magic-monitor/blob/main/training/train_colab.ipynb).
 
 **Status:** Merged to main. Detection works live in the browser. Next up: integrate with session recording and replay timeline.
-
-## Completed / Graduated
 
 ### Context Grabber
 
