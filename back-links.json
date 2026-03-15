@@ -963,15 +963,15 @@
                 "/walking-with-god",
                 "/y25"
             ],
-            "last_modified": "2026-03-15T15:58:06.298241+00:00",
+            "last_modified": "2026-03-15T09:05:04-07:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
                 "/ai-security",
-                "/ai-talk",
                 "/chop",
                 "/chow",
                 "/eulogy",
+                "/genai-talk",
                 "/gpt",
                 "/how-igor-chops",
                 "/hyper-personal",
@@ -994,7 +994,7 @@
                 "/manager-book",
                 "/pet-projects"
             ],
-            "last_modified": "2026-03-14T22:56:00.189040+00:00",
+            "last_modified": "2026-03-14T16:03:56-07:00",
             "markdown_path": "_d/ai-native-manager.md",
             "outgoing_links": [
                 "/agency",
@@ -1043,13 +1043,13 @@
         },
         "/ai-second-brain": {
             "description": "Your brain is for thinking, not storage. That was the promise of the “second brain” movement — offload everything to a trusted external system, free your mind for actual thought. Great idea. Most people failed at it, because the system demanded you become a librarian. AI changes that equation completely.\n\n",
-            "doc_size": 27000,
+            "doc_size": 30000,
             "file_path": "_site/ai-second-brain.html",
             "incoming_links": [
                 "/ai-native-manager",
                 "/hyper-personal"
             ],
-            "last_modified": "2026-03-14T22:56:00.189040+00:00",
+            "last_modified": "2026-03-14T16:03:56-07:00",
             "markdown_path": "_d/ai-second-brain.md",
             "outgoing_links": [
                 "/ai-cockpit",
@@ -1350,7 +1350,7 @@
         },
         "/balloon": {
             "description": "Want to plaster a huge smile on someone’s face with 10 cents of material and 20 seconds of work? Make them a balloon! In 2022, I discovered ballooning, and have used it in my joy-delivering arsenal ever since.\n\n",
-            "doc_size": 21000,
+            "doc_size": 22000,
             "file_path": "_site/balloon.html",
             "incoming_links": [
                 "/eulogy",
@@ -1384,7 +1384,7 @@
         },
         "/be-proactive": {
             "description": "I choose ‘.’ I am responsible for my own life ‘.’ My behavior is a function of my decisions, not my conditions ‘.’ I can subordinate feelings to values ‘.’ I have the initiative and the responsibility to make things happen. These are my insights from 7 habits Chapter 1.\n\n",
-            "doc_size": 22000,
+            "doc_size": 23000,
             "file_path": "_site/be-proactive.html",
             "incoming_links": [
                 "/7-habits",
@@ -1522,7 +1522,7 @@
         },
         "/books-that-defined-me": {
             "description": "Books allow great thoughts to enter our mind and mold us into who we want to become. These are the books that are molding me.\n\n",
-            "doc_size": 16000,
+            "doc_size": 17000,
             "file_path": "_site/books-that-defined-me.html",
             "incoming_links": [
                 "/being-a-great-manager",
@@ -2325,7 +2325,7 @@
         },
         "/debug": {
             "description": "Igor's Blog",
-            "doc_size": 23000,
+            "doc_size": 24000,
             "file_path": "_site/debug.html",
             "incoming_links": [],
             "last_modified": "2025-03-16T16:15:36+00:00",
@@ -2859,7 +2859,7 @@
         },
         "/first-things-first": {
             "description": "The key to effective management, is allocating energy through the lens of importance rather than urgency. E.g, ask yourself what one thing could you do that if you did on a regular basis, would make a tremendous positive difference in your life? Lemme guess, it’s important, but not urgent so you’re not doing it. These are my insights based on the 7 habits Chapter 3.\n\n",
-            "doc_size": 25000,
+            "doc_size": 26000,
             "file_path": "_site/first-things-first.html",
             "incoming_links": [
                 "/4dx",
@@ -3393,6 +3393,7 @@
                 "/ai-journal",
                 "/changelog",
                 "/chop",
+                "/pet-projects",
                 "/y25",
                 "/y26"
             ],
@@ -3467,7 +3468,7 @@
                 "/ai-second-brain",
                 "/how-igor-chops"
             ],
-            "last_modified": "2026-03-14T22:56:00.189040+00:00",
+            "last_modified": "2026-03-14T16:03:56-07:00",
             "markdown_path": "_d/hyper-personal.md",
             "outgoing_links": [
                 "/ai-second-brain"
@@ -3747,7 +3748,7 @@
                 "/structure",
                 "/y26"
             ],
-            "last_modified": "2026-03-15T20:00:09.378857+00:00",
+            "last_modified": "2026-03-15T13:01:45-07:00",
             "markdown_path": "_d/larry.md",
             "outgoing_links": [
                 "/affirmations",
@@ -4583,16 +4584,16 @@
                 "/how-igor-chops",
                 "/y25"
             ],
-            "last_modified": "2026-03-15T20:00:09.378857+00:00",
+            "last_modified": "2026-03-15T13:01:45-07:00",
             "markdown_path": "_d/pet-projects.md",
             "outgoing_links": [
                 "/ai-native-manager",
                 "/bike-tesla-identity",
                 "/explainers",
+                "/how-igor-chops",
                 "/larry",
                 "/process-journal",
-                "/static/pet-projects.html",
-                "/vibe"
+                "/static/pet-projects.html"
             ],
             "redirect_url": "",
             "title": "Pet Projects",
@@ -5293,12 +5294,12 @@
         },
         "/side-quests": {
             "description": "Tech is cheap, curiosity is free, and side quests are how I scratch the itch without derailing the main storyline. These are random explorations — little adventures where I poke at something interesting, learn just enough to be dangerous, and move on. No deadlines, no deliverables, just play.\n\n",
-            "doc_size": 17000,
+            "doc_size": 19000,
             "file_path": "_site/side-quests.html",
             "incoming_links": [
                 "/ai-second-brain"
             ],
-            "last_modified": "2026-03-15T03:38:10.562771+00:00",
+            "last_modified": "2026-03-15T05:47:34-07:00",
             "markdown_path": "_d/side-quests.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -5585,7 +5586,7 @@
                 "/gap-year-igor",
                 "/words-we-dont-have"
             ],
-            "last_modified": "2026-03-15T20:00:09.378857+00:00",
+            "last_modified": "2026-03-15T13:01:45-07:00",
             "markdown_path": "_d/structure.md",
             "outgoing_links": [
                 "/larry"
@@ -6994,7 +6995,7 @@
             "incoming_links": [
                 "/changelog"
             ],
-            "last_modified": "2026-03-15T20:00:09.378857+00:00",
+            "last_modified": "2026-03-15T13:01:45-07:00",
             "markdown_path": "_d/y2026.md",
             "outgoing_links": [
                 "/22",
