@@ -22,8 +22,9 @@ Tech is cheap, curiosity is free, and side quests are how I scratch the itch wit
 <!-- vim-markdown-toc-start -->
 
 - [Active Quests](#active-quests)
+  - [Magic Monitor Card Detection](#magic-monitor-card-detection)
+- [Completed / Graduated](#completed--graduated)
   - [Context Grabber](#context-grabber)
-- [Completed Quests](#completed-quests)
 - [Shelved Quests](#shelved-quests)
   - [Apple Virtualization](#apple-virtualization)
 
@@ -31,6 +32,23 @@ Tech is cheap, curiosity is free, and side quests are how I scratch the itch wit
 <!-- prettier-ignore-end -->
 
 ## Active Quests
+
+### Magic Monitor Card Detection
+
+_Started: 2026-03-15_ | [GitHub](https://github.com/idvorkin/magic-monitor)
+
+Magic Monitor is my webcam-based magic practice mirror — instant replay, hand tracking, the works. The next frontier: real-time playing card detection so it can "see" what card I'm holding. Imagine practice sessions where the app knows which card was produced and can verify the trick landed.
+
+**The idea:**
+
+- Train a YOLO model to recognize all 52 playing cards from webcam video
+- Run inference in the browser via ONNX Runtime Web — no server needed
+- Overlay detected cards with bounding boxes and confidence scores on the live feed
+- Eventually: trick verification ("you said Queen of Hearts, and I see... Queen of Hearts")
+
+**Status:** Model trained and exported — YOLO26n (9.7 MB ONNX) trained on [Augmented Startups dataset](https://universe.roboflow.com/augmented-startups/playing-cards-ow27d), 52 card classes, 416x416 input. Browser integration is half-working — detections show up but confidence is low (24% on a clearly visible King) and only catching 1 of 2 cards. HUD has a `[object Object]` bug. Next up: improve detection accuracy and build proper UI integration.
+
+## Completed / Graduated
 
 ### Context Grabber
 
@@ -45,11 +63,7 @@ My AI life coach would be way more helpful if it had access to context that's cu
 - Background location tracking with SQLite storage for "where was I" context
 - At-a-glance dashboard with summary banner and metric cards
 
-**Status:** Core app built — health metrics (steps, heart rate, sleep with bedtime/wake, weight, meditation), background location tracking, dashboard UI, OTA updates, 68 tests. [PR #1](https://github.com/idvorkin/context-grabber/pull/1).
-
-## Completed Quests
-
-_Nothing here yet — ship something!_
+**Status:** Graduated to side project. Core app built — health metrics (steps, heart rate, sleep with bedtime/wake, weight, meditation), background location tracking, dashboard UI, OTA updates, 68 tests. [PR #1](https://github.com/idvorkin/context-grabber/pull/1).
 
 ## Shelved Quests
 
