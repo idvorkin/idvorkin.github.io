@@ -34,17 +34,18 @@ Tech is cheap, curiosity is free, and side quests are how I scratch the itch wit
 
 ### Context Grabber
 
-_Started: 2026-03-14_
+_Started: 2026-03-14_ | [GitHub](https://github.com/idvorkin/context-grabber)
 
 My AI life coach would be way more helpful if it had access to context that's currently trapped in my iPhone — health data (steps, sleep, heart rate), location history, screen time, etc. None of this is easily exportable in a format an LLM can use. Why not build a custom iOS app that extracts this data and makes it available?
 
 **The idea:**
 
 - A lightweight iOS app that pulls from HealthKit, CoreLocation, and other on-device APIs
-- Exports structured data (JSON/CSV) that can be fed into life coaching conversations
-- Could sync to iCloud, a server, or just copy-paste — whatever's simplest
+- Exports structured data (JSON) that can be fed into life coaching conversations
+- Background location tracking with SQLite storage for "where was I" context
+- At-a-glance dashboard with summary banner and metric cards
 
-**Status:** Just getting started.
+**Status:** Core app built — health metrics (steps, heart rate, sleep with bedtime/wake, weight, meditation), background location tracking, dashboard UI, OTA updates, 68 tests. [PR #1](https://github.com/idvorkin/context-grabber/pull/1).
 
 ## Completed Quests
 
