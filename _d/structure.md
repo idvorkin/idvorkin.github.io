@@ -225,6 +225,8 @@ The best recording happens automatically, without effort or remembering. Modern 
 
 Combine automatic data with occasional human context: "Apple Watch shows I walked 8,000 steps, but what it doesn't show is that I felt anxious and walking helped me think through the work problem."
 
+**In practice:** [Context Grabber](https://github.com/idvorkin/context-grabber) is an iOS app that does exactly this — it pulls HealthKit data (steps, heart rate, sleep, weight, meditation, HRV, exercise minutes) and location history, then exports it as JSON. One tap to grab your full health context. The JSON feeds directly into [Larry](/larry), my AI life coach, giving him real data to work with instead of relying on my (unreliable) self-reports. This closes the loop between implicit capture and [humane learning](#learning-finding-patterns-and-insights) — Larry can say "Your sleep dropped to 5 hours three nights this week, and your meditation streak broke at the same time. What do you notice?" with actual data, not guesses.
+
 ### Learning: Finding Patterns and Insights
 
 Traditional learning from structure is performance evaluation: What did you accomplish? Where did you fall short? What's your success rate? It's designed to judge and optimize, treating you like a machine to be tuned.
