@@ -76,12 +76,12 @@ GitHub orgs to check:
 
 ## Computer Vision & Motion
 
-| Project                                                                             | Description                                                                                                                               |
-| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| [Swing Analyzer](https://swing-analyzer.surge.sh/)                                  | Browser-based kettlebell swing analyzer. [<i class="fa fa-github"></i>](https://github.com/idvorkin/swing-analyzer)                       |
-| [Form Analyzer Samples](https://github.com/idvorkin-ai-tools/form-analyzer-samples) | Exercise video library for form analysis: kettlebell swings, pull-ups, pistol squats                                                      |
-| [Magic Monitor](https://magic-monitor.surge.sh)                                     | Smart mirror app with instant replay and AI-powered smart zoom. [<i class="fa fa-github"></i>](https://github.com/idvorkin/magic-monitor) |
-| [Video Edit](https://github.com/idvorkin/video-edit)                                | Computer vision explorations: YOLO object detection, OpenCV motion detection                                                              |
+| Project                                                                             | Description                                                                                                                                                                                                                             |
+| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Swing Analyzer](https://swing-analyzer.surge.sh/)                                  | Browser-based kettlebell swing analyzer. [<i class="fa fa-github"></i>](https://github.com/idvorkin/swing-analyzer)                                                                                                                     |
+| [Form Analyzer Samples](https://github.com/idvorkin-ai-tools/form-analyzer-samples) | Exercise video library for form analysis: kettlebell swings, pull-ups, pistol squats                                                                                                                                                    |
+| [Magic Monitor](https://magic-monitor.surge.sh)                                     | Smart mirror app with instant replay, AI-powered smart zoom, and real-time playing card detection via YOLO. [<i class="fa fa-github"></i>](https://github.com/idvorkin/magic-monitor) [Side quest](/side-quests#playing-card-detection) |
+| [Video Edit](https://github.com/idvorkin/video-edit)                                | Computer vision explorations: YOLO object detection, OpenCV motion detection                                                                                                                                                            |
 
 ## Dev Tools & Infrastructure
 

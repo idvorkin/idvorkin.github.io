@@ -35,18 +35,39 @@ Tech is cheap, curiosity is free, and side quests are how I scratch the itch wit
 
 ### Magic Monitor Card Detection
 
-_Started: 2026-03-15_ | [GitHub](https://github.com/idvorkin/magic-monitor)
+_Started: 2026-03-08_ | [GitHub](https://github.com/idvorkin/magic-monitor) | [Live Demo](https://magic-monitor.surge.sh)
 
-Magic Monitor is my webcam-based magic practice mirror — instant replay, hand tracking, the works. The next frontier: real-time playing card detection so it can "see" what card I'm holding. Imagine practice sessions where the app knows which card was produced and can verify the trick landed.
+Real-time playing card detection in the browser using YOLO + ONNX Runtime Web. Hold up a card to your webcam and it identifies all 52 cards with bounding boxes. Part of [Magic Monitor](/pet-projects), my smart mirror app.
 
-**The idea:**
+**The journey from "nothing works" to "97% recall":**
 
-- Train a YOLO model to recognize all 52 playing cards from webcam video
-- Run inference in the browser via ONNX Runtime Web — no server needed
-- Overlay detected cards with bounding boxes and confidence scores on the live feed
-- Eventually: trick verification ("you said Queen of Hearts, and I see... Queen of Hearts")
+Training a YOLO model was the easy part. Getting it to actually work in the browser was a debugging adventure — the JS integration had the wrong output format, wrong class mapping, stretched preprocessing, and broken overlay coordinates. Each fix required understanding the full pipeline from camera frame to rendered bounding box.
 
-**Status:** Model trained and exported — YOLO26n (9.7 MB ONNX) trained on [Augmented Startups dataset](https://universe.roboflow.com/augmented-startups/playing-cards-ow27d), 52 card classes, 416x416 input. Browser integration is half-working — detections show up but confidence is low (24% on a clearly visible King) and only catching 1 of 2 cards. HUD has a `[object Object]` bug. Next up: improve detection accuracy and build proper UI integration.
+| Model                         | Recall  | Precision | Speed (CPU)       | Size        |
+| ----------------------------- | ------- | --------- | ----------------- | ----------- |
+| YOLO26n @ 416 (first attempt) | 40%     | 95%       | 25ms / 40 FPS     | 9.3 MB      |
+| **YOLO26s @ 640 (current)**   | **73%** | **98%**   | **108ms / 9 FPS** | **36.5 MB** |
+
+_Recall = how many cards it finds. Precision = how often it's right about what it found._
+
+**Before (YOLO26n @ 416):** One wrong detection at 11% confidence. The model couldn't see anything useful.
+
+![YOLO26n debug snapshot - one wrong detection at 11%](https://raw.githubusercontent.com/idvorkin/ipaste/main/20260315_095931.webp)
+
+**After (YOLO26s @ 640):** Four correct detections at 57-84% confidence. Boxes land right on the card corners.
+
+![YOLO26s debug snapshot - four correct detections](https://raw.githubusercontent.com/idvorkin/ipaste/main/20260315_132529.webp)
+
+**Key learnings:**
+
+- **Preprocessing matters as much as the model.** Stretching vs letterboxing, bilinear vs nearest-neighbor resize — these choices can double or halve recall without changing a single model weight.
+- **YOLO models are fully convolutional** — no fixed input size. Train at 640x640, infer at 640x640, but the same weights work at any resolution. ([Good explainer](https://www.datacamp.com/blog/yolo-object-detection-explained))
+- **Debug snapshots are essential.** Added a `z` keypress that downloads a PNG showing exactly what the model sees with detection boxes burned in. Without this, I'd still be guessing why detections were wrong.
+- **Browser ONNX Runtime needs WASM files from a CDN** — can't bundle them in Vite's public/ directory due to dynamic import restrictions.
+
+**Training was shockingly easy:** Open a Google Colab notebook, select an A100 GPU (~$1.30/hr in compute units), crank the batch size from 16 to 128 (the A100 has 80GB of VRAM so why not), and hit run. 50 epochs on 21K synthetic images finished in under 30 minutes for less than a dollar. The hardest part was remembering my Roboflow API key. [Colab notebook](https://colab.research.google.com/github/idvorkin-ai-tools/magic-monitor/blob/main/training/train_colab.ipynb).
+
+**Status:** Merged to main. Detection works live in the browser. Next up: integrate with session recording and replay timeline.
 
 ## Completed / Graduated
 
