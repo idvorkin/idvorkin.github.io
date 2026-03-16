@@ -20,6 +20,17 @@ It's [GTD](/gtd) capture meets AI triage. And unlike passive consumption, this p
 
 ## Feed
 
+### 2026-03-16
+
+- **Tips for getting coding agents to write good Python tests** — (link TBD, from OmniFocus inbox Jan 29)
+
+  - _Tags_: #ai-practice #testing #craft
+  - _Reaction_: TBD — queued for reading
+
+- **[Dario Amodei — The Adolescence of Technology](https://darioamodei.com/the-adolescence-of-technology)** — Dario on AI's current awkward growth phase
+  - _Tags_: #ai-philosophy #anthropic #longread
+  - _Reaction_: TBD — queued for reading
+
 ### 2026-03-04
 
 - **[Don't Become an Engineering Manager](https://newsletter.manager.dev/p/dont-become-an-engineering-manager)** — Anton Zaides on why the EM career path no longer makes sense
