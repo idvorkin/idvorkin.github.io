@@ -950,7 +950,7 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get super lost\n\n",
-            "doc_size": 122000,
+            "doc_size": 126000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai",
@@ -963,7 +963,7 @@
                 "/walking-with-god",
                 "/y25"
             ],
-            "last_modified": "2026-03-15T15:58:06.298241+00:00",
+            "last_modified": "2026-03-16T16:47:51.930588+00:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",

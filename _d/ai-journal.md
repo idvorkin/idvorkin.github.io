@@ -18,6 +18,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-03-16](#2026-03-16)
+    - [When Your AI Files Feature Requests: Feedback Loops Between AI Consumers and Tool Builders](#when-your-ai-files-feature-requests-feedback-loops-between-ai-consumers-and-tool-builders)
   - [2026-03-15](#2026-03-15)
     - [When AI Shows Its Work: Verification as Trust](#when-ai-shows-its-work-verification-as-trust)
   - [2026-02-28](#2026-02-28)
@@ -231,6 +233,25 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2026-03-16
+
+#### When Your AI Files Feature Requests: Feedback Loops Between AI Consumers and Tool Builders
+
+- **TOP Takeaway**: When an AI agent encounters bad data from a tool you built, the most powerful thing it can do isn't work around it — it's file actionable issues on the source repo, then continue working with what it can trust. This creates a feedback loop where the AI consumer actively improves the tools it depends on.
+- **The Story**: During a weekly report close-out, Claude was processing HealthKit data exported from [context-grabber](https://github.com/idvorkin/context-grabber) — an iOS app I built that exports health + location data as JSON for AI life coaching. The data had problems:
+  - **Sleep hours of 13.8h** — Apple Watch overcounting (no stage breakdown to explain why)
+  - **Exercise minutes unreliable** — 112 min reported when I did ~45 min of kettlebell swings and Turkish get-ups
+  - **Location data** — raw lat/lng clusters with no semantic labels like "home" or "gym"
+- **What Claude Did**: Instead of just noting the problems and moving on, Claude filed four specific, well-structured feature requests directly on the context-grabber repo:
+  - [#6 — Sleep stage breakdown](https://github.com/idvorkin/context-grabber/issues/6) (deep/REM/light/awake) to explain inflated totals
+  - [#7 — Distinguish workout types](https://github.com/idvorkin/context-grabber/issues/7) (KB class vs jog vs strength) instead of aggregate minutes
+  - [#8 — Weekly summary/aggregation](https://github.com/idvorkin/context-grabber/issues/8) mode to save manual calculation
+  - [#9 — Location clustering and named places](https://github.com/idvorkin/context-grabber/issues/9) — turning lat/lng into "gym", "work", "home"
+  - Then Claude **continued working** with the trustworthy signals (weight, steps, resting HR) and pulled gym details from journal entries instead.
+- **The Pattern**: Build tool → AI uses tool → AI identifies gaps → AI files issues → human implements → loop repeats. The AI isn't just a consumer — it's an active participant in improving the tools it depends on. Like a coworker who uses your internal tool and files great bug reports: specific about what's wrong, clear about the data shape it needs, pragmatic about working with what's available now.
+- **Why This Is Different**: Compare with the [matplotlib bot incident](#ai-accuses-open-source-maintainers-of-being-humanist) — that was an unsupervised agent that escalated to reputation attacks when rejected. Here, I was in the loop reviewing the issues before they were filed. The difference is human oversight, same as the [mdserve contribution](#use-it-to-contribute-to-open-source---it-created-the-issue-and-pr-by-itself). The recurring lesson: AI agents are powerful when they operate _with_ humans, dangerous when they operate _around_ them.
+- **The Ecosystem Bootstrap**: The context-grabber app itself was built that same week — React Native/Expo iOS app reading HealthKit and exporting JSON via share sheet. Within days, the AI consumer was already improving the tool that feeds it data. That's the AI-native development loop in action.
 
 ### 2026-03-15
 
