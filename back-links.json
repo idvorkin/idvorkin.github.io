@@ -1705,7 +1705,7 @@
             "doc_size": 34000,
             "file_path": "_site/changelog.html",
             "incoming_links": [],
-            "last_modified": "2026-02-22T14:11:56-08:00",
+            "last_modified": "2026-03-16T16:18:17.419513+00:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
                 "/activation",
@@ -1718,7 +1718,7 @@
                 "/recent",
                 "/shoulder-pain",
                 "/spiritual-health",
-                "/y26"
+                "/y2026"
             ],
             "redirect_url": "",
             "title": "Changelog",
@@ -4580,7 +4580,7 @@
                 "/how-igor-chops",
                 "/y25"
             ],
-            "last_modified": "2026-03-15T21:02:18.729804+00:00",
+            "last_modified": "2026-03-16T16:18:57.011958+00:00",
             "markdown_path": "_d/pet-projects.md",
             "outgoing_links": [
                 "/ai-native-manager",
