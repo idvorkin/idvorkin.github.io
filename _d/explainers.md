@@ -136,6 +136,7 @@ Red Blob Games proves that the best way to learn an algorithm is to watch it wor
 
 ### Other Standouts
 
+- **[Karpathy's US Job Market Visualizer](https://karpathy.ai/jobs/)** — Interactive treemap of 342 occupations and 143 million jobs. Toggle between job outlook, median pay, education requirements, and AI exposure. Makes BLS data actually explorable instead of buried in spreadsheets
 - **[Paras Chopra's Explainers](https://paraschopra.github.io/explainers/)** — AI-generated explainers covering Instagram's recommendation system, diffusion models, Shazam's song recognition, and LLMs. Proof that the AI-builds-explainers pattern works
 - **[Explained Visually](https://setosa.io/ev/)** — Image kernels, pi, exponentiation — classic mathematical concepts with clean interactive diagrams
 - **[TensorFlow Playground](https://playground.tensorflow.org/)** — Neural networks you can actually watch learn in real-time
