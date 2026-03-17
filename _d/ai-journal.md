@@ -239,7 +239,7 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 #### When Your AI Files Feature Requests: Feedback Loops Between AI Consumers and Tool Builders
 
 - **TOP Takeaway**: When an AI agent encounters bad data from a tool you built, the most powerful thing it can do isn't work around it — it's file actionable issues on the source repo, then continue working with what it can trust. This creates a feedback loop where the AI consumer actively improves the tools it depends on.
-- **The Story**: During a weekly report close-out, Claude was processing HealthKit data exported from [context-grabber](https://github.com/idvorkin/context-grabber) — an iOS app I built that exports health + location data as JSON for AI life coaching. The data had problems:
+- **The Story**: During a weekly report close-out, Claude was processing HealthKit data exported from [context-grabber](https://github.com/idvorkin/context-grabber/tree/06a20b0b1a7db4d33532fdbabd8dd701dca44bf0) — an iOS app I built that exports health + location data as JSON for AI life coaching. The data had problems:
   - **Sleep hours of 13.8h** — Apple Watch overcounting (no stage breakdown to explain why)
   - **Exercise minutes unreliable** — 112 min reported when I did ~45 min of kettlebell swings and Turkish get-ups
   - **Location data** — raw lat/lng clusters with no semantic labels like "home" or "gym"
