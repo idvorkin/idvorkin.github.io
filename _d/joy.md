@@ -47,6 +47,7 @@ If you could have one superpower, what would it be? At 46, you'd think I'd have 
   - [Some Random Cool Dude](#some-random-cool-dude)
   - [Gayle - The Queen of Aggressive Kindness](#gayle---the-queen-of-aggressive-kindness)
   - [Steve Irwin](#steve-irwin)
+  - [What Happened to the Symbol of American Clowns](#what-happened-to-the-symbol-of-american-clowns)
   - [Mr. Rogers](#mr-rogers)
 - [Future Projects](#future-projects)
   - [Smile box](#smile-box)
@@ -284,6 +285,16 @@ Brought joy through infectious enthusiasm and genuine wonder. His "Crikey!" wasn
 - [Australia Zoo](https://www.instagram.com/australiazoo/)
 - [Robert Irwin](https://www.instagram.com/robertirwinphotography/)
 - [Bindi Irwin](https://www.instagram.com/bindisueirwin/)
+
+### What Happened to the Symbol of American Clowns
+
+_Not my inspiration, but kind of neat if you want to see people who bring joy for a living._
+
+A fascinating documentary exploring clowns - people who literally make joy their job. From circus origins to modern-day birthday party performers, it follows working clowns, David Arquette, John C Reilly, and Steve-O as they reflect on why clowning matters and how horror movies like "It" turned clowns from beloved to feared.
+
+What resonates most is the paradox one clown describes: "It's actually a pretty selfish job because what I get out of it - it makes me feel good to make people feel good. That's the most satisfying part of the job." That's the joy loop - giving joy _is_ the joy.
+
+{% include youtube.html src="eYc36vA6MTw" %}
 
 ### Mr. Rogers
 
