@@ -108,7 +108,30 @@ if [ "$SIZE" -lt 10000 ]; then
 fi
 ```
 
-### Phase 4: Host on Gist
+### Phase 4: Visual Verification
+
+**Use the Read tool to view each screenshot** (Claude can see images). Check that:
+
+1. The page actually rendered (not a blank white/grey page or error page)
+2. The content matches what was changed (the right page loaded)
+3. No obvious rendering issues (broken layout, missing styles, overlapping elements)
+
+```
+For each screenshot in /tmp/show-your-work/:
+  Read the PNG file using the Read tool
+  Assess: Does this look like a properly rendered blog page?
+```
+
+**If a screenshot looks wrong:**
+
+- Blank/white → retry with `--wait-for-timeout 6000`
+- 404 or error page → the permalink is wrong, re-check the frontmatter
+- Partially loaded (missing styles, broken layout) → wait longer or check if Jekyll finished building
+- Wrong page → the permalink extraction was incorrect
+
+**Do not proceed to hosting until all screenshots pass visual inspection.** Bad screenshots in a PR are worse than no screenshots.
+
+### Phase 5: Host on Gist
 
 Use the gist-as-git-repo technique (gh gist create rejects binary files):
 
@@ -136,7 +159,7 @@ git push
 cd -
 ```
 
-### Phase 5: Produce Output
+### Phase 6: Produce Output
 
 Build the markdown image block:
 
@@ -165,7 +188,7 @@ gh pr edit $PR_NUMBER --body "$NEW_BODY"
 
 **If no PR number**, print the markdown block so it can be used when creating the PR.
 
-### Phase 6: Summary
+### Phase 7: Summary
 
 Show:
 
@@ -175,7 +198,7 @@ Show:
 - The markdown block to copy
 - If PR was updated, link to the PR with `/files` suffix
 
-### Phase 7: Cleanup Reminder
+### Phase 8: Cleanup Reminder
 
 ```
 To delete the screenshot gist later:
