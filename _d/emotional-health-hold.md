@@ -9,7 +9,7 @@ alias:
   - /emotional-health
   - /emotional-health-practices
 permalink: /emotional-health
-imagefeaturelocal: raccoon-meditate.png
+imagefeaturelocal: raccoon-meditate.webp
 redirect_from:
   - /emotional-health-practices
 ---

@@ -6,7 +6,7 @@ tags:
 redirect_from:
   - /exercise
   - /strong
-imagefeaturelocal: raccoon-lifting-weights.png
+imagefeaturelocal: raccoon-lifting-weights.webp
 ---
 
 Physical health is not bought, it's rented and rent is due every day. Physical health is the basis of energy, and thus the source of success, and a key [saw to sharpen](/sharpen-the-saw). Physical health requires weight, fitness, and sleep.
@@ -25,7 +25,7 @@ Set a weight goal, and check progress towards the goal weekly. It's easy for you
 
 Some people feel dieting is shameful. I couldn't disagree more. Dieting shows you care about health and are doing something about it.
 
-{% include local_image_float_right.html src="raccoon-lifting-weights.png" %}
+{% include local_image_float_right.html src="raccoon-lifting-weights.webp" %}
 
 {% include summarize-page.html src="/diet" %}
 

@@ -3,7 +3,7 @@ layout: post
 title: "Breathing as if your life depends on it"
 
 permalink: /breath
-imagefeaturelocal: raccoon-meditate.png
+imagefeaturelocal: raccoon-meditate.webp
 mermaid: true
 redirect_from:
   - breathe
@@ -39,7 +39,7 @@ I do a form of meditation with cyclic breathing called Sky Breathing. Pretty coo
 Hyperventilating
 
 Good training available in the art of living breathing class
-{%include local_image_float_right.html src="raccoon-meditate.png" %}
+{%include local_image_float_right.html src="raccoon-meditate.webp" %}
 
 ### The patterns
 

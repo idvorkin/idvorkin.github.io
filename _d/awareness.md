@@ -6,7 +6,7 @@ tags:
   - spiritual
   - book-notes
   - meditation
-imagefeaturelocal: raccoon-meditate.png
+imagefeaturelocal: raccoon-meditate.webp
 redirect_from:
   - /demello
   - /de-mello

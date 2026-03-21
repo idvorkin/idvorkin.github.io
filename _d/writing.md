@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Writing is Thinking"
-imagefeaturelocal: raccoon-quill.png
+imagefeaturelocal: raccoon-quill.webp
 permalink: /writing
 redirect_from:
   - write
@@ -56,7 +56,7 @@ Useful writing tells people (including, possibly most importantly you) something
 
 ### Writing to understand, writing to be understood
 
-{%include local_image_float_right.html src="raccoon-quill.png" %}
+{%include local_image_float_right.html src="raccoon-quill.webp" %}
 
 You write to understand a topic, and to help others understand.
 
