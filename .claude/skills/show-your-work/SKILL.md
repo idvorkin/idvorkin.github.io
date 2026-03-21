@@ -77,34 +77,37 @@ done
 For each detected page, take desktop and mobile screenshots:
 
 ```bash
-mkdir -p /tmp/show-your-work
+BRANCH=$(git branch --show-current)
+SAFE_BRANCH=$(echo "$BRANCH" | tr '/' '-')
+WORK_DIR="/tmp/show-your-work/${SAFE_BRANCH}"
+mkdir -p "$WORK_DIR"
 
 # Desktop
 npx playwright screenshot --browser chromium \
   --viewport-size "1280,900" \
   --wait-for-timeout 3000 \
   "http://localhost:4000${PERMALINK}" \
-  "/tmp/show-your-work/${NAME}-desktop.png"
+  "${WORK_DIR}/${NAME}-desktop.png"
 
 # Mobile
 npx playwright screenshot --browser chromium \
   --viewport-size "375,812" \
   --wait-for-timeout 3000 \
   "http://localhost:4000${PERMALINK}" \
-  "/tmp/show-your-work/${NAME}-mobile.png"
+  "${WORK_DIR}/${NAME}-mobile.png"
 ```
 
 **After each screenshot, validate it's not blank:**
 
 ```bash
-SIZE=$(stat -c%s "/tmp/show-your-work/${NAME}-desktop.png" 2>/dev/null || echo 0)
+SIZE=$(stat -c%s "${WORK_DIR}/${NAME}-desktop.png" 2>/dev/null || echo 0)
 if [ "$SIZE" -lt 10000 ]; then
   echo "WARNING: ${NAME}-desktop.png is ${SIZE} bytes — likely blank. Retrying with longer timeout..."
   npx playwright screenshot --browser chromium \
     --viewport-size "1280,900" \
     --wait-for-timeout 6000 \
     "http://localhost:4000${PERMALINK}" \
-    "/tmp/show-your-work/${NAME}-desktop.png"
+    "${WORK_DIR}/${NAME}-desktop.png"
 fi
 ```
 
@@ -117,7 +120,7 @@ fi
 3. No obvious rendering issues (broken layout, missing styles, overlapping elements)
 
 ```
-For each screenshot in /tmp/show-your-work/:
+For each screenshot in /tmp/show-your-work/${SAFE_BRANCH}/:
   Read the PNG file using the Read tool
   Assess: Does this look like a properly rendered blog page?
 ```
@@ -145,8 +148,9 @@ GIST_ID=$(basename "$GIST_URL")
 
 # 2. Clone, convert to JPG (smaller), push
 git clone "$GIST_URL" "/tmp/gist-${GIST_NAME}"
+WORK_DIR="/tmp/show-your-work/${BRANCH}"
 
-for png in /tmp/show-your-work/*.png; do
+for png in ${WORK_DIR}/*.png; do
   BASENAME=$(basename "$png" .png)
   magick "$png" -quality 80 "/tmp/gist-${GIST_NAME}/${BASENAME}.jpg"
 done
@@ -203,7 +207,7 @@ Show:
 ```
 To delete the screenshot gist later:
   gh gist delete --yes GIST_ID
-  rm -rf /tmp/gist-pr-BRANCH-screenshots /tmp/show-your-work
+  rm -rf /tmp/gist-pr-SAFE_BRANCH-screenshots /tmp/show-your-work/SAFE_BRANCH
 ```
 
 ## Tips
