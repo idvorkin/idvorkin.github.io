@@ -5,7 +5,7 @@ author: "Igor Dvorkin"
 tags:
   - emotional intelligence
   - book-notes
-imagefeaturelocal: raccoon-meditate.png
+imagefeaturelocal: raccoon-meditate.webp
 redirect_from:
   - /search-inside-yourself
   - /meditate
@@ -50,7 +50,7 @@ FYI, I now do a different practice; See my experience with [SKY](/ig66/685)
 
 ### 1) What is Emotional Intelligence (EI)? How to train it?
 
-{%include local_image_float_right.html src="raccoon-meditate.png" %}
+{%include local_image_float_right.html src="raccoon-meditate.webp" %}
 
 _Even engineers can use empathy_
 

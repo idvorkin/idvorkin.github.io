@@ -6,7 +6,7 @@ comments: true
 inprogress: true
 permalink: /magic
 aliases: ["/magic"]
-imagefeaturelocal: raccoon-magic.png
+imagefeaturelocal: raccoon-magic.webp
 tags:
   - how igor ticks
 ---
@@ -50,7 +50,7 @@ Being a dealer of smiles and wonder is a priority in my life, and magic is my in
 
 ### How I started
 
-{%include local_image_float_right.html src="raccoon-magic.png" %}
+{%include local_image_float_right.html src="raccoon-magic.webp" %}
 
 - Carl Bystrom's class at magic with a French drop jacket routine (great intro Carl - thanks!)
 - Not knowing how to shuffle and thus having to learn to shuffle till my fingers bled.

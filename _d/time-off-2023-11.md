@@ -2,7 +2,7 @@
 layout: post
 title: Ashland T-Day 2023
 permalink: /timeoff-2023-11
-imagefeaturelocal: raccoon-vaccation.png
+imagefeaturelocal: raccoon-vacation.webp
 ---
 
 It's time for our annual thanksgiving 2023 trip to Oregon!

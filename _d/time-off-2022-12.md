@@ -2,7 +2,7 @@
 layout: post
 title: Time off X-mas 2022
 permalink: /timeoff-2022-12
-imagefeaturelocal: raccoon-vaccation.png
+imagefeaturelocal: raccoon-vacation.webp
 ---
 
 It's X-mas 2022, quite the fall excitement edition! and I've got 1 and change weeks off in an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation. I'm going to pre-write what I want to get done, and adjust it as I go.

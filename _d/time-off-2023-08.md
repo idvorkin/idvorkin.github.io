@@ -2,7 +2,7 @@
 layout: post
 title: Time off August 2023
 permalink: /timeoff-2023-08
-imagefeaturelocal: raccoon-vaccation.png
+imagefeaturelocal: raccoon-vacation.webp
 ---
 
 It's summer break 2023! It's late August and our last chance to get a vacation before the kids go back to school. We were going to go to Chilliwack to try a deli run by a small jewish cult, but alas it's like 100 degrees so we're going to to coast instead!
