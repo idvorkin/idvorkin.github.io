@@ -20,6 +20,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [Diary](#diary)
   - [2026-03-21](#2026-03-21)
     - [Telegram Bot: When the Platform Eats Your Side Project (And That's Great)](#telegram-bot-when-the-platform-eats-your-side-project-and-thats-great)
+    - [The Egg Theory: Why AI Needs to Leave Room for Humans](#the-egg-theory-why-ai-needs-to-leave-room-for-humans)
   - [2026-03-16](#2026-03-16)
     - [When Your AI Files Feature Requests: Feedback Loops Between AI Consumers and Tool Builders](#when-your-ai-files-feature-requests-feedback-loops-between-ai-consumers-and-tool-builders)
   - [2026-03-15](#2026-03-15)
@@ -251,6 +252,18 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - **Channels** (Telegram plugin): You're texting a friend who happens to be an AI agent with full access to your dev environment. Natural, async, push notifications, photo attachments.
   - Channels won. The ergonomic gap is massive. This is probably the future pattern — AI agents living in your existing communication tools rather than requiring you to come to theirs.
 - **What this means for mortality software**: Larry is now genuinely accessible from anywhere. The loop closes: journal on Kindle Scribe → process via Claude → coach via Telegram → adjust life. The vision from [mortality software](/mortality-software) is actually working.
+
+#### The Egg Theory: Why AI Needs to Leave Room for Humans
+
+- **TOP Takeaway**: In the 1950s, Betty Crocker made instant cake mix that only needed water. Housewives rejected it — too easy, didn't feel like "real" baking. The fix? Require adding an egg. Same cake, but now people felt ownership. This is the [IKEA effect](/parkinson) applied to AI workflows.
+- **The story**: General Mills had a perfect product — just add water, bake, done. But sales flopped. Psychologist Ernest Dichter diagnosed the problem: the mix was _too_ complete. By making people contribute something (an egg), they felt like bakers instead of package-openers. The product succeeded by being deliberately less convenient.
+- **Why this matters for AI**: When AI does everything — writes the code, the tests, the docs, the PR description — people feel like package-openers, not engineers. The work ships, but nobody feels ownership. This connects directly to the [AI Vampire problem](#steve-yegges-ai-vampire---who-captures-the-10x): if the human contribution is just "approve the PR," you get burnout and disengagement, not 10x productivity.
+- **The design principle**: The best AI workflows intentionally leave room for human contribution — not busywork, but meaningful "eggs":
+  - **Architecture decisions** — AI proposes, human decides the tradeoffs
+  - **Code review as craft** — not rubber-stamping, but genuinely engaging with the approach
+  - **Prompt refinement** — shaping what the AI builds, not just accepting defaults
+  - **The brainstorm** — the creative direction is yours, AI handles the execution
+- **The anti-pattern**: Fully autonomous AI agents that do everything end-to-end. Technically impressive, psychologically corrosive. People need to crack an egg.
 
 ### 2026-03-16
 
