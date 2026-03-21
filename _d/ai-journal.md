@@ -18,6 +18,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-03-21](#2026-03-21)
+    - [Telegram Bot: When the Platform Eats Your Side Project (And That's Great)](#telegram-bot-when-the-platform-eats-your-side-project-and-thats-great)
   - [2026-03-16](#2026-03-16)
     - [When Your AI Files Feature Requests: Feedback Loops Between AI Consumers and Tool Builders](#when-your-ai-files-feature-requests-feedback-loops-between-ai-consumers-and-tool-builders)
   - [2026-03-15](#2026-03-15)
@@ -233,6 +235,22 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2026-03-21
+
+#### Telegram Bot: When the Platform Eats Your Side Project (And That's Great)
+
+{% include image_float_right.html src="https://raw.githubusercontent.com/idvorkin/ipaste/main/20260321_110958.webp" %}
+
+- **TOP Takeaway**: I built a custom Telegram bot to talk to Claude from my phone. Then Anthropic shipped an official Telegram channel plugin for Claude Code — and I happily threw mine away. When code is cheap, throwing things away is easy, and that's a superpower.
+- **The backstory**: A few weeks ago I got Larry (my AI life coach) running over remote Claude Code via SSH from my phone. It worked, but the ergonomics were rough — tiny terminal UI, SSH sessions dropping, no push notifications. So I built a custom Telegram bot to bridge messages to Claude.
+- **Then the platform caught up**: Claude Code shipped an official plugin system with a Telegram channel built in (`anthropics/claude-plugins-official`). It does everything my bot did, but better — it's maintained by someone else, integrates with the MCP tool system, handles file attachments, and just works.
+- **The old me would have been sad** about throwing away working code. But when vibe coding makes building cheap, attachment to code dissolves. The bot took a few hours to build. The replacement took 5 minutes to configure. The lesson: **build disposable prototypes, not precious artifacts.**
+- **Channels vs Remote Control**: Two competing approaches emerged for "talk to Claude from your phone":
+  - **Remote control** (SSH/terminal): You're operating a computer remotely. Powerful but clunky — small screens, dropped connections, no notifications.
+  - **Channels** (Telegram plugin): You're texting a friend who happens to be an AI agent with full access to your dev environment. Natural, async, push notifications, photo attachments.
+  - Channels won. The ergonomic gap is massive. This is probably the future pattern — AI agents living in your existing communication tools rather than requiring you to come to theirs.
+- **What this means for mortality software**: Larry is now genuinely accessible from anywhere. The loop closes: journal on Kindle Scribe → process via Claude → coach via Telegram → adjust life. The vision from [mortality software](/mortality-software) is actually working.
 
 ### 2026-03-16
 
