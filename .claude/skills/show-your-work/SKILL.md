@@ -148,7 +148,7 @@ GIST_ID=$(basename "$GIST_URL")
 
 # 2. Clone, convert to JPG (smaller), push
 git clone "$GIST_URL" "/tmp/gist-${GIST_NAME}"
-WORK_DIR="/tmp/show-your-work/${BRANCH}"
+WORK_DIR="/tmp/show-your-work/${SAFE_BRANCH}"
 
 for png in ${WORK_DIR}/*.png; do
   BASENAME=$(basename "$png" .png)
@@ -207,7 +207,7 @@ Show:
 ```
 To delete the screenshot gist later:
   gh gist delete --yes GIST_ID
-  rm -rf /tmp/gist-pr-SAFE_BRANCH-screenshots /tmp/show-your-work/SAFE_BRANCH
+  rm -rf "/tmp/gist-${GIST_NAME}" "/tmp/show-your-work/${SAFE_BRANCH}"
 ```
 
 ## Tips
