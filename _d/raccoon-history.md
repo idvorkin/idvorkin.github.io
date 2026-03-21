@@ -94,7 +94,11 @@ In March 2026, we did a full audit of every raccoon image. The findings:
 2. **raccoon-shoulder.webp** → Regenerated from 2D anime to 3D plush style. Raccoon clutching a glowing red shoulder with ice pack. Shirt text: "OUCH."
 3. **raccoon-quill.png** → Only image with no `.webp` replacement. Regenerated with the raccoon at a desk with a golden quill. Shirt text: "WRITER."
 
-**Updated references:** Several pages still pointed to old `.png` versions despite `.webp` replacements existing. These were updated to use the modern versions.
+**Updated references:** Several pages still pointed to old `.png` versions despite `.webp` replacements existing. These were updated to use the modern versions across 13 pages (including fixing a "vaccation" typo in 4 time-off posts).
+
+**Cleaned up:** Deleted unused `raccoon-ai-native-em.webp` (317KB duplicate of the plates version, zero page references).
+
+**Final count after audit:** 16 raccoon images, all on-brand. The `raccoon-money.webp` uses a suit instead of the green tee — an intentional variation for the taxes page that still reads as the same character thanks to the rainbow glasses.
 
 ## Character Design Reference
 
