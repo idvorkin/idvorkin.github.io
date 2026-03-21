@@ -950,7 +950,7 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get super lost\n\n",
-            "doc_size": 129000,
+            "doc_size": 132000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai",
@@ -976,7 +976,8 @@
                 "/how-igor-chops",
                 "/hyper-personal",
                 "/mental-pain",
-                "/mortality-software"
+                "/mortality-software",
+                "/parkinson"
             ],
             "redirect_url": "",
             "title": "Igor's AI Journal",
@@ -4540,6 +4541,7 @@
             "doc_size": 22000,
             "file_path": "_site/parkinson.html",
             "incoming_links": [
+                "/ai-journal",
                 "/balance",
                 "/gap-year-igor",
                 "/manager-book-appendix",
