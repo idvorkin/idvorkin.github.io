@@ -2,7 +2,9 @@
 
 ## IMPORTANT: Read First
 
-Before starting any work, clone the chop-conventions repository:
+Before starting any work, run `/up-to-date` to sync the repo with upstream. This ensures you're working on the latest code and avoids merge conflicts. When creating PRs, rebase your branch onto main so the PR can merge cleanly.
+
+Then clone the chop-conventions repository:
 
 ```bash
 mkdir -p repo_tmp && cd repo_tmp
