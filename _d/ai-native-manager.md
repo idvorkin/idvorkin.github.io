@@ -44,6 +44,7 @@ What does it mean to be an engineering manager when AI is rewriting every assump
   - [Heresies](#heresies)
   - [Infinite Loop](#infinite-loop)
   - [Human In, On, and Out of the Loop](#human-in-on-and-out-of-the-loop)
+  - [In Distribution](#in-distribution)
 - [Appendix: Hot Takes](#appendix-hot-takes)
   - [Should XFN Code?](#should-xfn-code)
 - [Appendix: Old Questions, New Answers](#appendix-old-questions-new-answers)
@@ -289,6 +290,14 @@ Three modes of working with AI, borrowed from autonomous systems:
 - **Human out of the loop** — Fully autonomous. No human reviews the output.
 
 The EM question isn't "which mode should we be in?" — it's "are we actually in the mode we think we're in?" A team that claims human-in-the-loop but reviews 50 AI-generated PRs a day is kidding itself. That's rubber-stamping, which gives you the overhead of in-the-loop with the safety of out-of-the-loop — the worst of both worlds. And when the AI hits an [infinite loop](#infinite-loop) in on-the-loop mode, someone needs to notice before it burns hours on nothing.
+
+### In Distribution
+
+A term borrowed from machine learning: data the model has seen during training is "in distribution," and data it hasn't seen is "out of distribution." In practice, this means agents already know about tools, libraries, and patterns that were in their training data — they'll reach for them naturally, use them correctly, and even prefer them over alternatives. Anything out of distribution requires expensive prompting, documentation, and hand-holding at inference time.
+
+Yegge identifies this as one of his [six levers for software survival](https://steve-yegge.medium.com/software-survival-3-0-97a2a6255f7b) — he calls it the "Awareness" lever. Tools like Git and Postgres have essentially zero awareness cost because every model has been trained on mountains of content about them. Your team's internal CLI tool? Completely out of distribution. You're paying the awareness tax every time an agent encounters it.
+
+My take: this matters for EMs because it changes how you think about tooling decisions. When your team picks a well-known tool over a technically superior but obscure one, that's not just "going with the safe choice" — it's a rational calculation about agent effectiveness. Your CLAUDE.md files, your onboarding docs, your custom slash commands — these are all attempts to push out-of-distribution knowledge into the agent's working context. The better you are at this, the more effective your AI-augmented team becomes. And when you're evaluating whether to build custom tooling vs. using something standard, "will agents already know how to use it?" is now a legitimate engineering criterion.
 
 ## Appendix: Hot Takes
 
