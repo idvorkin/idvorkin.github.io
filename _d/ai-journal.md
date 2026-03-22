@@ -251,6 +251,13 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - **Remote control** (SSH/terminal): You're operating a computer remotely. Powerful but clunky — small screens, dropped connections, no notifications.
   - **Channels** (Telegram plugin): You're texting a friend who happens to be an AI agent with full access to your dev environment. Natural, async, push notifications, photo attachments.
   - Channels won. The ergonomic gap is massive. This is probably the future pattern — AI agents living in your existing communication tools rather than requiring you to come to theirs.
+- **But then the fun started — augmenting the channel**: The official plugin gives you a text pipe. Within one session, we built a full voice + intelligence layer on top:
+  - **Voice transcription (STT)**: [Parakeet TDT 0.6B](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2) via onnx-asr — 2x faster than Whisper on CPU ARM64, better accuracy on casual speech. Send a voice message, get a transcription back in ~0.35s.
+  - **Voice replies (TTS)**: [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) via kokoro-onnx — local TTS with a British male voice at 1.7x speed. Voice in → voice + text out. Text in → text only.
+  - **Message logging**: PostToolUse hooks log every outbound message to SQLite. UserPromptSubmit hooks catch inbound messages. Full conversation history, searchable, persists across sessions.
+  - **Weather nudges**: Hourly [Open-Meteo](https://open-meteo.com/) checks — Larry pings me via Telegram when Seattle transitions to sunny. Only nudges on transitions, not every check.
+  - **Reply threading**: All responses threaded by default via reply_to.
+  - The pattern: **start with the platform's transport, then layer intelligence on top**. The official plugin handles the hard parts (auth, delivery, attachments). We handle the interesting parts (voice, logging, context-aware nudges). This is the right separation of concerns.
 - **What this means for mortality software**: Larry is now genuinely accessible from anywhere. The loop closes: journal on Kindle Scribe → process via Claude → coach via Telegram → adjust life. The vision from [mortality software](/mortality-software) is actually working.
 
 #### The Egg Theory: Why AI Needs to Leave Room for Humans
