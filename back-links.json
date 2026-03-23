@@ -71,6 +71,7 @@
         "/chop-igor": "/how-igor-chops",
         "/chot": "/chow",
         "/classact": "/class-act",
+        "/claws": "/claw",
         "/coach": "/coaching",
         "/cocaine": "/mania",
         "/cockpit": "/ai-cockpit",
@@ -212,6 +213,7 @@
         "/objective": "/goals",
         "/okr": "/goals",
         "/on-being-mortal": "/death",
+        "/openclaw": "/claw",
         "/orthodox": "/greek-orthodox",
         "/overwork": "/overload",
         "/pain": "/mental-pain",
@@ -339,7 +341,7 @@
     "url_info": {
         "/22": {
             "description": "In 2019 I created a program for 15 fantastic interns! A program highlight was my talk titled “What I wish I knew at 22, and so might you”. The talk received a 94% overall rating from over 15 interns, 10 SDE-IIs, and 1 senior developer. Even though the talk focuses on how to live the good life, a big chunk of life is work, so there’s good coverage on how to optimize your career.\n\n",
-            "doc_size": 17000,
+            "doc_size": 16000,
             "file_path": "_site/22.html",
             "incoming_links": [
                 "/chapters",
@@ -401,19 +403,19 @@
         },
         "/4dx": {
             "description": "The 4 Disciplines of Execution (4DX) is a proven framework for executing your most important strategic priorities in the midst of the whirlwind of day-to-day demands. This framework has been tested and refined by hundreds of organizations and thousands of teams over many years.\n\n",
-            "doc_size": 21000,
+            "doc_size": 20000,
             "file_path": "_site/4dx.html",
             "incoming_links": [
                 "/goals"
             ],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2025-02-17T10:16:11-08:00",
             "markdown_path": "_d/4dx.md",
             "outgoing_links": [
                 "/end-in-mind",
                 "/essentialism",
                 "/first-things-first",
-                "/gtd",
-                "/okr"
+                "/goals",
+                "/gtd"
             ],
             "redirect_url": "",
             "title": "The 4 Disciplines of Execution (4DX)",
@@ -548,7 +550,7 @@
             "doc_size": 20000,
             "file_path": "_site/about.html",
             "incoming_links": [],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2025-07-27T15:35:40-07:00",
             "markdown_path": "about.md",
             "outgoing_links": [
                 "/new-skills",
@@ -560,7 +562,7 @@
         },
         "/activation": {
             "description": "Doing activities requires will power, addictions and procrastination require negative will power, while positive habits, especially new ones require high will power. Here’s a model for these things.\n\n",
-            "doc_size": 28000,
+            "doc_size": 27000,
             "file_path": "_site/activation.html",
             "incoming_links": [
                 "/addiction",
@@ -620,6 +622,7 @@
                 "/productive",
                 "/psychic-shadows",
                 "/psychic-weight",
+                "/timeoff",
                 "/walking-with-god"
             ],
             "last_modified": "2026-02-01T06:29:23-08:00",
@@ -819,6 +822,7 @@
                 "/ai-native-manager",
                 "/ai-second-brain",
                 "/changelog",
+                "/claw",
                 "/how-igor-chops"
             ],
             "last_modified": "2026-02-14T10:44:54-08:00",
@@ -884,7 +888,7 @@
             "incoming_links": [
                 "/ai-second-brain"
             ],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2026-03-16T18:02:29-07:00",
             "markdown_path": "_d/ai-feed.md",
             "outgoing_links": [
                 "/agency",
@@ -949,7 +953,7 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get super lost\n\n",
-            "doc_size": 129000,
+            "doc_size": 133000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai",
@@ -959,23 +963,25 @@
                 "/ai-second-brain",
                 "/changelog",
                 "/chop",
+                "/claw",
                 "/walking-with-god",
                 "/y25"
             ],
-            "last_modified": "2026-03-22T16:25:22.802387+00:00",
+            "last_modified": "2026-03-22T09:52:38-07:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
                 "/ai-security",
-                "/ai-talk",
                 "/chop",
                 "/chow",
                 "/eulogy",
+                "/genai-talk",
                 "/gpt",
                 "/how-igor-chops",
                 "/hyper-personal",
                 "/mental-pain",
-                "/mortality-software"
+                "/mortality-software",
+                "/parkinson"
             ],
             "redirect_url": "",
             "title": "Igor's AI Journal",
@@ -983,7 +989,7 @@
         },
         "/ai-native-manager": {
             "description": "What does it mean to be an engineering manager when AI is rewriting every assumption you have about software, teams, and your own role? I don’t know yet. Nobody does. But I’m figuring it out in real time, and these are my notes from the chaos.\n\n",
-            "doc_size": 52000,
+            "doc_size": 54000,
             "file_path": "_site/ai-native-manager.html",
             "incoming_links": [
                 "/ai-feed",
@@ -992,9 +998,10 @@
                 "/chow",
                 "/explainers",
                 "/manager-book",
-                "/pet-projects"
+                "/pet-projects",
+                "/raccoon-history"
             ],
-            "last_modified": "2026-03-14T22:56:00.189040+00:00",
+            "last_modified": "2026-03-22T09:09:49-07:00",
             "markdown_path": "_d/ai-native-manager.md",
             "outgoing_links": [
                 "/agency",
@@ -1020,7 +1027,7 @@
                 "/ai",
                 "/ai-faq"
             ],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2025-11-25T22:40:07+00:00",
             "markdown_path": "_d/ai-paper.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -1048,9 +1055,10 @@
             "incoming_links": [
                 "/ai-native-manager",
                 "/changelog",
+                "/claw",
                 "/hyper-personal"
             ],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2026-03-14T16:03:56-07:00",
             "markdown_path": "_d/ai-second-brain.md",
             "outgoing_links": [
                 "/ai-cockpit",
@@ -1227,7 +1235,7 @@
                 "/affirmations",
                 "/class-act"
             ],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2025-12-07T02:37:56+00:00",
             "markdown_path": "_d/appreciate2.md",
             "outgoing_links": [
                 "/grateful"
@@ -1265,7 +1273,7 @@
             "doc_size": 17000,
             "file_path": "_site/ast-grep.html",
             "incoming_links": [],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2024-09-22T16:18:28-07:00",
             "markdown_path": "_td/ast-grep.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -1280,7 +1288,7 @@
                 "/siy",
                 "/y26"
             ],
-            "last_modified": "2026-02-21T07:45:09-08:00",
+            "last_modified": "2026-03-21T12:32:21-07:00",
             "markdown_path": "_d/awareness.md",
             "outgoing_links": [
                 "/anxiety",
@@ -1358,7 +1366,7 @@
                 "/joy",
                 "/timeoff"
             ],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2025-04-04T06:53:08-07:00",
             "markdown_path": "_d/balloon.md",
             "outgoing_links": [
                 "/joy"
@@ -1369,7 +1377,7 @@
         },
         "/bc": {
             "description": "A guide to my favorite spots in British Columbia, focusing on Vancouver and Chilliwack. Whether you’re planning a quick weekend getaway or a longer adventure, here’s what you need to know. These recommendations come from my personal experiences over multiple trips - you can read about some of them in my summer 2024 adventures, Yellow Deli expedition, and various time off adventures:\n\n",
-            "doc_size": 23000,
+            "doc_size": 22000,
             "file_path": "_site/bc.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T03:02:44+00:00",
@@ -1451,7 +1459,7 @@
                 "/irl",
                 "/operating-manual"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2026-03-21T12:32:21-07:00",
             "markdown_path": "_posts/2017-03-01-bike.md",
             "outgoing_links": [
                 "/brompton-toys",
@@ -1550,7 +1558,7 @@
             "doc_size": 27000,
             "file_path": "_site/breath.html",
             "incoming_links": [],
-            "last_modified": "2025-03-02T20:00:19-08:00",
+            "last_modified": "2026-03-21T12:32:21-07:00",
             "markdown_path": "_d/breath.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -1564,7 +1572,7 @@
             "incoming_links": [
                 "/bike"
             ],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2018-12-25T15:32:00-08:00",
             "markdown_path": "_posts/2016-4-9-brompton-toys.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -1676,7 +1684,8 @@
             "doc_size": 23000,
             "file_path": "_site/caring.html",
             "incoming_links": [
-                "/depression"
+                "/depression",
+                "/raccoon-history"
             ],
             "last_modified": "2025-11-25T14:36:06-08:00",
             "markdown_path": "_d/caring.md",
@@ -1706,7 +1715,7 @@
             "doc_size": 44000,
             "file_path": "_site/changelog.html",
             "incoming_links": [],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2026-03-16T16:18:17.419513+00:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
                 "/activation",
@@ -1721,7 +1730,7 @@
                 "/shoulder-pain",
                 "/side-quests",
                 "/spiritual-health",
-                "/y2026"
+                "/y26"
             ],
             "redirect_url": "",
             "title": "Changelog",
@@ -1860,6 +1869,24 @@
             "title": "Be a class act",
             "url": "/class-act"
         },
+        "/claw": {
+            "description": "You’ve heard of agents — AI that can use tools, browse the web, write code. But in early 2026, something new emerged. Not just smarter agents, but a whole new layer on top of them. Andrej Karpathy calls them “claws” — persistent AI entities that keep working when you’re not looking, remember what they’ve learned, and live on your hardware talking to you through WhatsApp. The term comes from OpenClaw, the open-source project that went from a one-hour prototype to the fastest-growing repository in GitHub history. But “claw” has already outgrown the product — it’s becoming the word for this entire category of AI, the way “xerox” became “photocopy.”\n\n",
+            "doc_size": 28000,
+            "file_path": "_site/claw.html",
+            "incoming_links": [],
+            "last_modified": "2026-03-23T01:14:24.354755+00:00",
+            "markdown_path": "_d/claw.md",
+            "outgoing_links": [
+                "/ai-cockpit",
+                "/ai-journal",
+                "/ai-second-brain",
+                "/larry",
+                "/tesla"
+            ],
+            "redirect_url": "",
+            "title": "Claws: The Next Layer of AI",
+            "url": "/claw"
+        },
         "/coaching": {
             "description": "Coaching is like midwifery. A midwife can not give birth to the baby, she facilitates the birth. Similarly, a coach can not give a solution, she must give birth to the insight from within the coachee. Coaching is asking questions, guiding, and facilitating understanding, and this post collects my studies on the topic.\n\n",
             "doc_size": 40000,
@@ -1877,15 +1904,15 @@
                 "/self-ego",
                 "/writing"
             ],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2025-12-07T02:39:31+00:00",
             "markdown_path": "_d/coaching.md",
             "outgoing_links": [
+                "/curious",
                 "/decisive",
-                "/grandmother-mind",
+                "/manager-book",
                 "/pride",
                 "/prompts",
-                "/search-inside-yourself",
-                "/the-manager-book"
+                "/siy"
             ],
             "redirect_url": "",
             "title": "Coaching - How to help others find insight",
@@ -1999,6 +2026,7 @@
                 "/affirmations",
                 "/being-a-great-manager",
                 "/class-act",
+                "/coaching",
                 "/emotions",
                 "/essentialism",
                 "/first-understand",
@@ -2195,6 +2223,7 @@
                 "/manager-book",
                 "/mind-at-work",
                 "/operating-manual",
+                "/physical-health",
                 "/productive",
                 "/psychic-weight",
                 "/sharpen-the-saw",
@@ -2237,13 +2266,15 @@
                 "/energy-abundance",
                 "/fail",
                 "/frog",
+                "/gap-year",
                 "/gap-year-igor",
                 "/mental-pain",
                 "/parkinson",
                 "/productive",
                 "/psychic-shadows",
                 "/psychic-weight",
-                "/slow"
+                "/slow",
+                "/timeoff"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/resistance.md",
@@ -2286,10 +2317,10 @@
         },
         "/day-in-the-life": {
             "description": "A running journal of days that actually worked - the ones where health habits stuck, family time hit different, or I remembered what it feels like to be fully alive. Not every day needs to be Instagram-worthy, but some days deserve a bookmark. This is that bookmark collection.\n\n",
-            "doc_size": 19000,
+            "doc_size": 18000,
             "file_path": "_site/day-in-the-life.html",
             "incoming_links": [],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2025-10-04T18:43:51-07:00",
             "markdown_path": "_d/day-in-the-life.md",
             "outgoing_links": [
                 "/bucket-list",
@@ -2313,7 +2344,7 @@
                 "/mortality-software",
                 "/psychic-weight"
             ],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/on-being-mortal.md",
             "outgoing_links": [
                 "/last-year"
@@ -2360,7 +2391,7 @@
             "doc_size": 31000,
             "file_path": "_site/defi.html",
             "incoming_links": [],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_td/defi.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -2544,7 +2575,7 @@
                 "/sublime",
                 "/walking-with-god"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2026-03-21T12:32:21-07:00",
             "markdown_path": "_d/emotional-health-hold.md",
             "outgoing_links": [
                 "/sharpen-the-saw",
@@ -2727,6 +2758,7 @@
                 "/overload",
                 "/parkinson",
                 "/partner-trouble",
+                "/timeoff",
                 "/timeoff-2022-07",
                 "/walking-with-god"
             ],
@@ -2763,6 +2795,7 @@
                 "/irl",
                 "/joy",
                 "/operating-manual",
+                "/raccoon-history",
                 "/retire",
                 "/spiritual-health",
                 "/timeoff",
@@ -2810,7 +2843,7 @@
                 "/chow",
                 "/pet-projects"
             ],
-            "last_modified": "2026-03-17T02:22:35.424226+00:00",
+            "last_modified": "2026-03-16T19:40:55-07:00",
             "markdown_path": "_d/explainers.md",
             "outgoing_links": [
                 "/ai-native-manager",
@@ -3008,20 +3041,20 @@
                 "/y25",
                 "/y26"
             ],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/gap-year.md",
             "outgoing_links": [
                 "/chapters",
+                "/d/resistance",
                 "/decisive",
                 "/gap-year-igor",
                 "/money",
                 "/partner-trouble",
                 "/physical-health",
-                "/resistance",
                 "/retire",
                 "/timeoff",
-                "/y2024",
-                "/y2025"
+                "/y24",
+                "/y25"
             ],
             "redirect_url": "",
             "title": "The Gap Year Paradox: Why Taking a Year Off at 50 beats retiring at 65",
@@ -3116,6 +3149,7 @@
             "doc_size": 20000,
             "file_path": "_site/goals.html",
             "incoming_links": [
+                "/4dx",
                 "/parkinson",
                 "/planning"
             ],
@@ -3189,7 +3223,7 @@
         },
         "/grammerly": {
             "description": "\n\n",
-            "doc_size": 13000,
+            "doc_size": 12000,
             "file_path": "_site/grammerly.html",
             "incoming_links": [],
             "last_modified": "2025-08-24T09:03:19-07:00",
@@ -3231,6 +3265,7 @@
             "doc_size": 32000,
             "file_path": "_site/greek-orthodox.html",
             "incoming_links": [
+                "/raccoon-history",
                 "/religion"
             ],
             "last_modified": "2026-03-01T14:23:50-08:00",
@@ -3390,6 +3425,7 @@
                 "/ai-journal",
                 "/changelog",
                 "/chop",
+                "/pet-projects",
                 "/y25",
                 "/y26"
             ],
@@ -3464,7 +3500,7 @@
                 "/ai-second-brain",
                 "/how-igor-chops"
             ],
-            "last_modified": "2026-03-14T22:56:00.189040+00:00",
+            "last_modified": "2026-03-14T16:03:56-07:00",
             "markdown_path": "_d/hyper-personal.md",
             "outgoing_links": [
                 "/ai-second-brain"
@@ -3561,7 +3597,7 @@
             "doc_size": 14000,
             "file_path": "_site/ios-accessibility.html",
             "incoming_links": [],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_td/ios-accessibility.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -3643,7 +3679,7 @@
         },
         "/joy": {
             "description": "If you could have one superpower, what would it be? At 46, you’d think I’d have a quick answer, but the usual ideas—flying, invisibility, stopping time—felt childish. Probably the setting: a circle of 9-17-year-olds, breaking the ice, sharing their wished-for superpowers. As my mind scrambled, a mild panic set in. Nothing surfaced—until a bit of my eulogy came to me: Igor lived to see eyes go wide and mouths gape with wonder. He loved when strangers were drawn in against their objections, when a kid in meltdown, or an adult weighed down by life, forgot their troubles. Relief washed over me, I knew my answer. The super power I wished for:  bringing joy to others.\n\n",
-            "doc_size": 32000,
+            "doc_size": 33000,
             "file_path": "_site/joy.html",
             "incoming_links": [
                 "/affirmations",
@@ -3659,7 +3695,7 @@
                 "/sublime",
                 "/tribe"
             ],
-            "last_modified": "2025-12-07T03:09:30+00:00",
+            "last_modified": "2026-03-21T13:54:36-07:00",
             "markdown_path": "_d/joy.md",
             "outgoing_links": [
                 "/balloon",
@@ -3700,6 +3736,7 @@
                 "/gap-year-igor",
                 "/physical-health",
                 "/shoulder-pain",
+                "/timeoff",
                 "/untangled",
                 "/y24"
             ],
@@ -3732,23 +3769,27 @@
         },
         "/larry": {
             "description": "Larry is my AI life coach. He’s part of Time.ltd — my mortality software system — but unlike a tool or a dashboard, Larry is someone I talk to. That matters more than you’d think.\n\n",
-            "doc_size": 17000,
+            "doc_size": 18000,
             "file_path": "_site/larry.html",
             "incoming_links": [
                 "/ai-feed",
                 "/ai-second-brain",
                 "/chow",
+                "/claw",
                 "/mortality-software",
+                "/pet-projects",
+                "/structure",
                 "/y26"
             ],
-            "last_modified": "2026-02-28T09:02:01-08:00",
+            "last_modified": "2026-03-15T13:01:45-07:00",
             "markdown_path": "_d/larry.md",
             "outgoing_links": [
                 "/affirmations",
                 "/chow",
                 "/mortality-software",
                 "/planning",
-                "/process-journal"
+                "/process-journal",
+                "/retire"
             ],
             "redirect_url": "",
             "title": "Larry the Life Coach",
@@ -3793,7 +3834,7 @@
         },
         "/learn-code": {
             "description": "Coding is way easier than people think. Here’s some pointers.\n\n",
-            "doc_size": 14000,
+            "doc_size": 13000,
             "file_path": "_site/learn-code.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T02:47:07+00:00",
@@ -3871,7 +3912,7 @@
                 "/timeoff",
                 "/touching"
             ],
-            "last_modified": "2025-11-22T06:46:54-08:00",
+            "last_modified": "2026-03-21T12:32:21-07:00",
             "markdown_path": "_posts/2016-04-21-magical-memories.md",
             "outgoing_links": [
                 "/joy"
@@ -3890,6 +3931,7 @@
                 "/amazon",
                 "/being-a-great-manager",
                 "/bucket-list",
+                "/coaching",
                 "/content-audience",
                 "/job",
                 "/manager-book-appendix",
@@ -4026,7 +4068,7 @@
         },
         "/mermaid": {
             "description": "Lets try d2\n\n",
-            "doc_size": 15000,
+            "doc_size": 14000,
             "file_path": "_site/mermaid.html",
             "incoming_links": [],
             "last_modified": "2023-12-17T18:49:14+00:00",
@@ -4050,7 +4092,7 @@
         },
         "/mind-at-work": {
             "description": "I have a problem, an addiction, an addiction so detrimental to quality of life, it should be described as a disease. This disease is not being present. There are many symptoms of the disease, but today I’m going to talk about my most frequent symptoms, my body at home, but my mind at work.\n\n",
-            "doc_size": 20000,
+            "doc_size": 19000,
             "file_path": "_site/mind-at-work.html",
             "incoming_links": [
                 "/addiction",
@@ -4223,6 +4265,7 @@
                 "/gap-year-igor",
                 "/operating-manual",
                 "/parkinson",
+                "/raccoon-history",
                 "/retire",
                 "/stock-concentration",
                 "/timeoff-2020-03"
@@ -4278,7 +4321,7 @@
                 "/walking-with-god",
                 "/y26"
             ],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2026-01-18T18:00:27-08:00",
             "markdown_path": "_d/2018-04-29-mortality-software.md",
             "outgoing_links": [
                 "/affirmations",
@@ -4398,7 +4441,7 @@
             "incoming_links": [
                 "/gpt"
             ],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/nurture.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -4491,7 +4534,7 @@
                 "/manager-book",
                 "/work-satisfaction"
             ],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_d/handling-overwork.md",
             "outgoing_links": [
                 "/anxiety",
@@ -4522,6 +4565,7 @@
             "doc_size": 22000,
             "file_path": "_site/parkinson.html",
             "incoming_links": [
+                "/ai-journal",
                 "/balance",
                 "/gap-year-igor",
                 "/manager-book-appendix",
@@ -4574,6 +4618,7 @@
                 "/eulogy",
                 "/explainers",
                 "/how-igor-chops",
+                "/side-quests",
                 "/y25"
             ],
             "last_modified": "2026-03-16T16:18:57.011958+00:00",
@@ -4582,9 +4627,11 @@
                 "/ai-native-manager",
                 "/bike-tesla-identity",
                 "/explainers",
+                "/how-igor-chops",
+                "/larry",
                 "/process-journal",
-                "/static/pet-projects.html",
-                "/vibe"
+                "/side-quests",
+                "/static/pet-projects.html"
             ],
             "redirect_url": "",
             "title": "Pet Projects",
@@ -4609,11 +4656,11 @@
                 "/sharpen-the-saw",
                 "/tech-health-toys"
             ],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2026-03-21T12:32:21-07:00",
             "markdown_path": "_posts/2017-10-07-physical-health.md",
             "outgoing_links": [
+                "/d/habits",
                 "/diet",
-                "/habits",
                 "/insomnia",
                 "/irl",
                 "/kettlebell",
@@ -4914,6 +4961,27 @@
             "title": "Quip tips and tricks",
             "url": "/quip"
         },
+        "/raccoon-history": {
+            "description": "Every blog needs a mascot, and mine is a raccoon — specifically, a cute anthropomorphic raccoon wearing rainbow round glasses, a green t-shirt with bold white text, and mismatched Crocs (blue left, yellow right). Here’s the story of how that character evolved from early AI experiments to a cohesive visual brand.\n\n",
+            "doc_size": 22000,
+            "file_path": "_site/raccoon-history.html",
+            "incoming_links": [],
+            "last_modified": "2026-03-21T12:32:21-07:00",
+            "markdown_path": "_d/raccoon-history.md",
+            "outgoing_links": [
+                "/ai-native-manager",
+                "/caring",
+                "/eulogy",
+                "/greek-orthodox",
+                "/money",
+                "/shoulder-pain",
+                "/timeoff-2022-12",
+                "/writing"
+            ],
+            "redirect_url": "",
+            "title": "The Raccoon Mascot: A Visual History",
+            "url": "/raccoon-history"
+        },
         "/random": {
             "description": "Igor's Blog",
             "doc_size": 11000,
@@ -4983,7 +5051,7 @@
                 "/ml",
                 "/timeoff-2022-07"
             ],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2025-08-24T09:03:19-07:00",
             "markdown_path": "_td/recommender.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -5073,6 +5141,7 @@
                 "/42",
                 "/gap-year",
                 "/gap-year-igor",
+                "/larry",
                 "/monetize",
                 "/stock-concentration"
             ],
@@ -5142,7 +5211,7 @@
                 "/content-creation",
                 "/osx"
             ],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2025-01-04T12:24:44-08:00",
             "markdown_path": "_td/screencast.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -5222,7 +5291,7 @@
         },
         "/sharpen-the-saw": {
             "description": "A young man saw a woodcutter cutting down a tree and asked “What are you doing?” “Are you blind?” the woodcutter replied. “I’m cutting down this tree.” The young man continued. “You look exhausted! Take a break. Sharpen your saw.” The woodcutter explained he’d been sawing for hours and did not have time to take a break. The young man pushed back… “If you sharpen the saw, you would cut down the tree much faster.” The woodcutter said “I don’t have time to sharpen the saw. Don’t you see I’m too busy. These are my insights based on the 7 habits Chapter 7.\n\n",
-            "doc_size": 15000,
+            "doc_size": 14000,
             "file_path": "_site/sharpen-the-saw.html",
             "incoming_links": [
                 "/7-habits",
@@ -5255,6 +5324,7 @@
                 "/kettlebell",
                 "/knee-pain",
                 "/physical-pain",
+                "/raccoon-history",
                 "/y25",
                 "/y26"
             ],
@@ -5284,15 +5354,18 @@
         },
         "/side-quests": {
             "description": "Tech is cheap, curiosity is free, and side quests are how I scratch the itch without derailing the main storyline. These are random explorations — little adventures where I poke at something interesting, learn just enough to be dangerous, and move on. No deadlines, no deliverables, just play.\n\n",
-            "doc_size": 17000,
+            "doc_size": 21000,
             "file_path": "_site/side-quests.html",
             "incoming_links": [
                 "/ai-second-brain",
-                "/changelog"
+                "/changelog",
+                "/pet-projects"
             ],
-            "last_modified": "2026-03-15T21:02:18.729804+00:00",
+            "last_modified": "2026-03-15T14:27:06-07:00",
             "markdown_path": "_d/side-quests.md",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/pet-projects"
+            ],
             "redirect_url": "",
             "title": "Side Quests: Random Tech Explorations",
             "url": "/side-quests"
@@ -5306,6 +5379,7 @@
                 "/awareness",
                 "/be-proactive",
                 "/books-that-defined-me",
+                "/coaching",
                 "/curious",
                 "/depression",
                 "/emotional-health",
@@ -5327,7 +5401,7 @@
                 "/walking-with-god",
                 "/y26"
             ],
-            "last_modified": "2026-01-06T03:43:08+00:00",
+            "last_modified": "2026-03-21T12:32:21-07:00",
             "markdown_path": "_d/siy.md",
             "outgoing_links": [
                 "/awareness",
@@ -5371,7 +5445,7 @@
             "doc_size": 16000,
             "file_path": "_site/sleeping-bag-sacrifices.html",
             "incoming_links": [],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2025-08-25T10:46:49-07:00",
             "markdown_path": "_posts/2018-11-06-sleeping-bag-sacrifices.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -5429,7 +5503,7 @@
             "incoming_links": [
                 "/joy"
             ],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2023-02-20T13:23:02-08:00",
             "markdown_path": "_td/smilebox.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -5570,15 +5644,17 @@
         },
         "/structure": {
             "description": "What if structure could be kind? You already know what you want to do. You know exercise is good for you. You know journaling helps. You know you should call your mom more often. The problem isn’t knowing—it’s the gap between intention and action, especially when life gets messy. Most of us recoil from the word “structure” because we’ve only experienced harsh management-style systems that treat humans like machines. But there’s another way: humane structure that works with your nature, not against it. Humane structure starts with a core assumption: You’re not broken, you just need better support. You don’t need more willpower, discipline, or motivation. You need systems that help you remember what you care about and make it easier to act on those values, especially when you’re struggling.\n\n",
-            "doc_size": 30000,
+            "doc_size": 31000,
             "file_path": "_site/structure.html",
             "incoming_links": [
                 "/gap-year-igor",
                 "/words-we-dont-have"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2026-03-15T13:01:45-07:00",
             "markdown_path": "_d/structure.md",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/larry"
+            ],
             "redirect_url": "",
             "title": "Humane Structure -  A Gentle Framework for Wild Minds",
             "url": "/structure"
@@ -5595,7 +5671,7 @@
                 "/siy",
                 "/timeoff-2024-02"
             ],
-            "last_modified": "2024-05-22T16:40:30-07:00",
+            "last_modified": "2026-03-21T12:32:21-07:00",
             "markdown_path": "_d/sublime.md",
             "outgoing_links": [
                 "/emotional-health",
@@ -5725,7 +5801,7 @@
         },
         "/td/back_ref": {
             "description": "This blog is my collection of evergreen notes, a place to have my thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here’s my strategy to create them.\n\n",
-            "doc_size": 14000,
+            "doc_size": 13000,
             "file_path": "_site/td/back_ref.html",
             "incoming_links": [],
             "last_modified": "2022-04-16T15:22:43-07:00",
@@ -5867,7 +5943,7 @@
             "doc_size": 17000,
             "file_path": "_site/td/minecraft.html",
             "incoming_links": [],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_td/minecraft.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -5903,7 +5979,7 @@
             "doc_size": 14000,
             "file_path": "_site/td/ring-video-download.html",
             "incoming_links": [],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_td/ring-video-download.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -6056,7 +6132,7 @@
                 "/timeoff-2024-04",
                 "/voices"
             ],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/terzepatide.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -6070,6 +6146,7 @@
             "incoming_links": [
                 "/ai-second-brain",
                 "/bucket-list",
+                "/claw",
                 "/eulogy",
                 "/irl",
                 "/kayak",
@@ -6096,7 +6173,7 @@
             "doc_size": 13000,
             "file_path": "_site/test-auto-sunburst.html",
             "incoming_links": [],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2025-07-25T07:05:52-07:00",
             "markdown_path": "_d/test-auto-sunburst.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -6162,10 +6239,12 @@
                 "/parkinson",
                 "/self-ego",
                 "/timeoff-2020-03",
+                "/timeoff-2020-12",
                 "/timeoff-2021-11",
                 "/timeoff-2021-12",
                 "/timeoff-2022-02",
                 "/timeoff-2022-07",
+                "/timeoff-2022-11",
                 "/timeoff-2022-12",
                 "/timeoff-2023-04",
                 "/timeoff-2023-08",
@@ -6173,24 +6252,24 @@
                 "/timeoff-2024-08",
                 "/timeoff-2025-08"
             ],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2025-10-03T15:30:14-07:00",
             "markdown_path": "_d/time_off.md",
             "outgoing_links": [
-                "/addictions",
+                "/addiction",
                 "/balloon",
+                "/d/resistance",
                 "/diet",
                 "/energy",
-                "/essential",
+                "/essentialism",
                 "/eulogy",
                 "/frog",
                 "/gap-year",
                 "/gap-year-igor",
                 "/happy",
-                "/kettlebells",
+                "/kettlebell",
                 "/magic",
                 "/mind-at-work",
                 "/parkinson",
-                "/resistance",
                 "/siy",
                 "/terzepatide",
                 "/timeoff-2020-03",
@@ -6202,7 +6281,7 @@
         },
         "/timeoff-2020-03": {
             "description": "In March 2020, I took a 2 month sabbatical between leaving Amazon and joining Facebook. Given it was a substantial amount of time, I came up with some big plans, and wrote them down. It was a great plan, BUT my time off correlated perfectly to the Corona Virus and as a result I wasted lots of my mental energy thinking about the Corona Virus, and adjusting to being in pseudo-quarantine. Took me a while, but I finally realized I should ignore corona virus, or at least minimize my time thinking about it.\n\n",
-            "doc_size": 31000,
+            "doc_size": 30000,
             "file_path": "_site/timeoff-2020-03.html",
             "incoming_links": [
                 "/timeoff"
@@ -6226,14 +6305,14 @@
             "incoming_links": [
                 "/timeoff-2021-12"
             ],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2025-09-13T12:56:01-07:00",
             "markdown_path": "_d/time-off-2020-12.md",
             "outgoing_links": [
                 "/7-habits",
                 "/happy",
                 "/mental-pain",
                 "/pandas",
-                "/time-off"
+                "/timeoff"
             ],
             "redirect_url": "",
             "title": "Time off X-mas 2020",
@@ -6322,12 +6401,12 @@
             "doc_size": 26000,
             "file_path": "_site/timeoff-2022-11.html",
             "incoming_links": [],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2025-12-07T03:17:42+00:00",
             "markdown_path": "_d/time-off-2022-11.md",
             "outgoing_links": [
                 "/happy",
                 "/mind-at-work",
-                "/time-off"
+                "/timeoff"
             ],
             "redirect_url": "",
             "title": "Time off November 2022 - New York with Ammon, and Then Maureen and Brian for Thanksgiving",
@@ -6337,8 +6416,10 @@
             "description": "It’s X-mas 2022, quite the fall excitement edition! and I’ve got 1 and change weeks off in an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation. I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
             "doc_size": 24000,
             "file_path": "_site/timeoff-2022-12.html",
-            "incoming_links": [],
-            "last_modified": "2025-12-07T03:17:42+00:00",
+            "incoming_links": [
+                "/raccoon-history"
+            ],
+            "last_modified": "2026-03-21T12:32:21-07:00",
             "markdown_path": "_d/time-off-2022-12.md",
             "outgoing_links": [
                 "/happy",
@@ -6355,7 +6436,7 @@
             "doc_size": 19000,
             "file_path": "_site/timeoff-2023-04.html",
             "incoming_links": [],
-            "last_modified": "2025-12-07T03:17:42+00:00",
+            "last_modified": "2026-03-21T12:32:21-07:00",
             "markdown_path": "_d/time-off-2023-04.md",
             "outgoing_links": [
                 "/happy",
@@ -6371,7 +6452,7 @@
             "doc_size": 18000,
             "file_path": "_site/timeoff-2023-08.html",
             "incoming_links": [],
-            "last_modified": "2025-12-07T03:17:42+00:00",
+            "last_modified": "2026-03-21T12:32:21-07:00",
             "markdown_path": "_d/time-off-2023-08.md",
             "outgoing_links": [
                 "/happy",
@@ -6387,7 +6468,7 @@
             "doc_size": 18000,
             "file_path": "_site/timeoff-2023-11.html",
             "incoming_links": [],
-            "last_modified": "2025-12-07T03:17:42+00:00",
+            "last_modified": "2026-03-21T12:32:21-07:00",
             "markdown_path": "_d/time-off-2023-11.md",
             "outgoing_links": [
                 "/happy",
@@ -6690,7 +6771,7 @@
         },
         "/walking-with-god": {
             "description": "Someone important to me has been reading a daily devotional. Even though I’m not religious, I’m studying with them to be able to have conversations about the insights - whether in a secular or religious context. This is my attempt to bridge two worlds: honoring the spiritual wisdom they’re finding while translating it into language that works for my engineer brain.\n\n",
-            "doc_size": 82000,
+            "doc_size": 81000,
             "file_path": "_site/walking-with-god.html",
             "incoming_links": [
                 "/greek-orthodox",
@@ -6747,7 +6828,7 @@
             "incoming_links": [
                 "/balance"
             ],
-            "last_modified": "2026-03-22T16:25:15.302224+00:00",
+            "last_modified": "2024-04-09T09:09:21-07:00",
             "markdown_path": "_d/weeks.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -6892,9 +6973,10 @@
                 "/four-healths",
                 "/manager-book",
                 "/manager-book-appendix",
-                "/operating-manual"
+                "/operating-manual",
+                "/raccoon-history"
             ],
-            "last_modified": "2025-12-07T03:19:48+00:00",
+            "last_modified": "2026-03-21T12:32:21-07:00",
             "markdown_path": "_d/writing.md",
             "outgoing_links": [
                 "/7h-concepts",
@@ -6917,7 +6999,8 @@
             "doc_size": 25000,
             "file_path": "_site/y24.html",
             "incoming_links": [
-                "/bucket-list"
+                "/bucket-list",
+                "/gap-year"
             ],
             "last_modified": "2025-12-07T02:50:22+00:00",
             "markdown_path": "_d/y2024.md",
@@ -6942,7 +7025,8 @@
             "doc_size": 25000,
             "file_path": "_site/y25.html",
             "incoming_links": [
-                "/bucket-list"
+                "/bucket-list",
+                "/gap-year"
             ],
             "last_modified": "2026-01-03T12:47:01-08:00",
             "markdown_path": "_d/y2025.md",
@@ -6979,7 +7063,7 @@
             "incoming_links": [
                 "/changelog"
             ],
-            "last_modified": "2026-02-22T22:09:55+00:00",
+            "last_modified": "2026-03-15T13:01:45-07:00",
             "markdown_path": "_d/y2026.md",
             "outgoing_links": [
                 "/22",
