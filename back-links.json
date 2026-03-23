@@ -883,12 +883,12 @@
         },
         "/ai-feed": {
             "description": "Pretty common: I get a bag of links — a newsletter, a Twitter thread, a friend’s Slack message. I open them all in tabs, skim, close most, and forget. Maybe one in ten sticks. The rest vanish into the consumption void.\n\n",
-            "doc_size": 31000,
+            "doc_size": 35000,
             "file_path": "_site/ai-feed.html",
             "incoming_links": [
                 "/ai-second-brain"
             ],
-            "last_modified": "2026-03-16T18:02:29-07:00",
+            "last_modified": "2026-03-23T02:16:41.497603+00:00",
             "markdown_path": "_d/ai-feed.md",
             "outgoing_links": [
                 "/agency",
@@ -907,7 +907,9 @@
                 "/manager-book",
                 "/pet-projects",
                 "/produce-consume",
-                "/software-leadership-roles"
+                "/productive",
+                "/software-leadership-roles",
+                "/strategy"
             ],
             "redirect_url": "",
             "title": "AI Feed — Curated Reading Through Claude",
@@ -4847,6 +4849,7 @@
             "doc_size": 16000,
             "file_path": "_site/productive.html",
             "incoming_links": [
+                "/ai-feed",
                 "/balance",
                 "/energy",
                 "/timeoff-2022-02"
@@ -5612,6 +5615,7 @@
             "doc_size": 28000,
             "file_path": "_site/strategy.html",
             "incoming_links": [
+                "/ai-feed",
                 "/energy-abundance",
                 "/life-as-business",
                 "/manager-book"

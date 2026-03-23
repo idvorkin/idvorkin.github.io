@@ -20,6 +20,29 @@ It's [GTD](/gtd) capture meets AI triage. And unlike passive consumption, this p
 
 ## Feed
 
+### 2026-03-23
+
+- **[Adapting to AI: Reflections on Productivity](https://blog.colinbreck.com/adapting-to-ai-reflections-on-productivity/)** — Colin Breck on the hidden costs of AI-amplified output
+  - _Summary_: While AI dramatically amplified his engineering output in 2025, the real challenge is psychological — loss of flow states, identity crisis among experienced engineers, and an unsustainable pace where linear human adaptation can't match exponential AI capability growth. The shift from immersive problem-solving to supervising stochastic agents fundamentally diminishes the craft satisfaction that drew people to the field.
+  - _Why Randy thinks I'd like it_: Practitioner reflection from someone doing the work, not theorizing. The flow/craft loss angle connects to your cognitive debt writing but from a more personal, emotional direction. He's processing real discomfort, not performing an opinion.
+  - _Cross-links_: [How Igor CHOPs](/how-igor-chops), [CHOP](/chop), [Productive](/productive)
+  - _Tags_: #ai-practice #craft #practitioner #flow
+  - _Reaction_: Read — liked it.
+
+- **[Agent-Native Engineering](https://www.generalintelligencecompany.com/writing/agent-native-engineering)** — Andrew Pignanelli on restructuring orgs around AI agents as primary ICs
+  - _Summary_: Engineers must shift from writing code to managing AI agents that write code — humans as tech leads directing parallel agent work streams. Competitive advantage comes from maximizing agent throughput, investing in automated quality controls (tests, linters, claude.md files), and reorienting engineers toward product thinking. Organizations that don't adopt this model "will cease to exist."
+  - _Why Randy thinks I'd like it_: Core thesis maps to your /ai-native-manager post — agents as ICs, humans as managers. But the tone is prescriptive and hyperbolic, more CEO manifesto than practitioner reflection. Practical bits (task tiers, sync/async workflows) are useful but not novel if you've been living this through CHOP. Risk: familiar territory dressed up as urgency.
+  - _Cross-links_: [AI Native Manager](/ai-native-manager), [CHOP](/chop), [How Igor CHOPs](/how-igor-chops), [AI Developer](/ai-developer)
+  - _Tags_: #ai-practice #management #org-design
+  - _Reaction_:
+
+- **[CEOs Don't Steer](https://www.ribbonfarm.com/2017/11/09/ceos-dont-steer/)** — Venkatesh Rao on why executives are orientation locks, not navigators
+  - _Summary_: Effective CEOs don't steer — they serve as "orientation locks," maintaining unwavering momentum in a chosen direction while delegating tactical navigation downward. When genuine reorientation is needed, organizations replace the CEO rather than having them turn the ship, because steering at the top hemorrhages compounding momentum.
+  - _Why Randy thinks I'd like it_: Classic Rao systems thinking — contrarian with substance. The "who steers vs. who locks orientation" model is directly relevant to AI-native management and org restructuring. Binary thinking as a feature, not a bug, is genuinely novel framing.
+  - _Cross-links_: [Manager Book](/manager-book), [AI Native Manager](/ai-native-manager), [Strategy](/strategy)
+  - _Tags_: #systems-thinking #management #contrarian #leadership
+  - _Reaction_:
+
 ### 2026-03-16
 
 - **Tips for getting coding agents to write good Python tests** — (link TBD, from OmniFocus inbox Jan 29)
