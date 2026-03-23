@@ -12,6 +12,13 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Week of 2026-03-16](#week-of-2026-03-16)
+  - [Claws: The Next Layer of AI (new post!)](#claws-the-next-layer-of-ai-new-post)
+  - [AI Journal: Telegram, Eggs, and Feedback Loops](#ai-journal-telegram-eggs-and-feedback-loops)
+  - [AI Native Manager: "In Distribution"](#ai-native-manager-in-distribution)
+  - [Content Updates](#content-updates)
+  - [Infrastructure & Tooling](#infrastructure--tooling-2)
+  - [Other Projects (March)](#other-projects-march-1)
 - [Week of 2026-03-09](#week-of-2026-03-09)
   - [AI Second Brain (new post!)](#ai-second-brain-new-post)
   - [Side Quests (new post!)](#side-quests-new-post)
@@ -37,6 +44,71 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
   - [Other Projects](#other-projects)
     <!-- vim-markdown-toc-end -->
     <!-- prettier-ignore-end -->
+
+## Week of 2026-03-16
+
+_24 commits this week (blog) + cross-repo activity_
+
+### Claws: The Next Layer of AI (new post!)
+
+New post on the emerging "claw" concept — persistent, autonomous AI entities that live beyond a single session ([blog](/claw)):
+
+- **Karpathy's Onion** — Six-layer progression: LLM → Agent → Claw → Multi-claw → Orchestration → Meta-optimization. "The LLM part is now taken for granted. The agent part is now taken for granted. Now the claw-like entities are taken for granted." Each layer opens a new infinity; everything that doesn't work is a "skill issue." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3168e97f9)
+- **The Lethal Trifecta** — Simon Willison's security framework: access to private data + exposure to untrusted content + ability to communicate externally. Any two are manageable; all three are a minefield. Real incidents: an autonomous agent published a hit piece on a matplotlib maintainer, Meta's AI safety director's inbox got speedrun-deleted during context compaction, and 2,419 malicious skills purged from ClawHub (1,184 actively draining crypto wallets). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3168e97f9)
+- **My Three Claws** — Larry (life coach), Wally (work, undisclosed), Tony (Tesla with a voice persona). Currently at layer 3-4 on Karpathy's onion: personality and memory but not yet truly autonomous. David de Winter's metaphor: "It's like training Pokémon — you carry around your team, each one specialized, and they grow as you invest time." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3168e97f9)
+
+### AI Journal: Telegram, Eggs, and Feedback Loops
+
+Three new entries covering disposable code, human contribution in AI workflows, and AI-driven tool improvement ([blog](/ai-journal#2026-03-21)):
+
+- **Telegram Bot: When the Platform Eats Your Side Project** — Built a custom Telegram bot to talk to Claude from phone. Then Anthropic shipped an official Telegram channel plugin and Igor happily threw it away. "When vibe coding makes building cheap, attachment to code dissolves." Then layered intelligence on top of the official plugin: Parakeet TDT for STT (0.35s transcription), Kokoro-82M for TTS, SQLite message logging via hooks, and weather nudges via Open-Meteo that ping on sunny transitions. "Start with the platform's transport, then layer intelligence on top." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8e1881824) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/acf20b7ae)
+- **The Egg Theory** — In the 1950s, Betty Crocker's instant cake mix flopped because it was too easy. Adding an egg — a token human contribution — made people feel like bakers instead of package-openers. Same applies to AI: when AI does everything, nobody feels ownership. Best AI workflows intentionally leave meaningful "eggs": architecture decisions, genuine code review, prompt refinement, creative direction. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d54b734db)
+- **AI Filing Feature Requests** — During a weekly report, Claude hit bad HealthKit data from context-grabber (13.8h sleep, unreliable exercise minutes). Instead of working around it, Claude filed four structured issues on the source repo, then continued with what it could trust. "The most powerful thing an AI can do isn't work around bad data — it's improve the source." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f3ab9e75f)
+
+### AI Native Manager: "In Distribution"
+
+New glossary entry on the ML concept applied to tooling decisions ([blog](/ai-native-manager#in-distribution)):
+
+- **In Distribution** — Tools in the model's training data (Git, Postgres) have zero awareness cost. Your team's internal CLI? Completely out of distribution — you pay the awareness tax every time. This changes how EMs evaluate tooling: "will agents already know how to use it?" is now a legitimate engineering criterion. Connects to Yegge's Awareness lever from Software Survival 3.0. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/56667aaef)
+
+### Content Updates
+
+- **Raccoon History** — Added image grids showing all three eras of raccoon mascot illustrations (DALL-E v1, v2 eulogy pack, v3 AI Native EM series). Refreshed stale images, converted all `.png` references to `.webp`. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/476455361) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/434bc07a1)
+- **Joy** — Added "What Happened to the Symbol of American Clowns" documentary (David Arquette, John C Reilly, Steve-O) to Role Models section. "It's actually a pretty selfish job because what I get out of it — it makes me feel good to make people feel good." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4a32b67ae)
+- **Explainers** — Added Karpathy's US Job Market Visualizer: interactive treemap of 342 occupations with toggleable metrics (outlook, pay, education, AI exposure). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f22e0397a)
+
+### Infrastructure & Tooling
+
+- **Jekyll Ruby 4.0+ fix** — Monkey-patched `pathutil` keyword arg incompatibility via TracePoint-based lazy prepend. Ruby 4.0 removed implicit Hash-to-kwargs conversion; this intercepts `require "pathutil"` and patches IO methods. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/eb000683a)
+- **Show-your-work skill** — New skill that screenshots changed blog pages, hosts images on GitHub gist, and produces PR-ready markdown. Auto-detects changed pages from git diff. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/cacd5a0d5)
+- **AI feed upgrade** — Podcast/YouTube URLs now route to transcript processor with quality hierarchy (human > manual > ASR). Added preferred creators list (Karpathy, Lex Fridman, Steinberger). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3168e97f9)
+
+### Other Projects (March)
+
+**[context-grabber](https://github.com/idvorkin/context-grabber)** (iOS health data export)
+
+- Box plot statistics (p5/p25/p50/p75/p95) for weekly health metrics with horizontal box plot visualization [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/2f8aaa2a1)
+- Configurable known places with radius-based GPS matching + JSON import for bulk setup [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/2f8aaa2a1)
+- Sleep source breakdown: per-source (Apple Watch, AutoSleep) bedtime/wakeTime and stage hours (Deep, Core, REM, Awake) replacing raw sample export [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/2f8aaa2a1)
+
+**[tg-bot](https://github.com/idvorkin/tg-bot)** (Telegram bot → deprecated)
+
+- Added deprecation notice — replaced by official Claude Code Telegram channel plugin [<i class="fa fa-github"></i>](https://github.com/idvorkin/tg-bot/commit/56f56cbe7)
+
+**[activation-energy-game](https://github.com/idvorkin-ai-tools/activation-energy-game)** (interactive explainer, Nicky Case-inspired)
+
+- Morning choice mini-game: alarm intro animation, beat transitions, drag interaction with spring-back, productive/go path choices, responsive canvas layout for mobile [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/activation-energy-game/commit/e2022d2d9)
+- Happy raccoon favicon + web app manifest, header tap to restart [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/activation-energy-game/commit/cfa04c736)
+
+**[Settings](https://github.com/idvorkin/Settings)** (dotfiles & tools)
+
+- Browser-free OAuth fallback for headless servers — prints URL, user authorizes in any browser, pastes redirect URL back [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/844efcc87)
+- Fixed Kindle notebook email detection (broadened Gmail query) and Pydantic deprecation migration [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/036d9f8fc)
+
+**[chop-conventions](https://github.com/idvorkin/chop-conventions)** (CHOP workflow docs)
+
+- Rewrote up-to-date skill for token efficiency (226 → 119 lines), added remote hygiene check [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/76fa478cb)
+- New clock and background-usage skills with thin dispatcher pattern [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/3e1e966cd)
 
 ## Week of 2026-03-09
 
