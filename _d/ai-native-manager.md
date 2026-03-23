@@ -14,6 +14,8 @@ imagefeature: /images/raccoon-ai-native-em-plates.webp
 
 What does it mean to be an engineering manager when AI is rewriting every assumption you have about software, teams, and your own role? I don't know yet. Nobody does. But I'm figuring it out in real time, and these are my notes from the chaos.
 
+{% include ai-slop.html percent="50" %}
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
@@ -54,8 +56,6 @@ What does it mean to be an engineering manager when AI is rewriting every assump
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
-
-{% include ai-slop.html percent="50" %}
 
 {% include alert.html content="These are my personal opinions, not those of any employer, past or present. No one knows the future, especially me." style="warning" %}
 
