@@ -562,7 +562,7 @@
         },
         "/activation": {
             "description": "Doing activities requires will power, addictions and procrastination require negative will power, while positive habits, especially new ones require high will power. Here’s a model for these things.\n\n",
-            "doc_size": 27000,
+            "doc_size": 28000,
             "file_path": "_site/activation.html",
             "incoming_links": [
                 "/addiction",
@@ -577,15 +577,15 @@
                 "/spiritual-health",
                 "/timeoff-2021-12"
             ],
-            "last_modified": "2025-12-07T02:26:29+00:00",
+            "last_modified": "2026-03-23T01:49:36.924476+00:00",
             "markdown_path": "_d/activation.md",
             "outgoing_links": [
                 "/addiction",
                 "/blueprint",
-                "/d/habits",
-                "/d/resistance",
                 "/gap-year-igor",
+                "/habits",
                 "/insomnia",
+                "/resistance",
                 "/timeoff"
             ],
             "redirect_url": "",
@@ -1712,10 +1712,10 @@
         },
         "/changelog": {
             "description": "A weekly summary of what changed on this blog and across my GitHub projects. Useful for returning readers who want to catch up on new content and updates.\n\n",
-            "doc_size": 44000,
+            "doc_size": 55000,
             "file_path": "_site/changelog.html",
             "incoming_links": [],
-            "last_modified": "2026-03-16T16:18:17.419513+00:00",
+            "last_modified": "2026-03-23T01:49:36.924476+00:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
                 "/activation",
@@ -1724,13 +1724,14 @@
                 "/ai-journal",
                 "/ai-native-manager",
                 "/ai-second-brain",
+                "/claw",
                 "/how-igor-chops",
                 "/product",
                 "/recent",
                 "/shoulder-pain",
                 "/side-quests",
                 "/spiritual-health",
-                "/y26"
+                "/y2026"
             ],
             "redirect_url": "",
             "title": "Changelog",
@@ -1873,7 +1874,9 @@
             "description": "You’ve heard of agents — AI that can use tools, browse the web, write code. But in early 2026, something new emerged. Not just smarter agents, but a whole new layer on top of them. Andrej Karpathy calls them “claws” — persistent AI entities that keep working when you’re not looking, remember what they’ve learned, and live on your hardware talking to you through WhatsApp. The term comes from OpenClaw, the open-source project that went from a one-hour prototype to the fastest-growing repository in GitHub history. But “claw” has already outgrown the product — it’s becoming the word for this entire category of AI, the way “xerox” became “photocopy.”\n\n",
             "doc_size": 28000,
             "file_path": "_site/claw.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/changelog"
+            ],
             "last_modified": "2026-03-23T01:14:24.354755+00:00",
             "markdown_path": "_d/claw.md",
             "outgoing_links": [
@@ -2035,7 +2038,6 @@
                 "/happy",
                 "/manager-book",
                 "/negotiate",
-                "/operating-manual",
                 "/psychic-weight",
                 "/regrets",
                 "/shame",
@@ -2213,7 +2215,6 @@
             "doc_size": 21000,
             "file_path": "_site/d/habits.html",
             "incoming_links": [
-                "/activation",
                 "/d/resistance",
                 "/energy-abundance",
                 "/four-healths",
@@ -2222,7 +2223,6 @@
                 "/life-as-business",
                 "/manager-book",
                 "/mind-at-work",
-                "/operating-manual",
                 "/physical-health",
                 "/productive",
                 "/psychic-weight",
@@ -2259,7 +2259,6 @@
             "doc_size": 21000,
             "file_path": "_site/d/resistance.html",
             "incoming_links": [
-                "/activation",
                 "/books-that-defined-me",
                 "/enemy",
                 "/energy",
@@ -4459,7 +4458,7 @@
                 "/greek-orthodox",
                 "/life-as-business"
             ],
-            "last_modified": "2025-10-17T15:54:19-04:00",
+            "last_modified": "2026-03-23T01:49:36.924476+00:00",
             "markdown_path": "_d/operating-manual-2.md",
             "outgoing_links": [
                 "/Immutable-Laws-Of-Hard",
@@ -4467,13 +4466,13 @@
                 "/anxiety",
                 "/bike",
                 "/blueprint",
+                "/compassion",
                 "/covid",
-                "/curious",
-                "/d/habits",
                 "/diet",
                 "/emotional-health",
                 "/eulogy",
                 "/four-healths",
+                "/habits",
                 "/hobby",
                 "/ig66/587",
                 "/magic",
@@ -4484,11 +4483,12 @@
                 "/physical-health",
                 "/process-journal",
                 "/siy",
-                "/sleight-of-mouth",
+                "/some",
                 "/strengths",
                 "/tesla",
                 "/timeoff-2022-07",
-                "/todo_enjoy",
+                "/todo-enjoy",
+                "/tony",
                 "/voices",
                 "/writing"
             ],
@@ -5458,7 +5458,6 @@
             "file_path": "_site/sleight-of-mouth.html",
             "incoming_links": [
                 "/7h-concepts",
-                "/operating-manual",
                 "/timeoff-2022-02",
                 "/words-we-dont-have"
             ],
@@ -6558,7 +6557,6 @@
             "doc_size": 18000,
             "file_path": "_site/todo_enjoy.html",
             "incoming_links": [
-                "/operating-manual",
                 "/psychic-shadows"
             ],
             "last_modified": "2025-12-06T18:03:14-08:00",

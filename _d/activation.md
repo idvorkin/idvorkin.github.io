@@ -15,6 +15,8 @@ Doing activities requires will power, addictions and procrastination require neg
 
 {% include alert.html content="Note: All 'units' of willpower in this post are illustrative and not based on scientific measurement. They're meant to give a sense of relative magnitude and direction." style="info" %}
 
+{% include alert.html content="Try the interactive [Activation Energy Game](https://github.com/idvorkin-ai-tools/activation-energy-game) — a Nicky Case-inspired explainer where you experience activation energy, morning choices, and willpower tradeoffs firsthand." style="success" %}
+
 {% include blob_image_float_right.html src="blog/raccoon-activation.webp" %}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js" integrity="sha512-tMabqarPtykgDtdtSqCL3uLVM0gS1ZkUAVhRFu1vSEFgvB73niFQWJuvviDyBGBH22Lcau4rHB5p2K2T0Xvr6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

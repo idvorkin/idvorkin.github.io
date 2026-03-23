@@ -183,6 +183,8 @@ The gym opens at 5:30, and I try to be there by 6.
 
 ### Morning Kryptonite
 
+{% include alert.html content="Explore these failure modes interactively in the [Activation Energy Game](https://github.com/idvorkin-ai-tools/activation-energy-game) — a Nicky Case-inspired game about morning choices and willpower." style="info" %}
+
 I have three common failure modes in my morning routine:
 
 - Starting my day by sitting in my easy chair drinking my coffee. This mindless activity has me skipping those things that are important to me.
