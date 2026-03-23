@@ -23,7 +23,6 @@ It's [GTD](/gtd) capture meets AI triage. And unlike passive consumption, this p
 ### 2026-03-16
 
 - **Tips for getting coding agents to write good Python tests** — (link TBD, from OmniFocus inbox Jan 29)
-
   - _Tags_: #ai-practice #testing #craft
   - _Reaction_: TBD — queued for reading
 
@@ -117,6 +116,14 @@ _This section is Randy's recommender training data. It evolves as patterns emerg
 4. **Systems thinking** — How parts interact, emergent complexity, unintended consequences. Especially when applied to AI's second-order effects on teams and organizations.
 5. **Real case studies over theory** — One company's actual experience beats ten thought pieces. Show me the receipts.
 6. **Management/leadership in AI era** — How should orgs adapt? What's breaking? What's working?
+
+### Creators I Follow
+
+Podcasts and long-form content from these people get auto-promoted — I almost always want to process their stuff:
+
+- **Andrej Karpathy** — [YouTube](https://www.youtube.com/@AndrejKarpathy), [No Priors appearances](https://podscripts.co). Brilliant practitioner who thinks out loud about where AI is going. His "claw psychosis" framing and agent taxonomy are exactly how I think about this space.
+- **Lex Fridman** — [Podcast](https://lexfridman.com/podcast/). Deep long-form interviews. His site has human-edited transcripts with speaker labels at `lexfridman.com/{guest}-transcript/` which are much higher quality than auto-generated.
+- **Peter Steinberger** — Creator of OpenClaw. Builder who thinks about agent architecture from first principles. His Lex interview is a masterclass in agentic engineering philosophy.
 
 ### Content Attributes I Skip
 

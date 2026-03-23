@@ -33,7 +33,19 @@ Otherwise, treat all arguments as URLs and go to **Phase 1: Triage**.
 
 Process a batch of URLs into the feed.
 
-### Step 0: Extract Links from Newsletters
+### Step 0: Detect Content Type
+
+**For each URL, classify it:**
+
+- **Newsletter/roundup** → Extract links (see below)
+- **YouTube / podcast URL** → Route to `youtube-content-processor` agent for transcript extraction, then return here for triage/ranking
+- **Article/blog post** → Standard triage flow
+
+**YouTube/podcast detection:** URLs matching `youtube.com`, `youtu.be`, `spotify.com/episode`, `podcasts.apple.com`, or any URL Igor identifies as a podcast episode.
+
+When routing to `youtube-content-processor`, the agent will handle transcript quality hierarchy (human-edited > manual subs > auto-generated > cleanup pass). After it returns with the transcript and analysis, continue with Step 2 (Cross-Link) using the extracted insights as the "article" content.
+
+### Step 0b: Extract Links from Newsletters
 
 If a URL points to a newsletter or link roundup (not a single article), fetch it and extract ALL external content links. Present them as a numbered list so Igor can pick which ones to process. Wait for his selection before proceeding.
 
