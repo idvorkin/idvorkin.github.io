@@ -20,6 +20,23 @@ It's [GTD](/gtd) capture meets AI triage. And unlike passive consumption, this p
 
 ## Feed
 
+### 2026-03-24
+
+- **[Training the Future with Mark Russinovich](https://www.fafo.fm/training-the-future-with-mark-russinovich/)** — FAFO podcast episode with Azure CTO Mark Russinovich on training the next generation of engineers in the AI era
+  - _Summary_: Mark Russinovich (Azure CTO, Sysinternals creator) discusses how AI is reshaping how we train future engineers — the economics of hiring juniors, preceptorship programs, and what "training the future" means when AI can do the entry-level work.
+  - _Why Randy thinks I'd like it_: Directly relevant to your AI-native manager thinking and the "should I become an EM" question. Russinovich is a legendary systems engineer turned CTO.
+  - _Cross-links_: [AI Native Manager](/ai-native-manager), [Manager Book](/manager-book)
+  - _Tags_: #ai #management #training #microsoft #podcast
+  - _Reaction_: TBD — queued for listening
+  - _Note_: URL returned 404 at time of adding — may not be published yet. Check back.
+
+- **[The Manifold of Desire](https://magicmag.ai/the-manifold-of-desire/)** — Maggie Zhuang (AI Research PM at Meta) on how recommender systems evolved through four architectural acts: connection, context, time, and meaning
+  - _Summary_: RecSys map "the manifold of the human psyche" — a fundamentally different landscape than what LLMs cover. Next-gen ranking must integrate all preference dimensions (behavior, context, temporal momentum, semantic understanding) simultaneously rather than choosing between competing architectures.
+  - _Why Randy thinks I'd like it_: Written by a Meta colleague building ranking for Reels/Feed. Connects AI architecture evolution to human psychology. Relevant to your work on AI-native tooling and understanding how AI systems model human preference.
+  - _Cross-links_: [AI Native Manager](/ai-native-manager), [Recommender Systems](/recommender)
+  - _Tags_: #ai #recommender-systems #architecture #meta #product-strategy
+  - _Reaction_: TBD — queued for reading
+
 ### 2026-03-23
 
 - **[Adapting to AI: Reflections on Productivity](https://blog.colinbreck.com/adapting-to-ai-reflections-on-productivity/)** — Colin Breck on the hidden costs of AI-amplified output
