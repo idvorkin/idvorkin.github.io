@@ -917,22 +917,22 @@
         },
         "/ai-hiring": {
             "description": "Like everything else in the new AI world, hiring is gonna change. I don’t know where we’ll land, but I’m collecting thoughts as this plays out. The industry is all over the map - some companies now require AI use in interviews, others ban it entirely, most are somewhere in between trying to figure it out. How do we assess working with AI? What new behaviors/skills should we be testing for? I don’t have answers, just observations.\n\n",
-            "doc_size": 20000,
+            "doc_size": 24000,
             "file_path": "_site/ai-hiring.html",
             "incoming_links": [
                 "/ai",
                 "/ai-feed",
                 "/ai-native-manager"
             ],
-            "last_modified": "2026-01-24T16:52:54+00:00",
+            "last_modified": "2026-03-28T15:59:45.181151+00:00",
             "markdown_path": "_d/ai-hiring.md",
             "outgoing_links": [
                 "/agency",
                 "/ai-developer",
+                "/ai-native-manager",
                 "/amazon",
                 "/chop",
-                "/d/management_interviews",
-                "/management-interviews"
+                "/manager-book"
             ],
             "redirect_url": "",
             "title": "AI Hiring: How Should Hiring Change in an AI World?",
@@ -995,6 +995,7 @@
             "file_path": "_site/ai-native-manager.html",
             "incoming_links": [
                 "/ai-feed",
+                "/ai-hiring",
                 "/ai-second-brain",
                 "/changelog",
                 "/chow",
@@ -3928,6 +3929,7 @@
             "file_path": "_site/manager-book.html",
             "incoming_links": [
                 "/ai-feed",
+                "/ai-hiring",
                 "/ai-native-manager",
                 "/amazon",
                 "/being-a-great-manager",
