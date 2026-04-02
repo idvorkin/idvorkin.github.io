@@ -18,6 +18,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-04-01](#2026-04-01)
+    - [The Winchester Mystery House of Software: When Code Gets Too Cheap to Care About](#the-winchester-mystery-house-of-software-when-code-gets-too-cheap-to-care-about)
   - [2026-03-21](#2026-03-21)
     - [Telegram Bot: When the Platform Eats Your Side Project (And That's Great)](#telegram-bot-when-the-platform-eats-your-side-project-and-thats-great)
     - [The Egg Theory: Why AI Needs to Leave Room for Humans](#the-egg-theory-why-ai-needs-to-leave-room-for-humans)
@@ -236,6 +238,17 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2026-04-01
+
+#### The Winchester Mystery House of Software: When Code Gets Too Cheap to Care About
+
+- **TOP Takeaway**: AI coding agents have made implementation so cheap that we're entering a third era of software development — beyond the Cathedral (closed-source) and the Bazaar (open-source). Welcome to the Winchester Mystery House: sprawling, personal, idiosyncratic tools built by individuals for themselves, without formal planning or external coordination.
+- **The article**: Drew Breunig's ["The Cathedral, the Bazaar, and the Winchester Mystery House"](https://www.dbreunig.com/2026/03/26/winchester-mystery-house.html) extends Eric Raymond's classic framework with a new metaphor. Sarah Winchester built a 500-room mansion with practical innovations alongside architectural oddities — no master plan, just continuous building. That's what AI-assisted personal tooling looks like now.
+- **The numbers that matter**: Coding agents are generating ~1,000 lines per commit, roughly 100x faster than human programmers. Implementation is cheap. But feedback mechanisms — code review, testing, user validation — haven't sped up at all. The mismatch is the story.
+- **What this means for open source**: The bazaar is drowning. AI-generated PRs flood repos with contributions that technically work but overwhelm maintainers. Quality signals disappear in noise. Attention becomes the scarce resource, not code.
+- **Why this resonates**: I'm literally living the Winchester Mystery House pattern with [Larry](/mortality-software) — sprawling, personal, built for an audience of one. Voice transcription, weather nudges, Telegram bridges, journal processing — 500 rooms of idiosyncratic tooling that only makes sense to me. And that's fine. When code is cheap, personal tools don't need to be general.
+- **The tension**: The article frames this neutrally, but there's a real risk in the Winchester pattern — the [enabling environment trap](/ai-journal#the-egg-theory-why-ai-needs-to-leave-room-for-humans). Building tools can substitute for using them. The mansion grows, but does anyone live in it?
 
 ### 2026-03-21
 
