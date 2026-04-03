@@ -129,6 +129,7 @@ For content/visual PRs, include a rendered screenshot in the PR description. Pro
 - YOU MUST STOP and ask for clarification rather than making assumptions
 - Use your journal to record important facts before you forget them
 - We discuss architectural decisions together before implementation
+- When Igor says **"side edit"**, it means he wants to manually edit the file being discussed. Open it with `rmux_helper side-edit <path>` and wait for him to finish before continuing.
 
 ## Skills Execution
 
