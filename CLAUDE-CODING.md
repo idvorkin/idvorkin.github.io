@@ -186,15 +186,34 @@ For full beads documentation, run `bd --help` or see the beads skill.
 
 Use `repo_tmp/` directory (gitignored) instead of `/tmp/`.
 
-### Opening Files in Neovim
+### Opening Files for Review
+
+Use `rmux_helper side-edit` to open files in a side nvim pane (reuses the same pane across calls):
 
 ```bash
-tmux split-window -h -l 66% "nvim /path/to/file"
-tmux split-window -h -l 66% "nvim +42 /path/to/file"  # at line number
+rmux_helper side-edit /path/to/file
 ```
 
 ### Clipboard Access
 
-- Check clipboard: `osascript -e 'clipboard info'`
-- Text content: `osascript -e 'the clipboard as text'`
+- Check clipboard: `osascript -e 'clipboard info'` (macOS) or `xclip -selection clipboard -o` (Linux)
+- Text content: `osascript -e 'the clipboard as text'` (macOS) or `xclip -selection clipboard -o` (Linux)
 - Image content: Use `image-content-analyzer` agent
+
+### Blob Repo (idvorkin/blob)
+
+Images for blog posts live in `~/gits/blob/blog/`. Same fork workflow as the main repo:
+
+```bash
+cd ~/gits/blob
+git add blog/image.webp && git commit -m "Add image"
+git push fork master
+gh pr create --repo idvorkin/blob --title "Add image"
+```
+
+### Background Removal for Raccoon Images
+
+```bash
+uvx --with "rembg[cpu,cli]" rembg i input.webp output.png
+cwebp -q 85 output.png -o output.webp  # convert back to webp
+```
