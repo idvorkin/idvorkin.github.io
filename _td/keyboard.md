@@ -5,7 +5,7 @@ permalink: /keyboard
 redirect_from:
   - /keyboards
   - /key-remap
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/dual_keyboard.jpg
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-split-keyboard.webp
 ---
 
 I use split mechanical keyboards because I can't [externally rotate my shoulders](/shoulder-pain) — I need keyboards 3+ feet apart or I'm in pain within hours. This post covers everything: the hardware I use, key remapping with Karabiner, and programming the RK Royal Kludge RK-S70 from macOS (which requires a Windows VM because RK's software is Windows-only).
