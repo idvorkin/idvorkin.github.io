@@ -8,9 +8,9 @@ redirect_from:
 imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-split-keyboard.webp
 ---
 
-I use split mechanical keyboards because I can't [externally rotate my shoulders](/shoulder-pain) — I need keyboards 3+ feet apart or I'm in pain within hours. This post covers everything: the hardware I use, key remapping with Karabiner, and programming the RK Royal Kludge RK-S70 from macOS (which requires a Windows VM because RK's software is Windows-only).
-
 {%include blob_image_float_right.html src="blog/raccoon-split-keyboard.webp" alt="Raccoon typing on two split RGB mechanical keyboards spread wide apart" %}
+
+I use split mechanical keyboards because I can't [externally rotate my shoulders](/shoulder-pain) — I need keyboards 3+ feet apart or I'm in pain within hours. This post covers everything: the hardware I use, key remapping with Karabiner, and programming the RK Royal Kludge RK-S70 from macOS (which requires a Windows VM because RK's software is Windows-only).
 
 Keyboards can be a huge rabbit hole. If you just want a nice ergo keyboard for your desk, get the [Logitech K860](#recommendation-for-most-people). If you just want one for your bag, get the [iClever BK06](#coffee-shop-dual-folding-bluetooth-keyboards). Everything below is the rabbit hole.
 
