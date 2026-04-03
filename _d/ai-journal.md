@@ -4,7 +4,7 @@ title: "Igor's AI Journal"
 permalink: /ai-journal
 ---
 
-A journal of random explorations in AI. Keeping track of them so I don't get super lost
+A journal of random explorations in AI. Keeping track of them so I don't get lost
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
