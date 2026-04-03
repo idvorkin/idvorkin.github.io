@@ -84,7 +84,7 @@ My personal plugin:
 - Menubar - Show next meeting in the menu bar
 - mpv+iina - Video Players
 - 1password - Awesome Password Manager
-- [Karabiner Elements](https://karabiner-elements.pqrs.org/) - [Make my keyboard perfect](https://github.com/idvorkin/settings/blob/313acb3b163ec3bb3dd89ac0c970031ffbf8af8c/mac/karabiner.json?plain=1#L1)
+- [Karabiner Elements](https://karabiner-elements.pqrs.org/) - [Make my keyboard perfect](/keyboard)
   - Even does crazy stuff like let me use 2 keyboards at once, chording across keyboards!#$!
 - [Screencasting specific](/screencast)
 
