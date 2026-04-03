@@ -28,7 +28,7 @@ jobs:
 
       - run: bundle exec jekyll build --config _config.yml,_config_ci.yml
 
-      - uses: astral-sh/setup-uv@v8
+      - uses: astral-sh/setup-uv@v7
 
       - name: Update backlinks and push
         run: |
