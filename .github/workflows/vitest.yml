@@ -52,7 +52,7 @@ jobs:
         run: npm ci
 
       - name: Install just
-        uses: extractions/setup-just@v1
+        uses: extractions/setup-just@v3
 
       - name: Run Vitest tests and generate badge data
         id: vitest
@@ -128,7 +128,7 @@ jobs:
 
       - name: Upload test coverage as artifact
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: vitest-coverage
           path: coverage/
@@ -136,7 +136,7 @@ jobs:
 
       - name: Upload verbose test output as artifact
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: vitest-verbose-output
           path: test-results/vitest/test-verbose-output.txt
