@@ -202,18 +202,18 @@ rmux_helper side-edit /path/to/file
 
 ### Blob Repo (idvorkin/blob)
 
-Images for blog posts live in `~/gits/blob/blog/`. Same fork workflow as the main repo:
+Images for blog posts live in `~/rare_gits/blob/blog/`. Same fork workflow as the main repo:
 
 ```bash
-cd ~/gits/blob
+cd ~/rare_gits/blob
 git add blog/image.webp && git commit -m "Add image"
 git push fork master
 gh pr create --repo idvorkin/blob --title "Add image"
 ```
 
-### Background Removal for Raccoon Images
+### Background Removal
 
 ```bash
-uvx --with "rembg[cpu,cli]" rembg i input.webp output.png
+uvx --from "rembg[cpu,cli]" rembg i input.webp output.png
 cwebp -q 85 output.png -o output.webp  # convert back to webp
 ```
