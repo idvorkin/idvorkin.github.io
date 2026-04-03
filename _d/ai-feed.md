@@ -20,6 +20,15 @@ It's [GTD](/gtd) capture meets AI triage. And unlike passive consumption, this p
 
 ## Feed
 
+### 2026-03-26
+
+- **[Thoughts on Slowing the Fuck Down](https://mariozechner.at/posts/2026-03-25-thoughts-on-slowing-the-fuck-down/)** — Mario Zechner on why unsupervised AI coding agents lead to compounding errors and unmaintainable codebases
+  - _Summary_: Agents lack learning mechanisms and create bottleneck-free code generation, allowing small errors to compound — "you don't even know that all the innocent booboos have formed a monster of a codebase." Advocates human-led development where agents handle scoped tasks while humans retain architectural control.
+  - _Why Randy thinks I'd like it_: Directly relevant to your AI-native manager thinking and CHOP work. You're building tools that keep humans in the loop — this validates that approach. Also connects to "cognitive debt" from the Mar 1 feed entry.
+  - _Cross-links_: [AI Native Manager](/ai-native-manager), [CHOP](/chop), [Explainers](/explainers)
+  - _Tags_: #ai-coding-agents #software-quality #craft #human-agency
+  - _Reaction_: TBD — queued for reading
+
 ### 2026-03-23
 
 - **[Adapting to AI: Reflections on Productivity](https://blog.colinbreck.com/adapting-to-ai-reflections-on-productivity/)** — Colin Breck on the hidden costs of AI-amplified output
