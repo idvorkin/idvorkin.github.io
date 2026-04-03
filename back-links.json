@@ -71,6 +71,7 @@
         "/chop-igor": "/how-igor-chops",
         "/chot": "/chow",
         "/classact": "/class-act",
+        "/claws": "/claw",
         "/coach": "/coaching",
         "/cocaine": "/mania",
         "/cockpit": "/ai-cockpit",
@@ -168,6 +169,8 @@
         "/jupyter": "/pandas",
         "/kb": "/kettlebell",
         "/kettlebells": "/kettlebell",
+        "/key-remap": "/keyboard",
+        "/keyboards": "/keyboard",
         "/language-limits": "/words-we-dont-have",
         "/larry-the-life-coach": "/larry",
         "/life-chapters": "/chapters",
@@ -212,6 +215,7 @@
         "/objective": "/goals",
         "/okr": "/goals",
         "/on-being-mortal": "/death",
+        "/openclaw": "/claw",
         "/orthodox": "/greek-orthodox",
         "/overwork": "/overload",
         "/pain": "/mental-pain",
@@ -820,6 +824,7 @@
                 "/ai-native-manager",
                 "/ai-second-brain",
                 "/changelog",
+                "/claw",
                 "/how-igor-chops"
             ],
             "last_modified": "2026-02-14T10:44:54-08:00",
@@ -880,7 +885,7 @@
         },
         "/ai-feed": {
             "description": "Pretty common: I get a bag of links — a newsletter, a Twitter thread, a friend’s Slack message. I open them all in tabs, skim, close most, and forget. Maybe one in ten sticks. The rest vanish into the consumption void.\n\n",
-            "doc_size": 31000,
+            "doc_size": 35000,
             "file_path": "_site/ai-feed.html",
             "incoming_links": [
                 "/ai-second-brain"
@@ -904,7 +909,9 @@
                 "/manager-book",
                 "/pet-projects",
                 "/produce-consume",
-                "/software-leadership-roles"
+                "/productive",
+                "/software-leadership-roles",
+                "/strategy"
             ],
             "redirect_url": "",
             "title": "AI Feed — Curated Reading Through Claude",
@@ -912,7 +919,7 @@
         },
         "/ai-hiring": {
             "description": "Like everything else in the new AI world, hiring is gonna change. I don’t know where we’ll land, but I’m collecting thoughts as this plays out. The industry is all over the map - some companies now require AI use in interviews, others ban it entirely, most are somewhere in between trying to figure it out. How do we assess working with AI? What new behaviors/skills should we be testing for? I don’t have answers, just observations.\n\n",
-            "doc_size": 20000,
+            "doc_size": 24000,
             "file_path": "_site/ai-hiring.html",
             "incoming_links": [
                 "/ai",
@@ -924,10 +931,10 @@
             "outgoing_links": [
                 "/agency",
                 "/ai-developer",
+                "/ai-native-manager",
                 "/amazon",
                 "/chop",
-                "/d/management_interviews",
-                "/management-interviews"
+                "/manager-book"
             ],
             "redirect_url": "",
             "title": "AI Hiring: How Should Hiring Change in an AI World?",
@@ -950,7 +957,7 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get super lost\n\n",
-            "doc_size": 126000,
+            "doc_size": 133000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai",
@@ -960,6 +967,7 @@
                 "/ai-second-brain",
                 "/changelog",
                 "/chop",
+                "/claw",
                 "/walking-with-god",
                 "/y25"
             ],
@@ -975,7 +983,9 @@
                 "/gpt",
                 "/how-igor-chops",
                 "/hyper-personal",
-                "/mental-pain"
+                "/mental-pain",
+                "/mortality-software",
+                "/parkinson"
             ],
             "redirect_url": "",
             "title": "Igor's AI Journal",
@@ -983,16 +993,18 @@
         },
         "/ai-native-manager": {
             "description": "What does it mean to be an engineering manager when AI is rewriting every assumption you have about software, teams, and your own role? I don’t know yet. Nobody does. But I’m figuring it out in real time, and these are my notes from the chaos.\n\n",
-            "doc_size": 52000,
+            "doc_size": 54000,
             "file_path": "_site/ai-native-manager.html",
             "incoming_links": [
                 "/ai-feed",
+                "/ai-hiring",
                 "/ai-second-brain",
                 "/changelog",
                 "/chow",
                 "/explainers",
                 "/manager-book",
-                "/pet-projects"
+                "/pet-projects",
+                "/raccoon-history"
             ],
             "last_modified": "2026-03-22T19:07:49-07:00",
             "markdown_path": "_d/ai-native-manager.md",
@@ -1048,6 +1060,7 @@
             "incoming_links": [
                 "/ai-native-manager",
                 "/changelog",
+                "/claw",
                 "/hyper-personal"
             ],
             "last_modified": "2026-03-14T16:03:56-07:00",
@@ -1351,7 +1364,7 @@
         },
         "/balloon": {
             "description": "Want to plaster a huge smile on someone’s face with 10 cents of material and 20 seconds of work? Make them a balloon! In 2022, I discovered ballooning, and have used it in my joy-delivering arsenal ever since.\n\n",
-            "doc_size": 22000,
+            "doc_size": 21000,
             "file_path": "_site/balloon.html",
             "incoming_links": [
                 "/eulogy",
@@ -1385,7 +1398,7 @@
         },
         "/be-proactive": {
             "description": "I choose ‘.’ I am responsible for my own life ‘.’ My behavior is a function of my decisions, not my conditions ‘.’ I can subordinate feelings to values ‘.’ I have the initiative and the responsibility to make things happen. These are my insights from 7 habits Chapter 1.\n\n",
-            "doc_size": 23000,
+            "doc_size": 22000,
             "file_path": "_site/be-proactive.html",
             "incoming_links": [
                 "/7-habits",
@@ -1523,7 +1536,7 @@
         },
         "/books-that-defined-me": {
             "description": "Books allow great thoughts to enter our mind and mold us into who we want to become. These are the books that are molding me.\n\n",
-            "doc_size": 17000,
+            "doc_size": 16000,
             "file_path": "_site/books-that-defined-me.html",
             "incoming_links": [
                 "/being-a-great-manager",
@@ -1676,7 +1689,8 @@
             "doc_size": 23000,
             "file_path": "_site/caring.html",
             "incoming_links": [
-                "/depression"
+                "/depression",
+                "/raccoon-history"
             ],
             "last_modified": "2025-11-25T14:36:06-08:00",
             "markdown_path": "_d/caring.md",
@@ -1703,7 +1717,7 @@
         },
         "/changelog": {
             "description": "A weekly summary of what changed on this blog and across my GitHub projects. Useful for returning readers who want to catch up on new content and updates.\n\n",
-            "doc_size": 44000,
+            "doc_size": 55000,
             "file_path": "_site/changelog.html",
             "incoming_links": [],
             "last_modified": "2026-03-22T19:05:35-07:00",
@@ -1715,6 +1729,7 @@
                 "/ai-journal",
                 "/ai-native-manager",
                 "/ai-second-brain",
+                "/claw",
                 "/how-igor-chops",
                 "/product",
                 "/recent",
@@ -1859,6 +1874,26 @@
             "redirect_url": "",
             "title": "Be a class act",
             "url": "/class-act"
+        },
+        "/claw": {
+            "description": "You’ve heard of agents — AI that can use tools, browse the web, write code. But in early 2026, something new emerged. Not just smarter agents, but a whole new layer on top of them. Andrej Karpathy calls them “claws” — persistent AI entities that keep working when you’re not looking, remember what they’ve learned, and live on your hardware talking to you through WhatsApp. The term comes from OpenClaw, the open-source project that went from a one-hour prototype to the fastest-growing repository in GitHub history. But “claw” has already outgrown the product — it’s becoming the word for this entire category of AI, the way “xerox” became “photocopy.”\n\n",
+            "doc_size": 29000,
+            "file_path": "_site/claw.html",
+            "incoming_links": [
+                "/changelog"
+            ],
+            "last_modified": "2026-03-22T18:15:50-07:00",
+            "markdown_path": "_d/claw.md",
+            "outgoing_links": [
+                "/ai-cockpit",
+                "/ai-journal",
+                "/ai-second-brain",
+                "/larry",
+                "/tesla"
+            ],
+            "redirect_url": "",
+            "title": "Claws: The Next Layer of AI",
+            "url": "/claw"
         },
         "/coaching": {
             "description": "Coaching is like midwifery. A midwife can not give birth to the baby, she facilitates the birth. Similarly, a coach can not give a solution, she must give birth to the insight from within the coachee. Coaching is asking questions, guiding, and facilitating understanding, and this post collects my studies on the topic.\n\n",
@@ -2217,9 +2252,7 @@
             "description": "FACEBOOK MANAGEMENT INTERVIEWING 101\n\n",
             "doc_size": 34000,
             "file_path": "_site/d/management_interviews.html",
-            "incoming_links": [
-                "/ai-hiring"
-            ],
+            "incoming_links": [],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/management_interviews.md",
             "outgoing_links": [],
@@ -2328,7 +2361,7 @@
         },
         "/debug": {
             "description": "Igor's Blog",
-            "doc_size": 24000,
+            "doc_size": 23000,
             "file_path": "_site/debug.html",
             "incoming_links": [],
             "last_modified": "2025-03-16T16:15:36+00:00",
@@ -2768,6 +2801,7 @@
                 "/irl",
                 "/joy",
                 "/operating-manual",
+                "/raccoon-history",
                 "/retire",
                 "/spiritual-health",
                 "/timeoff",
@@ -2862,7 +2896,7 @@
         },
         "/first-things-first": {
             "description": "The key to effective management, is allocating energy through the lens of importance rather than urgency. E.g, ask yourself what one thing could you do that if you did on a regular basis, would make a tremendous positive difference in your life? Lemme guess, it’s important, but not urgent so you’re not doing it. These are my insights based on the 7 habits Chapter 3.\n\n",
-            "doc_size": 26000,
+            "doc_size": 25000,
             "file_path": "_site/first-things-first.html",
             "incoming_links": [
                 "/4dx",
@@ -3237,6 +3271,7 @@
             "doc_size": 32000,
             "file_path": "_site/greek-orthodox.html",
             "incoming_links": [
+                "/raccoon-history",
                 "/religion"
             ],
             "last_modified": "2026-03-01T14:23:50-08:00",
@@ -3577,7 +3612,7 @@
         },
         "/irl": {
             "description": "I started writing a technical blog to help me remember the many things I explore. One day, I realized I’ve got a real life too. Here’s a place I can remember the many things I explore IRL (In real Life)\n\n",
-            "doc_size": 101000,
+            "doc_size": 90000,
             "file_path": "_site/irl.html",
             "incoming_links": [
                 "/physical-health",
@@ -3650,7 +3685,7 @@
         },
         "/joy": {
             "description": "If you could have one superpower, what would it be? At 46, you’d think I’d have a quick answer, but the usual ideas—flying, invisibility, stopping time—felt childish. Probably the setting: a circle of 9-17-year-olds, breaking the ice, sharing their wished-for superpowers. As my mind scrambled, a mild panic set in. Nothing surfaced—until a bit of my eulogy came to me: Igor lived to see eyes go wide and mouths gape with wonder. He loved when strangers were drawn in against their objections, when a kid in meltdown, or an adult weighed down by life, forgot their troubles. Relief washed over me, I knew my answer. The super power I wished for:  bringing joy to others.\n\n",
-            "doc_size": 32000,
+            "doc_size": 33000,
             "file_path": "_site/joy.html",
             "incoming_links": [
                 "/affirmations",
@@ -3720,6 +3755,23 @@
             "title": "Kettlebells - A rock with a handle",
             "url": "/kettlebell"
         },
+        "/keyboard": {
+            "description": "I’ve had wrist pain for years, and after a long journey I discovered it’s actually a shoulder problem. The fix? Split keyboards positioned about three feet apart. This post covers everything: why I need the split, the hardware I use, key remapping with Karabiner, and programming the RK Royal Kludge RK-S70 from macOS (which requires a Windows VM because RK’s software is Windows-only).\n\n",
+            "doc_size": 33000,
+            "file_path": "_site/keyboard.html",
+            "incoming_links": [
+                "/irl",
+                "/osx"
+            ],
+            "last_modified": "2026-04-03T22:27:22+00:00",
+            "markdown_path": "_td/keyboard.md",
+            "outgoing_links": [
+                "/shoulder-pain"
+            ],
+            "redirect_url": "",
+            "title": "Keyboards: Hardware, Remapping, and Programming from macOS",
+            "url": "/keyboard"
+        },
         "/knee-pain": {
             "description": "Knee pain often stems from hip or ankle dysfunction - the knee is caught in the middle. Coming soon: strategies for addressing knee pain through the same indirect approach used for shoulders and back.\n\n",
             "doc_size": 14000,
@@ -3746,6 +3798,7 @@
                 "/ai-feed",
                 "/ai-second-brain",
                 "/chow",
+                "/claw",
                 "/mortality-software",
                 "/pet-projects",
                 "/structure",
@@ -3804,7 +3857,7 @@
         },
         "/learn-code": {
             "description": "Coding is way easier than people think. Here’s some pointers.\n\n",
-            "doc_size": 14000,
+            "doc_size": 13000,
             "file_path": "_site/learn-code.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T02:47:07+00:00",
@@ -3897,6 +3950,7 @@
             "file_path": "_site/manager-book.html",
             "incoming_links": [
                 "/ai-feed",
+                "/ai-hiring",
                 "/ai-native-manager",
                 "/amazon",
                 "/being-a-great-manager",
@@ -4235,6 +4289,7 @@
                 "/gap-year-igor",
                 "/operating-manual",
                 "/parkinson",
+                "/raccoon-history",
                 "/retire",
                 "/stock-concentration",
                 "/timeoff-2020-03"
@@ -4281,6 +4336,7 @@
             "doc_size": 36000,
             "file_path": "_site/mortality-software.html",
             "incoming_links": [
+                "/ai-journal",
                 "/balance",
                 "/bike-tesla-identity",
                 "/goals",
@@ -4534,6 +4590,7 @@
             "doc_size": 22000,
             "file_path": "_site/parkinson.html",
             "incoming_links": [
+                "/ai-journal",
                 "/balance",
                 "/gap-year-igor",
                 "/manager-book-appendix",
@@ -4815,6 +4872,7 @@
             "doc_size": 16000,
             "file_path": "_site/productive.html",
             "incoming_links": [
+                "/ai-feed",
                 "/balance",
                 "/energy",
                 "/timeoff-2022-02"
@@ -4928,6 +4986,27 @@
             "redirect_url": "",
             "title": "Quip tips and tricks",
             "url": "/quip"
+        },
+        "/raccoon-history": {
+            "description": "Every blog needs a mascot, and mine is a raccoon — specifically, a cute anthropomorphic raccoon wearing rainbow round glasses, a green t-shirt with bold white text, and mismatched Crocs (blue left, yellow right). Here’s the story of how that character evolved from early AI experiments to a cohesive visual brand.\n\n",
+            "doc_size": 22000,
+            "file_path": "_site/raccoon-history.html",
+            "incoming_links": [],
+            "last_modified": "2026-03-21T12:32:21-07:00",
+            "markdown_path": "_d/raccoon-history.md",
+            "outgoing_links": [
+                "/ai-native-manager",
+                "/caring",
+                "/eulogy",
+                "/greek-orthodox",
+                "/money",
+                "/shoulder-pain",
+                "/timeoff-2022-12",
+                "/writing"
+            ],
+            "redirect_url": "",
+            "title": "The Raccoon Mascot: A Visual History",
+            "url": "/raccoon-history"
         },
         "/random": {
             "description": "Igor's Blog",
@@ -5268,8 +5347,10 @@
                 "/changelog",
                 "/how-igor-chops",
                 "/kettlebell",
+                "/keyboard",
                 "/knee-pain",
                 "/physical-pain",
+                "/raccoon-history",
                 "/y25",
                 "/y26"
             ],
@@ -5558,6 +5639,7 @@
             "doc_size": 28000,
             "file_path": "_site/strategy.html",
             "incoming_links": [
+                "/ai-feed",
                 "/energy-abundance",
                 "/life-as-business",
                 "/manager-book"
@@ -6091,6 +6173,7 @@
             "incoming_links": [
                 "/ai-second-brain",
                 "/bucket-list",
+                "/claw",
                 "/eulogy",
                 "/irl",
                 "/kayak",
@@ -6360,7 +6443,9 @@
             "description": "It’s X-mas 2022, quite the fall excitement edition! and I’ve got 1 and change weeks off in an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation. I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
             "doc_size": 24000,
             "file_path": "_site/timeoff-2022-12.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/raccoon-history"
+            ],
             "last_modified": "2026-03-21T12:32:21-07:00",
             "markdown_path": "_d/time-off-2022-12.md",
             "outgoing_links": [
@@ -6713,7 +6798,7 @@
         },
         "/walking-with-god": {
             "description": "Someone important to me has been reading a daily devotional. Even though I’m not religious, I’m studying with them to be able to have conversations about the insights - whether in a secular or religious context. This is my attempt to bridge two worlds: honoring the spiritual wisdom they’re finding while translating it into language that works for my engineer brain.\n\n",
-            "doc_size": 82000,
+            "doc_size": 81000,
             "file_path": "_site/walking-with-god.html",
             "incoming_links": [
                 "/greek-orthodox",
@@ -6915,7 +7000,8 @@
                 "/four-healths",
                 "/manager-book",
                 "/manager-book-appendix",
-                "/operating-manual"
+                "/operating-manual",
+                "/raccoon-history"
             ],
             "last_modified": "2026-03-21T12:32:21-07:00",
             "markdown_path": "_d/writing.md",
