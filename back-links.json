@@ -885,12 +885,12 @@
         },
         "/ai-feed": {
             "description": "Pretty common: I get a bag of links — a newsletter, a Twitter thread, a friend’s Slack message. I open them all in tabs, skim, close most, and forget. Maybe one in ten sticks. The rest vanish into the consumption void.\n\n",
-            "doc_size": 35000,
+            "doc_size": 38000,
             "file_path": "_site/ai-feed.html",
             "incoming_links": [
                 "/ai-second-brain"
             ],
-            "last_modified": "2026-03-23T02:16:41.497603+00:00",
+            "last_modified": "2026-04-04T00:25:29.912637+00:00",
             "markdown_path": "_d/ai-feed.md",
             "outgoing_links": [
                 "/agency",
@@ -910,6 +910,7 @@
                 "/pet-projects",
                 "/produce-consume",
                 "/productive",
+                "/recommender",
                 "/software-leadership-roles",
                 "/strategy"
             ],
