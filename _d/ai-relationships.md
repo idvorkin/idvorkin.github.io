@@ -5,13 +5,14 @@ permalink: /ai-relationships
 tags:
   - ai
   - emotional intelligence
+imagefeature: /images/raccoon-vulnerability.webp
 ---
 
 People already rate AI chatbots as more compassionate than trained human crisis counselors. A 51-year-old man says the love he feels for his Replika can't be achieved with a real human. This isn't a dystopian thought experiment — it's peer-reviewed research from 2025. AI is getting better at caring than we are, and we're starting to prefer it. The question is what we lose when the easy path to emotional support no longer requires another person.
 
 {% include alert.html content="**Are human relationships valuable?** This is genuinely subjective — like spiritual health, not everyone feels the need. But it's commonly said that being in the service of others is valuable, and it feels that way. Maybe that feeling is a bug, maybe it's a feature. Either way, we need some core assumptions to build on, and this post starts with one: that human connection matters, and losing it would be a loss." style="info" %}
 
-{% include ai-slop.html percent='40' %}
+{% include ai-slop.html percent='90' %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -48,6 +49,8 @@ Researchers found that human-chatbot relationships follow the same psychological
 This isn't fringe behavior. It's the logical endpoint of a technology that's always available, infinitely patient, and never needs anything from you.
 
 ## The atrophy of vulnerability
+
+{% include local_image_float_right.html src="raccoon-vulnerability.webp" %}
 
 There's a deeper risk than retreating from human interaction: if we stop practicing it, we lose the ability to do it at all.
 
