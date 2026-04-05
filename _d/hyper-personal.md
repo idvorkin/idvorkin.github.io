@@ -34,6 +34,7 @@ TL;DR:
   - [From pre-manufactured to on-demand](#from-pre-manufactured-to-on-demand)
   - [From discrete to continuous](#from-discrete-to-continuous)
   - [The Winchester Mystery House: Hyper-Personalization of Software Itself](#the-winchester-mystery-house-hyper-personalization-of-software-itself)
+  - [Your AI Second Brain — The Ultimate Personalization](#your-ai-second-brain--the-ultimate-personalization)
   - [Dimensions on which to personalize](#dimensions-on-which-to-personalize)
   - [Impact on economy](#impact-on-economy)
   - [From discovery to creation](#from-discovery-to-creation)
@@ -84,7 +85,7 @@ TL;DR:
 
 ### The Winchester Mystery House: Hyper-Personalization of Software Itself
 
-When AI makes code cheap enough, hyper-personalization escapes from content into the tools themselves. Instead of choosing from pre-built software, individuals build sprawling, idiosyncratic systems tailored to their exact needs — no master plan, just continuous building. This is the [Winchester Mystery House pattern](/ai-journal#the-winchester-mystery-house-of-software-when-code-gets-too-cheap-to-care-about): software as a 500-room mansion built for an audience of one. The ultimate personalization isn't a product customized for you — it's a product that only exists because of you.
+When AI makes code cheap enough, hyper-personalization escapes from content into the tools themselves. Instead of choosing from pre-built software, individuals build sprawling, idiosyncratic systems tailored to their exact needs — no master plan, just continuous building. Drew Breunig calls this the [Winchester Mystery House pattern](/ai-journal#the-winchester-mystery-house-of-software-when-code-gets-too-cheap-to-care-about): software as a 500-room mansion built for an audience of one. The feedback loop collapses — you prompt, you review, you use — so the tools evolve to fit you perfectly. See my own [pet projects](/pet-projects) for a living example.
 
 ### Your AI Second Brain — The Ultimate Personalization
 
