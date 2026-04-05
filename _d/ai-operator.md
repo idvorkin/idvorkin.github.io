@@ -8,11 +8,13 @@ tags:
   - how
 redirect_from:
   - /operator
-alias:
-  - /operator
 ---
 
 Using AI well is a skill, like driving a car or operating heavy machinery. Nobody hands you the keys to a forklift and says "figure it out." There's a license, training, and hard-won intuition about what the machine can and can't do. AI is the same — except most of us skipped the training, there is no manual, and we're writing the rules as we go.
+
+{% include blob_image_float_right.html src="blog/raccoon-cockpit.webp" %}
+
+{% include ai-slop.html percent="80" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
