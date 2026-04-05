@@ -213,9 +213,9 @@ It's great to have a selfie stick for every occasion
 
 ### Portable Espresso
 
-I take the [OutIn Portable Electric Espresso Machine](https://www.amazon.com/OutIn-Portable-Electric-Espresso-Machine/dp/B00CWXU9FO) on walks — portable espresso on the go. It's battery-powered, heats water and brews in minutes, and fits easily in a bag or fanny pack.
+I take the OutIn Mino on walks — portable espresso on the go. It's battery-powered, heats water and brews in about 2.5 minutes, and fits in a bag or fanny pack. You get about **4 shots per charge** when self-heating cold water. Pro tip: pair it with a JetBoil Flash — it boils water in 100 seconds and a single fuel canister gives you **40+ cups**. Use the JetBoil to heat water and the OutIn just for extraction, which barely uses battery.
 
-{%include amazon.html asin="B00CWXU9FO" %}
+{%include amazon.html asin="B00CWXU9FO;B0753NBMJ5" %}
 
 ## [Biking](/bike)
 
