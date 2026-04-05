@@ -39,6 +39,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
     - [Gym Bag](#gym-bag)
     - [Work Bag](#work-bag)
     - [Selfie Sticks](#selfie-sticks)
+    - [Portable Espresso](#portable-espresso)
 - [Biking](#biking)
 - [Car Tech](#car-tech)
     - [Tony](#tony)
@@ -209,6 +210,12 @@ It's great to have a selfie stick for every occasion
 - [Big w/stand](https://www.amazon.com/gp/product/B09681HV3L/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1)
 
 {%include amazon.html asin="B09681HV3L;B082HRRCGD;B07QY8L3WC" %}
+
+### Portable Espresso
+
+I take the [OutIn Portable Electric Espresso Machine](https://www.amazon.com/OutIn-Portable-Electric-Espresso-Machine/dp/B00CWXU9FO) on walks — portable espresso on the go. It's battery-powered, heats water and brews in minutes, and fits easily in a bag or fanny pack.
+
+{%include amazon.html asin="B00CWXU9FO" %}
 
 ## [Biking](/bike)
 
