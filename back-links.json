@@ -958,7 +958,7 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get lost\n\n",
-            "doc_size": 136000,
+            "doc_size": 137000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai",
@@ -970,10 +970,11 @@
                 "/changelog",
                 "/chop",
                 "/claw",
+                "/hyper-personal",
                 "/walking-with-god",
                 "/y25"
             ],
-            "last_modified": "2026-04-03T23:50:06.643429+00:00",
+            "last_modified": "2026-04-05T16:27:11.501528+00:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
@@ -988,7 +989,8 @@
                 "/hyper-personal",
                 "/mental-pain",
                 "/mortality-software",
-                "/parkinson"
+                "/parkinson",
+                "/pet-projects"
             ],
             "redirect_url": "",
             "title": "Igor's AI Journal",
@@ -3502,17 +3504,19 @@
         },
         "/hyper-personal": {
             "description": "Useful writing tells people (including, possibly most importantly you) something true and important that they didn’t already know in a way that leaves no doubt. And Everyone is different. So how to do both?\n\n",
-            "doc_size": 18000,
+            "doc_size": 19000,
             "file_path": "_site/hyper-personal.html",
             "incoming_links": [
                 "/ai-journal",
                 "/ai-second-brain",
                 "/how-igor-chops"
             ],
-            "last_modified": "2026-03-14T16:03:56-07:00",
+            "last_modified": "2026-04-05T16:27:11.501528+00:00",
             "markdown_path": "_d/hyper-personal.md",
             "outgoing_links": [
-                "/ai-second-brain"
+                "/ai-journal",
+                "/ai-second-brain",
+                "/pet-projects"
             ],
             "redirect_url": "",
             "title": "Hyper Personalization",
@@ -4643,9 +4647,11 @@
             "file_path": "_site/pet-projects.html",
             "incoming_links": [
                 "/ai-feed",
+                "/ai-journal",
                 "/eulogy",
                 "/explainers",
                 "/how-igor-chops",
+                "/hyper-personal",
                 "/side-quests",
                 "/y25"
             ],
