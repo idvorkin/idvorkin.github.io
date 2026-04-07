@@ -2,7 +2,7 @@
 layout: post
 title: "The AI Operator: Learning to Drive the Machine"
 permalink: /ai-operator
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-operator.webp
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-cockpit.webp
 tags:
   - ai
   - how
@@ -12,7 +12,7 @@ redirect_from:
 
 Using AI well is a skill, like driving a car or operating heavy machinery. Nobody hands you the keys to a forklift and says "figure it out." There's a license, training, and hard-won intuition about what the machine can and can't do. AI is the same — except most of us skipped the training, there is no manual, and we're writing the rules as we go.
 
-{% include blob_image_float_right.html src="blog/raccoon-operator.webp" %}
+{% include blob_image_float_right.html src="blog/raccoon-cockpit.webp" %}
 
 {% include ai-slop.html percent="80" %}
 
@@ -28,7 +28,7 @@ Using AI well is a skill, like driving a car or operating heavy machinery. Nobod
 
 ## You Have a Finite Number of Thinking Tokens
 
-You've seen it in ChatGPT or Claude Code — hit the token limit and the quality falls off a cliff. The model starts forgetting context, repeating itself, missing things it would have caught ten minutes ago. Humans work the same way. You wake up with a finite budget of deep thinking, and every hard decision, every careful code review, every "wait, is this actually right?" burns through it. By 3pm, you're running on fumes.
+You've seen it in ChatGPT or Claude Code — hit the token limit and the quality falls off a cliff. The model starts forgetting context, repeating itself, missing things it would have caught ten minutes ago. And when you hit it, you're done — stuck until the context window reopens. Humans work the same way. You wake up with a finite budget of deep thinking, and every hard decision, every careful code review, every "wait, is this actually right?" burns through it. By 3pm, you're running on fumes.
 
 Simon Willison [described this vividly](https://simonwillison.net/2026/Apr/2/lennys-podcast/) — running four agents in parallel left him "wiped out by 11 AM." _"There's a limit on human cognition regardless of how fast agents work."_ AI is supposed to make us more productive, but the people most AI-pilled are working harder than ever.
 
@@ -38,13 +38,14 @@ The operator skill: know which tasks deserve your precious thinking tokens and w
 
 ## In the Loop vs. On the Loop
 
-The military has real doctrine for this — in autonomous weapons and drone operations, ["human in the loop"](https://en.wikipedia.org/wiki/Human-in-the-loop) means a person approves each action, while "human on the loop" means the system acts but a person monitors and can intervene. AI operators face the same choice, and most of us are terrible at estimating which mode we're in.
+The military has real doctrine for this — [DoD Directive 3000.09](https://en.wikipedia.org/wiki/Human-in-the-loop) on autonomous weapons defines ["human in the loop"](https://en.wikipedia.org/wiki/Human-in-the-loop) (a person approves each action) versus "human on the loop" (the system acts, a person monitors and can intervene). AI operators face the same choice, and most of us are terrible at estimating which mode we're in.
 
-**In the loop** — you're reading every line, approving every step. This is appropriate for:
+**In the loop** — you're reading every line, approving every step. It's a zillion times slower, but sometimes you have no choice. This is appropriate for:
 
 - High-stakes decisions (deploying to prod, sending to customers)
 - Tasks where you need to learn what the AI is doing
 - Novel problems where the AI might go sideways
+- Bootstrapping work where you lack degrees of freedom — getting auth working, nailing down a specific integration, anything where the AI can't iterate without your input
 
 **On the loop** — you're checking results, not watching the process. This is appropriate for:
 
