@@ -16,8 +16,57 @@ ACT is a therapy tradition I've circled for years without ever sitting down with
 {% include amazon.html asin="1684033012" %}
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-start -->
+
+- [Part 1: Key Concepts & My Takeaways](#part-1-key-concepts--my-takeaways)
+  - [Psychological Flexibility — the Goal](#psychological-flexibility--the-goal)
+  - [The Problem: Cognitive Fusion & Experiential Avoidance](#the-problem-cognitive-fusion--experiential-avoidance)
+  - [The Hexaflex — Six Core Processes](#the-hexaflex--six-core-processes)
+    - [1. Cognitive Defusion](#1-cognitive-defusion)
+    - [2. Acceptance](#2-acceptance)
+    - [3. Contact with the Present Moment](#3-contact-with-the-present-moment)
+    - [4. Self-as-Context (the Observing Self)](#4-self-as-context-the-observing-self)
+    - [5. Values](#5-values)
+    - [6. Committed Action](#6-committed-action)
+  - [When to Reach for Which Process](#when-to-reach-for-which-process)
+  - [Metaphors That Land](#metaphors-that-land)
+  - [Practices I Want to Lift Into My Life](#practices-i-want-to-lift-into-my-life)
+- [Part 2: Book Chapters — Key Ideas](#part-2-book-chapters--key-ideas)
+  - [Chapter 1: The Human Challenge](#chapter-1-the-human-challenge)
+  - [Chapter 2: Getting Hooked](#chapter-2-getting-hooked)
+  - [Chapter 3: "Mindfulness" and Other Dodgy Words](#chapter-3-mindfulness-and-other-dodgy-words)
+  - [Chapter 4: Get Your Geek On](#chapter-4-get-your-geek-on)
+  - [Chapter 5: Setting Up for Success](#chapter-5-setting-up-for-success)
+  - [Chapter 6: What's the Problem?](#chapter-6-whats-the-problem)
+  - [Chapter 7: Where Do I Start?](#chapter-7-where-do-i-start)
+  - [Chapter 8: Creative What?!](#chapter-8-creative-what)
+  - [Chapter 9: Drop the Struggle](#chapter-9-drop-the-struggle)
+  - [Chapter 10: Dropping Anchor](#chapter-10-dropping-anchor)
+  - [Chapter 11: Notice That Thought](#chapter-11-notice-that-thought)
+  - [Chapter 12: Deeper into Defusion](#chapter-12-deeper-into-defusion)
+  - [Chapter 13: The Defusion Smorgasbord](#chapter-13-the-defusion-smorgasbord)
+  - [Chapter 14: Barriers to Defusion](#chapter-14-barriers-to-defusion)
+  - [Chapter 15: Leaves, Streams, Clouds, and Sky](#chapter-15-leaves-streams-clouds-and-sky)
+  - [Chapter 16: "Technique Overload" and Other Perils](#chapter-16-technique-overload-and-other-perils)
+  - [Chapter 17: Being Present](#chapter-17-being-present)
+  - [Chapter 18: Hold Yourself Kindly](#chapter-18-hold-yourself-kindly)
+  - [Chapter 19: Know What Matters](#chapter-19-know-what-matters)
+  - [Chapter 20: What If Nothing Matters?](#chapter-20-what-if-nothing-matters)
+  - [Chapter 21: Do What It Takes](#chapter-21-do-what-it-takes)
+  - [Chapter 22: Fifty Shades of Acceptance](#chapter-22-fifty-shades-of-acceptance)
+  - [Chapter 23: Emotions as Allies](#chapter-23-emotions-as-allies)
+  - [Chapter 24: What's Stopping You?](#chapter-24-whats-stopping-you)
+  - [Chapter 25: The Noticing Self](#chapter-25-the-noticing-self)
+  - [Chapter 26: Flexible Exposure](#chapter-26-flexible-exposure)
+  - [Chapter 27: Cognitive Flexibility](#chapter-27-cognitive-flexibility)
+  - [Chapter 28: Shame, Anger, and Other "Problem" Emotions](#chapter-28-shame-anger-and-other-problem-emotions)
+  - [Chapter 29: Flexible Relationships](#chapter-29-flexible-relationships)
+  - [Chapter 30: I and Thou](#chapter-30-i-and-thou)
+  - [Chapter 31: A Quick Guide to Getting Unstuck](#chapter-31-a-quick-guide-to-getting-unstuck)
+  - [Chapter 32: The ACT Therapist's Journey](#chapter-32-the-act-therapists-journey)
+- [Related Posts](#related-posts)
+
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Part 1: Key Concepts & My Takeaways
