@@ -67,7 +67,7 @@ Harris is clear that the point of defusion is never to make thoughts go away. Th
 
 #### 2. Acceptance
 
-Acceptance — Harris also calls it "willingness," "expansion," "opening up," "making room" — means opening up to unwanted inner experiences and letting them be. Not liking them. Not wanting them. Allowing them. Crucially, acceptance is never "passive acceptance of my life situation." I change the situation where I can and accept the pain that shows up as I do. The book is called Acceptance *and Commitment* Therapy for a reason.
+Acceptance — Harris also calls it "willingness," "expansion," "opening up," "making room" — means opening up to unwanted inner experiences and letting them be. Not liking them. Not wanting them. Allowing them. Crucially, acceptance is never "passive acceptance of my life situation." I change the situation where I can and accept the pain that shows up as I do. The book is called Acceptance _and Commitment_ Therapy for a reason.
 
 The signature metaphor is the **Struggle Switch**. Imagine a switch at the back of my mind. Switch on: I must get rid of any bad feeling. Now I have anxiety about my anxiety, anger about my anger — a feedback loop that amplifies whatever I started with. Switch off: the feeling is still unpleasant, but I'm not pouring fuel on it. Harris treats acceptance as a 0-to-10 scale, not all-or-nothing. I can move from 9 (full struggle) to 3 (mostly allowing it) and that's a big win.
 
@@ -95,7 +95,7 @@ Values are "desired global qualities of ongoing action" — how I want to behave
 
 The signature distinction is **"getting married" versus "being loving."** Getting married is a goal; once I'm married, it's done. Being loving is a value; I can act on it or neglect it in every moment for the rest of my life. The **Two Kids in the Car** metaphor: two kids going to Disneyland, one whining "are we there yet?" the other playing "I spy." Same goal, radically different journey.
 
-Harris's favorite values clarification exercise is **The Video of Your Mistakenly Held Funeral**: imagine you were presumed dead, a funeral was held, and later you get to watch the video. What would you love to hear the people you love saying about the kind of person you were? I like this better than the standard "eulogy" exercise because it's less morbid and the question is "what would I *love* to hear" rather than "what would they say."
+Harris's favorite values clarification exercise is **The Video of Your Mistakenly Held Funeral**: imagine you were presumed dead, a funeral was held, and later you get to watch the video. What would you love to hear the people you love saying about the kind of person you were? I like this better than the standard "eulogy" exercise because it's less morbid and the question is "what would I _love_ to hear" rather than "what would they say."
 
 Values are always available. Even paralyzed from the waist down, I can still be kind, focused, honest, supportive, curious. Even in a refugee camp — Harris co-wrote the WHO's ACT protocol for refugee camps — I still have choices about how I treat the people in my tent. That's why values, not goals, are the bedrock. A goal can be stolen from me. A value cannot.
 
@@ -155,7 +155,7 @@ Harris keeps reminding readers that ACT is nonlinear, but that's hard to act on 
 ### Practices I Want to Lift Into My Life
 
 - **"I'm having the thought that..."** When I catch myself fused with a self-critical thought, prefix it with "I'm having the thought that" and then "I notice I'm having the thought that." Defuses almost instantly.
-- **Drop anchor with ACE.** When I'm hooked or overwhelmed, run the three steps: **A**cknowledge what's going on inside, **C**ome back into my body (push feet into floor, straighten spine, stretch), **E**ngage with the world (name five things I see, three I hear).
+- **Drop anchor with ACE.** When I'm hooked or overwhelmed, run the three steps: (A) Acknowledge what's going on inside, (C) Come back into my body — push feet into floor, straighten spine, stretch, (E) Engage with the world — name five things I see, three I hear.
 - **Name the emotion in third-person form.** Instead of "I am angry," say "I'm noticing anger" or "Here is a feeling of anger." Separates me from the emotion without dismissing it.
 - **Run the challenge formula on any stuck situation.** Leave, stay-and-live-values, or stay-and-give-up. Option 3 is always the default. Forcing the choice surfaces it.
 - **Every goal has to pass the live-person test.** If a corpse can do it better than me, rewrite it as "when X happens, I will Y."
@@ -188,7 +188,7 @@ Harris argues that "mindfulness" has become so loaded a word that it's often bet
 
 ### Chapter 4: Get Your Geek On
 
-The technical chapter on **functional contextualism** — ACT's underlying philosophy. The core move is that we care about the *function* of a behavior (what effect it has in context), not its *form*. Two cuts on a forearm can have five different functions — self-punishment, tension release, body art, attention, getting out of numbness. Same form, different function, different treatment. Workability is always judged by consequences, not by how the behavior looks. Introduces antecedents (triggers) and reinforcing consequences (what keeps the behavior going).
+The technical chapter on **functional contextualism** — ACT's underlying philosophy. The core move is that we care about the _function_ of a behavior (what effect it has in context), not its _form_. Two cuts on a forearm can have five different functions — self-punishment, tension release, body art, attention, getting out of numbness. Same form, different function, different treatment. Workability is always judged by consequences, not by how the behavior looks. Introduces antecedents (triggers) and reinforcing consequences (what keeps the behavior going).
 
 ### Chapter 5: Setting Up for Success
 
@@ -204,7 +204,7 @@ ACT is nonlinear, so there's no fixed starting process. Harris gives a default s
 
 ### Chapter 8: Creative What?!
 
-**Creative hopelessness** is Harris's name for the intervention where the client examines, without judgment, everything they've tried to avoid or kill unwanted feelings and notices that none of it worked long-term. The goal is hopelessness *in the agenda of emotional control*, not in life. He runs it through the **DOTS** acronym:
+**Creative hopelessness** is Harris's name for the intervention where the client examines, without judgment, everything they've tried to avoid or kill unwanted feelings and notices that none of it worked long-term. The goal is hopelessness _in the agenda of emotional control_, not in life. He runs it through the **DOTS** acronym:
 
 - **D**istraction (TV, scrolling, games, food)
 - **O**pting out (avoiding people, places, activities that trigger the feeling)
@@ -221,9 +221,9 @@ Once creative hopelessness has landed, the next step is dropping the struggle wi
 
 Dropping anchor is Harris's favorite first mindfulness skill because it works for almost everyone, including clients in acute distress or dissociation. The structure is **ACE**:
 
-- **A**cknowledge inner experience: notice and name the thoughts, feelings, sensations present. "Here's anxiety. Here's a painful memory."
-- **C**ome back into the body: regain control over your physical actions. Push feet into the floor, straighten your spine, stretch, change posture, alter your breathing.
-- **E**ngage with the world: expand awareness. Notice what you can see, hear, touch, smell. Name five things you can see, three you can hear.
+- **(A) Acknowledge** inner experience: notice and name the thoughts, feelings, sensations present. "Here's anxiety. Here's a painful memory."
+- **(C) Come back** into the body: regain control over your physical actions. Push feet into the floor, straighten your spine, stretch, change posture, alter your breathing.
+- **(E) Engage** with the world: expand awareness. Notice what you can see, hear, touch, smell. Name five things you can see, three you can hear.
 
 The framing metaphor is the **Emotional Storm** — when a storm hits, drop an anchor. The anchor doesn't stop the weather; it holds you steady. In the WHO refugee camp protocol, Harris swapped the metaphor for "grounding" — climbing down out of a tree in a windstorm — because boats and harbors weren't culturally relevant.
 
@@ -376,7 +376,7 @@ Harris distinguishes guilt from shame:
 - **Guilt** = "I've DONE something bad." Often motivating: it points to an action I want to repair.
 - **Shame** = "I AM bad." Often demotivating: it shuts me down and triggers avoidance.
 
-But the distinction is contextual — in a context of mindfulness and values, even shame can be motivating. The chapter covers inner-child imagery, urge surfing, and reframing shame as a reminder to practice self-compassion. The whole framework: change the *context* of the emotion (from fusion/avoidance to mindfulness/values), not the emotion itself.
+But the distinction is contextual — in a context of mindfulness and values, even shame can be motivating. The chapter covers inner-child imagery, urge surfing, and reframing shame as a reminder to practice self-compassion. The whole framework: change the _context_ of the emotion (from fusion/avoidance to mindfulness/values), not the emotion itself.
 
 ### Chapter 29: Flexible Relationships
 
