@@ -20,7 +20,7 @@ Using AI well is a skill, like driving a car or operating heavy machinery. Nobod
 <!-- vim-markdown-toc-start -->
 
 - [You Have a Finite Number of Thinking Tokens](#you-have-a-finite-number-of-thinking-tokens)
-- [Get On the Loop](#get-on-the-loop)
+- [You Need to Get On the Loop](#you-need-to-get-on-the-loop)
 - [You're Learning a New Skill — It Will Feel Slower](#youre-learning-a-new-skill--it-will-feel-slower)
 - [Use Voice](#use-voice)
 - [Throw It Away](#throw-it-away)
@@ -39,7 +39,7 @@ This matters for AI operators because the whole point of AI is to extend what yo
 
 The operator skill: know which tasks deserve your precious thinking tokens and which ones you can safely delegate. Review the _output_, not the _process_.
 
-## Get On the Loop
+## You Need to Get On the Loop
 
 Pay attention to which mode you're in — that's the whole game. The military has real doctrine for this: [DoD Directive 3000.09](https://en.wikipedia.org/wiki/Human-in-the-loop) on autonomous weapons defines ["human in the loop"](https://en.wikipedia.org/wiki/Human-in-the-loop) (a person approves each action) versus "human on the loop" (the system acts, a person monitors and can intervene). Every moment as an AI operator, one of those is true. Most of us have no idea which.
 
