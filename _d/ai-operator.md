@@ -20,11 +20,11 @@ Using AI well is a skill, like driving a car or operating heavy machinery. Nobod
 <!-- vim-markdown-toc-start -->
 
 - [You Have a Finite Number of Thinking Tokens](#you-have-a-finite-number-of-thinking-tokens)
-- [In the Loop vs. On the Loop](#in-the-loop-vs-on-the-loop)
+- [Get On the Loop](#get-on-the-loop)
 - [You're Learning a New Skill — It Will Feel Slower](#youre-learning-a-new-skill--it-will-feel-slower)
 - [Use Voice](#use-voice)
 - [Throw It Away](#throw-it-away)
-- [What Operators Need to Know](#what-operators-need-to-know)
+- [Keep Learning](#keep-learning)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -39,26 +39,23 @@ This matters for AI operators because the whole point of AI is to extend what yo
 
 The operator skill: know which tasks deserve your precious thinking tokens and which ones you can safely delegate. Review the _output_, not the _process_.
 
-## In the Loop vs. On the Loop
+## Get On the Loop
 
-The military has real doctrine for this — [DoD Directive 3000.09](https://en.wikipedia.org/wiki/Human-in-the-loop) on autonomous weapons defines ["human in the loop"](https://en.wikipedia.org/wiki/Human-in-the-loop) (a person approves each action) versus "human on the loop" (the system acts, a person monitors and can intervene). AI operators face the same choice, and most of us are terrible at estimating which mode we're in.
+Pay attention to which mode you're in — that's the whole game. The military has real doctrine for this: [DoD Directive 3000.09](https://en.wikipedia.org/wiki/Human-in-the-loop) on autonomous weapons defines ["human in the loop"](https://en.wikipedia.org/wiki/Human-in-the-loop) (a person approves each action) versus "human on the loop" (the system acts, a person monitors and can intervene). Every moment as an AI operator, one of those is true. Most of us have no idea which.
 
-**In the loop** — you're reading every line, approving every step. It's a zillion times slower, but sometimes you have no choice. This is appropriate for:
+**The goal is to get on the loop.** In-the-loop is a zillion times slower, and it burns your thinking tokens on the _process_ instead of the _output_. You're there because you have to be, not because you want to be. The job isn't to stay in the loop doing careful work — the job is to figure out how to climb out.
+
+You start in the loop when you have no choice:
 
 - High-stakes decisions (deploying to prod, sending to customers)
-- Tasks where you need to learn what the AI is doing
 - Novel problems where the AI might go sideways
 - Bootstrapping work where you lack degrees of freedom — getting auth working, nailing down a specific integration, anything where the AI can't iterate without your input
 
-**On the loop** — you're checking results, not watching the process. This is appropriate for:
+Fine. Be fully in. Read every line. But while you're in, your real job isn't just to ship the task — it's to learn enough to climb out. What does "good" look like here? What are the guardrails? What checkpoints can I define? Once you can answer those, move up to on-the-loop: check results, not process. Define your checkpoints, let go between them, come back when the AI hits one. That's when the economics start working in your favor — parallel agents, delegated drafting, you directing instead of typing.
 
-- Well-understood tasks you've delegated before
-- Low-stakes exploration and drafting
-- Parallel work across multiple agents
+The trap: you _think_ you're on the loop (efficient, trusting), but you're actually _neither_ — half-watching, catching nothing, burning thinking tokens on anxiety instead of judgment. The worst of both worlds. You pay the cost of supervision without getting the benefit of attention.
 
-The trap: you _think_ you're on the loop (efficient, trusting), but you're actually _neither_ — half-watching, catching nothing, burning thinking tokens on anxiety instead of judgment. The worst of both worlds.
-
-The operator skill: consciously choose your mode. If you're in the loop, be fully in. If you're on the loop, define your checkpoints and then actually let go until you reach one.
+The operator skill: always know which mode you're in, and always be working your way up. If you're in, be fully in — and look for your exit. If you're on, define your checkpoints and actually let go. Never hover.
 
 ## You're Learning a New Skill — It Will Feel Slower
 
@@ -88,6 +85,6 @@ In AI land, the economics flipped. The code is cheap; the thinking is expensive.
 
 The operator skill: watch for the sunk cost reflex. When you catch yourself trying to rescue a bad generation instead of re-running it, that's the old economics talking. Listen to the new economics instead: throw it away, it's free.
 
-## What Operators Need to Know
+## Keep Learning
 
 _This is a living document. As I learn more about operating AI well, I'll add to it._
