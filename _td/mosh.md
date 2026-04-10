@@ -30,7 +30,59 @@ sudo ln -s /home/linuxbrew/.linuxbrew/bin/etterminal /usr/local/bin/etterminal
 # 3. Config: bind to all interfaces (needed for Tailscale)
 echo 'bindip=0.0.0.0' | sudo tee /etc/et.cfg
 
-# 4. Do NOT start etserver as a daemon — ET manages it over SSH
+# 4. Fix pidfile permissions and start the daemon
+sudo touch /var/run/etserver.pid && sudo chmod 666 /var/run/etserver.pid
+etserver --cfgfile /etc/et.cfg --daemon
+
+# 5. Verify it's listening
+ss -tlnp | grep 2022
+```
+
+#### Auto-start on boot (init.d)
+
+OrbStack containers don't have systemd, so use an init.d script:
+
+```bash
+sudo tee /etc/init.d/etserver << 'EOF'
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          etserver
+# Required-Start:    $network $remote_fs
+# Required-Stop:     $network $remote_fs
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Description:       Eternal Terminal server
+### END INIT INFO
+
+DAEMON=/usr/local/bin/etserver
+PIDFILE=/var/run/etserver.pid
+CFGFILE=/etc/et.cfg
+
+case "$1" in
+  start)
+    echo "Starting etserver..."
+    touch "$PIDFILE"
+    $DAEMON --cfgfile "$CFGFILE" --daemon
+    ;;
+  stop)
+    echo "Stopping etserver..."
+    [ -f "$PIDFILE" ] && kill "$(cat "$PIDFILE")" 2>/dev/null
+    rm -f "$PIDFILE"
+    ;;
+  restart)
+    $0 stop
+    sleep 1
+    $0 start
+    ;;
+  *)
+    echo "Usage: $0 {start|stop|restart}"
+    exit 1
+    ;;
+esac
+exit 0
+EOF
+sudo chmod +x /etc/init.d/etserver
+sudo update-rc.d etserver defaults
 ```
 
 ### Install on Mac (client only)
@@ -50,7 +102,8 @@ et developer@<tailscale-hostname>
 - **Symlinks are mandatory** — ET's client SSHes in and runs `etterminal` (not `etserver`). Tailscale SSH non-interactive sessions only have `/usr/local/bin` in PATH, not `/home/linuxbrew/.linuxbrew/bin`. Without the symlinks, `etterminal` isn't found and the connection fails silently.
 - **Bind to 0.0.0.0** — ET defaults to localhost, but Tailscale traffic arrives on the tailscale0 interface.
 - **Port 2022** — Make sure your Tailscale ACLs allow port 2022 between nodes.
-- **Don't run etserver as a daemon** — ET bootstraps its own server process via SSH. A pre-running daemon on port 2022 will conflict.
+- **You DO need to run etserver as a daemon with Tailscale SSH** — ET normally bootstraps its own server via SSH, but Tailscale SSH's environment doesn't support this. Run `etserver --daemon` and set up the init.d script above for persistence across reboots.
+- **Pidfile permissions** — `etserver --daemon` writes to `/var/run/etserver.pid`. In OrbStack containers the file may not exist or be writable — `touch` and `chmod 666` it before starting.
 
 ### Verify
 
