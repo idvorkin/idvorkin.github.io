@@ -392,3 +392,9 @@ robots.txt
 
 # Beads / Dolt files (added by bd init)
 .beads-credential-key
+
+# Private working documents from the superpowers skills (brainstorming,
+# writing-plans). Keep specs and plans on disk for the current session
+# but don't check them in — they're personal notes, not source of truth.
+docs/superpowers/plans/
+docs/superpowers/specs/
