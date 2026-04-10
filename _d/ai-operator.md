@@ -23,6 +23,7 @@ Using AI well is a skill, like driving a car or operating heavy machinery. Nobod
 - [In the Loop vs. On the Loop](#in-the-loop-vs-on-the-loop)
 - [You're Learning a New Skill — It Will Feel Slower](#youre-learning-a-new-skill--it-will-feel-slower)
 - [Use Voice](#use-voice)
+- [Throw It Away](#throw-it-away)
 - [What Operators Need to Know](#what-operators-need-to-know)
 
 <!-- vim-markdown-toc-end -->
@@ -76,6 +77,16 @@ You behave differently when you use voice, the same way you behave differently w
 The result is often weirdly different from what you would have typed. It's longer, messier, more honest, and — this is the punchline — it delegates better. The AI gets a fuller picture of what you actually want and why, so it stops guessing at the constraints you forgot to mention. You spend less time course-correcting a wrong-shaped answer because you gave it the right shape to start with.
 
 The operator skill: when you're stuck staring at an empty prompt, don't try harder to write it. Talk it out.
+
+## Throw It Away
+
+When the AI goes in the weeds, throw it away. Start over. You already got the expensive part — the _learning_ — and the code itself was basically free to generate. The next attempt will be better because you know more now.
+
+This is harder than it sounds, because we're all trained on the old economics. In the old world, code was precious. You wrote every line yourself, you debugged it for an hour, you argued about it in a PR. Of course you got attached. Throwing away two hours of work hurt because those two hours were _expensive_ — you burned real thinking tokens on them.
+
+In AI land, the economics flipped. The code is cheap; the thinking is expensive. If the AI spent 30 seconds generating 400 lines that went sideways, those 400 lines cost you almost nothing to produce — but they'll cost you a _lot_ to untangle. Delete them. Re-prompt with what you learned. The new attempt, informed by what went wrong, will usually land faster than the salvage operation would have.
+
+The operator skill: watch for the sunk cost reflex. When you catch yourself trying to rescue a bad generation instead of re-running it, that's the old economics talking. Listen to the new economics instead: throw it away, it's free.
 
 ## What Operators Need to Know
 
