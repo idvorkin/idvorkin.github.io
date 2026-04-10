@@ -21,6 +21,7 @@ Using AI well is a skill, like driving a car or operating heavy machinery. Nobod
 
 - [You Have a Finite Number of Thinking Tokens](#you-have-a-finite-number-of-thinking-tokens)
 - [In the Loop vs. On the Loop](#in-the-loop-vs-on-the-loop)
+- [You're Learning a New Skill — It Will Feel Slower](#youre-learning-a-new-skill--it-will-feel-slower)
 - [What Operators Need to Know](#what-operators-need-to-know)
 
 <!-- vim-markdown-toc-end -->
@@ -56,6 +57,14 @@ The military has real doctrine for this — [DoD Directive 3000.09](https://en.w
 The trap: you _think_ you're on the loop (efficient, trusting), but you're actually _neither_ — half-watching, catching nothing, burning thinking tokens on anxiety instead of judgment. The worst of both worlds.
 
 The operator skill: consciously choose your mode. If you're in the loop, be fully in. If you're on the loop, define your checkpoints and then actually let go until you reach one.
+
+## You're Learning a New Skill — It Will Feel Slower
+
+Here's the thing nobody tells you: when you're learning to operate AI well, it _will_ feel harder than just doing the work yourself. That's not a sign you're doing it wrong — that's what learning a new skill feels like. The first time you drove a stick shift, you stalled at every light and your old automatic felt like a dream. The first time you typed on a Dvorak keyboard, QWERTY looked like a birthright.
+
+Learning to operate AI is the same. Writing the prompt, reviewing the output, course-correcting, re-prompting — in the moment it feels slower than just banging out the code yourself. And for the specific task in front of you, it often _is_ slower. The win isn't in this task. It's in the next hundred tasks, when you've built the intuition for what to delegate and how, and you're running three agents in parallel while your old self would still be on task one.
+
+You have to force yourself past the valley. Every time you catch yourself thinking "it'd be faster if I just did this myself," ask whether that's true for _this task_ or true because you haven't built the muscle yet. Usually it's the latter. Push through anyway.
 
 ## What Operators Need to Know
 
