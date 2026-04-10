@@ -22,6 +22,7 @@ Using AI well is a skill, like driving a car or operating heavy machinery. Nobod
 - [You Have a Finite Number of Thinking Tokens](#you-have-a-finite-number-of-thinking-tokens)
 - [In the Loop vs. On the Loop](#in-the-loop-vs-on-the-loop)
 - [You're Learning a New Skill — It Will Feel Slower](#youre-learning-a-new-skill--it-will-feel-slower)
+- [Use Voice](#use-voice)
 - [What Operators Need to Know](#what-operators-need-to-know)
 
 <!-- vim-markdown-toc-end -->
@@ -65,6 +66,16 @@ Here's the thing nobody tells you: when you're learning to operate AI well, it _
 Learning to operate AI is the same. Writing the prompt, reviewing the output, course-correcting, re-prompting — in the moment it feels slower than just banging out the code yourself. And for the specific task in front of you, it often _is_ slower. The win isn't in this task. It's in the next hundred tasks, when you've built the intuition for what to delegate and how, and you're running three agents in parallel while your old self would still be on task one.
 
 You have to force yourself past the valley. Every time you catch yourself thinking "it'd be faster if I just did this myself," ask whether that's true for _this task_ or true because you haven't built the muscle yet. Usually it's the latter. Push through anyway.
+
+## Use Voice
+
+Try this: next time you're about to type out a prompt, hit the voice button instead and just talk. Brain dump the whole thing. What you're trying to do, what you've tried, what's bugging you, the constraint nobody told you about, the weird edge case you half-remember. Don't edit yourself. See what comes out.
+
+You behave differently when you use voice, the same way you behave differently when you're talking to a person instead of writing them an email. Writing makes you compress, edit, prune. You leave out the context that "obviously" doesn't matter — and half the time it's the context that mattered most. Voice lets you ramble, and ramble is where the useful context lives.
+
+The result is often weirdly different from what you would have typed. It's longer, messier, more honest, and — this is the punchline — it delegates better. The AI gets a fuller picture of what you actually want and why, so it stops guessing at the constraints you forgot to mention. You spend less time course-correcting a wrong-shaped answer because you gave it the right shape to start with.
+
+The operator skill: when you're stuck staring at an empty prompt, don't try harder to write it. Talk it out.
 
 ## What Operators Need to Know
 
