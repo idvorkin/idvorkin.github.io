@@ -36,9 +36,9 @@ You've seen it in ChatGPT or Claude Code — hit the token limit and the quality
 
 Simon Willison [described this vividly](https://simonwillison.net/2026/Apr/2/lennys-podcast/) — running four agents in parallel left him "wiped out by 11 AM." _"There's a limit on human cognition regardless of how fast agents work."_ AI is supposed to make us more productive, but the people most AI-pilled are working harder than ever.
 
-This matters for AI operators because the whole point of AI is to extend what you can accomplish in a day. But if you spend your thinking tokens _supervising_ the AI instead of _directing_ it, you haven't saved anything — you've just traded one kind of exhaustion for another.
+This matters for AI operators because the whole point of AI is to extend what you can accomplish in a day. But if you spend your thinking tokens _supervising_ the AI instead of _directing_ it, you haven't saved anything — you've just traded one kind of exhaustion for another. Every decision you make about how to spend your tokens is really a decision about how much you can delegate before the day is done.
 
-The operator skill: know which tasks deserve your precious thinking tokens and which ones you can safely delegate. Review the _output_, not the _process_.
+The operator skill: know which tasks deserve your precious thinking tokens and which ones you can safely delegate. Review the _output_, not the _process_. (The rest of this post is mostly about how to actually do that.)
 
 ## You Need to Get On the Loop
 
@@ -66,15 +66,17 @@ Learning to operate AI is the same. Writing the prompt, reviewing the output, co
 
 You have to force yourself past the valley. Every time you catch yourself thinking "it'd be faster if I just did this myself," ask whether that's true for _this task_ or true because you haven't built the muscle yet. Usually it's the latter. Push through anyway.
 
+The operator skill: when the old way feels faster, it's usually because your old muscles are strong and your operator muscles are weak. Train the weak ones anyway. That's the only way you get good enough to stay on the loop.
+
 ## Use Voice
 
 Try this: next time you're about to type out a prompt, hit the voice button instead and just talk. Brain dump the whole thing. What you're trying to do, what you've tried, what's bugging you, the constraint nobody told you about, the weird edge case you half-remember. Don't edit yourself. See what comes out.
 
 You behave differently when you use voice, the same way you behave differently when you're talking to a person instead of writing them an email. Writing makes you compress, edit, prune. You leave out the context that "obviously" doesn't matter — and half the time it's the context that mattered most. Voice lets you ramble, and ramble is where the useful context lives.
 
-The result is often weirdly different from what you would have typed. It's longer, messier, more honest, and — this is the punchline — it delegates better. The AI gets a fuller picture of what you actually want and why, so it stops guessing at the constraints you forgot to mention. You spend less time course-correcting a wrong-shaped answer because you gave it the right shape to start with.
+The result is often weirdly different from what you would have typed. It's longer, messier, more honest, and — this is the punchline — it delegates better. The AI gets a fuller picture of what you actually want and why, so it stops guessing at the constraints you forgot to mention. You spend less time course-correcting in the loop because you gave the AI the right shape to start with.
 
-The operator skill: when you're stuck staring at an empty prompt, don't try harder to write it. Talk it out.
+The operator skill: when you're stuck staring at an empty prompt, don't try harder to write it. Talk it out. Better upfront context keeps you on the loop.
 
 ## Throw It Away
 
@@ -83,6 +85,8 @@ When the AI goes in the weeds, throw it away. Start over. You already got the ex
 This is harder than it sounds, because we're all trained on the old economics. In the old world, code was precious. You wrote every line yourself, you debugged it for an hour, you argued about it in a PR. Of course you got attached. Throwing away two hours of work hurt because those two hours were _expensive_ — you burned real thinking tokens on them.
 
 In AI land, the economics flipped. The code is cheap; the thinking is expensive. If the AI spent 30 seconds generating 400 lines that went sideways, those 400 lines cost you almost nothing to produce — but they'll cost you a _lot_ to untangle. Delete them. Re-prompt with what you learned. The new attempt, informed by what went wrong, will usually land faster than the salvage operation would have.
+
+Worse, rescuing a bad generation is a trap: it pulls you line-by-line back into the loop, burning thinking tokens you can't afford on code the AI could regenerate for free.
 
 The operator skill: watch for the sunk cost reflex. When you catch yourself trying to rescue a bad generation instead of re-running it, that's the old economics talking. Listen to the new economics instead: throw it away, it's free.
 
