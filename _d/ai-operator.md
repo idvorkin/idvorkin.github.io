@@ -24,6 +24,7 @@ Using AI well is a skill, like driving a car or operating heavy machinery. Nobod
 - [You're Learning a New Skill — It Will Feel Slower](#youre-learning-a-new-skill--it-will-feel-slower)
 - [Use Voice](#use-voice)
 - [Throw It Away](#throw-it-away)
+- [You're a Compound Engineer](#youre-a-compound-engineer)
 - [Keep Learning](#keep-learning)
 
 <!-- vim-markdown-toc-end -->
@@ -84,6 +85,20 @@ This is harder than it sounds, because we're all trained on the old economics. I
 In AI land, the economics flipped. The code is cheap; the thinking is expensive. If the AI spent 30 seconds generating 400 lines that went sideways, those 400 lines cost you almost nothing to produce — but they'll cost you a _lot_ to untangle. Delete them. Re-prompt with what you learned. The new attempt, informed by what went wrong, will usually land faster than the salvage operation would have.
 
 The operator skill: watch for the sunk cost reflex. When you catch yourself trying to rescue a bad generation instead of re-running it, that's the old economics talking. Listen to the new economics instead: throw it away, it's free.
+
+## You're a Compound Engineer
+
+Every session with the AI teaches you something — a prompt shape that worked, a constraint you forgot to specify, a place the AI kept going sideways until you spelled out the obvious thing. The operators who get dramatically better over time are the ones who _capture_ those learnings instead of letting them evaporate. The ones who don't are running the same mistakes on loop.
+
+This is compound engineering. You're not just shipping the task in front of you; you're investing in the operator you'll be next month. Every retro, every updated CLAUDE.md, every new skill, every workflow you codify is a deposit, and the interest compounds. Six months in, the gap between an operator who journals their learnings and one who doesn't is enormous.
+
+**Do retros.** At the end of a session — or at least at the end of a week — look back and ask the one question that matters most: _where did I get stuck in the loop?_ What did I have to re-explain three times before the AI got it? Where did I hover because I didn't trust the output? That friction is gold. It's pointing at exactly what your next iteration should fix.
+
+**Update your CLAUDE.md.** Whatever you had to re-explain three times, put it in the instructions so you never have to explain it again. The `claude-md-improver` skill exists for exactly this — it audits your CLAUDE.md against session learnings and folds them in, so next time the AI already knows.
+
+**Upgrade your skills and workflows.** A prompt you ran twice is a prompt that should become a skill. A checklist you followed by hand is a workflow. The second time you do something manually, you're leaving compound interest on the table.
+
+The operator skill: treat every in-the-loop moment as a signal, not a setback. The place you got stuck today is the place you're about to automate away tomorrow — and _that_ is how you climb out of the loop for good.
 
 ## Keep Learning
 
