@@ -12,6 +12,10 @@ redirect_from:
 
 Using AI well is a skill, like driving a car or operating heavy machinery. Nobody hands you the keys to a forklift and says "figure it out." There's a license, training, and hard-won intuition about what the machine can and can't do. AI is the same — except most of us skipped the training, there is no manual, and we're writing the rules as we go.
 
+So the meta-skill — the one that matters more than any specific trick — is _always be learning and improving_. Operating AI well is a brand-new skill, and like any new skill it feels slower than the old way at first. The first time you drove a stick shift, you stalled at every light and your old automatic felt like a dream. Operating AI is the same: in the moment it feels slower, and for the specific task in front of you it often _is_ slower. The win isn't in this task — it's in the next hundred, when you've built the intuition and you're running three agents in parallel while your old self would still be on task one.
+
+And the operators who get dramatically better aren't the ones who just practice. They're the ones who capture what they learned, fold it into how they work, and show up tomorrow a little sharper than yesterday. The rest of this post is the methods I use to do that.
+
 {% include blob_image_float_right.html src="blog/raccoon-cockpit.webp" %}
 
 {% include ai-slop.html percent="80" %}
@@ -21,7 +25,6 @@ Using AI well is a skill, like driving a car or operating heavy machinery. Nobod
 
 - [You Have a Finite Number of Thinking Tokens](#you-have-a-finite-number-of-thinking-tokens)
 - [You Need to Get On the Loop](#you-need-to-get-on-the-loop)
-- [You're Learning a New Skill — It Will Feel Slower](#youre-learning-a-new-skill--it-will-feel-slower)
 - [Use Voice](#use-voice)
 - [Throw It Away](#throw-it-away)
 - [You're a Compound Engineer](#youre-a-compound-engineer)
@@ -57,16 +60,6 @@ Fine. Be fully in. Read every line. But while you're in, your real job isn't jus
 The trap: you _think_ you're on the loop (efficient, trusting), but you're actually _neither_ — half-watching, catching nothing, burning thinking tokens on anxiety instead of judgment. The worst of both worlds. You pay the cost of supervision without getting the benefit of attention.
 
 The operator skill: always know which mode you're in, and always be working your way up. If you're in, be fully in — and look for your exit. If you're on, define your checkpoints and actually let go. Never hover.
-
-## You're Learning a New Skill — It Will Feel Slower
-
-Here's the thing nobody tells you: when you're learning to operate AI well, it _will_ feel harder than just doing the work yourself. That's not a sign you're doing it wrong — that's what learning a new skill feels like. The first time you drove a stick shift, you stalled at every light and your old automatic felt like a dream. The first time you typed on a Dvorak keyboard, QWERTY looked like a birthright.
-
-Learning to operate AI is the same. Writing the prompt, reviewing the output, course-correcting, re-prompting — in the moment it feels slower than just banging out the code yourself. And for the specific task in front of you, it often _is_ slower. The win isn't in this task. It's in the next hundred tasks, when you've built the intuition for what to delegate and how, and you're running three agents in parallel while your old self would still be on task one.
-
-You have to force yourself past the valley. Every time you catch yourself thinking "it'd be faster if I just did this myself," ask whether that's true for _this task_ or true because you haven't built the muscle yet. Usually it's the latter. Push through anyway.
-
-The operator skill: when the old way feels faster, it's usually because your old muscles are strong and your operator muscles are weak. Train the weak ones anyway. That's the only way you get good enough to stay on the loop.
 
 ## Use Voice
 
