@@ -195,6 +195,31 @@ Run pre-commit to check: `prek run --files <your-files>`
 
 Use Grep/Glob directly on `_d/`, `_posts/`, and `_td/` directories for text search — faster than the blog MCP. For frontmatter metadata queries (tags, dates, incoming/outgoing links), use `/find-content`.
 
+## Generating Tables of Contents
+
+Blog posts use a TOC block between HTML fence markers. Igor's convention comes from `idvorkin/markdown-toc.nvim` (installed in his nvim config):
+
+```markdown
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc-start -->
+
+<!-- vim-markdown-toc-end -->
+<!-- prettier-ignore-end -->
+```
+
+**Important:** Do NOT use the `vim-markdown-toc GFM` / `vim-markdown-toc` markers (from the unrelated `mzlogin/vim-markdown-toc` plugin) — Igor's setup won't update those, and there is no Jekyll-side hook that regenerates TOCs. The only working path is the `-start` / `-end` markers.
+
+**To generate or refresh the TOC**, run this from the repo root (works headlessly, doesn't disturb Igor's live nvim session as long as you clean the swap file first):
+
+```bash
+rm -f ~/.local/state/nvim/swap/%home%developer%gits%blog4%_d%FILENAME.md.swp
+nvim --headless -n _d/FILENAME.md -c 'Mtoc update' -c 'w' -c 'qa'
+```
+
+The `:Mtoc update` subcommand (from `idvorkin/markdown-toc.nvim`) finds the fenced block, deletes whatever is between the markers, and regenerates the full TOC from the current headings. Anchors use kramdown-compatible slugs (lowercase, punctuation stripped, spaces → hyphens, em-dashes preserved as double hyphens).
+
+Other subcommands if needed: `:Mtoc insert` (create a new fenced block at cursor), `:Mtoc remove` (strip the TOC entirely).
+
 ## AI Journal Entries
 
 When updating `_d/ai-journal.md`:
