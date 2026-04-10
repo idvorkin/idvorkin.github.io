@@ -35,17 +35,23 @@ And the operators who get dramatically better aren't the ones who just practice.
 
 ## You Have a Finite Number of Thinking Tokens
 
-You've seen it in ChatGPT or Claude Code — hit the token limit and the quality falls off a cliff. The model starts forgetting context, repeating itself, missing things it would have caught ten minutes ago. And when you hit it, you're done — stuck until the context window reopens. Humans work the same way. You wake up with a finite budget of deep thinking, and every hard decision, every careful code review, every "wait, is this actually right?" burns through it. By 3pm, you're running on fumes.
+You've had this happen. You're in the middle of making changes — momentum, focus, real progress — and the AI hits its token limit. "Start a new conversation," it says. The context you'd been building together is gone. You're stuck until the window resets.
+
+Now imagine that's your brain. Because it is. You wake up Monday with a finite budget of deep thinking — your own context window — and every hard decision, every careful code review, every "wait, is this actually right?" burns through it. By 3pm the model in your skull starts forgetting context, repeating itself, missing things it would have caught at 10am. By Friday you're done. You're stuck until the weekend resets you.
 
 Simon Willison [described this vividly](https://simonwillison.net/2026/Apr/2/lennys-podcast/) — running four agents in parallel left him "wiped out by 11 AM." _"There's a limit on human cognition regardless of how fast agents work."_ AI is supposed to make us more productive, but the people most AI-pilled are working harder than ever.
 
-This matters for AI operators because the whole point of AI is to extend what you can accomplish in a day. But if you spend your thinking tokens _supervising_ the AI instead of _directing_ it, you haven't saved anything — you've just traded one kind of exhaustion for another. Every decision you make about how to spend your tokens is really a decision about how much you can delegate before the day is done.
+This matters because the whole point of AI is to extend what you can get done in a day. But if you spend your thinking tokens _supervising_ the AI instead of _directing_ it, you haven't saved anything — you've just traded one kind of exhaustion for another.
 
-The operator skill: know which tasks deserve your precious thinking tokens and which ones you can safely delegate. Review the _output_, not the _process_. (The rest of this post is mostly about how to actually do that.)
+The operator skill: know which tasks deserve your precious thinking tokens and which ones you can safely delegate. Review the _output_, not the _process_. (The rest of this post is about how to actually do that.)
 
 ## You Need to Get On the Loop
 
-Pay attention to which mode you're in — that's the whole game. The military has real doctrine for this: [DoD Directive 3000.09](https://en.wikipedia.org/wiki/Human-in-the-loop) on autonomous weapons defines ["human in the loop"](https://en.wikipedia.org/wiki/Human-in-the-loop) (a person approves each action) versus "human on the loop" (the system acts, a person monitors and can intervene). Every moment as an AI operator, one of those is true. Most of us have no idea which.
+Working with an AI agent always looks the same: there's a loop. The AI tries something. Something checks whether it worked. If not, adjust and try again. Repeat until it's good. Coding, writing, anything — every interaction with an agent is some version of try → check → fix → try.
+
+The question is who's doing the checking. When you're _in_ the loop, that's you. You're reading every line, running the tests yourself, watching each step, deciding whether to keep going or course-correct. When you're _on_ the loop, the AI does the checking — it runs its own tests, validates its own output, decides what to fix — and you do the final review when it hits a checkpoint you defined.
+
+Pay attention to which mode you're in. That's the whole game. The military has real doctrine for this: [DoD Directive 3000.09](https://en.wikipedia.org/wiki/Human-in-the-loop) on autonomous weapons defines ["human in the loop"](https://en.wikipedia.org/wiki/Human-in-the-loop) (a person approves each action) versus "human on the loop" (the system acts, a person monitors and can intervene). Every moment as an AI operator, one of those is true. Most of us have no idea which.
 
 **The goal is to get on the loop.** In-the-loop is a zillion times slower, and it burns your thinking tokens on the _process_ instead of the _output_. You're there because you have to be, not because you want to be. The job isn't to stay in the loop doing careful work — the job is to figure out how to climb out.
 
@@ -57,17 +63,23 @@ You start in the loop when you have no choice:
 
 Fine. Be fully in. Read every line. But while you're in, your real job isn't just to ship the task — it's to learn enough to climb out. What does "good" look like here? What are the guardrails? What checkpoints can I define? Once you can answer those, move up to on-the-loop: check results, not process. Define your checkpoints, let go between them, come back when the AI hits one. That's when the economics start working in your favor — parallel agents, delegated drafting, you directing instead of typing.
 
-The trap: you _think_ you're on the loop (efficient, trusting), but you're actually _neither_ — half-watching, catching nothing, burning thinking tokens on anxiety instead of judgment. The worst of both worlds. You pay the cost of supervision without getting the benefit of attention.
+The trap: it's easy to slip into the loop without noticing. You'll think you're on the loop (efficient, trusting), but you're actually _neither_ — half-watching, catching nothing, burning thinking tokens on anxiety instead of judgment. The worst of both worlds. You pay the cost of supervision without getting the benefit of attention. So keep checking which side you're on. If you can't answer it instantly, you've already drifted.
 
 The operator skill: always know which mode you're in, and always be working your way up. If you're in, be fully in — and look for your exit. If you're on, define your checkpoints and actually let go. Never hover.
 
 ## Use Voice
 
-Try this: next time you're about to type out a prompt, hit the voice button instead and just talk. Brain dump the whole thing. What you're trying to do, what you've tried, what's bugging you, the constraint nobody told you about, the weird edge case you half-remember. Don't edit yourself. See what comes out.
+You've had this moment. You're typing out a long email to get someone to do something — explaining the request for the third time after some back-and-forth, watching the miscommunication compound — and you stop and think: _oh, I should just call them._ Two minutes on the phone solves what twenty minutes of email couldn't.
 
-You behave differently when you use voice, the same way you behave differently when you're talking to a person instead of writing them an email. Writing makes you compress, edit, prune. You leave out the context that "obviously" doesn't matter — and half the time it's the context that mattered most. Voice lets you ramble, and ramble is where the useful context lives.
+The same thing happens with AI agents. Voice changes how you communicate. When you talk you ramble, you backfill, you mention the constraint that "obviously" doesn't matter — and half the time it's the constraint that mattered most. Writing makes you compress, edit, prune. The result: when you type, the AI is solving the problem you wrote down; when you talk, the AI is solving the problem you actually have.
 
-The result is often weirdly different from what you would have typed. It's longer, messier, more honest, and — this is the punchline — it delegates better. The AI gets a fuller picture of what you actually want and why, so it stops guessing at the constraints you forgot to mention. You spend less time course-correcting in the loop because you gave the AI the right shape to start with.
+Three things to do every time:
+
+- **Use voice.** Don't type. Hit the mic and brain dump.
+- **Share intent.** Not just the immediate ask — what you're actually trying to accomplish, and why.
+- **Share success criteria.** How will you know it landed? What does "done right" look like?
+
+Do those three and the AI stops guessing at the constraints you forgot to mention. You spend less time course-correcting in the loop because you gave the AI the right shape to start with.
 
 The operator skill: when you're stuck staring at an empty prompt, don't try harder to write it. Talk it out. Better upfront context keeps you on the loop.
 
