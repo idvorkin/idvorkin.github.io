@@ -562,6 +562,24 @@
             "title": "Where am I?",
             "url": "/about"
         },
+        "/act": {
+            "description": "ACT is a therapy tradition I’ve circled for years without ever sitting down with it. Russ Harris’s ACT Made Simple is the practitioner primer — the book therapists actually read when learning Acceptance and Commitment Therapy. These are the concepts I want to lift into my own practice.\n\n",
+            "doc_size": 62000,
+            "file_path": "_site/act.html",
+            "incoming_links": [],
+            "last_modified": "2026-04-10T14:28:52+00:00",
+            "markdown_path": "_d/act.md",
+            "outgoing_links": [
+                "/anxiety",
+                "/awareness",
+                "/emotional-health",
+                "/shame",
+                "/siy"
+            ],
+            "redirect_url": "",
+            "title": "ACT Made Simple: Acceptance and Commitment Therapy",
+            "url": "/act"
+        },
         "/activation": {
             "description": "Doing activities requires will power, addictions and procrastination require negative will power, while positive habits, especially new ones require high will power. Here’s a model for these things.\n\n",
             "doc_size": 28000,
@@ -891,7 +909,7 @@
             "incoming_links": [
                 "/ai-second-brain"
             ],
-            "last_modified": "2026-04-04T00:25:29.912637+00:00",
+            "last_modified": "2026-04-03T16:38:20-07:00",
             "markdown_path": "_d/ai-feed.md",
             "outgoing_links": [
                 "/agency",
@@ -911,7 +929,7 @@
                 "/pet-projects",
                 "/produce-consume",
                 "/productive",
-                "/recommender",
+                "/recommend",
                 "/software-leadership-roles",
                 "/strategy"
             ],
@@ -976,16 +994,16 @@
                 "/walking-with-god",
                 "/y25"
             ],
-            "last_modified": "2026-04-05T16:27:11.501528+00:00",
+            "last_modified": "2026-04-05T09:35:33-07:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
                 "/ai-journal",
                 "/ai-security",
-                "/ai-talk",
                 "/chop",
                 "/chow",
                 "/eulogy",
+                "/genai-talk",
                 "/gpt",
                 "/how-igor-chops",
                 "/hyper-personal",
@@ -1051,7 +1069,8 @@
             "doc_size": 26000,
             "file_path": "_site/ai-relationships.html",
             "incoming_links": [
-                "/ai"
+                "/ai",
+                "/changelog"
             ],
             "last_modified": "2026-04-05T21:39:38.088693+00:00",
             "markdown_path": "_d/ai-relationships.md",
@@ -1195,6 +1214,7 @@
             "doc_size": 23000,
             "file_path": "_site/anxiety.html",
             "incoming_links": [
+                "/act",
                 "/affirmations",
                 "/agency",
                 "/anxiety-management",
@@ -1304,6 +1324,7 @@
             "doc_size": 104000,
             "file_path": "_site/awareness.html",
             "incoming_links": [
+                "/act",
                 "/siy",
                 "/y26"
             ],
@@ -1731,10 +1752,10 @@
         },
         "/changelog": {
             "description": "A weekly summary of what changed on this blog and across my GitHub projects. Useful for returning readers who want to catch up on new content and updates.\n\n",
-            "doc_size": 55000,
+            "doc_size": 67000,
             "file_path": "_site/changelog.html",
             "incoming_links": [],
-            "last_modified": "2026-04-06T15:44:27.164561+00:00",
+            "last_modified": "2026-04-06T09:08:34-07:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
                 "/activation",
@@ -1742,15 +1763,23 @@
                 "/ai-cockpit",
                 "/ai-journal",
                 "/ai-native-manager",
+                "/ai-relationships",
                 "/ai-second-brain",
                 "/claw",
                 "/how-igor-chops",
+                "/human-meetings",
+                "/humans-are-underrated",
+                "/hyper-personal",
+                "/irl",
+                "/keyboard",
+                "/lonely",
+                "/mosh",
                 "/product",
                 "/recent",
                 "/shoulder-pain",
                 "/side-quests",
                 "/spiritual-health",
-                "/y2026"
+                "/y26"
             ],
             "redirect_url": "",
             "title": "Changelog",
@@ -2581,6 +2610,7 @@
             "doc_size": 21000,
             "file_path": "_site/emotional-health.html",
             "incoming_links": [
+                "/act",
                 "/awareness",
                 "/essentialism",
                 "/four-healths",
@@ -3475,6 +3505,7 @@
             "incoming_links": [
                 "/ai-relationships",
                 "/being-a-great-manager",
+                "/changelog",
                 "/eulogy",
                 "/job"
             ],
@@ -3492,6 +3523,7 @@
             "incoming_links": [
                 "/ai-relationships",
                 "/books-that-defined-me",
+                "/changelog",
                 "/chop"
             ],
             "last_modified": "2025-03-01T18:25:15-08:00",
@@ -3520,9 +3552,10 @@
             "incoming_links": [
                 "/ai-journal",
                 "/ai-second-brain",
+                "/changelog",
                 "/how-igor-chops"
             ],
-            "last_modified": "2026-04-05T16:27:11.501528+00:00",
+            "last_modified": "2026-04-05T09:35:33-07:00",
             "markdown_path": "_d/hyper-personal.md",
             "outgoing_links": [
                 "/ai-journal",
@@ -3630,13 +3663,14 @@
         },
         "/irl": {
             "description": "I started writing a technical blog to help me remember the many things I explore. One day, I realized I’ve got a real life too. Here’s a place I can remember the many things I explore IRL (In real Life)\n\n",
-            "doc_size": 90000,
+            "doc_size": 94000,
             "file_path": "_site/irl.html",
             "incoming_links": [
+                "/changelog",
                 "/physical-health",
                 "/td/ios-nomad"
             ],
-            "last_modified": "2026-04-03T20:53:23.119345+00:00",
+            "last_modified": "2026-04-05T14:17:43-07:00",
             "markdown_path": "_td/irl.md",
             "outgoing_links": [
                 "/bike",
@@ -3778,6 +3812,7 @@
             "doc_size": 33000,
             "file_path": "_site/keyboard.html",
             "incoming_links": [
+                "/changelog",
                 "/irl",
                 "/osx"
             ],
@@ -3875,7 +3910,7 @@
         },
         "/learn-code": {
             "description": "Coding is way easier than people think. Here’s some pointers.\n\n",
-            "doc_size": 13000,
+            "doc_size": 14000,
             "file_path": "_site/learn-code.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T02:47:07+00:00",
@@ -3929,6 +3964,7 @@
             "incoming_links": [
                 "/ai-relationships",
                 "/build-life-you-want",
+                "/changelog",
                 "/mental-pain"
             ],
             "last_modified": "2025-12-07T02:40:46+00:00",
@@ -4379,6 +4415,20 @@
             "title": "Time.ltd - Mortality Software",
             "url": "/mortality-software"
         },
+        "/mosh": {
+            "description": "Copied from my GitHub techdiary\n\n",
+            "doc_size": 17000,
+            "file_path": "_site/mosh.html",
+            "incoming_links": [
+                "/changelog"
+            ],
+            "last_modified": "2026-04-06T08:28:46-07:00",
+            "markdown_path": "_td/mosh.md",
+            "outgoing_links": [],
+            "redirect_url": "",
+            "title": "Mosh and Eternal Terminal",
+            "url": "/mosh"
+        },
         "/negative-mitzvahs": {
             "description": "The 365 negative commandments - things you should NOT do. According to tradition, there’s one for each day of the year.\n\n",
             "doc_size": 123000,
@@ -4546,7 +4596,7 @@
             "incoming_links": [
                 "/tools"
             ],
-            "last_modified": "2026-04-03T20:53:23.119345+00:00",
+            "last_modified": "2026-04-03T15:42:12-07:00",
             "markdown_path": "_d/osx.md",
             "outgoing_links": [
                 "/keyboard",
@@ -5096,6 +5146,7 @@
             "file_path": "_site/recommend.html",
             "incoming_links": [
                 "/ai",
+                "/ai-feed",
                 "/ml",
                 "/timeoff-2022-07"
             ],
@@ -5319,6 +5370,7 @@
             "file_path": "_site/shame.html",
             "incoming_links": [
                 "/90days",
+                "/act",
                 "/curious",
                 "/depression",
                 "/emotions",
@@ -5423,6 +5475,7 @@
             "doc_size": 62000,
             "file_path": "_site/siy.html",
             "incoming_links": [
+                "/act",
                 "/anxiety-management",
                 "/awareness",
                 "/be-proactive",
@@ -5998,18 +6051,6 @@
             "redirect_url": "",
             "title": "Minecraft Notes",
             "url": "/td/minecraft"
-        },
-        "/td/mosh": {
-            "description": "Copied from my GitHub techdiary\n\n",
-            "doc_size": 14000,
-            "file_path": "_site/td/mosh.html",
-            "incoming_links": [],
-            "last_modified": "2020-04-11T16:32:11+00:00",
-            "markdown_path": "_td/mosh.md",
-            "outgoing_links": [],
-            "redirect_url": "",
-            "title": "Mosh",
-            "url": "/td/mosh"
         },
         "/td/private_web_site": {
             "description": "Copied from my GitHub techdiary\n\n",
@@ -6820,7 +6861,7 @@
         },
         "/walking-with-god": {
             "description": "Someone important to me has been reading a daily devotional. Even though I’m not religious, I’m studying with them to be able to have conversations about the insights - whether in a secular or religious context. This is my attempt to bridge two worlds: honoring the spiritual wisdom they’re finding while translating it into language that works for my engineer brain.\n\n",
-            "doc_size": 81000,
+            "doc_size": 82000,
             "file_path": "_site/walking-with-god.html",
             "incoming_links": [
                 "/greek-orthodox",
@@ -6872,7 +6913,7 @@
         },
         "/weeks": {
             "description": "\n\n",
-            "doc_size": 4343000,
+            "doc_size": 4346000,
             "file_path": "_site/weeks.html",
             "incoming_links": [
                 "/balance"
