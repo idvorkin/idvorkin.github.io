@@ -12,9 +12,9 @@ redirect_from:
 
 Using AI well is a skill, like driving a car or operating heavy machinery. Nobody hands you the keys to a forklift and says "figure it out." There's a license, training, and hard-won intuition about what the machine can and can't do. AI is the same — except most of us skipped the training, there is no manual, and we're writing the rules as we go.
 
-So the meta-skill — the one that matters more than any specific trick — is _always be learning and improving_. Operating AI well is a brand-new skill, and like any new skill it feels slower than the old way at first. The first time you drove a stick shift, you stalled at every light and your old automatic felt like a dream. Operating AI is the same: in the moment it feels slower, and for the specific task in front of you it often _is_ slower. The win isn't in this task — it's in the next hundred, when you've built the intuition and you're running three agents in parallel while your old self would still be on task one.
+The meta-skill is _always be learning and improving_. Operating AI is a new skill, and like any new skill it feels slower than the old way at first. The first time you drove a stick shift, you stalled at every light and your old automatic felt like a dream. Operating AI is the same: in the moment it feels slower, and for the task in front of you it often _is_ slower. The win isn't in this task — it's in the next hundred, when you've built the intuition and you're running three agents in parallel while your old self would still be on task one.
 
-And the operators who get dramatically better aren't the ones who just practice. They're the ones who capture what they learned, fold it into how they work, and show up tomorrow a little sharper than yesterday. The rest of this post is the methods I use to do that.
+The operators who get better aren't the ones who just practice. They're the ones who capture what they learned, fold it into how they work, and show up tomorrow a little sharper than yesterday. The rest of this post is the methods I use to do that.
 
 {% include blob_image_float_right.html src="blog/raccoon-cockpit.webp" %}
 
@@ -39,9 +39,9 @@ You've had this happen. You're in the middle of making changes — momentum, foc
 
 Now imagine that's your brain. Because it is. You wake up Monday with a finite budget of deep thinking — your own context window — and every hard decision, every careful code review, every "wait, is this actually right?" burns through it. By 3pm the model in your skull starts forgetting context, repeating itself, missing things it would have caught at 10am. By Friday you're done. You're stuck until the weekend resets you.
 
-Simon Willison [described this vividly](https://simonwillison.net/2026/Apr/2/lennys-podcast/) — running four agents in parallel left him "wiped out by 11 AM." _"There's a limit on human cognition regardless of how fast agents work."_ AI is supposed to make us more productive, but the people most AI-pilled are working harder than ever.
+Simon Willison [said it plainly](https://simonwillison.net/2026/Apr/2/lennys-podcast/): running four agents in parallel left him "wiped out by 11 AM." _"There's a limit on human cognition regardless of how fast agents work."_ AI is supposed to make us more productive, but the people most AI-pilled are working harder than ever.
 
-This matters because the whole point of AI is to extend what you can get done in a day. But if you spend your thinking tokens _supervising_ the AI instead of _directing_ it, you haven't saved anything — you've just traded one kind of exhaustion for another.
+The point of AI is to extend what you can get done in a day. If you spend your thinking tokens _supervising_ the AI instead of _directing_ it, you haven't saved anything — you've traded one kind of exhaustion for another.
 
 The operator skill: know which tasks deserve your precious thinking tokens and which ones you can safely delegate. Review the _output_, not the _process_. (The rest of this post is about how to actually do that.)
 
@@ -63,7 +63,7 @@ You start in the loop when you have no choice:
 
 Fine. Be fully in. Read every line. But while you're in, your real job isn't just to ship the task — it's to learn enough to climb out. What does "good" look like here? What are the guardrails? What checkpoints can I define? Once you can answer those, move up to on-the-loop: check results, not process. Define your checkpoints, let go between them, come back when the AI hits one. That's when the economics start working in your favor — parallel agents, delegated drafting, you directing instead of typing.
 
-The trap: it's easy to slip into the loop without noticing. You'll think you're on the loop (efficient, trusting), but you're actually _neither_ — half-watching, catching nothing, burning thinking tokens on anxiety instead of judgment. The worst of both worlds. You pay the cost of supervision without getting the benefit of attention. So keep checking which side you're on. If you can't answer it instantly, you've already drifted.
+The trap: it's easy to slip into the loop without noticing. You'll think you're on the loop (efficient, trusting), but you're actually _neither_ — half-watching, catching nothing, burning thinking tokens on anxiety instead of judgment. You pay the cost of supervision without the benefit of attention. So keep checking which side you're on. If you can't answer it instantly, you've already drifted.
 
 The operator skill: always know which mode you're in, and always be working your way up. If you're in, be fully in — and look for your exit. If you're on, define your checkpoints and actually let go. Never hover.
 
@@ -97,11 +97,11 @@ The operator skill: watch for the sunk cost reflex. When you catch yourself tryi
 
 ## You're a Compound Engineer
 
-Every session with the AI teaches you something — a prompt shape that worked, a constraint you forgot to specify, a place the AI kept going sideways until you spelled out the obvious thing. The operators who get dramatically better over time are the ones who _capture_ those learnings instead of letting them evaporate. The ones who don't are running the same mistakes on loop.
+Every session with the AI teaches you something — a prompt shape that worked, a constraint you forgot to specify, a place the AI kept going sideways until you spelled out the obvious thing. The operators who get better over time are the ones who _capture_ those learnings instead of letting them evaporate. The ones who don't are running the same mistakes on loop.
 
 This is compound engineering. You're not just shipping the task in front of you; you're investing in the operator you'll be next month. Every retro, every updated CLAUDE.md, every new skill, every workflow you codify is a deposit, and the interest compounds. Six months in, the gap between an operator who journals their learnings and one who doesn't is enormous.
 
-**Do retros.** At the end of a session — or at least at the end of a week — look back and ask the one question that matters most: _where did I get stuck in the loop?_ What did I have to re-explain three times before the AI got it? Where did I hover because I didn't trust the output? That friction is gold. It's pointing at exactly what your next iteration should fix.
+**Do retros.** At the end of a session — or at least a week — look back and ask one question: _where did I get stuck in the loop?_ What did I have to re-explain three times before the AI got it? Where did I hover because I didn't trust the output? Those moments are pointing at exactly what your next iteration should fix.
 
 **Update your CLAUDE.md.** Whatever you had to re-explain three times, put it in the instructions so you never have to explain it again. The `claude-md-improver` skill exists for exactly this — it audits your CLAUDE.md against session learnings and folds them in, so next time the AI already knows.
 
