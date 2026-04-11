@@ -62,7 +62,7 @@ sudo apt install cpulimit
 
 The watchdog lives in my settings repo and is symlinked into `~/bin/cpu-watchdog.sh`:
 
-- Script: [`~/settings/shared/cpu-watchdog.sh`](https://github.com/idvorkin/settings) (about 126 lines of bash)
+- Script: [`~/settings/shared/cpu-watchdog.sh`](https://github.com/idvorkin/Settings/blob/main/shared/cpu-watchdog.sh) (~60 lines of bash)
 - Symlink: `~/bin/cpu-watchdog.sh` → the file in the settings repo
 
 What it does, in 30 seconds:
@@ -72,7 +72,7 @@ What it does, in 30 seconds:
 3. If not, attach `cpulimit -l 200 -p <pid> -z -q` to cap it at 200% (two cores). `-z` exits when the target exits; `-q` is quiet.
 4. Skip anything in the exclude list — critical processes where throttling would wedge the VM.
 
-The exact values, excludes, and flags are in the script — I don't want to embed 126 lines here and then drift out of sync.
+The exact values, excludes, and flags are in the script — I don't want to embed it here and then drift out of sync.
 
 ### Boot hook in `~/.zshrc`
 
@@ -91,43 +91,61 @@ After a VM reboot, the first zsh you launch brings the watchdog back up. If you 
 
 ### Defaults
 
-| Knob               | Value | Meaning                                             |
-| ------------------ | ----- | --------------------------------------------------- |
-| Scan interval      | 30s   | How often to run `top` and look for offenders.      |
-| Fire threshold     | 400%  | A process sustaining >4 cores triggers the limiter. |
-| Cap                | 200%  | Offenders get pinned to 2 cores worth.              |
-| `top` sample count | 2     | First sample is noise; use the second.              |
+| Knob               | Value                   | Env override              | Meaning                                             |
+| ------------------ | ----------------------- | ------------------------- | --------------------------------------------------- |
+| Scan interval      | 30s                     | `CPU_WATCHDOG_INTERVAL`   | How often to run `top` and look for offenders.     |
+| Fire threshold     | 400%                    | `CPU_WATCHDOG_THRESHOLD`  | A process sustaining >4 cores triggers the limiter.|
+| Cap                | 200%                    | `CPU_WATCHDOG_LIMIT`      | Offenders get pinned to 2 cores worth.             |
+| Log file           | `/tmp/cpu-watchdog.log` | `CPU_WATCHDOG_LOG`        | Where throttle events are recorded.                |
+| `top` sample count | 2                       | (hard-coded)              | First sample is noise; use the second.             |
 
-These are tuned for a 10-core VM. If your ceiling is smaller, scale down proportionally.
+These are tuned for a 10-core VM. If your ceiling is smaller, scale down proportionally. Every knob except `top` sample count can be overridden per-invocation via the env vars above — useful for smoke tests (see below).
 
 ### Exclude list
 
 The watchdog refuses to limit anything in this list, so it can't wedge the VM by throttling the thing that's keeping it alive:
 
 - `tailscaled` — network comes from here
-- `etserver` — my shell sessions come from here
-- `tmux:*` — tmux server and panes; throttling these makes the VM feel broken
+- `etserver` and `etterminal` — ET server + the per-session client binaries that carry my actual shell. Throttle either and you lock yourself out of your own SSH session.
+- `tmux` and `"tmux:"*` — tmux server and panes; throttling these makes the VM feel broken. Both the bare `tmux` comm (from `/proc/PID/comm`) and the argv form `tmux: server` are matched.
 - `dolt` — hosts the beads issue tracker; long-running legit CPU
-- Kernel threads (PID < 100, `[kworker/*]`, etc.)
+- `cpulimit` — don't let the watchdog throttle its own limiters (self-deadlock)
+- `sh`, `init`, `systemd` — PID 1 / init-like processes; SIGSTOP'ing them hurts
+- Kernel threads by comm pattern: `kthreadd`, `kworker*`, `ksoftirqd*`, `migration*`, `rcu_*`
 
 If a critical process goes rogue you'll still have the [Layer 1 hypervisor cap](#layer-1--orbstack-hypervisor-cap-mac-side) protecting the Mac — and you can kill the process manually — but the watchdog itself won't touch it.
 
 ## Smoke test
 
+The production thresholds (400%/200%/30s) make a real smoke test tedious — you'd have to burn four cores for half a minute. Instead, launch a second watchdog with low test thresholds against a separate log file so it fires in seconds:
+
 ```bash
-# In one pane: start a CPU burner.
+# 1. Start a test watchdog with low thresholds and its own log.
+CPU_WATCHDOG_LIMIT=30 \
+CPU_WATCHDOG_THRESHOLD=50 \
+CPU_WATCHDOG_INTERVAL=5 \
+CPU_WATCHDOG_LOG=/tmp/cpu-watchdog.test.log \
+  ~/bin/cpu-watchdog.sh &
+WATCHDOG=$!
+
+# 2. Burn a core.
 yes > /dev/null &
 BURNER=$!
 
-# Watch it in top — it should pin one core at ~100% then, within
-# ~30s, get stopped/started by cpulimit so it hovers around the cap.
-top -b -n 4 -d 5 -p $BURNER | grep yes
+# 3. Wait one scan cycle + cpulimit settle.
+sleep 15
 
-# Clean up.
-kill $BURNER
+# 4. Verify the watchdog caught it and throttled to ~30%.
+cat /tmp/cpu-watchdog.test.log             # should contain: throttle pid=$BURNER ... → cap 30%
+/usr/bin/ps -p $BURNER -o pid,pcpu,comm,state  # %CPU ~30, state T (caught mid SIGSTOP)
+pgrep -af cpulimit                         # should show cpulimit -p $BURNER
+
+# 5. Cleanup.
+kill $BURNER $WATCHDOG 2>/dev/null
+rm -f /tmp/cpu-watchdog.test.log
 ```
 
-You should see the `yes` process taking ~100% of one CPU until the next watchdog scan, then dropping to the configured cap (divided across real elapsed time — SIGSTOP duty cycling looks juddery in `top`, not smooth). Log goes to `/tmp/cpu-watchdog.log`.
+You should see `yes` at ~100% on one core until the first 5s scan, then dropping to ~30% with state `T` — cpulimit is duty-cycling it via SIGSTOP/SIGCONT. It looks juddery in `top`, not smooth. Test log goes to `/tmp/cpu-watchdog.test.log`; the real watchdog (if it's also running) logs to `/tmp/cpu-watchdog.log`.
 
 ## Gotchas
 
