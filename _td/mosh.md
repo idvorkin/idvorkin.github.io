@@ -150,6 +150,50 @@ nc -zv <hostname> 2022
 ssh developer@<hostname> 'which etterminal'
 ```
 
+### Bonus: CPU runaway watchdog (same boot-hook pattern)
+
+An OrbStack dev VM will happily let one runaway process (a Claude agent loop, a Jekyll rebuild gone wild, `yes > /dev/null` from a typo) eat every core until the whole Mac grinds. The fix I run is a **two-layer CPU guard** — the same boot-hook pattern as etserver, just for a different problem.
+
+- **Layer 1 — Mac-side hypervisor cap:** `orb config set cpu <N>` on the Mac (pick physical cores − 1 so the Mac always has a core to itself). This is the hard ceiling.
+- **Layer 2 — in-VM reactive watchdog:** a small shell script that polls `top` every 30s, and when a user process exceeds a threshold, attaches `cpulimit` to throttle it. Script lives in my settings repo at [`shared/cpu-watchdog.sh`](https://github.com/idvorkin/Settings/blob/main/shared/cpu-watchdog.sh).
+
+```bash
+# 1. Install cpulimit from apt (NOT Homebrew — see gotcha below)
+sudo apt install -y cpulimit
+
+# 2. Symlink the script from ~/settings
+mkdir -p ~/bin
+ln -sf ~/settings/shared/cpu-watchdog.sh ~/bin/cpu-watchdog.sh
+
+# 3. Add the boot hook to ~/.zshrc — next to the tailscaled and etserver hooks
+cat >> ~/.zshrc << 'EOF'
+
+# Start in-VM CPU watchdog (Layer 2 of the two-layer CPU guard)
+if [ -x ~/bin/cpu-watchdog.sh ] && ! pgrep -f 'bin/cpu-watchdog.sh$' > /dev/null; then
+    setsid ~/bin/cpu-watchdog.sh &>/dev/null &
+fi
+EOF
+
+# 4. Start it now (don't wait for a new shell)
+setsid ~/bin/cpu-watchdog.sh &>/dev/null &
+```
+
+Verify it's alive and caught the boot line:
+
+```bash
+pgrep -af 'bin/cpu-watchdog.sh$'
+tail -1 /tmp/cpu-watchdog.log   # should show "cpu-watchdog starting ..."
+```
+
+#### OrbStack / Linux gotchas
+
+- **systemd-run doesn't work inside OrbStack.** The canonical 2026 move is `systemd-run --scope -p CPUQuota=N%`, but OrbStack's PID 1 is a bare `sh` loop (no systemd), and `/sys/fs/cgroup` is mounted read-only with the remount capability stripped. Userspace `cpulimit` is the fallback.
+- **Homebrew cpulimit on Linux is an unrelated fork stuck at v0.2** — it lacks `-q` and other flags the watchdog uses, and it silently errors out. Worse, linuxbrew prepends its bin to PATH, so if you've ever run `brew install cpulimit` it will shadow `/usr/bin/cpulimit` even after you `apt install cpulimit`. Symptom: the watchdog log shows a `throttle pid=...` line every scan but `%CPU` never drops. Fix: `brew uninstall cpulimit` or hardcode `/usr/bin/cpulimit` in the script.
+- **cpulimit is per-process, not cumulative.** Ten processes each sitting just under the threshold stay invisible even though they sum to 10 cores. That's what Layer 1 is for — the watchdog is an early reactive throttle, not the ceiling.
+- **Root-owned processes are invisible** (cpulimit can only signal processes it can `kill()`), along with the exclusion list (`tailscaled`, `etserver`, `dolt`, `tmux`, etc.). Fine for dev workloads; don't use this for system services.
+
+Smoke test the whole stack with `CPU_WATCHDOG_LIMIT=30 CPU_WATCHDOG_THRESHOLD=50 CPU_WATCHDOG_INTERVAL=5 ~/bin/cpu-watchdog.sh &` against a `yes > /dev/null` burner and confirm `ps` shows the burner dropping to ~30% and a live `/usr/bin/cpulimit -l 30 -p <pid>` child.
+
 ---
 
 ## Mosh
