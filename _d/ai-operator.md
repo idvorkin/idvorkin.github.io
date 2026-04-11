@@ -28,7 +28,6 @@ The operators who get better aren't the ones who just practice. They're the ones
 - [Use Voice](#use-voice)
 - [Throw It Away](#throw-it-away)
 - [You're a Compound Engineer](#youre-a-compound-engineer)
-- [Keep Learning](#keep-learning)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -41,9 +40,7 @@ Now imagine that's your brain. Because it is. You wake up with a finite budget o
 
 Simon Willison [said it plainly](https://simonwillison.net/2026/Apr/2/lennys-podcast/): running four agents in parallel left him "wiped out by 11 AM." _"There's a limit on human cognition regardless of how fast agents work."_ AI is supposed to make us more productive, but the people most AI-pilled are working harder than ever.
 
-The point of AI is to extend what you can get done in a day. If you spend your thinking tokens _supervising_ the AI instead of _directing_ it, you haven't saved anything — you've traded one kind of exhaustion for another.
-
-The operator skill: know which tasks deserve your precious thinking tokens and which ones you can safely delegate. Review the _output_, not the _process_. (The rest of this post is about how to actually do that.)
+The point of AI is to extend what you can get done in a day. If you spend your thinking tokens _supervising_ the AI instead of _directing_ it, you haven't saved anything — you've traded one kind of exhaustion for another. The rest of this post is how to actually spend them right.
 
 ## You Need to Get On the Loop
 
@@ -79,13 +76,11 @@ Three things to do every time:
 - **Share intent.** Not just the immediate ask — what you're actually trying to accomplish, and why.
 - **Share success criteria.** How will you know it landed? What does "done right" look like?
 
-Do those three and the AI stops guessing at the constraints you forgot to mention. You spend less time course-correcting in the loop because you gave the AI the right shape to start with.
-
-The operator skill: when you're stuck staring at an empty prompt, don't try harder to write it. Talk it out. Better upfront context keeps you on the loop.
+Do those three and the AI stops guessing at the constraints you forgot to mention. You spend less time course-correcting in the loop because you gave the AI the right shape to start with. Next time you're stuck staring at an empty prompt, don't try harder to write it. Talk it out.
 
 ## Throw It Away
 
-When the AI goes in the weeds, throw it away. Start over. You already got the expensive part — the _learning_ — and the code itself was basically free to generate. The next attempt will be better because you know more now.
+When the AI drives off course, throw it away. Start over. You already got the expensive part — the _learning_ — and the code itself was basically free to generate. The next attempt will be better because you know more now.
 
 This is harder than it sounds, because we're all trained on the old economics. In the old world, code was precious. You wrote every line yourself, you debugged it for an hour, you argued about it in a PR. Of course you got attached. Throwing away two hours of work hurt because those two hours were _expensive_ — you burned real thinking tokens on them.
 
@@ -93,13 +88,13 @@ In AI land, the economics flipped. The code is cheap; the thinking is expensive.
 
 Worse, rescuing a bad generation is a trap: it pulls you line-by-line back into the loop, burning thinking tokens you can't afford on code the AI could regenerate for free.
 
-The operator skill: watch for the sunk cost reflex. When you catch yourself trying to rescue a bad generation instead of re-running it, that's the old economics talking. Listen to the new economics instead: throw it away, it's free.
+Watch for the sunk cost reflex. When you catch yourself trying to rescue a bad generation instead of re-running it, that's the old economics talking. Throw it away. It's free.
 
 ## You're a Compound Engineer
 
 Every session with the AI teaches you something — a prompt shape that worked, a constraint you forgot to specify, a place the AI kept going sideways until you spelled out the obvious thing. The operators who get better over time are the ones who _capture_ those learnings instead of letting them evaporate. The ones who don't are running the same mistakes on loop.
 
-This is compound engineering. You're not just shipping the task in front of you; you're investing in the operator you'll be next month. Every retro, every updated CLAUDE.md, every new skill, every workflow you codify is a deposit, and the interest compounds. Six months in, the gap between an operator who journals their learnings and one who doesn't is enormous.
+This is compound engineering. You're not just shipping the task in front of you; you're investing in the operator you'll be next month. Every retro, every updated CLAUDE.md, every new skill, every workflow you codify is a deposit, and the interest compounds. Six months in, the gap between an operator who keeps a logbook and one who doesn't is enormous.
 
 **Do retros.** At the end of a session — or at least a week — look back and ask one question: _where did I get stuck in the loop?_ What did I have to re-explain three times before the AI got it? Where did I hover because I didn't trust the output? Those moments are pointing at exactly what your next iteration should fix.
 
@@ -108,7 +103,3 @@ This is compound engineering. You're not just shipping the task in front of you;
 **Upgrade your skills and workflows.** A prompt you ran twice is a prompt that should become a skill. A checklist you followed by hand is a workflow. The second time you do something manually, you're leaving compound interest on the table.
 
 The operator skill: treat every in-the-loop moment as a signal, not a setback. The place you got stuck today is the place you're about to automate away tomorrow — and _that_ is how you climb out of the loop for good.
-
-## Keep Learning
-
-_This is a living document. As I learn more about operating AI well, I'll add to it._
