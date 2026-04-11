@@ -564,10 +564,10 @@
         },
         "/act": {
             "description": "ACT is a therapy tradition I’ve circled for years without ever sitting down with it. Russ Harris’s ACT Made Simple is the practitioner primer — the book therapists actually read when learning Acceptance and Commitment Therapy. These are the concepts I want to lift into my own practice.\n\n",
-            "doc_size": 62000,
+            "doc_size": 268000,
             "file_path": "_site/act.html",
             "incoming_links": [],
-            "last_modified": "2026-04-10T14:28:52+00:00",
+            "last_modified": "2026-04-11T01:58:47.914596+00:00",
             "markdown_path": "_d/act.md",
             "outgoing_links": [
                 "/anxiety",
