@@ -63,11 +63,16 @@ Pattern: `{pr-url}/files`
 
 This saves a click and goes directly to what matters - the code changes.
 
-### Committing Content Changes: back-links.json Gotcha
+### Committing: the "stash conflicted with hook" rollback
 
-Pre-commit hooks regenerate `back-links.json` whenever a markdown file's outgoing links change. If you leave it unstaged, prek stashes it, the hook re-writes it, and the stash pop conflicts — **your commit silently rolls back with "Stashed changes conflicted with changes made by hook."**
+Pre-commit hooks here **rewrite files** — backlinks regen, prettier, last-modified stamps, and more. prek stashes your unstaged changes before running hooks, so when a hook rewrites a file you also had modified-but-unstaged, the stash pop conflicts and **your commit silently rolls back** with "Stashed changes conflicted with changes made by hook." The pre-commit output still shows all checks ✅ Passed, so it's easy to miss — always check `git log -1` after committing.
 
-Fix: stage `back-links.json` together with the markdown file in the same commit. It's auto-maintained upstream via `chore: update backlinks [skip ci]` commits anyway, so bundling it with your change is harmless.
+**Fix: stage every file a hook might touch, even ones unrelated to your change.** The two recurring cases:
+
+- **`back-links.json`** — regenerated whenever a markdown file's outgoing links change. Stage it with the markdown edit. It's auto-maintained upstream via `chore: update backlinks [skip ci]` commits anyway, so bundling is harmless.
+- **Any file prettier reformats** — if you touched `CLAUDE.md`, `_d/*.md`, or similar and the prettier hook finds whitespace/formatting tweaks anywhere in them, stage the whole file after the first (failed) commit attempt and retry.
+
+General rule: if a commit appears to succeed but `git log -1` shows the previous commit, run `git status`, stage everything the hook touched, and commit again.
 
 ### PR Screenshots for Content Changes
 
