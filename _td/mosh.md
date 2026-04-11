@@ -30,13 +30,15 @@ sudo ln -s /home/linuxbrew/.linuxbrew/bin/etterminal /usr/local/bin/etterminal
 # 3. Config: bind to all interfaces (needed for Tailscale)
 echo 'bindip=0.0.0.0' | sudo tee /etc/et.cfg
 
-# 4. Fix pidfile permissions and start the daemon
-sudo touch /var/run/etserver.pid && sudo chmod 666 /var/run/etserver.pid
-etserver --cfgfile /etc/et.cfg --daemon
+# 4. Create the pidfile (root-owned, standard permissions) and start the daemon
+sudo touch /var/run/etserver.pid && sudo chmod 644 /var/run/etserver.pid
+sudo etserver --cfgfile /etc/et.cfg --daemon
 
 # 5. Verify it's listening
 ss -tlnp | grep 2022
 ```
+
+Running etserver via `sudo` keeps the pidfile owned by root (644) — matches the init.d behavior below and avoids a world-writable pidfile.
 
 #### Auto-start on boot (init.d)
 
@@ -61,13 +63,32 @@ CFGFILE=/etc/et.cfg
 case "$1" in
   start)
     echo "Starting etserver..."
-    touch "$PIDFILE"
+    touch "$PIDFILE" && chmod 644 "$PIDFILE"
     $DAEMON --cfgfile "$CFGFILE" --daemon
+    sleep 1
+    if [ -s "$PIDFILE" ] && kill -0 "$(cat "$PIDFILE")" 2>/dev/null; then
+      echo "etserver started (pid $(cat "$PIDFILE"))"
+    else
+      echo "Failed to start etserver"
+      exit 1
+    fi
     ;;
   stop)
     echo "Stopping etserver..."
-    [ -f "$PIDFILE" ] && kill "$(cat "$PIDFILE")" 2>/dev/null
-    rm -f "$PIDFILE"
+    if [ -s "$PIDFILE" ]; then
+      PID=$(cat "$PIDFILE")
+      if kill -0 "$PID" 2>/dev/null; then
+        kill "$PID"
+        sleep 1
+        kill -0 "$PID" 2>/dev/null && kill -9 "$PID"
+        echo "etserver stopped"
+      else
+        echo "etserver not running (stale pidfile)"
+      fi
+      rm -f "$PIDFILE"
+    else
+      echo "etserver not running (no pidfile)"
+    fi
     ;;
   restart)
     $0 stop
@@ -103,7 +124,7 @@ et developer@<tailscale-hostname>
 - **Bind to 0.0.0.0** — ET defaults to localhost, but Tailscale traffic arrives on the tailscale0 interface.
 - **Port 2022** — Make sure your Tailscale ACLs allow port 2022 between nodes.
 - **You DO need to run etserver as a daemon with Tailscale SSH** — ET normally bootstraps its own server via SSH, but Tailscale SSH's environment doesn't support this. Run `etserver --daemon` and set up the init.d script above for persistence across reboots.
-- **Pidfile permissions** — `etserver --daemon` writes to `/var/run/etserver.pid`. In OrbStack containers the file may not exist or be writable — `touch` and `chmod 666` it before starting.
+- **Pidfile permissions** — `etserver --daemon` writes to `/var/run/etserver.pid`. In OrbStack containers the file may not exist yet — create it with `sudo touch /var/run/etserver.pid && sudo chmod 644 /var/run/etserver.pid` and run etserver via `sudo` so root owns the pidfile. Don't `chmod 666` it (world-writable pidfile = anyone can write a fake PID that the init script would then `kill` as root).
 
 ### Verify
 
