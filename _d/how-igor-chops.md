@@ -70,6 +70,7 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
   - [Revenge of the SDET](#revenge-of-the-sdet)
   - [Hyper-Personalized Software](#hyper-personalized-software)
   - [The Joy Question](#the-joy-question)
+  - [The Flow Question](#the-flow-question)
   - [What I'm Betting On](#what-im-betting-on)
 - [Appendix: Open Questions](#appendix-open-questions)
   - [What happens when execution is no longer the bottleneck?](#what-happens-when-execution-is-no-longer-the-bottleneck)
@@ -417,6 +418,14 @@ My take: the joy shifts, it doesn't disappear. Less joy in typing code, more joy
 - Solving problems I couldn't tackle alone
 
 It's like the transition from assembly to high-level languages. Some people mourned losing the craft of register allocation. Most found new joys in the problems they could now solve.
+
+### The Flow Question
+
+Someone asked me: "Can you still get flow when you're chopping? You're not even writing the code." They assumed no — that flow lives in the typing.
+
+I'm in flow constantly. It comes from orchestrating — juggling two or three agents at different points in their loops, nudging one, reviewing another, letting the third cook. That rhythm is its own zone, which is exactly why I built [the cockpit](#the-control-panel---for-this-human). And it comes from mastery — I'm nowhere near done learning how to operate these things (see [/ai-operator](/ai-operator)), and challenge-meeting-skill is where flow has always lived.
+
+That's where the joy of chopping comes from for me. Not mourning the typing — being in the zone while orchestrating a team.
 
 ### What I'm Betting On
 
