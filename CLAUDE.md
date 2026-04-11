@@ -154,7 +154,9 @@ Just do it - including obvious follow-up actions. Only pause when:
 
 ## Content Skills — Use These First
 
-**Before working on any blog content, invoke the appropriate skill.** Skills load full guidelines, set up branches, and enforce correct workflows. Skipping them leads to mistakes (wrong ai-slop placement, missing cross-links, etc).
+**Before working on any blog content, invoke the appropriate skill.** Skills load full guidelines, set up branches, and enforce correct workflows. Skipping them leads to mistakes (wrong ai-slop placement, missing cross-links, AI voice tells that will be rejected).
+
+**If you catch yourself about to write more than 2-3 sentences of prose** that will land in `_d/`, `_td/`, or `_posts/`, stop and load `content_guidelines.md` (via `/content`, `/ai-content`, or directly). AI voice patterns show up almost immediately in unguided prose — see `content_guidelines.md` § Avoiding AI Writing Patterns for the full list to scrub. Cost of skipping: freestyle content gets rewritten or dropped on review.
 
 | Task                      | Skill                             | What it does                                                         |
 | ------------------------- | --------------------------------- | -------------------------------------------------------------------- |
