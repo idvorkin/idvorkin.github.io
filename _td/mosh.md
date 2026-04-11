@@ -40,9 +40,11 @@ ss -tlnp | grep 2022
 
 Running etserver via `sudo` keeps the pidfile owned by root (644) — matches the init.d behavior below and avoids a world-writable pidfile.
 
-#### Auto-start on boot (init.d)
+#### Auto-start on boot (init.d script + shell hook)
 
-OrbStack containers don't have systemd, so use an init.d script:
+OrbStack containers have neither systemd nor sysv-init — PID 1 is a trivial `sh` loop that never runs `/etc/rc*.d/*`. So `update-rc.d` alone won't bring etserver back after a VM restart. The working pattern here is the same one tailscaled uses: an init.d script that owns start/stop, plus a one-line hook in `~/.zshrc` that calls it when the first interactive shell comes up.
+
+First, the init.d script:
 
 ```bash
 sudo tee /etc/init.d/etserver << 'EOF'
@@ -103,8 +105,19 @@ esac
 exit 0
 EOF
 sudo chmod +x /etc/init.d/etserver
-sudo update-rc.d etserver defaults
 ```
+
+Then the shell hook — drop this into `~/.zshrc` next to your tailscaled bootstrap:
+
+```bash
+# Start Eternal Terminal server if not already running.
+# OrbStack's PID 1 is a trivial sh loop, so /etc/rc*.d never runs — hook it here.
+if [ -x /etc/init.d/etserver ] && ! pgrep -x etserver > /dev/null; then
+    sudo /etc/init.d/etserver start &>/dev/null &
+fi
+```
+
+After a VM reboot, the first zsh you launch brings etserver back. Without this hook, the init.d script just sits there — nothing ever calls it.
 
 ### Install on Mac (client only)
 
@@ -123,7 +136,8 @@ et developer@<tailscale-hostname>
 - **Symlinks are mandatory** — ET's client SSHes in and runs `etterminal` (not `etserver`). Tailscale SSH non-interactive sessions only have `/usr/local/bin` in PATH, not `/home/linuxbrew/.linuxbrew/bin`. Without the symlinks, `etterminal` isn't found and the connection fails silently.
 - **Bind to 0.0.0.0** — ET defaults to localhost, but Tailscale traffic arrives on the tailscale0 interface.
 - **Port 2022** — Make sure your Tailscale ACLs allow port 2022 between nodes.
-- **You DO need to run etserver as a daemon with Tailscale SSH** — ET normally bootstraps its own server via SSH, but Tailscale SSH's environment doesn't support this. Run `etserver --daemon` and set up the init.d script above for persistence across reboots.
+- **You DO need to run etserver as a daemon with Tailscale SSH** — ET normally bootstraps its own server via SSH, but Tailscale SSH's environment doesn't support this. Run `etserver --daemon` and set up the init.d script + `~/.zshrc` hook above for persistence across reboots.
+- **`update-rc.d` is a trap on OrbStack** — the rc.d symlinks land in place but OrbStack's PID 1 is a bare `sh -c 'while true; do tmux...'` loop. Nothing executes `/etc/rc2.d/*` on boot. The `~/.zshrc` hook is what actually restarts etserver after a VM restart.
 - **Pidfile permissions** — `etserver --daemon` writes to `/var/run/etserver.pid`. In OrbStack containers the file may not exist yet — create it with `sudo touch /var/run/etserver.pid && sudo chmod 644 /var/run/etserver.pid` and run etserver via `sudo` so root owns the pidfile. Don't `chmod 666` it (world-writable pidfile = anyone can write a fake PID that the init script would then `kill` as root).
 
 ### Verify
