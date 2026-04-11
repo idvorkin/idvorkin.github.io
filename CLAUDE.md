@@ -63,6 +63,12 @@ Pattern: `{pr-url}/files`
 
 This saves a click and goes directly to what matters - the code changes.
 
+### Committing Content Changes: back-links.json Gotcha
+
+Pre-commit hooks regenerate `back-links.json` whenever a markdown file's outgoing links change. If you leave it unstaged, prek stashes it, the hook re-writes it, and the stash pop conflicts — **your commit silently rolls back with "Stashed changes conflicted with changes made by hook."**
+
+Fix: stage `back-links.json` together with the markdown file in the same commit. It's auto-maintained upstream via `chore: update backlinks [skip ci]` commits anyway, so bundling it with your change is harmless.
+
 ### PR Screenshots for Content Changes
 
 For content/visual PRs, include a rendered screenshot in the PR description. Protocol:
