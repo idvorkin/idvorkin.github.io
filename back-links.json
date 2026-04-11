@@ -3466,7 +3466,7 @@
         },
         "/how-igor-chops": {
             "description": "I mumble to Claude on my couch while my family wonders who I’m talking to. I vibe code in the car while my son drives. I rent the most expensive brain I can get. This is my CHOP (Chat-Oriented Programming) setup: the infrastructure, the tools, and what I’ve learned.\n\n",
-            "doc_size": 50000,
+            "doc_size": 51000,
             "file_path": "_site/how-igor-chops.html",
             "incoming_links": [
                 "/ai",
@@ -3479,11 +3479,12 @@
                 "/y25",
                 "/y26"
             ],
-            "last_modified": "2026-02-22T22:09:55+00:00",
+            "last_modified": "2026-04-11T15:16:14.918308+00:00",
             "markdown_path": "_d/how-igor-chops.md",
             "outgoing_links": [
                 "/40yo",
                 "/ai-cockpit",
+                "/ai-operator",
                 "/chop",
                 "/chow",
                 "/enable",
