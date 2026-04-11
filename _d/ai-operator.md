@@ -2,7 +2,7 @@
 layout: post
 title: "The AI Operator: Learning to Drive the Machine"
 permalink: /ai-operator
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-cockpit.webp
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-operator.webp
 tags:
   - ai
   - how
@@ -16,10 +16,6 @@ The meta-skill is _always be learning and improving_. Operating AI is a new skil
 
 The operators who get better aren't the ones who just practice. They're the ones who capture what they learned, fold it into how they work, and show up tomorrow a little sharper than yesterday. The rest of this post is the methods I use to do that.
 
-{% include blob_image_float_right.html src="blog/raccoon-cockpit.webp" %}
-
-{% include ai-slop.html percent="80" %}
-
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
@@ -31,6 +27,10 @@ The operators who get better aren't the ones who just practice. They're the ones
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+{% include blob_image_float_right.html src="blog/raccoon-operator.webp" %}
+
+{% include ai-slop.html percent="80" %}
 
 ## You Have a Finite Number of Thinking Tokens
 
