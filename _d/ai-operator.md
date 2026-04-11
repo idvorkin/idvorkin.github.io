@@ -25,8 +25,8 @@ The operators who get better aren't the ones who just practice. They're the ones
 
 - [You Have a Finite Number of Thinking Tokens](#you-have-a-finite-number-of-thinking-tokens)
 - [You Need to Get On the Loop](#you-need-to-get-on-the-loop)
-- [Use Voice](#use-voice)
-- [Throw It Away](#throw-it-away)
+- [You Need to Use Voice](#you-need-to-use-voice)
+- [You Can Throw It Away](#you-can-throw-it-away)
 - [You're a Compound Engineer](#youre-a-compound-engineer)
 
 <!-- vim-markdown-toc-end -->
@@ -64,7 +64,7 @@ The trap: it's easy to slip into the loop without noticing. You'll think you're 
 
 The operator skill: always know which mode you're in, and always be working your way up. If you're in, be fully in — and look for your exit. If you're on, define your checkpoints and actually let go. Never hover.
 
-## Use Voice
+## You Need to Use Voice
 
 You've had this moment. You're typing out a long email to get someone to do something — explaining the request for the third time after some back-and-forth, watching the miscommunication compound — and you stop and think: _oh, I should just call them._ Two minutes on the phone solves what twenty minutes of email couldn't.
 
@@ -78,7 +78,7 @@ Three things to do every time:
 
 Do those three and the AI stops guessing at the constraints you forgot to mention. You spend less time course-correcting in the loop because you gave the AI the right shape to start with. Next time you're stuck staring at an empty prompt, don't try harder to write it. Talk it out.
 
-## Throw It Away
+## You Can Throw It Away
 
 When the AI drives off course, throw it away. Start over. You already got the expensive part — the _learning_ — and the code itself was basically free to generate. The next attempt will be better because you know more now.
 
