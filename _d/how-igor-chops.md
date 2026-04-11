@@ -302,6 +302,7 @@ I run AI agents in isolated Docker containers - cattle, not pets. Full details i
 - Separate GitHub identity (`idvorkin-ai-tools`) - can only create PRs, not push to main
 - Named volumes for persistence across restarts
 - Multiple containers for parallel CHOP sessions on different features/repos
+- CPU guard: an OrbStack VM core cap plus a [small userspace watchdog](https://github.com/idvorkin/Settings/blob/main/shared/cpu-watchdog.sh) that attaches `cpulimit` to any runaway process — one feral agent can't starve the other five when half a dozen are running in parallel
 
 ### Network Setup
 

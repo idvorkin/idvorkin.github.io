@@ -29,7 +29,6 @@ Agents are slow. Not slow like "wait a second," slow like "go make coffee and co
   - [Alfred - The Session Switcher](#alfred---the-session-switcher)
   - [Agent Dashboard - The Radar Screen](#agent-dashboard---the-radar-screen)
   - [Stream Deck - The Physical Buttons](#stream-deck---the-physical-buttons)
-  - [CPU Safety Net](#cpu-safety-net)
 - [How the Pieces Fit Together](#how-the-pieces-fit-together)
 - [What I'm Still Building](#what-im-still-building)
 - [The Meta-Question](#the-meta-question)
@@ -123,10 +122,6 @@ The [Stream Deck plugin](https://github.com/idvorkin/streamdeck-igor-vibe) gives
 Physical buttons matter because they don't require visual attention. I can hit "next agent" by feel while reading code on screen. It's the same reason cars have physical knobs for volume instead of touchscreen sliders - you don't want to look away from the road.
 
 Built the plugin in 30 minutes with AI. See the [journal entry](/ai-journal#stream-deck-plugin-in-30-minutes).
-
-### CPU Safety Net
-
-A runaway agent can easily burn every core on the Mac — a bad loop, a fork bomb, or just a bunch of Claudes spiking at the same time. I run a [two-layer CPU guard](/cpu-guards) inside the VM: an OrbStack hypervisor cap as the hard ceiling, plus a [small userspace watchdog](https://github.com/idvorkin/Settings/blob/main/shared/cpu-watchdog.sh) that attaches `cpulimit` to any process sustaining more than four cores. Not strictly part of the cockpit, but it's what keeps the fans quiet when half a dozen agents are going at once.
 
 ## How the Pieces Fit Together
 
