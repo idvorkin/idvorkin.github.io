@@ -195,6 +195,10 @@ Run pre-commit to check: `prek run --files <your-files>`
 
 Use Grep/Glob directly on `_d/`, `_posts/`, and `_td/` directories for text search — faster than the blog MCP. For frontmatter metadata queries (tags, dates, incoming/outgoing links), use `/find-content`.
 
+### Before Creating a New Post
+
+Search `_d/`, `_td/`, and `_posts/` for the topic first. Technical content that fits an existing post's scope (e.g., `/how-igor-chops` for dev environment, `/ai-cockpit` for agent orchestration, `/mosh` for remote access) belongs there as a brief mention — one bullet or one paragraph — not a new standalone reference. Create a new post only when the topic has no existing home.
+
 ## Generating Tables of Contents
 
 Blog posts use a TOC block between HTML fence markers. Igor's convention comes from `idvorkin/markdown-toc.nvim` (installed in his nvim config):
