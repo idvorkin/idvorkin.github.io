@@ -37,7 +37,7 @@ The operators who get better aren't the ones who just practice. They're the ones
 
 You've had this happen. You're in the middle of making changes — momentum, focus, real progress — and the AI hits its token limit. "Start a new conversation," it says. The context you'd been building together is gone. You're stuck until the window resets.
 
-Now imagine that's your brain. Because it is. You wake up Monday with a finite budget of deep thinking — your own context window — and every hard decision, every careful code review, every "wait, is this actually right?" burns through it. By 3pm the model in your skull starts forgetting context, repeating itself, missing things it would have caught at 10am. By Friday you're done. You're stuck until the weekend resets you.
+Now imagine that's your brain. Because it is. You wake up with a finite budget of deep thinking — your own context window — and every hard decision, every careful code review, every "wait, is this actually right?" burns through it. By 10am you're sharp. By 3pm the model in your skull starts forgetting context, repeating itself, missing things it would have caught in the morning. By evening you're done. You're stuck until sleep resets you.
 
 Simon Willison [said it plainly](https://simonwillison.net/2026/Apr/2/lennys-podcast/): running four agents in parallel left him "wiped out by 11 AM." _"There's a limit on human cognition regardless of how fast agents work."_ AI is supposed to make us more productive, but the people most AI-pilled are working harder than ever.
 
@@ -53,7 +53,7 @@ The question is who's doing the checking. When you're _in_ the loop, that's you.
 
 Pay attention to which mode you're in. That's the whole game. The military has real doctrine for this: [DoD Directive 3000.09](https://en.wikipedia.org/wiki/Human-in-the-loop) on autonomous weapons defines ["human in the loop"](https://en.wikipedia.org/wiki/Human-in-the-loop) (a person approves each action) versus "human on the loop" (the system acts, a person monitors and can intervene). Every moment as an AI operator, one of those is true. Most of us have no idea which.
 
-**The goal is to get on the loop.** In-the-loop is a zillion times slower, and it burns your thinking tokens on the _process_ instead of the _output_. You're there because you have to be, not because you want to be. The job isn't to stay in the loop doing careful work — the job is to figure out how to climb out.
+**The goal is to get on the loop.** In-the-loop is a zillion times slower, and it burns your thinking tokens on the _process_ instead of the _output_. You're not in the loop because you want to be — you're in the loop because you haven't figured out how to get out yet. That's the real job: figure out how to get out.
 
 You start in the loop when you have no choice:
 
@@ -103,7 +103,7 @@ This is compound engineering. You're not just shipping the task in front of you;
 
 **Do retros.** At the end of a session — or at least a week — look back and ask one question: _where did I get stuck in the loop?_ What did I have to re-explain three times before the AI got it? Where did I hover because I didn't trust the output? Those moments are pointing at exactly what your next iteration should fix.
 
-**Update your CLAUDE.md.** Whatever you had to re-explain three times, put it in the instructions so you never have to explain it again. The `claude-md-improver` skill exists for exactly this — it audits your CLAUDE.md against session learnings and folds them in, so next time the AI already knows.
+**Update your CLAUDE.md.** Whatever you had to re-explain three times, put it in the instructions so you never have to explain it again. [Mine lives in `chop-conventions`](https://github.com/idvorkin/chop-conventions), and it grows every week. The `claude-md-improver` skill audits your CLAUDE.md against session learnings and folds them in, so next time the AI already knows.
 
 **Upgrade your skills and workflows.** A prompt you ran twice is a prompt that should become a skill. A checklist you followed by hand is a workflow. The second time you do something manually, you're leaving compound interest on the table.
 
