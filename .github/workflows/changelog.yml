@@ -22,6 +22,11 @@ concurrency:
 permissions:
   contents: write
   pull-requests: write
+  # Required by anthropics/claude-code-action@v1: its setupGitHubToken flow
+  # calls getOidcToken, which fails with "Unable to get ACTIONS_ID_TOKEN_REQUEST_URL
+  # env variable" unless id-token: write is granted. Sibling workflows
+  # (claude.yml, claude-code-review.yml) already have this.
+  id-token: write
 
 jobs:
   changelog:
