@@ -12,6 +12,7 @@ concurrency:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   update-backlinks:
@@ -30,7 +31,7 @@ jobs:
 
       - uses: astral-sh/setup-uv@v7
 
-      - name: Update backlinks and push
+      - name: Update backlinks
         run: |
           set -euo pipefail
 
@@ -49,13 +50,12 @@ jobs:
 
           echo "$CHANGED" | xargs uv run ./build_back_links.py delta
 
-          if git diff --quiet back-links.json; then
-            echo "back-links.json unchanged"
-            exit 0
-          fi
-
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add back-links.json
-          git commit -m "chore: update backlinks [skip ci]"
-          git push
+      - name: Create pull request for backlinks update
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "chore: update backlinks [skip ci]"
+          title: "chore: update backlinks"
+          body: "Automated backlinks update triggered by content changes."
+          branch: chore/update-backlinks
+          delete-branch: true
+          labels: "automated"
