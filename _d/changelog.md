@@ -12,6 +12,12 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Week of 2026-04-12](#week-of-2026-04-12)
+  - [The AI Operator: Learning to Drive the Machine (new post!)](#the-ai-operator-learning-to-drive-the-machine-new-post)
+  - [ACT Made Simple: Book Notes (new post!)](#act-made-simple-book-notes-new-post)
+  - [CHOP & Tooling](#chop--tooling)
+  - [Infrastructure & CI](#infrastructure--ci-1)
+  - [Other Projects (April)](#other-projects-april-1)
 - [Week of 2026-03-30](#week-of-2026-03-30)
   - [AI Relationships: When the Chatbot Is Better at Caring (new post!)](#ai-relationships-when-the-chatbot-is-better-at-caring-new-post)
   - [Keyboards: From Wrist Pain to Split Keyboards (new post!)](#keyboards-from-wrist-pain-to-split-keyboards-new-post)
@@ -51,6 +57,66 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
   - [Other Projects](#other-projects)
     <!-- vim-markdown-toc-end -->
     <!-- prettier-ignore-end -->
+
+## Week of 2026-04-12
+
+_61 commits this week (blog) + cross-repo activity_
+
+### The AI Operator: Learning to Drive the Machine (new post!)
+
+New post on AI operating as a skill — from the mechanics of cognitive load to the compound returns of capturing what you learn ([blog](/ai-operator)):
+
+- **Finite thinking tokens** — Your brain has a context window. Simon Willison quote: running four agents in parallel left him "wiped out by 11 AM." "If you spend your thinking tokens _supervising_ the AI instead of _directing_ it, you haven't saved anything — you've traded one kind of exhaustion for another." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/5fdbb6a2a)
+- **In the loop vs. on the loop** — DoD Directive 3000.09 on autonomous weapons: "human in the loop" (approves each action) vs "human on the loop" (monitors, can intervene). Every AI session you're one or the other. "The goal is to get on the loop." Starts with high-stakes/novel/bootstrapping work; the real job while in the loop is learning your way out. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/622d008fd)
+- **Use voice** — Talk, don't type. Voice makes you ramble, backfill, mention the constraint you forgot. "When you type, the AI is solving the problem you wrote down; when you talk, the AI is solving the problem you actually have." Three moves: use voice, share intent, share success criteria. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/84cd2cd34)
+- **Throw it away** — The old economics (code is precious) are gone. AI-generated code is cheap to produce; expensive to untangle when it goes sideways. "Rescuing a bad generation is a trap: it pulls you line-by-line back into the loop, burning thinking tokens on code the AI could regenerate for free." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/622d008fd)
+- **Compound engineer** — Retros, CLAUDE.md updates, codified skills. "`show-your-work` started as 'screenshot the changed blog pages'; `walk-the-store` started as 'do a visual walkthrough.' Both used to be 10-minute manual chores. Now they're one word." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1b5cf8295)
+
+### ACT Made Simple: Book Notes (new post!)
+
+Deep notes on Russ Harris's _ACT Made Simple_ — Acceptance and Commitment Therapy for personal practice ([blog](/act)):
+
+- **Psychological flexibility** — ACT's single aim. Harris's triflex: Be Present, Open Up, Do What Matters. Vitality ≠ feeling good: "I can feel vital in the middle of grief." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/dd5c4abb7)
+- **The Choice Point** — Away moves (hooked, escaping) vs. towards moves (unhooked, values-aligned). Harris claims almost every psychological problem reduces to: hooked → away moves. The whole diagnosis fits on a napkin. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/dd5c4abb7)
+- **Workability replaces truth-testing** — ACT never debates whether a thought is true. The question: "If I let this thought guide my behavior, will that help me create a richer, fuller, more meaningful life?" Same anxious thought leaves one person untouched and derails another — context of fusion is the variable, not the thought content. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/dd5c4abb7)
+- **Creative hopelessness & DOTS** — Inventory everything you've tried to make unwanted feelings go away: Distraction, Opting out, Thinking strategies, Substances. All work short-term, none long-term. "Are you open to trying something new?" [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/dd5c4abb7)
+- **Mindfulness ≠ meditation** — Harris strips the baggage: mindfulness is defusion + acceptance + flexible attention + self-as-context. "ACT does not require formal practice." The core instruction: notice X. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/dd5c4abb7)
+- **The Hexaflex** — Six core processes: Cognitive Defusion, Acceptance, Contact with Present Moment, Self-as-Context, Values, Committed Action. Full 32-chapter notes with personal commentary. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/dd5c4abb7)
+
+### CHOP & Tooling
+
+- **The Flow Question** — New section in [how-igor-chops](/how-igor-chops#the-flow-question): "Can you still get flow when you're chopping? You're not even writing the code." Answer: flow is constant — comes from orchestrating 2-3 agents at different loop stages, and from mastery of a skill where challenge still meets ability. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/07a70ed21)
+- **CPU Safety Net** — New subsection in [ai-cockpit](/ai-cockpit#cpu-safety-net): two-layer guard that keeps runaway agents from melting the Mac. OrbStack hypervisor cap as the hard ceiling + userspace [cpu-watchdog.sh](https://github.com/idvorkin/Settings/blob/main/shared/cpu-watchdog.sh) that attaches `cpulimit` to any process sustaining more than four cores. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/63fc22051)
+- **CPU Guards reference doc** — New `/cpu-guards` page explaining why `systemd-run --scope -p CPUQuota` fails on OrbStack (no systemd as PID 1, read-only cgroup fs) and the two-layer userspace fallback that actually works. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0a105f381)
+
+### Infrastructure & CI
+
+- **Automated weekly changelog** — New GitHub Actions workflow that runs `/changelog` on a schedule via Claude, opens a PR automatically. Iteratively hardened this week: idempotent PR creation, `id-token: write` permission, scoped to public repos to avoid rate limits. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/94dc5927c)
+- **AI operator cross-links** — Added per-section Skills lines linking to relevant CHOP skills throughout the new `/ai-operator` post; tightened `running-servers` check in CLAUDE.md. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/fe93fc452)
+
+### Other Projects (April)
+
+**[chop-conventions](https://github.com/idvorkin/chop-conventions)** (CHOP workflow docs)
+
+- **architect-review skill** — New skill for iterative spec hardening via sequential background Opus agents. Each pass reads and edits the spec, tracks changes in a changelog. Converges when a pass makes 0-2 substantive changes (typically 3-4 passes). Tested on a real spec: 21 → 13 → 9 → 0 changes across 4 passes. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/43ba1bdfd)
+- **docs skill** — Applied code review fixes and added `allowed-tools` frontmatter. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/7dd0f5b4c)
+
+**[Settings](https://github.com/idvorkin/Settings)** (dotfiles & tools)
+
+- **Auto-rebuild on pull** — `just setup` symlinks a post-merge hook that rebuilds Python (`just global-install`) and Rust (`just rinstall`) tools automatically when source files change on pull. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/7a8b1602a)
+- **rbv install hint** — When `bv` is not on PATH, `rbv` now prints the install command: `brew install dicklesworthstone/tap/bv`. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/42248d537)
+
+**[context-grabber](https://github.com/idvorkin/context-grabber)** (iOS health & location data)
+
+- **Sleep detail sheet** — New phase 3 sleep view: stages (deep/REM/core/awake), debt tracking, consistency score, per-night colored strips with 24h timeline. Source filter + day zoom. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/7363b9e38)
+- **Movement card** — Steps, distance, and energy merged into one card with three stacked mini box plots. Per-day 24h color-coded strip. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/6d9b60b7c)
+- **Transit accounting** — Honest 3-bucket breakdown (transit/loose/no-data), evidence-gated, with elapsed header. Cluster logic merges consecutive same-place stays unconditionally. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/16f1be300)
+- **OTA + prefetch** — Pin runtimeVersion to `"1.0.0"` literal for bare-workflow OTA; prefetch 7-day stats for every card in background after grab. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/ec1acfc4b)
+
+**[activation-energy-game](https://github.com/idvorkin-ai-tools/activation-energy-game)** (interactive ACT explainer)
+
+- **Drop the Rope** — Complete new lesson: a wordless 5-round defusion game where players physically can't win a tug-of-war against an emotion monster. The unwinnable tension math (`simulateTension` tests prove 15 taps/sec never pushes the rope to the player-win floor) teaches the ACT insight that effort isn't the lever — dropping is. Five monsters: anxiety (hooked smoke wisp), self-criticism (cyclops blob), shame (wrapped ball), doubt (two-headed), anger (trapezoid with horns). Five valued scenes after each drop: coffee at home, gym kettlebell swing, park bench text, writing at desk, cartoon dog with wagging tail. Includes 3-slide intro, gallery ending, and full Playwright E2E test. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/activation-energy-game/commit/5f3126de1)
+- **Mismatched Crocs** — Raccoon now wears left blue / right yellow Crocs. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/activation-energy-game/commit/c36819404)
 
 ## Week of 2026-03-30
 
