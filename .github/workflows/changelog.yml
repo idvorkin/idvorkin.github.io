@@ -18,13 +18,13 @@ concurrency:
 permissions:
   contents: write
   pull-requests: write
-  id-token: write
 
 jobs:
   changelog:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0 # Full history for git log
 
@@ -32,7 +32,8 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          direct_prompt: |
+          allowed_bots: 'github-actions[bot]'
+          prompt: |
             Generate a changelog entry for the past ${{ inputs.days || '7' }} days.
 
             ## Instructions
@@ -65,7 +66,8 @@ jobs:
                - PR body: Summary of themes covered
 
             ### Important:
-            - All repos are PUBLIC — no special auth needed for cross-repo reads
+            - Scan BOTH `idvorkin` and `idvorkin-ai-tools` orgs — use `--visibility public` to skip private repos
+            - Don't be lazy, use GitHub deep links whenever possible — commit links, file links, section anchors
             - Use short commit hashes (9 chars) for GitHub links
             - Use `[<i class="fa fa-github"></i>](URL)` for GitHub icon links
             - Group changes into themes (AI/Tech, Health, Spiritual, Infrastructure, Other Projects, etc.)
