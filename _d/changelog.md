@@ -105,8 +105,12 @@ Two additions to the CHOP methodology post:
 
 ### Other Projects (April)
 
+- **[context-grabber](https://github.com/idvorkin/context-grabber)** (iOS health dashboard) — Major sleep tracking upgrade: sleep detail sheet with stages, debt score, consistency gauge, and per-night strips. Movement card redesign: merged Steps/Distance/Energy into one card with stacked mini box plots. Background prefetch for 7-day stats across all cards. Source filter + layout polish in Phase 3. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/7363b9e38)
+- **[activation-energy-game](https://github.com/idvorkin-ai-tools/activation-energy-game)** (ACT therapy games) — New "Drop the Rope" scene: a wordless 5-round defusion lesson where the raccoon learns to let go of a tug-of-war rope. Choice Point Catcher merged. Mismatched Crocs on the raccoon (left blue, right yellow). Extracted `canvasAspect()` utility for scene scaling. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/activation-energy-game/commit/5f3126de1)
 - **Settings** — `rbv`: new beads viewer launcher for Dolt workspaces (Typer/Rich CLI). Canonical PEP 723 shebangs across all `py/` scripts. CPU watchdog: prefer `/usr/bin/cpulimit` over linuxbrew shadow. nvim: migrate to mini.nvim + built-in treesitter; suppress tsserver suggestion diagnostics. rmux: side-edit line numbers, side-run command, pane status output. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/b10879fc1)
 - **chop-conventions** — New `docs` skill wrapping Context7 for fresh library documentation lookup. New `learn-from-session` skill for extracting durable lessons into CLAUDE.md. `machine-doctor`: CPU guards check, doctor-guards tier split. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/d8577a3bf)
+- **[raw-ebooks](https://github.com/idvorkin/raw-ebooks)** — Bulk-converted all books to Markdown with a conversion toolkit. Added _ACT Made Simple_ source text. [<i class="fa fa-github"></i>](https://github.com/idvorkin/raw-ebooks/commit/bcbead269)
+- **[blob](https://github.com/idvorkin/blob)** — Raccoon operator hero image for the /ai-operator post. [<i class="fa fa-github"></i>](https://github.com/idvorkin/blob/commit/b5c0fa6a4)
 
 ## Week of 2026-03-30
 
