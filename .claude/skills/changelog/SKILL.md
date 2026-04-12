@@ -168,24 +168,31 @@ After adding a new week, update the TOC at the top of the changelog:
 
 ### List Active Repos
 
-Find repos with recent activity:
+Scan BOTH `idvorkin` and `idvorkin-ai-tools` orgs. Use `--visibility public` to skip private repos.
 
 ```bash
-gh repo list idvorkin --limit 50 --json name,pushedAt \
-  --jq '.[] | select(.pushedAt > "DATE") | .name'
+for org in idvorkin idvorkin-ai-tools; do
+  echo "=== $org ==="
+  gh repo list $org --limit 100 --visibility public --json name,pushedAt \
+    --jq '.[] | select(.pushedAt > "DATE") | .name'
+done
 ```
 
 ### Get Commits from All Active Repos
 
 ```bash
-gh repo list idvorkin --limit 100 --json name,pushedAt \
-  --jq '.[] | select(.pushedAt > "DATE") | .name' | while read repo; do
-  echo "=== $repo ==="
-  gh api repos/idvorkin/$repo/commits \
-    --jq '.[0:10] | .[] | "\(.sha[0:9]) \(.commit.message | split("\n")[0])"' 2>/dev/null
-  echo ""
+for org in idvorkin idvorkin-ai-tools; do
+  gh repo list $org --limit 100 --visibility public --json name,pushedAt \
+    --jq '.[] | select(.pushedAt > "DATE") | .name' | while read repo; do
+    echo "=== $org/$repo ==="
+    gh api repos/$org/$repo/commits \
+      --jq '.[0:10] | .[] | "\(.sha[0:9]) \(.commit.message | split("\n")[0])"' 2>/dev/null
+    echo ""
+  done
 done
 ```
+
+Don't be lazy — use GitHub deep links whenever possible: commit links, file links, section anchors.
 
 ### Key Repos to Track
 
