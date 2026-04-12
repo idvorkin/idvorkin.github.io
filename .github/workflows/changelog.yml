@@ -41,8 +41,32 @@ jobs:
             /changelog
             Look back ${{ inputs.days || '7' }} days.
 
-            Write the changelog entry to `_d/changelog.md`. Do NOT commit or push —
-            the next workflow step will handle that.
+            ## Environment: GitHub Actions (headless)
+
+            You are running inside the `.github/workflows/changelog.yml` workflow
+            on an ubuntu-latest runner — NOT on Igor's local machine. This means:
+
+            - No Jekyll server is running; do NOT try to start one or open browser previews
+            - No `nvim` is installed; update the TOC by editing the markdown directly
+              between the `<!-- vim-markdown-toc-start -->` / `<!-- vim-markdown-toc-end -->`
+              markers, matching the indentation of existing entries
+            - `gh` CLI is authenticated via GITHUB_TOKEN — it can read public repos in
+              both `idvorkin` and `idvorkin-ai-tools`
+            - Do NOT commit or push; the next workflow step (peter-evans/create-pull-request)
+              will handle staging, committing, and opening the PR. Just write the file.
+
+            ## On errors
+
+            If anything fails — a `gh` call, a git operation, a file read, a skill step —
+            print the full error to stdout (it lands in the GitHub Actions job log) and
+            keep going where sensible. Do not silently swallow failures. At the end,
+            summarize what succeeded and what didn't so the job log is self-explanatory.
+
+            ## When you're done
+
+            Exit immediately after writing `_d/changelog.md`. Do not hang around, do not
+            wait for approval, do not try additional verification steps. The workflow
+            has a 4-minute budget — make it count.
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v8
