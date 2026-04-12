@@ -72,8 +72,13 @@ jobs:
           # leaving the verify step to fail the job with a confusing error.
           # Edit/Read/Write/Grep/Glob are needed for reading the existing
           # changelog, editing the TOC, and writing the new entry.
+          # Skill(changelog) lets Claude invoke `/changelog` via the Skill
+          # tool directly. Without it, the Skill invocation is refused (seen
+          # as permission_denials_count: 1 in run 24316228228) and Claude
+          # falls back to reading SKILL.md and executing steps manually —
+          # the run still succeeds but skips the formal slash-command flow.
           claude_args: |
-            --allowedTools "Bash,Edit,Read,Write,Grep,Glob"
+            --allowedTools "Bash,Edit,Read,Write,Grep,Glob,Skill(changelog)"
           prompt: |
             /changelog
             Look back ${{ inputs.days || '7' }} days. The week-of date is ${{ steps.date.outputs.week_of }} (UTC).
