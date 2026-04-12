@@ -22,7 +22,7 @@ permissions:
 jobs:
   changelog:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 4
     steps:
       - uses: actions/checkout@v6
         with:
