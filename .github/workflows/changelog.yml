@@ -48,12 +48,14 @@ jobs:
                  | grep -E "^_d/|^_posts/" | sort | uniq -c | sort -rn | head -20
                ```
             3. **Read actual diffs** for top changed files — descriptions MUST come from diff content, NOT commit messages. Extract specific quotes, frameworks, concepts.
-            4. **Check cross-repo activity** for public idvorkin repos:
+            4. **Check cross-repo activity** for public repos in BOTH orgs:
                ```
-               gh repo list idvorkin --limit 100 --json name,pushedAt \
-                 --jq '.[] | select(.pushedAt > "START_DATE") | .name'
+               for org in idvorkin idvorkin-ai-tools; do
+                 gh repo list $org --limit 100 --visibility public --json name,pushedAt \
+                   --jq '.[] | select(.pushedAt > "START_DATE") | .name'
+               done
                ```
-               Then get commits from each active repo.
+               Then get commits from each active repo. Only include PUBLIC repos — skip private ones.
             5. **Generate themed changelog entry** and prepend it to `_d/changelog.md` (after frontmatter and TOC, before existing entries). Follow the format in the skill file exactly — include blog deep links and GitHub commit icon links.
             6. **Update TOC**: Regenerate the vim-markdown-toc section. Add the new week's headers to the TOC block between the `<!-- vim-markdown-toc-start -->` and `<!-- vim-markdown-toc-end -->` markers manually (match the existing indentation style).
             7. **Create a PR**:
