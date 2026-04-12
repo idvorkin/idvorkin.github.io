@@ -12,34 +12,41 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Week of 2026-04-05](#week-of-2026-04-05)
+  - [The AI Operator (new post!)](#the-ai-operator-new-post)
+  - [ACT Made Simple (new post!)](#act-made-simple-new-post)
+  - [How Igor CHOPs: Flow and CPU Guards](#how-igor-chops-flow-and-cpu-guards)
+  - [Eternal Terminal Setup & Portable Espresso](#eternal-terminal-setup--portable-espresso)
+  - [CLAUDE.md & Tooling](#claudemd--tooling)
+  - [Other Projects (April)](#other-projects-april)
 - [Week of 2026-03-30](#week-of-2026-03-30)
   - [AI Relationships: When the Chatbot Is Better at Caring (new post!)](#ai-relationships-when-the-chatbot-is-better-at-caring-new-post)
   - [Keyboards: From Wrist Pain to Split Keyboards (new post!)](#keyboards-from-wrist-pain-to-split-keyboards-new-post)
   - [AI Journal: The Winchester Mystery House](#ai-journal-the-winchester-mystery-house)
   - [Content & Gear](#content--gear)
   - [Infrastructure & CI](#infrastructure--ci)
-  - [Other Projects (April)](#other-projects-april)
+  - [Other Projects (April)](#other-projects-april-1)
 - [Week of 2026-03-16](#week-of-2026-03-16)
   - [Claws: The Next Layer of AI (new post!)](#claws-the-next-layer-of-ai-new-post)
   - [AI Journal: Telegram, Eggs, and Feedback Loops](#ai-journal-telegram-eggs-and-feedback-loops)
   - [AI Native Manager: "In Distribution"](#ai-native-manager-in-distribution)
   - [Content Updates](#content-updates)
-  - [Infrastructure & Tooling](#infrastructure--tooling-2)
-  - [Other Projects (March)](#other-projects-march-1)
+  - [Infrastructure & Tooling](#infrastructure--tooling)
+  - [Other Projects (March)](#other-projects-march)
 - [Week of 2026-03-09](#week-of-2026-03-09)
   - [AI Second Brain (new post!)](#ai-second-brain-new-post)
   - [Side Quests (new post!)](#side-quests-new-post)
   - [AI Journal: Verification as Trust](#ai-journal-verification-as-trust)
   - [Cross-linking & Content Updates](#cross-linking--content-updates)
   - [Infrastructure](#infrastructure)
-  - [Other Projects (March)](#other-projects-march)
+  - [Other Projects (March)](#other-projects-march-1)
 - [Week of 2026-02-08](#week-of-2026-02-08)
   - [AI Native Engineering Manager (new post!)](#ai-native-engineering-manager-new-post)
   - [AI Cockpit (new post!)](#ai-cockpit-new-post)
   - [AI Journal: Yegge's AI Vampire](#ai-journal-yegges-ai-vampire)
   - [Spiritual Health: Meaning Traps](#spiritual-health-meaning-traps)
-  - [Infrastructure & Tooling](#infrastructure--tooling)
-  - [Other Projects](#other-projects-1)
+  - [Infrastructure & Tooling](#infrastructure--tooling-1)
+  - [Other Projects](#other-projects)
 - [Week of 2026-01-25](#week-of-2026-01-25)
   - [AI Journal Updates](#ai-journal-updates)
   - [Spiritual Health & Elder Life](#spiritual-health--elder-life)
@@ -47,10 +54,58 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
   - [Product Management](#product-management)
   - [Physical Health Content](#physical-health-content)
   - [How Igor CHOPs](#how-igor-chops)
-  - [Infrastructure & Tooling](#infrastructure--tooling-1)
-  - [Other Projects](#other-projects)
-    <!-- vim-markdown-toc-end -->
+  - [Infrastructure & Tooling](#infrastructure--tooling-2)
+  - [Other Projects](#other-projects-1)
+
+<!-- vim-markdown-toc-end -->
     <!-- prettier-ignore-end -->
+
+## Week of 2026-04-05
+
+_50 commits this week (blog) + cross-repo activity_
+
+### The AI Operator (new post!)
+
+A new post on what it means to operate AI well — framed as a skill like driving a car or operating heavy machinery, not a product you install and forget ([blog](/ai-operator)):
+
+- **Thinking tokens are finite** — Simon Willison running four agents in parallel: "wiped out by 11 AM." AI extends what you get done in a day, but if you spend your thinking budget _supervising_ instead of _directing_, you've traded one kind of exhaustion for another. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/5fdbb6a2a)
+- **In the loop vs. on the loop** — Borrowed from DoD Directive 3000.09 on autonomous weapons. "In the loop" means you approve each action; "on the loop" means the system acts and you monitor. The goal is to climb out of in-the-loop by defining checkpoints, then let go between them. "The trap: half-watching, catching nothing, burning thinking tokens on anxiety instead of judgment." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8d63cee17)
+- **Use voice** — "When you type, the AI is solving the problem you wrote down; when you talk, the AI is solving the problem you actually have." Voice captures the constraints you prune when writing. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/622d008fd)
+- **Throw it away** — The economics flipped: code is cheap, thinking is expensive. "If the AI spent 30 seconds generating 400 lines that went sideways, those 400 lines cost you almost nothing to produce — but they'll cost you a lot to untangle." Watch for the sunk cost reflex. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6272c2ee4)
+- **Compound engineering** — Every retro, every updated CLAUDE.md, every skill codified is compound interest. `show-your-work` and `walk-the-store` started as manual 10-minute chores, now they're one word. "The second time you do something manually, you're leaving compound interest on the table." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1b5cf8295)
+
+### ACT Made Simple (new post!)
+
+Deep book-notes post on Russ Harris's _ACT Made Simple_ — the practitioner primer for Acceptance and Commitment Therapy. A 1,500+ line reference covering all 32 chapters ([blog](/act)):
+
+- **Psychological flexibility** — ACT's single aim. Harris's triflex: Be Present, Open Up, Do What Matters. "Vitality is not a feeling. It's a sense of being fully alive and embracing the here and now, regardless of how we may be feeling in this moment." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3dfde5e25)
+- **The Choice Point** — Towards moves vs. away moves. Any activity can be either, depending on function: "Watching TV to escape the gym is an away move; watching a show I love as a conscious choice is a towards move." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3dfde5e25)
+- **Workability over truth** — The single question that replaces "is this thought true?": "If I let this thought guide my behavior, will that help me create a richer, fuller, more meaningful life?" [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3dfde5e25)
+- **The Hexaflex** — All six core processes covered in depth: cognitive defusion (Hands as Thoughts), acceptance (Struggle Switch + three As), contact with the present moment (Notice Your Hand), self-as-context (Sky and Weather, Chessboard), values (Mistakenly Held Funeral), committed action (SMART goals, dead person's goal test, HARD diagnostic). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/dd5c4abb7)
+
+### How Igor CHOPs: Flow and CPU Guards
+
+Two additions to the CHOP methodology post:
+
+- **The Flow Question** — "Can you still get flow when you're chopping?" Yes: "It comes from orchestrating — juggling two or three agents at different points in their loops, nudging one, reviewing another, letting the third cook." Challenge-meeting-skill is where flow has always lived. ([blog](/how-igor-chops#the-flow-question)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/07a70ed21)
+- **CPU guard** — OrbStack VM core cap plus a userspace watchdog (`cpulimit`) so one feral agent can't starve the other five when running in parallel. CPU-guards started as a standalone post, then got folded into a bullet in the infrastructure section. ([blog](/how-igor-chops#infrastructure--isolation)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e81731409)
+
+### Eternal Terminal Setup & Portable Espresso
+
+- **Eternal Terminal (ET)** — Full setup guide added to the mosh/remote-access post. ET gives persistent remote terminals with IP roaming and true color — works over SSH so existing Tailscale auth just works. Includes init.d script + shell hook for OrbStack auto-start (since OrbStack has neither systemd nor sysv-init). ([blog](/mosh)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/c32cbf344)
+- **Portable espresso** — OutIn Mino: battery-powered, heats water and brews in 2.5 minutes, 4 shots per charge. Pro tip: pair with a JetBoil Flash (boils water in 100 seconds, 40+ cups per canister) and use the OutIn just for extraction. ([blog](/irl#portable-espresso)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/a1578347a)
+
+### CLAUDE.md & Tooling
+
+- **Content guidelines guardrail** — New rule: "If you catch yourself about to write more than 2-3 sentences of prose, stop and load `content_guidelines.md`." AI voice patterns show up almost immediately in unguided prose. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/ffed39a44)
+- **"Before Creating a New Post" guideline** — Search `_d/`, `_td/`, `_posts/` for the topic first. Technical content that fits an existing post belongs there, not in a new standalone reference. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3b905f981)
+- **TOC generation procedure** — Documented the `nvim --headless` + `Mtoc update` workflow for generating TOCs from the command line. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/09af37202)
+- **running-servers check** — New `--port` and `--process` filters so stray servers (serena MCP, node) don't give false positives when checking for Jekyll on :4000. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/fe93fc452)
+
+### Other Projects (April)
+
+- **Settings** — `rbv`: new beads viewer launcher for Dolt workspaces (Typer/Rich CLI). Canonical PEP 723 shebangs across all `py/` scripts. CPU watchdog: prefer `/usr/bin/cpulimit` over linuxbrew shadow. nvim: migrate to mini.nvim + built-in treesitter; suppress tsserver suggestion diagnostics. rmux: side-edit line numbers, side-run command, pane status output. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/b10879fc1)
+- **chop-conventions** — New `docs` skill wrapping Context7 for fresh library documentation lookup. New `learn-from-session` skill for extracting durable lessons into CLAUDE.md. `machine-doctor`: CPU guards check, doctor-guards tier split. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/d8577a3bf)
 
 ## Week of 2026-03-30
 
