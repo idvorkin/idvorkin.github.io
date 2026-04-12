@@ -59,3 +59,4 @@ jobs:
           branch: chore/update-backlinks
           delete-branch: true
           labels: "automated"
+          add-paths: back-links.json
