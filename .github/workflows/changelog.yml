@@ -1,0 +1,69 @@
+name: Weekly Changelog
+
+on:
+  schedule:
+    - cron: '0 14 * * 1' # Every Monday at 2pm UTC
+  workflow_dispatch:
+    inputs:
+      days:
+        description: 'Number of days to look back'
+        required: false
+        default: '7'
+        type: string
+
+concurrency:
+  group: weekly-changelog
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+  pull-requests: write
+  id-token: write
+
+jobs:
+  changelog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Full history for git log
+
+      - name: Generate Changelog
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          direct_prompt: |
+            Generate a changelog entry for the past ${{ inputs.days || '7' }} days.
+
+            ## Instructions
+
+            Read `.claude/skills/changelog/SKILL.md` for the full format specification.
+
+            ### Step-by-step:
+
+            1. **Calculate date range**: Look back ${{ inputs.days || '7' }} days from today.
+            2. **Find changed content files** in this repo:
+               ```
+               git log --since="START_DATE" --name-only --pretty=format: HEAD \
+                 | grep -E "^_d/|^_posts/" | sort | uniq -c | sort -rn | head -20
+               ```
+            3. **Read actual diffs** for top changed files — descriptions MUST come from diff content, NOT commit messages. Extract specific quotes, frameworks, concepts.
+            4. **Check cross-repo activity** for public idvorkin repos:
+               ```
+               gh repo list idvorkin --limit 100 --json name,pushedAt \
+                 --jq '.[] | select(.pushedAt > "START_DATE") | .name'
+               ```
+               Then get commits from each active repo.
+            5. **Generate themed changelog entry** and prepend it to `_d/changelog.md` (after frontmatter and TOC, before existing entries). Follow the format in the skill file exactly — include blog deep links and GitHub commit icon links.
+            6. **Update TOC**: Regenerate the vim-markdown-toc section. Add the new week's headers to the TOC block between the `<!-- vim-markdown-toc-start -->` and `<!-- vim-markdown-toc-end -->` markers manually (match the existing indentation style).
+            7. **Create a PR**:
+               - Branch: `changelog/week-of-YYYY-MM-DD`
+               - Commit message: `Add changelog entry for week of YYYY-MM-DD`
+               - PR title: `Add changelog entry for week of YYYY-MM-DD`
+               - PR body: Summary of themes covered
+
+            ### Important:
+            - All repos are PUBLIC — no special auth needed for cross-repo reads
+            - Use short commit hashes (9 chars) for GitHub links
+            - Use `[<i class="fa fa-github"></i>](URL)` for GitHub icon links
+            - Group changes into themes (AI/Tech, Health, Spiritual, Infrastructure, Other Projects, etc.)
