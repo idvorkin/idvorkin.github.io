@@ -58,6 +58,7 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
   - [Other Projects](#other-projects-1)
 
 <!-- vim-markdown-toc-end -->
+
     <!-- prettier-ignore-end -->
 
 ## Week of 2026-04-05
@@ -88,7 +89,7 @@ Deep book-notes post on Russ Harris's _ACT Made Simple_ — the practitioner pri
 Two additions to the CHOP methodology post:
 
 - **The Flow Question** — "Can you still get flow when you're chopping?" Yes: "It comes from orchestrating — juggling two or three agents at different points in their loops, nudging one, reviewing another, letting the third cook." Challenge-meeting-skill is where flow has always lived. ([blog](/how-igor-chops#the-flow-question)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/07a70ed21)
-- **CPU guard** — OrbStack VM core cap plus a userspace watchdog (`cpulimit`) so one feral agent can't starve the other five when running in parallel. CPU-guards started as a standalone post, then got folded into a bullet in the infrastructure section. ([blog](/how-igor-chops#infrastructure--isolation)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e81731409)
+- **CPU guard** — OrbStack VM core cap plus a userspace watchdog (`cpulimit`) so one feral agent can't starve the other five when running in parallel. CPU-guards started as a standalone post, then got folded into a bullet in the infrastructure section. ([blog](/how-igor-chops#the-server-behind-the-curtain)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e81731409)
 
 ### Eternal Terminal Setup & Portable Espresso
 
