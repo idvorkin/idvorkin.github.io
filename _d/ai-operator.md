@@ -34,6 +34,8 @@ The operators who get better aren't the ones who just practice. They're the ones
 
 ## You Have a Finite Number of Thinking Tokens
 
+_Skills: [things you love](/balloon) · [things good for you](/four-healths)_
+
 You've had this happen. You're in the middle of making changes — momentum, focus, real progress — and the AI hits its token limit. "Start a new conversation," it says. The context you'd been building together is gone. You're stuck until the window resets.
 
 Now imagine that's your brain. Because it is. You wake up with a finite budget of deep thinking — your own context window — and every hard decision, every careful code review, every "wait, is this actually right?" burns through it. By 10am you're sharp. By 3pm the model in your skull starts forgetting context, repeating itself, missing things it would have caught in the morning. By evening you're done. You're stuck until sleep resets you.
@@ -43,6 +45,8 @@ Simon Willison [said it plainly](https://simonwillison.net/2026/Apr/2/lennys-pod
 The point of AI is to extend what you can get done in a day. If you spend your thinking tokens _supervising_ the AI instead of _directing_ it, you haven't saved anything — you've traded one kind of exhaustion for another. The rest of this post is how to actually spend them right.
 
 ## You Need to Get On the Loop
+
+_Skills: [`show-your-work`](https://github.com/idvorkin/idvorkin.github.io/blob/main/.claude/skills/show-your-work/SKILL.md) · [`walk-the-store`](https://github.com/idvorkin/idvorkin.github.io/blob/main/.claude/skills/walk-the-store/SKILL.md)_
 
 Working with an AI agent always looks the same: there's a loop. The AI tries something. Something checks whether it worked. If not, adjust and try again. Repeat until it's good. Coding, writing, anything — every interaction with an agent is some version of try → check → fix → try.
 
@@ -66,6 +70,8 @@ The operator skill: always know which mode you're in, and always be working your
 
 ## You Need to Use Voice
 
+_Skills: [Wispr Flow & SuperWhisper](/ai-cockpit#voice-input---the-primary-interface)_
+
 You've had this moment. You're typing out a long email to get someone to do something — explaining the request for the third time after some back-and-forth, watching the miscommunication compound — and you stop and think: _oh, I should just call them._ Two minutes on the phone solves what twenty minutes of email couldn't.
 
 The same thing happens with AI agents. Voice changes how you communicate. When you talk you ramble, you backfill, you mention the constraint that "obviously" doesn't matter — and half the time it's the constraint that mattered most. Writing makes you compress, edit, prune. The result: when you type, the AI is solving the problem you wrote down; when you talk, the AI is solving the problem you actually have.
@@ -80,6 +86,8 @@ Do those three and the AI stops guessing at the constraints you forgot to mentio
 
 ## You Can Throw It Away
 
+_Skills: [`walk-the-store`](https://github.com/idvorkin/idvorkin.github.io/blob/main/.claude/skills/walk-the-store/SKILL.md)_
+
 When the AI drives off course, throw it away. Start over. You already got the expensive part — the _learning_ — and the code itself was basically free to generate. The next attempt will be better because you know more now.
 
 This is harder than it sounds, because we're all trained on the old economics. In the old world, code was precious. You wrote every line yourself, you debugged it for an hour, you argued about it in a PR. Of course you got attached. Throwing away two hours of work hurt because those two hours were _expensive_ — you burned real thinking tokens on them.
@@ -92,13 +100,15 @@ Watch for the sunk cost reflex. When you catch yourself trying to rescue a bad g
 
 ## You're a Compound Engineer
 
+_Skills: [`learn-from-session`](https://github.com/idvorkin/chop-conventions/blob/main/skills/learn-from-session/SKILL.md) · [`claude-md-improver`](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-md-management) · [`show-your-work`](https://github.com/idvorkin/idvorkin.github.io/blob/main/.claude/skills/show-your-work/SKILL.md) · [`walk-the-store`](https://github.com/idvorkin/idvorkin.github.io/blob/main/.claude/skills/walk-the-store/SKILL.md)_
+
 Every session with the AI teaches you something — a prompt shape that worked, a constraint you forgot to specify, a place the AI kept going sideways until you spelled out the obvious thing. The operators who get better over time are the ones who _capture_ those learnings instead of letting them evaporate. The ones who don't are running the same mistakes on loop.
 
 This is compound engineering. You're not just shipping the task in front of you; you're investing in the operator you'll be next month. Every retro, every updated CLAUDE.md, every new skill, every workflow you codify is a deposit, and the interest compounds. Six months in, the gap between an operator who keeps a logbook and one who doesn't is enormous.
 
 **Do retros.** At the end of a session — or at least a week — look back and ask one question: _where did I get stuck in the loop?_ What did I have to re-explain three times before the AI got it? Where did I hover because I didn't trust the output? Those moments are pointing at exactly what your next iteration should fix.
 
-**Update your CLAUDE.md.** Whatever you had to re-explain three times, put it in the instructions so you never have to explain it again. [Mine lives in `chop-conventions`](https://github.com/idvorkin/chop-conventions), and it grows every week. The `claude-md-improver` skill audits your CLAUDE.md against session learnings and folds them in, so next time the AI already knows.
+**Update your CLAUDE.md.** Whatever you had to re-explain three times, put it in the instructions so you never have to explain it again. [Mine lives in `chop-conventions`](https://github.com/idvorkin/chop-conventions), and it grows every week.
 
 **Upgrade your skills and workflows.** A prompt you ran twice is a prompt that should become a skill. A checklist you followed by hand is a workflow. Two examples from my own stack: [`show-your-work`](https://github.com/idvorkin/idvorkin.github.io/blob/main/.claude/skills/show-your-work/SKILL.md) started as "screenshot the changed blog pages and host them on a gist for the PR description," which I kept typing by hand. [`walk-the-store`](https://github.com/idvorkin/idvorkin.github.io/blob/main/.claude/skills/walk-the-store/SKILL.md) started as "do a full visual walkthrough of the blog to catch regressions." Both used to be 10-minute manual chores. Now they're one word. The second time you do something manually, you're leaving compound interest on the table.
 

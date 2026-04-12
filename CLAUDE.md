@@ -70,10 +70,12 @@ For content/visual PRs, include a rendered screenshot in the PR description. Pro
 0. **Ensure Jekyll server is running** (screenshots will be blank/wrong without it):
 
    ```bash
-   # Check if already running
-   running-servers check .
+   # Check specifically for Jekyll on :4000 — without --port/--process,
+   # any stray server in the dir (serena MCP, a stale node, etc.) gives a
+   # false-positive ✓ and you'll screenshot nothing. See settings@e847a5d.
+   running-servers check . --port 4000 --process jekyll
 
-   # If not running, start it (blocks terminal — use background or separate shell)
+   # If not running (exit 1), start it (blocks terminal — use background or separate shell)
    just jekyll-serve 4000 35729 > /tmp/jekyll.log 2>&1 &
 
    # Wait for it to be ready (first build takes ~30s)
@@ -82,7 +84,7 @@ For content/visual PRs, include a rendered screenshot in the PR description. Pro
 
    Common gotchas:
    - Server takes ~30s on first build — screenshot before it's ready = blank page
-   - Port 4000 may be taken — check with `running-servers check .` first
+   - Port 4000 may be taken — always use `--port 4000 --process jekyll` so serena MCP or other stray dir-servers don't trigger a false ✓
    - Content changes need a rebuild — wait for livereload or give it a few seconds after saving
 
 1. **Take screenshot** of the rendered page section:
