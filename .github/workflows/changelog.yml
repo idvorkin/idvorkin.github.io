@@ -51,8 +51,13 @@ jobs:
           fi
 
       - name: Generate Changelog
+        id: claude
         uses: anthropics/claude-code-action@v1
         with:
+          # Unhide Claude's tool calls and intermediate messages in the job log.
+          # Default is false, which shows only a terse result summary — making it
+          # impossible to tell what Claude did or why permission denials happened.
+          show_full_output: true
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           # Scheduled runs have `github-actions[bot]` as the triggering actor;
           # without this, the action's default bot-exclusion would block the
@@ -105,6 +110,63 @@ jobs:
             Exit immediately after writing `_d/changelog.md`. Do not hang around, do not
             wait for approval, do not try additional verification steps. The workflow
             has a 10-minute budget for the whole job — aim to finish generation in under 8.
+
+      - name: Upload Claude transcript
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: claude-execution-output
+          path: /home/runner/work/_temp/claude-execution-output.json
+          retention-days: 30
+          if-no-files-found: warn
+
+      - name: Summarize Claude run
+        if: always()
+        run: |
+          F=/home/runner/work/_temp/claude-execution-output.json
+          if [ ! -f "$F" ]; then
+            echo "No Claude transcript at $F" >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          # Transcript format: one event per line (JSONL) OR a single JSON array.
+          # The `result` event carries the totals. Try JSONL first, then array fallback.
+          RESULT=$(
+            jq -c 'select(.type == "result")' "$F" 2>/dev/null | tail -n 1
+          )
+          if [ -z "$RESULT" ]; then
+            RESULT=$(
+              jq -c '.[] | select(.type == "result")' "$F" 2>/dev/null | tail -n 1
+            )
+          fi
+          if [ -z "$RESULT" ]; then
+            {
+              echo "## Claude run summary"
+              echo ""
+              echo "Could not parse transcript. First 40 lines:"
+              echo ""
+              echo '```'
+              head -n 40 "$F"
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          DUR_MS=$(echo "$RESULT" | jq -r '.duration_ms // 0')
+          DUR_S=$((DUR_MS / 1000))
+          TURNS=$(echo "$RESULT" | jq -r '.num_turns // "n/a"')
+          COST=$(echo "$RESULT" | jq -r '.total_cost_usd // "n/a"')
+          DENIALS=$(echo "$RESULT" | jq -r '.permission_denials_count // 0')
+          IS_ERROR=$(echo "$RESULT" | jq -r '.is_error // false')
+          {
+            echo "## Claude run summary"
+            echo ""
+            echo "| Metric | Value |"
+            echo "|---|---|"
+            echo "| Duration | ${DUR_S}s |"
+            echo "| Turns | ${TURNS} |"
+            echo "| Cost | \$${COST} |"
+            echo "| Permission denials | ${DENIALS} |"
+            echo "| Success | $([ "$IS_ERROR" = "false" ] && echo yes || echo no) |"
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Verify changelog was updated
         run: |
