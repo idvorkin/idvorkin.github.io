@@ -16,36 +16,36 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
   - [The AI Operator: Learning to Drive the Machine (new post!)](#the-ai-operator-learning-to-drive-the-machine-new-post)
   - [ACT Made Simple: Book Notes (new post!)](#act-made-simple-book-notes-new-post)
   - [CHOP & Tooling](#chop--tooling)
-  - [Infrastructure & CI](#infrastructure--ci-1)
-  - [Other Projects (April)](#other-projects-april-1)
+  - [Infrastructure & CI](#infrastructure--ci)
+  - [Other Projects (April)](#other-projects-april)
 - [Week of 2026-03-30](#week-of-2026-03-30)
   - [AI Relationships: When the Chatbot Is Better at Caring (new post!)](#ai-relationships-when-the-chatbot-is-better-at-caring-new-post)
   - [Keyboards: From Wrist Pain to Split Keyboards (new post!)](#keyboards-from-wrist-pain-to-split-keyboards-new-post)
   - [AI Journal: The Winchester Mystery House](#ai-journal-the-winchester-mystery-house)
   - [Content & Gear](#content--gear)
-  - [Infrastructure & CI](#infrastructure--ci)
-  - [Other Projects (April)](#other-projects-april)
+  - [Infrastructure & CI](#infrastructure--ci-1)
+  - [Other Projects (April)](#other-projects-april-1)
 - [Week of 2026-03-16](#week-of-2026-03-16)
   - [Claws: The Next Layer of AI (new post!)](#claws-the-next-layer-of-ai-new-post)
   - [AI Journal: Telegram, Eggs, and Feedback Loops](#ai-journal-telegram-eggs-and-feedback-loops)
   - [AI Native Manager: "In Distribution"](#ai-native-manager-in-distribution)
   - [Content Updates](#content-updates)
-  - [Infrastructure & Tooling](#infrastructure--tooling-2)
-  - [Other Projects (March)](#other-projects-march-1)
+  - [Infrastructure & Tooling](#infrastructure--tooling)
+  - [Other Projects (March)](#other-projects-march)
 - [Week of 2026-03-09](#week-of-2026-03-09)
   - [AI Second Brain (new post!)](#ai-second-brain-new-post)
   - [Side Quests (new post!)](#side-quests-new-post)
   - [AI Journal: Verification as Trust](#ai-journal-verification-as-trust)
   - [Cross-linking & Content Updates](#cross-linking--content-updates)
   - [Infrastructure](#infrastructure)
-  - [Other Projects (March)](#other-projects-march)
+  - [Other Projects (March)](#other-projects-march-1)
 - [Week of 2026-02-08](#week-of-2026-02-08)
   - [AI Native Engineering Manager (new post!)](#ai-native-engineering-manager-new-post)
   - [AI Cockpit (new post!)](#ai-cockpit-new-post)
   - [AI Journal: Yegge's AI Vampire](#ai-journal-yegges-ai-vampire)
   - [Spiritual Health: Meaning Traps](#spiritual-health-meaning-traps)
-  - [Infrastructure & Tooling](#infrastructure--tooling)
-  - [Other Projects](#other-projects-1)
+  - [Infrastructure & Tooling](#infrastructure--tooling-1)
+  - [Other Projects](#other-projects)
 - [Week of 2026-01-25](#week-of-2026-01-25)
   - [AI Journal Updates](#ai-journal-updates)
   - [Spiritual Health & Elder Life](#spiritual-health--elder-life)
@@ -53,9 +53,11 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
   - [Product Management](#product-management)
   - [Physical Health Content](#physical-health-content)
   - [How Igor CHOPs](#how-igor-chops)
-  - [Infrastructure & Tooling](#infrastructure--tooling-1)
-  - [Other Projects](#other-projects)
-    <!-- vim-markdown-toc-end -->
+  - [Infrastructure & Tooling](#infrastructure--tooling-2)
+  - [Other Projects](#other-projects-1)
+
+<!-- vim-markdown-toc-end -->
+
     <!-- prettier-ignore-end -->
 
 ## Week of 2026-04-12
@@ -86,7 +88,7 @@ Deep notes on Russ Harris's _ACT Made Simple_ — Acceptance and Commitment Ther
 ### CHOP & Tooling
 
 - **The Flow Question** — New section in [how-igor-chops](/how-igor-chops#the-flow-question): "Can you still get flow when you're chopping? You're not even writing the code." Answer: flow is constant — comes from orchestrating 2-3 agents at different loop stages, and from mastery of a skill where challenge still meets ability. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/07a70ed21)
-- **CPU Safety Net** — New subsection in [ai-cockpit](/ai-cockpit#cpu-safety-net): two-layer guard that keeps runaway agents from melting the Mac. OrbStack hypervisor cap as the hard ceiling + userspace [cpu-watchdog.sh](https://github.com/idvorkin/Settings/blob/main/shared/cpu-watchdog.sh) that attaches `cpulimit` to any process sustaining more than four cores. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/63fc22051)
+- **CPU Safety Net** — New bullet in [how-igor-chops](/how-igor-chops#container-setup): two-layer guard that keeps runaway agents from melting the Mac. OrbStack hypervisor cap as the hard ceiling + userspace [cpu-watchdog.sh](https://github.com/idvorkin/Settings/blob/main/shared/cpu-watchdog.sh) that attaches `cpulimit` to any process sustaining more than four cores. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/63fc22051)
 - **CPU Guards reference doc** — New `/cpu-guards` page explaining why `systemd-run --scope -p CPUQuota` fails on OrbStack (no systemd as PID 1, read-only cgroup fs) and the two-layer userspace fallback that actually works. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0a105f381)
 
 ### Infrastructure & CI
