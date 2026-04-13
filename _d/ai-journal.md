@@ -18,6 +18,9 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-04-12](#2026-04-12)
+    - [The $230 Week: When Cheap Coding Isn't](#the-230-week-when-cheap-coding-isnt)
+    - [Two-Process Telegram: When the Platform Is the Bug](#two-process-telegram-when-the-platform-is-the-bug)
   - [2026-04-01](#2026-04-01)
     - [The Winchester Mystery House of Software: When Code Gets Too Cheap to Care About](#the-winchester-mystery-house-of-software-when-code-gets-too-cheap-to-care-about)
   - [2026-03-21](#2026-03-21)
@@ -239,6 +242,40 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2026-04-12
+
+#### The $230 Week: When Cheap Coding Isn't
+
+- **TOP Takeaway**: Claude Code feels free until it isn't. A 12-hour vibe-coding session plus a swarm of background agents burned through ~$230 in a week — 50% of the $200/month Max sub, another $100 in extra usage, plus 30% of the prior week's sub that rolled over. The subscription's 93% savings vs API is real, but only when you stay inside the budget. Once you tip into extra usage, you're paying raw API rates on top of a subscription you didn't finish using.
+- **The numbers**:
+  - Max 20x ($200/mo) ≈ ~$50/week baseline
+  - Week 1 of April: ~$230 spent ≈ **4.6× weekly budget**
+  - Breakdown: $60 carry from last week + $100 this week's sub + $100 extra usage overage
+  - Pacing alert: 50% used by day 1 of a new 7-day window (only 15% elapsed) → "Slow down"
+- **The logic**: Anthropic doesn't publish the weekly token cap — only rolling 5-hour windows (~220K tokens for Max 20x). Extra usage bills at standard API rates: **$5/$25 per million input/output tokens for Opus 4.6**. The subscription's real magic is that **cache reads are free**, while API cache reads are $0.50/MTok. A heavy agentic session touches the same codebase context repeatedly — 90%+ of tokens are cache reads. Subscription: $0. API: $25+. That's the 93% savings ratio heavy users report.
+- **What drove the burn**:
+  - Parallel subagents for journal extraction (80 entries × retries)
+  - Multiple Larry life-coach sessions
+  - Background agents for blog PRs, gist creation, research
+  - Long vibe-coding session with big context (context grabber, ACT blog, super index)
+  - Agent-tool dispatches that can't be aborted mid-flight
+- **The trap**: Subscription tokens feel weightless. Extra usage tokens feel like oxygen disappearing. The psychological shift at the overage boundary is brutal — same keystrokes, 10× felt cost.
+- **The lesson**: Background agents multiply burn rate. Parallel dispatches that cost "nothing" on subscription cost real money if they push you past the weekly cap. Need explicit budget discipline: check `background-usage` at session start, default to Sonnet for routine work, reserve Opus for hard reasoning. Hood Canal week (Apr 13-17) becomes a natural token sabbatical — bring the Kindle Scribe, journal by hand, let the meter reset.
+- **Bead for followup**: [igor2-n0o](https://github.com/idvorkin/igor2) — Token budget blowout writeup and sustainability plan.
+
+#### Two-Process Telegram: When the Platform Is the Bug
+
+- **TOP Takeaway**: Claude Code's Telegram plugin loses messages on every session restart — the bun poller dies with Claude, the Bot API cursor advances, and those messages are gone forever. Fix: split polling from delivery into two separate processes.
+  - The right mental model: treat the MCP bridge as ephemeral (it is), and put a durable queue in front of it
+- **The problem**: `server.ts` owns both `getUpdates` and MCP delivery. When Claude restarts, `server.ts` dies. The Bot API has no history endpoint — once `getUpdates` advances the cursor, unread messages are gone. This also explains why multiple Claude sessions cause split-brain: each spawns its own bun poller, and Telegram round-robins updates across all of them.
+- **The fix — two processes**:
+  - **`telegram_bot.py`** (persistent Python): owns `getUpdates` forever, writes every message to SQLite (WAL mode), survives Claude restarts. Singleton via `flock` — no zombie/split-update problem by construction.
+  - **`server.ts`** (modified): no longer polls Telegram. Just reads undelivered rows from SQLite, emits MCP notifications, dies with Claude as before. On reconnect, it catches up on everything missed.
+- **When things go wrong**: we ship `telegram_debug.py --doctor` — checks bot.py PID, Unix socket, SQLite row counts, server.ts process count, and source/plugin hash drift in one pass. Common failures: zombie bridge (two server.ts processes), plugin auto-update overwrites server.ts, stale bot.sock. Each has a documented fix.
+- **Liveness signal**: bot.py stamps 👀 on receive, server.ts stamps 🫡 on delivery. Both glyphs on a message = full pipeline ran. Missing outer 🫡 = MCP bridge problem.
+- **Filed as workaround**: [anthropics/claude-code#36411](https://github.com/anthropics/claude-code/issues/36411#issuecomment-4233570293)
+- **Design doc** (SQLite WAL rationale, singleton semantics, 409 retry, the pkill-by-name trap): [harden-telegram/design.md](https://github.com/idvorkin/chop-conventions/blob/main/skills/harden-telegram/design.md)
 
 ### 2026-04-01
 
