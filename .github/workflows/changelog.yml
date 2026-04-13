@@ -112,15 +112,6 @@ jobs:
             wait for approval, do not try additional verification steps. The workflow
             has a 10-minute budget for the whole job — aim to finish generation in under 8.
 
-      - name: Upload Claude transcript
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: claude-execution-output
-          path: /home/runner/work/_temp/claude-execution-output.json
-          retention-days: 30
-          if-no-files-found: warn
-
       - name: Summarize Claude run
         if: always()
         run: |
