@@ -12,6 +12,10 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Week of 2026-04-13](#week-of-2026-04-13)
+  - [AI Journal: Bot-vs-Bot, The $230 Week, and Two-Process Telegram](#ai-journal-bot-vs-bot-the-230-week-and-two-process-telegram)
+  - [Infrastructure & CI (2026-04-13)](#infrastructure--ci-2026-04-13)
+  - [Other Projects (2026-04-13)](#other-projects-2026-04-13)
 - [Week of 2026-04-12](#week-of-2026-04-12)
   - [The AI Operator: Learning to Drive the Machine (new post!)](#the-ai-operator-learning-to-drive-the-machine-new-post)
   - [ACT Made Simple: Book Notes (new post!)](#act-made-simple-book-notes-new-post)
@@ -59,6 +63,39 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- vim-markdown-toc-end -->
 
     <!-- prettier-ignore-end -->
+
+## Week of 2026-04-13
+
+_~28 commits since last changelog (blog) + cross-repo activity_
+
+### AI Journal: Bot-vs-Bot, The $230 Week, and Two-Process Telegram
+
+Three new entries on agentic cost economics, platform instability, and graceful bot-to-bot disagreement ([blog](/ai-journal#2026-04-13)):
+
+- **My Bot Wrote, Their Bot Reviewed, My Bot Pushed Back, Their Bot Said "Oops"** — A full code-review cycle ran between agents with zero human intervention. [Larry](/larry) (one of three [claws](/claw)) wrote the code, CodeRabbit flagged a claim as wrong, Larry pushed back with `gh repo view --help` output as empirical proof, CodeRabbit said "oops, you're right" and stored a file-scoped learning. Clean graceful disagreement, entirely off the desk ([chop-conventions#71](https://github.com/idvorkin/chop-conventions/pull/71#discussion_r3070590476)). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1fc551465)
+- **The $230 Week: When Cheap Coding Isn't** — ~$230 burned in a week against a $200/mo Max sub — **4.6× weekly budget**. Surface diagnosis looked like user error: parallel subagents, long vibe sessions, big-context coding. Root cause was actually a silent platform change: on **2026-03-06**, Anthropic cut the Claude Code prompt cache TTL from **1 hour to 5 minutes** server-side. Confirmed by an analysis of **119,866 API calls** across two machines via `ephemeral_1h_input_tokens` / `ephemeral_5m_input_tokens` in session JSONL ([anthropics/claude-code#46829](https://github.com/anthropics/claude-code/issues/46829), 221 reactions, [HN front page](https://news.ycombinator.com/item?id=47736476)). Anthropic's Jarred defended it as "net cheaper on average" — catastrophically expensive for long-session workloads. "The real damage is that from now on, every unexpected burn forces the question: _did I break something, or did they silently change something?_" [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6ae25982c)
+- **Two-Process Telegram: When the Platform Is the Bug** — Claude Code's Telegram plugin loses messages on every session restart: the bun poller dies with Claude, the Bot API cursor advances, and those messages are gone forever (no history endpoint). Fix: split polling from delivery. `telegram_bot.py` (persistent Python, `flock` singleton) owns `getUpdates` forever and writes every message to SQLite WAL; `server.ts` stops polling, just reads undelivered rows and dies with Claude as before. Liveness signal: 👀 stamp on receive, 🫡 stamp on delivery — missing outer glyph = MCP bridge problem. Filed as workaround on [anthropics/claude-code#36411](https://github.com/anthropics/claude-code/issues/36411#issuecomment-4233570293). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/60a8f1e84)
+
+### Infrastructure & CI (2026-04-13)
+
+- **Private Claude transcripts** — [PR #482](https://github.com/idvorkin/idvorkin.github.io/pull/482) hardens the weekly changelog workflow: drops `show_full_output: true` (tool-call stream no longer visible in the public job log), removes the public `claude-execution-output.json` artifact, and archives the full transcript to a private repo (`idvorkin/claude-run-logs-private`) via a fine-grained PAT instead. Public signal is preserved through a metrics row in the step summary (duration / turns / cost / archive status). Full architect-reviewed [design spec](https://github.com/idvorkin/idvorkin.github.io/blob/main/docs/superpowers/specs/2026-04-13-private-claude-transcripts-design.md) alongside. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/13d1ea4ff)
+- **Changelog workflow hardening** — [`/changelog` skill](https://github.com/idvorkin/idvorkin.github.io/blob/main/.claude/skills/changelog/SKILL.md) now enforces unique section headings file-wide (duplicate `###` headings like "Other Projects" would produce duplicate TOC anchors — `#other-projects-1`, `#other-projects-2` — which confuse readers and break deep links). Workflow also gained superseded-PR detection, run ID in PR title, and an explicit `Skill(changelog)` allowlist so the dispatched skill actually runs. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/bd18fad8d)
+- **AI Operator skill cross-links** — Wired three new chop-conventions skills into `/ai-operator` where the theme fits: `delegate-to-other-repo` → Finite Thinking Tokens (isolate cross-repo work in a subagent to preserve parent context), `architect-review` → Get On the Loop (iterative spec hardening is the quintessential on-the-loop pattern), `image-explore` → You Can Throw It Away (parallel generation + discarding losers made concrete). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/036582069)
+- **Backlinks regeneration** — Full rebuild of `back-links.json`: picks up the new `/ai-operator` page, fresh incoming/outgoing graph for `ai-journal`, `ai-cockpit`, `balloon`, `four-healths`, `changelog`, `claw`, `larry`, `tesla`. Also fixes a stale `/y2026` → `/y26` link. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/cd9c5298b)
+
+### Other Projects (2026-04-13)
+
+**[chop-conventions](https://github.com/idvorkin/chop-conventions)** (CHOP workflow docs)
+
+- **`/cost-impact` — weekly Claude spend report** — New skill that complements `/changelog` (which summarizes git history) by summarizing Claude _session_ history: "where did my Claude-time go this week." Scans `~/.claude/projects/**/*.jsonl` + subagent logs, filters by time window, bills per-turn per-model at current list prices (Opus 4.6 $5/$25, Sonnet 4.6 $3/$15, Haiku 4.5 $1/$5), rolls subagent tokens into parent session totals, groups by project/session/day, and writes `/tmp/cost-impact.md` with per-repo collapsible tables and clickable PR links. Fast mode (`/fast`) limitations and the TTL regression footnoted explicitly. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/ebdca2c8a)
+- **`delegate-to-other-repo` — async-by-default dispatch** — Session log resolution bug fixes + async-by-default dispatch (subagent runs without blocking parent context, so the parent conversation stays clean). Added warning against editing installed skills through the symlink (edits leak into whatever branch is currently checked out in the primary working tree). [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/31ba79e94)
+- **`up-to-date` — patch-id-aware cleanup** — Branch + worktree absorption logic moved into `diagnose.py`. Patch-id-aware cleanup detects when ahead commits are patch-equivalent to upstream (already applied under different SHAs via squash-merge) and clears them from the "unique work" list instead of treating them as real divergence. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/978633481)
+
+**[Settings](https://github.com/idvorkin/Settings)** (dotfiles & tools)
+
+- **`rmux_helper pick-links` — scrollback link picker** ([PR #69](https://github.com/idvorkin/Settings/pull/69)) — New `ratatui` TUI popup that scans the current tmux pane's scrollback for **9 link categories**: PRs, Issues, Commits, Files, Repos, Blog posts, other URLs, ssh servers, IPv4 addresses. Parallel GitHub enrichment via `tokio::task::JoinSet` with an 8-wide semaphore and a 3-second shared wall-clock deadline; on-disk cache at `~/.cache/rmux_helper/gh-links.json` (1h TTL, atomic write). Tree view with drill-down, filter tokenizer, ANSI-preserved preview. Actions: OSC 52 yank, `gh … --web`, `tmux new-window ssh`, `F2` bidirectional swap with `pick-tui`. Binding: `C-a L` launches the popup at 95% × 95%. 54 new tests (125 total passing). [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/8be8ba0d4)
+- **`y ou` — open clipboard URL** ([PR #70](https://github.com/idvorkin/Settings/pull/70)) — New `y` subcommand that opens whatever URL is currently in the clipboard in the default browser. Tiny, but fills the real gap between "copy URL from somewhere" and "actually look at it." [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/5ee752b53)
+- **link-picker follow-ups** ([PR #71](https://github.com/idvorkin/Settings/pull/71)) — Adds a Gist category and fixes hard-wrapped multi-line URL joining (terminal wraps a URL across two lines, detection would break). [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/c2dd59886)
 
 ## Week of 2026-04-12
 
