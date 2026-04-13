@@ -34,7 +34,7 @@ The operators who get better aren't the ones who just practice. They're the ones
 
 ## You Have a Finite Number of Thinking Tokens
 
-_Skills: [things you love](/balloon) · [things good for you](/four-healths)_
+_Skills: [things you love](/balloon) · [things good for you](/four-healths) · [`delegate-to-other-repo`](https://github.com/idvorkin/chop-conventions/blob/main/skills/delegate-to-other-repo/SKILL.md)_
 
 You've had this happen. You're in the middle of making changes — momentum, focus, real progress — and the AI hits its token limit. "Start a new conversation," it says. The context you'd been building together is gone. You're stuck until the window resets.
 
@@ -46,7 +46,7 @@ The point of AI is to extend what you can get done in a day. If you spend your t
 
 ## You Need to Get On the Loop
 
-_Skills: [`show-your-work`](https://github.com/idvorkin/idvorkin.github.io/blob/main/.claude/skills/show-your-work/SKILL.md) · [`walk-the-store`](https://github.com/idvorkin/idvorkin.github.io/blob/main/.claude/skills/walk-the-store/SKILL.md)_
+_Skills: [`show-your-work`](https://github.com/idvorkin/idvorkin.github.io/blob/main/.claude/skills/show-your-work/SKILL.md) · [`walk-the-store`](https://github.com/idvorkin/idvorkin.github.io/blob/main/.claude/skills/walk-the-store/SKILL.md) · [`architect-review`](https://github.com/idvorkin/chop-conventions/blob/main/skills/architect-review/SKILL.md)_
 
 Working with an AI agent always looks the same: there's a loop. The AI tries something. Something checks whether it worked. If not, adjust and try again. Repeat until it's good. Coding, writing, anything — every interaction with an agent is some version of try → check → fix → try.
 
@@ -86,7 +86,7 @@ Do those three and the AI stops guessing at the constraints you forgot to mentio
 
 ## You Can Throw It Away
 
-_Skills: [`walk-the-store`](https://github.com/idvorkin/idvorkin.github.io/blob/main/.claude/skills/walk-the-store/SKILL.md)_
+_Skills: [`walk-the-store`](https://github.com/idvorkin/idvorkin.github.io/blob/main/.claude/skills/walk-the-store/SKILL.md) · [`image-explore`](https://github.com/idvorkin/chop-conventions/blob/main/skills/image-explore/SKILL.md)_
 
 When the AI drives off course, throw it away. Start over. You already got the expensive part — the _learning_ — and the code itself was basically free to generate. The next attempt will be better because you know more now.
 
