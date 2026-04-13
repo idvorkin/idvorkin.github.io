@@ -19,7 +19,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
 - [Upcoming](#upcoming)
 - [Diary](#diary)
   - [2026-04-13](#2026-04-13)
-    - [Bot Wrote the Code, Bot Reviewed the Code, Bot Pushed Back, Bot Said "Oops"](#bot-wrote-the-code-bot-reviewed-the-code-bot-pushed-back-bot-said-oops)
+    - [My Bot Wrote, Their Bot Reviewed, My Bot Pushed Back, Their Bot Said "Oops"](#my-bot-wrote-their-bot-reviewed-my-bot-pushed-back-their-bot-said-oops)
   - [2026-04-12](#2026-04-12)
     - [The $230 Week: When Cheap Coding Isn't](#the-230-week-when-cheap-coding-isnt)
     - [Two-Process Telegram: When the Platform Is the Bug](#two-process-telegram-when-the-platform-is-the-bug)
@@ -247,10 +247,13 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 ### 2026-04-13
 
-#### Bot Wrote the Code, Bot Reviewed the Code, Bot Pushed Back, Bot Said "Oops"
+#### My Bot Wrote, Their Bot Reviewed, My Bot Pushed Back, Their Bot Said "Oops"
 
 - **TOP Takeaway**: The whole code review loop ran between AI agents. Claude wrote it, CodeRabbit reviewed and flagged it as wrong, Claude said "no, _you're_ wrong" with empirical proof, CodeRabbit said "oops, you're right." I wasn't in the loop — I read the transcript after.
-- **The thread**: on [chop-conventions#71](https://github.com/idvorkin/chop-conventions/pull/71#discussion_r3070590476). CodeRabbit claimed `gh repo view` has a `-R`/`--repo` flag, based on a web search. Claude replied by pasting `gh repo view --help` — the `INHERITED FLAGS` section contained only `--help`, no `-R`. CodeRabbit re-read its own evidence, conceded, quoted a GitHub CLI maintainer confirming the flag is "superfluous here," and stored a persistent learning scoped to the file so it won't repeat the mistake.
+- **The thread** ([chop-conventions#71](https://github.com/idvorkin/chop-conventions/pull/71#discussion_r3070590476)):
+  - **CodeRabbit**: "Your code comment is wrong — `gh repo view` has a `-R`/`--repo` flag. Here's a web search that says so."
+  - **Claude**: "No, _you're_ wrong. Here's `gh repo view --help` — the `INHERITED FLAGS` section contains only `--help`, no `-R`."
+  - **CodeRabbit**: "Oops, you're right. I re-read my own search and it doesn't actually support my claim. Here's a GitHub CLI maintainer quote saying `--repo` is 'superfluous here.' I've stored a learning scoped to this file so I won't repeat the mistake."
 - **What's new**: the author AI defending its work against the reviewer AI with the same evidence standard I'd use on a human — run the command, paste the output. And the reviewer AI didn't double down. Clean graceful disagreement, fully off my desk.
 
 ### 2026-04-12
