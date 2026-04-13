@@ -513,7 +513,19 @@ function getOrCreateHeaderId(header: HTMLElement): string {
 }
 
 /**
- * Gets the first non-empty paragraph of content after a header
+ * Maximum length for share/copy preview text. Telegram and iMessage both render
+ * ~600 characters cleanly, which is enough for ~3-4 bullets of real content
+ * without forcing the TinyURL off-screen.
+ */
+const PREVIEW_MAX_LENGTH = 600;
+
+/**
+ * Gets the first non-empty paragraph of content after a header.
+ *
+ * Returns untruncated text — truncation is the caller's responsibility
+ * (see `truncateText`). Previously this function pre-truncated at 500 chars,
+ * then `getPreviewText` re-truncated at 400 chars, yielding double-truncation
+ * that clipped bullet lists mid-sentence. See issue #487.
  */
 function getFirstParagraphAfterHeader(header: HTMLElement): string {
   let nextElement = header.nextElementSibling;
@@ -529,12 +541,16 @@ function getFirstParagraphAfterHeader(header: HTMLElement): string {
     if (nextElement.tagName === "P") {
       const text = (nextElement.textContent || "").trim();
       if (text.length > 0) {
-        // Found non-empty paragraph - truncate if too long
-        return text.length > 500 ? `${text.substring(0, 497)}...` : text;
+        return text;
       }
     }
 
-    // If it's a list (UL or OL), get text from the list items
+    // If it's a list (UL or OL), get text from the list items.
+    // Keep whole bullets intact: stop accumulating as soon as adding the
+    // next bullet would exceed PREVIEW_MAX_LENGTH (with a small safety
+    // margin for the joining newlines and bullet markers). We always keep
+    // at least the first bullet, even if it alone exceeds the cap — the
+    // outer truncateText will trim that case gracefully.
     if (nextElement.tagName === "UL" || nextElement.tagName === "OL") {
       const listItems = nextElement.querySelectorAll("li");
       const itemTexts: string[] = [];
@@ -554,17 +570,23 @@ function getFirstParagraphAfterHeader(header: HTMLElement): string {
           .join(" ")
           .trim();
 
-        if (text.length > 0) {
-          itemTexts.push(`• ${text}`);
-          totalLength += text.length;
-          if (totalLength > 400) break; // Stop if we have enough text
+        if (text.length === 0) continue;
+
+        const bulletLen = text.length + 2; // "• " prefix
+        // If we already have at least one bullet and adding this one would
+        // blow the cap, stop here and let the outer truncator append an
+        // ellipsis. This keeps bullet boundaries clean.
+        if (itemTexts.length > 0 && totalLength + bulletLen + 1 > PREVIEW_MAX_LENGTH) {
+          break;
         }
+
+        itemTexts.push(`• ${text}`);
+        totalLength += bulletLen + 1; // +1 for the joining newline
       }
 
       if (itemTexts.length > 0) {
-        // Join with newlines for better formatting
-        const combinedText = itemTexts.join("\n");
-        return combinedText.length > 500 ? `${combinedText.substring(0, 497)}...` : combinedText;
+        // Join with newlines for better formatting.
+        return itemTexts.join("\n");
       }
     }
 
@@ -575,17 +597,46 @@ function getFirstParagraphAfterHeader(header: HTMLElement): string {
 }
 
 /**
- * Truncates text to a maximum length, preserving word boundaries
+ * Truncates text to a maximum length, preferring sentence boundaries
+ * (`. `, `! `, `? `), then bullet boundaries (`\n•`), then word boundaries,
+ * and finally a hard cut. Appends `...` when truncation occurs.
+ *
+ * Sentence-aware truncation keeps shared previews readable: the old
+ * word-boundary-only version would clip mid-sentence inside a quote like
+ * `• CodeRabbit: "Your code...`, which looks broken to recipients. See #487.
  */
-function truncateText(text: string, maxLength = 400): string {
+function truncateText(text: string, maxLength = PREVIEW_MAX_LENGTH): string {
   if (text.length <= maxLength) {
     return text;
   }
 
-  // Truncate to maxLength and find the last space
   const truncated = text.substring(0, maxLength);
-  const lastSpace = truncated.lastIndexOf(" ");
 
+  // Prefer a sentence end (period/exclamation/question followed by space or
+  // newline) in the last ~40% of the window. Searching too early would
+  // throw away too much content.
+  const minBoundary = Math.floor(maxLength * 0.6);
+  const sentenceEnders = [". ", "! ", "? ", ".\n", "!\n", "?\n"];
+  let bestBoundary = -1;
+  for (const ender of sentenceEnders) {
+    const idx = truncated.lastIndexOf(ender);
+    if (idx >= minBoundary && idx + ender.length > bestBoundary) {
+      // +1 so we include the terminal punctuation but drop the trailing space/newline.
+      bestBoundary = idx + 1;
+    }
+  }
+  if (bestBoundary > 0) {
+    return `${truncated.substring(0, bestBoundary).trimEnd()}...`;
+  }
+
+  // Next, try a bullet boundary (newline followed by a bullet marker).
+  const bulletBoundary = truncated.lastIndexOf("\n•");
+  if (bulletBoundary >= minBoundary) {
+    return `${truncated.substring(0, bulletBoundary).trimEnd()}...`;
+  }
+
+  // Fall back to word boundary.
+  const lastSpace = truncated.lastIndexOf(" ");
   if (lastSpace > 0) {
     return `${truncated.substring(0, lastSpace)}...`;
   }
