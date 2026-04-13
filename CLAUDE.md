@@ -50,6 +50,8 @@ git push -u origin <branch-name>
 gh pr create --repo idvorkin/idvorkin.github.io
 ```
 
+You also **can't `gh pr close` or `gh pr merge`** on PRs in `idvorkin/*` repos from the `idvorkin-ai-tools` account — GraphQL returns `does not have the correct permissions`. When superseding an existing PR, add a supersede comment referencing the replacement and ask Igor to close it manually.
+
 ### Providing PR Links
 
 **Always provide the link to changed files, not just the PR overview.**
@@ -86,6 +88,7 @@ For content/visual PRs, include a rendered screenshot in the PR description. Pro
    - Server takes ~30s on first build — screenshot before it's ready = blank page
    - Port 4000 may be taken — always use `--port 4000 --process jekyll` so serena MCP or other stray dir-servers don't trigger a false ✓
    - Content changes need a rebuild — wait for livereload or give it a few seconds after saving
+   - **`jekyll serve --incremental --livereload` serves fresh HTML over HTTP but does NOT write `_site/*.html` to disk.** `prek`'s anchor checker and lychee read disk, so they'll flag phantom broken anchors right after you edit a heading. Fix: `bundle exec jekyll build --incremental` (the live server can stay up), then re-run the hook.
 
 1. **Take screenshot** of the rendered page section:
 
