@@ -51,6 +51,7 @@ jobs:
           fi
 
       - name: Generate Changelog
+        id: claude
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
@@ -67,8 +68,13 @@ jobs:
           # leaving the verify step to fail the job with a confusing error.
           # Edit/Read/Write/Grep/Glob are needed for reading the existing
           # changelog, editing the TOC, and writing the new entry.
+          # Skill(changelog) lets Claude invoke `/changelog` via the Skill
+          # tool directly. Without it, the Skill invocation is refused (seen
+          # as permission_denials_count: 1 in run 24316228228) and Claude
+          # falls back to reading SKILL.md and executing steps manually —
+          # the run still succeeds but skips the formal slash-command flow.
           claude_args: |
-            --allowedTools "Bash,Edit,Read,Write,Grep,Glob"
+            --allowedTools "Bash,Edit,Read,Write,Grep,Glob,Skill(changelog)"
           prompt: |
             /changelog
             Look back ${{ inputs.days || '7' }} days. The week-of date is ${{ steps.date.outputs.week_of }} (UTC).
@@ -105,6 +111,161 @@ jobs:
             Exit immediately after writing `_d/changelog.md`. Do not hang around, do not
             wait for approval, do not try additional verification steps. The workflow
             has a 10-minute budget for the whole job — aim to finish generation in under 8.
+
+      - name: Archive Claude transcript to private repo
+        if: always()
+        id: archive
+        continue-on-error: true
+        env:
+          LOGS_TOKEN: ${{ secrets.CLAUDE_RUN_LOGS_PUSH_TOKEN }}
+          RUN_ID: ${{ github.run_id }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}/attempts/${{ github.run_attempt }}
+        run: |
+          set -euo pipefail
+          TRANSCRIPT=/home/runner/work/_temp/claude-execution-output.json
+          if [ ! -f "$TRANSCRIPT" ]; then
+            echo "archive_status=no_transcript" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if [ -z "${LOGS_TOKEN:-}" ]; then
+            # Fast-fail before we ever construct a tokenless clone URL. `set -u`
+            # does NOT catch this because env: bindings always exist (just empty),
+            # and an empty token would otherwise produce a confusing 401 on clone.
+            echo "archive_status=no_token" >> "$GITHUB_OUTPUT"
+            echo "::error::CLAUDE_RUN_LOGS_PUSH_TOKEN secret is unset on this repo/fork"
+            exit 1
+          fi
+          TS=$(date -u +%Y-%m-%dT%H-%M-%SZ)
+          # RUN_ATTEMPT distinguishes "Re-run failed jobs" invocations, which reuse
+          # github.run_id. Without it, a re-run would collide with the first attempt's
+          # filename — git would still commit (transcripts differ in timing fields)
+          # but the filename would be misleading.
+          FNAME="transcripts/${TS}-changelog-run-${RUN_ID}-attempt-${RUN_ATTEMPT}.json"
+          WORK=/tmp/claude-run-logs-private
+          # Pass the token via an Authorization header on the git invocation rather
+          # than embedding it in the clone URL. Two reasons:
+          #   1. A URL like https://x-access-token:TOKEN@github.com/... ends up in
+          #      the cloned repo's .git/config, where any later step on this runner
+          #      could read it.
+          #   2. More importantly, the URL form puts the token in the `git clone`
+          #      argv, which means any process running as the runner user during
+          #      the clone window can read it from /proc/<pid>/cmdline. The header
+          #      form is passed via `git -c http.extraHeader=...`, which still goes
+          #      through argv on this single invocation but never touches .git/config
+          #      and is not embedded in the persistent remote URL used by later
+          #      `git push` calls. The push therefore needs the same `-c` flag.
+          # GHA's secret masking redacts the raw token from public log lines, but
+          # the base64 transformation below is NOT automatically masked — the bytes
+          # are different from the raw secret, so GHA's content-based masker won't
+          # recognize them. Anyone running `set -x` in this step (or a future git
+          # version that echoed `-c` values on error) would then leak the base64,
+          # which trivially decodes back to `x-access-token:<TOKEN>`. Mitigate by
+          # explicitly registering the base64 form as a mask via the workflow
+          # command. `::add-mask::` itself is NOT printed verbatim — GHA processes
+          # it and replaces with `***` in subsequent log output. `printf` is a bash
+          # builtin, so the raw token never appears in any subprocess argv during
+          # the pipe to `base64`.
+          B64=$(printf 'x-access-token:%s' "$LOGS_TOKEN" | base64 -w0)
+          echo "::add-mask::$B64"
+          AUTH_HEADER="Authorization: Basic $B64"
+          git -c http.extraHeader="$AUTH_HEADER" \
+              clone --depth 1 \
+              https://github.com/idvorkin/claude-run-logs-private.git \
+              "$WORK"
+          mkdir -p "$WORK/transcripts"
+          cp "$TRANSCRIPT" "$WORK/$FNAME"
+          cd "$WORK"
+          git add "$FNAME"
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit \
+              -m "ci(changelog): archive transcript for run ${RUN_ID} attempt ${RUN_ATTEMPT}" \
+              -m "Source run: ${RUN_URL}"
+          # Single push, no retry. The changelog workflow's `concurrency:
+          # weekly-changelog` group with `cancel-in-progress: false` already
+          # serializes every writer to this repo today (changelog.yml is the only
+          # workflow that pushes here, per Non-goals). If a future workflow adopts
+          # this archive pattern, the right fix is to share a single concurrency
+          # group across both workflows — not to add per-workflow retry-loop band-
+          # aids. A non-fast-forward today would be a real bug, not a race to paper
+          # over, and `continue-on-error: true` already turns a single bad push into
+          # a warn-and-continue rather than a workflow failure.
+          git -c http.extraHeader="$AUTH_HEADER" push origin HEAD:main
+          echo "archive_status=ok" >> "$GITHUB_OUTPUT"
+          echo "archive_path=${FNAME}" >> "$GITHUB_OUTPUT"
+
+      - name: Summarize Claude run
+        if: always()
+        env:
+          ARCHIVE_OUTCOME: ${{ steps.archive.outcome }}
+          ARCHIVE_STATUS: ${{ steps.archive.outputs.archive_status }}
+          ARCHIVE_PATH: ${{ steps.archive.outputs.archive_path }}
+        run: |
+          F=/home/runner/work/_temp/claude-execution-output.json
+          if [ ! -f "$F" ]; then
+            echo "No Claude transcript at $F" >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          # Transcript format: one event per line (JSONL) OR a single JSON array.
+          # The `result` event carries the totals. Try JSONL first, then array fallback.
+          RESULT=$(
+            jq -c 'select(.type == "result")' "$F" 2>/dev/null | tail -n 1
+          )
+          if [ -z "$RESULT" ]; then
+            RESULT=$(
+              jq -c '.[] | select(.type == "result")' "$F" 2>/dev/null | tail -n 1
+            )
+          fi
+          if [ -z "$RESULT" ]; then
+            {
+              echo "## Claude run summary"
+              echo ""
+              echo "Could not parse transcript. First 40 lines:"
+              echo ""
+              echo '```'
+              head -n 40 "$F"
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          DUR_MS=$(echo "$RESULT" | jq -r '.duration_ms // 0')
+          DUR_S=$((DUR_MS / 1000))
+          TURNS=$(echo "$RESULT" | jq -r '.num_turns // "n/a"')
+          COST=$(echo "$RESULT" | jq -r '.total_cost_usd // "n/a"')
+          DENIALS=$(echo "$RESULT" | jq -r '.permission_denials_count // 0')
+          IS_ERROR=$(echo "$RESULT" | jq -r '.is_error // false')
+          {
+            echo "## Claude run summary"
+            echo ""
+            echo "| Metric | Value |"
+            echo "|---|---|"
+            echo "| Duration | ${DUR_S}s |"
+            echo "| Turns | ${TURNS} |"
+            echo "| Cost | \$${COST} |"
+            echo "| Permission denials | ${DENIALS} |"
+            echo "| Success | $([ "$IS_ERROR" = "false" ] && echo yes || echo no) |"
+          } >> "$GITHUB_STEP_SUMMARY"
+          # Archive status row — reads outputs from the `Archive Claude transcript
+          # to private repo` step via step-level env: bindings above. Bolded
+          # failure branches make warn-and-continue failures visually distinct
+          # from healthy runs at a glance.
+          case "${ARCHIVE_OUTCOME:-}" in
+            success)
+              case "${ARCHIVE_STATUS:-}" in
+                ok)            AR="archived \`${ARCHIVE_PATH}\`" ;;
+                no_transcript) AR="no transcript produced" ;;
+                *)             AR="unknown (status=${ARCHIVE_STATUS:-empty})" ;;
+              esac ;;
+            failure)
+              case "${ARCHIVE_STATUS:-}" in
+                no_token) AR="**archive failed — CLAUDE_RUN_LOGS_PUSH_TOKEN unset**" ;;
+                *)        AR="**archive failed — see step log**" ;;
+              esac ;;
+            skipped) AR="skipped" ;;
+            *)       AR="(outcome=${ARCHIVE_OUTCOME:-empty})" ;;
+          esac
+          echo "| Transcript archive | ${AR} |" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Verify changelog was updated
         run: |
