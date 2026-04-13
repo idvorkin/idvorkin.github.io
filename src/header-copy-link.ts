@@ -592,7 +592,7 @@ function truncateText(text: string, maxLength = 600): string {
   const searchFrom = Math.floor(maxLength * 0.6);
 
   // 1. Prefer cutting just before a bullet on a new line
-  const lastBullet = textWindow.lastIndexOf("\n•", maxLength);
+  const lastBullet = textWindow.lastIndexOf("\n•");
   if (lastBullet >= searchFrom) {
     return `${textWindow.substring(0, lastBullet)}...`;
   }
