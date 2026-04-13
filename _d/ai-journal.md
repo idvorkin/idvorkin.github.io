@@ -18,6 +18,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-04-13](#2026-04-13)
+    - [My Bot Wrote, Their Bot Reviewed, My Bot Pushed Back, Their Bot Said "Oops"](#my-bot-wrote-their-bot-reviewed-my-bot-pushed-back-their-bot-said-oops)
   - [2026-04-12](#2026-04-12)
     - [The $230 Week: When Cheap Coding Isn't](#the-230-week-when-cheap-coding-isnt)
     - [Two-Process Telegram: When the Platform Is the Bug](#two-process-telegram-when-the-platform-is-the-bug)
@@ -243,6 +245,17 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 ## Diary
 
+### 2026-04-13
+
+#### My Bot Wrote, Their Bot Reviewed, My Bot Pushed Back, Their Bot Said "Oops"
+
+- **TOP Takeaway**: The whole code review loop ran between AI agents. My [Larry](/larry) (one of my [three claws](/claw) — [Larry](/larry), Wally, and [Tony](/tesla)) wrote the code, CodeRabbit reviewed and flagged it as wrong, Larry said "no, _you're_ wrong" with empirical proof, CodeRabbit said "oops, you're right." I wasn't in the loop — I read the transcript after.
+- **The thread** ([chop-conventions#71](https://github.com/idvorkin/chop-conventions/pull/71#discussion_r3070590476)):
+  - **CodeRabbit**: "Your code comment is wrong — `gh repo view` has a `-R`/`--repo` flag. Here's a web search that says so."
+  - **Larry**: "No, _you're_ wrong. Here's `gh repo view --help` — the `INHERITED FLAGS` section contains only `--help`, no `-R`."
+  - **CodeRabbit**: "Oops, you're right. I re-read my own search and it doesn't actually support my claim. Here's a GitHub CLI maintainer quote saying `--repo` is 'superfluous here.' I've stored a learning scoped to this file so I won't repeat the mistake."
+- **What's new**: my claw defending its work against their bot with the same evidence standard I'd use on a human — run the command, paste the output. And the reviewer bot didn't double down. Clean graceful disagreement, fully off my desk.
+
 ### 2026-04-12
 
 #### The $230 Week: When Cheap Coding Isn't
@@ -262,7 +275,12 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - Agent-tool dispatches that can't be aborted mid-flight
 - **The trap**: Subscription tokens feel weightless. Extra usage tokens feel like oxygen disappearing. The psychological shift at the overage boundary is brutal — same keystrokes, 10× felt cost.
 - **The lesson**: Background agents multiply burn rate. Parallel dispatches that cost "nothing" on subscription cost real money if they push you past the weekly cap. Need explicit budget discipline: check `background-usage` at session start, default to Sonnet for routine work, reserve Opus for hard reasoning. Hood Canal week (Apr 13-17) becomes a natural token sabbatical — bring the Kindle Scribe, journal by hand, let the meter reset.
-- **Bead for followup**: [igor2-n0o](https://github.com/idvorkin/igor2) — Token budget blowout writeup and sustainability plan.
+- **The root cause — it wasn't me**: on **March 6, 2026**, Anthropic silently cut the Claude Code prompt cache TTL from **1 hour to 5 minutes**. No announcement, no changelog, server-side only. That's 12× more frequent cache invalidation — so every long vibe-coding session now pays to recreate the cache every 5 minutes instead of reading it for free for an hour. My "cache reads are free, 93% savings" math from the bullet above only holds while the cache is alive. For my workload — long sessions, big context, same files touched repeatedly — the cache dies between every pair of keystrokes now. I didn't over-use; the unit economics got flipped under me mid-subscription.
+- **How it was caught and confirmed** ([anthropics/claude-code#46829](https://github.com/anthropics/claude-code/issues/46829), closed 2026-04-12, 221 reactions — HN front page at [498 pts](https://news.ycombinator.com/item?id=47736476)):
+  - A user analyzed **119,866 Claude Code API calls across two machines** using the `ephemeral_1h_input_tokens` / `ephemeral_5m_input_tokens` fields in session JSONL. Feb 1 – Mar 5: 1h TTL stable for 33+ days. Mar 6–8: transition. Mar 8 – Apr 11: 5m dominant. No client-side changes — the flip was server-side.
+  - **Jarred from Anthropic confirmed it was intentional**: _"The March 6 change makes Claude Code cheaper, not more expensive."_ The argument: 1h writes cost 2× base input vs. 5m writes at 1.25×, and many one-shot calls never re-read within the hour, so per-request TTL selection is net cheaper across the request mix — _on average_. It just happens to be catastrophically expensive for the long-session workload I actually run.
+  - Supporting reports from other Max 20x users: [#43274](https://github.com/anthropics/claude-code/issues/43274) (5-hour window collapsing to 60–90 min around March 23), [#22435](https://github.com/anthropics/claude-code/issues/22435) (mitmproxy evidence of 10× burn-rate variance via `x-ratelimit-5h-utilization` headers), [#40715](https://github.com/anthropics/claude-code/issues/40715) (feature request for the runaway-detection pacing alert that still doesn't exist — user burned $50 in minutes with no warning).
+- **The trust cost**: the TTL number isn't the real damage. The real damage is that from now on, every unexpected burn forces the question _"did I break something, or did they silently change something?"_ — and that doubt compounds across every future debugging session. Comments on #46829 escalated fast: "rug pull," "scammer tactics," "constructive termination" of Max plans.
 
 #### Two-Process Telegram: When the Platform Is the Bug
 
