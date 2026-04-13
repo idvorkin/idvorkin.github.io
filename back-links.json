@@ -981,7 +981,7 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get lost\n\n",
-            "doc_size": 149000,
+            "doc_size": 137000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai",
@@ -998,17 +998,17 @@
                 "/walking-with-god",
                 "/y25"
             ],
-            "last_modified": "2026-04-13T05:03:02+00:00",
+            "last_modified": "2026-04-13T18:31:13.162176+00:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
                 "/ai-journal",
                 "/ai-security",
+                "/ai-talk",
                 "/chop",
                 "/chow",
                 "/claw",
                 "/eulogy",
-                "/genai-talk",
                 "/gpt",
                 "/how-igor-chops",
                 "/hyper-personal",
@@ -1779,10 +1779,10 @@
         },
         "/changelog": {
             "description": "A weekly summary of what changed on this blog and across my GitHub projects. Useful for returning readers who want to catch up on new content and updates.\n\n",
-            "doc_size": 80000,
+            "doc_size": 67000,
             "file_path": "_site/changelog.html",
             "incoming_links": [],
-            "last_modified": "2026-04-13T02:37:12.272092+00:00",
+            "last_modified": "2026-04-13T18:31:13.162176+00:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
                 "/act",
@@ -1801,6 +1801,7 @@
                 "/hyper-personal",
                 "/irl",
                 "/keyboard",
+                "/larry",
                 "/lonely",
                 "/mosh",
                 "/product",
@@ -1808,7 +1809,7 @@
                 "/shoulder-pain",
                 "/side-quests",
                 "/spiritual-health",
-                "/y26"
+                "/y2026"
             ],
             "redirect_url": "",
             "title": "Changelog",
@@ -3883,6 +3884,7 @@
                 "/ai-feed",
                 "/ai-journal",
                 "/ai-second-brain",
+                "/changelog",
                 "/chow",
                 "/claw",
                 "/mortality-software",
