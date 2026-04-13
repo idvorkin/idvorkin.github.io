@@ -529,8 +529,8 @@ function getFirstParagraphAfterHeader(header: HTMLElement): string {
     if (nextElement.tagName === "P") {
       const text = (nextElement.textContent || "").trim();
       if (text.length > 0) {
-        // Found non-empty paragraph - truncate if too long
-        return text.length > 500 ? `${text.substring(0, 497)}...` : text;
+        // Return untruncated; outer truncateText call will apply the cap
+        return text;
       }
     }
 
@@ -557,14 +557,13 @@ function getFirstParagraphAfterHeader(header: HTMLElement): string {
         if (text.length > 0) {
           itemTexts.push(`• ${text}`);
           totalLength += text.length;
-          if (totalLength > 400) break; // Stop if we have enough text
+          if (totalLength > 600) break; // Stop if we have enough text
         }
       }
 
       if (itemTexts.length > 0) {
-        // Join with newlines for better formatting
-        const combinedText = itemTexts.join("\n");
-        return combinedText.length > 500 ? `${combinedText.substring(0, 497)}...` : combinedText;
+        // Return untruncated; outer truncateText call will apply the cap
+        return itemTexts.join("\n");
       }
     }
 
@@ -575,22 +574,49 @@ function getFirstParagraphAfterHeader(header: HTMLElement): string {
 }
 
 /**
- * Truncates text to a maximum length, preserving word boundaries
+ * Truncates text to a maximum length, preferring sentence boundaries.
+ *
+ * Cut order (within the last 40% of the window):
+ *   1. Bullet boundary  `\n•`
+ *   2. Sentence-ending punctuation  `. ` | `! ` | `? `
+ *   3. Word boundary (last space)
+ *   4. Hard cut at maxLength
  */
-function truncateText(text: string, maxLength = 400): string {
+function truncateText(text: string, maxLength = 600): string {
   if (text.length <= maxLength) {
     return text;
   }
 
-  // Truncate to maxLength and find the last space
-  const truncated = text.substring(0, maxLength);
-  const lastSpace = truncated.lastIndexOf(" ");
+  const textWindow = text.substring(0, maxLength);
+  // Search for a clean boundary in the last 40% of the allowed window
+  const searchFrom = Math.floor(maxLength * 0.6);
 
-  if (lastSpace > 0) {
-    return `${truncated.substring(0, lastSpace)}...`;
+  // 1. Prefer cutting just before a bullet on a new line
+  const lastBullet = textWindow.lastIndexOf("\n•", maxLength);
+  if (lastBullet >= searchFrom) {
+    return `${textWindow.substring(0, lastBullet)}...`;
   }
 
-  return `${truncated}...`;
+  // 2. Prefer cutting after sentence-ending punctuation
+  let bestSentenceEnd = -1;
+  for (const marker of [". ", "! ", "? "]) {
+    const idx = textWindow.lastIndexOf(marker);
+    if (idx >= searchFrom && idx + marker.length > bestSentenceEnd) {
+      bestSentenceEnd = idx + marker.length;
+    }
+  }
+  if (bestSentenceEnd > 0) {
+    return `${textWindow.substring(0, bestSentenceEnd).trimEnd()}...`;
+  }
+
+  // 3. Fall back to word boundary
+  const lastSpace = textWindow.lastIndexOf(" ");
+  if (lastSpace > 0) {
+    return `${textWindow.substring(0, lastSpace)}...`;
+  }
+
+  // 4. Hard cut
+  return `${textWindow}...`;
 }
 
 /**

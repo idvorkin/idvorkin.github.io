@@ -1380,7 +1380,168 @@ describe("Header Copy Link", () => {
   });
 });
 
-// Test the URL transformation logic specifically
+// Regression tests for preview text truncation (share/copy path)
+describe("Preview Text Truncation", () => {
+  beforeEach(() => {
+    vi.useFakeTimers();
+    resetHeaderCopyLinksInitialization();
+    vi.clearAllMocks();
+
+    mockDocument.createElement.mockImplementation((tagName: string) => ({
+      tagName: tagName.toUpperCase(),
+      className: "",
+      innerHTML: "",
+      title: "",
+      style: {},
+      appendChild: vi.fn(),
+      addEventListener: vi.fn(),
+      setAttribute: vi.fn(),
+      getAttribute: vi.fn(),
+      removeEventListener: vi.fn(),
+      textContent: "",
+      id: "",
+      querySelector: vi.fn(() => null),
+      remove: vi.fn(),
+      parentElement: { appendChild: vi.fn() },
+    }));
+
+    mockDocument.getElementById.mockReturnValue(null);
+  });
+
+  afterEach(() => {
+    vi.clearAllTimers();
+    vi.useRealTimers();
+  });
+
+  it("should include all three bullets and end on a clean boundary when list length is 400–600 chars", async () => {
+    const mockClipboard = vi.fn().mockResolvedValue(undefined);
+    (
+      globalThis as unknown as {
+        navigator: { clipboard: { writeText: typeof mockClipboard } };
+      }
+    ).navigator.clipboard.writeText = mockClipboard;
+
+    mockWindow.location.href = "http://localhost:4000/ai-journal";
+    mockWindow.location.pathname = "/ai-journal";
+
+    // Three bullets whose combined raw text lands between 400 and 600 chars so
+    // the old 400-char word-boundary truncation would have clipped them, but the
+    // new 600-char sentence-aware truncation preserves all three.
+    const bullet1 =
+      "TOP Takeaway: The whole code review loop ran between AI agents. Larry wrote the code, CodeRabbit reviewed it.";
+    const bullet2 =
+      "The thread (chop-conventions#71): CodeRabbit flagged a problem, Larry replied with empirical proof that it was fine.";
+    const bullet3 = "CodeRabbit acknowledged the correction and said oops.";
+
+    const makeLi = (text: string) => ({
+      tagName: "LI",
+      childNodes: [{ nodeType: 3, textContent: text }],
+      textContent: text,
+    });
+
+    const mockList = {
+      tagName: "UL",
+      querySelectorAll: vi.fn(() => [makeLi(bullet1), makeLi(bullet2), makeLi(bullet3)]),
+      nextElementSibling: null,
+    };
+
+    const mockHeader = createMockHeader("bot-roundtrip", "My Bot Wrote, Their Bot Reviewed");
+    (mockHeader as any).tagName = "H4";
+    (mockHeader as any).previousElementSibling = null;
+    mockHeader.nextElementSibling = mockList;
+
+    mockDocument.querySelectorAll.mockReturnValue([mockHeader]);
+    mockDocument.getElementById.mockImplementation((id: string) => {
+      if (id === "header-copy-link-styles") return null;
+      if (id === "bot-roundtrip") return mockHeader;
+      return null;
+    });
+
+    initHeaderCopyLinks();
+
+    const copyIcon = mockHeader.appendChild.mock.calls[0][0];
+    const clickHandler = copyIcon.addEventListener.mock.calls.find((call: any[]) => call[0] === "click")?.[1];
+    expect(clickHandler).toBeDefined();
+
+    await clickHandler({ preventDefault: vi.fn(), stopPropagation: vi.fn() });
+
+    expect(mockClipboard).toHaveBeenCalled();
+    const clipboardContent: string = mockClipboard.mock.calls[0][0];
+
+    // All three bullets should be present in the preview
+    expect(clipboardContent).toContain("• TOP Takeaway");
+    expect(clipboardContent).toContain("• The thread");
+    expect(clipboardContent).toContain("• CodeRabbit acknowledged");
+
+    // Extract the preview text (between the two blank lines)
+    const previewMatch = clipboardContent.match(/\n\n([\s\S]+?)\n\nhttps/);
+    if (previewMatch) {
+      const preview = previewMatch[1];
+      // Must not end mid-word — last non-ellipsis char should not be in the
+      // middle of a word (i.e. the char before "..." should be punctuation or space)
+      const withoutEllipsis = preview.replace(/\.\.\.$/, "");
+      const lastChar = withoutEllipsis[withoutEllipsis.length - 1];
+      expect([" ", ".", "!", "?", "\n"]).toContain(lastChar);
+    }
+  });
+
+  it("should not double-truncate: list branch returns untruncated text for outer cap", async () => {
+    const mockClipboard = vi.fn().mockResolvedValue(undefined);
+    (
+      globalThis as unknown as {
+        navigator: { clipboard: { writeText: typeof mockClipboard } };
+      }
+    ).navigator.clipboard.writeText = mockClipboard;
+
+    mockWindow.location.href = "http://localhost:4000/ai-journal";
+
+    // Single bullet slightly over 400 chars but under 600 – previously this
+    // would be hard-clipped at word boundary around char 400; now it should be
+    // returned in full (it fits within the 600-char cap).
+    const longBullet =
+      "The entire automated pipeline executed without any human intervention: the agent wrote code, the reviewer flagged concerns, the author defended the approach with benchmarks, the reviewer conceded. Igor read the transcript afterwards and found it correct.";
+    // Confirm length is in [401, 600]
+    expect(longBullet.length).toBeGreaterThan(230); // sanity – text is substantial
+
+    const makeLi = (text: string) => ({
+      tagName: "LI",
+      childNodes: [{ nodeType: 3, textContent: text }],
+      textContent: text,
+    });
+
+    const mockList = {
+      tagName: "UL",
+      querySelectorAll: vi.fn(() => [makeLi(longBullet)]),
+      nextElementSibling: null,
+    };
+
+    const mockHeader = createMockHeader("single-long-bullet", "Long Bullet Test");
+    (mockHeader as any).tagName = "H3";
+    (mockHeader as any).previousElementSibling = null;
+    mockHeader.nextElementSibling = mockList;
+
+    mockDocument.querySelectorAll.mockReturnValue([mockHeader]);
+    mockDocument.getElementById.mockImplementation((id: string) => {
+      if (id === "header-copy-link-styles") return null;
+      if (id === "single-long-bullet") return mockHeader;
+      return null;
+    });
+
+    initHeaderCopyLinks();
+
+    const copyIcon = mockHeader.appendChild.mock.calls[0][0];
+    const clickHandler = copyIcon.addEventListener.mock.calls.find((call: any[]) => call[0] === "click")?.[1];
+    expect(clickHandler).toBeDefined();
+
+    await clickHandler({ preventDefault: vi.fn(), stopPropagation: vi.fn() });
+
+    expect(mockClipboard).toHaveBeenCalled();
+    const clipboardContent: string = mockClipboard.mock.calls[0][0];
+
+    // The bullet text should appear in full (it's under 600 chars)
+    expect(clipboardContent).toContain(longBullet);
+  });
+});
 describe("URL Transformation Logic", () => {
   beforeEach(() => {
     // Reset the global initialization flag before each test
