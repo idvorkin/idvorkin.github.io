@@ -296,7 +296,7 @@ jobs:
             PR_URL=$(echo "$EXISTING" | awk '{print $2}')
             {
               echo 'supersedes_note<<GHEOF'
-              echo "> **Supersedes**: [PR #${PR_NUM}](${PR_URL}) — this run ([${{ github.run_id }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})) replaces the previous changelog generation for this week."
+              echo "> **Supersedes**: [PR #${PR_NUM}](${PR_URL}) — this run replaces the previous changelog generation for this week."
               echo 'GHEOF'
             } >> "$GITHUB_OUTPUT"
           else
