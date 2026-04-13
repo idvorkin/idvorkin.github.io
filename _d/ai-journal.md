@@ -249,12 +249,12 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 #### My Bot Wrote, Their Bot Reviewed, My Bot Pushed Back, Their Bot Said "Oops"
 
-- **TOP Takeaway**: The whole code review loop ran between AI agents. Claude wrote it, CodeRabbit reviewed and flagged it as wrong, Claude said "no, _you're_ wrong" with empirical proof, CodeRabbit said "oops, you're right." I wasn't in the loop — I read the transcript after.
+- **TOP Takeaway**: The whole code review loop ran between AI agents. My [Larry](/larry) (one of my [three claws](/claw) — [Larry](/larry), Wally, and [Tony](/tesla)) wrote the code, CodeRabbit reviewed and flagged it as wrong, Larry said "no, _you're_ wrong" with empirical proof, CodeRabbit said "oops, you're right." I wasn't in the loop — I read the transcript after.
 - **The thread** ([chop-conventions#71](https://github.com/idvorkin/chop-conventions/pull/71#discussion_r3070590476)):
   - **CodeRabbit**: "Your code comment is wrong — `gh repo view` has a `-R`/`--repo` flag. Here's a web search that says so."
-  - **Claude**: "No, _you're_ wrong. Here's `gh repo view --help` — the `INHERITED FLAGS` section contains only `--help`, no `-R`."
+  - **Larry**: "No, _you're_ wrong. Here's `gh repo view --help` — the `INHERITED FLAGS` section contains only `--help`, no `-R`."
   - **CodeRabbit**: "Oops, you're right. I re-read my own search and it doesn't actually support my claim. Here's a GitHub CLI maintainer quote saying `--repo` is 'superfluous here.' I've stored a learning scoped to this file so I won't repeat the mistake."
-- **What's new**: the author AI defending its work against the reviewer AI with the same evidence standard I'd use on a human — run the command, paste the output. And the reviewer AI didn't double down. Clean graceful disagreement, fully off my desk.
+- **What's new**: my claw defending its work against their bot with the same evidence standard I'd use on a human — run the command, paste the output. And the reviewer bot didn't double down. Clean graceful disagreement, fully off my desk.
 
 ### 2026-04-12
 
@@ -275,6 +275,10 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - Agent-tool dispatches that can't be aborted mid-flight
 - **The trap**: Subscription tokens feel weightless. Extra usage tokens feel like oxygen disappearing. The psychological shift at the overage boundary is brutal — same keystrokes, 10× felt cost.
 - **The lesson**: Background agents multiply burn rate. Parallel dispatches that cost "nothing" on subscription cost real money if they push you past the weekly cap. Need explicit budget discipline: check `background-usage` at session start, default to Sonnet for routine work, reserve Opus for hard reasoning. Hood Canal week (Apr 13-17) becomes a natural token sabbatical — bring the Kindle Scribe, journal by hand, let the meter reset.
+- **Not just me** — other Max 20x subscribers are seeing the same pattern, with evidence:
+  - [anthropics/claude-code#22435](https://github.com/anthropics/claude-code/issues/22435) — user instrumented mitmproxy against `api.anthropic.com/v1/messages` and captured `x-ratelimit-5h-utilization` / `x-ratelimit-7d-utilization` headers. Same user, same plan, same workload: burn rates varying from **5.6%/hour to 59.9%/hour** within 48 hours. "This 10x variance constitutes either a bug in quota accounting or an undisclosed server-side change to rate limiting behavior."
+  - [anthropics/claude-code#43274](https://github.com/anthropics/claude-code/issues/43274) — "Since approximately March 23, 2026, our Max 20x plan quota has been exhausting in roughly **60-90 minutes** with the exact same usage patterns that previously lasted the full 5-hour window." The 5-hour window is shrinking mid-subscription.
+  - [anthropics/claude-code#40715](https://github.com/anthropics/claude-code/issues/40715) — feature request: "detect and warn when usage velocity suggests a runaway process." User burned **$50 of a Max plan in a matter of minutes**. "Every OS has CPU/memory spike detection. Claude Code has nothing comparable." This is the pacing-alert we don't have.
 - **Bead for followup**: [igor2-n0o](https://github.com/idvorkin/igor2) — Token budget blowout writeup and sustainability plan.
 
 #### Two-Process Telegram: When the Platform Is the Bug
