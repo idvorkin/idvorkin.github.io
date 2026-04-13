@@ -197,6 +197,10 @@ jobs:
 
       - name: Summarize Claude run
         if: always()
+        env:
+          ARCHIVE_OUTCOME: ${{ steps.archive.outcome }}
+          ARCHIVE_STATUS: ${{ steps.archive.outputs.archive_status }}
+          ARCHIVE_PATH: ${{ steps.archive.outputs.archive_path }}
         run: |
           F=/home/runner/work/_temp/claude-execution-output.json
           if [ ! -f "$F" ]; then
@@ -242,6 +246,26 @@ jobs:
             echo "| Permission denials | ${DENIALS} |"
             echo "| Success | $([ "$IS_ERROR" = "false" ] && echo yes || echo no) |"
           } >> "$GITHUB_STEP_SUMMARY"
+          # Archive status row — reads outputs from the `Archive Claude transcript
+          # to private repo` step via step-level env: bindings above. Bolded
+          # failure branches make warn-and-continue failures visually distinct
+          # from healthy runs at a glance.
+          case "${ARCHIVE_OUTCOME:-}" in
+            success)
+              case "${ARCHIVE_STATUS:-}" in
+                ok)            AR="archived \`${ARCHIVE_PATH}\`" ;;
+                no_transcript) AR="no transcript produced" ;;
+                *)             AR="unknown (status=${ARCHIVE_STATUS:-empty})" ;;
+              esac ;;
+            failure)
+              case "${ARCHIVE_STATUS:-}" in
+                no_token) AR="**archive failed — CLAUDE_RUN_LOGS_PUSH_TOKEN unset**" ;;
+                *)        AR="**archive failed — see step log**" ;;
+              esac ;;
+            skipped) AR="skipped" ;;
+            *)       AR="(outcome=${ARCHIVE_OUTCOME:-empty})" ;;
+          esac
+          echo "| Transcript archive | ${AR} |" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Verify changelog was updated
         run: |
