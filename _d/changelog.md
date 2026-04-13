@@ -12,6 +12,9 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Week of 2026-04-13](#week-of-2026-04-13)
+  - [AI Journal: Token Budgets and Durable Pipes](#ai-journal-token-budgets-and-durable-pipes)
+  - [Other Projects (April, week 2)](#other-projects-april-week-2)
 - [Week of 2026-04-12](#week-of-2026-04-12)
   - [The AI Operator: Learning to Drive the Machine (new post!)](#the-ai-operator-learning-to-drive-the-machine-new-post)
   - [ACT Made Simple: Book Notes (new post!)](#act-made-simple-book-notes-new-post)
@@ -57,6 +60,29 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
   - [Other Projects](#other-projects)
     <!-- vim-markdown-toc-end -->
     <!-- prettier-ignore-end -->
+
+## Week of 2026-04-13
+
+_2 blog commits + cross-repo activity_
+
+### AI Journal: Token Budgets and Durable Pipes
+
+Two new entries on the economics and infrastructure of running Claude Code at scale ([blog](/ai-journal#2026-04-12)):
+
+- **The $230 Week: When Cheap Coding Isn't** — Claude Code's Max 20x sub ($200/mo) looks free until you blow past the weekly cap and hit raw API rates. A 12-hour vibe-coding session plus parallel background agents burned ~$230 in one week — 4.6× the weekly baseline. The algebra: $5/$25 per million input/output tokens for Opus 4.6 at API rates, but cache reads are free on the subscription (vs $0.50/MTok on API). That's the 93% savings ratio heavy users cite — and the cliff you fall off when you push into extra usage. Discipline required: check `background-usage` at session start, default Sonnet for routine work, reserve Opus for hard reasoning. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/60a8f1e84)
+- **Two-Process Telegram: When the Platform Is the Bug** — Claude Code's Telegram MCP plugin loses messages on every session restart: the bun poller dies with Claude, the Bot API cursor advances, those messages are gone. Fix: split polling from delivery. `telegram_bot.py` (persistent Python, singleton via `flock`) owns `getUpdates` forever, writes every event to SQLite (WAL mode), survives Claude restarts. `server.ts` (ephemeral bun MCP bridge) no longer polls — just reads undelivered rows on reconnect and catches up on everything missed. Liveness signal: 👀 (bot.py receives) + 🫡 (server.ts delivers). Both glyphs = full pipeline ran. Filed as [anthropics/claude-code#36411](https://github.com/anthropics/claude-code/issues/36411). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/60a8f1e84)
+
+### Other Projects (April, week 2)
+
+**[chop-conventions](https://github.com/idvorkin/chop-conventions)** (CHOP workflow docs)
+
+- **harden-telegram skill** — New operator runbook for the two-process Telegram chain. Three tiers: `/harden-telegram doctor` (quick health check via `telegram_debug.py --doctor`), `/harden-telegram reload` (hot redeploy without dropping MCP), `/harden-telegram deep` (walk known failure modes). Core principle: diagnostics live in code, not prose — if a check can go in `telegram_debug.py`, it does. Full architectural reference in `design.md` (folded in from a separate `durable-telegram` skill). [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/c74b69748)
+- **delegate-to-other-repo skill** — New skill for cross-repo subagent work. Parent Claude sets up a worktree in the target repo off `origin/<default>` (using `git -C`, never `cd`), builds a self-contained brief, dispatches a general-purpose subagent that reads the target's CLAUDE.md, does the work, detects fork vs direct-push workflow, and opens a PR. Parent only sees the structured final message + PR URL — target repo context never pollutes the current session. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/386fcd898)
+- **Statusline: absolute token thresholds** — Changed statusline context coloring from percentage-based (green <20%, blue <50%, red ≥50%) to absolute token counts (green <200k, yellow <400k, pink <600k, red ≥600k). Percentages were misleading: on a 1M Opus window 50% is plenty of room; on a 200k Sonnet window 50% is already tight. Absolute bands stay meaningful across context sizes. Pink uses 256-color `\033[38;5;213m` so it's distinct from yellow/red. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/1335ea53f)
+
+**[context-grabber](https://github.com/idvorkin/context-grabber)** (iOS health & location data)
+
+- **Auto-check OTA update on Grab Context** — App now checks for an OTA update automatically when the user taps "Grab Context", rather than requiring a manual trigger. Keeps the app current without a full App Store release cycle. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/88caa536a)
 
 ## Week of 2026-04-12
 
