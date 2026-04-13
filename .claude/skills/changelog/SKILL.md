@@ -91,6 +91,12 @@ Description of changes in this theme:
 - **Item title** - Description ([blog](/permalink#section)) ([github](https://github.com/idvorkin/idvorkin.github.io/commit/SHORTHASH))
 ```
 
+**Important — unique section names**: Every `###` heading must be unique across the *entire* file, not just the current week. Duplicate headings produce duplicate Markdown TOC anchors (`#other-projects`, `#other-projects-1`, …) which are confusing and break deep links.
+
+- For "Other Projects" sections, always append the week date: `### Other Projects (YYYY-MM-DD)` (e.g. `### Other Projects (2026-04-12)`). Never use month names like `(April)` since they repeat across weeks.
+- If you use any other recurring theme name (e.g. "Infrastructure"), append the week date too if that name already appears earlier in the file: `### Infrastructure (YYYY-MM-DD)`.
+- When updating the TOC, use the exact slugified anchor that matches the heading (e.g. `[Other Projects (2026-04-12)](#other-projects-2026-04-12)`).
+
 ### Deep Link Format
 
 Always include both blog and GitHub links where applicable:

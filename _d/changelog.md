@@ -17,35 +17,35 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
   - [ACT Made Simple: Book Notes (new post!)](#act-made-simple-book-notes-new-post)
   - [CHOP & Tooling](#chop--tooling)
   - [Infrastructure & CI](#infrastructure--ci)
-  - [Other Projects (April)](#other-projects-april)
+  - [Other Projects (2026-04-12)](#other-projects-2026-04-12)
 - [Week of 2026-03-30](#week-of-2026-03-30)
   - [AI Relationships: When the Chatbot Is Better at Caring (new post!)](#ai-relationships-when-the-chatbot-is-better-at-caring-new-post)
   - [Keyboards: From Wrist Pain to Split Keyboards (new post!)](#keyboards-from-wrist-pain-to-split-keyboards-new-post)
   - [AI Journal: The Winchester Mystery House](#ai-journal-the-winchester-mystery-house)
   - [Content & Gear](#content--gear)
   - [Infrastructure & CI](#infrastructure--ci-1)
-  - [Other Projects (April)](#other-projects-april-1)
+  - [Other Projects (2026-03-30)](#other-projects-2026-03-30)
 - [Week of 2026-03-16](#week-of-2026-03-16)
   - [Claws: The Next Layer of AI (new post!)](#claws-the-next-layer-of-ai-new-post)
   - [AI Journal: Telegram, Eggs, and Feedback Loops](#ai-journal-telegram-eggs-and-feedback-loops)
   - [AI Native Manager: "In Distribution"](#ai-native-manager-in-distribution)
   - [Content Updates](#content-updates)
   - [Infrastructure & Tooling](#infrastructure--tooling)
-  - [Other Projects (March)](#other-projects-march)
+  - [Other Projects (2026-03-16)](#other-projects-2026-03-16)
 - [Week of 2026-03-09](#week-of-2026-03-09)
   - [AI Second Brain (new post!)](#ai-second-brain-new-post)
   - [Side Quests (new post!)](#side-quests-new-post)
   - [AI Journal: Verification as Trust](#ai-journal-verification-as-trust)
   - [Cross-linking & Content Updates](#cross-linking--content-updates)
   - [Infrastructure](#infrastructure)
-  - [Other Projects (March)](#other-projects-march-1)
+  - [Other Projects (2026-03-09)](#other-projects-2026-03-09)
 - [Week of 2026-02-08](#week-of-2026-02-08)
   - [AI Native Engineering Manager (new post!)](#ai-native-engineering-manager-new-post)
   - [AI Cockpit (new post!)](#ai-cockpit-new-post)
   - [AI Journal: Yegge's AI Vampire](#ai-journal-yegges-ai-vampire)
   - [Spiritual Health: Meaning Traps](#spiritual-health-meaning-traps)
   - [Infrastructure & Tooling](#infrastructure--tooling-1)
-  - [Other Projects](#other-projects)
+  - [Other Projects (2026-02-08)](#other-projects-2026-02-08)
 - [Week of 2026-01-25](#week-of-2026-01-25)
   - [AI Journal Updates](#ai-journal-updates)
   - [Spiritual Health & Elder Life](#spiritual-health--elder-life)
@@ -54,7 +54,7 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
   - [Physical Health Content](#physical-health-content)
   - [How Igor CHOPs](#how-igor-chops)
   - [Infrastructure & Tooling](#infrastructure--tooling-2)
-  - [Other Projects](#other-projects-1)
+  - [Other Projects (2026-01-25)](#other-projects-2026-01-25)
 
 <!-- vim-markdown-toc-end -->
 
@@ -96,7 +96,7 @@ Deep notes on Russ Harris's _ACT Made Simple_ — Acceptance and Commitment Ther
 - **Automated weekly changelog** — New GitHub Actions workflow that runs `/changelog` on a schedule via Claude, opens a PR automatically. Iteratively hardened this week: idempotent PR creation, `id-token: write` permission, scoped to public repos to avoid rate limits. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/94dc5927c)
 - **AI operator cross-links** — Added per-section Skills lines linking to relevant CHOP skills throughout the new `/ai-operator` post; tightened `running-servers` check in CLAUDE.md. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/fe93fc452)
 
-### Other Projects (April)
+### Other Projects (2026-04-12)
 
 **[chop-conventions](https://github.com/idvorkin/chop-conventions)** (CHOP workflow docs)
 
@@ -162,7 +162,7 @@ New entry on Drew Breunig's framework for the third era of software development 
 - **Backlinks workflow rewrite** — Simplified from 265 lines to 61 lines. Switched from `pull_request` (closed/merged) to `push` trigger on main. Removed complex merge strategy detection (merge commit vs squash vs rebase). Added path filtering (`_d/**`, `_td/**`, `_ig66/**`). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4c590b318)
 - **GitHub Actions Node.js 24 bump** — Updated `checkout`, `setup-ruby`, `setup-uv`, and `setup-node` actions across all workflows. Fixed `setup-uv` (v8 tag doesn't exist, use v7). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/02c659014) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/eb3db6f6c)
 
-### Other Projects (April)
+### Other Projects (2026-03-30)
 
 **[Settings](https://github.com/idvorkin/Settings)** (dotfiles & tools)
 
@@ -217,7 +217,7 @@ New glossary entry on the ML concept applied to tooling decisions ([blog](/ai-na
 - **Show-your-work skill** — New skill that screenshots changed blog pages, hosts images on GitHub gist, and produces PR-ready markdown. Auto-detects changed pages from git diff. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/cacd5a0d5)
 - **AI feed upgrade** — Podcast/YouTube URLs now route to transcript processor with quality hierarchy (human > manual > ASR). Added preferred creators list (Karpathy, Lex Fridman, Steinberger). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3168e97f9)
 
-### Other Projects (March)
+### Other Projects (2026-03-16)
 
 **[context-grabber](https://github.com/idvorkin/context-grabber)** (iOS health data export)
 
@@ -285,7 +285,7 @@ Wove Context Grabber and AI Second Brain across existing posts:
 - **Jekyll Ruby 3.2+ fix** — Monkey-patched `tainted?`/`taint`/`untaint` (removed in Ruby 3.2) via `_ruby_compat.rb`, added `bigdecimal` and `ostruct` gems, updated justfile to auto-load the compat shim. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/c851e24ae)
 - **Walk-the-store skill** — New skill for visual blog audits: screenshots key pages, builds a browsable gallery. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3b560b282)
 
-### Other Projects (March)
+### Other Projects (2026-03-09)
 
 **[context-grabber](https://github.com/idvorkin/context-grabber)** (iOS health data export)
 
@@ -358,7 +358,7 @@ Rewrote the spiritual health intro as exploratory rather than prescriptive, and 
 - `/ai-content` skill — specialized workflow that loads AI content map (21 posts organized by theme cluster), reads backlinks, and sets up branch/server for AI blog post editing [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8f358f756)
 - `/spiritual-content` skill — same pattern for inner-life posts (spiritual health, religion, meditation, eulogy, etc.) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/590894703)
 
-### Other Projects
+### Other Projects (2026-02-08)
 
 **[chop-conventions](https://github.com/idvorkin/chop-conventions)** (CHOP workflow docs)
 
@@ -432,7 +432,7 @@ New framework distinguishing compulsion from choice ([blog](/addiction#is-doing-
 - `/content` skill for blog workflow [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/57815355b)
 - ASIN database: fetched metadata for 28 products [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/99c355400)
 
-### Other Projects
+### Other Projects (2026-01-25)
 
 Updates across the ecosystem:
 
