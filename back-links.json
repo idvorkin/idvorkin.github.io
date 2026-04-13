@@ -216,6 +216,7 @@
         "/okr": "/goals",
         "/on-being-mortal": "/death",
         "/openclaw": "/claw",
+        "/operator": "/ai-operator",
         "/orthodox": "/greek-orthodox",
         "/overwork": "/overload",
         "/pain": "/mental-pain",
@@ -843,12 +844,13 @@
             "incoming_links": [
                 "/ai-feed",
                 "/ai-native-manager",
+                "/ai-operator",
                 "/ai-second-brain",
                 "/changelog",
                 "/claw",
                 "/how-igor-chops"
             ],
-            "last_modified": "2026-02-14T10:44:54-08:00",
+            "last_modified": "2026-04-11T07:40:34-07:00",
             "markdown_path": "_d/ai-cockpit.md",
             "outgoing_links": [
                 "/ai-journal",
@@ -979,7 +981,7 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get lost\n\n",
-            "doc_size": 151000,
+            "doc_size": 149000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai",
@@ -996,23 +998,26 @@
                 "/walking-with-god",
                 "/y25"
             ],
-            "last_modified": "2026-04-13T04:29:56.204997+00:00",
+            "last_modified": "2026-04-13T05:03:02+00:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
                 "/ai-journal",
                 "/ai-security",
-                "/ai-talk",
                 "/chop",
                 "/chow",
+                "/claw",
                 "/eulogy",
+                "/genai-talk",
                 "/gpt",
                 "/how-igor-chops",
                 "/hyper-personal",
+                "/larry",
                 "/mental-pain",
                 "/mortality-software",
                 "/parkinson",
-                "/pet-projects"
+                "/pet-projects",
+                "/tesla"
             ],
             "redirect_url": "",
             "title": "Igor's AI Journal",
@@ -1050,6 +1055,25 @@
             "redirect_url": "",
             "title": "The AI Native Engineering Manager",
             "url": "/ai-native-manager"
+        },
+        "/ai-operator": {
+            "description": "Using AI well is a skill, like driving a car or operating heavy machinery. Nobody hands you the keys to a forklift and says “figure it out.” There’s a license, training, and hard-won intuition about what the machine can and can’t do. AI is the same — except most of us skipped the training, there is no manual, and we’re writing the rules as we go.\n\n",
+            "doc_size": 27000,
+            "file_path": "_site/ai-operator.html",
+            "incoming_links": [
+                "/changelog",
+                "/how-igor-chops"
+            ],
+            "last_modified": "2026-04-13T04:14:59+00:00",
+            "markdown_path": "_d/ai-operator.md",
+            "outgoing_links": [
+                "/ai-cockpit",
+                "/balloon",
+                "/four-healths"
+            ],
+            "redirect_url": "",
+            "title": "The AI Operator: Learning to Drive the Machine",
+            "url": "/ai-operator"
         },
         "/ai-paper": {
             "description": "The original AI papers were all about training, super technical, and not that usable as a practitioner. Nowadays papers are less “mathy” and more applicable to practitioners. Here are some worth reading\n\n",
@@ -1404,6 +1428,7 @@
             "doc_size": 21000,
             "file_path": "_site/balloon.html",
             "incoming_links": [
+                "/ai-operator",
                 "/eulogy",
                 "/joy",
                 "/timeoff"
@@ -1435,7 +1460,7 @@
         },
         "/be-proactive": {
             "description": "I choose ‘.’ I am responsible for my own life ‘.’ My behavior is a function of my decisions, not my conditions ‘.’ I can subordinate feelings to values ‘.’ I have the initiative and the responsibility to make things happen. These are my insights from 7 habits Chapter 1.\n\n",
-            "doc_size": 22000,
+            "doc_size": 23000,
             "file_path": "_site/be-proactive.html",
             "incoming_links": [
                 "/7-habits",
@@ -1754,7 +1779,7 @@
         },
         "/changelog": {
             "description": "A weekly summary of what changed on this blog and across my GitHub projects. Useful for returning readers who want to catch up on new content and updates.\n\n",
-            "doc_size": 67000,
+            "doc_size": 80000,
             "file_path": "_site/changelog.html",
             "incoming_links": [],
             "last_modified": "2026-04-13T02:37:12.272092+00:00",
@@ -1783,7 +1808,7 @@
                 "/shoulder-pain",
                 "/side-quests",
                 "/spiritual-health",
-                "/y2026"
+                "/y26"
             ],
             "redirect_url": "",
             "title": "Changelog",
@@ -1927,6 +1952,7 @@
             "doc_size": 29000,
             "file_path": "_site/claw.html",
             "incoming_links": [
+                "/ai-journal",
                 "/changelog"
             ],
             "last_modified": "2026-03-22T18:15:50-07:00",
@@ -2408,7 +2434,7 @@
         },
         "/debug": {
             "description": "Igor's Blog",
-            "doc_size": 23000,
+            "doc_size": 24000,
             "file_path": "_site/debug.html",
             "incoming_links": [],
             "last_modified": "2025-03-16T16:15:36+00:00",
@@ -3020,6 +3046,7 @@
             "doc_size": 41000,
             "file_path": "_site/four-healths.html",
             "incoming_links": [
+                "/ai-operator",
                 "/greek-orthodox",
                 "/mortality-software",
                 "/operating-manual",
@@ -3483,7 +3510,7 @@
                 "/y25",
                 "/y26"
             ],
-            "last_modified": "2026-04-11T15:16:14.918308+00:00",
+            "last_modified": "2026-04-11T08:45:57-07:00",
             "markdown_path": "_d/how-igor-chops.md",
             "outgoing_links": [
                 "/40yo",
@@ -3854,6 +3881,7 @@
             "file_path": "_site/larry.html",
             "incoming_links": [
                 "/ai-feed",
+                "/ai-journal",
                 "/ai-second-brain",
                 "/chow",
                 "/claw",
@@ -4427,7 +4455,7 @@
             "incoming_links": [
                 "/changelog"
             ],
-            "last_modified": "2026-04-11T13:29:32.069129+00:00",
+            "last_modified": "2026-04-11T06:19:01-07:00",
             "markdown_path": "_td/mosh.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -6239,6 +6267,7 @@
             "doc_size": 20000,
             "file_path": "_site/tesla.html",
             "incoming_links": [
+                "/ai-journal",
                 "/ai-second-brain",
                 "/bucket-list",
                 "/claw",
@@ -6918,7 +6947,7 @@
         },
         "/weeks": {
             "description": "\n\n",
-            "doc_size": 4346000,
+            "doc_size": 4344000,
             "file_path": "_site/weeks.html",
             "incoming_links": [
                 "/balance"
