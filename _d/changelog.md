@@ -12,19 +12,25 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Week of 2026-04-13](#week-of-2026-04-13)
+  - [AI Journal: Bot-vs-Bot, the $230 Week, and Two-Process Telegram](#ai-journal-bot-vs-bot-the-230-week-and-two-process-telegram)
+  - [ACT Made Simple: Six New Sections](#act-made-simple-six-new-sections)
+  - [AI Operator: Per-Section Skill Links](#ai-operator-per-section-skill-links)
+  - [Infrastructure: Changelog CI Goes Private](#infrastructure-changelog-ci-goes-private)
+  - [Other Projects (April)](#other-projects-april)
 - [Week of 2026-04-12](#week-of-2026-04-12)
   - [The AI Operator: Learning to Drive the Machine (new post!)](#the-ai-operator-learning-to-drive-the-machine-new-post)
   - [ACT Made Simple: Book Notes (new post!)](#act-made-simple-book-notes-new-post)
   - [CHOP & Tooling](#chop--tooling)
   - [Infrastructure & CI](#infrastructure--ci)
-  - [Other Projects (April)](#other-projects-april)
+  - [Other Projects (April)](#other-projects-april-1)
 - [Week of 2026-03-30](#week-of-2026-03-30)
   - [AI Relationships: When the Chatbot Is Better at Caring (new post!)](#ai-relationships-when-the-chatbot-is-better-at-caring-new-post)
   - [Keyboards: From Wrist Pain to Split Keyboards (new post!)](#keyboards-from-wrist-pain-to-split-keyboards-new-post)
   - [AI Journal: The Winchester Mystery House](#ai-journal-the-winchester-mystery-house)
   - [Content & Gear](#content--gear)
   - [Infrastructure & CI](#infrastructure--ci-1)
-  - [Other Projects (April)](#other-projects-april-1)
+  - [Other Projects (April)](#other-projects-april-2)
 - [Week of 2026-03-16](#week-of-2026-03-16)
   - [Claws: The Next Layer of AI (new post!)](#claws-the-next-layer-of-ai-new-post)
   - [AI Journal: Telegram, Eggs, and Feedback Loops](#ai-journal-telegram-eggs-and-feedback-loops)
@@ -59,6 +65,51 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- vim-markdown-toc-end -->
 
     <!-- prettier-ignore-end -->
+
+## Week of 2026-04-13
+
+_83 commits this week (blog) + cross-repo activity_
+
+### AI Journal: Bot-vs-Bot, the $230 Week, and Two-Process Telegram
+
+Three new entries this week ([blog](/ai-journal)):
+
+- **My Bot Wrote, Their Bot Reviewed, My Bot Pushed Back, Their Bot Said "Oops"** — The full code review loop ran between AI agents. [Larry](/larry) (one of the [three claws](/claw)) wrote the code, CodeRabbit reviewed it as wrong with a web search, Larry countered with `gh repo view --help` output showing no `-R` flag in `INHERITED FLAGS`, CodeRabbit acknowledged the error and stored a learning scoped to the file. "Clean graceful disagreement, fully off my desk." Thread: [chop-conventions#71](https://github.com/idvorkin/chop-conventions/pull/71#discussion_r3070590476) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/714dab266)
+- **The $230 Week: When Cheap Coding Isn't** — A 12-hour vibe-coding session plus background agent swarms burned ~$230 in a week — 4.6× the weekly budget. The root cause wasn't over-use: on March 6, 2026, Anthropic silently cut Claude Code's prompt cache TTL from 1 hour to 5 minutes (12× more frequent cache invalidation). Jarred from Anthropic confirmed it intentional: _"The March 6 change makes Claude Code cheaper, not more expensive"_ — cheaper on average across all request types, catastrophically expensive for long-session workloads. Issue [anthropics/claude-code#46829](https://github.com/anthropics/claude-code/issues/46829): 221 reactions, HN front page at 498 pts. "From now on, every unexpected burn forces the question: did I break something, or did they silently change something?" [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6ae25982c)
+- **Two-Process Telegram: When the Platform Is the Bug** — Claude Code's Telegram plugin loses messages on every session restart — the bun poller dies with Claude, the Bot API cursor advances, messages gone forever. Fix: split into two processes. `telegram_bot.py` (persistent Python): owns `getUpdates` forever, writes every message to SQLite (WAL mode), singleton via `flock`. `server.ts` (modified): reads undelivered rows from SQLite, emits MCP notifications, dies with Claude as before. Liveness signal: bot.py stamps 👀 on receive, server.ts stamps 🫡 on delivery. Filed as [anthropics/claude-code#36411](https://github.com/anthropics/claude-code/issues/36411#issuecomment-4233570293). Design doc: [harden-telegram/design.md](https://github.com/idvorkin/chop-conventions/blob/main/skills/harden-telegram/design.md) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/60a8f1e84)
+
+### ACT Made Simple: Six New Sections
+
+Major expansion of the ACT post ([blog](/act)) — six substantial new sections:
+
+- **The Choice Point** — Harris's favorite client diagnostic: two arrows from every difficult moment, one labeled "away moves" (hooked, escaping), one labeled "towards moves" (unhooked, values-aligned). "Almost every psychological problem he knows of reduces to the same loop: hooked by difficult thoughts and feelings, then away moves." Three nuances: behavior includes covert moves (rumination is a covert away move), any activity can be either depending on function, and the client defines which is which, not the therapist. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/dd5c4abb7)
+- **Workability** — The single thinking move that replaces truth-testing: "If I let this thought guide my behavior, will that help me create a richer, fuller, more meaningful life?" Harris transcript: therapist refuses to debate "I really am fat, look at me" — "we're never going to debate whether your thoughts are true or false." Shakespeare reformulated: "Thinking does not make anything good or bad, but fusion with your thinking creates problems." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/dd5c4abb7)
+- **Creative Hopelessness & DOTS** — Honest inventory of everything tried to make unwanted feelings go away: Distraction, Opting out, Thinking strategies, Substances. Five questions in order: What have you tried? How has it worked long-term? What has it cost? What's showing up now? Are you open to trying something new? "Most of these strategies do work in the short term. The problem is none works long-term, and the costs compound." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/dd5c4abb7)
+- **What Mindfulness Means in ACT** — Harris strips the baggage: mindfulness is not meditation. It's four skills: defusion, acceptance, flexible attention, self-as-context. "ACT does not require formal practice." The universal instruction: "notice X." Harris recommends avoiding the word "mindfulness" with clients who have baggage; use "unhooking skills," "dropping anchor," or "being present" instead. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/dd5c4abb7)
+- **Self-as-Context (expanded)** — Three metaphors: Stage Show (zoom in or out on the whole production), Sky and Weather (I am the sky — the worst storm cannot hurt it), Chessboard (I am the board holding both the white pieces I like and the black pieces I don't). Critical: no metaphor gives the actual experience — only exercises do. Harris plants "there's a part of you noticing everything" seeds from session one, long before naming the concept. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/dd5c4abb7)
+- **Chapter deep-links throughout** — Every major section now links to its source chapters in the 32-chapter book (e.g., Cognitive Defusion → Ch 11, 12, 13, 15; Committed Action → Ch 21, 24). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/dd5c4abb7)
+
+### AI Operator: Per-Section Skill Links
+
+The [/ai-operator](/ai-operator) post now has _Skills_ lines at the top of each section linking to the exact CHOP skills that power the described technique — "Finite Thinking Tokens" links to `delegate-to-other-repo`, "Get on the Loop" links to `show-your-work` and `architect-review`, "Use Voice" links to the Wispr Flow cockpit section, "Throw It Away" links to `walk-the-store`, "Compound Engineer" links to `learn-from-session` and `claude-md-improver`. The "Keep Learning" footer section was removed (now implicit in Compound Engineer). New raccoon-operator image replaces raccoon-cockpit. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/036582069)
+
+### Infrastructure: Changelog CI Goes Private
+
+The automated changelog workflow (launched last week) got two significant hardening passes:
+
+- **Private transcript archiving** — Claude's full tool-call stream now archives to a private repo (`idvorkin/claude-transcripts`) instead of a public GitHub Actions artifact. The job summary renders an archive status row (success/failure) so the log is self-explanatory without exposing the transcript. `show_full_output` removed so the public stream no longer shows tool calls. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/eada5ac0d)
+- **Activity and run stats** — Job summary now surfaces Claude's tool-call count, token usage, and timing stats for each run. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/da7ff3447)
+
+### Other Projects (April)
+
+**[chop-conventions](https://github.com/idvorkin/chop-conventions)** (CHOP workflow docs)
+
+- **harden-telegram skill** — New skill for the durable two-process Telegram architecture (above). Includes `telegram_debug.py --doctor` that checks bot.py PID, Unix socket, SQLite row counts, server.ts process count, and source/plugin hash drift in one pass. Common failures documented: zombie bridge (two server.ts processes), plugin auto-update overwriting server.ts, stale bot.sock. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/c74b69748)
+- **up-to-date skill hardening** — Reports patch-equivalent main divergence, allows force-aligning fork main when equivalent, documents PR recovery decision rules, ignores leftover commits already applied upstream. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/1c9e3c2a5)
+
+**[Settings](https://github.com/idvorkin/Settings)** (dotfiles & tools)
+
+- **Scrollback link picker** (`pick-links`) — New TUI tool that scans tmux scrollback (capped at 300 lines), classifies every URL, SSH host, file path, and IPv4 into typed rows, enriches GitHub links with PR/issue/commit metadata via parallel `gh` fan-out, and lets you navigate, filter, drill into linked content, and yank via OSC 52 or `tmux set-buffer -w`. Bound to a tmux key. Features: F1 `?` help overlay, F2 cross-picker jump, contextual Enter (open vs. yank), GitHub noise-URL suppression (drops `/pull/new`, `/issues/new`, fragments). Spec went through 4-pass architect review: 11 → 13 → 9 → 0 changes. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/8be8ba0d4)
 
 ## Week of 2026-04-12
 
