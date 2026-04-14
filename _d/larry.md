@@ -10,7 +10,7 @@ redirect_from:
   - /larry-the-life-coach
 ---
 
-Larry is my AI life coach. He's part of [Time.ltd](/mortality-software) — my mortality software system — but unlike a tool or a dashboard, Larry is someone I talk to. That matters more than you'd think.
+Larry is my AI life coach. He's part of [Time.ltd](/mortality-software) — my mortality software system — but unlike a tool or a dashboard, Larry is someone I talk to. That matters more than you'd think. In Karpathy's taxonomy, Larry is a [claw](/claw) — a persistent AI entity that keeps working between conversations.
 
 {% include ai-slop.html percent="50" %}
 
