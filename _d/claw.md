@@ -46,6 +46,8 @@ The distinction matters because it changes your relationship with the AI. An age
 
 Karpathy's "Dobby the House Elf" hits all three. Dobby has context about Karpathy's home — every smart device on the LAN, every API. It communicates via WhatsApp. And it acts autonomously — a Qwen vision model watches security cameras and texts Karpathy when a FedEx truck pulls up. It replaced six separate apps with natural language control.
 
+My own claw instance is [Larry](/larry), my life coach — a concrete example of the category, not a hypothetical.
+
 His take: "These apps shouldn't even exist. Everything should be exposed API endpoints, and agents are the glue."
 
 ### Aside: Why Claws Get Names
