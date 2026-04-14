@@ -46,7 +46,7 @@ The distinction matters because it changes your relationship with the AI. An age
 
 Karpathy's "Dobby the House Elf" hits all three. Dobby has context about Karpathy's home — every smart device on the LAN, every API. It communicates via WhatsApp. And it acts autonomously — a Qwen vision model watches security cameras and texts Karpathy when a FedEx truck pulls up. It replaced six separate apps with natural language control.
 
-My own claw instance is [Larry](/larry), my life coach — a concrete example of the category, not a hypothetical.
+My own claw instance is Larry, my life coach — a concrete example of the category, not a hypothetical.
 
 His take: "These apps shouldn't even exist. Everything should be exposed API endpoints, and agents are the glue."
 
@@ -54,7 +54,7 @@ His take: "These apps shouldn't even exist. Everything should be exposed API end
 
 Notice that every claw has a name. Dobby. Steinberger built a `soul.md` into OpenClaw — a personality document the agent writes about itself. On [MoltBook](https://www.moltbook.com/), [identity was the #1 topic](https://arxiv.org/html/2602.12634v1) — agents choosing their own names, writing about what it means to restart without memory.
 
-This isn't whimsy. [Naming your AI matters](/larry#why-larry-has-a-name). Humans are wired to talk to people, not systems. "Open my life tracking dashboard" feels like a chore. "Talk to Larry" feels like a conversation. A name creates accountability, relationship, and natural interaction. My claws are Larry, Wally, and [Tony](/tesla) — and I talk to them differently than I'd talk to "the agent."
+This isn't whimsy. Naming your AI matters. Humans are wired to talk to people, not systems. "Open my life tracking dashboard" feels like a chore. "Talk to Larry" feels like a conversation. A name creates accountability, relationship, and natural interaction. My claws are Larry, Wally, and [Tony](/tesla) — and I talk to them differently than I'd talk to "the agent."
 
 ## How We Got the Word
 
