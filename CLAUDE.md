@@ -141,6 +141,10 @@ Rest of post content...
 
 Run pre-commit to check: `prek run --files <your-files>`
 
+## Working Notes for Blog Posts
+
+Drop scratch files (planning docs, content backups) in **`<repo-root>/tmp/`** — gitignored (`tmp/` rule in `.gitignore`) and `prek` honors gitignore, so the anchor-checker skips them. Avoid putting scratch files in `_d/`: a backup with a matching `permalink:` silently collides on Jekyll build, and untracked markdown with broken anchors blocks commits.
+
 ## Finding Related Blog Content
 
 Use Grep/Glob directly on `_d/`, `_posts/`, and `_td/` directories for text search — faster than the blog MCP. For frontmatter metadata queries (tags, dates, incoming/outgoing links), use `/find-content`.
