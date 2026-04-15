@@ -19,6 +19,8 @@ These are my working notes on the convergence — I call it **Applied Buddhism**
 {% include ai-slop.html percent="90" %}
 {% include amazon.html asin="1684033012" %}
 
+Heads-up: most of the moves in Part 1 I've been circling on this blog for years under different names — compassion on [/curious](/curious), values on [/eulogy](/eulogy) and [/affirmations](/affirmations), addiction-as-avoidance on [/addiction](/addiction), kernel-mode/observing-self on [/awareness](/awareness), the stimulus/response gap on [/be-proactive](/be-proactive). If you've been reading along, a lot of this post is a vocabulary upgrade on ideas already floating here; the summarize cards in each section point at the longer take.
+
 ### What ACT is, and how it maps
 
 The behavioral-science side of the convergence is **ACT — Acceptance and Commitment Therapy**. Steven Hayes and colleagues built it in the 1980s as a successor to traditional CBT. The difference is the question each one asks. CBT asks _"is this thought true, and how do I replace it with a more accurate one?"_ ACT asks _"does fighting this thought actually work — does it get me closer to the life I want?"_ Usually the answer is no. The fix isn't to argue with your own head; it's to stop fighting it and redirect the energy into action that matters.
@@ -68,7 +70,7 @@ If none of those terms mean anything to you, skip the table and keep reading —
   - [Workability — and Why I Stop Asking "Is This True?"](#workability--and-why-i-stop-asking-is-this-true)
   - [The Problem: Cognitive Fusion & Experiential Avoidance](#the-problem-cognitive-fusion--experiential-avoidance)
   - [The Avoidance Audit](#the-avoidance-audit)
-  - [What "Mindfulness" Means in ACT](#what-mindfulness-means-in-act)
+  - [Skip the M-Word — Four Skills Instead](#skip-the-m-word--four-skills-instead)
   - [The Hexaflex — Six Core Processes](#the-hexaflex--six-core-processes)
     - [1. Cognitive Defusion](#1-cognitive-defusion)
     - [2. Acceptance](#2-acceptance)
@@ -136,6 +138,8 @@ What I trust about this framing is that it doesn't promise me happiness. It does
 
 My younger self read _"act on values regardless of feelings"_ and tried to go **full robot** — suppress the feeling, be rational, override with will. It half-worked. I got good at forcing action, but the feelings didn't go away; they piled up in the basement until something broke. ACT is a much better fit for how I actually work. The move isn't to kill the feeling first and then act — it's to let the feeling be loud, accept it's here, and act on my values anyway. Equanimity over robot-mode. Every time.
 
+{% include summarize-page.html src="/affirmations" %}
+
 _Full chapters: [Ch 1 — Human Challenge](#chapter-1-the-human-challenge) · [Ch 32 — Therapist's Journey](#chapter-32-the-act-therapists-journey)_
 
 ### The Choice Point — Towards Moves and Away Moves
@@ -158,6 +162,10 @@ Three nuances that took me a minute to get:
 
 The towards/away vocabulary is the backbone of the whole diagnostic. I'm adopting it now as a self-check: _was that a towards move or an away move?_ Not a habit yet — I'm still at the "notice after the fact" stage more than the "catch it live" stage — but it's the cleanest single question I've found. See [/mortality-software](/mortality-software) — every daily move is a tiny vote, and this question is how I cast it consciously.
 
+This is the Choice Point in [Atomic Habits](/habits) vocabulary: the hard feeling at the bottom is the **cue**, the away move is the habitual (negative) response I've trained on that cue, the towards move is the positive response I want in its place. Atomic Habits gives me the engineering layer — cue, craving, response, reward, and the _make it obvious / attractive / easy / satisfying_ knobs for shaping the response. ACT gives me the psychological move at the seam: at the cue, **notice the hook** and swap the response. Same loop, different layer. The unhooking work is making the cue obvious in real time, not in retrospect.
+
+{% include summarize-page.html src="/mortality-software" %}
+
 **This is the same move Covey writes about** in [7 Habits, Chapter 1](/be-proactive) under the heading _"Respond don't react."_ His framing: between stimulus and response there's a space, and in that space is our freedom to choose the response. The Choice Point is the ACT diagram of exactly that space — the hard situation is the stimulus, the away move is a reaction, the towards move is a response. I really liked Covey's version when I first read it, and it still lives in my head as "create time between stimulus and response." The ACT version adds vocabulary (hooked/unhooked) and the observation that the reaction is usually an **away move** — I'm running from a feeling, not toward a value.
 
 _Full chapter: [Ch 1 — Human Challenge](#chapter-1-the-human-challenge)_
@@ -175,6 +183,8 @@ The reason this works is that **the same thought functions differently in differ
 This rests on a philosophy called **functional contextualism** — every behavior is judged by what it _does_ in context, not what it _looks like_. The classic example: two cuts on a forearm can have five different functions — self-punishment, tension release, body art, attention, getting out of numbness. Same form, radically different treatments. The form is a distraction; what matters is the function, and the function is always judged by workability.
 
 I'm trying to make this my default stance: when I notice a thought is bothering me, skip the true/false question entirely. Ask instead, _is living as if this were true taking me toward the person I want to be?_ That's workability, and it's faster than arguing with my own mind. See [/coaching](/coaching) — good coaching questions are all workability questions in disguise.
+
+{% include summarize-page.html src="/coaching" %}
 
 _Full chapters: [Ch 2 — Getting Hooked](#chapter-2-getting-hooked) · [Ch 4 — Get Your Geek On](#chapter-4-get-your-geek-on)_
 
@@ -196,6 +206,10 @@ These overlap. A typical narrative weaves several together: "because bad things 
 **Experiential avoidance** — running from feelings — means spending energy trying to get rid of unwanted thoughts, feelings, memories, or sensations. A glass of wine to kill the anxiety. Scrolling to drown out the boredom. Skipping the hard conversation because I don't want the guilt. Small doses are fine — this isn't purism. The problem is when avoidance _becomes the life_. Research links high experiential avoidance to anxiety disorders, depression, addictions, PTSD, and long-term disability. See [/addiction](/addiction) — addiction is experiential avoidance turned into a full-time job; the escape hatch becomes the life.
 
 These two processes are linked. I fuse with the thought "this feeling is unbearable," and fusion drives the avoidance. The core move: **thoughts and feelings are not the problem. Getting hooked by them is.** The same anxious thought that derails one person's day leaves another untouched — not because one has "worse" thoughts, but because the context of fusion is different.
+
+{% include summarize-page.html src="/mind-monsters" %}
+
+{% include summarize-page.html src="/addiction" %}
 
 _Full chapters: [Ch 2 — Getting Hooked](#chapter-2-getting-hooked) · [Ch 8 — Creative Hopelessness](#chapter-8-creative-what)_
 
@@ -222,13 +236,15 @@ The critical frame: **most of these strategies do work in the short term.** Dist
 
 I ran this on myself while reading and it was uncomfortable. My DOTS: scrolling TikTok to avoid boredom, stalling on hard conversations, over-checking work to silence "not good enough," using exercise to burn off anxiety. None of it is bad in small doses. All of it becomes a problem when it's the go-to move instead of feeling the feeling and acting on values anyway. See [/anxiety-management](/anxiety-management) — my running inventory of exactly this kind of short-term-relief-vs-long-term-cost tradeoff.
 
+{% include summarize-page.html src="/anxiety-management" %}
+
 _Full chapter: [Ch 8 — Creative Hopelessness](#chapter-8-creative-what)_
 
-### What "Mindfulness" Means in ACT
+### Skip the M-Word — Four Skills Instead
 
-Before going further I need to clean up the word **mindfulness**. It causes more problems than it solves. The word conjures monks, incense, chanting "Om," and long meditation sessions — which for a lot of people (including me, some days) is a hard sell. Strip the baggage and the word has a clean definition.
+**ACT itself is uncomfortable with the word "mindfulness."** Harris warns practitioners off it in the book — not because the concept is wrong but because the word is broken. For most people it conjures monks, incense, chanting "Om," and long silent sits. If that's what it means, a lot of people (me, some days) are out. And for everyone who isn't already a meditator, the word just... doesn't mean anything concrete. It's vague.
 
-**Mindfulness is not meditation.** It's the combination of four specific skills:
+Strip the baggage and there are four concrete skills underneath — this is what ACT actually teaches when the book says "mindfulness":
 
 1. **Defusion (unhooking)** — stepping back from thinking instead of getting tangled in it
 2. **Acceptance** — opening up to and making room for unwanted feelings
@@ -279,6 +295,8 @@ The antidotes: **engaging, savoring, focusing**. The signature practice is **Not
 
 The universal instruction is just "notice X," where X is any present-moment experience — breath, feet on the floor, sounds in the room, the taste of coffee. See [/mind-at-work](/mind-at-work) — I wrote a whole post on the attention-switching cost, which is what inflexible attention actually looks like in a knowledge-work context.
 
+{% include summarize-page.html src="/mind-at-work" %}
+
 _Full chapters: [Ch 10 — Dropping Anchor](#chapter-10-dropping-anchor) · [Ch 17 — Being Present](#chapter-17-being-present)_
 
 #### 4. Self-as-Context — Kernel Mode
@@ -289,7 +307,9 @@ The clinical vocabulary piles up synonyms because none of them quite lands: noti
 
 Three metaphors to hold it: the **Stage Show** (life is a show I can step back from and watch, able to zoom in on any detail or zoom out to the whole stage), **Sky and Weather** (I am the sky, thoughts and feelings are the weather, which cannot harm the sky and always passes), and the **Chessboard** (I am the board holding both the white pieces I like and the black pieces I don't — the board is the safe place, not either side).
 
-The critical move is that **no metaphor will give me the actual experience** — only experiential exercises will. Fortunately kernel mode is already implicit in every mindfulness practice I do: "notice X" has a noticer doing the noticing. Building it is mostly about noticing _that I'm noticing_ inside practices I'm already running. The move is called **"planting seeds"** — slip lines like "and there's a part of you noticing everything" into dropping-anchor and Leaves-on-a-Stream exercises long before ever naming the concept. The full ladder of exercises from the 1-second seed up through the 15-minute Continuous You, plus the Good Self / Bad Self exercise for defusing from self-concept, is in [Chapter 25](#chapter-25-the-noticing-self). My ["Calm like water"](/affirmations) affirmation is pointing at the same thing — water is the medium, not any particular wave.
+The critical move is that **no metaphor will give me the actual experience** — only experiential exercises will. Fortunately kernel mode is already implicit in every mindfulness practice I do: "notice X" has a noticer doing the noticing. Building it is mostly about noticing _that I'm noticing_ inside practices I'm already running. The move is called **"planting seeds"** — slip lines like "and there's a part of you noticing everything" into dropping-anchor and Leaves-on-a-Stream exercises long before ever naming the concept. The full ladder of exercises from the 1-second seed up through the 15-minute Continuous You, plus the Good Self / Bad Self exercise for defusing from self-concept, is in [Chapter 25](#chapter-25-the-noticing-self). My ["Calm like water"](/affirmations) affirmation is pointing at the same thing — water is the medium, not any particular wave. See [/awareness](/awareness) — kernel-mode is what I've been circling as _the awareness underneath the content_ for years.
+
+{% include summarize-page.html src="/awareness" %}
 
 _Full chapters: [Ch 25 — Noticing Self](#chapter-25-the-noticing-self)_
 
@@ -312,7 +332,11 @@ Six rules about values:
 - **Values are freely chosen.** I'm not obligated to live by them. I choose to.
 - **Values include self and others.** If my value is kindness, I should treat both myself and others kindly.
 
-See [/affirmations](/affirmations) — my affirmations list IS my values list in a different format.
+See [/affirmations](/affirmations) — my affirmations list IS my values list in a different format. And [/eulogy](/eulogy) — the longer-form version of who I'm aiming to be.
+
+{% include summarize-page.html src="/eulogy" %}
+
+{% include summarize-page.html src="/affirmations" %}
 
 _Full chapters: [Ch 19 — Know What Matters](#chapter-19-know-what-matters) · [Ch 20 — What If Nothing Matters](#chapter-20-what-if-nothing-matters)_
 
@@ -332,6 +356,8 @@ The best diagnostic for why I fail to follow through is the **HARD** acronym:
 - **D**oubtful goals (unrealistic) → shrink the goal until I score 7+ out of 10 on "will I actually do this"
 
 When I'm not doing the thing, I can usually name which of HARD is active in under a minute. The one I see in myself most often is **D** — I set goals that are too ambitious and then don't start. See [/goals](/goals) — I track committed action against my values annually, and the HARD diagnostic is how I debug the gap.
+
+{% include summarize-page.html src="/goals" %}
 
 _Full chapters: [Ch 21 — Do What It Takes](#chapter-21-do-what-it-takes) · [Ch 24 — What's Stopping You](#chapter-24-whats-stopping-you)_
 
@@ -393,6 +419,8 @@ The slogan I keep coming back to: **"Your pain is your ally."** Once an emotion 
 This reframes the whole project. The work is not to eliminate difficult emotions. The work is to **stop cutting the communication cable.** When sadness shows up, it's telling me I loved something. When anger shows up, it's telling me something crossed a line I care about. When fear shows up, it's telling me something I value is at risk. Those are all _useful_ messages, and the feeling is the messenger.
 
 The practice move: when a hard emotion shows up and I've accepted it, ask **"what is this telling me about what matters to me?"** The answer is almost always obvious in hindsight, and I usually missed it because I was busy trying to make the feeling go away. See [/emotions](/emotions) — this framing changed how I talk to myself about feelings, and my running notes on emotional literacy live there.
+
+{% include summarize-page.html src="/emotions" %}
 
 _Full chapter: [Ch 23 — Emotions as Allies](#chapter-23-emotions-as-allies)_
 
