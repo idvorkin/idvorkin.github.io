@@ -398,6 +398,3 @@ robots.txt
 # subdirectory stays on disk only.
 docs/superpowers/plans/private/
 docs/superpowers/specs/private/
-
-# Local git worktrees
-.worktrees/
