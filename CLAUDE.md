@@ -161,7 +161,7 @@ Just do it - including obvious follow-up actions. Only pause when:
 
 **Before working on any blog content, invoke the appropriate skill.** Skills load full guidelines, set up branches, and enforce correct workflows. Skipping them leads to mistakes (wrong ai-slop placement, missing cross-links, AI voice tells that will be rejected).
 
-**If you catch yourself about to write more than 2-3 sentences of prose** that will land in `_d/`, `_td/`, or `_posts/`, stop and load `content_guidelines.md` (via `/content`, `/ai-content`, or directly). AI voice patterns show up almost immediately in unguided prose — see `content_guidelines.md` § Avoiding AI Writing Patterns for the full list to scrub. Cost of skipping: freestyle content gets rewritten or dropped on review.
+**Before editing any file in `_d/`, `_td/`, or `_posts/`** — prose, includes, or frontmatter — stop and load `content_guidelines.md` (via `/content`, `/ai-content`, or directly). Two classes of silent failure: AI voice patterns in unguided prose (§ Avoiding AI Writing Patterns), and includes like `blob_image_float_right`/`ai-slop` placed above the opening paragraph, which breaks Jekyll excerpts for indexes, RSS, and social cards (§ Opening Paragraphs). Cost of skipping: rework on review, or silently broken excerpts in production.
 
 | Task                      | Skill                             | What it does                                                         |
 | ------------------------- | --------------------------------- | -------------------------------------------------------------------- |
