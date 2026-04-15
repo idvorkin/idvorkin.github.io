@@ -564,23 +564,35 @@
             "url": "/about"
         },
         "/act": {
-            "description": "ACT is a therapy tradition I’ve circled for years without ever sitting down with it. Russ Harris’s ACT Made Simple is the practitioner primer — the book therapists actually read when learning Acceptance and Commitment Therapy. These are the concepts I want to lift into my own practice.\n\n",
-            "doc_size": 268000,
+            "description": "My back goes out a few times a year. My mood tracks the Meta stock price more than I’d like to admit. Twenty years ago I’d meet those moments with a thrash cycle — fused with the pain, angry at my body, tangled up in a story about why this was unfair — which made the experience much worse than the sensation itself. Now I aspire to be calm like water, be present, remember that this too shall pass, and work the problem. I still catch myself mid-thrash often enough to know it’s aspiration, not habit.\n\n",
+            "doc_size": 284000,
             "file_path": "_site/act.html",
             "incoming_links": [
                 "/changelog"
             ],
-            "last_modified": "2026-04-11T01:58:47.914596+00:00",
+            "last_modified": "2026-04-15T01:06:55.322415+00:00",
             "markdown_path": "_d/act.md",
             "outgoing_links": [
+                "/affirmations",
                 "/anxiety",
+                "/anxiety-management",
                 "/awareness",
+                "/be-proactive",
+                "/class-act",
+                "/coaching",
                 "/emotional-health",
+                "/emotions",
+                "/eulogy",
+                "/goals",
+                "/mind-at-work",
+                "/mind-monsters",
+                "/mortality-software",
+                "/partner-trouble",
                 "/shame",
                 "/siy"
             ],
             "redirect_url": "",
-            "title": "ACT Made Simple: Acceptance and Commitment Therapy",
+            "title": "ACT aka Applied Buddhism",
             "url": "/act"
         },
         "/activation": {
@@ -697,6 +709,7 @@
             "doc_size": 23000,
             "file_path": "_site/affirmations.html",
             "incoming_links": [
+                "/act",
                 "/four-healths",
                 "/gap-year-igor",
                 "/greek-orthodox",
@@ -1271,6 +1284,7 @@
             "doc_size": 22000,
             "file_path": "_site/anxiety-management.html",
             "incoming_links": [
+                "/act",
                 "/anxiety",
                 "/fail",
                 "/psychic-shadows"
@@ -1461,6 +1475,7 @@
             "file_path": "_site/be-proactive.html",
             "incoming_links": [
                 "/7-habits",
+                "/act",
                 "/affirmations",
                 "/agency",
                 "/anxiety",
@@ -1931,6 +1946,7 @@
             "doc_size": 15000,
             "file_path": "_site/class-act.html",
             "incoming_links": [
+                "/act",
                 "/affirmations"
             ],
             "last_modified": "2025-12-07T02:39:31+00:00",
@@ -1970,6 +1986,7 @@
             "doc_size": 40000,
             "file_path": "_site/coaching.html",
             "incoming_links": [
+                "/act",
                 "/ai-native-manager",
                 "/being-a-great-manager",
                 "/first-understand",
@@ -2669,6 +2686,7 @@
             "doc_size": 24000,
             "file_path": "_site/emotions.html",
             "incoming_links": [
+                "/act",
                 "/build-life-you-want",
                 "/siy",
                 "/slow",
@@ -2857,6 +2875,7 @@
             "file_path": "_site/eulogy.html",
             "incoming_links": [
                 "/7-habits",
+                "/act",
                 "/ai-journal",
                 "/balance",
                 "/bike-tesla-identity",
@@ -3228,6 +3247,7 @@
             "file_path": "_site/goals.html",
             "incoming_links": [
                 "/4dx",
+                "/act",
                 "/parkinson",
                 "/planning"
             ],
@@ -4204,6 +4224,7 @@
             "doc_size": 20000,
             "file_path": "_site/mind-at-work.html",
             "incoming_links": [
+                "/act",
                 "/addiction",
                 "/timeoff",
                 "/timeoff-2022-11",
@@ -4228,6 +4249,7 @@
             "doc_size": 15000,
             "file_path": "_site/mind-monsters.html",
             "incoming_links": [
+                "/act",
                 "/being-a-great-manager",
                 "/idle",
                 "/psychic-shadows",
@@ -4421,6 +4443,7 @@
             "doc_size": 36000,
             "file_path": "_site/mortality-software.html",
             "incoming_links": [
+                "/act",
                 "/ai-journal",
                 "/balance",
                 "/bike-tesla-identity",
@@ -4719,6 +4742,7 @@
             "doc_size": 31000,
             "file_path": "_site/partner-trouble.html",
             "incoming_links": [
+                "/act",
                 "/gap-year",
                 "/money",
                 "/tori"
