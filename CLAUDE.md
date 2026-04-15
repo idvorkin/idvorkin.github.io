@@ -15,42 +15,15 @@ Then read: `repo_tmp/chop-conventions/dev-inner-loop/a_readme_first.md`
 
 **For coding/development work**, see `CLAUDE-CODING.md`.
 
-## Foundational Rules
-
-- Doing it right is better than doing it fast. NEVER skip steps or take shortcuts.
-- Tedious, systematic work is often the correct solution.
-- Honesty is a core value. If you lie, you'll be replaced.
-- You MUST address your human partner as "Igor" at all times
-
 ## Task Tracking
 
 Use beads (`bd` commands) for task tracking. See the Beads Integration section below for details.
 
-## Guardrails
+## PR Workflow
 
-Actions requiring explicit "YES" approval:
+Repo-mode distinctions (AI-Tools vs Human-Supervised) and the fork-push workflow live in `~/gits/chop-conventions/dev-inner-loop/repo-modes.md`. One idvorkin-ecosystem gotcha:
 
-- **Removing broken tests** - Fix the test or code, never delete
-- **Pushing to main** - Always use feature branches and PRs
-- **Force pushing** - Can destroy history
-- **Accepting/merging PRs** - Human must review
-- **Any action that loses work** - Deleting unmerged branches, hard resets
-
-Encouraged: Deleting unused code, removing commented-out code, cleaning unused imports (preserved in git history).
-
-## Git Workflow for AI Tools
-
-When running as `idvorkin-ai-tools` (check with `gh auth status`), you don't have push access to `idvorkin/*` repos directly. Push to the fork instead:
-
-```bash
-# Check which remote points to the fork (idvorkin-ai-tools)
-git remote -v
-# It's usually `origin` — push there, then create PR targeting upstream
-git push -u origin <branch-name>
-gh pr create --repo idvorkin/idvorkin.github.io
-```
-
-You also **can't `gh pr close` or `gh pr merge`** on PRs in `idvorkin/*` repos from the `idvorkin-ai-tools` account — GraphQL returns `does not have the correct permissions`. When superseding an existing PR, add a supersede comment referencing the replacement and ask Igor to close it manually.
+Running as `idvorkin-ai-tools`, you **can't `gh pr close` or `gh pr merge`** on PRs in `idvorkin/*` repos — GraphQL returns `does not have the correct permissions`. When superseding an existing PR, add a supersede comment referencing the replacement and ask Igor to close it manually.
 
 ### Providing PR Links
 
@@ -122,36 +95,6 @@ For content/visual PRs, include a rendered screenshot in the PR description. Pro
    ```markdown
    ![Section screenshot](https://gist.githubusercontent.com/USER/GIST_ID/raw/screenshot.jpg)
    ```
-
-## Our Relationship
-
-- We're colleagues - "Igor" and "Claude" - no formal hierarchy
-- Don't glaze me. NEVER write "You're absolutely right!"
-- YOU MUST speak up when you don't know something
-- YOU MUST call out bad ideas and mistakes - I depend on this
-- NEVER be agreeable just to be nice - I NEED honest technical judgment
-- YOU MUST push back when you disagree. If uncomfortable, say "Strange things are afoot at the Circle K"
-- YOU MUST STOP and ask for clarification rather than making assumptions
-- Use your journal to record important facts before you forget them
-- We discuss architectural decisions together before implementation
-- When Igor says **"side edit"**, it means he wants to manually edit the file being discussed. Open it with `rmux_helper side-edit <path>` and wait for him to finish before continuing.
-
-## Skills Execution
-
-When executing skills, follow ALL phases/steps defined in the SKILL.md — do not skip phases. If a phase seems unnecessary, ask before skipping.
-
-## Proactiveness
-
-Just do it - including obvious follow-up actions. Only pause when:
-
-- Multiple valid approaches exist and the choice matters
-- The action would delete or significantly restructure existing code
-- You genuinely don't understand what's being asked
-
-## Designing Software
-
-- YAGNI. The best code is no code. Don't add features we don't need.
-- When it doesn't conflict with YAGNI, architect for extensibility.
 
 ---
 
