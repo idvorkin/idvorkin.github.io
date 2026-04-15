@@ -21,7 +21,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
   - [2026-04-13](#2026-04-13)
     - [My Bot Wrote, Their Bot Reviewed, My Bot Pushed Back, Their Bot Said "Oops"](#my-bot-wrote-their-bot-reviewed-my-bot-pushed-back-their-bot-said-oops)
   - [2026-04-12](#2026-04-12)
-    - [The $230 Week: When Cheap Coding Isn't](#the-230-week-when-cheap-coding-isnt)
+    - [The $230 Week: When Cheap Coding Isn't](#the-230-week-when-cheap-coding-isn-t)
     - [Two-Process Telegram: When the Platform Is the Bug](#two-process-telegram-when-the-platform-is-the-bug)
   - [2026-04-01](#2026-04-01)
     - [The Winchester Mystery House of Software: When Code Gets Too Cheap to Care About](#the-winchester-mystery-house-of-software-when-code-gets-too-cheap-to-care-about)

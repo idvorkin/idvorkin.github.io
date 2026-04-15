@@ -998,7 +998,7 @@
                 "/walking-with-god",
                 "/y25"
             ],
-            "last_modified": "2026-04-13T18:31:13.162176+00:00",
+            "last_modified": "2026-04-15T00:08:28.145542+00:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
@@ -1007,17 +1007,14 @@
                 "/ai-talk",
                 "/chop",
                 "/chow",
-                "/claw",
                 "/eulogy",
                 "/gpt",
                 "/how-igor-chops",
                 "/hyper-personal",
-                "/larry",
                 "/mental-pain",
                 "/mortality-software",
                 "/parkinson",
-                "/pet-projects",
-                "/tesla"
+                "/pet-projects"
             ],
             "redirect_url": "",
             "title": "Igor's AI Journal",
@@ -1953,7 +1950,6 @@
             "doc_size": 29000,
             "file_path": "_site/claw.html",
             "incoming_links": [
-                "/ai-journal",
                 "/changelog"
             ],
             "last_modified": "2026-03-22T18:15:50-07:00",
@@ -3882,7 +3878,6 @@
             "file_path": "_site/larry.html",
             "incoming_links": [
                 "/ai-feed",
-                "/ai-journal",
                 "/ai-second-brain",
                 "/changelog",
                 "/chow",
@@ -3892,7 +3887,7 @@
                 "/structure",
                 "/y26"
             ],
-            "last_modified": "2026-03-15T13:01:45-07:00",
+            "last_modified": "2026-04-15T00:06:41.118455+00:00",
             "markdown_path": "_d/larry.md",
             "outgoing_links": [
                 "/affirmations",
@@ -6269,7 +6264,6 @@
             "doc_size": 20000,
             "file_path": "_site/tesla.html",
             "incoming_links": [
-                "/ai-journal",
                 "/ai-second-brain",
                 "/bucket-list",
                 "/claw",

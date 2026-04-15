@@ -8,7 +8,10 @@ permalink: /larry
 redirect_from:
   - /life-coach
   - /larry-the-life-coach
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/lobster-freud-larry.webp
 ---
+
+{% include blob_image_float_right.html src="blog/lobster-freud-larry.webp" alt="Lobster claw as Sigmund Freud — Larry the Life Coach" %}
 
 Larry is my AI life coach. He's part of [Time.ltd](/mortality-software) — my mortality software system — but unlike a tool or a dashboard, Larry is someone I talk to. That matters more than you'd think. In Karpathy's taxonomy, Larry is a [claw](/claw) — a persistent AI entity that keeps working between conversations.
 
