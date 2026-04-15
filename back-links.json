@@ -565,14 +565,15 @@
         },
         "/act": {
             "description": "My back goes out a few times a year. My mood tracks the Meta stock price more than I’d like to admit. Twenty years ago I’d meet those moments with a thrash cycle — fused with the pain, angry at my body, tangled up in a story about why this was unfair — which made the experience much worse than the sensation itself. Now I aspire to be calm like water, be present, remember that this too shall pass, and work the problem. I still catch myself mid-thrash often enough to know it’s aspiration, not habit.\n\n",
-            "doc_size": 284000,
+            "doc_size": 285000,
             "file_path": "_site/act.html",
             "incoming_links": [
                 "/changelog"
             ],
-            "last_modified": "2026-04-15T01:06:55.322415+00:00",
+            "last_modified": "2026-04-15T02:44:44.805901+00:00",
             "markdown_path": "_d/act.md",
             "outgoing_links": [
+                "/addiction",
                 "/affirmations",
                 "/anxiety",
                 "/anxiety-management",
@@ -580,6 +581,7 @@
                 "/be-proactive",
                 "/class-act",
                 "/coaching",
+                "/curious",
                 "/emotional-health",
                 "/emotions",
                 "/eulogy",
@@ -646,6 +648,7 @@
             "doc_size": 29000,
             "file_path": "_site/addiction.html",
             "incoming_links": [
+                "/act",
                 "/activation",
                 "/anxiety-management",
                 "/changelog",
@@ -2118,6 +2121,7 @@
             "file_path": "_site/curious.html",
             "incoming_links": [
                 "/90days",
+                "/act",
                 "/affirmations",
                 "/being-a-great-manager",
                 "/class-act",

@@ -128,9 +128,9 @@ The whole program has one aim: **equanimity** — or in the full clinical vocabu
 
 (I'm using equanimity in the expansive contemporary sense — not just the inner non-reactive state, but the whole move: steady inside, acting outside. See the note under the translation table up top if the language bends your head.)
 
-Vitality is not a feeling. It's the sense of being fully alive and engaged with what's in front of me, regardless of whether the inside is pleasant. I can feel vital on my deathbed. I can feel vital in the middle of grief. I can feel vital with my back screaming at me and some days with my gut doing whatever PSC is doing. **Vitality ≠ feeling good.** That framing alone is worth the price of admission.
+Vitality is not a feeling. **My word for it is sustained motivation** — the sense of being fully alive and engaged with what's in front of me, regardless of whether the inside is pleasant. I can feel vital on my deathbed. I can feel vital in the middle of grief. I can feel vital with my back screaming at me and some days with my gut doing whatever PSC is doing. **Vitality ≠ feeling good.** That framing alone is worth the price of admission.
 
-The whole six-process framework compresses down to three moves: **Open, Present, Do What Matters**. Six words, memorable under stress. When I catch myself stuck — and I catch myself stuck a lot — this is the shortest diagnostic I've found: _Am I open? Am I present? Am I doing what matters?_
+The whole six-process framework compresses down to three moves: **Open, Present, Do What Matters**. _Open_ means open to whatever's showing up inside — the fear, the boredom, the self-doubt — without fighting it, arguing with it, or running from it. _Present_ means attention on this moment, not lost in past replays or future rehearsals. _Do What Matters_ means the next action pointed at who I want to be. Six words, memorable under stress. When I catch myself stuck — and I catch myself stuck a lot — this is the shortest diagnostic I've found: _Am I open? Am I present? Am I doing what matters?_
 
 What I trust about this framing is that it doesn't promise me happiness. It doesn't even promise me relief. It promises me a life where I can keep moving toward what matters _even while feeling whatever I'm feeling_. That's a much harder claim to make, and a much more honest one. See [/eulogy](/eulogy) — this is what "living your values" actually looks like when the pressure is on, not after the emotions clear. And [/affirmations](/affirmations) — my "Calm like water" affirmation is pointing at the same move: water has equanimity, a mountain has rigidity.
 
@@ -153,12 +153,14 @@ That's the whole thing. And the wild claim is: almost every psychological proble
 Three nuances that took me a minute to get:
 
 1. **"Behavior" includes the stuff inside my head.** Anything a whole being does — thinking, remembering, focusing — counts. Rumination is a covert away move; unhooking is a covert towards move. The video-camera test: if a camera could record it, it's overt; if not, it's covert. Both kinds belong on the diagram.
-2. **Any activity can be either, depending on function.** Opening TikTok to escape the hard conversation I've been dreading is an away move. Watching a show with Tori as a conscious choice is a towards move. Never the form, always the function. (TikTok specifically is almost always an away move for me. Sometimes it takes me an hour to notice.)
+2. **Any activity can be either, depending on function.** Gorging chocolate to numb out a feeling I don't want to sit with is an away move. Savoring a square of good chocolate with Tori after dinner is a towards move. Never the form, always the function. (Gorging anything is almost always an away move for me. Sometimes it takes me half the bar to notice.)
 3. **I define what's an away move, not someone else.** If I initially call a behavior a towards move and it turns out to be an away move, I'll find out later. The choice point is a snapshot of my own worldview, not anyone else's. The work surfaces the truth on its own timeline.
 
-The towards/away vocabulary is the backbone of the whole diagnostic. I use it now as a self-check: _was that a towards move or an away move?_ It's the cleanest single question I've found. See [/mortality-software](/mortality-software) — every daily move is a tiny vote, and this question is how I cast it consciously.
+The towards/away vocabulary is the backbone of the whole diagnostic. I'm adopting it now as a self-check: _was that a towards move or an away move?_ Not a habit yet — I'm still at the "notice after the fact" stage more than the "catch it live" stage — but it's the cleanest single question I've found. See [/mortality-software](/mortality-software) — every daily move is a tiny vote, and this question is how I cast it consciously.
 
 **This is the same move Covey writes about** in [7 Habits, Chapter 1](/be-proactive) under the heading _"Respond don't react."_ His framing: between stimulus and response there's a space, and in that space is our freedom to choose the response. The Choice Point is the ACT diagram of exactly that space — the hard situation is the stimulus, the away move is a reaction, the towards move is a response. I really liked Covey's version when I first read it, and it still lives in my head as "create time between stimulus and response." The ACT version adds vocabulary (hooked/unhooked) and the observation that the reaction is usually an **away move** — I'm running from a feeling, not toward a value.
+
+_Full chapter: [Ch 1 — Human Challenge](#chapter-1-the-human-challenge)_
 
 ### Workability — and Why I Stop Asking "Is This True?"
 
@@ -191,7 +193,7 @@ Six categories of fusion to watch for:
 
 These overlap. A typical narrative weaves several together: "because bad things happened to me (past), I am damaged (self-concept), which means I can't do X (reason)." Learning to spot which category I'm in makes it much easier to pick the right unhooking move. See [/mind-monsters](/mind-monsters) — I've been fighting these exact six categories for a decade under different names.
 
-**Experiential avoidance** — running from feelings — means spending energy trying to get rid of unwanted thoughts, feelings, memories, or sensations. A glass of wine to kill the anxiety. Scrolling to drown out the boredom. Skipping the hard conversation because I don't want the guilt. Small doses are fine — this isn't purism. The problem is when avoidance _becomes the life_. Research links high experiential avoidance to anxiety disorders, depression, addictions, PTSD, and long-term disability.
+**Experiential avoidance** — running from feelings — means spending energy trying to get rid of unwanted thoughts, feelings, memories, or sensations. A glass of wine to kill the anxiety. Scrolling to drown out the boredom. Skipping the hard conversation because I don't want the guilt. Small doses are fine — this isn't purism. The problem is when avoidance _becomes the life_. Research links high experiential avoidance to anxiety disorders, depression, addictions, PTSD, and long-term disability. See [/addiction](/addiction) — addiction is experiential avoidance turned into a full-time job; the escape hatch becomes the life.
 
 These two processes are linked. I fuse with the thought "this feeling is unbearable," and fusion drives the avoidance. The core move: **thoughts and feelings are not the problem. Getting hooked by them is.** The same anxious thought that derails one person's day leaves another untouched — not because one has "worse" thoughts, but because the context of fusion is different.
 
@@ -297,7 +299,7 @@ Values are "desired global qualities of ongoing action" — how I want to behave
 
 The signature distinction is **"getting married" versus "being loving."** Getting married is a goal; once I'm married, it's done. Being loving is a value; I can act on it or neglect it in every moment for the rest of my life. The **Two Kids in the Car** metaphor: two kids going to Disneyland, one whining "are we there yet?", the other playing "I spy." Same goal, radically different journey.
 
-My favorite values-clarification exercise is **The Video of Your Mistakenly Held Funeral**: imagine you were presumed dead, a funeral was held, and later you get to watch the video. What would you _love_ to hear the people you love saying about the kind of person you were? I prefer this to the standard eulogy exercise because the question is "what would I love to hear" rather than "what would they say."
+My favorite values-clarification exercise is **The Video of Your Mistakenly Held Funeral**: imagine you were presumed dead, a funeral was held, and later you get to watch the video. What would you _love_ to hear the people you love saying about the kind of person you were? I prefer this to the standard eulogy exercise because the question is "what would I love to hear" rather than "what would they say." [My own eulogy](/eulogy) is my current working answer — the list of roles I want those video clips to be about.
 
 Values are always available. Even paralyzed from the waist down, I can still be kind, focused, honest, supportive, curious. Even in a refugee camp, I still have choices about how I treat the people in my tent. That's why values, not goals, are the bedrock. **A goal can be stolen from me. A value cannot.**
 
@@ -364,7 +366,9 @@ Self-compassion breaks into six building blocks:
 
 The concrete practice is **Kind Hand**: when a feeling has a physical location (tight chest, churning gut, lump in throat), place a hand on that spot and imagine warmth flowing from it. Not to dissolve the feeling. To _hold_ it. The goal is never to make the pain go away — that's avoidance dressed up as self-care. The goal is to loosen up around the pain.
 
-The line I want to hold in mind: **"acknowledge pain and respond with kindness."** Short enough to remember in the moment the bad feeling shows up, and it tells me exactly what to do — step 1, notice; step 2, be kind about it. My ["Class Act"](/class-act) affirmation is the same move under a different name — the voice I talk to myself with when I'm doing this right.
+The line I want to hold in mind: **"acknowledge pain and respond with kindness."** Short enough to remember in the moment the bad feeling shows up, and it tells me exactly what to do — step 1, notice; step 2, be kind about it. My ["Class Act"](/class-act) affirmation is the same move under a different name — the voice I talk to myself with when I'm doing this right. And see my longer take on compassion — same two-step move, aimed at others first and then turned inward:
+
+{% include summarize-page.html src="/curious" %}
 
 _Full chapter: [Ch 18 — Hold Yourself Kindly](#chapter-18-hold-yourself-kindly)_
 
