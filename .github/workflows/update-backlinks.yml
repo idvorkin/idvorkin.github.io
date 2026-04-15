@@ -5,10 +5,21 @@ on:
     branches: [main]
     paths: ['_d/**', '_td/**', '_ig66/**']
   workflow_dispatch:
+    inputs:
+      mode:
+        description: 'delta (HEAD~1..HEAD) or full (rebuild back-links.json from scratch)'
+        required: true
+        default: 'full'
+        type: choice
+        options:
+          - full
+          - delta
 
 concurrency:
   group: update-backlinks
-  cancel-in-progress: true
+  # Queue rather than cancel — a manual full rebuild takes longer than a push
+  # delta and we don't want a push to kill it mid-flight.
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -34,20 +45,33 @@ jobs:
         run: |
           set -euo pipefail
 
-          # Find changed content files (github.event.before is empty on workflow_dispatch)
-          BEFORE="${{ github.event.before }}"
-          if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
-            BEFORE="HEAD~1"
-          fi
-          CHANGED=$(git diff --name-only "$BEFORE"..HEAD | grep -E '^(_d|_td|_ig66)/.*\.md$' || true)
+          # `inputs.mode` is defined only on workflow_dispatch; falls back to
+          # `delta` on push events so existing behavior is untouched. The
+          # shell-level `${MODE:-delta}` is belt-and-suspenders in case the
+          # expression ever renders empty.
+          MODE="${{ inputs.mode || 'delta' }}"
+          MODE="${MODE:-delta}"
+          echo "Mode: $MODE"
 
-          if [ -z "$CHANGED" ]; then
-            echo "No content markdown changes"
-            exit 0
-          fi
-          echo "Changed: $CHANGED"
+          if [ "$MODE" = "full" ]; then
+            # Match delta's 62-min threshold so a full rebuild of an in-sync
+            # repo doesn't churn timestamps 5-62 minutes old.
+            uv run ./build_back_links.py build --threshold-minutes 62
+          else
+            # github.event.before is empty on workflow_dispatch; fall back to HEAD~1
+            BEFORE="${{ github.event.before }}"
+            if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+              BEFORE="HEAD~1"
+            fi
+            CHANGED=$(git diff --name-only "$BEFORE"..HEAD | grep -E '^(_d|_td|_ig66)/.*\.md$' || true)
 
-          echo "$CHANGED" | xargs uv run ./build_back_links.py delta
+            if [ -z "$CHANGED" ]; then
+              echo "No content markdown changes"
+              exit 0
+            fi
+            echo "Changed: $CHANGED"
+            echo "$CHANGED" | xargs uv run ./build_back_links.py delta
+          fi
 
           if git diff --quiet back-links.json; then
             echo "back-links.json unchanged"
