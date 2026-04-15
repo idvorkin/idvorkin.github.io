@@ -570,7 +570,7 @@
             "incoming_links": [
                 "/changelog"
             ],
-            "last_modified": "2026-04-15T02:44:44.805901+00:00",
+            "last_modified": "2026-04-15T03:00:21.471800+00:00",
             "markdown_path": "_d/act.md",
             "outgoing_links": [
                 "/addiction",
@@ -586,6 +586,7 @@
                 "/emotions",
                 "/eulogy",
                 "/goals",
+                "/habits",
                 "/mind-at-work",
                 "/mind-monsters",
                 "/mortality-software",
