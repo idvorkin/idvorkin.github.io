@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ACT Made Simple: Acceptance and Commitment Therapy"
+title: "ACT aka Applied Buddhism"
 author: "Igor Dvorkin"
 permalink: /act
 tags:
@@ -10,26 +10,70 @@ tags:
   - psychology
 ---
 
-ACT is a therapy tradition I've circled for years without ever sitting down with it. Russ Harris's _ACT Made Simple_ is the practitioner primer — the book therapists actually read when learning Acceptance and Commitment Therapy. These are the concepts I want to lift into my own practice.
+My back goes out a few times a year. My mood tracks the Meta stock price more than I'd like to admit. Twenty years ago I'd meet those moments with a thrash cycle — fused with the pain, angry at my body, tangled up in a story about why this was unfair — which made the experience much worse than the sensation itself. **Now I aspire** to [be calm like water](/affirmations), be present, remember that _this too shall pass_, and work the problem. I still catch myself mid-thrash often enough to know it's aspiration, not habit.
+
+The move I'm aiming at has many names. [7 Habits](/be-proactive) calls it **the space between stimulus and response** — the gap Viktor Frankl said is where our freedom lives. Buddhism calls it **equanimity**. ACT therapy calls it **psychological flexibility**. Same move, named by three different traditions, arrived at from three different starting premises.
+
+These are my working notes on the convergence — I call it **Applied Buddhism**. The thesis: **pain is the signal. Suffering is what I add. Equanimity is the capacity to stop adding.** Buddhism built a 2500-year practice around that capacity. ACT is the behavioral-science packaging that turns it into a repeatable skill instead of a lucky mood. Practical, repeatable under stress, and (mostly) resistant to my own excuses.
 
 {% include ai-slop.html percent="90" %}
 {% include amazon.html asin="1684033012" %}
+
+### What ACT is, and how it maps
+
+The behavioral-science side of the convergence is **ACT — Acceptance and Commitment Therapy**. Steven Hayes and colleagues built it in the 1980s as a successor to traditional CBT. The difference is the question each one asks. CBT asks _"is this thought true, and how do I replace it with a more accurate one?"_ ACT asks _"does fighting this thought actually work — does it get me closer to the life I want?"_ Usually the answer is no. The fix isn't to argue with your own head; it's to stop fighting it and redirect the energy into action that matters.
+
+The core claim underneath that move: most human suffering is **second arrow** — not the original pain, but the layer we add on top by fighting what we don't want (**aversion**) and chasing what we do (**grasping**). Those are the two poisons Buddhism named 2500 years ago. Both are forms of non-acceptance: one pushes away, one clings. Both drain energy from the life you could be living. You can't always control the first arrow. You almost always have a choice about the second.
+
+The name of the therapy is the whole program in two words:
+
+- **Acceptance** — make room for uncomfortable thoughts and feelings instead of fighting, avoiding, or arguing with them. "Make room" doesn't mean _like_ them. It means stop spending energy trying to get rid of them.
+- **Commitment** — take action on what actually matters to you, regardless of how you feel in the moment. Values drive the bus, not feelings.
+
+The full framework is six core moves, drawn as a hexagon (the "**hexaflex**") and often simplified down to three — **Open, Present, Do What Matters**:
+
+1. **Defusion** — unhook from thoughts; stop treating them as truth or as commands.
+2. **Acceptance** — let uncomfortable feelings and sensations be there without fighting them.
+3. **Contact with the present moment** — stay with the here and now, not stuck in replays of the past or rehearsals of the future.
+4. **Self-as-context** — notice the part of you that's _watching_ the thoughts and feelings, separate from the content.
+5. **Values** — know what actually matters to you as a person (not goals — directions).
+6. **Committed action** — do the thing that moves you toward your values, even when the inside is uncomfortable.
+
+All six have direct Buddhist ancestors. That's not a coincidence — ACT's founders were explicit that they were drawing on contemplative traditions and rebuilding them in the language of behavioral science. The difference from straight Buddhism is mostly packaging: ACT strips out the cosmology, the rebirth talk, the monastic container, and keeps the practical moves. That's its strength (accessible to anyone) and its weakness (reinvents wheels that Buddhism already labeled).
+
+The table below is my working map across four columns: my plain English, Russ Harris's popularizations (from _ACT Made Simple_ — the practitioner book I'm working from), the academic ACT vocabulary, and the Buddhist concept it goes back to. The Buddhist column isn't claiming perfect 1:1 equivalence — 2500 years of refinement vs. a 40-year synthesis means some rows are tighter than others — but the parallels are too strong to ignore.
+
+One honesty note on the top row: I'm using **equanimity** in the expansive contemporary sense (Thich Nhat Hanh, Kornfield, engaged Buddhism) — broad enough to cover the integrated "acting on values from stable ground" move that ACT calls psychological flexibility. Strict classical equanimity (_upekkhā_ as one of the Four Immeasurables) is narrower — inner non-reactivity only, without the values-and-action overlay. Scholarly comparisons of ACT to Buddhism (e.g., Fung 2015) actually map psychological flexibility onto the Noble Eightfold Path as an integrated path. I find "equanimity" gets the feel right for a lay reader; the Eightfold Path framing is available if you want to go deeper.
+
+| My words                                             | Harris's words                         | Academic ACT                           | Buddhist concept                                      |
+| ---------------------------------------------------- | -------------------------------------- | -------------------------------------- | ----------------------------------------------------- |
+| equanimity — stable ground, acting on what matters   | psychological flexibility              | psychological flexibility              | equanimity (_upekkhā_)                                |
+| getting hooked                                       | getting hooked                         | cognitive fusion                       | identification with thought                           |
+| unhooking, stepping back                             | unhooking                              | defusion                               | non-attachment / noting practice                      |
+| running from feelings                                | the struggle switch                    | experiential avoidance                 | aversion (_dvesha_) — pushing away, the second arrow  |
+| chasing good feelings                                | the happiness trap                     | experiential control (pleasure agenda) | grasping (_tanha_) — craving, clinging, "more please" |
+| kernel mode — the layer underneath that just watches | the observing self                     | self-as-context                        | _anatta_ (non-self) / witness awareness               |
+| presence practice                                    | dropping anchor                        | contact with the present moment        | _sati_ (mindfulness)                                  |
+| does it work? (not: is it true?)                     | workability                            | workability                            | skillful vs. unskillful action                        |
+| toward moves / away moves                            | toward / away moves (the choice point) | committed action vs. avoidance         | right intention / right action                        |
+
+If none of those terms mean anything to you, skip the table and keep reading — the post stands on its own.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
 - [Part 1: Key Concepts & My Takeaways](#part-1-key-concepts--my-takeaways)
-  - [Psychological Flexibility — the Goal](#psychological-flexibility--the-goal)
+  - [Equanimity — the Goal](#equanimity--the-goal)
   - [The Choice Point — Towards Moves and Away Moves](#the-choice-point--towards-moves-and-away-moves)
   - [Workability — and Why I Stop Asking "Is This True?"](#workability--and-why-i-stop-asking-is-this-true)
   - [The Problem: Cognitive Fusion & Experiential Avoidance](#the-problem-cognitive-fusion--experiential-avoidance)
-  - [Creative Hopelessness — Inventorying What I've Tried](#creative-hopelessness--inventorying-what-ive-tried)
+  - [The Avoidance Audit](#the-avoidance-audit)
   - [What "Mindfulness" Means in ACT](#what-mindfulness-means-in-act)
   - [The Hexaflex — Six Core Processes](#the-hexaflex--six-core-processes)
     - [1. Cognitive Defusion](#1-cognitive-defusion)
     - [2. Acceptance](#2-acceptance)
     - [3. Contact with the Present Moment](#3-contact-with-the-present-moment)
-    - [4. Self-as-Context (the Observing Self)](#4-self-as-context-the-observing-self)
+    - [4. Self-as-Context — Kernel Mode](#4-self-as-context--kernel-mode)
     - [5. Values](#5-values)
     - [6. Committed Action](#6-committed-action)
   - [When to Reach for Which Process](#when-to-reach-for-which-process)
@@ -70,6 +114,7 @@ ACT is a therapy tradition I've circled for years without ever sitting down with
   - [Chapter 30: I and Thou](#chapter-30-i-and-thou)
   - [Chapter 31: A Quick Guide to Getting Unstuck](#chapter-31-a-quick-guide-to-getting-unstuck)
   - [Chapter 32: The ACT Therapist's Journey](#chapter-32-the-act-therapists-journey)
+- [A note on sources](#a-note-on-sources)
 - [Related Posts](#related-posts)
 
 <!-- vim-markdown-toc-end -->
@@ -77,61 +122,65 @@ ACT is a therapy tradition I've circled for years without ever sitting down with
 
 ## Part 1: Key Concepts & My Takeaways
 
-### Psychological Flexibility — the Goal
+### Equanimity — the Goal
 
-ACT has one aim: **psychological flexibility**. Harris defines it as "the ability to act mindfully, guided by our values." The more flexible I am, the better I can respond to whatever life throws at me — and the more vitality I experience, which Harris is careful to distinguish from "feeling good."
+The whole program has one aim: **equanimity** — or in the full clinical vocabulary, _psychological flexibility_. A stable inner ground from which I can act on what matters, right now, guided by who I want to be. The more equanimous I am, the better I can respond to whatever life throws at me, and the more **vitality** I get out of living.
 
-Vitality is not a feeling. It's "a sense of being fully alive and embracing the here and now, regardless of how we may be feeling in this moment." I can feel vital on my deathbed. I can feel vital in the middle of grief. That framing alone is worth the price of admission.
+(I'm using equanimity in the expansive contemporary sense — not just the inner non-reactive state, but the whole move: steady inside, acting outside. See the note under the translation table up top if the language bends your head.)
 
-Harris chunks the six core processes into a simpler **triflex**: Be Present, Open Up, Do What Matters. That's the whole model in six words. When I catch myself stuck, this is the shortest diagnostic I've found.
+Vitality is not a feeling. It's the sense of being fully alive and engaged with what's in front of me, regardless of whether the inside is pleasant. I can feel vital on my deathbed. I can feel vital in the middle of grief. I can feel vital with my back screaming at me and some days with my gut doing whatever PSC is doing. **Vitality ≠ feeling good.** That framing alone is worth the price of admission.
 
-What I like most about ACT's north star is that it doesn't promise me happiness. It doesn't even promise me relief. It promises me a life where I can keep moving toward what matters even while feeling whatever I'm feeling. That's a much harder claim to make and a much more honest one.
+The whole six-process framework compresses down to three moves: **Open, Present, Do What Matters**. Six words, memorable under stress. When I catch myself stuck — and I catch myself stuck a lot — this is the shortest diagnostic I've found: _Am I open? Am I present? Am I doing what matters?_
+
+What I trust about this framing is that it doesn't promise me happiness. It doesn't even promise me relief. It promises me a life where I can keep moving toward what matters _even while feeling whatever I'm feeling_. That's a much harder claim to make, and a much more honest one. See [/eulogy](/eulogy) — this is what "living your values" actually looks like when the pressure is on, not after the emotions clear. And [/affirmations](/affirmations) — my "Calm like water" affirmation is pointing at the same move: water has equanimity, a mountain has rigidity.
+
+My younger self read _"act on values regardless of feelings"_ and tried to go **full robot** — suppress the feeling, be rational, override with will. It half-worked. I got good at forcing action, but the feelings didn't go away; they piled up in the basement until something broke. ACT is a much better fit for how I actually work. The move isn't to kill the feeling first and then act — it's to let the feeling be loud, accept it's here, and act on my values anyway. Equanimity over robot-mode. Every time.
 
 _Full chapters: [Ch 1 — Human Challenge](#chapter-1-the-human-challenge) · [Ch 32 — Therapist's Journey](#chapter-32-the-act-therapists-journey)_
 
 ### The Choice Point — Towards Moves and Away Moves
 
-Harris's favorite diagnostic tool, introduced in the opening chapter and referenced throughout the book. It's a simple diagram he draws live with clients, usually halfway through the first session:
+This is the single diagnostic I use most often. It's a simple picture, drawn live with a client halfway through the first session:
 
 - At the bottom: the difficult situations, thoughts, and feelings I'm dealing with
 - From the bottom, two arrows diverge
-- **Away moves** (one arrow) — things I do when hooked, what I want to stop or do less of
-- **Towards moves** (the other arrow) — things I do when unhooked, what I want to start or do more of
+- **Away moves** — things I do when hooked; what I want to stop or do less of
+- **Towards moves** — things I do when unhooked; what I want to start or do more of
 - "Hooked" labels the away arrow, "unhooked" labels the towards arrow
 
-That's the whole thing. Harris claims almost every psychological problem he knows of — anxiety, depression, addiction, you name it — reduces to the same loop: hooked by difficult thoughts and feelings, then away moves. The work is noticing the hook and switching to a towards move instead.
+That's the whole thing. And the wild claim is: almost every psychological problem — anxiety, depression, addiction, you name it — reduces to the same loop. Hooked by difficult thoughts and feelings, then away moves. The work is noticing the hook and switching to a towards move instead.
 
 Three nuances that took me a minute to get:
 
-1. **"Behavior" includes covert stuff.** Anything a whole being does — thinking, remembering, focusing — is behavior. Rumination is a covert away move; defusing is a covert towards move. Harris's video-camera test: if a camera could record it, it's overt; if not, it's covert. Both kinds belong on the diagram.
-2. **Any activity can be either, depending on function.** Watching TV to escape the gym is an away move; watching a show I love as a conscious choice is a towards move. Never the form, always the function.
-3. **I define what's an away move, not someone else.** If the gambling addict initially calls gambling a towards move, Harris writes it on the towards arrow and doesn't debate. The choice point is a snapshot of my worldview, not the therapist's. The work surfaces the truth later.
+1. **"Behavior" includes the stuff inside my head.** Anything a whole being does — thinking, remembering, focusing — counts. Rumination is a covert away move; unhooking is a covert towards move. The video-camera test: if a camera could record it, it's overt; if not, it's covert. Both kinds belong on the diagram.
+2. **Any activity can be either, depending on function.** Opening TikTok to escape the hard conversation I've been dreading is an away move. Watching a show with Tori as a conscious choice is a towards move. Never the form, always the function. (TikTok specifically is almost always an away move for me. Sometimes it takes me an hour to notice.)
+3. **I define what's an away move, not someone else.** If I initially call a behavior a towards move and it turns out to be an away move, I'll find out later. The choice point is a snapshot of my own worldview, not anyone else's. The work surfaces the truth on its own timeline.
 
-The towards/away vocabulary is the backbone of the whole ACT diagnostic. I use it now as a self-check: _was that a towards move or an away move?_ That's the cleanest single question I've found.
+The towards/away vocabulary is the backbone of the whole diagnostic. I use it now as a self-check: _was that a towards move or an away move?_ It's the cleanest single question I've found. See [/mortality-software](/mortality-software) — every daily move is a tiny vote, and this question is how I cast it consciously.
 
-_Full chapter: [Ch 1 — Human Challenge](#chapter-1-the-human-challenge)_
+**This is the same move Covey writes about** in [7 Habits, Chapter 1](/be-proactive) under the heading _"Respond don't react."_ His framing: between stimulus and response there's a space, and in that space is our freedom to choose the response. The Choice Point is the ACT diagram of exactly that space — the hard situation is the stimulus, the away move is a reaction, the towards move is a response. I really liked Covey's version when I first read it, and it still lives in my head as "create time between stimulus and response." The ACT version adds vocabulary (hooked/unhooked) and the observation that the reaction is usually an **away move** — I'm running from a feeling, not toward a value.
 
 ### Workability — and Why I Stop Asking "Is This True?"
 
-The single thinking move that underpins every ACT intervention. **Workability is the replacement for asking if a thought is true.** In ACT, I never debate the content of thoughts. I ask:
+This is the single thinking move that underpins every other intervention in the framework. **Workability replaces asking whether a thought is true.** I never debate the content of thoughts. I ask:
 
 > If I let this thought guide my behavior, will that help me create a richer, fuller, more meaningful life?
 
-That's the whole therapy in one question. Harris has a transcript of a client insisting "I really am fat, look at me," and the therapist refusing to argue: "In this room, we're never going to debate whether your thoughts are true or false. What we're interested in is whether they're useful or helpful — whether they help you live a better life."
+That's the whole therapy in one question. There's a classic client transcript where someone insists "I really am fat, look at me," and the therapist refuses to argue: "In this room, we're never going to debate whether your thoughts are true or false. What we're interested in is whether they help you live a better life." The refusal to engage _is_ the treatment.
 
-The reason this works is that **the same thought functions differently in different contexts**. In a context of fusion, the thought "I'm not good enough" cancels my social plans. In a context of defusion, the same thought is noticed, acknowledged, and I go anyway. Nothing about the content changed. Only the grip changed. Harris's reformulation of Shakespeare lands hard: "Thinking does not make anything good or bad, but fusion with your thinking creates problems."
+The reason this works is that **the same thought functions differently in different contexts**. In a context of fusion, "I'm not good enough" cancels my social plans. In a context of unhooking, the same thought is noticed, acknowledged, and I go anyway. Nothing about the content changed. Only the grip changed. A reframe of Shakespeare lands hard here: _thinking does not make anything good or bad — getting hooked by your thinking creates problems_.
 
-This ties into the broader ACT philosophy Harris calls **functional contextualism**. Every behavior is judged by what it _does_ in context, not what it _looks like_. His example: two cuts on a forearm can have five different functions — self-punishment, tension release, body art, attention, getting out of numbness. Same form, radically different treatments. The form is a distraction; what matters is the function, and the function is always judged by workability.
+This rests on a philosophy called **functional contextualism** — every behavior is judged by what it _does_ in context, not what it _looks like_. The classic example: two cuts on a forearm can have five different functions — self-punishment, tension release, body art, attention, getting out of numbness. Same form, radically different treatments. The form is a distraction; what matters is the function, and the function is always judged by workability.
 
-I'm trying to make this my default stance — when I notice a thought is bothering me, skip the true/false question entirely. Ask: "is living as if this were true taking me toward the person I want to be?" That's workability, and it's faster than arguing with my own mind.
+I'm trying to make this my default stance: when I notice a thought is bothering me, skip the true/false question entirely. Ask instead, _is living as if this were true taking me toward the person I want to be?_ That's workability, and it's faster than arguing with my own mind. See [/coaching](/coaching) — good coaching questions are all workability questions in disguise.
 
 _Full chapters: [Ch 2 — Getting Hooked](#chapter-2-getting-hooked) · [Ch 4 — Get Your Geek On](#chapter-4-get-your-geek-on)_
 
 ### The Problem: Cognitive Fusion & Experiential Avoidance
 
-**Cognitive fusion** means my thoughts dominate my behavior in self-defeating ways. I'm not observing a thought — I'm wearing it. When my mind says "I'm not good enough" and I cancel on a friend, that's fusion. Harris's favorite client-friendly synonym is "getting hooked." The thought hooks me, reels me in, and jerks me around.
+**Cognitive fusion** — or in plainer language, **getting hooked** — means my thoughts dominate my behavior in self-defeating ways. I'm not observing a thought; I'm _wearing_ it. When my mind says "I'm not good enough" and I cancel on a friend, that's fusion. The thought has hooked me, reeled me in, and jerked me around.
 
-Harris lists six categories of fusion I need to watch for:
+Six categories of fusion to watch for:
 
 - **Fusion with the past** — rumination, regret, dwelling on painful memories, nostalgia
 - **Fusion with the future** — worry, catastrophizing, predicting the worst, hopelessness
@@ -140,26 +189,26 @@ Harris lists six categories of fusion I need to watch for:
 - **Fusion with rules** — should, must, have to, ought, right, wrong, fair, unfair
 - **Fusion with judgments** — evaluations of self, others, past, future, or anything
 
-These overlap. A typical narrative weaves several together: "because bad things happened to me (past), I am damaged (self-concept), which means I can't do X (reason)." Learning to spot which category I'm in makes it a lot easier to pick the right defusion move.
+These overlap. A typical narrative weaves several together: "because bad things happened to me (past), I am damaged (self-concept), which means I can't do X (reason)." Learning to spot which category I'm in makes it much easier to pick the right unhooking move. See [/mind-monsters](/mind-monsters) — I've been fighting these exact six categories for a decade under different names.
 
-**Experiential avoidance** means I'm spending effort trying to get rid of unwanted thoughts, feelings, memories, or sensations. A glass of wine to kill the anxiety. Scrolling to drown out the boredom. Skipping the hard conversation because I don't want to feel the guilt. Small doses are fine — Harris is not a purist. The problem is when avoidance becomes the life. Research links high experiential avoidance to anxiety disorders, depression, addictions, PTSD, and long-term disability.
+**Experiential avoidance** — running from feelings — means spending energy trying to get rid of unwanted thoughts, feelings, memories, or sensations. A glass of wine to kill the anxiety. Scrolling to drown out the boredom. Skipping the hard conversation because I don't want the guilt. Small doses are fine — this isn't purism. The problem is when avoidance _becomes the life_. Research links high experiential avoidance to anxiety disorders, depression, addictions, PTSD, and long-term disability.
 
-These two processes are linked. I fuse with the thought "this feeling is unbearable," and fusion drives the avoidance. Harris's line is that **thoughts and feelings are not the problem**. Getting hooked by them is. The same anxious thought that derails one person's day leaves another person untouched — not because one has "worse" thoughts, but because the context of fusion is different.
+These two processes are linked. I fuse with the thought "this feeling is unbearable," and fusion drives the avoidance. The core move: **thoughts and feelings are not the problem. Getting hooked by them is.** The same anxious thought that derails one person's day leaves another untouched — not because one has "worse" thoughts, but because the context of fusion is different.
 
 _Full chapters: [Ch 2 — Getting Hooked](#chapter-2-getting-hooked) · [Ch 8 — Creative Hopelessness](#chapter-8-creative-what)_
 
-### Creative Hopelessness — Inventorying What I've Tried
+### The Avoidance Audit
 
-Harris uses an awkward-sounding intervention called **creative hopelessness**. It's not hopelessness in life — it's hopelessness in the agenda of emotional control. The move is to take an honest inventory of everything I've tried to make unwanted feelings go away, and notice that none of it has worked in the long term. The point isn't to feel bad about myself. The point is to create room for a new approach.
+Before the new approach, the audit. I take an honest inventory of every strategy I've tried to make unwanted feelings go away, and notice that none of it has worked in the long term. The clinical name is **creative hopelessness** — not hopelessness in life, but hopelessness in the _agenda of emotional control_. The point isn't to feel bad about myself. The point is to clear the field so a new approach has room to land.
 
-The inventory comes with an acronym: **DOTS**.
+The inventory has an acronym: **DOTS**.
 
-- **D**istraction — TV, scrolling, food, games, anything that pulls my attention off the feeling
-- **O**pting out — avoiding people, places, events, or situations that might trigger the feeling
+- **D**istraction — TV, scrolling, food, games, anything that pulls attention off the feeling
+- **O**pting out — avoiding people, places, events, or situations that might trigger it
 - **T**hinking strategies — positive thinking, debating the thought, suppressing, self-criticism, rumination, problem-solving the feeling
 - **S**ubstances and other strategies — alcohol, drugs, medication, even exercise when it's used as escape
 
-Harris runs the DOTS through five questions, in order:
+Run DOTS through five questions, in order:
 
 1. What have you tried?
 2. How has it worked — in the long term?
@@ -167,130 +216,132 @@ Harris runs the DOTS through five questions, in order:
 4. What's showing up right now as we talk about this?
 5. Are you open to trying something new?
 
-The critical frame Harris hammers: **most of these strategies do work in the short term.** Distraction does distract. Alcohol does blunt anxiety. Avoiding the phone call does kill the guilt in the moment. The problem is none of it works long-term, and the costs compound.
+The critical frame: **most of these strategies do work in the short term.** Distraction does distract. Alcohol does blunt anxiety. Avoiding the phone call does kill the guilt in the moment. The problem is none of it works long-term, and the costs compound.
 
-I did this exercise on myself while reading the chapter and it was uncomfortable. My DOTS: scrolling to avoid boredom, stalling on hard conversations, over-checking work to silence "not good enough," using exercise to burn off anxiety. None of it is bad in small doses. All of it becomes a problem when it's the go-to move instead of feeling the feeling and acting on values anyway.
+I ran this on myself while reading and it was uncomfortable. My DOTS: scrolling TikTok to avoid boredom, stalling on hard conversations, over-checking work to silence "not good enough," using exercise to burn off anxiety. None of it is bad in small doses. All of it becomes a problem when it's the go-to move instead of feeling the feeling and acting on values anyway. See [/anxiety-management](/anxiety-management) — my running inventory of exactly this kind of short-term-relief-vs-long-term-cost tradeoff.
 
 _Full chapter: [Ch 8 — Creative Hopelessness](#chapter-8-creative-what)_
 
 ### What "Mindfulness" Means in ACT
 
-Harris devotes an entire chapter to the word "mindfulness" because it causes more problems than it solves. The word conjures monks, incense, chanting "Om," and long meditation sessions — which for a lot of people (including me, some days) is a hard sell. Harris strips the baggage and redefines it cleanly.
+Before going further I need to clean up the word **mindfulness**. It causes more problems than it solves. The word conjures monks, incense, chanting "Om," and long meditation sessions — which for a lot of people (including me, some days) is a hard sell. Strip the baggage and the word has a clean definition.
 
-**In ACT, mindfulness is not meditation.** Mindfulness is the combination of four specific skills:
+**Mindfulness is not meditation.** It's the combination of four specific skills:
 
-1. **Defusion** — stepping back from thinking instead of getting tangled in it
+1. **Defusion (unhooking)** — stepping back from thinking instead of getting tangled in it
 2. **Acceptance** — opening up to and making room for unwanted feelings
-3. **Flexible attention** (contact with the present moment) — being able to narrow, broaden, sustain, or redirect my focus
-4. **Self-as-context** — the noticing self, the part of me aware of everything else
+3. **Flexible attention** (contact with the present moment) — narrow, broaden, sustain, or redirect my focus at will
+4. **Self-as-context** — kernel mode, the layer underneath that's aware of everything else without being identified with any of it
 
-Meditation is one of hundreds of ways to train these skills. Yoga is another. Tai chi, mindful walking, mindful dishwashing, Notice Your Hand — all of them work. If I want to meditate, great. If I don't, also great. **ACT does not require formal practice.**
+Meditation is one of hundreds of ways to train these skills. Yoga is another. Tai chi, mindful walking, mindful dishwashing, Notice Your Hand — all of them work. If I want to meditate, great. If I don't, also great. **The framework does not require formal practice.**
 
-Harris's definition: **mindfulness is paying attention with openness, curiosity, kindness, and flexibility**. And the basic instruction at the core of every mindfulness exercise is three words: **notice X**. Where X is any present-moment experience — breath, feet on the floor, sounds in the room, the taste of coffee, the feeling of fear. That's it.
+The cleanest definition I've seen: **paying attention with openness, curiosity, kindness, and flexibility**. And the basic instruction at the core of every mindfulness exercise is three words: **notice X**. Where X is any present-moment experience — breath, feet on the floor, sounds in the room, the taste of coffee, the feeling of fear. That's it.
 
-Harris even recommends avoiding the word "mindfulness" with clients who have baggage around it. Use "unhooking skills," "dropping anchor," "flexible attention," or "being present" instead. The skills are the point, not the label.
+If the word "mindfulness" has too much baggage for you, drop it. Use "unhooking skills," "dropping anchor," "flexible attention," or "being present" instead. The skills are the point, not the label.
 
-This is the reframe I needed. Every time I've bounced off meditation, it was because I believed mindfulness required sitting still with my eyes closed. It doesn't. It requires noticing X with openness and curiosity, and I can do that anywhere.
+This is the reframe I needed. Every time I've bounced off meditation, it was because I believed mindfulness required sitting still with my eyes closed. It doesn't. It requires noticing X with openness and curiosity, and I can do that anywhere — including on a run along Hood Canal.
 
 _Full chapters: [Ch 3 — Dodgy Words](#chapter-3-mindfulness-and-other-dodgy-words) · [Ch 17 — Being Present](#chapter-17-being-present)_
 
 ### The Hexaflex — Six Core Processes
 
-ACT centers on six processes arranged in a hexagon Harris calls the hexaflex: defusion, acceptance, contact with the present moment, self-as-context, values, and committed action. They're not a sequence. He explicitly calls ACT "nonlinear" — I can work on any of the six at any moment, and when I get stuck on one, I move to another. The six are facets of the same diamond.
+Six processes arranged in a hexagon — the **hexaflex**: defusion (unhooking), acceptance, contact with the present moment, self-as-context, values, and committed action. They're not a sequence. The framework is deliberately **any-order** — I can work on any of the six at any moment, and when I get stuck on one, I move to another. The six are facets of the same diamond.
 
 #### 1. Cognitive Defusion
 
-Defusion means stepping back and watching my thinking instead of tangling with it. Harris's definition: I see thoughts "for what they are — nothing more or less than words or pictures. We hold them lightly instead of clutching them tightly. We allow them to guide us, but not to dominate us."
+**Defusion means stepping back and watching my thinking instead of tangling with it.** I see thoughts for what they are — nothing more or less than words or pictures. Hold them lightly instead of clutching them tightly. Let them guide me, but not dominate me.
 
-The signature metaphor is **Hands as Thoughts and Feelings**. I hold my hands in front of my face — that's fusion. I can barely see the room, I can't engage with anyone, I can't do anything useful. Then I lower my hands to my lap. The thoughts haven't disappeared. They're still with me. But now I can see, move, and act.
+The signature metaphor is **Hands as Thoughts and Feelings**. Hold my hands in front of my face — that's fusion. I can barely see the room, can't engage with anyone, can't do anything useful. Then lower my hands to my lap. The thoughts haven't disappeared; they're still with me. But now I can see, move, and act.
 
-The single practice I want to keep: take a self-critical thought like "I'm a loser" and replay it as "I'm having the thought that I'm a loser." Then replay it again as "I notice I'm having the thought that I'm a loser." The thought loses about half its sting instantly.
+The single practice I keep going back to: take a self-critical thought like "I'm a loser" and replay it as "I'm having the thought that I'm a loser." Then again as "I notice I'm having the thought that I'm a loser." The thought loses about half its sting instantly.
 
-Harris is clear that the point of defusion is never to make thoughts go away. That's just avoidance dressed up in mindfulness clothes. The point is to engage in what matters while the thought is still there. A thought I've defused from can still be around — I'm just not in its grip.
+The point of defusion is never to make thoughts go away. That's just avoidance dressed up in mindfulness clothes. The point is to engage in what matters _while the thought is still there_. A defused thought can still be around — I'm just not in its grip.
 
 _Full chapters: [Ch 11 — Notice That Thought](#chapter-11-notice-that-thought) · [Ch 12 — Deeper into Defusion](#chapter-12-deeper-into-defusion) · [Ch 13 — Defusion Smorgasbord](#chapter-13-the-defusion-smorgasbord) · [Ch 15 — Leaves on a Stream](#chapter-15-leaves-streams-clouds-and-sky)_
 
 #### 2. Acceptance
 
-Acceptance — Harris also calls it "willingness," "expansion," "opening up," "making room" — means opening up to unwanted inner experiences and letting them be. Not liking them. Not wanting them. Allowing them. Crucially, acceptance is never "passive acceptance of my life situation." I change the situation where I can and accept the pain that shows up as I do. The book is called Acceptance _and Commitment_ Therapy for a reason.
+Acceptance — also called "willingness," "expansion," "opening up," "making room" — means opening up to unwanted inner experiences and letting them be. Not liking them. Not wanting them. **Allowing them.** Acceptance is never "passive acceptance of my life situation." Change the situation where you can, and accept the pain that shows up as you do. The therapy is called Acceptance _and_ Commitment for a reason.
 
-The signature metaphor is the **Struggle Switch**. Imagine a switch at the back of my mind. Switch on: I must get rid of any bad feeling. Now I have anxiety about my anxiety, anger about my anger — a feedback loop that amplifies whatever I started with. Switch off: the feeling is still unpleasant, but I'm not pouring fuel on it. Harris treats acceptance as a 0-to-10 scale, not all-or-nothing. I can move from 9 (full struggle) to 3 (mostly allowing it) and that's a big win.
+The signature metaphor is the **Struggle Switch**. Imagine a switch at the back of my mind. Switch on: I must get rid of any bad feeling. Now I have anxiety about my anxiety, anger about my anger — a feedback loop that amplifies whatever I started with. Switch off: the feeling is still unpleasant, but I'm not pouring fuel on it. Acceptance works on a 0-to-10 scale, not all-or-nothing — moving from 9 (full struggle) to 3 (mostly allowing it) is a big win.
 
-The practice is the three As: **Acknowledge** the feeling, **Allow** it to be there, **Accommodate** it — make real space for it, like an unwanted houseguest I decide to offer a chair. Harris is emphatic that acceptance isn't tolerance. Tolerance is gritted teeth. Acceptance is "I don't like this, and I'm letting it be here anyway."
+The practice is the three As: **Acknowledge** the feeling, **Allow** it to be there, **Accommodate** it — make real space for it, like an unwanted houseguest I decide to offer a chair. Acceptance is not tolerance. Tolerance is gritted teeth. Acceptance is "I don't like this, and I'm letting it be here anyway."
 
 _Full chapters: [Ch 8 — Creative Hopelessness](#chapter-8-creative-what) · [Ch 9 — Drop the Struggle](#chapter-9-drop-the-struggle) · [Ch 22 — Fifty Shades of Acceptance](#chapter-22-fifty-shades-of-acceptance) · [Ch 23 — Emotions as Allies](#chapter-23-emotions-as-allies)_
 
 #### 3. Contact with the Present Moment
 
-Harris calls this "flexible attention" — the ability to narrow, broaden, sustain, or redirect my focus as the situation demands. The costs of inflexible attention are three: **cutting off** (missing the person I'm with), **missing out** (eating dinner without tasting it), and **doing things poorly** (making mistakes because I'm in my head).
+Also called **flexible attention** — the ability to narrow, broaden, sustain, or redirect my focus as the situation demands. The costs of _inflexible_ attention come in three flavors: **cutting off** (missing the person I'm with), **missing out** (eating dinner without tasting it), and **doing things poorly** (making mistakes because I'm in my head).
 
-The antidotes: **engaging, savoring, focusing**. The signature practice is his **Notice Your Hand** exercise — spend five minutes looking at my own hand with a curious child's attention. Most clients are stunned that time evaporated and that their hand is fascinating. Then he asks: what would happen if I paid this kind of attention to my spouse?
+The antidotes: **engaging, savoring, focusing**. The signature practice is **Notice Your Hand** — spend five minutes looking at my own hand with a curious child's attention. People are stunned that time evaporates and that their own hand is fascinating. Then the follow-up question: what would happen if I paid this kind of attention to my spouse? Or my kids?
 
-The universal instruction is just "notice X," where X is any present-moment experience — breath, feet on the floor, sounds in the room, the taste of coffee.
+The universal instruction is just "notice X," where X is any present-moment experience — breath, feet on the floor, sounds in the room, the taste of coffee. See [/mind-at-work](/mind-at-work) — I wrote a whole post on the attention-switching cost, which is what inflexible attention actually looks like in a knowledge-work context.
 
 _Full chapters: [Ch 10 — Dropping Anchor](#chapter-10-dropping-anchor) · [Ch 17 — Being Present](#chapter-17-being-present)_
 
-#### 4. Self-as-Context (the Observing Self)
+#### 4. Self-as-Context — Kernel Mode
 
-Harris calls this the trickiest process in ACT and opens chapter 25 by warning he's about to try to make it simple and may fail. The one-line version: **the observing self is the part of me that does all the noticing** — a safe place inside me from which to open up to difficult thoughts and feelings, and a viewpoint from which to step back and watch them pass. I access it by bringing awareness to my own awareness.
+This is the trickiest process in the framework, and any attempt to explain it in words is going to fall short. Tech framing first, since it's the most honest: **your brain runs in two modes**. User-space is the apps — the thoughts, feelings, self-stories, the identities I believe I am. **Kernel mode is the layer underneath**. It has privileged access, sees everything, isn't any of the apps. All the noticing happens there. It's a safe place inside me from which to open up to difficult thoughts and feelings, and a viewpoint from which to step back and watch them pass. I get to kernel mode by bringing awareness to my own awareness.
 
-Harris piles up synonyms so one of them lands: noticing self, observer self, pure awareness, the continuous you, the "I" that notices. None of the words are the thing; technically it isn't a self at all, just the locus from which noticing happens. But the metaphor of a "self" works, so it stays.
+The clinical vocabulary piles up synonyms because none of them quite lands: noticing self, observer self, pure awareness, the continuous you, the "I" that notices, self-as-context. None of the words are the thing. Technically it isn't a self at all — just the locus from which noticing happens. But the "self" metaphor works, so it stays. "Kernel mode" works for me because it's honest about the hierarchy: it's a _layer_, not a thing.
 
 Three metaphors to hold it: the **Stage Show** (life is a show I can step back from and watch, able to zoom in on any detail or zoom out to the whole stage), **Sky and Weather** (I am the sky, thoughts and feelings are the weather, which cannot harm the sky and always passes), and the **Chessboard** (I am the board holding both the white pieces I like and the black pieces I don't — the board is the safe place, not either side).
 
-The critical move is that **no metaphor will give me the actual experience** — only experiential exercises will. Fortunately the observing self is already implicit in every mindfulness practice I do: "notice X" has a noticer doing the noticing. Building it is mostly about noticing that I'm noticing inside practices I'm already running. Harris calls this "planting seeds" and does it from session one, slipping lines like "and there's a part of you noticing everything" into dropping-anchor and Leaves-on-a-Stream exercises long before ever naming the concept. The full ladder of exercises from the 1-second seed up through the 15-minute Continuous You, plus the Good Self / Bad Self exercise for defusing from self-concept, is in [Chapter 25](#chapter-25-the-noticing-self).
+The critical move is that **no metaphor will give me the actual experience** — only experiential exercises will. Fortunately kernel mode is already implicit in every mindfulness practice I do: "notice X" has a noticer doing the noticing. Building it is mostly about noticing _that I'm noticing_ inside practices I'm already running. The move is called **"planting seeds"** — slip lines like "and there's a part of you noticing everything" into dropping-anchor and Leaves-on-a-Stream exercises long before ever naming the concept. The full ladder of exercises from the 1-second seed up through the 15-minute Continuous You, plus the Good Self / Bad Self exercise for defusing from self-concept, is in [Chapter 25](#chapter-25-the-noticing-self). My ["Calm like water"](/affirmations) affirmation is pointing at the same thing — water is the medium, not any particular wave.
 
 _Full chapters: [Ch 25 — Noticing Self](#chapter-25-the-noticing-self)_
 
 #### 5. Values
 
-Values are "desired global qualities of ongoing action" — how I want to behave, right now and on an ongoing basis. Not goals. Goals are things I want to get or have. Values are how I want to act every step of the way, whether I hit the goal or not.
+Values are "desired global qualities of ongoing action" — how I want to behave, right now and on an ongoing basis. **Not goals.** Goals are things I want to get or have. Values are how I want to _act_ every step of the way, whether I hit the goal or not.
 
-The signature distinction is **"getting married" versus "being loving."** Getting married is a goal; once I'm married, it's done. Being loving is a value; I can act on it or neglect it in every moment for the rest of my life. The **Two Kids in the Car** metaphor: two kids going to Disneyland, one whining "are we there yet?" the other playing "I spy." Same goal, radically different journey.
+The signature distinction is **"getting married" versus "being loving."** Getting married is a goal; once I'm married, it's done. Being loving is a value; I can act on it or neglect it in every moment for the rest of my life. The **Two Kids in the Car** metaphor: two kids going to Disneyland, one whining "are we there yet?", the other playing "I spy." Same goal, radically different journey.
 
-Harris's favorite values clarification exercise is **The Video of Your Mistakenly Held Funeral**: imagine you were presumed dead, a funeral was held, and later you get to watch the video. What would you love to hear the people you love saying about the kind of person you were? I like this better than the standard "eulogy" exercise because it's less morbid and the question is "what would I _love_ to hear" rather than "what would they say."
+My favorite values-clarification exercise is **The Video of Your Mistakenly Held Funeral**: imagine you were presumed dead, a funeral was held, and later you get to watch the video. What would you _love_ to hear the people you love saying about the kind of person you were? I prefer this to the standard eulogy exercise because the question is "what would I love to hear" rather than "what would they say."
 
-Values are always available. Even paralyzed from the waist down, I can still be kind, focused, honest, supportive, curious. Even in a refugee camp — Harris co-wrote the WHO's ACT protocol for refugee camps — I still have choices about how I treat the people in my tent. That's why values, not goals, are the bedrock. A goal can be stolen from me. A value cannot.
+Values are always available. Even paralyzed from the waist down, I can still be kind, focused, honest, supportive, curious. Even in a refugee camp, I still have choices about how I treat the people in my tent. That's why values, not goals, are the bedrock. **A goal can be stolen from me. A value cannot.**
 
-Harris also gives six quick rules about values:
+Six rules about values:
 
 - **Values are here and now.** Goals are in the future. I can act on a value in the next minute; I can't act on a goal until I achieve it.
-- **Values never need to be justified.** They're like taste in ice cream. I don't have to explain why I value honesty, I just do.
+- **Values never need to be justified.** They're like taste in ice cream. I don't have to explain why I value honesty — I just do.
 - **Values often need to be prioritized.** Like continents on a spinning globe — some move to the front as situations change, others recede.
 - **Values are best held lightly.** Fused with, they become rigid oppressive rules. Carry them like a compass in a backpack, not clutched in a fist.
 - **Values are freely chosen.** I'm not obligated to live by them. I choose to.
 - **Values include self and others.** If my value is kindness, I should treat both myself and others kindly.
 
+See [/affirmations](/affirmations) — my affirmations list IS my values list in a different format.
+
 _Full chapters: [Ch 19 — Know What Matters](#chapter-19-know-what-matters) · [Ch 20 — What If Nothing Matters](#chapter-20-what-if-nothing-matters)_
 
 #### 6. Committed Action
 
-Committed action is translating values into ongoing patterns of effective behavior. Harris folds in all the standard behavioral tools — goal setting, action planning, skills training, exposure — but insists they ride on top of values, not fusion. Without values underneath, goal setting becomes another form of "should" and fails predictably.
+**Committed action means translating values into ongoing patterns of effective behavior.** All the standard behavioral tools — goal setting, action planning, skills training, exposure — ride on top of values, not fusion. Without values underneath, goal setting becomes another form of "should" and fails predictably.
 
 The core framework is **SMART goals**: Specific, Motivated by values, Adaptive (wise), Realistic, Time-framed. The rule I like most is the **"dead person's goal" test**: if a corpse can achieve your goal better than you can, it's not a real goal. "I'll stop yelling at the kids" is a dead person's goal — the corpse never yells. "When the kids push my buttons, I'll drop anchor, connect to my value of patience, and speak calmly" is a live person's goal. Any "I won't X" is a dead person's goal. The correction is always "I will Y instead."
 
-The other key tool is the **Challenge Formula**. For any difficult situation I have three options: (1) leave, (2) stay and live my values and make room for the pain, (3) stay and give up acting effectively. Option 3 is the default. Option 2 is the work. Leave is always on the table — ACT isn't passive acceptance — but if I'm staying, the only workable option is "stay and live my values."
+The other key tool is the **Challenge Formula**. For any difficult situation I have three options: (1) leave, (2) stay and live my values and make room for the pain, (3) stay and give up acting effectively. Option 3 is the default. Option 2 is the work. Leave is always on the table — this framework is never passive acceptance — but if I'm staying, the only workable option is "stay and live my values."
 
-Harris's best diagnostic for why I fail to follow through is the **HARD** acronym:
+The best diagnostic for why I fail to follow through is the **HARD** acronym:
 
-- **H**ooked on unhelpful thoughts → use defusion
+- **H**ooked on unhelpful thoughts → use unhooking
 - **A**voiding discomfort → use acceptance and make room
 - **R**emote from values → reconnect to why this matters
 - **D**oubtful goals (unrealistic) → shrink the goal until I score 7+ out of 10 on "will I actually do this"
 
-When I'm not doing the thing, I can usually name which of HARD is active in under a minute. The one I see in myself most often is D — I set goals that are too ambitious and then don't start.
+When I'm not doing the thing, I can usually name which of HARD is active in under a minute. The one I see in myself most often is **D** — I set goals that are too ambitious and then don't start. See [/goals](/goals) — I track committed action against my values annually, and the HARD diagnostic is how I debug the gap.
 
 _Full chapters: [Ch 21 — Do What It Takes](#chapter-21-do-what-it-takes) · [Ch 24 — What's Stopping You](#chapter-24-whats-stopping-you)_
 
 ### When to Reach for Which Process
 
-Harris keeps reminding readers that ACT is nonlinear, but that's hard to act on without a crude decision tree. Here's mine, compressed from the book:
+The framework is non-linear — I can pick up at any process at any time — but that's hard to act on without a crude decision tree. Here's mine:
 
-- **I'm stuck in a thought loop (rumination, worry, self-criticism)** → defusion. Notice, name, and neutralize. "I'm having the thought that..."
+- **I'm stuck in a thought loop (rumination, worry, self-criticism)** → defusion. Notice, name, neutralize. "I'm having the thought that..."
 - **I'm overwhelmed or dissociating** → drop anchor. ACE: acknowledge, come back, engage.
 - **I'm avoiding something that matters because it would hurt** → acceptance. Make room for the feeling so I can take the action.
 - **I'm drifting, disengaged, going through the motions** → contact with the present moment. Notice X with curiosity.
-- **I'm fused with a story about who I am ("I'm broken," "I'm a loser")** → self-as-context. Step back to the noticing self. The thought is a leaf, not the river.
+- **I'm fused with a story about who I am ("I'm broken," "I'm a loser")** → self-as-context. Step back to kernel mode. The thought is a leaf, not the river.
 - **I have no direction, everything feels pointless** → values. Mistakenly-held funeral, or "ten years from now, looking back."
 - **I know what to do but can't get myself to do it** → committed action plus HARD diagnostic.
 
@@ -298,34 +349,34 @@ _Full chapters: [Ch 31 — Getting Unstuck](#chapter-31-a-quick-guide-to-getting
 
 ### Self-Compassion — The Six Building Blocks
 
-Harris defines compassion in six words: **acknowledge pain and respond with kindness**. Self-compassion is the same move turned on myself. It's not a mood or a feeling — it's a behavior I can practice whether I feel it or not.
+Compassion in six words: **acknowledge pain and respond with kindness**. Self-compassion is the same move turned on myself. It's not a mood or a feeling — it's a _behavior_ I can practice whether I feel it or not.
 
-The opener is the **Two Friends** question: when I'm suffering, do I want the friend who says "stop whining, suck it up" or the friend who says "this is rough, I'm here for you, we're in this together"? Then the uncomfortable follow-up: which friend am I being to myself?
+The opener is the **Two Friends** question. When I'm suffering, do I want the friend who says "stop whining, suck it up" — or the friend who says "this is rough, I'm here for you, we're in this together"? Then the uncomfortable follow-up: _which friend am I being to myself?_
 
-Harris breaks self-compassion into six building blocks:
+Self-compassion breaks into six building blocks:
 
 1. **Acknowledge the wound** — notice the pain, name it, don't look away.
 2. **Be human** — this is what humans feel. The pain is normal, not proof that something is wrong with me.
-3. **Disarm the critic** — defuse from harsh self-judgment ("there's the 'I'm a failure' story again").
+3. **Disarm the critic** — unhook from harsh self-judgment ("there's the 'I'm a failure' story again").
 4. **Hold yourself kindly** — in thoughts, words, and actions. Speak to myself the way I'd speak to a friend.
 5. **Make room for your pain** — accept it, don't fight it, don't push it away.
 6. **See yourself in others** — common humanity. I'm not the only one going through this.
 
-The concrete practice is **Kind Hand**: when a feeling has a physical location (tight chest, churning gut, lump in throat), place a hand on that spot and imagine warmth flowing from it. Not to dissolve the feeling. To hold it. Harris is emphatic that the goal is never to make the pain go away — that's avoidance dressed up as self-care. The goal is to loosen up around the pain.
+The concrete practice is **Kind Hand**: when a feeling has a physical location (tight chest, churning gut, lump in throat), place a hand on that spot and imagine warmth flowing from it. Not to dissolve the feeling. To _hold_ it. The goal is never to make the pain go away — that's avoidance dressed up as self-care. The goal is to loosen up around the pain.
 
-The line I want to hold in mind: **"acknowledge pain and respond with kindness."** Short enough to remember in the moment the bad feeling shows up, and it tells me exactly what to do — step 1, notice; step 2, be kind about it.
+The line I want to hold in mind: **"acknowledge pain and respond with kindness."** Short enough to remember in the moment the bad feeling shows up, and it tells me exactly what to do — step 1, notice; step 2, be kind about it. My ["Class Act"](/class-act) affirmation is the same move under a different name — the voice I talk to myself with when I'm doing this right.
 
 _Full chapter: [Ch 18 — Hold Yourself Kindly](#chapter-18-hold-yourself-kindly)_
 
 ### Emotions as Allies — What Feelings Are For
 
-Harris opens chapter 23 with a reframe that lands hard: **emotions are not the problem, they're messengers.** Every emotion I have evolved to do three things:
+The reframe that lands hardest for me: **emotions are not the problem — they're messengers.** Every emotion I have evolved to do three things:
 
 1. **Communicate** — to me and to others ("I'm in danger" / "I'm suffering" / "I need help")
 2. **Motivate** — prepare my body to act in the situation ("fight" / "flee" / "rest" / "bond")
 3. **Illuminate** — show me what I care about. The size of the feeling is proportional to the size of the gap between what I want and what I have.
 
-Harris gives a specific function-per-emotion table:
+A function-per-emotion table:
 
 - **Fear** — communicates danger, motivates flight, illuminates safety and protection
 - **Anger** — communicates violation, motivates fighting, illuminates boundaries and defended territory
@@ -333,11 +384,11 @@ Harris gives a specific function-per-emotion table:
 - **Guilt** — communicates "I've done wrong," motivates repair, illuminates how I want to treat others
 - **Love** — communicates appreciation, motivates caring, illuminates connection and bonding
 
-The slogan Harris uses throughout the book: **"Your pain is your ally."** Once an emotion has been accepted (not fought, not suppressed, not avoided), I can ask it questions: _What is this emotion reminding me to do? What does it tell me I care about? What does it reveal about what's missing or threatened?_
+The slogan I keep coming back to: **"Your pain is your ally."** Once an emotion has been accepted (not fought, not suppressed, not avoided), I can ask it questions: _What is this reminding me to do? What does it tell me I care about? What does it reveal about what's missing or threatened?_
 
-This reframes the whole project. The work is not to eliminate difficult emotions. The work is to stop cutting the communication cable. When sadness shows up, it's telling me I loved something. When anger shows up, it's telling me something crossed a line I care about. When fear shows up, it's telling me something I value is at risk. Those are all _useful_ messages, and the feeling is the messenger.
+This reframes the whole project. The work is not to eliminate difficult emotions. The work is to **stop cutting the communication cable.** When sadness shows up, it's telling me I loved something. When anger shows up, it's telling me something crossed a line I care about. When fear shows up, it's telling me something I value is at risk. Those are all _useful_ messages, and the feeling is the messenger.
 
-The practice move: when a hard emotion shows up and I've accepted it, ask **"what is this telling me about what matters to me?"** The answer is almost always obvious in hindsight, and I usually missed it because I was busy trying to make the feeling go away.
+The practice move: when a hard emotion shows up and I've accepted it, ask **"what is this telling me about what matters to me?"** The answer is almost always obvious in hindsight, and I usually missed it because I was busy trying to make the feeling go away. See [/emotions](/emotions) — this framing changed how I talk to myself about feelings, and my running notes on emotional literacy live there.
 
 _Full chapter: [Ch 23 — Emotions as Allies](#chapter-23-emotions-as-allies)_
 
@@ -369,14 +420,14 @@ _Full chapter: [Ch 23 — Emotions as Allies](#chapter-23-emotions-as-allies)_
 - **[Notice Your Hand as a connection warm-up](#chapter-17-being-present).** Before important conversations, do 60 seconds of curious-child attention on something physical. It resets my attention the way a breath can't.
 - **[_"Your pain is your ally."_](#chapter-23-emotions-as-allies)** When a hard emotion shows up, ask what it's telling me about what I care about. Emotions communicate, motivate, and illuminate.
 - **[_"Willing" instead of "wanting."_](#chapter-20-what-if-nothing-matters)** When I don't want to do the important thing, don't pretend I do. Ask instead: "am I willing to do it anyway?" The answer is almost always yes, and that's enough.
-- **[Notice that I'm noticing](#chapter-25-the-noticing-self).** Inside any mindfulness practice I'm already doing — breath, feet on the floor, dropping anchor — slip in the line "and there's a part of me noticing this." One sentence, done inside what I was already doing. This is Harris's "planting seeds" move and it's the cheapest way to build the observing self.
+- **[Notice that I'm noticing](#chapter-25-the-noticing-self).** Inside any mindfulness practice I'm already doing — breath, feet on the floor, dropping anchor — slip in the line "and there's a part of me noticing this." One sentence, done inside what I was already doing. The "planting seeds" move — cheapest way to drop into kernel mode.
 - **[Talking and Listening, 30 seconds](#chapter-25-the-noticing-self).** Close my eyes and silently listen to what my mind is saying. When thoughts stop, keep listening until they start again. The point is the distinction that falls out of it: there's a part that talks and a part that listens.
 - **[Brief stage-show step-back, a few times a day](#chapter-25-the-noticing-self).** 20 seconds to drop in, notice the whole stage show (thoughts, feelings, sensations, room, body), notice it's changed from the last check-in, notice the part watching it has not.
 - **[The full Continuous You once every week or two](#chapter-25-the-noticing-self).** The 15-minute version — five instructions applied to breath, thoughts, body, feelings, roles, ending with Sky and Weather. For when I need the heavy lift, not the daily maintenance dose. And then don't analyze it afterward.
 - **[Good Self / Bad Self when I'm hooked on self-concept](#chapter-25-the-noticing-self).** Write out the bad-self story on one side of a card, the good-self story on the other. Hold either side up to my face — notice it blocks everything. Drop it in my lap. The move isn't to argue with the stories; the move is to stop holding them up.
 - **[Leaves on a Stream for rumination](#chapter-15-leaves-streams-clouds-and-sky).** When I'm stuck in a thought loop, imagine a stream with leaves, put each thought on a leaf, and watch it come, stay, and go. Not to wash it away. Just to watch.
 - **[Kind Hand for physical pain](#chapter-18-hold-yourself-kindly).** When a feeling has a strong physical location (tight chest, churning gut), place a hand on that spot and imagine warmth flowing from it. Not to dissolve the feeling. To hold it kindly.
-- **[Before hard conversations, declare values silently](#chapter-19-know-what-matters).** "I want to be honest, calm, and kind here." Harris calls this pre-commitment. It pre-loads the posture before anxiety can hijack it.
+- **[Before hard conversations, declare values silently](#chapter-19-know-what-matters).** "I want to be honest, calm, and kind here." Pre-commitment — it pre-loads the posture before anxiety can hijack it.
 - **[Track towards-moves and away-moves weekly](#chapter-1-the-human-challenge).** Simple journal: what did I do this week that moved toward the life I want, and what moved away? No judgment, just data.
 - **[_"Act guided by values, not by feelings."_](#chapter-20-what-if-nothing-matters)** When I don't feel like doing the thing, I don't need to manufacture a feeling. I just need to ask: does doing this take me toward the person I want to be?
 
@@ -1576,6 +1627,17 @@ Every skill I take for granted — reading, writing, walking, talking, using a k
 > The more you apply ACT to yourself, the better you'll be able to do it with others. If you aren't using it on yourself, you won't do it well with others.
 
 I'm not a therapist and I may never be. But the proposition that the only way to offer any of this to anyone else is to be living it myself lands hard. The whole book collapses into that line. Every metaphor, every exercise, every framework is a tool I can use on myself starting today. And the Churchill quote is the operating system: I'm going to fumble the Continuous You exercise, forget the HARD acronym in the moment I need it most, over-identify with a thought I thought I was defused from, and fail to drop anchor when the storm hits. Fine. Failure to failure without loss of enthusiasm. That's the whole journey.
+
+## A note on sources
+
+Most of this framework comes from Russ Harris's _ACT Made Simple_ — the practitioner book therapists read to learn ACT. I've translated the ideas into my own language and examples; where the phrasing is Harris's and the exact wording matters, I name him. Everywhere else, I treat the material as mine to use and adapt. The translation table near the top is the honest map back to the clinical vocabulary if you want to read the source directly.
+
+Harris has two other books I'd recommend depending on where you are:
+
+- **_The Happiness Trap_** — Harris's lay-reader self-help book. If _ACT Made Simple_ feels too clinical, start here. Same framework, no therapist-speak.
+- **_ACT with Love_** — Harris applied to relationships. If the "handle my own head" work keeps colliding with a specific relationship (partner, co-founder, family), this is the one. See also my partner-difficulty notes at [/partner-trouble](/partner-trouble), which leans on _ACT with Love_ directly.
+
+{% include amazon.html asin="1645471160;1572246227" %}
 
 ## Related Posts
 
