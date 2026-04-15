@@ -82,4 +82,26 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add back-links.json
           git commit -m "chore: update backlinks [skip ci]"
-          git push
+
+          # back-links.json is fully derived — on push rejection, take our
+          # freshly-built version on top of latest main. No merge logic needed.
+          for attempt in 1 2 3; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push attempt $attempt rejected — re-applying back-links.json onto origin/main"
+            OUR_SHA=$(git rev-parse HEAD)
+            git fetch origin main
+            git reset --hard origin/main
+            git checkout "$OUR_SHA" -- back-links.json
+            # checkout staged the file; --cached compares index (our version) to
+            # HEAD (origin/main). Plain `git diff` would compare working tree to
+            # index — both updated by checkout — and falsely report no diff.
+            if git diff --cached --quiet -- back-links.json; then
+              echo "back-links.json already matches origin/main"
+              exit 0
+            fi
+            git commit -m "chore: update backlinks [skip ci]"
+          done
+          echo "Failed to push after 3 attempts" >&2
+          exit 1
