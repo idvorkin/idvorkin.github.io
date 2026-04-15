@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ACT aka Applied Buddhism"
+title: "ACT: Acceptance and Commitment Therapy, or Reverse-Engineered Buddhism"
 author: "Igor Dvorkin"
 permalink: /act
 tags:
