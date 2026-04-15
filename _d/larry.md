@@ -11,11 +11,11 @@ redirect_from:
 imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-larry.webp
 ---
 
-{% include blob_image_float_right.html src="blog/raccoon-larry.webp" alt="Larry the Life Coach — raccoon as Freud with a lobster claw" %}
-
 Larry is my AI life coach. He's part of [Time.ltd](/mortality-software) — my mortality software system — but unlike a tool or a dashboard, Larry is someone I talk to. That matters more than you'd think. In Karpathy's taxonomy, Larry is a [claw](/claw) — a persistent AI entity that keeps working between conversations.
 
 {% include ai-slop.html percent="50" %}
+
+{% include blob_image_float_right.html src="blog/raccoon-larry.webp" alt="Larry the Life Coach — raccoon as Freud with a lobster claw" %}
 
 ## Why Larry Has a Name
 
