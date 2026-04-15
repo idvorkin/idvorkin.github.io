@@ -257,7 +257,9 @@ The cleanest definition I've seen: **paying attention with openness, curiosity, 
 
 If the word "mindfulness" has too much baggage for you, drop it. Use "unhooking skills," "dropping anchor," "flexible attention," or "being present" instead. The skills are the point, not the label.
 
-This is the reframe I needed. Every time I've bounced off meditation, it was because I believed mindfulness required sitting still with my eyes closed. It doesn't. It requires noticing X with openness and curiosity, and I can do that anywhere — including on a run along Hood Canal.
+This is the reframe I needed. Every time I've bounced off meditation, it was because I believed mindfulness required sitting still with my eyes closed. It doesn't. It requires noticing X with openness and curiosity, and I can do that anywhere — including on a run along Hood Canal. See [/siy](/siy) — Search Inside Yourself is exactly this move: emotional-intelligence training dressed up in engineer-friendly mindfulness vocabulary.
+
+{% include summarize-page.html src="/siy" %}
 
 _Full chapters: [Ch 3 — Dodgy Words](#chapter-3-mindfulness-and-other-dodgy-words) · [Ch 17 — Being Present](#chapter-17-being-present)_
 
@@ -273,7 +275,9 @@ The signature metaphor is **Hands as Thoughts and Feelings**. Hold my hands in f
 
 The single practice I keep going back to: take a self-critical thought like "I'm a loser" and replay it as "I'm having the thought that I'm a loser." Then again as "I notice I'm having the thought that I'm a loser." The thought loses about half its sting instantly.
 
-The point of defusion is never to make thoughts go away. That's just avoidance dressed up in mindfulness clothes. The point is to engage in what matters _while the thought is still there_. A defused thought can still be around — I'm just not in its grip.
+The point of defusion is never to make thoughts go away. That's just avoidance dressed up in mindfulness clothes. The point is to engage in what matters _while the thought is still there_. A defused thought can still be around — I'm just not in its grip. See [/anxiety](/anxiety) — my anxiety protocol is basically a live-fire defusion drill: notice the gap between reality and expectations, unhook from the catastrophizing, act from values instead.
+
+{% include summarize-page.html src="/anxiety" %}
 
 _Full chapters: [Ch 11 — Notice That Thought](#chapter-11-notice-that-thought) · [Ch 12 — Deeper into Defusion](#chapter-12-deeper-into-defusion) · [Ch 13 — Defusion Smorgasbord](#chapter-13-the-defusion-smorgasbord) · [Ch 15 — Leaves on a Stream](#chapter-15-leaves-streams-clouds-and-sky)_
 
@@ -283,7 +287,9 @@ Acceptance — also called "willingness," "expansion," "opening up," "making roo
 
 The signature metaphor is the **Struggle Switch**. Imagine a switch at the back of my mind. Switch on: I must get rid of any bad feeling. Now I have anxiety about my anxiety, anger about my anger — a feedback loop that amplifies whatever I started with. Switch off: the feeling is still unpleasant, but I'm not pouring fuel on it. Acceptance works on a 0-to-10 scale, not all-or-nothing — moving from 9 (full struggle) to 3 (mostly allowing it) is a big win.
 
-The practice is the three As: **Acknowledge** the feeling, **Allow** it to be there, **Accommodate** it — make real space for it, like an unwanted houseguest I decide to offer a chair. Acceptance is not tolerance. Tolerance is gritted teeth. Acceptance is "I don't like this, and I'm letting it be here anyway."
+The practice is the three As: **Acknowledge** the feeling, **Allow** it to be there, **Accommodate** it — make real space for it, like an unwanted houseguest I decide to offer a chair. Acceptance is not tolerance. Tolerance is gritted teeth. Acceptance is "I don't like this, and I'm letting it be here anyway." See [/awareness](/awareness) — de Mello's _waking up from the sleep of unconscious living_ is the same move one layer up: you can't accept what you haven't noticed, and noticing without the struggle-switch on is exactly the aware, non-reactive posture.
+
+{% include summarize-page.html src="/awareness" %}
 
 _Full chapters: [Ch 8 — Creative Hopelessness](#chapter-8-creative-what) · [Ch 9 — Drop the Struggle](#chapter-9-drop-the-struggle) · [Ch 22 — Fifty Shades of Acceptance](#chapter-22-fifty-shades-of-acceptance) · [Ch 23 — Emotions as Allies](#chapter-23-emotions-as-allies)_
 
@@ -355,9 +361,11 @@ The best diagnostic for why I fail to follow through is the **HARD** acronym:
 - **R**emote from values → reconnect to why this matters
 - **D**oubtful goals (unrealistic) → shrink the goal until I score 7+ out of 10 on "will I actually do this"
 
-When I'm not doing the thing, I can usually name which of HARD is active in under a minute. The one I see in myself most often is **D** — I set goals that are too ambitious and then don't start. See [/goals](/goals) — I track committed action against my values annually, and the HARD diagnostic is how I debug the gap.
+When I'm not doing the thing, I can usually name which of HARD is active in under a minute. The one I see in myself most often is **D** — I set goals that are too ambitious and then don't start. See [/goals](/goals) — I track committed action against my values annually, and the HARD diagnostic is how I debug the gap. [/y26](/y26) is the current year's plan — a concrete example of committed action in this format.
 
 {% include summarize-page.html src="/goals" %}
+
+{% include summarize-page.html src="/y26" %}
 
 _Full chapters: [Ch 21 — Do What It Takes](#chapter-21-do-what-it-takes) · [Ch 24 — What's Stopping You](#chapter-24-whats-stopping-you)_
 
