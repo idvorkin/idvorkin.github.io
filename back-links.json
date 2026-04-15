@@ -570,7 +570,7 @@
             "incoming_links": [
                 "/changelog"
             ],
-            "last_modified": "2026-04-15T03:00:21.471800+00:00",
+            "last_modified": "2026-04-15T03:17:36.331824+00:00",
             "markdown_path": "_d/act.md",
             "outgoing_links": [
                 "/addiction",
@@ -592,7 +592,8 @@
                 "/mortality-software",
                 "/partner-trouble",
                 "/shame",
-                "/siy"
+                "/siy",
+                "/y26"
             ],
             "redirect_url": "",
             "title": "ACT aka Applied Buddhism",
@@ -7210,7 +7211,7 @@
             "doc_size": 29000,
             "file_path": "_site/y26.html",
             "incoming_links": [
-                "/changelog"
+                "/act"
             ],
             "last_modified": "2026-03-15T13:01:45-07:00",
             "markdown_path": "_d/y2026.md",
