@@ -1073,18 +1073,20 @@
         },
         "/ai-operator": {
             "description": "Using AI well is a skill, like driving a car or operating heavy machinery. Nobody hands you the keys to a forklift and says “figure it out.” There’s a license, training, and hard-won intuition about what the machine can and can’t do. AI is the same — except most of us skipped the training, there is no manual, and we’re writing the rules as we go.\n\n",
-            "doc_size": 27000,
+            "doc_size": 28000,
             "file_path": "_site/ai-operator.html",
             "incoming_links": [
                 "/changelog",
                 "/how-igor-chops"
             ],
-            "last_modified": "2026-04-16T12:46:01.788302+00:00",
+            "last_modified": "2026-04-16T16:23:10.553487+00:00",
             "markdown_path": "_d/ai-operator.md",
             "outgoing_links": [
                 "/ai-cockpit",
+                "/ai-relationships",
                 "/balloon",
-                "/four-healths"
+                "/four-healths",
+                "/larry"
             ],
             "redirect_url": "",
             "title": "The AI Operator: Learning to Drive the Machine",
@@ -1111,6 +1113,7 @@
             "file_path": "_site/ai-relationships.html",
             "incoming_links": [
                 "/ai",
+                "/ai-operator",
                 "/changelog"
             ],
             "last_modified": "2026-04-16T16:17:28.942731+00:00",
@@ -3905,6 +3908,7 @@
             "file_path": "_site/larry.html",
             "incoming_links": [
                 "/ai-feed",
+                "/ai-operator",
                 "/ai-relationships",
                 "/ai-second-brain",
                 "/changelog",

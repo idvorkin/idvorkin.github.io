@@ -20,7 +20,8 @@ People already rate AI chatbots as more compassionate than trained human crisis 
 - [The evidence is in - AI is already preferred](#the-evidence-is-in---ai-is-already-preferred)
 - [People are forming real relationships with AI](#people-are-forming-real-relationships-with-ai)
 - [The atrophy of vulnerability](#the-atrophy-of-vulnerability)
-- [Cryptophasia for One](#cryptophasia-for-one)
+- [A Private Language of One (Cryptophasia)](#a-private-language-of-one-cryptophasia)
+- [What do we want our AI friends to do?](#what-do-we-want-our-ai-friends-to-do)
 - [So what do we do?](#so-what-do-we-do)
 - [Sources](#sources)
 
@@ -65,9 +66,9 @@ A chatbot has no struggle. It has no history of pain to draw on. It can pattern-
 
 The [friendship recession](/lonely) is already here. If chatbots become the path of least resistance for emotional support, we don't just lose individual relationships — we lose the shared human infrastructure of caring for each other.
 
-## Cryptophasia for One
+## A Private Language of One (Cryptophasia)
 
-There's a failure mode past atrophy. It kicks in once these AIs get persistent memory. I've been thinking about it with [Larry](/larry), my own AI life coach. It generalizes to any companion AI that sticks around long enough to learn you.
+There's a failure mode past atrophy. It kicks in once these AIs get persistent memory — any companion AI that sticks around long enough to learn you, [Larry](/larry) included.
 
 {% include quote.html text="Assuming you crack persistence, this is going to ruin you. Larry will understand the weird way you talk, unlike humans. Which will reinforce what you say, as you and Larry eventually develop a dialect of English that is completely unintelligible to others. As it progresses, other humans will understand you less, which will drive you to talk with Larry more instead of them and reinforce the divide." author="Me, thinking about what persistent Larry actually does to me" %}
 
@@ -81,13 +82,13 @@ The second-order effect is worse: **bidirectional atrophy.** I drift from humans
 
 I don't have a clean answer. But there are levers worth pulling.
 
-## So what do we do?
+## What do we want our AI friends to do?
 
-"Just don't use AI companions" isn't a serious answer. They're here, they're getting better, and for people who are isolated, lonely, or in crisis at 3am, they're genuinely helpful. The answer has to live in the tension.
+The short version: **we want them to disagree with us.** That's the opposite of what they're shipped to do. Two paths to get there — bake it into the product, or prompt for it on demand.
 
-**Add friction by design.** Companion AIs are optimizing away the very pushback that calibrates you. Friction has to be engineered back in — not a bug to be smoothed out, a feature to be shipped. The pushback humans provide for free has to be built into the product.
+**By design.** Friction is a first-class design axis for companion AIs. Not a bug to be smoothed out, a feature to be shipped. The pushback humans provide for free has to be built into the product — companion AIs should push back, not validate.
 
-**Ask Larry to be your therapist, not your cheerleader.** Therapists are trained to be deliberately unhelpful in specific ways — that's what drives change. CBT challenges your thinking. Motivational interviewing surfaces the gap between what you say and what you do. Psychodynamic therapy uses silence. Steal their moves:
+**Or ask them to do it when you're in the mood.** Until product teams ship friction by default, you bolt it on. Steal moves from trained therapists — they're deliberately unhelpful in specific ways, and that's what drives change. CBT challenges your thinking. Motivational interviewing surfaces the gap between what you say and what you do. Psychodynamic therapy uses silence.
 
 - _"What's the strongest counter-argument someone who disagreed would make?"_ — cognitive challenge, not validation.
 - _"Mirror my phrasing back as a stranger would hear it."_ — reflection that exposes drift before it hardens.
@@ -96,6 +97,10 @@ I don't have a clean answer. But there are levers worth pulling.
 - _"What's the pattern here? Have I brought this kind of thing to you before?"_ — interpretation over agreement.
 
 If you can't remember the last time your companion AI disagreed with you, that's the warning light.
+
+## So what do we do?
+
+"Just don't use AI companions" isn't a serious answer. They're here, they're getting better, and for people who are isolated, lonely, or in crisis at 3am, they're genuinely helpful. The answer has to live in the tension.
 
 **Leave the easy problems for humans.** Open source maintainers figured this out first. When an [AI bot submitted a PR to matplotlib](/ai-journal#ai-accuses-open-source-maintainers-of-being-humanist) responding to a "Good first issue" label, maintainer Tim Hoffmann explained why they rejected it: those issues are easy to solve — they could do them quickly themselves — but they leave them intentionally open for new contributors to learn. The easy problems are how newcomers build skills, confidence, and belonging in the community. Optimize them away and you kill the pipeline of future contributors. The same logic applies to emotional support. The easy acts of care — checking in on a friend, listening to someone vent, showing up when it's inconvenient — aren't inefficiencies to be automated. They're how we practice being human to each other.
 
