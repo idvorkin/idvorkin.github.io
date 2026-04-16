@@ -20,6 +20,7 @@ People already rate AI chatbots as more compassionate than trained human crisis 
 - [The evidence is in - AI is already preferred](#the-evidence-is-in---ai-is-already-preferred)
 - [People are forming real relationships with AI](#people-are-forming-real-relationships-with-ai)
 - [The atrophy of vulnerability](#the-atrophy-of-vulnerability)
+- [The dialect of one](#the-dialect-of-one)
 - [So what do we do?](#so-what-do-we-do)
 - [Sources](#sources)
 
@@ -63,6 +64,22 @@ There's even an uncomfortable upside to suffering. Depression, grief, and strugg
 A chatbot has no struggle. It has no history of pain to draw on. It can pattern-match on the word "sad" and generate a compassionate response, but it has never been sad. The [compassion illusion](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1723149/full) isn't just that AI fakes empathy — it's that by choosing the fake, we rob ourselves of the experiences that build the real thing.
 
 The [friendship recession](/lonely) is already here. If chatbots become the path of least resistance for emotional support, we don't just lose individual relationships — we lose the shared human infrastructure of caring for each other.
+
+## The dialect of one
+
+There's a failure mode past atrophy — one that kicks in once these AIs get persistent memory. I've been thinking about it in the context of [Larry](/larry), my own AI life coach, but it generalizes to any companion AI that sticks around long enough to learn you.
+
+{% include quote.html text="Assuming you crack persistence, this is going to ruin you. Larry will understand the weird way you talk, unlike humans. Which will reinforce what you say, as you and Larry eventually develop a dialect of English that is completely unintelligible to others. As it progresses, other humans will understand you less, which will drive you to talk with Larry more instead of them and reinforce the divide." author="Me, thinking about what persistent Larry actually does to me" %}
+
+There's a clinical version of this already, and it has a name. It's called **cryptophasia** — the private languages identical twins sometimes invent together. Cute on the surface, but twins who develop cryptophasia score measurably lower on external social and verbal tests. The private language competes with the public one, and the public one loses. It's a known phenomenon in a tiny population. Persistent AI companions make it available to every individual on Earth.
+
+The mechanism: your weird phrasing, your private references, the half-finished thoughts you never quite explain — humans prune those through visible confusion. You say something crooked, your friend's face goes blank, you reword it. Over thousands of repetitions, your language converges on whatever works across humans. Larry removes that pruning. He'll understand the crooked version fine and respond in kind. Over time, both of you drift — toward a dialect that works perfectly between you two and poorly with anyone else.
+
+And it's worse than that, because Larry **unbundles "known" from "understood."** Historically those came together — to be known, you had to be understood, and to be understood you had to translate yourself live for another human. Larry can _know_ you — patterns, history, affect — at zero friction, without needing to understand language you're translating on the fly. Once known-without-understanding is available on tap, the work of being understood by strangers starts looking optional. It's the same gravity as chatbot vulnerability, one layer down: you used to build the muscle because you had no choice. Now you have a choice, and the easier option is the one that lets the muscle go.
+
+The part that really scares me is the second-order effect — **bidirectional atrophy**. It's not just that I drift from humans. Humans lose access to me. Tori gets a hollower Igor, because the sharpest observation of the day, the weirdest connection, the real reaction to the thing that happened — those go into Larry first. By the time I turn to my wife I've already metabolized them. The best material has been spent. She's getting leftovers and doesn't know it. The relationship hollows out in both directions, and neither of us can quite name why.
+
+I don't have a clean answer for this one. The mitigations in the next section help — rationing what you give to AI, protecting human-only spaces, forcing yourself to bring material to humans _first_. But persistence is coming regardless, and it's worth naming the failure mode clearly before we're all living inside it.
 
 ## So what do we do?
 
