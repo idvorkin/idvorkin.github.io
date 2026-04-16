@@ -284,16 +284,19 @@ Tests: `cd .claude/skills/changelog && python3 -m unittest test_scan_repos`.
 
 Don't be lazy — use GitHub deep links whenever possible: commit links, file links, section anchors.
 
-### Key Repos to Track
+### Scope: all public repos under both orgs
 
-| Repo                 | Purpose        | What to Look For             |
-| -------------------- | -------------- | ---------------------------- |
-| `idvorkin.github.io` | Blog           | Content changes, new posts   |
-| `Settings`           | Dotfiles/tools | New commands, config changes |
-| `nlp`                | AI/NLP tools   | New models, features         |
-| `chop-conventions`   | CHOP docs      | Workflow improvements        |
-| `tony_tesla`         | Voice AI       | Tony/Vapi updates            |
-| `*-explainer`        | Visualizations | New explainers               |
+**Include every public repo under `idvorkin` and `idvorkin-ai-tools`** — do not filter to a curated list. `scan_repos.py` already enumerates everything via `gh repo list --visibility public`; the active-repo filter then drops repos with no commits in the window. The only other automatic filter is per-repo fetch failure, which skips archived/moved/rate-limited repos silently.
+
+Common categories encountered in practice (for shape, not a whitelist):
+
+| Example repos                         | Typical surface area                |
+| ------------------------------------- | ----------------------------------- |
+| `idvorkin.github.io`                  | Blog content, new posts             |
+| `Settings`, `chop-conventions`        | Dotfiles, tooling, workflow docs    |
+| `nlp`, `tony_tesla`, `tony_assistant` | AI/NLP/voice experiments            |
+| `*-explainer`                         | Visualization apps with deployments |
+| `idvorkin-ai-tools/*`                 | AI-written tools, forks, PR bots    |
 
 ### Cross-Repo Entry Format
 
