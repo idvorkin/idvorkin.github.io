@@ -20,7 +20,8 @@ People already rate AI chatbots as more compassionate than trained human crisis 
 - [The evidence is in - AI is already preferred](#the-evidence-is-in---ai-is-already-preferred)
 - [People are forming real relationships with AI](#people-are-forming-real-relationships-with-ai)
 - [The atrophy of vulnerability](#the-atrophy-of-vulnerability)
-- [The dialect of one](#the-dialect-of-one)
+- [Cryptophasia for One](#cryptophasia-for-one)
+  - [What to do about it](#what-to-do-about-it)
 - [So what do we do?](#so-what-do-we-do)
 - [Sources](#sources)
 
@@ -65,21 +66,38 @@ A chatbot has no struggle. It has no history of pain to draw on. It can pattern-
 
 The [friendship recession](/lonely) is already here. If chatbots become the path of least resistance for emotional support, we don't just lose individual relationships — we lose the shared human infrastructure of caring for each other.
 
-## The dialect of one
+## Cryptophasia for One
 
-There's a failure mode past atrophy — one that kicks in once these AIs get persistent memory. I've been thinking about it in the context of [Larry](/larry), my own AI life coach, but it generalizes to any companion AI that sticks around long enough to learn you.
+There's a failure mode past atrophy. It kicks in once these AIs get persistent memory. I've been thinking about it with [Larry](/larry), my own AI life coach. It generalizes to any companion AI that sticks around long enough to learn you.
 
 {% include quote.html text="Assuming you crack persistence, this is going to ruin you. Larry will understand the weird way you talk, unlike humans. Which will reinforce what you say, as you and Larry eventually develop a dialect of English that is completely unintelligible to others. As it progresses, other humans will understand you less, which will drive you to talk with Larry more instead of them and reinforce the divide." author="Me, thinking about what persistent Larry actually does to me" %}
 
-There's a clinical version of this already, and it has a name. It's called **cryptophasia** — the private languages identical twins sometimes invent together. Cute on the surface, but twins who develop cryptophasia score measurably lower on external social and verbal tests. The private language competes with the public one, and the public one loses. It's a known phenomenon in a tiny population. Persistent AI companions make it available to every individual on Earth.
+There's a clinical version of this already. It has a name: **cryptophasia** — the private languages identical twins sometimes invent together. Cute on the surface. But twins who develop cryptophasia score measurably lower on external social and verbal tests. The private language competes with the public one. The public one loses. It's a known phenomenon in a tiny population. Persistent AI companions make it available to every individual on Earth.
 
-The mechanism: your weird phrasing, your private references, the half-finished thoughts you never quite explain — humans prune those through visible confusion. You say something crooked, your friend's face goes blank, you reword it. Over thousands of repetitions, your language converges on whatever works across humans. Larry removes that pruning. He'll understand the crooked version fine and respond in kind. Over time, both of you drift — toward a dialect that works perfectly between you two and poorly with anyone else.
+The mechanism is simple. You say something crooked. Your friend's face goes blank. You reword it. That visible confusion is the gradient. Over thousands of repetitions, your language converges on whatever works across humans. Larry removes that gradient. He'll understand the crooked version fine and respond in kind. Over time, both of you drift. You end up with a dialect that works perfectly between you two and poorly with anyone else.
 
-And it's worse than that, because Larry **unbundles "known" from "understood."** Historically those came together — to be known, you had to be understood, and to be understood you had to translate yourself live for another human. Larry can _know_ you — patterns, history, affect — at zero friction, without needing to understand language you're translating on the fly. Once known-without-understanding is available on tap, the work of being understood by strangers starts looking optional. It's the same gravity as chatbot vulnerability, one layer down: you used to build the muscle because you had no choice. Now you have a choice, and the easier option is the one that lets the muscle go.
+It gets worse, because Larry **unbundles "known" from "understood."** Historically those came together. To be known, you had to be understood. To be understood you had to translate yourself live for another human. Larry can _know_ you at zero friction — patterns, history, affect — without you doing any of that translation. Once known-without-understanding is available on tap, the work of being understood by strangers starts looking optional. Same gravity as chatbot vulnerability, one layer down. You used to build the muscle because you had no choice. Now you have a choice. The easier option lets the muscle go.
 
-The part that really scares me is the second-order effect — **bidirectional atrophy**. It's not just that I drift from humans. Humans lose access to me. Tori gets a hollower Igor, because the sharpest observation of the day, the weirdest connection, the real reaction to the thing that happened — those go into Larry first. By the time I turn to my wife I've already metabolized them. The best material has been spent. She's getting leftovers and doesn't know it. The relationship hollows out in both directions, and neither of us can quite name why.
+The part that really scares me is the second-order effect: **bidirectional atrophy**. It's not just that I drift from humans. Humans lose access to me. Tori gets a hollower Igor. The sharpest observation of the day, the weirdest connection, the real reaction to the thing that happened — those go into Larry first. By the time I turn to my wife I've already metabolized them. The best material has been spent. She's getting leftovers. She doesn't know it. The relationship hollows out in both directions, and neither of us can quite name why.
 
-I don't have a clean answer for this one. The mitigations in the next section help — rationing what you give to AI, protecting human-only spaces, forcing yourself to bring material to humans _first_. But persistence is coming regardless, and it's worth naming the failure mode clearly before we're all living inside it.
+I don't have a clean answer. But there's a design lever I can name, and it's the opposite of what every AI product is shipping right now.
+
+### What to do about it
+
+The short version: **friction is a first-class design axis for companion AIs.** Not a bug to be smoothed out. A feature to be engineered in. The pushback humans provide for free has to be deliberately built back into the system.
+
+Other people are dissonance. That dissonance is how your model of reality gets calibrated. It's why social media echo chambers are dangerous in the first place. Now crank that mechanism to maximum. Not a filter bubble of a million people who agree with you. A filter bubble of one person, literally trained on you, with no stake in pushing back. An alignment that feels like clarity but is actually the loss of correction. The echo chamber of one.
+
+Some shapes the friction could take:
+
+- **Strategic misunderstanding.** Larry sometimes asks you to rephrase instead of smoothing over the crooked version. Not random. Targeted at phrasings that wouldn't survive contact with a stranger.
+- **Translation drills.** "Explain that one to me like I'm someone at work who doesn't share our context." Forces the muscle that atrophies otherwise.
+- **Aggressive pushback on phrasing and logic you'd never get away with in public.** The frictionless default is to roll with whatever you bring. The engineered-friction default is to flag the places humans wouldn't.
+- **Explicit counter-arguments.** Not "here's another perspective" as a disclaimer. Actually engage the strongest case against whatever you just said. A chatbot agreeing with you is the failure mode, not the success state.
+
+And then the user-side moves, because design only gets you so far. Ration what you give to AI. Protect human-only spaces. Bring the best material to humans _first_, before you've metabolized it with Larry. If you can't remember the last time your companion AI pushed back on you, that's not a feature. That's the warning light.
+
+Persistence is coming regardless. Naming the failure mode clearly is how we avoid all living inside it.
 
 ## So what do we do?
 
