@@ -940,8 +940,12 @@ function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): voi
     }
   };
 
-  // Add slight delay to avoid immediate closing
+  // Add slight delay to avoid immediate closing. Guard against `document`
+  // being torn down before the timeout fires — vitest + happy-dom tears
+  // down the DOM between tests, and a late-firing setTimeout from an
+  // earlier test would throw `ReferenceError: document is not defined`.
   const timeoutId = setTimeout(() => {
+    if (typeof document === "undefined") return;
     document.addEventListener("click", handleOutsideClick, true);
     cleanupFunctions.push(() => document.removeEventListener("click", handleOutsideClick, true));
   }, 100);
