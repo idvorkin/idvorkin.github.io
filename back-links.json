@@ -1079,7 +1079,7 @@
                 "/changelog",
                 "/how-igor-chops"
             ],
-            "last_modified": "2026-04-13T04:14:59+00:00",
+            "last_modified": "2026-04-16T12:46:01.788302+00:00",
             "markdown_path": "_d/ai-operator.md",
             "outgoing_links": [
                 "/ai-cockpit",
@@ -1113,7 +1113,7 @@
                 "/ai",
                 "/changelog"
             ],
-            "last_modified": "2026-04-05T21:39:38.088693+00:00",
+            "last_modified": "2026-04-16T12:46:01.788302+00:00",
             "markdown_path": "_d/ai-relationships.md",
             "outgoing_links": [
                 "/ai-bestie",
