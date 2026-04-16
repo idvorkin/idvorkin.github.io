@@ -20,6 +20,21 @@
 
 set -euo pipefail
 
+# --- preflight --------------------------------------------------------------
+# Fail fast with a helpful hint if required tools are missing, rather than
+# erroring out mid-pipeline with a cryptic "command not found".
+missing=()
+for tool in pandoc python3; do
+    if ! command -v "${tool}" >/dev/null 2>&1; then
+        missing+=("${tool}")
+    fi
+done
+if [ "${#missing[@]}" -gt 0 ]; then
+    echo "error: missing required tool(s): ${missing[*]}" >&2
+    echo "       install with: apt install ${missing[*]}   (or 'brew install ${missing[*]}' on macOS)" >&2
+    exit 127
+fi
+
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 DIST="${ROOT}/dist"
 BUILD="${DIST}/epub-build"
@@ -28,7 +43,24 @@ OUT="${DIST}/idvork-collected.epub"
 mkdir -p "${BUILD}"
 rm -f "${BUILD}"/*.md 2>/dev/null || true
 
-TODAY="$(date +%Y-%m-%d)"
+# Deterministic build metadata. We freeze the EPUB's modification timestamp
+# (pandoc honors SOURCE_DATE_EPOCH) and derive a stable UUID from the staged
+# content so re-running `make epub` on the same inputs produces a
+# byte-identical artifact — handy for cache keys, attachment dedup, etc.
+# Callers can still override either by exporting them beforehand.
+if [ -z "${SOURCE_DATE_EPOCH:-}" ]; then
+    # Prefer the newest source mtime; fall back to a fixed epoch if the
+    # find pipeline fails for any reason.
+    SOURCE_DATE_EPOCH="$(
+        find "${ROOT}/_d" "${ROOT}/_posts" -maxdepth 1 -name '*.md' -printf '%T@\n' 2>/dev/null \
+            | sort -n \
+            | tail -1 \
+            | cut -d. -f1
+    )"
+    : "${SOURCE_DATE_EPOCH:=0}"
+    export SOURCE_DATE_EPOCH
+fi
+TODAY="$(date -u -d "@${SOURCE_DATE_EPOCH}" +%Y-%m-%d 2>/dev/null || date +%Y-%m-%d)"
 
 # Stage 1 — normalize every source file: strip Liquid, extract a sort date,
 # rewrite frontmatter with a pandoc-friendly chapter title, emit into BUILD.
@@ -39,6 +71,14 @@ root = pathlib.Path(sys.argv[1])
 build = pathlib.Path(sys.argv[2])
 
 SOURCES = [root / "_d", root / "_posts"]
+
+# Files Jekyll excludes via _config.yml. Mirror the list here so the EPUB
+# doesn't ship files that the site itself hides. Keep in sync with the
+# `exclude:` block in _config.yml (specifically its `_d/*.md` entries).
+JEKYLL_EXCLUDES = {
+    "_d/positive-mitzvahs.md",
+    "_d/negative-mitzvahs.md",
+}
 
 # Liquid tag/expression stripper.
 #   {% ... %}   — tag: remove entirely (may span lines for `raw`/`highlight` blocks)
@@ -97,6 +137,9 @@ for src_dir in SOURCES:
     if not src_dir.is_dir():
         continue
     for md in sorted(src_dir.glob("*.md")):
+        rel = md.relative_to(root).as_posix()
+        if rel in JEKYLL_EXCLUDES:
+            continue
         try:
             raw = md.read_text(encoding="utf-8")
         except Exception as e:
@@ -184,6 +227,16 @@ START_TS=$(date +%s)
 # Use find+sort for a stable, space-safe list.
 mapfile -t CHAPTERS < <(find "${BUILD}" -maxdepth 1 -name '*.md' | sort)
 
+# Derive a stable UUID from the content hash of the staged chapters, so
+# identical inputs yield an identical EPUB. Pandoc would otherwise generate
+# a fresh random UUID per run. Callers can override via EPUB_IDENTIFIER.
+if [ -z "${EPUB_IDENTIFIER:-}" ]; then
+    CONTENT_HASH=$(cat "${CHAPTERS[@]}" | sha256sum | cut -c1-32)
+    # Format as a UUID-shaped string. Not RFC-4122 v4/v5 strictly, but
+    # readers just want a stable unique identifier.
+    EPUB_IDENTIFIER="urn:uuid:${CONTENT_HASH:0:8}-${CONTENT_HASH:8:4}-${CONTENT_HASH:12:4}-${CONTENT_HASH:16:4}-${CONTENT_HASH:20:12}"
+fi
+
 pandoc \
     --from=markdown \
     --to=epub3 \
@@ -194,9 +247,11 @@ pandoc \
     --metadata=author:"Igor Dvorkin" \
     --metadata=language:en \
     --metadata=date:"${TODAY}" \
+    --metadata=identifier:"${EPUB_IDENTIFIER}" \
     --output="${OUT}" \
     "${CHAPTERS[@]}"
 
 END_TS=$(date +%s)
 echo "==> wrote ${OUT}  (pandoc took $((END_TS - START_TS))s)"
-ls -lh "${OUT}" | awk '{print "    size:",$5}'
+SIZE=$(stat -c '%s' "${OUT}" 2>/dev/null || stat -f '%z' "${OUT}" 2>/dev/null || echo "?")
+echo "    size: ${SIZE} bytes"
