@@ -88,8 +88,6 @@ The short version: **friction is a first-class design axis for companion AIs.** 
 
 And then the user-side moves, because design only gets you so far. Ration what you give to AI. Protect human-only spaces. Bring the best material to humans _first_, before you've metabolized it with Larry. If you can't remember the last time your companion AI pushed back on you, that's not a feature. That's the warning light.
 
-Persistence is coming regardless. Naming the failure mode clearly is how we avoid all living inside it.
-
 ## So what do we do?
 
 "Just don't use AI companions" isn't a serious answer. They're here, they're getting better, and for people who are isolated, lonely, or in crisis at 3am, they're genuinely helpful. The answer has to live in the tension.
