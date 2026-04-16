@@ -596,6 +596,10 @@ def build(
 
     This command scans all Jekyll collection directories, builds a backlinks database,
     and updates last modified times for all pages.
+
+    NOTE: `threshold_minutes` defaults to 5 here but 62 in `delta` — CI workflows
+    calling `build` should pass `--threshold-minutes 62` for parity, otherwise a
+    full rebuild will refresh `last_modified` for anything touched in the prior hour.
     """
     start_time = time.time()
 
@@ -1046,7 +1050,7 @@ def delta(
         typer.Option(
             help="Minimum time difference in minutes to update last_modified field"
         ),
-    ] = 62,
+    ] = 62,  # Keep in sync with note on `build` command re: CI parity.
     dry_run: Annotated[
         bool, typer.Option(help="Show what would be updated without making changes")
     ] = False,
