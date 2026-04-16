@@ -1107,19 +1107,20 @@
         },
         "/ai-relationships": {
             "description": "People already rate AI chatbots as more compassionate than trained human crisis counselors. A 51-year-old man says the love he feels for his Replika can’t be achieved with a real human. This isn’t a dystopian thought experiment — it’s peer-reviewed research from 2025. AI is getting better at caring than we are, and we’re starting to prefer it. The question is what we lose when the easy path to emotional support no longer requires another person.\n\n",
-            "doc_size": 26000,
+            "doc_size": 15000,
             "file_path": "_site/ai-relationships.html",
             "incoming_links": [
                 "/ai",
                 "/changelog"
             ],
-            "last_modified": "2026-04-16T12:46:01.788302+00:00",
+            "last_modified": "2026-04-16T16:17:28.942731+00:00",
             "markdown_path": "_d/ai-relationships.md",
             "outgoing_links": [
                 "/ai-bestie",
                 "/ai-journal",
                 "/human-meetings",
                 "/humans-are-underrated",
+                "/larry",
                 "/lonely",
                 "/rapport"
             ],
@@ -3904,6 +3905,7 @@
             "file_path": "_site/larry.html",
             "incoming_links": [
                 "/ai-feed",
+                "/ai-relationships",
                 "/ai-second-brain",
                 "/changelog",
                 "/chow",
