@@ -5,6 +5,9 @@
 # Temporary directory for repo-specific files
 repo_tmp/
 
+# EPUB build output (derived, see scripts/build-epub.sh)
+dist/
+
 # Beads issue tracking (uses separate beads-metadata branch)
 .beads/
 
