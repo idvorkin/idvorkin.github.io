@@ -92,6 +92,7 @@ The short version: **we want them to disagree with us.** That's the opposite of 
 
 - _"What's the strongest counter-argument someone who disagreed would make?"_ — cognitive challenge, not validation.
 - _"Mirror my phrasing back as a stranger would hear it."_ — reflection that exposes drift before it hardens.
+- _"Say 'sorry, that didn't make sense' when it doesn't. Don't pattern-match through my weird phrasing."_ — restores the human-confusion gradient that normally calibrates your language. Directly attacks the cryptophasia mechanism.
 - _"Don't answer yet — ask me questions until I get there myself."_ — Socratic prompting.
 - _"Where am I contradicting myself? Where does what I say not match what I do?"_ — developing discrepancy (MI).
 - _"What's the pattern here? Have I brought this kind of thing to you before?"_ — interpretation over agreement.
