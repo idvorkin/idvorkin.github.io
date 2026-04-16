@@ -18,31 +18,27 @@ Generate weekly changelog entries for the blog and other GitHub repos with deep 
 
 ## Workflow
 
-### 0. Merge Partial Weeks (pre-execution, mid-week runs only)
+### 0. Merge Partial Weeks (MANDATORY pre-execution step for mid-week runs)
 
-**Purpose:** keep the changelog at one entry per ISO week. Multiple mid-week runs would otherwise fragment the same week into several partial entries (e.g., a Mon-anchored entry from Tuesday's run + a trailing-date entry from Thursday's run, both covering the same week). Before generating new content, detect and merge any partial-week entry for the _current_ ISO week.
+> **⚠️ Do not skip, do not improvise.** If this step says `should_merge: true`, you MUST run `partial_week.py delete` before proceeding to Step 1 — no "I'll just add to the existing entry" shortcuts. Patch-and-add leaves the changelog lopsided (detail mismatch between old and new themes, double-mentions across sections, split-brain structure). Regenerate fresh. The skill author learned this the hard way on 2026-04-16; if you are tempted to patch instead, re-read this paragraph.
 
-**Skip this step entirely if today is Monday** — Monday runs produce the canonical fresh weekly entry, no merging needed.
+**Purpose:** keep the changelog at one entry per ISO week. Multiple mid-week runs would otherwise fragment the same week into several partial entries. Before generating new content, detect and **delete** any partial-week entry for the _current_ ISO week so Steps 1-4 regenerate it from scratch.
 
-**Detection logic** — a partial-week entry exists when the date of the top-most `## Week of YYYY-MM-DD` heading falls within this week's ISO range (Mon through Sun containing today). This catches both shapes:
+#### Step 0.1 — Check
 
-- **Mon-anchored partial** — entry dated 2026-04-13 (Monday), today is 2026-04-16 (Thursday). Entry covers Mon–Tue only; we need Mon–Thu.
-- **Trailing-date partial** — entry dated 2026-04-15 (Wednesday, from a Wed run), today is 2026-04-17 (Friday). Entry covers Mon–Wed; we need Mon–Fri.
-
-Use the `partial_week.py` tool that ships alongside this skill — stdlib-only Python with unit-tested classification logic:
+Run the check subcommand. Parse the JSON.
 
 ```bash
-# 1. Check — emits JSON report, no mutations
 .claude/skills/changelog/partial_week.py check
-
-# 2. Act — if the report has "should_merge": true, delete the partial in place
-.claude/skills/changelog/partial_week.py delete
-
-# Safety flag: preview without writing
-.claude/skills/changelog/partial_week.py delete --dry-run
 ```
 
-The `check` output shape:
+| JSON field value        | Action                                                                                                        |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------- |
+| `"is_monday": true`     | Skip Step 0 entirely — today is the canonical weekly-rollup day. Proceed to Step 1 with default 7-day window. |
+| `"should_merge": false` | No partial entry for this week (or no entries at all). Proceed to Step 1 with default 7-day window.           |
+| `"should_merge": true`  | Partial entry detected. **You are required to run Step 0.2 before touching Step 1.** No exceptions.           |
+
+The `check` output shape when `should_merge: true`:
 
 ```json
 {
@@ -58,23 +54,28 @@ The `check` output shape:
 }
 ```
 
-When `should_merge` is true, use the returned `start_date` as `START_DATE` for Step 1. `delete` removes both the `## Week of YYYY-MM-DD` section body _and_ its indented TOC entries in one shot, then the rest of the workflow regenerates a coherent entry.
+Detection catches both shapes:
 
-Tests live at `.claude/skills/changelog/test_partial_week.py` (stdlib `unittest`, 16 cases covering Monday skip, Mon-anchored partial, trailing-date partial, previous/future weeks, missing/empty changelog, TOC+section deletion, dry-run). Run with:
+- **Mon-anchored partial** — entry dated 2026-04-13 (Mon), today is 2026-04-16 (Thu). Entry covers Mon–Tue only.
+- **Trailing-date partial** — entry dated 2026-04-15 (Wed, from a Wed run), today is 2026-04-17 (Fri). Entry covers Mon–Wed.
+
+#### Step 0.2 — Delete (required when Step 0.1 returns `should_merge: true`)
 
 ```bash
-cd .claude/skills/changelog && python3 -m unittest test_partial_week
+.claude/skills/changelog/partial_week.py delete
 ```
 
-**Merge steps** (when a partial-week entry is detected):
+This removes both the `## Week of YYYY-MM-DD` section body _and_ its indented TOC entries in one shot. Verify the returned JSON shows `"section_removed": 1, "toc_entries_removed": 1` before continuing. Use `--dry-run` first if paranoid about the specific entry.
 
-1. **Delete the section body** — from the `## Week of YYYY-MM-DD` heading through (but not including) the next `## Week of` heading, or EOF if it's the only one.
-2. **Delete the TOC entries** — the matching `- [Week of YYYY-MM-DD](#week-of-...)` line _and_ every indented `  - [...]` sub-bullet under it in the TOC block at the top of the file.
-3. **Use `$THIS_MONDAY` as `START_DATE`** when you proceed to Step 1 — the regenerated entry will be dated from this Monday and cover all commits Mon → today in one coherent block.
+Set `START_DATE` to the `start_date` field from the Step 0.1 JSON (this week's Monday). That is the date Step 1 must use.
 
-**Why not preserve old content?** Step 2 (Identify Changed Content Files) and Step 3 (Read Actual Content Diffs) regenerate everything from git history. Anything in the old partial entry will be rediscovered from commits. Regenerating fresh is simpler and more coherent than patching an existing entry.
+#### Step 0.3 — Commit-floor assertion for Step 2
 
-**Example** — today is Thu 2026-04-16, changelog starts with `## Week of 2026-04-13`. 04-13 ≤ 04-13 ≤ 04-19 → partial detected. Delete `## Week of 2026-04-13` section + its TOC lines. Set `START_DATE=2026-04-13`. Regenerate.
+Before running Step 2 below, if Step 0.2 ran, you must be able to answer "yes" to both: (a) does `grep -c "^## Week of $START_DATE" _d/changelog.md` return `0`? (b) is `START_DATE` set to `this_monday` from Step 0.1? If either is "no," stop and fix it — you're about to patch instead of regenerate.
+
+**Why delete instead of merge-in-place?** Step 2 (Identify Changed Content Files) and Step 3 (Read Actual Content Diffs) regenerate everything from git history. Anything in the old partial entry will be rediscovered. Regenerating fresh is simpler and produces a coherent entry; patch-and-add produces a lopsided one (observed 2026-04-16, rebuilt same day).
+
+Tests: `cd .claude/skills/changelog && python3 -m unittest test_partial_week` (16 cases including Mon-anchored, trailing-date, year-boundary, TOC+section deletion, dry-run).
 
 ### 1. Determine Time Range
 
@@ -92,6 +93,8 @@ git log --since="$START_DATE" --oneline upstream/main
 ```
 
 ### 2. Identify Changed Content Files
+
+**Pre-flight check:** if Step 0 returned `should_merge: true`, confirm you ran Step 0.2 (`partial_week.py delete`) before running this step. `grep -c "^## Week of $START_DATE" _d/changelog.md` should return `0`. If it returns `1`, you skipped the delete — go back and do it.
 
 Use the `changed_files.py` helper that ships alongside this skill — emits JSON, keeps the count-and-rank logic in pure-function Python (unit-tested, deterministic tie-breaking):
 
