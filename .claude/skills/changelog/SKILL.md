@@ -32,13 +32,15 @@ git log --since="2026-01-25" --until="2026-02-01" --oneline upstream/main
 
 ### 2. Identify Changed Content Files
 
-Find the most-modified content files:
+Use the `changed_files.py` helper that ships alongside this skill — emits JSON, keeps the count-and-rank logic in pure-function Python (unit-tested, deterministic tie-breaking):
 
 ```bash
-git log --since="$START_DATE" --name-only --pretty=format: upstream/main \
-  | grep -E "^_d/|^_posts/" \
-  | sort | uniq -c | sort -rn | head -20
+.claude/skills/changelog/changed_files.py --since "$START_DATE" --limit 20
 ```
+
+Output shape: `[{"path": "_d/ai-journal.md", "change_count": 8}, ...]`, sorted by count descending with alphabetical tie-break. Defaults to `_d/` and `_posts/` prefixes; pass `--prefixes _d/,_posts/,_includes/` to widen. Pass `--branch main` for a local-only repo.
+
+Tests: `cd .claude/skills/changelog && python3 -m unittest test_changed_files`.
 
 ### 3. Read Actual Content Diffs (NOT commit messages!)
 
@@ -55,6 +57,7 @@ git show COMMIT_HASH -- _d/filename.md
 ```
 
 **What to extract from diffs:**
+
 - New section headers (what topics were added?)
 - Key concepts, frameworks, or models introduced
 - Specific examples or case studies
@@ -62,9 +65,11 @@ git show COMMIT_HASH -- _d/filename.md
 - Tables, lists, or structured content
 
 **Example - BAD (from commit message):**
+
 > "Add spiritual health content"
 
 **Example - GOOD (from actual diff):**
+
 > "Vanaprastha framework: 4-stage Hindu life model (Brahmacharya→Grihastha→Vanaprastha→Sannyasa). Three obstacles: 'None' identity trap, Santa in the Church, Tyranny of Time."
 
 For other repos, get diff summaries:
@@ -91,7 +96,7 @@ Description of changes in this theme:
 - **Item title** - Description ([blog](/permalink#section)) ([github](https://github.com/idvorkin/idvorkin.github.io/commit/SHORTHASH))
 ```
 
-**Important — unique section names**: Every `###` heading must be unique across the *entire* file, not just the current week. Duplicate headings produce duplicate Markdown TOC anchors (`#other-projects`, `#other-projects-1`, …) which are confusing and break deep links.
+**Important — unique section names**: Every `###` heading must be unique across the _entire_ file, not just the current week. Duplicate headings produce duplicate Markdown TOC anchors (`#other-projects`, `#other-projects-1`, …) which are confusing and break deep links.
 
 - For "Other Projects" sections, always append the week date: `### Other Projects (YYYY-MM-DD)` (e.g. `### Other Projects (2026-04-12)`). Never use month names like `(April)` since they repeat across weeks.
 - If you use any other recurring theme name (e.g. "Infrastructure"), append the week date too if that name already appears earlier in the file: `### Infrastructure (YYYY-MM-DD)`.
@@ -104,7 +109,7 @@ Always include both blog and GitHub links where applicable:
 - **Blog link**: `([blog](/permalink))` or `([blog](/permalink#section-anchor))`
 - **GitHub icon link**: `[<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/SHORTHASH)`
 
-Use short commit hashes (first 9 chars) for readability. The GitHub icon (`<i class="fa fa-github"></i>`) renders as a clickable  icon.
+Use short commit hashes (first 9 chars) for readability. The GitHub icon (`<i class="fa fa-github"></i>`) renders as a clickable icon.
 
 ### 5. Finding Section Anchors
 
@@ -116,18 +121,21 @@ grep "^#" _d/filename.md | head -20
 ```
 
 Section anchors are slugified headers:
+
 - `### My Section Title` → `#my-section-title`
 - `### AI & Machine Learning` → `#ai--machine-learning`
 
 ## Example Output
 
 **BAD - based on commit messages (vague, unhelpful):**
+
 ```markdown
 - **Software Survival 3.0** - Added Steve Yegge's framework
 - **Code as Costly Signal** - Discussed what code signals
 ```
 
 **GOOD - based on actual content diffs (specific, informative):**
+
 ```markdown
 ## Week of 2026-01-25
 
@@ -142,6 +150,7 @@ Five new entries on AI-era software development ([blog](/ai-journal#2026-01-31))
 ```
 
 Notice how the GOOD version includes:
+
 - Actual formulas/frameworks from the content
 - Specific quotes
 - Key concepts explained
@@ -149,13 +158,13 @@ Notice how the GOOD version includes:
 
 ## Common Themes to Look For
 
-| Theme | Files to Check | Keywords |
-|-------|---------------|----------|
-| AI/Tech | `ai-*.md`, `how-igor-chops.md` | AI, coding, CHOP |
-| Health | `*-pain.md`, `physical-*.md` | pain, exercise, health |
-| Spiritual | `spiritual-*.md`, `religion.md`, `meditation.md` | spiritual, meditation |
-| Life Planning | `gap-year.md`, `y20*.md`, `retire.md` | goals, planning |
-| Infrastructure | `.claude/`, `scripts/`, `_plugins/` | fix, improve, add command |
+| Theme          | Files to Check                                   | Keywords                  |
+| -------------- | ------------------------------------------------ | ------------------------- |
+| AI/Tech        | `ai-*.md`, `how-igor-chops.md`                   | AI, coding, CHOP          |
+| Health         | `*-pain.md`, `physical-*.md`                     | pain, exercise, health    |
+| Spiritual      | `spiritual-*.md`, `religion.md`, `meditation.md` | spiritual, meditation     |
+| Life Planning  | `gap-year.md`, `y20*.md`, `retire.md`            | goals, planning           |
+| Infrastructure | `.claude/`, `scripts/`, `_plugins/`              | fix, improve, add command |
 
 ## Update TOC
 
@@ -167,69 +176,87 @@ After adding a new week, update the TOC at the top of the changelog:
 - [Week of 2026-01-25](#week-of-2026-01-25)
   - [AI Journal Updates](#ai-journal-updates)
   - [Theme 2](#theme-2)
-<!-- vim-markdown-toc-end -->
+  <!-- vim-markdown-toc-end -->
 ```
 
 ## Cross-Repo Changelog
 
-### List Active Repos
+### Scan Active Repos + Their Commits (one call)
 
-Scan BOTH `idvorkin` and `idvorkin-ai-tools` orgs. Use `--visibility public` to skip private repos.
-
-```bash
-for org in idvorkin idvorkin-ai-tools; do
-  echo "=== $org ==="
-  gh repo list $org --limit 100 --visibility public --json name,pushedAt \
-    --jq '.[] | select(.pushedAt > "DATE") | .name'
-done
-```
-
-### Get Commits from All Active Repos
+Use the `scan_repos.py` helper that ships alongside this skill — one command replaces the nested bash loop, with parallel `gh api` fetches and unit-tested active-repo classification:
 
 ```bash
-for org in idvorkin idvorkin-ai-tools; do
-  gh repo list $org --limit 100 --visibility public --json name,pushedAt \
-    --jq '.[] | select(.pushedAt > "DATE") | .name' | while read repo; do
-    echo "=== $org/$repo ==="
-    gh api repos/$org/$repo/commits \
-      --jq '.[0:10] | .[] | "\(.sha[0:9]) \(.commit.message | split("\n")[0])"' 2>/dev/null
-    echo ""
-  done
-done
+# Default: both orgs (idvorkin + idvorkin-ai-tools), parallel fetches
+.claude/skills/changelog/scan_repos.py --since "$START_DATE"
+
+# Narrow orgs or widen the fetch
+.claude/skills/changelog/scan_repos.py --since "$START_DATE" \
+  --orgs idvorkin \
+  --max-workers 16 \
+  --commit-limit 20
 ```
+
+Output shape (JSON, sorted by `(org, name)` for deterministic diffing):
+
+```json
+[
+  {
+    "org": "idvorkin",
+    "name": "idvorkin.github.io",
+    "pushed_at": "2026-04-16T14:42:00Z",
+    "commits": [
+      {
+        "sha": "049000327",
+        "message": "content: ...",
+        "date": "2026-04-16T14:40:00Z"
+      }
+    ]
+  }
+]
+```
+
+**Why parallel matters:** the previous bash loop issued ~30-50 serial `gh api commits` calls, each round-tripping to GitHub. `scan_repos.py` fans these out across a thread pool (default 8 workers), so a typical scan drops from tens of seconds to a few.
+
+**Safety:** a failed fetch for one repo returns `"commits": []` rather than aborting the full scan — one broken/private/archived repo can't poison a cross-repo sweep.
+
+Tests: `cd .claude/skills/changelog && python3 -m unittest test_scan_repos`.
 
 Don't be lazy — use GitHub deep links whenever possible: commit links, file links, section anchors.
 
 ### Key Repos to Track
 
-| Repo | Purpose | What to Look For |
-|------|---------|------------------|
-| `idvorkin.github.io` | Blog | Content changes, new posts |
-| `Settings` | Dotfiles/tools | New commands, config changes |
-| `nlp` | AI/NLP tools | New models, features |
-| `chop-conventions` | CHOP docs | Workflow improvements |
-| `tony_tesla` | Voice AI | Tony/Vapi updates |
-| `*-explainer` | Visualizations | New explainers |
+| Repo                 | Purpose        | What to Look For             |
+| -------------------- | -------------- | ---------------------------- |
+| `idvorkin.github.io` | Blog           | Content changes, new posts   |
+| `Settings`           | Dotfiles/tools | New commands, config changes |
+| `nlp`                | AI/NLP tools   | New models, features         |
+| `chop-conventions`   | CHOP docs      | Workflow improvements        |
+| `tony_tesla`         | Voice AI       | Tony/Vapi updates            |
+| `*-explainer`        | Visualizations | New explainers               |
 
 ### Cross-Repo Entry Format
 
 **For regular repos** (link repo name to GitHub):
+
 ```markdown
 **[Settings](https://github.com/idvorkin/Settings)** (dotfiles & tools)
+
 - Added terminal tab switching command [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/HASH)
 ```
 
 **For explainers/apps with deployments** (link name to deployment, icon to repo):
+
 ```markdown
 **[monitor-explainer](https://monitor-explorer.surge.sh)** (visualization) [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer)
+
 - Added comprehensive content [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer/commit/HASH)
 ```
 
 ### Link Patterns
 
-| Type | Name Links To | GitHub Icon |
-|------|---------------|-------------|
-| Regular repo | GitHub repo | Commit link |
+| Type          | Name Links To   | GitHub Icon                              |
+| ------------- | --------------- | ---------------------------------------- |
+| Regular repo  | GitHub repo     | Commit link                              |
 | Explainer/app | Live deployment | Repo link (header) + Commit link (items) |
 
 ### GitHub Icon Link Format
