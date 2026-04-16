@@ -293,13 +293,27 @@ Don't be lazy — use GitHub deep links whenever possible: commit links, file li
 
 Common categories encountered in practice (for shape, not a whitelist):
 
-| Example repos                         | Typical surface area                |
-| ------------------------------------- | ----------------------------------- |
-| `idvorkin.github.io`                  | Blog content, new posts             |
-| `Settings`, `chop-conventions`        | Dotfiles, tooling, workflow docs    |
-| `nlp`, `tony_tesla`, `tony_assistant` | AI/NLP/voice experiments            |
-| `*-explainer`                         | Visualization apps with deployments |
-| `idvorkin-ai-tools/*`                 | AI-written tools, forks, PR bots    |
+| Example repos                         | Typical surface area                                                                   |
+| ------------------------------------- | -------------------------------------------------------------------------------------- |
+| `idvorkin.github.io`                  | Blog content, new posts                                                                |
+| `chop-conventions`                    | CHOP skills, shared CLAUDE.md, conventions **— promoted to its own top-level section** |
+| `Settings`                            | Dotfiles, Rust tools, tmux/shell                                                       |
+| `nlp`, `tony_tesla`, `tony_assistant` | AI/NLP/voice experiments                                                               |
+| `*-explainer`                         | Visualization apps with deployments                                                    |
+| `idvorkin-ai-tools/*`                 | AI-written tools, forks, PR bots                                                       |
+
+### chop-conventions is its own section, not an "Other Project"
+
+**When `chop-conventions` has activity in the window, it gets its own `### chop-conventions (YYYY-MM-DD)` theme section at the same level as "Infrastructure & CI" — not a bullet-block under "Other Projects."** Rationale: chop-conventions is the living source of Igor's CHOP workflow — skills, shared CLAUDE.md fragments, cross-machine conventions — and its weekly activity is usually the single most important cross-repo story. Burying it under "Other Projects" next to small one-off repos systematically under-represents it. Every major section-restructure decision (2026-04-16) has landed on "chop-conventions gets its own section"; codify that here so it isn't re-argued every week.
+
+Section layout precedence, when all are present:
+
+1. `### [theme sections for blog content]` — AI Journal, new posts, major restructures
+2. `### Infrastructure & CI (YYYY-MM-DD)` — CI, workflows, back-links, cross-links
+3. `### chop-conventions (YYYY-MM-DD)` — skills, workflow hardening, shared CLAUDE.md
+4. `### Other Projects (YYYY-MM-DD)` — Settings, blob, explainers, samples, one-offs
+
+If `chop-conventions` has zero commits in the window (rare), drop the section entirely rather than leaving an empty heading.
 
 ### Cross-Repo Entry Format
 
