@@ -21,9 +21,13 @@ Use beads (`bd` commands) for task tracking. See the Beads Integration section b
 
 ## PR Workflow
 
-Repo-mode distinctions (AI-Tools vs Human-Supervised) and the fork-push workflow live in `~/gits/chop-conventions/dev-inner-loop/repo-modes.md`. One idvorkin-ecosystem gotcha:
+Repo-mode distinctions (AI-Tools vs Human-Supervised) and the fork-push workflow live in `~/gits/chop-conventions/dev-inner-loop/repo-modes.md`.
 
-Running as `idvorkin-ai-tools`, you **can't `gh pr close` or `gh pr merge`** on PRs in `idvorkin/*` repos — GraphQL returns `does not have the correct permissions`. When superseding an existing PR, add a supersede comment referencing the replacement and ask Igor to close it manually.
+When superseding a PR you opened on `idvorkin/*`, **close it yourself** — `gh pr close <N> --repo idvorkin/<repo> --comment "Superseded by #M — …"` works for the `idvorkin-ai-tools` actor on PRs it authored. Don't leave orphan PRs for Igor to clean up.
+
+`gh pr merge` is a different story: branch protection / required reviews on `idvorkin/*` still block self-merge, which is correct and intentional — Igor approves the merge. Ask, don't try.
+
+This rule was previously recorded as "you can't `gh pr close` on idvorkin/\*" — that claim was tested against live PRs in 2026-04-16 and is false. Close works. If you inherit the old claim from stale memory, verify before relaying it.
 
 ### Providing PR Links
 
