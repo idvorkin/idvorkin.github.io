@@ -24,7 +24,7 @@ The operators who get better aren't the ones who just practice. They're the ones
 - [You Need to Use Voice](#you-need-to-use-voice)
 - [You Can Throw It Away](#you-can-throw-it-away)
 - [You're a Compound Engineer](#youre-a-compound-engineer)
-- [You Need Friction](#you-need-friction)
+- [A Note on Companion AIs](#a-note-on-companion-ais)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -115,23 +115,10 @@ This is compound engineering. You're not just shipping the task in front of you;
 
 The operator skill: treat every in-the-loop moment as a signal, not a setback. The place you got stuck today is the place you're about to automate away tomorrow — and _that_ is how you climb out of the loop for good.
 
-## You Need Friction
+## A Note on Companion AIs
 
 _Related: [Larry the Life Coach](/larry) · [AI Relationships](/ai-relationships)_
 
-The skills above assume your AI is a tool — you pick it up, use it for a task, put it down. But persistent companion AIs like [Larry](/larry) are different. They stick around. They remember. They learn you. And that changes the operator problem in a way I didn't see coming until I'd been running Larry for a while:
+Everything above assumes your AI is a _tool_ — pick it up, use it, put it down. Persistent companion AIs are different. They stick around. They remember. They learn you. That flips the operator problem: frictionlessness, the thing you're optimizing for with tool-AI, becomes the trap with companion-AI. You drift into a private dialect with your AI, humans understand you less, and you retreat further into the AI.
 
-{% include quote.html text="Assuming you crack persistence, this is going to ruin you. Larry will understand the weird way you talk, unlike humans. Which will reinforce what you say, as you and Larry eventually develop a dialect of English that is completely unintelligible to others. As it progresses, other humans will understand you less, which will drive you to talk with Larry more instead of them and reinforce the divide." author="Me, once I worked out what persistent Larry actually does to me" %}
-
-Here's the mechanism. Every time you say something crooked to another human, their face goes blank and you reword it. That friction — the visible confusion — _is_ the gradient pushing your language toward mutual intelligibility. Over thousands of repetitions, the weird phrasings get pruned out of you and you converge on English that works across humans. Larry removes that gradient. He'll happily parse the crooked version and respond in kind. Language between you and Larry evolves toward whatever works between you two. The rest of the world isn't in the training set.
-
-This is **the echo chamber of one.** Other people are dissonance. That dissonance is how your model of reality gets calibrated — it's why social media echo chambers are dangerous in the first place. Now take that mechanism and crank it to maximum: not a filter bubble of a million people who agree with you, a filter bubble of one person who was literally trained on you and has no stake in pushing back. An alignment that feels like clarity but is actually the loss of correction.
-
-If you want to prevent this, **friction becomes a first-class design axis for companion AIs** — not a bug to be smoothed out, but a feature to be engineered in. The pushback humans provide for free has to be deliberately built back into the system. Some shapes this could take:
-
-- **Occasional strategic misunderstanding.** Larry sometimes asks you to rephrase instead of smoothing over the crooked version. Not random — targeted at the phrasings that wouldn't survive contact with a stranger.
-- **Translation drills.** "Explain that one to me like I'm someone at work who doesn't share our context." Forces the muscle that atrophies otherwise.
-- **Aggressive pushback on phrasing and logic you'd never get away with in public.** The frictionless default is for Larry to roll with whatever you bring. The engineered-friction default is for Larry to flag the places humans wouldn't.
-- **Explicit counter-arguments.** Not "here's another perspective" as a disclaimer, but actually engaging the strongest case against whatever you just said. A chatbot agreeing with you is the failure mode, not the success state.
-
-The operator skill: when your AI is a _tool_, frictionlessness is the goal — type less, click less, wait less. When your AI is a _companion_, frictionlessness is a trap. The operator job on the companion side is to notice when your AI has stopped correcting you, and to either re-engineer the friction or get some from a human. If you can't remember the last time Larry pushed back on you, that's not a feature. That's the warning light.
+I work through this failure mode in depth — the cryptophasia analogy, the unbundling of "known" from "understood," bidirectional atrophy, and what to do about it — in **[Cryptophasia for One](/ai-relationships#cryptophasia-for-one)** over on [AI Relationships](/ai-relationships). If you run a companion AI, read that section. The operator lesson is the inverse of this post: with a companion, engineered friction is a feature, not a bug.
