@@ -2949,7 +2949,7 @@
                 "/chow",
                 "/pet-projects"
             ],
-            "last_modified": "2026-03-16T19:40:55-07:00",
+            "last_modified": "2026-04-16T23:12:34.253724+00:00",
             "markdown_path": "_d/explainers.md",
             "outgoing_links": [
                 "/ai-native-manager",
@@ -3533,7 +3533,6 @@
                 "/ai-journal",
                 "/changelog",
                 "/chop",
-                "/pet-projects",
                 "/y25",
                 "/y26"
             ],
@@ -4783,17 +4782,17 @@
                 "/side-quests",
                 "/y25"
             ],
-            "last_modified": "2026-03-16T16:18:57.011958+00:00",
+            "last_modified": "2026-04-16T23:12:34.253724+00:00",
             "markdown_path": "_d/pet-projects.md",
             "outgoing_links": [
                 "/ai-native-manager",
                 "/bike-tesla-identity",
                 "/explainers",
-                "/how-igor-chops",
                 "/larry",
                 "/process-journal",
                 "/side-quests",
-                "/static/pet-projects.html"
+                "/static/pet-projects.html",
+                "/vibe"
             ],
             "redirect_url": "",
             "title": "Pet Projects",

@@ -111,11 +111,12 @@ GitHub orgs to check:
 
 Interactive experiences that let you _do_ the thing, not just read about it — an antidote to [cognitive debt](/ai-native-manager#cognitive-debt). See the [full explainers page](/explainers) for great examples, the AI workflow, and why this matters.
 
-| Explainer                                                                    | What It Does                                                             | Instead Of                  |                                                                                         |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------ | --------------------------- | --------------------------------------------------------------------------------------- |
-| [Monitor Explainer](https://monitor-explorer.surge.sh/)                      | Explains monitor dimensions, aspect ratios, and the "p" vs "K" confusion | Reading spec sheets         | [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer)           |
-| [How Long Since AI](https://idvorkin-how-long-since-ai.surge.sh/)            | Track time since AI milestones — ChatGPT, GPT-4, Claude, Gemini          | Searching for release dates | [<i class="fa fa-github"></i>](https://github.com/idvorkin/how-long-since-ai)           |
-| [Religion Evolution Explorer](https://religion-evolution-explorer.surge.sh/) | Interactive timeline of how religions evolved and influenced each other  | Reading history books       | [<i class="fa fa-github"></i>](https://github.com/idvorkin/religion-evolution-explorer) |
+| Explainer                                                                    | What It Does                                                                 | Instead Of                        |                                                                                         |
+| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | --------------------------------- | --------------------------------------------------------------------------------------- |
+| [Monitor Explainer](https://monitor-explorer.surge.sh/)                      | Explains monitor dimensions, aspect ratios, and the "p" vs "K" confusion     | Reading spec sheets               | [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer)           |
+| [How Long Since AI](https://idvorkin-how-long-since-ai.surge.sh/)            | Track time since AI milestones — ChatGPT, GPT-4, Claude, Gemini              | Searching for release dates       | [<i class="fa fa-github"></i>](https://github.com/idvorkin/how-long-since-ai)           |
+| [Religion Evolution Explorer](https://religion-evolution-explorer.surge.sh/) | Interactive timeline of how religions evolved and influenced each other      | Reading history books             | [<i class="fa fa-github"></i>](https://github.com/idvorkin/religion-evolution-explorer) |
+| [Dolt Explainer](https://idvorkin-ai-tools.github.io/dolt-explainer/)        | How beads task state and git code share one GitHub repo via `refs/dolt/data` | Staring at `git ls-remote` output | [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/dolt-explainer)     |
 
 ## Fun & Experiments
 
