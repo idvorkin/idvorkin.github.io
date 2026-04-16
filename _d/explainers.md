@@ -87,11 +87,12 @@ In [CHOW](/chow) (Chat-Oriented Writing), the written artifact is a side effect 
 
 ## Explainers I've Built
 
-| Explainer                                                                    | What It Does                                                             | Instead Of                  |                                                                                         |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------ | --------------------------- | --------------------------------------------------------------------------------------- |
-| [Monitor Explainer](https://monitor-explorer.surge.sh/)                      | Explains monitor dimensions, aspect ratios, and the "p" vs "K" confusion | Reading spec sheets         | [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer)           |
-| [How Long Since AI](https://idvorkin-how-long-since-ai.surge.sh/)            | Track time since AI milestones — ChatGPT, GPT-4, Claude, Gemini          | Searching for release dates | [<i class="fa fa-github"></i>](https://github.com/idvorkin/how-long-since-ai)           |
-| [Religion Evolution Explorer](https://religion-evolution-explorer.surge.sh/) | Interactive timeline of how religions evolved and influenced each other  | Reading history books       | [<i class="fa fa-github"></i>](https://github.com/idvorkin/religion-evolution-explorer) |
+| Explainer                                                                    | What It Does                                                                 | Instead Of                        |                                                                                         |
+| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | --------------------------------- | --------------------------------------------------------------------------------------- |
+| [Monitor Explainer](https://monitor-explorer.surge.sh/)                      | Explains monitor dimensions, aspect ratios, and the "p" vs "K" confusion     | Reading spec sheets               | [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer)           |
+| [How Long Since AI](https://idvorkin-how-long-since-ai.surge.sh/)            | Track time since AI milestones — ChatGPT, GPT-4, Claude, Gemini              | Searching for release dates       | [<i class="fa fa-github"></i>](https://github.com/idvorkin/how-long-since-ai)           |
+| [Religion Evolution Explorer](https://religion-evolution-explorer.surge.sh/) | Interactive timeline of how religions evolved and influenced each other      | Reading history books             | [<i class="fa fa-github"></i>](https://github.com/idvorkin/religion-evolution-explorer) |
+| [Dolt Explainer](https://idvorkin-ai-tools.github.io/dolt-explainer/)        | How beads task state and git code share one GitHub repo via `refs/dolt/data` | Staring at `git ls-remote` output | [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/dolt-explainer)     |
 
 The pattern is the same every time: take something that's hard to grasp as text, ask AI to build an interactive version, and suddenly it makes sense. These aren't prettier presentations — they're fundamentally different experiences. You explore at your own pace, discover things the author didn't explicitly write, and actually retain what you learned.
 
