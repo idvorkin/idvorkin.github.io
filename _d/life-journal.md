@@ -87,3 +87,5 @@ The agent read those two messages, wrote the paragraph you're reading, regenerat
 A couple hours later, same seat, same driver — this time dictating structural edits to [AI Operator](/ai-operator). [PR #548](https://github.com/idvorkin/idvorkin.github.io/pull/548) came out of it. One voice message added a section on parallel agents; another reordered the whole post. The agent rebased onto main, regenerated the TOC, and force-pushed. Two voice messages from the passenger seat, and the post has a new spine.
 
 ![teenage raccoon driving with dad raccoon vibe-coding in passenger seat — generational handoff](/images/vibe-coding-handoff.webp)
+
+Zach took one look at the illustration and said: "We're backwards. The picture makes it look like we're British." He's right — the AI put the driver on the right-hand side of the car. The sixteen-year-old who is literally the car-whisperer in this story reviewed the AI's rendering of himself and caught the bug before his dad did. Correct seat assignments, it turns out, are a feature the passenger-seat vibe-coder is not qualified to QA.
