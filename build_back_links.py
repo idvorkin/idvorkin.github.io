@@ -382,6 +382,15 @@ class LinkBuilder:
 
         assert "should never get here"
 
+    # Pages whose outgoing links should NOT populate other pages' backlinks.
+    # These are aggregator/index pages that link to nearly everything, so
+    # treating them as a backlink source pollutes every post's "Referenced by"
+    # section with noise. The pages themselves still appear in self.pages
+    # (searchable, reachable), they just don't contribute incoming_links.
+    EXCLUDED_BACKLINK_SOURCES = frozenset({
+        "changelog.html",
+    })
+
     def update(self, path_back: FileType):
         if "debug-something-wonky" in path_back:
             pudb.set_trace()
@@ -394,11 +403,12 @@ class LinkBuilder:
             self.redirects[page.url] = page.redirect_url
             return
 
-        for link in page.outgoing_links:
-            # when a link has an anchor eg foo.html#bar
-            # the incoming_link is foo.html, so strip the anchor
-            clean_link = link.split("#")[0]
-            self.incoming_links[clean_link].append(page.url)
+        if os.path.basename(path_back) not in self.EXCLUDED_BACKLINK_SOURCES:
+            for link in page.outgoing_links:
+                # when a link has an anchor eg foo.html#bar
+                # the incoming_link is foo.html, so strip the anchor
+                clean_link = link.split("#")[0]
+                self.incoming_links[clean_link].append(page.url)
 
         self.pages[page.url] = page
 
