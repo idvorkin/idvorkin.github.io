@@ -16,6 +16,7 @@ A journal of random life observations. Keeping track of them so I don't forget w
     - [Eight Sleep Thinks My Cat Is Me](#eight-sleep-thinks-my-cat-is-me)
     - [Four Pairs of Identical Glasses](#four-pairs-of-identical-glasses)
     - [Three Generations of Air Squats](#three-generations-of-air-squats)
+    - [Vibe-Coding from the Passenger Seat](#vibe-coding-from-the-passenger-seat)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -67,3 +68,19 @@ My dad used to just bust out air squats in the middle of whatever. Kitchen, livi
 Now I do it. I don't remember deciding to; it just showed up one day as something my body apparently learned by watching. Air squats while the kettle boils, calf raises at the sink, a few pushups against the desk between meetings. Zach has caught me at it plenty of times and given me the teenage eye-roll that says *please don't*.
 
 Except: the other day, corner of my eye, I saw him trying it. An air squat in the kitchen when he thought nobody was looking. He will absolutely not admit it, and I did not say anything — call attention and the habit dies before it takes root. But it landed. Three generations of weird body-weight exercises, transmitted by osmosis. Things travel down the family line whether you want them to or not. The air squats got through.
+
+#### Vibe-Coding from the Passenger Seat
+
+Zach just got his license. He's driving the Tesla on autopilot, which means the passenger seat is mine and my hands are free. I don't need a laptop to use that time either. My phone is the keyboard. I fire a voice message at Telegram, a Claude agent on the dev VM at home picks it up, drafts, opens a PR, and pings me back. The car is an office, the phone is an IDE, and the infrastructure is a kid who finally turned sixteen.
+
+This entry is the proof. The prompt that produced it was literally:
+
+> "Life journal now that Zach can drive (well via auto poilot) I can be easily vibe coding form the car"
+
+Followed a minute later by the meta refinement:
+
+> "For the vibe coding, explain that I can even launch from my phone, give example from prompt to journal entry"
+
+The agent read those two messages, wrote the paragraph you're reading, regenerated the TOC, pushed a branch, and opened a PR for me to review. I didn't type any of the markdown. I dictated two sentences from the passenger seat of a car driven by my teenager.
+
+The part that keeps surprising me isn't the autopilot or the agent on its own — each one is a couple years old. It's the composition. Autopilot removes the driver's seat. The mobile agent removes the laptop. What's left is just me, the road, and a thought I can ship before we reach the next exit.
