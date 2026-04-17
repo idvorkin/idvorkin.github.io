@@ -14,6 +14,7 @@ A journal of random life observations. Keeping track of them so I don't forget w
 - [Diary](#diary)
   - [2026-04-17](#2026-04-17)
     - [Eight Sleep Thinks My Cat Is Me](#eight-sleep-thinks-my-cat-is-me)
+    - [Four Pairs of Identical Glasses](#four-pairs-of-identical-glasses)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -47,3 +48,13 @@ Turns out this is a known thing. Eight Sleep's pod uses [piezoelectric sensors u
 Eight Sleep [confirms it in their help docs](https://help.eightsleep.com/en_us/can-my-pet-or-child-sleep-on-the-pod-with-me-SJp6lxY9I): pets on the pod "affect accuracy of sleep data." Their [blog post on pets in bed](https://www.eightsleep.com/blog/pets-in-bed/) is friendlier about it — thick comforter between pet and cover, or just accept pet-nights as throwaway data.
 
 Takeaway: the 213 ms reading goes in the trash, not the trend. Quantified-self tools are great until they're measuring your cat. Don't update your priors on vacation data when you know a confounder was in the bed with you.
+
+#### Four Pairs of Identical Glasses
+
+Six months ago I got progressives and didn't like them. The workaround: keep wearing two regular pairs — distance and reading — plus prescription sunglasses. With regular sunglasses in the mix, that's four pairs of glasses I was rotating through my pockets. I have lots of pockets, but four pairs is too much even for me.
+
+The friction I didn't count on: all the frames are identical. Every swap was a little decision — pull one out, is this the reading pair or the distance pair? Wrong guess, put it back, try again. Multiply by every time I moved between screen and room and sidewalk. None of it felt expensive in the moment; all of it added up.
+
+Two weeks ago I just decided to fight through the progressives. Wore them, got through the adjustment, and now I can see great with them. One pair in the pocket, sunglasses in the car. The "workaround tax" — swap, fumble, pick the wrong one — was invisibly expensive for six months. Should have pushed through the adjustment period the first week instead of engineering my way around it.
+
+<!-- TODO: add photos of the four identical frames -->
