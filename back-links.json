@@ -857,7 +857,7 @@
         },
         "/ai-cockpit": {
             "description": "Agents are slow. Not slow like “wait a second,” slow like “go make coffee and come back.” So you run several in parallel. But now you’ve got a different problem: you’re an air traffic controller with no radar. You need a cockpit - a physical and software control surface that gives you visibility into what your agents are doing and lets you switch between them instantly.\n\n",
-            "doc_size": 25000,
+            "doc_size": 27000,
             "file_path": "_site/ai-cockpit.html",
             "incoming_links": [
                 "/ai-feed",
@@ -868,7 +868,7 @@
                 "/claw",
                 "/how-igor-chops"
             ],
-            "last_modified": "2026-04-11T07:40:34-07:00",
+            "last_modified": "2026-04-17T18:06:10.793477+00:00",
             "markdown_path": "_d/ai-cockpit.md",
             "outgoing_links": [
                 "/ai-journal",
@@ -1081,13 +1081,14 @@
                 "/changelog",
                 "/how-igor-chops"
             ],
-            "last_modified": "2026-04-17T17:34:49.736635+00:00",
+            "last_modified": "2026-04-17T18:06:10.793477+00:00",
             "markdown_path": "_d/ai-operator.md",
             "outgoing_links": [
                 "/ai-cockpit",
                 "/ai-relationships",
                 "/balloon",
                 "/four-healths",
+                "/frog",
                 "/hill-climbing",
                 "/larry"
             ],
@@ -3118,6 +3119,7 @@
             "doc_size": 24000,
             "file_path": "_site/frog.html",
             "incoming_links": [
+                "/ai-operator",
                 "/anxiety-management",
                 "/be-proactive",
                 "/d/resistance",
