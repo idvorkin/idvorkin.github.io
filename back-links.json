@@ -1805,10 +1805,10 @@
         },
         "/changelog": {
             "description": "A weekly summary of what changed on this blog and across my GitHub projects. Useful for returning readers who want to catch up on new content and updates.\n\n",
-            "doc_size": 111000,
+            "doc_size": 112000,
             "file_path": "_site/changelog.html",
             "incoming_links": [],
-            "last_modified": "2026-04-16T23:18:12.019549+00:00",
+            "last_modified": "2026-04-17T02:40:58.072436+00:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
                 "/act",
