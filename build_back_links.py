@@ -23,6 +23,7 @@ from typing import NewType, List, Dict
 from typing_extensions import Annotated
 import os
 import json
+import tempfile
 from dataclasses import dataclass
 import copy
 import typer
@@ -550,16 +551,19 @@ class LinkBuilder:
                 }
             return obj
 
-        # Write directly to the file instead of printing to stdout
-        with open(output_file, "w", encoding="utf-8") as f:
-            json.dump(
-                out,
-                f,
-                default=page_encoder,
-                ensure_ascii=False,
-                indent=4,
-                sort_keys=True,
-            )
+        # Atomic write: truncation+write of the target file isn't safe when
+        # multiple pre-commit hook workers run in parallel on different
+        # markdown files — one writer can truncate mid-write of another,
+        # producing a corrupted suffix. Write to a tempfile in the same
+        # directory, then os.replace() into place (atomic on POSIX).
+        _atomic_write_json(
+            out,
+            output_file,
+            default=page_encoder,
+            ensure_ascii=False,
+            indent=4,
+            sort_keys=True,
+        )
 
         # Print a message to stdout for logging
         console.print(f"[green]Successfully wrote backlinks data to {output_file}[/]")
@@ -1392,10 +1396,42 @@ def rebuild_incoming_links(data):
 
 
 def write_updated_data(data, output_file):
-    """Write updated data to the output file."""
-    with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=4, sort_keys=True)
-        console.print(f"[green]Successfully wrote {output_file}[/]")
+    """Write updated data to the output file, atomically."""
+    _atomic_write_json(data, output_file, ensure_ascii=False, indent=4, sort_keys=True)
+    console.print(f"[green]Successfully wrote {output_file}[/]")
+
+
+def _atomic_write_json(data, output_file, **dumps_kwargs):
+    """Atomically write JSON to `output_file`.
+
+    Writes to a uniquely-named tempfile in the same directory, fsyncs,
+    then os.replace()s onto the target path. On POSIX, os.replace is
+    atomic at the inode level, so concurrent pre-commit hook workers
+    (one per changed markdown file) can't truncate each other's in-flight
+    writes — the worst case is that one worker's view wins and the
+    other's update is lost, rather than a corrupt JSON document on disk.
+
+    The tempfile is created in the same directory as the target so the
+    rename is same-filesystem (guaranteed atomic); TMPDIR could be on a
+    different fs and break the guarantee.
+    """
+    output_dir = os.path.dirname(os.path.abspath(output_file)) or "."
+    base = os.path.basename(output_file)
+    fd, tmp_path = tempfile.mkstemp(prefix=f".{base}.", suffix=".tmp", dir=output_dir)
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8") as f:
+            json.dump(data, f, **dumps_kwargs)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp_path, output_file)
+    except Exception:
+        # If anything went wrong, remove the tempfile so we don't leave
+        # stale `.back-links.json.*.tmp` droppings in the repo root.
+        try:
+            os.unlink(tmp_path)
+        except OSError:
+            pass
+        raise
 
 
 def print_delta_summary(
