@@ -109,7 +109,13 @@ _Skills: [`hill-climbing`](/hill-climbing)_
 
 Perfect is the baseline's enemy. You can't hill-climb from nothing — you need a bad version, scored, before there's a hill to walk up. Every minute you spend polishing before that baseline exists is a minute not climbing.
 
-This is [Eat That Frog](/frog) in a new uniform. The hard task never gets easier by delay; procrastination just shrinks the working window. Now it's worse — agents run while you stall, so the perfectionist isn't just delaying their own work, they're idling the agent. Eat the frog. Ship ugly. Let the raccoon climb.
+The trap: perfectionism _feels_ like work, but it functions like procrastination. The output is the same — hours disappear, no frog gets eaten, the deadline stays where it was. [Eat That Frog](/frog) is the playbook, same strategies:
+
+- **Slice and dice.** Ship v1 ugly. Then v2. Then v3. The agent only climbs between concrete versions — a ship every iteration beats one perfect release.
+- **One oil barrel at a time.** "Done" isn't the finish line. "Done" is the next baseline the agent can score. Aim for the next milestone, not the summit.
+- **Single-handle the task.** Don't fork your attention between drafting and polishing. Draft. Ship. Polish gets its own pass after the baseline exists.
+
+Agents make procrastination worse, not better. They run while you stall — so the perfectionist isn't just delaying their own work, they're idling the agent. Eat the frog. Ship ugly. Let the raccoon climb.
 
 ## You're a Compound Engineer
 
