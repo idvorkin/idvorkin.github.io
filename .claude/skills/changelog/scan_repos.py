@@ -1,6 +1,10 @@
 #!/usr/bin/env -S uv run --script
 # /// script
-# requires-python = ">=3.11"
+# requires-python = ">=3.13"
+# dependencies = [
+#   "typer",
+#   "rich",
+# ]
 # ///
 """Scan GitHub orgs for active repos + recent commits, in parallel.
 
@@ -33,14 +37,17 @@ Stdlib-only. Cross-platform. Requires `gh` on PATH.
 
 from __future__ import annotations
 
-import argparse
 import concurrent.futures as cf
 import datetime as dt
 import json
 import subprocess
-import sys
 from dataclasses import asdict, dataclass, field
-from typing import Callable
+from typing import Annotated, Callable
+
+import typer
+from rich.console import Console
+
+stderr = Console(stderr=True)
 
 DEFAULT_ORGS = "idvorkin,idvorkin-ai-tools"
 DEFAULT_REPO_LIMIT = 100
@@ -110,17 +117,15 @@ def fetch_repo_commits(
         return json.loads(raw) if raw.strip() else []
     except subprocess.CalledProcessError as exc:
         stderr_tail = (exc.stderr or "").strip()[:200].replace("\n", " ")
-        print(
-            f"WARN scan_repos: fetch_repo_commits({org}/{name}) failed "
-            f"rc={exc.returncode}: {stderr_tail}",
-            file=sys.stderr,
+        stderr.print(
+            f"[yellow]WARN[/] scan_repos: fetch_repo_commits({org}/{name}) failed "
+            f"rc={exc.returncode}: {stderr_tail}"
         )
         return []
     except json.JSONDecodeError as exc:
-        print(
-            f"WARN scan_repos: fetch_repo_commits({org}/{name}) got malformed "
-            f"JSON from gh: {exc}",
-            file=sys.stderr,
+        stderr.print(
+            f"[yellow]WARN[/] scan_repos: fetch_repo_commits({org}/{name}) got "
+            f"malformed JSON from gh: {exc}"
         )
         return []
 
@@ -169,28 +174,42 @@ def scan(
     return results
 
 
-def main() -> int:
-    parser = argparse.ArgumentParser(
-        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
-    )
-    parser.add_argument("--since", type=dt.date.fromisoformat, required=True)
-    parser.add_argument("--orgs", default=DEFAULT_ORGS)
-    parser.add_argument("--max-workers", type=int, default=DEFAULT_MAX_WORKERS)
-    parser.add_argument("--commit-limit", type=int, default=DEFAULT_COMMIT_LIMIT)
-    parser.add_argument("--repo-limit", type=int, default=DEFAULT_REPO_LIMIT)
-    args = parser.parse_args()
+app = typer.Typer(
+    help="Parallel cross-repo scanner for the blog changelog.",
+    add_completion=False,
+    invoke_without_command=True,
+)
 
-    orgs = [o.strip() for o in args.orgs.split(",") if o.strip()]
+
+@app.callback(invoke_without_command=True)
+def main(
+    since: Annotated[
+        dt.datetime, typer.Option(help="Start date (YYYY-MM-DD) for the scan window")
+    ],
+    orgs: Annotated[
+        str, typer.Option(help="Comma-separated GitHub orgs")
+    ] = DEFAULT_ORGS,
+    max_workers: Annotated[
+        int, typer.Option(help="ThreadPool size for parallel gh fetches")
+    ] = DEFAULT_MAX_WORKERS,
+    commit_limit: Annotated[
+        int, typer.Option(help="Max commits returned per repo")
+    ] = DEFAULT_COMMIT_LIMIT,
+    repo_limit: Annotated[
+        int, typer.Option(help="Max repos listed per org")
+    ] = DEFAULT_REPO_LIMIT,
+) -> None:
+    """JSON output to stdout, sorted by (org, name). Errors log to stderr."""
+    org_list = [o.strip() for o in orgs.split(",") if o.strip()]
     results = scan(
-        orgs=orgs,
-        since=args.since,
-        max_workers=args.max_workers,
-        commit_limit=args.commit_limit,
-        repo_limit=args.repo_limit,
+        orgs=org_list,
+        since=since.date(),
+        max_workers=max_workers,
+        commit_limit=commit_limit,
+        repo_limit=repo_limit,
     )
     print(json.dumps([asdict(r) for r in results], indent=2))
-    return 0
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    app()

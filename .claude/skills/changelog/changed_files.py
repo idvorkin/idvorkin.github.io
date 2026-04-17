@@ -1,38 +1,31 @@
 #!/usr/bin/env -S uv run --script
 # /// script
-# requires-python = ">=3.11"
+# requires-python = ">=3.13"
+# dependencies = [
+#   "typer",
+#   "rich",
+# ]
 # ///
 """Rank blog content files by change frequency since a date.
 
-Replaces the 6-stage shell pipeline:
+Replaces the 6-stage shell pipeline
+(`git log | grep | sort | uniq -c | sort -rn | head`) with one git call
+plus in-memory counting behind a pure `rank_files()` function. Adds
+deterministic alphabetical tie-breaking that the bash version lacked.
 
-    git log --since="$START_DATE" --name-only --pretty=format: upstream/main \\
-      | grep -E "^_d/|^_posts/" \\
-      | sort | uniq -c | sort -rn | head -20
-
-with a stdlib Python helper that keeps the counting + ranking logic as
-a pure function (testable without subprocess). The only subprocess call
-is `git log`; everything else is in-memory.
-
-Usage:
-
-  changed_files.py --since 2026-04-13
-  changed_files.py --since 2026-04-13 --branch main --limit 10
-  changed_files.py --since 2026-04-13 --prefixes _d/,_posts/,_includes/
-
-Output: JSON array of {path, change_count}, sorted by count descending
-with ties broken alphabetically for deterministic diffing.
+Output: JSON array of {path, change_count}, sorted by count descending.
 """
 
 from __future__ import annotations
 
-import argparse
 import datetime as dt
 import json
 import subprocess
-import sys
 from collections import Counter
 from dataclasses import asdict, dataclass
+from typing import Annotated
+
+import typer
 
 DEFAULT_PREFIXES = ("_d/", "_posts/")
 DEFAULT_BRANCH = "upstream/main"
@@ -84,26 +77,33 @@ def rank_files(
     ]
 
 
-def main() -> int:
-    parser = argparse.ArgumentParser(
-        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
-    )
-    parser.add_argument("--since", type=dt.date.fromisoformat, required=True)
-    parser.add_argument("--branch", default=DEFAULT_BRANCH)
-    parser.add_argument("--limit", type=int, default=DEFAULT_LIMIT)
-    parser.add_argument(
-        "--prefixes",
-        default=",".join(DEFAULT_PREFIXES),
-        help="Comma-separated content-path prefixes to keep.",
-    )
-    args = parser.parse_args()
+app = typer.Typer(
+    help="Rank blog content files by change frequency.",
+    add_completion=False,
+    no_args_is_help=True,
+    invoke_without_command=True,
+)
 
-    prefixes = tuple(p.strip() for p in args.prefixes.split(",") if p.strip())
-    lines = run_git_log(args.since, args.branch)
-    ranked = rank_files(lines, prefixes, args.limit)
+
+@app.callback(invoke_without_command=True)
+def main(
+    since: Annotated[
+        dt.datetime, typer.Option(help="Start date (YYYY-MM-DD) for the git log window")
+    ],
+    branch: Annotated[str, typer.Option(help="Git ref to inspect")] = DEFAULT_BRANCH,
+    limit: Annotated[
+        int, typer.Option(help="Max number of files in the ranking")
+    ] = DEFAULT_LIMIT,
+    prefixes: Annotated[
+        str, typer.Option(help="Comma-separated path prefixes to keep")
+    ] = ",".join(DEFAULT_PREFIXES),
+) -> None:
+    """JSON output to stdout. Callers parse `path` and `change_count`."""
+    prefix_tuple = tuple(p.strip() for p in prefixes.split(",") if p.strip())
+    lines = run_git_log(since.date(), branch)
+    ranked = rank_files(lines, prefix_tuple, limit)
     print(json.dumps([asdict(r) for r in ranked], indent=2))
-    return 0
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    app()
