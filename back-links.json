@@ -888,12 +888,13 @@
                 "/ai-feed",
                 "/ai-hiring"
             ],
-            "last_modified": "2026-01-02T15:26:54+00:00",
+            "last_modified": "2026-04-17T02:35:03.046784+00:00",
             "markdown_path": "_d/ai-developer.md",
             "outgoing_links": [
                 "/ai",
                 "/ai-security",
-                "/chop"
+                "/chop",
+                "/hill-climbing"
             ],
             "redirect_url": "",
             "title": "AI Developer",
@@ -1053,7 +1054,7 @@
                 "/pet-projects",
                 "/raccoon-history"
             ],
-            "last_modified": "2026-03-22T19:07:49-07:00",
+            "last_modified": "2026-04-17T02:35:08.162475+00:00",
             "markdown_path": "_d/ai-native-manager.md",
             "outgoing_links": [
                 "/agency",
@@ -1064,6 +1065,7 @@
                 "/chop",
                 "/coaching",
                 "/explainers",
+                "/hill-climbing",
                 "/manager-book",
                 "/software-leadership-roles"
             ],
@@ -1073,19 +1075,20 @@
         },
         "/ai-operator": {
             "description": "Using AI well is a skill, like driving a car or operating heavy machinery. Nobody hands you the keys to a forklift and says “figure it out.” There’s a license, training, and hard-won intuition about what the machine can and can’t do. AI is the same — except most of us skipped the training, there is no manual, and we’re writing the rules as we go.\n\n",
-            "doc_size": 28000,
+            "doc_size": 29000,
             "file_path": "_site/ai-operator.html",
             "incoming_links": [
                 "/changelog",
                 "/how-igor-chops"
             ],
-            "last_modified": "2026-04-16T16:23:10.553487+00:00",
+            "last_modified": "2026-04-17T02:35:05.677827+00:00",
             "markdown_path": "_d/ai-operator.md",
             "outgoing_links": [
                 "/ai-cockpit",
                 "/ai-relationships",
                 "/balloon",
                 "/four-healths",
+                "/hill-climbing",
                 "/larry"
             ],
             "redirect_url": "",
@@ -1189,9 +1192,11 @@
                 "/testing",
                 "/timeoff-2024-04"
             ],
-            "last_modified": "2025-12-07T02:37:56+00:00",
+            "last_modified": "2026-04-17T02:34:55.998613+00:00",
             "markdown_path": "_d/ai-testing.md",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/hill-climbing"
+            ],
             "redirect_url": "",
             "title": "Testing AI",
             "url": "/ai-testing"
@@ -1904,16 +1909,18 @@
                 "/y25",
                 "/y26"
             ],
-            "last_modified": "2026-03-01T12:10:54-08:00",
+            "last_modified": "2026-04-17T02:34:58.376356+00:00",
             "markdown_path": "_d/ai-coder.md",
             "outgoing_links": [
                 "/ai-journal",
                 "/ai-testing",
                 "/explainers",
+                "/hill-climbing",
                 "/how-igor-chops",
                 "/humans-are-underrated",
                 "/process-journal",
-                "/testing"
+                "/testing",
+                "/vibe"
             ],
             "redirect_url": "",
             "title": "The CHOP Shop: Where AI Meets Code",
@@ -3536,7 +3543,7 @@
                 "/y25",
                 "/y26"
             ],
-            "last_modified": "2026-04-11T08:45:57-07:00",
+            "last_modified": "2026-04-17T02:35:00.675557+00:00",
             "markdown_path": "_d/how-igor-chops.md",
             "outgoing_links": [
                 "/40yo",
@@ -3545,6 +3552,7 @@
                 "/chop",
                 "/chow",
                 "/enable",
+                "/hill-climbing",
                 "/hyper-personal",
                 "/mortality-software",
                 "/new-skills",

@@ -673,6 +673,7 @@ NOTE: Code and essentially Vibed code is very hard to keep working as it's often
 
 {%include summarize-page.html src="/ai-testing"%}
 {%include summarize-page.html src="/testing"%}
+{%include summarize-page.html src="/hill-climbing"%}
 
 ## Igor's Predictions, Insights, and Mental Models
 

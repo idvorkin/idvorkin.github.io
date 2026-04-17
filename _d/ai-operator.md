@@ -115,6 +115,8 @@ This is compound engineering. You're not just shipping the task in front of you;
 
 The operator skill: treat every in-the-loop moment as a signal, not a setback. The place you got stuck today is the place you're about to automate away tomorrow — and _that_ is how you climb out of the loop for good.
 
+The same compounding logic applies to algorithms, not just operator skills. [Eval-driven hill climbing](/hill-climbing) lets an agent climb on top of its own previous best run after run; the winning recipe then becomes infrastructure, and the eval becomes a regression guard on every future output. You do the compounding; the agent does the climbing.
+
 ## A Note on Companion AIs
 
 _Related: [Larry the Life Coach](/larry) · [AI Relationships](/ai-relationships)_

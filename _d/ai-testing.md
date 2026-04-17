@@ -121,6 +121,8 @@ Let's start with promptfoo
 
 ## Eval Systems
 
+A good eval isn't the finish line — it's the scoring function that drives a search loop. Once you have one that's cheap, unambiguous, and aligned with what you actually want, the agent can run [eval-driven hill climbing](/hill-climbing) while you look at the final result. The systems below are what make that scoring cheap and repeatable.
+
 ### Human-based blind taste tests Chatbot arena
 
 The gold standard for what LLM is best is asking users to judge. [Chatbot Arena](https://chat.lmsys.org/?leaderboard) does this, from their paper:
