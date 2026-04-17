@@ -179,16 +179,43 @@ Blog posts use a TOC block between HTML fence markers. Igor's convention comes f
 
 **Important:** Do NOT use the `vim-markdown-toc GFM` / `vim-markdown-toc` markers (from the unrelated `mzlogin/vim-markdown-toc` plugin) — Igor's setup won't update those, and there is no Jekyll-side hook that regenerates TOCs. The only working path is the `-start` / `-end` markers.
 
-**To generate or refresh the TOC**, run this from the repo root (works headlessly, doesn't disturb Igor's live nvim session as long as you clean the swap file first):
+**Any `_d/*.md` edit → regen the TOC via `.claude/skills/toc/toc.py` BEFORE commit.** Default levels are 2..3; use `--max 4` for journal-style posts with `#### Entry Title` subsections (ai-journal, life-journal). Never leave `:Mtoc update` as a task for the human — the skill is headless and byte-identical to the nvim plugin.
+
+```bash
+# Default (levels 2..3) — most posts
+.claude/skills/toc/toc.py regenerate _d/FILENAME.md
+
+# Journal-style posts with #### entry subsections
+.claude/skills/toc/toc.py regenerate _d/life-journal.md --max 4
+```
+
+**Fallback (nvim headless)** — only if `toc.py` is unavailable; works but requires clearing the swap file first so it doesn't fight Igor's live nvim session:
 
 ```bash
 rm -f ~/.local/state/nvim/swap/%home%developer%gits%blog4%_d%FILENAME.md.swp
 nvim --headless -n _d/FILENAME.md -c 'Mtoc update' -c 'w' -c 'qa'
 ```
 
-The `:Mtoc update` subcommand (from `idvorkin/markdown-toc.nvim`) finds the fenced block, deletes whatever is between the markers, and regenerates the full TOC from the current headings. Anchors use kramdown-compatible slugs (lowercase, punctuation stripped, spaces → hyphens, em-dashes preserved as double hyphens).
+Both paths emit identical output — kramdown-compatible slugs (lowercase, punctuation stripped, spaces → hyphens, em-dashes preserved as double hyphens). Other `:Mtoc` subcommands if needed: `:Mtoc insert` (create a new fenced block at cursor), `:Mtoc remove` (strip the TOC entirely).
 
-Other subcommands if needed: `:Mtoc insert` (create a new fenced block at cursor), `:Mtoc remove` (strip the TOC entirely).
+## Claude-Facing Instructions in Blog Posts
+
+**Instructions for Claude inside a blog post go in HTML comments, not visible H2 sections.** Pattern: `<!-- INSTRUCTIONS FOR CLAUDE — ... -->` placed between the frontmatter and the first visible section. Jekyll renders nothing; agents parsing the markdown source still find them. **Never leave an `## Instructions for Claude` visible heading in a published post** — it ships to the public page.
+
+```markdown
+---
+layout: post
+title: My Post
+---
+
+<!--
+INSTRUCTIONS FOR CLAUDE — do not render
+- Rule 1 about how to edit this file
+- Rule 2 about cross-linking
+-->
+
+First visible paragraph that becomes the excerpt...
+```
 
 ## AI Journal Entries
 
