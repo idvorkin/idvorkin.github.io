@@ -17,6 +17,7 @@ A journal of random life observations. Keeping track of them so I don't forget w
     - [Four Pairs of Identical Glasses](#four-pairs-of-identical-glasses)
     - [Three Generations of Air Squats](#three-generations-of-air-squats)
     - [Vibe-Coding from the Passenger Seat](#vibe-coding-from-the-passenger-seat)
+    - [The Typewriter Store Is Still Open](#the-typewriter-store-is-still-open)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -86,3 +87,11 @@ The agent read those two messages, wrote the paragraph you're reading, regenerat
 The part that keeps surprising me isn't the autopilot or the agent on its own — each one is a couple years old. It's the composition. Autopilot removes the driver's seat. The mobile agent removes the laptop. What's left is just me, the road, and a thought I can ship before we reach the next exit.
 
 A couple hours later, same seat, same driver — this time dictating structural edits to [AI Operator](/ai-operator). [PR #548](https://github.com/idvorkin/idvorkin.github.io/pull/548) came out of it. One voice message added a section on parallel agents; another reordered the whole post. The agent rebased onto main, regenerated the TOC, and force-pushed. Two voice messages from the passenger seat, and the post has a new spine.
+
+#### The Typewriter Store Is Still Open
+
+We rolled through Bremerton and passed a typewriter store. Open. Lights on. Mechanical typewriters in the window like it was 1962.
+
+I noticed it from [the passenger seat](#vibe-coding-from-the-passenger-seat) of a self-driving car, while dictating a blog post into a Telegram bot for an AI agent to write, commit, and ship. Someone two blocks over is selling and servicing machines that put ink on paper by swinging little hammers.
+
+Both things are running, same afternoon, same town. I don't have a point about it.
