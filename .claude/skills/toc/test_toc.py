@@ -51,10 +51,12 @@ class SlugifyTest(unittest.TestCase):
             "the-230-week-when-cheap-coding-isnt",
         )
 
-    def test_leading_non_alpha_stripped(self):
-        # Leading numbers / symbols dropped until first alphabetic char
-        self.assertEqual(slugify("$230 Week"), "week")
-        self.assertEqual(slugify("2026-04-13 Update"), "update")
+    def test_leading_digits_preserved(self):
+        # mtoc does NOT strip leading non-alpha. Numbers survive.
+        self.assertEqual(
+            slugify("$230 Week"), "230-week"
+        )  # $ dropped by whitelist, rest kept
+        self.assertEqual(slugify("2026-04-13 Update"), "2026-04-13-update")
 
     def test_inline_link_stripped(self):
         self.assertEqual(
@@ -62,10 +64,18 @@ class SlugifyTest(unittest.TestCase):
             "read-this-paper-first",
         )
 
-    def test_emphasis_markers_stripped(self):
+    def test_emphasis_markers_stripped_keeps_internal_underscores(self):
+        # mtoc keeps underscores except at string boundaries. Asterisks and
+        # backticks are dropped by the char whitelist.
         self.assertEqual(
-            slugify("**Bold** and _italic_ and `code`"), "bold-and-italic-and-code"
+            slugify("**Bold** and _italic_ and `code`"), "bold-and-_italic_-and-code"
         )
+
+    def test_leading_trailing_underscores_stripped(self):
+        self.assertEqual(slugify("_heading_"), "heading")
+        self.assertEqual(slugify("___heading___"), "heading")
+        # Internal underscores preserved
+        self.assertEqual(slugify("with_underscore_kept"), "with_underscore_kept")
 
     def test_empty_after_strip_yields_empty(self):
         self.assertEqual(slugify("$$$"), "")
@@ -74,6 +84,20 @@ class SlugifyTest(unittest.TestCase):
     def test_hash_and_slash_dropped(self):
         self.assertEqual(slugify("ai-journal#2026-04-13"), "ai-journal2026-04-13")
         self.assertEqual(slugify("/ai-operator cross-link"), "ai-operator-cross-link")
+
+    def test_duplicate_disambiguation(self):
+        # Matches mtoc: first occurrence as-is, then -1, -2, ...
+        seen: dict[str, int] = {}
+        self.assertEqual(slugify("Infrastructure & CI", seen), "infrastructure--ci")
+        self.assertEqual(slugify("Infrastructure & CI", seen), "infrastructure--ci-1")
+        self.assertEqual(slugify("Infrastructure & CI", seen), "infrastructure--ci-2")
+        self.assertEqual(slugify("Other Heading", seen), "other-heading")
+        self.assertEqual(slugify("Infrastructure & CI", seen), "infrastructure--ci-3")
+
+    def test_no_seen_dict_yields_bare_slug(self):
+        # CLI `slug` one-shot: no deduplication
+        self.assertEqual(slugify("Infrastructure & CI"), "infrastructure--ci")
+        self.assertEqual(slugify("Infrastructure & CI"), "infrastructure--ci")
 
 
 class ParseHeadingsTest(unittest.TestCase):

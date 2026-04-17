@@ -46,27 +46,33 @@ This skill is called by the `changelog` skill's Step 4/Update-TOC phase and is a
 | 1    | TOC was updated (or would be, in dry-run) / validation found duplicates |
 | 2    | Error — fence markers missing, file not found, or similar               |
 
-## Kramdown slug algorithm
+## Slug algorithm (GFM-style, from mtoc)
 
-Ported verbatim from `Kramdown::Converter::Base#generate_id`:
+Ported from `lua/mtoc/toc.lua` (`link_formatters.gfm`). This is **GFM-style**, not kramdown. For the English-heading cases the blog actually uses, kramdown produces the same slugs at render time, so TOC deep links remain valid. Divergence risk is in headings with leading digits/punctuation or underscores — those are rare on this blog.
 
-1. Strip inline markdown: `[text](url)` → `text`, drop `\*\_`` emphasis markers.
-2. Drop leading non-alphabetic characters.
-3. Keep only `[a-zA-Z0-9 space hyphen]` — this is where em-dash, punctuation, currency symbols, colons, question marks, etc. get dropped.
-4. Replace spaces with hyphens.
-5. Lowercase.
+1. Strip inline `[text](url)` links → `text`. Emphasis markers (`*`, `` ` ``) are NOT special-cased — they get dropped by the char whitelist in step 4. Underscores are **kept**.
+2. Lowercase.
+3. Strip **leading AND trailing** `_+`.
+4. Char whitelist: `[a-z0-9 _-]` plus Latin-Ext, Cyrillic, CJK, Hiragana, Katakana, Hangul. Everything else is removed.
+5. Spaces → hyphens.
+6. **Duplicate disambiguation:** within one TOC render, track a `seen` dict. The first occurrence of a slug is bare; the second gets `-1`, third `-2`, etc. Matches mtoc's `existing_headings` counter.
 
-**Consecutive hyphens are preserved.** This is how `"AI & Machine"` becomes `#ai--machine` — the `&` is dropped in step 3, leaving two spaces, which become two hyphens in step 4.
+**Consecutive hyphens are preserved.** This is how `"AI & Machine"` becomes `#ai--machine` — the `&` is dropped in step 4, leaving two spaces, which become two hyphens in step 5.
 
 Worked examples:
 
-| Heading                                    | Slug                                     |
-| ------------------------------------------ | ---------------------------------------- |
-| `AI & Machine Learning`                    | `ai--machine-learning`                   |
-| `A Private Language of One (Cryptophasia)` | `a-private-language-of-one-cryptophasia` |
-| `The $230 Week: When Cheap Coding Isn't`   | `the-230-week-when-cheap-coding-isnt`    |
-| `partial — through Thu 2026-04-16`         | `partial--through-thu-2026-04-16`        |
-| `What do we want our AI friends to do?`    | `what-do-we-want-our-ai-friends-to-do`   |
+| Heading                                           | Slug                                     |
+| ------------------------------------------------- | ---------------------------------------- |
+| `AI & Machine Learning`                           | `ai--machine-learning`                   |
+| `A Private Language of One (Cryptophasia)`        | `a-private-language-of-one-cryptophasia` |
+| `The $230 Week: When Cheap Coding Isn't`          | `the-230-week-when-cheap-coding-isnt`    |
+| `partial — through Thu 2026-04-16`                | `partial--through-thu-2026-04-16`        |
+| `What do we want our AI friends to do?`           | `what-do-we-want-our-ai-friends-to-do`   |
+| `$230 Week` (leading non-alpha kept, `$` dropped) | `230-week`                               |
+| `Infrastructure & CI` (1st, 2nd, 3rd in same doc) | `infrastructure--ci`, `-1`, `-2`         |
+| `_italic_ middle` (leading/trailing `_` stripped) | `italic_-middle`                         |
+
+**CLI `slug` is single-shot (no duplicate context)** — if you need the actually-rendered slug for a duplicate heading, run `regenerate` and read the TOC.
 
 ## Fence markers
 

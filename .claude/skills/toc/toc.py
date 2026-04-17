@@ -36,27 +36,55 @@ TOC_START = "<!-- vim-markdown-toc-start -->"
 TOC_END = "<!-- vim-markdown-toc-end -->"
 
 
-def slugify(heading_text: str) -> str:
-    """Kramdown-compatible slug. Matches `:Mtoc update` + kramdown-rouge defaults.
+def slugify(heading_text: str, seen: dict[str, int] | None = None) -> str:
+    """GFM-style slug matching `idvorkin/markdown-toc.nvim` (`:Mtoc update`).
 
-    Algorithm (from kramdown source, `Kramdown::Converter::Base#generate_id`):
-      1. Strip inline markdown (link syntax, emphasis markers, inline code).
-      2. Drop leading non-alphabetic chars.
-      3. Keep only [a-zA-Z0-9 space hyphen] — this is where em-dash, punctuation,
-         currency, colons etc. get removed. Em-dash flanked by spaces becomes a
-         double-hyphen after step 4.
-      4. Replace spaces with hyphens.
-      5. Lowercase.
+    Algorithm ported from `lua/mtoc/toc.lua` (`link_formatters.gfm`). Note:
+    this is GFM-style, NOT kramdown. For the English-heading cases Igor's
+    blog uses, kramdown produces the same slugs at render time, so the
+    TOC links remain valid. Divergence risk is in headings with leading
+    digits or underscores (rare on this blog).
 
-    Consecutive hyphens are preserved (this is how "AI & Machine" becomes
-    "ai--machine" — the `&` drops, leaving two spaces, which become two hyphens).
+    Steps:
+      1. Strip inline `[text](url)` links → `text`. Emphasis markers
+         (`*`, `` ` ``) are NOT special-cased — they get dropped by the
+         char whitelist in step 4. Underscores are kept.
+      2. Lowercase.
+      3. Strip leading AND trailing `_+`.
+      4. Char whitelist: `[a-z0-9 _-]` plus Latin-Ext, Cyrillic, CJK,
+         Hiragana, Katakana, Hangul. Everything else is removed.
+      5. Spaces → hyphens.
+      6. Optional duplicate disambiguation: if `seen` is provided and this
+         slug has been seen, append `-N` where N starts at 1 for the
+         second occurrence. Pass the same `seen` dict across all calls
+         in one TOC render.
+
+    Pass `seen=None` (default) for one-shot CLI `slug` invocations.
+    Pass a dict when rendering a full TOC so duplicates get suffixed the
+    same way kramdown does when rendering the HTML.
     """
-    text = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", heading_text)  # [t](url) → t
-    text = re.sub(r"[*_`]", "", text)  # drop emphasis / inline-code markers
-    text = re.sub(r"^[^a-zA-Z]+", "", text)  # drop leading non-alpha
-    text = re.sub(r"[^a-zA-Z0-9 \-]", "", text)  # keep only alnum + space + hyphen
+    text = re.sub(r"\[(.+?)\]\(.+?\)", r"\1", heading_text)
+    text = text.lower()
+    text = re.sub(r"^_+", "", text)
+    text = re.sub(r"_+$", "", text)
+    # Char whitelist — alnum + space + underscore + hyphen + common non-ASCII alpha
+    text = re.sub(
+        r"[^a-z0-9 _\-\u00C0-\u00FF\u0400-\u04FF\u4E00-\u9FBF\u3040-\u309F"
+        r"\u30A0-\u30FF\uAC00-\uD7AF]",
+        "",
+        text,
+    )
     text = text.replace(" ", "-")
-    return text.lower()
+
+    if seen is None:
+        return text
+
+    key = text if text else "<NULL>"
+    if key in seen:
+        seen[key] += 1
+        return f"{text}-{seen[key]}"
+    seen[key] = 0
+    return text
 
 
 def parse_headings(text: str, min_level: int, max_level: int) -> list[tuple[int, str]]:
@@ -87,18 +115,29 @@ def parse_headings(text: str, min_level: int, max_level: int) -> list[tuple[int,
         level = len(match.group(1))
         if min_level <= level <= max_level:
             headings.append((level, match.group(2)))
+    if in_fence:
+        print(
+            f"WARN toc: unterminated `{fence_char}` fence — TOC may be incomplete "
+            f"if the closing fence is missing in the document.",
+            file=sys.stderr,
+        )
     return headings
 
 
 def render_toc(headings: list[tuple[int, str]]) -> str:
-    """Render a nested markdown list matching the neovim plugin's output."""
+    """Render a nested markdown list matching the neovim plugin's output.
+
+    Tracks a `seen` dict so duplicate slugs get `-N` suffixed, same as
+    `link_formatters.gfm` in mtoc.
+    """
     if not headings:
         return ""
     top_level = min(level for level, _ in headings)
+    seen: dict[str, int] = {}
     lines: list[str] = []
     for level, text in headings:
         indent = "  " * (level - top_level)
-        lines.append(f"{indent}- [{text}](#{slugify(text)})")
+        lines.append(f"{indent}- [{text}](#{slugify(text, seen)})")
     return "\n".join(lines)
 
 
@@ -113,7 +152,7 @@ def regenerate_toc(
     Raises:
       ValueError — fence markers missing
     """
-    text = file_path.read_text()
+    text = file_path.read_text(encoding="utf-8")
     headings = parse_headings(text, min_level, max_level)
     new_toc = render_toc(headings)
 
@@ -134,13 +173,13 @@ def regenerate_toc(
     if new_text == text:
         return 0
     if not dry_run:
-        file_path.write_text(new_text)
+        file_path.write_text(new_text, encoding="utf-8")
     return 1
 
 
 def find_duplicate_headings(file_path: Path, level: int) -> list[tuple[str, int]]:
     """Return [(heading_text, count), ...] for ### headings (at given level) that repeat."""
-    text = file_path.read_text()
+    text = file_path.read_text(encoding="utf-8")
     headings = parse_headings(text, level, level)
     counts: dict[str, int] = {}
     for _, heading_text in headings:

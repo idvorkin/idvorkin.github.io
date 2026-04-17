@@ -92,20 +92,37 @@ def fetch_repo_commits(
     """Fetch up to `limit` commits since `since` for one repo.
 
     Best-effort: returns `[]` on error rather than propagating, so one broken
-    repo can't abort the whole cross-repo scan.
+    repo can't abort the whole cross-repo scan. Errors are logged to stderr so
+    the caller can see *which* repos were skipped and *why* — this is the
+    difference between "silent failure" (the old behavior) and "degraded
+    success with receipts" (now). Auth failures, rate-limit 403s, 404s, and
+    malformed jq output all become visible on stderr.
     """
     jq = (
-        f'[.[] | select(.commit.committer.date >= "{since.isoformat()}") '
-        f"| {{sha: .sha[0:9], "
-        f'message: (.commit.message | split("\\n")[0]), '
-        f"date: .commit.committer.date}}] "
+        '[.[] | select((.commit.committer.date // "") >= "' + since.isoformat() + '") '
+        "| {sha: .sha[0:9], "
+        'message: (.commit.message | split("\\n")[0]), '
+        'date: (.commit.committer.date // "")}] '
         f"| .[0:{limit}]"
     )
     try:
         raw = run_gh(["api", f"repos/{org}/{name}/commits", "-q", jq])
-    except subprocess.CalledProcessError:
+        return json.loads(raw) if raw.strip() else []
+    except subprocess.CalledProcessError as exc:
+        stderr_tail = (exc.stderr or "").strip()[:200].replace("\n", " ")
+        print(
+            f"WARN scan_repos: fetch_repo_commits({org}/{name}) failed "
+            f"rc={exc.returncode}: {stderr_tail}",
+            file=sys.stderr,
+        )
         return []
-    return json.loads(raw) if raw.strip() else []
+    except json.JSONDecodeError as exc:
+        print(
+            f"WARN scan_repos: fetch_repo_commits({org}/{name}) got malformed "
+            f"JSON from gh: {exc}",
+            file=sys.stderr,
+        )
+        return []
 
 
 def scan(
