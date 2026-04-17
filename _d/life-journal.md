@@ -33,6 +33,7 @@ When adding a new entry:
 4. **Voice**: Plain and direct. Self-aware is fine; preachy isn't. Specific details over abstraction.
 5. **Update TOC**: Regenerate the TOC with `:Mtoc update` (Igor will handle this if you skip it).
 6. **Images**: Maximum one image per entry. If the entry wants more visuals, it probably wants to be its own post.
+7. **Image source**: Two options. For one-off illustrations tied to a single entry, drop the file in `images/` and use `{% include repo_image.html src="<filename>.webp" %}`. For images hosted in the `idvorkin/blob` repo — the raccoon mascot set, reused art, or anything you'd rather keep out of the blog's git history — use `{% include blob_image.html src="blog/<filename>.webp" %}` (upload to blob first; two-PR dance). Default to `repo_image` for one-offs.
 
 ## Upcoming
 
