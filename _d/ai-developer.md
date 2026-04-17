@@ -78,6 +78,8 @@ Focus on specific, bounded use cases with clear success criteria. AI excels at r
 
 Competitive advantage comes from rigorous evaluation frameworks and quality training data, not from hiding prompts. Invest heavily in building comprehensive test suites and data pipelines.
 
+Once the evals exist, they're the scoring function for [eval-driven hill climbing](/hill-climbing) — the agent proposes prompt variants, the evals score them, and you get to a winner faster than any human-in-the-loop iteration could.
+
 ### 4. Use the most expensive model you can as you prove you can solve the problem
 
 Start with the best available model (GPT-4o, Claude Sonnet, etc.) to validate your use case and establish a quality baseline. Don't optimize for cost until you've proven the problem is solvable. Once you have working evals and proven value, then optimize downward to cheaper/faster models while maintaining acceptable quality thresholds.

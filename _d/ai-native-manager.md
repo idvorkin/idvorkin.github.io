@@ -44,6 +44,7 @@ What does it mean to be an engineering manager when AI is rewriting every assump
   - [Cognitive Debt](#cognitive-debt)
   - [Deep Blue](#deep-blue)
   - [Heresies](#heresies)
+  - [Hill Climbing](#hill-climbing)
   - [Infinite Loop](#infinite-loop)
   - [Human In, On, and Out of the Loop](#human-in-on-and-out-of-the-loop)
   - [In Distribution](#in-distribution)
@@ -264,6 +265,10 @@ That's the part that makes heresies so maddening. You correct it. It comes back.
 {% include quote.html text="I've found the most helpful way to rid yourself of persistent heresies is to capture your guiding principles in the agent priming (onboarding). The more coverage you can get with them, the more classes of heresy you can avoid or easily correct simply by pointing at the principle they violate." author="Steve Yegge" url="https://steve-yegge.medium.com/gas-town-emergency-user-manual-cf0e4556d74b" %}
 
 In other words, your CLAUDE.md and onboarding docs aren't just nice-to-haves — they're your immune system against heresies.
+
+### Hill Climbing
+
+{% include summarize-page.html src="/hill-climbing" %}
 
 ### Infinite Loop
 
