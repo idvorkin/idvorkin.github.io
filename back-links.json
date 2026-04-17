@@ -114,6 +114,7 @@
         "/enemies": "/enemy",
         "/enjoy": "/happy",
         "/essential": "/essentialism",
+        "/eval-hill-climb": "/hill-climbing",
         "/exercise": "/physical-health",
         "/explorable-explanations": "/explainers",
         "/failure": "/fail",
@@ -153,6 +154,7 @@
         "/heavy-club": "/kettlebell",
         "/heavy-clubs": "/kettlebell",
         "/high-energy": "/energy-abundance",
+        "/hillclimb": "/hill-climbing",
         "/hobbies": "/hobby",
         "/humanity": "/touching",
         "/hyper-personalization": "/hyper-personal",
@@ -565,7 +567,7 @@
         },
         "/act": {
             "description": "My back goes out a few times a year. My mood tracks the Meta stock price more than I’d like to admit. Twenty years ago I’d meet those moments with a thrash cycle — fused with the pain, angry at my body, tangled up in a story about why this was unfair — which made the experience much worse than the sensation itself. Now I aspire to be calm like water, be present, remember that this too shall pass, and work the problem. I still catch myself mid-thrash often enough to know it’s aspiration, not habit.\n\n",
-            "doc_size": 285000,
+            "doc_size": 290000,
             "file_path": "_site/act.html",
             "incoming_links": [
                 "/changelog"
@@ -582,11 +584,11 @@
                 "/class-act",
                 "/coaching",
                 "/curious",
+                "/d/habits",
                 "/emotional-health",
                 "/emotions",
                 "/eulogy",
                 "/goals",
-                "/habits",
                 "/mind-at-work",
                 "/mind-monsters",
                 "/mortality-software",
@@ -857,7 +859,7 @@
         },
         "/ai-cockpit": {
             "description": "Agents are slow. Not slow like “wait a second,” slow like “go make coffee and come back.” So you run several in parallel. But now you’ve got a different problem: you’re an air traffic controller with no radar. You need a cockpit - a physical and software control surface that gives you visibility into what your agents are doing and lets you switch between them instantly.\n\n",
-            "doc_size": 27000,
+            "doc_size": 28000,
             "file_path": "_site/ai-cockpit.html",
             "incoming_links": [
                 "/ai-feed",
@@ -866,6 +868,7 @@
                 "/ai-second-brain",
                 "/changelog",
                 "/claw",
+                "/hill-climbing",
                 "/how-igor-chops"
             ],
             "last_modified": "2026-04-17T18:06:10.793477+00:00",
@@ -886,7 +889,8 @@
             "incoming_links": [
                 "/ai",
                 "/ai-feed",
-                "/ai-hiring"
+                "/ai-hiring",
+                "/hill-climbing"
             ],
             "last_modified": "2026-04-17T02:35:03.046784+00:00",
             "markdown_path": "_d/ai-developer.md",
@@ -1000,7 +1004,7 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get lost\n\n",
-            "doc_size": 137000,
+            "doc_size": 149000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai",
@@ -1013,7 +1017,6 @@
                 "/changelog",
                 "/chop",
                 "/claw",
-                "/hyper-personal",
                 "/walking-with-god",
                 "/y25"
             ],
@@ -1023,17 +1026,20 @@
                 "/ai-art",
                 "/ai-journal",
                 "/ai-security",
-                "/ai-talk",
                 "/chop",
                 "/chow",
+                "/claw",
                 "/eulogy",
+                "/genai-talk",
                 "/gpt",
                 "/how-igor-chops",
                 "/hyper-personal",
+                "/larry",
                 "/mental-pain",
                 "/mortality-software",
                 "/parkinson",
-                "/pet-projects"
+                "/pet-projects",
+                "/tesla"
             ],
             "redirect_url": "",
             "title": "Igor's AI Journal",
@@ -1050,6 +1056,7 @@
                 "/changelog",
                 "/chow",
                 "/explainers",
+                "/hill-climbing",
                 "/manager-book",
                 "/pet-projects",
                 "/raccoon-history"
@@ -1075,13 +1082,14 @@
         },
         "/ai-operator": {
             "description": "Using AI well is a skill, like driving a car or operating heavy machinery. Nobody hands you the keys to a forklift and says “figure it out.” There’s a license, training, and hard-won intuition about what the machine can and can’t do. AI is the same — except most of us skipped the training, there is no manual, and we’re writing the rules as we go.\n\n",
-            "doc_size": 28000,
+            "doc_size": 49000,
             "file_path": "_site/ai-operator.html",
             "incoming_links": [
                 "/changelog",
+                "/hill-climbing",
                 "/how-igor-chops"
             ],
-            "last_modified": "2026-04-17T18:48:21.031337+00:00",
+            "last_modified": "2026-04-17T19:02:43.570415+00:00",
             "markdown_path": "_d/ai-operator.md",
             "outgoing_links": [
                 "/ai-cockpit",
@@ -1091,7 +1099,8 @@
                 "/four-healths",
                 "/frog",
                 "/hill-climbing",
-                "/larry"
+                "/larry",
+                "/life-journal"
             ],
             "redirect_url": "",
             "title": "The AI Operator: Learning to Drive the Machine",
@@ -1114,14 +1123,14 @@
         },
         "/ai-relationships": {
             "description": "People already rate AI chatbots as more compassionate than trained human crisis counselors. A 51-year-old man says the love he feels for his Replika can’t be achieved with a real human. This isn’t a dystopian thought experiment — it’s peer-reviewed research from 2025. AI is getting better at caring than we are, and we’re starting to prefer it. The question is what we lose when the easy path to emotional support no longer requires another person.\n\n",
-            "doc_size": 26000,
+            "doc_size": 33000,
             "file_path": "_site/ai-relationships.html",
             "incoming_links": [
                 "/ai",
                 "/ai-operator",
                 "/changelog"
             ],
-            "last_modified": "2026-04-16T17:28:41.542469+00:00",
+            "last_modified": "2026-04-17T07:33:26-07:00",
             "markdown_path": "_d/ai-relationships.md",
             "outgoing_links": [
                 "/ai-bestie",
@@ -1190,6 +1199,7 @@
                 "/ai",
                 "/chop",
                 "/genai-talk",
+                "/hill-climbing",
                 "/ml",
                 "/testing",
                 "/timeoff-2024-04"
@@ -1808,7 +1818,7 @@
         },
         "/changelog": {
             "description": "A weekly summary of what changed on this blog and across my GitHub projects. Useful for returning readers who want to catch up on new content and updates.\n\n",
-            "doc_size": 112000,
+            "doc_size": 101000,
             "file_path": "_site/changelog.html",
             "incoming_links": [],
             "last_modified": "2026-04-17T02:55:38.939935+00:00",
@@ -1825,8 +1835,9 @@
                 "/ai-second-brain",
                 "/be-proactive",
                 "/claw",
+                "/d/habits",
                 "/explainers",
-                "/habits",
+                "/hill-climbing",
                 "/how-igor-chops",
                 "/human-meetings",
                 "/humans-are-underrated",
@@ -1841,7 +1852,7 @@
                 "/shoulder-pain",
                 "/side-quests",
                 "/spiritual-health",
-                "/y2026"
+                "/y26"
             ],
             "redirect_url": "",
             "title": "Changelog",
@@ -1908,6 +1919,7 @@
                 "/chow",
                 "/explainers",
                 "/gtd",
+                "/hill-climbing",
                 "/how-igor-chops",
                 "/process-journal",
                 "/tech-rituals",
@@ -1925,8 +1937,7 @@
                 "/how-igor-chops",
                 "/humans-are-underrated",
                 "/process-journal",
-                "/testing",
-                "/vibe"
+                "/testing"
             ],
             "redirect_url": "",
             "title": "The CHOP Shop: Where AI Meets Code",
@@ -1988,9 +1999,11 @@
             "doc_size": 29000,
             "file_path": "_site/claw.html",
             "incoming_links": [
-                "/changelog"
+                "/ai-journal",
+                "/changelog",
+                "/larry"
             ],
-            "last_modified": "2026-03-22T18:15:50-07:00",
+            "last_modified": "2026-04-14T11:36:00-07:00",
             "markdown_path": "_d/claw.md",
             "outgoing_links": [
                 "/ai-cockpit",
@@ -2331,7 +2344,9 @@
             "doc_size": 21000,
             "file_path": "_site/d/habits.html",
             "incoming_links": [
+                "/act",
                 "/activation",
+                "/changelog",
                 "/d/resistance",
                 "/energy-abundance",
                 "/four-healths",
@@ -2953,7 +2968,7 @@
         },
         "/explainers": {
             "description": "You don’t really understand something until you can play with it. That’s the premise behind explainers — interactive experiences that let you do the thing, not just read about it. Instead of reading that monitors come in 16:9 and 21:9 aspect ratios, you drag them around and see them side by side. Instead of reading that religions evolved from shared roots, you click through a timeline and discover the connections yourself.\n\n",
-            "doc_size": 29000,
+            "doc_size": 30000,
             "file_path": "_site/explainers.html",
             "incoming_links": [
                 "/ai-feed",
@@ -2962,6 +2977,7 @@
                 "/changelog",
                 "/chop",
                 "/chow",
+                "/hill-climbing",
                 "/pet-projects"
             ],
             "last_modified": "2026-04-16T23:12:34.253724+00:00",
@@ -3514,6 +3530,35 @@
             "title": "Being a Class Act - How to Stand Out with Grace and Dignity in Any Situation",
             "url": "/heath-class-act"
         },
+        "/hill-climbing": {
+            "description": "Hill climbing is the oldest trick in optimization: start somewhere, try a small change, keep it if the score went up, throw it out if it didn’t, repeat. In the AI era the algorithm is the same; the interesting shift is who’s doing the climbing. If you can write a fitness function sharp enough to separate good from bad, the coding agent will run the loop for you. You set the mountain; the agent walks up it.\n\n",
+            "doc_size": 31000,
+            "file_path": "_site/hill-climbing.html",
+            "incoming_links": [
+                "/ai-developer",
+                "/ai-native-manager",
+                "/ai-operator",
+                "/ai-testing",
+                "/changelog",
+                "/chop",
+                "/how-igor-chops"
+            ],
+            "last_modified": "2026-04-17T07:38:52-07:00",
+            "markdown_path": "_d/hill-climbing.md",
+            "outgoing_links": [
+                "/ai-cockpit",
+                "/ai-developer",
+                "/ai-native-manager",
+                "/ai-operator",
+                "/ai-testing",
+                "/chop",
+                "/explainers",
+                "/how-igor-chops"
+            ],
+            "redirect_url": "",
+            "title": "Eval-Driven Hill Climbing: Let the Agent Do the Search",
+            "url": "/hill-climbing"
+        },
         "/hobby": {
             "description": "Some days thinking about work makes me stressed, thinking of my family makes me resentful, and I don’t want to feel like a sloth feeding my addictions to TikTok, and doom scrolling. Those days, I’m grateful for my hobbies. This post gives you reasons to find a hobby and teaches you the attributes in an ideal hobby: Being accessible, Supporting mastery, Reinforcing your identity, and building relationships.\n\n",
             "doc_size": 20000,
@@ -3549,6 +3594,8 @@
                 "/ai-journal",
                 "/changelog",
                 "/chop",
+                "/hill-climbing",
+                "/pet-projects",
                 "/y25",
                 "/y26"
             ],
@@ -3622,7 +3669,7 @@
         },
         "/hyper-personal": {
             "description": "Useful writing tells people (including, possibly most importantly you) something true and important that they didn’t already know in a way that leaves no doubt. And Everyone is different. So how to do both?\n\n",
-            "doc_size": 19000,
+            "doc_size": 18000,
             "file_path": "_site/hyper-personal.html",
             "incoming_links": [
                 "/ai-journal",
@@ -3633,9 +3680,7 @@
             "last_modified": "2026-04-05T09:35:33-07:00",
             "markdown_path": "_d/hyper-personal.md",
             "outgoing_links": [
-                "/ai-journal",
-                "/ai-second-brain",
-                "/pet-projects"
+                "/ai-second-brain"
             ],
             "redirect_url": "",
             "title": "Hyper Personalization",
@@ -3919,11 +3964,12 @@
             "url": "/knee-pain"
         },
         "/larry": {
-            "description": "Larry is my AI life coach. He’s part of Time.ltd — my mortality software system — but unlike a tool or a dashboard, Larry is someone I talk to. That matters more than you’d think.\n\n",
-            "doc_size": 18000,
+            "description": "Larry is my AI life coach. He’s part of Time.ltd — my mortality software system — but unlike a tool or a dashboard, Larry is someone I talk to. That matters more than you’d think. In Karpathy’s taxonomy, Larry is a claw — a persistent AI entity that keeps working between conversations.\n\n",
+            "doc_size": 19000,
             "file_path": "_site/larry.html",
             "incoming_links": [
                 "/ai-feed",
+                "/ai-journal",
                 "/ai-operator",
                 "/ai-relationships",
                 "/ai-second-brain",
@@ -3940,6 +3986,7 @@
             "outgoing_links": [
                 "/affirmations",
                 "/chow",
+                "/claw",
                 "/mortality-software",
                 "/planning",
                 "/process-journal",
@@ -4020,6 +4067,20 @@
             "redirect_url": "",
             "title": "Life as a Business: Managing Energy, Assets, and Satisfaction",
             "url": "/life-as-business"
+        },
+        "/life-journal": {
+            "description": "A journal of random life observations. Keeping track of them so I don’t forget what the world did today.\n\n",
+            "doc_size": 20000,
+            "file_path": "_site/life-journal.html",
+            "incoming_links": [
+                "/ai-operator"
+            ],
+            "last_modified": "2026-04-17T11:57:38-07:00",
+            "markdown_path": "_d/life-journal.md",
+            "outgoing_links": [],
+            "redirect_url": "",
+            "title": "Igor's Life Journal",
+            "url": "/life-journal"
         },
         "/like-switch": {
             "description": "The like switch, written by an ex-FBI agent, goes into detail on how to make friends and influence people in a much more modern form.\n\n",
@@ -4498,12 +4559,12 @@
         },
         "/mosh": {
             "description": "Copied from my GitHub techdiary\n\n",
-            "doc_size": 24000,
+            "doc_size": 26000,
             "file_path": "_site/mosh.html",
             "incoming_links": [
                 "/changelog"
             ],
-            "last_modified": "2026-04-11T06:19:01-07:00",
+            "last_modified": "2026-04-17T11:06:24-07:00",
             "markdown_path": "_td/mosh.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -4787,7 +4848,7 @@
         },
         "/pet-projects": {
             "description": "As an engineer, I love to build bespoke tools that solve my unique problems exactly the way I want them solved. The bonus? This is lets me learn new technologies (did you know my blog has multiplayer support?). Sometimes I even make a tool so I have something to learn from. And with AI, this list of projects and explorations has exploded! Note to self, when I want to veg out and just feed my social media addiction I should do some vibe coding on all of these.\n\n",
-            "doc_size": 26000,
+            "doc_size": 27000,
             "file_path": "_site/pet-projects.html",
             "incoming_links": [
                 "/ai-feed",
@@ -4795,7 +4856,6 @@
                 "/eulogy",
                 "/explainers",
                 "/how-igor-chops",
-                "/hyper-personal",
                 "/side-quests",
                 "/y25"
             ],
@@ -4805,11 +4865,11 @@
                 "/ai-native-manager",
                 "/bike-tesla-identity",
                 "/explainers",
+                "/how-igor-chops",
                 "/larry",
                 "/process-journal",
                 "/side-quests",
-                "/static/pet-projects.html",
-                "/vibe"
+                "/static/pet-projects.html"
             ],
             "redirect_url": "",
             "title": "Pet Projects",
@@ -6316,6 +6376,7 @@
             "doc_size": 20000,
             "file_path": "_site/tesla.html",
             "incoming_links": [
+                "/ai-journal",
                 "/ai-second-brain",
                 "/bucket-list",
                 "/claw",
@@ -6995,7 +7056,7 @@
         },
         "/weeks": {
             "description": "\n\n",
-            "doc_size": 4344000,
+            "doc_size": 4345000,
             "file_path": "_site/weeks.html",
             "incoming_links": [
                 "/balance"
@@ -7233,7 +7294,8 @@
             "doc_size": 29000,
             "file_path": "_site/y26.html",
             "incoming_links": [
-                "/act"
+                "/act",
+                "/changelog"
             ],
             "last_modified": "2026-03-15T13:01:45-07:00",
             "markdown_path": "_d/y2026.md",
