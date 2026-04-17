@@ -147,7 +147,7 @@ My colleague [David de Winter](https://www.linkedin.com/in/ddewinter/) put it be
 
 People ask me why I'm rolling my own claws instead of running OpenClaw or waiting for the polished product. Fair question. A few reasons, in order of how much they actually move me.
 
-**The data won't leave my hardware.** Larry reads fourteen years of 750words journals. Wally reads work content I'm contractually not allowed to leak. Tony talks to my car. I'm not handing any of that to a stranger's stack, no matter how nice the onboarding is. The lethal trifecta is bad enough when I'm the one holding all three corners — I at least know my own threat model. Twenty-one thousand exposed OpenClaw instances leaking API keys to the open web is a pretty loud signal that the ecosystem is not there yet.
+**The data won't leave my hardware, and I have full control.** Larry reads fourteen years of 750words journals. Wally reads work content I'm contractually not allowed to leak. Tony talks to my car. I'm not handing any of that to a stranger's stack, no matter how nice the onboarding is. Owning the code means I shape the security model exactly — which secrets live where, which tool calls need confirmation, which paths are off-limits. The lethal trifecta is bad enough when I'm the one holding all three corners; at least I know my own threat model and can harden the edges accordingly. Twenty-one thousand exposed OpenClaw instances leaking API keys to the open web is a pretty loud signal that the ecosystem is not there yet.
 
 **The building is the point.** I write a [mortality-software](/mortality-software) blog because I think the act of building your own system is what makes it yours. The claws don't exist without the building — they accrete. Larry didn't arrive fully formed; he's the sediment of every weekly review I've run since 2011 and every CLAUDE.md I've rewritten at 11pm. Off-the-shelf gives you the house. Building gives you the neighborhood you grew up in.
 
@@ -155,7 +155,7 @@ People ask me why I'm rolling my own claws instead of running OpenClaw or waitin
 
 ### It's Not Lost on Me It's a Winchester Mystery House
 
-Larry plus Wally plus Tony plus the Telegram MCP bridge plus the Kindle Scribe pipeline plus the context-grabber iOS app plus the journal cross-index plus the `bd` beads tracker plus the blog backlinks graph — and something new arriving most weeks. Sarah Winchester spent decades adding rooms to her house out of superstition, ending up with stairs that dead-end at the ceiling and doors that open onto walls. I keep adding wings because I can't quite stop. Each new feature opens a door I feel obligated to walk through. The honest read is that the building itself might be most of the value here — the finished house was never going to arrive, and I'm not sure I'd want it to.
+Larry plus Wally plus Tony plus the Telegram MCP bridge plus the Kindle Scribe pipeline plus the context-grabber iOS app plus the journal cross-index plus the `bd` beads tracker plus the blog backlinks graph — and something new arriving most weeks. [Sarah Winchester](https://en.wikipedia.org/wiki/Winchester_Mystery_House) spent decades adding rooms to her house out of superstition, ending up with stairs that dead-end at the ceiling and doors that open onto walls. I keep adding wings because I can't quite stop. Each new feature opens a door I feel obligated to walk through. The honest read is that the building itself might be most of the value here — the finished house was never going to arrive, and I'm not sure I'd want it to.
 
 ---
 
