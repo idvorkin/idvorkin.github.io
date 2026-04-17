@@ -2,6 +2,7 @@
 layout: post
 title: "Igor's Life Journal"
 permalink: /life-journal
+imagefeature: /images/pod-detective.webp
 ---
 
 A journal of random life observations. Keeping track of them so I don't forget what the world did today.
@@ -9,7 +10,6 @@ A journal of random life observations. Keeping track of them so I don't forget w
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [Instructions for Claude: Creating Journal Entries](#instructions-for-claude-creating-journal-entries)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
   - [2026-04-17](#2026-04-17)
@@ -23,19 +23,26 @@ A journal of random life observations. Keeping track of them so I don't forget w
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-## Instructions for Claude: Creating Journal Entries
+<!--
+INSTRUCTIONS FOR CLAUDE — Creating Journal Entries
 
-This is Igor's journal of life observations — moments worth recording but not essay-length. Think quantified-self mishaps, relationship moments, health observations, parenting stories, weird things the world did today.
+This is Igor's journal of life observations — moments worth recording but not
+essay-length. Think quantified-self mishaps, relationship moments, health
+observations, parenting stories, weird things the world did today.
 
 When adding a new entry:
 
-1. **Date Section**: Add new entries at the top of the Diary section with format `### YYYY-MM-DD`
-2. **Entry Title**: Each individual vignette gets an `#### Entry Title` heading
-3. **Length**: 2-4 short paragraphs per entry. If it wants to be longer, it probably wants to be its own post.
-4. **Voice**: Plain and direct. Self-aware is fine; preachy isn't. Specific details over abstraction.
-5. **Update TOC**: Regenerate the TOC with `:Mtoc update` (Igor will handle this if you skip it).
-6. **Images**: Maximum one image per entry. If the entry wants more visuals, it probably wants to be its own post.
-7. **Image source**: Two options. For one-off illustrations tied to a single entry, drop the file in `images/` and use `{% include repo_image.html src="<filename>.webp" %}`. For images hosted in the `idvorkin/blob` repo — the raccoon mascot set, reused art, or anything you'd rather keep out of the blog's git history — use `{% include blob_image.html src="blog/<filename>.webp" %}` (upload to blob first; two-PR dance). Default to `repo_image` for one-offs.
+1. Date Section: Add new entries at the top of the Diary section with format `### YYYY-MM-DD`
+2. Entry Title: Each individual vignette gets an `#### Entry Title` heading
+3. Length: 2-4 short paragraphs per entry. If it wants to be longer, it probably wants to be its own post.
+4. Voice: Plain and direct. Self-aware is fine; preachy isn't. Specific details over abstraction.
+5. Update TOC: run `.claude/skills/toc/toc.py regenerate _d/life-journal.md` before committing. Do not skip.
+6. Images: Maximum one image per entry. If the entry wants more visuals, it probably wants to be its own post.
+7. Image source: Two options. For one-off illustrations tied to a single entry, drop the file in `images/` and use `{% include repo_image.html src="<filename>.webp" %}`. For images hosted in the `idvorkin/blob` repo — the raccoon mascot set, reused art, or anything you'd rather keep out of the blog's git history — use `{% include blob_image.html src="blog/<filename>.webp" %}` (upload to blob first; two-PR dance). Default to `repo_image` for one-offs.
+
+This block is intentionally HTML-commented so it stays invisible to blog
+readers but remains discoverable to any agent that reads the markdown source.
+-->
 
 ## Upcoming
 
