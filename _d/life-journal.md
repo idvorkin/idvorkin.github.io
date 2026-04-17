@@ -73,6 +73,8 @@ Except: the other day, corner of my eye, I saw him trying it. An air squat in th
 
 Zach just got his license. He's driving the Tesla on autopilot, which means the passenger seat is mine and my hands are free. I don't need a laptop to use that time either. My phone is the keyboard. I fire a voice message at Telegram, a Claude agent on the dev VM at home picks it up, drafts, opens a PR, and pings me back. The car is an office, the phone is an IDE, and the infrastructure is a kid who finally turned sixteen.
 
+![raccoon in passenger seat vibe-coding on phone](/images/vibe-coding-passenger.webp)
+
 This entry is the proof. The prompt that produced it was literally:
 
 > "Life journal now that Zach can drive (well via auto poilot) I can be easily vibe coding form the car"
@@ -86,3 +88,5 @@ The agent read those two messages, wrote the paragraph you're reading, regenerat
 The part that keeps surprising me isn't the autopilot or the agent on its own — each one is a couple years old. It's the composition. Autopilot removes the driver's seat. The mobile agent removes the laptop. What's left is just me, the road, and a thought I can ship before we reach the next exit.
 
 A couple hours later, same seat, same driver — this time dictating structural edits to [AI Operator](/ai-operator). [PR #548](https://github.com/idvorkin/idvorkin.github.io/pull/548) came out of it. One voice message added a section on parallel agents; another reordered the whole post. The agent rebased onto main, regenerated the TOC, and force-pushed. Two voice messages from the passenger seat, and the post has a new spine.
+
+![teenage raccoon driving with dad raccoon vibe-coding in passenger seat — generational handoff](/images/vibe-coding-handoff.webp)
