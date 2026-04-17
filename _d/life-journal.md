@@ -33,6 +33,7 @@ When adding a new entry:
 4. **Voice**: Plain and direct. Self-aware is fine; preachy isn't. Specific details over abstraction.
 5. **Update TOC**: Regenerate the TOC with `:Mtoc update` (Igor will handle this if you skip it).
 6. **Images**: Maximum one image per entry. If the entry wants more visuals, it probably wants to be its own post.
+7. **Image format**: Use the inline blob include — `{% include blob_image.html src="blog/<filename>.webp" %}`. Do NOT use local `![alt](/images/...)` paths. Images live in the `idvorkin/blob` repo under `blog/`; upload there first (two-PR dance: blob PR merges before blog PR) and reference via the include. Matches `ai-operator.md`, `balloon.md`, `enabling-environment.md` convention.
 
 ## Upcoming
 
@@ -86,4 +87,4 @@ The agent read those two messages, wrote the paragraph you're reading, regenerat
 
 A couple hours later, same seat, same driver — this time dictating structural edits to [AI Operator](/ai-operator). [PR #548](https://github.com/idvorkin/idvorkin.github.io/pull/548) came out of it. One voice message added a section on parallel agents; another reordered the whole post. The agent rebased onto main, regenerated the TOC, and force-pushed. Two voice messages from the passenger seat, and the post has a new spine.
 
-![teenage raccoon driving with dad raccoon vibe-coding in passenger seat — generational handoff](/images/vibe-coding-handoff.webp)
+{% include blob_image.html src="blog/vibe-coding-handoff.webp" %}
