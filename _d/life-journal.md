@@ -65,7 +65,7 @@ Two weeks ago I just decided to fight through the progressives. Wore them, got t
 
 My dad used to just bust out air squats in the middle of whatever. Kitchen, living room, waiting for something to finish on the stove — ten squats, back to whatever he was doing. It wasn't a workout. It was a tic. He'd also do other random body-weight stuff: calf raises while standing in a line, a few pushups against a counter. The weirder the exercise, the better — that was the whole aesthetic.
 
-Now I do it. I don't remember deciding to; it just showed up one day as something my body apparently learned by watching. Air squats while the kettle boils, calf raises at the sink, a few pushups against the desk between meetings. Zach has caught me at it plenty of times and given me the teenage eye-roll that says *please don't*.
+Now I do it. I don't remember deciding to; it just showed up one day as something my body apparently learned by watching. Air squats while the kettle boils, calf raises at the sink, a few pushups against the desk between meetings. Zach has caught me at it plenty of times and given me the teenage eye-roll that says _please don't_.
 
 Except: the other day, corner of my eye, I saw him trying it. An air squat in the kitchen when he thought nobody was looking. He will absolutely not admit it, and I did not say anything — call attention and the habit dies before it takes root. But it landed. Three generations of weird body-weight exercises, transmitted by osmosis. Things travel down the family line whether you want them to or not. The air squats got through.
 
@@ -84,3 +84,5 @@ Followed a minute later by the meta refinement:
 The agent read those two messages, wrote the paragraph you're reading, regenerated the TOC, pushed a branch, and opened a PR for me to review. I didn't type any of the markdown. I dictated two sentences from the passenger seat of a car driven by my teenager.
 
 The part that keeps surprising me isn't the autopilot or the agent on its own — each one is a couple years old. It's the composition. Autopilot removes the driver's seat. The mobile agent removes the laptop. What's left is just me, the road, and a thought I can ship before we reach the next exit.
+
+A couple hours later, same seat, same driver — this time dictating structural edits to [AI Operator](/ai-operator). [PR #548](https://github.com/idvorkin/idvorkin.github.io/pull/548) came out of it. One voice message added a section on parallel agents; another reordered the whole post. The agent rebased onto main, regenerated the TOC, and force-pushed. Two voice messages from the passenger seat, and the post has a new spine.

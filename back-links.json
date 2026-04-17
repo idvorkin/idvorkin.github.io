@@ -1087,7 +1087,8 @@
             "incoming_links": [
                 "/changelog",
                 "/hill-climbing",
-                "/how-igor-chops"
+                "/how-igor-chops",
+                "/life-journal"
             ],
             "last_modified": "2026-04-17T19:02:43.570415+00:00",
             "markdown_path": "_d/ai-operator.md",
@@ -4075,9 +4076,11 @@
             "incoming_links": [
                 "/ai-operator"
             ],
-            "last_modified": "2026-04-17T11:57:38-07:00",
+            "last_modified": "2026-04-17T19:07:34.959080+00:00",
             "markdown_path": "_d/life-journal.md",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/ai-operator"
+            ],
             "redirect_url": "",
             "title": "Igor's Life Journal",
             "url": "/life-journal"
