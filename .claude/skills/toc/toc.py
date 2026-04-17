@@ -1,39 +1,43 @@
 #!/usr/bin/env -S uv run --script
 # /// script
-# requires-python = ">=3.11"
+# requires-python = ">=3.13"
+# dependencies = [
+#   "typer",
+#   "rich",
+# ]
 # ///
-"""Regenerate, validate, or test markdown TOCs — same rules as idvorkin/markdown-toc.nvim.
+"""Regenerate, validate, or compute kramdown slugs for markdown TOCs.
 
-Fence markers and kramdown slugification match the `:Mtoc update` command so
-this tool and the neovim plugin produce byte-identical output against the
-same input. Either one can regenerate a TOC; both can edit any blog post.
-
-Commands:
-
-  toc.py regenerate <file>                    # rewrite TOC between fence markers
-  toc.py regenerate <file> --min 2 --max 3    # restrict heading levels (default 2..3)
-  toc.py regenerate <file> --dry-run          # print what would change, don't write
-  toc.py validate <file>                      # fail if any ### heading text repeats
-  toc.py validate <file> --level 2            # validate a different heading level
-  toc.py slug "Some Heading Text"             # print the kramdown slug, one-shot
+Matches `idvorkin/markdown-toc.nvim`'s `:Mtoc update` byte-for-byte — same
+GFM-style slug algorithm, same fence markers. Either this tool or the nvim
+plugin can edit any blog post's TOC.
 
 Exit codes:
   0   no change / validation passed
   1   TOC was updated / validation failed
   2   file has no fence markers or other error
-
-Stdlib-only. Cross-platform. Safe to run over any markdown file in this repo.
 """
 
 from __future__ import annotations
 
-import argparse
 import re
-import sys
 from pathlib import Path
+from typing import Annotated
+
+import typer
+from rich.console import Console
 
 TOC_START = "<!-- vim-markdown-toc-start -->"
 TOC_END = "<!-- vim-markdown-toc-end -->"
+
+stderr = Console(stderr=True)
+stdout = Console()
+
+app = typer.Typer(
+    help="Regenerate, validate, or compute kramdown slugs for markdown TOCs.",
+    add_completion=False,
+    no_args_is_help=True,
+)
 
 
 def slugify(heading_text: str, seen: dict[str, int] | None = None) -> str:
@@ -116,10 +120,9 @@ def parse_headings(text: str, min_level: int, max_level: int) -> list[tuple[int,
         if min_level <= level <= max_level:
             headings.append((level, match.group(2)))
     if in_fence:
-        print(
-            f"WARN toc: unterminated `{fence_char}` fence — TOC may be incomplete "
-            f"if the closing fence is missing in the document.",
-            file=sys.stderr,
+        stderr.print(
+            f"[yellow]WARN[/] toc: unterminated `{fence_char}` fence — TOC may be "
+            f"incomplete if the closing fence is missing in the document."
         )
     return headings
 
@@ -187,62 +190,56 @@ def find_duplicate_headings(file_path: Path, level: int) -> list[tuple[str, int]
     return sorted((k, v) for k, v in counts.items() if v > 1)
 
 
-def main() -> int:
-    parser = argparse.ArgumentParser(
-        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
-    )
-    sub = parser.add_subparsers(dest="cmd", required=True)
-
-    p_regen = sub.add_parser("regenerate", help="Rewrite the TOC in a markdown file")
-    p_regen.add_argument("file", type=Path)
-    p_regen.add_argument(
-        "--min", type=int, default=2, help="Minimum heading level (default 2)"
-    )
-    p_regen.add_argument(
-        "--max", type=int, default=3, help="Maximum heading level (default 3)"
-    )
-    p_regen.add_argument("--dry-run", action="store_true")
-
-    p_val = sub.add_parser("validate", help="Check for duplicate headings at a level")
-    p_val.add_argument("file", type=Path)
-    p_val.add_argument(
-        "--level", type=int, default=3, help="Heading level to check (default 3)"
-    )
-
-    p_slug = sub.add_parser("slug", help="Print the kramdown slug for a heading")
-    p_slug.add_argument("text")
-
-    args = parser.parse_args()
-
-    if args.cmd == "slug":
-        print(slugify(args.text))
-        return 0
-
-    if args.cmd == "validate":
-        duplicates = find_duplicate_headings(args.file, args.level)
-        if not duplicates:
-            print(f"OK — no duplicate H{args.level} headings in {args.file}")
-            return 0
-        print(
-            f"FAIL — duplicate H{args.level} headings in {args.file}:", file=sys.stderr
-        )
-        for text, count in duplicates:
-            print(f"  {count}× '{text}'", file=sys.stderr)
-        return 1
-
-    # regenerate
+@app.command(help="Rewrite the TOC block in a markdown file")
+def regenerate(
+    file: Annotated[Path, typer.Argument(help="Markdown file to update")],
+    min_level: Annotated[int, typer.Option("--min", help="Minimum heading level")] = 2,
+    max_level: Annotated[int, typer.Option("--max", help="Maximum heading level")] = 3,
+    dry_run: Annotated[
+        bool, typer.Option("--dry-run", help="Preview without writing")
+    ] = False,
+) -> None:
+    """Exit 0 if already in sync, 1 if updated, 2 if fence markers missing."""
     try:
-        changed = regenerate_toc(args.file, args.min, args.max, args.dry_run)
+        changed = regenerate_toc(file, min_level, max_level, dry_run)
     except ValueError as exc:
-        print(f"Error: {exc}", file=sys.stderr)
-        return 2
-
+        stderr.print(f"[red]Error:[/] {exc}")
+        raise typer.Exit(code=2)
     if changed:
-        print(f"{'Would update' if args.dry_run else 'Updated'} TOC in {args.file}")
-        return 1
-    print(f"TOC in {args.file} already in sync")
-    return 0
+        stdout.print(
+            f"{'Would update' if dry_run else 'Updated'} TOC in [cyan]{file}[/]"
+        )
+        raise typer.Exit(code=1)
+    stdout.print(f"TOC in [cyan]{file}[/] already in sync")
+
+
+@app.command(
+    help="Fail if any heading text at the given level repeats (broken anchors)"
+)
+def validate(
+    file: Annotated[Path, typer.Argument(help="Markdown file to check")],
+    level: Annotated[int, typer.Option("--level", help="Heading level to check")] = 3,
+) -> None:
+    """Exit 0 if clean, 1 if duplicates found."""
+    duplicates = find_duplicate_headings(file, level)
+    if not duplicates:
+        stdout.print(
+            f"[green]OK[/] — no duplicate H{level} headings in [cyan]{file}[/]"
+        )
+        return
+    stderr.print(f"[red]FAIL[/] — duplicate H{level} headings in [cyan]{file}[/]:")
+    for text, count in duplicates:
+        stderr.print(f"  [yellow]{count}×[/] '{text}'")
+    raise typer.Exit(code=1)
+
+
+@app.command(help="Print the GFM/mtoc slug for a heading (single-shot, no dedup)")
+def slug(
+    text: Annotated[str, typer.Argument(help="Heading text to slugify")],
+) -> None:
+    """Print to stdout. Use `regenerate` for dedup-aware slugs in a full TOC."""
+    print(slugify(text))
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    app()

@@ -1,36 +1,43 @@
 #!/usr/bin/env -S uv run --script
 # /// script
-# requires-python = ">=3.11"
+# requires-python = ">=3.13"
+# dependencies = [
+#   "typer",
+#   "rich",
+# ]
 # ///
 """Detect and remove partial-week entries in the blog changelog.
 
 Before running the changelog skill mid-week, check whether the top-most
 `## Week of YYYY-MM-DD` entry falls within the current ISO week. If so,
 it is a partial snapshot left by an earlier run — the next run should
-merge it, which is easiest by deleting the old entry and regenerating
-fresh from git history.
+merge it by deleting the old entry and regenerating fresh from git history.
 
-Commands:
-
-  partial_week.py check                      # JSON report to stdout
-  partial_week.py check --today 2026-04-16   # override today (testing)
-  partial_week.py delete                     # remove detected partial in place
-  partial_week.py delete --dry-run           # show what would change
-
-Stdlib-only. Cross-platform (no GNU `date -d` dependency).
+JSON output on stdout so the changelog skill can parse decision fields.
+Cross-platform (no GNU `date -d` dependency).
 """
 
 from __future__ import annotations
 
-import argparse
 import datetime as dt
 import json
 import re
-import sys
 from dataclasses import asdict, dataclass
 from pathlib import Path
+from typing import Annotated
+
+import typer
+from rich.console import Console
 
 CHANGELOG_DEFAULT = Path("_d/changelog.md")
+
+stderr = Console(stderr=True)
+
+app = typer.Typer(
+    help="Detect and remove partial-week entries in the blog changelog.",
+    add_completion=False,
+    no_args_is_help=True,
+)
 
 
 @dataclass
@@ -134,47 +141,51 @@ def delete_partial(
     return summary
 
 
-def main() -> int:
-    parser = argparse.ArgumentParser(
-        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
-    )
-    sub = parser.add_subparsers(dest="cmd", required=True)
+@app.command(help="Report whether a partial-week entry is present (no mutations)")
+def check(
+    changelog: Annotated[Path, typer.Option(help="Changelog path")] = CHANGELOG_DEFAULT,
+    today: Annotated[
+        dt.datetime | None,
+        typer.Option(help="Override today (YYYY-MM-DD, for testing)"),
+    ] = None,
+) -> None:
+    """JSON report to stdout. Fields: should_merge, start_date, reason, etc."""
+    today_date = today.date() if today else dt.date.today()
+    report = analyze(changelog, today_date)
+    print(json.dumps(asdict(report), indent=2))
 
-    for name in ("check", "delete"):
-        sp = sub.add_parser(name, help=f"{name} partial-week entry")
-        sp.add_argument("--changelog", type=Path, default=CHANGELOG_DEFAULT)
-        sp.add_argument("--today", type=dt.date.fromisoformat, default=None)
-        if name == "delete":
-            sp.add_argument("--dry-run", action="store_true")
 
-    args = parser.parse_args()
-    today = args.today or dt.date.today()
-
-    report = analyze(args.changelog, today)
-
-    if args.cmd == "check":
-        print(json.dumps(asdict(report), indent=2))
-        return 0
+@app.command(help="Remove the detected partial-week entry in place")
+def delete(
+    changelog: Annotated[Path, typer.Option(help="Changelog path")] = CHANGELOG_DEFAULT,
+    today: Annotated[
+        dt.datetime | None,
+        typer.Option(help="Override today (YYYY-MM-DD, for testing)"),
+    ] = None,
+    dry_run: Annotated[
+        bool, typer.Option("--dry-run", help="Preview without writing")
+    ] = False,
+) -> None:
+    """JSON summary to stdout. Exits 1 if should_merge was True but nothing matched."""
+    today_date = today.date() if today else dt.date.today()
+    report = analyze(changelog, today_date)
 
     if not report.should_merge:
         print(json.dumps({**asdict(report), "action": "no-op"}, indent=2))
-        return 0
+        return
 
-    assert report.most_recent_entry is not None  # guaranteed by should_merge
-    summary = delete_partial(args.changelog, report.most_recent_entry, args.dry_run)
+    assert report.most_recent_entry is not None
+    summary = delete_partial(changelog, report.most_recent_entry, dry_run)
     print(json.dumps({**asdict(report), "action": summary}, indent=2))
-    # Defensive: should_merge promised a deletable section. If the regex didn't
-    # match anything, Step 0 of the changelog skill will now think the delete
-    # succeeded and patch-and-add. Fail loudly instead. Dry-run is exempt.
-    if not args.dry_run and summary["section_removed"] == 0:
-        print(
-            "ERROR: should_merge was True but delete_partial matched nothing "
-            "(regex mismatch?). The partial entry is still in the file.",
-            file=sys.stderr,
+    # Defensive: should_merge promised a deletable section. If the regex
+    # matched nothing, Step 0 MANDATORY would trust a misleading exit 0.
+    if not dry_run and summary["section_removed"] == 0:
+        stderr.print(
+            "[red]ERROR:[/] should_merge was True but delete_partial matched "
+            "nothing (regex mismatch?). The partial entry is still in the file."
         )
-        return 1
-    return 0
+        raise typer.Exit(code=1)
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    app()
