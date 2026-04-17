@@ -159,12 +159,32 @@ I want to do remote development on linux, the best way to do this is mosh (inste
     1) Lower latency
     2) Reconnects to session.
 
-Setup on iOS
+### Blink + Tailscale SSH on iOS
 
-- Install Blink
-- Copy public key to clipboard, and mail it to yourself to install into the AMI @ ssh
+[Blink](https://blink.sh/) is a real iOS terminal — true SSH, true keyboard handling, scriptable. Pair it with [Tailscale SSH](https://tailscale.com/kb/1193/tailscale-ssh) and key management goes away entirely: `tailscaled` on the server authenticates the connection against your tailnet identity. No keys to copy, no `authorized_keys` to maintain.
 
-Setup on Server (AMI)
+Setup:
+
+1. Install the Tailscale iOS app and sign in with the same account as the server.
+2. On the server: `tailscale up --ssh`.
+3. In Blink: `ssh user@<magic-dns-name>` — no key, no password.
+
+Optional Mosh upgrade (resilient over network hops — useful when the iPhone jumps between Wi-Fi and cellular):
+
+```bash
+mosh --install-static user@host
+```
+
+Blink auto-installs `mosh-server` on the remote on first connect.
+
+**Gotcha — iOS notifications must be enabled for the Tailscale app.** If your tailnet ACL uses `check` mode, the iOS app gets a time-sensitive re-auth prompt at connection time. With notifications off, the prompt is silently dropped and the Blink SSH connection hangs with no error. Fix: enable notifications for the Tailscale iOS app, or tap "Reauthenticate" in the Tailscale app before connecting. See [tailscale/tailscale#4997](https://github.com/tailscale/tailscale/issues/4997).
+
+Sources:
+
+- [Blink docs — Tailscale + Mosh](https://docs.blink.sh/integrations/tailscale+mosh)
+- [tailscale/tailscale#4997](https://github.com/tailscale/tailscale/issues/4997) (the silent-hang gotcha)
+
+### Legacy Setup on Server (AMI)
 
 - sudo yum install mosh
 - In AWS console open UDP ports 60000-61000
