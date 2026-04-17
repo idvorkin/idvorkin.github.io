@@ -65,8 +65,7 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
   - [Other Projects (2026-01-25)](#other-projects-2026-01-25)
 
 <!-- vim-markdown-toc-end -->
-
-    <!-- prettier-ignore-end -->
+<!-- prettier-ignore-end -->
 
 ## Week of 2026-04-13
 

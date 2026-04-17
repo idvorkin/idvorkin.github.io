@@ -1493,6 +1493,7 @@
                 "/affirmations",
                 "/agency",
                 "/anxiety",
+                "/changelog",
                 "/d/habits",
                 "/emotions",
                 "/frog",
@@ -1808,7 +1809,7 @@
             "doc_size": 112000,
             "file_path": "_site/changelog.html",
             "incoming_links": [],
-            "last_modified": "2026-04-17T02:40:58.072436+00:00",
+            "last_modified": "2026-04-17T02:55:38.939935+00:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
                 "/act",
@@ -1820,7 +1821,10 @@
                 "/ai-operator",
                 "/ai-relationships",
                 "/ai-second-brain",
+                "/be-proactive",
                 "/claw",
+                "/explainers",
+                "/habits",
                 "/how-igor-chops",
                 "/human-meetings",
                 "/humans-are-underrated",
@@ -2952,6 +2956,7 @@
             "incoming_links": [
                 "/ai-feed",
                 "/ai-native-manager",
+                "/changelog",
                 "/chop",
                 "/chow",
                 "/pet-projects"
