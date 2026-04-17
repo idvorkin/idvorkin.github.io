@@ -18,6 +18,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-04-17](#2026-04-17)
+    - [One Repo, One Token: The Closest You Can Get to Write-Only on GitHub](#one-repo-one-token-the-closest-you-can-get-to-write-only-on-github)
   - [2026-04-13](#2026-04-13)
     - [My Bot Wrote, Their Bot Reviewed, My Bot Pushed Back, Their Bot Said "Oops"](#my-bot-wrote-their-bot-reviewed-my-bot-pushed-back-their-bot-said-oops)
   - [2026-04-12](#2026-04-12)
@@ -244,6 +246,26 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2026-04-17
+
+#### One Repo, One Token: The Closest You Can Get to Write-Only on GitHub
+
+- **TOP Takeaway**: GitHub has no write-only token. Fine-grained PATs only offer _No access_, _Read-only_, or _Read and write_ on `Contents` — pushing commits requires _Read and write_, which drags read along for free. The closest approximation to write-only is **scope a PAT to exactly one throwaway private repo**. The token is still read+write, but on a repo that holds nothing but append-only artifacts you'd be willing to lose. Least privilege here is the **target**, not the **verb**. That's how my blog's weekly changelog workflow archives every Claude transcript to `claude-run-logs-private` without giving the workflow secret the keys to anything else in my account.
+- **Why I needed it**: the [weekly changelog workflow](https://github.com/idvorkin/idvorkin.github.io/blob/main/.github/workflows/changelog.yml) runs Claude Code in CI to scan my public repos and generate `_d/changelog.md`. I want every Claude transcript archived so I can post-hoc audit cost, permission denials, and failure modes — but transcripts contain enough internal context that I don't want them in the public blog repo. GitHub Actions' built-in `GITHUB_TOKEN` can only write to the repo the workflow lives in, so cross-repo archiving needs a real token, and if that token ever leaks (log bleed, cache exposure, compromised runner) the blast radius matters.
+- **Why "write-only" is a myth**: GitHub's fine-grained PATs don't split `contents:read` from `contents:write`. The dropdown offers _No access_ / _Read-only_ / _Read and write_ — that's it. Pushing a commit requires _Read and write_, and the read comes along for free. You cannot revoke read on a repo you can push to. The mitigation is not "make the token weaker" but **shrink what the token can reach to a single repo you're willing to lose**.
+- **The shape of the token**:
+  - Resource owner: `idvorkin`
+  - Repository access: _Only select repositories_ → **just `claude-run-logs-private`**
+  - Permissions: _Contents: Read and write_. Nothing else. No Actions, no PRs, no Issues.
+  - Stored as `CLAUDE_RUN_LOGS_PUSH_TOKEN` on the blog repo's Actions secrets.
+- **The leak mitigations** (all in [`changelog.yml` lines 115-195](https://github.com/idvorkin/idvorkin.github.io/blob/main/.github/workflows/changelog.yml#L115-L195)):
+  - **No token-in-URL**: `git -c http.extraHeader="Authorization: Basic <base64>"` instead of `https://x-access-token:TOKEN@github.com/...`. The URL form persists in `.git/config` AND lands in `/proc/<pid>/cmdline` during the clone window, where any other process on the runner could read it.
+  - **Explicit mask on the base64 form**: `echo "::add-mask::$B64"`. GHA's default secret masker only redacts the raw token bytes — `base64("x-access-token:TOKEN")` is different bytes and would leak verbatim under `set -x` or a future git version that echoed `-c` values on error. Decoding back is trivial.
+  - **`printf` (bash builtin) to feed the pipe**, not `echo $TOKEN | base64` — the builtin keeps the raw token out of any subprocess argv.
+  - **Token stays out of the persistent remote URL**: `-c` is per-invocation; the subsequent `git push` re-passes the same `-c` flag rather than embedding creds in `origin`.
+- **Blast radius check**: if this token leaks tomorrow, the attacker can read and push to one repo full of Claude transcripts — embarrassing, not catastrophic. No code access, no PRs, no other secrets, no account takeover. That's the whole point of the throwaway-repo pattern: the token is _designed_ to be the weakest link, so its compromise doesn't cascade.
+- **The pattern in one line**: _one token → one repo → one permission_. Repeat this shape for every cross-repo write you need in CI. If you catch yourself tempted to give a PAT access to "all my repos, just in case," you're building a single point of total failure — split it.
 
 ### 2026-04-13
 
