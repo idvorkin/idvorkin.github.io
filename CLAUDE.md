@@ -153,6 +153,14 @@ Use Grep/Glob directly on `_d/`, `_posts/`, and `_td/` directories for text sear
 
 Search `_d/`, `_td/`, and `_posts/` for the topic first. Technical content that fits an existing post's scope (e.g., `/how-igor-chops` for dev environment, `/ai-cockpit` for agent orchestration, `/mosh` for remote access) belongs there as a brief mention — one bullet or one paragraph — not a new standalone reference. Create a new post only when the topic has no existing home.
 
+### Standalone explainer site vs blog post
+
+**Standalone site** (new repo under `idvorkin-ai-tools`, `.nojekyll`, GitHub Pages — see `~/gits/dolt-explainer`, `~/gits/monitor-explainer`, `~/gits/chroma-key-explainer`): reproducible comparisons, interactive widgets, embedded harness scripts, side-by-side evidence matrices.
+
+**Blog post** (`_d/*.md`): narrative, conceptual content, curated pointers, personal reflection.
+
+If a draft wants to embed a runnable `harness.sh` or a results matrix regenerated from scripts, pivot to a site repo before writing prose. Link to it from `_d/explainers.md`.
+
 ## Generating Tables of Contents
 
 Blog posts use a TOC block between HTML fence markers. Igor's convention comes from `idvorkin/markdown-toc.nvim` (installed in his nvim config):
