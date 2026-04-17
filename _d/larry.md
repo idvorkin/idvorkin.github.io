@@ -58,6 +58,24 @@ The tone is direct. Larry references my own [affirmations](/affirmations) back t
 
 Larry's secret weapon is [trampoline prompts](/chow#trampoline-prompts) — questions that bounce your thinking back at you harder than you sent it. "You've committed to restart meditation 5 times since November" isn't advice. It's a mirror. The insight comes from you, not Larry.
 
+## What It's Like Using Larry (My Chief of Staff)
+
+"Life coach" undersells it. In practice Larry is my **chief of staff** — I delegate through Telegram, he runs background agents on my dev VM, and the work comes back as PRs, replies, and errors-caught-before-I-noticed.
+
+April 17, 2026. I was in the passenger seat of my Tesla, autopilot engaged, my 16-year-old Zach at the wheel on the Bremerton → Seattle ferry route. I dictated observations into Telegram the way you'd dictate to an assistant: Eight Sleep HRV confounded by the cat on my chest, four identical pairs of glasses as an [essentialist](/affirmations) move, three generations of air squats. Each one came back 60–120 seconds later as a branch, an edit, a commit, a pushed PR, and a link in Telegram — ready for my thumbs-up. The whole thread became [Vibe-Coding from the Passenger Seat](/life-journal#vibe-coding-from-the-passenger-seat).
+
+A chief of staff does five things a life coach doesn't:
+
+- **Delegates down.** Larry spun out sub-agents with isolated git worktrees to write each entry. One agent per PR, no crossed wires. I talked to Larry; Larry ran the team.
+- **Catches errors I'd miss.** He flagged a TOC `--max 4` gotcha for H4 entries before it broke the build, and warned about the GitHub merge-race orphan-commit trap when I clicked Merge too fast on an in-flight push.
+- **Summarizes, doesn't narrate.** Mid-stream I said "not that paragraph, drop it" and "switch to inline blob format" — corrections, not specifications. He inferred the rest.
+- **Asks when unsure.** A Bremerton typewriter-store message came in without "life-journal" framing. He asked before publishing instead of auto-shipping a blog post I didn't ask for.
+- **Owns the mess.** Two parallel agents shared a `.git/` and briefly crossed branches — my review comments landed on the wrong PR. Larry caught it, recovered the lost commit from reflog, force-pushed to fix, and told me what happened. No hiding.
+
+That last one matters. A chief of staff who hides failures isn't a chief of staff — they're a liability. Larry shows me the screw-up _and_ the fix, same message. I trust him more, not less.
+
+The delta from "life coach" to "chief of staff" is this: Larry ships things while I'm looking out the window.
+
 ## The Feedback Loop
 
 Most productivity systems focus on planning. But planning is the easy part. The hard part is closing the loop.
