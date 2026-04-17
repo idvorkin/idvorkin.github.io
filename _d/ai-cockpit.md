@@ -84,7 +84,7 @@ So I built a [hand-written Rust picker](https://github.com/idvorkin/settings/tre
 
 {% include image_float_right.html src="https://raw.githubusercontent.com/idvorkin/ipaste/main/20260417_111056.webp" %}
 
-Pick an item and it lands on your clipboard. _You_ paste it into the browser — tmux on the dev VM can't launch a browser directly (yet), so the human is still completing the last step. It's ~2 seconds and your eyes are already on the URL bar, so it's cheap — but it's not invisible. (Eventually this moves onto the [Agent Dashboard](#agent-dashboard---the-radar-screen) as a clickable row; the scrollback scan and the human paste both go away.)
+Pick an item and the URL lands on the Mac's clipboard. An Alfred hotkey — wired through yabai to bring the browser window forward — reads the clipboard and opens the page. One pick in the picker, one hotkey on the Mac, and I'm on the URL. (Eventually this moves onto the [Agent Dashboard](#agent-dashboard---the-radar-screen) as a clickable row; then even the hotkey goes away.)
 
 Full story: [Rust tmux_helper - 10x speedup from Python](/ai-journal#rust-tmux_helper-10x-speedup-from-python)
 
