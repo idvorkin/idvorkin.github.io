@@ -19,11 +19,14 @@ You've heard of agents — AI that can use tools, browse the web, write code. Bu
 <!-- vim-markdown-toc-start -->
 
 - [What Is a Claw?](#what-is-a-claw)
+  - [Aside: Why Claws Get Names](#aside-why-claws-get-names)
 - [How We Got the Word](#how-we-got-the-word)
 - [The Progression: Karpathy's Onion](#the-progression-karpathys-onion)
 - [MoltBook and the Weird](#moltbook-and-the-weird)
 - [Security: The Lethal Trifecta](#security-the-lethal-trifecta)
 - [My Claws](#my-claws)
+- [Why I Build My Own](#why-i-build-my-own)
+  - [It's Not Lost on Me It's a Winchester Mystery House](#its-not-lost-on-me-its-a-winchester-mystery-house)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -139,6 +142,20 @@ Three claws, three domains: life, work, transportation. Where I am on Karpathy's
 That's the next frontier. Not smarter models or better prompts — but claws that keep going, that learn from yesterday, that act on my behalf when I'm not looking. The jump from agent to claw is the jump from tool to colleague.
 
 My colleague [David de Winter](https://www.linkedin.com/in/ddewinter/) put it best, before we even had the word "claw." He said it reminded him of being a kid training Pokémon — you'd carry around your team, each one specialized, and they'd grow more capable as you invested time in them. That's exactly what this feels like. Larry gets better as I feed him more context. Wally gets better as I add more skills and CLAUDE.md files. Tony is still a Magikarp. But the metaphor lands: you're not using a tool, you're training a team. And the trainers who start earliest will have the strongest claws.
+
+## Why I Build My Own
+
+People ask me why I'm rolling my own claws instead of running OpenClaw or waiting for the polished product. Fair question. A few reasons, in order of how much they actually move me.
+
+**The data won't leave my hardware.** Larry reads fourteen years of 750words journals. Wally reads work content I'm contractually not allowed to leak. Tony talks to my car. I'm not handing any of that to a stranger's stack, no matter how nice the onboarding is. The lethal trifecta is bad enough when I'm the one holding all three corners — I at least know my own threat model. Twenty-one thousand exposed OpenClaw instances leaking API keys to the open web is a pretty loud signal that the ecosystem is not there yet.
+
+**The building is the point.** I write a [mortality-software](/mortality-software) blog because I think the act of building your own system is what makes it yours. The claws don't exist without the building — they accrete. Larry didn't arrive fully formed; he's the sediment of every weekly review I've run since 2011 and every CLAUDE.md I've rewritten at 11pm. Off-the-shelf gives you the house. Building gives you the neighborhood you grew up in.
+
+**Customization I'd have to do anyway.** Larry's coaching style is specific — he knows the Three Dragons, he knows Pursuit of Happiness scoring, he knows when to push and when to shut up. Wally knows my team and my domain. Tony has a personality I chose. Any serious claw is going to need this much config, so the "just install it" version was never real — I was going to end up writing most of the glue regardless.
+
+### It's Not Lost on Me It's a Winchester Mystery House
+
+Larry plus Wally plus Tony plus the Telegram MCP bridge plus the Kindle Scribe pipeline plus the context-grabber iOS app plus the journal cross-index plus the `bd` beads tracker plus the blog backlinks graph — and something new arriving most weeks. Sarah Winchester spent decades adding rooms to her house out of superstition, ending up with stairs that dead-end at the ceiling and doors that open onto walls. I keep adding wings because I can't quite stop. Each new feature opens a door I feel obligated to walk through. The honest read is that the building itself might be most of the value here — the finished house was never going to arrive, and I'm not sure I'd want it to.
 
 ---
 
