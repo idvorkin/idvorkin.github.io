@@ -32,6 +32,7 @@ When adding a new entry:
 3. **Length**: 2-4 short paragraphs per entry. If it wants to be longer, it probably wants to be its own post.
 4. **Voice**: Plain and direct. Self-aware is fine; preachy isn't. Specific details over abstraction.
 5. **Update TOC**: Regenerate the TOC with `:Mtoc update` (Igor will handle this if you skip it).
+6. **Images**: Maximum one image per entry. If the entry wants more visuals, it probably wants to be its own post.
 
 ## Upcoming
 
@@ -83,6 +84,6 @@ Followed a minute later by the meta refinement:
 
 The agent read those two messages, wrote the paragraph you're reading, regenerated the TOC, pushed a branch, and opened a PR for me to review. I didn't type any of the markdown. I dictated two sentences from the passenger seat of a car driven by my teenager.
 
-The part that keeps surprising me isn't the autopilot or the agent on its own — each one is a couple years old. It's the composition. Autopilot removes the driver's seat. The mobile agent removes the laptop. What's left is just me, the road, and a thought I can ship before we reach the next exit.
-
 A couple hours later, same seat, same driver — this time dictating structural edits to [AI Operator](/ai-operator). [PR #548](https://github.com/idvorkin/idvorkin.github.io/pull/548) came out of it. One voice message added a section on parallel agents; another reordered the whole post. The agent rebased onto main, regenerated the TOC, and force-pushed. Two voice messages from the passenger seat, and the post has a new spine.
+
+![teenage raccoon driving with dad raccoon vibe-coding in passenger seat — generational handoff](/images/vibe-coding-handoff.webp)
