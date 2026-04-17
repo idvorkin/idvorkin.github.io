@@ -13,6 +13,7 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- vim-markdown-toc-start -->
 
 - [Week of 2026-04-13](#week-of-2026-04-13)
+  - [Eval-Driven Hill Climbing (new post!)](#eval-driven-hill-climbing-new-post)
   - [AI Journal: Bot-vs-Bot, the $230 Week, Two-Process Telegram](#ai-journal-bot-vs-bot-the-230-week-two-process-telegram)
   - [AI Relationships: Cryptophasia and Friction-as-a-Feature](#ai-relationships-cryptophasia-and-friction-as-a-feature)
   - [ACT Rewritten as "Applied Buddhism"](#act-rewritten-as-applied-buddhism)
@@ -69,7 +70,15 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 
 ## Week of 2026-04-13
 
-_71 blog commits + cross-repo activity (mid-week, through Fri 2026-04-17)_
+_72 blog commits + cross-repo activity (mid-week, through Fri 2026-04-17)_
+
+### Eval-Driven Hill Climbing (new post!)
+
+New post on hill climbing as the agent-speed inner loop you get once you have a sharp eval ([blog](/hill-climbing)):
+
+- **The four-piece pattern** — _fitness function_ (the one piece you have to get right: small number, cheap to compute, hard to game), _baseline_, _proposal step_, _keep/reject rule_. Classical greedy local search, but with an LLM picking steps it gets smart quickly — the agent reads eval output and makes educated guesses, not random perturbations. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8be894e35)
+- **Why now** — pre-agent, hill climbing was a human loop running at minutes-per-iteration. Your role collapses to two moments: upfront (define fitness + seed) and after (spot-check, decide if the plateau is the ceiling or you need a different mountain). The 10× speedup isn't agent thinking-speed, it's not paying the context-switching cost of being _in_ the loop. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8be894e35)
+- **Worked examples** — [chroma-key-explainer](https://idvorkin-ai-tools.github.io/chroma-key-explainer/) (raccoon transparent-background fix: 17,385 → 269 residual magenta pixels in 6 attempts = 65× improvement; winner was two-stage `flood4 → tight-fuzz 3%` pipeline) + [larry-voice-samples soprano-iteration](https://idvorkin-ai-tools.github.io/larry-voice-samples/soprano-iteration.html) (tournament + scorecard loop hits 6/10 on Enceladus base). Both explainers ship the full trajectory table with per-step deltas. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8be894e35)
 
 ### AI Journal: Bot-vs-Bot, the $230 Week, Two-Process Telegram
 
