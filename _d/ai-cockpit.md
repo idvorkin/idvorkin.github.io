@@ -80,7 +80,11 @@ So I built a [hand-written Rust picker](https://github.com/idvorkin/settings/tre
 
 **Why it matters for the cockpit:** This is the "stick" that steers. One keystroke opens the picker. Another keystroke lands you in the right agent session. No thinking, no typing paths, no remembering which container is which.
 
-**Scrollback as clipboard.** The same helper has a `pick-links` mode that scans the current pane's scrollback and pulls out every GitHub URL, running server address, and IP. Agent just opened a PR? Hit the hotkey, pick it, you're in the browser. Agent just launched a Jekyll preview? Pick the URL, one tap, the page opens. No mouse-dragging across terminal text, no squinting at a wrapped URL to find the end. Links become first-class objects in the cockpit.
+**`pick-links` — pulling URLs out of scrollback.** `rmux_helper pick-links` scans the current pane's scrollback and surfaces every PR URL, running server address, and IP as a TUI picker.
+
+{% include image_float_right.html src="https://raw.githubusercontent.com/idvorkin/ipaste/main/20260417_111056.webp" %}
+
+Pick an item and it lands on your clipboard. _You_ paste it into the browser — tmux on the dev VM can't launch a browser directly (yet), so the human is still completing the last step. It's ~2 seconds and your eyes are already on the URL bar, so it's cheap — but it's not invisible. (Eventually this moves onto the [Agent Dashboard](#agent-dashboard---the-radar-screen) as a clickable row; the scrollback scan and the human paste both go away.)
 
 Full story: [Rust tmux_helper - 10x speedup from Python](/ai-journal#rust-tmux_helper-10x-speedup-from-python)
 
