@@ -28,6 +28,7 @@ Agents are slow. Not slow like "wait a second," slow like "go make coffee and co
   - [Tmux on Super Steroids - The Multiplexer](#tmux-on-super-steroids---the-multiplexer)
   - [Alfred - The Session Switcher](#alfred---the-session-switcher)
   - [Agent Dashboard - The Radar Screen](#agent-dashboard---the-radar-screen)
+  - [GitHub Views - The Triage Queue](#github-views---the-triage-queue)
   - [Stream Deck - The Physical Buttons](#stream-deck---the-physical-buttons)
   - [Tailscale - The Network](#tailscale---the-network)
 - [How the Pieces Fit Together](#how-the-pieces-fit-together)
@@ -115,6 +116,15 @@ The [Agent Dashboard](https://github.com/idvorkin-ai-tools/agent-dashboard) is t
 I didn't build this. I gave the requirements and Claude built it itself. The irony of AI building its own monitoring tool isn't lost on me.
 
 **Why it matters for the cockpit:** Without this, you're blind. You don't know which agent finished, which one is stuck, which PR needs review. With it, one glance tells you where to focus attention.
+
+### GitHub Views - The Triage Queue
+
+The Agent Dashboard knows what my agents are _doing_ right now. GitHub knows what they've already _filed_. Different instruments, same cockpit. I keep two saved searches pinned in the browser — everything `idvorkin-ai-tools` touched in the last four weeks, sorted by recent activity:
+
+- [Open PRs involving idvorkin-ai-tools](https://github.com/pulls/2294839?q=+%28involves%3Aidvorkin-ai-tools%29+++++state%3Aopen+archived%3Afalse+sort%3Aupdated-desc+created%3A%3E%40today-4w+)
+- [Open issues & PRs involving idvorkin-ai-tools](https://github.com/issues/SSC_kgDOACMG4Q?q=%28involves%3Aidvorkin-ai-tools%29%20state%3Aopen%20archived%3Afalse%20sort%3Aupdated-desc%20created%3A%3E%40today-4w%20is%3Aissue%20is%3Apr)
+
+One tab, one glance, full triage queue. Before I had these, agent PRs on stale branches just vanished from my attention; now the staleness is the sort key.
 
 ### Stream Deck - The Physical Buttons
 
