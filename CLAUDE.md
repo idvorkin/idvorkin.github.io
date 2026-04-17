@@ -19,6 +19,16 @@ Then read: `repo_tmp/chop-conventions/dev-inner-loop/a_readme_first.md`
 
 Use beads (`bd` commands) for task tracking. See the Beads Integration section below for details.
 
+## First commit in a fresh worktree
+
+The `anchor-checker` pre-commit hook reads `_site/*.html` to validate markdown anchors. A freshly cloned worktree has no `_site/` and the hook fails with `Error: _site not found. Run 'jekyll build' first.` Run once before your first commit:
+
+```bash
+bundle exec jekyll build --incremental
+```
+
+Same fix applies if you edit a heading mid-session and the live `jekyll serve` hasn't written it to disk yet — see the screenshot section below.
+
 ## PR Workflow
 
 Repo-mode distinctions (AI-Tools vs Human-Supervised) and the fork-push workflow live in `~/gits/chop-conventions/dev-inner-loop/repo-modes.md`.
