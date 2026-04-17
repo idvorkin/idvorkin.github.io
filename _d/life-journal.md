@@ -15,6 +15,7 @@ A journal of random life observations. Keeping track of them so I don't forget w
   - [2026-04-17](#2026-04-17)
     - [Eight Sleep Thinks My Cat Is Me](#eight-sleep-thinks-my-cat-is-me)
     - [Four Pairs of Identical Glasses](#four-pairs-of-identical-glasses)
+    - [Three Generations of Air Squats](#three-generations-of-air-squats)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -58,3 +59,11 @@ The friction I didn't count on: all the frames are identical. Every swap was a l
 Two weeks ago I just decided to fight through the progressives. Wore them, got through the adjustment, and now I can see great with them. One pair in the pocket, sunglasses in the car. The "workaround tax" — swap, fumble, pick the wrong one — was invisibly expensive for six months. Should have pushed through the adjustment period the first week instead of engineering my way around it.
 
 <!-- TODO: add photos of the four identical frames -->
+
+#### Three Generations of Air Squats
+
+My dad used to just bust out air squats in the middle of whatever. Kitchen, living room, waiting for something to finish on the stove — ten squats, back to whatever he was doing. It wasn't a workout. It was a tic. He'd also do other random body-weight stuff: calf raises while standing in a line, a few pushups against a counter. The weirder the exercise, the better — that was the whole aesthetic.
+
+Now I do it. I don't remember deciding to; it just showed up one day as something my body apparently learned by watching. Air squats while the kettle boils, calf raises at the sink, a few pushups against the desk between meetings. Zach has caught me at it plenty of times and given me the teenage eye-roll that says *please don't*.
+
+Except: the other day, corner of my eye, I saw him trying it. An air squat in the kitchen when he thought nobody was looking. He will absolutely not admit it, and I did not say anything — call attention and the habit dies before it takes root. But it landed. Three generations of weird body-weight exercises, transmitted by osmosis. Things travel down the family line whether you want them to or not. The air squats got through.
