@@ -4071,12 +4071,12 @@
         },
         "/life-journal": {
             "description": "A journal of random life observations. Keeping track of them so I don’t forget what the world did today.\n\n",
-            "doc_size": 20000,
+            "doc_size": 22000,
             "file_path": "_site/life-journal.html",
             "incoming_links": [
                 "/ai-operator"
             ],
-            "last_modified": "2026-04-17T19:07:34.959080+00:00",
+            "last_modified": "2026-04-17T23:11:45.422800+00:00",
             "markdown_path": "_d/life-journal.md",
             "outgoing_links": [
                 "/ai-operator"
