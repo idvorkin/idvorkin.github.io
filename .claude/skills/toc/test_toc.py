@@ -9,6 +9,7 @@ from pathlib import Path
 
 from toc import (
     find_duplicate_headings,
+    find_indented_fence_markers,
     parse_headings,
     regenerate_toc,
     render_toc,
@@ -269,6 +270,76 @@ class DuplicateHeadingsTest(unittest.TestCase):
         path = self._tmp("## Same\n### Same\n")
         self.assertEqual(find_duplicate_headings(path, 3), [])
         self.assertEqual(find_duplicate_headings(path, 2), [])
+
+
+class IndentedFenceMarkerTest(unittest.TestCase):
+    def _tmp(self, text: str) -> Path:
+        fd, path = tempfile.mkstemp(suffix=".md")
+        os.close(fd)
+        Path(path).write_text(text)
+        return Path(path)
+
+    def test_rejects_indented_prettier_ignore_start(self):
+        text = (
+            "intro\n"
+            "\n"
+            "    <!-- prettier-ignore-start -->\n"
+            "<!-- vim-markdown-toc-start -->\n"
+            "- [A](#a)\n"
+            "<!-- vim-markdown-toc-end -->\n"
+            "<!-- prettier-ignore-end -->\n"
+            "\n"
+            "## A\n"
+        )
+        path = self._tmp(text)
+        found = find_indented_fence_markers(path)
+        self.assertEqual(found, [(3, "prettier-ignore-start")])
+
+    def test_rejects_indented_prettier_ignore_end(self):
+        text = (
+            "intro\n"
+            "\n"
+            "<!-- prettier-ignore-start -->\n"
+            "<!-- vim-markdown-toc-start -->\n"
+            "- [A](#a)\n"
+            "<!-- vim-markdown-toc-end -->\n"
+            "\n"
+            "    <!-- prettier-ignore-end -->\n"
+            "\n"
+            "## A\n"
+        )
+        path = self._tmp(text)
+        found = find_indented_fence_markers(path)
+        self.assertEqual(found, [(8, "prettier-ignore-end")])
+
+    def test_accepts_flush_prettier_ignore_markers(self):
+        text = (
+            "intro\n"
+            "\n"
+            "<!-- prettier-ignore-start -->\n"
+            "<!-- vim-markdown-toc-start -->\n"
+            "- [A](#a)\n"
+            "<!-- vim-markdown-toc-end -->\n"
+            "<!-- prettier-ignore-end -->\n"
+            "\n"
+            "## A\n"
+        )
+        path = self._tmp(text)
+        self.assertEqual(find_indented_fence_markers(path), [])
+
+    def test_flags_both_markers_when_both_indented(self):
+        text = (
+            "    <!-- prettier-ignore-start -->\n"
+            "<!-- vim-markdown-toc-start -->\n"
+            "<!-- vim-markdown-toc-end -->\n"
+            "\t<!-- prettier-ignore-end -->\n"
+        )
+        path = self._tmp(text)
+        found = find_indented_fence_markers(path)
+        self.assertEqual(
+            found,
+            [(1, "prettier-ignore-start"), (4, "prettier-ignore-end")],
+        )
 
 
 if __name__ == "__main__":
