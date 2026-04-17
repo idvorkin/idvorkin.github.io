@@ -1997,20 +1997,21 @@
         },
         "/claw": {
             "description": "You’ve heard of agents — AI that can use tools, browse the web, write code. But in early 2026, something new emerged. Not just smarter agents, but a whole new layer on top of them. Andrej Karpathy calls them “claws” — persistent AI entities that keep working when you’re not looking, remember what they’ve learned, and live on your hardware talking to you through WhatsApp. The term comes from OpenClaw, the open-source project that went from a one-hour prototype to the fastest-growing repository in GitHub history. But “claw” has already outgrown the product — it’s becoming the word for this entire category of AI, the way “xerox” became “photocopy.”\n\n",
-            "doc_size": 29000,
+            "doc_size": 32000,
             "file_path": "_site/claw.html",
             "incoming_links": [
                 "/ai-journal",
                 "/changelog",
                 "/larry"
             ],
-            "last_modified": "2026-04-14T11:36:00-07:00",
+            "last_modified": "2026-04-17T23:13:27.157351+00:00",
             "markdown_path": "_d/claw.md",
             "outgoing_links": [
                 "/ai-cockpit",
                 "/ai-journal",
                 "/ai-second-brain",
                 "/larry",
+                "/mortality-software",
                 "/tesla"
             ],
             "redirect_url": "",
@@ -4539,6 +4540,7 @@
                 "/ai-journal",
                 "/balance",
                 "/bike-tesla-identity",
+                "/claw",
                 "/goals",
                 "/how-igor-chops",
                 "/larry",
