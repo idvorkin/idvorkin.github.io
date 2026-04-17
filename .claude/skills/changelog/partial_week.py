@@ -80,7 +80,7 @@ def analyze(changelog_path: Path, today: dt.date) -> Report:
     if not changelog_path.exists():
         return build(None, False, None, f"Changelog not found: {changelog_path}")
 
-    recent = parse_recent_entry(changelog_path.read_text())
+    recent = parse_recent_entry(changelog_path.read_text(encoding="utf-8"))
     if recent is None:
         return build(None, False, None, "No existing week entries")
 
@@ -107,7 +107,7 @@ def delete_partial(
 
     Returns a summary of what was (or would be) removed.
     """
-    text = changelog_path.read_text()
+    text = changelog_path.read_text(encoding="utf-8")
 
     toc_pattern = (
         rf"^- \[Week of {re.escape(entry_date)}\]\([^)]+\)\n"
@@ -130,7 +130,7 @@ def delete_partial(
         "dry_run": dry_run,
     }
     if not dry_run and (toc_subs or sec_subs):
-        changelog_path.write_text(stripped)
+        changelog_path.write_text(stripped, encoding="utf-8")
     return summary
 
 
@@ -163,6 +163,16 @@ def main() -> int:
     assert report.most_recent_entry is not None  # guaranteed by should_merge
     summary = delete_partial(args.changelog, report.most_recent_entry, args.dry_run)
     print(json.dumps({**asdict(report), "action": summary}, indent=2))
+    # Defensive: should_merge promised a deletable section. If the regex didn't
+    # match anything, Step 0 of the changelog skill will now think the delete
+    # succeeded and patch-and-add. Fail loudly instead. Dry-run is exempt.
+    if not args.dry_run and summary["section_removed"] == 0:
+        print(
+            "ERROR: should_merge was True but delete_partial matched nothing "
+            "(regex mismatch?). The partial entry is still in the file.",
+            file=sys.stderr,
+        )
+        return 1
     return 0
 
 
