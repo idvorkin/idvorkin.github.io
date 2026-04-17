@@ -22,6 +22,7 @@ The operators who get better aren't the ones who just practice. They're the ones
 - [You Have a Finite Number of Thinking Tokens](#you-have-a-finite-number-of-thinking-tokens)
 - [You Need to Get On the Loop](#you-need-to-get-on-the-loop)
 - [You Pick the Review Gate](#you-pick-the-review-gate)
+- [You Run Several at Once](#you-run-several-at-once)
 - [You Need to Use Voice](#you-need-to-use-voice)
 - [You Can Throw It Away](#you-can-throw-it-away)
 - [You Ship Good Enough, Then Hill-Climb](#you-ship-good-enough-then-hill-climb)
@@ -100,6 +101,20 @@ Skills get this for free. They live in `idvorkin/chop-conventions` — edits go 
 **Plan gate — review the design, not the implementation.** Work where bugs are cheap at the design layer and expensive afterward: novel problems, big refactors, high-commitment infrastructure. Spec gets iterated until [`architect-review`](https://github.com/idvorkin/chop-conventions/blob/main/skills/architect-review/SKILL.md) converges, _then_ implementation begins. Reviewing 200 lines of spec to catch a missing requirement beats reviewing 2000 lines of code to find the same bug shipped.
 
 **The failure mode is picking the wrong gate.** Code-gating a 400-line AI generation (you'll skim, miss things — should have been output-gate with a throwaway policy). Output-gating code that runs on your machine (it already ran; you're reading it post-hoc as forensics). Match the gate to the blast radius. "Review everything" isn't on-the-loop — it's in-the-loop wearing a tie.
+
+## You Run Several at Once
+
+_Skills: `dispatching-parallel-agents` · [the cockpit](/ai-cockpit)_
+
+Remember what this is all for. Being on-the-loop isn't the end — running _several_ agents at once is.
+
+Agents are slow. Minutes per task, "go make coffee" slow. You are fast. Seconds per decision. Supervising one agent leaves most of your bandwidth idle while you wait. The math only starts working when you saturate your attention across several.
+
+Run three and it flips. Each finishes on its own rhythm, pings you, you glance and redirect. Your attention fills out; the agents — not you — become the bottleneck. This is the regime where AI actually makes you faster, not because any one agent is better, but because _you_ stopped being the slow part.
+
+Every other section of this post serves this goal. Pick the right gate so you're not line-reviewing for three agents. Use voice so firing a new instruction is free. Throw away bad generations so you're not tied to a single agent's salvage operation. Ship good enough so you're not polishing one while two others sit waiting. Compound-engineer the kit so the ceiling keeps climbing.
+
+If you're not running multiple, find what's anchoring you. It's almost always one of these — hovering, polishing, rescuing, or reviewing at the wrong gate. Fix that, reclaim the bandwidth, run another.
 
 ## You Need to Use Voice
 
