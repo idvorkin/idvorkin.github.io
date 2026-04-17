@@ -21,6 +21,7 @@ The operators who get better aren't the ones who just practice. They're the ones
 
 - [You Have a Finite Number of Thinking Tokens](#you-have-a-finite-number-of-thinking-tokens)
 - [You Need to Get On the Loop](#you-need-to-get-on-the-loop)
+- [You Pick the Review Gate](#you-pick-the-review-gate)
 - [You Need to Use Voice](#you-need-to-use-voice)
 - [You Can Throw It Away](#you-can-throw-it-away)
 - [You Ship Good Enough, Then Hill-Climb](#you-ship-good-enough-then-hill-climb)
@@ -72,6 +73,27 @@ Fine. Be fully in. Read every line. But while you're in, your real job isn't jus
 The trap: it's easy to slip into the loop without noticing. You'll think you're on the loop (efficient, trusting), but you're actually _neither_ — half-watching, catching nothing, burning thinking tokens on anxiety instead of judgment. You pay the cost of supervision without the benefit of attention. So keep checking which side you're on. If you can't answer it instantly, you've already drifted.
 
 The operator skill: always know which mode you're in, and always be working your way up. If you're in, be fully in — and look for your exit. If you're on, define your checkpoints and actually let go. Never hover.
+
+## You Pick the Review Gate
+
+_Skills: [`architect-review`](https://github.com/idvorkin/chop-conventions/blob/main/skills/architect-review/SKILL.md)_
+
+On-the-loop doesn't mean the same thing for every task. You pick _where_ the review happens, based on what's at risk and where the check is cheapest. Three gates:
+
+**Output gate — the product is the check.** Work where the artifact surfaces errors just by rendering: explainers, generated images, most blog prose. Iteration is cheap, rollback is a delete. I ship, I look, I re-run if it's off. You're on the loop the moment you see the output.
+
+**Code gate — review every line before it runs.** Code that executes on my machine with side effects I can't easily undo: skills, scripts, tools, anything touching `~/.claude/`. Here the gate is _built into GitHub's permission model, not my discipline_. Two repo modes, two behaviors:
+
+- **Human-owned (`idvorkin/*`)** — branch protection requires review and passing CI. The agent pushes to its fork, opens a PR, can't merge. My merge click is the gate.
+- **Agent-owned (`idvorkin-ai-tools/*`)** — no protection. The agent ships directly. I catch up asynchronously via the [GitHub Views triage queue](/ai-cockpit#github-views---the-triage-queue).
+
+Where a new repo lives is a vote on the gate. Under `idvorkin-ai-tools/*` means "agent ships, I triage async." Under `idvorkin/*` means "I review every PR." The decision happens at `gh repo create` time, not at ship time. "I'll remember to review it" is a promise you break at 10pm on a Tuesday; branch protection is the button you can't turn off when tired.
+
+Skills get this for free. They live in `idvorkin/chop-conventions` — edits go through PR, merged versions install via symlink into `~/.claude/skills/`. The gate fires **once per change at authoring time**, not once per invocation. Cheaper than re-reading the same skill every time an agent fires it.
+
+**Plan gate — review the design, not the implementation.** Work where bugs are cheap at the design layer and expensive afterward: novel problems, big refactors, high-commitment infrastructure. Spec gets iterated until [`architect-review`](https://github.com/idvorkin/chop-conventions/blob/main/skills/architect-review/SKILL.md) converges, _then_ implementation begins. Reviewing 200 lines of spec to catch a missing requirement beats reviewing 2000 lines of code to find the same bug shipped.
+
+**The failure mode is picking the wrong gate.** Code-gating a 400-line AI generation (you'll skim, miss things — should have been output-gate with a throwaway policy). Output-gating code that runs on your machine (it already ran; you're reading it post-hoc as forensics). Match the gate to the blast radius. "Review everything" isn't on-the-loop — it's in-the-loop wearing a tie.
 
 ## You Need to Use Voice
 
