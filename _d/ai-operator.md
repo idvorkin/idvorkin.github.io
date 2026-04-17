@@ -23,6 +23,7 @@ The operators who get better aren't the ones who just practice. They're the ones
 - [You Need to Get On the Loop](#you-need-to-get-on-the-loop)
 - [You Need to Use Voice](#you-need-to-use-voice)
 - [You Can Throw It Away](#you-can-throw-it-away)
+- [You Ship Good Enough, Then Hill-Climb](#you-ship-good-enough-then-hill-climb)
 - [You're a Compound Engineer](#youre-a-compound-engineer)
 - [Where Learnings Live](#where-learnings-live)
 - [Writing Prompts That Don't Leak Thinking](#writing-prompts-that-dont-leak-thinking)
@@ -101,6 +102,14 @@ In AI land, the economics flipped. The code is cheap; the thinking is expensive.
 Worse, rescuing a bad generation is a trap: it pulls you line-by-line back into the loop, burning thinking tokens you can't afford on code the AI could regenerate for free.
 
 Watch for the sunk cost reflex. When you catch yourself trying to rescue a bad generation instead of re-running it, that's the old economics talking. Throw it away. It's free.
+
+## You Ship Good Enough, Then Hill-Climb
+
+_Skills: [`hill-climbing`](/hill-climbing)_
+
+Perfect is the baseline's enemy. You can't hill-climb from nothing — you need a bad version, scored, before there's a hill to walk up. Every minute you spend polishing before that baseline exists is a minute not climbing.
+
+This is [Eat That Frog](/frog) in a new uniform. The hard task never gets easier by delay; procrastination just shrinks the working window. Now it's worse — agents run while you stall, so the perfectionist isn't just delaying their own work, they're idling the agent. Eat the frog. Ship ugly. Let the raccoon climb.
 
 ## You're a Compound Engineer
 

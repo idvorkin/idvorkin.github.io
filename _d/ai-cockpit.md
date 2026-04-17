@@ -29,6 +29,7 @@ Agents are slow. Not slow like "wait a second," slow like "go make coffee and co
   - [Alfred - The Session Switcher](#alfred---the-session-switcher)
   - [Agent Dashboard - The Radar Screen](#agent-dashboard---the-radar-screen)
   - [Stream Deck - The Physical Buttons](#stream-deck---the-physical-buttons)
+  - [Tailscale - The Network](#tailscale---the-network)
 - [How the Pieces Fit Together](#how-the-pieces-fit-together)
 - [What I'm Still Building](#what-im-still-building)
 - [The Meta-Question](#the-meta-question)
@@ -79,6 +80,8 @@ So I built a [hand-written Rust picker](https://github.com/idvorkin/settings/tre
 
 **Why it matters for the cockpit:** This is the "stick" that steers. One keystroke opens the picker. Another keystroke lands you in the right agent session. No thinking, no typing paths, no remembering which container is which.
 
+**Scrollback as clipboard.** The same helper has a `pick-links` mode that scans the current pane's scrollback and pulls out every GitHub URL, running server address, and IP. Agent just opened a PR? Hit the hotkey, pick it, you're in the browser. Agent just launched a Jekyll preview? Pick the URL, one tap, the page opens. No mouse-dragging across terminal text, no squinting at a wrapped URL to find the end. Links become first-class objects in the cockpit.
+
 Full story: [Rust tmux_helper - 10x speedup from Python](/ai-journal#rust-tmux_helper-10x-speedup-from-python)
 
 ### Alfred - The Session Switcher
@@ -122,6 +125,14 @@ The [Stream Deck plugin](https://github.com/idvorkin/streamdeck-igor-vibe) gives
 Physical buttons matter because they don't require visual attention. I can hit "next agent" by feel while reading code on screen. It's the same reason cars have physical knobs for volume instead of touchscreen sliders - you don't want to look away from the road.
 
 Built the plugin in 30 minutes with AI. See the [journal entry](/ai-journal#stream-deck-plugin-in-30-minutes).
+
+### Tailscale - The Network
+
+Every agent runs on a Linux dev VM in my closet. Tailscale puts that VM on a private network that follows me across devices — same hostname, same URLs, from the couch or the treadmill or a coffee shop.
+
+What this buys in the cockpit: every server an agent launches is reachable from wherever I am. Agent runs `jekyll serve` on the dev VM, the preview is at `http://c-5001:4000` from my phone browser. The [link picker](#tmux-on-super-steroids---the-multiplexer) catches server URLs out of the agent's stdout; one tap and the rendered page is on whatever device I have out. No port-forwarding. No ngrok tunnel. No SSH gymnastics.
+
+Without Tailscale, every agent-launched server is a negotiation. With it, servers are just URLs.
 
 ## How the Pieces Fit Together
 
