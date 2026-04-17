@@ -190,6 +190,27 @@ def find_duplicate_headings(file_path: Path, level: int) -> list[tuple[str, int]
     return sorted((k, v) for k, v in counts.items() if v > 1)
 
 
+FENCE_INDENT_RE = re.compile(
+    r"^[ \t]+<!-- prettier-ignore-(start|end) -->", re.MULTILINE
+)
+
+
+def find_indented_fence_markers(file_path: Path) -> list[tuple[int, str]]:
+    """Return [(line_number, marker_name), ...] for indented prettier-ignore markers.
+
+    A `<!-- prettier-ignore-start -->` or `-end -->` with 4+ leading spaces
+    after a blank line becomes a kramdown indented code block and renders
+    as literal HTML text in Jekyll output. Observed in _d/changelog.md
+    where a stray indent on the closing marker rendered the raw comment
+    above the first `## Week of ...` heading.
+    """
+    text = file_path.read_text(encoding="utf-8")
+    return [
+        (text[: m.start()].count("\n") + 1, f"prettier-ignore-{m.group(1)}")
+        for m in FENCE_INDENT_RE.finditer(text)
+    ]
+
+
 @app.command(help="Rewrite the TOC block in a markdown file")
 def regenerate(
     file: Annotated[Path, typer.Argument(help="Markdown file to update")],
@@ -213,24 +234,37 @@ def regenerate(
     stdout.print(f"TOC in [cyan]{file}[/] already in sync")
 
 
-@app.command(
-    help="Fail if any heading text at the given level repeats (broken anchors)"
-)
+@app.command(help="Fail on duplicate H3s or indented prettier-ignore fence markers")
 def validate(
     file: Annotated[Path, typer.Argument(help="Markdown file to check")],
     level: Annotated[int, typer.Option("--level", help="Heading level to check")] = 3,
 ) -> None:
-    """Exit 0 if clean, 1 if duplicates found."""
+    """Run all checks. Prints pass/fail per check, exits 1 if any fail."""
     duplicates = find_duplicate_headings(file, level)
-    if not duplicates:
+    fences = find_indented_fence_markers(file)
+
+    if duplicates:
+        stderr.print(f"[red]FAIL[/] — duplicate H{level} headings in [cyan]{file}[/]:")
+        for text, count in duplicates:
+            stderr.print(f"  [yellow]{count}×[/] '{text}'")
+    else:
         stdout.print(
             f"[green]OK[/] — no duplicate H{level} headings in [cyan]{file}[/]"
         )
-        return
-    stderr.print(f"[red]FAIL[/] — duplicate H{level} headings in [cyan]{file}[/]:")
-    for text, count in duplicates:
-        stderr.print(f"  [yellow]{count}×[/] '{text}'")
-    raise typer.Exit(code=1)
+
+    if fences:
+        stderr.print(
+            f"[red]FAIL[/] — indented prettier-ignore fence markers in [cyan]{file}[/]:"
+        )
+        for line_num, marker in fences:
+            stderr.print(f"  line [yellow]{line_num}[/]: {marker}")
+    else:
+        stdout.print(
+            f"[green]OK[/] — no indented prettier-ignore fence markers in [cyan]{file}[/]"
+        )
+
+    if duplicates or fences:
+        raise typer.Exit(code=1)
 
 
 @app.command(help="Print the GFM/mtoc slug for a heading (single-shot, no dedup)")
