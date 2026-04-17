@@ -24,6 +24,9 @@ The operators who get better aren't the ones who just practice. They're the ones
 - [You Need to Use Voice](#you-need-to-use-voice)
 - [You Can Throw It Away](#you-can-throw-it-away)
 - [You're a Compound Engineer](#youre-a-compound-engineer)
+- [Where Learnings Live](#where-learnings-live)
+- [Writing Prompts That Don't Leak Thinking](#writing-prompts-that-dont-leak-thinking)
+- [The Skills I Use](#the-skills-i-use)
 - [A Note on Companion AIs](#a-note-on-companion-ais)
 
 <!-- vim-markdown-toc-end -->
@@ -31,7 +34,7 @@ The operators who get better aren't the ones who just practice. They're the ones
 
 {% include blob_image_float_right.html src="blog/raccoon-operator.webp" %}
 
-{% include ai-slop.html percent="80" %}
+{% include ai-slop.html percent="85" %}
 
 ## You Have a Finite Number of Thinking Tokens
 
@@ -116,6 +119,91 @@ This is compound engineering. You're not just shipping the task in front of you;
 The operator skill: treat every in-the-loop moment as a signal, not a setback. The place you got stuck today is the place you're about to automate away tomorrow — and _that_ is how you climb out of the loop for good.
 
 The same compounding logic applies to algorithms, not just operator skills. [Eval-driven hill climbing](/hill-climbing) lets an agent climb on top of its own previous best run after run; the winning recipe then becomes infrastructure, and the eval becomes a regression guard on every future output. You do the compounding; the agent does the climbing.
+
+## Where Learnings Live
+
+_Skills: [`learn-from-session`](https://github.com/idvorkin/chop-conventions/blob/main/skills/learn-from-session/SKILL.md)_
+
+Every learning belongs in one of three places. Getting the routing right is half the value — a rule filed as memory never fires, a skill filed as a rule is a wall of text the model skims past.
+
+- **Memory** (`~/.claude/projects/<repo>/memory/`) — facts about you, feedback you've already given, project state, pointers to external systems. Things that should color the next conversation but don't need to fire as a rule. "Igor prefers single quotes in this include." "The bd database lives here." Reference material, not instructions.
+- **CLAUDE.md** — rules that fire on every session. `global.md` for things true on every machine ("don't use `claude-agent-sdk` for batch extraction — 17× the cost"). Project `CLAUDE.md` for repo-specific rules ("always use permalinks, not redirect URLs"). One-liners. If it has steps, it's not a rule — it's a skill.
+- **Skills** (`~/.claude/skills/` for personal, `chop-conventions/skills/` for shared) — executable recipes with steps, scripts, flags. The thing that would take three bash commands and two judgment calls. The [`toc`](https://github.com/idvorkin/idvorkin.github.io/blob/main/.claude/skills/toc/SKILL.md) skill regenerates a TOC matching my nvim plugin's slug rules. A rule can't do that. A recipe can.
+
+Don't trust yourself to remember. The [`learn-from-session`](https://github.com/idvorkin/chop-conventions/blob/main/skills/learn-from-session/SKILL.md) skill reads the transcript at the end of a session, classifies what's worth keeping, and asks permission before writing.
+
+## Writing Prompts That Don't Leak Thinking
+
+_Skills: [`delegate-to-other-repo`](https://github.com/idvorkin/chop-conventions/blob/main/skills/delegate-to-other-repo/SKILL.md) · [`bulk`](https://github.com/idvorkin/chop-conventions/blob/main/skills/bulk/SKILL.md)_
+
+When you dispatch an agent, the prompt should prove _you_ understood the problem. If it doesn't, you're pushing the synthesis onto the agent and hoping its summary matches reality. Two common failure modes:
+
+- **"Based on your findings, fix the bug."** You haven't read the findings. The agent's summary describes what it _intended_ to do, not what it did.
+- **"Implement the plan."** You haven't internalized the plan. The agent is about to execute a design you can't defend.
+
+The fix is specifics. File paths, line numbers, what to change, how you'll know it worked. If you can't write those, you haven't understood the problem yet — don't dispatch.
+
+Bad:
+
+```
+Fix the caching bug we talked about.
+```
+
+Good:
+
+```
+In src/cache.ts:42, the TTL check uses `Date.now() - stored`
+instead of `stored + ttl < Date.now()`. Fix the comparison and
+add a test case for a stored timestamp within the TTL window.
+```
+
+The subagent starts with none of your context. Brief it like a smart colleague who just walked into the room.
+
+## The Skills I Use
+
+_Skills: the whole kit, grouped below_
+
+Operators like to compare models and IDEs. The real leverage is the kit of named recipes you reach for every day. Here's mine this quarter, grouped by when I use them.
+
+**Every session (bookends):**
+
+- [`/up-to-date`](https://github.com/idvorkin/chop-conventions/blob/main/skills/up-to-date/SKILL.md) — sync the repo with upstream before I start. Avoids stale-branch merge pain.
+- [`learn-from-session`](https://github.com/idvorkin/chop-conventions/blob/main/skills/learn-from-session/SKILL.md) — at the end, extract durable lessons and route them to the right CLAUDE.md or skill.
+- [`/changelog`](https://github.com/idvorkin/idvorkin.github.io/blob/main/.claude/skills/changelog/SKILL.md) — weekly rollup across repos with deep links.
+
+**In-session movement:**
+
+- [`/content`](https://github.com/idvorkin/idvorkin.github.io/blob/main/.claude/skills/content/SKILL.md) and [`/ai-content`](https://github.com/idvorkin/idvorkin.github.io/blob/main/.claude/skills/ai-content/SKILL.md) — load blog writing guidelines and wire up the branch and server.
+- `side-edit` — open a file in a side nvim pane so I can watch the agent edit without leaving the conversation.
+- [`delegate-to-other-repo`](https://github.com/idvorkin/chop-conventions/blob/main/skills/delegate-to-other-repo/SKILL.md) — hand off work in another repo without dragging its context into this session.
+- [`bulk`](https://github.com/idvorkin/chop-conventions/blob/main/skills/bulk/SKILL.md) — fan out N similar CLI calls (gh, bd, git) as one parallel step instead of N sequential turns.
+
+**Verification:**
+
+- [`walk-the-store`](https://github.com/idvorkin/idvorkin.github.io/blob/main/.claude/skills/walk-the-store/SKILL.md) — visual walkthrough of the blog to catch regressions.
+- [`show-your-work`](https://github.com/idvorkin/idvorkin.github.io/blob/main/.claude/skills/show-your-work/SKILL.md) — screenshot the changed pages and host them on a gist for the PR body.
+- [`architect-review`](https://github.com/idvorkin/chop-conventions/blob/main/skills/architect-review/SKILL.md) — iterate a design spec until the review passes stabilize.
+- `verification-before-completion` — one last pass before I claim something is done. Evidence before assertions.
+
+**Generation:**
+
+- [`gen-image`](https://github.com/idvorkin/chop-conventions/blob/main/skills/gen-image/SKILL.md) — illustrations via Gemini image API.
+- [`gen-tts`](https://github.com/idvorkin/chop-conventions/blob/main/skills/gen-tts/SKILL.md) and [`gen-stt`](https://github.com/idvorkin/chop-conventions/blob/main/skills/gen-stt/SKILL.md) — speech synthesis and transcription for voice-in / voice-out loops.
+- [`image-explore`](https://github.com/idvorkin/chop-conventions/blob/main/skills/image-explore/SKILL.md) — brainstorm several visual directions in parallel and compare.
+- [`explainers`](https://github.com/idvorkin/chop-conventions/blob/main/skills/explainers/SKILL.md) — scaffold a standalone interactive explainer page for a concept.
+
+**Debugging:**
+
+- [`machine-doctor`](https://github.com/idvorkin/chop-conventions/blob/main/skills/machine-doctor/SKILL.md) — diagnose rogue processes, runaway agents, stale dev servers.
+- [`docs`](https://github.com/idvorkin/chop-conventions/blob/main/skills/docs/SKILL.md) — fetch fresh library docs via Context7 instead of guessing from stale training data.
+- `systematic-debugging` — the discipline of forming a hypothesis before I change a line.
+
+**One-shot specialists:**
+
+- [`toc`](https://github.com/idvorkin/idvorkin.github.io/blob/main/.claude/skills/toc/SKILL.md) — regenerate or validate a TOC using the same slug rules as my nvim plugin.
+- [Hill climbing](/hill-climbing) — the pattern, not a skill. Let an agent climb on top of its own previous best, with an eval as the regression guard.
+
+None of these existed a year ago. In a year, half will be gone and the rest will be better. The kit is a living thing — that's the point.
 
 ## A Note on Companion AIs
 
