@@ -593,7 +593,7 @@ def build(
     ] = "back-links.json",
     threshold_minutes: Annotated[
         int, typer.Option(help="Minimum time difference in minutes to update a file")
-    ] = 5,
+    ] = 60,
 ):
     """
     Build backlinks and write to the specified output file.
@@ -1050,7 +1050,7 @@ def delta(
         typer.Option(
             help="Minimum time difference in minutes to update last_modified field"
         ),
-    ] = 62,
+    ] = 60,
     dry_run: Annotated[
         bool, typer.Option(help="Show what would be updated without making changes")
     ] = False,
