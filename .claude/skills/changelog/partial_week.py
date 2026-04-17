@@ -117,15 +117,15 @@ def delete_partial(
     text = changelog_path.read_text(encoding="utf-8")
 
     toc_pattern = (
-        rf"^- \[Week of {re.escape(entry_date)}\]\([^)]+\)\n"
+        rf"^- \[Week of {re.escape(entry_date)}[^\]]*\]\([^)]+\)\n"
         rf"(?:  - \[[^\]]+\]\([^)]+\)\n)*"
     )
     stripped, toc_subs = re.subn(toc_pattern, "", text, count=1, flags=re.MULTILINE)
 
     section_pattern = (
-        rf"^## Week of {re.escape(entry_date)}\n"
+        rf"^## Week of {re.escape(entry_date)}[^\n]*\n"
         rf".*?"
-        rf"(?=^## Week of \d{{4}}-\d{{2}}-\d{{2}}\n|\Z)"
+        rf"(?=^## Week of \d{{4}}-\d{{2}}-\d{{2}}[^\n]*\n|\Z)"
     )
     stripped, sec_subs = re.subn(
         section_pattern, "", stripped, count=1, flags=re.MULTILINE | re.DOTALL

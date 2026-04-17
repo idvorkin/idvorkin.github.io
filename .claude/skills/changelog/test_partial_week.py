@@ -158,6 +158,22 @@ Older content.
         self.assertEqual(summary["section_removed"], 0)
         self.assertEqual(path.read_text(), before)
 
+    def test_removes_section_with_partial_suffix(self):
+        """Heading like `## Week of 2026-04-13 (partial — through Thu 2026-04-16)`
+        must still match — the suffix is written by earlier mid-week runs."""
+        text = (
+            "- [Week of 2026-04-13 (partial — through Thu 2026-04-16)]"
+            "(#week-of-2026-04-13-partial--through-thu-2026-04-16)\n"
+            "  - [Theme A](#theme-a)\n\n"
+            "## Week of 2026-04-13 (partial — through Thu 2026-04-16)\n\n"
+            "_3 commits this week_\n\n### Theme A\n\nContent.\n"
+        )
+        path = self._write(text)
+        summary = delete_partial(path, "2026-04-13")
+        self.assertEqual(summary["toc_entries_removed"], 1)
+        self.assertEqual(summary["section_removed"], 1)
+        self.assertNotIn("Week of 2026-04-13", path.read_text())
+
     def test_removes_last_section_at_eof(self):
         text = (
             "- [Week of 2026-04-13](#week-of-2026-04-13)\n"
