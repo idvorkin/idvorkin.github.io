@@ -12,7 +12,7 @@ redirect_from:
   - /hillclimb
 ---
 
-Hill climbing is the oldest trick in optimization: start somewhere, try a small change, keep it if the score went up, throw it out if it didn't, repeat. In the AI era the interesting part isn't the algorithm — it's who's doing the climbing. If you can write a fitness function sharp enough to separate good from bad, the coding agent will run the loop for you. You set the mountain; the agent walks up it.
+Hill climbing is the oldest trick in optimization: start somewhere, try a small change, keep it if the score went up, throw it out if it didn't, repeat. In the AI era the algorithm is the same; the interesting shift is who's doing the climbing. If you can write a fitness function sharp enough to separate good from bad, the coding agent will run the loop for you. You set the mountain; the agent walks up it.
 
 {% include ai-slop.html percent="85" %}
 
@@ -40,10 +40,14 @@ Four pieces, and three of them are the agent's problem, not yours:
 
 1. **A fitness function.** A small number (or a weighted combination of numbers) that goes up when the output gets better. Cheap to compute. Hard to game. This is the one piece you have to get right.
 2. **A baseline.** Whatever you're starting from. Score it. Now you have a number to beat.
-3. **A proposal step.** Try a variant — a different prompt, a tighter fuzz, a new parameter. The agent picks the step.
+3. **A proposal step.** Try a variant — a different prompt, a tighter fuzz, a new parameter. The agent picks the step. Prefer a small diff against the running best over a full rewrite; diffs are easier to reason about when the score moves, and easier to back out when it doesn't.
 4. **A keep/reject rule.** Score the new variant. Keep it if it beat the running best; throw it away if it didn't.
 
-Loop until the score plateaus or you run out of budget. That's it. The classical literature calls this greedy local search. In practice, with an LLM picking the steps, it gets smart very quickly — the agent isn't randomly perturbing parameters, it's reading the eval output and making an educated guess about what to try next.
+Loop until the score plateaus or you run out of budget. That's it. The classical literature calls this greedy local search, and assumes blind perturbation. With an LLM picking the steps, it converges faster than that: the agent reads the eval output and makes an educated guess about what to try next.
+
+**Budget and termination.** "Run out of budget" is doing real work in that sentence. Decide upfront what you'll spend — a token cap, a wall-clock cap, or a max-iterations cap — and decide what counts as a plateau (e.g., three consecutive attempts without improving the running best). Without a stopping rule the agent will keep climbing past the point where it has anything left to gain.
+
+**Log the trajectory.** Each attempt should write its parameters, its score, and the agent's one-line rationale to a file the climb appends to. The climb itself isn't deterministic — same prompt, same eval, different runs will explore different branches — so the log is the only record of how _this_ winner was found. It's also the first thing you read when the climb plateaus below where you expected; the shape of the trajectory usually tells you whether you're stuck on a ridge or whether the eval is measuring the wrong thing.
 
 ## Why this matters now
 
@@ -54,7 +58,7 @@ With an agent in the loop, the inner loop runs at agent speed. Ten iterations pe
 - **Upfront:** define the fitness function and seed the first attempt.
 - **After:** look at the final result, spot-check the regressions, decide if the plateau is the real ceiling or if you need a different mountain.
 
-Everything in between is the agent's problem. The 10× speedup isn't about the agent thinking faster than you — it's about not having to pay the context-switching cost of being in the loop.
+Everything in between is the agent's problem. The speedup mostly comes from not paying the context-switching cost of being in the loop, not from the agent thinking faster than you would. An overnight run of fifty attempts isn't exotic; it just requires that you're not the rate-limiter.
 
 ## Worked examples
 
@@ -66,7 +70,7 @@ I wanted raccoon characters with transparent backgrounds. The AI image generator
 
 The fitness function: extract the alpha channel, count residual magenta pixels, count interior holes, weight residual 5× (a pixel of pure magenta is obvious; a transparent pixel in fur isn't). Six attempts later, the score went from 17,385 to 269 — a 65× improvement. The winner was a two-stage `flood4 → tight-fuzz 3%` pipeline.
 
-[**Chroma-key hill-climbing**](https://idvorkin-ai-tools.github.io/chroma-key-explainer/) — the full trajectory table with each step's delta against the running best, per-attempt deep dives, and the "structural detour that failed identically to baseline" moment that tied the whole story together.
+[**Chroma-key hill-climbing**](https://idvorkin-ai-tools.github.io/chroma-key-explainer/) — the full trajectory table with each step's delta against the running best, per-attempt deep dives, and the moment where a deliberately different algorithm (a "structural detour" — a big, non-incremental change to sanity-check we were climbing the right mountain) failed identically to baseline, which tied the whole story together.
 
 ### Soprano: tune a voice prompt with a model-as-judge
 
@@ -101,7 +105,9 @@ A sharp eval has properties on both halves:
 
 If either half is wrong, no amount of agent cleverness will save you. The agent will dutifully climb the hill you described, not the hill you wanted.
 
-The corollary: when the output of a climb disappoints, the first question isn't "did the agent try hard enough?" — it's "is my eval measuring the thing I care about, across the cases that actually matter?" Most failures are eval failures, and most eval failures are test-set failures — not rule failures.
+The corollary: when the output of a climb disappoints, the first question isn't "did the agent try hard enough?" It's "is my eval measuring the thing I care about, across the cases that actually matter?" Most failures are eval failures, and most eval failures are test-set failures, not rule failures.
+
+**Sanity-check the eval before you burn budget.** Hand-score three outputs — a known-good, a known-bad, and one you're unsure about — then run the eval on the same three. If the rankings don't match yours, the eval is wrong and the climb will go sideways. Fix the eval before the agent spends a single token climbing it.
 
 ## When it works, when it doesn't
 
@@ -109,7 +115,7 @@ It works when:
 
 - You can score attempts mechanically (pixel counts, latency, cost, pass/fail on a test set).
 - You can score attempts with a model-as-judge where the judge is consistent (voice quality, prose quality, adherence to a style guide).
-- The change-per-step is small enough that random direction is a reasonable default. Hill climbing is local search; it doesn't do structural leaps well.
+- The change-per-step is small enough that a merely-plausible direction is good enough. The agent will do better than random, but hill climbing is still local search — it doesn't do structural leaps well, and no amount of agent cleverness changes that.
 
 It stops working when:
 
@@ -123,9 +129,9 @@ It stops working when:
 
 [Compound engineering](/ai-operator#youre-a-compound-engineer) is the operator-side version of this post: every session with an AI teaches you something, and the operators who capture those learnings — via retros, CLAUDE.md updates, codified skills — are investing in the operator they'll be next month. The interest compounds.
 
-Hill climbing is the same pattern at the algorithm level. Nothing gets thrown away:
+Hill climbing is the same pattern at the algorithm level. Rejected variants get thrown away — that's greedy local search — but the artifacts that matter accumulate:
 
-- **Within one climb**, every attempt sits on top of the previous running best. The agent doesn't start from scratch each round — it branches from the current champion and asks "can I beat this?" That's just greedy local search, but written down this way it's obviously a compounding process.
+- **Within one climb**, the running best is cumulative. Each attempt branches from the current champion and asks "can I beat this?" The losing variants get dropped, but their _lesson_ often survives in the agent's context — a failed attempt rules out a direction for the next one. That's a compounding process, even though most of the individual outputs are discarded.
 - **Across climbs**, the fitness function is the reusable asset. Once you have a sharp eval for "good transparent raccoon," you don't re-derive it for the next image-processing problem — you adapt it. The eval is the investment; the climbs are the dividends.
 - **Post-climb**, the winner becomes infrastructure. The chroma-key recipe lives in the [`gen-image`](https://github.com/idvorkin/chop-conventions/tree/main/skills/gen-image) skill; the eval runs automatically on every new generation. A problem you solved once keeps solving itself, and every new image arrives pre-verified.
 
