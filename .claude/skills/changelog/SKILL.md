@@ -232,16 +232,20 @@ Notice how the GOOD version includes:
 
 ## Update TOC
 
-After adding a new week, update the TOC at the top of the changelog:
+After adding a new week, regenerate the TOC with the `toc` skill — don't hand-edit:
 
-```markdown
-<!-- vim-markdown-toc-start -->
+```bash
+# Rewrites TOC between <!-- vim-markdown-toc-start --> and -end --> markers
+.claude/skills/toc/toc.py regenerate _d/changelog.md
 
-- [Week of 2026-01-25](#week-of-2026-01-25)
-  - [AI Journal Updates](#ai-journal-updates)
-  - [Theme 2](#theme-2)
-  <!-- vim-markdown-toc-end -->
+# Catches duplicate ### headings that would produce broken anchors
+.claude/skills/toc/toc.py validate _d/changelog.md
+
+# One-shot slug computation for deep links you write by hand
+.claude/skills/toc/toc.py slug "Some Heading Text"
 ```
+
+The tool uses the same kramdown algorithm as `idvorkin/markdown-toc.nvim`'s `:Mtoc update`, so output is byte-identical whether you run the Python tool or the nvim command. Full docs at `.claude/skills/toc/SKILL.md` (also invocable as `/toc`).
 
 ## Cross-Repo Changelog
 
