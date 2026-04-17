@@ -1081,12 +1081,13 @@
                 "/changelog",
                 "/how-igor-chops"
             ],
-            "last_modified": "2026-04-17T18:06:10.793477+00:00",
+            "last_modified": "2026-04-17T18:48:21.031337+00:00",
             "markdown_path": "_d/ai-operator.md",
             "outgoing_links": [
                 "/ai-cockpit",
                 "/ai-relationships",
                 "/balloon",
+                "/explainers",
                 "/four-healths",
                 "/frog",
                 "/hill-climbing",
@@ -2957,6 +2958,7 @@
             "incoming_links": [
                 "/ai-feed",
                 "/ai-native-manager",
+                "/ai-operator",
                 "/changelog",
                 "/chop",
                 "/chow",
