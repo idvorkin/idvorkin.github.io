@@ -8,11 +8,11 @@ permalink: /taxes
 imagefeaturelocal: raccoon-money.webp
 ---
 
-Most of the tax information on the web is a mess. It's confusing because it tries to apply to everyone, and it's often written by non-engineers for non-engineers. This post is the taxes-only slice of my notes — capital gains, Washington State cap-gains mechanics, step-up in basis, and related tax-code levers for a software engineer's life.
+Most of the tax information on the web is a mess. It's confusing because it tries to apply to everyone, and it's often written by non-engineers for non-engineers. This post is the taxes-only slice of my notes — capital gains, Washington State cap-gains mechanics, step-up in basis, retirement-account mechanics (IRAs, 401(k)s, Roth, 529s), and related tax-code levers for a software engineer's life.
 
 {% include local_image_float_right.html src="raccoon-money.webp" %}
 
-For retirement accounts, RSUs, stock options, metrics, health insurance, and money philosophy, see the companion [money post](/money).
+For RSUs, stock options, metrics, health insurance, and money philosophy, see the companion [money post](/money).
 
 <!-- prettier-ignore-start -->
 
@@ -26,6 +26,14 @@ For retirement accounts, RSUs, stock options, metrics, health insurance, and mon
   - [Washington State Capital Gains Tax](#washington-state-capital-gains-tax)
   - [Step-Up in Basis at Death - The Ultimate Tax Escape](#step-up-in-basis-at-death---the-ultimate-tax-escape)
   - [No load index funds and ETFs](#no-load-index-funds-and-etfs)
+- [IRAs Non-Taxable Saving Accounts](#iras-non-taxable-saving-accounts)
+  - [IRAs vs 401Ks](#iras-vs-401ks)
+  - [RMDs Required Minimum Distributions](#rmds-required-minimum-distributions)
+  - [IRA vs Roth IRA](#ira-vs-roth-ira)
+  - [IRA and Roth IRA contribution limits](#ira-and-roth-ira-contribution-limits)
+  - [Back door Roth](#back-door-roth)
+  - [The pro-Rata rule](#the-pro-rata-rule)
+  - [529s](#529s)
 - [Tax-placement Q&A](#tax-placement-qa)
 - [Standard deduction + 0% LTCG](#standard-deduction--0-ltcg)
 
@@ -34,7 +42,7 @@ For retirement accounts, RSUs, stock options, metrics, health insurance, and mon
 
 ## Hannah — assumptions
 
-Everything here assumes you're roughly in Hannah's shoes: a software engineer at a big company, maxing a 401k, earning too much to deduct a Roth, with a 35% federal marginal rate and 15% long-term capital gains rate. Retirement vehicles, 401(k) mechanics, and Roth rules live on the [money post](/money) — this post is just the tax side.
+Everything here assumes you're roughly in Hannah's shoes: a software engineer at a big company, maxing a 401k, earning too much to deduct a Roth, with a 35% federal marginal rate and 15% long-term capital gains rate. Retirement-account mechanics (IRAs, 401(k)s, Roth rules, 529s) are covered below — the RSU grants, stock-option strategy, and money philosophy live on the [money post](/money).
 
 ## Taxable income, and capital gains
 
@@ -165,6 +173,53 @@ With MFs they need to have a capital gains distribution annually as they re-bala
 Digging a bit deeper, it seems like there are Mutual Fund strategies to [avoid capital gains distributions](https://www.bloomberg.com/graphics/2019-vanguard-mutual-fund-tax-dodge/), but I didn't make the time to understand how effective they are. If I understand this correctly, its possible FZROX is using a similar strategy as there were [no capital gains distributions in 2020](https://www.wsj.com/market-data/quotes/mutualfund/FZROX), though there were in 2018-2019.
 
 It seems both ETFs and MFs need to distribute dividends, which are often taxed as income. I don't understand why they can't directly re-invest it.
+
+## IRAs Non-Taxable Saving Accounts
+
+An IRA is an account that grows tax-free. The critical value of the IRA is the tax-free growth. With money not in an IRA you have to pay tax twice 1) when you make the money 2) when the money grows.
+
+IRAs have contribution limits, X, Y, Z
+
+IRAs early withdrawal penalties
+
+IRAs hardship withdrawal
+
+TODO show calculation for Roth growth
+
+TODO show calculation for IRA growth
+
+### IRAs vs 401Ks
+
+A 401k is a special IRA that is set up by your employer that has matching (good thing) but usually fewer choices of what you can invest in (bad thing). Otherwise, it's a regular IRA.
+
+### RMDs Required Minimum Distributions
+
+Once you turn 73, the IRS requires you to start taking Required Minimum Distributions (RMDs) each year from traditional retirement accounts like IRAs and 401(k)s. Your RMD is calculated by dividing your account balance at the end of the previous year by a life expectancy factor from IRS tables. For example, at age 73, the divisor is 26.5, so a $5 million balance would result in a required withdrawal of about $188,679 ($5,000,000 / 26.5). Failing to take your RMD on time can lead to steep penalties, so it's essential to plan ahead and integrate RMDs into your overall retirement income strategy.
+
+### IRA vs Roth IRA
+
+IRA you pay no tax on the way in, but you pay tax on the way out. By contrast with Roth you pay tax before making a contribution, but then pay no tax on the way out.
+
+Assuming your tax rate is the same, it doesn't matter which you choose. If your tax rate goes up post retirement, you're better off with a Roth, and if your tax rate goes down, you're better off with an IRA. A few notes:
+
+1. Your tax rate can go up by moving to a state with higher state taxes (e.g. From WA w/0% state tax to HI w/TK% state tax).
+2. If you've saved a lot, your marginal tax rate might be the same, but your average tax rate (which will be on your retirement withdrawals) is most likely lower.
+
+### IRA and Roth IRA contribution limits
+
+You're limited to how much you can put in your IRA and Roth. Odds are you can't put money into your Roth IRA because you make too much.
+
+### Back door Roth
+
+Tax law is goofy. You can't deposit money into a ROTH since you're over the limit, but you can take money from your IRA and convert into a Roth IRA. But there's a rub - the Pro-Rata rule.
+
+### The pro-Rata rule
+
+Even though you are using after-tax dollars to transfer money to the Roth IRA, you can't do the math like that. The rules (arbitrary) state that the money you transfer is in the ratio of your IRA before and after-tax contributions.
+
+### 529s
+
+An education-only after-tax savings account. You put in money after tax, get tax-free growth, and can use distributions for your kids' or grandkids' education.
 
 ## Tax-placement Q&A
 
