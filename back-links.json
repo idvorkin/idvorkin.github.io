@@ -1082,7 +1082,7 @@
         },
         "/ai-operator": {
             "description": "Using AI well is a skill, like driving a car or operating heavy machinery. Nobody hands you the keys to a forklift and says “figure it out.” There’s a license, training, and hard-won intuition about what the machine can and can’t do. AI is the same — except most of us skipped the training, there is no manual, and we’re writing the rules as we go.\n\n",
-            "doc_size": 49000,
+            "doc_size": 27000,
             "file_path": "_site/ai-operator.html",
             "incoming_links": [
                 "/changelog",
@@ -1090,18 +1090,12 @@
                 "/how-igor-chops",
                 "/life-journal"
             ],
-            "last_modified": "2026-04-17T19:02:43.570415+00:00",
+            "last_modified": "2026-04-18T12:59:30.372311+00:00",
             "markdown_path": "_d/ai-operator.md",
             "outgoing_links": [
                 "/ai-cockpit",
-                "/ai-relationships",
                 "/balloon",
-                "/explainers",
-                "/four-healths",
-                "/frog",
-                "/hill-climbing",
-                "/larry",
-                "/life-journal"
+                "/four-healths"
             ],
             "redirect_url": "",
             "title": "The AI Operator: Learning to Drive the Machine",
@@ -1128,7 +1122,6 @@
             "file_path": "_site/ai-relationships.html",
             "incoming_links": [
                 "/ai",
-                "/ai-operator",
                 "/changelog"
             ],
             "last_modified": "2026-04-17T07:33:26-07:00",
@@ -2975,7 +2968,6 @@
             "incoming_links": [
                 "/ai-feed",
                 "/ai-native-manager",
-                "/ai-operator",
                 "/changelog",
                 "/chop",
                 "/chow",
@@ -3139,7 +3131,6 @@
             "doc_size": 24000,
             "file_path": "_site/frog.html",
             "incoming_links": [
-                "/ai-operator",
                 "/anxiety-management",
                 "/be-proactive",
                 "/d/resistance",
@@ -3539,7 +3530,6 @@
             "incoming_links": [
                 "/ai-developer",
                 "/ai-native-manager",
-                "/ai-operator",
                 "/ai-testing",
                 "/changelog",
                 "/chop",
@@ -3972,7 +3962,6 @@
             "incoming_links": [
                 "/ai-feed",
                 "/ai-journal",
-                "/ai-operator",
                 "/ai-relationships",
                 "/ai-second-brain",
                 "/changelog",
