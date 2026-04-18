@@ -146,6 +146,16 @@ Your compelling first paragraph that serves as the excerpt...
 Rest of post content...
 ```
 
+## Distill, Don't Accrete
+
+When adding content to an existing post, first think about how to distill and integrate — not append. Before writing new paragraphs, ask:
+
+- Can overlapping prose already in the post be replaced with a tighter version of both?
+- Can an existing paragraph absorb this idea?
+- Does this really want a new section, or a single sharpened sentence?
+
+Long-and-loose is the default drift. Short-and-tight is the move. A post that grows should mostly grow sharper, not fatter. Every addition earns its place.
+
 ## Internal Link Guidelines
 
 **Always use permalinks**, not redirect URLs:
