@@ -183,8 +183,6 @@ I use:
 
 I also pay all my credit cards and mortgages from a single account - so that's my source of truth to make sure I'm not missing major stuff (and boy I often am).
 
-
-
 ### Retirement Planning
 
 Check out Boldin
@@ -204,22 +202,43 @@ Short-term capital gains are the same as income, but long-term capital gains (as
 Below is tax rate by income in 2020.
 
 | Tax Rate | Married Filing Jointly |
-| -------- | ------------------------ |
-| 15%      | Up to 488K               |
-| 20%      | Above 488K               |
+| -------- | ---------------------- |
+| 15%      | Up to 488K             |
+| 20%      | Above 488K             |
 
 ### Washington State Capital Gains Tax
 
-Annoyingly for me, WA has a state capital gains tax:
+Washington has a state-level long-term capital gains tax, enacted by [ESSB 5096 (2021)](https://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session%20Laws/Senate/5096-S.SL.pdf) and upheld as an excise tax — not an income tax — by the WA Supreme Court in [Quinn v. State (2023)](https://www.courts.wa.gov/opinions/pdf/1004200.pdf). The 2.9% surcharge tier was added by [ESSB 5813 (2025)](https://lawfilesext.leg.wa.gov/biennium/2025-26/Pdf/Bill%20Reports/Senate/5813-S.E%20SBR%20FBR%2025.pdf), retroactive to Jan 1, 2025. Current schedule (2026, indexed annually):
 
-- The first $270,000 of annual long-term capital gains is exempt from the tax.
-- Gains between $270,001 and $1,270,000 are taxed at 7%.
-- Gains exceeding $1,270,000 are taxed at 9.9%, which includes a new 2.9% surtax on gains over $1 million above the exemption.
+| Annual LTCG (after exemption)      | WA rate                    |
+| ---------------------------------- | -------------------------- |
+| $0 – $278,000 (standard deduction) | 0%                         |
+| $278,001 – $1,278,000              | 7%                         |
+| $1,278,001+                        | 9.9% (7% + 2.9% surcharge) |
 
-This tax applies to individuals, including those with ownership interests in pass-through or disregarded entities that sell or exchange long-term capital assets. However, several types of assets are exempt from this tax, including:
+Authority: [RCW 82.87](https://app.leg.wa.gov/RCW/default.aspx?cite=82.87) · [WA DOR — Capital Gains Tax](https://dor.wa.gov/taxes-rates/other-taxes/capital-gains-tax) · [WA DOR — Tiered rates special notice](https://dor.wa.gov/forms-publications/publications-subject/special-notices/new-tiered-rates-washingtons-capital-gains-tax).
 
-- Real estate
-- Retirement accounts
+The tax applies to individuals, including those with ownership interests in pass-through or disregarded entities that sell or exchange long-term capital assets. Key exemptions:
+
+- Real estate (separately covered by the real-estate excise tax)
+- Retirement accounts (IRAs, 401(k)s) and assets held inside them
+- Some family-owned small business stock, timber, livestock, commercial fishing privileges
+
+Note: WA does **not** conform to the federal [§1202 QSBS exclusion](https://www.irs.gov/pub/irs-drop/rr-98-41.pdf) — qualifying small-business-stock gains are federally excluded but still fully WA-taxable.
+
+**Hypothetical worked example** — a married-filing-jointly household realizing long-term gains in a single year, federal bracket 20% + 3.8% NIIT = 23.8%:
+
+| LTCG realized | Federal (23.8%) | WA state                           | Total    | Effective |
+| ------------- | --------------- | ---------------------------------- | -------- | --------- |
+| $500,000      | $119,000        | ($500K − $278K) × 7% = $15,540     | $134,540 | 26.9%     |
+| $1,000,000    | $238,000        | ($1M − $278K) × 7% = $50,540       | $288,540 | 28.9%     |
+| $2,000,000    | $476,000        | $1M × 7% + $722K × 9.9% = $141,478 | $617,478 | 30.9%     |
+
+The $1.278M kink matters for planning: splitting a $2M realization across two tax years saves roughly the 2.9% surcharge on the incremental ~$722K (~$21K/yr saved by spreading). See [installment sales under IRC §453](https://www.irs.gov/publications/p537) for the standard mechanism.
+
+**Coming in 2028 — millionaires' income tax.** [ESSB 6346](https://lawfilesext.leg.wa.gov/biennium/2025-26/Pdf/Bills/Session%20Laws/Senate/6346-S.SL.pdf) (signed March 30, 2026) layers a 9.9% state income tax on household income above $1M/yr, effective Jan 1, 2028. MFJ couples share a single $1M deduction (not doubled). Credits against WA cap-gains tax and other states' income tax prevent stacking. A legal challenge is in progress; monitor before 2028 planning.
+
+Sources at the federal layer: [IRS Topic 409 — Capital Gains and Losses](https://www.irs.gov/taxtopics/tc409) · [IRS Topic 559 — Net Investment Income Tax](https://www.irs.gov/individuals/net-investment-income-tax) · [Kiplinger 2026 federal LTCG brackets](https://www.kiplinger.com/taxes/capital-gains-tax/602224/capital-gains-tax-rates).
 
 ### Step-Up in Basis at Death - The Ultimate Tax Escape
 
@@ -228,6 +247,7 @@ This tax applies to individuals, including those with ownership interests in pas
 This is one of the most powerful provisions in the U.S. tax code. Your beneficiaries receive a "stepped-up basis" - the tax basis resets to market value on your date of death, completely eliminating capital gains.
 
 **Example:**
+
 - You bought stock for $100K
 - Worth $5M at death
 - Heirs inherit with $5M basis
@@ -244,17 +264,20 @@ As a community property state, Washington provides a massive advantage - **BOTH 
 - Surviving spouse sells: **$0 tax** (saves ~$400K)
 
 **When This Makes Sense:**
+
 - You're 65+ or have health issues
 - Have other assets for living expenses
 - Estate under $13.61M (2024 exemption)
 - Can manage concentration risk
 
 **The "Buy, Borrow, Die" Strategy:**
+
 1. Hold appreciated assets
 2. Borrow against them for expenses (loans aren't taxable)
 3. Die holding assets (heirs get step-up, sell to repay loans)
 
 **Important Caveats:**
+
 - Estate tax applies over $13.61M
 - Doesn't apply to retirement accounts (401k, IRA)
 - Stock could crash before death
@@ -403,11 +426,11 @@ Imagine a 100$ stock, for which you buy/sell a put/call for 1$ with a strike pri
 
 Metrics help you compare different investments and understand their true value. Here are the key ones you'll encounter:
 
-| Metric | What It Measures | Considers Timing? | Best For |
-|--------|-----------------|-------------------|----------|
-| **NPV** | Present value of future cash flows in today's dollars | Yes (you choose discount rate) | Answering "Is this worth more than $X today?" |
-| **ARR** | Simple average annual return | No (all cash treated equally) | Quick comparisons of total returns |
-| **IRR** | Annualized return that accounts for timing | Yes (solves for the discount rate) | Comparing investments with different cash flow patterns |
+| Metric  | What It Measures                                      | Considers Timing?                  | Best For                                                |
+| ------- | ----------------------------------------------------- | ---------------------------------- | ------------------------------------------------------- |
+| **NPV** | Present value of future cash flows in today's dollars | Yes (you choose discount rate)     | Answering "Is this worth more than $X today?"           |
+| **ARR** | Simple average annual return                          | No (all cash treated equally)      | Quick comparisons of total returns                      |
+| **IRR** | Annualized return that accounts for timing            | Yes (solves for the discount rate) | Comparing investments with different cash flow patterns |
 
 ### NPV (Net Present Value), ARR (Annualized Rate of Return), and IRR (Internal Rate of Return)
 
@@ -419,6 +442,7 @@ Example: If you assume 8% discount rate (inflation + opportunity cost), then $10
 Let's say you have $100,000 to invest for 7 years. Here are your options:
 
 **Option 1: Corporate Bond**
+
 - 7-year bond paying 6% annually
 - You receive $6,000/year in interest payments
 - Get your $100,000 back at maturity
@@ -427,6 +451,7 @@ Let's say you have $100,000 to invest for 7 years. Here are your options:
 - **IRR = 6%** (same as ARR since payments are regular)
 
 **Option 2: Growth Stock**
+
 - Buy stock for $100,000
 - No dividends (growth company reinvests everything)
 - Stock price after 7 years: $180,000
@@ -439,6 +464,7 @@ Let's say you have $100,000 to invest for 7 years. Here are your options:
 To verify: $100,000 × (1.0875)^7 = $180,000 ✓
 
 **Option 3: Rental Property**
+
 - Buy property for $100,000 cash
 - Rental income: $3,000/year (3% gross yield - lower rent area)
 - Sell after 7 years for $178,000 (78% appreciation!)
@@ -447,6 +473,7 @@ To verify: $100,000 × (1.0875)^7 = $180,000 ✓
 **Common Mistake:** "I get 3% annually from rent. The property appreciates 78% over 7 years, which is 78% ÷ 7 = 11.14% per year. So my total return is 3% + 11.14% = 14.14% per year!"
 
 **Why this is spectacularly wrong:**
+
 1. The 78% appreciation doesn't compound to 11.14% annually
 2. The correct 78% appreciation over 7 years = (1.78)^(1/7) - 1 = only 8.6% annualized
 3. You can't just add 3% + 8.6% = 11.6% either!
@@ -456,15 +483,16 @@ To verify: $100,000 × (1.0875)^7 = $180,000 ✓
 
 **The Winner?**
 
-| Investment | Simple Interest (Wrong!) | ARR | IRR | Cash Flow |
-|------------|-------------------------|-----|-----|-----------|
-| Bond | 6.00% | 6.00% | 6.00% | Steady yearly |
-| Stock | 11.43% (80% ÷ 7) | 8.75% | 8.75% | Nothing until sale |
-| Real Estate | 14.14% (3% + 11.14%) | 10.32% | 10.15% | Steady + lump sum |
+| Investment  | Simple Interest (Wrong!) | ARR    | IRR    | Cash Flow          |
+| ----------- | ------------------------ | ------ | ------ | ------------------ |
+| Bond        | 6.00%                    | 6.00%  | 6.00%  | Steady yearly      |
+| Stock       | 11.43% (80% ÷ 7)         | 8.75%  | 8.75%  | Nothing until sale |
+| Real Estate | 14.14% (3% + 11.14%)     | 10.32% | 10.15% | Steady + lump sum  |
 
 Real estate wins on returns, but requires active management. The stock is simpler but riskier. The bond is safest but has the lowest return. IRR helps you compare them fairly despite their different cash flow patterns.
 
 **Key Takeaways:**
+
 - Never use simple interest math for multi-year investments - it massively overstates returns
 - ARR shows your true annualized return using compound interest
 - IRR is slightly lower than ARR when you get big gains at the end (like real estate appreciation)
@@ -475,6 +503,7 @@ Real estate wins on returns, but requires active management. The stock is simple
 **Market Cap (Market Capitalization):** The total value of a company = Share Price × Number of Shares
 
 Example:
+
 - Apple: $190 per share × 15.5 billion shares = $2.9 trillion market cap
 - Small startup: $10 per share × 10 million shares = $100 million market cap
 
@@ -485,12 +514,14 @@ Market cap tells you the company's size, not whether it's expensive or cheap!
 P/E = Stock Price ÷ Earnings Per Share
 
 Example:
+
 - Company A: $100 stock, $5 earnings per share → P/E = 20
 - Company B: $10 stock, $0.50 earnings per share → P/E = 20
 
 Both have the same P/E despite different stock prices! They're equally "expensive" relative to earnings.
 
 **The Clever Part:** P/E works regardless of company size:
+
 - P/E = Price per share ÷ Earnings per share
 - P/E = (Market Cap ÷ Shares) ÷ (Total Earnings ÷ Shares)
 - P/E = Market Cap ÷ Total Earnings
@@ -498,16 +529,19 @@ Both have the same P/E despite different stock prices! They're equally "expensiv
 The "per share" cancels out! So you can compare tiny companies to giants.
 
 **What P/E Tells You:**
+
 - P/E = 10: You pay $10 for each $1 of annual earnings (10 years to "earn back" your investment)
 - P/E = 30: You pay $30 for each $1 of annual earnings (market expects high growth)
 - P/E = 100+: Market expects explosive growth (or it's a bubble)
 
 **Common Confusion:**
+
 - High stock price ≠ Expensive company (need to check P/E)
 - Large market cap ≠ Expensive company (Apple at $3T might have lower P/E than a $100M startup)
 - P/E ignores debt, cash, and growth rate (see PEG ratio for growth-adjusted version)
 
 **Real Example:**
+
 - Amazon P/E = 45 (market expects continued growth)
 - Coca-Cola P/E = 25 (mature, steady company)
 - Bank of America P/E = 12 (banks typically have lower multiples)
@@ -516,28 +550,29 @@ A "cheap" P/E of 10 might be expensive if earnings are about to collapse. A "ric
 
 **Top S&P 500 Companies Across Industries: Complete Metrics (2024):**
 
-| # | Company | Industry | Market Cap | P/E | 1-Yr | Dividend | What It Tells You |
-|---|---------|----------|------------|-----|------|----------|-------------------|
-| 1 | Apple | Tech | $3,785B | 32 | +31% | 0.4% | Biggest company, premium valuation |
-| 2 | Nvidia | Chips | $3,289B | 58 | +171% | 0.02% | AI gold rush, extreme growth |
-| 3 | Microsoft | Software | $3,134B | 34 | +14% | 0.7% | Mature tech, steady dividends |
-| 4 | Alphabet | Search/AI | $2,331B | 22 | +20% | 0.2%* | Cheapest Big Tech by P/E |
-| 5 | Amazon | E-commerce | $2,307B | 44 | +45% | 0% | Pure growth, no dividends |
-| 6 | Meta | Social | $1,478B | 27 | +65% | 0.5%* | Comeback story, new dividend |
-| 7 | Tesla | Auto/EV | $1,296B | 200+ | +63% | 0% | Priced for perfection |
-| 8 | Broadcom | Semis | $1,087B | N/A | +110% | 1.3% | M&A machine, best tech yield |
-| 9 | Berkshire | Conglomerate | $977B | 17 | +28% | 0% | Buffett's value fortress |
-| 10 | Eli Lilly | Pharma | $733B | 45 | +35% | 1.0% | Ozempic winner |
-| 11 | Walmart | Retail | $726B | 39 | +55% | 1.0% | Retail dominance, AI shopper |
-| 12 | JPMorgan | Banking | $675B | 12 | +40% | 2.5% | Best big bank, solid yield |
-| 13 | Visa | Payments | $612B | 32 | +25% | 0.7% | Toll booth on spending |
-| 17 | UnitedHealth | Healthcare | $466B | 32 | -20% | 1.5% | Insurance giant under pressure |
-| 20 | Home Depot | Retail | $386B | 27 | +15% | 2.3% | Housing play, good dividend |
-| 25 | J&J | Pharma | $345B | 25 | +5% | 3.0% | Defensive dividend aristocrat |
+| #   | Company      | Industry     | Market Cap | P/E  | 1-Yr  | Dividend | What It Tells You                  |
+| --- | ------------ | ------------ | ---------- | ---- | ----- | -------- | ---------------------------------- |
+| 1   | Apple        | Tech         | $3,785B    | 32   | +31%  | 0.4%     | Biggest company, premium valuation |
+| 2   | Nvidia       | Chips        | $3,289B    | 58   | +171% | 0.02%    | AI gold rush, extreme growth       |
+| 3   | Microsoft    | Software     | $3,134B    | 34   | +14%  | 0.7%     | Mature tech, steady dividends      |
+| 4   | Alphabet     | Search/AI    | $2,331B    | 22   | +20%  | 0.2%\*   | Cheapest Big Tech by P/E           |
+| 5   | Amazon       | E-commerce   | $2,307B    | 44   | +45%  | 0%       | Pure growth, no dividends          |
+| 6   | Meta         | Social       | $1,478B    | 27   | +65%  | 0.5%\*   | Comeback story, new dividend       |
+| 7   | Tesla        | Auto/EV      | $1,296B    | 200+ | +63%  | 0%       | Priced for perfection              |
+| 8   | Broadcom     | Semis        | $1,087B    | N/A  | +110% | 1.3%     | M&A machine, best tech yield       |
+| 9   | Berkshire    | Conglomerate | $977B      | 17   | +28%  | 0%       | Buffett's value fortress           |
+| 10  | Eli Lilly    | Pharma       | $733B      | 45   | +35%  | 1.0%     | Ozempic winner                     |
+| 11  | Walmart      | Retail       | $726B      | 39   | +55%  | 1.0%     | Retail dominance, AI shopper       |
+| 12  | JPMorgan     | Banking      | $675B      | 12   | +40%  | 2.5%     | Best big bank, solid yield         |
+| 13  | Visa         | Payments     | $612B      | 32   | +25%  | 0.7%     | Toll booth on spending             |
+| 17  | UnitedHealth | Healthcare   | $466B      | 32   | -20%  | 1.5%     | Insurance giant under pressure     |
+| 20  | Home Depot   | Retail       | $386B      | 27   | +15%  | 2.3%     | Housing play, good dividend        |
+| 25  | J&J          | Pharma       | $345B      | 25   | +5%   | 3.0%     | Defensive dividend aristocrat      |
 
-*Started paying dividends in 2024
+\*Started paying dividends in 2024
 
 **Industry Patterns You Can See:**
+
 - **Tech dominates:** Top 8 are all tech/tech-adjacent ($19 trillion combined!)
 - **P/E varies by industry:** Banks (12), Tech (30s), Tesla (200+), Pharma (25-45)
 - **Dividend patterns:**
@@ -548,6 +583,7 @@ A "cheap" P/E of 10 might be expensive if earnings are about to collapse. A "ric
 - **2024 losers:** J&J (+5%), Microsoft (+14%), UnitedHealth (-20%)
 
 **Key Insights by Sector:**
+
 - **Banking (JPMorgan):** P/E 12, Dividend 2.5% = Value + Income
 - **Tech (Apple/MSFT):** P/E 30s, tiny dividends = Growth focus
 - **Pharma (J&J):** P/E 25, Dividend 3% = Defensive income play
@@ -555,12 +591,11 @@ A "cheap" P/E of 10 might be expensive if earnings are about to collapse. A "ric
 - **Healthcare (UNH):** Down 20% = Regulatory fears, policy uncertainty
 
 **The Big Picture:**
+
 - Market cap ≠ Good investment (Apple biggest but +31%, Nvidia #2 but +171%)
 - Traditional value sectors (banks, pharma) offer 2-3% dividends
 - Tech offers growth but little income (except Broadcom)
 - P/E over 40 = market expects something special (Tesla autonomous, Walmart AI)
-
-
 
 ## Philosophy
 
