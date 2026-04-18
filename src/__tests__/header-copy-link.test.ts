@@ -415,6 +415,139 @@ describe("Header Copy Link", () => {
       expect(previewPortion.length).toBeLessThanOrEqual(900); // includes "From: ..." breadcrumb + preview
     });
 
+    it("should append '...' when the extracted paragraph is short but more content follows (msg 2363)", async () => {
+      // When a section's first paragraph is short and fits well under the
+      // preview cap, we still need to signal to share recipients that the
+      // snippet is not the end of the post. Otherwise they read the clean
+      // first sentence and don't realize there are 3 more paragraphs to
+      // click through to.
+      const mockClipboard = vi.fn().mockResolvedValue(undefined);
+      (
+        globalThis as unknown as {
+          navigator: { clipboard: { writeText: typeof mockClipboard } };
+        }
+      ).navigator.clipboard.writeText = mockClipboard;
+
+      mockWindow.location.href = "http://localhost:4000/ai-operator#on-the-loop";
+
+      const makeP = (text: string): any => ({
+        tagName: "P",
+        textContent: text,
+      });
+
+      // Short first paragraph (well under 600 chars), followed by more
+      // non-empty paragraphs before the next header.
+      const firstPara = makeP(
+        "When you're on-the-loop, the AI does the checking and you do the review at a checkpoint.",
+      );
+      const secondPara = makeP(
+        "More content in this section that the reader would miss if we don't flag that this is a snippet.",
+      );
+      const thirdPara = makeP("Even more content — a third paragraph before the next header.");
+
+      firstPara.nextElementSibling = secondPara;
+      secondPara.nextElementSibling = thirdPara;
+      thirdPara.nextElementSibling = null;
+
+      const mockHeader: any = {
+        id: "on-the-loop",
+        textContent: "On the Loop",
+        tagName: "H2",
+        appendChild: vi.fn(),
+        addEventListener: vi.fn(),
+        removeEventListener: vi.fn(),
+        querySelector: vi.fn(() => null),
+        getBoundingClientRect: vi.fn(() => ({ bottom: 0, left: 0, right: 0, top: 0, width: 0, height: 0 })),
+        nextElementSibling: firstPara,
+        childNodes: [{ nodeType: 3, textContent: "On the Loop" }],
+        previousElementSibling: null,
+      };
+
+      mockDocument.querySelectorAll.mockReturnValue([mockHeader]);
+      mockDocument.getElementById.mockImplementation((id: string) => (id === "on-the-loop" ? mockHeader : null));
+      mockDocument.querySelector.mockReturnValue(null);
+
+      initHeaderCopyLinks();
+
+      const copyIcon = mockHeader.appendChild.mock.calls[0][0];
+      const clickHandler = copyIcon.addEventListener.mock.calls.find((call: any[]) => call[0] === "click")?.[1];
+      expect(clickHandler).toBeDefined();
+
+      await clickHandler({ preventDefault: vi.fn(), stopPropagation: vi.fn() });
+
+      expect(mockClipboard).toHaveBeenCalled();
+      const clipboardText = mockClipboard.mock.calls[0][0] as string;
+
+      // Locate the extracted preview text (between the breadcrumb and the TinyURL).
+      const urlIdx = clipboardText.indexOf("https://tinyurl.com/");
+      const previewPortion = clipboardText.substring(0, urlIdx).trim();
+
+      // The preview must end with "..." to signal the snippet is not the end
+      // of the post. Without this, the reader thinks they have the whole
+      // section.
+      expect(previewPortion.endsWith("...")).toBe(true);
+
+      // And the first paragraph itself should be complete (not mid-sentence).
+      expect(previewPortion).toContain("When you're on-the-loop");
+      expect(previewPortion).toContain("review at a checkpoint");
+    });
+
+    it("should NOT append '...' when extracted paragraph is the only content in the section", async () => {
+      // Single-paragraph section with nothing else before the next header:
+      // the preview IS the whole section, so no trailing "..." is needed.
+      const mockClipboard = vi.fn().mockResolvedValue(undefined);
+      (
+        globalThis as unknown as {
+          navigator: { clipboard: { writeText: typeof mockClipboard } };
+        }
+      ).navigator.clipboard.writeText = mockClipboard;
+
+      mockWindow.location.href = "http://localhost:4000/some-post#last-section";
+
+      const onlyPara: any = {
+        tagName: "P",
+        textContent: "The only paragraph in this section, sitting right before the next header.",
+        nextElementSibling: null,
+      };
+      // Put an H2 right after — this is the natural end of the section.
+      const nextHeader: any = { tagName: "H2", textContent: "Next Section", nextElementSibling: null };
+      onlyPara.nextElementSibling = nextHeader;
+
+      const mockHeader: any = {
+        id: "last-section",
+        textContent: "Last Section",
+        tagName: "H2",
+        appendChild: vi.fn(),
+        addEventListener: vi.fn(),
+        removeEventListener: vi.fn(),
+        querySelector: vi.fn(() => null),
+        getBoundingClientRect: vi.fn(() => ({ bottom: 0, left: 0, right: 0, top: 0, width: 0, height: 0 })),
+        nextElementSibling: onlyPara,
+        childNodes: [{ nodeType: 3, textContent: "Last Section" }],
+        previousElementSibling: null,
+      };
+
+      mockDocument.querySelectorAll.mockReturnValue([mockHeader]);
+      mockDocument.getElementById.mockImplementation((id: string) => (id === "last-section" ? mockHeader : null));
+      mockDocument.querySelector.mockReturnValue(null);
+
+      initHeaderCopyLinks();
+
+      const copyIcon = mockHeader.appendChild.mock.calls[0][0];
+      const clickHandler = copyIcon.addEventListener.mock.calls.find((call: any[]) => call[0] === "click")?.[1];
+      expect(clickHandler).toBeDefined();
+
+      await clickHandler({ preventDefault: vi.fn(), stopPropagation: vi.fn() });
+
+      const clipboardText = mockClipboard.mock.calls[0][0] as string;
+      const urlIdx = clipboardText.indexOf("https://tinyurl.com/");
+      const previewPortion = clipboardText.substring(0, urlIdx).trim();
+
+      // No more content in the section → no trailing "..."
+      expect(previewPortion.endsWith("...")).toBe(false);
+      expect(previewPortion).toContain("The only paragraph in this section");
+    });
+
     it("should handle clipboard API failure gracefully", async () => {
       // Mock clipboard API to fail
       const mockFailingClipboard = vi.fn().mockRejectedValue(new Error("Clipboard failed"));
