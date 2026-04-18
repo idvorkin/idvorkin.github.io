@@ -131,6 +131,19 @@ WA state is linear in this range (first $278K free, then 7%), so the state bite 
 
 This is the tax case for timing retirement realizations: every year you draw mostly from LTCG-heavy taxable accounts (vs. ordinary-income sources like traditional-IRA withdrawals or wages-in-transition) captures the 0% bracket once. A retiree with $2M in appreciated stock can walk down ~$300K/yr for ~7 years paying ~10% effective, vs. realizing the same $2M in a single working year at ~30%.
 
+**Benchmark table — effective vs. marginal rates at retirement draw levels.** Same MFJ, all-LTCG, no-wages assumptions as above. The "which taxes are active" column shows why the effective rate climbs: lower brackets fill up one by one as the draw grows, while the marginal rate on the next dollar locks in once all three taxes are active.
+
+| LTCG drawn | Fed LTCG bracket at top | NIIT status                         | WA state bracket          | Total tax | **Effective** | **Marginal on next $** |
+| ---------- | ----------------------- | ----------------------------------- | ------------------------- | --------- | ------------- | ---------------------- |
+| $200,000   | 15% (taxable $170K)     | ❌ not yet (MAGI < $250K threshold) | ❌ not yet (LTCG < $278K) | $10,665   | **5.3%**      | 15.0%                  |
+| $300,000   | 15%                     | ✅ on $50K excess over $250K        | ✅ 7% on $22K over $278K  | $29,105   | **9.7%**      | 25.8%                  |
+| $400,000   | 15%                     | ✅ on $150K excess                  | ✅ 7% on $122K over $278K | $54,905   | **13.7%**     | 25.8%                  |
+| $500,000   | 15%                     | ✅ on $250K excess                  | ✅ 7% on $222K over $278K | $80,705   | **16.1%**     | 25.8%                  |
+
+Between $300K and $500K, the marginal on the next dollar is flat at **25.8%** (15% federal LTCG + 3.8% NIIT + 7% WA). What drives the effective rate up is that a smaller share of each incremental dollar lives in the free 0% federal bracket. Below ~$250K MAGI you're in the 5% effective zone (no NIIT, no WA); cross $250K MAGI and NIIT kicks in; cross $278K LTCG and WA kicks in. After both kinks, the climb is linear.
+
+**Why this strategy — the RMD cliff at 73.** The low-effective-rate window isn't permanent. [Required Minimum Distributions](https://www.irs.gov/retirement-plans/retirement-plan-and-ira-required-minimum-distributions-faqs) force withdrawals from traditional IRAs and 401(k)s starting at age 73, and those withdrawals hit at **ordinary-income rates** — not LTCG rates. A $5M traditional balance at 73 forces ~$189K/yr out (divisor 26.5), and that $189K stacks on top of any LTCG realized the same year, pushing taxable income into higher brackets. So the decade-ish between retirement and 73 is the window to: (a) spend taxable-brokerage LTCG first at ~5–16% effective, (b) do Roth conversions in low years to drain traditional balances before RMDs, (c) land on 73 with a smaller traditional-IRA balance and manageable RMDs. Skip the window and RMD tax drag shows up forever. See the [RMDs section below](#rmds-required-minimum-distributions) for mechanics.
+
 **Coming in 2028 — millionaires' income tax.** [ESSB 6346](https://lawfilesext.leg.wa.gov/biennium/2025-26/Pdf/Bills/Session%20Laws/Senate/6346-S.SL.pdf) (signed March 30, 2026) layers a 9.9% state income tax on household income above $1M/yr, effective Jan 1, 2028. MFJ couples share a single $1M deduction (not doubled). Credits against WA cap-gains tax and other states' income tax prevent stacking. A legal challenge is in progress; monitor before 2028 planning.
 
 Sources at the federal layer: [IRS Topic 409 — Capital Gains and Losses](https://www.irs.gov/taxtopics/tc409) · [IRS Topic 559 — Net Investment Income Tax](https://www.irs.gov/individuals/net-investment-income-tax) · [Kiplinger 2026 federal LTCG brackets](https://www.kiplinger.com/taxes/capital-gains-tax/602224/capital-gains-tax-rates).
