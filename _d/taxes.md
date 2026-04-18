@@ -111,6 +111,26 @@ Two step-functions to notice:
 
 **Planning implication.** Splitting a $2M realization into two $1M tax years saves the 2.9% surcharge on the ~$722K above $1.278M — roughly $21K/yr. Every dollar above the surcharge kink pays nearly 10% more than the dollar just below it. See [installment sales under IRC §453](https://www.irs.gov/publications/p537) for the standard mechanism to spread across tax years.
 
+**Retirement scenario — living on LTCG with no wage income.** The picture flips dramatically when there's no salary in the mix. With LTCG as essentially all income, a retired MFJ household unlocks federal brackets that high earners never see during working years: the **0% federal LTCG bracket** (taxable income ≤ [$98,900 MFJ in 2026](https://www.kiplinger.com/taxes/capital-gains-tax/602224/capital-gains-tax-rates)) and the **15%** bracket (up to $613,700), rather than the 20% top bracket. Example: living on $300K/yr, all from LTCG realizations, MFJ, using the 2026 [standard deduction (~$30,000)](https://www.irs.gov/newsroom/irs-provides-tax-inflation-adjustments-for-tax-year-2026):
+
+| Layer                                               | Math                                   | Tax         |
+| --------------------------------------------------- | -------------------------------------- | ----------- |
+| Taxable income (after std deduction)                | $300,000 − $30,000 = $270,000          | —           |
+| Federal 0% LTCG bracket (≤ $98,900 taxable)         | $98,900 × 0%                           | $0          |
+| Federal 15% LTCG bracket ($98,900–$270,000 taxable) | $171,100 × 15%                         | $25,665     |
+| Federal NIIT (MAGI $300K; excess over $250K = $50K) | $50,000 × 3.8%                         | $1,900      |
+| WA state cap gains (LTCG realized minus $278K)      | ($300,000 − $278,000) × 7% = $22K × 7% | $1,540      |
+| **Total**                                           |                                        | **$29,105** |
+
+That's a **9.7% effective rate** on $300K of spending — one-third of the ~29% the same household pays on the same dollar amount during working years (from the table above). Two mechanics drive the swing:
+
+1. **The 0% LTCG bracket is only accessible without wage income** (wages push taxable income past $98,900 before any LTCG shows up). Lose your W-2 and you get the first ~$99K of LTCG federally tax-free, assuming no other income.
+2. **NIIT's $250K threshold is unindexed** — it still bites, but only on the $50K above the threshold, not the full gain. The "always applies at high income" rule loosens to "applies on the margin."
+
+WA state is linear in this range (first $278K free, then 7%), so the state bite stays small.
+
+This is the tax case for timing retirement realizations: every year you draw mostly from LTCG-heavy taxable accounts (vs. ordinary-income sources like traditional-IRA withdrawals or wages-in-transition) captures the 0% bracket once. A retiree with $2M in appreciated stock can walk down ~$300K/yr for ~7 years paying ~10% effective, vs. realizing the same $2M in a single working year at ~30%.
+
 **Coming in 2028 — millionaires' income tax.** [ESSB 6346](https://lawfilesext.leg.wa.gov/biennium/2025-26/Pdf/Bills/Session%20Laws/Senate/6346-S.SL.pdf) (signed March 30, 2026) layers a 9.9% state income tax on household income above $1M/yr, effective Jan 1, 2028. MFJ couples share a single $1M deduction (not doubled). Credits against WA cap-gains tax and other states' income tax prevent stacking. A legal challenge is in progress; monitor before 2028 planning.
 
 Sources at the federal layer: [IRS Topic 409 — Capital Gains and Losses](https://www.irs.gov/taxtopics/tc409) · [IRS Topic 559 — Net Investment Income Tax](https://www.irs.gov/individuals/net-investment-income-tax) · [Kiplinger 2026 federal LTCG brackets](https://www.kiplinger.com/taxes/capital-gains-tax/602224/capital-gains-tax-rates).
