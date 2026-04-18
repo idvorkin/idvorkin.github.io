@@ -3957,7 +3957,7 @@
         },
         "/larry": {
             "description": "Larry is my AI life coach. He’s part of Time.ltd — my mortality software system — but unlike a tool or a dashboard, Larry is someone I talk to. That matters more than you’d think. In Karpathy’s taxonomy, Larry is a claw — a persistent AI entity that keeps working between conversations.\n\n",
-            "doc_size": 19000,
+            "doc_size": 18000,
             "file_path": "_site/larry.html",
             "incoming_links": [
                 "/ai-feed",
@@ -3972,7 +3972,7 @@
                 "/structure",
                 "/y26"
             ],
-            "last_modified": "2026-04-15T00:06:41.118455+00:00",
+            "last_modified": "2026-04-18T12:57:08.521439+00:00",
             "markdown_path": "_d/larry.md",
             "outgoing_links": [
                 "/affirmations",
