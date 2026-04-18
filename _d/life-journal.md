@@ -17,6 +17,8 @@ A journal of random life observations. Keeping track of them so I don't forget w
     - [Four Pairs of Identical Glasses](#four-pairs-of-identical-glasses)
     - [Three Generations of Air Squats](#three-generations-of-air-squats)
     - [Vibe-Coding from the Passenger Seat](#vibe-coding-from-the-passenger-seat)
+  - [2026-04-15](#2026-04-15)
+    - [Balloons on the Hood Canal Trails](#balloons-on-the-hood-canal-trails)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -90,3 +92,15 @@ A couple hours later, same seat, same driver — this time dictating structural 
 ![teenage raccoon driving with dad raccoon vibe-coding in passenger seat — generational handoff](/images/vibe-coding-handoff.webp)
 
 Zach took one look at the illustration and said: "We're backwards. The picture makes it look like we're British." He's right — the AI put the driver on the right-hand side of the car. The sixteen-year-old who is literally the car-whisperer in this story reviewed the AI's rendering of himself and caught the bug before his dad did. Correct seat assignments, it turns out, are a feature the passenger-seat vibe-coder is not qualified to QA.
+
+### 2026-04-15
+
+#### Balloons on the Hood Canal Trails
+
+Spring break at Hood Canal, hiking with a Qualatrix 160 and a dozen balloons in the cargo pockets. PNW trails are lousy with grumpy kids dragging thirty feet behind their parents, convinced the forest is personally punishing them. Every one of them is a ten-second fix — pull out a balloon, make a dog, hand it over, watch the rest of the hike rewire itself.
+
+{% include repo_image_float_right.html src="balloon-hood-canal-trail.webp" alt="Igor on a Hood Canal trail with a bright green balloon dog" %}
+
+The balloon isn't really for the kid. It's for the parents, who get the real gift: the kid walking on their own power again, the grumbling stopped, the memory of the hike becoming "that was fun" instead of "that was awful." Low cost of materials, lower cost of time, absurd leverage on the emotional arc of somebody else's afternoon.
+
+See [the main ballooning post](/balloon#balloons-on-the-trail) for the pump recommendation and why this is a universally-stocked day-hike upgrade.
