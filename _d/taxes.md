@@ -96,13 +96,13 @@ Note: WA does **not** conform to the federal [§1202 QSBS exclusion](https://www
 
 **Hypothetical worked example** — a married-filing-jointly household already above the [$250K NIIT threshold](https://www.irs.gov/individuals/net-investment-income-tax) on wages, so NIIT applies to the full gain. Federal LTCG at 20% (top bracket, MFJ > [$613,700 taxable income](https://www.irs.gov/taxtopics/tc409)) + 3.8% NIIT = 23.8%. Realizations chosen to sit **at or just past the WA step-function kinks** so the marginal bite is visible:
 
-| LTCG realized | Where it sits                                       | Federal (23.8%) | WA state                            | Total    | Effective | Marginal at this tier |
-| ------------- | --------------------------------------------------- | --------------- | ----------------------------------- | -------- | --------- | --------------------- |
-| $278,000      | At the WA exemption ceiling — last dollar free      | $66,164         | $0                                  | $66,164  | 23.8%     | 23.8%                 |
-| $300,000      | $22K past the first kink — 7% bites on the excess   | $71,400         | ($300K − $278K) × 7% = $1,540       | $72,940  | 24.3%     | **30.8%** (+7% WA)    |
-| $1,278,000    | At the 9.9% surcharge threshold — last dollar at 7% | $304,164        | ($1,278K − $278K) × 7% = $70,000    | $374,164 | 29.3%     | **30.8%**             |
-| $1,300,000    | $22K past the surcharge — 9.9% bites on the excess  | $309,400        | $70,000 + ($22K × 9.9%) = $72,178   | $381,578 | 29.4%     | **33.7%** (+9.9% WA)  |
-| $2,000,000    | Well past the surcharge — 9.9% sustained over $722K | $476,000        | $70,000 + ($722K × 9.9%) = $141,478 | $617,478 | 30.9%     | **33.7%**             |
+| LTCG realized | Where it sits                                       | Total    | **Effective** | **Marginal at this tier** |
+| ------------- | --------------------------------------------------- | -------- | ------------- | ------------------------- |
+| $278,000      | At the WA exemption ceiling — last dollar free      | $66,164  | 23.8%         | 23.8%                     |
+| $300,000      | $22K past the first kink — 7% bites on the excess   | $72,940  | 24.3%         | **30.8%** (+7% WA)        |
+| $1,278,000    | At the 9.9% surcharge threshold — last dollar at 7% | $374,164 | 29.3%         | **30.8%**                 |
+| $1,300,000    | $22K past the surcharge — 9.9% bites on the excess  | $381,578 | 29.4%         | **33.7%** (+9.9% WA)      |
+| $2,000,000    | Well past the surcharge — 9.9% sustained over $722K | $617,478 | 30.9%         | **33.7%**                 |
 
 Two step-functions to notice:
 
