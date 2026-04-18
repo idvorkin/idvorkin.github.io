@@ -17,6 +17,27 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
 
 For the tax-only slice — capital gains, Washington State cap-gains mechanics, step-up in basis, QSBS — see the companion [taxes post](/taxes).
 
+<script>
+// Redirect old anchors that moved to /taxes during the 2026-04-18 split.
+// External links (other sites, old tweets, bookmarks) pointing at
+// /money#<tax-anchor> land here and auto-forward to /taxes#<same-anchor>.
+(function () {
+  var moved = {
+    "taxable-income-and-capital-gains": 1,
+    "short-vs-long-term-capital-gains": 1,
+    "marginal-vs-average-tax-rate": 1,
+    "washington-state-capital-gains-tax": 1,
+    "step-up-in-basis-at-death---the-ultimate-tax-escape": 1,
+    "no-load-index-funds-and-etfs": 1,
+    "rates-taxes-and-savings": 1
+  };
+  var hash = window.location.hash.replace(/^#/, "");
+  if (hash && moved[hash]) {
+    window.location.replace("/taxes#" + hash);
+  }
+})();
+</script>
+
 <!-- prettier-ignore-start -->
 
 <!-- vim-markdown-toc-start -->
