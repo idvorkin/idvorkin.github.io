@@ -63,7 +63,9 @@ Pay attention to which mode you're in. That's the whole game. The military has r
 
 **The goal is to get on the loop.** In-the-loop is a zillion times slower, and it burns your thinking tokens on the _process_ instead of the _output_. You're not in the loop because you want to be — you're in the loop because you haven't figured out how to get out yet. That's the real job: figure out how to get out.
 
-You start in the loop when you have no choice:
+**One-way doors vs two-way doors pick the mode.** Bezos's decision-taxonomy works as an AI-operator heuristic too. A **two-way door** is cheap to reverse — bad blog prose, a throwaway script, a PR you can close. Be on-the-loop: let the AI ship, look at the output, revert if it's off. A **one-way door** is hard to undo — a payment sent, a customer email, a force-push to prod, a migration that rewrites data. Be in-the-loop: read every line before it runs. The cost of getting it wrong isn't symmetric, so ask which kind of door _before_ you pick a mode.
+
+You'll default into the loop when the door is clearly one-way:
 
 - High-stakes decisions (deploying to prod, sending to customers)
 - Novel problems where the AI might go sideways
