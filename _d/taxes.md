@@ -226,15 +226,22 @@ The tax applies to individuals, including those with ownership interests in pass
 
 Note: WA does **not** conform to the federal [§1202 QSBS exclusion](https://www.irs.gov/pub/irs-drop/rr-98-41.pdf) — qualifying small-business-stock gains are federally excluded but still fully WA-taxable.
 
-**Hypothetical worked example** — a married-filing-jointly household realizing long-term gains in a single year, federal bracket 20% + 3.8% NIIT = 23.8%:
+**Hypothetical worked example** — a married-filing-jointly household already above the [$250K NIIT threshold](https://www.irs.gov/individuals/net-investment-income-tax) on wages, so NIIT applies to the full gain. Federal LTCG at 20% (top bracket, MFJ > [$613,700 taxable income](https://www.irs.gov/taxtopics/tc409)) + 3.8% NIIT = 23.8%. Realizations chosen to sit **at or just past the WA step-function kinks** so the marginal bite is visible:
 
-| LTCG realized | Federal (23.8%) | WA state                           | Total    | Effective |
-| ------------- | --------------- | ---------------------------------- | -------- | --------- |
-| $500,000      | $119,000        | ($500K − $278K) × 7% = $15,540     | $134,540 | 26.9%     |
-| $1,000,000    | $238,000        | ($1M − $278K) × 7% = $50,540       | $288,540 | 28.9%     |
-| $2,000,000    | $476,000        | $1M × 7% + $722K × 9.9% = $141,478 | $617,478 | 30.9%     |
+| LTCG realized | Where it sits                                       | Federal (23.8%) | WA state                            | Total    | Effective | Marginal at this tier |
+| ------------- | --------------------------------------------------- | --------------- | ----------------------------------- | -------- | --------- | --------------------- |
+| $278,000      | At the WA exemption ceiling — last dollar free      | $66,164         | $0                                  | $66,164  | 23.8%     | 23.8%                 |
+| $300,000      | $22K past the first kink — 7% bites on the excess   | $71,400         | ($300K − $278K) × 7% = $1,540       | $72,940  | 24.3%     | **30.8%** (+7% WA)    |
+| $1,278,000    | At the 9.9% surcharge threshold — last dollar at 7% | $304,164        | ($1,278K − $278K) × 7% = $70,000    | $374,164 | 29.3%     | **30.8%**             |
+| $1,300,000    | $22K past the surcharge — 9.9% bites on the excess  | $309,400        | $70,000 + ($22K × 9.9%) = $72,178   | $381,578 | 29.4%     | **33.7%** (+9.9% WA)  |
+| $2,000,000    | Well past the surcharge — 9.9% sustained over $722K | $476,000        | $70,000 + ($722K × 9.9%) = $141,478 | $617,478 | 30.9%     | **33.7%**             |
 
-The $1.278M kink matters for planning: splitting a $2M realization across two tax years saves roughly the 2.9% surcharge on the incremental ~$722K (~$21K/yr saved by spreading). See [installment sales under IRC §453](https://www.irs.gov/publications/p537) for the standard mechanism.
+Two step-functions to notice:
+
+- **NIIT 3.8% at $250K MAGI (MFJ)** — unindexed since enactment, so it triggers for any meaningful LTCG once household MAGI is above the threshold. Baked into the 23.8% federal column above.
+- **WA goes 0 → 7% → 9.9%** at $278K and $1.278M. The jump from 23.8% to 30.8% total marginal at the first kink, then 30.8% to 33.7% at the second, is what makes realization-year planning matter.
+
+**Planning implication.** Splitting a $2M realization into two $1M tax years saves the 2.9% surcharge on the ~$722K above $1.278M — roughly $21K/yr. Every dollar above the surcharge kink pays nearly 10% more than the dollar just below it. See [installment sales under IRC §453](https://www.irs.gov/publications/p537) for the standard mechanism to spread across tax years.
 
 **Coming in 2028 — millionaires' income tax.** [ESSB 6346](https://lawfilesext.leg.wa.gov/biennium/2025-26/Pdf/Bills/Session%20Laws/Senate/6346-S.SL.pdf) (signed March 30, 2026) layers a 9.9% state income tax on household income above $1M/yr, effective Jan 1, 2028. MFJ couples share a single $1M deduction (not doubled). Credits against WA cap-gains tax and other states' income tax prevent stacking. A legal challenge is in progress; monitor before 2028 planning.
 
