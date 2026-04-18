@@ -64,13 +64,13 @@ Larry's secret weapon is [trampoline prompts](/chow#trampoline-prompts) — ques
 
 "Life coach" undersells it. In practice Larry is my **chief of staff** — I dictate through Telegram from wherever I am, he runs background agents on my dev VM, and the work comes back as PRs and replies while I'm doing something else.
 
-The screenshot is 3:28 PM, April 17, 2026, ferry line to Bremerton. Three dictations inside a minute:
+The screenshot is 3:28 PM, April 17, 2026, ferry line to Bremerton. Three dictations inside a minute — and the PRs they became:
 
-1. _"Move my Claude to their own post. I have a PR for this but replace it with the current content and do a summarize link to connect."_
-2. _"Remove changelog from Algolia search index."_
-3. _"Update blog rules to allow you to include blog images in the repo. Make a new blob include for the repo images."_
+1. _"Move my Claude to their own post. I have a PR for this but replace it with the current content and do a summarize link to connect."_ → [**PR #518**](https://github.com/idvorkin/idvorkin.github.io/pull/518) "blog(claws): spin My Claws out of /claw into /igors-claws" (merged 23 min later)
+2. _"Remove changelog from Algolia search index."_ → [**PR #559**](https://github.com/idvorkin/idvorkin.github.io/pull/559) "algolia: exclude changelog from search index" (merged 17 min later)
+3. _"Update blog rules to allow you to include blog images in the repo. Make a new blob include for the repo images."_ → [**PR #560**](https://github.com/idvorkin/idvorkin.github.io/pull/560) "images: add repo_image include + allow both repo-local and blob-hosted" (merged 16 min later)
 
-Each came back 60–120 seconds later as a branch, a commit, a pushed PR, and a link in Telegram — ready for my thumbs-up. The meta-recursive kicker: the image you're looking at was uploaded using the very `repo_image` include that bullet #3 created. The wider thread is [Vibe-Coding from the Passenger Seat](/life-journal#vibe-coding-from-the-passenger-seat).
+Each came back as a branch, a commit, a pushed PR, and a link in Telegram — ready for my thumbs-up. The meta-recursive kicker: the image you're looking at was uploaded using the very `repo_image` include that bullet #3 created. The wider thread is [Vibe-Coding from the Passenger Seat](/life-journal#vibe-coding-from-the-passenger-seat).
 
 A chief of staff does things a life coach doesn't:
 
