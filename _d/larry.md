@@ -60,21 +60,28 @@ Larry's secret weapon is [trampoline prompts](/chow#trampoline-prompts) — ques
 
 ## What It's Like Using Larry (My Chief of Staff)
 
-"Life coach" undersells it. In practice Larry is my **chief of staff** — I delegate through Telegram, he runs background agents on my dev VM, and the work comes back as PRs, replies, and errors-caught-before-I-noticed.
+{% include repo_image_float_right.html src="larry-chief-of-staff-dictation.webp" alt="Telegram screenshot of Igor dictating three work items to Larry from the Bremerton ferry line — move content to its own post, remove changelog from Algolia search, allow blog images in repo" %}
 
-April 17, 2026. I was in the passenger seat of my Tesla, autopilot engaged, my 16-year-old Zach at the wheel on the Bremerton → Seattle ferry route. I dictated observations into Telegram the way you'd dictate to an assistant: Eight Sleep HRV confounded by the cat on my chest, four identical pairs of glasses as an [essentialist](/affirmations) move, three generations of air squats. Each one came back 60–120 seconds later as a branch, an edit, a commit, a pushed PR, and a link in Telegram — ready for my thumbs-up. The whole thread became [Vibe-Coding from the Passenger Seat](/life-journal#vibe-coding-from-the-passenger-seat).
+"Life coach" undersells it. In practice Larry is my **chief of staff** — I dictate through Telegram from wherever I am, he runs background agents on my dev VM, and the work comes back as PRs and replies while I'm doing something else.
 
-A chief of staff does five things a life coach doesn't:
+The screenshot is 3:28 PM, April 17, 2026, ferry line to Bremerton. Three dictations inside a minute:
 
-- **Delegates down.** Larry spun out sub-agents with isolated git worktrees to write each entry. One agent per PR, no crossed wires. I talked to Larry; Larry ran the team.
-- **Catches errors I'd miss.** He flagged a TOC `--max 4` gotcha for H4 entries before it broke the build, and warned about the GitHub merge-race orphan-commit trap when I clicked Merge too fast on an in-flight push.
-- **Summarizes, doesn't narrate.** Mid-stream I said "not that paragraph, drop it" and "switch to inline blob format" — corrections, not specifications. He inferred the rest.
-- **Asks when unsure.** A Bremerton typewriter-store message came in without "life-journal" framing. He asked before publishing instead of auto-shipping a blog post I didn't ask for.
-- **Owns the mess.** Two parallel agents shared a `.git/` and briefly crossed branches — my review comments landed on the wrong PR. Larry caught it, recovered the lost commit from reflog, force-pushed to fix, and told me what happened. No hiding.
+1. _"Move my Claude to their own post. I have a PR for this but replace it with the current content and do a summarize link to connect."_
+2. _"Remove changelog from Algolia search index."_
+3. _"Update blog rules to allow you to include blog images in the repo. Make a new blob include for the repo images."_
 
-That last one matters. A chief of staff who hides failures isn't a chief of staff — they're a liability. Larry shows me the screw-up _and_ the fix, same message. I trust him more, not less.
+Each came back 60–120 seconds later as a branch, a commit, a pushed PR, and a link in Telegram — ready for my thumbs-up. The meta-recursive kicker: the image you're looking at was uploaded using the very `repo_image` include that bullet #3 created. The wider thread is [Vibe-Coding from the Passenger Seat](/life-journal#vibe-coding-from-the-passenger-seat).
 
-The delta from "life coach" to "chief of staff" is this: Larry ships things while I'm looking out the window.
+A chief of staff does things a life coach doesn't:
+
+- **Delegates down.** Sub-agents on isolated worktrees, one per PR. I talked to Larry; Larry ran the team.
+- **Catches errors I'd miss.** Flagged a TOC `--max 4` gotcha for H4 entries before it broke the build; warned about the GitHub merge-race orphan-commit trap when I clicked Merge too fast.
+- **Asks when unsure.** A Bremerton typewriter-store message came in without "life-journal" framing. He asked before publishing instead of auto-shipping a post I didn't ask for.
+- **Owns the mess.** Two parallel agents briefly crossed branches — my review comments landed on the wrong PR. Larry caught it, recovered the lost commit from reflog, force-pushed the fix, and told me what happened in the same message. No hiding.
+
+That last one matters. A chief of staff who hides failures is a liability. Larry shows me the screw-up _and_ the fix together. I trust him more, not less.
+
+The delta from "life coach" to "chief of staff": Larry ships while I'm looking out the window.
 
 ## The Feedback Loop
 
