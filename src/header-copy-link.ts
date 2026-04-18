@@ -520,15 +520,51 @@ function getOrCreateHeaderId(header: HTMLElement): string {
 const PREVIEW_MAX_LENGTH = 600;
 
 /**
+ * Result of extracting a preview from the content after a header.
+ *
+ * `hasMore` is true when the section contains additional content beyond
+ * what `text` captured — either extra list items we skipped to keep the
+ * preview under cap, or additional paragraphs/lists before the next
+ * header. The caller uses this to append an ellipsis so recipients know
+ * the preview is a snippet, not the whole section.
+ */
+interface PreviewExtraction {
+  text: string;
+  hasMore: boolean;
+}
+
+/**
  * Gets the first non-empty paragraph of content after a header.
  *
- * Returns untruncated text — truncation is the caller's responsibility
- * (see `truncateText`). Previously this function pre-truncated at 500 chars,
- * then `getPreviewText` re-truncated at 400 chars, yielding double-truncation
- * that clipped bullet lists mid-sentence. See issue #487.
+ * Returns `{ text, hasMore }`. Truncation of oversized text is the caller's
+ * responsibility (see `truncateText`). Previously this function pre-truncated
+ * at 500 chars, then `getPreviewText` re-truncated at 400 chars, yielding
+ * double-truncation that clipped bullet lists mid-sentence. See issue #487.
+ *
+ * `hasMore` is set to true when further non-empty content exists in the
+ * same section (dropped bullets, or additional paragraphs/lists before
+ * the next header) so the caller can signal "snippet, not whole post"
+ * to the recipient. See share-link feedback 2026-04-18.
  */
-function getFirstParagraphAfterHeader(header: HTMLElement): string {
+function getFirstParagraphAfterHeader(header: HTMLElement): PreviewExtraction {
   let nextElement = header.nextElementSibling;
+
+  const hasMoreContentAfter = (startFrom: Element | null): boolean => {
+    let cursor: Element | null = startFrom;
+    while (cursor) {
+      if (cursor.tagName.match(/^H[1-6]$/)) {
+        return false;
+      }
+      if (cursor.tagName === "P" || cursor.tagName === "UL" || cursor.tagName === "OL") {
+        const content = (cursor.textContent || "").trim();
+        if (content.length > 0) {
+          return true;
+        }
+      }
+      cursor = cursor.nextElementSibling;
+    }
+    return false;
+  };
 
   // Look for the first non-empty content before the next header
   while (nextElement) {
@@ -541,7 +577,8 @@ function getFirstParagraphAfterHeader(header: HTMLElement): string {
     if (nextElement.tagName === "P") {
       const text = (nextElement.textContent || "").trim();
       if (text.length > 0) {
-        return text;
+        const hasMore = hasMoreContentAfter(nextElement.nextElementSibling);
+        return { text, hasMore };
       }
     }
 
@@ -555,6 +592,7 @@ function getFirstParagraphAfterHeader(header: HTMLElement): string {
       const listItems = nextElement.querySelectorAll("li");
       const itemTexts: string[] = [];
       let totalLength = 0;
+      let droppedItems = false;
 
       for (const li of Array.from(listItems)) {
         // Only get direct text content, not nested lists
@@ -577,6 +615,7 @@ function getFirstParagraphAfterHeader(header: HTMLElement): string {
         // blow the cap, stop here and let the outer truncator append an
         // ellipsis. This keeps bullet boundaries clean.
         if (itemTexts.length > 0 && totalLength + bulletLen + 1 > PREVIEW_MAX_LENGTH) {
+          droppedItems = true;
           break;
         }
 
@@ -585,15 +624,15 @@ function getFirstParagraphAfterHeader(header: HTMLElement): string {
       }
 
       if (itemTexts.length > 0) {
-        // Join with newlines for better formatting.
-        return itemTexts.join("\n");
+        const hasMore = droppedItems || hasMoreContentAfter(nextElement.nextElementSibling);
+        return { text: itemTexts.join("\n"), hasMore };
       }
     }
 
     nextElement = nextElement.nextElementSibling;
   }
 
-  return "";
+  return { text: "", hasMore: false };
 }
 
 /**
@@ -645,6 +684,19 @@ function truncateText(text: string, maxLength = PREVIEW_MAX_LENGTH): string {
 }
 
 /**
+ * Appends `...` to the preview text if it doesn't already end with one and
+ * there's more content in the post beyond the snippet. Signals "this is a
+ * snippet, not the whole section" to share recipients so they know to click
+ * through. `truncateText` already handles the mid-cut case; this handles
+ * the short-complete-paragraph-but-more-follows case.
+ */
+function withMoreIndicator(text: string, hasMore: boolean): string {
+  if (!hasMore) return text;
+  if (text.endsWith("...") || text.endsWith("…")) return text;
+  return `${text}...`;
+}
+
+/**
  * Extracts preview text from the page content, with anchor-aware logic
  */
 function getPreviewText(headerId?: string): string {
@@ -653,15 +705,16 @@ function getPreviewText(headerId?: string): string {
     const header = document.getElementById(headerId);
     if (header) {
       // Try to get text from the first paragraph after the header
-      const paragraphText = getFirstParagraphAfterHeader(header);
+      const { text: paragraphText, hasMore: paragraphHasMore } = getFirstParagraphAfterHeader(header);
       if (paragraphText) {
-        return truncateText(paragraphText);
+        return withMoreIndicator(truncateText(paragraphText), paragraphHasMore);
       }
 
       // Try to get text from any content elements after the header
       let nextElement = header.nextElementSibling;
       const textParts: string[] = [];
       let charCount = 0;
+      let moreAfter = false;
 
       while (nextElement && charCount < 400) {
         // Stop if we hit another header
@@ -686,8 +739,20 @@ function getPreviewText(headerId?: string): string {
         nextElement = nextElement.nextElementSibling;
       }
 
+      // If we stopped scanning early (hit 400 char cap) but there's still
+      // unscanned content before the next header, flag moreAfter.
+      let scan = nextElement;
+      while (scan && !moreAfter) {
+        if (scan.tagName.match(/^H[1-6]$/)) break;
+        if ((scan.textContent || "").trim().length > 0) {
+          moreAfter = true;
+          break;
+        }
+        scan = scan.nextElementSibling;
+      }
+
       if (textParts.length > 0) {
-        return truncateText(textParts.join(" "));
+        return withMoreIndicator(truncateText(textParts.join(" ")), moreAfter);
       }
     }
   }
