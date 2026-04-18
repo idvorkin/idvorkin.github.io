@@ -27,6 +27,8 @@ The `anchor-checker` pre-commit hook reads `_site/*.html` to validate markdown a
 bundle exec jekyll build --incremental
 ```
 
+- **Background jekyll build on worktree creation**: after `git worktree add <path>`, cd in and run `just worktree-init`. Fires `bundle exec jekyll build` in the background (log: `/tmp/jekyll-worktree-<branch>.log`). By the time you're ready to commit, `_site/` is populated and the `anchor-checker` pre-commit hook resolves anchors correctly — no need for `SKIP=anchor-checker` unless there are genuinely-broken anchors in source.
+
 Same fix applies if you edit a heading mid-session and the live `jekyll serve` hasn't written it to disk yet — see the screenshot section below.
 
 ## PR Workflow
