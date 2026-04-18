@@ -96,13 +96,13 @@ Note: WA does **not** conform to the federal [§1202 QSBS exclusion](https://www
 
 **Hypothetical worked example** — a married-filing-jointly household already above the [$250K NIIT threshold](https://www.irs.gov/individuals/net-investment-income-tax) on wages, so NIIT applies to the full gain. Federal LTCG at 20% (top bracket, MFJ > [$613,700 taxable income](https://www.irs.gov/taxtopics/tc409)) + 3.8% NIIT = 23.8%. Realizations chosen to sit **at or just past the WA step-function kinks** so the marginal bite is visible:
 
-| LTCG realized | Where it sits                                       | Federal (23.8%) | WA state                            | Total    | Effective | Marginal at this tier |
-| ------------- | --------------------------------------------------- | --------------- | ----------------------------------- | -------- | --------- | --------------------- |
-| $278,000      | At the WA exemption ceiling — last dollar free      | $66,164         | $0                                  | $66,164  | 23.8%     | 23.8%                 |
-| $300,000      | $22K past the first kink — 7% bites on the excess   | $71,400         | ($300K − $278K) × 7% = $1,540       | $72,940  | 24.3%     | **30.8%** (+7% WA)    |
-| $1,278,000    | At the 9.9% surcharge threshold — last dollar at 7% | $304,164        | ($1,278K − $278K) × 7% = $70,000    | $374,164 | 29.3%     | **30.8%**             |
-| $1,300,000    | $22K past the surcharge — 9.9% bites on the excess  | $309,400        | $70,000 + ($22K × 9.9%) = $72,178   | $381,578 | 29.4%     | **33.7%** (+9.9% WA)  |
-| $2,000,000    | Well past the surcharge — 9.9% sustained over $722K | $476,000        | $70,000 + ($722K × 9.9%) = $141,478 | $617,478 | 30.9%     | **33.7%**             |
+| LTCG realized | Where it sits                                       | Total    | **Effective** | **Marginal at this tier** |
+| ------------- | --------------------------------------------------- | -------- | ------------- | ------------------------- |
+| $278,000      | At the WA exemption ceiling — last dollar free      | $66,164  | 23.8%         | 23.8%                     |
+| $300,000      | $22K past the first kink — 7% bites on the excess   | $72,940  | 24.3%         | **30.8%** (+7% WA)        |
+| $1,278,000    | At the 9.9% surcharge threshold — last dollar at 7% | $374,164 | 29.3%         | **30.8%**                 |
+| $1,300,000    | $22K past the surcharge — 9.9% bites on the excess  | $381,578 | 29.4%         | **33.7%** (+9.9% WA)      |
+| $2,000,000    | Well past the surcharge — 9.9% sustained over $722K | $617,478 | 30.9%         | **33.7%**                 |
 
 Two step-functions to notice:
 
@@ -110,6 +110,39 @@ Two step-functions to notice:
 - **WA goes 0 → 7% → 9.9%** at $278K and $1.278M. The jump from 23.8% to 30.8% total marginal at the first kink, then 30.8% to 33.7% at the second, is what makes realization-year planning matter.
 
 **Planning implication.** Splitting a $2M realization into two $1M tax years saves the 2.9% surcharge on the ~$722K above $1.278M — roughly $21K/yr. Every dollar above the surcharge kink pays nearly 10% more than the dollar just below it. See [installment sales under IRC §453](https://www.irs.gov/publications/p537) for the standard mechanism to spread across tax years.
+
+**Retirement scenario — living on LTCG with no wage income.** The picture flips dramatically when there's no salary in the mix. With LTCG as essentially all income, a retired MFJ household unlocks federal brackets that high earners never see during working years: the **0% federal LTCG bracket** (taxable income ≤ [$98,900 MFJ in 2026](https://www.kiplinger.com/taxes/capital-gains-tax/602224/capital-gains-tax-rates)) and the **15%** bracket (up to $613,700), rather than the 20% top bracket. Example: living on $300K/yr, all from LTCG realizations, MFJ, using the 2026 [standard deduction (~$30,000)](https://www.irs.gov/newsroom/irs-provides-tax-inflation-adjustments-for-tax-year-2026):
+
+| Layer                                               | Math                                   | Tax         |
+| --------------------------------------------------- | -------------------------------------- | ----------- |
+| Taxable income (after std deduction)                | $300,000 − $30,000 = $270,000          | —           |
+| Federal 0% LTCG bracket (≤ $98,900 taxable)         | $98,900 × 0%                           | $0          |
+| Federal 15% LTCG bracket ($98,900–$270,000 taxable) | $171,100 × 15%                         | $25,665     |
+| Federal NIIT (MAGI $300K; excess over $250K = $50K) | $50,000 × 3.8%                         | $1,900      |
+| WA state cap gains (LTCG realized minus $278K)      | ($300,000 − $278,000) × 7% = $22K × 7% | $1,540      |
+| **Total**                                           |                                        | **$29,105** |
+
+That's a **9.7% effective rate** on $300K of spending — one-third of the ~29% the same household pays on the same dollar amount during working years (from the table above). Two mechanics drive the swing:
+
+1. **The 0% LTCG bracket is only accessible without wage income** (wages push taxable income past $98,900 before any LTCG shows up). Lose your W-2 and you get the first ~$99K of LTCG federally tax-free, assuming no other income.
+2. **NIIT's $250K threshold is unindexed** — it still bites, but only on the $50K above the threshold, not the full gain. The "always applies at high income" rule loosens to "applies on the margin."
+
+WA state is linear in this range (first $278K free, then 7%), so the state bite stays small.
+
+This is the tax case for timing retirement realizations: every year you draw mostly from LTCG-heavy taxable accounts (vs. ordinary-income sources like traditional-IRA withdrawals or wages-in-transition) captures the 0% bracket once. A retiree with $2M in appreciated stock can walk down ~$300K/yr for ~7 years paying ~10% effective, vs. realizing the same $2M in a single working year at ~30%.
+
+**Benchmark table — effective vs. marginal rates at retirement draw levels.** Same MFJ, all-LTCG, no-wages assumptions as above. The "which taxes are active" column shows why the effective rate climbs: lower brackets fill up one by one as the draw grows, while the marginal rate on the next dollar locks in once all three taxes are active.
+
+| LTCG drawn | Fed LTCG bracket at top | NIIT status                         | WA state bracket          | Total tax | **Effective** | **Marginal on next $** |
+| ---------- | ----------------------- | ----------------------------------- | ------------------------- | --------- | ------------- | ---------------------- |
+| $200,000   | 15% (taxable $170K)     | ❌ not yet (MAGI < $250K threshold) | ❌ not yet (LTCG < $278K) | $10,665   | **5.3%**      | 15.0%                  |
+| $300,000   | 15%                     | ✅ on $50K excess over $250K        | ✅ 7% on $22K over $278K  | $29,105   | **9.7%**      | 25.8%                  |
+| $400,000   | 15%                     | ✅ on $150K excess                  | ✅ 7% on $122K over $278K | $54,905   | **13.7%**     | 25.8%                  |
+| $500,000   | 15%                     | ✅ on $250K excess                  | ✅ 7% on $222K over $278K | $80,705   | **16.1%**     | 25.8%                  |
+
+Between $300K and $500K, the marginal on the next dollar is flat at **25.8%** (15% federal LTCG + 3.8% NIIT + 7% WA). What drives the effective rate up is that a smaller share of each incremental dollar lives in the free 0% federal bracket. Below ~$250K MAGI you're in the 5% effective zone (no NIIT, no WA); cross $250K MAGI and NIIT kicks in; cross $278K LTCG and WA kicks in. After both kinks, the climb is linear.
+
+**Why this strategy — the RMD cliff at 73.** The low-effective-rate window isn't permanent. [Required Minimum Distributions](https://www.irs.gov/retirement-plans/retirement-plan-and-ira-required-minimum-distributions-faqs) force withdrawals from traditional IRAs and 401(k)s starting at age 73, and those withdrawals hit at **ordinary-income rates** — not LTCG rates. A $5M traditional balance at 73 forces ~$189K/yr out (divisor 26.5), and that $189K stacks on top of any LTCG realized the same year, pushing taxable income into higher brackets. So the decade-ish between retirement and 73 is the window to: (a) spend taxable-brokerage LTCG first at ~5–16% effective, (b) do Roth conversions in low years to drain traditional balances before RMDs, (c) land on 73 with a smaller traditional-IRA balance and manageable RMDs. Skip the window and RMD tax drag shows up forever. See the [RMDs section below](#rmds-required-minimum-distributions) for mechanics.
 
 **Coming in 2028 — millionaires' income tax.** [ESSB 6346](https://lawfilesext.leg.wa.gov/biennium/2025-26/Pdf/Bills/Session%20Laws/Senate/6346-S.SL.pdf) (signed March 30, 2026) layers a 9.9% state income tax on household income above $1M/yr, effective Jan 1, 2028. MFJ couples share a single $1M deduction (not doubled). Credits against WA cap-gains tax and other states' income tax prevent stacking. A legal challenge is in progress; monitor before 2028 planning.
 
