@@ -142,6 +142,7 @@ Your health is your most valuable asset. It's so easy to ignore your
 ### [Financial health](/money)
 
 {%include summarize-page.html src="/money" %}
+{%include summarize-page.html src="/taxes" %}
 
 ### Emotional Health
 
