@@ -17,6 +17,19 @@ Larry is my AI life coach. He's part of [Time.ltd](/mortality-software) — my m
 
 {% include blob_image_float_right.html src="blog/raccoon-larry.webp" alt="Larry the Life Coach — raccoon as Freud with a lobster claw" %}
 
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc-start -->
+
+- [Why Larry Has a Name](#why-larry-has-a-name)
+- [What Larry Could Know](#what-larry-could-know)
+- [What Larry Does](#what-larry-does)
+- [What It's Like Using Larry (My Chief of Staff)](#what-its-like-using-larry-my-chief-of-staff)
+- [The Feedback Loop](#the-feedback-loop)
+- [Hair Club for Men](#hair-club-for-men)
+
+<!-- vim-markdown-toc-end -->
+<!-- prettier-ignore-end -->
+
 ## Why Larry Has a Name
 
 Humans are wired to talk to people, not systems. "Open my life tracking dashboard" feels like a chore. "Talk to Larry" feels like a conversation.
