@@ -41,6 +41,7 @@ What does it mean to be an engineering manager when AI is rewriting every assump
   - [Functional Collapse](#functional-collapse)
   - [Agency](#agency)
   - [AI Cockpit](#ai-cockpit)
+  - [AI Pilled](#ai-pilled)
   - [Cognitive Debt](#cognitive-debt)
   - [Deep Blue](#deep-blue)
   - [Heresies](#heresies)
@@ -51,9 +52,9 @@ What does it mean to be an engineering manager when AI is rewriting every assump
 - [Appendix: Hot Takes](#appendix-hot-takes)
   - [Should XFN Code?](#should-xfn-code)
 - [Appendix: Old Questions, New Answers](#appendix-old-questions-new-answers)
+  - [Should EMs Code?](#should-ems-code)
   - [Should I Become an EM?](#should-i-become-an-em)
   - [How Should Hiring Change?](#how-should-hiring-change)
-  - [Should EMs Code?](#should-ems-code)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -233,6 +234,12 @@ The fancy new word for "Gets Shit Done." It's not new — it's always been the t
 ### AI Cockpit
 
 {% include summarize-page.html src="/ai-cockpit" %}
+
+### AI Pilled
+
+A founder-era shorthand for the shift from "uses AI when it helps" to "instinctively reaches for AI first." Shivani Poddar (ex-Google / Deepmind / Meta, now Founder Stealth) lists it as one of three things she looks for in her founding team: "you know how to exponentiate yourself, your stack, your product and people around you with AI." The key word is _exponentiate_ — not "use AI for the task you happened to land on," but deliberately compounding across four layers: self, tools, output, and the humans around you.
+
+My take: AI-pilled is the habit form of what [Agency](#agency) is dispositionally. Agency is wanting to make things happen without being told. AI-pilled is what agency looks like in this era — the default tool reach is an AI. Someone with both shows up to every problem already five moves in. Someone with one without the other shows up late or shows up stuck. For hiring, [Shivani's three criteria](#how-should-hiring-change) are a tight test: excellence-in-something gives you the slope, founder energy gives you the fuel, AI-pilled gives you the transmission.
 
 ### Cognitive Debt
 
