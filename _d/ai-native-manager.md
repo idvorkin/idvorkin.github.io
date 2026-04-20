@@ -348,4 +348,12 @@ What changed is "Gets Shit Done" got a fancy new word — [Agency](/agency). But
 
 The real question isn't _what_ to hire for — it's _how_ to assess it when AI changes what the work looks like. That's a whole separate rabbit hole.
 
+**Field note from the founder side.** Shivani Poddar (ex-Google / Deepmind / Meta, now Founder Stealth) recently shared what she looks for in her founding team:
+
+1. **Excellence in _something_** — "could be athletics, competitive programming, anything. This shows me you have it in you to learn and be the bestest and greatest at something."
+2. **Founder energy** — "that fire in the belly and never-say-never attitude."
+3. **AI-pilled** — "you know how to exponentiate yourself, your stack, your product, and people around you with AI."
+
+She noted her former colleagues from Google, Meta, and Deepmind resonate with these as much as the new crop of graduates and founding engineers do. That tracks with the argument above: AI didn't invent agency, it just made the signal louder. The founder-stage variant of "Smart, GSD, Not an Asshole" looks a lot like its big-tech cousin — the bar didn't move, the noise floor dropped.
+
 {% include summarize-page.html src="/ai-hiring" %}
