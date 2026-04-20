@@ -1061,7 +1061,7 @@
                 "/pet-projects",
                 "/raccoon-history"
             ],
-            "last_modified": "2026-04-17T02:35:08.162475+00:00",
+            "last_modified": "2026-04-20T14:55:24.234310+00:00",
             "markdown_path": "_d/ai-native-manager.md",
             "outgoing_links": [
                 "/agency",
@@ -1072,7 +1072,6 @@
                 "/chop",
                 "/coaching",
                 "/explainers",
-                "/hill-climbing",
                 "/manager-book",
                 "/software-leadership-roles"
             ],
@@ -3529,7 +3528,6 @@
             "file_path": "_site/hill-climbing.html",
             "incoming_links": [
                 "/ai-developer",
-                "/ai-native-manager",
                 "/ai-testing",
                 "/changelog",
                 "/chop",
