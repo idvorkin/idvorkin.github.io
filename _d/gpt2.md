@@ -147,7 +147,7 @@ Write a draft of chapter 1 and 2 don’t include any stories. Start with theorie
 
 If it's about history, just say write the book
 
-An example book it wrote is [Nurture: A summary of the gottman method](/nurture), and [Rapport](/rapport).
+It produced several acronym-driven book drafts (NURTURE, RAPPORT, LEADER, CLASS, DAD, GOOD, SHINE) — entertaining as a capability demo, but the content was generic and didn't hold up, so I've since removed them.
 
 ### GPT writing my git commits
 
