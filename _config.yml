@@ -53,6 +53,7 @@ algolia:
     - "_d/changelog.md"
     - "_d/positive-mitzvahs.md"
     - "_d/negative-mitzvahs.md"
+    - "_ig66/*"
     - "debug.html"
     - "edit.html"
     - "edit"
