@@ -12,6 +12,8 @@ A journal of random life observations. Keeping track of them so I don't forget w
 - [Instructions for Claude: Creating Journal Entries](#instructions-for-claude-creating-journal-entries)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-04-22](#2026-04-22)
+    - [How Do You Know Your Son Is an Engineer?](#how-do-you-know-your-son-is-an-engineer)
   - [2026-04-17](#2026-04-17)
     - [Eight Sleep Thinks My Cat Is Me](#eight-sleep-thinks-my-cat-is-me)
     - [Four Pairs of Identical Glasses](#four-pairs-of-identical-glasses)
@@ -42,6 +44,22 @@ When adding a new entry:
 - Future life vignettes will land here before they get written up.
 
 ## Diary
+
+### 2026-04-22
+
+#### How Do You Know Your Son Is an Engineer?
+
+Yesterday Zach was looking at a pizza menu. Sees "30 inches." Immediately: _"That's a terrible deal for a pizza."_
+
+He doesn't stop there. Pulls π r². Plugs in 30 → 900π ≈ **2,827 square inches**. For four people, ~700 sq in each — six slices a person. Something's off.
+
+Texts ChatGPT: _"how many square inches of pizza does one person eat?"_ Answer: 80–120, roughly. His number is 6× high.
+
+Debugs. Finds the bug: **pizzas are quoted in diameter, not radius.** Re-runs with r=15 → 225π ≈ **707 sq in**, ~175 each, about two slices a person. Math now plausible. Pizza now reasonable.
+
+Bug fixed. Pride earned.
+
+{% include blob_image.html src="blog/raccoon-pizza-engineer-2026-04-22.webp" %}
 
 ### 2026-04-17
 
