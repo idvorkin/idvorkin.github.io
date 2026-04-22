@@ -38,7 +38,8 @@ When adding a new entry:
 4. **Voice**: Plain and direct. Self-aware is fine; preachy isn't. Specific details over abstraction.
 5. **Update TOC**: Regenerate the TOC with `:Mtoc update` (Igor will handle this if you skip it).
 6. **Images**: Maximum one image per entry. If the entry wants more visuals, it probably wants to be its own post.
-7. **Image source**: Two options. For one-off illustrations tied to a single entry, drop the file in `images/` and use `{% include repo_image.html src="<filename>.webp" %}`. For images hosted in the `idvorkin/blob` repo — the raccoon mascot set, reused art, or anything you'd rather keep out of the blog's git history — use `{% include blob_image.html src="blog/<filename>.webp" %}` (upload to blob first; two-PR dance). Default to `repo_image` for one-offs.
+7. **Image source**: **Default to `{% include blob_image_float_right.html src="blog/<filename>.webp" %}`** — uploads land in the `idvorkin/blob` repo (two-PR dance: blob first, then blog). The float-right include wraps prose around the illustration; bare markdown `![](...)` and non-floated includes look out of place in this format. For one-off non-blob illustrations, fall back to `{% include image_float_right.html src="/images/<filename>.webp" alt="..." %}` (still floats; just sources locally). Bare `![](...)` — don't.
+8. **Image background**: **Generated illustrations default to transparent.** Pass `--transparent` to `gen-image`, or post-process the magenta with `magick <in> -alpha set -fuzz 18% -transparent magenta <out>` before uploading. Real photos are exempt (they have natural backgrounds). Why: the blog renders images on whatever background the layout uses — opaque magenta or chroma-keyed source looks broken in production.
    {% endcomment %}
 
 ## Upcoming
@@ -109,7 +110,7 @@ The agent read those two messages, wrote the paragraph you're reading, regenerat
 
 A couple hours later, same seat, same driver — this time dictating structural edits to [AI Operator](/ai-operator). [PR #548](https://github.com/idvorkin/idvorkin.github.io/pull/548) came out of it. One voice message added a section on parallel agents; another reordered the whole post. The agent rebased onto main, regenerated the TOC, and force-pushed. Two voice messages from the passenger seat, and the post has a new spine.
 
-![teenage raccoon driving with dad raccoon vibe-coding in passenger seat — generational handoff](/images/vibe-coding-handoff.webp)
+{% include image_float_right.html src="/images/vibe-coding-handoff.webp" alt="teenage raccoon driving with dad raccoon vibe-coding in passenger seat — generational handoff" %}
 
 Zach took one look at the illustration and said: "We're backwards. The picture makes it look like we're British." He's right — the AI put the driver on the right-hand side of the car. The sixteen-year-old who is literally the car-whisperer in this story reviewed the AI's rendering of himself and caught the bug before his dad did. Correct seat assignments, it turns out, are a feature the passenger-seat vibe-coder is not qualified to QA.
 
