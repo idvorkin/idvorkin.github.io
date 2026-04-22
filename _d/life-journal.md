@@ -9,7 +9,6 @@ A journal of random life observations. Keeping track of them so I don't forget w
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [Instructions for Claude: Creating Journal Entries](#instructions-for-claude-creating-journal-entries)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
   - [2026-04-22](#2026-04-22)
@@ -25,6 +24,8 @@ A journal of random life observations. Keeping track of them so I don't forget w
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
+{% comment %}
+
 ## Instructions for Claude: Creating Journal Entries
 
 This is Igor's journal of life observations — moments worth recording but not essay-length. Think quantified-self mishaps, relationship moments, health observations, parenting stories, weird things the world did today.
@@ -38,6 +39,7 @@ When adding a new entry:
 5. **Update TOC**: Regenerate the TOC with `:Mtoc update` (Igor will handle this if you skip it).
 6. **Images**: Maximum one image per entry. If the entry wants more visuals, it probably wants to be its own post.
 7. **Image source**: Two options. For one-off illustrations tied to a single entry, drop the file in `images/` and use `{% include repo_image.html src="<filename>.webp" %}`. For images hosted in the `idvorkin/blob` repo — the raccoon mascot set, reused art, or anything you'd rather keep out of the blog's git history — use `{% include blob_image.html src="blog/<filename>.webp" %}` (upload to blob first; two-PR dance). Default to `repo_image` for one-offs.
+   {% endcomment %}
 
 ## Upcoming
 
@@ -49,6 +51,8 @@ When adding a new entry:
 
 #### How Do You Know Your Son Is an Engineer?
 
+{% include blob_image_float_right.html src="blog/raccoon-pizza-engineer-2026-04-22.webp" %}
+
 Yesterday Zach was looking at a pizza menu. Sees "30 inches." Immediately: _"That's a terrible deal for a pizza."_
 
 He doesn't stop there. Pulls π r². Plugs in 30 → 900π ≈ **2,827 square inches**. For four people, ~700 sq in each — six slices a person. Something's off.
@@ -58,8 +62,6 @@ Texts ChatGPT: _"how many square inches of pizza does one person eat?"_ Answer: 
 Debugs. Finds the bug: **pizzas are quoted in diameter, not radius.** Re-runs with r=15 → 225π ≈ **707 sq in**, ~175 each, about two slices a person. Math now plausible. Pizza now reasonable.
 
 Bug fixed. Pride earned.
-
-{% include blob_image.html src="blog/raccoon-pizza-engineer-2026-04-22.webp" %}
 
 ### 2026-04-17
 
