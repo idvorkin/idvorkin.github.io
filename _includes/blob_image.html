@@ -1,1 +1,8 @@
-![](https://github.com/idvorkin/blob/raw/master/{{include.src}})
+{% if include.float %}
+<img
+  src="https://github.com/idvorkin/blob/raw/master/{{include.src}}"
+  alt=""
+  style="float: {{include.float}}; max-width: 45%; margin: 0 1em 1em 1em; clear: {{include.float}};"
+/>
+{% else %} ![](https://github.com/idvorkin/blob/raw/master/{{include.src}}) {%
+endif %}
