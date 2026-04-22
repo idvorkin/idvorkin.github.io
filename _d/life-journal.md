@@ -51,7 +51,7 @@ When adding a new entry:
 
 #### How Do You Know Your Son Is an Engineer?
 
-{% include blob_image.html src="blog/raccoon-pizza-engineer-2026-04-22.webp" float="right" %}
+{% include blob_image_float_right.html src="blog/raccoon-pizza-engineer-2026-04-22.webp" %}
 
 Yesterday Zach was looking at a pizza menu. Sees "30 inches." Immediately: _"That's a terrible deal for a pizza."_
 
