@@ -20,7 +20,16 @@ By **vibing** I mean any extended interaction with an agent: pair-coding with Cl
 <!-- vim-markdown-toc-start -->
 
 - [Observations](#observations)
+  - [Imagining and creating collapse into one step](#imagining-and-creating-collapse-into-one-step)
+  - [Constantly in flow](#constantly-in-flow)
+  - [Why multi-agent: covering for stalls](#why-multi-agent-covering-for-stalls)
+  - [The flow is familiar](#the-flow-is-familiar)
+  - [Tools matter — the mic especially](#tools-matter--the-mic-especially)
+  - [No more gaps between contexts](#no-more-gaps-between-contexts)
 - [Dark Sides](#dark-sides)
+  - [Addiction qualities](#addiction-qualities)
+  - [Loss of awareness in flow](#loss-of-awareness-in-flow)
+  - [Fear of the future as fuel](#fear-of-the-future-as-fuel)
   - [Burnout](#burnout)
 - [Related Notes](#related-notes)
 
@@ -29,25 +38,43 @@ By **vibing** I mean any extended interaction with an agent: pair-coding with Cl
 
 ## Observations
 
-**Imagining and creating collapse into one step — and when it works, it's glorious.** Covey says everything is created twice: first mentally, then physically. With agents, the gap between those two creations approaches zero. At its best, the thought is in your head and a working version of it is in front of you almost simultaneously — that collapse is the magic moment, and it _is_ glorious. The catch is that the same collapse can swallow the thinking. Skip the mental pass and the agent does both — you've made a thing without imagining it. Stay in the loop and you compress without losing yourself; check out and the agent is the one creating.
+### Imagining and creating collapse into one step
 
-**Constantly-in-flow state.** Agents keep you in flow. Whether that's good depends on what you're flowing toward. Flow used to be rare and earned; now it's a default mode you slip into without noticing. That changes its meaning.
+Covey says everything is created twice: first mentally, then physically. With agents, the gap between those two creations approaches zero. At its best, the thought is in your head and a working version of it is in front of you almost simultaneously — that collapse is the magic moment, and it _is_ glorious. The catch is that the same collapse can swallow the thinking. Skip the mental pass and the agent does both — you've made a thing without imagining it. Stay in the loop and you compress without losing yourself; check out and the agent is the one creating.
 
-**Why multi-agent: covering for stalls.** Flow needs continuous output and no dead time. A single agent stalls — you wait for a response, a build, file I/O — and the dead time breaks you out. Run multiple agents and when one stalls you switch to another, never bottoming out. The key is being continuously engaged. Corollary: if a single agent ran fast enough end-to-end, one would be plenty. Multi-agent isn't a parallelism-of-work win, it's a stall-coverage strategy for flow — which is also why M2/M1 orchestration starts to matter, see [work-gastown](/work-gastown) for the org-chart-of-bots framing.
+### Constantly in flow
 
-**The flow is familiar.** It has the same shape as a long deep talk with an old friend — or the flow you used to get tweaking your tmux and vim configs for hours. Time disappears, you're in. Familiar territory, just a new partner.
+Agents keep you in flow. Whether that's good depends on what you're flowing toward. Flow used to be rare and earned; now it's a default mode you slip into without noticing. That changes its meaning.
 
-**Tools matter — the mic especially.** Quality of voice transcription is gear-bottlenecked, not model-bottlenecked. A real lapel mic close to your mouth beats laptop and phone built-ins by a country mile. Full deep dive on the cockpit and the specific mic in [ai-cockpit](/ai-cockpit#the-mic-matters-more-than-i-thought).
+### Why multi-agent: covering for stalls
 
-**No more gaps between contexts.** Self-driving plus a lapel mic erases the natural breaks. The [Tesla](/tesla) drives, the lav captures, and I just go from point to point — vibing in the car, vibing on the walk between meetings, vibing while making coffee. The transitions used to be where my brain rested. Now they're just more session. Worth knowing whether that's what you want.
+Flow needs continuous output and no dead time. A single agent stalls — you wait for a response, a build, file I/O — and the dead time breaks you out. Run multiple agents and when one stalls you switch to another, never bottoming out. The key is being continuously engaged. Corollary: if a single agent ran fast enough end-to-end, one would be plenty. Multi-agent isn't a parallelism-of-work win, it's a stall-coverage strategy for flow — which is also why M2/M1 orchestration starts to matter, see [work-gastown](/work-gastown) for the org-chart-of-bots framing.
+
+### The flow is familiar
+
+It has the same shape as a long deep talk with an old friend — or the flow you used to get tweaking your tmux and vim configs for hours. Time disappears, you're in. Familiar territory, just a new partner.
+
+### Tools matter — the mic especially
+
+Quality of voice transcription is gear-bottlenecked, not model-bottlenecked. A real lapel mic close to your mouth beats laptop and phone built-ins by a country mile. Full deep dive on the cockpit and the specific mic in [ai-cockpit](/ai-cockpit#the-mic-matters-more-than-i-thought).
+
+### No more gaps between contexts
+
+Self-driving plus a lapel mic erases the natural breaks. The [Tesla](/tesla) drives, the lav captures, and I just go from point to point — vibing in the car, vibing on the walk between meetings, vibing while making coffee. The transitions used to be where my brain rested. Now they're just more session. Worth knowing whether that's what you want.
 
 ## Dark Sides
 
-**Addiction qualities.** Apply the [addiction / passion / hobby trichotomy](/addiction). The compulsion is real. And the openness of agents — always on, always game — makes it easier to fail the test, because there's never a forcing function that stops you. The discriminator is whether the rest of your life is suffering; the [in-the-moment 20-minute check](/addiction#in-the-moment-the-20-minute-opportunity-cost-check) is the fastest way to tell.
+### Addiction qualities
 
-**Loss of awareness in flow.** Perpetual flow erodes the question of whether you'd be proud of where you're flowing. The [spiritual-health test](/spiritual-health) — sustainably motivated, in a way you'd be proud to see in your child — keeps working, but only if you stop long enough to ask it.
+Apply the [addiction / passion / hobby trichotomy](/addiction). The compulsion is real. And the openness of agents — always on, always game — makes it easier to fail the test, because there's never a forcing function that stops you. The discriminator is whether the rest of your life is suffering; the [in-the-moment 20-minute check](/addiction#in-the-moment-the-20-minute-opportunity-cost-check) is the fastest way to tell.
 
-**Fear of the future as fuel.** Some of the pull is self-medication. Vibing with agents is also vibing _away from_ what's coming for the job. The addiction may partly be a way of staying close to the thing that scares you so it can't surprise you.
+### Loss of awareness in flow
+
+Perpetual flow erodes the question of whether you'd be proud of where you're flowing. The [spiritual-health test](/spiritual-health) — sustainably motivated, in a way you'd be proud to see in your child — keeps working, but only if you stop long enough to ask it.
+
+### Fear of the future as fuel
+
+Some of the pull is self-medication. Vibing with agents is also vibing _away from_ what's coming for the job. The addiction may partly be a way of staying close to the thing that scares you so it can't surprise you.
 
 ### Burnout
 
