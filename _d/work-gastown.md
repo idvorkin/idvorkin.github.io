@@ -45,7 +45,7 @@ So here's the swap I'd make:
 | _(no equivalent)_ | M2 — the human (me)                    |
 | _(no equivalent)_ | Staff — cloud teammates near M1        |
 | Polecats          | Odalis — specialized ephemeral ICs[^1] |
-| Refinery          | _(open — see below)_                   |
+| Refinery          | Phabricator / review-and-land system   |
 
 [^1]: _Odali_ (singular), _odalis_ (plural). My word, picked in voice-to-text and I'm keeping it. I think it landed because it _sounds_ ephemeral and slightly foreign — these workers don't live with you, they show up, do the thing, and vanish. If a better term lands, I'll swap. Until then, odali.
 
@@ -80,11 +80,15 @@ Yegge's polecats are ephemeral — that part matches. What he doesn't surface is
 
 The mental model: **staff are coworkers, odalis are contractors with security badges**. Both are ICs. The handoff protocol is completely different.
 
+This isn't speculation. Meta literally ships this tier as a productized concept — [on-demand devservers](https://developers.facebook.com/blog/post/2022/11/15/meta-developers-workflow-exploring-tools-used-to-code/): ephemeral pre-warmed machines that devs grab and release daily. That's odalis-as-a-service.
+
+The rest of Meta's stack documents why the local box can't do the work. **EdenFS** virtualizes the monorepo so you only check out what you touch. **Buck** distributes builds across remote caches and parallel executors. **Mononoke** is the custom Mercurial server scaled for the monorepo. None of those exist for fun — they're the unreliable-comms cross-machine plumbing the M1 has to talk through to reach the odalis. See the [Meta dev blog post](https://developers.facebook.com/blog/post/2022/11/15/meta-developers-workflow-exploring-tools-used-to-code/) for the full workflow stack.
+
 ## Still figuring out
 
 A bunch of things I haven't worked out yet:
 
-- **What's the org-chart equivalent of Yegge's Refinery?** The Refinery is the merge-queue manager — the thing that takes finished work and integrates it. I don't know what to call that in FANG vocab. A platform-eng team? Build infra? A release manager? Probably something that already exists as a role and I just haven't matched it yet.
+- ~~**What's the org-chart equivalent of Yegge's Refinery?**~~ **Answered: it's Phabricator** (or whatever your shop calls its review-and-land system). Stacks of diffs, orchestrated landing, merge-queue logic — all first-class. Yegge's metaphor was always under-named for what it does; it's not exotic infra, it's review-and-merge orchestration. Meta calls it Phab. Google calls it Critique + Piper. Same shape.
 - **When does the M1 need its own M1?** At some scale Wally himself is going to need to delegate orchestration. Recursion at scale is real — that's how FANG ended up with M3, M4, directors, VPs. I don't know where the first level of recursion shows up for AI managers, but it's coming.
 - **Is "odali" actually a good name?** I like it because it doesn't carry baggage. But "specialized ephemeral IC with build access" is a mouthful and I'm not sure my coinage survives contact with anyone who didn't watch me invent it. Open to better.
 - **What's the on-call equivalent?** When an odali fails at 2am, who notices? Today: nobody, until I check in the morning. That's not going to scale.
