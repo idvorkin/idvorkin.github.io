@@ -33,6 +33,8 @@ By **vibing** I mean any extended interaction with an agent: pair-coding with Cl
 
 **Constantly-in-flow state.** Agents keep you in flow. Whether that's good depends on what you're flowing toward. Flow used to be rare and earned; now it's a default mode you slip into without noticing. That changes its meaning.
 
+**Why multi-agent: covering for stalls.** Flow needs continuous output and no dead time. A single agent stalls — you wait for a response, a build, file I/O — and the dead time breaks you out. Run multiple agents and when one stalls you switch to another, never bottoming out. The key is being continuously engaged. Corollary: if a single agent ran fast enough end-to-end, one would be plenty. Multi-agent isn't a parallelism-of-work win, it's a stall-coverage strategy for flow — which is also why M2/M1 orchestration starts to matter, see [work-gastown](/work-gastown) for the org-chart-of-bots framing.
+
 **The flow is familiar.** It has the same shape as a long deep talk with an old friend — or the flow you used to get tweaking your tmux and vim configs for hours. Time disappears, you're in. Familiar territory, just a new partner.
 
 **Tools matter — the mic especially.** Quality of voice transcription is gear-bottlenecked, not model-bottlenecked. A real lapel mic close to your mouth beats laptop and phone built-ins by a country mile. Full deep dive on the cockpit and the specific mic in [ai-cockpit](/ai-cockpit#the-mic-matters-more-than-i-thought).
