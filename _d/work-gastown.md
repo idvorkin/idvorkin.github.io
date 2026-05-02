@@ -26,6 +26,7 @@ This is a survey post — the thinking is fresh, names are provisional, and ther
 - [The third tier Yegge's model misses](#the-third-tier-yegges-model-misses)
 - [When to use the M1, and when to skip him](#when-to-use-the-m1-and-when-to-skip-him)
 - [Still figuring out](#still-figuring-out)
+- [Appendix: Challenges](#appendix-challenges)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -109,3 +110,12 @@ A bunch of things I haven't worked out yet:
 - **What's the on-call equivalent?** When an odali fails at 2am, who notices? Today: nobody, until I check in the morning. That's not going to scale.
 
 More to come as I build this out. If you're running this pattern at scale — especially the M1+staff+odalis split inside a real monorepo — drop me a note. I'd rather steal your vocabulary than invent more of my own.
+
+## Appendix: Challenges
+
+If you're going to run this setup, here's what you're signing up for. None of these are dealbreakers, but if you're not aware of them you'll burn time.
+
+- **Constantly-changing infra.** Models, tooling, formulas, bots — everything moves fast. You don't get to pin to a stable foundation. Pinning a model version this month means you're a release behind next month. Build for swap, not stability.
+- **Complexity you can't hold in your head.** Stack depth + emergent multi-agent behavior + multi-process coordination. The system is more complicated than any single human's working memory. You manage it through tooling, not by understanding it directly.
+- **Probabilistic debugging.** Things fail probabilistically. You can't reproduce reliably; you can't bisect cleanly. You're triangulating from logs, re-running with variations, and accepting "I think it was this" instead of "I know it was this." Coming from a deterministic-software background, this is genuinely uncomfortable.
+- **Every tool ships `doctor` + `repair`.** This is the load-bearing recommendation. If you're going to operate in a probabilistic stack, every tool you depend on needs a self-diagnostic command (`<tool> doctor`) and ideally a self-repair command (`<tool> repair` / `<tool> fix`). Examples I live by: `telegram_debug.py doctor`, `up-to-date diagnose.py`, `bd doctor`. These aren't optional polish — they're how you stay sane when the system is too complex to debug by hand.
