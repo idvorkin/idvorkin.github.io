@@ -24,6 +24,7 @@ This is a survey post — the thinking is fresh, names are provisional, and ther
 - [From Mad Max to org-chart](#from-mad-max-to-org-chart)
 - [Why the human is M2, not the Mayor](#why-the-human-is-m2-not-the-mayor)
 - [The third tier Yegge's model misses](#the-third-tier-yegges-model-misses)
+- [When to use the M1, and when to skip him](#when-to-use-the-m1-and-when-to-skip-him)
 - [Still figuring out](#still-figuring-out)
 
 <!-- vim-markdown-toc-end -->
@@ -83,6 +84,20 @@ The mental model: **staff are coworkers, odalis are contractors with security ba
 This isn't speculation. Meta literally ships this tier as a productized concept — [on-demand devservers](https://developers.facebook.com/blog/post/2022/11/15/meta-developers-workflow-exploring-tools-used-to-code/): ephemeral pre-warmed machines that devs grab and release daily. That's odalis-as-a-service.
 
 The rest of Meta's stack documents why the local box can't do the work. **EdenFS** virtualizes the monorepo so you only check out what you touch. **Buck** distributes builds across remote caches and parallel executors. **Mononoke** is the custom Mercurial server scaled for the monorepo. None of those exist for fun — they're the unreliable-comms cross-machine plumbing the M1 has to talk through to reach the odalis. See the [Meta dev blog post](https://developers.facebook.com/blog/post/2022/11/15/meta-developers-workflow-exploring-tools-used-to-code/) for the full workflow stack.
+
+## When to use the M1, and when to skip him
+
+The M1 isn't always the right interface. Sometimes you go through Wally; sometimes you go straight to the IC. Knowing which is part of the job — same call any FANG manager makes between dispatching and rolling up sleeves.
+
+**Three reasons to go through the M1:**
+
+- **Babysitting at scale.** Odalis get stuck — model errors, broken comms, file races, build flakes — and they don't recover on their own. If you're not watching, they idle. Wally watches and unsticks them, so a 30-minute task doesn't quietly become a four-hour one. The MEOW stack patrol formulas (e.g. `mol-polecat-work.formula.toml`, `mol-deacon-patrol.formula.toml` in [Yegge's gastown repo](https://github.com/gastownhall/gastown/tree/main/internal/formula/formulas/)) are this idea formalized — babysitting as a first-class workload.
+- **Phone-friendly orchestration.** Wally bridges the navigation gap. I can drive the team from my phone — between meetings, on a walk, in the car — ask status, push work forward, verify results. Direct IC interaction needs a keyboard and the right context window loaded. Wally exposes a thinner interface, and that interface fits a thumb.
+- **Adversarial review.** Wally can orchestrate a convoy of reviewers — multiple specialized agents critiquing the same artifact for correctness, performance, security, style, smell. See Yegge's [code-review formula](https://github.com/gastownhall/gastown/tree/main/internal/formula/formulas/) as the canonical example. One IC can't do this; an M1 with staff can.
+
+**The trade-off:** when you need precision, the M1 filters too aggressively. Working through Wally to get something very specific often returns a lot of garbage — generalized, diluted, missing the point. Going direct to the IC keeps your intent intact. You're collaborating, not delegating-then-praying.
+
+Heuristic: **wide work goes through M1; deep work goes direct.** If the task has a clear spec and just needs to land in many places, route through Wally. If it's one specific thing and "perfect" matters, sit down with the IC.
 
 ## Still figuring out
 
