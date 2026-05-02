@@ -96,7 +96,7 @@ New entry at [/life-journal#2026-04-22](/life-journal#2026-04-22) with raccoon i
 - **The debug**: Found it. Pizzas are quoted in diameter. Re-ran with r=15 → 707 sq in → ~175/person → ~two slices. Math plausible. Pizza reasonable.
 - **The verdict**: Bug fixed. Pride earned. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/9d55340db)
 
-Also: vibe-coding-handoff image converted to float-right include; Claude instructions hidden inside `{% comment %}` block so they don't ship to the public page. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/13195afeb)
+Also: vibe-coding-handoff image converted to float-right include; Claude instructions hidden inside `{% raw %}{% comment %}{% endraw %}` block so they don't ship to the public page. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/13195afeb)
 
 ### AI Native Manager: AI Pilled & Hiring Notes
 
@@ -130,7 +130,6 @@ Two additions to [/ai-native-manager](/ai-native-manager):
 - **Sleep view overhaul** — main-session detection, onset vs. truly-untracked gap distinction, source-aware average, warning-icon rendering fix [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/4c4ae84c9)
 - **Dashboard & location cleanup** — drop Resting HR card (folded into Heart Rate sheet), header subtitle/summary-banner removed, About folded into Settings; Location sheet gains Copy Coordinates + Copy Daily Summary buttons [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/863631b35)
 
-
 ## Week of 2026-04-20
 
 _24 blog commits + cross-repo activity_
@@ -160,6 +159,7 @@ Also: "Why I Build My Own" section includes a Winchester Mystery House self-awar
 "Life coach" undersells it. New section in [/larry](/larry#what-its-like-using-larry-my-chief-of-staff) documents how Larry operates as a **chief of staff**: dictate from wherever → Larry runs background agents on the dev VM → PRs come back as Telegram links.
 
 The Bremerton ferry-line example: three voice dictations inside one minute → three merged PRs:
+
 1. _"Move my Claude to their own post."_ → PR #518 (igors-claws, merged 23 min later)
 2. _"Remove changelog from Algolia search index."_ → PR #559 (merged 17 min later)
 3. _"Update blog rules to allow blog images in the repo."_ → PR #560 (merged 16 min later)
