@@ -12,11 +12,7 @@ tags:
 mermaid: True
 ---
 
-As I've explored being an [AI native manager](/ai-native-manager), one thing is emerging: I will certainly be an AI manager of bots. Let me tell you the story of [Wally](/igors-claws), and then I can go into it.
-
-Wally is one of my three [claws](/igors-claws) — persistent AI entities I run with names, memory, and a domain each. He's the work claw. In FAANG vocabulary, he's the M1 — the AI orchestrator who handles direction-and-review tasks I delegate, and who orchestrates further down to staff and odalis. I named him so I could read about his work in status reports and remember which agent did what. I spent something like eight hours teaching Wally to write status reports I could actually read; another stint teaching him to write design docs I could review the way I'd review a good engineer's. The good news: once Wally got it, _Wally can train the others_. The pattern is the same one any [good manager](/manager-book) runs — patterns from previous reps, design docs shaped to the reviewer, lifestyle support that took longer than I expected. Eight hours of training a junior compounds when the junior can teach the next one.
-
-That's the story. Now let me tell you what I've figured out about the org chart hiding inside it.
+As I've explored being an [AI native manager](/ai-native-manager), one thing is emerging: I will certainly be an AI manager of bots. This is the story of [Wally](/igors-claws) — my work claw, the M1 in FAANG vocabulary, the AI orchestrator I delegate direction-and-review tasks to and who orchestrates further down to staff and odalis. I named him so I could read about his work in status reports and remember which agent did what. I spent something like eight hours teaching Wally to write status reports I could actually read; another stint teaching him to write design docs I could review the way I'd review a good engineer's. The good news: once Wally got it, _Wally can train the others_. The pattern is the same one any [good manager](/manager-book) runs — patterns from previous reps, design docs shaped to the reviewer, lifestyle support that took longer than I expected. Eight hours of training a junior compounds when the junior can teach the next one. That's the story. Now let me tell you what I've figured out about the org chart hiding inside it.
 
 {% include ai-slop.html percent="90" %}
 
@@ -46,13 +42,13 @@ The structure is right. The metaphors are gratuitous. Polecats and refineries ar
 
 So here's the swap I'd make:
 
-| Yegge's Gas Town      | Org-chart vocabulary                   |
-| --------------------- | -------------------------------------- |
-| Mayor                 | M1 — the AI manager (Wally)            |
-| _(implicit operator)_ | M2 — the human (me)                    |
-| Oracle / Deacons      | Staff — cloud teammates near M1        |
-| Polecats              | Odalis — specialized ephemeral ICs[^1] |
-| Refinery              | Phabricator / review-and-land system   |
+| Yegge's Gas Town      | Org-chart vocabulary                   | Role                                                   |
+| --------------------- | -------------------------------------- | ------------------------------------------------------ |
+| _(implicit operator)_ | M2 — the human (me)                    | Direction, review, strategic calls                     |
+| Mayor                 | M1 — the AI manager (Wally)            | Orchestrates work, distributes tasks, reviews output   |
+| Oracle / Deacons      | Staff — cloud teammates near M1        | Persistent context-holders, work alongside Wally       |
+| Polecats              | Odalis — specialized ephemeral ICs[^1] | Ephemeral workers with build-tool access, scoped tasks |
+| Refinery              | Phabricator / review-and-land system   | Manages merge queue, applies polished output           |
 
 [^1]: _Odali_ (singular), _odalis_ (plural). My word, picked in voice-to-text and I'm keeping it — kind of a joke on the naming convention of Wally and Larry. They're "the Odallies," the rest of the gang. I think it also landed because it _sounds_ ephemeral and slightly foreign — these workers don't live with you, they show up, do the thing, and vanish. If a better term lands, I'll swap. Until then, odali.
 
