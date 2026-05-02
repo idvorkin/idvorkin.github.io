@@ -12,6 +12,11 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Week of 2026-04-27](#week-of-2026-04-27)
+  - [Life Journal: Zach Pizza-Engineer](#life-journal-zach-pizza-engineer)
+  - [AI Native Manager: AI Pilled & Hiring Notes](#ai-native-manager-ai-pilled--hiring-notes)
+  - [Infrastructure & CI (2026-04-27)](#infrastructure--ci-2026-04-27)
+  - [Other Projects (2026-04-27)](#other-projects-2026-04-27)
 - [Week of 2026-04-20](#week-of-2026-04-20)
   - [Taxes: Split from /money (new post!)](#taxes-split-from-money-new-post)
   - [Igor's Three Claws (new post!)](#igors-three-claws-new-post)
@@ -78,6 +83,53 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+## Week of 2026-04-27
+
+_15 commits this week (blog) + cross-repo activity_
+
+### Life Journal: Zach Pizza-Engineer
+
+New entry at [/life-journal#2026-04-22](/life-journal#2026-04-22) with raccoon illustration — Zach spots "30 inches" on a pizza menu and immediately reaches for π r²:
+
+- **The bug**: First pass used r=30 (diameter, not radius) → 2,827 sq in / 4 people → 700 sq in each. ChatGPT sanity check: 80–120 sq in/person. His number was 6× high.
+- **The debug**: Found it. Pizzas are quoted in diameter. Re-ran with r=15 → 707 sq in → ~175/person → ~two slices. Math plausible. Pizza reasonable.
+- **The verdict**: Bug fixed. Pride earned. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/9d55340db)
+
+Also: vibe-coding-handoff image converted to float-right include; Claude instructions hidden inside `{% comment %}` block so they don't ship to the public page. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/13195afeb)
+
+### AI Native Manager: AI Pilled & Hiring Notes
+
+Two additions to [/ai-native-manager](/ai-native-manager):
+
+- **AI Pilled** (new vocabulary entry) — Shivani Poddar (ex-Google/Deepmind/Meta, now Founder Stealth) coined the hiring frame: "you know how to exponentiate yourself, your stack, your product, and people around you with AI." Igor's gloss: AI-pilled is the _habit form_ of [Agency](/agency) — someone with both shows up to every problem already five moves in. Someone with one without the other shows up late or stuck. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/9ad6c575b)
+- **Founder-side hiring field note** — Shivani's three-criterion checklist for founding-team hires: excellence-in-something (proves the slope), founder energy (the fuel), AI-pilled (the transmission). Former Google/Deepmind/Meta colleagues resonate with these as much as the new grad crop. "The bar didn't move, the noise floor dropped." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/dc7fc65e2)
+
+### Infrastructure & CI (2026-04-27)
+
+- **Algolia quota fix** — excluded `_ig66/*` (family journal: 89 files, ~6500 lines) from the search index. The collection was indexing ~1500–2000 records, blocking the index for exceeding plan limits. Personal-archive entries now stay out of public search. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/720fe7594)
+- **Content cleanup** — deleted 7 early-GPT acronym-book drafts (`class-act-4`, `good_husband-4`, `gpt-7-habits`, `gpt-dad`, `gpt-gotman`, `gpt-system-design-interview`, `rapport`): ~81KB / ~2000 lines / estimated 400–500 Algolia records removed. Also resolved a permalink collision — `gpt-gotman.md` and the hand-written `nurture.md` both claimed `/nurture`. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3cffb1557)
+
+### Other Projects (2026-04-27)
+
+**[Settings](https://github.com/idvorkin/Settings)** (dotfiles & tools)
+
+- tmux mouse mode enabled [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/68613ccea)
+- `rbv`: switched from Go (`bv`) to Rust port (`bvr`), defaulting to tree view with open-issues filter [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/8fdf4eaa5)
+- npm security audit fix (lodash, picomatch, cross-spawn, micromatch) [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/b61e9ab4a)
+
+**[blob](https://github.com/idvorkin/blob)** (image assets)
+
+- Added raccoon-pizza-engineer illustration for the life-journal entry, with transparent background (chroma-key stripped) [<i class="fa fa-github"></i>](https://github.com/idvorkin/blob/commit/6fe61b44a)
+
+**[context-grabber](https://github.com/idvorkin/context-grabber)** (iOS health app)
+
+- **Counter widget** — Phase 1: dashboard tally + SQLite persistence + widget bridge; Phase 2: iOS 17 in-widget +1 via App Intent, reconciles widget taps with SQLite on foreground (fixes desync) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/c6fc6094a)
+- **Gym timer** — Dynamic Island shows phase name + round count; 2-min preset added; deep-link routing (`grabber://timer?preset=…&autostart=…`); Live Activity keepalive when app backgrounded [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/2ef4a1702)
+- **Today home-screen widget** — App Group bridge so the widget shows live steps/sleep/exercise [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/b789147ea)
+- **Sleep view overhaul** — main-session detection, onset vs. truly-untracked gap distinction, source-aware average, warning-icon rendering fix [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/4c4ae84c9)
+- **Dashboard & location cleanup** — drop Resting HR card (folded into Heart Rate sheet), header subtitle/summary-banner removed, About folded into Settings; Location sheet gains Copy Coordinates + Copy Daily Summary buttons [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/863631b35)
+
 
 ## Week of 2026-04-20
 
