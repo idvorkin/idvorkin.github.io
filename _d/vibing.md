@@ -4,6 +4,7 @@ title: "The Psychology of Vibing"
 permalink: /vibing
 redirect_from:
   - /psychology-of-vibing
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/vibing-placeholder.webp
 tags:
   - emotional-health
   - how igor ticks
@@ -11,10 +12,6 @@ tags:
 ---
 
 I've been spending a lot of time vibing with agents — coding, writing, sometimes just talking. This post is a survey of what I'm noticing, not a finished theory. Observations, dark sides, related notes. I'll keep adding as I see more.
-
-{% include ai-slop.html percent="20" %}
-
-By **vibing** I mean any extended interaction with an agent: pair-coding with Claude, drafting an essay with one, even just kicking ideas around. The interaction is conversational and the loop is tight. It feels less like using a tool and more like working alongside someone.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -35,6 +32,10 @@ By **vibing** I mean any extended interaction with an agent: pair-coding with Cl
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+{% include ai-slop.html percent="20" %}
+
+By **vibing** I mean any extended interaction with an agent: pair-coding with Claude, drafting an essay with one, even just kicking ideas around. The interaction is conversational and the loop is tight. It feels less like using a tool and more like working alongside someone.
 
 ## Observations
 
