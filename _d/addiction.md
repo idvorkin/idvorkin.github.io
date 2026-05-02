@@ -93,6 +93,8 @@ The trichotomy and the relief-vs-loss test are great in retrospect. In the momen
 
 The third question is the real signal. Compelled + something else would have been preferable + sad about missing it → leaning **Addiction**. Compelled + this is exactly what I wanted, nothing else preferable, no sadness → leaning **Passion**. The check works because the compulsion lies to you about what you want; the sadness doesn't.
 
+**Where this catches me: vibing on tech.** Vibe coding shows up as Passion above, but past a threshold it fails the same check as scrolling — same shape, different prop. Working compulsively still looks productive, which is what makes it sneaky. The body is the honest scorekeeper: sleep debt and low HRV are receipts for over-vibing. Last week I crashed to 3.5 hours one night (HRV 27.2, the week's lowest) — that's not theoretical, that's the bill. When I run the check there, the answer to "what's it costing?" isn't "another video" — it's sleep, presence with family, recovery.
+
 ## Current Addictions
 
 ### TikTok (Thought Escape)
