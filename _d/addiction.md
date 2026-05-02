@@ -19,6 +19,7 @@ Addiction is not about drugs or alcohol - it is about escape. Quoting "Do the Wo
 - [Is doing the thing you want to be doing an addiction?](#is-doing-the-thing-you-want-to-be-doing-an-addiction)
   - [The logical approach](#the-logical-approach)
   - [Examples from my life](#examples-from-my-life)
+  - [In the moment: the 20-minute opportunity-cost check](#in-the-moment-the-20-minute-opportunity-cost-check)
 - [Current Addictions](#current-addictions)
   - [TikTok (Thought Escape)](#tiktok-thought-escape)
 - [Hypo Addictions](#hypo-addictions)
@@ -78,6 +79,16 @@ Once you've placed the activity, the response follows:
 The test: if I had to stop right now, which feels like relief, which feels like loss, and which feels like nothing in particular? TikTok = relief. Vibe coding = loss. Magic = nothing in particular — and that's fine.
 
 **The question to ask:** Am I doing this because I genuinely want to, or because I can't stand NOT doing it — and either way, is the rest of my life better or worse for it?
+
+### In the moment: the 20-minute opportunity-cost check
+
+The trichotomy and the relief-vs-loss test are great in retrospect. In the moment, while I'm already compelled and three videos deep, I need something faster. Set a 20-minute timer. When it fires, ask three questions:
+
+1. What's the opportunity cost of doing this right now?
+2. What would I rather be doing?
+3. Am I sad I'm missing the other thing?
+
+The third question is the real signal. Compelled + something else would have been preferable + sad about missing it → leaning **Addiction**. Compelled + this is exactly what I wanted, nothing else preferable, no sadness → leaning **Passion**. The check works because the compulsion lies to you about what you want; the sadness doesn't.
 
 ## Current Addictions
 
