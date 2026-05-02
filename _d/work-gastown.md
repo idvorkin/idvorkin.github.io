@@ -57,7 +57,7 @@ This is the part I think people get wrong about themselves.
 
 When you start running agents, it _feels_ like you're the Mayor. You're the one giving orders, deciding what gets built, picking what to ship. So you call yourself the orchestrator. But that's not actually what's happening — or at least it's not what _should_ be happening.
 
-In FANG vocabulary, **I'm the M2**. Wally — the AI orchestrator — is the M1. Wally has staff: cloud teammates that run alongside him, do research, draft work, hold context. Wally has odalis: ephemeral ICs that go off and do specialized work and come back with results. _Wally_ is the manager. I'm the manager of managers.
+In FANG vocabulary, **I'm the M2**. [Wally](/igors-claws) — the AI orchestrator — is the M1. Wally has staff: cloud teammates that run alongside him, do research, draft work, hold context. Wally has odalis: ephemeral ICs that go off and do specialized work and come back with results. _Wally_ is the manager. I'm the manager of managers.
 
 What's an M2 actually for? Direction and review. I tell Wally what we're trying to accomplish. I review the output. I make the calls he can't — strategic shifts, taste judgments, hiring decisions about what new tools to bring in. I do _not_ try to dispatch every IC myself. The moment I try, I become the bottleneck — exactly the bottleneck FANG learned to design managers around.
 
