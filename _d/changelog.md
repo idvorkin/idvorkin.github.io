@@ -17,6 +17,16 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
   - [AI Native Manager: AI Pilled & Hiring Notes](#ai-native-manager-ai-pilled--hiring-notes)
   - [Infrastructure & CI (2026-04-27)](#infrastructure--ci-2026-04-27)
   - [Other Projects (2026-04-27)](#other-projects-2026-04-27)
+- [Week of 2026-04-20](#week-of-2026-04-20)
+  - [Taxes: Split from /money (new post!)](#taxes-split-from-money-new-post)
+  - [Igor's Three Claws (new post!)](#igors-three-claws-new-post)
+  - [Larry: From Life Coach to Chief of Staff](#larry-from-life-coach-to-chief-of-staff)
+  - [AI Journal: One Repo, One Token](#ai-journal-one-repo-one-token)
+  - [AI Operator: One-Way vs Two-Way Doors](#ai-operator-one-way-vs-two-way-doors)
+  - [Life Journal: Balloons on the Hood Canal Trail](#life-journal-balloons-on-the-hood-canal-trail)
+  - [Infrastructure & CI (2026-04-20)](#infrastructure--ci-2026-04-20)
+  - [chop-conventions (2026-04-20)](#chop-conventions-2026-04-20)
+  - [Other Projects (2026-04-20)](#other-projects-2026-04-20)
 - [Week of 2026-04-13](#week-of-2026-04-13)
   - [Life Journal: First Entries (new post!)](#life-journal-first-entries-new-post)
   - [AI Operator: Seven New Sections](#ai-operator-seven-new-sections)
@@ -119,6 +129,105 @@ Two additions to [/ai-native-manager](/ai-native-manager):
 - **Today home-screen widget** — App Group bridge so the widget shows live steps/sleep/exercise [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/b789147ea)
 - **Sleep view overhaul** — main-session detection, onset vs. truly-untracked gap distinction, source-aware average, warning-icon rendering fix [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/4c4ae84c9)
 - **Dashboard & location cleanup** — drop Resting HR card (folded into Heart Rate sheet), header subtitle/summary-banner removed, About folded into Settings; Location sheet gains Copy Coordinates + Copy Daily Summary buttons [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/863631b35)
+
+
+## Week of 2026-04-20
+
+_24 blog commits + cross-repo activity_
+
+### Taxes: Split from /money (new post!)
+
+[/taxes](/taxes) is a new post carved out of the old [/money](/money) page — tax-specific content now has its own home. `/money` keeps RSUs, stock options, metrics, and money philosophy; `/taxes` covers capital gains, WA state mechanics, IRAs, 401(k)s, Roth rules, step-up in basis, and QSBS. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/35025061a)
+
+Three notable additions alongside the split:
+
+- **WA capital gains updated to 2026 law** — $270K threshold (up from $262K), rates and examples refreshed with sources. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/9c6609dcd)
+- **Retirement LTCG-only scenario** ([blog](/taxes#standard-deduction--0-ltcg)) — $300K spending, no wages: standard deduction + 0% LTCG bracket math showing how a retiree can pull $300K/yr and owe zero federal capital gains tax. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/a6b5a5d45)
+- **$200K–$500K benchmark table** — working-years income with rate columns, flagging the WA step-function kink and RMD cliff context for late-career planning. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/95a362b17)
+
+### Igor's Three Claws (new post!)
+
+New post at [/igors-claws](/igors-claws) — the instance roster, not the theory ([/claw](/claw) covers the theory). Three named AI entities with domains:
+
+- **[Larry](/larry)** — life coach claw. Journals, goals, health data. Weekly Saturday review: "You've committed to restart meditation 5 times since November. What's different this time?" Biggest gap: Larry is smart but amnesiac — each session starts cold.
+- **Wally** — work claw. Not discussed publicly (ask in person if you work at Meta).
+- **Tony** — transportation claw.
+
+Also: "Why I Build My Own" section includes a Winchester Mystery House self-awareness note — building claws is recognized as a form of yak-shaving. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3a139741f)
+
+### Larry: From Life Coach to Chief of Staff
+
+"Life coach" undersells it. New section in [/larry](/larry#what-its-like-using-larry-my-chief-of-staff) documents how Larry operates as a **chief of staff**: dictate from wherever → Larry runs background agents on the dev VM → PRs come back as Telegram links.
+
+The Bremerton ferry-line example: three voice dictations inside one minute → three merged PRs:
+1. _"Move my Claude to their own post."_ → PR #518 (igors-claws, merged 23 min later)
+2. _"Remove changelog from Algolia search index."_ → PR #559 (merged 17 min later)
+3. _"Update blog rules to allow blog images in the repo."_ → PR #560 (merged 16 min later)
+
+Key upgrade from "life coach": delegates down (sub-agents on isolated worktrees), catches errors before the build breaks, asks when unsure, and owns the mess — "A chief of staff who hides failures is a liability." "The delta from 'life coach' to 'chief of staff': Larry ships while I'm looking out the window." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8ee1d2cef)
+
+### AI Journal: One Repo, One Token
+
+New entry in [/ai-journal](/ai-journal#one-repo-one-token-the-closest-you-can-get-to-write-only-on-github) on GitHub PAT security patterns for CI:
+
+- **Write-only is a myth** — GitHub fine-grained PATs offer only _No access_, _Read-only_, or _Read and write_ on Contents. Pushing commits requires _Read and write_ and read comes along for free.
+- **The mitigation** — scope the PAT to exactly one throwaway private repo. Least privilege here is the **target**, not the verb. Token is read+write, but on `claude-run-logs-private` (append-only Claude transcripts). If it leaks: embarrassing, not catastrophic.
+- **Implementation details** — `git -c http.extraHeader` instead of token-in-URL (URL persists in `.git/config` and `/proc/<pid>/cmdline`); `printf` not `echo $TOKEN | base64` to keep raw token out of subprocess argv; explicit `::add-mask::` on the base64 form since GHA only redacts raw token bytes by default.
+
+Pattern in one line: _one token → one repo → one permission_. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/eb4252f94)
+
+### AI Operator: One-Way vs Two-Way Doors
+
+New heuristic in [/ai-operator](/ai-operator#you-need-to-get-on-the-loop): Bezos's decision taxonomy applied to AI operator mode selection.
+
+- **Two-way door** (cheap to reverse: blog prose, throwaway script, a PR you can close) → be on-the-loop: let the AI ship, look at the output, revert if off.
+- **One-way door** (hard to undo: payment sent, customer email, force-push to prod, migration that rewrites data) → be in-the-loop: read every line before it runs.
+
+"The cost of getting it wrong isn't symmetric, so ask which kind of door _before_ you pick a mode." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8518fc772)
+
+### Life Journal: Balloons on the Hood Canal Trail
+
+New entry in [/life-journal](/life-journal#balloons-on-the-hood-canal-trails) from spring break:
+
+Spring break at Hood Canal — hiking with a Qualatrix 160 and a dozen balloons in cargo pockets. Every grumpy kid dragging thirty feet behind their parents is a ten-second fix: pull out a balloon, make a dog, hand it over. The real gift is for the parents: kid walking under their own power again, hike reframed from "that was awful" to "that was fun." Low materials cost, absurd leverage on the emotional arc of someone else's afternoon. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/94004ed7f)
+
+### Infrastructure & CI (2026-04-20)
+
+- **`repo_image` include** — images can now live in the blog repo under `images/` alongside blob-hosted images. New includes: `repo_image.html`, `repo_image_float_right.html`. Life journal and larry.md use these for one-off illustrations rather than the two-PR blob-upload dance. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/12b237459)
+- **Changelog excluded from Algolia search** — the changelog is an aggregator; removing it prevents it from polluting search results with links to everything. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/acd1549f2)
+- **Changelog excluded from backlinks** — same reason: "Referenced by: changelog" was drowning the per-post backlink signal. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/93e8647dd)
+- **share-link appends `...`** — share-link snippets now append `...` when the referenced section has more content past the visible slice. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8921b73a4)
+
+### chop-conventions (2026-04-20)
+
+**[chop-conventions](https://github.com/idvorkin/chop-conventions)** — major week for the shared workflow toolkit:
+
+- **`bulk` skill** — fan-out N similar CLI calls (`gh`, `bd`, `git`) as one parallel step instead of N sequential agent turns. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/fe7e250d0)
+- **`image-read` skill** — subagent-based image ingestion that always runs in background, never blocking the main thread. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/6da88d704)
+- **`delegate` overhaul** — `prepare_dispatch.py` replaces Phase 1-3 bash orchestration; hardened contract + SKILL.md after architect review. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/9576474b5)
+- **`gen-image` flood fill** — border-seeded flood fill survives grass in corners; auto-evaluates alpha quality after `--transparent` chroma-key; seals thin channels before counting interior holes. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/654ac2d40)
+- **`gen-tts --speed`** — tempo multiplier via `ffmpeg atempo` for faster playback generation. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/155438574)
+- **Session learnings** — documented temp hierarchy, PR merge-race check, subprocess.run default-arg trap, and worktree subagent cwd instability in shared CLAUDE.md. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/00848035a)
+
+### Other Projects (2026-04-20)
+
+**[Settings](https://github.com/idvorkin/Settings)** (dotfiles & tools)
+
+- **`agent-continue`** — new `rmux_helper` subcommand: scans tmux panes for running agents, presents a TUI picker, and `execvp`-launches the right resume command (`/continue`, `/yolo`, or custom). Full test coverage, dynamic pid completer, and `install-completions`. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/002df2d8d)
+- **`parent-pid-tree`** — traces the ancestor chain of a tmux pane's process; `--tree` flag adds proc details and marks the root. Extracted `TmuxProvider` + `ProcReader` traits for testability. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/2937c8486)
+- iPhone 17 Pro ECDSA public key added; `brew_check` false-positive fix for aliased/versioned formulae; link-picker gained a Gist category and hard-wrapped URL joining fix. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/ef5fd3e0b)
+
+**[blob](https://github.com/idvorkin/blob)** (image hosting)
+
+- Raccoon-claw-trio illustrations regenerated with improved chroma-key (flood-fill algorithm, sealed thin channels, single-pass); Freud-Larry raccoon added to the trio. [<i class="fa fa-github"></i>](https://github.com/idvorkin/blob/commit/ad88ced7d)
+
+**[chroma-key-explainer](https://idvorkin-ai-tools.github.io/chroma-key-explainer)** (new site) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/chroma-key-explainer)
+
+- New standalone explainer for the chroma-key hill-climbing experiment: winner-first layout, trajectory table, deep-dives collapsed, business-problem framing. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/chroma-key-explainer/commit/e22e9e43d)
+
+**[larry-voice-samples](https://github.com/idvorkin-ai-tools/larry-voice-samples)**
+
+- Larry voice catalog using Gemini 3.1 Flash TTS. Soprano voice iterated via Gemini-as-critic feedback loop (tournament + scorecard); v2 winner: Enceladus base at 6/10. Global speed slider (1x–2.6x via `playbackRate`). [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/larry-voice-samples/commit/462b709af)
 
 ## Week of 2026-04-13
 

@@ -8,6 +8,8 @@ redirect_from:
 
 Some days thinking about work makes me stressed, thinking of my family makes me resentful, and I don't want to feel like a sloth feeding my addictions to TikTok, and doom scrolling. Those days, I'm grateful for my hobbies. This post gives you reasons to find a hobby and teaches you the attributes in an ideal hobby: Being accessible, Supporting mastery, Reinforcing your identity, and building relationships.
 
+A hobby isn't a [passion](/addiction#is-doing-the-thing-you-want-to-be-doing-an-addiction) and it isn't an [addiction](/addiction). The test is compulsion: with a passion or an addiction, you can't stand NOT doing it; with a hobby, you can put it down without feeling pulled back. That absence of compulsion is exactly the feature — your hobby stays a refuge instead of becoming another thing running you.
+
 <!--
 Who is the audience?
 * People struggling to find a new hobby
