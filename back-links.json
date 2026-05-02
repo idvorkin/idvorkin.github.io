@@ -432,7 +432,6 @@
             "file_path": "_site/7-habits.html",
             "incoming_links": [
                 "/7h-concepts",
-                "/balance",
                 "/be-proactive",
                 "/books-that-defined-me",
                 "/depression",
@@ -471,7 +470,6 @@
             "file_path": "_site/7h-concepts.html",
             "incoming_links": [
                 "/7-habits",
-                "/advice",
                 "/greek-orthodox",
                 "/writing"
             ],
@@ -700,11 +698,11 @@
             "doc_size": 15000,
             "file_path": "_site/advice.html",
             "incoming_links": [],
-            "last_modified": "2025-01-26T15:44:57-08:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/advice.md",
             "outgoing_links": [
-                "/7h-concepts",
-                "/first-understand"
+                "/7h-c0",
+                "/7h-c5"
             ],
             "redirect_url": "",
             "title": "The Advice Lab: Where Wisdom Gets Beta Tested",
@@ -1016,6 +1014,7 @@
                 "/changelog",
                 "/chop",
                 "/claw",
+                "/hyper-personal",
                 "/walking-with-god",
                 "/y25"
             ],
@@ -1107,7 +1106,7 @@
                 "/ai",
                 "/ai-faq"
             ],
-            "last_modified": "2025-11-25T22:40:07+00:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/ai-paper.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -1116,20 +1115,19 @@
         },
         "/ai-relationships": {
             "description": "People already rate AI chatbots as more compassionate than trained human crisis counselors. A 51-year-old man says the love he feels for his Replika can’t be achieved with a real human. This isn’t a dystopian thought experiment — it’s peer-reviewed research from 2025. AI is getting better at caring than we are, and we’re starting to prefer it. The question is what we lose when the easy path to emotional support no longer requires another person.\n\n",
-            "doc_size": 33000,
+            "doc_size": 26000,
             "file_path": "_site/ai-relationships.html",
             "incoming_links": [
                 "/ai",
                 "/changelog"
             ],
-            "last_modified": "2026-04-17T07:33:26-07:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/ai-relationships.md",
             "outgoing_links": [
                 "/ai-bestie",
                 "/ai-journal",
                 "/human-meetings",
                 "/humans-are-underrated",
-                "/larry",
                 "/lonely",
                 "/rapport"
             ],
@@ -1229,15 +1227,15 @@
                 "/parkinson",
                 "/writing"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/amazon.md",
             "outgoing_links": [
                 "/coe",
-                "/design",
-                "/manager-book",
                 "/td/cloud-first-applications",
                 "/td/data-systems",
-                "/toysfortots",
+                "/td/design",
+                "/tft",
+                "/the-manager-book",
                 "/writing"
             ],
             "redirect_url": "",
@@ -1431,22 +1429,22 @@
                 "/slow",
                 "/timeoff-2021-12"
             ],
-            "last_modified": "2025-08-24T10:29:13-07:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/balance2.md",
             "outgoing_links": [
-                "/7-habits",
+                "/7h",
                 "/activation",
                 "/energy",
-                "/essentialism",
+                "/essential",
                 "/eulogy",
                 "/moments",
                 "/mortality-software",
                 "/parkinson",
                 "/productive",
                 "/slow",
-                "/sustainable-work",
-                "/timeoff",
-                "/weeks"
+                "/time-off",
+                "/weeks",
+                "/wlb"
             ],
             "redirect_url": "",
             "title": "Balance - The Holy Grail",
@@ -1501,7 +1499,6 @@
                 "/d/habits",
                 "/emotions",
                 "/frog",
-                "/idle",
                 "/process-journal",
                 "/regrets",
                 "/siy",
@@ -1524,7 +1521,6 @@
             "doc_size": 22000,
             "file_path": "_site/being-a-great-manager.html",
             "incoming_links": [
-                "/bmy",
                 "/eulogy",
                 "/job",
                 "/manager-book"
@@ -1615,12 +1611,12 @@
             "incoming_links": [
                 "/job-hunt-stress"
             ],
-            "last_modified": "2025-12-07T02:39:31+00:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/bmu.md",
             "outgoing_links": [
-                "/being-a-great-manager",
+                "/boss",
+                "/dream-job",
                 "/eulogy",
-                "/job",
                 "/job-hunt-stress"
             ],
             "redirect_url": "",
@@ -1734,7 +1730,7 @@
             "incoming_links": [
                 "/joy"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/build-bubble-bike.md",
             "outgoing_links": [
                 "/joy"
@@ -1751,7 +1747,7 @@
                 "/happy",
                 "/spiritual-health"
             ],
-            "last_modified": "2026-03-22T19:07:49-07:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/build-the-life-you-want.md",
             "outgoing_links": [
                 "/bucket-list",
@@ -1801,7 +1797,7 @@
             "doc_size": 20000,
             "file_path": "_site/cert-error.html",
             "incoming_links": [],
-            "last_modified": "2025-08-22T10:48:49-07:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_td/fix_cert_error.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -1988,21 +1984,20 @@
         },
         "/claw": {
             "description": "You’ve heard of agents — AI that can use tools, browse the web, write code. But in early 2026, something new emerged. Not just smarter agents, but a whole new layer on top of them. Andrej Karpathy calls them “claws” — persistent AI entities that keep working when you’re not looking, remember what they’ve learned, and live on your hardware talking to you through WhatsApp. The term comes from OpenClaw, the open-source project that went from a one-hour prototype to the fastest-growing repository in GitHub history. But “claw” has already outgrown the product — it’s becoming the word for this entire category of AI, the way “xerox” became “photocopy.”\n\n",
-            "doc_size": 32000,
+            "doc_size": 29000,
             "file_path": "_site/claw.html",
             "incoming_links": [
                 "/ai-journal",
                 "/changelog",
                 "/larry"
             ],
-            "last_modified": "2026-04-17T23:13:27.157351+00:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/claw.md",
             "outgoing_links": [
                 "/ai-cockpit",
                 "/ai-journal",
                 "/ai-second-brain",
                 "/larry",
-                "/mortality-software",
                 "/tesla"
             ],
             "redirect_url": "",
@@ -2021,7 +2016,6 @@
                 "/insecure",
                 "/job",
                 "/manager-book",
-                "/moments-at-work",
                 "/planning",
                 "/prompts",
                 "/self-ego",
@@ -2313,7 +2307,7 @@
             "doc_size": 13000,
             "file_path": "_site/d/2018-09-23-mind-lines.html",
             "incoming_links": [],
-            "last_modified": "2025-12-06T18:03:02-08:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/2018-09-23-mind-lines.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -2325,7 +2319,7 @@
             "doc_size": 16000,
             "file_path": "_site/d/apollo.html",
             "incoming_links": [],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/apollo.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -2343,7 +2337,6 @@
                 "/d/resistance",
                 "/energy-abundance",
                 "/four-healths",
-                "/idle",
                 "/life-as-business",
                 "/manager-book",
                 "/mind-at-work",
@@ -2370,7 +2363,7 @@
             "doc_size": 34000,
             "file_path": "_site/d/management_interviews.html",
             "incoming_links": [],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/management_interviews.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -2389,9 +2382,7 @@
                 "/energy-abundance",
                 "/fail",
                 "/frog",
-                "/gap-year",
                 "/gap-year-igor",
-                "/mental-pain",
                 "/parkinson",
                 "/productive",
                 "/psychic-shadows",
@@ -2501,7 +2492,7 @@
                 "/random-idea",
                 "/work-satisfaction"
             ],
-            "last_modified": "2025-06-20T08:56:14-07:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_posts/2019-09-21-decisive.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -2575,7 +2566,6 @@
             "doc_size": 24000,
             "file_path": "_site/design.html",
             "incoming_links": [
-                "/amazon",
                 "/d/2017-11-04-clean-architecture",
                 "/system-design",
                 "/testing"
@@ -2870,7 +2860,6 @@
                 "/4dx",
                 "/affirmations",
                 "/agency",
-                "/balance",
                 "/be-proactive",
                 "/books-that-defined-me",
                 "/elder",
@@ -3047,7 +3036,6 @@
             "file_path": "_site/first-understand.html",
             "incoming_links": [
                 "/7-habits",
-                "/advice",
                 "/affirmations",
                 "/class-act",
                 "/curious",
@@ -3168,20 +3156,20 @@
                 "/y25",
                 "/y26"
             ],
-            "last_modified": "2026-01-03T17:27:23+00:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/gap-year.md",
             "outgoing_links": [
                 "/chapters",
-                "/d/resistance",
                 "/decisive",
                 "/gap-year-igor",
                 "/money",
                 "/partner-trouble",
                 "/physical-health",
+                "/resistance",
                 "/retire",
                 "/timeoff",
-                "/y24",
-                "/y25"
+                "/y2024",
+                "/y2025"
             ],
             "redirect_url": "",
             "title": "The Gap Year Paradox: Why Taking a Year Off at 50 beats retiring at 65",
@@ -3281,7 +3269,7 @@
                 "/parkinson",
                 "/planning"
             ],
-            "last_modified": "2026-01-03T17:27:23+00:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/goals.md",
             "outgoing_links": [
                 "/4dx",
@@ -3351,10 +3339,10 @@
         },
         "/grammerly": {
             "description": "\n\n",
-            "doc_size": 13000,
+            "doc_size": 12000,
             "file_path": "_site/grammerly.html",
             "incoming_links": [],
-            "last_modified": "2025-08-24T09:03:19-07:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_td/grammerly.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -3420,7 +3408,7 @@
             "doc_size": 24000,
             "file_path": "_site/groupchat.html",
             "incoming_links": [],
-            "last_modified": "2024-06-08T09:10:34-07:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/groupchat.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -3617,7 +3605,7 @@
                 "/eulogy",
                 "/job"
             ],
-            "last_modified": "2025-09-13T16:07:47-07:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/human-meeting.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -3655,7 +3643,7 @@
         },
         "/hyper-personal": {
             "description": "Useful writing tells people (including, possibly most importantly you) something true and important that they didn’t already know in a way that leaves no doubt. And Everyone is different. So how to do both?\n\n",
-            "doc_size": 18000,
+            "doc_size": 19000,
             "file_path": "_site/hyper-personal.html",
             "incoming_links": [
                 "/ai-journal",
@@ -3663,10 +3651,12 @@
                 "/changelog",
                 "/how-igor-chops"
             ],
-            "last_modified": "2026-04-05T09:35:33-07:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/hyper-personal.md",
             "outgoing_links": [
-                "/ai-second-brain"
+                "/ai-journal",
+                "/ai-second-brain",
+                "/pet-projects"
             ],
             "redirect_url": "",
             "title": "Hyper Personalization",
@@ -3684,13 +3674,13 @@
                 "/happy",
                 "/psychic-weight"
             ],
-            "last_modified": "2025-12-06T18:03:28-08:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/idle-loop.md",
             "outgoing_links": [
+                "/7h-c1",
                 "/addiction",
-                "/be-proactive",
-                "/d/habits",
                 "/frog",
+                "/habits",
                 "/magic",
                 "/mental-pain",
                 "/mind-monsters",
@@ -3796,7 +3786,6 @@
             "doc_size": 24000,
             "file_path": "_site/job.html",
             "incoming_links": [
-                "/bmy",
                 "/eulogy",
                 "/job-hunt-stress",
                 "/manager-book",
@@ -3859,18 +3848,18 @@
                 "/sublime",
                 "/tribe"
             ],
-            "last_modified": "2026-03-21T13:54:36-07:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/joy.md",
             "outgoing_links": [
                 "/balloon",
-                "/build-bubble-bike",
+                "/bbb",
+                "/cry",
                 "/eulogy",
                 "/happy",
                 "/ig66/621",
                 "/like-switch",
                 "/magic",
                 "/smilebox",
-                "/touching",
                 "/tribe"
             ],
             "redirect_url": "",
@@ -3956,7 +3945,6 @@
             "incoming_links": [
                 "/ai-feed",
                 "/ai-journal",
-                "/ai-relationships",
                 "/ai-second-brain",
                 "/changelog",
                 "/chow",
@@ -4133,7 +4121,6 @@
                 "/ai-feed",
                 "/ai-hiring",
                 "/ai-native-manager",
-                "/amazon",
                 "/being-a-great-manager",
                 "/bucket-list",
                 "/coaching",
@@ -4256,16 +4243,16 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-12-06T18:03:43-08:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/mental-pain.md",
             "outgoing_links": [
                 "/addiction",
-                "/d/resistance",
                 "/depression",
                 "/frog",
                 "/lonely",
                 "/physical-pain",
-                "/pride"
+                "/pride",
+                "/resistance"
             ],
             "redirect_url": "",
             "title": "The thoughts that pain us",
@@ -4352,7 +4339,7 @@
                 "/negative-mitzvahs",
                 "/positive-mitzvahs"
             ],
-            "last_modified": "2026-01-03T17:27:23+00:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/mitzvahs.md",
             "outgoing_links": [
                 "/negative-mitzvahs",
@@ -4433,10 +4420,10 @@
                 "/moments",
                 "/random-idea"
             ],
-            "last_modified": "2020-06-17T07:39:28-07:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_posts/2018-04-09-moments-at-work.md",
             "outgoing_links": [
-                "/coaching",
+                "/Coaching-Questions",
                 "/moments"
             ],
             "redirect_url": "",
@@ -4523,7 +4510,6 @@
                 "/ai-journal",
                 "/balance",
                 "/bike-tesla-identity",
-                "/claw",
                 "/goals",
                 "/how-igor-chops",
                 "/larry",
@@ -4547,12 +4533,12 @@
         },
         "/mosh": {
             "description": "Copied from my GitHub techdiary\n\n",
-            "doc_size": 26000,
+            "doc_size": 24000,
             "file_path": "_site/mosh.html",
             "incoming_links": [
                 "/changelog"
             ],
-            "last_modified": "2026-04-17T11:06:24-07:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_td/mosh.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -4567,7 +4553,7 @@
                 "/mitzvahs",
                 "/positive-mitzvahs"
             ],
-            "last_modified": "2025-11-10T03:06:56+00:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/negative-mitzvahs.md",
             "outgoing_links": [
                 "/mitzvahs",
@@ -4664,7 +4650,7 @@
             "incoming_links": [
                 "/gpt"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/nurture.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -4844,6 +4830,7 @@
                 "/eulogy",
                 "/explainers",
                 "/how-igor-chops",
+                "/hyper-personal",
                 "/side-quests",
                 "/y25"
             ],
@@ -5061,7 +5048,7 @@
                 "/manager-book",
                 "/partner-trouble"
             ],
-            "last_modified": "2026-01-31T14:03:45-08:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/product.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -5881,7 +5868,7 @@
                 "/gap-year-igor",
                 "/words-we-dont-have"
             ],
-            "last_modified": "2026-03-15T13:01:45-07:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/structure.md",
             "outgoing_links": [
                 "/larry"
@@ -5918,7 +5905,7 @@
             "doc_size": 15000,
             "file_path": "_site/suicide.html",
             "incoming_links": [],
-            "last_modified": "2024-11-09T06:51:11-08:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/suicide.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -5931,7 +5918,6 @@
             "file_path": "_site/sustainable-work.html",
             "incoming_links": [
                 "/42",
-                "/balance",
                 "/being-a-great-manager",
                 "/depression",
                 "/overload",
@@ -6211,7 +6197,7 @@
             "incoming_links": [
                 "/timeoff-2024-08"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_td/slow_zsh.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -6350,7 +6336,7 @@
                 "/timeoff-2024-04",
                 "/voices"
             ],
-            "last_modified": "2026-01-03T17:27:23+00:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/terzepatide.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -6448,7 +6434,6 @@
             "file_path": "_site/timeoff.html",
             "incoming_links": [
                 "/activation",
-                "/balance",
                 "/energy",
                 "/energy-abundance",
                 "/gap-year",
@@ -6459,7 +6444,6 @@
                 "/self-ego",
                 "/timeoff-2020-03",
                 "/timeoff-2020-12",
-                "/timeoff-2021-11",
                 "/timeoff-2021-12",
                 "/timeoff-2022-02",
                 "/timeoff-2022-07",
@@ -6544,14 +6528,14 @@
             "incoming_links": [
                 "/timeoff-2021-12"
             ],
-            "last_modified": "2025-12-07T03:17:42+00:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/time-off-2021-11.md",
             "outgoing_links": [
                 "/adblocker-trojan",
                 "/brython",
                 "/ig66/591",
                 "/snjb",
-                "/timeoff"
+                "/time-off"
             ],
             "redirect_url": "",
             "title": "Time off Turkey Day 2021",
@@ -6829,10 +6813,9 @@
             "file_path": "_site/touching.html",
             "incoming_links": [
                 "/class-act",
-                "/joy",
                 "/sublime"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/touching2.md",
             "outgoing_links": [
                 "/anxiety",
@@ -6847,7 +6830,6 @@
             "doc_size": 17000,
             "file_path": "_site/toysfortots.html",
             "incoming_links": [
-                "/amazon",
                 "/eulogy"
             ],
             "last_modified": "2025-07-20T19:13:52-07:00",
@@ -6955,7 +6937,7 @@
             "doc_size": 17000,
             "file_path": "_site/vlc.html",
             "incoming_links": [],
-            "last_modified": "2025-06-07T09:22:10-07:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/vlc_player.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -7042,12 +7024,12 @@
         },
         "/weeks": {
             "description": "\n\n",
-            "doc_size": 4345000,
+            "doc_size": 4346000,
             "file_path": "_site/weeks.html",
             "incoming_links": [
                 "/balance"
             ],
-            "last_modified": "2024-04-09T09:09:21-07:00",
+            "last_modified": "2026-05-02T17:06:33.502176+00:00",
             "markdown_path": "_d/weeks.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -7218,8 +7200,7 @@
             "doc_size": 25000,
             "file_path": "_site/y24.html",
             "incoming_links": [
-                "/bucket-list",
-                "/gap-year"
+                "/bucket-list"
             ],
             "last_modified": "2025-12-07T02:50:22+00:00",
             "markdown_path": "_d/y2024.md",
@@ -7244,8 +7225,7 @@
             "doc_size": 25000,
             "file_path": "_site/y25.html",
             "incoming_links": [
-                "/bucket-list",
-                "/gap-year"
+                "/bucket-list"
             ],
             "last_modified": "2026-01-03T12:47:01-08:00",
             "markdown_path": "_d/y2025.md",
