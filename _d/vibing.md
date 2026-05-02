@@ -11,9 +11,7 @@ tags:
   - ai
 ---
 
-I've been spending a lot of time vibing with agents — coding, writing, sometimes just talking. This post is a survey of what I'm noticing, not a finished theory. Observations, dark sides, related notes. I'll keep adding as I see more.
-
-Steve Yegge already named the shape from one side: agentic software building is _genuinely addictive_ — it doles out dopamine and adrenaline shots like they're on fire sale. The dopamine is real. The drain is real. Both are why this post exists.
+I've been spending a lot of time vibing with agents — coding, writing, sometimes just talking. This post is a survey of what I'm noticing, not a finished theory. Observations, dark sides, related notes. I'll keep adding as I see more. Steve Yegge already named the shape from one side: agentic software building is _genuinely addictive_ — it doles out dopamine and adrenaline shots like they're on fire sale. The dopamine is real. The drain is real. Both are why this post exists.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
