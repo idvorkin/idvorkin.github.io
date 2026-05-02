@@ -270,7 +270,7 @@ These dragons cannot be slain - they're fundamental forces like gravity or time.
 > **Me:** "Yes, and..."
 >
 > - I've been tracking expenses for years in [Monarch Money](https://www.monarchmoney.com/) and [Boldin](https://www.boldin.com/) retirement planning software and have good baseline data
-> - I'm not forgetting the non-obvious things like health insurance ($40K/year - wow!) and taxes (even though drawing long term cap gains, it adds up, especially with WA 7% tax over $270K) and major house repairs
+> - I'm not forgetting the non-obvious things like health insurance ($40K/year - wow!) and taxes (even though drawing long term cap gains, it adds up, especially with [WA 7% cap-gains tax over the exempt threshold](/taxes#washington-state-capital-gains-tax)) and major house repairs
 > - I can adjust spending during the gap year if needed (not locked into fixed costs)
 > - I am conservative with estimates and build buffer for surprises
 
@@ -611,7 +611,6 @@ The ultimate goal isn't to eliminate these dragons but to transform them from ad
 Living with dragons requires daily attention. They're not pets, but they're not enemies either - they're forces that must be acknowledged and managed through consistent practice. I have a long list
 
 - **Entropy Check**:
-
   - Get up before 5am
     - Anchor my day before I'm overrun by noise
     - Make a priority list
