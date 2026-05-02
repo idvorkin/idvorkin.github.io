@@ -228,6 +228,28 @@ jekyll-rebuild: jekyll-clean
     fi
     echo "✅ Jekyll rebuild complete - site available in _site/"
 
+# Fire-and-forget background jekyll build for fresh worktrees.
+# Populates _site/ so the anchor-checker pre-commit hook passes by
+# the time the first commit lands. No clean step — incremental build
+# is faster and sufficient.
+worktree-init:
+    #!/usr/bin/env sh
+    set -eu
+    # Sanitize branch name for filesystem (e.g. claude/foo -> claude-foo)
+    # Otherwise nohup writes to a non-existent parent dir and the build
+    # fails silently while we still print "Background build fired".
+    BRANCH=$(git branch --show-current | tr '/' '-')
+    LOG="/tmp/jekyll-worktree-$BRANCH.log"
+    echo "🔨 Starting bg jekyll build — log: $LOG"
+    # Match jekyll-rebuild: prefer homebrew Ruby on Darwin so we don't
+    # silently fall back to system Ruby and fail.
+    if [ "$(uname)" = "Darwin" ]; then
+        nohup ~/homebrew/opt/ruby/bin/bundle exec jekyll build >"$LOG" 2>&1 & disown
+    else
+        nohup bundle exec jekyll build >"$LOG" 2>&1 & disown
+    fi
+    echo "✅ Background build fired. _site/ ready in ~60-90s; first commit should find it populated."
+
 jekyll-serve port="4000" livereload_port="35729":
     #!/usr/bin/env sh
     # Update git branch info for dev banner
