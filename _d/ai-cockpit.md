@@ -67,6 +67,16 @@ The funny part: transcription quality barely matters. Agents are resilient to ga
 
 See more in my [AI Journal entry on voice coding](/ai-journal#using-voice-to-make-commands).
 
+#### The mic matters more than I thought
+
+Software gets the headlines, but a real lapel mic close to your mouth beats laptop and phone built-ins by a country mile. I used to think Siri dictation was terrible, but it turned out part of the problem was my input. The right microphone totally fixes it — Siri's now almost as good as Wispr Flow.
+
+What I'm using:
+
+- **[Hollyland Lark M2S Mini Combo](https://amzn.to/4tHXT5v)** — wireless lavalier, 7g, USB-C plus a Camera RX, works with iPhone, Android, laptop, or camera, 300m range.
+
+More mic options as I try them.
+
 ### Tmux on Super Steroids - The Multiplexer
 
 Tmux is the backbone. Every agent runs in a tmux session inside a Docker container. The problem is: stock tmux navigation is painful when you have 8+ sessions across multiple containers.
