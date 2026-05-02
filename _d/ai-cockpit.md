@@ -73,7 +73,11 @@ Software gets the headlines, but a real lapel mic close to your mouth beats lapt
 
 What I'm using:
 
-- **[Hollyland Lark M2S Mini Combo](https://amzn.to/4tHXT5v)** — wireless lavalier, 7g, USB-C plus a Camera RX, works with iPhone, Android, laptop, or camera, 300m range.
+{% include amazon.html asin="B0DNQ5D1H4" %}
+
+The Hollyland Lark M2S Mini Combo — wireless lavalier, 7g, USB-C plus a Camera RX, works with iPhone, Android, laptop, or camera, 300m range. I didn't actually buy it for this — I had it for another project, and it turned out to be the right tool for vibing too. So this isn't a "go spend a few hundred bucks" rec; it's a "if you already have a good lav, point it at Wispr or Siri" rec.
+
+For the full deep dive on why voice changes how you work with AI, see [You Need to Use Voice](/ai-operator#you-need-to-use-voice).
 
 More mic options as I try them.
 
