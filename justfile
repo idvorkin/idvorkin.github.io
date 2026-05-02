@@ -234,10 +234,20 @@ jekyll-rebuild: jekyll-clean
 # is faster and sufficient.
 worktree-init:
     #!/usr/bin/env sh
-    BRANCH=$(git branch --show-current)
+    set -eu
+    # Sanitize branch name for filesystem (e.g. claude/foo -> claude-foo)
+    # Otherwise nohup writes to a non-existent parent dir and the build
+    # fails silently while we still print "Background build fired".
+    BRANCH=$(git branch --show-current | tr '/' '-')
     LOG="/tmp/jekyll-worktree-$BRANCH.log"
     echo "🔨 Starting bg jekyll build — log: $LOG"
-    nohup bundle exec jekyll build >"$LOG" 2>&1 & disown
+    # Match jekyll-rebuild: prefer homebrew Ruby on Darwin so we don't
+    # silently fall back to system Ruby and fail.
+    if [ "$(uname)" = "Darwin" ]; then
+        nohup ~/homebrew/opt/ruby/bin/bundle exec jekyll build >"$LOG" 2>&1 & disown
+    else
+        nohup bundle exec jekyll build >"$LOG" 2>&1 & disown
+    fi
     echo "✅ Background build fired. _site/ ready in ~60-90s; first commit should find it populated."
 
 jekyll-serve port="4000" livereload_port="35729":
