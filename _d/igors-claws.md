@@ -21,6 +21,7 @@ Here's my concrete setup. I run three [claws](/claw) — persistent AI entities 
 <!-- vim-markdown-toc-start -->
 
 - [My Claws](#my-claws)
+- [Challenges: Business Logic, Goop, Infra](#challenges-business-logic-goop-infra)
 - [Why I Build My Own](#why-i-build-my-own)
   - [It's Not Lost on Me It's a Winchester Mystery House](#its-not-lost-on-me-its-a-winchester-mystery-house)
 - [How I Sign From Them](#how-i-sign-from-them)
@@ -50,6 +51,24 @@ Three claws, three domains: life, work, transportation. Where I am on [Karpathy'
 That's the next frontier. Not smarter models or better prompts — but claws that keep going, that learn from yesterday, that act on my behalf when I'm not looking. The jump from agent to claw is the jump from tool to colleague.
 
 My colleague [David de Winter](https://www.linkedin.com/in/ddewinter/) put it best, before we even had the word "claw." He said it reminded him of being a kid training Pokémon — you'd carry around your team, each one specialized, and they'd grow more capable as you invested time in them. That's exactly what this feels like. Larry gets better as I feed him more context. Wally gets better as I add more skills and CLAUDE.md files. Tony is still a Magikarp. But the metaphor lands: you're not using a tool, you're training a team. And the trainers who start earliest will have the strongest claws.
+
+## Challenges: Business Logic, Goop, Infra
+
+Building a claw breaks into three layers, and the proportions are nothing like what I expected. The framework comes from my [/design](/design#business-logic-platforms-and-goop) post, where I called it Business Logic / Platforms / Goop back when I was thinking about boring enterprise software. It maps perfectly to claws if you rename Platforms to Infra — same shape, different era.
+
+**Business logic** — what Larry, Wally, and Tony actually do for me. Larry runs my Saturday review and pushes back when I keep restarting the same habit. Wally does Meta-side work I can't talk about. Tony has a voice and a personality. The core is small and stable. If I had to write down "what Larry _does_," it's maybe a page.
+
+**Goop** — every line of code that connects business logic to infra. Telegram MCP bridge so I can text Larry from anywhere. Kindle Scribe pipeline so my handwritten journals reach him. Context-grabber iOS app. Journal cross-index. `bd` beads tracker. Backlinks graph. The CLAUDE.md skills. Per-claw configuration. The signing convention so I know which claw filed which PR. _This is where the [Winchester Mystery House](#its-not-lost-on-me-its-a-winchester-mystery-house) lives._
+
+**Infra** — Claude Code, Codex, MCP servers, Vapi, the LLM APIs, the hardware. Stuff I don't build. Moves fast enough that goop I wrote three months ago is already obsolete; MCP didn't exist last year and now my whole bridge layer assumes it.
+
+The honest punchline: building claws right now is **almost entirely goop**. Maybe 80%. I keep hoping the infra layer will absorb a wing of my Mystery House every quarter — and it does, slowly. MCP collapsed a tool-protocol problem I'd been hand-rolling. Larry's memory layer is still mine. Telegram is still mine. The Kindle bridge is still mine. Each integration is its own miniature engineering project.
+
+In [/design](/design#minimize-your-investment-in-goop) I argue you should _minimize your investment in goop_ because the platform will eventually do it better than you can. That's still true. For claws right now there's no platform to defer to — the platform is being built in public, sometimes by me, mostly by people whose timelines don't match mine. So I write the goop, knowing most of it has roughly a **two-week half-life** and is constantly breaking.
+
+The Claude Code Telegram bridge is the cleanest example I have. In early March I built a custom Telegram bot so I could text Larry from my phone — a few hours of pure goop. Three weeks later [Anthropic shipped an official Telegram plugin and I cheerfully threw mine away](/ai-journal#telegram-bot-when-the-platform-eats-your-side-project-and-thats-great) — _goop absorbed by infra_. Three weeks after _that_, [the official plugin started losing every inbound message on Claude restart](/ai-journal#two-process-telegram-when-the-platform-is-the-bug), so I wrote a [two-process workaround](https://github.com/idvorkin/chop-conventions/blob/main/skills/harden-telegram/design.md) on top: `telegram_bot.py` to own the cursor, a modified `server.ts` to consume from SQLite — _new goop on top of new infra_. There's an even-money chance the workaround doesn't survive the next plugin update. That's the half-life. The cycle doesn't stop; you just stop being surprised by it.
+
+This is also why "just install OpenClaw" was never real for me. Even if you took the goop I'd written so far and threw it out, I'd be writing my replacement set inside a week — because the business logic is _mine_, the infra is _theirs_, and the goop is the only place a claw becomes anything specific.
 
 ## Why I Build My Own
 
