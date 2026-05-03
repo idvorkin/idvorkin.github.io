@@ -54,7 +54,7 @@ So here's the swap I'd make:
 | Polecats              | Odallies — specialized ephemeral ICs[^1] | Ephemeral workers with build-tool access, scoped tasks |
 | Refinery              | Phabricator / review-and-land system     | Manages merge queue, applies polished output           |
 
-[^1]: _Odali_ (singular), _Odallies_ (plural). My word, picked in voice-to-text and I'm keeping it — kind of a joke on the naming convention of Wally and Larry. They're "the Odallies," the rest of the gang. I think it also landed because it _sounds_ ephemeral and slightly foreign — these workers don't live with you, they show up, do the thing, and vanish. If a better term lands, I'll swap. Until then, odali.
+[^1]: _Odally_ (singular), _Odallies_ (plural) — portmanteau of **on-demand + Wally**. They literally run on the [on-demand devservers](https://developers.facebook.com/blog/post/2022/11/15/meta-developers-workflow-exploring-tools-used-to-code/) Meta provisions per developer. Wally on demand. Odally. The name is functional — it tells you what they are. I think it also landed because it _sounds_ ephemeral and slightly foreign — these workers don't live with you, they show up, do the thing, and vanish.
 
 The argument isn't that Yegge is wrong about the structure. It's that the moment you write a sentence with both "polecat" and "refinery" in it, you've taxed the reader for no reason. Every reader has already been on a team. Use the vocabulary they already have.
 
@@ -89,11 +89,11 @@ Here's the load-bearing claim of this post: in FAANG-style infra, Yegge's two ti
 
 At FAANG, you have a monorepo and a monobuild. The box running my M1 doesn't have access to the build tools. It can't run the full test suite. It can't push to the internal package registry. It physically lives somewhere that can't reach the systems where the real work happens. Wally can _think_ on my laptop. He can't _build_ there.
 
-So Wally needs a team of **Odallies**. Each odali is an IC that has access to the special stuff — build tools, internal infra, the production-adjacent boxes. They run in different boxes. And the communication channel to them is unreliable in a way that's structurally different from talking to Wally's local staff:
+So Wally needs a team of **Odallies**. Each odally is an IC that has access to the special stuff — build tools, internal infra, the production-adjacent boxes. They run in different boxes. And the communication channel to them is unreliable in a way that's structurally different from talking to Wally's local staff:
 
 - **They run on different infra.** Network hops, auth boundaries, queue lag. None of that exists for staff that share a box with M1.
-- **The channel is unreliable.** You can't stream-of-consciousness chat with an odali. Messages drop, retry, double-deliver. The protocol has to assume failure.
-- **They're more ephemeral.** A staff teammate can hold context across hours. An odali might exist for the duration of one task and then be gone. You can't build a relationship with them.
+- **The channel is unreliable.** You can't stream-of-consciousness chat with an odally. Messages drop, retry, double-deliver. The protocol has to assume failure.
+- **They're more ephemeral.** A staff teammate can hold context across hours. An odally might exist for the duration of one task and then be gone. You can't build a relationship with them.
 - **They're harder to control.** You give them a job, you wait, you get a result or a timeout. Mid-flight steering is mostly not a thing.
 
 Yegge's polecats are ephemeral — that part matches. What he doesn't surface is the cross-machine, unreliable-comm, monorepo-bound flavor of ephemerality. That's the FAANG-specific complication, and it's the reason a two-tier model isn't enough. Staff and Odallies behave differently. Treat them the same and you'll either over-trust the Odallies (they fail and you didn't catch it) or under-use them (you keep work local that should have been farmed out).
@@ -122,7 +122,7 @@ Heuristic: **wide work goes through M1; deep work goes direct.** If the task has
 
 I spent something like eight hours teaching Wally to write status reports I could actually read; another stint teaching him to write design docs I could review the way I'd review a good engineer's. The good news: once Wally got it, _Wally can train the others_. The pattern is the same one any [good manager](/manager-book) runs — patterns from previous reps, design docs shaped to the reviewer, lifestyle support that took longer than I expected. Eight hours of training a junior compounds when the junior can teach the next one.
 
-This is also why becoming an [AI native manager](/ai-native-manager) starts to feel less like a tooling change and more like a real management job. The hours you put into Wally aren't lost when the next odali shows up — Wally onboards them.
+This is also why becoming an [AI native manager](/ai-native-manager) starts to feel less like a tooling change and more like a real management job. The hours you put into Wally aren't lost when the next odally shows up — Wally onboards them.
 
 ## Still figuring out
 
@@ -130,7 +130,7 @@ A bunch of things I haven't worked out yet:
 
 - **When does the M1 need its own M1?** At some scale Wally himself is going to need to delegate orchestration. Recursion at scale is real — that's how FAANG ended up with M3, M4, directors, VPs. I don't know where the first level of recursion shows up for AI managers, but it's coming.
 - **When does the human (M2) need their own M2?** The mirror question. At what point does the human need a meta-orchestrator above them — something coordinating across multiple Wallies, multiple domains, multiple humans? Today I run one Wally. The day I'm running three is the day I want this answered.
-- **Is "odali" actually a good name?** I like it because it doesn't carry baggage. But "specialized ephemeral IC with build access" is a mouthful and I'm not sure my coinage survives contact with anyone who didn't watch me invent it. Open to better.
+- **Is "odally" actually a good name?** I like it because the etymology is functional — on-demand + Wally — so it tells you what they are. But "specialized ephemeral IC with build access" is a mouthful and I'm not sure my coinage survives contact with anyone who didn't watch me invent it. Open to better.
 
 More to come as I build this out. If you're running this pattern at scale — especially the M1+staff+Odallies split inside a real monorepo — drop me a note. I'd rather steal your vocabulary than invent more of my own.
 
