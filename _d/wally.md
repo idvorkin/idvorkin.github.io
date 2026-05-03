@@ -30,7 +30,10 @@ This is a survey post — the thinking is fresh, names are provisional, and ther
 - [The third tier Yegge's model misses](#the-third-tier-yegges-model-misses)
 - [When to use the M1, and when to skip him](#when-to-use-the-m1-and-when-to-skip-him)
 - [Training Wally](#training-wally)
+  - [Even ephemeral workers earn names](#even-ephemeral-workers-earn-names)
 - [Still figuring out](#still-figuring-out)
+- [Future Experiments](#future-experiments)
+  - [Training on Amazon Leadership Principles](#training-on-amazon-leadership-principles)
 - [Appendix: Challenges](#appendix-challenges)
 
 <!-- vim-markdown-toc-end -->
@@ -124,6 +127,14 @@ I spent something like eight hours teaching Wally to write status reports I coul
 
 This is also why becoming an [AI native manager](/ai-native-manager) starts to feel less like a tooling change and more like a real management job. The hours you put into Wally aren't lost when the next odally shows up — Wally onboards them.
 
+### Even ephemeral workers earn names
+
+At first I just used the on-demand devservers' hostnames — `OD-1274`, `OD-2031`, whatever Meta provisioned. That was really hard on me. I'd lose track of which one was doing what. `OD-1274 completed step 3` told me nothing.
+
+So I started giving them names tied to the service or direction they're working on. An Odally working the auth migration becomes `auth-migration`. The build-pipeline rebuild becomes `build-rebuild`. Now Wally writes "auth-migration completed step 3" and it lands immediately.
+
+Auto-assigned at spawn — zero cognitive cost on me. But they're real handles for status reports and conversation. Even ephemeral workers earn names. The cost of inventing one is less than the cost of looking up which hostname was doing what.
+
 ## Still figuring out
 
 A bunch of things I haven't worked out yet:
@@ -133,6 +144,32 @@ A bunch of things I haven't worked out yet:
 - **Is "odally" actually a good name?** I like it because the etymology is functional — on-demand + Wally — so it tells you what they are. But "specialized ephemeral IC with build access" is a mouthful and I'm not sure my coinage survives contact with anyone who didn't watch me invent it. Open to better.
 
 More to come as I build this out. If you're running this pattern at scale — especially the M1+staff+Odallies split inside a real monorepo — drop me a note. I'd rather steal your vocabulary than invent more of my own.
+
+## Future Experiments
+
+Things I'm about to try with Wally and the Odallies, not yet operating:
+
+### Training on Amazon Leadership Principles
+
+I did a tour of duty at Amazon. The Leadership Principles aren't fluff — they're decision frameworks. "Customer Obsession," "Bias for Action," "Earn Trust," "Have Backbone, Disagree and Commit," "Insist on the Highest Standards." Each one is a tool you apply to a single decision. AI agents make many small decisions per task — that's the use case.
+
+I want to see if I can teach them operationally, not aspirationally. For each LP, write the BEHAVIOR it produces in Wally and what he checks for in the Odallies' output:
+
+| LP                              | What Wally would do                                                                            |
+| ------------------------------- | ---------------------------------------------------------------------------------------------- |
+| Customer Obsession              | Asks "who's the user of this change?" before any review                                        |
+| Earn Trust                      | Requires evidence (link, citation, repro) for any claim — flags assertions that don't have one |
+| Bias for Action                 | Picks one path and ships; doesn't waterfall a 5-option analysis when 2 will do                 |
+| Insist on the Highest Standards | Rejects Odally output with smells, with specifics                                              |
+| Have Backbone                   | Pushes back on my brief when it's wrong; doesn't just agree                                    |
+| Are Right, A Lot                | Tracks its predictions — flags when it was wrong before                                        |
+| Dive Deep                       | Reads the whole file, not just the diff                                                        |
+
+Subset, don't import wholesale — "Hire and Develop the Best" doesn't map; "Ownership at the company level" doesn't map. Pick the 6-8 that fit the work.
+
+The meta-insight: I'd be training Wally with the same techniques my Amazon managers used to train me. The pattern transfers. (For my retro on what Amazon did well and badly, see [my Amazon thoughts](/amazon).)
+
+Will report back.
 
 ## Appendix: Challenges
 
