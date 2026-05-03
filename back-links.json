@@ -575,9 +575,7 @@
             "description": "My back goes out a few times a year. My mood tracks the Meta stock price more than I’d like to admit. Twenty years ago I’d meet those moments with a thrash cycle — fused with the pain, angry at my body, tangled up in a story about why this was unfair — which made the experience much worse than the sensation itself. Now I aspire to be calm like water, be present, remember that this too shall pass, and work the problem. I still catch myself mid-thrash often enough to know it’s aspiration, not habit.\n\n",
             "doc_size": 290000,
             "file_path": "_site/act.html",
-            "incoming_links": [
-                "/changelog"
-            ],
+            "incoming_links": [],
             "last_modified": "2026-04-15T03:24:18.354841+00:00",
             "markdown_path": "_d/act.md",
             "outgoing_links": [
@@ -614,7 +612,6 @@
             "incoming_links": [
                 "/addiction",
                 "/balance",
-                "/changelog",
                 "/energy",
                 "/energy-abundance",
                 "/gap-year-igor",
@@ -661,7 +658,6 @@
                 "/act",
                 "/activation",
                 "/anxiety-management",
-                "/changelog",
                 "/d/resistance",
                 "/happy",
                 "/hobby",
@@ -766,8 +762,7 @@
                 "/ai-faq",
                 "/ai-feed",
                 "/ai-hiring",
-                "/ai-native-manager",
-                "/changelog"
+                "/ai-native-manager"
             ],
             "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/agency.md",
@@ -877,7 +872,6 @@
                 "/ai-native-manager",
                 "/ai-operator",
                 "/ai-second-brain",
-                "/changelog",
                 "/hill-climbing",
                 "/how-igor-chops",
                 "/igors-claws",
@@ -1027,10 +1021,10 @@
                 "/ai-native-manager",
                 "/ai-relationships",
                 "/ai-second-brain",
-                "/changelog",
                 "/chop",
                 "/claw",
                 "/hyper-personal",
+                "/igors-claws",
                 "/walking-with-god",
                 "/y25"
             ],
@@ -1067,7 +1061,6 @@
                 "/ai-feed",
                 "/ai-hiring",
                 "/ai-second-brain",
-                "/changelog",
                 "/chow",
                 "/explainers",
                 "/hill-climbing",
@@ -1101,7 +1094,6 @@
             "file_path": "_site/ai-operator.html",
             "incoming_links": [
                 "/ai-cockpit",
-                "/changelog",
                 "/hill-climbing",
                 "/how-igor-chops",
                 "/life-journal"
@@ -1144,8 +1136,7 @@
             "file_path": "_site/ai-relationships.html",
             "incoming_links": [
                 "/ai",
-                "/ai-operator",
-                "/changelog"
+                "/ai-operator"
             ],
             "last_modified": "2026-04-17T07:33:26-07:00",
             "markdown_path": "_d/ai-relationships.md",
@@ -1168,7 +1159,6 @@
             "file_path": "_site/ai-second-brain.html",
             "incoming_links": [
                 "/ai-native-manager",
-                "/changelog",
                 "/claw",
                 "/hyper-personal"
             ],
@@ -2020,7 +2010,6 @@
             "file_path": "_site/claw.html",
             "incoming_links": [
                 "/ai-journal",
-                "/changelog",
                 "/igors-claws",
                 "/larry"
             ],
@@ -3511,7 +3500,6 @@
                 "/ai-native-manager",
                 "/ai-operator",
                 "/ai-testing",
-                "/changelog",
                 "/chop",
                 "/how-igor-chops"
             ],
@@ -3566,7 +3554,6 @@
                 "/ai-cockpit",
                 "/ai-feed",
                 "/ai-journal",
-                "/changelog",
                 "/chop",
                 "/hill-climbing",
                 "/pet-projects",
@@ -3602,7 +3589,6 @@
             "incoming_links": [
                 "/ai-relationships",
                 "/being-a-great-manager",
-                "/changelog",
                 "/eulogy",
                 "/job"
             ],
@@ -3620,7 +3606,6 @@
             "incoming_links": [
                 "/ai-relationships",
                 "/books-that-defined-me",
-                "/changelog",
                 "/chop"
             ],
             "last_modified": "2025-03-01T18:25:15-08:00",
@@ -3637,7 +3622,6 @@
             "incoming_links": [
                 "/ai-journal",
                 "/ai-second-brain",
-                "/changelog",
                 "/how-igor-chops"
             ],
             "last_modified": "2026-04-05T09:35:33-07:00",
@@ -3682,10 +3666,9 @@
         },
         "/igors-claws": {
             "description": "Here’s my concrete setup. I run three claws — persistent AI entities with names, memory, and a domain each. Life, work, transportation. This post is the surfaced roster so I can link straight to it when something I made is signed by one of them, and so I can explain why I’m building my own rather than running something off the shelf. If you want the “what is a claw” background first, read /claw; this is the instance, not the theory.\n\n",
-            "doc_size": 24000,
+            "doc_size": 25000,
             "file_path": "_site/igors-claws.html",
             "incoming_links": [
-                "/changelog",
                 "/claw",
                 "/vibing",
                 "/wally"
@@ -3694,6 +3677,7 @@
             "markdown_path": "_d/igors-claws.md",
             "outgoing_links": [
                 "/ai-cockpit",
+                "/ai-journal",
                 "/claw",
                 "/design",
                 "/larry",
@@ -3776,7 +3760,6 @@
             "doc_size": 94000,
             "file_path": "_site/irl.html",
             "incoming_links": [
-                "/changelog",
                 "/physical-health",
                 "/td/ios-nomad"
             ],
@@ -3922,7 +3905,6 @@
             "doc_size": 33000,
             "file_path": "_site/keyboard.html",
             "incoming_links": [
-                "/changelog",
                 "/irl",
                 "/osx"
             ],
@@ -3963,7 +3945,6 @@
                 "/ai-operator",
                 "/ai-relationships",
                 "/ai-second-brain",
-                "/changelog",
                 "/chow",
                 "/claw",
                 "/igors-claws",
@@ -4066,7 +4047,6 @@
             "file_path": "_site/life-journal.html",
             "incoming_links": [
                 "/ai-operator",
-                "/changelog",
                 "/larry"
             ],
             "last_modified": "2026-05-02T19:01:45-07:00",
@@ -4100,7 +4080,6 @@
             "incoming_links": [
                 "/ai-relationships",
                 "/build-life-you-want",
-                "/changelog",
                 "/mental-pain"
             ],
             "last_modified": "2025-12-07T02:40:46+00:00",
@@ -4479,7 +4458,6 @@
             "doc_size": 57000,
             "file_path": "_site/money.html",
             "incoming_links": [
-                "/changelog",
                 "/gap-year",
                 "/gap-year-igor",
                 "/operating-manual",
@@ -4561,9 +4539,7 @@
             "description": "Copied from my GitHub techdiary\n\n",
             "doc_size": 26000,
             "file_path": "_site/mosh.html",
-            "incoming_links": [
-                "/changelog"
-            ],
+            "incoming_links": [],
             "last_modified": "2026-04-17T11:06:24-07:00",
             "markdown_path": "_td/mosh.md",
             "outgoing_links": [],
@@ -5068,7 +5044,6 @@
             "doc_size": 48000,
             "file_path": "_site/product.html",
             "incoming_links": [
-                "/changelog",
                 "/manager-book",
                 "/partner-trouble"
             ],
@@ -5254,8 +5229,7 @@
             "doc_size": 15000,
             "file_path": "_site/recent.html",
             "incoming_links": [
-                "/about",
-                "/changelog"
+                "/about"
             ],
             "last_modified": "2025-07-27T15:35:40-07:00",
             "markdown_path": "_d/recent.md",
@@ -5544,7 +5518,6 @@
             "file_path": "_site/shoulder-pain.html",
             "incoming_links": [
                 "/back-pain",
-                "/changelog",
                 "/how-igor-chops",
                 "/kettlebell",
                 "/keyboard",
@@ -5584,7 +5557,6 @@
             "file_path": "_site/side-quests.html",
             "incoming_links": [
                 "/ai-second-brain",
-                "/changelog",
                 "/pet-projects"
             ],
             "last_modified": "2026-03-15T14:27:06-07:00",
@@ -5776,7 +5748,6 @@
             "file_path": "_site/spiritual-health.html",
             "incoming_links": [
                 "/awareness",
-                "/changelog",
                 "/elder",
                 "/four-healths",
                 "/greek-orthodox",
@@ -6021,7 +5992,6 @@
             "doc_size": 37000,
             "file_path": "_site/taxes.html",
             "incoming_links": [
-                "/changelog",
                 "/gap-year-igor",
                 "/money",
                 "/raccoon-history",
@@ -7341,8 +7311,7 @@
             "doc_size": 29000,
             "file_path": "_site/y26.html",
             "incoming_links": [
-                "/act",
-                "/changelog"
+                "/act"
             ],
             "last_modified": "2026-03-15T13:01:45-07:00",
             "markdown_path": "_d/y2026.md",
