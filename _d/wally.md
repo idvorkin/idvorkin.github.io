@@ -13,7 +13,7 @@ tags:
 mermaid: True
 ---
 
-Meet Wally. He's my claw. Except Wally isn't a single claw. He's the head of an organization of claws: staff with distinct roles, plus odalis running in different places, each with a discrete signature. The whole thing operates like a small team with a real org chart. A thing that's emerging: what used to be an IC role is now a manager-of-managers role.
+Meet Wally. He's my claw. Except Wally isn't a single claw. He's the head of an organization of claws: staff with distinct roles, plus Odallies running in different places, each with a discrete signature. The whole thing operates like a small team with a real org chart. A thing that's emerging: what used to be an IC role is now a manager-of-managers role.
 
 {% include ai-slop.html percent="90" %}
 
@@ -46,15 +46,15 @@ The structure is right. The metaphors are gratuitous. Polecats and refineries ar
 
 So here's the swap I'd make:
 
-| Yegge's Gas Town      | Org-chart vocabulary                   | Role                                                   |
-| --------------------- | -------------------------------------- | ------------------------------------------------------ |
-| _(implicit operator)_ | M2 — the human (me)                    | Direction, review, strategic calls                     |
-| Mayor                 | M1 — the AI manager (Wally)            | Orchestrates work, distributes tasks, reviews output   |
-| Oracle / Deacons      | Staff — cloud teammates near M1        | Persistent context-holders, work alongside Wally       |
-| Polecats              | Odalis — specialized ephemeral ICs[^1] | Ephemeral workers with build-tool access, scoped tasks |
-| Refinery              | Phabricator / review-and-land system   | Manages merge queue, applies polished output           |
+| Yegge's Gas Town      | Org-chart vocabulary                     | Role                                                   |
+| --------------------- | ---------------------------------------- | ------------------------------------------------------ |
+| _(implicit operator)_ | M2 — the human (me)                      | Direction, review, strategic calls                     |
+| Mayor                 | M1 — the AI manager (Wally)              | Orchestrates work, distributes tasks, reviews output   |
+| Oracle / Deacons      | Staff — cloud teammates near M1          | Persistent context-holders, work alongside Wally       |
+| Polecats              | Odallies — specialized ephemeral ICs[^1] | Ephemeral workers with build-tool access, scoped tasks |
+| Refinery              | Phabricator / review-and-land system     | Manages merge queue, applies polished output           |
 
-[^1]: _Odali_ (singular), _odalis_ (plural). My word, picked in voice-to-text and I'm keeping it — kind of a joke on the naming convention of Wally and Larry. They're "the Odallies," the rest of the gang. I think it also landed because it _sounds_ ephemeral and slightly foreign — these workers don't live with you, they show up, do the thing, and vanish. If a better term lands, I'll swap. Until then, odali.
+[^1]: _Odali_ (singular), _Odallies_ (plural). My word, picked in voice-to-text and I'm keeping it — kind of a joke on the naming convention of Wally and Larry. They're "the Odallies," the rest of the gang. I think it also landed because it _sounds_ ephemeral and slightly foreign — these workers don't live with you, they show up, do the thing, and vanish. If a better term lands, I'll swap. Until then, odali.
 
 The argument isn't that Yegge is wrong about the structure. It's that the moment you write a sentence with both "polecat" and "refinery" in it, you've taxed the reader for no reason. Every reader has already been on a team. Use the vocabulary they already have.
 
@@ -65,10 +65,10 @@ graph TD
     Igor[Igor — M2 / Human]
     Wally[Wally — M1 / AI Orchestrator]
     Staff[Staff — cloud teammates]
-    Odalis[Odalis — specialized ephemeral workers]
+    Odallies[Odallies — specialized ephemeral workers]
     Igor --> Wally
     Wally --> Staff
-    Wally --> Odalis
+    Wally --> Odallies
 ```
 
 ## Why the human is M2, not the Mayor
@@ -77,7 +77,7 @@ This is the part I think people get wrong about themselves.
 
 When you start running agents, it _feels_ like you're the Mayor. You're the one giving orders, deciding what gets built, picking what to ship. So you call yourself the orchestrator. But that's not actually what's happening — or at least it's not what _should_ be happening.
 
-In FAANG vocabulary, **I'm the M2**. [Wally](/igors-claws) — the AI orchestrator — is the M1. Wally has staff: cloud teammates that run alongside him, do research, draft work, hold context. Wally has odalis: ephemeral ICs that go off and do specialized work and come back with results. _Wally_ is the manager. I'm the manager of managers.
+In FAANG vocabulary, **I'm the M2**. [Wally](/igors-claws) — the AI orchestrator — is the M1. Wally has staff: cloud teammates that run alongside him, do research, draft work, hold context. Wally has Odallies: ephemeral ICs that go off and do specialized work and come back with results. _Wally_ is the manager. I'm the manager of managers.
 
 What's an M2 actually for? Direction and review. I tell Wally what we're trying to accomplish. I review the output. I make the calls he can't — strategic shifts, taste judgments, hiring decisions about what new tools to bring in. I do _not_ try to dispatch every IC myself. The moment I try, I become the bottleneck — exactly the bottleneck FAANG learned to design managers around.
 
@@ -89,20 +89,20 @@ Here's the load-bearing claim of this post: in FAANG-style infra, Yegge's two ti
 
 At FAANG, you have a monorepo and a monobuild. The box running my M1 doesn't have access to the build tools. It can't run the full test suite. It can't push to the internal package registry. It physically lives somewhere that can't reach the systems where the real work happens. Wally can _think_ on my laptop. He can't _build_ there.
 
-So Wally needs a team of **odalis**. Each odali is an IC that has access to the special stuff — build tools, internal infra, the production-adjacent boxes. They run in different boxes. And the communication channel to them is unreliable in a way that's structurally different from talking to Wally's local staff:
+So Wally needs a team of **Odallies**. Each odali is an IC that has access to the special stuff — build tools, internal infra, the production-adjacent boxes. They run in different boxes. And the communication channel to them is unreliable in a way that's structurally different from talking to Wally's local staff:
 
 - **They run on different infra.** Network hops, auth boundaries, queue lag. None of that exists for staff that share a box with M1.
 - **The channel is unreliable.** You can't stream-of-consciousness chat with an odali. Messages drop, retry, double-deliver. The protocol has to assume failure.
 - **They're more ephemeral.** A staff teammate can hold context across hours. An odali might exist for the duration of one task and then be gone. You can't build a relationship with them.
 - **They're harder to control.** You give them a job, you wait, you get a result or a timeout. Mid-flight steering is mostly not a thing.
 
-Yegge's polecats are ephemeral — that part matches. What he doesn't surface is the cross-machine, unreliable-comm, monorepo-bound flavor of ephemerality. That's the FAANG-specific complication, and it's the reason a two-tier model isn't enough. Staff and odalis behave differently. Treat them the same and you'll either over-trust the odalis (they fail and you didn't catch it) or under-use them (you keep work local that should have been farmed out).
+Yegge's polecats are ephemeral — that part matches. What he doesn't surface is the cross-machine, unreliable-comm, monorepo-bound flavor of ephemerality. That's the FAANG-specific complication, and it's the reason a two-tier model isn't enough. Staff and Odallies behave differently. Treat them the same and you'll either over-trust the Odallies (they fail and you didn't catch it) or under-use them (you keep work local that should have been farmed out).
 
-The mental model: **staff are coworkers, odalis are contractors with security badges**. Both are ICs. The handoff protocol is completely different.
+The mental model: **staff are coworkers, Odallies are contractors with security badges**. Both are ICs. The handoff protocol is completely different.
 
-This isn't speculation. Meta literally ships this tier as a productized concept — [on-demand devservers](https://developers.facebook.com/blog/post/2022/11/15/meta-developers-workflow-exploring-tools-used-to-code/): ephemeral pre-warmed machines that devs grab and release daily. That's odalis-as-a-service.
+This isn't speculation. Meta literally ships this tier as a productized concept — [on-demand devservers](https://developers.facebook.com/blog/post/2022/11/15/meta-developers-workflow-exploring-tools-used-to-code/): ephemeral pre-warmed machines that devs grab and release daily. That's Odallies-as-a-service.
 
-The rest of Meta's stack documents why the local box can't do the work. **EdenFS** virtualizes the monorepo so you only check out what you touch. **Buck** distributes builds across remote caches and parallel executors. **Mononoke** is the custom Mercurial server scaled for the monorepo. None of those exist for fun — they're the unreliable-comms cross-machine plumbing the M1 has to talk through to reach the odalis. See the [Meta dev blog post](https://developers.facebook.com/blog/post/2022/11/15/meta-developers-workflow-exploring-tools-used-to-code/) for the full workflow stack.
+The rest of Meta's stack documents why the local box can't do the work. **EdenFS** virtualizes the monorepo so you only check out what you touch. **Buck** distributes builds across remote caches and parallel executors. **Mononoke** is the custom Mercurial server scaled for the monorepo. None of those exist for fun — they're the unreliable-comms cross-machine plumbing the M1 has to talk through to reach the Odallies. See the [Meta dev blog post](https://developers.facebook.com/blog/post/2022/11/15/meta-developers-workflow-exploring-tools-used-to-code/) for the full workflow stack.
 
 ## When to use the M1, and when to skip him
 
@@ -110,7 +110,7 @@ The M1 isn't always the right interface. Sometimes you go through Wally; sometim
 
 **Three reasons to go through the M1:**
 
-- **Babysitting at scale.** Odalis get stuck — model errors, broken comms, file races, build flakes — and they don't recover on their own. If you're not watching, they idle. Wally watches and unsticks them, so a 30-minute task doesn't quietly become a four-hour one. The MEOW stack patrol formulas (e.g. `mol-polecat-work.formula.toml`, `mol-deacon-patrol.formula.toml` in [Yegge's gastown repo](https://github.com/gastownhall/gastown/tree/main/internal/formula/formulas/)) are this idea formalized — babysitting as a first-class workload.
+- **Babysitting at scale.** Odallies get stuck — model errors, broken comms, file races, build flakes — and they don't recover on their own. If you're not watching, they idle. Wally watches and unsticks them, so a 30-minute task doesn't quietly become a four-hour one. The MEOW stack patrol formulas (e.g. `mol-polecat-work.formula.toml`, `mol-deacon-patrol.formula.toml` in [Yegge's gastown repo](https://github.com/gastownhall/gastown/tree/main/internal/formula/formulas/)) are this idea formalized — babysitting as a first-class workload.
 - **Phone-friendly orchestration.** Wally bridges the navigation gap. I can drive the team from my phone — between meetings, on a walk, in the car — ask status, push work forward, verify results. Direct IC interaction needs a keyboard and the right context window loaded. Wally exposes a thinner interface, and that interface fits a thumb.
 - **Adversarial review.** Wally can orchestrate a convoy of reviewers — multiple specialized agents critiquing the same artifact for correctness, performance, security, style, smell. See Yegge's [code-review formula](https://github.com/gastownhall/gastown/tree/main/internal/formula/formulas/) as the canonical example. One IC can't do this; an M1 with staff can.
 
@@ -132,7 +132,7 @@ A bunch of things I haven't worked out yet:
 - **When does the human (M2) need their own M2?** The mirror question. At what point does the human need a meta-orchestrator above them — something coordinating across multiple Wallies, multiple domains, multiple humans? Today I run one Wally. The day I'm running three is the day I want this answered.
 - **Is "odali" actually a good name?** I like it because it doesn't carry baggage. But "specialized ephemeral IC with build access" is a mouthful and I'm not sure my coinage survives contact with anyone who didn't watch me invent it. Open to better.
 
-More to come as I build this out. If you're running this pattern at scale — especially the M1+staff+odalis split inside a real monorepo — drop me a note. I'd rather steal your vocabulary than invent more of my own.
+More to come as I build this out. If you're running this pattern at scale — especially the M1+staff+Odallies split inside a real monorepo — drop me a note. I'd rather steal your vocabulary than invent more of my own.
 
 ## Appendix: Challenges
 
