@@ -49,13 +49,13 @@ The structure is right. The metaphors are gratuitous. Polecats and refineries ar
 
 So here's the swap I'd make:
 
-| Yegge's Gas Town      | Org-chart vocabulary                     | Role                                                   |
-| --------------------- | ---------------------------------------- | ------------------------------------------------------ |
-| _(implicit operator)_ | M2 — the human (me)                      | Direction, review, strategic calls                     |
-| Mayor                 | M1 — the AI manager (Wally)              | Orchestrates work, distributes tasks, reviews output   |
-| Oracle / Deacons      | Staff — cloud teammates near M1          | Persistent context-holders, work alongside Wally       |
-| Polecats              | Odallies — specialized ephemeral ICs[^1] | Ephemeral workers with build-tool access, scoped tasks |
-| Refinery              | Phabricator / review-and-land system     | Manages merge queue, applies polished output           |
+| Yegge's Gas Town      | Meta vocabulary                          | Public / open-source equivalent  | Role                                                   |
+| --------------------- | ---------------------------------------- | -------------------------------- | ------------------------------------------------------ |
+| _(implicit operator)_ | M2 — the human (me)                      | —                                | Direction, review, strategic calls                     |
+| Mayor                 | M1 — the AI manager (Wally)              | (no clean public equivalent yet) | Orchestrates work, distributes tasks, reviews output   |
+| Oracle / Deacons      | Staff — cloud teammates near M1          | Background agents / Codex        | Persistent context-holders, work alongside Wally       |
+| Polecats              | Odallies — specialized ephemeral ICs[^1] | EC2 / cloud VM                   | Ephemeral workers with build-tool access, scoped tasks |
+| Refinery              | Phabricator / review-and-land system     | GitHub / GitLab + CI             | Manages merge queue, applies polished output           |
 
 [^1]: _Odally_ (singular), _Odallies_ (plural) — portmanteau of **on-demand + Wally**. They literally run on the [on-demand devservers](https://developers.facebook.com/blog/post/2022/11/15/meta-developers-workflow-exploring-tools-used-to-code/) Meta provisions per developer. Wally on demand. Odally. The name is functional — it tells you what they are. I think it also landed because it _sounds_ ephemeral and slightly foreign — these workers don't live with you, they show up, do the thing, and vanish.
 
