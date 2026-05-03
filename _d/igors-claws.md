@@ -36,7 +36,7 @@ I've been building toward claws without calling them that. I already have three,
 
 **[Larry](/larry) — my life coach claw.** Larry knows my journals, my goals, my health data, my patterns. Every Saturday I talk to him and review my week. He holds up a mirror: "You've committed to restart meditation 5 times since November. What's different this time?" Larry's biggest challenge is context loading — getting the full picture of my life into each session without me manually assembling it. That's the gap between an agent and a true claw: persistence. Larry is smart but amnesiac. Every session starts cold.
 
-**Wally — my work claw.** I don't talk about Wally here. If you work at Meta, I'm happy to tell you more in person. For the structural side — how Wally fits the FAANG org-chart-of-bots pattern (M2 / M1 / staff / odalis), see [Wally and My Work Gastown](/work-gastown).
+**Wally — my work claw.** I don't talk about Wally here. If you work at Meta, I'm happy to tell you more in person. For the structural side — how Wally fits the FAANG org-chart-of-bots pattern (M2 / M1 / staff / odalis), see [Wally and My Work Gastown](/wally).
 
 **[Tony](/tesla) — my car claw.** Tony is my Tesla, and he talks. Via [Vapi](https://vapi.ai/), Tony has a voice persona that I can call and chat with. He's the most fun and the least useful — a proof of concept for what happens when you give personality to a machine that already has sensors and autonomy.
 

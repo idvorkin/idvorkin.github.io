@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Wally and My Work Gastown"
-permalink: /work-gastown
+permalink: /wally
 redirect_from:
+  - /work-gastown
   - /my-work-gastown
   - /gastown
 tags:
@@ -12,9 +13,11 @@ tags:
 mermaid: True
 ---
 
-As I've explored being an [AI native manager](/ai-native-manager), one thing is emerging: I will certainly be an AI manager of bots. This is the story of [Wally](/igors-claws) — my work claw, the M1 in FAANG vocabulary, the AI orchestrator I delegate direction-and-review tasks to and who orchestrates further down to staff and odalis. I named him so I could read about his work in status reports and remember which agent did what. I spent something like eight hours teaching Wally to write status reports I could actually read; another stint teaching him to write design docs I could review the way I'd review a good engineer's. The good news: once Wally got it, _Wally can train the others_. The pattern is the same one any [good manager](/manager-book) runs — patterns from previous reps, design docs shaped to the reviewer, lifestyle support that took longer than I expected. Eight hours of training a junior compounds when the junior can teach the next one. That's the story. Now let me tell you what I've figured out about the org chart hiding inside it.
+Meet Wally. He's my claw. Except Wally isn't a single claw. He's the head of an organization of claws: staff with distinct roles, plus odalis running in different places, each with a discrete signature. The whole thing operates like a small team with a real org chart. A thing that's emerging: what used to be an IC role is now a manager-of-managers role.
 
 {% include ai-slop.html percent="90" %}
+
+Wally is one of [my claws](/igors-claws) — the work one. This post is about how he works as an org, not about the claws as a set.
 
 This is a survey post — the thinking is fresh, names are provisional, and there's at least one open question I haven't answered. Posting now so I can find it later.
 
@@ -26,6 +29,7 @@ This is a survey post — the thinking is fresh, names are provisional, and ther
 - [Why the human is M2, not the Mayor](#why-the-human-is-m2-not-the-mayor)
 - [The third tier Yegge's model misses](#the-third-tier-yegges-model-misses)
 - [When to use the M1, and when to skip him](#when-to-use-the-m1-and-when-to-skip-him)
+- [Training Wally](#training-wally)
 - [Still figuring out](#still-figuring-out)
 - [Appendix: Challenges](#appendix-challenges)
 
@@ -113,6 +117,12 @@ The M1 isn't always the right interface. Sometimes you go through Wally; sometim
 **The trade-off:** when you need precision, the M1 filters too aggressively. Working through Wally to get something very specific often returns a lot of garbage — generalized, diluted, missing the point. Going direct to the IC keeps your intent intact. You're collaborating, not delegating-then-praying.
 
 Heuristic: **wide work goes through M1; deep work goes direct.** If the task has a clear spec and just needs to land in many places, route through Wally. If it's one specific thing and "perfect" matters, sit down with the IC.
+
+## Training Wally
+
+I spent something like eight hours teaching Wally to write status reports I could actually read; another stint teaching him to write design docs I could review the way I'd review a good engineer's. The good news: once Wally got it, _Wally can train the others_. The pattern is the same one any [good manager](/manager-book) runs — patterns from previous reps, design docs shaped to the reviewer, lifestyle support that took longer than I expected. Eight hours of training a junior compounds when the junior can teach the next one.
+
+This is also why becoming an [AI native manager](/ai-native-manager) starts to feel less like a tooling change and more like a real management job. The hours you put into Wally aren't lost when the next odali shows up — Wally onboards them.
 
 ## Still figuring out
 
