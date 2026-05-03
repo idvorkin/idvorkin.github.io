@@ -124,7 +124,7 @@ Steinberger himself acknowledges this in the [Lex Fridman interview](https://lex
 
 I already have three, and they have names: **[Larry](/larry)** (life coach — journals, goals, weekly reviews), **Wally** (work, Meta-side, quiet here), and **[Tony](/tesla)** (my Tesla, via Vapi, more personality than utility). Life, work, transportation. I'm rolling my own rather than running OpenClaw because the data can't leave my hardware, the building _is_ the point, and any serious claw needs so much custom config that "just install it" was never real — and yes, I'm aware the whole stack is becoming a bit of a [Winchester Mystery House](https://en.wikipedia.org/wiki/Winchester_Mystery_House), with new wings arriving most weeks and me unable to quite stop.
 
-Full roster, per-claw onion-layer notes, the "why I build my own" argument in long form, and the signature I attach when one of them files work on my behalf → [**Igor's Three Claws**](/igors-claws).
+Full roster, per-claw onion-layer notes, the "why I build my own" argument in long form, the [Business Logic / Goop / Infra breakdown](/igors-claws#challenges-business-logic-goop-infra) of where my time actually goes, and the signature I attach when one of them files work on my behalf → [**Igor's Three Claws**](/igors-claws).
 
 ---
 
