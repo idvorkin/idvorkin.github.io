@@ -61,7 +61,7 @@ Agents keep you in flow. Whether that's good depends on what you're flowing towa
 
 ### Why multi-agent: covering for stalls
 
-Flow needs continuous output and no dead time. A single agent stalls — you wait for a response, a build, file I/O — and the dead time breaks you out. Run multiple agents and when one stalls you switch to another, never bottoming out. The key is being continuously engaged. Corollary: if a single agent ran fast enough end-to-end, one would be plenty. Multi-agent isn't a parallelism-of-work win, it's a stall-coverage strategy for flow — which is also why M2/M1 orchestration starts to matter, see [work-gastown](/work-gastown) for the org-chart-of-bots framing.
+Flow needs continuous output and no dead time. A single agent stalls — you wait for a response, a build, file I/O — and the dead time breaks you out. Run multiple agents and when one stalls you switch to another, never bottoming out. The key is being continuously engaged. Corollary: if a single agent ran fast enough end-to-end, one would be plenty. Multi-agent isn't a parallelism-of-work win, it's a stall-coverage strategy for flow — which is also why M2/M1 orchestration starts to matter, see [Wally](/wally) for the org-chart-of-bots framing.
 
 The catch: this only works if _you_ don't stall. The whole construction assumes the human is never the bottleneck. When that assumption breaks — when you're the one who needs a beat to think, or the day is heavy, or you're just tired — the magic flips. You end up running five agents at once, not really tracking what any of them are doing, completely overwhelmed. The same multi-agent setup that produces effortless flow on a good day produces incoherent thrash on a bad one. Worth knowing which day you're having before you spawn the fleet.
 
@@ -113,7 +113,7 @@ His read matches mine: 8+ hours a day of it is a vampire pattern, not a sustaina
 
 {% include summarize-page.html src="/addiction" %}
 {% include summarize-page.html src="/spiritual-health" %}
-{% include summarize-page.html src="/work-gastown" %}
+{% include summarize-page.html src="/wally" %}
 {% include summarize-page.html src="/igors-claws" %}
 {% include summarize-page.html src="/ai-cockpit" %}
 {% include summarize-page.html src="/tesla" %}
