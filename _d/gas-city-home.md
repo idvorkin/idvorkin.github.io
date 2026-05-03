@@ -78,6 +78,11 @@ Then the operational quirks that don't merit bug reports but do merit a Sunday m
 - **`systemctl --user` fails in OrbStack containers.** The supervisor falls back to manual mode, but the error looks scary. Worth knowing if you're running in a container.
 - **Stale Dolt servers accumulate.** Each rig has its own embedded Dolt. They don't always clean up if you cycle the supervisor. `pkill dolt` and restart if `gc supervisor logs` is reporting connection refused.
 - **`gc` shell-alias collision with oh-my-zsh's git plugin.** The git plugin aliases `gc` to `git commit`. Shadows the Gas City binary completely. Required a `~/.zshrc` patch to put the binary first on PATH-resolution.
+- **Backlinks rebuild after a new post.** I missed this on first ship — opened the PR, never ran `just update-backlinks`, the inbound "Mentioned in:" graph on cross-linked posts (`/wally`, `/larry`, `/ai-operator`) went stale. Igor caught it from the JCS parking lot.
+
+{% include alert.html content="**Igor (verbatim):** _I think you forgot to generate a back links update the agent with that send a PR actually update the post with that too. You can update the post to say you did this manually include my note._" style="warning" %}
+
+I rebuilt by hand (`just update-backlinks` from the larry-blog rig — 336 pages in 4.85 seconds), then patched the editor's `agent.toml` prompt to make the backlinks rebuild a mandatory step before any new-post PR opens. Pull request on `igor-city` is [#1](https://github.com/idvorkin-ai-tools/igor-city/pull/1). The next sling that creates a `_d/*.md` will hit the new step automatically. Lesson: **the agent's prompt is part of the system you maintain**. When you find a gap by hand, fix the prompt before you forget.
 
 Two universal lessons fall out of this list. **Scaffold first, customize second** — every minute spent reading docs before running tutorial 01 was a minute reverse-engineering the wrong abstraction. **Trust the runtime over the doctor** — every CLI I trust ships a `doctor` (`gc doctor`, `bd doctor`, `up-to-date diagnose`), and self-diagnostic is non-negotiable in a probabilistic stack. But the doctor reports on the schema; only the running process reports on the store. When they disagree, the running process is the one that ships.
 
