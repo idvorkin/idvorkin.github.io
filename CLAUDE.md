@@ -35,6 +35,14 @@ Same fix applies if you edit a heading mid-session and the live `jekyll serve` h
 
 Repo-mode distinctions (AI-Tools vs Human-Supervised) and the fork-push workflow live in `~/gits/chop-conventions/dev-inner-loop/repo-modes.md`.
 
+### Rebuild backlinks before opening a new-post PR
+
+If your edit **adds, renames, or removes a `_d/*.md` permalink**, OR adds/removes cross-links to other posts, run `just update-backlinks` (or `just back-links`) BEFORE opening the PR. Commit the regenerated `back-links.json` in the same PR.
+
+Why it matters: the inbound "Mentioned in:" section on every linked post reads from `back-links.json`. New post + no rebuild = the linked posts on main don't know they're linked from the new one until the next manual rebuild. Igor caught this on PR #594 (gas-city-home) the first time, after the merge — required a follow-up PR (#597) to land the rebuilt index.
+
+**Skip this step** for body-only edits to existing posts that don't change links. The rebuild is a no-op cost otherwise.
+
 When superseding a PR you opened on `idvorkin/*`, **close it yourself** — `gh pr close <N> --repo idvorkin/<repo> --comment "Superseded by #M — …"` works for the `idvorkin-ai-tools` actor on PRs it authored. Don't leave orphan PRs for Igor to clean up.
 
 `gh pr merge` is a different story: branch protection / required reviews on `idvorkin/*` still block self-merge, which is correct and intentional — Igor approves the merge. Ask, don't try.
