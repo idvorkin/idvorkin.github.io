@@ -49,13 +49,13 @@ The structure is right. The metaphors are gratuitous. Polecats and refineries ar
 
 So here's the swap I'd make:
 
-| Yegge's Gas Town      | Org-chart vocabulary                     | Role                                                   |
-| --------------------- | ---------------------------------------- | ------------------------------------------------------ |
-| _(implicit operator)_ | M2 — the human (me)                      | Direction, review, strategic calls                     |
-| Mayor                 | M1 — the AI manager (Wally)              | Orchestrates work, distributes tasks, reviews output   |
-| Oracle / Deacons      | Staff — cloud teammates near M1          | Persistent context-holders, work alongside Wally       |
+| Yegge's Gas Town      | Org-chart vocabulary                                                                                                                | Role                                                   |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| _(implicit operator)_ | M2 — the human (me)                                                                                                                 | Direction, review, strategic calls                     |
+| Mayor                 | M1 — the AI manager (Wally)                                                                                                         | Orchestrates work, distributes tasks, reviews output   |
+| Oracle / Deacons      | Staff — cloud teammates near M1                                                                                                     | Persistent context-holders, work alongside Wally       |
 | Polecats              | Odallies — specialized ephemeral ICs[^1] (≈ AWS EC2, GitHub Codespaces, Meta on-demand devservers — pick whichever your shop ships) | Ephemeral workers with build-tool access, scoped tasks |
-| Refinery              | Review-and-land system (≈ GitHub merge queue, Gerrit, Phabricator) | Applies polished output to mainline                    |
+| Refinery              | Review-and-land system (≈ GitHub merge queue, Gerrit, Phabricator)                                                                  | Applies polished output to mainline                    |
 
 [^1]: _Odally_ (singular), _Odallies_ (plural) — portmanteau of **on-demand + Wally**. They run on whatever your shop calls an on-demand cloud VM — AWS calls them EC2 instances, GitHub Codespaces is a near-cousin, Meta provisions [on-demand devservers](https://developers.facebook.com/blog/post/2022/11/15/meta-developers-workflow-exploring-tools-used-to-code/). Wally on demand. Odally. The name is functional — it tells you what they are. I think it also landed because it _sounds_ ephemeral and slightly foreign — these workers don't live with you, they show up, do the thing, and vanish.
 
