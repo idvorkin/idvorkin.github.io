@@ -54,6 +54,8 @@ When adding a new entry:
 
 #### Walking with Alex Under the Trees
 
+{% include blob_image_float_right.html src="blog/walking-with-alex-2026-05-02.webp" %}
+
 Saturday afternoon walk with Alex. Trees the whole way — the kind of walk where you stop noticing the trail and just notice the canopy. We weren't doing anything in particular. He wasn't telling me a story I'll remember. I wasn't telling him one either.
 
 Writing this down because that's the part that matters. It wasn't a moment. It was just him, and the trees, and a Saturday. He's a good friend. Filing it here so future me, reading this back, gets the felt sense of it instead of having to take my word for it.
