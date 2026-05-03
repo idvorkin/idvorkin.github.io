@@ -70,6 +70,8 @@ The Claude Code Telegram bridge is the cleanest example I have. In early March I
 
 This is also why "just install OpenClaw" was never real for me. Even if you took the goop I'd written so far and threw it out, I'd be writing my replacement set inside a week — because the business logic is _mine_, the infra is _theirs_, and the goop is the only place a claw becomes anything specific.
 
+The upside, finally arriving: **the claws are getting good enough to do the goop themselves.** I spent a recent Sunday morning standing up [Steve Yegge's Gas City](/gas-city-home) at home — and the work I would have done by hand a year ago (scaffolding the city, debugging five upstream bugs, even drafting the post you're reading the link to) was done by the claws under direction. Goop didn't disappear; the labor on it shifted. That's the second half of the half-life pattern: **infra eats some, claws eat the rest.** The 80% goop number is starting to feel like a temporary high-water mark, not a permanent ceiling.
+
 ## Why I Build My Own
 
 People ask me why I'm rolling my own claws instead of running OpenClaw or waiting for the polished product. Fair question. A few reasons, in order of how much they actually move me.
