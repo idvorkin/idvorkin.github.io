@@ -120,6 +120,8 @@ Three things to do every time:
 
 Do those three and the AI stops guessing at the constraints you forgot to mention. You spend less time course-correcting in the loop because you gave the AI the right shape to start with. Next time you're stuck staring at an empty prompt, don't try harder to write it. Talk it out.
 
+One trap that isn't in the manual: **sustained voice input fatigues your voice the same way packed 1:1 days do.** Three days of intense voice vibe coding put my throat in the same state as a calendar-packed week of meetings — same vocal cord load, different surface. Water, throat rest between sessions, and consider typing the small follow-ups instead of dictating them. The {% include amazon.html asin="B0DNQ5D1H4" tag="ighe-20" %} I use does the audio job fine; the harder part is treating voice like a reps-and-recovery muscle.
+
 [I'm writing part of this post from the passenger seat of my teenager's car.](/life-journal#vibe-coding-from-the-passenger-seat) Voice plus a remote agent means the laptop is optional.
 
 ## You Can Throw It Away
