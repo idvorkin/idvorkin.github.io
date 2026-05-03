@@ -131,9 +131,9 @@ This is also why becoming an [AI native manager](/ai-native-manager) starts to f
 
 At first I just used the auto-generated hostnames — `OD-1274`, `i-0a3f4b7c1d2e`, whatever the cloud handed me. That was really hard on me. I'd lose track of which one was doing what. `OD-1274 completed step 3` told me nothing.
 
-So I started giving them names tied to the service or direction they're working on. An Odally working the auth migration becomes `auth-migration`. The build-pipeline rebuild becomes `build-rebuild`. Now Wally writes "auth-migration completed step 3" and it lands immediately.
+So now I auto-assign a human name at spawn — `OD-343` becomes `alice`, the next one is `bob`, then `charlie`. Now Wally writes "alice completed step 3" and it lands immediately. Pronounceable, distinct, sticky in a way no hex string is.
 
-Auto-assigned at spawn — zero cognitive cost on me. But they're real handles for status reports and conversation. Even ephemeral workers earn names. The cost of inventing one is less than the cost of looking up which hostname was doing what.
+Zero cognitive cost on me — the mapping happens automatically when the VM spins up. But they're real handles for status reports and conversation. Even ephemeral workers earn names. The cost of running through the alphabet is less than the cost of looking up which hostname was doing what.
 
 ## Still figuring out
 
