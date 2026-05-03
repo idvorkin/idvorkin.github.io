@@ -43,6 +43,21 @@ Why it matters: the inbound "Mentioned in:" section on every linked post reads f
 
 **Skip this step** for body-only edits to existing posts that don't change links. The rebuild is a no-op cost otherwise.
 
+#### Ruby version requirement (local backlinks rebuild)
+
+`build_back_links.py build` reads from `_site/` (built HTML), so a fresh Jekyll build must succeed first. Jekyll 3.9 + liquid-4.0.3 use the deprecated `String#tainted?` method removed in Ruby 3.2+. **On Ruby 4.x the local build will fail before producing `_site/`** and the backlinks rebuild will then either error out (if `_site/` is missing) or silently produce stale entries (if `_site/` is from before the new posts existed).
+
+**Local fix:**
+```bash
+brew install ruby@3.1
+export PATH=/home/linuxbrew/.linuxbrew/opt/ruby@3.1/bin:$PATH
+bundle install   # populates ~/.bundle-larry-blog or similar
+bundle exec jekyll build
+just update-backlinks
+```
+
+CI uses Ruby 3.1 and is unaffected. This rule lives here so future agents on Ruby 4.x dev VMs don't waste time chasing the wrong root cause.
+
 When superseding a PR you opened on `idvorkin/*`, **close it yourself** — `gh pr close <N> --repo idvorkin/<repo> --comment "Superseded by #M — …"` works for the `idvorkin-ai-tools` actor on PRs it authored. Don't leave orphan PRs for Igor to clean up.
 
 `gh pr merge` is a different story: branch protection / required reviews on `idvorkin/*` still block self-merge, which is correct and intentional — Igor approves the merge. Ask, don't try.

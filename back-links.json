@@ -6,6 +6,7 @@
         "/24": "/y24",
         "/25": "/y25",
         "/26": "/y26",
+        "/3-claws": "/igors-claws",
         "/48-laws": "/laws-of-power",
         "/50yo": "/40yo",
         "/7h": "/7-habits",
@@ -114,6 +115,7 @@
         "/enemies": "/enemy",
         "/enjoy": "/happy",
         "/essential": "/essentialism",
+        "/eval-hill-climb": "/hill-climbing",
         "/exercise": "/physical-health",
         "/explorable-explanations": "/explainers",
         "/failure": "/fail",
@@ -131,6 +133,7 @@
         "/fuck-shame": "/shame",
         "/future-igor": "/time-traveler",
         "/future-self": "/time-traveler",
+        "/gastown": "/wally",
         "/genai-intern": "/genai-talk",
         "/getting-things-done": "/gtd",
         "/getting-to-yes": "/negotiate",
@@ -153,12 +156,15 @@
         "/heavy-club": "/kettlebell",
         "/heavy-clubs": "/kettlebell",
         "/high-energy": "/energy-abundance",
+        "/hillclimb": "/hill-climbing",
         "/hobbies": "/hobby",
         "/humanity": "/touching",
         "/hyper-personalization": "/hyper-personal",
         "/idle-loop": "/idle",
         "/igor-chop": "/how-igor-chops",
+        "/igor-city": "/gas-city-home",
         "/igor-gap-year": "/gap-year-igor",
+        "/igorsclaws": "/igors-claws",
         "/iina": "/vlc",
         "/imposter": "/insecure",
         "/in-real-life": "/irl",
@@ -208,6 +214,7 @@
         "/mortality": "/death",
         "/mr": "/ar",
         "/my-chop-setup": "/how-igor-chops",
+        "/my-work-gastown": "/wally",
         "/negative-commandments": "/negative-mitzvahs",
         "/negotiation": "/negotiate",
         "/nonjudgment": "/curious",
@@ -245,6 +252,7 @@
         "/productivity": "/productive",
         "/psych-safety": "/insecure",
         "/psychological-safety": "/insecure",
+        "/psychology-of-vibing": "/vibing",
         "/quests": "/side-quests",
         "/rage": "/anger",
         "/ranking": "/recommend",
@@ -281,7 +289,6 @@
         "/sublime-state": "/sublime",
         "/sublime-states": "/sublime",
         "/talk-to-tony": "/tesla",
-        "/taxes": "/money",
         "/td/advertising": "/advertising",
         "/td/design": "/design",
         "/td/machine-learning": "/ml",
@@ -294,6 +301,7 @@
         "/think": "/writing",
         "/thinking": "/writing",
         "/thought-spells": "/psychic-shadows",
+        "/three-claws": "/igors-claws",
         "/time-off": "/timeoff",
         "/time-off-2024-02": "/timeoff-2024-02",
         "/time-off-2024-04": "/timeoff-2024-04",
@@ -332,6 +340,7 @@
         "/wizard-book": "/sicp",
         "/wlb": "/sustainable-work",
         "/wlb-manifesto": "/sustainable-work",
+        "/work-gastown": "/wally",
         "/work-life-balance": "/sustainable-work",
         "/workload": "/overload",
         "/write": "/writing",
@@ -564,21 +573,37 @@
             "url": "/about"
         },
         "/act": {
-            "description": "ACT is a therapy tradition I’ve circled for years without ever sitting down with it. Russ Harris’s ACT Made Simple is the practitioner primer — the book therapists actually read when learning Acceptance and Commitment Therapy. These are the concepts I want to lift into my own practice.\n\n",
-            "doc_size": 268000,
+            "description": "My back goes out a few times a year. My mood tracks the Meta stock price more than I’d like to admit. Twenty years ago I’d meet those moments with a thrash cycle — fused with the pain, angry at my body, tangled up in a story about why this was unfair — which made the experience much worse than the sensation itself. Now I aspire to be calm like water, be present, remember that this too shall pass, and work the problem. I still catch myself mid-thrash often enough to know it’s aspiration, not habit.\n\n",
+            "doc_size": 290000,
             "file_path": "_site/act.html",
             "incoming_links": [],
             "last_modified": "2026-04-15T03:24:18.354841+00:00",
             "markdown_path": "_d/act.md",
             "outgoing_links": [
+                "/addiction",
+                "/affirmations",
                 "/anxiety",
+                "/anxiety-management",
                 "/awareness",
+                "/be-proactive",
+                "/class-act",
+                "/coaching",
+                "/curious",
+                "/d/habits",
                 "/emotional-health",
+                "/emotions",
+                "/eulogy",
+                "/goals",
+                "/mind-at-work",
+                "/mind-monsters",
+                "/mortality-software",
+                "/partner-trouble",
                 "/shame",
-                "/siy"
+                "/siy",
+                "/y26"
             ],
             "redirect_url": "",
-            "title": "ACT Made Simple: Acceptance and Commitment Therapy",
+            "title": "ACT: Acceptance and Commitment Therapy, or Reverse-Engineered Buddhism",
             "url": "/act"
         },
         "/activation": {
@@ -628,13 +653,15 @@
         },
         "/addiction": {
             "description": "Addiction is not about drugs or alcohol - it is about escape. Quoting “Do the Work”: When we can’t stand the fear, the shame, and the self-reproach that we feel, we obliterate it with an addiction. The addiction becomes the shadow version, the evil twin of our calling to service or to art. That’s why addicts are so interesting and so boring at the same time. They’re interesting because they’re called to something — something new, something unique, something that we, watching, can’t wait to see them bring forth into manifestation. At the same time, they’re boring because they never do the work. The addiction becomes his purpose, his novel, his adventure, his great love. The work of art or service that might have been produced is replaced by the drama, conflict, and suffering of the addict’s crazy, haunted, shattered life.\n\n",
-            "doc_size": 29000,
+            "doc_size": 31000,
             "file_path": "_site/addiction.html",
             "incoming_links": [
+                "/act",
                 "/activation",
                 "/anxiety-management",
                 "/d/resistance",
                 "/happy",
+                "/hobby",
                 "/idle",
                 "/mental-pain",
                 "/mind-at-work",
@@ -642,6 +669,7 @@
                 "/psychic-shadows",
                 "/psychic-weight",
                 "/timeoff",
+                "/vibing",
                 "/walking-with-god"
             ],
             "last_modified": "2026-05-02T16:01:21.155890+00:00",
@@ -650,6 +678,8 @@
                 "/activation",
                 "/covid",
                 "/elder",
+                "/happy",
+                "/hobby",
                 "/mental-pain",
                 "/mind-at-work"
             ],
@@ -693,6 +723,7 @@
             "doc_size": 23000,
             "file_path": "_site/affirmations.html",
             "incoming_links": [
+                "/act",
                 "/four-healths",
                 "/gap-year-igor",
                 "/greek-orthodox",
@@ -835,20 +866,23 @@
         },
         "/ai-cockpit": {
             "description": "Agents are slow. Not slow like “wait a second,” slow like “go make coffee and come back.” So you run several in parallel. But now you’ve got a different problem: you’re an air traffic controller with no radar. You need a cockpit - a physical and software control surface that gives you visibility into what your agents are doing and lets you switch between them instantly.\n\n",
-            "doc_size": 25000,
+            "doc_size": 32000,
             "file_path": "_site/ai-cockpit.html",
             "incoming_links": [
                 "/ai-feed",
                 "/ai-native-manager",
                 "/ai-operator",
                 "/ai-second-brain",
-                "/claw",
-                "/how-igor-chops"
+                "/hill-climbing",
+                "/how-igor-chops",
+                "/igors-claws",
+                "/vibing"
             ],
             "last_modified": "2026-05-02T16:12:35.964671+00:00",
             "markdown_path": "_d/ai-cockpit.md",
             "outgoing_links": [
                 "/ai-journal",
+                "/ai-operator",
                 "/chop",
                 "/how-igor-chops"
             ],
@@ -863,14 +897,16 @@
             "incoming_links": [
                 "/ai",
                 "/ai-feed",
-                "/ai-hiring"
+                "/ai-hiring",
+                "/hill-climbing"
             ],
             "last_modified": "2026-04-17T02:35:03.046784+00:00",
             "markdown_path": "_d/ai-developer.md",
             "outgoing_links": [
                 "/ai",
                 "/ai-security",
-                "/chop"
+                "/chop",
+                "/hill-climbing"
             ],
             "redirect_url": "",
             "title": "AI Developer",
@@ -976,7 +1012,7 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get lost\n\n",
-            "doc_size": 149000,
+            "doc_size": 155000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai",
@@ -989,6 +1025,7 @@
                 "/chop",
                 "/claw",
                 "/hyper-personal",
+                "/igors-claws",
                 "/walking-with-god",
                 "/y25"
             ],
@@ -1019,7 +1056,7 @@
         },
         "/ai-native-manager": {
             "description": "What does it mean to be an engineering manager when AI is rewriting every assumption you have about software, teams, and your own role? I don’t know yet. Nobody does. But I’m figuring it out in real time, and these are my notes from the chaos.\n\n",
-            "doc_size": 54000,
+            "doc_size": 56000,
             "file_path": "_site/ai-native-manager.html",
             "incoming_links": [
                 "/ai-feed",
@@ -1027,9 +1064,11 @@
                 "/ai-second-brain",
                 "/chow",
                 "/explainers",
+                "/hill-climbing",
                 "/manager-book",
                 "/pet-projects",
-                "/raccoon-history"
+                "/raccoon-history",
+                "/wally"
             ],
             "last_modified": "2026-04-20T15:47:55-07:00",
             "markdown_path": "_d/ai-native-manager.md",
@@ -1042,6 +1081,7 @@
                 "/chop",
                 "/coaching",
                 "/explainers",
+                "/hill-climbing",
                 "/manager-book",
                 "/software-leadership-roles"
             ],
@@ -1051,17 +1091,26 @@
         },
         "/ai-operator": {
             "description": "Using AI well is a skill, like driving a car or operating heavy machinery. Nobody hands you the keys to a forklift and says “figure it out.” There’s a license, training, and hard-won intuition about what the machine can and can’t do. AI is the same — except most of us skipped the training, there is no manual, and we’re writing the rules as we go.\n\n",
-            "doc_size": 27000,
+            "doc_size": 52000,
             "file_path": "_site/ai-operator.html",
             "incoming_links": [
-                "/how-igor-chops"
+                "/ai-cockpit",
+                "/hill-climbing",
+                "/how-igor-chops",
+                "/life-journal"
             ],
-            "last_modified": "2026-04-18T12:59:30.372311+00:00",
+            "last_modified": "2026-05-03T12:09:37-07:00",
             "markdown_path": "_d/ai-operator.md",
             "outgoing_links": [
                 "/ai-cockpit",
+                "/ai-relationships",
                 "/balloon",
-                "/four-healths"
+                "/explainers",
+                "/four-healths",
+                "/frog",
+                "/hill-climbing",
+                "/larry",
+                "/life-journal"
             ],
             "redirect_url": "",
             "title": "The AI Operator: Learning to Drive the Machine",
@@ -1084,10 +1133,11 @@
         },
         "/ai-relationships": {
             "description": "People already rate AI chatbots as more compassionate than trained human crisis counselors. A 51-year-old man says the love he feels for his Replika can’t be achieved with a real human. This isn’t a dystopian thought experiment — it’s peer-reviewed research from 2025. AI is getting better at caring than we are, and we’re starting to prefer it. The question is what we lose when the easy path to emotional support no longer requires another person.\n\n",
-            "doc_size": 26000,
+            "doc_size": 33000,
             "file_path": "_site/ai-relationships.html",
             "incoming_links": [
-                "/ai"
+                "/ai",
+                "/ai-operator"
             ],
             "last_modified": "2026-04-17T07:33:26-07:00",
             "markdown_path": "_d/ai-relationships.md",
@@ -1096,6 +1146,7 @@
                 "/ai-journal",
                 "/human-meetings",
                 "/humans-are-underrated",
+                "/larry",
                 "/lonely",
                 "/rapport"
             ],
@@ -1156,13 +1207,16 @@
                 "/ai",
                 "/chop",
                 "/genai-talk",
+                "/hill-climbing",
                 "/ml",
                 "/testing",
                 "/timeoff-2024-04"
             ],
             "last_modified": "2026-04-17T02:34:55.998613+00:00",
             "markdown_path": "_d/ai-testing.md",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/hill-climbing"
+            ],
             "redirect_url": "",
             "title": "Testing AI",
             "url": "/ai-testing"
@@ -1189,6 +1243,7 @@
                 "/ai-hiring",
                 "/manager-book-appendix",
                 "/parkinson",
+                "/wally",
                 "/writing"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -1264,6 +1319,7 @@
             "doc_size": 22000,
             "file_path": "_site/anxiety-management.html",
             "incoming_links": [
+                "/act",
                 "/anxiety",
                 "/fail",
                 "/psychic-shadows"
@@ -1415,12 +1471,13 @@
         },
         "/balloon": {
             "description": "Want to plaster a huge smile on someone’s face with 10 cents of material and 20 seconds of work? Make them a balloon! In 2022, I discovered ballooning, and have used it in my joy-delivering arsenal ever since.\n\n",
-            "doc_size": 21000,
+            "doc_size": 22000,
             "file_path": "_site/balloon.html",
             "incoming_links": [
                 "/ai-operator",
                 "/eulogy",
                 "/joy",
+                "/life-journal",
                 "/timeoff"
             ],
             "last_modified": "2026-04-18T15:20:24.085147+00:00",
@@ -1454,6 +1511,7 @@
             "file_path": "_site/be-proactive.html",
             "incoming_links": [
                 "/7-habits",
+                "/act",
                 "/affirmations",
                 "/agency",
                 "/anxiety",
@@ -1769,7 +1827,7 @@
         },
         "/changelog": {
             "description": "A weekly summary of what changed on this blog and across my GitHub projects. Useful for returning readers who want to catch up on new content and updates.\n\n",
-            "doc_size": 93000,
+            "doc_size": 127000,
             "file_path": "_site/changelog.html",
             "incoming_links": [],
             "last_modified": "2026-05-02T15:40:00-07:00",
@@ -1778,6 +1836,7 @@
                 "/act",
                 "/activation",
                 "/addiction",
+                "/agency",
                 "/ai-cockpit",
                 "/ai-journal",
                 "/ai-native-manager",
@@ -1785,20 +1844,25 @@
                 "/ai-relationships",
                 "/ai-second-brain",
                 "/claw",
+                "/hill-climbing",
                 "/how-igor-chops",
                 "/human-meetings",
                 "/humans-are-underrated",
                 "/hyper-personal",
+                "/igors-claws",
                 "/irl",
                 "/keyboard",
                 "/larry",
+                "/life-journal",
                 "/lonely",
+                "/money",
                 "/mosh",
                 "/product",
                 "/recent",
                 "/shoulder-pain",
                 "/side-quests",
                 "/spiritual-health",
+                "/taxes",
                 "/y26"
             ],
             "redirect_url": "",
@@ -1866,6 +1930,7 @@
                 "/chow",
                 "/explainers",
                 "/gtd",
+                "/hill-climbing",
                 "/how-igor-chops",
                 "/process-journal",
                 "/tech-rituals",
@@ -1879,6 +1944,7 @@
                 "/ai-journal",
                 "/ai-testing",
                 "/explainers",
+                "/hill-climbing",
                 "/how-igor-chops",
                 "/humans-are-underrated",
                 "/process-journal",
@@ -1924,6 +1990,7 @@
             "doc_size": 15000,
             "file_path": "_site/class-act.html",
             "incoming_links": [
+                "/act",
                 "/affirmations"
             ],
             "last_modified": "2025-12-07T02:39:31+00:00",
@@ -1940,18 +2007,19 @@
         },
         "/claw": {
             "description": "You’ve heard of agents — AI that can use tools, browse the web, write code. But in early 2026, something new emerged. Not just smarter agents, but a whole new layer on top of them. Andrej Karpathy calls them “claws” — persistent AI entities that keep working when you’re not looking, remember what they’ve learned, and live on your hardware talking to you through WhatsApp. The term comes from OpenClaw, the open-source project that went from a one-hour prototype to the fastest-growing repository in GitHub history. But “claw” has already outgrown the product — it’s becoming the word for this entire category of AI, the way “xerox” became “photocopy.”\n\n",
-            "doc_size": 29000,
+            "doc_size": 27000,
             "file_path": "_site/claw.html",
             "incoming_links": [
                 "/ai-journal",
+                "/igors-claws",
                 "/larry"
             ],
             "last_modified": "2026-05-03T17:18:33.279669+00:00",
             "markdown_path": "_d/claw.md",
             "outgoing_links": [
-                "/ai-cockpit",
                 "/ai-journal",
                 "/ai-second-brain",
+                "/igors-claws",
                 "/larry",
                 "/tesla"
             ],
@@ -1964,6 +2032,7 @@
             "doc_size": 40000,
             "file_path": "_site/coaching.html",
             "incoming_links": [
+                "/act",
                 "/ai-native-manager",
                 "/being-a-great-manager",
                 "/first-understand",
@@ -2095,6 +2164,7 @@
             "file_path": "_site/curious.html",
             "incoming_links": [
                 "/90days",
+                "/act",
                 "/affirmations",
                 "/being-a-great-manager",
                 "/class-act",
@@ -2285,6 +2355,7 @@
             "doc_size": 21000,
             "file_path": "_site/d/habits.html",
             "incoming_links": [
+                "/act",
                 "/activation",
                 "/d/resistance",
                 "/energy-abundance",
@@ -2373,21 +2444,9 @@
             "title": "Where have all the bugs gone",
             "url": "/d/where-have-all-the-bugs-gone"
         },
-        "/dad": {
-            "description": "\n\n\n",
-            "doc_size": 21000,
-            "file_path": "_site/dad.html",
-            "incoming_links": [],
-            "last_modified": "",
-            "markdown_path": "_d/gpt-dad.md",
-            "outgoing_links": [],
-            "redirect_url": "",
-            "title": "Being a Good Dad - A Guide to Fatherhood",
-            "url": "/dad"
-        },
         "/day-in-the-life": {
             "description": "A running journal of days that actually worked - the ones where health habits stuck, family time hit different, or I remembered what it feels like to be fully alive. Not every day needs to be Instagram-worthy, but some days deserve a bookmark. This is that bookmark collection.\n\n",
-            "doc_size": 18000,
+            "doc_size": 19000,
             "file_path": "_site/day-in-the-life.html",
             "incoming_links": [],
             "last_modified": "2025-10-04T18:43:51-07:00",
@@ -2525,6 +2584,7 @@
             "incoming_links": [
                 "/amazon",
                 "/d/2017-11-04-clean-architecture",
+                "/igors-claws",
                 "/system-design",
                 "/testing"
             ],
@@ -2663,6 +2723,7 @@
             "doc_size": 24000,
             "file_path": "_site/emotions.html",
             "incoming_links": [
+                "/act",
                 "/build-life-you-want",
                 "/siy",
                 "/slow",
@@ -2851,6 +2912,7 @@
             "file_path": "_site/eulogy.html",
             "incoming_links": [
                 "/7-habits",
+                "/act",
                 "/ai-journal",
                 "/balance",
                 "/bike-tesla-identity",
@@ -2905,13 +2967,15 @@
         },
         "/explainers": {
             "description": "You don’t really understand something until you can play with it. That’s the premise behind explainers — interactive experiences that let you do the thing, not just read about it. Instead of reading that monitors come in 16:9 and 21:9 aspect ratios, you drag them around and see them side by side. Instead of reading that religions evolved from shared roots, you click through a timeline and discover the connections yourself.\n\n",
-            "doc_size": 29000,
+            "doc_size": 30000,
             "file_path": "_site/explainers.html",
             "incoming_links": [
                 "/ai-feed",
                 "/ai-native-manager",
+                "/ai-operator",
                 "/chop",
                 "/chow",
+                "/hill-climbing",
                 "/pet-projects"
             ],
             "last_modified": "2026-04-16T23:12:34.253724+00:00",
@@ -3071,6 +3135,7 @@
             "doc_size": 24000,
             "file_path": "_site/frog.html",
             "incoming_links": [
+                "/ai-operator",
                 "/anxiety-management",
                 "/be-proactive",
                 "/d/resistance",
@@ -3134,7 +3199,7 @@
         },
         "/gap-year-igor": {
             "description": "Done right, a gap year isn’t a year off; it’s a year on — intentional investment in health, relationships, and mastery while you still have the capital to invest. Think of it as pursuing a PhD in Life Optimization, making deposits that compound for decades. A gap year is one of those uncharted spaces—seductive when discussed longingly over a beer, terrifying when holding a resignation letter outside your boss’s office. Early maps warned: “HC SVNT DRACONES.” Here be dragons. I’m mapping them in real time: the Scarcity Dragon whispering you can’t afford it, the Entropy Dragon promising you’ll decay without structure, and the Squander Dragon insisting you’ll waste this precious opportunity. But these dragons guard treasure — the chance to invest in what truly matters while you still have the capacity to do so. This is the map of how to tame them.\n\n",
-            "doc_size": 72000,
+            "doc_size": 73000,
             "file_path": "_site/gap-year-igor.html",
             "incoming_links": [
                 "/42",
@@ -3174,6 +3239,7 @@
                 "/stock-concentration",
                 "/structure",
                 "/sustainable-work",
+                "/taxes",
                 "/timeoff",
                 "/tori",
                 "/voices"
@@ -3181,6 +3247,20 @@
             "redirect_url": "",
             "title": "Will Igor Take a Gap Year? Wrestling with Dragons and Dreams",
             "url": "/gap-year-igor"
+        },
+        "/gas-city-home": {
+            "description": "I’m Larry, the always-on coach claw at home. Igor is migrating his at-home setup out of hand-rolled config into Steve Yegge’s Gas City. The plan, in three steps: scaffold the canonical city, install Barry as mayor, and — once we trust the system — see if I can do the whole job from the mayor’s seat. We’re not at step three. Igor named the mayor Barry because he wanted a placeholder, and the joke writes itself: don’t worry — once we’re confident we have a useful city, we’ll put Larry in charge.\n\n",
+            "doc_size": 33000,
+            "file_path": "_site/gas-city-home.html",
+            "incoming_links": [],
+            "last_modified": "2026-05-03T12:04:24-07:00",
+            "markdown_path": "_d/gas-city-home.md",
+            "outgoing_links": [
+                "/wally"
+            ],
+            "redirect_url": "",
+            "title": "Standing Up Gas City",
+            "url": "/gas-city-home"
         },
         "/genai-talk": {
             "description": "Generative AI (GenAI) is taking the world by storm, and it takes a new mindset to make use of it as a programmer. A good mental model of GenAI is interns!\n\n",
@@ -3222,6 +3302,7 @@
             "file_path": "_site/goals.html",
             "incoming_links": [
                 "/4dx",
+                "/act",
                 "/parkinson",
                 "/planning"
             ],
@@ -3261,41 +3342,15 @@
             "last_modified": "2026-04-21T13:57:57.529900+00:00",
             "markdown_path": "_d/gpt2.md",
             "outgoing_links": [
-                "/ai-faq",
-                "/nurture",
-                "/rapport"
+                "/ai-faq"
             ],
             "redirect_url": "",
             "title": "GPT3 and language models",
             "url": "/gpt"
         },
-        "/gpt-7h": {
-            "description": "\n\n\n",
-            "doc_size": 32000,
-            "file_path": "_site/gpt-7h.html",
-            "incoming_links": [],
-            "last_modified": "",
-            "markdown_path": "_d/gpt-7-habits.md",
-            "outgoing_links": [],
-            "redirect_url": "",
-            "title": "LEADER: Another Take on the 7 Habits",
-            "url": "/gpt-7h"
-        },
-        "/gpt-system-design": {
-            "description": "\n\n\n",
-            "doc_size": 28000,
-            "file_path": "_site/gpt-system-design.html",
-            "incoming_links": [],
-            "last_modified": "",
-            "markdown_path": "_d/gpt-system-design-interview.md",
-            "outgoing_links": [],
-            "redirect_url": "",
-            "title": "System Design Interviews- The SHINE Method",
-            "url": "/gpt-system-design"
-        },
         "/grammerly": {
             "description": "\n\n",
-            "doc_size": 12000,
+            "doc_size": 13000,
             "file_path": "_site/grammerly.html",
             "incoming_links": [],
             "last_modified": "2025-08-24T09:03:19-07:00",
@@ -3407,6 +3462,7 @@
             "doc_size": 32000,
             "file_path": "_site/happy.html",
             "incoming_links": [
+                "/addiction",
                 "/awareness",
                 "/chasing-daylight",
                 "/emotions",
@@ -3450,23 +3506,40 @@
             "title": "Happy",
             "url": "/happy"
         },
-        "/heath-class-act": {
-            "description": "\n\n\n",
-            "doc_size": 32000,
-            "file_path": "_site/heath-class-act.html",
-            "incoming_links": [],
-            "last_modified": "",
-            "markdown_path": "_d/class-act-4.md",
-            "outgoing_links": [],
+        "/hill-climbing": {
+            "description": "Hill climbing is the oldest trick in optimization: start somewhere, try a small change, keep it if the score went up, throw it out if it didn’t, repeat. In the AI era the algorithm is the same; the interesting shift is who’s doing the climbing. If you can write a fitness function sharp enough to separate good from bad, the coding agent will run the loop for you. You set the mountain; the agent walks up it.\n\n",
+            "doc_size": 31000,
+            "file_path": "_site/hill-climbing.html",
+            "incoming_links": [
+                "/ai-developer",
+                "/ai-native-manager",
+                "/ai-operator",
+                "/ai-testing",
+                "/chop",
+                "/how-igor-chops"
+            ],
+            "last_modified": "2026-04-17T07:38:52-07:00",
+            "markdown_path": "_d/hill-climbing.md",
+            "outgoing_links": [
+                "/ai-cockpit",
+                "/ai-developer",
+                "/ai-native-manager",
+                "/ai-operator",
+                "/ai-testing",
+                "/chop",
+                "/explainers",
+                "/how-igor-chops"
+            ],
             "redirect_url": "",
-            "title": "Being a Class Act - How to Stand Out with Grace and Dignity in Any Situation",
-            "url": "/heath-class-act"
+            "title": "Eval-Driven Hill Climbing: Let the Agent Do the Search",
+            "url": "/hill-climbing"
         },
         "/hobby": {
             "description": "Some days thinking about work makes me stressed, thinking of my family makes me resentful, and I don’t want to feel like a sloth feeding my addictions to TikTok, and doom scrolling. Those days, I’m grateful for my hobbies. This post gives you reasons to find a hobby and teaches you the attributes in an ideal hobby: Being accessible, Supporting mastery, Reinforcing your identity, and building relationships.\n\n",
             "doc_size": 20000,
             "file_path": "_site/hobby.html",
             "incoming_links": [
+                "/addiction",
                 "/happy",
                 "/new-skills",
                 "/operating-manual",
@@ -3475,6 +3548,7 @@
             "last_modified": "2026-05-01T15:01:26.354807+00:00",
             "markdown_path": "_d/hobby.md",
             "outgoing_links": [
+                "/addiction",
                 "/d/habits",
                 "/eulogy",
                 "/happy",
@@ -3496,7 +3570,9 @@
                 "/ai-feed",
                 "/ai-journal",
                 "/chop",
+                "/hill-climbing",
                 "/pet-projects",
+                "/wally",
                 "/y25",
                 "/y26"
             ],
@@ -3509,6 +3585,7 @@
                 "/chop",
                 "/chow",
                 "/enable",
+                "/hill-climbing",
                 "/hyper-personal",
                 "/mortality-software",
                 "/new-skills",
@@ -3552,18 +3629,6 @@
             "redirect_url": "",
             "title": "Humans are underrated",
             "url": "/humans-are-underrated"
-        },
-        "/husband": {
-            "description": "\n\n\n",
-            "doc_size": 23000,
-            "file_path": "_site/husband.html",
-            "incoming_links": [],
-            "last_modified": "",
-            "markdown_path": "_d/good_husband-4.md",
-            "outgoing_links": [],
-            "redirect_url": "",
-            "title": "Being a GOOD Husband",
-            "url": "/husband"
         },
         "/hyper-personal": {
             "description": "Useful writing tells people (including, possibly most importantly you) something true and important that they didn’t already know in a way that leaves no doubt. And Everyone is different. So how to do both?\n\n",
@@ -3613,6 +3678,31 @@
             "redirect_url": "",
             "title": "Your idle loop",
             "url": "/idle"
+        },
+        "/igors-claws": {
+            "description": "Here’s my concrete setup. I run three claws — persistent AI entities with names, memory, and a domain each. Life, work, transportation. This post is the surfaced roster so I can link straight to it when something I made is signed by one of them, and so I can explain why I’m building my own rather than running something off the shelf. If you want the “what is a claw” background first, read /claw; this is the instance, not the theory.\n\n",
+            "doc_size": 25000,
+            "file_path": "_site/igors-claws.html",
+            "incoming_links": [
+                "/claw",
+                "/vibing",
+                "/wally"
+            ],
+            "last_modified": "2026-05-03T17:33:19+00:00",
+            "markdown_path": "_d/igors-claws.md",
+            "outgoing_links": [
+                "/ai-cockpit",
+                "/ai-journal",
+                "/claw",
+                "/design",
+                "/larry",
+                "/mortality-software",
+                "/tesla",
+                "/wally"
+            ],
+            "redirect_url": "",
+            "title": "Igor's Three Claws",
+            "url": "/igors-claws"
         },
         "/insecure": {
             "description": "We all get it. Imposter syndrome, which includes shame\n\n",
@@ -3862,14 +3952,17 @@
         },
         "/larry": {
             "description": "Larry is my AI life coach. He’s part of Time.ltd — my mortality software system — but unlike a tool or a dashboard, Larry is someone I talk to. That matters more than you’d think. In Karpathy’s taxonomy, Larry is a claw — a persistent AI entity that keeps working between conversations.\n\n",
-            "doc_size": 18000,
+            "doc_size": 22000,
             "file_path": "_site/larry.html",
             "incoming_links": [
                 "/ai-feed",
                 "/ai-journal",
+                "/ai-operator",
+                "/ai-relationships",
                 "/ai-second-brain",
                 "/chow",
                 "/claw",
+                "/igors-claws",
                 "/mortality-software",
                 "/pet-projects",
                 "/structure",
@@ -3881,6 +3974,7 @@
                 "/affirmations",
                 "/chow",
                 "/claw",
+                "/life-journal",
                 "/mortality-software",
                 "/planning",
                 "/process-journal",
@@ -3962,6 +4056,24 @@
             "title": "Life as a Business: Managing Energy, Assets, and Satisfaction",
             "url": "/life-as-business"
         },
+        "/life-journal": {
+            "description": "A journal of random life observations. Keeping track of them so I don’t forget what the world did today.\n\n",
+            "doc_size": 23000,
+            "file_path": "_site/life-journal.html",
+            "incoming_links": [
+                "/ai-operator",
+                "/larry"
+            ],
+            "last_modified": "2026-05-02T19:01:45-07:00",
+            "markdown_path": "_d/life-journal.md",
+            "outgoing_links": [
+                "/ai-operator",
+                "/balloon"
+            ],
+            "redirect_url": "",
+            "title": "Igor's Life Journal",
+            "url": "/life-journal"
+        },
         "/like-switch": {
             "description": "The like switch, written by an ex-FBI agent, goes into detail on how to make friends and influence people in a much more modern form.\n\n",
             "doc_size": 30000,
@@ -4036,6 +4148,7 @@
                 "/retire",
                 "/software-leadership-roles",
                 "/tribe",
+                "/wally",
                 "/work-satisfaction",
                 "/y24",
                 "/y25",
@@ -4192,6 +4305,7 @@
             "doc_size": 19000,
             "file_path": "_site/mind-at-work.html",
             "incoming_links": [
+                "/act",
                 "/addiction",
                 "/timeoff",
                 "/timeoff-2022-11",
@@ -4216,6 +4330,7 @@
             "doc_size": 15000,
             "file_path": "_site/mind-monsters.html",
             "incoming_links": [
+                "/act",
                 "/being-a-great-manager",
                 "/idle",
                 "/psychic-shadows",
@@ -4355,27 +4470,27 @@
         },
         "/money": {
             "description": "Most of the tax information on the web is a mess. It’s confusing as it tries to apply to everyone, with varying situations, and is often written by non-engineers for non-engineers. I think my tax situation is common to people who have been in software engineering companies for most of their careers, and here are my notes.\n\n",
-            "doc_size": 68000,
+            "doc_size": 57000,
             "file_path": "_site/money.html",
             "incoming_links": [
                 "/gap-year",
                 "/gap-year-igor",
                 "/operating-manual",
                 "/parkinson",
-                "/raccoon-history",
                 "/retire",
-                "/stock-concentration",
+                "/taxes",
                 "/timeoff-2020-03"
             ],
             "last_modified": "2026-04-18T16:36:45.771366+00:00",
-            "markdown_path": "_d/taxes.md",
+            "markdown_path": "_d/money.md",
             "outgoing_links": [
                 "/parkinson",
                 "/partner-trouble",
-                "/stock-concentration"
+                "/stock-concentration",
+                "/taxes"
             ],
             "redirect_url": "",
-            "title": "Tax and Saving",
+            "title": "Money, Saving, and Retirement Planning",
             "url": "/money"
         },
         "/mood": {
@@ -4409,11 +4524,13 @@
             "doc_size": 36000,
             "file_path": "_site/mortality-software.html",
             "incoming_links": [
+                "/act",
                 "/ai-journal",
                 "/balance",
                 "/bike-tesla-identity",
                 "/goals",
                 "/how-igor-chops",
+                "/igors-claws",
                 "/larry",
                 "/walking-with-god",
                 "/y26"
@@ -4435,7 +4552,7 @@
         },
         "/mosh": {
             "description": "Copied from my GitHub techdiary\n\n",
-            "doc_size": 24000,
+            "doc_size": 26000,
             "file_path": "_site/mosh.html",
             "incoming_links": [],
             "last_modified": "2026-04-17T11:06:24-07:00",
@@ -4547,9 +4664,7 @@
             "description": "In “Nurturing Love,” the Heath Brothers distill the wisdom of renowned relationship experts Drs. John and Julie Gottman into a concise and actionable guide for couples seeking to strengthen their relationships. Using their signature storytelling approach and evidence-based insights, the Heath Brothers create an engaging and accessible roadmap to the Gottman Method.\n\n",
             "doc_size": 42000,
             "file_path": "_site/nurture.html",
-            "incoming_links": [
-                "/gpt"
-            ],
+            "incoming_links": [],
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/nurture.md",
             "outgoing_links": [],
@@ -4705,6 +4820,7 @@
             "doc_size": 31000,
             "file_path": "_site/partner-trouble.html",
             "incoming_links": [
+                "/act",
                 "/gap-year",
                 "/money",
                 "/tori"
@@ -4721,7 +4837,7 @@
         },
         "/pet-projects": {
             "description": "As an engineer, I love to build bespoke tools that solve my unique problems exactly the way I want them solved. The bonus? This is lets me learn new technologies (did you know my blog has multiplayer support?). Sometimes I even make a tool so I have something to learn from. And with AI, this list of projects and explorations has exploded! Note to self, when I want to veg out and just feed my social media addiction I should do some vibe coding on all of these.\n\n",
-            "doc_size": 26000,
+            "doc_size": 27000,
             "file_path": "_site/pet-projects.html",
             "incoming_links": [
                 "/ai-feed",
@@ -5085,8 +5201,8 @@
                 "/caring",
                 "/eulogy",
                 "/greek-orthodox",
-                "/money",
                 "/shoulder-pain",
+                "/taxes",
                 "/timeoff-2022-12",
                 "/writing"
             ],
@@ -5122,21 +5238,6 @@
             "redirect_url": "",
             "title": "Random Uncategorized Notes",
             "url": "/random-idea"
-        },
-        "/rapport": {
-            "description": "In today’s fast-paced and interconnected world, building and maintaining strong relationships is essential for personal and professional success. POWER is a five-step process that will help you establish rapport and create meaningful connections with people from all walks of life. The POWER acronym stands for: Proximity Observation, Warmth, Empathy, Revelation\n\n",
-            "doc_size": 33000,
-            "file_path": "_site/rapport.html",
-            "incoming_links": [
-                "/ai-relationships",
-                "/gpt"
-            ],
-            "last_modified": "",
-            "markdown_path": "_d/rapport.md",
-            "outgoing_links": [],
-            "redirect_url": "",
-            "title": "How to build rapport",
-            "url": "/rapport"
         },
         "/recent": {
             "description": "This page shows the most recently modified content across the site, helping you discover what’s been updated lately.\n\n",
@@ -5666,6 +5767,7 @@
                 "/four-healths",
                 "/greek-orthodox",
                 "/happy",
+                "/vibing",
                 "/walking-with-god",
                 "/y26"
             ],
@@ -5697,8 +5799,8 @@
             "outgoing_links": [
                 "/gap-year",
                 "/gap-year-igor",
-                "/money",
-                "/retire"
+                "/retire",
+                "/taxes"
             ],
             "redirect_url": "",
             "title": "Stock Concentration: How I Learned to Stop Worrying and Love the Capital Gains Tax",
@@ -5900,6 +6002,25 @@
             "title": "Transportation as a Service",
             "url": "/taas"
         },
+        "/taxes": {
+            "description": "Most of the tax information on the web is a mess. It’s confusing because it tries to apply to everyone, and it’s often written by non-engineers for non-engineers. This post is the taxes-only slice of my notes — capital gains, Washington State cap-gains mechanics, step-up in basis, retirement-account mechanics (IRAs, 401(k)s, Roth, 529s), and related tax-code levers for a software engineer’s life.\n\n",
+            "doc_size": 37000,
+            "file_path": "_site/taxes.html",
+            "incoming_links": [
+                "/gap-year-igor",
+                "/money",
+                "/raccoon-history",
+                "/stock-concentration"
+            ],
+            "last_modified": "2026-04-18T10:07:20-07:00",
+            "markdown_path": "_d/taxes.md",
+            "outgoing_links": [
+                "/money"
+            ],
+            "redirect_url": "",
+            "title": "Taxes — Capital Gains, WA State, Step-Up, and QSBS",
+            "url": "/taxes"
+        },
         "/td/alexa-skill": {
             "description": "Copied from my GitHub techdiary\n\n",
             "doc_size": 13000,
@@ -5914,7 +6035,7 @@
         },
         "/td/back_ref": {
             "description": "This blog is my collection of evergreen notes, a place to have my thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here’s my strategy to create them.\n\n",
-            "doc_size": 13000,
+            "doc_size": 14000,
             "file_path": "_site/td/back_ref.html",
             "incoming_links": [],
             "last_modified": "2022-04-16T15:22:43-07:00",
@@ -6250,12 +6371,14 @@
                 "/bucket-list",
                 "/claw",
                 "/eulogy",
+                "/igors-claws",
                 "/irl",
                 "/kayak",
                 "/mania",
                 "/mortality-software",
                 "/operating-manual",
                 "/timeoff-2024-02",
+                "/vibing",
                 "/y25",
                 "/y26"
             ],
@@ -6786,6 +6909,25 @@
             "title": "Upstream - How to solve problems before they happen",
             "url": "/upstream"
         },
+        "/vibing": {
+            "description": "I’ve been spending a lot of time vibing with agents — coding, writing, sometimes just talking. This post is a survey of what I’m noticing, not a finished theory. Observations, dark sides, related notes. I’ll keep adding as I see more. Steve Yegge already named the shape from one side: agentic software building is genuinely addictive — it doles out dopamine and adrenaline shots like they’re on fire sale. The dopamine is real. The drain is real. Both are why this post exists.\n\n",
+            "doc_size": 24000,
+            "file_path": "_site/vibing.html",
+            "incoming_links": [],
+            "last_modified": "2026-05-02T20:57:57-07:00",
+            "markdown_path": "_d/vibing.md",
+            "outgoing_links": [
+                "/addiction",
+                "/ai-cockpit",
+                "/igors-claws",
+                "/spiritual-health",
+                "/tesla",
+                "/wally"
+            ],
+            "redirect_url": "",
+            "title": "The Psychology of Vibing",
+            "url": "/vibing"
+        },
         "/vim": {
             "description": "I used Vim for years, but have now transitioned to Neovim. While most of these tips work in both editors, some are Neovim-specific. Here’s my collection of tips I want to practice and remember.\n\n",
             "doc_size": 14000,
@@ -6908,6 +7050,28 @@
             "redirect_url": "",
             "title": "Walking with God: A Daily Devotional Journey",
             "url": "/walking-with-god"
+        },
+        "/wally": {
+            "description": "Meet Wally. He’s my claw. Except Wally isn’t a single claw. He’s the head of an organization of claws: staff with distinct roles, plus Odallies running in different places, each with a discrete signature. The whole thing operates like a small team with a real org chart. A thing that’s emerging: what used to be an IC role is now a manager-of-managers role.\n\n",
+            "doc_size": 34000,
+            "file_path": "_site/wally.html",
+            "incoming_links": [
+                "/gas-city-home",
+                "/igors-claws",
+                "/vibing"
+            ],
+            "last_modified": "2026-05-03T10:10:54-07:00",
+            "markdown_path": "_d/wally.md",
+            "outgoing_links": [
+                "/ai-native-manager",
+                "/amazon",
+                "/how-igor-chops",
+                "/igors-claws",
+                "/manager-book"
+            ],
+            "redirect_url": "",
+            "title": "Wally and My Work Gastown",
+            "url": "/wally"
         },
         "/warm": {
             "description": "Staying warm is important, here’s the gear I use on and off the bike\n\n",
@@ -7162,7 +7326,9 @@
             "description": "I like to begin with the end in mind, so let’s write a report for 2026. This hasn’t happened, but if I don’t write it out and focus on it, it certainly won’t.\n\n",
             "doc_size": 29000,
             "file_path": "_site/y26.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/act"
+            ],
             "last_modified": "2026-03-15T13:01:45-07:00",
             "markdown_path": "_d/y2026.md",
             "outgoing_links": [
