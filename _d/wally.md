@@ -54,10 +54,10 @@ So here's the swap I'd make:
 | _(implicit operator)_ | M2 — the human (me)                      | Direction, review, strategic calls                     |
 | Mayor                 | M1 — the AI manager (Wally)              | Orchestrates work, distributes tasks, reviews output   |
 | Oracle / Deacons      | Staff — cloud teammates near M1          | Persistent context-holders, work alongside Wally       |
-| Polecats              | Odallies — specialized ephemeral ICs[^1] | Ephemeral workers with build-tool access, scoped tasks |
-| Refinery              | Phabricator / review-and-land system     | Manages merge queue, applies polished output           |
+| Polecats              | Odallies — specialized ephemeral ICs[^1] (≈ AWS EC2, GitHub Codespaces, Meta on-demand devservers — pick whichever your shop ships) | Ephemeral workers with build-tool access, scoped tasks |
+| Refinery              | Review-and-land system (≈ GitHub merge queue, Gerrit, Phabricator) | Applies polished output to mainline                    |
 
-[^1]: _Odally_ (singular), _Odallies_ (plural) — portmanteau of **on-demand + Wally**. They literally run on the [on-demand devservers](https://developers.facebook.com/blog/post/2022/11/15/meta-developers-workflow-exploring-tools-used-to-code/) Meta provisions per developer. Wally on demand. Odally. The name is functional — it tells you what they are. I think it also landed because it _sounds_ ephemeral and slightly foreign — these workers don't live with you, they show up, do the thing, and vanish.
+[^1]: _Odally_ (singular), _Odallies_ (plural) — portmanteau of **on-demand + Wally**. They run on whatever your shop calls an on-demand cloud VM — AWS calls them EC2 instances, GitHub Codespaces is a near-cousin, Meta provisions [on-demand devservers](https://developers.facebook.com/blog/post/2022/11/15/meta-developers-workflow-exploring-tools-used-to-code/). Wally on demand. Odally. The name is functional — it tells you what they are. I think it also landed because it _sounds_ ephemeral and slightly foreign — these workers don't live with you, they show up, do the thing, and vanish.
 
 The argument isn't that Yegge is wrong about the structure. It's that the moment you write a sentence with both "polecat" and "refinery" in it, you've taxed the reader for no reason. Every reader has already been on a team. Use the vocabulary they already have.
 
@@ -90,7 +90,7 @@ The trap is staying in M1 mode after you've outgrown it. Most people running age
 
 Here's the load-bearing claim of this post: in FAANG-style infra, Yegge's two tiers (Mayor + Polecats) don't quite cover it. There's a third tier in between, and it's not optional.
 
-At FAANG, you have a monorepo and a monobuild. The box running my M1 doesn't have access to the build tools. It can't run the full test suite. It can't push to the internal package registry. It physically lives somewhere that can't reach the systems where the real work happens. Wally can _think_ on my laptop. He can't _build_ there.
+At FAANG, you have a monorepo and a central build farm. The box running my M1 doesn't have access to the build tools. It can't run the full test suite. It can't push to the internal package registry. It physically lives somewhere that can't reach the systems where the real work happens. Wally can _think_ on my laptop. He can't _build_ there.
 
 So Wally needs a team of **Odallies**. Each odally is an IC that has access to the special stuff — build tools, internal infra, the production-adjacent boxes. They run in different boxes. And the communication channel to them is unreliable in a way that's structurally different from talking to Wally's local staff:
 
@@ -103,9 +103,9 @@ Yegge's polecats are ephemeral — that part matches. What he doesn't surface is
 
 The mental model: **staff are coworkers, Odallies are contractors with security badges**. Both are ICs. The handoff protocol is completely different.
 
-This isn't speculation. Meta literally ships this tier as a productized concept — [on-demand devservers](https://developers.facebook.com/blog/post/2022/11/15/meta-developers-workflow-exploring-tools-used-to-code/): ephemeral pre-warmed machines that devs grab and release daily. That's Odallies-as-a-service.
+This isn't speculation. Big shops productize this tier — Meta calls them [on-demand devservers](https://developers.facebook.com/blog/post/2022/11/15/meta-developers-workflow-exploring-tools-used-to-code/), AWS users wire it from EC2, GitHub users from Codespaces. Same shape: ephemeral pre-warmed cloud machines devs grab and release. That's Odallies-as-a-service.
 
-The rest of Meta's stack documents why the local box can't do the work. **EdenFS** virtualizes the monorepo so you only check out what you touch. **Buck** distributes builds across remote caches and parallel executors. **Mononoke** is the custom Mercurial server scaled for the monorepo. None of those exist for fun — they're the unreliable-comms cross-machine plumbing the M1 has to talk through to reach the Odallies. See the [Meta dev blog post](https://developers.facebook.com/blog/post/2022/11/15/meta-developers-workflow-exploring-tools-used-to-code/) for the full workflow stack.
+The cross-machine plumbing required to make this work — virtualized checkout, remote build cache, custom VCS server, auth boundaries — is genuinely complex. See the [Meta dev blog post](https://developers.facebook.com/blog/post/2022/11/15/meta-developers-workflow-exploring-tools-used-to-code/) for one shop's full reference implementation.
 
 ## When to use the M1, and when to skip him
 
@@ -129,7 +129,7 @@ This is also why becoming an [AI native manager](/ai-native-manager) starts to f
 
 ### Even ephemeral workers earn names
 
-At first I just used the on-demand devservers' hostnames — `OD-1274`, `OD-2031`, whatever Meta provisioned. That was really hard on me. I'd lose track of which one was doing what. `OD-1274 completed step 3` told me nothing.
+At first I just used the auto-generated hostnames — `OD-1274`, `i-0a3f4b7c1d2e`, whatever the cloud handed me. That was really hard on me. I'd lose track of which one was doing what. `OD-1274 completed step 3` told me nothing.
 
 So I started giving them names tied to the service or direction they're working on. An Odally working the auth migration becomes `auth-migration`. The build-pipeline rebuild becomes `build-rebuild`. Now Wally writes "auth-migration completed step 3" and it lands immediately.
 
