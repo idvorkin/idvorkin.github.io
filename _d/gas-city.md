@@ -75,6 +75,18 @@ Three nodes. The graph stays in Dolt. Auto-convoys group related beads so the re
 
 That's the meta-loop my [/gas-city-home](/gas-city-home) post named: the system describing itself, with the description being a worked example of the system. Same shape here, smaller scope.
 
+## The deeper frame: work is the primitive
+
+The cleanest statement of the whole architecture isn't on the docs site — it's in the [AGENTS.md](https://github.com/gastownhall/gascity/blob/main/AGENTS.md) at the root of the source tree. Two lines worth lifting:
+
+> _"ZERO hardcoded roles. The SDK has no built-in Mayor, Deacon, Polecat, or any other role. If a line of Go references a specific role name, it's a bug."_
+>
+> _"Work is the primitive, not orchestration."_
+
+Read those twice. Most multi-agent systems start by asking "what are the agents?" and bake the answers into the framework. Gas City asks **"what is work?"** and bakes the answer (a bead with dependencies and metadata) into the substrate, then makes everything else — agents, mail, dispatch, health patrol — composable on top. The doc lays out **five irreducible primitives** (Agent Protocol, Beads/Task Store, Event Bus, Config, Prompt Templates) and **four derived mechanisms** (Messaging, Formulas/Molecules, Dispatch, Health Patrol) — with the proof that all four derived shapes compose from the five primitives. Mail is `TaskStore.Create(bead{type:"message"})`. Sling is `find/spawn agent → select formula → create molecule → hook to agent`. None of it requires a special "Mayor" or "Polecat" type in the SDK — those are user configuration.
+
+That's why I keep saying _the unit of distribution is the formula, not the agent_. The agents are configurable. The work shape is the contract.
+
 ## Where to go next
 
 - The authoritative docs: **[docs.gastownhall.ai](https://docs.gastownhall.ai/)**. Start with [molecules](https://docs.gastownhall.ai/concepts/molecules/), [architecture](https://docs.gastownhall.ai/design/architecture/), and the [propulsion principle](https://docs.gastownhall.ai/concepts/propulsion-principle/).
