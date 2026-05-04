@@ -37,6 +37,8 @@ Beads matter because they're the smallest piece of state that survives a process
 
 A single bead does one thing. The interesting work is multi-step: design something, implement it, review it, test it, ship it. That's a **[molecule](https://docs.gastownhall.ai/concepts/molecules/)** — a persistent workflow instance that orchestrates multi-step work, expressed as a graph of beads chained with `needs:`.
 
+Yegge gave the broader pattern a name: **MEOW — Molecular Expression of Work.** Beads are the atoms; molecules are the chemistry. The whole stack is one bet: if you express work as composable molecules with bead-shaped state, agent orchestration becomes a thin layer on top instead of the main event. Gas City is a working argument that the bet pays off.
+
 The lifecycle has its own vocabulary, and once you see it the rest of the system clicks into place:
 
 - A **formula** is the source template — a TOML file describing the steps, their dependencies, and which agents run each one.
