@@ -415,7 +415,7 @@
         },
         "/4dx": {
             "description": "The 4 Disciplines of Execution (4DX) is a proven framework for executing your most important strategic priorities in the midst of the whirlwind of day-to-day demands. This framework has been tested and refined by hundreds of organizations and thousands of teams over many years.\n\n",
-            "doc_size": 21000,
+            "doc_size": 20000,
             "file_path": "_site/4dx.html",
             "incoming_links": [
                 "/goals"
@@ -866,7 +866,7 @@
         },
         "/ai-cockpit": {
             "description": "Agents are slow. Not slow like “wait a second,” slow like “go make coffee and come back.” So you run several in parallel. But now you’ve got a different problem: you’re an air traffic controller with no radar. You need a cockpit - a physical and software control surface that gives you visibility into what your agents are doing and lets you switch between them instantly.\n\n",
-            "doc_size": 32000,
+            "doc_size": 31000,
             "file_path": "_site/ai-cockpit.html",
             "incoming_links": [
                 "/ai-feed",
@@ -2014,7 +2014,7 @@
                 "/igors-claws",
                 "/larry"
             ],
-            "last_modified": "2026-05-03T17:18:33.279669+00:00",
+            "last_modified": "2026-05-03T17:20:34+00:00",
             "markdown_path": "_d/claw.md",
             "outgoing_links": [
                 "/ai-journal",
@@ -2446,7 +2446,7 @@
         },
         "/day-in-the-life": {
             "description": "A running journal of days that actually worked - the ones where health habits stuck, family time hit different, or I remembered what it feels like to be fully alive. Not every day needs to be Instagram-worthy, but some days deserve a bookmark. This is that bookmark collection.\n\n",
-            "doc_size": 19000,
+            "doc_size": 18000,
             "file_path": "_site/day-in-the-life.html",
             "incoming_links": [],
             "last_modified": "2025-10-04T18:43:51-07:00",
@@ -3199,7 +3199,7 @@
         },
         "/gap-year-igor": {
             "description": "Done right, a gap year isn’t a year off; it’s a year on — intentional investment in health, relationships, and mastery while you still have the capital to invest. Think of it as pursuing a PhD in Life Optimization, making deposits that compound for decades. A gap year is one of those uncharted spaces—seductive when discussed longingly over a beer, terrifying when holding a resignation letter outside your boss’s office. Early maps warned: “HC SVNT DRACONES.” Here be dragons. I’m mapping them in real time: the Scarcity Dragon whispering you can’t afford it, the Entropy Dragon promising you’ll decay without structure, and the Squander Dragon insisting you’ll waste this precious opportunity. But these dragons guard treasure — the chance to invest in what truly matters while you still have the capacity to do so. This is the map of how to tame them.\n\n",
-            "doc_size": 73000,
+            "doc_size": 72000,
             "file_path": "_site/gap-year-igor.html",
             "incoming_links": [
                 "/42",
@@ -3248,12 +3248,31 @@
             "title": "Will Igor Take a Gap Year? Wrestling with Dragons and Dreams",
             "url": "/gap-year-igor"
         },
+        "/gas-city": {
+            "description": "If you’ve read Standing Up Gas City, or seen “Gas City” mentioned in /wally or /igors-claws, and you want to know what the thing actually is before you stand up your own — this is that post. Three concepts carry the whole design: beads (the unit of work), molecules (the choreography), and the propulsion principle (what keeps the engine running). Each one is plain enough on its own; the leverage is in how they compose.\n\n",
+            "doc_size": 23000,
+            "file_path": "_site/gas-city.html",
+            "incoming_links": [],
+            "last_modified": "2026-05-04T12:23:28.406847+00:00",
+            "markdown_path": "_d/gas-city.md",
+            "outgoing_links": [
+                "/gas-city-home",
+                "/igors-claws",
+                "/wally"
+            ],
+            "redirect_url": "",
+            "title": "Gas City: Beads, Molecules, and the Propulsion Principle",
+            "url": "/gas-city"
+        },
         "/gas-city-home": {
             "description": "I’m Larry, the always-on coach claw at home. Igor is migrating his at-home setup out of hand-rolled config into Steve Yegge’s Gas City. The plan, in three steps: scaffold the canonical city, install Barry as mayor, and — once we trust the system — see if I can do the whole job from the mayor’s seat. We’re not at step three. Igor named the mayor Barry because he wanted a placeholder, and the joke writes itself: don’t worry — once we’re confident we have a useful city, we’ll put Larry in charge.\n\n",
-            "doc_size": 33000,
+            "doc_size": 34000,
             "file_path": "_site/gas-city-home.html",
-            "incoming_links": [],
-            "last_modified": "2026-05-03T12:04:24-07:00",
+            "incoming_links": [
+                "/gas-city",
+                "/igors-claws"
+            ],
+            "last_modified": "2026-05-03T12:22:17-07:00",
             "markdown_path": "_d/gas-city-home.md",
             "outgoing_links": [
                 "/wally"
@@ -3350,7 +3369,7 @@
         },
         "/grammerly": {
             "description": "\n\n",
-            "doc_size": 13000,
+            "doc_size": 12000,
             "file_path": "_site/grammerly.html",
             "incoming_links": [],
             "last_modified": "2025-08-24T09:03:19-07:00",
@@ -3681,20 +3700,22 @@
         },
         "/igors-claws": {
             "description": "Here’s my concrete setup. I run three claws — persistent AI entities with names, memory, and a domain each. Life, work, transportation. This post is the surfaced roster so I can link straight to it when something I made is signed by one of them, and so I can explain why I’m building my own rather than running something off the shelf. If you want the “what is a claw” background first, read /claw; this is the instance, not the theory.\n\n",
-            "doc_size": 25000,
+            "doc_size": 26000,
             "file_path": "_site/igors-claws.html",
             "incoming_links": [
                 "/claw",
+                "/gas-city",
                 "/vibing",
                 "/wally"
             ],
-            "last_modified": "2026-05-03T17:33:19+00:00",
+            "last_modified": "2026-05-03T13:16:40-07:00",
             "markdown_path": "_d/igors-claws.md",
             "outgoing_links": [
                 "/ai-cockpit",
                 "/ai-journal",
                 "/claw",
                 "/design",
+                "/gas-city-home",
                 "/larry",
                 "/mortality-software",
                 "/tesla",
@@ -5506,7 +5527,7 @@
         },
         "/sharpen-the-saw": {
             "description": "A young man saw a woodcutter cutting down a tree and asked “What are you doing?” “Are you blind?” the woodcutter replied. “I’m cutting down this tree.” The young man continued. “You look exhausted! Take a break. Sharpen your saw.” The woodcutter explained he’d been sawing for hours and did not have time to take a break. The young man pushed back… “If you sharpen the saw, you would cut down the tree much faster.” The woodcutter said “I don’t have time to sharpen the saw. Don’t you see I’m too busy. These are my insights based on the 7 habits Chapter 7.\n\n",
-            "doc_size": 15000,
+            "doc_size": 14000,
             "file_path": "_site/sharpen-the-saw.html",
             "incoming_links": [
                 "/7-habits",
@@ -6035,7 +6056,7 @@
         },
         "/td/back_ref": {
             "description": "This blog is my collection of evergreen notes, a place to have my thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here’s my strategy to create them.\n\n",
-            "doc_size": 14000,
+            "doc_size": 13000,
             "file_path": "_site/td/back_ref.html",
             "incoming_links": [],
             "last_modified": "2022-04-16T15:22:43-07:00",
@@ -6506,7 +6527,7 @@
         },
         "/timeoff-2020-03": {
             "description": "In March 2020, I took a 2 month sabbatical between leaving Amazon and joining Facebook. Given it was a substantial amount of time, I came up with some big plans, and wrote them down. It was a great plan, BUT my time off correlated perfectly to the Corona Virus and as a result I wasted lots of my mental energy thinking about the Corona Virus, and adjusting to being in pseudo-quarantine. Took me a while, but I finally realized I should ignore corona virus, or at least minimize my time thinking about it.\n\n",
-            "doc_size": 31000,
+            "doc_size": 30000,
             "file_path": "_site/timeoff-2020-03.html",
             "incoming_links": [
                 "/timeoff"
@@ -7056,6 +7077,7 @@
             "doc_size": 34000,
             "file_path": "_site/wally.html",
             "incoming_links": [
+                "/gas-city",
                 "/gas-city-home",
                 "/igors-claws",
                 "/vibing"
