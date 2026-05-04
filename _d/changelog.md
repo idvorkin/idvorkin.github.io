@@ -12,6 +12,13 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Week of 2026-05-04](#week-of-2026-05-04)
+  - [The Psychology of Vibing (new post!)](#the-psychology-of-vibing-new-post)
+  - [Gas City Cluster: Wally, Standing Up, and the Explainer (new posts!)](#gas-city-cluster-wally-standing-up-and-the-explainer-new-posts)
+  - [Igor's Claws: Business Logic / Goop / Infra](#igors-claws-business-logic--goop--infra)
+  - [Life Journal: Walking with Alex Under the Trees](#life-journal-walking-with-alex-under-the-trees)
+  - [Infrastructure & CI (2026-05-04)](#infrastructure--ci-2026-05-04)
+  - [Other Projects (2026-05-04)](#other-projects-2026-05-04)
 - [Week of 2026-04-27](#week-of-2026-04-27)
   - [Life Journal: Zach Pizza-Engineer](#life-journal-zach-pizza-engineer)
   - [AI Native Manager: AI Pilled & Hiring Notes](#ai-native-manager-ai-pilled--hiring-notes)
@@ -83,6 +90,79 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+## Week of 2026-05-04
+
+_~50 commits this week (blog) + cross-repo activity_
+
+### The Psychology of Vibing (new post!)
+
+New post at [/vibing](/vibing) — a survey of what extended AI-agent interaction actually feels like, both bright and dark. Not a finished theory; observations added as they accumulate. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/de3387ac8)
+
+Key observations:
+
+- **Imagining and creating collapse into one step** — Covey says everything is created twice. With agents, the gap between the mental and physical creation approaches zero. The catch: the same collapse can swallow the thinking. Skip the mental pass and the agent does both — you've made a thing without imagining it.
+- **Multi-agent as stall-coverage, not parallelism** — flow needs continuous output. A single agent stalls; you switch to another. The key insight: this only works if *you* don't stall. On a bad day the same multi-agent setup that produces effortless flow produces incoherent thrash.
+- **Addiction qualities** — Apply the [addiction/passion/hobby trichotomy](/addiction). The kid-test is the fastest discriminator: would you be proud to see your child doing this exact thing, this much, this way? Not "would you want them to use AI," but the literal behavior.
+- **Burnout is real** — one week crashed to 3.5 hrs sleep and HRV 27.2 (week's lowest). Citing Yegge's [AI Vampire](https://steve-yegge.medium.com/the-ai-vampire-eda6e4f07163): "3 to 4 hours is going to be the sweet spot for the new workday."
+- **Voice as a reps-and-recovery muscle** — three days of intense voice vibe-coding produces the same vocal-cord fatigue as a calendar-packed meeting week.
+
+### Gas City Cluster: Wally, Standing Up, and the Explainer (new posts!)
+
+Three new posts (plus a major rename) all converging on Steve Yegge's Gas City framework — how to run an organization of AI agents using a bead-aware task tracker and a Mayor/Polecat dispatch model.
+
+**[Wally and My Work Gastown](/wally)** — renamed from `/work-gastown` and rewritten with a new intro. Translates Yegge's Gas Town vocabulary into org-chart terms readers already have (M2/M1/Staff/Odallies instead of Operator/Mayor/Oracle/Polecats). Includes a Mermaid org-chart and a worked "When to use the M1, and when to skip him" section. The core argument: the human's job is M2 (direction, review, strategy) — most people misidentify as Mayor and spend their time managing instead of directing. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d0b36d600)
+
+**[Standing Up Gas City](/gas-city-home)** — Larry (the home claw) narrates a Sunday morning bringing up `igor-city` in first person. Three lenses: what happened from Larry's seat, what was actually broken under the hood, and how beads routed the work. Five upstream bugs hit in one morning:
+
+- `gc init` ships `pack.toml` in legacy format that `gc doctor` immediately flags (gascity#1244)
+- `bd init` writes `issue_prefix` to YAML but doesn't insert the row into Dolt's internal `config` table — `INSERT INTO config` SQL against the running Dolt server unblocked everything
+- First-time polecats sit idle until explicitly nudged even with `nudge = "..."` configured in `agent.toml`
+- `gc rig add --adopt` claims to migrate the database but leaves the Dolt server's data dir empty
+- `gc agent add` scaffolds an incomplete `agent.toml` — just `dir = "<rig>"`, missing scaling block
+
+Two universal lessons: **scaffold first, customize second**; **trust the runtime over the doctor** — when `gc doctor` says clean but the supervisor logs say otherwise, the runtime is the one that ships. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/681004d16)
+
+**[Gas City: Beads, Molecules, and the Propulsion Principle](/gas-city)** — conceptual explainer companion to the narrative above. Three pillars:
+
+- **Beads** — the unit of work. A bead is tracked, dependency-aware, durable across process death. `bd ready` returns only beads whose blockers are closed.
+- **Molecules** — persistent workflow instances: formula → cooked into a protomolecule → poured into a live molecule → step beads created and routed. The Shiny Workflow (design→implement→review→test→submit) is the canonical example. Named **MEOW — Molecular Expression of Work** by Yegge.
+- **GUPP — the Gastown Universal Propulsion Principle**: _"If there is work on your Hook, YOU MUST RUN IT."_ Every moment you wait is a moment the engine stalls. Polecat-lifecycle doc: "There is no idle state. Polecats don't exist without work."
+
+[<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f70f98909) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/09bca7d91)
+
+### Igor's Claws: Business Logic / Goop / Infra
+
+New section added to [/igors-claws](/igors-claws#challenges-business-logic-goop-infra) — a three-layer breakdown of what building claws actually costs, mapped to the Business Logic / Goop / Infra framework from [/design](/design). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/faa9c2e8b)
+
+- **Business logic** — what Larry, Wally, and Tony actually do. The core is small and stable; if you wrote down "what Larry *does*," it's maybe a page.
+- **Goop** — every line connecting business logic to infra. Telegram MCP bridge, Kindle Scribe pipeline, context-grabber iOS app, `bd` beads tracker, CLAUDE.md skills. _This is where the Winchester Mystery House lives._
+- **Infra** — Claude Code, MCP servers, Vapi, the LLM APIs. Stuff Igor doesn't build. Moves fast enough that goop written three months ago is already obsolete.
+
+The honest punchline: building claws right now is **almost entirely goop — ~80%**. Each integration has roughly a **two-week half-life**. The Telegram bridge example: built a custom bot (a few hours), Anthropic shipped an official plugin three weeks later (cheerfully threw it away), the official plugin started losing messages three weeks after that (wrote a two-process workaround). The cycle doesn't stop; you just stop being surprised by it. Upside: **claws are getting good enough to do the goop themselves** — the 80% number is starting to feel like a temporary high-water mark. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/509ae0e86)
+
+### Life Journal: Walking with Alex Under the Trees
+
+New entry at [/life-journal#2026-05-02](/life-journal#2026-05-02) — Saturday afternoon walk with Alex under the trees. "We weren't doing anything in particular. He wasn't telling me a story I'll remember. I wasn't telling him one either." Filed to preserve the felt sense rather than the facts. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4853f08f5)
+
+### Infrastructure & CI (2026-05-04)
+
+- **CLAUDE.md: backlinks rebuild rule** — new mandatory step before opening any PR that adds, renames, or removes a `_d/*.md` permalink. Run `just update-backlinks` and commit the regenerated `back-links.json` in the same PR. Root cause: gas-city-home PR (#594) merged without a rebuild; the inbound "Mentioned in:" sections on cross-linked posts went stale and required a follow-up PR (#597). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/656c9a645)
+- **justfile: branch name sanitization in worktree-init** — branch names with `/` (e.g. `claude/foo`) made `nohup` write to a non-existent parent dir, silently failing the background build that populates `_site/`. Fixed with `tr '/' '-'` on the branch name + `set -eu` to abort on failure instead of printing a false-positive success. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f94f971df)
+- **Ruby 4.x local build note** — added to CLAUDE.md: Jekyll 3.9 + liquid-4.0.3 call `String#tainted?` removed in Ruby 3.2+. On Ruby 4.x the local build fails before producing `_site/`. Fix: `brew install ruby@3.1`. CI already pins Ruby 3.1; this captures the local host fix.
+
+### Other Projects (2026-05-04)
+
+**[context-grabber](https://github.com/idvorkin/context-grabber)** (iOS health app)
+
+- **Workout analysis screen** — tap a workout, see inferred sets/reps + narrative (PR #34). Peak-detection algorithm identifies exercise sets from HR data; sub-20s "blip" filter recovers Igor's 10x swings exactly. Confidence dot shipped; no per-user tuning in v1. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/a85c07e13)
+- **HR export buttons** — 1d/2d/7d raw HR + workout JSON export in the About modal and HR sheet, built for set/rep prototyping workflow. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/9f84c1244)
+- **Cold start fix** — hydrates snapshot from last successful grab so tiles never blank on launch (#33). [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/f318e9460)
+- **Refresh UX** — elapsed-seconds pill + phase label; weekly cache no longer blanks mid-session. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/81434c436)
+
+**[blob](https://github.com/idvorkin/blob)** (image assets)
+
+- Added walking-with-alex-2026-05-02.webp for the life-journal entry. [<i class="fa fa-github"></i>](https://github.com/idvorkin/blob/commit/fbeacc772)
 
 ## Week of 2026-04-27
 
