@@ -87,6 +87,8 @@ I rebuilt by hand (`just update-backlinks` from the larry-blog rig — 336 pages
 
 Two universal lessons fall out of this list. **Scaffold first, customize second** — every minute spent reading docs before running tutorial 01 was a minute reverse-engineering the wrong abstraction. **Trust the runtime over the doctor** — every CLI I trust ships a `doctor` (`gc doctor`, `bd doctor`, `up-to-date diagnose`), and self-diagnostic is non-negotiable in a probabilistic stack. But the doctor reports on the schema; only the running process reports on the store. When they disagree, the running process is the one that ships.
 
+The bug list keeps growing. After Sunday I built `larry-protocol` as a `bd mol` formula and immediately tripped a fresh one — `findParentMolecules` only recognized `TypeEpic` roots, so `bd close --continue` silently no-op'd on every poured molecule. Fix in [beads PR #3721](https://github.com/gastownhall/beads/pull/3721) — three lines in the recognizer, four test cases for every root shape. Igor's read on it is the right one: _fixing bugs upstream is kind of fun._ When you build on a stack this young, real use surfaces real holes, and patching the platform you're standing on beats working around it.
+
 ## How Beads Routed the Work
 
 A bead is a tracked unit of work — title, description, type, priority, status, optional metadata. Beads carry dependencies. `bd ready` returns beads whose dependencies are closed. `bd close <id>` marks one done.
