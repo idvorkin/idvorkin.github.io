@@ -20,8 +20,10 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
   - [Infrastructure & CI (2026-05-04)](#infrastructure--ci-2026-05-04)
   - [Other Projects (2026-05-04)](#other-projects-2026-05-04)
 - [Week of 2026-04-27](#week-of-2026-04-27)
-  - [Life Journal: Zach Pizza-Engineer](#life-journal-zach-pizza-engineer)
-  - [AI Native Manager: AI Pilled & Hiring Notes](#ai-native-manager-ai-pilled--hiring-notes)
+  - [Wally and My Work Gastown (new post!)](#wally-and-my-work-gastown-new-post)
+  - [The Psychology of Vibing (new post!)](#the-psychology-of-vibing-new-post)
+  - [Addiction: Trichotomy Upgrade](#addiction-trichotomy-upgrade)
+  - [AI Cockpit: The Mic Matters](#ai-cockpit-the-mic-matters)
   - [Infrastructure & CI (2026-04-27)](#infrastructure--ci-2026-04-27)
   - [Other Projects (2026-04-27)](#other-projects-2026-04-27)
 - [Week of 2026-04-20](#week-of-2026-04-20)
@@ -166,49 +168,72 @@ New entry at [/life-journal#2026-05-02](/life-journal#2026-05-02) — Saturday a
 
 ## Week of 2026-04-27
 
-_15 commits this week (blog) + cross-repo activity_
+_31 commits this week_
 
-### Life Journal: Zach Pizza-Engineer
+### Wally and My Work Gastown (new post!)
 
-New entry at [/life-journal#2026-04-22](/life-journal#2026-04-22) with raccoon illustration — Zach spots "30 inches" on a pizza menu and immediately reaches for π r²:
+New post at [/work-gastown](/work-gastown) — translating Steve Yegge's Gas Town metaphors into standard FAANG org-chart vocabulary for AI orchestration. ([blog](/work-gastown)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e0b4a9fb8)
 
-- **The bug**: First pass used r=30 (diameter, not radius) → 2,827 sq in / 4 people → 700 sq in each. ChatGPT sanity check: 80–120 sq in/person. His number was 6× high.
-- **The debug**: Found it. Pizzas are quoted in diameter. Re-ran with r=15 → 707 sq in → ~175/person → ~two slices. Math plausible. Pizza reasonable.
-- **The verdict**: Bug fixed. Pride earned. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/9d55340db)
+The core argument: when you start running agents, you feel like the Mayor — but you're actually **M2**. Wally (the AI orchestrator) is M1. The table:
 
-Also: vibe-coding-handoff image converted to float-right include; Claude instructions hidden inside `{% raw %}{% comment %}{% endraw %}` block so they don't ship to the public page. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/13195afeb)
+| Yegge's Gas Town | Org-chart vocabulary | Role |
+| --- | --- | --- |
+| _(implicit operator)_ | M2 — the human | Direction, review, strategic calls |
+| Mayor | M1 — Wally | Orchestrates work, distributes tasks |
+| Oracle / Deacons | Staff — cloud teammates | Persistent context-holders near M1 |
+| Polecats | Odalis — ephemeral ICs | Ephemeral workers with build-tool access |
 
-### AI Native Manager: AI Pilled & Hiring Notes
+Three notable sections:
 
-Two additions to [/ai-native-manager](/ai-native-manager):
+- **The third tier Yegge's model misses** ([blog](/work-gastown#the-third-tier-yegges-model-misses)) — FAANG monorepos require odalis on separate infra with unreliable comms (EdenFS, Buck, Mononoke). Staff ≠ odalis; treating them the same breaks the setup. Meta's on-demand devservers are odalis-as-a-service.
+- **When to use the M1, and when to skip him** ([blog](/work-gastown#when-to-use-the-m1-and-when-to-skip-him)) — go through Wally for babysitting at scale, phone-friendly orchestration, and adversarial review convoys. Go direct for deep precision work. "Wide work goes through M1; deep work goes direct."
+- **Why the human is M2, not the Mayor** ([blog](/work-gastown#why-the-human-is-m2-not-the-mayor)) — "The trap is staying in M1 mode after you've outgrown it. Most people running agents today are doing M1's job." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4b054d7a1)
 
-- **AI Pilled** (new vocabulary entry) — Shivani Poddar (ex-Google/Deepmind/Meta, now Founder Stealth) coined the hiring frame: "you know how to exponentiate yourself, your stack, your product, and people around you with AI." Igor's gloss: AI-pilled is the _habit form_ of [Agency](/agency) — someone with both shows up to every problem already five moves in. Someone with one without the other shows up late or stuck. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/9ad6c575b)
-- **Founder-side hiring field note** — Shivani's three-criterion checklist for founding-team hires: excellence-in-something (proves the slope), founder energy (the fuel), AI-pilled (the transmission). Former Google/Deepmind/Meta colleagues resonate with these as much as the new grad crop. "The bar didn't move, the noise floor dropped." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/dc7fc65e2)
+### The Psychology of Vibing (new post!)
+
+New post at [/vibing](/vibing) — a survey of extended AI sessions: what's happening, what's working, and what's quietly dangerous. ([blog](/vibing)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/14600aa77)
+
+Key observations:
+
+- **Imagining and creating collapse into one step** ([blog](/vibing#imagining-and-creating-collapse-into-one-step)) — "At its best, the thought is in your head and a working version of it is in front of you almost simultaneously — that collapse is the magic moment." The catch: the same collapse can swallow the thinking.
+- **Why multi-agent: covering for stalls** ([blog](/vibing#why-multi-agent-covering-for-stalls)) — multi-agent isn't a parallelism-of-work win; it's stall-coverage for flow. "Multi-agent setup that produces effortless flow on a good day produces incoherent thrash on a bad one."
+- **No more gaps between contexts** ([blog](/vibing#no-more-gaps-between-contexts)) — Tesla + lapel mic erases natural breaks. "The transitions used to be where my brain rested."
+- **Burnout dark side** ([blog](/vibing#burnout)) — 3.5 hrs sleep + HRV 27.2 in one week. Cites Yegge's "The AI Vampire": "3 to 4 hours is going to be the sweet spot for the new workday… not doing this crazy vampire thing the whole time." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3b5985c30)
+
+### Addiction: Trichotomy Upgrade
+
+[/addiction](/addiction) upgraded from a two-way (addiction vs opportunity cost) to a **three-way trichotomy** ([blog](/addiction#is-doing-the-thing-you-want-to-be-doing-an-addiction)): [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e0b4a9fb8)
+
+- **Addiction** — compelled, AND negatively impacts your life
+- **Passion** — compelled, but neutral or positive
+- **Hobby** — not compelled; you do it because you choose to
+
+New examples rewritten with the trichotomy: TikTok = Addiction, Vibe Coding = Passion, Magic = Hobby. The relief-vs-loss-vs-nothing test: "if I had to stop right now — TikTok = relief, Vibe coding = loss, Magic = nothing in particular."
+
+New section: **in-the-moment 20-minute opportunity-cost check** ([blog](/addiction#in-the-moment-the-20-minute-opportunity-cost-check)) — set a 20-minute timer, then ask three questions. "Compulsion + something else would have been preferable + sad about missing it → leaning Addiction." The check works because the compulsion lies to you; the sadness doesn't.
+
+[/hobby](/hobby) also got a one-paragraph anchor: "A hobby isn't a passion and it isn't an addiction. The test is compulsion: with a passion or an addiction, you can't stand NOT doing it; with a hobby, you can put it down without feeling pulled back." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e1b5b6441)
+
+### AI Cockpit: The Mic Matters
+
+New section in [/ai-cockpit](/ai-cockpit#the-mic-matters-more-than-i-thought): voice transcription quality is gear-bottlenecked, not model-bottlenecked. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/ai-cockpit340058752)
+
+"I used to think Siri dictation was terrible, but it turned out part of the problem was my input. The right microphone totally fixes it — Siri's now almost as good as Wispr Flow."
+
+Hardware: **Hollyland Lark M2S Mini Combo** — wireless lavalier, 7g, USB-C + Camera RX, works with iPhone/Android/laptop, 300m range. The recommendation is "if you already have a good lav, point it at Wispr or Siri" rather than "go spend a few hundred bucks." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/340058752)
 
 ### Infrastructure & CI (2026-04-27)
 
-- **Algolia quota fix** — excluded `_ig66/*` (family journal: 89 files, ~6500 lines) from the search index. The collection was indexing ~1500–2000 records, blocking the index for exceeding plan limits. Personal-archive entries now stay out of public search. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/720fe7594)
-- **Content cleanup** — deleted 7 early-GPT acronym-book drafts (`class-act-4`, `good_husband-4`, `gpt-7-habits`, `gpt-dad`, `gpt-gotman`, `gpt-system-design-interview`, `rapport`): ~81KB / ~2000 lines / estimated 400–500 Algolia records removed. Also resolved a permalink collision — `gpt-gotman.md` and the hand-written `nurture.md` both claimed `/nurture`. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3cffb1557)
+- **`worktree-init` justfile target** — fire-and-forget background `jekyll build` for fresh worktrees. Run after `git worktree add`, and `_site/` is populated by first commit time so the anchor-checker pre-commit hook resolves correctly. Branch name sanitization (slashes → dashes) so nohup doesn't fail silently on `claude/foo` branch names. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f94f971df)
+- **Changelog Liquid comment fix** — orphan Liquid comment tag causing blog build failure patched. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/bf1fc20d7)
 
 ### Other Projects (2026-04-27)
 
-**[Settings](https://github.com/idvorkin/Settings)** (dotfiles & tools)
+**[context-grabber](https://github.com/idvorkin/context-grabber)** (iOS health data app)
 
-- tmux mouse mode enabled [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/68613ccea)
-- `rbv`: switched from Go (`bv`) to Rust port (`bvr`), defaulting to tree view with open-issues filter [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/8fdf4eaa5)
-- npm security audit fix (lodash, picomatch, cross-spawn, micromatch) [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/b61e9ab4a)
-
-**[blob](https://github.com/idvorkin/blob)** (image assets)
-
-- Added raccoon-pizza-engineer illustration for the life-journal entry, with transparent background (chroma-key stripped) [<i class="fa fa-github"></i>](https://github.com/idvorkin/blob/commit/6fe61b44a)
-
-**[context-grabber](https://github.com/idvorkin/context-grabber)** (iOS health app)
-
-- **Counter widget** — Phase 1: dashboard tally + SQLite persistence + widget bridge; Phase 2: iOS 17 in-widget +1 via App Intent, reconciles widget taps with SQLite on foreground (fixes desync) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/c6fc6094a)
-- **Gym timer** — Dynamic Island shows phase name + round count; 2-min preset added; deep-link routing (`grabber://timer?preset=…&autostart=…`); Live Activity keepalive when app backgrounded [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/2ef4a1702)
-- **Today home-screen widget** — App Group bridge so the widget shows live steps/sleep/exercise [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/b789147ea)
-- **Sleep view overhaul** — main-session detection, onset vs. truly-untracked gap distinction, source-aware average, warning-icon rendering fix [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/4c4ae84c9)
-- **Dashboard & location cleanup** — drop Resting HR card (folded into Heart Rate sheet), header subtitle/summary-banner removed, About folded into Settings; Location sheet gains Copy Coordinates + Copy Daily Summary buttons [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/863631b35)
+- **Foreground re-grab** — app now re-grabs on `AppState 'active'` so re-opening the app refreshes stale tiles; 30-min `setInterval` keeps long open sessions fresh too. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/ae0c1d0c4)
+- **Precise GPS** — `grabLocation` now requests `Accuracy.High` so iOS returns a fresh precise fix instead of a cached low-accuracy reading.
+- **Box plot min/max labels** — small min/max labels under each non-compact box plot for readable range endpoints; optional `formatValue` prop (1dp under 10, comma int over).
 
 ## Week of 2026-04-20
 
