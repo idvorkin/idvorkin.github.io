@@ -253,20 +253,28 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 #### Dylan Patel on the Supply and Demand of AI Tokens
 
-- **TOP Takeaway**: Token demand is essentially unbounded for the next 6-18 months. The frontier model is the **only** model anyone wants — willingness to pay is uncapped, and the bottleneck has moved from "can the AI do it" to "can the supply chain deliver enough memory, logic, and CPUs to serve the tokens." If you're building agentic workflows, your costs aren't going to fall the way they did from GPT-3 → GPT-4 mini; they're going to climb because you'll keep reaching for the best model and burning more tokens per task.
-- **The video**: [The Supply and Demand of AI Tokens | Dylan Patel Interview](https://youtu.be/LF3aUIM57uw) — Dylan Patel (founder of [SemiAnalysis](https://www.semianalysis.com/)) on Patrick O'Shaughnessy's [Invest Like the Best, ep. 468](https://open.spotify.com/episode/3Eu3mpOcpEjrg3SYtrglBk), April 23, 2026. Show notes at [colossus.com](https://colossus.com/episode/supply-demand-of-tokens/).
-- **The numbers worth remembering**:
-  - **SemiAnalysis own AI spend**: tens of thousands last year → **$7M annualized run-rate** this year. That's a ~100-1000× jump in a research firm's tooling budget in 12 months.
-  - **Anthropic ARR**: ~$9B → **$35-45B**, margins **72%+**. They can raise prices and cut rate limits and still sell every token.
-  - **AI spend at adopting orgs**: token consumption now exceeds **25% of salary budgets** for teams automating sophisticated tasks. The AI line item is on track to surpass payroll.
-  - **DRAM**: only **20-30% annual capacity growth** — the near-term crunch. Memory prices set to double or triple again.
-  - **H100 lifespans**: extended to **7-8+ years**, secondary-market prices rising — nobody's throwing old GPUs away.
-- **The argument**: this isn't a bubble in the dot-com sense — it's a **physical-supply-constrained** boom. TSMC at max capex (>$100B by 2028), DRAM fabs growing at 20-30%/yr against demand growing 5-10×/yr, and CPUs suddenly critical for RL post-training and serving infrastructure. The frontier-model-monopoly dynamic (everyone pays whatever the best model costs) means there's no commoditization race to the bottom yet.
-- **What it changes for builders**:
-  - **Stop assuming tokens get cheaper.** Per-token prices may fall, but per-task token counts are climbing faster (longer contexts, deeper reasoning, more tool calls, more retries). Net spend goes up.
-  - **Frontier-or-bust.** Cheaper models look great on benchmarks but lose on real agentic work. Patel's framing: only truly great ideas justify the still-expensive token spend — but if you have a great idea, pay up.
-  - **Get the enterprise contract.** Pay-per-token enterprise Anthropic contracts dodge consumer rate limits — this matters if you're running heavy parallel agent workloads.
-- **The Igor angle**: this maps directly onto the [$230 Week](#the-230-week-when-cheap-coding-isnt) entry from April. My subscription burn that week wasn't user error — it was the leading edge of the dynamic Patel describes. Heavy agentic workloads on the frontier model will keep eating budget faster than the per-token price drops can offset. The mitigation isn't "wait for prices to fall," it's **explicit token discipline** (Sonnet by default, Opus reserved for hard reasoning, kill background dispatches that aren't earning their keep). The token sabbatical (Hood Canal week, Kindle Scribe instead of Claude) is starting to look like infrastructure, not vacation.
+- **TOP Takeaway**: Patel's thesis collapses to a line he keeps returning to:
+
+  > If you don't use more tokens, you'll never escape the permanent underclass.
+
+  The frontier model is the only model that matters, demand for it is structurally uncapped, and the bottleneck has moved from "can the AI do it" to **whether you can get the tokens at all**. The race is no longer about model capability — it's about who has the enterprise contract, the rate-limit allowance, and the skill to point scarce tokens at the right problem.
+
+- **The video**: [The Supply and Demand of AI Tokens | Dylan Patel Interview](https://youtu.be/LF3aUIM57uw) — Dylan Patel (founder of [SemiAnalysis](https://www.semianalysis.com/)) on Patrick O'Shaughnessy's [Invest Like the Best, ep. 468](https://open.spotify.com/episode/3Eu3mpOcpEjrg3SYtrglBk), April 23, 2026. Show notes at [colossus.com](https://colossus.com/episode/supply-demand-of-tokens/). Full transcript: [gist](https://gist.github.com/idvorkin-ai-tools/15e47ffab0f6684f474bf29fb6aef5fe).
+- **The numbers Patel actually cites**:
+  - **SemiAnalysis Claude Code spend**: tens of thousands last year → **$5M last week → $7M annualized this week** vs a **$25M salary line** (>25% of payroll, on pace for 100%+ by year-end).
+  - **Anthropic ARR**: $9B → **$35-40B**, adding **~$10B/month**, gross margins at a **72% floor** — vs leaked funding-round docs showing "30-something percent" at start of year.
+  - **End-of-year linear extrapolation**: ~**$400B** on Opus-4.6-tier models alone — and Patel calls that the _linear_ case.
+  - **DRAM**: capped at **20-30%/yr** capacity growth; true incremental supply doesn't land until **late 2027 / early 2028**. Prices "will double or triple from here."
+  - **GPU useful life**: not 5 years — **7-8+ years**. Hopper clusters resigning at higher prices.
+  - **TSMC capex**: $56B this year, plausibly **$100B by 2028**.
+  - **Anthropic Mythos**: L4 engineer (Opus 4.6) → **L6 in two months** internally. Anthropic is throttling release — "potentially the biggest step up in model capabilities in two years."
+- **"Cloud code psychosis"** (Patel's term): an ex-Intel engineer with a couple thousand dollars of tokens replaced an entire Intel team's chip reverse-engineering pipeline. A solo ex-bank economist built a deflation/inflation model + a 2,000-task BLS eval benchmark in weeks ("would have taken 200 economists a year"). The energy lead, $6k/day for three weeks, scraped every U.S. power plant and transmission line into a live grid map customers prefer over a 100-person, decade-old incumbent.
+- **Why tokens get scarcer, not cheaper**:
+
+  > As we get more and more intelligent, what really matters is access to these most intelligent tokens... the shitty SaaS startup in SF using Claude to generate their software product is not creating a ton of value and therefore they're going to get priced out of tokens soon enough.
+
+  Every lab is supply-constrained; even tier-2 and tier-3 labs sell out. Anthropic could double Opus pricing and Patel says he'd keep paying. Patel's playbook: get the enterprise pay-per-token contract (not the consumer subscription), then figure out how to leverage those tokens at the highest-value task. The skill that matters is no longer implementation — it's picking which idea is worth pointing tokens at.
+- **The Igor angle**: this is the [$230 Week](#the-230-week-when-cheap-coding-isnt) dynamic seen from the supply side. My burn wasn't user error — I was riding the front of Patel's curve. The shift: **the answer is not to throttle, it's to point the tokens at the highest-leverage thing I can think of**. For Larry specifically — the subagent-extraction stack on the Claude Code subscription pool (~$0.12/entry equivalent) is the right shape; the open question is whether the journal cross-index is actually _the_ highest-value place to point those tokens, or just the most-fun one. Worth re-asking before the next big run.
 
 ### 2026-04-17
 
