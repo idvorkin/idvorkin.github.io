@@ -18,12 +18,14 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-05-09](#2026-05-09)
+    - [Dylan Patel on the Supply and Demand of AI Tokens](#dylan-patel-on-the-supply-and-demand-of-ai-tokens)
   - [2026-04-17](#2026-04-17)
     - [One Repo, One Token: The Closest You Can Get to Write-Only on GitHub](#one-repo-one-token-the-closest-you-can-get-to-write-only-on-github)
   - [2026-04-13](#2026-04-13)
     - [My Bot Wrote, Their Bot Reviewed, My Bot Pushed Back, Their Bot Said "Oops"](#my-bot-wrote-their-bot-reviewed-my-bot-pushed-back-their-bot-said-oops)
   - [2026-04-12](#2026-04-12)
-    - [The $230 Week: When Cheap Coding Isn't](#the-230-week-when-cheap-coding-isn-t)
+    - [The $230 Week: When Cheap Coding Isn't](#the-230-week-when-cheap-coding-isnt)
     - [Two-Process Telegram: When the Platform Is the Bug](#two-process-telegram-when-the-platform-is-the-bug)
   - [2026-04-01](#2026-04-01)
     - [The Winchester Mystery House of Software: When Code Gets Too Cheap to Care About](#the-winchester-mystery-house-of-software-when-code-gets-too-cheap-to-care-about)
@@ -246,6 +248,25 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2026-05-09
+
+#### Dylan Patel on the Supply and Demand of AI Tokens
+
+- **TOP Takeaway**: Token demand is essentially unbounded for the next 6-18 months. The frontier model is the **only** model anyone wants — willingness to pay is uncapped, and the bottleneck has moved from "can the AI do it" to "can the supply chain deliver enough memory, logic, and CPUs to serve the tokens." If you're building agentic workflows, your costs aren't going to fall the way they did from GPT-3 → GPT-4 mini; they're going to climb because you'll keep reaching for the best model and burning more tokens per task.
+- **The video**: [The Supply and Demand of AI Tokens | Dylan Patel Interview](https://youtu.be/LF3aUIM57uw) — Dylan Patel (founder of [SemiAnalysis](https://www.semianalysis.com/)) on Patrick O'Shaughnessy's [Invest Like the Best, ep. 468](https://open.spotify.com/episode/3Eu3mpOcpEjrg3SYtrglBk), April 23, 2026. Show notes at [colossus.com](https://colossus.com/episode/supply-demand-of-tokens/).
+- **The numbers worth remembering**:
+  - **SemiAnalysis own AI spend**: tens of thousands last year → **$7M annualized run-rate** this year. That's a ~100-1000× jump in a research firm's tooling budget in 12 months.
+  - **Anthropic ARR**: ~$9B → **$35-45B**, margins **72%+**. They can raise prices and cut rate limits and still sell every token.
+  - **AI spend at adopting orgs**: token consumption now exceeds **25% of salary budgets** for teams automating sophisticated tasks. The AI line item is on track to surpass payroll.
+  - **DRAM**: only **20-30% annual capacity growth** — the near-term crunch. Memory prices set to double or triple again.
+  - **H100 lifespans**: extended to **7-8+ years**, secondary-market prices rising — nobody's throwing old GPUs away.
+- **The argument**: this isn't a bubble in the dot-com sense — it's a **physical-supply-constrained** boom. TSMC at max capex (>$100B by 2028), DRAM fabs growing at 20-30%/yr against demand growing 5-10×/yr, and CPUs suddenly critical for RL post-training and serving infrastructure. The frontier-model-monopoly dynamic (everyone pays whatever the best model costs) means there's no commoditization race to the bottom yet.
+- **What it changes for builders**:
+  - **Stop assuming tokens get cheaper.** Per-token prices may fall, but per-task token counts are climbing faster (longer contexts, deeper reasoning, more tool calls, more retries). Net spend goes up.
+  - **Frontier-or-bust.** Cheaper models look great on benchmarks but lose on real agentic work. Patel's framing: only truly great ideas justify the still-expensive token spend — but if you have a great idea, pay up.
+  - **Get the enterprise contract.** Pay-per-token enterprise Anthropic contracts dodge consumer rate limits — this matters if you're running heavy parallel agent workloads.
+- **The Igor angle**: this maps directly onto the [$230 Week](#the-230-week-when-cheap-coding-isnt) entry from April. My subscription burn that week wasn't user error — it was the leading edge of the dynamic Patel describes. Heavy agentic workloads on the frontier model will keep eating budget faster than the per-token price drops can offset. The mitigation isn't "wait for prices to fall," it's **explicit token discipline** (Sonnet by default, Opus reserved for hard reasoning, kill background dispatches that aren't earning their keep). The token sabbatical (Hood Canal week, Kindle Scribe instead of Claude) is starting to look like infrastructure, not vacation.
 
 ### 2026-04-17
 
