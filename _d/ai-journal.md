@@ -255,6 +255,8 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 #### Free Doesn't Save You from the Wrong Problem
 
+{% include local_image_float_right.html src="raccoon-wrong-jungle.webp" %}
+
 - **TOP Takeaway**: Even when something is free, if you're climbing the wrong mountain, you'll never get there. Pick the right problem first; cost is the second-order question. Hill climbing improves your position on a mountain; it doesn't tell you you're on the wrong one.
 - **The case**: I'm obsessed with transparent backgrounds for the [raccoons](#racoon-illustrations) on my blog. The AI image generator I use can't emit alpha, so I'd been [hill-climbing a local chroma-key pipeline](/hill-climbing#chroma-key-clean-transparent-backgrounds) — six attempts, 17,385 → 269 on the residual-magenta-plus-interior-holes eval, 65× improvement, a clever `flood4 → tight-fuzz 3%` two-stage winner. Real hill climbing, real eval, real progress. Still the wrong mountain. The output looked clean on a white page and fell apart against any other background.
 - **What actually worked**: switched to **Recraft** as a paid bg-remover — the [`remove_background_recraft` drop-in](https://github.com/idvorkin/chop-conventions/blob/508ee894a32201ff12ebdb3d77c6386d3e33e9f0/skills/image-explore/generate.py#L265-L306) on the magenta path, then [a Typer + WebP-aware rewrite](https://github.com/idvorkin/chop-conventions/blob/7befb9f1d713573aaaeff3e97bc86b7af2c3327d/skills/gen-image/recraft_bg_remove.py#L1-L365) of the bash bg-remover. Roughly a penny per image. Solved.
