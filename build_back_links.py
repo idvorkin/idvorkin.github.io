@@ -306,6 +306,19 @@ class idvorkin_github_io_config:
 jekyll_config = idvorkin_github_io_config()
 
 
+# Pages whose outgoing links must NOT become other pages' incoming_links.
+# These are aggregator/index pages that link to nearly everything, so treating
+# them as a backlink source pollutes every post's "Mentioned in:" section with
+# noise. The pages themselves still appear in self.pages (searchable, reachable),
+# they just don't contribute incoming_links. Used by both LinkBuilder.update
+# (full-build path) and rebuild_incoming_links (delta path).
+EXCLUDED_BACKLINK_SOURCES = frozenset(
+    {
+        "/changelog",
+    }
+)
+
+
 class LinkBuilder:
     def parse_page(self, file_path: FileType):
         if not jekyll_config.is_allow_incoming(file_path):
@@ -382,17 +395,6 @@ class LinkBuilder:
 
         assert "should never get here"
 
-    # Pages whose outgoing links should NOT populate other pages' backlinks.
-    # These are aggregator/index pages that link to nearly everything, so
-    # treating them as a backlink source pollutes every post's "Referenced by"
-    # section with noise. The pages themselves still appear in self.pages
-    # (searchable, reachable), they just don't contribute incoming_links.
-    EXCLUDED_BACKLINK_SOURCES = frozenset(
-        {
-            "changelog.html",
-        }
-    )
-
     def update(self, path_back: FileType):
         if "debug-something-wonky" in path_back:
             pudb.set_trace()
@@ -405,7 +407,7 @@ class LinkBuilder:
             self.redirects[page.url] = page.redirect_url
             return
 
-        if os.path.basename(path_back) not in self.EXCLUDED_BACKLINK_SOURCES:
+        if page.url not in EXCLUDED_BACKLINK_SOURCES:
             for link in page.outgoing_links:
                 # when a link has an anchor eg foo.html#bar
                 # the incoming_link is foo.html, so strip the anchor
@@ -1383,17 +1385,6 @@ def update_backlinks_data(existing_data, lb, threshold_minutes, current_time, dr
     return updated_data, stats
 
 
-# URLs whose outgoing links must not become other pages' incoming_links.
-# Mirror of LinkBuilder.EXCLUDED_BACKLINK_SOURCES at the URL level — the
-# delta path (rebuild_incoming_links) works on URLs while the full-build
-# path (LinkBuilder.update) works on file basenames.
-EXCLUDED_BACKLINK_SOURCE_URLS = frozenset(
-    {
-        "/changelog",
-    }
-)
-
-
 def rebuild_incoming_links(data):
     """Rebuild incoming links based on outgoing links."""
     incoming_links = defaultdict(list)
@@ -1401,7 +1392,7 @@ def rebuild_incoming_links(data):
 
     # Collect all outgoing links
     for url, page_data in data["url_info"].items():
-        if url in EXCLUDED_BACKLINK_SOURCE_URLS:
+        if url in EXCLUDED_BACKLINK_SOURCES:
             continue
         outgoing = page_data.get("outgoing_links", [])
         for link in outgoing:
