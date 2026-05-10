@@ -387,9 +387,11 @@ class LinkBuilder:
     # treating them as a backlink source pollutes every post's "Referenced by"
     # section with noise. The pages themselves still appear in self.pages
     # (searchable, reachable), they just don't contribute incoming_links.
-    EXCLUDED_BACKLINK_SOURCES = frozenset({
-        "changelog.html",
-    })
+    EXCLUDED_BACKLINK_SOURCES = frozenset(
+        {
+            "changelog.html",
+        }
+    )
 
     def update(self, path_back: FileType):
         if "debug-something-wonky" in path_back:
@@ -1381,6 +1383,17 @@ def update_backlinks_data(existing_data, lb, threshold_minutes, current_time, dr
     return updated_data, stats
 
 
+# URLs whose outgoing links must not become other pages' incoming_links.
+# Mirror of LinkBuilder.EXCLUDED_BACKLINK_SOURCES at the URL level — the
+# delta path (rebuild_incoming_links) works on URLs while the full-build
+# path (LinkBuilder.update) works on file basenames.
+EXCLUDED_BACKLINK_SOURCE_URLS = frozenset(
+    {
+        "/changelog",
+    }
+)
+
+
 def rebuild_incoming_links(data):
     """Rebuild incoming links based on outgoing links."""
     incoming_links = defaultdict(list)
@@ -1388,6 +1401,8 @@ def rebuild_incoming_links(data):
 
     # Collect all outgoing links
     for url, page_data in data["url_info"].items():
+        if url in EXCLUDED_BACKLINK_SOURCE_URLS:
+            continue
         outgoing = page_data.get("outgoing_links", [])
         for link in outgoing:
             incoming_links[link].append(url)
