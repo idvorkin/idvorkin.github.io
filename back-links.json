@@ -353,7 +353,7 @@
     "url_info": {
         "/22": {
             "description": "In 2019 I created a program for 15 fantastic interns! A program highlight was my talk titled “What I wish I knew at 22, and so might you”. The talk received a 94% overall rating from over 15 interns, 10 SDE-IIs, and 1 senior developer. Even though the talk focuses on how to live the good life, a big chunk of life is work, so there’s good coverage on how to optimize your career.\n\n",
-            "doc_size": 17000,
+            "doc_size": 16000,
             "file_path": "_site/22.html",
             "incoming_links": [
                 "/chapters",
@@ -452,8 +452,7 @@
                 "/psychic-weight",
                 "/sharpen-the-saw",
                 "/synergize",
-                "/timeoff-2020-12",
-                "/win-win"
+                "/timeoff-2020-12"
             ],
             "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_posts/2018-01-04-7-habits.md",
@@ -1512,7 +1511,7 @@
         },
         "/be-proactive": {
             "description": "I choose ‘.’ I am responsible for my own life ‘.’ My behavior is a function of my decisions, not my conditions ‘.’ I can subordinate feelings to values ‘.’ I have the initiative and the responsibility to make things happen. These are my insights from 7 habits Chapter 1.\n\n",
-            "doc_size": 23000,
+            "doc_size": 22000,
             "file_path": "_site/be-proactive.html",
             "incoming_links": [
                 "/7-habits",
@@ -1651,7 +1650,7 @@
         },
         "/books-that-defined-me": {
             "description": "Books allow great thoughts to enter our mind and mold us into who we want to become. These are the books that are molding me.\n\n",
-            "doc_size": 17000,
+            "doc_size": 16000,
             "file_path": "_site/books-that-defined-me.html",
             "incoming_links": [
                 "/being-a-great-manager",
@@ -2053,6 +2052,7 @@
                 "/planning",
                 "/prompts",
                 "/self-ego",
+                "/win-win",
                 "/writing"
             ],
             "last_modified": "2025-12-07T02:39:31+00:00",
@@ -2193,7 +2193,8 @@
                 "/regrets",
                 "/shame",
                 "/voices",
-                "/walking-with-god"
+                "/walking-with-god",
+                "/win-win"
             ],
             "last_modified": "2025-11-27T17:05:40+00:00",
             "markdown_path": "_d/grandmother.md",
@@ -2495,7 +2496,7 @@
         },
         "/debug": {
             "description": "Igor's Blog",
-            "doc_size": 24000,
+            "doc_size": 23000,
             "file_path": "_site/debug.html",
             "incoming_links": [],
             "last_modified": "2025-03-16T16:15:36+00:00",
@@ -2764,6 +2765,7 @@
             "file_path": "_site/enable.html",
             "incoming_links": [
                 "/how-igor-chops",
+                "/win-win",
                 "/writing"
             ],
             "last_modified": "2025-12-07T02:46:00+00:00",
@@ -3038,7 +3040,7 @@
         },
         "/first-things-first": {
             "description": "The key to effective management, is allocating energy through the lens of importance rather than urgency. E.g, ask yourself what one thing could you do that if you did on a regular basis, would make a tremendous positive difference in your life? Lemme guess, it’s important, but not urgent so you’re not doing it. These are my insights based on the 7 habits Chapter 3.\n\n",
-            "doc_size": 26000,
+            "doc_size": 25000,
             "file_path": "_site/first-things-first.html",
             "incoming_links": [
                 "/4dx",
@@ -3076,6 +3078,7 @@
                 "/negotiate",
                 "/sell",
                 "/walking-with-god",
+                "/win-win",
                 "/work-satisfaction"
             ],
             "last_modified": "2025-12-06T18:12:26-08:00",
@@ -3331,7 +3334,7 @@
         },
         "/goals": {
             "description": "Goals are critical, there are multiple goal systems and they have consequences. They are mechanisms to deliver without micro management.\n\n",
-            "doc_size": 21000,
+            "doc_size": 20000,
             "file_path": "_site/goals.html",
             "incoming_links": [
                 "/4dx",
@@ -3411,7 +3414,8 @@
             "file_path": "_site/grateful.html",
             "incoming_links": [
                 "/appreciate",
-                "/process-journal"
+                "/process-journal",
+                "/win-win"
             ],
             "last_modified": "2025-12-06T18:03:28-08:00",
             "markdown_path": "_d/grateful2.md",
@@ -3492,7 +3496,7 @@
         },
         "/happy": {
             "description": "Happy is a 5 letter word that many use as the answer to what is the point of life. The follow up question of “How can you be happy” is usually followed by a blank stare, so here’s my study of the subject. Probably the most important thing is happiness is not a mood, it’s journey - Like the weather vs the climate.\n\n",
-            "doc_size": 33000,
+            "doc_size": 32000,
             "file_path": "_site/happy.html",
             "incoming_links": [
                 "/addiction",
@@ -4059,7 +4063,7 @@
         },
         "/learn-code": {
             "description": "Coding is way easier than people think. Here’s some pointers.\n\n",
-            "doc_size": 14000,
+            "doc_size": 13000,
             "file_path": "_site/learn-code.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T02:47:07+00:00",
@@ -4338,7 +4342,7 @@
         },
         "/mind-at-work": {
             "description": "I have a problem, an addiction, an addiction so detrimental to quality of life, it should be described as a disease. This disease is not being present. There are many symptoms of the disease, but today I’m going to talk about my most frequent symptoms, my body at home, but my mind at work.\n\n",
-            "doc_size": 20000,
+            "doc_size": 19000,
             "file_path": "_site/mind-at-work.html",
             "incoming_links": [
                 "/act",
@@ -4627,6 +4631,7 @@
                 "/productive",
                 "/sell",
                 "/synergize",
+                "/win-win",
                 "/work-satisfaction"
             ],
             "last_modified": "2025-12-07T02:46:00+00:00",
@@ -7051,7 +7056,7 @@
         },
         "/walking-with-god": {
             "description": "Someone important to me has been reading a daily devotional. Even though I’m not religious, I’m studying with them to be able to have conversations about the insights - whether in a secular or religious context. This is my attempt to bridge two worlds: honoring the spiritual wisdom they’re finding while translating it into language that works for my engineer brain.\n\n",
-            "doc_size": 82000,
+            "doc_size": 81000,
             "file_path": "_site/walking-with-god.html",
             "incoming_links": [
                 "/greek-orthodox",
@@ -7181,7 +7186,7 @@
         },
         "/win-win": {
             "description": "Win/Win is a constantly seeking mutual benefit in all interactions. Win/Win means that agreements or solutions are mutually beneficial, mutually satisfying. With a Win/Win solution, all parties feel good about the decision and feel committed to the action plan. Win/Win sees life as a cooperative, not a competitive arena. Most people tend to think in terms of dichotomies: strong or weak, hardball or softball, win or lose. But that kind of thinking is fundamentally flawed. It’s based on power and position rather than on principle. Win/Win is based on the paradigm that there is plenty for everybody, that one person’s success is not achieved at the expense or exclusion of the success of others.\n\n",
-            "doc_size": 21000,
+            "doc_size": 47000,
             "file_path": "_site/win-win.html",
             "incoming_links": [
                 "/7-habits",
@@ -7192,10 +7197,16 @@
                 "/voices",
                 "/work-satisfaction"
             ],
-            "last_modified": "2024-10-05T21:24:07-07:00",
+            "last_modified": "2026-05-10T17:17:11.903504+00:00",
             "markdown_path": "_d/7h-c4.md",
             "outgoing_links": [
-                "/7-habits"
+                "/7h",
+                "/coaching",
+                "/curious",
+                "/enable",
+                "/first-understand",
+                "/grateful",
+                "/negotiate"
             ],
             "redirect_url": "",
             "title": "Win/win or no deal",
