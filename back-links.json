@@ -418,6 +418,7 @@
             "doc_size": 21000,
             "file_path": "_site/4dx.html",
             "incoming_links": [
+                "/first-things-first",
                 "/goals"
             ],
             "last_modified": "2025-02-17T10:16:11-08:00",
@@ -452,7 +453,8 @@
                 "/psychic-weight",
                 "/sharpen-the-saw",
                 "/synergize",
-                "/timeoff-2020-12"
+                "/timeoff-2020-12",
+                "/win-win"
             ],
             "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_posts/2018-01-04-7-habits.md",
@@ -726,6 +728,7 @@
             "file_path": "_site/affirmations.html",
             "incoming_links": [
                 "/act",
+                "/be-proactive",
                 "/four-healths",
                 "/gap-year-igor",
                 "/greek-orthodox",
@@ -1271,6 +1274,7 @@
             "file_path": "_site/anger.html",
             "incoming_links": [
                 "/emotions",
+                "/first-understand",
                 "/mood",
                 "/walking-with-god"
             ],
@@ -1294,6 +1298,7 @@
                 "/agency",
                 "/anxiety-management",
                 "/awareness",
+                "/be-proactive",
                 "/depression",
                 "/fail",
                 "/gtd",
@@ -1446,9 +1451,12 @@
             "incoming_links": [
                 "/7-habits",
                 "/7h-concepts",
+                "/end-in-mind",
                 "/energy-abundance",
+                "/first-things-first",
                 "/life-as-business",
                 "/productive",
+                "/sharpen-the-saw",
                 "/slow",
                 "/timeoff-2021-12"
             ],
@@ -1511,7 +1519,7 @@
         },
         "/be-proactive": {
             "description": "I choose ‘.’ I am responsible for my own life ‘.’ My behavior is a function of my decisions, not my conditions ‘.’ I can subordinate feelings to values ‘.’ I have the initiative and the responsibility to make things happen. These are my insights from 7 habits Chapter 1.\n\n",
-            "doc_size": 22000,
+            "doc_size": 39000,
             "file_path": "_site/be-proactive.html",
             "incoming_links": [
                 "/7-habits",
@@ -1521,6 +1529,7 @@
                 "/anxiety",
                 "/d/habits",
                 "/emotions",
+                "/end-in-mind",
                 "/frog",
                 "/idle",
                 "/process-journal",
@@ -1528,11 +1537,17 @@
                 "/siy",
                 "/words-we-dont-have"
             ],
-            "last_modified": "2025-04-02T22:07:54-07:00",
+            "last_modified": "2026-05-10T10:36:46-07:00",
             "markdown_path": "_d/7h-c1.md",
             "outgoing_links": [
                 "/7-habits",
+                "/affirmations",
+                "/anxiety",
+                "/breath",
+                "/curious",
                 "/essentialism",
+                "/first-understand",
+                "/four-healths",
                 "/frog",
                 "/siy"
             ],
@@ -1676,7 +1691,9 @@
             "description": "Breathing, an act so simple yet so crucial, harbors the potential to transform our health, mind, and life. This blog post is a deep dive into the world of breathing techniques, exploring a range of practices from Box Breathing and Victory Breath to Sitali Breath and the Breath Focus Technique. Each technique is detailed with its benefits and step-by-step instructions. In addition, the scientific perspective on breathing is explored. Whether you’re seeking to reduce stress, improve focus, or simply understand the science of breathing, this post is your comprehensive guide. Join us as we explore the art of breathing, its techniques, and the science behind it.\n\n",
             "doc_size": 27000,
             "file_path": "_site/breath.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/be-proactive"
+            ],
             "last_modified": "2026-03-21T12:32:21-07:00",
             "markdown_path": "_d/breath.md",
             "outgoing_links": [],
@@ -1884,6 +1901,7 @@
             "file_path": "_site/chapters.html",
             "incoming_links": [
                 "/42",
+                "/end-in-mind",
                 "/gap-year",
                 "/gap-year-igor",
                 "/lonely",
@@ -2052,6 +2070,7 @@
                 "/planning",
                 "/prompts",
                 "/self-ego",
+                "/synergize",
                 "/win-win",
                 "/writing"
             ],
@@ -2177,6 +2196,7 @@
                 "/90days",
                 "/act",
                 "/affirmations",
+                "/be-proactive",
                 "/being-a-great-manager",
                 "/class-act",
                 "/coaching",
@@ -2783,7 +2803,7 @@
         },
         "/end-in-mind": {
             "description": "All things are created twice, once in the design phase, and then again in the implementation phase. If you don’t perform the first creation, someone else will. At the extreme, imagine your eulogy, that’s the end too.\n\n",
-            "doc_size": 16000,
+            "doc_size": 31000,
             "file_path": "_site/end-in-mind.html",
             "incoming_links": [
                 "/4dx",
@@ -2799,13 +2819,17 @@
                 "/siy",
                 "/walking-with-god"
             ],
-            "last_modified": "2025-12-27T18:06:18+00:00",
+            "last_modified": "2026-05-10T10:36:10-07:00",
             "markdown_path": "_d/7h-c2.md",
             "outgoing_links": [
                 "/7-habits",
+                "/balance",
+                "/be-proactive",
+                "/chapters",
                 "/dip",
                 "/essentialism",
                 "/eulogy",
+                "/four-healths",
                 "/planning"
             ],
             "redirect_url": "",
@@ -2935,6 +2959,7 @@
                 "/bucket-list",
                 "/depression",
                 "/end-in-mind",
+                "/first-things-first",
                 "/four-healths",
                 "/frog",
                 "/greek-orthodox",
@@ -2945,6 +2970,7 @@
                 "/operating-manual",
                 "/raccoon-history",
                 "/retire",
+                "/sharpen-the-saw",
                 "/spiritual-health",
                 "/timeoff",
                 "/todo_enjoy",
@@ -3040,7 +3066,7 @@
         },
         "/first-things-first": {
             "description": "The key to effective management, is allocating energy through the lens of importance rather than urgency. E.g, ask yourself what one thing could you do that if you did on a regular basis, would make a tremendous positive difference in your life? Lemme guess, it’s important, but not urgent so you’re not doing it. These are my insights based on the 7 habits Chapter 3.\n\n",
-            "doc_size": 25000,
+            "doc_size": 41000,
             "file_path": "_site/first-things-first.html",
             "incoming_links": [
                 "/4dx",
@@ -3050,12 +3076,16 @@
                 "/delegate",
                 "/frog"
             ],
-            "last_modified": "2025-12-07T03:00:13+00:00",
+            "last_modified": "2026-05-10T10:23:57-07:00",
             "markdown_path": "_d/7h-c3.md",
             "outgoing_links": [
+                "/4dx",
                 "/7-habits",
+                "/balance",
                 "/delegate",
                 "/essentialism",
+                "/eulogy",
+                "/four-healths",
                 "/frog",
                 "/gtd",
                 "/switch",
@@ -3067,29 +3097,33 @@
         },
         "/first-understand": {
             "description": "Imagine going to the eye doctor. After hearing your complaint he takes off his glasses and hands them to you.\n“Put these on,” he says. “I’ve worn this pair of glasses for ten years now and they’ve really helped me. I have an extra pair at home; you can wear these.” So you put them on, but it only makes the problem worse. “This is terrible!” you exclaim. “I can’t see a thing!” “Well, what’s wrong?” he asks. “They work great for me. Try harder.” “I am trying,” you insist. “Everything is a blur.” “Well, what’s the matter with you? Think positively.” “Okay. I positively can’t see a thing.” “Boy, are you ungrateful!” he chides. “And after all I’ve done to help you!”\n\n",
-            "doc_size": 18000,
+            "doc_size": 30000,
             "file_path": "_site/first-understand.html",
             "incoming_links": [
                 "/7-habits",
                 "/advice",
                 "/affirmations",
+                "/be-proactive",
                 "/class-act",
                 "/curious",
                 "/negotiate",
                 "/sell",
+                "/synergize",
                 "/walking-with-god",
                 "/win-win",
                 "/work-satisfaction"
             ],
-            "last_modified": "2025-12-06T18:12:26-08:00",
+            "last_modified": "2026-05-10T10:35:50-07:00",
             "markdown_path": "_d/7h-c5.md",
             "outgoing_links": [
                 "/7-habits",
+                "/anger",
                 "/coaching",
                 "/curious",
                 "/ig66/587",
                 "/prompts",
-                "/siy"
+                "/siy",
+                "/sleight-of-mouth"
             ],
             "redirect_url": "",
             "title": "Seek first to understand, then to be understood",
@@ -3119,9 +3153,13 @@
             "incoming_links": [
                 "/7h-concepts",
                 "/ai-operator",
+                "/be-proactive",
+                "/end-in-mind",
+                "/first-things-first",
                 "/greek-orthodox",
                 "/mortality-software",
                 "/operating-manual",
+                "/sharpen-the-saw",
                 "/spiritual-health"
             ],
             "last_modified": "2026-02-01T10:48:25-08:00",
@@ -3415,6 +3453,7 @@
             "incoming_links": [
                 "/appreciate",
                 "/process-journal",
+                "/sharpen-the-saw",
                 "/win-win"
             ],
             "last_modified": "2025-12-06T18:03:28-08:00",
@@ -5547,22 +5586,28 @@
         },
         "/sharpen-the-saw": {
             "description": "A young man saw a woodcutter cutting down a tree and asked “What are you doing?” “Are you blind?” the woodcutter replied. “I’m cutting down this tree.” The young man continued. “You look exhausted! Take a break. Sharpen your saw.” The woodcutter explained he’d been sawing for hours and did not have time to take a break. The young man pushed back… “If you sharpen the saw, you would cut down the tree much faster.” The woodcutter said “I don’t have time to sharpen the saw. Don’t you see I’m too busy. These are my insights based on the 7 habits Chapter 7.\n\n",
-            "doc_size": 15000,
+            "doc_size": 26000,
             "file_path": "_site/sharpen-the-saw.html",
             "incoming_links": [
                 "/7-habits",
                 "/emotional-health",
                 "/physical-health"
             ],
-            "last_modified": "2025-12-06T18:12:26-08:00",
+            "last_modified": "2026-05-10T10:35:27-07:00",
             "markdown_path": "_d/7h-c7.md",
             "outgoing_links": [
                 "/7-habits",
+                "/balance",
                 "/d/habits",
                 "/diet",
                 "/emotional-health",
+                "/eulogy",
+                "/four-healths",
+                "/grateful",
                 "/physical-health",
-                "/siy"
+                "/siy",
+                "/sleep",
+                "/spiritual-health"
             ],
             "redirect_url": "",
             "title": "Sharpen the saw",
@@ -5683,7 +5728,8 @@
                 "/energy",
                 "/gap-year-igor",
                 "/insomnia",
-                "/physical-health"
+                "/physical-health",
+                "/sharpen-the-saw"
             ],
             "last_modified": "2025-02-01T14:00:48-08:00",
             "markdown_path": "_d/sleep.md",
@@ -5713,6 +5759,7 @@
             "file_path": "_site/sleight-of-mouth.html",
             "incoming_links": [
                 "/7h-concepts",
+                "/first-understand",
                 "/operating-manual",
                 "/timeoff-2022-02",
                 "/words-we-dont-have"
@@ -5808,6 +5855,7 @@
                 "/four-healths",
                 "/greek-orthodox",
                 "/happy",
+                "/sharpen-the-saw",
                 "/vibing",
                 "/walking-with-god",
                 "/y26"
@@ -5995,16 +6043,18 @@
             "url": "/switch"
         },
         "/synergize": {
-            "description": "We’ve all got stuff we’re good at, and stuff we’re bad at. We can combine these in ways that make the system greater than the sum of its parts.\n\n",
-            "doc_size": 27000,
+            "description": "We’ve all got stuff we’re good at and stuff we’re bad at. Combine them right and the system is greater than the sum of the parts — sometimes a lot greater. Synergy is the payoff for everything that came before: independence, Win/Win, and seeking first to understand all converge here. These are my insights from 7 habits Chapter 6.\n\n",
+            "doc_size": 28000,
             "file_path": "_site/synergize.html",
             "incoming_links": [
                 "/7-habits"
             ],
-            "last_modified": "2025-12-06T18:12:26-08:00",
+            "last_modified": "2026-05-10T10:34:18-07:00",
             "markdown_path": "_d/7h-c6.md",
             "outgoing_links": [
                 "/7-habits",
+                "/coaching",
+                "/first-understand",
                 "/negotiate",
                 "/win-win"
             ],
@@ -7200,7 +7250,7 @@
             "last_modified": "2026-05-10T17:17:11.903504+00:00",
             "markdown_path": "_d/7h-c4.md",
             "outgoing_links": [
-                "/7h",
+                "/7-habits",
                 "/coaching",
                 "/curious",
                 "/enable",
