@@ -18,6 +18,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-05-10](#2026-05-10)
+    - [Free Doesn't Save You from the Wrong Problem](#free-doesnt-save-you-from-the-wrong-problem)
   - [2026-05-09](#2026-05-09)
     - [Dylan Patel on the Supply and Demand of AI Tokens](#dylan-patel-on-the-supply-and-demand-of-ai-tokens)
   - [2026-04-17](#2026-04-17)
@@ -249,6 +251,17 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 ## Diary
 
+### 2026-05-10
+
+#### Free Doesn't Save You from the Wrong Problem
+
+- **TOP Takeaway**: Even when something is free, if you're climbing the wrong mountain, you'll never get there. Pick the right problem first; cost is the second-order question. Hill climbing improves your position on a mountain; it doesn't tell you you're on the wrong one.
+- **The case**: I'm obsessed with transparent backgrounds for the [raccoons](#racoon-illustrations) on my blog. The AI image generator I use can't emit alpha, so I'd been [hill-climbing a local chroma-key pipeline](/hill-climbing#chroma-key-clean-transparent-backgrounds) — six attempts, 17,385 → 269 on the residual-magenta-plus-interior-holes eval, 65× improvement, a clever `flood4 → tight-fuzz 3%` two-stage winner. Real hill climbing, real eval, real progress. Still the wrong mountain. The output looked clean on a white page and fell apart against any other background.
+- **What actually worked**: switched to **Recraft** as a paid bg-remover ([chop-conventions 508ee89](https://github.com/idvorkin/chop-conventions/commit/508ee894a32201ff12ebdb3d77c6386d3e33e9f0), [7befb9f](https://github.com/idvorkin/chop-conventions/commit/7befb9f1d713573aaaeff3e97bc86b7af2c3327d)). Roughly a penny per image. Solved.
+- **The inversion of [yesterday's Patel takeaway](#dylan-patel-on-the-supply-and-demand-of-ai-tokens)**: Patel's frame is _who has the tokens wins_. The corollary cuts the other way — free tokens (or free local CPU cycles) pointed at the wrong problem are still wasted. The Patel rule is _point your tokens at the highest-leverage thing_; this entry is the failure mode of getting that wrong, even when the meter is at zero.
+- **Why I missed it for so long**: better gates and better algorithms feel like progress because the eval number actually moves. The hill-climbing post even calls this out — the "structural detour" attempt (a deliberately different algorithm) failed identically to baseline, which was the signal that the ceiling was the mountain, not the algorithm. I read that and still kept climbing. Sharper eval ≠ right problem.
+- **Lesson**: when a cheap-and-local approach plateaus after a real hill-climb, stop tightening the algorithm. Ask whether you're on the right mountain at all. Switching cost is usually a few cents and an API key. Persistence cost is hours.
+
 ### 2026-05-09
 
 #### Dylan Patel on the Supply and Demand of AI Tokens
@@ -274,6 +287,7 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   > As we get more and more intelligent, what really matters is access to these most intelligent tokens... the shitty SaaS startup in SF using Claude to generate their software product is not creating a ton of value and therefore they're going to get priced out of tokens soon enough.
 
   Every lab is supply-constrained; even tier-2 and tier-3 labs sell out. Anthropic could double Opus pricing and Patel says he'd keep paying. Patel's playbook: get the enterprise pay-per-token contract (not the consumer subscription), then figure out how to leverage those tokens at the highest-value task. The skill that matters is no longer implementation — it's picking which idea is worth pointing tokens at.
+
 - **The Igor angle**: this is the [$230 Week](#the-230-week-when-cheap-coding-isnt) dynamic seen from the supply side. My burn wasn't user error — I was riding the front of Patel's curve. The shift: **the answer is not to throttle, it's to point the tokens at the highest-leverage thing I can think of**. For Larry specifically — the subagent-extraction stack on the Claude Code subscription pool (~$0.12/entry equivalent) is the right shape; the open question is whether the journal cross-index is actually _the_ highest-value place to point those tokens, or just the most-fun one. Worth re-asking before the next big run.
 
 ### 2026-04-17
@@ -846,6 +860,7 @@ I love adding tmux workflows, but they usually take me like 10 hours to get righ
   - Originally created on July 18, 2025 ([commit 38d87330](https://github.com/idvorkin/idvorkin.github.io/commit/38d87330)) as "crafting spells to banish ruminating thoughts"
   - Added image features ([commit bab47de6](https://github.com/idvorkin/idvorkin.github.io/commit/bab47de6)) - a very lucky last commit or I'd never have found it.
 - **The Shocking Discovery**: File was deleted in [PR #67](https://github.com/idvorkin/idvorkin.github.io/pull/67) ([commit e73324f9](https://github.com/idvorkin/idvorkin.github.io/commit/e73324f9))
+
   - **PR title**: "Add random page navigation feature"
   - **Actual changes**: Also randomly deleted an entire page!
   - 251 lines of carefully crafted content about mental health - gone
@@ -900,21 +915,25 @@ I love adding tmux workflows, but they usually take me like 10 hours to get righ
 #### The Claude Review Workflow Saga - When Good Intentions Break Everything
 
 - **The Problem**: Claude Code Review had been failing on EVERY PR since August 17th with mysterious "Invalid OIDC token" errors
+
   - Someone (probably me via AI) had "fixed" the workflow to support fork PRs by changing from `pull_request` to `pull_request_target`
   - Classic case of "the fix that breaks everything else"
 
 - **The Wild Goose Chase**:
+
   - First hypothesis: OIDC tokens don't work with `pull_request_target` - let's add `github_token`!
   - Created PR #120 to add the token - still failed
   - Tested from a fork (PR #121) to be thorough - also failed
   - The beta Claude action just wasn't compatible with `pull_request_target` events
 
 - **The Real Fix**: Sometimes you just have to admit defeat and revert
+
   - PR #122: Reverted to the original `pull_request` event that actually worked
   - Lost fork PR support, but gained back ALL regular PR reviews
   - Better to have 95% working than 100% broken
 
 - **Bonus Discovery**: While debugging the Vitest workflow force-push failures
+
   - Found branch protection rules were set to `~ALL` instead of just `main`
   - This was blocking pushes to PR branches, test-results branch, everything!
   - One setting change fixed multiple mysterious CI failures
@@ -1181,6 +1200,7 @@ Check out the great documentation at promptfoo, including redteaming I thgues st
 ### 2024-04-06
 
 - Containerize Bot
+
   - Secret Injection
   - Auto Starting
 
