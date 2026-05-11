@@ -1,0 +1,614 @@
+---
+layout: empty
+title: "Connecting with Amelia — A Framework"
+permalink: /amelia
+description: "A framework that maps Igor's four affirmations onto fathering a daughter. Connection isn't a project — it's a practice with feedback loops."
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connecting with Amelia — A Framework</title>
+    <meta
+      name="description"
+      content="A framework that maps Igor's four affirmations onto fathering a daughter. Connection isn't a project — it's a practice with feedback loops."
+    />
+    <meta property="og:title" content="Connecting with Amelia — A Framework" />
+    <meta
+      property="og:description"
+      content="A framework that maps Igor's four affirmations onto fathering a daughter. Connection isn't a project — it's a practice with feedback loops."
+    />
+    <meta property="og:type" content="article" />
+    <meta name="twitter:card" content="summary" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family:
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+      }
+      .grad-bg {
+        background: radial-gradient(
+          1200px 600px at 10% -10%,
+          #1e293b 0%,
+          #0f172a 50%,
+          #020617 100%
+        );
+      }
+      .card {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .card-hover:hover {
+        background: rgba(255, 255, 255, 0.06);
+        border-color: rgba(255, 255, 255, 0.18);
+        transition: all 0.15s ease;
+      }
+      .pill {
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+      }
+      .accent-1 {
+        color: #f472b6;
+      } /* Do It Anyway */
+      .accent-2 {
+        color: #60a5fa;
+      } /* Essentialist */
+      .accent-3 {
+        color: #34d399;
+      } /* Class Act */
+      .accent-4 {
+        color: #fbbf24;
+      } /* Calm Like Water */
+      .ring-1c {
+        box-shadow: inset 0 0 0 1px rgba(244, 114, 182, 0.4);
+      }
+      .ring-2c {
+        box-shadow: inset 0 0 0 1px rgba(96, 165, 250, 0.4);
+      }
+      .ring-3c {
+        box-shadow: inset 0 0 0 1px rgba(52, 211, 153, 0.4);
+      }
+      .ring-4c {
+        box-shadow: inset 0 0 0 1px rgba(251, 191, 36, 0.4);
+      }
+      .bg-1d {
+        background: rgba(244, 114, 182, 0.08);
+      }
+      .bg-2d {
+        background: rgba(96, 165, 250, 0.08);
+      }
+      .bg-3d {
+        background: rgba(52, 211, 153, 0.08);
+      }
+      .bg-4d {
+        background: rgba(251, 191, 36, 0.08);
+      }
+      .chip {
+        transition: all 0.15s ease;
+      }
+      .chip:hover {
+        transform: translateY(-1px);
+      }
+      details > summary {
+        list-style: none;
+        cursor: pointer;
+      }
+      details > summary::-webkit-details-marker {
+        display: none;
+      }
+      .move-card {
+        transition: all 0.2s ease;
+      }
+      .move-card:hover {
+        transform: translateY(-2px);
+      }
+      .check {
+        width: 18px;
+        height: 18px;
+        border-radius: 4px;
+        border: 1.5px solid rgba(255, 255, 255, 0.3);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        cursor: pointer;
+        transition: all 0.15s;
+      }
+      .check.done {
+        background: #22c55e;
+        border-color: #22c55e;
+      }
+      .check.done::after {
+        content: "✓";
+        color: #0f172a;
+        font-size: 12px;
+        font-weight: 700;
+      }
+      /* Subtle link styling inside the closing card */
+      .closing-link {
+        color: #fbbf24;
+        text-decoration: underline;
+        text-decoration-color: rgba(251, 191, 36, 0.4);
+        text-underline-offset: 3px;
+      }
+      .closing-link:hover {
+        text-decoration-color: rgba(251, 191, 36, 0.9);
+      }
+    </style>
+  </head>
+  <body class="grad-bg text-slate-100 min-h-screen">
+    <div class="max-w-5xl mx-auto px-6 py-10">
+      <!-- Header -->
+      <header class="mb-6">
+        <div class="text-xs uppercase tracking-[0.2em] text-slate-400 mb-2">
+          For Igor · Family Man (Tori, Amelia, Zach)
+        </div>
+        <h1 class="text-4xl md:text-5xl font-semibold tracking-tight">
+          Connecting with Amelia
+        </h1>
+        <p class="mt-3 text-slate-300 max-w-2xl">
+          A framework that maps your four affirmations onto fathering a
+          daughter. Connection isn't a project — it's a practice with feedback
+          loops.
+        </p>
+      </header>
+
+      <!-- Section nav (sticky, single-line on mobile) -->
+      <nav
+        class="sticky top-0 z-10 -mx-6 px-6 py-3 mb-6 backdrop-blur bg-slate-950/70 border-b border-white/5"
+      >
+        <div
+          class="flex items-center gap-2 overflow-x-auto whitespace-nowrap"
+          style="-webkit-overflow-scrolling: touch"
+        >
+          <a
+            href="#pillars"
+            class="chip pill px-3 py-1.5 rounded-full text-xs text-slate-200 hover:bg-white/15 shrink-0"
+            >Pillars</a
+          >
+          <a
+            href="#audit"
+            class="chip pill px-3 py-1.5 rounded-full text-xs text-slate-200 hover:bg-white/15 shrink-0"
+            >Audit</a
+          >
+          <a
+            href="#moves"
+            class="chip pill px-3 py-1.5 rounded-full text-xs text-slate-200 hover:bg-white/15 shrink-0"
+            >Moves</a
+          >
+          <button
+            onclick="randomMove()"
+            class="chip pill px-3 py-1.5 rounded-full text-xs bg-gradient-to-r from-pink-500/20 to-amber-500/20 hover:from-pink-500/30 hover:to-amber-500/30 text-slate-100 border border-white/20 shrink-0"
+          >
+            🎲 Random
+          </button>
+        </div>
+      </nav>
+
+      <!-- Random move hero card (click anywhere to reroll) -->
+      <div
+        id="random-card"
+        class="hidden card rounded-2xl p-5 mb-8 border-2 cursor-pointer"
+        onclick="randomMove()"
+      ></div>
+
+      <!-- Four pillars -->
+      <h2 id="pillars" class="text-2xl font-semibold mb-4 scroll-mt-20">
+        The four moves, aimed at Amelia
+      </h2>
+      <div class="grid md:grid-cols-2 gap-4 mb-12">
+        <div class="card ring-1c bg-1d rounded-2xl p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs pill px-2 py-0.5 rounded-full accent-1"
+              >Do It Anyway</span
+            >
+            <span class="text-xs text-slate-400"
+              >Deliberate · Disciplined · Daily</span
+            >
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Show up on the boring days</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Connection compounds in <em>unremarkable</em> moments — the school
+            walk on a rainy Tuesday, the dinner where nothing happened. The
+            temptation is to wait for "quality time." Don't. Show up daily, even
+            when she shrugs.
+            <span class="accent-1">Especially when she shrugs.</span>
+          </p>
+          <div class="mt-3 text-xs text-slate-400 italic">
+            Restart with self-compassion when you miss a day. Don't make a
+            streak the point.
+          </div>
+        </div>
+
+        <div class="card ring-2c bg-2d rounded-2xl p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs pill px-2 py-0.5 rounded-full accent-2"
+              >Essentialist</span
+            >
+            <span class="text-xs text-slate-400"
+              >Know essential · Prioritize ruthlessly</span
+            >
+          </div>
+          <h3 class="text-lg font-semibold mb-2">
+            Protect the few, kill the rest
+          </h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Pick the 2–3 windows that matter most to <em>her</em> (not to you)
+            and treat them as sacred. Walking to school. Bedtime. Saturday
+            morning. Phone away. Calendar blocked. The win isn't more time —
+            it's <span class="accent-2">undivided</span> time in the windows you
+            chose.
+          </p>
+          <div class="mt-3 text-xs text-slate-400 italic">
+            Begin with the end in mind: what does she remember at 30?
+          </div>
+        </div>
+
+        <div class="card ring-3c bg-3d rounded-2xl p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs pill px-2 py-0.5 rounded-full accent-3"
+              >Class Act</span
+            >
+            <span class="text-xs text-slate-400"
+              >First understand · Appreciate · Isn't that curious</span
+            >
+          </div>
+          <h3 class="text-lg font-semibold mb-2">
+            7 appreciations for every correction
+          </h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Your own rule from /appreciate. Apply it with maximum force to her.
+            Ask before advising. When she shares something weird or annoying,
+            default to
+            <span class="accent-3">"isn't that curious"</span> instead of "let
+            me fix that." Notice character, not just performance.
+          </p>
+          <div class="mt-3 text-xs text-slate-400 italic">
+            She has anxiety and impostor syndrome too. Treat her like a full
+            human, not a project.
+          </div>
+        </div>
+
+        <div class="card ring-4c bg-4d rounded-2xl p-5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs pill px-2 py-0.5 rounded-full accent-4"
+              >Calm Like Water</span
+            >
+            <span class="text-xs text-slate-400"
+              >Be present · This too shall pass · Work the problem</span
+            >
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Be the steady weather</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            She is calibrating her nervous system off yours. When she escalates,
+            you de-escalate. When she's a tornado, you're the lake. Big feelings
+            get acknowledged before they get solved.
+            <span class="accent-4">"This too shall pass"</span> applies to her
+            tantrums and your frustration equally.
+          </p>
+          <div class="mt-3 text-xs text-slate-400 italic">
+            Your regulation is the curriculum. She'll absorb it before she
+            understands a single word you say.
+          </div>
+        </div>
+      </div>
+
+      <!-- Presence Audit -->
+      <h2 id="audit" class="text-2xl font-semibold mb-2 scroll-mt-20">
+        Weekly presence audit
+      </h2>
+      <p class="text-slate-400 text-sm mb-4">
+        Quick honest check — Level 2 of your affirmation system, applied to
+        Amelia. Click each row.
+      </p>
+      <div
+        id="audit"
+        class="card rounded-2xl p-2 mb-12 divide-y divide-white/5"
+      ></div>
+
+      <!-- Moves library -->
+      <h2 id="moves" class="text-2xl font-semibold mb-2 scroll-mt-20">
+        <span id="moves-heading">20 concrete moves</span>
+      </h2>
+      <p class="text-slate-400 text-sm mb-4">
+        Filter by which affirmation you want to practice. Pick 1–3 for the week.
+        Don't try all of them — that's not essentialist.
+      </p>
+
+      <div id="filters" class="flex flex-wrap gap-2 mb-5"></div>
+      <div id="moves" class="grid md:grid-cols-2 gap-3 mb-5"></div>
+      <div id="filters-bottom" class="flex flex-wrap gap-2 mb-12"></div>
+
+      <!-- Closing -->
+      <section class="card rounded-2xl p-6 mb-10">
+        <div class="flex items-start gap-4">
+          <div class="text-3xl">🌱</div>
+          <div>
+            <div class="text-sm uppercase tracking-wider text-slate-400 mb-1">
+              The end in mind
+            </div>
+            <p class="text-slate-200 leading-relaxed">
+              The <a href="/eulogy" class="closing-link">eulogy</a> goal isn't
+              "Igor was a good dad." It's:
+              <em
+                >"my dad was a safe place. I knew, all the way down, that he saw
+                me and was glad I existed."</em
+              >
+              Everything above is in service of that single feeling, repeated
+              across thousands of small moments. Drip. Drip. Drip.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="text-xs text-slate-500 text-center pb-6">
+        Built from affirmations, eulogy roles, and the HEART relationship lens.
+        Not generic parenting advice.
+      </footer>
+    </div>
+
+    <script>
+      // ------- Audit -------
+      const auditItems = [
+        {
+          q: "This week, did I have a phone-down conversation with Amelia where I asked more questions than I answered?",
+          aff: 3,
+        },
+        {
+          q: "Did I protect at least one of my chosen sacred windows (school walk / bedtime / weekend ritual) without distraction?",
+          aff: 2,
+        },
+        {
+          q: "When she had a big feeling, did I stay regulated before trying to fix anything?",
+          aff: 4,
+        },
+        { q: "Did I show up for her on a day I didn't feel like it?", aff: 1 },
+        {
+          q: "Did I appreciate something about who she is — not just what she did?",
+          aff: 3,
+        },
+        {
+          q: "Did I let a small thing go that didn't actually matter, instead of correcting?",
+          aff: 2,
+        },
+      ];
+      const affMeta = {
+        1: {
+          name: "Do It Anyway",
+          cls: "accent-1",
+          bg: "bg-1d",
+          ring: "ring-1c",
+        },
+        2: {
+          name: "Essentialist",
+          cls: "accent-2",
+          bg: "bg-2d",
+          ring: "ring-2c",
+        },
+        3: { name: "Class Act", cls: "accent-3", bg: "bg-3d", ring: "ring-3c" },
+        4: {
+          name: "Calm Like Water",
+          cls: "accent-4",
+          bg: "bg-4d",
+          ring: "ring-4c",
+        },
+      };
+
+      const auditEl = document.getElementById("audit");
+      auditItems.forEach((item, i) => {
+        const row = document.createElement("div");
+        row.className = "p-3 flex items-start gap-3 cursor-pointer";
+        row.innerHTML = `
+      <div class="check" data-i="${i}"></div>
+      <div class="flex-1">
+        <div class="text-slate-200 text-sm leading-relaxed">${item.q}</div>
+        <div class="text-xs ${affMeta[item.aff].cls} mt-1">${affMeta[item.aff].name}</div>
+      </div>
+    `;
+        row.addEventListener("click", () => {
+          const c = row.querySelector(".check");
+          c.classList.toggle("done");
+        });
+        auditEl.appendChild(row);
+      });
+
+      // ------- Moves -------
+      const moves = [
+        {
+          aff: 1,
+          t: "The 2-minute door check-in",
+          b: "When she gets home or you do, drop everything for two minutes. Eye contact. 'How was today, actually?' That's it.",
+        },
+        {
+          aff: 1,
+          t: "Tuesday-night ritual",
+          b: "Pick a low-stakes weekly thing only you two do. Pancakes. A walk. A dumb show. Boring repetition is the point.",
+        },
+        {
+          aff: 1,
+          t: "Show up on the bad days",
+          b: "When she's grumpy or you're grumpy, still do the small thing. Don't wait for the mood to be right.",
+        },
+        {
+          aff: 1,
+          t: "One handwritten note a month",
+          b: "Slip it in her bag or on her pillow. Specific, not general. Effort > eloquence.",
+        },
+
+        {
+          aff: 2,
+          t: "Name your sacred windows",
+          b: "Pick 2–3. Write them down. Walking to school + bedtime is a strong default. Block them in calendar.",
+        },
+        {
+          aff: 2,
+          t: "Phone in another room",
+          b: "During sacred windows, the phone doesn't come. Not face-down — gone. She knows the difference.",
+        },
+        {
+          aff: 2,
+          t: "Say no to 1 work thing per week for her",
+          b: "Visibly. So she sees you choose her over something that looked important.",
+        },
+        {
+          aff: 2,
+          t: "Kill the 'productive' weekend",
+          b: "Some Saturdays should accomplish nothing measurable. That's the feature.",
+        },
+        {
+          aff: 2,
+          t: "End-in-mind question",
+          b: "Once a quarter ask: 'What do I want her to feel about me when she's 30?' Re-prioritize from there.",
+        },
+
+        {
+          aff: 3,
+          t: "Ask 3 questions before giving 1 answer",
+          b: "Especially when she's complaining or stuck. Curiosity before fixing. Almost always.",
+        },
+        {
+          aff: 3,
+          t: "Notice character, not just output",
+          b: "Not 'great score' — 'I noticed you kept going when it got hard.' Praise what's hers to keep.",
+        },
+        {
+          aff: 3,
+          t: "Isn't that curious",
+          b: "When she does something weird, annoying, or surprising, try the phrase silently first. It changes your face.",
+        },
+        {
+          aff: 3,
+          t: "Repair when you mess up",
+          b: "Specific apology, no qualifications. 'I was short with you. That wasn't about you. I'm sorry.' Models the standard.",
+        },
+        {
+          aff: 3,
+          t: "7:1 appreciation ratio",
+          b: "Track for one week. Count appreciations vs corrections directed at her. Adjust if needed.",
+        },
+        {
+          aff: 3,
+          t: "Ask about her people by name",
+          b: "Her friends, her teachers — by name. Remember them. Signals: your world matters to me.",
+        },
+
+        {
+          aff: 4,
+          t: "Drop your shoulders first",
+          b: "When she escalates, your body de-escalates before your mouth opens. She reads your nervous system, not your words.",
+        },
+        {
+          aff: 4,
+          t: "Acknowledge before solving",
+          b: "'That sounds really frustrating.' Full stop. Wait. Most of the time the solution isn't needed.",
+        },
+        {
+          aff: 4,
+          t: "Name what you see",
+          b: "'I notice you got quiet.' Just naming it, no agenda. Opens the door without forcing it.",
+        },
+        {
+          aff: 4,
+          t: "This too shall pass — to yourself",
+          b: "When she's at her worst, say it internally. The phase is transient. Your steady response is what compounds.",
+        },
+        {
+          aff: 4,
+          t: "Apologize for your weather",
+          b: "When you bring stress home, name it briefly. 'I had a hard day, that's mine, not yours.' Inoculates her from blaming herself.",
+        },
+      ];
+
+      const filtersEl = document.getElementById("filters");
+      const movesEl = document.getElementById("moves");
+      let active = 0; // 0 = all
+
+      const filtersBottomEl = document.getElementById("filters-bottom");
+      function renderFilters() {
+        [filtersEl, filtersBottomEl].forEach(target => {
+          target.innerHTML = "";
+          const all = document.createElement("button");
+          all.className = `chip pill px-3 py-1.5 rounded-full text-xs ${active === 0 ? "bg-white/15 text-white" : "text-slate-300"}`;
+          all.textContent = `All (${moves.length})`;
+          all.onclick = () => {
+            active = 0;
+            render();
+            window.scrollTo({
+              top: document.getElementById("moves-heading")?.offsetTop || 0,
+              behavior: "smooth",
+            });
+          };
+          target.appendChild(all);
+          [1, 2, 3, 4].forEach(n => {
+            const count = moves.filter(m => m.aff === n).length;
+            const b = document.createElement("button");
+            const isActive = active === n;
+            b.className = `chip pill px-3 py-1.5 rounded-full text-xs ${affMeta[n].cls} ${isActive ? "bg-white/15" : ""}`;
+            b.textContent = `${affMeta[n].name} (${count})`;
+            b.onclick = () => {
+              active = n;
+              render();
+              window.scrollTo({
+                top: document.getElementById("moves-heading")?.offsetTop || 0,
+                behavior: "smooth",
+              });
+            };
+            target.appendChild(b);
+          });
+        });
+      }
+
+      function renderMoves() {
+        movesEl.innerHTML = "";
+        const filtered =
+          active === 0 ? moves : moves.filter(m => m.aff === active);
+        filtered.forEach(m => {
+          const meta = affMeta[m.aff];
+          const card = document.createElement("div");
+          card.className = `move-card card card-hover ${meta.bg} ${meta.ring} rounded-xl p-4`;
+          card.innerHTML = `
+        <div class="flex items-center justify-between mb-1.5">
+          <div class="text-[11px] uppercase tracking-wider ${meta.cls}">${meta.name}</div>
+        </div>
+        <div class="font-medium text-slate-100 text-sm mb-1">${m.t}</div>
+        <div class="text-slate-300 text-xs leading-relaxed">${m.b}</div>
+      `;
+          movesEl.appendChild(card);
+        });
+      }
+
+      function render() {
+        renderFilters();
+        renderMoves();
+      }
+      render();
+
+      // ------- Random Move (click anywhere on the card rerolls) -------
+      function randomMove(ev) {
+        if (ev) ev.stopPropagation();
+        const m = moves[Math.floor(Math.random() * moves.length)];
+        const meta = affMeta[m.aff];
+        const card = document.getElementById("random-card");
+        card.className = `card rounded-2xl p-5 mb-8 border-2 cursor-pointer ${meta.bg} ${meta.ring} block`;
+        card.onclick = randomMove;
+        card.innerHTML = `
+      <div class="flex items-center gap-2 mb-2">
+        <span class="text-xs pill px-2 py-0.5 rounded-full ${meta.cls}">${meta.name}</span>
+        <span class="text-xs text-slate-400 uppercase tracking-wider">🎲 Tap card to reroll</span>
+      </div>
+      <div class="text-lg font-semibold text-slate-100 mb-1">${m.t}</div>
+      <div class="text-slate-300 text-sm leading-relaxed">${m.b}</div>
+    `;
+        card.classList.remove("hidden");
+        card.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    </script>
+  </body>
+</html>
