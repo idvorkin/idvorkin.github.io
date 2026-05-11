@@ -7,6 +7,7 @@ tags:
 permalink: /addiction
 redirect_from:
   - /addictions
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-addiction-cover.webp
 ---
 
 Addiction is not about drugs or alcohol - it is about escape. Quoting "Do the Work": When we can't stand the fear, the shame, and the self-reproach that we feel, we obliterate it with an addiction. The addiction becomes the shadow version, the evil twin of our calling to service or to art. That's why addicts are so interesting and so boring at the same time. They're interesting because they're called to something — something new, something unique, something that we, watching, can't wait to see them bring forth into manifestation. At the same time, they're boring because they never do the work. The addiction becomes his purpose, his novel, his adventure, his great love. The work of art or service that might have been produced is replaced by the drama, conflict, and suffering of the addict's crazy, haunted, shattered life.
@@ -51,6 +52,8 @@ Addiction is not about drugs or alcohol - it is about escape. Quoting "Do the Wo
 <!-- prettier-ignore-end -->
 
 ## Is doing the thing you want to be doing an addiction?
+
+![Diptych illustration of a raccoon character contrasting addiction versus passion: on one side the raccoon is hunched and consumed by a compulsion that drains it, on the other side the raccoon is engaged and energized by a passion that nourishes it - illustrating the addiction-vs-passion framework](https://github.com/idvorkin/blob/raw/master/blog/raccoon-addiction-vs-passion.webp)
 
 Here's the framework I've been working through. Two questions sort it: Am I compelled to do this? And is it negatively impacting my life?
 
