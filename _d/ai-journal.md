@@ -18,6 +18,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-05-11](#2026-05-11)
+    - [Lessons from a 7-Habits Raccoon Marathon](#lessons-from-a-7-habits-raccoon-marathon)
   - [2026-05-10](#2026-05-10)
     - [Free Doesn't Save You from the Wrong Problem](#free-doesnt-save-you-from-the-wrong-problem)
   - [2026-05-09](#2026-05-09)
@@ -250,6 +252,19 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2026-05-11
+
+#### Lessons from a 7-Habits Raccoon Marathon
+
+- **TOP Takeaway**: model aesthetic priors trump prompt text, reference images beat prose for character locking, and bigger isn't always better — Pro overcomplied on strict scene-rich prompts (rendered the literal string "CHROMA KEY" on a t-shirt) where Flash + a reference image hit the goldilocks zone for batch variation work. The whole day was a study in **which knob actually moves the model**.
+- **What I was building**: per-chapter raccoon illustrations for my [7 Habits chapter posts](/7h) — c2–c7 covers + inline float-rights, eventually shipped as [PR #618 (blog wiring)](https://github.com/idvorkin/idvorkin.github.io/pull/618) and [PR #20 (blob assets)](https://github.com/idvorkin/blob/pull/20). Same canonical raccoon character as the [addiction-vs-passion diptych from yesterday](/addiction), 7 chapters × 5 variations to pick from.
+- **Lesson 1 — Model aesthetic priors trump prompt content.** Imagen 4 Fast with my [canonical `raccoon-style.txt`](https://github.com/idvorkin/chop-conventions/tree/main/skills/gen-image) block kept producing "wrong raccoon" — character drift, no rainbow glasses, mismatched Crocs gone, no TECHNOLOGIST shirt. Same style text, swap to Gemini, canonical character snaps back. The text said the same thing; the model heard it differently. Imagen has its own aesthetic prior that ignores style directives even when you spell them in caps. Lesson saved as a [permanent "never Imagen for canonical raccoon"](https://github.com/idvorkin/idvorkin.github.io/blob/main/_d/ai-journal.md) note.
+- **Lesson 2 — Reference images > prompt text for character locking.** The fix wasn't a stronger prompt — it was passing `raccoon-nerd.webp` as a **reference image** to Gemini Pro via the `/gen-image` skill. First-try canonical diptych ([commit 33acde4 on PR #616](https://github.com/idvorkin/idvorkin.github.io/pull/616/commits/33acde40a)). No amount of `IMPORTANT: rainbow glasses, mismatched Crocs, TECHNOLOGIST shirt…` ever reached the same fidelity as one reference image. Pro+ref preserved canonical style 100% across every test. Flash+ref also worked once the recipe was known, and at a fraction of the cost — became the production batch path.
+- **Lesson 3 — Bigger model isn't always better.** Gemini Pro on a strict scene-rich diptych with a "magenta background" directive **overcomplied** on `kitchen-pro` (rendered the literal string "CHROMA KEY" as shirt text and dropped the scene) and **under-complied** on `couch-vs-piano` (ignored magenta). Pro is louder, not always smarter. Flash + reference image hit the goldilocks zone for batch variation work. Confirmed strongly enough to [rip the magenta directive from `raccoon-style.txt`](https://github.com/idvorkin/chop-conventions/pull/182) — it was dead text on Flash and unpredictable on Pro.
+- **Lesson 4 — The choice-sheet pattern.** Once Flash+ref produced reliable variations, the bottleneck moved from "can it generate" to "which one do I want." Built a click-to-pick HTML sheet: 7 rows × 5 variations per habit, `localStorage`-persistent picks, JSON copy button at the bottom, mobile-responsive. Iterated v3 (Flash+ref, 3 per habit) → v4 (5 per habit, **symlinked v3's a/b/c so I only paid for the new d/e cells** — 35 total cells, only 14 newly rendered). State lives in the filesystem (`<slug>/<letter>.png`), so symlink-from-prior-batch is free; a pink `NEW` badge flags fresh cells for the reviewer. The pattern generalizes to any "AI generates N candidates, human picks winner" workflow — image gen, copy variants, design alternatives. Productized as a [public gist](https://gist.github.com/idvorkin-ai-tools/309aea3cd0d2e43e783f2c061e920755) (HTML/JS + README + CC0). ~$2-3 total spend, ~15 minutes of human picking.
+- **The cheap lesson, repeated**: you can't talk your way around a model's aesthetic prior. Switch model, pass a reference image, or invert the workflow (generate cheap variations, let the human pick) — but don't keep shouting at a model that's already stopped listening.
+- **Artifacts**: [Image Choice Sheet gist](https://gist.github.com/idvorkin-ai-tools/309aea3cd0d2e43e783f2c061e920755) (the reusable pattern), [PR #618 — chapter wiring](https://github.com/idvorkin/idvorkin.github.io/pull/618), [PR #20 — blob assets](https://github.com/idvorkin/blob/pull/20), [chop-conventions PR #182 — rip magenta from canonical style](https://github.com/idvorkin/chop-conventions/pull/182).
 
 ### 2026-05-10
 
@@ -861,7 +876,6 @@ I love adding tmux workflows, but they usually take me like 10 hours to get righ
   - Originally created on July 18, 2025 ([commit 38d87330](https://github.com/idvorkin/idvorkin.github.io/commit/38d87330)) as "crafting spells to banish ruminating thoughts"
   - Added image features ([commit bab47de6](https://github.com/idvorkin/idvorkin.github.io/commit/bab47de6)) - a very lucky last commit or I'd never have found it.
 - **The Shocking Discovery**: File was deleted in [PR #67](https://github.com/idvorkin/idvorkin.github.io/pull/67) ([commit e73324f9](https://github.com/idvorkin/idvorkin.github.io/commit/e73324f9))
-
   - **PR title**: "Add random page navigation feature"
   - **Actual changes**: Also randomly deleted an entire page!
   - 251 lines of carefully crafted content about mental health - gone
@@ -916,25 +930,21 @@ I love adding tmux workflows, but they usually take me like 10 hours to get righ
 #### The Claude Review Workflow Saga - When Good Intentions Break Everything
 
 - **The Problem**: Claude Code Review had been failing on EVERY PR since August 17th with mysterious "Invalid OIDC token" errors
-
   - Someone (probably me via AI) had "fixed" the workflow to support fork PRs by changing from `pull_request` to `pull_request_target`
   - Classic case of "the fix that breaks everything else"
 
 - **The Wild Goose Chase**:
-
   - First hypothesis: OIDC tokens don't work with `pull_request_target` - let's add `github_token`!
   - Created PR #120 to add the token - still failed
   - Tested from a fork (PR #121) to be thorough - also failed
   - The beta Claude action just wasn't compatible with `pull_request_target` events
 
 - **The Real Fix**: Sometimes you just have to admit defeat and revert
-
   - PR #122: Reverted to the original `pull_request` event that actually worked
   - Lost fork PR support, but gained back ALL regular PR reviews
   - Better to have 95% working than 100% broken
 
 - **Bonus Discovery**: While debugging the Vitest workflow force-push failures
-
   - Found branch protection rules were set to `~ALL` instead of just `main`
   - This was blocking pushes to PR branches, test-results branch, everything!
   - One setting change fixed multiple mysterious CI failures
@@ -1201,7 +1211,6 @@ Check out the great documentation at promptfoo, including redteaming I thgues st
 ### 2024-04-06
 
 - Containerize Bot
-
   - Secret Injection
   - Auto Starting
 
