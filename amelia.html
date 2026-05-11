@@ -179,7 +179,7 @@ description: "A framework that maps Igor's four affirmations onto fathering a da
             >Audit</a
           >
           <a
-            href="#moves"
+            href="#moves-section"
             class="chip pill px-3 py-1.5 rounded-full text-xs text-slate-200 hover:bg-white/15 shrink-0"
             >Moves</a
           >
@@ -314,8 +314,8 @@ description: "A framework that maps Igor's four affirmations onto fathering a da
       ></div>
 
       <!-- Moves library -->
-      <h2 id="moves" class="text-2xl font-semibold mb-2 scroll-mt-20">
-        <span id="moves-heading">20 concrete moves</span>
+      <h2 id="moves-section" class="text-2xl font-semibold mb-2 scroll-mt-20">
+        20 concrete moves
       </h2>
       <p class="text-slate-400 text-sm mb-4">
         Filter by which affirmation you want to practice. Pick 1–3 for the week.
@@ -541,7 +541,7 @@ description: "A framework that maps Igor's four affirmations onto fathering a da
             active = 0;
             render();
             window.scrollTo({
-              top: document.getElementById("moves-heading")?.offsetTop || 0,
+              top: document.getElementById("moves-section")?.offsetTop || 0,
               behavior: "smooth",
             });
           };
@@ -556,7 +556,7 @@ description: "A framework that maps Igor's four affirmations onto fathering a da
               active = n;
               render();
               window.scrollTo({
-                top: document.getElementById("moves-heading")?.offsetTop || 0,
+                top: document.getElementById("moves-section")?.offsetTop || 0,
                 behavior: "smooth",
               });
             };
