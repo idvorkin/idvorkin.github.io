@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Igor's Reading List</title>
+    <link>https://idvork.in/podcast</link>
+    <atom:link href="https://idvork.in/podcast.xml" rel="self" type="application/rss+xml"/>
+    <language>en-us</language>
+    <copyright>© Igor Dvorkin</copyright>
+    <itunes:author>Igor Dvorkin</itunes:author>
+    <description>Igor narrates essays from idvork.in. Self-improvement, software, life. AI voiceover via Gemini Flash TTS (Charon voice).</description>
+    <itunes:summary>Igor narrates essays from idvork.in. AI voiceover (Charon voice via Gemini 3.1 Flash TTS).</itunes:summary>
+    <itunes:owner>
+      <itunes:name>Igor Dvorkin</itunes:name>
+      <itunes:email>idvorkin@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:category text="Education">
+      <itunes:category text="Self-Improvement"/>
+    </itunes:category>
+    <itunes:image href="https://idvork.in/apple-touch-icon-precomposed.png"/>
+    <image>
+      <url>https://idvork.in/apple-touch-icon-precomposed.png</url>
+      <title>Igor's Reading List</title>
+      <link>https://idvork.in/podcast</link>
+    </image>
+    <itunes:type>episodic</itunes:type>
+    <managingEditor>idvorkin@gmail.com (Igor Dvorkin)</managingEditor>
+
+    <item>
+      <title>The 7 Habits of Highly Effective People — Igor's Take</title>
+      <description>Igor's full essay on Stephen Covey's 7 Habits. Why he loves them. Foundations (paradigms, principles, P/PC balance), then each habit with his own examples — proactivity, end-in-mind, first-things-first, win-win, seek-first-to-understand, synergy, sharpen-the-saw. Integrated into life as a Microsoft engineer, husband, father, magician, and weight-loss winner.</description>
+      <itunes:summary>Igor's full essay on Stephen Covey's 7 Habits. Foundations + all seven habits, with his own examples.</itunes:summary>
+      <itunes:author>Igor Dvorkin</itunes:author>
+      <itunes:duration>02:13:03</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+      <enclosure url="https://github.com/idvorkin/blob/raw/master/podcast/seven-habits.mp3" length="63866568" type="audio/mpeg"/>
+      <guid isPermaLink="false">igor-7habits-2026-05-12</guid>
+      <pubDate>Tue, 12 May 2026 00:00:00 -0700</pubDate>
+      <link>https://idvork.in/7h-concepts</link>
+    </item>
+  </channel>
+</rss>

@@ -9,6 +9,14 @@ redirect_from:
 
 To my amazement, I listen to podcasts. I think they're pretty interesting, here are my notes on them.
 
+## My own audio feed: Igor's Reading List
+
+I now narrate some of my essays as audio episodes via AI voiceover (Gemini 3.1 Flash TTS, Charon voice). The first episode is my full take on the [7 Habits of Highly Effective People](/7h-concepts) — about two and a quarter hours, solo narration.
+
+**Subscribe**: paste `https://idvork.in/podcast.xml` into your podcast app of choice (Overcast, Apple Podcasts, Pocket Casts), or one-tap subscribe with [`podcast://idvork.in/podcast.xml`](podcast://idvork.in/podcast.xml).
+
+The voiceover is AI; the words are mine. Audio is hosted in the [`blob`](https://github.com/idvorkin/blob/tree/master/podcast) repo; the toolchain is the `gen-tts` skill in [chop-conventions](https://github.com/idvorkin/chop-conventions).
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
