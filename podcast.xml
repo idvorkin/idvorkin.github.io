@@ -2,7 +2,8 @@
 <rss version="2.0"
   xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
-  xmlns:atom="http://www.w3.org/2005/Atom">
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:podcast="https://podcastindex.org/namespace/1.0">
   <channel>
     <title>Igor's Reading List</title>
     <link>https://idvork.in/podcast</link>
@@ -37,7 +38,8 @@
       <itunes:duration>02:13:03</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
-      <enclosure url="https://github.com/idvorkin/blob/raw/master/podcast/seven-habits.mp3" length="63866568" type="audio/mpeg"/>
+      <enclosure url="https://github.com/idvorkin/blob/raw/master/podcast/seven-habits.mp3" length="63932507" type="audio/mpeg"/>
+      <podcast:chapters url="https://github.com/idvorkin/blob/raw/master/podcast/seven-habits.chapters.json" type="application/json+chapters"/>
       <guid isPermaLink="false">igor-7habits-2026-05-12</guid>
       <pubDate>Tue, 12 May 2026 00:00:00 -0700</pubDate>
       <link>https://idvork.in/7h-concepts</link>
