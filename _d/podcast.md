@@ -11,6 +11,8 @@ To my amazement, I listen to podcasts. I think they're pretty interesting, here 
 
 ## My own audio feed: Igor's Podcast
 
+{% include local_image_float_right.html src="podcast-cover-transparent.webp" %}
+
 I now narrate some of my essays as audio episodes via AI voiceover (Gemini 3.1 Flash TTS, Charon voice). First episode: my full take on the [7 Habits of Highly Effective People](/7h-concepts) — about two and a quarter hours, solo narration, with embedded chapter markers.
 
 **Subscribe**: paste this into Overcast / Apple Podcasts / Pocket Casts:
