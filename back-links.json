@@ -440,6 +440,7 @@
             "file_path": "_site/7-habits.html",
             "incoming_links": [
                 "/7h-concepts",
+                "/ai-journal",
                 "/balance",
                 "/be-proactive",
                 "/books-that-defined-me",
@@ -482,6 +483,7 @@
                 "/7-habits",
                 "/advice",
                 "/greek-orthodox",
+                "/podcast",
                 "/writing"
             ],
             "last_modified": "2026-05-10T16:23:33.726253+00:00",
@@ -676,7 +678,7 @@
                 "/vibing",
                 "/walking-with-god"
             ],
-            "last_modified": "2026-05-02T16:01:21.155890+00:00",
+            "last_modified": "2026-05-10T20:20:53-07:00",
             "markdown_path": "_d/addiction.md",
             "outgoing_links": [
                 "/activation",
@@ -1017,7 +1019,7 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get lost\n\n",
-            "doc_size": 163000,
+            "doc_size": 165000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai",
@@ -1034,11 +1036,13 @@
                 "/walking-with-god",
                 "/y25"
             ],
-            "last_modified": "2026-05-10T16:03:09.583167+00:00",
+            "last_modified": "2026-05-11T09:26:06-07:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
+                "/7-habits",
                 "/ai-art",
                 "/ai-journal",
+                "/ai-second-brain",
                 "/ai-security",
                 "/chop",
                 "/chow",
@@ -1050,6 +1054,7 @@
                 "/hill-climbing",
                 "/how-igor-chops",
                 "/hyper-personal",
+                "/image-selector",
                 "/larry",
                 "/mental-pain",
                 "/mortality-software",
@@ -1166,6 +1171,7 @@
             "doc_size": 30000,
             "file_path": "_site/ai-second-brain.html",
             "incoming_links": [
+                "/ai-journal",
                 "/ai-native-manager",
                 "/claw",
                 "/hyper-personal"
@@ -1503,7 +1509,7 @@
         },
         "/bc": {
             "description": "A guide to my favorite spots in British Columbia, focusing on Vancouver and Chilliwack. Whether you’re planning a quick weekend getaway or a longer adventure, here’s what you need to know. These recommendations come from my personal experiences over multiple trips - you can read about some of them in my summer 2024 adventures, Yellow Deli expedition, and various time off adventures:\n\n",
-            "doc_size": 23000,
+            "doc_size": 22000,
             "file_path": "_site/bc.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T03:02:44+00:00",
@@ -1537,7 +1543,7 @@
                 "/siy",
                 "/words-we-dont-have"
             ],
-            "last_modified": "2026-05-10T10:36:46-07:00",
+            "last_modified": "2026-05-11T07:16:52-07:00",
             "markdown_path": "_d/7h-c1.md",
             "outgoing_links": [
                 "/7-habits",
@@ -2478,7 +2484,7 @@
         },
         "/day-in-the-life": {
             "description": "A running journal of days that actually worked - the ones where health habits stuck, family time hit different, or I remembered what it feels like to be fully alive. Not every day needs to be Instagram-worthy, but some days deserve a bookmark. This is that bookmark collection.\n\n",
-            "doc_size": 19000,
+            "doc_size": 18000,
             "file_path": "_site/day-in-the-life.html",
             "incoming_links": [],
             "last_modified": "2025-10-04T18:43:51-07:00",
@@ -2819,7 +2825,7 @@
                 "/siy",
                 "/walking-with-god"
             ],
-            "last_modified": "2026-05-10T10:36:10-07:00",
+            "last_modified": "2026-05-11T07:14:49-07:00",
             "markdown_path": "_d/7h-c2.md",
             "outgoing_links": [
                 "/7-habits",
@@ -2977,11 +2983,12 @@
                 "/walking-with-god",
                 "/work-satisfaction"
             ],
-            "last_modified": "2025-11-28T09:45:42-08:00",
+            "last_modified": "2026-05-11T07:46:28-07:00",
             "markdown_path": "_posts/2020-04-01-Igor-Eulogy.md",
             "outgoing_links": [
                 "/7-habits",
                 "/The-Genesis-Node",
+                "/amelia",
                 "/balloon",
                 "/being-a-great-manager",
                 "/bike",
@@ -3076,7 +3083,7 @@
                 "/delegate",
                 "/frog"
             ],
-            "last_modified": "2026-05-10T10:23:57-07:00",
+            "last_modified": "2026-05-11T07:14:49-07:00",
             "markdown_path": "_d/7h-c3.md",
             "outgoing_links": [
                 "/4dx",
@@ -3113,7 +3120,7 @@
                 "/win-win",
                 "/work-satisfaction"
             ],
-            "last_modified": "2026-05-10T10:35:50-07:00",
+            "last_modified": "2026-05-11T07:14:49-07:00",
             "markdown_path": "_d/7h-c5.md",
             "outgoing_links": [
                 "/7-habits",
@@ -3424,7 +3431,7 @@
         },
         "/grammerly": {
             "description": "\n\n",
-            "doc_size": 13000,
+            "doc_size": 12000,
             "file_path": "_site/grammerly.html",
             "incoming_links": [],
             "last_modified": "2025-08-24T09:03:19-07:00",
@@ -3708,20 +3715,21 @@
             "url": "/humans-are-underrated"
         },
         "/hyper-personal": {
-            "description": "Useful writing tells people (including, possibly most importantly you) something true and important that they didn’t already know in a way that leaves no doubt. And Everyone is different. So how to do both?\n\n",
-            "doc_size": 19000,
+            "description": "Useful writing tells people something true and important they didn’t already know — in a way that leaves no doubt. The problem: everyone is different. Reader’s frame, jargon, blind spots all differ. Either you write for a vague average and lose almost everyone, or you write for one specific person and lose everyone else. AI breaks the tradeoff.\n\n",
+            "doc_size": 31000,
             "file_path": "_site/hyper-personal.html",
             "incoming_links": [
                 "/ai-journal",
                 "/ai-second-brain",
                 "/how-igor-chops"
             ],
-            "last_modified": "2026-04-05T09:35:33-07:00",
+            "last_modified": "2026-05-12T09:56:22-07:00",
             "markdown_path": "_d/hyper-personal.md",
             "outgoing_links": [
                 "/ai-journal",
                 "/ai-second-brain",
-                "/pet-projects"
+                "/pet-projects",
+                "/podcast"
             ],
             "redirect_url": "",
             "title": "Hyper Personalization",
@@ -4357,7 +4365,7 @@
         },
         "/mermaid": {
             "description": "Lets try d2\n\n",
-            "doc_size": 15000,
+            "doc_size": 14000,
             "file_path": "_site/mermaid.html",
             "incoming_links": [],
             "last_modified": "2023-12-17T18:49:14+00:00",
@@ -5034,14 +5042,17 @@
         },
         "/podcast": {
             "description": "To my amazement, I listen to podcasts. I think they’re pretty interesting, here are my notes on them.\n\n",
-            "doc_size": 16000,
+            "doc_size": 17000,
             "file_path": "_site/podcast.html",
             "incoming_links": [
-                "/enable"
+                "/enable",
+                "/hyper-personal"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2026-05-12T05:50:21-07:00",
             "markdown_path": "_d/podcast.md",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/7h-concepts"
+            ],
             "redirect_url": "",
             "title": "Podcasting",
             "url": "/podcast"
@@ -5593,7 +5604,7 @@
                 "/emotional-health",
                 "/physical-health"
             ],
-            "last_modified": "2026-05-10T10:35:27-07:00",
+            "last_modified": "2026-05-11T07:14:49-07:00",
             "markdown_path": "_d/7h-c7.md",
             "outgoing_links": [
                 "/7-habits",
@@ -6044,12 +6055,12 @@
         },
         "/synergize": {
             "description": "We’ve all got stuff we’re good at and stuff we’re bad at. Combine them right and the system is greater than the sum of the parts — sometimes a lot greater. Synergy is the payoff for everything that came before: independence, Win/Win, and seeking first to understand all converge here. These are my insights from 7 habits Chapter 6.\n\n",
-            "doc_size": 28000,
+            "doc_size": 29000,
             "file_path": "_site/synergize.html",
             "incoming_links": [
                 "/7-habits"
             ],
-            "last_modified": "2026-05-10T10:34:18-07:00",
+            "last_modified": "2026-05-11T07:14:49-07:00",
             "markdown_path": "_d/7h-c6.md",
             "outgoing_links": [
                 "/7-habits",
@@ -7181,7 +7192,7 @@
         },
         "/weeks": {
             "description": "\n\n",
-            "doc_size": 4348000,
+            "doc_size": 4346000,
             "file_path": "_site/weeks.html",
             "incoming_links": [
                 "/balance"
@@ -7247,7 +7258,7 @@
                 "/voices",
                 "/work-satisfaction"
             ],
-            "last_modified": "2026-05-10T17:17:11.903504+00:00",
+            "last_modified": "2026-05-11T07:14:49-07:00",
             "markdown_path": "_d/7h-c4.md",
             "outgoing_links": [
                 "/7-habits",
