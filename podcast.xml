@@ -29,6 +29,7 @@
     </image>
     <itunes:type>episodic</itunes:type>
     <managingEditor>idvorkin@gmail.com (Igor Dvorkin)</managingEditor>
+    <itunes:new-feed-url>https://idvorkin-ai-tools.github.io/podcast/feed.xml</itunes:new-feed-url>
 
     <item>
       <title>The 7 Habits of Highly Effective People — Igor's Take</title>
