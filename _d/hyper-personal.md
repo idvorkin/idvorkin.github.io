@@ -2,6 +2,7 @@
 layout: post
 title: "Hyper Personalization"
 permalink: "/hyper-personal"
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/hyper-personal-hero.webp
 redirect_from:
   - /hyper-personalization
   - /bespoke-everything
