@@ -11,6 +11,8 @@ tags:
 
 Jeff Bezos has always had a personal chef who knows he hates capers but loves dill. A butler. A tailor with his measurements. A physician who's known his family for years. None of this is new — Vanderbilts had the same staff a century ago. The desire was universal; what gated it was cost. Human attention scales 1:1 with each customer, so personalization stayed scarce — concentrated where the money was, thin everywhere else.
 
+{% include blob_image_float_right.html src="blog/hyper-personal-hero.webp" %}
+
 **The big shift is the price.** AI dropped the marginal cost of personal attention through the floor. The world Bezos paid for is becoming the everyone-default — same staff, at the cost of a query. And the AI version goes further than Bezos's staff ever could: even his chef didn't know how his blood sugar responded to last week's pasta, his trainer didn't see his HRV trend, his physician couldn't pattern-match across a decade of journal-and-location data. Hyper-personalization isn't just democratizing the old kind. It's reaching into dimensions that didn't exist at any price.
 
 It's also not just words. The same machinery hyper-personalizes images, podcasts, songs, TikToks — your own personalized YouTube channel-of-one. Whatever medium you consume, AI can build a version of it tuned to you alone.
