@@ -20,6 +20,7 @@ Every blog needs a mascot, and mine is a raccoon — specifically, a cute anthro
 - [The Refresh (v2 — GPT Image, 2025)](#the-refresh-v2--gpt-image-2025)
 - [The Brand System (v3 — 2026)](#the-brand-system-v3--2026)
 - [The March 2026 Audit](#the-march-2026-audit)
+- [The 7 Habits Marathon (May 2026)](#the-7-habits-marathon-may-2026)
 - [Character Design Reference](#character-design-reference)
 
 <!-- vim-markdown-toc-end -->
@@ -102,6 +103,32 @@ In March 2026, we did a full audit of every raccoon image. Three images were off
 **Cleaned up:** Deleted unused `raccoon-ai-native-em.webp` (duplicate, zero page references).
 
 **Final count after audit:** 16 raccoon images, all on-brand.
+
+## The 7 Habits Marathon (May 2026)
+
+In May 2026 I wired hero raccoons into all seven [7 Habits chapter posts](/7h). It took four iterations (v1 → v4, 21-35 cells per round, 7 habits × 5 variations on the final pass) and turned into the most useful pattern of the season: stop asking AI for "the best" raccoon — generate a wide field and let me pick.
+
+Final picks, one per habit:
+
+<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 1em 0;">
+<div style="text-align: center;"><img src="https://github.com/idvorkin/blob/raw/master/blog/raccoon-7h-c1.webp" style="width: 100%; border-radius: 8px;" /><br/><small><a href="/be-proactive">Be Proactive</a></small></div>
+<div style="text-align: center;"><img src="https://github.com/idvorkin/blob/raw/master/blog/raccoon-7h-c2.webp" style="width: 100%; border-radius: 8px;" /><br/><small><a href="/end-in-mind">Begin with the End in Mind</a></small></div>
+<div style="text-align: center;"><img src="https://github.com/idvorkin/blob/raw/master/blog/raccoon-7h-c3.webp" style="width: 100%; border-radius: 8px;" /><br/><small><a href="/first-things-first">First Things First</a></small></div>
+<div style="text-align: center;"><img src="https://github.com/idvorkin/blob/raw/master/blog/raccoon-7h-c4.webp" style="width: 100%; border-radius: 8px;" /><br/><small><a href="/win-win">Win/Win</a></small></div>
+<div style="text-align: center;"><img src="https://github.com/idvorkin/blob/raw/master/blog/raccoon-7h-c5.webp" style="width: 100%; border-radius: 8px;" /><br/><small><a href="/first-understand">Seek First to Understand</a></small></div>
+<div style="text-align: center;"><img src="https://github.com/idvorkin/blob/raw/master/blog/raccoon-7h-c6.webp" style="width: 100%; border-radius: 8px;" /><br/><small><a href="/synergize">Synergize</a></small></div>
+<div style="text-align: center;"><img src="https://github.com/idvorkin/blob/raw/master/blog/raccoon-7h-c7.webp" style="width: 100%; border-radius: 8px;" /><br/><small><a href="/sharpen-the-saw">Sharpen the Saw</a></small></div>
+</div>
+
+**The choice-sheet pattern.** The bottleneck on this batch wasn't "can the model generate" — it was "which one do I want." So I built a click-to-pick HTML sheet: 7 rows × 5 variations, `localStorage`-persistent picks, JSON copy button at the bottom, mobile-responsive. ~15 minutes of human picking and the right raccoons were obvious — much faster than iterating one prompt at a time. Live demo at [/image-selector](/image-selector), reusable pattern published as a [public gist](https://gist.github.com/idvorkin-ai-tools/309aea3cd0d2e43e783f2c061e920755) (HTML/JS + README + CC0). The blog instance base64-inlines all 35 raccoons so the page is fully self-contained.
+
+**Three things I learned, distilled** ([full entry](/ai-journal#2026-05-11)):
+
+- **Reference images beat prompt prose** for character locking. Passing `raccoon-nerd.webp` as a reference to Gemini Pro pulled canonical style 100% of the time. No amount of `IMPORTANT: rainbow glasses, mismatched Crocs, TECHNOLOGIST shirt…` ever matched one reference image. Imagen ignored the style block entirely — a [permanent note now says never Imagen for canonical raccoon](https://github.com/idvorkin/idvorkin.github.io/blob/main/_d/ai-journal.md).
+- **Recraft's `removeBackground` beat my chroma-key hill-climb.** I'd been sharpening a local pipeline for six attempts; switching to a paid bg-remover at a penny per image solved it in an afternoon. The [Wrong Jungle lesson](/ai-journal#free-doesnt-save-you-from-the-wrong-problem) from the day before applied immediately to this batch.
+- **AI helps me think by showing me options.** When the work is a judgment call I'll live with, AI's job is to widen the option space, not narrow it. I often can't articulate my taste in the abstract — but I can tell you which raccoon I want when I see them side-by-side. Cheap model for the wide pass, human picks, expensive model only for the winners.
+
+**Final count after May 2026:** 23 raccoon images, all on-brand.
 
 ## Character Design Reference
 
