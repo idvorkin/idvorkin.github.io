@@ -452,6 +452,7 @@
                 "/four-healths",
                 "/gap-year-igor",
                 "/psychic-weight",
+                "/raccoon-history",
                 "/sharpen-the-saw",
                 "/synergize",
                 "/timeoff-2020-12",
@@ -1033,6 +1034,7 @@
                 "/claw",
                 "/hyper-personal",
                 "/igors-claws",
+                "/raccoon-history",
                 "/walking-with-god",
                 "/y25"
             ],
@@ -1509,7 +1511,7 @@
         },
         "/bc": {
             "description": "A guide to my favorite spots in British Columbia, focusing on Vancouver and Chilliwack. Whether you’re planning a quick weekend getaway or a longer adventure, here’s what you need to know. These recommendations come from my personal experiences over multiple trips - you can read about some of them in my summer 2024 adventures, Yellow Deli expedition, and various time off adventures:\n\n",
-            "doc_size": 22000,
+            "doc_size": 23000,
             "file_path": "_site/bc.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T03:02:44+00:00",
@@ -1539,6 +1541,7 @@
                 "/frog",
                 "/idle",
                 "/process-journal",
+                "/raccoon-history",
                 "/regrets",
                 "/siy",
                 "/words-we-dont-have"
@@ -1854,12 +1857,13 @@
         },
         "/changelog": {
             "description": "A weekly summary of what changed on this blog and across my GitHub projects. Useful for returning readers who want to catch up on new content and updates.\n\n",
-            "doc_size": 142000,
+            "doc_size": 158000,
             "file_path": "_site/changelog.html",
             "incoming_links": [],
-            "last_modified": "2026-05-05T08:16:23-07:00",
+            "last_modified": "2026-05-12T19:52:11-07:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
+                "/7h-concepts",
                 "/act",
                 "/activation",
                 "/addiction",
@@ -1869,8 +1873,14 @@
                 "/ai-operator",
                 "/ai-relationships",
                 "/ai-second-brain",
+                "/amelia",
+                "/be-proactive",
                 "/claw",
                 "/design",
+                "/end-in-mind",
+                "/eulogy",
+                "/first-things-first",
+                "/first-understand",
                 "/gas-city",
                 "/gas-city-home",
                 "/hill-climbing",
@@ -1889,12 +1899,15 @@
                 "/mosh",
                 "/product",
                 "/recent",
+                "/sharpen-the-saw",
                 "/shoulder-pain",
                 "/side-quests",
                 "/spiritual-health",
+                "/synergy",
                 "/taxes",
                 "/vibing",
                 "/wally",
+                "/win-win",
                 "/y26"
             ],
             "redirect_url": "",
@@ -2484,7 +2497,7 @@
         },
         "/day-in-the-life": {
             "description": "A running journal of days that actually worked - the ones where health habits stuck, family time hit different, or I remembered what it feels like to be fully alive. Not every day needs to be Instagram-worthy, but some days deserve a bookmark. This is that bookmark collection.\n\n",
-            "doc_size": 18000,
+            "doc_size": 19000,
             "file_path": "_site/day-in-the-life.html",
             "incoming_links": [],
             "last_modified": "2025-10-04T18:43:51-07:00",
@@ -2822,6 +2835,7 @@
                 "/gap-year-igor",
                 "/planning",
                 "/productive",
+                "/raccoon-history",
                 "/siy",
                 "/walking-with-god"
             ],
@@ -3081,7 +3095,8 @@
                 "/90days",
                 "/affirmations",
                 "/delegate",
-                "/frog"
+                "/frog",
+                "/raccoon-history"
             ],
             "last_modified": "2026-05-11T07:14:49-07:00",
             "markdown_path": "_d/7h-c3.md",
@@ -3114,6 +3129,7 @@
                 "/class-act",
                 "/curious",
                 "/negotiate",
+                "/raccoon-history",
                 "/sell",
                 "/synergize",
                 "/walking-with-god",
@@ -3431,7 +3447,7 @@
         },
         "/grammerly": {
             "description": "\n\n",
-            "doc_size": 12000,
+            "doc_size": 13000,
             "file_path": "_site/grammerly.html",
             "incoming_links": [],
             "last_modified": "2025-08-24T09:03:19-07:00",
@@ -3600,7 +3616,8 @@
                 "/ai-operator",
                 "/ai-testing",
                 "/chop",
-                "/how-igor-chops"
+                "/how-igor-chops",
+                "/podcast"
             ],
             "last_modified": "2026-04-17T07:38:52-07:00",
             "markdown_path": "_d/hill-climbing.md",
@@ -3715,15 +3732,15 @@
             "url": "/humans-are-underrated"
         },
         "/hyper-personal": {
-            "description": "Useful writing tells people something true and important they didn’t already know — in a way that leaves no doubt. The problem: everyone is different. Reader’s frame, jargon, blind spots all differ. Either you write for a vague average and lose almost everyone, or you write for one specific person and lose everyone else. AI breaks the tradeoff.\n\n",
-            "doc_size": 31000,
+            "description": "Jeff Bezos has always had a personal chef who knows he hates capers but loves dill. A butler. A tailor with his measurements. A physician who’s known his family for years. None of this is new — Vanderbilts had the same staff a century ago. The desire was universal; what gated it was cost. Human attention scales 1:1 with each customer, so personalization stayed scarce — concentrated where the money was, thin everywhere else.\n\n",
+            "doc_size": 33000,
             "file_path": "_site/hyper-personal.html",
             "incoming_links": [
                 "/ai-journal",
                 "/ai-second-brain",
                 "/how-igor-chops"
             ],
-            "last_modified": "2026-05-12T09:56:22-07:00",
+            "last_modified": "2026-05-13T06:20:04-07:00",
             "markdown_path": "_d/hyper-personal.md",
             "outgoing_links": [
                 "/ai-journal",
@@ -4365,7 +4382,7 @@
         },
         "/mermaid": {
             "description": "Lets try d2\n\n",
-            "doc_size": 14000,
+            "doc_size": 15000,
             "file_path": "_site/mermaid.html",
             "incoming_links": [],
             "last_modified": "2023-12-17T18:49:14+00:00",
@@ -5042,16 +5059,17 @@
         },
         "/podcast": {
             "description": "To my amazement, I listen to podcasts. I think they’re pretty interesting, here are my notes on them.\n\n",
-            "doc_size": 17000,
+            "doc_size": 19000,
             "file_path": "_site/podcast.html",
             "incoming_links": [
                 "/enable",
                 "/hyper-personal"
             ],
-            "last_modified": "2026-05-12T05:50:21-07:00",
+            "last_modified": "2026-05-12T09:48:49-07:00",
             "markdown_path": "_d/podcast.md",
             "outgoing_links": [
-                "/7h-concepts"
+                "/7h-concepts",
+                "/hill-climbing"
             ],
             "redirect_url": "",
             "title": "Podcasting",
@@ -5282,19 +5300,29 @@
         },
         "/raccoon-history": {
             "description": "Every blog needs a mascot, and mine is a raccoon — specifically, a cute anthropomorphic raccoon wearing rainbow round glasses, a green t-shirt with bold white text, and mismatched Crocs (blue left, yellow right). Here’s the story of how that character evolved from early AI experiments to a cohesive visual brand.\n\n",
-            "doc_size": 22000,
+            "doc_size": 27000,
             "file_path": "_site/raccoon-history.html",
             "incoming_links": [],
             "last_modified": "2026-03-21T12:32:21-07:00",
             "markdown_path": "_d/raccoon-history.md",
             "outgoing_links": [
+                "/7-habits",
+                "/ai-journal",
                 "/ai-native-manager",
+                "/be-proactive",
                 "/caring",
+                "/end-in-mind",
                 "/eulogy",
+                "/first-things-first",
+                "/first-understand",
                 "/greek-orthodox",
+                "/image-selector",
+                "/sharpen-the-saw",
                 "/shoulder-pain",
+                "/synergize",
                 "/taxes",
                 "/timeoff-2022-12",
+                "/win-win",
                 "/writing"
             ],
             "redirect_url": "",
@@ -5602,7 +5630,8 @@
             "incoming_links": [
                 "/7-habits",
                 "/emotional-health",
-                "/physical-health"
+                "/physical-health",
+                "/raccoon-history"
             ],
             "last_modified": "2026-05-11T07:14:49-07:00",
             "markdown_path": "_d/7h-c7.md",
@@ -6058,7 +6087,8 @@
             "doc_size": 29000,
             "file_path": "_site/synergize.html",
             "incoming_links": [
-                "/7-habits"
+                "/7-habits",
+                "/raccoon-history"
             ],
             "last_modified": "2026-05-11T07:14:49-07:00",
             "markdown_path": "_d/7h-c6.md",
@@ -7247,12 +7277,13 @@
         },
         "/win-win": {
             "description": "Win/Win is a constantly seeking mutual benefit in all interactions. Win/Win means that agreements or solutions are mutually beneficial, mutually satisfying. With a Win/Win solution, all parties feel good about the decision and feel committed to the action plan. Win/Win sees life as a cooperative, not a competitive arena. Most people tend to think in terms of dichotomies: strong or weak, hardball or softball, win or lose. But that kind of thinking is fundamentally flawed. It’s based on power and position rather than on principle. Win/Win is based on the paradigm that there is plenty for everybody, that one person’s success is not achieved at the expense or exclusion of the success of others.\n\n",
-            "doc_size": 47000,
+            "doc_size": 48000,
             "file_path": "_site/win-win.html",
             "incoming_links": [
                 "/7-habits",
                 "/curious",
                 "/negotiate",
+                "/raccoon-history",
                 "/sell",
                 "/synergize",
                 "/voices",
