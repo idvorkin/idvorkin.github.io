@@ -22,11 +22,12 @@ But first, one of the things I really hate: the homogenization of everything. It
 
 - [Sergio's school](#sergios-school)
 - [The doomer narrative is loud. The optimism case is louder.](#the-doomer-narrative-is-loud-the-optimism-case-is-louder)
-- [AI helps you think](#ai-helps-you-think)
-- [AI lets you create](#ai-lets-you-create)
+- [AI helps you think and learn](#ai-helps-you-think-and-learn)
+- [AI lets you create at the speed of thought](#ai-lets-you-create-at-the-speed-of-thought)
 - [Democratization of art](#democratization-of-art)
 - [AI clears the small-business tax — and the result is more diversity, not less](#ai-clears-the-small-business-tax--and-the-result-is-more-diversity-not-less)
 - [Stuff I know nothing about, but I'm sure is going to be awesome: AI and medicine](#stuff-i-know-nothing-about-but-im-sure-is-going-to-be-awesome-ai-and-medicine)
+- [Change is hard, and previous winners will be losers](#change-is-hard-and-previous-winners-will-be-losers)
 - [But what about the doom?](#but-what-about-the-doom)
 
 <!-- vim-markdown-toc-end -->
@@ -52,7 +53,7 @@ If you read the news, AI is going to take your job, flatten culture, make everyo
 
 Three threads I keep pulling on: AI helps you _think_, AI lets you _create_, and AI clears the tax on starting things small. Each one is more important than it sounds.
 
-## AI helps you think
+## AI helps you think and learn
 
 The version of "AI for thinking" that gets you in trouble is _AI for outsourcing thinking_ — let the model do the cognitive work, take the output, ship it. That's not what I mean.
 
@@ -64,7 +65,7 @@ The deeper version of this is the [AI second brain](/ai-second-brain). It's not 
 
 This is the version of AI-for-thinking I love. Not "AI does the thinking" — "AI makes the thinking I was already doing dramatically better."
 
-## AI lets you create
+## AI lets you create at the speed of thought
 
 I run a raccoon mascot system on this blog. Cute anthropomorphic raccoon, rainbow round glasses, green t-shirt with bold white text, mismatched Crocs — sixteen of them now, one per major theme. Years ago, that was a project I'd have to commission. I'd find an illustrator, brief them, negotiate, wait, get something close-but-not-quite, iterate, pay again. Maybe it would happen. Probably it wouldn't.
 
@@ -98,7 +99,15 @@ That's not homogenization. That's the opposite of homogenization. The doomer sto
 
 I'm not a doctor. I'm not a biologist. I have no business having opinions on drug discovery or protein folding or radiology. But I watch the trajectory and I get genuinely excited — the rare-disease kid whose diagnosis used to take seven years and four specialists, the cancer treatment tuned to the specific mutation in your specific tumor, the imaging read that catches the thing the tired human eye missed at 2am. None of that is hypothetical anymore; it's just early. And I don't know the half of it, and that's the point — the exciting stuff isn't going to come from the people who already know the field. It's going to come from outsiders who can finally stand on the shoulders of AI.
 
+## Change is hard, and previous winners will be losers
+
+Yes, change is hard. Some of the people who built careers on the homogeneous, tax-paying world of yesterday — gatekeepers, professionals whose entire value was access to expertise that's now democratized — are going to struggle in the new one. That's true of every wave of progress: the industrial revolution, the internet, every step-change before this one ate the people who'd optimized for the prior plateau. Naming that honestly is part of being optimistic, not opposed to it. The transition will hurt some specific people in some specific ways. _And_ the destination is still the right one — more agency for more people, more specific human stories shipped, more Sergios who get to start their school. But here's why I'm still net-bullish on the destination, and why the doom case keeps under-shooting reality.
+
 ## But what about the doom?
+
+Every previous wave of pessimism has had its horse-poop moment. In the late 19th century, New York was projected to drown in horse manure within a few decades — there were genuine urban-planning conferences about the looming horse-shit crisis, extrapolating linearly from current traffic onto current technology. Then the automobile showed up and the projected catastrophe became a non-issue overnight. That's the move the pessimist always misses: today's constraint gets dissolved by the next wave, not endured forever inside the current one.
+
+Or take the "but we're losing skills" panic. Sure — basically nobody can read a paper map anymore. _And_ basically nobody is lost. _And_ a lot of marriages got saved (the "left at the next light, NO the OTHER left" fight is mercifully extinct). Skills die, new layers emerge on top of them, and the net is more freedom and less friction, not less. The lost-skill is real; it's just not the thing that matters.
 
 Three objections deserve a sentence each.
 
