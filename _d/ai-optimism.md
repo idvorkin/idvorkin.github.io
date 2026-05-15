@@ -20,28 +20,31 @@ But first, one of the things I really hate: the homogenization of everything. It
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [Sergio's store](#sergios-store)
+- [Sergio's school](#sergios-school)
 - [The doomer narrative is loud. The optimism case is louder.](#the-doomer-narrative-is-loud-the-optimism-case-is-louder)
 - [AI helps you think](#ai-helps-you-think)
 - [AI lets you create](#ai-lets-you-create)
+- [Democratization of art](#democratization-of-art)
 - [AI clears the small-business tax — and the result is more diversity, not less](#ai-clears-the-small-business-tax--and-the-result-is-more-diversity-not-less)
+- [Stuff I know nothing about, but I'm sure is going to be awesome: AI and medicine](#stuff-i-know-nothing-about-but-im-sure-is-going-to-be-awesome-ai-and-medicine)
 - [But what about the doom?](#but-what-about-the-doom)
-- [My bet for 2031](#my-bet-for-2031)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-## Sergio's store
+## Sergio's school
 
-Sergio is not a lawyer, a real-estate broker, a graphic designer, or a general contractor. He's a guy who knows the neighborhood he wants to serve and the products he wants to put on the shelves. Until very recently, opening a small store meant either paying four professionals their hourly rate or knowing four professionals who'd do you a favor. If you had neither the money nor the network, you didn't open the store. You worked for someone who did.
+Sergio is not a curriculum architect, a state-compliance lawyer, a marketing-and-admissions person, a financial-aid administrator, or a development director. He's a guy who knows the kids in his neighborhood and has a clear vision of how they should be taught — project-based, his own pedagogy, his own curriculum. Until very recently, opening a small school meant either paying five professionals their hourly rate or knowing five professionals who'd do you a favor. If you had neither the money nor the network, you didn't open the school. You worked at someone else's.
 
 Now Sergio sits down at a laptop and gets to work.
 
-He drafts the lease himself with an AI walking him through every clause, flagging the landlord-friendly ones, suggesting redlines. He pulls comps for retail rent in three neighborhoods and gets a one-page memo on which corner has the best foot traffic for what he's selling. He generates ten sign mockups in his actual aesthetic — not the seven the design firm would have offered — and picks the one he likes. He gets a construction punchlist, vendor quotes annotated for what's reasonable, and a checklist of permits with the city's specific forms pre-filled.
+He drafts curriculum units himself with an AI walking him through state standards, flagging where his project-based approach hits required outcomes and where it needs a tweak to comply. He generates a parent-facing prospectus in his actual voice — not the generic one a marketing firm would have written — and iterates it until it sounds like him. He pulls tuition comps for the region and gets a one-page operating cost model with realistic teacher salaries, lease ranges, and a break-even count. He drafts the 501(c)(3) paperwork, builds a teacher hiring rubric tuned for the kind of educators his pedagogy actually needs, and gets a checklist of permits with the city's specific forms pre-filled.
 
-None of this replaces the lawyer, the broker, the designer, or the GC. He still hires them where it matters. But he walks into each conversation 80% of the way there. He knows what the lease should say. He knows the rent is fair. He knows the sign is what he wants. The professionals get to do the genuinely hard parts and Sergio doesn't get fleeced on the easy ones.
+None of this replaces the compliance lawyer, the curriculum consultant, the development director, or the admissions person. He still hires them where it matters. But he walks into each conversation 80% of the way there. He knows what the standards alignment looks like. He knows the tuition is in range. He knows the prospectus says what he means. The professionals get to do the genuinely hard parts and Sergio doesn't get fleeced on the easy ones.
 
-That's one store. Sergio's store.
+That's one school. Sergio's school.
+
+Sergio gets his school. So does the next person.
 
 ## The doomer narrative is loud. The optimism case is louder.
 
@@ -71,21 +74,29 @@ And it's not just images. The hyper-personal thread doesn't stop at words. Songs
 
 That's the second thing I love. The creative ceiling for one person with taste just lifted by an order of magnitude.
 
+## Democratization of art
+
+_TODO: Alex — your take here on what AI is doing to the creator-class, the floor-vs-ceiling argument, and the gallery-system implications. Drop in 200-400 words._
+
 ## AI clears the small-business tax — and the result is more diversity, not less
 
 Back to Sergio.
 
-The deepest thing the doomer narrative gets wrong is the homogenization argument. "AI will make everything the same — same content, same designs, same shops, all averaged out into beige." That's true if you assume AI _replaces_ the human creator or operator. It's the opposite of true if you assume AI gives the human their own staff.
+The deepest thing the doomer narrative gets wrong is the homogenization argument. "AI will make everything the same — same content, same designs, same schools, all averaged out into beige." That's true if you assume AI _replaces_ the human creator or operator. It's the opposite of true if you assume AI gives the human their own staff.
 
-Before AI: starting a small thing — a store, a practice, a label, a tiny shop with one specific aesthetic — required paying the entry tax. Lawyer fees for incorporation and contracts. A broker's cut on the lease. A design firm for a logo and signs. A GC for the build-out. Each of those professionals had their own clients to prioritize, their own rates that priced out anyone without capital, their own template solutions that homogenized the output anyway because they reused the same patterns across clients.
+Before AI: starting a small thing — a school, a practice, a label, a tiny shop with one specific aesthetic — required paying the entry tax. Compliance lawyers for the 501(c)(3) and the state filings. A curriculum consultant. A marketing firm for the prospectus and admissions materials. A development director to make the funding model work. Each of those professionals had their own clients to prioritize, their own rates that priced out anyone without capital, their own template solutions that homogenized the output anyway because they reused the same patterns across clients.
 
-Most of that tax was the entry barrier. It wasn't gatekeeping the quality of the businesses — it was gatekeeping who got to start one. The result was a strip mall with five franchise tenants because those were the only operators who could pay the tax. Bremerton, Washington, has a strip mall like that. Every American small town does.
+Most of that tax was the entry barrier. It wasn't gatekeeping the quality of the schools — it was gatekeeping who got to start one. The result, in education: in Bremerton, Washington, and every American small town like it, the only options are the district public school, maybe one private school, and a couple of franchise tutoring chains in the strip mall. Three flavors of education for the whole town, because those were the only operators who could pay the tax.
 
-AI doesn't replace those professionals. It gives Sergio his own draft of each piece of their work so he can show up to the human conversations already 80% of the way there. The lawyer still gets paid — for the hard call about which redline matters, not for the boilerplate. The broker still earns their cut — on the relationship and the negotiation, not on aggregating MLS comps Sergio can now pull himself. The designer still designs the things Sergio can't iterate to alone. The GC still does the build.
+AI doesn't replace those professionals. It gives Sergio his own draft of each piece of their work so he can show up to the human conversations already 80% of the way there. The compliance lawyer still gets paid — for the hard call about which state requirement actually bites, not for the boilerplate. The curriculum consultant still earns their fee — on the deep pedagogy questions, not on aligning units to standards Sergio can now check himself. The marketing person still shapes the messaging Sergio can't iterate to alone. The development director still works the donor network.
 
-What changes is _who gets to start_. The bodega Sergio specifically would have run, with his specific taste, in his specific neighborhood — that bodega now exists. So does the seamstress's shop, the bookstore the librarian always wanted, the small bakery that doesn't fit a franchise template. The strip mall in Bremerton becomes thirty small shops instead of five chain tenants, because the entry tax collapsed.
+What changes is _who gets to start_. The STEM school Sergio specifically would have run, with his specific pedagogy, for the specific kids in his neighborhood — that school now exists. So does the seamstress's shop, the bookstore the librarian always wanted, the small bakery that doesn't fit a franchise template. Bremerton stops being one district school plus one private plus a tutoring franchise — it becomes a dozen small specific micro-schools, each one a real teacher with a real vision, because the entry tax collapsed.
 
 That's not homogenization. That's the opposite of homogenization. The doomer story has the polarity backwards.
+
+## Stuff I know nothing about, but I'm sure is going to be awesome: AI and medicine
+
+I'm not a doctor. I'm not a biologist. I have no business having opinions on drug discovery or protein folding or radiology. But I watch the trajectory and I get genuinely excited — the rare-disease kid whose diagnosis used to take seven years and four specialists, the cancer treatment tuned to the specific mutation in your specific tumor, the imaging read that catches the thing the tired human eye missed at 2am. None of that is hypothetical anymore; it's just early. And I don't know the half of it, and that's the point — the exciting stuff isn't going to come from the people who already know the field. It's going to come from outsiders who can finally stand on the shoulders of AI.
 
 ## But what about the doom?
 
@@ -93,18 +104,8 @@ Three objections deserve a sentence each.
 
 **"Jobs go away."** Some jobs do. New layers of agency open for people who couldn't access them before. Net new first-time owners. The transition is real and painful; the destination is more individual agency, not less.
 
-**"AI homogenizes everything."** Only if you assume AI _replaces_ the human. Sergio's bodega is the counter-example. When AI is the staff and the human is the operator, you get _more_ specific human stories shipped, not fewer.
+**"AI homogenizes everything."** Only if you assume AI _replaces_ the human. Sergio's school is the counter-example. When AI is the staff and the human is the operator, you get _more_ specific human stories shipped, not fewer.
 
 **"AI is slop."** Slop is bad prompting plus no taste. When you bring taste, AI multiplies it — see the raccoon project. The slop problem is a taste problem dressed up as a technology problem.
 
 I'm not interested in litigating these at length. The point of this post is the optimism case, and the optimism case stands on its own evidence.
-
-## My bet for 2031
-
-Five years from now: every small business with fewer than ten employees has an AI staff. The lawyer, the bookkeeper, the marketer, the customer-service rep, the operations manager — all of them are an AI the owner pays a flat monthly fee for, with a human professional dialed in only where it actually matters.
-
-The visible consequence: the strip mall in Bremerton has thirty stores, not five. The new restaurants are independents with one chef's specific vision, not franchise rollouts. The bookstores come back. The local clothing label your neighbor runs out of her garage is actually viable. The seamstress, the cobbler, the small repair shop — the businesses that died in the 90s because the entry tax outran their margins — they come back with different economics.
-
-Sergio gets his store. So does the next person.
-
-That's what I love about AI. Not the chatbots, not the demos, not the benchmark scores. The specific, named, ordinary human who finally gets to start the thing they always wanted to start.
