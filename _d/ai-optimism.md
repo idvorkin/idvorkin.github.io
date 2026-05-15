@@ -6,14 +6,13 @@ redirect_from:
   - /ai-love
   - /ai-optimism
   - /ai-optimisim
+  - /ai-optimisit
 tags:
   - ai
 imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-money.webp
 ---
 
-Let me tell you about Sergio, and why I'm incredibly optimistic about AI.
-
-But first, one of the things I really hate: the homogenization of everything. It doesn't matter where you go — every strip mall is the same five tenants, every main street the same chains. Once in a while I find a gem. A typewriter store. A tiny bookstore with one specific aesthetic. A shop that exists because one person with taste decided it should. And every time, I think: why don't we have more of these?
+Let me tell you about Sergio, and why I'm incredibly optimistic about AI. But first, one of the things I really hate: the homogenization of everything. It doesn't matter where you go — every strip mall is the same five tenants, every main street the same chains. Once in a while I find a gem — a typewriter store, a tiny bookstore with one specific aesthetic, a shop that exists because one person with taste decided it should. And every time, I think: why don't we have more of these?
 
 {% include ai-slop.html percent="90" %}
 
@@ -79,6 +78,12 @@ That's the second thing I love. The creative ceiling for one person with taste j
 
 _TODO: Alex — your take here on what AI is doing to the creator-class, the floor-vs-ceiling argument, and the gallery-system implications. Drop in 200-400 words._
 
+_Open questions for Alex:_
+
+- _Should this be your own guest post (full sub-post) rather than just a section embedded here?_
+- _What's the definition of art?_
+- _Why was this kind of art-making impossible before AI? (Analogous to the strip-mall / entry-tax framing for Sergio's school — what was the gatekeeping tax on art, and what specifically did AI collapse?)_
+
 ## AI clears the small-business tax — and the result is more diversity, not less
 
 Back to Sergio.
@@ -92,6 +97,8 @@ Most of that tax was the entry barrier. It wasn't gatekeeping the quality of the
 AI doesn't replace those professionals. It gives Sergio his own draft of each piece of their work so he can show up to the human conversations already 80% of the way there. The compliance lawyer still gets paid — for the hard call about which state requirement actually bites, not for the boilerplate. The curriculum consultant still earns their fee — on the deep pedagogy questions, not on aligning units to standards Sergio can now check himself. The marketing person still shapes the messaging Sergio can't iterate to alone. The development director still works the donor network.
 
 What changes is _who gets to start_. The STEM school Sergio specifically would have run, with his specific pedagogy, for the specific kids in his neighborhood — that school now exists. So does the seamstress's shop, the bookstore the librarian always wanted, the small bakery that doesn't fit a franchise template. Bremerton stops being one district school plus one private plus a tutoring franchise — it becomes a dozen small specific micro-schools, each one a real teacher with a real vision, because the entry tax collapsed.
+
+And selfishly: every Sergio who ships their school is one less generic box store / box school in my world. Every weird specific shop with one person's taste behind it is one less identical strip-mall tenant I have to walk past. The homogenization I hate gets thinner every time someone like Sergio actually clears the bar.
 
 That's not homogenization. That's the opposite of homogenization. The doomer story has the polarity backwards.
 
