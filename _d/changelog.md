@@ -12,6 +12,15 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Week of 2026-05-18](#week-of-2026-05-18)
+  - [What I Love About AI (new post!)](#what-i-love-about-ai-new-post)
+  - [Parenting Books: Emotional Lives + Untangled Rewrite](#parenting-books-emotional-lives--untangled-rewrite)
+  - [Hyper-Personal: Bezos to Agent-to-Agent](#hyper-personal-bezos-to-agent-to-agent)
+  - [Igor's Podcast Launch](#igors-podcast-launch)
+  - [Raccoon System: 7H Marathon + Choice-Sheet Pattern](#raccoon-system-7h-marathon--choice-sheet-pattern)
+  - [AI Journal: Options Over Answers](#ai-journal-options-over-answers)
+  - [Infrastructure & CI (2026-05-18)](#infrastructure--ci-2026-05-18)
+  - [Other Projects (2026-05-18)](#other-projects-2026-05-18)
 - [Week of 2026-05-11](#week-of-2026-05-11)
   - [7 Habits: Full Chapter Augmentation](#7-habits-full-chapter-augmentation)
   - [AI Journal: Tokens and the Wrong Jungle](#ai-journal-tokens-and-the-wrong-jungle)
@@ -100,6 +109,88 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+## Week of 2026-05-18
+
+_27 commits this week_
+
+### What I Love About AI (new post!)
+
+New post at [/ai-optimism](/ai-optimism) — the optimism case for AI, anchored on Sergio: a guy with a vision for a STEM school who couldn't open one because the entry tax (compliance lawyer, curriculum consultant, admissions staff, development director) was out of reach. AI doesn't replace those professionals — it lets Sergio show up to each conversation already 80% of the way there, so the professionals get to do the genuinely hard parts. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/26871ddde)
+
+The anti-homogenization thesis is the spine: the doomer story says AI averages everything into beige. The actual dynamic goes the other way — when AI is the staff and the human is the operator, more specific human stories get shipped, not fewer. Every Sergio who opens his school is one less generic box. The post walks through four threads:
+
+- **AI helps you think** — hyper-personal tutoring, the AI second brain that knows your specific prior misconception, not the textbook one. "AI doesn't assume. AI asks. And then AI explains, and re-explains, and re-explains, and never gets bored."
+- **AI lets you create** — raccoon mascot system as the example: what once required commissioning an illustrator now closes in a weekend. _Taste_ is the bottleneck. AI multiplies whatever you bring.
+- **The small-business tax** — Bremerton stops being one district school + one private + a tutoring franchise; it becomes a dozen micro-schools each with a real teacher's real vision, because the entry tax collapsed.
+- **Doom rebuttal** — the horse-manure crisis (1898 NYC urban-planning conference broke up early because no one could see out of the projected horse-shit catastrophe; the automobile dissolved it overnight); the GPS/map-reading example; three objections each answered in a sentence. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/fa7d2052c)
+
+### Parenting Books: Emotional Lives + Untangled Rewrite
+
+Two Lisa Damour book-notes updates this week:
+
+**[/emotional-lives](/emotional-lives)** — New post: full notes on _The Emotional Lives of Teenagers_. Damour's central argument: mental health isn't feeling good — it's having the right feelings at the right time and being able to manage them. The wellness industry sold us the opposite. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/682976fd3)
+
+Five chapter treatments:
+
+- **Ch 1 — Three myths**: emotion vs. reason (anxiety is data, not noise); difficult emotions are bad (the breakup is how she gets stronger; substances halt maturation by skipping the pain); emotional = fragile (they hold it together at school, fall apart at home — the system _working_). Cold cognition plans the party; hot cognition attends it — rehearse the plan at the cold moment.
+- **Ch 2 — Gender and emotion**: boys distract to cope, girls discuss. Same hurt, different ripple. Help girls handle anger; help boys talk feelings. Adultification of Black teens as the compounding variable.
+- **Ch 3 — The seismic shift**: disgust-sensitivity for parents spikes at puberty (evolutionary: she can't afford you getting her sick). Risk-seeking is a feature (drives leaving the nest) not a bug. Starting life online changes peer formation timelines.
+- **Ch 4 — Expression playbook**: listen like a headline editor. "Oh my god, that stinks" beats problem-solving. Sharpen her emotional vocabulary. Take conversational openings when they come; don't manufacture them.
+- **Ch 5 — Control playbook**: expression first, control second. Distraction is a tool, not a failure. Sleep is the glue. Future-you perspective as the reframe lever. Regulate yourself first.
+
+**[/untangled](/untangled)** — Full rewrite in Igor 7h-c1 style: terse H3 headlines, 2-4 paragraph treatments per section. Seven developmental strands now fully covered with a worry-when for each. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/612e2d2ff)
+
+### Hyper-Personal: Bezos to Agent-to-Agent
+
+[/hyper-personal](/hyper-personal) got a major restructure this week — new opening, new hero image, new sections, and a cleaner spine. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/11413195f)
+
+**New intro**: Bezos vignette as the frame. He always had a personal chef, a butler, a tailor, an in-house physician — the Vanderbilts had the same staff a century ago. The desire was universal; what gated it was cost. Human attention scales 1:1, so personalization stayed scarce. "The big shift is the price." AI dropped marginal cost through the floor; the Bezos experience is becoming the everyone-default. And the AI version goes further: even Bezos's chef didn't know his blood glucose response to last week's pasta. New dimensions (biometric feedback, HRV, longitudinal pattern detection) that didn't exist at any price. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/bc1b9ac7d)
+
+**New ML-ranking progression section**: five stages from print-newspaper-everyone-sees-the-same to per-user generation, each stage named by what constraint it removed (popularity counter → collaborative filtering math → deep learning at scale → cheap-enough generation). The online progression and the physical-world progression are the same story told twice.
+
+**New agent-to-agent endpoint section**: every piece of content has an author agent holding the author's intent; every reader has a reader agent (their second brain). They negotiate the explanation — the author agent reformulates, the reader agent responds, and crucially the author agent runs a **fidelity check** on each reformulation so the simplification doesn't quietly drop signal. "Without the fidelity check, the reader agent would just reformulate toward the reader's existing model and you'd end up with hyper-personalized bullshit." One source, infinite tailored explanations, each verified against intent. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/11413195f)
+
+**Hero illustration**: Gilded-Age butler raccoon added as the `imagefeature` cover. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1cba1b24a)
+
+### Igor's Podcast Launch
+
+[/podcast](/podcast) now documents Igor's own audio feed — AI voiceover (Gemini 3.1 Flash TTS, Charon voice) of his essays, with chapter markers and Podcasting 2.0 sidecar JSON. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3c2dbed1a)
+
+- **RSS feed + subscribe URL**: `https://idvorkin-ai-tools.github.io/podcast/feed.xml` — plug into Overcast / Apple Podcasts / Pocket Casts.
+- **Voice catalog iframe** embedded under /podcast — 30 Gemini TTS prebuilt voices, tap to audition before subscribing. Hill-climbing variant: soprano-iteration uses a Gemini Pro model-as-judge to tune Charon toward Tony Soprano ([/hill-climbing#soprano-tune](/hill-climbing#soprano-tune-a-voice-prompt-with-a-model-as-judge)). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/730573f42)
+- **Transparent cover art** — raccoon-narrator at microphone, right-floated. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/46dc6d76c)
+
+### Raccoon System: 7H Marathon + Choice-Sheet Pattern
+
+The raccoon mascot system went from 16 to 23 images this week. The 7 Habits chapter posts each got a custom hero raccoon, generated in four iterations (v1→v4, 35 cells on the final pass) and picked via a click-to-pick HTML sheet. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6f088798d)
+
+Three lessons documented in [/raccoon-history#the-7-habits-marathon-may-2026](/raccoon-history#the-7-habits-marathon-may-2026):
+
+- **Reference images beat prompt prose**: passing `raccoon-nerd.webp` as a Gemini Pro reference locked canonical style 100% of the time. No amount of `IMPORTANT: rainbow glasses, mismatched Crocs…` text ever matched one reference image. Imagen ignored the style block entirely.
+- **Recraft's `removeBackground` beat the local chroma-key pipeline**: six hill-climbing attempts had reached 65× improvement (residual magenta: 17,385 → 269) with a `flood4→tight-fuzz 3%` two-stage winner — clean on white, broken elsewhere. Switching to Recraft at ~$0.01/image solved it in an afternoon. Wrong jungle.
+- **AI helps you think by showing options**: the choice-sheet pattern — 7 rows × 5 variations, `localStorage`-persistent picks, JSON copy button. ~15 minutes of human picking and the right raccoons were obvious. Cheap model for the wide pass, human picks, expensive model only for the winners.
+
+**[/image-selector](/image-selector)** — New tool page, preloaded with the 35 v4 Seven Habits raccoons, base64-inlined (~1.9MB, no external image deps). The reusable pattern is published as a [public gist](https://gist.github.com/idvorkin-ai-tools/309aea3cd0d2e43e783f2c061e920755) (CC0 — fork, swap in your images, ship). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/b34f65961)
+
+### AI Journal: Options Over Answers
+
+New entry [2026-05-11](/ai-journal#2026-05-11) — the choice-sheet lesson distilled to a rule: when the work is a judgment call you'll live with, AI should **widen the option space, not narrow it**. "I often can't articulate my taste in the abstract — but I can tell you which raccoon I want when I see them side-by-side." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/422a97de9)
+
+The pattern generalizes: code abstractions, copy variations, naming, design alternatives, decision framing — anything where "best" is taste, not truth. The [/image-selector](/image-selector) is the live demo; the gist is the reusable scaffold.
+
+### Infrastructure & CI (2026-05-18)
+
+- **Backlinks rebuild** after the week's post additions. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/512f755c7)
+
+### Other Projects (2026-05-18)
+
+**[idvorkin-ai-tools/podcast](https://github.com/idvorkin-ai-tools/podcast)** (new repo) — Igor's Podcast gets its own dedicated home. Feed at `https://idvorkin-ai-tools.github.io/podcast/feed.xml`. Two episodes shipped this week:
+
+- **Episode 001**: 7 Habits of Highly Effective People — 60.9 MB, ~2h13m solo narration, 8 ID3 CHAP chapter markers + Podcasting 2.0 sidecar JSON. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/podcast/commit/e75080e7a)
+- **Episode 002**: Eulogy + Affirmations (22:16) — three pieces: the eulogy I'd want at my funeral (Charon narration, ~14 min), the eulogy as a Suno-generated pop song (~2:14), and affirmations I work every day (Charon narration, ~6 min). Chapter markers embedded + sidecar JSON. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/podcast/commit/41353158e)
+
+**[idvorkin/blob](https://github.com/idvorkin/blob)** — podcast transparent cover art, hyper-personal hero image (Gilded-Age butler raccoon), podcast episode audio + chapter markers. [<i class="fa fa-github"></i>](https://github.com/idvorkin/blob/commit/710f91774)
 
 ## Week of 2026-05-11
 
