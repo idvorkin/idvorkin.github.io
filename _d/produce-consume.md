@@ -103,6 +103,8 @@ Run [the same test we use for any addiction](/addiction) — the five-signal che
 
 If the answer to "why am I shipping this?" is "I just need to ship one more thing and then I'll rest" — you're chasing the dragon. Production is supposed to be a substitute for empty consumption, not a substitute for presence, your body, the people who love you, or sitting with a thought long enough to actually have it.
 
+{%include summarize-page.html src="/addiction"%}
+
 Make stuff. Make a lot of stuff. But notice when the making becomes the same scroll, just with extra steps.
 
 ## The Bottom Line
