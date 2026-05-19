@@ -101,6 +101,6 @@ Make stuff. Make a lot of stuff. But notice when the making becomes the same scr
 
 You have two choices. You can consume your way through life, letting other people's creations wash over you like waves, leaving no trace except the time they took. Or you can produce your way through life, leaving a trail of imperfect, authentic, gradually-improving creations that say "I was here. I tried. I made something."
 
-The consumers will always outnumber the producers. That's fine. Let them. While they're watching, you'll be doing. While they're scrolling, you'll be building. While they're consuming your content... wait, that means you won.
+Consumers will always outnumber producers. That's fine. Let them. While they're watching, you're doing. While they're scrolling, you're building. That's not a competition — it's just a different game entirely.
 
 Start today. Start tiny. Start terrible. But start producing. Because at the end of your life, you won't remember what you consumed. But you'll remember — and others will remember — what you produced.
