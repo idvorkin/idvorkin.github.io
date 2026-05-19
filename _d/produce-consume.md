@@ -93,7 +93,15 @@ Here's the warning your producer-bro doesn't want to hear: production can become
 
 The tells are subtle because they look like virtue. You skip dinner with your kid to "just finish this post." You can't sit still without a draft open. You measure your day in commits, words, ships — and feel hollow on the days the scoreboard doesn't move. You're producing _at_ life instead of _living_ it. The output is real, but the motivation is anxiety wearing a craftsman's apron.
 
-The test: are you producing because the work matters, or because you can't bear to stop? If the answer is "I just need to ship one more thing and then I'll rest" — you're chasing the dragon. Production is supposed to be a substitute for empty consumption, not a substitute for presence, your body, the people who love you, or sitting with a thought long enough to actually have it.
+Run [the same test we use for any addiction](/addiction) — the five-signal check that distinguishes compulsive work from real passion, adapted for production:
+
+- You DON'T want to be shipping but feel compelled to
+- You're checking analytics at 10pm not because you want to, but because you can't stand the anxiety of not checking
+- You're drafting during family time not because the idea is fascinating, but because you're escaping the discomfort of being present
+- The rest of your life is suffering — relationships, health, hobbies all deteriorating
+- You feel "out of control" — you can't stop producing even when you know you should
+
+If the answer to "why am I shipping this?" is "I just need to ship one more thing and then I'll rest" — you're chasing the dragon. Production is supposed to be a substitute for empty consumption, not a substitute for presence, your body, the people who love you, or sitting with a thought long enough to actually have it.
 
 Make stuff. Make a lot of stuff. But notice when the making becomes the same scroll, just with extra steps.
 
