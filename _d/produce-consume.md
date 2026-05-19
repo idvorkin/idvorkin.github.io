@@ -22,6 +22,7 @@ Remember when you finished binge-watching that entire series and felt... empty? 
   - [When Someone Gets Value: The True Measure of Production](#when-someone-gets-value-the-true-measure-of-production)
   - [Bigger Muscles: Skills That Compound](#bigger-muscles-skills-that-compound)
   - [The Compound Effect of Creating](#the-compound-effect-of-creating)
+- [The Production Trap](#the-production-trap)
 - [The Bottom Line](#the-bottom-line)
 
 <!-- vim-markdown-toc-end -->
@@ -85,6 +86,16 @@ The best part? These muscles transfer. Write better emails because you blog. Giv
 Here's the beautiful thing about production: it compounds. Your first video might suck, but your tenth will suck less. Your hundredth might actually be good. Your thousandth might help someone. Each creation builds on the last, even when you can't see it.
 
 But consumption? It doesn't compound. Watching a thousand videos doesn't make you better at anything except watching videos. Reading a thousand articles doesn't make you a writer. Listening to a thousand podcasts doesn't make you a speaker. Consumption is linear at best, often circular. You end up where you started, just older.
+
+## The Production Trap
+
+Here's the warning your producer-bro doesn't want to hear: production can become its own addiction. The same dopamine loop that makes TikTok dangerous can hook you on shipping. The hit of publishing. The notification of a new view. The little spike when the metric ticks up. Your brain doesn't care whether the dopamine came from someone else's content or your own — a hit's a hit.
+
+The tells are subtle because they look like virtue. You skip dinner with your kid to "just finish this post." You can't sit still without a draft open. You measure your day in commits, words, ships — and feel hollow on the days the scoreboard doesn't move. You're producing _at_ life instead of _living_ it. The output is real, but the motivation is anxiety wearing a craftsman's apron.
+
+The test: are you producing because the work matters, or because you can't bear to stop? If the answer is "I just need to ship one more thing and then I'll rest" — you're chasing the dragon. Production is supposed to be a substitute for empty consumption, not a substitute for presence, your body, the people who love you, or sitting with a thought long enough to actually have it.
+
+Make stuff. Make a lot of stuff. But notice when the making becomes the same scroll, just with extra steps.
 
 ## The Bottom Line
 
