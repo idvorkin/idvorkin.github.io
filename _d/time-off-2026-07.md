@@ -31,14 +31,68 @@ For context on why I take time off: [/time-off](/time-off).
 
 All 4 Dvorkins (Igor, Tori, Zach, Amelia). The Iceland and Copenhagen legs are just us. We meet up with the Saffitzes in Stockholm on the evening of Jul 3 and travel together through Amsterdam — separate booking units, overlapping itinerary.
 
-## What I'm looking forward to
+## Things we want to do (by leg)
 
-- **Iceland stopover** — Icelandair's free stopover program makes a 2-day Reykjavík stop nearly free. First time in Iceland for everyone. Mid-size SUV, the Blue Lagoon-or-not call still TBD.
-- **Copenhagen with Ammon** — 2 days hanging with [Ammon](/ammon-quotes). His own quote when I floated 2 days: "Yeah 2 days works. There's not much to see in Copenhagen." Treating that as both confirmation and an upper bound.
-- **Norway in a Nutshell** — Oslo → Flåm via the Bergen Railway (one of the world's most scenic), then fjord cruise through Nærøyfjord (UNESCO).
-- **Aurland fjord days** — fjord-view apartment, RIB safaris on Aurlandsfjord, Viking Village in Gudvangen.
-- **Bergen** — Bryggen UNESCO district, Fløibanen funicular up Mt. Fløyen.
-- **Amsterdam** — bikes, Anne Frank House (pre-booked!), Rijksmuseum, canal cruise.
+### 🇮🇸 Iceland (Jun 28–30) — Reykjavík stopover
+
+- Pick up the rental SUV at KEF airport
+- Reykjavík city walk + Hallgrímskirkja
+- Blue Lagoon or Sky Lagoon (decide day-of based on weather + crowds)
+- Possible Golden Circle drive if energy permits — Þingvellir, Geysir, Gullfoss
+- Eat a hot dog at Bæjarins Beztu (mandatory tourist obligation)
+
+### 🇩🇰 Copenhagen (Jun 30 – Jul 3) — with [Ammon](/ammon-quotes)
+
+- Hang with Ammon — 2 days, no fixed agenda. His quote: "Yeah 2 days works. There's not much to see in Copenhagen." Treating that as both confirmation and upper bound.
+- Walk Nyhavn + canals
+- One nice meal as a family
+
+### 🇸🇪 Stockholm (Jul 3–7) — meet the Saffitzes
+
+- Gamla Stan + fika in Stortorget square (arrival recovery)
+- **Vasa Museum** — preserved 17th-century warship
+- **ABBA Museum** + Fotografiska
+- **City kayak tour** (private, ~2h, archipelago)
+- **Evening Wildlife Safari** with Swedish midsummer meal (~4h, van)
+- Södermalm street art + vintage shops
+- **Vain Vikings of Runriket** — rune-stone trail (4h, private + driver)
+- **Skansen** open-air museum on the way out
+
+### 🇳🇴 Oslo (Jul 7–10)
+
+- Vigeland Sculpture Park, Aker Brygge waterfront
+- **National Museum**
+- **Authentic Oslo Bike Tour** — Bjørvika → Akerselva → Mathallen → Grünerløkka (3h, 11 km)
+- **Holmenkollen ski jump** — zipline! (kids will love)
+- Munch Museum + Grünerløkka neighborhood
+- **Oslofjord hike** to Vettakollen summit (3.5h, 5.4 km) + dinner cruise
+
+### 🏔️ Aurland + Voss (Jul 10–13) — the fjords
+
+- **Bergen Railway** Oslo → Flåm — one of the world's most scenic train rides (dep Oslo 9:18 AM)
+- **Fjordsafari RIB** on Aurlandsfjord + UNESCO Nærøyfjord (2h 15m, suits supplied)
+- Fjord cruise Flåm → Gudvangen
+- **Viking Village Njardarheimr** (Gudvangen) — Viking lunch, axe-throwing, archery
+- **Voss Gondola** to 820m summit (1.5h return)
+
+### 🌉 Bergen (Jul 13–16)
+
+- **Bryggen** (UNESCO) walking tour
+- **Fløibanen funicular** + Mt. Fløyen hike (2.5h, moderate grade)
+- Mostraumen fjord fast boat OR Mt. Ulriken cable car
+- **Flavours of Bergen** food tour (2h)
+- **Islets kayak tour** (~4h 15m)
+- Morning fish market before flying out
+
+### 🇳🇱 Amsterdam (Jul 16–19)
+
+- Rent bikes + roam **Jordaan** neighborhood
+- **Anne Frank House** (PRE-BOOK!)
+- Canal cruise
+- **Rijksmuseum** + Vondelpark
+- **Foodhallen** (covered food market)
+- **A'DAM Lookout** rooftop swing
+- NDSM Wharf or Zaanse Schans windmills before flying home (KL 6038, 3:10 PM Jul 19)
 
 ## Goals for the trip
 
