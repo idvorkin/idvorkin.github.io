@@ -12,6 +12,12 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Week of 2026-05-25](#week-of-2026-05-25)
+  - [Scandinavian Whirlwind Tour (new post!)](#scandinavian-whirlwind-tour-new-post)
+  - [2026 Health Check-in: June](#2026-health-check-in-june)
+  - [Produce-Consume: The Production Trap](#produce-consume-the-production-trap)
+  - [AI Native Manager: Dark Factory](#ai-native-manager-dark-factory)
+  - [Other Projects (2026-05-25)](#other-projects-2026-05-25)
 - [Week of 2026-05-11](#week-of-2026-05-11)
   - [7 Habits: Full Chapter Augmentation](#7-habits-full-chapter-augmentation)
   - [AI Journal: Tokens and the Wrong Jungle](#ai-journal-tokens-and-the-wrong-jungle)
@@ -100,6 +106,66 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+## Week of 2026-05-25
+
+_9 commits this week_
+
+### Scandinavian Whirlwind Tour (new post!)
+
+New post: [Time off July 2026 — Scandinavian Whirlwind Tour](/timeoff-2026-07) ([<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/37ec9d84a)) — full itinerary for the first big family trip with all 4 Dvorkins: 22 days, 5 countries, Iceland → Denmark → Sweden → Norway → Netherlands.
+
+Per-leg activity lists fleshed out ([<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/198db473e)):
+
+- **Iceland (Jun 28–30)** — KEF rental SUV, Hallgrímskirkja, Blue/Sky Lagoon, possible Golden Circle (Þingvellir, Geysir, Gullfoss), mandatory Bæjarins Beztu hot dog
+- **Copenhagen (Jun 30–Jul 3)** — 2 days with Ammon, Nyhavn canals, one nice family meal
+- **Stockholm (Jul 3–7)** — Vasa Museum, ABBA Museum, city kayak tour, Evening Wildlife Safari + Swedish midsummer meal, Vain Vikings rune-stone trail, Skansen open-air museum
+- **Oslo (Jul 7–10)** — Vigeland Park, National Museum, authentic bike tour, Holmenkollen ski jump zipline, Oslofjord hike + dinner cruise
+- **Aurland + Voss (Jul 10–13)** — Bergen Railway scenic ride, Fjordsafari RIB on Nærøyfjord, Viking Village Njardarheimr (axe-throwing, archery), Voss Gondola to 820m
+- **Bergen (Jul 13–16)** — Bryggen UNESCO tour, Fløibanen funicular + Mt. Fløyen hike, islets kayak tour, Flavours of Bergen food tour
+- **Amsterdam (Jul 16–19)** — bikes in Jordaan, Anne Frank House, Rijksmuseum, Foodhallen, A'DAM Lookout rooftop swing
+
+Trip goals: eulogize the father role (quality time, window narrows), balloon while traveling, disconnect from work while navigating mid-trip PSC feedback.
+
+### 2026 Health Check-in: June
+
+Updated [Goals 2026](/y2026#health--personal-goals) with June physical health data ([<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/648c3b828)) ([<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/294a22893)):
+
+- **Context:** trainer quit → solo programming. Started Kettlebility gym classes for structure. TGU is the comeback story — really tanked from shoulder injury, most of it back.
+- **Sleep** ✅ — still hitting 9pm–5am target
+- **Weight** ⚠️ — 185 (goal: 170)
+- **TGU** ✅ — 4x32 (comeback from shoulder injury)
+- **Swings** ✅ — 1H: 8x32 (warmup 2x28)
+- **Chinups** ⏸️ — paused, shoulder
+- **T-spine mobility** 🆕 — new focus as the shoulder-fix lever
+
+### Produce-Consume: The Production Trap
+
+Added "The Production Trap" section to [/produce-consume](/produce-consume#the-production-trap) ([<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/dde4a024f)) — warning that production can become its own addiction: "The same dopamine loop that makes TikTok dangerous can hook you on shipping."
+
+The tells look like virtue: skipping dinner to finish a post, measuring your day in commits, feeling hollow when the scoreboard doesn't move. "You're producing _at_ life instead of _living_ it."
+
+Includes a 5-signal addiction check ([cross-linked to /addiction](/addiction)) adapted for compulsive productivity — the same signals: don't want to but feel compelled, can't stop even when you should, rest of life suffering. ([<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e0f6610ae))
+
+Also reshaped the conclusion: dropped the win-framing ("while they're consuming your content... wait, that means you won") in favor of "it's not a competition — it's just a different game." ([<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f37bf85b1))
+
+### AI Native Manager: Dark Factory
+
+Added **Dark Factory** to the New Words for a New World appendix in [/ai-native-manager](/ai-native-manager#dark-factory) ([<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/66702a2d4)):
+
+- **Manufacturing origin** — fully-automated production facilities running without humans (no lights, no climate control). FANUC's robot-building plant in Japan is the canonical example.
+- **Software translation** — dark codebase (AI does the writing/reviewing/merging), dark service (humans monitor metrics but never touch code), dark team (looks like a team with Slack/OKRs/roadmap but the labor is mostly agentic, 1–2 humans steering)
+- **Why the word matters** — "Automation is a knob. A dark factory is a state: _production has been decoupled from labor_." Nobody fired the humans; they just became less central until the system would survive their leaving.
+- **Compounding risks** — accelerates Cognitive Debt (nobody can explain what's running), spreads Heresies (false AI beliefs with no human to correct), pushes Functional Collapse past reversibility
+
+EM job: notice when your team is becoming a dark factory, and decide on purpose whether that's what you want it to be.
+
+### Other Projects (2026-05-25)
+
+**[context-grabber](https://github.com/idvorkin/context-grabber)** (macOS context app)
+
+- Mac Catalyst: build, launch, and render dashboard without HealthKit [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/16a8f7088)
+- iOS: fix iOS linker regression from Catalyst patch (libopus/libvorbis) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/0fa352795)
 
 ## Week of 2026-05-11
 
