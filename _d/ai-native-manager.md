@@ -43,6 +43,7 @@ What does it mean to be an engineering manager when AI is rewriting every assump
   - [AI Cockpit](#ai-cockpit)
   - [AI Pilled](#ai-pilled)
   - [Cognitive Debt](#cognitive-debt)
+  - [Dark Factory](#dark-factory)
   - [Deep Blue](#deep-blue)
   - [Heresies](#heresies)
   - [Hill Climbing](#hill-climbing)
@@ -248,6 +249,18 @@ My take: AI-pilled is the habit form of what [Agency](#agency) is dispositionall
 My take: this is the hidden cost of the [Frenzy](#the-ai-chasm-assessment-and-adoption-stages) stage. Someone in Frenzy ships ten features in a week, and the team's cognitive debt goes through the roof. As an EM, you need to watch for this — not just "is the code working?" but "does the team understand what they built?" Code review isn't just about catching bugs anymore; it's about maintaining the team's shared understanding. If you can't explain what you shipped, you can't confidently change it, and that's where progress stalls. At the org level, this is the [AI second brain](/ai-second-brain) problem — how do you keep collective understanding coherent when information flows faster than any human can track?
 
 The good news: the same AI that creates cognitive debt can pay it down. Willison's [interactive explanations](https://simonwillison.net/guides/agentic-engineering-patterns/interactive-explanations/) pattern takes this further — instead of just diagrams, have AI build [explainers](/explainers): interactive, step-through visualizations that make algorithms and systems click in a way static text never will. Make this part of the workflow: don't just ship the feature, ship the explainer. Sequence diagrams, class diagrams, animated walkthroughs — if the AI can't explain what it just built in an interactive picture, that's a red flag that nobody else will understand it either.
+
+### Dark Factory
+
+A **dark factory** (also _lights-out manufacturing_) is a fully-automated production facility that runs without humans on-site — and therefore without lights, climate control, or any other condition humans need. Robots, AI vision, sensors, and autonomous mobile platforms handle every step. The "dark" is literal: the machines don't see in our spectrum, so there's no reason to turn the lights on. FANUC's robot-building plant in Japan is the canonical example.
+
+My take: this word is borrowed from manufacturing, but the more interesting use is in software. A **dark codebase** is one where AI agents do most of the writing, reviewing, and merging — no human is in the implementation loop. A **dark service** is a production system humans monitor by metrics but never touch in code. A **dark team** is an org unit that looks like a team (Slack channel, roadmap, OKRs) but the labor inside is mostly agentic, with one or two humans at the top steering. Headcount drops; output doesn't.
+
+The word matters because it carves out a category that "automation" softens. Automation is a knob — a little, a lot, depends on the task. A dark factory is a state — _production has been decoupled from labor_. Once you see the word, you start noticing that some teams have already drifted there without anyone deciding to. Nobody fired the humans; the humans just got less and less central until one day the system would survive their leaving and no one could rebuild it from scratch.
+
+The compounding risks: dark-factory work accelerates [Cognitive Debt](#cognitive-debt) (nobody on the team can explain what's running), spreads [Heresies](#heresies) (false AI beliefs propagate with no human to correct them), and pushes [Functional Collapse](#functional-collapse) past the point where it can be reversed — because the building skills the humans would need to reclaim the role have atrophied along the way.
+
+EM job in this era: notice when your team is becoming a dark factory, and decide on purpose whether that's what you want it to be.
 
 ### Deep Blue
 
