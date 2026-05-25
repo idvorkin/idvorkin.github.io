@@ -119,6 +119,8 @@
         "/enemies": "/enemy",
         "/enjoy": "/happy",
         "/essential": "/essentialism",
+        "/eu-2026": "/timeoff-2026-07",
+        "/europe-2026": "/timeoff-2026-07",
         "/eval-hill-climb": "/hill-climbing",
         "/exercise": "/physical-health",
         "/explorable-explanations": "/explainers",
@@ -279,6 +281,7 @@
         "/saving": "/money",
         "/savings": "/money",
         "/savor": "/happy",
+        "/scandi-2026": "/timeoff-2026-07",
         "/search-inside-yourself": "/siy",
         "/second-brain": "/ai-second-brain",
         "/self-vs-ego": "/self-ego",
@@ -357,7 +360,7 @@
     "url_info": {
         "/22": {
             "description": "In 2019 I created a program for 15 fantastic interns! A program highlight was my talk titled “What I wish I knew at 22, and so might you”. The talk received a 94% overall rating from over 15 interns, 10 SDE-IIs, and 1 senior developer. Even though the talk focuses on how to live the good life, a big chunk of life is work, so there’s good coverage on how to optimize your career.\n\n",
-            "doc_size": 17000,
+            "doc_size": 16000,
             "file_path": "_site/22.html",
             "incoming_links": [
                 "/chapters",
@@ -396,6 +399,7 @@
             "incoming_links": [
                 "/chapters",
                 "/retire",
+                "/timeoff-2026-07",
                 "/y24",
                 "/y25",
                 "/y26"
@@ -676,6 +680,7 @@
                 "/idle",
                 "/mental-pain",
                 "/mind-at-work",
+                "/produce-consume",
                 "/productive",
                 "/psychic-shadows",
                 "/psychic-weight",
@@ -1074,7 +1079,7 @@
         },
         "/ai-native-manager": {
             "description": "What does it mean to be an engineering manager when AI is rewriting every assumption you have about software, teams, and your own role? I don’t know yet. Nobody does. But I’m figuring it out in real time, and these are my notes from the chaos.\n\n",
-            "doc_size": 56000,
+            "doc_size": 58000,
             "file_path": "_site/ai-native-manager.html",
             "incoming_links": [
                 "/ai-feed",
@@ -1088,7 +1093,7 @@
                 "/raccoon-history",
                 "/wally"
             ],
-            "last_modified": "2026-04-20T15:47:55-07:00",
+            "last_modified": "2026-05-25T07:30:15-07:00",
             "markdown_path": "_d/ai-native-manager.md",
             "outgoing_links": [
                 "/agency",
@@ -1950,6 +1955,7 @@
                 "/gap-year-igor",
                 "/lonely",
                 "/retire",
+                "/timeoff-2026-07",
                 "/y25",
                 "/y26"
             ],
@@ -2560,7 +2566,7 @@
         },
         "/debug": {
             "description": "Igor's Blog",
-            "doc_size": 24000,
+            "doc_size": 23000,
             "file_path": "_site/debug.html",
             "incoming_links": [],
             "last_modified": "2025-03-16T16:15:36+00:00",
@@ -3011,7 +3017,7 @@
         },
         "/eulogy": {
             "description": "Wearing a silly hat or his zany $8 TEMU crazy shirt, his trusty folding bike at his feet, and using a purple fountain pen, Igor “Began with the end in mind” with the “important but not urgent” task of penning this eulogy, likely starting at 5am. Igor wanted this life, so he wrote it, he reviewed it, he lived it, and he worked with his family, friends, and multitude of mentors, to adjust and tweak it.\n\n",
-            "doc_size": 38000,
+            "doc_size": 37000,
             "file_path": "_site/eulogy.html",
             "incoming_links": [
                 "/7-habits",
@@ -3334,6 +3340,7 @@
                 "/stock-concentration",
                 "/timeoff",
                 "/timeoff-2025-08",
+                "/timeoff-2026-07",
                 "/y25",
                 "/y26"
             ],
@@ -4173,7 +4180,7 @@
         },
         "/learn-code": {
             "description": "Coding is way easier than people think. Here’s some pointers.\n\n",
-            "doc_size": 14000,
+            "doc_size": 13000,
             "file_path": "_site/learn-code.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T02:47:07+00:00",
@@ -4452,7 +4459,7 @@
         },
         "/mind-at-work": {
             "description": "I have a problem, an addiction, an addiction so detrimental to quality of life, it should be described as a disease. This disease is not being present. There are many symptoms of the disease, but today I’m going to talk about my most frequent symptoms, my body at home, but my mind at work.\n\n",
-            "doc_size": 20000,
+            "doc_size": 19000,
             "file_path": "_site/mind-at-work.html",
             "incoming_links": [
                 "/act",
@@ -5193,17 +5200,18 @@
         },
         "/produce-consume": {
             "description": "Remember when you finished binge-watching that entire series and felt… empty? Now remember the last time you made something — anything — even if it sucked. Which memory makes you smile? Yeah, me too. We live in the golden age of consumption, where infinite content is one thumb-swipe away, yet we’re more anxious and less satisfied than ever. Here’s the thing: you’re not meant to be a consumer. You’re meant to be a producer.\n\n",
-            "doc_size": 21000,
+            "doc_size": 23000,
             "file_path": "_site/produce-consume.html",
             "incoming_links": [
                 "/ai-feed",
                 "/gap-year-igor",
                 "/slow"
             ],
-            "last_modified": "2025-09-28T14:14:56-07:00",
+            "last_modified": "2026-05-23T08:11:01-07:00",
             "markdown_path": "_d/produce-consume.md",
             "outgoing_links": [
-                "/activation"
+                "/activation",
+                "/addiction"
             ],
             "redirect_url": "",
             "title": "The Producer's Paradox: Why Creating Beats Consuming Every Time",
@@ -6656,7 +6664,8 @@
                 "/timeoff-2023-08",
                 "/timeoff-2023-11",
                 "/timeoff-2024-08",
-                "/timeoff-2025-08"
+                "/timeoff-2025-08",
+                "/timeoff-2026-07"
             ],
             "last_modified": "2025-10-03T15:30:14-07:00",
             "markdown_path": "_d/time_off.md",
@@ -6959,6 +6968,27 @@
             "title": "Time off August 2025 - Meta Recharge",
             "url": "/timeoff-2025-08"
         },
+        "/timeoff-2026-07": {
+            "description": "22 days, 5 countries, 4 Dvorkins, one whirlwind tour. From Reykjavík to Amsterdam by way of Stockholm, Oslo, and the Norwegian fjords. This is the first time we’ve attempted a trip of this scope as a family — the kids are 16 and 14, both still home, and the window for “all four of us on the road together” closes faster than I’d like.\n\n",
+            "doc_size": 20000,
+            "file_path": "_site/timeoff-2026-07.html",
+            "incoming_links": [
+                "/y26"
+            ],
+            "last_modified": "2026-05-25T07:47:51-07:00",
+            "markdown_path": "_d/time-off-2026-07.md",
+            "outgoing_links": [
+                "/42",
+                "/ammon-quotes",
+                "/chapters",
+                "/gap-year-igor",
+                "/timeoff",
+                "/y26"
+            ],
+            "redirect_url": "",
+            "title": "Time off July 2026 - Scandinavian Whirlwind Tour",
+            "url": "/timeoff-2026-07"
+        },
         "/todo_enjoy": {
             "description": "It’s easy to forget the many, often tiny things that makes me happy. For when that happens, here’s some reminders:\n\n",
             "doc_size": 18000,
@@ -7202,7 +7232,7 @@
         },
         "/walking-with-god": {
             "description": "Someone important to me has been reading a daily devotional. Even though I’m not religious, I’m studying with them to be able to have conversations about the insights - whether in a secular or religious context. This is my attempt to bridge two worlds: honoring the spiritual wisdom they’re finding while translating it into language that works for my engineer brain.\n\n",
-            "doc_size": 82000,
+            "doc_size": 81000,
             "file_path": "_site/walking-with-god.html",
             "incoming_links": [
                 "/greek-orthodox",
@@ -7519,12 +7549,13 @@
         },
         "/y26": {
             "description": "I like to begin with the end in mind, so let’s write a report for 2026. This hasn’t happened, but if I don’t write it out and focus on it, it certainly won’t.\n\n",
-            "doc_size": 29000,
+            "doc_size": 30000,
             "file_path": "_site/y26.html",
             "incoming_links": [
-                "/act"
+                "/act",
+                "/timeoff-2026-07"
             ],
-            "last_modified": "2026-03-15T13:01:45-07:00",
+            "last_modified": "2026-05-25T07:47:51-07:00",
             "markdown_path": "_d/y2026.md",
             "outgoing_links": [
                 "/22",
@@ -7548,6 +7579,7 @@
                 "/siy",
                 "/spiritual-health",
                 "/tesla",
+                "/timeoff-2026-07",
                 "/walking-with-god"
             ],
             "redirect_url": "",
