@@ -29,6 +29,8 @@ The words you use don't just describe your thinking. They shape it. Change "I ha
 - [The Dark Side: Newspeak and Deliberate Manipulation](#the-dark-side-newspeak-and-deliberate-manipulation)
   - [How Newspeak Works](#how-newspeak-works)
   - [Doublethink: The Mental Gymnastics](#doublethink-the-mental-gymnastics)
+- [Words for a New World](#words-for-a-new-world)
+  - [Dark factory](#dark-factory)
 - [What This Means for How I Think](#what-this-means-for-how-i-think)
   - [Building Better Mental Models](#building-better-mental-models)
 - [Related Frameworks](#related-frameworks)
@@ -157,6 +159,18 @@ War is Peace. Freedom is Slavery. Ignorance is Strength.
 Doublethink works _because_ of linguistic manipulation. When words lose their fixed meanings, when "freedom" can mean its opposite, when "peace" describes permanent war, the mind loses its ability to reason clearly. Everything becomes slippery.
 
 You can't build logical arguments when the words keep shifting under you. You can't spot contradictions when contradiction itself becomes normalized. You can't think clearly when language is deliberately crafted to prevent clear thinking.
+
+## Words for a New World
+
+Language doesn't only fail us when we look backward at concepts older cultures named better — it also struggles to keep up with the world we're building. New realities arrive faster than vocabulary, and for a while we live with them un-named. Here's a growing list of words we needed before we had them.
+
+### Dark factory
+
+A **dark factory** (also called *lights-out manufacturing*) is a fully-automated production facility that runs without humans on-site — and therefore without lights, climate control, or any of the conditions humans need. Robots, AI vision systems, sensors, and autonomous mobile platforms handle every step. The "dark" is literal: the machines don't need to see in our spectrum, so there's no reason to turn the lights on.
+
+The word matters because it carves out a category of place that didn't meaningfully exist before. A factory used to imply humans — assembly lines, lunch rooms, shift changes, parking lots. A dark factory implies none of that. It is a *facility* in the architectural sense without being a *workplace* in the human sense. The economic, political, and moral weight of that distinction is enormous, and we don't yet have the language for it.
+
+Fully-dark facilities are still rare (FANUC's robot-building plant in Japan is the famous case), but the term lets us think about a thing that is otherwise hard to discuss: production decoupled from labor. Without the word, the conversation defaults to "automation" — a softer concept that hides how complete the decoupling can become.
 
 ## What This Means for How I Think
 
