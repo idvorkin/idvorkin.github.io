@@ -31,7 +31,7 @@ For context on why I take time off: [/time-off](/time-off).
 
 ## Who's coming
 
-All 4 Dvorkins (Igor, Tori, Zach, Amelia). The Iceland and Copenhagen legs are just us. We meet up with the Saffitzes in Stockholm on the evening of Jul 3 and travel together through Amsterdam — separate booking units, overlapping itinerary.
+All 4 Dvorkins (Igor, Tori, Zach, Amelia). Iceland and Copenhagen legs are just us; Stockholm onward we're traveling with friends.
 
 ## Things we want to do (by leg)
 
@@ -49,7 +49,7 @@ All 4 Dvorkins (Igor, Tori, Zach, Amelia). The Iceland and Copenhagen legs are j
 - Walk Nyhavn + canals
 - One nice meal as a family
 
-### 🇸🇪 Stockholm (Jul 3–7) — meet the Saffitzes · [📍 map](https://www.google.com/maps/place/Stockholm)
+### 🇸🇪 Stockholm (Jul 3–7) · [📍 map](https://www.google.com/maps/place/Stockholm)
 
 - Gamla Stan + fika in Stortorget square (arrival recovery)
 - **Vasa Museum** — preserved 17th-century warship

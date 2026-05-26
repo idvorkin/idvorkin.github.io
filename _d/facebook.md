@@ -279,9 +279,9 @@ In 2022, Lord of the Rings. How do we solve this sim the real world? Identity an
 
 In May 2026 I got flattened (M→IC) and moved into Meta's AI training org. Not severance — they kept me, just moved me. Arguably I'm going to a frontier lab, and we're going to figure out how training works, which I'm kind of excited for.
 
-The role is very undefined. One part of it is building training data, which sounds pretty boring but should be fun for the first few rounds. Teams form by July — for now I'm ramping up.
+The role is very undefined. As you'd expect when you load 7000 people into a new org on a critical investment — how to make a frontier model.
 
-I'm holding two scenarios pretty calmly. There's a chance that within three more vests I'll be laid off, and that's certainly okay, I don't mind. It's also possible we're successful at this, and if we are, my god, we could make a killing on the stock price.
+Scary. Ambiguous. Chaos. Wonder. So many choices... I'm leaning in.
 
 My day job now lines up with what I'd been doing on the side anyway — [CHOP](/chop), vibe coding, AI projects. Bigger sandbox, no manager hat. More once the teams shake out.
 
