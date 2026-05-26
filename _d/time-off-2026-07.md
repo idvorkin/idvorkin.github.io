@@ -14,18 +14,20 @@ For context on why I take time off: [/time-off](/time-off).
 
 ## At a Glance
 
-| Leg                                      | Dates           | Nights | Country     |
-| ---------------------------------------- | --------------- | ------ | ----------- |
-| 🇮🇸 **Iceland** (Reykjavík stopover)      | Jun 28 – Jun 30 | 2      | Iceland     |
-| 🇩🇰 **Copenhagen** (with Ammon)           | Jun 30 – Jul 3  | 3      | Denmark     |
-| 🇸🇪 **Stockholm** (meet the Saffitzes)    | Jul 3 – Jul 7   | 4      | Sweden      |
-| 🇳🇴 **Oslo**                              | Jul 7 – Jul 10  | 3      | Norway      |
-| 🏔️ **Aurland** (fjords)                   | Jul 10 – Jul 12 | 2      | Norway      |
-| ⛰️ **Voss**                                | Jul 12 – Jul 13 | 1      | Norway      |
-| 🌉 **Bergen**                             | Jul 13 – Jul 16 | 3      | Norway      |
-| 🇳🇱 **Amsterdam**                          | Jul 16 – Jul 19 | 3      | Netherlands |
+| Leg                                   | Dates           | Nights | Country     |
+| ------------------------------------- | --------------- | ------ | ----------- |
+| 🇮🇸 **Iceland** (Reykjavík stopover)   | Jun 28 – Jun 30 | 2      | Iceland     |
+| 🇩🇰 **Copenhagen** (with Ammon)        | Jun 30 – Jul 3  | 3      | Denmark     |
+| 🇸🇪 **Stockholm** (meet the Saffitzes) | Jul 3 – Jul 7   | 4      | Sweden      |
+| 🇳🇴 **Oslo**                           | Jul 7 – Jul 10  | 3      | Norway      |
+| 🏔️ **Aurland** (fjords)               | Jul 10 – Jul 12 | 2      | Norway      |
+| ⛰️ **Voss**                           | Jul 12 – Jul 13 | 1      | Norway      |
+| 🌉 **Bergen**                         | Jul 13 – Jul 16 | 3      | Norway      |
+| 🇳🇱 **Amsterdam**                      | Jul 16 – Jul 19 | 3      | Netherlands |
 
 **Total**: 22 days, 5 countries (Iceland → Denmark → Sweden → Norway → Netherlands), back home Jul 19 via KLM AMS→SEA.
+
+📍 [See the full route on Google Maps](https://www.google.com/maps/dir/Reykjav%C3%ADk/Copenhagen/Stockholm/Oslo/Aurland/Voss/Bergen/Amsterdam) — 8 stops in one view.
 
 ## Who's coming
 
@@ -33,7 +35,7 @@ All 4 Dvorkins (Igor, Tori, Zach, Amelia). The Iceland and Copenhagen legs are j
 
 ## Things we want to do (by leg)
 
-### 🇮🇸 Iceland (Jun 28–30) — Reykjavík stopover
+### 🇮🇸 Iceland (Jun 28–30) — Reykjavík stopover · [📍 map](https://www.google.com/maps/place/Reykjav%C3%ADk)
 
 - Pick up the rental SUV at KEF airport
 - Reykjavík city walk + Hallgrímskirkja
@@ -41,13 +43,13 @@ All 4 Dvorkins (Igor, Tori, Zach, Amelia). The Iceland and Copenhagen legs are j
 - Possible Golden Circle drive if energy permits — Þingvellir, Geysir, Gullfoss
 - Eat a hot dog at Bæjarins Beztu (mandatory tourist obligation)
 
-### 🇩🇰 Copenhagen (Jun 30 – Jul 3) — with [Ammon](/ammon-quotes)
+### 🇩🇰 Copenhagen (Jun 30 – Jul 3) — with [Ammon](/ammon-quotes) · [📍 map](https://www.google.com/maps/place/Copenhagen)
 
 - Hang with Ammon — 2 days, no fixed agenda. His quote: "Yeah 2 days works. There's not much to see in Copenhagen." Treating that as both confirmation and upper bound.
 - Walk Nyhavn + canals
 - One nice meal as a family
 
-### 🇸🇪 Stockholm (Jul 3–7) — meet the Saffitzes
+### 🇸🇪 Stockholm (Jul 3–7) — meet the Saffitzes · [📍 map](https://www.google.com/maps/place/Stockholm)
 
 - Gamla Stan + fika in Stortorget square (arrival recovery)
 - **Vasa Museum** — preserved 17th-century warship
@@ -58,7 +60,7 @@ All 4 Dvorkins (Igor, Tori, Zach, Amelia). The Iceland and Copenhagen legs are j
 - **Vain Vikings of Runriket** — rune-stone trail (4h, private + driver)
 - **Skansen** open-air museum on the way out
 
-### 🇳🇴 Oslo (Jul 7–10)
+### 🇳🇴 Oslo (Jul 7–10) · [📍 map](https://www.google.com/maps/place/Oslo)
 
 - Vigeland Sculpture Park, Aker Brygge waterfront
 - **National Museum**
@@ -67,7 +69,7 @@ All 4 Dvorkins (Igor, Tori, Zach, Amelia). The Iceland and Copenhagen legs are j
 - Munch Museum + Grünerløkka neighborhood
 - **Oslofjord hike** to Vettakollen summit (3.5h, 5.4 km) + dinner cruise
 
-### 🏔️ Aurland + Voss (Jul 10–13) — the fjords
+### 🏔️ Aurland + Voss (Jul 10–13) — the fjords · [📍 Aurland](https://www.google.com/maps/place/Aurland) · [📍 Voss](https://www.google.com/maps/place/Voss)
 
 - **Bergen Railway** Oslo → Flåm — one of the world's most scenic train rides (dep Oslo 9:18 AM)
 - **Fjordsafari RIB** on Aurlandsfjord + UNESCO Nærøyfjord (2h 15m, suits supplied)
@@ -75,7 +77,7 @@ All 4 Dvorkins (Igor, Tori, Zach, Amelia). The Iceland and Copenhagen legs are j
 - **Viking Village Njardarheimr** (Gudvangen) — Viking lunch, axe-throwing, archery
 - **Voss Gondola** to 820m summit (1.5h return)
 
-### 🌉 Bergen (Jul 13–16)
+### 🌉 Bergen (Jul 13–16) · [📍 map](https://www.google.com/maps/place/Bergen,+Norway)
 
 - **Bryggen** (UNESCO) walking tour
 - **Fløibanen funicular** + Mt. Fløyen hike (2.5h, moderate grade)
@@ -84,7 +86,7 @@ All 4 Dvorkins (Igor, Tori, Zach, Amelia). The Iceland and Copenhagen legs are j
 - **Islets kayak tour** (~4h 15m)
 - Morning fish market before flying out
 
-### 🇳🇱 Amsterdam (Jul 16–19)
+### 🇳🇱 Amsterdam (Jul 16–19) · [📍 map](https://www.google.com/maps/place/Amsterdam)
 
 - Rent bikes + roam **Jordaan** neighborhood
 - **Anne Frank House** (PRE-BOOK!)
