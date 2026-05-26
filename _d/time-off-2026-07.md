@@ -100,7 +100,7 @@ All 4 Dvorkins (Igor, Tori, Zach, Amelia). The Iceland and Copenhagen legs are j
 
 - **Live the Father role from the eulogy**: quality time over mere presence. Both kids are home together; the window narrows.
 - **Balloon while traveling** — long-standing eulogy goal ("ballooning while traveling"). Bring the kit; deploy in parks and airports.
-- **Disconnect from work** — Meta mid-year PSC feedback is due Jul 8 (mid-Oslo) and calibration runs Jul 16–28 (Bergen → home). The protocol: do PSC work in the morning, trust the team for the rest of the day, do not let the [Calibration Collapse](/y26) eat the trip.
+- **Disconnect from work** — Good news: no calibrations to sweat this time. I just moved to an IC role at [Meta's AI Lab](/meta#moving-to-metas-ai-lab-2026), so the old [Calibration Collapse](/y26) trap doesn't fire. Keep work boxed anyway — ramp time is on Meta's clock, not the trip's.
 - **No death-march optimizing** — see [optimizing vs satisfying](/42#optimizing-vs-satisfying). The goal isn't to maximize sights per day; it's to enjoy this with the people we're with.
 
 ## Related
