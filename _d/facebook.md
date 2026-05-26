@@ -1,13 +1,15 @@
 ---
 layout: post
-title: "My thoughts on Facebook"
-permalink: /facebook
+title: "My thoughts on Meta"
+permalink: /meta
 redirect_from:
-  - /meta
+  - /facebook
   - /fb
 ---
 
-Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven relationships, and providing skip-level escalations and support. Here are my notes on Facebook
+Meta is a ‘social’ company; we value 1-1 time, fostering trust-driven relationships, and providing skip-level escalations and support. Here are my notes on Meta.
+
+_(\* When I started this was still Facebook.)_
 
 <!-- prettier-ignore-start -->
 
@@ -275,11 +277,13 @@ In 2022, Lord of the Rings. How do we solve this sim the real world? Identity an
 
 ## Moving to Meta's AI Lab (2026)
 
-In May 2026, in a layoff round, I was flattened (M→IC) and moved into Meta's AI training org. Internal redirect, not severance. The role is "very undefined" — building training data initially, teams form by July.
+In May 2026 I got flattened (M→IC) and moved into Meta's AI training org. Not severance — they kept me, just moved me. Arguably I'm going to a frontier lab, and we're going to figure out how training works, which I'm kind of excited for.
 
-This is a frontier-lab pivot inside Meta. The org change is the real signal; the M→IC title change is cosmetic. Two scenarios I'm holding calmly: three more vests and out, or we ship and the stock pops.
+The role is very undefined. One part of it is building training data, which sounds pretty boring but should be fun for the first few rounds. Teams form by July — for now I'm ramping up.
 
-Personal note: my day job now lines up with what I'd been building on the side ([CHOP](/chop), vibe coding, AI tools). Bigger sandbox in exchange for the manager hat. I'll write more once teams form.
+I'm holding two scenarios pretty calmly. There's a chance that within three more vests I'll be laid off, and that's certainly okay, I don't mind. It's also possible we're successful at this, and if we are, my god, we could make a killing on the stock price.
+
+My day job now lines up with what I'd been doing on the side anyway — [CHOP](/chop), vibe coding, AI projects. Bigger sandbox, no manager hat. More once the teams shake out.
 
 ## Core Values (LP's)
 
