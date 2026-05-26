@@ -46,6 +46,7 @@ Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven re
   - [Bonus learnings at Facebook](#bonus-learnings-at-facebook)
 - [From Facebook to Meta and the metaverse](#from-facebook-to-meta-and-the-metaverse)
   - [Why is the metaverse taking so long](#why-is-the-metaverse-taking-so-long)
+- [Moving to Meta's AI Lab (2026)](#moving-to-metas-ai-lab-2026)
 - [Core Values (LP's)](#core-values-lps)
   - [Focus on Impact](#focus-on-impact)
   - [Move Fast](#move-fast)
@@ -271,6 +272,14 @@ In 2022, Lord of the Rings. How do we solve this sim the real world? Identity an
 ### Why is the metaverse taking so long
 
 <https://www.matthewball.vc/all/why-vrar-gets-farther-away-as-it-comes-into-focus>
+
+## Moving to Meta's AI Lab (2026)
+
+In May 2026, in a layoff round, I was flattened (M→IC) and moved into Meta's AI training org. Internal redirect, not severance. The role is "very undefined" — building training data initially, teams form by July.
+
+This is a frontier-lab pivot inside Meta. The org change is the real signal; the M→IC title change is cosmetic. Two scenarios I'm holding calmly: three more vests and out, or we ship and the stock pops.
+
+Personal note: my day job now lines up with what I'd been building on the side ([CHOP](/chop), vibe coding, AI tools). Bigger sandbox in exchange for the manager hat. I'll write more once teams form.
 
 ## Core Values (LP's)
 

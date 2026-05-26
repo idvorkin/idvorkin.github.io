@@ -103,10 +103,9 @@ All 4 Dvorkins (Igor, Tori, Zach, Amelia). The Iceland and Copenhagen legs are j
 
 ## Related
 
-- [Time off](/time-off) — why I take time off
-- [Goals 2026 — Summer Vacation](/y26#summer-vacation)
-- [Gap year for Igor](/gap-year-igor) — the bigger version of this
-- [Chapters](/chapters) — why the 40s are the right window for trips like this
-- [42](/42) — what I wish I knew
+{% include summarize-page.html src="/time-off" %}
+{% include summarize-page.html src="/gap-year-igor" %}
+{% include summarize-page.html src="/chapters" %}
+{% include summarize-page.html src="/42" %}
 
 _Written ~6 weeks pre-trip. Will write the actual recap when we're back._
