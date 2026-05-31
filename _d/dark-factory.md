@@ -14,13 +14,13 @@ redirect_from:
 
 A dark factory is a manufacturing plant that runs with the lights off, because the only things working there are robots, and robots don't need to see. The software version is the codebase where AI does the writing, reviewing, and merging, with no human in the implementation loop. The exciting part isn't the headcount you save — it's execution at the speed of thought. So the questions I actually care about are: where does this dream work, where does it break, and where do humans still provide value? The answer comes down to three limits.
 
-{% include ai-slop.html percent="80" %}
+{% include ai-slop.html percent="90" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
 - [What Is a Dark Factory?](#what-is-a-dark-factory)
-  - [Automation Is a Knob, a Dark Factory Is a State](#automation-is-a-knob-a-dark-factory-is-a-state)
+  - [The Holy Grail of Automation](#the-holy-grail-of-automation)
 - [The Three First-Principles Limits](#the-three-first-principles-limits)
   - [Limit 1: Verification (the one everyone names)](#limit-1-verification-the-one-everyone-names)
   - [Limit 2: Progress (the one they miss)](#limit-2-progress-the-one-they-miss)
@@ -35,17 +35,13 @@ A dark factory is a manufacturing plant that runs with the lights off, because t
 
 A **dark factory** (also _lights-out manufacturing_) is a fully-automated production facility that runs without humans on-site — and therefore without lights, climate control, or any of the other conditions humans need. Robots, AI vision, sensors, and autonomous mobile platforms handle every step. The "dark" is literal: the machines don't see in our spectrum, so there's no reason to turn the lights on. FANUC's robot-building plant in Japan is the canonical example.
 
-The word is borrowed from manufacturing, but the more interesting use is in software:
+The word is borrowed from manufacturing, but the more interesting use is in software. A dark factory is where we don't look at the code and we don't look at the reviews — we just use the app. The AI writes it, the AI reviews it, the AI merges it, and the first time a human touches the work is as a user.
 
-- A **dark codebase** is one where AI agents do most of the writing, reviewing, and merging — no human is in the implementation loop.
-- A **dark service** is a production system humans monitor by metrics but never touch in code.
-- A **dark team** is an org unit that looks like a team (Slack channel, roadmap, OKRs) but the labor inside is mostly agentic, with one or two humans at the top steering.
+### The Holy Grail of Automation
 
-Headcount drops; output doesn't.
+This is the holy grail of automation — but it's a new species of it. Old-school automation meant two things at once: no humans _and_ deterministic execution. The machine did exactly the same thing every time, and that repeatability was the whole reason you could trust it to run unattended. A dark factory keeps the "no humans" and drops the determinism. The AI runs unattended, but what it produces isn't fixed — it improvises, guesses, varies from run to run. Same autonomy, none of the predictability.
 
-### Automation Is a Knob, a Dark Factory Is a State
-
-The word matters because it carves out a category that "automation" softens. Automation is a knob — a little, a lot, depends on the task. A dark factory is a state: _production has been decoupled from labor_. Once you see the word, you start noticing that some teams have already drifted there without anyone deciding to. Nobody fired the humans; the humans just got less and less central until one day the system would survive their leaving and no one could rebuild it from scratch.
+That's what makes it more than a knob you turn up. Production gets decoupled from labor, and some teams drift there without anyone deciding to — nobody fired the humans, they just got less and less central until one day the system would survive their leaving and no one could rebuild it from scratch.
 
 So the real question isn't "should we build a dark factory?" It's "how far can a dark factory actually go before it breaks?" That comes down to three limits.
 
