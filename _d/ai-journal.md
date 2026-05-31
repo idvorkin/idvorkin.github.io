@@ -19,7 +19,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
 - [Upcoming](#upcoming)
 - [Diary](#diary)
   - [2026-05-31](#2026-05-31)
-    - [Friction = Focus: When Production Stops Being Valuable](#friction--focus-when-production-stops-being-valuable)
+    - [Friction = Focus: When Attention Stops Being a Proxy for Value](#friction--focus-when-attention-stops-being-a-proxy-for-value)
   - [2026-05-11](#2026-05-11)
     - [AI Helps Me Think by Showing Me Options](#ai-helps-me-think-by-showing-me-options)
   - [2026-05-10](#2026-05-10)
@@ -257,14 +257,15 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 ### 2026-05-31
 
-#### Friction = Focus: When Production Stops Being Valuable
+#### Friction = Focus: When Attention Stops Being a Proxy for Value
 
 - **TOP Takeaway**: [hmmz.org's "attention hazard" post](https://thoughts.hmmz.org/2026-05-31.html) — _"a tool producing a cheap reward with minimal input and no friction can only be a liability."_ "Friction = focus, focus = product." I agree, hard. The sharpest version in my own terms: **when production gets this cheap, it collapses into [consumption](/produce-consume) — and loses the footprint that made it worth anything.** I've argued production leaves a trace and consumption doesn't; effortless AI is the case where production _stops_ leaving a trace. Fifty half-built apps leave about as much behind as a thousand hours of TikTok: nothing.
 - **His argument** (distilled): low-friction AI amplifies distraction instead of enabling work. ~50 projects, almost all unmaintained "quick scripts" that spiraled; one accidentally got traffic and became an obligation. People run three screens of unrelated projects they'll never maintain; teams stand up "five rooms to manage their agents." A voice-to-blog pipeline produced "unbridled garbage" because effortlessness killed commitment. Handwriting survives _because_ it has friction.
 - **Where it lands for me** (the uncomfortable part): I'm the fifty-projects guy, and I literally built [a multi-agent city](/gas-city) — the "five rooms managing agents" he recoils from. I've even named the genre: [the Winchester Mystery House of software](#the-winchester-mystery-house-of-software-when-code-gets-too-cheap-to-care-about), staircases to nowhere because code got too cheap to care. I'm that guy — and that's OK. The answer isn't less AI, it's doubling down on [begin with the end in mind](/end-in-mind).
 - **What actually saves me from the critique** (and it isn't willpower): the friction is already in my system, by design. I journal by **hand** on a Kindle Scribe every morning ([DS20](/mortality-software)) before any screen — the slow input _is_ the point; the day's plan gets written, not generated. This post made me see that ritual isn't nostalgia. It's the friction that keeps my production from decaying into consumption.
-- **Takeaway 1 — the most important thing is exactly what it's always been: [begin with the end in mind](/end-in-mind).** AI changed the cost of building, not the question of what's worth building. [Essentialism](/affirmations#an-essentialist-know-essential-provide-context-prioritize-ruthlessly) — "Know Essential. Prioritize Ruthlessly." — is just _choosing what's worth producing_, and that's the whole game once production is free. The constraint moves from "can I build it" to "should this exist," and that has no cheap-token answer. As I put it on [/produce-consume](/produce-consume): production is meant to be a substitute for empty consumption, not for presence. Same warning, new vice.
+- **Takeaway 1 — the most important thing is exactly what it's always been: [begin with the end in mind](/end-in-mind).** AI changed the cost of building, not the question of what's worth building. [Essentialism](/affirmations#an-essentialist-know-essential-provide-context-prioritize-ruthlessly) — "Know Essential. Prioritize Ruthlessly." — is just _choosing what's worth producing_, and that's the whole game once production is free.
 - **Takeaway 2 — there's still real value in doing a lot of reps; that's the path to mastery.** Like reps at the gym. But don't confuse reps at the gym with producing valuable software — the reps build the practitioner, they aren't the same as shipping something that leaves a footprint. Cheap output doesn't retire the reps, and the judgment they build is exactly what's scarce once everyone can generate everything.
+- **Side note — non-fiction reading wears the best disguise.** The same trap hits _reading_: it feels like learning, but consumption is still consumption — "reading a thousand articles doesn't make you a writer" ([/produce-consume](/produce-consume)). Non-fiction is just shorts and TikTok with footnotes. The honest question isn't "am I reading?" but "am I _producing_ from it, or just consuming in a respectable outfit?"
 
 Source: ["AI is an attention hazard"](https://thoughts.hmmz.org/2026-05-31.html), hmmz.org, 2026-05-31.
 
