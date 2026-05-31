@@ -10,8 +10,6 @@ tags:
 redirect_from:
   - /dark-factories
   - /dark-codebase
-alias:
-  - /dark-factories
 ---
 
 A dark factory is a manufacturing plant that runs with the lights off, because the only things working there are robots, and robots don't need to see. The software version is the codebase where AI does the writing, reviewing, and merging, with no human in the implementation loop. The exciting part isn't the headcount you save — it's execution at the speed of thought. So the questions I actually care about are: where does this dream work, where does it break, and where do humans still provide value? The answer comes down to three limits.
