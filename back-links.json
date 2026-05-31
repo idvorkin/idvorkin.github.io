@@ -96,6 +96,8 @@
         "/curated-feed": "/ai-feed",
         "/cv": "/covid",
         "/d/2015-11-18-Outsourcing": "/outsourcing",
+        "/dark-codebase": "/dark-factory",
+        "/dark-factories": "/dark-factory",
         "/data-viz": "/viz",
         "/de-mello": "/awareness",
         "/dealjoy": "/joy",
@@ -124,9 +126,10 @@
         "/eval-hill-climb": "/hill-climbing",
         "/exercise": "/physical-health",
         "/explorable-explanations": "/explainers",
+        "/facebook": "/meta",
         "/failure": "/fail",
         "/fatality": "/death",
-        "/fb": "/facebook",
+        "/fb": "/meta",
         "/feedback-beats-planning": "/planning",
         "/feeling-meetings": "/human-meetings",
         "/feelings": "/emotions",
@@ -208,7 +211,6 @@
         "/meditate": "/siy",
         "/meditation": "/siy",
         "/mental-break-down": "/depression",
-        "/meta": "/facebook",
         "/microecon": "/micro-economics",
         "/microeconomics": "/micro-economics",
         "/middleage": "/elder",
@@ -1079,13 +1081,14 @@
         },
         "/ai-native-manager": {
             "description": "What does it mean to be an engineering manager when AI is rewriting every assumption you have about software, teams, and your own role? I don’t know yet. Nobody does. But I’m figuring it out in real time, and these are my notes from the chaos.\n\n",
-            "doc_size": 58000,
+            "doc_size": 56000,
             "file_path": "_site/ai-native-manager.html",
             "incoming_links": [
                 "/ai-feed",
                 "/ai-hiring",
                 "/ai-second-brain",
                 "/chow",
+                "/dark-factory",
                 "/explainers",
                 "/hill-climbing",
                 "/manager-book",
@@ -1093,7 +1096,7 @@
                 "/raccoon-history",
                 "/wally"
             ],
-            "last_modified": "2026-05-25T07:30:15-07:00",
+            "last_modified": "2026-05-31T10:25:56-07:00",
             "markdown_path": "_d/ai-native-manager.md",
             "outgoing_links": [
                 "/agency",
@@ -1103,6 +1106,7 @@
                 "/ai-second-brain",
                 "/chop",
                 "/coaching",
+                "/dark-factory",
                 "/explainers",
                 "/hill-climbing",
                 "/manager-book",
@@ -1539,7 +1543,7 @@
         },
         "/bc": {
             "description": "A guide to my favorite spots in British Columbia, focusing on Vancouver and Chilliwack. Whether you’re planning a quick weekend getaway or a longer adventure, here’s what you need to know. These recommendations come from my personal experiences over multiple trips - you can read about some of them in my summer 2024 adventures, Yellow Deli expedition, and various time off adventures:\n\n",
-            "doc_size": 23000,
+            "doc_size": 22000,
             "file_path": "_site/bc.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T03:02:44+00:00",
@@ -2009,6 +2013,7 @@
                 "/gtd",
                 "/hill-climbing",
                 "/how-igor-chops",
+                "/meta",
                 "/process-journal",
                 "/tech-rituals",
                 "/y24",
@@ -2225,7 +2230,7 @@
             "file_path": "_site/covid.html",
             "incoming_links": [
                 "/addiction",
-                "/facebook",
+                "/meta",
                 "/operating-manual"
             ],
             "last_modified": "2025-12-07T02:37:56+00:00",
@@ -2526,9 +2531,26 @@
             "title": "Where have all the bugs gone",
             "url": "/d/where-have-all-the-bugs-gone"
         },
+        "/dark-factory": {
+            "description": "A dark factory is a manufacturing plant that runs with the lights off, because the only things working there are robots, and robots don’t need to see. The software version is the codebase where AI does the writing, reviewing, and merging, with no human in the implementation loop. The exciting part isn’t the headcount you save — it’s execution at the speed of thought. So the questions I actually care about are: where does this dream work, where does it break, and where do humans still provide value? The answer comes down to three limits.\n\n",
+            "doc_size": 27000,
+            "file_path": "_site/dark-factory.html",
+            "incoming_links": [
+                "/ai-native-manager"
+            ],
+            "last_modified": "2026-05-31T10:25:56-07:00",
+            "markdown_path": "_d/dark-factory.md",
+            "outgoing_links": [
+                "/ai-native-manager",
+                "/hill-climbing"
+            ],
+            "redirect_url": "",
+            "title": "The Dark Factory: The Three Limits on AI-Run Code",
+            "url": "/dark-factory"
+        },
         "/day-in-the-life": {
             "description": "A running journal of days that actually worked - the ones where health habits stuck, family time hit different, or I remembered what it feels like to be fully alive. Not every day needs to be Instagram-worthy, but some days deserve a bookmark. This is that bookmark collection.\n\n",
-            "doc_size": 19000,
+            "doc_size": 18000,
             "file_path": "_site/day-in-the-life.html",
             "incoming_links": [],
             "last_modified": "2025-10-04T18:43:51-07:00",
@@ -3103,22 +3125,6 @@
             "title": "Explainers: Interactive Understanding",
             "url": "/explainers"
         },
-        "/facebook": {
-            "description": "Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven relationships, and providing skip-level escalations and support. Here are my notes on Facebook\n\n",
-            "doc_size": 34000,
-            "file_path": "_site/facebook.html",
-            "incoming_links": [
-                "/manager-book-appendix"
-            ],
-            "last_modified": "2025-12-07T03:06:25+00:00",
-            "markdown_path": "_d/facebook.md",
-            "outgoing_links": [
-                "/covid"
-            ],
-            "redirect_url": "",
-            "title": "My thoughts on Facebook",
-            "url": "/facebook"
-        },
         "/fail": {
             "description": "Failure is not an option; it’s a necessity. Failure is not a person but an event. You can’t grow without failing, and you can’t beat yourself up over it. The key is to analyze without judgment, understand why it failed, and learn to move on.\n\n",
             "doc_size": 21000,
@@ -3295,7 +3301,7 @@
         },
         "/gap-year": {
             "description": "Here’s a thought that’ll push back your retirement: Would you rather work until 65 and retire comfortably, or take a full year off at 50, return to work, and retire at 67 with less money? If you’re like most people, you immediately think “that’s crazy - I can’t afford to lose a year’s income!” But what if I told you that gap year might be the best investment you’ll ever make?\n\n",
-            "doc_size": 32000,
+            "doc_size": 34000,
             "file_path": "_site/gap-year.html",
             "incoming_links": [
                 "/42",
@@ -3307,7 +3313,7 @@
                 "/y25",
                 "/y26"
             ],
-            "last_modified": "2026-01-03T17:27:23+00:00",
+            "last_modified": "2026-05-26T09:38:52-07:00",
             "markdown_path": "_d/gap-year.md",
             "outgoing_links": [
                 "/chapters",
@@ -3402,7 +3408,7 @@
                 "/gas-city",
                 "/igors-claws"
             ],
-            "last_modified": "2026-05-05T07:03:22-07:00",
+            "last_modified": "2026-05-28T06:56:08-07:00",
             "markdown_path": "_d/gas-city-home.md",
             "outgoing_links": [
                 "/wally"
@@ -3499,7 +3505,7 @@
         },
         "/grammerly": {
             "description": "\n\n",
-            "doc_size": 13000,
+            "doc_size": 12000,
             "file_path": "_site/grammerly.html",
             "incoming_links": [],
             "last_modified": "2025-08-24T09:03:19-07:00",
@@ -3668,6 +3674,7 @@
                 "/ai-operator",
                 "/ai-testing",
                 "/chop",
+                "/dark-factory",
                 "/how-igor-chops",
                 "/podcast"
             ],
@@ -4364,9 +4371,9 @@
             "outgoing_links": [
                 "/amazon",
                 "/books-that-defined-me",
-                "/facebook",
                 "/job",
                 "/manager-book",
+                "/meta",
                 "/parkinson",
                 "/writing"
             ],
@@ -4435,7 +4442,7 @@
         },
         "/mermaid": {
             "description": "Lets try d2\n\n",
-            "doc_size": 15000,
+            "doc_size": 14000,
             "file_path": "_site/mermaid.html",
             "incoming_links": [],
             "last_modified": "2023-12-17T18:49:14+00:00",
@@ -4444,6 +4451,24 @@
             "redirect_url": "",
             "title": "Playing w/Mermaid",
             "url": "/mermaid"
+        },
+        "/meta": {
+            "description": "Meta is a ‘social’ company; we value 1-1 time, fostering trust-driven relationships, and providing skip-level escalations and support. Here are my notes on Meta.\n\n",
+            "doc_size": 35000,
+            "file_path": "_site/meta.html",
+            "incoming_links": [
+                "/manager-book-appendix",
+                "/timeoff-2026-07"
+            ],
+            "last_modified": "2026-05-25T19:31:05-07:00",
+            "markdown_path": "_d/facebook.md",
+            "outgoing_links": [
+                "/chop",
+                "/covid"
+            ],
+            "redirect_url": "",
+            "title": "My thoughts on Meta",
+            "url": "/meta"
         },
         "/micro-economics": {
             "description": "Supply, demands and markets, oh my!\n\n",
@@ -5118,7 +5143,7 @@
                 "/enable",
                 "/hyper-personal"
             ],
-            "last_modified": "2026-05-12T09:48:49-07:00",
+            "last_modified": "2026-05-28T06:55:42-07:00",
             "markdown_path": "_d/podcast.md",
             "outgoing_links": [
                 "/7h-concepts",
@@ -5200,14 +5225,14 @@
         },
         "/produce-consume": {
             "description": "Remember when you finished binge-watching that entire series and felt… empty? Now remember the last time you made something — anything — even if it sucked. Which memory makes you smile? Yeah, me too. We live in the golden age of consumption, where infinite content is one thumb-swipe away, yet we’re more anxious and less satisfied than ever. Here’s the thing: you’re not meant to be a consumer. You’re meant to be a producer.\n\n",
-            "doc_size": 23000,
+            "doc_size": 24000,
             "file_path": "_site/produce-consume.html",
             "incoming_links": [
                 "/ai-feed",
                 "/gap-year-igor",
                 "/slow"
             ],
-            "last_modified": "2026-05-23T08:11:01-07:00",
+            "last_modified": "2026-05-28T07:10:46-07:00",
             "markdown_path": "_d/produce-consume.md",
             "outgoing_links": [
                 "/activation",
@@ -6141,7 +6166,7 @@
         },
         "/synergize": {
             "description": "We’ve all got stuff we’re good at and stuff we’re bad at. Combine them right and the system is greater than the sum of the parts — sometimes a lot greater. Synergy is the payoff for everything that came before: independence, Win/Win, and seeking first to understand all converge here. These are my insights from 7 habits Chapter 6.\n\n",
-            "doc_size": 29000,
+            "doc_size": 28000,
             "file_path": "_site/synergize.html",
             "incoming_links": [
                 "/7-habits",
@@ -6224,7 +6249,7 @@
         },
         "/td/back_ref": {
             "description": "This blog is my collection of evergreen notes, a place to have my thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here’s my strategy to create them.\n\n",
-            "doc_size": 14000,
+            "doc_size": 13000,
             "file_path": "_site/td/back_ref.html",
             "incoming_links": [],
             "last_modified": "2022-04-16T15:22:43-07:00",
@@ -6696,7 +6721,7 @@
         },
         "/timeoff-2020-03": {
             "description": "In March 2020, I took a 2 month sabbatical between leaving Amazon and joining Facebook. Given it was a substantial amount of time, I came up with some big plans, and wrote them down. It was a great plan, BUT my time off correlated perfectly to the Corona Virus and as a result I wasted lots of my mental energy thinking about the Corona Virus, and adjusting to being in pseudo-quarantine. Took me a while, but I finally realized I should ignore corona virus, or at least minimize my time thinking about it.\n\n",
-            "doc_size": 31000,
+            "doc_size": 30000,
             "file_path": "_site/timeoff-2020-03.html",
             "incoming_links": [
                 "/timeoff"
@@ -6975,13 +7000,14 @@
             "incoming_links": [
                 "/y26"
             ],
-            "last_modified": "2026-05-25T07:47:51-07:00",
+            "last_modified": "2026-05-25T19:31:05-07:00",
             "markdown_path": "_d/time-off-2026-07.md",
             "outgoing_links": [
                 "/42",
                 "/ammon-quotes",
                 "/chapters",
                 "/gap-year-igor",
+                "/meta",
                 "/timeoff",
                 "/y26"
             ],
@@ -7362,7 +7388,7 @@
         },
         "/win-win": {
             "description": "Win/Win is a constantly seeking mutual benefit in all interactions. Win/Win means that agreements or solutions are mutually beneficial, mutually satisfying. With a Win/Win solution, all parties feel good about the decision and feel committed to the action plan. Win/Win sees life as a cooperative, not a competitive arena. Most people tend to think in terms of dichotomies: strong or weak, hardball or softball, win or lose. But that kind of thinking is fundamentally flawed. It’s based on power and position rather than on principle. Win/Win is based on the paradigm that there is plenty for everybody, that one person’s success is not achieved at the expense or exclusion of the success of others.\n\n",
-            "doc_size": 48000,
+            "doc_size": 47000,
             "file_path": "_site/win-win.html",
             "incoming_links": [
                 "/7-habits",
