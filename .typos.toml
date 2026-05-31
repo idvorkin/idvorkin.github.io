@@ -129,6 +129,7 @@ extend-exclude = [
     "assets/**",
     "back-links.json",
     "topics.json",
+    "topics_data/",
     "search_index.json",
     "chop-logs/**",
     "zz-chop-logs/**",

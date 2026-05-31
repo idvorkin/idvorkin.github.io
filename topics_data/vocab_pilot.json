@@ -1,0 +1,748 @@
+{
+  "vocab": [
+    {
+      "tag": "how-igor-ticks",
+      "aliases": [
+        "how igor ticks",
+        "how-igor-ticks",
+        "self-reflection",
+        "personal-reflection",
+        "personal-essay",
+        "personal-story",
+        "intentional-living",
+        "personal-principles"
+      ],
+      "example_urls": [
+        "/weeks",
+        "/pride",
+        "/bike-tesla-identity",
+        "/timeoff-2024-04"
+      ]
+    },
+    {
+      "tag": "self-improvement",
+      "aliases": [
+        "self-improvement",
+        "personal-growth",
+        "personal-development",
+        "self-care",
+        "living-well",
+        "well-being",
+        "positive-computing"
+      ],
+      "example_urls": [
+        "/timeoff",
+        "/physical-health",
+        "/pride",
+        "/22"
+      ]
+    },
+    {
+      "tag": "emotional-intelligence",
+      "aliases": [
+        "emotional-intelligence",
+        "emotional intelligence",
+        "emotion",
+        "emotional-health",
+        "emotional-resilience",
+        "emotional-labor",
+        "self-compassion"
+      ],
+      "example_urls": [
+        "/nurture",
+        "/depression",
+        "/pride",
+        "/interviewsarehard"
+      ]
+    },
+    {
+      "tag": "mental-health",
+      "aliases": [
+        "mental-health",
+        "mental health",
+        "anxiety",
+        "grief",
+        "bipolar-disorder",
+        "suicide-prevention",
+        "coping-strategies",
+        "impostor-syndrome"
+      ],
+      "example_urls": [
+        "/depression",
+        "/interviewsarehard"
+      ]
+    },
+    {
+      "tag": "depression",
+      "aliases": [
+        "depression"
+      ],
+      "example_urls": [
+        "/depression"
+      ]
+    },
+    {
+      "tag": "physical-health",
+      "aliases": [
+        "physical-health",
+        "physical health",
+        "fitness",
+        "cardio-training",
+        "strength-training",
+        "hiit",
+        "kettlebells",
+        "injury-prevention",
+        "personal-trainer",
+        "mobility-training",
+        "sleep",
+        "health",
+        "health-and-fitness"
+      ],
+      "example_urls": [
+        "/physical-health",
+        "/timeoff-2024-04"
+      ]
+    },
+    {
+      "tag": "weight-loss",
+      "aliases": [
+        "weight-loss",
+        "weight-management"
+      ],
+      "example_urls": [
+        "/physical-health",
+        "/timeoff-2024-04"
+      ]
+    },
+    {
+      "tag": "habits",
+      "aliases": [
+        "habits",
+        "habit-formation",
+        "habits-and-discipline",
+        "habit-change",
+        "behavior-change",
+        "habit-tracking"
+      ],
+      "example_urls": [
+        "/physical-health",
+        "/timeoff",
+        "/bike-tesla-identity"
+      ]
+    },
+    {
+      "tag": "mortality",
+      "aliases": [
+        "mortality",
+        "death",
+        "memento-mori",
+        "aging",
+        "meaning"
+      ],
+      "example_urls": [
+        "/weeks",
+        "/death"
+      ]
+    },
+    {
+      "tag": "death",
+      "aliases": [
+        "death",
+        "end-of-life-care"
+      ],
+      "example_urls": [
+        "/death"
+      ]
+    },
+    {
+      "tag": "spiritual",
+      "aliases": [
+        "spiritual",
+        "spiritual-health",
+        "meaning"
+      ],
+      "example_urls": [
+        "/death"
+      ]
+    },
+    {
+      "tag": "meditation",
+      "aliases": [
+        "meditation",
+        "mindfulness"
+      ],
+      "example_urls": [
+        "/depression",
+        "/timeoff-2024-04"
+      ]
+    },
+    {
+      "tag": "relationships",
+      "aliases": [
+        "relationships",
+        "marriage",
+        "communication",
+        "conflict-resolution",
+        "active-listening",
+        "shared-meaning",
+        "couples-exercises",
+        "gratitude"
+      ],
+      "example_urls": [
+        "/nurture"
+      ]
+    },
+    {
+      "tag": "family",
+      "aliases": [
+        "family",
+        "family-relationships",
+        "family-time",
+        "parenting",
+        "dad"
+      ],
+      "example_urls": [
+        "/timeoff",
+        "/timeoff-2024-04"
+      ]
+    },
+    {
+      "tag": "friendship",
+      "aliases": [
+        "friendship",
+        "responsibility",
+        "life-lessons"
+      ],
+      "example_urls": [
+        "/22",
+        "/save-the-souse"
+      ]
+    },
+    {
+      "tag": "book-notes",
+      "aliases": [
+        "book-notes",
+        "book-summary",
+        "book-recommendations",
+        "ai-generated-content",
+        "heath"
+      ],
+      "example_urls": [
+        "/nurture",
+        "/death",
+        "/depression"
+      ]
+    },
+    {
+      "tag": "identity",
+      "aliases": [
+        "identity",
+        "personal-values",
+        "cognitive-dissonance",
+        "eulogy"
+      ],
+      "example_urls": [
+        "/bike-tesla-identity"
+      ]
+    },
+    {
+      "tag": "pride-and-ego",
+      "aliases": [
+        "pride-and-ego",
+        "humility",
+        "comparison-trap",
+        "self-assessment"
+      ],
+      "example_urls": [
+        "/pride"
+      ]
+    },
+    {
+      "tag": "decision-making",
+      "aliases": [
+        "decision-making",
+        "cognitive-distortions",
+        "negotiation",
+        "mindset"
+      ],
+      "example_urls": [
+        "/pride",
+        "/covid",
+        "/save-the-souse"
+      ]
+    },
+    {
+      "tag": "stoicism",
+      "aliases": [
+        "stoicism",
+        "circle-of-influence",
+        "perspective",
+        "crisis-management"
+      ],
+      "example_urls": [
+        "/covid",
+        "/weeks"
+      ]
+    },
+    {
+      "tag": "goal-setting",
+      "aliases": [
+        "goal-setting",
+        "life-planning",
+        "life-journal",
+        "journal",
+        "mentorship"
+      ],
+      "example_urls": [
+        "/timeoff-2024-04",
+        "/interviewsarehard",
+        "/22"
+      ]
+    },
+    {
+      "tag": "time-off",
+      "aliases": [
+        "time-off",
+        "rest-and-recovery",
+        "timeoff",
+        "travel",
+        "travel-tips"
+      ],
+      "example_urls": [
+        "/timeoff",
+        "/timeoff-2024-04"
+      ]
+    },
+    {
+      "tag": "work-life-balance",
+      "aliases": [
+        "work-life-balance",
+        "balance",
+        "burnout"
+      ],
+      "example_urls": [
+        "/timeoff",
+        "/interviewsarehard",
+        "/ai-native-manager"
+      ]
+    },
+    {
+      "tag": "productivity",
+      "aliases": [
+        "productivity",
+        "personal-productivity",
+        "time-management",
+        "automation",
+        "developer-productivity"
+      ],
+      "example_urls": [
+        "/covid",
+        "/weeks",
+        "/hill-climbing"
+      ]
+    },
+    {
+      "tag": "career",
+      "aliases": [
+        "career",
+        "career-growth",
+        "career-advice",
+        "life-advice",
+        "the-good-life",
+        "job-satisfaction",
+        "early-career",
+        "internships",
+        "choosing-a-company"
+      ],
+      "example_urls": [
+        "/22",
+        "/pride",
+        "/interviewsarehard"
+      ]
+    },
+    {
+      "tag": "job-hunt",
+      "aliases": [
+        "job-hunt",
+        "job-hunting",
+        "technical-interviews",
+        "coding-interviews",
+        "behavioral-interviews",
+        "interview-preparation"
+      ],
+      "example_urls": [
+        "/interviewsarehard"
+      ]
+    },
+    {
+      "tag": "manager",
+      "aliases": [
+        "manager",
+        "engineering-management",
+        "team-leadership",
+        "leadership",
+        "coaching",
+        "hiring",
+        "software-teams",
+        "situational-leadership"
+      ],
+      "example_urls": [
+        "/ai-native-manager"
+      ]
+    },
+    {
+      "tag": "ai",
+      "aliases": [
+        "ai",
+        "ai-native",
+        "llm",
+        "human-in-the-loop"
+      ],
+      "example_urls": [
+        "/ai-native-manager",
+        "/ai-security",
+        "/hill-climbing"
+      ]
+    },
+    {
+      "tag": "ai-tooling",
+      "aliases": [
+        "ai-tooling",
+        "ai-tooling",
+        "ai-adoption",
+        "ai-agents",
+        "ai-life-coach",
+        "agent-workflows",
+        "ai-assisted-coding",
+        "compound-engineering"
+      ],
+      "example_urls": [
+        "/ai-native-manager",
+        "/hill-climbing",
+        "/bike-tesla-identity"
+      ]
+    },
+    {
+      "tag": "ai-security",
+      "aliases": [
+        "ai-security",
+        "llm-security",
+        "prompt-injection",
+        "jailbreaking",
+        "adversarial-attacks",
+        "data-exfiltration",
+        "visual-prompt-injection",
+        "system-prompts",
+        "owasp"
+      ],
+      "example_urls": [
+        "/ai-security"
+      ]
+    },
+    {
+      "tag": "ai-safety",
+      "aliases": [
+        "ai-safety",
+        "ai-ethics",
+        "ai-alignment"
+      ],
+      "example_urls": [
+        "/ai-security"
+      ]
+    },
+    {
+      "tag": "evals",
+      "aliases": [
+        "evals",
+        "fitness-functions",
+        "hill-climbing",
+        "optimization",
+        "model-as-judge",
+        "prompt-tuning",
+        "test-driven-development"
+      ],
+      "example_urls": [
+        "/hill-climbing"
+      ]
+    },
+    {
+      "tag": "software-engineering",
+      "aliases": [
+        "software-engineering",
+        "software-development",
+        "software-rot",
+        "bit-rot",
+        "technical-debt",
+        "software-maintenance",
+        "dependency-management",
+        "build-systems",
+        "developer-experience",
+        "tooling",
+        "side-projects"
+      ],
+      "example_urls": [
+        "/d/2017-09-10-software-rot"
+      ]
+    },
+    {
+      "tag": "computer-security",
+      "aliases": [
+        "computer-security",
+        "browser-security",
+        "malware",
+        "adware",
+        "supply-chain-attack",
+        "chrome-extensions",
+        "threat-detection",
+        "incident-response",
+        "debugging",
+        "npm"
+      ],
+      "example_urls": [
+        "/adblocker-trojan"
+      ]
+    },
+    {
+      "tag": "data-visualization",
+      "aliases": [
+        "data-visualization",
+        "data visualization",
+        "diagrams",
+        "charts",
+        "storytelling-with-data",
+        "information-design",
+        "chart-selection",
+        "visual-vocabulary",
+        "design-principles",
+        "data-to-wisdom",
+        "life-visualization",
+        "personal-data"
+      ],
+      "example_urls": [
+        "/viz",
+        "/weeks",
+        "/covid"
+      ]
+    },
+    {
+      "tag": "advertising",
+      "aliases": [
+        "advertising",
+        "digital-marketing",
+        "brand-building",
+        "ad-metrics",
+        "ad-monetization",
+        "ad-tech",
+        "customer-acquisition",
+        "creator-economy",
+        "marketing-economics"
+      ],
+      "example_urls": [
+        "/advertising"
+      ]
+    },
+    {
+      "tag": "media-criticism",
+      "aliases": [
+        "media-criticism",
+        "media-industry",
+        "current-events"
+      ],
+      "example_urls": [
+        "/covid",
+        "/advertising"
+      ]
+    },
+    {
+      "tag": "remote-work",
+      "aliases": [
+        "remote-work",
+        "optimism"
+      ],
+      "example_urls": [
+        "/covid"
+      ]
+    },
+    {
+      "tag": "covid-19",
+      "aliases": [
+        "covid-19",
+        "covid"
+      ],
+      "example_urls": [
+        "/covid"
+      ]
+    },
+    {
+      "tag": "healthcare",
+      "aliases": [
+        "healthcare",
+        "life-statistics"
+      ],
+      "example_urls": [
+        "/death"
+      ]
+    },
+    {
+      "tag": "transportation",
+      "aliases": [
+        "transportation",
+        "sustainable-transport",
+        "cycling"
+      ],
+      "example_urls": [
+        "/bike-tesla-identity"
+      ]
+    },
+    {
+      "tag": "humor",
+      "aliases": [
+        "humor",
+        "storytelling",
+        "drunk-driving"
+      ],
+      "example_urls": [
+        "/save-the-souse"
+      ]
+    },
+    {
+      "tag": "technical-communication",
+      "aliases": [
+        "technical-communication",
+        "writing"
+      ],
+      "example_urls": [
+        "/viz"
+      ]
+    }
+  ],
+  "reassigned": {
+    "/weeks": [
+      "how-igor-ticks",
+      "mortality",
+      "data-visualization",
+      "stoicism",
+      "productivity"
+    ],
+    "/ai-native-manager": [
+      "manager",
+      "ai",
+      "ai-tooling",
+      "career",
+      "work-life-balance"
+    ],
+    "/nurture": [
+      "relationships",
+      "emotional-intelligence",
+      "book-notes",
+      "self-improvement"
+    ],
+    "/timeoff": [
+      "time-off",
+      "self-improvement",
+      "work-life-balance",
+      "family",
+      "habits"
+    ],
+    "/ai-security": [
+      "ai-security",
+      "ai",
+      "ai-safety",
+      "computer-security"
+    ],
+    "/hill-climbing": [
+      "evals",
+      "ai-tooling",
+      "ai",
+      "software-engineering",
+      "productivity"
+    ],
+    "/physical-health": [
+      "physical-health",
+      "habits",
+      "weight-loss",
+      "self-improvement"
+    ],
+    "/covid": [
+      "covid-19",
+      "stoicism",
+      "remote-work",
+      "media-criticism",
+      "data-visualization"
+    ],
+    "/advertising": [
+      "advertising",
+      "media-criticism",
+      "productivity"
+    ],
+    "/death": [
+      "mortality",
+      "death",
+      "book-notes",
+      "healthcare",
+      "spiritual"
+    ],
+    "/bike-tesla-identity": [
+      "identity",
+      "how-igor-ticks",
+      "ai-tooling",
+      "habits",
+      "transportation"
+    ],
+    "/depression": [
+      "depression",
+      "mental-health",
+      "emotional-intelligence",
+      "book-notes",
+      "meditation"
+    ],
+    "/pride": [
+      "pride-and-ego",
+      "how-igor-ticks",
+      "self-improvement",
+      "decision-making",
+      "career"
+    ],
+    "/timeoff-2024-04": [
+      "time-off",
+      "how-igor-ticks",
+      "goal-setting",
+      "family",
+      "physical-health"
+    ],
+    "/adblocker-trojan": [
+      "computer-security",
+      "software-engineering"
+    ],
+    "/viz": [
+      "data-visualization",
+      "technical-communication",
+      "productivity"
+    ],
+    "/22": [
+      "career",
+      "how-igor-ticks",
+      "friendship",
+      "self-improvement",
+      "goal-setting"
+    ],
+    "/save-the-souse": [
+      "humor",
+      "friendship",
+      "how-igor-ticks",
+      "decision-making"
+    ],
+    "/interviewsarehard": [
+      "job-hunt",
+      "career",
+      "mental-health",
+      "work-life-balance",
+      "goal-setting"
+    ],
+    "/d/2017-09-10-software-rot": [
+      "software-engineering",
+      "productivity"
+    ]
+  },
+  "notes": "Reused high-count existing tags as canonical where good: `how-igor-ticks` (45, collapsed casing variant), `emotional-intelligence` (43, absorbs \"emotion\"/\"emotional-health\"/\"emotional-resilience\"), `book-notes` (33, absorbs \"book-summary\"/\"book-recommendations\"/the \"heath\" typo which clearly meant Heath Brothers but I folded it into book-notes since it tagged a book summary), `ai` (26), `physical-health` (absorbs \"fitness\"/\"sleep\"/\"hiit\" etc), `manager` (9), `job-hunt` (3), `weight-loss` (2).\n\nHard placements / judgment calls:\n- \"heath\" typo: ambiguous — could be \"health\" or \"Heath Brothers\" (referenced in /nurture and /death book summaries). Given both its likely sources are book summaries, I folded it into `book-notes`, NOT `health`. Flagging because the prompt suggested it collapses to \"health\" — but context (Heath Brothers) argues otherwise. If you want it under health instead, move it to `physical-health`/`emotional-intelligence`.\n- `spiritual` vs `mortality` vs `death`: /death legitimately spans all three. Kept `mortality` as the broad reflective tag (also on /weeks) and `death` as the narrow topical one; `spiritual-health` collapsed into `spiritual`.\n- `evals` vs `ai-tooling`: /hill-climbing is really about building evals/fitness functions for agent loops. Made `evals` its own canonical tag (absorbing optimization/hill-climbing/model-as-judge/TDD) rather than burying it under ai-tooling.\n- `mental-health` vs `emotional-intelligence`: these overlap heavily. I scoped `mental-health` to clinical/disordered states (depression, anxiety, impostor-syndrome) and `emotional-intelligence` to skill/relational EQ. /depression and /interviewsarehard get both where warranted.\n- `software-engineering` is doing double duty for /software-rot (maintenance/bit-rot) and the engineering side of /adblocker-trojan and /hill-climbing. Considered a separate `technical-debt` tag but YAGNI — it would only land on one post.\n- `productivity` (existing count 6) is the closest home for the \"effective workflow\" angle in /viz, /advertising, /covid, /weeks — slightly broad but reused rather than inventing `personal-productivity`.\n- Dropped over-broad junk candidates from the source tags: \"tools\", \"tech\", \"meta\", \"navigation\", \"current-events\" (folded into media-criticism), \"mindset\" (folded into decision-making/stoicism), \"perspective\" (folded into stoicism). \"search-featured\"/\"blog-meta\"/\"explainer\" from the existing vocab are site-mechanics tags, not topical, so excluded from the canonical topic vocabulary.\n- Vocab is 43 tags, within the 30-50 target. Every post got 2-5 canonical tags (/adblocker-trojan, /viz, /advertising, /software-rot are narrow and got 2-3; richer posts got 5)."
+}
