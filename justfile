@@ -215,6 +215,9 @@ jekyll-clean:
 # Clean and rebuild Jekyll site from scratch
 jekyll-rebuild: jekyll-clean
     #!/usr/bin/env sh
+    # Load the Ruby 3.2+/4.0 compat shim (tainted?/pathutil) the old
+    # github-pages gems need. Mirrors jekyll-serve; no-op on older Ruby.
+    export RUBYOPT="-r$(pwd)/_ruby_compat.rb"
     echo "🔨 Rebuilding Jekyll site from scratch..."
     # Update git branch info for dev banner
     echo '{"branch": "'$(git branch --show-current)'"}' > _data/git.json
@@ -235,6 +238,8 @@ jekyll-rebuild: jekyll-clean
 worktree-init:
     #!/usr/bin/env sh
     set -eu
+    # Load the Ruby 3.2+/4.0 compat shim — see jekyll-rebuild. No-op on older Ruby.
+    export RUBYOPT="-r$(pwd)/_ruby_compat.rb"
     # Sanitize branch name for filesystem (e.g. claude/foo -> claude-foo)
     # Otherwise nohup writes to a non-existent parent dir and the build
     # fails silently while we still print "Background build fired".
