@@ -3,6 +3,7 @@
   "files": {
     "ignore": [
       "back-links.json",
+      "topics.json",
       "zz-chop-logs/**",
       "published-chop-logs/**",
       "_ig66/ig66-export.json",
