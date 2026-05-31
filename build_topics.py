@@ -1,7 +1,7 @@
 #!uv run
 # /// script
 # requires-python = ">=3.9"
-# dependencies = ["typer", "rich"]
+# dependencies = ["typer", "rich", "numpy", "google-genai"]
 # ///
 """Build the tag/cross-link topics index. Pilot scope: extract + sample."""
 
@@ -101,6 +101,73 @@ def build_sidecar(
     )
     (ROOT / out).write_text(idx.to_json(), encoding="utf-8")
     console.print(f"[green]wrote {len(posts)} posts -> {out}[/green]")
+
+
+@app.command()
+def embed(threshold: float = 0.75, k: int = 8, out: str = "topics.json"):
+    """Embed every post with Gemini, compute related posts + cross-link gaps,
+    merge into topics.json. Caches by content hash (re-embeds only changed posts)."""
+    import os
+
+    import numpy as np
+
+    from topics_embed import (
+        GEMINI_DIM,
+        GEMINI_MODEL,
+        GEMINI_TASK,
+        TEXT_CAP,
+        content_hash,
+        embed_texts,
+        gap_candidates,
+        knn,
+        normalize_rows,
+    )
+    from topics_graph import load_graph
+
+    key = os.environ.get("GOOGLE_API_KEY")
+    if not key:
+        raise typer.BadParameter("GOOGLE_API_KEY not set")
+    corpus = json.loads((ROOT / "tmp/topics/corpus.json").read_text(encoding="utf-8"))
+    cache_path = ROOT / "tmp/topics/embeddings.json"
+    cache = (
+        json.loads(cache_path.read_text(encoding="utf-8"))
+        if cache_path.exists()
+        else {}
+    )
+
+    capped = {u: t[:TEXT_CAP] for u, t in corpus.items()}
+    hashes = {u: content_hash(t) for u, t in capped.items()}
+    todo = [u for u in corpus if cache.get(u, {}).get("hash") != hashes[u]]
+    if todo:
+        console.print(f"[cyan]embedding {len(todo)} posts via {GEMINI_MODEL}...[/cyan]")
+        vecs = embed_texts([capped[u] for u in todo], key)
+        for u, v in zip(todo, vecs):
+            cache[u] = {"hash": hashes[u], "vec": v}
+        cache_path.write_text(json.dumps(cache), encoding="utf-8")
+    else:
+        console.print("[green]embedding cache hit — nothing to re-embed[/green]")
+
+    urls = [u for u in corpus if u in cache]
+    mat = normalize_rows(np.array([cache[u]["vec"] for u in urls], dtype=np.float64))
+    knn_res = knn(urls, mat, k=k)
+    graph = load_graph(BACKLINKS)
+    gaps = gap_candidates(knn_res, graph, threshold=threshold)
+
+    idx = TopicsIndex.from_json((ROOT / out).read_text(encoding="utf-8"))
+    for u, nbrs in knn_res.items():
+        if u in idx.posts:
+            idx.posts[u].related = [{"url": w, "score": round(s, 4)} for w, s in nbrs]
+    idx.embedder = {
+        "model": GEMINI_MODEL,
+        "dim": GEMINI_DIM,
+        "task": GEMINI_TASK,
+        "source": "google-genai",
+    }
+    idx.crosslink_gaps = gaps
+    (ROOT / out).write_text(idx.to_json(), encoding="utf-8")
+    console.print(
+        f"[green]related for {len(knn_res)} posts, {len(gaps)} cross-link gaps -> {out}[/green]"
+    )
 
 
 if __name__ == "__main__":
