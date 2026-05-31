@@ -5,13 +5,16 @@
 # ///
 """Build the tag/cross-link topics index. Pilot scope: extract + sample."""
 
+import hashlib
 import json
+from datetime import datetime, timezone
 from pathlib import Path
 
 import typer
 from rich.console import Console
 
 from topics_extract import clean_markdown_text
+from topics_sidecar import PostEntry, TopicsIndex
 
 app = typer.Typer(add_completion=False)
 console = Console()
@@ -65,6 +68,39 @@ def pilot_sample(n: int = 20, out: str = "tmp/topics/pilot_urls.json"):
     outp.parent.mkdir(parents=True, exist_ok=True)
     outp.write_text(json.dumps(picked, indent=2), encoding="utf-8")
     console.print(f"[green]sampled {len(picked)} pilot posts -> {out}[/green]")
+
+
+@app.command("build-sidecar")
+def build_sidecar(
+    cards: str = "tmp/topics/all_cards.json",
+    out: str = "topics.json",
+):
+    """Join topic cards + titles + content hashes into the topics.json sidecar.
+
+    Deep-dive stage: per-post summary/tags/entities, no canonical vocab yet
+    (consolidation is a later step). Tags here are the raw proposed tags.
+    """
+    cards_data = json.loads((ROOT / cards).read_text(encoding="utf-8"))
+    ui = json.loads(BACKLINKS.read_text(encoding="utf-8"))["url_info"]
+    corpus = json.loads((ROOT / "tmp/topics/corpus.json").read_text(encoding="utf-8"))
+    posts = {}
+    for c in cards_data:
+        url = c["url"]
+        text = corpus.get(url, "")
+        posts[url] = PostEntry(
+            title=(ui.get(url) or {}).get("title", url),
+            summary=c.get("summary", ""),
+            tags=c.get("tags", []),
+            entities=c.get("entities", []),
+            content_hash="sha256:" + hashlib.sha256(text.encode("utf-8")).hexdigest(),
+        )
+    idx = TopicsIndex(
+        generated_at=datetime.now(timezone.utc).isoformat(),
+        embedder=None,
+        posts=posts,
+    )
+    (ROOT / out).write_text(idx.to_json(), encoding="utf-8")
+    console.print(f"[green]wrote {len(posts)} posts -> {out}[/green]")
 
 
 if __name__ == "__main__":
