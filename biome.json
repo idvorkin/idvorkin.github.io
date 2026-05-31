@@ -4,6 +4,7 @@
     "ignore": [
       "back-links.json",
       "topics.json",
+      "topics_data/**",
       "zz-chop-logs/**",
       "published-chop-logs/**",
       "_ig66/ig66-export.json",

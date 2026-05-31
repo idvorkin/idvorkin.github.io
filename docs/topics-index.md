@@ -13,7 +13,7 @@
 | `tmp/topics/all_cards.json`  | ✗ gitignored | raw LLM topic cards (tagging output)                                                        |
 | `tmp/topics/embeddings.json` | ✗ gitignored | Gemini vectors, keyed by url→{hash, vec} (the embed cache)                                  |
 
-The `tmp/` artifacts are all regenerable; only `topics.json` is the durable, committed product.
+The `tmp/` artifacts are all regenerable; only `topics.json` is the durable, committed product. The **raw LLM outputs are also checked in under `topics_data/`** (`all_cards.json` — the 336 raw topic cards; `vocab_pilot.json` — the pilot's 43-tag canonical vocab) as provenance, so the deep-dive tagging (~22 min) and the pilot consolidation never need re-running.
 
 ## Code
 
