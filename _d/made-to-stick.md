@@ -26,12 +26,15 @@ Why does a made-up story about a man waking in an ice-filled bathtub with one ki
   - [Find the core](#find-the-core)
   - [Don't bury the lead](#dont-bury-the-lead)
   - [Names, names, and names](#names-names-and-names)
+  - [Why the core rescues people](#why-the-core-rescues-people)
   - [Pack meaning with what's already there](#pack-meaning-with-whats-already-there)
 - [2. Unexpected — break the guessing machine, then fix it](#2-unexpected--break-the-guessing-machine-then-fix-it)
   - [Surprise needs insight, not gimmickry](#surprise-needs-insight-not-gimmickry)
   - [Push common sense to uncommon sense](#push-common-sense-to-uncommon-sense)
   - [Curiosity is a gap you have to open](#curiosity-is-a-gap-you-have-to-open)
+  - [Make people feel the gap](#make-people-feel-the-gap)
 - [3. Concrete — paint with sensory detail](#3-concrete--paint-with-sensory-detail)
+  - [Concrete builds understanding](#concrete-builds-understanding)
   - [The Velcro theory of memory](#the-velcro-theory-of-memory)
   - [Concrete coordinates people](#concrete-coordinates-people)
 - [4. Credible — let ideas carry their own credentials](#4-credible--let-ideas-carry-their-own-credentials)
@@ -43,6 +46,7 @@ Why does a made-up story about a man waking in an ice-filled bathtub with one ki
   - [Appeal to identity](#appeal-to-identity)
   - [Worn-out words stop working](#worn-out-words-stop-working)
 - [6. Stories — get people to act](#6-stories--get-people-to-act)
+  - [Why simulation works](#why-simulation-works)
   - [Spot, don't invent](#spot-dont-invent)
   - [Springboard stories](#springboard-stories)
   - [Jared](#jared)
@@ -60,9 +64,11 @@ The gap is the whole book. When you tap, you hear the full orchestra in your hea
 
 A quick gut check the Heaths run early: "maximize shareholder value." Simple? Short, but not useful. Unexpected? No. Concrete? Not at all. Emotional? No. A story? No. Now run JFK's "put a man on the moon and return him safely by the end of the decade" through the same filter — it passes on every count. Same goal, opposite stickiness. Most of what we say at work sounds like the first one.
 
+The Heaths call this a nurture book. Stickiness looks like a gift — some people just have it — but it's closer to a craft. An Israeli team collected 200 award-winning ads and found 89% fit just six templates; when they spent two hours teaching novices those templates, outside judges rated the novices' ads 50% more creative than untrained peers'. Whatever can be taught in an afternoon isn't magic.
+
 ## 1. Simple — find the core, then say it compactly
 
-The Army builds staggeringly detailed plans and then tells its officers the plans are mostly useless, because "no plan survives contact with the enemy." So in the 1980s it added Commander's Intent — a plain-language statement at the top of every order naming the single desired end-state. Not the steps, the destination. If everyone knows the destination, they can improvise their way there when the plan falls apart, which it will. Officers find their intent by finishing two sentences: "If we do nothing else tomorrow, we must **_," and "The single most important thing we must do tomorrow is _**."
+The Army builds staggeringly detailed plans and then tells its officers the plans are mostly useless, because "no plan survives contact with the enemy." So in the 1980s it added Commander's Intent — a plain-language statement at the top of every order naming the single desired end-state. Not the steps, the destination. If everyone knows the destination, they can improvise their way there when the plan falls apart, which it will. Officers find their intent by finishing two sentences: if we do nothing else tomorrow, we must do _what_? And the single most important thing tomorrow is _what_?
 
 ### Find the core
 
@@ -76,9 +82,13 @@ Journalists put the most important fact first — the inverted pyramid — so a 
 
 Hoover Adams ran the Dunn, North Carolina paper to a readership penetration of 112% — more than one copy per household — on a single proverb. Asked his secret, he said, "It's because of three things: names, names, and names." He'd happily hire more typesetters and run more pages if reporters could fill them with local names. He drove it home with deliberate exaggeration: "If an atomic bomb fell on Raleigh, it wouldn't be news in Benson unless some of the debris and ashes fell on Benson." Names trump costs. Names trump good prose. Names trump nuclear explosions in the next county. That's a core, communicated so hard that nobody on staff can misread it.
 
+### Why the core rescues people
+
+A clear core does more than aid memory — it rescues people stranded between good options. Offered a cheap Hawaii vacation right after an exam, students bought it 57% of the time if they'd passed and 54% if they'd failed; but when they didn't yet know the result, the majority paid five dollars to wait two days, even though they'd go either way. Uncertainty by itself freezes us. So does abundance: students choosing between a lecture and studying chose to study 21% of the time, but add a third option — a foreign film — and 40% studied, because two tempting alternatives were harder to choose between than one, so more people fell back to the books. The people you're talking to make decisions in that fog all day. A sharp core is what lets them move — "THE low-fare airline" ends the chicken-salad debate before it starts.
+
 ### Pack meaning with what's already there
 
-A core has to be compact — there's a hard limit on what people can hold at once. The trick to packing a profound idea into a few words is to plant flags in memory people already have. Tell someone a pomelo is "the largest citrus fruit, rind very thick but soft" and they'll forget it; tell them it's "basically a supersized grapefruit" and it sticks, because it borrows the whole grapefruit schema, including how it'd taste in orange juice. Hollywood lives on this: "Die Hard on a bus" (Speed), "Jaws on a spaceship" (Alien). Five words green-light a hundred-million-dollar film and tell the set designer the ship should be rickety and sweaty, not the gleaming Enterprise. The best of these are generative — Disney's employees aren't staff, they're "cast members" who audition for roles, wear costumes, and go "onstage" in the park. From four words an employee can predict how to behave in situations nobody scripted.
+A core has to be compact — there's a hard limit on what people can hold at once. Try it: stare at "J FKFB INAT OUP SNA SAI RS" for a few seconds and you'll recall maybe seven letters, but regroup the very same letters as "JFK FBI NATO UPS NASA IRS" and it's effortless — each chunk is one flag planted on something already in your memory. The trick to packing a profound idea into a few words is to plant those flags. Tell someone a pomelo is "the largest citrus fruit, rind very thick but soft" and they'll forget it; tell them it's "basically a supersized grapefruit" and it sticks, because it borrows the whole grapefruit schema, including how it'd taste in orange juice. Hollywood lives on this: "Die Hard on a bus" (Speed), "Jaws on a spaceship" (Alien). Five words green-light a hundred-million-dollar film and tell the set designer the ship should be rickety and sweaty, not the gleaming Enterprise. The best of these are generative — Disney's employees aren't staff, they're "cast members" who audition for roles, wear costumes, and go "onstage" in the park. From four words an employee can predict how to behave in situations nobody scripted. Contrast Subway's "sandwich artists," the evil twin of the cast member: it guides nobody, because no one actually wants freeform artistic expression on their sub.
 
 ## 2. Unexpected — break the guessing machine, then fix it
 
@@ -98,11 +108,19 @@ A Super Bowl ad once showed wolves attacking a marching band. Memorable, useless
 
 Robert Cialdini noticed the best science writing opens with a mystery. An astronomer asked what the rings of Saturn are made of, and why three famous teams reached three different answers — and held readers through twenty dense pages to learn the answer was dust. George Loewenstein's gap theory explains it: curiosity is the pain of a hole in your knowledge, an itch you have to scratch. So you have to open gaps before you fill them. Stop asking "what information do I need to convey?" and start asking "what questions do I want my audience to ask?" Roone Arledge made strangers care about a college football game in a town they'd never visit by feeding them enough context — the rivalry, the campus, the crowd — to turn an abyss of indifference into a gap worth closing. And a gap doesn't have to be small to grab people: Sony's "pocketable radio" and Kennedy's man on the moon were audacious enough to be provocative, concrete enough to start engineers brainstorming the first step.
 
+### Make people feel the gap
+
+The gap theory has a catch: people think they already know what they don't. Asked to brainstorm fixes for their own campus parking mess, people generated barely 30% of what an expert panel found — while estimating they'd gotten 75%. The cure is to make them commit before you reveal. Eric Mazur, a Harvard physicist, stops mid-lecture and makes students vote out loud on a concept; staking a public answer makes them care whether they were right. Nora Ephron's teacher did the same by having the class write the wrong lead first. A prediction you've put your ego behind opens a gap that no lecture can.
+
 ## 3. Concrete — paint with sensory detail
 
 Aesop's fox can't reach the grapes and decides they're sour, and 2,500 years later "sour grapes" lives in dozens of languages. The truth survived because of how it was encoded — a fox, grapes, a dismissive line — not because it was true. Plenty of true things never stick. "Aesop's Helpful Suggestions: don't be a bitter jerk when you fail" would have died in a generation.
 
 Concrete means something you can examine with your senses. A V8 engine is concrete; "high-performance" is abstract. Abstraction is the luxury of the expert — the judge thinks in precedent while the juror remembers the Darth Vader toothbrush — and the expert's drift into abstraction is the Curse of Knowledge in action. When Beth Bechky studied a chip-machine maker, the engineers answered factory-floor problems by making their blueprints more elaborate and more abstract, "like American tourists who try to make themselves understood by speaking English more slowly and loudly." The fix wasn't meeting in the middle. It was solving problems on the machine itself — the one language everyone spoke fluently.
+
+### Concrete builds understanding
+
+Concreteness isn't only memorable, it's how novices learn anything at all. Comparing math classrooms, researchers found Japanese and Taiwanese teachers taught in context — "You had 100 yen and bought a notebook for 70, how much is left?", tiles slid off a desk to show subtraction — about twice as often as American teachers (61% of lessons versus 31%). Two accounting professors ran an entire semester as a single story: Kris and Sandy, two sophomores launching a gadget, with you as their accountant. The difference between fixed and variable cost wasn't defined, it was discovered the day they bounced a check despite record sales. Two years later, in the next course, the students who'd lived that soap opera scored higher — the C-students by a full twelve points. You can't start a house by building the roof in midair; abstraction needs a concrete foundation under it.
 
 ### The Velcro theory of memory
 
@@ -124,11 +142,11 @@ When you lack a famous name, recruit an honest one. The anti-smoking campaign us
 
 ### Statistics show a relationship, not a number
 
-Use statistics to illustrate a relationship people will remember, not digits they'll forget. To convey the nuclear arsenal, Beyond War didn't cite warhead counts; they dropped one BB in a metal bucket ("the Hiroshima bomb"), then ten, then poured in 5,000. "The roar went on and on. Afterward there was always dead silence." Whether the count was 4,135 or 9,437 was irrelevant — the scale-up was the point. And put numbers on a human scale: "throwing a rock from the sun to the earth and landing within a third of a mile" impresses fewer people than the identically accurate "from New York to Los Angeles within two-thirds of an inch."
+Use statistics to illustrate a relationship people will remember, not digits they'll forget. To convey the nuclear arsenal, Beyond War didn't cite warhead counts; they dropped one BB in a metal bucket ("the Hiroshima bomb"), then ten, then poured in 5,000. "The roar went on and on. Afterward there was always dead silence." Whether the count was 4,135 or 9,437 was irrelevant — the scale-up was the point. And put numbers on a human scale: "throwing a rock from the sun to the earth and landing within a third of a mile" impresses fewer people than the identically accurate "from New York to Los Angeles within two-thirds of an inch." Stephen Covey pulled the same trick on a dreary statistic — a survey where only 37% of 23,000 employees understood what their organization was trying to achieve — by recasting it as a soccer team where only 4 of the 11 players know which goal is theirs, only 2 care, and most are somehow competing against their own teammates.
 
 ### The Sinatra Test and testable credentials
 
-One example can certify a whole domain — the Sinatra Test, from "if I can make it there, I'll make it anywhere." An Indian shipper won a paranoid Bollywood studio by noting it had delivered the new Harry Potter to every bookstore in India, all on shelves by 8 a.m. on release day, with no leaks. If you can do that, you can protect anything. Best of all, hand the test to the audience. Wendy's didn't claim "11% more beef"; Clara Peller lifted the bun and demanded "Where's the beef?" — a claim anyone could check with a ruler. Reagan didn't recite inflation figures; he asked, "Are you better off than you were four years ago?" and let each voter run the test. ([Selling](/sell) leans on this same move — let people convince themselves.)
+One example can certify a whole domain — the Sinatra Test, from "if I can make it there, I'll make it anywhere." An Indian shipper won a paranoid Bollywood studio by noting it had delivered the new Harry Potter to every bookstore in India, all on shelves by 8 a.m. on release day, with no leaks. If you can do that, you can protect anything. Best of all, hand the test to the audience. Wendy's didn't claim "11% more beef"; Clara Peller lifted the bun and demanded "Where's the beef?" — a claim anyone could check with a ruler. Reagan didn't recite inflation figures; he asked, "Are you better off than you were four years ago?" and let each voter run the test. ([Selling](/sell) leans on this same move — let people convince themselves.) It can backfire when the test is real but the conclusion isn't: a 1990s rumor urged people to "see for yourself" that Snapple backed the Klan, pointing to a slave ship on the label (actually an engraving of the Boston Tea Party) and a circled K (it means kosher). A verifiable detail walked people straight into a lie.
 
 ## 5. Emotional — make people care
 
@@ -136,11 +154,13 @@ Belief isn't enough; people act on feeling. The engine is the power of one. Moth
 
 ### Appeal to self-interest — and not just the basement
 
-The most reliable lever is what's in it for them. John Caples wrote the most famous headline in advertising history in 1925 — "They laughed when I sat down at the piano, but when I started to play!" — and built mail-order advertising on one rule: sell the benefit of the benefit. "People don't buy quarter-inch drill bits. They buy quarter-inch holes so they can hang their children's pictures." In a 1982 cable-TV study, the pitch that made homeowners imagine themselves subscribing doubled sign-ups over the one that just listed benefits. But don't camp in Maslow's basement of money and security. Floyd Lee came out of retirement to run a chow hall near the Baghdad airport with the same Army menu as everyone else, yet soldiers braved a deadly road to eat there. His line: "I am not just in charge of food service; I am in charge of morale." His staff made decisions by asking, "what should a Pegasus person do?"
+The most reliable lever is what's in it for them. John Caples wrote the most famous headline in advertising history in 1925 — "They laughed when I sat down at the piano, but when I started to play!" — and built mail-order advertising on one rule: sell the benefit of the benefit. "People don't buy quarter-inch drill bits. They buy quarter-inch holes so they can hang their children's pictures." In a 1982 cable-TV study, the pitch that made homeowners imagine themselves subscribing more than doubled sign-ups — 47% versus 20% — over the one that just listed the benefits. But don't camp in Maslow's basement of money and security. Asked which pitch for a $1,000 bonus would move them most — paying down a car, padding a rainy-day fund, or "the company recognizes how important you are" — most people choose recognition for themselves while assuming everyone else just wants the cash. We each think we live a floor above the crowd, so aim higher than you'd guess. Floyd Lee came out of retirement to run a chow hall near the Baghdad airport with the same Army menu as everyone else, yet soldiers braved a deadly road to eat there. His line: "I am not just in charge of food service; I am in charge of morale." His staff made decisions by asking, "what should a Pegasus person do?"
 
 ### Appeal to identity
 
 People also decide by asking "what does a person like me do here?" That's why a fire department refused to review a safety film for a free popcorn popper — "do you think we'd use a fire safety program because of some popcorn popper?" Firefighters aren't people who need little gifts. Texas couldn't fund or shame its way out of a $25-million litter problem until it profiled the typical litterer — a young, pickup-driving, sports-and-country-music man who hated being told what to do, nicknamed "Bubba" — and convinced him that people like him don't litter. Dallas Cowboys crushing beer cans, Willie Nelson, "Don't Mess with Texas." Litter fell 72% over five years. Not fear, not self-interest. Identity.
+
+The Truth anti-smoking campaign ran the same play. Rather than warn teenagers about lung disease — a bet that never pays with teenagers — it aimed at their hatred of being manipulated: kids stacking 1,800 body bags outside a tobacco company, one for each American killed that day. Teens who saw Truth were 66% less likely to smoke; teens who saw Philip Morris's earnest "Think. Don't Smoke." were 36% more likely. Rebellion is an identity too, and identity beats fear.
 
 ### Worn-out words stop working
 
@@ -150,11 +170,15 @@ Emotional words wear out through "semantic stretch." When everyone calls everyth
 
 A credible idea makes people believe and an emotional idea makes them care, but the right story makes them act, because a story does two things at once: it simulates and it inspires. Hearing a story isn't passive — your brain runs it like a flight simulator, firing many of the same regions as the real thing. A nurse in a neonatal ICU watched a baby turn blue-black and overrode the whole team, who read the steady monitor and assumed a collapsed lung; she knew the heart's sac was filling with air, pushed their hands away, and saved the baby. The monitor measured electrical activity, not actual beats. The story teaches the specific lesson and a deeper one — don't blindly trust the machine — far better than a bullet point ever could.
 
+### Why simulation works
+
+The flight-simulator line isn't a metaphor. Imagine a flashing light and your visual cortex activates; imagine words that start with "b" and your lips move a little. So a story is rehearsal. UCLA researchers gave students a problem and had one group picture a happy ending and another mentally replay, step by step, how the mess arose — five minutes a day for a week. The ones who replayed the messy process, not the rosy outcome, came out in better moods and far likelier to have actually done something about it. A review of 35 studies found that mental practice alone delivers roughly two-thirds the gain of physical practice. A good story is reps in the simulator before the real thing.
+
 ### Spot, don't invent
 
 You don't have to write great stories. You have to recognize them when life hands them over, then resist the urge to abstract them into a slogan. "You can extract a moral from a story, but you can't extract a story from a moral." Learn the three plots so you can spot the gift:
 
-- **Challenge** — the underdog against a daunting obstacle (David and Goliath). It makes people want to work harder and persevere. Use it to kick off a hard project.
+- **Challenge** — the underdog against a daunting obstacle (David and Goliath, or Rose Blumkin, who slipped out of Russia at 23 with no English and built a $100-million furniture business, still working the floor at 100). It makes people want to work harder and persevere. Use it to kick off a hard project.
 - **Connection** — a bond across a gap of race, class, or rank (the Good Samaritan). It makes people more tolerant and generous. Use it at the holiday party.
 - **Creativity** — the mental breakthrough (Newton's apple). It makes people experiment. Use it when you want a team to try something new.
 
