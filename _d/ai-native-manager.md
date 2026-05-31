@@ -252,15 +252,7 @@ The good news: the same AI that creates cognitive debt can pay it down. Willison
 
 ### Dark Factory
 
-A **dark factory** (also _lights-out manufacturing_) is a fully-automated production facility that runs without humans on-site — and therefore without lights, climate control, or any other condition humans need. Robots, AI vision, sensors, and autonomous mobile platforms handle every step. The "dark" is literal: the machines don't see in our spectrum, so there's no reason to turn the lights on. FANUC's robot-building plant in Japan is the canonical example.
-
-My take: this word is borrowed from manufacturing, but the more interesting use is in software. A **dark codebase** is one where AI agents do most of the writing, reviewing, and merging — no human is in the implementation loop. A **dark service** is a production system humans monitor by metrics but never touch in code. A **dark team** is an org unit that looks like a team (Slack channel, roadmap, OKRs) but the labor inside is mostly agentic, with one or two humans at the top steering. Headcount drops; output doesn't.
-
-The word matters because it carves out a category that "automation" softens. Automation is a knob — a little, a lot, depends on the task. A dark factory is a state — _production has been decoupled from labor_. Once you see the word, you start noticing that some teams have already drifted there without anyone deciding to. Nobody fired the humans; the humans just got less and less central until one day the system would survive their leaving and no one could rebuild it from scratch.
-
-The compounding risks: dark-factory work accelerates [Cognitive Debt](#cognitive-debt) (nobody on the team can explain what's running), spreads [Heresies](#heresies) (false AI beliefs propagate with no human to correct them), and pushes [Functional Collapse](#functional-collapse) past the point where it can be reversed — because the building skills the humans would need to reclaim the role have atrophied along the way.
-
-EM job in this era: notice when your team is becoming a dark factory, and decide on purpose whether that's what you want it to be.
+{% include summarize-page.html src="/dark-factory" %}
 
 ### Deep Blue
 
