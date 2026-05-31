@@ -18,8 +18,10 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-05-31](#2026-05-31)
+    - [Friction = Focus: When Production Gets Too Cheap to Count](#friction--focus-when-production-gets-too-cheap-to-count)
   - [2026-05-11](#2026-05-11)
-    - [Lessons from a 7-Habits Raccoon Marathon](#lessons-from-a-7-habits-raccoon-marathon)
+    - [AI Helps Me Think by Showing Me Options](#ai-helps-me-think-by-showing-me-options)
   - [2026-05-10](#2026-05-10)
     - [Free Doesn't Save You from the Wrong Problem](#free-doesnt-save-you-from-the-wrong-problem)
   - [2026-05-09](#2026-05-09)
@@ -252,6 +254,19 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2026-05-31
+
+#### Friction = Focus: When Production Gets Too Cheap to Count
+
+- **TOP Takeaway**: [hmmz.org's "attention hazard" post](https://thoughts.hmmz.org/2026-05-31.html) — _"a tool producing a cheap reward with minimal input and no friction can only be a liability."_ "Friction = focus, focus = product." I agree, hard. The sharpest version in my own terms: **when production gets this cheap, it collapses into [consumption](/produce-consume) — and loses the footprint that made it worth anything.** I've argued production leaves a trace and consumption doesn't; effortless AI is the case where production _stops_ leaving a trace. Fifty half-built apps leave about as much behind as a thousand hours of TikTok: nothing.
+- **His argument** (distilled): low-friction AI amplifies distraction instead of enabling work. ~50 projects, almost all unmaintained "quick scripts" that spiraled; one accidentally got traffic and became an obligation. People run three screens of unrelated projects they'll never maintain; teams stand up "five rooms to manage their agents." A voice-to-blog pipeline produced "unbridled garbage" because effortlessness killed commitment. Handwriting survives _because_ it has friction.
+- **Where it lands for me** (the uncomfortable part): I'm the fifty-projects guy, and I literally built [a multi-agent city](/gas-city) — the "five rooms managing agents" he recoils from. I've even named the genre: [the Winchester Mystery House of software](#the-winchester-mystery-house-of-software-when-code-gets-too-cheap-to-care-about), staircases to nowhere because code got too cheap to care. So I either dismiss him or sit with it. I'm sitting with it.
+- **What actually saves me from the critique** (and it isn't willpower): the friction is already in my system, by design. I journal by **hand** on a Kindle Scribe every morning ([DS20](/mortality-software)) before any screen — the slow input _is_ the point; the day's plan gets written, not generated. This post made me see that ritual isn't nostalgia. It's the friction that keeps my production from decaying into consumption.
+- **Takeaway 1 — mastery still holds.** Cheap output doesn't retire the reps. You still have to master the tools, and mastery is just friction you chose: reps, and that's fine. What the firehose can't hand you is the judgment those reps build — which is exactly what's scarce once everyone can generate everything.
+- **Takeaway 2 — [essentialism](/affirmations#an-essentialist-know-essential-provide-context-prioritize-ruthlessly) still holds.** When production is free, _choosing what's worth producing_ becomes the whole game. "Know Essential. Prioritize Ruthlessly." The constraint moves from "can I build it" to "should this exist" — and that has no cheap-token answer. As I put it on [/produce-consume](/produce-consume): production is meant to be a substitute for empty consumption, not for presence. Same warning, new vice.
+
+Source: ["AI is an attention hazard"](https://thoughts.hmmz.org/2026-05-31.html), hmmz.org, 2026-05-31.
 
 ### 2026-05-11
 
