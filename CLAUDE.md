@@ -48,6 +48,7 @@ Why it matters: the inbound "Mentioned in:" section on every linked post reads f
 `build_back_links.py build` reads from `_site/` (built HTML), so a fresh Jekyll build must succeed first. Jekyll 3.9 + liquid-4.0.3 use the deprecated `String#tainted?` method removed in Ruby 3.2+. **On Ruby 4.x the local build will fail before producing `_site/`** and the backlinks rebuild will then either error out (if `_site/` is missing) or silently produce stale entries (if `_site/` is from before the new posts existed).
 
 **Local fix:**
+
 ```bash
 brew install ruby@3.1
 export PATH=/home/linuxbrew/.linuxbrew/opt/ruby@3.1/bin:$PATH
@@ -197,6 +198,8 @@ Drop scratch files (planning docs, content backups) in **`<repo-root>/tmp/`** �
 ## Finding Related Blog Content
 
 Use Grep/Glob directly on `_d/`, `_posts/`, and `_td/` directories for text search — faster than the blog MCP. For frontmatter metadata queries (tags, dates, incoming/outgoing links), use `/find-content`.
+
+**Topic/semantic queries** ("what posts do I have on X", "related posts", "which posts should cross-link") are answered by the **topics index** — `topics.json` (per-post summary, tags, entities, semantic related-posts, and cross-link gap candidates). How it was built and how to regenerate it (the tagging Workflow + Gemini embeddings) is documented in **[`docs/topics-index.md`](docs/topics-index.md)**.
 
 ### Before Creating a New Post
 
