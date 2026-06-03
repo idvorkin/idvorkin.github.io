@@ -8,7 +8,7 @@ redirect_from:
   - /scandi-2026
 ---
 
-22 days, 5 countries, 4 Dvorkins, one whirlwind tour. From Reykjavík to Amsterdam by way of Stockholm, Oslo, and the Norwegian fjords. This is the first time we've attempted a trip of this scope as a family — the kids are 16 and 14, both still home, and the window for "all four of us on the road together" closes faster than I'd like.
+22 days, 5 countries, 4 Dvorkins, one whirlwind tour. From Reykjavík to Amsterdam by way of Stockholm, Oslo, and the Norwegian fjords. This is the first time we've attempted a trip of this scope as a family — the kids are 16 and 12, both still home, and the window for "all four of us on the road together" closes faster than I'd like.
 
 For context on why I take time off: [/time-off](/time-off).
 
@@ -25,7 +25,7 @@ For context on why I take time off: [/time-off](/time-off).
 | 🌉 **Bergen**                         | Jul 13 – Jul 16 | 3      | Norway      |
 | 🇳🇱 **Amsterdam**                      | Jul 16 – Jul 19 | 3      | Netherlands |
 
-**Total**: 22 days, 5 countries (Iceland → Denmark → Sweden → Norway → Netherlands), back home Jul 19 via KLM AMS→SEA.
+**Total**: 22 days, 5 countries (Iceland → Denmark → Sweden → Norway → Netherlands), back home Jul 19.
 
 📍 [See the full route on Google Maps](https://www.google.com/maps/dir/Reykjav%C3%ADk/Copenhagen/Stockholm/Oslo/Aurland/Voss/Bergen/Amsterdam) — 8 stops in one view.
 
@@ -43,9 +43,9 @@ All 4 Dvorkins (Igor, Tori, Zach, Amelia). Iceland and Copenhagen legs are just 
 - Possible Golden Circle drive if energy permits — Þingvellir, Geysir, Gullfoss
 - Eat a hot dog at Bæjarins Beztu (mandatory tourist obligation)
 
-### 🇩🇰 Copenhagen (Jun 30 – Jul 3) — with [Ammon](/ammon-quotes) · [📍 map](https://www.google.com/maps/place/Copenhagen)
+### 🇩🇰 Copenhagen (Jun 30 – Jul 3) — with Ammon · [📍 map](https://www.google.com/maps/place/Copenhagen)
 
-- Hang with Ammon — 2 days, no fixed agenda. His quote: "Yeah 2 days works. There's not much to see in Copenhagen." Treating that as both confirmation and upper bound.
+- Hang with Ammon — 2 days, no fixed agenda.
 - Walk Nyhavn + canals
 - One nice meal as a family
 
@@ -71,7 +71,7 @@ All 4 Dvorkins (Igor, Tori, Zach, Amelia). Iceland and Copenhagen legs are just 
 
 ### 🏔️ Aurland + Voss (Jul 10–13) — the fjords · [📍 Aurland](https://www.google.com/maps/place/Aurland) · [📍 Voss](https://www.google.com/maps/place/Voss)
 
-- **Bergen Railway** Oslo → Flåm — one of the world's most scenic train rides (dep Oslo 9:18 AM)
+- **Bergen Railway** Oslo → Flåm — one of the world's most scenic train rides
 - **Fjordsafari RIB** on Aurlandsfjord + UNESCO Nærøyfjord (2h 15m, suits supplied)
 - Fjord cruise Flåm → Gudvangen
 - **Viking Village Njardarheimr** (Gudvangen) — Viking lunch, axe-throwing, archery
@@ -94,20 +94,17 @@ All 4 Dvorkins (Igor, Tori, Zach, Amelia). Iceland and Copenhagen legs are just 
 - **Rijksmuseum** + Vondelpark
 - **Foodhallen** (covered food market)
 - **A'DAM Lookout** rooftop swing
-- NDSM Wharf or Zaanse Schans windmills before flying home (KL 6038, 3:10 PM Jul 19)
+- NDSM Wharf or Zaanse Schans windmills before flying home
 
 ## Goals for the trip
 
 - **Live the Father role from the eulogy**: quality time over mere presence. Both kids are home together; the window narrows.
 - **Balloon while traveling** — long-standing eulogy goal ("ballooning while traveling"). Bring the kit; deploy in parks and airports.
 - **Disconnect from work** — Good news: no calibrations to sweat this time. I just moved to an IC role at [Meta's AI Lab](/meta#moving-to-metas-ai-lab-2026), so the old [Calibration Collapse](/y26) trap doesn't fire. Keep work boxed anyway — ramp time is on Meta's clock, not the trip's.
-- **No death-march optimizing** — see [optimizing vs satisfying](/42#optimizing-vs-satisfying). The goal isn't to maximize sights per day; it's to enjoy this with the people we're with.
+- **No death-march optimizing** — the goal isn't to maximize sights per day; it's to enjoy this with the people we're with.
 
 ## Related
 
 {% include summarize-page.html src="/time-off" %}
-{% include summarize-page.html src="/gap-year-igor" %}
-{% include summarize-page.html src="/chapters" %}
-{% include summarize-page.html src="/42" %}
 
 _Written ~6 weeks pre-trip. Will write the actual recap when we're back._
