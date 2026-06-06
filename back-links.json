@@ -177,6 +177,7 @@
         "/iina": "/vlc",
         "/imposter": "/insecure",
         "/in-real-life": "/irl",
+        "/inference": "/ai-inference",
         "/insecurity": "/insecure",
         "/interactive-explanations": "/explainers",
         "/intern-llm": "/genai-talk",
@@ -287,6 +288,7 @@
         "/search-inside-yourself": "/siy",
         "/second-brain": "/ai-second-brain",
         "/self-vs-ego": "/self-ego",
+        "/serving-llms": "/ai-inference",
         "/shadows": "/psychic-shadows",
         "/side-quest": "/side-quests",
         "/simple-and-sinister": "/kettlebell",
@@ -294,9 +296,11 @@
         "/some": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
+        "/sticky": "/made-to-stick",
         "/strong": "/physical-health",
         "/sublime-state": "/sublime",
         "/sublime-states": "/sublime",
+        "/succes": "/made-to-stick",
         "/talk-to-tony": "/tesla",
         "/td/advertising": "/advertising",
         "/td/design": "/design",
@@ -401,7 +405,6 @@
             "incoming_links": [
                 "/chapters",
                 "/retire",
-                "/timeoff-2026-07",
                 "/y24",
                 "/y25",
                 "/y26"
@@ -742,6 +745,7 @@
             "file_path": "_site/affirmations.html",
             "incoming_links": [
                 "/act",
+                "/ai-journal",
                 "/be-proactive",
                 "/four-healths",
                 "/gap-year-igor",
@@ -839,7 +843,8 @@
             "file_path": "_site/ai-art.html",
             "incoming_links": [
                 "/ai",
-                "/ai-journal"
+                "/ai-journal",
+                "/ai-training"
             ],
             "last_modified": "2025-12-06T18:03:02-08:00",
             "markdown_path": "_d/ai-art.md",
@@ -892,6 +897,7 @@
                 "/ai-native-manager",
                 "/ai-operator",
                 "/ai-second-brain",
+                "/ai-training",
                 "/hill-climbing",
                 "/how-igor-chops",
                 "/igors-claws",
@@ -938,7 +944,9 @@
             "incoming_links": [
                 "/agency",
                 "/ai",
+                "/ai-inference",
                 "/ai-security",
+                "/ai-training",
                 "/chow",
                 "/gpt"
             ],
@@ -1020,7 +1028,8 @@
             "file_path": "_site/ai-image.html",
             "incoming_links": [
                 "/ai",
-                "/ai-art"
+                "/ai-art",
+                "/ai-training"
             ],
             "last_modified": "2025-12-06T18:03:02-08:00",
             "markdown_path": "_d/ai-imagegen.md",
@@ -1029,9 +1038,28 @@
             "title": "AI Image Generation",
             "url": "/ai-image"
         },
+        "/ai-inference": {
+            "description": "Training is how a model gets made; inference is what you pay for every time you use it. I don’t build serving stacks — I pick a model, pick a provider, and pay per token — but it helps to carry a rough map of where that price comes from. The whole game is one question: how do I serve tokens as cheaply as possible at a given level of intelligence? You can always spend more compute and memory to go faster — the price just rises with it.\n\n",
+            "doc_size": 25000,
+            "file_path": "_site/ai-inference.html",
+            "incoming_links": [
+                "/ai-training"
+            ],
+            "last_modified": "2026-06-06T17:19:53.788162+00:00",
+            "markdown_path": "_d/ai-inference.md",
+            "outgoing_links": [
+                "/ai-faq",
+                "/ai-training",
+                "/chop",
+                "/how-igor-chops"
+            ],
+            "redirect_url": "",
+            "title": "AI Inference",
+            "url": "/ai-inference"
+        },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get lost\n\n",
-            "doc_size": 165000,
+            "doc_size": 169000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai",
@@ -1049,10 +1077,11 @@
                 "/walking-with-god",
                 "/y25"
             ],
-            "last_modified": "2026-05-11T09:26:06-07:00",
+            "last_modified": "2026-05-31T15:16:53-07:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/7-habits",
+                "/affirmations",
                 "/ai-art",
                 "/ai-journal",
                 "/ai-second-brain",
@@ -1062,6 +1091,7 @@
                 "/claw",
                 "/end-in-mind",
                 "/eulogy",
+                "/gas-city",
                 "/genai-talk",
                 "/gpt",
                 "/hill-climbing",
@@ -1073,6 +1103,7 @@
                 "/mortality-software",
                 "/parkinson",
                 "/pet-projects",
+                "/produce-consume",
                 "/tesla"
             ],
             "redirect_url": "",
@@ -1166,7 +1197,8 @@
             "file_path": "_site/ai-paper.html",
             "incoming_links": [
                 "/ai",
-                "/ai-faq"
+                "/ai-faq",
+                "/ai-training"
             ],
             "last_modified": "2025-11-25T22:40:07+00:00",
             "markdown_path": "_d/ai-paper.md",
@@ -1251,6 +1283,7 @@
             "file_path": "_site/ai-testing.html",
             "incoming_links": [
                 "/ai",
+                "/ai-training",
                 "/chop",
                 "/genai-talk",
                 "/hill-climbing",
@@ -1268,13 +1301,26 @@
             "url": "/ai-testing"
         },
         "/ai-training": {
-            "description": "Generally, I don’t deal with training or deeper tech, but might as well keep some notes on it.\n\n",
-            "doc_size": 16000,
+            "description": "I don’t train models for a living — I build on top of them. But to use LLMs well, it helps to carry a rough map of how one gets made: what pre-training buys you, what post-training changes, and where fine-tuning, RAG, and quantization actually fit. These are my working notes on that map, kept deliberately shallow — enough to make good decisions as a consumer of models, not to go train one.\n\n",
+            "doc_size": 30000,
             "file_path": "_site/ai-training.html",
-            "incoming_links": [],
-            "last_modified": "2026-01-02T01:31:44+00:00",
+            "incoming_links": [
+                "/ai-inference"
+            ],
+            "last_modified": "2026-06-06T17:20:06.059130+00:00",
             "markdown_path": "_d/ai-training.md",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/ai-art",
+                "/ai-cockpit",
+                "/ai-faq",
+                "/ai-image",
+                "/ai-inference",
+                "/ai-paper",
+                "/ai-testing",
+                "/chop",
+                "/explainers",
+                "/gpt"
+            ],
             "redirect_url": "",
             "title": "Training LLMs",
             "url": "/ai-training"
@@ -1891,10 +1937,10 @@
         },
         "/changelog": {
             "description": "A weekly summary of what changed on this blog and across my GitHub projects. Useful for returning readers who want to catch up on new content and updates.\n\n",
-            "doc_size": 158000,
+            "doc_size": 173000,
             "file_path": "_site/changelog.html",
             "incoming_links": [],
-            "last_modified": "2026-05-12T19:52:11-07:00",
+            "last_modified": "2026-05-31T11:20:16-07:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
                 "/7h-concepts",
@@ -1905,12 +1951,14 @@
                 "/ai-journal",
                 "/ai-native-manager",
                 "/ai-operator",
+                "/ai-optimism",
                 "/ai-relationships",
                 "/ai-second-brain",
                 "/amelia",
                 "/be-proactive",
                 "/claw",
                 "/design",
+                "/emotional-lives",
                 "/end-in-mind",
                 "/eulogy",
                 "/first-things-first",
@@ -1924,6 +1972,7 @@
                 "/humans-are-underrated",
                 "/hyper-personal",
                 "/igors-claws",
+                "/image-selector",
                 "/irl",
                 "/keyboard",
                 "/larry",
@@ -1931,7 +1980,9 @@
                 "/lonely",
                 "/money",
                 "/mosh",
+                "/podcast",
                 "/product",
+                "/raccoon-history",
                 "/recent",
                 "/sharpen-the-saw",
                 "/shoulder-pain",
@@ -1939,6 +1990,7 @@
                 "/spiritual-health",
                 "/synergy",
                 "/taxes",
+                "/untangled",
                 "/vibing",
                 "/wally",
                 "/win-win",
@@ -1959,7 +2011,6 @@
                 "/gap-year-igor",
                 "/lonely",
                 "/retire",
-                "/timeoff-2026-07",
                 "/y25",
                 "/y26"
             ],
@@ -2006,8 +2057,10 @@
                 "/ai-developer",
                 "/ai-feed",
                 "/ai-hiring",
+                "/ai-inference",
                 "/ai-journal",
                 "/ai-native-manager",
+                "/ai-training",
                 "/chow",
                 "/explainers",
                 "/gtd",
@@ -2607,6 +2660,7 @@
                 "/coaching",
                 "/gap-year",
                 "/job-hunt-stress",
+                "/made-to-stick",
                 "/manager-book",
                 "/pride",
                 "/random-idea",
@@ -3108,6 +3162,7 @@
                 "/ai-feed",
                 "/ai-native-manager",
                 "/ai-operator",
+                "/ai-training",
                 "/chop",
                 "/chow",
                 "/hill-climbing",
@@ -3346,11 +3401,10 @@
                 "/stock-concentration",
                 "/timeoff",
                 "/timeoff-2025-08",
-                "/timeoff-2026-07",
                 "/y25",
                 "/y26"
             ],
-            "last_modified": "2026-04-18T16:18:08.016875+00:00",
+            "last_modified": "2026-05-31T11:32:27-07:00",
             "markdown_path": "_d/igor-gap-year.md",
             "outgoing_links": [
                 "/7-habits",
@@ -3388,7 +3442,9 @@
             "description": "If you’ve read Standing Up Gas City, or seen “Gas City” mentioned in /wally or /igors-claws, and you want to know what the thing actually is before you stand up your own — this is that post. Three concepts carry the whole design: beads (the unit of work), molecules (the choreography), and the propulsion principle (what keeps the engine running). Each one is plain enough on its own; the leverage is in how they compose.\n\n",
             "doc_size": 25000,
             "file_path": "_site/gas-city.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/ai-journal"
+            ],
             "last_modified": "2026-05-04T12:23:28.406847+00:00",
             "markdown_path": "_d/gas-city.md",
             "outgoing_links": [
@@ -3491,6 +3547,7 @@
                 "/ai-art",
                 "/ai-faq",
                 "/ai-journal",
+                "/ai-training",
                 "/ml",
                 "/nlp"
             ],
@@ -3728,6 +3785,7 @@
                 "/ai",
                 "/ai-cockpit",
                 "/ai-feed",
+                "/ai-inference",
                 "/ai-journal",
                 "/chop",
                 "/hill-climbing",
@@ -4270,6 +4328,24 @@
             "title": "Loneliness",
             "url": "/lonely"
         },
+        "/made-to-stick": {
+            "description": "Why does a made-up story about a man waking in an ice-filled bathtub with one kidney stolen travel the globe for fifteen years, while the strategy memo you sweated over dies the moment it leaves the room? Chip and Dan Heath spent a decade on that question and found six traits shared by ideas that stick: Simple, Unexpected, Concrete, Credible, Emotional, Stories — which spell SUCCESs. The villain fighting you the whole way is the Curse of Knowledge: once you know something, you can’t remember what it was like not to know it, so you bury the lead, talk in abstractions, and quote numbers nobody feels. This is a nurture book. Sticky ideas are made, not born, and the six traits are a checklist anyone can run.\n\n",
+            "doc_size": 51000,
+            "file_path": "_site/made-to-stick.html",
+            "incoming_links": [],
+            "last_modified": "2026-05-31T15:01:43-07:00",
+            "markdown_path": "_d/made-to-stick.md",
+            "outgoing_links": [
+                "/decisive",
+                "/moments",
+                "/sell",
+                "/switch",
+                "/writing"
+            ],
+            "redirect_url": "",
+            "title": "Made to Stick",
+            "url": "/made-to-stick"
+        },
         "/magic": {
             "description": "Being a dealer of smiles and wonder is a priority in my life, and magic is my instrument. This post details my history and some highlights\n\n",
             "doc_size": 26000,
@@ -4591,6 +4667,7 @@
                 "/balance",
                 "/chasing-daylight",
                 "/happy",
+                "/made-to-stick",
                 "/moments-at-work",
                 "/random-idea",
                 "/timeoff-2022-12",
@@ -5229,6 +5306,7 @@
             "file_path": "_site/produce-consume.html",
             "incoming_links": [
                 "/ai-feed",
+                "/ai-journal",
                 "/gap-year-igor",
                 "/slow"
             ],
@@ -5667,7 +5745,9 @@
             "description": "Selling matters - it’s pitching, convincing, negotiating, hiring. Selling has a bad rap, because the seller often puts their needs ahead of the buyer - a win/lose paradigm. You should make selling win/win or no deal by needing to answer yes to these questions. 1/ If the buyer agrees, will their life improve? 2/ When the deal is done, will the world be a better place than when you began?\n\n",
             "doc_size": 21000,
             "file_path": "_site/sell.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/made-to-stick"
+            ],
             "last_modified": "2025-12-07T02:33:55+00:00",
             "markdown_path": "_d/2017-2-5-To-Sell-Is-Human.md",
             "outgoing_links": [
@@ -6149,6 +6229,7 @@
             "incoming_links": [
                 "/enable",
                 "/first-things-first",
+                "/made-to-stick",
                 "/negotiate",
                 "/productive",
                 "/random-idea",
@@ -6721,7 +6802,7 @@
         },
         "/timeoff-2020-03": {
             "description": "In March 2020, I took a 2 month sabbatical between leaving Amazon and joining Facebook. Given it was a substantial amount of time, I came up with some big plans, and wrote them down. It was a great plan, BUT my time off correlated perfectly to the Corona Virus and as a result I wasted lots of my mental energy thinking about the Corona Virus, and adjusting to being in pseudo-quarantine. Took me a while, but I finally realized I should ignore corona virus, or at least minimize my time thinking about it.\n\n",
-            "doc_size": 30000,
+            "doc_size": 31000,
             "file_path": "_site/timeoff-2020-03.html",
             "incoming_links": [
                 "/timeoff"
@@ -6994,19 +7075,15 @@
             "url": "/timeoff-2025-08"
         },
         "/timeoff-2026-07": {
-            "description": "22 days, 5 countries, 4 Dvorkins, one whirlwind tour. From Reykjavík to Amsterdam by way of Stockholm, Oslo, and the Norwegian fjords. This is the first time we’ve attempted a trip of this scope as a family — the kids are 16 and 14, both still home, and the window for “all four of us on the road together” closes faster than I’d like.\n\n",
+            "description": "22 days, 5 countries, 4 Dvorkins, one whirlwind tour. From Reykjavík to Amsterdam by way of Stockholm, Oslo, and the Norwegian fjords. This is the first time we’ve attempted a trip of this scope as a family — the kids are 16 and 12, both still home, and the window for “all four of us on the road together” closes faster than I’d like.\n\n",
             "doc_size": 20000,
             "file_path": "_site/timeoff-2026-07.html",
             "incoming_links": [
                 "/y26"
             ],
-            "last_modified": "2026-05-25T19:31:05-07:00",
+            "last_modified": "2026-06-03T16:04:27-07:00",
             "markdown_path": "_d/time-off-2026-07.md",
             "outgoing_links": [
-                "/42",
-                "/ammon-quotes",
-                "/chapters",
-                "/gap-year-igor",
                 "/meta",
                 "/timeoff",
                 "/y26"
@@ -7333,7 +7410,7 @@
         },
         "/weeks": {
             "description": "\n\n",
-            "doc_size": 4346000,
+            "doc_size": 4348000,
             "file_path": "_site/weeks.html",
             "incoming_links": [
                 "/balance"
@@ -7488,6 +7565,7 @@
                 "/chow",
                 "/enable",
                 "/four-healths",
+                "/made-to-stick",
                 "/manager-book",
                 "/manager-book-appendix",
                 "/operating-manual",
