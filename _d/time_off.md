@@ -19,11 +19,16 @@ alias:
 
 Time off is critical, it's how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with turning your 1 week off into an action-packed tour of Disneyland. But, there are other kinds of time off that we'll discuss too. Like most things, time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!
 
+<div class="alert alert-info" role="alert">
+✈️ <strong>Next planned time-off — July 2026:</strong>
+<div class="summary-link body-only" href="/timeoff-2026-07"><a href="/timeoff-2026-07">Loading (/timeoff-2026-07)</a></div>
+</div>
+
 <!-- prettier-ignore-start -->
 
 <!-- vim-markdown-toc-start -->
 
-- [Time on, time rich, time poor](#time-on-time-rich-time-poor)
+- [Time off — off from what?](#time-off--off-from-what)
 - [The phases of time off](#the-phases-of-time-off)
   - [Vegetation](#vegetation)
   - [TODO list](#todo-list)
@@ -39,7 +44,7 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
   - [Begin with the end in mind](#begin-with-the-end-in-mind)
 - [Examples of how I spent my time off](#examples-of-how-i-spent-my-time-off)
 - [Making the most out of staycation](#making-the-most-out-of-staycation)
-- [Should you do 1:1 time with the family](#should-you-do-11-time-with-the-family)
+- [Should you do per-family-member vacations](#should-you-do-per-family-member-vacations)
 - [Igor's Personal combined learnings](#igors-personal-combined-learnings)
   - [Before you go](#before-you-go)
   - [Every other day check-in](#every-other-day-check-in)
@@ -57,11 +62,9 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-## Time on, time rich, time poor
+## Time off — off from what?
 
-Yeah, I've never thought about that either. Let's define "Time On" as the period when you're actively engaged in work or other mandatory activities that require your full attention and energy.
-
-The implication of "time on" is you don't have the time to do the things you want to do, aka you're **time poor**. Time off gives you a chance to be **time rich**, when you can spend the time as you wish.
+Everybody talks about time off. Nobody ever says **time on** — the missing half of the pair. But it's hiding in plain sight: time on is when work owns your hours and you're **time poor**; time off is when you get them back and you're **time rich**.
 
 Like being "money rich", being time rich can solve lots of problem, but it comes with the same traps:
 
@@ -87,6 +90,8 @@ Work is stressful, it follows me home, and it takes several days to "[drain](/mi
 ### TODO list
 
 Time is scarce, things to be done are infinite, and they pile up when you have limited time. Once my work stress drains, I have a burst of Energy, and I apply that to my todo list. This is very satisfying as I feel energized and productive.
+
+The trap is getting stuck here — either grinding the list forever or avoiding it entirely — so you never make it to personal development.
 
 ### Personal Development (PD)
 
@@ -153,7 +158,9 @@ Look at the incoming links below and:
 
 With staycations, it's especially easy to oscillate between vegetating, grinding through the todo list, and ruminating on work. I suspect there are special tools for staycations - I should think through them.
 
-## Should you do 1:1 time with the family
+## Should you do per-family-member vacations
+
+Instead of traveling as the whole family, take separate trips with one person at a time — one with each kid, one with Tori.
 
 I've felt guilt around this before, but this time it worked amazing:
 
@@ -227,7 +234,6 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
 - **GET A GYM MEMBERSHIP** - Gym is a fantastic place to focus on strength and renewal and anchor the day. I got a gym membership with GoodLife, let me do my top priorities daily, even had a massage chair.
 
 - **Bring bands, light gym equipment** - Have everything to stretch and self-massage, and light workouts
-
   - Heavy bands/light bands; Peanut ball; Harsh foam roller; Gripper (need it for my wrist)
 
 - **Do extra stretches/cardio** - Remember energy positive, and keeps you injury-free.
