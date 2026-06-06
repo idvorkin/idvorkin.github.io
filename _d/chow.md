@@ -360,7 +360,7 @@ When AI writes code or explains a concept, the default output is text. But text 
 
 Simon Willison calls this [interactive explanations](https://simonwillison.net/guides/agentic-engineering-patterns/interactive-explanations/) — one of his [Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/). His example: he had an AI build a word cloud tool in Rust, but the algorithm description — "Archimedean spiral placement with per-word random angular offset" — meant nothing to him. So he asked the AI to build an animated HTML page where you can step through the algorithm frame by frame, watching each word try positions in a spiral until it finds one that fits. _That_ made it click.
 
-This is a weapon against [cognitive debt](/ai-native-manager#cognitive-debt) — the understanding gap that grows when AI writes code faster than humans can comprehend it. The same AI that creates the debt can pay it down: ask it to build you an interactive explanation of what it just built.
+This is a weapon against [cognitive debt](/ai-native-vocab#cognitive-debt) — the understanding gap that grows when AI writes code faster than humans can comprehend it. The same AI that creates the debt can pay it down: ask it to build you an interactive explanation of what it just built.
 
 Consider the difference:
 

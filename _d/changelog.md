@@ -766,7 +766,7 @@ Three new entries covering disposable code, human contribution in AI workflows, 
 
 ### AI Native Manager: "In Distribution"
 
-New glossary entry on the ML concept applied to tooling decisions ([blog](/ai-native-manager#in-distribution)):
+New glossary entry on the ML concept applied to tooling decisions ([blog](/ai-native-vocab#in-distribution)):
 
 - **In Distribution** — Tools in the model's training data (Git, Postgres) have zero awareness cost. Your team's internal CLI? Completely out of distribution — you pay the awareness tax every time. This changes how EMs evaluate tooling: "will agents already know how to use it?" is now a legitimate engineering criterion. Connects to Yegge's Awareness lever from Software Survival 3.0. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/56667aaef)
 
