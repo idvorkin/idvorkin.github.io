@@ -80,6 +80,8 @@ Bug fixed. Pride earned.
 
 #### Eight Sleep Thinks My Cat Is Me
 
+{% include repo_image_float_right.html src="pod-detective.webp" alt="A raccoon detective in a deerstalker cap with a magnifying glass inspects an orange cat asleep on an Eight Sleep Pod; thought bubble reads 'Who is recovering?'" %}
+
 Eight Sleep report this morning: HRV 213 ms on 4h 16m of tracked sleep. My average is ~42 ms. A 5× spike on a vacation night where I slept fine is not a biosignal — it's a measurement artifact. The parsimonious explanation: the cat was in the bed.
 
 Turns out this is a known thing. Eight Sleep's pod uses [piezoelectric sensors under the cover](https://www.eightsleep.com/blog/how-the-pod-detects-your-breathing-and-heartbeats-without-a-wearable/) to pick up ballistocardiographic signals — basically the mattress vibrating from your heartbeat and breathing. A cat curled on the sensing zone puts its own heartbeat in the same waveform. Cat heart rate is 120–220 bpm; mine is ~60. The HRV algorithm mixes the two and produces numbers that look like I'm either dying or a Himalayan monk.
