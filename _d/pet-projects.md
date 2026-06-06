@@ -109,7 +109,7 @@ GitHub orgs to check:
 
 ## [Explainers](/explainers)
 
-Interactive experiences that let you _do_ the thing, not just read about it — an antidote to [cognitive debt](/ai-native-manager#cognitive-debt). See the [full explainers page](/explainers) for great examples, the AI workflow, and why this matters.
+Interactive experiences that let you _do_ the thing, not just read about it — an antidote to [cognitive debt](/ai-native-vocab#cognitive-debt). See the [full explainers page](/explainers) for great examples, the AI workflow, and why this matters.
 
 | Explainer                                                                    | What It Does                                                                 | Instead Of                        |                                                                                         |
 | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | --------------------------------- | --------------------------------------------------------------------------------------- |

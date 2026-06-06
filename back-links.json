@@ -34,6 +34,7 @@
         "/ai-em": "/ai-native-manager",
         "/ai-love": "/ai-optimism",
         "/ai-native-em": "/ai-native-manager",
+        "/ai-native-words": "/ai-native-vocab",
         "/ai-open-questions": "/ai-faq",
         "/ai-optimisim": "/ai-optimism",
         "/ai-optimisit": "/ai-optimism",
@@ -43,6 +44,7 @@
         "/ai-reading": "/ai-feed",
         "/ai-slop": "/ai-hiring",
         "/ai-talk": "/genai-talk",
+        "/ai-vocab": "/ai-native-vocab",
         "/alexa-charity": "/toysfortots",
         "/anxious": "/anxiety",
         "/architecture": "/design",
@@ -786,7 +788,8 @@
                 "/ai-faq",
                 "/ai-feed",
                 "/ai-hiring",
-                "/ai-native-manager"
+                "/ai-native-manager",
+                "/ai-native-vocab"
             ],
             "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/agency.md",
@@ -894,7 +897,7 @@
             "file_path": "_site/ai-cockpit.html",
             "incoming_links": [
                 "/ai-feed",
-                "/ai-native-manager",
+                "/ai-native-vocab",
                 "/ai-operator",
                 "/ai-second-brain",
                 "/ai-training",
@@ -1112,40 +1115,59 @@
         },
         "/ai-native-manager": {
             "description": "What does it mean to be an engineering manager when AI is rewriting every assumption you have about software, teams, and your own role? I don’t know yet. Nobody does. But I’m figuring it out in real time, and these are my notes from the chaos.\n\n",
-            "doc_size": 56000,
+            "doc_size": 40000,
             "file_path": "_site/ai-native-manager.html",
             "incoming_links": [
                 "/ai-feed",
                 "/ai-hiring",
+                "/ai-native-vocab",
                 "/ai-second-brain",
-                "/chow",
-                "/dark-factory",
-                "/explainers",
                 "/hill-climbing",
                 "/manager-book",
-                "/pet-projects",
                 "/raccoon-history",
                 "/wally"
             ],
-            "last_modified": "2026-05-31T10:25:56-07:00",
+            "last_modified": "2026-06-06T18:18:54.096028+00:00",
             "markdown_path": "_d/ai-native-manager.md",
             "outgoing_links": [
                 "/agency",
-                "/ai-cockpit",
                 "/ai-hiring",
                 "/ai-journal",
-                "/ai-second-brain",
-                "/chop",
+                "/ai-native-vocab",
                 "/coaching",
-                "/dark-factory",
-                "/explainers",
-                "/hill-climbing",
                 "/manager-book",
                 "/software-leadership-roles"
             ],
             "redirect_url": "",
             "title": "The AI Native Engineering Manager",
             "url": "/ai-native-manager"
+        },
+        "/ai-native-vocab": {
+            "description": "AI is spawning a whole new vocabulary — some of it genuinely useful, some of it pure hype. This is my running glossary of the terms worth knowing, with my take on what each one actually means and why it matters. It’s the companion glossary to The AI Native Engineering Manager.\n\n",
+            "doc_size": 33000,
+            "file_path": "_site/ai-native-vocab.html",
+            "incoming_links": [
+                "/ai-native-manager",
+                "/chow",
+                "/dark-factory",
+                "/explainers",
+                "/pet-projects"
+            ],
+            "last_modified": "2026-06-06T17:59:05.226064+00:00",
+            "markdown_path": "_d/ai-native-vocab.md",
+            "outgoing_links": [
+                "/agency",
+                "/ai-cockpit",
+                "/ai-native-manager",
+                "/ai-second-brain",
+                "/chop",
+                "/dark-factory",
+                "/explainers",
+                "/hill-climbing"
+            ],
+            "redirect_url": "",
+            "title": "AI Native Vocabulary: New Words for a New World",
+            "url": "/ai-native-vocab"
         },
         "/ai-operator": {
             "description": "Using AI well is a skill, like driving a car or operating heavy machinery. Nobody hands you the keys to a forklift and says “figure it out.” There’s a license, training, and hard-won intuition about what the machine can and can’t do. AI is the same — except most of us skipped the training, there is no manual, and we’re writing the rules as we go.\n\n",
@@ -1179,7 +1201,7 @@
             "doc_size": 29000,
             "file_path": "_site/ai-optimism.html",
             "incoming_links": [],
-            "last_modified": "2026-05-15T07:45:40-07:00",
+            "last_modified": "2026-06-06T18:18:37.669128+00:00",
             "markdown_path": "_d/ai-optimism.md",
             "outgoing_links": [
                 "/ai-second-brain",
@@ -1236,7 +1258,7 @@
             "file_path": "_site/ai-second-brain.html",
             "incoming_links": [
                 "/ai-journal",
-                "/ai-native-manager",
+                "/ai-native-vocab",
                 "/ai-optimism",
                 "/claw",
                 "/hyper-personal"
@@ -1589,7 +1611,7 @@
         },
         "/bc": {
             "description": "A guide to my favorite spots in British Columbia, focusing on Vancouver and Chilliwack. Whether you’re planning a quick weekend getaway or a longer adventure, here’s what you need to know. These recommendations come from my personal experiences over multiple trips - you can read about some of them in my summer 2024 adventures, Yellow Deli expedition, and various time off adventures:\n\n",
-            "doc_size": 22000,
+            "doc_size": 23000,
             "file_path": "_site/bc.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T03:02:44+00:00",
@@ -1940,16 +1962,18 @@
             "doc_size": 173000,
             "file_path": "_site/changelog.html",
             "incoming_links": [],
-            "last_modified": "2026-05-31T11:20:16-07:00",
+            "last_modified": "2026-06-06T18:18:54.096028+00:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
-                "/7h-concepts",
+                "/7h-c0",
+                "/7h-c7",
                 "/act",
                 "/activation",
                 "/addiction",
                 "/ai-cockpit",
                 "/ai-journal",
                 "/ai-native-manager",
+                "/ai-native-vocab",
                 "/ai-operator",
                 "/ai-optimism",
                 "/ai-relationships",
@@ -1994,7 +2018,8 @@
                 "/vibing",
                 "/wally",
                 "/win-win",
-                "/y26"
+                "/work-gastown",
+                "/y2026"
             ],
             "redirect_url": "",
             "title": "Changelog",
@@ -2059,7 +2084,7 @@
                 "/ai-hiring",
                 "/ai-inference",
                 "/ai-journal",
-                "/ai-native-manager",
+                "/ai-native-vocab",
                 "/ai-training",
                 "/chow",
                 "/explainers",
@@ -2109,7 +2134,7 @@
             "markdown_path": "_d/chow.md",
             "outgoing_links": [
                 "/ai-faq",
-                "/ai-native-manager",
+                "/ai-native-vocab",
                 "/chop",
                 "/explainers",
                 "/larry",
@@ -2589,12 +2614,12 @@
             "doc_size": 27000,
             "file_path": "_site/dark-factory.html",
             "incoming_links": [
-                "/ai-native-manager"
+                "/ai-native-vocab"
             ],
-            "last_modified": "2026-05-31T10:25:56-07:00",
+            "last_modified": "2026-06-06T18:18:54.096028+00:00",
             "markdown_path": "_d/dark-factory.md",
             "outgoing_links": [
-                "/ai-native-manager",
+                "/ai-native-vocab",
                 "/hill-climbing"
             ],
             "redirect_url": "",
@@ -2603,7 +2628,7 @@
         },
         "/day-in-the-life": {
             "description": "A running journal of days that actually worked - the ones where health habits stuck, family time hit different, or I remembered what it feels like to be fully alive. Not every day needs to be Instagram-worthy, but some days deserve a bookmark. This is that bookmark collection.\n\n",
-            "doc_size": 18000,
+            "doc_size": 19000,
             "file_path": "_site/day-in-the-life.html",
             "incoming_links": [],
             "last_modified": "2025-10-04T18:43:51-07:00",
@@ -3160,7 +3185,7 @@
             "file_path": "_site/explainers.html",
             "incoming_links": [
                 "/ai-feed",
-                "/ai-native-manager",
+                "/ai-native-vocab",
                 "/ai-operator",
                 "/ai-training",
                 "/chop",
@@ -3171,7 +3196,7 @@
             "last_modified": "2026-04-16T23:12:34.253724+00:00",
             "markdown_path": "_d/explainers.md",
             "outgoing_links": [
-                "/ai-native-manager",
+                "/ai-native-vocab",
                 "/chop",
                 "/chow",
                 "/pet-projects"
@@ -3562,7 +3587,7 @@
         },
         "/grammerly": {
             "description": "\n\n",
-            "doc_size": 12000,
+            "doc_size": 13000,
             "file_path": "_site/grammerly.html",
             "incoming_links": [],
             "last_modified": "2025-08-24T09:03:19-07:00",
@@ -3727,7 +3752,7 @@
             "incoming_links": [
                 "/ai-developer",
                 "/ai-journal",
-                "/ai-native-manager",
+                "/ai-native-vocab",
                 "/ai-operator",
                 "/ai-testing",
                 "/chop",
@@ -4286,7 +4311,7 @@
                 "/ai-operator",
                 "/larry"
             ],
-            "last_modified": "2026-05-02T19:01:45-07:00",
+            "last_modified": "2026-06-06T10:30:21-07:00",
             "markdown_path": "_d/life-journal.md",
             "outgoing_links": [
                 "/ai-operator",
@@ -4518,7 +4543,7 @@
         },
         "/mermaid": {
             "description": "Lets try d2\n\n",
-            "doc_size": 14000,
+            "doc_size": 15000,
             "file_path": "_site/mermaid.html",
             "incoming_links": [],
             "last_modified": "2023-12-17T18:49:14+00:00",
@@ -5112,7 +5137,7 @@
             "last_modified": "2026-04-16T23:12:34.253724+00:00",
             "markdown_path": "_d/pet-projects.md",
             "outgoing_links": [
-                "/ai-native-manager",
+                "/ai-native-vocab",
                 "/bike-tesla-identity",
                 "/explainers",
                 "/how-igor-chops",
@@ -6247,7 +6272,7 @@
         },
         "/synergize": {
             "description": "We’ve all got stuff we’re good at and stuff we’re bad at. Combine them right and the system is greater than the sum of the parts — sometimes a lot greater. Synergy is the payoff for everything that came before: independence, Win/Win, and seeking first to understand all converge here. These are my insights from 7 habits Chapter 6.\n\n",
-            "doc_size": 28000,
+            "doc_size": 29000,
             "file_path": "_site/synergize.html",
             "incoming_links": [
                 "/7-habits",
@@ -6330,7 +6355,7 @@
         },
         "/td/back_ref": {
             "description": "This blog is my collection of evergreen notes, a place to have my thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here’s my strategy to create them.\n\n",
-            "doc_size": 13000,
+            "doc_size": 14000,
             "file_path": "_site/td/back_ref.html",
             "incoming_links": [],
             "last_modified": "2022-04-16T15:22:43-07:00",
@@ -7465,7 +7490,7 @@
         },
         "/win-win": {
             "description": "Win/Win is a constantly seeking mutual benefit in all interactions. Win/Win means that agreements or solutions are mutually beneficial, mutually satisfying. With a Win/Win solution, all parties feel good about the decision and feel committed to the action plan. Win/Win sees life as a cooperative, not a competitive arena. Most people tend to think in terms of dichotomies: strong or weak, hardball or softball, win or lose. But that kind of thinking is fundamentally flawed. It’s based on power and position rather than on principle. Win/Win is based on the paradigm that there is plenty for everybody, that one person’s success is not achieved at the expense or exclusion of the success of others.\n\n",
-            "doc_size": 47000,
+            "doc_size": 48000,
             "file_path": "_site/win-win.html",
             "incoming_links": [
                 "/7-habits",

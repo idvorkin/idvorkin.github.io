@@ -77,7 +77,7 @@ As the codebase grows, changes stop being local. A change here now affects somet
 
 #### Complexity Collapse
 
-The terminal state. The codebase is so interconnected that there's no move that improves the whole — every fix surfaces a problem somewhere else. The agent says it worked. Then you find a problem over there. Then another one over there. You're playing whack-a-mole against a board with more moles than holes. This is the [infinite loop](/ai-native-manager#infinite-loop) at the level of the whole system instead of a single function — not the agent stuck on a four-line bug, but the agent stuck on the architecture.
+The terminal state. The codebase is so interconnected that there's no move that improves the whole — every fix surfaces a problem somewhere else. The agent says it worked. Then you find a problem over there. Then another one over there. You're playing whack-a-mole against a board with more moles than holes. This is the [infinite loop](/ai-native-vocab#infinite-loop) at the level of the whole system instead of a single function — not the agent stuck on a four-line bug, but the agent stuck on the architecture.
 
 I hit this on my swing analyzer. I looked up and the agent had built _two complete, parallel implementations of the UX_ — one in React and one in jQuery. Pretty crazy. Nothing was "broken" in a way a test would catch; the system had just lost its center. That's complexity collapse — not a bug you fix, a shape you have to redraw.
 
@@ -115,7 +115,7 @@ The factory owns the interior. You own the boundary. The skill that matters now 
 
 Put the limits together and the dark factory has a nasty property: it accelerates its own trip to the second wall — and drags the third along with it.
 
-A dark codebase runs beautifully in the easy zone. But with no one in the implementation loop, [cognitive debt](/ai-native-manager#cognitive-debt) compounds — nobody holds the mental model of why the system is shaped the way it is, so the architectural moves that keep complexity in check never happen. Complexity that would otherwise get refactored away just accretes. The factory drifts from the easy zone, through the complexity wall, toward complexity collapse, and every step in that direction quietly runs up the bill, because cost rides on top of failing progress.
+A dark codebase runs beautifully in the easy zone. But with no one in the implementation loop, [cognitive debt](/ai-native-vocab#cognitive-debt) compounds — nobody holds the mental model of why the system is shaped the way it is, so the architectural moves that keep complexity in check never happen. Complexity that would otherwise get refactored away just accretes. The factory drifts from the easy zone, through the complexity wall, toward complexity collapse, and every step in that direction quietly runs up the bill, because cost rides on top of failing progress.
 
 It's a Peter Principle for systems: the factory keeps promoting itself into more complexity until it reaches the level where it fails. The difference is the recovery — you can step a person back down a rung, but it's unclear how a dark factory backs down a step and tries again.
 
