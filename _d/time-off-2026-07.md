@@ -100,7 +100,7 @@ All 4 Dvorkins (Igor, Tori, Zach, Amelia). Iceland and Copenhagen legs are just 
 
 - **Live the Father role from the eulogy**: quality time over mere presence. Both kids are home together; the window narrows.
 - **Balloon while traveling** — long-standing eulogy goal ("ballooning while traveling"). Bring the kit; deploy in parks and airports.
-- **Disconnect from work** — Good news: no calibrations to sweat this time. I just moved to an IC role at [Meta's AI Lab](/meta#moving-to-metas-ai-lab-2026), so the old [Calibration Collapse](/y26) trap doesn't fire. Keep work boxed anyway — ramp time is on Meta's clock, not the trip's.
+- **Disconnect from work** — Good news: no calibrations to sweat this time. I just moved to an IC role at [Meta's AI Lab](/meta#moving-to-metas-ai-lab-2026), so the old [Calibration Collapse](/y26) trap doesn't fire. Keep work boxed anyway — ramp time is on Meta's clock, not the trip's. (My [AI policy](/ai-policy) for the trip: AI in the margins, off when we're together.)
 - **No death-march optimizing** — the goal isn't to maximize sights per day; it's to enjoy this with the people we're with.
 
 ## Related
