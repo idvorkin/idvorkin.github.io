@@ -31,6 +31,7 @@ AI is spawning a whole new vocabulary — some of it genuinely useful, some of i
 - [Infinite Loop](#infinite-loop)
 - [Human In, On, and Out of the Loop](#human-in-on-and-out-of-the-loop)
 - [In Distribution](#in-distribution)
+- [Year of Wonder](#year-of-wonder)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -144,3 +145,11 @@ A term borrowed from machine learning: data the model has seen during training i
 Yegge identifies this as one of his [six levers for software survival](https://steve-yegge.medium.com/software-survival-3-0-97a2a6255f7b) — he calls it the "Awareness" lever. Tools like Git and Postgres have essentially zero awareness cost because every model has been trained on mountains of content about them. Your team's internal CLI tool? Completely out of distribution. You're paying the awareness tax every time an agent encounters it.
 
 My take: this matters because it changes how you think about tooling decisions. When your team picks a well-known tool over a technically superior but obscure one, that's not just "going with the safe choice" — it's a rational calculation about agent effectiveness. Your CLAUDE.md files, your onboarding docs, your custom slash commands — these are all attempts to push out-of-distribution knowledge into the agent's working context. The better you are at this, the more effective your AI-augmented team becomes. And when you're evaluating whether to build custom tooling vs. using something standard, "will agents already know how to use it?" is now a legitimate engineering criterion.
+
+## Year of Wonder
+
+{% include local_image_float_right.html src="raccoon-year-of-chaos-wonder.webp" %}
+
+The optimist's read on the same AI moment that's exhausting everyone: this is the most creative period in the history of software. Things get built in a week that used to take a quarter, juniors punch above their weight class, and problems shelved years ago for lack of bandwidth are suddenly tractable. Its twin is the [Year of Chaos](/ai-native-manager#the-year-of-chaos-the-year-of-wonder) — the pessimist's read, which is just as accurate: roles are dissolving, skills are devaluing, and most of the weekly hype is garbage.
+
+My take: you don't get to pick the facts, you get to pick which ones you orient around. Both frames are true at once, so the choice isn't about being right — the chaos read is right, the same way [Deep Blue](#deep-blue) is a real feeling and not a delusion. The choice is about which read points somewhere good. Orient around the chaos and you play defense — tighten process, slow down, protect what exists. Orient around the wonder, while staying honest about the chaos, and you play offense — experiment more, raise the ambition, ask what's possible now that wasn't last year. The people who hold both and lean toward wonder are the ones others follow into the unknown.
