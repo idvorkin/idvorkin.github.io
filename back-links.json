@@ -368,7 +368,7 @@
     "url_info": {
         "/22": {
             "description": "In 2019 I created a program for 15 fantastic interns! A program highlight was my talk titled “What I wish I knew at 22, and so might you”. The talk received a 94% overall rating from over 15 interns, 10 SDE-IIs, and 1 senior developer. Even though the talk focuses on how to live the good life, a big chunk of life is work, so there’s good coverage on how to optimize your career.\n\n",
-            "doc_size": 16000,
+            "doc_size": 17000,
             "file_path": "_site/22.html",
             "incoming_links": [
                 "/chapters",
@@ -691,6 +691,7 @@
                 "/productive",
                 "/psychic-shadows",
                 "/psychic-weight",
+                "/timeoff",
                 "/vibing",
                 "/walking-with-god"
             ],
@@ -1143,7 +1144,7 @@
         },
         "/ai-native-vocab": {
             "description": "AI is spawning a whole new vocabulary — some of it genuinely useful, some of it pure hype. This is my running glossary of the terms worth knowing, with my take on what each one actually means and why it matters. It’s the companion glossary to The AI Native Engineering Manager.\n\n",
-            "doc_size": 33000,
+            "doc_size": 34000,
             "file_path": "_site/ai-native-vocab.html",
             "incoming_links": [
                 "/ai-native-manager",
@@ -1964,8 +1965,7 @@
             "last_modified": "2026-06-06T18:18:54.096028+00:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
-                "/7h-c0",
-                "/7h-c7",
+                "/7h-concepts",
                 "/act",
                 "/activation",
                 "/addiction",
@@ -2017,8 +2017,7 @@
                 "/vibing",
                 "/wally",
                 "/win-win",
-                "/work-gastown",
-                "/y2026"
+                "/y26"
             ],
             "redirect_url": "",
             "title": "Changelog",
@@ -2578,7 +2577,8 @@
                 "/productive",
                 "/psychic-shadows",
                 "/psychic-weight",
-                "/slow"
+                "/slow",
+                "/timeoff"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/resistance.md",
@@ -2664,7 +2664,7 @@
         },
         "/debug": {
             "description": "Igor's Blog",
-            "doc_size": 23000,
+            "doc_size": 24000,
             "file_path": "_site/debug.html",
             "incoming_links": [],
             "last_modified": "2025-03-16T16:15:36+00:00",
@@ -3098,6 +3098,7 @@
                 "/overload",
                 "/parkinson",
                 "/partner-trouble",
+                "/timeoff",
                 "/timeoff-2022-07",
                 "/walking-with-god"
             ],
@@ -3811,6 +3812,7 @@
                 "/ai-journal",
                 "/chop",
                 "/hill-climbing",
+                "/pet-projects",
                 "/wally",
                 "/y25",
                 "/y26"
@@ -4145,6 +4147,7 @@
                 "/gap-year-igor",
                 "/physical-health",
                 "/shoulder-pain",
+                "/timeoff",
                 "/untangled",
                 "/y24"
             ],
@@ -4265,7 +4268,7 @@
         },
         "/learn-code": {
             "description": "Coding is way easier than people think. Here’s some pointers.\n\n",
-            "doc_size": 13000,
+            "doc_size": 14000,
             "file_path": "_site/learn-code.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T02:47:07+00:00",
@@ -4580,7 +4583,7 @@
         },
         "/mind-at-work": {
             "description": "I have a problem, an addiction, an addiction so detrimental to quality of life, it should be described as a disease. This disease is not being present. There are many symptoms of the disease, but today I’m going to talk about my most frequent symptoms, my body at home, but my mind at work.\n\n",
-            "doc_size": 19000,
+            "doc_size": 20000,
             "file_path": "_site/mind-at-work.html",
             "incoming_links": [
                 "/act",
@@ -5135,11 +5138,11 @@
                 "/ai-native-vocab",
                 "/bike-tesla-identity",
                 "/explainers",
+                "/how-igor-chops",
                 "/larry",
                 "/process-journal",
                 "/side-quests",
-                "/static/pet-projects.html",
-                "/vibe"
+                "/static/pet-projects.html"
             ],
             "redirect_url": "",
             "title": "Pet Projects",
@@ -6796,21 +6799,21 @@
             "last_modified": "2026-06-06T18:11:26.466427+00:00",
             "markdown_path": "_d/time_off.md",
             "outgoing_links": [
-                "/addictions",
+                "/addiction",
                 "/balloon",
+                "/d/resistance",
                 "/diet",
                 "/energy",
-                "/essential",
+                "/essentialism",
                 "/eulogy",
                 "/frog",
                 "/gap-year",
                 "/gap-year-igor",
                 "/happy",
-                "/kettlebells",
+                "/kettlebell",
                 "/magic",
                 "/mind-at-work",
                 "/parkinson",
-                "/resistance",
                 "/siy",
                 "/terzepatide",
                 "/timeoff-2020-03",
@@ -7357,7 +7360,7 @@
         },
         "/walking-with-god": {
             "description": "Someone important to me has been reading a daily devotional. Even though I’m not religious, I’m studying with them to be able to have conversations about the insights - whether in a secular or religious context. This is my attempt to bridge two worlds: honoring the spiritual wisdom they’re finding while translating it into language that works for my engineer brain.\n\n",
-            "doc_size": 81000,
+            "doc_size": 82000,
             "file_path": "_site/walking-with-god.html",
             "incoming_links": [
                 "/greek-orthodox",
