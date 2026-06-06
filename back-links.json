@@ -689,7 +689,6 @@
                 "/productive",
                 "/psychic-shadows",
                 "/psychic-weight",
-                "/timeoff",
                 "/vibing",
                 "/walking-with-god"
             ],
@@ -2554,8 +2553,7 @@
                 "/productive",
                 "/psychic-shadows",
                 "/psychic-weight",
-                "/slow",
-                "/timeoff"
+                "/slow"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/resistance.md",
@@ -3075,7 +3073,6 @@
                 "/overload",
                 "/parkinson",
                 "/partner-trouble",
-                "/timeoff",
                 "/timeoff-2022-07",
                 "/walking-with-god"
             ],
@@ -4124,7 +4121,6 @@
                 "/gap-year-igor",
                 "/physical-health",
                 "/shoulder-pain",
-                "/timeoff",
                 "/untangled",
                 "/y24"
             ],
@@ -6773,28 +6769,29 @@
                 "/timeoff-2025-08",
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2025-10-03T15:30:14-07:00",
+            "last_modified": "2026-06-06T18:11:26.466427+00:00",
             "markdown_path": "_d/time_off.md",
             "outgoing_links": [
-                "/addiction",
+                "/addictions",
                 "/balloon",
-                "/d/resistance",
                 "/diet",
                 "/energy",
-                "/essentialism",
+                "/essential",
                 "/eulogy",
                 "/frog",
                 "/gap-year",
                 "/gap-year-igor",
                 "/happy",
-                "/kettlebell",
+                "/kettlebells",
                 "/magic",
                 "/mind-at-work",
                 "/parkinson",
+                "/resistance",
                 "/siy",
                 "/terzepatide",
                 "/timeoff-2020-03",
-                "/timeoff-2024-02"
+                "/timeoff-2024-02",
+                "/timeoff-2026-07"
             ],
             "redirect_url": "",
             "title": "Getting the most out of time off",
@@ -7079,6 +7076,7 @@
             "doc_size": 20000,
             "file_path": "_site/timeoff-2026-07.html",
             "incoming_links": [
+                "/timeoff",
                 "/y26"
             ],
             "last_modified": "2026-06-03T16:04:27-07:00",
