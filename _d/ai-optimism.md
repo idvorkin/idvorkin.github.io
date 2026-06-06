@@ -4,7 +4,6 @@ title: "What I love about AI"
 permalink: /ai-optimism
 redirect_from:
   - /ai-love
-  - /ai-optimism
   - /ai-optimisim
   - /ai-optimisit
 tags:
