@@ -2129,7 +2129,7 @@
                 "/tesla",
                 "/y26"
             ],
-            "last_modified": "2026-03-01T12:10:54-08:00",
+            "last_modified": "2026-06-06T18:28:44.329796+00:00",
             "markdown_path": "_d/chow.md",
             "outgoing_links": [
                 "/ai-faq",
@@ -3190,7 +3190,7 @@
                 "/hill-climbing",
                 "/pet-projects"
             ],
-            "last_modified": "2026-04-16T23:12:34.253724+00:00",
+            "last_modified": "2026-06-06T18:28:44.329796+00:00",
             "markdown_path": "_d/explainers.md",
             "outgoing_links": [
                 "/ai-native-vocab",
@@ -3811,7 +3811,6 @@
                 "/ai-journal",
                 "/chop",
                 "/hill-climbing",
-                "/pet-projects",
                 "/wally",
                 "/y25",
                 "/y26"
@@ -5130,17 +5129,17 @@
                 "/side-quests",
                 "/y25"
             ],
-            "last_modified": "2026-04-16T23:12:34.253724+00:00",
+            "last_modified": "2026-06-06T18:28:44.329796+00:00",
             "markdown_path": "_d/pet-projects.md",
             "outgoing_links": [
                 "/ai-native-vocab",
                 "/bike-tesla-identity",
                 "/explainers",
-                "/how-igor-chops",
                 "/larry",
                 "/process-journal",
                 "/side-quests",
-                "/static/pet-projects.html"
+                "/static/pet-projects.html",
+                "/vibe"
             ],
             "redirect_url": "",
             "title": "Pet Projects",
