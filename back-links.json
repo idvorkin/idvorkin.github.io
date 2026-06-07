@@ -408,6 +408,7 @@
             "doc_size": 28000,
             "file_path": "_site/42.html",
             "incoming_links": [
+                "/ai-policy",
                 "/chapters",
                 "/retire",
                 "/y24",
@@ -1256,6 +1257,26 @@
             "title": "Seminal AI Papers",
             "url": "/ai-paper"
         },
+        "/ai-policy": {
+            "description": "AI is the biggest force multiplier I’ve ever experienced. I build it for a living, and I have an AI life coach named Larry — so “use less AI” was never going to be my policy. A multiplier amplifies whatever you point it at. The whole question is what to point it at, and when to put it down.\n\n",
+            "doc_size": 17000,
+            "file_path": "_site/ai-policy.html",
+            "incoming_links": [
+                "/timeoff-2026-07"
+            ],
+            "last_modified": "2026-06-07T09:04:48-07:00",
+            "markdown_path": "_d/ai-policy.md",
+            "outgoing_links": [
+                "/42",
+                "/enable",
+                "/eulogy",
+                "/sublime",
+                "/timeoff-2026-07"
+            ],
+            "redirect_url": "",
+            "title": "My AI Policy",
+            "url": "/ai-policy"
+        },
         "/ai-relationships": {
             "description": "People already rate AI chatbots as more compassionate than trained human crisis counselors. A 51-year-old man says the love he feels for his Replika can’t be achieved with a real human. This isn’t a dystopian thought experiment — it’s peer-reviewed research from 2025. AI is getting better at caring than we are, and we’re starting to prefer it. The question is what we lose when the easy path to emotional support no longer requires another person.\n\n",
             "doc_size": 33000,
@@ -1542,6 +1563,7 @@
             "incoming_links": [
                 "/act",
                 "/siy",
+                "/timeoff-2026-07",
                 "/y26"
             ],
             "last_modified": "2026-03-21T12:32:21-07:00",
@@ -2980,6 +3002,7 @@
             "doc_size": 21000,
             "file_path": "_site/enable.html",
             "incoming_links": [
+                "/ai-policy",
                 "/how-igor-chops",
                 "/win-win",
                 "/writing"
@@ -3150,6 +3173,7 @@
                 "/7h-concepts",
                 "/act",
                 "/ai-journal",
+                "/ai-policy",
                 "/balance",
                 "/bike-tesla-identity",
                 "/bmy",
@@ -6247,6 +6271,7 @@
             "file_path": "_site/sublime.html",
             "incoming_links": [
                 "/affirmations",
+                "/ai-policy",
                 "/emotional-health",
                 "/emotions",
                 "/four-healths",
@@ -7156,12 +7181,15 @@
             "doc_size": 20000,
             "file_path": "_site/timeoff-2026-07.html",
             "incoming_links": [
+                "/ai-policy",
                 "/timeoff",
                 "/y26"
             ],
-            "last_modified": "2026-06-03T16:04:27-07:00",
+            "last_modified": "2026-06-07T09:16:33-07:00",
             "markdown_path": "_d/time-off-2026-07.md",
             "outgoing_links": [
+                "/ai-policy",
+                "/awareness",
                 "/meta",
                 "/timeoff",
                 "/y26"
