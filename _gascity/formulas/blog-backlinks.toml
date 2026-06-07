@@ -33,25 +33,27 @@ Report the worktree path + branch. Do ALL remaining steps inside this worktree.
 """
 
 [[steps]]
-id = "build-site"
-title = "Build Jekyll _site with ruby@3.1"
+id = "await-site"
+title = "Wait for worktree-init's background Jekyll build"
 needs = ["fresh-worktree"]
 description = """
-build_back_links.py reads _site/, and the default ruby is 4.x (breaks Jekyll 3.9).
-Follow the blog's CLAUDE.md for the Ruby build — it documents both a ruby@3.1 path
-and a Ruby-4 `_ruby_compat.rb` shim; use whichever the repo provides. Then:
-  bundle install && bundle exec jekyll build
-(or verify worktree-init's background build already produced a fresh _site/index.html).
-Do NOT proceed if the build failed — stale/missing _site yields wrong backlinks.
+Step 1 already fired a background `jekyll build` via `just worktree-init`, which loads
+the Ruby-4 `_ruby_compat.rb` shim — so there is no ruby-version juggling and no second
+build to run. build_back_links.py reads _site/, so just WAIT for that build to finish:
+  LOG=/tmp/jekyll-worktree-$(git branch --show-current | tr '/' '-').log
+  # build takes ~60-90s; poll until _site/index.html is freshly written; tail "$LOG" if it stalls
+Confirm a fresh _site/index.html before proceeding. If the build failed (check the log),
+fix it and rebuild — do NOT proceed on a stale/missing _site (it yields wrong backlinks).
 """
 
 [[steps]]
 id = "rebuild-backlinks"
 title = "Rebuild back-links.json"
-needs = ["build-site"]
+needs = ["await-site"]
 description = """
 From the worktree root: just update-backlinks  (= uv run ./build_back_links.py build).
-Do NOT use `just push-backlinks` — it has an interactive prompt an agent can't answer.
+This only regenerates back-links.json — it does NOT commit or push. Landing happens in
+the later verify/land steps.
 """
 
 [[steps]]

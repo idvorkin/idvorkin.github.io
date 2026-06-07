@@ -403,6 +403,5 @@ docs/superpowers/specs/private/
 
 # Gas City
 .beads/*
-!.beads/identity.toml
 .gc/
 .runtime/

@@ -408,51 +408,6 @@ write-backlinks-tmp:
     uv run ./build_back_links.py build ~/tmp/back-links.json
     echo "Backlinks written to ~/tmp/back-links.json"
 
-# Rebuild backlinks and push to GitHub with safety checks
-push-backlinks:
-    #!/usr/bin/env sh
-    # Ensure ~/tmp directory exists
-    mkdir -p ~/tmp
-
-    # Save the current state of back-links.json to ~/tmp
-    cp back-links.json ~/tmp/back-links.json.bak
-
-    # Rebuild backlinks using existing command
-    just update-backlinks
-
-    # Also generate a copy in ~/tmp for reference
-    just update-backlinks-to ~/tmp/back-links.json
-
-    # Check if there are changes
-    if ! git diff --quiet back-links.json; then
-        # Count the number of changed lines
-        CHANGED_LINES=$(git diff --numstat back-links.json | awk '{print $1 + $2}')
-        echo "Number of changed lines: $CHANGED_LINES"
-
-        # If too many lines changed, ask for confirmation
-        if [ "$CHANGED_LINES" -gt 50 ]; then
-            echo "WARNING: Large number of changes detected ($CHANGED_LINES lines)"
-            echo "Showing diff summary:"
-            git diff --stat back-links.json
-
-            # Ask for confirmation
-            read -p "Do you want to continue with the push? (y/n) " CONFIRM
-            if [ "$CONFIRM" != "y" ]; then
-                echo "Operation cancelled. Restoring backup..."
-                cp ~/tmp/back-links.json.bak back-links.json
-                exit 1
-            fi
-        fi
-
-        # Commit and push changes
-        git add back-links.json
-        git commit -m "feat(back-links): update backlinks data $(date +%Y-%m-%d)"
-        git push origin HEAD
-        echo "Backlinks updated and pushed successfully!"
-    else
-        echo "No changes detected in backlinks."
-    fi
-
 broken-links server="localhost:4000":
     uv run scripts/check_internal_links.py --server {{server}}
 
