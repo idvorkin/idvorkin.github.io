@@ -49,9 +49,15 @@ Why it matters: the inbound "Mentioned in:" section on every linked post reads f
 
 #### Ruby version requirement (local backlinks rebuild)
 
-`build_back_links.py build` reads from `_site/` (built HTML), so a fresh Jekyll build must succeed first. **The local build works on Ruby 4.x** (verified 2026-06): liquid-4.0.3 guards its only `tainted?` call — `obj.respond_to?(:tainted?) && obj.tainted?` (`variable.rb:124`) — so on Ruby 3.2+/4.x the removed method short-circuits, no crash. Just run `bundle exec jekyll build`. A **stale or missing `_site/`** is what makes the backlinks rebuild error out or emit stale entries — not the Ruby version.
+`build_back_links.py build` reads from `_site/` (built HTML), so a fresh Jekyll build must succeed first. **A bare `bundle exec jekyll build` CRASHES on Ruby 4.x** — verified 2026-06. liquid is exact-pinned to `4.0.3` by the `github-pages` gem, and `liquid-4.0.3/lib/liquid/variable.rb:124` is `return unless obj.tainted?` with **no** `respond_to?` guard (read the gem source — an earlier version of this note claimed the line was guarded; it is not). Ruby 4 removed `tainted?`, so the build dies with `undefined method 'tainted?'` rendering `_layouts/post.html`.
 
-CI builds on Ruby 3.2 (matching `.ruby-version` = 3.2.8). As of 2026-06 no Ruby workaround is needed locally — `bundle exec jekyll build` works on 4.x. Only if a future liquid drops that `respond_to?` guard would you pin an older Ruby (`brew install ruby@3.2`).
+The working fix is the `_ruby_compat.rb` shim, which patches the removed methods back. **Every `just` build recipe already exports `RUBYOPT="-r$(pwd)/_ruby_compat.rb"`**, so `just`-based builds (`just jekyll-serve`, `just back-links`, …) work on Ruby 4 — which is exactly why the crash is easy to miss: it only surfaces when you bypass `just`. To build by hand on Ruby 4, load the shim yourself:
+
+```bash
+RUBYOPT="-r$(pwd)/_ruby_compat.rb" bundle exec jekyll build
+```
+
+You **cannot** `bundle update` to a patched liquid: `github-pages` exact-pins `liquid (= 4.0.3)` and `jekyll (= 3.9.0)` to mirror GitHub Pages' native build (which is how this site deploys — there is no custom site-build workflow). The only ways off the shim are pinning an older local Ruby that still has `tainted?` (`brew install ruby@3.1`), or migrating off `github-pages` to plain `jekyll 4` / `liquid 5` — a deploy-stack change, not a quick bump. A **stale or missing `_site/`** is a separate failure mode — it makes the backlinks rebuild emit stale entries even when the build itself succeeds.
 
 When superseding a PR you opened on `idvorkin/*`, **close it yourself** — `gh pr close <N> --repo idvorkin/<repo> --comment "Superseded by #M — …"` works for the `idvorkin-ai-tools` actor on PRs it authored. Don't leave orphan PRs for Igor to clean up.
 

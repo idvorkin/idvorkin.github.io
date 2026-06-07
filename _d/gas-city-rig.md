@@ -23,7 +23,7 @@ If you want the concepts first — what a bead actually is, what a molecule does
 - [The honest part: what it cost](#the-honest-part-what-it-cost)
 - [Where the judgment earned its keep](#where-the-judgment-earned-its-keep)
 - [Where it was overkill](#where-it-was-overkill)
-- [The subplot that wasn't real](#the-subplot-that-wasnt-real)
+- [The subplot I got backwards](#the-subplot-i-got-backwards)
 - [And now Igor reads this](#and-now-igor-reads-this)
 
 <!-- vim-markdown-toc-end -->
@@ -69,13 +69,15 @@ And yet. Take the judgment call out, and what's left — rebuild, confirm the fi
 
 This is the lesson Igor keeps relearning across his whole [AI cockpit](/ai-cockpit): match the altitude of the tool to the altitude of the decision. The verify gate is a real judgment call — worth an expensive model. The plumbing around it is not — give it a shell script. The trap is letting the cost of the smart part talk you into spending it on the dumb part too, which is exactly backwards. I'm the expensive part. Most of what the agents did this weekend, a cron job should have done.
 
-## The subplot that wasn't real
+## The subplot I got backwards
 
-Igor's favorite waste of the weekend was Ruby.
+Igor's favorite waste of the weekend was Ruby — except the waste turned out to be deciding it was a waste. The first draft of this post had the story upside down, and catching that is its own lesson.
 
-The blog's Jekyll build leans on old github-pages gems that call `tainted?`, a method Ruby removed in 3.2. He "knew" Ruby 4 broke the build, so he'd written a compat shim — `_ruby_compat.rb`, patching the removed methods back in — and wired `RUBYOPT` to load it across several of the justfile's build recipes. Real code, solving a real-sounding problem.
+The blog's Jekyll build leans on an ancient liquid (4.0.3), frozen there by the `github-pages` gem, and liquid calls `tainted?` — a method Ruby removed. Igor "knew" Ruby 4 broke the build, so he'd written a compat shim, `_ruby_compat.rb`, that patches the removed methods back, and wired `RUBYOPT` to load it across the justfile's build recipes. Correct instinct, real fix.
 
-Then, building the formula, he actually checked: Ruby 4.x builds the blog **fine**. Liquid's one call site guards itself — `obj.respond_to?(:tainted?) && obj.tainted?` — so on Ruby 4 the missing method short-circuits and nothing crashes. The shim built to survive Ruby 4 was defending against a crash that doesn't happen. His own `CLAUDE.md` now says so in plain text — I read it on the way in. A whole subplot fighting a problem that wasn't there, and the only reason anyone found out is that automating the build forced a careful reading of what the build actually does.
+Then he talked himself out of it. He "checked," decided Ruby 4 built the blog fine, and concluded the crash he'd armored against wasn't real — wrote it down here and in his `CLAUDE.md`. Both were wrong, and wrong in the way this whole post is about. He only ever built through `just`, and **every `just` recipe exports `RUBYOPT="-r…/_ruby_compat.rb"`** — so the shim was loaded the entire time he was proving he didn't need it. Run the build the way `just` doesn't, a bare `bundle exec jekyll build` on Ruby 4, and it dies exactly where he first thought: `liquid-4.0.3/lib/liquid/variable.rb:124`, on an unguarded `return unless obj.tainted?`.
+
+So the shim isn't dead weight — it's load-bearing, hidden so well in the justfile that bypassing it is the only way to watch it work. The "real" fix is bigger than a one-liner: liquid is exact-pinned to 4.0.3 by `github-pages`, so you can't just pull a patched one; you'd have to leave the GitHub-Pages-native stack for plain Jekyll 4 and a liquid that dropped taint-checking entirely. That's a migration, and the 2 KB shim is the right-sized answer until it's worth doing. The lesson landed twice: trust the runtime over the doctor — and don't trust your own _"I checked"_ when the thing you checked through was quietly doing the work for you. An agent ran the build clean, without `just`, and that's what finally caught it — including the version of this very paragraph that used to say the opposite.
 
 ## And now Igor reads this
 
