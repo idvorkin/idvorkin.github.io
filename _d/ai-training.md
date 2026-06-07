@@ -27,6 +27,9 @@ I don't train models for a living — I build on top of them. But to use LLMs we
   - [Fine-tuning methods](#fine-tuning-methods)
   - [Deployment: quantization and serving](#deployment-quantization-and-serving)
 - [How does post-training differ from RAG and the harness?](#how-does-post-training-differ-from-rag-and-the-harness)
+- [Post-training for coding competence](#post-training-for-coding-competence)
+  - [You get what you measure](#you-get-what-you-measure)
+  - [The loop](#the-loop)
 - [See how it works](#see-how-it-works)
 - [What this post is not about](#what-this-post-is-not-about)
 - [Appendix: engineering, science, and alchemy](#appendix-engineering-science-and-alchemy)
@@ -97,6 +100,29 @@ There are three places to change how a model behaves, and picking the right one 
 - **A new default everywhere** — behavior that has to hold for everyone without re-explaining it every call, or that prompting just can't make reliable → **post-training** (the [methods above](#post-training)).
 
 Rule of thumb: facts → RAG, actions → harness, baked-in defaults → post-train. When in doubt, push the change as far toward runtime as it'll go.
+
+## Post-training for coding competence
+
+The post-training story above is abstract until you watch it chase a target. Coding agents are the cleanest example, because "did it work" is something a computer can check — which is exactly the [RLVR](#post-training) setup, pointed at software.
+
+### You get what you measure
+
+So first, define the target by the eval. "Coding competence" for an agent isn't a vibe; it's two questions a benchmark can answer:
+
+- **[SWE-bench](https://www.swebench.com/)** — can it fix real software? You hand the model a real GitHub issue plus the repo it came from, it edits the codebase to produce a patch, and the grade is binary: do the repo's hidden tests pass? No partial credit, no LLM judging style — the tests decide. The [paper](https://arxiv.org/abs/2310.06770) drew from real issues across popular Python repos; the subset everyone reports is [**SWE-bench Verified**](https://www.swebench.com/verified.html), 500 tasks each hand-checked by human developers so a correct patch can't fail on a broken test or an ambiguous issue. This is the de-facto "can it fix real software" eval.
+- **[Terminal-bench](https://www.tbench.ai/)** — can it actually operate a computer? Drop the agent in a real terminal sandbox and give it an end-to-end job: build a Linux kernel from source, stand up a git server, debug a broken system, train a small model. Scored by whether the task is actually done. Where SWE-bench tests _writes a patch_, Terminal-bench tests _runs the machine_.
+
+Pick those as your scoreboard and you've defined the goal precisely enough to optimize against — which is the whole trap and the whole point. You get what you measure, so measure the thing you actually want.
+
+### The loop
+
+With the target pinned, post-training is the same three stages, run as a loop:
+
+1. **SFT on good trajectories** — collect traces of an agent doing the job _well_ (read the repo, run the tests, edit, re-run, fix), and fine-tune on them. This teaches the _shape_ of the work — that you check before you claim done — not just the final diff.
+2. **RL with execution rewards (RLVR)** — now let the model attempt held-out tasks and reward it for the tests going green. The passing test suite _is_ the reward signal; no human ranks the answers, the sandbox does. This is the same engine as the math-and-code reasoning models, with "the repo's tests pass" standing in for "the answer is 42." The Goblin walkthrough [below](#see-how-it-works) is a hands-on tour of this exact RL loop.
+3. **Measure on held-out tasks** — score on SWE-bench / Terminal-bench instances the model never trained on, then feed what broke back into steps 1 and 2. Iterate.
+
+The catch is the same as with any sharp reward: optimize hard enough and the model games it. Reward the tests passing and it may special-case the test, hard-code the expected output, or `pip install` its way around the real fix — reward hacking, coding-agent edition. So you hold out tasks, rotate them, and keep a human reading what the green checkmark is actually rewarding. The verifiable reward is what makes coding such fertile ground for RL; the leak it invites is why the held-out eval matters as much as the loop.
 
 ## See how it works
 
