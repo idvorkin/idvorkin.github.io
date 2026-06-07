@@ -5,8 +5,7 @@ permalink: /ai
 ai_default_image: true
 ---
 
-AI becomes the
-The transition from A landing page for all my ai pages - a nice jumping off point (especially from the graph).
+A landing page for all my AI posts — a jumping-off point into everything I've written about AI, handy especially when you arrive here from the graph.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
