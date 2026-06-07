@@ -183,7 +183,7 @@ The broader point: a team that only knows how to work with AI is fragile. They n
 Things I'm actively trying to figure out:
 
 - **Can managers manage more people now?** If AI makes each IC more productive, does the EM span of control increase? Or does the opposite happen — you become more of an M2 (manager of managers) because the complexity per person goes up? My instinct: the bottleneck isn't number of people, it's surface area. And surface area is exploding.
-- **What happens to junior engineers?** If AI handles the tasks we used to give juniors to learn on, how do people develop? Do we need to deliberately create learning experiences that AI could do faster?
+- **What happens to junior engineers?** If AI handles the tasks we used to give juniors to learn on, how do people develop? Do we need to deliberately create learning experiences that AI could do faster? I work through the new-hire side of this in [AI Native Onboarding](/ai-native-onboarding).
 - **What's the new career ladder?** If code is cattle and anyone can produce it, what differentiates a senior engineer from a junior one? Judgment? Taste? System design? The ability to prompt well?
 - **How do you evaluate performance?** Output per person is going up but is wildly uneven depending on AI adoption stage. How do you calibrate fairly across a team where some people are in Frenzy and others are in Denial?
 

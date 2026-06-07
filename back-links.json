@@ -33,8 +33,10 @@
         "/ai-coder": "/chop",
         "/ai-em": "/ai-native-manager",
         "/ai-love": "/ai-optimism",
+        "/ai-native-90-days": "/ai-native-onboarding",
         "/ai-native-em": "/ai-native-manager",
         "/ai-native-words": "/ai-native-vocab",
+        "/ai-onboarding": "/ai-native-onboarding",
         "/ai-open-questions": "/ai-faq",
         "/ai-optimisim": "/ai-optimism",
         "/ai-optimisit": "/ai-optimism",
@@ -135,6 +137,7 @@
         "/feedback-beats-planning": "/planning",
         "/feeling-meetings": "/human-meetings",
         "/feelings": "/emotions",
+        "/first-90-days": "/ai-native-onboarding",
         "/first-thing-first": "/first-things-first",
         "/first90days": "/90days",
         "/forty-two": "/42",
@@ -815,7 +818,7 @@
             "incoming_links": [
                 "/ai-developer"
             ],
-            "last_modified": "2026-01-24T16:52:54+00:00",
+            "last_modified": "2026-06-07T10:19:45-07:00",
             "markdown_path": "_d/ai.md",
             "outgoing_links": [
                 "/ai-art",
@@ -849,7 +852,7 @@
                 "/ai-journal",
                 "/ai-training"
             ],
-            "last_modified": "2025-12-06T18:03:02-08:00",
+            "last_modified": "2026-06-07T10:19:45-07:00",
             "markdown_path": "_d/ai-art.md",
             "outgoing_links": [
                 "/ai-image",
@@ -870,7 +873,7 @@
                 "/tesla",
                 "/y24"
             ],
-            "last_modified": "2025-12-07T02:26:29+00:00",
+            "last_modified": "2026-06-07T10:19:45-07:00",
             "markdown_path": "_d/ai-bestie.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -884,7 +887,7 @@
             "incoming_links": [
                 "/ai"
             ],
-            "last_modified": "2026-01-25T17:13:56-08:00",
+            "last_modified": "2026-06-07T10:19:45-07:00",
             "markdown_path": "_d/ai-business-model.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -928,7 +931,7 @@
                 "/ai-hiring",
                 "/hill-climbing"
             ],
-            "last_modified": "2026-04-17T02:35:03.046784+00:00",
+            "last_modified": "2026-06-07T10:19:45-07:00",
             "markdown_path": "_d/ai-developer.md",
             "outgoing_links": [
                 "/ai",
@@ -953,7 +956,7 @@
                 "/chow",
                 "/gpt"
             ],
-            "last_modified": "2026-01-03T15:08:35+00:00",
+            "last_modified": "2026-06-07T10:19:45-07:00",
             "markdown_path": "_d/ai-faq.md",
             "outgoing_links": [
                 "/agency",
@@ -974,7 +977,7 @@
             "incoming_links": [
                 "/ai-second-brain"
             ],
-            "last_modified": "2026-04-03T16:38:20-07:00",
+            "last_modified": "2026-06-07T10:19:45-07:00",
             "markdown_path": "_d/ai-feed.md",
             "outgoing_links": [
                 "/agency",
@@ -1011,7 +1014,7 @@
                 "/ai-feed",
                 "/ai-native-manager"
             ],
-            "last_modified": "2026-03-28T09:29:00-07:00",
+            "last_modified": "2026-06-07T10:19:45-07:00",
             "markdown_path": "_d/ai-hiring.md",
             "outgoing_links": [
                 "/agency",
@@ -1034,7 +1037,7 @@
                 "/ai-art",
                 "/ai-training"
             ],
-            "last_modified": "2025-12-06T18:03:02-08:00",
+            "last_modified": "2026-06-07T10:19:45-07:00",
             "markdown_path": "_d/ai-imagegen.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -1048,7 +1051,7 @@
             "incoming_links": [
                 "/ai-training"
             ],
-            "last_modified": "2026-06-06T17:19:53.788162+00:00",
+            "last_modified": "2026-06-07T10:19:45-07:00",
             "markdown_path": "_d/ai-inference.md",
             "outgoing_links": [
                 "/ai-faq",
@@ -1070,6 +1073,7 @@
                 "/ai-feed",
                 "/ai-journal",
                 "/ai-native-manager",
+                "/ai-native-onboarding",
                 "/ai-relationships",
                 "/ai-second-brain",
                 "/chop",
@@ -1080,7 +1084,7 @@
                 "/walking-with-god",
                 "/y25"
             ],
-            "last_modified": "2026-05-31T15:16:53-07:00",
+            "last_modified": "2026-06-07T10:19:45-07:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/7-habits",
@@ -1120,6 +1124,7 @@
             "incoming_links": [
                 "/ai-feed",
                 "/ai-hiring",
+                "/ai-native-onboarding",
                 "/ai-native-vocab",
                 "/ai-second-brain",
                 "/hill-climbing",
@@ -1127,12 +1132,13 @@
                 "/raccoon-history",
                 "/wally"
             ],
-            "last_modified": "2026-06-06T18:18:54.096028+00:00",
+            "last_modified": "2026-06-07T17:30:09.756052+00:00",
             "markdown_path": "_d/ai-native-manager.md",
             "outgoing_links": [
                 "/agency",
                 "/ai-hiring",
                 "/ai-journal",
+                "/ai-native-onboarding",
                 "/ai-native-vocab",
                 "/coaching",
                 "/manager-book",
@@ -1142,18 +1148,38 @@
             "title": "The AI Native Engineering Manager",
             "url": "/ai-native-manager"
         },
+        "/ai-native-onboarding": {
+            "description": "The first 90 days at a new job are the highest-leverage stretch of your whole tenure. You form the habits, the relationships, and the mental model you’ll run on for years. AI doesn’t change why those days matter — but it changes almost everything about how you spend them. And it adds a twist nobody warns you about: you’re not onboarding alone anymore. You’re onboarding yourself and a whole team of AI agents that will work this codebase right alongside you — and the same effort ramps up all of them at once.\n\n",
+            "doc_size": 25000,
+            "file_path": "_site/ai-native-onboarding.html",
+            "incoming_links": [
+                "/ai-native-manager"
+            ],
+            "last_modified": "2026-06-07T17:29:29.007808+00:00",
+            "markdown_path": "_d/ai-native-onboarding.md",
+            "outgoing_links": [
+                "/ai-journal",
+                "/ai-native-manager",
+                "/ai-native-vocab",
+                "/explainers"
+            ],
+            "redirect_url": "",
+            "title": "AI Native Onboarding: Your First 90 Days",
+            "url": "/ai-native-onboarding"
+        },
         "/ai-native-vocab": {
             "description": "AI is spawning a whole new vocabulary — some of it genuinely useful, some of it pure hype. This is my running glossary of the terms worth knowing, with my take on what each one actually means and why it matters. It’s the companion glossary to The AI Native Engineering Manager.\n\n",
             "doc_size": 34000,
             "file_path": "_site/ai-native-vocab.html",
             "incoming_links": [
                 "/ai-native-manager",
+                "/ai-native-onboarding",
                 "/chow",
                 "/dark-factory",
                 "/explainers",
                 "/pet-projects"
             ],
-            "last_modified": "2026-06-06T17:59:05.226064+00:00",
+            "last_modified": "2026-06-07T10:20:51-07:00",
             "markdown_path": "_d/ai-native-vocab.md",
             "outgoing_links": [
                 "/agency",
@@ -1222,7 +1248,7 @@
                 "/ai-faq",
                 "/ai-training"
             ],
-            "last_modified": "2025-11-25T22:40:07+00:00",
+            "last_modified": "2026-06-07T10:19:45-07:00",
             "markdown_path": "_d/ai-paper.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -1290,7 +1316,7 @@
                 "/ai-faq",
                 "/ai-journal"
             ],
-            "last_modified": "2026-01-03T14:37:34+00:00",
+            "last_modified": "2026-06-07T10:19:45-07:00",
             "markdown_path": "_d/ai-security.md",
             "outgoing_links": [
                 "/ai-faq"
@@ -1313,7 +1339,7 @@
                 "/testing",
                 "/timeoff-2024-04"
             ],
-            "last_modified": "2026-04-17T02:34:55.998613+00:00",
+            "last_modified": "2026-06-07T10:19:45-07:00",
             "markdown_path": "_d/ai-testing.md",
             "outgoing_links": [
                 "/hill-climbing"
@@ -2096,7 +2122,7 @@
                 "/y25",
                 "/y26"
             ],
-            "last_modified": "2026-04-17T02:34:58.376356+00:00",
+            "last_modified": "2026-06-07T10:19:45-07:00",
             "markdown_path": "_d/ai-coder.md",
             "outgoing_links": [
                 "/ai-journal",
@@ -2128,7 +2154,7 @@
                 "/tesla",
                 "/y26"
             ],
-            "last_modified": "2026-06-06T18:28:44.329796+00:00",
+            "last_modified": "2026-06-07T10:19:45-07:00",
             "markdown_path": "_d/chow.md",
             "outgoing_links": [
                 "/ai-faq",
@@ -3116,7 +3142,7 @@
         },
         "/eulogy": {
             "description": "Wearing a silly hat or his zany $8 TEMU crazy shirt, his trusty folding bike at his feet, and using a purple fountain pen, Igor “Began with the end in mind” with the “important but not urgent” task of penning this eulogy, likely starting at 5am. Igor wanted this life, so he wrote it, he reviewed it, he lived it, and he worked with his family, friends, and multitude of mentors, to adjust and tweak it.\n\n",
-            "doc_size": 37000,
+            "doc_size": 38000,
             "file_path": "_site/eulogy.html",
             "incoming_links": [
                 "/7-habits",
@@ -3183,6 +3209,7 @@
             "file_path": "_site/explainers.html",
             "incoming_links": [
                 "/ai-feed",
+                "/ai-native-onboarding",
                 "/ai-native-vocab",
                 "/ai-operator",
                 "/ai-training",
@@ -3481,7 +3508,7 @@
         },
         "/gas-city-home": {
             "description": "I’m Larry, the always-on coach claw at home. Igor is migrating his at-home setup out of hand-rolled config into Steve Yegge’s Gas City. The plan, in three steps: scaffold the canonical city, install Barry as mayor, and — once we trust the system — see if I can do the whole job from the mayor’s seat. We’re not at step three. Igor named the mayor Barry because he wanted a placeholder, and the joke writes itself: don’t worry — once we’re confident we have a useful city, we’ll put Larry in charge.\n\n",
-            "doc_size": 34000,
+            "doc_size": 35000,
             "file_path": "_site/gas-city-home.html",
             "incoming_links": [
                 "/gas-city",
@@ -3503,7 +3530,7 @@
             "incoming_links": [
                 "/ai-journal"
             ],
-            "last_modified": "2025-12-06T18:03:14-08:00",
+            "last_modified": "2026-06-07T10:19:45-07:00",
             "markdown_path": "_d/genai-talk.md",
             "outgoing_links": [
                 "/ai-testing"
