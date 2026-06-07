@@ -98,10 +98,6 @@ When ruminating thoughts become specific, repetitive patterns that loop endlessl
 
 Clutter isn't a collection - it's a pile of decisions I stopped making. Every undecided object is an open loop: a keep/sell/donate call I deferred until I stopped seeing the thing at all. The boxes in the garage, the cupboard I haven't opened in years - at first I knew exactly what was in there and why, then it became part of the wall, and once I stopped seeing it I stopped questioning it. An attic isn't a hoard of treasure; it's a stack of decisions I never made, quietly dragging behind me. (Sparked by [Nick Maher's video](https://youtu.be/Gh-rjOspK10).)
 
-The car boot sale wasn't depressing in the end. It was clarifying. The value of any life was never sitting on those tables - it was in the people, the walks, the conversations, the lessons. Those don't fit in a banana box, and they don't survive a house clearance either, which is exactly why they're the ones worth protecting.
-
-The stuff gets sold. It always does. Next weekend there's another car boot, another cleared house, another lifetime dumped into boxes that used to hold vegetables. What I want to leave behind isn't a fuller table. It's lighter hands for the people I love - and the stories, told while I'm still here to tell them.
-
 ### Grasping
 
 The desire to not lose something - make less money, have someone die. The antidote here is realizing that everything is impermanent, in fact you will [die](/death) at which point you can keep nothing.
