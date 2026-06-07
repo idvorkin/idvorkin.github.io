@@ -100,6 +100,7 @@ For content/visual PRs, include a rendered screenshot in the PR description. Pro
    Common gotchas:
    - Server takes ~30s on first build — screenshot before it's ready = blank page
    - Port 4000 may be taken — always use `--port 4000 --process jekyll` so serena MCP or other stray dir-servers don't trigger a false ✓
+   - **`just jekyll-serve` drifts to a free port** (`:4001`, `:4002`, …) when another repo's Jekyll holds `:4000`, and prints `🔨 serving … on :PORT`. Screenshot the port it actually bound, not a hardcoded `4000` — find it via `running-servers status --json` (the entry whose `directory` is this repo). A second `just jekyll-serve` in the same dir fails fast with "already running here". (Requires `running-servers >= 0.2.0`.)
    - Content changes need a rebuild — wait for livereload or give it a few seconds after saving
    - **`jekyll serve --incremental --livereload` serves fresh HTML over HTTP but does NOT write `_site/*.html` to disk.** `prek`'s anchor checker and lychee read disk, so they'll flag phantom broken anchors right after you edit a heading. Fix: `bundle exec jekyll build --incremental` (the live server can stay up), then re-run the hook.
 
