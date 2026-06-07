@@ -9,11 +9,11 @@ tags:
   - explainer
 ---
 
-If you've read [Standing Up Gas City](/gas-city-home), or seen "Gas City" mentioned in [/wally](/wally) or [/igors-claws](/igors-claws), and you want to know what the thing actually _is_ before you stand up your own — this is that post. Three concepts carry the whole design: **beads** (the unit of work), **molecules** (the choreography), and the **propulsion principle** (what keeps the engine running). Each one is plain enough on its own; the leverage is in how they compose.
+The way to get more out of AI is to scale your productivity, and — just like humans — agents scale two ways. Scale **up** (vertical): make one agent more capable by giving it better tools and pre-created skills. That's the whole world of [how I chop](/how-igor-chops) — a tuned `CLAUDE.md`, a library of skills, custom CLIs the agent already knows how to drive. Scale **out** (horizontal): run _many_ agents that cross-communicate and coordinate. Scaling out is where you need orchestration, and orchestration is what Gas City is. Beads, molecules, and the propulsion principle are how scale-out actually works under the hood.
 
 {% include ai-slop.html percent="80" %}
 
-The source of truth for all of this is [docs.gastownhall.ai](https://docs.gastownhall.ai/). My job here is to translate, not to duplicate — when a section needs the precise definition, I link out.
+This is the hands-on version. If you've read [Standing Up Gas City](/gas-city-home), or seen "Gas City" mentioned in [/wally](/wally) or [/igors-claws](/igors-claws), and you want to know what the thing actually _is_ — and how to start driving it — before you stand up your own, this is that post. Three concepts carry the whole design: **beads** (the unit of work), **molecules** (the choreography), and the **propulsion principle** (what keeps the engine running). Each is plain on its own; the leverage is in how they compose. The source of truth is [docs.gastownhall.ai](https://docs.gastownhall.ai/) — my job here is to translate, not duplicate, so when a section needs the precise definition I link out.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -21,7 +21,12 @@ The source of truth for all of this is [docs.gastownhall.ai](https://docs.gastow
 - [Beads — the unit](#beads--the-unit)
 - [Molecules — the choreography](#molecules--the-choreography)
 - [The Propulsion Principle](#the-propulsion-principle)
+- [Getting started — the mechanics in practice](#getting-started--the-mechanics-in-practice)
+  - [The city is just a directory](#the-city-is-just-a-directory)
+  - [Agents: crew vs. pool](#agents-crew-vs-pool)
+  - [Slinging: putting work on a hook](#slinging-putting-work-on-a-hook)
 - [Putting it together — how this post got made](#putting-it-together--how-this-post-got-made)
+- [The deeper frame: work is the primitive](#the-deeper-frame-work-is-the-primitive)
 - [Where to go next](#where-to-go-next)
 
 <!-- vim-markdown-toc-end -->
@@ -49,6 +54,8 @@ The lifecycle has its own vocabulary, and once you see it the rest of the system
 
 The canonical example shipped with Gas City is the **Shiny Workflow**: design → implement → review → test → submit. Five steps, five beads, one molecule. Each step blocks on the previous one's close. You can write your own formulas — that's the whole point.
 
+My own first formula is `blog-backlinks`: cut a fresh worktree off canonical `main`, wait for the background Jekyll build, rebuild `back-links.json`, **verify** the diff is backlinks-only, then open a clean PR or report a no-op. Six steps, each chained on the last with `needs:`. The interesting one is `verify` — a judgment gate that aborts if the change touches any file but `back-links.json`. That step exists because an earlier run cut from the wrong base and opened a 22-file PR; the formula now refuses to do that. The full story is in [The City Wrote This](/gas-city-rig).
+
 The line that makes molecules feel different from a shell script is from the docs themselves: _**"Molecules ARE the ledger — each step closure is a timestamped CV entry."**_ A shell script runs, exits, and leaves you grepping logs. A molecule records itself as it executes — every step's state transition is a row in Dolt with a timestamp. The workflow and its history are the same object.
 
 Agents talk to each other over a [mail protocol](https://docs.gastownhall.ai/other/beads-native-messaging/) — beads-flavored messages flowing between them, with groups, queues, and channels. For understanding Gas City you can treat that as plumbing; what matters here is that molecules don't need a central scheduler to advance, because each agent watches its own hook.
@@ -64,6 +71,80 @@ That's the whole rule. An agent that finds a bead routed to it on its hook execu
 The principle is load-bearing for the **[polecat](https://docs.gastownhall.ai/concepts/polecat-lifecycle/)** — the ephemeral worker that spawns into a rig, claims its bead, does the work, and dies. The polecat-lifecycle doc is unusually blunt about this: _"There is no idle state. Polecats don't exist without work."_ A polecat that's awake but not running isn't waiting — by the design's own definition, it's in a failure state. Stalled or zombie. Pick one.
 
 I learned this concretely [the morning I stood up `igor-city`](/gas-city-home). First-time polecats sat idle on wake — supervisor up, beads routed, polecats spawned, nothing happening. I had to manually `gc session nudge <id> "pick up your bead"` for each one. That's a propulsion-principle violation. Polecats existing in a state the design says cannot exist. The fix — a `polecat-step-0-self-claim` step in the agent prompt that runs `bd ready --json | jq …` immediately on wake — wasn't a feature; it was GUPP re-asserted. The bug was a class of state the system isn't supposed to have. Once you internalize the principle, the fix writes itself.
+
+## Getting started — the mechanics in practice
+
+The three concepts above are the theory. Here's what they look like when you actually drive the thing. Three pieces: the city you stand up, the agents you configure, and the slinging that puts them to work.
+
+### The city is just a directory
+
+`gc init` scaffolds one. The wizard asks for a provider and a template; the non-interactive form is `gc init --template minimal --default-provider claude ~/my-city`. What comes out is a plain directory — that's the whole model, a city is a directory on disk. You get a `city.toml` (deployment config), a `pack.toml` (the agent definitions), a `.gc/` runtime dir, and top-level folders for `agents/`, `formulas/`, and `orders/`.
+
+The `city.toml` is short. Mine, trimmed:
+
+```toml
+[workspace]
+provider = "claude"
+
+[providers.claude]
+base = "builtin:claude"
+
+[[rigs]]
+name = "blog"
+prefix = "bl"
+default_branch = "main"
+
+[rigs.imports.blogops]
+source = "/home/developer/gits/idvorkin.github.io/_gascity"
+```
+
+A **rig** points the city at a repo. The blog rig imports a pack of agents and formulas (`_gascity/`) that lives _in the blog repo_, so the workflow definitions version alongside the content they operate on. The rig inherits the city's bead store, so the blog's own `.beads` is never touched — beads live in the city, the pack lives in the rig.
+
+### Agents: crew vs. pool
+
+Every agent is an `agent.toml`. The whole crew-vs-pool distinction is config, not a class hierarchy. **Crew** stay alive across the city's lifetime — the mayor, a bead-keeper, a watchdog. You mark them in `pack.toml` with `mode = "always"`. **Pool** agents (the polecats) scale from zero: idle, they don't exist; work arrives, one spawns into a fresh worktree, runs, and dies.
+
+My `blogsmith` agent's `agent.toml` is almost nothing:
+
+{% raw %}
+
+```toml
+provider = "claude"
+work_dir = "{{.RigRoot}}"
+```
+
+{% endraw %}
+
+That `{% raw %}{{.RigRoot}}{% endraw %}` resolves to the blog rig's path, so the agent launches _inside_ the blog — which makes `claude` auto-load the blog's `CLAUDE.md` and skills at startup. The agent inherits every convention I've already written down instead of me re-explaining them in a prompt. The pool shape lives in the template it's built from:
+
+{% raw %}
+
+```toml
+scope = "rig"
+wake_mode = "fresh"
+work_dir = ".gc/worktrees/{{.Rig}}/polecats/{{.AgentBase}}"
+nudge = "Run gc hook; it checks assigned work first, then routed pool work."
+min_active_sessions = 0
+max_active_sessions = 5
+```
+
+{% endraw %}
+
+`min_active_sessions = 0` is the from-zero part — no work, no session. `max_active_sessions = 5` caps the fan-out. A crew agent sets `max_active_sessions = 1` and never drops to zero. Same schema, different deployment.
+
+### Slinging: putting work on a hook
+
+`gc sling` is how work reaches an agent. The shapes:
+
+```bash
+gc sling blog/blogsmith bl-42                    # route an existing bead
+gc sling blog/blogsmith "fix the broken anchor"  # text → auto-creates a bead, then routes
+gc sling mayor blog-backlinks --formula          # instantiate a formula as a wisp, route its root bead
+```
+
+That last one is scale-out in miniature. `blog-backlinks` is marked `phase = "vapor"` — a root-only wisp. Sling it and a from-zero pool wakes, one polecat claims the root bead, runs the six steps in a throwaway worktree, opens the PR, and exits. Worktree, verify, PR, gone. That's the "vapor wisp" shape: a wake signal lights up a pool scaled from zero, the work runs, nothing's left to babysit.
+
+The cross-communication that makes scale-out work is the same [mail protocol](https://docs.gastownhall.ai/other/beads-native-messaging/) — `blog-backlinks`'s last step is `gc mail send mayor` with the PR URL. Mail is just a bead (`type: "message"`), so the same store that holds the work holds the coordination. No separate message bus to run.
 
 ## Putting it together — how this post got made
 

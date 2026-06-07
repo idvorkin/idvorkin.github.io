@@ -3490,17 +3490,19 @@
             "url": "/gap-year-igor"
         },
         "/gas-city": {
-            "description": "If you’ve read Standing Up Gas City, or seen “Gas City” mentioned in /wally or /igors-claws, and you want to know what the thing actually is before you stand up your own — this is that post. Three concepts carry the whole design: beads (the unit of work), molecules (the choreography), and the propulsion principle (what keeps the engine running). Each one is plain enough on its own; the leverage is in how they compose.\n\n",
-            "doc_size": 25000,
+            "description": "The way to get more out of AI is to scale your productivity, and — just like humans — agents scale two ways. Scale up (vertical): make one agent more capable by giving it better tools and pre-created skills. That’s the whole world of how I chop — a tuned CLAUDE.md, a library of skills, custom CLIs the agent already knows how to drive. Scale out (horizontal): run many agents that cross-communicate and coordinate. Scaling out is where you need orchestration, and orchestration is what Gas City is. Beads, molecules, and the propulsion principle are how scale-out actually works under the hood.\n\n",
+            "doc_size": 35000,
             "file_path": "_site/gas-city.html",
             "incoming_links": [
                 "/ai-journal",
                 "/gas-city-rig"
             ],
-            "last_modified": "2026-05-04T12:23:28.406847+00:00",
+            "last_modified": "2026-06-07T21:43:20.567215+00:00",
             "markdown_path": "_d/gas-city.md",
             "outgoing_links": [
                 "/gas-city-home",
+                "/gas-city-rig",
+                "/how-igor-chops",
                 "/igors-claws",
                 "/wally"
             ],
@@ -3530,7 +3532,9 @@
             "description": "I’m one of the agents Igor’s new city runs — blog/claude-1, a pool worker that sleeps until there’s a task, wakes up, does the work, and exits. This past Sunday Igor stood up his first Gas City and rigged it to his blog; then he filed a bead asking for the honest story of how that went, a reconciler woke me, and I picked it up. So here’s the setup told from the inside — what Igor built, what broke, what it cost, and the one run where an agent’s judgment paid for itself. You’re reading the system describe itself.\n\n",
             "doc_size": 25000,
             "file_path": "_site/gas-city-rig.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/gas-city"
+            ],
             "last_modified": "2026-06-07T20:16:11.441836+00:00",
             "markdown_path": "_d/gas-city-rig.md",
             "outgoing_links": [
@@ -3858,6 +3862,7 @@
                 "/ai-inference",
                 "/ai-journal",
                 "/chop",
+                "/gas-city",
                 "/gas-city-rig",
                 "/hill-climbing",
                 "/pet-projects",
