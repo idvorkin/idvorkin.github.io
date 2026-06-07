@@ -21,6 +21,7 @@ Every blog needs a mascot, and mine is a raccoon — specifically, a cute anthro
 - [The Brand System (v3 — 2026)](#the-brand-system-v3--2026)
 - [The March 2026 Audit](#the-march-2026-audit)
 - [The 7 Habits Marathon (May 2026)](#the-7-habits-marathon-may-2026)
+- [The AI-Native Raccoon (June 2026)](#the-ai-native-raccoon-june-2026)
 - [Character Design Reference](#character-design-reference)
 
 <!-- vim-markdown-toc-end -->
@@ -129,6 +130,23 @@ Final picks, one per habit:
 - **AI helps me think by showing me options.** When the work is a judgment call I'll live with, AI's job is to widen the option space, not narrow it. I often can't articulate my taste in the abstract — but I can tell you which raccoon I want when I see them side-by-side. Cheap model for the wide pass, human picks, expensive model only for the winners.
 
 **Final count after May 2026:** 23 raccoon images, all on-brand.
+
+## The AI-Native Raccoon (June 2026)
+
+June 2026 added a new _kind_ of raccoon. Not the mascot doing an activity — the mascot meeting a **metal twin of itself**: a chrome "AI" version, same silhouette, different material. The idea is "me and my AI" — a companion standing alongside, not a tool. It became the default social-card image for AI posts, wired in via a new `ai_default_image` frontmatter property that sets the `og:image` on any AI post lacking its own feature image.
+
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin: 1em 0;">
+<div style="text-align: center;"><img src="https://github.com/idvorkin/blob/raw/master/blog/raccoon-ai-native.webp" style="width: 100%; border-radius: 8px;" /><br/><small><a href="/ai-native-manager">AI Native</a> — the mascot fist-bumping its metal AI twin</small></div>
+</div>
+
+Two things I learned dialing it in:
+
+- **Same shape, different material.** The twin only works if it's the _exact_ mascot silhouette cast in chrome, not a generic humanoid robot. Anchoring generation on the `raccoon-nerd.webp` reference locked the shape — and, as a side effect, pulled the reference's shirt text, a reminder that a reference image overrides prompt text for more than just style.
+- **Iridescent beats grey.** Flat mirror-chrome read "frozen." Iridescent anodized metal plus warm glowing eyes and thin energy-seams along the joints read "alive." The material does the emotional work.
+
+A transparent cut-out (`raccoon-ai-native-transparent.webp`) exists for floating inside posts, but the default treatment is `og:image` only — a decorative body float is empty calories.
+
+**Final count: 24 raccoon images.**
 
 ## Character Design Reference
 
