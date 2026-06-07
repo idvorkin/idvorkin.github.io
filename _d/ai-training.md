@@ -24,6 +24,7 @@ I don't train models for a living — I build on top of them. But to use LLMs we
 - [How a model gets made](#how-a-model-gets-made)
   - [Pre-training](#pre-training)
   - [Post-training](#post-training)
+  - [Datasets](#datasets)
   - [Fine-tuning methods](#fine-tuning-methods)
   - [Deployment: quantization and serving](#deployment-quantization-and-serving)
 - [How does post-training differ from RAG and the harness?](#how-does-post-training-differ-from-rag-and-the-harness)
@@ -63,11 +64,18 @@ The one intuition to keep: **pre-training installs knowledge; post-training shap
 
 Turning the base model into an assistant. Most of my old "fine-tuning" notes actually belong here — they're behavior changes, not knowledge.
 
+These methods form a lineage, not a flat menu — SFT shifts behavior first, preference tuning (RLHF and its descendants) refines it, and verifiable rewards branch off for problems you can grade:
+
 - **SFT (supervised fine-tuning / instruction tuning)** — fine-tune on curated (prompt → good answer) pairs so the model answers instead of autocompletes. The first and biggest behavior shift.
 - **RLHF** — Reinforcement Learning from Human Feedback. Humans rank outputs, you train a reward model on those rankings, then optimize the LLM against the reward model.
-- **RLAIF** — same idea, but an AI does the ranking (LLM-as-judge). Cheaper, and it scales past what humans can label.
-- **DPO** — [Direct Preference Optimization](https://arxiv.org/pdf/2305.18290.pdf?ref=hackernoon.com). RLHF's simpler successor: skip the separate reward model and optimize the preference directly. There's still a human (or model) on the end picking A vs B.
+  - **RLAIF** — same idea, but an AI does the ranking (LLM-as-judge). Cheaper, and it scales past what humans can label.
+  - **DPO** — [Direct Preference Optimization](https://arxiv.org/pdf/2305.18290.pdf?ref=hackernoon.com). RLHF's simpler successor: skip the separate reward model and optimize the preference directly. There's still a human (or model) on the end picking A vs B.
 - **RLVR (RL from verifiable rewards)** — the reasoning-model frontier. Instead of "which answer do humans prefer," the reward is "did it get the right answer" on problems you can actually check — math, code, unit tests. This is the engine behind the o1-style reasoning models: let the model think longer, reward the correct final answer.
+
+### Datasets
+
+The data the model learns behavior from — this is where I'll collect the training datasets worth knowing.
+
 - **[Alpaca](https://huggingface.co/datasets/yahma/alpaca-cleaned)** — an early instruction dataset. The clever bit was using GPT-4 to generate the training data cheaply. That "use a strong model to make data for a weaker one" trick is everywhere now.
 
 ### Fine-tuning methods

@@ -1350,7 +1350,7 @@
         },
         "/ai-training": {
             "description": "I don’t train models for a living — I build on top of them. But to use LLMs well, it helps to carry a rough map of how one gets made: what pre-training buys you, what post-training changes, and where fine-tuning, RAG, and quantization actually fit. These are my working notes on that map, kept deliberately shallow — enough to make good decisions as a consumer of models, not to go train one.\n\n",
-            "doc_size": 34000,
+            "doc_size": 35000,
             "file_path": "_site/ai-training.html",
             "incoming_links": [
                 "/ai-inference"
