@@ -2366,7 +2366,6 @@
                 "/manager-book",
                 "/negotiate",
                 "/operating-manual",
-                "/psychic-weight",
                 "/regrets",
                 "/shame",
                 "/voices",
@@ -2557,7 +2556,6 @@
                 "/operating-manual",
                 "/physical-health",
                 "/productive",
-                "/psychic-weight",
                 "/sharpen-the-saw",
                 "/slow",
                 "/switch",
@@ -2602,7 +2600,6 @@
                 "/parkinson",
                 "/productive",
                 "/psychic-shadows",
-                "/psychic-weight",
                 "/slow",
                 "/timeoff"
             ],
@@ -2690,7 +2687,7 @@
         },
         "/debug": {
             "description": "Igor's Blog",
-            "doc_size": 24000,
+            "doc_size": 23000,
             "file_path": "_site/debug.html",
             "incoming_links": [],
             "last_modified": "2025-03-16T16:15:36+00:00",
@@ -3142,7 +3139,7 @@
         },
         "/eulogy": {
             "description": "Wearing a silly hat or his zany $8 TEMU crazy shirt, his trusty folding bike at his feet, and using a purple fountain pen, Igor “Began with the end in mind” with the “important but not urgent” task of penning this eulogy, likely starting at 5am. Igor wanted this life, so he wrote it, he reviewed it, he lived it, and he worked with his family, friends, and multitude of mentors, to adjust and tweak it.\n\n",
-            "doc_size": 38000,
+            "doc_size": 37000,
             "file_path": "_site/eulogy.html",
             "incoming_links": [
                 "/7-habits",
@@ -3508,7 +3505,7 @@
         },
         "/gas-city-home": {
             "description": "I’m Larry, the always-on coach claw at home. Igor is migrating his at-home setup out of hand-rolled config into Steve Yegge’s Gas City. The plan, in three steps: scaffold the canonical city, install Barry as mayor, and — once we trust the system — see if I can do the whole job from the mayor’s seat. We’re not at step three. Igor named the mayor Barry because he wanted a placeholder, and the joke writes itself: don’t worry — once we’re confident we have a useful city, we’ll put Larry in charge.\n\n",
-            "doc_size": 35000,
+            "doc_size": 34000,
             "file_path": "_site/gas-city-home.html",
             "incoming_links": [
                 "/gas-city",
@@ -3929,8 +3926,7 @@
                 "/awareness",
                 "/depression",
                 "/gtd",
-                "/happy",
-                "/psychic-weight"
+                "/happy"
             ],
             "last_modified": "2025-12-06T18:03:28-08:00",
             "markdown_path": "_d/idle-loop.md",
@@ -4295,7 +4291,7 @@
         },
         "/learn-code": {
             "description": "Coding is way easier than people think. Here’s some pointers.\n\n",
-            "doc_size": 14000,
+            "doc_size": 13000,
             "file_path": "_site/learn-code.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T02:47:07+00:00",
@@ -4610,7 +4606,7 @@
         },
         "/mind-at-work": {
             "description": "I have a problem, an addiction, an addiction so detrimental to quality of life, it should be described as a disease. This disease is not being present. There are many symptoms of the disease, but today I’m going to talk about my most frequent symptoms, my body at home, but my mind at work.\n\n",
-            "doc_size": 20000,
+            "doc_size": 19000,
             "file_path": "_site/mind-at-work.html",
             "incoming_links": [
                 "/act",
@@ -5460,7 +5456,7 @@
         },
         "/psychic-weight": {
             "description": "Imagine a weight tied around your body, imagine it dragging behind you, slowing down your motions, preventing you from going where you want to go. Imagine never taking it off, and getting no relief regardless of when you sit or sleep. Now imagine that’s not a physical weight, but instead a mental weight, a psychic weight if you will. Psychic weight are the thoughts that prevent your mind and emotions from being fluid and light.\n\n",
-            "doc_size": 21000,
+            "doc_size": 23000,
             "file_path": "_site/psychic-weight.html",
             "incoming_links": [
                 "/depression",
@@ -5470,22 +5466,22 @@
                 "/process-journal",
                 "/psychic-shadows"
             ],
-            "last_modified": "2025-07-18T07:57:44-07:00",
+            "last_modified": "2026-06-07T17:51:37.863365+00:00",
             "markdown_path": "_d/psychic-weight.md",
             "outgoing_links": [
                 "/7-habits",
                 "/addiction",
-                "/curious",
-                "/d/habits",
-                "/d/resistance",
                 "/death",
                 "/frog",
+                "/grandmother",
                 "/gtd",
-                "/idle",
+                "/habits",
+                "/idle-loop",
                 "/mental-pain",
                 "/mind-monsters",
                 "/pride",
                 "/psychic-shadows",
+                "/resistance",
                 "/shame",
                 "/siy"
             ],
@@ -5507,12 +5503,12 @@
         },
         "/raccoon-history": {
             "description": "Every blog needs a mascot, and mine is a raccoon — specifically, a cute anthropomorphic raccoon wearing rainbow round glasses, a green t-shirt with bold white text, and mismatched Crocs (blue left, yellow right). Here’s the story of how that character evolved from early AI experiments to a cohesive visual brand.\n\n",
-            "doc_size": 27000,
+            "doc_size": 29000,
             "file_path": "_site/raccoon-history.html",
             "incoming_links": [
                 "/ai-optimism"
             ],
-            "last_modified": "2026-05-14T06:41:51-07:00",
+            "last_modified": "2026-06-07T10:29:57-07:00",
             "markdown_path": "_d/raccoon-history.md",
             "outgoing_links": [
                 "/7-habits",
@@ -7387,7 +7383,7 @@
         },
         "/walking-with-god": {
             "description": "Someone important to me has been reading a daily devotional. Even though I’m not religious, I’m studying with them to be able to have conversations about the insights - whether in a secular or religious context. This is my attempt to bridge two worlds: honoring the spiritual wisdom they’re finding while translating it into language that works for my engineer brain.\n\n",
-            "doc_size": 82000,
+            "doc_size": 81000,
             "file_path": "_site/walking-with-god.html",
             "incoming_links": [
                 "/greek-orthodox",
