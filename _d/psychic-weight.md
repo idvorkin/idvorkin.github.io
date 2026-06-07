@@ -16,32 +16,32 @@ Imagine a weight tied around your body, imagine it dragging behind you, slowing 
 <!-- vim-markdown-toc-start -->
 
 - [Types of psychic weight](#types-of-psychic-weight)
-    - [Aversion and the resistance](#aversion-and-the-resistance)
-    - [Mind monsters](#mind-monsters)
-    - [Triggers](#triggers)
-    - [Open decisions](#open-decisions)
-    - [Open loops](#open-loops)
-    - [Shame](#shame)
-    - [Pride](#pride)
-    - [Ruminating a parasitic idle loop](#ruminating-a-parasitic-idle-loop)
-    - [Beating yourself up](#beating-yourself-up)
-    - [Grasping](#grasping)
+  - [Aversion and the resistance](#aversion-and-the-resistance)
+  - [Mind monsters](#mind-monsters)
+  - [Triggers](#triggers)
+  - [Open decisions](#open-decisions)
+  - [Open loops](#open-loops)
+  - [Shame](#shame)
+  - [Pride](#pride)
+  - [Ruminating a parasitic idle loop](#ruminating-a-parasitic-idle-loop)
+  - [Beating yourself up](#beating-yourself-up)
+  - [Grasping](#grasping)
 - [Antidotes](#antidotes)
-    - [Separate pain from suffering](#separate-pain-from-suffering)
-    - [Eat the frog](#eat-the-frog)
-    - [Getting things done](#getting-things-done)
-    - [CI/CC (Circle of Influence, Circle of Concern)](#cicc-circle-of-influence-circle-of-concern)
-    - [Talk it through](#talk-it-through)
-    - [Meditation](#meditation)
-    - [This too shall pass](#this-too-shall-pass)
-    - [Emotional First Aid](#emotional-first-aid)
+  - [Separate pain from suffering](#separate-pain-from-suffering)
+  - [Eat the frog](#eat-the-frog)
+  - [Getting things done](#getting-things-done)
+  - [CI/CC (Circle of Influence, Circle of Concern)](#cicc-circle-of-influence-circle-of-concern)
+  - [Talk it through](#talk-it-through)
+  - [Meditation](#meditation)
+  - [This too shall pass](#this-too-shall-pass)
+  - [Emotional First Aid](#emotional-first-aid)
 - [Examples from my own life](#examples-from-my-own-life)
-    - [Bathroom remodel feeling "f@#\$" over](#bathroom-remodel-feeling-f-over)
-    - [Insecurity around money](#insecurity-around-money)
-    - [Needing to finish a self evaluation](#needing-to-finish-a-self-evaluation)
-    - [Needing to finish a document at work](#needing-to-finish-a-document-at-work)
-    - [Small things that got really big](#small-things-that-got-really-big)
-    - [Examples of Pride](#examples-of-pride)
+  - [Bathroom remodel feeling "f@#\$" over](#bathroom-remodel-feeling-f-over)
+  - [Insecurity around money](#insecurity-around-money)
+  - [Needing to finish a self evaluation](#needing-to-finish-a-self-evaluation)
+  - [Needing to finish a document at work](#needing-to-finish-a-document-at-work)
+  - [Small things that got really big](#small-things-that-got-really-big)
+  - [Examples of Pride](#examples-of-pride)
 - [Useful thoughts.](#useful-thoughts)
 
 <!-- vim-markdown-toc-end -->
@@ -73,7 +73,13 @@ Analogies:
 
 ### Open decisions
 
+Clutter isn't a collection - it's a pile of decisions I stopped making. The boxes in the garage, the cupboard I haven't opened in years: at first I knew exactly what was in there and why. Then it became background, part of the wall, and once I stopped _seeing_ it I stopped _questioning_ it. An attic isn't a hoard of treasure, it's a stack of keep/sell/donate calls I never made. Every undecided box is psychic weight I'm carrying even though I've stopped noticing it. (Sparked by [Nick Maher's video](https://youtu.be/Gh-rjOspK10).)
+
+The filter I run things through now: am I keeping this because it adds value to my life, or because I never made a decision about it? Use, love, or purpose stays. "I never decided" goes. That's freedom, not minimalism - I keep what earns its place and let the rest go.
+
 ### Open loops
+
+[Parkinson's Law](/parkinson) does the rest: stuff expands to fill whatever storage I give it, so a bigger garage just buys a bigger pile of unmade decisions. The undone small thing doesn't sit still either - it grows, and the loop keeps running in the background until I close it.
 
 ### Shame
 
@@ -96,6 +102,10 @@ When ruminating thoughts become specific, repetitive patterns that loop endlessl
 ### Grasping
 
 The desire to not lose something - make less money, have someone die. The antidote here is realizing that everything is impermanent, in fact you will [die](/death) at which point you can keep nothing.
+
+I grasp at objects because I think the memory lives in them - my dad's watch, the book I read at exactly the right moment. But the memory was never in the thing. It lives in me, and the object is just a trigger that points back at me. Once I'm gone the trigger fires for nobody and it's a watch again. Letting go of the object doesn't erase the person or the love - those were never stored in the ceramic.
+
+The collections are the same trap, one step removed. I see treasure; my kids will see work. Nobody wants the pile I spent decades building - they'll stand in a house full of stuff that meant everything to me and nothing to them, making a thousand keep/sell/bin calls while grieving. The greatest gift I can leave them isn't more stuff, it's fewer problems.
 
 From the prophet:
 

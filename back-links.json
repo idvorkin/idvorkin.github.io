@@ -691,6 +691,7 @@
                 "/productive",
                 "/psychic-shadows",
                 "/psychic-weight",
+                "/timeoff",
                 "/vibing",
                 "/walking-with-god"
             ],
@@ -1323,12 +1324,12 @@
         },
         "/ai-training": {
             "description": "I don’t train models for a living — I build on top of them. But to use LLMs well, it helps to carry a rough map of how one gets made: what pre-training buys you, what post-training changes, and where fine-tuning, RAG, and quantization actually fit. These are my working notes on that map, kept deliberately shallow — enough to make good decisions as a consumer of models, not to go train one.\n\n",
-            "doc_size": 30000,
+            "doc_size": 31000,
             "file_path": "_site/ai-training.html",
             "incoming_links": [
                 "/ai-inference"
             ],
-            "last_modified": "2026-06-07T13:30:57.425073+00:00",
+            "last_modified": "2026-06-07T08:39:57-07:00",
             "markdown_path": "_d/ai-training.md",
             "outgoing_links": [
                 "/ai-art",
@@ -1964,8 +1965,7 @@
             "last_modified": "2026-06-06T18:18:54.096028+00:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
-                "/7h-c0",
-                "/7h-c7",
+                "/7h-concepts",
                 "/act",
                 "/activation",
                 "/addiction",
@@ -2017,8 +2017,7 @@
                 "/vibing",
                 "/wally",
                 "/win-win",
-                "/work-gastown",
-                "/y2026"
+                "/y26"
             ],
             "redirect_url": "",
             "title": "Changelog",
@@ -2129,7 +2128,7 @@
                 "/tesla",
                 "/y26"
             ],
-            "last_modified": "2026-03-01T12:10:54-08:00",
+            "last_modified": "2026-06-06T11:23:00-07:00",
             "markdown_path": "_d/chow.md",
             "outgoing_links": [
                 "/ai-faq",
@@ -2341,7 +2340,6 @@
                 "/manager-book",
                 "/negotiate",
                 "/operating-manual",
-                "/psychic-weight",
                 "/regrets",
                 "/shame",
                 "/voices",
@@ -2532,7 +2530,6 @@
                 "/operating-manual",
                 "/physical-health",
                 "/productive",
-                "/psychic-weight",
                 "/sharpen-the-saw",
                 "/slow",
                 "/switch",
@@ -2577,8 +2574,8 @@
                 "/parkinson",
                 "/productive",
                 "/psychic-shadows",
-                "/psychic-weight",
-                "/slow"
+                "/slow",
+                "/timeoff"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/resistance.md",
@@ -3098,6 +3095,7 @@
                 "/overload",
                 "/parkinson",
                 "/partner-trouble",
+                "/timeoff",
                 "/timeoff-2022-07",
                 "/walking-with-god"
             ],
@@ -3190,7 +3188,7 @@
                 "/hill-climbing",
                 "/pet-projects"
             ],
-            "last_modified": "2026-04-16T23:12:34.253724+00:00",
+            "last_modified": "2026-06-06T11:23:00-07:00",
             "markdown_path": "_d/explainers.md",
             "outgoing_links": [
                 "/ai-native-vocab",
@@ -3901,8 +3899,7 @@
                 "/awareness",
                 "/depression",
                 "/gtd",
-                "/happy",
-                "/psychic-weight"
+                "/happy"
             ],
             "last_modified": "2025-12-06T18:03:28-08:00",
             "markdown_path": "_d/idle-loop.md",
@@ -4146,6 +4143,7 @@
                 "/gap-year-igor",
                 "/physical-health",
                 "/shoulder-pain",
+                "/timeoff",
                 "/untangled",
                 "/y24"
             ],
@@ -5077,6 +5075,7 @@
                 "/manager-book-appendix",
                 "/money",
                 "/operating-manual",
+                "/psychic-weight",
                 "/timeoff"
             ],
             "last_modified": "2025-03-11T06:05:27-07:00",
@@ -5130,7 +5129,7 @@
                 "/side-quests",
                 "/y25"
             ],
-            "last_modified": "2026-04-16T23:12:34.253724+00:00",
+            "last_modified": "2026-06-06T11:23:00-07:00",
             "markdown_path": "_d/pet-projects.md",
             "outgoing_links": [
                 "/ai-native-vocab",
@@ -5431,7 +5430,7 @@
         },
         "/psychic-weight": {
             "description": "Imagine a weight tied around your body, imagine it dragging behind you, slowing down your motions, preventing you from going where you want to go. Imagine never taking it off, and getting no relief regardless of when you sit or sleep. Now imagine that’s not a physical weight, but instead a mental weight, a psychic weight if you will. Psychic weight are the thoughts that prevent your mind and emotions from being fluid and light.\n\n",
-            "doc_size": 21000,
+            "doc_size": 23000,
             "file_path": "_site/psychic-weight.html",
             "incoming_links": [
                 "/depression",
@@ -5441,22 +5440,23 @@
                 "/process-journal",
                 "/psychic-shadows"
             ],
-            "last_modified": "2025-07-18T07:57:44-07:00",
+            "last_modified": "2026-06-07T15:50:07.959790+00:00",
             "markdown_path": "_d/psychic-weight.md",
             "outgoing_links": [
                 "/7-habits",
                 "/addiction",
-                "/curious",
-                "/d/habits",
-                "/d/resistance",
                 "/death",
                 "/frog",
+                "/grandmother",
                 "/gtd",
-                "/idle",
+                "/habits",
+                "/idle-loop",
                 "/mental-pain",
                 "/mind-monsters",
+                "/parkinson",
                 "/pride",
                 "/psychic-shadows",
+                "/resistance",
                 "/shame",
                 "/siy"
             ],
@@ -6797,21 +6797,21 @@
             "last_modified": "2026-06-06T18:11:26.466427+00:00",
             "markdown_path": "_d/time_off.md",
             "outgoing_links": [
-                "/addictions",
+                "/addiction",
                 "/balloon",
+                "/d/resistance",
                 "/diet",
                 "/energy",
-                "/essential",
+                "/essentialism",
                 "/eulogy",
                 "/frog",
                 "/gap-year",
                 "/gap-year-igor",
                 "/happy",
-                "/kettlebells",
+                "/kettlebell",
                 "/magic",
                 "/mind-at-work",
                 "/parkinson",
-                "/resistance",
                 "/siy",
                 "/terzepatide",
                 "/timeoff-2020-03",
