@@ -7,7 +7,7 @@ tags:
   - ai
 ---
 
-I build AI for a living, and I have an AI life coach named Larry — so "use less AI" was never going to be my policy. The sharper question: AI amplifies whatever you point it at. So what do I point it at, and when do I put it down?
+AI is the biggest force multiplier I've ever experienced. I build it for a living, and I have an AI life coach named Larry — so "use less AI" was never going to be my policy. A multiplier amplifies whatever you point it at. The whole question is what to point it at, and when to put it down.
 
 {% include ai-slop.html percent="50" %}
 
@@ -17,7 +17,7 @@ This is one instance of a bigger rule — how I do [time off](/timeoff-2026-07):
 <!-- vim-markdown-toc-start -->
 
 - [AI flows downhill](#ai-flows-downhill)
-- [The two finished rooms](#the-two-finished-rooms)
+- [Redirecting it](#redirecting-it)
 - [Three tests](#three-tests)
 - [The sort](#the-sort)
 - [The sneaky one](#the-sneaky-one)
@@ -28,15 +28,15 @@ This is one instance of a bigger rule — how I do [time off](/timeoff-2026-07):
 
 ## AI flows downhill
 
-AI pools in the role you've already maxed. For me that's the builder — the tech guru. It's where AI is most powerful, most fun, and most rewarding, so left alone I'll spend my best AI on the part of my life that needs nothing. Every "[enabling environment](/enable)" tool is AI pooling in the basement of a house that's already built. The policy isn't about using less AI. It's a discipline against my own gravity.
+AI flows toward whatever I'm already strongest at. For me that's the builder — the tech guru. It's where AI is most powerful, most fun, and most rewarding, so left alone I'll spend my best AI on the part of my life that already needs nothing. Every "[enabling environment](/enable)" tool is AI flowing into the role I've already maxed. The policy isn't about using less AI. It's a discipline against my own gravity.
 
-## The two finished rooms
+## Redirecting it
 
-Two of my roles are basically done: tech guru and provider — [financial independence](/retire) is handled. They're also the two roles AI most naturally amplifies. That's the trap in one sentence: **the AI I'm best at deploying serves the goals I've already met.** The open rooms — father, friend, magician, [the sublime](/sublime) — are the ones AI either ignores or quietly robs.
+The trap in one sentence: **the AI I'm best at deploying serves the role I've already grown the most.** The discipline is pointing it instead at the [roles](/eulogy) I actually want to grow — father, friend, magician, [the sublime](/sublime) — the ones AI either ignores or quietly robs.
 
 ## Three tests
 
-1. **Whose role does it grow?** Toward an open room — father, magic, the sublime, health — not a finished one.
+1. **Whose role does it grow?** Toward a role I want to grow — father, magic, the sublime, health — not one I've already maxed.
 2. **Build or use?** Using a tool serves the role. Endlessly building it is tech-guru in a trench coat. Kill-switch: _will I still use this in 30 days, or is the dopamine in the building?_ If I catch myself improving a tool I already finished, gravity won.
 3. **When?** The margins — family asleep, the early solo hour. The moment someone I'm there _for_ is awake, the phone goes down. Even good AI is a thief when it's stealing a face across the table.
 
