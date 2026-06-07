@@ -103,6 +103,8 @@ For the concepts — how a neural network actually learns, then how a transforme
 
 For the mechanics, Brendan Bycroft's [LLM visualization](https://bbycroft.net/llm) walks a single token through every layer of a GPT model in 3D — embeddings, attention, the lot.
 
+And for post-training specifically, [How to Train Your Goblin](https://goblins.mchen.workers.dev/) (mchen and Will Brown, on Prime Intellect) is a playful scroll-through of RL — it retraces how GPT picked up its accidental "goblin" tic by deliberately RL-training models to overuse the word, hidden trigger reward and all. A concrete look at reward hacking and how RL differs from SFT, with the code and training runs open.
+
 I want to embed a small next-token-prediction demo right here (type a prefix, watch the probability distribution over the next token), built as a standalone [explainer](/explainers) and iframed in. Coming soon.
 
 ## What this post is not about
