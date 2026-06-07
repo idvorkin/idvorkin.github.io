@@ -98,7 +98,7 @@ All 4 Dvorkins (Igor, Tori, Zach, Amelia). Iceland and Copenhagen legs are just 
 
 ## How I'm doing this trip
 
-One rule underneath all of it: be where my feet are. Three tests keep me honest —
+One rule underneath all of it: [be where my feet are](/awareness). Three tests keep me honest —
 
 1. **Whose role does it grow?** Drift on a trip flows toward what you're already good at — work, optimizing, the phone. Spend the days on the open rooms: the kids, wonder, Tori. Not the finished ones.
 2. **Build vs. use?** Researching the perfect restaurant isn't eating the meal. Optimizing the trip isn't living it.
