@@ -2,6 +2,7 @@
 layout: post
 title: "Igor's AI Journal"
 permalink: /ai-journal
+ai_default_image: true
 ---
 
 A journal of random explorations in AI. Keeping track of them so I don't get lost

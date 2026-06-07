@@ -8,6 +8,7 @@ redirect_from:
 tags:
   - ai
   - machine-learning
+ai_default_image: true
 ---
 
 [Training](/ai-training) is how a model gets made; inference is what you pay for every time you _use_ it. I don't build serving stacks — I pick a model, pick a provider, and pay per token — but it helps to carry a rough map of where that price comes from. The whole game is one question: **how do I serve tokens as cheaply as possible at a given level of intelligence?** You can always spend more compute and memory to go faster — the price just rises with it.

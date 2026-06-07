@@ -8,7 +8,7 @@ tags:
 redirect_from:
   - /ai-vocab
   - /ai-native-words
-imagefeature: /images/raccoon-nerd.webp
+ai_default_image: true
 ---
 
 AI is spawning a whole new vocabulary — some of it genuinely useful, some of it pure hype. This is my running glossary of the terms worth knowing, with my take on what each one actually means and why it matters. It's the companion glossary to [The AI Native Engineering Manager](/ai-native-manager).

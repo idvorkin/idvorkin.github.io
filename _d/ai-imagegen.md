@@ -4,6 +4,7 @@ title: AI Image Generation
 permalink: /ai-image
 redirect-from:
   - /ai-imagegen
+ai_default_image: true
 ---
 
 Everyone talks about GPT, but you can also generate images. Lately, I've been playing with Flux, which is an image generator. You can generate images of me using the idvorkin with this lora on replicate.

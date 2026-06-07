@@ -2,6 +2,7 @@
 layout: post
 title: All posts on AI
 permalink: /ai
+ai_default_image: true
 ---
 
 AI becomes the
