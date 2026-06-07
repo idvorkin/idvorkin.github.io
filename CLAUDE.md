@@ -51,17 +51,7 @@ Why it matters: the inbound "Mentioned in:" section on every linked post reads f
 
 `build_back_links.py build` reads from `_site/` (built HTML), so a fresh Jekyll build must succeed first. **The local build works on Ruby 4.x** (verified 2026-06): liquid-4.0.3 guards its only `tainted?` call — `obj.respond_to?(:tainted?) && obj.tainted?` (`variable.rb:124`) — so on Ruby 3.2+/4.x the removed method short-circuits, no crash. Just run `bundle exec jekyll build`. A **stale or missing `_site/`** is what makes the backlinks rebuild error out or emit stale entries — not the Ruby version.
 
-**Fallback** (only if a future liquid drops that `respond_to?` guard and the build actually fails on Ruby 4.x):
-
-```bash
-brew install ruby@3.1
-export PATH=/home/linuxbrew/.linuxbrew/opt/ruby@3.1/bin:$PATH
-bundle install   # populates ~/.bundle-larry-blog or similar
-bundle exec jekyll build
-just update-backlinks
-```
-
-CI uses Ruby 3.1 and is unaffected. This rule lives here so future agents on Ruby 4.x dev VMs don't waste time chasing the wrong root cause.
+CI builds on Ruby 3.2 (matching `.ruby-version` = 3.2.8). As of 2026-06 no Ruby workaround is needed locally — `bundle exec jekyll build` works on 4.x. Only if a future liquid drops that `respond_to?` guard would you pin an older Ruby (`brew install ruby@3.2`).
 
 When superseding a PR you opened on `idvorkin/*`, **close it yourself** — `gh pr close <N> --repo idvorkin/<repo> --comment "Superseded by #M — …"` works for the `idvorkin-ai-tools` actor on PRs it authored. Don't leave orphan PRs for Igor to clean up.
 
