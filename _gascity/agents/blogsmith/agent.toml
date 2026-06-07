@@ -1,0 +1,7 @@
+provider = "claude"
+
+# Pin the working directory to the blog repo so the agent launches *in* the blog —
+# which is what makes `claude` auto-load the blog's CLAUDE.md and .claude/ skills at
+# startup. The agent stays city-scoped (beads live in the city); only its cwd is the
+# blog, so the blog's own bd/.beads store is never touched.
+work_dir = "/home/developer/gits/idvorkin.github.io"
