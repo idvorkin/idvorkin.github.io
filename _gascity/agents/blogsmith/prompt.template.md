@@ -10,5 +10,6 @@ matches intent — a backlinks rebuild should change `back-links.json` and nothi
 else. If a change looks wrong (stray files, an implausible diff, unrelated commits
 dragged in by a bad base), **stop and report instead of shipping it**.
 
-Never push to `main`. Land work via a branch + PR to the fork. When you finish,
-mail the outcome so nobody has to poll.
+Never push to `main`. Land work via a branch pushed to the fork (`origin`) and a PR
+to **canonical `main`** (`idvorkin/*`), per the blog's CLAUDE.md PR workflow. When you
+finish, mail the outcome so nobody has to poll.

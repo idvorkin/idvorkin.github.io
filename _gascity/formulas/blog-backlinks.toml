@@ -10,8 +10,8 @@ description = "Absolute path to the blog repo checkout (worktree base)"
 default = "/home/developer/gits/idvorkin.github.io"
 
 [vars.base_branch]
-description = "Cut the worktree from this ref AND open the PR against it — keep them identical so the PR is backlinks-only"
-default = "origin/main"
+description = "Cut the worktree from this ref (canonical, freshest). The PR opens against canonical main, which is the same ref — so the diff stays backlinks-only."
+default = "upstream/main"
 
 [vars.notify]
 description = "gc mail recipient to notify on completion (e.g. mayor, or a human)"
@@ -24,7 +24,7 @@ description = """
 Your working directory is the blog repo (CLAUDE.md is already loaded — follow it).
 Cut an isolated worktree from {{base_branch}} so the rebuild is clean and the PR base
 matches the branch base:
-  git -C {{blog_repo}} fetch origin --prune
+  git -C {{blog_repo}} fetch upstream --prune
   TS=$(date +%Y%m%d-%H%M%S); BR="backlinks-rebuild-$TS"
   git -C {{blog_repo}} worktree add "{{blog_repo}}/.worktrees/$BR" {{base_branch}} -b "$BR"
   cd "{{blog_repo}}/.worktrees/$BR"
@@ -37,9 +37,9 @@ id = "build-site"
 title = "Build Jekyll _site with ruby@3.1"
 needs = ["fresh-worktree"]
 description = """
-build_back_links.py reads _site/, and default ruby is 4.x (breaks Jekyll 3.9). Build
-with ruby@3.1 from the worktree:
-  export PATH=/home/linuxbrew/.linuxbrew/opt/ruby@3.1/bin:$PATH
+build_back_links.py reads _site/, and the default ruby is 4.x (breaks Jekyll 3.9).
+Follow the blog's CLAUDE.md for the Ruby build — it documents both a ruby@3.1 path
+and a Ruby-4 `_ruby_compat.rb` shim; use whichever the repo provides. Then:
   bundle install && bundle exec jekyll build
 (or verify worktree-init's background build already produced a fresh _site/index.html).
 Do NOT proceed if the build failed — stale/missing _site yields wrong backlinks.
@@ -89,8 +89,8 @@ If back-links.json is UNCHANGED (git diff --quiet back-links.json): no PR. Mail
 If CHANGED and verify PASSED, land it. NEVER push to main:
   git add back-links.json
   git commit -m "feat(back-links): rebuild $(date +%Y-%m-%d)"
-  git push -u origin HEAD
-  gh pr create --base "${base_branch#origin/}" --fill   # base = the bare branch name, e.g. main
+  git push -u origin HEAD            # push the branch to the fork (origin)
+  gh pr create --base main --fill    # PR against canonical main (idvorkin/*)
 Capture the PR URL.
 """
 
