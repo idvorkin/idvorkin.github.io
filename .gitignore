@@ -6,7 +6,6 @@
 repo_tmp/
 
 # Beads issue tracking (uses separate beads-metadata branch)
-.beads/
 
 # Serena MCP server configuration
 .serena/
@@ -401,3 +400,9 @@ docs/superpowers/specs/private/
 
 # Local git worktrees
 .worktrees/
+
+# Gas City
+.beads/*
+!.beads/identity.toml
+.gc/
+.runtime/

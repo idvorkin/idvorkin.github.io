@@ -1,0 +1,106 @@
+formula = "blog-backlinks"
+description = "Rebuild the blog's back-links.json in an isolated worktree, verify the diff is backlinks-only, open a clean PR, and mail the outcome. Never pushes to main."
+
+# vapor = root-only wisp so a scale-from-zero pool wakes; one agent runs the
+# steps in sequence.
+phase = "vapor"
+
+[vars.blog_repo]
+description = "Absolute path to the blog repo checkout (worktree base)"
+default = "/home/developer/gits/idvorkin.github.io"
+
+[vars.base_branch]
+description = "Cut the worktree from this ref AND open the PR against it — keep them identical so the PR is backlinks-only"
+default = "origin/main"
+
+[vars.notify]
+description = "gc mail recipient to notify on completion (e.g. mayor, or a human)"
+default = "mayor"
+
+[[steps]]
+id = "fresh-worktree"
+title = "Cut a fresh worktree off {{base_branch}}"
+description = """
+Your working directory is the blog repo (CLAUDE.md is already loaded — follow it).
+Cut an isolated worktree from {{base_branch}} so the rebuild is clean and the PR base
+matches the branch base:
+  git -C {{blog_repo}} fetch origin --prune
+  TS=$(date +%Y%m%d-%H%M%S); BR="backlinks-rebuild-$TS"
+  git -C {{blog_repo}} worktree add "{{blog_repo}}/.worktrees/$BR" {{base_branch}} -b "$BR"
+  cd "{{blog_repo}}/.worktrees/$BR"
+  just worktree-init   # background `jekyll build`
+Report the worktree path + branch. Do ALL remaining steps inside this worktree.
+"""
+
+[[steps]]
+id = "build-site"
+title = "Build Jekyll _site with ruby@3.1"
+needs = ["fresh-worktree"]
+description = """
+build_back_links.py reads _site/, and default ruby is 4.x (breaks Jekyll 3.9). Build
+with ruby@3.1 from the worktree:
+  export PATH=/home/linuxbrew/.linuxbrew/opt/ruby@3.1/bin:$PATH
+  bundle install && bundle exec jekyll build
+(or verify worktree-init's background build already produced a fresh _site/index.html).
+Do NOT proceed if the build failed — stale/missing _site yields wrong backlinks.
+"""
+
+[[steps]]
+id = "rebuild-backlinks"
+title = "Rebuild back-links.json"
+needs = ["build-site"]
+description = """
+From the worktree root: just update-backlinks  (= uv run ./build_back_links.py build).
+Do NOT use `just push-backlinks` — it has an interactive prompt an agent can't answer.
+"""
+
+[[steps]]
+id = "verify"
+title = "Verify the change is backlinks-only and sane (USE JUDGMENT)"
+needs = ["rebuild-backlinks"]
+description = """
+This is the judgment gate — do not skip it. The intent is a single-file,
+backlinks-only change against {{base_branch}}. Check reality matches intent:
+
+  git status --porcelain          # which files changed?
+  git diff --stat back-links.json # scale of the backlinks change
+
+PASS only if ALL hold:
+  - the ONLY modified path is back-links.json (no stray files),
+  - the diff is plausible (not 0 lines when you expected changes; not the entire
+    file rewritten unless that's clearly legitimate),
+  - the branch is exactly {{base_branch}} + your work (it will be, since you cut
+    from {{base_branch}} — but confirm `git log --oneline {{base_branch}}..HEAD`
+    is empty BEFORE you commit; anything there means the base is wrong).
+
+If ANY check fails, ABORT: do not commit, do not open a PR. Mail {{notify}} with
+subject "blog-backlinks: ABORTED" and a 1-2 line explanation of what looked wrong,
+then stop. (A messy multi-file PR is exactly the failure this step exists to catch.)
+"""
+
+[[steps]]
+id = "land"
+title = "Commit + open a clean PR (or report no-op)"
+needs = ["verify"]
+description = """
+If back-links.json is UNCHANGED (git diff --quiet back-links.json): no PR. Mail
+{{notify}} subject "blog-backlinks: no-op" body "no backlink changes" and stop.
+
+If CHANGED and verify PASSED, land it. NEVER push to main:
+  git add back-links.json
+  git commit -m "feat(back-links): rebuild $(date +%Y-%m-%d)"
+  git push -u origin HEAD
+  gh pr create --base "${base_branch#origin/}" --fill   # base = the bare branch name, e.g. main
+Capture the PR URL.
+"""
+
+[[steps]]
+id = "notify"
+title = "Mail the outcome"
+needs = ["land"]
+description = """
+Notify {{notify}} of the result so nobody has to poll:
+  gc mail send {{notify}} -s "blog-backlinks: PR opened" -m "<PR-URL>/files
+  <one-line diffstat: N insertions/deletions in back-links.json>"
+(If you already mailed a no-op or abort in an earlier step, skip this.)
+"""
