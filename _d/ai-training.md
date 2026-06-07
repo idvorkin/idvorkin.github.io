@@ -74,9 +74,16 @@ These methods form a lineage, not a flat menu — SFT shifts behavior first, pre
 
 ### Datasets
 
-The data the model learns behavior from — this is where I'll collect the training datasets worth knowing.
+The data the model learns from — split into what you _train_ on and what you _grade_ on.
+
+**Training data** — the (prompt → good answer) sets behavior gets shaped on:
 
 - **[Alpaca](https://huggingface.co/datasets/yahma/alpaca-cleaned)** — an early instruction dataset. The clever bit was using GPT-4 to generate the training data cheaply. That "use a strong model to make data for a weaker one" trick is everywhere now.
+
+**Evals / benchmarks** — held-out tasks you score against, not train on. For coding agents these are also the RLVR reward target (see [Post-training for coding competence](#post-training-for-coding-competence)):
+
+- **[SWE-bench](https://www.swebench.com/)** — real GitHub issues paired with the repo they came from; the model must produce a patch that makes the repo's _hidden_ tests pass. Binary grade, no LLM-judging style. The [paper](https://arxiv.org/abs/2310.06770) drew from popular Python repos; the subset everyone reports is [**SWE-bench Verified**](https://www.swebench.com/verified.html), 500 tasks each hand-checked by human developers so a correct patch can't fail on a broken test or ambiguous issue.
+- **[Terminal-bench](https://www.tbench.ai/)** — agentic, end-to-end command-line tasks in a real sandbox (build a kernel, stand up a git server, debug a broken system), scored purely by whether the task got done. Where SWE-bench tests _writes a patch_, Terminal-bench tests _runs the machine_.
 
 ### Fine-tuning methods
 
@@ -115,10 +122,10 @@ The post-training story above is abstract until you watch it chase a target. Cod
 
 ### You get what you measure
 
-So first, define the target by the eval. "Coding competence" for an agent isn't a vibe; it's two questions a benchmark can answer:
+So first, define the target by the eval. "Coding competence" for an agent isn't a vibe; it's two questions a benchmark can answer (both [datasets](#datasets) are described above):
 
-- **[SWE-bench](https://www.swebench.com/)** — can it fix real software? You hand the model a real GitHub issue plus the repo it came from, it edits the codebase to produce a patch, and the grade is binary: do the repo's hidden tests pass? No partial credit, no LLM judging style — the tests decide. The [paper](https://arxiv.org/abs/2310.06770) drew from real issues across popular Python repos; the subset everyone reports is [**SWE-bench Verified**](https://www.swebench.com/verified.html), 500 tasks each hand-checked by human developers so a correct patch can't fail on a broken test or an ambiguous issue. This is the de-facto "can it fix real software" eval.
-- **[Terminal-bench](https://www.tbench.ai/)** — can it actually operate a computer? Drop the agent in a real terminal sandbox and give it an end-to-end job: build a Linux kernel from source, stand up a git server, debug a broken system, train a small model. Scored by whether the task is actually done. Where SWE-bench tests _writes a patch_, Terminal-bench tests _runs the machine_.
+- **[SWE-bench](#datasets)** — can it fix real software? Hand the model a real GitHub issue and its repo; the grade is binary: do the hidden tests pass? The tests decide, not a style judge.
+- **[Terminal-bench](#datasets)** — can it actually operate a computer? Drop the agent in a real terminal sandbox with an end-to-end job, scored by whether it's done. SWE-bench tests _writes a patch_, Terminal-bench tests _runs the machine_.
 
 Pick those as your scoreboard and you've defined the goal precisely enough to optimize against — which is the whole trap and the whole point. You get what you measure, so measure the thing you actually want.
 
