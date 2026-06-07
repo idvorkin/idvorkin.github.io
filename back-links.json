@@ -405,7 +405,7 @@
         },
         "/42": {
             "description": "You survived young kids, marriage, house, some easy crises, and now it’s time for remember, a healthy woman has a thousand wishes, a sick woman - just one: Things I wish I knew at 42\n\n",
-            "doc_size": 27000,
+            "doc_size": 28000,
             "file_path": "_site/42.html",
             "incoming_links": [
                 "/chapters",
@@ -812,7 +812,7 @@
             "url": "/agency"
         },
         "/ai": {
-            "description": "AI becomes the\nThe transition from A landing page for all my ai pages - a nice jumping off point (especially from the graph).\n\n",
+            "description": "A landing page for all my AI posts — a jumping-off point into everything I’ve written about AI, handy especially when you arrive here from the graph.\n\n",
             "doc_size": 27000,
             "file_path": "_site/ai.html",
             "incoming_links": [
@@ -1350,12 +1350,12 @@
         },
         "/ai-training": {
             "description": "I don’t train models for a living — I build on top of them. But to use LLMs well, it helps to carry a rough map of how one gets made: what pre-training buys you, what post-training changes, and where fine-tuning, RAG, and quantization actually fit. These are my working notes on that map, kept deliberately shallow — enough to make good decisions as a consumer of models, not to go train one.\n\n",
-            "doc_size": 31000,
+            "doc_size": 34000,
             "file_path": "_site/ai-training.html",
             "incoming_links": [
                 "/ai-inference"
             ],
-            "last_modified": "2026-06-07T16:47:13.292738+00:00",
+            "last_modified": "2026-06-07T18:30:20.669501+00:00",
             "markdown_path": "_d/ai-training.md",
             "outgoing_links": [
                 "/ai-art",
@@ -1637,7 +1637,7 @@
         },
         "/bc": {
             "description": "A guide to my favorite spots in British Columbia, focusing on Vancouver and Chilliwack. Whether you’re planning a quick weekend getaway or a longer adventure, here’s what you need to know. These recommendations come from my personal experiences over multiple trips - you can read about some of them in my summer 2024 adventures, Yellow Deli expedition, and various time off adventures:\n\n",
-            "doc_size": 23000,
+            "doc_size": 22000,
             "file_path": "_site/bc.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T03:02:44+00:00",
@@ -2366,6 +2366,7 @@
                 "/manager-book",
                 "/negotiate",
                 "/operating-manual",
+                "/psychic-weight",
                 "/regrets",
                 "/shame",
                 "/voices",
@@ -2556,6 +2557,7 @@
                 "/operating-manual",
                 "/physical-health",
                 "/productive",
+                "/psychic-weight",
                 "/sharpen-the-saw",
                 "/slow",
                 "/switch",
@@ -2600,6 +2602,7 @@
                 "/parkinson",
                 "/productive",
                 "/psychic-shadows",
+                "/psychic-weight",
                 "/slow",
                 "/timeoff"
             ],
@@ -3926,7 +3929,8 @@
                 "/awareness",
                 "/depression",
                 "/gtd",
-                "/happy"
+                "/happy",
+                "/psychic-weight"
             ],
             "last_modified": "2025-12-06T18:03:28-08:00",
             "markdown_path": "_d/idle-loop.md",
@@ -4564,7 +4568,7 @@
         },
         "/mermaid": {
             "description": "Lets try d2\n\n",
-            "doc_size": 15000,
+            "doc_size": 14000,
             "file_path": "_site/mermaid.html",
             "incoming_links": [],
             "last_modified": "2023-12-17T18:49:14+00:00",
@@ -5471,17 +5475,17 @@
             "outgoing_links": [
                 "/7-habits",
                 "/addiction",
+                "/curious",
+                "/d/habits",
+                "/d/resistance",
                 "/death",
                 "/frog",
-                "/grandmother",
                 "/gtd",
-                "/habits",
-                "/idle-loop",
+                "/idle",
                 "/mental-pain",
                 "/mind-monsters",
                 "/pride",
                 "/psychic-shadows",
-                "/resistance",
                 "/shame",
                 "/siy"
             ],
