@@ -96,12 +96,21 @@ All 4 Dvorkins (Igor, Tori, Zach, Amelia). Iceland and Copenhagen legs are just 
 - **A'DAM Lookout** rooftop swing
 - NDSM Wharf or Zaanse Schans windmills before flying home
 
+## How I'm doing this trip
+
+One rule underneath all of it: be where my feet are. Three tests keep me honest —
+
+1. **Whose role does it grow?** Drift on a trip flows toward what you're already good at — work, optimizing, the phone. Spend the days on the open rooms: the kids, wonder, Tori. Not the finished ones.
+2. **Build vs. use?** Researching the perfect restaurant isn't eating the meal. Optimizing the trip isn't living it.
+3. **When?** Anything that pulls me out of the moment — phone, work email, even shooting everything through a camera — lives in the margins. The awake hours belong to the people I'm with.
+
+The sharpest test of all this is how I use AI on the road. I wrote that one up on its own: [my AI policy](/ai-policy).
+
 ## Goals for the trip
 
 - **Live the Father role from the eulogy**: quality time over mere presence. Both kids are home together; the window narrows.
 - **Balloon while traveling** — long-standing eulogy goal ("ballooning while traveling"). Bring the kit; deploy in parks and airports.
-- **Disconnect from work** — Good news: no calibrations to sweat this time. I just moved to an IC role at [Meta's AI Lab](/meta#moving-to-metas-ai-lab-2026), so the old [Calibration Collapse](/y26) trap doesn't fire. Keep work boxed anyway — ramp time is on Meta's clock, not the trip's. (My [AI policy](/ai-policy) for the trip: AI in the margins, off when we're together.)
-- **No death-march optimizing** — the goal isn't to maximize sights per day; it's to enjoy this with the people we're with.
+- **Keep work boxed** — and this time it's easy: no calibrations to sweat. I just moved to an IC role at [Meta's AI Lab](/meta#moving-to-metas-ai-lab-2026), so the old [Calibration Collapse](/y26) trap doesn't fire. Ramp time is on Meta's clock, not the trip's.
 
 ## Related
 

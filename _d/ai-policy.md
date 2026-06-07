@@ -11,6 +11,8 @@ I build AI for a living, and I have an AI life coach named Larry — so "use les
 
 {% include ai-slop.html percent="50" %}
 
+This is one instance of a bigger rule — how I do [time off](/timeoff-2026-07): be where my feet are.
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
