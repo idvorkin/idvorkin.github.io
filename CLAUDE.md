@@ -31,9 +31,13 @@ bundle exec jekyll build --incremental
 
 Same fix applies if you edit a heading mid-session and the live `jekyll serve` hasn't written it to disk yet — see the screenshot section below.
 
+- **Committing `_d/*.md` mid-session:** rebuild `_site` first (`bundle exec jekyll build`) so `anchor-checker` doesn't false-fail on posts merged to `upstream/main` since your last build, then commit with `SKIP=update-backlinks-last-modified,prettier` — the last-modified hook rewrites `back-links.json` (notably on date rollover) and the commit-time prettier hook trips a stash-rollback even on clean files, both silently aborting the commit.
+
 ## PR Workflow
 
 Repo-mode distinctions (AI-Tools vs Human-Supervised) and the fork-push workflow live in `~/gits/chop-conventions/dev-inner-loop/repo-modes.md`.
+
+- **Branch off `upstream/main`, not `origin/main`.** The fork (`origin`) lags — PRs merge to `upstream`, and `origin/main` only catches up on the `/up-to-date` fork-sync. Off a stale `origin/main` the PR errors "No commits between". Use `git fetch upstream && git checkout -b <branch> upstream/main`.
 
 ### Rebuild backlinks before opening a new-post PR
 
@@ -45,9 +49,9 @@ Why it matters: the inbound "Mentioned in:" section on every linked post reads f
 
 #### Ruby version requirement (local backlinks rebuild)
 
-`build_back_links.py build` reads from `_site/` (built HTML), so a fresh Jekyll build must succeed first. Jekyll 3.9 + liquid-4.0.3 use the deprecated `String#tainted?` method removed in Ruby 3.2+. **On Ruby 4.x the local build will fail before producing `_site/`** and the backlinks rebuild will then either error out (if `_site/` is missing) or silently produce stale entries (if `_site/` is from before the new posts existed).
+`build_back_links.py build` reads from `_site/` (built HTML), so a fresh Jekyll build must succeed first. **The local build works on Ruby 4.x** (verified 2026-06): liquid-4.0.3 guards its only `tainted?` call — `obj.respond_to?(:tainted?) && obj.tainted?` (`variable.rb:124`) — so on Ruby 3.2+/4.x the removed method short-circuits, no crash. Just run `bundle exec jekyll build`. A **stale or missing `_site/`** is what makes the backlinks rebuild error out or emit stale entries — not the Ruby version.
 
-**Local fix:**
+**Fallback** (only if a future liquid drops that `respond_to?` guard and the build actually fails on Ruby 4.x):
 
 ```bash
 brew install ruby@3.1
