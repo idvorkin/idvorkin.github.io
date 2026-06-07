@@ -8,6 +8,7 @@ redirect_from:
   - /ai-questions
 tags:
   - ai
+ai_default_image: true
 ---
 
 Questions I keep getting asked about AI, and my current (probably wrong) answers. The ones that don't resolve cleanly.

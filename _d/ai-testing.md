@@ -2,6 +2,7 @@
 layout: post
 title: Testing AI
 permalink: /ai-testing
+ai_default_image: true
 ---
 
 Testing math is easy, it's right or wrong. Testing spelling is easy too, but testing if a joke is funny - now that's tough. Let's talk about how to test AI.

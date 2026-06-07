@@ -5,6 +5,7 @@ permalink: /ai-bm
 redirect_from:
 tags:
   - ai
+ai_default_image: true
 ---
 
 Business Models drive the world, and they'll drive the world of AI too.

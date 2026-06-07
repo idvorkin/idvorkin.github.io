@@ -2,6 +2,7 @@
 layout: post
 title: "AI and art"
 permalink: /ai-art
+ai_default_image: true
 ---
 
 Creativity is a critical aspect of art, and that's something which I think AI can be really good at. Some very random ideas

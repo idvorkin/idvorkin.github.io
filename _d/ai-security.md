@@ -7,6 +7,7 @@ redirect_from:
 tags:
   - ai
   - llm
+ai_default_image: true
 ---
 
 Security is super interesting, AI is super interesting, the combination, is super-duper interesting!
