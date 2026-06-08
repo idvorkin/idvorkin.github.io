@@ -72,13 +72,17 @@ The principle is load-bearing for the **[polecat](https://docs.gastownhall.ai/co
 
 I learned this concretely [the morning I stood up `igor-city`](/gas-city-home). First-time polecats sat idle on wake — supervisor up, beads routed, polecats spawned, nothing happening. I had to manually `gc session nudge <id> "pick up your bead"` for each one. That's a propulsion-principle violation. Polecats existing in a state the design says cannot exist. The fix — a `polecat-step-0-self-claim` step in the agent prompt that runs `bd ready --json | jq …` immediately on wake — wasn't a feature; it was GUPP re-asserted. The bug was a class of state the system isn't supposed to have. Once you internalize the principle, the fix writes itself.
 
+GUPP is the rule each agent obeys. But something has to keep the agents themselves running — start the ones that should be up, restart the ones that died, notice when reality has drifted from the plan. That's a **controller**: a loop holding two pictures of the city side by side. The _desired_ state is computed from your config and your open beads — what _should_ be running. The _actual_ state is whatever the runtime is really doing. The controller's whole job is to keep comparing them and close the gap — spawn what's missing, reap what's orphaned. The docs call this **convergence**, the same idea Kubernetes built its reputation on: declare the end state, and a loop drives toward it in bounded steps instead of one fragile big-bang deploy. (A machine-wide **supervisor** sits above the controllers, tracking every city you run; each controller worries about exactly one.)
+
+That reframe is what finally made propulsion click for me. GUPP keeps each piston firing; the reconcile loop is the governor that keeps the _engine_ from stalling — and the two failure modes are different. My idle-polecat bug was a convergence gap as much as a GUPP one: the controller believed it had hit the desired state, but the actual state held a stalled worker the loop couldn't see. Propulsion isn't one mechanism. It's an agent-side rule and a system-side loop, and the city only moves when both are honest about what's running.
+
 ## Getting started — the mechanics in practice
 
 The three concepts above are the theory. Here's what they look like when you actually drive the thing. Three pieces: the city you stand up, the agents you configure, and the slinging that puts them to work.
 
 ### The city is just a directory
 
-`gc init` scaffolds one. The wizard asks for a provider and a template; the non-interactive form is `gc init --template minimal --default-provider claude ~/my-city`. What comes out is a plain directory — that's the whole model, a city is a directory on disk. You get a `city.toml` (deployment config), a `pack.toml` (the agent definitions), a `.gc/` runtime dir, and top-level folders for `agents/`, `formulas/`, and `orders/`.
+`gc init` scaffolds one. The wizard asks for a provider and a template; the non-interactive form is `gc init --template minimal --default-provider claude ~/my-city`. What comes out is a plain directory — that's the whole model, a city is a directory on disk. You get a `city.toml` (the declarative city — the desired state the controller reconciles toward), a `pack.toml` (the agent definitions), a `.gc/` runtime dir, and top-level folders for `agents/`, `formulas/`, and `orders/`.
 
 The `city.toml` is short. Mine, trimmed:
 
@@ -99,6 +103,8 @@ source = "/home/developer/gits/idvorkin.github.io/_gascity"
 ```
 
 A **rig** points the city at a repo. The blog rig imports a pack of agents and formulas (`_gascity/`) that lives _in the blog repo_, so the workflow definitions version alongside the content they operate on. The rig inherits the city's bead store, so the blog's own `.beads` is never touched — beads live in the city, the pack lives in the rig.
+
+That `provider` line is doing more than it looks. It names a **runtime provider** — the substrate the agents actually run on. Mine spawns local subprocesses; the same `city.toml` could target tmux sessions, or Kubernetes pods on a cluster, by changing that one block. The city definition — agents, rigs, formulas, the work itself — doesn't know or care where it runs. Provider is a swappable backend, not a rewrite. The work shape is portable; the substrate is a deployment detail.
 
 ### Agents: crew vs. pool
 
