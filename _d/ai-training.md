@@ -94,7 +94,7 @@ How you actually do the fine-tuning above without retraining the whole model:
 
 ### Deployment: quantization and serving
 
-Not training, but it's where the model you actually run comes from, so it lands here.
+Not training, but it's where the model you actually run comes from, so it lands here. Serving _is_ inference, and the full serving/inference story is its own post: [/ai-inference](/ai-inference).
 
 - **Quantization** — compress the weights from 16 bits per parameter down to ~4 bits or less (`Q4_0`, `IQ2_XXS`, and friends). [How the methods work](https://www.reddit.com/r/LocalLLaMA/comments/1ba55rj/overview_of_gguf_quantization_methods/), and a [scorecard comparing them](https://huggingface.co/datasets/christopherthompson81/quant_exploration). It's _lossy_ compression, so you have to eval the damage — a common check is comparing the difference in answers via embeddings.
 - **GGUF (GPT-Generated Unified Format)** — the file format these models are stored in (GGUF is GGML's successor). It's what you download when you grab a quantized model to run locally.
