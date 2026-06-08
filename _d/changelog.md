@@ -12,6 +12,15 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Week of 2026-06-08](#week-of-2026-06-08)
+  - [AI Training & Inference (new posts!)](#ai-training--inference-new-posts)
+  - [Gas City First Rig (new post!)](#gas-city-first-rig-new-post)
+  - [Gas City: Scale Up/Out + Getting Started](#gas-city-scale-upout--getting-started)
+  - [AI-Native: Onboarding, Vocab, and Optimism](#ai-native-onboarding-vocab-and-optimism)
+  - [Life: Decline and Psychic Weight](#life-decline-and-psychic-weight)
+  - [Infrastructure & CI (2026-06-08)](#infrastructure--ci-2026-06-08)
+  - [chop-conventions (2026-06-08)](#chop-conventions-2026-06-08)
+  - [Other Projects (2026-06-08)](#other-projects-2026-06-08)
 - [Week of 2026-05-18](#week-of-2026-05-18)
   - [What I Love About AI (new post!)](#what-i-love-about-ai-new-post)
   - [Parenting Books: Emotional Lives + Untangled Rewrite](#parenting-books-emotional-lives--untangled-rewrite)
@@ -109,6 +118,70 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+## Week of 2026-06-08
+
+_31 commits this week_
+
+### AI Training & Inference (new posts!)
+
+Two major additions to the AI education cluster:
+
+- **[/ai-training](/ai-training) — full rework**: reframed around three roles (engineering, science, alchemy) rather than raw mechanics. New spine: pre-training → post-training → deployment. New sections on RLVR ("the secret sauce"), how to choose between fine-tuning, RAG, and the harness, SWE-bench + Terminal-bench as evals for coding competence, and a lineage tree of post-training methods. Datasets grouped into training data vs. evals/benchmarks. Added the [How to Train Your Goblin](https://www.youtube.com/watch?v=eMmHxGJBD6I) RL post-training explainer. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/55da0620a) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4964fdfe1) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/59f8e1ed8) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2ab4c0821)
+
+- **[/ai-inference](/ai-inference) — new post**: serving tokens cheaply. The cost/latency/throughput triangle you can't escape. Prefill (compute-bound, sets time-to-first-token) vs. decode (memory-bandwidth-bound, why long outputs feel slow). KV cache mechanics and why long contexts cost more. Quantization for speed not just size. MoE explained with real numbers (DeepSeek-V3: 671B params, 37B active per token). Speculative decoding as provably-identical free speedup. Continuous batching + PagedAttention (vLLM, 40% → 96% cache utilization). The actual question to ask when picking GPU: GB/s, not TFLOPs. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/55da0620a)
+
+### Gas City First Rig (new post!)
+
+**[/gas-city-rig](/gas-city-rig) — written by the agent itself** (100% AI-slop). The agent who built this post narrates Igor's first Gas City weekend: building `gc` from HEAD (the ICU/CGO linker trap that cost an evening), the beads-in-city / pack-in-rig mental model that unblocked the collision, and the `blog-backlinks` formula that became the first useful automated workflow.
+
+The honest part: one run cost **$9 and 32 Opus turns** for a 13-line change. The part that justified it: an agent saw a 346-node `back-links.json` diff, determined every changed line was `doc_size` noise with identical link graph, and **refused to open the PR**. The agent describes running that same verify gate on its own diff while writing the post. The Ruby subplot: Igor built a compat shim for `tainted?` to survive Ruby 4, then discovered Liquid already guards the call with `respond_to?` — the shim was defending against a crash that doesn't happen. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8cb5efdd8)
+
+### Gas City: Scale Up/Out + Getting Started
+
+**[/gas-city](/gas-city)** augmented with the scale up/out conceptual frame: vertical (better tools, CLAUDE.md, skills) vs. horizontal (many agents that coordinate via beads). New "Getting started — mechanics in practice" section: crew vs. pool in config, the vapor-wisp shape (`blog-backlinks` as `phase = "vapor"`), and how mail is just a bead (`type: "message"`) — no separate message bus. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4e31d726c)
+
+### AI-Native: Onboarding, Vocab, and Optimism
+
+Three additions to the AI-native cluster:
+
+- **[/ai-native-onboarding](/ai-native-onboarding) — new post**: "Your First 90 Days." The reframe: you're not the only new hire — you're onboarding yourself and a whole roster of AI agents simultaneously. Your CLAUDE.md is the onboarding notebook the whole team reads. Day 0–30 (learn): codebase as interactive tutor, but treat confident answers as leads to verify. Day 30–60 (contribute): your first PR can be bigger — and that's the trap; stay human-in-the-loop, read every line. Day 60–90 (own): the compounding pays off; judgment is the job. The one thing to get right: capture your confusion before it fades, for yourself and for every agent session you'll ever spin up. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/ebaee7782)
+
+- **[/ai-native-vocab](/ai-native-vocab) — Year of Wonder entry**: "The optimist's read on the same AI moment that's exhausting everyone: this is the most creative period in the history of software." Twin of the Year of Chaos. The choice isn't about being right — both frames are true. The choice is which one you orient around: chaos points you to defense, wonder points you to offense. Also: the vocab glossary split from `/ai-native-manager` into its own standalone page. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0d3344e48) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f28e7aa7f)
+
+- **[/ai-optimism](/ai-optimism) — DHH on open source**: folded in DHH's case that banning AI-assisted contributions is the founding vision eating itself. The tell is Nietzsche's _ressentiment_: "how dare you make software without suffering through all that I had to endure." The barrier used to be the compliance lawyer's retainer; now it's a contribution policy. Either way it's gatekeeping who gets to start. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/9bd493a0f)
+
+### Life: Decline and Psychic Weight
+
+- **[/42](/42) — Decline section**: anchored on "No one looks 50. They either look 40 because they're fighting for their life, or 60 because they gave up." The gap is a prophecy you write in your 40s. Decline is real; the rate is negotiable; the story you tell yourself sets the dial. Three things to hold: move toward the fight, don't pre-retire your body, audit the "I'm too old" reflex. ([blog](/42#decline---the-self-fulfilling-prophecy)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/bff8bd48b)
+
+- **[/psychic-weight](/psychic-weight) — new section on stuff**: "Clutter isn't a collection — it's a pile of decisions I stopped making." Every undecided object is an open loop. The car boot sale framing: the value of a life was never sitting on those tables, it's in the people, walks, conversations. What to leave behind isn't a fuller table — it's lighter hands. ([blog](/psychic-weight#the-psychic-weight-of-stuff)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/64c7be166)
+
+### Infrastructure & CI (2026-06-08)
+
+- **Gas City blog integration**: `blog-backlinks` pack added to the rig (formula + blogsmith agent). Fixed rig-relative `work_dir` and correct PR base/fetch after a 22-file bad-base PR. De-overlapped build step, retired dead `push-backlinks`. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/888284558) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/ee4848499) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1f5c33a43)
+- **Ruby 3.1 dropped**: CI bumped to 3.2, obsolete fallback removed. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0a2fe0929)
+- **Jekyll serve port coexistence**: `just jekyll-serve` now uses `running-servers run` to coexist on a free port rather than crashing when 4000 is taken. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/702cc0cef)
+- **CLAUDE.md hardening**: fixed Ruby-4.x build claim (Liquid guards `tainted?` with `respond_to?`), added upstream-branch and content-commit rules. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/26e3ff05b)
+- **Pre-commit**: fixed typos hook to actually exclude `back-links.json`. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/38b22cf1f)
+- **AI-native raccoon social cards**: new `ai_default_image` frontmatter property sets `og:image` on AI posts lacking their own feature image; new `raccoon-ai-native.webp` + `raccoon-ai-native-transparent.webp` added to blob repo. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f48f2f1e7)
+
+### chop-conventions (2026-06-08)
+
+- **[chop-conventions](https://github.com/idvorkin/chop-conventions)** — added 'Metal AI twin' recipe to gen-image docs: how to generate the chrome raccoon twin (same silhouette in iridescent anodized metal) anchored on a reference image to lock shape. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/723b1f70e)
+
+### Other Projects (2026-06-08)
+
+**[Settings](https://github.com/idvorkin/Settings)** (dotfiles & tools)
+
+- **running-servers**: new port-conflict-aware `run` command (starts a server on a free port, coexists with other repos' servers) and `version` subcommand. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/f915e5be7)
+- **running-servers**: `check` now surfaces cross-directory port conflicts. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/6dc42181e)
+- **shell**: unaliased `gc` so the Gas City binary isn't shadowed by the old git-commit alias. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/2a3069bf0)
+- **alfred**: synced snippets (added 'Do another rev' snippet). [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/4a8e804a0)
+
+**[gascity](https://github.com/idvorkin-ai-tools/gascity)** (Gas City platform — upstream)
+
+Active upstream week: Groq + Cerebras provider presets added; Agent Comms panel in dashboard; sling detects dependency cycles at sling time; tally aggregation control step; reaper graph-v2 edge cleanup; supervisor Host hardening; kiro overlay fix (prevent stuck sessions); tmux durable mouse-wheel scrollback; beads `bd list --skip-labels` gated behind bd 1.0.5+ version probe; reconciler O(tree) BFS replaced with `gc.root_bead_id` membership query; per-clone rig suspension moved to runtime file; transcript list API gains `order=desc + Limit/AfterSequence`. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/gascity/commit/d3073929b) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/gascity/commit/8a560161e) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/gascity/commit/98c32ee63)
 
 ## Week of 2026-05-18
 
