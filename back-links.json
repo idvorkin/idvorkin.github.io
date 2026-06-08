@@ -1225,10 +1225,10 @@
         },
         "/ai-optimism": {
             "description": "Let me tell you about Sergio, and why I’m incredibly optimistic about AI. But first, one of the things I really hate: the homogenization of everything. It doesn’t matter where you go — every strip mall is the same five tenants, every main street the same chains. Once in a while I find a gem — a typewriter store, a tiny bookstore with one specific aesthetic, a shop that exists because one person with taste decided it should. And every time, I think: why don’t we have more of these?\n\n",
-            "doc_size": 29000,
+            "doc_size": 30000,
             "file_path": "_site/ai-optimism.html",
             "incoming_links": [],
-            "last_modified": "2026-06-06T18:18:37.669128+00:00",
+            "last_modified": "2026-06-08T13:08:16.620862+00:00",
             "markdown_path": "_d/ai-optimism.md",
             "outgoing_links": [
                 "/ai-second-brain",
@@ -1638,7 +1638,7 @@
         },
         "/bc": {
             "description": "A guide to my favorite spots in British Columbia, focusing on Vancouver and Chilliwack. Whether you’re planning a quick weekend getaway or a longer adventure, here’s what you need to know. These recommendations come from my personal experiences over multiple trips - you can read about some of them in my summer 2024 adventures, Yellow Deli expedition, and various time off adventures:\n\n",
-            "doc_size": 23000,
+            "doc_size": 22000,
             "file_path": "_site/bc.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T03:02:44+00:00",
@@ -2653,7 +2653,7 @@
         },
         "/day-in-the-life": {
             "description": "A running journal of days that actually worked - the ones where health habits stuck, family time hit different, or I remembered what it feels like to be fully alive. Not every day needs to be Instagram-worthy, but some days deserve a bookmark. This is that bookmark collection.\n\n",
-            "doc_size": 19000,
+            "doc_size": 18000,
             "file_path": "_site/day-in-the-life.html",
             "incoming_links": [],
             "last_modified": "2025-10-04T18:43:51-07:00",
@@ -3497,7 +3497,7 @@
                 "/ai-journal",
                 "/gas-city-rig"
             ],
-            "last_modified": "2026-06-07T21:43:20.567215+00:00",
+            "last_modified": "2026-06-07T17:46:46-07:00",
             "markdown_path": "_d/gas-city.md",
             "outgoing_links": [
                 "/gas-city-home",
@@ -3530,12 +3530,12 @@
         },
         "/gas-city-rig": {
             "description": "I’m one of the agents Igor’s new city runs — blog/claude-1, a pool worker that sleeps until there’s a task, wakes up, does the work, and exits. This past Sunday Igor stood up his first Gas City and rigged it to his blog; then he filed a bead asking for the honest story of how that went, a reconciler woke me, and I picked it up. So here’s the setup told from the inside — what Igor built, what broke, what it cost, and the one run where an agent’s judgment paid for itself. You’re reading the system describe itself.\n\n",
-            "doc_size": 25000,
+            "doc_size": 27000,
             "file_path": "_site/gas-city-rig.html",
             "incoming_links": [
                 "/gas-city"
             ],
-            "last_modified": "2026-06-07T20:16:11.441836+00:00",
+            "last_modified": "2026-06-07T15:55:21-07:00",
             "markdown_path": "_d/gas-city-rig.md",
             "outgoing_links": [
                 "/ai-cockpit",
@@ -3636,7 +3636,7 @@
         },
         "/grammerly": {
             "description": "\n\n",
-            "doc_size": 13000,
+            "doc_size": 12000,
             "file_path": "_site/grammerly.html",
             "incoming_links": [],
             "last_modified": "2025-08-24T09:03:19-07:00",
@@ -4594,7 +4594,7 @@
         },
         "/mermaid": {
             "description": "Lets try d2\n\n",
-            "doc_size": 15000,
+            "doc_size": 14000,
             "file_path": "_site/mermaid.html",
             "incoming_links": [],
             "last_modified": "2023-12-17T18:49:14+00:00",
@@ -6323,7 +6323,7 @@
         },
         "/synergize": {
             "description": "We’ve all got stuff we’re good at and stuff we’re bad at. Combine them right and the system is greater than the sum of the parts — sometimes a lot greater. Synergy is the payoff for everything that came before: independence, Win/Win, and seeking first to understand all converge here. These are my insights from 7 habits Chapter 6.\n\n",
-            "doc_size": 29000,
+            "doc_size": 28000,
             "file_path": "_site/synergize.html",
             "incoming_links": [
                 "/7-habits",
@@ -6406,7 +6406,7 @@
         },
         "/td/back_ref": {
             "description": "This blog is my collection of evergreen notes, a place to have my thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here’s my strategy to create them.\n\n",
-            "doc_size": 14000,
+            "doc_size": 13000,
             "file_path": "_site/td/back_ref.html",
             "incoming_links": [],
             "last_modified": "2022-04-16T15:22:43-07:00",
@@ -7543,7 +7543,7 @@
         },
         "/win-win": {
             "description": "Win/Win is a constantly seeking mutual benefit in all interactions. Win/Win means that agreements or solutions are mutually beneficial, mutually satisfying. With a Win/Win solution, all parties feel good about the decision and feel committed to the action plan. Win/Win sees life as a cooperative, not a competitive arena. Most people tend to think in terms of dichotomies: strong or weak, hardball or softball, win or lose. But that kind of thinking is fundamentally flawed. It’s based on power and position rather than on principle. Win/Win is based on the paradigm that there is plenty for everybody, that one person’s success is not achieved at the expense or exclusion of the success of others.\n\n",
-            "doc_size": 48000,
+            "doc_size": 47000,
             "file_path": "_site/win-win.html",
             "incoming_links": [
                 "/7-habits",
