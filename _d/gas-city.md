@@ -173,6 +173,7 @@ That's why I keep saying _the unit of distribution is the formula, not the agent
 ## Where to go next
 
 - The authoritative docs: **[docs.gastownhall.ai](https://docs.gastownhall.ai/)**. Start with [molecules](https://docs.gastownhall.ai/concepts/molecules/), [architecture](https://docs.gastownhall.ai/design/architecture/), and the [propulsion principle](https://docs.gastownhall.ai/concepts/propulsion-principle/).
+- Want to go deeper into the actual code? **[DeepWiki](https://deepwiki.com/gastownhall/gascity)** auto-generates a navigable wiki of the `gastownhall/gascity` repo.
 - The lived narrative — five upstream bugs, one Sunday morning, one `igor-city`: [Standing Up Gas City](/gas-city-home).
 - The work-side companion — same MEOW pattern, different deployment: [Wally and My Work Gastown](/wally).
 - The wider claw context — why I'm running multiple AI entities at all: [Igor's Three Claws](/igors-claws).
