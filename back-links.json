@@ -1264,7 +1264,7 @@
             "incoming_links": [
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-06-07T09:04:48-07:00",
+            "last_modified": "2026-06-09T07:32:49-07:00",
             "markdown_path": "_d/ai-policy.md",
             "outgoing_links": [
                 "/42",
@@ -1372,7 +1372,7 @@
         },
         "/ai-training": {
             "description": "I don’t train models for a living — I build on top of them. But to use LLMs well, it helps to carry a rough map of how one gets made: what pre-training buys you, what post-training changes, and where fine-tuning, RAG, and quantization actually fit. These are my working notes on that map, kept deliberately shallow — enough to make good decisions as a consumer of models, not to go train one.\n\n",
-            "doc_size": 36000,
+            "doc_size": 35000,
             "file_path": "_site/ai-training.html",
             "incoming_links": [
                 "/ai-inference"
@@ -2008,24 +2008,28 @@
         },
         "/changelog": {
             "description": "A weekly summary of what changed on this blog and across my GitHub projects. Useful for returning readers who want to catch up on new content and updates.\n\n",
-            "doc_size": 173000,
+            "doc_size": 187000,
             "file_path": "_site/changelog.html",
             "incoming_links": [],
-            "last_modified": "2026-06-06T18:18:54.096028+00:00",
+            "last_modified": "2026-06-09T06:49:04-07:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
+                "/42",
                 "/7h-concepts",
                 "/act",
                 "/activation",
                 "/addiction",
                 "/ai-cockpit",
+                "/ai-inference",
                 "/ai-journal",
                 "/ai-native-manager",
+                "/ai-native-onboarding",
                 "/ai-native-vocab",
                 "/ai-operator",
                 "/ai-optimism",
                 "/ai-relationships",
                 "/ai-second-brain",
+                "/ai-training",
                 "/amelia",
                 "/be-proactive",
                 "/claw",
@@ -2037,6 +2041,7 @@
                 "/first-understand",
                 "/gas-city",
                 "/gas-city-home",
+                "/gas-city-rig",
                 "/hill-climbing",
                 "/hobby",
                 "/how-igor-chops",
@@ -2054,6 +2059,7 @@
                 "/mosh",
                 "/podcast",
                 "/product",
+                "/psychic-weight",
                 "/raccoon-history",
                 "/recent",
                 "/sharpen-the-saw",
@@ -7185,7 +7191,7 @@
                 "/timeoff",
                 "/y26"
             ],
-            "last_modified": "2026-06-07T09:16:33-07:00",
+            "last_modified": "2026-06-09T07:32:59-07:00",
             "markdown_path": "_d/time-off-2026-07.md",
             "outgoing_links": [
                 "/ai-policy",
@@ -7516,7 +7522,7 @@
         },
         "/weeks": {
             "description": "\n\n",
-            "doc_size": 4348000,
+            "doc_size": 4347000,
             "file_path": "_site/weeks.html",
             "incoming_links": [
                 "/balance"
