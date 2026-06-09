@@ -13,7 +13,7 @@ The way to get more out of AI is to scale your productivity, and — just like h
 
 {% include ai-slop.html percent="80" %}
 
-This is the hands-on version. If you've read [Standing Up Gas City](/gas-city-home), or seen "Gas City" mentioned in [/wally](/wally) or [/igors-claws](/igors-claws), and you want to know what the thing actually _is_ — and how to start driving it — before you stand up your own, this is that post. Three concepts carry the whole design: **beads** (the unit of work), **molecules** (the choreography), and the **propulsion principle** (what keeps the engine running). Each is plain on its own; the leverage is in how they compose. The source of truth is [docs.gastownhall.ai](https://docs.gastownhall.ai/) — my job here is to translate, not duplicate, so when a section needs the precise definition I link out. (If you want a machine's-eye tour of the whole system, [DeepWiki](https://deepwiki.com/gastownhall/gascity) auto-generated a surprisingly good overview.)
+This is the hands-on version. If you've read [Standing Up Gas City](/gas-city-home), or seen "Gas City" mentioned in [/wally](/wally) or [/igors-claws](/igors-claws), and you want to know what the thing actually _is_ — and how to start driving it — before you stand up your own, this is that post. Three concepts carry the whole design: **beads** (the unit of work), **molecules** (the choreography), and the **propulsion principle** (what keeps the engine running). Each is plain on its own; the leverage is in how they compose. The source of truth is [docs.gastownhall.ai](https://docs.gastownhall.ai/) — my job here is to translate, not duplicate, so when a section needs the precise definition I link out.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
