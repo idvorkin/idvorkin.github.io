@@ -12,6 +12,15 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Week of 2026-06-01](#week-of-2026-06-01)
+  - [Dark Factory: Three Limits on AI-Run Code (new post!)](#dark-factory-three-limits-on-ai-run-code-new-post)
+  - [Made to Stick: Book Notes (new post!)](#made-to-stick-book-notes-new-post)
+  - [AI Journal: Friction = Focus](#ai-journal-friction--focus)
+  - [Topics Index: Gemini Embeddings for All 336 Posts](#topics-index-gemini-embeddings-for-all-336-posts)
+  - [Meta: Personal Voice for AI Lab Section](#meta-personal-voice-for-ai-lab-section)
+  - [Infrastructure & CI (2026-06-01)](#infrastructure--ci-2026-06-01)
+  - [chop-conventions (2026-06-01)](#chop-conventions-2026-06-01)
+  - [Other Projects (2026-06-01)](#other-projects-2026-06-01)
 - [Week of 2026-05-18](#week-of-2026-05-18)
   - [What I Love About AI (new post!)](#what-i-love-about-ai-new-post)
   - [Parenting Books: Emotional Lives + Untangled Rewrite](#parenting-books-emotional-lives--untangled-rewrite)
@@ -109,6 +118,81 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+## Week of 2026-06-01
+
+_30 commits this week_
+
+### Dark Factory: Three Limits on AI-Run Code (new post!)
+
+New post at [/dark-factory](/dark-factory) — a first-principles breakdown of where AI-run codebases work, where they break, and where humans still provide value. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d2e44ec66)
+
+The frame is borrowed from manufacturing: a dark factory runs with the lights off because robots don't need to see. The software version is the codebase where AI agents write, review, and merge with no human in the implementation loop. The question isn't whether to build one — it's how far it can go before it fails. Three limits determine that:
+
+- **Limit 1 — Verification** (the one everyone names): if you can't check the work cheaply — fast tests, strong types, tight feedback loops — going dark is dangerous. Make verification cheap and the AI runs hot.
+- **Limit 2 — Progress** (the one they miss): even with perfect verification, can the AI find a next move that makes things better without breaking three other things? Progress decays through three zones. The **Easy Zone**: empty repo, local changes, warp speed — where all the demos live. The **Complexity Wall**: changes stop being local; every fix ripples; more attempts per win. **Complexity Collapse**: the terminal state where no move improves the whole — every fix surfaces a problem elsewhere. The agent thrashes in whack-a-mole. "I hit this on my swing analyzer — the agent had built two complete, parallel implementations of the UX, one in React and one in jQuery." This isn't an AI-specific failure: it's what happens when you have no architects.
+- **Limit 3 — Cost** (the one nobody understands yet): tokens aren't free, and cost isn't a flat tax — it spikes exactly when progress is already failing. At some point the cheapest move isn't to fix the system, it's to throw it away and regenerate.
+
+The factory owns the interior (easy zone + cheap verification + rational cost). Humans own the boundary: oracle at the verification limit, architect at the progress limit, economist at the cost limit. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1568f13a1)
+
+### Made to Stick: Book Notes (new post!)
+
+New post at [/made-to-stick](/made-to-stick) — book notes on Chip and Dan Heath's framework for why some ideas survive and others die. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/c48bdad77)
+
+The villain is the **Curse of Knowledge**: once you know something, you can't un-know it, so you bury the lead, speak in abstractions, and quote numbers nobody feels. The 1990 Stanford tapper experiment: tappers predicted listeners would guess the song 50% of the time; the actual hit rate was 2.5% (3 of 120). You hear the orchestra; they hear disconnected knocks. The six traits that beat the Curse spell **SUCCESs**:
+
+- **Simple** — Commander's Intent: not the steps, the destination. Southwest's "THE low-fare airline" ends the chicken-salad debate. Perfection is reached "not when there is nothing left to add, but when there is nothing left to take away."
+- **Unexpected** — break the guessing machine, then fix it. Surprise must be post-dictable: unforeseeable beforehand, obvious in hindsight. Target the surprise at the counterintuitive core (the "Enclave" crash ad). Curiosity is the pain of a gap — open it before you fill it.
+- **Concrete** — sensory detail, not abstraction. Japanese math teachers taught in context (the notebook problem) twice as often as American teachers; C-students who lived the accounting soap opera outscored peers by 12 points two years later.
+- **Credible** — anti-authorities beat experts. Marshall drank the bacteria. The Darth Vader toothbrush swung the mock custody verdict. Statistics show a relationship, not a number (the BB-in-a-bucket nuclear arsenal demo). The Sinatra Test: one domain-defining example certifies the whole.
+- **Emotional** — the power of one. Rokia ($2.38 in donations) beat the statistics ($1.14). Combining them dropped giving back to $1.43 — numbers suppress emotion. Texas dropped litter 72% by appealing to Bubba's identity, not his fear.
+- **Stories** — simulation + inspiration. The nurse who saved the baby by overriding the monitor; Jared's pants; the Zambia/CDC springboard story at the World Bank. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/98894d497)
+
+### AI Journal: Friction = Focus
+
+New entry [2026-05-31](/ai-journal#2026-05-31) — a response to hmmz.org's "AI is an attention hazard" post and where it lands personally. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/a25db3856)
+
+The sharpest version: **when production gets this cheap, it collapses into [consumption](/produce-consume) — and loses the footprint that made it worth anything.** Production leaves a trace; consumption doesn't. Effortless AI is the case where production _stops_ leaving a trace. Fifty half-built apps leave about as much behind as a thousand hours of TikTok.
+
+The uncomfortable recognition: Igor is the fifty-projects guy, and literally built [a multi-agent city](/gas-city) — the "five rooms managing agents" the original post recoils from. The answer isn't less AI; it's doubling down on [begin with the end in mind](/end-in-mind). What actually saves it from the critique: the friction is already in the system by design. Kindle Scribe journaling by hand every morning before any screen — slow input is the point.
+
+Three takeaways: (1) the most important thing is exactly what it's always been — begin with the end in mind; AI changed the cost of building, not the question of what's worth building. (2) Doing a lot of reps still has real value (the path to mastery), but don't confuse reps at the gym with producing software that leaves a footprint. (3) Non-fiction reading wears the best disguise — it _feels_ like learning, but "reading a thousand articles doesn't make you a writer." The honest question: am I producing from it, or consuming in a respectable outfit? [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6a6eefd73)
+
+### Topics Index: Gemini Embeddings for All 336 Posts
+
+New `topics.json` sidecar — per-post summaries, raw proposed tags, named entities, and content hashes for all 336 published posts, plus a cross-link gap analysis powered by Gemini embeddings. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/574b16ec6)
+
+Built in four commits this week: (1) P0 foundations — extract, graph, sidecar, CLI (TDD); (2) deep-dive tagging for all 336 posts via the tag-all Workflow (one agent per post); (3) Gemini embeddings → related-posts suggestions + cross-link gap candidates; (4) raw LLM outputs checked in as provenance. The runbook for regenerating tags and embeddings is in `docs/topics-index.md`. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/339e6be64)
+
+### Meta: Personal Voice for AI Lab Section
+
+[/meta](/meta) is now the canonical permalink (was `/facebook`); `/facebook` and `/fb` become redirects. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/da3d3ffa0)
+
+The AI Lab (2026) section was rewritten from AI-slop to Igor's actual voice, pulled from his Friday journal: "got flattened," "kind of excited," "I don't mind," "my god, we could make a killing." Before: "This is a frontier-lab pivot inside Meta. The M→IC title change is cosmetic. Two scenarios I'm holding calmly." After: "Arguably I'm going to a frontier lab, and we're going to figure out how training works, which I'm kind of excited for. … There's a chance that within three more vests I'll be laid off, and that's certainly okay, I don't mind. It's also possible we're successful at this, and if we are, my god, we could make a killing on the stock price." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2158a1628)
+
+### Infrastructure & CI (2026-06-01)
+
+- **Ruby compat shim**: `jekyll-rebuild` and `worktree-init` justfile targets now load the Ruby 3.1 shim so fresh worktrees can build without hitting the `String#tainted?` deprecation on Ruby 4.x. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/20e6dd37e)
+- **Backlinks rebuild** after the week's new posts and permalink changes. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1107ec317)
+- **time-off-2026-07**: Google Maps links added — full-route overview (Reykjavík → Copenhagen → Stockholm → Oslo → Aurland → Voss → Bergen → Amsterdam) and per-leg pins on each city heading. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6be4a07a5)
+- **igor-gap-year**: "Can 1 become 2? The Extend-to-Year-2 Test" section moved from appendix to main body with the three-dragon checklist (Entropy ≥80% adherence, 6+ artifacts shipped, 2× annual expenses in cash). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/a166ec412)
+- **gap-year**: Dragons section aligned with the canonical Three Dragons framework. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4df02023c)
+
+### chop-conventions (2026-06-01)
+
+- **gen-image**: `--fast/--no-fast` flag added to pick between Gemini Flash (fast, cheap) and Gemini Pro (quality) models. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/5af4a7a29)
+- **gen-image**: Ripped out the magenta flood-fill background-removal pipeline. Recraft's `removeBackground` is now the only supported path — after six hill-climbing attempts reached only 65× improvement (residual magenta 17,385 → 269), Recraft solved it at ~$0.01/image. Wrong jungle, correct exit. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/182604d0c)
+
+### Other Projects (2026-06-01)
+
+**[context-grabber](https://github.com/idvorkin/context-grabber)** — major Roles + Map sprint this week (30 commits):
+
+- **Roles tab**: role detail sheet with expandable eulogy passage + inline audio player; multi-role tagging on affirmation/grateful cards; bidirectional role↔journal linking; CloudKit sync for `role_moments` across devices. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/37f96e443)
+- **Places map**: real Apple Maps tiles replacing StylizedMap; today's GPS route overlay; emoji-as-pin for iconed pins; palette-matched pins + today-scoped view. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/c7b768c8a)
+- **Mind tab**: Recent-24h journal list + Tally→Move button; shared `EntryComposer` component extracted across Affirmation/Grateful cards. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/c48d01bce)
+- **Composer**: inline mic + continuous-record mode on "Save & add another." [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/d0cf794c8)
+
+**[idvorkin-ai-tools/gascity](https://github.com/idvorkin-ai-tools/gascity)** — ongoing Gas City maintenance (30 commits): drain-ack fix for same-tick respawn, supervisor recycle warning during city init, `order.env` per-order env overrides, shallow-pack import deduplication fix. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/gascity/commit/c41b28026)
 
 ## Week of 2026-05-18
 
