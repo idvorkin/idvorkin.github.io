@@ -1351,7 +1351,7 @@
         },
         "/ai-training": {
             "description": "I don’t train models for a living — I build on top of them. But to use LLMs well, it helps to carry a rough map of how one gets made: what pre-training buys you, what post-training changes, and where fine-tuning, RAG, and quantization actually fit. These are my working notes on that map, kept deliberately shallow — enough to make good decisions as a consumer of models, not to go train one.\n\n",
-            "doc_size": 36000,
+            "doc_size": 35000,
             "file_path": "_site/ai-training.html",
             "incoming_links": [
                 "/ai-inference"
@@ -1986,24 +1986,28 @@
         },
         "/changelog": {
             "description": "A weekly summary of what changed on this blog and across my GitHub projects. Useful for returning readers who want to catch up on new content and updates.\n\n",
-            "doc_size": 173000,
+            "doc_size": 187000,
             "file_path": "_site/changelog.html",
             "incoming_links": [],
-            "last_modified": "2026-06-06T18:18:54.096028+00:00",
+            "last_modified": "2026-06-09T06:49:04-07:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
+                "/42",
                 "/7h-concepts",
                 "/act",
                 "/activation",
                 "/addiction",
                 "/ai-cockpit",
+                "/ai-inference",
                 "/ai-journal",
                 "/ai-native-manager",
+                "/ai-native-onboarding",
                 "/ai-native-vocab",
                 "/ai-operator",
                 "/ai-optimism",
                 "/ai-relationships",
                 "/ai-second-brain",
+                "/ai-training",
                 "/amelia",
                 "/be-proactive",
                 "/claw",
@@ -2015,6 +2019,7 @@
                 "/first-understand",
                 "/gas-city",
                 "/gas-city-home",
+                "/gas-city-rig",
                 "/hill-climbing",
                 "/hobby",
                 "/how-igor-chops",
@@ -2032,6 +2037,7 @@
                 "/mosh",
                 "/podcast",
                 "/product",
+                "/psychic-weight",
                 "/raccoon-history",
                 "/recent",
                 "/sharpen-the-saw",
@@ -3491,13 +3497,13 @@
         },
         "/gas-city": {
             "description": "The way to get more out of AI is to scale your productivity, and — just like humans — agents scale two ways. Scale up (vertical): make one agent more capable by giving it better tools and pre-created skills. That’s the whole world of how I chop — a tuned CLAUDE.md, a library of skills, custom CLIs the agent already knows how to drive. Scale out (horizontal): run many agents that cross-communicate and coordinate. Scaling out is where you need orchestration, and orchestration is what Gas City is. Beads, molecules, and the propulsion principle are how scale-out actually works under the hood.\n\n",
-            "doc_size": 35000,
+            "doc_size": 37000,
             "file_path": "_site/gas-city.html",
             "incoming_links": [
                 "/ai-journal",
                 "/gas-city-rig"
             ],
-            "last_modified": "2026-06-08T06:03:08-07:00",
+            "last_modified": "2026-06-09T07:32:23-07:00",
             "markdown_path": "_d/gas-city.md",
             "outgoing_links": [
                 "/gas-city-home",
@@ -6323,7 +6329,7 @@
         },
         "/synergize": {
             "description": "We’ve all got stuff we’re good at and stuff we’re bad at. Combine them right and the system is greater than the sum of the parts — sometimes a lot greater. Synergy is the payoff for everything that came before: independence, Win/Win, and seeking first to understand all converge here. These are my insights from 7 habits Chapter 6.\n\n",
-            "doc_size": 29000,
+            "doc_size": 28000,
             "file_path": "_site/synergize.html",
             "incoming_links": [
                 "/7-habits",
@@ -6406,7 +6412,7 @@
         },
         "/td/back_ref": {
             "description": "This blog is my collection of evergreen notes, a place to have my thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here’s my strategy to create them.\n\n",
-            "doc_size": 14000,
+            "doc_size": 13000,
             "file_path": "_site/td/back_ref.html",
             "incoming_links": [],
             "last_modified": "2022-04-16T15:22:43-07:00",
@@ -7488,7 +7494,7 @@
         },
         "/weeks": {
             "description": "\n\n",
-            "doc_size": 4348000,
+            "doc_size": 4347000,
             "file_path": "_site/weeks.html",
             "incoming_links": [
                 "/balance"
