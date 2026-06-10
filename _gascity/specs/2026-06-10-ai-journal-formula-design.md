@@ -95,12 +95,16 @@ worktree and keep a pointer on the bead.
 **`[[steps]]`**
 
 1. **hydrate** — read the bead id from the PR's `Tracking-bead:` line, load the
-   bead (dossier), `gh pr view --comments`, `git worktree add` the PR's
-   **existing** branch.
+   bead (dossier), **enumerate every review thread via GraphQL** (not
+   `gh pr view --comments`, which can bury a human comment behind a bot's),
+   `git worktree add` the PR's **existing** branch.
 2. **apply** — make the changes; append any new research to the dossier.
 3. **land** — push the **same branch** (PR updates in place); only-`ai-journal.md`
    check.
-4. **persist-notify** — append a rev comment to the bead; mail.
+4. **verify-addressed** _(gate)_ — re-enumerate review threads; PASS only if **every
+   thread is resolved** (reply + resolve each as you address it). Don't notify with an
+   open thread.
+5. **persist-notify** — append a rev comment to the bead; mail.
 
 ## Invariants / safety
 
