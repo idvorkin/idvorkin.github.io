@@ -111,9 +111,14 @@ Land it. NEVER push to main:
   git add _d/ai-journal.md
   git commit -m "feat(ai-journal): add entry $(date +%Y-%m-%d)"
   git push -u origin HEAD            # push the branch to the fork (origin)
-  gh pr create --base main --fill    # PR against canonical main (idvorkin/*)
-Capture the PR URL, then anchor it on the tracking bead so revisions can find the PR
-and branch (confirm flags with `gc bd update --help`):
+Open the PR against canonical main, and PUT THE TRACKING BEAD ID IN THE PR DESCRIPTION
+on its own `Tracking-bead: <id>` line, so any reviser picks it up straight from the PR
+(nothing to remember or pass). For example:
+  gh pr create --base main --title "ai-journal: <entry title>" --body "<one-line summary of the entry>
+
+Tracking-bead: <tracking-bead-id>"
+Capture the PR URL. Keep the reverse link on the bead too (confirm flags with
+`gc bd update --help`):
   gc bd update <tracking-bead-id> --notes "PR: <PR-URL>  branch: <branch>"
 """
 
@@ -124,6 +129,6 @@ needs = ["land"]
 description = """
 Notify {{notify}} so nobody has to poll — and so revisions have their anchor:
   gc mail send {{notify}} -s "ai-journal-new: PR opened" -m "<PR-URL>/files
-  tracking bead: <id>  (revise from PR feedback: gc formula cook ai-journal-revise --var entry_bead=<id>)"
+  tracking bead: <id>  (revise from PR feedback: gc formula cook ai-journal-revise --var pr=<PR-number>)"
 (If you already mailed an abort in an earlier step, skip this.)
 """

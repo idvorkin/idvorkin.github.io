@@ -53,11 +53,16 @@ root, which closes when a cook completes). Created by `ai-journal-new`, it
 carries:
 
 - title/slug of the entry,
-- **PR URL + branch name** (the anchor revisions use),
+- **PR URL + branch name** (bead → PR),
 - **`design` field = the current research dossier** (replaceable, updated each
   rev),
 - **comments = append-only per-rev decision log** ("rev 2: tightened takeaway,
   dropped the Telegram tangent per reviewer").
+
+**The link is bidirectional.** `ai-journal-new` also writes a
+`Tracking-bead: <id>` line into the **PR description** (PR → bead), so
+`ai-journal-revise` needs only the PR number — it reads the bead id straight from
+the PR and rehydrates. Nothing to remember or pass.
 
 If a dossier outgrows the `design` field, spill it to a scratch file in the
 worktree and keep a pointer on the bead.
@@ -78,18 +83,20 @@ worktree and keep a pointer on the bead.
 4. **verify** _(judgment gate)_ — only `_d/ai-journal.md` changed; format right;
    every deep link resolves and matches the dossier; nothing fabricated; correct
    base. Abort + mail on failure.
-5. **land** — commit, push branch to fork, PR vs canonical main; stamp PR +
-   branch on the tracking bead.
+5. **land** — commit, push branch to fork, open PR vs canonical main **with a
+   `Tracking-bead: <id>` line in the PR body**; stamp PR + branch back on the bead.
 6. **notify** — mail the PR link + bead id.
 
 ## Formula 2: `ai-journal-revise`
 
-**`[vars]`**: `entry_bead` (required), `blog_repo`, `notify`.
+**`[vars]`**: `pr` (required — PR number/URL), `entry_bead` (optional override),
+`blog_repo`, `notify`.
 
 **`[[steps]]`**
 
-1. **hydrate** — load the bead (dossier + PR + branch), `gh pr view --comments`,
-   `git worktree add` the **existing** branch.
+1. **hydrate** — read the bead id from the PR's `Tracking-bead:` line, load the
+   bead (dossier), `gh pr view --comments`, `git worktree add` the PR's
+   **existing** branch.
 2. **apply** — make the changes; append any new research to the dossier.
 3. **land** — push the **same branch** (PR updates in place); only-`ai-journal.md`
    check.

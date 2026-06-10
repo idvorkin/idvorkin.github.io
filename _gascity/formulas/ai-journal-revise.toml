@@ -1,11 +1,16 @@
 formula = "ai-journal-revise"
-description = "Revise an existing AI-journal entry PR from review feedback: rehydrate the research dossier + PR comments + existing branch, apply the changes, push the SAME branch so the PR updates in place, append the rev to the dossier, and mail. Never pushes to main, never opens a second PR."
+description = "Revise an existing AI-journal entry PR from review feedback: read the tracking bead id from the PR description, rehydrate the research dossier + PR comments + existing branch, apply the changes, push the SAME branch so the PR updates in place, append the rev to the dossier, and mail. Never pushes to main, never opens a second PR."
 
-# vapor = root-only wisp; one agent runs the steps in sequence.
+# vapor = root-only wisp; ONE agent runs the steps in sequence, so the bead id
+# resolved in `hydrate` is carried in-context through the later steps.
 phase = "vapor"
 
+[vars.pr]
+description = "PR number or URL to revise (e.g. 692). The tracking bead id is read from the PR description's `Tracking-bead:` line — so you only need the PR, nothing to remember."
+default = ""
+
 [vars.entry_bead]
-description = "Tracking bead id from ai-journal-new. Holds the research dossier (design field) plus the PR URL + branch (notes). The revision rehydrates entirely from it."
+description = "Optional override of the tracking bead id. Normally left blank: hydrate reads it from the PR's `Tracking-bead:` line. Set only for legacy PRs that predate that convention."
 default = ""
 
 [vars.blog_repo]
@@ -18,20 +23,28 @@ default = "mayor"
 
 [[steps]]
 id = "hydrate"
-title = "Rehydrate research + content + feedback (do NOT redo the research)"
+title = "Resolve the bead from the PR, then rehydrate research + content + feedback"
 description = """
-Load everything the prior agent learned so this fresh session starts with full context:
-  gc bd show {{entry_bead}}      # dossier is in the design field; PR URL + branch in notes
-  gh pr view <PR> --comments     # the review feedback to address (use the PR from the bead)
+The PR is self-describing: ai-journal-new writes a `Tracking-bead: <id>` line into the
+PR description. Resolve the bead from the PR (or use the {{entry_bead}} override):
+  BEAD="{{entry_bead}}"
+  [ -n "$BEAD" ] || BEAD=$(gh pr view {{pr}} --json body -q .body | sed -n 's/^Tracking-bead:[[:space:]]*//p' | head -1)
+  echo "tracking bead = $BEAD"   # report this; the later steps act on this same bead
 
-Cut a worktree on the EXISTING branch (NOT a new one) so the PR updates in place:
+Load everything the prior agent learned so this fresh session starts with full context
+— do NOT redo the research:
+  gc bd show "$BEAD"             # dossier is in the design field; PR URL + branch in notes
+  gh pr view {{pr}} --comments   # the review feedback to address
+
+Cut a worktree on the PR's EXISTING branch (NOT a new one) so the PR updates in place:
+  BR=$(gh pr view {{pr}} --json headRefName -q .headRefName)
   git -C {{blog_repo}} fetch origin --prune
-  git -C {{blog_repo}} worktree add "{{blog_repo}}/.worktrees/<branch>" <branch>
-  cd "{{blog_repo}}/.worktrees/<branch>"
+  git -C {{blog_repo}} worktree add "{{blog_repo}}/.worktrees/$BR" "$BR"
+  cd "{{blog_repo}}/.worktrees/$BR"
 
-Report: a one-paragraph dossier summary, the list of open feedback items, and the
-worktree path. If the dossier already answers a feedback item, note that — you will not
-re-research it.
+Report: the resolved bead id, a one-paragraph dossier summary, the open feedback items,
+and the worktree path. If the dossier already answers a feedback item, note that — you
+will not re-research it.
 """
 
 [[steps]]
@@ -41,9 +54,9 @@ needs = ["hydrate"]
 description = """
 Make the requested changes to _d/ai-journal.md, addressing each feedback item and
 keeping the author's voice. If a feedback item needs NEW research (a number or a link
-the dossier does not already have), find it ONCE and APPEND it to the dossier so future
-revisions inherit it instead of re-deriving it:
-  gc bd update {{entry_bead}} --design "<updated dossier markdown>"
+the dossier does not already have), find it ONCE and APPEND it to the tracking bead's
+dossier (the bead id resolved in hydrate) so future revisions inherit it:
+  gc bd update <tracking-bead> --design "<updated dossier markdown>"
 Edit ONLY _d/ai-journal.md.
 """
 
@@ -65,8 +78,8 @@ id = "persist-notify"
 title = "Log the rev on the bead + mail the outcome"
 needs = ["land"]
 description = """
-Append a short decision-log entry so the NEXT revision sees this rev's history
-(confirm the exact comment subcommand with `gc bd --help`):
-  gc bd comment {{entry_bead}} "rev: <what changed>  (addressed: <feedback items>)"
+Append a short decision-log entry to the tracking bead (resolved in hydrate) so the NEXT
+revision sees this rev's history (confirm the exact comment subcommand with `gc bd --help`):
+  gc bd comment <tracking-bead> "rev: <what changed>  (addressed: <feedback items>)"
   gc mail send {{notify}} -s "ai-journal-revise: PR updated" -m "<PR-URL>/files  <one-line summary>"
 """
