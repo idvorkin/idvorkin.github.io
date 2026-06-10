@@ -108,7 +108,7 @@ worktree and keep a pointer on the bead.
 
 ## Status / how to use once merged
 
-```
+```shell
 # new entry
 gc formula cook ai-journal-new --var notes_file=~/tmp/agent/ai-journal/notes-<slug>.md
 # revise from PR feedback (bead id comes from the new-entry mail)
