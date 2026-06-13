@@ -70,13 +70,18 @@ Edit ONLY _d/ai-journal.md.
 """
 
 [[steps]]
+id = "rebuild-backlinks"
+needs = ["apply"]
+expand = "blog-rebuild-backlinks"   # shared step library: rebuild backlinks if the revision changed links
+
+[[steps]]
 id = "land"
 title = "Push the SAME branch (the existing PR updates in place)"
-needs = ["apply"]
+needs = ["rebuild-backlinks"]
 description = """
-Light gate: confirm `git status --porcelain` shows ONLY _d/ai-journal.md changed.
+Light gate: confirm `git status --porcelain` shows only _d/ai-journal.md and back-links.json.
 Then commit and push the SAME branch — do NOT open a new PR, do NOT push to main:
-  git add _d/ai-journal.md
+  git add _d/ai-journal.md back-links.json
   git commit -m "fix(ai-journal): address review feedback"
   git push            # same branch -> the existing PR updates
 If the push is rejected because the branch moved, rebase onto origin/<branch> and retry.
