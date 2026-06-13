@@ -81,9 +81,25 @@ Edit ONLY _d/ai-journal.md. Match the voice of existing entries: personal, refle
 """
 
 [[steps]]
-id = "verify"
-title = "Verify the change is ai-journal-only and sound (USE JUDGMENT)"
+id = "rebuild-backlinks"
+title = "Rebuild back-links.json so the new entry's links are indexed"
 needs = ["draft-entry"]
+description = """
+The new entry adds internal links, so back-links.json must be regenerated or it goes
+stale the moment the entry merges. Build the site so _site reflects the new entry, then
+rebuild backlinks (this only regenerates back-links.json — it does NOT commit):
+  just worktree-init            # fires a background jekyll build (loads the ruby-compat shim)
+  # WAIT for that build: poll until _site/index.html is freshly written (~60-90s).
+  #   LOG=/tmp/jekyll-worktree-$(git branch --show-current | tr '/' '-').log   # tail it if it stalls
+  just update-backlinks         # = uv run ./build_back_links.py build  ->  regenerates back-links.json
+Do NOT proceed on a stale/missing _site — it yields wrong backlinks. back-links.json may
+legitimately be unchanged (the entry added no new cross-links); that is fine.
+"""
+
+[[steps]]
+id = "verify"
+title = "Verify the change is entry+backlinks-only and sound (USE JUDGMENT)"
+needs = ["rebuild-backlinks"]
 description = """
 This is the judgment gate — do not skip it. The intent is a single-file, new-entry-only
 change against {{base_branch}}. Check reality matches intent:
@@ -91,7 +107,7 @@ change against {{base_branch}}. Check reality matches intent:
   git diff --stat _d/ai-journal.md
 
 PASS only if ALL hold:
-  - the ONLY modified path is _d/ai-journal.md (no stray files),
+  - the only modified paths are _d/ai-journal.md and back-links.json (no stray files),
   - the entry matches the documented format and the TOC is updated,
   - EVERY deep link resolves and matches the dossier's claim->permalink map
     (spot-check that the hashes / line ranges actually exist),
@@ -108,8 +124,8 @@ title = "Commit + open a clean PR; anchor the tracking bead"
 needs = ["verify"]
 description = """
 Land it. NEVER push to main:
-  git add _d/ai-journal.md
-  git commit -m "feat(ai-journal): add entry $(date +%Y-%m-%d)"
+  git add _d/ai-journal.md back-links.json
+  git commit -m "feat(ai-journal): add entry $(date +%Y-%m-%d) + backlinks"
   git push -u origin HEAD            # push the branch to the fork (origin)
 Open the PR against canonical main, and PUT THE TRACKING BEAD ID IN THE PR DESCRIPTION
 on its own `Tracking-bead: <id>` line, so any reviser picks it up straight from the PR

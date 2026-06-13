@@ -80,12 +80,15 @@ worktree and keep a pointer on the bead.
    persist it to a new tracking bead's `design`. Output the bead id.
 3. **draft-entry** — write the formatted entry at the top of Diary + update TOC,
    editing only `_d/ai-journal.md`.
-4. **verify** _(judgment gate)_ — only `_d/ai-journal.md` changed; format right;
-   every deep link resolves and matches the dossier; nothing fabricated; correct
-   base. Abort + mail on failure.
-5. **land** — commit, push branch to fork, open PR vs canonical main **with a
+4. **rebuild-backlinks** — `just worktree-init` (jekyll build so `_site` reflects the
+   entry) → `just update-backlinks` to regenerate `back-links.json`, so the entry's
+   links are indexed and don't go stale on merge.
+5. **verify** _(judgment gate)_ — only `_d/ai-journal.md` + `back-links.json` changed;
+   format right; every deep link resolves and matches the dossier; nothing fabricated;
+   correct base. Abort + mail on failure.
+6. **land** — commit both files, push branch to fork, open PR vs canonical main **with a
    `Tracking-bead: <id>` line in the PR body**; stamp PR + branch back on the bead.
-6. **notify** — mail the PR link + bead id.
+7. **notify** — mail the PR link + bead id.
 
 ## Formula 2: `ai-journal-revise`
 
