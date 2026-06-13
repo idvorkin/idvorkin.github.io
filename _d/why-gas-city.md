@@ -26,6 +26,7 @@ This is the hub for everything I've written about running a city. If you want th
 - [How it's different from `CLAUDE.md`](#how-its-different-from-claudemd)
 - [How it's different from just using Claude](#how-its-different-from-just-using-claude)
 - [What problem it actually solves](#what-problem-it-actually-solves)
+- [But won't the providers just build this in?](#but-wont-the-providers-just-build-this-in)
 - [When it's worth it — and when it isn't](#when-its-worth-it--and-when-it-isnt)
 - [Where this sits in the bigger picture](#where-this-sits-in-the-bigger-picture)
 - [Where to go next](#where-to-go-next)
@@ -74,6 +75,18 @@ Strip it down and Gas City is solving four things at once, none of which a smart
 - **Agents that cost nothing when idle.** Workers scale from zero — a wake signal spins one up, it claims its work, runs, and exits. No pool of agents burning money waiting for something to do.
 
 The deeper bet underneath all four is one line from the source tree: **"Work is the primitive, not orchestration."** Most multi-agent systems start by asking "what are the agents?" and bake the answer into the framework. Gas City asks "what is _work_?", makes that durable, and lets the agents be configuration on top. That's the part I think ages well.
+
+## But won't the providers just build this in?
+
+They're already trying — Claude is growing native multi-agent "teams," and every harness keeps swallowing more orchestration. So why run my own city instead of waiting for that?
+
+Because a city keeps as _inputs_ the three things the built-in versions bake in:
+
+- **The model is an input, not a given.** Which model runs a step is a config value — a cheap one for the plumbing, the expensive one for the judgment call. The provider's orchestration assumes _their_ model, all the way down.
+- **The harness is yours.** Sub-agents, persistent memory, cross-agent messaging — the city owns those, so they behave the same no matter whose model is underneath. The providers ship versions of these too, but their way, in their box.
+- **You can actually steer it.** This is the one I feel most. In the built-in version it's hard to push the agents toward the behaviors I want; with a city those behaviors are configuration I control, not a black box I'm coaxing.
+
+There's a softer reason too, and I'll own that it sits off to the side of the engineering: an open stack comes with a community of people who are into it and making it better. That pulls more weight than a feature list admits.
 
 ## When it's worth it — and when it isn't
 
