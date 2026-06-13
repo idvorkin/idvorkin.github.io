@@ -16,11 +16,8 @@ The change adds/edits internal links, so back-links.json must be regenerated or 
 stale the moment it merges. You are ALREADY inside the calling formula's worktree, so just
 build _site there and rebuild backlinks (this only regenerates back-links.json — it does
 NOT commit):
-  # CACHE-REUSING build (NOT a clean rebuild). The entry is the only change, so jekyll
-  # rebuilds just that: seconds on a warm .jekyll-cache, ~60-90s only on a cold/fresh
-  # worktree. Do NOT `just jekyll-rebuild` / `jekyll-clean` — that deletes .jekyll-cache and
-  # forces a full from-scratch build every time. Builds in the current dir; _site is gitignored.
-  RUBYOPT="-r$(pwd)/_ruby_compat.rb" bundle exec jekyll build
-  just update-backlinks         # = uv run ./build_back_links.py build  ->  regenerates back-links.json
+  just jekyll-build             # synchronous incremental build (reuses .jekyll-cache; NO clean) —
+                                #   fast on a warm cache, full only on a cold/fresh worktree.
+  just update-backlinks         # regenerates back-links.json from _site/
 back-links.json may legitimately be unchanged (no new cross-links); that is fine.
 """

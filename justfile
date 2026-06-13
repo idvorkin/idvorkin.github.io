@@ -231,6 +231,22 @@ jekyll-rebuild: jekyll-clean
     fi
     echo "✅ Jekyll rebuild complete - site available in _site/"
 
+# Synchronous incremental Jekyll build — reuses .jekyll-cache (NO clean). Use when you
+# just need _site/ current after an edit (e.g. before regenerating back-links.json):
+# fast on a warm cache, full only on a cold/fresh worktree.
+jekyll-build:
+    #!/usr/bin/env sh
+    set -eu
+    # Load the Ruby 3.2+/4.0 compat shim the old github-pages gems need (mirrors jekyll-rebuild).
+    export RUBYOPT="-r$(pwd)/_ruby_compat.rb"
+    echo "🔨 Building Jekyll site (incremental; reusing .jekyll-cache)..."
+    if [ "$(uname)" = "Darwin" ]; then
+        ~/homebrew/opt/ruby/bin/bundle exec jekyll build
+    else
+        bundle exec jekyll build
+    fi
+    echo "✅ Jekyll build complete - site available in _site/"
+
 # Fire-and-forget background jekyll build for fresh worktrees.
 # Populates _site/ so the anchor-checker pre-commit hook passes by
 # the time the first commit lands. No clean step — incremental build
