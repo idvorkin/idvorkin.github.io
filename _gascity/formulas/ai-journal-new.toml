@@ -82,19 +82,8 @@ Edit ONLY _d/ai-journal.md. Match the voice of existing entries: personal, refle
 
 [[steps]]
 id = "rebuild-backlinks"
-title = "Rebuild back-links.json so the new entry's links are indexed"
 needs = ["draft-entry"]
-description = """
-The new entry adds internal links, so back-links.json must be regenerated or it goes
-stale the moment the entry merges. Build the site so _site reflects the new entry, then
-rebuild backlinks (this only regenerates back-links.json — it does NOT commit):
-  just worktree-init            # fires a background jekyll build (loads the ruby-compat shim)
-  # WAIT for that build: poll until _site/index.html is freshly written (~60-90s).
-  #   LOG=/tmp/jekyll-worktree-$(git branch --show-current | tr '/' '-').log   # tail it if it stalls
-  just update-backlinks         # = uv run ./build_back_links.py build  ->  regenerates back-links.json
-Do NOT proceed on a stale/missing _site — it yields wrong backlinks. back-links.json may
-legitimately be unchanged (the entry added no new cross-links); that is fine.
-"""
+expand = "blog-rebuild-backlinks"   # shared step library: inlines the backlinks-rebuild flow
 
 [[steps]]
 id = "verify"

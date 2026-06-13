@@ -1,0 +1,24 @@
+formula = "blog-rebuild-backlinks"
+version = 1
+# Shared step library: the back-links.json rebuild flow, defined once and inlined
+# into any formula via a step with `expand = "blog-rebuild-backlinks"`.
+# Used by ai-journal-new and ai-journal-revise so the backlinks logic lives in one place.
+type = "expansion"
+
+[requires]
+formula_compiler = ">=2.0.0"
+
+[[template]]
+id = "{target}"
+title = "Rebuild back-links.json so the change's links are indexed"
+description = """
+The change adds/edits internal links, so back-links.json must be regenerated or it goes
+stale the moment it merges. Build the site so _site reflects the change, then rebuild
+backlinks (this only regenerates back-links.json — it does NOT commit):
+  just worktree-init            # fires a background jekyll build (loads the ruby-compat shim)
+  # WAIT for that build: poll until _site/index.html is freshly written (~60-90s).
+  #   LOG=/tmp/jekyll-worktree-$(git branch --show-current | tr '/' '-').log   # tail it if it stalls
+  just update-backlinks         # = uv run ./build_back_links.py build  ->  regenerates back-links.json
+Do NOT proceed on a stale/missing _site — it yields wrong backlinks. back-links.json may
+legitimately be unchanged (no new cross-links); that is fine.
+"""

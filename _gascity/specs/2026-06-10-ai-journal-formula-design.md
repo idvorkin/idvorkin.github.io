@@ -80,9 +80,9 @@ worktree and keep a pointer on the bead.
    persist it to a new tracking bead's `design`. Output the bead id.
 3. **draft-entry** — write the formatted entry at the top of Diary + update TOC,
    editing only `_d/ai-journal.md`.
-4. **rebuild-backlinks** — `just worktree-init` (jekyll build so `_site` reflects the
-   entry) → `just update-backlinks` to regenerate `back-links.json`, so the entry's
-   links are indexed and don't go stale on merge.
+4. **rebuild-backlinks** — `expand`s the shared **`blog-rebuild-backlinks`** formula
+   (jekyll build → `just update-backlinks`) so `back-links.json` reflects the entry's
+   links and doesn't go stale on merge. Defined once; reused here and in `revise`.
 5. **verify** _(judgment gate)_ — only `_d/ai-journal.md` + `back-links.json` changed;
    format right; every deep link resolves and matches the dossier; nothing fabricated;
    correct base. Abort + mail on failure.
@@ -102,12 +102,32 @@ worktree and keep a pointer on the bead.
    `gh pr view --comments`, which can bury a human comment behind a bot's),
    `git worktree add` the PR's **existing** branch.
 2. **apply** — make the changes; append any new research to the dossier.
-3. **land** — push the **same branch** (PR updates in place); only-`ai-journal.md`
-   check.
-4. **verify-addressed** _(gate)_ — re-enumerate review threads; PASS only if **every
+3. **rebuild-backlinks** — same shared `blog-rebuild-backlinks` expansion, so a
+   revision that changes the entry's links keeps `back-links.json` current.
+4. **land** — push the **same branch** (PR updates in place); only
+   `_d/ai-journal.md` + `back-links.json` check.
+5. **verify-addressed** _(gate)_ — re-enumerate review threads; PASS only if **every
    thread is resolved** (reply + resolve each as you address it). Don't notify with an
    open thread.
-5. **persist-notify** — append a rev comment to the bead; mail.
+6. **persist-notify** — append a rev comment to the bead; mail.
+
+## Shared steps (DRY via `expand`)
+
+`back-links.json` rebuild is needed by more than one formula, so it lives **once** as
+`blog-rebuild-backlinks` — a `type = "expansion"` formula whose `template` is the
+rebuild step. Consumers inline it with a single step:
+
+```toml
+[[steps]]
+id = "rebuild-backlinks"
+needs = ["draft-entry"]          # or ["apply"] in revise
+expand = "blog-rebuild-backlinks"
+```
+
+The template step uses `id = "{target}"`, so it takes over the consumer step's slot and
+keeps the DAG wiring (`… → rebuild-backlinks → …`). This is a **step library**, distinct
+from `extends` (whole-formula inheritance). `blog-backlinks` can be refactored onto the
+same expansion later.
 
 ## Invariants / safety
 
