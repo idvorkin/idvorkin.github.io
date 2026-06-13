@@ -13,12 +13,13 @@ id = "{target}"
 title = "Rebuild back-links.json so the change's links are indexed"
 description = """
 The change adds/edits internal links, so back-links.json must be regenerated or it goes
-stale the moment it merges. Build the site so _site reflects the change, then rebuild
-backlinks (this only regenerates back-links.json — it does NOT commit):
-  just worktree-init            # fires a background jekyll build (loads the ruby-compat shim)
-  # WAIT for that build: poll until _site/index.html is freshly written (~60-90s).
-  #   LOG=/tmp/jekyll-worktree-$(git branch --show-current | tr '/' '-').log   # tail it if it stalls
+stale the moment it merges. You are ALREADY inside the calling formula's worktree, so just
+build the site there and rebuild backlinks (this only regenerates back-links.json — it does
+NOT commit):
+  just jekyll-rebuild           # synchronous clean build of _site/ (loads the ruby-compat
+                                #   shim); blocks ~60-90s. Does NOT cut a worktree — it builds
+                                #   in the current dir. Its writes (_site/, _data/git.json) are
+                                #   gitignored, so the diff stays backlinks-only.
   just update-backlinks         # = uv run ./build_back_links.py build  ->  regenerates back-links.json
-Do NOT proceed on a stale/missing _site — it yields wrong backlinks. back-links.json may
-legitimately be unchanged (no new cross-links); that is fine.
+back-links.json may legitimately be unchanged (no new cross-links); that is fine.
 """
