@@ -31,6 +31,7 @@ AI is spawning a whole new vocabulary — some of it genuinely useful, some of i
 - [Infinite Loop](#infinite-loop)
 - [Human In, On, and Out of the Loop](#human-in-on-and-out-of-the-loop)
 - [In Distribution](#in-distribution)
+- [Reverse Centaur](#reverse-centaur)
 - [Year of Wonder](#year-of-wonder)
 
 <!-- vim-markdown-toc-end -->
@@ -145,6 +146,12 @@ A term borrowed from machine learning: data the model has seen during training i
 Yegge identifies this as one of his [six levers for software survival](https://steve-yegge.medium.com/software-survival-3-0-97a2a6255f7b) — he calls it the "Awareness" lever. Tools like Git and Postgres have essentially zero awareness cost because every model has been trained on mountains of content about them. Your team's internal CLI tool? Completely out of distribution. You're paying the awareness tax every time an agent encounters it.
 
 My take: this matters because it changes how you think about tooling decisions. When your team picks a well-known tool over a technically superior but obscure one, that's not just "going with the safe choice" — it's a rational calculation about agent effectiveness. Your CLAUDE.md files, your onboarding docs, your custom slash commands — these are all attempts to push out-of-distribution knowledge into the agent's working context. The better you are at this, the more effective your AI-augmented team becomes. And when you're evaluating whether to build custom tooling vs. using something standard, "will agents already know how to use it?" is now a legitimate engineering criterion.
+
+## Reverse Centaur
+
+A centaur is a human assisted by a machine — the human is in command, the machine carries the load. A [reverse centaur](https://pluralistic.net/2025/12/05/pop-that-bubble/) flips it: the human becomes the appendage to the automated system. Cory Doctorow's phrase is "a machine head on a human body" — a person serving as the "squishy meat appendage for an uncaring machine," driven at superhuman pace under constant surveillance. His examples sting because they're already here: the Amazon delivery driver watched by in-cab AI cameras, a peripheral for a van that can't yet drive itself; the writer kept on as the [accountability sink](https://locusmag.com/feature/commentary-cory-doctorow-reverse-centaurs/) — the "human in the loop" who exists to take the blame when the machine gets it wrong.
+
+My take: this is the failure mode my whole AI-native approach is built to dodge. [Human-on-the-loop done right](#human-in-on-and-out-of-the-loop) keeps you in command — supervising the system, intervening when it drifts. Rubber-stamping fifty AI PRs a day is the reverse-centaur version of the same job: the overhead of in-the-loop with none of the judgment, a meat appendage approving a machine's output. The [AI Cockpit](#ai-cockpit) and [Agency](#agency) are the centaur — you set the direction, the AI does the work, and you stay the one who decides. The whole point is to ride the horse, not become it.
 
 ## Year of Wonder
 
