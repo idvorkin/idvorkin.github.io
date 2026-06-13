@@ -231,9 +231,8 @@ jekyll-rebuild: jekyll-clean
     fi
     echo "✅ Jekyll rebuild complete - site available in _site/"
 
-# Synchronous incremental Jekyll build — reuses .jekyll-cache (NO clean). Use when you
-# just need _site/ current after an edit (e.g. before regenerating back-links.json):
-# fast on a warm cache, full only on a cold/fresh worktree.
+# Synchronous Jekyll build (NO clean — reuses .jekyll-cache). ~5s on this site. Use when
+# you just need _site/ current after an edit; it's a dependency of update-backlinks.
 jekyll-build:
     #!/usr/bin/env sh
     set -eu
@@ -409,7 +408,9 @@ docker-run2:
 docker-run:
     docker run -v ~/blog:/root/blog -it -p 35729:35729 -p 4000:4000 devdocker npm run jekyll:container
 
-update-backlinks:
+# Regenerate back-links.json. Depends on jekyll-build (~5s) so _site/ is always current
+# before backlinks are derived from it — never reads a stale _site.
+update-backlinks: jekyll-build
     uv run ./build_back_links.py build
 
 # Update backlinks with a custom output file

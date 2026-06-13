@@ -13,11 +13,8 @@ id = "{target}"
 title = "Rebuild back-links.json so the change's links are indexed"
 description = """
 The change adds/edits internal links, so back-links.json must be regenerated or it goes
-stale the moment it merges. You are ALREADY inside the calling formula's worktree, so just
-build _site there and rebuild backlinks (this only regenerates back-links.json — it does
-NOT commit):
-  just jekyll-build             # synchronous incremental build (reuses .jekyll-cache; NO clean) —
-                                #   fast on a warm cache, full only on a cold/fresh worktree.
-  just update-backlinks         # regenerates back-links.json from _site/
+stale the moment it merges. You are ALREADY inside the calling formula's worktree, so
+regenerate backlinks there (this does NOT commit):
+  just update-backlinks         # rebuilds _site (via its jekyll-build dep, ~5s) then back-links.json
 back-links.json may legitimately be unchanged (no new cross-links); that is fine.
 """
