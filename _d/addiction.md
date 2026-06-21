@@ -20,19 +20,16 @@ Addiction is not about drugs or alcohol - it is about escape. Quoting "Do the Wo
 - [Is doing the thing you want to be doing an addiction?](#is-doing-the-thing-you-want-to-be-doing-an-addiction)
   - [The logical approach](#the-logical-approach)
   - [Examples from my life](#examples-from-my-life)
+  - [Don't narrow to one passion (the monoculture trap)](#dont-narrow-to-one-passion-the-monoculture-trap)
   - [In the moment: the 20-minute opportunity-cost check](#in-the-moment-the-20-minute-opportunity-cost-check)
 - [Current Addictions](#current-addictions)
   - [TikTok (Thought Escape)](#tiktok-thought-escape)
 - [Hypo Addictions](#hypo-addictions)
   - [Social Media Analytics](#social-media-analytics)
-    - [LinkedIn friend count](#linkedin-friend-count)
-    - [Stock market price](#stock-market-price)
 - [The silly things I have watched on Vertical Short Form (TikTok, Reels, Shorts)](#the-silly-things-i-have-watched-on-vertical-short-form-tiktok-reels-shorts)
   - [Lifting Videos](#lifting-videos)
   - [Lifting Videos - Antonly](#lifting-videos---antonly)
   - [Retirement Videos](#retirement-videos)
-    - [Like Advice from retired people](#like-advice-from-retired-people)
-    - [Financial Advice](#financial-advice)
   - [People living in their cars](#people-living-in-their-cars)
   - [Truckers](#truckers)
 - [Beaten addictions (for now)](#beaten-addictions-for-now)
@@ -40,7 +37,6 @@ Addiction is not about drugs or alcohol - it is about escape. Quoting "Do the Wo
   - [TikTok (and it's back)](#tiktok-and-its-back)
   - [Covid 19 News](#covid-19-news)
   - [Alcohol](#alcohol)
-    - ["Zero proof" drinks](#zero-proof-drinks)
   - [Thinking about work while at home](#thinking-about-work-while-at-home)
   - [Work Addiction and Success Addiction](#work-addiction-and-success-addiction)
 - [Getting Rid of 'em](#getting-rid-of-em)
@@ -82,6 +78,14 @@ Once you've placed the activity, the response follows:
 The test: if I had to stop right now, which feels like relief, which feels like loss, and which feels like nothing in particular? TikTok = relief. Vibe coding = loss. Magic = nothing in particular — and that's fine.
 
 **The question to ask:** Am I doing this because I genuinely want to, or because I can't stand NOT doing it — and either way, is the rest of my life better or worse for it?
+
+### Don't narrow to one passion (the monoculture trap)
+
+There's an opportunity cost hiding on the passion side too, and it's not the one you'd expect. The trap isn't a single passion eating your time — it's letting it become your _only_ passion. When I narrow down to one, I overdo it on that one, and the passions I'm not tending atrophy. They wither from neglect.
+
+That's a bigger problem than it looks, because passions break. The one I over-invest in eventually goes down — the project ends, the body gives out, the thing stops loving me back. And when it does, the others can't carry me, because I let them wither while I wasn't looking. I'm down on all fronts at once.
+
+So I keep a portfolio of passions alive, even at lower intensity. When one's down, the others can carry me. Monoculture is fragile; diversification is what lets you take a hit on one front and stay standing.
 
 ### In the moment: the 20-minute opportunity-cost check
 
