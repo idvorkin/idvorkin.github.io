@@ -12,6 +12,8 @@ ai_default_image: true
 
 Security is super interesting, AI is super interesting, the combination, is super-duper interesting!
 
+{% include alert.html content='I built two companion field-map explainers: the [AI Red-Teaming ramp-up](https://idvorkin-ai-tools.github.io/red-teaming-ramp-up/) — OWASP LLM Top 10, the jailbreak canon, tooling, evals — and the [AI Safety field map](https://idvorkin-ai-tools.github.io/ai-safety-field-map/) — failure modes, alignment, interpretability, evals, governance.' style="info" %}
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
@@ -48,8 +50,6 @@ Security is super interesting, AI is super interesting, the combination, is supe
 {% include youtube.html src="zjkBMFhNj_g?start=2743" %}
 
 ## Attack Vectors
-
-If you're a security person crossing into AI, I built a [Red Teaming ramp-up map](https://idvorkin-ai-tools.github.io/red-teaming-ramp-up/) that lays out the territory below — the OWASP LLM Top 10, the jailbreak canon, tooling, and evals — as a single field map to ramp up on.
 
 ### Leaked System Prompts
 
@@ -184,8 +184,6 @@ As mapped to chapters in :qa
 - LLM10: Model theft | Unauthorized access and extraction of LLM models can lead to economic losses and data breaches. | Chapter 8 (discussed as model cloning)
 
 ## AI Safety/Ethics
-
-Safety is its own field, adjacent to security but not the same. I built an [AI Safety field map](https://idvorkin-ai-tools.github.io/ai-safety-field-map/) covering the failure modes, the alignment canon, interpretability, evals, and governance — a companion to the red-teaming map above for the safety side of the house.
 
 ### Protecting Users from Mental Harm
 
