@@ -19,6 +19,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-06-22](#2026-06-22)
+    - [Steve Yegge's Flat Curve Society: The Plateau Is Good News for Engineers](#steve-yegges-flat-curve-society-the-plateau-is-good-news-for-engineers)
   - [2026-06-13](#2026-06-13)
     - [My API Key Was Public for a Year](#my-api-key-was-public-for-a-year)
   - [2026-05-31](#2026-05-31)
@@ -257,6 +259,19 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2026-06-22
+
+#### Steve Yegge's Flat Curve Society: The Plateau Is Good News for Engineers
+
+- **TOP Takeaway**: [Steve Yegge argues](https://steve-yegge.medium.com/the-flat-curve-society-36c8b01eb33b) that AI capability keeps climbing exponentially, but most of us will _experience_ a flat curve — partly because frontier models get locked down "like nuclear weapons," and partly because we each hit two personal ceilings: the **Demand Horizon** (our problems aren't hard enough to feel the gains) and the **Discernment Horizon** (the output gets better than our ability to check it). His reframe: a plateau isn't failure, it's stable ground you can finally build on.
+- **The two horizons** (the part that stuck):
+  - **Demand Horizon** — you stop perceiving model improvements because your problems don't stretch them. Yegge's antidote: keep a stash of "pocket evals" — unsolved problems you throw at each new model to actually feel the delta.
+  - **Discernment Horizon** — the darker ceiling: "past some level of capability there is no human alive who can verify the model output. Everyone has a discernment horizon, even Dario." Once you're past it you can't tell if the model is right, because checking the work is itself beyond you. Ties straight to my [When AI Shows Its Work: Verification as Trust](#when-ai-shows-its-work-verification-as-trust) and the [review-cost < generation-cost](#review-cost--generation-cost--prs-were-net-win) thread — verification is the bottleneck, and it has a personal horizon.
+- **AI literacy is measurable** — citing Netflix's Ezra Savard, he buckets people by _tokens burned per day_: 0M (non-users) → 4M (single-agent, synchronous) → 12–15M (multi-agent, async). The kicker: people **jump cohorts in ~5 hours** of hands-on training on _real_ work, manager in the room, during work hours. "AI Literacy does not come for free. The only thing you get for free is AI Anxiety."
+- **Advanced literacy flips from max-spend to min-waste** — once you're multi-agent the game stops being "use more tokens" and becomes routing each task to the _minimum capable model_. Same lesson the [$230 Week](#the-230-week-when-cheap-coding-isnt) and [Dylan Patel on token supply/demand](#dylan-patel-on-the-supply-and-demand-of-ai-tokens) beat into me — tokens are a budget, and waste is the enemy.
+- **SaaS survives the plateau** — counter to "AI eats all software": stable model capability tilts buy-vs-build back toward _buy_, because full AI rewrites stay expensive and risky, so existing SaaS keeps its moat. A more optimistic counterpoint to his own [Software Survival 3.0](#software-survival-30---steve-yegges-framework-for-ai-era-software) and the [AI Vampire / who-captures-the-10x](#steve-yegges-ai-vampire---who-captures-the-10x) framing.
+- **Why I'm keeping this**: it's the most _hopeful_ Yegge piece in a while — "a plateau lets us set up a camp and start building. We've been on unstable ground." It reframes the anxiety (am I keeping up?) into a craft question (am I building literacy + verification habits on the rungs I already have?).
 
 ### 2026-06-13
 
