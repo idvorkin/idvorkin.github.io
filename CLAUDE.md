@@ -103,6 +103,7 @@ For content/visual PRs, include a rendered screenshot in the PR description. Pro
    - **`just jekyll-serve` drifts to a free port** (`:4001`, `:4002`, …) when another repo's Jekyll holds `:4000`, and prints `🔨 serving … on :PORT`. Screenshot the port it actually bound, not a hardcoded `4000` — find it via `running-servers status --json` (the entry whose `directory` is this repo). A second `just jekyll-serve` in the same dir fails fast with "already running here". (Requires `running-servers >= 0.2.0`.)
    - Content changes need a rebuild — wait for livereload or give it a few seconds after saving
    - **`jekyll serve --incremental --livereload` serves fresh HTML over HTTP but does NOT write `_site/*.html` to disk.** `prek`'s anchor checker and lychee read disk, so they'll flag phantom broken anchors right after you edit a heading. Fix: `bundle exec jekyll build --incremental` (the live server can stay up), then re-run the hook.
+   - **Pre-commit hook escape hatch.** The `anchor-checker` hook has `pass_filenames: false` in `.pre-commit-config.yaml` — it scans every markdown file in `_d/`, `_posts/`, `_td/` regardless of what's staged. Pre-existing broken anchors elsewhere in the repo block unrelated commits. When `bundle exec jekyll build --incremental` can't refresh `_site/` (env issue, stale worktree, etc.), commit with `SKIP=anchor-checker git commit ...` — NOT `--no-verify`, which silently skips every hook.
 
 1. **Take screenshot** of the rendered page section:
 
