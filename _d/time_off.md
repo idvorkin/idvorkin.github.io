@@ -58,6 +58,7 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
 - [Other Thoughts](#other-thoughts)
   - [Optimize for energy, not time](#optimize-for-energy-not-time)
   - [Can you have too much time off?](#can-you-have-too-much-time-off)
+- [Appendix: 9 Rules for a Happier Vacation (Arthur Brooks)](#appendix-9-rules-for-a-happier-vacation-arthur-brooks)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -386,3 +387,17 @@ _Having an abundance of discretionary time is sometimes even linked to lower sub
 discretionary time can be attenuated when people spend this time on productive activities._
 
 This research highlights the importance of **productive activities** during extended time off - which is exactly what the gap year approach emphasizes. Rather than endless leisure, a well-designed gap year focuses on intentional investment in health, relationships, and mastery. See the [gap year paradox](/gap-year) for the full framework.
+
+## Appendix: 9 Rules for a Happier Vacation (Arthur Brooks)
+
+I struggle to take real time off, so this one hit home. Below is my distillation of Arthur Brooks' Office Hours episode [9 Rules for a Happier Vacation](https://www.youtube.com/watch?v=GNDJQjt-KRg) — he frames it as "me-search," a fellow workaholic figuring out how to actually do this. Full transcript in [this gist](https://gist.github.com/idvorkin-ai-tools/d22b29fea197d9d9f027092df4d1d4ad).
+
+1. **Discern your motive before you book anything.** Most unhappy vacations come from a mismatch — you want to escape, but you booked something intense and stressful. A 2015 study of Danish tourists found six core motives: exploration, escape, relationship-deepening (family/friends), prestige, nature, and history/heritage. Know yours (you can have a few, ranked), then design around them. Almost regardless of motive, sharing the trip with people you love amplifies the payoff — we're social animals.
+2. **Savor the anticipation.** One of the happiest parts of a vacation is looking forward to it; studies of Dutch and Chinese vacationers show happiness rises in the _weeks before_ the trip. It's dopamine — the "wanting" neuromodulator — so feed it deliberately: book early, study your destination, learn about what you'll see. (Brooks studied opera scores with his son for months beforehand.) Just don't over-inflate it into a fantasy of constant bliss, or you'll be disappointed.
+3. **Manage your expectations about how long the glow lasts.** Your limbic system isn't built to keep you permanently happy — a great vacation lifts mood and energy, but a 2010 Dutch study found the effect largely vanishes by the end of the first week back. The goal is great memories and real recovery, not a six-month life change.
+4. **Break one big trip into smaller "vacationettes."** Fifteen long weekends beat one month in Borneo for most people — more frequent, smaller doses give a more durable afterglow, since the next break is always around the corner. (See _Effects of Short Vacations_, Stress and Health.)
+5. **Take fewer pictures.** Photographing a moment pulls you out of it — you're mentally living in the future-past instead of the present, and estimates put the enjoyment hit at 15–20% during highly enjoyable activities. Brooks' compromise: assign one person per day to take all the photos; everyone else is off duty.
+6. **Don't post.** This is the prestige motive (social comparison) hijacking your trip — you start living the vacation for other people's envy, which reliably makes you enjoy it less (Journal of Consumer Research, 2018). Posting _for the explicit purpose of sharing_ is the worst case. At minimum, don't post while you're still there.
+7. **Leave your work at home.** "Just a little work" is a trap for workaholics: a Stress and Health finding shows work activities lower the positive effects of vacation 1, 3, and 10 days after returning — it kills the glow. If you need to busy your mind, read something generative you're not paid to learn instead.
+8. **Come home early.** Don't travel up to the last second — get back a few days before you have to return to work so you can ease in. That buffer becomes a mini second vacation. Brooks aims to be home before the weekend rather than landing Sunday night into a full work week. ("Living each day as if it were the first day of your honeymoon and the last day of your vacation." — Tolstoy.)
+9. **Brace yourself on return and manage your feelings.** A successful vacation sharpens the contrast with ordinary life, so the day-to-day can feel flat or frustrating coming back — like a carrot after candy. It's completely normal; expecting it defuses it. Brooks' policy: don't make significant life changes in the first week back. Not being surprised is how you keep your feelings from managing you.
