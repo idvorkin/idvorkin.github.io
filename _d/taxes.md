@@ -186,10 +186,12 @@ As a community property state, Washington provides a massive advantage - **BOTH 
 
 **Important Caveats:**
 
-- Estate tax applies over $13.61M
+- Federal estate tax applies over $13.61M — but WA has its own estate tax kicking in at ~$3M per person, with **no spousal portability**, so a married couple wastes the first-to-die's ~$3M exemption unless they set up a credit shelter trust
 - Doesn't apply to retirement accounts (401k, IRA)
 - Stock could crash before death
 - Opportunity cost of holding vs. diversifying
+
+For the trust mechanics that capture both WA exemptions — and where a credit shelter trust trades estate tax saved against the lost second step-up — see [Trusts in Washington: Living Trust & Credit Shelter Trust](/trusts), which also covers revocable living trusts, QTIP, QDOT for non-citizen/green-card spouses, and worked examples.
 
 Remember: Balance tax optimization with actually living your life. Your heirs would prefer you alive and happy over any tax savings.
 
