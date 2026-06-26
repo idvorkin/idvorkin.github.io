@@ -6381,7 +6381,7 @@
         },
         "/taxes": {
             "description": "Most of the tax information on the web is a mess. It’s confusing because it tries to apply to everyone, and it’s often written by non-engineers for non-engineers. This post is the taxes-only slice of my notes — capital gains, Washington State cap-gains mechanics, step-up in basis, retirement-account mechanics (IRAs, 401(k)s, Roth, 529s), and related tax-code levers for a software engineer’s life.\n\n",
-            "doc_size": 37000,
+            "doc_size": 38000,
             "file_path": "_site/taxes.html",
             "incoming_links": [
                 "/gap-year-igor",
@@ -6389,7 +6389,7 @@
                 "/raccoon-history",
                 "/stock-concentration"
             ],
-            "last_modified": "2026-04-18T10:07:20-07:00",
+            "last_modified": "2026-06-26T16:58:15.700461+00:00",
             "markdown_path": "_d/taxes.md",
             "outgoing_links": [
                 "/money"
