@@ -6387,7 +6387,8 @@
                 "/gap-year-igor",
                 "/money",
                 "/raccoon-history",
-                "/stock-concentration"
+                "/stock-concentration",
+                "/trusts"
             ],
             "last_modified": "2026-06-26T16:58:15.700461+00:00",
             "markdown_path": "_d/taxes.md",
@@ -7281,15 +7282,17 @@
             "url": "/tribe"
         },
         "/trusts": {
-            "description": "General information, not legal or tax advice — see disclaimer at the end. All figures verified against current sources as of June 2026.\n\n",
+            "description": "Most estate-planning advice on the web is either lawyer-jargon written for other lawyers, or generic “everyone needs a trust!” content that ignores where you actually live. This post is the trusts slice of my notes — what a plain revocable living trust actually does, what a credit shelter trust is, and why Washington’s own estate tax (a low ~$3M exemption and, critically, no spousal portability) is the difference between your family keeping one exemption or two. It also covers the “qualified” trusts people half-remember (QTIP, and QDOT for a non-citizen / green-card spouse), the income-tax and step-up tradeoffs, and worked examples — including the break-even math on when a trust isn’t worth it.\n\n",
             "doc_size": 72000,
             "file_path": "_site/trusts.html",
             "incoming_links": [
                 "/taxes"
             ],
-            "last_modified": "2026-06-26T17:09:31.015345+00:00",
+            "last_modified": "2026-06-26T17:38:41.065528+00:00",
             "markdown_path": "_d/trusts.md",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/taxes"
+            ],
             "redirect_url": "",
             "title": "Trusts in Washington: Living Trust & Credit Shelter Trust",
             "url": "/trusts"

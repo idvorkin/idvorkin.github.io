@@ -9,7 +9,9 @@ comments: true
 permalink: /trusts
 ---
 
-_General information, not legal or tax advice — see disclaimer at the end. All figures verified against current sources as of June 2026._
+Most estate-planning advice on the web is either lawyer-jargon written for other lawyers, or generic "everyone needs a trust!" content that ignores where you actually live. This post is the trusts slice of my notes — what a plain revocable living trust actually does, what a credit shelter trust is, and why Washington's own estate tax (a low ~$3M exemption and, critically, **no spousal portability**) is the difference between your family keeping one exemption or two. It also covers the "qualified" trusts people half-remember (QTIP, and QDOT for a non-citizen / green-card spouse), the income-tax and step-up tradeoffs, and worked examples — including the break-even math on when a trust _isn't_ worth it.
+
+For capital gains, step-up in basis, and retirement-account mechanics, see the companion [taxes post](/taxes). _Not legal or tax advice — see the disclaimer at the end. Figures are current as of June 2026, and Washington's rules just changed, so confirm specifics with a WA estate attorney + CPA._
 
 <!-- prettier-ignore-start -->
 
