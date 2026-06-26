@@ -6392,7 +6392,8 @@
             "last_modified": "2026-06-26T16:58:15.700461+00:00",
             "markdown_path": "_d/taxes.md",
             "outgoing_links": [
-                "/money"
+                "/money",
+                "/trusts"
             ],
             "redirect_url": "",
             "title": "Taxes — Capital Gains, WA State, Step-Up, and QSBS",
@@ -7278,6 +7279,20 @@
             "redirect_url": "",
             "title": "My Tribe",
             "url": "/tribe"
+        },
+        "/trusts": {
+            "description": "General information, not legal or tax advice — see disclaimer at the end. All figures verified against current sources as of June 2026.\n\n",
+            "doc_size": 72000,
+            "file_path": "_site/trusts.html",
+            "incoming_links": [
+                "/taxes"
+            ],
+            "last_modified": "2026-06-26T17:09:31.015345+00:00",
+            "markdown_path": "_d/trusts.md",
+            "outgoing_links": [],
+            "redirect_url": "",
+            "title": "Trusts in Washington: Living Trust & Credit Shelter Trust",
+            "url": "/trusts"
         },
         "/untangled": {
             "description": "Your daughter isn’t breaking — she’s running seven developmental strands at once. Each strand tells you what’s normal, what’s not, and where dads keep getting it wrong. These are my notes from Lisa Damour’s Untangled, filtered through what’s actually mattered raising a teenage girl.\n\n",

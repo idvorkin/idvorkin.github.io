@@ -191,7 +191,7 @@ As a community property state, Washington provides a massive advantage - **BOTH 
 - Stock could crash before death
 - Opportunity cost of holding vs. diversifying
 
-For the trust mechanics that capture both WA exemptions — and where a credit shelter trust trades estate tax saved against the lost second step-up — see [Trusts in Washington: Living Trust & Credit Shelter Trust](https://gist.github.com/idvorkin-ai-tools/99272e11be8397bbb467a32dc2ec71a5), which also covers revocable living trusts, QTIP, QDOT for non-citizen/green-card spouses, and worked examples.
+For the trust mechanics that capture both WA exemptions — and where a credit shelter trust trades estate tax saved against the lost second step-up — see [Trusts in Washington: Living Trust & Credit Shelter Trust](/trusts), which also covers revocable living trusts, QTIP, QDOT for non-citizen/green-card spouses, and worked examples.
 
 Remember: Balance tax optimization with actually living your life. Your heirs would prefer you alive and happy over any tax savings.
 
