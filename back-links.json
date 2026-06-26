@@ -147,6 +147,7 @@
         "/fuck-shame": "/shame",
         "/future-igor": "/time-traveler",
         "/future-self": "/time-traveler",
+        "/gas-city-why": "/why-gas-city",
         "/gastown": "/wally",
         "/genai-intern": "/genai-talk",
         "/getting-things-done": "/gtd",
@@ -678,7 +679,7 @@
         },
         "/addiction": {
             "description": "Addiction is not about drugs or alcohol - it is about escape. Quoting “Do the Work”: When we can’t stand the fear, the shame, and the self-reproach that we feel, we obliterate it with an addiction. The addiction becomes the shadow version, the evil twin of our calling to service or to art. That’s why addicts are so interesting and so boring at the same time. They’re interesting because they’re called to something — something new, something unique, something that we, watching, can’t wait to see them bring forth into manifestation. At the same time, they’re boring because they never do the work. The addiction becomes his purpose, his novel, his adventure, his great love. The work of art or service that might have been produced is replaced by the drama, conflict, and suffering of the addict’s crazy, haunted, shattered life.\n\n",
-            "doc_size": 31000,
+            "doc_size": 32000,
             "file_path": "_site/addiction.html",
             "incoming_links": [
                 "/act",
@@ -698,7 +699,7 @@
                 "/vibing",
                 "/walking-with-god"
             ],
-            "last_modified": "2026-05-10T20:20:53-07:00",
+            "last_modified": "2026-06-21T10:44:14-07:00",
             "markdown_path": "_d/addiction.md",
             "outgoing_links": [
                 "/activation",
@@ -908,7 +909,8 @@
                 "/hill-climbing",
                 "/how-igor-chops",
                 "/igors-claws",
-                "/vibing"
+                "/vibing",
+                "/why-gas-city"
             ],
             "last_modified": "2026-05-02T16:12:35.964671+00:00",
             "markdown_path": "_d/ai-cockpit.md",
@@ -1066,7 +1068,7 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get lost\n\n",
-            "doc_size": 169000,
+            "doc_size": 178000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai",
@@ -1085,7 +1087,7 @@
                 "/walking-with-god",
                 "/y25"
             ],
-            "last_modified": "2026-06-07T10:19:45-07:00",
+            "last_modified": "2026-06-22T06:01:19-07:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/7-habits",
@@ -1170,7 +1172,7 @@
         },
         "/ai-native-vocab": {
             "description": "AI is spawning a whole new vocabulary — some of it genuinely useful, some of it pure hype. This is my running glossary of the terms worth knowing, with my take on what each one actually means and why it matters. It’s the companion glossary to The AI Native Engineering Manager.\n\n",
-            "doc_size": 34000,
+            "doc_size": 35000,
             "file_path": "_site/ai-native-vocab.html",
             "incoming_links": [
                 "/ai-native-manager",
@@ -1180,7 +1182,7 @@
                 "/explainers",
                 "/pet-projects"
             ],
-            "last_modified": "2026-06-07T10:20:51-07:00",
+            "last_modified": "2026-06-13T10:34:10-07:00",
             "markdown_path": "_d/ai-native-vocab.md",
             "outgoing_links": [
                 "/agency",
@@ -1198,7 +1200,7 @@
         },
         "/ai-operator": {
             "description": "Using AI well is a skill, like driving a car or operating heavy machinery. Nobody hands you the keys to a forklift and says “figure it out.” There’s a license, training, and hard-won intuition about what the machine can and can’t do. AI is the same — except most of us skipped the training, there is no manual, and we’re writing the rules as we go.\n\n",
-            "doc_size": 52000,
+            "doc_size": 54000,
             "file_path": "_site/ai-operator.html",
             "incoming_links": [
                 "/ai-cockpit",
@@ -1206,7 +1208,7 @@
                 "/how-igor-chops",
                 "/life-journal"
             ],
-            "last_modified": "2026-05-03T12:09:37-07:00",
+            "last_modified": "2026-06-21T06:54:14-07:00",
             "markdown_path": "_d/ai-operator.md",
             "outgoing_links": [
                 "/ai-cockpit",
@@ -1317,7 +1319,7 @@
                 "/ai-faq",
                 "/ai-journal"
             ],
-            "last_modified": "2026-06-07T10:19:45-07:00",
+            "last_modified": "2026-06-21T06:48:50-07:00",
             "markdown_path": "_d/ai-security.md",
             "outgoing_links": [
                 "/ai-faq"
@@ -1351,12 +1353,12 @@
         },
         "/ai-training": {
             "description": "I don’t train models for a living — I build on top of them. But to use LLMs well, it helps to carry a rough map of how one gets made: what pre-training buys you, what post-training changes, and where fine-tuning, RAG, and quantization actually fit. These are my working notes on that map, kept deliberately shallow — enough to make good decisions as a consumer of models, not to go train one.\n\n",
-            "doc_size": 35000,
+            "doc_size": 36000,
             "file_path": "_site/ai-training.html",
             "incoming_links": [
                 "/ai-inference"
             ],
-            "last_modified": "2026-06-08T13:34:13.844785+00:00",
+            "last_modified": "2026-06-26T10:54:49-07:00",
             "markdown_path": "_d/ai-training.md",
             "outgoing_links": [
                 "/ai-art",
@@ -1986,10 +1988,10 @@
         },
         "/changelog": {
             "description": "A weekly summary of what changed on this blog and across my GitHub projects. Useful for returning readers who want to catch up on new content and updates.\n\n",
-            "doc_size": 187000,
+            "doc_size": 202000,
             "file_path": "_site/changelog.html",
             "incoming_links": [],
-            "last_modified": "2026-06-09T06:49:04-07:00",
+            "last_modified": "2026-06-22T07:24:34-07:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
                 "/42",
@@ -2049,6 +2051,7 @@
                 "/untangled",
                 "/vibing",
                 "/wally",
+                "/why-gas-city",
                 "/win-win",
                 "/y26"
             ],
@@ -3501,9 +3504,10 @@
             "file_path": "_site/gas-city.html",
             "incoming_links": [
                 "/ai-journal",
-                "/gas-city-rig"
+                "/gas-city-rig",
+                "/why-gas-city"
             ],
-            "last_modified": "2026-06-09T07:32:23-07:00",
+            "last_modified": "2026-06-09T12:07:03-07:00",
             "markdown_path": "_d/gas-city.md",
             "outgoing_links": [
                 "/gas-city-home",
@@ -3523,7 +3527,8 @@
             "incoming_links": [
                 "/gas-city",
                 "/gas-city-rig",
-                "/igors-claws"
+                "/igors-claws",
+                "/why-gas-city"
             ],
             "last_modified": "2026-05-28T06:56:08-07:00",
             "markdown_path": "_d/gas-city-home.md",
@@ -3539,7 +3544,8 @@
             "doc_size": 27000,
             "file_path": "_site/gas-city-rig.html",
             "incoming_links": [
-                "/gas-city"
+                "/gas-city",
+                "/why-gas-city"
             ],
             "last_modified": "2026-06-07T15:55:21-07:00",
             "markdown_path": "_d/gas-city-rig.md",
@@ -3873,6 +3879,7 @@
                 "/hill-climbing",
                 "/pet-projects",
                 "/wally",
+                "/why-gas-city",
                 "/y25",
                 "/y26"
             ],
@@ -3989,7 +3996,8 @@
                 "/claw",
                 "/gas-city",
                 "/vibing",
-                "/wally"
+                "/wally",
+                "/why-gas-city"
             ],
             "last_modified": "2026-05-03T13:16:40-07:00",
             "markdown_path": "_d/igors-claws.md",
@@ -6329,7 +6337,7 @@
         },
         "/synergize": {
             "description": "We’ve all got stuff we’re good at and stuff we’re bad at. Combine them right and the system is greater than the sum of the parts — sometimes a lot greater. Synergy is the payoff for everything that came before: independence, Win/Win, and seeking first to understand all converge here. These are my insights from 7 habits Chapter 6.\n\n",
-            "doc_size": 28000,
+            "doc_size": 29000,
             "file_path": "_site/synergize.html",
             "incoming_links": [
                 "/7-habits",
@@ -6414,7 +6422,7 @@
         },
         "/td/back_ref": {
             "description": "This blog is my collection of evergreen notes, a place to have my thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here’s my strategy to create them.\n\n",
-            "doc_size": 13000,
+            "doc_size": 14000,
             "file_path": "_site/td/back_ref.html",
             "incoming_links": [],
             "last_modified": "2022-04-16T15:22:43-07:00",
@@ -6829,7 +6837,7 @@
         },
         "/timeoff": {
             "description": "Time off is critical, it’s how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with turning your 1 week off into an action-packed tour of Disneyland. But, there are other kinds of time off that we’ll discuss too. Like most things, time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!\n\n",
-            "doc_size": 38000,
+            "doc_size": 42000,
             "file_path": "_site/timeoff.html",
             "incoming_links": [
                 "/activation",
@@ -6857,7 +6865,7 @@
                 "/timeoff-2025-08",
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-06-06T18:11:26.466427+00:00",
+            "last_modified": "2026-06-23T07:20:47-07:00",
             "markdown_path": "_d/time_off.md",
             "outgoing_links": [
                 "/addiction",
@@ -7167,7 +7175,7 @@
                 "/timeoff",
                 "/y26"
             ],
-            "last_modified": "2026-06-03T16:04:27-07:00",
+            "last_modified": "2026-06-26T08:25:09-07:00",
             "markdown_path": "_d/time-off-2026-07.md",
             "outgoing_links": [
                 "/meta",
@@ -7283,12 +7291,12 @@
         },
         "/trusts": {
             "description": "Most estate-planning advice on the web is either lawyer-jargon written for other lawyers, or generic “everyone needs a trust!” content that ignores where you actually live. This post is the trusts slice of my notes — what a plain revocable living trust actually does, what a credit shelter trust is, and why Washington’s own estate tax (a low ~$3M exemption and, critically, no spousal portability) is the difference between your family keeping one exemption or two. It also covers the “qualified” trusts people half-remember (QTIP, and QDOT for a non-citizen / green-card spouse), the income-tax and step-up tradeoffs, and worked examples — including the break-even math on when a trust isn’t worth it.\n\n",
-            "doc_size": 72000,
+            "doc_size": 73000,
             "file_path": "_site/trusts.html",
             "incoming_links": [
                 "/taxes"
             ],
-            "last_modified": "2026-06-26T17:38:41.065528+00:00",
+            "last_modified": "2026-06-26T11:58:37-07:00",
             "markdown_path": "_d/trusts.md",
             "outgoing_links": [
                 "/taxes"
@@ -7481,7 +7489,8 @@
                 "/gas-city",
                 "/gas-city-home",
                 "/igors-claws",
-                "/vibing"
+                "/vibing",
+                "/why-gas-city"
             ],
             "last_modified": "2026-05-03T10:10:54-07:00",
             "markdown_path": "_d/wally.md",
@@ -7512,7 +7521,7 @@
         },
         "/weeks": {
             "description": "\n\n",
-            "doc_size": 4347000,
+            "doc_size": 4348000,
             "file_path": "_site/weeks.html",
             "incoming_links": [
                 "/balance"
@@ -7552,6 +7561,26 @@
             "redirect_url": "",
             "title": "What makes a leader",
             "url": "/what-makes-a-leader"
+        },
+        "/why-gas-city": {
+            "description": "I’ve got a Gas City running at home now, and the question I get isn’t how it works — it’s why. I already rent the most expensive brain I can get, and I’ve got a stack of CLAUDE.md files telling it how I like things done. So what does a city buy me that a good prompt doesn’t? The short answer: Gas City isn’t a smarter agent. It’s the layer that turns work into something durable that many agents can pick up, run, and hand off — without me babysitting any of them. This post is the why; the mechanics are their own post.\n\n",
+            "doc_size": 26000,
+            "file_path": "_site/why-gas-city.html",
+            "incoming_links": [],
+            "last_modified": "2026-06-13T10:59:43-07:00",
+            "markdown_path": "_d/why-gas-city.md",
+            "outgoing_links": [
+                "/ai-cockpit",
+                "/gas-city",
+                "/gas-city-home",
+                "/gas-city-rig",
+                "/how-igor-chops",
+                "/igors-claws",
+                "/wally"
+            ],
+            "redirect_url": "",
+            "title": "Why Gas City? Orchestration, Not a Smarter Prompt",
+            "url": "/why-gas-city"
         },
         "/why-is-no-one-referring": {
             "description": "Your customers don’t provide referrals because it’s a risk to their credibility. Remove the credibility risk, and your referrals will follow.\n\n",
