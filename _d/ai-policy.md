@@ -9,7 +9,7 @@ tags:
 
 AI is the biggest force multiplier I've ever experienced. I build it for a living, and I have an AI life coach named Larry — so "use less AI" was never going to be my policy. A multiplier amplifies whatever you point it at. The whole question is what to point it at, and when to put it down.
 
-{% include ai-slop.html percent="50" %}
+{% include ai-slop.html percent="80" %}
 
 This is one instance of a bigger rule — how I do [time off](/timeoff-2026-07): be where my feet are.
 
