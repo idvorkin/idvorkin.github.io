@@ -231,6 +231,21 @@ jekyll-rebuild: jekyll-clean
     fi
     echo "✅ Jekyll rebuild complete - site available in _site/"
 
+# Synchronous Jekyll build (NO clean — reuses .jekyll-cache). ~5s on this site. Use when
+# you just need _site/ current after an edit; it's a dependency of update-backlinks.
+jekyll-build:
+    #!/usr/bin/env sh
+    set -eu
+    # Load the Ruby 3.2+/4.0 compat shim the old github-pages gems need (mirrors jekyll-rebuild).
+    export RUBYOPT="-r$(pwd)/_ruby_compat.rb"
+    echo "🔨 Building Jekyll site (incremental; reusing .jekyll-cache)..."
+    if [ "$(uname)" = "Darwin" ]; then
+        ~/homebrew/opt/ruby/bin/bundle exec jekyll build
+    else
+        bundle exec jekyll build
+    fi
+    echo "✅ Jekyll build complete - site available in _site/"
+
 # Fire-and-forget background jekyll build for fresh worktrees.
 # Populates _site/ so the anchor-checker pre-commit hook passes by
 # the time the first commit lands. No clean step — incremental build
@@ -393,7 +408,9 @@ docker-run2:
 docker-run:
     docker run -v ~/blog:/root/blog -it -p 35729:35729 -p 4000:4000 devdocker npm run jekyll:container
 
-update-backlinks:
+# Regenerate back-links.json. Depends on jekyll-build (~5s) so _site/ is always current
+# before backlinks are derived from it — never reads a stale _site.
+update-backlinks: jekyll-build
     uv run ./build_back_links.py build
 
 # Update backlinks with a custom output file

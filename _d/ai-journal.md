@@ -19,6 +19,10 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-06-22](#2026-06-22)
+    - [Steve Yegge's Flat Curve Society: The Plateau Is Good News for Engineers](#steve-yegges-flat-curve-society-the-plateau-is-good-news-for-engineers)
+  - [2026-06-13](#2026-06-13)
+    - [My API Key Was Public for a Year](#my-api-key-was-public-for-a-year)
   - [2026-05-31](#2026-05-31)
     - [Friction = Focus: When Attention Stops Being a Proxy for Value](#friction--focus-when-attention-stops-being-a-proxy-for-value)
   - [2026-05-11](#2026-05-11)
@@ -255,6 +259,36 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2026-06-22
+
+#### Steve Yegge's Flat Curve Society: The Plateau Is Good News for Engineers
+
+- **TOP Takeaway**: [Steve Yegge argues](https://steve-yegge.medium.com/the-flat-curve-society-36c8b01eb33b) that AI capability keeps climbing exponentially, but most of us will _experience_ a flat curve — partly because frontier models get locked down "like nuclear weapons," and partly because we each hit two personal ceilings: the **Demand Horizon** (our problems aren't hard enough to feel the gains) and the **Discernment Horizon** (the output gets better than our ability to check it). His reframe: a plateau isn't failure, it's stable ground you can finally build on.
+- **The two horizons** (the part that stuck):
+  - **Demand Horizon** — you stop perceiving model improvements because your problems don't stretch them. Yegge's antidote: keep a stash of "pocket evals" — unsolved problems you throw at each new model to actually feel the delta.
+  - **Discernment Horizon** — the darker ceiling: "past some level of capability there is no human alive who can verify the model output. Everyone has a discernment horizon, even Dario." Once you're past it you can't tell if the model is right, because checking the work is itself beyond you. Ties straight to my [When AI Shows Its Work: Verification as Trust](#when-ai-shows-its-work-verification-as-trust) and the [review-cost < generation-cost](#review-cost--generation-cost--prs-were-net-win) thread — verification is the bottleneck, and it has a personal horizon.
+- **AI literacy is measurable** — citing Netflix's Ezra Savard, he buckets people by _tokens burned per day_: 0M (non-users) → 4M (single-agent, synchronous) → 12–15M (multi-agent, async). The kicker: people **jump cohorts in ~5 hours** of hands-on training on _real_ work, manager in the room, during work hours. "AI Literacy does not come for free. The only thing you get for free is AI Anxiety."
+- **Advanced literacy flips from max-spend to min-waste** — once you're multi-agent the game stops being "use more tokens" and becomes routing each task to the _minimum capable model_. Same lesson the [$230 Week](#the-230-week-when-cheap-coding-isnt) and [Dylan Patel on token supply/demand](#dylan-patel-on-the-supply-and-demand-of-ai-tokens) beat into me — tokens are a budget, and waste is the enemy.
+- **SaaS survives the plateau** — counter to "AI eats all software": stable model capability tilts buy-vs-build back toward _buy_, because full AI rewrites stay expensive and risky, so existing SaaS keeps its moat. A more optimistic counterpoint to his own [Software Survival 3.0](#software-survival-30---steve-yegges-framework-for-ai-era-software) and the [AI Vampire / who-captures-the-10x](#steve-yegges-ai-vampire---who-captures-the-10x) framing.
+- **Why I'm keeping this**: it's the most _hopeful_ Yegge piece in a while — "a plateau lets us set up a camp and start building. We've been on unstable ground." It reframes the anxiety (am I keeping up?) into a craft question (am I building literacy + verification habits on the rungs I already have?).
+
+### 2026-06-13
+
+#### My API Key Was Public for a Year
+
+- **TOP Takeaway**: A live Anthropic API key of mine sat in a public GitHub repo for about a year. Auto-capture tooling that commits session logs to a public repo is a landmine — one of my chop-logs hooks saved an entire code-review session, `ps`/env dump and all, straight into a _tracked, public_ repo. Rotate the key, gitignore the logs (or add a secret filter), and assume any key that's been public for a year is already harvested.
+- **The Problem**: I was deep in a debugging session — [Gas City](/gas-city) was down — when a `ps` dump spilled every API key into the transcript, because the city's tmux env exports them. My shell pushes ~20 secrets into _every_ shell via [`export_secrets`](https://github.com/idvorkin/settings/blob/9025a60cccdfc3f41e01c88c7764c39303b2ced2/shared/zsh_include.sh#L389-L420) — `ANTHROPIC_API_KEY` and `ASSEMBLYAI_API_KEY` among them. Seeing them on screen made me nervous, so I asked the obvious question: "did we leak these anywhere?"
+- **What Worked** — the agent did the forensic grind I'd never sit down and do by hand:
+  - **Found it**: turned up the live Anthropic key in my public [`idvorkin/Settings`](https://github.com/idvorkin/settings) repo, inside an auto-captured code-review log [committed 2025-05-26 in `36b971f`](https://github.com/idvorkin/settings/blob/36b971f81d7a4d6ec2c08539de1995874d72a12d/zz-chop-logs/2025-05-26_17-06-code-review-y-py-vs-clean-code-principles.md). Public for ~12 months.
+  - **Proved it was live**: a read-only `GET /v1/models` returned `200`. A working key, not an expired one.
+  - **Mapped the blast radius**: diffed every value in my private `secretBox.json` against the public repo's _full_ git history, plus a secret-pattern sweep across tracked files and history. Found a second key — an AssemblyAI key — in the same commit. Everything else clean.
+  - **Confirmed the fix took**: I revoked the key in the console; the agent re-probed → `401`. Dead, verified.
+  - This is the journal-worthy part: diffing a year of public history against a private secret store, validating a key against a live endpoint, then confirming the revocation — tedious, systematic, exactly what an agent is good at. By hand I'd have eyeballed it and moved on.
+- **What Didn't** — the uncomfortable parts:
+  - **The key was never even needed.** Claude Code runs on my Max subscription; the inherited env key was silently forcing per-token API billing instead of my plan — the same [cheap-coding-isn't-cheap dynamic from the $230 Week](#the-230-week-when-cheap-coding-isnt). Dropping it fixed the leak _and_ the billing.
+  - **The auto-capture pipeline had no secret filter.** A hook that commits session transcripts to a tracked public repo is the exact opposite of the [one-token-one-repo blast-radius discipline](#one-repo-one-token-the-closest-you-can-get-to-write-only-on-github) — an unscoped, unfiltered firehose into public. Mine ran for a year before I noticed.
+  - And the honest part: a key public that long should be assumed harvested. Revoking it closes the door now; I have no idea who already walked through.
 
 ### 2026-05-31
 

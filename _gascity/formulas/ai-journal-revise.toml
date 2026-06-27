@@ -1,0 +1,113 @@
+formula = "ai-journal-revise"
+description = "Revise an existing AI-journal entry PR from review feedback: read the tracking bead id from the PR description, rehydrate the research dossier + PR comments + existing branch, apply the changes, push the SAME branch so the PR updates in place, append the rev to the dossier, and mail. Never pushes to main, never opens a second PR."
+
+# vapor = root-only wisp; ONE agent runs the steps in sequence, so the bead id
+# resolved in `hydrate` is carried in-context through the later steps.
+phase = "vapor"
+
+[vars.pr]
+description = "PR number or URL to revise (e.g. 692). The tracking bead id is read from the PR description's `Tracking-bead:` line — so you only need the PR, nothing to remember."
+default = ""
+
+[vars.entry_bead]
+description = "Optional override of the tracking bead id. Normally left blank: hydrate reads it from the PR's `Tracking-bead:` line. Set only for legacy PRs that predate that convention."
+default = ""
+
+[vars.blog_repo]
+description = "Absolute path to the blog repo checkout (worktree base)."
+default = "/home/developer/gits/idvorkin.github.io"
+
+[vars.notify]
+description = "gc mail recipient to notify on completion."
+default = "mayor"
+
+[[steps]]
+id = "hydrate"
+title = "Resolve the bead from the PR, then rehydrate research + content + feedback"
+description = """
+The PR is self-describing: ai-journal-new writes a `Tracking-bead: <id>` line into the
+PR description. Resolve the bead from the PR (or use the {{entry_bead}} override):
+  BEAD="{{entry_bead}}"
+  [ -n "$BEAD" ] || BEAD=$(gh pr view {{pr}} --json body -q .body | sed -n 's/^Tracking-bead:[[:space:]]*//p' | head -1)
+  echo "tracking bead = $BEAD"   # report this; the later steps act on this same bead
+
+Load everything the prior agent learned so this fresh session starts with full context
+— do NOT redo the research:
+  gc bd show "$BEAD"             # dossier is in the design field; PR URL + branch in notes
+
+Gather ALL feedback robustly — this is where a naive fetch fails. Do NOT rely on
+`gh pr view --comments` alone, and do NOT trust a bot's "N actionable comments" summary
+as the total: one verbose bot comment can bury a human one, and a truncated fetch hides
+the rest. Enumerate every review THREAD with its resolution state via GraphQL (nothing
+truncated, humans and bots equally visible), then address every thread where isResolved
+is false:
+  gh api graphql -f query='query($o:String!,$r:String!,$n:Int!){repository(owner:$o,name:$r){pullRequest(number:$n){reviewThreads(first:100){nodes{isResolved path comments(first:5){nodes{author{login} body}}}}}}}' -F o=<owner> -F r=<repo> -F n=<pr-number>
+Resolved/outdated threads are done; isResolved=false threads are your TODO list — reply
+to and resolve each one as you address it.
+
+Cut a worktree on the PR's EXISTING branch (NOT a new one) so the PR updates in place:
+  BR=$(gh pr view {{pr}} --json headRefName -q .headRefName)
+  git -C {{blog_repo}} fetch origin --prune
+  git -C {{blog_repo}} worktree add "{{blog_repo}}/.worktrees/$BR" "$BR"
+  cd "{{blog_repo}}/.worktrees/$BR"
+
+Report: the resolved bead id, a one-paragraph dossier summary, the open feedback items,
+and the worktree path. If the dossier already answers a feedback item, note that — you
+will not re-research it.
+"""
+
+[[steps]]
+id = "apply"
+title = "Apply the feedback (research once, persist forever)"
+needs = ["hydrate"]
+description = """
+Make the requested changes to _d/ai-journal.md, addressing each feedback item and
+keeping the author's voice. If a feedback item needs NEW research (a number or a link
+the dossier does not already have), find it ONCE and APPEND it to the tracking bead's
+dossier (the bead id resolved in hydrate) so future revisions inherit it:
+  gc bd update <tracking-bead> --design "<updated dossier markdown>"
+Edit ONLY _d/ai-journal.md.
+"""
+
+[[steps]]
+id = "rebuild-backlinks"
+needs = ["apply"]
+expand = "blog-rebuild-backlinks"   # shared step library: rebuild backlinks if the revision changed links
+
+[[steps]]
+id = "land"
+title = "Push the SAME branch (the existing PR updates in place)"
+needs = ["rebuild-backlinks"]
+description = """
+Light gate: confirm `git status --porcelain` shows only _d/ai-journal.md and back-links.json.
+Then commit and push the SAME branch — do NOT open a new PR, do NOT push to main:
+  git add _d/ai-journal.md back-links.json
+  git commit -m "fix(ai-journal): address review feedback"
+  git push            # same branch -> the existing PR updates
+If the push is rejected because the branch moved, rebase onto origin/<branch> and retry.
+"""
+
+[[steps]]
+id = "verify-addressed"
+title = "Verify NO review thread is left unaddressed (USE JUDGMENT)"
+needs = ["land"]
+description = """
+Before declaring the rev done, prove you addressed everything — re-enumerate the review
+threads and assert NONE is still unresolved:
+  gh api graphql -f query='query($o:String!,$r:String!,$n:Int!){repository(owner:$o,name:$r){pullRequest(number:$n){reviewThreads(first:100){nodes{isResolved comments(first:1){nodes{author{login} body}}}}}}}' -F o=<owner> -F r=<repo> -F n=<pr-number>
+PASS only if EVERY thread has isResolved=true. For each thread you addressed, post a
+reply and resolve it. If any thread is still isResolved=false you are NOT done: address
+it now, or — if it is genuinely out of scope / a non-issue — reply explaining why and
+resolve it. Do NOT proceed to notify while any thread is open.
+"""
+
+[[steps]]
+id = "persist-notify"
+title = "Log the rev on the bead + mail the outcome"
+needs = ["verify-addressed"]
+description = """
+Append a short decision-log entry to the tracking bead (resolved in hydrate) so the NEXT
+revision sees this rev's history (confirm the exact comment subcommand with `gc bd --help`):
+  gc bd comment <tracking-bead> "rev: <what changed>  (addressed: <feedback items>)"
+  gc mail send {{notify}} -s "ai-journal-revise: PR updated" -m "<PR-URL>/files  <one-line summary>"
+"""

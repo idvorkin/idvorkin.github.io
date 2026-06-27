@@ -20,6 +20,7 @@ The operators who get better aren't the ones who just practice. They're the ones
 <!-- vim-markdown-toc-start -->
 
 - [You Have a Finite Number of Thinking Tokens](#you-have-a-finite-number-of-thinking-tokens)
+- [You Review More Than You Make](#you-review-more-than-you-make)
 - [You Need to Get On the Loop](#you-need-to-get-on-the-loop)
 - [You Pick the Review Gate](#you-pick-the-review-gate)
 - [You Need to Use Voice](#you-need-to-use-voice)
@@ -50,6 +51,18 @@ Now imagine that's your brain. Because it is. You wake up with a finite budget o
 Simon Willison [said it plainly](https://simonwillison.net/2026/Apr/2/lennys-podcast/): running four agents in parallel left him "wiped out by 11 AM." _"There's a limit on human cognition regardless of how fast agents work."_ AI is supposed to make us more productive, but the people most AI-pilled are working harder than ever.
 
 The point of AI is to extend what you can get done in a day. If you spend your thinking tokens _supervising_ the AI instead of _directing_ it, you haven't saved anything — you've traded one kind of exhaustion for another. The rest of this post is how to actually spend them right.
+
+## You Review More Than You Make
+
+_Skills: [`bulk`](https://github.com/idvorkin/chop-conventions/blob/main/skills/bulk/SKILL.md) · [`delegate-to-other-repo`](https://github.com/idvorkin/chop-conventions/blob/main/skills/delegate-to-other-repo/SKILL.md)_
+
+Here's the trick that makes the budget go further: reacting to a draft costs far fewer thinking tokens than making one from scratch. Staring at a blank page and conjuring the thing is the expensive part. Looking at something already on the page and saying "yes, no, this bit's wrong" is cheap. Editors aren't as tired as writers for a reason.
+
+So let the AI make first. A generated draft hands you more inspiration than it costs you to read — it sparks the idea you didn't have, shows you the shape of the thing, and gives your judgment something to push against instead of nothing. You spend a few tokens reacting and get back a direction. That's a trade where you come out ahead.
+
+The draft being cheap matters in a second way: it's obvious which parts are throwaway. When every line is precious you polish all of them — you spend the same scarce attention on the boilerplate and the one paragraph that actually matters. When the draft cost thirty seconds to generate, you can see what's filler and skip it. Spend your tokens on the 10% that's load-bearing and let the rest stay rough.
+
+In practice this looks like: load a batch of asks onto the AI, let it do the slog, and spend your budget only on review and direction. I don't write the first version of much anymore. I react to one.
 
 ## You Need to Get On the Loop
 

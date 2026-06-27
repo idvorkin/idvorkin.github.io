@@ -31,6 +31,7 @@ AI is spawning a whole new vocabulary — some of it genuinely useful, some of i
 - [Infinite Loop](#infinite-loop)
 - [Human In, On, and Out of the Loop](#human-in-on-and-out-of-the-loop)
 - [In Distribution](#in-distribution)
+- [Reverse Centaur](#reverse-centaur)
 - [Year of Wonder](#year-of-wonder)
 
 <!-- vim-markdown-toc-end -->
@@ -145,6 +146,12 @@ A term borrowed from machine learning: data the model has seen during training i
 Yegge identifies this as one of his [six levers for software survival](https://steve-yegge.medium.com/software-survival-3-0-97a2a6255f7b) — he calls it the "Awareness" lever. Tools like Git and Postgres have essentially zero awareness cost because every model has been trained on mountains of content about them. Your team's internal CLI tool? Completely out of distribution. You're paying the awareness tax every time an agent encounters it.
 
 My take: this matters because it changes how you think about tooling decisions. When your team picks a well-known tool over a technically superior but obscure one, that's not just "going with the safe choice" — it's a rational calculation about agent effectiveness. Your CLAUDE.md files, your onboarding docs, your custom slash commands — these are all attempts to push out-of-distribution knowledge into the agent's working context. The better you are at this, the more effective your AI-augmented team becomes. And when you're evaluating whether to build custom tooling vs. using something standard, "will agents already know how to use it?" is now a legitimate engineering criterion.
+
+## Reverse Centaur
+
+A [centaur](https://pluralistic.net/2025/12/05/pop-that-bubble/) is a human assisted by a machine: the human is the head, the machine is the body — your judgment in charge, its horsepower doing the lifting. A reverse centaur flips the anatomy: the AI is the head, but it has no hands, so it wears a human as its body. The person becomes the appendage — doing the parts the machine can't reach, at the machine's pace. Cory Doctorow's example is the Amazon delivery driver hemmed in by [in-cab AI cameras](https://locusmag.com/feature/commentary-cory-doctorow-reverse-centaurs/), a living peripheral for a van that can't carry a parcel to the porch on its own.
+
+Framed that way it sounds grim, but it's really supervision rearranged. We've always had humans supervising other humans to get work done — the reverse centaur just hands part of that supervising to an AI. Whether it's dystopian or merely efficient comes down to who's holding the reins.
 
 ## Year of Wonder
 
