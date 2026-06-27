@@ -14,6 +14,8 @@ redirect_from:
 
 For context on why I take time off: [/time-off](/time-off).
 
+> 🧳 **Packing:** my reusable [packing master list](/packing) — the durable checklist every trip is trimmed from.
+
 ## At a Glance
 
 | Leg                                   | Dates           | Nights | Country     |
