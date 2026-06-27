@@ -241,6 +241,8 @@
         "/operator": "/ai-operator",
         "/orthodox": "/greek-orthodox",
         "/overwork": "/overload",
+        "/pack-list": "/packing",
+        "/packing-list": "/packing",
         "/pain": "/mental-pain",
         "/parkinson-law": "/parkinson",
         "/parkinsons-law": "/parkinson",
@@ -700,7 +702,7 @@
                 "/vibing",
                 "/walking-with-god"
             ],
-            "last_modified": "2026-05-10T20:20:53-07:00",
+            "last_modified": "2026-06-21T10:44:14-07:00",
             "markdown_path": "_d/addiction.md",
             "outgoing_links": [
                 "/activation",
@@ -1088,7 +1090,7 @@
                 "/walking-with-god",
                 "/y25"
             ],
-            "last_modified": "2026-06-07T10:19:45-07:00",
+            "last_modified": "2026-06-22T06:01:19-07:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/7-habits",
@@ -1183,7 +1185,7 @@
                 "/explainers",
                 "/pet-projects"
             ],
-            "last_modified": "2026-06-07T10:20:51-07:00",
+            "last_modified": "2026-06-13T10:34:10-07:00",
             "markdown_path": "_d/ai-native-vocab.md",
             "outgoing_links": [
                 "/agency",
@@ -1209,7 +1211,7 @@
                 "/how-igor-chops",
                 "/life-journal"
             ],
-            "last_modified": "2026-05-03T12:09:37-07:00",
+            "last_modified": "2026-06-21T06:54:14-07:00",
             "markdown_path": "_d/ai-operator.md",
             "outgoing_links": [
                 "/ai-cockpit",
@@ -1264,9 +1266,10 @@
             "doc_size": 17000,
             "file_path": "_site/ai-policy.html",
             "incoming_links": [
+                "/packing",
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-06-09T07:32:49-07:00",
+            "last_modified": "2026-06-26T17:49:10-07:00",
             "markdown_path": "_d/ai-policy.md",
             "outgoing_links": [
                 "/42",
@@ -1340,7 +1343,7 @@
                 "/ai-faq",
                 "/ai-journal"
             ],
-            "last_modified": "2026-06-07T10:19:45-07:00",
+            "last_modified": "2026-06-21T06:48:50-07:00",
             "markdown_path": "_d/ai-security.md",
             "outgoing_links": [
                 "/ai-faq"
@@ -1379,7 +1382,7 @@
             "incoming_links": [
                 "/ai-inference"
             ],
-            "last_modified": "2026-06-07T12:28:42-07:00",
+            "last_modified": "2026-06-26T17:38:58-07:00",
             "markdown_path": "_d/ai-training.md",
             "outgoing_links": [
                 "/ai-art",
@@ -2013,7 +2016,7 @@
             "doc_size": 209000,
             "file_path": "_site/changelog.html",
             "incoming_links": [],
-            "last_modified": "2026-06-09T06:49:04-07:00",
+            "last_modified": "2026-06-22T15:44:46+00:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
                 "/42",
@@ -3532,7 +3535,7 @@
                 "/gas-city-rig",
                 "/why-gas-city"
             ],
-            "last_modified": "2026-06-07T17:46:46-07:00",
+            "last_modified": "2026-06-09T12:07:03-07:00",
             "markdown_path": "_d/gas-city.md",
             "outgoing_links": [
                 "/gas-city-home",
@@ -5145,6 +5148,23 @@
             "title": "Dealing with Task Overload",
             "url": "/overload"
         },
+        "/packing": {
+            "description": "A durable, trip-agnostic packing checklist. This is the source — every specific trip gets a trimmed copy: take the relevant sections, prune to the trip, decide the per-trip choices (cameras, magic props, kettlebells). Don’t pack from this directly — pack from the trimmed trip file.\n\n",
+            "doc_size": 28000,
+            "file_path": "_site/packing.html",
+            "incoming_links": [
+                "/timeoff-2026-07"
+            ],
+            "last_modified": "2026-06-27T22:27:43.467069+00:00",
+            "markdown_path": "_d/packing.md",
+            "outgoing_links": [
+                "/ai-policy",
+                "/time-off"
+            ],
+            "redirect_url": "",
+            "title": "My Packing Master List",
+            "url": "/packing"
+        },
         "/pandas": {
             "description": "Copied from my GitHub techdiary\n\n",
             "doc_size": 23000,
@@ -6424,7 +6444,7 @@
                 "/stock-concentration",
                 "/trusts"
             ],
-            "last_modified": "2026-04-18T10:07:20-07:00",
+            "last_modified": "2026-06-26T10:36:33-07:00",
             "markdown_path": "_d/taxes.md",
             "outgoing_links": [
                 "/money",
@@ -6888,10 +6908,9 @@
                 "/timeoff-2023-08",
                 "/timeoff-2023-11",
                 "/timeoff-2024-08",
-                "/timeoff-2025-08",
-                "/timeoff-2026-07"
+                "/timeoff-2025-08"
             ],
-            "last_modified": "2026-06-06T11:14:15-07:00",
+            "last_modified": "2026-06-23T07:20:47-07:00",
             "markdown_path": "_d/time_off.md",
             "outgoing_links": [
                 "/addiction",
@@ -7202,13 +7221,14 @@
                 "/timeoff",
                 "/y26"
             ],
-            "last_modified": "2026-06-09T07:32:59-07:00",
+            "last_modified": "2026-06-27T22:27:43.467069+00:00",
             "markdown_path": "_d/time-off-2026-07.md",
             "outgoing_links": [
                 "/ai-policy",
                 "/awareness",
                 "/meta",
-                "/timeoff",
+                "/packing",
+                "/time-off",
                 "/y26"
             ],
             "redirect_url": "",
@@ -7325,7 +7345,7 @@
             "incoming_links": [
                 "/taxes"
             ],
-            "last_modified": "2026-06-27T00:47:24.156080+00:00",
+            "last_modified": "2026-06-26T11:58:37-07:00",
             "markdown_path": "_d/trusts.md",
             "outgoing_links": [
                 "/taxes"
@@ -7596,7 +7616,7 @@
             "doc_size": 26000,
             "file_path": "_site/why-gas-city.html",
             "incoming_links": [],
-            "last_modified": "2026-06-27T00:47:24.157628+00:00",
+            "last_modified": "2026-06-13T10:59:43-07:00",
             "markdown_path": "_d/why-gas-city.md",
             "outgoing_links": [
                 "/ai-cockpit",
