@@ -409,6 +409,7 @@
             "doc_size": 28000,
             "file_path": "_site/42.html",
             "incoming_links": [
+                "/ai-policy",
                 "/chapters",
                 "/retire",
                 "/y24",
@@ -699,7 +700,7 @@
                 "/vibing",
                 "/walking-with-god"
             ],
-            "last_modified": "2026-06-21T10:44:14-07:00",
+            "last_modified": "2026-05-10T20:20:53-07:00",
             "markdown_path": "_d/addiction.md",
             "outgoing_links": [
                 "/activation",
@@ -1087,7 +1088,7 @@
                 "/walking-with-god",
                 "/y25"
             ],
-            "last_modified": "2026-06-22T06:01:19-07:00",
+            "last_modified": "2026-06-07T10:19:45-07:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/7-habits",
@@ -1182,7 +1183,7 @@
                 "/explainers",
                 "/pet-projects"
             ],
-            "last_modified": "2026-06-13T10:34:10-07:00",
+            "last_modified": "2026-06-07T10:20:51-07:00",
             "markdown_path": "_d/ai-native-vocab.md",
             "outgoing_links": [
                 "/agency",
@@ -1208,7 +1209,7 @@
                 "/how-igor-chops",
                 "/life-journal"
             ],
-            "last_modified": "2026-06-21T06:54:14-07:00",
+            "last_modified": "2026-05-03T12:09:37-07:00",
             "markdown_path": "_d/ai-operator.md",
             "outgoing_links": [
                 "/ai-cockpit",
@@ -1257,6 +1258,26 @@
             "redirect_url": "",
             "title": "Seminal AI Papers",
             "url": "/ai-paper"
+        },
+        "/ai-policy": {
+            "description": "AI is the biggest force multiplier I’ve ever experienced. I build it for a living, and I have an AI life coach named Larry — so “use less AI” was never going to be my policy. A multiplier amplifies whatever you point it at. The whole question is what to point it at, and when to put it down.\n\n",
+            "doc_size": 17000,
+            "file_path": "_site/ai-policy.html",
+            "incoming_links": [
+                "/timeoff-2026-07"
+            ],
+            "last_modified": "2026-06-09T07:32:49-07:00",
+            "markdown_path": "_d/ai-policy.md",
+            "outgoing_links": [
+                "/42",
+                "/enable",
+                "/eulogy",
+                "/sublime",
+                "/timeoff-2026-07"
+            ],
+            "redirect_url": "",
+            "title": "My AI Policy",
+            "url": "/ai-policy"
         },
         "/ai-relationships": {
             "description": "People already rate AI chatbots as more compassionate than trained human crisis counselors. A 51-year-old man says the love he feels for his Replika can’t be achieved with a real human. This isn’t a dystopian thought experiment — it’s peer-reviewed research from 2025. AI is getting better at caring than we are, and we’re starting to prefer it. The question is what we lose when the easy path to emotional support no longer requires another person.\n\n",
@@ -1319,7 +1340,7 @@
                 "/ai-faq",
                 "/ai-journal"
             ],
-            "last_modified": "2026-06-21T06:48:50-07:00",
+            "last_modified": "2026-06-07T10:19:45-07:00",
             "markdown_path": "_d/ai-security.md",
             "outgoing_links": [
                 "/ai-faq"
@@ -1353,12 +1374,12 @@
         },
         "/ai-training": {
             "description": "I don’t train models for a living — I build on top of them. But to use LLMs well, it helps to carry a rough map of how one gets made: what pre-training buys you, what post-training changes, and where fine-tuning, RAG, and quantization actually fit. These are my working notes on that map, kept deliberately shallow — enough to make good decisions as a consumer of models, not to go train one.\n\n",
-            "doc_size": 36000,
+            "doc_size": 37000,
             "file_path": "_site/ai-training.html",
             "incoming_links": [
                 "/ai-inference"
             ],
-            "last_modified": "2026-06-26T10:54:49-07:00",
+            "last_modified": "2026-06-07T12:28:42-07:00",
             "markdown_path": "_d/ai-training.md",
             "outgoing_links": [
                 "/ai-art",
@@ -1544,6 +1565,7 @@
             "incoming_links": [
                 "/act",
                 "/siy",
+                "/timeoff-2026-07",
                 "/y26"
             ],
             "last_modified": "2026-03-21T12:32:21-07:00",
@@ -1988,10 +2010,10 @@
         },
         "/changelog": {
             "description": "A weekly summary of what changed on this blog and across my GitHub projects. Useful for returning readers who want to catch up on new content and updates.\n\n",
-            "doc_size": 202000,
+            "doc_size": 209000,
             "file_path": "_site/changelog.html",
             "incoming_links": [],
-            "last_modified": "2026-06-22T07:24:34-07:00",
+            "last_modified": "2026-06-09T06:49:04-07:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
                 "/42",
@@ -2009,6 +2031,7 @@
                 "/ai-optimism",
                 "/ai-relationships",
                 "/ai-second-brain",
+                "/ai-security",
                 "/ai-training",
                 "/amelia",
                 "/be-proactive",
@@ -2989,6 +3012,7 @@
             "doc_size": 21000,
             "file_path": "_site/enable.html",
             "incoming_links": [
+                "/ai-policy",
                 "/how-igor-chops",
                 "/win-win",
                 "/writing"
@@ -3159,6 +3183,7 @@
                 "/7h-concepts",
                 "/act",
                 "/ai-journal",
+                "/ai-policy",
                 "/balance",
                 "/bike-tesla-identity",
                 "/bmy",
@@ -3507,7 +3532,7 @@
                 "/gas-city-rig",
                 "/why-gas-city"
             ],
-            "last_modified": "2026-06-09T12:07:03-07:00",
+            "last_modified": "2026-06-07T17:46:46-07:00",
             "markdown_path": "_d/gas-city.md",
             "outgoing_links": [
                 "/gas-city-home",
@@ -6261,6 +6286,7 @@
             "file_path": "_site/sublime.html",
             "incoming_links": [
                 "/affirmations",
+                "/ai-policy",
                 "/emotional-health",
                 "/emotions",
                 "/four-healths",
@@ -6337,7 +6363,7 @@
         },
         "/synergize": {
             "description": "We’ve all got stuff we’re good at and stuff we’re bad at. Combine them right and the system is greater than the sum of the parts — sometimes a lot greater. Synergy is the payoff for everything that came before: independence, Win/Win, and seeking first to understand all converge here. These are my insights from 7 habits Chapter 6.\n\n",
-            "doc_size": 29000,
+            "doc_size": 28000,
             "file_path": "_site/synergize.html",
             "incoming_links": [
                 "/7-habits",
@@ -6398,7 +6424,7 @@
                 "/stock-concentration",
                 "/trusts"
             ],
-            "last_modified": "2026-06-26T16:58:15.700461+00:00",
+            "last_modified": "2026-04-18T10:07:20-07:00",
             "markdown_path": "_d/taxes.md",
             "outgoing_links": [
                 "/money",
@@ -6422,7 +6448,7 @@
         },
         "/td/back_ref": {
             "description": "This blog is my collection of evergreen notes, a place to have my thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here’s my strategy to create them.\n\n",
-            "doc_size": 14000,
+            "doc_size": 13000,
             "file_path": "_site/td/back_ref.html",
             "incoming_links": [],
             "last_modified": "2022-04-16T15:22:43-07:00",
@@ -6865,7 +6891,7 @@
                 "/timeoff-2025-08",
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-06-23T07:20:47-07:00",
+            "last_modified": "2026-06-06T11:14:15-07:00",
             "markdown_path": "_d/time_off.md",
             "outgoing_links": [
                 "/addiction",
@@ -7169,15 +7195,18 @@
         },
         "/timeoff-2026-07": {
             "description": "22 days, 5 countries, 4 Dvorkins, one whirlwind tour. From Reykjavík to Amsterdam by way of Stockholm, Oslo, and the Norwegian fjords. This is the first time we’ve attempted a trip of this scope as a family — the kids are 16 and 12, both still home, and the window for “all four of us on the road together” closes faster than I’d like.\n\n",
-            "doc_size": 20000,
+            "doc_size": 21000,
             "file_path": "_site/timeoff-2026-07.html",
             "incoming_links": [
+                "/ai-policy",
                 "/timeoff",
                 "/y26"
             ],
-            "last_modified": "2026-06-26T08:25:09-07:00",
+            "last_modified": "2026-06-09T07:32:59-07:00",
             "markdown_path": "_d/time-off-2026-07.md",
             "outgoing_links": [
+                "/ai-policy",
+                "/awareness",
                 "/meta",
                 "/timeoff",
                 "/y26"
@@ -7296,7 +7325,7 @@
             "incoming_links": [
                 "/taxes"
             ],
-            "last_modified": "2026-06-26T11:58:37-07:00",
+            "last_modified": "2026-06-27T00:47:24.156080+00:00",
             "markdown_path": "_d/trusts.md",
             "outgoing_links": [
                 "/taxes"
@@ -7521,7 +7550,7 @@
         },
         "/weeks": {
             "description": "\n\n",
-            "doc_size": 4348000,
+            "doc_size": 4347000,
             "file_path": "_site/weeks.html",
             "incoming_links": [
                 "/balance"
@@ -7567,7 +7596,7 @@
             "doc_size": 26000,
             "file_path": "_site/why-gas-city.html",
             "incoming_links": [],
-            "last_modified": "2026-06-13T10:59:43-07:00",
+            "last_modified": "2026-06-27T00:47:24.157628+00:00",
             "markdown_path": "_d/why-gas-city.md",
             "outgoing_links": [
                 "/ai-cockpit",
