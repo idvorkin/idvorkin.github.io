@@ -12,6 +12,12 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Week of 2026-06-22](#week-of-2026-06-22)
+  - [AI Journal: Yegge's Flat Curve Society](#ai-journal-yegges-flat-curve-society)
+  - [AI Operator: You Review More Than You Make](#ai-operator-you-review-more-than-you-make)
+  - [Addiction: Monoculture Trap](#addiction-monoculture-trap)
+  - [AI Security: Field-Map Explainers](#ai-security-field-map-explainers)
+  - [Other Projects (2026-06-22)](#other-projects-2026-06-22)
 - [Week of 2026-06-15](#week-of-2026-06-15)
   - [Why Gas City (new post!)](#why-gas-city-new-post)
   - [Gas City: Controller Loop + Runtime Providers](#gas-city-controller-loop--runtime-providers)
@@ -125,6 +131,61 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+## Week of 2026-06-22
+
+_7 commits this week_
+
+### AI Journal: Yegge's Flat Curve Society
+
+**[/ai-journal#2026-06-22](/ai-journal#2026-06-22)** — "Steve Yegge's Flat Curve Society: The Plateau Is Good News for Engineers." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/817e14b91)
+
+Yegge's core reframe: AI capability keeps climbing exponentially, but most of us will _experience_ a flat curve — not because the models plateau, but because we each hit two personal ceilings:
+
+- **Demand Horizon** — you stop perceiving model improvements because your problems don't stretch them. Antidote: maintain "pocket evals" — unsolved problems you throw at each new model to actually feel the delta.
+- **Discernment Horizon** — the darker one: past some capability level, there's no human who can verify the output because checking the work is itself beyond them. "Everyone has a discernment horizon, even Dario." Ties straight to the [verification-as-trust](/ai-journal#when-ai-shows-its-work-verification-as-trust) thread — verification is the bottleneck, and it has a personal horizon.
+
+AI literacy is measurable in tokens burned per day: 0M (non-users) → 4M (single-agent, synchronous) → 12–15M (multi-agent, async). People jump cohorts in ~5 hours of hands-on training on real work, manager in the room, during work hours. "AI Literacy does not come for free. The only thing you get for free is AI Anxiety." Advanced literacy flips from max-spend to min-waste: routing each task to the minimum capable model.
+
+The hopeful punchline: "a plateau lets us set up a camp and start building. We've been on unstable ground."
+
+### AI Operator: You Review More Than You Make
+
+**[/ai-operator#you-review-more-than-you-make](/ai-operator#you-review-more-than-you-make)** — new section on the token-budget asymmetry between making and reviewing. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1ed270b70)
+
+Reacting to a draft costs far fewer thinking tokens than generating from scratch. Staring at a blank page is expensive; looking at something already on the page and saying "yes, no, this bit's wrong" is cheap. Editors aren't as tired as writers for a reason.
+
+A generated draft returns more inspiration than it costs to read — it sparks the idea you didn't have, shows the shape of the thing, and gives judgment something to push against. And because the draft is cheap, it's obvious which parts are throwaway: spend scarce attention only on the 10% that's load-bearing and let the rest stay rough. Practical upshot: load a batch of asks onto the AI, let it do the slog, spend your budget only on review and direction.
+
+### Addiction: Monoculture Trap
+
+**[/addiction#dont-narrow-to-one-passion-the-monoculture-trap](/addiction#dont-narrow-to-one-passion-the-monoculture-trap)** — new subsection on the hidden risk of narrowing to a single passion. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d090befd7)
+
+The trap isn't a single passion eating your time — it's letting it become your _only_ passion. When one dominates, the others atrophy from neglect. That's fragile, because passions break: the project ends, the body gives out, the thing stops loving you back. When it does, the others can't carry you because they've withered. Down on all fronts at once.
+
+Solution: keep a portfolio of passions alive, even at lower intensity. When one's down, the others carry you. Monoculture is fragile; diversification is what lets you take a hit on one front and stay standing.
+
+### AI Security: Field-Map Explainers
+
+**[/ai-security](/ai-security)** — two companion explainer sites now linked from a top info alert: [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/c67946120)
+
+- **[AI Red-Teaming ramp-up](https://idvorkin-ai-tools.github.io/red-teaming-ramp-up/)** — OWASP LLM Top 10, the jailbreak canon, tooling, evals — a field map for security people crossing into AI.
+- **[AI Safety field map](https://idvorkin-ai-tools.github.io/ai-safety-field-map/)** — failure modes, alignment, interpretability, evals, governance — the safety-side companion.
+
+### Other Projects (2026-06-22)
+
+**[red-teaming-ramp-up](https://idvorkin-ai-tools.github.io/red-teaming-ramp-up/)** (explainer site) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/red-teaming-ramp-up)
+
+New static explainer site launched this week — a ramp-up map for red teaming AI systems:
+
+- **OWASP LLM Top 10** — per-risk explainer pages (LLM01–LLM10), each linking the official OWASP GenAI page [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/red-teaming-ramp-up/commit/08d4f0327)
+- **Canon papers** — per-paper explainers for GCG, AutoDAN, PAIR, TAP, Crescendo, Many-shot jailbreak, PAP — each with the source paper linked [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/red-teaming-ramp-up/commit/029865630)
+- **Tools & benchmarks** — Garak, PyRIT, Promptfoo, LLM Guard, NeMo Guardrails; AdvBench, HarmBench, JailbreakBench, DecodingTrust [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/red-teaming-ramp-up/commit/08d4f0327)
+- **Scaling laws foundations** — Kaplan 2020 + Chinchilla 2022, compute-optimal ratio, emergence/inverse-scaling [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/red-teaming-ramp-up/commit/05bbb4a7b)
+
+**[ai-safety-field-map](https://idvorkin-ai-tools.github.io/ai-safety-field-map/)** (explainer site) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/ai-safety-field-map) — companion safety-side field map launched. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/ai-safety-field-map/commit/e55416ba9)
+
+**[scandinavia-2026](https://github.com/idvorkin-ai-tools/scandinavia-2026)** — city-by-city trip guide repo for the Dvorkins' Jun–Jul 2026 Scandinavian tour (Iceland → Denmark → Sweden → Norway → Netherlands). [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/e55416ba9)
 
 ## Week of 2026-06-15
 
