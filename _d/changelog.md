@@ -12,6 +12,11 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Week of 2026-06-29](#week-of-2026-06-29)
+  - [Trusts in Washington (new post!)](#trusts-in-washington-new-post)
+  - [AI Training: Post-Training Methods Table](#ai-training-post-training-methods-table)
+  - [Time Off: Arthur Brooks' 9 Vacation Rules](#time-off-arthur-brooks-9-vacation-rules)
+  - [Other Projects (2026-06-29)](#other-projects-2026-06-29)
 - [Week of 2026-06-22](#week-of-2026-06-22)
   - [AI Journal: Yegge's Flat Curve Society](#ai-journal-yegges-flat-curve-society)
   - [AI Operator: You Review More Than You Make](#ai-operator-you-review-more-than-you-make)
@@ -131,6 +136,59 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+## Week of 2026-06-29
+
+_15 commits this week_
+
+### Trusts in Washington (new post!)
+
+**[/trusts](/trusts)** — a native WA estate-planning guide covering the living trust → credit shelter trust → QTIP/QDOT stack. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4259c6d19)
+
+Most estate-planning content online talks to lawyers or ignores where you live. This post is the WA-specific version:
+
+- **Revocable living trust** — what it actually does (avoids probate, privacy, incapacity planning) vs. what it doesn't (zero tax savings while alive — it's a grantor trust, still fully in your taxable estate).
+- **Credit shelter trust (CST)** — funded at the first spouse's death with up to one WA exemption (~$3M, 2026). Surviving spouse can still benefit (income + principal for health/education/maintenance), but the trust assets are excluded from their estate at second death. WA has **no spousal portability** — without a CST, the first-to-die's ~$3M exemption is simply lost. On a $10M estate: roughly **$550K saved**.
+- **The basis tradeoff** — CST assets get one step-up (first death) but no second step-up. You're trading WA estate tax saved (up to ~20% of one exemption) against potential future capital-gains cost.
+- **Non-citizen spouse (green-card holder)?** — the unlimited marital deduction only works when the surviving spouse is a citizen. If the survivor is non-citizen, add a **QDOT** to defer the tax. A "contingent QDOT" covers both orders of death; naturalizing before first death removes the issue entirely.
+- **Worked examples** including break-even math: at what future appreciation does a CST stop being worth it?
+
+Intro rewritten in Igor's article voice — no law-firm boilerplate. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/9873e6fbf) Companion to **[/taxes](/taxes)** (step-up in basis, capital gains, retirement accounts).
+
+### AI Training: Post-Training Methods Table
+
+**[/ai-training#post-training](/ai-training#post-training)** — replaced bullet-list overview with a six-column comparison table across SFT, RLHF, DPO, and RLVR. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/a0f500ff3)
+
+These four methods form a lineage — the table maps each one on: how it learns, who grades the output, whether a separate reward model is needed, what it's best for, and the key watch-out:
+
+- **SFT** — imitates curated answers (next-token loss on prompt→ideal-answer pairs). First and biggest behavior shift; bounded by demo quality.
+- **RLHF** — RL via PPO against a learned reward model. Humans rank outputs A-vs-B. Heavy pipeline; reward-model drift risk.
+- **DPO** — same A-vs-B preferences, but optimized directly as a classification loss — no RL loop, no separate reward model. Simpler and more stable than RLHF, most of the benefit.
+- **RLVR** — RL from verifiable rewards: reward = "did it get the right answer." The engine behind o1-style reasoning models. Only works where answers are checkable.
+- **RLAIF** — now called out separately as RLHF's cheap scalable variant (AI judge instead of humans).
+
+Also added cross-links from the deployment/serving section to [/ai-inference](/ai-inference). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/5e4118568)
+
+### Time Off: Arthur Brooks' 9 Vacation Rules
+
+**[/timeoff#appendix-9-rules-for-a-happier-vacation-arthur-brooks](/timeoff#appendix-9-rules-for-a-happier-vacation-arthur-brooks)** — distillation of Arthur Brooks' Office Hours episode on vacation science. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/612026656)
+
+Brooks frames it as "me-search" — a fellow workaholic figuring out how to actually take time off. Nine rules with the science cited:
+
+- **Discern your motive before booking** — six core Danish tourist motive types (exploration, escape, relationship-deepening, prestige, nature, history). Mismatch of motive to trip design = unhappy vacation.
+- **Savor the anticipation** — happiness rises in the _weeks before_ departure (Dutch/Chinese vacationer studies). It's dopamine feeding on the wanting; over-inflate it into a fantasy and you'll be disappointed.
+- **Break one big trip into smaller vacationettes** — fifteen long weekends beat one month away for durable afterglow. Next break always around the corner.
+- **Take fewer pictures** — photographing pulls you into future-past instead of the present. Estimated 15–20% enjoyment reduction. Compromise: one designated photographer per day, everyone else off duty.
+- **Don't post** — prestige motive (social comparison) hijacking your trip. Posting for others' envy reliably makes you enjoy it less (Journal of Consumer Research, 2018).
+- **Leave work at home** — work activities lower vacation's positive effects 1, 3, and 10 days after returning (Stress and Health). Read something generative instead.
+- **Come home early** — don't travel up to the last second; a buffer before re-entry becomes a mini second vacation.
+
+Full transcript in an [unlisted gist](https://gist.github.com/idvorkin-ai-tools/d22b29fea197d9d9f027092df4d1d4ad). Also: the July 2026 trip page ([/timeoff-2026-07](/timeoff-2026-07)) now links directly to the Scandinavian city-by-city [trip guide site](https://idvorkin-ai-tools.github.io/scandinavia-2026/). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/664352f8a)
+
+### Other Projects (2026-06-29)
+
+- **ai-policy** — AI-slop content percentage bumped from 50% to 80%. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d3ffb4a0f)
+- **[quack-track](https://github.com/idvorkin-ai-tools/quack-track)** — new repo stub created. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/quack-track/commit/7952b0809)
 
 ## Week of 2026-06-22
 
