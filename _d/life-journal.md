@@ -50,6 +50,16 @@ When adding a new entry:
 
 ## Diary
 
+### 2026-06-30
+
+#### Babalú Is Not a German Gnome
+
+Had the word "babalú" rattling around my head and was somehow sure it was a German gnome thing — a little carved fellow in a red hat. Asked, just to settle it.
+
+It's Afro-Cuban. Most famously the song Desi Arnaz belted out as Ricky Ricardo on I Love Lucy — "Babalú!" It traces to Babalú-Ayé, a Yoruba and Santería orisha tied to healing and sickness, carried to Cuba; Margarita Lecuona wrote the version everyone knows in the 1930s. Not a gnome, and not remotely German. A German garden gnome is a _Gartenzwerg_, which shares nothing with it except the slot they somehow occupy together in my head.
+
+Filing it as a clean little example of how confidently wrong a half-memory can be. The word _felt_ gnomish. The word is actually a Cuban chant to an orisha. The distance between "feels true" and "is true" was about four thousand miles and one ocean.
+
 ### 2026-05-02
 
 #### Walking with Alex Under the Trees

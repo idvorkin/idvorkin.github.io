@@ -460,7 +460,6 @@
             "file_path": "_site/7-habits.html",
             "incoming_links": [
                 "/7h-concepts",
-                "/ai-journal",
                 "/balance",
                 "/be-proactive",
                 "/books-that-defined-me",
@@ -696,20 +695,19 @@
                 "/productive",
                 "/psychic-shadows",
                 "/psychic-weight",
-                "/timeoff",
                 "/vibing",
                 "/walking-with-god"
             ],
-            "last_modified": "2026-05-10T20:20:53-07:00",
+            "last_modified": "2026-06-27T14:00:55.410952+00:00",
             "markdown_path": "_d/addiction.md",
             "outgoing_links": [
                 "/activation",
                 "/covid",
-                "/elder",
-                "/happy",
                 "/hobby",
                 "/mental-pain",
-                "/mind-at-work"
+                "/midlife",
+                "/mind-at-work",
+                "/satisfaction"
             ],
             "redirect_url": "",
             "title": "Escape Artists: The True Face of Addiction",
@@ -1088,22 +1086,22 @@
                 "/walking-with-god",
                 "/y25"
             ],
-            "last_modified": "2026-06-07T10:19:45-07:00",
+            "last_modified": "2026-06-27T14:00:55.410952+00:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
-                "/7-habits",
+                "/7h",
                 "/affirmations",
                 "/ai-art",
                 "/ai-journal",
                 "/ai-second-brain",
                 "/ai-security",
+                "/ai-talk",
                 "/chop",
                 "/chow",
                 "/claw",
                 "/end-in-mind",
                 "/eulogy",
                 "/gas-city",
-                "/genai-talk",
                 "/gpt",
                 "/hill-climbing",
                 "/how-igor-chops",
@@ -1209,7 +1207,7 @@
                 "/how-igor-chops",
                 "/life-journal"
             ],
-            "last_modified": "2026-05-03T12:09:37-07:00",
+            "last_modified": "2026-06-27T14:00:55.410952+00:00",
             "markdown_path": "_d/ai-operator.md",
             "outgoing_links": [
                 "/ai-cockpit",
@@ -1266,7 +1264,7 @@
             "incoming_links": [
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-06-09T07:32:49-07:00",
+            "last_modified": "2026-06-27T14:00:55.410952+00:00",
             "markdown_path": "_d/ai-policy.md",
             "outgoing_links": [
                 "/42",
@@ -1340,7 +1338,7 @@
                 "/ai-faq",
                 "/ai-journal"
             ],
-            "last_modified": "2026-06-07T10:19:45-07:00",
+            "last_modified": "2026-06-27T14:00:55.410952+00:00",
             "markdown_path": "_d/ai-security.md",
             "outgoing_links": [
                 "/ai-faq"
@@ -1379,7 +1377,7 @@
             "incoming_links": [
                 "/ai-inference"
             ],
-            "last_modified": "2026-06-07T12:28:42-07:00",
+            "last_modified": "2026-06-27T14:00:55.410952+00:00",
             "markdown_path": "_d/ai-training.md",
             "outgoing_links": [
                 "/ai-art",
@@ -2013,11 +2011,12 @@
             "doc_size": 209000,
             "file_path": "_site/changelog.html",
             "incoming_links": [],
-            "last_modified": "2026-06-09T06:49:04-07:00",
+            "last_modified": "2026-06-27T14:00:55.410952+00:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
                 "/42",
-                "/7h-concepts",
+                "/7h-c0",
+                "/7h-c7",
                 "/act",
                 "/activation",
                 "/addiction",
@@ -2076,7 +2075,8 @@
                 "/wally",
                 "/why-gas-city",
                 "/win-win",
-                "/y26"
+                "/work-gastown",
+                "/y2026"
             ],
             "redirect_url": "",
             "title": "Changelog",
@@ -2636,8 +2636,7 @@
                 "/productive",
                 "/psychic-shadows",
                 "/psychic-weight",
-                "/slow",
-                "/timeoff"
+                "/slow"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/resistance.md",
@@ -2910,7 +2909,6 @@
             "file_path": "_site/elder.html",
             "incoming_links": [
                 "/40yo",
-                "/addiction",
                 "/spiritual-health"
             ],
             "last_modified": "2026-01-25T16:42:46-08:00",
@@ -3158,7 +3156,6 @@
                 "/overload",
                 "/parkinson",
                 "/partner-trouble",
-                "/timeoff",
                 "/timeoff-2022-07",
                 "/walking-with-god"
             ],
@@ -3787,7 +3784,6 @@
             "doc_size": 32000,
             "file_path": "_site/happy.html",
             "incoming_links": [
-                "/addiction",
                 "/awareness",
                 "/chasing-daylight",
                 "/emotions",
@@ -4239,7 +4235,6 @@
                 "/gap-year-igor",
                 "/physical-health",
                 "/shoulder-pain",
-                "/timeoff",
                 "/untangled",
                 "/y24"
             ],
@@ -4401,7 +4396,7 @@
                 "/ai-operator",
                 "/larry"
             ],
-            "last_modified": "2026-06-06T10:30:21-07:00",
+            "last_modified": "2026-06-30T05:15:36.570428+00:00",
             "markdown_path": "_d/life-journal.md",
             "outgoing_links": [
                 "/ai-operator",
@@ -6424,7 +6419,7 @@
                 "/stock-concentration",
                 "/trusts"
             ],
-            "last_modified": "2026-04-18T10:07:20-07:00",
+            "last_modified": "2026-06-27T14:00:55.410952+00:00",
             "markdown_path": "_d/taxes.md",
             "outgoing_links": [
                 "/money",
@@ -6888,27 +6883,26 @@
                 "/timeoff-2023-08",
                 "/timeoff-2023-11",
                 "/timeoff-2024-08",
-                "/timeoff-2025-08",
-                "/timeoff-2026-07"
+                "/timeoff-2025-08"
             ],
-            "last_modified": "2026-06-06T11:14:15-07:00",
+            "last_modified": "2026-06-27T14:00:55.410952+00:00",
             "markdown_path": "_d/time_off.md",
             "outgoing_links": [
-                "/addiction",
+                "/addictions",
                 "/balloon",
-                "/d/resistance",
                 "/diet",
                 "/energy",
-                "/essentialism",
+                "/essential",
                 "/eulogy",
                 "/frog",
                 "/gap-year",
                 "/gap-year-igor",
                 "/happy",
-                "/kettlebell",
+                "/kettlebells",
                 "/magic",
                 "/mind-at-work",
                 "/parkinson",
+                "/resistance",
                 "/siy",
                 "/terzepatide",
                 "/timeoff-2020-03",
@@ -7202,13 +7196,13 @@
                 "/timeoff",
                 "/y26"
             ],
-            "last_modified": "2026-06-09T07:32:59-07:00",
+            "last_modified": "2026-06-27T14:00:55.410952+00:00",
             "markdown_path": "_d/time-off-2026-07.md",
             "outgoing_links": [
                 "/ai-policy",
                 "/awareness",
                 "/meta",
-                "/timeoff",
+                "/time-off",
                 "/y26"
             ],
             "redirect_url": "",
@@ -7325,7 +7319,7 @@
             "incoming_links": [
                 "/taxes"
             ],
-            "last_modified": "2026-06-27T00:47:24.156080+00:00",
+            "last_modified": "2026-06-27T14:00:55.410952+00:00",
             "markdown_path": "_d/trusts.md",
             "outgoing_links": [
                 "/taxes"
