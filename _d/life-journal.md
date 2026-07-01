@@ -12,6 +12,8 @@ A journal of random life observations. Keeping track of them so I don't forget w
 - [Upcoming](#upcoming)
 - [Diary](#diary)
   - [2026-07-01](#2026-07-01)
+    - [Meditating in a Church](#meditating-in-a-church)
+    - [Barefoot Down the Tower Ramp](#barefoot-down-the-tower-ramp)
     - [Happy Fluff](#happy-fluff)
   - [2026-05-02](#2026-05-02)
     - [Walking with Alex Under the Trees](#walking-with-alex-under-the-trees)
@@ -40,7 +42,7 @@ When adding a new entry:
 2. **Entry Title**: Each individual vignette gets an `#### Entry Title` heading
 3. **Length**: 2-4 short paragraphs per entry. If it wants to be longer, it probably wants to be its own post.
 4. **Voice**: Plain and direct. Self-aware is fine; preachy isn't. Specific details over abstraction.
-5. **Update TOC**: Regenerate the TOC with `:Mtoc update` (Igor will handle this if you skip it).
+5. **Update TOC**: ALWAYS regenerate the TOC after editing — run `.claude/skills/toc/toc.py regenerate _d/life-journal.md --max 4`. Don't leave it for Igor.
 6. **Images**: Maximum one image per entry. If the entry wants more visuals, it probably wants to be its own post.
 7. **Image source**: **Default to `{% include blob_image_float_right.html src="blog/<filename>.webp" %}`** — uploads land in the `idvorkin/blob` repo (two-PR dance: blob first, then blog). The float-right include wraps prose around the illustration; bare markdown `![](...)` and non-floated includes look out of place in this format. For one-off non-blob illustrations, fall back to `{% include image_float_right.html src="/images/<filename>.webp" alt="..." %}` (still floats; just sources locally). Bare `![](...)` — don't.
 8. **Image background**: **Generated illustrations default to transparent.** Pass `--transparent` to `gen-image`, or post-process the magenta with `magick <in> -alpha set -fuzz 18% -transparent magenta <out>` before uploading. Real photos are exempt (they have natural backgrounds). Why: the blog renders images on whatever background the layout uses — opaque magenta or chroma-keyed source looks broken in production.
@@ -53,6 +55,14 @@ When adding a new entry:
 ## Diary
 
 ### 2026-07-01
+
+#### Meditating in a Church
+
+Sat down in a church and meditated. The quiet a church keeps is a different kind than the quiet anywhere else — easier to borrow than to make.
+
+#### Barefoot Down the Tower Ramp
+
+Walked the tower ramp barefoot. Wanted to actually feel the thing instead of just being on it — the cold stone, the pitch of the slope, the grit the shoes usually edit out.
 
 #### Happy Fluff
 
