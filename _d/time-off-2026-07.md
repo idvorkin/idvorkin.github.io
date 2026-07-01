@@ -49,6 +49,7 @@ All 4 Dvorkins (Igor, Tori, Zach, Amelia). Iceland and Copenhagen legs are just 
 
 - Hang with Ammon — 2 days, no fixed agenda.
 - Walk Nyhavn + canals
+- **Marble Church (Marmorkirken)** — climb the dome tower for the Amalienborg→Opera axis + Sweden view
 - One nice meal as a family
 
 ### 🇸🇪 Stockholm (Jul 3–7) · [📍 map](https://www.google.com/maps/place/Stockholm)
