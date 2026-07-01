@@ -11,6 +11,8 @@ A journal of random life observations. Keeping track of them so I don't forget w
 
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-07-01](#2026-07-01)
+    - [Happy Fluff](#happy-fluff)
   - [2026-05-02](#2026-05-02)
     - [Walking with Alex Under the Trees](#walking-with-alex-under-the-trees)
   - [2026-04-22](#2026-04-22)
@@ -49,6 +51,16 @@ When adding a new entry:
 - Future life vignettes will land here before they get written up.
 
 ## Diary
+
+### 2026-07-01
+
+#### Happy Fluff
+
+{% include image_float_right.html src="/images/happy-fluff-2026-07-01.webp" alt="A tub of cotton candy labeled HAPPY FLUFF on a café shelf." %}
+
+Saw **HAPPY FLUFF** on the shelf. It's exactly how I'd describe my goal in life. Leaving happy fluff everywhere I go.
+
+[Dealer of Smiles and Wonder](/eulogy) is one of my favorite roles, and happy fluff is that in a tub: nearly weightless, no nutritional value, but brings people joy anyway. Leave a little in every room, walk away smiling.
 
 ### 2026-05-02
 
