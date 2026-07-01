@@ -700,7 +700,7 @@
                 "/vibing",
                 "/walking-with-god"
             ],
-            "last_modified": "2026-05-10T20:20:53-07:00",
+            "last_modified": "2026-06-21T10:44:14-07:00",
             "markdown_path": "_d/addiction.md",
             "outgoing_links": [
                 "/activation",
@@ -1088,7 +1088,7 @@
                 "/walking-with-god",
                 "/y25"
             ],
-            "last_modified": "2026-06-07T10:19:45-07:00",
+            "last_modified": "2026-06-22T06:01:19-07:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/7-habits",
@@ -1183,7 +1183,7 @@
                 "/explainers",
                 "/pet-projects"
             ],
-            "last_modified": "2026-06-07T10:20:51-07:00",
+            "last_modified": "2026-06-13T10:34:10-07:00",
             "markdown_path": "_d/ai-native-vocab.md",
             "outgoing_links": [
                 "/agency",
@@ -1209,7 +1209,7 @@
                 "/how-igor-chops",
                 "/life-journal"
             ],
-            "last_modified": "2026-05-03T12:09:37-07:00",
+            "last_modified": "2026-06-21T06:54:14-07:00",
             "markdown_path": "_d/ai-operator.md",
             "outgoing_links": [
                 "/ai-cockpit",
@@ -1266,7 +1266,7 @@
             "incoming_links": [
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-06-09T07:32:49-07:00",
+            "last_modified": "2026-06-26T17:49:10-07:00",
             "markdown_path": "_d/ai-policy.md",
             "outgoing_links": [
                 "/42",
@@ -1340,7 +1340,7 @@
                 "/ai-faq",
                 "/ai-journal"
             ],
-            "last_modified": "2026-06-07T10:19:45-07:00",
+            "last_modified": "2026-06-21T06:48:50-07:00",
             "markdown_path": "_d/ai-security.md",
             "outgoing_links": [
                 "/ai-faq"
@@ -1379,7 +1379,7 @@
             "incoming_links": [
                 "/ai-inference"
             ],
-            "last_modified": "2026-06-07T12:28:42-07:00",
+            "last_modified": "2026-06-26T17:38:58-07:00",
             "markdown_path": "_d/ai-training.md",
             "outgoing_links": [
                 "/ai-art",
@@ -2010,10 +2010,10 @@
         },
         "/changelog": {
             "description": "A weekly summary of what changed on this blog and across my GitHub projects. Useful for returning readers who want to catch up on new content and updates.\n\n",
-            "doc_size": 209000,
+            "doc_size": 216000,
             "file_path": "_site/changelog.html",
             "incoming_links": [],
-            "last_modified": "2026-06-09T06:49:04-07:00",
+            "last_modified": "2026-06-29T15:16:12+00:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
                 "/42",
@@ -2071,6 +2071,9 @@
                 "/spiritual-health",
                 "/synergy",
                 "/taxes",
+                "/timeoff",
+                "/timeoff-2026-07",
+                "/trusts",
                 "/untangled",
                 "/vibing",
                 "/wally",
@@ -2685,7 +2688,7 @@
         },
         "/day-in-the-life": {
             "description": "A running journal of days that actually worked - the ones where health habits stuck, family time hit different, or I remembered what it feels like to be fully alive. Not every day needs to be Instagram-worthy, but some days deserve a bookmark. This is that bookmark collection.\n\n",
-            "doc_size": 18000,
+            "doc_size": 19000,
             "file_path": "_site/day-in-the-life.html",
             "incoming_links": [],
             "last_modified": "2025-10-04T18:43:51-07:00",
@@ -3198,6 +3201,7 @@
                 "/hobby",
                 "/irl",
                 "/joy",
+                "/life-journal",
                 "/operating-manual",
                 "/raccoon-history",
                 "/retire",
@@ -3532,7 +3536,7 @@
                 "/gas-city-rig",
                 "/why-gas-city"
             ],
-            "last_modified": "2026-06-07T17:46:46-07:00",
+            "last_modified": "2026-06-09T12:07:03-07:00",
             "markdown_path": "_d/gas-city.md",
             "outgoing_links": [
                 "/gas-city-home",
@@ -3673,7 +3677,7 @@
         },
         "/grammerly": {
             "description": "\n\n",
-            "doc_size": 12000,
+            "doc_size": 13000,
             "file_path": "_site/grammerly.html",
             "incoming_links": [],
             "last_modified": "2025-08-24T09:03:19-07:00",
@@ -4395,7 +4399,7 @@
         },
         "/life-journal": {
             "description": "A journal of random life observations. Keeping track of them so I don’t forget what the world did today.\n\n",
-            "doc_size": 23000,
+            "doc_size": 24000,
             "file_path": "_site/life-journal.html",
             "incoming_links": [
                 "/ai-operator",
@@ -4405,7 +4409,8 @@
             "markdown_path": "_d/life-journal.md",
             "outgoing_links": [
                 "/ai-operator",
-                "/balloon"
+                "/balloon",
+                "/eulogy"
             ],
             "redirect_url": "",
             "title": "Igor's Life Journal",
@@ -4633,7 +4638,7 @@
         },
         "/mermaid": {
             "description": "Lets try d2\n\n",
-            "doc_size": 14000,
+            "doc_size": 15000,
             "file_path": "_site/mermaid.html",
             "incoming_links": [],
             "last_modified": "2023-12-17T18:49:14+00:00",
@@ -6363,7 +6368,7 @@
         },
         "/synergize": {
             "description": "We’ve all got stuff we’re good at and stuff we’re bad at. Combine them right and the system is greater than the sum of the parts — sometimes a lot greater. Synergy is the payoff for everything that came before: independence, Win/Win, and seeking first to understand all converge here. These are my insights from 7 habits Chapter 6.\n\n",
-            "doc_size": 28000,
+            "doc_size": 29000,
             "file_path": "_site/synergize.html",
             "incoming_links": [
                 "/7-habits",
@@ -6424,7 +6429,7 @@
                 "/stock-concentration",
                 "/trusts"
             ],
-            "last_modified": "2026-04-18T10:07:20-07:00",
+            "last_modified": "2026-06-26T10:36:33-07:00",
             "markdown_path": "_d/taxes.md",
             "outgoing_links": [
                 "/money",
@@ -6448,7 +6453,7 @@
         },
         "/td/back_ref": {
             "description": "This blog is my collection of evergreen notes, a place to have my thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here’s my strategy to create them.\n\n",
-            "doc_size": 13000,
+            "doc_size": 14000,
             "file_path": "_site/td/back_ref.html",
             "incoming_links": [],
             "last_modified": "2022-04-16T15:22:43-07:00",
@@ -6891,7 +6896,7 @@
                 "/timeoff-2025-08",
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-06-06T11:14:15-07:00",
+            "last_modified": "2026-06-23T07:20:47-07:00",
             "markdown_path": "_d/time_off.md",
             "outgoing_links": [
                 "/addiction",
@@ -7202,7 +7207,7 @@
                 "/timeoff",
                 "/y26"
             ],
-            "last_modified": "2026-06-09T07:32:59-07:00",
+            "last_modified": "2026-06-26T17:48:58-07:00",
             "markdown_path": "_d/time-off-2026-07.md",
             "outgoing_links": [
                 "/ai-policy",
@@ -7325,7 +7330,7 @@
             "incoming_links": [
                 "/taxes"
             ],
-            "last_modified": "2026-06-27T00:47:24.156080+00:00",
+            "last_modified": "2026-06-26T11:58:37-07:00",
             "markdown_path": "_d/trusts.md",
             "outgoing_links": [
                 "/taxes"
@@ -7550,7 +7555,7 @@
         },
         "/weeks": {
             "description": "\n\n",
-            "doc_size": 4347000,
+            "doc_size": 4348000,
             "file_path": "_site/weeks.html",
             "incoming_links": [
                 "/balance"
@@ -7596,7 +7601,7 @@
             "doc_size": 26000,
             "file_path": "_site/why-gas-city.html",
             "incoming_links": [],
-            "last_modified": "2026-06-27T00:47:24.157628+00:00",
+            "last_modified": "2026-06-13T10:59:43-07:00",
             "markdown_path": "_d/why-gas-city.md",
             "outgoing_links": [
                 "/ai-cockpit",
@@ -7625,7 +7630,7 @@
         },
         "/win-win": {
             "description": "Win/Win is a constantly seeking mutual benefit in all interactions. Win/Win means that agreements or solutions are mutually beneficial, mutually satisfying. With a Win/Win solution, all parties feel good about the decision and feel committed to the action plan. Win/Win sees life as a cooperative, not a competitive arena. Most people tend to think in terms of dichotomies: strong or weak, hardball or softball, win or lose. But that kind of thinking is fundamentally flawed. It’s based on power and position rather than on principle. Win/Win is based on the paradigm that there is plenty for everybody, that one person’s success is not achieved at the expense or exclusion of the success of others.\n\n",
-            "doc_size": 47000,
+            "doc_size": 48000,
             "file_path": "_site/win-win.html",
             "incoming_links": [
                 "/7-habits",
