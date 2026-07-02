@@ -86,7 +86,7 @@ These phases become even more pronounced with extended time off. For a deep expl
 
 ### Vegetation
 
-Work is stressful, it follows me home, and it takes several days to "[drain](/mind-at-work)". I think there's a relation between "draining my work stress" and vegetation. It takes me a solid week to get over that.
+Work is stressful, it follows me home, and it takes several days to "[drain](/mind-at-work)". I think there's a relation between "draining my work stress" and vegetation. It used to take me a solid week to get over that — but these days I can do it in about a day. I guess I'm getting better at work-life balance.
 
 ### TODO list
 
