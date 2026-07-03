@@ -47,6 +47,8 @@ This framework draws heavily from two foundational books on energy and happiness
 
 Physical health is your body's capacity to generate and sustain energy. Without it, everything else becomes harder.
 
+> _A healthy person has a thousand wishes; a sick person has only one._ Lose your health and every other want collapses into that one — to be well again.
+
 **What it enables:**
 
 - Sustained focus and productivity
