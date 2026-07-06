@@ -2942,6 +2942,7 @@
                 "/gap-year-igor",
                 "/irl",
                 "/mania",
+                "/maybe",
                 "/mind-at-work",
                 "/operating-manual",
                 "/process-journal",
@@ -4604,7 +4605,8 @@
             "last_modified": "2026-07-06T16:15:51.147230+00:00",
             "markdown_path": "_d/maybe.md",
             "outgoing_links": [
-                "/balloon"
+                "/balloon",
+                "/emotional-health"
             ],
             "redirect_url": "",
             "title": "Maybe",

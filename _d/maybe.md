@@ -18,6 +18,7 @@ There are a lot of these in my life — where I thought something was bad, but i
 - [The shoulder](#the-shoulder)
 - [The second phone](#the-second-phone)
 - [Amazon](#amazon)
+- [My thirties](#my-thirties)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -37,3 +38,7 @@ I didn't upgrade to the latest iPhone, and around the same time I decided to air
 ### Amazon
 
 I spent four years at Amazon, and it was just a bad fit. I wasn't happy, and that unhappiness got me pushed out — I didn't get the best review, which was genuinely stressful at the time. But the upside was that it made me realize I was in the wrong culture for me. So I went to Facebook, which was fantastic. Bad luck? Maybe.
+
+### My thirties
+
+I went through a really rough stretch in my thirties — mental-breakdown territory, honestly, the worst I've ever felt. But it's what taught me to treat sleep as sacred and to build the [emotional-health habits](/emotional-health) — the gratitude, the meditation, the daily practices — that I run my life on now. I wouldn't have built any of it if I hadn't needed to. Bad luck? Maybe.
