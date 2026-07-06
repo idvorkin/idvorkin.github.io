@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bad News — Maybe"
+title: "Bad News. Maybe Not."
 permalink: /maybe
 tags:
   - psychology
@@ -46,3 +46,5 @@ After three great years at Amazon, I ended up on a team that was just a really b
 I went through a really rough stretch in my thirties — mental-breakdown territory, honestly, the worst I've ever felt. But it's what pushed me to treat sleep as sacred, build my [emotional-health habits](/emotional-health) (gratitude, meditation, the daily practices), discover the [7 Habits](/7h-concepts), and write my [eulogy](/eulogy) — the whole operating system I run my life on now. I wouldn't have built any of it if I hadn't needed to. Bad luck? Maybe.
 
 I still panic first, but I've been wrong so many times about which turns were good and which were bad that I wish I could remember you never can tell.
+
+ps. I know every one of these ran bad-news-to-good-news. The reverse is just as true — the good news passes too. One of my affirmations is "this too shall pass," and it applies just as much in the good times as the bad.
