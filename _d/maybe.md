@@ -41,4 +41,4 @@ I spent four years at Amazon, and it was just a bad fit. I wasn't happy, and tha
 
 ### My thirties
 
-I went through a really rough stretch in my thirties — mental-breakdown territory, honestly, the worst I've ever felt. But it's what taught me to treat sleep as sacred and to build the [emotional-health habits](/emotional-health) — the gratitude, the meditation, the daily practices — that I run my life on now. I wouldn't have built any of it if I hadn't needed to. Bad luck? Maybe.
+I went through a really rough stretch in my thirties — mental-breakdown territory, honestly, the worst I've ever felt. But it's what pushed me to treat sleep as sacred, build my [emotional-health habits](/emotional-health) (gratitude, meditation, the daily practices), discover the [7 Habits](/7h-concepts), and write my [eulogy](/eulogy) — the whole operating system I run my life on now. I wouldn't have built any of it if I hadn't needed to. Bad luck? Maybe.

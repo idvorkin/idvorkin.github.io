@@ -504,6 +504,7 @@
                 "/7-habits",
                 "/advice",
                 "/greek-orthodox",
+                "/maybe",
                 "/podcast",
                 "/writing"
             ],
@@ -898,7 +899,7 @@
         },
         "/ai-cockpit": {
             "description": "Agents are slow. Not slow like “wait a second,” slow like “go make coffee and come back.” So you run several in parallel. But now you’ve got a different problem: you’re an air traffic controller with no radar. You need a cockpit - a physical and software control surface that gives you visibility into what your agents are doing and lets you switch between them instantly.\n\n",
-            "doc_size": 32000,
+            "doc_size": 31000,
             "file_path": "_site/ai-cockpit.html",
             "incoming_links": [
                 "/ai-feed",
@@ -3204,6 +3205,7 @@
                 "/irl",
                 "/joy",
                 "/life-journal",
+                "/maybe",
                 "/operating-manual",
                 "/raccoon-history",
                 "/retire",
@@ -4605,8 +4607,10 @@
             "last_modified": "2026-07-06T16:15:51.147230+00:00",
             "markdown_path": "_d/maybe.md",
             "outgoing_links": [
+                "/7h-concepts",
                 "/balloon",
-                "/emotional-health"
+                "/emotional-health",
+                "/eulogy"
             ],
             "redirect_url": "",
             "title": "Maybe",
