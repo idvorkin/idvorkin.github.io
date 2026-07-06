@@ -45,4 +45,4 @@ After three great years at Amazon, I ended up on a team that was just a really b
 
 I went through a really rough stretch in my thirties — mental-breakdown territory, honestly, the worst I've ever felt. But it's what pushed me to treat sleep as sacred, build my [emotional-health habits](/emotional-health) (gratitude, meditation, the daily practices), discover the [7 Habits](/7h-concepts), and write my [eulogy](/eulogy) — the whole operating system I run my life on now. I wouldn't have built any of it if I hadn't needed to. Bad luck? Maybe.
 
-Good luck, bad luck — who knows? I've stopped rushing to render the verdict. The story is never finished, so instead of grading each turn I try to just keep living. You don't get the last word from life. But you always get to say: maybe.
+I still panic first, but I've been wrong so many times about which turns were good and which were bad that I wish I could remember you never can tell.
