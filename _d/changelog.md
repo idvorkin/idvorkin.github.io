@@ -12,6 +12,10 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Week of 2026-07-06](#week-of-2026-07-06)
+  - [Life Journal: Happy Fluff](#life-journal-happy-fluff)
+  - [Time Off: Vegetation Recovery Speeds Up](#time-off-vegetation-recovery-speeds-up)
+  - [Four Healths: A Thousand Wishes](#four-healths-a-thousand-wishes)
 - [Week of 2026-06-29](#week-of-2026-06-29)
   - [Trusts in Washington (new post!)](#trusts-in-washington-new-post)
   - [AI Training: Post-Training Methods Table](#ai-training-post-training-methods-table)
@@ -136,6 +140,28 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+## Week of 2026-07-06
+
+_6 commits this week_
+
+### Life Journal: Happy Fluff
+
+**[/life-journal#happy-fluff](/life-journal#happy-fluff)** — new 2026-07-01 entry. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/90a696255)
+
+Saw a tub labeled **HAPPY FLUFF** on a café shelf. It's exactly how Igor describes his goal in life: nearly weightless, no nutritional value, but brings people joy anyway. Ties to [Dealer of Smiles and Wonder](/eulogy) — leave a little happy fluff in every room, walk away smiling.
+
+### Time Off: Vegetation Recovery Speeds Up
+
+**[/timeoff#vegetation](/timeoff#vegetation)** — updated. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/42f6af25f)
+
+The "vegetation" phase of time off — draining accumulated work stress before you can enjoy free time — used to take Igor a solid week. Now it takes about a day. Framed as getting better at work-life balance.
+
+### Four Healths: A Thousand Wishes
+
+**[/four-healths#physical-health-your-energy-foundation](/four-healths#physical-health-your-energy-foundation)** — new aphorism added to the Physical Health section. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/46cc4d30a)
+
+> _A healthy person has a thousand wishes; a sick person has only one._ Lose your health and every other want collapses into that one — to be well again.
 
 ## Week of 2026-06-29
 
