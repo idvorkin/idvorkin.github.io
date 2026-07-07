@@ -1265,6 +1265,7 @@
             "doc_size": 17000,
             "file_path": "_site/ai-policy.html",
             "incoming_links": [
+                "/packing",
                 "/timeoff-2026-07"
             ],
             "last_modified": "2026-06-26T17:49:10-07:00",
@@ -6911,6 +6912,7 @@
                 "/gap-year-igor",
                 "/life-as-business",
                 "/mind-at-work",
+                "/packing",
                 "/parkinson",
                 "/self-ego",
                 "/timeoff-2020-03",
@@ -7896,6 +7898,21 @@
             "redirect_url": "",
             "title": "Igor's plan for 2026",
             "url": "/y26"
+        },
+        "/packing": {
+            "description": "A durable, trip-agnostic packing checklist. This is the source — every specific trip gets a trimmed copy: take the relevant sections, prune to the trip, decide the per-trip choices (cameras, magic props, kettlebells). Don’t pack from this directly — pack from the trimmed trip file.\n\n",
+            "doc_size": 28000,
+            "file_path": "_site/packing.html",
+            "incoming_links": [],
+            "last_modified": "2026-06-27T15:28:20-07:00",
+            "markdown_path": "_d/packing.md",
+            "outgoing_links": [
+                "/ai-policy",
+                "/timeoff"
+            ],
+            "redirect_url": "",
+            "title": "My Packing Master List",
+            "url": "/packing"
         }
     }
 }
