@@ -2162,6 +2162,7 @@
                 "/hill-climbing",
                 "/how-igor-chops",
                 "/meta",
+                "/process-journal",
                 "/tech-rituals",
                 "/y24",
                 "/y25",
@@ -5450,7 +5451,7 @@
         },
         "/process-journal": {
             "description": "I’ve been doing daily stream of consciousness journaling since 2011, writing over a million words. Here’s how I capture and process my entries. I don’t always hit this perfectly - it’s the process I aim for.\n\n",
-            "doc_size": 21000,
+            "doc_size": 24000,
             "file_path": "_site/process-journal.html",
             "incoming_links": [
                 "/ai-second-brain",
@@ -5468,6 +5469,7 @@
             "outgoing_links": [
                 "/affirmations",
                 "/be-proactive",
+                "/chop",
                 "/emotional-health",
                 "/eulogy",
                 "/grateful",

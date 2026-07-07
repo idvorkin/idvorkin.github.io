@@ -19,6 +19,7 @@ I've been doing [daily stream of consciousness journaling](/emotional-health#dai
 - [Journalling Workflow in 2025](#journalling-workflow-in-2025)
 - [Journal Structure](#journal-structure)
 - [The Prompts at the Bottom](#the-prompts-at-the-bottom)
+- [Appendix: The Evolution of How I Journal](#appendix-the-evolution-of-how-i-journal)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -53,7 +54,7 @@ Here's the round-trip:
 4. **Pull it down.** I sync that folder to my laptop with [`rclone`](https://rclone.org/). Each export is the whole growing notebook, so I only re-process the pages that changed since last time.
 5. **Transcribe.** [Convert the handwriting to text](https://github.com/idvorkin/nlp/blob/cbc8dd8094b3d4e3a7331846538e5e945745baef/journal.py#L34) with vision OCR, drop it into that day's `750words` file, and [extract any TODOs](https://github.com/idvorkin/settings/blob/6ce73103b714e5b08ba19dc19856fc5a8ea549fc/py/todo_to_omnifocus.py?plain=1#L28) into OmniFocus.
 
-The email path still works as a fallback - I [built a tool](https://github.com/idvorkin/settings/blob/db1ca0310d79c9db8b3cc7092cb14904a560eb6d/py/gmail_reader.py?plain=1#L813) that pulls the PDF link out of the Kindle share email - but Google Drive plus `rclone` is less friction than round-tripping through my inbox.
+The email path still works as a fallback - it's [how I did this for a year](#appendix-the-evolution-of-how-i-journal) before Google Drive - but Drive plus `rclone` is less friction than round-tripping through my inbox.
 
 ## Journal Structure
 
@@ -86,3 +87,23 @@ _"Did I make a kid's eyes go wide today, or save delight for some future me?" - 
 These are [eulogy](/eulogy) prompts. I wrote out the roles I want to be remembered for - Father, Husband, Dealer of Smiles, Fit Fellow, Emotionally Healthy Human, Technologist, Mostly Car-Free Spirit, Disciple of the 7 Habits - and generated ten reflective questions for each. The template pulls from that pool of 80, walking a shuffled list so I get a different question every page and rarely see a repeat.
 
 They're printed dim on purpose. I don't have to answer them - most days I don't answer directly. They're there for the blank-page moment, a way to seed the writing and quietly tie an ordinary Tuesday back to the person I said I wanted to be. It's the same instinct behind my [mortality software](/mortality-software): keep the long view where I can see it while I'm living the short one.
+
+## Appendix: The Evolution of How I Journal
+
+The current setup is the third act. I'm keeping the earlier ones here for the record - `git blame` on this post has the exact dates if you want to trace it.
+
+**The typing years (2011-2025).** For over a decade the whole "workflow" was just typing into [750words](https://750words.com) every morning - searchable, easy to analyze, over a million words - but I missed the pen the entire time. That's the tradeoff the [handwriting vs typing](#handwriting-vs-typing) section up top is about.
+
+**A notebook a day on the Kindle Scribe (2025).** AI transcription let me pick the pen back up, so I went back to handwriting and let a model turn it into text. The catch was that every day was its own file:
+
+1. **Brain dump on the Scribe.** Prime it with yesterday's TODOs (OmniFocus) and habits (Streaks), then create a brand-new notebook named with the date and handwrite for ten minutes.
+   ![Me writing in my journal](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250302_191054.webp)
+2. **Email it to myself.** The Scribe only exported by emailing me a "here's a link to your PDF" message.
+   ![The Kindle share sheet](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250302_191410.webp)
+3. **Grab the PDF link from Gmail** with a bespoke tool I [CHOP](/chop)ed in an afternoon ([the build](https://github.com/idvorkin/settings/blob/db1ca0310d79c9db8b3cc7092cb14904a560eb6d/py/gmail_reader.py?plain=1#L813), via [chat one](https://github.com/idvorkin/Settings/blob/db1ca0310d79c9db8b3cc7092cb14904a560eb6d/zz-chop-logs/2025-03-02_09-47-building-a-python-gmail-reader-app.md) and [chat two](https://github.com/idvorkin/Settings/blob/db1ca0310d79c9db8b3cc7092cb14904a560eb6d/zz-chop-logs/2025-03-02_10-37-gmail-app-development-discussion.md)).
+   ![The gmail tool](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250302_190312.webp)
+4. **Transcribe and file.** Same as today: convert the handwriting to text, drop it into the day's file, and extract TODOs to OmniFocus.
+
+It worked, but a fresh notebook every day meant a long scroll of loose files and no easy way to flip back to last Tuesday. That's the itch the template scratched.
+
+**The hyperlinked template (2026-now).** One navigable PDF per quarter, synced through Google Drive - the [current workflow](#journalling-workflow-in-2025) above.
