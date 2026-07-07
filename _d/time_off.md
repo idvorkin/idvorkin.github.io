@@ -284,6 +284,11 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
 
 - Bring a cooler. Buy fruits/vegetables and keep them in the cooler and hotel fridge.
 
+##### Where to eat
+
+- **Shop the grocery store.** Some of my best travel meals come straight out of a supermarket — there's nothing wrong with a cucumber, some fruit, and a rotisserie chicken. Cheaper, healthier, and you skip the wait.
+- **Skip the tourist areas.** The food ringing the big sights is overpriced and mediocre. Walk a few blocks out, or eat where the locals do — the meal is better and so is the bill.
+
 #### Breakfast
 
 Family loves the free hotel breakfast (and it is a great deal), but I can't afford the calories. See detailed guidance under [Diet → Hotel breakfast](/diet#hotel-breakfast).
@@ -361,6 +366,8 @@ Ensure I don't run out of terzepatide during trips/time off. Plan refills ahead 
   - Pack and pre-configure it to bypass flaky captive portals; keep SSID/password noted and the admin password saved.
 
 #### Packing Checklist
+
+The full, durable version lives in my [packing master list](/packing) — every trip is trimmed from it. The quick summary:
 
 - Tech: chargers, power bank, travel router, Insta360 + mounts, extra SD cards
 - Fitness: kettlebells, heavy club, bands, peanut ball, foam roller, gripper
