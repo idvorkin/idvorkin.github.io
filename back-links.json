@@ -241,6 +241,8 @@
         "/operator": "/ai-operator",
         "/orthodox": "/greek-orthodox",
         "/overwork": "/overload",
+        "/pack-list": "/packing",
+        "/packing-list": "/packing",
         "/pain": "/mental-pain",
         "/parkinson-law": "/parkinson",
         "/parkinsons-law": "/parkinson",
@@ -2020,8 +2022,6 @@
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
                 "/42",
-                "/7h-c0",
-                "/7h-c7",
                 "/7h-concepts",
                 "/act",
                 "/activation",
@@ -2081,7 +2081,6 @@
                 "/spiritual-health",
                 "/synergy",
                 "/taxes",
-                "/time-off",
                 "/timeoff",
                 "/timeoff-2026-07",
                 "/trusts",
@@ -2090,8 +2089,7 @@
                 "/wally",
                 "/why-gas-city",
                 "/win-win",
-                "/work-gastown",
-                "/y2026"
+                "/y26"
             ],
             "redirect_url": "",
             "title": "Changelog",
@@ -2700,7 +2698,7 @@
         },
         "/day-in-the-life": {
             "description": "A running journal of days that actually worked - the ones where health habits stuck, family time hit different, or I remembered what it feels like to be fully alive. Not every day needs to be Instagram-worthy, but some days deserve a bookmark. This is that bookmark collection.\n\n",
-            "doc_size": 18000,
+            "doc_size": 19000,
             "file_path": "_site/day-in-the-life.html",
             "incoming_links": [],
             "last_modified": "2025-10-04T18:43:51-07:00",
@@ -3217,6 +3215,7 @@
                 "/life-journal",
                 "/maybe",
                 "/operating-manual",
+                "/process-journal",
                 "/raccoon-history",
                 "/retire",
                 "/sharpen-the-saw",
@@ -3694,7 +3693,7 @@
         },
         "/grammerly": {
             "description": "\n\n",
-            "doc_size": 12000,
+            "doc_size": 13000,
             "file_path": "_site/grammerly.html",
             "incoming_links": [],
             "last_modified": "2025-08-24T09:03:19-07:00",
@@ -4677,7 +4676,7 @@
         },
         "/mermaid": {
             "description": "Lets try d2\n\n",
-            "doc_size": 14000,
+            "doc_size": 15000,
             "file_path": "_site/mermaid.html",
             "incoming_links": [],
             "last_modified": "2023-12-17T18:49:14+00:00",
@@ -4951,6 +4950,7 @@
                 "/how-igor-chops",
                 "/igors-claws",
                 "/larry",
+                "/process-journal",
                 "/walking-with-god",
                 "/y26"
             ],
@@ -5198,7 +5198,7 @@
                 "/timeoff",
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-06-27T15:28:20-07:00",
+            "last_modified": "2026-07-07T05:13:07-07:00",
             "markdown_path": "_d/packing.md",
             "outgoing_links": [
                 "/ai-policy",
@@ -5450,8 +5450,8 @@
             "url": "/pride"
         },
         "/process-journal": {
-            "description": "I’ve been doing daily stream of consciousness journaling since 2011, writing over a million words. Here’s how I think about processing and analyzing my journal entries. While I don’t always achieve this perfectly, this represents my aspirational process that I strive towards.\n\n",
-            "doc_size": 19000,
+            "description": "I’ve been doing daily stream of consciousness journaling since 2011, writing over a million words. Here’s how I capture and process my entries. I don’t always hit this perfectly - it’s the process I aim for.\n\n",
+            "doc_size": 24000,
             "file_path": "_site/process-journal.html",
             "incoming_links": [
                 "/ai-second-brain",
@@ -5464,15 +5464,18 @@
                 "/pet-projects",
                 "/y24"
             ],
-            "last_modified": "2025-03-02T19:25:33-08:00",
+            "last_modified": "2026-07-07T05:22:16-07:00",
             "markdown_path": "_d/process-journal.md",
             "outgoing_links": [
                 "/affirmations",
                 "/be-proactive",
                 "/chop",
                 "/emotional-health",
+                "/eulogy",
                 "/grateful",
-                "/psychic-weight"
+                "/mortality-software",
+                "/psychic-weight",
+                "/static/igor-journal-template.pdf"
             ],
             "redirect_url": "",
             "title": "Daily Journaling: From Psychic Diarrhea to Polished Turds",
@@ -6427,7 +6430,7 @@
         },
         "/synergize": {
             "description": "We’ve all got stuff we’re good at and stuff we’re bad at. Combine them right and the system is greater than the sum of the parts — sometimes a lot greater. Synergy is the payoff for everything that came before: independence, Win/Win, and seeking first to understand all converge here. These are my insights from 7 habits Chapter 6.\n\n",
-            "doc_size": 28000,
+            "doc_size": 29000,
             "file_path": "_site/synergize.html",
             "incoming_links": [
                 "/7-habits",
@@ -6512,7 +6515,7 @@
         },
         "/td/back_ref": {
             "description": "This blog is my collection of evergreen notes, a place to have my thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here’s my strategy to create them.\n\n",
-            "doc_size": 13000,
+            "doc_size": 14000,
             "file_path": "_site/td/back_ref.html",
             "incoming_links": [],
             "last_modified": "2022-04-16T15:22:43-07:00",
@@ -6820,7 +6823,7 @@
         },
         "/terzepatide": {
             "description": "“You know Igor, weight loss is a solved problem” - my bestie, texted me when I complained about my pants no longer fitting. Remember - Diet dominates weight, as weight is simple arithmetic -“calories in” minus “calories out”. For me, will power dominates diet, and terzepatide dominates will power when stuffing things in my mouth. I started Terzepatide in February 2024, and so far it’s been great.\n\n",
-            "doc_size": 19000,
+            "doc_size": 22000,
             "file_path": "_site/terzepatide.html",
             "incoming_links": [
                 "/42",
@@ -6830,7 +6833,7 @@
                 "/timeoff-2024-04",
                 "/voices"
             ],
-            "last_modified": "2026-01-03T17:27:23+00:00",
+            "last_modified": "2026-07-07T05:02:30-07:00",
             "markdown_path": "_d/terzepatide.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -7698,7 +7701,7 @@
         },
         "/win-win": {
             "description": "Win/Win is a constantly seeking mutual benefit in all interactions. Win/Win means that agreements or solutions are mutually beneficial, mutually satisfying. With a Win/Win solution, all parties feel good about the decision and feel committed to the action plan. Win/Win sees life as a cooperative, not a competitive arena. Most people tend to think in terms of dichotomies: strong or weak, hardball or softball, win or lose. But that kind of thinking is fundamentally flawed. It’s based on power and position rather than on principle. Win/Win is based on the paradigm that there is plenty for everybody, that one person’s success is not achieved at the expense or exclusion of the success of others.\n\n",
-            "doc_size": 47000,
+            "doc_size": 48000,
             "file_path": "_site/win-win.html",
             "incoming_links": [
                 "/7-habits",
