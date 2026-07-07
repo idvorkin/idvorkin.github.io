@@ -2013,13 +2013,15 @@
         },
         "/changelog": {
             "description": "A weekly summary of what changed on this blog and across my GitHub projects. Useful for returning readers who want to catch up on new content and updates.\n\n",
-            "doc_size": 219000,
+            "doc_size": 228000,
             "file_path": "_site/changelog.html",
             "incoming_links": [],
-            "last_modified": "2026-07-06T15:12:08+00:00",
+            "last_modified": "2026-07-07T12:09:40.505435+00:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
                 "/42",
+                "/7h-c0",
+                "/7h-c7",
                 "/7h-concepts",
                 "/act",
                 "/activation",
@@ -2058,13 +2060,17 @@
                 "/igors-claws",
                 "/image-selector",
                 "/irl",
+                "/joy",
                 "/keyboard",
                 "/larry",
                 "/life-journal",
                 "/lonely",
+                "/maybe",
                 "/money",
                 "/mosh",
+                "/packing",
                 "/podcast",
+                "/produce-consume",
                 "/product",
                 "/psychic-weight",
                 "/raccoon-history",
@@ -2075,6 +2081,7 @@
                 "/spiritual-health",
                 "/synergy",
                 "/taxes",
+                "/time-off",
                 "/timeoff",
                 "/timeoff-2026-07",
                 "/trusts",
@@ -2083,7 +2090,8 @@
                 "/wally",
                 "/why-gas-city",
                 "/win-win",
-                "/y26"
+                "/work-gastown",
+                "/y2026"
             ],
             "redirect_url": "",
             "title": "Changelog",
@@ -5182,6 +5190,24 @@
             "title": "Dealing with Task Overload",
             "url": "/overload"
         },
+        "/packing": {
+            "description": "A durable, trip-agnostic packing checklist. This is the source — every specific trip gets a trimmed copy: take the relevant sections, prune to the trip, decide the per-trip choices (cameras, magic props, kettlebells). Don’t pack from this directly — pack from the trimmed trip file.\n\n",
+            "doc_size": 28000,
+            "file_path": "_site/packing.html",
+            "incoming_links": [
+                "/timeoff",
+                "/timeoff-2026-07"
+            ],
+            "last_modified": "2026-06-27T15:28:20-07:00",
+            "markdown_path": "_d/packing.md",
+            "outgoing_links": [
+                "/ai-policy",
+                "/timeoff"
+            ],
+            "redirect_url": "",
+            "title": "My Packing Master List",
+            "url": "/packing"
+        },
         "/pandas": {
             "description": "Copied from my GitHub techdiary\n\n",
             "doc_size": 23000,
@@ -7898,21 +7924,6 @@
             "redirect_url": "",
             "title": "Igor's plan for 2026",
             "url": "/y26"
-        },
-        "/packing": {
-            "description": "A durable, trip-agnostic packing checklist. This is the source — every specific trip gets a trimmed copy: take the relevant sections, prune to the trip, decide the per-trip choices (cameras, magic props, kettlebells). Don’t pack from this directly — pack from the trimmed trip file.\n\n",
-            "doc_size": 28000,
-            "file_path": "_site/packing.html",
-            "incoming_links": [],
-            "last_modified": "2026-06-27T15:28:20-07:00",
-            "markdown_path": "_d/packing.md",
-            "outgoing_links": [
-                "/ai-policy",
-                "/timeoff"
-            ],
-            "redirect_url": "",
-            "title": "My Packing Master List",
-            "url": "/packing"
         }
     }
 }

@@ -63,7 +63,7 @@ Minimum viable gear. The McGill Big 3 needs **zero** gear — no excuse on the t
 
 ### Meds
 
-- [ ] **Prescription continuity** — don't run out mid-trip; plan refills ahead and pack doses appropriately. For anything that needs a fridge, see [traveling with tirzepatide](/timeoff#traveling-with-tirzepatide-or-any-med-that-needs-a-fridge)
+- [ ] **Prescription continuity** — don't run out mid-trip; plan refills ahead and pack doses appropriately. For anything that needs a fridge, see [traveling with tirzepatide](/timeoff#appendix-traveling-with-tirzepatide-or-any-med-that-needs-a-fridge)
 - [ ] Sleep aid — for long flights
 - [ ] Decongestant — flight ear pressure
 - [ ] First aid: ibuprofen, band-aids, kid staples
