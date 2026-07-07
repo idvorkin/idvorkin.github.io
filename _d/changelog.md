@@ -157,6 +157,8 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 
 _39 commits this week_
 
+_Confession: I built most of this week's blitz on a 6-hour train ride across Scandinavia — a break from the vacation, while the kids watched TV._
+
 ### Bad News. Maybe Not. (new post!)
 
 **[/maybe](/maybe)** — a new post on the "good luck, bad luck, who knows?" reframe. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e355c3979)
