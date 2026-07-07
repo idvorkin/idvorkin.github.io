@@ -6827,7 +6827,6 @@
                 "/diet",
                 "/eulogy",
                 "/physical-health",
-                "/timeoff",
                 "/timeoff-2024-04",
                 "/voices"
             ],
@@ -6927,7 +6926,7 @@
         },
         "/timeoff": {
             "description": "Time off is critical, it’s how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with turning your 1 week off into an action-packed tour of Disneyland. But, there are other kinds of time off that we’ll discuss too. Like most things, time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!\n\n",
-            "doc_size": 48000,
+            "doc_size": 47000,
             "file_path": "_site/timeoff.html",
             "incoming_links": [
                 "/activation",
@@ -6956,7 +6955,7 @@
                 "/timeoff-2025-08",
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-07-07T02:42:43-07:00",
+            "last_modified": "2026-07-07T04:37:10-07:00",
             "markdown_path": "_d/time_off.md",
             "outgoing_links": [
                 "/addiction",
@@ -6977,7 +6976,6 @@
                 "/packing",
                 "/parkinson",
                 "/siy",
-                "/terzepatide",
                 "/timeoff-2020-03",
                 "/timeoff-2024-02",
                 "/timeoff-2026-07"
