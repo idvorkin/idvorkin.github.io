@@ -8,14 +8,14 @@ tags:
   - productivity
 ---
 
-I've been doing [daily stream of consciousness journaling](/emotional-health#daily-stream-of-consciousness-journaling) since 2011, writing over a million words. Here's how I think about processing and analyzing my journal entries. While I don't always achieve this perfectly, this represents my aspirational process that I strive towards.
+I've been doing [daily stream of consciousness journaling](/emotional-health#daily-stream-of-consciousness-journaling) since 2011, writing over a million words. Here's how I capture and process my entries. I don't always hit this perfectly - it's the process I aim for.
+
+{% include ai-slop.html percent="55" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
 - [Handwriting vs Typing](#handwriting-vs-typing)
-- [Automated Analysis](#automated-analysis)
-- [Weekly Report](#weekly-report)
 - [Journalling Workflow in 2025](#journalling-workflow-in-2025)
 - [Journal Structure](#journal-structure)
 
@@ -24,82 +24,42 @@ I've been doing [daily stream of consciousness journaling](/emotional-health#dai
 
 ## Handwriting vs Typing
 
-## Automated Analysis
+I've always loved handwriting my journal. The tactile part matters - I think better with a pen than a keyboard, and the page feels more personal. But I switched to typing for years because I wanted to [search and analyze my entries](https://github.com/idvorkin/nlp/blob/cbc8dd8094b3d4e3a7331846538e5e945745baef/life.py#L337), and you can't grep paper.
 
-## Weekly Report
+AI transcription ended the tradeoff. I write by hand on a Kindle Scribe, then let a model turn the handwriting into text. I get the thinking benefits of pen and paper and a searchable, analyzable archive.
 
-Here's the corrected version with fixed typos:
+![Me writing in my journal](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250302_191054.webp)
 
 ## Journalling Workflow in 2025
 
-I've always loved handwriting my journal entries - there's something special about the tactile experience and the way it helps me think. However, I switched to typing because being able to analyze and [search my daily journals](https://github.com/idvorkin/nlp/blob/cbc8dd8094b3d4e3a7331846538e5e945745baef/life.py#L337) was incredibly valuable.
+The old version of this was fiddly. Every morning I created a fresh notebook on the Scribe, named it with the date, wrote, then emailed it to myself so a script could grab the PDF. A new notebook a day meant a long scroll of loose files with no easy way to flip back to last Tuesday.
 
-Now, thanks to AI transcription capabilities, I can have the best of both worlds. Here's my Current Daily Workflow (this is my aspirational process - I don't always achieve it perfectly, but it's what I strive for):
+Now I journal in one hyperlinked PDF instead of a notebook per day. A little Python script generates a blank template for a date range - I usually do a quarter at a time. Each month gets an index page, and every date on that index is a tappable link straight to that day's first page. The page header carries the same navigation: day-jump arrows, page tabs (1-5), and a home button back to the month index. On the Scribe I tap a date with my finger and land on it, so the whole quarter is one book I can page through instead of a pile of separate notebooks.
 
-1. **Brain dump my thoughts on Kindle Scribe (aka paper)**
-   - Check yesterday's TODOs in OmniFocus and yesterday's Habit Tracker in Streaks app to prime my daily journal
-   - Create a new notebook in my Kindle Scribe, named with the current date
-   - Spend 10 minutes handwriting my stream of consciousness
-     ![Me writing in my journal](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250302_191054.webp)
-2. **Export/Sync to desktop**
-   - Kindle only supports e-mail to yourself
-   - It sends an e-mail that is basically "Hey here's a link to your PDF"
-     ![Kindle Share Sheet](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250302_191410.webp)
-3. **AUTOMATED** Get PDF URL from Gmail
-   - I [CHOP](/chop)ed a [bespoke tool for this](https://github.com/idvorkin/settings/blob/db1ca0310d79c9db8b3cc7092cb14904a560eb6d/py/gmail_reader.py?plain=1#L813), via these 2 chats: [1](https://github.com/idvorkin/Settings/blob/db1ca0310d79c9db8b3cc7092cb14904a560eb6d/zz-chop-logs/2025-03-02_09-47-building-a-python-gmail-reader-app.md), [2](https://github.com/idvorkin/Settings/blob/db1ca0310d79c9db8b3cc7092cb14904a560eb6d/zz-chop-logs/2025-03-02_10-37-gmail-app-development-discussion.md)
-     ![show gmail app](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250302_190312.webp)
-4. **AUTOMATED** Take PDF URL, and [convert the handwriting to text](https://github.com/idvorkin/nlp/blob/cbc8dd8094b3d4e3a7331846538e5e945745baef/journal.py#L34)
-5. Copy the transcribed text into my daily journal file
-6. **AUTOMATED** [Extract TODOs](https://github.com/idvorkin/settings/blob/6ce73103b714e5b08ba19dc19856fc5a8ea549fc/py/todo_to_omnifocus.py?plain=1#L28) and move them to OmniFocus
+[Grab my blank template](/static/igor-journal-template.pdf) if you want to try it or fork it. It's empty - just the ruled sections and the tappable index.
 
-This process preserves the benefits of handwriting (better thinking, more personal) while maintaining the ability to search, analyze, and process my journal entries digitally. It's a perfect blend of the analog and digital worlds.
+Here's the round-trip:
+
+1. **Generate the blank template** and get it onto the Scribe. Emailing it to my Send-to-Kindle address keeps the internal links intact, so the tappable index survives the trip.
+2. **Write.** Coffee, ten minutes, stream of consciousness. I prime it by checking yesterday's TODOs in OmniFocus and my habit tracker.
+3. **Export back out.** The Scribe bakes my ink into the PDF (flattened - the handwriting becomes part of the page) and I export the marked-up file to a Google Drive folder.
+4. **Pull it down.** I sync that folder to my laptop with [`rclone`](https://rclone.org/). Each export is the whole growing notebook, so I only re-process the pages that changed since last time.
+5. **Transcribe.** [Convert the handwriting to text](https://github.com/idvorkin/nlp/blob/cbc8dd8094b3d4e3a7331846538e5e945745baef/journal.py#L34) with vision OCR, drop it into that day's `750words` file, and [extract any TODOs](https://github.com/idvorkin/settings/blob/6ce73103b714e5b08ba19dc19856fc5a8ea549fc/py/todo_to_omnifocus.py?plain=1#L28) into OmniFocus.
+
+The email path still works as a fallback - I [built a tool](https://github.com/idvorkin/settings/blob/db1ca0310d79c9db8b3cc7092cb14904a560eb6d/py/gmail_reader.py?plain=1#L813) that pulls the PDF link out of the Kindle share email - but Google Drive plus `rclone` is less friction than round-tripping through my inbox.
 
 ## Journal Structure
 
-Each journal entry follows a consistent template with sections that help me reflect on different aspects of my life:
+The template mirrors the sections I've journaled around for years. Each day is five pages.
 
-**Commitments**
+**Page 1 - setup.** Four [affirmations](/affirmations), what I'm [grateful](/grateful) for, and Yesterday Awesome Because - the specific things that made yesterday good, which is how I keep [building momentum](/be-proactive). A habit strip runs along the bottom (Mobility / Gym / Meditate / Magic / Balloon) with a couple of blank to-do rows.
 
-- What I committed to yesterday, and if I did it
-- _I don't do this but should_
-- This would be great to build a review cycle into my workflows
+**Page 2 - intentions.** Today Awesome Because / Commitments: what I want done today, plus what I said I'd do yesterday and whether I actually did it. Then Notes for Larry, where I flag things for my [AI coach](/larry).
 
-**Day awesome if**
-
-- Listing out things I want done today
-- _TODO: Really think through what matters, and only put it in if I'll do it_
-
-**Yesterday was awesome because**
-
-- Remembering what made yesterday great
-- Specific events and accomplishments that made it special
-- Building [momentum](/be-proactive)
-
-**Journal**
-
-- The main stream of consciousness section
-- Where I process my thoughts and feelings
-
-**Grateful for**
-
-- Daily gratitude practice structured around:
-  - God
-  - Others
-  - Self (Igor)
+**Pages 3-5 - journal.** The open stream of consciousness. Where I process what's going on, including whatever [psychic weight](/psychic-weight) I'm carrying.
 
 {% include summarize-page.html src="/grateful" %}
 
-**Affirmations**
-
-- Reinforcing positive beliefs and mindsets I want to cultivate
-- _TODO: Reflect on how I lived these affirmations yesterday_
-
 {% include summarize-page.html src="/affirmations" %}
 
-**Psychic Weight**
-
-- Processing any mental burdens or concerns weighing on my mind
-
 {% include summarize-page.html src="/psychic-weight" %}
-
-This structure helps ensure I cover key areas of reflection each day, from setting intentions to practicing gratitude and processing any mental burdens.
