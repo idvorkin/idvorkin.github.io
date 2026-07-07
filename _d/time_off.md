@@ -248,13 +248,9 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
 
 - **GET A GYM MEMBERSHIP** - Gym is a fantastic place to focus on strength and renewal and anchor the day. I got a gym membership with GoodLife, let me do my top priorities daily, even had a massage chair.
 
-- **Bring bands, light gym equipment** - Have everything to stretch and self-massage, and light workouts
-
-  - Heavy bands/light bands; Peanut ball; Harsh foam roller; Gripper (need it for my wrist)
-
+- **Bring light gym equipment** - Enough to stretch, self-massage, and do light workouts.
 - **Do extra stretches/cardio** - Remember energy positive, and keeps you injury-free.
-
-- **Bring kettlebells and a heavy club** - Portable strength tools for short, high-value sessions.
+- **Bring portable strength tools** - For short, high-value sessions.
 - **Morning movement daily** - 10–20 minutes of mobility/strength to anchor the day. On driving days, do 5–10 minute micro-sessions at rest stops.
 
 ### Diet
@@ -270,8 +266,8 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
 
 #### Tools and Prep
 
-- Bring the microwavable popcorn popper and instant soup. These are some of my favorite low-calorie foods.
-- Bring a travel scale - that mindfulness around weight is great.
+- Bring a couple of favorite low-calorie foods you can make in the room — keeps calories in check when the trip's options don't.
+- Weigh in daily — the mindfulness around weight is worth packing a travel scale for.
 
 #### Travel Nutrition
 
@@ -294,7 +290,7 @@ Family loves the free hotel breakfast (and it is a great deal), but I can't affo
 
 #### Terzepatide
 
-Ensure I don't run out of terzepatide during trips/time off. Plan refills ahead and pack doses appropriately. See [Terzepatide](/terzepatide).
+Cold-chain and refill logistics for trips live in [the tirzepatide appendix](#appendix-traveling-with-tirzepatide-or-any-med-that-needs-a-fridge) below.
 
 ### Emotional Health
 
@@ -330,18 +326,12 @@ Ensure I don't run out of terzepatide during trips/time off. Plan refills ahead 
   - Get Insurance on your credit card
   - Take 10 minutes to learn how to use the rental car (wipers, door locks, cruise control, fuel)
 - Pack the afternoon before so you don't have a rush in the morning
-- Make a leave list (Notion)
-  - Pack my chargers
-  - Put Masks in Bag
-    - Sunglasses
-    - Selfie Stick
+- Make a leave list (Notion) so the recurring forgets get caught at the door.
   - Make sure batteries are fully charged before leaving
   - Leave for the airport 3 hours early (have lots of slack)
 - Luggage:
   - Bags on carry-on clip together
-  - Bring luggage compression straps.
-    - **I have an extra pocket in my suitcase**
-  - Lost my popcorn popper and my balloon pump and my laptop. Turns out in the extra pocket, I forgot.
+  - **Remember the extra pocket in my suitcase** — I've "lost" my popcorn popper, balloon pump, and laptop before, only to find them stashed in there.
 - Airport
   - Hanging at the airport early is totally fine - don't worry it's better than being there late.
   - Airport snacks: see Diet → Travel Nutrition → Airports
@@ -356,13 +346,9 @@ Ensure I don't run out of terzepatide during trips/time off. Plan refills ahead 
 - Re-pack day bag
   - Don't haul around stuff you won't use it
 - If you forget stuff, just buy it from Walmart instead of suffering
-- AirTags for everything
 - Have a good packing of keys wallet so don't worry about losing (Fanny pack)
 - Force Captive Portal to appear - <http://captive.apple.com/hotspot-detect.html>
 - For the stuff I forget - Just go to Walmart/target and buy it. It's basically disposable.
-
-- Travel router
-  - Pack and pre-configure it to bypass flaky captive portals; keep SSID/password noted and the admin password saved.
 
 #### Packing Checklist
 
