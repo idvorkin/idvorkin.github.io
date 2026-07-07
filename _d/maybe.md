@@ -10,8 +10,6 @@ tags:
 
 A farmer's horse runs away. His neighbors console him: "What terrible luck!" The farmer shrugs, "Maybe." The next day the horse returns, leading a herd of wild horses behind it — "What wonderful luck!" "Maybe." His son tries to tame one, is thrown, and breaks his leg — "How awful!" "Maybe." A week later the army marches through, conscripting every able-bodied young man for a war most won't return from, and the son, with his broken leg, is passed over — "How wonderful!" "Maybe." Good luck, bad luck — who knows? The story is never finished, so the farmer never renders the verdict. He just keeps living.
 
-{% include blob_image_float_right.html src="blog/raccoon-maybe.webp" %}
-
 {% include ai-slop.html percent="30" %}
 
 There are a lot of these in my life — where I thought something was bad, but it turned out good.
@@ -27,6 +25,8 @@ There are a lot of these in my life — where I thought something was bad, but i
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+{% include blob_image_float_right.html src="blog/raccoon-maybe.webp" %}
 
 ## The latex allergy
 
