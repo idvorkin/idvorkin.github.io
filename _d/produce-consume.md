@@ -10,6 +10,10 @@ redirect_from:
 
 Remember when you finished binge-watching that entire series and felt... empty? Now remember the last time you made something — anything — even if it sucked. Which memory makes you smile? Yeah, me too. We live in the golden age of consumption, where infinite content is one thumb-swipe away, yet we're more anxious and less satisfied than ever. Here's the thing: you're not meant to be a consumer. You're meant to be a producer.
 
+> When you sacrifice identity for consumption, you end up with neither.
+
+Consumption doesn't just waste your time — it hollows out the producer you were meant to be.
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 

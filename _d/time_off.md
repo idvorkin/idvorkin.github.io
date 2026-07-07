@@ -19,6 +19,10 @@ alias:
 
 Time off is critical, it's how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with turning your 1 week off into an action-packed tour of Disneyland. But, there are other kinds of time off that we'll discuss too. Like most things, time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!
 
+> When you sacrifice identity for consumption, you end up with neither.
+
+The whole trap of time off in one sentence — vegetating _feels_ like rest, but it quietly starves the roles that make you _you_.
+
 <div class="alert alert-info" role="alert">
 ✈️ <strong>Next planned time-off — July 2026:</strong>
 <div class="summary-link body-only" href="/timeoff-2026-07"><a href="/timeoff-2026-07">Loading (/timeoff-2026-07)</a></div>
