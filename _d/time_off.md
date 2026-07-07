@@ -412,10 +412,12 @@ I struggle to take real time off, so this one hit home. Below is my distillation
 
 ### Traveling with tirzepatide (or any med that needs a fridge)
 
-Tirzepatide — and plenty of other meds — wants to stay cold. Two things make travel painless:
+Tirzepatide — and plenty of other meds — wants to stay cold. Three things make travel painless:
 
 1. **A TSA-approved travel cooler.** Holds cold for a full travel day, so the airport-to-Airbnb gap is covered:
 
 {% include amazon.html asin="B0DG2WLSM5" %}
 
 2. **No fridge in the room? Ask the front desk.** Most hotels will happily stash medication in a staff fridge — just ask. And don't assume the minibar cabinet is cold enough; confirm it actually chills.
+
+3. **Pack the whole trip's supply.** You almost certainly won't get a refill on the road, so count out a dose for every week you're gone (plus a spare) and make sure the cooler's big enough to hold them all.
