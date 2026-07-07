@@ -10,11 +10,13 @@ redirect_from:
 
 22 days, 5 countries, 4 Dvorkins, one whirlwind tour. From Reykjavík to Amsterdam by way of Stockholm, Oslo, and the Norwegian fjords. This is the first time we've attempted a trip of this scope as a family — the kids are 16 and 12, both still home, and the window for "all four of us on the road together" closes faster than I'd like.
 
+> When you sacrifice identity for consumption, you end up with neither.
+
+The whole trap of time off in one sentence — vegetating _feels_ like rest, but it quietly starves the roles that make you _you_.
+
 > 🗺️ **Trip map & city guide:** [Scandinavian Whirlwind 2026 →](https://idvorkin-ai-tools.github.io/scandinavia-2026/) — one page per stop (Iceland → Copenhagen → Stockholm → Oslo → fjords → Amsterdam), with things to do, hours, and a live weather table.
 
 For context on why I take time off: [/time-off](/time-off).
-
-> 🧳 **Packing:** my reusable [packing master list](/packing) — the durable checklist every trip is trimmed from.
 
 ## At a Glance
 
@@ -51,6 +53,7 @@ All 4 Dvorkins (Igor, Tori, Zach, Amelia). Iceland and Copenhagen legs are just 
 
 - Hang with Ammon — 2 days, no fixed agenda.
 - Walk Nyhavn + canals
+- **Marble Church (Marmorkirken)** — climb the dome tower for the Amalienborg→Opera axis + Sweden view
 - One nice meal as a family
 
 ### 🇸🇪 Stockholm (Jul 3–7) · [📍 map](https://www.google.com/maps/place/Stockholm)
