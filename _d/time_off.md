@@ -63,6 +63,8 @@ The whole trap of time off in one sentence — vegetating _feels_ like rest, but
   - [Optimize for energy, not time](#optimize-for-energy-not-time)
   - [Can you have too much time off?](#can-you-have-too-much-time-off)
 - [Appendix: 9 Rules for a Happier Vacation (Arthur Brooks)](#appendix-9-rules-for-a-happier-vacation-arthur-brooks)
+- [Travel logistics](#travel-logistics)
+  - [Traveling with tirzepatide (or any med that needs a fridge)](#traveling-with-tirzepatide-or-any-med-that-needs-a-fridge)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -405,3 +407,17 @@ I struggle to take real time off, so this one hit home. Below is my distillation
 7. **Leave your work at home.** "Just a little work" is a trap for workaholics: a Stress and Health finding shows work activities lower the positive effects of vacation 1, 3, and 10 days after returning — it kills the glow. If you need to busy your mind, read something generative you're not paid to learn instead.
 8. **Come home early.** Don't travel up to the last second — get back a few days before you have to return to work so you can ease in. That buffer becomes a mini second vacation. Brooks aims to be home before the weekend rather than landing Sunday night into a full work week. ("Living each day as if it were the first day of your honeymoon and the last day of your vacation." — Tolstoy.)
 9. **Brace yourself on return and manage your feelings.** A successful vacation sharpens the contrast with ordinary life, so the day-to-day can feel flat or frustrating coming back — like a carrot after candy. It's completely normal; expecting it defuses it. Brooks' policy: don't make significant life changes in the first week back. Not being surprised is how you keep your feelings from managing you.
+
+## Travel logistics
+
+### Traveling with tirzepatide (or any med that needs a fridge)
+
+Tirzepatide — and plenty of other meds — wants to stay cold. Three things make travel painless:
+
+1. **A TSA-approved travel cooler.** Holds cold for a full travel day, so the airport-to-Airbnb gap is covered:
+
+{% include amazon.html asin="B0DG2WLSM5" %}
+
+2. **No fridge in the room? Ask the front desk.** Most hotels will happily stash medication in a staff fridge — just ask. And don't assume the minibar cabinet is cold enough; confirm it actually chills.
+
+3. **Pack the whole trip's supply.** You almost certainly won't get a refill on the road, so count out a dose for every week you're gone (plus a spare) and make sure the cooler's big enough to hold them all.
