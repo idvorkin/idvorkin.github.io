@@ -18,6 +18,39 @@ The whole trap of time off in one sentence — vegetating _feels_ like rest, but
 
 For context on why I take time off: [/time-off](/time-off).
 
+## Why I'm taking this time off — ranked
+
+[When you sacrifice identity for consumption, you end up with neither](/produce-consume). So I wrote down what I'm actually here for, in order — and then the trip rearranged the list on me.
+
+**What I expected:**
+
+1. **Deepen my relationship with Amelia and Tori.**
+2. **Really meet whoever we're traveling with** — I put reasonable odds our kids end up woven into each other's lives for a long while. (Zach excepted — that bond I get for free.)
+3. **Escape.**
+
+**But it turns out** — on #3, I had nothing to escape from. Amazingly, no work stress and no PSC stress: for once my [body was home and my mind stayed home too](/mind-at-work). Take away the consuming and there was simply nothing left to run from.
+
+**What I didn't expect:**
+
+4. **The addiction dissolved** — social media and vibe-coding went quiet out here, more than I thought they could.
+5. **The jovial me came back** — to my genuine and thrilled surprise, the itch to do balloons, magic, and just _be_ fun came roaring back.
+
+4 and 5 are the interesting ones, and they're linked: the one real sacrifice I've made to AI is that the [Dealer of Smiles and Wonder](/joy) just stopped showing up. Out here, with the screens quiet, he walked right back in — the guy underneath was someone I'd been missing.
+
+## Re-stacking the roles
+
+Ranking the trip made me ask the bigger version of the question: if that's the order for 22 days, what's the stack for every day? So I re-sorted the roles into three honest tiers.
+
+**Non-negotiables — protect first, daily.** The two foundational [Healths](/four-healths): _Physical_, banked before the family wakes up, and _Emotional_ — awareness and compassion, handled as it happens. Everything else is built on these.
+
+**Frequently starved — feed these.** _Father / Husband_, and the _Joy Giver_ — the balloons-and-magic guy from [the eulogy](/eulogy). The roles I'd grieve losing, and the exact ones I let go hungry when work gets loud. The trip already proved the Joy Giver comes roaring back the moment I stop starving him.
+
+**Over-invested — dial back.** _Technologist_, and honestly everything else, parked way below where they've been running. Not because the work doesn't matter — because it's the finished room, and I keep redecorating it instead of walking into the ones that aren't.
+
+## A learning to bring home
+
+First one already banked: **meditation travels, and churches are the best place to do it.** Duck into whatever old cathedral the city is proud of, take a pew, and just sit — cool stone, tall ceilings, nothing asked of you. The room is built to slow you down; let it.
+
 ## At a Glance
 
 | Leg                                   | Dates           | Nights | Country     |
@@ -34,6 +67,8 @@ For context on why I take time off: [/time-off](/time-off).
 **Total**: 22 days, 5 countries (Iceland → Denmark → Sweden → Norway → Netherlands), back home Jul 19.
 
 📍 [See the full route on Google Maps](https://www.google.com/maps/dir/Reykjav%C3%ADk/Copenhagen/Stockholm/Oslo/Aurland/Voss/Bergen/Amsterdam) — 8 stops in one view.
+
+> 🧳 **Packing:** my reusable [packing master list](/packing) — the durable checklist every trip is trimmed from.
 
 ## Who's coming
 
