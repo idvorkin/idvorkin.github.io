@@ -55,7 +55,7 @@ First one already banked: **meditation travels, and churches are the best place 
 
 ### 🇮🇸 Reykjavík
 
-The pools are the whole thing. You start in an 8°C cold plunge — the kind that empties your head — then climb through 40, 42, 44, one of the hot ones fed by a pipe running straight in from the ocean. Sauna with all four of us. One morning I banked 5am kettlebells before anyone woke up: only six minutes, because it was raining, but the keystone held — six honest minutes beats a skipped day. Sauna again after. We stayed in a hostel with a shared kitchen, and the best night was cooking dinner next to strangers and trading stories across the table.
+The pools are the whole thing. You start in an 8°C cold plunge — the kind that empties your head — then climb through 40, 42, 44, one of the hot ones fed by a pipe running straight in from the ocean. Sauna with all four of us. One morning I banked a full 5am kettlebell session before anyone woke up — drove to the gym and finished with about six minutes to spare before the rain moved in. The keystone held. Sauna again after. We stayed in a hostel with a shared kitchen, and the best night was cooking dinner next to strangers and trading stories across the table.
 
 Two things stuck with me about Iceland. Family is clearly the whole priority — a trampoline in every yard, kids everywhere. And nobody eats out; there are barely any restaurants, so everyone eats in.
 
@@ -69,7 +69,7 @@ Amelia did the zoo solo and out-prepared me — when my phone died she handed me
 
 We saw the Vasa, the warship that capsized in the harbor on its maiden voyage and got raised mostly intact three centuries later. Zach went on a tear at dinner: frog legs, ratatouille, escargot.
 
-Sunday we ducked into a Greek Orthodox church, and Zach got a blessing from the visiting bishop. I nearly got thrown out of the same church for doing magic in the pews. Standing there getting chewed out, I hit a Viktor Frankl beat — between what happens to you and how you respond there's a gap, and no one can take away the freedom inside it. So I didn't fire back. I stayed [proactive](/be-proactive) and chose my [response](/act) instead of handing it over.
+Sunday we ducked into a Greek Orthodox church, and Zach got a blessing from the visiting bishop. I nearly got thrown out of the same church for doing magic in the pews. Standing there getting chewed out, I hit a Viktor Frankl beat — between what happens to you and how you respond there's a gap, and no one can take away the freedom inside it. Two wins: I caught my fight-or-flight reaction multiple times and breathed through it instead of firing back, and I got some work in on my memorization practice. [Proactive](/be-proactive), not reactive — I [chose the response](/act).
 
 ## At a Glance
 
