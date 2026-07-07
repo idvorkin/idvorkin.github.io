@@ -46,6 +46,7 @@ The whole trap of time off in one sentence — vegetating _feels_ like rest, but
   - [Time box vegetation](#time-box-vegetation)
   - [Strategize against the resistance](#strategize-against-the-resistance)
   - [Begin with the end in mind](#begin-with-the-end-in-mind)
+  - [Re-stack your roles](#re-stack-your-roles)
 - [Examples of how I spent my time off](#examples-of-how-i-spent-my-time-off)
 - [Making the most out of staycation](#making-the-most-out-of-staycation)
 - [Should you do per-family-member vacations](#should-you-do-per-family-member-vacations)
@@ -155,6 +156,14 @@ And by making your positive habits easier. For me, this includes writing up a ti
 - Read your [eulogy](/eulogy), to remember what matters most to you.
 - Remember not to [procrastinate](/frog).
 
+### Re-stack your roles
+
+Reading the eulogy reminds you which roles matter; time off is the chance to actually re-stack them, because ordinary life quietly mis-sorts them. I sort mine into three honest tiers:
+
+- **Non-negotiables — protect first, daily.** The two foundational [Healths](/four-healths): _Physical_, banked before the family wakes up, and _Emotional_ — awareness and compassion, handled as it happens. Everything else is built on these.
+- **Frequently starved — feed these.** _Father / Husband_, and the _Joy Giver_ — the [balloon](/balloon)-and-[magic](/magic) guy from the [eulogy](/eulogy). The roles I'd grieve losing, and the exact ones I let go hungry when work gets loud. Time off is their window; the jovial me comes roaring back the moment I stop starving him.
+- **Over-invested — dial back.** _Technologist_, and honestly everything else, parked way below where they run in a normal week. Not because the work doesn't matter — because it's the finished room, and I keep redecorating it instead of walking into the ones that aren't.
+
 ## Examples of how I spent my time off
 
 Look at the incoming links below and:
@@ -241,6 +250,7 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
 - **GET A GYM MEMBERSHIP** - Gym is a fantastic place to focus on strength and renewal and anchor the day. I got a gym membership with GoodLife, let me do my top priorities daily, even had a massage chair.
 
 - **Bring bands, light gym equipment** - Have everything to stretch and self-massage, and light workouts
+
   - Heavy bands/light bands; Peanut ball; Harsh foam roller; Gripper (need it for my wrist)
 
 - **Do extra stretches/cardio** - Remember energy positive, and keeps you injury-free.
@@ -285,6 +295,7 @@ Ensure I don't run out of terzepatide during trips/time off. Plan refills ahead 
 ### Emotional Health
 
 - **Pay yourself first** - Make time for yourself in the morning, go to bed early and get coffee shop time, gratefulness journal, meditation etc. This grounds me through the day, and gives me the calmness I need and a chance to figure out the essential.
+- **Meditation travels — churches are perfect for it** - You don't need your cushion. Old churches and cathedrals are some of the best rooms for sitting quietly: duck in, take a pew, and just be still. They're built to slow you down; let them.
 - **Slack** - Have lots of slack (See [Essential](/essential)).
   - Made time with my family much more enjoyable when I wasn't in a rush and success was being with them.
   - Same with going to the airport, got there hours early. Didn't matter that got stuck at the car rental return. Didn't matter that my flight got delayed, can write, meditate do some inner work.
