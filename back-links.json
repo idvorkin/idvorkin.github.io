@@ -3212,6 +3212,7 @@
                 "/sharpen-the-saw",
                 "/spiritual-health",
                 "/timeoff",
+                "/timeoff-2026-07",
                 "/todo_enjoy",
                 "/walking-with-god",
                 "/work-satisfaction"
@@ -3388,7 +3389,8 @@
                 "/mortality-software",
                 "/operating-manual",
                 "/sharpen-the-saw",
-                "/spiritual-health"
+                "/spiritual-health",
+                "/timeoff-2026-07"
             ],
             "last_modified": "2026-07-03T12:06:45-07:00",
             "markdown_path": "_d/four-healths.md",
@@ -5449,9 +5451,10 @@
                 "/ai-feed",
                 "/ai-journal",
                 "/gap-year-igor",
-                "/slow"
+                "/slow",
+                "/timeoff-2026-07"
             ],
-            "last_modified": "2026-05-28T07:10:46-07:00",
+            "last_modified": "2026-07-07T02:18:48-07:00",
             "markdown_path": "_d/produce-consume.md",
             "outgoing_links": [
                 "/activation",
@@ -7221,19 +7224,22 @@
         },
         "/timeoff-2026-07": {
             "description": "22 days, 5 countries, 4 Dvorkins, one whirlwind tour. From Reykjavík to Amsterdam by way of Stockholm, Oslo, and the Norwegian fjords. This is the first time we’ve attempted a trip of this scope as a family — the kids are 16 and 12, both still home, and the window for “all four of us on the road together” closes faster than I’d like.\n\n",
-            "doc_size": 21000,
+            "doc_size": 24000,
             "file_path": "_site/timeoff-2026-07.html",
             "incoming_links": [
                 "/ai-policy",
                 "/timeoff",
                 "/y26"
             ],
-            "last_modified": "2026-06-26T17:48:58-07:00",
+            "last_modified": "2026-07-07T02:23:37-07:00",
             "markdown_path": "_d/time-off-2026-07.md",
             "outgoing_links": [
                 "/ai-policy",
                 "/awareness",
+                "/eulogy",
+                "/four-healths",
                 "/meta",
+                "/produce-consume",
                 "/timeoff",
                 "/y26"
             ],
