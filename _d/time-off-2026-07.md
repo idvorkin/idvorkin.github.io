@@ -146,7 +146,7 @@ One rule underneath all of it: [be where my feet are](/awareness). Three tests k
 2. **Build vs. use?** Researching the perfect restaurant isn't eating the meal. Optimizing the trip isn't living it.
 3. **When?** Anything that pulls me out of the moment — phone, work email, even shooting everything through a camera — lives in the margins. The awake hours belong to the people I'm with.
 
-The sharpest test of all this is how I use AI on the road. I wrote that one up on its own: [my AI policy](/ai-policy).
+The sharpest test of all this is how I use AI on the road. I wrote that one up on its own: [my AI policy](/ai-policy). And when I do reach back to the dev box from here, physics sends a bill: [the speed of light shows up as a number](/life-journal#speed-of-light-from-sweden) — ~170 ms across the Atlantic.
 
 ## Goals for the trip
 

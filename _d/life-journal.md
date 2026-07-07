@@ -11,6 +11,8 @@ A journal of random life observations. Keeping track of them so I don't forget w
 
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-07-07](#2026-07-07)
+    - [Speed of Light, from Sweden](#speed-of-light-from-sweden)
   - [2026-07-01](#2026-07-01)
     - [Meditating in a Church](#meditating-in-a-church)
     - [Barefoot Down the Tower Ramp](#barefoot-down-the-tower-ramp)
@@ -53,6 +55,28 @@ When adding a new entry:
 - Future life vignettes will land here before they get written up.
 
 ## Diary
+
+### 2026-07-07
+
+#### Speed of Light, from Sweden
+
+Working from Sweden this week, hitting my dev box back in Seattle, and the speed of light finally showed up as a number I could feel: ~170 ms round trip — and almost all of it lives in a single hop.
+
+| Segment | Hops | RTT | What it is |
+| --- | --- | --- | --- |
+| Home LAN | 1–4 | ~4.5 ms | OrbStack NAT → router(s) → modem — three NAT layers |
+| Seattle metro | 5–6 | ~6–10 ms | CenturyLink/Lumen; Tukwila |
+| Seattle backbone edge | 7 | ~7 ms | Lumen `sea1` — still in Seattle |
+| ⚡ Transatlantic jump | 7→8 | +163 ms | Lumen Seattle → Colt Stockholm, one backbone leg |
+| Stockholm delivery | 8–13 | ~170 ms | Colt → Bahnhof → destination |
+
+~7 ms gets me to the edge of Seattle. The Atlantic crossing — Seattle → Stockholm, one backbone leg (Lumen → Colt) — adds ~163 ms all by itself. Once packets are in Stockholm the last mile costs basically nothing.
+
+**How fast could it possibly be?** Light in glass crawls at about two-thirds of _c_ — roughly 204,000 km/s. Seattle to Stockholm is ~7,600 km great-circle, so the hard floor is about **74 ms** round trip in fiber — or **~51 ms** if you could shoot it straight through vacuum. I'm seeing ~163 ms, about **2.2× the floor**. That gap isn't waste in the usual sense: real fiber doesn't fly the great circle. Run the math backward and ~163 ms implies ~16,500 km of actual glass — the packets go _down_ the US and _across_ the North Atlantic, not the straight line a photon would take if it could. Physics sets the floor; geography sends the bill.
+
+Tally: Seattle → Seattle ~6 ms; Seattle → Stockholm ~170 ms; Umeå (far north) ~182 ms. You can't out-engineer physics — you can only hide it, and 4,000 miles of ocean is hard to hide.
+
+This is the [Scandinavian trip](/timeoff-2026-07) talking — planned, like most things lately, with Barry and [Larry](/larry) riding along. The joke writes itself: the assistants that helped me get here now live 170 ms away.
 
 ### 2026-07-01
 
