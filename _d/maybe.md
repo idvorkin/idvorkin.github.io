@@ -2,12 +2,15 @@
 layout: post
 title: "Bad News. Maybe Not."
 permalink: /maybe
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-maybe.webp
 tags:
   - psychology
   - emotional intelligence
 ---
 
 A farmer's horse runs away. His neighbors console him: "What terrible luck!" The farmer shrugs, "Maybe." The next day the horse returns, leading a herd of wild horses behind it — "What wonderful luck!" "Maybe." His son tries to tame one, is thrown, and breaks his leg — "How awful!" "Maybe." A week later the army marches through, conscripting every able-bodied young man for a war most won't return from, and the son, with his broken leg, is passed over — "How wonderful!" "Maybe." Good luck, bad luck — who knows? The story is never finished, so the farmer never renders the verdict. He just keeps living.
+
+{% include blob_image_float_right.html src="blog/raccoon-maybe.webp" %}
 
 {% include ai-slop.html percent="30" %}
 
