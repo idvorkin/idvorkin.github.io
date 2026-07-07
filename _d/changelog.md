@@ -13,9 +13,12 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- vim-markdown-toc-start -->
 
 - [Week of 2026-07-06](#week-of-2026-07-06)
-  - [Life Journal: Happy Fluff](#life-journal-happy-fluff)
-  - [Time Off: Vegetation Recovery Speeds Up](#time-off-vegetation-recovery-speeds-up)
-  - [Four Healths: A Thousand Wishes](#four-healths-a-thousand-wishes)
+  - [Bad News. Maybe Not. (new post!)](#bad-news-maybe-not-new-post)
+  - [Time Off: Sacrifice Identity for Consumption (2026-07-06)](#time-off-sacrifice-identity-for-consumption-2026-07-06)
+  - [Scandinavia Trip Post (2026-07-06)](#scandinavia-trip-post-2026-07-06)
+  - [My Packing Master List (new page!)](#my-packing-master-list-new-page)
+  - [Life Journal: Speed of Light from Sweden (2026-07-06)](#life-journal-speed-of-light-from-sweden-2026-07-06)
+  - [Other Projects (2026-07-06)](#other-projects-2026-07-06)
 - [Week of 2026-06-29](#week-of-2026-06-29)
   - [Trusts in Washington (new post!)](#trusts-in-washington-new-post)
   - [AI Training: Post-Training Methods Table](#ai-training-post-training-methods-table)
@@ -143,25 +146,66 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 
 ## Week of 2026-07-06
 
-_6 commits this week_
+_39 commits this week_
 
-### Life Journal: Happy Fluff
+### Bad News. Maybe Not. (new post!)
 
-**[/life-journal#happy-fluff](/life-journal#happy-fluff)** — new 2026-07-01 entry. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/90a696255)
+**[/maybe](/maybe)** — a new post on the "good luck, bad luck, who knows?" reframe. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e355c3979)
 
-Saw a tub labeled **HAPPY FLUFF** on a café shelf. It's exactly how Igor describes his goal in life: nearly weightless, no nutritional value, but brings people joy anyway. Ties to [Dealer of Smiles and Wonder](/eulogy) — leave a little happy fluff in every room, walk away smiling.
+Opens with the Taoist farmer parable — horse runs away ("terrible luck!"), returns leading a wild herd ("wonderful!"), the son breaks his leg taming one, then the army conscripts every able-bodied young man for a war most won't return from and passes over the son. Every verdict gets the same shrug: "Maybe." Then five times Igor called it wrong in his own life:
 
-### Time Off: Vegetation Recovery Speeds Up
+- **The latex allergy** — ended bare-hand balloon twisting, forced leather gloves, which don't squeak against the balloons — so now he can perform anywhere without the rubbery screech announcing him first.
+- **The shoulder** — a Turkish-get-up tweak exposed years of sloppy form and forced a ground-up kettlebell rebuild.
+- **The second phone** — he dreaded air-gapping work onto a second device; on vacation it became the spare he hands Amelia when her battery dies.
+- **Amazon** — a bad-fit team and a not-great review lit the fire that produced offers from Facebook, Google, Zillow, and Indeed — and six-plus great years at Facebook.
+- **Mental breakdown in his thirties** — the worst he's ever felt, but it's what built the whole operating system he runs on now: sleep-as-sacred, the emotional-health habits, the [7 Habits](/7h-concepts), and the [eulogy](/eulogy).
 
-**[/timeoff#vegetation](/timeoff#vegetation)** — updated. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/42f6af25f)
+"I still panic first, but I've been wrong so many times about which turns were good and which were bad that I wish I could remember you never can tell." A raccoon-shrug header illustration was added and repositioned below the TOC. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/412e173a3)
 
-The "vegetation" phase of time off — draining accumulated work stress before you can enjoy free time — used to take Igor a solid week. Now it takes about a day. Framed as getting better at work-life balance.
+### Time Off: Sacrifice Identity for Consumption (2026-07-06)
 
-### Four Healths: A Thousand Wishes
+The intellectual spine of the week — one epigraph threaded through three posts, plus a durable role re-stack in the evergreen essay:
 
-**[/four-healths#physical-health-your-energy-foundation](/four-healths#physical-health-your-energy-foundation)** — new aphorism added to the Physical Health section. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/46cc4d30a)
+- **"When you sacrifice identity for consumption, you end up with neither."** New epigraph added to the evergreen [/time-off](/time-off), the [Scandinavia trip post](/timeoff-2026-07), and [/produce-consume](/produce-consume) — vegetating _feels_ like rest but quietly starves the roles that make you _you_. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/920b9f567)
+- **[Re-stack your roles](/time-off#re-stack-your-roles)** — new section sorting roles into three honest tiers: **Non-negotiables** (Physical + Emotional [health](/four-healths), protected daily), **Frequently starved** (Father / Husband and the Joy Giver — the balloon-and-magic guy from the eulogy), and **Over-invested** (Technologist and everything else — "the finished room, and I keep redecorating it instead of walking into the ones that aren't"). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2cd756ee6)
+- **[Traveling with tirzepatide](/time-off#appendix-traveling-with-tirzepatide-or-any-med-that-needs-a-fridge)** — new appendix on fridge-dependent meds: a TSA-approved travel cooler, ask the hotel front desk to stash doses, and pack the whole trip's supply (no refills on the road). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/c843d3c7b)
+- **Where to eat + diet recovery** — shop the grocery store (a cucumber, some fruit, and a rotisserie chicken beat the tourist-strip restaurants) and skip the tourist areas. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d92867a94)
 
-> _A healthy person has a thousand wishes; a sick person has only one._ Lose your health and every other want collapses into that one — to be well again.
+### Scandinavia Trip Post (2026-07-06)
+
+**[/timeoff-2026-07](/timeoff-2026-07)** — the 22-day, 5-country family trip post got a big expansion:
+
+- **[Ranked "why I'm taking this time off"](/timeoff-2026-07#why-im-taking-this-time-off--ranked)** — reframed as _expected_ / _but-it-turns-out_ / _didn't-expect_. Expected: deepen the bond with Amelia and Tori, really meet the travel companions, escape. But it turns out there was nothing to escape — no work or PSC stress, "body home and mind home too." Didn't expect: the social-media / vibe-coding addiction dissolved, and the "jovial me" — the [Dealer of Smiles and Wonder](/joy) — came roaring back once the screens went quiet. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/aa8aefbc1)
+- **[Re-stacking the roles](/timeoff-2026-07#re-stacking-the-roles)** and a first **learning to bring home — meditation travels**: old churches and cathedrals are the best rooms for sitting quietly; duck in, take a pew, be still. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6ac955f60)
+- **Marble Church (Marmorkirken)** added to the Copenhagen itinerary — climb the dome tower for the Amalienborg→Opera axis. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8658558d4)
+- **Packing master-list callout** plus a **speed-of-light cross-link** — reaching the Seattle dev box from Sweden costs ~170 ms. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1a82bce2a)
+
+### My Packing Master List (new page!)
+
+**[/packing](/packing)** — a durable, trip-agnostic packing checklist that every specific trip is trimmed from (an items-plus-decisions list, split Road-trip vs Airplane). Landed this week via PR #711 with Igor's review notes applied: Magic restructured around a belt-clipped "pocket kit" (two yellow cases — card sleeves; "You are awesome" + special cards), a neck brace for flights, a gym-locker lock, 3× compressible travel cubes, and a cross-link to the tirzepatide fridge-med section. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/feb1c4d60) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1dbe88d79)
+
+### Life Journal: Speed of Light from Sweden (2026-07-06)
+
+**[/life-journal#speed-of-light-from-sweden](/life-journal#speed-of-light-from-sweden)** — working from Sweden against a Seattle dev box, the speed of light finally showed up as a number Igor could feel. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/c649c5373)
+
+- ~7 ms reaches the edge of Seattle; a single transatlantic backbone hop (Lumen Seattle → Colt Stockholm) adds **+163 ms** by itself; the Stockholm last mile is basically free (~170 ms total).
+- **The physics floor:** light in glass ≈ 204,000 km/s and Seattle→Stockholm is ~7,600 km great-circle, so the hard floor is ~74 ms round-trip in fiber (~51 ms in vacuum). The observed ~163 ms is ~2.2× the floor — because real fiber doesn't fly the great circle: ~163 ms implies ~16,500 km of actual glass, down the US and across the North Atlantic. "Physics sets the floor; geography sends the bill."
+
+### Other Projects (2026-07-06)
+
+**[Scandinavian Whirlwind 2026](https://idvorkin-ai-tools.github.io/scandinavia-2026/)** (trip site) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026)
+
+- **9 field-map explainers** brought into the repo and wired into the trip site — 7 city deep-dives (Reykjavík, Copenhagen, Stockholm, Oslo, Bergen, Voss, Amsterdam) plus 2 topical (Napoleonic Wars in Scandinavia, cathodic protection), each with a "Back to the trip map" pill and a "Deep dive" link off its city page. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/0788a2dba)
+- **Scandinavia War Context Pack** — 6 new history explainers plus a chronological pack index (`wars.html`): Viking Age, Denmark vs Sweden, Swedish Empire & the Thirty Years' War, Great Northern War, WWII in the Nordics, and Cold War / Arctic — a 7-page timeline (with the existing Napoleonic explainer) cross-linking the cities. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/9759c20c6)
+- **Marble Church** deep-dive page added (PR #5). [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/89bd6780c)
+
+**[AI Safety — A Field Map](https://idvorkin-ai-tools.github.io/ai-safety-field-map/)** (new explainer site) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/ai-safety-field-map)
+
+- A technical field map for engineers entering AI alignment — a spine plus ~25 deep-dive pages across **approaches** (RLHF, red-teaming, scalable oversight), **evals** (METR, AISI, dangerous-capability evals, responsible scaling), **failures** (deceptive alignment, mesa-optimization, reward hacking, specification gaming, power-seeking, goal misgeneralization), **interpretability** (circuits, mech-interp, sparse autoencoders, superposition), and **papers** (Constitutional AI, Debate, Sleeper Agents, Weak-to-Strong). [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/ai-safety-field-map/commit/530e09ac2)
+
+**[blob](https://github.com/idvorkin/blob)** (image assets)
+
+- Added `raccoon-maybe.webp` — the shrug header for the new /maybe post. [<i class="fa fa-github"></i>](https://github.com/idvorkin/blob/commit/c5e238c46)
 
 ## Week of 2026-06-29
 
@@ -491,7 +535,7 @@ All eight 7 Habits chapter posts ([c0](/7h-c0)–[c7](/7h-c7)) received substant
 
 **[c0 — Core Concepts](/7h-c0)** ([<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/62430e8c3)) — Every section fleshed out from stubs to full prose. Key additions:
 
-- **Inside Out** — "Working on the outside without changing the inside is putting fresh paint on a rusted frame." Private victories precede public victories: if you want a better marriage, *be* a better partner.
+- **Inside Out** — "Working on the outside without changing the inside is putting fresh paint on a rusted frame." Private victories precede public victories: if you want a better marriage, _be_ a better partner.
 - **Character vs Personality Ethic** — 150 years of character ethic (Franklin's autobiography archetype) vs. the post-WWI shift to personality ethic (smile training, influence techniques). The cram vs. the farm.
 - **Borrowed Strength Builds Weakness** (new section) — When emotional maturity runs out, we reach for position/title/authority/size. Borrowed strength works in the moment and builds weakness in all three parties: the borrower, the coerced, and the relationship. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2799be845)
 - **P/PC Balance** — Aesop's goose applied: sleep vs. one more hour of work; shipping vs. fixing the test suite; doing it myself vs. the hard conversation.
@@ -580,7 +624,7 @@ New post at [/vibing](/vibing) — a survey of what extended AI-agent interactio
 Key observations:
 
 - **Imagining and creating collapse into one step** — Covey says everything is created twice. With agents, the gap between the mental and physical creation approaches zero. The catch: the same collapse can swallow the thinking. Skip the mental pass and the agent does both — you've made a thing without imagining it.
-- **Multi-agent as stall-coverage, not parallelism** — flow needs continuous output. A single agent stalls; you switch to another. The key insight: this only works if *you* don't stall. On a bad day the same multi-agent setup that produces effortless flow produces incoherent thrash.
+- **Multi-agent as stall-coverage, not parallelism** — flow needs continuous output. A single agent stalls; you switch to another. The key insight: this only works if _you_ don't stall. On a bad day the same multi-agent setup that produces effortless flow produces incoherent thrash.
 - **Addiction qualities** — Apply the [addiction/passion/hobby trichotomy](/addiction). The kid-test is the fastest discriminator: would you be proud to see your child doing this exact thing, this much, this way? Not "would you want them to use AI," but the literal behavior.
 - **Burnout is real** — one week crashed to 3.5 hrs sleep and HRV 27.2 (week's lowest). Citing Yegge's [AI Vampire](https://steve-yegge.medium.com/the-ai-vampire-eda6e4f07163): "3 to 4 hours is going to be the sweet spot for the new workday."
 - **Voice as a reps-and-recovery muscle** — three days of intense voice vibe-coding produces the same vocal-cord fatigue as a calendar-packed meeting week.
@@ -613,7 +657,7 @@ Two universal lessons: **scaffold first, customize second**; **trust the runtime
 
 New section added to [/igors-claws](/igors-claws#challenges-business-logic-goop-infra) — a three-layer breakdown of what building claws actually costs, mapped to the Business Logic / Goop / Infra framework from [/design](/design). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/faa9c2e8b)
 
-- **Business logic** — what Larry, Wally, and Tony actually do. The core is small and stable; if you wrote down "what Larry *does*," it's maybe a page.
+- **Business logic** — what Larry, Wally, and Tony actually do. The core is small and stable; if you wrote down "what Larry _does_," it's maybe a page.
 - **Goop** — every line connecting business logic to infra. Telegram MCP bridge, Kindle Scribe pipeline, context-grabber iOS app, `bd` beads tracker, CLAUDE.md skills. _This is where the Winchester Mystery House lives._
 - **Infra** — Claude Code, MCP servers, Vapi, the LLM APIs. Stuff Igor doesn't build. Moves fast enough that goop written three months ago is already obsolete.
 
@@ -652,12 +696,12 @@ New post at [/work-gastown](/work-gastown) — translating Steve Yegge's Gas Tow
 
 The core argument: when you start running agents, you feel like the Mayor — but you're actually **M2**. Wally (the AI orchestrator) is M1. The table:
 
-| Yegge's Gas Town | Org-chart vocabulary | Role |
-| --- | --- | --- |
-| _(implicit operator)_ | M2 — the human | Direction, review, strategic calls |
-| Mayor | M1 — Wally | Orchestrates work, distributes tasks |
-| Oracle / Deacons | Staff — cloud teammates | Persistent context-holders near M1 |
-| Polecats | Odalis — ephemeral ICs | Ephemeral workers with build-tool access |
+| Yegge's Gas Town      | Org-chart vocabulary    | Role                                     |
+| --------------------- | ----------------------- | ---------------------------------------- |
+| _(implicit operator)_ | M2 — the human          | Direction, review, strategic calls       |
+| Mayor                 | M1 — Wally              | Orchestrates work, distributes tasks     |
+| Oracle / Deacons      | Staff — cloud teammates | Persistent context-holders near M1       |
+| Polecats              | Odalis — ephemeral ICs  | Ephemeral workers with build-tool access |
 
 Three notable sections:
 

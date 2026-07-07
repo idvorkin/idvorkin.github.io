@@ -241,8 +241,6 @@
         "/operator": "/ai-operator",
         "/orthodox": "/greek-orthodox",
         "/overwork": "/overload",
-        "/pack-list": "/packing",
-        "/packing-list": "/packing",
         "/pain": "/mental-pain",
         "/parkinson-law": "/parkinson",
         "/parkinsons-law": "/parkinson",
@@ -1667,7 +1665,7 @@
         },
         "/bc": {
             "description": "A guide to my favorite spots in British Columbia, focusing on Vancouver and Chilliwack. Whether you’re planning a quick weekend getaway or a longer adventure, here’s what you need to know. These recommendations come from my personal experiences over multiple trips - you can read about some of them in my summer 2024 adventures, Yellow Deli expedition, and various time off adventures:\n\n",
-            "doc_size": 23000,
+            "doc_size": 22000,
             "file_path": "_site/bc.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T03:02:44+00:00",
@@ -2015,13 +2013,15 @@
         },
         "/changelog": {
             "description": "A weekly summary of what changed on this blog and across my GitHub projects. Useful for returning readers who want to catch up on new content and updates.\n\n",
-            "doc_size": 219000,
+            "doc_size": 228000,
             "file_path": "_site/changelog.html",
             "incoming_links": [],
-            "last_modified": "2026-07-06T15:12:08+00:00",
+            "last_modified": "2026-07-07T12:09:40.505435+00:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
                 "/42",
+                "/7h-c0",
+                "/7h-c7",
                 "/7h-concepts",
                 "/act",
                 "/activation",
@@ -2060,13 +2060,17 @@
                 "/igors-claws",
                 "/image-selector",
                 "/irl",
+                "/joy",
                 "/keyboard",
                 "/larry",
                 "/life-journal",
                 "/lonely",
+                "/maybe",
                 "/money",
                 "/mosh",
+                "/packing",
                 "/podcast",
+                "/produce-consume",
                 "/product",
                 "/psychic-weight",
                 "/raccoon-history",
@@ -2077,6 +2081,7 @@
                 "/spiritual-health",
                 "/synergy",
                 "/taxes",
+                "/time-off",
                 "/timeoff",
                 "/timeoff-2026-07",
                 "/trusts",
@@ -2085,7 +2090,8 @@
                 "/wally",
                 "/why-gas-city",
                 "/win-win",
-                "/y26"
+                "/work-gastown",
+                "/y2026"
             ],
             "redirect_url": "",
             "title": "Changelog",
@@ -2158,6 +2164,7 @@
                 "/hill-climbing",
                 "/how-igor-chops",
                 "/meta",
+                "/process-journal",
                 "/tech-rituals",
                 "/y24",
                 "/y25",
@@ -2693,7 +2700,7 @@
         },
         "/day-in-the-life": {
             "description": "A running journal of days that actually worked - the ones where health habits stuck, family time hit different, or I remembered what it feels like to be fully alive. Not every day needs to be Instagram-worthy, but some days deserve a bookmark. This is that bookmark collection.\n\n",
-            "doc_size": 19000,
+            "doc_size": 18000,
             "file_path": "_site/day-in-the-life.html",
             "incoming_links": [],
             "last_modified": "2025-10-04T18:43:51-07:00",
@@ -3687,7 +3694,7 @@
         },
         "/grammerly": {
             "description": "\n\n",
-            "doc_size": 13000,
+            "doc_size": 12000,
             "file_path": "_site/grammerly.html",
             "incoming_links": [],
             "last_modified": "2025-08-24T09:03:19-07:00",
@@ -4318,7 +4325,6 @@
                 "/life-journal",
                 "/mortality-software",
                 "/pet-projects",
-                "/process-journal",
                 "/structure",
                 "/y26"
             ],
@@ -4671,7 +4677,7 @@
         },
         "/mermaid": {
             "description": "Lets try d2\n\n",
-            "doc_size": 15000,
+            "doc_size": 14000,
             "file_path": "_site/mermaid.html",
             "incoming_links": [],
             "last_modified": "2023-12-17T18:49:14+00:00",
@@ -5192,7 +5198,7 @@
                 "/timeoff",
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-07-07T04:32:04-07:00",
+            "last_modified": "2026-06-27T15:28:20-07:00",
             "markdown_path": "_d/packing.md",
             "outgoing_links": [
                 "/ai-policy",
@@ -5444,7 +5450,7 @@
             "url": "/pride"
         },
         "/process-journal": {
-            "description": "I’ve been doing daily stream of consciousness journaling since 2011, writing over a million words. Here’s how I capture and process my entries. I don’t always hit this perfectly - it’s the process I aim for.\n\n",
+            "description": "I’ve been doing daily stream of consciousness journaling since 2011, writing over a million words. Here’s how I think about processing and analyzing my journal entries. While I don’t always achieve this perfectly, this represents my aspirational process that I strive towards.\n\n",
             "doc_size": 19000,
             "file_path": "_site/process-journal.html",
             "incoming_links": [
@@ -5463,11 +5469,10 @@
             "outgoing_links": [
                 "/affirmations",
                 "/be-proactive",
+                "/chop",
                 "/emotional-health",
                 "/grateful",
-                "/larry",
-                "/psychic-weight",
-                "/static/igor-journal-template.pdf"
+                "/psychic-weight"
             ],
             "redirect_url": "",
             "title": "Daily Journaling: From Psychic Diarrhea to Polished Turds",
@@ -6422,7 +6427,7 @@
         },
         "/synergize": {
             "description": "We’ve all got stuff we’re good at and stuff we’re bad at. Combine them right and the system is greater than the sum of the parts — sometimes a lot greater. Synergy is the payoff for everything that came before: independence, Win/Win, and seeking first to understand all converge here. These are my insights from 7 habits Chapter 6.\n\n",
-            "doc_size": 29000,
+            "doc_size": 28000,
             "file_path": "_site/synergize.html",
             "incoming_links": [
                 "/7-habits",
@@ -6507,7 +6512,7 @@
         },
         "/td/back_ref": {
             "description": "This blog is my collection of evergreen notes, a place to have my thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here’s my strategy to create them.\n\n",
-            "doc_size": 14000,
+            "doc_size": 13000,
             "file_path": "_site/td/back_ref.html",
             "incoming_links": [],
             "last_modified": "2022-04-16T15:22:43-07:00",
@@ -6815,7 +6820,7 @@
         },
         "/terzepatide": {
             "description": "“You know Igor, weight loss is a solved problem” - my bestie, texted me when I complained about my pants no longer fitting. Remember - Diet dominates weight, as weight is simple arithmetic -“calories in” minus “calories out”. For me, will power dominates diet, and terzepatide dominates will power when stuffing things in my mouth. I started Terzepatide in February 2024, and so far it’s been great.\n\n",
-            "doc_size": 22000,
+            "doc_size": 19000,
             "file_path": "_site/terzepatide.html",
             "incoming_links": [
                 "/42",
@@ -6826,7 +6831,7 @@
                 "/timeoff-2024-04",
                 "/voices"
             ],
-            "last_modified": "2026-07-07T05:02:30-07:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_d/terzepatide.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -6951,7 +6956,7 @@
                 "/timeoff-2025-08",
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-07-07T04:37:10-07:00",
+            "last_modified": "2026-07-07T02:42:43-07:00",
             "markdown_path": "_d/time_off.md",
             "outgoing_links": [
                 "/addiction",
@@ -7695,7 +7700,7 @@
         },
         "/win-win": {
             "description": "Win/Win is a constantly seeking mutual benefit in all interactions. Win/Win means that agreements or solutions are mutually beneficial, mutually satisfying. With a Win/Win solution, all parties feel good about the decision and feel committed to the action plan. Win/Win sees life as a cooperative, not a competitive arena. Most people tend to think in terms of dichotomies: strong or weak, hardball or softball, win or lose. But that kind of thinking is fundamentally flawed. It’s based on power and position rather than on principle. Win/Win is based on the paradigm that there is plenty for everybody, that one person’s success is not achieved at the expense or exclusion of the success of others.\n\n",
-            "doc_size": 48000,
+            "doc_size": 47000,
             "file_path": "_site/win-win.html",
             "incoming_links": [
                 "/7-habits",
