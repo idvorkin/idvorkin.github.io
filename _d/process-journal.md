@@ -18,6 +18,7 @@ I've been doing [daily stream of consciousness journaling](/emotional-health#dai
 - [Handwriting vs Typing](#handwriting-vs-typing)
 - [Journalling Workflow in 2025](#journalling-workflow-in-2025)
 - [Journal Structure](#journal-structure)
+- [The Prompts at the Bottom](#the-prompts-at-the-bottom)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -34,7 +35,13 @@ AI transcription ended the tradeoff. I write by hand on a Kindle Scribe, then le
 
 The old version of this was fiddly. Every morning I created a fresh notebook on the Scribe, named it with the date, wrote, then emailed it to myself so a script could grab the PDF. A new notebook a day meant a long scroll of loose files with no easy way to flip back to last Tuesday.
 
-Now I journal in one hyperlinked PDF instead of a notebook per day. A little Python script generates a blank template for a date range - I usually do a quarter at a time. Each month gets an index page, and every date on that index is a tappable link straight to that day's first page. The page header carries the same navigation: day-jump arrows, page tabs (1-5), and a home button back to the month index. On the Scribe I tap a date with my finger and land on it, so the whole quarter is one book I can page through instead of a pile of separate notebooks.
+Now I journal in one hyperlinked PDF instead of a notebook per day. A little Python script generates a blank template for a date range - I usually do a quarter at a time. Each month gets an index page, and every date on that index is a tappable link straight to that day's first page.
+
+![The month index page - each in-range date is a tappable link into that day](/images/scribe-journal-index.png)
+
+_The month index. The bold dates are the ones I generated pages for; tap one and the Scribe jumps straight to that day. Greyed dates are outside my range. It's the same idea as a paper planner's tabs, except the tabs are the calendar itself._
+
+Every page also carries the navigation in its header: day-jump arrows to step to the next or previous day, page tabs (1-5) to move within the day, and a home button back to the month index. So the whole quarter is one book I can finger-tap through instead of a pile of separate notebooks. (The links only work on a finger tap, not a pen tap - a Scribe quirk.)
 
 [Grab my blank template](/static/igor-journal-template.pdf) if you want to try it or fork it. It's empty - just the ruled sections and the tappable index.
 
@@ -50,11 +57,15 @@ The email path still works as a fallback - I [built a tool](https://github.com/i
 
 ## Journal Structure
 
-The template mirrors the sections I've journaled around for years. Each day is five pages.
+The template mirrors the sections I've journaled around for years. Each day is five pages: one for setup, one for intentions, and three for open writing. Splitting it up means each part gets real room. The structured prompts don't crowd the stream of consciousness, and the stream of consciousness gets three full pages before it runs out of paper - enough that I never stop early because the page did.
 
-**Page 1 - setup.** Four [affirmations](/affirmations), what I'm [grateful](/grateful) for, and Yesterday Awesome Because - the specific things that made yesterday good, which is how I keep [building momentum](/be-proactive). A habit strip runs along the bottom (Mobility / Gym / Meditate / Magic / Balloon) with a couple of blank to-do rows.
+**Page 1 - setup.** Four [affirmations](/affirmations), what I'm [grateful](/grateful) for, and Yesterday Awesome Because - the specific things that made yesterday good, which is how I keep [building momentum](/be-proactive). A habit strip runs across the middle (Mobility / Gym / Meditate / Magic / Balloon) with a couple of blank to-do rows.
 
-**Page 2 - intentions.** Today Awesome Because / Commitments: what I want done today, plus what I said I'd do yesterday and whether I actually did it. Then Notes for Larry, where I flag things for my [AI coach](/larry).
+![Day page 1 - the setup page with affirmations, the habit strip, grateful, and yesterday-awesome-because](/images/scribe-journal-page1.png)
+
+_Page 1 of a day. The header nav (day arrows, page tabs 1-5, home) is on every page._
+
+**Page 2 - intentions.** Today Awesome If / Commitments: what I want done today, plus what I said I'd do yesterday and whether I actually did it. Then Tori - Acts of Service, two check-rows where I note something concrete I'll do for my wife.
 
 **Pages 3-5 - journal.** The open stream of consciousness. Where I process what's going on, including whatever [psychic weight](/psychic-weight) I'm carrying.
 
@@ -63,3 +74,15 @@ The template mirrors the sections I've journaled around for years. Each day is f
 {% include summarize-page.html src="/affirmations" %}
 
 {% include summarize-page.html src="/psychic-weight" %}
+
+## The Prompts at the Bottom
+
+Every writing page (pages 2-5) has a faint question printed along the bottom.
+
+![A journal page with a dim reflective prompt printed along the bottom](/images/scribe-journal-prompt.png)
+
+_"Did I make a kid's eyes go wide today, or save delight for some future me?" - one of the prompts, printed dim so it nudges without demanding._
+
+These are [eulogy](/eulogy) prompts. I wrote out the roles I want to be remembered for - Father, Husband, Dealer of Smiles, Fit Fellow, Emotionally Healthy Human, Technologist, Mostly Car-Free Spirit, Disciple of the 7 Habits - and generated ten reflective questions for each. The template pulls from that pool of 80, walking a shuffled list so I get a different question every page and rarely see a repeat.
+
+They're printed dim on purpose. I don't have to answer them - most days I don't answer directly. They're there for the blank-page moment, a way to seed the writing and quietly tie an ordinary Tuesday back to the person I said I wanted to be. It's the same instinct behind my [mortality software](/mortality-software): keep the long view where I can see it while I'm living the short one.
