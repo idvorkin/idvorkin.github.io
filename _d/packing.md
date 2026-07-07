@@ -15,16 +15,24 @@ Many sections split **Road trip** (car space — heavy/bulky OK) vs **Airplane**
 
 ## Magic
 
-Decide which props per trip — don't default to all of them.
+Decide which props per trip — don't default to all of them. The core is my **pocket kit**: small enough to carry on the belt and deploy anywhere.
 
-- [ ] **Decks** — 2 decks per 3 days (scale up for longer)
-- [ ] **Mem deck** (Smart Hands / card overlay track) — written/marked copy too
+**Pocket kit — two yellow cases**
+
+- [ ] **Case 1** — card sleeves
+- [ ] **Case 2** — "You are awesome" cards + a few special cards (waltz, doubles, etc.)
+
+**Clipped to the belt**
+
+- [ ] **Cards** — a few practice decks only
+- [ ] **Balloons** — stash of 260s (pre-make a batch before the trip so you're not building from scratch on the spot)
+- [ ] **Balloon pump / inflator** — clips to the belt
+
+**Optional add-ons (decide per trip)**
+
 - [ ] **Coins** — pick the set
 - [ ] **Rubber bands — two colors** (band magic / crazy man's handcuffs)
-- [ ] **Balloons** — pump + stash of 260s, **and pre-make a batch before the trip** so you're not building from scratch on the spot
 - [ ] Sponge balls — **default: leave** (listed so it's a conscious skip, not a forget)
-- [ ] Reload cards + sleeves, paper clips
-- [ ] Close-up case / pad if performing beyond family
 
 ## Physical Health
 
@@ -33,6 +41,7 @@ Decide which props per trip — don't default to all of them.
 - [ ] Eye mask
 - [ ] Earplugs
 - [ ] Sleepwear
+- [ ] Neck brace — for the airplane
 
 ### Exercise
 
@@ -44,6 +53,7 @@ Minimum viable gear. The McGill Big 3 needs **zero** gear — no excuse on the t
 - [ ] Resistance bands — one light, one heavy (door-hinge anchor)
 - [ ] Running shoes (even if "not going to run" — you will)
 - [ ] Sweat-wicking shorts + shirt
+- [ ] Lock for gym lockers
 
 **Road trip only (car space)**
 
@@ -53,7 +63,7 @@ Minimum viable gear. The McGill Big 3 needs **zero** gear — no excuse on the t
 
 ### Meds
 
-- [ ] **Prescription continuity** — don't run out mid-trip; plan refills ahead and pack doses appropriately
+- [ ] **Prescription continuity** — don't run out mid-trip; plan refills ahead and pack doses appropriately. For anything that needs a fridge, see [traveling with tirzepatide](/timeoff#traveling-with-tirzepatide-or-any-med-that-needs-a-fridge)
 - [ ] Sleep aid — for long flights
 - [ ] Decongestant — flight ear pressure
 - [ ] First aid: ibuprofen, band-aids, kid staples
@@ -127,11 +137,6 @@ Minimum viable gear. The McGill Big 3 needs **zero** gear — no excuse on the t
 - [ ] Foldable hat, rain hat, warm fleece cap
 - [ ] Sunscreen
 
-### Gym clothes
-
-- [ ] Shorts / sweatpants
-- [ ] Lock for gym lockers
-
 ### Winter / cold trips only
 
 - [ ] Warm layer — cabins/water run colder than forecast
@@ -140,6 +145,10 @@ Minimum viable gear. The McGill Big 3 needs **zero** gear — no excuse on the t
 ### Luggage
 
 - [ ] Compression straps
+- [ ] **Travel cubes ×3** — the compressible ones are great; one bag each:
+  - Magic (bulk)
+  - Electronics (thinned out)
+  - Toiletries
 - [ ] **Check the extra suitcase pocket** — easy to lose bulky items in there
 
 ## Documents & Money
