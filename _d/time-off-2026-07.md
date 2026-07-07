@@ -61,6 +61,8 @@ First one already banked: **meditation travels, and churches are the best place 
 
 📍 [See the full route on Google Maps](https://www.google.com/maps/dir/Reykjav%C3%ADk/Copenhagen/Stockholm/Oslo/Aurland/Voss/Bergen/Amsterdam) — 8 stops in one view.
 
+> 🧳 **Packing:** my reusable [packing master list](/packing) — the durable checklist every trip is trimmed from.
+
 ## Who's coming
 
 All 4 Dvorkins (Igor, Tori, Zach, Amelia). Iceland and Copenhagen legs are just us; Stockholm onward we're traveling with friends.
