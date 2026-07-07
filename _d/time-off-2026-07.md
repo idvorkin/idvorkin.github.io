@@ -18,6 +18,18 @@ The whole trap of time off in one sentence — vegetating _feels_ like rest, but
 
 For context on why I take time off: [/time-off](/time-off).
 
+## Why I'm taking this time off — ranked
+
+[When you sacrifice identity for consumption, you end up with neither](/produce-consume). So I wrote down what I'm actually here for, in order:
+
+1. **Deepen my relationship with Amelia and Tori.**
+2. **Really meet whoever we're traveling with** — I put reasonable odds our kids end up woven into each other's lives for a long while. (Zach excepted — that bond I get for free.)
+3. **Escape** — except it turns out I have nothing to escape from.
+4. **Let the addiction dissolve** — social media and vibe-coding went quiet out here, more than I expected.
+5. **Get the jovial me back** — to my genuine and thrilled surprise, the itch to do balloons, magic, and just *be* fun came roaring back.
+
+The bottom three caught me off guard. Take away the consuming and there was nothing left to run from — and the guy underneath was someone I'd been missing.
+
 ## At a Glance
 
 | Leg                                   | Dates           | Nights | Country     |
