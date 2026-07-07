@@ -80,7 +80,9 @@ repos:
         entry: .pre-commit-hooks/check-links.py
         language: script
         files: '\.(md|markdown)$'
-        exclude: "^zz-chop-logs/.*$|back-links.json" # Exclude the zz-chop-logs directory
+        # README.md is not a served Jekyll page, so its TOC self-anchors (#permalink, …)
+        # resolve against the homepage and always fail this check. It renders fine on GitHub.
+        exclude: "^zz-chop-logs/.*$|back-links.json|^README.md$"
         pass_filenames: false
         always_run: false
         verbose: true
