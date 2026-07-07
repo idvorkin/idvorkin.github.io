@@ -20,15 +20,22 @@ For context on why I take time off: [/time-off](/time-off).
 
 ## Why I'm taking this time off — ranked
 
-[When you sacrifice identity for consumption, you end up with neither](/produce-consume). So I wrote down what I'm actually here for, in order:
+[When you sacrifice identity for consumption, you end up with neither](/produce-consume). So I wrote down what I'm actually here for, in order — and then the trip rearranged the list on me.
+
+**What I expected:**
 
 1. **Deepen my relationship with Amelia and Tori.**
 2. **Really meet whoever we're traveling with** — I put reasonable odds our kids end up woven into each other's lives for a long while. (Zach excepted — that bond I get for free.)
-3. **Escape** — except it turns out I have nothing to escape from.
-4. **Let the addiction dissolve** — social media and vibe-coding went quiet out here, more than I expected.
-5. **Get the jovial me back** — to my genuine and thrilled surprise, the itch to do balloons, magic, and just _be_ fun came roaring back.
+3. **Escape.**
 
-The bottom three caught me off guard. Take away the consuming and there was nothing left to run from — and the guy underneath was someone I'd been missing.
+**But it turns out** — on #3, I had nothing to escape from. Amazingly, no work stress and no PSC stress: for once my [body was home and my mind stayed home too](/mind-at-work). Take away the consuming and there was simply nothing left to run from.
+
+**What I didn't expect:**
+
+4. **The addiction dissolved** — social media and vibe-coding went quiet out here, more than I thought they could.
+5. **The jovial me came back** — to my genuine and thrilled surprise, the itch to do balloons, magic, and just _be_ fun came roaring back.
+
+4 and 5 are the interesting ones, and they're linked: the one real sacrifice I've made to AI is that the [Dealer of Smiles and Wonder](/joy) just stopped showing up. Out here, with the screens quiet, he walked right back in — the guy underneath was someone I'd been missing.
 
 ## Re-stacking the roles
 

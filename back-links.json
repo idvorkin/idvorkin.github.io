@@ -4206,6 +4206,7 @@
                 "/magic",
                 "/mood",
                 "/sublime",
+                "/timeoff-2026-07",
                 "/tribe"
             ],
             "last_modified": "2026-03-21T13:54:36-07:00",
@@ -4710,6 +4711,7 @@
                 "/addiction",
                 "/timeoff",
                 "/timeoff-2022-11",
+                "/timeoff-2026-07",
                 "/work-satisfaction"
             ],
             "last_modified": "2025-12-07T02:26:29+00:00",
@@ -7238,7 +7240,9 @@
                 "/awareness",
                 "/eulogy",
                 "/four-healths",
+                "/joy",
                 "/meta",
+                "/mind-at-work",
                 "/packing",
                 "/produce-consume",
                 "/timeoff",
