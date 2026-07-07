@@ -22,6 +22,7 @@ permalink: /terzepatide
   - [Gastrointestinal](#gastrointestinal)
   - [Muscle loss](#muscle-loss)
   - [Bryan Johnson's Tirzepatide Experiment Failure](#bryan-johnsons-tirzepatide-experiment-failure)
+- [Traveling with it (or any med that needs a fridge)](#traveling-with-it-or-any-med-that-needs-a-fridge)
 - [FAQ](#faq)
   - [Did you get a 'script, isn't there a shortage? Is this some grey market \$hit?](#did-you-get-a-script-isnt-there-a-shortage-is-this-some-grey-market-hit)
 
@@ -85,6 +86,18 @@ This is a bit of a misnomer, as the same can happen when dieting hard. I think t
 Bryan Johnson, who was microdosing tirzepatide (0.5mg weekly) not for weight loss but for potential longevity benefits like reduced dementia risk, [halted his experiment after just 3 weeks](https://x.com/bryan_johnson/status/1885024727095529895). The negative effects were immediate and measurable: his resting heart rate increased by 3 bpm (a 7% jump from his baseline mid-40s), his HRV dropped by 7 points, and his sleep quality deteriorated by 10%.
 
 For Johnson, this was an unacceptable trade-off. While GLP-1 drugs showed promise with a 12% reduction in Alzheimer's risk, they also carried a 12% increased risk of sleep disturbances - and sleep disorders, even for less than a year, are associated with a 63.8% increase in neurodegenerative disease risk. Since Johnson considers perfect sleep foundational to his longevity protocol, the immediate, measurable harm to his sleep and cardiovascular metrics far outweighed any theoretical long-term benefits that might take decades to materialize.
+
+## Traveling with it (or any med that needs a fridge)
+
+Terzepatide — like plenty of other meds — wants to stay cold. Three things make travel painless for me:
+
+1. **A TSA-approved travel cooler.** Holds cold for a full travel day, so the airport-to-Airbnb gap is covered:
+
+{% include amazon.html asin="B0DG2WLSM5" %}
+
+2. **No fridge in the room? Ask the front desk.** Most hotels will happily stash medication in a staff fridge — just ask. And don't assume the minibar cabinet is cold enough; confirm it actually chills.
+
+3. **Pack the whole trip's supply.** I almost certainly won't get a refill on the road, so I count out a dose for every week I'm gone (plus a spare) and make sure the cooler is big enough to hold them all.
 
 ## FAQ
 
