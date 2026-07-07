@@ -1664,7 +1664,7 @@
         },
         "/bc": {
             "description": "A guide to my favorite spots in British Columbia, focusing on Vancouver and Chilliwack. Whether you’re planning a quick weekend getaway or a longer adventure, here’s what you need to know. These recommendations come from my personal experiences over multiple trips - you can read about some of them in my summer 2024 adventures, Yellow Deli expedition, and various time off adventures:\n\n",
-            "doc_size": 22000,
+            "doc_size": 23000,
             "file_path": "_site/bc.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T03:02:44+00:00",
@@ -3390,6 +3390,7 @@
                 "/operating-manual",
                 "/sharpen-the-saw",
                 "/spiritual-health",
+                "/timeoff",
                 "/timeoff-2026-07"
             ],
             "last_modified": "2026-07-03T12:06:45-07:00",
@@ -4406,7 +4407,7 @@
         },
         "/life-journal": {
             "description": "A journal of random life observations. Keeping track of them so I don’t forget what the world did today.\n\n",
-            "doc_size": 24000,
+            "doc_size": 25000,
             "file_path": "_site/life-journal.html",
             "incoming_links": [
                 "/ai-operator",
@@ -6894,7 +6895,7 @@
         },
         "/timeoff": {
             "description": "Time off is critical, it’s how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with turning your 1 week off into an action-packed tour of Disneyland. But, there are other kinds of time off that we’ll discuss too. Like most things, time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!\n\n",
-            "doc_size": 42000,
+            "doc_size": 47000,
             "file_path": "_site/timeoff.html",
             "incoming_links": [
                 "/activation",
@@ -6922,7 +6923,7 @@
                 "/timeoff-2025-08",
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-07-02T16:24:49+02:00",
+            "last_modified": "2026-07-07T02:42:43-07:00",
             "markdown_path": "_d/time_off.md",
             "outgoing_links": [
                 "/addiction",
@@ -6932,6 +6933,7 @@
                 "/energy",
                 "/essentialism",
                 "/eulogy",
+                "/four-healths",
                 "/frog",
                 "/gap-year",
                 "/gap-year-igor",
@@ -7233,7 +7235,7 @@
                 "/timeoff",
                 "/y26"
             ],
-            "last_modified": "2026-07-07T03:27:43-07:00",
+            "last_modified": "2026-07-07T03:47:46-07:00",
             "markdown_path": "_d/time-off-2026-07.md",
             "outgoing_links": [
                 "/ai-policy",
