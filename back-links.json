@@ -606,7 +606,9 @@
             "description": "My back goes out a few times a year. My mood tracks the Meta stock price more than I’d like to admit. Twenty years ago I’d meet those moments with a thrash cycle — fused with the pain, angry at my body, tangled up in a story about why this was unfair — which made the experience much worse than the sensation itself. Now I aspire to be calm like water, be present, remember that this too shall pass, and work the problem. I still catch myself mid-thrash often enough to know it’s aspiration, not habit.\n\n",
             "doc_size": 290000,
             "file_path": "_site/act.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/timeoff-2026-07"
+            ],
             "last_modified": "2026-04-15T03:24:18.354841+00:00",
             "markdown_path": "_d/act.md",
             "outgoing_links": [
@@ -1701,6 +1703,7 @@
                 "/raccoon-history",
                 "/regrets",
                 "/siy",
+                "/timeoff-2026-07",
                 "/untangled",
                 "/words-we-dont-have"
             ],
@@ -7266,7 +7269,7 @@
         },
         "/timeoff-2026-07": {
             "description": "22 days, 5 countries, 4 Dvorkins, one whirlwind tour. From Reykjavík to Amsterdam by way of Stockholm, Oslo, and the Norwegian fjords. This is the first time we’ve attempted a trip of this scope as a family — the kids are 16 and 12, both still home, and the window for “all four of us on the road together” closes faster than I’d like.\n\n",
-            "doc_size": 25000,
+            "doc_size": 27000,
             "file_path": "_site/timeoff-2026-07.html",
             "incoming_links": [
                 "/ai-policy",
@@ -7277,8 +7280,10 @@
             "last_modified": "2026-07-07T12:17:51+02:00",
             "markdown_path": "_d/time-off-2026-07.md",
             "outgoing_links": [
+                "/act",
                 "/ai-policy",
                 "/awareness",
+                "/be-proactive",
                 "/eulogy",
                 "/four-healths",
                 "/joy",
