@@ -78,7 +78,7 @@ Or in Brooks' own words, from his Atlantic column [Choose Enjoyment Over Pleasur
 - **Make it novel.** First-times and pattern-breaks encode hard; routine blurs into one gray smear you can't retrieve later. Want a day to be memorable? Do something you haven't done.
 - **Make it an occasion.** Name it, give it a start and an end, add a little ritual. A marked event gets filed as an event; an unmarked one dissolves into the background.
 - **Capture a little, on purpose.** One photo or one journal line—not doom-photographing the whole thing. Over-capturing pulls you out of the moment and weakens the very memory you're trying to keep.
-- **Engineer the peak and the ending.** We don't remember the average of an experience, we remember its best moment and how it ended—Kahneman's [peak-end rule](/happy#peak-end-rule). Build in one peak and land a good ending. (End the vacation with something great, not a fight at the airport.)
+- **Engineer the peak and the ending.** We don't remember the average of an experience, we remember its best moment and how it ended—Kahneman's [peak-end rule](/balance#peak-end-rule-and-moments). Build in one peak and land a good ending. (End the vacation with something great, not a fight at the airport.)
 - **Retell it.** Telling the story afterward consolidates the memory and lets you live it again—and it drags the experience back toward people, closing the loop.
 
 So converting pleasure into enjoyment is cheap and deliberate: add a person, and lay down a memory. Don't kill the pleasure—upgrade it.
