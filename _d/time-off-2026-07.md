@@ -77,9 +77,11 @@ Confession: on the six-hour train from Stockholm to Oslo I went on a bit of a te
 
 ### 🤔 Unexpected realizations
 
-Before the trip I moved all my social apps onto my [work phone](/maybe#the-second-phone) and logged out of LinkedIn on my main one. Clean break. Except my thumb never got the memo — I keep catching myself opening the main phone and reaching for a LinkedIn that isn't there. Why do I keep checking that? What do I think I'm going to find? The app's gone, the reward's gone, and the habit still fires on schedule.
+Before the trip I moved my social apps onto my [work phone](/maybe#the-second-phone) — but LinkedIn stayed on my main phone the whole way. And all trip my thumb kept opening it on autopilot. Why do I keep checking that? What do I think I'm going to find? It was right there, so I kept finding it.
 
-It's got me curious about the [habit loop](/habits#habit-model) — cue, craving, response, reward. When you rip out the reward, which part is still pulling the trigger? I don't have the answer yet. I want to sit with that one.
+Tonight I finally locked it out. The funny part: going through the motions to block it, I somehow ended up at the LinkedIn login page anyway — like the habit walked me there on its own. Kind of weird to watch myself do it.
+
+It's got me curious about the [habit loop](/habits#habit-model) — cue, craving, response, reward. Now the app's gone and the reward with it, so which part keeps pulling the trigger? I don't have the answer yet. I want to sit with that one.
 
 ## At a Glance
 
