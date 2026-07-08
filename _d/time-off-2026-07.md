@@ -75,6 +75,12 @@ Sunday we ducked into a Greek Orthodox church, and Zach got a blessing from the 
 
 Confession: on the six-hour train from Stockholm to Oslo I went on a bit of a tech bender. The kids watched TV; I sat there and banged out the whole trip site — the city deep-dives, the maps, the war pack, all of it — and logged the blitz in my [changelog](/changelog). Six hours of what I'd call super blogging time, and honestly I quite enjoyed it. At least it was [building, not scrolling](/produce-consume).
 
+### 🤔 Unexpected realizations
+
+Before the trip I moved all my social apps onto my [work phone](/maybe) and logged out of LinkedIn on my main one. Clean break. Except my thumb never got the memo — I keep catching myself opening the main phone and reaching for a LinkedIn that isn't there. Why do I keep checking that? What do I think I'm going to find? The app's gone, the reward's gone, and the habit still fires on schedule.
+
+It's got me curious about the [habit loop](/habits) — cue, craving, response, reward. When you rip out the reward, which part is still pulling the trigger? I don't have the answer yet. I want to sit with that one.
+
 ## At a Glance
 
 | Leg                                   | Dates           | Nights | Country     |

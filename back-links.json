@@ -2615,6 +2615,7 @@
                 "/sharpen-the-saw",
                 "/slow",
                 "/switch",
+                "/timeoff-2026-07",
                 "/walking-with-god"
             ],
             "last_modified": "2025-12-07T02:40:46+00:00",
@@ -4628,7 +4629,9 @@
             "description": "A farmer’s horse runs away. His neighbors console him: “What terrible luck!” The farmer shrugs, “Maybe.” The next day the horse returns, leading a herd of wild horses behind it — “What wonderful luck!” “Maybe.” His son tries to tame one, is thrown, and breaks his leg — “How awful!” “Maybe.” A week later the army marches through, conscripting every able-bodied young man for a war most won’t return from, and the son, with his broken leg, is passed over — “How wonderful!” “Maybe.” Good luck, bad luck — who knows? The story is never finished, so the farmer never renders the verdict. He just keeps living.\n\n",
             "doc_size": 17000,
             "file_path": "_site/maybe.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/timeoff-2026-07"
+            ],
             "last_modified": "2026-07-06T23:30:18-07:00",
             "markdown_path": "_d/maybe.md",
             "outgoing_links": [
@@ -7287,10 +7290,12 @@
                 "/awareness",
                 "/be-proactive",
                 "/changelog",
+                "/d/habits",
                 "/eulogy",
                 "/four-healths",
                 "/joy",
                 "/life-journal",
+                "/maybe",
                 "/meta",
                 "/mind-at-work",
                 "/packing",
