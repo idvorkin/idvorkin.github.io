@@ -23,6 +23,8 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
 
 The whole trap of time off in one sentence — vegetating _feels_ like rest, but it quietly starves the roles that make you _you_.
 
+There's a flip side to that trap, and it's just as reliable: **if you plan to have a good time, you will.** When I decide up front that I'm going to enjoy something — and set up the conditions for it — I almost always do. Enjoyment isn't luck; it's mostly the people I'm with and the memories I build, which are the two ingredients Brooks keeps coming back to below. Planning is how I get both into a trip before it starts.
+
 <div class="alert alert-info" role="alert">
 ✈️ <strong>Next planned time-off — July 2026:</strong>
 <div class="summary-link body-only" href="/timeoff-2026-07"><a href="/timeoff-2026-07">Loading (/timeoff-2026-07)</a></div>
