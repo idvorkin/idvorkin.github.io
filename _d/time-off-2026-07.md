@@ -55,7 +55,7 @@ First one already banked: **meditation travels, and churches are the best place 
 
 ### 🇮🇸 Reykjavík
 
-The pools are the whole thing. You start in an 8°C cold plunge — the kind that empties your head — then climb through 40, 42, 44, one of the hot ones fed by a pipe running straight in from the ocean. Sauna with all four of us. One morning I banked a full 5am kettlebell session before anyone woke up — drove to the gym and finished with about six minutes to spare before the rain moved in. The keystone held. Sauna again after. We stayed in a hostel with a shared kitchen, and the best night was cooking dinner next to strangers and trading stories across the table.
+The pools are the whole thing. You start in an 8°C cold plunge — the kind that empties your head — then climb through 40, 42, 44, one of the hot ones fed by a pipe running straight in from the ocean. Sauna with all four of us. One morning I banked a full 5am kettlebell session before anyone woke up. It was already pouring at 5, so instead of the five-minute walk I took the rental Tesla to the gym — felt a little lame driving something that short, but I made it happen. The keystone held. Sauna at 7. We stayed in a hostel with a shared kitchen, and the best night was cooking dinner next to strangers and trading stories across the table.
 
 Two things stuck with me about Iceland. Family is clearly the whole priority — a trampoline in every yard, kids everywhere. And nobody eats out; there are barely any restaurants, so everyone eats in.
 
