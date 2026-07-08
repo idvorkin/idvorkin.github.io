@@ -1616,6 +1616,7 @@
             "incoming_links": [
                 "/7-habits",
                 "/7h-concepts",
+                "/build-life-you-want",
                 "/end-in-mind",
                 "/energy-abundance",
                 "/first-things-first",
@@ -1962,9 +1963,9 @@
             "last_modified": "2026-07-08T19:30:37.804599+00:00",
             "markdown_path": "_d/build-the-life-you-want.md",
             "outgoing_links": [
+                "/balance",
                 "/bucket-list",
                 "/emotions",
-                "/happy",
                 "/lonely",
                 "/produce-consume"
             ],
@@ -3817,7 +3818,6 @@
             "incoming_links": [
                 "/addiction",
                 "/awareness",
-                "/build-life-you-want",
                 "/chasing-daylight",
                 "/emotions",
                 "/hobby",
@@ -4685,7 +4685,7 @@
         },
         "/mermaid": {
             "description": "Lets try d2\n\n",
-            "doc_size": 15000,
+            "doc_size": 14000,
             "file_path": "_site/mermaid.html",
             "incoming_links": [],
             "last_modified": "2023-12-17T18:49:14+00:00",
