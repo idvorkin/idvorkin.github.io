@@ -71,6 +71,10 @@ We saw the Vasa, the warship that capsized in the harbor on its maiden voyage an
 
 Sunday we ducked into a Greek Orthodox church, and Zach got a blessing from the visiting bishop. I nearly got thrown out of the same church for doing magic in the pews. Standing there getting chewed out, I hit a Viktor Frankl beat — between what happens to you and how you respond there's a gap, and no one can take away the freedom inside it. Two wins: I caught my fight-or-flight reaction multiple times and breathed through it instead of firing back, and I got some work in on my memorization practice. [Proactive](/be-proactive), not reactive — I [chose the response](/act).
 
+### 🚂 The train to Oslo
+
+Confession: on the six-hour train from Stockholm to Oslo I went on a bit of a tech bender. The kids watched TV; I sat there and banged out the whole trip site — the city deep-dives, the maps, the war pack, all of it — and logged the blitz in my [changelog](/changelog). Six hours of what I'd call super blogging time, and honestly I quite enjoyed it. At least it was [building, not scrolling](/produce-consume).
+
 ## At a Glance
 
 | Leg                                   | Dates           | Nights | Country     |
