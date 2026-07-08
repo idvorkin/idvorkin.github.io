@@ -281,12 +281,14 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
 
 ##### Where to eat
 
+- **Eating out isn't worth it for me.** Honestly it's not that enjoyable, and past 45 my gut can't handle the grease — restaurant food leaves me feeling worse, not better. I'd rather eat simple.
+- **Book a place with a kitchen.** Whenever I can, I get a room or Airbnb with a kitchen so I can cook plain, non-greasy food from the grocery store instead of eating out.
 - **Shop the grocery store.** Some of my best travel meals come straight out of a supermarket — there's nothing wrong with a cucumber, some fruit, and a rotisserie chicken. Cheaper, healthier, and you skip the wait.
 - **Skip the tourist areas.** The food ringing the big sights is overpriced and mediocre. Walk a few blocks out, or eat where the locals do — the meal is better and so is the bill.
 
 #### Breakfast
 
-Family loves the free hotel breakfast (and it is a great deal), but I can't afford the calories. See detailed guidance under [Diet → Hotel breakfast](/diet#hotel-breakfast).
+**Skip the hotel breakfast.** The family loves it and it's a great deal, but I never should — I can't afford the calories, and the greasy spread just leaves me feeling worse. See detailed guidance under [Diet → Hotel breakfast](/diet#hotel-breakfast).
 
 #### Terzepatide
 
