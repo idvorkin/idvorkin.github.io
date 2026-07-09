@@ -250,9 +250,11 @@
         "/pay": "/comp",
         "/pd": "/timeoff",
         "/perfect-job": "/job",
+        "/performers-playbook": "/performer-playbook",
         "/personal-development": "/timeoff",
         "/phoney": "/insecure",
         "/plan": "/planning",
+        "/playbook": "/performer-playbook",
         "/playwright-cli": "/browsers-for-machines",
         "/pm": "/product",
         "/podcasting": "/podcast",
@@ -361,6 +363,7 @@
         "/wizard-book": "/sicp",
         "/wlb": "/sustainable-work",
         "/wlb-manifesto": "/sustainable-work",
+        "/wonder": "/performer-playbook",
         "/work-gastown": "/wally",
         "/work-life-balance": "/sustainable-work",
         "/workload": "/overload",
@@ -1570,6 +1573,7 @@
             "file_path": "_site/awareness.html",
             "incoming_links": [
                 "/act",
+                "/performer-playbook",
                 "/siy",
                 "/timeoff-2026-07",
                 "/y26"
@@ -2707,7 +2711,7 @@
         },
         "/day-in-the-life": {
             "description": "A running journal of days that actually worked - the ones where health habits stuck, family time hit different, or I remembered what it feels like to be fully alive. Not every day needs to be Instagram-worthy, but some days deserve a bookmark. This is that bookmark collection.\n\n",
-            "doc_size": 19000,
+            "doc_size": 18000,
             "file_path": "_site/day-in-the-life.html",
             "incoming_links": [],
             "last_modified": "2025-10-04T18:43:51-07:00",
@@ -3224,6 +3228,7 @@
                 "/life-journal",
                 "/maybe",
                 "/operating-manual",
+                "/performer-playbook",
                 "/process-journal",
                 "/raccoon-history",
                 "/retire",
@@ -3702,7 +3707,7 @@
         },
         "/grammerly": {
             "description": "\n\n",
-            "doc_size": 13000,
+            "doc_size": 12000,
             "file_path": "_site/grammerly.html",
             "incoming_links": [],
             "last_modified": "2025-08-24T09:03:19-07:00",
@@ -3813,7 +3818,7 @@
         },
         "/happy": {
             "description": "Happy is a 5 letter word that many use as the answer to what is the point of life. The follow up question of “How can you be happy” is usually followed by a blank stare, so here’s my study of the subject. Probably the most important thing is happiness is not a mood, it’s journey - Like the weather vs the climate.\n\n",
-            "doc_size": 32000,
+            "doc_size": 33000,
             "file_path": "_site/happy.html",
             "incoming_links": [
                 "/addiction",
@@ -3823,6 +3828,7 @@
                 "/hobby",
                 "/joy",
                 "/mood",
+                "/performer-playbook",
                 "/siy",
                 "/timeoff",
                 "/timeoff-2020-12",
@@ -3838,7 +3844,7 @@
                 "/timeoff-2025-08",
                 "/walking-with-god"
             ],
-            "last_modified": "2026-01-03T17:27:23+00:00",
+            "last_modified": "2026-07-08T22:20:12+02:00",
             "markdown_path": "_posts/2017-04-12-happy.md",
             "outgoing_links": [
                 "/addiction",
@@ -4211,7 +4217,7 @@
         },
         "/joy": {
             "description": "If you could have one superpower, what would it be? At 46, you’d think I’d have a quick answer, but the usual ideas—flying, invisibility, stopping time—felt childish. Probably the setting: a circle of 9-17-year-olds, breaking the ice, sharing their wished-for superpowers. As my mind scrambled, a mild panic set in. Nothing surfaced—until a bit of my eulogy came to me: Igor lived to see eyes go wide and mouths gape with wonder. He loved when strangers were drawn in against their objections, when a kid in meltdown, or an adult weighed down by life, forgot their troubles. Relief washed over me, I knew my answer. The super power I wished for:  bringing joy to others.\n\n",
-            "doc_size": 33000,
+            "doc_size": 34000,
             "file_path": "_site/joy.html",
             "incoming_links": [
                 "/affirmations",
@@ -4224,6 +4230,7 @@
                 "/hobby",
                 "/magic",
                 "/mood",
+                "/performer-playbook",
                 "/sublime",
                 "/timeoff-2026-07",
                 "/tribe"
@@ -4238,6 +4245,7 @@
                 "/ig66/621",
                 "/like-switch",
                 "/magic",
+                "/performer-playbook",
                 "/smilebox",
                 "/touching",
                 "/tribe"
@@ -5281,6 +5289,25 @@
             "redirect_url": "",
             "title": "Double Trouble: From Lust to Love to Lost",
             "url": "/partner-trouble"
+        },
+        "/performer-playbook": {
+            "description": "For years I’ve called myself the Dealer of Smiles. My eulogy says Igor lived to see eyes go wide and mouths gape with wonder, and I mean it — the magic, the juggling, the balloons, the closet full of ridiculous shirts are all just tools for one job: handing a stranger a moment they didn’t see coming. This post is the how. After enough shows I noticed I keep running the same nine rules in my head, whether I’m doing one card trick for one kid or working a whole room, so I finally wrote them down.\n\n",
+            "doc_size": 21000,
+            "file_path": "_site/performer-playbook.html",
+            "incoming_links": [
+                "/joy"
+            ],
+            "last_modified": "2026-07-09T11:36:49.898702+00:00",
+            "markdown_path": "_d/performer-playbook.md",
+            "outgoing_links": [
+                "/awareness",
+                "/eulogy",
+                "/happy",
+                "/joy"
+            ],
+            "redirect_url": "",
+            "title": "The Performer's Playbook: Making Wonder for Other People",
+            "url": "/performer-playbook"
         },
         "/pet-projects": {
             "description": "As an engineer, I love to build bespoke tools that solve my unique problems exactly the way I want them solved. The bonus? This is lets me learn new technologies (did you know my blog has multiplayer support?). Sometimes I even make a tool so I have something to learn from. And with AI, this list of projects and explorations has exploded! Note to self, when I want to veg out and just feed my social media addiction I should do some vibe coding on all of these.\n\n",
@@ -6440,7 +6467,7 @@
         },
         "/synergize": {
             "description": "We’ve all got stuff we’re good at and stuff we’re bad at. Combine them right and the system is greater than the sum of the parts — sometimes a lot greater. Synergy is the payoff for everything that came before: independence, Win/Win, and seeking first to understand all converge here. These are my insights from 7 habits Chapter 6.\n\n",
-            "doc_size": 29000,
+            "doc_size": 28000,
             "file_path": "_site/synergize.html",
             "incoming_links": [
                 "/7-habits",
@@ -6525,7 +6552,7 @@
         },
         "/td/back_ref": {
             "description": "This blog is my collection of evergreen notes, a place to have my thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here’s my strategy to create them.\n\n",
-            "doc_size": 14000,
+            "doc_size": 13000,
             "file_path": "_site/td/back_ref.html",
             "incoming_links": [],
             "last_modified": "2022-04-16T15:22:43-07:00",
@@ -7713,7 +7740,7 @@
         },
         "/win-win": {
             "description": "Win/Win is a constantly seeking mutual benefit in all interactions. Win/Win means that agreements or solutions are mutually beneficial, mutually satisfying. With a Win/Win solution, all parties feel good about the decision and feel committed to the action plan. Win/Win sees life as a cooperative, not a competitive arena. Most people tend to think in terms of dichotomies: strong or weak, hardball or softball, win or lose. But that kind of thinking is fundamentally flawed. It’s based on power and position rather than on principle. Win/Win is based on the paradigm that there is plenty for everybody, that one person’s success is not achieved at the expense or exclusion of the success of others.\n\n",
-            "doc_size": 48000,
+            "doc_size": 47000,
             "file_path": "_site/win-win.html",
             "incoming_links": [
                 "/7-habits",
