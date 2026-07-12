@@ -62,11 +62,35 @@ Brooks and Winfrey challenge our fundamental assumptions about happiness. Rather
 
 #### Pleasure vs Enjoyment
 
-Brooks makes a crucial distinction: **Pleasure happens to you; enjoyment is something you create.** Pleasure is fleeting and passive (eating ice cream, watching TV), while enjoyment requires two additional elements:
+Brooks draws a line I keep coming back to: **pleasure happens _to_ you; enjoyment is something you make.** Pleasure is the raw hit—ice cream, a beer, a scroll session. It runs on the dopamine reward circuit, it's usually solitary, and it fades the second it's over. Chase it on its own and you land on the hedonic treadmill, needing a bit more each time for the same buzz. Brooks' line on the Tim Ferriss show is blunt: if your goal is pleasure, you don't arrive at happiness—you wind up in rehab. Pleasure with nothing added slides toward compulsion.
+
+Enjoyment is what you get when you take that raw pleasure and add two things:
 
 **Enjoyment = Pleasure + People + Memory**
 
-Example: Beer ads never show someone drinking alone—they show friends creating memories together. That's because enjoyment, not mere pleasure, creates lasting happiness.
+Or in Brooks' own words, from his Atlantic column [Choose Enjoyment Over Pleasure](https://www.theatlantic.com/family/archive/2022/03/happiness-pleasure-enjoyment-consumption/629447/) (March 2022): "Enjoyment takes the source of pleasure and adds two things: people and memory."
+
+**People** is the obvious multiplier. It turns a private sensation into a shared one—the beer alone on the couch and the beer around a table with friends are not the same experience. Company recruits the social brain, ties the moment to a relationship, and acts as a brake: you overconsume alone, not in good company. That's why the beer ad never shows a guy drinking by himself; it's selling the table, not the bottle. My gut check for the whole thing: **if you're doing it alone, you're probably doing it wrong.**
+
+**Memory** is the multiplier people skip, and it's where the real leverage is. A pleasure you'll still be reliving next year keeps paying out long after the sensation is gone; a pleasure with no memory attached is just the treadmill asking for the next dose. The good news is you can lay down a memory on purpose:
+
+- **Be present.** You can't remember what you didn't attend to—memory needs encoding, and encoding needs attention. This is the real reason phone-in-hand kills the memory: you're photographing instead of encoding, so nothing lands.
+- **Make it novel.** First-times and pattern-breaks encode hard; routine blurs into one gray smear you can't retrieve later. Want a day to be memorable? Do something you haven't done.
+- **Make it an occasion.** Name it, give it a start and an end, add a little ritual. A marked event gets filed as an event; an unmarked one dissolves into the background.
+- **Capture a little, on purpose.** One photo or one journal line—not doom-photographing the whole thing. Over-capturing pulls you out of the moment and weakens the very memory you're trying to keep.
+- **Engineer the peak and the ending.** We don't remember the average of an experience, we remember its best moment and how it ended—Kahneman's [peak-end rule](/balance#peak-end-rule-and-moments). Build in one peak and land a good ending. (End the vacation with something great, not a fight at the airport.)
+- **Retell it.** Telling the story afterward consolidates the memory and lets you live it again—and it drags the experience back toward people, closing the loop.
+
+So converting pleasure into enjoyment is cheap and deliberate: add a person, and lay down a memory. Don't kill the pleasure—upgrade it.
+
+Where this fits the bigger picture: enjoyment is one of three "macronutrients" of a happy life for Brooks, next to **satisfaction** (the reward that lands _after_ earned struggle) and **meaning/purpose**—the same [Happiness = Enjoyment + Satisfaction + Purpose](#equations-of-happiness) equation further down. Pleasure by itself isn't on that list, because pleasure by itself isn't food. It's the same spine as [producing vs consuming](/produce-consume): solitary consumption is the pleasure hit; creating and sharing is what turns it into something that lasts.
+
+**Two honest caveats,** because the tidy version oversells it:
+
+- The "pleasure = old limbic brain, enjoyment = the higher prefrontal brain" split that Brooks leans on with Ferriss is a handy heuristic, not neuroanatomy. The strict triune-brain model—reptilian / limbic / neocortex stacked like sediment—is outdated as literal wiring. Keep it as a metaphor for fast reflexive reward vs. slower integrative processing.
+- The distinction isn't originally Brooks'. Mihály Csíkszentmihályi split pleasure from enjoyment back in _Flow_ (1990). Brooks' contribution is the operationalization—the "+ people + memory" formula and the beer-ad framing that makes it stick.
+
+_Sources: Arthur Brooks & Oprah Winfrey, Build the Life You Want (2023); Brooks, ["Choose Enjoyment Over Pleasure," The Atlantic](https://www.theatlantic.com/family/archive/2022/03/happiness-pleasure-enjoyment-consumption/629447/) (Mar 2022); [The Tim Ferriss Show #692](https://tim.blog/2023/09/11/arthur-c-brooks/) (Sept 2023); Daniel Kahneman, Thinking, Fast and Slow (2011) for the peak-end rule._
 
 **Three Challenges Addressed:**
 

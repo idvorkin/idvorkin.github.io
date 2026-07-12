@@ -1616,6 +1616,7 @@
             "incoming_links": [
                 "/7-habits",
                 "/7h-concepts",
+                "/build-life-you-want",
                 "/end-in-mind",
                 "/energy-abundance",
                 "/first-things-first",
@@ -1953,18 +1954,21 @@
         },
         "/build-life-you-want": {
             "description": "Happiness isn’t a destination you arrive at—it’s a direction you choose to walk in daily. Build The Life YOU Want by Arthur Brooks and Oprah Winfrey demolishes the myth that happiness is something that happens to you, replacing it with the empowering truth that happiness is something you actively create. This isn’t another feel-good book promising easy answers; it’s a science-backed roadmap for building genuine fulfillment through intentional choices and sustainable practices.\n\n",
-            "doc_size": 40000,
+            "doc_size": 45000,
             "file_path": "_site/build-life-you-want.html",
             "incoming_links": [
                 "/happy",
+                "/produce-consume",
                 "/spiritual-health"
             ],
             "last_modified": "2026-03-22T19:07:49-07:00",
             "markdown_path": "_d/build-the-life-you-want.md",
             "outgoing_links": [
+                "/balance",
                 "/bucket-list",
                 "/emotions",
-                "/lonely"
+                "/lonely",
+                "/produce-consume"
             ],
             "redirect_url": "",
             "title": "Build The Life YOU Want",
@@ -3812,8 +3816,8 @@
             "url": "/gtd"
         },
         "/happy": {
-            "description": "Happy is a 5 letter word that many use as the answer to what is the point of life. The follow up question of “How can you be happy” is usually followed by a blank stare, so here’s my study of the subject. Probably the most important thing is happiness is not a mood, it’s journey - Like the weather vs the climate.\n\n",
-            "doc_size": 32000,
+            "description": "Happy is a 5 letter word that many use as the answer to what is the point of life. The follow up question — “How can you be happy?” — is usually met with a blank stare, so here’s my study of the subject. The most important thing: happiness is not a mood, it’s a journey — like the weather vs. the climate.\n\n",
+            "doc_size": 33000,
             "file_path": "_site/happy.html",
             "incoming_links": [
                 "/addiction",
@@ -3823,6 +3827,7 @@
                 "/hobby",
                 "/joy",
                 "/mood",
+                "/produce-consume",
                 "/siy",
                 "/timeoff",
                 "/timeoff-2020-12",
@@ -5353,7 +5358,7 @@
         },
         "/physical-pain": {
             "description": "Physical pain has been a recurring teacher in my life. Each injury forced me to learn something about how my body works (and doesn’t). This page is the hub for my pain-related learnings, with dedicated pages for each area where I’ve had issues.\n\n",
-            "doc_size": 31000,
+            "doc_size": 36000,
             "file_path": "_site/physical-pain.html",
             "incoming_links": [
                 "/back-pain",
@@ -5494,11 +5499,12 @@
         },
         "/produce-consume": {
             "description": "Remember when you finished binge-watching that entire series and felt… empty? Now remember the last time you made something — anything — even if it sucked. Which memory makes you smile? Yeah, me too. We live in the golden age of consumption, where infinite content is one thumb-swipe away, yet we’re more anxious and less satisfied than ever. Here’s the thing: you’re not meant to be a consumer. You’re meant to be a producer.\n\n",
-            "doc_size": 24000,
+            "doc_size": 26000,
             "file_path": "_site/produce-consume.html",
             "incoming_links": [
                 "/ai-feed",
                 "/ai-journal",
+                "/build-life-you-want",
                 "/gap-year-igor",
                 "/slow",
                 "/timeoff-2026-07"
@@ -5507,7 +5513,9 @@
             "markdown_path": "_d/produce-consume.md",
             "outgoing_links": [
                 "/activation",
-                "/addiction"
+                "/addiction",
+                "/build-life-you-want",
+                "/happy"
             ],
             "redirect_url": "",
             "title": "The Producer's Paradox: Why Creating Beats Consuming Every Time",
@@ -7274,7 +7282,7 @@
         },
         "/timeoff-2026-07": {
             "description": "22 days, 5 countries, 4 Dvorkins, one whirlwind tour. From Reykjavík to Amsterdam by way of Stockholm, Oslo, and the Norwegian fjords. This is the first time we’ve attempted a trip of this scope as a family — the kids are 16 and 12, both still home, and the window for “all four of us on the road together” closes faster than I’d like.\n\n",
-            "doc_size": 28000,
+            "doc_size": 29000,
             "file_path": "_site/timeoff-2026-07.html",
             "incoming_links": [
                 "/ai-policy",
@@ -7282,7 +7290,7 @@
                 "/timeoff",
                 "/y26"
             ],
-            "last_modified": "2026-07-08T09:26:51+02:00",
+            "last_modified": "2026-07-08T13:29:27-07:00",
             "markdown_path": "_d/time-off-2026-07.md",
             "outgoing_links": [
                 "/act",
