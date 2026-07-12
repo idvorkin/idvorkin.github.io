@@ -1670,7 +1670,7 @@
         },
         "/bc": {
             "description": "A guide to my favorite spots in British Columbia, focusing on Vancouver and Chilliwack. Whether you’re planning a quick weekend getaway or a longer adventure, here’s what you need to know. These recommendations come from my personal experiences over multiple trips - you can read about some of them in my summer 2024 adventures, Yellow Deli expedition, and various time off adventures:\n\n",
-            "doc_size": 22000,
+            "doc_size": 23000,
             "file_path": "_site/bc.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T03:02:44+00:00",
@@ -1958,6 +1958,7 @@
             "file_path": "_site/build-life-you-want.html",
             "incoming_links": [
                 "/happy",
+                "/produce-consume",
                 "/spiritual-health"
             ],
             "last_modified": "2026-07-08T19:30:37.804599+00:00",
@@ -2417,6 +2418,7 @@
                 "/first-understand",
                 "/get-to-yes-with-yourself",
                 "/greek-orthodox",
+                "/happy",
                 "/manager-book",
                 "/negotiate",
                 "/operating-manual",
@@ -2706,7 +2708,7 @@
         },
         "/day-in-the-life": {
             "description": "A running journal of days that actually worked - the ones where health habits stuck, family time hit different, or I remembered what it feels like to be fully alive. Not every day needs to be Instagram-worthy, but some days deserve a bookmark. This is that bookmark collection.\n\n",
-            "doc_size": 18000,
+            "doc_size": 19000,
             "file_path": "_site/day-in-the-life.html",
             "incoming_links": [],
             "last_modified": "2025-10-04T18:43:51-07:00",
@@ -3701,7 +3703,7 @@
         },
         "/grammerly": {
             "description": "\n\n",
-            "doc_size": 12000,
+            "doc_size": 13000,
             "file_path": "_site/grammerly.html",
             "incoming_links": [],
             "last_modified": "2025-08-24T09:03:19-07:00",
@@ -3822,6 +3824,7 @@
                 "/hobby",
                 "/joy",
                 "/mood",
+                "/produce-consume",
                 "/siy",
                 "/timeoff",
                 "/timeoff-2020-12",
@@ -3843,15 +3846,15 @@
                 "/addiction",
                 "/anxiety",
                 "/build-life-you-want",
-                "/compassion",
+                "/curious",
                 "/eulogy",
-                "/gty",
                 "/hobby",
-                "/idle-loop",
+                "/idle",
                 "/joy",
                 "/mental-pain",
                 "/moments",
                 "/mood",
+                "/negotiate",
                 "/new-skills",
                 "/spiritual-health"
             ],
@@ -4021,6 +4024,7 @@
                 "/awareness",
                 "/depression",
                 "/gtd",
+                "/happy",
                 "/psychic-weight"
             ],
             "last_modified": "2025-12-06T18:03:28-08:00",
@@ -4683,7 +4687,7 @@
         },
         "/mermaid": {
             "description": "Lets try d2\n\n",
-            "doc_size": 14000,
+            "doc_size": 15000,
             "file_path": "_site/mermaid.html",
             "incoming_links": [],
             "last_modified": "2023-12-17T18:49:14+00:00",
@@ -5013,6 +5017,7 @@
             "incoming_links": [
                 "/curious",
                 "/get-to-yes-with-yourself",
+                "/happy",
                 "/productive",
                 "/sell",
                 "/synergize",
@@ -5489,7 +5494,7 @@
         },
         "/produce-consume": {
             "description": "Remember when you finished binge-watching that entire series and felt… empty? Now remember the last time you made something — anything — even if it sucked. Which memory makes you smile? Yeah, me too. We live in the golden age of consumption, where infinite content is one thumb-swipe away, yet we’re more anxious and less satisfied than ever. Here’s the thing: you’re not meant to be a consumer. You’re meant to be a producer.\n\n",
-            "doc_size": 24000,
+            "doc_size": 26000,
             "file_path": "_site/produce-consume.html",
             "incoming_links": [
                 "/ai-feed",
@@ -5503,7 +5508,9 @@
             "markdown_path": "_d/produce-consume.md",
             "outgoing_links": [
                 "/activation",
-                "/addiction"
+                "/addiction",
+                "/build-life-you-want",
+                "/happy"
             ],
             "redirect_url": "",
             "title": "The Producer's Paradox: Why Creating Beats Consuming Every Time",
@@ -6437,7 +6444,7 @@
         },
         "/synergize": {
             "description": "We’ve all got stuff we’re good at and stuff we’re bad at. Combine them right and the system is greater than the sum of the parts — sometimes a lot greater. Synergy is the payoff for everything that came before: independence, Win/Win, and seeking first to understand all converge here. These are my insights from 7 habits Chapter 6.\n\n",
-            "doc_size": 28000,
+            "doc_size": 29000,
             "file_path": "_site/synergize.html",
             "incoming_links": [
                 "/7-habits",
@@ -6522,7 +6529,7 @@
         },
         "/td/back_ref": {
             "description": "This blog is my collection of evergreen notes, a place to have my thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here’s my strategy to create them.\n\n",
-            "doc_size": 13000,
+            "doc_size": 14000,
             "file_path": "_site/td/back_ref.html",
             "incoming_links": [],
             "last_modified": "2022-04-16T15:22:43-07:00",
@@ -7710,7 +7717,7 @@
         },
         "/win-win": {
             "description": "Win/Win is a constantly seeking mutual benefit in all interactions. Win/Win means that agreements or solutions are mutually beneficial, mutually satisfying. With a Win/Win solution, all parties feel good about the decision and feel committed to the action plan. Win/Win sees life as a cooperative, not a competitive arena. Most people tend to think in terms of dichotomies: strong or weak, hardball or softball, win or lose. But that kind of thinking is fundamentally flawed. It’s based on power and position rather than on principle. Win/Win is based on the paradigm that there is plenty for everybody, that one person’s success is not achieved at the expense or exclusion of the success of others.\n\n",
-            "doc_size": 47000,
+            "doc_size": 48000,
             "file_path": "_site/win-win.html",
             "incoming_links": [
                 "/7-habits",
