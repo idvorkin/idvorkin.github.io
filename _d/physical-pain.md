@@ -23,6 +23,7 @@ Physical pain has been a recurring teacher in my life. Each injury forced me to 
   - [Negative Feedback loop - When you are tight.](#negative-feedback-loop---when-you-are-tight)
   - [Flexibility vs Mobility](#flexibility-vs-mobility)
   - [The Tendon Problem: No Pain Until It's Too Late](#the-tendon-problem-no-pain-until-its-too-late)
+  - [Isometrics: How to Load a Tendon Without Moving the Joint](#isometrics-how-to-load-a-tendon-without-moving-the-joint)
   - [So why do we do massage, and stretch](#so-why-do-we-do-massage-and-stretch)
 - [Approaches to Managing Pain](#approaches-to-managing-pain)
   - [Physio Therapy](#physio-therapy)
@@ -123,6 +124,44 @@ The classic mistakes that destroy tendons:
    - Stop immediately, rest, and restart more gradually
 
 **Reminder to self on rebuilding running:** Even if my ticker feels good, take it easy. My cardiovascular system recovers faster than my tendons.
+
+### Isometrics: How to Load a Tendon Without Moving the Joint
+
+The Tendon Problem leaves an obvious question: if tendons need load to get strong but can't warn you when you're overloading them, how do you load them safely? Isometrics are the best answer I've found.
+
+An isometric is producing force without moving the joint — the muscle fires, the angle doesn't change. Two kinds:
+
+- **Overcoming** — push or pull against something that won't move (pressing into a wall, pulling on a bar bolted to the floor).
+- **Yielding** — hold a position or a static load: a wall sit, a dead hang, the bottom of a squat.
+
+**Why they're good for tendons**
+
+This is where [Keith Baar](https://health.ucdavis.edu/basic-sciences/physiology/team/faculty/baar) changed how I think. He runs the Functional Molecular Biology Lab at UC Davis and is the tendon-and-collagen guy on the podcast circuit (Tim Ferriss, FoundMyFitness). His work: tendons adapt to **load × time under tension**, not to reps. Heavy, longer holds build tendon stiffness and drive collagen synthesis far better than fast, bouncy reps — the slow sustained tension is the signal the tendon actually reads.
+
+Isometrics also _reduce_ tendon pain, at least for a while. In [Ebonie Rio's patellar-tendon study](https://doi.org/10.1136/bjsports-2014-094386), a single bout of heavy isometric holds dropped pain by nearly 7 points on a 0-10 scale and kept it down for ~45 minutes — and the effect showed up as reduced inhibition in the brain, not just the tendon. A hard isometric hold is genuinely analgesic. That's the well-supported part.
+
+A few more reasons they fit this whole post:
+
+- **Joint-friendly.** You load hard without traveling through a painful range — ideal for rehab and for training _around_ pain instead of aggravating it.
+- **Angle-specific.** Strength carries over only ~15° around the angle you train, so they're great for a specific sticking point.
+- **Cheap and low-risk.** Minimal gear, no momentum, less soreness and recovery cost than heavy eccentrics.
+
+**What makes them hard**
+
+They're deceptively brutal. No momentum to help you, no eccentric phase to rest in, no rep to count toward — just sustained tension with nothing to break the burn. It only builds.
+
+The mental side is worse than the physical. You're pushing near-maximally against something that doesn't move, with no visible progress and no clear point of failure. Nothing tells you you're done, so it takes real intent to push hard — it's very easy to sandbag and coast through the hold. Baar-style 30-second holds are their own flavor of suffering; the tension never lets go.
+
+**Baar's protocol**
+
+Roughly:
+
+- **Heavy holds, ~30 seconds, ~4 reps**, ramping the force up and down slowly rather than jerking into it.
+- **Space the sessions out.** His lab found collagen synthesis saturates after ~10 minutes of load and then needs a refractory period — so ~6+ hours between tendon-loading sessions, and piling on more load in one block doesn't buy more adaptation.
+- **Gelatin + vitamin C first.** ~15g of hydrolyzed collagen or gelatin plus vitamin C, taken 30-60 minutes _before_ loading, roughly [doubled markers of collagen synthesis](https://pubmed.ncbi.nlm.nih.gov/27852613/) in his 2016 study.
+- **Be patient.** Tendons adapt far slower than muscle — think months of consistent load, not weeks.
+
+Honesty check: the analgesia and the core principle (load drives tendon adaptation) are solid. The exact numbers — 30s vs 45s holds, the 6-8 hour spacing, the precise gelatin dose and timing — are emerging science, built partly on blood markers rather than long-term tendon outcomes. I treat the protocol as a reasonable default, not gospel.
 
 ### So why do we do massage, and stretch
 
