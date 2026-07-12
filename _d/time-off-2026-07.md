@@ -118,20 +118,19 @@ All 4 Dvorkins (Igor, Tori, Zach, Amelia). Iceland and Copenhagen legs are just 
 
 ### 🇳🇴 Oslo (Jul 7–10) · [📍 map](https://www.google.com/maps/place/Oslo)
 
-- Vigeland Sculpture Park, Aker Brygge waterfront
-- **National Museum**
-- **Authentic Oslo Bike Tour** — Bjørvika → Akerselva → Mathallen → Grünerløkka (3h, 11 km)
-- **Holmenkollen ski jump** — zipline! (kids will love)
-- Munch Museum + Grünerløkka neighborhood
-- **Oslofjord hike** to Vettakollen summit (3.5h, 5.4 km) + dinner cruise
+- A morning in Grünerløkka — coffee, record bins, the kids picking through secondhand racks
+- The new Deichman library in Bjørvika — floors of light, kids reading everywhere
+- A boat tour on the Oslofjord
+- Walked under the Barcode towers in Bjørvika
+- Walked the Opera House roof — white marble sloping straight down into the water
 
 ### 🏔️ Aurland + Voss (Jul 10–13) — the fjords · [📍 Aurland](https://www.google.com/maps/place/Aurland) · [📍 Voss](https://www.google.com/maps/place/Voss)
 
-- **Bergen Railway** Oslo → Flåm — one of the world's most scenic train rides
-- **Fjordsafari RIB** on Aurlandsfjord + UNESCO Nærøyfjord (2h 15m, suits supplied)
-- Fjord cruise Flåm → Gudvangen
-- **Viking Village Njardarheimr** (Gudvangen) — Viking lunch, axe-throwing, archery
-- **Voss Gondola** to 820m summit (1.5h return)
+- Two nights based in Aurland, deep in fjord country
+- The Aurland → Voss drive — a breathtaking tour of the fjords that blew us away; walls of rock straight out of the water, waterfalls off the top, a scale that shut the whole car up
+
+<!-- TODO(recap): confirm which planned fjord activities we actually did — Flåm railway, Fjordsafari RIB, Flåm→Gudvangen cruise, Njardarheimr Viking village, Voss gondola. Only Igor's confirmed account (Aurland base + Aurland→Voss drive) is listed above for now. -->
+
 
 ### 🌉 Bergen (Jul 13–16) · [📍 map](https://www.google.com/maps/place/Bergen,+Norway)
 
