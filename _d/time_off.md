@@ -290,7 +290,7 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
 
 #### Breakfast
 
-**Skip the hotel breakfast.** The family loves it and it's a great deal, but I never should — I can't afford the calories, and the greasy spread just leaves me feeling worse. See detailed guidance under [Diet → Hotel breakfast](/diet#hotel-breakfast).
+**Skip the hotel breakfast.** The family loves it and it's a great deal, but I never should — I can't afford the calories, and the greasy spread just leaves me feeling worse. It's the worst of both worlds: a free, mediocre spread I overeat, so I take the downside of eating out with none of the payoff of a real meal. If I'm going to spend the calories eating out anyway, I'd rather make it a restaurant I actually enjoy. See detailed guidance under [Diet → Hotel breakfast](/diet#hotel-breakfast).
 
 #### Terzepatide
 
