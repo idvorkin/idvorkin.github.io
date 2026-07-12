@@ -1962,6 +1962,7 @@
             "file_path": "_site/build-life-you-want.html",
             "incoming_links": [
                 "/happy",
+                "/produce-consume",
                 "/spiritual-health"
             ],
             "last_modified": "2026-07-08T19:30:37.804599+00:00",
@@ -3817,7 +3818,7 @@
             "url": "/gtd"
         },
         "/happy": {
-            "description": "Happy is a 5 letter word that many use as the answer to what is the point of life. The follow up question of “How can you be happy” is usually followed by a blank stare, so here’s my study of the subject. Probably the most important thing is happiness is not a mood, it’s journey - Like the weather vs the climate.\n\n",
+            "description": "Happy is a 5 letter word that many use as the answer to what is the point of life. The follow up question — “How can you be happy?” — is usually met with a blank stare, so here’s my study of the subject. The most important thing: happiness is not a mood, it’s a journey — like the weather vs. the climate.\n\n",
             "doc_size": 33000,
             "file_path": "_site/happy.html",
             "incoming_links": [
@@ -3829,6 +3830,7 @@
                 "/joy",
                 "/mood",
                 "/performer-playbook",
+                "/produce-consume",
                 "/siy",
                 "/timeoff",
                 "/timeoff-2020-12",
@@ -4235,7 +4237,7 @@
                 "/timeoff-2026-07",
                 "/tribe"
             ],
-            "last_modified": "2026-03-21T13:54:36-07:00",
+            "last_modified": "2026-07-09T04:37:41-07:00",
             "markdown_path": "_d/joy.md",
             "outgoing_links": [
                 "/balloon",
@@ -5297,7 +5299,7 @@
             "incoming_links": [
                 "/joy"
             ],
-            "last_modified": "2026-07-09T11:36:49.898702+00:00",
+            "last_modified": "2026-07-09T04:37:41-07:00",
             "markdown_path": "_d/performer-playbook.md",
             "outgoing_links": [
                 "/awareness",
@@ -5378,7 +5380,7 @@
         },
         "/physical-pain": {
             "description": "Physical pain has been a recurring teacher in my life. Each injury forced me to learn something about how my body works (and doesn’t). This page is the hub for my pain-related learnings, with dedicated pages for each area where I’ve had issues.\n\n",
-            "doc_size": 31000,
+            "doc_size": 36000,
             "file_path": "_site/physical-pain.html",
             "incoming_links": [
                 "/back-pain",
@@ -5519,7 +5521,7 @@
         },
         "/produce-consume": {
             "description": "Remember when you finished binge-watching that entire series and felt… empty? Now remember the last time you made something — anything — even if it sucked. Which memory makes you smile? Yeah, me too. We live in the golden age of consumption, where infinite content is one thumb-swipe away, yet we’re more anxious and less satisfied than ever. Here’s the thing: you’re not meant to be a consumer. You’re meant to be a producer.\n\n",
-            "doc_size": 24000,
+            "doc_size": 26000,
             "file_path": "_site/produce-consume.html",
             "incoming_links": [
                 "/ai-feed",
@@ -5533,7 +5535,9 @@
             "markdown_path": "_d/produce-consume.md",
             "outgoing_links": [
                 "/activation",
-                "/addiction"
+                "/addiction",
+                "/build-life-you-want",
+                "/happy"
             ],
             "redirect_url": "",
             "title": "The Producer's Paradox: Why Creating Beats Consuming Every Time",

@@ -9,10 +9,6 @@ redirect_from:
   - /wonder
   - /playbook
   - /performers-playbook
-alias:
-  - /wonder
-  - /playbook
-  - /performers-playbook
 imagefeature: https://github.com/idvorkin/blob/raw/master/blog/racoon-dealer-smiles-and-wonder.webp
 ---
 
