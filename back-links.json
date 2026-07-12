@@ -2417,7 +2417,6 @@
                 "/first-understand",
                 "/get-to-yes-with-yourself",
                 "/greek-orthodox",
-                "/happy",
                 "/manager-book",
                 "/negotiate",
                 "/operating-manual",
@@ -2707,7 +2706,7 @@
         },
         "/day-in-the-life": {
             "description": "A running journal of days that actually worked - the ones where health habits stuck, family time hit different, or I remembered what it feels like to be fully alive. Not every day needs to be Instagram-worthy, but some days deserve a bookmark. This is that bookmark collection.\n\n",
-            "doc_size": 19000,
+            "doc_size": 18000,
             "file_path": "_site/day-in-the-life.html",
             "incoming_links": [],
             "last_modified": "2025-10-04T18:43:51-07:00",
@@ -3702,7 +3701,7 @@
         },
         "/grammerly": {
             "description": "\n\n",
-            "doc_size": 13000,
+            "doc_size": 12000,
             "file_path": "_site/grammerly.html",
             "incoming_links": [],
             "last_modified": "2025-08-24T09:03:19-07:00",
@@ -3812,8 +3811,8 @@
             "url": "/gtd"
         },
         "/happy": {
-            "description": "Happy is a 5 letter word that many use as the answer to what is the point of life. The follow up question of “How can you be happy” is usually followed by a blank stare, so here’s my study of the subject. Probably the most important thing is happiness is not a mood, it’s journey - Like the weather vs the climate.\n\n",
-            "doc_size": 32000,
+            "description": "Happy is a 5 letter word that many use as the answer to what is the point of life. The follow up question — “How can you be happy?” — is usually met with a blank stare, so here’s my study of the subject. The most important thing: happiness is not a mood, it’s a journey — like the weather vs. the climate.\n\n",
+            "doc_size": 33000,
             "file_path": "_site/happy.html",
             "incoming_links": [
                 "/addiction",
@@ -3838,21 +3837,21 @@
                 "/timeoff-2025-08",
                 "/walking-with-god"
             ],
-            "last_modified": "2026-01-03T17:27:23+00:00",
+            "last_modified": "2026-07-12T05:23:59.061031+00:00",
             "markdown_path": "_posts/2017-04-12-happy.md",
             "outgoing_links": [
                 "/addiction",
                 "/anxiety",
                 "/build-life-you-want",
-                "/curious",
+                "/compassion",
                 "/eulogy",
+                "/gty",
                 "/hobby",
-                "/idle",
+                "/idle-loop",
                 "/joy",
                 "/mental-pain",
                 "/moments",
                 "/mood",
-                "/negotiate",
                 "/new-skills",
                 "/spiritual-health"
             ],
@@ -4022,7 +4021,6 @@
                 "/awareness",
                 "/depression",
                 "/gtd",
-                "/happy",
                 "/psychic-weight"
             ],
             "last_modified": "2025-12-06T18:03:28-08:00",
@@ -5015,7 +5013,6 @@
             "incoming_links": [
                 "/curious",
                 "/get-to-yes-with-yourself",
-                "/happy",
                 "/productive",
                 "/sell",
                 "/synergize",
@@ -6440,7 +6437,7 @@
         },
         "/synergize": {
             "description": "We’ve all got stuff we’re good at and stuff we’re bad at. Combine them right and the system is greater than the sum of the parts — sometimes a lot greater. Synergy is the payoff for everything that came before: independence, Win/Win, and seeking first to understand all converge here. These are my insights from 7 habits Chapter 6.\n\n",
-            "doc_size": 29000,
+            "doc_size": 28000,
             "file_path": "_site/synergize.html",
             "incoming_links": [
                 "/7-habits",
@@ -6525,7 +6522,7 @@
         },
         "/td/back_ref": {
             "description": "This blog is my collection of evergreen notes, a place to have my thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here’s my strategy to create them.\n\n",
-            "doc_size": 14000,
+            "doc_size": 13000,
             "file_path": "_site/td/back_ref.html",
             "incoming_links": [],
             "last_modified": "2022-04-16T15:22:43-07:00",
@@ -7713,7 +7710,7 @@
         },
         "/win-win": {
             "description": "Win/Win is a constantly seeking mutual benefit in all interactions. Win/Win means that agreements or solutions are mutually beneficial, mutually satisfying. With a Win/Win solution, all parties feel good about the decision and feel committed to the action plan. Win/Win sees life as a cooperative, not a competitive arena. Most people tend to think in terms of dichotomies: strong or weak, hardball or softball, win or lose. But that kind of thinking is fundamentally flawed. It’s based on power and position rather than on principle. Win/Win is based on the paradigm that there is plenty for everybody, that one person’s success is not achieved at the expense or exclusion of the success of others.\n\n",
-            "doc_size": 48000,
+            "doc_size": 47000,
             "file_path": "_site/win-win.html",
             "incoming_links": [
                 "/7-habits",
