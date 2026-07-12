@@ -145,10 +145,8 @@ All 4 Dvorkins (Igor, Tori, Zach, Amelia). Iceland and Copenhagen legs are just 
 ### 🏔️ Aurland + Voss (Jul 10–13) — the fjords · [📍 Aurland](https://www.google.com/maps/place/Aurland) · [📍 Voss](https://www.google.com/maps/place/Voss)
 
 - Two nights based in Aurland, deep in fjord country
-- The Aurland → Voss drive — a breathtaking tour of the fjords that blew us away; walls of rock straight out of the water, waterfalls off the top, a scale that shut the whole car up
-
-<!-- TODO(recap): confirm which planned fjord activities we actually did — Flåm railway, Fjordsafari RIB, Flåm→Gudvangen cruise, Njardarheimr Viking village, Voss gondola. Only Igor's confirmed account (Aurland base + Aurland→Voss drive) is listed above for now. -->
-
+- A fjord cruise from Aurland to Gudvangen, the Viking town — the amazing Nærøyfjord, the tour that blew us away: walls of rock straight out of the water, waterfalls off the top, a scale that shut the whole boat up
+- Then the bus from Gudvangen up to Voss
 
 ### 🌉 Bergen (Jul 13–16) · [📍 map](https://www.google.com/maps/place/Bergen,+Norway)
 
