@@ -1670,7 +1670,7 @@
         },
         "/bc": {
             "description": "A guide to my favorite spots in British Columbia, focusing on Vancouver and Chilliwack. Whether you’re planning a quick weekend getaway or a longer adventure, here’s what you need to know. These recommendations come from my personal experiences over multiple trips - you can read about some of them in my summer 2024 adventures, Yellow Deli expedition, and various time off adventures:\n\n",
-            "doc_size": 23000,
+            "doc_size": 22000,
             "file_path": "_site/bc.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T03:02:44+00:00",
@@ -1961,7 +1961,7 @@
                 "/produce-consume",
                 "/spiritual-health"
             ],
-            "last_modified": "2026-07-08T19:30:37.804599+00:00",
+            "last_modified": "2026-03-22T19:07:49-07:00",
             "markdown_path": "_d/build-the-life-you-want.md",
             "outgoing_links": [
                 "/balance",
@@ -2024,7 +2024,9 @@
             "description": "A weekly summary of what changed on this blog and across my GitHub projects. Useful for returning readers who want to catch up on new content and updates.\n\n",
             "doc_size": 243000,
             "file_path": "_site/changelog.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/timeoff-2026-07"
+            ],
             "last_modified": "2026-07-07T15:13:25+02:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
@@ -2617,6 +2619,7 @@
                 "/sharpen-the-saw",
                 "/slow",
                 "/switch",
+                "/timeoff-2026-07",
                 "/walking-with-god"
             ],
             "last_modified": "2025-12-07T02:40:46+00:00",
@@ -2708,7 +2711,7 @@
         },
         "/day-in-the-life": {
             "description": "A running journal of days that actually worked - the ones where health habits stuck, family time hit different, or I remembered what it feels like to be fully alive. Not every day needs to be Instagram-worthy, but some days deserve a bookmark. This is that bookmark collection.\n\n",
-            "doc_size": 19000,
+            "doc_size": 18000,
             "file_path": "_site/day-in-the-life.html",
             "incoming_links": [],
             "last_modified": "2025-10-04T18:43:51-07:00",
@@ -3703,7 +3706,7 @@
         },
         "/grammerly": {
             "description": "\n\n",
-            "doc_size": 13000,
+            "doc_size": 12000,
             "file_path": "_site/grammerly.html",
             "incoming_links": [],
             "last_modified": "2025-08-24T09:03:19-07:00",
@@ -3840,7 +3843,7 @@
                 "/timeoff-2025-08",
                 "/walking-with-god"
             ],
-            "last_modified": "2026-07-12T05:23:59.061031+00:00",
+            "last_modified": "2026-01-03T17:27:23+00:00",
             "markdown_path": "_posts/2017-04-12-happy.md",
             "outgoing_links": [
                 "/addiction",
@@ -4631,7 +4634,9 @@
             "description": "A farmer’s horse runs away. His neighbors console him: “What terrible luck!” The farmer shrugs, “Maybe.” The next day the horse returns, leading a herd of wild horses behind it — “What wonderful luck!” “Maybe.” His son tries to tame one, is thrown, and breaks his leg — “How awful!” “Maybe.” A week later the army marches through, conscripting every able-bodied young man for a war most won’t return from, and the son, with his broken leg, is passed over — “How wonderful!” “Maybe.” Good luck, bad luck — who knows? The story is never finished, so the farmer never renders the verdict. He just keeps living.\n\n",
             "doc_size": 17000,
             "file_path": "_site/maybe.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/timeoff-2026-07"
+            ],
             "last_modified": "2026-07-06T23:30:18-07:00",
             "markdown_path": "_d/maybe.md",
             "outgoing_links": [
@@ -4687,7 +4692,7 @@
         },
         "/mermaid": {
             "description": "Lets try d2\n\n",
-            "doc_size": 15000,
+            "doc_size": 14000,
             "file_path": "_site/mermaid.html",
             "incoming_links": [],
             "last_modified": "2023-12-17T18:49:14+00:00",
@@ -5353,7 +5358,7 @@
         },
         "/physical-pain": {
             "description": "Physical pain has been a recurring teacher in my life. Each injury forced me to learn something about how my body works (and doesn’t). This page is the hub for my pain-related learnings, with dedicated pages for each area where I’ve had issues.\n\n",
-            "doc_size": 31000,
+            "doc_size": 36000,
             "file_path": "_site/physical-pain.html",
             "incoming_links": [
                 "/back-pain",
@@ -7277,7 +7282,7 @@
         },
         "/timeoff-2026-07": {
             "description": "22 days, 5 countries, 4 Dvorkins, one whirlwind tour. From Reykjavík to Amsterdam by way of Stockholm, Oslo, and the Norwegian fjords. This is the first time we’ve attempted a trip of this scope as a family — the kids are 16 and 12, both still home, and the window for “all four of us on the road together” closes faster than I’d like.\n\n",
-            "doc_size": 27000,
+            "doc_size": 29000,
             "file_path": "_site/timeoff-2026-07.html",
             "incoming_links": [
                 "/ai-policy",
@@ -7285,17 +7290,20 @@
                 "/timeoff",
                 "/y26"
             ],
-            "last_modified": "2026-07-08T09:26:51+02:00",
+            "last_modified": "2026-07-08T13:29:27-07:00",
             "markdown_path": "_d/time-off-2026-07.md",
             "outgoing_links": [
                 "/act",
                 "/ai-policy",
                 "/awareness",
                 "/be-proactive",
+                "/changelog",
+                "/d/habits",
                 "/eulogy",
                 "/four-healths",
                 "/joy",
                 "/life-journal",
+                "/maybe",
                 "/meta",
                 "/mind-at-work",
                 "/packing",
@@ -7717,7 +7725,7 @@
         },
         "/win-win": {
             "description": "Win/Win is a constantly seeking mutual benefit in all interactions. Win/Win means that agreements or solutions are mutually beneficial, mutually satisfying. With a Win/Win solution, all parties feel good about the decision and feel committed to the action plan. Win/Win sees life as a cooperative, not a competitive arena. Most people tend to think in terms of dichotomies: strong or weak, hardball or softball, win or lose. But that kind of thinking is fundamentally flawed. It’s based on power and position rather than on principle. Win/Win is based on the paradigm that there is plenty for everybody, that one person’s success is not achieved at the expense or exclusion of the success of others.\n\n",
-            "doc_size": 48000,
+            "doc_size": 47000,
             "file_path": "_site/win-win.html",
             "incoming_links": [
                 "/7-habits",
