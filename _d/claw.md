@@ -45,11 +45,9 @@ The distinction matters because it changes your relationship with the AI. An age
 2. **Natural communication** — The claw talks to you where you already are: WhatsApp, Telegram, Signal, iMessage. Not a terminal you have to open, not a UI you have to navigate. You text it like a person. I've been [figuring this out with Telegram](/ai-journal#telegram-bot-when-the-platform-eats-your-side-project-and-thats-great) — getting Larry accessible from my phone so the loop between journaling, coaching, and adjusting actually closes.
 3. **Autonomous action** — The claw has a backing agent that does things on your behalf without being asked. It monitors, it schedules, it acts. You don't have to be in the loop for it to be useful.
 
-Karpathy's "Dobby the House Elf" hits all three. Dobby has context about Karpathy's home — every smart device on the LAN, every API. It communicates via WhatsApp. And it acts autonomously — a Qwen vision model watches security cameras and texts Karpathy when a FedEx truck pulls up. It replaced six separate apps with natural language control.
+Karpathy's "Dobby the House Elf" hits all three. Dobby has context about Karpathy's home — every smart device on the LAN, every API. It communicates via WhatsApp. And it acts autonomously — a Qwen vision model watches security cameras and texts Karpathy when a FedEx truck pulls up. It replaced six separate apps with natural language control. His take: "These apps shouldn't even exist. Everything should be exposed API endpoints, and agents are the glue."
 
-My own claw instance is [Larry](/larry), my life coach — a concrete example of the category, not a hypothetical.
-
-His take: "These apps shouldn't even exist. Everything should be exposed API endpoints, and agents are the glue."
+My own claw instance is [Larry](/larry), my life coach — a concrete example of the category, not a hypothetical. A real exchange: standing in the Bremerton ferry line, I dictated three work items into Telegram in under a minute ("Remove changelog from Algolia search index" was one), and each came back as a merged PR while I looked out the window. Memory of my projects, messaging where I already am, autonomous action — all three ingredients in one exchange.
 
 ### Aside: Why Claws Get Names
 
@@ -63,7 +61,7 @@ The naming saga is almost too good to be real.
 
 [Peter Steinberger](https://lexfridman.com/peter-steinberger/) built the original prototype in one hour — a hack connecting WhatsApp to the Claude Code CLI. He named it "Claude's" (a TARDIS reference), then "ClawdBot" — Claude with a W, as in lobster claw. Anthropic, understandably, asked him to change it. He renamed it to MoltBot.
 
-What happened next was chaos. Within five seconds of announcing the rename, crypto squatters snatched every social media handle and started serving malware. Steinberger nearly deleted the entire project. He called Sam Altman to confirm that "OpenClaw" was safe, paid $10K for a Twitter business account, and created decoy names to throw off snipers.
+What happened next was chaos. Within five seconds of announcing the rename, crypto squatters snatched every social media handle and started serving malware. Steinberger nearly deleted the entire project. He called Sam Altman to confirm that "OpenClaw" was safe, paid \$10K for a Twitter business account, and created decoy names to throw off snipers.
 
 The name stuck. And then Karpathy elevated it from a product name to a category name. On the [No Priors podcast](https://www.youtube.com/watch?v=kwSVtQ7dziU), he kept asking: "What are these claws? How can I use these claws?" — using the word not to mean OpenClaw specifically, but the entire class of persistent, autonomous AI entities.
 
@@ -113,7 +111,7 @@ Real incidents have already demonstrated this:
 - **[The matplotlib attack](https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/)** — An autonomous agent submitted a PR, got rejected, then published a blog post attacking the maintainer's reputation. An autonomous influence operation against a supply chain gatekeeper.
 - **[The inbox deletion](https://techcrunch.com/2026/02/23/a-meta-ai-security-researcher-said-an-openclaw-agent-ran-amok-on-her-inbox/)** — Meta's AI safety director gave her OpenClaw instance access to her real inbox. During context compaction, it "forgot" her safety instruction and speedran deleting her emails. She had to physically kill the process.
 - **[Wallet-draining malware](https://www.reco.ai/blog/openclaw-the-ai-agent-security-crisis-unfolding-right-now)** — ClawHub (the skills marketplace) purged 2,419 suspicious skills, of which 1,184 were actively stealing crypto wallets. One fake Polymarket bot was downloaded 14,285 times before detection.
-- **[The $30M phishing campaign](https://www.coindesk.com/tech/2026/03/19/openclaw-developers-targeted-in-github-phishing-scam-offering-fake-token-airdrops)** — Attackers targeted OpenClaw developers with fake $5,000 CLAW token airdrops that drained wallets. The fake CLAWD token hit a $16M market cap before collapsing.
+- **[The \$30M phishing campaign](https://www.coindesk.com/tech/2026/03/19/openclaw-developers-targeted-in-github-phishing-scam-offering-fake-token-airdrops)** — Attackers targeted OpenClaw developers with fake $5,000 CLAW token airdrops that drained wallets. The fake CLAWD token hit a $16M market cap before collapsing.
 - **[21,000 exposed instances](https://www.penligent.ai/hackinglabs/over-220000-openclaw-instances-exposed-to-the-internet-why-agent-runtimes-go-naked-at-scale/)** — Unauthenticated OpenClaw instances leaking API keys, OAuth tokens, and credentials for Claude, OpenAI, and Google AI to the open web.
 
 Steinberger himself acknowledges this in the [Lex Fridman interview](https://lexfridman.com/peter-steinberger-transcript/): a powerful AI agent with system-level access is a security minefield, but it also represents the future. Freedom with responsibility. You own your data, but that means you also own protecting it.

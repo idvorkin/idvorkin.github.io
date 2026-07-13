@@ -19,6 +19,25 @@ This is my attempt to fix that using Randy the Raccoon — my AI reading partner
 
 It's [GTD](/gtd) capture meets AI triage. And unlike passive consumption, this process produces something: a public record of what I read, what I think about it, and how my taste evolves. That makes it [production, not consumption](/produce-consume).
 
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc-start -->
+
+- [Feed](#feed)
+  - [2026-03-24](#2026-03-24)
+  - [2026-03-23](#2026-03-23)
+  - [2026-03-16](#2026-03-16)
+  - [2026-03-04](#2026-03-04)
+  - [2026-03-01](#2026-03-01)
+- [What I Gravitate Toward](#what-i-gravitate-toward)
+  - [Content Attributes I Love (stack-ranked)](#content-attributes-i-love-stack-ranked)
+  - [Creators I Follow](#creators-i-follow)
+  - [Content Attributes I Skip](#content-attributes-i-skip)
+  - [Mood Modifiers](#mood-modifiers)
+  - [Calibration Notes](#calibration-notes)
+
+<!-- vim-markdown-toc-end -->
+<!-- prettier-ignore-end -->
+
 ## Feed
 
 ### 2026-03-24
@@ -29,7 +48,6 @@ It's [GTD](/gtd) capture meets AI triage. And unlike passive consumption, this p
   - _Cross-links_: [AI Native Manager](/ai-native-manager), [Manager Book](/manager-book)
   - _Tags_: #ai #management #training #microsoft #podcast
   - _Reaction_: TBD — queued for listening
-  - _Note_: URL returned 404 at time of adding — may not be published yet. Check back.
 
 - **[The Manifold of Desire](https://magicmag.ai/the-manifold-of-desire/)** — Maggie Zhuang (AI Research PM at Meta) on how recommender systems evolved through four architectural acts: connection, context, time, and meaning
   - _Summary_: RecSys map "the manifold of the human psyche" — a fundamentally different landscape than what LLMs cover. Next-gen ranking must integrate all preference dimensions (behavior, context, temporal momentum, semantic understanding) simultaneously rather than choosing between competing architectures.
@@ -52,20 +70,14 @@ It's [GTD](/gtd) capture meets AI triage. And unlike passive consumption, this p
   - _Why Randy thinks I'd like it_: Core thesis maps to your /ai-native-manager post — agents as ICs, humans as managers. But the tone is prescriptive and hyperbolic, more CEO manifesto than practitioner reflection. Practical bits (task tiers, sync/async workflows) are useful but not novel if you've been living this through CHOP. Risk: familiar territory dressed up as urgency.
   - _Cross-links_: [AI Native Manager](/ai-native-manager), [CHOP](/chop), [How Igor CHOPs](/how-igor-chops), [AI Developer](/ai-developer)
   - _Tags_: #ai-practice #management #org-design
-  - _Reaction_:
 
 - **[CEOs Don't Steer](https://www.ribbonfarm.com/2017/11/09/ceos-dont-steer/)** — Venkatesh Rao on why executives are orientation locks, not navigators
   - _Summary_: Effective CEOs don't steer — they serve as "orientation locks," maintaining unwavering momentum in a chosen direction while delegating tactical navigation downward. When genuine reorientation is needed, organizations replace the CEO rather than having them turn the ship, because steering at the top hemorrhages compounding momentum.
   - _Why Randy thinks I'd like it_: Classic Rao systems thinking — contrarian with substance. The "who steers vs. who locks orientation" model is directly relevant to AI-native management and org restructuring. Binary thinking as a feature, not a bug, is genuinely novel framing.
   - _Cross-links_: [Manager Book](/manager-book), [AI Native Manager](/ai-native-manager), [Strategy](/strategy)
   - _Tags_: #systems-thinking #management #contrarian #leadership
-  - _Reaction_:
 
 ### 2026-03-16
-
-- **Tips for getting coding agents to write good Python tests** — (link TBD, from OmniFocus inbox Jan 29)
-  - _Tags_: #ai-practice #testing #craft
-  - _Reaction_: TBD — queued for reading
 
 - **[Dario Amodei — The Adolescence of Technology](https://darioamodei.com/the-adolescence-of-technology)** — Dario on AI's current awkward growth phase
   - _Tags_: #ai-philosophy #anthropic #longread
@@ -121,7 +133,7 @@ _Source: [Joy & Curiosity #76](https://registerspill.thorstenball.com/p/joy-and-
   - _Tags_: #ai-tools #practitioner #infrastructure
   - _Reaction_: Weird grab bag. Liked it but not insightful — scattered observations without a unifying thread.
 - **[Cloudflare vinext](https://blog.cloudflare.com/vinext/)** — Steve Faulkner on one engineer rebuilding Next.js with AI
-  - _Summary_: One engineer rebuilt Next.js as "vinext" in a week for $1,100 in AI tokens. AI doesn't need the intermediate abstractions humans created to manage complexity — many existing software layers will become obsolete.
+  - _Summary_: One engineer rebuilt Next.js as "vinext" in a week for \$1,100 in AI tokens. AI doesn't need the intermediate abstractions humans created to manage complexity — many existing software layers will become obsolete.
   - _Why Randy thinks I'd like it_: Great case study of AI productivity, but more "look what AI can do" than practitioner reflection.
   - _Cross-links_: [CHOP](/chop), [AI Developer](/ai-developer), [Produce vs Consume](/produce-consume)
   - _Tags_: #ai-productivity #vibe-coding #case-study

@@ -88,9 +88,9 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
 
 ### The Most Expensive I Can Get
 
-Currently I'm using Claude Opus 4.5 on the $200/month plan.
+Currently I'm using Claude Opus 4.5 on the \$200/month plan.
 
-On one hand you might think I'm crazy spending $2,400 a year. On the other hand, imagine having brilliant collaborators who force multiply everything you do, train you up, and basically give you a PhD in whatever you're working on.
+On one hand you might think I'm crazy spending \$2,400 a year. On the other hand, imagine having brilliant collaborators who force multiply everything you do, train you up, and basically give you a PhD in whatever you're working on.
 
 ### Why Not Codex, Gemini, etc.?
 
@@ -164,7 +164,7 @@ This diagram perfectly captures the evolution I've lived through. Let me break d
 
 **Note to self: Review this section regularly. These principles are easy to forget when you're heads-down in a session.**
 
-- **Rent the most expensive brain you can**: Spend tokens liberally. Don't be cheap with AI usage - the $200/month is nothing compared to the force multiplication you get
+- **Rent the most expensive brain you can**: Spend tokens liberally. Don't be cheap with AI usage - the \$200/month is nothing compared to the force multiplication you get
 - **Maximize time between interventions**: Like Tesla's self-driving metrics, the goal is reducing how often you need to take over. Every friction point kills flow
   - **Don't be the intern doing grudge work**: If AI writes code and you manually test it, you've got the roles backwards. Make AI the tester too - be the architect, not the QA intern
   - **Tests as specification**: The clearer the tests, the less I need to intervene
@@ -260,6 +260,8 @@ This stuff changes so fast, and with models getting smarter (see the Bitter Less
 **What does matter:** Little CLI programs for my agents to run. Same principle as with humans - instead of giving someone detailed directions, give them a tool that just works perfectly to solve the problem.
 
 For example, I have [`running-servers`](https://github.com/idvorkin/settings/blob/main/shared/running-servers) that checks if a Jekyll server is already running for a directory, so agents don't try to recreate them. Instead of prompting the agent through "check ps, grep for jekyll, parse the port numbers, compare to current directory..." - just give them a tool that answers "is there a server for this directory?" These custom tools that extend what agents can do - those are worth building.
+
+Same principle for giving agents the web: [Browsers for Machines](/browsers-for-machines) covers the Lightpanda and Playwright CLI setup behind my `/web-browse` command - JS-rendered pages and screenshots without flooding the context window.
 
 ## My Projects
 

@@ -44,7 +44,7 @@ A single bead does one thing. The interesting work is multi-step: design somethi
 
 Yegge gave the broader pattern a name: **MEOW — Molecular Expression of Work.** Beads are the atoms; molecules are the chemistry. The whole stack is one bet: if you express work as composable molecules with bead-shaped state, agent orchestration becomes a thin layer on top instead of the main event. Gas City is a working argument that the bet pays off.
 
-The lifecycle has its own vocabulary, and once you see it the rest of the system clicks into place:
+The lifecycle has its own vocabulary — this is the June 2026 version; Gas City moves fast, so check the docs if a term looks drifted — and once you see it the rest of the system clicks into place:
 
 - A **formula** is the source template — a TOML file describing the steps, their dependencies, and which agents run each one.
 - The formula gets **cooked** into a **protomolecule** — a frozen, immutable plan that won't drift mid-run.
@@ -154,15 +154,7 @@ The cross-communication that makes scale-out work is the same [mail protocol](ht
 
 ## Putting it together — how this post got made
 
-The bead lifecycle for the post you're reading:
-
-- **`lb-771`** — draft. A `larry-blog/editor` polecat read the brief, surveyed the related posts, wrote the explainer.
-- **Reviewer pair** — slung after the PR opens. Different polecat, different bias, adversarial pass on distill-don't-accrete and voice.
-- **Igor** — final reviewer, owns the merge.
-
-Three nodes. The graph stays in Dolt. Auto-convoys group related beads so the reviewer can't run before the editor closes. The whole sequence is queryable, replayable, durable across sessions — and, because of GUPP, no human had to push any of these agents to start. They woke up, queried their hooks, found work, and ran.
-
-That's the meta-loop my [/gas-city-home](/gas-city-home) post named: the system describing itself, with the description being a worked example of the system. Same shape here, smaller scope.
+This post is itself a worked example: an editor polecat drafted it from bead `lb-771`, a reviewer polecat ran an adversarial pass once the PR opened, and I owned the merge — nobody nudged either agent; they woke, found work on their hooks, and ran. [Standing Up Gas City](/gas-city-home) names that meta-loop — the system describing itself — and tells the longer version.
 
 ## The deeper frame: work is the primitive
 
@@ -178,9 +170,10 @@ That's why I keep saying _the unit of distribution is the formula, not the agent
 
 ## Where to go next
 
+- Start with the why — what a city buys me that a good prompt doesn't: [Why Gas City?](/why-gas-city).
 - The authoritative docs: **[docs.gastownhall.ai](https://docs.gastownhall.ai/)**. Start with [molecules](https://docs.gastownhall.ai/concepts/molecules/), [architecture](https://docs.gastownhall.ai/design/architecture/), and the [propulsion principle](https://docs.gastownhall.ai/concepts/propulsion-principle/).
 - The lived narrative — five upstream bugs, one Sunday morning, one `igor-city`: [Standing Up Gas City](/gas-city-home).
 - The work-side companion — same MEOW pattern, different deployment: [Wally and My Work Gastown](/wally).
 - The wider claw context — why I'm running multiple AI entities at all: [Igor's Three Claws](/igors-claws).
 
-Formulas are designed to be shared — there's an in-progress registry called **Mol Mall**, npm-for-workflows, where you'll eventually browse and install other people's molecules. The fact that the unit of distribution is the formula, not the agent, is the part of this design I keep coming back to. Most coordination problems aren't about smarter agents; they're about better-shaped work. Gas City picked the work as the shareable artifact. That bet is going to age well.
+Formulas are designed to be shared — there's an in-progress registry called **Mol Mall**, npm-for-workflows, where you'll eventually browse and install other people's molecules. The fact that the unit of distribution is the formula, not the agent, is the part of this design I keep coming back to. Most coordination problems aren't about smarter agents; they're about better-shaped work. Gas City picked the work as the shareable artifact.

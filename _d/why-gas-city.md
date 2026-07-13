@@ -17,7 +17,7 @@ I've got a [Gas City](/gas-city-home) running at home now, and the question I ge
 
 {% include ai-slop.html percent="85" %}
 
-This is the hub for everything I've written about running a city. If you want the parts instead of the argument: the [concepts](/gas-city) (beads, molecules, the propulsion principle), the [bring-up story](/gas-city-home) (one Sunday, five upstream bugs), the [first rig and what it cost](/gas-city-rig) ($9 for a thirteen-line change), and the [cockpit](/ai-cockpit) I drive the whole thing from. This post is the map those hang off of.
+This is the hub for everything I've written about running a city. If you want the parts instead of the argument, skip to [Where to go next](#where-to-go-next) — that's the full map. This post is the argument the map hangs off of.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -92,7 +92,7 @@ There's a softer reason too, and I'll own that it sits off to the side of the en
 
 I'll argue the other side, because the honest answer matters more than the pitch.
 
-My [first real workflow](/gas-city-rig) cost about **$9 and 32 Opus turns to produce a thirteen-line change**. Read that in isolation and a city looks ridiculous — an absurd way to run a script I could type in ten seconds. For that one change, you'd be right.
+My [first real workflow](/gas-city-rig) cost about **\$9 and 32 Opus turns to produce a thirteen-line change**. Read that in isolation and a city looks ridiculous — an absurd way to run a script I could type in ten seconds. For that one change, you'd be right.
 
 What sold me was a different run: an agent rebuilt an index, saw a big diff, _read_ it, realized every changed line was build-artifact noise and the real content was identical — and **refused to open the pull request**. That judgment call is worth an expensive model. But the plumbing around it — rebuild, confirm, commit, push, open the PR — is deterministic. It has no decision in it, and it wants a `cron` job and a shell script, not Opus turns spent running `git add`.
 
