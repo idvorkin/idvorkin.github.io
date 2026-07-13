@@ -97,6 +97,9 @@ catastrophize = "catastrophize"  # To view or present a situation as catastrophi
 catastrophizing = "catastrophizing"  # Present participle of catastrophize
 # Rust crate names
 ratatui = "ratatui"  # Rust TUI library (not ratatouille)
+# Fitness terms (shoulder-pain post)
+delt = "delt"  # Deltoid muscle abbreviation (rear delt, anterior delt)
+flyes = "flyes"  # Exercise name (reverse flyes)
 
 [files]
 # Files to ignore
