@@ -7,7 +7,9 @@ inprogress: true
 featured: true
 comments: true
 permalink: /eulogy
-aliases: ["/eulogy"]
+aliases: ["/eulogy", "/e1"]
+redirect_from:
+  - /e1
 imagefeature: https://github.com/idvorkin/blob/raw/master/icon_eulogy_1200_628.png
 tags:
   - how igor ticks
@@ -43,6 +45,19 @@ _Add comments [here](https://hackmd.io/s90ojEpMTC-t51EFYnUuMw)_
 _Currently the purpose of my eulogy is to guide me in living my life. As death gets closer, the purpose of this eulogy will transform into entertaining others at my funeral_
 
 _For many of my roles, I'm still figuring out who I want to be, and how I will achieved it, so this list is not yet in priority order. The fleshed out sections are the easy ones to write, because, well, they are the easy ones to write :)_
+
+A random sampler of the roles below — click one to shuffle it:
+
+<script type=module>
+    import { defer, load_random_eulogy } from '/assets/js/index.js'
+    defer(load_random_eulogy)
+</script>
+
+<div class='alert alert-warning' id="e1"></div>
+
+<div class='alert alert-warning' id="e2"></div>
+
+<div class='alert alert-warning' id="e3"></div>
 
 ### Dealer of smiles and wonder
 

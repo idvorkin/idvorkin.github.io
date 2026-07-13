@@ -5,6 +5,7 @@ permalink: /design
 redirect_from:
   - /architecture
   - /td/design
+  - /d/2017-11-04-clean-architecture
 ---
 
 Software is measured in two dimensions: use cases (end user behavior) and malleability. End user behavior is the delivery of use cases, while malleability is the ease with which the software can modify the existing use cases, or add new ones. Software malleability is the evaluation function for an architecture. Malleability is the more important of these dimensions because over time there will be far more changes to the software then the original use case (e.g. the cost of maintenance far exceeds the software writing cost). A key property of software architecture is it's obvious there is one place to make changes, and where that place is.
@@ -13,17 +14,17 @@ Software is measured in two dimensions: use cases (end user behavior) and mallea
 <!-- vim-markdown-toc-start -->
 
 - [Design and architecture](#design-and-architecture)
-    - [Software - Use cases and Malleability](#software---use-cases-and-malleability)
-    - [Business Logic, Platforms and Goop](#business-logic-platforms-and-goop)
-    - [Minimize your investment in goop.](#minimize-your-investment-in-goop)
-    - [Picking the right level of abstraction for your business logic.](#picking-the-right-level-of-abstraction-for-your-business-logic)
-    - [Is Fault Free possible](#is-fault-free-possible)
-    - [Paradigms: Structured, Object Oriented, Functional](#paradigms-structured-object-oriented-functional)
-    - [DRY vs WET vs MOIST Programming](#dry-vs-wet-vs-moist-programming)
+  - [Software - Use cases and Malleability](#software---use-cases-and-malleability)
+  - [Business Logic, Platforms and Goop](#business-logic-platforms-and-goop)
+  - [Minimize your investment in goop](#minimize-your-investment-in-goop)
+  - [Picking the right level of abstraction for your business logic](#picking-the-right-level-of-abstraction-for-your-business-logic)
+  - [Is Fault Free possible](#is-fault-free-possible)
+  - [Paradigms: Structured, Object Oriented, Functional](#paradigms-structured-object-oriented-functional)
+  - [DRY vs WET vs MOIST Programming](#dry-vs-wet-vs-moist-programming)
 - [Testing](#testing)
 - [Design Patterns](#design-patterns)
-    - [Architecture Patterns](#architecture-patterns)
-    - [OO Patterns](#oo-patterns)
+  - [Architecture Patterns](#architecture-patterns)
+  - [OO Patterns](#oo-patterns)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc-end -->
@@ -114,6 +115,8 @@ From [Testing and Quality](/testing)
 
 _If it's not tested, it doesn't work'.' When your tests passing lets you deploy without any concerns, your tests are good enough. Otherwise you've got more work to do_
 
+Software is like physical law: it can't be proven correct, only falsified. Tests can't prove software works, they can only prove it's broken. The best approximation of correctness is failing to prove the software is broken.
+
 ## Design Patterns
 
 ### Architecture Patterns
@@ -139,6 +142,5 @@ Good list [here](https://orkhanscience.medium.com/software-architecture-patterns
 
 ## Other Resources
 
-- See [Clean Architecture](/d/2017-11-04-clean-architecture)
 - [Building Microservices: Designing Fine-Grained Systems](https://www.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1491950358)
 - [Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321/ref=pd_lpo_sbs_14_t_0?_encoding=UTF8&psc=1&refRID=AZ1QGMVFB2K45MWY14X0)

@@ -52,6 +52,8 @@ The world is now on the cloud, here are my random notes on the topic.
 
 ## Containers
 
+Docker has 2 values, isolation and repeatable setup. When I want a TUI to poke at running containers, I use [lazydocker](https://github.com/jesseduffield/lazydocker).
+
 ### Containers are about application packaging and delivery.
 
 We often talk about containers being a light weight VM, which they are. However, I think the real value of the container (which is why docker is synonymous with container), is a software packaging and delivery mechanism.The sole reason Docker containers got more attention than its competition is because of this software delivery approach.

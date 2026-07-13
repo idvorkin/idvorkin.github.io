@@ -23,6 +23,7 @@ Every day I write out my affirmations. These positive statements help me challen
   - [Level 1: The bare minimum - Write 'em out](#level-1-the-bare-minimum---write-em-out)
   - [Level 2: How Will I Nail This Today?](#level-2-how-will-i-nail-this-today)
   - [Level 3: How Did Past Me Do?](#level-3-how-did-past-me-do)
+- [Igor's Video Affirmations](#igors-video-affirmations)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -44,7 +45,6 @@ Every day I write out my affirmations. These positive statements help me challen
 History:
 
 - 2025-05-03
-
   - I had 'Always Improving', but it just didn't sound like me.
   - 'Do It Anyways' better captures my grit and recommendation.
   - Cracked this working on my TikTok for the video
@@ -85,7 +85,7 @@ Prioritize Ruthlessly is a core aspect of essentialism, but it's also rule #3.
 
 **It takes 7 times to hear something positive about ourselves to make up for 1 negative thought.**
 
-{%include summarize-page.html src="/appreciate"%}
+{%include summarize-page.html src="/grateful"%}
 
 **Appreciation is also very important because all humans have anxiety and impostor syndrome.**
 
@@ -110,7 +110,7 @@ Prioritize Ruthlessly is a core aspect of essentialism, but it's also rule #3.
 
 ### Calm like water: Be Present. This too shall pass. Work the problem
 
-**Every day can be full of [joy](/joy), but if you're not paying attention you'll miss it. Being present will also let you [appreciate](/appreciate) others which also brings satisfaction.**
+**Every day can be full of [joy](/joy), but if you're not paying attention you'll miss it. Being present will also let you [appreciate](/grateful) others which also brings satisfaction.**
 
 {%include summarize-page.html src="/joy" %}
 

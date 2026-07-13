@@ -2,6 +2,8 @@
 title: "Physical Pain: Places I've Had Pain"
 description: "My journey through various physical pain issues - shoulder, back, knee - and what I've learned about managing them."
 permalink: /physical-pain
+redirect_from:
+  - /knee-pain
 layout: post
 tags:
   - health
@@ -49,7 +51,7 @@ Physical pain has been a recurring teacher in my life. Each injury forced me to 
 
 ### Knee Pain
 
-{%include summarize-page.html src="/knee-pain"%}
+Knee pain often stems from hip or ankle dysfunction — the knee is caught in the middle. Same indirect approach as shoulders and back: instead of treating the knee, look upstream at hip and ankle mobility.
 
 ## Key Concepts for Pain Management
 

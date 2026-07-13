@@ -14,29 +14,29 @@ I should have written up a plan before this [time off](/time-off) so I'd have be
 - [Success Stories](#success-stories)
 - [Top Learnings](#top-learnings)
 - [Relationships](#relationships)
-    - [Friends](#friends)
-    - [Tori](#tori)
-    - [Zach](#zach)
-    - [Amelia](#amelia)
+  - [Friends](#friends)
+  - [Tori](#tori)
+  - [Zach](#zach)
+  - [Amelia](#amelia)
 - [Identity Health](#identity-health)
-    - [Magic](#magic)
-    - [Tech Guru](#tech-guru)
-        - [Shell + Enabling Environment + Python in VIM](#shell--enabling-environment--python-in-vim)
-        - [Data Analysis - Pandas](#data-analysis---pandas)
-        - [CUT: Ranking Systems](#cut-ranking-systems)
-        - [Blog tech](#blog-tech)
+  - [Magic](#magic)
+  - [Tech Guru](#tech-guru)
+    - [Shell + Enabling Environment + Python in VIM](#shell--enabling-environment--python-in-vim)
+    - [Data Analysis - Pandas](#data-analysis---pandas)
+    - [CUT: Ranking Systems](#cut-ranking-systems)
+    - [Blog tech](#blog-tech)
 - [Cognitive Health](#cognitive-health)
 - [Emotional Health](#emotional-health)
-    - [Meditation](#meditation)
-    - [750 words](#750-words)
+  - [Meditation](#meditation)
+  - [750 words](#750-words)
 - [Physical Health](#physical-health)
-    - [Statistics](#statistics)
-    - [Diet](#diet)
-    - [Sleep](#sleep)
-    - [Energy](#energy)
+  - [Statistics](#statistics)
+  - [Diet](#diet)
+  - [Sleep](#sleep)
+  - [Energy](#energy)
 - [House and goods](#house-and-goods)
 - [Mental quicksand](#mental-quicksand)
-    - [Hot tub](#hot-tub)
+  - [Hot tub](#hot-tub)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -107,7 +107,7 @@ Nope.
 - Ported blog [to typescript](https://github.com/idvorkin/idvorkin.github.io/commit/81663832722fc49ba43f4162194f92d713df822d#diff-b55cdbef4907b7045f32cc5360d48d262cca5f94062e353089f189f4460039e0)
 - Figured out [E2E testing](https://dashboard.cypress.io/projects/s7659o/runs).
 - Figured out code coverage
-- Got python working in the browser using [Brython](/brython).
+- Got python working in the browser using [Brython](https://brython.info).
 - Created a twine like language for Zach to port his games to e.g. [Steve's Jungle And Bar](/snjb). This system can run both in the console and in Brython, which is super fun!
 - Updated blog sitenav to use font-awesome icons instead of text. Understood Bootstrap/CSS enough to make it pretty.
 - Linked blog to GitHub edit page, and using [GitHub issues to track work items](https://github.com/idvorkin/idvorkin.github.io/issues/16)

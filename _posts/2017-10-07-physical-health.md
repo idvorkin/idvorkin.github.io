@@ -158,4 +158,4 @@ But a few points to add after you read the article:
 3. The "productivity advantage" for me is motivation starts strong when I get up and declines through the day, gone by 9 pm when I'm on the couch, binging YouTube with my beer and chips. By contrast, at 5 am I'm ready to do something useful, and no one is awake, and nothing is open to distract me.
 4. Sometimes my body goes a bit batty and I wake up early, that has me waking up at 3:30 am which is annoying, as by noon I'm pretty toast and have to fight to stay awake till 8 pm.
 5. Not gonna lie, I love the feeling of pride when I tell folks I get up crazy early.
-   ps. Being a nerd I use a bunch of [toys]({% post_url 2017-10-06-tech-health-toys %}) to help with my health.
+   ps. Being a nerd I use a bunch of [toys](/irl) to help with my health.

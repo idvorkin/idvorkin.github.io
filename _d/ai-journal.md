@@ -1415,6 +1415,5 @@ Use meta -I (e.g. Alt-I) e.g. AI :)
 
 ### Related posts
 
-{%include summarize-page.html src="/ai-talk" %}
 {%include summarize-page.html src="/ai-art" %}
 {%include summarize-page.html src="/gpt" %}

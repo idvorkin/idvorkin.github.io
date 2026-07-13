@@ -2,6 +2,8 @@
 layout: post
 no-render-title: true
 title: iOS and iPadOS tips
+redirect_from:
+  - /ios-accessibility
 ---
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/ios.md)_
@@ -14,28 +16,32 @@ I spent a **LOT** of time on my iPhone/iPad - here are some of the tools/tips I 
 <!-- vim-markdown-toc-start -->
 
 - [General](#general)
-    - [Global Controls (For iPhone X)](#global-controls-for-iphone-x)
-    - [iMessage Turning into Green Dots](#imessage-turning-into-green-dots)
-    - [Siri (For iPhone X)](#siri-for-iphone-x)
-    - [HomeKit](#homekit)
-    - [Health Kit](#health-kit)
-    - [Photos](#photos)
-    - [Air Pods Pro](#air-pods-pro)
+  - [Global Controls (For iPhone X)](#global-controls-for-iphone-x)
+  - [iMessage Turning into Green Dots](#imessage-turning-into-green-dots)
+  - [Siri (For iPhone X)](#siri-for-iphone-x)
+  - [HomeKit](#homekit)
+  - [Health Kit](#health-kit)
+  - [Photos](#photos)
+  - [Air Pods Pro](#air-pods-pro)
+- [Accessibility](#accessibility)
+  - [Voice Control](#voice-control)
+  - [Speech Controller/Read aloud](#speech-controllerread-aloud)
+  - [Background noises](#background-noises)
 - [Apps](#apps)
-    - [All](#all)
-    - [Chrome](#chrome)
-    - [Launcher](#launcher)
-    - [Workflow](#workflow)
+  - [All](#all)
+  - [Chrome](#chrome)
+  - [Launcher](#launcher)
+  - [Workflow](#workflow)
 - [Watch](#watch)
 - [Augmented Reality Apps](#augmented-reality-apps)
 - [Pen](#pen)
-    - [Notability](#notability)
-    - [Notes Plus](#notes-plus)
-    - [OneNote](#onenote)
-    - [Adobe Sketch](#adobe-sketch)
-    - [Inkflow](#inkflow)
-    - [Nebo](#nebo)
-    - [Keyboards](#keyboards)
+  - [Notability](#notability)
+  - [Notes Plus](#notes-plus)
+  - [OneNote](#onenote)
+  - [Adobe Sketch](#adobe-sketch)
+  - [Inkflow](#inkflow)
+  - [Nebo](#nebo)
+  - [Keyboards](#keyboards)
 - [Keyboard Shortcuts](#keyboard-shortcuts)
 - [Doing development including markdown](#doing-development-including-markdown)
 
@@ -91,6 +97,32 @@ First, create an AudioGraph using mimo app, and write it to apple health! [mimoÂ
 Next go to AirPods Settings->Accessibility->audio accessibility settings->Headphone Accommodations->transparency mode. If you added an audio graph, it will be available to use.
 
 There are also sliders for environmental noises and other customizations that should help under accessiblitiy.
+
+## Accessibility
+
+iOS has some great accessibility features which allow hands-free and eye-less control of the device.
+
+### Voice Control
+
+You can take full control with Voice Control; this lets you dictate without starting with Siri and tap on buttons. Go look up accessibility -> Voice Control.
+
+<https://www.youtube.com/watch?v=eg22JaZWAgs>
+
+Try "Siri Turn on/Turn off voice control." Useful commands:
+
+- You can dictate without tapping the microphone button
+- Open [app]
+- Show names to see tap targets by name
+- Tap Name/Number
+- Show numbers/Show numbers continuously
+
+### Speech Controller/Read aloud
+
+This feature allows your phone to be a screen reader. Turn on Speech Controller, and you'll get a little overlay button. Tap it once, and you can select an element, and it will be read. You can only go up to 2x read speed, but it's a start, especially if you can't look at the screen.
+
+### Background noises
+
+You can turn on background noise to be comfortable in a loud environment.
 
 ## Apps
 

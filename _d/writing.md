@@ -368,7 +368,7 @@ I need to minimize distractions, so I try to write distraction free on my iPad
 
 - My iPad [writing tools](/td/ios-nomad)
 - My [iPad Setup](/td/ios)
-- I write in [vim](/vim-for-writing)
+- I write in [neovim](/neovim)
 
 ### Writing is better with an enabling environment
 

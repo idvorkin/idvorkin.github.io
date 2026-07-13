@@ -2,7 +2,11 @@
 layout: post
 title: "Gratefulness"
 permalink: /grateful
-alias: /grateful
+redirect_from:
+  - /appreciate
+alias:
+  - /grateful
+  - /appreciate
 ---
 
 Gratefulness exercises work - here's somethings to help.
@@ -10,11 +14,21 @@ Gratefulness exercises work - here's somethings to help.
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Appreciation vs Gratitude](#appreciation-vs-gratitude)
 - [Quick Simple Prompts](#quick-simple-prompts)
 - [Longer prompts](#longer-prompts)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+### Appreciation vs Gratitude
+
+Think of the last time you were appreciated: How did you feel? Think about the last hour: How many things could you have appreciated? It takes 7 positive experiences to make up for 1 negative experience - what can you appreciate?
+
+Here's my thinking on appreciation:
+![Appreciate](/images/appreciate.png)
+
+A question I haven't answered yet: won't appreciating people let them get away with less than they can accomplish?
 
 ### Quick Simple Prompts
 

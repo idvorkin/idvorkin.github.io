@@ -22,16 +22,17 @@ I picked up, and also execute, these habits semi-randomly today. However, as I d
 <!-- vim-markdown-toc-start -->
 
 - [Active Practices](#active-practices)
-    - [Daily Stream of Consciousness Journaling](#daily-stream-of-consciousness-journaling)
-    - [Daily Gratefulness Journal](#daily-gratefulness-journal)
-    - [4:30 am wake up (psst - it's really physical health)](#430-am-wake-up-psst---its-really-physical-health)
-    - [Formal 20 minute breathing meditation](#formal-20-minute-breathing-meditation)
-    - [Box breathing](#box-breathing)
+  - [Daily Stream of Consciousness Journaling](#daily-stream-of-consciousness-journaling)
+  - [Daily Gratefulness Journal](#daily-gratefulness-journal)
+  - [4:30 am wake up (psst - it's really physical health)](#430-am-wake-up-psst---its-really-physical-health)
+  - [Formal 20 minute breathing meditation](#formal-20-minute-breathing-meditation)
+  - [Box breathing](#box-breathing)
 - [Future Practices](#future-practices)
-    - [Sublime States Training](#sublime-states-training)
-    - [Daily Reflective Journal](#daily-reflective-journal)
+  - [Sublime States Training](#sublime-states-training)
+  - [Daily Reflective Journal](#daily-reflective-journal)
 - [Inconsistent/Future practices](#inconsistentfuture-practices)
-    - [Discontinued Practices](#discontinued-practices)
+  - [Offer anyway (love and rejection)](#offer-anyway-love-and-rejection)
+  - [Discontinued Practices](#discontinued-practices)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -107,6 +108,10 @@ I appreciate the sunrise:
 - Process it once list
 - Why is someone behaving inconsistently
 - Poll the [voices in my head](/voices)
+
+### Offer anyway (love and rejection)
+
+We're afraid to love because we fear rejection. That sounds grand, but it happens in the small too. Someone needed a charger, I could have given them mine, and I didn't. Why? Fear of rejection. Run the outcomes: I offer and it's needed - they feel loved, I feel great. I offer, it's not needed, they appreciate it anyway - same. The only loss is offering to someone grumpy, and how often does that happen? Almost always win/win, so offer.
 
 ### Discontinued Practices
 

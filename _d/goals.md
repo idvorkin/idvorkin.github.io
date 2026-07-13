@@ -8,6 +8,7 @@ redirect_from:
   - /okr
   - /goal
   - /objective
+  - /Immutable-Laws-Of-Hard
 ---
 
 Goals are critical, there are multiple goal systems and they have consequences. They are mechanisms to deliver without micro management.
@@ -17,6 +18,7 @@ Goals are critical, there are multiple goal systems and they have consequences. 
 <!-- vim-markdown-toc-start -->
 
 - [Why goals](#why-goals)
+  - [The immutable laws of hard things](#the-immutable-laws-of-hard-things)
   - [Goals vs Systems](#goals-vs-systems)
   - [Mission, Vision, Tenets, Goals](#mission-vision-tenets-goals)
   - [What vs How](#what-vs-how)
@@ -46,6 +48,14 @@ Answer what, why, and how do we know there.
 For a deep dive into goal execution, see [4 Disciplines of Execution](/4dx).
 
 {% include summarize-page.html src="/4dx" %}
+
+### The immutable laws of hard things
+
+Exercise, diet, personal development - each of these is governed by the immutable laws of hard things. It's possible these laws don't apply to you, but I doubt it.
+
+1. Without a goal and a measure, you will move farther and farther away from your desired state.
+2. Regardless of what you predict, you'll never beat your goal. Instead, you'll only barely achieve it.
+3. Without a consequence, and/or a strong reward, you'll ignore your goal.
 
 ### Goals vs Systems
 

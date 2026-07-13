@@ -2,7 +2,11 @@
 # Language preferences
 locale = "en-us"
 
+[default.extend-identifiers]
+"B00CWXU9FO" = "B00CWXU9FO"  # Amazon ASIN (OutIn Mino espresso) — "FO" suffix false-positives
+
 [default.extend-words]
+mis = "mis"  # "mis-" prefix coinages (mis-sorts, mis-hire) tokenize to bare "mis"
 # Common tech/domain-specific terms that might be flagged
 "iterm" = "iterm"  # iTerm is a terminal application for Mac
 "iTerm" = "iTerm"  # iTerm is a terminal application for Mac

@@ -3,8 +3,10 @@ layout: post
 title: Neovim
 permalink: /neovim
 mermaid: True
-redirect-from:
+redirect_from:
   - /nvim
+  - /vim
+  - /vim-for-writing
 ---
 
 Long ago a fork from vim emerged. Neovim! I avoided it for a long time, but when Bram (the inventor of vim) died, I decided it was time to switch. Now that I've sucked up the 20-40 hours in the conversion, I'm thrilled I did. Turns out all the "kids" have been using and developing on neovim. This results in 1, good tools, and nice best practices.
@@ -82,3 +84,26 @@ If I'm being honest though, LUA is better then vimscript, once I stop whining ab
 ### Terminal/Shell Differences
 
 ### Prettier UX doesn't work well under Mosh (need to use SSH)
+
+## Keybindings I'm practicing
+
+Bindings I want in muscle memory but aren't there yet:
+
+- `<space>rn` - Rename - via LSP
+- `yaf` - Yank a function - via TreeSitter + TreeSitter motions
+- `\xX` - Open diagnostics - via Trouble
+- `<space>ai` - Auto import
+- `<space>gd` - Go to definition - via LSP
+- `<space>gt` - Go to type
+- `\cc` - Comment or uncomment
+- `Telescope git_status` and `Telescope git_files` - Telescope is a nice way into git
+
+## Writing prose
+
+Vim's gaps for free-form writing come down to exactly two things: line wrapping and distraction-free display. Both are fixable with plugins. From my vim days:
+
+- **Soft wrap motions** - Pencil made the motion commands 'just work' in `:wrap` mode, without adding hard line breaks to the source file (`:PencilSoft`, or `:PencilHard` when you want `:nowrap` behavior).
+- **Distraction-free display** - Goyo centers the buffer and hides the status bar. Limelight fades out everything but the current paragraph.
+- **Spelling and thesaurus** - `:spell`, then `]s`/`[s` to jump between misspellings and `z=` to fix. A thesaurus plugin is worth having for prose.
+
+Those are the old vim plugin names; my current equivalents are in my [nvim config](https://github.com/idvorkin/Settings/tree/master/nvim).

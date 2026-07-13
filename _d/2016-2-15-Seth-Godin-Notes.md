@@ -108,3 +108,13 @@ Sources:
 - Quit before the DIP, but not in the DIP, too expensive
 - Need to quit lots of things,
 - To get through the DIP, need to lean in.
+
+### Magic: These principles in practice
+
+My magic is a great example of Seth's principles at work:
+
+- Choosing myself, hard work, building trust, and deserving attention.
+- NOT building a tribe - there's no scale out/distribution.
+- Challenge expectations - do magic on the bus, when people are expecting to stare off into space.
+- Connection - the signed card, "do you know a magic word?", the signed ambitious card, the in-hands card routine.
+- Open question: how do I build MORE connection to my audience?

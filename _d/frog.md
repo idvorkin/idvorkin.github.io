@@ -42,7 +42,7 @@ Procrastination is the success killer, a powerful manifestations of the resistan
 
 ### The immutable laws of hard things
 
-{%include summarize-page.html src="/Immutable-Laws-Of-Hard" %}
+Exercise, diet, personal development - each is governed by [the immutable laws of hard things](/goals#the-immutable-laws-of-hard-things): without a goal and a measure you drift, you'll only ever barely achieve your goal, and without a consequence or strong reward you'll ignore it.
 
 ### Lies of procrastination
 

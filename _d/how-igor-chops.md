@@ -13,6 +13,8 @@ redirect_from:
   - /chop-igor
   - /vibe
   - /vibe-coding
+  - /tech-rituals
+  - /tech-ritual
 ---
 
 I mumble to Claude on my couch while my family wonders who I'm talking to. I vibe code in the car while my son drives. I rent the most expensive brain I can get. This is my CHOP (Chat-Oriented Programming) setup: the infrastructure, the tools, and what I've learned.
@@ -35,6 +37,7 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
 - [Notes from the Trenches](#notes-from-the-trenches)
   - [What Works Well - REVIEW THIS WEEKLY!](#what-works-well---review-this-weekly)
   - [What I'm Still Figuring Out](#what-im-still-figuring-out)
+  - [Put Tooling Review on the Calendar](#put-tooling-review-on-the-calendar)
 - [The Control Panel - For This Human](#the-control-panel---for-this-human)
 - [Where I Code](#where-i-code)
   - [The Couch](#the-couch)
@@ -184,6 +187,10 @@ This diagram perfectly captures the evolution I've lived through. Let me break d
 - **DRY vs. self-contained**: Should conventions be shared libraries, or should every repo implement its own? When execution is cheap, maybe copy-paste isn't so bad.
 - **Planning vs. iterating**: When you can execute so quickly, is planning even worth it? Or are you better off just iterating fast?
 - **Tests first vs. tests after**: If AI can generate tests instantly, does TDD still matter? Or is "describe what you want, let AI figure out the tests" the new workflow?
+
+### Put Tooling Review on the Calendar
+
+Tech changes fast enough that checking what's new can't be ad-hoc - you're better off putting it on a calendar. I used to track this in a standalone tech-rituals post with "next update" dates, and the dates went stale immediately. Lesson learned: recurring reviews belong on a calendar or in a task tracker, not a blog post. My cadence: AI coding tools monthly (who am I kidding, it's weekly), and a quarterly pass over my health-metrics Jupyter notebooks and my linters/formatters/pre-commit hooks.
 
 ## The Control Panel - For This Human
 
