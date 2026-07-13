@@ -36,16 +36,10 @@ permalink: /weeks
 {% assign start_month = split_start[1] %}
 {% assign start_day = split_start[2] %}
 
-<script>console.log("{{page.datafile }}");</script>
-<script>console.log({{site.data | json }});</script>
-<!--
-<script>console.log({{data | json }});</script>
--->
-
 {% assign end_year = page.end_year %}
 {% assign year_border_class = "future-date"%}
 
-My life, where each week I've been alive is a little box. When meaningful things happen (for both better and worse) I make a note of it so I can remember how much of life is influenced by these factors. This is a brilliant idea from this [guy](https://busterbenson.com/life-in-weeks).
+My life, where each week I've been alive is a little box. When meaningful things happen (for both better and worse) I make a note of it so I can remember how much of life is influenced by these factors. This is a brilliant idea from [Buster Benson](https://busterbenson.com/life-in-weeks).
 
 <div class="life-in-weeks">
 <div class="row justify-content-center">
