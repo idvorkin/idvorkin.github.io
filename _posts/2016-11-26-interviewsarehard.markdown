@@ -45,4 +45,4 @@ Interviews are especially expensive as you need:
 - 8 hours for the actual interview.
 - Emotional processing after the interview
 
-Once you have a few offers rolling in, then there's the energy required to make one of the biggest decisions in your life.
+Once you have a few offers rolling in, then there's the energy required to make one of the biggest decisions in your life. Just don't make it because [the recruiter is hot](/the-recruiter-does-not-think-you-are-hot).
