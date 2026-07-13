@@ -2,6 +2,9 @@
 # Language preferences
 locale = "en-us"
 
+# Ignore Amazon ASIN codes in amazon.html includes (random letter pairs get flagged)
+extend-ignore-re = ['asin="[A-Za-z0-9;]+"']
+
 [default.extend-words]
 # Common tech/domain-specific terms that might be flagged
 "iterm" = "iterm"  # iTerm is a terminal application for Mac
