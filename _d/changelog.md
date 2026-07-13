@@ -12,6 +12,11 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Week of 2026-07-13](#week-of-2026-07-13)
+  - [Pleasure vs Enjoyment: Brooks' Formula Threaded Through Three Posts](#pleasure-vs-enjoyment-brooks-formula-threaded-through-three-posts)
+  - [Scandinavia Trip: Oslo Train Bender + Diet Learnings](#scandinavia-trip-oslo-train-bender--diet-learnings)
+  - [Isometrics and Tendon Health](#isometrics-and-tendon-health)
+  - [Other Projects (2026-07-13)](#other-projects-2026-07-13)
 - [Week of 2026-07-06](#week-of-2026-07-06)
   - [Bad News. Maybe Not. (new post!)](#bad-news-maybe-not-new-post)
   - [Time Off: Sacrifice Identity for Consumption (2026-07-06)](#time-off-sacrifice-identity-for-consumption-2026-07-06)
@@ -152,6 +157,44 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+## Week of 2026-07-13
+
+_9 commits this week_
+
+### Pleasure vs Enjoyment: Brooks' Formula Threaded Through Three Posts
+
+The intellectual through-line of the week — Arthur Brooks' **Enjoyment = Pleasure + People + Memory** formula got a deep-dive and then got applied everywhere:
+
+- **[Pleasure vs Enjoyment, sourced](/build-life-you-want#pleasure-vs-enjoyment)** — pleasure runs on the dopamine circuit and slides toward compulsion on its own ("if your goal is pleasure, you don't arrive at happiness — you wind up in rehab," Brooks on Tim Ferriss #692); enjoyment adds **People** (the beer-ad tell: "if you're doing it alone, you're probably doing it wrong") and **Memory** — six concrete levers (be present, make it novel, make it an occasion, capture a little on purpose, engineer the peak-end, retell it). Two honest caveats added: the triune-brain framing is metaphor not neuroanatomy, and the pleasure/enjoyment split predates Brooks — Csíkszentmihályi drew it in *Flow* (1990). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2bae59602)
+- **[You Don't Have to Quit Consuming — Upgrade It](/produce-consume#you-dont-have-to-quit-consuming--upgrade-it)** — a redemptive turn in the consumption-trap post: you don't need to nuke every guilty pleasure, just add what's missing. "Solitary and memoryless is pleasure — the trap. Shared and remembered is enjoyment. Same two hours of TV; wildly different outcome for the person you are next week." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/901e6078c)
+- **[/happy refactored](/happy)** — pure structural cleanup (no new ideas): headings promoted to match blog convention, the post reordered into a clean arc (define → three types → enjoyment → equations → pursuit → the three selves + practices → moments/idle-loop/mood), duplicate content deduped, and the old "Maximize Enjoyment" practices folded under **[The Three of You](/happy#the-three-of-you)** so Anticipate/Savor/Reminisce map onto the future/experiencing/remembering selves. Savor now spells out the memory-encoding mechanics. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0bdde53d8) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/16ed118ec)
+- **Peak-end link consolidated** — the Kahneman peak-end cross-link across the site now points to the canonical `/balance` write-up instead of `/happy`. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/fad8ae2d9)
+
+### Scandinavia Trip: Oslo Train Bender + Diet Learnings
+
+**[/timeoff-2026-07](/timeoff-2026-07#how-its-actually-going)** — the trip log kept filling in:
+
+- **Reykjavík + Stockholm memories** — an 8°C cold plunge into 40/42/44°C pools fed straight from the ocean, a 5am kettlebell session beaten by rain, Skansen's in-character silversmith raising a vase from a flat disk over a wood fire, Amelia out-prepping Igor with a spare phone battery, and a near-ejection from a Stockholm Greek Orthodox church for doing magic in the pews — met with a Viktor Frankl beat on the stimulus-response gap. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/704a95b18)
+- **🚂 The train to Oslo** — confession: on the six-hour Stockholm→Oslo train, while the kids watched TV, Igor went on a tech bender and built the entire [Scandinavian Whirlwind explainer site](https://idvorkin-ai-tools.github.io/scandinavia-2026/) in one sitting — "at least it was building, not scrolling." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/85e1bb83c)
+- **🤔 Unexpected realizations** — LinkedIn stayed off the [work phone split](/maybe#the-second-phone) but Igor's thumb kept opening it anyway on autopilot; locking it out led straight back to the login page "like the habit walked me there on its own" — an open question about which part of the [habit loop](/habits#habit-model) (cue, craving, response, reward) still fires with the reward gone. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/85e1bb83c)
+- **Restaurant-diet learnings folded into evergreen [/timeoff](/timeoff#where-to-eat)** — eating out past 45 isn't worth it ("my gut can't handle the grease"); book a kitchen and cook plain grocery-store food instead; skip the hotel breakfast spread but the motel breakfast is fine — modest enough that self-control holds. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0e0d3fd91)
+
+### Isometrics and Tendon Health
+
+**[/physical-pain — Isometrics section](/physical-pain#isometrics-how-to-load-a-tendon-without-moving-the-joint)** — answers the open question left by "The Tendon Problem": how do you load a tendon that can't warn you when you're overloading it? Overcoming vs. yielding isometrics; Keith Baar's load × time-under-tension research on collagen synthesis; Ebonie Rio's finding that a single bout of heavy isometric holds cut tendon pain nearly 7 points on a 0-10 scale for ~45 minutes. Baar's protocol: ~30-second holds, ~4 reps, 6+ hours between sessions, 15g gelatin + vitamin C 30-60 minutes before loading (roughly doubled collagen-synthesis markers in his 2016 study). Flagged honestly: the analgesia and core load-drives-adaptation principle are solid; the exact hold length, spacing, and dosing are emerging science. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/15651e441)
+
+### Other Projects (2026-07-13)
+
+**[Scandinavian Whirlwind 2026](https://idvorkin-ai-tools.github.io/scandinavia-2026/)** (trip site) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026)
+
+The tech-bender site keeps growing — 30 commits added ~20 new explainers plus an atlas index organizing all of them into Cities & Places, War Context Packs, How the Nordics Work, Nordic Culture & People, and a cross-cutting Rabbit Holes bucket:
+
+- **Rabbit holes** — Janteloven (Law of Jante), the Sámi people, why Norway said no to the EU twice, Scandinavian design, the Nordic prison paradox, Finnish sauna culture, why Iceland has no surnames, Nordic social trust, Flow (Csíkszentmihályi), the science of awe and wonder — later expanded into a 9-point "instructions for the performer" playbook cross-linking history-of-magic and flow-state. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/cfc8a37a5)
+- **Performance-history deep dives** — short histories of the circus, ventriloquism, puppetry, mime and physical comedy, busking and street performance, and clowning — plus balloon twisting and the history of magic (Robert-Houdin). [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/45ec2e7dd)
+- **Seven Deadly Sins & the Three Dragons** — traces Evagrius' eight logismoi through Cassian, Gregory's seven, Aquinas' capital vices, and Dante's terraces, then maps the seven onto Igor's Three Dragons (Entropy, Squander, Scarcity) as a weekly diagnostic — honest about the clean fits vs. the stretches. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/09bbaf3a4)
+- **Parenting: encouraging curiosity in a teenager** — Self-Determination Theory, the overjustification effect, Loewenstein's information-gap theory, Dweck's praise research, and a nine-move practical toolkit. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/ae94185c7)
+- **Fjords explainer expanded** — hanging valleys as the waterfall mechanism, orographic rainfall + fjell snowmelt, the May–July seasonal peak, named falls (Seven Sisters, Vøringsfossen), and fjords elsewhere in the world (NZ Fiordland, Chilean Patagonia, Greenland's Scoresby Sound, Scotland's sea lochs). [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/3aa08c5dc)
 
 ## Week of 2026-07-06
 
