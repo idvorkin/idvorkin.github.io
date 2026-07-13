@@ -8,6 +8,7 @@ locale = "en-us"
 "iTerm" = "iTerm"  # iTerm is a terminal application for Mac
 "UE9QZ8" = "UE9QZ8"  # YouTube video ID
 "UE" = "UE"  # Part of YouTube ID
+"FO" = "FO"  # Part of Amazon ASIN B00CWXU9FO
 "BA" = "BA"  # Part of Asciinema ID
 "NAEuBAJhe9qdU" = "NAEuBAJhe9qdU"  # Asciinema ID  
 "mis-hire" = "mis-hire"  # Common term in hiring
