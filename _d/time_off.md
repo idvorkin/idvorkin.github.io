@@ -379,6 +379,7 @@ The full, durable version lives in my [packing master list](/packing) — every 
 ### Other learnings
 
 - Remember the peak-end rule. Make the last day amazing!
+- Take reminiscing photos - photos whose job is to remind you of the good times, the people you had them with, and the places you had them at. The best camera is the one you have on you.
 - Have a hotel booked Friday and Saturday nights
 - If you forget something, buy it at Walmart
 - Keep kettlebells in the car

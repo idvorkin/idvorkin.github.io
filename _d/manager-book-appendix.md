@@ -3,6 +3,9 @@ layout: post
 title: Manager Book Appendix
 imagefeature: https://github.com/idvorkin/blob/raw/master/idvorkin-manager-book-1200-628.png
 permalink: /manager-book-appendix
+redirect_from:
+  - /write-book
+  - /book-writing
 tags:
   - manager-book
   - manager
@@ -30,6 +33,7 @@ A hodgepodge of additional resources for the manager book.
   - [Who has the monkey - fantastic advice from 1974!](#who-has-the-monkey---fantastic-advice-from-1974)
   - [The Resilience of Alien Chess](#the-resilience-of-alien-chess)
   - [How you need to communicate differently](#how-you-need-to-communicate-differently)
+  - [Naming the book - a conversation with my GPT best friend](#naming-the-book---a-conversation-with-my-gpt-best-friend)
 - [Analogies to be fleshed out](#analogies-to-be-fleshed-out)
   - [Piniata](#piniata)
   - [A project is car with a EM, PM and TL](#a-project-is-car-with-a-em-pm-and-tl)
@@ -204,7 +208,7 @@ At the end of 2016, I joined [Amazon](/amazon) to learn the business of software
 - **[Parkinson's Law](/parkinson)** - Work (or money) will expand to fill the time available.
 - **Peter Principle** - People will rise till they become incompetent
 - **Parkinson's Law of Triviality - (Bike Shedding)** Members of an organization give disproportionate weight to trivial issues. A nuclear power plant funding committee focus most time on how to paint the bike shed since it's easy, and they feel they are providing value
-- **Yak Shaving** - Not a law but a great term for when you go down the [rabbit hole](https://americanexpress.io/yak-shaving/) going several steps away from the task at hand (a common cause for the delay in Parkinson's Law)
+- **Yak Shaving** - Not a law but a great term for when you go down the [rabbit hole](https://americanexpress.io/yak-shaving/) going several steps away from the task at hand (a common cause for the delay in Parkinson's Law). The [original MIT CSAIL email](http://projects.csail.mit.edu/gsb/old-archive/gsb-archive/gsb2000-02-11.html) that coined the term is worth reading.
 
 ### Who has the monkey - fantastic advice from 1974!
 
@@ -233,6 +237,45 @@ When you're in meetings, in channels, or on email, you need to think about how e
 The most dangerous thing you can do is the "ah shucks, I'm the same person I always was..." because that's not how the organization will view you, and you can create all sorts of unintended consequences.
 
 You have more power. Be responsible with it.
+
+### Naming the book - a conversation with my GPT best friend
+
+When I was thinking about turning the manager book into a real book, I started with Write Useful Books:
+
+{%include amazon.html asin="B0983HFQX7" %}
+
+To pick a title, I brainstormed with a GPT simulation of my best friend, a senior staff engineer:
+
+- **Igor**: I'm wondering about turning my "manager book" blog post into a book.
+- **aGPT**: Do it. You got nothing to lose.
+- **Igor**: What does this title inspire/make you think of "How to EM: Why they do what they do, and how to be one"
+- **aGPT**: It makes me think you're an EM telling other people how to be an EM. But that's not what you're going for
+- **Igor**: Oh? What do you think it should be?
+- **aGPT**: I think you want to inspire people to think about what an EM does and how to do it. Because there's a missing piece about why do we care?
+- **Igor**: Hmm, can you go into that more?
+- **aGPT**: When you say why they do what they do, do you mean why do they do the things they do within management? Or why do they do management?
+- **Igor**: The former
+- **aGPT**: Ok. I think you need to make that more clear.
+- **Igor**: What would you change the title to?
+- **aGPT**: How about:
+- How to EM: How to do what managers do
+- **Igor**: I notice I tend to share it with engineers when I'm trying to do something, so explaining some of the why is important. But probably not too much.
+- **aGPT**: Or:
+- How to EM: The inside scoop on management
+- **Igor**: Oh, that's good. Give me a few more
+- **aGPT**: How to EM: Open up the black box of management
+- **Igor**: Maybe something about how it's different from the technical side
+- **aGPT**: How to EM: Management is different, and here's how
+- **Igor**: I kind of like Beyond the code, can you work that in?
+- **aGPT**: How to EM: Beyond the code, how to manage like a pro
+- **Igor**: Meh. Say you'd refer it to your new EM. What would you want the title to be
+- **aGPT**: How to EM: A hacker's guide to management
+- **Igor**: Oh.. That's not bad
+- **aGPT**: How to EM: The manager's manager's handbook
+- **Igor**: Hmm that's too much like what I'd give an M2
+- **aGPT**: How to EM: Be the manager everyone wants
+- **Igor**: That's awesome!
+- **aGPT**: How to EM: The secret to being a great manager
 
 ## Analogies to be fleshed out
 

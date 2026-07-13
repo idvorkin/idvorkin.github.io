@@ -15,34 +15,34 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 
 - [Success criteria For this post](#success-criteria-for-this-post)
 - [Comparisons](#comparisons)
-    - [Dataflows Service vs Database vs Message Broker](#dataflows-service-vs-database-vs-message-broker)
-    - [OLTP vs Analytics](#oltp-vs-analytics)
-    - [Authoritative vs Derived Data](#authoritative-vs-derived-data)
-    - [Stream vs Batch Processing](#stream-vs-batch-processing)
-    - [Facts Measures and Dimensions.](#facts-measures-and-dimensions)
-    - [Data lakes and Data warehouse](#data-lakes-and-data-warehouse)
+  - [Dataflows Service vs Database vs Message Broker](#dataflows-service-vs-database-vs-message-broker)
+  - [OLTP vs Analytics](#oltp-vs-analytics)
+  - [Authoritative vs Derived Data](#authoritative-vs-derived-data)
+  - [Stream vs Batch Processing](#stream-vs-batch-processing)
+  - [Facts Measures and Dimensions.](#facts-measures-and-dimensions)
+  - [Data lakes and Data warehouse](#data-lakes-and-data-warehouse)
 - [Databases](#databases)
-    - [Distributed File System - S3](#distributed-file-system---s3)
-    - [RelationalDB - AWS Aurora and Aurora Serverless](#relationaldb---aws-aurora-and-aurora-serverless)
-    - [Key Value Store - Dynamo DB](#key-value-store---dynamo-db)
-    - [Document - AWS DocumentDB](#document---aws-documentdb)
-    - [Column Store - AWS Redshift](#column-store---aws-redshift)
-    - [Graph - AWS Neptune](#graph---aws-neptune)
+  - [Distributed File System - S3](#distributed-file-system---s3)
+  - [RelationalDB - AWS Aurora and Aurora Serverless](#relationaldb---aws-aurora-and-aurora-serverless)
+  - [Key Value Store - Dynamo DB](#key-value-store---dynamo-db)
+  - [Document - AWS DocumentDB](#document---aws-documentdb)
+  - [Column Store - AWS Redshift](#column-store---aws-redshift)
+  - [Graph - AWS Neptune](#graph---aws-neptune)
 - [Message Brokers](#message-brokers)
-    - [What happens when messages are not consumed in time?](#what-happens-when-messages-are-not-consumed-in-time)
-    - [What happens when a message is missed](#what-happens-when-a-message-is-missed)
-    - [Event BroadCasting- PubSub- SNS](#event-broadcasting--pubsub--sns)
-    - [Durable Message Queues - SQS](#durable-message-queues---sqs)
-    - [Kinesis - Data Streams](#kinesis---data-streams)
-    - [Kinesis - Data Analytics](#kinesis---data-analytics)
-    - [Kinesis - Firehouse](#kinesis---firehouse)
-    - [Kinesis - Video Streams](#kinesis---video-streams)
-    - [Event Bridge - Event Bus](#event-bridge---event-bus)
+  - [What happens when messages are not consumed in time?](#what-happens-when-messages-are-not-consumed-in-time)
+  - [What happens when a message is missed](#what-happens-when-a-message-is-missed)
+  - [Event BroadCasting- PubSub- SNS](#event-broadcasting--pubsub--sns)
+  - [Durable Message Queues - SQS](#durable-message-queues---sqs)
+  - [Kinesis - Data Streams](#kinesis---data-streams)
+  - [Kinesis - Data Analytics](#kinesis---data-analytics)
+  - [Kinesis - Firehouse](#kinesis---firehouse)
+  - [Kinesis - Video Streams](#kinesis---video-streams)
+  - [Event Bridge - Event Bus](#event-bridge---event-bus)
 - [Big Ideas](#big-ideas)
-    - [Write path vs read path](#write-path-vs-read-path)
-    - [Write path derived data system flows](#write-path-derived-data-system-flows)
-    - [Event sourcing and event logs](#event-sourcing-and-event-logs)
-    - [E2E asynchronous verification with apology workflow](#e2e-asynchronous-verification-with-apology-workflow)
+  - [Write path vs read path](#write-path-vs-read-path)
+  - [Write path derived data system flows](#write-path-derived-data-system-flows)
+  - [Event sourcing and event logs](#event-sourcing-and-event-logs)
+  - [E2E asynchronous verification with apology workflow](#e2e-asynchronous-verification-with-apology-workflow)
 - [Related Reading](#related-reading)
 
 <!-- vim-markdown-toc-end -->
@@ -109,6 +109,19 @@ Key-Value store with better indexing on json properties?
 ### Column Store - AWS Redshift
 
 High performance analytics since can scan column at once.
+
+Handy SQL for time-based group by (works on any postgres flavor):
+
+    select
+        date_trunc('week',creation_date) as DATE,
+        count(*)
+        from mytable
+        where
+            creation_date >  '2017-1-1'
+        group by
+            date_trunc('week',creation_date)
+        order by
+            date_trunc('week',creation_date)
 
 ### Graph - AWS Neptune
 

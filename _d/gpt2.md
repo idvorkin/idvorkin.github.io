@@ -2,9 +2,15 @@
 layout: post
 title: "GPT3 and language models"
 permalink: /gpt
-redirect-from:
+redirect_from:
   - /language-model
   - /gpt3
+  - /genai-talk
+  - /ai-talk
+  - /genai-intern
+  - /intern-llm
+  - /llm-intern
+  - /llm-talk
 ---
 
 Just like the search bar in google fills in what you're typing when you say "Where can I ge .. " GPT3 complete strings as well. Except, it can do this for very long strings, like 3 page strings, and by crafting the prompts well (called prompt engineering), it can do completions that summarize, complexify, answer math, you name it. But there's a catch, GPT3 doesn't do the same thing twice (non-deterministic), it's like coaching a super intelligent cat into learning a new trick: you can ask it, and it will do the trick perfectly sometimes, which makes it all the more frustrating when it rolls over to lick its butt instead. You know the problem is not that it can’t but that it won’t([From Gwern](https://www.gwern.net/GPT-3)).
@@ -20,6 +26,7 @@ Just like the search bar in google fills in what you're typing when you say "Whe
   - [What happens when GPT3 has gender biases?](#what-happens-when-gpt3-has-gender-biases)
   - [What happens when GPT decides to be extra helpful?](#what-happens-when-gpt-decides-to-be-extra-helpful)
 - [Imaginary code](#imaginary-code)
+- [The intern mental model](#the-intern-mental-model)
 - [Prompt engineering](#prompt-engineering)
 - [Tech](#tech)
   - [GPT3 vs GPT2](#gpt3-vs-gpt2)
@@ -104,6 +111,12 @@ Luckily, I was watching the diffs closely:
 ## Imaginary code
 
 Using codex it can figure out what code does, or what functions can be. It's amazing.
+
+## The intern mental model
+
+In 2023 I wrote a talk on GenAI built around a mental model that still holds up: treat the LLM like an intern. Super smart, super creative, understands plain English — but non-deterministic. Every call you get a different intern. Sometimes you get a dud that lies or ignores your instructions, and because you're used to smart, honest interns, a confident bad one can really throw you for a loop.
+
+The other idea worth keeping from that talk: the prompt is not the program. Prompt+LLM is the equivalent of assembly language running on a CPU — the program is the outer system that uses prompts as part of its execution.
 
 ## Prompt engineering
 

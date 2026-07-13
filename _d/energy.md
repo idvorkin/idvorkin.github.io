@@ -3,11 +3,20 @@ layout: post
 title: "Control your Energy"
 mermaid: true
 permalink: /energy
+redirect_from:
+  - /energy-abundance
+  - /high-energy
 ---
 
 We often say we don't have time, but usually we mean we don't have energy. That's great news because time is finite, and monotonically decreasing. Energy, by contrast, is dynamic. Activities and experiences can create and destroy energy. What's amazing to me is how going to the gym can be energy positive.
 
 ## Theory
+
+### Igor, how do you have the time for all this?
+
+I get asked that a lot. It's the wrong question — we all have the same 24 hours. The difference isn't time management, it's energy management. Some activities drain your energy, others generate more.
+
+One number from years of watching my own patterns: I need about 1 day of recovery for every 3 days of intense work.
 
 ### Energy is very non-linear
 

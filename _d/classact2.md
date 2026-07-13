@@ -38,7 +38,7 @@ Be a class act. Fantastic advice.
 
 ### Appreciate
 
-{%include summarize-page.html src="/appreciate" %}
+{%include summarize-page.html src="/grateful" %}
 
 ### Do something touching
 

@@ -57,7 +57,7 @@ Traditional businesses deal in a single currency: money. But in life, we operate
 
 2. **Energy (Operational Fuel)** – The fuel that powers daily activities. Like cash flow, energy must be managed well, but unlike Life Value, energy does not directly generate fulfillment—it is only through building and maintaining assets that deep Life Value can be achieved. Covey's _Sharpen the Saw_ principle reminds us that energy is not infinite and must be replenished through renewal and balance.
 
-{% include summarize-page.html src="/energy-abundance" %}
+{% include summarize-page.html src="/energy" %}
 
 ## The Life Balance Sheet & Income Statement
 
@@ -229,7 +229,7 @@ If you found this post helpful, here are other resources on my blog that explore
 
 ### Energy Management
 
-{% include summarize-page.html src="/energy-abundance" %}
+{% include summarize-page.html src="/energy" %}
 
 ### Balance and Effectiveness
 

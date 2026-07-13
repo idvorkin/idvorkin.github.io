@@ -55,13 +55,9 @@ There's so much to say here. Pulling in some content from Andy:
 - Igor's [about page](/about)
 - Some of the [features](https://github.com/idvorkin/idvorkin.github.io) in the readme.
 - Tons of [VIM/CLI stuff](https://github.com/idvorkin/settings)
-- My general vim notes
+- My editor notes, including vim for writing
 
-{%include summarize-page.html src="/vim" %}
-
-- Vim specifically for writing
-
-{%include summarize-page.html src="/vim-for-writing" %}
+{%include summarize-page.html src="/neovim" %}
 
 At its core, is writing:
 

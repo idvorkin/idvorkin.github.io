@@ -7,34 +7,37 @@ tags:
   - hbr
   - strategy
 permalink: /strategy
+redirect_from:
+  - /d/2016-7-14-Customer-Service
 ---
 
-As competition in the market intensifies, companies must find ways to differentiate themselves in order to have a successful business - and that means strategic positioning. If they want to get the buyers money they have to choose a strategy that works for them and make sure it has sustainable competitive advantages. From offering a different value, to providing the same value using different activities - the possibilities for positioning are endless. Ultimately, it's all about creating trade offs and making sure those trade offs give a sustainable competitive advantage!
+Everyone says their company has a strategy. Usually they mean going faster, which Porter argues isn't strategy at all. These are my notes on his classic HBR article - strategy is choosing what you won't do, and the trade offs that make your position hard to copy.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
 - [I. How to compete?](#i-how-to-compete)
-  - [II. What is a strategy?](#ii-what-is-a-strategy)
-    - [Variety based positioning](#variety-based-positioning)
-    - [Needs based positioning](#needs-based-positioning)
-    - [Access based positioning](#access-based-positioning)
-  - [III. Why is strategy a sustainable competitive advantage?](#iii-why-is-strategy-a-sustainable-competitive-advantage)
-  - [IV. Fit and sustainable competitive advantage](#iv-fit-and-sustainable-competitive-advantage)
-    - [Types of Fit](#types-of-fit)
-    - [Fit and sustainability](#fit-and-sustainability)
-  - [V. How to Rediscover Strategy?](#v-how-to-rediscover-strategy)
-    - [The failure to choose](#the-failure-to-choose)
-    - [The Growth trap](#the-growth-trap)
-    - [Profitable Growth](#profitable-growth)
-    - [Role of leaders](#role-of-leaders)
-  - [VI. Strategy in Tech](#vi-strategy-in-tech)
-    - [The Four](#the-four)
-    - [A humorous explanation of tech](#a-humorous-explanation-of-tech)
-    - [Stratechary](#stratechary)
-    - [By company](#by-company)
-    - [Video Game Industry State of the union](#video-game-industry-state-of-the-union)
-  - [Strategy vs Execution](#strategy-vs-execution)
+- [II. What is a strategy?](#ii-what-is-a-strategy)
+  - [Variety based positioning](#variety-based-positioning)
+  - [Needs based positioning](#needs-based-positioning)
+  - [Access based positioning](#access-based-positioning)
+- [III. Why is strategy a sustainable competitive advantage?](#iii-why-is-strategy-a-sustainable-competitive-advantage)
+  - [Customer obsession as positioning](#customer-obsession-as-positioning)
+- [IV. Fit and sustainable competitive advantage](#iv-fit-and-sustainable-competitive-advantage)
+  - [Types of Fit](#types-of-fit)
+  - [Fit and sustainability](#fit-and-sustainability)
+- [V. How to Rediscover Strategy?](#v-how-to-rediscover-strategy)
+  - [The failure to choose](#the-failure-to-choose)
+  - [The Growth trap](#the-growth-trap)
+  - [Profitable Growth](#profitable-growth)
+  - [Role of leaders](#role-of-leaders)
+- [VI. Strategy in Tech](#vi-strategy-in-tech)
+  - [The Four](#the-four)
+  - [A humorous explanation of tech](#a-humorous-explanation-of-tech)
+  - [Stratechary](#stratechary)
+  - [By company](#by-company)
+  - [Video Game Industry State of the union](#video-game-industry-state-of-the-union)
+- [Strategy vs Execution](#strategy-vs-execution)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -121,6 +124,10 @@ Three types of trade offs:
 You can straddle, but there's a huge penalty.
 Avoid False Trade Offs.
 No trade off -> No competitive advantage.
+
+#### Customer obsession as positioning
+
+Customer obsession is a trade off in action: pay a real cost to take better care of customers, and make it back in retention, higher prices, and fans who do your advertising for free. Amex has high annual fees and is taken at fewer places than Visa. T-mobile has worse coverage than AT&T. Starbucks, REI, and Apple charge more for equivalent products. Amazon has no store where you can check out products in person. Each pays a structural cost, and sustains its position by being obsessed with its customers.
 
 ### IV. Fit and sustainable competitive advantage
 

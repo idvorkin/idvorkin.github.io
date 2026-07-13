@@ -71,7 +71,7 @@ The first step for mortality software is helping you figure out the person you w
 
 {%include summarize-page.html src="/frog" %}
 
-### Avoid [Addiction](/_d/addiction.md)
+### Avoid [Addiction](/addiction)
 
 {%include summarize-page.html src="/addiction" %}
 
@@ -136,7 +136,6 @@ Your health is your most valuable asset. It's so easy to ignore your
 ### Physical Health
 
 {%include summarize-page.html src="/physical-health" %}
-{%include summarize-page.html src="/tech-health-toys" %}
 {%include summarize-page.html src="/irl" %}
 
 ### [Financial health](/money)
@@ -168,7 +167,7 @@ Major Life events have their own module
 
 Great video on keeping [the cores spinning in unexpected circumstances](https://youtu.be/snAhsXyO3Ck).
 
-### [Changing Jobs](https://idvork.in/tags/#job-hunt)
+### [Changing Jobs](https://idvork.in/tags#job-hunt)
 
 ### Having a kid
 

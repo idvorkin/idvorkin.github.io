@@ -3,7 +3,9 @@ layout: post
 no-render-title: true
 title: In Real Life Diary
 permalink: /irl
-redirect_from: /in-real-life
+redirect_from:
+  - /in-real-life
+  - /tech-health-toys
 ---
 
 I started writing a technical blog to help me remember the many things I explore. One day, I realized I've got a real life too. Here's a place I can remember the many things I explore IRL (In real Life)
@@ -16,45 +18,46 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 <!-- vim-markdown-toc-start -->
 
 - [Physical Health](#physical-health)
-    - [Personal Trainer](#personal-trainer)
-    - [Calf Health](#calf-health)
-    - [Knee Health](#knee-health)
-    - [Booger Health](#booger-health)
-    - [Skin Health](#skin-health)
-    - [Wrist Health](#wrist-health)
-    - [Books on injury prevention](#books-on-injury-prevention)
-    - [Standing Desks](#standing-desks)
-    - [Gym Stuff](#gym-stuff)
-    - [Under Desk Exercise Equipment](#under-desk-exercise-equipment)
+  - [Personal Trainer](#personal-trainer)
+  - [Calf Health](#calf-health)
+  - [Knee Health](#knee-health)
+  - [Booger Health](#booger-health)
+  - [Skin Health](#skin-health)
+  - [Wrist Health](#wrist-health)
+  - [Books on injury prevention](#books-on-injury-prevention)
+  - [Standing Desks](#standing-desks)
+  - [Gym Stuff](#gym-stuff)
+  - [Under Desk Exercise Equipment](#under-desk-exercise-equipment)
+  - [Health Tracking Gear](#health-tracking-gear)
 - [Emotional Health](#emotional-health)
-    - [Meditation](#meditation)
-    - [Therapist](#therapist)
+  - [Meditation](#meditation)
+  - [Therapist](#therapist)
 - [Cognitive Health](#cognitive-health)
-    - [Blogging](#blogging)
-    - [Weekly goals](#weekly-goals)
+  - [Blogging](#blogging)
+  - [Weekly goals](#weekly-goals)
 - [Identity Health](#identity-health)
-    - [Eulogy Writing](#eulogy-writing)
+  - [Eulogy Writing](#eulogy-writing)
 - [Personal Carry](#personal-carry)
-    - [Fanny Pack](#fanny-pack)
-    - [Gym Bag](#gym-bag)
-    - [Work Bag](#work-bag)
-    - [Selfie Sticks](#selfie-sticks)
-    - [Portable Espresso](#portable-espresso)
+  - [Fanny Pack](#fanny-pack)
+  - [Gym Bag](#gym-bag)
+  - [Work Bag](#work-bag)
+  - [Selfie Sticks](#selfie-sticks)
+  - [Portable Espresso](#portable-espresso)
 - [Biking](#biking)
 - [Car Tech](#car-tech)
-    - [Tony](#tony)
-    - [Tech (Old)](#tech-old)
+  - [Tony](#tony)
+  - [Tech (Old)](#tech-old)
 - [Tech](#tech)
-    - [How to add a poison pill to the addictive iPhone](#how-to-add-a-poison-pill-to-the-addictive-iphone)
-    - [Computers](#computers)
-    - [Monitors](#monitors)
-    - [Keyboards](#keyboards)
+  - [How to add a poison pill to the addictive iPhone](#how-to-add-a-poison-pill-to-the-addictive-iphone)
+  - [Computers](#computers)
+  - [Monitors](#monitors)
+  - [Keyboards](#keyboards)
 - [Camera](#camera)
 - [Virtual Reality - Oculus](#virtual-reality---oculus)
 - [Backyard](#backyard)
-    - [Inflatable Hot tub](#inflatable-hot-tub)
-    - [Propane Fire Pit](#propane-fire-pit)
-    - [Canopies](#canopies)
+  - [Inflatable Hot tub](#inflatable-hot-tub)
+  - [Propane Fire Pit](#propane-fire-pit)
+  - [Canopies](#canopies)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -133,6 +136,23 @@ With age comes the need for more accouterments
 I don't use this, but it's under my desk. The day I got it and used it, I decided it was a good idea and I should use it more often.
 
 <https://www.amazon.com/gp/product/B07KMNVXCT/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1>
+
+### Health Tracking Gear
+
+From my old tech-for-health roundup, the gear that stuck:
+
+- **Apple Watch** - Measures my heart rate and paths run, and controls my music. Expensive but worth it.
+- **Bluetooth scale** - Every time I weigh myself it loads my weight into Apple Health.
+- **Continuous glucose monitor (CGM)** - The Freestyle Libre. You need a prescription to get it, but it's pretty fun.
+
+All the data lands in Apple Health, which I can export and analyze with my favorite [data analysis](https://github.com/idvorkin/jupyter/blob/master/Weight%20Analysis.ipynb) tools.
+
+And the graveyard - products I tried but don't recommend:
+
+- **Spire** (respiration and stress wearable) - Cool idea, but not accurate, and I couldn't keep it in the right spot. Stopped using it a month in.
+- **Lumo Lift** (posture wearable) - Cool idea, but easy to ignore and fiddly to keep in place. Stopped within a month.
+- **Muse** (brain wave meditation headband) - As much as I wanted this to work, it seemed random for me. Stopped within a week.
+- **Beddit** (on-bed sleep sensor) - Used to work great, then Apple bought it and it stopped working.
 
 ## [Emotional Health](/emotional-health)
 
