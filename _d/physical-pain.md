@@ -24,15 +24,14 @@ Physical pain has been a recurring teacher in my life. Each injury forced me to 
   - [Flexibility vs Mobility](#flexibility-vs-mobility)
   - [The Tendon Problem: No Pain Until It's Too Late](#the-tendon-problem-no-pain-until-its-too-late)
   - [Isometrics: How to Load a Tendon Without Moving the Joint](#isometrics-how-to-load-a-tendon-without-moving-the-joint)
+  - [Using the 5 whys to understand pain](#using-the-5-whys-to-understand-pain)
+  - [Rotation for stiffness](#rotation-for-stiffness)
   - [So why do we do massage, and stretch](#so-why-do-we-do-massage-and-stretch)
 - [Approaches to Managing Pain](#approaches-to-managing-pain)
   - [Physio Therapy](#physio-therapy)
   - [Massage, Stretch, Strengthen](#massage-stretch-strengthen)
   - [Self Release: Massage and Foam Roller, Tennis Ball](#self-release-massage-and-foam-roller-tennis-ball)
 - [Great Books For Across the Board Improvements](#great-books-for-across-the-board-improvements)
-- [Other Ideas to Classify](#other-ideas-to-classify)
-  - [Using the 5 whys to understand pain](#using-the-5-whys-to-understand-pain)
-  - [Rotation for stiffness](#rotation-for-stiffness)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -163,39 +162,6 @@ Roughly:
 
 Honesty check: the analgesia and the core principle (load drives tendon adaptation) are solid. The exact numbers — 30s vs 45s holds, the 6-8 hour spacing, the precise gelatin dose and timing — are emerging science, built partly on blood markers rather than long-term tendon outcomes. I treat the protocol as a reasonable default, not gospel.
 
-### So why do we do massage, and stretch
-
-Because while that tightness is a symptom, it's also limiting range of motion, and by loosening (even temporarily), we can be more effective at strengthening (again exactly the same as anxiety in mental pain).
-
-## Approaches to Managing Pain
-
-### Physio Therapy
-
-Physio therapy is a great model for improvement. You go, they coach you, and then you have to do the work.
-
-Critical because Practice makes permanent. See
-
-{%include summarize-page.html src="/new-skills"%}
-
-### Massage, Stretch, Strengthen
-
-Massage (aka Release) feels amazing, stretching good, and Strengthening Does Nothing.
-Inconveniently, massage only lasts 20 minutes, stretching a day or 2, but strengthening lasts forever.
-
-### Self Release: Massage and Foam Roller, Tennis Ball
-
-- Foam roller and Tennis ball are mostly self massage, which is mostly less effective than an expert nailing it.
-- Remember this is not fixing the problem, it's giving you a window to maximize your efficiency in fixing the problem.
-
-## Great Books For Across the Board Improvements
-
-- **Rebuilding Milo** - From the Squat University guy (Aaron Horschig). Focuses on diagnosing and fixing common lifting injuries (hip, knee, shoulder, back). Very practical with specific rehab protocols and movement assessments.
-- **Built from Broken** - Scott Hogan's science-based approach to joint health and injury recovery. Covers the "why" behind pain and provides structured programs for rebuilding strength after injury. Good on nutrition's role in tissue healing.
-
-{% include amazon.html asin="1628604220;1735728500" %}
-
-## Other Ideas to Classify
-
 ### Using the 5 whys to understand pain
 
 From our favorite COE process - the 5 whys:
@@ -228,3 +194,34 @@ Shoulder external rotation was really hard for me, and also interesting since th
 Lack of shoulder external rotation meant I had really weak wrists and put extra strain on my wrists.
 
 To have strength, you need stability or your body shuts off strength to avoid injury (hopefully). You have a few ways to get stiffness: one is stiffening random muscles, the other is external rotation.
+
+### So why do we do massage, and stretch
+
+Because while that tightness is a symptom, it's also limiting range of motion, and by loosening (even temporarily), we can be more effective at strengthening (again exactly the same as anxiety in mental pain).
+
+## Approaches to Managing Pain
+
+### Physio Therapy
+
+Physio therapy is a great model for improvement. You go, they coach you, and then you have to do the work.
+
+Critical because Practice makes permanent. See
+
+{%include summarize-page.html src="/new-skills"%}
+
+### Massage, Stretch, Strengthen
+
+Massage (aka Release) feels amazing, stretching feels good, and strengthening feels like it does nothing.
+Inconveniently, massage only lasts 20 minutes, stretching a day or 2, but strengthening lasts forever.
+
+### Self Release: Massage and Foam Roller, Tennis Ball
+
+- Foam roller and Tennis ball are mostly self massage, which is mostly less effective than an expert nailing it.
+- Remember this is not fixing the problem, it's giving you a window to maximize your efficiency in fixing the problem.
+
+## Great Books For Across the Board Improvements
+
+- **Rebuilding Milo** - From the Squat University guy (Aaron Horschig). Focuses on diagnosing and fixing common lifting injuries (hip, knee, shoulder, back). Very practical with specific rehab protocols and movement assessments.
+- **Built from Broken** - Scott Hogan's science-based approach to joint health and injury recovery. Covers the "why" behind pain and provides structured programs for rebuilding strength after injury. Good on nutrition's role in tissue healing.
+
+{% include amazon.html asin="1628604220;1735728500" %}

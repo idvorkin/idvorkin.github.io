@@ -9,7 +9,7 @@ tags:
   - physical health
 ---
 
-Back pain is one of the most common and debilitating conditions. Stuart McGill's research changed how we think about it: the spine should stay stiff while motion comes from the hips and shoulders.
+For years my back was stiff every morning until I stretched it out, and kettlebell swings are what finally loosened it. Stuart McGill's research changed how I think about back pain: the spine should stay stiff while motion comes from the hips and shoulders.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -51,6 +51,8 @@ If your hips or shoulders are stiff, your back will compensate by moving - and t
 {%include summarize-page.html src="/shoulder-pain"%}
 
 ### The 5 Whys Applied to Back Pain
+
+The 5 Whys is the root-cause tool from the Correction of Errors process I use at work - it applies surprisingly well to back pain:
 
 {%include summarize-page.html src="/coe"%}
 
