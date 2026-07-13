@@ -168,14 +168,24 @@ I get the logic. If you believe the Holy Spirit has been guiding the church sinc
 
 ## Appendix: Random Connections
 
+Where the two frictions above — pushiness and arbitrariness — come from:
+
 {%include summarize-page.html src="/religion" %}
+
+The other place I'm translating someone else's faith into language my engineer brain can use:
 
 {%include summarize-page.html src="/walking-with-god" %}
 
+My secular attempt at the thing theosis is for — purpose, transcendence, and coherence without the church:
+
 {%include summarize-page.html src="/spiritual-health" %}
+
+The daily-practice side of my framework — the closest thing I have to an ascetic discipline:
 
 {%include summarize-page.html src="/affirmations" %}
 
+<!--
 ## Appendix: What Appeals to Zach
 
-_This section is reserved for Zach — if he wants to add his perspective on what drew him to Greek Orthodoxy, this is his space._
+This section is reserved for Zach — if he wants to add his perspective on what drew him to Greek Orthodoxy, this is his space.
+-->

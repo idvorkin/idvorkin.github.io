@@ -12,6 +12,7 @@ locale = "en-us"
 "NAEuBAJhe9qdU" = "NAEuBAJhe9qdU"  # Asciinema ID  
 "mis-hire" = "mis-hire"  # Common term in hiring
 "MoFo" = "MoFo"  # Slang term used intentionally
+"Fo" = "Fo"  # Token of MoFo (typos splits camelCase, so the MoFo entry alone doesn't cover it)
 "oter" = "oter"  # Part of YouTube ID 002oterS2Wg
 "vizualization" = "vizualization"  # In JS library
 "youre" = "youre"  # Intentional usage in TOC/headers

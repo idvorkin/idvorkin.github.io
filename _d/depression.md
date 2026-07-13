@@ -25,7 +25,7 @@ An excellent post on depression from [Dr Raph](https://whatilearnedsofar.com/the
 <!-- vim-markdown-toc-start -->
 
 - [Depression, Grief and Sadness](#depression-grief-and-sadness)
-- [Anxiety, Depression's cruel enforcer](#anxiety-depressions-cruel-enforcer)
+- [[Anxiety](/anxiety), Depression's cruel enforcer](#anxiety-depressions-cruel-enforcer)
 - [My own experiences with depression and anxiety](#my-own-experiences-with-depression-and-anxiety)
 - [My antidotes](#my-antidotes)
 - [Related notes I plan to write](#related-notes-i-plan-to-write)
@@ -37,7 +37,7 @@ An excellent post on depression from [Dr Raph](https://whatilearnedsofar.com/the
 
 ### Depression, Grief and Sadness
 
-It's a strange poverty of the English language, and indeed of many other languages, that we use this same word, depression, to describe how a kid feels when it rains on his birthday, and to describe how somebody feels the minute before they commit suicide.
+It's a strange poverty of the English language, and indeed of many other languages, that we use this same word, depression, to describe how a kid feels when it rains on his birthday, and to describe how somebody feels the minute before they commit suicide. At its most fatal, I think of suicide as a [brain attack](/suicide).
 
 Grief is explicitly reactive. If you have a loss and you feel incredibly unhappy, and then, six months later, you are still deeply sad, but you're functioning a little better, it's probably grief, and it will probably ultimately resolve itself in some measure. If you experience a catastrophic loss, and you feel terrible, and six months later you can barely function at all, then it's probably a depression that was triggered by the catastrophic circumstances. The trajectory tells us a great deal. People think of depression as being just sadness. It's much, much too much sadness, much too much grief at far too slight a cause.
 
@@ -69,6 +69,7 @@ I've tried lots of things, being consistent is hard, especially when you get dep
 - Crafting spells to banish [psychic shadows](/psychic-shadows)
 - Getting things done ([GTD](/gtd))
 - Fierce [Work life balance](/wlb)
+- Remembering the story isn't over yet: [bad news, maybe not](/maybe)
 
 {%include blob_image_float_right.html src="noun-depression.png" %}
 

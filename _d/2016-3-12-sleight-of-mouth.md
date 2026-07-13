@@ -46,7 +46,7 @@ From there you apply a series of questions/concepts (Page 318):
 10. Reality Strategy - How would you need to perceive the world for this belief to be true.
 11. Counter Example - Find an exception to the rule
 12. Hierarchy of Criteria - What criteria is more important than the one you are considering.
-13. Apply to Self - ??
+13. Apply to Self - Apply the belief's own judgment to the belief itself. "It's too expensive" - how expensive is it to keep holding this belief?
 14. Meta frame - What other belief about this belief could change or enrich the perception of this belief?
 
 {%include blob_image.html src="sleight-of-mouth.jpg" %}
@@ -165,8 +165,6 @@ Fiscally responsible, Frugal, stingy
 Friendly, Nice, Naive
 Big Imagination -> Telling Fairy Tales -> Lying
 
-#### One word reframing exercise
-
 #### Perceive from different model of world, by taking a second position
 
 Models of the world - Seek first to understand. Three perspectives
@@ -211,7 +209,7 @@ Failure -> Goal Setting, Planning, Execution
 - B and C come up with a metaphor for the critical element and B tells A.
   - Sample metaphors: Fantasy, Sports, War, Folks Tales, star trek.
 
-#### Punctuation and Punctuation
+#### Punctuation and Repunctuation
 
 - Framing is the punctuation of objective reality into our subjective reality.
 - See great examples from book that,that,is - with commas periods and question marks
@@ -230,30 +228,6 @@ Values - the reasons you get out of bed. Filter over which you see objective rea
 
 Value -> what we desire and want
 Criteria -> standard/evidence we use to make decisions.
-
-#### Chaining value and Criteria by
-
-#### Criteria Equivalence
-
-#### Chunking Down to Define
-
-#### Reality Strategies
-
-#### Reality Strategy Exercise
-
-#### Chunk up to identify and utilize
-
-#### Hierarchy of value and criteria
-
-#### Hierarchy of criteria technique
-
-### 5: Belief and Expectations
-
-### 6: Basic Structure of Beliefs
-
-### 7: Internal States and Natural Belief change
-
-### 8: Thought Viruses and meta structure of belief
 
 ### 9: Applying the patterns as a system.
 
@@ -274,8 +248,6 @@ Our experiences filter through these layers.
 However we blame stuff in the inverse triangle
 
 This is the fundamental attribution error. For ourselves we attribute fault to our environment, but to others we attribute to their identity.
-
-Question - what is identity vs our beliefs and values (good Q for Dr. Raph).
 
 ### Resources
 

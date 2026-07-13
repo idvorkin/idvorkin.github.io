@@ -44,7 +44,6 @@ _(BTW the order below is deliberate, it's the order of the voices I want to talk
 - **Ina** - my insecurity that I'm a failure, around when Carl gets sick
 - **Terrance** - my frustrations with my wife
 - **Frank** - my guilt I'm not doing enough as a father.
-- TBD: Add one for work anxiety, especially around calibrations
 
 On the topic of anxieties
 {%include summarize-page.html src="/anxiety" %}
