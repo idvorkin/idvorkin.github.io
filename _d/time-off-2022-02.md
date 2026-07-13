@@ -16,7 +16,8 @@ My top priorities:
 
 ## Moments
 
--
+- Doing magic for a spectator at a bar
+- The new coin trick coming together
 
 ## Success Stories
 
@@ -28,34 +29,36 @@ My top priorities:
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Moments](#moments)
+- [Success Stories](#success-stories)
 - [Top Learnings](#top-learnings)
 - [Relationships](#relationships)
-    - [Friends](#friends)
-    - [Tori](#tori)
-    - [Zach](#zach)
-    - [Amelia](#amelia)
+  - [Friends](#friends)
+  - [Tori](#tori)
+  - [Zach](#zach)
+  - [Amelia](#amelia)
 - [Identity Health](#identity-health)
-    - [Magic](#magic)
-    - [Biking](#biking)
-    - [Software for Balance](#software-for-balance)
-    - [Tech Guru](#tech-guru)
-        - [Shell + Enabling Environment + Python in VIM](#shell--enabling-environment--python-in-vim)
-        - [DENY LIST: Data Analysis - Pandas](#deny-list-data-analysis---pandas)
-        - [DENY LIST: Ranking Systems](#deny-list-ranking-systems)
+  - [Magic](#magic)
+  - [Biking](#biking)
+  - [Software for Balance](#software-for-balance)
+  - [Tech Guru](#tech-guru)
+    - [Shell + Enabling Environment + Python in VIM](#shell--enabling-environment--python-in-vim)
+    - [DENY LIST: Data Analysis - Pandas](#deny-list-data-analysis---pandas)
+    - [DENY LIST: Ranking Systems](#deny-list-ranking-systems)
 - [Cognitive Health](#cognitive-health)
-    - [7 Habits](#7-habits)
-    - [Blog posts](#blog-posts)
+  - [7 Habits](#7-habits)
+  - [Blog posts](#blog-posts)
 - [Emotional Health](#emotional-health)
-    - [Meditation](#meditation)
-    - [750 words/Gratefulness](#750-wordsgratefulness)
+  - [Meditation](#meditation)
+  - [750 words/Gratefulness](#750-wordsgratefulness)
 - [Physical Health](#physical-health)
-    - [Statistics](#statistics)
-    - [Diet](#diet)
-    - [Sleep](#sleep)
-    - [Energy](#energy)
+  - [Statistics](#statistics)
+  - [Diet](#diet)
+  - [Sleep](#sleep)
+  - [Energy](#energy)
 - [House and goods](#house-and-goods)
 - [Mental quicksand](#mental-quicksand)
-    - [Staycations aren't vacations](#staycations-arent-vacations)
+  - [Staycations aren't vacations](#staycations-arent-vacations)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -92,13 +95,8 @@ Private
 
 ### Magic
 
-- ☐ Practice Daily
-- ☐ Do a trick for a person #1
-- ☐ Do a trick for a person #2
-- ☐ Do a trick for a person #3
-- ☐ Do a trick for a person #4
-- ☐ Do a trick for a person #5
-- ☐ Do a trick for a person #6
+- ☑ Practice - spent 4 hours on magic, multiple days in a row
+- ☑ Do a trick for a person - did one for a spectator at a bar
 
 ### Biking
 
@@ -158,7 +156,6 @@ It's something that I'm over invested in, and need to put an upper bound on to l
 
 Weight Start: 225
 Weight End: 227
-Gym Days:
 
 ### Diet
 
@@ -166,7 +163,7 @@ Gym Days:
 
 ### Sleep
 
-- ☐ 5/7 week up at 4:30
+- ☐ 5/7 wake up at 4:30
 
 ### Energy
 
