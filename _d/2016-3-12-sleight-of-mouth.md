@@ -113,16 +113,15 @@ Criticism often said in the negative form "avoiding stress" instead of "feeling 
 
 To say this properly do the following exercise:
 
-If I don't want X, what is it I do want? Say that instead.
+If I don't want X, what is it that I _do_ want? Say that instead:
 
-It is.... -> I want to make sure ...
-Too expensive -> It to be affordable.
-Fear of failure -> Desire to succeed
-Unrealistic -> Concrete and achievable.
-Too much effort -> Easy and achievable
+- It is... → I want to make sure...
+- Too expensive → I want it to be affordable
+- Fear of failure → Desire to succeed
+- Unrealistic → Concrete and achievable
+- Too much effort → Easy and achievable
 
-Next, change criticism to How will you ..
-It is too expensive -> How will you ensure it's affordable?
+Then turn the criticism into a "how" question: "it's too expensive" → "how will you make sure it's affordable?"
 
 #### Helping critics become advisors.
 
@@ -138,23 +137,22 @@ Pro Tip, before going into what needs to be achieved, call out the things that a
 
 #### Pattern: Intention and Redefining
 
-Problem -> Outcome
-Failure -> Feedback
-Critics -> Advisors
+Two moves keep coming up, because they're the ones that reopen a closed conversation:
 
-Fundamental Reframes:
-**Intention:** Direct attention to the person's intent (desired outcome)
-**Redefining:**Change words that are similar, but slightly different, usually more positive.
+- Problem → Outcome
+- Failure → Feedback
+- Critics → Advisors
 
-When we convert the problem to the intention - we get back to the outcome frame and open a conversation.
+- **Intention:** direct attention to the person's intent — the desired outcome underneath the complaint.
+- **Redefining:** swap in words that are similar but slightly different, usually more positive.
 
-Customer says: I'm afraid that's too expensive.
-Sales Guy Thinks: _Need to understand the intention, take a few stabs at it_
-Sales Guy: Is it you think the item is overpriced, or are you concerned you can't afford it?
+Convert the problem into the intention and you're back in the outcome frame, with a conversation instead of a wall. Watch a good salesperson do it:
 
-Subtle meaning differences: Overpriced -> Unable to afford -> Expensive For Value
+- **Customer:** I'm afraid that's too expensive.
+- **Salesperson (thinking):** _need to understand the intention, take a few stabs at it._
+- **Salesperson:** Do you think the item is overpriced, or are you worried you can't afford it?
 
-How much pain are you in vs. How much discomfort do you feel?
+Those aren't the same worry — overpriced → unable to afford → expensive for the value are three different beliefs with three different answers. Same move as "how much _pain_ are you in?" versus "how much _discomfort_ do you feel?": the word sets the size of the thing.
 
 ### 2.1 One word reframes:
 
