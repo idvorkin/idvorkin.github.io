@@ -18,7 +18,7 @@ redirect_from:
 
 - Once the brain attack starts, it's no longer the person that you love, and that loves you, it's now the disease. I can guarantee you the deceased loved you with all their heart and if they were not having a brain attack, they would have understood the pain this caused you and not done it.
 
-- Once the brain attack starts, it's no longer the person that you love, and that loves you, it's now the disease. Suicide method, notes, remains - that's now just the disease.
+- Suicide method, notes, remains - that's now just the disease.
 
 - Just like heart attacks, suicide risk is hereditary, you have a predisposition that you need to take seriously.
 

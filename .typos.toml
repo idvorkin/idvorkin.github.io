@@ -16,6 +16,7 @@ extend-ignore-re = ['asin="[A-Za-z0-9;]+"']
 "mis-hire" = "mis-hire"  # Common term in hiring
 mis = "mis"  # Token of "mis-hire" (typos splits on the hyphen)
 "MoFo" = "MoFo"  # Slang term used intentionally
+"Fo" = "Fo"  # Token of MoFo (typos splits camelCase, so the MoFo entry alone doesn't cover it)
 "oter" = "oter"  # Part of YouTube ID 002oterS2Wg
 "vizualization" = "vizualization"  # In JS library
 "youre" = "youre"  # Intentional usage in TOC/headers
