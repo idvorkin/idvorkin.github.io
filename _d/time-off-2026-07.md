@@ -20,7 +20,7 @@ For context on why I take time off: [/time-off](/time-off).
 
 ## Why I'm taking this time off — ranked
 
-[When you sacrifice identity for consumption, you end up with neither](/produce-consume). So I wrote down what I'm actually here for, in order — and then the trip rearranged the list on me.
+I wrote down what I'm actually here for, in order — and then the trip rearranged the list on me.
 
 **What I expected:**
 
@@ -47,9 +47,11 @@ Ranking the trip made me ask the bigger version of the question: if that's the o
 
 **Over-invested — dial back.** _Technologist_, and honestly everything else, parked way below where they've been running. Not because the work doesn't matter — because it's the finished room, and I keep redecorating it instead of walking into the ones that aren't.
 
-## A learning to bring home
+## Daily review
 
-First one already banked: **meditation travels, and churches are the best place to do it.** Duck into whatever old cathedral the city is proud of, take a pew, and just sit — cool stone, tall ceilings, nothing asked of you. The room is built to slow you down; let it.
+**Vegetating is a trap.** [When you sacrifice identity for consumption, you end up with neither](/produce-consume) — it feels like rest, but it quietly starves the roles that make you _you_.
+
+**Meditation travels, and churches are the best place to do it.** Duck into whatever old cathedral the city is proud of, take a pew, and just sit — cool stone, tall ceilings, nothing asked of you. The room is built to slow you down; let it.
 
 ## How it's actually going
 
