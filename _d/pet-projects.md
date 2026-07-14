@@ -6,7 +6,7 @@ redirect_from:
   - /tinkering
 ---
 
-As an engineer, I love to build bespoke tools that solve my unique problems exactly the way I want them solved. The bonus? This is lets me learn new technologies (did you know my blog has multiplayer support?). Sometimes I even make a tool so I have something to learn from. And with AI, this list of projects and explorations has exploded! Note to self, when I want to veg out and just feed my social media addiction I should do some vibe coding on all of these.
+As an engineer, I love to build bespoke tools that solve my unique problems exactly the way I want them solved. The bonus? This lets me learn new technologies (did you know my blog has multiplayer support?). Sometimes I even make a tool so I have something to learn from. And with AI, this list of projects and explorations has exploded! Note to self, when I want to veg out and just feed my social media addiction I should do some vibe coding on all of these.
 
 <!-- MAINTENANCE INSTRUCTIONS FOR CLAUDE
 
@@ -41,6 +41,21 @@ GitHub orgs to check:
 
 {% include alert.html content='[Here is a beautiful landing page for my pet projects](/static/pet-projects.html)' style="info" %}
 
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc-start -->
+
+- [Self Reflection](#self-reflection)
+- [Personal Productivity Tools](#personal-productivity-tools)
+- [CLI Tools](#cli-tools)
+- [Computer Vision & Motion](#computer-vision--motion)
+- [Dev Tools & Infrastructure](#dev-tools--infrastructure)
+- [VIM & Editor Tools](#vim--editor-tools)
+- [Explainers](#explainers)
+- [Fun & Experiments](#fun--experiments)
+
+<!-- vim-markdown-toc-end -->
+<!-- prettier-ignore-end -->
+
 ## Self Reflection
 
 | Project                                                                        | Description                                                                                                                                      |
@@ -57,13 +72,13 @@ GitHub orgs to check:
 | [Breathing Shapes](https://igor-breathe.surge.sh/)                             | Visual breathing exercise guide with animated shapes. [<i class="fa fa-github"></i>](https://github.com/idvorkin/igor-breathe)                                                                             |
 | [Context Grabber](https://github.com/idvorkin/context-grabber)                 | iOS app that grabs HealthKit & location data as JSON for [Larry](/larry). Expo/React Native, 7-day charts, share sheet export. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber) |
 | [Humane Tracker](https://humane-tracker.surge.sh/)                             | Habit tracking across 5 wellness categories. Firebase-based with weekly views. [<i class="fa fa-github"></i>](https://github.com/idvorkin/humane-tracker-1)                                                |
-| [Gym Timer](https://idvorkin.github.io/igor-timer/)                            | Interval training timer PWA with presets, work/rest phases, and wake lock. [<i class="fa fa-github"></i>](https://github.com/idvorkin/igor-timer)                                                          |
-| [Tax Calculator](https://idvorkin.github.io/tax-calculator/)                   | Interactive tax bracket visualizer. [<i class="fa fa-github"></i>](https://github.com/idvorkin/tax-calculator)                                                                                             |
+| [Gym Timer](https://github.com/idvorkin/igor-timer)                            | Interval training timer PWA with presets, work/rest phases, and wake lock.                                                                                                                                 |
+| [Tax Calculator](https://github.com/idvorkin/tax-calculator)                   | Interactive tax bracket visualizer.                                                                                                                                                                        |
 | [Weight Analysis](https://weight-analysis.surge.sh/)                           | Jupyter notebook analyzing Apple Health weight data. Box plots, time series, interactive visualizations. [<i class="fa fa-github"></i>](https://github.com/idvorkin/jupyter)                               |
 | [OmniFocus CLI](https://github.com/idvorkin/omnifocus_cli)                     | Command-line interface for OmniFocus task management                                                                                                                                                       |
-| [MathFlash](https://idvorkin.github.io/mathflash/)                             | Math flashcard trainer for kids. [<i class="fa fa-github"></i>](https://github.com/idvorkin/mathflash)                                                                                                     |
-| [World Happiness Report](https://idvorkin.github.io/world-happiness-report/)   | Interactive data visualization of global happiness data. [<i class="fa fa-github"></i>](https://github.com/idvorkin/world-happiness-report)                                                                |
-| [Donut Profit Calculator](https://idvorkin.github.io/donut-profit-calculator/) | Calculate donut shop profitability. [<i class="fa fa-github"></i>](https://github.com/idvorkin/donut-profit-calculator)                                                                                    |
+| [MathFlash](https://github.com/idvorkin/mathflash)                             | Math flashcard trainer for kids.                                                                                                                                                                           |
+| [World Happiness Report](https://github.com/idvorkin/world-happiness-report)   | Interactive data visualization of global happiness data.                                                                                                                                                   |
+| [Donut Profit Calculator](https://github.com/idvorkin/donut-profit-calculator) | Calculate donut shop profitability.                                                                                                                                                                        |
 
 ## CLI Tools
 
@@ -107,7 +122,7 @@ GitHub orgs to check:
 | [Dotfiles](https://github.com/idvorkin/settings)                                       | VIM, TMUX, and shell configuration                      |
 | [Tech Diary](https://github.com/idvorkin/techdiary)                                    | Technical notes and learnings                           |
 
-## [Explainers](/explainers)
+## Explainers
 
 Interactive experiences that let you _do_ the thing, not just read about it — an antidote to [cognitive debt](/ai-native-vocab#cognitive-debt). See the [full explainers page](/explainers) for great examples, the AI workflow, and why this matters.
 

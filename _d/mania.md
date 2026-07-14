@@ -38,6 +38,8 @@ I've always described my hypomanic episode in a positive light (but that's a tra
 - [Breck's history of Bipolar](https://breckyunits.com/bipolarDisorder.html)
 - [Breck's Blog](https://breckyunits.com/bipolar.html)
 
+Bipolar's worst outcome is suicide. My model for that: a [brain attack](/suicide).
+
 ### The failure modes: Crash your car, spend all your money, have an affair.
 
 **Crash your car** - I hate driving, I'm either riding a bicycle, or as of 2023, or my car is [driving me](/tesla). Safe

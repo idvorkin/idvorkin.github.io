@@ -18,20 +18,22 @@ Emotionally healthy folks can let it go, empathize with others, and most importa
 
 I picked up, and also execute, these habits semi-randomly today. However, as I do with physical health, I'll try to build up a more deliberate system. If you're interested in building up your emotional intelligence, my "bible" for emotional health practices is currently [SIY](/search-inside-yourself). This is also a key [saw to be sharpened](/sharpen-the-saw).
 
+A warning before the practices: health in my head isn't health in reality. I learned that with physical health first, and I'm relearning it emotionally - see [Emotional Health In My Head](/fit-in-my-head).
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
 - [Active Practices](#active-practices)
-    - [Daily Stream of Consciousness Journaling](#daily-stream-of-consciousness-journaling)
-    - [Daily Gratefulness Journal](#daily-gratefulness-journal)
-    - [4:30 am wake up (psst - it's really physical health)](#430-am-wake-up-psst---its-really-physical-health)
-    - [Formal 20 minute breathing meditation](#formal-20-minute-breathing-meditation)
-    - [Box breathing](#box-breathing)
+  - [Daily Stream of Consciousness Journaling](#daily-stream-of-consciousness-journaling)
+  - [Daily Gratefulness Journal](#daily-gratefulness-journal)
+  - [4:30 am wake up (psst - it's really physical health)](#430-am-wake-up-psst---its-really-physical-health)
+  - [Formal 20 minute breathing meditation](#formal-20-minute-breathing-meditation)
+  - [Box breathing](#box-breathing)
 - [Future Practices](#future-practices)
-    - [Sublime States Training](#sublime-states-training)
-    - [Daily Reflective Journal](#daily-reflective-journal)
+  - [Sublime States Training](#sublime-states-training)
+  - [Daily Reflective Journal](#daily-reflective-journal)
 - [Inconsistent/Future practices](#inconsistentfuture-practices)
-    - [Discontinued Practices](#discontinued-practices)
+  - [Discontinued Practices](#discontinued-practices)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->

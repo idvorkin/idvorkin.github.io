@@ -11,27 +11,27 @@ redirect_from:
   - /pay
 ---
 
-Different companies use different compensation models. To compare models, use total compensation, not salary. The compensation models are arbitrary and complicated. For example, Amazon caps salary at 160K\$/yr and doesn't have bonuses. Google vests stocks monthly. Facebook bonuses have a company performance multiplier. At some companies, signing bonuses can be over 100% of salary!
+Different companies use different compensation models. To compare models, use total compensation, not salary. The compensation models are arbitrary and complicated. For example, in 2017, Amazon capped salary at 160K\$/yr and didn't have bonuses. Google vests stocks monthly. Facebook bonuses have a company performance multiplier. At some companies, signing bonuses can be over 100% of salary!
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
 - [Total Compensation - It gets complicated](#total-compensation---it-gets-complicated)
-    - [Initial Grant Models - By Company](#initial-grant-models---by-company)
-    - [Steady State Comp Approaches - Independent vs Total Comp](#steady-state-comp-approaches---independent-vs-total-comp)
-    - [Assumptions](#assumptions)
+  - [Initial Grant Models - By Company](#initial-grant-models---by-company)
+  - [Steady State Comp Approaches - Independent vs Total Comp](#steady-state-comp-approaches---independent-vs-total-comp)
+  - [Assumptions](#assumptions)
 - [FAQ](#faq)
-    - [Why do I feel so bad?](#why-do-i-feel-so-bad)
-    - [I compared salaries and now I feel awful](#i-compared-salaries-and-now-i-feel-awful)
-    - [Wow, I had no idea, how do I get a new high-paying job?](#wow-i-had-no-idea-how-do-i-get-a-new-high-paying-job)
-    - [Should you include stock appreciation in total compensation?](#should-you-include-stock-appreciation-in-total-compensation)
-    - [How do I translate job levels between companies?](#how-do-i-translate-job-levels-between-companies)
-    - [I read on the internet company Foo pays Bar. Is that true?](#i-read-on-the-internet-company-foo-pays-bar-is-that-true)
-    - [Is it fair that promotions pay at the bottom of the pay scale, and new hires tend to be at the top?](#is-it-fair-that-promotions-pay-at-the-bottom-of-the-pay-scale-and-new-hires-tend-to-be-at-the-top)
-    - [What is the four-year cliff?](#what-is-the-four-year-cliff)
-    - [Example of Four-Year Cliff at Meta](#example-of-four-year-cliff-at-meta)
-    - [Explanation](#explanation)
-    - [Should I negotiate?](#should-i-negotiate)
+  - [Why do I feel so bad?](#why-do-i-feel-so-bad)
+  - [I compared salaries and now I feel awful](#i-compared-salaries-and-now-i-feel-awful)
+  - [Wow, I had no idea, how do I get a new high-paying job?](#wow-i-had-no-idea-how-do-i-get-a-new-high-paying-job)
+  - [Should you include stock appreciation in total compensation?](#should-you-include-stock-appreciation-in-total-compensation)
+  - [How do I translate job levels between companies?](#how-do-i-translate-job-levels-between-companies)
+  - [I read on the internet company Foo pays Bar. Is that true?](#i-read-on-the-internet-company-foo-pays-bar-is-that-true)
+  - [Is it fair that promotions pay at the bottom of the pay scale, and new hires tend to be at the top?](#is-it-fair-that-promotions-pay-at-the-bottom-of-the-pay-scale-and-new-hires-tend-to-be-at-the-top)
+  - [What is the four-year cliff?](#what-is-the-four-year-cliff)
+  - [Example of Four-Year Cliff at Meta](#example-of-four-year-cliff-at-meta)
+  - [Explanation](#explanation)
+  - [Should I negotiate?](#should-i-negotiate)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->

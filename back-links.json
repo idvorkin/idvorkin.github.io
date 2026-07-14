@@ -100,6 +100,7 @@
         "/curated-feed": "/ai-feed",
         "/cv": "/covid",
         "/d/2015-11-18-Outsourcing": "/outsourcing",
+        "/d/resistance": "/resistance",
         "/dark-codebase": "/dark-factory",
         "/dark-factories": "/dark-factory",
         "/data-viz": "/viz",
@@ -278,7 +279,6 @@
         "/regret": "/regrets",
         "/remote": "/remote-work",
         "/remotework": "/remote-work",
-        "/resistance": "/d/resistance",
         "/responsible": "/be-proactive",
         "/retirement": "/retire",
         "/retiring": "/retire",
@@ -660,9 +660,9 @@
                 "/addiction",
                 "/blueprint",
                 "/d/habits",
-                "/d/resistance",
                 "/gap-year-igor",
                 "/insomnia",
+                "/resistance",
                 "/timeoff"
             ],
             "redirect_url": "",
@@ -691,7 +691,6 @@
                 "/act",
                 "/activation",
                 "/anxiety-management",
-                "/d/resistance",
                 "/happy",
                 "/hobby",
                 "/idle",
@@ -701,6 +700,7 @@
                 "/productive",
                 "/psychic-shadows",
                 "/psychic-weight",
+                "/resistance",
                 "/timeoff",
                 "/vibing",
                 "/walking-with-god"
@@ -1847,11 +1847,11 @@
             "markdown_path": "_posts/2015-11-02-books-that-defined-me.md",
             "outgoing_links": [
                 "/7-habits",
-                "/d/resistance",
                 "/essentialism",
                 "/getting-to-yes-with-yourself",
                 "/gtd",
                 "/humans-are-underrated",
+                "/resistance",
                 "/siy"
             ],
             "redirect_url": "",
@@ -1961,7 +1961,7 @@
                 "/produce-consume",
                 "/spiritual-health"
             ],
-            "last_modified": "2026-03-22T19:07:49-07:00",
+            "last_modified": "2026-07-08T22:25:24+02:00",
             "markdown_path": "_d/build-the-life-you-want.md",
             "outgoing_links": [
                 "/balance",
@@ -2024,7 +2024,9 @@
             "description": "A weekly summary of what changed on this blog and across my GitHub projects. Useful for returning readers who want to catch up on new content and updates.\n\n",
             "doc_size": 246000,
             "file_path": "_site/changelog.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/timeoff-2026-07"
+            ],
             "last_modified": "2026-07-07T15:13:25+02:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
@@ -2605,7 +2607,6 @@
             "incoming_links": [
                 "/act",
                 "/activation",
-                "/d/resistance",
                 "/energy-abundance",
                 "/four-healths",
                 "/hobby",
@@ -2617,9 +2618,11 @@
                 "/physical-health",
                 "/productive",
                 "/psychic-weight",
+                "/resistance",
                 "/sharpen-the-saw",
                 "/slow",
                 "/switch",
+                "/timeoff-2026-07",
                 "/walking-with-god"
             ],
             "last_modified": "2025-12-07T02:40:46+00:00",
@@ -2642,43 +2645,6 @@
             "redirect_url": "",
             "title": "Types of interviews ",
             "url": "/d/management_interviews"
-        },
-        "/d/resistance": {
-            "description": "Stop. Take an ice cold shower right now. You didn’t, did you? Trust me, even if you tried, you wouldn’t. Before you turned on the water, you’d have this irrational fear of stepping in and you wouldn’t do it. The force that stops you is the resistance. The resistance is the personification of the force that stops you from doing the important. The resistance lies, telling us things are hard when they are not. The resistance adds suffering when there is minimal pain and that confuses us, stopping us from doing things which give us the most value, joy and positive identity. The resistance is the enemy of progress.\n\n",
-            "doc_size": 21000,
-            "file_path": "_site/d/resistance.html",
-            "incoming_links": [
-                "/activation",
-                "/books-that-defined-me",
-                "/enemy",
-                "/energy",
-                "/energy-abundance",
-                "/fail",
-                "/frog",
-                "/gap-year",
-                "/gap-year-igor",
-                "/mental-pain",
-                "/parkinson",
-                "/productive",
-                "/psychic-shadows",
-                "/psychic-weight",
-                "/slow",
-                "/timeoff"
-            ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
-            "markdown_path": "_d/resistance.md",
-            "outgoing_links": [
-                "/addiction",
-                "/d/habits",
-                "/end-in-mind",
-                "/frog",
-                "/gtd",
-                "/magic",
-                "/mental-pain"
-            ],
-            "redirect_url": "",
-            "title": "Resistance: Why you can't make yourself take an ice cold shower",
-            "url": "/d/resistance"
         },
         "/d/where-have-all-the-bugs-gone": {
             "description": "I’ve been a software developer since 2001, and back then we used to have lots of bugs. Nowadays, it seems we don’t have bugs, and I’ve wondered why. Now we have tickets which we get from our systems running in production, but that’s quite different. What’s going on?\n\n",
@@ -2741,7 +2707,8 @@
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/on-being-mortal.md",
             "outgoing_links": [
-                "/last-year"
+                "/last-year",
+                "/suicide"
             ],
             "redirect_url": "",
             "title": "On being Mortal - Guess what? You're dying",
@@ -2831,11 +2798,13 @@
                 "/idle",
                 "/insecure",
                 "/insomnia",
+                "/maybe",
                 "/physical-health",
                 "/psychic-shadows",
                 "/psychic-weight",
                 "/shame",
                 "/siy",
+                "/suicide",
                 "/sustainable-work",
                 "/voices"
             ],
@@ -3067,12 +3036,12 @@
                 "/affirmations",
                 "/ai-journal",
                 "/content-audience",
-                "/d/resistance",
                 "/elder",
                 "/gap-year-igor",
                 "/planning",
                 "/productive",
                 "/raccoon-history",
+                "/resistance",
                 "/siy",
                 "/walking-with-god"
             ],
@@ -3104,8 +3073,8 @@
             "last_modified": "2023-12-30T11:50:51-08:00",
             "markdown_path": "_d/don-juan2.md",
             "outgoing_links": [
-                "/d/resistance",
-                "/pride"
+                "/pride",
+                "/resistance"
             ],
             "redirect_url": "",
             "title": "Four enemies",
@@ -3129,12 +3098,12 @@
             "markdown_path": "_d/energy.md",
             "outgoing_links": [
                 "/activation",
-                "/d/resistance",
                 "/joy",
                 "/mania",
                 "/mood",
                 "/operating-manual",
                 "/productive",
+                "/resistance",
                 "/sleep",
                 "/slow",
                 "/timeoff"
@@ -3156,9 +3125,9 @@
                 "/activation",
                 "/balance",
                 "/d/habits",
-                "/d/resistance",
                 "/energy",
                 "/operating-manual",
+                "/resistance",
                 "/strategy",
                 "/timeoff"
             ],
@@ -3307,7 +3276,7 @@
                 "/anxiety",
                 "/anxiety-management",
                 "/coe",
-                "/d/resistance"
+                "/resistance"
             ],
             "redirect_url": "",
             "title": "Failure is not an option, it is a necessity",
@@ -3446,7 +3415,6 @@
                 "/ai-operator",
                 "/anxiety-management",
                 "/be-proactive",
-                "/d/resistance",
                 "/first-things-first",
                 "/gtd",
                 "/idle",
@@ -3454,6 +3422,7 @@
                 "/parkinson",
                 "/productive",
                 "/psychic-weight",
+                "/resistance",
                 "/timeoff",
                 "/timeoff-2020-03"
             ],
@@ -3462,11 +3431,11 @@
             "outgoing_links": [
                 "/Immutable-Laws-Of-Hard",
                 "/be-proactive",
-                "/d/resistance",
                 "/essentialism",
                 "/eulogy",
                 "/first-things-first",
-                "/gtd"
+                "/gtd",
+                "/resistance"
             ],
             "redirect_url": "",
             "title": "Eat that frog",
@@ -3490,12 +3459,12 @@
             "markdown_path": "_d/gap-year.md",
             "outgoing_links": [
                 "/chapters",
-                "/d/resistance",
                 "/decisive",
                 "/gap-year-igor",
                 "/money",
                 "/partner-trouble",
                 "/physical-health",
+                "/resistance",
                 "/retire",
                 "/timeoff",
                 "/y24",
@@ -3530,7 +3499,6 @@
                 "/affirmations",
                 "/chapters",
                 "/chasing-daylight",
-                "/d/resistance",
                 "/death",
                 "/emotional-health",
                 "/end-in-mind",
@@ -3541,6 +3509,7 @@
                 "/physical-health",
                 "/produce-consume",
                 "/regrets",
+                "/resistance",
                 "/retire",
                 "/siy",
                 "/sleep",
@@ -3792,12 +3761,12 @@
                 "/4dx",
                 "/ai-feed",
                 "/books-that-defined-me",
-                "/d/resistance",
                 "/depression",
                 "/first-things-first",
                 "/frog",
                 "/parkinson",
-                "/psychic-weight"
+                "/psychic-weight",
+                "/resistance"
             ],
             "last_modified": "2025-12-07T02:46:00+00:00",
             "markdown_path": "_d/gtd.md",
@@ -3843,7 +3812,7 @@
                 "/timeoff-2025-08",
                 "/walking-with-god"
             ],
-            "last_modified": "2026-01-03T17:27:23+00:00",
+            "last_modified": "2026-07-12T07:31:09+02:00",
             "markdown_path": "_posts/2017-04-12-happy.md",
             "outgoing_links": [
                 "/addiction",
@@ -4506,12 +4475,12 @@
             "doc_size": 26000,
             "file_path": "_site/magic.html",
             "incoming_links": [
-                "/d/resistance",
                 "/eulogy",
                 "/hobby",
                 "/idle",
                 "/joy",
                 "/operating-manual",
+                "/resistance",
                 "/timeoff",
                 "/touching"
             ],
@@ -4624,6 +4593,7 @@
             "markdown_path": "_d/mania.md",
             "outgoing_links": [
                 "/emotional-health",
+                "/suicide",
                 "/tesla"
             ],
             "redirect_url": "",
@@ -4634,7 +4604,11 @@
             "description": "A farmer’s horse runs away. His neighbors console him: “What terrible luck!” The farmer shrugs, “Maybe.” The next day the horse returns, leading a herd of wild horses behind it — “What wonderful luck!” “Maybe.” His son tries to tame one, is thrown, and breaks his leg — “How awful!” “Maybe.” A week later the army marches through, conscripting every able-bodied young man for a war most won’t return from, and the son, with his broken leg, is passed over — “How wonderful!” “Maybe.” Good luck, bad luck — who knows? The story is never finished, so the farmer never renders the verdict. He just keeps living.\n\n",
             "doc_size": 17000,
             "file_path": "_site/maybe.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/depression",
+                "/mental-pain",
+                "/timeoff-2026-07"
+            ],
             "last_modified": "2026-07-06T23:30:18-07:00",
             "markdown_path": "_d/maybe.md",
             "outgoing_links": [
@@ -4658,7 +4632,6 @@
                 "/anger",
                 "/anxiety-management",
                 "/curious",
-                "/d/resistance",
                 "/happy",
                 "/idle",
                 "/mind-monsters",
@@ -4666,6 +4639,7 @@
                 "/psychic-shadows",
                 "/psychic-weight",
                 "/regrets",
+                "/resistance",
                 "/shame",
                 "/timeoff-2020-12",
                 "/walking-with-god",
@@ -4677,12 +4651,13 @@
             "markdown_path": "_d/mental-pain.md",
             "outgoing_links": [
                 "/addiction",
-                "/d/resistance",
                 "/depression",
                 "/frog",
                 "/lonely",
+                "/maybe",
                 "/physical-pain",
-                "/pride"
+                "/pride",
+                "/resistance"
             ],
             "redirect_url": "",
             "title": "The thoughts that pain us",
@@ -5254,13 +5229,13 @@
             "markdown_path": "_d/resource-paradox.md",
             "outgoing_links": [
                 "/amazon",
-                "/d/resistance",
                 "/dip",
                 "/essentialism",
                 "/frog",
                 "/goals",
                 "/gtd",
                 "/money",
+                "/resistance",
                 "/timeoff"
             ],
             "redirect_url": "",
@@ -5365,7 +5340,7 @@
                 "/shoulder-pain",
                 "/y25"
             ],
-            "last_modified": "2026-01-25T18:27:37+00:00",
+            "last_modified": "2026-07-12T08:48:30+02:00",
             "markdown_path": "_d/physical-pain.md",
             "outgoing_links": [
                 "/back-pain",
@@ -5507,7 +5482,7 @@
                 "/slow",
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-07-07T02:18:48-07:00",
+            "last_modified": "2026-07-12T08:45:26+02:00",
             "markdown_path": "_d/produce-consume.md",
             "outgoing_links": [
                 "/activation",
@@ -5551,11 +5526,11 @@
                 "/anxiety",
                 "/balance",
                 "/d/habits",
-                "/d/resistance",
                 "/end-in-mind",
                 "/energy",
                 "/frog",
                 "/negotiate",
+                "/resistance",
                 "/switch"
             ],
             "redirect_url": "",
@@ -5597,10 +5572,10 @@
             "outgoing_links": [
                 "/addiction",
                 "/anxiety-management",
-                "/d/resistance",
                 "/mental-pain",
                 "/mind-monsters",
                 "/psychic-weight",
+                "/resistance",
                 "/todo_enjoy"
             ],
             "redirect_url": "",
@@ -5626,7 +5601,6 @@
                 "/addiction",
                 "/curious",
                 "/d/habits",
-                "/d/resistance",
                 "/death",
                 "/frog",
                 "/gtd",
@@ -5635,6 +5609,7 @@
                 "/mind-monsters",
                 "/pride",
                 "/psychic-shadows",
+                "/resistance",
                 "/shame",
                 "/siy"
             ],
@@ -5823,6 +5798,43 @@
             "redirect_url": "",
             "title": "Remote Work",
             "url": "/remote-work"
+        },
+        "/resistance": {
+            "description": "Stop. Take an ice cold shower right now. You didn’t, did you? Trust me, even if you tried, you wouldn’t. Before you turned on the water, you’d have this irrational fear of stepping in and you wouldn’t do it. The force that stops you is the resistance. The resistance is the personification of the force that stops you from doing the important. The resistance lies, telling us things are hard when they are not. The resistance adds suffering when there is minimal pain and that confuses us, stopping us from doing things which give us the most value, joy and positive identity. The resistance is the enemy of progress.\n\n",
+            "doc_size": 20000,
+            "file_path": "_site/resistance.html",
+            "incoming_links": [
+                "/activation",
+                "/books-that-defined-me",
+                "/enemy",
+                "/energy",
+                "/energy-abundance",
+                "/fail",
+                "/frog",
+                "/gap-year",
+                "/gap-year-igor",
+                "/mental-pain",
+                "/parkinson",
+                "/productive",
+                "/psychic-shadows",
+                "/psychic-weight",
+                "/slow",
+                "/timeoff"
+            ],
+            "last_modified": "2024-10-05T21:35:59-07:00",
+            "markdown_path": "_d/resistance.md",
+            "outgoing_links": [
+                "/addiction",
+                "/d/habits",
+                "/end-in-mind",
+                "/frog",
+                "/gtd",
+                "/magic",
+                "/mental-pain"
+            ],
+            "redirect_url": "",
+            "title": "Resistance: Why you can't make yourself take an ice cold shower",
+            "url": "/resistance"
         },
         "/retire": {
             "description": "When we ponder retirement - we’re masters at planning our exit, but surprisingly vague about what happens after. We’re so focused on what we’re retiring from rather than what we’re retiring to. The real goal isn’t the escape itself - it’s creating a life of genuine freedom, growth, and meaning on the other side. And here’s the plot twist - much of this post isn’t about retirement at all. It’s about what to do while you’re still working.\n\n",
@@ -6156,7 +6168,7 @@
         },
         "/sleight-of-mouth": {
             "description": "Language, often unknown to us, creates our mental models, our reality, and defines our meaning. But the model is not the terrain, and by engaging with the language we can change mental models. Sleight of mouth (SoM) is a series of techniques for changing our models, reality and meanings and thus our experiences. Our mental models are a frame, and we need help going from a ‘problem frame’ to a ‘desired outcome frame’ , a ‘failure frame’, to a ‘feedback frame’ and an ‘impossible frame ‘ to an ‘as if’ frame. To experience the power of language, find anything that is invisible to you, and name it. Now as you’ve given it a name, see how you perceive it, and become aware of it.\n\n",
-            "doc_size": 26000,
+            "doc_size": 25000,
             "file_path": "_site/sleight-of-mouth.html",
             "incoming_links": [
                 "/7h-concepts",
@@ -6189,10 +6201,10 @@
                 "/anxiety",
                 "/balance",
                 "/d/habits",
-                "/d/resistance",
                 "/emotions",
                 "/energy",
                 "/produce-consume",
+                "/resistance",
                 "/siy"
             ],
             "redirect_url": "",
@@ -6365,7 +6377,7 @@
             "url": "/structure"
         },
         "/sublime": {
-            "description": "Emotional health is pretty important. Western folks don’t have a lot of words to support this. Luckily, the Buddhists have the sublime states: Loving-kindness, Compassion, Altruistic Joy, and Equanimity. Give ‘em a try. Most of this post is based on “The Joy of Happiness”.\n\n",
+            "description": "Emotional health is pretty important. Western folks don’t have a lot of words to support this. Luckily, the Buddhists have the sublime states: Loving-kindness, Compassion, Altruistic Joy, and Equanimity. Give ‘em a try. Most of this post is based on “Joy on Demand”.\n\n",
             "doc_size": 19000,
             "file_path": "_site/sublime.html",
             "incoming_links": [
@@ -6392,7 +6404,11 @@
             "description": "“Igor, what advice would you give a 20-year-old that just found out their dad killed themselves?” Sadly, when I was 20, I got a call from a family friend saying “Igor, you want to sit down, this isn’t going to be fun to hear.” My dad had taken his own life.\n\n",
             "doc_size": 15000,
             "file_path": "_site/suicide.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/death",
+                "/depression",
+                "/mania"
+            ],
             "last_modified": "2024-11-09T06:51:11-08:00",
             "markdown_path": "_d/suicide.md",
             "outgoing_links": [],
@@ -6946,7 +6962,7 @@
         },
         "/timeoff": {
             "description": "Time off is critical, it’s how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with turning your 1 week off into an action-packed tour of Disneyland. But, there are other kinds of time off that we’ll discuss too. Like most things, time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!\n\n",
-            "doc_size": 47000,
+            "doc_size": 49000,
             "file_path": "_site/timeoff.html",
             "incoming_links": [
                 "/activation",
@@ -6975,12 +6991,11 @@
                 "/timeoff-2025-08",
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-07-07T04:37:10-07:00",
+            "last_modified": "2026-07-12T09:31:23+02:00",
             "markdown_path": "_d/time_off.md",
             "outgoing_links": [
                 "/addiction",
                 "/balloon",
-                "/d/resistance",
                 "/diet",
                 "/energy",
                 "/essentialism",
@@ -6995,6 +7010,7 @@
                 "/mind-at-work",
                 "/packing",
                 "/parkinson",
+                "/resistance",
                 "/siy",
                 "/timeoff-2020-03",
                 "/timeoff-2024-02",
@@ -7280,7 +7296,7 @@
         },
         "/timeoff-2026-07": {
             "description": "22 days, 5 countries, 4 Dvorkins, one whirlwind tour. From Reykjavík to Amsterdam by way of Stockholm, Oslo, and the Norwegian fjords. This is the first time we’ve attempted a trip of this scope as a family — the kids are 16 and 12, both still home, and the window for “all four of us on the road together” closes faster than I’d like.\n\n",
-            "doc_size": 27000,
+            "doc_size": 29000,
             "file_path": "_site/timeoff-2026-07.html",
             "incoming_links": [
                 "/ai-policy",
@@ -7288,17 +7304,20 @@
                 "/timeoff",
                 "/y26"
             ],
-            "last_modified": "2026-07-07T04:13:34-07:00",
+            "last_modified": "2026-07-12T09:32:13+02:00",
             "markdown_path": "_d/time-off-2026-07.md",
             "outgoing_links": [
                 "/act",
                 "/ai-policy",
                 "/awareness",
                 "/be-proactive",
+                "/changelog",
+                "/d/habits",
                 "/eulogy",
                 "/four-healths",
                 "/joy",
                 "/life-journal",
+                "/maybe",
                 "/meta",
                 "/mind-at-work",
                 "/packing",

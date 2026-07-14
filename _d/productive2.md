@@ -6,27 +6,24 @@ redirect_from:
   - /productivity
 ---
 
-At the core of balance, energy, wlb, habits is being productive.
+At the core of balance, energy, work-life balance, and habits is being productive. This page is my hub for productivity - the concepts that fuel it, and the kryptonite that kills it. Most of the ideas are big enough to get their own posts, so treat this as a map with links.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
 - [Concepts](#concepts)
-    - [The fuel of productivity, is energy.](#the-fuel-of-productivity-is-energy)
-    - [Match task to energy](#match-task-to-energy)
-    - [Stay balanced](#stay-balanced)
-    - [Shape the path, leverage habits](#shape-the-path-leverage-habits)
-    - [Drip, Drip, Drip - it adds up](#drip-drip-drip---it-adds-up)
-    - [Motivation](#motivation)
-    - [Realistic Expectations](#realistic-expectations)
-    - [Flow](#flow)
+  - [The fuel of productivity, is energy.](#the-fuel-of-productivity-is-energy)
+  - [Match task to energy](#match-task-to-energy)
+  - [Stay balanced](#stay-balanced)
+  - [Shape the path, leverage habits](#shape-the-path-leverage-habits)
+  - [Motivation](#motivation)
 - [Related Positive notes](#related-positive-notes)
 - [Productivity's Kryptonite](#productivitys-kryptonite)
-    - [The Resistance](#the-resistance)
-    - [Anxiety/Fear](#anxietyfear)
-    - [Addictions](#addictions)
-    - [Procrastination](#procrastination)
-    - [Sayings](#sayings)
+  - [The Resistance](#the-resistance)
+  - [Anxiety/Fear](#anxietyfear)
+  - [Addictions](#addictions)
+  - [Procrastination](#procrastination)
+  - [Sayings](#sayings)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -49,19 +46,13 @@ No point spending "my high energy/willpower time" on a low energy activity. It's
 
 {%include summarize-page.html src="/switch" %}
 
-### Drip, Drip, Drip - it adds up
-
 ### Motivation
 
 [Momentum is emotional gravity](/energy#momentum-is-emotional-gravity). The feeling of shipping, completing, moving forward—it compounds. When you're making progress, everything feels lighter. When you're stuck, everything feels heavier than it is. Forward motion creates its own fuel.
 
-### Realistic Expectations
-
-### Flow
-
 ## Related Positive notes
 
-- [Getting things done](/gty) - A system for productivity
+- [Getting things done](/gtd) - A system for productivity
 - [First things first](/7h-c2)
 - [Habits](/habits)
 

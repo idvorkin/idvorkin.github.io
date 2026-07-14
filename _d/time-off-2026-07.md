@@ -55,7 +55,7 @@ First one already banked: **meditation travels, and churches are the best place 
 
 ### 🇮🇸 Reykjavík
 
-The pools are the whole thing. You start in an 8°C cold plunge — the kind that empties your head — then climb through 40, 42, 44, one of the hot ones fed by a pipe running straight in from the ocean. Sauna with all four of us. One morning I banked a full 5am kettlebell session before anyone woke up — drove to the gym and finished with about six minutes to spare before the rain moved in. The keystone held. Sauna again after. We stayed in a hostel with a shared kitchen, and the best night was cooking dinner next to strangers and trading stories across the table.
+The pools are the whole thing. You start in an 8°C cold plunge — the kind that empties your head — then climb through 40, 42, 44, one of the hot ones fed by a pipe running straight in from the ocean. Sauna with all four of us. One morning I banked a full 5am kettlebell session before anyone woke up. It was already pouring at 5, so instead of the five-minute walk I took the rental Tesla to the gym — felt a little lame driving something that short, but I made it happen. The keystone held. Sauna at 7. We stayed in a hostel with a shared kitchen, and the best night was cooking dinner next to strangers and trading stories across the table.
 
 Two things stuck with me about Iceland. Family is clearly the whole priority — a trampoline in every yard, kids everywhere. And nobody eats out; there are barely any restaurants, so everyone eats in.
 
@@ -70,6 +70,18 @@ Amelia did the zoo solo and out-prepared me — when my phone died she handed me
 We saw the Vasa, the warship that capsized in the harbor on its maiden voyage and got raised mostly intact three centuries later. Zach went on a tear at dinner: frog legs, ratatouille, escargot.
 
 Sunday we ducked into a Greek Orthodox church, and Zach got a blessing from the visiting bishop. I nearly got thrown out of the same church for doing magic in the pews. Standing there getting chewed out, I hit a Viktor Frankl beat — between what happens to you and how you respond there's a gap, and no one can take away the freedom inside it. Two wins: I caught my fight-or-flight reaction multiple times and breathed through it instead of firing back, and I got some work in on my memorization practice. [Proactive](/be-proactive), not reactive — I [chose the response](/act).
+
+### 🚂 The train to Oslo
+
+Confession: on the six-hour train from Stockholm to Oslo I went on a bit of a tech bender. The kids watched TV; I sat there and banged out the whole trip site — the city deep-dives, the maps, the war pack, all of it — and logged the blitz in my [changelog](/changelog#week-of-2026-07-06). Six hours of what I'd call super blogging time, and honestly I quite enjoyed it. At least it was [building, not scrolling](/produce-consume#the-production-advantage).
+
+### 🤔 Unexpected realizations
+
+Before the trip I moved my social apps onto my [work phone](/maybe#the-second-phone) — but LinkedIn stayed on my main phone the whole way. And all trip my thumb kept opening it on autopilot. Why do I keep checking that? What do I think I'm going to find? It was right there, so I kept finding it.
+
+Tonight I finally locked it out. The funny part: going through the motions to block it, I somehow ended up at the LinkedIn login page anyway — like the habit walked me there on its own. Kind of weird to watch myself do it.
+
+It's got me curious about the [habit loop](/habits#habit-model) — cue, craving, response, reward. Now the app's gone and the reward with it, so which part keeps pulling the trigger? I don't have the answer yet. I want to sit with that one.
 
 ## At a Glance
 

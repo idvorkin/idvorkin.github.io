@@ -19,19 +19,9 @@ redirect_from:
 
 {% include youtube.html src="3GJLfHj9lfE?start=122" %}
 
----
-
-Hopefully all this talk about pride prepared you for the thing I want you to know:
-
----
-
-**Decisions are hard "period"** Add pride to the mix, and the odds that you'll make the right decision drops to near zero. If you're mixing pride and decisions read [decisive](/decisive).
-
----
+Hopefully all this talk about pride prepared you for the thing I want you to know: **decisions are hard, "period."** Add pride to the mix, and the odds that you'll make the right decision drops to near zero. If you're mixing pride and decisions read [decisive](/decisive).
 
 To help me remember places where pride has fucked with me, I'll write out some of my experiences. The names below are changed to protect the innocent.
-
----
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -68,13 +58,11 @@ _Side Bar 1: It's easy to be wrong on A) your principles, and B) your assessment
 
 **Antidote:** Ask yourself if your pride about being right exceeds your need to be effective. Don't lie, don't compromise your ethics or responsibilities, but be flexible in what you accept. You'll often find there's a solution where you can be effective and right.
 
-Example: TBD.
-
 _Important Side Bar: Being effective often requires negotiation. The bible for negotiation is [Getting to Yes](https://www.google.com/search?q=getting+to+yes) which I highly recommend._
 
 #### Feeling life isn't fair because something shitty happened to me
 
-**Antidote:** Remember, the only fair thing in life is that it is completely unfair. Compare your "life is unfair" narrative to folks with bigger problems. Getting a fast acting random cancer, beating it, and getting it again ([founder of apple](https://en.wikipedia.org/wiki/Steve_Jobs#Death)), freak accidents ( [Super Man Actor](https://en.wikipedia.org/wiki/Christopher_Reeve) ) and crippling diseases ([Smartest guy on earth](http://www.hawking.org.uk/)). Even better - if you're a parent imagine any of those things happening to your kids. Yeah, maybe be glad something worse didn't happen.
+**Antidote:** Remember, the only fair thing in life is that it is completely unfair. Compare your "life is unfair" narrative to folks with bigger problems. Getting a fast acting random cancer, beating it, and getting it again ([founder of apple](https://en.wikipedia.org/wiki/Steve_Jobs#Death)), freak accidents ( [Super Man Actor](https://en.wikipedia.org/wiki/Christopher_Reeve) ) and crippling diseases ([Smartest guy on earth](https://en.wikipedia.org/wiki/Stephen_Hawking)). Even better - if you're a parent imagine any of those things happening to your kids. Yeah, maybe be glad something worse didn't happen.
 
 _Important Side Bar: Don't let "life being unfair" be an excuse to avoid learning or skirt responsibility. Each challenge we get is a precious learning opportunity - make this most of it._
 
@@ -96,5 +84,3 @@ To be dramatic, I'm using the word pride as an alternative to arrogance and hubr
 Pride is a usually a justified positive judgment over an accomplishment relative to our ability. "E.g. Did I learn to read when I really struggle reading?".
 
 Arrogance and hubris, are an assessment of self, often manifesting as entitlement, which is 1) feeling you are cosmically unique or 2) that you should have a positive outcome exceeding your effort or value.
-
--->

@@ -14,7 +14,7 @@ Long ago, I learned I should pre-write these, but I decided (implicitly, by not 
 This time off was probably easier than others as I got many environmental boosts to my inner peace:
 
 - Work has been going great, and I only needed 1 hour to "disconnect from work". I'm actually excited to get back to work and dig into stuff, but I wrote it in a document and will pick it up when I'm back at work.
-- Money Troubles have been great - stock market is through the roof, with Meta and MSFT at all-time highs!
+- No money troubles - stock market is through the roof, with Meta and MSFT at all-time highs!
 - Health has been great, diet and exercise are dialed in.
 
 My top priorities:
@@ -45,36 +45,37 @@ My top priorities:
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Moments](#moments)
+- [Success Stories](#success-stories)
 - [Top Learnings](#top-learnings)
 - [Relationships](#relationships)
-    - [Friends](#friends)
-    - [Tori](#tori)
-    - [Zach](#zach)
-    - [Amelia](#amelia)
+  - [Friends](#friends)
+  - [Tori](#tori)
+  - [Zach](#zach)
+  - [Amelia](#amelia)
 - [Identity Health](#identity-health)
-    - [Magic](#magic)
-    - [Biking](#biking)
-    - [Tech Guru](#tech-guru)
-        - [Shell + Enabling Environment + Python in VIM](#shell--enabling-environment--python-in-vim)
+  - [Magic](#magic)
+  - [Tech Guru](#tech-guru)
+    - [Shell + Enabling Environment + Python in VIM](#shell--enabling-environment--python-in-vim)
 - [Cognitive Health](#cognitive-health)
-    - [Meditation](#meditation)
-    - [750 words/Gratefulness](#750-wordsgratefulness)
+  - [Meditation](#meditation)
+  - [750 words/Gratefulness](#750-wordsgratefulness)
 - [Physical Health](#physical-health)
-    - [Statistics](#statistics)
-    - [Diet](#diet)
-    - [Sleep](#sleep)
-    - [Energy](#energy)
+  - [Statistics](#statistics)
+  - [Diet](#diet)
+  - [Sleep](#sleep)
+  - [Energy](#energy)
 - [House and goods](#house-and-goods)
 - [Mental quicksand](#mental-quicksand)
-    - [Got grumpy about some stuff](#got-grumpy-about-some-stuff)
-    - [Angry that wasting my vacation, and sacred time with family](#angry-that-wasting-my-vacation-and-sacred-time-with-family)
+  - [Got grumpy about some stuff](#got-grumpy-about-some-stuff)
+  - [Angry that wasting my vacation, and sacred time with family](#angry-that-wasting-my-vacation-and-sacred-time-with-family)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Top Learnings
 
-_This is less new learnings, and more recounts to existing knowledge_
+_This is less new learnings, and more a recounting of existing knowledge_
 
 - It really is easier to divide and conquer the family
 - Going to Vancouver when [Toni](/tesla) is driving is trivial
@@ -112,7 +113,6 @@ Private, but we made time to go on a mini-vacation (WOW)! I'll keep it mostly se
 
 - See the [Yellow Deli](/yellow-deli)
 - Did spontaneous musical improv, then took light rail far away and walked home at night, pretty cool.
-- Did spontaneous improv, then took light rail far away and walked home at night, pretty cool.
 
 {% include summarize-page.html src="/yellow-deli" %}
 
@@ -132,12 +132,6 @@ Private, but we made time to go on a mini-vacation (WOW)! I'll keep it mostly se
 - Server at the Yellow Deli (the thing he wished for was "Grace")
 - Did magic for folks that had their deck standing in front of the Yellow Deli
 - Zach nudged me to do magic!
-
-### Biking
-
-- ☐ Re-inflate my folding bike tires
-- ☐ Put my big bike back out front
-- ☐ Get lock for Brompton
 
 ### Tech Guru
 
