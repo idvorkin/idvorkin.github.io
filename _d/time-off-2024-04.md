@@ -11,14 +11,14 @@ It's spring break 2024 and I've got a week off. The last few weeks have been a b
 
 I kind of miss doing lots of technical and blogging - so I'm looking forward to both of those.
 
-I've got several headwinds going into this break:
+I've got several tailwinds going into this break:
 
-- Money Troubles have been great - stock market is through the roof, with Meta and MSFT at all-time highs!
+- No money troubles - stock market is through the roof, with Meta and MSFT at all-time highs!
 - Health has been great, diet, and exercise are dialed in.
 - Even though I had three intense weeks at work, my co-workers are amazing, and everything is good.
 - My "Dealer of Smiles and Wonder" Persona has re-emerged from Hibernation
 
-All coins have two sides so Tailwinds as well:
+All coins have two sides so headwinds as well:
 
 - Weather is cool and rainy
 - Tori is working
@@ -34,7 +34,7 @@ My top priorities:
 - Another Trip to the Yellow Deli
 - Did the waterslide with Zach
 - Saw the Harrison Hot Springs
-- My swings are getting to heavier and feeling good doing it
+- My swings are getting heavier and I'm feeling good doing it
 
 ## Success Stories
 
@@ -44,27 +44,26 @@ My top priorities:
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Moments](#moments)
+- [Success Stories](#success-stories)
 - [Top Learnings](#top-learnings)
 - [Relationships](#relationships)
-    - [Friends](#friends)
-    - [Tori](#tori)
-    - [Zach](#zach)
-    - [Amelia](#amelia)
+  - [Friends](#friends)
+  - [Zach](#zach)
 - [Identity Health](#identity-health)
-    - [Magic](#magic)
-    - [Biking](#biking)
-    - [Tech Guru](#tech-guru)
-        - [Shell + Enabling Environment + Python in VIM](#shell--enabling-environment--python-in-vim)
+  - [Magic](#magic)
+  - [Biking](#biking)
+  - [Tech Guru](#tech-guru)
+    - [Shell + Enabling Environment + Python in VIM](#shell--enabling-environment--python-in-vim)
 - [Cognitive Health](#cognitive-health)
-    - [Meditation](#meditation)
-    - [750 words/Gratefulness](#750-wordsgratefulness)
+  - [Meditation](#meditation)
+  - [750 words/Gratefulness](#750-wordsgratefulness)
 - [Physical Health](#physical-health)
-    - [Statistics](#statistics)
-    - [Diet](#diet)
-    - [Sleep](#sleep)
-    - [Energy](#energy)
+  - [Statistics](#statistics)
+  - [Diet](#diet)
+  - [Sleep](#sleep)
+  - [Energy](#energy)
 - [House and goods](#house-and-goods)
-- [Mental quicksand](#mental-quicksand)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -85,15 +84,9 @@ New Learnings
 
 - ☑ Walk with Bob
 
-### Tori
-
 ### Zach
 
-- ☐ Take him somewhere to go for a bike ride on the car
-
-### Amelia
-
-- ☐ Take her somewhere to go for a bike ride on the car
+- Did the waterslide together
 
 ## Identity Health
 
@@ -135,7 +128,7 @@ New Learnings
 - ☐ Write up most valuable stuff you can do as a senior eng
 - ☐ Write up "Sustainable Work"
 - ☐ Do TikTok on the variants of "See Something/Say Something"
-- ☑ Met a neat guy who also blogs, does tech, and bi-polor. Scary story about his [bipolar getting out of control](https://breckyunits.com/a-manic-startup.html).
+- ☑ Met a neat guy who also blogs, does tech, and is bipolar. Scary story about his [bipolar getting out of control](https://breckyunits.com/a-manic-startup.html).
 
 ### Meditation
 
@@ -178,5 +171,3 @@ Gym Days:
 - ☐ Fix Hot tub
 - Stocks are way up so feeling very financially secure (though security should come from production capacity, not the current assets)
 - Basically own everything I want
-
-## Mental quicksand
