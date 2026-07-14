@@ -10,17 +10,13 @@ redirect_from:
 
 22 days, 5 countries, 4 Dvorkins, one whirlwind tour. From Reykjavík to Amsterdam by way of Stockholm, Oslo, and the Norwegian fjords. This is the first time we've attempted a trip of this scope as a family — the kids are 16 and 12, both still home, and the window for "all four of us on the road together" closes faster than I'd like.
 
-> When you sacrifice identity for consumption, you end up with neither.
-
-The whole trap of time off in one sentence — vegetating _feels_ like rest, but it quietly starves the roles that make you _you_.
-
 > 🗺️ **Trip map & city guide:** [Scandinavian Whirlwind 2026 →](https://idvorkin-ai-tools.github.io/scandinavia-2026/) — one page per stop (Iceland → Copenhagen → Stockholm → Oslo → fjords → Amsterdam), with things to do, hours, and a live weather table.
 
 For context on why I take time off: [/time-off](/time-off).
 
 ## Why I'm taking this time off — ranked
 
-[When you sacrifice identity for consumption, you end up with neither](/produce-consume). So I wrote down what I'm actually here for, in order — and then the trip rearranged the list on me.
+I wrote down what I'm actually here for, in order — and then the trip rearranged the list on me.
 
 **What I expected:**
 
@@ -36,20 +32,6 @@ For context on why I take time off: [/time-off](/time-off).
 5. **The jovial me came back** — to my genuine and thrilled surprise, the itch to do balloons, magic, and just _be_ fun came roaring back.
 
 4 and 5 are the interesting ones, and they're linked: the one real sacrifice I've made to AI is that the [Dealer of Smiles and Wonder](/joy) just stopped showing up. Out here, with the screens quiet, he walked right back in — the guy underneath was someone I'd been missing.
-
-## Re-stacking the roles
-
-Ranking the trip made me ask the bigger version of the question: if that's the order for 22 days, what's the stack for every day? So I re-sorted the roles into three honest tiers.
-
-**Non-negotiables — protect first, daily.** The two foundational [Healths](/four-healths): _Physical_, banked before the family wakes up, and _Emotional_ — awareness and compassion, handled as it happens. Everything else is built on these.
-
-**Frequently starved — feed these.** _Father / Husband_, and the _Joy Giver_ — the balloons-and-magic guy from [the eulogy](/eulogy). The roles I'd grieve losing, and the exact ones I let go hungry when work gets loud. The trip already proved the Joy Giver comes roaring back the moment I stop starving him.
-
-**Over-invested — dial back.** _Technologist_, and honestly everything else, parked way below where they've been running. Not because the work doesn't matter — because it's the finished room, and I keep redecorating it instead of walking into the ones that aren't.
-
-## A learning to bring home
-
-First one already banked: **meditation travels, and churches are the best place to do it.** Duck into whatever old cathedral the city is proud of, take a pew, and just sit — cool stone, tall ceilings, nothing asked of you. The room is built to slow you down; let it.
 
 ## How it's actually going
 
