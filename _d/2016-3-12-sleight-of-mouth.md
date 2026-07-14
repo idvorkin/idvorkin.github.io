@@ -11,6 +11,10 @@ redirect_from:
 
 Language, often unknown to us, creates our mental models, our reality, and defines our meaning. But the model is not the terrain, and by engaging with the language we can change mental models. Sleight of mouth (SoM) is a series of techniques for changing our models, reality and meanings and thus our experiences. Our mental models are a frame, and we need help going from a 'problem frame' to a 'desired outcome frame' , a 'failure frame', to a 'feedback frame' and an 'impossible frame ' to an 'as if' frame. To experience the power of language, find anything that is invisible to you, and name it. Now as you've given it a name, see how you perceive it, and become aware of it.
 
+{% include ai-slop.html percent="35" %}
+
+These are my notes on Robert Dilts' _Sleight of Mouth_. Dilts reverse-engineered fourteen moves by modeling how people like Lincoln, Gandhi, and Socrates argued their way through other people's beliefs — and, more usefully, how you argue with your own.
+
 The techniques encourage us to:
 
 - 're-punctuate' and 'rechunk' our perceptions
@@ -196,10 +200,12 @@ Failure -> Goal Setting, Planning, Execution
 #### Chunking Up
 
 - By going up, we see if it's as bad and, if we can find something better to chunk down to.
+- "I failed this project" chunks up to "I'm learning to run projects" — a class in which one failure is a single data point, not the verdict. Then chunk back down to the one skill worth fixing next.
 
 #### Analogy (chunk Laterally)
 
 - By finding an analogy, we compare to the new analogy, to better understand the current statement.
+- "My code keeps breaking, so I'm a bad engineer" → "A surgeon's first incisions bled too; the reps are how the hand steadies." The analogy smuggles in a reframe the direct statement fights off.
 
 #### Finding ISO Morphisims
 
@@ -211,14 +217,19 @@ Failure -> Goal Setting, Planning, Execution
 
 #### Punctuation and Repunctuation
 
-- Framing is the punctuation of objective reality into our subjective reality.
-- See great examples from book that,that,is - with commas periods and question marks
+Experience arrives as a run-on stream. We punctuate it — deciding where one event ends, where the next begins, and which clause caused which. Move the punctuation and the meaning moves with it, even though not a single fact changed.
+
+- **Framing is the punctuation of objective reality into our subjective reality.** Where you drop the period decides where the story ends.
+- The classic demo flips meaning on comma placement alone: _"A woman without her man is nothing"_ versus _"A woman: without her, man is nothing."_ Same words, repunctuated into opposites.
+- Applied to a belief: _"I bombed the talk. I'm not a speaker."_ becomes _"I bombed the talk, and I now know the three slides that lost the room."_ Same facts — the period just moved from a verdict to a comma in front of feedback.
 
 ### 4: Values and Criteria
 
 #### Structure of meaning
 
 Story of castle under siege, in defiance, the folks in the castle starving catapult all their food out. People seiging, already demoralized since out of supplies interpret food as a taunt that they can last forever and go home.
+
+Same catapulted food, two punctuations: the people inside meant "defiance," the army outside read "they can outlast us." The meaning lived in the framing, not in the food — which is the whole game.
 
 #### Values and motivation
 
@@ -229,15 +240,28 @@ Values - the reasons you get out of bed. Filter over which you see objective rea
 Value -> what we desire and want
 Criteria -> standard/evidence we use to make decisions.
 
-### 9: Applying the patterns as a system.
+### 9: Applying the patterns as a system
 
-- Using multiple avenues to attack the problem.
-- Examples of using the tools against beliefs.
-- Also example of creating a positive "thought virus"
+No single pattern is the magic bullet — the power is running one belief through several at once, from different angles, until the frame loosens and stops feeling like reality. Take one of my own limiting beliefs, straight from the table above: **"My back has hurt forever, so I'll never get better."** Here it is hit with ten of the fourteen:
+
+- **Intent:** the belief is trying to protect me from getting my hopes up and being let down again.
+- **Redefine:** "hurt forever" is really "hurt through a long stretch I didn't yet know how to train through."
+- **Consequence:** believing it guarantees I skip the rehab that's the one thing that could change it.
+- **Chunk down:** which movement, on which day, at what load? "Forever" dissolves into specific reps.
+- **Chunk up:** bodies are systems that adapt to load — I'm inside a whole class of problems that respond to the right stimulus.
+- **Counter example:** there was a month last year it didn't hurt. If it's "forever," where did that month go?
+- **Analogy:** a rusty hinge isn't a broken door, it's an un-oiled one.
+- **Apply to self:** how much has holding "I'll never get better" cost me — has that belief ever bought me a single good rep?
+- **Hierarchy of criteria:** being strong enough to play with my kids matters more than being right about the prognosis.
+- **Change frame size:** will this specific flare-up matter across a year of consistent training?
+
+Fire enough of these and the belief stops feeling like the truth and starts feeling like one sentence I happened to write. (My actual back saga is in [physical pain](/physical-pain).)
+
+**Thought viruses.** Dilts calls a belief that's sealed against evidence a _thought virus_ — it ships with its own defenses ("well, you'd say that"), it spreads, and it runs in the background unexamined. The patterns are the antibodies. And the trick runs both ways: you can deliberately build a _positive_ thought virus — an empowering belief wired with the same self-reinforcing structure ("every rep is a deposit") so that it defends and propagates itself in place of the limiting one.
 
 ### Bonus Levels of experience
 
-Our experiences filter through these layers.
+Our experiences filter through these layers (Dilts' Neuro-Logical Levels, borrowed from Gregory Bateson).
 
 - Environment
 - Behavior
@@ -249,8 +273,10 @@ However we blame stuff in the inverse triangle
 
 This is the fundamental attribution error. For ourselves we attribute fault to our environment, but to others we attribute to their identity.
 
+The levels also tell you where to aim a reframe. Answering an identity attack ("I'm a failure") at the level of identity just trades verdicts; answer it a level or two down — at behavior and capability ("here's the specific skill, here's the next rep") — and the frame actually moves.
+
 ### Resources
 
-Discussion of SoM techniques.
+Michael Hall's _Mind Lines_ extends this same engine into 26 patterns across seven directions — worth a look once the fourteen feel natural, though I find the fourteen are plenty to carry around. For the internal-negotiation cousin of these moves, see [get to yes with yourself](/get-to-yes-with-yourself) and [the voices in my head](/voices).
 
 {% include youtube.html src="0VDkRz3Yf8c" %}
