@@ -22,4 +22,8 @@ A. The work of doing the referral
 B. The message to give to the person to be referred
 C. The risk to the credibility of the person providing the referral.
 
-And in case you're confused, the order in which to tackle these problems is C, B, A. Future posts will talk about how to minimize credibility risk.
+And in case you're confused, the order in which to tackle these problems is C, B, A. So how do you reduce the credibility risk?
+
+- Let the customer see results first - they should be vouching for something they've watched work.
+- Make the referral revocable - a low-stakes "take a look" beats a "you should buy this".
+- Guarantee the experience - if the referral goes badly, make it your name on the line, not theirs.

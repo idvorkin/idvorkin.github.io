@@ -26,6 +26,9 @@ Your brain is for thinking, not storage. That was the promise of the "second bra
   - [Debrief — Capture Insight While It's Fresh](#debrief--capture-insight-while-its-fresh)
   - [The Flywheel](#the-flywheel)
 - [Example Workflows](#example-workflows)
+  - [Reading an article](#reading-an-article)
+  - [Preparing for a meeting](#preparing-for-a-meeting)
+  - [Capturing daily notes](#capturing-daily-notes)
 - [I've Been Building This Without Calling It That](#ive-been-building-this-without-calling-it-that)
 - [The Organizational Second Brain](#the-organizational-second-brain)
 - [FAQ](#faq)
@@ -141,7 +144,7 @@ Traditional second brains failed because "organize" was a separate chore disconn
 I've been doing [stream of consciousness journaling](/process-journal) since 2011 — over a million words. The old problem: handwritten journals are great for thinking but impossible to search. Typed journals are searchable but less personal.
 
 1. **Available context:** I brain-dump thoughts on a Kindle Scribe every morning, primed by yesterday's TODOs and habit tracker
-2. **Automated capture:** The handwriting gets [transcribed to text](/process-journal#journalling-workflow-in-2025), TODOs get extracted to OmniFocus — all automated
+2. **Automated capture:** The handwriting gets [transcribed to text](/process-journal#current-workflow), TODOs get extracted to OmniFocus — all automated
 3. **Debrief (weekly):** [Larry](/larry) reads the week's journals, drafts a weekly report, scores 11 life domains with evidence from my own words, and catches patterns — "You've committed to restart meditation 5 times since November. What's different this time?"
 4. **Pre-brief (daily):** Next morning, AI has yesterday's journal as context. "You said you were avoiding the hard conversation with your manager. Did you have it?"
 

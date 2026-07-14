@@ -14,6 +14,7 @@ extend-ignore-re = ['asin="[A-Za-z0-9;]+"']
 "BA" = "BA"  # Part of Asciinema ID
 "NAEuBAJhe9qdU" = "NAEuBAJhe9qdU"  # Asciinema ID  
 "mis-hire" = "mis-hire"  # Common term in hiring
+mis = "mis"  # Token of "mis-hire" (typos splits on the hyphen)
 "MoFo" = "MoFo"  # Slang term used intentionally
 "oter" = "oter"  # Part of YouTube ID 002oterS2Wg
 "vizualization" = "vizualization"  # In JS library

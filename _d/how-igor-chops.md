@@ -407,7 +407,7 @@ I think there's a pendulum here:
 - 2000s: SaaS - rent the same software as everyone else
 - 2030s: Single dev does all the required tooling, personalized to their exact needs
 
-See more in my [hyper-personalization](/hyper-personal) post. Examples from my own life: [handwriting journal workflow](/process-journal#journalling-workflow-in-2025), [mortality software](/mortality-software), [all my pet projects](/pet-projects).
+See more in my [hyper-personalization](/hyper-personal) post. Examples from my own life: [handwriting journal workflow](/process-journal#current-workflow), [mortality software](/mortality-software), [all my pet projects](/pet-projects).
 
 ### The Joy Question
 
