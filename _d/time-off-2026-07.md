@@ -33,22 +33,6 @@ I wrote down what I'm actually here for, in order — and then the trip rearrang
 
 4 and 5 are the interesting ones, and they're linked: the one real sacrifice I've made to AI is that the [Dealer of Smiles and Wonder](/joy) just stopped showing up. Out here, with the screens quiet, he walked right back in — the guy underneath was someone I'd been missing.
 
-## Re-stacking the roles
-
-Ranking the trip made me ask the bigger version of the question: if that's the order for 22 days, what's the stack for every day? So I re-sorted the roles into three honest tiers.
-
-**Non-negotiables — protect first, daily.** The two foundational [Healths](/four-healths): _Physical_, banked before the family wakes up, and _Emotional_ — awareness and compassion, handled as it happens. Everything else is built on these.
-
-**Frequently starved — feed these.** _Father / Husband_, and the _Joy Giver_ — the balloons-and-magic guy from [the eulogy](/eulogy). The roles I'd grieve losing, and the exact ones I let go hungry when work gets loud. The trip already proved the Joy Giver comes roaring back the moment I stop starving him.
-
-**Over-invested — dial back.** _Technologist_, and honestly everything else, parked way below where they've been running. Not because the work doesn't matter — because it's the finished room, and I keep redecorating it instead of walking into the ones that aren't.
-
-## Daily review
-
-**Vegetating is a trap.** [When you sacrifice identity for consumption, you end up with neither](/produce-consume) — it feels like rest, but it quietly starves the roles that make you _you_.
-
-**Meditation travels, and churches are the best place to do it.** Duck into whatever old cathedral the city is proud of, take a pew, and just sit — cool stone, tall ceilings, nothing asked of you. The room is built to slow you down; let it.
-
 ## How it's actually going
 
 ### 🇮🇸 Reykjavík
