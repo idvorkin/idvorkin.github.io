@@ -199,6 +199,8 @@ Your brain **automatically** assigns meaning to pain. You can't stop this proces
 - "This pain means I care about something important"
 - "This pain means I'm being guided toward necessary change"
 
+Sometimes the most accurate meaning is no verdict at all — the story isn't finished yet: [Bad News. Maybe Not.](/maybe)
+
 ### The Attachment Trap
 
 Suffering often comes from **attachment** - our desperate grip on how things "should" be:

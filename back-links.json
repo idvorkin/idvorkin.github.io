@@ -100,6 +100,8 @@
         "/curated-feed": "/ai-feed",
         "/cv": "/covid",
         "/d/2015-11-18-Outsourcing": "/outsourcing",
+        "/d/2016-2-14-Health-In-The-Head": "/fit-in-my-head",
+        "/d/resistance": "/resistance",
         "/dark-codebase": "/dark-factory",
         "/dark-factories": "/dark-factory",
         "/data-viz": "/viz",
@@ -280,7 +282,6 @@
         "/regret": "/regrets",
         "/remote": "/remote-work",
         "/remotework": "/remote-work",
-        "/resistance": "/d/resistance",
         "/responsible": "/be-proactive",
         "/retirement": "/retire",
         "/retiring": "/retire",
@@ -333,6 +334,7 @@
         "/time-off-next": "/timeoff-2024-08",
         "/time-off-now": "/timeoff-2024-08",
         "/tinkering": "/pet-projects",
+        "/tirzepatide": "/terzepatide",
         "/todo": "/todo_enjoy",
         "/todo-enjoy": "/todo_enjoy",
         "/tolerance": "/anger",
@@ -410,8 +412,8 @@
             "url": "/40yo"
         },
         "/42": {
-            "description": "You survived young kids, marriage, house, some easy crises, and now it’s time for remember, a healthy woman has a thousand wishes, a sick woman - just one: Things I wish I knew at 42\n\n",
-            "doc_size": 28000,
+            "description": "You survived young kids, marriage, a house, and some easy crises. Now it’s time to remember the old saying — a healthy woman has a thousand wishes, a sick woman just one. Here are the things I wish I knew at 42.\n\n",
+            "doc_size": 29000,
             "file_path": "_site/42.html",
             "incoming_links": [
                 "/ai-policy",
@@ -421,7 +423,7 @@
                 "/y25",
                 "/y26"
             ],
-            "last_modified": "2026-06-07T17:47:24.420898+00:00",
+            "last_modified": "2026-06-07T11:08:11-07:00",
             "markdown_path": "_d/42.md",
             "outgoing_links": [
                 "/chapters",
@@ -503,7 +505,7 @@
         },
         "/7h-concepts": {
             "description": "To talk about the 7 habits I need the foundation that comes before the habits start: paradigms, principles, the maturity continuum, and P/PC balance. These are my insights from 7 habits Chapter 0 — the lens you need to even see what the habits are pointing at.\n\n",
-            "doc_size": 34000,
+            "doc_size": 33000,
             "file_path": "_site/7h-concepts.html",
             "incoming_links": [
                 "/7-habits",
@@ -511,9 +513,10 @@
                 "/greek-orthodox",
                 "/maybe",
                 "/podcast",
+                "/sharpen-the-saw",
                 "/writing"
             ],
-            "last_modified": "2026-05-10T16:23:33.726253+00:00",
+            "last_modified": "2026-05-10T10:03:10-07:00",
             "markdown_path": "_d/7h-c0.md",
             "outgoing_links": [
                 "/7-habits",
@@ -612,7 +615,7 @@
             "incoming_links": [
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-04-15T03:24:18.354841+00:00",
+            "last_modified": "2026-04-14T20:26:12-07:00",
             "markdown_path": "_d/act.md",
             "outgoing_links": [
                 "/addiction",
@@ -663,9 +666,9 @@
                 "/addiction",
                 "/blueprint",
                 "/d/habits",
-                "/d/resistance",
                 "/gap-year-igor",
                 "/insomnia",
+                "/resistance",
                 "/timeoff"
             ],
             "redirect_url": "",
@@ -673,8 +676,8 @@
             "url": "/activation"
         },
         "/adblocker-trojan": {
-            "description": "Out of the blue I started seeing ads in my google search. They were especially prominent due to the fact they were white, and I use a back background. It was caused by a trojan running in my chrome extension, which I suspect was installed by a name-jacked NPM plugin.\n\n",
-            "doc_size": 18000,
+            "description": "Out of the blue I started seeing ads in my google search. They were especially prominent due to the fact they were white, and I use a black background. It was caused by a trojan running in my chrome extension, which I suspect was installed by a name-jacked NPM plugin.\n\n",
+            "doc_size": 16000,
             "file_path": "_site/adblocker-trojan.html",
             "incoming_links": [
                 "/timeoff-2021-11"
@@ -694,7 +697,6 @@
                 "/act",
                 "/activation",
                 "/anxiety-management",
-                "/d/resistance",
                 "/happy",
                 "/hobby",
                 "/idle",
@@ -704,6 +706,7 @@
                 "/productive",
                 "/psychic-shadows",
                 "/psychic-weight",
+                "/resistance",
                 "/timeoff",
                 "/vibing",
                 "/walking-with-god"
@@ -828,7 +831,7 @@
             "incoming_links": [
                 "/ai-developer"
             ],
-            "last_modified": "2026-06-07T10:19:45-07:00",
+            "last_modified": "2026-06-07T10:59:27-07:00",
             "markdown_path": "_d/ai.md",
             "outgoing_links": [
                 "/ai-art",
@@ -921,7 +924,7 @@
                 "/vibing",
                 "/why-gas-city"
             ],
-            "last_modified": "2026-05-02T16:12:35.964671+00:00",
+            "last_modified": "2026-05-02T09:24:35-07:00",
             "markdown_path": "_d/ai-cockpit.md",
             "outgoing_links": [
                 "/ai-journal",
@@ -1041,7 +1044,7 @@
             "url": "/ai-hiring"
         },
         "/ai-image": {
-            "description": "Everyone talks about GPT, but you can also generate images. Lately, I’ve been playing with Flux, which is an image generator. You can generate images of me using the idvorkin with this lora on replicate.\n\n",
+            "description": "Everyone talks about GPT, but you can also generate images. Lately, I’ve been playing with Flux, which is an image generator. You can even generate images of me using my idvorkin LoRA on Replicate.\n\n",
             "doc_size": 17000,
             "file_path": "_site/ai-image.html",
             "incoming_links": [
@@ -1144,7 +1147,7 @@
                 "/raccoon-history",
                 "/wally"
             ],
-            "last_modified": "2026-06-07T17:30:09.756052+00:00",
+            "last_modified": "2026-06-07T10:46:12-07:00",
             "markdown_path": "_d/ai-native-manager.md",
             "outgoing_links": [
                 "/agency",
@@ -1167,7 +1170,7 @@
             "incoming_links": [
                 "/ai-native-manager"
             ],
-            "last_modified": "2026-06-07T17:29:29.007808+00:00",
+            "last_modified": "2026-06-07T10:46:12-07:00",
             "markdown_path": "_d/ai-native-onboarding.md",
             "outgoing_links": [
                 "/ai-journal",
@@ -1239,7 +1242,7 @@
             "doc_size": 30000,
             "file_path": "_site/ai-optimism.html",
             "incoming_links": [],
-            "last_modified": "2026-06-08T13:08:16.620862+00:00",
+            "last_modified": "2026-06-08T06:22:11-07:00",
             "markdown_path": "_d/ai-optimism.md",
             "outgoing_links": [
                 "/ai-second-brain",
@@ -1556,10 +1559,12 @@
             "url": "/asciinema"
         },
         "/ast-grep": {
-            "description": "Sometimes you need to search/replace but on code, so let’s use ASTs for that. The tool is called ast-grep (which you invoke with sg).\n\n",
+            "description": "Sometimes you need to search/replace but on code, so let’s use ASTs for that. The tool is called ast-grep (which you invoke with sg — though on many Linux systems sg collides with the setgroups binary, so use the ast-grep binary name there).\n\n",
             "doc_size": 17000,
             "file_path": "_site/ast-grep.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/tools"
+            ],
             "last_modified": "2024-09-22T16:18:28-07:00",
             "markdown_path": "_td/ast-grep.md",
             "outgoing_links": [],
@@ -1595,8 +1600,8 @@
             "url": "/awareness"
         },
         "/back-pain": {
-            "description": "Back pain is one of the most common and debilitating conditions. Stuart McGill’s research changed how we think about it: the spine should stay stiff while motion comes from the hips and shoulders.\n\n",
-            "doc_size": 21000,
+            "description": "For years my back was stiff every morning until I stretched it out, and kettlebell swings are what finally loosened it. Stuart McGill’s research changed how I think about back pain: the spine should stay stiff while motion comes from the hips and shoulders.\n\n",
+            "doc_size": 22000,
             "file_path": "_site/back-pain.html",
             "incoming_links": [
                 "/knee-pain",
@@ -1614,7 +1619,7 @@
             "url": "/back-pain"
         },
         "/balance": {
-            "description": "I’m good at a lot of things, but balance is really hard for me. Hard for everyone I bet. I think this would be an area that can really benefit from mortality software. TODO: decide if this post should fork into energy and balance\n\n",
+            "description": "I’m good at a lot of things, but balance is really hard for me. Hard for everyone I bet. I think this would be an area that can really benefit from mortality software.\n\n",
             "doc_size": 24000,
             "file_path": "_site/balance.html",
             "incoming_links": [
@@ -1663,7 +1668,7 @@
                 "/maybe",
                 "/timeoff"
             ],
-            "last_modified": "2026-04-18T15:20:24.085147+00:00",
+            "last_modified": "2026-04-18T08:20:39-07:00",
             "markdown_path": "_d/balloon.md",
             "outgoing_links": [
                 "/joy"
@@ -1689,7 +1694,7 @@
             "url": "/bc"
         },
         "/be-proactive": {
-            "description": "I choose ‘.’ I am responsible for my own life ‘.’ My behavior is a function of my decisions, not my conditions ‘.’ I can subordinate feelings to values ‘.’ I have the initiative and the responsibility to make things happen. These are my insights from 7 habits Chapter 1.\n\n",
+            "description": "I choose. I am responsible for my own life. My behavior is a function of my decisions, not my conditions. I can subordinate feelings to values. I have the initiative and the responsibility to make things happen. These are my insights from 7 habits Chapter 1.\n\n",
             "doc_size": 39000,
             "file_path": "_site/be-proactive.html",
             "incoming_links": [
@@ -1722,7 +1727,6 @@
                 "/curious",
                 "/essentialism",
                 "/first-understand",
-                "/four-healths",
                 "/frog",
                 "/siy"
             ],
@@ -1821,7 +1825,7 @@
         },
         "/bmy": {
             "description": "The business model canvas is a tool for understanding how a company makes money. This same model can be applied to a person’s career. While job hunting this was helpful figuring out my dream job. I suppose it should also prioritize my work energy, and probably how to prioritize my life energy. But that’s to come.\n\n",
-            "doc_size": 25000,
+            "doc_size": 24000,
             "file_path": "_site/bmy.html",
             "incoming_links": [
                 "/job-hunt-stress"
@@ -1851,11 +1855,11 @@
             "markdown_path": "_posts/2015-11-02-books-that-defined-me.md",
             "outgoing_links": [
                 "/7-habits",
-                "/d/resistance",
                 "/essentialism",
                 "/getting-to-yes-with-yourself",
                 "/gtd",
                 "/humans-are-underrated",
+                "/resistance",
                 "/siy"
             ],
             "redirect_url": "",
@@ -1863,8 +1867,8 @@
             "url": "/books-that-defined-me"
         },
         "/breath": {
-            "description": "Breathing, an act so simple yet so crucial, harbors the potential to transform our health, mind, and life. This blog post is a deep dive into the world of breathing techniques, exploring a range of practices from Box Breathing and Victory Breath to Sitali Breath and the Breath Focus Technique. Each technique is detailed with its benefits and step-by-step instructions. In addition, the scientific perspective on breathing is explored. Whether you’re seeking to reduce stress, improve focus, or simply understand the science of breathing, this post is your comprehensive guide. Join us as we explore the art of breathing, its techniques, and the science behind it.\n\n",
-            "doc_size": 27000,
+            "description": "Change how you breathe and you change how you feel. Longer inhales rev me up, longer exhales calm me down, and holds build CO2 tolerance. These are my notes on the breathing patterns, the chemistry behind them, and a few techniques: box breathing, the psychological sigh, and alternate nostril breathing.\n\n",
+            "doc_size": 26000,
             "file_path": "_site/breath.html",
             "incoming_links": [
                 "/be-proactive"
@@ -1965,7 +1969,7 @@
                 "/produce-consume",
                 "/spiritual-health"
             ],
-            "last_modified": "2026-07-08T19:30:37.804599+00:00",
+            "last_modified": "2026-07-08T22:25:24+02:00",
             "markdown_path": "_d/build-the-life-you-want.md",
             "outgoing_links": [
                 "/balance",
@@ -2026,9 +2030,11 @@
         },
         "/changelog": {
             "description": "A weekly summary of what changed on this blog and across my GitHub projects. Useful for returning readers who want to catch up on new content and updates.\n\n",
-            "doc_size": 243000,
+            "doc_size": 256000,
             "file_path": "_site/changelog.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/timeoff-2026-07"
+            ],
             "last_modified": "2026-07-07T15:13:25+02:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
@@ -2051,7 +2057,10 @@
                 "/ai-training",
                 "/amelia",
                 "/be-proactive",
+                "/build-life-you-want",
+                "/chop",
                 "/claw",
+                "/d/habits",
                 "/dark-factory",
                 "/design",
                 "/emotional-lives",
@@ -2060,9 +2069,11 @@
                 "/first-things-first",
                 "/first-understand",
                 "/four-healths",
+                "/gap-year",
                 "/gas-city",
                 "/gas-city-home",
                 "/gas-city-rig",
+                "/happy",
                 "/hill-climbing",
                 "/hobby",
                 "/how-igor-chops",
@@ -2081,8 +2092,10 @@
                 "/maybe",
                 "/meta",
                 "/money",
+                "/mortality-software",
                 "/mosh",
                 "/packing",
+                "/physical-pain",
                 "/podcast",
                 "/produce-consume",
                 "/product",
@@ -2327,7 +2340,7 @@
             "url": "/coe"
         },
         "/comp": {
-            "description": "Different companies use different compensation models. To compare models, use total compensation, not salary. The compensation models are arbitrary and complicated. For example, Amazon caps salary at 160K$/yr and doesn’t have bonuses. Google vests stocks monthly. Facebook bonuses have a company performance multiplier. At some companies, signing bonuses can be over 100% of salary!\n\n",
+            "description": "Different companies use different compensation models. To compare models, use total compensation, not salary. The compensation models are arbitrary and complicated. For example, in 2017, Amazon capped salary at 160K$/yr and didn’t have bonuses. Google vests stocks monthly. Facebook bonuses have a company performance multiplier. At some companies, signing bonuses can be over 100% of salary!\n\n",
             "doc_size": 29000,
             "file_path": "_site/comp.html",
             "incoming_links": [
@@ -2473,18 +2486,6 @@
             "title": "Steve Jobs -- The Lost Interview",
             "url": "/d/2016-05-09-lost-interview"
         },
-        "/d/2016-2-14-Health-In-The-Head": {
-            "description": "Fit in my head, isn’t fit in reality. In the last few years I’ve learned this lesson for physical health, and now I’m learning it for emotional health.\n\n",
-            "doc_size": 14000,
-            "file_path": "_site/d/2016-2-14-Health-In-The-Head.html",
-            "incoming_links": [],
-            "last_modified": "2025-07-20T19:26:41-07:00",
-            "markdown_path": "_d/2016-2-14-Health-In-The-Head.md",
-            "outgoing_links": [],
-            "redirect_url": "",
-            "title": "Emotional Health In My Head",
-            "url": "/d/2016-2-14-Health-In-The-Head"
-        },
         "/d/2016-2-15-Seth-Godin-Notes": {
             "description": "Seth godin has many ideas that are critical in the new world. Ideas include: Choosing yourself, Tribes, The limited value of cogs, connection, and the dip.\n\n",
             "doc_size": 18000,
@@ -2493,7 +2494,8 @@
             "last_modified": "2025-12-07T02:26:29+00:00",
             "markdown_path": "_d/2016-2-15-Seth-Godin-Notes.md",
             "outgoing_links": [
-                "/dip"
+                "/dip",
+                "/why-is-no-one-referring"
             ],
             "redirect_url": "",
             "title": "Seth Godin- Ideas",
@@ -2539,7 +2541,10 @@
             "description": "After a year of not working on one of my hobby software projects, I decided it’d be fun to make a minor change - should only be few lines of code. Should be easier still since I followed all the project best practices: I had full unit tests, and a fully automated command line build but boy was I wrong.\n\n",
             "doc_size": 14000,
             "file_path": "_site/d/2017-09-10-software-rot.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/d/where-have-all-the-bugs-gone",
+                "/how-igor-chops"
+            ],
             "last_modified": "2025-12-07T02:26:29+00:00",
             "markdown_path": "_d/2017-09-10-software-rot.md",
             "outgoing_links": [],
@@ -2606,7 +2611,6 @@
             "incoming_links": [
                 "/act",
                 "/activation",
-                "/d/resistance",
                 "/energy-abundance",
                 "/four-healths",
                 "/hobby",
@@ -2618,9 +2622,11 @@
                 "/physical-health",
                 "/productive",
                 "/psychic-weight",
+                "/resistance",
                 "/sharpen-the-saw",
                 "/slow",
                 "/switch",
+                "/timeoff-2026-07",
                 "/walking-with-god"
             ],
             "last_modified": "2025-12-07T02:40:46+00:00",
@@ -2644,43 +2650,6 @@
             "title": "Types of interviews ",
             "url": "/d/management_interviews"
         },
-        "/d/resistance": {
-            "description": "Stop. Take an ice cold shower right now. You didn’t, did you? Trust me, even if you tried, you wouldn’t. Before you turned on the water, you’d have this irrational fear of stepping in and you wouldn’t do it. The force that stops you is the resistance. The resistance is the personification of the force that stops you from doing the important. The resistance lies, telling us things are hard when they are not. The resistance adds suffering when there is minimal pain and that confuses us, stopping us from doing things which give us the most value, joy and positive identity. The resistance is the enemy of progress.\n\n",
-            "doc_size": 21000,
-            "file_path": "_site/d/resistance.html",
-            "incoming_links": [
-                "/activation",
-                "/books-that-defined-me",
-                "/enemy",
-                "/energy",
-                "/energy-abundance",
-                "/fail",
-                "/frog",
-                "/gap-year",
-                "/gap-year-igor",
-                "/mental-pain",
-                "/parkinson",
-                "/productive",
-                "/psychic-shadows",
-                "/psychic-weight",
-                "/slow",
-                "/timeoff"
-            ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
-            "markdown_path": "_d/resistance.md",
-            "outgoing_links": [
-                "/addiction",
-                "/d/habits",
-                "/end-in-mind",
-                "/frog",
-                "/gtd",
-                "/magic",
-                "/mental-pain"
-            ],
-            "redirect_url": "",
-            "title": "Resistance: Why you can't make yourself take an ice cold shower",
-            "url": "/d/resistance"
-        },
         "/d/where-have-all-the-bugs-gone": {
             "description": "I’ve been a software developer since 2001, and back then we used to have lots of bugs. Nowadays, it seems we don’t have bugs, and I’ve wondered why. Now we have tickets which we get from our systems running in production, but that’s quite different. What’s going on?\n\n",
             "doc_size": 14000,
@@ -2688,7 +2657,9 @@
             "incoming_links": [],
             "last_modified": "2022-08-13T08:09:48-07:00",
             "markdown_path": "_d/where-have-all-the-bugs-gone.md",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/d/2017-09-10-software-rot"
+            ],
             "redirect_url": "",
             "title": "Where have all the bugs gone",
             "url": "/d/where-have-all-the-bugs-gone"
@@ -2700,7 +2671,7 @@
             "incoming_links": [
                 "/ai-native-vocab"
             ],
-            "last_modified": "2026-06-06T18:18:54.096028+00:00",
+            "last_modified": "2026-06-06T11:23:00-07:00",
             "markdown_path": "_d/dark-factory.md",
             "outgoing_links": [
                 "/ai-native-vocab",
@@ -2742,7 +2713,8 @@
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_d/on-being-mortal.md",
             "outgoing_links": [
-                "/last-year"
+                "/last-year",
+                "/suicide"
             ],
             "redirect_url": "",
             "title": "On being Mortal - Guess what? You're dying",
@@ -2832,11 +2804,13 @@
                 "/idle",
                 "/insecure",
                 "/insomnia",
+                "/maybe",
                 "/physical-health",
                 "/psychic-shadows",
                 "/psychic-weight",
                 "/shame",
                 "/siy",
+                "/suicide",
                 "/sustainable-work",
                 "/voices"
             ],
@@ -2977,6 +2951,7 @@
             "last_modified": "2026-03-21T12:32:21-07:00",
             "markdown_path": "_d/emotional-health-hold.md",
             "outgoing_links": [
+                "/fit-in-my-head",
                 "/sharpen-the-saw",
                 "/siy",
                 "/sublime",
@@ -3068,12 +3043,12 @@
                 "/affirmations",
                 "/ai-journal",
                 "/content-audience",
-                "/d/resistance",
                 "/elder",
                 "/gap-year-igor",
                 "/planning",
                 "/productive",
                 "/raccoon-history",
+                "/resistance",
                 "/siy",
                 "/walking-with-god"
             ],
@@ -3087,7 +3062,6 @@
                 "/dip",
                 "/essentialism",
                 "/eulogy",
-                "/four-healths",
                 "/planning"
             ],
             "redirect_url": "",
@@ -3105,8 +3079,8 @@
             "last_modified": "2023-12-30T11:50:51-08:00",
             "markdown_path": "_d/don-juan2.md",
             "outgoing_links": [
-                "/d/resistance",
-                "/pride"
+                "/pride",
+                "/resistance"
             ],
             "redirect_url": "",
             "title": "Four enemies",
@@ -3130,12 +3104,12 @@
             "markdown_path": "_d/energy.md",
             "outgoing_links": [
                 "/activation",
-                "/d/resistance",
                 "/joy",
                 "/mania",
                 "/mood",
                 "/operating-manual",
                 "/productive",
+                "/resistance",
                 "/sleep",
                 "/slow",
                 "/timeoff"
@@ -3157,9 +3131,9 @@
                 "/activation",
                 "/balance",
                 "/d/habits",
-                "/d/resistance",
                 "/energy",
                 "/operating-manual",
+                "/resistance",
                 "/strategy",
                 "/timeoff"
             ],
@@ -3236,7 +3210,6 @@
                 "/sharpen-the-saw",
                 "/spiritual-health",
                 "/timeoff",
-                "/timeoff-2026-07",
                 "/todo_enjoy",
                 "/walking-with-god",
                 "/work-satisfaction"
@@ -3286,7 +3259,7 @@
                 "/hill-climbing",
                 "/pet-projects"
             ],
-            "last_modified": "2026-06-06T18:28:44.329796+00:00",
+            "last_modified": "2026-06-06T11:23:00-07:00",
             "markdown_path": "_d/explainers.md",
             "outgoing_links": [
                 "/ai-native-vocab",
@@ -3309,14 +3282,14 @@
                 "/anxiety",
                 "/anxiety-management",
                 "/coe",
-                "/d/resistance"
+                "/resistance"
             ],
             "redirect_url": "",
             "title": "Failure is not an option, it is a necessity",
             "url": "/fail"
         },
         "/first-things-first": {
-            "description": "The key to effective management, is allocating energy through the lens of importance rather than urgency. E.g, ask yourself what one thing could you do that if you did on a regular basis, would make a tremendous positive difference in your life? Lemme guess, it’s important, but not urgent so you’re not doing it. These are my insights based on the 7 habits Chapter 3.\n\n",
+            "description": "The key to effective management is allocating energy through the lens of importance rather than urgency. E.g., ask yourself what one thing could you do that, if you did it on a regular basis, would make a tremendous positive difference in your life? Lemme guess, it’s important, but not urgent so you’re not doing it. These are my insights based on the 7 habits Chapter 3.\n\n",
             "doc_size": 41000,
             "file_path": "_site/first-things-first.html",
             "incoming_links": [
@@ -3348,7 +3321,7 @@
             "url": "/first-things-first"
         },
         "/first-understand": {
-            "description": "Imagine going to the eye doctor. After hearing your complaint he takes off his glasses and hands them to you.\n“Put these on,” he says. “I’ve worn this pair of glasses for ten years now and they’ve really helped me. I have an extra pair at home; you can wear these.” So you put them on, but it only makes the problem worse. “This is terrible!” you exclaim. “I can’t see a thing!” “Well, what’s wrong?” he asks. “They work great for me. Try harder.” “I am trying,” you insist. “Everything is a blur.” “Well, what’s the matter with you? Think positively.” “Okay. I positively can’t see a thing.” “Boy, are you ungrateful!” he chides. “And after all I’ve done to help you!”\n\n",
+            "description": "By default I listen with the intent to reply, not to understand — judging, probing, and advising from my own frame of reference instead of theirs. Covey’s fix is the habit I need most: seek first to understand, then to be understood. These are my insights based on the 7 habits Chapter 5.\n\n",
             "doc_size": 30000,
             "file_path": "_site/first-understand.html",
             "incoming_links": [
@@ -3382,6 +3355,20 @@
             "title": "Seek first to understand, then to be understood",
             "url": "/first-understand"
         },
+        "/fit-in-my-head": {
+            "description": "Fit in my head, isn’t fit in reality. In the last few years I’ve learned this lesson for physical health, and now I’m learning it for emotional health.\n\n",
+            "doc_size": 14000,
+            "file_path": "_site/fit-in-my-head.html",
+            "incoming_links": [
+                "/emotional-health"
+            ],
+            "last_modified": "2025-07-20T19:26:41-07:00",
+            "markdown_path": "_d/2016-2-14-Health-In-The-Head.md",
+            "outgoing_links": [],
+            "redirect_url": "",
+            "title": "Emotional Health In My Head",
+            "url": "/fit-in-my-head"
+        },
         "/fortune-cookies": {
             "description": "Life wisdom in bite-sized pieces. Some from actual fortune cookies, some from conversations, some from that moment at 3am when something finally clicks. These are the breadcrumbs I’m leaving for my kids—and anyone else who finds value in them.\n\n",
             "doc_size": 22000,
@@ -3406,16 +3393,13 @@
             "incoming_links": [
                 "/7h-concepts",
                 "/ai-operator",
-                "/be-proactive",
-                "/end-in-mind",
                 "/first-things-first",
                 "/greek-orthodox",
                 "/mortality-software",
                 "/operating-manual",
                 "/sharpen-the-saw",
                 "/spiritual-health",
-                "/timeoff",
-                "/timeoff-2026-07"
+                "/timeoff"
             ],
             "last_modified": "2026-07-03T12:06:45-07:00",
             "markdown_path": "_d/four-healths.md",
@@ -3441,14 +3425,13 @@
             "url": "/four-healths"
         },
         "/frog": {
-            "description": "Procrastination is the success killer, a powerful manifestations of the resistance. Eat that frog gives 21 antidotes to procrastination. These are my re-framing of the concepts into my favorite mental models. Chapter titles come from the book.\n\n",
+            "description": "Procrastination is the success killer, a powerful manifestation of the resistance. Eat that frog gives 21 antidotes to procrastination. This is my re-framing of the concepts into my favorite mental models. Chapter titles come from the book.\n\n",
             "doc_size": 24000,
             "file_path": "_site/frog.html",
             "incoming_links": [
                 "/ai-operator",
                 "/anxiety-management",
                 "/be-proactive",
-                "/d/resistance",
                 "/first-things-first",
                 "/gtd",
                 "/idle",
@@ -3456,6 +3439,7 @@
                 "/parkinson",
                 "/productive",
                 "/psychic-weight",
+                "/resistance",
                 "/timeoff",
                 "/timeoff-2020-03"
             ],
@@ -3464,11 +3448,11 @@
             "outgoing_links": [
                 "/Immutable-Laws-Of-Hard",
                 "/be-proactive",
-                "/d/resistance",
                 "/essentialism",
                 "/eulogy",
                 "/first-things-first",
-                "/gtd"
+                "/gtd",
+                "/resistance"
             ],
             "redirect_url": "",
             "title": "Eat that frog",
@@ -3492,12 +3476,12 @@
             "markdown_path": "_d/gap-year.md",
             "outgoing_links": [
                 "/chapters",
-                "/d/resistance",
                 "/decisive",
                 "/gap-year-igor",
                 "/money",
                 "/partner-trouble",
                 "/physical-health",
+                "/resistance",
                 "/retire",
                 "/timeoff",
                 "/y24",
@@ -3532,7 +3516,6 @@
                 "/affirmations",
                 "/chapters",
                 "/chasing-daylight",
-                "/d/resistance",
                 "/death",
                 "/emotional-health",
                 "/end-in-mind",
@@ -3543,6 +3526,7 @@
                 "/physical-health",
                 "/produce-consume",
                 "/regrets",
+                "/resistance",
                 "/retire",
                 "/siy",
                 "/sleep",
@@ -3640,6 +3624,7 @@
             "doc_size": 25000,
             "file_path": "_site/get-to-yes-with-yourself.html",
             "incoming_links": [
+                "/sleight-of-mouth",
                 "/walking-with-god"
             ],
             "last_modified": "2025-10-20T11:23:26-04:00",
@@ -3697,7 +3682,7 @@
                 "/ml",
                 "/nlp"
             ],
-            "last_modified": "2026-04-21T13:57:57.529900+00:00",
+            "last_modified": "2026-04-21T07:44:44-07:00",
             "markdown_path": "_d/gpt2.md",
             "outgoing_links": [
                 "/ai-faq"
@@ -3794,12 +3779,13 @@
                 "/4dx",
                 "/ai-feed",
                 "/books-that-defined-me",
-                "/d/resistance",
                 "/depression",
                 "/first-things-first",
                 "/frog",
                 "/parkinson",
-                "/psychic-weight"
+                "/productive",
+                "/psychic-weight",
+                "/resistance"
             ],
             "last_modified": "2025-12-07T02:46:00+00:00",
             "markdown_path": "_d/gtd.md",
@@ -3846,7 +3832,7 @@
                 "/timeoff-2025-08",
                 "/walking-with-god"
             ],
-            "last_modified": "2026-07-08T22:20:12+02:00",
+            "last_modified": "2026-07-12T07:31:09+02:00",
             "markdown_path": "_posts/2017-04-12-happy.md",
             "outgoing_links": [
                 "/addiction",
@@ -3910,7 +3896,7 @@
                 "/operating-manual",
                 "/retire"
             ],
-            "last_modified": "2026-05-01T15:01:26.354807+00:00",
+            "last_modified": "2026-05-01T08:03:22-07:00",
             "markdown_path": "_d/hobby.md",
             "outgoing_links": [
                 "/addiction",
@@ -3922,12 +3908,12 @@
                 "/new-skills"
             ],
             "redirect_url": "",
-            "title": "Why a Engineering Manager masquerades as a magician on the weekends",
+            "title": "Why an Engineering Manager masquerades as a magician on the weekends",
             "url": "/hobby"
         },
         "/how-igor-chops": {
             "description": "I mumble to Claude on my couch while my family wonders who I’m talking to. I vibe code in the car while my son drives. I rent the most expensive brain I can get. This is my CHOP (Chat-Oriented Programming) setup: the infrastructure, the tools, and what I’ve learned.\n\n",
-            "doc_size": 51000,
+            "doc_size": 52000,
             "file_path": "_site/how-igor-chops.html",
             "incoming_links": [
                 "/ai",
@@ -3945,7 +3931,7 @@
                 "/y25",
                 "/y26"
             ],
-            "last_modified": "2026-04-17T02:35:00.675557+00:00",
+            "last_modified": "2026-04-16T19:46:21-07:00",
             "markdown_path": "_d/how-igor-chops.md",
             "outgoing_links": [
                 "/40yo",
@@ -3953,6 +3939,7 @@
                 "/ai-operator",
                 "/chop",
                 "/chow",
+                "/d/2017-09-10-software-rot",
                 "/enable",
                 "/hill-climbing",
                 "/hyper-personal",
@@ -4127,7 +4114,9 @@
             ],
             "last_modified": "2023-12-17T18:53:39+00:00",
             "markdown_path": "_posts/2016-11-26-interviewsarehard.markdown",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/the-recruiter-does-not-think-you-are-hot"
+            ],
             "redirect_url": "",
             "title": "Be easy on yourself, job hunts are hard",
             "url": "/interviewsarehard"
@@ -4211,7 +4200,8 @@
                 "/decisive",
                 "/interviewsarehard",
                 "/job",
-                "/system-design"
+                "/system-design",
+                "/the-recruiter-does-not-think-you-are-hot"
             ],
             "redirect_url": "",
             "title": "Reducing job hunt stress",
@@ -4271,7 +4261,7 @@
             "url": "/kayak"
         },
         "/kettlebell": {
-            "description": "There’s no way I’m swinging that thing between my legs; I’m going to kill my back. When I started working out with a trainer in 2020, they tried to get me to do a kettlebell swing, and I was like, no way. Then they spent 3 weeks teaching me Turkish Get-Ups (TGUs), which I absolutely loved. Then I read Simple and Sinister, and now I’ve achieved Timeless Simple and do heavy clubs instead of halos.\n\n",
+            "description": "There’s no way I’m swinging that thing between my legs; I’m going to kill my back. When I started working out with a trainer in 2020, they tried to get me to do a kettlebell swing, and I was like, no way. Then they spent 3 weeks teaching me Turkish Get-Ups (TGUs), which I absolutely loved. Then I read Simple and Sinister, and now I’ve achieved Timeless Simple and do heavy clubs instead of halos. (Timeless Simple is hitting Pavel’s Simple standard - 100 swings and 10 get-ups with a 32 kg bell - without the time limits.)\n\n",
             "doc_size": 18000,
             "file_path": "_site/kettlebell.html",
             "incoming_links": [
@@ -4300,7 +4290,7 @@
                 "/irl",
                 "/osx"
             ],
-            "last_modified": "2026-04-03T22:38:50+00:00",
+            "last_modified": "2026-04-03T15:42:12-07:00",
             "markdown_path": "_td/keyboard.md",
             "outgoing_links": [
                 "/shoulder-pain"
@@ -4346,7 +4336,7 @@
                 "/structure",
                 "/y26"
             ],
-            "last_modified": "2026-04-18T15:07:19.826565+00:00",
+            "last_modified": "2026-04-18T08:08:18-07:00",
             "markdown_path": "_d/larry.md",
             "outgoing_links": [
                 "/affirmations",
@@ -4443,7 +4433,7 @@
                 "/larry",
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-07-07T10:50:02+00:00",
+            "last_modified": "2026-07-07T11:03:27+00:00",
             "markdown_path": "_d/life-journal.md",
             "outgoing_links": [
                 "/ai-operator",
@@ -4457,7 +4447,7 @@
             "url": "/life-journal"
         },
         "/like-switch": {
-            "description": "The like switch, written by an ex-FBI agent, goes into detail on how to make friends and influence people in a much more modern form.\n\n",
+            "description": "The Like Switch, written by an ex-FBI agent, goes into detail on how to make friends and influence people in a much more modern form. It covers the friendship formula (proximity, frequency, duration, intensity), the nonverbal friend and foe signals we broadcast constantly, and the golden rule of friendship: make others feel good about themselves. These are my notes on the book.\n\n",
             "doc_size": 30000,
             "file_path": "_site/like-switch.html",
             "incoming_links": [
@@ -4511,12 +4501,12 @@
             "doc_size": 26000,
             "file_path": "_site/magic.html",
             "incoming_links": [
-                "/d/resistance",
                 "/eulogy",
                 "/hobby",
                 "/idle",
                 "/joy",
                 "/operating-manual",
+                "/resistance",
                 "/timeoff",
                 "/touching"
             ],
@@ -4629,6 +4619,7 @@
             "markdown_path": "_d/mania.md",
             "outgoing_links": [
                 "/emotional-health",
+                "/suicide",
                 "/tesla"
             ],
             "redirect_url": "",
@@ -4639,7 +4630,11 @@
             "description": "A farmer’s horse runs away. His neighbors console him: “What terrible luck!” The farmer shrugs, “Maybe.” The next day the horse returns, leading a herd of wild horses behind it — “What wonderful luck!” “Maybe.” His son tries to tame one, is thrown, and breaks his leg — “How awful!” “Maybe.” A week later the army marches through, conscripting every able-bodied young man for a war most won’t return from, and the son, with his broken leg, is passed over — “How wonderful!” “Maybe.” Good luck, bad luck — who knows? The story is never finished, so the farmer never renders the verdict. He just keeps living.\n\n",
             "doc_size": 17000,
             "file_path": "_site/maybe.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/depression",
+                "/mental-pain",
+                "/timeoff-2026-07"
+            ],
             "last_modified": "2026-07-06T23:30:18-07:00",
             "markdown_path": "_d/maybe.md",
             "outgoing_links": [
@@ -4663,7 +4658,6 @@
                 "/anger",
                 "/anxiety-management",
                 "/curious",
-                "/d/resistance",
                 "/happy",
                 "/idle",
                 "/mind-monsters",
@@ -4671,6 +4665,7 @@
                 "/psychic-shadows",
                 "/psychic-weight",
                 "/regrets",
+                "/resistance",
                 "/shame",
                 "/timeoff-2020-12",
                 "/walking-with-god",
@@ -4682,12 +4677,13 @@
             "markdown_path": "_d/mental-pain.md",
             "outgoing_links": [
                 "/addiction",
-                "/d/resistance",
                 "/depression",
                 "/frog",
                 "/lonely",
+                "/maybe",
                 "/physical-pain",
-                "/pride"
+                "/pride",
+                "/resistance"
             ],
             "redirect_url": "",
             "title": "The thoughts that pain us",
@@ -4706,7 +4702,7 @@
             "url": "/mermaid"
         },
         "/meta": {
-            "description": "Meta is a ‘social’ company; we value 1-1 time, fostering trust-driven relationships, and providing skip-level escalations and support. Here are my notes on Meta.\n\n",
+            "description": "Meta calls itself a ‘social’ company. As one of its managers put it: “we value 1-1 time, fostering trust-driven relationships, and providing skip-level escalations and support.” Here are my notes on Meta.\n\n",
             "doc_size": 35000,
             "file_path": "_site/meta.html",
             "incoming_links": [
@@ -4873,7 +4869,8 @@
                 "/job",
                 "/manager-book",
                 "/moments",
-                "/random-idea"
+                "/random-idea",
+                "/sustainable-work"
             ],
             "last_modified": "2020-06-17T07:39:28-07:00",
             "markdown_path": "_posts/2018-04-09-moments-at-work.md",
@@ -4918,7 +4915,7 @@
                 "/taxes",
                 "/timeoff-2020-03"
             ],
-            "last_modified": "2026-04-18T16:36:45.771366+00:00",
+            "last_modified": "2026-04-18T09:25:50-07:00",
             "markdown_path": "_d/money.md",
             "outgoing_links": [
                 "/parkinson",
@@ -5019,14 +5016,13 @@
             "url": "/negative-mitzvahs"
         },
         "/negotiate": {
-            "description": "Negotiation is the heart of collaboration. It is what makes conflict potentially meaningful and productive for all parties. Getting To Yes is the seminal book on negotiation. It’s the deep dive into win win or no deal and seek first to understand. The formal, be hard on problems and soft on people, then focus on the desired outcomes not the positions, next get more options on the table, and make sure you measure by objective criteria - lastly know your BATNA.Several years later a new book came out by a hostage negotiator. Instead of being analytic focus, it’s all about influencing the elephant.\n\n",
+            "description": "Negotiation is the heart of collaboration. It is what makes conflict potentially meaningful and productive for all parties. Getting To Yes is the seminal book on negotiation. It’s the deep dive into win-win or no deal and seek first to understand. The formula: be hard on problems and soft on people, then focus on the desired outcomes not the positions, next get more options on the table, and make sure you measure by objective criteria - lastly, know your BATNA. Several years later a new book came out by a hostage negotiator. Instead of an analytic focus, it’s all about influencing the elephant.\n\n",
             "doc_size": 22000,
             "file_path": "_site/negotiate.html",
             "incoming_links": [
                 "/curious",
                 "/get-to-yes-with-yourself",
                 "/happy",
-                "/productive",
                 "/sell",
                 "/synergize",
                 "/win-win",
@@ -5160,7 +5156,7 @@
             "url": "/operating-manual"
         },
         "/osx": {
-            "description": "\nCheck out my Mac install script for automated setup of my Mac environment.\n\n",
+            "description": "I pretty much use mac exclusively. I have 3 at work, and a mac mini at home, and I’m an automation nerd so I try to have everything auto install/synchronize across the machines. On the mac, I’m either in chrome/edge, Cursor (the new VS.code), the terminal (I use iterm), capcut (video editor), zoom, or the few super handy utilities I list below.\n\n",
             "doc_size": 22000,
             "file_path": "_site/osx.html",
             "incoming_links": [
@@ -5185,7 +5181,9 @@
             ],
             "last_modified": "2025-09-13T16:07:47-07:00",
             "markdown_path": "_d/2015-11-18-Outsourcing.md",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/the-recruiter-does-not-think-you-are-hot"
+            ],
             "redirect_url": "",
             "title": "On outsourcing",
             "url": "/outsourcing"
@@ -5259,13 +5257,13 @@
             "markdown_path": "_d/resource-paradox.md",
             "outgoing_links": [
                 "/amazon",
-                "/d/resistance",
                 "/dip",
                 "/essentialism",
                 "/frog",
                 "/goals",
                 "/gtd",
                 "/money",
+                "/resistance",
                 "/timeoff"
             ],
             "redirect_url": "",
@@ -5299,7 +5297,7 @@
             "incoming_links": [
                 "/joy"
             ],
-            "last_modified": "2026-07-09T04:37:41-07:00",
+            "last_modified": "2026-07-11T23:53:26-07:00",
             "markdown_path": "_d/performer-playbook.md",
             "outgoing_links": [
                 "/awareness",
@@ -5312,7 +5310,7 @@
             "url": "/performer-playbook"
         },
         "/pet-projects": {
-            "description": "As an engineer, I love to build bespoke tools that solve my unique problems exactly the way I want them solved. The bonus? This is lets me learn new technologies (did you know my blog has multiplayer support?). Sometimes I even make a tool so I have something to learn from. And with AI, this list of projects and explorations has exploded! Note to self, when I want to veg out and just feed my social media addiction I should do some vibe coding on all of these.\n\n",
+            "description": "As an engineer, I love to build bespoke tools that solve my unique problems exactly the way I want them solved. The bonus? This lets me learn new technologies (did you know my blog has multiplayer support?). Sometimes I even make a tool so I have something to learn from. And with AI, this list of projects and explorations has exploded! Note to self, when I want to veg out and just feed my social media addiction I should do some vibe coding on all of these.\n\n",
             "doc_size": 27000,
             "file_path": "_site/pet-projects.html",
             "incoming_links": [
@@ -5325,7 +5323,7 @@
                 "/side-quests",
                 "/y25"
             ],
-            "last_modified": "2026-06-06T18:28:44.329796+00:00",
+            "last_modified": "2026-06-06T11:23:00-07:00",
             "markdown_path": "_d/pet-projects.md",
             "outgoing_links": [
                 "/ai-native-vocab",
@@ -5380,16 +5378,17 @@
         },
         "/physical-pain": {
             "description": "Physical pain has been a recurring teacher in my life. Each injury forced me to learn something about how my body works (and doesn’t). This page is the hub for my pain-related learnings, with dedicated pages for each area where I’ve had issues.\n\n",
-            "doc_size": 36000,
+            "doc_size": 35000,
             "file_path": "_site/physical-pain.html",
             "incoming_links": [
                 "/back-pain",
                 "/knee-pain",
                 "/mental-pain",
                 "/shoulder-pain",
+                "/sleight-of-mouth",
                 "/y25"
             ],
-            "last_modified": "2026-01-25T18:27:37+00:00",
+            "last_modified": "2026-07-12T08:48:30+02:00",
             "markdown_path": "_d/physical-pain.md",
             "outgoing_links": [
                 "/back-pain",
@@ -5502,7 +5501,7 @@
                 "/pet-projects",
                 "/y24"
             ],
-            "last_modified": "2026-07-07T05:22:16-07:00",
+            "last_modified": "2026-07-07T05:46:52-07:00",
             "markdown_path": "_d/process-journal.md",
             "outgoing_links": [
                 "/affirmations",
@@ -5529,9 +5528,10 @@
                 "/build-life-you-want",
                 "/gap-year-igor",
                 "/slow",
+                "/timeoff",
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-07-07T02:18:48-07:00",
+            "last_modified": "2026-07-12T08:45:26+02:00",
             "markdown_path": "_d/produce-consume.md",
             "outgoing_links": [
                 "/activation",
@@ -5559,7 +5559,7 @@
             "url": "/product"
         },
         "/productive": {
-            "description": "At the core of balance, energy, wlb, habits is being productive.\n\n",
+            "description": "At the core of balance, energy, work-life balance, and habits is being productive. This page is my hub for productivity - the concepts that fuel it, and the kryptonite that kills it. Most of the ideas are big enough to get their own posts, so treat this as a map with links.\n\n",
             "doc_size": 16000,
             "file_path": "_site/productive.html",
             "incoming_links": [
@@ -5575,11 +5575,11 @@
                 "/anxiety",
                 "/balance",
                 "/d/habits",
-                "/d/resistance",
                 "/end-in-mind",
                 "/energy",
                 "/frog",
-                "/negotiate",
+                "/gtd",
+                "/resistance",
                 "/switch"
             ],
             "redirect_url": "",
@@ -5605,8 +5605,8 @@
             "url": "/prompts"
         },
         "/psychic-shadows": {
-            "description": "It’s 3am and your brain is replaying that conversation from six months ago, calculating worst-case financial scenarios, or imagining all the ways you’ll fail at that thing you haven’t even started yet. These aren’t just ordinary worries - they’re psychic shadows, specific thought patterns that loop endlessly in your mind like restless spirits. If you’re tired of being held hostage by these ruminating thoughts, this post will teach you how to craft personalized spells that banish each shadow the moment it appears, giving you a mystical toolkit for transforming persistent mental loops into single-word circuit breakers that actually work.\n\n",
-            "doc_size": 31000,
+            "description": "It’s 3am and my brain is replaying a conversation from six months ago, calculating worst-case financial scenarios, or rehearsing all the ways I’ll fail at something I haven’t even started. These aren’t ordinary worries - they’re psychic shadows, specific thought patterns that loop endlessly like restless spirits. My way out is crafting spells: single words that name the shadow and break the loop the moment it appears. Here’s how I craft them.\n\n",
+            "doc_size": 30000,
             "file_path": "_site/psychic-shadows.html",
             "incoming_links": [
                 "/anxiety-management",
@@ -5621,10 +5621,10 @@
             "outgoing_links": [
                 "/addiction",
                 "/anxiety-management",
-                "/d/resistance",
                 "/mental-pain",
                 "/mind-monsters",
                 "/psychic-weight",
+                "/resistance",
                 "/todo_enjoy"
             ],
             "redirect_url": "",
@@ -5643,14 +5643,13 @@
                 "/process-journal",
                 "/psychic-shadows"
             ],
-            "last_modified": "2026-06-07T18:02:02.652795+00:00",
+            "last_modified": "2026-06-07T11:24:07-07:00",
             "markdown_path": "_d/psychic-weight.md",
             "outgoing_links": [
                 "/7-habits",
                 "/addiction",
                 "/curious",
                 "/d/habits",
-                "/d/resistance",
                 "/death",
                 "/frog",
                 "/gtd",
@@ -5659,6 +5658,7 @@
                 "/mind-monsters",
                 "/pride",
                 "/psychic-shadows",
+                "/resistance",
                 "/shame",
                 "/siy"
             ],
@@ -5822,7 +5822,7 @@
                 "/walking-with-god",
                 "/y26"
             ],
-            "last_modified": "2026-02-28T16:59:39.242785+00:00",
+            "last_modified": "2026-02-28T09:01:21-08:00",
             "markdown_path": "_d/religion.md",
             "outgoing_links": [
                 "/affirmations",
@@ -5847,6 +5847,43 @@
             "redirect_url": "",
             "title": "Remote Work",
             "url": "/remote-work"
+        },
+        "/resistance": {
+            "description": "Stop. Take an ice cold shower right now. You didn’t, did you? Trust me, even if you tried, you wouldn’t. Before you turned on the water, you’d have this irrational fear of stepping in and you wouldn’t do it. The force that stops you is the resistance. The resistance is the personification of the force that stops you from doing the important. The resistance lies, telling us things are hard when they are not. The resistance adds suffering when there is minimal pain and that confuses us, stopping us from doing things which give us the most value, joy and positive identity. The resistance is the enemy of progress.\n\n",
+            "doc_size": 20000,
+            "file_path": "_site/resistance.html",
+            "incoming_links": [
+                "/activation",
+                "/books-that-defined-me",
+                "/enemy",
+                "/energy",
+                "/energy-abundance",
+                "/fail",
+                "/frog",
+                "/gap-year",
+                "/gap-year-igor",
+                "/mental-pain",
+                "/parkinson",
+                "/productive",
+                "/psychic-shadows",
+                "/psychic-weight",
+                "/slow",
+                "/timeoff"
+            ],
+            "last_modified": "2024-10-05T21:35:59-07:00",
+            "markdown_path": "_d/resistance.md",
+            "outgoing_links": [
+                "/addiction",
+                "/d/habits",
+                "/end-in-mind",
+                "/frog",
+                "/gtd",
+                "/magic",
+                "/mental-pain"
+            ],
+            "redirect_url": "",
+            "title": "Resistance: Why you can't make yourself take an ice cold shower",
+            "url": "/resistance"
         },
         "/retire": {
             "description": "When we ponder retirement - we’re masters at planning our exit, but surprisingly vague about what happens after. We’re so focused on what we’re retiring from rather than what we’re retiring to. The real goal isn’t the escape itself - it’s creating a life of genuine freedom, growth, and meaning on the other side. And here’s the plot twist - much of this post isn’t about retirement at all. It’s about what to do while you’re still working.\n\n",
@@ -5883,7 +5920,7 @@
             "url": "/retire"
         },
         "/roblox-dev": {
-            "description": "Zach and Amelia are roblox fans, so it’s fun to be able to create things in there playgrounds. With Zach (and maybe Amelia in a while) it’s even more fun to get to program. Here’s some stuff I’ve learned about programming robolox.\n\n",
+            "description": "Zach and Amelia are roblox fans, so it’s fun to be able to create things in their playgrounds. With Zach (and maybe Amelia in a while) it’s even more fun to get to program. Here’s some stuff I’ve learned about programming Roblox.\n\n",
             "doc_size": 15000,
             "file_path": "_site/roblox-dev.html",
             "incoming_links": [],
@@ -5919,7 +5956,7 @@
             "url": "/save-the-souse"
         },
         "/screencast": {
-            "description": "Screencasting has become an essential tool for content creators, educators, and professionals alike. In this post, I’ll share my experiences and insights on screencasting on macOS, covering various tools, techniques, and tips I’ve discovered along the way. From recording software to post-production enhancements, this guide aims to help you navigate the world of screencasting on your Mac.\n\n",
+            "description": "I record my screen with the built-in macOS recorder, capture my facecam as a separate track, and edit it all together in CapCut. I landed on this pipeline after Loom kept stalling on capture (while costing $20/month) and one-take OBS recordings ate my time. Here’s the setup, plus the tips I picked up along the way.\n\n",
             "doc_size": 18000,
             "file_path": "_site/screencast.html",
             "incoming_links": [
@@ -6008,8 +6045,8 @@
             "url": "/shame"
         },
         "/sharpen-the-saw": {
-            "description": "A young man saw a woodcutter cutting down a tree and asked “What are you doing?” “Are you blind?” the woodcutter replied. “I’m cutting down this tree.” The young man continued. “You look exhausted! Take a break. Sharpen your saw.” The woodcutter explained he’d been sawing for hours and did not have time to take a break. The young man pushed back… “If you sharpen the saw, you would cut down the tree much faster.” The woodcutter said “I don’t have time to sharpen the saw. Don’t you see I’m too busy. These are my insights based on the 7 habits Chapter 7.\n\n",
-            "doc_size": 26000,
+            "description": "A young man saw a woodcutter cutting down a tree and asked “What are you doing?” “Are you blind?” the woodcutter replied. “I’m cutting down this tree.” The young man continued. “You look exhausted! Take a break. Sharpen your saw.” The woodcutter explained he’d been sawing for hours and did not have time to take a break. The young man pushed back… “If you sharpen the saw, you would cut down the tree much faster.” The woodcutter said “I don’t have time to sharpen the saw. Don’t you see I’m too busy.”\n\n",
+            "doc_size": 31000,
             "file_path": "_site/sharpen-the-saw.html",
             "incoming_links": [
                 "/7-habits",
@@ -6021,6 +6058,7 @@
             "markdown_path": "_d/7h-c7.md",
             "outgoing_links": [
                 "/7-habits",
+                "/7h-concepts",
                 "/balance",
                 "/d/habits",
                 "/diet",
@@ -6038,7 +6076,7 @@
             "url": "/sharpen-the-saw"
         },
         "/shoulder-pain": {
-            "description": "\n\n",
+            "description": "I developed shoulder impingement from Turkish Get-Ups - grinding through reps without the mobility or form to do them safely. Direct treatment didn’t help. The fix requires an indirect approach: restore thoracic spine mobility, loosen pecs and lats, then rebuild rotator cuff strength. The shoulder is a symptom of upstream problems - fix those first, and it often resolves itself.\n\n",
             "doc_size": 41000,
             "file_path": "_site/shoulder-pain.html",
             "incoming_links": [
@@ -6180,7 +6218,7 @@
         },
         "/sleight-of-mouth": {
             "description": "Language, often unknown to us, creates our mental models, our reality, and defines our meaning. But the model is not the terrain, and by engaging with the language we can change mental models. Sleight of mouth (SoM) is a series of techniques for changing our models, reality and meanings and thus our experiences. Our mental models are a frame, and we need help going from a ‘problem frame’ to a ‘desired outcome frame’ , a ‘failure frame’, to a ‘feedback frame’ and an ‘impossible frame ‘ to an ‘as if’ frame. To experience the power of language, find anything that is invisible to you, and name it. Now as you’ve given it a name, see how you perceive it, and become aware of it.\n\n",
-            "doc_size": 26000,
+            "doc_size": 34000,
             "file_path": "_site/sleight-of-mouth.html",
             "incoming_links": [
                 "/7h-concepts",
@@ -6191,7 +6229,11 @@
             ],
             "last_modified": "2025-12-07T02:26:29+00:00",
             "markdown_path": "_d/2016-3-12-sleight-of-mouth.md",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/get-to-yes-with-yourself",
+                "/physical-pain",
+                "/voices"
+            ],
             "redirect_url": "",
             "title": "Sleight Of Mouth",
             "url": "/sleight-of-mouth"
@@ -6213,10 +6255,10 @@
                 "/anxiety",
                 "/balance",
                 "/d/habits",
-                "/d/resistance",
                 "/emotions",
                 "/energy",
                 "/produce-consume",
+                "/resistance",
                 "/siy"
             ],
             "redirect_url": "",
@@ -6224,8 +6266,8 @@
             "url": "/slow"
         },
         "/smilebox": {
-            "description": "Way back in 2012 I had this idea to make a Smilebox. The tech wasn’t good enough, but in 2023 tech is right ready. Here’s quoting the original blog post … Nothing makes me happier then seeing someone smile. In fact, seeing others smile makes me smile. As a result, I’m creating a box that captures smiles, which I’m calling a smile box. If you look at the smile box, you’ll see the smiles that are already captured . If you smile at the box, it’ll capture your smile and add it to the box.\n\n",
-            "doc_size": 20000,
+            "description": "Way back in 2012 I had this idea to make a Smilebox. The tech wasn’t good enough then, but by 2023 it was ready. Here’s the original blog post: Nothing makes me happier than seeing someone smile. In fact, seeing others smile makes me smile. As a result, I’m creating a box that captures smiles, which I’m calling a smile box. If you look at the smile box, you’ll see the smiles that are already captured. If you smile at the box, it’ll capture your smile and add it to the box.\n\n",
+            "doc_size": 19000,
             "file_path": "_site/smilebox.html",
             "incoming_links": [
                 "/joy"
@@ -6238,8 +6280,8 @@
             "url": "/smilebox"
         },
         "/snjb": {
-            "description": "Zach built Steve’s Night Jungle and Bar in twee, here’s our port to python!\n\n",
-            "doc_size": 13000,
+            "description": "My son Zach wrote Steve’s Night Jungle and Bar, his own choose-your-own-adventure game, in Twine’s twee format. I loved it so much I ported it to Python so it could live here on the blog, running in your browser via Brython. Play it below.\n\n",
+            "doc_size": 14000,
             "file_path": "_site/snjb.html",
             "incoming_links": [
                 "/timeoff-2021-11"
@@ -6389,7 +6431,7 @@
             "url": "/structure"
         },
         "/sublime": {
-            "description": "Emotional health is pretty important. Western folks don’t have a lot of words to support this. Luckily, the Buddhists have the sublime states: Loving-kindness, Compassion, Altruistic Joy, and Equanimity. Give ‘em a try. Most of this post is based on “The Joy of Happiness”.\n\n",
+            "description": "Emotional health is pretty important. Western folks don’t have a lot of words to support this. Luckily, the Buddhists have the sublime states: Loving-kindness, Compassion, Altruistic Joy, and Equanimity. Give ‘em a try. Most of this post is based on “Joy on Demand”.\n\n",
             "doc_size": 19000,
             "file_path": "_site/sublime.html",
             "incoming_links": [
@@ -6416,7 +6458,11 @@
             "description": "“Igor, what advice would you give a 20-year-old that just found out their dad killed themselves?” Sadly, when I was 20, I got a call from a family friend saying “Igor, you want to sit down, this isn’t going to be fun to hear.” My dad had taken his own life.\n\n",
             "doc_size": 15000,
             "file_path": "_site/suicide.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/death",
+                "/depression",
+                "/mania"
+            ],
             "last_modified": "2024-11-09T06:51:11-08:00",
             "markdown_path": "_d/suicide.md",
             "outgoing_links": [],
@@ -6441,7 +6487,9 @@
             ],
             "last_modified": "2025-02-15T10:13:03-08:00",
             "markdown_path": "_posts/2020-01-04-sustainable-work.md",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/moments-at-work"
+            ],
             "redirect_url": "",
             "title": "I don't want to die knowing I spent too much time at work, and I bet you don't either",
             "url": "/sustainable-work"
@@ -6470,7 +6518,7 @@
             "url": "/switch"
         },
         "/synergize": {
-            "description": "We’ve all got stuff we’re good at and stuff we’re bad at. Combine them right and the system is greater than the sum of the parts — sometimes a lot greater. Synergy is the payoff for everything that came before: independence, Win/Win, and seeking first to understand all converge here. These are my insights from 7 habits Chapter 6.\n\n",
+            "description": "I’ve got stuff I’m good at and stuff I’m bad at — so does everyone I work and live with. Combine them right and the system is greater than the sum of the parts — sometimes a lot greater. Synergy is the payoff for everything that came before: independence, Win/Win, and seeking first to understand all converge here. These are my insights from 7 habits Chapter 6.\n\n",
             "doc_size": 28000,
             "file_path": "_site/synergize.html",
             "incoming_links": [
@@ -6615,7 +6663,7 @@
         },
         "/td/dump_imessage_history": {
             "description": "Copied from my GitHub techdiary\n\n",
-            "doc_size": 15000,
+            "doc_size": 16000,
             "file_path": "_site/td/dump_imessage_history.html",
             "incoming_links": [],
             "last_modified": "2025-08-22T11:54:12-07:00",
@@ -6695,7 +6743,7 @@
         },
         "/td/minecraft": {
             "description": "Copied from my GitHub techdiary\n\n",
-            "doc_size": 17000,
+            "doc_size": 16000,
             "file_path": "_site/td/minecraft.html",
             "incoming_links": [],
             "last_modified": "2026-01-03T17:27:23+00:00",
@@ -6807,7 +6855,7 @@
         },
         "/td/visual-vocabulary": {
             "description": "Copied from my GitHub techdiary\n\n",
-            "doc_size": 14000,
+            "doc_size": 13000,
             "file_path": "_site/td/visual-vocabulary.html",
             "incoming_links": [
                 "/viz"
@@ -6863,7 +6911,7 @@
             "url": "/tech-rituals"
         },
         "/terzepatide": {
-            "description": "“You know Igor, weight loss is a solved problem” - my bestie, texted me when I complained about my pants no longer fitting. Remember - Diet dominates weight, as weight is simple arithmetic -“calories in” minus “calories out”. For me, will power dominates diet, and terzepatide dominates will power when stuffing things in my mouth. I started Terzepatide in February 2024, and so far it’s been great.\n\n",
+            "description": "“You know Igor, weight loss is a solved problem” - my bestie, texted me when I complained about my pants no longer fitting. Remember - Diet dominates weight, as weight is simple arithmetic -“calories in” minus “calories out”. For me, will power dominates diet, and tirzepatide dominates will power when stuffing things in my mouth. I started tirzepatide in February 2024, and so far it’s been great.\n\n",
             "doc_size": 22000,
             "file_path": "_site/terzepatide.html",
             "incoming_links": [
@@ -6878,7 +6926,7 @@
             "markdown_path": "_d/terzepatide.md",
             "outgoing_links": [],
             "redirect_url": "",
-            "title": "Terzepatide: The magic weight loss shot",
+            "title": "Tirzepatide: The magic weight loss shot",
             "url": "/terzepatide"
         },
         "/tesla": {
@@ -6948,7 +6996,11 @@
             "description": "I’ve only had one truly unbearable job. It was awful - The code base sucked, the boss had pointed hair, and to top it off I got a terrible review.\n\n",
             "doc_size": 15000,
             "file_path": "_site/the-recruiter-does-not-think-you-are-hot.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/interviewsarehard",
+                "/job-hunt-stress",
+                "/outsourcing"
+            ],
             "last_modified": "2020-04-12T19:50:58+00:00",
             "markdown_path": "_posts/2020-01-01-the-recruiter-does-not-think-you-are-hot.md",
             "outgoing_links": [],
@@ -6970,7 +7022,7 @@
         },
         "/timeoff": {
             "description": "Time off is critical, it’s how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with turning your 1 week off into an action-packed tour of Disneyland. But, there are other kinds of time off that we’ll discuss too. Like most things, time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!\n\n",
-            "doc_size": 47000,
+            "doc_size": 49000,
             "file_path": "_site/timeoff.html",
             "incoming_links": [
                 "/activation",
@@ -6999,12 +7051,11 @@
                 "/timeoff-2025-08",
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-07-07T04:37:10-07:00",
+            "last_modified": "2026-07-07T05:16:20-07:00",
             "markdown_path": "_d/time_off.md",
             "outgoing_links": [
                 "/addiction",
                 "/balloon",
-                "/d/resistance",
                 "/diet",
                 "/energy",
                 "/essentialism",
@@ -7019,6 +7070,8 @@
                 "/mind-at-work",
                 "/packing",
                 "/parkinson",
+                "/produce-consume",
+                "/resistance",
                 "/siy",
                 "/timeoff-2020-03",
                 "/timeoff-2024-02",
@@ -7049,7 +7102,7 @@
         },
         "/timeoff-2020-12": {
             "description": "It’s Corona virus X-mas, and I’ve got 2 weeks off. In an attempt to maximize my personal development and satisfaction during my timeoff, by staying balanced, and minimizing my vegetation I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
-            "doc_size": 23000,
+            "doc_size": 22000,
             "file_path": "_site/timeoff-2020-12.html",
             "incoming_links": [
                 "/timeoff-2021-12"
@@ -7182,7 +7235,7 @@
         },
         "/timeoff-2023-04": {
             "description": "It’s spring break 2023! The kids and I are going to Canada to see Baba, Yelena, Justin, Sam and Baltasar and Rada’s Family. Unfortunately Tori can’t come as she’s critical to her play opening and it’ll be opening that week.\n\n",
-            "doc_size": 19000,
+            "doc_size": 18000,
             "file_path": "_site/timeoff-2023-04.html",
             "incoming_links": [],
             "last_modified": "2026-03-21T12:32:21-07:00",
@@ -7197,8 +7250,8 @@
             "url": "/timeoff-2023-04"
         },
         "/timeoff-2023-08": {
-            "description": "It’s summer break 2023! It’s late August and our last chance to get a vacation before the kids go back to school. We were going to go to Chilliwack to try a deli run by a small jewish cult, but alas it’s like 100 degrees so we’re going to to coast instead!\n\n",
-            "doc_size": 18000,
+            "description": "It’s summer break 2023! It’s late August and our last chance to get a vacation before the kids go back to school. We were going to go to Chilliwack to try a deli run by a small jewish cult, but alas it’s like 100 degrees so we’re going to the coast instead!\n\n",
+            "doc_size": 14000,
             "file_path": "_site/timeoff-2023-08.html",
             "incoming_links": [],
             "last_modified": "2026-03-21T12:32:21-07:00",
@@ -7230,7 +7283,7 @@
         },
         "/timeoff-2024-02": {
             "description": "It’s midwinter break and I’ve got a week off. Most of these I try to do as a big family adventure. Finding something everyone wants to do is super challenging, so this time we tried something new, divide and conquer: I had a 1-2 day mini-vacations with Amelia, Zach, and even Tori. It worked out very well, the time-off was packed, Stanley Park with Amelia, Yellow Deli with Zach, and a crazy hotel on the Peninsula with Tori. On top of that restarting magic, balloons, and kettlebells and meditation in between.\n\n",
-            "doc_size": 23000,
+            "doc_size": 22000,
             "file_path": "_site/timeoff-2024-02.html",
             "incoming_links": [
                 "/bc",
@@ -7250,7 +7303,7 @@
         },
         "/timeoff-2024-04": {
             "description": "It’s spring break 2024 and I’ve got a week off. The last few weeks have been a bit crazy at work trying to get some big features launched and into public testing, so very excited for the time off. I usually try to avoid too much tech, but I’m looking forward to making some tech investments as it’s been a while.\n\n",
-            "doc_size": 20000,
+            "doc_size": 19000,
             "file_path": "_site/timeoff-2024-04.html",
             "incoming_links": [],
             "last_modified": "2025-12-07T03:17:42+00:00",
@@ -7319,10 +7372,11 @@
                 "/ai-policy",
                 "/awareness",
                 "/be-proactive",
-                "/eulogy",
-                "/four-healths",
+                "/changelog",
+                "/d/habits",
                 "/joy",
                 "/life-journal",
+                "/maybe",
                 "/meta",
                 "/mind-at-work",
                 "/packing",
@@ -7359,6 +7413,7 @@
             "last_modified": "2025-08-22T11:54:12-07:00",
             "markdown_path": "_td/tool.md",
             "outgoing_links": [
+                "/ast-grep",
                 "/nlp",
                 "/osx",
                 "/td/ios",
@@ -7555,7 +7610,7 @@
         },
         "/vlc": {
             "description": "IINA Player Keyboard Shortcuts\n\n",
-            "doc_size": 17000,
+            "doc_size": 14000,
             "file_path": "_site/vlc.html",
             "incoming_links": [],
             "last_modified": "2025-06-07T09:22:10-07:00",
@@ -7577,7 +7632,8 @@
                 "/emotions",
                 "/gap-year-igor",
                 "/mind-monsters",
-                "/operating-manual"
+                "/operating-manual",
+                "/sleight-of-mouth"
             ],
             "last_modified": "2024-04-14T19:24:46-07:00",
             "markdown_path": "_posts/2017-01-01-voices-in-my-head.md",
@@ -7734,7 +7790,9 @@
             "description": "Your customers don’t provide referrals because it’s a risk to their credibility. Remove the credibility risk, and your referrals will follow.\n\n",
             "doc_size": 14000,
             "file_path": "_site/why-is-no-one-referring.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/d/2016-2-15-Seth-Godin-Notes"
+            ],
             "last_modified": "2025-08-22T10:48:49-07:00",
             "markdown_path": "_posts/2015-3-13-why-is-no-one-referring.md",
             "outgoing_links": [],
@@ -7743,7 +7801,7 @@
             "url": "/why-is-no-one-referring"
         },
         "/win-win": {
-            "description": "Win/Win is a constantly seeking mutual benefit in all interactions. Win/Win means that agreements or solutions are mutually beneficial, mutually satisfying. With a Win/Win solution, all parties feel good about the decision and feel committed to the action plan. Win/Win sees life as a cooperative, not a competitive arena. Most people tend to think in terms of dichotomies: strong or weak, hardball or softball, win or lose. But that kind of thinking is fundamentally flawed. It’s based on power and position rather than on principle. Win/Win is based on the paradigm that there is plenty for everybody, that one person’s success is not achieved at the expense or exclusion of the success of others.\n\n",
+            "description": "Win/Win sounds like soft idealism. It isn’t — in any relationship that lasts past a single deal, it’s the only paradigm that survives, because if we don’t both win, we both eventually lose. These are my insights based on the 7 habits Chapter 4.\n\n",
             "doc_size": 47000,
             "file_path": "_site/win-win.html",
             "incoming_links": [

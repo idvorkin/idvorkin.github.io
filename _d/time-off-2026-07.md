@@ -10,17 +10,13 @@ redirect_from:
 
 22 days, 5 countries, 4 Dvorkins, one whirlwind tour. From Reykjavík to Amsterdam by way of Stockholm, Oslo, and the Norwegian fjords. This is the first time we've attempted a trip of this scope as a family — the kids are 16 and 12, both still home, and the window for "all four of us on the road together" closes faster than I'd like.
 
-> When you sacrifice identity for consumption, you end up with neither.
-
-The whole trap of time off in one sentence — vegetating _feels_ like rest, but it quietly starves the roles that make you _you_.
-
 > 🗺️ **Trip map & city guide:** [Scandinavian Whirlwind 2026 →](https://idvorkin-ai-tools.github.io/scandinavia-2026/) — one page per stop (Iceland → Copenhagen → Stockholm → Oslo → fjords → Amsterdam), with things to do, hours, and a live weather table.
 
 For context on why I take time off: [/time-off](/time-off).
 
 ## Why I'm taking this time off — ranked
 
-[When you sacrifice identity for consumption, you end up with neither](/produce-consume). So I wrote down what I'm actually here for, in order — and then the trip rearranged the list on me.
+I wrote down what I'm actually here for, in order — and then the trip rearranged the list on me.
 
 **What I expected:**
 
@@ -37,25 +33,11 @@ For context on why I take time off: [/time-off](/time-off).
 
 4 and 5 are the interesting ones, and they're linked: the one real sacrifice I've made to AI is that the [Dealer of Smiles and Wonder](/joy) just stopped showing up. Out here, with the screens quiet, he walked right back in — the guy underneath was someone I'd been missing.
 
-## Re-stacking the roles
-
-Ranking the trip made me ask the bigger version of the question: if that's the order for 22 days, what's the stack for every day? So I re-sorted the roles into three honest tiers.
-
-**Non-negotiables — protect first, daily.** The two foundational [Healths](/four-healths): _Physical_, banked before the family wakes up, and _Emotional_ — awareness and compassion, handled as it happens. Everything else is built on these.
-
-**Frequently starved — feed these.** _Father / Husband_, and the _Joy Giver_ — the balloons-and-magic guy from [the eulogy](/eulogy). The roles I'd grieve losing, and the exact ones I let go hungry when work gets loud. The trip already proved the Joy Giver comes roaring back the moment I stop starving him.
-
-**Over-invested — dial back.** _Technologist_, and honestly everything else, parked way below where they've been running. Not because the work doesn't matter — because it's the finished room, and I keep redecorating it instead of walking into the ones that aren't.
-
-## A learning to bring home
-
-First one already banked: **meditation travels, and churches are the best place to do it.** Duck into whatever old cathedral the city is proud of, take a pew, and just sit — cool stone, tall ceilings, nothing asked of you. The room is built to slow you down; let it.
-
 ## How it's actually going
 
 ### 🇮🇸 Reykjavík
 
-The pools are the whole thing. You start in an 8°C cold plunge — the kind that empties your head — then climb through 40, 42, 44, one of the hot ones fed by a pipe running straight in from the ocean. Sauna with all four of us. One morning I banked a full 5am kettlebell session before anyone woke up — drove to the gym and finished with about six minutes to spare before the rain moved in. The keystone held. Sauna again after. We stayed in a hostel with a shared kitchen, and the best night was cooking dinner next to strangers and trading stories across the table.
+The pools are the whole thing. You start in an 8°C cold plunge — the kind that empties your head — then climb through 40, 42, 44, one of the hot ones fed by a pipe running straight in from the ocean. Sauna with all four of us. One morning I banked a full 5am kettlebell session before anyone woke up. It was already pouring at 5, so instead of the five-minute walk I took the rental Tesla to the gym — felt a little lame driving something that short, but I made it happen. The keystone held. Sauna at 7. We stayed in a hostel with a shared kitchen, and the best night was cooking dinner next to strangers and trading stories across the table.
 
 Two things stuck with me about Iceland. Family is clearly the whole priority — a trampoline in every yard, kids everywhere. And nobody eats out; there are barely any restaurants, so everyone eats in.
 
@@ -70,6 +52,18 @@ Amelia did the zoo solo and out-prepared me — when my phone died she handed me
 We saw the Vasa, the warship that capsized in the harbor on its maiden voyage and got raised mostly intact three centuries later. Zach went on a tear at dinner: frog legs, ratatouille, escargot.
 
 Sunday we ducked into a Greek Orthodox church, and Zach got a blessing from the visiting bishop. I nearly got thrown out of the same church for doing magic in the pews. Standing there getting chewed out, I hit a Viktor Frankl beat — between what happens to you and how you respond there's a gap, and no one can take away the freedom inside it. Two wins: I caught my fight-or-flight reaction multiple times and breathed through it instead of firing back, and I got some work in on my memorization practice. [Proactive](/be-proactive), not reactive — I [chose the response](/act).
+
+### 🚂 The train to Oslo
+
+Confession: on the six-hour train from Stockholm to Oslo I went on a bit of a tech bender. The kids watched TV; I sat there and banged out the whole trip site — the city deep-dives, the maps, the war pack, all of it — and logged the blitz in my [changelog](/changelog#week-of-2026-07-06). Six hours of what I'd call super blogging time, and honestly I quite enjoyed it. At least it was [building, not scrolling](/produce-consume#the-production-advantage).
+
+### 🤔 Unexpected realizations
+
+Before the trip I moved my social apps onto my [work phone](/maybe#the-second-phone) — but LinkedIn stayed on my main phone the whole way. And all trip my thumb kept opening it on autopilot. Why do I keep checking that? What do I think I'm going to find? It was right there, so I kept finding it.
+
+Tonight I finally locked it out. The funny part: going through the motions to block it, I somehow ended up at the LinkedIn login page anyway — like the habit walked me there on its own. Kind of weird to watch myself do it.
+
+It's got me curious about the [habit loop](/habits#habit-model) — cue, craving, response, reward. Now the app's gone and the reward with it, so which part keeps pulling the trigger? I don't have the answer yet. I want to sit with that one.
 
 ## At a Glance
 
@@ -124,20 +118,17 @@ All 4 Dvorkins (Igor, Tori, Zach, Amelia). Iceland and Copenhagen legs are just 
 
 ### 🇳🇴 Oslo (Jul 7–10) · [📍 map](https://www.google.com/maps/place/Oslo)
 
-- Vigeland Sculpture Park, Aker Brygge waterfront
-- **National Museum**
-- **Authentic Oslo Bike Tour** — Bjørvika → Akerselva → Mathallen → Grünerløkka (3h, 11 km)
-- **Holmenkollen ski jump** — zipline! (kids will love)
-- Munch Museum + Grünerløkka neighborhood
-- **Oslofjord hike** to Vettakollen summit (3.5h, 5.4 km) + dinner cruise
+- A morning in Grünerløkka — coffee, record bins, the kids picking through secondhand racks
+- The new Deichman library in Bjørvika — floors of light, kids reading everywhere
+- A boat tour on the Oslofjord
+- Walked under the Barcode towers in Bjørvika
+- Walked the Opera House roof — white marble sloping straight down into the water
 
 ### 🏔️ Aurland + Voss (Jul 10–13) — the fjords · [📍 Aurland](https://www.google.com/maps/place/Aurland) · [📍 Voss](https://www.google.com/maps/place/Voss)
 
-- **Bergen Railway** Oslo → Flåm — one of the world's most scenic train rides
-- **Fjordsafari RIB** on Aurlandsfjord + UNESCO Nærøyfjord (2h 15m, suits supplied)
-- Fjord cruise Flåm → Gudvangen
-- **Viking Village Njardarheimr** (Gudvangen) — Viking lunch, axe-throwing, archery
-- **Voss Gondola** to 820m summit (1.5h return)
+- Two nights based in Aurland, deep in fjord country
+- A fjord cruise from Aurland to Gudvangen, the Viking town — the amazing Nærøyfjord, the tour that blew us away: walls of rock straight out of the water, waterfalls off the top, a scale that shut the whole boat up
+- Then the bus from Gudvangen up to Voss
 
 ### 🌉 Bergen (Jul 13–16) · [📍 map](https://www.google.com/maps/place/Bergen,+Norway)
 

@@ -19,9 +19,11 @@ alias:
 
 Time off is critical, it's how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with turning your 1 week off into an action-packed tour of Disneyland. But, there are other kinds of time off that we'll discuss too. Like most things, time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!
 
-> When you sacrifice identity for consumption, you end up with neither.
+> [When you sacrifice identity for consumption, you end up with neither](/produce-consume).
 
 The whole trap of time off in one sentence — vegetating _feels_ like rest, but it quietly starves the roles that make you _you_.
+
+There's a flip side to that trap, and it's just as reliable: **if you plan to have a good time, you will.** When I decide up front that I'm going to enjoy something — and set up the conditions for it — I almost always do. Enjoyment isn't luck; it's mostly the people I'm with and the memories I build, which are the two ingredients Brooks keeps coming back to below. Planning is how I get both into a trip before it starts.
 
 <div class="alert alert-info" role="alert">
 ✈️ <strong>Next planned time-off — July 2026:</strong>
@@ -281,12 +283,14 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
 
 ##### Where to eat
 
+- **Eating out isn't worth it for me.** Honestly it's not that enjoyable, and past 45 my gut can't handle the grease — restaurant food leaves me feeling worse, not better. I'd rather eat simple.
+- **Book a place with a kitchen.** Whenever I can, I get a room or Airbnb with a kitchen so I can cook plain, non-greasy food from the grocery store instead of eating out.
 - **Shop the grocery store.** Some of my best travel meals come straight out of a supermarket — there's nothing wrong with a cucumber, some fruit, and a rotisserie chicken. Cheaper, healthier, and you skip the wait.
 - **Skip the tourist areas.** The food ringing the big sights is overpriced and mediocre. Walk a few blocks out, or eat where the locals do — the meal is better and so is the bill.
 
 #### Breakfast
 
-Family loves the free hotel breakfast (and it is a great deal), but I can't afford the calories. See detailed guidance under [Diet → Hotel breakfast](/diet#hotel-breakfast).
+**Skip the hotel breakfast — but the motel breakfast is fine.** The family loves the hotel spread and it's a great deal, but I never should: I can't afford the calories, and the greasy abundance just leaves me feeling worse. The motel breakfast is a different animal — easy, cheap, great for the kids, and modest enough that my self-control holds. That one I'll do. See detailed guidance under [Diet → Hotel breakfast](/diet#hotel-breakfast).
 
 #### Terzepatide
 

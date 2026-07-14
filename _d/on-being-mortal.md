@@ -22,22 +22,23 @@ This is my summary of Being Mortal by Atul Gawande (also author of The Checklist
 
 - [My last year](#my-last-year)
 - [The book](#the-book)
-    - [Introduction](#introduction)
-    - [The Independent Self](#the-independent-self)
-    - [Things Fall Apart](#things-fall-apart)
-    - [Dependence](#dependence)
-    - [Assistance](#assistance)
-    - [A Better Life](#a-better-life)
-    - [Letting Go](#letting-go)
-    - [Hard Conversations](#hard-conversations)
-    - [Health span vs lifespan](#health-span-vs-lifespan)
-    - [Courage](#courage)
+  - [Introduction](#introduction)
+  - [The Independent Self](#the-independent-self)
+  - [Things Fall Apart](#things-fall-apart)
+  - [Dependence](#dependence)
+  - [Assistance](#assistance)
+  - [A Better Life](#a-better-life)
+  - [Letting Go](#letting-go)
+  - [Hard Conversations](#hard-conversations)
+  - [Health span vs lifespan](#health-span-vs-lifespan)
+  - [Courage](#courage)
 - [Statistics](#statistics)
-    - [Death Rates by Cause](#death-rates-by-cause)
-    - [Probability of death given current age](#probability-of-death-given-current-age)
+  - [Death Rates by Cause](#death-rates-by-cause)
+  - [Probability of death given current age](#probability-of-death-given-current-age)
 - [When I get old](#when-i-get-old)
 - [Quotes](#quotes)
 - [Other resources](#other-resources)
+- [Spiritual Health](#spiritual-health)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -90,6 +91,8 @@ Courage is strength in the face of knowledge of what is to be feared or hoped. W
 - Rating From 25-35: Accidents; Homicide; Suicide
 - Global deaths/year: 56M
 - Global deaths/day: 150K
+
+Suicide shows up on every one of these lists. My model for it: a [brain attack](/suicide).
 
 <!-- paragraph is styled correctly-->
 
