@@ -1,10 +1,8 @@
 /**
  * Recent Posts Display Module
  *
- * Powers the /recent page. Fetches the site's metadata from back-links.json,
- * filters out entries without a last_modified timestamp, and displays all
- * posts in reverse chronological order (newest first). Everything runs
- * client-side, so the page always shows current data on load.
+ * Fetches and displays all posts sorted by last modification date
+ * from the backlinks.json file.
  */
 
 import { type IPage, getProcessedPages } from "./recent-posts-shared";
