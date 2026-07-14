@@ -2022,7 +2022,7 @@
         },
         "/changelog": {
             "description": "A weekly summary of what changed on this blog and across my GitHub projects. Useful for returning readers who want to catch up on new content and updates.\n\n",
-            "doc_size": 243000,
+            "doc_size": 246000,
             "file_path": "_site/changelog.html",
             "incoming_links": [
                 "/timeoff-2026-07"
@@ -2049,6 +2049,7 @@
                 "/ai-training",
                 "/amelia",
                 "/be-proactive",
+                "/chop",
                 "/claw",
                 "/dark-factory",
                 "/design",
@@ -2058,6 +2059,7 @@
                 "/first-things-first",
                 "/first-understand",
                 "/four-healths",
+                "/gap-year",
                 "/gas-city",
                 "/gas-city-home",
                 "/gas-city-rig",
@@ -2079,6 +2081,7 @@
                 "/maybe",
                 "/meta",
                 "/money",
+                "/mortality-software",
                 "/mosh",
                 "/packing",
                 "/podcast",
@@ -5450,7 +5453,7 @@
                 "/pet-projects",
                 "/y24"
             ],
-            "last_modified": "2026-07-07T05:22:16-07:00",
+            "last_modified": "2025-03-02T19:25:33-08:00",
             "markdown_path": "_d/process-journal.md",
             "outgoing_links": [
                 "/affirmations",
