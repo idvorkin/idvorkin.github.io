@@ -138,6 +138,8 @@ Link the YouTube Videos (merge the two together)
 
 ## Theory
 
+Everything below is the _why_ — what joy is and how it works. For the _how_, the nine rules I actually run through in my head while I'm performing, I pulled those into their own post: [The Performer's Playbook](/performer-playbook).
+
 ### Attributes of Joy
 
 Joy is an involuntary experience that acts on you. You can be more receptive to joy, but even when you're not you can experience joy against your will.
