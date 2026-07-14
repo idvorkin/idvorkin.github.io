@@ -88,9 +88,9 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
 
 ### The Most Expensive I Can Get
 
-Currently I'm using Claude Opus 4.5 on the $200/month plan.
+Currently I'm using Claude Opus 4.5 on the \$200/month plan.
 
-On one hand you might think I'm crazy spending $2,400 a year. On the other hand, imagine having brilliant collaborators who force multiply everything you do, train you up, and basically give you a PhD in whatever you're working on.
+On one hand you might think I'm crazy spending \$2,400 a year. On the other hand, imagine having brilliant collaborators who force multiply everything you do, train you up, and basically give you a PhD in whatever you're working on.
 
 ### Why Not Codex, Gemini, etc.?
 
@@ -164,7 +164,7 @@ This diagram perfectly captures the evolution I've lived through. Let me break d
 
 **Note to self: Review this section regularly. These principles are easy to forget when you're heads-down in a session.**
 
-- **Rent the most expensive brain you can**: Spend tokens liberally. Don't be cheap with AI usage - the $200/month is nothing compared to the force multiplication you get
+- **Rent the most expensive brain you can**: Spend tokens liberally. Don't be cheap with AI usage - the \$200/month is nothing compared to the force multiplication you get
 - **Maximize time between interventions**: Like Tesla's self-driving metrics, the goal is reducing how often you need to take over. Every friction point kills flow
   - **Don't be the intern doing grudge work**: If AI writes code and you manually test it, you've got the roles backwards. Make AI the tester too - be the architect, not the QA intern
   - **Tests as specification**: The clearer the tests, the less I need to intervene
@@ -172,6 +172,7 @@ This diagram perfectly captures the evolution I've lived through. Let me break d
   - **Conventions compound**: Time spent on CLAUDE.md pays off across every session
 - **Isolation is freedom**: YOLO containers let Claude run autonomously without risk to my real environment
 - **"Don't glaze me" changes everything**: Claude is far more useful when it pushes back on bad ideas
+- **Rot repair is nearly free**: Reviving a stale project used to mean a weekend of toolchain archaeology ([Software Rot](/d/2017-09-10-software-rot)); now an agent grinds through the upgrades for me
 
 ### What I'm Still Figuring Out
 

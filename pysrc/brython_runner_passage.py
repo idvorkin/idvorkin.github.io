@@ -1,8 +1,11 @@
-from collections import defaultdict
-from typing import Dict, Callable, List
+from typing import List
 from dataclasses import dataclass
-import copy
-from pysrc.passages import *
+
+try:
+    from pysrc.passages import GetHeader, Passage, PassageFactory, TP
+except ModuleNotFoundError:
+    # Brython resolves imports relative to this script's directory (pysrc/)
+    from passages import GetHeader, Passage, PassageFactory, TP
 from browser import document, window, html, markdown  # type:ignore
 
 
@@ -88,12 +91,11 @@ class HtmlRenderer:
                 output <= html.SPAN(md_to_html(element))
                 continue
             if isinstance(element, TP):
-                alink = html.A(f" {element.Text} ")
                 output <= self.makeLink(element.Text, element.PassageFactory)
                 continue
             if callable(element):
                 function_name = element.__name__
-                text_link = f"{function_name.replace('_',' ')}"
+                text_link = f"{function_name.replace('_', ' ')}"
                 if text_link.startswith(" "):
                     text_link = text_link[1:]
                 output <= self.makeLink(text_link, element)
