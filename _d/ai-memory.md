@@ -85,7 +85,9 @@ This is different from MEMORY.md in a crucial way: beads memories are part of a 
 
 Here's where Yegge gets spicy. The conventional wisdom for agent coordination is: write a plan in markdown, have the agent follow it. Create `PLAN.md`, list the tasks, let the agent check them off.
 
-Yegge's counterargument, from his experience building and using Beads: **"Your agents simply cannot keep track of work using Markdown files."**
+Yegge's counterargument, from his experience building and using Beads:
+
+> Your agents simply cannot keep track of work using Markdown files.
 
 His evidence: 605 stale plan files accumulating across projects. Agents create them enthusiastically, update them sporadically, and abandon them completely. A markdown plan can't be queried ("show me all blocked tasks"), can't track dependencies ("what needs to finish before I start this?"), and can't coordinate across agents ("is anyone else working on the auth module?").
 
