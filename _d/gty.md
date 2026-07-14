@@ -8,7 +8,7 @@ redirect_from:
   - /negotiation
 ---
 
-Negotiation is the heart of collaboration. It is what makes conflict potentially meaningful and productive for all parties. Getting To Yes is the seminal book on negotiation. It's the deep dive into [win win or no deal](/win-win) and [seek first to understand](/first-understand). The formula: be hard on problems and soft on people, then focus on the desired outcomes not the positions, next get more options on the table, and make sure you measure by objective criteria - lastly, know your BATNA. Several years later a new book came out by a hostage negotiator. Instead of an analytic focus, it's all about influencing the [elephant](/switch).
+Negotiation is the heart of collaboration. It is what makes conflict potentially meaningful and productive for all parties. Getting To Yes is the seminal book on negotiation. It's the deep dive into [win-win or no deal](/win-win) and [seek first to understand](/first-understand). The formula: be hard on problems and soft on people, then focus on the desired outcomes not the positions, next get more options on the table, and make sure you measure by objective criteria - lastly, know your BATNA. Several years later a new book came out by a hostage negotiator. Instead of an analytic focus, it's all about influencing the [elephant](/switch).
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->

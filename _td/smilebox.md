@@ -4,7 +4,7 @@ permalink: /smilebox
 layout: post
 ---
 
-Way back in 2012 I had this idea to make a Smilebox. The tech wasn't good enough, but in 2023 tech is right ready. Here's quoting the original blog post ... Nothing makes me happier than seeing someone smile. In fact, seeing others smile makes me smile. As a result, I’m creating a box that captures smiles, which I'm calling a smile box. If you look at the smile box, you’ll see the smiles that are already captured . If you smile at the box, it’ll capture your smile and add it to the box.
+Way back in 2012 I had this idea to make a Smilebox. The tech wasn't good enough then, but by 2023 it was ready. Here's the original blog post: Nothing makes me happier than seeing someone smile. In fact, seeing others smile makes me smile. As a result, I’m creating a box that captures smiles, which I'm calling a smile box. If you look at the smile box, you’ll see the smiles that are already captured. If you smile at the box, it’ll capture your smile and add it to the box.
 
 <script src="https://unpkg.com/@grammarly/editor-sdk?clientId=client_AMv8Ek2YNBrCaW2gfCXEa5"> </script>
 <script src="assets/js/face-api.js"></script>
