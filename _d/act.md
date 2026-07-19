@@ -6,7 +6,7 @@ permalink: /act
 tags:
   - book-notes
   - emotional-health
-  - mental-health
+  - mental health
   - psychology
 ---
 
