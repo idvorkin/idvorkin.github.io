@@ -104,8 +104,6 @@ He pairs it with the **Demand Horizon** — set by the hardest problem you actua
 
 {% include quote.html text="Superhuman means unverifiable." author="Steve Yegge" url="https://steve-yegge.medium.com/the-flat-curve-society-36c8b01eb33b" %}
 
-My take: this is the real ceiling, and it isn't the model's — it's yours. [Deep Blue](#deep-blue) says the machine got good at your craft; the Discernment Horizon says the payoff is exactly the judgment to check work you couldn't have produced yourself. That's why senior experience compounds instead of evaporating — the deeper your discernment, the further out your horizon sits, and the more of a superhuman model's output you can actually cash. The move isn't to out-type the AI. It's to keep raising the hardest problem you bring and keep sharpening the judgment that lets you trust the answer. Stop doing either and the curve goes flat for you, no matter how good the models get.
-
 ## Heresies
 
 Yegge nails this one in his [Gas Town Emergency User Manual](https://steve-yegge.medium.com/gas-town-emergency-user-manual-cf0e4556d74b). A heresy is when AI develops a compelling but wrong belief about your system — not a hallucination about the world, but a false conviction about _your_ codebase. And the killer property is that they spread and persist:
