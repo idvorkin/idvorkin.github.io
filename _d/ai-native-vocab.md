@@ -26,6 +26,7 @@ AI is spawning a whole new vocabulary — some of it genuinely useful, some of i
 - [Dark Factory](#dark-factory)
 - [Data Provenance](#data-provenance)
 - [Deep Blue](#deep-blue)
+- [Discernment Horizon](#discernment-horizon)
 - [Heresies](#heresies)
 - [Hill Climbing](#hill-climbing)
 - [Infinite Loop](#infinite-loop)
@@ -92,6 +93,18 @@ My take: this lands on you whether you want it or not, in three places. (1) **Wh
 My take: this is the emotion underneath the [Fear](/ai-native-manager#the-ai-chasm-assessment-and-adoption-stages) stage. When someone is stuck in Fear, they're probably experiencing Deep Blue — they just don't have a word for it. Giving it a name makes it easier to discuss. "I think you might be feeling some Deep Blue" is more useful than "are you worried about AI?" Chess players and Go players went through this and came out stronger. But they needed time, space, and the realization that being good at chess still mattered even after machines were better at it. Same thing here — the skills still matter, the role just changes.
 
 But here's the really good news: there's a new type of mastery to be had. DHH talks about [coding as mastery](/chop#reasons-to-program---mastery-vs-getting-shit-done) — the joy of VIM combos feeling like Street Fighter II joystick combos, the craft of the thing. Deep Blue assumes that mastery is over because the machine can do it. But that's wrong. The mastery shifts — from writing code to orchestrating AI to build things that were previously impractical. And the payoff is real: you can genuinely do 10x as much. That's not hype, that's more good in the world, more problems solved, more things built. This is especially true for senior folks. The people with the deepest understanding of systems, architecture, and trade-offs are exactly the ones who get the most leverage from AI. All that experience doesn't become worthless — it becomes the judgment layer that makes AI-assisted work actually good instead of just fast.
+
+## Discernment Horizon
+
+Steve Yegge's term from [The Flat Curve Society](https://steve-yegge.medium.com/the-flat-curve-society-36c8b01eb33b) for the point past which you can no longer tell whether an AI is right — because verifying its answer is itself beyond you.
+
+{% include quote.html text="Past this scary line, you can't tell whether the model is right, because checking the work is itself beyond you." author="Steve Yegge" url="https://steve-yegge.medium.com/the-flat-curve-society-36c8b01eb33b" %}
+
+He pairs it with the **Demand Horizon** — set by the hardest problem you actually bring. Easy problems never stretch a smarter model, so it can't pull ahead; the outputs look the same because the problem never tested either one. Together the two horizons are why AI progress _feels_ flat even as the models keep climbing: one caps how much a better model can help you, the other caps how much of its help you can trust. His compression of the second:
+
+{% include quote.html text="Superhuman means unverifiable." author="Steve Yegge" url="https://steve-yegge.medium.com/the-flat-curve-society-36c8b01eb33b" %}
+
+My take: this is the real ceiling, and it isn't the model's — it's yours. [Deep Blue](#deep-blue) says the machine got good at your craft; the Discernment Horizon says the payoff is exactly the judgment to check work you couldn't have produced yourself. That's why senior experience compounds instead of evaporating — the deeper your discernment, the further out your horizon sits, and the more of a superhuman model's output you can actually cash. The move isn't to out-type the AI. It's to keep raising the hardest problem you bring and keep sharpening the judgment that lets you trust the answer. Stop doing either and the curve goes flat for you, no matter how good the models get.
 
 ## Heresies
 
