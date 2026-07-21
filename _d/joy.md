@@ -57,6 +57,8 @@ If you could have one superpower, what would it be? At 46, you'd think I'd have 
 - [Crazy Dream Projects](#crazy-dream-projects)
   - [Become an executive producer for shows](#become-an-executive-producer-for-shows)
   - [Own a vaudeville theater](#own-a-vaudeville-theater)
+- [Appendix](#appendix)
+  - [The Clown's Prayer](#the-clowns-prayer)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -329,3 +331,27 @@ Who knows, maybe one day I'll actually get around to doing these.
 Humorously, I always said this, and one day when I was at the Olympics of magic (FISM 2022), I went to talk titled: So you want to own a magic, theater - you're probably wrong. Snapped me out it.
 
 Luckily Tori works in the arts, and I can say I'm a patron of the arts instead
+
+## Appendix
+
+### The Clown's Prayer
+
+> As I stumble through this life,  
+> help me to create more laughter than tears,  
+> dispense more happiness than gloom,  
+> spread more cheer than despair.
+>
+> Never let me become so indifferent  
+> that I will fail to see the wonder  
+> in the eyes of a child  
+> or the twinkle in the eyes of the aged.
+>
+> Never let me forget that my total effort  
+> is to cheer people, make them happy  
+> and forget — at least momentarily —  
+> all the unpleasantness in their lives.
+>
+> And, in my final moment,  
+> may I hear You whisper:  
+> "When you made My people smile,  
+> you made Me smile."
