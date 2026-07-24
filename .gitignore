@@ -405,3 +405,6 @@ docs/superpowers/specs/private/
 .beads/*
 .gc/
 .runtime/
+
+# Beads / Dolt files (added by bd init)
+.beads/proxieddb/
