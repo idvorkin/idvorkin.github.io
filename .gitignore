@@ -411,3 +411,6 @@ docs/superpowers/specs/private/
 # the native Pages build can't run Pagefind post-build, so the committed index
 # is what production serves. Refresh with `just refresh-search-index`.
 # Once the Actions deploy is live, re-add /pagefind/ here and `git rm -r` it.
+
+# Beads / Dolt files (added by bd init)
+.beads/proxieddb/
