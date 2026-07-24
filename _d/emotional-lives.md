@@ -4,7 +4,7 @@ title: "The Emotional Lives of Teenagers"
 tags:
   - parenting
   - book-notes
-  - emotional-intelligence
+  - emotional intelligence
   - dad
 permalink: /emotional-lives
 redirect_from:
