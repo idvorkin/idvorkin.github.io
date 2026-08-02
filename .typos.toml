@@ -25,6 +25,7 @@ mis = "mis"  # Token of "mis-hire" (typos splits on the hyphen)
 "theatre" = "theatre"  # British spelling used intentionally
 "gruelling" = "gruelling"  # British spelling used intentionally
 "Flavours" = "Flavours"  # Proper noun — "Flavours of Bergen" food tour (British spelling)
+"Saviour" = "Saviour"  # Proper noun — Church of Our Saviour, Copenhagen (British spelling)
 ig = "ig"  # Your name/handle
 igor = "igor"
 dvorkin = "dvorkin"

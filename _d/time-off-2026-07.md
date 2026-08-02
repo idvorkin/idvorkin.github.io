@@ -9,14 +9,17 @@ redirect_from:
 ---
 
 <!--
-INSTRUCTIONS FOR CLAUDE — recap status (2026-08-02)
-- Every bullet in "Where we went (by leg)" traces to written evidence: past-tense prose in
-  this post, /changelog, /life-journal, or in-trip git history. Do not mark an item as
-  visited without such evidence.
-- Lines tagged "From the plan" are pre-trip itinerary items Igor has not yet checked against
-  his photo album (49 photos, added Jul 26): https://photos.app.goo.gl/utGDR6UputWHAfn3A
-- Once Igor confirms against the album, fold what happened into the bullets, drop what
-  didn't, and delete the "From the plan" lines plus this comment.
+INSTRUCTIONS FOR CLAUDE — recap status (2026-08-02, rev 2)
+- "Where we went (by leg)" is built from written evidence (recap prose in this post,
+  /changelog, /life-journal, in-trip git history) plus Igor's Google Maps Timeline — the
+  linked album is 49 Timeline screenshots with geocoded place labels, one or two per day:
+  https://photos.app.goo.gl/utGDR6UputWHAfn3A
+- Lines tagged "From the plan" are items the Timeline does NOT show. Timeline absence is
+  weak evidence (boats and indoor stops get missed), so keep those lines until Igor settles
+  them — do not promote or delete without his confirmation.
+- Copy only city/venue labels from the Timeline into this post. Never copy street-level or
+  residential labels.
+- Bergen and Amsterdam still owe narrative write-ups; their lists are Timeline skeletons.
 -->
 
 22 days, 5 countries, 4 Dvorkins, one whirlwind tour. From Reykjavík to Amsterdam by way of Stockholm, Oslo, and the Norwegian fjords. This is the first time we've attempted a trip of this scope as a family — the kids are 16 and 12, both still home, and the window for "all four of us on the road together" closes faster than I'd like.
@@ -101,33 +104,55 @@ All 4 Dvorkins (Igor, Tori, Zach, Amelia). Iceland and Copenhagen legs were just
 
 ## Where we went (by leg)
 
-This started as the pre-trip wishlist. It's now the record of where we actually went — anything I can't yet vouch for from memory or the journal sits on a _From the plan_ line until I've been back through the photo album.
+This started as the pre-trip wishlist. It's now the record of where we actually went — memory and the journal, cross-checked day by day against my Google Maps Timeline. What's left on a _From the plan_ line is genuinely unresolved: the Timeline misses boats and indoor stops, so absence isn't proof we skipped it.
 
 ### 🇮🇸 Iceland (Jun 28–30) — Reykjavík stopover · [📍 map](https://www.google.com/maps/place/Reykjav%C3%ADk)
 
 - The Reykjavík pools — the 8°C cold plunge, the 40/42/44 hot pots, sauna with all four of us (full story above)
-- A 5am kettlebell session at a local gym — in the pouring rain, rental Tesla and all
-- The hostel's shared kitchen — cooking dinner next to strangers and trading stories
+- A 5am kettlebell session at World Class Laugar — in the pouring rain, rental Tesla and all
+- Laekur Hostel's shared kitchen — cooking dinner next to strangers and trading stories
+- Hallgrímskirkja and a walk down Laugavegur
+- Reykjavík Park and Zoo
 
-_From the plan — not yet checked against the photo album:_ the Reykjavík city walk + Hallgrímskirkja, Blue Lagoon vs Sky Lagoon, the Golden Circle drive (Þingvellir, Geysir, Gullfoss), the Bæjarins Beztu hot dog.
+_From the plan — the Timeline doesn't show these:_ the Golden Circle drive (Þingvellir, Geysir, Gullfoss), the Bæjarins Beztu hot dog. And the Blue Lagoon / Sky Lagoon we simply never did.
+
+{% include repo_image.html src="timeline-2026-06-30-reykjavik.webp" %}
+
+_The day's Timeline — Tue Jun 30: Laekur Hostel, World Class Laugar, the zoo._
 
 ### 🇩🇰 Copenhagen (Jun 30 – Jul 3) — with Ammon · [📍 map](https://www.google.com/maps/place/Copenhagen)
 
 - Two days with Ammon — the point of the stop
 - Sat down and meditated in a church — [the quiet a church keeps](/life-journal#meditating-in-a-church)
-- Walked a tower ramp barefoot — [cold stone, the pitch of the slope](/life-journal#barefoot-down-the-tower-ramp)
+- The Round Tower (Rundetaarn) — walked its spiral ramp barefoot: [cold stone, the pitch of the slope](/life-journal#barefoot-down-the-tower-ramp)
+- Christiansborg Palace, Amalienborg Palace, the Gefion Fountain
+- Church of Our Saviour
+- Tivoli Gardens
+- The Botanical Garden
+- Torvehallerne and Reffen — the food markets
+- Restaurants: Huks Fluks and Farfars Bodega
 
-_From the plan — not yet checked against the photo album:_ Nyhavn + the canals, the Marble Church (Marmorkirken) dome climb, the one nice family meal.
+_From the plan — the Timeline doesn't show these:_ Nyhavn + the canals, the Marble Church (Marmorkirken) dome climb.
+
+{% include repo_image.html src="timeline-2026-07-01-copenhagen.webp" %}
+
+_The day's Timeline — Wed Jul 1: Torvehallerne, the Round Tower, Christiansborg, Tivoli._
 
 ### 🇸🇪 Stockholm (Jul 3–7) · [📍 map](https://www.google.com/maps/place/Stockholm)
 
 - **Skansen** — the glassblower, the silversmith, the staff who stay in role (full story above)
 - The zoo — Amelia's solo run, spare battery and all
 - **Vasa Museum** — the warship that capsized on its maiden voyage and came back three centuries later
+- The Royal Palace
+- Östermalm — Östermalms Saluhall and the Stureplan blocks
 - Sunday at a Greek Orthodox church — Zach's blessing from the bishop, my near-ejection for magic in the pews
 - Zach's dinner tear: frog legs, ratatouille, escargot
 
-_From the plan — not yet checked against the photo album:_ Gamla Stan + fika in Stortorget, the ABBA Museum, Fotografiska, the kayak tour, the Evening Wildlife Safari, Södermalm street art, the Runriket rune stones.
+_From the plan — the Timeline doesn't show these:_ fika in Stortorget, the ABBA Museum, Fotografiska, the kayak tour, the Evening Wildlife Safari, Södermalm street art, the Runriket rune stones.
+
+{% include repo_image.html src="timeline-2026-07-06-stockholm.webp" %}
+
+_The day's Timeline — Mon Jul 6: the Vasa, Skansen, and a grocery run._
 
 ### 🇳🇴 Oslo (Jul 7–10) · [📍 map](https://www.google.com/maps/place/Oslo)
 
@@ -136,35 +161,55 @@ _From the plan — not yet checked against the photo album:_ Gamla Stan + fika i
 - A boat tour on the Oslofjord
 - Walked under the Barcode towers in Bjørvika
 - Walked the Opera House roof — white marble sloping straight down into the water
+- The Holmenkollen Ski Museum
+- Vikingtidsmuseet — the Viking Ship Museum
+- Akershus Fortress
+
+{% include repo_image.html src="timeline-2026-07-08-oslo.webp" %}
+
+_The day's Timeline — Wed Jul 8: Holmenkollen, Vikingtidsmuseet, and the loop out on the Oslofjord._
 
 ### 🏔️ Aurland + Voss (Jul 10–13) — the fjords · [📍 Aurland](https://www.google.com/maps/place/Aurland) · [📍 Voss](https://www.google.com/maps/place/Voss)
 
-- Two nights based in Aurland, deep in fjord country
+- The train out of Oslo to Myrdal, then the Flåmsbana down the valley to the fjord
+- Two nights based in Aurland, deep in fjord country — Winjum Apartments, groceries from the local SPAR
+- The Stegastein viewpoint, Borgund Stavkyrkje (the stave church), and the drive through the Lærdalstunnelen
 - A fjord cruise from Aurland to Gudvangen, the Viking town — the amazing Nærøyfjord, the tour that blew us away: walls of rock straight out of the water, waterfalls off the top, a scale that shut the whole boat up
-- Then the bus from Gudvangen up to Voss
+- Viking Valley (Njardarheimr) in Gudvangen
+- Then the bus from Gudvangen up to Voss, and a walk along the lake there
+
+{% include repo_image.html src="timeline-2026-07-12-fjords.webp" %}
+
+_The day's Timeline — Sun Jul 12: Viking Valley, the Lærdalstunnelen, down to Voss._
 
 ### 🌉 Bergen (Jul 13–16) · [📍 map](https://www.google.com/maps/place/Bergen,+Norway)
 
-Three nights in Bergen, but I haven't written this leg up yet. _From the plan — not yet checked against the photo album:_
+Three nights in Bergen — the write-up is still owed, but the Timeline kept the skeleton:
 
-- **Bryggen** (UNESCO) walking tour
-- **Fløibanen funicular** + Mt. Fløyen hike
-- Mostraumen fjord fast boat or Mt. Ulriken cable car
-- **Flavours of Bergen** food tour
-- **Islets kayak tour**
-- Morning fish market before flying out
+- **Fløibanen funicular** up Mt. Fløyen, and walks on the mountain
+- Øvregaten — the street through the old Bryggen quarter
+- A meal at Marg & Bein
+
+_From the plan — the Timeline doesn't show these:_ the guided Bryggen walking tour, the Mostraumen fjord boat or Mt. Ulriken cable car, the Flavours of Bergen food tour, the Islets kayak tour, the morning fish market.
+
+{% include repo_image.html src="timeline-2026-07-15-bergen.webp" %}
+
+_The day's Timeline — Wed Jul 15: Fløyen top to bottom, Øvregaten, Marg & Bein._
 
 ### 🇳🇱 Amsterdam (Jul 16–19) · [📍 map](https://www.google.com/maps/place/Amsterdam)
 
-The last stop, also still owed its write-up. _From the plan — not yet checked against the photo album:_
+The last stop — its prose still owed too; the Timeline again:
 
-- Rent bikes + roam **Jordaan** neighborhood
-- **Anne Frank House**
-- Canal cruise
-- **Rijksmuseum** + Vondelpark
-- **Foodhallen** (covered food market)
-- **A'DAM Lookout** rooftop swing
-- NDSM Wharf or Zaanse Schans windmills before flying home
+- The **Jordaan** and The 9 Streets (De Negen Straatjes)
+- **Rijksmuseum**
+- Vondelpark and Rembrandtpark
+- A meal at Rasoi
+
+_From the plan — the Timeline doesn't show these:_ renting bikes, the Anne Frank House, Foodhallen, the A'DAM Lookout swing, NDSM Wharf / Zaanse Schans windmills. The canal cruise we never did.
+
+{% include repo_image.html src="timeline-2026-07-18-amsterdam.webp" %}
+
+_The day's Timeline — Sat Jul 18: The 9 Streets, the Rijksmuseum, Rasoi._
 
 ## How I'm doing this trip
 
@@ -186,4 +231,4 @@ The sharpest test of all this is how I use AI on the road. I wrote that one up o
 
 {% include summarize-page.html src="/time-off" %}
 
-_Started ~6 weeks pre-trip; the recap sections were written on the road. Back home Jul 19. Bergen and Amsterdam still owe their write-ups — photo album first, prose second._
+_Started ~6 weeks pre-trip; the recap sections were written on the road, and the place lists were trued up afterward against my Google Maps Timeline. Back home Jul 19. Bergen and Amsterdam still owe their prose._
