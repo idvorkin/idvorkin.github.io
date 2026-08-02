@@ -157,15 +157,16 @@ My first one: [blog-edit-evals](https://github.com/idvorkin-ai-tools/blog-edit-e
 
 Three tasks: add a section, rename a heading, and fix a body typo — the last one is a trap, since the TOC must NOT change. Each runs against headless Claude Code as the harness.
 
-First results (2026-08, Claude Code as the harness):
+First results (2026-08):
 
-| Config                 | Runs | Edit landed | TOC correct | No collateral | Avg diff lines |
-| ---------------------- | ---- | ----------- | ----------- | ------------- | -------------- |
-| sonnet                 | 9    | 100%        | 100%        | 100%          | 4.6            |
-| haiku                  | 10   | 100%        | 100%        | 100%          | 3.7            |
-| mock-bad (grader test) | 3    | 100%        | 33%         | 0%            | -              |
+| Config                                   | Runs | Edit landed | TOC correct | No collateral | Avg diff lines |
+| ---------------------------------------- | ---- | ----------- | ----------- | ------------- | -------------- |
+| sonnet · Claude Code                     | 9    | 100%        | 100%        | 100%          | 4.6            |
+| haiku · Claude Code                      | 11   | 100%        | 100%        | 100%          | 3.7            |
+| gpt-5.4-mini · Codex CLI, zero reasoning | 10   | 70%         | 100%        | 100%          | 3.0            |
+| mock-bad (grader test)                   | 3    | 100%        | 33%         | 0%            | -              |
 
-Both models pass everything, including zero TOC churn on the trap task. So today this eval is saturated - its job is to catch the regression when I swap the harness, the model, or the conventions file. The harder variants are where I expect separation: drop the CLAUDE.md hints, use full-size pages, make edits that span files.
+Both Claude configs pass everything, including zero TOC churn on the trap task. The deliberately dumb Codex config (mini model, reasoning effort none, sandbox replaced by a pre-approved command allowlist since its bwrap sandbox can't spawn in my VM) broke the saturation: 3 of its 10 runs fail, and every failure is a give-up after the first blocked edit attempt - never a wrong edit. When it does act, the TOC and collateral checks stay clean. Which surfaces the real lesson: the permission envelope is part of the harness under test, not just the model. Next variants: drop the CLAUDE.md hints, use full-size pages, make edits that span files.
 
 The graders themselves get tested with a pair of mock runners — a known-good one that must always pass, and a sloppy one (skips the TOC regen, leaves a scratch file behind) that must always fail. If your checkers have never failed a bad run on purpose, you don't know that they work.
 
