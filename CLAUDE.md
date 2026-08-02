@@ -33,6 +33,8 @@ Same fix applies if you edit a heading mid-session and the live `jekyll serve` h
 
 - **Committing `_d/*.md` mid-session:** rebuild `_site` first (`bundle exec jekyll build`) so `anchor-checker` doesn't false-fail on posts merged to `upstream/main` since your last build, then commit with `SKIP=update-backlinks-last-modified,prettier` — the last-modified hook rewrites `back-links.json` (notably on date rollover) and the commit-time prettier hook trips a stash-rollback even on clean files, both silently aborting the commit.
 
+- **Pre-existing hook failures gate your commit.** `typos` checks the files you touch; `anchor-checker` scans the whole repo — so a flagged word or broken anchor sitting on `main` since an earlier skipped commit blocks _your_ commit. Fix them in the same PR (add proper nouns to `.typos.toml`, repoint anchors to moved sections) instead of fighting the hooks.
+
 ## PR Workflow
 
 Repo-mode distinctions (AI-Tools vs Human-Supervised) and the fork-push workflow live in `~/gits/chop-conventions/dev-inner-loop/repo-modes.md`.
@@ -103,6 +105,7 @@ For content/visual PRs, include a rendered screenshot in the PR description. Pro
    - **`just jekyll-serve` drifts to a free port** (`:4001`, `:4002`, …) when another repo's Jekyll holds `:4000`, and prints `🔨 serving … on :PORT`. Screenshot the port it actually bound, not a hardcoded `4000` — find it via `running-servers status --json` (the entry whose `directory` is this repo). A second `just jekyll-serve` in the same dir fails fast with "already running here". (Requires `running-servers >= 0.2.0`.)
    - Content changes need a rebuild — wait for livereload or give it a few seconds after saving
    - **`jekyll serve --incremental --livereload` serves fresh HTML over HTTP but does NOT write `_site/*.html` to disk.** `prek`'s anchor checker and lychee read disk, so they'll flag phantom broken anchors right after you edit a heading. Fix: `bundle exec jekyll build --incremental` (the live server can stay up), then re-run the hook.
+   - **Fresh worktree + `Bundler::GemNotFound` from `just jekyll-serve`**: if the server won't start but `bundle exec jekyll build` succeeds, skip the server — serve the built site with `python3 -m http.server <port> --directory _site` and screenshot `http://localhost:<port>/<permalink>.html` (posts render as flat `.html` files, so include the extension).
 
 1. **Take screenshot** of the rendered page section:
 
@@ -133,9 +136,12 @@ For content/visual PRs, include a rendered screenshot in the PR description. Pro
    ```
 
 4. **Reference in PR body** with absolute raw URL:
+
    ```markdown
    ![Section screenshot](https://gist.githubusercontent.com/USER/GIST_ID/raw/screenshot.jpg)
    ```
+
+   **Pin the revision for newly pushed images**: the bare `.../raw/<file>` URL can 404 for minutes (CDN cache) while `.../raw/<commit-sha>/<file>` serves immediately and is permanent. Get the sha with `gh api gists/GIST_ID --jq '.history[0].version'` and use the pinned form in PR bodies.
 
 ---
 
@@ -329,4 +335,5 @@ bd close <id>         # Complete work
 - NEVER stop before pushing - that leaves work stranded locally
 - NEVER say "ready to push when you are" - YOU must push
 - If push fails, resolve and retry until it succeeds
+
 <!-- END BEADS INTEGRATION -->
