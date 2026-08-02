@@ -1,14 +1,16 @@
 ---
 layout: post
-title: "Terzepatide: The magic weight loss shot"
+title: "Tirzepatide: The magic weight loss shot"
 tags:
   - health
   - weight-loss
 
 permalink: /terzepatide
+redirect_from:
+  - /tirzepatide
 ---
 
-"You know Igor, weight loss is a solved problem" - my bestie, texted me when I complained about my pants no longer fitting. Remember - Diet dominates weight, as weight is simple arithmetic -"calories in" minus "calories out". For me, will power dominates diet, and terzepatide dominates will power when stuffing things in my mouth. I started Terzepatide in February 2024, and so far it's been great.
+"You know Igor, weight loss is a solved problem" - my bestie, texted me when I complained about my pants no longer fitting. Remember - Diet dominates weight, as weight is simple arithmetic -"calories in" minus "calories out". For me, will power dominates diet, and tirzepatide dominates will power when stuffing things in my mouth. I started tirzepatide in February 2024, and so far it's been great.
 
 <!-- prettier-ignore-start -->
 
@@ -44,13 +46,13 @@ Interesting it's volume based, so if you wolf down calorie dense foods, you can 
 
 ## Differences from calorie restriction
 
-I've done a ton of dieting - the core approach is to get my calories down, get used to an empty stomach, and frequently eat small meals like popcorn or protein shakes - which satiates me. This **does not** work well with terzepatide.
+I've done a ton of dieting - the core approach is to get my calories down, get used to an empty stomach, and frequently eat small meals like popcorn or protein shakes - which satiates me. This **does not** work well with tirzepatide.
 
 I think the reason is that on the above dieting strategy you get used to a mostly empty belly, and even a bit full having some calories feels satiated.
 
-On terzepatide, you digest food more slowly. So you're better off eating a large meal of meat, and then your digestion is slowed down so you feel full for way longer.
+On tirzepatide, you digest food more slowly. So you're better off eating a large meal of meat, and then your digestion is slowed down so you feel full for way longer.
 
-I'll convert this to a graph, and all these numbers are made up:
+These numbers are made up, but they show the shape of it:
 
 - Fullness- How full you need to feel full
 - Normal meal - How full you need to feel full on a normal meal
@@ -60,7 +62,7 @@ I'll convert this to a graph, and all these numbers are made up:
 | ------------- | -------- | ----------- | -------------- |
 | Normal Eating | 100      | 70          | 30             |
 | Local Dieting | 50       | 20          | 30             |
-| Terzepatide   | 100      | 70          | 10             |
+| Tirzepatide   | 100      | 70          | 10             |
 
 ## Side effects
 
@@ -79,7 +81,7 @@ I'll convert this to a graph, and all these numbers are made up:
 
 ### Muscle loss
 
-This is a bit of a misnomer, as the same can happen when dieting hard. I think the mitigations are lots of protein, I"m probably doing 1g\*lbs/day, and exercise, I"m currently doing 6 days/week.
+This is a bit of a misnomer, as the same can happen when dieting hard. I think the mitigations are lots of protein (I'm probably doing 1g per lb of bodyweight per day) and exercise (I'm currently doing 6 days/week).
 
 ### Bryan Johnson's Tirzepatide Experiment Failure
 
@@ -89,7 +91,7 @@ For Johnson, this was an unacceptable trade-off. While GLP-1 drugs showed promis
 
 ## Traveling with it (or any med that needs a fridge)
 
-Terzepatide — like plenty of other meds — wants to stay cold. Three things make travel painless for me:
+Tirzepatide — like plenty of other meds — wants to stay cold. Three things make travel painless for me:
 
 1. **A TSA-approved travel cooler.** Holds cold for a full travel day, so the airport-to-Airbnb gap is covered:
 
@@ -105,9 +107,6 @@ Terzepatide — like plenty of other meds — wants to stay cold. Three things m
 
 I use [lifemd](http://www.lifemd.com), they give you a Dr to help you decide and check in on side effects, and then co-ordinate with a compounding pharmacy. Ends up about 500\$/month, which probably I save half of that on food.
 
-I think there is some shenanigans with compounding pharmacies and copyright and emergency use when shortages. So I'm not getting the brand name Zepbound (get the pun on the name), I'm getting a blend of Terzepatide and something else (some places did Vitamin D). I don't get the fancy dispenser, but need to inject myself (which Tori originally did, but decided I'm a grown up and can do it myself).
+I think there is some shenanigans with compounding pharmacies and copyright and emergency use when shortages. So I'm not getting the brand name Zepbound (get the pun on the name), I'm getting a blend of tirzepatide and something else (some places did Vitamin D). I don't get the fancy dispenser, but need to inject myself (which Tori originally did, but decided I'm a grown up and can do it myself).
 
 More details on [how it's done and the risks](https://www.drugs.com/medical-answers/you-tirzepatide-compounding-pharmacy-3575862/).
-
-- Ammon Stories of weight loss
-  - Fake pills

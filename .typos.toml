@@ -2,6 +2,9 @@
 # Language preferences
 locale = "en-us"
 
+# Ignore Amazon ASIN codes in amazon.html includes (random letter pairs get flagged)
+extend-ignore-re = ['asin="[A-Za-z0-9;]+"']
+
 [default.extend-words]
 # Common tech/domain-specific terms that might be flagged
 "iterm" = "iterm"  # iTerm is a terminal application for Mac
@@ -11,7 +14,9 @@ locale = "en-us"
 "BA" = "BA"  # Part of Asciinema ID
 "NAEuBAJhe9qdU" = "NAEuBAJhe9qdU"  # Asciinema ID  
 "mis-hire" = "mis-hire"  # Common term in hiring
+mis = "mis"  # Token of "mis-hire" (typos splits on the hyphen)
 "MoFo" = "MoFo"  # Slang term used intentionally
+"Fo" = "Fo"  # Token of MoFo (typos splits camelCase, so the MoFo entry alone doesn't cover it)
 "oter" = "oter"  # Part of YouTube ID 002oterS2Wg
 "vizualization" = "vizualization"  # In JS library
 "youre" = "youre"  # Intentional usage in TOC/headers
@@ -19,6 +24,8 @@ locale = "en-us"
 "heros" = "heros"  # Hero's without apostrophe in TOC anchors
 "theatre" = "theatre"  # British spelling used intentionally
 "gruelling" = "gruelling"  # British spelling used intentionally
+"Flavours" = "Flavours"  # Proper noun — "Flavours of Bergen" food tour (British spelling)
+"Saviour" = "Saviour"  # Proper noun — Church of Our Saviour, Copenhagen (British spelling)
 ig = "ig"  # Your name/handle
 igor = "igor"
 dvorkin = "dvorkin"
@@ -97,6 +104,9 @@ catastrophize = "catastrophize"  # To view or present a situation as catastrophi
 catastrophizing = "catastrophizing"  # Present participle of catastrophize
 # Rust crate names
 ratatui = "ratatui"  # Rust TUI library (not ratatouille)
+# Fitness terms (shoulder-pain post)
+delt = "delt"  # Deltoid muscle abbreviation (rear delt, anterior delt)
+flyes = "flyes"  # Exercise name (reverse flyes)
 
 [files]
 # Files to ignore

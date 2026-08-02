@@ -5,7 +5,7 @@ comments: true
 inprogress: true
 tags:
   - manager
-  - heath
+  - health
   - book-notes
 permalink: /upstream
 redirect_from:

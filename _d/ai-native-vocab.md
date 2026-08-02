@@ -25,7 +25,7 @@ AI is spawning a whole new vocabulary — some of it genuinely useful, some of i
 - [Dark Factory](#dark-factory)
 - [Data Provenance](#data-provenance)
 - [Deep Blue](#deep-blue)
-- [Functional Collapse](#functional-collapse)
+- [Discernment Horizon](#discernment-horizon)
 - [Heresies](#heresies)
 - [Hill Climbing](#hill-climbing)
 - [Human In, On, and Out of the Loop](#human-in-on-and-out-of-the-loop)
@@ -96,6 +96,15 @@ My take: we've seen this movie before. When dev and test merged into the "softwa
 The same thing is happening now. In my world, TPM may have collapsed into the engineering team — there's no separate TPM role. But some engineers are much better at the TPM work (coordination, cross-team dependencies, program management) than others, because they're drawn to it and have built the muscle. They don't have the title, but they have the specialty.
 
 So yes, AI enables functional collapse in the sense that anyone _can_ write a PRD or build a prototype or sketch a design. But "can" and "good at" are different things. The easy stuff gets democratized. The hard stuff still needs people who go deep. We might all be "builders" on paper, but we'll all have specialties where we're better than others.
+## Discernment Horizon
+
+Steve Yegge's term from [The Flat Curve Society](https://steve-yegge.medium.com/the-flat-curve-society-36c8b01eb33b) for the point past which you can no longer tell whether an AI is right — because verifying its answer is itself beyond you.
+
+{% include quote.html text="Past this scary line, you can't tell whether the model is right, because checking the work is itself beyond you." author="Steve Yegge" url="https://steve-yegge.medium.com/the-flat-curve-society-36c8b01eb33b" %}
+
+He pairs it with the **Demand Horizon** — set by the hardest problem you actually bring. Easy problems never stretch a smarter model, so it can't pull ahead; the outputs look the same because the problem never tested either one. Together the two horizons are why AI progress _feels_ flat even as the models keep climbing: one caps how much a better model can help you, the other caps how much of its help you can trust. His compression of the second:
+
+{% include quote.html text="Superhuman means unverifiable." author="Steve Yegge" url="https://steve-yegge.medium.com/the-flat-curve-society-36c8b01eb33b" %}
 
 ## Heresies
 

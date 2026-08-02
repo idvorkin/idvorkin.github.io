@@ -146,7 +146,7 @@ This one is aspirational — I don't have it wired up yet, but it's the same pat
 I've been doing [stream of consciousness journaling](/process-journal) since 2011 — over a million words. The old problem: handwritten journals are great for thinking but impossible to search. Typed journals are searchable but less personal.
 
 1. **Available context:** I brain-dump thoughts on a Kindle Scribe every morning, primed by yesterday's TODOs and habit tracker
-2. **Automated capture:** The handwriting gets [transcribed to text](/process-journal#journalling-workflow-in-2025), TODOs get extracted to OmniFocus — all automated
+2. **Automated capture:** The handwriting gets [transcribed to text](/process-journal#current-workflow), TODOs get extracted to OmniFocus — all automated
 3. **Debrief (weekly):** [Larry](/larry) reads the week's journals, drafts a weekly report, scores 11 life domains with evidence from my own words, and catches patterns — "You've committed to restart meditation 5 times since November. What's different this time?"
 4. **Pre-brief (daily):** Next morning, AI has yesterday's journal as context. "You said you were avoiding the hard conversation with your manager. Did you have it?"
 
