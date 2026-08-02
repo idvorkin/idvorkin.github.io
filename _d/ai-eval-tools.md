@@ -23,6 +23,7 @@ Every time I want to compare models, prompts, or agent harnesses I trip over the
   - [Giskard (2.x)](#giskard-2x)
   - [Container-native agentic: Terminal-Bench, SWE-bench, Vivaria](#container-native-agentic-terminal-bench-swe-bench-vivaria)
   - [The SaaS tier: Braintrust, LangSmith, Langfuse](#the-saas-tier-braintrust-langsmith-langfuse)
+- [The shared anatomy: same concepts, different names](#the-shared-anatomy-same-concepts-different-names)
 - [Repo naming convention](#repo-naming-convention)
 
 <!-- vim-markdown-toc-end -->
@@ -120,6 +121,52 @@ The catch on macOS, learned the hard way: OrbStack machines are shared-kernel co
 Hosted eval-plus-observability platforms — datasets, judges, traces, dashboards, team features, CI history. If you want a team UI and longitudinal tracking, this tier is where it lives.
 
 Limitations for me: account-first, your data lives off-repo, and my evals are weekend-sized. A directory of runs I can grep beats a dashboard I have to log into.
+
+## The shared anatomy: same concepts, different names
+
+Strip the branding and every tool here is the same handful of concepts. Learning them once makes any tool's docs readable in minutes:
+
+1. **Case** — one exercise: an input plus expectations
+2. **Collection** — cases grouped into a runnable set
+3. **Target config** — the thing under test: model, prompt, or agent-plus-harness, with its parameters
+4. **Execution environment** — where the target actually runs: an in-process function call, a subprocess in a workdir, or a container
+5. **Run record** — the persisted attempt: output, artifacts, timing
+6. **Grader** — turns a run into a score: deterministic checks and/or LLM judges
+7. **Report** — aggregation across runs: leaderboards, rates, variance
+8. **Trace viewer** — per-run inspection when a number looks wrong
+
+The rosetta stone:
+
+| Concept     | smevals                 | PromptFoo         | Pydantic Evals    | Inspect AI              | DeepEval          | Terminal-Bench  |
+| ----------- | ----------------------- | ----------------- | ----------------- | ----------------------- | ----------------- | --------------- |
+| Collection  | Eval / Suite            | config `tests`    | Dataset           | Task                    | EvaluationDataset | dataset         |
+| Case        | Task                    | test              | Case              | Sample                  | LLMTestCase       | task            |
+| Target      | Config + Runner         | provider + prompt | your function     | solver + model          | your app code     | agent adapter   |
+| Execution   | any executable, workdir | in-process call   | Python call       | solver loop, opt docker | Python call       | Docker per task |
+| Run record  | `runs/` dir, immutable  | results cache     | report + OTel     | `.eval` log             | test results      | run logs        |
+| Grader      | Grader → Checkers       | assertions        | Evaluators, judge | Scorers                 | metrics (G-Eval)  | verifier script |
+| Report      | leaderboard CLI         | matrix viewer     | summary table     | log stats               | SaaS dashboard    | leaderboard     |
+| Trace view  | files + `serve`         | web UI            | Logfire           | `inspect view`          | Confident AI      | logs            |
+
+The first three concepts are commodity — every tool has cases, collections, and target configs, and choosing between tools on those is a wash. The separation happens on two axes:
+
+**Execution environment** is the agentic divide. Tools whose execution model is "call a function and look at the return value" (PromptFoo, DeepEval, Pydantic Evals) cannot naturally test an agent whose real output is filesystem side effects. Tools whose execution model is "spawn something in an environment and inspect what it did" (smevals, Terminal-Bench, Inspect-with-docker) can.
+
+**Run records + decoupled grading** is the iteration divide. If runs are immutable records and graders apply separately (smevals; Inspect can re-score logs), you improve graders for free against history. If assertions run inline with execution (PromptFoo, DeepEval), every grader idea re-bills you for every run.
+
+Capability grid against my [criteria](#what-i-want-from-an-eval-tool) — ✓ yes, ◐ partial/BYO, ✗ no:
+
+| Required feature       | smevals | PromptFoo | Pydantic | Inspect | DeepEval | T-Bench |
+| ---------------------- | ------- | --------- | -------- | ------- | -------- | ------- |
+| Agent-in-workdir       | ✓       | ✗         | ✗        | ◐       | ✗        | ✓       |
+| Container isolation    | ◐ BYO   | ✗         | ✗        | ✓       | ✗        | ✓       |
+| Deterministic graders  | ✓       | ✓         | ✓        | ✓       | ◐        | ✓       |
+| LLM judge              | ◐ BYO   | ✓         | ✓        | ✓       | ✓        | ◐       |
+| Decoupled re-grading   | ✓       | ✗         | ✗        | ✓       | ✗        | ◐       |
+| Trace viewer           | ◐       | ✓         | ◐ SaaS   | ✓       | ◐ SaaS   | ◐       |
+| Local-first            | ✓       | ✓         | ✓        | ✓       | ◐        | ✓       |
+
+Read column-wise and the survey's conclusions fall out: smevals and Terminal-Bench are the agentic pair (smevals for weekend-sized custom evals, Terminal-Bench for standardized harness benchmarks), Inspect is the heavyweight that covers the most boxes, and the prompt-shaped tools trade the two divides above for richer judge libraries and viewers.
 
 ## Repo naming convention
 
