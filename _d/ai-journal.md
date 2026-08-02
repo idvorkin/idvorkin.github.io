@@ -19,6 +19,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-08-02](#2026-08-02)
+    - [Herdr: The Agent Multiplexer My Tmux Rig Was Trying to Become](#herdr-the-agent-multiplexer-my-tmux-rig-was-trying-to-become)
   - [2026-06-22](#2026-06-22)
     - [Steve Yegge's Flat Curve Society: The Plateau Is Good News for Engineers](#steve-yegges-flat-curve-society-the-plateau-is-good-news-for-engineers)
   - [2026-06-13](#2026-06-13)
@@ -260,6 +262,20 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 ## Diary
 
+### 2026-08-02
+
+#### Herdr: The Agent Multiplexer My Tmux Rig Was Trying to Become
+
+- **TOP Takeaway**: [Herdr](https://herdr.dev) ([GitHub](https://github.com/herdrdev/herdr)) is what I'd been hand-building on top of tmux for the last year — a multiplexer that knows what an agent is. Their one-liner nails the difference: tmux persists terminals; Herdr persists agent workspaces and understands agent state.
+  - It keeps the tmux virtues I care about: real PTYs on a server that survives closing the laptop, detach/reattach over plain SSH, and it runs inside the terminal I already use. Single binary, no Electron, no account, no telemetry.
+- **The paper trail proves I wanted this**: I spent the last year teaching tmux about agents by hand — [a Rust pane picker](#rust-tmux_helper-10x-speedup-from-python) because stock navigation falls apart past 8 sessions, [a config overhaul](#tmux-config-overhaul) that auto-renames windows to the running process, [a Stream Deck plugin](#stream-deck-plugin-in-30-minutes) for pane hopping. In [/ai-cockpit](/ai-cockpit#tmux-on-super-steroids---the-multiplexer) I called tmux "the backbone" and wrote down the integration I wanted next: something that shows every agent session with its status and drops me into the one that needs me. Herdr ships that as the core product.
+- **What tmux can't see** (the actual delta):
+  - **Agent state is semantic**: every workspace shows blocked / working / done / idle. Tmux knows a pane produced output; Herdr knows the agent is stuck on a permission prompt. My herd as I write this: 9 workspaces — swing-analyzer, stack-picker, and chop-conventions working; barry done; blog and settings idle.
+  - **An API shaped like agents, usable by agents**: `herdr agent read | prompt | send-keys | wait` over a socket. `wait` blocks until an agent reaches a state you name, so a supervisor — human or agent — polls nothing.
+  - **Worktrees are first-class**: `herdr worktree create` is branch + git worktree + workspace in one move. This entry is the punchline: written by a Claude running in the worktree Herdr created off my blog repo, while two tabs over a sibling workspace fixes `rmux_helper` — my tmux helper.
+- **The pen is not the herd**: the multiplexer solves terminals; conventions solve behavior. Every agent in every worktree loads the same [chop-conventions skills](https://github.com/idvorkin/chop-conventions/tree/cf3f6dc93db8dbd310a48dd570e4200dc54544d3/skills) — `up-to-date` to sync before touching a repo, `pr-hygiene` to close out review debt before ending a session, `delegate-to-other-repo` to spawn work sideways. Herdr keeps N agents alive; the skills are why N agents behave like one team instead of N loose cannons.
+- **The open question**: in [/how-igor-chops](/how-igor-chops) I asked whether my elaborate tmux workflows were "the buggy whip factory of 2025". The answer arrived in under a year. Next on the block: `rmux_helper` and the Stream Deck tmux keys — how much of the hand-built rig survives to 2027?
+
 ### 2026-06-22
 
 #### Steve Yegge's Flat Curve Society: The Plateau Is Good News for Engineers
@@ -309,7 +325,7 @@ Source: ["AI is an attention hazard"](https://thoughts.hmmz.org/2026-05-31.html)
 #### AI Helps Me Think by Showing Me Options
 
 - **The lesson**: when the work involves a creative or judgment call I'll live with, AI should **widen the option space, not narrow it**. One "best" answer to an aesthetic question is arbitrary; five options surface what I actually value. I often can't articulate my taste in the abstract — but I can tell you which raccoon I want when I see them side-by-side. AI's job here is **[helping me think](/ai-second-brain)** by widening the field, not closing it.
-- **What happened**: spent a chunk of today picking [7 Habits raccoon illustrations](/7h) for my blog. Instead of asking AI for "the best" raccoon per chapter, I had it generate 5 variations per habit (35 cells total) and built a click-to-pick HTML sheet. localStorage persists my picks, JSON copy button at the bottom. ~15 minutes of human picking and the right raccoons were obvious — much faster than iterating one prompt at a time.
+- **What happened**: spent a chunk of today picking [7 Habits raccoon illustrations](/7-habits) for my blog. Instead of asking AI for "the best" raccoon per chapter, I had it generate 5 variations per habit (35 cells total) and built a click-to-pick HTML sheet. localStorage persists my picks, JSON copy button at the bottom. ~15 minutes of human picking and the right raccoons were obvious — much faster than iterating one prompt at a time.
 - **Why this generalizes**: the same shape works for code abstractions, copy variations, naming, design alternatives, decision framing — anything where "best" is taste, not truth. Cheap model for the wide pass, human picks, expensive model only for the winners.
 - **Try it**: [/image-selector](/image-selector) is the live demo loaded with the 35 raccoons; the [public gist](https://gist.github.com/idvorkin-ai-tools/309aea3cd0d2e43e783f2c061e920755) is the reusable pattern (HTML/JS + README + CC0) — fork it, swap in your own candidates, ship.
 
