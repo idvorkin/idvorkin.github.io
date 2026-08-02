@@ -105,7 +105,15 @@ Most of the tools above are prompt-shaped. A separate tier evaluates agents insi
 - **SWE-bench harness** — per-issue Docker images; grading is "do the repo's tests pass in the container." The agent layer (SWE-agent and descendants) attaches on top.
 - **METR Vivaria** — the platform METR runs dangerous-capability evals on; agents in containers against their Task Standard.
 
-Limitations: these are benchmark-first, not write-your-own-weekend-eval-first — standing up custom tasks means adopting their image conventions. And containers themselves are a dependency my dev VM can't meet: OrbStack machines block namespace creation outright, so anything container-native runs on the Mac host or a real Linux box, not here. smevals sits out this fight by being agnostic — its Runner is any executable, so it can `docker run` when a container runtime exists, but manages none of it for you.
+Limitations: these are benchmark-first, not write-your-own-weekend-eval-first — standing up custom tasks means adopting their image conventions. smevals sits out this fight by being agnostic — its Runner is any executable, so it can `docker run` when a container runtime exists, but manages none of it for you.
+
+#### Getting a container-capable VM on a Mac
+
+The catch on macOS, learned the hard way: OrbStack machines are shared-kernel containers, not full VMs — their runtime has no user-namespace support ([orbstack#2312](https://github.com/orbstack/orbstack/issues/2312)), so Docker, bubblewrap, and agent sandboxes all fail inside them by architecture, not configuration. What actually works:
+
+- **A real Linux VM** via [Lima](https://lima-vm.io) (`vmType: vz`) or UTM brings its own kernel — containers and sandboxes just work, on any Apple Silicon chip, no nested virtualization needed. That's the box for Terminal-Bench or a full-permission containerized harness.
+- **True VM-in-VM** (KVM inside the Linux VM) needs nested virtualization: M3 or later, macOS 15+, Linux guests only. UTM supports it; Lima behind a `nestedVirtualization: true` flag ([lima#2824](https://github.com/lima-vm/lima/issues/2824)); OrbStack [doesn't](https://github.com/orgs/orbstack/discussions/2074).
+- **Keep OrbStack** for what it's best at — the Docker engine itself and fast shared-kernel dev machines. Just don't expect a container runtime *inside* one.
 
 ### The SaaS tier: Braintrust, LangSmith, Langfuse
 
