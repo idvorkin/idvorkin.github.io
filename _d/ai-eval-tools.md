@@ -21,6 +21,7 @@ Every time I want to compare models, prompts, or agent harnesses I trip over the
   - [Inspect AI (0.3.x)](#inspect-ai-03x)
   - [DeepEval (4.x)](#deepeval-4x)
   - [Giskard (2.x)](#giskard-2x)
+  - [Container-native agentic: Terminal-Bench, SWE-bench, Vivaria](#container-native-agentic-terminal-bench-swe-bench-vivaria)
   - [The SaaS tier: Braintrust, LangSmith, Langfuse](#the-saas-tier-braintrust-langsmith-langfuse)
 - [Repo naming convention](#repo-naming-convention)
 
@@ -76,9 +77,9 @@ Example: none yet — when I try it, the repo will be named `pydantic-evals-some
 
 ### Inspect AI (0.3.x)
 
-The UK AI Safety Institute's framework, used for serious public benchmarks. Research-grade: tasks, solvers, and scorers in Python, sandboxed tool use, big parallelism, a good log viewer.
+The UK AI Safety Institute's framework, used for serious public benchmarks. Research-grade: tasks, solvers, and scorers in Python, big parallelism, a good log viewer — and the standout feature for agentic work: `sandbox="docker"` runs each sample's tool calls inside its own container, which is how the serious agentic benchmarks (SWE-bench via inspect_evals, Cybench, GAIA) isolate the agent.
 
-Limitations: heavyweight authoring for weekend-sized evals, and the solver abstraction doesn't map cleanly onto driving an external CLI harness like Claude Code. Academic flavor throughout.
+Limitations: heavyweight authoring for weekend-sized evals, and the agent is Inspect's own Python solver loop — driving an external CLI harness like Claude Code or Codex isn't its native shape. Academic flavor throughout.
 
 Example: none yet.
 
@@ -95,6 +96,16 @@ Example: none yet.
 More scanner than eval harness: probes an LLM app for injection, leakage, and bias, red-team style.
 
 Limitations: that focus is the limitation — it answers "is this app vulnerable," not "did the agent do the task right." Different tool for a different question.
+
+### Container-native agentic: Terminal-Bench, SWE-bench, Vivaria
+
+Most of the tools above are prompt-shaped. A separate tier evaluates agents inside containers, which buys the three things agentic evals actually need: isolation (the agent can be given full permissions safely — exactly the sandbox fight I lost on my [codex runs](/ai-testing#grading-the-agent-with-smevals)), reproducibility (pinned task images), and parallelism.
+
+- **Terminal-Bench** — the closest cousin to my blog-edit eval, professionalized: each task is a Docker container with setup plus a verifier script, and it benchmarks the actual CLI harnesses — Claude Code, Codex, and friends — on terminal tasks.
+- **SWE-bench harness** — per-issue Docker images; grading is "do the repo's tests pass in the container." The agent layer (SWE-agent and descendants) attaches on top.
+- **METR Vivaria** — the platform METR runs dangerous-capability evals on; agents in containers against their Task Standard.
+
+Limitations: these are benchmark-first, not write-your-own-weekend-eval-first — standing up custom tasks means adopting their image conventions. And containers themselves are a dependency my dev VM can't meet: OrbStack machines block namespace creation outright, so anything container-native runs on the Mac host or a real Linux box, not here. smevals sits out this fight by being agnostic — its Runner is any executable, so it can `docker run` when a container runtime exists, but manages none of it for you.
 
 ### The SaaS tier: Braintrust, LangSmith, Langfuse
 
