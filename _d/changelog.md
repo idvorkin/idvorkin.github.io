@@ -12,6 +12,12 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Week of 2026-07-27](#week-of-2026-07-27)
+  - [AI Inference: Why Checking Beats Generating](#ai-inference-why-checking-beats-generating)
+  - [The Clown's Prayer](#the-clowns-prayer)
+  - [Infrastructure & CI (2026-07-27)](#infrastructure--ci-2026-07-27)
+  - [chop-conventions (2026-07-27)](#chop-conventions-2026-07-27)
+  - [Other Projects (2026-07-27)](#other-projects-2026-07-27)
 - [Week of 2026-07-20](#week-of-2026-07-20)
   - [The Performer's Playbook (new post)](#the-performers-playbook-new-post)
   - [Sleight of Mouth: The Full Book, Fleshed Out](#sleight-of-mouth-the-full-book-fleshed-out)
@@ -170,6 +176,60 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+## Week of 2026-07-27
+
+_7 commits this week_
+
+### AI Inference: Why Checking Beats Generating
+
+**[/ai-inference#the-model-itself](/ai-inference#the-model-itself)** — the speculative-decoding bullet got a sharper mechanism. The draft/verify asymmetry: verifying a whole batch of draft tokens streams the weights out of memory *once* — about the cost of generating a single token — so a draft model that's usually right nets **~2-3 accepted tokens per expensive big-model pass**, wrong guesses just get thrown away. Output stays provably identical to the big model alone; pure speedup, not a quality trade. New link to [salmanq.com's writeup](https://www.salmanq.com/blog/speculative-decoding/) on why checking beats generating, alongside the existing bentoml explainer. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/725a54cab)
+
+### The Clown's Prayer
+
+**[/joy#the-clowns-prayer](/joy#the-clowns-prayer)** — new Appendix section on the Smiles, Joy and Wonder page: the full text of "The Clown's Prayer" ("When you made My people smile, you made Me smile") as a verse blockquote. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0d0165fe2)
+
+### Infrastructure & CI (2026-07-27)
+
+- **Tag normalization** — folded misspelled/duplicate frontmatter tags into canonical forms across 9 posts: `accomplishemnt`→`accomplishment`, `heath`→`health`, `emotional-intelligence`→`emotional intelligence`, `how-igor-ticks`→`how igor ticks`, `mental-health`/`mental health`→`mental health`. Frontmatter only, no prose changed. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/925861877)
+- **ImgBot** — recompressed 6 images/screenshots (largest: `todo-enjoy-initial.png` 702KB→543KB). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/aee53ca44)
+
+### chop-conventions (2026-07-27)
+
+Ten fixes, several closing security gaps found on live review:
+
+- **Telegram delivery attribution** — after a 2026-07-22 incident where inbound rows were marked `delivered=1` but actually claimed by a different session's bridge (N bots racing on one `inbound.db`), `server.ts` now stamps `delivered_to` (session id, else `hostname:pid:starttime`) on every claim, and `/doctor` gained a DELIVERY check that catches multi-bridge and resumed-without-`--channels` silent-loss modes. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/9aa45b572)
+- **Token leaks plugged** — `image-explore`'s gist-publish script stopped putting the `gh` token in clone-URL argv (readable via `/proc`) and leaving it in `/tmp/.../.git/config` on any failed step [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/ebfd05511); `gen-image` stopped passing `GOOGLE_API_KEY` as a curl `?key=...` query param (argv-visible for the request duration), switching to header auth via a mode-600 curl config file. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/1f440a795)
+- **`up-to-date` force-align bug** — `can_force_align` was computed from the wrong branch's `git cherry` batch, evaluating `True` whenever main was ahead for *any* reason (including genuinely unique local commits) whenever HEAD was on the default branch. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/716c48ef6)
+- **Cost-impact pricing gap** — current-gen models (Fable 5, Opus 4.8/4.7, Sonnet 5) were missing from `PRICING`, so their spend silently landed in `unknown_models` and dropped out of every dollar total on machines running them. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/1e1c2aa99)
+- Also: `pr-hygiene` now counts author thread replies as responses in `human_last_word`, `bulk` parses bd's real dependency schema, and a Playwright bundled-Chromium codec gotcha got documented in the global CLAUDE.md fragment. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/d603fea4f)
+
+### Other Projects (2026-07-27)
+
+**[magic-monitor](https://github.com/idvorkin/magic-monitor)** (recording app)
+
+A 4-PR reliability sweep closed out a stack of intermittent bugs:
+
+- **H1 — the auto-select race**: a fire-and-forget camera-enumeration callback could overwrite the browser-chosen camera with first-in-list and silently persist it forever (pinning OBS/virtual cams). Startup is now one sequenced, cancellable path. [<i class="fa fa-github"></i>](https://github.com/idvorkin/magic-monitor/commit/27511b37e)
+- **H5 — IndexedDB aborts used to hang forever**: a quota-exceeded commit-time abort fired only `onabort`, which nothing wired, so the save promise never settled and the recorder wedged permanently. One `settleTransaction` helper now covers all 13 transaction sites. [<i class="fa fa-github"></i>](https://github.com/idvorkin/magic-monitor/commit/bdbce9bc9)
+- **M2 — card detection survives inference errors**: a single rejected `detect()` used to kill the detection loop forever while the button still said ON; errors now surface as `detectError` and the loop keeps running. [<i class="fa fa-github"></i>](https://github.com/idvorkin/magic-monitor/commit/bdbce9bc9)
+- Final serial E2E run: 27 passed / 2 skipped / 0 failed / zero flaky — "the cleanest run of the sweep."
+
+**[swing-analyzer](https://github.com/idvorkin-ai-tools/swing-analyzer)** (golf swing analysis)
+
+Parallel reliability push: stopped persisting raw per-frame `ImageData` to IndexedDB (~77KB/frame, with a migration for existing bloated records), added the first real upload-journey E2E test gating CI, fixed video-switch races, and measured real video fps instead of assuming 30. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/swing-analyzer/commit/a22086987)
+
+**[omnifocus_cli](https://github.com/idvorkin/omnifocus_cli)** (task CLI)
+
+61 of 105 tests had silently drifted from production (mocking methods a refactor had already moved off). Fixing them surfaced three real bugs: the default Groq model had been decommissioned (404s silently returning unshortened names), `max_tokens=100` was too small for a reasoning model's hidden trace and starved the actual answer, and `reasoning_effort` needed to be gated per-model (some 400 if it's sent at all). [<i class="fa fa-github"></i>](https://github.com/idvorkin/omnifocus_cli/commit/ba0b70713)
+
+**[airpods-mic-explainer](https://idvorkin-ai-tools.github.io/airpods-mic-explainer/)** (case study) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/airpods-mic-explainer)
+
+New explainer: a flashcard PWA's on-device speech recognition produced garbage on a Mac whose default mic was Bluetooth AirPods, near-perfect minutes later on a USB mic. Walks the forensics — waveforms, two ASR models agreeing the audio was fragments, a timeline ruling out timing, and the signal chain that ate the words (AirPods DSP → Bluetooth HFP → browser noise suppression). [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/airpods-mic-explainer/commit/a8d857232)
+
+**[clowns-explainer](https://idvorkin-ai-tools.github.io/clowns-explainer/)** (dark single-page site) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/clowns-explainer)
+
+Why almost every human culture invented clowns: the licensed pressure valve, the near-universal lineage (court jester, commedia dell'arte, circus/Grimaldi, sacred clown, trickster, carnival), and the hospital-clown evidence. Companion to this week's [/joy](/joy#the-clowns-prayer) appendix. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/clowns-explainer/commit/ddeac4c48)
 
 ## Week of 2026-07-20
 
