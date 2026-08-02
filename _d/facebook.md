@@ -7,7 +7,7 @@ redirect_from:
   - /fb
 ---
 
-Meta is a ‘social’ company; we value 1-1 time, fostering trust-driven relationships, and providing skip-level escalations and support. Here are my notes on Meta.
+Meta calls itself a ‘social’ company. As one of its managers put it: "we value 1-1 time, fostering trust-driven relationships, and providing skip-level escalations and support." Here are my notes on Meta.
 
 _(\* When I started this was still Facebook.)_
 

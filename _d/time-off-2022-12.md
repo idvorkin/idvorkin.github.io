@@ -29,7 +29,6 @@ My habits and balance have been strong, just keep my streaks running!
 {%include summarize-page.html src="/moments" %}
 
 - Amelia's Holiday Party (Deaf kid, coming back seeing everyone)
-- TBD Jumped in the lake 2021
 - Doing programming with Zach
 
 ## Success Stories
@@ -48,42 +47,47 @@ My habits and balance have been strong, just keep my streaks running!
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [My top priorities](#my-top-priorities)
+  - [Health and Habits](#health-and-habits)
+- [Moments](#moments)
+- [Success Stories](#success-stories)
+- [Top Learnings](#top-learnings)
 - [Relationships (3/5)](#relationships-35)
-    - [Friends](#friends)
-    - [Tori](#tori)
-    - [Zach](#zach)
-    - [Amelia](#amelia)
+  - [Friends](#friends)
+  - [Tori](#tori)
+  - [Zach](#zach)
+  - [Amelia](#amelia)
 - [Identity Health (2/5)](#identity-health-25)
-    - [Biking](#biking)
-    - [Ballooning](#ballooning)
-    - [Joy Activities](#joy-activities)
-    - [Magic](#magic)
+  - [Biking](#biking)
+  - [Ballooning](#ballooning)
+  - [Joy Activities](#joy-activities)
+  - [Magic](#magic)
 - [Tech Guru (5/5)](#tech-guru-55)
-    - [AI text assisting](#ai-text-assisting)
-    - [AI Created Git Commit Writing](#ai-created-git-commit-writing)
-    - [AI image assisting, and brand blog with raccoons](#ai-image-assisting-and-brand-blog-with-raccoons)
-    - [Finally got clipboard working over ssh/mosh](#finally-got-clipboard-working-over-sshmosh)
-    - [Create github links from within VI](#create-github-links-from-within-vi)
-    - [Add search to family blog posts](#add-search-to-family-blog-posts)
-    - [Performance speed ups to python scripts](#performance-speed-ups-to-python-scripts)
-    - [Performance speed ups to manager-book and rest of blog](#performance-speed-ups-to-manager-book-and-rest-of-blog)
-    - [Playing with Recommender systems](#playing-with-recommender-systems)
+  - [AI text assisting](#ai-text-assisting)
+  - [AI Created Git Commit Writing](#ai-created-git-commit-writing)
+  - [AI image assisting, and brand blog with raccoons](#ai-image-assisting-and-brand-blog-with-raccoons)
+  - [Finally got clipboard working over ssh/mosh](#finally-got-clipboard-working-over-sshmosh)
+  - [Create github links from within VI](#create-github-links-from-within-vi)
+  - [Add search to family blog posts](#add-search-to-family-blog-posts)
+  - [Performance speed ups to python scripts](#performance-speed-ups-to-python-scripts)
+  - [Performance speed ups to manager-book and rest of blog](#performance-speed-ups-to-manager-book-and-rest-of-blog)
+  - [Playing with Recommender systems](#playing-with-recommender-systems)
 - [Cognitive Health (4/5)](#cognitive-health-45)
-    - [7 Habits](#7-habits)
-    - [Blog posts](#blog-posts)
+  - [7 Habits](#7-habits)
+  - [Blog posts](#blog-posts)
 - [Emotional Health (4/5)](#emotional-health-45)
-    - [Meditation](#meditation)
-    - [750 words/Gratefulness](#750-wordsgratefulness)
+  - [Meditation](#meditation)
+  - [750 words/Gratefulness](#750-wordsgratefulness)
 - [Motivation (4/5)](#motivation-45)
 - [Physical Habits (4/5)](#physical-habits-45)
-    - [Statistics](#statistics)
-    - [Diet](#diet)
-    - [Sleep](#sleep)
+  - [Statistics](#statistics)
+  - [Diet](#diet)
+  - [Sleep](#sleep)
 - [House and goods](#house-and-goods)
 - [Inner Peace (5/5)](#inner-peace-55)
-    - [General Inner Peace](#general-inner-peace)
-    - [Work](#work)
-    - [Family](#family)
+  - [General Inner Peace](#general-inner-peace)
+  - [Work](#work)
+  - [Family](#family)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -95,8 +99,7 @@ My habits and balance have been strong, just keep my streaks running!
 Dropped the ball on this, but added hanging out with these folks into my goals for next year!
 
 - ☑ Catch up with Slava
-- ☐ Catch up with Bob
-- ☐ Catch up with Dave
+- Didn't get to Bob or Dave - moved to next year's goals
 
 ### Tori
 

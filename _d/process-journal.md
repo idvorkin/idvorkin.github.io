@@ -16,7 +16,7 @@ I've been doing [daily stream of consciousness journaling](/emotional-health#dai
 <!-- vim-markdown-toc-start -->
 
 - [Handwriting vs Typing](#handwriting-vs-typing)
-- [Journalling Workflow in 2025](#journalling-workflow-in-2025)
+- [Current Workflow](#current-workflow)
 - [Journal Structure](#journal-structure)
 - [The Prompts at the Bottom](#the-prompts-at-the-bottom)
 - [Appendix: The Evolution of How I Journal](#appendix-the-evolution-of-how-i-journal)
@@ -32,7 +32,7 @@ AI transcription ended the tradeoff. I write by hand on a Kindle Scribe, then le
 
 ![Me writing in my journal](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250302_191054.webp)
 
-## Journalling Workflow in 2025
+## Current Workflow
 
 The old version of this was fiddly. Every morning I created a fresh notebook on the Scribe, named it with the date, wrote, then emailed it to myself so a script could grab the PDF. A new notebook a day meant a long scroll of loose files with no easy way to flip back to last Tuesday.
 
@@ -106,4 +106,4 @@ The current setup is the third act. I'm keeping the earlier ones here for the re
 
 It worked, but a fresh notebook every day meant a long scroll of loose files and no easy way to flip back to last Tuesday. That's the itch the template scratched.
 
-**The hyperlinked template (2026-now).** One navigable PDF per quarter, synced through Google Drive - the [current workflow](#journalling-workflow-in-2025) above.
+**The hyperlinked template (2026-now).** One navigable PDF per quarter, synced through Google Drive - the [current workflow](#current-workflow) above.

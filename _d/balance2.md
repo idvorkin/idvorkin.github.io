@@ -6,27 +6,30 @@ redirect_from:
   - /effectiveness
 ---
 
-I'm good at a lot of things, but balance is really hard for me. Hard for everyone I bet. I think this would be an area that can really benefit from [mortality software](/mortality-software). TODO: decide if this post should fork into energy and balance
+I'm good at a lot of things, but balance is really hard for me. Hard for everyone I bet. I think this would be an area that can really benefit from [mortality software](/mortality-software).
+
+<!-- TODO: decide if this post should fork into energy and balance -->
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
 - [On Balance](#on-balance)
-    - [Balance vs Productivity](#balance-vs-productivity)
-    - [Energy is finite, like really finite.](#energy-is-finite-like-really-finite)
-    - [You need to decide how you'll spend it](#you-need-to-decide-how-youll-spend-it)
-    - [Golden Geese: Balancing Production and Production Capacity](#golden-geese-balancing-production-and-production-capacity)
-    - [Juggling Elephants: Balancing the roles in your life](#juggling-elephants-balancing-the-roles-in-your-life)
-    - [Productivity vs addiction and resistance](#productivity-vs-addiction-and-resistance)
+  - [Balance vs Productivity](#balance-vs-productivity)
+  - [Energy is finite, like really finite.](#energy-is-finite-like-really-finite)
+  - [You need to decide how you'll spend it](#you-need-to-decide-how-youll-spend-it)
+  - [Golden Geese: Balancing Production and Production Capacity](#golden-geese-balancing-production-and-production-capacity)
+  - [Juggling Elephants: Balancing the roles in your life](#juggling-elephants-balancing-the-roles-in-your-life)
+  - [Productivity vs addiction and resistance](#productivity-vs-addiction-and-resistance)
 - [How to achieve](#how-to-achieve)
-    - [Realistic goals by role](#realistic-goals-by-role)
-    - [Monitoring the roles in your life vs your goals](#monitoring-the-roles-in-your-life-vs-your-goals)
-    - [Review adjustment](#review-adjustment)
-    - [Focus on Impact, not energy spent](#focus-on-impact-not-energy-spent)
-    - [Parkinson's law and the 80/20 rule](#parkinsons-law-and-the-8020-rule)
-    - [Peak end rule and moments](#peak-end-rule-and-moments)
-    - [Activation Energy](#activation-energy)
-    - [Recharging with Time off](#recharging-with-time-off)
+  - [Realistic goals by role](#realistic-goals-by-role)
+  - [Monitoring the roles in your life vs your goals](#monitoring-the-roles-in-your-life-vs-your-goals)
+  - [Review adjustment](#review-adjustment)
+  - [Focus on Impact, not energy spent](#focus-on-impact-not-energy-spent)
+  - [Parkinson's law and the 80/20 rule](#parkinsons-law-and-the-8020-rule)
+  - [Peak end rule and moments](#peak-end-rule-and-moments)
+  - [Activation Energy](#activation-energy)
+  - [Recharging with Time off](#recharging-with-time-off)
+  - [Learning to slow down](#learning-to-slow-down)
 - [More resources](#more-resources)
 
 <!-- vim-markdown-toc-end -->

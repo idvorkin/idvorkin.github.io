@@ -14,29 +14,26 @@ tags:
 
 The business model canvas is a tool for understanding how a company makes money. This same model can be applied to a person's career. While [job hunting](/job-hunt-stress) this was helpful figuring out my [dream job](/dream-job). I suppose it should also prioritize my [work energy](/boss), and probably how to prioritize my [life energy](/eulogy). But that's to come.
 
+The filled-in canvas below is a snapshot from a past role (I last touched it in 2021). Read the specifics as a worked example of the method, not my current situation.
+
 {%include blob_image.html src="business-model-you-canvas.jpeg" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
 - [The "you" global boxes:](#the-you-global-boxes)
-    - [Key Activities - What you do](#key-activities---what-you-do)
-    - [Key Resources - Who you are/What you have](#key-resources---who-you-arewhat-you-have)
-    - [Key Partners - Who helps you?](#key-partners---who-helps-you)
+  - [Key Activities - What you do](#key-activities---what-you-do)
+  - [Key Resources - Who you are/What you have](#key-resources---who-you-arewhat-you-have)
+  - [Key Partners - Who helps you?](#key-partners---who-helps-you)
 - [Per customer boxes:](#per-customer-boxes)
-    - [Value Provided - How you help:](#value-provided---how-you-help)
-    - [Channels - How they know you, how you deliver](#channels---how-they-know-you-how-you-deliver)
-    - [Customer Relationships - How do you interact?](#customer-relationships---how-do-you-interact)
+  - [Channels - How they know you, how you deliver](#channels---how-they-know-you-how-you-deliver)
+  - [Customer Relationships - How do you interact?](#customer-relationships---how-do-you-interact)
 - [Customer Segment Specific](#customer-segment-specific)
-- [The engineering team I support](#the-engineering-team-i-support)
-- [Product Manager](#product-manager)
-- [Boss](#boss)
-- [Grand Boss](#grand-boss)
-    - [Mentees](#mentees)
-- [Feeling Meetings Members](#feeling-meetings-members)
+  - [The engineering team I support](#the-engineering-team-i-support)
+  - [Product Manager](#product-manager)
 - [The balance sheet](#the-balance-sheet)
-    - [Revenue - What you get?](#revenue---what-you-get)
-    - [Costs - What you give up](#costs---what-you-give-up)
+  - [Revenue - What you get?](#revenue---what-you-get)
+  - [Costs - What you give up](#costs---what-you-give-up)
 - [More resources](#more-resources)
 
 <!-- vim-markdown-toc-end -->
@@ -108,8 +105,6 @@ See my [dream job](/dream-job)
 
 ## Per customer boxes:
 
-### Value Provided - How you help:
-
 ### Channels - How they know you, how you deliver
 
 More complex than it sounds, need to do this per customer segment:
@@ -128,7 +123,7 @@ More complex than it sounds, need to do this per customer segment:
 
 ## Customer Segment Specific
 
-## The engineering team I support
+### The engineering team I support
 
 **Value Provided**
 
@@ -140,15 +135,13 @@ More complex than it sounds, need to do this per customer segment:
 - Ensuring sufficient resources
 - Resolving critical issues
 
-**Channel** - tbd
-
 **Relationship**
 
 - Goal retention
 - Weekly 1:1s
 - Weekly group meeting
 
-## Product Manager
+### Product Manager
 
 **Value Provided**
 
@@ -160,21 +153,11 @@ More complex than it sounds, need to do this per customer segment:
   - Architecture and Process trade offs
 - Divide and conquer on influence through technical channels
 
-**Channel** - tbd
-
 **Relationship**
 
 - Goal retention
 - Weekly 1:1s
 - Weekly group meeting
-
-## Boss
-
-## Grand Boss
-
-### Mentees
-
-## Feeling Meetings Members
 
 ## The balance sheet
 

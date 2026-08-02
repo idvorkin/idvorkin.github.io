@@ -8,7 +8,7 @@ redirect_from:
 imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-vacation.webp
 tags:
   - travel
-  - how-igor-ticks
+  - how igor ticks
 ---
 
 A guide to my favorite spots in British Columbia, focusing on Vancouver and Chilliwack. Whether you're planning a quick weekend getaway or a longer adventure, here's what you need to know. These recommendations come from my personal experiences over multiple trips - you can read about some of them in my [summer 2024 adventures](/ig66/749), [Yellow Deli expedition](/ig66/718), and various time off adventures:

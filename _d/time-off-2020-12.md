@@ -9,9 +9,7 @@ It's Corona virus X-mas, and I've got 2 weeks off. In an attempt to maximize my 
 
 This is a combination of [time off](/time-off), and all the stuff for [happiness](/happy), which I guess gets tangled up with half of my evergreen notes.
 
-I took the first 2 days to vegitate, which wasn't a conscious decision, it was just what happened when I didn't think about it. And boy did I vegitate. I think all I did on Sunday was consume media on my iPad and TV.
-
-## Moments
+I took the first 2 days to vegetate, which wasn't a conscious decision, it was just what happened when I didn't think about it. And boy did I vegetate. I think all I did on Sunday was consume media on my iPad and TV.
 
 ## Success Stories
 
@@ -20,36 +18,33 @@ I've used this time to restart the flywheel on magic, and diet, re-enforce my di
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [Top Learnings](#top-learnings)
+- [Success Stories](#success-stories)
 - [Relationships](#relationships)
-    - [Friends](#friends)
-    - [Tori](#tori)
-    - [Zach](#zach)
-    - [Amelia](#amelia)
+  - [Friends](#friends)
+  - [Tori](#tori)
+  - [Zach](#zach)
+  - [Amelia](#amelia)
 - [Identity Health](#identity-health)
-    - [Magic](#magic)
-    - [Tech Guru](#tech-guru)
-        - [DENY LIST: Shell + Enabling Environment + Python in VIM](#deny-list-shell--enabling-environment--python-in-vim)
-        - [Data Analysis - Pandas](#data-analysis---pandas)
-        - [CUT: Ranking Systems](#cut-ranking-systems)
+  - [Magic](#magic)
+  - [Tech Guru](#tech-guru)
+    - [DENY LIST: Shell + Enabling Environment + Python in VIM](#deny-list-shell--enabling-environment--python-in-vim)
+    - [Data Analysis - Pandas](#data-analysis---pandas)
+    - [CUT: Ranking Systems](#cut-ranking-systems)
 - [Cognitive Health](#cognitive-health)
 - [Emotional Health](#emotional-health)
-    - [Meditation](#meditation)
-    - [750 words](#750-words)
+  - [Meditation](#meditation)
+  - [750 words](#750-words)
 - [Physical Health](#physical-health)
-    - [Statistics](#statistics)
-    - [Diet](#diet)
-    - [Sleep](#sleep)
-    - [Energy](#energy)
+  - [Statistics](#statistics)
+  - [Diet](#diet)
+  - [Sleep](#sleep)
 - [House and goods](#house-and-goods)
 - [Mental quicksand](#mental-quicksand)
-    - [Spending vacation days when it's "fun time at work"](#spending-vacation-days-when-its-fun-time-at-work)
-    - [January is going to be a tough month at work.](#january-is-going-to-be-a-tough-month-at-work)
+  - [Spending vacation days when it's "fun time at work"](#spending-vacation-days-when-its-fun-time-at-work)
+  - [January is going to be a tough month at work.](#january-is-going-to-be-a-tough-month-at-work)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
-
-## Top Learnings
 
 ## Relationships
 
@@ -127,7 +122,7 @@ I checked this out briefly as it's a place I have little context, I think I'll w
 ## Cognitive Health
 
 - ☐ Summarize [7 habits](/7-habits)
-  - ☑ Break existing contenit into separate chapters for easy extension
+  - ☑ Break existing content into separate chapters for easy extension
   - ☐ STRETCH: Update concepts page
   - ☐ STRETCH: Update first things first page
   - ☐ STRETCH: Update Seek first to understand
@@ -137,19 +132,19 @@ I checked this out briefly as it's a place I have little context, I think I'll w
 - ☑ Read VSI: Happiness
 - ☑ Wrote up some ideas on [mental pain](/mental-pain) from Dr. Raph
 - ☐ Write up my engineering manager quick sands
-- Even though work related, these quick sands are probably the biggest assault on my inner peace, and I want to spend some time maximizing the cognative force I can apply to these situations.
+- Even though work related, these quick sands are probably the biggest assault on my inner peace, and I want to spend some time maximizing the cognitive force I can apply to these situations.
 
 ### Meditation
 
 I've been doing daily 20 minute breathe meditation for 3 months and it is now a habit. I also "catch my breath" throughout the day, catching my monkey mind.
 
-I'm considering my next steps here, perhaps doing it in the hottub, and or trying to include joy meditation and contemlative meditation.
+I'm considering my next steps here, perhaps doing it in the hottub, and or trying to include joy meditation and contemplative meditation.
 
-It's interesting that even though I can catch ad-hoc or new kinds of meditation, I want to keep that 20 minute core meditation, as just like physical ativity, you may have activity but your routine is still the core.
+It's interesting that even though I can catch ad-hoc or new kinds of meditation, I want to keep that 20 minute core meditation, as just like physical activity, you may have activity but your routine is still the core.
 
 ### 750 words
 
-This has been spotty throughout Decemeber, given I've got no other time commitments, restarting this should be easy.
+This has been spotty throughout December, given I've got no other time commitments, restarting this should be easy.
 
 - ☐ 10/10 days
 
@@ -167,11 +162,10 @@ I was able to 'level up' in a few domains:
 ### Statistics
 
 Weight: 229
-Gym Days:
 
 ### Diet
 
-My diet discipline has been week. I'll take some structural "additive" attempts to make it better.
+My diet discipline has been weak. I'll take some structural "additive" attempts to make it better.
 
 - ☐ CONTINUE: Daily breakfast miso soup
 - ☐ NEW: Daily Afternoon Popcorn
@@ -180,10 +174,6 @@ My diet discipline has been week. I'll take some structural "additive" attempts 
 ### Sleep
 
 - ☐ 10/10 wake up at 4:30.
-
-### Energy
-
-- ☐ GOAL: High
 
 ## House and goods
 
@@ -198,11 +188,11 @@ Getting ready for the re-model is important too
 
 ☑ Complete all paper work for the re-fi
 
-Random small suff
+Random small stuff
 
 - ☑ Swap out Wi-Fi routers
 
-Wow - that nighthark router really sucked, my new TP-Link A1700 (?) seems fantastic so far!!
+Wow - that Nighthawk router really sucked, my new TP-Link A1700 (?) seems fantastic so far!!
 
 ## Mental quicksand
 
@@ -214,7 +204,7 @@ The pro of working during x-mas break:
 
 - Most folks have taken off so there are no meetings, and you can spend the time on fun projects
 
-The pro of time off during x-max break:
+The pro of time off during x-mas break:
 
 - The kids are also off, so an optimal time to spend with them
 - There are naturally 4 holiday days so spending 6 days, you get a solid 14 days off.

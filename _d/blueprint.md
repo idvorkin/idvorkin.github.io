@@ -12,24 +12,22 @@ So there's this guy who measures his nightly erections, doesn't go out into the 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [Stuff i love](#stuff-i-love)
+- [Stuff I love](#stuff-i-love)
 - [Goofy stuff](#goofy-stuff)
-- [Sleep](#sleep)
 - [Don't Die - Voices in his head](#dont-die---voices-in-his-head)
 - [Who holds the reins, morning or evening Igor](#who-holds-the-reins-morning-or-evening-igor)
 - [Why not defer control to an algorithm?](#why-not-defer-control-to-an-algorithm)
 - [Attitude to others](#attitude-to-others)
-- [Changes he's made me consider](#changes-hes-made-me-consider)
 - [Changes he's made me implement](#changes-hes-made-me-implement)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-## Stuff i love
+## Stuff I love
 
-- Sleep is sacred (note he was depressed for 10 years)
+- Sleep is sacred (note he was depressed for 10 years). How good a night's sleep you have sets the difficulty level of the next day - how could you not go all in on this?
 - Doesn't drink, because it messes with sleep. Mitigated by having wine for breakfast, but even that messed with his sleep so he stopped
-- "The you in the moment", can make terrible decisions and has no accountability. This begs the question, who gave them permission to run the ship and screw over others (note, this scales up to
+- "The you in the moment", can make terrible decisions and has no accountability. This begs the question, who gave them permission to run the ship and screw over others?
 - Move everything from the rider to shaping the path (What he calls blue prints)
 
 ## Goofy stuff
@@ -37,10 +35,6 @@ So there's this guy who measures his nightly erections, doesn't go out into the 
 - Doesn't go out in the sun during the day, bad for the skin
 - Measures everything he can including evening erections
 - (I can relate) Hates seeing grey hair, but also hates dying his hair (I took some stabs at [dying my beard](/ig66/663))
-
-## Sleep
-
-How good a night's sleep you have is really sets the difficulty level of the next day. How could you not go all in on this.
 
 ## Don't Die - Voices in his head
 
@@ -60,8 +54,6 @@ I also try to do this for my finances using zero index funds vs lottery tickets.
 
 He is like, I want to be an inspiration, don't feel you need to do what I do, just realize it can be done, and let it be an inspiration
 
-## Changes he's made me consider
-
 ## Changes he's made me implement
 
-- Re-enforce my importance of sleep.
+- Re-enforce the importance of sleep.

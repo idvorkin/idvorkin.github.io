@@ -30,6 +30,7 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
 - [Tools of the Trade](#tools-of-the-trade)
   - [The Past: Cursor](#the-past-cursor)
   - [The Present: Claude Code](#the-present-claude-code)
+  - [The Upgrade: Herdr](#the-upgrade-herdr)
   - [The Future: Multi-Agent Dashboard](#the-future-multi-agent-dashboard)
   - [The 8 Stages of AI Coding](#the-8-stages-of-ai-coding)
 - [Notes from the Trenches](#notes-from-the-trenches)
@@ -88,9 +89,9 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
 
 ### The Most Expensive I Can Get
 
-Currently I'm using Claude Opus 4.5 on the $200/month plan.
+Currently I'm using Claude Opus 4.5 on the \$200/month plan.
 
-On one hand you might think I'm crazy spending $2,400 a year. On the other hand, imagine having brilliant collaborators who force multiply everything you do, train you up, and basically give you a PhD in whatever you're working on.
+On one hand you might think I'm crazy spending \$2,400 a year. On the other hand, imagine having brilliant collaborators who force multiply everything you do, train you up, and basically give you a PhD in whatever you're working on.
 
 ### Why Not Codex, Gemini, etc.?
 
@@ -124,6 +125,14 @@ It's crazy [how fast AI evolves](https://idvorkin-how-long-since-ai.surge.sh/?sh
 
 Claude Code is really about autonomous agents that run in your terminal. As a terminal guy, I can speak to why this is so awesome - it fits my workflow perfectly. The agent runs commands, edits files, and iterates without me micromanaging every step.
 
+### The Upgrade: Herdr
+
+For the last year "the multiplexer" meant tmux plus duct tape - a [hand-written Rust picker](/ai-cockpit#tmux-on-super-steroids---the-multiplexer), windows that auto-rename to the running agent, Stream Deck keys for pane hopping. [Herdr](https://herdr.dev) replaced the duct tape: a multiplexer that knows what an agent is. Same terminal, same SSH, same detach-and-reattach - but every workspace shows blocked / working / done / idle, spinning up a git worktree is one command, and there's a socket API the agents themselves can drive. The full story of the switch is in [my journal](/ai-journal#herdr-the-agent-multiplexer-my-tmux-rig-was-trying-to-become).
+
+Here's my actual herd. Spaces tree top-left, agent states below it (spinners are working, checks are done), a live Claude session in the main pane. And a bonus: the `herdr` agent in that list is the Claude session that took this screenshot.
+
+![Herdr running nine workspaces: the spaces tree and agent-state panel on the left, a live Claude Code session working in the main pane](/images/herdr-herd.webp)
+
 ### The Future: Multi-Agent Dashboard
 
 I was surprised when Steve Yegge mentioned this is the future - orchestrating multiple specialized agents. Surprised because I'd been accidentally building toward this. The [Agent Dashboard](#the-future-multi-agent-dashboard) I mentioned earlier? By the way, I didn't build that at all. I just gave the requirements and Claude built it itself.
@@ -156,7 +165,7 @@ This diagram perfectly captures the evolution I've lived through. Let me break d
 
 1. **Orchestrated System** - This is the vision: a central dashboard managing dozens of specialized agents. The [Agent Dashboard](#the-future-multi-agent-dashboard) is an early step toward this. You're no longer coordinating individual agents - you're managing the system that coordinates them.
 
-**Where I Am Today:** Somewhere between stages 6 and 7. Running 2-3 parallel agents on different features, learning how to avoid merge hell, figuring out when to use specialized vs. generalist agents. Stage 8 is the dream, but the tooling isn't quite there yet.
+**Where I Am Today:** Somewhere between stages 6 and 7. The herd screenshot above is nine workspaces with four agents mid-flight - [Herdr](#the-upgrade-herdr) is what makes that supervisable. Still learning how to avoid merge hell and when to use specialized vs. generalist agents. Stage 8 is the dream, and the tooling is closer than it was.
 
 ## Notes from the Trenches
 
@@ -164,7 +173,7 @@ This diagram perfectly captures the evolution I've lived through. Let me break d
 
 **Note to self: Review this section regularly. These principles are easy to forget when you're heads-down in a session.**
 
-- **Rent the most expensive brain you can**: Spend tokens liberally. Don't be cheap with AI usage - the $200/month is nothing compared to the force multiplication you get
+- **Rent the most expensive brain you can**: Spend tokens liberally. Don't be cheap with AI usage - the \$200/month is nothing compared to the force multiplication you get
 - **Maximize time between interventions**: Like Tesla's self-driving metrics, the goal is reducing how often you need to take over. Every friction point kills flow
   - **Don't be the intern doing grudge work**: If AI writes code and you manually test it, you've got the roles backwards. Make AI the tester too - be the architect, not the QA intern
   - **Tests as specification**: The clearer the tests, the less I need to intervene
@@ -172,6 +181,7 @@ This diagram perfectly captures the evolution I've lived through. Let me break d
   - **Conventions compound**: Time spent on CLAUDE.md pays off across every session
 - **Isolation is freedom**: YOLO containers let Claude run autonomously without risk to my real environment
 - **"Don't glaze me" changes everything**: Claude is far more useful when it pushes back on bad ideas
+- **Rot repair is nearly free**: Reviving a stale project used to mean a weekend of toolchain archaeology ([Software Rot](/d/2017-09-10-software-rot)); now an agent grinds through the upgrades for me
 
 ### What I'm Still Figuring Out
 
@@ -406,7 +416,7 @@ I think there's a pendulum here:
 - 2000s: SaaS - rent the same software as everyone else
 - 2030s: Single dev does all the required tooling, personalized to their exact needs
 
-See more in my [hyper-personalization](/hyper-personal) post. Examples from my own life: [handwriting journal workflow](/process-journal#journalling-workflow-in-2025), [mortality software](/mortality-software), [all my pet projects](/pet-projects).
+See more in my [hyper-personalization](/hyper-personal) post. Examples from my own life: [handwriting journal workflow](/process-journal#current-workflow), [mortality software](/mortality-software), [all my pet projects](/pet-projects).
 
 ### The Joy Question
 

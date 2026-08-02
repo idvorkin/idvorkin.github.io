@@ -8,11 +8,21 @@ redirect_from:
   - /scandi-2026
 ---
 
+<!--
+INSTRUCTIONS FOR CLAUDE — recap status (2026-08-02, rev 2)
+- "Where we went (by leg)" is built from written evidence (recap prose in this post,
+  /changelog, /life-journal, in-trip git history) plus Igor's Google Maps Timeline — the
+  linked album is 49 Timeline screenshots with geocoded place labels, one or two per day:
+  https://photos.app.goo.gl/utGDR6UputWHAfn3A
+- Lines tagged "From the plan" are items the Timeline does NOT show. Timeline absence is
+  weak evidence (boats and indoor stops get missed), so keep those lines until Igor settles
+  them — do not promote or delete without his confirmation.
+- Copy only city/venue labels from the Timeline into this post. Never copy street-level or
+  residential labels.
+- Bergen and Amsterdam still owe narrative write-ups; their lists are Timeline skeletons.
+-->
+
 22 days, 5 countries, 4 Dvorkins, one whirlwind tour. From Reykjavík to Amsterdam by way of Stockholm, Oslo, and the Norwegian fjords. This is the first time we've attempted a trip of this scope as a family — the kids are 16 and 12, both still home, and the window for "all four of us on the road together" closes faster than I'd like.
-
-> When you sacrifice identity for consumption, you end up with neither.
-
-The whole trap of time off in one sentence — vegetating _feels_ like rest, but it quietly starves the roles that make you _you_.
 
 > 🗺️ **Trip map & city guide:** [Scandinavian Whirlwind 2026 →](https://idvorkin-ai-tools.github.io/scandinavia-2026/) — one page per stop (Iceland → Copenhagen → Stockholm → Oslo → fjords → Amsterdam), with things to do, hours, and a live weather table.
 
@@ -20,7 +30,7 @@ For context on why I take time off: [/time-off](/time-off).
 
 ## Why I'm taking this time off — ranked
 
-[When you sacrifice identity for consumption, you end up with neither](/produce-consume). So I wrote down what I'm actually here for, in order — and then the trip rearranged the list on me.
+I wrote down what I'm actually here for, in order — and then the trip rearranged the list on me.
 
 **What I expected:**
 
@@ -37,21 +47,7 @@ For context on why I take time off: [/time-off](/time-off).
 
 4 and 5 are the interesting ones, and they're linked: the one real sacrifice I've made to AI is that the [Dealer of Smiles and Wonder](/joy) just stopped showing up. Out here, with the screens quiet, he walked right back in — the guy underneath was someone I'd been missing.
 
-## Re-stacking the roles
-
-Ranking the trip made me ask the bigger version of the question: if that's the order for 22 days, what's the stack for every day? So I re-sorted the roles into three honest tiers.
-
-**Non-negotiables — protect first, daily.** The two foundational [Healths](/four-healths): _Physical_, banked before the family wakes up, and _Emotional_ — awareness and compassion, handled as it happens. Everything else is built on these.
-
-**Frequently starved — feed these.** _Father / Husband_, and the _Joy Giver_ — the balloons-and-magic guy from [the eulogy](/eulogy). The roles I'd grieve losing, and the exact ones I let go hungry when work gets loud. The trip already proved the Joy Giver comes roaring back the moment I stop starving him.
-
-**Over-invested — dial back.** _Technologist_, and honestly everything else, parked way below where they've been running. Not because the work doesn't matter — because it's the finished room, and I keep redecorating it instead of walking into the ones that aren't.
-
-## A learning to bring home
-
-First one already banked: **meditation travels, and churches are the best place to do it.** Duck into whatever old cathedral the city is proud of, take a pew, and just sit — cool stone, tall ceilings, nothing asked of you. The room is built to slow you down; let it.
-
-## How it's actually going
+## How it actually went
 
 ### 🇮🇸 Reykjavík
 
@@ -102,73 +98,126 @@ It's got me curious about the [habit loop](/habits#habit-model) — cue, craving
 
 > 🧳 **Packing:** my reusable [packing master list](/packing) — the durable checklist every trip is trimmed from.
 
-## Who's coming
+## Who came
 
-All 4 Dvorkins (Igor, Tori, Zach, Amelia). Iceland and Copenhagen legs are just us; Stockholm onward we're traveling with friends.
+All 4 Dvorkins (Igor, Tori, Zach, Amelia). Iceland and Copenhagen legs were just us; Stockholm onward we traveled with friends.
 
-## Things we want to do (by leg)
+## Where we went (by leg)
+
+This started as the pre-trip wishlist. It's now the record of where we actually went — memory and the journal, cross-checked day by day against my Google Maps Timeline. What's left on a _From the plan_ line is genuinely unresolved: the Timeline misses boats and indoor stops, so absence isn't proof we skipped it.
+
+{% include repo_image.html src="timeline-2026-06-27-wheels-up.webp" %}
+
+_The day's Timeline — Sat Jun 27: wheels up for Iceland. (Home label blacked out.)_
 
 ### 🇮🇸 Iceland (Jun 28–30) — Reykjavík stopover · [📍 map](https://www.google.com/maps/place/Reykjav%C3%ADk)
 
-- Pick up the rental SUV at KEF airport
-- Reykjavík city walk + Hallgrímskirkja
-- Blue Lagoon or Sky Lagoon (decide day-of based on weather + crowds)
-- Possible Golden Circle drive if energy permits — Þingvellir, Geysir, Gullfoss
-- Eat a hot dog at Bæjarins Beztu (mandatory tourist obligation)
+- The Reykjavík pools — the 8°C cold plunge, the 40/42/44 hot pots, sauna with all four of us (full story above)
+- A 5am kettlebell session at World Class Laugar — in the pouring rain, rental Tesla and all
+- Laekur Hostel's shared kitchen — cooking dinner next to strangers and trading stories
+- Hallgrímskirkja and a walk down Laugavegur
+- Reykjavík Park and Zoo
+
+_From the plan — the Timeline doesn't show these:_ the Golden Circle drive (Þingvellir, Geysir, Gullfoss), the Bæjarins Beztu hot dog. And the Blue Lagoon / Sky Lagoon we simply never did.
+
+{% include repo_image.html src="timeline-2026-06-30-reykjavik.webp" %}
+
+_The day's Timeline — Tue Jun 30: Laekur Hostel, World Class Laugar, the zoo._
 
 ### 🇩🇰 Copenhagen (Jun 30 – Jul 3) — with Ammon · [📍 map](https://www.google.com/maps/place/Copenhagen)
 
-- Hang with Ammon — 2 days, no fixed agenda.
-- Walk Nyhavn + canals
-- **Marble Church (Marmorkirken)** — climb the dome tower for the Amalienborg→Opera axis + Sweden view
-- One nice meal as a family
+- Two days with Ammon — the point of the stop
+- Sat down and meditated in a church — [the quiet a church keeps](/life-journal#meditating-in-a-church)
+- The Round Tower (Rundetaarn) — walked its spiral ramp barefoot: [cold stone, the pitch of the slope](/life-journal#barefoot-down-the-tower-ramp)
+- Christiansborg Palace, Amalienborg Palace, the Gefion Fountain
+- Church of Our Saviour
+- Tivoli Gardens
+- The Botanical Garden
+- Torvehallerne and Reffen — the food markets
+- Restaurants: Huks Fluks and Farfars Bodega
+
+_From the plan — the Timeline doesn't show these:_ Nyhavn + the canals, the Marble Church (Marmorkirken) dome climb.
+
+{% include repo_image.html src="timeline-2026-07-01-copenhagen.webp" %}
+
+_The day's Timeline — Wed Jul 1: Torvehallerne, the Round Tower, Christiansborg, Tivoli._
 
 ### 🇸🇪 Stockholm (Jul 3–7) · [📍 map](https://www.google.com/maps/place/Stockholm)
 
-- Gamla Stan + fika in Stortorget square (arrival recovery)
-- **Vasa Museum** — preserved 17th-century warship
-- **ABBA Museum** + Fotografiska
-- **City kayak tour** (private, ~2h, archipelago)
-- **Evening Wildlife Safari** with Swedish midsummer meal (~4h, van)
-- Södermalm street art + vintage shops
-- **Vain Vikings of Runriket** — rune-stone trail (4h, private + driver)
-- **Skansen** open-air museum on the way out
+- **Skansen** — the glassblower, the silversmith, the staff who stay in role (full story above)
+- The zoo — Amelia's solo run, spare battery and all
+- **Vasa Museum** — the warship that capsized on its maiden voyage and came back three centuries later
+- The Royal Palace
+- Östermalm — Östermalms Saluhall and the Stureplan blocks
+- Sunday at a Greek Orthodox church — Zach's blessing from the bishop, my near-ejection for magic in the pews
+- Zach's dinner tear: frog legs, ratatouille, escargot
+
+_From the plan — the Timeline doesn't show these:_ fika in Stortorget, the ABBA Museum, Fotografiska, the kayak tour, the Evening Wildlife Safari, Södermalm street art, the Runriket rune stones.
+
+{% include repo_image.html src="timeline-2026-07-06-stockholm.webp" %}
+
+_The day's Timeline — Mon Jul 6: the Vasa, Skansen, and a grocery run._
 
 ### 🇳🇴 Oslo (Jul 7–10) · [📍 map](https://www.google.com/maps/place/Oslo)
 
-- Vigeland Sculpture Park, Aker Brygge waterfront
-- **National Museum**
-- **Authentic Oslo Bike Tour** — Bjørvika → Akerselva → Mathallen → Grünerløkka (3h, 11 km)
-- **Holmenkollen ski jump** — zipline! (kids will love)
-- Munch Museum + Grünerløkka neighborhood
-- **Oslofjord hike** to Vettakollen summit (3.5h, 5.4 km) + dinner cruise
+- A morning in Grünerløkka — coffee, record bins, the kids picking through secondhand racks
+- The new Deichman library in Bjørvika — floors of light, kids reading everywhere
+- A boat tour on the Oslofjord
+- Walked under the Barcode towers in Bjørvika
+- Walked the Opera House roof — white marble sloping straight down into the water
+- The Holmenkollen Ski Museum
+- Vikingtidsmuseet — the Viking Ship Museum
+- Akershus Fortress
+
+{% include repo_image.html src="timeline-2026-07-08-oslo.webp" %}
+
+_The day's Timeline — Wed Jul 8: Holmenkollen, Vikingtidsmuseet, and the loop out on the Oslofjord._
 
 ### 🏔️ Aurland + Voss (Jul 10–13) — the fjords · [📍 Aurland](https://www.google.com/maps/place/Aurland) · [📍 Voss](https://www.google.com/maps/place/Voss)
 
-- **Bergen Railway** Oslo → Flåm — one of the world's most scenic train rides
-- **Fjordsafari RIB** on Aurlandsfjord + UNESCO Nærøyfjord (2h 15m, suits supplied)
-- Fjord cruise Flåm → Gudvangen
-- **Viking Village Njardarheimr** (Gudvangen) — Viking lunch, axe-throwing, archery
-- **Voss Gondola** to 820m summit (1.5h return)
+- The train out of Oslo to Myrdal, then the Flåmsbana down the valley to the fjord
+- Two nights based in Aurland, deep in fjord country — Winjum Apartments, groceries from the local SPAR
+- The Stegastein viewpoint, Borgund Stavkyrkje (the stave church), and the drive through the Lærdalstunnelen
+- A fjord cruise from Aurland to Gudvangen, the Viking town — the amazing Nærøyfjord, the tour that blew us away: walls of rock straight out of the water, waterfalls off the top, a scale that shut the whole boat up
+- Viking Valley (Njardarheimr) in Gudvangen
+- Then the bus from Gudvangen up to Voss, and a walk along the lake there
+
+{% include repo_image.html src="timeline-2026-07-12-fjords.webp" %}
+
+_The day's Timeline — Sun Jul 12: Viking Valley, the Lærdalstunnelen, down to Voss._
 
 ### 🌉 Bergen (Jul 13–16) · [📍 map](https://www.google.com/maps/place/Bergen,+Norway)
 
-- **Bryggen** (UNESCO) walking tour
-- **Fløibanen funicular** + Mt. Fløyen hike (2.5h, moderate grade)
-- Mostraumen fjord fast boat OR Mt. Ulriken cable car
-- **Flavours of Bergen** food tour (2h)
-- **Islets kayak tour** (~4h 15m)
-- Morning fish market before flying out
+Three nights in Bergen — the write-up is still owed, but the Timeline kept the skeleton:
+
+- **Fløibanen funicular** up Mt. Fløyen, and walks on the mountain
+- Øvregaten — the street through the old Bryggen quarter
+- A meal at Marg & Bein
+
+_From the plan — the Timeline doesn't show these:_ the guided Bryggen walking tour, the Mostraumen fjord boat or Mt. Ulriken cable car, the Flavours of Bergen food tour, the Islets kayak tour, the morning fish market.
+
+{% include repo_image.html src="timeline-2026-07-15-bergen.webp" %}
+
+_The day's Timeline — Wed Jul 15: Fløyen top to bottom, Øvregaten, Marg & Bein._
 
 ### 🇳🇱 Amsterdam (Jul 16–19) · [📍 map](https://www.google.com/maps/place/Amsterdam)
 
-- Rent bikes + roam **Jordaan** neighborhood
-- **Anne Frank House** (PRE-BOOK!)
-- Canal cruise
-- **Rijksmuseum** + Vondelpark
-- **Foodhallen** (covered food market)
-- **A'DAM Lookout** rooftop swing
-- NDSM Wharf or Zaanse Schans windmills before flying home
+The last stop — its prose still owed too; the Timeline again:
+
+- The **Jordaan** and The 9 Streets (De Negen Straatjes)
+- **Rijksmuseum**
+- Vondelpark and Rembrandtpark
+- A meal at Rasoi
+
+_From the plan — the Timeline doesn't show these:_ renting bikes, the Anne Frank House, Foodhallen, the A'DAM Lookout swing, NDSM Wharf / Zaanse Schans windmills. The canal cruise we never did.
+
+{% include repo_image.html src="timeline-2026-07-18-amsterdam.webp" %}
+
+_The day's Timeline — Sat Jul 18: The 9 Streets, the Rijksmuseum, Rasoi._
+
+{% include repo_image.html src="timeline-2026-07-19-flight-home.webp" %}
+
+_And the Timeline for Sun Jul 19 — the long hop home._
 
 ## How I'm doing this trip
 
@@ -190,4 +239,4 @@ The sharpest test of all this is how I use AI on the road. I wrote that one up o
 
 {% include summarize-page.html src="/time-off" %}
 
-_Written ~6 weeks pre-trip. Will write the actual recap when we're back._
+_Started ~6 weeks pre-trip; the recap sections were written on the road, and the place lists were trued up afterward against my Google Maps Timeline. Back home Jul 19. Bergen and Amsterdam still owe their prose._

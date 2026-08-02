@@ -11,6 +11,10 @@ redirect_from:
 
 Language, often unknown to us, creates our mental models, our reality, and defines our meaning. But the model is not the terrain, and by engaging with the language we can change mental models. Sleight of mouth (SoM) is a series of techniques for changing our models, reality and meanings and thus our experiences. Our mental models are a frame, and we need help going from a 'problem frame' to a 'desired outcome frame' , a 'failure frame', to a 'feedback frame' and an 'impossible frame ' to an 'as if' frame. To experience the power of language, find anything that is invisible to you, and name it. Now as you've given it a name, see how you perceive it, and become aware of it.
 
+{% include ai-slop.html percent="40" %}
+
+These are my notes on Robert Dilts' _Sleight of Mouth_. Dilts reverse-engineered fourteen moves by modeling how people like Lincoln, Gandhi, and Socrates argued their way through other people's beliefs — and, more usefully, how you argue with your own.
+
 The techniques encourage us to:
 
 - 're-punctuate' and 'rechunk' our perceptions
@@ -46,12 +50,14 @@ From there you apply a series of questions/concepts (Page 318):
 10. Reality Strategy - How would you need to perceive the world for this belief to be true.
 11. Counter Example - Find an exception to the rule
 12. Hierarchy of Criteria - What criteria is more important than the one you are considering.
-13. Apply to Self - ??
+13. Apply to Self - Apply the belief's own judgment to the belief itself. "It's too expensive" - how expensive is it to keep holding this belief?
 14. Meta frame - What other belief about this belief could change or enrich the perception of this belief?
 
 {%include blob_image.html src="sleight-of-mouth.jpg" %}
 
 ### 1: Language -> Experiences
+
+The words we reach for don't just describe an experience, they assemble it. Swap the word and you change what the experience _is_ — before you've changed a single fact.
 
 #### Words matter - as simple as 'and', 'but' or 'even though'
 
@@ -85,15 +91,15 @@ Not I have a problem, but I want this outcome. Outcome frame is more powerful an
 
 #### Change frame size
 
-Changing the size of your perspective. Will it be a problem in a week, month, year?
+Zoom the lens in or out until the problem changes size. Will this matter in a week? A year? On my deathbed? Zooming out shrinks most crises into footnotes. Zooming _in_ does the opposite good work: "I'll never get in shape" is too big to fight, but "can I do one push-up right now?" is a frame small enough to actually win.
 
 #### Context Reframing
 
-Think of a different context when something will be helpful? Having someone who's very anal retentive, is super helpful when you need everything arranged in its place.
+Every behavior is useful _somewhere_ — find the context where it's a gift. The friend who's exhaustingly anal-retentive is exactly who you want packing the moving truck or reading the contract. The question stops being "how do I get rid of this trait" and becomes "where is this trait an asset?"
 
 #### Content Reframing
 
-Instead of looking at someone's behaviors, look at their positive intent. The underlying intent is usually good, it's the behavioral manifestation that's tricky.
+Keep the facts, change what they mean. Instead of judging the behavior, look for the positive intent underneath it — the intent is almost always good, it's the expression that's clumsy. A kid who won't stop arguing isn't "defiant," they're practicing how to hold a position. My back pain isn't "my body failing me," it's my body sending a signal I finally learned to read.
 
 #### Reframe Critics and Criticism
 
@@ -107,16 +113,15 @@ Criticism often said in the negative form "avoiding stress" instead of "feeling 
 
 To say this properly do the following exercise:
 
-If I don't want X, what is it I do want? Say that instead.
+If I don't want X, what is it that I _do_ want? Say that instead:
 
-It is.... -> I want to make sure ...
-Too expensive -> It to be affordable.
-Fear of failure -> Desire to succeed
-Unrealistic -> Concrete and achievable.
-Too much effort -> Easy and achievable
+- It is... → I want to make sure...
+- Too expensive → I want it to be affordable
+- Fear of failure → Desire to succeed
+- Unrealistic → Concrete and achievable
+- Too much effort → Easy and achievable
 
-Next, change criticism to How will you ..
-It is too expensive -> How will you ensure it's affordable?
+Then turn the criticism into a "how" question: "it's too expensive" → "how will you make sure it's affordable?"
 
 #### Helping critics become advisors.
 
@@ -132,48 +137,51 @@ Pro Tip, before going into what needs to be achieved, call out the things that a
 
 #### Pattern: Intention and Redefining
 
-Problem -> Outcome
-Failure -> Feedback
-Critics -> Advisors
+Two moves keep coming up, because they're the ones that reopen a closed conversation:
 
-Fundamental Reframes:
-**Intention:** Direct attention to persons intent (desired outcome)
-**Redefining:**Change words that are similar, but slightly different, usually more positive.
+- Problem → Outcome
+- Failure → Feedback
+- Critics → Advisors
 
-When we convert the problem to the intention - we get back to the outcome frame and open a conversation.
+- **Intention:** direct attention to the person's intent — the desired outcome underneath the complaint.
+- **Redefining:** swap in words that are similar but slightly different, usually more positive.
 
-Customer says: I'm afraid that's too expensive.
-Sales Guy Thinks: _Need to understand the intention, take a few stabs at it_
-Sales Guy: Is it you think the item is overpriced, or are you concerned you can't afford it?
+Convert the problem into the intention and you're back in the outcome frame, with a conversation instead of a wall. Watch a good salesperson do it:
 
-Subtle meaning differences: Overpriced -> Unable to afford -> Expensive For Value
+- **Customer:** I'm afraid that's too expensive.
+- **Salesperson (thinking):** _need to understand the intention, take a few stabs at it._
+- **Salesperson:** Do you think the item is overpriced, or are you worried you can't afford it?
 
-How much pain are you in vs. How much discomfort do you feel?
+Those aren't the same worry — overpriced → unable to afford → expensive for the value are three different beliefs with three different answers. Same move as "how much _pain_ are you in?" versus "how much _discomfort_ do you feel?": the word sets the size of the thing.
 
 ### 2.1 One word reframes:
 
-Take a word/statement and make it more positive and more negative.
+Take a statement and slide it one notch more positive, then one notch more negative. Same underlying thing, three different verdicts — which proves the verdict was never in the thing, it was in the word you picked.
 
-Statements:
-It doesn't piss me off ; I'm OK with it ; I'm accepting it
-I made a mistake; you twisted my words; he's a damn liar.
+The same act, cooling down or heating up:
 
-Words:
-Responsible, Stable, Rigid
-Stable, Comfortable, Boring
-Fiscally responsible, Frugal, stingy
-Friendly, Nice, Naive
-Big Imagination -> Telling Fairy Tales -> Lying
+- It doesn't piss me off → I'm OK with it → I'm accepting it
+- I made a mistake → you twisted my words → he's a damn liar
 
-#### One word reframing exercise
+The same trait, spun up and spun down (the middle word is the neutral one):
+
+- Responsible → Stable → Rigid
+- Stable → Comfortable → Boring
+- Fiscally responsible → Frugal → Stingy
+- Friendly → Nice → Naive
+- Big imagination → Telling fairy tales → Lying
+
+Whoever gets to pick the word gets to pick the meaning. Notice when someone hands you theirs, and notice when you can hand back a better one.
 
 #### Perceive from different model of world, by taking a second position
 
-Models of the world - Seek first to understand. Three perspectives
+Seek first to understand. Stand in each of three positions and the same event turns into three different events:
 
-- My frame/model
-- Other persons frame/model
-- Objective observers model.
+- **First position — my frame.** How it looks from inside my own map.
+- **Second position — their frame.** Step into the other person's shoes and argue their case as if it were mine.
+- **Third position — the observer.** Watch the two of us from the balcony, like a documentary of the conversation.
+
+Most stuck arguments are two people jammed in first position, each certain the other is just wrong. Genuinely visiting second position — not performing it, actually going there — dissolves more conflict than any clever comeback.
 
 ### 3: Chunking
 
@@ -185,85 +193,84 @@ Changing the specificity of a thought,
 
 #### Chunking Down
 
-I'm Ugly;
+Get specific until the generalization can't survive the detail. A big vague judgment only holds up from a distance.
 
-- I -> Nostril, arm, legs?
-- Ugly -> to mom? to self? to Indian women?
-
-Learning Disabled?
-Learning -> Inputting, Storing, Reproducing
-
-Failure -> Goal Setting, Planning, Execution
+- **"I'm ugly."** Ugly _which_ part — nostril, arm, legs? Ugly to whom — my mom, myself, a stranger? The word can't survive the questions.
+- **"I'm learning disabled."** Disabled at which step — taking information in, storing it, or reproducing it? Now it's a pipeline with a fixable stage, not an identity.
+- **"I'm a failure."** Failed at goal-setting, planning, or execution? Name the stage and it becomes a skill to drill, not a verdict to carry.
 
 #### Chunking Up
 
 - By going up, we see if it's as bad and, if we can find something better to chunk down to.
+- "I failed this project" chunks up to "I'm learning to run projects" — a class in which one failure is a single data point, not the verdict. Then chunk back down to the one skill worth fixing next.
 
 #### Analogy (chunk Laterally)
 
 - By finding an analogy, we compare to the new analogy, to better understand the current statement.
+- "My code keeps breaking, so I'm a bad engineer" → "A surgeon's first incisions bled too; the reps are how the hand steadies." The analogy smuggles in a reframe the direct statement fights off.
 
-#### Finding ISO Morphisims
+#### Finding Isomorphisms
 
-- 3 folks A,B,C
-- A tells B, C a problem where they want help
-- B and C try to find the critical elements
-- B and C come up with a metaphor for the critical element and B tells A.
-  - Sample metaphors: Fantasy, Sports, War, Folks Tales, star trek.
+An isomorphism is a problem with the _same shape_ as yours in a completely different domain — and the borrowed domain often carries a solution your own is too close to see. A game for finding one:
 
-#### Punctuation and Punctuation
+- Three people: A, B, and C.
+- A describes a problem they want help with.
+- B and C hunt for its critical elements — the underlying structure, stripped of A's specifics.
+- B and C build a metaphor with that same structure from another world — fantasy, sports, war, folk tales, Star Trek — and hand it back to A.
 
-- Framing is the punctuation of objective reality into our subjective reality.
-- See great examples from book that,that,is - with commas periods and question marks
+The reframe rides in on the metaphor. "Your co-founder standoff is two gunslingers who both know whoever draws first loses" lands somewhere the direct advice can't reach.
+
+#### Punctuation and Repunctuation
+
+Experience arrives as a run-on stream. We punctuate it — deciding where one event ends, where the next begins, and which clause caused which. Move the punctuation and the meaning moves with it, even though not a single fact changed.
+
+- **Framing is the punctuation of objective reality into our subjective reality.** Where you drop the period decides where the story ends.
+- The classic demo flips meaning on comma placement alone: _"A woman without her man is nothing"_ versus _"A woman: without her, man is nothing."_ Same words, repunctuated into opposites.
+- Applied to a belief: _"I bombed the talk. I'm not a speaker."_ becomes _"I bombed the talk, and I now know the three slides that lost the room."_ Same facts — the period just moved from a verdict to a comma in front of feedback.
 
 ### 4: Values and Criteria
 
+Underneath every belief is a value it's trying to serve and a set of criteria for whether it's being served. This is the deepest place to reframe: change what someone measures by, and the whole surface argument reorganizes itself.
+
 #### Structure of meaning
 
-Story of castle under siege, in defiance, the folks in the castle starving catapult all their food out. People seiging, already demoralized since out of supplies interpret food as a taunt that they can last forever and go home.
+Meaning isn't in the event, it's in the frame the event lands in. A castle under siege, its people starving, catapults its last food over the walls in defiance. The besieging army — already demoralized, low on supplies — reads the flying food as proof the castle can outlast them, and goes home.
+
+Same catapulted food, two punctuations: the people inside meant "defiance," the army outside read "they can outlast us." The meaning lived in the framing, not in the food — which is the whole game.
 
 #### Values and motivation
 
-Values - the reasons you get out of bed. Filter over which you see objective reality. People who value fun, ask how much fun is in something. Also, goals usually indicate values. Goal is build product, probably value creating new things.
+Values are the reasons you get out of bed — the filter you see reality through. Someone who values fun automatically asks "how much fun is in this?" of everything they meet. Goals are values wearing work clothes: if my goal is to build a product, I probably value making new things. Find the value under a goal and you've found the lever that actually moves the person.
 
 #### Criteria and Judgment
 
-Value -> what we desire and want
-Criteria -> standard/evidence we use to make decisions.
+- **Value** — what we desire and want (health, freedom, respect).
+- **Criteria** — the standard and evidence we use to decide whether we're getting it.
 
-#### Chaining value and Criteria by
+The leverage is that criteria are negotiable. Two people can share the value "success" and measure it by completely different evidence — one counts titles, the other counts free afternoons. Argue the criteria, not the value, and you can move someone without ever attacking what they care about.
 
-#### Criteria Equivalence
+### 5: Applying the patterns as a system
 
-#### Chunking Down to Define
+No single pattern is the magic bullet — the power is running one belief through several at once, from different angles, until the frame loosens and stops feeling like reality. Take one of my own limiting beliefs, straight from the table above: **"My back has hurt forever, so I'll never get better."** Here it is hit with ten of the fourteen:
 
-#### Reality Strategies
+- **Intent:** the belief is trying to protect me from getting my hopes up and being let down again.
+- **Redefine:** "hurt forever" is really "hurt through a long stretch I didn't yet know how to train through."
+- **Consequence:** believing it guarantees I skip the rehab that's the one thing that could change it.
+- **Chunk down:** which movement, on which day, at what load? "Forever" dissolves into specific reps.
+- **Chunk up:** bodies are systems that adapt to load — I'm inside a whole class of problems that respond to the right stimulus.
+- **Counter example:** there was a month last year it didn't hurt. If it's "forever," where did that month go?
+- **Analogy:** a rusty hinge isn't a broken door, it's an un-oiled one.
+- **Apply to self:** how much has holding "I'll never get better" cost me — has that belief ever bought me a single good rep?
+- **Hierarchy of criteria:** being strong enough to play with my kids matters more than being right about the prognosis.
+- **Change frame size:** will this specific flare-up matter across a year of consistent training?
 
-#### Reality Strategy Exercise
+Fire enough of these and the belief stops feeling like the truth and starts feeling like one sentence I happened to write. (My actual back saga is in [physical pain](/physical-pain).)
 
-#### Chunk up to identify and utilize
-
-#### Hierarchy of value and criteria
-
-#### Hierarchy of criteria technique
-
-### 5: Belief and Expectations
-
-### 6: Basic Structure of Beliefs
-
-### 7: Internal States and Natural Belief change
-
-### 8: Thought Viruses and meta structure of belief
-
-### 9: Applying the patterns as a system.
-
-- Using multiple avenues to attack the problem.
-- Examples of using the tools against beliefs.
-- Also example of creating a positive "thought virus"
+**Thought viruses.** Dilts calls a belief that's sealed against evidence a _thought virus_ — it ships with its own defenses ("well, you'd say that"), it spreads, and it runs in the background unexamined. The patterns are the antibodies. And the trick runs both ways: you can deliberately build a _positive_ thought virus — an empowering belief wired with the same self-reinforcing structure ("every rep is a deposit") so that it defends and propagates itself in place of the limiting one.
 
 ### Bonus Levels of experience
 
-Our experiences filter through these layers.
+Our experiences filter through these layers (Dilts' Neuro-Logical Levels, borrowed from Gregory Bateson).
 
 - Environment
 - Behavior
@@ -275,10 +282,10 @@ However we blame stuff in the inverse triangle
 
 This is the fundamental attribution error. For ourselves we attribute fault to our environment, but to others we attribute to their identity.
 
-Question - what is identity vs our beliefs and values (good Q for Dr. Raph).
+The levels also tell you where to aim a reframe. Answering an identity attack ("I'm a failure") at the level of identity just trades verdicts; answer it a level or two down — at behavior and capability ("here's the specific skill, here's the next rep") — and the frame actually moves.
 
 ### Resources
 
-Discussion of SoM techniques.
+Michael Hall's _Mind Lines_ extends this same engine into 26 patterns across seven directions — worth a look once the fourteen feel natural, though I find the fourteen are plenty to carry around. For the internal-negotiation cousin of these moves, see [get to yes with yourself](/get-to-yes-with-yourself) and [the voices in my head](/voices).
 
 {% include youtube.html src="0VDkRz3Yf8c" %}
