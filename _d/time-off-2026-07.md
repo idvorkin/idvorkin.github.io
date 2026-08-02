@@ -106,6 +106,10 @@ All 4 Dvorkins (Igor, Tori, Zach, Amelia). Iceland and Copenhagen legs were just
 
 This started as the pre-trip wishlist. It's now the record of where we actually went — memory and the journal, cross-checked day by day against my Google Maps Timeline. What's left on a _From the plan_ line is genuinely unresolved: the Timeline misses boats and indoor stops, so absence isn't proof we skipped it.
 
+{% include repo_image.html src="timeline-2026-06-27-wheels-up.webp" %}
+
+_The day's Timeline — Sat Jun 27: wheels up for Iceland. (Home label blacked out.)_
+
 ### 🇮🇸 Iceland (Jun 28–30) — Reykjavík stopover · [📍 map](https://www.google.com/maps/place/Reykjav%C3%ADk)
 
 - The Reykjavík pools — the 8°C cold plunge, the 40/42/44 hot pots, sauna with all four of us (full story above)
@@ -210,6 +214,10 @@ _From the plan — the Timeline doesn't show these:_ renting bikes, the Anne Fra
 {% include repo_image.html src="timeline-2026-07-18-amsterdam.webp" %}
 
 _The day's Timeline — Sat Jul 18: The 9 Streets, the Rijksmuseum, Rasoi._
+
+{% include repo_image.html src="timeline-2026-07-19-flight-home.webp" %}
+
+_And the Timeline for Sun Jul 19 — the long hop home._
 
 ## How I'm doing this trip
 
