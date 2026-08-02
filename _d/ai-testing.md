@@ -22,6 +22,7 @@ Testing math is easy, it's right or wrong. Testing spelling is easy too, but tes
 - [Eval Systems](#eval-systems)
   - [Human-based blind taste tests Chatbot arena](#human-based-blind-taste-tests-chatbot-arena)
   - [Eval Data Sets](#eval-data-sets)
+  - [Grading the agent with smevals](#grading-the-agent-with-smevals)
 - [Testing Theory](#testing-theory)
   - [Good books](#good-books)
   - [Simplest form of testing](#simplest-form-of-testing)
@@ -120,6 +121,8 @@ Testing this is normally a PITA with me doing manual testing, let's see if I can
 
 Let's start with promptfoo
 
+Update 2026-08: this itch finally became a real eval — see [Grading the agent with smevals](#grading-the-agent-with-smevals).
+
 ## Eval Systems
 
 A good eval isn't the finish line — it's the scoring function that drives a search loop. Once you have one that's cheap, unambiguous, and aligned with what you actually want, the agent can run [eval-driven hill climbing](/hill-climbing) while you look at the final result. The systems below are what make that scoring cheap and repeatable.
@@ -141,6 +144,35 @@ _The Elo system, however, adjusts a player’s rating based on the expected outc
 Building good "generic" eval data sets is hard, here are some:
 
 - [Big Bench](https://github.com/suzgunmirac/BIG-Bench-Hard/tree/main) - a bunch of hard question prompts
+
+### Grading the agent with smevals
+
+Most eval tools, PromptFoo included, treat the unit under test as prompt in, completion out. That stops working once the thing I'm testing is an agent mutating a repo. [smevals](https://github.com/prime-radiant-inc/smevals) — Simon Willison's eval framework — handles this case: the Runner is any executable (so it can drive Claude Code or Codex in a working directory), and grading is decoupled from running (Runs are immutable records on disk, so I can re-grade old runs with a new Grader without paying for the runs again). Checkers are also just executables that share a workspace, so a check can run git diff or the project's own tooling instead of asking an LLM judge.
+
+My first one: [smevals-blog-edit-evals](https://github.com/idvorkin-ai-tools/smevals-blog-edit-evals). Every post on this blog keeps a generated table of contents, and what I actually care about when an agent edits a page is: did it make the change, did it regenerate the TOC, and did it leave everything else alone. Three deterministic checkers, no judge required:
+
+- **expected-content** — the requested change landed in the file, not just in the chat reply
+- **toc-correct** — regenerating the TOC with my own toc.py must be a byte-level no-op (the repo's tool is the oracle)
+- **no-collateral** — git status against a baseline commit shows only the target file changed, frontmatter untouched, plus a diff-line count that catches agents rewriting the whole file to fix one word
+
+Three tasks: add a section, rename a heading, and fix a body typo — the last one is a trap, since the TOC must NOT change. Each runs headless against the harness under test — Claude Code and Codex CLI so far.
+
+First results (2026-08):
+
+| Config                                   | Runs | Edit landed | TOC correct | No collateral | Judge score |
+| ---------------------------------------- | ---- | ----------- | ----------- | ------------- | ----------- |
+| sonnet · Claude Code                     | 9    | 100%        | 100%        | 100%          | 0.99        |
+| haiku · Claude Code                      | 11   | 100%        | 100%        | 100%          | 0.96        |
+| gpt-5.4-mini · Codex CLI, zero reasoning | 10   | 70%         | 100%        | 100%          | 0.70        |
+| mock-bad (grader test)                   | 3    | 100%        | 33%         | 0%            | 0.61        |
+
+Both Claude configs pass everything, including zero TOC churn on the trap task. The deliberately dumb Codex config (mini model, reasoning effort none, sandbox replaced by a pre-approved command allowlist since its bwrap sandbox can't spawn in my VM) broke the saturation: 3 of its 10 runs fail, and every failure is a give-up after the first blocked edit attempt - never a wrong edit. When it does act, the TOC and collateral checks stay clean. Which surfaces the real lesson: the permission envelope is part of the harness under test, not just the model.
+
+The judge column is a second grader — an LLM judge scoring correctness, voice match, and scope from the diff — layered on after the fact, since decoupled grading re-scores old runs for free. It found the daylight the deterministic checks can't see: sonnet 0.99 vs haiku 0.96 (haiku gets docked for details like unspaced em-dashes on a page that uses spaced hyphens), while an empty diff short-circuits to 0 with no LLM call. Deterministic graders stay the gate; the judge adds the quality axis. Next variants: drop the CLAUDE.md hints, use full-size pages, make edits that span files.
+
+The graders themselves get tested with a pair of mock runners — a known-good one that must always pass, and a sloppy one (skips the TOC regen, leaves a scratch file behind) that must always fail. If your checkers have never failed a bad run on purpose, you don't know that they work.
+
+For a survey of the wider tool field — PromptFoo, Pydantic Evals, Inspect AI, and the SaaS tier — see [AI Eval Tools](/ai-eval-tools).
 
 ## Testing Theory
 
