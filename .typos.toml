@@ -24,6 +24,7 @@ mis = "mis"  # Token of "mis-hire" (typos splits on the hyphen)
 "heros" = "heros"  # Hero's without apostrophe in TOC anchors
 "theatre" = "theatre"  # British spelling used intentionally
 "gruelling" = "gruelling"  # British spelling used intentionally
+"Flavours" = "Flavours"  # Proper noun — "Flavours of Bergen" food tour (British spelling)
 ig = "ig"  # Your name/handle
 igor = "igor"
 dvorkin = "dvorkin"

@@ -8,6 +8,17 @@ redirect_from:
   - /scandi-2026
 ---
 
+<!--
+INSTRUCTIONS FOR CLAUDE — recap status (2026-08-02)
+- Every bullet in "Where we went (by leg)" traces to written evidence: past-tense prose in
+  this post, /changelog, /life-journal, or in-trip git history. Do not mark an item as
+  visited without such evidence.
+- Lines tagged "From the plan" are pre-trip itinerary items Igor has not yet checked against
+  his photo album (49 photos, added Jul 26): https://photos.app.goo.gl/utGDR6UputWHAfn3A
+- Once Igor confirms against the album, fold what happened into the bullets, drop what
+  didn't, and delete the "From the plan" lines plus this comment.
+-->
+
 22 days, 5 countries, 4 Dvorkins, one whirlwind tour. From Reykjavík to Amsterdam by way of Stockholm, Oslo, and the Norwegian fjords. This is the first time we've attempted a trip of this scope as a family — the kids are 16 and 12, both still home, and the window for "all four of us on the road together" closes faster than I'd like.
 
 > 🗺️ **Trip map & city guide:** [Scandinavian Whirlwind 2026 →](https://idvorkin-ai-tools.github.io/scandinavia-2026/) — one page per stop (Iceland → Copenhagen → Stockholm → Oslo → fjords → Amsterdam), with things to do, hours, and a live weather table.
@@ -33,7 +44,7 @@ I wrote down what I'm actually here for, in order — and then the trip rearrang
 
 4 and 5 are the interesting ones, and they're linked: the one real sacrifice I've made to AI is that the [Dealer of Smiles and Wonder](/joy) just stopped showing up. Out here, with the screens quiet, he walked right back in — the guy underneath was someone I'd been missing.
 
-## How it's actually going
+## How it actually went
 
 ### 🇮🇸 Reykjavík
 
@@ -84,37 +95,39 @@ It's got me curious about the [habit loop](/habits#habit-model) — cue, craving
 
 > 🧳 **Packing:** my reusable [packing master list](/packing) — the durable checklist every trip is trimmed from.
 
-## Who's coming
+## Who came
 
-All 4 Dvorkins (Igor, Tori, Zach, Amelia). Iceland and Copenhagen legs are just us; Stockholm onward we're traveling with friends.
+All 4 Dvorkins (Igor, Tori, Zach, Amelia). Iceland and Copenhagen legs were just us; Stockholm onward we traveled with friends.
 
-## Things we want to do (by leg)
+## Where we went (by leg)
+
+This started as the pre-trip wishlist. It's now the record of where we actually went — anything I can't yet vouch for from memory or the journal sits on a _From the plan_ line until I've been back through the photo album.
 
 ### 🇮🇸 Iceland (Jun 28–30) — Reykjavík stopover · [📍 map](https://www.google.com/maps/place/Reykjav%C3%ADk)
 
-- Pick up the rental SUV at KEF airport
-- Reykjavík city walk + Hallgrímskirkja
-- Blue Lagoon or Sky Lagoon (decide day-of based on weather + crowds)
-- Possible Golden Circle drive if energy permits — Þingvellir, Geysir, Gullfoss
-- Eat a hot dog at Bæjarins Beztu (mandatory tourist obligation)
+- The Reykjavík pools — the 8°C cold plunge, the 40/42/44 hot pots, sauna with all four of us (full story above)
+- A 5am kettlebell session at a local gym — in the pouring rain, rental Tesla and all
+- The hostel's shared kitchen — cooking dinner next to strangers and trading stories
+
+_From the plan — not yet checked against the photo album:_ the Reykjavík city walk + Hallgrímskirkja, Blue Lagoon vs Sky Lagoon, the Golden Circle drive (Þingvellir, Geysir, Gullfoss), the Bæjarins Beztu hot dog.
 
 ### 🇩🇰 Copenhagen (Jun 30 – Jul 3) — with Ammon · [📍 map](https://www.google.com/maps/place/Copenhagen)
 
-- Hang with Ammon — 2 days, no fixed agenda.
-- Walk Nyhavn + canals
-- **Marble Church (Marmorkirken)** — climb the dome tower for the Amalienborg→Opera axis + Sweden view
-- One nice meal as a family
+- Two days with Ammon — the point of the stop
+- Sat down and meditated in a church — [the quiet a church keeps](/life-journal#meditating-in-a-church)
+- Walked a tower ramp barefoot — [cold stone, the pitch of the slope](/life-journal#barefoot-down-the-tower-ramp)
+
+_From the plan — not yet checked against the photo album:_ Nyhavn + the canals, the Marble Church (Marmorkirken) dome climb, the one nice family meal.
 
 ### 🇸🇪 Stockholm (Jul 3–7) · [📍 map](https://www.google.com/maps/place/Stockholm)
 
-- Gamla Stan + fika in Stortorget square (arrival recovery)
-- **Vasa Museum** — preserved 17th-century warship
-- **ABBA Museum** + Fotografiska
-- **City kayak tour** (private, ~2h, archipelago)
-- **Evening Wildlife Safari** with Swedish midsummer meal (~4h, van)
-- Södermalm street art + vintage shops
-- **Vain Vikings of Runriket** — rune-stone trail (4h, private + driver)
-- **Skansen** open-air museum on the way out
+- **Skansen** — the glassblower, the silversmith, the staff who stay in role (full story above)
+- The zoo — Amelia's solo run, spare battery and all
+- **Vasa Museum** — the warship that capsized on its maiden voyage and came back three centuries later
+- Sunday at a Greek Orthodox church — Zach's blessing from the bishop, my near-ejection for magic in the pews
+- Zach's dinner tear: frog legs, ratatouille, escargot
+
+_From the plan — not yet checked against the photo album:_ Gamla Stan + fika in Stortorget, the ABBA Museum, Fotografiska, the kayak tour, the Evening Wildlife Safari, Södermalm street art, the Runriket rune stones.
 
 ### 🇳🇴 Oslo (Jul 7–10) · [📍 map](https://www.google.com/maps/place/Oslo)
 
@@ -132,17 +145,21 @@ All 4 Dvorkins (Igor, Tori, Zach, Amelia). Iceland and Copenhagen legs are just 
 
 ### 🌉 Bergen (Jul 13–16) · [📍 map](https://www.google.com/maps/place/Bergen,+Norway)
 
+Three nights in Bergen, but I haven't written this leg up yet. _From the plan — not yet checked against the photo album:_
+
 - **Bryggen** (UNESCO) walking tour
-- **Fløibanen funicular** + Mt. Fløyen hike (2.5h, moderate grade)
-- Mostraumen fjord fast boat OR Mt. Ulriken cable car
-- **Flavours of Bergen** food tour (2h)
-- **Islets kayak tour** (~4h 15m)
+- **Fløibanen funicular** + Mt. Fløyen hike
+- Mostraumen fjord fast boat or Mt. Ulriken cable car
+- **Flavours of Bergen** food tour
+- **Islets kayak tour**
 - Morning fish market before flying out
 
 ### 🇳🇱 Amsterdam (Jul 16–19) · [📍 map](https://www.google.com/maps/place/Amsterdam)
 
+The last stop, also still owed its write-up. _From the plan — not yet checked against the photo album:_
+
 - Rent bikes + roam **Jordaan** neighborhood
-- **Anne Frank House** (PRE-BOOK!)
+- **Anne Frank House**
 - Canal cruise
 - **Rijksmuseum** + Vondelpark
 - **Foodhallen** (covered food market)
@@ -169,4 +186,4 @@ The sharpest test of all this is how I use AI on the road. I wrote that one up o
 
 {% include summarize-page.html src="/time-off" %}
 
-_Written ~6 weeks pre-trip. Will write the actual recap when we're back._
+_Started ~6 weeks pre-trip; the recap sections were written on the road. Back home Jul 19. Bergen and Amsterdam still owe their write-ups — photo album first, prose second._
