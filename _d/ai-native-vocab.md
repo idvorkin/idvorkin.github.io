@@ -18,7 +18,6 @@ AI is spawning a whole new vocabulary — some of it genuinely useful, some of i
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [Functional Collapse](#functional-collapse)
 - [Agency](#agency)
 - [AI Cockpit](#ai-cockpit)
 - [AI Pilled](#ai-pilled)
@@ -29,9 +28,9 @@ AI is spawning a whole new vocabulary — some of it genuinely useful, some of i
 - [Discernment Horizon](#discernment-horizon)
 - [Heresies](#heresies)
 - [Hill Climbing](#hill-climbing)
-- [Infinite Loop](#infinite-loop)
 - [Human In, On, and Out of the Loop](#human-in-on-and-out-of-the-loop)
 - [In Distribution](#in-distribution)
+- [Infinite Loop](#infinite-loop)
 - [Reverse Centaur](#reverse-centaur)
 - [Year of Wonder](#year-of-wonder)
 
@@ -42,16 +41,6 @@ AI is spawning a whole new vocabulary — some of it genuinely useful, some of i
 
 {% include local_image_float_right.html src="raccoon-nerd.webp" %}
 
-## Functional Collapse
-
-The idea that distinct roles — PM, EM, Designer, Engineer — collapse into one: "builder." Everyone can do everything now because AI fills in the gaps.
-
-My take: we've seen this movie before. When dev and test merged into the "software engineer" title, functional collapse was the buzzword. But what actually happened? People who were really good testers built awesome test frameworks, and devs mostly scraped by at testing. We shared the title, but the specialties persisted because some people were genuinely better at certain things due to interest and aptitude.
-
-The same thing is happening now. In my world, TPM may have collapsed into the engineering team — there's no separate TPM role. But some engineers are much better at the TPM work (coordination, cross-team dependencies, program management) than others, because they're drawn to it and have built the muscle. They don't have the title, but they have the specialty.
-
-So yes, AI enables functional collapse in the sense that anyone _can_ write a PRD or build a prototype or sketch a design. But "can" and "good at" are different things. The easy stuff gets democratized. The hard stuff still needs people who go deep. We might all be "builders" on paper, but we'll all have specialties where we're better than others.
-
 ## Agency
 
 The fancy new word for "Gets Shit Done." It's not new — it's always been the thing that separates people who drive outcomes from people who wait to be told what to do. But AI made it more visible. When AI handles the boilerplate, the gap between someone with agency and someone without it is enormous. The person with agency sees the problem, figures out the approach, uses whatever tools exist (AI or not), and ships. The person without agency asks for a ticket.
@@ -59,6 +48,8 @@ The fancy new word for "Gets Shit Done." It's not new — it's always been the t
 {% include summarize-page.html src="/agency" %}
 
 ## AI Cockpit
+
+The control surface — physical and software — for flying multiple AI agents at once: visibility into what each agent is doing, and instant switching between them.
 
 {% include summarize-page.html src="/ai-cockpit" %}
 
@@ -78,6 +69,8 @@ The good news: the same AI that creates cognitive debt can pay it down. Willison
 
 ## Dark Factory
 
+A codebase where AI does the writing, reviewing, and merging with no human in the implementation loop — named for the manufacturing plants that run with the lights off because robots don't need to see.
+
 {% include summarize-page.html src="/dark-factory" %}
 
 ## Data Provenance
@@ -94,6 +87,15 @@ My take: this is the emotion underneath the [Fear](/ai-native-manager#the-ai-cha
 
 But here's the really good news: there's a new type of mastery to be had. DHH talks about [coding as mastery](/chop#reasons-to-program---mastery-vs-getting-shit-done) — the joy of VIM combos feeling like Street Fighter II joystick combos, the craft of the thing. Deep Blue assumes that mastery is over because the machine can do it. But that's wrong. The mastery shifts — from writing code to orchestrating AI to build things that were previously impractical. And the payoff is real: you can genuinely do 10x as much. That's not hype, that's more good in the world, more problems solved, more things built. This is especially true for senior folks. The people with the deepest understanding of systems, architecture, and trade-offs are exactly the ones who get the most leverage from AI. All that experience doesn't become worthless — it becomes the judgment layer that makes AI-assisted work actually good instead of just fast.
 
+## Functional Collapse
+
+The idea that distinct roles — PM, EM, Designer, Engineer — collapse into one: "builder." Everyone can do everything now because AI fills in the gaps.
+
+My take: we've seen this movie before. When dev and test merged into the "software engineer" title, functional collapse was the buzzword. But what actually happened? People who were really good testers built awesome test frameworks, and devs mostly scraped by at testing. We shared the title, but the specialties persisted because some people were genuinely better at certain things due to interest and aptitude.
+
+The same thing is happening now. In my world, TPM may have collapsed into the engineering team — there's no separate TPM role. But some engineers are much better at the TPM work (coordination, cross-team dependencies, program management) than others, because they're drawn to it and have built the muscle. They don't have the title, but they have the specialty.
+
+So yes, AI enables functional collapse in the sense that anyone _can_ write a PRD or build a prototype or sketch a design. But "can" and "good at" are different things. The easy stuff gets democratized. The hard stuff still needs people who go deep. We might all be "builders" on paper, but we'll all have specialties where we're better than others.
 ## Discernment Horizon
 
 Steve Yegge's term from [The Flat Curve Society](https://steve-yegge.medium.com/the-flat-curve-society-36c8b01eb33b) for the point past which you can no longer tell whether an AI is right — because verifying its answer is itself beyond you.
@@ -122,23 +124,9 @@ In other words, your CLAUDE.md and onboarding docs aren't just nice-to-haves —
 
 ## Hill Climbing
 
+Point an agent at a fitness function and let it run the optimization loop: try a change, keep it if the score goes up, throw it out if it didn't, repeat. You set the mountain; the agent walks up it.
+
 {% include summarize-page.html src="/hill-climbing" %}
-
-## Infinite Loop
-
-When AI gets stuck cycling between broken solutions — oscillating between two approaches that don't work, or repeatedly applying the same wrong fix because it's acting on a [heresy](#heresies). The AI isn't making progress; it's burning tokens and time while going nowhere.
-
-The real damage isn't the wasted AI cycles — it's what happens to the human. You notice the AI is stuck, so you start trying to break it out. You rephrase the prompt. You add context. You explain what the system _actually_ does. Twenty minutes later, you're debugging the AI's mental model instead of debugging your code. You went from warp speed to impulse to maneuvering thrusters, and the difference is mind-boggling — the same tool that wrote three features before lunch now can't fix a four-line function, and you're somehow making it worse by trying to help.
-
-The right move is to recognize the infinite loop early and then figure out how to break it — same as when a human is stuck and you need to get them unstuck. A few patterns that work:
-
-- **Surface the false belief** — Ask the AI "why do you think X works this way?" Sometimes it'll reveal the [heresy](#heresies) it's operating on, and you can correct it directly.
-- **Burn it down and restart** — Throw out the broken code, start a fresh session with clean context. The AI's context is poisoned; no amount of "no, actually..." will fix it. A new conversation with good priming is often faster than arguing with a confused one.
-- **Narrow the scope** — The AI is trying to solve too much at once and thrashing. Give it a smaller, more constrained problem. "Just fix this one function" instead of "fix the whole feature."
-- **Read the code yourself** — Sometimes the fastest way to break the loop is to actually understand what's happening. Read the code the AI wrote, find the wrong assumption, and tell it exactly what's true.
-- **Just do it manually** — Sometimes the right answer really is to take over. The hardest part is accepting the transition from 10x to "I'll write it myself" — it feels like defeat, but it's the fastest path forward when nothing else works.
-
-The teams that struggle most are the ones where nobody has permission to say "the AI is stuck, I'm changing approach."
 
 ## Human In, On, and Out of the Loop
 
@@ -158,6 +146,22 @@ Yegge identifies this as one of his [six levers for software survival](https://s
 
 My take: this matters because it changes how you think about tooling decisions. When your team picks a well-known tool over a technically superior but obscure one, that's not just "going with the safe choice" — it's a rational calculation about agent effectiveness. Your CLAUDE.md files, your onboarding docs, your custom slash commands — these are all attempts to push out-of-distribution knowledge into the agent's working context. The better you are at this, the more effective your AI-augmented team becomes. And when you're evaluating whether to build custom tooling vs. using something standard, "will agents already know how to use it?" is now a legitimate engineering criterion.
 
+## Infinite Loop
+
+When AI gets stuck cycling between broken solutions — oscillating between two approaches that don't work, or repeatedly applying the same wrong fix because it's acting on a [heresy](#heresies). The AI isn't making progress; it's burning tokens and time while going nowhere.
+
+The real damage isn't the wasted AI cycles — it's what happens to the human. You notice the AI is stuck, so you start trying to break it out. You rephrase the prompt. You add context. You explain what the system _actually_ does. Twenty minutes later, you're debugging the AI's mental model instead of debugging your code. You went from warp speed to impulse to maneuvering thrusters, and the difference is mind-boggling — the same tool that wrote three features before lunch now can't fix a four-line function, and you're somehow making it worse by trying to help.
+
+The right move is to recognize the infinite loop early and then figure out how to break it — same as when a human is stuck and you need to get them unstuck. A few patterns that work:
+
+- **Surface the false belief** — Ask the AI "why do you think X works this way?" Sometimes it'll reveal the [heresy](#heresies) it's operating on, and you can correct it directly.
+- **Burn it down and restart** — Throw out the broken code, start a fresh session with clean context. The AI's context is poisoned; no amount of "no, actually..." will fix it. A new conversation with good priming is often faster than arguing with a confused one.
+- **Narrow the scope** — The AI is trying to solve too much at once and thrashing. Give it a smaller, more constrained problem. "Just fix this one function" instead of "fix the whole feature."
+- **Read the code yourself** — Sometimes the fastest way to break the loop is to actually understand what's happening. Read the code the AI wrote, find the wrong assumption, and tell it exactly what's true.
+- **Just do it manually** — Sometimes the right answer really is to take over. The hardest part is accepting the transition from 10x to "I'll write it myself" — it feels like defeat, but it's the fastest path forward when nothing else works.
+
+The teams that struggle most are the ones where nobody has permission to say "the AI is stuck, I'm changing approach."
+
 ## Reverse Centaur
 
 A [centaur](https://pluralistic.net/2025/12/05/pop-that-bubble/) is a human assisted by a machine: the human is the head, the machine is the body — your judgment in charge, its horsepower doing the lifting. A reverse centaur flips the anatomy: the AI is the head, but it has no hands, so it wears a human as its body. The person becomes the appendage — doing the parts the machine can't reach, at the machine's pace. Cory Doctorow's example is the Amazon delivery driver hemmed in by [in-cab AI cameras](https://locusmag.com/feature/commentary-cory-doctorow-reverse-centaurs/), a living peripheral for a van that can't carry a parcel to the porch on its own.
@@ -168,6 +172,4 @@ Framed that way it sounds grim, but it's really supervision rearranged. We've al
 
 {% include local_image_float_right.html src="raccoon-year-of-chaos-wonder.webp" %}
 
-The optimist's read on the same AI moment that's exhausting everyone: this is the most creative period in the history of software. Things get built in a week that used to take a quarter, juniors punch above their weight class, and problems shelved years ago for lack of bandwidth are suddenly tractable. Its twin is the [Year of Chaos](/ai-native-manager#the-year-of-chaos-the-year-of-wonder) — the pessimist's read, which is just as accurate: roles are dissolving, skills are devaluing, and most of the weekly hype is garbage.
-
-My take: you don't get to pick the facts, you get to pick which ones you orient around. Both frames are true at once, so the choice isn't about being right — the chaos read is right, the same way [Deep Blue](#deep-blue) is a real feeling and not a delusion. The choice is about which read points somewhere good. Orient around the chaos and you play defense — tighten process, slow down, protect what exists. Orient around the wonder, while staying honest about the chaos, and you play offense — experiment more, raise the ambition, ask what's possible now that wasn't last year. The people who hold both and lean toward wonder are the ones others follow into the unknown.
+The optimist's read on the same AI moment that's exhausting everyone: the most creative period in the history of software. Its twin is the [Year of Chaos](/ai-native-manager#the-year-of-chaos) — the pessimist's read, just as accurate. Both frames are true at once; which one you orient around is a choice, and I make the full argument in [Choosing Your Frame](/ai-native-manager#choosing-your-frame).

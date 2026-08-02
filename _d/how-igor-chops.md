@@ -271,6 +271,8 @@ This stuff changes so fast, and with models getting smarter (see the Bitter Less
 
 For example, I have [`running-servers`](https://github.com/idvorkin/settings/blob/main/shared/running-servers) that checks if a Jekyll server is already running for a directory, so agents don't try to recreate them. Instead of prompting the agent through "check ps, grep for jekyll, parse the port numbers, compare to current directory..." - just give them a tool that answers "is there a server for this directory?" These custom tools that extend what agents can do - those are worth building.
 
+Same principle for giving agents the web: [Browsers for Machines](/browsers-for-machines) covers the Lightpanda and Playwright CLI setup behind my `/web-browse` command - JS-rendered pages and screenshots without flooding the context window.
+
 ## My Projects
 
 ### Command Line and PWAs

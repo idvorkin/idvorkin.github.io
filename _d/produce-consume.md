@@ -81,6 +81,8 @@ Here's the tell for which one you're in: **solitary and memoryless is pleasure â
 
 This still isn't the top of the mountain â€” producing is. But it's the switchback most people can reach from where they're standing. Between mindless solo consumption and shipping something of your own, there's this middle rung, and it costs you almost nothing to step onto it today.
 
+My [AI reading feed](/ai-feed) is this move applied to links: I debrief on what I read, and the notes turn the consuming into an artifact.
+
 {%include summarize-page.html src="/build-life-you-want"%}
 
 ## The Production Advantage

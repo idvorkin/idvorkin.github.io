@@ -41,7 +41,7 @@ This is a survey post — the thinking is fresh, names are provisional, and ther
 
 ## Yegge's Gas Town in one paragraph
 
-If you haven't read it, go read [Welcome to Gas City](https://steve-yegge.medium.com/welcome-to-gas-city-57f564bb3607) and [Gas Town: from Clown Show to v1.0](https://steve-yegge.medium.com/gas-town-from-clown-show-to-v1-0-c239d9a407ec). Short version: a long-lived **Mayor** agent runs the show, dispatching short-lived **Polecat** workers that do one job and disappear. The Mayor keeps state in beads (a dependency-aware issue tracker) and Dolt (a versioned database). The whole thing is the [MEOW stack](/how-igor-chops#the-8-stages-of-ai-coding) — Mayor, Engineers (Polecats), Oracle, Workers — and it's a real pattern, not a thought experiment. I'm running a version of it.
+If you haven't read it, go read [Welcome to Gas City](https://steve-yegge.medium.com/welcome-to-gas-city-57f564bb3607) and [Gas Town: from Clown Show to v1.0](https://steve-yegge.medium.com/gas-town-from-clown-show-to-v1-0-c239d9a407ec). Short version: a long-lived **Mayor** agent runs the show, dispatching short-lived **Polecat** workers that do one job and disappear. The Mayor keeps state in beads (a dependency-aware issue tracker) and Dolt (a versioned database). The whole thing is the [MEOW stack](/how-igor-chops#the-8-stages-of-ai-coding) — Mayor, Engineers (Polecats), Oracle, Workers — and it's a real pattern, not a thought experiment. I'm running a version of it. If you want the why before the org-chart — what a city buys over a smarter prompt — start with [Why Gas City?](/why-gas-city).
 
 ## From Mad Max to org-chart
 
@@ -142,6 +142,7 @@ A bunch of things I haven't worked out yet:
 - **When does the M1 need its own M1?** At some scale Wally himself is going to need to delegate orchestration. Recursion at scale is real — that's how FAANG ended up with M3, M4, directors, VPs. I don't know where the first level of recursion shows up for AI managers, but it's coming.
 - **When does the human (M2) need their own M2?** The mirror question. At what point does the human need a meta-orchestrator above them — something coordinating across multiple Wallies, multiple domains, multiple humans? Today I run one Wally. The day I'm running three is the day I want this answered.
 - **Is "odally" actually a good name?** I like it because the etymology is functional — on-demand + Wally — so it tells you what they are. But "specialized ephemeral IC with build access" is a mouthful and I'm not sure my coinage survives contact with anyone who didn't watch me invent it. Open to better.
+- **Is the M2 okay?** Running parallel agents keeps the human in near-constant flow, and constant flow has a dark side. I unpack the dopamine and the drain in [The Psychology of Vibing](/vibing).
 
 More to come as I build this out. If you're running this pattern at scale — especially the M1+staff+Odallies split inside a real monorepo — drop me a note. I'd rather steal your vocabulary than invent more of my own.
 

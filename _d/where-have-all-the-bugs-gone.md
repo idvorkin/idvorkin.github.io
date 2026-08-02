@@ -2,6 +2,9 @@
 layout: post
 title: "Where have all the bugs gone"
 date: "2012-07-13 08:24:30 -0700"
+permalink: /bugs-gone
+redirect_from:
+  - /d/where-have-all-the-bugs-gone
 ---
 
 I've been a software developer since 2001, and back then we used to have lots of bugs. Nowadays, it seems we don't have bugs, and I've wondered why. Now we have tickets which we get from our systems running in production, but that's quite different. What's going on?

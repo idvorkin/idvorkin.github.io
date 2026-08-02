@@ -177,6 +177,8 @@ Here's a typical multi-agent scenario and how the cockpit helps:
 
 The cockpit turns multi-agent orchestration from "constantly lost and confused" into "air traffic control with good radar." It's not perfect yet, but it's the difference between Stage 5 and Stage 7.
 
+The cockpit is my side of the glass. The agents have instruments of their own — [Browsers for Machines](/browsers-for-machines) covers the ones they use to reach the web.
+
 ## What I'm Still Building
 
 The cockpit is a work in progress. Here's what's on the list:
@@ -194,5 +196,7 @@ Is all this cockpit infrastructure a waste? Every month, models get smarter. May
 Maybe. But the meta-skill here isn't "how to configure tmux" - it's **how to build a human interface for AI delegation**. That problem isn't going away. The specific tools will change (tmux might become something else, Alfred might not exist), but the pattern of needing visibility, fast switching, and ambient awareness when orchestrating autonomous systems? That's permanent.
 
 Same thing I said about [CHOP tools in general](/how-igor-chops#is-this-a-waste): learn the transferable skills, hold the specific tools loosely.
+
+There's also a psychological side to flying this thing — the flow, the dopamine, the hours that vanish. That's [The Psychology of Vibing](/vibing).
 
 {% include summarize-page.html src="/how-igor-chops" %}

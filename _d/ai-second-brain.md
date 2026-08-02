@@ -134,6 +134,8 @@ Traditional second brains failed because "organize" was a separate chore disconn
 
 ### Preparing for a meeting
 
+This one is aspirational — I don't have it wired up yet, but it's the same pattern:
+
 1. I have a 1:1 with a colleague I haven't talked to in a few weeks
 2. **Pre-brief:** "Pre-brief me for my meeting with Sarah" → AI pulls from my notes on our last conversation, her recent work (LinkedIn posts, shared docs, Slack threads), my open questions for her, and any commitments I made last time
 3. I walk into the meeting knowing what she's been up to, what I promised, and what I want to ask — without spending 20 minutes digging through old notes
@@ -166,16 +168,7 @@ None of this follows PARA or Zettelkasten. There's no elaborate folder hierarchy
 
 ## The Organizational Second Brain
 
-This isn't just a personal productivity trick. Organizations have the same problem, scaled up.
-
-[Cognitive debt](/ai-feed) — the idea that teams lose shared understanding as AI accelerates development — doesn't just apply to code. It applies to everything happening in an organization. When leadership says "everyone should just watch the demos," that's cognitive debt too. Nobody can keep up with the firehose of information flowing through a modern org.
-
-AI can comprehend all of it and keep it coherent. An organizational second brain would:
-
-- Synthesize across meeting notes, documents, Slack threads, and code changes
-- Answer "What decisions were made about X and why?" without anyone having to remember
-- Surface connections between what different teams are doing
-- Reduce the [complexity per person](/ai-native-manager) that's crushing engineering managers
+Organizations have the same problem, scaled up: [cognitive debt](/ai-native-vocab#cognitive-debt) isn't just lost understanding of code, it's nobody keeping up with the firehose of decisions, docs, and demos flowing through a modern org. What that does to teams — and the complexity-per-person crush — is [The AI Native Engineering Manager](/ai-native-manager)'s territory.
 
 ## FAQ
 
@@ -201,8 +194,6 @@ That's exactly what building the second brain IS. Every time I make more context
 ### Isn't this just note-taking?
 
 No. Note-taking is capture. A second brain includes capture but also retrieval, synthesis, and connection — and with AI, those last three happen automatically. The difference between a pile of notes and a second brain is whether you can _ask it questions and get useful answers_.
-
-AI: Expand PKM
 
 ### Do I still need a PKM system?
 

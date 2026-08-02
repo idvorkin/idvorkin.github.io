@@ -41,7 +41,7 @@ I don't train models for a living — I build on top of them. But to use LLMs we
 
 ## Engineering, science, and alchemy
 
-Training LLMs is three jobs at once. **Engineering** makes a system hit a target — _"how do I hit this number?"_ **Science** figures out a true fact about a model that already exists — _"why is this true?"_ And **alchemy** is everything that works before either of those catches up: recipes found by trial and error and kept because they work, not because anyone can say why. The twist with AI is that we built the thing first, so the science is still chasing the systems — which means a lot of what looks like science is really alchemy for now. [The full breakdown, with concrete pairs, is in the appendix ↓](#appendix-engineering-science-and-alchemy)
+Training LLMs is three jobs at once: **engineering** makes a system hit a target (_"how do I hit this number?"_), **science** figures out a true fact about a model that already exists (_"why is this true?"_), and **alchemy** is everything that works before either catches up — recipes kept because they work, not because anyone can say why. We built the thing first, so a lot of what looks like science is really alchemy for now; [the full breakdown, with concrete pairs, is in the appendix ↓](#appendix-engineering-science-and-alchemy)
 
 ## How a model gets made
 
@@ -57,7 +57,7 @@ The one intuition to keep: **pre-training installs knowledge; post-training shap
 
 - The objective is dumb and powerful: predict the next token. No labels, just text — which is why it scales, since raw text is basically free.
 - This is where facts, skills, and the model's "world model" come from. If a model doesn't know something, it usually didn't see enough of it here.
-- It's also where the cost lives. The headline "$X million to train" numbers are almost entirely pre-training.
+- It's also where the cost lives. The headline "\$X million to train" numbers are almost entirely pre-training.
 - Output is a **base / foundation model** — capable but not steerable. Not the thing you actually talk to.
 
 ### Post-training
@@ -151,8 +151,6 @@ For the concepts — how a neural network actually learns, then how a transforme
 For the mechanics, Brendan Bycroft's [LLM visualization](https://bbycroft.net/llm) walks a single token through every layer of a GPT model in 3D — embeddings, attention, the lot.
 
 And for post-training specifically, [How to Train Your Goblin](https://goblins.mchen.workers.dev/) (mchen and Will Brown, on Prime Intellect) is a playful scroll-through of RL — it retraces how GPT picked up its accidental "goblin" tic by deliberately RL-training models to overuse the word, hidden trigger reward and all. A concrete look at reward hacking and how RL differs from SFT, with the code and training runs open.
-
-I want to embed a small next-token-prediction demo right here (type a prefix, watch the probability distribution over the next token), built as a standalone [explainer](/explainers) and iframed in. Coming soon.
 
 ## What this post is not about
 

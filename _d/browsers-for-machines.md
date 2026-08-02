@@ -54,20 +54,20 @@ No single tool does all four well. That's the landscape.
 
 ## The Landscape
 
-| Feature | curl | WebFetch | Lightpanda | Playwright CLI | Playwright MCP |
-|---------|------|----------|------------|----------------|----------------|
-| JS Execution | No | No | Yes | Yes | Yes |
-| Screenshots | No | No | No | Yes | Yes |
-| CSS/Layout | No | No | No | Yes | Yes |
-| Interactivity | No | No | No | Yes | Yes |
-| Latency (cold) | ~5ms | ~200ms | ~1.7s | ~2.2s | ~2s |
-| Latency (warm) | — | — | ~1.2s | ~500ms | ~1s |
-| Token Cost | 0 | Low | 0 | ~27K/task | ~114K/task |
-| Cloudflare | Blocked | Sometimes | Blocked | Sometimes | Sometimes |
-| Setup | Built-in | Built-in | Binary | npm global | npm + config |
-| Best For | Scripts/pipes | Static pages | JS content | Automation | Browser sessions |
+| Feature        | curl          | WebFetch     | Lightpanda | Playwright CLI | Playwright MCP   |
+| -------------- | ------------- | ------------ | ---------- | -------------- | ---------------- |
+| JS Execution   | No            | No           | Yes        | Yes            | Yes              |
+| Screenshots    | No            | No           | No         | Yes            | Yes              |
+| CSS/Layout     | No            | No           | No         | Yes            | Yes              |
+| Interactivity  | No            | No           | No         | Yes            | Yes              |
+| Latency (cold) | ~5ms          | ~200ms       | ~1.7s      | ~2.2s          | ~2s              |
+| Latency (warm) | —             | —            | ~1.2s      | ~500ms         | ~1s              |
+| Token Cost     | 0             | Low          | 0          | ~27K/task      | ~114K/task       |
+| Cloudflare     | Blocked       | Sometimes    | Blocked    | Sometimes      | Sometimes        |
+| Setup          | Built-in      | Built-in     | Binary     | npm global     | npm + config     |
+| Best For       | Scripts/pipes | Static pages | JS content | Automation     | Browser sessions |
 
-_Latency measured against a local Jekyll server. "Cold" = launching the tool from scratch. "Warm" = tool already running, just navigating. curl and WebFetch are stateless (always cold). Lightpanda wins cold starts; Playwright wins warm thanks to Chromium's connection pooling._
+_Latency and token numbers measured February 2026 against a local Jekyll server — this space moves fast, so expect drift. "Cold" = launching the tool from scratch. "Warm" = tool already running, just navigating. curl and WebFetch are stateless (always cold). Lightpanda wins cold starts; Playwright wins warm thanks to Chromium's connection pooling._
 
 ## Lightpanda: The Browser That Can't See
 
@@ -133,7 +133,7 @@ It's minimal but focused. For content extraction workflows, these five tools cov
 
 Microsoft's Playwright team measured the token cost of browser automation tasks. Using the MCP server: **~114,000 tokens** per typical task. The accessibility trees and verbose responses flood the context window.
 
-Their answer: [Playwright CLI](https://github.com/nichochar/playwright-cli) (`@playwright/cli`). Same Chromium engine, but commands run as shell calls. The difference: snapshots save to disk as YAML files instead of streaming into the LLM's context. Screenshots save as PNG files. The agent decides what to read back.
+Their answer: [Playwright CLI](https://github.com/microsoft/playwright-cli) (`@playwright/cli`). Same Chromium engine, but commands run as shell calls. The difference: snapshots save to disk as YAML files instead of streaming into the LLM's context. Screenshots save as PNG files. The agent decides what to read back.
 
 Result: **~27,000 tokens** for the same task. A 4x reduction.
 

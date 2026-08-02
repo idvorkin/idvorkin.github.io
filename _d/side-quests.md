@@ -43,7 +43,7 @@ _Started: 2026-03-08_ | [GitHub](https://github.com/idvorkin/magic-monitor) | [L
 
 Real-time playing card detection in the browser using YOLO + ONNX Runtime Web. Hold up a card to your webcam and it identifies all 52 cards with bounding boxes. Part of [Magic Monitor](/pet-projects), my smart mirror app.
 
-**The journey from "nothing works" to "97% recall":**
+**The journey from "nothing works" to "98% precision":**
 
 Training a YOLO model was the easy part. Getting it to actually work in the browser was a debugging adventure — the JS integration had the wrong output format, wrong class mapping, stretched preprocessing, and broken overlay coordinates. Each fix required understanding the full pipeline from camera frame to rendered bounding box.
 
@@ -54,9 +54,9 @@ Training a YOLO model was the easy part. Getting it to actually work in the brow
 
 _Recall = how many cards it finds. Precision = how often it's right about what it found._
 
-| **Before (YOLO26n @ 416)** | **After (YOLO26s @ 640)** |
-| --- | --- |
-| One wrong detection at 11% confidence. The model couldn't see anything useful. | Four correct detections at 57-84% confidence. Boxes land right on the card corners. |
+| **Before (YOLO26n @ 416)**                                                                                                          | **After (YOLO26s @ 640)**                                                                                                        |
+| ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| One wrong detection at 11% confidence. The model couldn't see anything useful.                                                      | Four correct detections at 57-84% confidence. Boxes land right on the card corners.                                              |
 | ![YOLO26n debug snapshot - one wrong detection at 11%](https://raw.githubusercontent.com/idvorkin/ipaste/main/20260315_095931.webp) | ![YOLO26s debug snapshot - four correct detections](https://raw.githubusercontent.com/idvorkin/ipaste/main/20260315_132529.webp) |
 
 **Key learnings:**
@@ -66,7 +66,7 @@ _Recall = how many cards it finds. Precision = how often it's right about what i
 - **Debug snapshots are essential.** Added a `z` keypress that downloads a PNG showing exactly what the model sees with detection boxes burned in. Without this, I'd still be guessing why detections were wrong.
 - **Browser ONNX Runtime needs WASM files from a CDN** — can't bundle them in Vite's public/ directory due to dynamic import restrictions.
 
-**Training was shockingly easy:** Open a Google Colab notebook, select an A100 GPU (~$1.30/hr in compute units), crank the batch size from 16 to 128 (the A100 has 80GB of VRAM so why not), and hit run. 50 epochs on 21K synthetic images finished in under 30 minutes for less than a dollar. The hardest part was remembering my Roboflow API key. [Colab notebook](https://colab.research.google.com/github/idvorkin-ai-tools/magic-monitor/blob/main/training/train_colab.ipynb).
+**Training was shockingly easy:** Open a Google Colab notebook, select an A100 GPU (~\$1.30/hr in compute units), crank the batch size from 16 to 128 (the A100 has 80GB of VRAM so why not), and hit run. 50 epochs on 21K synthetic images finished in under 30 minutes for less than a dollar. The hardest part was remembering my Roboflow API key. [Colab notebook](https://colab.research.google.com/github/idvorkin-ai-tools/magic-monitor/blob/main/training/train_colab.ipynb).
 
 **Status:** Merged to main. Detection works live in the browser. Next up: integrate with session recording and replay timeline.
 

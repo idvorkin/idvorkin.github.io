@@ -252,6 +252,8 @@ Not quite. The [addiction/passion/hobby trichotomy](#is-doing-the-thing-you-want
 
 The key difference: addiction has this element of "out of control" and escape. You're using the productive work to numb or avoid something else. That's certainly less destructive than many addictions, but it's still bad because it prevents you from addressing whatever you're avoiding.
 
+AI-agent vibing is this pattern's newest costume — I work the same test on it in [The Psychology of Vibing](/vibing).
+
 ## Other Resources
 
 Do the Work by Steven Pressfield.
