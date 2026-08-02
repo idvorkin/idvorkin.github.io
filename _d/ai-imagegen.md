@@ -4,9 +4,10 @@ title: AI Image Generation
 permalink: /ai-image
 redirect-from:
   - /ai-imagegen
+ai_default_image: true
 ---
 
-Everyone talks about GPT, but you can also generate images. Lately, I've been playing with Flux, which is an image generator. You can generate images of me using the idvorkin with this lora on replicate.
+Everyone talks about GPT, but you can also generate images. Lately, I've been playing with Flux, which is an image generator. You can even generate images of me using my idvorkin LoRA on Replicate.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -18,11 +19,11 @@ Everyone talks about GPT, but you can also generate images. Lately, I've been pl
 - [History Lessons](#history-lessons)
 - [Completion](#completion)
 - [How it works](#how-it-works)
-    - [Diffusion](#diffusion)
-    - [LoRAs](#loras)
-    - [Blending LoRAs](#blending-loras)
+  - [Diffusion](#diffusion)
+  - [LoRAs](#loras)
+  - [Blending LoRAs](#blending-loras)
 - [Providing Inputs](#providing-inputs)
-    - [Text 2 Image; Control Nets; In Painting](#text-2-image-control-nets-in-painting)
+  - [Text 2 Image; Control Nets; In Painting](#text-2-image-control-nets-in-painting)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->

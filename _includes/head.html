@@ -62,6 +62,10 @@ else %}
 
     {% capture image_url%}https://github.com/idvorkin/blob/raw/master/ig66/{{page.week}}/montage.webp{%endcapture%}
 
+{% elsif page.ai_default_image %}
+
+    {% capture image_url%}https://github.com/idvorkin/blob/raw/master/blog/raccoon-ai-native.webp{%endcapture%}
+
 {% else %}
 
     {% assign image_url ="https://github.com/idvorkin/blob/raw/master/raccoon-imagination-executed-sustainably.webp" %}

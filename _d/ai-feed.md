@@ -8,6 +8,7 @@ redirect_from:
 tags:
   - ai
   - productivity
+ai_default_image: true
 ---
 
 Pretty common: I get a bag of links — a newsletter, a Twitter thread, a friend's Slack message. I open them all in tabs, skim, close most, and forget. Maybe one in ten sticks. The rest vanish into the consumption void.

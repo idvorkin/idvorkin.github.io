@@ -18,6 +18,8 @@ I don't want to die knowing I spent too much time at work and I bet you don't ei
 
 _This is a re-post of my talk on [LinkedIn](http://bit.ly/igor-wlb-manifesto)_
 
+_I wrote this in early 2020, before remote work went mainstream. Read the mechanics (Chime, video rooms, monthly remote days) as a snapshot of that era - the principles still hold._
+
 ### How do I model work-life balance?
 
 Organizations reflect their leaders, and I strive to model work-life balance.
@@ -36,7 +38,7 @@ Organizations reflect their leaders, and I strive to model work-life balance.
 
 Work-life balance requires organizational mechanisms and care, here are some of ours.
 
-**Off the books paid time off** To encourage people to take care of themselves, we do payed time off, off the books. Some people take advantage of this naturally, but others require encouragement. For example, this year July 4th was a Wednesday, so I removed two days of capacity from everyone's sprint and told them to be 'sick' either Monday/Tuesday or Thursday/Friday. As another example, when folks do an internal transfer into my team, I encourage them to take a few weeks off to refresh and reset.
+**Off the books paid time off** To encourage people to take care of themselves, we do paid time off, off the books. Some people take advantage of this naturally, but others require encouragement. For example, this year July 4th was a Wednesday, so I removed two days of capacity from everyone's sprint and told them to be 'sick' either Monday/Tuesday or Thursday/Friday. As another example, when folks do an internal transfer into my team, I encourage them to take a few weeks off to refresh and reset.
 
 **Realistic expectations for work deliverables** To enjoy your time off work, you need to be free of anxiety. Because anxiety is the difference between expectations and reality my top priority is making sure everyone is thinking realistically. This is a huge topic, so I'd only skim the surface in a single dimension - unrealistic thoughts people have in their mind.
 
@@ -50,7 +52,7 @@ When I spot this happening, I jump in to remind the person that I know they're g
 
 **Flexible hours from wherever we want to be** Everyone achieves work-life balance differently. So, the team does everything we can think of to make it easier to watch your daughter's soccer game, get your car to the mechanic or go for an afternoon jog. For example, all our meetings are between 10 and 4, we use group messenger (Slack/Chime) heavily, we have meetings in rooms with video conferencing, and we have high-quality microphones for ad-hoc conversations like stand up. I work remotely at least once a month, so if the experience sucks, I prod the team to fix it.
 
-**Making work like having a blast with your friends** Having you look forward to coming to work is a top priority for me, and I'll have several posts on the topic. The first post, making memorable moments at work is in progress.
+**Making work like having a blast with your friends** Having you look forward to coming to work is a top priority for me. I wrote about one way to do this in [moments at work](/moments-at-work).
 
 **Treating you like the human you are** I'm deeply offended when managers think developers are fungible resources assessed as the sum of their deliverables. I fundamentally believe developers are people first and need to be treated as such.
 
@@ -82,11 +84,7 @@ While we had a great short-term solution, my son wasn't becoming any less demand
 
 ### Tell me more
 
-In future posts, I'll describe how leaders can build a culture of work-life balance into organizations that haven't embraced it yet.
-
-I'm always looking for folks passionate about software engineering leadership and management, so reach out for virtual coffee if you share my passion!
-
-I'm hiring, so if you're a principal developer, senior developer or SDE-II reach out.
+I'm always looking for folks passionate about software engineering leadership and management, so reach out for a virtual coffee if you share my passion!
 
 ### FAQ
 
@@ -100,7 +98,7 @@ I'm hiring, so if you're a principal developer, senior developer or SDE-II reach
 
 **Sounds like I'm working less, how will this impact my career/bonus?** If someone works as effectively as you for 60 hours a week, when you're working 40 hours a week, they'll get ahead. However, what I often see is the folks working 60 hours, are less effective with their time, and often burn out.
 
-**What happens when the larger organization doesn't value work-life balance?** I'll go into this in detail in my blog post on bringing work life balance into an organizational. In short, in some organizations, a significant fraction of people have no life, and it's literally going to cost you to have one yourself. If that's not your cup of tea, then that's not the organization for you.
+**What happens when the larger organization doesn't value work-life balance?** I'll go into this in detail in my blog post on bringing work-life balance into an organization. In short, in some organizations, a significant fraction of people have no life, and it's literally going to cost you to have one yourself. If that's not your cup of tea, then that's not the organization for you.
 
 **Did you always do this?** No, when I was young and single, I wanted to build my tech muscles as fast as I could and often worked 50-60 hours a week. When I was employee number 50 in Azure, the entire team worked 60+ hours a week, and it was one of the most fun times of my career.
 

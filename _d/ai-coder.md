@@ -5,6 +5,7 @@ permalink: /chop
 mermaid: true
 redirect_from:
   - /ai-coder
+ai_default_image: true
 ---
 
 Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizing how we write code. Think of those old-school auto shops: AI started as the shop hand, fetching tools and cleaning parts. Then it became an apprentice mechanic, helping diagnose problems and suggesting fixes. Now? It's a master mechanic, capable of rebuilding entire engines from your high-level specs. Our AIs are getting smarter by the day, and we'll explore how to make the most of this evolution.
@@ -673,6 +674,7 @@ NOTE: Code and essentially Vibed code is very hard to keep working as it's often
 
 {%include summarize-page.html src="/ai-testing"%}
 {%include summarize-page.html src="/testing"%}
+{%include summarize-page.html src="/hill-climbing"%}
 
 ## Igor's Predictions, Insights, and Mental Models
 
@@ -689,7 +691,7 @@ Most of this is picked up from others (there are no unique thoughts), but here's
 
 - With coding so easy, might as well make a tool just for your use case.
   - [Explainers](/explainers) — interactive visualizations that let you _play_ with a concept instead of reading about it. AI makes them trivially easy to build
-  - [Hand writing daily journal workflow](/process-journal#journalling-workflow-in-2025)
+  - [Hand writing daily journal workflow](/process-journal#current-workflow)
   - A grab bag of randomness called y.py [upload clipboard to git, start a flow session, move windows around](https://github.com/idvorkin/settings/blob/db1ca0310d79c9db8b3cc7092cb14904a560eb6d/py/y.py?plain=1#L744)
 - Probably a pendulum swings from:
   - in the 90's every company needing own IT department

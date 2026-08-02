@@ -6,9 +6,9 @@ redirect_from:
   - /mac
 ---
 
-{% include alert.html style="info" content="Check out my [Mac install script](https://github.com/idvorkin/Settings/blob/master/mac/install.sh) for automated setup of my Mac environment." %}
-
 I pretty much use mac exclusively. I have 3 at work, and a mac mini at home, and I'm an automation nerd so I try to have everything auto install/synchronize across the machines. On the mac, I'm either in chrome/edge, Cursor (the new VS.code), the terminal (I use iterm), capcut (video editor), zoom, or the few super handy utilities I list below.
+
+{% include alert.html style="info" content="Check out my [Mac install script](https://github.com/idvorkin/Settings/blob/master/mac/install.sh) for automated setup of my Mac environment." %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->

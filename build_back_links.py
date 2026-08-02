@@ -23,6 +23,7 @@ from typing import NewType, List, Dict
 from typing_extensions import Annotated
 import os
 import json
+import tempfile
 from dataclasses import dataclass
 import copy
 import typer
@@ -305,6 +306,19 @@ class idvorkin_github_io_config:
 jekyll_config = idvorkin_github_io_config()
 
 
+# Pages whose outgoing links must NOT become other pages' incoming_links.
+# These are aggregator/index pages that link to nearly everything, so treating
+# them as a backlink source pollutes every post's "Mentioned in:" section with
+# noise. The pages themselves still appear in self.pages (searchable, reachable),
+# they just don't contribute incoming_links. Used by both LinkBuilder.update
+# (full-build path) and rebuild_incoming_links (delta path).
+EXCLUDED_BACKLINK_SOURCES = frozenset(
+    {
+        "/changelog",
+    }
+)
+
+
 class LinkBuilder:
     def parse_page(self, file_path: FileType):
         if not jekyll_config.is_allow_incoming(file_path):
@@ -393,11 +407,12 @@ class LinkBuilder:
             self.redirects[page.url] = page.redirect_url
             return
 
-        for link in page.outgoing_links:
-            # when a link has an anchor eg foo.html#bar
-            # the incoming_link is foo.html, so strip the anchor
-            clean_link = link.split("#")[0]
-            self.incoming_links[clean_link].append(page.url)
+        if page.url not in EXCLUDED_BACKLINK_SOURCES:
+            for link in page.outgoing_links:
+                # when a link has an anchor eg foo.html#bar
+                # the incoming_link is foo.html, so strip the anchor
+                clean_link = link.split("#")[0]
+                self.incoming_links[clean_link].append(page.url)
 
         self.pages[page.url] = page
 
@@ -550,16 +565,19 @@ class LinkBuilder:
                 }
             return obj
 
-        # Write directly to the file instead of printing to stdout
-        with open(output_file, "w", encoding="utf-8") as f:
-            json.dump(
-                out,
-                f,
-                default=page_encoder,
-                ensure_ascii=False,
-                indent=4,
-                sort_keys=True,
-            )
+        # Atomic write: truncation+write of the target file isn't safe when
+        # multiple pre-commit hook workers run in parallel on different
+        # markdown files — one writer can truncate mid-write of another,
+        # producing a corrupted suffix. Write to a tempfile in the same
+        # directory, then os.replace() into place (atomic on POSIX).
+        _atomic_write_json(
+            out,
+            output_file,
+            default=page_encoder,
+            ensure_ascii=False,
+            indent=4,
+            sort_keys=True,
+        )
 
         # Print a message to stdout for logging
         console.print(f"[green]Successfully wrote backlinks data to {output_file}[/]")
@@ -589,7 +607,7 @@ def build(
     ] = "back-links.json",
     threshold_minutes: Annotated[
         int, typer.Option(help="Minimum time difference in minutes to update a file")
-    ] = 5,
+    ] = 60,
 ):
     """
     Build backlinks and write to the specified output file.
@@ -1050,7 +1068,7 @@ def delta(
         typer.Option(
             help="Minimum time difference in minutes to update last_modified field"
         ),
-    ] = 62,  # Keep in sync with note on `build` command re: CI parity.
+    ] = 60,
     dry_run: Annotated[
         bool, typer.Option(help="Show what would be updated without making changes")
     ] = False,
@@ -1378,6 +1396,8 @@ def rebuild_incoming_links(data):
 
     # Collect all outgoing links
     for url, page_data in data["url_info"].items():
+        if url in EXCLUDED_BACKLINK_SOURCES:
+            continue
         outgoing = page_data.get("outgoing_links", [])
         for link in outgoing:
             incoming_links[link].append(url)
@@ -1396,10 +1416,42 @@ def rebuild_incoming_links(data):
 
 
 def write_updated_data(data, output_file):
-    """Write updated data to the output file."""
-    with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=4, sort_keys=True)
-        console.print(f"[green]Successfully wrote {output_file}[/]")
+    """Write updated data to the output file, atomically."""
+    _atomic_write_json(data, output_file, ensure_ascii=False, indent=4, sort_keys=True)
+    console.print(f"[green]Successfully wrote {output_file}[/]")
+
+
+def _atomic_write_json(data, output_file, **dumps_kwargs):
+    """Atomically write JSON to `output_file`.
+
+    Writes to a uniquely-named tempfile in the same directory, fsyncs,
+    then os.replace()s onto the target path. On POSIX, os.replace is
+    atomic at the inode level, so concurrent pre-commit hook workers
+    (one per changed markdown file) can't truncate each other's in-flight
+    writes — the worst case is that one worker's view wins and the
+    other's update is lost, rather than a corrupt JSON document on disk.
+
+    The tempfile is created in the same directory as the target so the
+    rename is same-filesystem (guaranteed atomic); TMPDIR could be on a
+    different fs and break the guarantee.
+    """
+    output_dir = os.path.dirname(os.path.abspath(output_file)) or "."
+    base = os.path.basename(output_file)
+    fd, tmp_path = tempfile.mkstemp(prefix=f".{base}.", suffix=".tmp", dir=output_dir)
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8") as f:
+            json.dump(data, f, **dumps_kwargs)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp_path, output_file)
+    except Exception:
+        # If anything went wrong, remove the tempfile so we don't leave
+        # stale `.back-links.json.*.tmp` droppings in the repo root.
+        try:
+            os.unlink(tmp_path)
+        except OSError:
+            pass
+        raise
 
 
 def print_delta_summary(

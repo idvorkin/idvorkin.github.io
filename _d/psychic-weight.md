@@ -16,32 +16,33 @@ Imagine a weight tied around your body, imagine it dragging behind you, slowing 
 <!-- vim-markdown-toc-start -->
 
 - [Types of psychic weight](#types-of-psychic-weight)
-    - [Aversion and the resistance](#aversion-and-the-resistance)
-    - [Mind monsters](#mind-monsters)
-    - [Triggers](#triggers)
-    - [Open decisions](#open-decisions)
-    - [Open loops](#open-loops)
-    - [Shame](#shame)
-    - [Pride](#pride)
-    - [Ruminating a parasitic idle loop](#ruminating-a-parasitic-idle-loop)
-    - [Beating yourself up](#beating-yourself-up)
-    - [Grasping](#grasping)
+  - [Aversion and the resistance](#aversion-and-the-resistance)
+  - [Mind monsters](#mind-monsters)
+  - [Triggers](#triggers)
+  - [Open decisions](#open-decisions)
+  - [Open loops](#open-loops)
+  - [Shame](#shame)
+  - [Pride](#pride)
+  - [Ruminating a parasitic idle loop](#ruminating-a-parasitic-idle-loop)
+  - [Beating yourself up](#beating-yourself-up)
+  - [The psychic weight of stuff](#the-psychic-weight-of-stuff)
+  - [Grasping](#grasping)
 - [Antidotes](#antidotes)
-    - [Separate pain from suffering](#separate-pain-from-suffering)
-    - [Eat the frog](#eat-the-frog)
-    - [Getting things done](#getting-things-done)
-    - [CI/CC (Circle of Influence, Circle of Concern)](#cicc-circle-of-influence-circle-of-concern)
-    - [Talk it through](#talk-it-through)
-    - [Meditation](#meditation)
-    - [This too shall pass](#this-too-shall-pass)
-    - [Emotional First Aid](#emotional-first-aid)
+  - [Separate pain from suffering](#separate-pain-from-suffering)
+  - [Eat the frog](#eat-the-frog)
+  - [Getting things done](#getting-things-done)
+  - [CI/CC (Circle of Influence, Circle of Concern)](#cicc-circle-of-influence-circle-of-concern)
+  - [Talk it through](#talk-it-through)
+  - [Meditation](#meditation)
+  - [This too shall pass](#this-too-shall-pass)
+  - [Emotional First Aid](#emotional-first-aid)
 - [Examples from my own life](#examples-from-my-own-life)
-    - [Bathroom remodel feeling "f@#\$" over](#bathroom-remodel-feeling-f-over)
-    - [Insecurity around money](#insecurity-around-money)
-    - [Needing to finish a self evaluation](#needing-to-finish-a-self-evaluation)
-    - [Needing to finish a document at work](#needing-to-finish-a-document-at-work)
-    - [Small things that got really big](#small-things-that-got-really-big)
-    - [Examples of Pride](#examples-of-pride)
+  - [Bathroom remodel feeling "f@#\$" over](#bathroom-remodel-feeling-f-over)
+  - [Insecurity around money](#insecurity-around-money)
+  - [Needing to finish a self evaluation](#needing-to-finish-a-self-evaluation)
+  - [Needing to finish a document at work](#needing-to-finish-a-document-at-work)
+  - [Small things that got really big](#small-things-that-got-really-big)
+  - [Examples of Pride](#examples-of-pride)
 - [Useful thoughts.](#useful-thoughts)
 
 <!-- vim-markdown-toc-end -->
@@ -92,6 +93,10 @@ When ruminating thoughts become specific, repetitive patterns that loop endlessl
 {%include summarize-page.html src="/psychic-shadows" %}
 
 ### Beating yourself up
+
+### The psychic weight of stuff
+
+Clutter isn't a collection - it's a pile of decisions I stopped making. Every undecided object is an open loop: a keep/sell/donate call I deferred until I stopped seeing the thing at all. The boxes in the garage, the cupboard I haven't opened in years - at first I knew exactly what was in there and why, then it became part of the wall, and once I stopped seeing it I stopped questioning it. An attic isn't a hoard of treasure; it's a stack of decisions I never made, quietly dragging behind me. (Sparked by [Nick Maher's video](https://youtu.be/Gh-rjOspK10).)
 
 ### Grasping
 

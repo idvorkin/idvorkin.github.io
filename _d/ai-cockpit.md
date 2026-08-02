@@ -28,7 +28,9 @@ Agents are slow. Not slow like "wait a second," slow like "go make coffee and co
   - [Tmux on Super Steroids - The Multiplexer](#tmux-on-super-steroids---the-multiplexer)
   - [Alfred - The Session Switcher](#alfred---the-session-switcher)
   - [Agent Dashboard - The Radar Screen](#agent-dashboard---the-radar-screen)
+  - [GitHub Views - The Triage Queue](#github-views---the-triage-queue)
   - [Stream Deck - The Physical Buttons](#stream-deck---the-physical-buttons)
+  - [Tailscale - The Network](#tailscale---the-network)
 - [How the Pieces Fit Together](#how-the-pieces-fit-together)
 - [What I'm Still Building](#what-im-still-building)
 - [The Meta-Question](#the-meta-question)
@@ -65,6 +67,20 @@ The funny part: transcription quality barely matters. Agents are resilient to ga
 
 See more in my [AI Journal entry on voice coding](/ai-journal#using-voice-to-make-commands).
 
+#### The mic matters more than I thought
+
+Software gets the headlines, but a real lapel mic close to your mouth beats laptop and phone built-ins by a country mile. I used to think Siri dictation was terrible, but it turned out part of the problem was my input. The right microphone totally fixes it — Siri's now almost as good as Wispr Flow.
+
+What I'm using:
+
+{% include amazon.html asin="B0DNQ5D1H4" %}
+
+The Hollyland Lark M2S Mini Combo — wireless lavalier, 7g, USB-C plus a Camera RX, works with iPhone, Android, laptop, or camera, 300m range. I didn't actually buy it for this — I had it for another project, and it turned out to be the right tool for vibing too. So this isn't a "go spend a few hundred bucks" rec; it's a "if you already have a good lav, point it at Wispr or Siri" rec.
+
+For the full deep dive on why voice changes how you work with AI, see [You Need to Use Voice](/ai-operator#you-need-to-use-voice).
+
+More mic options as I try them.
+
 ### Tmux on Super Steroids - The Multiplexer
 
 Tmux is the backbone. Every agent runs in a tmux session inside a Docker container. The problem is: stock tmux navigation is painful when you have 8+ sessions across multiple containers.
@@ -78,6 +94,12 @@ So I built a [hand-written Rust picker](https://github.com/idvorkin/settings/tre
 - **14ms response time** - ported from Python (100ms) to Rust. I don't even know Rust, but AI made it trivial
 
 **Why it matters for the cockpit:** This is the "stick" that steers. One keystroke opens the picker. Another keystroke lands you in the right agent session. No thinking, no typing paths, no remembering which container is which.
+
+**`pick-links` — pulling URLs out of scrollback.** `rmux_helper pick-links` scans the current pane's scrollback and surfaces every PR URL, running server address, and IP as a TUI picker.
+
+{% include image_float_right.html src="https://raw.githubusercontent.com/idvorkin/ipaste/main/20260417_111056.webp" %}
+
+Pick an item and the URL lands on the Mac's clipboard. An Alfred hotkey — wired through [`y.py`](https://github.com/idvorkin/settings/blob/main/py/y.py), my yabai helper, to bring the browser window forward — reads the clipboard and opens the page. One pick in the picker, one hotkey on the Mac, and I'm on the URL. (Eventually this moves onto the [Agent Dashboard](#agent-dashboard---the-radar-screen) as a clickable row; then even the hotkey goes away.)
 
 Full story: [Rust tmux_helper - 10x speedup from Python](/ai-journal#rust-tmux_helper-10x-speedup-from-python)
 
@@ -109,6 +131,15 @@ I didn't build this. I gave the requirements and Claude built it itself. The iro
 
 **Why it matters for the cockpit:** Without this, you're blind. You don't know which agent finished, which one is stuck, which PR needs review. With it, one glance tells you where to focus attention.
 
+### GitHub Views - The Triage Queue
+
+The Agent Dashboard knows what my agents are _doing_ right now. GitHub knows what they've already _filed_. Different instruments, same cockpit. I keep two saved searches pinned in the browser — everything `idvorkin-ai-tools` touched in the last four weeks, sorted by recent activity:
+
+- [Open PRs involving idvorkin-ai-tools](https://github.com/pulls/2294839?q=+%28involves%3Aidvorkin-ai-tools%29+++++state%3Aopen+archived%3Afalse+sort%3Aupdated-desc+created%3A%3E%40today-4w+)
+- [Open issues & PRs involving idvorkin-ai-tools](https://github.com/issues/SSC_kgDOACMG4Q?q=%28involves%3Aidvorkin-ai-tools%29%20state%3Aopen%20archived%3Afalse%20sort%3Aupdated-desc%20created%3A%3E%40today-4w%20is%3Aissue%20is%3Apr)
+
+One tab, one glance, full triage queue. Before I had these, agent PRs on stale branches just vanished from my attention; now the staleness is the sort key.
+
 ### Stream Deck - The Physical Buttons
 
 {% include image_float_right.html src="https://raw.githubusercontent.com/idvorkin/ipaste/main/20260101_070739.webp" link="https://github.com/idvorkin/streamdeck-igor-vibe" %}
@@ -122,6 +153,14 @@ The [Stream Deck plugin](https://github.com/idvorkin/streamdeck-igor-vibe) gives
 Physical buttons matter because they don't require visual attention. I can hit "next agent" by feel while reading code on screen. It's the same reason cars have physical knobs for volume instead of touchscreen sliders - you don't want to look away from the road.
 
 Built the plugin in 30 minutes with AI. See the [journal entry](/ai-journal#stream-deck-plugin-in-30-minutes).
+
+### Tailscale - The Network
+
+Every agent runs on a Linux dev VM in my closet. Tailscale puts that VM on a private network that follows me across devices — same hostname, same URLs, from the couch or the treadmill or a coffee shop.
+
+What this buys in the cockpit: every server an agent launches is reachable from wherever I am. Agent runs `jekyll serve` on the dev VM, the preview is at `http://c-5001:4000` from my phone browser. The [link picker](#tmux-on-super-steroids---the-multiplexer) catches server URLs out of the agent's stdout; one tap and the rendered page is on whatever device I have out. No port-forwarding. No ngrok tunnel. No SSH gymnastics.
+
+Without Tailscale, every agent-launched server is a negotiation. With it, servers are just URLs.
 
 ## How the Pieces Fit Together
 

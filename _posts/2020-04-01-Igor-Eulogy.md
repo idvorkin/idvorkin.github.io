@@ -262,6 +262,8 @@ Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02
 
 ### Father to Amelia - an incredible girl
 
+_See the [framework for connecting with Amelia](/amelia) — four affirmations mapped onto fathering a daughter._
+
 Things I cherish with Amelia @ 10:
 
 - Seeing how she's unique and brave (Wearing a tail, and sometimes even a mask)

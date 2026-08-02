@@ -1,13 +1,15 @@
 ---
 layout: post
-title: "My thoughts on Facebook"
-permalink: /facebook
+title: "My thoughts on Meta"
+permalink: /meta
 redirect_from:
-  - /meta
+  - /facebook
   - /fb
 ---
 
-Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven relationships, and providing skip-level escalations and support. Here are my notes on Facebook
+Meta calls itself a ‘social’ company. As one of its managers put it: "we value 1-1 time, fostering trust-driven relationships, and providing skip-level escalations and support." Here are my notes on Meta.
+
+_(\* When I started this was still Facebook.)_
 
 <!-- prettier-ignore-start -->
 
@@ -46,6 +48,7 @@ Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven re
   - [Bonus learnings at Facebook](#bonus-learnings-at-facebook)
 - [From Facebook to Meta and the metaverse](#from-facebook-to-meta-and-the-metaverse)
   - [Why is the metaverse taking so long](#why-is-the-metaverse-taking-so-long)
+- [Moving to Meta's AI Lab (2026)](#moving-to-metas-ai-lab-2026)
 - [Core Values (LP's)](#core-values-lps)
   - [Focus on Impact](#focus-on-impact)
   - [Move Fast](#move-fast)
@@ -271,6 +274,16 @@ In 2022, Lord of the Rings. How do we solve this sim the real world? Identity an
 ### Why is the metaverse taking so long
 
 <https://www.matthewball.vc/all/why-vrar-gets-farther-away-as-it-comes-into-focus>
+
+## Moving to Meta's AI Lab (2026)
+
+In May 2026 I got flattened (M→IC) and moved into Meta's AI training org. Not severance — they kept me, just moved me. Arguably I'm going to a frontier lab, and we're going to figure out how training works, which I'm kind of excited for.
+
+The role is very undefined. As you'd expect when you load 7000 people into a new org on a critical investment — how to make a frontier model.
+
+Scary. Ambiguous. Chaos. Wonder. So many choices... I'm leaning in.
+
+My day job now lines up with what I'd been doing on the side anyway — [CHOP](/chop), vibe coding, AI projects. Bigger sandbox, no manager hat. More once the teams shake out.
 
 ## Core Values (LP's)
 

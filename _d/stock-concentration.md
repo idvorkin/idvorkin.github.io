@@ -310,7 +310,7 @@ When you die, your heirs inherit your appreciated stock at current market value 
 
 In Washington State (a community property state), it's even better - when one spouse dies, **both halves** of jointly-owned stock get stepped up, allowing the surviving spouse to immediately diversify tax-free.
 
-For detailed information on step-up in basis, the "Buy, Borrow, Die" strategy, and when this approach makes sense, see the [Step-Up in Basis section in the Tax Guide](/money#step-up-in-basis-at-death---the-ultimate-tax-escape).
+For detailed information on step-up in basis, the "Buy, Borrow, Die" strategy, and when this approach makes sense, see the [Step-Up in Basis section in the Tax Guide](/taxes#step-up-in-basis-at-death---the-ultimate-tax-escape).
 
 ## Related Articles
 

@@ -1,0 +1,8 @@
+provider = "claude"
+
+# Rig-relative working directory: {{.RigRoot}} resolves to the blog rig's path, so
+# the agent launches *in* the blog — which makes `claude` auto-load the blog's
+# CLAUDE.md and .claude/ skills at startup. Requires this pack be imported as the
+# blog rig's pack (rig-level import) so the agent is rig-bound. The rig inherits the
+# city's bead store, so the blog's own bd/.beads is never touched.
+work_dir = "{{.RigRoot}}"

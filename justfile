@@ -215,6 +215,9 @@ jekyll-clean:
 # Clean and rebuild Jekyll site from scratch
 jekyll-rebuild: jekyll-clean
     #!/usr/bin/env sh
+    # Load the Ruby 3.2+/4.0 compat shim (tainted?/pathutil) the old
+    # github-pages gems need. Mirrors jekyll-serve; no-op on older Ruby.
+    export RUBYOPT="-r$(pwd)/_ruby_compat.rb"
     echo "🔨 Rebuilding Jekyll site from scratch..."
     # Update git branch info for dev banner
     echo '{"branch": "'$(git branch --show-current)'"}' > _data/git.json
@@ -227,6 +230,45 @@ jekyll-rebuild: jekyll-clean
         bundle exec jekyll build
     fi
     echo "✅ Jekyll rebuild complete - site available in _site/"
+
+# Synchronous Jekyll build (NO clean — reuses .jekyll-cache). ~5s on this site. Use when
+# you just need _site/ current after an edit; it's a dependency of update-backlinks.
+jekyll-build:
+    #!/usr/bin/env sh
+    set -eu
+    # Load the Ruby 3.2+/4.0 compat shim the old github-pages gems need (mirrors jekyll-rebuild).
+    export RUBYOPT="-r$(pwd)/_ruby_compat.rb"
+    echo "🔨 Building Jekyll site (incremental; reusing .jekyll-cache)..."
+    if [ "$(uname)" = "Darwin" ]; then
+        ~/homebrew/opt/ruby/bin/bundle exec jekyll build
+    else
+        bundle exec jekyll build
+    fi
+    echo "✅ Jekyll build complete - site available in _site/"
+
+# Fire-and-forget background jekyll build for fresh worktrees.
+# Populates _site/ so the anchor-checker pre-commit hook passes by
+# the time the first commit lands. No clean step — incremental build
+# is faster and sufficient.
+worktree-init:
+    #!/usr/bin/env sh
+    set -eu
+    # Load the Ruby 3.2+/4.0 compat shim — see jekyll-rebuild. No-op on older Ruby.
+    export RUBYOPT="-r$(pwd)/_ruby_compat.rb"
+    # Sanitize branch name for filesystem (e.g. claude/foo -> claude-foo)
+    # Otherwise nohup writes to a non-existent parent dir and the build
+    # fails silently while we still print "Background build fired".
+    BRANCH=$(git branch --show-current | tr '/' '-')
+    LOG="/tmp/jekyll-worktree-$BRANCH.log"
+    echo "🔨 Starting bg jekyll build — log: $LOG"
+    # Match jekyll-rebuild: prefer homebrew Ruby on Darwin so we don't
+    # silently fall back to system Ruby and fail.
+    if [ "$(uname)" = "Darwin" ]; then
+        nohup ~/homebrew/opt/ruby/bin/bundle exec jekyll build >"$LOG" 2>&1 & disown
+    else
+        nohup bundle exec jekyll build >"$LOG" 2>&1 & disown
+    fi
+    echo "✅ Background build fired. _site/ ready in ~60-90s; first commit should find it populated."
 
 jekyll-serve port="4000" livereload_port="35729":
     #!/usr/bin/env sh
@@ -254,8 +296,8 @@ jekyll-serve port="4000" livereload_port="35729":
         echo "╚════════════════════════════════════════════════════════════════════╝"
         echo ""
         echo "🔗 Tailscale detected in container"
-        echo "   Local:     http://localhost:{{port}}"
-        echo "   Tailscale: http://$TAILSCALE_HOST:{{port}}"
+        echo "   URL (with the chosen port) is printed below once Jekyll binds."
+        echo "   Port may differ from {{port}} if another repo's server holds it."
         echo ""
         echo "──────────────────────────────────────────────────────────────────────"
     else
@@ -268,10 +310,31 @@ jekyll-serve port="4000" livereload_port="35729":
     export RUBYOPT="-r$(pwd)/_ruby_compat.rb"
     if command -v rbenv >/dev/null 2>&1; then
         eval "$(rbenv init - sh)"
-        rbenv exec bundle exec jekyll server --incremental --livereload --host $BIND_HOST --port {{port}} --livereload-port {{livereload_port}}
+        RUNNER="rbenv exec bundle exec"
     else
-        bundle exec jekyll server --incremental --livereload --host $BIND_HOST --port {{port}} --livereload-port {{livereload_port}}
+        RUNNER="bundle exec"
     fi
+
+    # Require running-servers new enough to have the `run` subcommand
+    # (port-conflict-aware launching). Gate on its version, not just its
+    # presence, so an older install fails loudly instead of erroring on an
+    # unknown subcommand.
+    REQUIRED_RS_VERSION="0.2.0"
+    rs_version="$(running-servers version 2>/dev/null)"
+    if [ -z "$rs_version" ] || \
+       [ "$(printf '%s\n%s\n' "$REQUIRED_RS_VERSION" "$rs_version" | sort -V | head -n1)" != "$REQUIRED_RS_VERSION" ]; then
+        echo "✗ jekyll-serve needs running-servers >= $REQUIRED_RS_VERSION (have: ${rs_version:-not installed})." >&2
+        echo "  Update idvorkin-scripts so 'running-servers run' exists, then retry." >&2
+        exit 1
+    fi
+
+    # running-servers run: fail fast if a Jekyll already serves THIS directory,
+    # otherwise pick a free port (preferring {{port}}/{{livereload_port}}) so we
+    # coexist with servers in other repos instead of dying on "Address already
+    # in use". {http}/{livereload} are substituted with the chosen ports.
+    exec running-servers run --process jekyll --http {{port}} --livereload {{livereload_port}} \
+        -- $RUNNER jekyll server --incremental --livereload --host "$BIND_HOST" \
+        --port '{http}' --livereload-port '{livereload}'
 
 jekyll-container port="4000":
     #!/usr/bin/env bash
@@ -345,7 +408,9 @@ docker-run2:
 docker-run:
     docker run -v ~/blog:/root/blog -it -p 35729:35729 -p 4000:4000 devdocker npm run jekyll:container
 
-update-backlinks:
+# Regenerate back-links.json. Depends on jekyll-build (~5s) so _site/ is always current
+# before backlinks are derived from it — never reads a stale _site.
+update-backlinks: jekyll-build
     uv run ./build_back_links.py build
 
 # Update backlinks with a custom output file
@@ -380,51 +445,6 @@ write-backlinks-tmp:
     # Rebuild backlinks directly to ~/tmp
     uv run ./build_back_links.py build ~/tmp/back-links.json
     echo "Backlinks written to ~/tmp/back-links.json"
-
-# Rebuild backlinks and push to GitHub with safety checks
-push-backlinks:
-    #!/usr/bin/env sh
-    # Ensure ~/tmp directory exists
-    mkdir -p ~/tmp
-
-    # Save the current state of back-links.json to ~/tmp
-    cp back-links.json ~/tmp/back-links.json.bak
-
-    # Rebuild backlinks using existing command
-    just update-backlinks
-
-    # Also generate a copy in ~/tmp for reference
-    just update-backlinks-to ~/tmp/back-links.json
-
-    # Check if there are changes
-    if ! git diff --quiet back-links.json; then
-        # Count the number of changed lines
-        CHANGED_LINES=$(git diff --numstat back-links.json | awk '{print $1 + $2}')
-        echo "Number of changed lines: $CHANGED_LINES"
-
-        # If too many lines changed, ask for confirmation
-        if [ "$CHANGED_LINES" -gt 50 ]; then
-            echo "WARNING: Large number of changes detected ($CHANGED_LINES lines)"
-            echo "Showing diff summary:"
-            git diff --stat back-links.json
-
-            # Ask for confirmation
-            read -p "Do you want to continue with the push? (y/n) " CONFIRM
-            if [ "$CONFIRM" != "y" ]; then
-                echo "Operation cancelled. Restoring backup..."
-                cp ~/tmp/back-links.json.bak back-links.json
-                exit 1
-            fi
-        fi
-
-        # Commit and push changes
-        git add back-links.json
-        git commit -m "feat(back-links): update backlinks data $(date +%Y-%m-%d)"
-        git push origin HEAD
-        echo "Backlinks updated and pushed successfully!"
-    else
-        echo "No changes detected in backlinks."
-    fi
 
 broken-links server="localhost:4000":
     uv run scripts/check_internal_links.py --server {{server}}

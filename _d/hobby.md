@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Why a Engineering Manager masquerades as a magician on the weekends"
+title: "Why an Engineering Manager masquerades as a magician on the weekends"
 permalink: /hobby
 redirect_from:
   - /hobbies
 ---
 
 Some days thinking about work makes me stressed, thinking of my family makes me resentful, and I don't want to feel like a sloth feeding my addictions to TikTok, and doom scrolling. Those days, I'm grateful for my hobbies. This post gives you reasons to find a hobby and teaches you the attributes in an ideal hobby: Being accessible, Supporting mastery, Reinforcing your identity, and building relationships.
+
+A hobby isn't a [passion](/addiction#is-doing-the-thing-you-want-to-be-doing-an-addiction) and it isn't an [addiction](/addiction). The test is compulsion: with a passion or an addiction, you can't stand NOT doing it; with a hobby, you can put it down without feeling pulled back. That absence of compulsion is exactly the feature — your hobby stays a refuge instead of becoming another thing running you.
 
 <!--
 Who is the audience?
@@ -49,7 +51,7 @@ Performing music reinforces identity. You are a musician. If you're in a band yo
 
 You know why you need a hobby, and what makes a great one, now get out there and start looking for your ideal hobby. As you hunt for your hobbies a few ideas to help you out:
 
-- Chase you curiosity. That's where you'll find the motivation to elevate your talent, turning interest into competency.
+- Chase your curiosity. That's where you'll find the motivation to elevate your talent, turning interest into competency.
 - Remember the laws of new skills
 
 {%include summarize-page.html src="/new-skills"%}
@@ -64,7 +66,9 @@ For those unfamiliar with the terms, Autonomy, Mastery, Purpose (AMP) is Daniel 
 
 This gets into nomenclature. In my model, hobbies are things that make you happy while [habits](/habits) (the positive ones) make you healthy. Practicing your hobby can become a habit.
 
-**Should I have my hobby be my work?** I'd recommend strongly against it for two reasons. First, it's work so you'll need to prioritize what makes your customers happy over what makes you happy and second, because if works goes badly, you'll also lose your hobby, which defeats the purpose of having a hobby.
+#### Should I have my hobby be my work?
+
+I'd recommend strongly against it for two reasons. First, it's work so you'll need to prioritize what makes your customers happy over what makes you happy and second, because if work goes badly, you'll also lose your hobby, which defeats the purpose of having a hobby.
 
 #### What is your hobby?
 
@@ -72,6 +76,6 @@ My current hobby is [magic](/magic). All I need is a coin or a deck of cards and
 
 #### Did you find your hobby on the first try?
 
-No. One of my early hobbies was scuba diving. Going scuba diving takes a lot of gear and preparation. Even worse you need a dive buddy who has the matching gear, will, and schedule. Needless to say, my scuba gear has been gathering dust for a long while, and my wife keeps threatening to sell it. After scuba diving, I loved squash and fencing, both fantastic hobbies, but as I crossed into my late thirties, repetitive motion caused tendentious in my forearm, and I had to give them up.
+No. One of my early hobbies was scuba diving. Going scuba diving takes a lot of gear and preparation. Even worse you need a dive buddy who has the matching gear, will, and schedule. Needless to say, my scuba gear has been gathering dust for a long while, and my wife keeps threatening to sell it. After scuba diving, I loved squash and fencing, both fantastic hobbies, but as I crossed into my late thirties, repetitive motion caused tendinitis in my forearm, and I had to give them up.
 
 Next up was juggling, which for me is a fantastic hobby. Even though it meets all my criteria, it's not as accessible as magic and it's harder to form a connection juggling. For example, juggling clubs don't fit in my back pocket, and I get strange looks juggling at the bar, and don't get me started on security guards reaction to [flaming torches](https://ig66.blogspot.com/2014/08/accomplishment-unlocked-juggling-file.html). While juggling let me connect with folks, it's not an intimate connection and it's rarely remembered. By contrast with magic I can strike up a conversation, personalize the magic for the audience, and often give a souvenir which when I've formed my best connection, the audience will take home and cherish for years.

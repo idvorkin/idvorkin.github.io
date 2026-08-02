@@ -1,0 +1,139 @@
+formula = "ai-journal-new"
+description = "Draft a new dated AI-journal entry from rough notes in an isolated worktree: research and persist a dossier to a tracking bead, write the formatted entry, verify it is ai-journal-only, open a clean PR, and mail the PR + bead id. Never pushes to main."
+
+# vapor = root-only wisp so a scale-from-zero pool wakes; one agent runs the
+# steps in sequence.
+phase = "vapor"
+
+[vars.notes_file]
+description = "Absolute path to a markdown scratch file holding the author's rough notes — the seed and the voice for the entry."
+default = ""
+
+[vars.sources]
+description = "Optional sources to mine for deep permalinks: repo paths, PR/issue URLs, gist URLs, transcript files. Space- or newline-separated."
+default = ""
+
+[vars.blog_repo]
+description = "Absolute path to the blog repo checkout (worktree base)."
+default = "/home/developer/gits/idvorkin.github.io"
+
+[vars.base_branch]
+description = "Cut the worktree from this ref (canonical, freshest). The PR opens against canonical main, the same ref, so the diff stays new-entry-only."
+default = "upstream/main"
+
+[vars.notify]
+description = "gc mail recipient to notify on completion (e.g. mayor, or a human)."
+default = "mayor"
+
+[[steps]]
+id = "fresh-worktree"
+title = "Cut a fresh worktree off {{base_branch}}"
+description = """
+Your working directory is the blog repo (CLAUDE.md is already loaded — follow it).
+Cut an isolated worktree from {{base_branch}} so the draft is clean and the PR base
+matches the branch base:
+  git -C {{blog_repo}} fetch upstream --prune
+  TS=$(date +%Y%m%d-%H%M%S); BR="ai-journal-entry-$TS"
+  git -C {{blog_repo}} worktree add "{{blog_repo}}/.worktrees/$BR" {{base_branch}} -b "$BR"
+  cd "{{blog_repo}}/.worktrees/$BR"
+Report the worktree path + branch. Do ALL remaining steps inside this worktree.
+"""
+
+[[steps]]
+id = "research"
+title = "Research the entry and persist a dossier to a tracking bead"
+needs = ["fresh-worktree"]
+description = """
+Read the rough notes at {{notes_file}} (the author's voice + the insight) and the
+"## Instructions for Claude: Creating Journal Entries" section of _d/ai-journal.md
+(the entry format + deep-link rules). Mine {{sources}} for the exact facts and links
+the entry needs.
+
+Build a structured RESEARCH DOSSIER — this is the durable working memory that lets ANY
+later revision rehydrate without redoing the research:
+  - claim -> source map: each factual claim with its exact commit permalink
+    (repo/blob/<sha>/path#Lx-Ly). Walk git history to find real hashes + line ranges.
+  - sources read + the key extract pulled from each
+  - links considered and rejected (and why)
+  - open questions / things still to verify
+  - the reasoning behind the structure you will use
+
+Create a long-lived TRACKING BEAD for this entry and store the dossier on its design
+field (run `gc bd --help` / `gc bd update --help` to confirm exact flags):
+  gc bd create --type task --title "ai-journal: <entry-slug>" --labels ai-journal,blog
+  gc bd update <id> --design "<the dossier markdown>"
+Report the tracking bead id — every later step and every revision keys off it.
+"""
+
+[[steps]]
+id = "draft-entry"
+title = "Write the formatted entry + update the TOC"
+needs = ["research"]
+description = """
+Using ONLY the dossier + notes (do not invent facts), write the new entry into
+_d/ai-journal.md following the documented format:
+  - a new `### YYYY-MM-DD` heading at the TOP of the Diary section (today's date)
+  - `#### <Catchy Title>`
+  - **TOP Takeaway**, **The Problem**, **What Worked** (with the deep permalinks
+    from the dossier), **What Didn't**
+  - add the entry to the table-of-contents section
+Edit ONLY _d/ai-journal.md. Match the voice of existing entries: personal, reflective, honest.
+"""
+
+[[steps]]
+id = "rebuild-backlinks"
+needs = ["draft-entry"]
+expand = "blog-rebuild-backlinks"   # shared step library: inlines the backlinks-rebuild flow
+
+[[steps]]
+id = "verify"
+title = "Verify the change is entry+backlinks-only and sound (USE JUDGMENT)"
+needs = ["rebuild-backlinks"]
+description = """
+This is the judgment gate — do not skip it. The intent is a single-file, new-entry-only
+change against {{base_branch}}. Check reality matches intent:
+  git status --porcelain          # which files changed?
+  git diff --stat _d/ai-journal.md
+
+PASS only if ALL hold:
+  - the only modified paths are _d/ai-journal.md and back-links.json (no stray files),
+  - the entry matches the documented format and the TOC is updated,
+  - EVERY deep link resolves and matches the dossier's claim->permalink map
+    (spot-check that the hashes / line ranges actually exist),
+  - nothing is asserted that is not backed by the notes or the dossier,
+  - `git log --oneline {{base_branch}}..HEAD` is empty BEFORE you commit (right base).
+
+If ANY check fails, ABORT: do not commit, do not open a PR. Mail {{notify}} with subject
+"ai-journal-new: ABORTED" and a 1-2 line explanation of what looked wrong, then stop.
+"""
+
+[[steps]]
+id = "land"
+title = "Commit + open a clean PR; anchor the tracking bead"
+needs = ["verify"]
+description = """
+Land it. NEVER push to main:
+  git add _d/ai-journal.md back-links.json
+  git commit -m "feat(ai-journal): add entry $(date +%Y-%m-%d) + backlinks"
+  git push -u origin HEAD            # push the branch to the fork (origin)
+Open the PR against canonical main, and PUT THE TRACKING BEAD ID IN THE PR DESCRIPTION
+on its own `Tracking-bead: <id>` line, so any reviser picks it up straight from the PR
+(nothing to remember or pass). For example:
+  gh pr create --base main --title "ai-journal: <entry title>" --body "<one-line summary of the entry>
+
+Tracking-bead: <tracking-bead-id>"
+Capture the PR URL. Keep the reverse link on the bead too (confirm flags with
+`gc bd update --help`):
+  gc bd update <tracking-bead-id> --notes "PR: <PR-URL>  branch: <branch>"
+"""
+
+[[steps]]
+id = "notify"
+title = "Mail the outcome (PR link + tracking bead id)"
+needs = ["land"]
+description = """
+Notify {{notify}} so nobody has to poll — and so revisions have their anchor:
+  gc mail send {{notify}} -s "ai-journal-new: PR opened" -m "<PR-URL>/files
+  tracking bead: <id>  (revise from PR feedback: gc formula cook ai-journal-revise --var pr=<PR-number>)"
+(If you already mailed an abort in an earlier step, skip this.)
+"""

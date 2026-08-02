@@ -7,6 +7,7 @@ tags:
 permalink: /addiction
 redirect_from:
   - /addictions
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-addiction-cover.webp
 ---
 
 Addiction is not about drugs or alcohol - it is about escape. Quoting "Do the Work": When we can't stand the fear, the shame, and the self-reproach that we feel, we obliterate it with an addiction. The addiction becomes the shadow version, the evil twin of our calling to service or to art. That's why addicts are so interesting and so boring at the same time. They're interesting because they're called to something — something new, something unique, something that we, watching, can't wait to see them bring forth into manifestation. At the same time, they're boring because they never do the work. The addiction becomes his purpose, his novel, his adventure, his great love. The work of art or service that might have been produced is replaced by the drama, conflict, and suffering of the addict's crazy, haunted, shattered life.
@@ -19,18 +20,16 @@ Addiction is not about drugs or alcohol - it is about escape. Quoting "Do the Wo
 - [Is doing the thing you want to be doing an addiction?](#is-doing-the-thing-you-want-to-be-doing-an-addiction)
   - [The logical approach](#the-logical-approach)
   - [Examples from my life](#examples-from-my-life)
+  - [Don't narrow to one passion (the monoculture trap)](#dont-narrow-to-one-passion-the-monoculture-trap)
+  - [In the moment: the 20-minute opportunity-cost check](#in-the-moment-the-20-minute-opportunity-cost-check)
 - [Current Addictions](#current-addictions)
   - [TikTok (Thought Escape)](#tiktok-thought-escape)
 - [Hypo Addictions](#hypo-addictions)
   - [Social Media Analytics](#social-media-analytics)
-    - [LinkedIn friend count](#linkedin-friend-count)
-    - [Stock market price](#stock-market-price)
 - [The silly things I have watched on Vertical Short Form (TikTok, Reels, Shorts)](#the-silly-things-i-have-watched-on-vertical-short-form-tiktok-reels-shorts)
   - [Lifting Videos](#lifting-videos)
   - [Lifting Videos - Antonly](#lifting-videos---antonly)
   - [Retirement Videos](#retirement-videos)
-    - [Like Advice from retired people](#like-advice-from-retired-people)
-    - [Financial Advice](#financial-advice)
   - [People living in their cars](#people-living-in-their-cars)
   - [Truckers](#truckers)
 - [Beaten addictions (for now)](#beaten-addictions-for-now)
@@ -38,7 +37,6 @@ Addiction is not about drugs or alcohol - it is about escape. Quoting "Do the Wo
   - [TikTok (and it's back)](#tiktok-and-its-back)
   - [Covid 19 News](#covid-19-news)
   - [Alcohol](#alcohol)
-    - ["Zero proof" drinks](#zero-proof-drinks)
   - [Thinking about work while at home](#thinking-about-work-while-at-home)
   - [Work Addiction and Success Addiction](#work-addiction-and-success-addiction)
 - [Getting Rid of 'em](#getting-rid-of-em)
@@ -51,36 +49,53 @@ Addiction is not about drugs or alcohol - it is about escape. Quoting "Do the Wo
 
 ## Is doing the thing you want to be doing an addiction?
 
-Here's a framework I've been working through: there's both addiction and there's opportunity cost, and they're different things.
+![Diptych illustration of a raccoon character contrasting addiction versus passion: on one side the raccoon is hunched and consumed by a compulsion that drains it, on the other side the raccoon is engaged and energized by a passion that nourishes it - illustrating the addiction-vs-passion framework](https://github.com/idvorkin/blob/raw/master/blog/raccoon-addiction-vs-passion.webp)
 
-**Addiction:** You DON'T want to do the thing you're doing, but you feel compelled to inside. The rest of your life is suffering as a result.
+Here's the framework I've been working through. Two questions sort it: Am I compelled to do this? And is it negatively impacting my life?
 
-**Opportunity cost:** You DO want to do it, and the rest of your life is suffering because you're choosing this over other things.
+- **Addiction:** Compelled, AND it negatively impacts your life.
+- **Passion:** Compelled, but neutral or positive.
+- **Hobby:** Not compelled — you do it because you choose to.
 
-The key difference is compulsion versus choice. With addiction, you're running from something - escaping thoughts, avoiding feelings, numbing pain. With opportunity cost, you're running toward something you genuinely value, but you're paying a price in other areas of your life.
+The key axis is compulsion. Addiction and passion both have the "can't stand NOT doing it" pull; they only differ on whether the rest of your life is suffering because of it. Hobbies sit outside that pull entirely — you can put them down without feeling relief or loss.
 
 ### The logical approach
 
-Once you identify which one you're dealing with, you can respond appropriately:
+Once you've placed the activity, the response follows:
 
-- **If it's addiction:** The work is to address the underlying thing you're avoiding. What are you escaping from? What pain or fear are you numbing?
-- **If it's opportunity cost:** Weigh the costs logically. Is what you're gaining worth what you're losing? Are you making a conscious trade-off or just drifting into an imbalanced life?
+- **Addiction:** Address what you're escaping. What pain or fear is the compulsion numbing?
+- **Passion:** Weigh the [opportunity cost](/satisfaction). Compulsion plus net-positive is still a trade — what are you giving up, and is it worth it?
+- **Hobby:** Enjoy it. The absence of compulsion is the feature. (See [/hobby](/hobby) for what makes a great one.)
 
 ### Examples from my life
 
-The clearest distinction for me is **TikTok vs Vibe Coding**.
+**TikTok = Addiction.** I don't actually want to scroll. I'm not excited about strangers doing kettlebell lifts or giving retirement advice. But when I have a moment of quiet, or finish one thing before starting the next, I feel compelled to scroll. I'm escaping my thoughts — avoiding the discomfort of being present with my internal experience. I can't stand NOT scrolling in those moments. Compulsion plus my life worse for it.
 
-**TikTok = Addiction**
+**Vibe Coding = Passion.** When I'm in flow building something, solving a problem — I genuinely want to be doing it. I love it. I'm not escaping anything; I'm engaged. The compulsion is real, and there's an opportunity cost — I miss family time, skip workouts, stay up too late — but on balance my life is better with it in it, not worse.
 
-I don't actually want to scroll TikTok. I'm not excited about watching strangers do kettlebell lifts or give retirement advice. But when I have a moment of quiet, or finish one thing before starting the next, I feel compelled to scroll. I'm escaping my thoughts - avoiding the discomfort of being present with my internal experience. I can't stand NOT scrolling in those moments. That's addiction: running from something, not toward something.
+**Magic = Hobby.** I love performing magic, but I'm not compelled to practice it. If I skip a week, I don't feel a pull. I do it because it [reinforces who I am](/hobby) — a maker of smiles and wonder — not because I can't stand not doing it. That absence of compulsion is exactly what makes it a hobby and not a passion.
 
-**Vibe Coding = Opportunity Cost**
+The test: if I had to stop right now, which feels like relief, which feels like loss, and which feels like nothing in particular? TikTok = relief. Vibe coding = loss. Magic = nothing in particular — and that's fine.
 
-When I'm in flow writing code, building something, solving a problem - I genuinely want to be doing it. I love it. I'm not escaping anything; I'm engaged in something meaningful. But the rest of my life suffers - I miss family time, skip workouts, stay up too late. That's opportunity cost: I'm choosing this over other things, and I need to weigh whether the trade-off is worth it.
+**The question to ask:** Am I doing this because I genuinely want to, or because I can't stand NOT doing it — and either way, is the rest of my life better or worse for it?
 
-The test is simple: If I had to stop right now, which one would feel like relief and which would feel like loss? TikTok would be relief. Vibe coding would be loss.
+### Don't narrow to one passion (the monoculture trap)
 
-**The question to ask:** Am I doing this because I genuinely want to, or because I can't stand NOT doing it?
+There's an opportunity cost hiding on the passion side too, and it's not the one you'd expect. The trap isn't a single passion eating your time — it's letting it become your _only_ passion. When I narrow down to one, I overdo it on that one, and the passions I'm not tending atrophy. They wither from neglect.
+
+That's a bigger problem than it looks, because passions break. The one I over-invest in eventually goes down — the project ends, the body gives out, the thing stops loving me back. And when it does, the others can't carry me, because I let them wither while I wasn't looking. I'm down on all fronts at once.
+
+So I keep a portfolio of passions alive, even at lower intensity. When one's down, the others can carry me. Monoculture is fragile; diversification is what lets you take a hit on one front and stay standing.
+
+### In the moment: the 20-minute opportunity-cost check
+
+The trichotomy and the relief-vs-loss test are great in retrospect. In the moment, while I'm already compelled and three videos deep, I need something faster. Set a 20-minute timer. When it fires, ask three questions:
+
+1. What's the opportunity cost of doing this right now?
+2. What would I rather be doing?
+3. Am I sad I'm missing the other thing?
+
+The third question is the real signal. Compelled + something else would have been preferable + sad about missing it → leaning **Addiction**. Compelled + this is exactly what I wanted, nothing else preferable, no sadness → leaning **Passion**. The check works because the compulsion lies to you about what you want; the sadness doesn't.
 
 ## Current Addictions
 
@@ -91,7 +106,6 @@ I recently became aware of something subtle: my urge to scroll TikTok isn't abou
 When I sit down and have a moment of quiet, or when I finish one thing and before I start the next, there's this pull to open TikTok. Not because I want to watch content, but because I don't want to sit with whatever's on my mind. The scrolling gives me something external to focus on so I don't have to be present with my internal experience.
 
 This is textbook addiction as escape. I'm not seeking pleasure - I'm avoiding discomfort. The thing I'm escaping from isn't even necessarily bad thoughts or painful feelings. Sometimes it's just... thoughts. The act of having an inner mental life feels uncomfortable, so I scroll.
-
 
 ## Hypo Addictions
 
@@ -165,7 +179,7 @@ This comes and goes depending on how well/poorly work is going. But I used to be
 
 ### Work Addiction and Success Addiction
 
-Workaholism is one of the trickiest addictions because it looks productive. People praise you for it, you get promoted, you build things. But using the [addiction vs opportunity cost framework](#is-doing-the-thing-you-want-to-be-doing-an-addiction) helps clarify what's really happening.
+Workaholism is one of the trickiest addictions because it looks productive. People praise you for it, you get promoted, you build things. But using the [addiction/passion/hobby trichotomy](#is-doing-the-thing-you-want-to-be-doing-an-addiction) helps clarify what's really happening.
 
 **Signs it's addiction (not just hard work):**
 
@@ -175,14 +189,14 @@ Workaholism is one of the trickiest addictions because it looks productive. Peop
 - The rest of your life is suffering - relationships, health, hobbies all deteriorating
 - You feel "out of control" - you can't stop even when you know you should
 
-**When it's opportunity cost (not addiction):**
+**When it's passion (not addiction):**
 
 - You DO want to work on the problem - it's genuinely interesting
 - You're making conscious trade-offs about where to spend your time
 - You could stop if you chose to, you're just choosing not to
 - You're aware of what you're sacrificing and weighing whether it's worth it
 
-The test: Can you stop? If you genuinely can't stop working even when you want to, even when you know it's hurting you - that's addiction. If you can stop but choose not to because the work matters to you more than the alternatives right now - that's opportunity cost.
+The test: Can you stop? If you genuinely can't stop working even when you want to, even when you know it's hurting you - that's addiction. If you can stop but choose not to because the work matters to you more than the alternatives right now - that's passion (with an opportunity cost attached).
 
 **Success Addiction**
 
@@ -219,16 +233,18 @@ Perhaps, boredom is the [pain](/mental-pain) of lack of connection, and addictio
 
 Being addicted to flow and production sounds like a perfect hack. After all, isn't that the goal? Being productive?
 
-Not quite. The [addiction vs opportunity cost framework](#is-doing-the-thing-you-want-to-be-doing-an-addiction) applies here too:
+Not quite. The [addiction/passion/hobby trichotomy](#is-doing-the-thing-you-want-to-be-doing-an-addiction) applies here too:
 
 **Productive work as addiction:**
+
 - You're using productivity to escape emotional discomfort
 - You can't stop working even when you want to
 - You're "skipping the thing you should be doing" (family time, rest, addressing underlying issues) to stay busy
 - The work feels compulsive, not joyful
 - You're running from something, not toward something
 
-**Productive work as opportunity cost:**
+**Productive work as passion:**
+
 - You genuinely love the flow state and the work itself
 - You're making conscious trade-offs about time allocation
 - You could stop if you chose to

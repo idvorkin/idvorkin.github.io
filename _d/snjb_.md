@@ -5,7 +5,10 @@ permalink: /snjb
 notitle: true
 ---
 
-Zach built Steve's Night Jungle and Bar in twee, here's our [port to python](https://github.com/idvorkin/idvorkin.github.io/blob/master/pysrc/snjb.py)!
+My son Zach wrote Steve's Night Jungle and Bar, his own choose-your-own-adventure game, in [Twine](https://twinery.org)'s twee format. I loved it so much I [ported it to Python](https://github.com/idvorkin/idvorkin.github.io/blob/master/pysrc/snjb.py) so it could live here on the blog, running in your browser via [Brython](https://brython.info). Play it below.
+
+<script src="https://cdn.jsdelivr.net/npm/brython@3/brython.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/brython@3/brython_stdlib.js"></script>
 
 <script>
     window.addEventListener('load', (_) => brython() )

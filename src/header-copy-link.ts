@@ -513,10 +513,58 @@ function getOrCreateHeaderId(header: HTMLElement): string {
 }
 
 /**
- * Gets the first non-empty paragraph of content after a header
+ * Maximum length for share/copy preview text. Telegram and iMessage both render
+ * ~600 characters cleanly, which is enough for ~3-4 bullets of real content
+ * without forcing the TinyURL off-screen.
  */
-function getFirstParagraphAfterHeader(header: HTMLElement): string {
+const PREVIEW_MAX_LENGTH = 600;
+
+/**
+ * Result of extracting a preview from the content after a header.
+ *
+ * `hasMore` is true when the section contains additional content beyond
+ * what `text` captured — either extra list items we skipped to keep the
+ * preview under cap, or additional paragraphs/lists before the next
+ * header. The caller uses this to append an ellipsis so recipients know
+ * the preview is a snippet, not the whole section.
+ */
+interface PreviewExtraction {
+  text: string;
+  hasMore: boolean;
+}
+
+/**
+ * Gets the first non-empty paragraph of content after a header.
+ *
+ * Returns `{ text, hasMore }`. Truncation of oversized text is the caller's
+ * responsibility (see `truncateText`). Previously this function pre-truncated
+ * at 500 chars, then `getPreviewText` re-truncated at 400 chars, yielding
+ * double-truncation that clipped bullet lists mid-sentence. See issue #487.
+ *
+ * `hasMore` is set to true when further non-empty content exists in the
+ * same section (dropped bullets, or additional paragraphs/lists before
+ * the next header) so the caller can signal "snippet, not whole post"
+ * to the recipient. See share-link feedback 2026-04-18.
+ */
+function getFirstParagraphAfterHeader(header: HTMLElement): PreviewExtraction {
   let nextElement = header.nextElementSibling;
+
+  const hasMoreContentAfter = (startFrom: Element | null): boolean => {
+    let cursor: Element | null = startFrom;
+    while (cursor) {
+      if (cursor.tagName.match(/^H[1-6]$/)) {
+        return false;
+      }
+      if (cursor.tagName === "P" || cursor.tagName === "UL" || cursor.tagName === "OL") {
+        const content = (cursor.textContent || "").trim();
+        if (content.length > 0) {
+          return true;
+        }
+      }
+      cursor = cursor.nextElementSibling;
+    }
+    return false;
+  };
 
   // Look for the first non-empty content before the next header
   while (nextElement) {
@@ -529,16 +577,22 @@ function getFirstParagraphAfterHeader(header: HTMLElement): string {
     if (nextElement.tagName === "P") {
       const text = (nextElement.textContent || "").trim();
       if (text.length > 0) {
-        // Found non-empty paragraph - truncate if too long
-        return text.length > 500 ? `${text.substring(0, 497)}...` : text;
+        const hasMore = hasMoreContentAfter(nextElement.nextElementSibling);
+        return { text, hasMore };
       }
     }
 
-    // If it's a list (UL or OL), get text from the list items
+    // If it's a list (UL or OL), get text from the list items.
+    // Keep whole bullets intact: stop accumulating as soon as adding the
+    // next bullet would exceed PREVIEW_MAX_LENGTH (with a small safety
+    // margin for the joining newlines and bullet markers). We always keep
+    // at least the first bullet, even if it alone exceeds the cap — the
+    // outer truncateText will trim that case gracefully.
     if (nextElement.tagName === "UL" || nextElement.tagName === "OL") {
       const listItems = nextElement.querySelectorAll("li");
       const itemTexts: string[] = [];
       let totalLength = 0;
+      let droppedItems = false;
 
       for (const li of Array.from(listItems)) {
         // Only get direct text content, not nested lists
@@ -554,43 +608,92 @@ function getFirstParagraphAfterHeader(header: HTMLElement): string {
           .join(" ")
           .trim();
 
-        if (text.length > 0) {
-          itemTexts.push(`• ${text}`);
-          totalLength += text.length;
-          if (totalLength > 400) break; // Stop if we have enough text
+        if (text.length === 0) continue;
+
+        const bulletLen = text.length + 2; // "• " prefix
+        // If we already have at least one bullet and adding this one would
+        // blow the cap, stop here and let the outer truncator append an
+        // ellipsis. This keeps bullet boundaries clean.
+        if (itemTexts.length > 0 && totalLength + bulletLen + 1 > PREVIEW_MAX_LENGTH) {
+          droppedItems = true;
+          break;
         }
+
+        itemTexts.push(`• ${text}`);
+        totalLength += bulletLen + 1; // +1 for the joining newline
       }
 
       if (itemTexts.length > 0) {
-        // Join with newlines for better formatting
-        const combinedText = itemTexts.join("\n");
-        return combinedText.length > 500 ? `${combinedText.substring(0, 497)}...` : combinedText;
+        const hasMore = droppedItems || hasMoreContentAfter(nextElement.nextElementSibling);
+        return { text: itemTexts.join("\n"), hasMore };
       }
     }
 
     nextElement = nextElement.nextElementSibling;
   }
 
-  return "";
+  return { text: "", hasMore: false };
 }
 
 /**
- * Truncates text to a maximum length, preserving word boundaries
+ * Truncates text to a maximum length, preferring sentence boundaries
+ * (`. `, `! `, `? `), then bullet boundaries (`\n•`), then word boundaries,
+ * and finally a hard cut. Appends `...` when truncation occurs.
+ *
+ * Sentence-aware truncation keeps shared previews readable: the old
+ * word-boundary-only version would clip mid-sentence inside a quote like
+ * `• CodeRabbit: "Your code...`, which looks broken to recipients. See #487.
  */
-function truncateText(text: string, maxLength = 400): string {
+function truncateText(text: string, maxLength = PREVIEW_MAX_LENGTH): string {
   if (text.length <= maxLength) {
     return text;
   }
 
-  // Truncate to maxLength and find the last space
   const truncated = text.substring(0, maxLength);
-  const lastSpace = truncated.lastIndexOf(" ");
 
+  // Prefer a sentence end (period/exclamation/question followed by space or
+  // newline) in the last ~40% of the window. Searching too early would
+  // throw away too much content.
+  const minBoundary = Math.floor(maxLength * 0.6);
+  const sentenceEnders = [". ", "! ", "? ", ".\n", "!\n", "?\n"];
+  let bestBoundary = -1;
+  for (const ender of sentenceEnders) {
+    const idx = truncated.lastIndexOf(ender);
+    if (idx >= minBoundary && idx + ender.length > bestBoundary) {
+      // +1 so we include the terminal punctuation but drop the trailing space/newline.
+      bestBoundary = idx + 1;
+    }
+  }
+  if (bestBoundary > 0) {
+    return `${truncated.substring(0, bestBoundary).trimEnd()}...`;
+  }
+
+  // Next, try a bullet boundary (newline followed by a bullet marker).
+  const bulletBoundary = truncated.lastIndexOf("\n•");
+  if (bulletBoundary >= minBoundary) {
+    return `${truncated.substring(0, bulletBoundary).trimEnd()}...`;
+  }
+
+  // Fall back to word boundary.
+  const lastSpace = truncated.lastIndexOf(" ");
   if (lastSpace > 0) {
     return `${truncated.substring(0, lastSpace)}...`;
   }
 
   return `${truncated}...`;
+}
+
+/**
+ * Appends `...` to the preview text if it doesn't already end with one and
+ * there's more content in the post beyond the snippet. Signals "this is a
+ * snippet, not the whole section" to share recipients so they know to click
+ * through. `truncateText` already handles the mid-cut case; this handles
+ * the short-complete-paragraph-but-more-follows case.
+ */
+function withMoreIndicator(text: string, hasMore: boolean): string {
+  if (!hasMore) return text;
+  if (text.endsWith("...") || text.endsWith("…")) return text;
+  return `${text}...`;
 }
 
 /**
@@ -602,15 +705,16 @@ function getPreviewText(headerId?: string): string {
     const header = document.getElementById(headerId);
     if (header) {
       // Try to get text from the first paragraph after the header
-      const paragraphText = getFirstParagraphAfterHeader(header);
+      const { text: paragraphText, hasMore: paragraphHasMore } = getFirstParagraphAfterHeader(header);
       if (paragraphText) {
-        return truncateText(paragraphText);
+        return withMoreIndicator(truncateText(paragraphText), paragraphHasMore);
       }
 
       // Try to get text from any content elements after the header
       let nextElement = header.nextElementSibling;
       const textParts: string[] = [];
       let charCount = 0;
+      let moreAfter = false;
 
       while (nextElement && charCount < 400) {
         // Stop if we hit another header
@@ -635,8 +739,20 @@ function getPreviewText(headerId?: string): string {
         nextElement = nextElement.nextElementSibling;
       }
 
+      // If we stopped scanning early (hit 400 char cap) but there's still
+      // unscanned content before the next header, flag moreAfter.
+      let scan = nextElement;
+      while (scan && !moreAfter) {
+        if (scan.tagName.match(/^H[1-6]$/)) break;
+        if ((scan.textContent || "").trim().length > 0) {
+          moreAfter = true;
+          break;
+        }
+        scan = scan.nextElementSibling;
+      }
+
       if (textParts.length > 0) {
-        return truncateText(textParts.join(" "));
+        return withMoreIndicator(truncateText(textParts.join(" ")), moreAfter);
       }
     }
   }
@@ -889,8 +1005,12 @@ function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): voi
     }
   };
 
-  // Add slight delay to avoid immediate closing
+  // Add slight delay to avoid immediate closing. Guard against `document`
+  // being torn down before the timeout fires — vitest + happy-dom tears
+  // down the DOM between tests, and a late-firing setTimeout from an
+  // earlier test would throw `ReferenceError: document is not defined`.
   const timeoutId = setTimeout(() => {
+    if (typeof document === "undefined") return;
     document.addEventListener("click", handleOutsideClick, true);
     cleanupFunctions.push(() => document.removeEventListener("click", handleOutsideClick, true));
   }, 100);

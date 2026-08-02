@@ -35,7 +35,7 @@ You don't really understand something until you can play with it. That's the pre
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-{% include alert.html content="Why you should be doing this now: AI made explainers both trivially easy to build AND critically necessary. If you're [CHOPing](/chop) and not building explainers, you're accumulating [cognitive debt](/ai-native-manager#cognitive-debt) you'll never pay down." style="warning" %}
+{% include alert.html content="Why you should be doing this now: AI made explainers both trivially easy to build AND critically necessary. If you're [CHOPing](/chop) and not building explainers, you're accumulating [cognitive debt](/ai-native-vocab#cognitive-debt) you'll never pay down." style="warning" %}
 
 ## Why Now: AI Changed Everything
 
@@ -53,7 +53,7 @@ The cost of building an explainer dropped from "major project" to "about the sam
 
 ### AI Makes Explainers Critically Necessary
 
-Here's the twist: the same AI that makes explainers easy to build is also creating an unprecedented need for them. AI writes code faster than humans can comprehend it. [Cognitive debt](/ai-native-manager#cognitive-debt) — the understanding gap between what your system does and what your team understands — is accumulating at a rate we've never seen before.
+Here's the twist: the same AI that makes explainers easy to build is also creating an unprecedented need for them. AI writes code faster than humans can comprehend it. [Cognitive debt](/ai-native-vocab#cognitive-debt) — the understanding gap between what your system does and what your team understands — is accumulating at a rate we've never seen before.
 
 Someone in [CHOP](/chop) mode ships ten features in a week. The code works. But can anyone on the team explain _why_ it works? What the design decisions were? What will break if you change it? That's cognitive debt, and it compounds. The team that can't explain what they shipped can't confidently change it — and that's basically the definition of legacy software: software you're afraid to change.
 
@@ -87,11 +87,12 @@ In [CHOW](/chow) (Chat-Oriented Writing), the written artifact is a side effect 
 
 ## Explainers I've Built
 
-| Explainer                                                                    | What It Does                                                             | Instead Of                  |                                                                                         |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------ | --------------------------- | --------------------------------------------------------------------------------------- |
-| [Monitor Explainer](https://monitor-explorer.surge.sh/)                      | Explains monitor dimensions, aspect ratios, and the "p" vs "K" confusion | Reading spec sheets         | [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer)           |
-| [How Long Since AI](https://idvorkin-how-long-since-ai.surge.sh/)            | Track time since AI milestones — ChatGPT, GPT-4, Claude, Gemini          | Searching for release dates | [<i class="fa fa-github"></i>](https://github.com/idvorkin/how-long-since-ai)           |
-| [Religion Evolution Explorer](https://religion-evolution-explorer.surge.sh/) | Interactive timeline of how religions evolved and influenced each other  | Reading history books       | [<i class="fa fa-github"></i>](https://github.com/idvorkin/religion-evolution-explorer) |
+| Explainer                                                                    | What It Does                                                                 | Instead Of                        |                                                                                         |
+| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | --------------------------------- | --------------------------------------------------------------------------------------- |
+| [Monitor Explainer](https://monitor-explorer.surge.sh/)                      | Explains monitor dimensions, aspect ratios, and the "p" vs "K" confusion     | Reading spec sheets               | [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer)           |
+| [How Long Since AI](https://idvorkin-how-long-since-ai.surge.sh/)            | Track time since AI milestones — ChatGPT, GPT-4, Claude, Gemini              | Searching for release dates       | [<i class="fa fa-github"></i>](https://github.com/idvorkin/how-long-since-ai)           |
+| [Religion Evolution Explorer](https://religion-evolution-explorer.surge.sh/) | Interactive timeline of how religions evolved and influenced each other      | Reading history books             | [<i class="fa fa-github"></i>](https://github.com/idvorkin/religion-evolution-explorer) |
+| [Dolt Explainer](https://idvorkin-ai-tools.github.io/dolt-explainer/)        | How beads task state and git code share one GitHub repo via `refs/dolt/data` | Staring at `git ls-remote` output | [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/dolt-explainer)     |
 
 The pattern is the same every time: take something that's hard to grasp as text, ask AI to build an interactive version, and suddenly it makes sense. These aren't prettier presentations — they're fundamentally different experiences. You explore at your own pace, discover things the author didn't explicitly write, and actually retain what you learned.
 

@@ -5,6 +5,7 @@ permalink: /ai-bestie
 redirect_from:
   - /bestiegpt
   - /aGPT
+ai_default_image: true
 ---
 
 My best friend and I communicate over chat lots (33,60,101 messages/day P50, P75, P95). I have years of chat history, and so this seemed like a super fun way to get deeper into ML. This is created and shared with his permission.

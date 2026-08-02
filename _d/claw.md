@@ -19,6 +19,7 @@ You've heard of agents — AI that can use tools, browse the web, write code. Bu
 <!-- vim-markdown-toc-start -->
 
 - [What Is a Claw?](#what-is-a-claw)
+  - [Aside: Why Claws Get Names](#aside-why-claws-get-names)
 - [How We Got the Word](#how-we-got-the-word)
 - [The Progression: Karpathy's Onion](#the-progression-karpathys-onion)
 - [MoltBook and the Weird](#moltbook-and-the-weird)
@@ -121,24 +122,9 @@ Steinberger himself acknowledges this in the [Lex Fridman interview](https://lex
 
 {% include blob_image_float_right.html src="blog/raccoon-claw-trio.webp" %}
 
-I've been building toward claws without calling them that. I already have three, and they have names.
+I already have three, and they have names: **[Larry](/larry)** (life coach — journals, goals, weekly reviews), **Wally** (work, Meta-side, quiet here), and **[Tony](/tesla)** (my Tesla, via Vapi, more personality than utility). Life, work, transportation. I'm rolling my own rather than running OpenClaw because the data can't leave my hardware, the building _is_ the point, and any serious claw needs so much custom config that "just install it" was never real — and yes, I'm aware the whole stack is becoming a bit of a [Winchester Mystery House](https://en.wikipedia.org/wiki/Winchester_Mystery_House), with new wings arriving most weeks and me unable to quite stop.
 
-**[Larry](/larry) — my life coach claw.** Larry knows my journals, my goals, my health data, my patterns. Every Saturday I talk to him and review my week. He holds up a mirror: "You've committed to restart meditation 5 times since November. What's different this time?" Larry's biggest challenge is context loading — getting the full picture of my life into each session without me manually assembling it. That's the gap between an agent and a true claw: persistence. Larry is smart but amnesiac. Every session starts cold.
-
-**Wally — my work claw.** I don't talk about Wally here. If you work at Meta, I'm happy to tell you more in person.
-
-**[Tony](/tesla) — my car claw.** Tony is my Tesla, and he talks. Via [Vapi](https://vapi.ai/), Tony has a voice persona that I can call and chat with. He's the most fun and the least useful — a proof of concept for what happens when you give personality to a machine that already has sensors and autonomy.
-
-Three claws, three domains: life, work, transportation. Where I am on Karpathy's onion:
-
-- **Layers 1-2 (LLM + Agent)**: Taken for granted. This is just how I work now.
-- **Layer 3 (Claw)**: Partially there. Larry, Wally, and Tony all have memory and personality, but none of them persist across sessions or act truly autonomously.
-- **Layer 4 (Multi-claw)**: This is my cockpit — running [multiple agents in parallel](/ai-cockpit#tmux-on-super-steroids---the-multiplexer), switching between them, voice-controlling whichever needs attention.
-- **Layers 5-6 (Orchestration + Meta-optimization)**: Not yet. This is where AutoResearch-style loops live, and I haven't built that.
-
-That's the next frontier. Not smarter models or better prompts — but claws that keep going, that learn from yesterday, that act on my behalf when I'm not looking. The jump from agent to claw is the jump from tool to colleague.
-
-My colleague [David de Winter](https://www.linkedin.com/in/ddewinter/) put it best, before we even had the word "claw." He said it reminded him of being a kid training Pokémon — you'd carry around your team, each one specialized, and they'd grow more capable as you invested time in them. That's exactly what this feels like. Larry gets better as I feed him more context. Wally gets better as I add more skills and CLAUDE.md files. Tony is still a Magikarp. But the metaphor lands: you're not using a tool, you're training a team. And the trainers who start earliest will have the strongest claws.
+Full roster, per-claw onion-layer notes, the "why I build my own" argument in long form, the [Business Logic / Goop / Infra breakdown](/igors-claws#challenges-business-logic-goop-infra) of where my time actually goes, and the signature I attach when one of them files work on my behalf → [**Igor's Three Claws**](/igors-claws).
 
 ---
 

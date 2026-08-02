@@ -2,6 +2,7 @@
 layout: post
 title: "Igor's AI Journal"
 permalink: /ai-journal
+ai_default_image: true
 ---
 
 A journal of random explorations in AI. Keeping track of them so I don't get lost
@@ -18,10 +19,26 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-08-02](#2026-08-02)
+    - [Herdr: The Agent Multiplexer My Tmux Rig Was Trying to Become](#herdr-the-agent-multiplexer-my-tmux-rig-was-trying-to-become)
+  - [2026-06-22](#2026-06-22)
+    - [Steve Yegge's Flat Curve Society: The Plateau Is Good News for Engineers](#steve-yegges-flat-curve-society-the-plateau-is-good-news-for-engineers)
+  - [2026-06-13](#2026-06-13)
+    - [My API Key Was Public for a Year](#my-api-key-was-public-for-a-year)
+  - [2026-05-31](#2026-05-31)
+    - [Friction = Focus: When Attention Stops Being a Proxy for Value](#friction--focus-when-attention-stops-being-a-proxy-for-value)
+  - [2026-05-11](#2026-05-11)
+    - [AI Helps Me Think by Showing Me Options](#ai-helps-me-think-by-showing-me-options)
+  - [2026-05-10](#2026-05-10)
+    - [Free Doesn't Save You from the Wrong Problem](#free-doesnt-save-you-from-the-wrong-problem)
+  - [2026-05-09](#2026-05-09)
+    - [Dylan Patel on the Supply and Demand of AI Tokens](#dylan-patel-on-the-supply-and-demand-of-ai-tokens)
+  - [2026-04-17](#2026-04-17)
+    - [One Repo, One Token: The Closest You Can Get to Write-Only on GitHub](#one-repo-one-token-the-closest-you-can-get-to-write-only-on-github)
   - [2026-04-13](#2026-04-13)
     - [My Bot Wrote, Their Bot Reviewed, My Bot Pushed Back, Their Bot Said "Oops"](#my-bot-wrote-their-bot-reviewed-my-bot-pushed-back-their-bot-said-oops)
   - [2026-04-12](#2026-04-12)
-    - [The $230 Week: When Cheap Coding Isn't](#the-230-week-when-cheap-coding-isn-t)
+    - [The $230 Week: When Cheap Coding Isn't](#the-230-week-when-cheap-coding-isnt)
     - [Two-Process Telegram: When the Platform Is the Bug](#two-process-telegram-when-the-platform-is-the-bug)
   - [2026-04-01](#2026-04-01)
     - [The Winchester Mystery House of Software: When Code Gets Too Cheap to Care About](#the-winchester-mystery-house-of-software-when-code-gets-too-cheap-to-care-about)
@@ -244,6 +261,133 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2026-08-02
+
+#### Herdr: The Agent Multiplexer My Tmux Rig Was Trying to Become
+
+- **TOP Takeaway**: [Herdr](https://herdr.dev) ([GitHub](https://github.com/herdrdev/herdr)) is what I'd been hand-building on top of tmux for the last year — a multiplexer that knows what an agent is. Their one-liner nails the difference: tmux persists terminals; Herdr persists agent workspaces and understands agent state.
+  - It keeps the tmux virtues I care about: real PTYs on a server that survives closing the laptop, detach/reattach over plain SSH, and it runs inside the terminal I already use. Single binary, no Electron, no account, no telemetry.
+- **The paper trail proves I wanted this**: I spent the last year teaching tmux about agents by hand — [a Rust pane picker](#rust-tmux_helper-10x-speedup-from-python) because stock navigation falls apart past 8 sessions, [a config overhaul](#tmux-config-overhaul) that auto-renames windows to the running process, [a Stream Deck plugin](#stream-deck-plugin-in-30-minutes) for pane hopping. In [/ai-cockpit](/ai-cockpit#tmux-on-super-steroids---the-multiplexer) I called tmux "the backbone" and wrote down the integration I wanted next: something that shows every agent session with its status and drops me into the one that needs me. Herdr ships that as the core product.
+- **What tmux can't see** (the actual delta):
+  - **Agent state is semantic**: every workspace shows blocked / working / done / idle. Tmux knows a pane produced output; Herdr knows the agent is stuck on a permission prompt. My herd as I write this: 9 workspaces — swing-analyzer, stack-picker, and chop-conventions working; barry done; blog and settings idle.
+  - **An API shaped like agents, usable by agents**: `herdr agent read | prompt | send-keys | wait` over a socket. `wait` blocks until an agent reaches a state you name, so a supervisor — human or agent — polls nothing.
+  - **Worktrees are first-class**: `herdr worktree create` is branch + git worktree + workspace in one move. This entry is the punchline: written by a Claude running in the worktree Herdr created off my blog repo, while two tabs over a sibling workspace fixes `rmux_helper` — my tmux helper.
+- **The pen is not the herd**: the multiplexer solves terminals; conventions solve behavior. Every agent in every worktree loads the same [chop-conventions skills](https://github.com/idvorkin/chop-conventions/tree/cf3f6dc93db8dbd310a48dd570e4200dc54544d3/skills) — `up-to-date` to sync before touching a repo, `pr-hygiene` to close out review debt before ending a session, `delegate-to-other-repo` to spawn work sideways. Herdr keeps N agents alive; the skills are why N agents behave like one team instead of N loose cannons.
+- **The open question**: in [/how-igor-chops](/how-igor-chops) I asked whether my elaborate tmux workflows were "the buggy whip factory of 2025". The answer arrived in under a year. Next on the block: `rmux_helper` and the Stream Deck tmux keys — how much of the hand-built rig survives to 2027?
+
+### 2026-06-22
+
+#### Steve Yegge's Flat Curve Society: The Plateau Is Good News for Engineers
+
+- **TOP Takeaway**: [Steve Yegge argues](https://steve-yegge.medium.com/the-flat-curve-society-36c8b01eb33b) that AI capability keeps climbing exponentially, but most of us will _experience_ a flat curve — partly because frontier models get locked down "like nuclear weapons," and partly because we each hit two personal ceilings: the **Demand Horizon** (our problems aren't hard enough to feel the gains) and the **Discernment Horizon** (the output gets better than our ability to check it). His reframe: a plateau isn't failure, it's stable ground you can finally build on.
+- **The two horizons** (the part that stuck):
+  - **Demand Horizon** — you stop perceiving model improvements because your problems don't stretch them. Yegge's antidote: keep a stash of "pocket evals" — unsolved problems you throw at each new model to actually feel the delta.
+  - **Discernment Horizon** — the darker ceiling: "past some level of capability there is no human alive who can verify the model output. Everyone has a discernment horizon, even Dario." Once you're past it you can't tell if the model is right, because checking the work is itself beyond you. Ties straight to my [When AI Shows Its Work: Verification as Trust](#when-ai-shows-its-work-verification-as-trust) and the [review-cost < generation-cost](#review-cost--generation-cost--prs-were-net-win) thread — verification is the bottleneck, and it has a personal horizon.
+- **AI literacy is measurable** — citing Netflix's Ezra Savard, he buckets people by _tokens burned per day_: 0M (non-users) → 4M (single-agent, synchronous) → 12–15M (multi-agent, async). The kicker: people **jump cohorts in ~5 hours** of hands-on training on _real_ work, manager in the room, during work hours. "AI Literacy does not come for free. The only thing you get for free is AI Anxiety."
+- **Advanced literacy flips from max-spend to min-waste** — once you're multi-agent the game stops being "use more tokens" and becomes routing each task to the _minimum capable model_. Same lesson the [$230 Week](#the-230-week-when-cheap-coding-isnt) and [Dylan Patel on token supply/demand](#dylan-patel-on-the-supply-and-demand-of-ai-tokens) beat into me — tokens are a budget, and waste is the enemy.
+- **SaaS survives the plateau** — counter to "AI eats all software": stable model capability tilts buy-vs-build back toward _buy_, because full AI rewrites stay expensive and risky, so existing SaaS keeps its moat. A more optimistic counterpoint to his own [Software Survival 3.0](#software-survival-30---steve-yegges-framework-for-ai-era-software) and the [AI Vampire / who-captures-the-10x](#steve-yegges-ai-vampire---who-captures-the-10x) framing.
+- **Why I'm keeping this**: it's the most _hopeful_ Yegge piece in a while — "a plateau lets us set up a camp and start building. We've been on unstable ground." It reframes the anxiety (am I keeping up?) into a craft question (am I building literacy + verification habits on the rungs I already have?).
+
+### 2026-06-13
+
+#### My API Key Was Public for a Year
+
+- **TOP Takeaway**: A live Anthropic API key of mine sat in a public GitHub repo for about a year. Auto-capture tooling that commits session logs to a public repo is a landmine — one of my chop-logs hooks saved an entire code-review session, `ps`/env dump and all, straight into a _tracked, public_ repo. Rotate the key, gitignore the logs (or add a secret filter), and assume any key that's been public for a year is already harvested.
+- **The Problem**: I was deep in a debugging session — [Gas City](/gas-city) was down — when a `ps` dump spilled every API key into the transcript, because the city's tmux env exports them. My shell pushes ~20 secrets into _every_ shell via [`export_secrets`](https://github.com/idvorkin/settings/blob/9025a60cccdfc3f41e01c88c7764c39303b2ced2/shared/zsh_include.sh#L389-L420) — `ANTHROPIC_API_KEY` and `ASSEMBLYAI_API_KEY` among them. Seeing them on screen made me nervous, so I asked the obvious question: "did we leak these anywhere?"
+- **What Worked** — the agent did the forensic grind I'd never sit down and do by hand:
+  - **Found it**: turned up the live Anthropic key in my public [`idvorkin/Settings`](https://github.com/idvorkin/settings) repo, inside an auto-captured code-review log [committed 2025-05-26 in `36b971f`](https://github.com/idvorkin/settings/blob/36b971f81d7a4d6ec2c08539de1995874d72a12d/zz-chop-logs/2025-05-26_17-06-code-review-y-py-vs-clean-code-principles.md). Public for ~12 months.
+  - **Proved it was live**: a read-only `GET /v1/models` returned `200`. A working key, not an expired one.
+  - **Mapped the blast radius**: diffed every value in my private `secretBox.json` against the public repo's _full_ git history, plus a secret-pattern sweep across tracked files and history. Found a second key — an AssemblyAI key — in the same commit. Everything else clean.
+  - **Confirmed the fix took**: I revoked the key in the console; the agent re-probed → `401`. Dead, verified.
+  - This is the journal-worthy part: diffing a year of public history against a private secret store, validating a key against a live endpoint, then confirming the revocation — tedious, systematic, exactly what an agent is good at. By hand I'd have eyeballed it and moved on.
+- **What Didn't** — the uncomfortable parts:
+  - **The key was never even needed.** Claude Code runs on my Max subscription; the inherited env key was silently forcing per-token API billing instead of my plan — the same [cheap-coding-isn't-cheap dynamic from the $230 Week](#the-230-week-when-cheap-coding-isnt). Dropping it fixed the leak _and_ the billing.
+  - **The auto-capture pipeline had no secret filter.** A hook that commits session transcripts to a tracked public repo is the exact opposite of the [one-token-one-repo blast-radius discipline](#one-repo-one-token-the-closest-you-can-get-to-write-only-on-github) — an unscoped, unfiltered firehose into public. Mine ran for a year before I noticed.
+  - And the honest part: a key public that long should be assumed harvested. Revoking it closes the door now; I have no idea who already walked through.
+
+### 2026-05-31
+
+#### Friction = Focus: When Attention Stops Being a Proxy for Value
+
+- **TOP Takeaway**: [hmmz.org's "attention hazard" post](https://thoughts.hmmz.org/2026-05-31.html) — _"a tool producing a cheap reward with minimal input and no friction can only be a liability."_ "Friction = focus, focus = product." I agree, hard. The sharpest version in my own terms: **when production gets this cheap, it collapses into [consumption](/produce-consume) — and loses the footprint that made it worth anything.** I've argued production leaves a trace and consumption doesn't; effortless AI is the case where production _stops_ leaving a trace. Fifty half-built apps leave about as much behind as a thousand hours of TikTok: nothing.
+- **His argument** (distilled): low-friction AI amplifies distraction instead of enabling work. ~50 projects, almost all unmaintained "quick scripts" that spiraled; one accidentally got traffic and became an obligation. People run three screens of unrelated projects they'll never maintain; teams stand up "five rooms to manage their agents." A voice-to-blog pipeline produced "unbridled garbage" because effortlessness killed commitment. Handwriting survives _because_ it has friction.
+- **Where it lands for me** (the uncomfortable part): I'm the fifty-projects guy, and I literally built [a multi-agent city](/gas-city) — the "five rooms managing agents" he recoils from. I've even named the genre: [the Winchester Mystery House of software](#the-winchester-mystery-house-of-software-when-code-gets-too-cheap-to-care-about), staircases to nowhere because code got too cheap to care. I'm that guy — and that's OK. The answer isn't less AI, it's doubling down on [begin with the end in mind](/end-in-mind).
+- **What actually saves me from the critique** (and it isn't willpower): the friction is already in my system, by design. I journal by **hand** on a Kindle Scribe every morning ([DS20](/mortality-software)) before any screen — the slow input _is_ the point; the day's plan gets written, not generated. This post made me see that ritual isn't nostalgia. It's the friction that keeps my production from decaying into consumption.
+- **Takeaway 1 — the most important thing is exactly what it's always been: [begin with the end in mind](/end-in-mind).** AI changed the cost of building, not the question of what's worth building. [Essentialism](/affirmations#an-essentialist-know-essential-provide-context-prioritize-ruthlessly) — "Know Essential. Prioritize Ruthlessly." — is just _choosing what's worth producing_, and that's the whole game once production is free.
+- **Takeaway 2 — there's still real value in doing a lot of reps; that's the path to mastery.** Like reps at the gym. But don't confuse reps at the gym with producing valuable software — the reps build the practitioner, they aren't the same as shipping something that leaves a footprint. Cheap output doesn't retire the reps, and the judgment they build is exactly what's scarce once everyone can generate everything.
+- **Side note — non-fiction reading wears the best disguise.** The same trap hits _reading_: it feels like learning, but consumption is still consumption — "reading a thousand articles doesn't make you a writer" ([/produce-consume](/produce-consume)). Non-fiction is just shorts and TikTok with footnotes. The honest question isn't "am I reading?" but "am I _producing_ from it, or just consuming in a respectable outfit?"
+
+Source: ["AI is an attention hazard"](https://thoughts.hmmz.org/2026-05-31.html), hmmz.org, 2026-05-31.
+
+### 2026-05-11
+
+#### AI Helps Me Think by Showing Me Options
+
+- **The lesson**: when the work involves a creative or judgment call I'll live with, AI should **widen the option space, not narrow it**. One "best" answer to an aesthetic question is arbitrary; five options surface what I actually value. I often can't articulate my taste in the abstract — but I can tell you which raccoon I want when I see them side-by-side. AI's job here is **[helping me think](/ai-second-brain)** by widening the field, not closing it.
+- **What happened**: spent a chunk of today picking [7 Habits raccoon illustrations](/7-habits) for my blog. Instead of asking AI for "the best" raccoon per chapter, I had it generate 5 variations per habit (35 cells total) and built a click-to-pick HTML sheet. localStorage persists my picks, JSON copy button at the bottom. ~15 minutes of human picking and the right raccoons were obvious — much faster than iterating one prompt at a time.
+- **Why this generalizes**: the same shape works for code abstractions, copy variations, naming, design alternatives, decision framing — anything where "best" is taste, not truth. Cheap model for the wide pass, human picks, expensive model only for the winners.
+- **Try it**: [/image-selector](/image-selector) is the live demo loaded with the 35 raccoons; the [public gist](https://gist.github.com/idvorkin-ai-tools/309aea3cd0d2e43e783f2c061e920755) is the reusable pattern (HTML/JS + README + CC0) — fork it, swap in your own candidates, ship.
+
+### 2026-05-10
+
+#### Free Doesn't Save You from the Wrong Problem
+
+{% include local_image_float_right.html src="raccoon-wrong-jungle.webp" %}
+
+- **TOP Takeaway**: Even when something is free, if you're climbing the wrong mountain, you'll never get there. Pick the right problem first; cost is the second-order question. Hill climbing improves your position on a mountain; it doesn't tell you you're on the wrong one.
+- **The case**: I'm obsessed with transparent backgrounds for the [raccoons](#racoon-illustrations) on my blog. The AI image generator I use can't emit alpha, so I'd been [hill-climbing a local chroma-key pipeline](/hill-climbing#chroma-key-clean-transparent-backgrounds) — six attempts, 17,385 → 269 on the residual-magenta-plus-interior-holes eval, 65× improvement, a clever `flood4 → tight-fuzz 3%` two-stage winner. Real hill climbing, real eval, real progress. Still the wrong mountain. The output looked clean on a white page and fell apart against any other background.
+- **What actually worked**: switched to **Recraft** as a paid bg-remover — the [`remove_background_recraft` drop-in](https://github.com/idvorkin/chop-conventions/blob/508ee894a32201ff12ebdb3d77c6386d3e33e9f0/skills/image-explore/generate.py#L265-L306) on the magenta path, then [a Typer + WebP-aware rewrite](https://github.com/idvorkin/chop-conventions/blob/7befb9f1d713573aaaeff3e97bc86b7af2c3327d/skills/gen-image/recraft_bg_remove.py#L1-L365) of the bash bg-remover. Roughly a penny per image. Solved.
+- **Why I missed it**: from [7 Habits, ch. 2](/end-in-mind) — things are created twice, once in the design (first creation) and once in the build (second creation). When the second creation is nearly free, the friction that used to force you back to the first creation disappears. Same chapter has Covey's jungle: producers hack with machetes, managers sharpen the machetes and write the procedure manuals, and the leader is the one who climbs the tallest tree to yell "Wrong jungle!". I was sharpening the machete — more attempts, tighter eval, prettier algorithm — and never climbed the tree. Great execution, no strategy. A manager move, not a leader move.
+- **Lesson**: when a cheap-and-local approach plateaus after a real hill-climb, stop tightening the algorithm. Ask whether you're on the right mountain at all. Switching cost is usually a few cents and an API key. Persistence cost is hours.
+
+### 2026-05-09
+
+#### Dylan Patel on the Supply and Demand of AI Tokens
+
+- **TOP Takeaway**: Patel's thesis collapses to a line he keeps returning to:
+
+  > If you don't use more tokens, you'll never escape the permanent underclass.
+
+  The frontier model is the only model that matters, demand for it is structurally uncapped, and the bottleneck has moved from "can the AI do it" to **whether you can get the tokens at all**. The race is no longer about model capability — it's about who has the enterprise contract, the rate-limit allowance, and the skill to point scarce tokens at the right problem.
+
+- **The video**: [The Supply and Demand of AI Tokens | Dylan Patel Interview](https://youtu.be/LF3aUIM57uw) — Dylan Patel (founder of [SemiAnalysis](https://www.semianalysis.com/)) on Patrick O'Shaughnessy's [Invest Like the Best, ep. 468](https://open.spotify.com/episode/3Eu3mpOcpEjrg3SYtrglBk), April 23, 2026. Show notes at [colossus.com](https://colossus.com/episode/supply-demand-of-tokens/). Full transcript: [gist](https://gist.github.com/idvorkin-ai-tools/15e47ffab0f6684f474bf29fb6aef5fe).
+- **The numbers Patel actually cites**:
+  - **SemiAnalysis Claude Code spend**: tens of thousands last year → **$5M last week → $7M annualized this week** vs a **$25M salary line** (>25% of payroll, on pace for 100%+ by year-end).
+  - **Anthropic ARR**: $9B → **$35-40B**, adding **~$10B/month**, gross margins at a **72% floor** — vs leaked funding-round docs showing "30-something percent" at start of year.
+  - **End-of-year linear extrapolation**: ~**$400B** on Opus-4.6-tier models alone — and Patel calls that the _linear_ case.
+  - **DRAM**: capped at **20-30%/yr** capacity growth; true incremental supply doesn't land until **late 2027 / early 2028**. Prices "will double or triple from here."
+  - **GPU useful life**: not 5 years — **7-8+ years**. Hopper clusters resigning at higher prices.
+  - **TSMC capex**: $56B this year, plausibly **$100B by 2028**.
+  - **Anthropic Mythos**: L4 engineer (Opus 4.6) → **L6 in two months** internally. Anthropic is throttling release — "potentially the biggest step up in model capabilities in two years."
+- **"Cloud code psychosis"** (Patel's term): an ex-Intel engineer with a couple thousand dollars of tokens replaced an entire Intel team's chip reverse-engineering pipeline. A solo ex-bank economist built a deflation/inflation model + a 2,000-task BLS eval benchmark in weeks ("would have taken 200 economists a year"). The energy lead, $6k/day for three weeks, scraped every U.S. power plant and transmission line into a live grid map customers prefer over a 100-person, decade-old incumbent.
+- **Why tokens get scarcer, not cheaper**:
+
+  > As we get more and more intelligent, what really matters is access to these most intelligent tokens... the shitty SaaS startup in SF using Claude to generate their software product is not creating a ton of value and therefore they're going to get priced out of tokens soon enough.
+
+  Every lab is supply-constrained; even tier-2 and tier-3 labs sell out. Anthropic could double Opus pricing and Patel says he'd keep paying. Patel's playbook: get the enterprise pay-per-token contract (not the consumer subscription), then figure out how to leverage those tokens at the highest-value task. The skill that matters is no longer implementation — it's picking which idea is worth pointing tokens at.
+
+- **The Igor angle**: this is the [$230 Week](#the-230-week-when-cheap-coding-isnt) dynamic seen from the supply side. My burn wasn't user error — I was riding the front of Patel's curve. The shift: **the answer is not to throttle, it's to point the tokens at the highest-leverage thing I can think of**. For Larry specifically — the subagent-extraction stack on the Claude Code subscription pool (~$0.12/entry equivalent) is the right shape; the open question is whether the journal cross-index is actually _the_ highest-value place to point those tokens, or just the most-fun one. Worth re-asking before the next big run.
+
+### 2026-04-17
+
+#### One Repo, One Token: The Closest You Can Get to Write-Only on GitHub
+
+- **TOP Takeaway**: GitHub has no write-only token. Fine-grained PATs only offer _No access_, _Read-only_, or _Read and write_ on `Contents` — pushing commits requires _Read and write_, which drags read along for free. The closest approximation to write-only is **scope a PAT to exactly one throwaway private repo**. The token is still read+write, but on a repo that holds nothing but append-only artifacts you'd be willing to lose. Least privilege here is the **target**, not the **verb**. That's how my blog's weekly changelog workflow archives every Claude transcript to `claude-run-logs-private` without giving the workflow secret the keys to anything else in my account.
+- **Why I needed it**: the [weekly changelog workflow](https://github.com/idvorkin/idvorkin.github.io/blob/main/.github/workflows/changelog.yml) runs Claude Code in CI to scan my public repos and generate `_d/changelog.md`. I want every Claude transcript archived so I can post-hoc audit cost, permission denials, and failure modes — but transcripts contain enough internal context that I don't want them in the public blog repo. GitHub Actions' built-in `GITHUB_TOKEN` can only write to the repo the workflow lives in, so cross-repo archiving needs a real token, and if that token ever leaks (log bleed, cache exposure, compromised runner) the blast radius matters.
+- **Why "write-only" is a myth**: GitHub's fine-grained PATs don't split `contents:read` from `contents:write`. The dropdown offers _No access_ / _Read-only_ / _Read and write_ — that's it. Pushing a commit requires _Read and write_, and the read comes along for free. You cannot revoke read on a repo you can push to. The mitigation is not "make the token weaker" but **shrink what the token can reach to a single repo you're willing to lose**.
+- **The shape of the token**:
+  - Resource owner: `idvorkin`
+  - Repository access: _Only select repositories_ → **just `claude-run-logs-private`**
+  - Permissions: _Contents: Read and write_. Nothing else. No Actions, no PRs, no Issues.
+  - Stored as `CLAUDE_RUN_LOGS_PUSH_TOKEN` on the blog repo's Actions secrets.
+- **The leak mitigations** (all in [`changelog.yml` lines 115-195](https://github.com/idvorkin/idvorkin.github.io/blob/main/.github/workflows/changelog.yml#L115-L195)):
+  - **No token-in-URL**: `git -c http.extraHeader="Authorization: Basic <base64>"` instead of `https://x-access-token:TOKEN@github.com/...`. The URL form persists in `.git/config` AND lands in `/proc/<pid>/cmdline` during the clone window, where any other process on the runner could read it.
+  - **Explicit mask on the base64 form**: `echo "::add-mask::$B64"`. GHA's default secret masker only redacts the raw token bytes — `base64("x-access-token:TOKEN")` is different bytes and would leak verbatim under `set -x` or a future git version that echoed `-c` values on error. Decoding back is trivial.
+  - **`printf` (bash builtin) to feed the pipe**, not `echo $TOKEN | base64` — the builtin keeps the raw token out of any subprocess argv.
+  - **Token stays out of the persistent remote URL**: `-c` is per-invocation; the subsequent `git push` re-passes the same `-c` flag rather than embedding creds in `origin`.
+- **Blast radius check**: if this token leaks tomorrow, the attacker can read and push to one repo full of Claude transcripts — embarrassing, not catastrophic. No code access, no PRs, no other secrets, no account takeover. That's the whole point of the throwaway-repo pattern: the token is _designed_ to be the weakest link, so its compromise doesn't cascade.
+- **The pattern in one line**: _one token → one repo → one permission_. Repeat this shape for every cross-repo write you need in CI. If you catch yourself tempted to give a PAT access to "all my repos, just in case," you're building a single point of total failure — split it.
 
 ### 2026-04-13
 

@@ -323,6 +323,231 @@ describe("Header Copy Link", () => {
       expect(mockClipboard).toHaveBeenCalledWith("https://tinyurl.com/igor-blog/?path=manager-book%23test-section");
     });
 
+    it("should preserve whole bullets and not clip mid-sentence (regression: #487)", async () => {
+      // Regression test for the share-link mid-sentence clip bug: the old
+      // code double-truncated (500 in getFirstParagraphAfterHeader, then 400
+      // in truncateText with word-boundary snap) so a 3-bullet list with a
+      // ~350-char lead bullet would clip inside bullet 3 mid-word, producing
+      // shares like: • CodeRabbit: "Your code...
+      //
+      // The fix keeps whole bullets and prefers sentence/bullet boundaries
+      // when truncation is needed.
+      const mockClipboard = vi.fn().mockResolvedValue(undefined);
+      (
+        globalThis as unknown as {
+          navigator: { clipboard: { writeText: typeof mockClipboard } };
+        }
+      ).navigator.clipboard.writeText = mockClipboard;
+
+      mockWindow.location.href = "http://localhost:4000/ai-journal#my-bot-wrote";
+
+      // Mimic the real DOM where getElementById returns the header element
+      // that shareOrCopyHeaderLink uses to look up the preview text.
+      const makeLi = (text: string) => ({
+        tagName: "LI",
+        childNodes: [{ nodeType: 3, textContent: text }], // TEXT_NODE = 3
+      });
+
+      const bullet1 =
+        "TOP Takeaway: The whole code review loop ran between AI agents. " +
+        "My Larry wrote the code, CodeRabbit reviewed and flagged it as wrong, " +
+        "Larry pushed back with empirical proof, CodeRabbit said oops. " +
+        "I wasn't in the loop — I read the transcript after.";
+      const bullet2 = "The thread (chop-conventions#71):";
+      const bullet3 = "CodeRabbit: Your code comment is wrong — gh repo view has a -R/--repo flag.";
+      const bullet4 = "Larry: No, you're wrong. Here's the --help output.";
+
+      const listItems = [makeLi(bullet1), makeLi(bullet2), makeLi(bullet3), makeLi(bullet4)];
+      const mockList = {
+        tagName: "UL",
+        querySelectorAll: vi.fn(() => listItems),
+        nextElementSibling: null,
+      };
+
+      const mockHeaderWithList: any = {
+        id: "my-bot-wrote",
+        textContent: "My Bot Wrote",
+        tagName: "H4",
+        appendChild: vi.fn(),
+        addEventListener: vi.fn(),
+        removeEventListener: vi.fn(),
+        querySelector: vi.fn(() => null),
+        getBoundingClientRect: vi.fn(() => ({ bottom: 0, left: 0, right: 0, top: 0, width: 0, height: 0 })),
+        nextElementSibling: mockList,
+        childNodes: [{ nodeType: 3, textContent: "My Bot Wrote" }],
+        previousElementSibling: null,
+      };
+
+      mockDocument.querySelectorAll.mockReturnValue([mockHeaderWithList]);
+      mockDocument.getElementById.mockImplementation((id: string) => {
+        if (id === "my-bot-wrote") return mockHeaderWithList;
+        return null;
+      });
+      // getPreviewText's fallback hits document.querySelector("article") etc.
+      // Return null so only the anchor path is exercised.
+      mockDocument.querySelector.mockReturnValue(null);
+
+      initHeaderCopyLinks();
+
+      const copyIcon = mockHeaderWithList.appendChild.mock.calls[0][0];
+      const clickHandler = copyIcon.addEventListener.mock.calls.find((call: any[]) => call[0] === "click")?.[1];
+      expect(clickHandler).toBeDefined();
+
+      await clickHandler({ preventDefault: vi.fn(), stopPropagation: vi.fn() });
+
+      expect(mockClipboard).toHaveBeenCalled();
+      const clipboardText = mockClipboard.mock.calls[0][0] as string;
+
+      // Should NOT end mid-word inside a bullet's quoted content — the old
+      // bug produced `• CodeRabbit: "Your code...` which is incoherent.
+      expect(clipboardText).not.toMatch(/Your code\.\.\./);
+
+      // Should contain the TinyURL appended AFTER the preview (not lost).
+      expect(clipboardText).toContain("https://tinyurl.com/igor-blog/");
+
+      // The first bullet must be complete.
+      expect(clipboardText).toContain("I wasn't in the loop");
+
+      // Preview portion (everything before the TinyURL) should be within
+      // the PREVIEW_MAX_LENGTH cap plus a small fudge for the "..." suffix.
+      const urlIdx = clipboardText.indexOf("https://tinyurl.com/");
+      const previewPortion = clipboardText.substring(0, urlIdx).trim();
+      expect(previewPortion.length).toBeLessThanOrEqual(900); // includes "From: ..." breadcrumb + preview
+    });
+
+    it("should append '...' when the extracted paragraph is short but more content follows (msg 2363)", async () => {
+      // When a section's first paragraph is short and fits well under the
+      // preview cap, we still need to signal to share recipients that the
+      // snippet is not the end of the post. Otherwise they read the clean
+      // first sentence and don't realize there are 3 more paragraphs to
+      // click through to.
+      const mockClipboard = vi.fn().mockResolvedValue(undefined);
+      (
+        globalThis as unknown as {
+          navigator: { clipboard: { writeText: typeof mockClipboard } };
+        }
+      ).navigator.clipboard.writeText = mockClipboard;
+
+      mockWindow.location.href = "http://localhost:4000/ai-operator#on-the-loop";
+
+      const makeP = (text: string): any => ({
+        tagName: "P",
+        textContent: text,
+      });
+
+      // Short first paragraph (well under 600 chars), followed by more
+      // non-empty paragraphs before the next header.
+      const firstPara = makeP(
+        "When you're on-the-loop, the AI does the checking and you do the review at a checkpoint.",
+      );
+      const secondPara = makeP(
+        "More content in this section that the reader would miss if we don't flag that this is a snippet.",
+      );
+      const thirdPara = makeP("Even more content — a third paragraph before the next header.");
+
+      firstPara.nextElementSibling = secondPara;
+      secondPara.nextElementSibling = thirdPara;
+      thirdPara.nextElementSibling = null;
+
+      const mockHeader: any = {
+        id: "on-the-loop",
+        textContent: "On the Loop",
+        tagName: "H2",
+        appendChild: vi.fn(),
+        addEventListener: vi.fn(),
+        removeEventListener: vi.fn(),
+        querySelector: vi.fn(() => null),
+        getBoundingClientRect: vi.fn(() => ({ bottom: 0, left: 0, right: 0, top: 0, width: 0, height: 0 })),
+        nextElementSibling: firstPara,
+        childNodes: [{ nodeType: 3, textContent: "On the Loop" }],
+        previousElementSibling: null,
+      };
+
+      mockDocument.querySelectorAll.mockReturnValue([mockHeader]);
+      mockDocument.getElementById.mockImplementation((id: string) => (id === "on-the-loop" ? mockHeader : null));
+      mockDocument.querySelector.mockReturnValue(null);
+
+      initHeaderCopyLinks();
+
+      const copyIcon = mockHeader.appendChild.mock.calls[0][0];
+      const clickHandler = copyIcon.addEventListener.mock.calls.find((call: any[]) => call[0] === "click")?.[1];
+      expect(clickHandler).toBeDefined();
+
+      await clickHandler({ preventDefault: vi.fn(), stopPropagation: vi.fn() });
+
+      expect(mockClipboard).toHaveBeenCalled();
+      const clipboardText = mockClipboard.mock.calls[0][0] as string;
+
+      // Locate the extracted preview text (between the breadcrumb and the TinyURL).
+      const urlIdx = clipboardText.indexOf("https://tinyurl.com/");
+      const previewPortion = clipboardText.substring(0, urlIdx).trim();
+
+      // The preview must end with "..." to signal the snippet is not the end
+      // of the post. Without this, the reader thinks they have the whole
+      // section.
+      expect(previewPortion.endsWith("...")).toBe(true);
+
+      // And the first paragraph itself should be complete (not mid-sentence).
+      expect(previewPortion).toContain("When you're on-the-loop");
+      expect(previewPortion).toContain("review at a checkpoint");
+    });
+
+    it("should NOT append '...' when extracted paragraph is the only content in the section", async () => {
+      // Single-paragraph section with nothing else before the next header:
+      // the preview IS the whole section, so no trailing "..." is needed.
+      const mockClipboard = vi.fn().mockResolvedValue(undefined);
+      (
+        globalThis as unknown as {
+          navigator: { clipboard: { writeText: typeof mockClipboard } };
+        }
+      ).navigator.clipboard.writeText = mockClipboard;
+
+      mockWindow.location.href = "http://localhost:4000/some-post#last-section";
+
+      const onlyPara: any = {
+        tagName: "P",
+        textContent: "The only paragraph in this section, sitting right before the next header.",
+        nextElementSibling: null,
+      };
+      // Put an H2 right after — this is the natural end of the section.
+      const nextHeader: any = { tagName: "H2", textContent: "Next Section", nextElementSibling: null };
+      onlyPara.nextElementSibling = nextHeader;
+
+      const mockHeader: any = {
+        id: "last-section",
+        textContent: "Last Section",
+        tagName: "H2",
+        appendChild: vi.fn(),
+        addEventListener: vi.fn(),
+        removeEventListener: vi.fn(),
+        querySelector: vi.fn(() => null),
+        getBoundingClientRect: vi.fn(() => ({ bottom: 0, left: 0, right: 0, top: 0, width: 0, height: 0 })),
+        nextElementSibling: onlyPara,
+        childNodes: [{ nodeType: 3, textContent: "Last Section" }],
+        previousElementSibling: null,
+      };
+
+      mockDocument.querySelectorAll.mockReturnValue([mockHeader]);
+      mockDocument.getElementById.mockImplementation((id: string) => (id === "last-section" ? mockHeader : null));
+      mockDocument.querySelector.mockReturnValue(null);
+
+      initHeaderCopyLinks();
+
+      const copyIcon = mockHeader.appendChild.mock.calls[0][0];
+      const clickHandler = copyIcon.addEventListener.mock.calls.find((call: any[]) => call[0] === "click")?.[1];
+      expect(clickHandler).toBeDefined();
+
+      await clickHandler({ preventDefault: vi.fn(), stopPropagation: vi.fn() });
+
+      const clipboardText = mockClipboard.mock.calls[0][0] as string;
+      const urlIdx = clipboardText.indexOf("https://tinyurl.com/");
+      const previewPortion = clipboardText.substring(0, urlIdx).trim();
+
+      // No more content in the section → no trailing "..."
+      expect(previewPortion.endsWith("...")).toBe(false);
+      expect(previewPortion).toContain("The only paragraph in this section");
+    });
+
     it("should handle clipboard API failure gracefully", async () => {
       // Mock clipboard API to fail
       const mockFailingClipboard = vi.fn().mockRejectedValue(new Error("Clipboard failed"));
@@ -1171,7 +1396,7 @@ describe("Header Copy Link", () => {
       }
     });
 
-    it("should truncate long content excerpts to 500 characters", () => {
+    it("should truncate long content excerpts to the preview max length", () => {
       const mockOpen = vi.fn();
       (globalThis as any).window.open = mockOpen;
 
@@ -1265,11 +1490,14 @@ describe("Header Copy Link", () => {
         expect(decodedUrl).toContain("#### Long Section");
         expect(decodedUrl).toContain("...");
 
-        // Extract the content excerpt from the URL
+        // Extract the content excerpt from the URL. The cap was bumped from
+        // 500 to 600 chars (PREVIEW_MAX_LENGTH) when fixing the mid-sentence
+        // clip bug in #487; recipients render 600 chars cleanly in both
+        // Telegram and iMessage. Allow a small fudge for the "..." suffix.
         const excerptMatch = decodedUrl.match(/## Content Excerpt\n\n> ([^\n]+)/);
         if (excerptMatch) {
           const excerpt = excerptMatch[1];
-          expect(excerpt.length).toBeLessThanOrEqual(500);
+          expect(excerpt.length).toBeLessThanOrEqual(603);
         }
       }
     });

@@ -2,6 +2,7 @@
 layout: post
 title: AI Developer
 permalink: /ai-developer
+ai_default_image: true
 ---
 
 ML Engineer is a hot new job. It's the boys and girls who train and deploy models. I heard the word AI developer the other day, and I'll refer to it as AI application engineers. People who use AI to solve use cases. NOTE: This is not what most developers do today. What most developers do today is ask how can AI do the things I would have done (e.g. write the function).
@@ -77,6 +78,8 @@ Focus on specific, bounded use cases with clear success criteria. AI excels at r
 ### 3. Your secret sauce is the evals, then the training data - your prompt has no economic value.
 
 Competitive advantage comes from rigorous evaluation frameworks and quality training data, not from hiding prompts. Invest heavily in building comprehensive test suites and data pipelines.
+
+Once the evals exist, they're the scoring function for [eval-driven hill climbing](/hill-climbing) — the agent proposes prompt variants, the evals score them, and you get to a winner faster than any human-in-the-loop iteration could.
 
 ### 4. Use the most expensive model you can as you prove you can solve the problem
 

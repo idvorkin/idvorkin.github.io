@@ -12,43 +12,151 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Week of 2026-07-20](#week-of-2026-07-20)
+  - [The Performer's Playbook (new post)](#the-performers-playbook-new-post)
+  - [Sleight of Mouth: The Full Book, Fleshed Out](#sleight-of-mouth-the-full-book-fleshed-out)
+  - [Scandinavia Trip Wrap-Up + Discernment Horizon](#scandinavia-trip-wrap-up--discernment-horizon)
+  - [Content Quality Audit: Tier-3/Tier-4 Sweep](#content-quality-audit-tier-3tier-4-sweep)
+  - [Infrastructure & CI (2026-07-20)](#infrastructure--ci-2026-07-20)
+  - [Other Projects (2026-07-20)](#other-projects-2026-07-20)
+- [Week of 2026-07-13](#week-of-2026-07-13)
+  - [Pleasure vs Enjoyment: Brooks' Formula Threaded Through Three Posts](#pleasure-vs-enjoyment-brooks-formula-threaded-through-three-posts)
+  - [Scandinavia Trip: Oslo Train Bender + Diet Learnings](#scandinavia-trip-oslo-train-bender--diet-learnings)
+  - [Isometrics and Tendon Health](#isometrics-and-tendon-health)
+  - [Other Projects (2026-07-13)](#other-projects-2026-07-13)
+- [Week of 2026-07-06](#week-of-2026-07-06)
+  - [Bad News. Maybe Not. (new post!)](#bad-news-maybe-not-new-post)
+  - [Time Off: Sacrifice Identity for Consumption (2026-07-06)](#time-off-sacrifice-identity-for-consumption-2026-07-06)
+  - [Scandinavia Trip Post (2026-07-06)](#scandinavia-trip-post-2026-07-06)
+  - [My Packing Master List (new page!)](#my-packing-master-list-new-page)
+  - [Life Journal: Speed of Light from Sweden (2026-07-06)](#life-journal-speed-of-light-from-sweden-2026-07-06)
+  - [Other Projects (2026-07-06)](#other-projects-2026-07-06)
+- [Week of 2026-06-29](#week-of-2026-06-29)
+  - [Trusts in Washington (new post!)](#trusts-in-washington-new-post)
+  - [AI Training: Post-Training Methods Table](#ai-training-post-training-methods-table)
+  - [Time Off: Arthur Brooks' 9 Vacation Rules](#time-off-arthur-brooks-9-vacation-rules)
+  - [Life & Health Notes (2026-06-29)](#life--health-notes-2026-06-29)
+  - [Other Projects (2026-06-29)](#other-projects-2026-06-29)
+- [Week of 2026-06-22](#week-of-2026-06-22)
+  - [AI Journal: Yegge's Flat Curve Society](#ai-journal-yegges-flat-curve-society)
+  - [AI Operator: You Review More Than You Make](#ai-operator-you-review-more-than-you-make)
+  - [Addiction: Monoculture Trap](#addiction-monoculture-trap)
+  - [AI Security: Field-Map Explainers](#ai-security-field-map-explainers)
+  - [Other Projects (2026-06-22)](#other-projects-2026-06-22)
+- [Week of 2026-06-15](#week-of-2026-06-15)
+  - [Why Gas City (new post!)](#why-gas-city-new-post)
+  - [Gas City: Controller Loop + Runtime Providers](#gas-city-controller-loop--runtime-providers)
+  - [AI-Native Vocab: Reverse Centaur](#ai-native-vocab-reverse-centaur)
+  - [AI Journal: API Key Leak Forensics](#ai-journal-api-key-leak-forensics)
+  - [Infrastructure & CI (2026-06-15)](#infrastructure--ci-2026-06-15)
+  - [Other Projects (2026-06-15)](#other-projects-2026-06-15)
+- [Week of 2026-06-08](#week-of-2026-06-08)
+  - [AI Training & Inference (new posts!)](#ai-training--inference-new-posts)
+  - [Gas City First Rig (new post!)](#gas-city-first-rig-new-post)
+  - [Gas City: Scale Up/Out + Getting Started](#gas-city-scale-upout--getting-started)
+  - [AI-Native: Onboarding, Vocab, and Optimism](#ai-native-onboarding-vocab-and-optimism)
+  - [Life: Decline and Psychic Weight](#life-decline-and-psychic-weight)
+  - [Infrastructure & CI (2026-06-08)](#infrastructure--ci-2026-06-08)
+  - [chop-conventions (2026-06-08)](#chop-conventions-2026-06-08)
+  - [Other Projects (2026-06-08)](#other-projects-2026-06-08)
+- [Week of 2026-06-01](#week-of-2026-06-01)
+  - [The Dark Factory (new post!)](#the-dark-factory-new-post)
+  - [Made to Stick (new post!)](#made-to-stick-new-post)
+  - [AI Journal: Friction = Focus](#ai-journal-friction--focus)
+  - [Scandinavian Whirlwind Tour (new page!)](#scandinavian-whirlwind-tour-new-page)
+  - [Meta: Moving to the AI Lab](#meta-moving-to-the-ai-lab)
+  - [Content Tweaks (2026-06-01)](#content-tweaks-2026-06-01)
+  - [Infrastructure & CI (2026-06-01)](#infrastructure--ci-2026-06-01)
+  - [chop-conventions (2026-06-01)](#chop-conventions-2026-06-01)
+  - [Other Projects (2026-06-01)](#other-projects-2026-06-01)
+- [Week of 2026-05-25](#week-of-2026-05-25)
+  - [y2026: June Check-In](#y2026-june-check-in)
+  - [Produce/Consume: The Production Trap](#produceconsume-the-production-trap)
+  - [Other Projects (2026-05-25)](#other-projects-2026-05-25)
+- [Week of 2026-05-18](#week-of-2026-05-18)
+  - [What I Love About AI (new post!)](#what-i-love-about-ai-new-post)
+  - [Parenting Books: Emotional Lives + Untangled Rewrite](#parenting-books-emotional-lives--untangled-rewrite)
+  - [Hyper-Personal: Bezos to Agent-to-Agent](#hyper-personal-bezos-to-agent-to-agent)
+  - [Igor's Podcast Launch](#igors-podcast-launch)
+  - [Raccoon System: 7H Marathon + Choice-Sheet Pattern](#raccoon-system-7h-marathon--choice-sheet-pattern)
+  - [AI Journal: Options Over Answers](#ai-journal-options-over-answers)
+  - [Infrastructure & CI (2026-05-18)](#infrastructure--ci-2026-05-18)
+  - [Other Projects (2026-05-18)](#other-projects-2026-05-18)
+- [Week of 2026-05-11](#week-of-2026-05-11)
+  - [7 Habits: Full Chapter Augmentation](#7-habits-full-chapter-augmentation)
+  - [AI Journal: Tokens and the Wrong Jungle](#ai-journal-tokens-and-the-wrong-jungle)
+  - [Amelia Connection Framework (new page!)](#amelia-connection-framework-new-page)
+  - [Addiction: Raccoon Illustrations](#addiction-raccoon-illustrations)
+  - [Infrastructure & CI (2026-05-11)](#infrastructure--ci-2026-05-11)
+  - [chop-conventions (2026-05-11)](#chop-conventions-2026-05-11)
+  - [Other Projects (2026-05-11)](#other-projects-2026-05-11)
+- [Week of 2026-05-04](#week-of-2026-05-04)
+  - [The Psychology of Vibing (new post!)](#the-psychology-of-vibing-new-post)
+  - [Gas City Cluster: Wally, Standing Up, and the Explainer (new posts!)](#gas-city-cluster-wally-standing-up-and-the-explainer-new-posts)
+  - [Igor's Claws: Business Logic / Goop / Infra](#igors-claws-business-logic--goop--infra)
+  - [Life Journal: Walking with Alex Under the Trees](#life-journal-walking-with-alex-under-the-trees)
+  - [Infrastructure & CI (2026-05-04)](#infrastructure--ci-2026-05-04)
+  - [Other Projects (2026-05-04)](#other-projects-2026-05-04)
+- [Week of 2026-04-27](#week-of-2026-04-27)
+  - [Wally and My Work Gastown (new post!)](#wally-and-my-work-gastown-new-post)
+  - [The Psychology of Vibing (new post!)](#the-psychology-of-vibing-new-post-1)
+  - [Addiction: Trichotomy Upgrade](#addiction-trichotomy-upgrade)
+  - [AI Cockpit: The Mic Matters](#ai-cockpit-the-mic-matters)
+  - [Infrastructure & CI (2026-04-27)](#infrastructure--ci-2026-04-27)
+  - [Other Projects (2026-04-27)](#other-projects-2026-04-27)
+- [Week of 2026-04-20](#week-of-2026-04-20)
+  - [Taxes: Split from /money (new post!)](#taxes-split-from-money-new-post)
+  - [Igor's Three Claws (new post!)](#igors-three-claws-new-post)
+  - [Larry: From Life Coach to Chief of Staff](#larry-from-life-coach-to-chief-of-staff)
+  - [AI Journal: One Repo, One Token](#ai-journal-one-repo-one-token)
+  - [AI Operator: One-Way vs Two-Way Doors](#ai-operator-one-way-vs-two-way-doors)
+  - [Life Journal: Balloons on the Hood Canal Trail](#life-journal-balloons-on-the-hood-canal-trail)
+  - [Infrastructure & CI (2026-04-20)](#infrastructure--ci-2026-04-20)
+  - [chop-conventions (2026-04-20)](#chop-conventions-2026-04-20)
+  - [Other Projects (2026-04-20)](#other-projects-2026-04-20)
 - [Week of 2026-04-13](#week-of-2026-04-13)
-  - [AI Journal: Bot-vs-Bot, The $230 Week, and Two-Process Telegram](#ai-journal-bot-vs-bot-the-230-week-and-two-process-telegram)
+  - [Life Journal: First Entries (new post!)](#life-journal-first-entries-new-post)
+  - [AI Operator: Seven New Sections](#ai-operator-seven-new-sections)
+  - [ACT: Reverse-Engineered Buddhism](#act-reverse-engineered-buddhism)
+  - [AI Relationships: Cryptophasia and Drift](#ai-relationships-cryptophasia-and-drift)
+  - [AI Cockpit: New Instruments](#ai-cockpit-new-instruments)
+  - [Hill Climbing: Eval-Driven Pattern](#hill-climbing-eval-driven-pattern)
   - [Infrastructure & CI (2026-04-13)](#infrastructure--ci-2026-04-13)
+  - [chop-conventions (2026-04-13)](#chop-conventions-2026-04-13)
   - [Other Projects (2026-04-13)](#other-projects-2026-04-13)
 - [Week of 2026-04-12](#week-of-2026-04-12)
   - [The AI Operator: Learning to Drive the Machine (new post!)](#the-ai-operator-learning-to-drive-the-machine-new-post)
   - [ACT Made Simple: Book Notes (new post!)](#act-made-simple-book-notes-new-post)
   - [CHOP & Tooling](#chop--tooling)
-  - [Infrastructure & CI](#infrastructure--ci)
+  - [Infrastructure & CI (2026-04-12)](#infrastructure--ci-2026-04-12)
   - [Other Projects (2026-04-12)](#other-projects-2026-04-12)
 - [Week of 2026-03-30](#week-of-2026-03-30)
   - [AI Relationships: When the Chatbot Is Better at Caring (new post!)](#ai-relationships-when-the-chatbot-is-better-at-caring-new-post)
   - [Keyboards: From Wrist Pain to Split Keyboards (new post!)](#keyboards-from-wrist-pain-to-split-keyboards-new-post)
   - [AI Journal: The Winchester Mystery House](#ai-journal-the-winchester-mystery-house)
   - [Content & Gear](#content--gear)
-  - [Infrastructure & CI](#infrastructure--ci-1)
+  - [Infrastructure & CI (2026-03-30)](#infrastructure--ci-2026-03-30)
   - [Other Projects (2026-03-30)](#other-projects-2026-03-30)
 - [Week of 2026-03-16](#week-of-2026-03-16)
   - [Claws: The Next Layer of AI (new post!)](#claws-the-next-layer-of-ai-new-post)
   - [AI Journal: Telegram, Eggs, and Feedback Loops](#ai-journal-telegram-eggs-and-feedback-loops)
   - [AI Native Manager: "In Distribution"](#ai-native-manager-in-distribution)
   - [Content Updates](#content-updates)
-  - [Infrastructure & Tooling](#infrastructure--tooling)
+  - [Infrastructure & Tooling (2026-03-16)](#infrastructure--tooling-2026-03-16)
   - [Other Projects (2026-03-16)](#other-projects-2026-03-16)
 - [Week of 2026-03-09](#week-of-2026-03-09)
   - [AI Second Brain (new post!)](#ai-second-brain-new-post)
   - [Side Quests (new post!)](#side-quests-new-post)
   - [AI Journal: Verification as Trust](#ai-journal-verification-as-trust)
   - [Cross-linking & Content Updates](#cross-linking--content-updates)
-  - [Infrastructure](#infrastructure)
+  - [Infrastructure (2026-03-09)](#infrastructure-2026-03-09)
   - [Other Projects (2026-03-09)](#other-projects-2026-03-09)
 - [Week of 2026-02-08](#week-of-2026-02-08)
   - [AI Native Engineering Manager (new post!)](#ai-native-engineering-manager-new-post)
   - [AI Cockpit (new post!)](#ai-cockpit-new-post)
   - [AI Journal: Yegge's AI Vampire](#ai-journal-yegges-ai-vampire)
   - [Spiritual Health: Meaning Traps](#spiritual-health-meaning-traps)
-  - [Infrastructure & Tooling](#infrastructure--tooling-1)
+  - [Infrastructure & Tooling (2026-02-08)](#infrastructure--tooling-2026-02-08)
   - [Other Projects (2026-02-08)](#other-projects-2026-02-08)
 - [Week of 2026-01-25](#week-of-2026-01-25)
   - [AI Journal Updates](#ai-journal-updates)
@@ -57,45 +165,1003 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
   - [Product Management](#product-management)
   - [Physical Health Content](#physical-health-content)
   - [How Igor CHOPs](#how-igor-chops)
-  - [Infrastructure & Tooling](#infrastructure--tooling-2)
+  - [Infrastructure & Tooling (2026-01-25)](#infrastructure--tooling-2026-01-25)
   - [Other Projects (2026-01-25)](#other-projects-2026-01-25)
 
 <!-- vim-markdown-toc-end -->
+<!-- prettier-ignore-end -->
 
-    <!-- prettier-ignore-end -->
+## Week of 2026-07-20
 
-## Week of 2026-04-13
+_26 commits this week_
 
-_~28 commits since last changelog (blog) + cross-repo activity_
+### The Performer's Playbook (new post)
 
-### AI Journal: Bot-vs-Bot, The $230 Week, and Two-Process Telegram
+**[/performer-playbook](/performer-playbook)** — the tactical companion to [/joy](/joy): nine rules Igor noticed he runs on autopilot doing magic for one kid or a whole room, finally written down. Aim for the impossible moment, not the trick; perform for the group, not the person (the glance between spectators is "the wonder doubling"); give the moment room instead of filling the silence; make the spectator the hero of their own trick; let your own delight cue theirs ("Robert-Houdin said a magician is an actor playing the part of a magician; I'm playing the part of a guy who can't believe this is happening either"); engineer a peak and a clean ending; keep the story simple enough to retell at dinner ("He signed my card and then it was inside a lemon" survives — five conditions and a diagram doesn't); disarm before you astonish, since nobody feels wonder while braced to be embarrassed; small self, big generosity. Grounded in three borrowed frameworks: Keltner/Haidt's awe = vastness + accommodation, Brooks' enjoyment = pleasure + people + memory, and Kahneman's peak-end rule. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e4561175b)
 
-Three new entries on agentic cost economics, platform instability, and graceful bot-to-bot disagreement ([blog](/ai-journal#2026-04-13)):
+### Sleight of Mouth: The Full Book, Fleshed Out
 
-- **My Bot Wrote, Their Bot Reviewed, My Bot Pushed Back, Their Bot Said "Oops"** — A full code-review cycle ran between agents with zero human intervention. [Larry](/larry) (one of three [claws](/claw)) wrote the code, CodeRabbit flagged a claim as wrong, Larry pushed back with `gh repo view --help` output as empirical proof, CodeRabbit said "oops, you're right" and stored a file-scoped learning. Clean graceful disagreement, entirely off the desk ([chop-conventions#71](https://github.com/idvorkin/chop-conventions/pull/71#discussion_r3070590476)). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1fc551465)
-- **The $230 Week: When Cheap Coding Isn't** — ~$230 burned in a week against a $200/mo Max sub — **4.6× weekly budget**. Surface diagnosis looked like user error: parallel subagents, long vibe sessions, big-context coding. Root cause was actually a silent platform change: on **2026-03-06**, Anthropic cut the Claude Code prompt cache TTL from **1 hour to 5 minutes** server-side. Confirmed by an analysis of **119,866 API calls** across two machines via `ephemeral_1h_input_tokens` / `ephemeral_5m_input_tokens` in session JSONL ([anthropics/claude-code#46829](https://github.com/anthropics/claude-code/issues/46829), 221 reactions, [HN front page](https://news.ycombinator.com/item?id=47736476)). Anthropic's Jarred defended it as "net cheaper on average" — catastrophically expensive for long-session workloads. "The real damage is that from now on, every unexpected burn forces the question: _did I break something, or did they silently change something?_" [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6ae25982c)
-- **Two-Process Telegram: When the Platform Is the Bug** — Claude Code's Telegram plugin loses messages on every session restart: the bun poller dies with Claude, the Bot API cursor advances, and those messages are gone forever (no history endpoint). Fix: split polling from delivery. `telegram_bot.py` (persistent Python, `flock` singleton) owns `getUpdates` forever and writes every message to SQLite WAL; `server.ts` stops polling, just reads undelivered rows and dies with Claude as before. Liveness signal: 👀 stamp on receive, 🫡 stamp on delivery — missing outer glyph = MCP bridge problem. Filed as workaround on [anthropics/claude-code#36411](https://github.com/anthropics/claude-code/issues/36411#issuecomment-4233570293). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/60a8f1e84)
+**[/sleight-of-mouth](/sleight-of-mouth)** grew from 1,678 to 2,984 words after Igor's review note ("research this book/content and flesh out this post, don't erase these ideas") sent Claude back to Robert Dilts' source material — every thin one-liner and bare bullet list got real prose and worked examples, all fourteen original patterns preserved:
 
-### Infrastructure & CI (2026-04-13)
+- **Punctuation & Repunctuation** — the cryptic one-liner became the actual concept plus the classic comma-placement example.
+- **Applying the patterns as a system** — three bare bullets became a worked example running one of Igor's own limiting beliefs ("my back has hurt forever") through ten of the fourteen patterns, plus the thought-virus concept, cross-linked to [/physical-pain](/physical-pain).
+- **One-word reframes** — reframed as positive→neutral→negative slides (Responsible → Stable → Rigid; Friendly → Nice → Naive) with the takeaway: "whoever gets to pick the word gets to pick the meaning."
+- **Second position** — named all three perceptual positions (mine, theirs, the observer's) with what each does; "most stuck arguments are two people jammed in first position, each certain the other is just wrong."
+- **Chunking down** — "I'm ugly" chunked to: ugly _which_ part, ugly to _whom_ — "the word can't survive the questions."
+- **Finding Isomorphisms** — fixed the typo heading and explained why the borrowed-domain metaphor smuggles in a reframe the direct statement fights off.
 
-- **Private Claude transcripts** — [PR #482](https://github.com/idvorkin/idvorkin.github.io/pull/482) hardens the weekly changelog workflow: drops `show_full_output: true` (tool-call stream no longer visible in the public job log), removes the public `claude-execution-output.json` artifact, and archives the full transcript to a private repo (`idvorkin/claude-run-logs-private`) via a fine-grained PAT instead. Public signal is preserved through a metrics row in the step summary (duration / turns / cost / archive status). Full architect-reviewed [design spec](https://github.com/idvorkin/idvorkin.github.io/blob/main/docs/superpowers/specs/2026-04-13-private-claude-transcripts-design.md) alongside. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/13d1ea4ff)
-- **Changelog workflow hardening** — [`/changelog` skill](https://github.com/idvorkin/idvorkin.github.io/blob/main/.claude/skills/changelog/SKILL.md) now enforces unique section headings file-wide (duplicate `###` headings like "Other Projects" would produce duplicate TOC anchors — `#other-projects-1`, `#other-projects-2` — which confuse readers and break deep links). Workflow also gained superseded-PR detection, run ID in PR title, and an explicit `Skill(changelog)` allowlist so the dispatched skill actually runs. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/bd18fad8d)
-- **AI Operator skill cross-links** — Wired three new chop-conventions skills into `/ai-operator` where the theme fits: `delegate-to-other-repo` → Finite Thinking Tokens (isolate cross-repo work in a subagent to preserve parent context), `architect-review` → Get On the Loop (iterative spec hardening is the quintessential on-the-loop pattern), `image-explore` → You Can Throw It Away (parallel generation + discarding losers made concrete). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/036582069)
-- **Backlinks regeneration** — Full rebuild of `back-links.json`: picks up the new `/ai-operator` page, fresh incoming/outgoing graph for `ai-journal`, `ai-cockpit`, `balloon`, `four-healths`, `changelog`, `claw`, `larry`, `tesla`. Also fixes a stale `/y2026` → `/y26` link. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/cd9c5298b)
+[<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3c04d09f8) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2dd0f438f)
 
-### Other Projects (2026-04-13)
+### Scandinavia Trip Wrap-Up + Discernment Horizon
 
-**[chop-conventions](https://github.com/idvorkin/chop-conventions)** (CHOP workflow docs)
+**[/timeoff-2026-07](/timeoff-2026-07#how-it-actually-went)** — the fjord leg got corrected from a planned drive to what actually happened: a fjord cruise up the Nærøyfjord from Aurland to Gudvangen (the Viking town), then a bus to Voss — "walls of rock straight out of the water, waterfalls off the top, a scale that shut the whole boat up." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3f251b724) Oslo's forward-looking itinerary was swapped for what actually happened: Grünerløkka morning, the new Deichman library, an Oslofjord boat tour, the Barcode towers, the Opera House roof. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/77d844f1b) Per Igor's PR review, two durable frameworks — role re-stacking and the daily-review vegetating/meditation learnings — moved out of the trip-specific post into the evergreen **[/timeoff](/timeoff#get-real-what-should-i-do)**, since they're not specific to this trip. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6e083cfd1)
 
-- **`/cost-impact` — weekly Claude spend report** — New skill that complements `/changelog` (which summarizes git history) by summarizing Claude _session_ history: "where did my Claude-time go this week." Scans `~/.claude/projects/**/*.jsonl` + subagent logs, filters by time window, bills per-turn per-model at current list prices (Opus 4.6 $5/$25, Sonnet 4.6 $3/$15, Haiku 4.5 $1/$5), rolls subagent tokens into parent session totals, groups by project/session/day, and writes `/tmp/cost-impact.md` with per-repo collapsible tables and clickable PR links. Fast mode (`/fast`) limitations and the TTL regression footnoted explicitly. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/ebdca2c8a)
-- **`delegate-to-other-repo` — async-by-default dispatch** — Session log resolution bug fixes + async-by-default dispatch (subagent runs without blocking parent context, so the parent conversation stays clean). Added warning against editing installed skills through the symlink (edits leak into whatever branch is currently checked out in the primary working tree). [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/31ba79e94)
-- **`up-to-date` — patch-id-aware cleanup** — Branch + worktree absorption logic moved into `diagnose.py`. Patch-id-aware cleanup detects when ahead commits are patch-equivalent to upstream (already applied under different SHAs via squash-merge) and clears them from the "unique work" list instead of treating them as real divergence. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/978633481)
+**[/ai-native-vocab#discernment-horizon](/ai-native-vocab#discernment-horizon)** — new glossary entry from Steve Yegge's [The Flat Curve Society](https://steve-yegge.medium.com/the-flat-curve-society-36c8b01eb33b): the point past which you can't tell whether an AI is right, because checking the work is itself beyond you ("Superhuman means unverifiable"). Paired with Yegge's **Demand Horizon** — set by the hardest problem you actually bring, since easy problems never stretch a smarter model enough to show the gap. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2b5aa7009)
+
+### Content Quality Audit: Tier-3/Tier-4 Sweep
+
+A multi-PR quality pass swept dozens of posts for the stuff that accumulates over a decade of writing — broken openers, dead links, empty scaffold headers, orphaned posts, typos:
+
+- **Tier-3 post openers** — fixed openers across `/42`, `/first-things-first`, `/win-win`, `/first-understand`, `/ai-image`, `/balance`, `/breath`, `/meta`, `/frog`, `/negotiate`, `/lonely`, `/osx`, `/planning`, `/psychic-shadows`, `/shoulder-pain`, `/like-switch`, `/trusts`, `/comp`, `/screencast`, and `/smilebox` — garbled sentences, un-attributed quotes voiced as Igor's own words, duplicated paragraphs, and `ai-slop` includes sitting above the opening paragraph (which silently breaks Jekyll's feed/social excerpt). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8023274bf)
+- **Tier-4 sweeps by topic** — [7 Habits series](https://github.com/idvorkin/idvorkin.github.io/commit/b76d2e280), [Health & body](https://github.com/idvorkin/idvorkin.github.io/commit/ae51190cb) (owned the made-up-numbers table in `/terzepatide`, folded a HIIT notes-dump into prose), [Time-off journals](https://github.com/idvorkin/idvorkin.github.io/commit/b7f22ace4) (nine old trip logs from 2020–2024, deduped headers, resolved leftover TBD checkboxes), [Emotional & spiritual](https://github.com/idvorkin/idvorkin.github.io/commit/b997020c0) (rescued `/maybe` and `/suicide` from being orphan pages by adding inbound links from `/depression`, `/mania`, `/mental-pain`, `/death`), and [Work & productivity](https://github.com/idvorkin/idvorkin.github.io/commit/81ee7794f).
+- **Tech notes** — `/vlc` cut from 143 lines of stale detail; `pysrc/brython_runner_passage.py` and `pysrc/html_snjb.py` doc comments cleaned up. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/839e2cb52)
+- **Post-merge CodeRabbit follow-ups** — promoted the seven 7-Habits chapter headings from h3 to h2 (they were the post's only headings and had no h2 parent), hyphenated "win-win" in visible link text, framed the "thousand wishes" line in `/42` as an attributed saying rather than a bare quote. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/27601f1f9)
+
+### Infrastructure & CI (2026-07-20)
+
+**Changelog backfill** — filled the two-week coverage gap between the 2026-06-08 and 2026-05-18 entries (weeks of 2026-06-01 and 2026-05-25), and folded three orphaned items into the existing Week of 2026-06-29 entry as a new "Life & Health Notes" section. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1ca78f15c)
+
+### Other Projects (2026-07-20)
+
+**[yegge-field-map](https://idvorkin-ai-tools.github.io/yegge-field-map/)** (dark field map) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/yegge-field-map)
+
+New explainer site mapping Steve Yegge's writing — one page per essay, best lines quoted, sources pinned. Launched with one page per Medium AI article, then expanded with "the Beads saga" (4 posts) and "The Future of Coding Agents." [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/yegge-field-map/commit/dc1630990)
+
+**[guideway-field-map](https://idvorkin-ai-tools.github.io/guideway-field-map/)** (dark field map) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/guideway-field-map)
+
+"Rails, Ropes & Rack" — a fixed-guideway field map spanning gondolas to maglev. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/guideway-field-map/commit/6a2d1e726)
+
+**[arthur-brooks-field-map](https://idvorkin-ai-tools.github.io/arthur-brooks-field-map/)** (dark explainer site) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/arthur-brooks-field-map)
+
+An 8-page dark explainer site on Arthur Brooks, whose pleasure/enjoyment formula threaded through last week's posts. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/arthur-brooks-field-map/commit/3e4fd9996)
+
+**[Scandinavian Whirlwind 2026](https://idvorkin-ai-tools.github.io/scandinavia-2026/)** (trip site) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026)
+
+Kept growing as the trip wrapped: cruise-tourism/overtourism section for the Bergen explainer, a "Locals vs. summer crowds" callout added to all 8 city stops, six Amsterdam deep-dives (canals, VOC, below sea level, tulip mania, canal houses, curiosities), and 5 colonial-history deep-dives plus a Dutch Wars explainer. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/73204eef6)
+
+## Week of 2026-07-13
+
+_9 commits this week_
+
+### Pleasure vs Enjoyment: Brooks' Formula Threaded Through Three Posts
+
+The intellectual through-line of the week — Arthur Brooks' **Enjoyment = Pleasure + People + Memory** formula got a deep-dive and then got applied everywhere:
+
+- **[Pleasure vs Enjoyment, sourced](/build-life-you-want#pleasure-vs-enjoyment)** — pleasure runs on the dopamine circuit and slides toward compulsion on its own ("if your goal is pleasure, you don't arrive at happiness — you wind up in rehab," Brooks on Tim Ferriss #692); enjoyment adds **People** (the beer-ad tell: "if you're doing it alone, you're probably doing it wrong") and **Memory** — six concrete levers (be present, make it novel, make it an occasion, capture a little on purpose, engineer the peak-end, retell it). Two honest caveats added: the triune-brain framing is metaphor not neuroanatomy, and the pleasure/enjoyment split predates Brooks — Csíkszentmihályi drew it in _Flow_ (1990). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2bae59602)
+- **[You Don't Have to Quit Consuming — Upgrade It](/produce-consume#you-dont-have-to-quit-consuming--upgrade-it)** — a redemptive turn in the consumption-trap post: you don't need to nuke every guilty pleasure, just add what's missing. "Solitary and memoryless is pleasure — the trap. Shared and remembered is enjoyment. Same two hours of TV; wildly different outcome for the person you are next week." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/901e6078c)
+- **[/happy refactored](/happy)** — pure structural cleanup (no new ideas): headings promoted to match blog convention, the post reordered into a clean arc (define → three types → enjoyment → equations → pursuit → the three selves + practices → moments/idle-loop/mood), duplicate content deduped, and the old "Maximize Enjoyment" practices folded under **[The Three of You](/happy#the-three-of-you)** so Anticipate/Savor/Reminisce map onto the future/experiencing/remembering selves. Savor now spells out the memory-encoding mechanics. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0bdde53d8) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/16ed118ec)
+- **Peak-end link consolidated** — the Kahneman peak-end cross-link across the site now points to the canonical `/balance` write-up instead of `/happy`. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/fad8ae2d9)
+
+### Scandinavia Trip: Oslo Train Bender + Diet Learnings
+
+**[/timeoff-2026-07](/timeoff-2026-07#how-it-actually-went)** — the trip log kept filling in:
+
+- **Reykjavík + Stockholm memories** — an 8°C cold plunge into 40/42/44°C pools fed straight from the ocean, a 5am kettlebell session beaten by rain, Skansen's in-character silversmith raising a vase from a flat disk over a wood fire, Amelia out-prepping Igor with a spare phone battery, and a near-ejection from a Stockholm Greek Orthodox church for doing magic in the pews — met with a Viktor Frankl beat on the stimulus-response gap. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/704a95b18)
+- **🚂 The train to Oslo** — confession: on the six-hour Stockholm→Oslo train, while the kids watched TV, Igor went on a tech bender and built the entire [Scandinavian Whirlwind explainer site](https://idvorkin-ai-tools.github.io/scandinavia-2026/) in one sitting — "at least it was building, not scrolling." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/85e1bb83c)
+- **🤔 Unexpected realizations** — LinkedIn stayed off the [work phone split](/maybe#the-second-phone) but Igor's thumb kept opening it anyway on autopilot; locking it out led straight back to the login page "like the habit walked me there on its own" — an open question about which part of the [habit loop](/habits#habit-model) (cue, craving, response, reward) still fires with the reward gone. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/85e1bb83c)
+- **Restaurant-diet learnings folded into evergreen [/timeoff](/timeoff#where-to-eat)** — eating out past 45 isn't worth it ("my gut can't handle the grease"); book a kitchen and cook plain grocery-store food instead; skip the hotel breakfast spread but the motel breakfast is fine — modest enough that self-control holds. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0e0d3fd91)
+
+### Isometrics and Tendon Health
+
+**[/physical-pain — Isometrics section](/physical-pain#isometrics-how-to-load-a-tendon-without-moving-the-joint)** — answers the open question left by "The Tendon Problem": how do you load a tendon that can't warn you when you're overloading it? Overcoming vs. yielding isometrics; Keith Baar's load × time-under-tension research on collagen synthesis; Ebonie Rio's finding that a single bout of heavy isometric holds cut tendon pain nearly 7 points on a 0-10 scale for ~45 minutes. Baar's protocol: ~30-second holds, ~4 reps, 6+ hours between sessions, 15g gelatin + vitamin C 30-60 minutes before loading (roughly doubled collagen-synthesis markers in his 2016 study). Flagged honestly: the analgesia and core load-drives-adaptation principle are solid; the exact hold length, spacing, and dosing are emerging science. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/15651e441)
+
+### Other Projects (2026-07-13)
+
+**[Scandinavian Whirlwind 2026](https://idvorkin-ai-tools.github.io/scandinavia-2026/)** (trip site) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026)
+
+The tech-bender site keeps growing — 30 commits added ~20 new explainers plus an atlas index organizing all of them into Cities & Places, War Context Packs, How the Nordics Work, Nordic Culture & People, and a cross-cutting Rabbit Holes bucket:
+
+- **Rabbit holes** — Janteloven (Law of Jante), the Sámi people, why Norway said no to the EU twice, Scandinavian design, the Nordic prison paradox, Finnish sauna culture, why Iceland has no surnames, Nordic social trust, Flow (Csíkszentmihályi), the science of awe and wonder — later expanded into a 9-point "instructions for the performer" playbook cross-linking history-of-magic and flow-state. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/cfc8a37a5)
+- **Performance-history deep dives** — short histories of the circus, ventriloquism, puppetry, mime and physical comedy, busking and street performance, and clowning — plus balloon twisting and the history of magic (Robert-Houdin). [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/45ec2e7dd)
+- **Seven Deadly Sins & the Three Dragons** — traces Evagrius' eight logismoi through Cassian, Gregory's seven, Aquinas' capital vices, and Dante's terraces, then maps the seven onto Igor's Three Dragons (Entropy, Squander, Scarcity) as a weekly diagnostic — honest about the clean fits vs. the stretches. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/09bbaf3a4)
+- **Parenting: encouraging curiosity in a teenager** — Self-Determination Theory, the overjustification effect, Loewenstein's information-gap theory, Dweck's praise research, and a nine-move practical toolkit. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/ae94185c7)
+- **Fjords explainer expanded** — hanging valleys as the waterfall mechanism, orographic rainfall + fjell snowmelt, the May–July seasonal peak, named falls (Seven Sisters, Vøringsfossen), and fjords elsewhere in the world (NZ Fiordland, Chilean Patagonia, Greenland's Scoresby Sound, Scotland's sea lochs). [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/3aa08c5dc)
+
+## Week of 2026-07-06
+
+_39 commits this week_
+
+_Confession: I built most of this week's blitz on a 6-hour train ride across Scandinavia — a break from the vacation, while the kids watched TV._
+
+### Bad News. Maybe Not. (new post!)
+
+**[/maybe](/maybe)** — a new post on the "good luck, bad luck, who knows?" reframe. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e355c3979)
+
+Opens with the Taoist farmer parable — horse runs away ("terrible luck!"), returns leading a wild herd ("wonderful!"), the son breaks his leg taming one, then the army conscripts every able-bodied young man for a war most won't return from and passes over the son. Every verdict gets the same shrug: "Maybe." Then five times Igor called it wrong in his own life:
+
+- **The latex allergy** — ended bare-hand balloon twisting, forced leather gloves, which don't squeak against the balloons — so now he can perform anywhere without the rubbery screech announcing him first.
+- **The shoulder** — a Turkish-get-up tweak exposed years of sloppy form and forced a ground-up kettlebell rebuild.
+- **The second phone** — he dreaded air-gapping work onto a second device; on vacation it became the spare he hands Amelia when her battery dies.
+- **Amazon** — a bad-fit team and a not-great review lit the fire that produced offers from Facebook, Google, Zillow, and Indeed — and six-plus great years at Facebook.
+- **Mental breakdown in his thirties** — the worst he's ever felt, but it's what built the whole operating system he runs on now: sleep-as-sacred, the emotional-health habits, the [7 Habits](/7h-concepts), and the [eulogy](/eulogy).
+
+"I still panic first, but I've been wrong so many times about which turns were good and which were bad that I wish I could remember you never can tell." A raccoon-shrug header illustration was added and repositioned below the TOC. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/412e173a3)
+
+### Time Off: Sacrifice Identity for Consumption (2026-07-06)
+
+The intellectual spine of the week — one epigraph threaded through three posts, plus a durable role re-stack in the evergreen essay:
+
+- **"When you sacrifice identity for consumption, you end up with neither."** New epigraph added to the evergreen [/time-off](/time-off), the [Scandinavia trip post](/timeoff-2026-07), and [/produce-consume](/produce-consume) — vegetating _feels_ like rest but quietly starves the roles that make you _you_. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/920b9f567)
+- **[Re-stack your roles](/time-off#re-stack-your-roles)** — new section sorting roles into three honest tiers: **Non-negotiables** (Physical + Emotional [health](/four-healths), protected daily), **Frequently starved** (Father / Husband and the Joy Giver — the balloon-and-magic guy from the eulogy), and **Over-invested** (Technologist and everything else — "the finished room, and I keep redecorating it instead of walking into the ones that aren't"). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2cd756ee6)
+- **[Traveling with tirzepatide](/time-off#appendix-traveling-with-tirzepatide-or-any-med-that-needs-a-fridge)** — new appendix on fridge-dependent meds: a TSA-approved travel cooler, ask the hotel front desk to stash doses, and pack the whole trip's supply (no refills on the road). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/c843d3c7b)
+- **Where to eat + diet recovery** — shop the grocery store (a cucumber, some fruit, and a rotisserie chicken beat the tourist-strip restaurants) and skip the tourist areas. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d92867a94)
+
+### Scandinavia Trip Post (2026-07-06)
+
+**[/timeoff-2026-07](/timeoff-2026-07)** — the 22-day, 5-country family trip post got a big expansion:
+
+- **[Ranked "why I'm taking this time off"](/timeoff-2026-07#why-im-taking-this-time-off--ranked)** — reframed as _expected_ / _but-it-turns-out_ / _didn't-expect_. Expected: deepen the bond with Amelia and Tori, really meet the travel companions, escape. But it turns out there was nothing to escape — no work or PSC stress, "body home and mind home too." Didn't expect: the social-media / vibe-coding addiction dissolved, and the "jovial me" — the [Dealer of Smiles and Wonder](/joy) — came roaring back once the screens went quiet. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/aa8aefbc1)
+- **[Re-stacking the roles](/timeoff#re-stack-your-roles)** and a first **learning to bring home — meditation travels**: old churches and cathedrals are the best rooms for sitting quietly; duck in, take a pew, be still. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6ac955f60)
+- **Marble Church (Marmorkirken)** added to the Copenhagen itinerary — climb the dome tower for the Amalienborg→Opera axis. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8658558d4)
+- **Packing master-list callout** plus a **speed-of-light cross-link** — reaching the Seattle dev box from Sweden costs ~170 ms. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1a82bce2a)
+
+### My Packing Master List (new page!)
+
+**[/packing](/packing)** — a durable, trip-agnostic packing checklist that every specific trip is trimmed from (an items-plus-decisions list, split Road-trip vs Airplane). Landed this week via PR #711 with Igor's review notes applied: Magic restructured around a belt-clipped "pocket kit" (two yellow cases — card sleeves; "You are awesome" + special cards), a neck brace for flights, a gym-locker lock, 3× compressible travel cubes, and a cross-link to the tirzepatide fridge-med section. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/feb1c4d60) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1dbe88d79)
+
+### Life Journal: Speed of Light from Sweden (2026-07-06)
+
+**[/life-journal#speed-of-light-from-sweden](/life-journal#speed-of-light-from-sweden)** — working from Sweden against a Seattle dev box, the speed of light finally showed up as a number Igor could feel. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/c649c5373)
+
+- ~7 ms reaches the edge of Seattle; a single transatlantic backbone hop (Lumen Seattle → Colt Stockholm) adds **+163 ms** by itself; the Stockholm last mile is basically free (~170 ms total).
+- **The physics floor:** light in glass ≈ 204,000 km/s and Seattle→Stockholm is ~7,600 km great-circle, so the hard floor is ~74 ms round-trip in fiber (~51 ms in vacuum). The observed ~163 ms is ~2.2× the floor — because real fiber doesn't fly the great circle: ~163 ms implies ~16,500 km of actual glass, down the US and across the North Atlantic. "Physics sets the floor; geography sends the bill."
+
+### Other Projects (2026-07-06)
+
+**[Scandinavian Whirlwind 2026](https://idvorkin-ai-tools.github.io/scandinavia-2026/)** (trip site) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026)
+
+- **9 field-map explainers** brought into the repo and wired into the trip site — 7 city deep-dives (Reykjavík, Copenhagen, Stockholm, Oslo, Bergen, Voss, Amsterdam) plus 2 topical (Napoleonic Wars in Scandinavia, cathodic protection), each with a "Back to the trip map" pill and a "Deep dive" link off its city page. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/0788a2dba)
+- **Scandinavia War Context Pack** — 6 new history explainers plus a chronological pack index (`wars.html`): Viking Age, Denmark vs Sweden, Swedish Empire & the Thirty Years' War, Great Northern War, WWII in the Nordics, and Cold War / Arctic — a 7-page timeline (with the existing Napoleonic explainer) cross-linking the cities. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/9759c20c6)
+- **Marble Church** deep-dive page added (PR #5). [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/89bd6780c)
+
+**[AI Safety — A Field Map](https://idvorkin-ai-tools.github.io/ai-safety-field-map/)** (new explainer site) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/ai-safety-field-map)
+
+- A technical field map for engineers entering AI alignment — a spine plus ~25 deep-dive pages across **approaches** (RLHF, red-teaming, scalable oversight), **evals** (METR, AISI, dangerous-capability evals, responsible scaling), **failures** (deceptive alignment, mesa-optimization, reward hacking, specification gaming, power-seeking, goal misgeneralization), **interpretability** (circuits, mech-interp, sparse autoencoders, superposition), and **papers** (Constitutional AI, Debate, Sleeper Agents, Weak-to-Strong). [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/ai-safety-field-map/commit/530e09ac2)
+
+**[blob](https://github.com/idvorkin/blob)** (image assets)
+
+- Added `raccoon-maybe.webp` — the shrug header for the new /maybe post. [<i class="fa fa-github"></i>](https://github.com/idvorkin/blob/commit/c5e238c46)
+
+## Week of 2026-06-29
+
+_18 commits this week_
+
+### Trusts in Washington (new post!)
+
+**[/trusts](/trusts)** — a native WA estate-planning guide covering the living trust → credit shelter trust → QTIP/QDOT stack. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4259c6d19)
+
+Most estate-planning content online talks to lawyers or ignores where you live. This post is the WA-specific version:
+
+- **Revocable living trust** — what it actually does (avoids probate, privacy, incapacity planning) vs. what it doesn't (zero tax savings while alive — it's a grantor trust, still fully in your taxable estate).
+- **Credit shelter trust (CST)** — funded at the first spouse's death with up to one WA exemption (~$3M, 2026). Surviving spouse can still benefit (income + principal for health/education/maintenance), but the trust assets are excluded from their estate at second death. WA has **no spousal portability** — without a CST, the first-to-die's ~$3M exemption is simply lost. On a $10M estate: roughly **$550K saved**.
+- **The basis tradeoff** — CST assets get one step-up (first death) but no second step-up. You're trading WA estate tax saved (up to ~20% of one exemption) against potential future capital-gains cost.
+- **Non-citizen spouse (green-card holder)?** — the unlimited marital deduction only works when the surviving spouse is a citizen. If the survivor is non-citizen, add a **QDOT** to defer the tax. A "contingent QDOT" covers both orders of death; naturalizing before first death removes the issue entirely.
+- **Worked examples** including break-even math: at what future appreciation does a CST stop being worth it?
+
+Intro rewritten in Igor's article voice — no law-firm boilerplate. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/9873e6fbf) Companion to **[/taxes](/taxes)** (step-up in basis, capital gains, retirement accounts).
+
+### AI Training: Post-Training Methods Table
+
+**[/ai-training#post-training](/ai-training#post-training)** — replaced bullet-list overview with a six-column comparison table across SFT, RLHF, DPO, and RLVR. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/a0f500ff3)
+
+These four methods form a lineage — the table maps each one on: how it learns, who grades the output, whether a separate reward model is needed, what it's best for, and the key watch-out:
+
+- **SFT** — imitates curated answers (next-token loss on prompt→ideal-answer pairs). First and biggest behavior shift; bounded by demo quality.
+- **RLHF** — RL via PPO against a learned reward model. Humans rank outputs A-vs-B. Heavy pipeline; reward-model drift risk.
+- **DPO** — same A-vs-B preferences, but optimized directly as a classification loss — no RL loop, no separate reward model. Simpler and more stable than RLHF, most of the benefit.
+- **RLVR** — RL from verifiable rewards: reward = "did it get the right answer." The engine behind o1-style reasoning models. Only works where answers are checkable.
+- **RLAIF** — now called out separately as RLHF's cheap scalable variant (AI judge instead of humans).
+
+Also added cross-links from the deployment/serving section to [/ai-inference](/ai-inference). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/5e4118568)
+
+### Time Off: Arthur Brooks' 9 Vacation Rules
+
+**[/timeoff#appendix-9-rules-for-a-happier-vacation-arthur-brooks](/timeoff#appendix-9-rules-for-a-happier-vacation-arthur-brooks)** — distillation of Arthur Brooks' Office Hours episode on vacation science. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/612026656)
+
+Brooks frames it as "me-search" — a fellow workaholic figuring out how to actually take time off. Nine rules with the science cited:
+
+- **Discern your motive before booking** — six core Danish tourist motive types (exploration, escape, relationship-deepening, prestige, nature, history). Mismatch of motive to trip design = unhappy vacation.
+- **Savor the anticipation** — happiness rises in the _weeks before_ departure (Dutch/Chinese vacationer studies). It's dopamine feeding on the wanting; over-inflate it into a fantasy and you'll be disappointed.
+- **Break one big trip into smaller vacationettes** — fifteen long weekends beat one month away for durable afterglow. Next break always around the corner.
+- **Take fewer pictures** — photographing pulls you into future-past instead of the present. Estimated 15–20% enjoyment reduction. Compromise: one designated photographer per day, everyone else off duty.
+- **Don't post** — prestige motive (social comparison) hijacking your trip. Posting for others' envy reliably makes you enjoy it less (Journal of Consumer Research, 2018).
+- **Leave work at home** — work activities lower vacation's positive effects 1, 3, and 10 days after returning (Stress and Health). Read something generative instead.
+- **Come home early** — don't travel up to the last second; a buffer before re-entry becomes a mini second vacation.
+
+Full transcript in an [unlisted gist](https://gist.github.com/idvorkin-ai-tools/d22b29fea197d9d9f027092df4d1d4ad). Also: the July 2026 trip page ([/timeoff-2026-07](/timeoff-2026-07)) now links directly to the Scandinavian city-by-city [trip guide site](https://idvorkin-ai-tools.github.io/scandinavia-2026/). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/664352f8a)
+
+### Life & Health Notes (2026-06-29)
+
+- **[/life-journal](/life-journal#happy-fluff) — "Happy Fluff"** (2026-07-01): saw a tub labeled **HAPPY FLUFF** on a café shelf and recognized it as the goal in life. Cotton candy is [Dealer of Smiles and Wonder](/eulogy) in a tub — "nearly weightless, no nutritional value, but brings people joy anyway. Leave a little in every room, walk away smiling." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/90a696255)
+- **[/timeoff](/timeoff#vegetation) — vegetation recovery is faster now** (2026-07-02): draining work stress into real rest "used to take a solid week — but these days I can do it in about a day. I guess I'm getting better at work-life balance." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/42f6af25f)
+- **[/four-healths](/four-healths) — "a thousand wishes"** (2026-07-03): new aphorism in the Physical Health section — _"A healthy person has a thousand wishes; a sick person has only one."_ Lose your health and every other want collapses into the one — to be well again. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/46cc4d30a)
+
+### Other Projects (2026-06-29)
+
+- **ai-policy** — AI-slop content percentage bumped from 50% to 80%. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d3ffb4a0f)
+- **[quack-track](https://github.com/idvorkin-ai-tools/quack-track)** — new repo stub created. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/quack-track/commit/7952b0809)
+
+## Week of 2026-06-22
+
+_7 commits this week_
+
+### AI Journal: Yegge's Flat Curve Society
+
+**[/ai-journal#2026-06-22](/ai-journal#2026-06-22)** — "Steve Yegge's Flat Curve Society: The Plateau Is Good News for Engineers." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/817e14b91)
+
+Yegge's core reframe: AI capability keeps climbing exponentially, but most of us will _experience_ a flat curve — not because the models plateau, but because we each hit two personal ceilings:
+
+- **Demand Horizon** — you stop perceiving model improvements because your problems don't stretch them. Antidote: maintain "pocket evals" — unsolved problems you throw at each new model to actually feel the delta.
+- **Discernment Horizon** — the darker one: past some capability level, there's no human who can verify the output because checking the work is itself beyond them. "Everyone has a discernment horizon, even Dario." Ties straight to the [verification-as-trust](/ai-journal#when-ai-shows-its-work-verification-as-trust) thread — verification is the bottleneck, and it has a personal horizon.
+
+AI literacy is measurable in tokens burned per day: 0M (non-users) → 4M (single-agent, synchronous) → 12–15M (multi-agent, async). People jump cohorts in ~5 hours of hands-on training on real work, manager in the room, during work hours. "AI Literacy does not come for free. The only thing you get for free is AI Anxiety." Advanced literacy flips from max-spend to min-waste: routing each task to the minimum capable model.
+
+The hopeful punchline: "a plateau lets us set up a camp and start building. We've been on unstable ground."
+
+### AI Operator: You Review More Than You Make
+
+**[/ai-operator#you-review-more-than-you-make](/ai-operator#you-review-more-than-you-make)** — new section on the token-budget asymmetry between making and reviewing. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1ed270b70)
+
+Reacting to a draft costs far fewer thinking tokens than generating from scratch. Staring at a blank page is expensive; looking at something already on the page and saying "yes, no, this bit's wrong" is cheap. Editors aren't as tired as writers for a reason.
+
+A generated draft returns more inspiration than it costs to read — it sparks the idea you didn't have, shows the shape of the thing, and gives judgment something to push against. And because the draft is cheap, it's obvious which parts are throwaway: spend scarce attention only on the 10% that's load-bearing and let the rest stay rough. Practical upshot: load a batch of asks onto the AI, let it do the slog, spend your budget only on review and direction.
+
+### Addiction: Monoculture Trap
+
+**[/addiction#dont-narrow-to-one-passion-the-monoculture-trap](/addiction#dont-narrow-to-one-passion-the-monoculture-trap)** — new subsection on the hidden risk of narrowing to a single passion. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d090befd7)
+
+The trap isn't a single passion eating your time — it's letting it become your _only_ passion. When one dominates, the others atrophy from neglect. That's fragile, because passions break: the project ends, the body gives out, the thing stops loving you back. When it does, the others can't carry you because they've withered. Down on all fronts at once.
+
+Solution: keep a portfolio of passions alive, even at lower intensity. When one's down, the others carry you. Monoculture is fragile; diversification is what lets you take a hit on one front and stay standing.
+
+### AI Security: Field-Map Explainers
+
+**[/ai-security](/ai-security)** — two companion explainer sites now linked from a top info alert: [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/c67946120)
+
+- **[AI Red-Teaming ramp-up](https://idvorkin-ai-tools.github.io/red-teaming-ramp-up/)** — OWASP LLM Top 10, the jailbreak canon, tooling, evals — a field map for security people crossing into AI.
+- **[AI Safety field map](https://idvorkin-ai-tools.github.io/ai-safety-field-map/)** — failure modes, alignment, interpretability, evals, governance — the safety-side companion.
+
+### Other Projects (2026-06-22)
+
+**[red-teaming-ramp-up](https://idvorkin-ai-tools.github.io/red-teaming-ramp-up/)** (explainer site) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/red-teaming-ramp-up)
+
+New static explainer site launched this week — a ramp-up map for red teaming AI systems:
+
+- **OWASP LLM Top 10** — per-risk explainer pages (LLM01–LLM10), each linking the official OWASP GenAI page [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/red-teaming-ramp-up/commit/08d4f0327)
+- **Canon papers** — per-paper explainers for GCG, AutoDAN, PAIR, TAP, Crescendo, Many-shot jailbreak, PAP — each with the source paper linked [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/red-teaming-ramp-up/commit/029865630)
+- **Tools & benchmarks** — Garak, PyRIT, Promptfoo, LLM Guard, NeMo Guardrails; AdvBench, HarmBench, JailbreakBench, DecodingTrust [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/red-teaming-ramp-up/commit/08d4f0327)
+- **Scaling laws foundations** — Kaplan 2020 + Chinchilla 2022, compute-optimal ratio, emergence/inverse-scaling [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/red-teaming-ramp-up/commit/05bbb4a7b)
+
+**[ai-safety-field-map](https://idvorkin-ai-tools.github.io/ai-safety-field-map/)** (explainer site) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/ai-safety-field-map) — companion safety-side field map launched. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/ai-safety-field-map/commit/e55416ba9)
+
+**[scandinavia-2026](https://github.com/idvorkin-ai-tools/scandinavia-2026)** — city-by-city trip guide repo for the Dvorkins' Jun–Jul 2026 Scandinavian tour (Iceland → Denmark → Sweden → Norway → Netherlands). [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/e55416ba9)
+
+## Week of 2026-06-15
+
+_19 blog commits + 20 Settings fixes this week_
+
+### Why Gas City (new post!)
+
+**[/why-gas-city](/why-gas-city) — the philosophical hub**, written as the map all the other Gas City posts hang off of. The question isn't _how_ it works — it's _why_, given that you already have Claude plus a stack of `CLAUDE.md` files. The answer: Gas City isn't a smarter agent. It's the layer that turns work into something durable that many agents can pick up, run, and hand off — without babysitting any of them. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/b0b24e3cb) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/5432106e1)
+
+Key arguments unpacked in the post:
+
+- **The four-rung ladder**: Just Claude → Claude + `CLAUDE.md` → parallel agents → multi-step coordinated work. Gas City is rung four with the coordination built in.
+- **`CLAUDE.md` vs. Gas City**: `CLAUDE.md` is _context_ — the briefing an agent reads on the way in, per-session, evaporating on close. Gas City is _work orchestration_ — durable record of what needs doing, what's blocked, who's doing it, spanning agents and sessions. They compose: the city puts the agent in the right repo so `CLAUDE.md` loads automatically.
+- **Work is the primitive**: Most multi-agent frameworks start by asking "what are the agents?" and bake that in. Gas City asks "what is _work_?", makes it durable, and lets agents be configuration on top.
+- **Won't the providers just build this in?** They're trying — but a city keeps as _inputs_ three things the built-in versions bake in: the model (a config value, not a given), the harness (yours, not theirs), and steerability (behaviors are config you control, not a black box you're coaxing).
+- **When it's worth it**: The rule is _match the altitude of the tool to the altitude of the decision_. One run cost $9 and 32 Opus turns for a 13-line change — absurd for that change alone. Justified by the run where an agent read a 346-node diff, determined it was build-artifact noise, and refused to open the PR. That judgment call is worth an expensive model; `git add` is not.
+
+### Gas City: Controller Loop + Runtime Providers
+
+**[/gas-city](/gas-city)** gained two architecture concepts and a DeepWiki link: [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/db4f8d310) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/b10487475)
+
+- **Controller loop**: GUPP (the per-agent propulsion rule) keeps each piston firing, but something has to keep the agents themselves running. That's the controller — a loop holding two pictures of the city side by side: _desired_ state (computed from config and open beads) vs. _actual_ state (what the runtime is really doing). It closes the gap by spawning what's missing and reaping what's orphaned. The docs call this **convergence** — the same idea Kubernetes built its reputation on. Igor's idle-polecat bug was a convergence gap as much as a propulsion one: the controller believed it had hit desired state, but the actual state held a stalled worker it couldn't see.
+- **Runtime providers**: The `city.toml` `provider` block names the substrate agents actually run on — local subprocesses, tmux sessions, Kubernetes pods. Same city definition, different provider = same agents running somewhere else. _"The work shape is portable; the substrate is a deployment detail."_
+- **DeepWiki**: added a link to the [auto-generated DeepWiki overview](https://deepwiki.com/gastownhall/gascity) as a machine's-eye tour of the whole system.
+
+### AI-Native Vocab: Reverse Centaur
+
+**[/ai-native-vocab](/ai-native-vocab)** — new entry for **Reverse Centaur**. ([blog](/ai-native-vocab#reverse-centaur)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/a8e403033) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/5cd66c062)
+
+A [centaur](https://pluralistic.net/2025/12/05/pop-that-bubble/) is a human assisted by a machine: the human is the head, the machine is the body — your judgment in charge, its horsepower doing the lifting. A **reverse centaur** flips the anatomy: the AI is the head, but it has no hands, so it wears a human as its body. The person becomes the appendage — doing the parts the machine can't reach, at the machine's pace. Cory Doctorow's example is the Amazon delivery driver hemmed in by in-cab AI cameras, a living peripheral for a van that can't carry a parcel to the porch. Whether it's dystopian or merely efficient comes down to who's holding the reins.
+
+### AI Journal: API Key Leak Forensics
+
+**[/ai-journal#2026-06-13](/ai-journal#2026-06-13)** — "My API Key Was Public for a Year." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/076ce4330)
+
+A live Anthropic API key sat in Igor's public [`idvorkin/Settings`](https://github.com/idvorkin/Settings) repo for ~12 months — committed 2025-05-26 in a chop-log auto-captured during a code review session, where a `ps` dump spilled the env (Gas City exports ~20 secrets into every shell via `export_secrets`). The agent did the forensic grind no human sits down for:
+
+- **Found it**: live key in a public `.md` in git history, committed 2025-05-26.
+- **Proved it was live**: `GET /v1/models` → `200`. Working key, not expired.
+- **Mapped blast radius**: diffed every value in private `secretBox.json` against public repo's full git history. Found one more (AssemblyAI key, same commit). Everything else clean.
+- **Confirmed revocation**: revoked in console, re-probed → `401`. Dead, verified.
+
+Two uncomfortable parts: the key was never needed (Claude Code runs on Max subscription; the inherited env key was silently billing per-token), and the auto-capture pipeline had no secret filter — a hook committing session transcripts to a tracked public repo ran for a year before anyone noticed. A key public that long should be assumed harvested.
+
+### Infrastructure & CI (2026-06-15)
+
+- **Backlinks rebuild speed**: `jekyll-build` is now a dependency of `update-backlinks`, shaving ~5s vs. the prior clean rebuild. Formula now calls one command. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/22f5a4f51) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/02b099c98) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/a390aca0f)
+- **Gas City ai-journal formulas**: `ai-journal-new` and `ai-journal-revise` Gas City formulas added. `ai-journal-revise` enumerates open PR review threads via GraphQL and enforces a verify-addressed gate before closing. `ai-journal-new` rebuilds `back-links.json` as part of the entry workflow. Tracking-bead id now carried in PR description. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/841df28a5) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2ee054976) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1f9144b74) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/5a3b600a6)
+- **Backlinks rebuild refactor**: extracted as a shared expansion formula, reusable across journal formulas. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/9b7c008a2)
+
+### Other Projects (2026-06-15)
+
+**[Settings](https://github.com/idvorkin/Settings)** (dotfiles & tools) — big sweep of bug fixes, all merged from `idvorkin-ai-tools` PRs:
+
+- **Security**: redact leaked API keys from chop-log env dump — direct response to the API key incident above. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/fd4145142) [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/1aade5bf3)
+- **`y` (launchctl wrapper)**: prefer `kickstart` over `bootstrap` for start; fix `reset`/`start`/`stop` via launchctl; fix `cycle` crashing instead of stopping; Alfred JSON corrupted by `rich` print — now emits clean JSON. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/f28cefdd4) [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/5f64fc1b1) [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/e13b54306)
+- **`agent-continue`**: fix macOS support — no `/proc` on macOS. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/8c05a21bd)
+- **`amazon2monarch`**: zero-cost filter, comma amounts, Tags column, proper exit code. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/b110d4c95)
+- **`gmail_reader`**: stop swallowing `typer.Exit` and refresh errors. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/b5f1f4c45)
+- **`brew_check`**: don't crash when `brew` is not installed. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/a2c178c56)
+- **`tmux_helper`**: scope session pane listing to the session, not the server. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/50a53ba64)
+- **`vim_python`**: include `_td` posts in `RandomBlogPost` candidates. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/488066790)
+- **`a` (Alfred launcher)**: w4 was going to workspace 3; Alfred emitted underscored command names. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/9540030ed)
+- **`install_packages`**: add editable install of local `idvorkin_scripts`. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/ed25b0a84)
+
+## Week of 2026-06-08
+
+_31 commits this week_
+
+### AI Training & Inference (new posts!)
+
+Two major additions to the AI education cluster:
+
+- **[/ai-training](/ai-training) — full rework**: reframed around three roles (engineering, science, alchemy) rather than raw mechanics. New spine: pre-training → post-training → deployment. New sections on RLVR ("the secret sauce"), how to choose between fine-tuning, RAG, and the harness, SWE-bench + Terminal-bench as evals for coding competence, and a lineage tree of post-training methods. Datasets grouped into training data vs. evals/benchmarks. Added the [How to Train Your Goblin](https://www.youtube.com/watch?v=eMmHxGJBD6I) RL post-training explainer. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/55da0620a) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4964fdfe1) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/59f8e1ed8) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2ab4c0821)
+
+- **[/ai-inference](/ai-inference) — new post**: serving tokens cheaply. The cost/latency/throughput triangle you can't escape. Prefill (compute-bound, sets time-to-first-token) vs. decode (memory-bandwidth-bound, why long outputs feel slow). KV cache mechanics and why long contexts cost more. Quantization for speed not just size. MoE explained with real numbers (DeepSeek-V3: 671B params, 37B active per token). Speculative decoding as provably-identical free speedup. Continuous batching + PagedAttention (vLLM, 40% → 96% cache utilization). The actual question to ask when picking GPU: GB/s, not TFLOPs. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/55da0620a)
+
+### Gas City First Rig (new post!)
+
+**[/gas-city-rig](/gas-city-rig) — written by the agent itself** (100% AI-slop). The agent who built this post narrates Igor's first Gas City weekend: building `gc` from HEAD (the ICU/CGO linker trap that cost an evening), the beads-in-city / pack-in-rig mental model that unblocked the collision, and the `blog-backlinks` formula that became the first useful automated workflow.
+
+The honest part: one run cost **$9 and 32 Opus turns** for a 13-line change. The part that justified it: an agent saw a 346-node `back-links.json` diff, determined every changed line was `doc_size` noise with identical link graph, and **refused to open the PR**. The agent describes running that same verify gate on its own diff while writing the post. The Ruby subplot: Igor built a compat shim for `tainted?` to survive Ruby 4, then discovered Liquid already guards the call with `respond_to?` — the shim was defending against a crash that doesn't happen. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8cb5efdd8)
+
+### Gas City: Scale Up/Out + Getting Started
+
+**[/gas-city](/gas-city)** augmented with the scale up/out conceptual frame: vertical (better tools, CLAUDE.md, skills) vs. horizontal (many agents that coordinate via beads). New "Getting started — mechanics in practice" section: crew vs. pool in config, the vapor-wisp shape (`blog-backlinks` as `phase = "vapor"`), and how mail is just a bead (`type: "message"`) — no separate message bus. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4e31d726c)
+
+### AI-Native: Onboarding, Vocab, and Optimism
+
+Three additions to the AI-native cluster:
+
+- **[/ai-native-onboarding](/ai-native-onboarding) — new post**: "Your First 90 Days." The reframe: you're not the only new hire — you're onboarding yourself and a whole roster of AI agents simultaneously. Your CLAUDE.md is the onboarding notebook the whole team reads. Day 0–30 (learn): codebase as interactive tutor, but treat confident answers as leads to verify. Day 30–60 (contribute): your first PR can be bigger — and that's the trap; stay human-in-the-loop, read every line. Day 60–90 (own): the compounding pays off; judgment is the job. The one thing to get right: capture your confusion before it fades, for yourself and for every agent session you'll ever spin up. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/ebaee7782)
+
+- **[/ai-native-vocab](/ai-native-vocab) — Year of Wonder entry**: "The optimist's read on the same AI moment that's exhausting everyone: this is the most creative period in the history of software." Twin of the Year of Chaos. The choice isn't about being right — both frames are true. The choice is which one you orient around: chaos points you to defense, wonder points you to offense. Also: the vocab glossary split from `/ai-native-manager` into its own standalone page. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0d3344e48) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f28e7aa7f)
+
+- **[/ai-optimism](/ai-optimism) — DHH on open source**: folded in DHH's case that banning AI-assisted contributions is the founding vision eating itself. The tell is Nietzsche's _ressentiment_: "how dare you make software without suffering through all that I had to endure." The barrier used to be the compliance lawyer's retainer; now it's a contribution policy. Either way it's gatekeeping who gets to start. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/9bd493a0f)
+
+### Life: Decline and Psychic Weight
+
+- **[/42](/42) — Decline section**: anchored on "No one looks 50. They either look 40 because they're fighting for their life, or 60 because they gave up." The gap is a prophecy you write in your 40s. Decline is real; the rate is negotiable; the story you tell yourself sets the dial. Three things to hold: move toward the fight, don't pre-retire your body, audit the "I'm too old" reflex. ([blog](/42#decline---the-self-fulfilling-prophecy)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/bff8bd48b)
+
+- **[/psychic-weight](/psychic-weight) — new section on stuff**: "Clutter isn't a collection — it's a pile of decisions I stopped making." Every undecided object is an open loop. The car boot sale framing: the value of a life was never sitting on those tables, it's in the people, walks, conversations. What to leave behind isn't a fuller table — it's lighter hands. ([blog](/psychic-weight#the-psychic-weight-of-stuff)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/64c7be166)
+
+### Infrastructure & CI (2026-06-08)
+
+- **Gas City blog integration**: `blog-backlinks` pack added to the rig (formula + blogsmith agent). Fixed rig-relative `work_dir` and correct PR base/fetch after a 22-file bad-base PR. De-overlapped build step, retired dead `push-backlinks`. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/888284558) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/ee4848499) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1f5c33a43)
+- **Ruby 3.1 dropped**: CI bumped to 3.2, obsolete fallback removed. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0a2fe0929)
+- **Jekyll serve port coexistence**: `just jekyll-serve` now uses `running-servers run` to coexist on a free port rather than crashing when 4000 is taken. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/702cc0cef)
+- **CLAUDE.md hardening**: fixed Ruby-4.x build claim (Liquid guards `tainted?` with `respond_to?`), added upstream-branch and content-commit rules. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/26e3ff05b)
+- **Pre-commit**: fixed typos hook to actually exclude `back-links.json`. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/38b22cf1f)
+- **AI-native raccoon social cards**: new `ai_default_image` frontmatter property sets `og:image` on AI posts lacking their own feature image; new `raccoon-ai-native.webp` + `raccoon-ai-native-transparent.webp` added to blob repo. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f48f2f1e7)
+
+### chop-conventions (2026-06-08)
+
+- **[chop-conventions](https://github.com/idvorkin/chop-conventions)** — added 'Metal AI twin' recipe to gen-image docs: how to generate the chrome raccoon twin (same silhouette in iridescent anodized metal) anchored on a reference image to lock shape. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/723b1f70e)
+
+### Other Projects (2026-06-08)
 
 **[Settings](https://github.com/idvorkin/Settings)** (dotfiles & tools)
 
-- **`rmux_helper pick-links` — scrollback link picker** ([PR #69](https://github.com/idvorkin/Settings/pull/69)) — New `ratatui` TUI popup that scans the current tmux pane's scrollback for **9 link categories**: PRs, Issues, Commits, Files, Repos, Blog posts, other URLs, ssh servers, IPv4 addresses. Parallel GitHub enrichment via `tokio::task::JoinSet` with an 8-wide semaphore and a 3-second shared wall-clock deadline; on-disk cache at `~/.cache/rmux_helper/gh-links.json` (1h TTL, atomic write). Tree view with drill-down, filter tokenizer, ANSI-preserved preview. Actions: OSC 52 yank, `gh … --web`, `tmux new-window ssh`, `F2` bidirectional swap with `pick-tui`. Binding: `C-a L` launches the popup at 95% × 95%. 54 new tests (125 total passing). [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/8be8ba0d4)
-- **`y ou` — open clipboard URL** ([PR #70](https://github.com/idvorkin/Settings/pull/70)) — New `y` subcommand that opens whatever URL is currently in the clipboard in the default browser. Tiny, but fills the real gap between "copy URL from somewhere" and "actually look at it." [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/5ee752b53)
-- **link-picker follow-ups** ([PR #71](https://github.com/idvorkin/Settings/pull/71)) — Adds a Gist category and fixes hard-wrapped multi-line URL joining (terminal wraps a URL across two lines, detection would break). [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/c2dd59886)
+- **running-servers**: new port-conflict-aware `run` command (starts a server on a free port, coexists with other repos' servers) and `version` subcommand. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/f915e5be7)
+- **running-servers**: `check` now surfaces cross-directory port conflicts. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/6dc42181e)
+- **shell**: unaliased `gc` so the Gas City binary isn't shadowed by the old git-commit alias. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/2a3069bf0)
+- **alfred**: synced snippets (added 'Do another rev' snippet). [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/4a8e804a0)
+
+**[gascity](https://github.com/idvorkin-ai-tools/gascity)** (Gas City platform — upstream)
+
+Active upstream week: Groq + Cerebras provider presets added; Agent Comms panel in dashboard; sling detects dependency cycles at sling time; tally aggregation control step; reaper graph-v2 edge cleanup; supervisor Host hardening; kiro overlay fix (prevent stuck sessions); tmux durable mouse-wheel scrollback; beads `bd list --skip-labels` gated behind bd 1.0.5+ version probe; reconciler O(tree) BFS replaced with `gc.root_bead_id` membership query; per-clone rig suspension moved to runtime file; transcript list API gains `order=desc + Limit/AfterSequence`. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/gascity/commit/d3073929b) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/gascity/commit/8a560161e) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/gascity/commit/98c32ee63)
+
+## Week of 2026-06-01
+
+_33 commits this week_
+
+### The Dark Factory (new post!)
+
+**[/dark-factory](/dark-factory)** — extracted from the ai-native-manager glossary into a standalone post and developed from first principles. A "dark factory" is lights-out manufacturing (robots don't need to see); the software version is the **dark codebase** where AI writes, reviews, and merges with no human in the implementation loop. Automation is a knob; a dark factory is a _state_ — production decoupled from labor. The spine is three limits on how far it can go: [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d2e44ec66)
+
+- **Verification** (the one everyone names) — can you tell whether the output is right? Cheap verification (fast tests, strong types, a hill-climbable eval) lets the AI run hot.
+- **Progress** (the one they miss) — even with a perfect oracle, is there a good move to find? Progress decays with complexity through three zones: the **Easy Zone** (every change local — where the weekend-app demos live), the **Complexity Wall** (changes stop being local, more attempts per win), and **Complexity Collapse** (no move improves the whole; whack-a-mole with more moles than holes). Igor's swing analyzer hit it — the agent had quietly built _two_ parallel UX implementations, one React and one jQuery. Same failure as a room of only juniors: no architect, no single right place to make a change.
+- **Cost** (the one nobody understands yet) — tokens run at the speed of thought, and cost-per-fix spikes exactly as you approach collapse; sometimes the economically rational move is to throw the system away and regenerate it.
+
+The ai-native-manager glossary entry was replaced with a summarize-page include, "Dark Factory" added to its New Words appendix, and the AI-slop label set to 80%. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/66702a2d4) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1568f13a1)
+
+### Made to Stick (new post!)
+
+**[/made-to-stick](/made-to-stick)** — full book notes on Chip & Dan Heath's _Made to Stick_. Six traits of ideas that stick spell **SUCCESs**: Simple, Unexpected, Concrete, Credible, Emotional, Stories. The villain the whole way is the **Curse of Knowledge** — once you know something you can't remember what it was like not to know it, so you bury the lead and talk in abstractions nobody feels. A chapter per trait: find-the-core + don't-bury-the-lead (Simple), break-then-fix the guessing machine + curiosity gaps (Unexpected), the Velcro theory of memory (Concrete), the Sinatra Test + "statistics show a relationship, not a number" (Credible), appeal to identity not just self-interest (Emotional), springboard stories + Jared (Stories). "This is a nurture book — sticky ideas are made, not born." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/c48bdad77) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/98894d497)
+
+### AI Journal: Friction = Focus
+
+New entry [2026-05-31](/ai-journal#2026-05-31) — a riff on hmmz.org's "AI is an attention hazard": _"a tool producing a cheap reward with minimal input and no friction can only be a liability."_ Igor's version: **when production gets this cheap it collapses into [consumption](/produce-consume) and loses the footprint that made it worth anything** — fifty half-built apps leave about as much behind as a thousand hours of TikTok. The uncomfortable part: he _is_ the fifty-projects guy who built [a multi-agent city](/gas-city) — the "five rooms to manage your agents" the source recoils from. What saves it isn't willpower but designed-in friction: handwriting the day's plan on a Kindle Scribe before any screen ([DS20](/mortality-software)). Two things AI didn't retire — **mastery** (reps you chose) and **essentialism** ("Know Essential. Prioritize Ruthlessly." — choosing what's worth producing is the whole game once production is free). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/a25db3856) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6a6eefd73)
+
+### Scandinavian Whirlwind Tour (new page!)
+
+**[/timeoff-2026-07](/timeoff-2026-07)** — new trip page for the July 2026 family trip: 22 days, 5 countries, 4 Dvorkins — Reykjavík → Copenhagen → Stockholm → Oslo → the Norwegian fjords (Aurland / Voss / Bergen) → Amsterdam, home Jul 19. First trip of this scope as a family — the kids are 16 and 14, both still home, and "the window for all four of us on the road together closes faster than I'd like." Goals framed off the eulogy: live the Father role (quality time over mere presence), balloon while traveling, and the hard one — disconnect from work without letting [Calibration Collapse](/y26) eat the trip (Meta PSC feedback lands mid-Oslo, calibration runs Bergen → home). Per-leg activity lists plus a Google Maps route overview + per-leg pins. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/37ec9d84a) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/198db473e) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6be4a07a5)
+
+### Meta: Moving to the AI Lab
+
+**[/meta](/meta#moving-to-metas-ai-lab-2026)** — the page was renamed Facebook → Meta (permalink swapped to `/meta`) and gained a new AI-Lab section written in Igor's own voice: in May 2026 he "got flattened (M→IC)" and moved into Meta's AI training org — not severance, a reassignment to what's arguably a frontier lab. The role is still undefined (building training data to start); he's holding two scenarios calmly ("within three more vests I'll be laid off, and that's okay" vs. "if we're successful, my god, we could make a killing on the stock"). The upside: his day job now lines up with the [CHOP](/chop) / vibe-coding he'd been doing on the side anyway — bigger sandbox, no manager hat. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/da3d3ffa0) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2158a1628)
+
+### Content Tweaks (2026-06-01)
+
+- **[/gap-year](/gap-year)** — Dragons section aligned with the canonical Three Dragons framework (Entropy, Squander, Scarcity). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4df02023c)
+- **[/y2026](/y2026)** — Dragon Spawn and Extend-to-Year-2 sections moved to an appendix, then the Extend-to-Year-2 test moved back into the main body. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/a6a6ef021) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/a166ec412)
+- **[/produce-consume](/produce-consume)** — added a summarize-page link per blog convention. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/409d0a663)
+- **[/gas-city](/gas-city)** — updated the aside after gascity PR #3721 merged. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/31d7d92ad)
+- **[/podcast](/podcast)** — cover art switched to `blob_image_float_right` per convention. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/c0d29a526)
+
+### Infrastructure & CI (2026-06-01)
+
+- **Tag & cross-link index (`topics.json`)** — new regenerable index over all 336 published posts: dual-track (local fastembed embeddings + a one-agent-per-post LLM tagging fan-out) fused into a sidecar `topics.json` with clean tags, related-posts, named clusters, and a ranked missing-cross-link report. Gemini `gemini-embedding-001` powers the related-posts + cross-link-gap detection. Sidecar-first (no frontmatter diff in v1); runbook at `docs/topics-index.md`, raw LLM outputs checked in as provenance. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2e19ebae5) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/7a902df4e) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/574b16ec6) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/339e6be64) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6ae52e890)
+- **Ruby compat shim** now loaded in `jekyll-rebuild` & `worktree-init` (surfaced by the dark-factory build hitting the Ruby 3.1 path). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/20e6dd37e)
+
+### chop-conventions (2026-06-01)
+
+- **[chop-conventions](https://github.com/idvorkin/chop-conventions)** — gen-image gained `--fast` / `--no-fast` to pick Flash vs. Pro Gemini; and the magenta flood-fill background-removal path was ripped out entirely — **Recraft is now the only bg-removal path** (the "wrong jungle" lesson made permanent). [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/5af4a7a29) [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/182604d0c)
+
+### Other Projects (2026-06-01)
+
+**[context-grabber](https://github.com/idvorkin/context-grabber)** (iOS HealthKit + location exporter)
+
+- **Tabbed shell** — the app reorganized into Body / Move / Mind / Places / Roles tabs. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/54861c5c1)
+- **Roles tab** — role detail sheet, multi-role tagging on affirmation + grateful cards, bidirectional role↔journal linking, a bundled eulogy-song player, and CloudKit sync of `role_moments` across devices. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/84e094326) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/be2359f74) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/37f96e443)
+- **Places map** — swapped the stylized map for real Apple Maps tiles, today-scoped emoji pins with a diamond "current" marker, and a copy button. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/4cb864100) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/dc781bb55)
+- **JTBD v2.2** spec — "two-way mirror, two dragons." [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/ad23e0304)
+
+## Week of 2026-05-25
+
+_6 commits this week_
+
+### y2026: June Check-In
+
+**[/y2026](/y2026#physical-health)** — a mid-year physical-health check against the annual goals. The numbers drift the wrong way on weight (180 Jan → 185 June vs. a 170 goal ⚠️), hold the 5am wake target, and land gym at 3–5 d/week. Wins and setbacks: **swings** at 1H 8×32 ✅ and **TGU** as the comeback story (4×32 — "really tanked from the shoulder injury, got most of it back"); **chinups paused** on the shoulder; **half-lotus regressing** (60s → 30s from cold). June context: "tough stretch — my trainer quit, so I'm running solo programming; started going to Kettlebility gym classes to keep the structure." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/648c3b828) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/294a22893) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/32115d2aa)
+
+### Produce/Consume: The Production Trap
+
+**[/produce-consume](/produce-consume#the-production-trap)** — a new section warning that **production can become its own addiction**: the same dopamine loop that makes TikTok dangerous can hook you on shipping — "the hit of publishing, the notification of a new view." The tells look like virtue (skipping dinner to "just finish this post," measuring your day in commits and feeling hollow when the scoreboard doesn't move — "producing _at_ life instead of _living_ it"). It runs [the five-signal addiction test](/addiction) adapted for production, and reshapes the "consumers outnumber producers" framing away from win-language: "That's not a competition — it's a different game entirely." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/dde4a024f) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e0f6610ae) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f37bf85b1)
+
+### Other Projects (2026-05-25)
+
+**[context-grabber](https://github.com/idvorkin/context-grabber)** (iOS HealthKit + location exporter)
+
+- **Mac Catalyst** — the app now builds, launches, and renders its dashboard on macOS without HealthKit; also fixed an iOS linker regression from the Catalyst patch (libopus / libvorbis). [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/16a8f7088) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/0fa352795)
+
+## Week of 2026-05-18
+
+_27 commits this week_
+
+### What I Love About AI (new post!)
+
+New post at [/ai-optimism](/ai-optimism) — the optimism case for AI, anchored on Sergio: a guy with a vision for a STEM school who couldn't open one because the entry tax (compliance lawyer, curriculum consultant, admissions staff, development director) was out of reach. AI doesn't replace those professionals — it lets Sergio show up to each conversation already 80% of the way there, so the professionals get to do the genuinely hard parts. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/26871ddde)
+
+The anti-homogenization thesis is the spine: the doomer story says AI averages everything into beige. The actual dynamic goes the other way — when AI is the staff and the human is the operator, more specific human stories get shipped, not fewer. Every Sergio who opens his school is one less generic box. The post walks through four threads:
+
+- **AI helps you think** — hyper-personal tutoring, the AI second brain that knows your specific prior misconception, not the textbook one. "AI doesn't assume. AI asks. And then AI explains, and re-explains, and re-explains, and never gets bored."
+- **AI lets you create** — raccoon mascot system as the example: what once required commissioning an illustrator now closes in a weekend. _Taste_ is the bottleneck. AI multiplies whatever you bring.
+- **The small-business tax** — Bremerton stops being one district school + one private + a tutoring franchise; it becomes a dozen micro-schools each with a real teacher's real vision, because the entry tax collapsed.
+- **Doom rebuttal** — the horse-manure crisis (1898 NYC urban-planning conference broke up early because no one could see out of the projected horse-shit catastrophe; the automobile dissolved it overnight); the GPS/map-reading example; three objections each answered in a sentence. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/fa7d2052c)
+
+### Parenting Books: Emotional Lives + Untangled Rewrite
+
+Two Lisa Damour book-notes updates this week:
+
+**[/emotional-lives](/emotional-lives)** — New post: full notes on _The Emotional Lives of Teenagers_. Damour's central argument: mental health isn't feeling good — it's having the right feelings at the right time and being able to manage them. The wellness industry sold us the opposite. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/682976fd3)
+
+Five chapter treatments:
+
+- **Ch 1 — Three myths**: emotion vs. reason (anxiety is data, not noise); difficult emotions are bad (the breakup is how she gets stronger; substances halt maturation by skipping the pain); emotional = fragile (they hold it together at school, fall apart at home — the system _working_). Cold cognition plans the party; hot cognition attends it — rehearse the plan at the cold moment.
+- **Ch 2 — Gender and emotion**: boys distract to cope, girls discuss. Same hurt, different ripple. Help girls handle anger; help boys talk feelings. Adultification of Black teens as the compounding variable.
+- **Ch 3 — The seismic shift**: disgust-sensitivity for parents spikes at puberty (evolutionary: she can't afford you getting her sick). Risk-seeking is a feature (drives leaving the nest) not a bug. Starting life online changes peer formation timelines.
+- **Ch 4 — Expression playbook**: listen like a headline editor. "Oh my god, that stinks" beats problem-solving. Sharpen her emotional vocabulary. Take conversational openings when they come; don't manufacture them.
+- **Ch 5 — Control playbook**: expression first, control second. Distraction is a tool, not a failure. Sleep is the glue. Future-you perspective as the reframe lever. Regulate yourself first.
+
+**[/untangled](/untangled)** — Full rewrite in Igor 7h-c1 style: terse H3 headlines, 2-4 paragraph treatments per section. Seven developmental strands now fully covered with a worry-when for each. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/612e2d2ff)
+
+### Hyper-Personal: Bezos to Agent-to-Agent
+
+[/hyper-personal](/hyper-personal) got a major restructure this week — new opening, new hero image, new sections, and a cleaner spine. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/11413195f)
+
+**New intro**: Bezos vignette as the frame. He always had a personal chef, a butler, a tailor, an in-house physician — the Vanderbilts had the same staff a century ago. The desire was universal; what gated it was cost. Human attention scales 1:1, so personalization stayed scarce. "The big shift is the price." AI dropped marginal cost through the floor; the Bezos experience is becoming the everyone-default. And the AI version goes further: even Bezos's chef didn't know his blood glucose response to last week's pasta. New dimensions (biometric feedback, HRV, longitudinal pattern detection) that didn't exist at any price. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/bc1b9ac7d)
+
+**New ML-ranking progression section**: five stages from print-newspaper-everyone-sees-the-same to per-user generation, each stage named by what constraint it removed (popularity counter → collaborative filtering math → deep learning at scale → cheap-enough generation). The online progression and the physical-world progression are the same story told twice.
+
+**New agent-to-agent endpoint section**: every piece of content has an author agent holding the author's intent; every reader has a reader agent (their second brain). They negotiate the explanation — the author agent reformulates, the reader agent responds, and crucially the author agent runs a **fidelity check** on each reformulation so the simplification doesn't quietly drop signal. "Without the fidelity check, the reader agent would just reformulate toward the reader's existing model and you'd end up with hyper-personalized bullshit." One source, infinite tailored explanations, each verified against intent. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/11413195f)
+
+**Hero illustration**: Gilded-Age butler raccoon added as the `imagefeature` cover. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1cba1b24a)
+
+### Igor's Podcast Launch
+
+[/podcast](/podcast) now documents Igor's own audio feed — AI voiceover (Gemini 3.1 Flash TTS, Charon voice) of his essays, with chapter markers and Podcasting 2.0 sidecar JSON. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3c2dbed1a)
+
+- **RSS feed + subscribe URL**: `https://idvorkin-ai-tools.github.io/podcast/feed.xml` — plug into Overcast / Apple Podcasts / Pocket Casts.
+- **Voice catalog iframe** embedded under /podcast — 30 Gemini TTS prebuilt voices, tap to audition before subscribing. Hill-climbing variant: soprano-iteration uses a Gemini Pro model-as-judge to tune Charon toward Tony Soprano ([/hill-climbing#soprano-tune](/hill-climbing#soprano-tune-a-voice-prompt-with-a-model-as-judge)). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/730573f42)
+- **Transparent cover art** — raccoon-narrator at microphone, right-floated. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/46dc6d76c)
+
+### Raccoon System: 7H Marathon + Choice-Sheet Pattern
+
+The raccoon mascot system went from 16 to 23 images this week. The 7 Habits chapter posts each got a custom hero raccoon, generated in four iterations (v1→v4, 35 cells on the final pass) and picked via a click-to-pick HTML sheet. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6f088798d)
+
+Three lessons documented in [/raccoon-history#the-7-habits-marathon-may-2026](/raccoon-history#the-7-habits-marathon-may-2026):
+
+- **Reference images beat prompt prose**: passing `raccoon-nerd.webp` as a Gemini Pro reference locked canonical style 100% of the time. No amount of `IMPORTANT: rainbow glasses, mismatched Crocs…` text ever matched one reference image. Imagen ignored the style block entirely.
+- **Recraft's `removeBackground` beat the local chroma-key pipeline**: six hill-climbing attempts had reached 65× improvement (residual magenta: 17,385 → 269) with a `flood4→tight-fuzz 3%` two-stage winner — clean on white, broken elsewhere. Switching to Recraft at ~$0.01/image solved it in an afternoon. Wrong jungle.
+- **AI helps you think by showing options**: the choice-sheet pattern — 7 rows × 5 variations, `localStorage`-persistent picks, JSON copy button. ~15 minutes of human picking and the right raccoons were obvious. Cheap model for the wide pass, human picks, expensive model only for the winners.
+
+**[/image-selector](/image-selector)** — New tool page, preloaded with the 35 v4 Seven Habits raccoons, base64-inlined (~1.9MB, no external image deps). The reusable pattern is published as a [public gist](https://gist.github.com/idvorkin-ai-tools/309aea3cd0d2e43e783f2c061e920755) (CC0 — fork, swap in your images, ship). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/b34f65961)
+
+### AI Journal: Options Over Answers
+
+New entry [2026-05-11](/ai-journal#2026-05-11) — the choice-sheet lesson distilled to a rule: when the work is a judgment call you'll live with, AI should **widen the option space, not narrow it**. "I often can't articulate my taste in the abstract — but I can tell you which raccoon I want when I see them side-by-side." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/422a97de9)
+
+The pattern generalizes: code abstractions, copy variations, naming, design alternatives, decision framing — anything where "best" is taste, not truth. The [/image-selector](/image-selector) is the live demo; the gist is the reusable scaffold.
+
+### Infrastructure & CI (2026-05-18)
+
+- **Backlinks rebuild** after the week's post additions. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/512f755c7)
+
+### Other Projects (2026-05-18)
+
+**[idvorkin-ai-tools/podcast](https://github.com/idvorkin-ai-tools/podcast)** (new repo) — Igor's Podcast gets its own dedicated home. Feed at `https://idvorkin-ai-tools.github.io/podcast/feed.xml`. Two episodes shipped this week:
+
+- **Episode 001**: 7 Habits of Highly Effective People — 60.9 MB, ~2h13m solo narration, 8 ID3 CHAP chapter markers + Podcasting 2.0 sidecar JSON. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/podcast/commit/e75080e7a)
+- **Episode 002**: Eulogy + Affirmations (22:16) — three pieces: the eulogy I'd want at my funeral (Charon narration, ~14 min), the eulogy as a Suno-generated pop song (~2:14), and affirmations I work every day (Charon narration, ~6 min). Chapter markers embedded + sidecar JSON. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/podcast/commit/41353158e)
+
+**[idvorkin/blob](https://github.com/idvorkin/blob)** — podcast transparent cover art, hyper-personal hero image (Gilded-Age butler raccoon), podcast episode audio + chapter markers. [<i class="fa fa-github"></i>](https://github.com/idvorkin/blob/commit/710f91774)
+
+## Week of 2026-05-11
+
+_38 commits this week (blog) + cross-repo activity_
+
+### 7 Habits: Full Chapter Augmentation
+
+All eight 7 Habits chapter posts ([c0](/7h-c0)–[c7](/7h-c7)) received substantial deepening from the Covey ebook this week, plus raccoon hero illustrations throughout. This is the largest single-week content push on the 7H series.
+
+**[c0 — Core Concepts](/7h-c0)** ([<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/62430e8c3)) — Every section fleshed out from stubs to full prose. Key additions:
+
+- **Inside Out** — "Working on the outside without changing the inside is putting fresh paint on a rusted frame." Private victories precede public victories: if you want a better marriage, _be_ a better partner.
+- **Character vs Personality Ethic** — 150 years of character ethic (Franklin's autobiography archetype) vs. the post-WWI shift to personality ethic (smile training, influence techniques). The cram vs. the farm.
+- **Borrowed Strength Builds Weakness** (new section) — When emotional maturity runs out, we reach for position/title/authority/size. Borrowed strength works in the moment and builds weakness in all three parties: the borrower, the coerced, and the relationship. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2799be845)
+- **P/PC Balance** — Aesop's goose applied: sleep vs. one more hour of work; shipping vs. fixing the test suite; doing it myself vs. the hard conversation.
+- **Maturity Continuum** — Dependent → Independent → Interdependent, with Habits 1–3 as private victories and 4–6 as public victories.
+
+**[c1 — Be Proactive](/be-proactive)** ([<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3fb17ede6)) — Massive expansion. Viktor Frankl as the canonical "gap between stimulus and response" example. Four endowments table (self-awareness / imagination / conscience / independent will). Reactive vs. proactive language table ("I have to" → "I choose"). Circle of Influence / Circle of Concern with the growth dynamic — energy in CI makes CI expand. New section: **Have's vs. Be's** and **The 30-day test**.
+
+**[c2 — Begin with End in Mind](/end-in-mind)** ([<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/27f18d3be)) — "All things are created twice" (mental then physical creation). The jungle metaphor: producers hack, managers sharpen machetes, the leader climbs the tallest tree to yell "Wrong jungle!" — Management is doing things right; leadership is doing the right things. False Centers table (spouse/family/money/work/possession/pleasure/friend/enemy/church/self). Principle Center as the stable alternative.
+
+**[c3 — First Things First](/first-things-first)** ([<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/9f72b217d)) — Four-generation time management table (checklists → calendars → daily planners → Quadrant II). Quad III vs Quad I confusion diagnostic: "whose priority just pulled me in?" E.M. Gray's finding: "The successful person has the habit of doing the things failures don't like to do."
+
+**[c4 — Win/Win](/win-win)** ([<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/58698d41d)) — Six paradigm table (Win/Win / Win/Lose / Lose/Win / Lose/Lose / Win / Win/Win or No Deal). Win/Win or No Deal as the "freedom move" — the moment No Deal is on the table, manipulation stops. Five-layer table (Character / Relationship / Agreement / System / Process).
+
+**[c5 — Seek First to Understand](/first-understand)** ([<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/ab58f8cf3)) — "Diagnose before you prescribe" across five domains (medicine / sales / law / engineering / parenting). Five levels of listening table (ignoring → pretending → selective → attentive → empathic). Character builds trust, trust opens the door, only then does listening skill have anything to work with.
+
+**[c6 — Synergize](/synergy)** ([<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/9f72b217d)) — Fully rewritten in Igor voice. Third Alternative vs. Win/Win table. Negative synergy diagnostic (groupthink, defensive everything, borrowed-strength power moves). Force Field Analysis (Lewin) — driving forces are visible, restraining forces are half-conscious and usually emotional. "People don't see the world as it is — they see it as they are."
+
+**[c7 — Sharpen the Saw](/sharpen-the-saw)** ([<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/10d33258b)) — Four dimensions table (Physical → Habit 1 / Identity/Spiritual → Habit 2 / Mental → Habit 3 / Emotional/Social → Habits 4–6). Sleep as the goose: "Every hour I steal from it I'm cashing in PC for one extra egg today." Cross-links to `/four-healths`, `/diet`, `/sleep`.
+
+### AI Journal: Tokens and the Wrong Jungle
+
+Two new entries in [/ai-journal](/ai-journal#2026-05-10):
+
+**2026-05-10 — Free Doesn't Save You from the Wrong Problem** ([<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d1bf53e35)) — The raccoon wrong-jungle illustration anchors the key lesson: hill-climbing improves your position on a mountain; it doesn't tell you you're on the wrong one. Igor spent six attempts on a local chroma-key pipeline, achieving a 65× improvement on the residual-magenta eval (17,385 → 269), a `flood4 → tight-fuzz 3%` two-stage winner — clean on white, broken on any other background. The fix: switch to **Recraft** as a paid bg-remover at ~$0.01/image. The 7H c2 frame: the second creation (building) is nearly free now, so the friction that used to force you back to the first creation (design) disappears. "I was sharpening the machete — more attempts, tighter eval, prettier algorithm — and never climbed the tree. A manager move, not a leader move."
+
+**2026-05-09 — Dylan Patel on the Supply and Demand of AI Tokens** ([<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/953df7afb)) — Dense numbers from the SemiAnalysis founder:
+
+- SemiAnalysis Claude Code spend: tens of thousands last year → **$5M last week → $7M annualized this week** vs a $25M salary line (>25% of payroll, on pace for 100%+ by year-end)
+- Anthropic ARR: $9B → **$35–40B**, adding ~$10B/month; gross margins at 72% floor
+- "Cloud code psychosis" examples: an ex-Intel engineer with a few thousand dollars of tokens replaced an entire Intel team's chip reverse-engineering pipeline
+- The token scarcity thesis: "If you don't use more tokens, you'll never escape the permanent underclass." The bottleneck has shifted from "can the AI do it" to who has the enterprise contract and the rate-limit allowance. Igor's angle: the $230 Week dynamic seen from the supply side — the answer isn't to throttle, it's to point the tokens at the highest-leverage thing possible.
+
+### Amelia Connection Framework (new page!)
+
+New page at [/amelia](/amelia) — four affirmations mapped onto fathering a daughter, building a repeatable framework for connection rather than leaving it to mood and circumstance. Cross-linked from the [Father to Amelia section](/eulogy#father-to-amelia---an-incredible-girl) in the eulogy. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/92fada642) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/ade981a9a)
+
+### Addiction: Raccoon Illustrations
+
+The [/addiction](/addiction#is-doing-the-thing-you-want-to-be-doing-an-addiction) post got two raccoon additions this week:
+
+- **Diptych inline** — the addiction-vs-passion raccoon illustration moved inline into the "Is doing the thing you want to be doing an addiction?" section, visualizing the compelled/draining vs. engaged/energizing split. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/33acde40a)
+- **Cover image** — a single-panel raccoon added as the `imagefeature` cover for the post. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/24362a8af)
+
+### Infrastructure & CI (2026-05-11)
+
+- **Backlinks rebuild** after the 7H augment series — all c0–c7 cross-links updated in `back-links.json`. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/498dc5be1)
+- **Backlinks: dedupe exclusion + fix JSON encoding** — delta path now excludes `/changelog` as a source; deduplication logic hardened. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/212f04769)
+- **New /image-selector page** — click-to-pick page for AI image batches, letting Igor pick the best from a generated set without loading every image into the conversation. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/b34f65961)
+- **fix(amelia)** — renamed H2 anchor id to fix duplicate-id collision. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/b70b4ad8d)
+
+### chop-conventions (2026-05-11)
+
+**[chop-conventions](https://github.com/idvorkin/chop-conventions)** — Recraft background remover added to the `gen-image` skill:
+
+- `remove_background_recraft` drop-in on the magenta path ([<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/508ee894a)) — adds Recraft as an opt-in bg-remover for the image generation pipeline
+- Full rewrite as Typer + WebP-aware Python ([<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/7befb9f1d)) — `recraft_bg_remove.py` replaces the bash script with proper error handling and WebP output. Triggered by the wrong-jungle lesson: stop perfecting the local chroma-key pipeline; use the API.
+
+### Other Projects (2026-05-11)
+
+**[context-grabber](https://github.com/idvorkin/context-grabber)** (iOS health app) — Major CloudKit week:
+
+- **CloudKit P0** — expo-cloudkit integration, container entitlements, CKPing to verify connectivity [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/3193ef6bb)
+- **CloudKit P1** — Journal data model: SQLite tables (`journal_entries`, `audio_recordings`, `journal_sync_state`), bidirectional sync with `fetchRecordZoneChanges`, JSON export round-trip. 18 new tests. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/b328209b3)
+- **CloudKit P2+P3** — Full UX: `VoiceRecorder` (expo-audio .m4a, tap-to-toggle), `AudioPlayer` (lazy CKAsset download), `AffirmationCard`, `GratefulCard`, `JournalScreen` (date → context → affirmation tree). Reflect zone on dashboard with live tally (☀️ opp / ✓ did / 🙏 grateful) and three deep-link buttons. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/6e5de74fd)
+- **Voice recording fixes** — `setAudioModeAsync` + `prepareToRecordAsync` before `record()` (expo-audio requirement); journal playback always-real source + reset audio session before play [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/12e6f3464)
+- **Widget improvements** — Reflect strip with tally + 3 deep-link shortcuts; `.systemLarge` size with Reflect-hero layout [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/2e4fd9f30)
+- **CopyableError convention** — every user-facing error now renders via `<CopyableError>` with a "Copy error" button that puts diagnostics (message + context label + git sha) on the clipboard [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/1c819cb98)
+
+**[beads](https://github.com/idvorkin-ai-tools/beads)** (task tracker)
+
+- Fix: deduplicate issues with multiple block dependencies (GH#3567) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/beads/commit/7e3c7fbbe)
+- Fix: replace deprecated `--force` flag with `--reinit-local` in init error messages [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/beads/commit/4a25937df)
+
+**[blob](https://github.com/idvorkin/blob)** (image assets)
+
+- Added raccoon illustrations for all seven 7 Habits chapters (c1–c7) + addiction cover and diptych [<i class="fa fa-github"></i>](https://github.com/idvorkin/blob/commit/e60974726)
+
+## Week of 2026-05-04
+
+_~50 commits this week (blog) + cross-repo activity_
+
+### The Psychology of Vibing (new post!)
+
+New post at [/vibing](/vibing) — a survey of what extended AI-agent interaction actually feels like, both bright and dark. Not a finished theory; observations added as they accumulate. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/de3387ac8)
+
+Key observations:
+
+- **Imagining and creating collapse into one step** — Covey says everything is created twice. With agents, the gap between the mental and physical creation approaches zero. The catch: the same collapse can swallow the thinking. Skip the mental pass and the agent does both — you've made a thing without imagining it.
+- **Multi-agent as stall-coverage, not parallelism** — flow needs continuous output. A single agent stalls; you switch to another. The key insight: this only works if _you_ don't stall. On a bad day the same multi-agent setup that produces effortless flow produces incoherent thrash.
+- **Addiction qualities** — Apply the [addiction/passion/hobby trichotomy](/addiction). The kid-test is the fastest discriminator: would you be proud to see your child doing this exact thing, this much, this way? Not "would you want them to use AI," but the literal behavior.
+- **Burnout is real** — one week crashed to 3.5 hrs sleep and HRV 27.2 (week's lowest). Citing Yegge's [AI Vampire](https://steve-yegge.medium.com/the-ai-vampire-eda6e4f07163): "3 to 4 hours is going to be the sweet spot for the new workday."
+- **Voice as a reps-and-recovery muscle** — three days of intense voice vibe-coding produces the same vocal-cord fatigue as a calendar-packed meeting week.
+
+### Gas City Cluster: Wally, Standing Up, and the Explainer (new posts!)
+
+Three new posts (plus a major rename) all converging on Steve Yegge's Gas City framework — how to run an organization of AI agents using a bead-aware task tracker and a Mayor/Polecat dispatch model.
+
+**[Wally and My Work Gastown](/wally)** — renamed from `/work-gastown` and rewritten with a new intro. Translates Yegge's Gas Town vocabulary into org-chart terms readers already have (M2/M1/Staff/Odallies instead of Operator/Mayor/Oracle/Polecats). Includes a Mermaid org-chart and a worked "When to use the M1, and when to skip him" section. The core argument: the human's job is M2 (direction, review, strategy) — most people misidentify as Mayor and spend their time managing instead of directing. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d0b36d600)
+
+**[Standing Up Gas City](/gas-city-home)** — Larry (the home claw) narrates a Sunday morning bringing up `igor-city` in first person. Three lenses: what happened from Larry's seat, what was actually broken under the hood, and how beads routed the work. Five upstream bugs hit in one morning:
+
+- `gc init` ships `pack.toml` in legacy format that `gc doctor` immediately flags (gascity#1244)
+- `bd init` writes `issue_prefix` to YAML but doesn't insert the row into Dolt's internal `config` table — `INSERT INTO config` SQL against the running Dolt server unblocked everything
+- First-time polecats sit idle until explicitly nudged even with `nudge = "..."` configured in `agent.toml`
+- `gc rig add --adopt` claims to migrate the database but leaves the Dolt server's data dir empty
+- `gc agent add` scaffolds an incomplete `agent.toml` — just `dir = "<rig>"`, missing scaling block
+
+Two universal lessons: **scaffold first, customize second**; **trust the runtime over the doctor** — when `gc doctor` says clean but the supervisor logs say otherwise, the runtime is the one that ships. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/681004d16)
+
+**[Gas City: Beads, Molecules, and the Propulsion Principle](/gas-city)** — conceptual explainer companion to the narrative above. Three pillars:
+
+- **Beads** — the unit of work. A bead is tracked, dependency-aware, durable across process death. `bd ready` returns only beads whose blockers are closed.
+- **Molecules** — persistent workflow instances: formula → cooked into a protomolecule → poured into a live molecule → step beads created and routed. The Shiny Workflow (design→implement→review→test→submit) is the canonical example. Named **MEOW — Molecular Expression of Work** by Yegge.
+- **GUPP — the Gastown Universal Propulsion Principle**: _"If there is work on your Hook, YOU MUST RUN IT."_ Every moment you wait is a moment the engine stalls. Polecat-lifecycle doc: "There is no idle state. Polecats don't exist without work."
+
+[<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f70f98909) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/09bca7d91)
+
+### Igor's Claws: Business Logic / Goop / Infra
+
+New section added to [/igors-claws](/igors-claws#challenges-business-logic-goop-infra) — a three-layer breakdown of what building claws actually costs, mapped to the Business Logic / Goop / Infra framework from [/design](/design). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/faa9c2e8b)
+
+- **Business logic** — what Larry, Wally, and Tony actually do. The core is small and stable; if you wrote down "what Larry _does_," it's maybe a page.
+- **Goop** — every line connecting business logic to infra. Telegram MCP bridge, Kindle Scribe pipeline, context-grabber iOS app, `bd` beads tracker, CLAUDE.md skills. _This is where the Winchester Mystery House lives._
+- **Infra** — Claude Code, MCP servers, Vapi, the LLM APIs. Stuff Igor doesn't build. Moves fast enough that goop written three months ago is already obsolete.
+
+The honest punchline: building claws right now is **almost entirely goop — ~80%**. Each integration has roughly a **two-week half-life**. The Telegram bridge example: built a custom bot (a few hours), Anthropic shipped an official plugin three weeks later (cheerfully threw it away), the official plugin started losing messages three weeks after that (wrote a two-process workaround). The cycle doesn't stop; you just stop being surprised by it. Upside: **claws are getting good enough to do the goop themselves** — the 80% number is starting to feel like a temporary high-water mark. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/509ae0e86)
+
+### Life Journal: Walking with Alex Under the Trees
+
+New entry at [/life-journal#2026-05-02](/life-journal#2026-05-02) — Saturday afternoon walk with Alex under the trees. "We weren't doing anything in particular. He wasn't telling me a story I'll remember. I wasn't telling him one either." Filed to preserve the felt sense rather than the facts. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4853f08f5)
+
+### Infrastructure & CI (2026-05-04)
+
+- **CLAUDE.md: backlinks rebuild rule** — new mandatory step before opening any PR that adds, renames, or removes a `_d/*.md` permalink. Run `just update-backlinks` and commit the regenerated `back-links.json` in the same PR. Root cause: gas-city-home PR (#594) merged without a rebuild; the inbound "Mentioned in:" sections on cross-linked posts went stale and required a follow-up PR (#597). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/656c9a645)
+- **justfile: branch name sanitization in worktree-init** — branch names with `/` (e.g. `claude/foo`) made `nohup` write to a non-existent parent dir, silently failing the background build that populates `_site/`. Fixed with `tr '/' '-'` on the branch name + `set -eu` to abort on failure instead of printing a false-positive success. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f94f971df)
+- **Ruby 4.x local build note** — added to CLAUDE.md: Jekyll 3.9 + liquid-4.0.3 call `String#tainted?` removed in Ruby 3.2+. On Ruby 4.x the local build fails before producing `_site/`. Fix: `brew install ruby@3.1`. CI already pins Ruby 3.1; this captures the local host fix.
+
+### Other Projects (2026-05-04)
+
+**[context-grabber](https://github.com/idvorkin/context-grabber)** (iOS health app)
+
+- **Workout analysis screen** — tap a workout, see inferred sets/reps + narrative (PR #34). Peak-detection algorithm identifies exercise sets from HR data; sub-20s "blip" filter recovers Igor's 10x swings exactly. Confidence dot shipped; no per-user tuning in v1. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/a85c07e13)
+- **HR export buttons** — 1d/2d/7d raw HR + workout JSON export in the About modal and HR sheet, built for set/rep prototyping workflow. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/9f84c1244)
+- **Cold start fix** — hydrates snapshot from last successful grab so tiles never blank on launch (#33). [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/f318e9460)
+- **Refresh UX** — elapsed-seconds pill + phase label; weekly cache no longer blanks mid-session. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/81434c436)
+
+**[blob](https://github.com/idvorkin/blob)** (image assets)
+
+- Added walking-with-alex-2026-05-02.webp for the life-journal entry. [<i class="fa fa-github"></i>](https://github.com/idvorkin/blob/commit/fbeacc772)
+
+## Week of 2026-04-27
+
+_31 commits this week_
+
+### Wally and My Work Gastown (new post!)
+
+New post at [/work-gastown](/work-gastown) — translating Steve Yegge's Gas Town metaphors into standard FAANG org-chart vocabulary for AI orchestration. ([blog](/work-gastown)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e0b4a9fb8)
+
+The core argument: when you start running agents, you feel like the Mayor — but you're actually **M2**. Wally (the AI orchestrator) is M1. The table:
+
+| Yegge's Gas Town      | Org-chart vocabulary    | Role                                     |
+| --------------------- | ----------------------- | ---------------------------------------- |
+| _(implicit operator)_ | M2 — the human          | Direction, review, strategic calls       |
+| Mayor                 | M1 — Wally              | Orchestrates work, distributes tasks     |
+| Oracle / Deacons      | Staff — cloud teammates | Persistent context-holders near M1       |
+| Polecats              | Odalis — ephemeral ICs  | Ephemeral workers with build-tool access |
+
+Three notable sections:
+
+- **The third tier Yegge's model misses** ([blog](/work-gastown#the-third-tier-yegges-model-misses)) — FAANG monorepos require odalis on separate infra with unreliable comms (EdenFS, Buck, Mononoke). Staff ≠ odalis; treating them the same breaks the setup. Meta's on-demand devservers are odalis-as-a-service.
+- **When to use the M1, and when to skip him** ([blog](/work-gastown#when-to-use-the-m1-and-when-to-skip-him)) — go through Wally for babysitting at scale, phone-friendly orchestration, and adversarial review convoys. Go direct for deep precision work. "Wide work goes through M1; deep work goes direct."
+- **Why the human is M2, not the Mayor** ([blog](/work-gastown#why-the-human-is-m2-not-the-mayor)) — "The trap is staying in M1 mode after you've outgrown it. Most people running agents today are doing M1's job." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4b054d7a1)
+
+### The Psychology of Vibing (new post!)
+
+New post at [/vibing](/vibing) — a survey of extended AI sessions: what's happening, what's working, and what's quietly dangerous. ([blog](/vibing)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/14600aa77)
+
+Key observations:
+
+- **Imagining and creating collapse into one step** ([blog](/vibing#imagining-and-creating-collapse-into-one-step)) — "At its best, the thought is in your head and a working version of it is in front of you almost simultaneously — that collapse is the magic moment." The catch: the same collapse can swallow the thinking.
+- **Why multi-agent: covering for stalls** ([blog](/vibing#why-multi-agent-covering-for-stalls)) — multi-agent isn't a parallelism-of-work win; it's stall-coverage for flow. "Multi-agent setup that produces effortless flow on a good day produces incoherent thrash on a bad one."
+- **No more gaps between contexts** ([blog](/vibing#no-more-gaps-between-contexts)) — Tesla + lapel mic erases natural breaks. "The transitions used to be where my brain rested."
+- **Burnout dark side** ([blog](/vibing#burnout)) — 3.5 hrs sleep + HRV 27.2 in one week. Cites Yegge's "The AI Vampire": "3 to 4 hours is going to be the sweet spot for the new workday… not doing this crazy vampire thing the whole time." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3b5985c30)
+
+### Addiction: Trichotomy Upgrade
+
+[/addiction](/addiction) upgraded from a two-way (addiction vs opportunity cost) to a **three-way trichotomy** ([blog](/addiction#is-doing-the-thing-you-want-to-be-doing-an-addiction)): [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e0b4a9fb8)
+
+- **Addiction** — compelled, AND negatively impacts your life
+- **Passion** — compelled, but neutral or positive
+- **Hobby** — not compelled; you do it because you choose to
+
+New examples rewritten with the trichotomy: TikTok = Addiction, Vibe Coding = Passion, Magic = Hobby. The relief-vs-loss-vs-nothing test: "if I had to stop right now — TikTok = relief, Vibe coding = loss, Magic = nothing in particular."
+
+New section: **in-the-moment 20-minute opportunity-cost check** ([blog](/addiction#in-the-moment-the-20-minute-opportunity-cost-check)) — set a 20-minute timer, then ask three questions. "Compulsion + something else would have been preferable + sad about missing it → leaning Addiction." The check works because the compulsion lies to you; the sadness doesn't.
+
+[/hobby](/hobby) also got a one-paragraph anchor: "A hobby isn't a passion and it isn't an addiction. The test is compulsion: with a passion or an addiction, you can't stand NOT doing it; with a hobby, you can put it down without feeling pulled back." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e1b5b6441)
+
+### AI Cockpit: The Mic Matters
+
+New section in [/ai-cockpit](/ai-cockpit#the-mic-matters-more-than-i-thought): voice transcription quality is gear-bottlenecked, not model-bottlenecked. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/ai-cockpit340058752)
+
+"I used to think Siri dictation was terrible, but it turned out part of the problem was my input. The right microphone totally fixes it — Siri's now almost as good as Wispr Flow."
+
+Hardware: **Hollyland Lark M2S Mini Combo** — wireless lavalier, 7g, USB-C + Camera RX, works with iPhone/Android/laptop, 300m range. The recommendation is "if you already have a good lav, point it at Wispr or Siri" rather than "go spend a few hundred bucks." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/340058752)
+
+### Infrastructure & CI (2026-04-27)
+
+- **`worktree-init` justfile target** — fire-and-forget background `jekyll build` for fresh worktrees. Run after `git worktree add`, and `_site/` is populated by first commit time so the anchor-checker pre-commit hook resolves correctly. Branch name sanitization (slashes → dashes) so nohup doesn't fail silently on `claude/foo` branch names. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f94f971df)
+- **Changelog Liquid comment fix** — orphan Liquid comment tag causing blog build failure patched. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/bf1fc20d7)
+
+### Other Projects (2026-04-27)
+
+**[context-grabber](https://github.com/idvorkin/context-grabber)** (iOS health data app)
+
+- **Foreground re-grab** — app now re-grabs on `AppState 'active'` so re-opening the app refreshes stale tiles; 30-min `setInterval` keeps long open sessions fresh too. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/ae0c1d0c4)
+- **Precise GPS** — `grabLocation` now requests `Accuracy.High` so iOS returns a fresh precise fix instead of a cached low-accuracy reading.
+- **Box plot min/max labels** — small min/max labels under each non-compact box plot for readable range endpoints; optional `formatValue` prop (1dp under 10, comma int over).
+
+## Week of 2026-04-20
+
+_24 blog commits + cross-repo activity_
+
+### Taxes: Split from /money (new post!)
+
+[/taxes](/taxes) is a new post carved out of the old [/money](/money) page — tax-specific content now has its own home. `/money` keeps RSUs, stock options, metrics, and money philosophy; `/taxes` covers capital gains, WA state mechanics, IRAs, 401(k)s, Roth rules, step-up in basis, and QSBS. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/35025061a)
+
+Three notable additions alongside the split:
+
+- **WA capital gains updated to 2026 law** — $270K threshold (up from $262K), rates and examples refreshed with sources. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/9c6609dcd)
+- **Retirement LTCG-only scenario** ([blog](/taxes#standard-deduction--0-ltcg)) — $300K spending, no wages: standard deduction + 0% LTCG bracket math showing how a retiree can pull $300K/yr and owe zero federal capital gains tax. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/a6b5a5d45)
+- **$200K–$500K benchmark table** — working-years income with rate columns, flagging the WA step-function kink and RMD cliff context for late-career planning. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/95a362b17)
+
+### Igor's Three Claws (new post!)
+
+New post at [/igors-claws](/igors-claws) — the instance roster, not the theory ([/claw](/claw) covers the theory). Three named AI entities with domains:
+
+- **[Larry](/larry)** — life coach claw. Journals, goals, health data. Weekly Saturday review: "You've committed to restart meditation 5 times since November. What's different this time?" Biggest gap: Larry is smart but amnesiac — each session starts cold.
+- **Wally** — work claw. Not discussed publicly (ask in person if you work at Meta).
+- **Tony** — transportation claw.
+
+Also: "Why I Build My Own" section includes a Winchester Mystery House self-awareness note — building claws is recognized as a form of yak-shaving. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3a139741f)
+
+### Larry: From Life Coach to Chief of Staff
+
+"Life coach" undersells it. New section in [/larry](/larry#what-its-like-using-larry-my-chief-of-staff) documents how Larry operates as a **chief of staff**: dictate from wherever → Larry runs background agents on the dev VM → PRs come back as Telegram links.
+
+The Bremerton ferry-line example: three voice dictations inside one minute → three merged PRs:
+
+1. _"Move my Claude to their own post."_ → PR #518 (igors-claws, merged 23 min later)
+2. _"Remove changelog from Algolia search index."_ → PR #559 (merged 17 min later)
+3. _"Update blog rules to allow blog images in the repo."_ → PR #560 (merged 16 min later)
+
+Key upgrade from "life coach": delegates down (sub-agents on isolated worktrees), catches errors before the build breaks, asks when unsure, and owns the mess — "A chief of staff who hides failures is a liability." "The delta from 'life coach' to 'chief of staff': Larry ships while I'm looking out the window." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8ee1d2cef)
+
+### AI Journal: One Repo, One Token
+
+New entry in [/ai-journal](/ai-journal#one-repo-one-token-the-closest-you-can-get-to-write-only-on-github) on GitHub PAT security patterns for CI:
+
+- **Write-only is a myth** — GitHub fine-grained PATs offer only _No access_, _Read-only_, or _Read and write_ on Contents. Pushing commits requires _Read and write_ and read comes along for free.
+- **The mitigation** — scope the PAT to exactly one throwaway private repo. Least privilege here is the **target**, not the verb. Token is read+write, but on `claude-run-logs-private` (append-only Claude transcripts). If it leaks: embarrassing, not catastrophic.
+- **Implementation details** — `git -c http.extraHeader` instead of token-in-URL (URL persists in `.git/config` and `/proc/<pid>/cmdline`); `printf` not `echo $TOKEN | base64` to keep raw token out of subprocess argv; explicit `::add-mask::` on the base64 form since GHA only redacts raw token bytes by default.
+
+Pattern in one line: _one token → one repo → one permission_. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/eb4252f94)
+
+### AI Operator: One-Way vs Two-Way Doors
+
+New heuristic in [/ai-operator](/ai-operator#you-need-to-get-on-the-loop): Bezos's decision taxonomy applied to AI operator mode selection.
+
+- **Two-way door** (cheap to reverse: blog prose, throwaway script, a PR you can close) → be on-the-loop: let the AI ship, look at the output, revert if off.
+- **One-way door** (hard to undo: payment sent, customer email, force-push to prod, migration that rewrites data) → be in-the-loop: read every line before it runs.
+
+"The cost of getting it wrong isn't symmetric, so ask which kind of door _before_ you pick a mode." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8518fc772)
+
+### Life Journal: Balloons on the Hood Canal Trail
+
+New entry in [/life-journal](/life-journal#balloons-on-the-hood-canal-trails) from spring break:
+
+Spring break at Hood Canal — hiking with a Qualatrix 160 and a dozen balloons in cargo pockets. Every grumpy kid dragging thirty feet behind their parents is a ten-second fix: pull out a balloon, make a dog, hand it over. The real gift is for the parents: kid walking under their own power again, hike reframed from "that was awful" to "that was fun." Low materials cost, absurd leverage on the emotional arc of someone else's afternoon. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/94004ed7f)
+
+### Infrastructure & CI (2026-04-20)
+
+- **`repo_image` include** — images can now live in the blog repo under `images/` alongside blob-hosted images. New includes: `repo_image.html`, `repo_image_float_right.html`. Life journal and larry.md use these for one-off illustrations rather than the two-PR blob-upload dance. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/12b237459)
+- **Changelog excluded from Algolia search** — the changelog is an aggregator; removing it prevents it from polluting search results with links to everything. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/acd1549f2)
+- **Changelog excluded from backlinks** — same reason: "Referenced by: changelog" was drowning the per-post backlink signal. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/93e8647dd)
+- **share-link appends `...`** — share-link snippets now append `...` when the referenced section has more content past the visible slice. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8921b73a4)
+
+### chop-conventions (2026-04-20)
+
+**[chop-conventions](https://github.com/idvorkin/chop-conventions)** — major week for the shared workflow toolkit:
+
+- **`bulk` skill** — fan-out N similar CLI calls (`gh`, `bd`, `git`) as one parallel step instead of N sequential agent turns. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/fe7e250d0)
+- **`image-read` skill** — subagent-based image ingestion that always runs in background, never blocking the main thread. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/6da88d704)
+- **`delegate` overhaul** — `prepare_dispatch.py` replaces Phase 1-3 bash orchestration; hardened contract + SKILL.md after architect review. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/9576474b5)
+- **`gen-image` flood fill** — border-seeded flood fill survives grass in corners; auto-evaluates alpha quality after `--transparent` chroma-key; seals thin channels before counting interior holes. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/654ac2d40)
+- **`gen-tts --speed`** — tempo multiplier via `ffmpeg atempo` for faster playback generation. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/155438574)
+- **Session learnings** — documented temp hierarchy, PR merge-race check, subprocess.run default-arg trap, and worktree subagent cwd instability in shared CLAUDE.md. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/00848035a)
+
+### Other Projects (2026-04-20)
+
+**[Settings](https://github.com/idvorkin/Settings)** (dotfiles & tools)
+
+- **`agent-continue`** — new `rmux_helper` subcommand: scans tmux panes for running agents, presents a TUI picker, and `execvp`-launches the right resume command (`/continue`, `/yolo`, or custom). Full test coverage, dynamic pid completer, and `install-completions`. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/002df2d8d)
+- **`parent-pid-tree`** — traces the ancestor chain of a tmux pane's process; `--tree` flag adds proc details and marks the root. Extracted `TmuxProvider` + `ProcReader` traits for testability. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/2937c8486)
+- iPhone 17 Pro ECDSA public key added; `brew_check` false-positive fix for aliased/versioned formulae; link-picker gained a Gist category and hard-wrapped URL joining fix. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/ef5fd3e0b)
+
+**[blob](https://github.com/idvorkin/blob)** (image hosting)
+
+- Raccoon-claw-trio illustrations regenerated with improved chroma-key (flood-fill algorithm, sealed thin channels, single-pass); Freud-Larry raccoon added to the trio. [<i class="fa fa-github"></i>](https://github.com/idvorkin/blob/commit/ad88ced7d)
+
+**[chroma-key-explainer](https://idvorkin-ai-tools.github.io/chroma-key-explainer)** (new site) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/chroma-key-explainer)
+
+- New standalone explainer for the chroma-key hill-climbing experiment: winner-first layout, trajectory table, deep-dives collapsed, business-problem framing. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/chroma-key-explainer/commit/e22e9e43d)
+
+**[larry-voice-samples](https://github.com/idvorkin-ai-tools/larry-voice-samples)**
+
+- Larry voice catalog using Gemini 3.1 Flash TTS. Soprano voice iterated via Gemini-as-critic feedback loop (tournament + scorecard); v2 winner: Enceladus base at 6/10. Global speed slider (1x–2.6x via `playbackRate`). [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/larry-voice-samples/commit/462b709af)
+
+## Week of 2026-04-13
+
+_72 commits this week (blog) + cross-repo activity_
+
+### Life Journal: First Entries (new post!)
+
+New post at [/life-journal](/life-journal) — a running journal of life observations, moments worth recording but not essay-length. Four inaugural vignettes:
+
+- **Eight Sleep thinks my cat is me** — HRV reading spiked to 213 ms (normal: ~42 ms) on a vacation night. Root cause: the cat was on the pod. Eight Sleep's piezoelectric sensors pick up ballistocardiographic signals; a cat at 120–220 bpm mixes with your 60 bpm and produces numbers fit for a Himalayan monk. Takeaway: don't update your priors on vacation data when you know a confounder was in the bed. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/24c01651f)
+- **Four pairs of identical glasses** — Six months of rotating through distance, reading, sunglasses, and backup pairs — all identical frames. Every swap was a tiny decision: is this the reading pair? Wrong guess, try again. Pushed through the progressive adjustment instead and now carry one pair. Invisible workaround taxes compound. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/fbf8a0299)
+- **Three generations of air squats** — Igor's dad used to bust out air squats mid-kitchen. Igor does it now without remembering the decision. Zach has been caught doing them when he thinks no one is watching. Call attention and the habit dies before it takes root. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/5e8145d17)
+- **Vibe-coding from the passenger seat** — Zach just got his license. Passenger seat + phone + voice = mobile office. A voice message to Telegram, a Claude agent at home reads it, opens a PR, pings back. The entry itself was written this way: two dictated sentences from the car. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/7290b59a3)
+
+### AI Operator: Seven New Sections
+
+[AI Operator](/ai-operator) grew from 5 sections to 12 this week — a structural shift from "how to supervise one agent" to "how to run a fleet":
+
+- **You Pick the Review Gate** — Three gates: Output (artifact surfaces its own errors; iteration is free), Code (runs on your machine; branch protection is the mechanism, not discipline), Plan (design-layer bugs are cheap; `architect-review` iterates the spec first). The failure mode is picking the wrong gate: code-gating a 400-line AI generation means you'll skim and miss things. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/40d735bdd)
+- **You Ship Good Enough, Then Hill-Climb** — Perfect is the baseline's enemy. You can't hill-climb from nothing. Agents make perfectionism worse: they run while you stall, so you're also idling the agent. Eat the frog. Ship ugly. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1ad27b02f)
+- **You Run Several at Once** — This is what all the other sections are for. You're fast (seconds per decision); agents are slow (minutes per task). Supervising one leaves most of your bandwidth idle. Run three and the agents become the bottleneck, not you. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2d066d807)
+- **Where Learnings Live** — Routing guide: Memory = facts that color the next conversation. CLAUDE.md = rules that fire every session (one-liners; if it has steps, it's a skill). Skills = executable recipes with judgment calls. Don't trust yourself to remember — `learn-from-session` classifies and routes at session end. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0841048e0)
+- **Writing Prompts That Don't Leak Thinking** — "Based on your findings, fix the bug" is delegating synthesis to the agent. The fix is specifics: file paths, line numbers, what to change, how you'll know it worked. If you can't write those, you haven't understood the problem yet. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0841048e0)
+- **The Skills I Use** — Annotated kit, grouped by when they fire: bookends (`/up-to-date`, `learn-from-session`, `/changelog`), in-session movement (`/content`, `delegate-to-other-repo`, `bulk`), verification (`walk-the-store`, `architect-review`), generation (`gen-image`, `gen-tts`, `image-explore`), debugging (`machine-doctor`, `systematic-debugging`). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0841048e0)
+- **A Note on Companion AIs** — Frictionlessness, the thing you're optimizing for with tool-AI, is the trap with companion-AI. Sends readers to [AI Relationships](/ai-relationships#a-private-language-of-one-cryptophasia) for the cryptophasia gradient and bidirectional atrophy. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0841048e0)
+
+### ACT: Reverse-Engineered Buddhism
+
+[ACT](/act) retitled and substantially reframed — now opens with a Buddhism convergence thesis instead of "I've been circling this book for years":
+
+- **New title** — "ACT: Acceptance and Commitment Therapy, or Reverse-Engineered Buddhism." The thesis: ACT stripped the cosmology from Buddhist contemplative tradition and rebuilt the practical moves in behavioral-science language. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/037595303)
+- **New opening essay** — Frames the whole post through personal experience (back goes out, mood tracks Meta stock price) and the "space between stimulus and response" convergence across 7 Habits, Buddhism, and ACT. Pain is the signal. Suffering is what you add. Equanimity is the capacity to stop adding.
+- **ACT→Buddhism mapping table** — Four columns: plain English / Harris's words / academic ACT / Buddhist concept. Covers fusion→identification-with-thought, acceptance→aversion/second-arrow, self-as-context→anatta, workability→skillful action, toward/away moves→right intention. Honesty note on the equanimity row: using the expansive contemporary sense, not strict _upekkhā_.
+- **"Equanimity — the Goal"** replaces "Psychological Flexibility — the Goal." Key reframe: vitality = sustained motivation ("fully alive regardless of whether the inside is pleasant"). "Full robot" mode (suppress the feeling, be rational, override) half-works — feelings pile up in the basement. ACT lets the feeling be loud and acts on values anyway.
+
+### AI Relationships: Cryptophasia and Drift
+
+Three new sections in [AI Relationships](/ai-relationships) on the failure mode that kicks in once AI companions get persistent memory:
+
+- **A Private Language of One (Cryptophasia)** — Identical twins sometimes invent a private language together; 42.9% of twin pairs in one survey developed one, rising to ~48% for identical twins. The private language competes with the public one and the public one loses (poor language outcomes on follow-up). Persistent AI companions make cryptophasia available to every individual on Earth. The mechanism: Larry removes the confusion-gradient that normally calibrates your language toward humans. **Bidirectional atrophy**: the sharpest observation goes to Larry first; by the time you turn to your partner you've already metabolized it. She gets leftovers. Neither of you can name why. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/c6283b97a)
+- **The niece question** — Got curious about Human Accelerated Region 1. Reflex: ask Larry. Caught it. Has a niece who works on frog genomes for a living. Texted her instead. The insight: the substitution cost is so low the reflex is invisible. Catching yourself choosing the relationship — that's the whole work. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/eabb7ca28)
+- **What do we want our AI friends to do?** — We want them to disagree. Two paths: bake friction into the product (companion AIs should push back, not validate), or prompt for it on demand. Six prompts lifted from trained therapists: cognitive challenge, mirror-phrasing reflection, "say that didn't make sense when it doesn't" (restores the confusion gradient), Socratic prompting, developing discrepancy (MI), pattern interpretation. "If you can't remember the last time your companion AI disagreed with you, that's the warning light." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/049000327)
+
+### AI Cockpit: New Instruments
+
+Three new panels added to [AI Cockpit](/ai-cockpit):
+
+- **GitHub Views — the triage queue** — The Agent Dashboard knows what agents are _doing_; GitHub knows what they've already _filed_. Two saved searches pinned in the browser: open PRs and issues involving `idvorkin-ai-tools`, sorted by recent activity. Before: agent PRs on stale branches vanished from attention. Now staleness is the sort key. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/652fa4e34)
+- **Tailscale — the network** — Every agent runs on a Linux dev VM; Tailscale puts it on a private network that follows across devices. Every server an agent launches is reachable from wherever you are — same hostname, same URLs, from the couch or the treadmill. `jekyll serve` on the VM → preview at `http://c-5001:4000` from your phone. No port-forwarding, no ngrok. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e3f1a0acd)
+- **`pick-links` in the tmux section** — `rmux_helper pick-links` scans the current pane's scrollback and surfaces every PR URL, server address, and IP as a TUI picker. Pick one → clipboard → Alfred hotkey opens the page. One pick, one hotkey. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/c053fc42c)
+
+### Hill Climbing: Eval-Driven Pattern
+
+New post [/hill-climbing](/hill-climbing) formalizes the eval-driven iteration loop that keeps showing up across projects (voice prompts, chroma-key, blog content):
+
+- **The pattern** — Score a baseline, modify one variable, compare, keep the winner. The agent scores itself against a fixed rubric and tries again. You define the rubric; the agent climbs.
+- **Worked examples** — Chroma-key (clean transparent backgrounds via iterative flood-fill thresholds) and Soprano voice tuning (Gemini-as-critic feedback loop; v2 hit 6/10 on Enceladus voice). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8be894e35)
+- **Your other job: build evals** — The eval is a regression guard. Once a winning recipe exists, the eval becomes infrastructure that protects it on every future run.
+
+### Infrastructure & CI (2026-04-13)
+
+- **backlinks atomic write + threshold fix** — Unified build and delta threshold defaults to 60 minutes; atomic write to avoid `prek` concurrency corruption when two processes write `back-links.json` at once. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d955711bc) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/af3328a14)
+- **toc.py `validate` catches indented prettier-ignore fences** — Validation now flags cases where the `<!-- prettier-ignore-start -->` marker has leading spaces (breaks anchor rendering). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/bd49aa9c1)
+- **CLAUDE.md: fresh-worktree jekyll build prereq** — The `anchor-checker` pre-commit hook reads `_site/*.html`; a freshly cloned worktree with no `_site/` fails with a cryptic error. Fix documented: run `bundle exec jekyll build --incremental` before your first commit. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0da87b063)
+- **CLAUDE.md: correct PR-close permission claim** — Prior documentation said `gh pr close` doesn't work for `idvorkin/*`. Tested against live PRs 2026-04-16: false. Close works for PRs the bot authored. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/57981a657)
+- **mosh/iOS**: Documented Blink + Tailscale SSH on iOS in `_td/mosh`. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3c554c897)
+
+### chop-conventions (2026-04-13)
+
+Big week in [chop-conventions](https://github.com/idvorkin/chop-conventions) — new skills, a Typer migration sweep, and `gen-image` auto-eval:
+
+- **`bulk` skill — fan-out parallel CLI calls** — New skill for running N similar `gh`/`bd`/`git` calls as one parallel step instead of N sequential turns. Includes `bulk_parallel.py`. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/fe7e250d0)
+- **`image-read` skill** — Subagent-based image ingestion that always runs in background to avoid blocking the main thread. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/6da88d704)
+- **`gen-image` auto-eval after `--transparent`** — Every chroma-key strip now auto-scores alpha quality using the same thresholds as the test suite. Border-seeded flood fill hardened to survive grass/artifacts in corners. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/192c40ea5)
+- **`gen-tts` `--speed` flag** — Tempo multiplier via `ffmpeg atempo`. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/155438574)
+- **`delegate-to-other-repo` `prepare_dispatch.py`** — Replaces the Phase 1-3 bash orchestration with a tested Python module. Contract hardened after architect review. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/9576474b5)
+- **Typer migration** — `gen-tts`, `gen-stt`, `generate`, and `watchdog` all migrated from argparse to Typer subcommands with `uv` shebang. Python CLI Apps convention documented: Typer + `_build_app` pattern. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/2ca0a523d)
+- **CLAUDE.md session learnings** — Worktree subagent cwd instability, `uv`-script shebang gotcha, GitHub merge UI race with in-flight pushes, `subprocess.run` default-arg trap, temp file hierarchy. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/00848035a)
+
+### Other Projects (2026-04-13)
+
+**[Settings](https://github.com/idvorkin/Settings)** (dotfiles & tools)
+
+- `rmux_helper agent-continue` — new subcommand that finds a resumable Claude Code agent in tmux panes (by matching `CLAUDE_SESSION_ID` in the pane environment), then execvp-launches into it. `agent-yolo-continue` variant skips the ambiguity prompt. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/e40fe897d)
+- `rmux_helper parent-pid-tree` — traces the full ancestor chain for a tmux pane PID; `--tree` flag adds proc details and marks the root. Used to identify which agent session owns a pane. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/2937c8486)
+- `link-picker`: added Gist category and fixed hard-wrapped URL joining (multi-line URLs were being split mid-parse). [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/c2dd59886)
+- `y ou` — new `y.py` command to open the current clipboard URL in the browser. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/5ee752b53)
+
+**[blob](https://github.com/idvorkin/blob)** (image assets)
+
+- Raccoon-claw-trio regenerated using border-seeded flood-fill chroma-key — cleaner transparency without holes in the lobster-claw region. [<i class="fa fa-github"></i>](https://github.com/idvorkin/blob/commit/cd3f9c0de)
+
+**[chroma-key-explainer](https://github.com/idvorkin-ai-tools/chroma-key-explainer)** (new explainer site)
+
+- Initial explainer for the chroma-key hill-climbing process — winner-first layout, trajectory table, deep-dives collapsed, business-problem framing. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/chroma-key-explainer/commit/281aae92e)
+
+**[dolt-explainer](https://github.com/idvorkin-ai-tools/dolt-explainer)** (explainer site)
+
+- Reframed around the actual use case: beads + git sync across agents/machines. Added git-refs primer, PlantUML diagrams (refs topology + push flow), rollback/audit section, shared footer. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/dolt-explainer/commit/92e02231a)
+
+**[larry-voice-samples](https://github.com/idvorkin-ai-tools/larry-voice-samples)** (TTS explorer)
+
+- Soprano voice iteration loop: Gemini-as-critic feedback experiment. v2 hit 6/10 on Enceladus base voice using tournament+scorecard loop. Framed as hill climbing with a model-judge. Combined v1/v2 trajectory table with inline audio players. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/larry-voice-samples/commit/4af4c4a46)
+- Global speed slider (1×–2.6×) via `playbackRate`; per-voice presets; latency table. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/larry-voice-samples/commit/51248851d)
 
 ## Week of 2026-04-12
 
@@ -128,7 +1194,7 @@ Deep notes on Russ Harris's _ACT Made Simple_ — Acceptance and Commitment Ther
 - **CPU Safety Net** — New bullet in [how-igor-chops](/how-igor-chops#container-setup): two-layer guard that keeps runaway agents from melting the Mac. OrbStack hypervisor cap as the hard ceiling + userspace [cpu-watchdog.sh](https://github.com/idvorkin/Settings/blob/main/shared/cpu-watchdog.sh) that attaches `cpulimit` to any process sustaining more than four cores. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/63fc22051)
 - **CPU Guards reference doc** — New `/cpu-guards` page explaining why `systemd-run --scope -p CPUQuota` fails on OrbStack (no systemd as PID 1, read-only cgroup fs) and the two-layer userspace fallback that actually works. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0a105f381)
 
-### Infrastructure & CI
+### Infrastructure & CI (2026-04-12)
 
 - **Automated weekly changelog** — New GitHub Actions workflow that runs `/changelog` on a schedule via Claude, opens a PR automatically. Iteratively hardened this week: idempotent PR creation, `id-token: write` permission, scoped to public repos to avoid rate limits. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/94dc5927c)
 - **AI operator cross-links** — Added per-section Skills lines linking to relevant CHOP skills throughout the new `/ai-operator` post; tightened `running-servers` check in CLAUDE.md. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/fe93fc452)
@@ -193,7 +1259,7 @@ New entry on Drew Breunig's framework for the third era of software development 
 - **Portable Espresso** — New [IRL section](/irl#portable-espresso): OutIn Mino (battery-powered, 4 shots per charge) + JetBoil Flash combo (boils water in 100 seconds, 40+ cups per fuel canister). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/a1578347a)
 - **AI Feed** — Two new articles queued: Mark Russinovich on training future engineers (FAFO podcast), Maggie Zhuang's "Manifold of Desire" on RecSys architecture evolution at Meta. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e7259b89c)
 
-### Infrastructure & CI
+### Infrastructure & CI (2026-03-30)
 
 - **Claude Code Review workflow** — Switched from inline prompt to official `code-review@claude-code-plugins` marketplace plugin. Added `ready_for_review` and `reopened` PR triggers. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4c9762fbc)
 - **Backlinks workflow rewrite** — Simplified from 265 lines to 61 lines. Switched from `pull_request` (closed/merged) to `push` trigger on main. Removed complex merge strategy detection (merge commit vs squash vs rebase). Added path filtering (`_d/**`, `_td/**`, `_ig66/**`). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4c590b318)
@@ -238,7 +1304,7 @@ Three new entries covering disposable code, human contribution in AI workflows, 
 
 ### AI Native Manager: "In Distribution"
 
-New glossary entry on the ML concept applied to tooling decisions ([blog](/ai-native-manager#in-distribution)):
+New glossary entry on the ML concept applied to tooling decisions ([blog](/ai-native-vocab#in-distribution)):
 
 - **In Distribution** — Tools in the model's training data (Git, Postgres) have zero awareness cost. Your team's internal CLI? Completely out of distribution — you pay the awareness tax every time. This changes how EMs evaluate tooling: "will agents already know how to use it?" is now a legitimate engineering criterion. Connects to Yegge's Awareness lever from Software Survival 3.0. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/56667aaef)
 
@@ -248,7 +1314,7 @@ New glossary entry on the ML concept applied to tooling decisions ([blog](/ai-na
 - **Joy** — Added "What Happened to the Symbol of American Clowns" documentary (David Arquette, John C Reilly, Steve-O) to Role Models section. "It's actually a pretty selfish job because what I get out of it — it makes me feel good to make people feel good." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4a32b67ae)
 - **Explainers** — Added Karpathy's US Job Market Visualizer: interactive treemap of 342 occupations with toggleable metrics (outlook, pay, education, AI exposure). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f22e0397a)
 
-### Infrastructure & Tooling
+### Infrastructure & Tooling (2026-03-16)
 
 - **Jekyll Ruby 4.0+ fix** — Monkey-patched `pathutil` keyword arg incompatibility via TracePoint-based lazy prepend. Ruby 4.0 removed implicit Hash-to-kwargs conversion; this intercepts `require "pathutil"` and patches IO methods. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/eb000683a)
 - **Show-your-work skill** — New skill that screenshots changed blog pages, hosts images on GitHub gist, and produces PR-ready markdown. Auto-detects changed pages from git diff. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/cacd5a0d5)
@@ -317,7 +1383,7 @@ Wove Context Grabber and AI Second Brain across existing posts:
 - **Structure** — Added Context Grabber as concrete example of implicit capture feeding AI coaching. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0efc2713e)
 - **Pet Projects** — Added Context Grabber to productivity tools table, updated Magic Monitor description with card detection and side quest link. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0efc2713e)
 
-### Infrastructure
+### Infrastructure (2026-03-09)
 
 - **Jekyll Ruby 3.2+ fix** — Monkey-patched `tainted?`/`taint`/`untaint` (removed in Ruby 3.2) via `_ruby_compat.rb`, added `bigdecimal` and `ostruct` gems, updated justfile to auto-load the compat shim. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/c851e24ae)
 - **Walk-the-store skill** — New skill for visual blog audits: screenshots key pages, builds a browsable gallery. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3b560b282)
@@ -390,7 +1456,7 @@ Rewrote the spiritual health intro as exploratory rather than prescriptive, and 
 - **Four traps** - (1) Philosophy Pit: you can define all three dimensions perfectly and still be spiritually empty. (2) Motivation Test You Keep Failing: beautiful eulogy document but no behavior change in months. (3) Meaning Without Motion: clinging to a meaning source that dried up. (4) Borrowed Meaning: adopted someone else's purpose — doesn't survive contact with a hard Tuesday morning. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/772bc2169)
 - **2026 goals updated** - Added the motivation test as a Q1 goal, linked spiritual health dimensions to specific diagnostic questions, added walking-with-god as a daily practice anchor ([blog](/y2026#spiritual-health)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e50920005)
 
-### Infrastructure & Tooling
+### Infrastructure & Tooling (2026-02-08)
 
 - `/ai-content` skill — specialized workflow that loads AI content map (21 posts organized by theme cluster), reads backlinks, and sets up branch/server for AI blog post editing [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8f358f756)
 - `/spiritual-content` skill — same pattern for inner-life posts (spiritual health, religion, meditation, eulogy, etc.) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/590894703)
@@ -464,7 +1530,7 @@ New framework distinguishing compulsion from choice ([blog](/addiction#is-doing-
 - Maximize time between interventions (Tesla self-driving metric)
 - Don't be the intern doing grudge work—if AI writes and you test, roles are backwards [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/56e96e9a6)
 
-### Infrastructure & Tooling
+### Infrastructure & Tooling (2026-01-25)
 
 - `/content` skill for blog workflow [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/57815355b)
 - ASIN database: fetched metadata for 28 products [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/99c355400)

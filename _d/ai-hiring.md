@@ -10,6 +10,7 @@ tags:
   - ai
   - job-hunt
   - exploration
+ai_default_image: true
 ---
 
 Like everything else in the new AI world, hiring is gonna change. I don't know where we'll land, but I'm collecting thoughts as this plays out. The industry is all over the map - some companies now require AI use in interviews, others ban it entirely, most are somewhere in between trying to figure it out. How do we assess working with AI? What new behaviors/skills should we be testing for? I don't have answers, just observations.

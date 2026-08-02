@@ -115,6 +115,12 @@ Highlights:
 - Want to bring joy to a parent, make their child happy.
 - Life lesson here as well, find the lever that's the easiest to move to have the best impact.
 
+#### Balloons on the trail
+
+{% include repo_image_float_right.html src="balloon-hood-canal-trail.webp" alt="Igor on a PNW trail at Hood Canal, green balloon dog in hand" %}
+
+Started carrying a Qualatrix 160 + a dozen balloons on every hike at Hood Canal this spring. PNW trails are full of kids dragging thirty feet behind their parents, convinced the woods are personally punishing them. A ten-second balloon dog fixes it. 10 seconds of work resets the kid's mood for the next half-hour — and the parents get the real gift: the kid walking on their own again, the grumbling stopped, the memory becoming "that was fun" instead of "that was awful." A pump and a fistful of balloons is a free upgrade to any day-hike pack.
+
 ### Impact vs Effort
 
 It took me low years to learn magic, and people like it. It took me low weeks to learn to make balloons, and kids like it way more.

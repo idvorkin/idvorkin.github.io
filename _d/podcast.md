@@ -9,6 +9,35 @@ redirect_from:
 
 To my amazement, I listen to podcasts. I think they're pretty interesting, here are my notes on them.
 
+## My own audio feed: Igor's Podcast
+
+{% include blob_image_float_right.html src="blog/podcast-cover-transparent.webp" %}
+
+I now narrate some of my essays as audio episodes via AI voiceover (Gemini 3.1 Flash TTS, Charon voice). First episode: my full take on the [7 Habits of Highly Effective People](/7h-concepts) — about two and a quarter hours, solo narration, with embedded chapter markers.
+
+**Subscribe**: paste this into Overcast / Apple Podcasts / Pocket Casts:
+
+```
+https://idvorkin-ai-tools.github.io/podcast/feed.xml
+```
+
+Or one-tap: [`podcast://idvorkin-ai-tools.github.io/podcast/feed.xml`](podcast://idvorkin-ai-tools.github.io/podcast/feed.xml).
+
+The voiceover is AI; the words are mine. Feed + audio + cover art all live in the [`idvorkin-ai-tools/podcast`](https://github.com/idvorkin-ai-tools/podcast) repo; the toolchain is the `gen-tts` skill in [chop-conventions](https://github.com/idvorkin/chop-conventions).
+
+### Pick your narrator
+
+Gemini Flash TTS ships 30 prebuilt voices. The current default is **Charon** (deep storyteller baritone) — but if you want to hear how the other voices land before subscribing, the catalog below is the same one I use to pick. Tap any name to hear that voice read a short sample.
+
+<iframe src="https://idvorkin-ai-tools.github.io/larry-voice-samples/"
+        width="100%" height="640"
+        loading="lazy"
+        title="Gemini TTS voice catalog — Larry voice samples"
+        style="border: 1px solid var(--bs-border-color, #ddd); border-radius: 8px;">
+</iframe>
+
+Standalone page: [larry-voice-samples](https://idvorkin-ai-tools.github.io/larry-voice-samples/) · Soprano-iteration hill-climb: [soprano-iteration.html](https://idvorkin-ai-tools.github.io/larry-voice-samples/soprano-iteration.html) (using a Gemini Pro model-as-judge to make Charon sound like Tony Soprano — see [/hill-climbing](/hill-climbing#soprano-tune-a-voice-prompt-with-a-model-as-judge) for the write-up).
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 

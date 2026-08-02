@@ -187,21 +187,23 @@ The final phase is about figuring out how to integrate what you've learned back 
 
 ## The Dragons: Why We Don't Take Gap Years
 
-Despite the compelling case, most people don't take gap years. The dragons guarding this treasure are:
+Despite the compelling case, most people don't take gap years. Three ancient dragons guard the treasure — the same three that show up everywhere in adult life, but that work keeps boxed.
 
-_In order for Igor_
+**The Scarcity Dragon** — _"There will never be enough"_
 
-**The Security Dragon**: "What if I can't find work when I return?" This fear often exceeds the actual risk.
+At work, the biweekly paycheck keeps this dragon sedated. The moment you stop, it wakes up and starts whispering: _What if the market tanks while you're off? What if you can't find work when you come back? What if your savings aren't enough?_ Every market dip becomes personal, every expense feels like bleeding out. The dragon makes scarcity feel like fact, even when the math says otherwise.
 
-**The Momentum Dragon**: "I can't stop now - I'm on a roll." But momentum in the wrong direction is just speed toward the wrong destination.
+**The Entropy Dragon** — _"Everything tends toward disorder"_
 
-**The Perfectionism Dragon**: "I need to have it all figured out before I take time off." This leads to endless planning and no action.
+Work provides free structure — deadlines, meetings, deliverables — that keeps your habits intact. Without that external scaffolding, everything decays: your body, your sleep, your relationships, your skills. The dragon whispers you'll drift, sleep till noon, skip workouts, lose discipline. It's not paranoid — it's thermodynamics. Order requires energy input, and without work providing it for free, you have to generate it yourself.
 
-**The Judgment Dragon**: "People will think I'm irresponsible/lazy/having a midlife crisis." Others' opinions become more important than our own well-being.
+**The Squander Dragon** — _"You will waste this precious opportunity"_
 
-**The Identity Dragon**: "I am my job." Taking time off threatens our sense of self and social standing.
+This dragon feeds on the fear that you'll misuse the rare gift of time and resources. Without external metrics — no performance review, no shipped features, no calendar screenshots to point to — how will you know if you're succeeding? The dragon asks: _What if you look back in a year and realize you squandered the very opportunity you sacrificed so much to create?_ It uses your fear of judgment ("people will think I'm lazy") and identity loss ("but I am my job") as its loudest spawn.
 
-Each dragon is guarding something legitimate - security, identity, social standing are all important. But they're also holding you hostage from one of the most transformative opportunities of your life.
+Each dragon is guarding something legitimate — security, structure, and meaningful output are all real human needs. But they're also holding you hostage from one of the most transformative opportunities of your life. The work isn't to slay them; they're immortal forces. The work is to tame them.
+
+For the deep mapping of how I'm wrestling with each in real time — dialogs, taming strategies, structures — see the companion piece: **[Will Igor Take a Gap Year?](/gap-year-igor)**
 
 {% include summarize-page.html src="/resistance" %}
 

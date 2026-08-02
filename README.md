@@ -1,4 +1,4 @@
-# Igor's Enabling Environment and Ever green notes
+# Igor's Enabling Environment and Evergreen notes
 
 <!--
 This README showcases my blog at https://idvork.in
@@ -55,7 +55,7 @@ This [blog](https://idvork.in) contains my [evergreen notes](https://notes.andym
 
 ### No broken links
 
- - A script validates no broken links keeping everything nice
+- A script validates no broken links keeping everything nice
 
 ### Select a Random Page
 

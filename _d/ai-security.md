@@ -7,9 +7,12 @@ redirect_from:
 tags:
   - ai
   - llm
+ai_default_image: true
 ---
 
 Security is super interesting, AI is super interesting, the combination, is super-duper interesting!
+
+{% include alert.html content='I built two companion field-map explainers: the [AI Red-Teaming ramp-up](https://idvorkin-ai-tools.github.io/red-teaming-ramp-up/) — OWASP LLM Top 10, the jailbreak canon, tooling, evals — and the [AI Safety field map](https://idvorkin-ai-tools.github.io/ai-safety-field-map/) — failure modes, alignment, interpretability, evals, governance.' style="info" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
