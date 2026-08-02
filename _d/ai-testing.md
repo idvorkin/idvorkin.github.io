@@ -159,14 +159,16 @@ Three tasks: add a section, rename a heading, and fix a body typo — the last o
 
 First results (2026-08):
 
-| Config                                   | Runs | Edit landed | TOC correct | No collateral | Avg diff lines |
-| ---------------------------------------- | ---- | ----------- | ----------- | ------------- | -------------- |
-| sonnet · Claude Code                     | 9    | 100%        | 100%        | 100%          | 4.6            |
-| haiku · Claude Code                      | 11   | 100%        | 100%        | 100%          | 3.7            |
-| gpt-5.4-mini · Codex CLI, zero reasoning | 10   | 70%         | 100%        | 100%          | 3.0            |
-| mock-bad (grader test)                   | 3    | 100%        | 33%         | 0%            | -              |
+| Config                                   | Runs | Edit landed | TOC correct | No collateral | Judge score |
+| ---------------------------------------- | ---- | ----------- | ----------- | ------------- | ----------- |
+| sonnet · Claude Code                     | 9    | 100%        | 100%        | 100%          | 0.99        |
+| haiku · Claude Code                      | 11   | 100%        | 100%        | 100%          | 0.96        |
+| gpt-5.4-mini · Codex CLI, zero reasoning | 10   | 70%         | 100%        | 100%          | 0.70        |
+| mock-bad (grader test)                   | 3    | 100%        | 33%         | 0%            | 0.61        |
 
-Both Claude configs pass everything, including zero TOC churn on the trap task. The deliberately dumb Codex config (mini model, reasoning effort none, sandbox replaced by a pre-approved command allowlist since its bwrap sandbox can't spawn in my VM) broke the saturation: 3 of its 10 runs fail, and every failure is a give-up after the first blocked edit attempt - never a wrong edit. When it does act, the TOC and collateral checks stay clean. Which surfaces the real lesson: the permission envelope is part of the harness under test, not just the model. Next variants: drop the CLAUDE.md hints, use full-size pages, make edits that span files.
+Both Claude configs pass everything, including zero TOC churn on the trap task. The deliberately dumb Codex config (mini model, reasoning effort none, sandbox replaced by a pre-approved command allowlist since its bwrap sandbox can't spawn in my VM) broke the saturation: 3 of its 10 runs fail, and every failure is a give-up after the first blocked edit attempt - never a wrong edit. When it does act, the TOC and collateral checks stay clean. Which surfaces the real lesson: the permission envelope is part of the harness under test, not just the model.
+
+The judge column is a second grader — an LLM judge scoring correctness, voice match, and scope from the diff — layered on after the fact, since decoupled grading re-scores old runs for free. It found the daylight the deterministic checks can't see: sonnet 0.99 vs haiku 0.96 (haiku gets docked for details like unspaced em-dashes on a page that uses spaced hyphens), while an empty diff short-circuits to 0 with no LLM call. Deterministic graders stay the gate; the judge adds the quality axis. Next variants: drop the CLAUDE.md hints, use full-size pages, make edits that span files.
 
 The graders themselves get tested with a pair of mock runners — a known-good one that must always pass, and a sloppy one (skips the TOC regen, leaves a scratch file behind) that must always fail. If your checkers have never failed a bad run on purpose, you don't know that they work.
 
