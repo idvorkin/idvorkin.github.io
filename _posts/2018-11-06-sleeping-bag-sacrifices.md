@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sleeping bag sacrifices"
-tag:
+tags:
   - "software as a story"
   - "early career"
 ---

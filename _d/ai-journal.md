@@ -285,7 +285,7 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - **Demand Horizon** — you stop perceiving model improvements because your problems don't stretch them. Yegge's antidote: keep a stash of "pocket evals" — unsolved problems you throw at each new model to actually feel the delta.
   - **Discernment Horizon** — the darker ceiling: "past some level of capability there is no human alive who can verify the model output. Everyone has a discernment horizon, even Dario." Once you're past it you can't tell if the model is right, because checking the work is itself beyond you. Ties straight to my [When AI Shows Its Work: Verification as Trust](#when-ai-shows-its-work-verification-as-trust) and the [review-cost < generation-cost](#review-cost--generation-cost--prs-were-net-win) thread — verification is the bottleneck, and it has a personal horizon.
 - **AI literacy is measurable** — citing Netflix's Ezra Savard, he buckets people by _tokens burned per day_: 0M (non-users) → 4M (single-agent, synchronous) → 12–15M (multi-agent, async). The kicker: people **jump cohorts in ~5 hours** of hands-on training on _real_ work, manager in the room, during work hours. "AI Literacy does not come for free. The only thing you get for free is AI Anxiety."
-- **Advanced literacy flips from max-spend to min-waste** — once you're multi-agent the game stops being "use more tokens" and becomes routing each task to the _minimum capable model_. Same lesson the [$230 Week](#the-230-week-when-cheap-coding-isnt) and [Dylan Patel on token supply/demand](#dylan-patel-on-the-supply-and-demand-of-ai-tokens) beat into me — tokens are a budget, and waste is the enemy.
+- **Advanced literacy flips from max-spend to min-waste** — once you're multi-agent the game stops being "use more tokens" and becomes routing each task to the _minimum capable model_. Same lesson the [\$230 Week](#the-230-week-when-cheap-coding-isnt) and [Dylan Patel on token supply/demand](#dylan-patel-on-the-supply-and-demand-of-ai-tokens) beat into me — tokens are a budget, and waste is the enemy.
 - **SaaS survives the plateau** — counter to "AI eats all software": stable model capability tilts buy-vs-build back toward _buy_, because full AI rewrites stay expensive and risky, so existing SaaS keeps its moat. A more optimistic counterpoint to his own [Software Survival 3.0](#software-survival-30---steve-yegges-framework-for-ai-era-software) and the [AI Vampire / who-captures-the-10x](#steve-yegges-ai-vampire---who-captures-the-10x) framing.
 - **Why I'm keeping this**: it's the most _hopeful_ Yegge piece in a while — "a plateau lets us set up a camp and start building. We've been on unstable ground." It reframes the anxiety (am I keeping up?) into a craft question (am I building literacy + verification habits on the rungs I already have?).
 
@@ -302,7 +302,7 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - **Confirmed the fix took**: I revoked the key in the console; the agent re-probed → `401`. Dead, verified.
   - This is the journal-worthy part: diffing a year of public history against a private secret store, validating a key against a live endpoint, then confirming the revocation — tedious, systematic, exactly what an agent is good at. By hand I'd have eyeballed it and moved on.
 - **What Didn't** — the uncomfortable parts:
-  - **The key was never even needed.** Claude Code runs on my Max subscription; the inherited env key was silently forcing per-token API billing instead of my plan — the same [cheap-coding-isn't-cheap dynamic from the $230 Week](#the-230-week-when-cheap-coding-isnt). Dropping it fixed the leak _and_ the billing.
+  - **The key was never even needed.** Claude Code runs on my Max subscription; the inherited env key was silently forcing per-token API billing instead of my plan — the same [cheap-coding-isn't-cheap dynamic from the \$230 Week](#the-230-week-when-cheap-coding-isnt). Dropping it fixed the leak _and_ the billing.
   - **The auto-capture pipeline had no secret filter.** A hook that commits session transcripts to a tracked public repo is the exact opposite of the [one-token-one-repo blast-radius discipline](#one-repo-one-token-the-closest-you-can-get-to-write-only-on-github) — an unscoped, unfiltered firehose into public. Mine ran for a year before I noticed.
   - And the honest part: a key public that long should be assumed harvested. Revoking it closes the door now; I have no idea who already walked through.
 
@@ -353,21 +353,21 @@ Source: ["AI is an attention hazard"](https://thoughts.hmmz.org/2026-05-31.html)
 
 - **The video**: [The Supply and Demand of AI Tokens | Dylan Patel Interview](https://youtu.be/LF3aUIM57uw) — Dylan Patel (founder of [SemiAnalysis](https://www.semianalysis.com/)) on Patrick O'Shaughnessy's [Invest Like the Best, ep. 468](https://open.spotify.com/episode/3Eu3mpOcpEjrg3SYtrglBk), April 23, 2026. Show notes at [colossus.com](https://colossus.com/episode/supply-demand-of-tokens/). Full transcript: [gist](https://gist.github.com/idvorkin-ai-tools/15e47ffab0f6684f474bf29fb6aef5fe).
 - **The numbers Patel actually cites**:
-  - **SemiAnalysis Claude Code spend**: tens of thousands last year → **$5M last week → $7M annualized this week** vs a **$25M salary line** (>25% of payroll, on pace for 100%+ by year-end).
-  - **Anthropic ARR**: $9B → **$35-40B**, adding **~$10B/month**, gross margins at a **72% floor** — vs leaked funding-round docs showing "30-something percent" at start of year.
-  - **End-of-year linear extrapolation**: ~**$400B** on Opus-4.6-tier models alone — and Patel calls that the _linear_ case.
+  - **SemiAnalysis Claude Code spend**: tens of thousands last year → **$5M last week → $7M annualized this week** vs a **\$25M salary line** (>25% of payroll, on pace for 100%+ by year-end).
+  - **Anthropic ARR**: $9B → **$35-40B**, adding **~\$10B/month**, gross margins at a \*\*72% floor\*\* — vs leaked funding-round docs showing "30-something percent" at start of year.
+  - **End-of-year linear extrapolation**: ~**\$400B** on Opus-4.6-tier models alone — and Patel calls that the _linear_ case.
   - **DRAM**: capped at **20-30%/yr** capacity growth; true incremental supply doesn't land until **late 2027 / early 2028**. Prices "will double or triple from here."
   - **GPU useful life**: not 5 years — **7-8+ years**. Hopper clusters resigning at higher prices.
-  - **TSMC capex**: $56B this year, plausibly **$100B by 2028**.
+  - **TSMC capex**: $56B this year, plausibly \*\*$100B by 2028\*\*.
   - **Anthropic Mythos**: L4 engineer (Opus 4.6) → **L6 in two months** internally. Anthropic is throttling release — "potentially the biggest step up in model capabilities in two years."
-- **"Cloud code psychosis"** (Patel's term): an ex-Intel engineer with a couple thousand dollars of tokens replaced an entire Intel team's chip reverse-engineering pipeline. A solo ex-bank economist built a deflation/inflation model + a 2,000-task BLS eval benchmark in weeks ("would have taken 200 economists a year"). The energy lead, $6k/day for three weeks, scraped every U.S. power plant and transmission line into a live grid map customers prefer over a 100-person, decade-old incumbent.
+- **"Cloud code psychosis"** (Patel's term): an ex-Intel engineer with a couple thousand dollars of tokens replaced an entire Intel team's chip reverse-engineering pipeline. A solo ex-bank economist built a deflation/inflation model + a 2,000-task BLS eval benchmark in weeks ("would have taken 200 economists a year"). The energy lead, \$6k/day for three weeks, scraped every U.S. power plant and transmission line into a live grid map customers prefer over a 100-person, decade-old incumbent.
 - **Why tokens get scarcer, not cheaper**:
 
   > As we get more and more intelligent, what really matters is access to these most intelligent tokens... the shitty SaaS startup in SF using Claude to generate their software product is not creating a ton of value and therefore they're going to get priced out of tokens soon enough.
 
   Every lab is supply-constrained; even tier-2 and tier-3 labs sell out. Anthropic could double Opus pricing and Patel says he'd keep paying. Patel's playbook: get the enterprise pay-per-token contract (not the consumer subscription), then figure out how to leverage those tokens at the highest-value task. The skill that matters is no longer implementation — it's picking which idea is worth pointing tokens at.
 
-- **The Igor angle**: this is the [$230 Week](#the-230-week-when-cheap-coding-isnt) dynamic seen from the supply side. My burn wasn't user error — I was riding the front of Patel's curve. The shift: **the answer is not to throttle, it's to point the tokens at the highest-leverage thing I can think of**. For Larry specifically — the subagent-extraction stack on the Claude Code subscription pool (~$0.12/entry equivalent) is the right shape; the open question is whether the journal cross-index is actually _the_ highest-value place to point those tokens, or just the most-fun one. Worth re-asking before the next big run.
+- **The Igor angle**: this is the [\$230 Week](#the-230-week-when-cheap-coding-isnt) dynamic seen from the supply side. My burn wasn't user error — I was riding the front of Patel's curve. The shift: **the answer is not to throttle, it's to point the tokens at the highest-leverage thing I can think of**. For Larry specifically — the subagent-extraction stack on the Claude Code subscription pool (~\$0.12/entry equivalent) is the right shape; the open question is whether the journal cross-index is actually _the_ highest-value place to point those tokens, or just the most-fun one. Worth re-asking before the next big run.
 
 ### 2026-04-17
 
@@ -402,15 +402,15 @@ Source: ["AI is an attention hazard"](https://thoughts.hmmz.org/2026-05-31.html)
 
 ### 2026-04-12
 
-#### The $230 Week: When Cheap Coding Isn't
+#### The \$230 Week: When Cheap Coding Isn't
 
-- **TOP Takeaway**: Claude Code feels free until it isn't. A 12-hour vibe-coding session plus a swarm of background agents burned through ~$230 in a week — 50% of the $200/month Max sub, another $100 in extra usage, plus 30% of the prior week's sub that rolled over. The subscription's 93% savings vs API is real, but only when you stay inside the budget. Once you tip into extra usage, you're paying raw API rates on top of a subscription you didn't finish using.
+- **TOP Takeaway**: Claude Code feels free until it isn't. A 12-hour vibe-coding session plus a swarm of background agents burned through ~$230 in a week — 50% of the $200/month Max sub, another \$100 in extra usage, plus 30% of the prior week's sub that rolled over. The subscription's 93% savings vs API is real, but only when you stay inside the budget. Once you tip into extra usage, you're paying raw API rates on top of a subscription you didn't finish using.
 - **The numbers**:
   - Max 20x ($200/mo) ≈ ~$50/week baseline
-  - Week 1 of April: ~$230 spent ≈ **4.6× weekly budget**
-  - Breakdown: $60 carry from last week + $100 this week's sub + $100 extra usage overage
+  - Week 1 of April: ~\$230 spent ≈ **4.6× weekly budget**
+  - Breakdown: $60 carry from last week + $100 this week's sub + \$100 extra usage overage
   - Pacing alert: 50% used by day 1 of a new 7-day window (only 15% elapsed) → "Slow down"
-- **The logic**: Anthropic doesn't publish the weekly token cap — only rolling 5-hour windows (~220K tokens for Max 20x). Extra usage bills at standard API rates: **$5/$25 per million input/output tokens for Opus 4.6**. The subscription's real magic is that **cache reads are free**, while API cache reads are $0.50/MTok. A heavy agentic session touches the same codebase context repeatedly — 90%+ of tokens are cache reads. Subscription: $0. API: $25+. That's the 93% savings ratio heavy users report.
+- **The logic**: Anthropic doesn't publish the weekly token cap — only rolling 5-hour windows (~220K tokens for Max 20x). Extra usage bills at standard API rates: **$5/$25 per million input/output tokens for Opus 4.6**. The subscription's real magic is that **cache reads are free**, while API cache reads are $0.50/MTok. A heavy agentic session touches the same codebase context repeatedly — 90%+ of tokens are cache reads. Subscription: $0. API: \$25+. That's the 93% savings ratio heavy users report.
 - **What drove the burn**:
   - Parallel subagents for journal extraction (80 entries × retries)
   - Multiple Larry life-coach sessions
@@ -423,7 +423,7 @@ Source: ["AI is an attention hazard"](https://thoughts.hmmz.org/2026-05-31.html)
 - **How it was caught and confirmed** ([anthropics/claude-code#46829](https://github.com/anthropics/claude-code/issues/46829), closed 2026-04-12, 221 reactions — HN front page at [498 pts](https://news.ycombinator.com/item?id=47736476)):
   - A user analyzed **119,866 Claude Code API calls across two machines** using the `ephemeral_1h_input_tokens` / `ephemeral_5m_input_tokens` fields in session JSONL. Feb 1 – Mar 5: 1h TTL stable for 33+ days. Mar 6–8: transition. Mar 8 – Apr 11: 5m dominant. No client-side changes — the flip was server-side.
   - **Jarred from Anthropic confirmed it was intentional**: _"The March 6 change makes Claude Code cheaper, not more expensive."_ The argument: 1h writes cost 2× base input vs. 5m writes at 1.25×, and many one-shot calls never re-read within the hour, so per-request TTL selection is net cheaper across the request mix — _on average_. It just happens to be catastrophically expensive for the long-session workload I actually run.
-  - Supporting reports from other Max 20x users: [#43274](https://github.com/anthropics/claude-code/issues/43274) (5-hour window collapsing to 60–90 min around March 23), [#22435](https://github.com/anthropics/claude-code/issues/22435) (mitmproxy evidence of 10× burn-rate variance via `x-ratelimit-5h-utilization` headers), [#40715](https://github.com/anthropics/claude-code/issues/40715) (feature request for the runaway-detection pacing alert that still doesn't exist — user burned $50 in minutes with no warning).
+  - Supporting reports from other Max 20x users: [#43274](https://github.com/anthropics/claude-code/issues/43274) (5-hour window collapsing to 60–90 min around March 23), [#22435](https://github.com/anthropics/claude-code/issues/22435) (mitmproxy evidence of 10× burn-rate variance via `x-ratelimit-5h-utilization` headers), [#40715](https://github.com/anthropics/claude-code/issues/40715) (feature request for the runaway-detection pacing alert that still doesn't exist — user burned \$50 in minutes with no warning).
 - **The trust cost**: the TTL number isn't the real damage. The real damage is that from now on, every unexpected burn forces the question _"did I break something, or did they silently change something?"_ — and that doubt compounds across every future debugging session. Comments on #46829 escalated fast: "rug pull," "scammer tactics," "constructive termination" of Max plans.
 
 #### Two-Process Telegram: When the Platform Is the Bug
@@ -530,7 +530,7 @@ Source: ["AI is an attention hazard"](https://thoughts.hmmz.org/2026-05-31.html)
 <td align="center"><strong>v3: Gemini 3.1 (fixed)</strong><br/><a href="https://gist.githubusercontent.com/idvorkin-ai-tools/f144b836b1e5b2f41ea95cd4bb100776/raw/raccoon-zach-orthodox-church-v3.jpg"><img src="https://gist.githubusercontent.com/idvorkin-ai-tools/f144b836b1e5b2f41ea95cd4bb100776/raw/raccoon-zach-orthodox-church-v3.jpg" width="200"/></a><br/>3D plush restored ✅</td>
 </tr></table>
 
-- **The Problem**: Upgraded default model in `gemini-image.sh` from `gemini-2.5-flash-image` to `gemini-3.1-flash-image-preview` (released Feb 26, 2026). Same prompt, same reference image — completely different output style.
+- **The Problem**: Upgraded default model in `gemini-image.sh` from `gemini-2.5-flash-image` to `gemini-3.1-flash-image-preview` (released Feb 26, 2026). Same prompt, same reference image — completely different output style. The stakes: the blog's [raccoon mascot brand](/raccoon-history) depends on style consistency.
 - **Root Cause**: End-of-prompt bias. Gemini 3.1 gave "children's book style" (last phrase) priority over "3D/vinyl toy" (earlier). The old model balanced them; the new model doesn't.
 - **The Fix**: Removed "children's book style", added `IMPORTANT STYLE:` prefix, added negative prompting "NOT 2D illustration, NOT flat art", strengthened 3D language with "visible texture" and "soft shadows".
 - **Takeaways**: (1) Always A/B test prompts across model versions. (2) Negative prompting matters more in newer models. (3) Put critical style directives at the end or use "IMPORTANT" prefixes. (4) Keep baselines for comparison.
@@ -581,7 +581,7 @@ Source: ["AI is an attention hazard"](https://thoughts.hmmz.org/2026-05-31.html)
 - **The Vampire**: AI is an energy vampire (Colin Robinson from What We Do In The Shadows). Addictive — dopamine and adrenaline like a slot machine. Then massive fatigue, "nap attacks," falling asleep at random hours.
 - **Unrealistic beauty standards**: Early adopters like Yegge (40 years experience, unlimited time/tokens) set impossible benchmarks. CEOs see that and get dollar-sign eyes — reframing it as "a recruiting problem," finding people ripest for extraction.
 - **Startups poisoning the well**: Thousands throwing talent at the same six tired pitches ("AI personas!", "Agent memory!", "Better RAG!"), burning people out chasing ideas that won't sell a dollar of ARR
-- **The $/hr formula** from his Amazon days (2001): You can't control the numerator (salary), but you control the denominator (hours). Collectively, employees have all the power.
+- **The \$/hr formula** from his Amazon days (2001): You can't control the numerator (salary), but you control the denominator (hours). Collectively, employees have all the power.
 - **His prescription**: 3-4 hour workdays. AI turns us all into Jeff Bezos — only hard decisions left. You can only sustain that pace in short bursts. "Go touch grass every day. Close the computer. Go be a human."
 
 #### AI Value Capture - It's the Integral, Not the Point
@@ -785,9 +785,9 @@ Source: ["AI is an attention hazard"](https://thoughts.hmmz.org/2026-05-31.html)
 
 ### 2025-10-26
 
-#### Cloning ScrollBuddy - Reverse Engineering a $100/year Widget
+#### Cloning ScrollBuddy - Reverse Engineering a \$100/year Widget
 
-- **TOP Takeaway**: Got annoyed someone was charging $100/year for a scroll buddy widget - challenged Claude to clone it through reverse engineering. Success!
+- **TOP Takeaway**: Got annoyed someone was charging \$100/year for a scroll buddy widget - challenged Claude to clone it through reverse engineering. Success!
 - **The Project**: [scroll-buddy repository](https://github.com/idvorkin-ai-tools/scroll-buddy)
 - **The Chat Log**: [Full conversation](https://htmlpreview.github.io/?https://gist.githubusercontent.com/idvorkin-ai-tools/3c4e0db9551270d474c82a39ba2302d4/raw/chat-log.html) | [Filtered (user/assistant only)](https://htmlpreview.github.io/?https://gist.githubusercontent.com/idvorkin-ai-tools/3c4e0db9551270d474c82a39ba2302d4/raw/chat-log.html&filter=user,assistant)
 - **The Result**: [Live Demo](https://htmlpreview.github.io/?https://gist.githubusercontent.com/idvorkin-ai-tools/62cfb5e6ed0454814ff03e2f6f450cd3/raw/demo.html)
@@ -1102,7 +1102,7 @@ This story perfectly illustrates the current state of AI development: incredibly
 ![Dual monitor setup showing two large curved monitors on a desk with code/terminal windows open, against a bright green wall - the new monitor setup providing more horizontal space for AI agents](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250720_135228.webp)
 
 - Got Claude Code
-- Updated to $100/month subscription based on what bestie told me
+- Updated to \$100/month subscription based on what bestie told me
 
 ![Text conversation showing discussion about Claude Code usage and subscription pricing, with messages about upgrading from $20/month to $100/month plan after recommendation about LLMs being important for productivity](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250720_135628.webp)
 
@@ -1423,7 +1423,7 @@ Use meta -I (e.g. Alt-I) e.g. AI :)
 - Used the original "davinci" engine (not even GPT-3.5 yet!)
 - "davinci" was the top model - no GPT-3.5-turbo, no GPT-4
 - APIs were brand new and documentation was sparse
-- "davinci" model cost $0.02/1K tokens (10x more than GPT-3.5-turbo later!)
+- "davinci" model cost \$0.02/1K tokens (10x more than GPT-3.5-turbo later!)
 
   ```
 
