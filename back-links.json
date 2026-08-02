@@ -423,7 +423,7 @@
                 "/y25",
                 "/y26"
             ],
-            "last_modified": "2026-06-07T11:08:11-07:00",
+            "last_modified": "2026-07-14T13:40:07+02:00",
             "markdown_path": "_d/42.md",
             "outgoing_links": [
                 "/chapters",
@@ -485,7 +485,7 @@
                 "/timeoff-2020-12",
                 "/win-win"
             ],
-            "last_modified": "2025-07-20T19:26:41-07:00",
+            "last_modified": "2026-07-14T04:50:44+00:00",
             "markdown_path": "_posts/2018-01-04-7-habits.md",
             "outgoing_links": [
                 "/7h-concepts",
@@ -516,7 +516,7 @@
                 "/sharpen-the-saw",
                 "/writing"
             ],
-            "last_modified": "2026-05-10T10:03:10-07:00",
+            "last_modified": "2026-07-13T19:49:39+02:00",
             "markdown_path": "_d/7h-c0.md",
             "outgoing_links": [
                 "/7-habits",
@@ -615,7 +615,7 @@
             "incoming_links": [
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-04-14T20:26:12-07:00",
+            "last_modified": "2026-07-19T05:20:21-07:00",
             "markdown_path": "_d/act.md",
             "outgoing_links": [
                 "/addiction",
@@ -677,12 +677,12 @@
         },
         "/adblocker-trojan": {
             "description": "Out of the blue I started seeing ads in my google search. They were especially prominent due to the fact they were white, and I use a black background. It was caused by a trojan running in my chrome extension, which I suspect was installed by a name-jacked NPM plugin.\n\n",
-            "doc_size": 16000,
+            "doc_size": 17000,
             "file_path": "_site/adblocker-trojan.html",
             "incoming_links": [
                 "/timeoff-2021-11"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2026-07-14T06:24:33+02:00",
             "markdown_path": "_td/adblocker_trojan.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -958,6 +958,22 @@
             "title": "AI Developer",
             "url": "/ai-developer"
         },
+        "/ai-eval-tools": {
+            "description": "Every time I want to compare models, prompts, or agent harnesses I trip over the same question: which eval tool? This page is a quick survey of the field to get a feel for what exists — not a considered review. I’ve only used two of these in anger, the versions move fast, and most of what follows will be stale by the time you read it.\n\n",
+            "doc_size": 20000,
+            "file_path": "_site/ai-eval-tools.html",
+            "incoming_links": [
+                "/ai-testing"
+            ],
+            "last_modified": "2026-08-02T12:47:16.292502+00:00",
+            "markdown_path": "_d/ai-eval-tools.md",
+            "outgoing_links": [
+                "/ai-testing"
+            ],
+            "redirect_url": "",
+            "title": "AI Eval Tools",
+            "url": "/ai-eval-tools"
+        },
         "/ai-faq": {
             "description": "Questions I keep getting asked about AI, and my current (probably wrong) answers. The ones that don’t resolve cleanly.\n\n",
             "doc_size": 24000,
@@ -1052,7 +1068,7 @@
                 "/ai-art",
                 "/ai-training"
             ],
-            "last_modified": "2026-06-07T10:19:45-07:00",
+            "last_modified": "2026-07-14T06:20:26+02:00",
             "markdown_path": "_d/ai-imagegen.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -1066,7 +1082,7 @@
             "incoming_links": [
                 "/ai-training"
             ],
-            "last_modified": "2026-06-07T10:19:45-07:00",
+            "last_modified": "2026-07-22T07:40:48-07:00",
             "markdown_path": "_d/ai-inference.md",
             "outgoing_links": [
                 "/ai-faq",
@@ -1184,7 +1200,7 @@
         },
         "/ai-native-vocab": {
             "description": "AI is spawning a whole new vocabulary — some of it genuinely useful, some of it pure hype. This is my running glossary of the terms worth knowing, with my take on what each one actually means and why it matters. It’s the companion glossary to The AI Native Engineering Manager.\n\n",
-            "doc_size": 35000,
+            "doc_size": 37000,
             "file_path": "_site/ai-native-vocab.html",
             "incoming_links": [
                 "/ai-native-manager",
@@ -1194,7 +1210,7 @@
                 "/explainers",
                 "/pet-projects"
             ],
-            "last_modified": "2026-06-13T10:34:10-07:00",
+            "last_modified": "2026-07-19T05:42:22-07:00",
             "markdown_path": "_d/ai-native-vocab.md",
             "outgoing_links": [
                 "/agency",
@@ -1325,7 +1341,7 @@
                 "/claw",
                 "/hyper-personal"
             ],
-            "last_modified": "2026-03-14T16:03:56-07:00",
+            "last_modified": "2026-07-14T06:26:45+02:00",
             "markdown_path": "_d/ai-second-brain.md",
             "outgoing_links": [
                 "/ai-cockpit",
@@ -1363,10 +1379,11 @@
         },
         "/ai-testing": {
             "description": "Testing math is easy, it’s right or wrong. Testing spelling is easy too, but testing if a joke is funny - now that’s tough. Let’s talk about how to test AI.\n\n",
-            "doc_size": 23000,
+            "doc_size": 27000,
             "file_path": "_site/ai-testing.html",
             "incoming_links": [
                 "/ai",
+                "/ai-eval-tools",
                 "/ai-training",
                 "/chop",
                 "/genai-talk",
@@ -1375,9 +1392,10 @@
                 "/testing",
                 "/timeoff-2024-04"
             ],
-            "last_modified": "2026-06-07T10:19:45-07:00",
+            "last_modified": "2026-08-02T12:38:41+00:00",
             "markdown_path": "_d/ai-testing.md",
             "outgoing_links": [
+                "/ai-eval-tools",
                 "/hill-climbing"
             ],
             "redirect_url": "",
@@ -1565,7 +1583,7 @@
             "incoming_links": [
                 "/tools"
             ],
-            "last_modified": "2024-09-22T16:18:28-07:00",
+            "last_modified": "2026-07-14T06:24:33+02:00",
             "markdown_path": "_td/ast-grep.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -1607,7 +1625,7 @@
                 "/knee-pain",
                 "/physical-pain"
             ],
-            "last_modified": "2026-01-01T17:03:05+00:00",
+            "last_modified": "2026-07-14T06:28:56+02:00",
             "markdown_path": "_d/back-pain.md",
             "outgoing_links": [
                 "/coe",
@@ -1635,7 +1653,7 @@
                 "/slow",
                 "/timeoff-2021-12"
             ],
-            "last_modified": "2025-08-24T10:29:13-07:00",
+            "last_modified": "2026-07-14T06:20:26+02:00",
             "markdown_path": "_d/balance2.md",
             "outgoing_links": [
                 "/7-habits",
@@ -1679,10 +1697,10 @@
         },
         "/bc": {
             "description": "A guide to my favorite spots in British Columbia, focusing on Vancouver and Chilliwack. Whether you’re planning a quick weekend getaway or a longer adventure, here’s what you need to know. These recommendations come from my personal experiences over multiple trips - you can read about some of them in my summer 2024 adventures, Yellow Deli expedition, and various time off adventures:\n\n",
-            "doc_size": 22000,
+            "doc_size": 23000,
             "file_path": "_site/bc.html",
             "incoming_links": [],
-            "last_modified": "2025-12-07T03:02:44+00:00",
+            "last_modified": "2026-07-19T05:20:21-07:00",
             "markdown_path": "_d/bc-vacation.md",
             "outgoing_links": [
                 "/ig66/718",
@@ -1717,7 +1735,7 @@
                 "/untangled",
                 "/words-we-dont-have"
             ],
-            "last_modified": "2026-05-11T07:16:52-07:00",
+            "last_modified": "2026-07-13T19:49:39+02:00",
             "markdown_path": "_d/7h-c1.md",
             "outgoing_links": [
                 "/7-habits",
@@ -1813,7 +1831,7 @@
                 "/sleep",
                 "/timeoff-2024-02"
             ],
-            "last_modified": "2025-12-06T18:03:02-08:00",
+            "last_modified": "2026-07-14T06:26:45+02:00",
             "markdown_path": "_d/blueprint.md",
             "outgoing_links": [
                 "/ig66/663",
@@ -1830,7 +1848,7 @@
             "incoming_links": [
                 "/job-hunt-stress"
             ],
-            "last_modified": "2025-12-07T02:39:31+00:00",
+            "last_modified": "2026-07-14T06:26:45+02:00",
             "markdown_path": "_d/bmu.md",
             "outgoing_links": [
                 "/being-a-great-manager",
@@ -1873,7 +1891,7 @@
             "incoming_links": [
                 "/be-proactive"
             ],
-            "last_modified": "2026-03-21T12:32:21-07:00",
+            "last_modified": "2026-07-14T06:20:26+02:00",
             "markdown_path": "_d/breath.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -2030,12 +2048,12 @@
         },
         "/changelog": {
             "description": "A weekly summary of what changed on this blog and across my GitHub projects. Useful for returning readers who want to catch up on new content and updates.\n\n",
-            "doc_size": 256000,
+            "doc_size": 269000,
             "file_path": "_site/changelog.html",
             "incoming_links": [
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-07-07T15:13:25+02:00",
+            "last_modified": "2026-07-20T14:52:14+00:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
                 "/42",
@@ -2095,6 +2113,7 @@
                 "/mortality-software",
                 "/mosh",
                 "/packing",
+                "/performer-playbook",
                 "/physical-pain",
                 "/podcast",
                 "/produce-consume",
@@ -2105,6 +2124,7 @@
                 "/sharpen-the-saw",
                 "/shoulder-pain",
                 "/side-quests",
+                "/sleight-of-mouth",
                 "/spiritual-health",
                 "/synergy",
                 "/taxes",
@@ -2156,7 +2176,7 @@
                 "/gap-year-igor",
                 "/last-year"
             ],
-            "last_modified": "2025-12-07T02:39:31+00:00",
+            "last_modified": "2026-07-19T05:20:21-07:00",
             "markdown_path": "_d/chasing-daylight.md",
             "outgoing_links": [
                 "/death",
@@ -2195,7 +2215,7 @@
                 "/y25",
                 "/y26"
             ],
-            "last_modified": "2026-06-07T10:19:45-07:00",
+            "last_modified": "2026-07-14T06:26:45+02:00",
             "markdown_path": "_d/ai-coder.md",
             "outgoing_links": [
                 "/ai-journal",
@@ -2348,7 +2368,7 @@
                 "/manager-book",
                 "/work-satisfaction"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2026-07-14T06:20:26+02:00",
             "markdown_path": "_posts/2017-11-16-understandingtechcompensation.md",
             "outgoing_links": [
                 "/job-hunt-stress",
@@ -2491,7 +2511,7 @@
             "doc_size": 18000,
             "file_path": "_site/d/2016-2-15-Seth-Godin-Notes.html",
             "incoming_links": [],
-            "last_modified": "2025-12-07T02:26:29+00:00",
+            "last_modified": "2026-07-14T06:26:45+02:00",
             "markdown_path": "_d/2016-2-15-Seth-Godin-Notes.md",
             "outgoing_links": [
                 "/dip",
@@ -2545,7 +2565,7 @@
                 "/d/where-have-all-the-bugs-gone",
                 "/how-igor-chops"
             ],
-            "last_modified": "2025-12-07T02:26:29+00:00",
+            "last_modified": "2026-07-14T06:24:33+02:00",
             "markdown_path": "_d/2017-09-10-software-rot.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -2655,7 +2675,7 @@
             "doc_size": 14000,
             "file_path": "_site/d/where-have-all-the-bugs-gone.html",
             "incoming_links": [],
-            "last_modified": "2022-08-13T08:09:48-07:00",
+            "last_modified": "2026-07-14T06:24:33+02:00",
             "markdown_path": "_d/where-have-all-the-bugs-gone.md",
             "outgoing_links": [
                 "/d/2017-09-10-software-rot"
@@ -2683,7 +2703,7 @@
         },
         "/day-in-the-life": {
             "description": "A running journal of days that actually worked - the ones where health habits stuck, family time hit different, or I remembered what it feels like to be fully alive. Not every day needs to be Instagram-worthy, but some days deserve a bookmark. This is that bookmark collection.\n\n",
-            "doc_size": 18000,
+            "doc_size": 19000,
             "file_path": "_site/day-in-the-life.html",
             "incoming_links": [],
             "last_modified": "2025-10-04T18:43:51-07:00",
@@ -2710,7 +2730,7 @@
                 "/mortality-software",
                 "/psychic-weight"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2026-07-14T06:41:01+02:00",
             "markdown_path": "_d/on-being-mortal.md",
             "outgoing_links": [
                 "/last-year",
@@ -2792,7 +2812,7 @@
                 "/mental-pain",
                 "/mood"
             ],
-            "last_modified": "2025-12-06T18:03:14-08:00",
+            "last_modified": "2026-07-14T06:41:01+02:00",
             "markdown_path": "_d/depression.md",
             "outgoing_links": [
                 "/7-habits",
@@ -2948,7 +2968,7 @@
                 "/sublime",
                 "/walking-with-god"
             ],
-            "last_modified": "2026-03-21T12:32:21-07:00",
+            "last_modified": "2026-07-14T06:28:56+02:00",
             "markdown_path": "_d/emotional-health-hold.md",
             "outgoing_links": [
                 "/fit-in-my-head",
@@ -2968,7 +2988,7 @@
             "incoming_links": [
                 "/untangled"
             ],
-            "last_modified": "2026-05-16T14:06:25-07:00",
+            "last_modified": "2026-07-19T05:20:21-07:00",
             "markdown_path": "_d/emotional-lives.md",
             "outgoing_links": [
                 "/anxiety",
@@ -3052,7 +3072,7 @@
                 "/siy",
                 "/walking-with-god"
             ],
-            "last_modified": "2026-05-11T07:14:49-07:00",
+            "last_modified": "2026-07-13T19:49:39+02:00",
             "markdown_path": "_d/7h-c2.md",
             "outgoing_links": [
                 "/7-habits",
@@ -3301,7 +3321,7 @@
                 "/frog",
                 "/raccoon-history"
             ],
-            "last_modified": "2026-05-11T07:14:49-07:00",
+            "last_modified": "2026-07-14T06:20:26+02:00",
             "markdown_path": "_d/7h-c3.md",
             "outgoing_links": [
                 "/4dx",
@@ -3339,7 +3359,7 @@
                 "/win-win",
                 "/work-satisfaction"
             ],
-            "last_modified": "2026-05-11T07:14:49-07:00",
+            "last_modified": "2026-07-14T06:20:26+02:00",
             "markdown_path": "_d/7h-c5.md",
             "outgoing_links": [
                 "/7-habits",
@@ -3362,7 +3382,7 @@
             "incoming_links": [
                 "/emotional-health"
             ],
-            "last_modified": "2025-07-20T19:26:41-07:00",
+            "last_modified": "2026-07-14T06:28:56+02:00",
             "markdown_path": "_d/2016-2-14-Health-In-The-Head.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -3443,7 +3463,7 @@
                 "/timeoff",
                 "/timeoff-2020-03"
             ],
-            "last_modified": "2025-04-02T21:53:46-07:00",
+            "last_modified": "2026-07-14T06:20:26+02:00",
             "markdown_path": "_d/frog.md",
             "outgoing_links": [
                 "/Immutable-Laws-Of-Hard",
@@ -3693,7 +3713,7 @@
         },
         "/grammerly": {
             "description": "\n\n",
-            "doc_size": 12000,
+            "doc_size": 13000,
             "file_path": "_site/grammerly.html",
             "incoming_links": [],
             "last_modified": "2025-08-24T09:03:19-07:00",
@@ -3740,7 +3760,7 @@
                 "/raccoon-history",
                 "/religion"
             ],
-            "last_modified": "2026-03-01T14:23:50-08:00",
+            "last_modified": "2026-07-14T06:41:01+02:00",
             "markdown_path": "_d/greek-orthodox.md",
             "outgoing_links": [
                 "/7h-concepts",
@@ -3896,7 +3916,7 @@
                 "/operating-manual",
                 "/retire"
             ],
-            "last_modified": "2026-05-01T08:03:22-07:00",
+            "last_modified": "2026-07-14T06:26:45+02:00",
             "markdown_path": "_d/hobby.md",
             "outgoing_links": [
                 "/addiction",
@@ -3931,7 +3951,7 @@
                 "/y25",
                 "/y26"
             ],
-            "last_modified": "2026-04-16T19:46:21-07:00",
+            "last_modified": "2026-07-14T06:26:45+02:00",
             "markdown_path": "_d/how-igor-chops.md",
             "outgoing_links": [
                 "/40yo",
@@ -4096,7 +4116,7 @@
                 "/physical-health",
                 "/sleep"
             ],
-            "last_modified": "2025-07-20T19:26:41-07:00",
+            "last_modified": "2026-07-14T06:28:56+02:00",
             "markdown_path": "_d/2016-2-11-Insomnia.md",
             "outgoing_links": [
                 "/sleep"
@@ -4112,7 +4132,7 @@
             "incoming_links": [
                 "/job-hunt-stress"
             ],
-            "last_modified": "2023-12-17T18:53:39+00:00",
+            "last_modified": "2026-07-14T06:26:45+02:00",
             "markdown_path": "_posts/2016-11-26-interviewsarehard.markdown",
             "outgoing_links": [
                 "/the-recruiter-does-not-think-you-are-hot"
@@ -4141,7 +4161,7 @@
                 "/physical-health",
                 "/td/ios-nomad"
             ],
-            "last_modified": "2026-04-05T14:17:43-07:00",
+            "last_modified": "2026-07-14T06:24:33+02:00",
             "markdown_path": "_td/irl.md",
             "outgoing_links": [
                 "/bike",
@@ -4192,7 +4212,7 @@
                 "/manager-book",
                 "/work-satisfaction"
             ],
-            "last_modified": "2025-08-24T09:03:19-07:00",
+            "last_modified": "2026-07-14T06:26:45+02:00",
             "markdown_path": "_posts/2017-02-17-job-hunt-stress.md",
             "outgoing_links": [
                 "/bmy",
@@ -4209,7 +4229,7 @@
         },
         "/joy": {
             "description": "If you could have one superpower, what would it be? At 46, you’d think I’d have a quick answer, but the usual ideas—flying, invisibility, stopping time—felt childish. Probably the setting: a circle of 9-17-year-olds, breaking the ice, sharing their wished-for superpowers. As my mind scrambled, a mild panic set in. Nothing surfaced—until a bit of my eulogy came to me: Igor lived to see eyes go wide and mouths gape with wonder. He loved when strangers were drawn in against their objections, when a kid in meltdown, or an adult weighed down by life, forgot their troubles. Relief washed over me, I knew my answer. The super power I wished for:  bringing joy to others.\n\n",
-            "doc_size": 34000,
+            "doc_size": 35000,
             "file_path": "_site/joy.html",
             "incoming_links": [
                 "/affirmations",
@@ -4227,7 +4247,7 @@
                 "/timeoff-2026-07",
                 "/tribe"
             ],
-            "last_modified": "2026-07-09T04:37:41-07:00",
+            "last_modified": "2026-07-20T19:36:53-07:00",
             "markdown_path": "_d/joy.md",
             "outgoing_links": [
                 "/balloon",
@@ -4273,7 +4293,7 @@
                 "/untangled",
                 "/y24"
             ],
-            "last_modified": "2026-01-01T17:07:34+00:00",
+            "last_modified": "2026-07-14T06:28:56+02:00",
             "markdown_path": "_d/bells.md",
             "outgoing_links": [
                 "/shoulder-pain"
@@ -4453,7 +4473,7 @@
             "incoming_links": [
                 "/joy"
             ],
-            "last_modified": "2026-01-03T17:27:23+00:00",
+            "last_modified": "2026-07-14T06:20:26+02:00",
             "markdown_path": "_d/the-like-switch.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -4469,7 +4489,7 @@
                 "/build-life-you-want",
                 "/mental-pain"
             ],
-            "last_modified": "2025-12-07T02:40:46+00:00",
+            "last_modified": "2026-07-14T06:20:26+02:00",
             "markdown_path": "_d/lonely.md",
             "outgoing_links": [
                 "/chapters"
@@ -4615,7 +4635,7 @@
                 "/energy",
                 "/mood"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2026-07-14T06:41:01+02:00",
             "markdown_path": "_d/mania.md",
             "outgoing_links": [
                 "/emotional-health",
@@ -4635,7 +4655,7 @@
                 "/mental-pain",
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-07-06T23:30:18-07:00",
+            "last_modified": "2026-07-14T06:41:01+02:00",
             "markdown_path": "_d/maybe.md",
             "outgoing_links": [
                 "/7h-concepts",
@@ -4673,7 +4693,7 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-12-06T18:03:43-08:00",
+            "last_modified": "2026-07-14T06:41:01+02:00",
             "markdown_path": "_d/mental-pain.md",
             "outgoing_links": [
                 "/addiction",
@@ -4691,7 +4711,7 @@
         },
         "/mermaid": {
             "description": "Lets try d2\n\n",
-            "doc_size": 14000,
+            "doc_size": 15000,
             "file_path": "_site/mermaid.html",
             "incoming_links": [],
             "last_modified": "2023-12-17T18:49:14+00:00",
@@ -4709,7 +4729,7 @@
                 "/manager-book-appendix",
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-05-25T19:31:05-07:00",
+            "last_modified": "2026-07-14T06:20:26+02:00",
             "markdown_path": "_d/facebook.md",
             "outgoing_links": [
                 "/chop",
@@ -4789,7 +4809,7 @@
                 "/negative-mitzvahs",
                 "/positive-mitzvahs"
             ],
-            "last_modified": "2026-01-03T17:27:23+00:00",
+            "last_modified": "2026-07-14T06:41:01+02:00",
             "markdown_path": "_d/mitzvahs.md",
             "outgoing_links": [
                 "/negative-mitzvahs",
@@ -5028,7 +5048,7 @@
                 "/win-win",
                 "/work-satisfaction"
             ],
-            "last_modified": "2025-12-07T02:46:00+00:00",
+            "last_modified": "2026-07-14T04:50:44+00:00",
             "markdown_path": "_d/gty.md",
             "outgoing_links": [
                 "/curious",
@@ -5162,7 +5182,7 @@
             "incoming_links": [
                 "/tools"
             ],
-            "last_modified": "2026-04-03T15:42:12-07:00",
+            "last_modified": "2026-07-14T06:20:26+02:00",
             "markdown_path": "_d/osx.md",
             "outgoing_links": [
                 "/keyboard",
@@ -5179,7 +5199,7 @@
             "incoming_links": [
                 "/gtd"
             ],
-            "last_modified": "2025-09-13T16:07:47-07:00",
+            "last_modified": "2026-07-14T06:26:45+02:00",
             "markdown_path": "_d/2015-11-18-Outsourcing.md",
             "outgoing_links": [
                 "/the-recruiter-does-not-think-you-are-hot"
@@ -5323,7 +5343,7 @@
                 "/side-quests",
                 "/y25"
             ],
-            "last_modified": "2026-06-06T11:23:00-07:00",
+            "last_modified": "2026-07-14T06:26:45+02:00",
             "markdown_path": "_d/pet-projects.md",
             "outgoing_links": [
                 "/ai-native-vocab",
@@ -5358,7 +5378,7 @@
                 "/sharpen-the-saw",
                 "/tech-health-toys"
             ],
-            "last_modified": "2026-03-21T12:32:21-07:00",
+            "last_modified": "2026-07-14T06:28:56+02:00",
             "markdown_path": "_posts/2017-10-07-physical-health.md",
             "outgoing_links": [
                 "/d/habits",
@@ -5388,7 +5408,7 @@
                 "/sleight-of-mouth",
                 "/y25"
             ],
-            "last_modified": "2026-07-12T08:48:30+02:00",
+            "last_modified": "2026-07-14T06:28:56+02:00",
             "markdown_path": "_d/physical-pain.md",
             "outgoing_links": [
                 "/back-pain",
@@ -5412,7 +5432,7 @@
                 "/manager-book",
                 "/y25"
             ],
-            "last_modified": "2026-01-01T14:34:49+00:00",
+            "last_modified": "2026-07-14T06:20:26+02:00",
             "markdown_path": "_d/planning.md",
             "outgoing_links": [
                 "/activation",
@@ -5477,7 +5497,7 @@
                 "/mind-monsters",
                 "/psychic-weight"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2026-07-14T06:41:01+02:00",
             "markdown_path": "_posts/2018-01-01-fuck-pride.md",
             "outgoing_links": [
                 "/decisive"
@@ -5501,7 +5521,7 @@
                 "/pet-projects",
                 "/y24"
             ],
-            "last_modified": "2026-07-07T05:46:52-07:00",
+            "last_modified": "2026-07-14T06:26:45+02:00",
             "markdown_path": "_d/process-journal.md",
             "outgoing_links": [
                 "/affirmations",
@@ -5568,7 +5588,7 @@
                 "/energy",
                 "/timeoff-2022-02"
             ],
-            "last_modified": "2025-12-21T15:38:26+00:00",
+            "last_modified": "2026-07-14T06:26:45+02:00",
             "markdown_path": "_d/productive2.md",
             "outgoing_links": [
                 "/addiction",
@@ -5616,7 +5636,7 @@
                 "/psychic-weight",
                 "/siy"
             ],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2026-07-14T06:20:26+02:00",
             "markdown_path": "_d/psychic-shadows.md",
             "outgoing_links": [
                 "/addiction",
@@ -5870,7 +5890,7 @@
                 "/slow",
                 "/timeoff"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2026-07-14T06:41:01+02:00",
             "markdown_path": "_d/resistance.md",
             "outgoing_links": [
                 "/addiction",
@@ -5924,7 +5944,7 @@
             "doc_size": 15000,
             "file_path": "_site/roblox-dev.html",
             "incoming_links": [],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2026-07-14T06:24:33+02:00",
             "markdown_path": "_td/roblox2.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -5963,7 +5983,7 @@
                 "/content-creation",
                 "/osx"
             ],
-            "last_modified": "2025-01-04T12:24:44-08:00",
+            "last_modified": "2026-07-14T06:20:26+02:00",
             "markdown_path": "_td/screencast.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -6054,7 +6074,7 @@
                 "/physical-health",
                 "/raccoon-history"
             ],
-            "last_modified": "2026-05-11T07:14:49-07:00",
+            "last_modified": "2026-07-14T04:50:44+00:00",
             "markdown_path": "_d/7h-c7.md",
             "outgoing_links": [
                 "/7-habits",
@@ -6090,7 +6110,7 @@
                 "/y25",
                 "/y26"
             ],
-            "last_modified": "2026-01-25T19:21:14+00:00",
+            "last_modified": "2026-07-14T06:20:26+02:00",
             "markdown_path": "_d/shoulder-pain.md",
             "outgoing_links": [
                 "/kettlebell",
@@ -6227,7 +6247,7 @@
                 "/timeoff-2022-02",
                 "/words-we-dont-have"
             ],
-            "last_modified": "2025-12-07T02:26:29+00:00",
+            "last_modified": "2026-07-14T08:26:52+02:00",
             "markdown_path": "_d/2016-3-12-sleight-of-mouth.md",
             "outgoing_links": [
                 "/get-to-yes-with-yourself",
@@ -6272,7 +6292,7 @@
             "incoming_links": [
                 "/joy"
             ],
-            "last_modified": "2023-02-20T13:23:02-08:00",
+            "last_modified": "2026-07-14T04:50:44+00:00",
             "markdown_path": "_td/smilebox.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -6286,7 +6306,7 @@
             "incoming_links": [
                 "/timeoff-2021-11"
             ],
-            "last_modified": "2021-11-25T22:54:03-08:00",
+            "last_modified": "2026-07-14T06:24:33+02:00",
             "markdown_path": "_d/snjb_.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -6443,7 +6463,7 @@
                 "/siy",
                 "/timeoff-2024-02"
             ],
-            "last_modified": "2026-03-21T12:32:21-07:00",
+            "last_modified": "2026-07-14T06:41:01+02:00",
             "markdown_path": "_d/sublime.md",
             "outgoing_links": [
                 "/emotional-health",
@@ -6463,7 +6483,7 @@
                 "/depression",
                 "/mania"
             ],
-            "last_modified": "2024-11-09T06:51:11-08:00",
+            "last_modified": "2026-07-14T06:41:01+02:00",
             "markdown_path": "_d/suicide.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -6485,7 +6505,7 @@
                 "/retire",
                 "/work-satisfaction"
             ],
-            "last_modified": "2025-02-15T10:13:03-08:00",
+            "last_modified": "2026-07-14T06:26:45+02:00",
             "markdown_path": "_posts/2020-01-04-sustainable-work.md",
             "outgoing_links": [
                 "/moments-at-work"
@@ -6525,7 +6545,7 @@
                 "/7-habits",
                 "/raccoon-history"
             ],
-            "last_modified": "2026-05-11T07:14:49-07:00",
+            "last_modified": "2026-07-13T19:49:39+02:00",
             "markdown_path": "_d/7h-c6.md",
             "outgoing_links": [
                 "/7-habits",
@@ -6604,7 +6624,7 @@
         },
         "/td/back_ref": {
             "description": "This blog is my collection of evergreen notes, a place to have my thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here’s my strategy to create them.\n\n",
-            "doc_size": 13000,
+            "doc_size": 14000,
             "file_path": "_site/td/back_ref.html",
             "incoming_links": [],
             "last_modified": "2022-04-16T15:22:43-07:00",
@@ -6666,7 +6686,7 @@
             "doc_size": 16000,
             "file_path": "_site/td/dump_imessage_history.html",
             "incoming_links": [],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2026-07-14T06:24:33+02:00",
             "markdown_path": "_td/dump_imessage_history.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -6746,7 +6766,7 @@
             "doc_size": 16000,
             "file_path": "_site/td/minecraft.html",
             "incoming_links": [],
-            "last_modified": "2026-01-03T17:27:23+00:00",
+            "last_modified": "2026-07-14T06:24:33+02:00",
             "markdown_path": "_td/minecraft.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -6860,7 +6880,7 @@
             "incoming_links": [
                 "/viz"
             ],
-            "last_modified": "2020-04-11T16:32:11+00:00",
+            "last_modified": "2026-07-14T06:24:33+02:00",
             "markdown_path": "_td/visual-vocabulary.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -6922,7 +6942,7 @@
                 "/timeoff-2024-04",
                 "/voices"
             ],
-            "last_modified": "2026-07-07T05:02:30-07:00",
+            "last_modified": "2026-07-14T06:28:56+02:00",
             "markdown_path": "_d/terzepatide.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -7001,7 +7021,7 @@
                 "/job-hunt-stress",
                 "/outsourcing"
             ],
-            "last_modified": "2020-04-12T19:50:58+00:00",
+            "last_modified": "2026-07-14T06:26:45+02:00",
             "markdown_path": "_posts/2020-01-01-the-recruiter-does-not-think-you-are-hot.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -7051,7 +7071,7 @@
                 "/timeoff-2025-08",
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-07-07T05:16:20-07:00",
+            "last_modified": "2026-07-13T23:50:42-07:00",
             "markdown_path": "_d/time_off.md",
             "outgoing_links": [
                 "/addiction",
@@ -7107,7 +7127,7 @@
             "incoming_links": [
                 "/timeoff-2021-12"
             ],
-            "last_modified": "2025-09-13T12:56:01-07:00",
+            "last_modified": "2026-07-14T06:43:37+02:00",
             "markdown_path": "_d/time-off-2020-12.md",
             "outgoing_links": [
                 "/7-habits",
@@ -7127,7 +7147,7 @@
             "incoming_links": [
                 "/timeoff-2021-12"
             ],
-            "last_modified": "2025-12-07T03:17:42+00:00",
+            "last_modified": "2026-07-14T06:43:37+02:00",
             "markdown_path": "_d/time-off-2021-11.md",
             "outgoing_links": [
                 "/adblocker-trojan",
@@ -7147,7 +7167,7 @@
             "incoming_links": [
                 "/timeoff-2022-12"
             ],
-            "last_modified": "2025-09-13T12:56:01-07:00",
+            "last_modified": "2026-07-14T06:43:37+02:00",
             "markdown_path": "_d/time-off-2021-12.md",
             "outgoing_links": [
                 "/activation",
@@ -7166,7 +7186,7 @@
             "doc_size": 20000,
             "file_path": "_site/timeoff-2022-02.html",
             "incoming_links": [],
-            "last_modified": "2025-12-07T03:17:42+00:00",
+            "last_modified": "2026-07-14T06:43:37+02:00",
             "markdown_path": "_d/time-off-2022-02.md",
             "outgoing_links": [
                 "/happy",
@@ -7221,7 +7241,7 @@
             "incoming_links": [
                 "/raccoon-history"
             ],
-            "last_modified": "2026-03-21T12:32:21-07:00",
+            "last_modified": "2026-07-14T06:43:37+02:00",
             "markdown_path": "_d/time-off-2022-12.md",
             "outgoing_links": [
                 "/happy",
@@ -7238,7 +7258,7 @@
             "doc_size": 18000,
             "file_path": "_site/timeoff-2023-04.html",
             "incoming_links": [],
-            "last_modified": "2026-03-21T12:32:21-07:00",
+            "last_modified": "2026-07-14T06:43:37+02:00",
             "markdown_path": "_d/time-off-2023-04.md",
             "outgoing_links": [
                 "/happy",
@@ -7254,7 +7274,7 @@
             "doc_size": 14000,
             "file_path": "_site/timeoff-2023-08.html",
             "incoming_links": [],
-            "last_modified": "2026-03-21T12:32:21-07:00",
+            "last_modified": "2026-07-14T06:43:37+02:00",
             "markdown_path": "_d/time-off-2023-08.md",
             "outgoing_links": [
                 "/happy",
@@ -7289,7 +7309,7 @@
                 "/bc",
                 "/timeoff"
             ],
-            "last_modified": "2025-09-13T12:56:01-07:00",
+            "last_modified": "2026-07-14T06:43:37+02:00",
             "markdown_path": "_d/time-off-2024-02.md",
             "outgoing_links": [
                 "/blueprint",
@@ -7306,7 +7326,7 @@
             "doc_size": 19000,
             "file_path": "_site/timeoff-2024-04.html",
             "incoming_links": [],
-            "last_modified": "2025-12-07T03:17:42+00:00",
+            "last_modified": "2026-07-14T06:43:37+02:00",
             "markdown_path": "_d/time-off-2024-04.md",
             "outgoing_links": [
                 "/ai-testing",
@@ -7365,7 +7385,7 @@
                 "/timeoff",
                 "/y26"
             ],
-            "last_modified": "2026-07-08T09:26:51+02:00",
+            "last_modified": "2026-07-14T13:37:57+02:00",
             "markdown_path": "_d/time-off-2026-07.md",
             "outgoing_links": [
                 "/act",
@@ -7410,7 +7430,7 @@
             "doc_size": 51000,
             "file_path": "_site/tools.html",
             "incoming_links": [],
-            "last_modified": "2025-08-22T11:54:12-07:00",
+            "last_modified": "2026-07-14T06:24:33+02:00",
             "markdown_path": "_td/tool.md",
             "outgoing_links": [
                 "/ast-grep",
@@ -7499,7 +7519,7 @@
             "incoming_links": [
                 "/taxes"
             ],
-            "last_modified": "2026-06-26T11:58:37-07:00",
+            "last_modified": "2026-07-14T06:20:26+02:00",
             "markdown_path": "_d/trusts.md",
             "outgoing_links": [
                 "/taxes"
@@ -7515,7 +7535,7 @@
             "incoming_links": [
                 "/emotional-lives"
             ],
-            "last_modified": "2026-05-16T14:10:54-07:00",
+            "last_modified": "2026-07-19T05:20:21-07:00",
             "markdown_path": "_d/untangled.md",
             "outgoing_links": [
                 "/be-proactive",
@@ -7535,7 +7555,7 @@
             "incoming_links": [
                 "/first-things-first"
             ],
-            "last_modified": "2025-12-07T03:19:48+00:00",
+            "last_modified": "2026-07-19T05:20:21-07:00",
             "markdown_path": "_d/upstream.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -7613,7 +7633,7 @@
             "doc_size": 14000,
             "file_path": "_site/vlc.html",
             "incoming_links": [],
-            "last_modified": "2025-06-07T09:22:10-07:00",
+            "last_modified": "2026-07-14T06:24:33+02:00",
             "markdown_path": "_d/vlc_player.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -7635,7 +7655,7 @@
                 "/operating-manual",
                 "/sleight-of-mouth"
             ],
-            "last_modified": "2024-04-14T19:24:46-07:00",
+            "last_modified": "2026-07-14T06:41:01+02:00",
             "markdown_path": "_posts/2017-01-01-voices-in-my-head.md",
             "outgoing_links": [
                 "/anxiety",
@@ -7793,7 +7813,7 @@
             "incoming_links": [
                 "/d/2016-2-15-Seth-Godin-Notes"
             ],
-            "last_modified": "2025-08-22T10:48:49-07:00",
+            "last_modified": "2026-07-14T06:26:45+02:00",
             "markdown_path": "_posts/2015-3-13-why-is-no-one-referring.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -7814,7 +7834,7 @@
                 "/voices",
                 "/work-satisfaction"
             ],
-            "last_modified": "2026-05-11T07:14:49-07:00",
+            "last_modified": "2026-07-14T06:20:26+02:00",
             "markdown_path": "_d/7h-c4.md",
             "outgoing_links": [
                 "/7-habits",
