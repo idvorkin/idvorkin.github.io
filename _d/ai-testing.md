@@ -7,6 +7,10 @@ ai_default_image: true
 
 Testing math is easy, it's right or wrong. Testing spelling is easy too, but testing if a joke is funny - now that's tough. Let's talk about how to test AI.
 
+> Unlike unit tests, evals are an emerging art/science. Anyone who claims to know exactly how your evals should be defined can safely be ignored. We've designed Pydantic Evals to be flexible and useful without being too opinionated.
+>
+> — [Pydantic Evals docs](https://ai.pydantic.dev/evals/)
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
