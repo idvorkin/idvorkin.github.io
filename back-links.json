@@ -1110,13 +1110,14 @@
                 "/ai-second-brain",
                 "/chop",
                 "/claw",
+                "/how-igor-chops",
                 "/hyper-personal",
                 "/igors-claws",
                 "/raccoon-history",
                 "/walking-with-god",
                 "/y25"
             ],
-            "last_modified": "2026-06-22T06:01:19-07:00",
+            "last_modified": "2026-08-02T12:17:01+00:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/7-habits",
@@ -2055,7 +2056,7 @@
             "incoming_links": [
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-07-20T14:52:14+00:00",
+            "last_modified": "2026-08-02T12:17:01+00:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
                 "/42",
@@ -3935,7 +3936,7 @@
         },
         "/how-igor-chops": {
             "description": "I mumble to Claude on my couch while my family wonders who I’m talking to. I vibe code in the car while my son drives. I rent the most expensive brain I can get. This is my CHOP (Chat-Oriented Programming) setup: the infrastructure, the tools, and what I’ve learned.\n\n",
-            "doc_size": 52000,
+            "doc_size": 53000,
             "file_path": "_site/how-igor-chops.html",
             "incoming_links": [
                 "/ai",
@@ -3953,11 +3954,12 @@
                 "/y25",
                 "/y26"
             ],
-            "last_modified": "2026-07-14T06:26:45+02:00",
+            "last_modified": "2026-08-02T13:09:18.316434+00:00",
             "markdown_path": "_d/how-igor-chops.md",
             "outgoing_links": [
                 "/40yo",
                 "/ai-cockpit",
+                "/ai-journal",
                 "/ai-operator",
                 "/chop",
                 "/chow",

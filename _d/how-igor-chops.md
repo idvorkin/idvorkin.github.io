@@ -30,6 +30,7 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
 - [Tools of the Trade](#tools-of-the-trade)
   - [The Past: Cursor](#the-past-cursor)
   - [The Present: Claude Code](#the-present-claude-code)
+  - [The Upgrade: Herdr](#the-upgrade-herdr)
   - [The Future: Multi-Agent Dashboard](#the-future-multi-agent-dashboard)
   - [The 8 Stages of AI Coding](#the-8-stages-of-ai-coding)
 - [Notes from the Trenches](#notes-from-the-trenches)
@@ -124,6 +125,14 @@ It's crazy [how fast AI evolves](https://idvorkin-how-long-since-ai.surge.sh/?sh
 
 Claude Code is really about autonomous agents that run in your terminal. As a terminal guy, I can speak to why this is so awesome - it fits my workflow perfectly. The agent runs commands, edits files, and iterates without me micromanaging every step.
 
+### The Upgrade: Herdr
+
+For the last year "the multiplexer" meant tmux plus duct tape - a [hand-written Rust picker](/ai-cockpit#tmux-on-super-steroids---the-multiplexer), windows that auto-rename to the running agent, Stream Deck keys for pane hopping. [Herdr](https://herdr.dev) replaced the duct tape: a multiplexer that knows what an agent is. Same terminal, same SSH, same detach-and-reattach - but every workspace shows blocked / working / done / idle, spinning up a git worktree is one command, and there's a socket API the agents themselves can drive. The full story of the switch is in [my journal](/ai-journal#herdr-the-agent-multiplexer-my-tmux-rig-was-trying-to-become).
+
+Here's my actual herd. Spaces tree top-left, agent states below it (spinners are working, checks are done), a live Claude session in the main pane. And a bonus: the `herdr` agent in that list is the Claude session that took this screenshot.
+
+![Herdr running nine workspaces: the spaces tree and agent-state panel on the left, a live Claude Code session working in the main pane](/images/herdr-herd.webp)
+
 ### The Future: Multi-Agent Dashboard
 
 I was surprised when Steve Yegge mentioned this is the future - orchestrating multiple specialized agents. Surprised because I'd been accidentally building toward this. The [Agent Dashboard](#the-future-multi-agent-dashboard) I mentioned earlier? By the way, I didn't build that at all. I just gave the requirements and Claude built it itself.
@@ -156,7 +165,7 @@ This diagram perfectly captures the evolution I've lived through. Let me break d
 
 1. **Orchestrated System** - This is the vision: a central dashboard managing dozens of specialized agents. The [Agent Dashboard](#the-future-multi-agent-dashboard) is an early step toward this. You're no longer coordinating individual agents - you're managing the system that coordinates them.
 
-**Where I Am Today:** Somewhere between stages 6 and 7. Running 2-3 parallel agents on different features, learning how to avoid merge hell, figuring out when to use specialized vs. generalist agents. Stage 8 is the dream, but the tooling isn't quite there yet.
+**Where I Am Today:** Somewhere between stages 6 and 7. The herd screenshot above is nine workspaces with four agents mid-flight - [Herdr](#the-upgrade-herdr) is what makes that supervisable. Still learning how to avoid merge hell and when to use specialized vs. generalist agents. Stage 8 is the dream, and the tooling is closer than it was.
 
 ## Notes from the Trenches
 
