@@ -16,6 +16,7 @@
       "_site/**",
       "node_modules/**",
       "search.json",
+      "search-titles.json",
       ".markdownlint.json",
       "**/*.md",
       "test-results/**"

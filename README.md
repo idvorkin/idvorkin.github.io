@@ -92,9 +92,14 @@ Standard markdown feature
 
 ### Author: Search
 
-Uses algolia:
+Runs locally in the browser — no search service, no API key, no quota. See
+[docs/search.md](docs/search.md).
 
-- bi.sh - Build index for algolia search
+- [Pagefind](https://pagefind.app) for full text, sharded so a query only fetches
+  the index chunks it needs
+- [MiniSearch](https://github.com/lucaong/minisearch) over a ~9KB title-only
+  index for typo tolerance
+- `just build-search` - Build the index into `_site/pagefind/`
 
 ### Author: No broken links
 

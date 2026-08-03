@@ -110,9 +110,13 @@ no-render-title: true
     line-height: 1.2;
 }
 
-/* Highlight matching text */
-.highlight {
+/* Highlight matching text.
+   Pagefind emits <mark> in its excerpts; .highlight is kept for any other
+   caller that still wraps matches in a span. */
+.highlight,
+.result-item mark {
     background: yellow;
+    color: inherit;
     padding: 2px;
 }
 
@@ -202,16 +206,10 @@ no-render-title: true
 </div>
 
 <script type="module">
-    import { get_recent_posts, get_random_post, get_random_posts_batch, get_link_info } from "/assets/js/index.js";
+    import { get_recent_posts, get_random_post, get_random_posts_batch, get_link_info, searchBlog } from "/assets/js/index.js";
     
-    // Algolia configuration
-    const appId = "{{ site.algolia.application_id }}";
-    const apiKey = "{{ site.algolia.search_only_api_key }}";
-    const indexName = "{{ site.algolia.index_name }}";
-    
-    // Initialize Algolia client
-    const searchClient = algoliasearch(appId, apiKey);
-    const index = searchClient.initIndex(indexName);
+    // Search runs locally: Pagefind for full text + MiniSearch for typo-tolerant
+    // titles. No client to initialize, no keys — see docs/search.md.
     
     // Cache frequently used DOM elements for better performance
     const cachedElements = {
@@ -249,31 +247,33 @@ no-render-title: true
         }
     }
     
-    // Function to render a result item
+    // Function to render a search result item
     function renderResultItem(item) {
-        const url = item.url + (item.anchor ? `#${item.anchor}` : '');
-        if (!isValidUrl(url)) {
-            console.warn('Invalid URL skipped:', url);
+        if (!isValidUrl(item.url)) {
+            console.warn('Invalid URL skipped:', item.url);
             return '';
         }
-        
-        // Extract text from highlighted results (they contain HTML)
-        const titleHtml = item._highlightResult?.title?.value || '';
-        const contentHtml = item._highlightResult?.content?.value || '';
-        
-        // For highlighted results, preserve the highlight spans but escape the rest
-        const title = titleHtml || escapeHtml(item.title || '');
-        let description = contentHtml || escapeHtml(item.description || '');
-        
-        // Truncate description to ~150 characters
-        if (description.length > 150) {
-            description = description.substring(0, 147) + '...';
+
+        // Pagefind excerpts are pre-escaped and carry <mark> highlight tags, so
+        // they pass through as HTML. Title-index excerpts are raw descriptions
+        // from back-links.json and must be escaped. Never truncate a Pagefind
+        // excerpt — cutting mid-tag would emit broken HTML (it is already
+        // bounded to ~30 words by Pagefind).
+        let description;
+        if (item.source === 'pagefind') {
+            description = item.excerpt || '';
+        } else {
+            description = escapeHtml(item.excerpt || '');
+            if (description.length > 150) {
+                description = description.substring(0, 147) + '...';
+            }
         }
-        
-        const safeUrl = escapeHtml(url);
+
+        const safeUrl = escapeHtml(item.url);
+        const safeTitle = escapeHtml(item.title || '');
         return `
             <div class="result-item" onclick="window.location='${safeUrl}';">
-                <div><a href="${safeUrl}">${title}</a> <span class="description">${description}</span></div>
+                <div><a href="${safeUrl}">${safeTitle}</a> <span class="description">${description}</span></div>
             </div>
         `;
     }
@@ -468,12 +468,9 @@ no-render-title: true
             '<div class="result-item" style="color: #999;">Searching...</div>';
         
         try {
-            const { hits } = await index.search(query, {
-                hitsPerPage: 20,
-                filters: 'NOT tags:family-journal',
-                highlightPreTag: '<span class="highlight">',
-                highlightPostTag: '</span>'
-            });
+            // Local search. The family journal is excluded at index time, so
+            // there is no query-time filter to apply here any more.
+            const hits = await searchBlog(query, 20);
             
             if (hits.length === 0) {
                 cachedElements.featuredResults.innerHTML = 
@@ -595,7 +592,7 @@ no-render-title: true
     $(document).ready(() => {
         const domReadyTime = performance.now() - pageLoadStart;
         console.log(`📄 [Page] DOM ready in ${domReadyTime.toFixed(0)}ms`);
-        console.log('🔍 [Page] Algolia configured, starting content load...');
+        console.log('🔍 [Page] Local search ready, starting content load...');
         
         // Setup collapse button
         setupFeaturedCollapse();
