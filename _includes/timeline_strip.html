@@ -1,0 +1,81 @@
+{% comment %} Horizontal strip of day-map thumbnails (Google Maps Timeline
+screenshots). Parameters: - items: semicolon-separated list of
+"file.webp|Caption" pairs. Each file resolves under /images/. The caption shows
+under its thumbnail. - caption: optional italic line under the whole strip. -
+gallery: GLightbox gallery name, default "timeline". All strips sharing a name
+form one swipeable set in DOM order, so the default lets you page through every
+day of the trip chronologically from any thumbnail. Portrait phone screenshots
+(442x733) share the row width, so 2-4 per strip reads best. Each thumbnail links
+to the full-size image since labels are unreadable at strip size. Wraps on
+narrow screens. The style block is emitted only once per page. Example: {%
+include timeline_strip.html caption="The Copenhagen days."
+items="timeline-2026-07-01-copenhagen.webp|Wed Jul 1 · Torvehallerne, the Round
+Tower; timeline-2026-07-02-copenhagen.webp|Thu Jul 2 · Amalienborg, the Gefion
+Fountain" %} {% endcomment %} {% unless tl_strip_css %}{% assign tl_strip_css =
+true %}
+<style>
+  .tl-strip {
+    margin: 1.2em 0;
+  }
+  .tl-strip-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  .tl-strip-item {
+    flex: 1 1 110px;
+    min-width: 110px;
+    max-width: 220px;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  .tl-strip-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    border: 1px solid rgba(128, 128, 128, 0.35);
+  }
+  .tl-strip-cap {
+    display: block;
+    font-size: 0.72em;
+    line-height: 1.25;
+    opacity: 0.75;
+    margin-top: 4px;
+    text-align: center;
+  }
+  .tl-strip figcaption {
+    font-size: 0.85em;
+    font-style: italic;
+    opacity: 0.75;
+    margin-top: 8px;
+  }
+</style>
+{% endunless %}
+
+<figure class="tl-strip">
+  <div class="tl-strip-row">
+    {% assign _items = include.items | split: ";" %} {% for _it in _items %} {%
+    assign _p = _it | split: "|" %} {% assign _src = _p[0] | strip %} {% assign
+    _cap = _p[1] | strip %}
+    <a
+      class="tl-strip-item glightbox"
+      href="/images/{{ _src }}"
+      data-gallery="{{ include.gallery | default: 'timeline' }}"
+      data-description="{{ _cap }}"
+    >
+      <img
+        src="/images/{{ _src }}"
+        alt="Timeline day-map — {{ _cap }}"
+        loading="lazy"
+      />
+      <span class="tl-strip-cap">{{ _cap }}</span>
+    </a>
+    {% endfor %}
+  </div>
+  {% if include.caption %}
+  <figcaption>{{ include.caption }}</figcaption>
+  {% endif %}
+</figure>
