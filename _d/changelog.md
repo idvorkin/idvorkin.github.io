@@ -12,6 +12,14 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Week of 2026-08-03](#week-of-2026-08-03)
+  - [AI Testing: Grading the Agent with smevals](#ai-testing-grading-the-agent-with-smevals)
+  - [AI Eval Tools (new post!)](#ai-eval-tools-new-post)
+  - [Herdr: The Agent Multiplexer](#herdr-the-agent-multiplexer)
+  - [Scandinavia Recap: Where We Actually Went](#scandinavia-recap-where-we-actually-went)
+  - [Content Quality Audit: AI & Gas City Sweep](#content-quality-audit-ai--gas-city-sweep)
+  - [chop-conventions (2026-08-03)](#chop-conventions-2026-08-03)
+  - [Other Projects (2026-08-03)](#other-projects-2026-08-03)
 - [Week of 2026-07-27](#week-of-2026-07-27)
   - [AI Inference: Why Checking Beats Generating](#ai-inference-why-checking-beats-generating)
   - [The Clown's Prayer](#the-clowns-prayer)
@@ -176,6 +184,50 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+## Week of 2026-08-03
+
+_21 commits this week_
+
+### AI Testing: Grading the Agent with smevals
+
+**[/ai-testing#grading-the-agent-with-smevals](/ai-testing#grading-the-agent-with-smevals)** — the eval itch went unscratched for years; this week it became a real harness. [smevals](https://github.com/prime-radiant-inc/smevals) — Simon Willison's framework — is built for agent-in-a-workdir evals: the Runner is any executable, and grading is decoupled from running so a new Grader can re-score old Runs for free. First eval: [smevals-blog-edit-evals](https://github.com/idvorkin-ai-tools/smevals-blog-edit-evals), three deterministic checkers (expected-content, toc-correct, no-collateral) across three tasks. Sonnet and Haiku via Claude Code go 100% on all three; the deliberately dumb Codex config (gpt-5.4-mini, zero reasoning, a pre-approved command allowlist standing in for a sandbox that couldn't spawn) drops to 70% edit-landed — every failure a give-up after a blocked attempt, never a wrong edit. A second grader, an LLM judge layered on after the fact, finds daylight the deterministic checks can't see: sonnet 0.99 vs haiku 0.96. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/5891c9dac)
+
+### AI Eval Tools (new post!)
+
+**[/ai-eval-tools](/ai-eval-tools)** — a survey of the eval-tool field, written straight out of the smevals build: smevals, PromptFoo, Pydantic Evals, Inspect AI, DeepEval, Giskard, the container-native agentic tier (Terminal-Bench, SWE-bench, METR Vivaria), and the Braintrust/LangSmith/Langfuse SaaS tier. Strips the branding down to eight shared concepts — Case, Collection, Target config, Execution environment, Run record, Grader, Report, Trace viewer — with a rosetta-stone table mapping them across tools and a capability grid against six stated criteria. Side note on getting a real container-capable Linux VM on Apple Silicon: OrbStack's shared-kernel machines can't run Docker or bubblewrap by architecture, not configuration — Lima or UTM with a real kernel is the fix. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1460455c2)
+
+### Herdr: The Agent Multiplexer
+
+**[/ai-journal#herdr-the-agent-multiplexer-my-tmux-rig-was-trying-to-become](/ai-journal#herdr-the-agent-multiplexer-my-tmux-rig-was-trying-to-become)** — [Herdr](https://herdr.dev) turned out to be what a year of hand-built tmux tooling (a Rust pane picker, auto-renaming windows, a Stream Deck plugin) was reaching for: a multiplexer that knows what an agent is, not just that a pane produced output. Every workspace shows blocked / working / done / idle; a socket API (`herdr agent read | prompt | send-keys | wait`) lets a supervisor poll nothing; `herdr worktree create` is branch + git worktree + workspace in one move — this journal entry was itself written by a Claude running in the worktree Herdr created. **[/how-igor-chops#the-upgrade-herdr](/how-igor-chops#the-upgrade-herdr)** covers the same switch with a live screenshot of the herd: nine workspaces, agent states, a live session mid-flight. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/53707ce87)
+
+### Scandinavia Recap: Where We Actually Went
+
+**[/timeoff-2026-07#where-we-went-by-leg](/timeoff-2026-07#where-we-went-by-leg)** — converted the trip post from pre-trip plan to recap voice, cross-checked leg by leg against 49 screenshots of Igor's Google Maps Timeline. Every promoted place has written evidence (recap prose, /changelog, /life-journal, in-trip git history, or a geocoded Timeline label); unconfirmed itinerary items stay on marked "From the plan" lines instead of being silently deleted or promoted. Iceland gained the pools, a 5am kettlebell session in the rain, and Laekur Hostel's shared kitchen; Copenhagen gained the barefoot Round Tower climb and a church meditation; Stockholm gained Skansen's in-character staff and a near-ejection for doing magic in an Orthodox church pew. Day-by-day Timeline screenshots bookend the post, home location redacted (verified numerically and visually before commit). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/812e8cb62)
+
+### Content Quality Audit: AI & Gas City Sweep
+
+A tier-4 quality pass across 14 AI and Gas City pages, drafted mid-July and finally merged this week: `ai-native-vocab` alphabetized with one-line definitions added to the include-only entries, `browsers-for-machines`' dead Playwright CLI link fixed, `claw` grounded with the Bremerton ferry Larry exchange, `gas-city` / `gas-city-home` / `gas-city-rig` / `why-gas-city` deduped and trimmed of stale meta-commentary, and `where-have-all-the-bugs-gone` got a 2026 postscript on AI and cognitive debt plus its own `/bugs-gone` permalink. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/c4a69e595)
+
+### chop-conventions (2026-08-03)
+
+- **Herdr skill** — a new skill drives workspaces and agents headlessly and keeps Herdr integrations healthy across repos. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/4764a8035)
+- **machine-doctor** — a new `machine_doctor` CLI (watch/report/at/snapshot) with per-process spike detection, SQLite retention, and a Gas City leak-hunt profile; `gascity_doctor` retired in favor of a snapshot profile after it turned out the CPU recovery it claimed was never actually measured. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/3260ddf93)
+- Also: `architect-review` now inherits the session model instead of pinning Opus, and `cost-impact` gained a pricing row for `claude-opus-5`. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/790f26c0d)
+
+### Other Projects (2026-08-03)
+
+**[Settings](https://github.com/idvorkin/Settings)** (dotfiles & tools)
+
+`rmux_helper` grew a full Herdr integration: a shared mux-detection module, a pure layout planner so `third`-pane spawning works under both tmux and Herdr, and a `pick-links` scrollback picker that captures/yanks through Herdr's API, filtered by whichever multiplexer is active. Plus a thin-LTO + shared cargo target dir build for faster worktree iteration. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/e28ed540f)
+
+**[swing-analyzer](https://github.com/idvorkin-ai-tools/swing-analyzer)** (golf swing analysis)
+
+Deleted the legacy RxJS streaming path and V1 dead code, split `PoseTrackFrame` into persisted vs. runtime shapes, and closed out the fps audit "by direction, not by 'not obviously wrong.'" Fixed a thumbnail-queue race that dropped work belonging to a previous video, a pistol-squat descent that lost its real 50% checkpoint, and re-scoring so it fires when the exercise analyzer changes instead of silently going stale. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/swing-analyzer/commit/ff7b7ff0c)
+
+**[smevals-blog-edit-evals](https://github.com/idvorkin-ai-tools/smevals-blog-edit-evals)** (eval harness)
+
+The repo behind this week's [AI Testing](#ai-testing-grading-the-agent-with-smevals) update: three deterministic checkers, mock runners that prove the checkers actually fail bad runs, a Codex runner added alongside Claude Code, and an LLM-judge grader layered on top. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/smevals-blog-edit-evals/commit/18145f8c2)
 
 ## Week of 2026-07-27
 
