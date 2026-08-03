@@ -74,6 +74,12 @@
       </script>
       <!--See: https://github.com/partykit/cursor-party-->
       <script src="https://cursor-party.idvorkin.partykit.dev/cursors.js"></script>
+
+      <!--
+        Private annotation tool. Inert unless localStorage blogAnnotate=1
+        (set via ?annotate=1 or Cmd/Ctrl+Shift+A). Readers see nothing.
+      -->
+      {% include annotate.html %}
     </span>
   </body>
 </html>
