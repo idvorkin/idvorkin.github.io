@@ -10,16 +10,6 @@ declare global {
   var $: JQueryStatic & { getJSON?: Mock };
   var jQuery: JQueryStatic;
 
-  // Algolia search globals (mocked in search tests)
-  var algoliasearch: unknown;
-  var instantsearch: {
-    widgets: {
-      searchBox: unknown;
-      hits: unknown;
-      configure: unknown;
-    };
-  };
-
   // Mousetrap global
   var Mousetrap: MousetrapStatic;
 

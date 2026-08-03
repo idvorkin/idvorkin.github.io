@@ -1,10 +1,9 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-// Mock window.@algolia/autocomplete-js
+// Mock the autocomplete-js UI shell (search itself runs locally)
 vi.stubGlobal("window", {
   "@algolia/autocomplete-js": {
     autocomplete: vi.fn(),
-    getAlgoliaResults: vi.fn(),
   },
 });
 

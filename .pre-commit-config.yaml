@@ -39,6 +39,10 @@ repos:
       - id: dasel-validate
         name: Dasel YAML/JSON Validator
         files: \.(json|yaml|yml)$
+        # search.json and search-titles.json are Liquid templates that Jekyll
+        # renders INTO json — the sources have frontmatter and {% %} tags, so
+        # they are not parseable as json until built.
+        exclude: ^(search|search-titles)\.json$
 
   # ✍️ Typos: Spell checking for code and prose
   - repo: https://github.com/crate-ci/typos

@@ -35,43 +35,28 @@ collections:
   test:
     output: true
 
-# See directions @
-# https://community.algolia.com/jekyll-algolia/getting-started.html
-# Create algolia key via cat
-# cat ~/gits/igor2/secretBox.json | jq -r ."AlgoliaKey" > _algolia_api_key
+# Local search (Pagefind). Replaced Algolia — see docs/search.md.
 #
+# Only pages carrying `data-pagefind-body` are indexed, and that attribute is
+# emitted by _includes/pagefind-attrs.html. Most of the old Algolia
+# `files_to_exclude` list is therefore obsolete: non-content pages (tags.html,
+# all.md, scripts/*, tests/*) never get the attribute in the first place.
 #
+# What remains here is the set of real *content* pages to keep out of search.
+# The family journal is excluded by collection/tag in pagefind-attrs.html, not
+# by permalink, so it stays out even if a permalink changes.
+search:
+  exclude_permalinks:
+    - /changelog
+    - /positive-mitzvahs
+    - /negative-mitzvahs
 
-algolia:
-  application_id: RY6D0RNCA3
-  search_only_api_key: d4bae7d1d6328352ce13c0978ca620e9
-  index_name:
-    jekyll
-    # https://community.algolia.com/jekyll-algolia/options.html#files-to-exclude
-  files_to_exclude:
-    - "*bak"
-    - "_d/changelog.md"
-    - "_d/positive-mitzvahs.md"
-    - "_d/negative-mitzvahs.md"
-    - "_ig66/*"
-    - "debug.html"
-    - "edit.html"
-    - "edit"
-    - "back-refs.json"
-    - "*sh"
-    - "*py"
-    - "search.html"
-    - "*index.html"
-    - "all.html"
-    - "all.md"
-    - "tags.html"
-    - "_d/index.html"
-    - "*.ruff_cache*"
-    - "tags"
-    - "scripts/*"
-    - "tests/*"
-    - "src/__tests__/*"
-    - "_test/*"
+# Pagefind's index lives in ./pagefind/ (gitignored) so Jekyll treats it as a
+# normal static directory and re-copies it into _site/ on every build. Without
+# that, `jekyll serve --incremental` deletes it on every content edit, silently
+# degrading search to title-only during local dev. keep_files covers the plain
+# `jekyll build` case. See `just build-search`.
+keep_files: [".git", ".svn", "pagefind"]
 
 # plugins_dir: _plugins (default)
 include: [".htaccess", "__init__.py"]
