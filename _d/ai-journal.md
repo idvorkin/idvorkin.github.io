@@ -7,6 +7,10 @@ ai_default_image: true
 
 A journal of random explorations in AI. Keeping track of them so I don't get lost. What I'm reading — and what I thought of it — lives in my [AI feed](/ai-feed).
 
+> At times I felt like a heretic. I would watch a talk and thinking to myself: 'The tokens will wash all of this away.' Then I'd talk to people and would have to admit that I don't know exactly how this is going to play out, but I do know that in five years there'll be more tokens than you can imagine now and that thinking about the command line flags of a linter will seem funny.
+>
+> — source unknown
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
