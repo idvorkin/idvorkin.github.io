@@ -85,19 +85,18 @@
   $(document).ready(function () {
     // Only initialize autocomplete if we're not on the index page
     // The index page has its own initialization with custom settings
-    if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') {
-      CreateAutoComplete(
-        "{{ site.algolia.application_id}}",
-        "{{ site.algolia.search_only_api_key }}",
-        "{{ site.algolia.index_name }}",
-        "#autocomplete-search-box",
-        false
-      );
+    if (
+      window.location.pathname !== "/" &&
+      window.location.pathname !== "/index.html"
+    ) {
+      // Local search: no app id / key / index name. The family journal is
+      // excluded at index time, so there is no query-time filter to pass.
+      CreateAutoComplete("#autocomplete-search-box");
     }
   });
 
   $("#autocomplete-search-box-button").click(function () {
     // Redirect to main page for search
-    window.location.href = '/';
+    window.location.href = "/";
   });
 </script>

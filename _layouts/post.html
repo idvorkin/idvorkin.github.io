@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     {% include head.html %}
   </head>
@@ -25,8 +25,17 @@
             <a href="/ig66"> Goto All Posts </a>
             {% else %} {% include tags.html %} {% endif %}
           </div>
-          <div id="content-holder" class="pretty-first-para">
-            {% include toc.html %} {{ content }}
+          <div
+            id="content-holder"
+            class="pretty-first-para"
+            {%
+            include
+            pagefind-attrs.html
+            %}
+          >
+            <!-- TOC duplicates every heading; indexing it would double-count them -->
+            <div data-pagefind-ignore>{% include toc.html %}</div>
+            {{ content }}
           </div>
           <div id="links-to-page" class="rounded"></div>
         </div>

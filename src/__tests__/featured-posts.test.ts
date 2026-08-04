@@ -98,17 +98,12 @@ describe("Featured Posts", () => {
       expect(mockFeaturedContainer.innerHTML).toContain("A vision of a life well-lived");
     });
 
-    it("should fetch from backlinks instead of Algolia search", async () => {
-      // Mock Algolia search client
-      const mockSearchClient = {
-        initIndex: vi.fn(),
-      };
-
+    it("should fetch from backlinks instead of the search index", async () => {
+      // Featured posts are curated in _data/featured.yml and hydrated from
+      // back-links.json — they must never go through the search index.
       const mockIndex = {
         search: vi.fn(),
       };
-
-      mockSearchClient.initIndex.mockReturnValue(mockIndex);
 
       // Mock get_link_info to return backlinks data
       const mockGetLinkInfo = vi.fn().mockResolvedValue({
@@ -119,7 +114,7 @@ describe("Featured Posts", () => {
         },
       });
 
-      // Featured posts should be loaded from backlinks, not Algolia search
+      // Featured posts should be loaded from backlinks, not the search index
       expect(mockIndex.search).not.toHaveBeenCalled();
 
       // Simulate fetching from backlinks

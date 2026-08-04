@@ -1,0 +1,32 @@
+{%- comment -%}
+Emits the Pagefind indexing attributes for a page's content container.
+
+Pagefind only indexes pages that carry `data-pagefind-body`, so emitting
+`data-pagefind-ignore` instead is what keeps a page out of the index entirely.
+This is an INDEX-TIME exclusion — the content never reaches the client — which
+is why it replaced the old Algolia query-time `NOT tags:family-journal` filter.
+A client-side filter bug could leak the family journal; this cannot.
+
+Exclusion sources, in order:
+  page.fj                          family journal flag on _ig66 posts
+  page.collection                  the whole _ig66 collection
+  tags: family-journal             belt-and-suspenders for the above
+  page.search_exclude              per-page opt-out in frontmatter
+  site.search.exclude_permalinks   site-wide list in _config.yml
+
+The title comes from frontmatter rather than the page heading, because
+post.html renders the heading outside #content-holder where Pagefind would
+never see it.
+
+NOTE: this file is in .prettierignore. Prettier parses it as HTML, and any
+angle-bracketed tag name mentioned in this comment gets "balanced" with a real
+closing tag injected into the output — which then ships into every page.
+{%- endcomment -%}
+{%- assign pf_exclude = false -%}
+{%- if page.fj -%}{%- assign pf_exclude = true -%}{%- endif -%}
+{%- if page.collection == 'ig66' -%}{%- assign pf_exclude = true -%}{%- endif -%}
+{%- if page.tags contains 'family-journal' -%}{%- assign pf_exclude = true -%}{%- endif -%}
+{%- if page.search_exclude -%}{%- assign pf_exclude = true -%}{%- endif -%}
+{%- if site.search.exclude_permalinks contains page.permalink -%}{%- assign pf_exclude = true -%}{%- endif -%}
+{%- if page.title == nil or page.title == empty -%}{%- assign pf_exclude = true -%}{%- endif -%}
+{%- if pf_exclude -%}data-pagefind-ignore{%- else -%}data-pagefind-body data-pagefind-meta="title:{{ page.title | escape }}"{%- endif -%}

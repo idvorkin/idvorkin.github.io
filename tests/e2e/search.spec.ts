@@ -47,16 +47,27 @@ test.describe("Homepage search functionality", () => {
     const searchInput = page.locator("#search-input");
     await searchInput.fill("eulogy");
 
-    // Wait for search results to appear
-    await page.waitForTimeout(500);
-
     // Check that featured section title changes to search results
     await expect(page.locator("#featured-section .section-header h3")).toContainText("Search Results");
 
-    // Check that there are some results
+    // Check that there are some results. Uses a retrying assertion rather than a
+    // fixed wait + count(): the first search of a page load also downloads the
+    // Pagefind runtime, wasm, and index chunks, which is far slower than the
+    // steady-state query it used to be measuring.
     const searchResults = page.locator("#featured-results .result-item");
-    const count = await searchResults.count();
-    expect(count).toBeGreaterThan(0);
+    await expect(searchResults.first()).toBeVisible({ timeout: 15000 });
+    expect(await searchResults.count()).toBeGreaterThan(0);
+  });
+
+  test("Typo in a post title still finds the post", async ({ page }) => {
+    // Pagefind alone ranks garbage for typos; the MiniSearch title index is what
+    // rescues this. If the title index stops loading, this is the test that fails.
+    const searchInput = page.locator("#search-input");
+    await searchInput.fill("ketlebell");
+
+    const searchResults = page.locator("#featured-results .result-item");
+    await expect(searchResults.first()).toBeVisible({ timeout: 15000 });
+    await expect(page.locator("#featured-results")).toContainText(/kettlebell/i);
   });
 
   test("Shows no results for nonsense search", async ({ page }) => {
@@ -64,11 +75,9 @@ test.describe("Homepage search functionality", () => {
     const searchInput = page.locator("#search-input");
     await searchInput.fill("xyzabc123nonsense");
 
-    // Wait for search to complete
-    await page.waitForTimeout(500);
-
-    // Check that it shows no results message
-    await expect(page.locator("#featured-results")).toContainText("No results found");
+    // Check that it shows no results message (retrying assertion covers the
+    // first-search index download)
+    await expect(page.locator("#featured-results")).toContainText("No results found", { timeout: 15000 });
   });
 
   test("Clearing search restores original content", async ({ page }) => {

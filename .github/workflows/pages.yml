@@ -1,0 +1,75 @@
+name: Deploy to GitHub Pages
+
+# Replaces GitHub Pages' native Jekyll build.
+#
+# Why: the local search index (Pagefind) has to be generated AFTER Jekyll builds
+# the site, and the native Pages build has no post-build hook. Building here
+# also means the index is never committed to git — it is produced fresh on every
+# deploy and can never drift from published content the way the old manual
+# `jekyll algolia` index did.
+#
+# Ruby 3.2 matches update-backlinks.yml, which has been building this site in CI
+# successfully — the _ruby_compat.rb shim is only needed on Ruby 4.x locally.
+#
+# ONE-TIME SETUP: repo Settings -> Pages -> Source must be set to "GitHub Actions".
+# Until that is flipped, this workflow runs green but the live site still comes
+# from the native build.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: pages
+  # Don't cancel a deploy midway — let it finish and supersede on the next run.
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Build JS bundle
+        run: |
+          npm ci
+          npm run build
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build --config _config.yml,_config_ci.yml
+
+      - name: Build Pagefind search index
+        run: npx --yes pagefind --site _site
+
+      - name: Verify search index and exclusions
+        run: ./scripts/verify-search-index.sh
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
