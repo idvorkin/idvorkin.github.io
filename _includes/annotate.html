@@ -10,9 +10,34 @@
   Toggle  : Cmd/Ctrl+Shift+A on desktop
 
   Once enabled: select text -> a small "Comment" bubble appears near the
-  selection -> tap it -> type a note -> Save. Notes buffer in localStorage.
+  selection -> tap it -> type a note -> pick an intent -> Save
+  (or Cmd/Ctrl+Enter; Escape cancels). Notes buffer in localStorage.
   The "Review (N)" pill uploads the batch to a SECRET gist (description
   `blog-review: <permalink>`) or copies it to the clipboard.
+
+  INTENT: one tap, seven choices (fix / cut / rewrite / expand / check /
+  question / note), default `note`. Phone annotation produces terse comments
+  and "this is wordy" is ambiguous between cut, rewrite, and idle observation.
+  One tap is the right cost; freeform per-note agent instructions are
+  deliberately NOT offered, because prose turns annotating into prompt-writing.
+
+  PAGE VERSION: recorded per annotation so a stale anchor is detectable later.
+  What this site actually exposes was checked before writing this (2026-08):
+
+    * No `last_modified_at` in any `_d/*.md` frontmatter (0 of 266).
+    * `_config.yml` loads only jekyll-redirect-from + jekyll-paginate; nothing
+      in _layouts/_includes references `site.github.*`, so there is NO
+      `site.github.build_revision` and no git SHA in the built page.
+    * The served HTML carries no generator / revision / version meta tag.
+    * GitHub Pages DOES send a real `Last-Modified` header, which the browser
+      surfaces as `document.lastModified` — but it is the SITE DEPLOY time,
+      byte-identical across every page (verified: /timeoff-2026-07, /22 and
+      /40yo all returned the same value). It identifies the build, not the post.
+
+  So the marker below is: the deploy stamp (real, coarse) plus a length and an
+  FNV-1a digest of the rendered article text (exact, per-post, derived from the
+  bytes actually annotated). blog_review.py adds the per-post signal git
+  already knows: whether the markdown was committed after the note was written.
 
   SECURITY: the GitHub PAT lives ONLY in this browser's localStorage under
   `blogAnnotateToken`. It is never committed, never sent anywhere except
@@ -158,6 +183,35 @@
       return { quote: quote, prefix: prefix, suffix: suffix };
     }
 
+    // ------------------------------------------------------- page versioning
+    // FNV-1a, 32-bit. Not a security hash — a cheap, synchronous, stable
+    // fingerprint so "did this page change since I annotated it?" is answerable
+    // without refetching. crypto.subtle would work too but is async for no gain.
+    function fnv1a(str) {
+      var h = 0x811c9dc5;
+      for (var i = 0; i < str.length; i++) {
+        h ^= str.charCodeAt(i);
+        h = (h + ((h << 1) + (h << 4) + (h << 7) + (h << 8) + (h << 24))) >>> 0;
+      }
+      return ("0000000" + h.toString(16)).slice(-8);
+    }
+
+    function pageVersion() {
+      var root = articleRoot();
+      var text = (root.innerText || root.textContent || "")
+        .replace(/\s+/g, " ")
+        .trim();
+      return {
+        url: window.location.origin + window.location.pathname,
+        capturedAt: new Date().toISOString(),
+        // Site deploy time, from GitHub Pages' Last-Modified header. Coarse
+        // (same for every page on the site) but genuine — see the header note.
+        lastModified: document.lastModified || "",
+        contentLength: text.length,
+        contentDigest: fnv1a(text),
+      };
+    }
+
     // ------------------------------------------------------------------ UI
     var style = document.createElement("style");
     style.textContent = [
@@ -185,8 +239,16 @@
       "#blog-annot-card textarea{width:100%;min-height:110px;padding:8px;",
       "font:14px/1.4 system-ui,sans-serif;border:1px solid #ced4da;",
       "border-radius:8px;box-sizing:border-box}",
+      "#blog-annot-intents{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}",
+      "#blog-annot-intents button{padding:7px 12px;border:1px solid #ced4da;",
+      "border-radius:14px;background:#f8f9fa;color:#495057;",
+      "font:600 13px/1.2 system-ui,sans-serif;cursor:pointer;",
+      "touch-action:manipulation}",
+      "#blog-annot-intents button[aria-pressed='true']{background:#0b5ed7;",
+      "border-color:#0b5ed7;color:#fff}",
       "#blog-annot-card .row{display:flex;gap:8px;justify-content:flex-end;",
-      "margin-top:10px;flex-wrap:wrap}",
+      "margin-top:10px;flex-wrap:wrap;align-items:center}",
+      "#blog-annot-card .hint{margin-right:auto;font-size:12px;color:#868e96}",
       "#blog-annot-card button{padding:8px 14px;border:0;border-radius:8px;",
       "font:600 13px/1.2 system-ui,sans-serif;cursor:pointer}",
       "#blog-annot-card .primary{background:#0b5ed7;color:#fff}",
@@ -225,9 +287,32 @@
     function hideModal() {
       modal.style.display = "none";
       card.innerHTML = "";
+      composerKeys = null;
     }
     modal.addEventListener("click", function (e) {
       if (e.target === modal) hideModal();
+    });
+
+    // Keyboard submit/cancel for the composer. Registered once on document so
+    // it fires no matter which control has focus (textarea, an intent chip, or
+    // nothing); `composerKeys` is non-null only while the composer is open, so
+    // this is inert the rest of the time.
+    var composerKeys = null;
+    var IS_MAC = /Mac|iPhone|iPad|iPod/.test(navigator.platform || "");
+    document.addEventListener("keydown", function (e) {
+      if (!composerKeys) return;
+      if (e.key === "Escape" || e.key === "Esc") {
+        e.preventDefault();
+        composerKeys.cancel();
+        return;
+      }
+      var isEnter = e.key === "Enter" || e.keyCode === 13;
+      // Cmd+Enter on mac, Ctrl+Enter elsewhere. Accept either on both — a
+      // Bluetooth keyboard on an iPad can report whichever it likes.
+      if (isEnter && (e.metaKey || e.ctrlKey)) {
+        e.preventDefault();
+        composerKeys.save();
+      }
     });
 
     function refreshPill() {
@@ -305,22 +390,73 @@
       });
     });
 
+    // One tap, seven choices. Keep in sync with INTENTS in scripts/blog_review.py.
+    var INTENTS = [
+      "fix",
+      "cut",
+      "rewrite",
+      "expand",
+      "check",
+      "question",
+      "note",
+    ];
+    var DEFAULT_INTENT = "note";
+
     function openComposer(sel_info) {
       hideBtn();
+      var chips = INTENTS.map(function (name) {
+        return (
+          '<button type="button" data-intent="' +
+          name +
+          '" aria-pressed="' +
+          (name === DEFAULT_INTENT ? "true" : "false") +
+          '">' +
+          name +
+          "</button>"
+        );
+      }).join("");
+
       showModal(
         "<blockquote>" +
           escapeHtml(sel_info.quote) +
           "</blockquote>" +
           '<textarea id="blog-annot-text" placeholder="What about this line?"></textarea>' +
+          '<div id="blog-annot-intents">' +
+          chips +
+          "</div>" +
           '<div class="row">' +
+          '<span class="hint">' +
+          (IS_MAC ? "⌘" : "Ctrl") +
+          "+Enter saves · Esc cancels</span>" +
           '<button type="button" class="ghost" id="blog-annot-cancel">Cancel</button>' +
           '<button type="button" class="primary" id="blog-annot-save">Save</button>' +
           "</div>"
       );
+
       var ta = document.getElementById("blog-annot-text");
       ta.focus();
-      document.getElementById("blog-annot-cancel").onclick = hideModal;
-      document.getElementById("blog-annot-save").onclick = function () {
+
+      var intent = DEFAULT_INTENT;
+      var chipBox = document.getElementById("blog-annot-intents");
+      chipBox.addEventListener("click", function (e) {
+        var hit = e.target.closest
+          ? e.target.closest("button[data-intent]")
+          : null;
+        if (!hit) return;
+        e.preventDefault();
+        intent = hit.getAttribute("data-intent");
+        var all = chipBox.querySelectorAll("button[data-intent]");
+        for (var i = 0; i < all.length; i++) {
+          all[i].setAttribute(
+            "aria-pressed",
+            all[i] === hit ? "true" : "false"
+          );
+        }
+        // Keep typing where the thumb left off.
+        ta.focus();
+      });
+
+      function save() {
         var list = loadBuffer();
         list.push({
           permalink: PERMALINK,
@@ -329,14 +465,20 @@
           prefix: sel_info.prefix,
           suffix: sel_info.suffix,
           comment: ta.value,
+          intent: intent,
           ts: new Date().toISOString(),
+          version: pageVersion(),
         });
         saveBuffer(list);
         refreshPill();
         hideModal();
         var s = window.getSelection();
         if (s && s.removeAllRanges) s.removeAllRanges();
-      };
+      }
+
+      document.getElementById("blog-annot-cancel").onclick = hideModal;
+      document.getElementById("blog-annot-save").onclick = save;
+      composerKeys = { save: save, cancel: hideModal };
     }
 
     // ---------------------------------------------------------- review flow
@@ -350,7 +492,9 @@
               return (
                 "<li><b>" +
                 (i + 1) +
-                ".</b> " +
+                ".</b> [" +
+                escapeHtml(a.intent || DEFAULT_INTENT) +
+                "] " +
                 escapeHtml(a.quote.slice(0, 90)) +
                 (a.quote.length > 90 ? "…" : "") +
                 "<br><i>" +
@@ -429,6 +573,10 @@
           title: TITLE,
           url: window.location.origin + window.location.pathname,
           created: new Date().toISOString(),
+          // Version of the page you happen to be on when you export. Each
+          // annotation carries its own `version` too — that is the one that
+          // matters, since the buffer can span posts and page loads.
+          version: pageVersion(),
           annotations: list,
         },
         null,
