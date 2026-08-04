@@ -8,7 +8,24 @@ vi.mock("../../src/shared", () => ({
   MakeBackLinkHTML: vi.fn(),
 }));
 
-// First, stub all the global objects
+// Mock the Pagefind runtime. Without this the test resolves the REAL
+// /pagefind/pagefind.js whenever a local index happens to exist (just
+// build-search writes one to ./pagefind/), and Pagefind's self-initialization
+// then throws an unhandled rejection fetching metadata over a base URL that
+// does not exist under vitest — failing the run for environmental reasons.
+const pagefindMock = vi.hoisted(() => ({
+  options: vi.fn(),
+  search: vi.fn(),
+}));
+vi.mock("/pagefind/pagefind.js", () => pagefindMock);
+
+// autocomplete-js is the UI shell only — it no longer talks to any search
+// service, so this stubs the widget, not a search backend.
+//
+// ES imports are hoisted above these calls, so search.ts is evaluated before any
+// stub exists. That is fine because search.ts resolves the autocomplete widget
+// lazily (getAutocomplete) rather than capturing it at import time. Don't
+// unstub between tests — search.ts reads window on every call.
 vi.stubGlobal("window", {
   location: {
     href: "https://example.com",
@@ -16,106 +33,55 @@ vi.stubGlobal("window", {
   },
   "@algolia/autocomplete-js": {
     autocomplete: vi.fn(),
-    getAlgoliaResults: vi.fn(),
   },
 });
-
-// Mock more globals used in search.ts
-vi.stubGlobal("algoliasearch", vi.fn());
-vi.stubGlobal("instantsearch", vi.fn());
 vi.stubGlobal("$", vi.fn());
 
-// Now we can safely import from search
-import { CreateAutoComplete, CreateSearch, InstantSearchHitTemplate, getParameterByName } from "../../src/search";
+import {
+  CreateAutoComplete,
+  __resetSearchCaches,
+  excerptHtml,
+  getParameterByName,
+  normalizeUrl,
+  renderSearchHit,
+  searchBlog,
+  searchPagefind,
+  searchTitles,
+} from "../../src/search";
 
 describe("Search Module", () => {
-  let mockAlgoliaSearchClient;
-  let mockInstantSearchInstance;
-  let mockSearchBox;
-  let mockInfiniteHits;
   let mockUrlInfo;
   let mockAutocompleteInstance;
 
   beforeEach(() => {
-    // Reset mocks
     vi.resetAllMocks();
+    // Both search indexes memoize on first load; without this a cached index
+    // from an earlier test would mask the failure-path assertions.
+    __resetSearchCaches();
 
-    // Mock console methods
     console.log = vi.fn();
     console.error = vi.fn();
+    console.warn = vi.fn();
 
-    // Set up mock URL info for testing
     mockUrlInfo = {
-      "/test-page": {
-        url: "/test-page",
-        title: "Test Page",
-        description: "A test page",
-        outgoing_links: [],
-        incoming_links: [],
-        doc_size: 100,
-        last_modified: "2023-01-01",
-        file_path: "test-page.md",
-        redirect_url: null,
+      "/kettlebell": {
+        url: "/kettlebell",
+        title: "Kettlebells - A rock with a handle",
+        description: "A test page about kettlebells",
       },
-      "/another-page": {
-        url: "/another-page",
-        title: "Another Page",
+      "/eulogy": {
+        url: "/eulogy",
+        title: "Igor's Eulogy",
         description: "Another test page",
-        outgoing_links: [],
-        incoming_links: [],
-        doc_size: 200,
-        last_modified: "2023-01-02",
-        file_path: "another-page.md",
-        redirect_url: null,
       },
     };
 
-    // Mock shared.get_link_info to return mockUrlInfo
     vi.mocked(shared.get_link_info).mockResolvedValue(mockUrlInfo);
-
-    // Mock shared.random_from_list
     vi.mocked(shared.random_from_list).mockImplementation((list) => list[0]);
 
-    // Mock algoliasearch
-    mockAlgoliaSearchClient = {
-      // Add any methods that might be called on the search client
-    };
-    vi.mocked(algoliasearch).mockReturnValue(mockAlgoliaSearchClient);
-
-    // Mock instantsearch widgets
-    mockSearchBox = vi.fn();
-    mockInfiniteHits = vi.fn();
-
-    // Mock instantsearch instance
-    mockInstantSearchInstance = {
-      addWidget: vi.fn(),
-      start: vi.fn(),
-    };
-
-    // Mock instantsearch
-    vi.mocked(instantsearch).mockReturnValue(mockInstantSearchInstance);
-    vi.mocked(instantsearch).widgets = {
-      searchBox: mockSearchBox,
-      infiniteHits: mockInfiniteHits,
-    };
-
-    // Mock autocomplete instance
-    mockAutocompleteInstance = {
-      // Add methods as needed
-    };
+    mockAutocompleteInstance = {};
     vi.mocked(window)["@algolia/autocomplete-js"].autocomplete.mockReturnValue(mockAutocompleteInstance);
-    vi.mocked(window)["@algolia/autocomplete-js"].getAlgoliaResults.mockResolvedValue([
-      {
-        url: "/test-page",
-        title: "Test Page",
-        _highlightResult: {
-          title: { value: "Test <span>Page</span>" },
-          content: { value: "A test page" },
-        },
-      },
-    ]);
 
-    // Mock jQuery
     vi.mocked($).mockImplementation((selector) => {
       return {
         length: selector === "#autocomplete" ? 1 : 0,
@@ -128,220 +94,318 @@ describe("Search Module", () => {
 
   afterEach(() => {
     vi.resetAllMocks();
+    // Deliberately NOT vi.unstubAllGlobals() — see the stub comment above.
   });
 
   describe("getParameterByName", () => {
     it("should extract a parameter from a URL", () => {
       const url = "https://example.com?test=value";
-      const result = getParameterByName("test", url);
-      expect(result).toBe("value");
+      expect(getParameterByName("test", url)).toBe("value");
     });
 
     it("should return null when parameter doesn't exist", () => {
-      const url = "https://example.com?other=value";
-      const result = getParameterByName("test", url);
-      expect(result).toBeNull();
+      expect(getParameterByName("test", "https://example.com?other=value")).toBeNull();
     });
 
     it("should return empty string when parameter has no value", () => {
-      const url = "https://example.com?test=";
-      const result = getParameterByName("test", url);
-      expect(result).toBe("");
+      expect(getParameterByName("test", "https://example.com?test=")).toBe("");
     });
 
     it("should handle URL encoded values", () => {
-      const url = "https://example.com?test=hello%20world";
-      const result = getParameterByName("test", url);
-      expect(result).toBe("hello world");
+      expect(getParameterByName("test", "https://example.com?test=hello%20world")).toBe("hello world");
     });
 
     it("should use window.location.href when no URL is provided", () => {
-      // Mock window.location.href
       window.location.href = "https://example.com?test=fromWindow";
-      const result = getParameterByName("test");
-      expect(result).toBe("fromWindow");
+      expect(getParameterByName("test")).toBe("fromWindow");
     });
   });
 
-  describe("InstantSearchHitTemplate", () => {
-    it("should generate HTML for a hit with title and content", () => {
-      const hit = {
-        url: "/test-page",
-        _highlightResult: {
-          title: { value: "Test <span>Page</span>" },
-          content: { value: "A test page" },
-        },
-      };
-
-      const result = InstantSearchHitTemplate(hit);
-      expect(result).toContain('href="/test-page"');
-      expect(result).toContain("Test <span>Page</span>");
-      expect(result).toContain("A test page");
+  describe("normalizeUrl", () => {
+    // Pagefind reports built file paths; the blog's permalinks are extensionless.
+    it("strips the .html Pagefind appends", () => {
+      expect(normalizeUrl("/kettlebell.html")).toBe("/kettlebell");
     });
 
-    it("should generate HTML for a hit with anchor", () => {
-      const hit = {
-        url: "/test-page",
-        anchor: "section-1",
-        _highlightResult: {
-          title: { value: "Test Page" },
-          content: { value: "A test page" },
-        },
-      };
-
-      const result = InstantSearchHitTemplate(hit);
-      expect(result).toContain('href="/test-page#section-1"');
+    it("collapses directory index files to the directory", () => {
+      expect(normalizeUrl("/d/index.html")).toBe("/d/");
     });
 
-    it("should handle hits without highlighted content", () => {
-      const hit = {
-        url: "/test-page",
-        _highlightResult: {
-          title: { value: "Test Page" },
-          // No content field
-        },
-      };
-
-      const result = InstantSearchHitTemplate(hit);
-      expect(result).toContain('href="/test-page"');
-      expect(result).toContain("Test Page");
-      expect(result).toContain("<span></span>"); // Empty content
+    it("leaves already-clean permalinks alone", () => {
+      expect(normalizeUrl("/kettlebell")).toBe("/kettlebell");
     });
 
-    it("should handle errors and return 'invalid HTML'", () => {
-      const hit = null; // This will cause an error
-
-      const result = InstantSearchHitTemplate(hit);
-      expect(result).toBe("invalid HTML");
-      expect(console.log).toHaveBeenCalledWith("Error in hitTemplate", expect.any(Error), null);
+    it("handles empty input", () => {
+      expect(normalizeUrl("")).toBe("");
     });
   });
 
-  describe("CreateSearch", () => {
-    it("should create a search instance with the correct configuration", () => {
-      const appId = "test-app-id";
-      const apiKey = "test-api-key";
-      const indexName = "test-index";
-      const initialQuery = "test query";
+  describe("excerptHtml", () => {
+    // Pagefind escapes its own excerpts and adds <mark>; our title index does not.
+    it("passes Pagefind excerpts through so <mark> highlights survive", () => {
+      const hit = {
+        url: "/x",
+        title: "X",
+        excerpt: "a <mark>kettlebell</mark> is a rock",
+        source: "pagefind" as const,
+      };
+      expect(excerptHtml(hit)).toContain("<mark>kettlebell</mark>");
+    });
 
-      const search = CreateSearch(appId, apiKey, indexName, initialQuery);
+    it("escapes title-source excerpts, which are raw text from back-links.json", () => {
+      const hit = {
+        url: "/x",
+        title: "X",
+        excerpt: '<img src=x onerror="alert(1)">',
+        source: "title" as const,
+      };
+      const html = excerptHtml(hit);
+      expect(html).not.toContain("<img");
+      expect(html).toContain("&lt;img");
+    });
 
-      // Check that algoliasearch was called with the correct parameters
-      expect(algoliasearch).toHaveBeenCalledWith(appId, apiKey);
+    it("handles a missing excerpt", () => {
+      expect(excerptHtml({ url: "/x", title: "X", excerpt: "", source: "title" as const })).toBe("");
+    });
+  });
 
-      // Check that instantsearch was called with the correct parameters
-      expect(instantsearch).toHaveBeenCalledWith({
-        searchClient: mockAlgoliaSearchClient,
-        indexName: indexName,
-        searchParameters: {
-          query: initialQuery,
-        },
+  describe("renderSearchHit", () => {
+    it("renders a link with the title and excerpt", () => {
+      const html = renderSearchHit({
+        url: "/kettlebell",
+        title: "Kettlebells",
+        excerpt: "a <mark>rock</mark>",
+        source: "pagefind",
+      });
+      expect(html).toContain('href="/kettlebell"');
+      expect(html).toContain("Kettlebells");
+      expect(html).toContain("<mark>rock</mark>");
+    });
+
+    it("escapes a title containing markup", () => {
+      const html = renderSearchHit({
+        url: "/x",
+        title: "<script>alert(1)</script>",
+        excerpt: "",
+        source: "pagefind",
+      });
+      expect(html).not.toContain("<script>");
+    });
+
+    it("rejects a hit with an unusable URL", () => {
+      const html = renderSearchHit({
+        url: "javascript:alert(1)",
+        title: "bad",
+        excerpt: "",
+        source: "pagefind",
+      });
+      expect(html).toBe("<div>Invalid result</div>");
+    });
+
+    it("escapes double quotes in the URL so it cannot break out of attributes", () => {
+      // isValidUrl accepts anything starting with "/", including quotes. A bare
+      // escapeHtml leaves `"` intact, which would close data-url/href and let
+      // the rest of the URL inject attributes like an event handler.
+      const html = renderSearchHit({
+        url: '/x" onmouseover="alert(1)',
+        title: "quoted",
+        excerpt: "",
+        source: "pagefind",
+      });
+      expect(html).not.toContain('onmouseover="alert(1)"');
+      expect(html).toContain("&quot;");
+    });
+  });
+
+  describe("searchPagefind", () => {
+    beforeEach(() => {
+      pagefindMock.options.mockResolvedValue(undefined);
+      pagefindMock.search.mockResolvedValue({ results: [] });
+    });
+
+    it("returns [] for an empty query without touching the index", async () => {
+      expect(await searchPagefind("")).toEqual([]);
+      expect(await searchPagefind("   ")).toEqual([]);
+      expect(pagefindMock.search).not.toHaveBeenCalled();
+    });
+
+    it("maps results, preferring the frontmatter title and clean permalink", async () => {
+      pagefindMock.search.mockResolvedValue({
+        results: [
+          {
+            data: async () => ({
+              url: "/kettlebell.html",
+              meta: { title: "Kettlebells - A rock with a handle" },
+              excerpt: "a <mark>rock</mark> with a handle",
+            }),
+          },
+        ],
       });
 
-      // Check that the search box widget was added
-      expect(mockInstantSearchInstance.addWidget).toHaveBeenCalledTimes(2);
-      expect(mockSearchBox).toHaveBeenCalledWith({
-        container: "#search-box",
-        placeholder: expect.any(String),
-        poweredBy: true,
-        showSubmit: false,
-        showReset: false,
-        showLoadingIndicator: false,
+      const results = await searchPagefind("kettlebell");
+      expect(results).toHaveLength(1);
+      expect(results[0].url).toBe("/kettlebell");
+      expect(results[0].title).toBe("Kettlebells - A rock with a handle");
+      expect(results[0].source).toBe("pagefind");
+    });
+
+    it("honors the result limit", async () => {
+      pagefindMock.search.mockResolvedValue({
+        results: Array.from({ length: 25 }, (_, i) => ({
+          data: async () => ({ url: `/p${i}.html`, meta: { title: `P${i}` }, excerpt: "" }),
+        })),
       });
 
-      // Check that the infinite hits widget was added
-      expect(mockInfiniteHits).toHaveBeenCalledWith({
-        container: "#search-hits",
-        templates: {
-          item: expect.any(Function),
-        },
-        item: expect.any(Function),
-      });
+      expect(await searchPagefind("x", 5)).toHaveLength(5);
+    });
 
-      // Check that the search instance was returned
-      expect(search).toBe(mockInstantSearchInstance);
+    it("degrades to [] when the index is missing rather than throwing", async () => {
+      // Exactly the situation on a dev server that hasn't run `just build-search`.
+      // Search must fall back to title-only, not blow up.
+      pagefindMock.options.mockRejectedValue(new Error("index not built"));
+      await expect(searchPagefind("kettlebell")).resolves.toEqual([]);
+    });
+  });
+
+  describe("searchTitles", () => {
+    // Exercises the real MiniSearch index against a stubbed title JSON.
+    beforeEach(() => {
+      vi.stubGlobal(
+        "fetch",
+        vi.fn().mockResolvedValue({
+          ok: true,
+          json: async () => [
+            { t: "Kettlebells - A rock with a handle", u: "/kettlebell" },
+            { t: "Igor's Eulogy", u: "/eulogy" },
+            { t: "Emotional Health Practices", u: "/emotional-health" },
+          ],
+        }),
+      );
+    });
+
+    it("returns [] for an empty query", async () => {
+      expect(await searchTitles("")).toEqual([]);
+    });
+
+    it("finds an exact title match", async () => {
+      const results = await searchTitles("eulogy");
+      expect(results.map((r) => r.url)).toContain("/eulogy");
+    });
+
+    it("recovers from a typo — the whole reason this index exists", async () => {
+      const results = await searchTitles("ketlebell");
+      expect(results.map((r) => r.url)).toContain("/kettlebell");
+    });
+
+    it("tags results as title-sourced so the renderer escapes them", async () => {
+      const results = await searchTitles("eulogy");
+      expect(results[0].source).toBe("title");
+    });
+
+    it("degrades to [] when the title index is unreachable", async () => {
+      vi.stubGlobal("fetch", vi.fn().mockResolvedValue({ ok: false, status: 404 }));
+      await expect(searchTitles("eulogy")).resolves.toEqual([]);
+    });
+  });
+
+  describe("searchBlog", () => {
+    beforeEach(() => {
+      vi.stubGlobal(
+        "fetch",
+        vi.fn().mockResolvedValue({
+          ok: true,
+          json: async () => [
+            { t: "Kettlebells - A rock with a handle", u: "/kettlebell" },
+            { t: "Igor's Eulogy", u: "/eulogy" },
+          ],
+        }),
+      );
+    });
+
+    it("returns [] for an empty query", async () => {
+      expect(await searchBlog("")).toEqual([]);
+    });
+
+    it("still returns title hits when Pagefind is unavailable", async () => {
+      const results = await searchBlog("ketlebell");
+      expect(results.map((r) => r.url)).toContain("/kettlebell");
+    });
+
+    it("does not return the same URL twice", async () => {
+      const results = await searchBlog("eulogy");
+      const urls = results.map((r) => r.url);
+      expect(urls.length).toBe(new Set(urls).size);
+    });
+
+    it("respects the result limit", async () => {
+      const results = await searchBlog("a", 1);
+      expect(results.length).toBeLessThanOrEqual(1);
     });
   });
 
   describe("CreateAutoComplete", () => {
-    // Skip these tests for now - they require further mocking for autocomplete and algoliasearch
-    it.skip("should create an autocomplete instance with correct configuration", async () => {
-      const appId = "test-app-id";
-      const apiKey = "test-api-key";
-      const indexName = "test-index";
-      const autocompleteId = "autocomplete";
-      const includeFamilyJournal = false;
+    it("initializes the widget against the given container", async () => {
+      const result = await CreateAutoComplete("autocomplete");
 
-      // Create a mock for algoliasearch
-      const mockSearchClient = {};
-      vi.mocked(algoliasearch).mockReturnValue(mockSearchClient);
-
-      // Also need to mock the autocomplete function
-      vi.mocked(window["@algolia/autocomplete-js"].autocomplete).mockReturnValue(mockAutocompleteInstance);
-
-      const result = await CreateAutoComplete(appId, apiKey, indexName, autocompleteId, includeFamilyJournal);
-
-      // Check that algoliasearch was called with the correct parameters
-      expect(algoliasearch).toHaveBeenCalledWith(appId, apiKey);
-
-      // Check that autocomplete was called with the correct parameters
-      expect(window["@algolia/autocomplete-js"].autocomplete).toHaveBeenCalledWith({
-        container: "#autocomplete",
-        placeholder: expect.any(String),
-        getSources: expect.any(Function),
-        debug: false,
-        openOnFocus: true,
-        detachedMediaQuery: "",
-      });
-
-      // Check that the autocomplete instance was returned
+      expect(window["@algolia/autocomplete-js"].autocomplete).toHaveBeenCalledWith(
+        expect.objectContaining({
+          container: "#autocomplete",
+          placeholder: expect.any(String),
+          getSources: expect.any(Function),
+          debug: false,
+          openOnFocus: true,
+          detachedMediaQuery: "",
+        }),
+      );
       expect(result).toBe(mockAutocompleteInstance);
     });
 
-    it.skip("should handle element not found error", async () => {
-      const appId = "test-app-id";
-      const apiKey = "test-api-key";
-      const indexName = "test-index";
-      const autocompleteId = "nonexistent"; // This selector won't be found
-      const includeFamilyJournal = false;
+    it("accepts the container id with or without a leading #", async () => {
+      await CreateAutoComplete("#autocomplete");
+      expect(window["@algolia/autocomplete-js"].autocomplete).toHaveBeenCalledWith(
+        expect.objectContaining({ container: "#autocomplete" }),
+      );
+    });
 
-      // Override $ mock for this test only
-      vi.mocked($).mockImplementation((selector) => {
-        return {
-          length: 0, // Simulate element not found
-        };
-      });
-
-      // Mock console.log to verify it's called
-      console.log = vi.fn();
-
-      // Call the function
-      const result = await CreateAutoComplete(appId, apiKey, indexName, autocompleteId, includeFamilyJournal);
-
-      // Check that the function logged an error and returned undefined
+    it("bails out when the container is not on the page", async () => {
+      const result = await CreateAutoComplete("nonexistent");
       expect(console.log).toHaveBeenCalledWith("No autocomplete element found", "autocomplete_id", "nonexistent");
       expect(result).toBeUndefined();
     });
 
-    it.skip("should handle autocompleteId with or without # prefix", async () => {
-      // Mock the implementation of CreateAutoComplete for this test
+    it("shows recent and random posts when the query is empty", async () => {
+      await CreateAutoComplete("autocomplete");
+      const { getSources } = vi.mocked(window["@algolia/autocomplete-js"].autocomplete).mock.calls[0][0];
 
-      // Test with # prefix
-      await CreateAutoComplete("app-id", "api-key", "index", "#autocomplete", false);
-      expect(window["@algolia/autocomplete-js"].autocomplete).toHaveBeenCalledWith(
-        expect.objectContaining({ container: "#autocomplete" }),
-      );
+      const sources = getSources({ query: "" });
+      expect(sources.map((s) => s.sourceId)).toEqual(["recent_posts", "random_posts"]);
+    });
 
-      vi.resetAllMocks();
+    it("switches to search results once there is a query", async () => {
+      await CreateAutoComplete("autocomplete");
+      const { getSources } = vi.mocked(window["@algolia/autocomplete-js"].autocomplete).mock.calls[0][0];
 
-      // Test without # prefix
-      await CreateAutoComplete("app-id", "api-key", "index", "autocomplete", false);
-      expect(window["@algolia/autocomplete-js"].autocomplete).toHaveBeenCalledWith(
-        expect.objectContaining({ container: "#autocomplete" }),
-      );
+      const sources = getSources({ query: "kettlebell" });
+      expect(sources).toHaveLength(1);
+      expect(sources[0].sourceId).toBe("featured_posts");
+    });
+
+    it("honors featuredCount as the search result limit", async () => {
+      // Regression: this used to be Math.max(featuredCount, 10), which silently
+      // ignored any caller asking for fewer than 10 results.
+      pagefindMock.options.mockResolvedValue(undefined);
+      pagefindMock.search.mockResolvedValue({
+        results: Array.from({ length: 25 }, (_, i) => ({
+          data: async () => ({ url: `/p${i}.html`, meta: { title: `P${i}` }, excerpt: "" }),
+        })),
+      });
+      vi.stubGlobal("fetch", vi.fn().mockResolvedValue({ ok: true, json: async () => [] }));
+
+      await CreateAutoComplete("autocomplete", { featuredCount: 2 });
+      const { getSources } = vi.mocked(window["@algolia/autocomplete-js"].autocomplete).mock.calls[0][0];
+
+      const items = await getSources({ query: "p" })[0].getItems();
+      expect(items).toHaveLength(2);
     });
   });
-
-  // Additional tests for GetRandomSearchResults, GetRecentSearchResults, GetAlgoliaResults, etc.
-  // could be added here, following similar patterns
 });

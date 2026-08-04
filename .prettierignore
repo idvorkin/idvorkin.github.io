@@ -20,3 +20,6 @@ zz-chop-logs
 published-chop-logs/**
 
 static/pet-projects.html
+
+# Liquid-only include: prettier parses it as HTML and injects closing tags
+_includes/pagefind-attrs.html

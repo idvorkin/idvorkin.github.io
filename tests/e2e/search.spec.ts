@@ -47,28 +47,45 @@ test.describe("Homepage search functionality", () => {
     const searchInput = page.locator("#search-input");
     await searchInput.fill("eulogy");
 
-    // Wait for search results to appear
-    await page.waitForTimeout(500);
-
     // Check that featured section title changes to search results
     await expect(page.locator("#featured-section .section-header h3")).toContainText("Search Results");
 
-    // Check that there are some results
-    const searchResults = page.locator("#featured-results .result-item");
-    const count = await searchResults.count();
-    expect(count).toBeGreaterThan(0);
+    // Check that there are some results. Uses a retrying assertion rather than a
+    // fixed wait + count(): the first search of a page load also downloads the
+    // Pagefind runtime, wasm, and index chunks, which is far slower than the
+    // steady-state query it used to be measuring.
+    //
+    // Targets the result LINK: the "Searching..." and "No results found..."
+    // placeholders are also .result-item divs, so a bare .result-item locator
+    // passes with zero real results. Only rendered hits contain an <a>.
+    const searchResults = page.locator("#featured-results .result-item a");
+    await expect(searchResults.first()).toBeVisible({ timeout: 15000 });
+    expect(await searchResults.count()).toBeGreaterThan(0);
+  });
+
+  test("Typo in a post title still finds the post", async ({ page }) => {
+    // Pagefind alone ranks garbage for typos; the MiniSearch title index is what
+    // rescues this. If the title index stops loading, this is the test that fails.
+    const searchInput = page.locator("#search-input");
+    await searchInput.fill("ketlebell");
+
+    const searchResults = page.locator("#featured-results .result-item a");
+    await expect(searchResults.first()).toBeVisible({ timeout: 15000 });
+    await expect(page.locator("#featured-results")).toContainText(/kettlebell/i);
   });
 
   test("Shows no results for nonsense search", async ({ page }) => {
-    // Type nonsense in the search box
+    // TWO nonsense words, deliberately. Pagefind progressively shortens the
+    // LAST query word until something matches (search-as-you-type), so a single
+    // nonsense word like "xyzabc123nonsense" degrades to "xyz" and matches real
+    // pages — by design, with no off switch. Non-final words are not shortened,
+    // so an all-nonsense multi-word query is the deterministic zero-result case.
     const searchInput = page.locator("#search-input");
-    await searchInput.fill("xyzabc123nonsense");
+    await searchInput.fill("qzxvjw wkjqp");
 
-    // Wait for search to complete
-    await page.waitForTimeout(500);
-
-    // Check that it shows no results message
-    await expect(page.locator("#featured-results")).toContainText("No results found");
+    // Check that it shows no results message (retrying assertion covers the
+    // first-search index download)
+    await expect(page.locator("#featured-results")).toContainText("No results found", { timeout: 15000 });
   });
 
   test("Clearing search restores original content", async ({ page }) => {

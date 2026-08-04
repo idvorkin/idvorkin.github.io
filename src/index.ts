@@ -24,7 +24,14 @@ import { TreeNode, add_random_prompts, add_sunburst, add_sunburst_from_dom } fro
 // Import recent posts functionality
 import { initRecentAllPosts } from "./recent";
 // Import search functionality
-import { CreateAutoComplete, get_random_post, get_random_posts_batch, get_recent_posts } from "./search";
+import {
+  CreateAutoComplete,
+  get_random_post,
+  get_random_posts_batch,
+  get_recent_posts,
+  renderSearchHit,
+  searchBlog,
+} from "./search";
 // Import shared utilities
 import {
   type IURLInfo,
@@ -134,6 +141,11 @@ export {
   get_random_post,
   get_recent_posts,
   get_random_posts_batch,
+  // Local search (Pagefind + MiniSearch). searchPagefind/searchTitles stay
+  // module-private — exporting them would let callers bypass searchBlog's
+  // merge, dedupe, and limit logic.
+  searchBlog,
+  renderSearchHit,
   // Recent posts export
   initRecentAllPosts,
   // Random prompter exports

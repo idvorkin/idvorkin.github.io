@@ -195,7 +195,8 @@ js-validate: js-typecheck js-lint
 # - jekyll-container: Serve site in container environment
 # - jekyll-docker: Serve site in Docker container
 # - update-backlinks: Rebuild backlinks.json
-# - update-search: Update Algolia search index
+# - build-search: Build the local Pagefind search index into _site/pagefind/
+# - build-search-only: Rebuild just the index when _site/ is already current
 
 coverage-instrument:
     npx nyc instrument --compact=false _site/assets/js instrumented
@@ -382,23 +383,6 @@ jekyll-docker:
       jekyll/jekyll:4 \
       jekyll serve --watch --force_polling --host 0.0.0.0
 
-jekyll-docker-update-search:
-    #!/usr/bin/env sh
-    # Auto-detect platform and use appropriate image
-    if [ "$(uname -m)" = "arm64" ]; then
-        PLATFORM="--platform linux/arm64"
-    else
-        PLATFORM="--platform linux/amd64"
-    fi
-    docker run --rm \
-      $PLATFORM \
-      -v "$PWD:/srv/jekyll" \
-      -v jekyll-gems:/usr/local/bundle \
-      jekyll/jekyll:4 \
-      jekyll algolia
-
-
-
 docker-build:
     docker build -t devdocker devdocker
 
@@ -419,8 +403,61 @@ update-backlinks-to:
     # First argument is the output file
     uv run ./build_back_links.py build "$1"
 
-update-search:
-    bundle exec jekyll algolia
+# Build the local Pagefind search index into _site/pagefind/.
+#
+# Replaces the old `bundle exec jekyll algolia`. Runs against the BUILT site, so
+# _site/ must be current — hence the jekyll-build dependency.
+#
+# The index is written to ./pagefind/ (gitignored) rather than straight into
+# _site/, because `jekyll serve --incremental` deletes anything in _site/ that it
+# did not generate — on every single content edit. `keep_files` only covers a
+# plain `jekyll build`, not the serve rebuild loop.
+#
+# Writing to the repo root instead makes ./pagefind/ a normal static source
+# directory, so Jekyll *regenerates* _site/pagefind/ on every build and the index
+# survives the edit loop. It is also copied into _site/ immediately below so
+# search works without waiting for the next rebuild.
+#
+# CI does NOT need this dance — it builds once, writes into _site/ directly, and
+# deploys. See .github/workflows/pages.yml.
+build-search: jekyll-build
+    #!/usr/bin/env sh
+    set -eu
+    echo "🔍 Building Pagefind index..."
+    npx --yes pagefind --site _site --output-path pagefind
+    mkdir -p _site/pagefind && cp -r pagefind/. _site/pagefind/
+    echo "✅ Search index built - ./pagefind/ (copied into _site/)"
+
+# Rebuild ONLY the search index, assuming _site/ is already current.
+# Skips the ~5s Jekyll rebuild — use it to refresh a stale index quickly.
+build-search-only:
+    #!/usr/bin/env sh
+    set -eu
+    if [ ! -d _site ]; then
+        echo "✗ _site/ not found. Run 'just build-search' (or 'just jekyll-build') first." >&2
+        exit 1
+    fi
+    npx --yes pagefind --site _site --output-path pagefind
+    mkdir -p _site/pagefind && cp -r pagefind/. _site/pagefind/
+    echo "✅ Search index rebuilt - ./pagefind/ (copied into _site/)"
+
+# Backwards-compatible alias — muscle memory from the Algolia days.
+update-search: build-search
+
+# INTERIM (until Pages -> Source is "GitHub Actions"): rebuild the search index
+# and commit it, so the native Pages build ships fresh full-text search.
+# Run at whatever cadence — the index only drifts as much as published content.
+# Once the Actions deploy is live, delete this recipe and re-gitignore /pagefind/.
+refresh-search-index: build-search
+    #!/usr/bin/env sh
+    set -eu
+    git add pagefind
+    if git diff --cached --quiet -- pagefind; then
+        echo "✓ Search index unchanged — nothing to commit"
+    else
+        git commit -m "Refresh committed Pagefind index (interim manual publish)" -- pagefind
+        echo "✅ Index refreshed and committed — push (or PR) to publish"
+    fi
 
 update-ig66:
     python3 old_blog/transform_blogger_export.py export-all > _ig66/ig66-export.json
