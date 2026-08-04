@@ -80,16 +80,38 @@ rather than erroring.
 
 ## Deploy
 
+### Interim mode (current): committed index, manual refresh
+
+Until Settings → Pages → Source is flipped to **GitHub Actions**, production is
+built by GitHub Pages' native Jekyll build, which cannot run Pagefind
+post-build. So the index is **committed to git** for now — the native build
+copies `./pagefind/` into `_site/` like any static directory, and full-text
+search works in production.
+
+The committed index goes stale as content merges; refresh it at whatever
+cadence:
+
+```bash
+just refresh-search-index   # rebuild + commit; then push / PR as usual
+```
+
+If the index is stale, search still works — new posts are simply missing from
+full text (titles stay current because `search-titles.json` is Liquid, built
+fresh by every native build). This mirrors the old manual `just update-search`
+Algolia flow, minus the ability to break: a stale index degrades, a blocked
+service died.
+
+### Target mode: Actions deploy, index never committed
+
 `.github/workflows/pages.yml` builds the JS bundle, builds Jekyll, runs Pagefind
 against `_site/`, verifies the exclusions, and deploys. The index is produced
-fresh on every deploy and never committed, so it cannot drift.
-
-This replaced GitHub Pages' native Jekyll build, which had no post-build hook to
-run Pagefind in.
+fresh on every deploy, so it cannot drift.
 
 > **One-time setup:** repo Settings → Pages → Source must be set to
 > **GitHub Actions**. Until that is flipped the workflow runs green but the live
-> site still comes from the native build.
+> site still comes from the native build. **After flipping**: delete the
+> `refresh-search-index` recipe, re-add `/pagefind/` to `.gitignore`, and
+> `git rm -r --cached pagefind`.
 
 ## Code
 

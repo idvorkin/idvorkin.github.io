@@ -444,6 +444,21 @@ build-search-only:
 # Backwards-compatible alias — muscle memory from the Algolia days.
 update-search: build-search
 
+# INTERIM (until Pages -> Source is "GitHub Actions"): rebuild the search index
+# and commit it, so the native Pages build ships fresh full-text search.
+# Run at whatever cadence — the index only drifts as much as published content.
+# Once the Actions deploy is live, delete this recipe and re-gitignore /pagefind/.
+refresh-search-index: build-search
+    #!/usr/bin/env sh
+    set -eu
+    git add pagefind
+    if git diff --cached --quiet -- pagefind; then
+        echo "✓ Search index unchanged — nothing to commit"
+    else
+        git commit -m "Refresh committed Pagefind index (interim manual publish)" -- pagefind
+        echo "✅ Index refreshed and committed — push (or PR) to publish"
+    fi
+
 update-ig66:
     python3 old_blog/transform_blogger_export.py export-all > _ig66/ig66-export.json
 
