@@ -62,16 +62,16 @@ true %}
     _cap = _p[1] | strip %}
     <a
       class="tl-strip-item glightbox"
-      href="/images/{{ _src }}"
+      href="/images/{{ _src | escape }}"
       data-gallery="{{ include.gallery | default: 'timeline' }}"
-      data-description="{{ _cap }}"
+      data-description="{{ _cap | escape }}"
     >
       <img
-        src="/images/{{ _src }}"
-        alt="Timeline day-map — {{ _cap }}"
+        src="/images/{{ _src | escape }}"
+        alt="Timeline day-map — {{ _cap | escape }}"
         loading="lazy"
       />
-      <span class="tl-strip-cap">{{ _cap }}</span>
+      <span class="tl-strip-cap">{{ _cap | escape }}</span>
     </a>
     {% endfor %}
   </div>
