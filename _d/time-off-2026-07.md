@@ -32,7 +32,7 @@ INSTRUCTIONS FOR CLAUDE — recap status (2026-08-03, rev 3)
 
 > 🗺️ **Trip map & city guide:** [Scandinavian Whirlwind 2026 →](https://idvorkin-ai-tools.github.io/scandinavia-2026/) — one page per stop (Iceland → Copenhagen → Stockholm → Oslo → fjords → Amsterdam), with things to do, hours, and a live weather table.
 
-For context on why I take time off: [/time-off](/time-off).
+For context on why I take time off: [time off is a skill](/time-off) — vegetating _feels_ like rest while it quietly starves the roles that make you _you_, so I keep the habits and re-stack the roles work leaves hungry.
 
 ## Why I'm taking this time off — ranked
 
@@ -42,9 +42,7 @@ I wrote down what I'm actually here for, in order — and then the trip rearrang
 
 1. **Deepen my relationship with Amelia and Tori** — quality time over mere presence.
 2. **Really meet whoever we're traveling with** — I put reasonable odds our kids end up woven into each other's lives for a long while. Good chance to say hello.
-3. **Escape.**
-
-**But it turns out** — on #3, I had nothing to escape from. Amazingly, no work stress and no PSC stress: for once my [body was home and my mind stayed home too](/mind-at-work). Work boxed itself this time — I'd just moved to an IC role at [Meta's AI Lab](/meta#moving-to-metas-ai-lab-2026), so there were no calibrations to sweat and the old [Calibration Collapse](/y26) trap never fired. Take away the consuming and there was simply nothing left to run from.
+3. **Escape** — except it turned out I had nothing to escape from. Amazingly, no work stress and no PSC stress: for once my [body was home and my mind stayed home too](/mind-at-work). Work boxed itself this time — I'd just moved to an IC role at [Meta's AI Lab](/meta#moving-to-metas-ai-lab-2026), so there were no calibrations to sweat and the old [Calibration Collapse](/y26) trap never fired. Take away the consuming and there was simply nothing left to run from.
 
 **What I didn't expect:**
 
@@ -57,6 +55,16 @@ I wrote down what I'm actually here for, in order — and then the trip rearrang
 <!-- prettier-ignore-end -->
 
 4 and 5 are the interesting ones, and they're linked: the one real sacrifice I've made to AI is that the [Dealer of Smiles and Wonder](/joy) just stopped showing up. Out here, with the screens quiet, he walked right back in — the guy underneath was someone I'd been missing.
+
+## How I tried to do this trip
+
+One rule underneath all of it: [be where my feet are](/awareness). Three tests kept me honest —
+
+1. **Whose role does it grow?** Drift on a trip flows toward what you're already good at — work, optimizing, the phone. Spend the days on the open rooms: the kids, wonder, Tori. Not the finished ones.
+2. **Build vs. use?** Researching the perfect restaurant isn't eating the meal. Optimizing the trip isn't living it.
+3. **When?** Anything that pulls me out of the moment — phone, work email, even shooting everything through a camera — lives in the margins. The awake hours belong to the people I'm with.
+
+The sharpest test was how I used AI on the road. I wrote that one up on its own: [my AI policy](/ai-policy). And when I did reach back to the dev box, physics sent a bill: [the speed of light shows up as a number](/life-journal#speed-of-light-from-sweden) — ~170 ms across the Atlantic.
 
 ## How it actually went
 
@@ -215,19 +223,5 @@ _From the plan — the Timeline doesn't show these:_ renting bikes, the Anne Fra
 {% include repo_image.html src="timeline-2026-07-19-flight-home.webp" %}
 
 _And the Timeline for Sun Jul 19 — the long hop home._
-
-## How I tried to do this trip
-
-One rule underneath all of it: [be where my feet are](/awareness). Three tests kept me honest —
-
-1. **Whose role does it grow?** Drift on a trip flows toward what you're already good at — work, optimizing, the phone. Spend the days on the open rooms: the kids, wonder, Tori. Not the finished ones.
-2. **Build vs. use?** Researching the perfect restaurant isn't eating the meal. Optimizing the trip isn't living it.
-3. **When?** Anything that pulls me out of the moment — phone, work email, even shooting everything through a camera — lives in the margins. The awake hours belong to the people I'm with.
-
-The sharpest test was how I used AI on the road. I wrote that one up on its own: [my AI policy](/ai-policy). And when I did reach back to the dev box, physics sent a bill: [the speed of light shows up as a number](/life-journal#speed-of-light-from-sweden) — ~170 ms across the Atlantic.
-
-## Related
-
-{% include summarize-page.html src="/time-off" %}
 
 _Started ~6 weeks pre-trip; the recap sections were written on the road, and the place lists were trued up afterward against my Google Maps Timeline. Back home Jul 19._
