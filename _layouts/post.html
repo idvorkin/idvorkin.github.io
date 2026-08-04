@@ -25,14 +25,9 @@
             <a href="/ig66"> Goto All Posts </a>
             {% else %} {% include tags.html %} {% endif %}
           </div>
-          <div
-            id="content-holder"
-            class="pretty-first-para"
-            {%
-            include
-            pagefind-attrs.html
-            %}
-          >
+          <!-- Liquid include must stay on one line inside the tag; prettier would split it -->
+          <!-- prettier-ignore -->
+          <div id="content-holder" class="pretty-first-para" {% include pagefind-attrs.html %}>
             <!-- TOC duplicates every heading; indexing it would double-count them -->
             <div data-pagefind-ignore>{% include toc.html %}</div>
             {{ content }}

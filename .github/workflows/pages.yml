@@ -25,16 +25,18 @@ concurrency:
   # Don't cancel a deploy midway — let it finish and supersede on the next run.
   cancel-in-progress: false
 
+# Deploy credentials live on the deploy job only — build runs third-party
+# tooling (pagefind off npm) and needs nothing beyond repo read.
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
 
       - uses: ruby/setup-ruby@v1
         with:
@@ -67,6 +69,9 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

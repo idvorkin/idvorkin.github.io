@@ -201,6 +201,20 @@ describe("Search Module", () => {
       });
       expect(html).toBe("<div>Invalid result</div>");
     });
+
+    it("escapes double quotes in the URL so it cannot break out of attributes", () => {
+      // isValidUrl accepts anything starting with "/", including quotes. A bare
+      // escapeHtml leaves `"` intact, which would close data-url/href and let
+      // the rest of the URL inject attributes like an event handler.
+      const html = renderSearchHit({
+        url: '/x" onmouseover="alert(1)',
+        title: "quoted",
+        excerpt: "",
+        source: "pagefind",
+      });
+      expect(html).not.toContain('onmouseover="alert(1)"');
+      expect(html).toContain("&quot;");
+    });
   });
 
   describe("searchPagefind", () => {
@@ -374,6 +388,24 @@ describe("Search Module", () => {
       const sources = getSources({ query: "kettlebell" });
       expect(sources).toHaveLength(1);
       expect(sources[0].sourceId).toBe("featured_posts");
+    });
+
+    it("honors featuredCount as the search result limit", async () => {
+      // Regression: this used to be Math.max(featuredCount, 10), which silently
+      // ignored any caller asking for fewer than 10 results.
+      pagefindMock.options.mockResolvedValue(undefined);
+      pagefindMock.search.mockResolvedValue({
+        results: Array.from({ length: 25 }, (_, i) => ({
+          data: async () => ({ url: `/p${i}.html`, meta: { title: `P${i}` }, excerpt: "" }),
+        })),
+      });
+      vi.stubGlobal("fetch", vi.fn().mockResolvedValue({ ok: true, json: async () => [] }));
+
+      await CreateAutoComplete("autocomplete", { featuredCount: 2 });
+      const { getSources } = vi.mocked(window["@algolia/autocomplete-js"].autocomplete).mock.calls[0][0];
+
+      const items = await getSources({ query: "p" })[0].getItems();
+      expect(items).toHaveLength(2);
     });
   });
 });

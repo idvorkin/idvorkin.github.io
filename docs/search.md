@@ -27,6 +27,15 @@ title contains "meditation".
 
 Results merge in `searchBlog()`, Pagefind first, deduped by URL.
 
+**A single nonsense word still returns results.** Pagefind progressively
+shortens the _last_ query word until something matches (search-as-you-type), so
+`"xyzabc123nonsense"` degrades to `"xyz"` and matches pages containing "XYZ".
+There is no supported off switch, and score thresholds don't separate these from
+real matches (measured: nonsense can outscore legitimate prefix queries).
+Non-final words are never shortened, so multi-word nonsense returns nothing.
+Accepted as inherent to Pagefind rather than fought with fragile filtering that
+could drop legitimate stemmed matches.
+
 ## Exclusions — read this before changing them
 
 **Excluded content is excluded at INDEX time, not query time.**

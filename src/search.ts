@@ -53,6 +53,15 @@ function escapeHtml(text: string): string {
 }
 
 /**
+ * Escapes a value for a double-quoted HTML attribute. escapeHtml alone is not
+ * enough there: textContent -> innerHTML escapes & < > but leaves `"` intact,
+ * which would let a quote in the value close the attribute.
+ */
+function escapeAttr(value: string): string {
+  return escapeHtml(value).replace(/"/g, "&quot;");
+}
+
+/**
  * Helper function to validate URLs
  */
 function isValidUrl(url: string): boolean {
@@ -273,7 +282,7 @@ export function renderSearchHit(hit: ISearchResult): string {
     console.warn("Invalid URL skipped in renderSearchHit:", hit.url);
     return "<div>Invalid result</div>";
   }
-  const safeUrl = escapeHtml(hit.url);
+  const safeUrl = escapeAttr(hit.url);
   return `
            <span data-url="${safeUrl}" style="cursor: pointer;">
               <b> <a href="${safeUrl}">${escapeHtml(hit.title)}</a></b> <span>${excerptHtml(hit)}</span>
@@ -418,8 +427,8 @@ export async function GetRandomSearchResults(count = 3) {
         return createElement("div", {
           dangerouslySetInnerHTML: {
             __html: `
-            <span data-url="${escapeHtml(item.url)}" style="cursor: pointer;">
-           <b> <a href="${escapeHtml(item.url)}">${escapeHtml(item.title)}</a></b>
+            <span data-url="${escapeAttr(item.url)}" style="cursor: pointer;">
+           <b> <a href="${escapeAttr(item.url)}">${escapeHtml(item.title)}</a></b>
             <span>${escapeHtml(item.description)}</span>
             </span>
             `,
@@ -467,8 +476,8 @@ export async function GetRecentSearchResults(count = 4) {
         return createElement("div", {
           dangerouslySetInnerHTML: {
             __html: `
-            <span data-url="${escapeHtml(item.url)}" style="cursor: pointer;">
-           <b> <a href="${escapeHtml(item.url)}">${escapeHtml(item.title)}</a></b>
+            <span data-url="${escapeAttr(item.url)}" style="cursor: pointer;">
+           <b> <a href="${escapeAttr(item.url)}">${escapeHtml(item.title)}</a></b>
             <span>${escapeHtml(item.description)}</span>
             </span>
             `,
@@ -540,7 +549,7 @@ export async function CreateAutoComplete(
   autocomplete_id: string,
   options: { featuredCount?: number; recentCount?: number; randomCount?: number } = {},
 ) {
-  const { featuredCount = 3, recentCount = 4, randomCount = 3 } = options;
+  const { featuredCount = 10, recentCount = 4, randomCount = 3 } = options;
 
   const autocomplete = getAutocomplete();
   if (!autocomplete) {
@@ -560,7 +569,7 @@ export async function CreateAutoComplete(
     if (isEmptySearch) {
       return [recentSearchResults, randomSearchResults];
     }
-    return [GetLocalSearchResults(query, Math.max(featuredCount, 10))];
+    return [GetLocalSearchResults(query, featuredCount)];
   }
 
   // Make sure we have the element

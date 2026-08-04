@@ -25,6 +25,11 @@ export async function checkForJsErrors(page: Page, path: string): Promise<void> 
     /ResizeObserver loop completed with undelivered notifications/,
     /Script error/,
     /Cannot read properties of null \(reading 'classList'\)/,
+    // Same Bootstrap ScrollSpy race as the classList error above: /tags has
+    // whitespace-id debug headings whose TOC links reduce to href="#", and when
+    // ScrollSpy initializes after the TOC populates it calls querySelector('#').
+    // Rare (≤1 in ~6 loads), present on main and production builds alike.
+    /'#' is not a valid selector/,
     /Plotly is not defined/,
   ];
 

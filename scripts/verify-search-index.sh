@@ -61,14 +61,20 @@ else
 fi
 
 # --- 3. Explicitly excluded permalinks ---------------------------------------
+excluded_ok=1
 for slug in changelog positive-mitzvahs negative-mitzvahs; do
     for candidate in "$SITE/$slug.html" "$SITE/$slug/index.html"; do
         if [ -f "$candidate" ] && grep -q "data-pagefind-body" "$candidate" 2>/dev/null; then
             err "/$slug is marked indexable but is in site.search.exclude_permalinks"
+            excluded_ok=0
         fi
     done
 done
-ok "explicitly excluded permalinks are not indexable"
+# if-form, not `[ ... ] && ok`: under set -e a false test in an AND-list
+# aborts the script before checks 4-6 run.
+if [ "$excluded_ok" -eq 1 ]; then
+    ok "explicitly excluded permalinks are not indexable"
+fi
 
 # --- 4. Real content IS indexed (guards against excluding everything) --------
 indexable=$(grep -rl "data-pagefind-body" "$SITE" --include='*.html' 2>/dev/null | wc -l | tr -d ' ')

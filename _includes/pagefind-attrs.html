@@ -27,6 +27,14 @@ closing tag injected into the output — which then ships into every page.
 {%- if page.collection == 'ig66' -%}{%- assign pf_exclude = true -%}{%- endif -%}
 {%- if page.tags contains 'family-journal' -%}{%- assign pf_exclude = true -%}{%- endif -%}
 {%- if page.search_exclude -%}{%- assign pf_exclude = true -%}{%- endif -%}
+{%- comment -%}
+Both page.permalink and page.url are tested, matching search-titles.json:
+page.permalink is the raw frontmatter value (empty when the permalink comes
+from _config.yml defaults, trailing slash preserved as written), while
+page.url is what Jekyll actually serves. Testing only one lets the two
+indexes disagree about which pages are excluded.
+{%- endcomment -%}
 {%- if site.search.exclude_permalinks contains page.permalink -%}{%- assign pf_exclude = true -%}{%- endif -%}
+{%- if site.search.exclude_permalinks contains page.url -%}{%- assign pf_exclude = true -%}{%- endif -%}
 {%- if page.title == nil or page.title == empty -%}{%- assign pf_exclude = true -%}{%- endif -%}
 {%- if pf_exclude -%}data-pagefind-ignore{%- else -%}data-pagefind-body data-pagefind-meta="title:{{ page.title | escape }}"{%- endif -%}

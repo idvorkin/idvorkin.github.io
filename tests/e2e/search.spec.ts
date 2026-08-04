@@ -54,7 +54,11 @@ test.describe("Homepage search functionality", () => {
     // fixed wait + count(): the first search of a page load also downloads the
     // Pagefind runtime, wasm, and index chunks, which is far slower than the
     // steady-state query it used to be measuring.
-    const searchResults = page.locator("#featured-results .result-item");
+    //
+    // Targets the result LINK: the "Searching..." and "No results found..."
+    // placeholders are also .result-item divs, so a bare .result-item locator
+    // passes with zero real results. Only rendered hits contain an <a>.
+    const searchResults = page.locator("#featured-results .result-item a");
     await expect(searchResults.first()).toBeVisible({ timeout: 15000 });
     expect(await searchResults.count()).toBeGreaterThan(0);
   });
@@ -65,15 +69,19 @@ test.describe("Homepage search functionality", () => {
     const searchInput = page.locator("#search-input");
     await searchInput.fill("ketlebell");
 
-    const searchResults = page.locator("#featured-results .result-item");
+    const searchResults = page.locator("#featured-results .result-item a");
     await expect(searchResults.first()).toBeVisible({ timeout: 15000 });
     await expect(page.locator("#featured-results")).toContainText(/kettlebell/i);
   });
 
   test("Shows no results for nonsense search", async ({ page }) => {
-    // Type nonsense in the search box
+    // TWO nonsense words, deliberately. Pagefind progressively shortens the
+    // LAST query word until something matches (search-as-you-type), so a single
+    // nonsense word like "xyzabc123nonsense" degrades to "xyz" and matches real
+    // pages — by design, with no off switch. Non-final words are not shortened,
+    // so an all-nonsense multi-word query is the deterministic zero-result case.
     const searchInput = page.locator("#search-input");
-    await searchInput.fill("xyzabc123nonsense");
+    await searchInput.fill("qzxvjw wkjqp");
 
     // Check that it shows no results message (retrying assertion covers the
     // first-search index download)

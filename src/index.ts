@@ -31,8 +31,6 @@ import {
   get_recent_posts,
   renderSearchHit,
   searchBlog,
-  searchPagefind,
-  searchTitles,
 } from "./search";
 // Import shared utilities
 import {
@@ -143,10 +141,10 @@ export {
   get_random_post,
   get_recent_posts,
   get_random_posts_batch,
-  // Local search (Pagefind + MiniSearch)
+  // Local search (Pagefind + MiniSearch). searchPagefind/searchTitles stay
+  // module-private — exporting them would let callers bypass searchBlog's
+  // merge, dedupe, and limit logic.
   searchBlog,
-  searchPagefind,
-  searchTitles,
   renderSearchHit,
   // Recent posts export
   initRecentAllPosts,
