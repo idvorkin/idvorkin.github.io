@@ -1,0 +1,109 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for idvorkin.github.io/pagefind/pagefind-modular-ui.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">idvorkin.github.io/pagefind</a> pagefind-modular-ui.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>0/8</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/1</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/1</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>0/8</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >(()=&gt;{var w=Object.defineProperty;var b=(i,e)=&gt;{for(var t in e)w(i,t,{get:e[t],enumerable:!0})};var f={};b(f,{FilterPills:()=&gt;c,Input:()=&gt;a,Instance:()=&gt;p,ResultList:()=&gt;o,Summary:()=&gt;h});var r=class i{constructor(e){this.element=document.createElement(e)}id(e){return this.element.id=e,this}class(e){return this.element.classList.add(e),this}attrs(e){for(let[t,s]of Object.entries(e))this.element.setAttribute(t,s);return this}text(e){return this.element.innerText=e,this}html(e){return this.element.innerHTML=e,this}handle(e,t){return this.element.addEventListener(e,t),this}addTo(e){return e instanceof i?e.element.appendChild(this.element):e.appendChild(this.element),this.element}};var T=async(i=100)=&gt;new Promise(e=&gt;setTimeout(e,i)),a=class{constructor(e={}){if(this.inputEl=null,this.clearEl=null,this.instance=null,this.searchID=0,this.debounceTimeoutMs=e.debounceTimeoutMs??300,e.inputElement){if(e.containerElement){console.warn("[Pagefind Input component]: inputElement and containerElement both supplied. Ignoring the container option.");return}this.initExisting(e.inputElement)}else if(e.containerElement)this.initContainer(e.containerElement);else{console.error("[Pagefind Input component]: No selector supplied for containerElement or inputElement");return}this.inputEl.addEventListener("input",async t=&gt;{if(this.instance&amp;&amp;typeof t?.target?.value=="string"){this.updateState(t.target.value);let s=++this.searchID;if(await T(this.debounceTimeoutMs),s!==this.searchID)return null;this.instance?.triggerSearch(t.target.value)}}),this.inputEl.addEventListener("keydown",t=&gt;{t.key==="Escape"&amp;&amp;(++this.searchID,this.inputEl.value="",this.instance?.triggerSearch(""),this.updateState("")),t.key==="Enter"&amp;&amp;t.preventDefault()}),this.inputEl.addEventListener("focus",()=&gt;{this.instance?.triggerLoad()})}initContainer(e){let t=document.querySelector(e);if(!t){console.error(`[Pagefind Input component]: No container found for ${e} selector`);return}if(t.tagName==="INPUT")console.warn(`[Pagefind Input component]: Encountered input element for ${e} when a container was expected`),console.warn("[Pagefind Input component]: Treating containerElement option as inputElement and proceeding"),this.initExisting(e);else{t.innerHTML="";let s=0;for(;document.querySelector(`#pfmod-input-${s}`);)s+=1;let n=new r("form").class("pagefind-modular-input-wrapper").attrs({role:"search","aria-label":"Search this site",action:"javascript:void(0);"});new r("label").attrs({for:`pfmod-input-${s}`,"data-pfmod-sr-hidden":"true"}).text("Search this site").addTo(n),this.inputEl=new r("input").id(`pfmod-input-${s}`).class("pagefind-modular-input").attrs({autocapitalize:"none",enterkeyhint:"search"}).addTo(n),this.clearEl=new r("button").class("pagefind-modular-input-clear").attrs({"data-pfmod-suppressed":"true"}).text("Clear").handle("click",()=&gt;{this.inputEl.value="",this.instance.triggerSearch(""),this.updateState("")}).addTo(n),n.addTo(t)}}initExisting(e){let t=document.querySelector(e);if(!t){console.error(`[Pagefind Input component]: No input element found for ${e} selector`);return}if(t.tagName!=="INPUT"){console.error(`[Pagefind Input component]: Expected ${e} to be an &lt;input&gt; element`);return}this.inputEl=t}updateState(e){this.clearEl&amp;&amp;(e&amp;&amp;e?.length?this.clearEl.removeAttribute("data-pfmod-suppressed"):this.clearEl.setAttribute("data-pfmod-suppressed","true"))}register(e){this.instance=e,this.instance.on("search",(t,s)=&gt;{this.inputEl&amp;&amp;document.activeElement!==this.inputEl&amp;&amp;(this.inputEl.value=t,this.updateState(t))})}focus(){this.inputEl&amp;&amp;this.inputEl.focus()}};var g=i=&gt;{if(i instanceof Element)return[i];if(Array.isArray(i)&amp;&amp;i.every(e=&gt;e instanceof Element))return i;if(typeof i=="string"||i instanceof String){let e=document.createElement("div");return e.innerHTML=i,[...e.childNodes]}else return console.error(`[Pagefind ResultList component]: Expected template function to return an HTML element or string, got ${typeof i}`),[]},v=()=&gt;{let i=(e=30)=&gt;". ".repeat(Math.floor(10+Math.random()*e));return`&lt;li class="pagefind-modular-list-result"&gt;</span></span></span>
+<span class="cstat-no" title="statement not covered" >    &lt;div class="pagefind-modular-list-thumb" data-pfmod-loading&gt;&lt;/div&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;div class="pagefind-modular-list-inner"&gt;</span>
+<span class="cstat-no" title="statement not covered" >        &lt;p class="pagefind-modular-list-title" data-pfmod-loading&gt;${i(30)}&lt;/p&gt;</span>
+<span class="cstat-no" title="statement not covered" >        &lt;p class="pagefind-modular-list-excerpt" data-pfmod-loading&gt;${i(40)}&lt;/p&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;/div&gt;</span>
+<span class="cstat-no" title="statement not covered" >&lt;/li&gt;`},y=(i,e)=&gt;{let t=new r("li").class("pagefind-modular-list-result");if(e){let l=new r("div").class("pagefind-modular-list-thumb").addTo(t);i?.meta?.image&amp;&amp;new r("img").class("pagefind-modular-list-image").attrs({src:i.meta.image,alt:i.meta.image_alt||i.meta.title}).addTo(l)}let s=new r("div").class("pagefind-modular-list-inner").addTo(t),n=new r("p").class("pagefind-modular-list-title").addTo(s);return new r("a").class("pagefind-modular-list-link").text(i.meta?.title).attrs({href:i.meta?.url||i.url}).addTo(n),new r("p").class("pagefind-modular-list-excerpt").html(i.excerpt).addTo(s),t.element},E=i=&gt;{if(!(i instanceof HTMLElement))return null;let e=window.getComputedStyle(i).overflowY;return e!=="visible"&amp;&amp;e!=="hidden"?i:E(i.parentNode)},d=class{constructor(e={}){this.rawResult=e.result,this.placeholderNodes=e.placeholderNodes,this.resultFn=e.resultFn,this.intersectionEl=e.intersectionEl,this.showImages=e.showImages,this.result=null,this.waitForIntersection()}waitForIntersection(){if(!this.placeholderNodes?.length)return;let e={root:this.intersectionEl,rootMargin:"0px",threshold:.01};new IntersectionObserver((s,n)=&gt;{this.result===null&amp;&amp;s?.[0]?.isIntersecting&amp;&amp;(this.load(),n.disconnect())},e).observe(this.placeholderNodes[0])}async load(){if(!this.placeholderNodes?.length)return;this.result=await this.rawResult.data();let e=this.resultFn(this.result,this.showImages),t=g(e);for(;this.placeholderNodes.length&gt;1;)this.placeholderNodes.pop().remove();this.placeholderNodes[0].replaceWith(...t)}},o=class{constructor(e){if(this.intersectionEl=document.body,this.containerEl=null,this.results=[],this.placeholderTemplate=e.placeholderTemplate??v,this.resultTemplate=e.resultTemplate??y,this.showImages=e.showImages??!0,e.containerElement)this.initContainer(e.containerElement);else{console.error("[Pagefind ResultList component]: No selector supplied for containerElement");return}}initContainer(e){let t=document.querySelector(e);if(!t){console.error(`[Pagefind ResultList component]: No container found for ${e} selector`);return}this.containerEl=t}append(e){for(let t of e)this.containerEl.appendChild(t)}register(e){e.on("results",t=&gt;{this.containerEl&amp;&amp;(this.containerEl.innerHTML="",this.intersectionEl=E(this.containerEl),this.results=t.results.map(s=&gt;{let n=g(this.placeholderTemplate());return this.append(n),new d({result:s,placeholderNodes:n,resultFn:this.resultTemplate,intersectionEl:this.intersectionEl,showImages:this.showImages})}))}),e.on("loading",()=&gt;{this.containerEl&amp;&amp;(this.containerEl.innerHTML="")})}};var h=class{constructor(e={}){if(this.containerEl=null,this.defaultMessage=e.defaultMessage??"",this.term="",e.containerElement)this.initContainer(e.containerElement);else{console.error("[Pagefind Summary component]: No selector supplied for containerElement");return}}initContainer(e){let t=document.querySelector(e);if(!t){console.error(`[Pagefind Summary component]: No container found for ${e} selector`);return}this.containerEl=t,this.containerEl.innerText=this.defaultMessage}register(e){e.on("search",(t,s)=&gt;{this.term=t}),e.on("results",t=&gt;{if(!this.containerEl||!t)return;if(!this.term){this.containerEl.innerText=this.defaultMessage;return}let s=t?.results?.length??0;this.containerEl.innerText=`${s} result${s===1?"":"s"} for ${this.term}`}),e.on("loading",()=&gt;{this.containerEl&amp;&amp;(this.containerEl.innerText=`Searching for ${this.term}...`)})}};var c=class{constructor(e={}){if(this.instance=null,this.wrapper=null,this.pillContainer=null,this.available={},this.selected=["All"],this.total=0,this.filterMemo="",this.filter=e.filter,this.ordering=e.ordering??null,this.alwaysShow=e.alwaysShow??!1,this.selectMultiple=e.selectMultiple??!1,!this.filter?.length){console.error("[Pagefind FilterPills component]: No filter option supplied, nothing to display");return}if(e.containerElement)this.initContainer(e.containerElement);else{console.error("[Pagefind FilterPills component]: No selector supplied for containerElement");return}}initContainer(e){let t=document.querySelector(e);if(!t){console.error(`[Pagefind FilterPills component]: No container found for ${e} selector`);return}t.innerHTML="";let s=`pagefind_modular_filter_pills_${this.filter}`,n=new r("div").class("pagefind-modular-filter-pills-wrapper").attrs({role:"group","aria-labelledby":s});this.alwaysShow||n.attrs({"data-pfmod-hidden":!0}),new r("div").id(s).class("pagefind-modular-filter-pills-label").attrs({"data-pfmod-sr-hidden":!0}).text(`Filter results by ${this.filter}`).addTo(n),this.pillContainer=new r("div").class("pagefind-modular-filter-pills").addTo(n),this.wrapper=n.addTo(t)}update(){let e=this.available.map(t=&gt;t[0]).join("~");e==this.filterMemo?this.updateExisting():(this.renderNew(),this.filterMemo=e)}pushFilters(){let e=this.selected.filter(t=&gt;t!=="All");this.instance.triggerFilter(this.filter,e)}pillInner(e,t){return this.total?`&lt;span aria-label="${e}" data-pfmod-pill-count="${t}"&gt;${e} (${t})&lt;/span&gt;`:`&lt;span aria-label="${e}"&gt;${e}&lt;/span&gt;`}renderNew(){this.available.forEach(([e,t])=&gt;{new r("button").class("pagefind-modular-filter-pill").html(this.pillInner(e,t)).attrs({"aria-pressed":this.selected.includes(e),type:"button"}).handle("click",()=&gt;{e==="All"?this.selected=["All"]:this.selected.includes(e)?this.selected=this.selected.filter(s=&gt;s!==e):this.selectMultiple?this.selected.push(e):this.selected=[e],this.selected?.length?this.selected?.length&gt;1&amp;&amp;(this.selected=this.selected.filter(s=&gt;s!=="All")):this.selected=["All"],this.update(),this.pushFilters()}).addTo(this.pillContainer)})}updateExisting(){let e=[...this.pillContainer.childNodes];this.available.forEach(([t,s],n)=&gt;{e[n].innerHTML=this.pillInner(t,s),e[n].setAttribute("aria-pressed",this.selected.includes(t))})}register(e){this.instance=e,this.instance.on("filters",t=&gt;{if(!this.pillContainer)return;this.selectMultiple?t=t.available:t=t.total;let s=t[this.filter];if(!s){console.warn(`[Pagefind FilterPills component]: No possible values found for the ${this.filter} filter`);return}this.available=Object.entries(s),Array.isArray(this.ordering)?this.available.sort((n,l)=&gt;{let m=this.ordering.indexOf(n[0]),_=this.ordering.indexOf(l[0]);return(m===-1?1/0:m)-(_===-1?1/0:_)}):this.available.sort((n,l)=&gt;n[0].localeCompare(l[0])),this.available.unshift(["All",this.total]),this.update()}),e.on("results",t=&gt;{this.pillContainer&amp;&amp;(this.total=t?.unfilteredResultCount||0,this.available?.[0]?.[0]==="All"&amp;&amp;(this.available[0][1]=this.total),this.total||this.alwaysShow?this.wrapper.removeAttribute("data-pfmod-hidden"):this.wrapper.setAttribute("data-pfmod-hidden","true"),this.update())})}};var P=async(i=50)=&gt;await new Promise(e=&gt;setTimeout(e,i)),u;try{document?.currentScript&amp;&amp;document.currentScript.tagName.toUpperCase()==="SCRIPT"&amp;&amp;(u=new URL(document.currentScript.src).pathname.match(/^(.*\/)(?:pagefind-)?modular-ui.js.*$/)[1])}catch{u="/pagefind/"}var p=class{constructor(e={}){this.__pagefind__=null,this.__initializing__=null,this.__searchID__=0,this.__hooks__={search:[],filters:[],loading:[],results:[]},this.components=[],this.searchTerm="",this.searchFilters={},this.searchResult={},this.availableFilters=null,this.totalFilters=null,this.options={bundlePath:e.bundlePath??u,mergeIndex:e.mergeIndex??[]},delete e.bundlePath,delete e.resetStyles,delete e.processResult,delete e.processTerm,delete e.debounceTimeoutMs,delete e.mergeIndex,delete e.translations,this.pagefindOptions=e}add(e){e?.register?.(this),this.components.push(e)}on(e,t){if(!this.__hooks__[e]){let s=Object.keys(this.__hooks__).join(", ");console.error(`[Pagefind Composable]: Unknown event type ${e}. Supported events: [${s}]`);return}if(typeof t!="function"){console.error(`[Pagefind Composable]: Expected callback to be a function, received ${typeof t}`);return}this.__hooks__[e].push(t)}triggerLoad(){this.__load__()}triggerSearch(e){this.searchTerm=e,this.__dispatch__("search",e,this.searchFilters),this.__search__(e,this.searchFilters)}triggerSearchWithFilters(e,t){this.searchTerm=e,this.searchFilters=t,this.__dispatch__("search",e,t),this.__search__(e,t)}triggerFilters(e){this.searchFilters=e,this.__dispatch__("search",this.searchTerm,e),this.__search__(this.searchTerm,e)}triggerFilter(e,t){this.searchFilters=this.searchFilters||{},this.searchFilters[e]=t,this.__dispatch__("search",this.searchTerm,this.searchFilters),this.__search__(this.searchTerm,this.searchFilters)}__dispatch__(e,...t){this.__hooks__[e]?.forEach(s=&gt;s?.(...t))}async __clear__(){this.__dispatch__("results",{results:[],unfilteredTotalCount:0}),this.availableFilters=await this.__pagefind__.filters(),this.totalFilters=this.availableFilters,this.__dispatch__("filters",{available:this.availableFilters,total:this.totalFilters})}async __search__(e,t){this.__dispatch__("loading"),await this.__load__();let s=++this.__searchID__;if(!e||!e.length)return this.__clear__();let n=await this.__pagefind__.search(e,{filters:t});n&amp;&amp;this.__searchID__===s&amp;&amp;(n.filters&amp;&amp;Object.keys(n.filters)?.length&amp;&amp;(this.availableFilters=n.filters,this.totalFilters=n.totalFilters,this.__dispatch__("filters",{available:this.availableFilters,total:this.totalFilters})),this.searchResult=n,this.__dispatch__("results",this.searchResult))}async __load__(){if(this.__initializing__){for(;!this.__pagefind__;)await P(50);return}if(this.__initializing__=!0,!this.__pagefind__){let e;try{e=await import(`${this.options.bundlePath}pagefind.js`)}catch(t){console.error(t),console.error([`Pagefind couldn't be loaded from ${this.options.bundlePath}pagefind.js`,"You can configure this by passing a bundlePath option to PagefindComposable Instance"].join(`</span>
+<span class="cstat-no" title="statement not covered" >`)),document?.currentScript&amp;&amp;document.currentScript.tagName.toUpperCase()==="SCRIPT"?console.error(`[DEBUG: Loaded from ${document.currentScript?.src??"bad script location"}]`):console.error("no known script location")}await e.options(this.pagefindOptions||{});for(let t of this.options.mergeIndex){if(!t.bundlePath)throw new Error("mergeIndex requires a bundlePath parameter");let s=t.bundlePath;delete t.bundlePath,await e.mergeIndex(s,t)}this.__pagefind__=e}this.availableFilters=await this.__pagefind__.filters(),this.totalFilters=this.availableFilters,this.__dispatch__("filters",{available:this.availableFilters,total:this.totalFilters})}};window.PagefindModularUI=f;})();</span>
+&nbsp;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-08-04T15:38:14.681Z
+            </div>
+        <script src="../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../sorter.js"></script>
+        <script src="../../block-navigation.js"></script>
+    </body>
+</html>
+    
