@@ -1,0 +1,519 @@
+<!--
+  annotate.html — Igor's private blog annotation tool.
+
+  INERT BY DEFAULT. Readers get no UI, no network calls, and (aside from
+  this tiny script parse) no cost. Everything below is guarded by a
+  localStorage flag that only Igor ever sets.
+
+  Enable  : visit any post with ?annotate=1  (persists via localStorage)
+  Disable : visit any post with ?annotate=0
+  Toggle  : Cmd/Ctrl+Shift+A on desktop
+
+  Once enabled: select text -> a small "Comment" bubble appears near the
+  selection -> tap it -> type a note -> Save. Notes buffer in localStorage.
+  The "Review (N)" pill uploads the batch to a SECRET gist (description
+  `blog-review: <permalink>`) or copies it to the clipboard.
+
+  SECURITY: the GitHub PAT lives ONLY in this browser's localStorage under
+  `blogAnnotateToken`. It is never committed, never sent anywhere except
+  api.github.com. Use a fine-grained/classic token with the `gist` scope
+  ONLY — nothing else.
+
+  Larry reads the batches back with scripts/blog_review.py.
+-->
+
+<!--
+  Page identity is passed through data attributes rather than interpolated
+  into the <script> body: Liquid tags inside JS are not valid JS, and the
+  repo's prettier hook parses script contents.
+-->
+<div
+  id="blog-annot-meta"
+  data-permalink="{{ page.url }}"
+  data-title="{{ page.title | default: '' | escape }}"
+  hidden
+></div>
+
+<script>
+  (function () {
+    "use strict";
+
+    var FLAG_KEY = "blogAnnotate";
+    var TOKEN_KEY = "blogAnnotateToken";
+    var BUF_KEY = "blogAnnotateBuffer";
+    var CTX = 30; // chars of prefix/suffix context (W3C TextQuoteSelector)
+
+    // ---------------------------------------------------------------- flag
+    // Read the query string first so ?annotate=1 can turn the tool on for a
+    // browser that has never had it, and ?annotate=0 can turn it off again.
+    function readQueryFlag() {
+      try {
+        var v = new URLSearchParams(window.location.search).get("annotate");
+        if (v === null) return null;
+        return v === "1" || v === "true" || v === "on";
+      } catch (e) {
+        return null;
+      }
+    }
+
+    function enabled() {
+      try {
+        return localStorage.getItem(FLAG_KEY) === "1";
+      } catch (e) {
+        return false;
+      }
+    }
+
+    function setEnabled(on) {
+      try {
+        if (on) localStorage.setItem(FLAG_KEY, "1");
+        else localStorage.removeItem(FLAG_KEY);
+      } catch (e) {
+        /* private mode: nothing we can do */
+      }
+    }
+
+    var q = readQueryFlag();
+    if (q !== null) setEnabled(q);
+
+    // The keyboard toggle is the only listener a normal reader ever pays for.
+    // It is a single keydown handler; cost is indistinguishable from zero.
+    document.addEventListener("keydown", function (e) {
+      var key = e.key || "";
+      if ((e.metaKey || e.ctrlKey) && e.shiftKey && key.toLowerCase() === "a") {
+        e.preventDefault();
+        var next = !enabled();
+        setEnabled(next);
+        window.location.reload();
+      }
+    });
+
+    if (!enabled()) return; // <-- readers stop here
+
+    // --------------------------------------------------------- page identity
+    var meta = document.getElementById("blog-annot-meta");
+    var PERMALINK =
+      (meta && meta.dataset.permalink) || window.location.pathname;
+    var TITLE = (meta && meta.dataset.title) || document.title;
+
+    // ------------------------------------------------------------- storage
+    function loadBuffer() {
+      try {
+        var raw = localStorage.getItem(BUF_KEY);
+        if (!raw) return [];
+        var parsed = JSON.parse(raw);
+        return Array.isArray(parsed) ? parsed : [];
+      } catch (e) {
+        return [];
+      }
+    }
+
+    function saveBuffer(list) {
+      try {
+        localStorage.setItem(BUF_KEY, JSON.stringify(list));
+      } catch (e) {
+        alert("Could not save annotation (localStorage full or blocked).");
+      }
+    }
+
+    // ------------------------------------------------------------- selector
+    // Build the W3C TextQuoteSelector triple: exact quote plus ~30 chars of
+    // surrounding text. This is what lets the CLI find the same spot in the
+    // markdown source even though the rendered HTML differs from it.
+    //
+    // We walk the *text* of the article container rather than the DOM so the
+    // prefix/suffix cross element boundaries the way a reader perceives them.
+    function articleRoot() {
+      return (
+        document.getElementById("content-holder") ||
+        document.getElementById("main-content") ||
+        document.body
+      );
+    }
+
+    function selectorFromRange(range) {
+      var root = articleRoot();
+      var quote = range.toString();
+      if (!quote.trim()) return null;
+
+      var prefix = "";
+      var suffix = "";
+      try {
+        var pre = range.cloneRange();
+        pre.selectNodeContents(root);
+        pre.setEnd(range.startContainer, range.startOffset);
+        var preText = pre.toString();
+        prefix = preText.slice(Math.max(0, preText.length - CTX));
+
+        var post = range.cloneRange();
+        post.selectNodeContents(root);
+        post.setStart(range.endContainer, range.endOffset);
+        suffix = post.toString().slice(0, CTX);
+      } catch (e) {
+        // Selection escaped the article root (e.g. started in the sidebar).
+        // A bare quote still locates most of the time; the CLI reports the
+        // ones it can't find rather than guessing.
+      }
+
+      return { quote: quote, prefix: prefix, suffix: suffix };
+    }
+
+    // ------------------------------------------------------------------ UI
+    var style = document.createElement("style");
+    style.textContent = [
+      "#blog-annot-btn{position:absolute;z-index:99999;display:none;",
+      "padding:6px 12px;font:600 14px/1.2 system-ui,sans-serif;color:#fff;",
+      "background:#0b5ed7;border:0;border-radius:16px;cursor:pointer;",
+      "box-shadow:0 2px 8px rgba(0,0,0,.3);touch-action:manipulation}",
+      "#blog-annot-pill{position:fixed;right:14px;bottom:14px;z-index:99999;",
+      "display:flex;gap:6px;align-items:center;padding:8px 12px;",
+      "font:600 13px/1.2 system-ui,sans-serif;color:#fff;background:#212529;",
+      "border-radius:20px;box-shadow:0 2px 10px rgba(0,0,0,.35)}",
+      "#blog-annot-pill button{font:600 12px/1.2 system-ui,sans-serif;",
+      "padding:5px 9px;border:0;border-radius:12px;cursor:pointer;",
+      "background:#495057;color:#fff}",
+      "#blog-annot-pill button:disabled{opacity:.45;cursor:default}",
+      "#blog-annot-modal{position:fixed;inset:0;z-index:100000;display:none;",
+      "align-items:center;justify-content:center;background:rgba(0,0,0,.45);",
+      "padding:16px}",
+      "#blog-annot-card{width:100%;max-width:520px;background:#fff;color:#111;",
+      "border-radius:12px;padding:16px;font:14px/1.45 system-ui,sans-serif;",
+      "max-height:85vh;overflow:auto}",
+      "#blog-annot-card blockquote{margin:0 0 10px;padding:8px 10px;",
+      "background:#f1f3f5;border-left:3px solid #0b5ed7;font-style:italic;",
+      "max-height:9em;overflow:auto}",
+      "#blog-annot-card textarea{width:100%;min-height:110px;padding:8px;",
+      "font:14px/1.4 system-ui,sans-serif;border:1px solid #ced4da;",
+      "border-radius:8px;box-sizing:border-box}",
+      "#blog-annot-card .row{display:flex;gap:8px;justify-content:flex-end;",
+      "margin-top:10px;flex-wrap:wrap}",
+      "#blog-annot-card button{padding:8px 14px;border:0;border-radius:8px;",
+      "font:600 13px/1.2 system-ui,sans-serif;cursor:pointer}",
+      "#blog-annot-card .primary{background:#0b5ed7;color:#fff}",
+      "#blog-annot-card .ghost{background:#e9ecef;color:#212529}",
+      "#blog-annot-list{margin:10px 0 0;padding:0;list-style:none;",
+      "font-size:13px}",
+      "#blog-annot-list li{padding:6px 0;border-top:1px solid #e9ecef}",
+      "#blog-annot-note{margin-top:10px;font-size:12px;color:#495057;",
+      "word-break:break-all}",
+    ].join("");
+    document.head.appendChild(style);
+
+    var btn = document.createElement("button");
+    btn.id = "blog-annot-btn";
+    btn.type = "button";
+    btn.textContent = "💬 Comment";
+    document.body.appendChild(btn);
+
+    var pill = document.createElement("div");
+    pill.id = "blog-annot-pill";
+    pill.innerHTML =
+      '<span id="blog-annot-count">Review (0)</span>' +
+      '<button type="button" id="blog-annot-open">Open</button>';
+    document.body.appendChild(pill);
+
+    var modal = document.createElement("div");
+    modal.id = "blog-annot-modal";
+    modal.innerHTML = '<div id="blog-annot-card"></div>';
+    document.body.appendChild(modal);
+    var card = modal.firstChild;
+
+    function showModal(html) {
+      card.innerHTML = html;
+      modal.style.display = "flex";
+    }
+    function hideModal() {
+      modal.style.display = "none";
+      card.innerHTML = "";
+    }
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal) hideModal();
+    });
+
+    function refreshPill() {
+      document.getElementById("blog-annot-count").textContent =
+        "Review (" + loadBuffer().length + ")";
+    }
+    refreshPill();
+
+    function escapeHtml(s) {
+      return String(s).replace(/[&<>"']/g, function (c) {
+        return {
+          "&": "&amp;",
+          "<": "&lt;",
+          ">": "&gt;",
+          '"': "&quot;",
+          "'": "&#39;",
+        }[c];
+      });
+    }
+
+    // --------------------------------------------------------- capture flow
+    var pending = null;
+
+    function hideBtn() {
+      btn.style.display = "none";
+    }
+
+    function positionBtn(range) {
+      var rects = range.getClientRects();
+      var r = rects.length
+        ? rects[rects.length - 1]
+        : range.getBoundingClientRect();
+      if (!r || (!r.width && !r.height)) return hideBtn();
+      var top = r.bottom + window.scrollY + 8;
+      var left = r.left + window.scrollX;
+      // Keep the bubble on-screen on narrow phones.
+      var maxLeft = window.scrollX + document.documentElement.clientWidth - 130;
+      btn.style.top = top + "px";
+      btn.style.left =
+        Math.max(window.scrollX + 8, Math.min(left, maxLeft)) + "px";
+      btn.style.display = "block";
+    }
+
+    function onSelectionSettled() {
+      var sel = window.getSelection();
+      if (!sel || sel.isCollapsed || sel.rangeCount === 0) return hideBtn();
+      var range = sel.getRangeAt(0);
+      if (!range.toString().trim()) return hideBtn();
+      var sel_info = selectorFromRange(range);
+      if (!sel_info) return hideBtn();
+      pending = sel_info;
+      positionBtn(range);
+    }
+
+    // mouseup covers desktop; selectionchange (debounced) covers iOS Safari
+    // touch selection, where mouseup fires unreliably and the handles keep
+    // moving after the initial gesture.
+    document.addEventListener("mouseup", function () {
+      setTimeout(onSelectionSettled, 10);
+    });
+
+    var selTimer = null;
+    document.addEventListener("selectionchange", function () {
+      if (selTimer) clearTimeout(selTimer);
+      selTimer = setTimeout(onSelectionSettled, 350);
+    });
+
+    // Both, so a tap on the bubble registers immediately on iOS instead of
+    // waiting out the 300ms click delay (and losing the selection first).
+    ["click", "touchend"].forEach(function (evt) {
+      btn.addEventListener(evt, function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        if (pending) openComposer(pending);
+      });
+    });
+
+    function openComposer(sel_info) {
+      hideBtn();
+      showModal(
+        "<blockquote>" +
+          escapeHtml(sel_info.quote) +
+          "</blockquote>" +
+          '<textarea id="blog-annot-text" placeholder="What about this line?"></textarea>' +
+          '<div class="row">' +
+          '<button type="button" class="ghost" id="blog-annot-cancel">Cancel</button>' +
+          '<button type="button" class="primary" id="blog-annot-save">Save</button>' +
+          "</div>"
+      );
+      var ta = document.getElementById("blog-annot-text");
+      ta.focus();
+      document.getElementById("blog-annot-cancel").onclick = hideModal;
+      document.getElementById("blog-annot-save").onclick = function () {
+        var list = loadBuffer();
+        list.push({
+          permalink: PERMALINK,
+          title: TITLE,
+          quote: sel_info.quote,
+          prefix: sel_info.prefix,
+          suffix: sel_info.suffix,
+          comment: ta.value,
+          ts: new Date().toISOString(),
+        });
+        saveBuffer(list);
+        refreshPill();
+        hideModal();
+        var s = window.getSelection();
+        if (s && s.removeAllRanges) s.removeAllRanges();
+      };
+    }
+
+    // ---------------------------------------------------------- review flow
+    document.getElementById("blog-annot-open").onclick = openReview;
+
+    function openReview() {
+      var list = loadBuffer();
+      var items = list.length
+        ? list
+            .map(function (a, i) {
+              return (
+                "<li><b>" +
+                (i + 1) +
+                ".</b> " +
+                escapeHtml(a.quote.slice(0, 90)) +
+                (a.quote.length > 90 ? "…" : "") +
+                "<br><i>" +
+                escapeHtml(a.comment || "(no comment)") +
+                "</i></li>"
+              );
+            })
+            .join("")
+        : "<li>Nothing captured yet.</li>";
+
+      showModal(
+        "<b>Annotations (" +
+          list.length +
+          ")</b>" +
+          '<ul id="blog-annot-list">' +
+          items +
+          "</ul>" +
+          '<div class="row">' +
+          '<button type="button" class="ghost" id="blog-annot-clear">Clear all</button>' +
+          '<button type="button" class="ghost" id="blog-annot-copy">Copy to clipboard</button>' +
+          '<button type="button" class="primary" id="blog-annot-gist">Upload to gist</button>' +
+          '<button type="button" class="ghost" id="blog-annot-close">Close</button>' +
+          "</div>" +
+          '<div id="blog-annot-note"></div>'
+      );
+
+      var note = document.getElementById("blog-annot-note");
+      document.getElementById("blog-annot-close").onclick = hideModal;
+
+      document.getElementById("blog-annot-clear").onclick = function () {
+        if (!confirm("Discard all " + list.length + " annotations?")) return;
+        saveBuffer([]);
+        refreshPill();
+        hideModal();
+      };
+
+      document.getElementById("blog-annot-copy").onclick = function () {
+        var json = payloadJson(list);
+        function fallback() {
+          var ta = document.createElement("textarea");
+          ta.value = json;
+          ta.style.position = "fixed";
+          ta.style.opacity = "0";
+          document.body.appendChild(ta);
+          ta.select();
+          try {
+            document.execCommand("copy");
+            note.textContent = "Copied " + list.length + " annotations.";
+          } catch (e) {
+            note.textContent = "Copy failed — select the JSON manually.";
+          }
+          document.body.removeChild(ta);
+        }
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(json).then(function () {
+            note.textContent = "Copied " + list.length + " annotations.";
+          }, fallback);
+        } else {
+          fallback();
+        }
+      };
+
+      document.getElementById("blog-annot-gist").onclick = function () {
+        if (!list.length) {
+          note.textContent = "Nothing to upload.";
+          return;
+        }
+        uploadGist(list, note);
+      };
+    }
+
+    function payloadJson(list) {
+      return JSON.stringify(
+        {
+          permalink: PERMALINK,
+          title: TITLE,
+          url: window.location.origin + window.location.pathname,
+          created: new Date().toISOString(),
+          annotations: list,
+        },
+        null,
+        2
+      );
+    }
+
+    function getToken() {
+      var t;
+      try {
+        t = localStorage.getItem(TOKEN_KEY);
+      } catch (e) {
+        t = null;
+      }
+      if (t) return t;
+      t = window.prompt(
+        "GitHub personal access token with ONLY the `gist` scope.\n" +
+          "Stored in this browser's localStorage — never committed."
+      );
+      if (!t) return null;
+      t = t.trim();
+      try {
+        localStorage.setItem(TOKEN_KEY, t);
+      } catch (e) {
+        /* still usable for this one upload */
+      }
+      return t;
+    }
+
+    function uploadGist(list, note) {
+      var token = getToken();
+      if (!token) {
+        note.textContent = "No token — cancelled.";
+        return;
+      }
+      note.textContent = "Uploading…";
+
+      var body = {
+        // SECRET gist. `public: false` is the whole point — these are private
+        // notes on unpublished thinking.
+        public: false,
+        // Larry greps for exactly this prefix. Do not reformat.
+        description: "blog-review: " + PERMALINK,
+        files: { "review.json": { content: payloadJson(list) } },
+      };
+
+      fetch("https://api.github.com/gists", {
+        method: "POST",
+        headers: {
+          Accept: "application/vnd.github+json",
+          Authorization: "Bearer " + token,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body),
+      })
+        .then(function (res) {
+          if (res.status === 401 || res.status === 403) {
+            try {
+              localStorage.removeItem(TOKEN_KEY);
+            } catch (e) {
+              /* ignore */
+            }
+            throw new Error(
+              "GitHub rejected the token (" +
+                res.status +
+                "). It has been cleared — retry to re-enter one with `gist` scope."
+            );
+          }
+          if (!res.ok) throw new Error("GitHub returned " + res.status);
+          return res.json();
+        })
+        .then(function (gist) {
+          saveBuffer([]);
+          refreshPill();
+          note.innerHTML =
+            "Uploaded ✅ <a href='" +
+            escapeHtml(gist.html_url) +
+            "' target='_blank' rel='noopener'>" +
+            escapeHtml(gist.html_url) +
+            "</a><br>Local buffer cleared.";
+        })
+        .catch(function (err) {
+          // Never clear the buffer on failure — the notes are the valuable part.
+          note.textContent = "Upload failed: " + err.message;
+        });
+    }
+  })();
+</script>
