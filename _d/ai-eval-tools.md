@@ -102,9 +102,13 @@ Limitations: that focus is the limitation — it answers "is this app vulnerable
 
 Most of the tools above are prompt-shaped. A separate tier evaluates agents inside containers, which buys the three things agentic evals actually need: isolation (the agent can be given full permissions safely — exactly the sandbox fight I lost on my [codex runs](/ai-testing#grading-the-agent-with-smevals)), reproducibility (pinned task images), and parallelism.
 
-- **Terminal-Bench** — the closest cousin to my blog-edit eval, professionalized: each task is a Docker container with setup plus a verifier script, and it benchmarks the actual CLI harnesses — Claude Code, Codex, and friends — on terminal tasks.
-- **SWE-bench harness** — per-issue Docker images; grading is "do the repo's tests pass in the container." The agent layer (SWE-agent and descendants) attaches on top.
+- **Terminal-Bench** — the closest cousin to my blog-edit eval, professionalized: each task is a Docker container with setup plus a verifier, and it benchmarks the actual CLI harnesses — Claude Code, Codex, and friends — on terminal tasks. Since Nov 2025 the harness has been split out and renamed **Harbor**; the `tb` CLI and `terminal-bench-core` are the legacy 1.x path, and the live leaderboards are 2.0/2.1 run through `harbor`.
+- **SWE-bench harness** — per-issue Docker images; grading is "do the repo's tests pass in the container." The agent layer (SWE-agent, now mostly mini-SWE-agent) attaches on top.
 - **METR Vivaria** — the platform METR runs dangerous-capability evals on; agents in containers against their Task Standard.
+
+**Both containerize, but not the same thing — this is the distinction I went looking for.** Terminal-Bench puts _the agent_ in the box: it gets a shell, the tests are copied in only after its clock stops, and what's graded is the final container state ("the tests… do not test the agent's commands or console output"). SWE-bench puts only _the grading_ in the box: the harness takes an already-finished patch string, applies it, runs the repo's tests, and tears down — there is no agent code in the benchmark repo at all. The agent phase is a different tool that happens to reuse the same images. So a ✓ in the isolation row below means "safe place to let an agent loose" for one and "reproducible place to run tests" for the other.
+
+Their vocabularies admit it. Terminal-Bench's unit of work is a **trial** — "a rollout that produces a reward" — and the thing under test is an **agent**. SWE-bench's is a **task instance**, and the thing under test is a field called `model_name_or_path`: the harness was designed when the subject was a model emitting a diff, not an agent working a repo. Neither is a security boundary, incidentally — SWE-bench containers run as root with the network open, and Terminal-Bench deliberately allows internet access so agents can install packages.
 
 Limitations: these are benchmark-first, not write-your-own-weekend-eval-first — standing up custom tasks means adopting their image conventions. smevals sits out this fight by being agnostic — its Runner is any executable, so it can `docker run` when a container runtime exists, but manages none of it for you.
 
@@ -114,7 +118,7 @@ The catch on macOS, learned the hard way: OrbStack machines are shared-kernel co
 
 - **A real Linux VM** via [Lima](https://lima-vm.io) (`vmType: vz`) or UTM brings its own kernel — containers and sandboxes just work, on any Apple Silicon chip, no nested virtualization needed. That's the box for Terminal-Bench or a full-permission containerized harness.
 - **True VM-in-VM** (KVM inside the Linux VM) needs nested virtualization: M3 or later, macOS 15+, Linux guests only. UTM supports it; Lima behind a `nestedVirtualization: true` flag ([lima#2824](https://github.com/lima-vm/lima/issues/2824)); OrbStack [doesn't](https://github.com/orgs/orbstack/discussions/2074).
-- **Keep OrbStack** for what it's best at — the Docker engine itself and fast shared-kernel dev machines. Just don't expect a container runtime *inside* one.
+- **Keep OrbStack** for what it's best at — the Docker engine itself and fast shared-kernel dev machines. Just don't expect a container runtime _inside_ one.
 
 ### The SaaS tier: Braintrust, LangSmith, Langfuse
 
@@ -137,16 +141,16 @@ Strip the branding and every tool here is the same handful of concepts. Learning
 
 The rosetta stone:
 
-| Concept     | smevals                 | PromptFoo         | Pydantic Evals    | Inspect AI              | DeepEval          | Terminal-Bench  |
-| ----------- | ----------------------- | ----------------- | ----------------- | ----------------------- | ----------------- | --------------- |
-| Collection  | Eval / Suite            | config `tests`    | Dataset           | Task                    | EvaluationDataset | dataset         |
-| Case        | Task                    | test              | Case              | Sample                  | LLMTestCase       | task            |
-| Target      | Config + Runner         | provider + prompt | your function     | solver + model          | your app code     | agent adapter   |
-| Execution   | any executable, workdir | in-process call   | Python call       | solver loop, opt docker | Python call       | Docker per task |
-| Run record  | `runs/` dir, immutable  | results cache     | report + OTel     | `.eval` log             | test results      | run logs        |
-| Grader      | Grader → Checkers       | assertions        | Evaluators, judge | Scorers                 | metrics (G-Eval)  | verifier script |
-| Report      | leaderboard CLI         | matrix viewer     | summary table     | log stats               | SaaS dashboard    | leaderboard     |
-| Trace view  | files + `serve`         | web UI            | Logfire           | `inspect view`          | Confident AI      | logs            |
+| Concept    | smevals                 | PromptFoo         | Pydantic Evals    | Inspect AI              | DeepEval          | Terminal-Bench       | SWE-bench                    |
+| ---------- | ----------------------- | ----------------- | ----------------- | ----------------------- | ----------------- | -------------------- | ---------------------------- |
+| Collection | Eval / Suite            | config `tests`    | Dataset           | Task                    | EvaluationDataset | dataset              | dataset + split              |
+| Case       | Task                    | test              | Case              | Sample                  | LLMTestCase       | task                 | task instance, `instance_id` |
+| Target     | Config + Runner         | provider + prompt | your function     | solver + model          | your app code     | agent                | `model_name_or_path` + patch |
+| Execution  | any executable, workdir | in-process call   | Python call       | solver loop, opt docker | Python call       | container per trial  | container per instance       |
+| Run record | `runs/` dir, immutable  | results cache     | report + OTel     | `.eval` log             | test results      | job → trials         | `logs/run_evaluation/`       |
+| Grader     | Grader → Checkers       | assertions        | Evaluators, judge | Scorers                 | metrics (G-Eval)  | verifier → reward    | `grading.py` → `resolved`    |
+| Report     | leaderboard CLI         | matrix viewer     | summary table     | log stats               | SaaS dashboard    | leaderboard          | run report JSON              |
+| Trace view | files + `serve`         | web UI            | Logfire           | `inspect view`          | Confident AI      | trajectory, Hub view | none                         |
 
 The first three concepts are commodity — every tool has cases, collections, and target configs, and choosing between tools on those is a wash. The separation happens on two axes:
 
@@ -156,17 +160,17 @@ The first three concepts are commodity — every tool has cases, collections, an
 
 Capability grid against my [criteria](#what-i-want-from-an-eval-tool) — ✓ yes, ◐ partial/BYO, ✗ no:
 
-| Required feature       | smevals | PromptFoo | Pydantic | Inspect | DeepEval | T-Bench |
-| ---------------------- | ------- | --------- | -------- | ------- | -------- | ------- |
-| Agent-in-workdir       | ✓       | ✗         | ✗        | ◐       | ✗        | ✓       |
-| Container isolation    | ◐ BYO   | ✗         | ✗        | ✓       | ✗        | ✓       |
-| Deterministic graders  | ✓       | ✓         | ✓        | ✓       | ◐        | ✓       |
-| LLM judge              | ◐ BYO   | ✓         | ✓        | ✓       | ✓        | ◐       |
-| Decoupled re-grading   | ✓       | ✗         | ✗        | ✓       | ✗        | ◐       |
-| Trace viewer           | ◐       | ✓         | ◐ SaaS   | ✓       | ◐ SaaS   | ◐       |
-| Local-first            | ✓       | ✓         | ✓        | ✓       | ◐        | ✓       |
+| Required feature      | smevals | PromptFoo | Pydantic | Inspect | DeepEval | T-Bench | SWE-bench |
+| --------------------- | ------- | --------- | -------- | ------- | -------- | ------- | --------- |
+| Agent-in-workdir      | ✓       | ✗         | ✗        | ◐       | ✗        | ✓       | ✗         |
+| Container isolation   | ◐ BYO   | ✗         | ✗        | ✓       | ✗        | ✓       | ✓ grading |
+| Deterministic graders | ✓       | ✓         | ✓        | ✓       | ◐        | ✓       | ✓         |
+| LLM judge             | ◐ BYO   | ✓         | ✓        | ✓       | ✓        | ✓       | ✗         |
+| Decoupled re-grading  | ✓       | ✗         | ✗        | ✓       | ✗        | ✓       | ◐ reparse |
+| Trace viewer          | ◐       | ✓         | ◐ SaaS   | ✓       | ◐ SaaS   | ✓       | ✗         |
+| Local-first           | ✓       | ✓         | ✓        | ✓       | ◐        | ✓       | ✓         |
 
-Read column-wise and the survey's conclusions fall out: smevals and Terminal-Bench are the agentic pair (smevals for weekend-sized custom evals, Terminal-Bench for standardized harness benchmarks), Inspect is the heavyweight that covers the most boxes, and the prompt-shaped tools trade the two divides above for richer judge libraries and viewers.
+Read column-wise and the survey's conclusions fall out: smevals and Terminal-Bench are the agentic pair (smevals for weekend-sized custom evals, Terminal-Bench for standardized harness benchmarks), and the prompt-shaped tools trade the two divides above for richer judge libraries and viewers. Terminal-Bench sweeps the grid now that Harbor added judges and `regrade` — it's the most complete column here, at the price of being benchmark-shaped rather than something you point at your own weekend project. Inspect remains the most general-purpose heavyweight. SWE-bench is the specialist: unbeatable at "did this patch make the repo's tests pass," and deliberately uninterested in every other row.
 
 ## Repo naming convention
 
