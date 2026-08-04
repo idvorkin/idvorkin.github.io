@@ -4249,7 +4249,8 @@
                 "/performer-playbook",
                 "/sublime",
                 "/timeoff-2026-07",
-                "/tribe"
+                "/tribe",
+                "/y26"
             ],
             "last_modified": "2026-07-20T19:36:53-07:00",
             "markdown_path": "_d/joy.md",
@@ -8014,13 +8015,13 @@
         },
         "/y26": {
             "description": "I like to begin with the end in mind, so let’s write a report for 2026. This hasn’t happened, but if I don’t write it out and focus on it, it certainly won’t.\n\n",
-            "doc_size": 30000,
+            "doc_size": 49000,
             "file_path": "_site/y26.html",
             "incoming_links": [
                 "/act",
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-05-25T07:47:51-07:00",
+            "last_modified": "2026-08-04T15:28:10.549359+00:00",
             "markdown_path": "_d/y2026.md",
             "outgoing_links": [
                 "/22",
@@ -8034,6 +8035,7 @@
                 "/gap-year",
                 "/gap-year-igor",
                 "/how-igor-chops",
+                "/joy",
                 "/larry",
                 "/last-year",
                 "/manager-book",
