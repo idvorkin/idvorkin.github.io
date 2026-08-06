@@ -19,7 +19,8 @@ INSTRUCTIONS FOR CLAUDE — recap status (2026-08-03, rev 3)
   them — do not promote or delete without his confirmation.
 - The 49 album frames are ~2 captures of each of 25 distinct views, one view per day
   (a few days have a wide + a zoomed pair). 21 are cropped into images/ as
-  timeline-2026-MM-DD-<leg>.webp and shown as per-leg strips via timeline_strip.html.
+  timeline-2026-MM-DD-<leg>.webp: 19 render as per-leg strips via timeline_strip.html,
+  and the Jun 27 wheels-up + Jul 19 flight-home bookends stay standalone repo_image.html.
 - Street numbers visible on the Jul 9 (Scandic Go, Grensen 20) and Jul 14 (Breistølen 41)
   day-maps are there deliberately — Igor reviewed both and said he doesn't mind that data
   being public (2026-08-03). Do not redact them. The Jun 27 home label stays masked.
