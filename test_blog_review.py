@@ -48,12 +48,15 @@ def test_every_render_path_escapes_markup(text, capsys):
     """No console path may hand annotation text to rich unescaped."""
     batch = {
         "permalink": "/timeoff-2026-07",
+        # Origin is payload data too, so it goes through the same escaping.
+        "origin": text,
         "title": text,
         "url": "https://idvork.in/timeoff-2026-07",
         "created": "2026-08-04T15:15:15.149Z",
         "annotations": [
             {
                 "permalink": "/timeoff-2026-07",
+                "origin": text,
                 "quote": text,
                 "prefix": text,
                 "suffix": text,
@@ -156,6 +159,121 @@ def test_version_line_reports_recorded_markers():
 def test_batch_source_url_is_always_echoed():
     assert br.batch_source_url({"url": "https://idvork.in/x"}) == "https://idvork.in/x"
     assert br.batch_source_url({"permalink": "/x"}) == "https://idvork.in/x"
+
+
+# ------------------------------------------------------------------- origin
+#
+# A permalink says WHICH post; an origin says WHICH SERVER. Without the second,
+# a note taken against the Tailscale preview is indistinguishable from one
+# taken against the live site — and the two can disagree about the prose.
+
+PREVIEW_ORIGIN = "http://c-5004.squeaker-teeth.ts.net:4000"
+
+# A capture from the current client: origin sits next to permalink at both the
+# batch and the annotation level.
+NEW_BATCH = {
+    "permalink": "/timeoff-2026-07",
+    "origin": PREVIEW_ORIGIN,
+    "url": f"{PREVIEW_ORIGIN}/timeoff-2026-07",
+    "created": "2026-08-08T17:28:28.150Z",
+    "annotations": [
+        {
+            "permalink": "/timeoff-2026-07",
+            "origin": PREVIEW_ORIGIN,
+            "quote": "x",
+            "ts": "2026-08-08T17:21:44.700Z",
+            "version": {"url": f"{PREVIEW_ORIGIN}/timeoff-2026-07"},
+        }
+    ],
+}
+
+# One of Igor's existing gists: no `origin` anywhere, only absolute URLs.
+OLD_BATCH = {
+    "permalink": "/timeoff-2026-07",
+    "url": "https://idvork.in/timeoff-2026-07",
+    "created": "2026-08-08T17:28:28.150Z",
+    "annotations": [
+        {
+            "permalink": "/timeoff-2026-07",
+            "quote": "x",
+            "ts": "2026-08-08T17:21:44.700Z",
+            "version": {"url": "https://idvork.in/timeoff-2026-07"},
+        }
+    ],
+}
+
+
+def test_origin_is_read_at_both_levels():
+    ann = NEW_BATCH["annotations"][0]
+    assert br.annotation_origin({}, NEW_BATCH) == PREVIEW_ORIGIN
+    assert br.annotation_origin(ann, NEW_BATCH) == PREVIEW_ORIGIN
+    # The annotation wins: one buffer can span page loads, and servers.
+    assert br.annotation_origin({"origin": "https://idvork.in"}, NEW_BATCH) == (
+        "https://idvork.in"
+    )
+
+
+def test_non_standard_port_survives_intact():
+    """`location.host` carries the port; nothing downstream may drop it."""
+    assert ":4000" in br.annotation_origin({}, NEW_BATCH)
+    assert br.batch_source_url({"permalink": "/x", "origin": PREVIEW_ORIGIN}) == (
+        f"{PREVIEW_ORIGIN}/x"
+    )
+
+
+def test_pre_origin_captures_still_parse():
+    """Igor's existing gists have no `origin` — recover it from the URLs."""
+    ann = OLD_BATCH["annotations"][0]
+    assert br.annotation_origin({}, OLD_BATCH) == "https://idvork.in"
+    assert br.annotation_origin(ann, OLD_BATCH) == "https://idvork.in"
+    # And the rest of the batch is untouched by the new field.
+    assert br.batch_source_url(OLD_BATCH) == "https://idvork.in/timeoff-2026-07"
+    assert br.annotation_version(ann, OLD_BATCH)["url"] == (
+        "https://idvork.in/timeoff-2026-07"
+    )
+
+
+def test_pre_origin_batch_renders_without_the_field(capsys):
+    br.print_batch_header(OLD_BATCH, OLD_BATCH["annotations"])
+    assert "idvork.in" in capsys.readouterr().out
+
+
+def test_origin_is_never_assumed_when_nothing_recorded_it():
+    """No origin and no absolute URL means unknown — not production."""
+    assert br.annotation_origin({}, {"permalink": "/x"}) == ""
+    assert "not recorded" in br.origin_label("")
+    # A relative url is not an origin.
+    assert br.annotation_origin({}, {"url": "/timeoff-2026-07"}) == ""
+
+
+def test_preview_origins_are_called_out_and_production_is_not():
+    assert "preview" in br.origin_label(PREVIEW_ORIGIN)
+    assert "preview" in br.origin_label("http://localhost:4000")
+    assert "preview" not in br.origin_label(br.PRODUCTION_ORIGIN)
+
+
+def test_locate_json_carries_origin_next_to_every_permalink():
+    """Shape check: wherever the CLI emits a permalink, it emits an origin."""
+    index = br.PermalinkIndex(REPO_ROOT)
+    ann = NEW_BATCH["annotations"][0]
+    resolution = index.resolve(ann["permalink"])
+    assert resolution.path is not None
+    assert br.annotation_origin(ann, NEW_BATCH) == PREVIEW_ORIGIN
+
+
+# ------------------------------------------------- client/consumer contract
+def test_client_emits_origin_beside_permalink_at_both_levels():
+    """`_includes/annotate.html` is the only producer of these payloads.
+
+    There is no JS test harness in this repo, so this guards the one thing
+    that silently breaks the consumer: the client dropping the field.
+    """
+    js = (REPO_ROOT / "_includes" / "annotate.html").read_text()
+    # Per-annotation (composer save) and batch-level (payloadJson).
+    assert js.count("origin: ORIGIN,") == 2
+    # Built from location, never hardcoded to a host.
+    assert "window.location.origin ||" in js
+    assert "window.location.protocol" in js
 
 
 # ----------------------------------------------------------------- locating

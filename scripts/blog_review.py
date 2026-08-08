@@ -42,6 +42,7 @@ import unicodedata
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import urlsplit
 
 import typer
 from rich.console import Console
@@ -57,6 +58,12 @@ console = Console()
 
 DESCRIPTION_PREFIX = "blog-review:"
 REVIEW_FILENAME = "review.json"
+
+# The published site. Anything else — a Tailscale-served `jekyll serve`, a
+# staging deploy — is a preview capture, and `locate` says so out loud: line
+# numbers from a preview reflect an unpublished draft. Compared literally, so
+# no host pattern (`localhost`, `*.ts.net`, a port) is special-cased.
+PRODUCTION_ORIGIN = "https://idvork.in"
 
 # Jekyll collections that can hold a post with a permalink.
 CONTENT_DIRS = ("_d", "_td", "_posts", "_ig66", "_gascity")
@@ -673,12 +680,58 @@ def version_line(version: dict) -> str:
     return " · ".join(bits)
 
 
+def _origin_of(url: str | None) -> str:
+    """``scheme://host[:port]`` from an absolute URL, or "" if it isn't one."""
+    parts = urlsplit(str(url or ""))
+    return f"{parts.scheme}://{parts.netloc}" if parts.scheme and parts.netloc else ""
+
+
+def annotation_origin(ann: dict, batch: dict) -> str:
+    """Which server this note was captured against — scheme + host + port.
+
+    A permalink alone cannot answer that: `/timeoff-2026-07` reads the same
+    whether it came off the live site or a preview server, and the two can
+    disagree about what the post says. Newer clients record `origin` next to
+    every `permalink`, at both levels.
+
+    Older batches predate the field. They still carry absolute URLs, which
+    begin with the origin, so recover it from those. Returns "" when the
+    payload carries neither — never assume production.
+    """
+    for value in (ann.get("origin"), batch.get("origin")):
+        if value:
+            return str(value)
+    for url in (
+        (ann.get("version") or {}).get("url"),
+        ann.get("url"),
+        (batch.get("version") or {}).get("url"),
+        batch.get("url"),
+    ):
+        origin = _origin_of(url)
+        if origin:
+            return origin
+    return ""
+
+
+def origin_label(origin: str) -> str:
+    """Rich markup for an origin, called out when it is not the live site."""
+    if not origin:
+        return "[dim]not recorded (pre-origin client)[/dim]"
+    if origin == PRODUCTION_ORIGIN:
+        return f"[blue]{esc(origin)}[/blue]"
+    return f"[yellow]{esc(origin)} — preview capture, not the live site[/yellow]"
+
+
 def batch_source_url(batch: dict) -> str:
     url = batch.get("url") or ""
     if url:
         return url
     permalink = batch.get("permalink") or ""
-    return f"https://idvork.in{permalink}" if permalink else ""
+    if not permalink:
+        return ""
+    # Pre-`url` batches: rebuild from whatever origin the batch recorded, and
+    # fall back to the live site only when it recorded none.
+    return f"{annotation_origin({}, batch) or PRODUCTION_ORIGIN}{permalink}"
 
 
 def print_batch_header(batch: dict, annotations: list[dict]) -> None:
@@ -689,6 +742,7 @@ def print_batch_header(batch: dict, annotations: list[dict]) -> None:
     url = batch_source_url(batch)
     if url:
         console.print(f"[bold]source url:[/bold] [blue underline]{esc(url)}[/]")
+    console.print(f"[bold]origin:[/bold] {origin_label(annotation_origin({}, batch))}")
     console.print(
         f"[dim]captured {esc(str(batch.get('created', '?')))} — "
         f"{len(annotations)} notes[/dim]"
@@ -742,6 +796,7 @@ def show(
     batch = load_batch(source)
     annotations = batch.get("annotations") or []
     print_batch_header(batch, annotations)
+    batch_origin = annotation_origin({}, batch)
 
     for i, ann in enumerate(annotations, start=1):
         intent = annotation_intent(ann)
@@ -759,6 +814,11 @@ def show(
         )
         if version.get("url"):
             console.print(f"   [dim]{esc(str(version['url']))}[/dim]")
+        # The buffer survives page loads, so one batch can span servers. Only
+        # the notes that disagree with the batch header are worth a line.
+        origin = annotation_origin(ann, batch)
+        if origin and origin != batch_origin:
+            console.print(f"   captured against {origin_label(origin)}")
         console.print()
 
 
@@ -780,6 +840,7 @@ def locate(
     results = []
     for ann in annotations:
         permalink = ann.get("permalink") or batch.get("permalink") or ""
+        origin = annotation_origin(ann, batch)
         intent = annotation_intent(ann)
         version = annotation_version(ann, batch)
         resolution = index.resolve(permalink)
@@ -789,6 +850,7 @@ def locate(
                     "ok": False,
                     "kind": "unresolved-permalink",
                     "permalink": permalink,
+                    "origin": origin,
                     "reason": resolution.reason,
                     "searched": index.dirs_searched,
                     "indexed": index.describe(),
@@ -809,6 +871,7 @@ def locate(
                     "ok": False,
                     "kind": "quote-not-found",
                     "permalink": permalink,
+                    "origin": origin,
                     "reason": "quote not found in source",
                     "file": str(path.relative_to(REPO_ROOT)),
                     "resolved_via": resolution.how,
@@ -824,6 +887,7 @@ def locate(
             {
                 "ok": True,
                 "permalink": permalink,
+                "origin": origin,
                 "file": str(path.relative_to(REPO_ROOT)),
                 "line": match.line,
                 "method": match.method,
@@ -842,6 +906,7 @@ def locate(
             json.dumps(
                 {
                     "batch": batch.get("permalink"),
+                    "origin": annotation_origin({}, batch),
                     "url": batch_source_url(batch),
                     "branch": branch,
                     "version": batch.get("version") or {},
