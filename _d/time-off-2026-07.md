@@ -10,6 +10,10 @@ redirect_from:
 
 <!--
 INSTRUCTIONS FOR CLAUDE — recap status (2026-08-08, rev 5)
+- Rev 5 added the SATS gym photos. More may follow: drop the file in images/ as
+  gym-nightclub-<subject>.webp (970x1280, so thumbnails line up) and add one more
+  "file|Caption|Alt text" item to the gallery="gyms" strip. Always pass the third
+  field — without it the alt falls back to "Timeline day-map — ...".
 - Rev 5 restored the spoken dialogue in the Oslo subway story at Igor's explicit request
   ("I am an African man" / "I am an Islamic man"). Those are the man's own words about
   himself, quoted plainly; the joke is Igor's obliviousness, not the man. Do not sanitize
@@ -73,6 +77,8 @@ I wrote down what I'm actually here for, in order — and then the trip rearrang
 ## The one thing I actually researched: the gyms
 
 Most of this trip I was happy to wing. The gyms I was paranoid about. Before we left I went city by city and worked out which ones had kettlebells — that was the whole research project, and it's the piece I'm proudest of, because it held. I got to a real gym every three days for the entire trip, and I did my back exercises basically every day, on whatever floor was going. Skip that part and I come home an old man with a crippled back. Not a metaphor — that's just what happens.
+
+{% include timeline_strip.html gallery="gyms" caption="Some of the gyms even looked like a nightclub. This one's a SATS, the chain that turns up all over the Nordics." items="gym-nightclub-kettlebells.webp|Competition bells, barefoot start|Igor kneeling barefoot on a dark SATS gym floor between two competition kettlebells, an orange one and a black ELEIKO 24, wearing red trackpants and over-ear headphones, under magenta and blue neon strips with heavy bags hanging on chains behind him; gym-nightclub-heavy-bags.webp|Red room, red Crocs|Igor standing with arms spread in the same gym lit entirely in red, one raised hand gripping a hanging heavy bag and the other resting on a second, wearing a black long-sleeve, red cropped trackpants, red Crocs and over-ear headphones, with a large illuminated SATS wall sign behind him" %}
 
 The receipt showed up at the top of the Voss gondola. Amelia and I rode up to mess around, and there's a rope up there with a bell at the top. I climbed it and rang it. Sixteen days into the trip, my body still did what I asked it to do. That's what the research was for.
 
