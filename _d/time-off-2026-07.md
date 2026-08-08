@@ -9,7 +9,11 @@ redirect_from:
 ---
 
 <!--
-INSTRUCTIONS FOR CLAUDE — recap status (2026-08-08, rev 4)
+INSTRUCTIONS FOR CLAUDE — recap status (2026-08-08, rev 5)
+- Rev 5 restored the spoken dialogue in the Oslo subway story at Igor's explicit request
+  ("I am an African man" / "I am an Islamic man"). Those are the man's own words about
+  himself, quoted plainly; the joke is Igor's obliviousness, not the man. Do not sanitize
+  them out again, and do not add stage directions about his accent or comprehension.
 - Rev 4 applied Igor's 2026-08-08 review pass: the old "Where we went (by leg)" list was
   merged INTO "How it actually went", so there is now exactly ONE per-leg list — narrative
   first, then the place bullets, then the Timeline strip. Do not re-split them.
@@ -38,7 +42,7 @@ INSTRUCTIONS FOR CLAUDE — recap status (2026-08-08, rev 4)
 
 Somewhere in the planning I figured out how much depth is sitting behind every one of these stops, and that I didn't have to go dig it out myself. So I pointed ChatGPT at each city and had it find the good stuff — what's worth seeing, when it's open, and the strange little factoids that make a place stick. That research turned into its own site, and it's the single thing that made this trip more interesting than a list of landmarks.
 
-> 🗺️ **Trip map & city guide:** [Scandinavian Whirlwind 2026 →](https://idvorkin-ai-tools.github.io/scandinavia-2026/) — one page per stop (Iceland → Copenhagen → Stockholm → Oslo → fjords → Amsterdam), with things to do, hours, and a live weather table.
+{% include alert.html content="🗺️ **Trip map & city guide:** [Scandinavian Whirlwind 2026 →](https://idvorkin-ai-tools.github.io/scandinavia-2026/) — one page per stop (Iceland → Copenhagen → Stockholm → Oslo → fjords → Amsterdam), with things to do, hours, and a live weather table." style="info" %}
 
 For context on why I take time off: [/time-off](/time-off).
 
@@ -70,7 +74,7 @@ I wrote down what I'm actually here for, in order — and then the trip rearrang
 
 Most of this trip I was happy to wing. The gyms I was paranoid about. Before we left I went city by city and worked out which ones had kettlebells — that was the whole research project, and it's the piece I'm proudest of, because it held. I got to a real gym every three days for the entire trip, and I did my back exercises basically every day, on whatever floor was going. Skip that part and I come home an old man with a crippled back. Not a metaphor — that's just what happens.
 
-The receipt showed up at the top of the Voss gondola. Amelia and I rode up to mess around, and there's a rope up there with a bell at the top. I climbed it and rang it. Two and a half weeks into the trip, my body still did what I asked it to do. That's what the research was for.
+The receipt showed up at the top of the Voss gondola. Amelia and I rode up to mess around, and there's a rope up there with a bell at the top. I climbed it and rang it. Sixteen days into the trip, my body still did what I asked it to do. That's what the research was for.
 
 ## At a Glance
 
@@ -89,7 +93,7 @@ The receipt showed up at the top of the Voss gondola. Amelia and I rode up to me
 
 📍 [See the full route on Google Maps](https://www.google.com/maps/dir/Reykjav%C3%ADk/Copenhagen/Stockholm/Oslo/Aurland/Voss/Bergen/Amsterdam) — 8 stops in one view.
 
-> 🧳 **Packing:** my reusable [packing master list](/packing) — the durable checklist every trip is trimmed from.
+{% include alert.html content="🧳 **Packing:** my reusable [packing master list](/packing) — the durable checklist every trip is trimmed from." style="info" %}
 
 ## How it actually went
 
@@ -159,7 +163,21 @@ We got there by train, and I have a confession about the ride. Six hours from St
 
 The best thing in Oslo happened on the subway. A man was doing pull-ups on the grab bar. I love doing pull-ups on the subway, and my instinct was to get up and join him. Tori vetoed that, so I settled for going over and handing him one of my [you are awesome cards](/joy#handing-out-you-are-awesome-cards).
 
-What followed was a very sincere disagreement. I told him he was great. He thanked me, and then explained — kindly, and at some length — that he was nothing special. I insisted. He declined. We went several rounds like that, both of us completely certain, neither of us getting anywhere.
+What followed was the most sincere disagreement I've ever had with a stranger. He took the card, thanked me, and then set about gently correcting my mistake.
+
+"I am not a special man," he said. "I am a regular man."
+
+"No, you're great."
+
+"No, no. I am an African man."
+
+"Yes! That's great."
+
+"No, no. I am an Islamic man."
+
+"Yes, yes. That's great too."
+
+Every round he handed me another reason he didn't deserve the card, and every round I took it as another reason he did. Neither of us moved an inch.
 
 Then we walked off and Tori said: "You know that man thought you were trying to hit on him, right?"
 
