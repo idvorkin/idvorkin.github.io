@@ -39,6 +39,17 @@
   bytes actually annotated). blog_review.py adds the per-post signal git
   already knows: whether the markdown was committed after the note was written.
 
+  ORIGIN: recorded next to every `permalink`, at both the batch and the
+  annotation level. `permalink` alone cannot tell you WHICH server you were
+  reading — a note taken against the local Jekyll preview and one taken
+  against the live site are byte-identical without it. `location.origin` is
+  scheme + host + port, so `https://idvork.in` and
+  `http://c-5004.squeaker-teeth.ts.net:4000` are distinguishable.
+
+  `location.href` is deliberately NOT recorded: beyond origin + permalink it
+  only adds the query string and fragment, which here means `?annotate=1` and
+  whatever heading you last clicked — tool state, not page identity.
+
   SECURITY: the GitHub PAT lives ONLY in this browser's localStorage under
   `blogAnnotateToken`. It is never committed, never sent anywhere except
   api.github.com. Use a fine-grained/classic token with the `gist` scope
@@ -120,6 +131,12 @@
     var PERMALINK =
       (meta && meta.dataset.permalink) || window.location.pathname;
     var TITLE = (meta && meta.dataset.title) || document.title;
+    // Scheme + host + port of the server actually being read. `location.host`
+    // carries the port, so a non-standard preview port survives. A handful of
+    // older mobile browsers ship no `location.origin`; rebuild it there.
+    var ORIGIN =
+      window.location.origin ||
+      window.location.protocol + "//" + window.location.host;
 
     // ------------------------------------------------------------- storage
     function loadBuffer() {
@@ -202,7 +219,7 @@
         .replace(/\s+/g, " ")
         .trim();
       return {
-        url: window.location.origin + window.location.pathname,
+        url: ORIGIN + window.location.pathname,
         capturedAt: new Date().toISOString(),
         // Site deploy time, from GitHub Pages' Last-Modified header. Coarse
         // (same for every page on the site) but genuine — see the header note.
@@ -460,6 +477,7 @@
         var list = loadBuffer();
         list.push({
           permalink: PERMALINK,
+          origin: ORIGIN,
           title: TITLE,
           quote: sel_info.quote,
           prefix: sel_info.prefix,
@@ -570,8 +588,12 @@
       return JSON.stringify(
         {
           permalink: PERMALINK,
+          // The batch-level origin is the server you exported from. Each
+          // annotation carries its own, because the buffer can span page
+          // loads — and therefore servers.
+          origin: ORIGIN,
           title: TITLE,
-          url: window.location.origin + window.location.pathname,
+          url: ORIGIN + window.location.pathname,
           created: new Date().toISOString(),
           // Version of the page you happen to be on when you export. Each
           // annotation carries its own `version` too — that is the one that
