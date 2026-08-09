@@ -12,6 +12,8 @@ redirect_from:
 
 _Every society that ever built a hierarchy also built someone whose job was to make fun of it. A short field guide to the oldest, most serious silly job in the world._
 
+{% include ai-slop.html percent="100" %}
+
 Here is a strange fact worth sitting with: almost every human culture that ever organized itself into kings and commoners, sacred and profane, powerful and powerless, also invented a person whose job was to stand slightly outside all of it and act the fool. Not as an accident of a few cultures, but again and again, independently, on every continent. The court had its jester. The village had its trickster tales. The temple had its sacred clown who mocked the very rites everyone else took on faith. The circus had Joey.
 
 That's too consistent to be a fluke. When humans keep inventing the same tool, it usually means we keep running into the same problem. So what's the problem the clown solves?
