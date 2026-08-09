@@ -1,14 +1,22 @@
-{% comment %} Horizontal strip of day-map thumbnails (Google Maps Timeline
-screenshots). Parameters: - items: semicolon-separated list of
-"file.webp|Caption" pairs. Each file resolves under /images/. The caption shows
-under its thumbnail. - caption: optional italic line under the whole strip. -
-gallery: GLightbox gallery name, default "timeline". All strips sharing a name
-form one swipeable set in DOM order, so the default lets you page through every
-day of the trip chronologically from any thumbnail. Portrait phone screenshots
-(442x733) share the row width, so 2-4 per strip reads best. Each thumbnail links
-to the full-size image since labels are unreadable at strip size. Wraps on
-narrow screens. The style block is emitted only once per page. Example: {%
-include timeline_strip.html caption="The Copenhagen days."
+{% comment %} Horizontal strip of portrait thumbnails — built for Google Maps
+Timeline day-maps, but works for any set of phone-shaped photos. Parameters: -
+items: semicolon-separated list of "file.webp|Caption" pairs, or
+"file.webp|Caption|Alt text" triples. Each file resolves under /images/. The
+caption shows under its thumbnail; the optional third field is the img alt. Omit
+it and the alt falls back to "Timeline day-map — " plus the caption, so pass
+real alt text whenever the strip holds something other than day-maps. No field
+may contain a pipe or semicolon - those are the delimiters, and a stray one
+silently splits an entry; fragments with no pipe are skipped rather than
+rendered as a broken thumbnail. Quotes and angle brackets are safe, since every
+field is escaped on output. - caption: optional italic line under the whole
+strip. - gallery: GLightbox gallery name, default "timeline". All strips sharing
+a name form one swipeable set in DOM order, so the default lets you page through
+every day of the trip chronologically from any thumbnail. Give an unrelated set
+its own name so it doesn't join that sweep. Portrait phone screenshots (442x733)
+share the row width, so 2-4 per strip reads best. Each thumbnail links to the
+full-size image since labels are unreadable at strip size. Wraps on narrow
+screens. The style block is emitted only once per page. Example: {% include
+timeline_strip.html caption="The Copenhagen days."
 items="timeline-2026-07-01-copenhagen.webp|Wed Jul 1 · Torvehallerne, the Round
 Tower; timeline-2026-07-02-copenhagen.webp|Thu Jul 2 · Amalienborg, the Gefion
 Fountain" %} {% endcomment %} {% unless tl_strip_css %}{% assign tl_strip_css =
@@ -58,22 +66,24 @@ true %}
 <figure class="tl-strip">
   <div class="tl-strip-row">
     {% assign _items = include.items | split: ";" %} {% for _it in _items %} {%
-    assign _p = _it | split: "|" %} {% assign _src = _p[0] | strip %} {% assign
-    _cap = _p[1] | strip %}
+    assign _p = _it | split: "|" %} {% if _p.size > 1 %} {% assign _src = _p[0]
+    | strip %} {% assign _cap = _p[1] | strip %} {% if _p[2] %}{% assign _alt =
+    _p[2] | strip %}{% else %}{% capture _alt %}Timeline day-map — {{ _cap }}{%
+    endcapture %}{% endif %}
     <a
       class="tl-strip-item glightbox"
-      href="/images/{{ _src }}"
+      href="/images/{{ _src | escape }}"
       data-gallery="{{ include.gallery | default: 'timeline' }}"
-      data-description="{{ _cap }}"
+      data-description="{{ _cap | escape }}"
     >
       <img
-        src="/images/{{ _src }}"
-        alt="Timeline day-map — {{ _cap }}"
+        src="/images/{{ _src | escape }}"
+        alt="{{ _alt | escape }}"
         loading="lazy"
       />
-      <span class="tl-strip-cap">{{ _cap }}</span>
+      <span class="tl-strip-cap">{{ _cap | escape }}</span>
     </a>
-    {% endfor %}
+    {% endif %} {% endfor %}
   </div>
   {% if include.caption %}
   <figcaption>{{ include.caption }}</figcaption>
