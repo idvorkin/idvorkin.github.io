@@ -24,6 +24,7 @@ Testing math is easy, it's right or wrong. Testing spelling is easy too, but tes
   - [Who is the funnier LLM](#who-is-the-funnier-llm)
   - [Who is the better git summarizer](#who-is-the-better-git-summarizer)
   - [Git commit message for blog content avoid ToC updates](#git-commit-message-for-blog-content-avoid-toc-updates)
+  - [Drawing the Mona Lisa, then ruining it](#drawing-the-mona-lisa-then-ruining-it)
 - [Eval Systems](#eval-systems)
   - [Human-based blind taste tests Chatbot arena](#human-based-blind-taste-tests-chatbot-arena)
   - [Eval Data Sets](#eval-data-sets)
@@ -134,9 +135,17 @@ Let's start with promptfoo
 
 Update 2026-08: this itch finally became a real eval — see [Grading the agent with smevals](#grading-the-agent-with-smevals).
 
+### Drawing the Mona Lisa, then ruining it
+
+TryAI built a [drawing arena](https://www.tryai.dev/blog/ai-drawing-arena-colored-pencils-claude-gpt-grok): four frontier models, a blank canvas, and simulated colored pencils. The model picks a color and a pressure, lays down strokes, smudges, erases, and calls `view_canvas` to look at its own work and decide what to fix next. Two of the seven tasks are reproductions — the Mona Lisa and Starry Night — scored against the target with SSIM, so there's a real number under the pictures. The [harness is open source](https://github.com/hershalb/canvas-arena).
+
+The cost spread is the fun part — GPT-5.6 Sol drew all seven for $7.74, Claude Fable 5 spent $160.58 to land second on quality — but the number that stuck with me is this: every one of the eight scored runs finished below the model's own mid-run peak. Gemini 3.6 Flash hit 0.449 SSIM on the Mona Lisa, the best score anyone reached, then reviewed its way back down to 0.337. Claude looked at its Mona Lisa 27 times and was flat after about the fifth.
+
+That's [hill climbing](/hill-climbing) with the keep/reject step missing. The models could draw, erase, and look, but they had no way to snapshot a canvas they liked and roll back to it, and nothing in the loop compared the current canvas against their best so far. Every review was a chance to walk downhill with nothing to catch it. If my eval only reads the final artifact, I score the 0.337 and never learn the 0.449 happened. Score the trajectory, not just the finish, and ship the best checkpoint rather than the last one.
+
 ## Eval Systems
 
-A good eval isn't the finish line — it's the scoring function that drives a search loop. Once you have one that's cheap, unambiguous, and aligned with what you actually want, the agent can run [eval-driven hill climbing](/hill-climbing) while you look at the final result. The systems below are what make that scoring cheap and repeatable.
+A good eval isn't the finish line — it's the scoring function that drives a search loop. Once you have one that's cheap, unambiguous, and aligned with what you actually want, the agent can run [eval-driven hill climbing](/hill-climbing) while you look at the final result — as long as the final result is the best one, which [isn't a given](#drawing-the-mona-lisa-then-ruining-it). The systems below are what make that scoring cheap and repeatable.
 
 ### Human-based blind taste tests Chatbot arena
 
