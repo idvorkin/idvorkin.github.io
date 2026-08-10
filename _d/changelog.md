@@ -12,6 +12,14 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Week of 2026-08-10](#week-of-2026-08-10)
+  - [Manager to IC in the Agentic Era (new post!)](#manager-to-ic-in-the-agentic-era-new-post)
+  - [Local Search: Pagefind Replaces Algolia](#local-search-pagefind-replaces-algolia)
+  - [Blog Annotate: Highlight-and-Comment Review Tool](#blog-annotate-highlight-and-comment-review-tool)
+  - [Scandinavia Recap: Gyms, Stories, and Review Polish](#scandinavia-recap-gyms-stories-and-review-polish)
+  - [AI Eval Tools: SWE-bench Column](#ai-eval-tools-swe-bench-column)
+  - [August 2026 Focus](#august-2026-focus)
+  - [Other Projects (2026-08-10)](#other-projects-2026-08-10)
 - [Week of 2026-08-03](#week-of-2026-08-03)
   - [AI Testing: Grading the Agent with smevals](#ai-testing-grading-the-agent-with-smevals)
   - [AI Eval Tools (new post!)](#ai-eval-tools-new-post)
@@ -184,6 +192,40 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+## Week of 2026-08-10
+
+_28 commits this week_
+
+### Manager to IC in the Agentic Era (new post!)
+
+**[/em-to-ic](/em-to-ic)** — in May 2026 Igor got flattened, manager to IC, after long enough as an EM to [write a book about it](/manager-book). The hard part wasn't the craft, it was that the value prop changed: as a manager the job was the team — what they shipped, how they grew; as an IC it's what he personally decides, builds, and unblocks. A symmetry he'd missed until living both sides: managers can't own every technical call, ICs can't own the people. The twist is the IC job he came back to isn't the one he left — he traded a team of humans for a team of agents, so almost every management skill ports (crisp spec → crisp prompt, delegate vs. do-it-yourself, review as the only quality gate left). What doesn't port is the part that made management worth it: agents don't have career growth plans, and they don't come back in three years to say the team mattered. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/9223db695)
+
+### Local Search: Pagefind Replaces Algolia
+
+Algolia's app got blocked (403 "the application is blocked" on every DSN host), so site search broke in production. Rather than pay to restore a metered dependency, search now runs entirely client-side against static files — no service, no API key, $0/mo. Two engines: [Pagefind](https://pagefind.app) shards its index and fetches only the chunks a query needs (~200-300KB first search, ~3KB per result after — the alternative, a monolithic index of the whole blog, is 1.6MB gzipped); a 9KB MiniSearch title index rides alongside for the fuzzy-matching Pagefind lacks. The family-journal exclusion moved from a query-time filter to index time, so a client bug can't leak it — Pagefind only indexes pages carrying `data-pagefind-body`, and `scripts/verify-search-index.sh` asserts the exclusion in CI. Deploy moves from GitHub Pages' native Jekyll build to an Actions workflow, since the native build has no post-build hook to run Pagefind in. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/229259617)
+
+### Blog Annotate: Highlight-and-Comment Review Tool
+
+New workflow: highlight a line on the rendered blog, add a comment, ship the batch to a secret gist, and Larry turns it into revision PRs. Reader-inert by default — no UI, no DOM, no network unless `localStorage blogAnnotate=1`; enable with `?annotate=1` or `Cmd/Ctrl+Shift+A`. Each note stores a W3C TextQuoteSelector triple (quote plus ~30 chars of prefix/suffix), which is what lets `scripts/blog_review.py` find the spot in the markdown via a five-stage match cascade — exact, context-anchored, normalized, fuzzy, approximate — with unresolvable notes reported under UNLOCATED rather than guessed at. A real 6-note review batch against [/timeoff-2026-07](/timeoff-2026-07) shook out follow-on fixes: markup-escaping so a note quoting a markdown link doesn't crash the CLI with a `MarkupError`, a proper permalink → file resolution layered on `permalink:` / `redirect_from:` / filename derivation, and per-annotation `intent` tags (fix / cut / rewrite / expand / check / question / note). A later pass adds `origin` (scheme + host + port) alongside every permalink, so a note captured against a Tailscale-served preview can't be silently applied as if it described production. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/76dc58367)
+
+### Scandinavia Recap: Gyms, Stories, and Review Polish
+
+**[/timeoff-2026-07#the-one-thing-i-actually-researched-the-gyms](/timeoff-2026-07#the-one-thing-i-actually-researched-the-gyms)** — new section on the one thing Igor actually researched pre-trip: which city gyms had kettlebells. It held — a real gym every three days for the whole trip, back exercises done on whatever floor was going, receipt paid off at the top of the Voss gondola climbing a rope to ring a bell sixteen days in. Igor's own highlight-and-comment review pass (the tool built this week, see above) drove a structural cleanup: the old duplicate "Where we went (by leg)" list merged into "How it actually went" so there's one per-leg list per city — narrative, then places, then the Timeline day-strip — and the "How I tried to do this trip" section was cut outright. Oslo's subway exchange got its dictated dialogue restored verbatim instead of Igor's paraphrase talking past it. Two Telegram photos from a SATS gym that "looked like a nightclub" landed in the new gym section, and `timeline_strip.html` picked up escaping for all three of its fields after a stray quote or semicolon in alt text started breaking thumbnails mid-page. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4ae7fe8c3)
+
+### AI Eval Tools: SWE-bench Column
+
+**[/ai-eval-tools#the-shared-anatomy-same-concepts-different-names](/ai-eval-tools#the-shared-anatomy-same-concepts-different-names)** — follow-up to last week's survey: adds a SWE-bench column to the rosetta-stone and capability-grid tables, and corrects the Terminal-Bench column against the current harness (renamed Harbor since Nov 2025 — the old `tb` CLI is the legacy 1.x path). New prose on the distinction the tables hide: Terminal-Bench isolates the *agent* (tests copied in only after its clock stops, final container state is what's graded), SWE-bench isolates the *grading* (a supplied patch is applied and tested, no agent code in the benchmark repo at all) — their vocabularies say as much, "trial"/"agent" versus "task instance"/`model_name_or_path`. With the corrected rows, Terminal-Bench rather than Inspect now sweeps the most boxes in the capability grid. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/9ff130359)
+
+### August 2026 Focus
+
+**[/y2026#august-2026-focus](/y2026#august-2026-focus)** — post-Scandinavia reset block: an overarching courage rule ("when I think I should do an act of joy for a stranger, I always do it") framed as a bright-line rule rather than a target, so there's nothing left to decide in the moment. Plus three buckets — Smiles & Wonder (carry a balloon inflator clipped to the belt, closing the gap between impulse and act), Physical Health (175 as an August waypoint toward the annual 170 goal, kettlebell swing gaps, back-lunge additions), and Emotional Health (daily SKY, compassionate consequences). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/cca3c5b6a)
+
+### Other Projects (2026-08-10)
+
+**[swing-analyzer](https://github.com/idvorkin-ai-tools/swing-analyzer)** (golf swing analysis)
+
+A codex architecture review drove five structural fixes: extracted `useVideoViewport` from `useExerciseAnalyzer` as a cohesive whole rather than a line-count split, deleted a dead duplicate rep counter (the pipeline already owned the authoritative count), and removed a vestigial frame-acquisition layer since crop is a viewport concern — codex called the boundary violation it fixed the worst in the codebase and an obstacle to a planned camera source. A follow-up self-review caught that an fps-audit fix had traded a Low-severity bug for a High one (stamping `fpsMeasured` on any single below-threshold reading could misclassify a genuinely 60fps video), and a second review round fixed a one-pass budget that was turning a user correction into data loss. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/swing-analyzer/commit/36b4462b9)
 
 ## Week of 2026-08-03
 
