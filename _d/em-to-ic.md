@@ -108,9 +108,7 @@ I don't have that resolved. Naming it honestly is where I am.
 
 - Do I go back to managing? Do I _want_ to? Ask me in a year.
 - If I keep coaching without authority, am I being useful or just failing to let go?
-- How do I keep the people muscle from atrophying when nothing in my job requires it?
-- Is a decade of management experience a moat in the agentic era, or a nostalgia trap? The orchestration skills clearly transfer. I'm less sure the instincts do.
-- What does senior even mean on the IC ladder when [agents write the code](/ai-native-manager#open-questions)?
+- How does multi-player agentic engineering work — a team of humans, each running their own fleet?
 
 {% include summarize-page.html src="/ai-native-manager" %}
 
