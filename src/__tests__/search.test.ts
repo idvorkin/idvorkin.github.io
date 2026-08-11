@@ -448,6 +448,21 @@ describe("Search Module", () => {
       expect(results.map((r) => r.url)).toEqual(["/timeoff", "/timeoff-next"]);
     });
 
+    it("degrades to organic-only when the pins payload is not an array", async () => {
+      // A malformed deploy of search-pins.json must not take down search:
+      // without an Array.isArray guard, .filter throws and searchBlog rejects.
+      vi.stubGlobal(
+        "fetch",
+        vi.fn().mockImplementation(async (url: string) => {
+          if (String(url).includes("search-pins")) return { ok: true, json: async () => ({ oops: true }) };
+          return { ok: true, json: async () => [{ t: "Getting the most out of time off", u: "/timeoff" }] };
+        }),
+      );
+      const results = await searchBlog("time off");
+      expect(results.map((r) => r.url)).toContain("/timeoff");
+      expect(results.every((r) => r.source !== "pinned")).toBe(true);
+    });
+
     it("degrades to organic-only when the pins config is unreachable", async () => {
       vi.stubGlobal(
         "fetch",

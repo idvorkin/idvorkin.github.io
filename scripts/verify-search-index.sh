@@ -128,7 +128,8 @@ for rule in rules:
     for pin in rule['urls']:
         u = pin['url']
         assert u.startswith('/'), f'pin url must be site-relative: {u}'
-        slug = u.strip('/')
+        # '/' pins the site root, which builds to index.html, not '.html'
+        slug = u.strip('/') or 'index'
         candidates = [f'{site}/{slug}.html', f'{site}/{slug}/index.html']
         assert any(os.path.isfile(c) for c in candidates), f'pinned url does not resolve to a built page: {u}'
 print(f'  {sum(len(r[\"urls\"]) for r in rules)} pins across {len(rules)} rules')

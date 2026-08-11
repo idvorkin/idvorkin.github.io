@@ -137,7 +137,11 @@ async function loadSearchPins(): Promise<ISearchPinRule[] | null> {
     pinsPromise = (async () => {
       const resp = await fetch(PINS_URL);
       if (!resp.ok) throw new Error(`pins config HTTP ${resp.status}`);
-      return (await resp.json()) as ISearchPinRule[];
+      const rules = await resp.json();
+      // A malformed payload must degrade to organic-only search, not throw
+      // at .filter and take searchBlog down with it.
+      if (!Array.isArray(rules)) throw new Error("pins config is not an array");
+      return rules as ISearchPinRule[];
     })().catch((err) => {
       console.warn("Search pins unavailable:", err);
       pinsPromise = null;

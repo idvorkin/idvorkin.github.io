@@ -12,4 +12,4 @@ redirect_to at it. The page body never renders; jekyll-redirect-from
 replaces it with a meta-refresh page.
 -->
 
-Redirects to the upcoming/most recent time off post.
+Redirects to the upcoming or most recent time-off post.

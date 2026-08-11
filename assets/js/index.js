@@ -123,7 +123,7 @@ function oe(e) {
     `;
   return t;
 }
-function Re(e, t) {
+function Ae(e, t) {
   return `
     <div class="remaining-posts-section">
       <h2 id="remaining-posts-toggle" class="remaining-toggle">
@@ -135,7 +135,7 @@ function Re(e, t) {
     </div>
   `;
 }
-function Ae() {
+function Re() {
   return `
     <style>
       .last-modified-list {
@@ -204,9 +204,9 @@ function Be(e, t = 15) {
   let i = oe(r);
   if (o.length > 0) {
     const s = ne(o), a = oe(s);
-    i += Re(a, o.length);
+    i += Ae(a, o.length);
   }
-  return Ae() + i;
+  return Re() + i;
 }
 async function re(e = "last-modified-posts", t = 15, n = document) {
   const o = n.getElementById(e);
@@ -301,7 +301,7 @@ function We(e, t, n) {
   o && n.fillRect(e.x - o[0] / 2, e.y - o[1] / 2, ...o);
 }
 let y = [], b = null, x = null;
-function R(e) {
+function A(e) {
   if (!x) {
     console.log("Cannot center: Graph not initialized");
     return;
@@ -326,7 +326,7 @@ function Je() {
   for (const e of y)
     e.expanded = !1;
   b && (b.expanded = !0), x && (x.graphData(j(y)), b && setTimeout(() => {
-    R(b);
+    A(b);
   }, 300));
 }
 async function Ye() {
@@ -364,14 +364,14 @@ async function Ye() {
     window.open(a.url, "_blank");
   }).onNodeClick((a) => {
     a.expanded = !a.expanded, y.filter((c) => c.expanded).length === 0 && (a.expanded = !0), x.graphData(j(y)), setTimeout(() => {
-      R(a);
+      A(a);
     }, 300);
   });
   const o = B(y, n);
-  o ? R(o) : console.log("Initial node not found, cannot center");
+  o ? A(o) : console.log("Initial node not found, cannot center");
   const r = document.getElementById("center_control");
   r ? r.addEventListener("click", () => {
-    b ? R(b) : console.log("No last detail node to center on");
+    b ? A(b) : console.log("No last detail node to center on");
   }) : console.log("Center control element not found");
   const i = document.getElementById("goto_control");
   i && i.addEventListener("click", qe);
@@ -495,7 +495,7 @@ function nt(e, t) {
   const i = e.querySelector(".github-issue-title");
   i && i.focus();
 }
-function A(e) {
+function R(e) {
   e.style.display = "none";
   const t = e.querySelector(".github-issue-comment");
   t && (t.value = "");
@@ -749,17 +749,17 @@ function lt(e, t) {
 function ct(e, t, n) {
   const o = [], r = e.querySelector(".github-issue-popup-close");
   if (r) {
-    const p = () => A(e);
+    const p = () => R(e);
     r.addEventListener("click", p), o.push(() => r.removeEventListener("click", p));
   }
   const i = e.querySelector(".github-issue-cancel");
   if (i) {
-    const p = () => A(e);
+    const p = () => R(e);
     i.addEventListener("click", p), o.push(() => i.removeEventListener("click", p));
   }
   const s = () => {
     const p = e.querySelector(".github-issue-title"), g = e.querySelector(".github-issue-comment"), m = p?.value || "", h = g?.value || "", E = st(n, t.textContent || "", m, h, t);
-    window.open(E, "_blank"), A(e);
+    window.open(E, "_blank"), R(e);
   }, a = e.querySelector(".github-issue-submit");
   a && (a.addEventListener("click", s), o.push(() => a.removeEventListener("click", s)));
   const l = e.querySelector(".github-issue-title"), c = e.querySelector(".github-issue-comment"), d = (p) => {
@@ -788,7 +788,7 @@ function dt(e, t) {
   i.addEventListener("click", c), s.push(() => i.removeEventListener("click", c));
   const d = (m) => {
     const h = W.get(e);
-    h && !h.contains(m.target) && m.target !== i && !i.contains(m.target) && h.style.display !== "none" && A(h);
+    h && !h.contains(m.target) && m.target !== i && !i.contains(m.target) && h.style.display !== "none" && R(h);
   }, u = setTimeout(() => {
     typeof document > "u" || (document.addEventListener("click", d, !0), s.push(() => document.removeEventListener("click", d, !0)));
   }, 100);
@@ -1492,7 +1492,7 @@ async function te(e, t, n, o = $, r = Plotly) {
     return console.error("Failed to create sunburst plot:", c), null;
   }
 }
-function Rt(e = "Root", t = null, n = $) {
+function At(e = "Root", t = null, n = $) {
   const o = t ? n(t).find("h2") : n("h2"), r = [];
   return o.each((i, s) => {
     const a = n(s), l = a.text().trim();
@@ -1509,8 +1509,8 @@ function Rt(e = "Root", t = null, n = $) {
     c.length > 0 && r.push(new f({ name: l, children: c }));
   }), new f({ name: e, children: r });
 }
-async function At(e, t, n = "Root", o = null, r = $, i = Plotly) {
-  const s = Rt(n, o, r);
+async function Rt(e, t, n = "Root", o = null, r = $, i = Plotly) {
+  const s = At(n, o, r);
   return te(e, t, s, r, i);
 }
 class zt {
@@ -1752,7 +1752,7 @@ async function Ft(e, t) {
   else
     console.warn("Plotly is not defined, skipping chart rendering");
 }
-function bn(e = "Topics", t = At, n = ee, o = Z, r = Q, i = k) {
+function bn(e = "Topics", t = Rt, n = ee, o = Z, r = Q, i = k) {
   try {
     t("sunburst", "sunburst_text", e), n(), o(), r("#random-eulogy-role"), i("#random-blog-posts", async () => await Ee());
   } catch (s) {
@@ -1791,7 +1791,9 @@ async function Yt() {
   return N || (N = (async () => {
     const e = await fetch(Jt);
     if (!e.ok) throw new Error(`pins config HTTP ${e.status}`);
-    return await e.json();
+    const t = await e.json();
+    if (!Array.isArray(t)) throw new Error("pins config is not an array");
+    return t;
   })().catch((e) => (console.warn("Search pins unavailable:", e), N = null, null))), N;
 }
 function be(e) {
@@ -2093,7 +2095,7 @@ export {
   f as TreeNode,
   ee as add_random_prompts,
   te as add_sunburst,
-  At as add_sunburst_from_dom,
+  Rt as add_sunburst_from_dom,
   k as append_randomizer_div,
   Pe as defer,
   _ as get_link_info,
