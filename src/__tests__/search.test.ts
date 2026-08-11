@@ -308,18 +308,34 @@ describe("Search Module", () => {
     });
   });
 
-  describe("searchBlog", () => {
-    beforeEach(() => {
-      vi.stubGlobal(
-        "fetch",
-        vi.fn().mockResolvedValue({
+  /**
+   * URL-aware fetch stub: searchBlog now pulls two JSON files — the title
+   * index and the pins config. A wholesale fetch mock would feed title JSON
+   * to the pins loader.
+   */
+  function stubSearchFetches(
+    pinsConfig: Array<{ match: string[]; urls: Array<{ url: string; title?: string }> }> = [],
+  ): void {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn().mockImplementation(async (url: string) => {
+        if (String(url).includes("search-pins")) {
+          return { ok: true, json: async () => pinsConfig };
+        }
+        return {
           ok: true,
           json: async () => [
             { t: "Kettlebells - A rock with a handle", u: "/kettlebell" },
             { t: "Igor's Eulogy", u: "/eulogy" },
           ],
-        }),
-      );
+        };
+      }),
+    );
+  }
+
+  describe("searchBlog", () => {
+    beforeEach(() => {
+      stubSearchFetches();
     });
 
     it("returns [] for an empty query", async () => {
@@ -340,6 +356,109 @@ describe("Search Module", () => {
     it("respects the result limit", async () => {
       const results = await searchBlog("a", 1);
       expect(results.length).toBeLessThanOrEqual(1);
+    });
+  });
+
+  describe("search pins (stack-ranked policy results)", () => {
+    // Matching is contains + spacing-insensitive: spaceless(query) must contain
+    // spaceless(phrase). "time off", "timeoff", "Time-Off", and "best time off
+    // ideas" all trigger a ["time off"] rule.
+    const PINS = [
+      {
+        match: ["time off", "timeoff"],
+        urls: [{ url: "/timeoff" }, { url: "/timeoff-next", title: "Next time off" }],
+      },
+    ];
+
+    beforeEach(() => {
+      stubSearchFetches(PINS);
+      vi.mocked(shared.get_link_info).mockResolvedValue({
+        "/timeoff": {
+          url: "/timeoff",
+          title: "Getting the most out of time off",
+          description: "How to vacation well",
+        },
+        "/kettlebell": {
+          url: "/kettlebell",
+          title: "Kettlebells - A rock with a handle",
+          description: "A test page about kettlebells",
+        },
+      } as any);
+    });
+
+    it("shows pinned URLs first, in config (stack-rank) order", async () => {
+      const results = await searchBlog("time off");
+      expect(results[0].url).toBe("/timeoff");
+      expect(results[1].url).toBe("/timeoff-next");
+    });
+
+    it("fires on spacing and case variants of the phrase", async () => {
+      for (const q of ["timeoff", "Time-Off", "TIME OFF"]) {
+        const results = await searchBlog(q);
+        expect(results[0]?.url, `query: ${q}`).toBe("/timeoff");
+      }
+    });
+
+    it("fires when the query merely contains the phrase", async () => {
+      const results = await searchBlog("best time off ideas");
+      expect(results[0].url).toBe("/timeoff");
+      expect(results[1].url).toBe("/timeoff-next");
+    });
+
+    it("does not fire on unrelated queries", async () => {
+      const results = await searchBlog("kettlebell");
+      expect(results.map((r) => r.url)).not.toContain("/timeoff-next");
+    });
+
+    it("resolves title and description from back-links, falling back to config title", async () => {
+      const results = await searchBlog("time off");
+      // /timeoff exists in back-links -> its real title and description
+      expect(results[0].title).toBe("Getting the most out of time off");
+      expect(results[0].excerpt).toBe("How to vacation well");
+      // /timeoff-next is a redirect with no back-links metadata -> config title
+      expect(results[1].title).toBe("Next time off");
+    });
+
+    it("tags pins as pinned so the renderer escapes their excerpts", async () => {
+      const results = await searchBlog("time off");
+      expect(results[0].source).toBe("pinned");
+    });
+
+    it("dedupes an organic hit that is already pinned", async () => {
+      pagefindMock.options.mockResolvedValue(undefined);
+      pagefindMock.search.mockResolvedValue({
+        results: [
+          {
+            data: async () => ({
+              url: "/timeoff.html",
+              meta: { title: "Getting the most out of time off" },
+              excerpt: "",
+            }),
+          },
+        ],
+      });
+      const results = await searchBlog("time off");
+      expect(results.filter((r) => r.url === "/timeoff")).toHaveLength(1);
+      expect(results[0].source).toBe("pinned");
+    });
+
+    it("counts pins against the result limit", async () => {
+      const results = await searchBlog("time off", 2);
+      expect(results).toHaveLength(2);
+      expect(results.map((r) => r.url)).toEqual(["/timeoff", "/timeoff-next"]);
+    });
+
+    it("degrades to organic-only when the pins config is unreachable", async () => {
+      vi.stubGlobal(
+        "fetch",
+        vi.fn().mockImplementation(async (url: string) => {
+          if (String(url).includes("search-pins")) return { ok: false, status: 404 };
+          return { ok: true, json: async () => [{ t: "Getting the most out of time off", u: "/timeoff" }] };
+        }),
+      );
+      const results = await searchBlog("time off");
+      expect(results.map((r) => r.url)).toContain("/timeoff");
+      expect(results.every((r) => r.source !== "pinned")).toBe(true);
     });
   });
 

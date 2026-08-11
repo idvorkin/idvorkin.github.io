@@ -114,7 +114,70 @@ export interface ISearchResult {
   title: string;
   /** May contain Pagefind's <mark> highlight tags. Already escaped by Pagefind. */
   excerpt: string;
-  source: "pagefind" | "title";
+  source: "pagefind" | "title" | "pinned";
+}
+
+// ---------------------------------------------------------------------------
+// Pins (stack-ranked policy results)
+// ---------------------------------------------------------------------------
+
+/** Curated pins config, published from _data/search_pins.yml. */
+const PINS_URL = "/search-pins.json";
+
+interface ISearchPinRule {
+  match: string[];
+  urls: Array<{ url: string; title?: string }>;
+}
+
+let pinsPromise: Promise<ISearchPinRule[] | null> | null = null;
+
+/** Memoized pins config; null (organic-only search) when it can't be loaded. */
+async function loadSearchPins(): Promise<ISearchPinRule[] | null> {
+  if (!pinsPromise) {
+    pinsPromise = (async () => {
+      const resp = await fetch(PINS_URL);
+      if (!resp.ok) throw new Error(`pins config HTTP ${resp.status}`);
+      return (await resp.json()) as ISearchPinRule[];
+    })().catch((err) => {
+      console.warn("Search pins unavailable:", err);
+      pinsPromise = null;
+      return null;
+    });
+  }
+  return pinsPromise;
+}
+
+/**
+ * Spacing-insensitive comparison key: "Time-Off" and "time off" both become
+ * "timeoff", so one match phrase covers every way a reader types it.
+ */
+function spaceless(text: string): string {
+  return text.toLowerCase().replace(/[\s-]+/g, "");
+}
+
+/**
+ * Policy hits for a query: every rule whose match phrase is CONTAINED in the
+ * query (spacing-insensitive) contributes its urls, in config order — the
+ * config list is an explicit stack rank. Titles and descriptions resolve from
+ * back-links.json; a redirect page has no metadata there, so the config's own
+ * `title` is the fallback.
+ */
+async function searchPins(query: string): Promise<ISearchResult[]> {
+  const rules = await loadSearchPins();
+  if (!rules || rules.length === 0) return [];
+  const q = spaceless(query);
+  const matched = rules.filter((r) => r.match?.some((phrase) => phrase && q.includes(spaceless(phrase))));
+  if (matched.length === 0) return [];
+  const linkInfo = await get_link_info().catch(() => ({}) as any);
+  return matched
+    .flatMap((r) => r.urls || [])
+    .map((pin) => ({
+      url: pin.url,
+      title: linkInfo?.[pin.url]?.title || pin.title || pin.url,
+      excerpt: linkInfo?.[pin.url]?.description || "",
+      source: "pinned" as const,
+    }))
+    .filter((r) => isValidUrl(r.url));
 }
 
 // ---------------------------------------------------------------------------
@@ -238,11 +301,15 @@ export async function searchTitles(query: string, limit = 5): Promise<ISearchRes
  */
 export async function searchBlog(query: string, limit = 10): Promise<ISearchResult[]> {
   if (!query || !query.trim()) return [];
-  const [full, titles] = await Promise.all([searchPagefind(query, limit), searchTitles(query, 5)]);
+  const [pinned, full, titles] = await Promise.all([
+    searchPins(query),
+    searchPagefind(query, limit),
+    searchTitles(query, 5),
+  ]);
 
   const seen = new Set<string>();
   const merged: ISearchResult[] = [];
-  for (const r of [...full, ...titles]) {
+  for (const r of [...pinned, ...full, ...titles]) {
     if (seen.has(r.url)) continue;
     seen.add(r.url);
     merged.push(r);
@@ -260,6 +327,7 @@ export async function searchBlog(query: string, limit = 10): Promise<ISearchResu
 export function __resetSearchCaches(): void {
   pagefindPromise = null;
   titleIndexPromise = null;
+  pinsPromise = null;
 }
 
 /**

@@ -42,8 +42,13 @@ fi
 # --- 2. Family journal must NOT be indexed -----------------------------------
 # Every _ig66 page must carry data-pagefind-ignore and must NOT carry
 # data-pagefind-body.
+# The attribute must be matched INSIDE a tag ('<[^>]*data-pagefind-body'), not
+# as a bare substring: prose that mentions the attribute (the changelog entry
+# describing this very search setup does, in a <code> span) is not indexable.
+PF_BODY_ATTR='<[^>]*data-pagefind-body'
+
 if [ -d "$SITE/ig66" ]; then
-    leaked=$(grep -rl "data-pagefind-body" "$SITE/ig66" 2>/dev/null | head -5 || true)
+    leaked=$(grep -rlE "$PF_BODY_ATTR" "$SITE/ig66" 2>/dev/null | head -5 || true)
     if [ -n "$leaked" ]; then
         err "family journal pages are marked indexable:"
         echo "$leaked" >&2
@@ -64,7 +69,7 @@ fi
 excluded_ok=1
 for slug in changelog positive-mitzvahs negative-mitzvahs; do
     for candidate in "$SITE/$slug.html" "$SITE/$slug/index.html"; do
-        if [ -f "$candidate" ] && grep -q "data-pagefind-body" "$candidate" 2>/dev/null; then
+        if [ -f "$candidate" ] && grep -qE "$PF_BODY_ATTR" "$candidate" 2>/dev/null; then
             err "/$slug is marked indexable but is in site.search.exclude_permalinks"
             excluded_ok=0
         fi
@@ -77,7 +82,7 @@ if [ "$excluded_ok" -eq 1 ]; then
 fi
 
 # --- 4. Real content IS indexed (guards against excluding everything) --------
-indexable=$(grep -rl "data-pagefind-body" "$SITE" --include='*.html' 2>/dev/null | wc -l | tr -d ' ')
+indexable=$(grep -rlE "$PF_BODY_ATTR" "$SITE" --include='*.html' 2>/dev/null | wc -l | tr -d ' ')
 if [ "$indexable" -lt 100 ]; then
     err "only $indexable pages marked indexable — expected 100+ (over-exclusion?)"
 else
@@ -105,7 +110,36 @@ print(f'  {len(d)} titles')
     fi
 fi
 
-# --- 6. Custom domain survived the build ------------------------------------
+# --- 6. Search pins are valid and every pinned URL resolves -------------------
+# A typo'd permalink in _data/search_pins.yml would pin a dead link as the top
+# search result — the most prominent 404 possible. Gate it here.
+pins="$SITE/search-pins.json"
+if [ ! -f "$pins" ]; then
+    err "$pins missing — pinned search results will not work"
+else
+    if ! python3 -c "
+import json, os, sys
+site = '$SITE'
+rules = json.load(open('$pins'))
+assert isinstance(rules, list), 'not a list'
+for rule in rules:
+    assert rule.get('match') and all(m.strip() for m in rule['match']), f'empty match in {rule}'
+    assert rule.get('urls'), f'no urls in {rule}'
+    for pin in rule['urls']:
+        u = pin['url']
+        assert u.startswith('/'), f'pin url must be site-relative: {u}'
+        slug = u.strip('/')
+        candidates = [f'{site}/{slug}.html', f'{site}/{slug}/index.html']
+        assert any(os.path.isfile(c) for c in candidates), f'pinned url does not resolve to a built page: {u}'
+print(f'  {sum(len(r[\"urls\"]) for r in rules)} pins across {len(rules)} rules')
+" 2>&1; then
+        err "search pins failed validation"
+    else
+        ok "search pins valid"
+    fi
+fi
+
+# --- 7. Custom domain survived the build ------------------------------------
 if [ -f CNAME ] && [ ! -f "$SITE/CNAME" ]; then
     err "CNAME missing from $SITE — the custom domain would break on deploy"
 elif [ -f "$SITE/CNAME" ]; then

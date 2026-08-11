@@ -74,6 +74,19 @@ test.describe("Homepage search functionality", () => {
     await expect(page.locator("#featured-results")).toContainText(/kettlebell/i);
   });
 
+  test("Pinned results lead for a 'time off' search, in stack-rank order", async ({ page }) => {
+    // Policy layer (_data/search_pins.yml): queries containing "time off" pin
+    // /timeoff and /timeoff-next as the first two results, ahead of organic
+    // full-text hits.
+    const searchInput = page.locator("#search-input");
+    await searchInput.fill("time off");
+
+    const links = page.locator("#featured-results .result-item a");
+    await expect(links.first()).toBeVisible({ timeout: 15000 });
+    await expect(links.nth(0)).toHaveAttribute("href", "/timeoff");
+    await expect(links.nth(1)).toHaveAttribute("href", "/timeoff-next");
+  });
+
   test("Shows no results for nonsense search", async ({ page }) => {
     // TWO nonsense words, deliberately. Pagefind progressively shortens the
     // LAST query word until something matches (search-as-you-type), so a single

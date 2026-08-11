@@ -42,7 +42,7 @@ repos:
         # search.json and search-titles.json are Liquid templates that Jekyll
         # renders INTO json — the sources have frontmatter and {% %} tags, so
         # they are not parseable as json until built.
-        exclude: ^(search|search-titles)\.json$
+        exclude: ^(search|search-titles|search-pins)\.json$
 
   # ✍️ Typos: Spell checking for code and prose
   - repo: https://github.com/crate-ci/typos
