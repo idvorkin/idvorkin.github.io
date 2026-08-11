@@ -12,7 +12,7 @@ Most of the tax information on the web is a mess. It's confusing because it trie
 
 {% include local_image_float_right.html src="raccoon-money.webp" %}
 
-For RSUs, stock options, metrics, health insurance, and money philosophy, see the companion [money post](/money).
+For RSUs, stock options, metrics, health insurance, and money philosophy, see the companion [money post](/money). To run your own numbers against the tables below, use the [capital gains calculator](https://idvorkin-ai-tools.github.io/cap-gains-explainer/) — same 2026 federal figures, same WA kinks, with wages as a slider so you can watch a salary eat the 0% bracket.
 
 <!-- prettier-ignore-start -->
 
@@ -76,15 +76,15 @@ Below is tax rate by income in 2020.
 
 ### Washington State Capital Gains Tax
 
-Washington has a state-level long-term capital gains tax, enacted by [ESSB 5096 (2021)](https://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session%20Laws/Senate/5096-S.SL.pdf) and upheld as an excise tax — not an income tax — by the WA Supreme Court in [Quinn v. State (2023)](https://www.courts.wa.gov/opinions/pdf/1004200.pdf). The 2.9% surcharge tier was added by [ESSB 5813 (2025)](https://lawfilesext.leg.wa.gov/biennium/2025-26/Pdf/Bill%20Reports/Senate/5813-S.E%20SBR%20FBR%2025.pdf), retroactive to Jan 1, 2025. Current schedule (2026, indexed annually):
+Washington has a state-level long-term capital gains tax, enacted by [ESSB 5096 (2021)](https://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session%20Laws/Senate/5096-S.SL.pdf) and upheld as an excise tax — not an income tax — by the WA Supreme Court in [Quinn v. State (2023)](https://www.courts.wa.gov/opinions/pdf/1004200.pdf). The 2.9% surcharge tier was added by [ESSB 5813 (2025)](https://lawfilesext.leg.wa.gov/biennium/2025-26/Pdf/Bill%20Reports/Senate/5813-S.E%20SBR%20FBR%2025.pdf), retroactive to Jan 1, 2025. Schedule below is the **2025** one: DOR re-indexes the deduction each October and has not published 2026, so every WA figure in this post is a 2025 amount and runs a few thousand dollars conservative.
 
-| Annual LTCG (after exemption)      | WA rate                    |
-| ---------------------------------- | -------------------------- |
-| $0 – $278,000 (standard deduction) | 0%                         |
-| $278,001 – $1,278,000              | 7%                         |
-| $1,278,001+                        | 9.9% (7% + 2.9% surcharge) |
+| Annual LTCG (after exemption)            | WA rate                    |
+| ---------------------------------------- | -------------------------- |
+| $0 – $278,000 (standard deduction)       | 0%                         |
+| $278,001 – $1,278,000                    | 7%                         |
+| $1,278,001+ (deduction + $1M, unindexed) | 9.9% (7% + 2.9% surcharge) |
 
-Authority: [RCW 82.87](https://app.leg.wa.gov/RCW/default.aspx?cite=82.87) · [WA DOR — Capital Gains Tax](https://dor.wa.gov/taxes-rates/other-taxes/capital-gains-tax) · [WA DOR — Tiered rates special notice](https://dor.wa.gov/forms-publications/publications-subject/special-notices/new-tiered-rates-washingtons-capital-gains-tax).
+Authority: [RCW 82.87.040](https://app.leg.wa.gov/RCW/default.aspx?cite=82.87.040) (rate plus the 2.9% surcharge on gains more than $1M over the deduction) · [RCW 82.87.060](https://app.leg.wa.gov/RCW/default.aspx?cite=82.87.060) ($250,000 statutory deduction — per individual, **not** doubled for MFJ) · [RCW 82.87.150](https://app.leg.wa.gov/RCW/default.aspx?cite=82.87.150) (annual CPI indexing, which is what lifted $250K to $278K) · [WA DOR — Capital Gains Tax](https://dor.wa.gov/taxes-rates/other-taxes/capital-gains-tax) · [WA DOR — Tiered rates special notice](https://dor.wa.gov/forms-publications/publications-subject/special-notices/new-tiered-rates-washingtons-capital-gains-tax).
 
 The tax applies to individuals, including those with ownership interests in pass-through or disregarded entities that sell or exchange long-term capital assets. Key exemptions:
 
@@ -92,9 +92,9 @@ The tax applies to individuals, including those with ownership interests in pass
 - Retirement accounts (IRAs, 401(k)s) and assets held inside them
 - Some family-owned small business stock, timber, livestock, commercial fishing privileges
 
-Note: WA does **not** conform to the federal [§1202 QSBS exclusion](https://www.irs.gov/pub/irs-drop/rr-98-41.pdf) — qualifying small-business-stock gains are federally excluded but still fully WA-taxable.
+Note: WA does **not** conform to the federal [§1202 QSBS exclusion](https://www.law.cornell.edu/uscode/text/26/1202) — qualifying small-business-stock gains are federally excluded but still fully WA-taxable.
 
-**Hypothetical worked example** — a married-filing-jointly household already above the [$250K NIIT threshold](https://www.irs.gov/individuals/net-investment-income-tax) on wages, so NIIT applies to the full gain. Federal LTCG at 20% (top bracket, MFJ > [$613,700 taxable income](https://www.irs.gov/taxtopics/tc409)) + 3.8% NIIT = 23.8%. Realizations chosen to sit **at or just past the WA step-function kinks** so the marginal bite is visible:
+**Hypothetical worked example** — a married-filing-jointly household already above the [$250K NIIT threshold](https://www.irs.gov/individuals/net-investment-income-tax) on wages, so NIIT applies to the full gain. Federal LTCG at 20% (top bracket, MFJ > $613,700 taxable income — [Rev. Proc. 2025-32 §3.03](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf)) + 3.8% NIIT = 23.8%. Realizations chosen to sit **at or just past the WA step-function kinks** so the marginal bite is visible:
 
 | LTCG realized | Where it sits                                       | Total    | **Effective** | **Marginal at this tier** |
 | ------------- | --------------------------------------------------- | -------- | ------------- | ------------------------- |
@@ -111,20 +111,20 @@ Two step-functions to notice:
 
 **Planning implication.** Splitting a $2M realization into two $1M tax years saves the 2.9% surcharge on the ~$722K above $1.278M — roughly $21K/yr. Every dollar above the surcharge kink pays nearly 10% more than the dollar just below it. See [installment sales under IRC §453](https://www.irs.gov/publications/p537) for the standard mechanism to spread across tax years.
 
-**Retirement scenario — living on LTCG with no wage income.** The picture flips dramatically when there's no salary in the mix. With LTCG as essentially all income, a retired MFJ household unlocks federal brackets that high earners never see during working years: the **0% federal LTCG bracket** (taxable income ≤ [$98,900 MFJ in 2026](https://www.kiplinger.com/taxes/capital-gains-tax/602224/capital-gains-tax-rates)) and the **15%** bracket (up to $613,700), rather than the 20% top bracket. Example: living on $300K/yr, all from LTCG realizations, MFJ, using the 2026 [standard deduction (~$30,000)](https://www.irs.gov/newsroom/irs-provides-tax-inflation-adjustments-for-tax-year-2026):
+**Retirement scenario — living on LTCG with no wage income.** The picture flips dramatically when there's no salary in the mix. Gains stack _above_ ordinary income ([IRC §1(h)](https://www.law.cornell.edu/uscode/text/26/1)), so deleting the wages is exactly what frees up the bottom brackets: a retired MFJ household gets the **0% federal LTCG bracket** (taxable income ≤ $98,900) and the **15%** bracket (up to $613,700) instead of the 20% top rate — [Rev. Proc. 2025-32 §3.03](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf). Example: living on $300K/yr, all from LTCG realizations, MFJ, using the 2026 standard deduction of **$32,200** ([Rev. Proc. 2025-32 §3.14](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf), summarized in the [IRS 2026 inflation-adjustment release](https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill)):
 
 | Layer                                               | Math                                   | Tax         |
 | --------------------------------------------------- | -------------------------------------- | ----------- |
-| Taxable income (after std deduction)                | $300,000 − $30,000 = $270,000          | —           |
+| Taxable income (after std deduction)                | $300,000 − $32,200 = $267,800          | —           |
 | Federal 0% LTCG bracket (≤ $98,900 taxable)         | $98,900 × 0%                           | $0          |
-| Federal 15% LTCG bracket ($98,900–$270,000 taxable) | $171,100 × 15%                         | $25,665     |
+| Federal 15% LTCG bracket ($98,900–$267,800 taxable) | $168,900 × 15%                         | $25,335     |
 | Federal NIIT (MAGI $300K; excess over $250K = $50K) | $50,000 × 3.8%                         | $1,900      |
 | WA state cap gains (LTCG realized minus $278K)      | ($300,000 − $278,000) × 7% = $22K × 7% | $1,540      |
-| **Total**                                           |                                        | **$29,105** |
+| **Total**                                           |                                        | **$28,775** |
 
-That's a **9.7% effective rate** on $300K of spending — one-third of the ~29% the same household pays on the same dollar amount during working years (from the table above). Two mechanics drive the swing:
+That's a **9.59% effective rate** on $300K of spending — one-third of the ~29% the same household pays on the same dollar amount during working years (from the table above). Two mechanics drive the swing:
 
-1. **The 0% LTCG bracket is only accessible without wage income** (wages push taxable income past $98,900 before any LTCG shows up). Lose your W-2 and you get the first ~$99K of LTCG federally tax-free, assuming no other income.
+1. **The 0% LTCG bracket is only accessible without wage income** (wages fill taxable income past $98,900 before any LTCG shows up). Lose your W-2 and the first **$131,100** of realized gains is federally tax-free — the $32,200 standard deduction plus the $98,900 zero-rate ceiling — assuming no other income.
 2. **NIIT's $250K threshold is unindexed** — it still bites, but only on the $50K above the threshold, not the full gain. The "always applies at high income" rule loosens to "applies on the margin."
 
 WA state is linear in this range (first $278K free, then 7%), so the state bite stays small.
@@ -135,10 +135,10 @@ This is the tax case for timing retirement realizations: every year you draw mos
 
 | LTCG drawn | Fed LTCG bracket at top | NIIT status                         | WA state bracket          | Total tax | **Effective** | **Marginal on next $** |
 | ---------- | ----------------------- | ----------------------------------- | ------------------------- | --------- | ------------- | ---------------------- |
-| $200,000   | 15% (taxable $170K)     | ❌ not yet (MAGI < $250K threshold) | ❌ not yet (LTCG < $278K) | $10,665   | **5.3%**      | 15.0%                  |
-| $300,000   | 15%                     | ✅ on $50K excess over $250K        | ✅ 7% on $22K over $278K  | $29,105   | **9.7%**      | 25.8%                  |
-| $400,000   | 15%                     | ✅ on $150K excess                  | ✅ 7% on $122K over $278K | $54,905   | **13.7%**     | 25.8%                  |
-| $500,000   | 15%                     | ✅ on $250K excess                  | ✅ 7% on $222K over $278K | $80,705   | **16.1%**     | 25.8%                  |
+| $200,000   | 15% (taxable $167,800)  | ❌ not yet (MAGI < $250K threshold) | ❌ not yet (LTCG < $278K) | $10,335   | **5.2%**      | 15.0%                  |
+| $300,000   | 15%                     | ✅ on $50K excess over $250K        | ✅ 7% on $22K over $278K  | $28,775   | **9.6%**      | 25.8%                  |
+| $400,000   | 15%                     | ✅ on $150K excess                  | ✅ 7% on $122K over $278K | $54,575   | **13.6%**     | 25.8%                  |
+| $500,000   | 15%                     | ✅ on $250K excess                  | ✅ 7% on $222K over $278K | $80,375   | **16.1%**     | 25.8%                  |
 
 Between $300K and $500K, the marginal on the next dollar is flat at **25.8%** (15% federal LTCG + 3.8% NIIT + 7% WA). What drives the effective rate up is that a smaller share of each incremental dollar lives in the free 0% federal bracket. Below ~$250K MAGI you're in the 5% effective zone (no NIIT, no WA); cross $250K MAGI and NIIT kicks in; cross $278K LTCG and WA kicks in. After both kinks, the climb is linear.
 
@@ -146,7 +146,7 @@ Between $300K and $500K, the marginal on the next dollar is flat at **25.8%** (1
 
 **Coming in 2028 — millionaires' income tax.** [ESSB 6346](https://lawfilesext.leg.wa.gov/biennium/2025-26/Pdf/Bills/Session%20Laws/Senate/6346-S.SL.pdf) (signed March 30, 2026) layers a 9.9% state income tax on household income above $1M/yr, effective Jan 1, 2028. MFJ couples share a single $1M deduction (not doubled). Credits against WA cap-gains tax and other states' income tax prevent stacking. A legal challenge is in progress; monitor before 2028 planning.
 
-Sources at the federal layer: [IRS Topic 409 — Capital Gains and Losses](https://www.irs.gov/taxtopics/tc409) · [IRS Topic 559 — Net Investment Income Tax](https://www.irs.gov/individuals/net-investment-income-tax) · [Kiplinger 2026 federal LTCG brackets](https://www.kiplinger.com/taxes/capital-gains-tax/602224/capital-gains-tax-rates).
+Sources at the federal layer: [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) — §3.03 for the 2026 LTCG breakpoints ($98,900 / $613,700 MFJ), §3.14 for the $32,200 standard deduction · [IRC §1(h)](https://www.law.cornell.edu/uscode/text/26/1) for gains stacking above ordinary income · [IRS — Net Investment Income Tax](https://www.irs.gov/individuals/net-investment-income-tax) for the 3.8% and its unindexed $250K MFJ threshold. [IRS Topic 409](https://www.irs.gov/taxtopics/tc409) is the friendlier read but still shows 2025 amounts — take the numbers from the revenue procedure.
 
 ### Step-Up in Basis at Death - The Ultimate Tax Escape
 
@@ -263,6 +263,6 @@ An education-only after-tax savings account. You put in money after tax, get tax
 
 ## Standard deduction + 0% LTCG
 
-If long-term capital gains are your only income, you can use the standard deduction to further reduce your taxable income. For 2024, the standard deduction for married filing jointly is $29,200. The 0% federal long-term capital gains rate applies up to $94,050 of taxable income (after the standard deduction). This means you could sell over $120,000 of appreciated stock and pay no federal tax on those gains if you have no other income.
+If long-term capital gains are your only income, the standard deduction stacks on top of the 0% bracket. For 2026, married filing jointly gets a $32,200 standard deduction and pays 0% federal LTCG on the first $98,900 of taxable income ([Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf), §3.14 and §3.03). Stacked, that's **$131,100 of appreciated stock sold with zero federal tax** — and Washington adds nothing until $278,000 of gains.
 
 However, in practice, most people will have at least some dividend or interest income from fixed income positions (like bonds, CDs, or high-yield savings). These count toward your taxable income and reduce the amount of capital gains that can be taxed at the 0% rate. Be sure to include all sources of income when planning your withdrawals and tax strategy.
