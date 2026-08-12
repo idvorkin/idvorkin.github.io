@@ -14,13 +14,13 @@ function ye(e) {
     n = Math.floor(Math.random() * t), t--, [e[t], e[n]] = [e[n], e[t]];
   return e;
 }
-function Pe(e, t) {
+function Ie(e, t) {
   const n = t || e.name || "anonymous function";
   document.readyState === "loading" ? (console.log(`🕐 Deferring ${n} until DOM is ready`), document.addEventListener("DOMContentLoaded", () => {
     console.log(`🚀 Executing deferred ${n}`), e();
   })) : (console.log(`⚡ DOM already ready, executing ${n} immediately`), e());
 }
-async function k(e, t) {
+async function x(e, t) {
   const n = $(e);
   if (n.length !== 1) {
     console.log(`append_randomizer_div ${e} not present`);
@@ -38,13 +38,11 @@ let S = null;
 async function _(e) {
   if (S != null)
     return S;
-  const o = (e || window.location.href).includes("https://idvork.in");
-  let r = "https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True";
-  o || (r = "/back-links.json");
+  const t = "/back-links.json";
   try {
-    return S = (await (await fetch(r)).json()).url_info, S;
-  } catch (i) {
-    return console.error("Error fetching link info", i), {};
+    return S = (await (await fetch(t)).json()).url_info, S;
+  } catch (n) {
+    return console.error("Error fetching link info", n), {};
   }
 }
 async function un() {
@@ -61,7 +59,7 @@ async function un() {
     return console.error("🚨 Error getting random page URL:", e), "/";
   }
 }
-async function Ie(e = "/back-links.json") {
+async function Pe(e = "/back-links.json") {
   if (e === "/test-missing-url-info")
     throw new Error("Missing url_info in data structure");
   try {
@@ -88,7 +86,7 @@ function He(e) {
   return [...e].sort((t, n) => t.last_modified && n.last_modified ? new Date(n.last_modified).getTime() - new Date(t.last_modified).getTime() : n.doc_size - t.doc_size);
 }
 async function _e() {
-  const e = await Ie(), t = Ne(e), n = Me(t);
+  const e = await Pe(), t = Ne(e), n = Me(t);
   return He(n);
 }
 function ne(e) {
@@ -300,9 +298,9 @@ function We(e, t, n) {
   const o = e.__bckgDimensions;
   o && n.fillRect(e.x - o[0] / 2, e.y - o[1] / 2, ...o);
 }
-let y = [], b = null, x = null;
+let y = [], b = null, k = null;
 function A(e) {
-  if (!x) {
+  if (!k) {
     console.log("Cannot center: Graph not initialized");
     return;
   }
@@ -310,7 +308,7 @@ function A(e) {
     console.log("Cannot center: Node is null or undefined");
     return;
   }
-  x.centerAt(e.x, e.y, 500), x.zoom(8, 500), we(e);
+  k.centerAt(e.x, e.y, 500), k.zoom(8, 500), we(e);
 }
 function we(e) {
   if (!e)
@@ -325,7 +323,7 @@ function qe() {
 function Je() {
   for (const e of y)
     e.expanded = !1;
-  b && (b.expanded = !0), x && (x.graphData(j(y)), b && setTimeout(() => {
+  b && (b.expanded = !0), k && (k.graphData(j(y)), b && setTimeout(() => {
     A(b);
   }, 300));
 }
@@ -360,10 +358,10 @@ async function Ye() {
     });
     return;
   }
-  x = ForceGraph()(document.getElementById("graph")).graphData(j(y)).nodeLabel("id").nodeAutoColorBy("group").nodeCanvasObject(Ge).nodePointerAreaPaint(We).onNodeRightClick((a) => {
+  k = ForceGraph()(document.getElementById("graph")).graphData(j(y)).nodeLabel("id").nodeAutoColorBy("group").nodeCanvasObject(Ge).nodePointerAreaPaint(We).onNodeRightClick((a) => {
     window.open(a.url, "_blank");
   }).onNodeClick((a) => {
-    a.expanded = !a.expanded, y.filter((c) => c.expanded).length === 0 && (a.expanded = !0), x.graphData(j(y)), setTimeout(() => {
+    a.expanded = !a.expanded, y.filter((c) => c.expanded).length === 0 && (a.expanded = !0), k.graphData(j(y)), setTimeout(() => {
       A(a);
     }, 300);
   });
@@ -594,8 +592,8 @@ function it(e) {
     o = `${n}-${r}`, r++;
   return e.id = o, o;
 }
-const ke = 600;
-function xe(e) {
+const xe = 600;
+function ke(e) {
   let t = e.nextElementSibling;
   const n = (o) => {
     let r = o;
@@ -625,7 +623,7 @@ function xe(e) {
         ).map((d) => (d.textContent || "").trim()).join(" ").trim();
         if (l.length === 0) continue;
         const c = l.length + 2;
-        if (r.length > 0 && i + c + 1 > ke) {
+        if (r.length > 0 && i + c + 1 > xe) {
           s = !0;
           break;
         }
@@ -641,7 +639,7 @@ function xe(e) {
   }
   return { text: "", hasMore: !1 };
 }
-function P(e, t = ke) {
+function I(e, t = xe) {
   if (e.length <= t)
     return e;
   const n = e.substring(0, t), o = Math.floor(t * 0.6), r = [". ", "! ", "? ", `.
@@ -669,9 +667,9 @@ function ce(e) {
   if (e) {
     const o = document.getElementById(e);
     if (o) {
-      const { text: r, hasMore: i } = xe(o);
+      const { text: r, hasMore: i } = ke(o);
       if (r)
-        return le(P(r), i);
+        return le(I(r), i);
       let s = o.nextElementSibling;
       const a = [];
       let l = 0, c = !1;
@@ -691,7 +689,7 @@ function ce(e) {
         d = d.nextElementSibling;
       }
       if (a.length > 0)
-        return le(P(a.join(" ")), c);
+        return le(I(a.join(" ")), c);
     }
   }
   const t = [
@@ -710,7 +708,7 @@ function ce(e) {
       if (i) {
         const s = (i.textContent || "").trim();
         if (s.length > 0)
-          return P(s);
+          return I(s);
       }
     }
   }
@@ -718,12 +716,12 @@ function ce(e) {
   if (n) {
     const o = (n.textContent || "").trim();
     if (o.length > 0)
-      return P(o);
+      return I(o);
   }
   return "";
 }
 function st(e, t, n, o, r) {
-  const s = window.location.pathname.replace(/^\//, "").replace(/\.html$/, ""), a = document.querySelector('meta[property="markdown-path"]'), l = a ? a.getAttribute("content") : `${s || "index"}.md`, c = "https://github.com/idvorkin/idvorkin.github.io", d = n ? `${s || "index"}/${e}: ${n}` : `${s || "index"}/${e}: Issue with ${t}`, u = encodeURIComponent(d), p = o || n || `Issue with section: ${t}`, g = r ? xe(r) : "";
+  const s = window.location.pathname.replace(/^\//, "").replace(/\.html$/, ""), a = document.querySelector('meta[property="markdown-path"]'), l = a ? a.getAttribute("content") : `${s || "index"}.md`, c = "https://github.com/idvorkin/idvorkin.github.io", d = n ? `${s || "index"}/${e}: ${n}` : `${s || "index"}/${e}: Issue with ${t}`, u = encodeURIComponent(d), p = o || n || `Issue with section: ${t}`, g = r ? ke(r) : "";
   let h = `${`📍 [${s || "index"}](https://idvorkin.azurewebsites.net/${s})/[${e}](https://idvorkin.azurewebsites.net/${s}/${e}) - [[GitHub]](${c}/blob/main/${l}#${e})`}
 
 ## Description
@@ -1199,7 +1197,7 @@ function wt(e, t) {
 function T(e, t) {
   return `<span class='text-danger'>Error: Invalid link for ${e?.attr ? e.attr("href") : "unknown"} ${t} </span>`;
 }
-function kt(e) {
+function xt(e) {
   if (!e) {
     console.log("No backlinks data available");
     return;
@@ -1239,23 +1237,21 @@ function kt(e) {
     console.error("Error processing summary links:", t);
   }
 }
-async function xt() {
+async function kt() {
   const e = "__idvorkin_add_link_loader_initialized__";
-  window[e] || (window[e] = !0, _t(await _()), kt(await vt()));
+  window[e] || (window[e] = !0, _t(await _()), xt(await vt()));
 }
-let I = null;
+let P = null;
 async function vt() {
   try {
-    if (I != null)
-      return I;
-    const n = window.location.href.includes("https://idvork.in");
-    let o = "";
-    n ? o = "https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True" : o = "/back-links.json";
+    if (P != null)
+      return P;
+    const e = "/back-links.json";
     try {
-      const r = await $.getJSON(o);
-      return r.redirects || (r.redirects = {}), r.url_info || (r.url_info = {}), I = r, I;
-    } catch (r) {
-      return console.error("Error fetching backlinks JSON:", r), { redirects: {}, url_info: {} };
+      const t = await $.getJSON(e);
+      return t.redirects || (t.redirects = {}), t.url_info || (t.url_info = {}), P = t, P;
+    } catch (t) {
+      return console.error("Error fetching backlinks JSON:", t), { redirects: {}, url_info: {} };
     }
   } catch (e) {
     return console.error("Error in get_back_links:", e), { redirects: {}, url_info: {} };
@@ -1312,7 +1308,7 @@ function O() {
 }
 function z() {
   const e = "__idvorkin_load_globals_initialized__";
-  window[e] || (window[e] = !0, bt(), $(xt), $(Et), typeof $ < "u" && $.fn && $.fn.ready ? $(document).ready(O) : typeof document < "u" && (document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", O) : O()), Fe(), document.getElementById("last-modified-posts") && De(), $(() => {
+  window[e] || (window[e] = !0, bt(), $(kt), $(Et), typeof $ < "u" && $.fn && $.fn.ready ? $(document).ready(O) : typeof document < "u" && (document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", O) : O()), Fe(), document.getElementById("last-modified-posts") && De(), $(() => {
     me("ui-toc", !0), me("ui-toc-affix", !1);
   }), pt(), D(), Ze());
 }
@@ -1353,18 +1349,18 @@ function Lt(e) {
 function St(e) {
   return e.filter((t) => t.tags.includes("family-journal"));
 }
-function Pt(e) {
+function It(e) {
   if (console.log("Processing", e.length, "posts"), !e) {
     console.log("No posts being imported");
     return;
   }
   const t = "#random-post", n = "#achievment", o = "#random-recent";
-  k(t, () => U(w(e))), k(n, () => U(w(Lt(e)))), k(o, () => U(w(St(e))));
+  x(t, () => U(w(e))), x(n, () => U(w(Lt(e)))), x(o, () => U(w(St(e))));
 }
 function Z() {
-  $.getJSON("/ig66/ig66-export.json", Pt);
+  $.getJSON("/ig66/ig66-export.json", It);
 }
-function It(e) {
+function Pt(e) {
   const t = e.title.replace(/ /g, "%20"), n = ["igor", "ammon"];
   return `
   <div>
@@ -1380,7 +1376,7 @@ function Nt(e, t) {
     console.log("No roles being imported");
     return;
   }
-  console.log("Processing", t.roles.length, "roles"), k(e, () => It(w(t.roles)));
+  console.log("Processing", t.roles.length, "roles"), x(e, () => Pt(w(t.roles)));
 }
 function Q(e) {
   $.getJSON("/eulogy.json", (n) => Nt(e, n));
@@ -1399,7 +1395,7 @@ function ee(e = $e, t = Mt) {
   for (const o of n.keys())
     t(o, n.get(o));
 }
-function Mt(e, t, n = $, o = k) {
+function Mt(e, t, n = $, o = x) {
   const r = () => `<span>${w(
     t
   )}</span><span style="float: right; cursor: pointer;" title="Click for another prompt">🔄</span>`, i = n('<div class="alert alert-primary" role="alert"/>');
@@ -1602,7 +1598,7 @@ function pn(e = "#e1", t = "#e2", n = "#e3", o = Q) {
     console.error("Error loading random eulogy:", r);
   }
 }
-function mn(e = te, t = ee, n = Z, o = Q, r = k) {
+function mn(e = te, t = ee, n = Z, o = Q, r = x) {
   try {
     e("sunburst", "sunburst_text", new Bt().get_tree()), t(), n(), o("#random-eulogy-role"), r("#random-blog-posts", async () => await Ee());
   } catch (i) {
@@ -1752,7 +1748,7 @@ async function Ft(e, t) {
   else
     console.warn("Plotly is not defined, skipping chart rendering");
 }
-function bn(e = "Topics", t = Rt, n = ee, o = Z, r = Q, i = k) {
+function bn(e = "Topics", t = Rt, n = ee, o = Z, r = Q, i = x) {
   try {
     t("sunburst", "sunburst_text", e), n(), o(), r("#random-eulogy-role"), i("#random-blog-posts", async () => await Ee());
   } catch (s) {
@@ -2070,7 +2066,7 @@ async function _n(e, t = {}) {
   });
 }
 $(document).ready(() => {
-  Pe(z);
+  Ie(z);
   const e = () => {
     typeof Mousetrap < "u" && Mousetrap.bind("s", () => t());
   }, t = () => {
@@ -2096,8 +2092,8 @@ export {
   ee as add_random_prompts,
   te as add_sunburst,
   Rt as add_sunburst_from_dom,
-  k as append_randomizer_div,
-  Pe as defer,
+  x as append_randomizer_div,
+  Ie as defer,
   _ as get_link_info,
   un as get_random_page_url,
   on as get_random_post,

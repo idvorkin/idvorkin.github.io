@@ -136,21 +136,19 @@ export function makeRedirectUrl(path: string, anchor?: string): string {
 
 /**
  * Gets link information from the back-links.json file
+ *
+ * Always fetched same-origin. The Pages deploy workflow builds back-links.json
+ * after the Jekyll build and ships it in the artifact, so production reads the
+ * freshly-built index instead of the committed copy off raw.githubusercontent.
+ *
+ * @param _url Ignored. Retained so existing callers keep compiling.
  */
-export async function get_link_info(url?: string): Promise<IURLInfoMap> {
+export async function get_link_info(_url?: string): Promise<IURLInfoMap> {
   if (cached_link_info != null) {
     return cached_link_info;
   }
-  const current_url = url || window.location.href;
-  const prodPrefix = "https://idvork.in";
-  const isProd = current_url.includes(prodPrefix);
 
-  let backlinks_url =
-    "https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True";
-
-  if (!isProd) {
-    backlinks_url = "/back-links.json";
-  }
+  const backlinks_url = "/back-links.json";
 
   try {
     const response = await fetch(backlinks_url);

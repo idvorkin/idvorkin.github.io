@@ -379,17 +379,11 @@ async function get_back_links(): Promise<IBacklinks> {
       return cached_back_links;
     }
 
-    const url = window.location.href;
-    const prodPrefix = "https://idvork.in";
-    const isProd = url.includes(prodPrefix);
-
-    let backlinks_url = "";
-    if (isProd) {
-      backlinks_url =
-        "https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True";
-    } else {
-      backlinks_url = "/back-links.json";
-    }
+    // Always same-origin: the Pages deploy workflow builds back-links.json
+    // after the Jekyll build and ships it in the artifact, so production reads
+    // the freshly-built index rather than the committed copy off
+    // raw.githubusercontent.
+    const backlinks_url = "/back-links.json";
 
     // Use a try/catch here in case $.getJSON fails
     try {
