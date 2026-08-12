@@ -247,10 +247,17 @@ jekyll-build:
     fi
     echo "✅ Jekyll build complete - site available in _site/"
 
-# Fire-and-forget background jekyll build for fresh worktrees.
+# Fire-and-forget background dependency install + jekyll build for fresh worktrees.
 # Populates _site/ so the anchor-checker pre-commit hook passes by
 # the time the first commit lands. No clean step — incremental build
 # is faster and sufficient.
+#
+# A fresh worktree starts with neither gems nor node_modules, and both
+# gaps fail in ways that look like something else:
+#   - no gems  -> jekyll build dies on "Could not find gem 'bigdecimal'"
+#   - no node_modules -> the `test` pre-commit hook dies on missing vitest,
+#     which aborts `git commit` SILENTLY (no [branch sha] line), while a
+#     chained `&& git push` still runs and reports success.
 worktree-init:
     #!/usr/bin/env sh
     set -eu
@@ -261,15 +268,21 @@ worktree-init:
     # fails silently while we still print "Background build fired".
     BRANCH=$(git branch --show-current | tr '/' '-')
     LOG="/tmp/jekyll-worktree-$BRANCH.log"
-    echo "🔨 Starting bg jekyll build — log: $LOG"
+    NPM_LOG="/tmp/npm-worktree-$BRANCH.log"
+    echo "🔨 Starting bg gem install + jekyll build — log: $LOG"
+    echo "📦 Starting bg npm ci — log: $NPM_LOG"
     # Match jekyll-rebuild: prefer homebrew Ruby on Darwin so we don't
     # silently fall back to system Ruby and fail.
     if [ "$(uname)" = "Darwin" ]; then
-        nohup ~/homebrew/opt/ruby/bin/bundle exec jekyll build >"$LOG" 2>&1 & disown
+        BUNDLE="$HOME/homebrew/opt/ruby/bin/bundle"
     else
-        nohup bundle exec jekyll build >"$LOG" 2>&1 & disown
+        BUNDLE="bundle"
     fi
-    echo "✅ Background build fired. _site/ ready in ~60-90s; first commit should find it populated."
+    # Gems must land before the build — sequence them in one background job.
+    nohup sh -c "$BUNDLE install && $BUNDLE exec jekyll build" >"$LOG" 2>&1 & disown
+    # node_modules is independent of the Ruby side, so let it run in parallel.
+    nohup npm ci >"$NPM_LOG" 2>&1 & disown
+    echo "✅ Background deps + build fired. Ready in ~60-90s; first commit should find _site/ populated and the test hook runnable."
 
 jekyll-serve port="4000" livereload_port="35729":
     #!/usr/bin/env sh
