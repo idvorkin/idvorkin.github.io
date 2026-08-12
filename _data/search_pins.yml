@@ -1,0 +1,19 @@
+# Pinned search results — policy layer over Pagefind/MiniSearch.
+#
+# When a query CONTAINS any match phrase (case-, space-, and hyphen-insensitive:
+# "timeoff", "Time-Off", and "best time off ideas" all hit a "time off" rule),
+# the urls below appear as the FIRST results, in the order listed — the list is
+# an explicit stack rank. Organic results follow, deduped against the pins.
+#
+# `title` is optional: back-links.json supplies title/description when the page
+# has them; redirect pages don't, so give those an explicit title.
+#
+# Published to /search-pins.json by the Liquid template at search-pins.json.
+# Validated at build time by scripts/verify-search-index.sh (shape + every url
+# must resolve to a built page), so a typo here fails the build, not the reader.
+pins:
+  - match: ["time off", "timeoff"]
+    urls:
+      - url: /timeoff
+      - url: /timeoff-next
+        title: Next time off

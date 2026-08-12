@@ -23,6 +23,7 @@
         "/90-days": "/90days",
         "/Business-Model-You": "/bmy",
         "/Coaching-Questions": "/coaching",
+        "/Human-Meetings": "/human-meetings",
         "/aGPT": "/ai-bestie",
         "/activation-energy": "/activation",
         "/addictions": "/addiction",
@@ -336,6 +337,7 @@
         "/time-off-2025-08": "/timeoff-2025-08",
         "/time-off-next": "/timeoff-2024-08",
         "/time-off-now": "/timeoff-2024-08",
+        "/timeoff-next": "/timeoff-2026-07",
         "/tinkering": "/pet-projects",
         "/tirzepatide": "/terzepatide",
         "/todo": "/todo_enjoy",
@@ -584,7 +586,7 @@
         },
         "/The-Genesis-Node": {
             "description": "Igor, you know the odds of shipping Azure on time are slim to none.”\n\n",
-            "doc_size": 43000,
+            "doc_size": 42000,
             "file_path": "_site/The-Genesis-Node.html",
             "incoming_links": [
                 "/eulogy"
@@ -2079,12 +2081,12 @@
         },
         "/changelog": {
             "description": "A weekly summary of what changed on this blog and across my GitHub projects. Useful for returning readers who want to catch up on new content and updates.\n\n",
-            "doc_size": 317000,
+            "doc_size": 327000,
             "file_path": "_site/changelog.html",
             "incoming_links": [
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-08-03T15:07:00+00:00",
+            "last_modified": "2026-08-10T14:30:17+00:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
                 "/42",
@@ -2114,6 +2116,7 @@
                 "/d/habits",
                 "/dark-factory",
                 "/design",
+                "/em-to-ic",
                 "/emotional-lives",
                 "/end-in-mind",
                 "/eulogy",
@@ -2140,6 +2143,7 @@
                 "/life-journal",
                 "/lonely",
                 "/made-to-stick",
+                "/manager-book",
                 "/maybe",
                 "/meta",
                 "/money",
@@ -3279,13 +3283,13 @@
             "markdown_path": "_posts/2020-04-01-Igor-Eulogy.md",
             "outgoing_links": [
                 "/7-habits",
-                "/Human-Meetings",
                 "/The-Genesis-Node",
                 "/amelia",
                 "/balloon",
                 "/being-a-great-manager",
                 "/bike",
                 "/cache",
+                "/human-meetings",
                 "/ig66/687",
                 "/ig66/717",
                 "/ig66/732",
@@ -4023,10 +4027,11 @@
         "/human-meetings": {
             "description": "Having our emotions heard is a fundamental human need. The modern world denies this need, but that doesn’t make the need go away. More than denying the need, society gives, and encourages, us to suppress our emotions. Feelings meetings stand in opposition. They exist to allow us, no, encourage us, to fulfill our fundamental need of expressing emotion.\n\n",
             "doc_size": 41000,
-            "file_path": "_site/Human-Meetings.html",
+            "file_path": "_site/human-meetings.html",
             "incoming_links": [
                 "/ai-relationships",
                 "/being-a-great-manager",
+                "/eulogy",
                 "/job"
             ],
             "last_modified": "2025-09-13T16:07:47-07:00",
@@ -4235,7 +4240,6 @@
             "last_modified": "2025-09-07T05:53:44-07:00",
             "markdown_path": "_posts/2018-06-7-my-perfect-job.md",
             "outgoing_links": [
-                "/Human-Meetings",
                 "/being-a-great-manager",
                 "/cache",
                 "/coaching",
@@ -6566,7 +6570,7 @@
         },
         "/switch": {
             "description": "Human action can be modeled by an elephant, a rider, and the path. Our emotional side is the Elephant and our rational side is the Rider. Perched atop the Elephant, the Rider holds the reins and seems to be the leader. But the Rider’s control is precarious because the Rider is so small relative to the Elephant. Anytime the six-ton Elephant and the Rider disagree about which direction to go, the Rider is going to lose. He’s completely overmatched. Lastly, the path is the structural elements that nudge your elephant and your rider in a direction, without effort.\n\n",
-            "doc_size": 59000,
+            "doc_size": 58000,
             "file_path": "_site/switch.html",
             "incoming_links": [
                 "/enable",
@@ -6641,7 +6645,7 @@
         },
         "/taxes": {
             "description": "Most of the tax information on the web is a mess. It’s confusing because it tries to apply to everyone, and it’s often written by non-engineers for non-engineers. This post is the taxes-only slice of my notes — capital gains, Washington State cap-gains mechanics, step-up in basis, retirement-account mechanics (IRAs, 401(k)s, Roth, 529s), and related tax-code levers for a software engineer’s life.\n\n",
-            "doc_size": 64000,
+            "doc_size": 66000,
             "file_path": "_site/taxes.html",
             "incoming_links": [
                 "/gap-year-igor",
@@ -6650,7 +6654,7 @@
                 "/stock-concentration",
                 "/trusts"
             ],
-            "last_modified": "2026-06-26T10:36:33-07:00",
+            "last_modified": "2026-08-11T14:52:01-07:00",
             "markdown_path": "_d/taxes.md",
             "outgoing_links": [
                 "/money",
@@ -7821,7 +7825,7 @@
         },
         "/weeks": {
             "description": "\n\n",
-            "doc_size": 4374000,
+            "doc_size": 4375000,
             "file_path": "_site/weeks.html",
             "incoming_links": [
                 "/balance"

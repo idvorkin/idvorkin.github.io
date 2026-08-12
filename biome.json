@@ -18,6 +18,7 @@
       "node_modules/**",
       "search.json",
       "search-titles.json",
+      "search-pins.json",
       ".markdownlint.json",
       "**/*.md",
       "test-results/**"
