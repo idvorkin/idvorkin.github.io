@@ -2,14 +2,14 @@ name: Deploy to GitHub Pages
 
 # Replaces GitHub Pages' native Jekyll build.
 #
-# Why: the local search index (Pagefind) has to be generated AFTER Jekyll builds
-# the site, and the native Pages build has no post-build hook. Building here
-# also means the index is never committed to git — it is produced fresh on every
-# deploy and can never drift from published content the way the old manual
-# `jekyll algolia` index did.
+# Why: the derived indexes (Pagefind search index, back-links.json) have to be
+# generated AFTER Jekyll builds the site, and the native Pages build has no
+# post-build hook. Building them here means the deployed copy is produced fresh
+# on every deploy and can never drift from published content — and, unlike the
+# old update-backlinks.yml, nothing has to push a generated file back to main.
 #
-# Ruby 3.2 matches update-backlinks.yml, which has been building this site in CI
-# successfully — the _ruby_compat.rb shim is only needed on Ruby 4.x locally.
+# Ruby 3.2 is what this site has always built under in CI — the _ruby_compat.rb
+# shim is only needed on Ruby 4.x locally.
 #
 # ONE-TIME SETUP: repo Settings -> Pages -> Source must be set to "GitHub Actions".
 # Until that is flipped, this workflow runs green but the live site still comes
@@ -37,6 +37,13 @@ jobs:
       - uses: actions/checkout@v6
         with:
           persist-credentials: false
+          # build_back_links.py derives each page's last_modified from
+          # `git log -1 -- <file>`. A shallow checkout grafts the tip commit to
+          # have no parents, so git reports EVERY tracked file as added by it —
+          # verified locally: the same commit shows 3 changed files in a full
+          # clone and 1020 in a `--depth 1` one. Every page would then be
+          # stamped with the deploy commit's date.
+          fetch-depth: 0
 
       - uses: ruby/setup-ruby@v1
         with:
@@ -55,6 +62,27 @@ jobs:
 
       - name: Build Jekyll site
         run: bundle exec jekyll build --config _config.yml,_config_ci.yml
+
+      - uses: astral-sh/setup-uv@v7
+
+      - name: Build backlinks index
+        # Reads the built HTML in _site/ and writes back-links.json at the repo
+        # root, so it has to run after the Jekyll build. One build pass is
+        # enough: nothing in Jekyll consumes back-links.json — no _plugins,
+        # _includes, or layout reads it; the page fetches /back-links.json from
+        # the client at runtime. So there is no chicken-and-egg to unwind.
+        #
+        # 62-min threshold matches what update-backlinks.yml used, so an
+        # already-current index doesn't churn near-identical timestamps.
+        #
+        # Jekyll already copied the committed (possibly stale) back-links.json
+        # into _site/ — overwrite it with the freshly built one. Nothing is
+        # pushed back to the repo; the fresh index ships in the Pages artifact
+        # only.
+        run: |
+          set -euo pipefail
+          uv run ./build_back_links.py build --threshold-minutes 62
+          cp back-links.json _site/back-links.json
 
       - name: Build Pagefind search index
         run: npx --yes pagefind --site _site
