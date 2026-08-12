@@ -22,8 +22,12 @@ on:
 
 concurrency:
   group: pages
-  # Don't cancel a deploy midway — let it finish and supersede on the next run.
-  cancel-in-progress: false
+  # 2026-08-12: run 31560670448 sat in `queued` 10+ hours and blocked every run
+  # behind it — when false, a stuck run in this group is never superseded. Build
+  # is ~1 min so the window for killing a legit deploy is small; a wedged run
+  # blocks publishing indefinitely. Deviates from GitHub's Pages starter
+  # template, which sets false so production deployments can complete.
+  cancel-in-progress: true
 
 # Deploy credentials live on the deploy job only — build runs third-party
 # tooling (pagefind off npm) and needs nothing beyond repo read.
