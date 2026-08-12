@@ -19,6 +19,7 @@ Testing math is easy, it's right or wrong. Testing spelling is easy too, but tes
   - [LLM as Judge](#llm-as-judge)
   - [Testing across prompts](#testing-across-prompts)
   - [Testing across models](#testing-across-models)
+  - [Testing the model bound to its harness](#testing-the-model-bound-to-its-harness)
 - [Examples](#examples)
   - [Who is the funnier LLM](#who-is-the-funnier-llm)
   - [Who is the better git summarizer](#who-is-the-better-git-summarizer)
@@ -79,6 +80,12 @@ instruction formatting
   concurrently, improving scalability and performance.
 - Update the instruction documentation to make it more structured and clear,
   following a markdown format for better readability.
+
+### Testing the model bound to its harness
+
+Evals used to be prompt in, completion out. In the agentic era that's the wrong unit — the thing doing the work is the model plus its tools, its environment, and its permission envelope, and the model and the harness get cross-trained together. Swap the harness and the same weights score differently, so harness-bound performance is the thing that actually matters. [AI Eval Tools](/ai-eval-tools) calls this agent-in-a-workdir.
+
+Same way you judge a person: in an environment, not in the abstract.
 
 ## Examples
 
@@ -170,7 +177,7 @@ First results (2026-08):
 | gpt-5.4-mini · Codex CLI, zero reasoning | 10   | 70%         | 100%        | 100%          | 0.70        |
 | mock-bad (grader test)                   | 3    | 100%        | 33%         | 0%            | 0.61        |
 
-Both Claude configs pass everything, including zero TOC churn on the trap task. The deliberately dumb Codex config (mini model, reasoning effort none, sandbox replaced by a pre-approved command allowlist since its bwrap sandbox can't spawn in my VM) broke the saturation: 3 of its 10 runs fail, and every failure is a give-up after the first blocked edit attempt - never a wrong edit. When it does act, the TOC and collateral checks stay clean. Which surfaces the real lesson: the permission envelope is part of the harness under test, not just the model.
+Both Claude configs pass everything, including zero TOC churn on the trap task. The deliberately dumb Codex config (mini model, reasoning effort none, sandbox replaced by a pre-approved command allowlist since its bwrap sandbox can't spawn in my VM) broke the saturation: 3 of its 10 runs fail, and every failure is a give-up after the first blocked edit attempt - never a wrong edit. When it does act, the TOC and collateral checks stay clean. Which is [the harness point](#testing-the-model-bound-to-its-harness) in miniature — what failed was the permission envelope, not the model.
 
 The judge column is a second grader — an LLM judge scoring correctness, voice match, and scope from the diff — layered on after the fact, since decoupled grading re-scores old runs for free. It found the daylight the deterministic checks can't see: sonnet 0.99 vs haiku 0.96 (haiku gets docked for details like unspaced em-dashes on a page that uses spaced hyphens), while an empty diff short-circuits to 0 with no LLM call. Deterministic graders stay the gate; the judge adds the quality axis. Next variants: drop the CLAUDE.md hints, use full-size pages, make edits that span files.
 
