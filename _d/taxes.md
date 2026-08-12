@@ -175,7 +175,7 @@ As a community property state, Washington provides a massive advantage - **BOTH 
 
 - You're 65+ or have health issues
 - Have other assets for living expenses
-- Estate under $13.61M (2024 exemption)
+- Estate under $15M (2026 exemption)
 - Can manage concentration risk
 
 **The "Buy, Borrow, Die" Strategy:**
@@ -186,7 +186,7 @@ As a community property state, Washington provides a massive advantage - **BOTH 
 
 **Important Caveats:**
 
-- Federal estate tax applies over $13.61M — but WA has its own estate tax kicking in at ~$3M per person, with **no spousal portability**, so a married couple wastes the first-to-die's ~$3M exemption unless they set up a credit shelter trust
+- Federal estate tax applies over $15M per person ([Rev. Proc. 2025-32 §2.14](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf)) — but WA has its own estate tax kicking in at ~$3M per person, with **no spousal portability**, so a married couple wastes the first-to-die's ~$3M exemption unless they set up a credit shelter trust
 - Doesn't apply to retirement accounts (401k, IRA)
 - Stock could crash before death
 - Opportunity cost of holding vs. diversifying
