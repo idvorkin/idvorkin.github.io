@@ -4,7 +4,7 @@ title: "Igor's Life Journal"
 permalink: /life-journal
 ---
 
-A journal of random life observations. Keeping track of them so I don't forget what the world did today.
+A journal of random life observations. Keeping track of them so I don't forget what the world did today. When a whole day works end to end, it goes in [Day in the Life](/day-in-the-life) instead.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -62,13 +62,13 @@ When adding a new entry:
 
 Working from Sweden this week, hitting my dev box back in Seattle, and the speed of light finally showed up as a number I could feel: ~170 ms round trip — and almost all of it lives in a single hop.
 
-| Segment | Hops | RTT | What it is |
-| --- | --- | --- | --- |
-| Home LAN | 1–4 | ~4.5 ms | OrbStack NAT → router(s) → modem — three NAT layers |
-| Seattle metro | 5–6 | ~6–10 ms | CenturyLink/Lumen; Tukwila |
-| Seattle backbone edge | 7 | ~7 ms | Lumen `sea1` — still in Seattle |
-| ⚡ Transatlantic jump | 7→8 | +163 ms | Lumen Seattle → Colt Stockholm, one backbone leg |
-| Stockholm delivery | 8–13 | ~170 ms | Colt → Bahnhof → destination |
+| Segment               | Hops | RTT      | What it is                                          |
+| --------------------- | ---- | -------- | --------------------------------------------------- |
+| Home LAN              | 1–4  | ~4.5 ms  | OrbStack NAT → router(s) → modem — three NAT layers |
+| Seattle metro         | 5–6  | ~6–10 ms | CenturyLink/Lumen; Tukwila                          |
+| Seattle backbone edge | 7    | ~7 ms    | Lumen `sea1` — still in Seattle                     |
+| ⚡ Transatlantic jump | 7→8  | +163 ms  | Lumen Seattle → Colt Stockholm, one backbone leg    |
+| Stockholm delivery    | 8–13 | ~170 ms  | Colt → Bahnhof → destination                        |
 
 ~7 ms gets me to the edge of Seattle. The Atlantic crossing — Seattle → Stockholm, one backbone leg (Lumen → Colt) — adds ~163 ms all by itself. Once packets are in Stockholm the last mile costs basically nothing.
 

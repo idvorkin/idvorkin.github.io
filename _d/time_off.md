@@ -173,7 +173,7 @@ Look at the incoming links below and:
 
 ## Making the most out of staycation
 
-With staycations, it's especially easy to oscillate between vegetating, grinding through the todo list, and ruminating on work. I suspect there are special tools for staycations - I should think through them.
+With staycations, it's especially easy to oscillate between vegetating, grinding through the todo list, and ruminating on work. I suspect there are special tools for staycations - I should think through them. One that works: play tourist in my own city with my [Seattle list](/seattle).
 
 ## Should you do per-family-member vacations
 

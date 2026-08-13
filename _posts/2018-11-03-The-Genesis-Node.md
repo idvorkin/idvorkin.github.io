@@ -5,10 +5,11 @@ author: "Igor Dvorkin"
 comments: true
 featured: false
 date: "2018-12-09 07:25:17 Pacific Daylight Time"
-tag: "software as a story"
+tags:
+  - "software as a story"
 ---
 
-Igor, you know the odds of shipping Azure on time are slim to none."
+"Igor, you know the odds of shipping Azure on time are slim to none."
 
 {% include this_is_part_of_saas.md %}
 
@@ -54,6 +55,8 @@ It turns out two weeks ago, the OS team requested a node for destructive testing
 
 With the security threat understood, we cancelled our order for the retina scanners and shut down the midnight shift.
 
-Moral of the story 1: Never attribute to malice that which can be attributed to incompetence.
-Moral of the story 2: If you have something as important as a genesis node, put a sticker on it that says "Really, really important, do not touch."
-Moral of the story 3: When Jay gives you a seemingly random factoid, ask follow-up questions.
+Morals of the story:
+
+1. Never attribute to malice that which can be attributed to incompetence.
+2. If you have something as important as a genesis node, put a sticker on it that says "Really, really important, do not touch."
+3. When Jay gives you a seemingly random factoid, ask follow-up questions.
