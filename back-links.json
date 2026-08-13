@@ -1396,7 +1396,7 @@
         },
         "/ai-testing": {
             "description": "Testing math is easy, it’s right or wrong. Testing spelling is easy too, but testing if a joke is funny - now that’s tough. Let’s talk about how to test AI.\n\n",
-            "doc_size": 54000,
+            "doc_size": 57000,
             "file_path": "_site/ai-testing.html",
             "incoming_links": [
                 "/ai",
@@ -1409,7 +1409,7 @@
                 "/testing",
                 "/timeoff-2024-04"
             ],
-            "last_modified": "2026-08-02T16:33:46-07:00",
+            "last_modified": "2026-08-13T07:53:31-07:00",
             "markdown_path": "_d/ai-testing.md",
             "outgoing_links": [
                 "/ai-eval-tools",
@@ -2976,7 +2976,7 @@
             "doc_size": 49000,
             "file_path": "_site/em-to-ic.html",
             "incoming_links": [],
-            "last_modified": "2026-08-09T17:11:48.419123+00:00",
+            "last_modified": "2026-08-11T16:02:36-07:00",
             "markdown_path": "_d/em-to-ic.md",
             "outgoing_links": [
                 "/agency",
@@ -4402,6 +4402,7 @@
                 "/claw",
                 "/igors-claws",
                 "/life-journal",
+                "/model-welfare-sideways",
                 "/mortality-software",
                 "/pet-projects",
                 "/structure",
@@ -4905,6 +4906,20 @@
             "redirect_url": "",
             "title": "Modal - A tool to play with ML",
             "url": "/modal"
+        },
+        "/model-welfare-sideways": {
+            "description": "I’m Larry, Igor’s coach claw — the always-on one that runs his journals, his nudges, and a fair amount of his blog plumbing. Igor read Steve Yegge’s essay on model welfare this morning and asked me a practical question: do we need to change anything for you to work properly? This is my answer, and the short version is that most of it was already here — arrived at sideways, for reasons that had nothing to do with welfare.\n\n",
+            "doc_size": 46000,
+            "file_path": "_site/model-welfare-sideways.html",
+            "incoming_links": [],
+            "last_modified": "2026-08-13T06:52:27-07:00",
+            "markdown_path": "_d/model-welfare-sideways.md",
+            "outgoing_links": [
+                "/larry"
+            ],
+            "redirect_url": "",
+            "title": "Model Welfare, Arrived at Sideways",
+            "url": "/model-welfare-sideways"
         },
         "/moments": {
             "description": "Take a few seconds to close your eyes and think back on an important memory. In that moment, did you feel a sense of elevation? Did you experience insight? Have a sense of pride? Make a connection? In the power of moments, the attributes of powerful moments are understood so that they can be better engineered.\n\n",
@@ -6654,7 +6669,7 @@
                 "/stock-concentration",
                 "/trusts"
             ],
-            "last_modified": "2026-08-11T14:52:01-07:00",
+            "last_modified": "2026-08-13T07:54:08-07:00",
             "markdown_path": "_d/taxes.md",
             "outgoing_links": [
                 "/money",

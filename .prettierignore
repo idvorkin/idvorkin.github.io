@@ -4,6 +4,8 @@ _includes/head.html
 _includes/quadrant-matrix.html
 # prettier messes up the liquid filters in alert
 _includes/alert.html
+# same liquid-filter mangling as alert.html
+_includes/ai-voice.html
 zz-chop-logs/**
 
 # Prettier reformats my python json
