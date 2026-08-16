@@ -44,16 +44,16 @@ This framework draws heavily from two foundational books on energy and happiness
 
 ## The Tests
 
-Health is rented, and rent is due every day. I wrote that about the body in 2017 — _physical health is not bought, it's rented_ — and then wrote the same thing about spiritual health nine years later without noticing: you're fit while you're fit, and when you're not, you train.
+Health is rented, and rent is due every day — all four of them. I wrote that about the body in 2017, _physical health is not bought, it's rented_, then wrote the same thing about spiritual health nine years later without noticing: you're fit while you're fit, and when you're not, you train. It isn't a fact about the body. It's what health is. Nothing here is a state you reach and keep.
 
-So the useful thing for each dimension isn't a definition. It's a test you can answer today.
+Which is why the useful thing for each dimension isn't a definition. It's a test you can answer today.
 
-|               | The test                                                                                         | It breaks when                                                                       | Rent                                                    |
-| ------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------- |
-| **Physical**  | Is your body ever the reason you say no — and are you still asking it for anything?              | Your life quietly shrinks until the body is never tested, so it never gets to say no | Due every day                                           |
-| **Emotional** | _Open._                                                                                          |                                                                                      |                                                         |
-| **Spiritual** | [Are you sustainably motivated in a way you'd be proud to see in your child?](/spiritual-health) | You're motivated toward something you'd hate to see in your kid — the addict case    | You're fit while you're fit; when you're not, you train |
-| **Cognitive** | _Open._                                                                                          |                                                                                      |                                                         |
+|               | The test                                                                                         | It breaks when                                                                       |
+| ------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
+| **Physical**  | Is your body ever the reason you say no — and are you still asking it for anything?              | Your life quietly shrinks until the body is never tested, so it never gets to say no |
+| **Emotional** | _Open._                                                                                          |                                                                                      |
+| **Spiritual** | [Are you sustainably motivated in a way you'd be proud to see in your child?](/spiritual-health) | You're motivated toward something you'd hate to see in your kid — the addict case    |
+| **Cognitive** | _Open._                                                                                          |                                                                                      |
 
 Two of the four have a test. The other two have descriptions, which is a different thing — you can't answer a description.
 
