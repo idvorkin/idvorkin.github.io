@@ -117,30 +117,30 @@ The Orthodox don't think of humans as fundamentally broken and in need of a lega
 
 ### Theosis vs. Secular Self-Improvement
 
-Here's where it gets personal. I've spent years building systems for becoming a better person — [affirmations](/affirmations), [four healths](/four-healths), daily rituals, [7 habits](/7h-c0). When I look at theosis, the structural parallels are hard to ignore.
+Here's where it gets personal. I've spent years building systems for becoming a better person — [affirmations](/affirmations), [four healths](/health), daily rituals, [7 habits](/7h-c0). When I look at theosis, the structural parallels are hard to ignore.
 
 Both frameworks say:
 
 - **You're not done yet.** The project of becoming is never finished. There is no "I've made it" moment — only deeper growth.
 - **Daily practice is the mechanism.** Orthodox: fasting, prayer, liturgy. Mine: affirmations, morning routine, journaling. Both reject the idea that a single decision changes you. You are what you repeatedly do.
-- **The whole person must be engaged.** Orthodox worship involves the body (standing, fasting, incense), the mind (theology, contemplation), and the spirit (prayer, mysteries). My [four healths](/four-healths) framework says the same thing: physical, emotional, cognitive, and spiritual health all need daily attention.
+- **The whole person must be engaged.** Orthodox worship involves the body (standing, fasting, incense), the mind (theology, contemplation), and the spirit (prayer, mysteries). My [four healths](/health) framework says the same thing: physical, emotional, cognitive, and spiritual health all need daily attention.
 - **You need a vision of who you're becoming.** Theosis has the image and likeness of God. I have my [eulogy](/eulogy) — the person my loved ones would describe at my funeral. Both are aspirational pictures you grow toward without ever fully arriving.
 - **Systems over goals.** Theosis doesn't have a finish line. My [operating manual](/operating-manual) is the same — it's not a checklist to complete, it's a system to run daily.
 
 ### The Translation Table
 
-| Orthodox Theosis                          | My Secular Framework                                                      |
-| ----------------------------------------- | ------------------------------------------------------------------------- |
-| Becoming like God                         | Growing toward my [eulogy virtues](/eulogy)                               |
-| Ascetic discipline (fasting, prayer)      | [Deliberate. Disciplined. Daily.](/affirmations)                          |
-| The whole person in worship               | [Four Healths](/four-healths) — physical, emotional, cognitive, spiritual |
-| Image and likeness of God                 | The person described in my eulogy                                         |
-| Synergy (grace + effort)                  | Growth mindset + systems + self-compassion                                |
-| Liturgical rhythm (daily, weekly, yearly) | Morning routine, weekly review, annual reflection                         |
-| Confession and repentance                 | [Regrets as compass](/regrets) — use failure as data                      |
-| Theosis is never complete                 | "Completely aspirational" — always becoming, never arrived                |
-| Communion with saints                     | Mentors, authors, communities that shape you                              |
-| Holy Tradition alongside Scripture        | Experience alongside theory — both matter                                 |
+| Orthodox Theosis                          | My Secular Framework                                                |
+| ----------------------------------------- | ------------------------------------------------------------------- |
+| Becoming like God                         | Growing toward my [eulogy virtues](/eulogy)                         |
+| Ascetic discipline (fasting, prayer)      | [Deliberate. Disciplined. Daily.](/affirmations)                    |
+| The whole person in worship               | [Four Healths](/health) — physical, emotional, cognitive, spiritual |
+| Image and likeness of God                 | The person described in my eulogy                                   |
+| Synergy (grace + effort)                  | Growth mindset + systems + self-compassion                          |
+| Liturgical rhythm (daily, weekly, yearly) | Morning routine, weekly review, annual reflection                   |
+| Confession and repentance                 | [Regrets as compass](/regrets) — use failure as data                |
+| Theosis is never complete                 | "Completely aspirational" — always becoming, never arrived          |
+| Communion with saints                     | Mentors, authors, communities that shape you                        |
+| Holy Tradition alongside Scripture        | Experience alongside theory — both matter                           |
 
 ### Big upsides to the greek orthodox way
 

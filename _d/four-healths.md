@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "The Four Kinds of Health: Physical, Emotional, Spiritual, and Cognitive"
-permalink: /four-healths
+permalink: /health
+redirect_from:
+  - /four-healths
 tags:
   - emotional-health
   - how igor ticks
@@ -44,14 +46,14 @@ This framework draws heavily from two foundational books on energy and happiness
 
 ## The Tests
 
-Health is rented, and rent is due every day — all four of them. I wrote that about the body in 2017, _physical health is not bought, it's rented_, then wrote the same thing about spiritual health nine years later without noticing: you're fit while you're fit, and when you're not, you train. It isn't a fact about the body. It's what health is. Nothing here is a state you reach and keep.
+Health is rented, and rent is due every day. Gosh I like saying that, because it's so true — and it's true of all four, not just the body. None of these is a state you reach and keep. You're fit while you're fit, and when you're not, you train.
 
 Which is why the useful thing for each dimension isn't a definition. It's a test you can answer today.
 
 |               | The test                                                                                         | It breaks when                                                                       |
 | ------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
 | **Physical**  | Is your body ever the reason you say no — and are you still asking it for anything?              | Your life quietly shrinks until the body is never tested, so it never gets to say no |
-| **Emotional** | _Open._                                                                                          |                                                                                      |
+| **Emotional** | _Open — something about awareness, or grasping and aversion. Not settled._                       |                                                                                      |
 | **Spiritual** | [Are you sustainably motivated in a way you'd be proud to see in your child?](/spiritual-health) | You're motivated toward something you'd hate to see in your kid — the addict case    |
 | **Cognitive** | _Open._                                                                                          |                                                                                      |
 

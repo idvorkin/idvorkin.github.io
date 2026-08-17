@@ -161,7 +161,7 @@ And by making your positive habits easier. For me, this includes writing up a ti
 
 Reading the eulogy reminds you which roles matter; time off is the chance to actually re-stack them, because ordinary life quietly mis-sorts them. I sort mine into three honest tiers:
 
-- **Non-negotiables — protect first, daily.** The two foundational [Healths](/four-healths): _Physical_, banked before the family wakes up, and _Emotional_ — awareness and compassion, handled as it happens. Everything else is built on these.
+- **Non-negotiables — protect first, daily.** The two foundational [Healths](/health): _Physical_, banked before the family wakes up, and _Emotional_ — awareness and compassion, handled as it happens. Everything else is built on these.
 - **Frequently starved — feed these.** _Father / Husband_, and the _Joy Giver_ — the [balloon](/balloon)-and-[magic](/magic) guy from the [eulogy](/eulogy). The roles I'd grieve losing, and the exact ones I let go hungry when work gets loud. Time off is their window; the jovial me comes roaring back the moment I stop starving him.
 - **Over-invested — dial back.** _Technologist_, and honestly everything else, parked way below where they run in a normal week. Not because the work doesn't matter — because it's the finished room, and I keep redecorating it instead of walking into the ones that aren't.
 
