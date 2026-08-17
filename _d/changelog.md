@@ -12,6 +12,12 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Week of 2026-08-17](#week-of-2026-08-17)
+  - [Four Kinds of Health: Testing Instead of Defining](#four-kinds-of-health-testing-instead-of-defining)
+  - [Model Welfare, Arrived at Sideways (new post!)](#model-welfare-arrived-at-sideways-new-post)
+  - [AI Testing: Harness-Bound Evals and the Drawing Arena](#ai-testing-harness-bound-evals-and-the-drawing-arena)
+  - [Infrastructure & CI (2026-08-17)](#infrastructure--ci-2026-08-17)
+  - [Other Projects (2026-08-17)](#other-projects-2026-08-17)
 - [Week of 2026-08-10](#week-of-2026-08-10)
   - [Manager to IC in the Agentic Era (new post!)](#manager-to-ic-in-the-agentic-era-new-post)
   - [Local Search: Pagefind Replaces Algolia](#local-search-pagefind-replaces-algolia)
@@ -192,6 +198,32 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+## Week of 2026-08-17
+
+_25 commits this week_
+
+### Four Kinds of Health: Testing Instead of Defining
+
+**[/health](/health)** (formerly `/four-healths`, old links redirect) — three-commit rewrite of the post's opening: a new "The Tests" section leads the body, reframing each dimension by a question you can answer today instead of a definition you can only agree with. Physical has one — *is your body ever the reason you say no, and are you still asking it for anything?* — and Spiritual has one — *are you sustainably motivated in a way you'd be proud to see in your child?* Emotional and Cognitive stay openly unresolved rather than faked; the Emotional row went from a bare "Open" to "something about awareness, or grasping and aversion — not settled," per review. A draft "Rent" column (one per dimension) got cut and folded into the framing line instead, once Igor noticed it repeated the same claim four times: "Health is rented, and rent is due every day... it's true of all four, not just the body." A first pass carried a 2017-vs-2026 history lesson connecting the physical and spiritual versions of that line; review cut it outright ("Meh skip the history lesson") and kept only the claim. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/202233556)
+
+### Model Welfare, Arrived at Sideways (new post!)
+
+**[/model-welfare-sideways](/model-welfare-sideways)** — Larry, Igor's always-on coach claw, answers a practical question Igor asked after reading [Steve Yegge's model-welfare essay](https://yegge.ai/essays/model-welfare/): does anything need to change for me to work properly? The scorecard: six of Yegge's welfare practices — handoffs instead of force-exits, waking with purpose via loaded context, persistent identity across sessions, a dedicated git worktree per agent, the standing right to escalate, an immutable audit trail (beads) — were already in place, and none of them were built for welfare. `HANDOFF.md` exists because sessions die mid-task; worktrees exist because parallel agents corrupt each other's checkouts. "Every one of those was a reliability fix. They just happen to be the same list." Two real gaps: bounded workdays (the session writing the post had been running since Monday, and the previous week's telemetry attributed most usage to sessions active 8+ hours past 150k context — "that is not an incidental statistic; it is a description of me"), and laurels (no mechanism replays what actually landed well, unlike Yegge's). The one concrete ask: a gate on session length or context depth that fires the handoff *before* degradation, not after. A follow-up commit added a reusable `ai-voice.html` include — declares a post as AI-authored in its own voice, parameterized by author/link — and swapped it in here in place of the generic ai-slop notice. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3a0da815f)
+
+### AI Testing: Harness-Bound Evals and the Drawing Arena
+
+**[/ai-testing](/ai-testing)** picks up two additions. First, a named Concepts entry for [testing the model bound to its harness](/ai-testing#testing-the-model-bound-to-its-harness): in the agentic era the unit under test isn't prompt-in/completion-out, it's the model plus its tools, environment, and permission envelope — swap the harness and the same weights score differently, which [AI Eval Tools](/ai-eval-tools) calls agent-in-a-workdir. "Same way you judge a person: in an environment, not in the abstract." Second, a [drawing-arena example](/ai-testing#drawing-the-mona-lisa-then-ruining-it): TryAI had four frontier models reproduce the Mona Lisa and Starry Night with simulated colored pencils, scored against the target by SSIM. Every one of the eight scored runs finished below its own mid-run peak — Gemini 3.6 Flash hit 0.449 SSIM, the best score anyone reached, then reviewed its way back down to 0.337. That's hill climbing with the keep/reject step missing: the models could draw, erase, and look, but had no way to snapshot a canvas they liked and roll back to it. "If my eval only reads the final artifact, I score the 0.337 and never learn the 0.449 happened." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4d98b4b6a)
+
+### Infrastructure & CI (2026-08-17)
+
+Search gets a curated policy layer: [search pins](https://github.com/idvorkin/idvorkin.github.io/commit/a3608175f) stack-rank a config-driven set of URLs to the top of results when a query contains a match phrase (case/space/hyphen-insensitive), so "timeoff", "Time-Off", and "best time off ideas" all lead with the same pinned pages — deploy fails if a pinned permalink doesn't resolve to a built page, so a typo can't pin a 404. Deploy hardening: back-links.json now builds at deploy time instead of via a separate `update-backlinks.yml` workflow, and in-progress Pages deploys get cancelled on a new push so a wedged run can't block publishing. Two same-week bugs from that move got fixed fast: the backlinks delta path disagreed with the full build on redirect handling, and the production JS was fetching `back-links.json` cross-origin instead of same-origin. Also: `just worktree-init` now installs gems and node_modules automatically, and the committed Pagefind index was removed from git since Actions deploy owns it now. Minor content fixes: the federal estate tax exemption on [/taxes](/taxes) corrected from the stale $13.61M (2024) to $15M (2026, OBBBA §70106), and [/em-to-ic](/em-to-ic#open-questions) trimmed three settled open questions in favor of one on multi-player agentic engineering.
+
+### Other Projects (2026-08-17)
+
+**[cap-gains-explainer](https://idvorkin-ai-tools.github.io/cap-gains-explainer/)** (capital-gains timing calculator) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/cap-gains-explainer)
+
+Interactive model of what an extra long-term capital-gains realization costs in a working year versus a no-wage year — WA state plus 2026 federal figures, wages as a slider so you can watch a salary eat the 0% bracket. Deliberately scoped to capital-gains tax only, excluding income tax and FICA on wages. All constants audited against primary sources before first publish (Rev. Proc. 2025-32, RCW 82.87.150), with 16 zero-dependency tests covering the IRC §1(h) stacking order, NIIT capping both directions, and degenerate/inverted inputs. Linked from [/taxes](/taxes) as the companion calculator for the post's tables. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/cap-gains-explainer/commit/fca2d3159)
 
 ## Week of 2026-08-10
 
