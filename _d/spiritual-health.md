@@ -436,7 +436,7 @@ Research shows spiritual practices protect against depression and anxiety by pro
 
 ### My Four Healths: Purpose as Direction
 
-In my [Four Healths framework](/four-healths), I treat spiritual health as your **purpose anchor** - the connection to meaning and purpose that prevents aimlessness.
+In my [Four Healths framework](/health), I treat spiritual health as your **purpose anchor** - the connection to meaning and purpose that prevents aimlessness.
 
 This framework primarily emphasizes **purpose as direction** ([see definitions](#three-dimensions-of-meaning)) - having your north star, having clear values and goals to navigate by.
 
@@ -867,7 +867,7 @@ The meaning gets stronger when those responsibilities extend beyond yourself - w
 
 Stop asking life what it means. Start answering life's question about what YOU mean to do with it.
 
-{%include summarize-page.html src="/four-healths" %}
+{%include summarize-page.html src="/health" %}
 {%include summarize-page.html src="/build-life-you-want" %}
 {%include summarize-page.html src="/elder" %}
 {%include summarize-page.html src="/religion" %}

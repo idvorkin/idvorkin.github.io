@@ -42,7 +42,7 @@ The operators who get better aren't the ones who just practice. They're the ones
 
 ## You Have a Finite Number of Thinking Tokens
 
-_Skills: [things you love](/balloon) · [things good for you](/four-healths) · [`delegate-to-other-repo`](https://github.com/idvorkin/chop-conventions/blob/main/skills/delegate-to-other-repo/SKILL.md)_
+_Skills: [things you love](/balloon) · [things good for you](/health) · [`delegate-to-other-repo`](https://github.com/idvorkin/chop-conventions/blob/main/skills/delegate-to-other-repo/SKILL.md)_
 
 You've had this happen. You're in the middle of making changes — momentum, focus, real progress — and the AI hits its token limit. "Start a new conversation," it says. The context you'd been building together is gone. You're stuck until the window resets.
 
