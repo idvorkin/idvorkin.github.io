@@ -614,6 +614,10 @@ def build(
 
     This command scans all Jekyll collection directories, builds a backlinks database,
     and updates last modified times for all pages.
+
+    NOTE: `threshold_minutes` defaults to 5 here but 62 in `delta` — CI workflows
+    calling `build` should pass `--threshold-minutes 62` for parity, otherwise a
+    full rebuild will refresh `last_modified` for anything touched in the prior hour.
     """
     start_time = time.time()
 
