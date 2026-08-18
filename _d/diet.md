@@ -12,6 +12,8 @@ redirect-from:
 
 Diet dominates weight, as weight is simple arithmetic -"calories in" minus "calories out". Weight is essential because it reduces the effort required to do physical activities, and because it reduces the risk of many diseases. [Exercise, while critical to energy](/exercise), is mostly a red herring for weight loss. A great way to see this is comparing what you eat to physical Activity. A side of fries adds 500 calories to your day, but running for 30 minutes only burns 300 calories.
 
+{% include alert.html content="**Update:** This all got much easier once I started [tirzepatide](/terzepatide) in February 2024. It doesn't change the arithmetic — it changes the will power." style="info" %}
+
 <!-- prettier-ignore-start -->
 
 
