@@ -40,22 +40,63 @@ This is very similar to the often phantom, physical pain of hunger. If we aren't
 
 ### Mind the Gap
 
-Some more thoughts to develop here.
+Gaps aren't a defect. You're transitioning between two things, you've got time before the next one starts, or you just finished something hard and need a break. [One-tasking](/first-things-first) manufactures them on purpose. So the gap keeps showing up, and every time it does you do something to get out of it.
 
-- Exercise Snacks
-- Analogy to snacking
-- Does how we spend these gaps train our attention
-- Why we have a gap
-  - We are transitioning between activities
-  - We have time before next thing starts
-  - We need a break from what we were doing
-  - One Tasking
-- Relationship to mindfulness
-  - Mindfuless/being present is on a pedestal - maybe it should be, who knows.
-- Stopping energy. Like if you fill gap with something hard to stop you won't go back
-- Reflecting is good, needs boredom.
-- At level 0, is reach out your phone and watch TikTok
-- At Level 100, mind you descend into mindfulness, but maybe level 10 is saying it's OK to be in the gap, and be mindful.
+That something is escape. And escape is a neutral verb.
+
+I've written about escape like it's a diagnosis — [addiction is escape](/addiction), TikTok is escape, [thinking about work while at home](/mind-at-work) is escape. All true. But a workout is escape. A goofy TikTok with my daughter is escape. So is a walk, or running a card trick fifty times without deciding to. Same verb. The question was never whether you left; it's what you brought back.
+
+Here's the budget it spends against: you have a limited number of human tokens, and when they're spent you need to recharge. Attention is the currency. Work, kids, the gym, the scroll — all priced in the same coin. So the useful question about a gap isn't _what did you spend it on_. It's **did the spend return anything**.
+
+#### The discriminator: stopping energy
+
+In 2020 I swapped doom-scrolling for a series of 120-page books, one topic each — economics, then psychiatry. What made it a better idle loop wasn't that reading is more respectable than scrolling:
+
+> it builds my cognative muscle, is not enthralling, which makes me comfortable doing something more interesting like being with my family.
+
+_Is not enthralling_ was me describing [stopping energy](/activation) before I had the word for it. It's mechanical, not moral — the only question is what it costs to put the thing down.
+
+- **Good escape has low stopping energy.** It lets go of you cheaply, so you get to the next thing refreshed. The book puts itself down, and my family looks appealing from where I'm standing.
+- **Bad escape has high stopping energy.** It doesn't let go, and whatever's left of you arrives depleted, with everything else looking like effort. TikTok is built so its stopping energy never declines.
+
+The [hierarchy from hardest to easiest to stop](/produce-consume#if-youre-gonna-consume-take-the-easiest-drug-you-can) reads like a ranking of how worthy each thing is. It isn't. It's a price list for leaving.
+
+Notice neither one names an activity. They only ask whether the thing hands you back.
+
+#### Chosen, or defaulted into
+
+In January I wrote: "It's definitely squander. Feels like waste. What it looks like: come home, sit there, eat junk food. Feels crummy."
+
+In July: "I just wanted to vegetate, and I did, and I got to watch the kids interacting... some days you want to be able to spend your freedom + be glad in it."
+
+Same behavior, opposite verdict. The variable wasn't the activity, it was whether I picked it or fell into it. January was a default. July was a decision, and I got the kids thrown in.
+
+{% include alert.html content="**Note to self — worth fleshing out.** Starting energy and stopping energy are independent, and the ladder below only ranks one of them. The real object is a 2x2, and the interesting stuff is in its corners. There's a whole post in that." style="info" %}
+
+So the ladder isn't a list of activities. It's a list of postures, ranked by what they hand back — which is not the same as how hard they are:
+
+| Level | The gap shows up, and…                                                      | Starting energy                          |
+| ----- | --------------------------------------------------------------------------- | ---------------------------------------- |
+| 0     | your phone is already in your hand. Nothing got decided.                    | negative — it starts itself              |
+| 50    | you spend it on something that hands you back — a walk, a stretch, a trick. | low — the activity supplies its own pull |
+| 90    | you notice the gap and let it be a gap.                                     | high — nothing pulls you into silence    |
+| 100   | mindfulness, on purpose, as a practice.                                     | highest — the same thing, on a schedule  |
+
+Read the second column, because the two don't track. Silence has almost no stopping energy — it's trivially easy to quit — but its [starting energy](/activation) is enormous, since nothing pulls you into it. It's high and it's hard, which is the company mindfulness keeps; the pedestal is earned. Meanwhile the cheapest rung to start is level 0, and that's the whole problem — the phone has negative starting energy, it starts itself, and it hands back nothing.
+
+Which makes level 50 the rung that's actually available. You don't have to master silence to stop losing at level 0; you need one thing on hand with enough pull of its own to beat a phone. A walk. A stretch. A trick. Put it where the phone was. Boredom is still the toll at the top — reflection lives downstream of it, and you can't reflect without first being willing to be bored — but that's the climb, not the entry fee.
+
+#### The activity is not the variable
+
+How badly does a ranked list of activities survive my own journals?
+
+- TikTok is the named dragon in January and a gratitude entry two weeks later — "Very relaxing 2 hours of TikTok."
+- Vibe coding is creative, productive, shipping — and I filed it next to social media as an addiction that was finally dissolving.
+- One January entry puts "work-a-holic / TikTok" under a single heading and routes both to the same word: _intoxicated_.
+
+Nothing sits still. Which is the finding: **the activity is not the variable.** Deliberateness is — did you pick it. Intent is — what you picked it for. Stopping energy is. The activity is just where you find out. [ACT](/act#the-choice-point--towards-moves-and-away-moves) got there first from the therapy side: _never the form, always the function_.
+
+The two lists below are still worth having — they're where the good and bad bets usually land. Treat them as priors, not verdicts.
 
 ### Regenerative loops
 

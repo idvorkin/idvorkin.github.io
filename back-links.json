@@ -522,7 +522,7 @@
                 "/sharpen-the-saw",
                 "/writing"
             ],
-            "last_modified": "2026-07-13T19:49:39+02:00",
+            "last_modified": "2026-08-16T17:46:36-07:00",
             "markdown_path": "_d/7h-c0.md",
             "outgoing_links": [
                 "/7-habits",
@@ -619,6 +619,7 @@
             "doc_size": 316000,
             "file_path": "_site/act.html",
             "incoming_links": [
+                "/idle",
                 "/timeoff-2026-07"
             ],
             "last_modified": "2026-07-19T05:20:21-07:00",
@@ -660,6 +661,7 @@
                 "/energy",
                 "/energy-abundance",
                 "/gap-year-igor",
+                "/idle",
                 "/planning",
                 "/produce-consume",
                 "/slow",
@@ -1254,7 +1256,7 @@
                 "/how-igor-chops",
                 "/life-journal"
             ],
-            "last_modified": "2026-06-21T06:54:14-07:00",
+            "last_modified": "2026-08-16T17:46:36-07:00",
             "markdown_path": "_d/ai-operator.md",
             "outgoing_links": [
                 "/ai-cockpit",
@@ -2082,12 +2084,12 @@
         },
         "/changelog": {
             "description": "A weekly summary of what changed on this blog and across my GitHub projects. Useful for returning readers who want to catch up on new content and updates.\n\n",
-            "doc_size": 327000,
+            "doc_size": 335000,
             "file_path": "_site/changelog.html",
             "incoming_links": [
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-08-10T14:30:17+00:00",
+            "last_modified": "2026-08-17T14:11:54+00:00",
             "markdown_path": "_d/changelog.md",
             "outgoing_links": [
                 "/42",
@@ -2147,6 +2149,7 @@
                 "/manager-book",
                 "/maybe",
                 "/meta",
+                "/model-welfare-sideways",
                 "/money",
                 "/mortality-software",
                 "/mosh",
@@ -2897,7 +2900,7 @@
                 "/sharpen-the-saw",
                 "/timeoff"
             ],
-            "last_modified": "2026-01-03T17:27:23+00:00",
+            "last_modified": "2026-08-18T06:30:04-07:00",
             "markdown_path": "_d/diet.md",
             "outgoing_links": [
                 "/physical-health",
@@ -3364,9 +3367,10 @@
                 "/affirmations",
                 "/delegate",
                 "/frog",
+                "/idle",
                 "/raccoon-history"
             ],
-            "last_modified": "2026-07-14T06:20:26+02:00",
+            "last_modified": "2026-08-16T17:46:36-07:00",
             "markdown_path": "_d/7h-c3.md",
             "outgoing_links": [
                 "/4dx",
@@ -3772,7 +3776,7 @@
                 "/raccoon-history",
                 "/religion"
             ],
-            "last_modified": "2026-07-14T06:41:01+02:00",
+            "last_modified": "2026-08-16T17:46:36-07:00",
             "markdown_path": "_d/greek-orthodox.md",
             "outgoing_links": [
                 "/7h-concepts",
@@ -3901,7 +3905,7 @@
                 "/spiritual-health",
                 "/timeoff"
             ],
-            "last_modified": "2026-08-16T12:07:53-07:00",
+            "last_modified": "2026-08-16T17:46:36-07:00",
             "markdown_path": "_d/four-healths.md",
             "outgoing_links": [
                 "/7-habits",
@@ -4082,7 +4086,7 @@
         },
         "/idle": {
             "description": "Waiting in line at the grocery store, sitting in an Uber, pooping - in these invisible times, we execute our idle loop. We spend a lot of time in our idle loop, and it can either increase our energy or drain it. By being aware of and then modifying how we spend our idle loop we can improve our lives one poop at a time.\n\n",
-            "doc_size": 44000,
+            "doc_size": 50000,
             "file_path": "_site/idle.html",
             "incoming_links": [
                 "/anxiety",
@@ -4092,16 +4096,21 @@
                 "/happy",
                 "/psychic-weight"
             ],
-            "last_modified": "2025-12-06T18:03:28-08:00",
+            "last_modified": "2026-08-22T13:35:31.440350+00:00",
             "markdown_path": "_d/idle-loop.md",
             "outgoing_links": [
+                "/act",
+                "/activation",
                 "/addiction",
                 "/be-proactive",
                 "/d/habits",
+                "/first-things-first",
                 "/frog",
                 "/magic",
                 "/mental-pain",
+                "/mind-at-work",
                 "/mind-monsters",
+                "/produce-consume",
                 "/psychic-shadows",
                 "/siy"
             ],
@@ -4813,6 +4822,7 @@
             "incoming_links": [
                 "/act",
                 "/addiction",
+                "/idle",
                 "/timeoff",
                 "/timeoff-2022-11",
                 "/timeoff-2026-07",
@@ -5059,7 +5069,7 @@
                 "/walking-with-god",
                 "/y26"
             ],
-            "last_modified": "2026-01-18T18:00:27-08:00",
+            "last_modified": "2026-08-16T17:46:36-07:00",
             "markdown_path": "_d/2018-04-29-mortality-software.md",
             "outgoing_links": [
                 "/affirmations",
@@ -5207,7 +5217,7 @@
                 "/health",
                 "/life-as-business"
             ],
-            "last_modified": "2026-03-22T19:05:35-07:00",
+            "last_modified": "2026-08-16T17:46:36-07:00",
             "markdown_path": "_d/operating-manual-2.md",
             "outgoing_links": [
                 "/Immutable-Laws-Of-Hard",
@@ -5616,6 +5626,7 @@
                 "/ai-journal",
                 "/build-life-you-want",
                 "/gap-year-igor",
+                "/idle",
                 "/slow",
                 "/timeoff",
                 "/timeoff-2026-07"
@@ -6144,7 +6155,7 @@
                 "/physical-health",
                 "/raccoon-history"
             ],
-            "last_modified": "2026-07-14T04:50:44+00:00",
+            "last_modified": "2026-08-16T17:46:36-07:00",
             "markdown_path": "_d/7h-c7.md",
             "outgoing_links": [
                 "/7-habits",
@@ -6417,7 +6428,7 @@
                 "/walking-with-god",
                 "/y26"
             ],
-            "last_modified": "2026-03-03T07:02:32-08:00",
+            "last_modified": "2026-08-16T17:46:36-07:00",
             "markdown_path": "_d/spiritual-health.md",
             "outgoing_links": [
                 "/activation",
@@ -6586,7 +6597,7 @@
         },
         "/switch": {
             "description": "Human action can be modeled by an elephant, a rider, and the path. Our emotional side is the Elephant and our rational side is the Rider. Perched atop the Elephant, the Rider holds the reins and seems to be the leader. But the Rider’s control is precarious because the Rider is so small relative to the Elephant. Anytime the six-ton Elephant and the Rider disagree about which direction to go, the Rider is going to lose. He’s completely overmatched. Lastly, the path is the structural elements that nudge your elephant and your rider in a direction, without effort.\n\n",
-            "doc_size": 58000,
+            "doc_size": 59000,
             "file_path": "_site/switch.html",
             "incoming_links": [
                 "/enable",
@@ -7141,7 +7152,7 @@
                 "/timeoff-2025-08",
                 "/timeoff-2026-07"
             ],
-            "last_modified": "2026-07-13T23:50:42-07:00",
+            "last_modified": "2026-08-16T17:46:36-07:00",
             "markdown_path": "_d/time_off.md",
             "outgoing_links": [
                 "/addiction",

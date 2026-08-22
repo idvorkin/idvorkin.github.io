@@ -71,7 +71,7 @@ The first step for mortality software is helping you figure out the person you w
 
 {%include summarize-page.html src="/frog" %}
 
-### Avoid [Addiction](/_d/addiction.md)
+### Avoid [Addiction](/addiction)
 
 {%include summarize-page.html src="/addiction" %}
 
