@@ -48,16 +48,18 @@ I've written about escape like it's a diagnosis — [addiction is escape](/addic
 
 Here's the budget it spends against: you have a limited number of human tokens, and when they're spent you need to recharge. Attention is the currency. Work, kids, the gym, the scroll — all priced in the same coin. So the useful question about a gap isn't _what did you spend it on_. It's **did the spend return anything**.
 
-#### The discriminator: does it let you go?
+#### The discriminator: stopping energy
 
 In 2020 I swapped doom-scrolling for a series of 120-page books, one topic each — economics, then psychiatry. What made it a better idle loop wasn't that reading is more respectable than scrolling:
 
 > it builds my cognative muscle, is not enthralling, which makes me comfortable doing something more interesting like being with my family.
 
-**Is not enthralling.** That's the test, and it's mechanical, not moral.
+_Is not enthralling_ was me describing [stopping energy](/activation) before I had the word for it. It's mechanical, not moral — the only question is what it costs to put the thing down.
 
-- **Good escape releases you.** You come out and the next thing looks appealing. The book lets you put the book down.
-- **Bad escape holds you.** You come out — if you come out — and everything else looks like effort. That's [stopping energy](/activation), and the [hierarchy of what's hard to put down](/produce-consume#if-youre-gonna-consume-take-the-easiest-drug-you-can) is already worked out.
+- **Good escape has low stopping energy.** It lets go of you cheaply, so you get to the next thing refreshed. The book puts itself down, and my family looks appealing from where I'm standing.
+- **Bad escape has high stopping energy.** It doesn't let go, and whatever's left of you arrives depleted, with everything else looking like effort. TikTok is built so its stopping energy never declines.
+
+The [hierarchy from hardest to easiest to stop](/produce-consume#if-youre-gonna-consume-take-the-easiest-drug-you-can) reads like a ranking of how worthy each thing is. It isn't. It's a price list for leaving.
 
 Notice neither one names an activity. They only ask whether the thing hands you back.
 
@@ -71,16 +73,18 @@ Same behavior, opposite verdict. The variable wasn't the activity, it was whethe
 
 That's the same rule [time off](/timeoff#very-vegetating) already lands on at the scale of a week: when you want to vegetate, drop the responsibilities, keep the habits. The July entry even concedes the exception — "it would have been better if I did my habits, and if I ate less" — and still scores as a good day, because I chose it.
 
-So the ladder isn't a list of activities. It's a list of postures:
+So the ladder isn't a list of activities. It's a list of postures, ranked by what they hand back — which is not the same as how hard they are:
 
-| Level | The gap shows up, and…                                                      |
-| ----- | --------------------------------------------------------------------------- |
-| 0     | your phone is already in your hand. Nothing got decided.                    |
-| 10    | you notice the gap and let it be a gap.                                     |
-| 50    | you spend it on something that hands you back — a walk, a stretch, a trick. |
-| 100   | mindfulness, on purpose, as a practice.                                     |
+| Level | The gap shows up, and…                                                      | Starting energy                          |
+| ----- | --------------------------------------------------------------------------- | ---------------------------------------- |
+| 0     | your phone is already in your hand. Nothing got decided.                    | negative — it starts itself              |
+| 50    | you spend it on something that hands you back — a walk, a stretch, a trick. | low — the activity supplies its own pull |
+| 90    | you notice the gap and let it be a gap.                                     | high — nothing pulls you into silence    |
+| 100   | mindfulness, on purpose, as a practice.                                     | highest — the same thing, on a schedule  |
 
-Level 10 is the cheap one that moves the needle. Mindfulness is on a pedestal — maybe it belongs there, who knows — but you don't need level 100 to stop losing at level 0. You need to be OK sitting in the gap. Reflection lives downstream of that; you can't reflect without first being willing to be bored.
+Read the second column, because the two don't track. Silence has almost no stopping energy — it's trivially easy to quit — but its [starting energy](/activation) is enormous, since nothing pulls you into it. It's high and it's hard, which is the company mindfulness keeps; the pedestal is earned. Meanwhile the cheapest rung to start is level 0, and that's the whole problem — the phone has negative starting energy, it starts itself, and it hands back nothing.
+
+Which makes level 50 the rung that's actually available. You don't have to master silence to stop losing at level 0; you need one thing on hand with enough pull of its own to beat a phone. A walk. A stretch. A trick. Put it where the phone was. Boredom is still the toll at the top — reflection lives downstream of it, and you can't reflect without first being willing to be bored — but that's the climb, not the entry fee.
 
 #### The activity is not the variable
 
@@ -90,7 +94,7 @@ How badly does a ranked list of activities survive my own journals?
 - Vibe coding is creative, productive, shipping — and I filed it next to social media as an addiction that was finally dissolving.
 - One January entry puts "work-a-holic / TikTok" under a single heading and routes both to the same word: _intoxicated_.
 
-Nothing sits still. Which is the finding: **the activity is not the variable.** Chosen-or-defaulted is. Releases-you-or-holds-you is. The activity is just where you find out.
+Nothing sits still. Which is the finding: **the activity is not the variable.** Chosen-or-defaulted is. Stopping energy is. The activity is just where you find out.
 
 The two lists below are still worth having — they're where the good and bad bets usually land. Treat them as priors, not verdicts.
 
