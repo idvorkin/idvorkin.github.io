@@ -71,7 +71,7 @@ In July: "I just wanted to vegetate, and I did, and I got to watch the kids inte
 
 Same behavior, opposite verdict. The variable wasn't the activity, it was whether I picked it or fell into it. January was a default. July was a decision, and I got the kids thrown in.
 
-That's the same rule [time off](/timeoff#very-vegetating) already lands on at the scale of a week: when you want to vegetate, drop the responsibilities, keep the habits. The July entry even concedes the exception — "it would have been better if I did my habits, and if I ate less" — and still scores as a good day, because I chose it.
+{% include alert.html content="**Note to self — worth fleshing out.** Starting energy and stopping energy are independent, and the ladder below only ranks one of them. The real object is a 2x2, and the interesting stuff is in its corners. There's a whole post in that." style="info" %}
 
 So the ladder isn't a list of activities. It's a list of postures, ranked by what they hand back — which is not the same as how hard they are:
 
@@ -94,24 +94,9 @@ How badly does a ranked list of activities survive my own journals?
 - Vibe coding is creative, productive, shipping — and I filed it next to social media as an addiction that was finally dissolving.
 - One January entry puts "work-a-holic / TikTok" under a single heading and routes both to the same word: _intoxicated_.
 
-Nothing sits still. Which is the finding: **the activity is not the variable.** Chosen-or-defaulted is. Stopping energy is. The activity is just where you find out.
+Nothing sits still. Which is the finding: **the activity is not the variable.** Deliberateness is — did you pick it. Intent is — what you picked it for. Stopping energy is. The activity is just where you find out. [ACT](/act#the-choice-point--towards-moves-and-away-moves) got there first from the therapy side: _never the form, always the function_.
 
 The two lists below are still worth having — they're where the good and bad bets usually land. Treat them as priors, not verdicts.
-
-#### The loop that funds itself
-
-You don't sort this out once. April 2013: "What a waste, it was perfect weather too, I should have gone for a bike ride or something instead of just sitting around eating non-stop junk food." January 2026: "come home, sit there, eat junk food. Feels crummy." Thirteen years, same scene, same junk food, same shame. I already knew that [beating an addiction doesn't stick](/addiction#beaten-addictions-for-now) when the underlying need goes unaddressed. Apparently that's also true of a Tuesday afternoon.
-
-Why it keeps coming back is in a set of quadrant labels I scribbled in 2020:
-
-- Not important, not urgent — Vegetate — Netflix
-- Not important, urgent — False urgency — the latest news
-- Important, urgent — **Firedrill — tooth ache, assignment rush job because you were vegetating**
-- Important, not urgent — Invest tomorrow — planning, gym, teach kids to bike
-
-Read the third one again. Bad escape doesn't just cost you the hour. It mints the [Quadrant 1](/first-things-first#keep-your-self-in-quadrant-ii) crisis, and the crisis is exhausting, and exhaustion is the single best excuse for the next escape. Covey says it flat out: the more time you spend in Quadrant 1 the more you'll need there, and the only relief is hiding in Quadrants 3 and 4.
-
-So at the bottom it isn't a ladder at all. It's a loop that funds itself. Good escape doesn't do that — an hour of kettlebells costs an hour and hands back more than an hour. That asymmetry, not the moral ranking, is the whole reason to mind the gap.
 
 ### Regenerative loops
 

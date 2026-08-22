@@ -619,6 +619,7 @@
             "doc_size": 316000,
             "file_path": "_site/act.html",
             "incoming_links": [
+                "/idle",
                 "/timeoff-2026-07"
             ],
             "last_modified": "2026-07-19T05:20:21-07:00",
@@ -4098,6 +4099,7 @@
             "last_modified": "2026-08-22T13:35:31.440350+00:00",
             "markdown_path": "_d/idle-loop.md",
             "outgoing_links": [
+                "/act",
                 "/activation",
                 "/addiction",
                 "/be-proactive",
@@ -4110,8 +4112,7 @@
                 "/mind-monsters",
                 "/produce-consume",
                 "/psychic-shadows",
-                "/siy",
-                "/timeoff"
+                "/siy"
             ],
             "redirect_url": "",
             "title": "Your idle loop",
@@ -7131,7 +7132,6 @@
                 "/energy-abundance",
                 "/gap-year",
                 "/gap-year-igor",
-                "/idle",
                 "/life-as-business",
                 "/mind-at-work",
                 "/packing",
