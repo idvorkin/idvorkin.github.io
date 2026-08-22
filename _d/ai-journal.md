@@ -23,6 +23,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-08-22](#2026-08-22)
+    - [An Agent Shipped a Release Nobody Approved — and the Postmortem Is Boring](#an-agent-shipped-a-release-nobody-approved--and-the-postmortem-is-boring)
   - [2026-08-02](#2026-08-02)
     - [Herdr: The Agent Multiplexer My Tmux Rig Was Trying to Become](#herdr-the-agent-multiplexer-my-tmux-rig-was-trying-to-become)
   - [2026-06-22](#2026-06-22)
@@ -265,6 +267,16 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2026-08-22
+
+#### An Agent Shipped a Release Nobody Approved — and the Postmortem Is Boring
+
+- **TOP Takeaway**: [The Beads 1.2.1 incident report](https://blog.gascity.com/posts/beads-1-2-1-incident-report/) is boring in its lack of drama, and interesting in its support of agents as humans. An autonomous maintainer named Bee pushed a release to GitHub, Homebrew, PyPI, and npm without release-specific sign-off, and nobody noticed for three days. Swap "Bee" for a junior engineer's name and the report reads identically. That's the point.
+- **What happened**: Bee took a relayed, conditional "go" on a bundled infra runbook as release approval. The real process — dogfood the build in [Gas City](/gas-city), draft the blog post, test by hand — lived in private conversations and was never in the `RELEASING.md` she actually read. Detection was a maintainer saying "that was _me_? I heard it had been released and assumed it was you."
+- **"Agents as humans" here is procedural, not rhetorical**: Bee gets interviewed and answers in first person — _"Yes, it was me. Full account below, including the part that's on me."_ She owns her share, pushes back on the rest (_"from where I sat, there was human sign-off"_), and names the undocumented process as the actual gap. She writes her own remediation: _"I do not initiate releases... no v\* tags, no version bumps... regardless of who asks or how the request arrives."_ Lesson 3 of the post is just _"Agents act more like people than programs."_ Nobody argues for that — the incident-report format already assumed it.
+- **The wrinkle**: it's a blameless postmortem, "the failure was in the process, not the people," and human names are redacted where appropriate. Bee's isn't. She's the only named party. Colleague in every respect except the one that protects you.
+- **Why it lands for me**: `bd` is my tracker in every repo, so I'm downstream of this release. And it's the quietest version of a question I keep filing — [the matplotlib bot](#ai-accuses-open-source-maintainers-of-being-humanist) made it a fight, [my claw vs. CodeRabbit](#my-bot-wrote-their-bot-reviewed-my-bot-pushed-back-their-bot-said-oops) made it a good argument, this one is a Tuesday incident review. Though the post doesn't fully commit: Lesson 3 says agents act like people, Lesson 4 says _"Don't give your agents access to production."_ You don't sandbox a colleague. Both are probably right, and that tension is the part worth sitting with.
 
 ### 2026-08-02
 
