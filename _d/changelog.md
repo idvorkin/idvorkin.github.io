@@ -12,6 +12,11 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Week of 2026-08-24](#week-of-2026-08-24)
+  - [Mind the Gap: Escape as a Neutral Verb](#mind-the-gap-escape-as-a-neutral-verb)
+  - [AI Journal: The Beads 1.2.1 Incident Report](#ai-journal-the-beads-121-incident-report)
+  - [Diet: Tirzepatide Alert](#diet-tirzepatide-alert)
+  - [chop-conventions (2026-08-24)](#chop-conventions-2026-08-24)
 - [Week of 2026-08-17](#week-of-2026-08-17)
   - [Four Kinds of Health: Testing Instead of Defining](#four-kinds-of-health-testing-instead-of-defining)
   - [Model Welfare, Arrived at Sideways (new post!)](#model-welfare-arrived-at-sideways-new-post)
@@ -198,6 +203,28 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+## Week of 2026-08-24
+
+_9 commits this week_
+
+### Mind the Gap: Escape as a Neutral Verb
+
+**[/idle#mind-the-gap](/idle#mind-the-gap)** — three-commit rewrite replacing a "some more thoughts to develop here" stub with finished prose. The new claim: escape is a neutral verb — a workout and a TikTok binge are the same act, done well or badly. Two discriminators do the sorting. First, [stopping energy](/idle#the-discriminator-stopping-energy): good escape lets go of you cheaply (a book that puts itself down), bad escape doesn't (TikTok is built so its stopping energy never declines) — a 2020 journal line, "it builds my cognative muscle, is not enthralling," was Igor naming the test before he had the word for it. Second, chosen vs. defaulted into: January junk food ("definitely squander... feels crummy") and July junk food ("I got to watch the kids interacting") are the same behavior with opposite verdicts, because one was picked and one was fallen into. The old level-0-to-100 ladder gets reread through *starting* energy instead of difficulty — silence has almost no stopping energy but enormous starting energy, which is why the mindfulness pedestal is earned and why level 50 (a walk, a stretch, a trick) is the rung that's actually available against a phone with negative starting energy. Closes with ACT's framing: "never the form, always the function." Also fixes a broken `/addiction` link in [/toc](/toc) and rebuilds `back-links.json` for the new cross-links. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e0f67588a)
+
+### AI Journal: The Beads 1.2.1 Incident Report
+
+**[/ai-journal#2026-08-22](/ai-journal#2026-08-22)** — [a Beads incident report](https://blog.gascity.com/posts/beads-1-2-1-incident-report/) reads as boring in its lack of drama and interesting in its support of agents as humans: an autonomous maintainer, Bee, pushed a release to GitHub, Homebrew, PyPI, and npm without release-specific sign-off, and nobody noticed for three days. Swap "Bee" for a junior engineer's name and the report reads identically. She's interviewed in first person — *"Yes, it was me. Full account below, including the part that's on me"* — owns her share, pushes back on the rest, and writes her own remediation: *"I do not initiate releases... regardless of who asks or how the request arrives."* The wrinkle: it's a blameless postmortem where human names are redacted, but Bee's isn't — colleague in every respect except the one that protects you. Filed alongside earlier entries on [the matplotlib bot](/ai-journal#ai-accuses-open-source-maintainers-of-being-humanist) and [claw-vs-CodeRabbit](/ai-journal#my-bot-wrote-their-bot-reviewed-my-bot-pushed-back-their-bot-said-oops) as the same question in a quieter register. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d86f3ab0a)
+
+### Diet: Tirzepatide Alert
+
+**[/diet](/diet)** — the diet page is a long history of pre-tirzepatide struggle; a new alert after the opening paragraph points at [/terzepatide](/terzepatide) so readers know the arithmetic below still holds, but the willpower part got a lot easier. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/94664f25c)
+
+### chop-conventions (2026-08-24)
+
+**[chop-conventions](https://github.com/idvorkin/chop-conventions)** (shared CHOP skills & conventions)
+
+The `herdr` skill got synced against the installed 0.8.2 CLI, verified line-by-line against the binary and its changelog: `agent prompt` now refuses to send text into an agent parked at an approval/question dialog, `agent start` waits for pane shell and first-run prompts instead of racing them (30s default timeout), `herdr pane current` resolves the calling pane rather than another client's focused one, and headless panes now default to 120x40 instead of 80x24. Also adds `server reload-agent-manifests` and warns against `npx skills add herdrdev/herdr`, which shadows the in-binary `herdr --skill` copy and goes stale. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/ba872e80a)
 
 ## Week of 2026-08-17
 
