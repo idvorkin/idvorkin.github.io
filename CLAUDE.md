@@ -21,17 +21,18 @@ Use beads (`bd` commands) for task tracking. See the Beads Integration section b
 
 ## First commit in a fresh worktree
 
-The `anchor-checker` pre-commit hook reads `_site/*.html` to validate markdown anchors. A freshly cloned worktree has no `_site/` and the hook fails with `Error: _site not found. Run 'jekyll build' first.` Run once before your first commit:
+The `anchor-checker` pre-commit hook reads `_site/*.html` **and** `back-links.json` to validate markdown anchors and resolve permalinks/redirects. A freshly cloned worktree has neither — `back-links.json` is gitignored and CI-generated, not checked out — and the hook hard-fails with `Error: _site not found. Run 'jekyll build' first.` or `Error: back-links.json not found. Run build_back_links.py first.` Run once before your first commit:
 
 ```bash
 bundle exec jekyll build --incremental
+just update-backlinks
 ```
 
-- **Background jekyll build on worktree creation**: after `git worktree add <path>`, cd in and run `just worktree-init`. Fires `bundle exec jekyll build` in the background (log: `/tmp/jekyll-worktree-<branch>.log`). By the time you're ready to commit, `_site/` is populated and the `anchor-checker` pre-commit hook resolves anchors correctly — no need for `SKIP=anchor-checker` unless there are genuinely-broken anchors in source.
+- **Background jekyll build on worktree creation**: after `git worktree add <path>`, cd in and run `just worktree-init`. Fires `bundle exec jekyll build && uv run ./build_back_links.py build` in the background (log: `/tmp/jekyll-worktree-<branch>.log`). By the time you're ready to commit, both `_site/` and `back-links.json` are populated and the `anchor-checker` pre-commit hook resolves anchors correctly — no need for `SKIP=anchor-checker` unless there are genuinely-broken anchors in source.
 
 Same fix applies if you edit a heading mid-session and the live `jekyll serve` hasn't written it to disk yet — see the screenshot section below.
 
-- **Committing `_d/*.md` mid-session:** rebuild `_site` first (`bundle exec jekyll build`) so `anchor-checker` doesn't false-fail on posts merged to `upstream/main` since your last build, then commit with `SKIP=update-backlinks-last-modified,prettier` — the last-modified hook rewrites `back-links.json` (notably on date rollover) and the commit-time prettier hook trips a stash-rollback even on clean files, both silently aborting the commit.
+- **Committing `_d/*.md` mid-session:** rebuild `_site` first (`bundle exec jekyll build`) so `anchor-checker` doesn't false-fail on posts merged to `upstream/main` since your last build, then commit with `SKIP=prettier` — the commit-time prettier hook trips a stash-rollback even on clean files, silently aborting the commit. (There used to be a second hook in this `SKIP` list that stamped `back-links.json` on every commit — removed; see "Backlinks index" below.)
 
 ## PR Workflow
 
@@ -39,13 +40,17 @@ Repo-mode distinctions (AI-Tools vs Human-Supervised) and the fork-push workflow
 
 - **Branch off `upstream/main`, not `origin/main`.** The fork (`origin`) lags — PRs merge to `upstream`, and `origin/main` only catches up on the `/up-to-date` fork-sync. Off a stale `origin/main` the PR errors "No commits between". Use `git fetch upstream && git checkout -b <branch> upstream/main`.
 
-### Rebuild backlinks before opening a new-post PR
+### Backlinks index is CI-generated — never commit it
 
-If your edit **adds, renames, or removes a `_d/*.md` permalink**, OR adds/removes cross-links to other posts, run `just update-backlinks` (or `just back-links`) BEFORE opening the PR. Commit the regenerated `back-links.json` in the same PR.
+`back-links.json` is **not tracked in git**. `.github/workflows/pages.yml` builds it fresh (`uv run ./build_back_links.py build`) after every Jekyll build on every push to `main`, then ships it in the Pages deploy artifact. Nothing in Jekyll itself consumes the file — no `_plugins`/`_includes`/layout reads it — the browser fetches `/back-links.json` at runtime, so the deployed copy can never go stale and there is nothing to rebuild before opening a PR.
 
-Why it matters: the inbound "Mentioned in:" section on every linked post reads from `back-links.json`. New post + no rebuild = the linked posts on main don't know they're linked from the new one until the next manual rebuild. Igor caught this on PR #594 (gas-city-home) the first time, after the merge — required a follow-up PR (#597) to land the rebuilt index.
+**Do not run `just update-backlinks` (or `just back-links`/`bbl`) as a pre-PR step, and never `git add` its output.** The file is gitignored specifically so an accidental `git add -A` can't catch it. (This used to be required — "rebuild before opening a new-post PR, commit the regenerated file" — and it was the single biggest source of merge conflicts between concurrent content PRs, since every PR touched the same generated file. Removed 2026-08; see the PR that removed this section for the history.)
 
-**Skip this step** for body-only edits to existing posts that don't change links. The rebuild is a no-op cost otherwise.
+**When you DO want it locally**, run `just update-backlinks`:
+
+- Local preview (`just jekyll-serve`) needs it: recent posts, featured posts, and search result descriptions all `fetch("/back-links.json")` client-side (`src/shared.ts`, `src/recent-posts-shared.ts`, `src/search.ts`). Without it those features degrade gracefully to empty results (the fetch failure is caught and returns `{}`) rather than crashing, but you won't see real data.
+- `/content`, `/ai-content`, `/spiritual-content`, `/find-content`, `/ai-feed` all `jq` against `back-links.json` on disk to find real cross-link candidates. If the file isn't there yet, run `just update-backlinks` first.
+- `build_topics.py` (see `docs/topics-index.md`) reads it as an input to `topics.json`.
 
 #### Ruby version requirement (local backlinks rebuild)
 
@@ -330,4 +335,5 @@ bd close <id>         # Complete work
 - NEVER stop before pushing - that leaves work stranded locally
 - NEVER say "ready to push when you are" - YOU must push
 - If push fails, resolve and retry until it succeeds
+
 <!-- END BEADS INTEGRATION -->

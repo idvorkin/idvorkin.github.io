@@ -269,7 +269,7 @@ worktree-init:
     BRANCH=$(git branch --show-current | tr '/' '-')
     LOG="/tmp/jekyll-worktree-$BRANCH.log"
     NPM_LOG="/tmp/npm-worktree-$BRANCH.log"
-    echo "🔨 Starting bg gem install + jekyll build — log: $LOG"
+    echo "🔨 Starting bg gem install + jekyll build + backlinks build — log: $LOG"
     echo "📦 Starting bg npm ci — log: $NPM_LOG"
     # Match jekyll-rebuild: prefer homebrew Ruby on Darwin so we don't
     # silently fall back to system Ruby and fail.
@@ -278,11 +278,17 @@ worktree-init:
     else
         BUNDLE="bundle"
     fi
-    # Gems must land before the build — sequence them in one background job.
-    nohup sh -c "$BUNDLE install && $BUNDLE exec jekyll build" >"$LOG" 2>&1 & disown
+    # Gems must land before the jekyll build, and the jekyll build before the
+    # backlinks build (build_back_links.py reads _site/) — sequence all three
+    # in one background job. back-links.json is gitignored/CI-generated, but
+    # the anchor-checker pre-commit hook still needs a LOCAL copy to resolve
+    # permalinks/redirects (it hard-fails with "back-links.json not found" if
+    # one isn't on disk) — same reason _site/ has to exist before the first
+    # commit.
+    nohup sh -c "$BUNDLE install && $BUNDLE exec jekyll build && uv run ./build_back_links.py build" >"$LOG" 2>&1 & disown
     # node_modules is independent of the Ruby side, so let it run in parallel.
     nohup npm ci >"$NPM_LOG" 2>&1 & disown
-    echo "✅ Background deps + build fired. Ready in ~60-90s; first commit should find _site/ populated and the test hook runnable."
+    echo "✅ Background deps + build fired. Ready in ~60-90s; first commit should find _site/ and back-links.json populated and the test hook runnable."
 
 jekyll-serve port="4000" livereload_port="35729":
     #!/usr/bin/env sh
