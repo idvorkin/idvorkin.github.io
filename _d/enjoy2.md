@@ -77,6 +77,10 @@ Read my **[Eulogy](/eulogy)**. See my **[Memories ](/ig66)**
 - Do my back stretches
 - Go for a walk
 - Do my wrist exercises.
+- Pigeon stretch on stool
+- Shoulder in and outs
+- Half lotus sit
+- Air squats
 
 ### Emotional
 
