@@ -1111,7 +1111,7 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get lost. What I’m reading — and what I thought of it — lives in my AI feed.\n\n",
-            "doc_size": 208000,
+            "doc_size": 212000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai",
@@ -1131,7 +1131,7 @@
                 "/walking-with-god",
                 "/y25"
             ],
-            "last_modified": "2026-08-02T15:38:00-07:00",
+            "last_modified": "2026-08-22T09:48:33-07:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/7-habits",
@@ -4096,7 +4096,7 @@
                 "/happy",
                 "/psychic-weight"
             ],
-            "last_modified": "2026-08-22T13:35:31.440350+00:00",
+            "last_modified": "2026-08-22T09:24:01-07:00",
             "markdown_path": "_d/idle-loop.md",
             "outgoing_links": [
                 "/act",
@@ -5598,6 +5598,8 @@
                 "/larry",
                 "/operating-manual",
                 "/pet-projects",
+                "/vibing",
+                "/writing",
                 "/y24"
             ],
             "last_modified": "2026-07-14T06:26:45+02:00",
@@ -7665,7 +7667,7 @@
         },
         "/vibing": {
             "description": "I’ve been spending a lot of time vibing with agents — coding, writing, sometimes just talking. This post is a survey of what I’m noticing, not a finished theory. Observations, dark sides, related notes. I’ll keep adding as I see more. The dopamine is real. The drain is real. Both are why this post exists.\n\n",
-            "doc_size": 50000,
+            "doc_size": 51000,
             "file_path": "_site/vibing.html",
             "incoming_links": [
                 "/addiction",
@@ -7677,9 +7679,11 @@
             "outgoing_links": [
                 "/addiction",
                 "/ai-cockpit",
+                "/process-journal",
                 "/spiritual-health",
                 "/tesla",
-                "/wally"
+                "/wally",
+                "/writing"
             ],
             "redirect_url": "",
             "title": "The Psychology of Vibing",
@@ -8025,7 +8029,7 @@
         },
         "/writing": {
             "description": "Useful writing tells people (including, possibly most importantly you) something true and important that they didn’t already know in a way that leaves no doubt. Most writing is bad. Not due to spelling, punctuation or grammar, but due to lack of critical thinking. Critical thinking like analysis, synthesis, simplification, and presentation. To quote someone smart “If you’re thinking without writing, you’re only thinking about thinking”.\n\n",
-            "doc_size": 66000,
+            "doc_size": 67000,
             "file_path": "_site/writing.html",
             "incoming_links": [
                 "/90days",
@@ -8038,7 +8042,8 @@
                 "/manager-book",
                 "/manager-book-appendix",
                 "/operating-manual",
-                "/raccoon-history"
+                "/raccoon-history",
+                "/vibing"
             ],
             "last_modified": "2026-03-21T12:32:21-07:00",
             "markdown_path": "_d/writing.md",
@@ -8049,6 +8054,7 @@
                 "/coaching",
                 "/coe",
                 "/enable",
+                "/process-journal",
                 "/td/ios",
                 "/td/ios-nomad",
                 "/vim-for-writing",
