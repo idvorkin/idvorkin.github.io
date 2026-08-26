@@ -183,3 +183,19 @@ https://css-tricks.com/line-clampin/
     margin: 0 0.75rem 0.5rem 0;
   }
 }
+
+/*
+ * Reserve the Plotly sunburst's height before Plotly renders into it.
+ *
+ * The <div id="sunburst"> ships empty and Plotly inflates it to its default
+ * 450px well after the browser has jumped to the URL's #fragment. Those pixels
+ * all appear above the rest of the page, so a deep link like
+ * /todo_enjoy#physical used to land 450px short of its heading. Holding the
+ * space up front removes that shift instead of correcting for it afterwards.
+ *
+ * 450px is Plotly's default plot height and does not vary with viewport width
+ * (measured identical at 390px and 1280px).
+ */
+#sunburst {
+  min-height: 450px;
+}

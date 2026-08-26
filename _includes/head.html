@@ -118,3 +118,27 @@ function defer(method) {
   }
 }
 </script>
+
+<!--
+  Note that the reader started scrolling on their own.
+
+  src/scroll-to-hash.ts re-aims deep links (/todo_enjoy#physical) once the
+  content above them has finished loading, and it backs off the moment the
+  reader takes over. But it ships in a deferred module, so it cannot listen for
+  that until the document has parsed — a reader who flicks the page during the
+  first second would otherwise get pulled back to the heading. This runs in the
+  <head>, so it catches those earliest gestures and the module stands down.
+-->
+<script>
+(function () {
+  var SCROLL_KEYS = ["ArrowUp", "ArrowDown", "PageUp", "PageDown", "Home", "End", " ", "Spacebar"];
+  function mark() {
+    window.__readerScrolled = true;
+  }
+  window.addEventListener("wheel", mark, { passive: true, capture: true, once: true });
+  window.addEventListener("touchstart", mark, { passive: true, capture: true, once: true });
+  window.addEventListener("keydown", function (e) {
+    if (SCROLL_KEYS.indexOf(e.key) !== -1) mark();
+  }, { passive: true, capture: true });
+})();
+</script>
