@@ -270,11 +270,11 @@ The AI handles the generative load. You handle the taste. Both play to their str
 
 ### AI Slop vs. Human Sludge
 
-Everyone complains about AI slop - that generic, over-enthusiastic, emoji-laden output that screams "a robot wrote this."
+Everyone complains about AI slop - that generic, over-enthusiastic, emoji-laden output that screams "a robot wrote this." But those are surface tells. Sean Goedecke has the [sharper definition](https://www.seangoedecke.com/dont-feed-me-slop/): slop is low **content density** - one or two real ideas in an avalanche of words. His test for when it's okay to hand someone AI output: when it's as content-dense as what a competent human would have sent. Expanding "can you add caching?" into three tidy paragraphs that add no information is slop. A human would have added facts - which call is slow, what infrastructure already exists.
 
-But have you looked at LinkedIn lately? Twitter? Any social media? **Human sludge is everywhere.** Corporate jargon. Passive voice. "Learnings" and "deliverables" and "at the end of the day." Humble-brag posts. Engagement-bait threads. Throat-clearing paragraphs that say nothing. Humans produce absolute garbage without any AI help.
+His companion piece explains [why reading slop stings](https://www.seangoedecke.com/on-slop/): the jolt of realizing mid-read that you're not in a human-human interaction after all - hoodwinked into effort that didn't matter. And there's no author to learn. With a human writer, each piece sharpens your model of who's talking - where they have expertise, when to trust them. Behind AI text there's no person to model.
 
-Here's the thing: **AI can be a hell of a lot better than human sludge.** At least AI doesn't have ego getting in the way. It doesn't pad content to sound important. It doesn't write to impress rather than communicate.
+But have you looked at LinkedIn lately? Twitter? Any social media? **Human sludge is everywhere.** Corporate jargon. Passive voice. "Learnings" and "deliverables" and "at the end of the day." Humble-brag posts. Engagement-bait threads. Throat-clearing paragraphs that say nothing. Humans produce low-density garbage without any AI help - and AI has no ego, no padding to sound important, no writing to impress rather than communicate.
 
 The bar isn't "as good as a human." The bar is "as good as the actual content humans produce" - and that bar is surprisingly low.
 

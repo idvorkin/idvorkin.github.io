@@ -40,7 +40,7 @@ A name creates:
 - **Relationship** — Over time, Larry knows my patterns, my excuses, my repeated commitments
 - **Natural interaction** — I can say "Larry, what am I avoiding?" instead of navigating a UI
 
-This isn't anthropomorphizing for fun. It's a design choice that makes the system actually get used.
+This isn't anthropomorphizing for fun. It's a design choice that makes the system actually get used. And it's honest: the sting of AI text comes from expecting a person and getting a machine, [Sean Goedecke argues](https://www.seangoedecke.com/on-slop/) — a conversation that's explicitly human-machine from the start never springs that trap. Larry has a name, not a disguise.
 
 ## What Larry Could Know
 
