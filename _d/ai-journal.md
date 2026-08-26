@@ -23,6 +23,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-08-25](#2026-08-25)
+    - [Sean Goedecke's Game Show: All Skimming and Judging, No Hammock Time](#sean-goedeckes-game-show-all-skimming-and-judging-no-hammock-time)
   - [2026-08-22](#2026-08-22)
     - [An Agent Shipped a Release Nobody Approved — and the Postmortem Is Boring](#an-agent-shipped-a-release-nobody-approved--and-the-postmortem-is-boring)
   - [2026-08-02](#2026-08-02)
@@ -44,7 +46,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
   - [2026-04-13](#2026-04-13)
     - [My Bot Wrote, Their Bot Reviewed, My Bot Pushed Back, Their Bot Said "Oops"](#my-bot-wrote-their-bot-reviewed-my-bot-pushed-back-their-bot-said-oops)
   - [2026-04-12](#2026-04-12)
-    - [The $230 Week: When Cheap Coding Isn't](#the-230-week-when-cheap-coding-isnt)
+    - [The \$230 Week: When Cheap Coding Isn't](#the-230-week-when-cheap-coding-isnt)
     - [Two-Process Telegram: When the Platform Is the Bug](#two-process-telegram-when-the-platform-is-the-bug)
   - [2026-04-01](#2026-04-01)
     - [The Winchester Mystery House of Software: When Code Gets Too Cheap to Care About](#the-winchester-mystery-house-of-software-when-code-gets-too-cheap-to-care-about)
@@ -81,7 +83,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
   - [2025-12-14](#2025-12-14)
     - [Stream Deck Plugin in 30 Minutes](#stream-deck-plugin-in-30-minutes)
   - [2025-10-26](#2025-10-26)
-    - [Cloning ScrollBuddy - Reverse Engineering a $100/year Widget](#cloning-scrollbuddy---reverse-engineering-a-100year-widget)
+    - [Cloning ScrollBuddy - Reverse Engineering a \$100/year Widget](#cloning-scrollbuddy---reverse-engineering-a-100year-widget)
   - [2025-10-15](#2025-10-15)
     - [Use it to update my crazy shell (Enabling Environment) configuration](#use-it-to-update-my-crazy-shell-enabling-environment-configuration)
     - [Use it to help digest new books](#use-it-to-help-digest-new-books)
@@ -267,6 +269,27 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2026-08-25
+
+#### Sean Goedecke's Game Show: All Skimming and Judging, No Hammock Time
+
+- **TOP Takeaway**: [Sean Goedecke's "How to keep thinking"](https://www.seangoedecke.com/how-to-keep-thinking/) (2026-08-07) opens with the best description of agentic work I've read all year:
+
+  > Imagine you're the guest on some kind of frenetic, software-engineering-themed game show. The host is constantly flipping over new cards with questions that you have to answer as fast as possible:
+  >
+  > - Is this adjustment to the database schema right?
+  > - Do these bits of data look plausible?
+  > - Do these five paragraphs of text describe an actual series of manual tests that took place?
+  > - Does this suggested architecture pass the smell test?
+  > - Is this implementation better than the current code? Or this one? Or this one?
+  >
+  > Working in 2026 feels a bit like this.
+
+- **His worry**: not that the work is mindless — skimming an AI response and rapidly deciding what to do with it takes real skill — but that it's "biasing me towards the quick 'skimming and judging' parts of my mental toolkit and away from the slow 'hammock time' needed for deep thought and real creativity."
+- **Why he doesn't just slow down** (this honesty is what makes the piece): "It's just such a miserable experience to spend your day close-reading LLM output: carefully chewing and savoring each morsel of slop." And the incentive is structural — "when your company gives you a 'solve this task ten times more quickly' button, you are heavily incentivized to use it as much as possible, or risk being outcompeted by your peers."
+- **His defenses**: write in your own words (drafting with an LLM "does not work for this at all" — you construct the idea in the act of writing it), and read dense non-fiction — "the antithesis of AI slop."
+- **The Igor angle**: my full take lives in [vibing](/vibing#all-game-show-no-hammock) — the trap flow hides is that it feels like thinking hard when mostly it's judging fast. His skimming-and-judging is Yegge's [Discernment Horizon](#steve-yegges-flat-curve-society-the-plateau-is-good-news-for-engineers) experienced from the inside, and the crowded-out hammock is the [friction = focus](#friction--focus-when-attention-stops-being-a-proxy-for-value) argument in work clothes. I've been running half his defense since 2011 without naming it — [morning journaling by hand](/process-journal); how his write-in-your-own-words claim lands for me is in [Writing in the age of AI](/writing#writing-in-the-age-of-ai).
 
 ### 2026-08-22
 

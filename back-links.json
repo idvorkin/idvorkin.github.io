@@ -1111,7 +1111,7 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get lost. What I’m reading — and what I thought of it — lives in my AI feed.\n\n",
-            "doc_size": 212000,
+            "doc_size": 215000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai",
@@ -1159,8 +1159,11 @@
                 "/mortality-software",
                 "/parkinson",
                 "/pet-projects",
+                "/process-journal",
                 "/produce-consume",
-                "/tesla"
+                "/tesla",
+                "/vibing",
+                "/writing"
             ],
             "redirect_url": "",
             "title": "Igor's AI Journal",
@@ -3987,7 +3990,7 @@
         },
         "/how-igor-chops": {
             "description": "I mumble to Claude on my couch while my family wonders who I’m talking to. I vibe code in the car while my son drives. I rent the most expensive brain I can get. This is my CHOP (Chat-Oriented Programming) setup: the infrastructure, the tools, and what I’ve learned.\n\n",
-            "doc_size": 79000,
+            "doc_size": 80000,
             "file_path": "_site/how-igor-chops.html",
             "incoming_links": [
                 "/ai",
@@ -4023,7 +4026,8 @@
                 "/new-skills",
                 "/pet-projects",
                 "/process-journal",
-                "/shoulder-pain"
+                "/shoulder-pain",
+                "/vibing"
             ],
             "redirect_url": "",
             "title": "Mumbling on My Couch: My CHOP Setup",
@@ -5590,6 +5594,7 @@
             "doc_size": 50000,
             "file_path": "_site/process-journal.html",
             "incoming_links": [
+                "/ai-journal",
                 "/ai-second-brain",
                 "/chop",
                 "/eulogy",
@@ -7672,9 +7677,11 @@
             "incoming_links": [
                 "/addiction",
                 "/ai-cockpit",
+                "/ai-journal",
+                "/how-igor-chops",
                 "/wally"
             ],
-            "last_modified": "2026-07-13T16:03:07+00:00",
+            "last_modified": "2026-08-25T19:47:22-07:00",
             "markdown_path": "_d/vibing.md",
             "outgoing_links": [
                 "/addiction",
@@ -8034,6 +8041,7 @@
             "incoming_links": [
                 "/90days",
                 "/affirmations",
+                "/ai-journal",
                 "/amazon",
                 "/chow",
                 "/enable",
@@ -8045,7 +8053,7 @@
                 "/raccoon-history",
                 "/vibing"
             ],
-            "last_modified": "2026-03-21T12:32:21-07:00",
+            "last_modified": "2026-08-25T19:47:22-07:00",
             "markdown_path": "_d/writing.md",
             "outgoing_links": [
                 "/7h-concepts",
