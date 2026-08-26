@@ -28,6 +28,8 @@ bundle exec jekyll build --incremental
 just update-backlinks
 ```
 
+(If you've already run `just jekyll-serve` in this checkout, `back-links.json` is there — `ensure-backlinks` built it. The commit path can't rely on that, hence the explicit step.)
+
 - **Background jekyll build on worktree creation**: after `git worktree add <path>`, cd in and run `just worktree-init`. Fires `bundle exec jekyll build && uv run ./build_back_links.py build` in the background (log: `/tmp/jekyll-worktree-<branch>.log`). By the time you're ready to commit, both `_site/` and `back-links.json` are populated and the `anchor-checker` pre-commit hook resolves anchors correctly — no need for `SKIP=anchor-checker` unless there are genuinely-broken anchors in source.
 
 Same fix applies if you edit a heading mid-session and the live `jekyll serve` hasn't written it to disk yet — see the screenshot section below.
@@ -46,11 +48,15 @@ Repo-mode distinctions (AI-Tools vs Human-Supervised) and the fork-push workflow
 
 **Do not run `just update-backlinks` (or `just back-links`/`bbl`) as a pre-PR step, and never `git add` its output.** The file is gitignored specifically so an accidental `git add -A` can't catch it. (This used to be required — "rebuild before opening a new-post PR, commit the regenerated file" — and it was the single biggest source of merge conflicts between concurrent content PRs, since every PR touched the same generated file. Removed 2026-08; see the PR that removed this section for the history.)
 
-**When you DO want it locally**, run `just update-backlinks`:
+**Local preview builds it for you.** `just jekyll-serve` (and `just jekyll-container`) depend on `just ensure-backlinks`, which builds `back-links.json` **only if it is missing** — so `git clone && just jekyll-serve` just works, and the check costs ~4ms once the file exists. It is deliberately missing-only, not staleness-checked: `update-backlinks` runs a full Jekyll build first, and paying that on every serve to catch a rare case is the worse trade. After adding or renaming a permalink, refresh by hand with `just update-backlinks`.
 
-- Local preview (`just jekyll-serve`) needs it: recent posts, featured posts, and search result descriptions all `fetch("/back-links.json")` client-side (`src/shared.ts`, `src/recent-posts-shared.ts`, `src/search.ts`). Without it those features degrade gracefully to empty results (the fetch failure is caught and returns `{}`) rather than crashing, but you won't see real data.
-- `/content`, `/ai-content`, `/spiritual-content`, `/find-content`, `/ai-feed` all `jq` against `back-links.json` on disk to find real cross-link candidates. If the file isn't there yet, run `just update-backlinks` first.
+Why it matters at all: the browser fetches `/back-links.json` at runtime and **the failure is silent**. `get_link_info()` catches the error and returns `{}`, so with the file absent the home page's Featured card sits on "Loading…" forever, Recent and Random render empty, and every search result description is blank — while titles still render everywhere, so the page looks fine at a glance. The only signal is a caught `SyntaxError: Unexpected token '<'` in the console (the 404 HTML parsed as JSON). `index.md` now renders an explicit "couldn't load /back-links.json" line in those three sections instead of nothing, so the failure explains itself if you ever reach it another way.
+
+**Other things that want a local copy** — these read the file off disk and do NOT self-heal, so run `just update-backlinks` first:
+
+- `/content`, `/ai-content`, `/spiritual-content`, `/find-content`, `/ai-feed` all `jq` against `back-links.json` to find real cross-link candidates.
 - `build_topics.py` (see `docs/topics-index.md`) reads it as an input to `topics.json`.
+- The `anchor-checker` pre-commit hook — see "First commit in a fresh worktree" above (`just worktree-init` covers this for new worktrees).
 
 #### Ruby version requirement (local backlinks rebuild)
 
