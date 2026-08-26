@@ -441,6 +441,8 @@ I'm in flow constantly. It comes from orchestrating — juggling two or three ag
 
 That's where the joy of chopping comes from for me. Not mourning the typing — being in the zone while orchestrating a team.
 
+The honest counterpoint: [Sean Goedecke frames](https://www.seangoedecke.com/how-to-keep-thinking/) this exact mode as a frenetic game show — all rapid skimming and judging, crowding out the slow hammock time deep thought needs. My take on that trade is in [vibing](/vibing#all-game-show-no-hammock).
+
 ### What I'm Betting On
 
 - **Practice and self-improvement always win**: The tools change, but [learning new skills](/new-skills) is the constant. You're going to suck until you die - that's just how mastery works.
