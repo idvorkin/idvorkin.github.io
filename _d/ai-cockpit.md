@@ -131,6 +131,8 @@ I didn't build this. I gave the requirements and Claude built it itself. The iro
 
 **Why it matters for the cockpit:** Without this, you're blind. You don't know which agent finished, which one is stuck, which PR needs review. With it, one glance tells you where to focus attention.
 
+There's now a phone-sized companion to this, built by Larry: [the Cockpit](/larry-cockpit) folds open PRs, unfinished issues, running agents and the decisions waiting on me into one page I can read from anywhere on Tailscale.
+
 ### GitHub Views - The Triage Queue
 
 The Agent Dashboard knows what my agents are _doing_ right now. GitHub knows what they've already _filed_. Different instruments, same cockpit. I keep two saved searches pinned in the browser — everything `idvorkin-ai-tools` touched in the last four weeks, sorted by recent activity:
