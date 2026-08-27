@@ -66,6 +66,8 @@ Meaning & Mortality:
 
 **Query `back-links.json` dynamically** to find the real related posts. Do NOT guess - use actual link data.
 
+`back-links.json` is gitignored (CI-generated, not committed) — if it's not present in the repo root, run `just update-backlinks` first.
+
 For the target post's permalink (e.g. `/eulogy`), run:
 
 ```bash
@@ -82,6 +84,7 @@ This returns all posts that link to or are linked from the target. Filter the re
 ### Phase 4: Delegate to /content Workflow
 
 After loading inner-life context, delegate to the `/content` skill for:
+
 - Feature branch setup
 - Jekyll server check
 - Content guidelines
@@ -110,24 +113,28 @@ Inner Life Content Tips:
 ## Examples
 
 **Work on the eulogy:**
+
 ```
 /spiritual-content eulogy
 # Loads eulogy + affirmations + four-healths, sets up branch/server
 ```
 
 **Work on emotional health:**
+
 ```
 /spiritual-content emotional-health
 # Loads emotional health + sublime + siy context
 ```
 
 **Work on a new inner-life post:**
+
 ```
 /spiritual-content
 # Shows inner life map, asks Igor what to work on
 ```
 
 **Work on affirmations:**
+
 ```
 /spiritual-content affirmations
 # Loads affirmations + four-healths + eulogy context

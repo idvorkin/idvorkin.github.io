@@ -76,6 +76,8 @@ Writing with AI:
 
 **Query `back-links.json` dynamically** to find the real related posts. Do NOT guess - use actual link data.
 
+`back-links.json` is gitignored (CI-generated, not committed) — if it's not present in the repo root, run `just update-backlinks` first.
+
 For the target post's permalink (e.g. `/ai-cockpit`), run:
 
 ```bash

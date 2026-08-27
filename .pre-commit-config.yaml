@@ -70,15 +70,6 @@ repos:
         types: [ts]
         pass_filenames: false
 
-      - id: update-backlinks-last-modified
-        name: Update last modified times for changed markdown files
-        entry: uv run build_back_links.py delta
-        language: system
-        files: '\.(md|markdown)$'
-        exclude: "^zz-chop-logs/.*$|back-links.json" # Exclude the zz-chop-logs directory
-        pass_filenames: true
-        verbose: true
-
       - id: check-internal-links
         name: Check internal links with lychee
         entry: .pre-commit-hooks/check-links.py

@@ -828,7 +828,7 @@ At the end of a content PR review, include this summary format. These checks map
 Architect: 🟢 headers 🟢 front-matter 🟢 internal-links
 Carpenter: 🟢 opening 🟢 voice 🟢 ai-patterns
 Judge: 🟢 alerts 🟢 images ⚪ books ⚪ ai-slop
-Workflow: 🟢 rebased 🟢 backlinks
+Workflow: 🟢 rebased
 
 Issues:
 - [list any 🔴 items with actionable fix]
@@ -869,10 +869,13 @@ Issues:
 
 **Workflow** (process):
 
-| Key         | Check                                     |
-| ----------- | ----------------------------------------- |
-| `rebased`   | Branch rebased onto upstream main         |
-| `backlinks` | Backlinks regenerated (`just back-links`) |
+| Key       | Check                             |
+| --------- | --------------------------------- |
+| `rebased` | Branch rebased onto upstream main |
+
+Note: `back-links.json` is no longer part of this checklist — it's built fresh
+in CI (`.github/workflows/pages.yml`) on every deploy and is not tracked in
+git, so there's nothing to regenerate or verify per PR.
 
 **Example with issues:**
 
@@ -880,9 +883,8 @@ Issues:
 Architect: 🟢 headers 🟢 front-matter 🟢 internal-links
 Carpenter: 🟢 opening 🟢 voice 🔴 ai-patterns
 Judge: 🟢 alerts 🟢 images ⚪ books ⚪ ai-slop
-Workflow: 🟢 rebased 🔴 backlinks
+Workflow: 🟢 rebased
 
 Issues:
 - ai-patterns — line 42: remove "it's important to note that"
-- backlinks — run `just backlinks` to regenerate
 ```

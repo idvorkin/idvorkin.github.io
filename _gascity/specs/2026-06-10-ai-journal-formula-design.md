@@ -5,6 +5,14 @@
 - **Scope:** Two Gas City formulas in the blog rig that draft and revise entries
   in `_d/ai-journal.md`.
 
+> **2026-08 update:** `back-links.json` moved to a CI-generated, gitignored
+> artifact (`.github/workflows/pages.yml`), so it's never committed by a PR
+> anymore. The `blog-backlinks` and `blog-rebuild-backlinks` formulas this doc
+> references were removed, and the `rebuild-backlinks` step described below no
+> longer exists in `ai-journal-new.toml` / `ai-journal-revise.toml`. Left as
+> historical design record — the rest of the spec (dossier-in-bead pattern,
+> worktree isolation, judgment gates) still describes the live formulas.
+
 ## Goal
 
 Let the author drop **rough notes** and get back a **polished, deep-linked
