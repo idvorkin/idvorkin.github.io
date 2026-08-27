@@ -1,0 +1,43 @@
+{%- comment -%}
+  One Den comic strip: an anchored "## #N — Title" heading, a glightbox
+  wrapped full-res image (all strips share data-gallery="the-den" so they
+  page through together), and the collapsed "receipts" details block that
+  links to the real transcript gist behind the strip.
+
+  Params:
+    num          - strip number, e.g. "3"
+    title        - strip title, e.g. "The Secret Almost Shipped"
+    date         - display date, e.g. "August 27, 2026"
+    img          - image path, e.g. "/images/den/den-003.webp"
+    alt          - full alt text for the image
+    receipts_url - direct link to the gist with the real transcript
+    note         - optional extra markdown rendered between the image and
+                    the receipts (e.g. a link to an alternate style)
+
+  The heading text, the image's data-description, and the figcaption are
+  all built from num + title + date so that string isn't repeated three
+  times per strip.
+
+  Example:
+    {% include den_strip.html num="3" title="The Secret Almost Shipped"
+       date="August 27, 2026" img="/images/den/den-003.webp"
+       alt="The Den #3: ..."
+       receipts_url="https://gist.github.com/idvorkin-ai-tools/8e420f281ed06592c2f6aeae2acc0ee1" %}
+{%- endcomment -%}
+{%- assign _label = "#" | append: include.num | append: " — " | append: include.title -%}
+
+## {{ _label }}
+
+<figure style="margin:2em 0;">
+<a class="glightbox" href="{{ include.img }}" data-gallery="the-den" data-description="{{ _label }} · {{ include.date }}"><img src="{{ include.img }}" alt="{{ include.alt }}" width="1600" height="1600" loading="lazy" decoding="async" style="max-width:100%;height:auto;border-radius:4px;" /></a>
+<figcaption><small><em>{{ _label }}</em> · {{ include.date }}</small></figcaption>
+</figure>
+{%- if include.note %}
+
+{{ include.note }}
+{%- endif %}
+
+<details style="margin:2em 0;">
+<summary>The receipts — the real transcript behind this strip</summary>
+<p><a href="{{ include.receipts_url }}">Open the transcript on GitHub →</a></p>
+</details>
