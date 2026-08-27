@@ -25,7 +25,9 @@ AI is spawning a whole new vocabulary — some of it genuinely useful, some of i
 - [Dark Factory](#dark-factory)
 - [Data Provenance](#data-provenance)
 - [Deep Blue](#deep-blue)
+- [Functional Collapse](#functional-collapse)
 - [Discernment Horizon](#discernment-horizon)
+- [Graph](#graph)
 - [Heresies](#heresies)
 - [Hill Climbing](#hill-climbing)
 - [Human In, On, and Out of the Loop](#human-in-on-and-out-of-the-loop)
@@ -106,6 +108,12 @@ He pairs it with the **Demand Horizon** — set by the hardest problem you actua
 
 {% include quote.html text="Superhuman means unverifiable." author="Steve Yegge" url="https://steve-yegge.medium.com/the-flat-curve-society-36c8b01eb33b" %}
 
+## Graph
+
+The shape agent work takes once you stop thinking in chains. One coordinator fans out to agents running in parallel, their outputs feed each other, and some edges point backwards for another pass — a directed graph, not a pipeline. Frameworks like LangGraph make the graph explicit, but you're building one whether you draw it or not.
+
+[Larry](/larry), my AI life coach, runs on one. Ask him for something big and he doesn't do it himself: he dispatches background agents, each in its own git worktree so parallel ones can't collide on the same checkout, then collates what comes back. The backwards edges are the ones that earn their keep — a review pass whose findings become the next agent's brief, or an architect review re-run against a spec until each pass turns up fewer problems than the last. A chain would have shipped the first draft.
+
 ## Heresies
 
 Yegge nails this one in his [Gas Town Emergency User Manual](https://steve-yegge.medium.com/gas-town-emergency-user-manual-cf0e4556d74b). A heresy is when AI develops a compelling but wrong belief about your system — not a hallucination about the world, but a false conviction about _your_ codebase. And the killer property is that they spread and persist:
@@ -135,6 +143,8 @@ Three modes of working with AI, borrowed from autonomous systems:
 - **Human in the loop** — The human approves every AI action before it takes effect. Every PR reviewed, every spec read, every generated test validated. This is where most teams start and it's the safest default.
 - **Human on the loop** — The AI acts autonomously, but the human monitors and can intervene. Think: AI-generated PRs that auto-merge if CI passes, but a human watches dashboards and can halt the pipeline. The human isn't approving each action — they're supervising the system.
 - **Human out of the loop** — Fully autonomous. No human reviews the output.
+
+All three run side by side in [Larry](/larry). He opens pull requests and has never merged one — every merge is mine, and his dashboard has no merge button anywhere on it. That's in the loop. He also runs background agents unattended, and I watch them from a page that lets me drop a correction into one mid-flight rather than approve its every step — on the loop, and the difference in what it costs my attention is the whole point. The nudges he sends me on his own schedule are out of the loop, which is fine right up until a 9pm reminder lands at 1am.
 
 The real question isn't "which mode should we be in?" — it's "are we actually in the mode we think we're in?" A team that claims human-in-the-loop but reviews 50 AI-generated PRs a day is kidding itself. That's rubber-stamping, which gives you the overhead of in-the-loop with the safety of out-of-the-loop — the worst of both worlds. And when the AI hits an [infinite loop](#infinite-loop) in on-the-loop mode, someone needs to notice before it burns hours on nothing.
 
