@@ -53,7 +53,7 @@ And #1 is the one that'll stick with me. A distracted "I guess that sounds ok" g
 
 His premise is agents on a 27-year-old MUD. Mine is a raccoon running my life-coaching and journaling operation — [Larry](/larry) reads fourteen years of my journals, texts me at 6am, and holds up a mirror I didn't ask for. Both premises are absurd. Both are literally what's running.
 
-So there's a raccoon strip coming. <!-- TODO: name --> I have two candidate names and haven't picked one; raccoons den, and raccoons famously move into attics, so it's somewhere in that neighborhood.
+So there's a raccoon strip: [The Den](/the-den). Strip #1 is up.
 
 The rules I'm giving myself are Steve's rules:
 
