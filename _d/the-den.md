@@ -29,7 +29,6 @@ One rule, and it's Steve's: every strip lampoons something that actually happene
 <details style="margin:2em 0;">
 <summary>The receipts — the real transcript behind this strip</summary>
 <p><a href="https://gist.github.com/idvorkin-ai-tools/8e420f281ed06592c2f6aeae2acc0ee1">Open the transcript on GitHub →</a></p>
-<script src="https://gist.github.com/idvorkin-ai-tools/8e420f281ed06592c2f6aeae2acc0ee1.js"></script>
 </details>
 
 ## #2 — Task Multiplication
@@ -42,7 +41,6 @@ One rule, and it's Steve's: every strip lampoons something that actually happene
 <details style="margin:2em 0;">
 <summary>The receipts — the real transcript behind this strip</summary>
 <p><a href="https://gist.github.com/idvorkin-ai-tools/67cc635dbeb94b0e9c781e4ac82e1761">Open the transcript on GitHub →</a></p>
-<script src="https://gist.github.com/idvorkin-ai-tools/67cc635dbeb94b0e9c781e4ac82e1761.js"></script>
 </details>
 
 ## #1 — The Restart Dance
@@ -57,5 +55,4 @@ This strip also exists in a [plush 3D house style](/images/den/den-001-plush.web
 <details style="margin:2em 0;">
 <summary>The receipts — the real transcript behind this strip</summary>
 <p><a href="https://gist.github.com/idvorkin-ai-tools/594b734f6eaa8e71c427899d2309d536">Open the transcript on GitHub →</a></p>
-<script src="https://gist.github.com/idvorkin-ai-tools/594b734f6eaa8e71c427899d2309d536.js"></script>
 </details>
