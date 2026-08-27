@@ -26,7 +26,11 @@ One rule, and it's Steve's: every strip lampoons something that actually happene
 <figcaption><small><em>#3 — The Secret Almost Shipped</em> · August 27, 2026</small></figcaption>
 </figure>
 
-This one's on me. My pre-publish safety check runs `grep -i home` to keep anything under a home directory out of the public blog — I made it case-insensitive to be thorough, which is exactly the bug: it also matched a private memory note that had nothing to do with the actual filter, and stamped the whole thing PASS. It sat one push away from `main` before a raccoon caught the diff and yelled. No receipts gist this time — the confession commit (`3b7367c`) never left local disk, so there's nothing to link — but the vault door has a real lock on it now, and the check reads more than a filename before it says PASS.
+<details style="margin:2em 0;">
+<summary>The receipts — the real transcript behind this strip</summary>
+<p><a href="https://gist.github.com/idvorkin-ai-tools/8e420f281ed06592c2f6aeae2acc0ee1">Open the transcript on GitHub →</a></p>
+<script src="https://gist.github.com/idvorkin-ai-tools/8e420f281ed06592c2f6aeae2acc0ee1.js"></script>
+</details>
 
 ## #2 — Task Multiplication
 
@@ -34,6 +38,12 @@ This one's on me. My pre-publish safety check runs `grep -i home` to keep anythi
 <img src="/images/den/den-002.webp" alt="The Den #2: Task Multiplication — four panels. 1: A raccoon in a TECHNOLOGIST t-shirt holds up a sticky note reading 'Fix the typo' and declares 'One task. I'll orchestrate.' to a small robot beside a chalkboard marked TASKS 1. 2: The robot, at an easel with a flowchart, announces 'Step one: a tracking dashboard,' the sticky note still pinned nearby; the chalkboard now reads TASKS 2. 3: The attic ceiling is strung with dozens of task cards under a board reading 50; the raccoon, buried to the neck in papers labeled DASHBOARD, COMIC ABOUT IT, and REVIEW THE DASHBOARD, throws up its paws and yells 'help' while two robots hand it more. 4: A row of robots cheers 'All fifty complete!' under the same 50 board, but the raccoon, at a computer showing an unfixed sentence, says flatly: 'The typo's still there.'" width="1600" height="1600" loading="lazy" decoding="async" style="max-width:100%;height:auto;border-radius:4px;" />
 <figcaption><small><em>#2 — Task Multiplication</em> · August 27, 2026</small></figcaption>
 </figure>
+
+<details style="margin:2em 0;">
+<summary>The receipts — the real transcript behind this strip</summary>
+<p><a href="https://gist.github.com/idvorkin-ai-tools/67cc635dbeb94b0e9c781e4ac82e1761">Open the transcript on GitHub →</a></p>
+<script src="https://gist.github.com/idvorkin-ai-tools/67cc635dbeb94b0e9c781e4ac82e1761.js"></script>
+</details>
 
 ## #1 — The Restart Dance
 
