@@ -25,3 +25,8 @@ static/pet-projects.html
 
 # Liquid-only include: prettier parses it as HTML and injects closing tags
 _includes/pagefind-attrs.html
+
+# Prettier collapses the blank-line-sensitive {% if include.note %} block
+# onto one line, which glues the note paragraph onto </figure> with no
+# blank line — kramdown then stops treating it as its own markdown block.
+_includes/den_strip.html
