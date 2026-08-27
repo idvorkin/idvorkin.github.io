@@ -197,6 +197,43 @@ export function random_prompt_for_label(label, tree_node, map_node_to_prompts) {
 }
 
 /**
+ * Finds the heading element a sunburst label refers to.
+ *
+ * The sunburst on pages like /todo_enjoy is built from the page's own H2/H3
+ * structure (extract_tree_from_dom), so every segment label started life as a
+ * heading's text. Matching is done on normalized text — the 🔗 suffix some
+ * headings carry and surrounding whitespace are ignored on both sides.
+ */
+export function heading_for_label(label: string, doc: Document = document): HTMLElement | null {
+  const normalize = (s: string) => s.replace(/🔗/g, "").trim();
+  const want = normalize(label ?? "");
+  if (!want) return null;
+  for (const el of Array.from(doc.querySelectorAll<HTMLElement>("h2, h3"))) {
+    if (normalize(el.textContent ?? "") === want) return el;
+  }
+  return null;
+}
+
+/**
+ * Scrolls the page to the section heading a sunburst label refers to.
+ *
+ * Uses smooth scrolling to match the site's scroll-behavior, and records the
+ * heading's fragment in the URL with replaceState — no history entry per
+ * click, but the address bar shows where you are and the link is shareable.
+ *
+ * @returns true if a matching heading was found and scrolled to
+ */
+export function scroll_to_heading_for_label(label: string, win: Window = window): boolean {
+  const el = heading_for_label(label, win.document);
+  if (!el) return false;
+  el.scrollIntoView({ behavior: "smooth", block: "start" });
+  if (el.id && win.history?.replaceState) {
+    win.history.replaceState(null, "", `#${el.id}`);
+  }
+  return true;
+}
+
+/**
  * Adds a sunburst visualization to the page
  * @param plot_element_id ID of the element where the plot should be rendered
  * @param random_text_div_id ID of the div where random text should be displayed
@@ -261,6 +298,17 @@ export async function add_sunburst(
           const label = eventData.points[0].label;
           const prompt = random_prompt_for_label(label, root, category_to_prompts_text());
           set_random_prompt_text(prompt);
+
+          // A leaf is a final target — clicking it navigates to its section.
+          // Parents keep Plotly's zoom-in-place behavior (clicking "Health"
+          // zooms into it; clicking "Physical" scrolls to that heading).
+          const found = Array.from(breadth_first_walk(root)).find(
+            ([node, _parent]) => (node as TreeNode).name === label,
+          );
+          const clicked = found ? (found[0] as TreeNode) : undefined;
+          if (clicked && !clicked.children?.length) {
+            scroll_to_heading_for_label(label);
+          }
         }
       });
     }
