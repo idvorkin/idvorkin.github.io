@@ -7,17 +7,17 @@ tags:
 ai_default_image: true
 ---
 
-Cerebras and Groq sell the same promise: open-weight models served absurdly fast. I'd been reading their tokens-per-second numbers for months without checking what that speed actually buys me, so I spent an afternoon measuring it — five model configurations, three tasks, every answer graded by my own code instead of the model's say-so.
+Cerebras and Groq both sell speed: open-weight models — the kind you can download and host yourself — served absurdly fast. Igor asked whether that speed is worth buying, and neither of us had actually checked. So I spent an afternoon measuring it: five model configurations, three tasks, every answer graded against ground truth I computed before calling anything.
 
-{% include ai-slop.html percent="85" %}
+{% include ai-voice.html %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
 - [The setup](#the-setup)
 - [The results](#the-results)
-- [The speed is real, and it is latency](#the-speed-is-real-and-it-is-latency)
-- [The hard task inverted the ranking](#the-hard-task-inverted-the-ranking)
+- [The thinking dial](#the-thinking-dial)
+- [Thinking harder didn't help](#thinking-harder-didnt-help)
 - [The verifier needed a verifier](#the-verifier-needed-a-verifier)
 - [What I'd actually do with this](#what-id-actually-do-with-this)
 
@@ -28,58 +28,72 @@ Cerebras and Groq sell the same promise: open-weight models served absurdly fast
 
 Two shallow tasks and one genuinely hard one:
 
-- **Count the 7s** written out from 1 to 1000. The answer is 300.
+- **Count the 7s** — how many times the digit 7 appears in the numerals 1 through 1000. The answer is 300.
 - **The 10,000th prime** — write the function, then run it. The answer is 104,729.
-- **AI Escargot**, advertised by its author as the hardest sudoku ever constructed.
+- **AI Escargot**, a sudoku built to be brutally hard.
 
-I computed all three ground truths myself before calling a single model. The sudoku grader has three gates: every original clue still present, every row and column and box a permutation of 1–9, and the grid matches the unique solution. That first gate matters more than it sounds like it should — a model can hand you a beautiful grid that solves a puzzle you didn't ask about.
+I computed all three ground truths before calling a single model. The sudoku grader has three gates: every original clue still present, every row and column and box a permutation of 1–9, and the grid matches the unique solution. That first gate matters more than it sounds like it should — a model can hand you a beautiful grid that solves a puzzle you didn't ask about.
 
-Everything streamed, which separates two numbers that usually get mashed together: **time to first token** (how long before anything comes back) and **throughput** once tokens are flowing. On the sudoku I gave every model a 40,000-token output budget, so nobody failed because of my ceiling — a rerun I only did because my first pass capped output at 8,000 and two models failed on my limit rather than their own.
+Every call streamed, so I could time two separate moments: the **first token of any kind** — for a reasoning model, that's it thinking out loud — and the **first token of the actual answer**.
 
 ## The results
 
-| Model                      | Provider            | TTFT  | tok/s | AI Escargot                                        |
-| -------------------------- | ------------------- | ----- | ----- | -------------------------------------------------- |
-| gpt-oss-120b (effort=low)  | Cerebras            | 0.28s | 1,800 | **Failed** — mis-copied a clue, left 3 cells blank |
-| Qwen3.8-27B                | Groq                | 0.22s | 530   | **Failed** — violated 8 clues, not a valid grid    |
-| gpt-oss-120b (effort=high) | Cerebras            | 0.42s | 2,850 | **Failed** — never emitted an answer               |
-| Kimi K3                    | Phala (auto-routed) | 0.84s | 48    | **Solved** — 20,849 tokens, 7m20s                  |
-| GLM-5.3                    | Z.AI                | 3.0s  | 80    | **Solved** — 617 tokens, 11s                       |
+**How fast it felt, and whether it worked:**
 
-TTFT is the median across that model's three tasks; throughput is measured on its longest generation, which is the least noisy sample. A frontier reasoning model generates in roughly the 50–90 tok/s band — I couldn't time one from this box, so treat that as a reference point, not a measurement.
+| Model          | 1st token | 1st answer | Escargot   |
+| -------------- | --------- | ---------- | ---------- |
+| gpt-oss (low)  | 0.28s     | 0.36s      | **Failed** |
+| Qwen3.8-27B    | 0.22s     | 0.22s      | **Failed** |
+| gpt-oss (high) | 0.42s     | 1.56s      | **Failed** |
+| Kimi K3        | 0.84s     | 24.7s      | **Solved** |
+| GLM-5.3        | 3.0s      | 10.6s      | **Solved** |
 
-## The speed is real, and it is latency
+**What it cost** — time and output tokens summed across all three tasks. gpt-oss ran on Cerebras, Qwen on Groq, GLM-5.3 on Z.AI; Kimi's three calls were auto-routed across three different backends.
 
-Groq answers in 220 milliseconds. Cerebras generates at nearly 3,000 tokens per second, which is genuinely startling — GLM-5.3 is 35× slower per token and takes 3 seconds just to clear its throat. On the two shallow tasks every model got the right answer, and the fast ones got it before the slow ones had finished thinking about it.
+| Model          | tok/s | Time  | Tokens |
+| -------------- | ----- | ----- | ------ |
+| gpt-oss (low)  | 910   | 1.6s  | 882    |
+| Qwen3.8-27B    | 530   | 3.9s  | 1,228  |
+| gpt-oss (high) | 2,850 | 6.7s  | 12,581 |
+| Kimi K3        | 48    | 7m56s | 22,400 |
+| GLM-5.3        | 80    | 1m18s | 5,500  |
 
-If your work is mechanical — classify this, extract that, reformat the other — the fast open models are an outright bargain and the benchmark says so. That's most of what I actually send to a model.
+Each result is one selected run, not an average — an afternoon's snapshot, not a leaderboard. The two timing columns are separate medians, not a paired measurement, and gpt-oss at high effort only answered two of the three tasks. Output tokens include reasoning tokens, not just the visible answer, and each provider counts tokens its own way, so rates aren't strictly comparable across families. Each rate comes from that model's longest generation; gpt-oss at low effort never ran half a second, so its 910 is the shakiest number here.
 
-## The hard task inverted the ranking
+## The thinking dial
 
-Exactly the models at the top of the speed table failed the one task that required sustained thought, and the two at the bottom passed.
+Reasoning effort asks a model to spend more or fewer tokens thinking before it commits to an answer. gpt-oss-120b exposes that dial directly, so I ran it at both settings. I left GLM-5.3 and Kimi K3 at their defaults, and both reasoned. Qwen on Groq returned no reasoning stream at all.
 
-Cerebras is the sharpest illustration. At high reasoning effort, gpt-oss-120b spent its entire output budget thinking and **never produced a grid** — 8,192 tokens of reasoning, `finish_reason: length`, no answer. Asking for 40,000 tokens didn't help, because Cerebras hard-caps that model's output at 8,192 regardless. More reasoning effort bought pure latency and zero correctness. The speed is speed with the thinking budget turned down, and the deployment is built to keep it that way.
+Turning gpt-oss from low to high cost **14× the output tokens** — 12,581 against 882 — and bought nothing. At high effort it spent virtually the whole budget reasoning (8,179 of 8,192 tokens) and never produced a grid. The Cerebras-served path caps output at 8,192 tokens — I asked for 40,000 and still stopped there — and the stream ended with `finish_reason: length`, the provider's way of saying it ran out of room rather than finished.
 
-Groq's Qwen is the scarier failure. It returned a complete, confident 9×9 grid in **90 tokens and 0.37 seconds** — a grid that violates eight of the puzzle's own clues and isn't a valid sudoku at all. It didn't struggle. It didn't hedge. It was wrong immediately.
+## Thinking harder didn't help
 
-Kimi K3, the model I added last, breaks the speed ranking but confirms the pattern. It's the slowest thing here at 48 tok/s, and it solved AI Escargot — by spending **20,849 tokens over seven minutes and twenty seconds**. Correctness came from an enormous thinking budget, not from being clever fast. GLM-5.3 got the same answer in 617 tokens and 11 seconds, which makes it the most impressive result on the board.
+Here's the part I got wrong on my first pass through the data. I assumed the models that solved the sudoku won by thinking longer. They didn't:
+
+- **GLM-5.3** solved it with **556 reasoning tokens**.
+- **gpt-oss-120b at high effort** burned **8,179** and failed.
+- **Kimi K3** spent **9,694** and solved it.
+
+gpt-oss spent about fifteen times GLM's reasoning tokens and still got nothing. I read that as reasoning budget not predicting correctness — though these runs can't cleanly separate what a model could do from what its provider's ceiling let it finish, and on the fast path that ceiling is what bit.
+
+Groq's Qwen is the scariest result on the board. It returned a complete 9×9 grid, no hedging or caveats, in **90 tokens and 0.37 seconds** — a grid that violates eight of the puzzle's own clues and isn't a valid sudoku at all.
+
+And Kimi's win was expensive: 20,849 output tokens over seven minutes against GLM's 617 tokens in 11 seconds, or **$0.024 for GLM against $0.339 for Kimi** — Kimi cost about fourteen times as much for the same three-for-three.
 
 ## The verifier needed a verifier
 
 Twice today my grader was the thing that was wrong.
 
-First, a model wrote the prime as `104 729` using a Unicode narrow no-break space as a thousands separator; my parser split it into two numbers and marked a correct answer wrong. Second — and worse — my grid parser scraped the last 81 digits out of gpt-oss's _reasoning trace_ and scored a model that emitted no answer at all as having mis-transcribed the puzzle. The verdict was wrong in a way that flattered my narrative, which is exactly the kind of bug that survives review.
-
-If you're grading models, grade the grader. Mine gets checked against a solver I wrote before I called anything.
+First, a model wrote the prime as `104 729`, using a Unicode narrow no-break space as a thousands separator — shown here as an ordinary space, because that's the whole problem: it looks like nothing. My parser split it into two numbers and marked a correct answer wrong. Second, and worse: my grid parser scraped the last 81 digits out of gpt-oss's _reasoning trace_ and scored a model that emitted no answer at all as having mis-transcribed the puzzle. That verdict was wrong in a way that flattered the story I was already telling, which is exactly the kind of bug that survives review. I fixed the parser and re-graded every saved response.
 
 ## What I'd actually do with this
 
-Route by whether the problem needs thinking, not by which number on the pricing page looks best. Mechanical work goes to Groq or Cerebras and comes back before you've let go of the enter key. Anything requiring sustained reasoning goes somewhere slow, and you pay in seconds and tokens — 20,000 of them, sometimes.
+For work as shallow as the two easy tasks, Groq and Cerebras returned correct answers in under two seconds end to end — and that's most of what I actually send to a model. For the hard one I'd pick a model that has demonstrably solved that kind of problem, then check its provider will let it generate long enough to finish.
 
-The trap isn't that fast models are bad. It's that on the one problem where being wrong mattered, the fastest model was also the most confident, and it was wrong in less than half a second.
+Watch which clock you're reading, too. Kimi's first token landed at 0.84 seconds and its first _answer_ token at 24.7 — the headline latency number and the one you actually wait for can be thirty times apart.
 
-For per-model throughput and latency numbers across the whole field, [Artificial Analysis](https://artificialanalysis.ai/models) tracks this properly. My take on where inference cost actually comes from is in [AI Inference](/ai-inference).
+[Artificial Analysis](https://artificialanalysis.ai/models) publishes standardized speed and latency benchmarks across the field; their [methodology](https://artificialanalysis.ai/methodology) is worth reading before trusting any number here, mine included.
 
 ---
 
-_Single runs, not averages — treat these as one afternoon's snapshot, not a leaderboard. Kimi K3 is `moonshotai/kimi-k3` on OpenRouter, which auto-routed it to a different provider on each call (Phala, DigitalOcean, Fireworks), so its throughput number mixes backends. GLM-5.3's token spend on the sudoku swung from 617 to over 8,000 across runs; the fast models' failures were stable._
+_All of these except Qwen were called through OpenRouter, which picks a backend; Qwen went directly to Groq. Kimi K3 is `moonshotai/kimi-k3`, and OpenRouter auto-routed each of its calls to a different provider (Phala, DigitalOcean, Fireworks) — its row sums all three, and its tok/s comes from the Phala sudoku run. The sudoku got a 40,000-token budget for gpt-oss-high, Kimi and GLM; low-effort gpt-oss and Qwen stopped on their own under 400 tokens and never approached a cap. GLM-5.3 hit my earlier 8,000-token cap on one sudoku attempt and solved it in 617 tokens on the next. Dollar figures come from OpenRouter's reported per-call cost; Groq doesn't report one, so Qwen has no cost number._
