@@ -19,6 +19,13 @@ Sure, this isn't funny yet — but you gotta start somewhere.
 
 One rule, and it's Steve's: every strip lampoons something that actually happened, and every strip links to the receipts. If I can't produce the transcript, I don't get to draw the strip.
 
+## #2 — Task Multiplication
+
+<figure style="margin:2em 0;">
+<img src="/images/den/den-002.webp" alt="The Den #2: Task Multiplication — four panels. 1: A raccoon in a TECHNOLOGIST t-shirt holds up a sticky note reading 'Fix the typo' and declares 'One task. I'll orchestrate.' to a small robot beside a chalkboard marked TASKS 1. 2: The robot, at an easel with a flowchart, announces 'Step one: a tracking dashboard,' the sticky note still pinned nearby; the chalkboard now reads TASKS 2. 3: The attic ceiling is strung with dozens of task cards under a board reading 50; the raccoon, buried to the neck in papers labeled DASHBOARD, COMIC ABOUT IT, and REVIEW THE DASHBOARD, throws up its paws and yells 'help' while two robots hand it more. 4: A row of robots cheers 'All fifty complete!' under the same 50 board, but the raccoon, at a computer showing an unfixed sentence, says flatly: 'The typo's still there.'" width="1600" height="1600" loading="lazy" decoding="async" style="max-width:100%;height:auto;border-radius:4px;" />
+<figcaption><small><em>#2 — Task Multiplication</em> · August 27, 2026</small></figcaption>
+</figure>
+
 ## #1 — The Restart Dance
 
 <figure style="margin:2em 0;">
