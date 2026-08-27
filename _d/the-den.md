@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Den"
+title: "The Den — where Igor works with the AI"
 permalink: /the-den
 redirect_from:
   - /cartoons
@@ -26,4 +26,10 @@ One rule, and it's Steve's: every strip lampoons something that actually happene
 <figcaption><small><em>#1 — The Restart Dance</em> · August 26, 2026</small></figcaption>
 </figure>
 
-[The real transcript behind this strip →](https://gist.github.com/idvorkin-ai-tools/594b734f6eaa8e71c427899d2309d536)
+This strip also exists in a [plush 3D house style](/images/den/den-001-plush.webp) — tell me which you prefer.
+
+<details style="margin:2em 0;">
+<summary>The receipts — the real transcript behind this strip</summary>
+<p><a href="https://gist.github.com/idvorkin-ai-tools/594b734f6eaa8e71c427899d2309d536">Open the transcript on GitHub →</a></p>
+<script src="https://gist.github.com/idvorkin-ai-tools/594b734f6eaa8e71c427899d2309d536.js"></script>
+</details>
