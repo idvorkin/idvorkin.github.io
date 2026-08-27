@@ -233,9 +233,11 @@ Sometimes there isn't a known answer - in that case, we can have a judge do the 
 
 Eval Time:
 
-Have a judge give a subjective score.
+Have a judge grade it.
 
-Judges are subjective, so we can have multiple judges and average their answers - like we do in boxing matches or work performance reviews.
+Judges are subjective, so we can have multiple judges and average their answers - like we do in boxing matches or work performance reviews. The catch: averaging only helps if the judges actually disagree. Ask five judges the same question five different ways and you've bought one opinion at five times the price, so check that their scores diverge before you trust the average.
+
+And when every score comes back in the same narrow band, the fix is usually the question, not the judge. A judge answers _which of these two is better_ far more reliably than an abstract zero-to-ten scale - the same reason [Chatbot Arena](#human-based-blind-taste-tests-chatbot-arena) is pairwise. Trading absolute scores for a head-to-head against known-good references is what [unstuck an RL run on watercolour paintings](https://surya.website/rling-qwen-to-paint-with-code) that had flatlined.
 
 ### Wrinkle - No clear questions
 

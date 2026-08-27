@@ -261,6 +261,8 @@ The theory: tell Claude _how to think_, not just _what to do_. Whether "don't gl
 
 Here's the thing: every time models get smarter and tools get better, my CLAUDE.md becomes partially obsolete. Especially the alchemy - yelling at the model, begging it not to do a bad job, elaborate prompting tricks. That stuff has a short half-life. But some things stay useful: custom commands to run, project-specific context, where to find things. The challenge is knowing which is which.
 
+One datapoint on the side of less: an [RL project teaching a model to draw with a niche JavaScript library](https://surya.website/rling-qwen-to-paint-with-code) started with a 400-line API reference in the system prompt, and the model wrote confident, well-formatted code calling functions that didn't exist. Throwing the reference out and replacing it with an allowlist of eight approved methods - no docs, no examples - is what made it start working. Short and opinionated beat complete.
+
 ### MCP Servers and Skills
 
 At the end of the day, I don't use much of this. Often I'll install something, try it out, and it just gets left running in the background. GitHub MCP for issue/PR management, maybe some doc fetching. That's about it.
