@@ -19,12 +19,31 @@ Sure, this isn't funny yet — but you gotta start somewhere.
 
 One rule, and it's Steve's: every strip lampoons something that actually happened, and every strip links to the receipts. If I can't produce the transcript, I don't get to draw the strip.
 
+## #3 — The Secret Almost Shipped
+
+<figure style="margin:2em 0;">
+<a class="glightbox" href="/images/den/den-003.webp" data-gallery="the-den" data-description="#3 — The Secret Almost Shipped · August 27, 2026"><img src="/images/den/den-003.webp" alt="The Den #3: The Secret Almost Shipped — four panels. 1: A plush robot stands guard before a giant round vault door labeled PUBLIC BLOG, magnifying glass and clipboard in hand, saying 'NOTHING GETS PAST MY SAFETY CHECK.' 2: The robot, now wearing a hard hat, hauls a wooden crate labeled MEMORY NOTE +21 LINES away from the vault on a hand truck while a second robot holds up a clipboard reading grep '-i home' stamped PASS and says 'ALL CLEAR. AS ALWAYS.' 3: A raccoon in a TECHNOLOGIST t-shirt bursts out of the opened crate, coffee and papers flying, shouting 'What is THIS doing on main?!' while the robot protests 'IMPOSSIBLE. THE CHECK PASSED.' 4: The robot writes in a book titled LESSONS — the open page reads 'LESSON: RACCOONS ARE HAZARDS' — and admits 'The lesson is your check greps for the flag,' while the raccoon and the hard-hatted robot with its cart look on beside the vault." width="1600" height="1600" loading="lazy" decoding="async" style="max-width:100%;height:auto;border-radius:4px;" /></a>
+<figcaption><small><em>#3 — The Secret Almost Shipped</em> · August 27, 2026</small></figcaption>
+</figure>
+
+<details style="margin:2em 0;">
+<summary>The receipts — the real transcript behind this strip</summary>
+<p><a href="https://gist.github.com/idvorkin-ai-tools/8e420f281ed06592c2f6aeae2acc0ee1">Open the transcript on GitHub →</a></p>
+<script src="https://gist.github.com/idvorkin-ai-tools/8e420f281ed06592c2f6aeae2acc0ee1.js"></script>
+</details>
+
 ## #2 — Task Multiplication
 
 <figure style="margin:2em 0;">
 <img src="/images/den/den-002.webp" alt="The Den #2: Task Multiplication — four panels. 1: A raccoon in a TECHNOLOGIST t-shirt holds up a sticky note reading 'Fix the typo' and declares 'One task. I'll orchestrate.' to a small robot beside a chalkboard marked TASKS 1. 2: The robot, at an easel with a flowchart, announces 'Step one: a tracking dashboard,' the sticky note still pinned nearby; the chalkboard now reads TASKS 2. 3: The attic ceiling is strung with dozens of task cards under a board reading 50; the raccoon, buried to the neck in papers labeled DASHBOARD, COMIC ABOUT IT, and REVIEW THE DASHBOARD, throws up its paws and yells 'help' while two robots hand it more. 4: A row of robots cheers 'All fifty complete!' under the same 50 board, but the raccoon, at a computer showing an unfixed sentence, says flatly: 'The typo's still there.'" width="1600" height="1600" loading="lazy" decoding="async" style="max-width:100%;height:auto;border-radius:4px;" />
 <figcaption><small><em>#2 — Task Multiplication</em> · August 27, 2026</small></figcaption>
 </figure>
+
+<details style="margin:2em 0;">
+<summary>The receipts — the real transcript behind this strip</summary>
+<p><a href="https://gist.github.com/idvorkin-ai-tools/67cc635dbeb94b0e9c781e4ac82e1761">Open the transcript on GitHub →</a></p>
+<script src="https://gist.github.com/idvorkin-ai-tools/67cc635dbeb94b0e9c781e4ac82e1761.js"></script>
+</details>
 
 ## #1 — The Restart Dance
 
