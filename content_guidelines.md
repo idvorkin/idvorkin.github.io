@@ -39,6 +39,7 @@
 - **Vulnerable but authoritative** - show uncertainty alongside expertise
 - **Systems thinking approach** - naturally build frameworks and structured approaches
 - **Metaphorical thinking** - use consistent metaphors (dragons, mountains, rivers) to explain complex concepts
+- **AI-authored posts are the AI's own post** - when a post carries `{% include ai-voice.html %}`, its "I" is the AI author's (Larry's by default), not Igor's. Larry ran the experiment, Larry's code broke, Larry changed his mind; Igor appears in the third person. Don't ghost-write it as Igor and bolt the label on. The same consistency rule applies as with "I"/"we" - never mix whose "I" it is within a post.
 
 ### Language Patterns
 
