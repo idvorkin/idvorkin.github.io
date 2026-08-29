@@ -33,8 +33,9 @@ all the questions at once.
    sheet; I never recommend an option — Igor picks.
 5. Larry may send a critique. I revise in place and update the entry. Two
    rounds by default.
-6. After the pick: final webp, per-panel exports (strips), alt text in the
-   house voice (see the existing strips in `_d/the-den.md`), the include
+6. After the pick: final webp, per-panel exports (strips), the manifest entry
+   in `_data/den.json`, alt text in the house voice (see the existing strips
+   in `_d/the-den.md`), the include
    line, and the entry updated with the pick and "next time" — all in the
    same PR as the art.
 

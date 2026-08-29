@@ -40,11 +40,17 @@ inside the rect, so cropping the rect keeps the frame line.
 | p3    | 32  | 816 | 752 | 752 |
 | p4    | 816 | 816 | 752 | 752 |
 
+Strip #1's panels are not on a single grid (p1/p3 at x 52, p2/p4 at x 812,
+tops at y 51 / 812, sizes differ by a few px); its rect row above is
+approximate — `cut-panels.py` finds the real stroke. Every strip from #5 on
+hits the contract.
+
 As fractions of the canvas: x and y are **0.02** or **0.51**; w and h are
 both **0.47**. A viewer that scales the whole strip so one panel fills a square
-window uses **scale = 1 / 0.47 = 2.1277**. (The viewer at /den-viewer uses this
-scale; strips #1–#4 predate the contract and carry per-strip overrides in
-_d/den-viewer.md.)
+window uses **scale = 1 / 0.47 = 2.1277**. (The viewer at /den-viewer no
+longer computes rects at all: it shows the pre-cut panel files listed in
+`_data/den.json`. The scale matters only for the composite-to-panel zoom
+animation.)
 
 **Tolerance: +/- 8 px per edge.** A generated strip passes if every measured
 panel edge is within 8 px of the contract; the viewer still crops at the
