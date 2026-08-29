@@ -19,10 +19,10 @@ Nothing here is final. It is the interaction on its own, so it can be argued wit
   overrides (data-inset / data-gap / data-panels) become optional include
   params. This page can then be deleted.
 
-  GEOMETRY: see the GRID constant at the top of the script. Strips drawn to
-  the contract need no attributes at all; the two older ones carry a
-  data-inset/data-gap override because they were drawn before there was a
-  contract.
+  GEOMETRY: see the GRID constant at the top of the script — it is the
+  cartoonist's panel-geometry contract, not an average. Strips drawn to it
+  need no attributes at all. All four strips on this page predate it and
+  carry their own measured data-inset/data-gap.
 -->
 
 <style>
@@ -91,10 +91,15 @@ Nothing here is final. It is the interaction on its own, so it can be argued wit
     touch-action: pan-y;
   }
 
-  /* Only exists for strips that ship per-panel files (data-panels). */
+  /* Only exists for strips that ship per-panel files (data-panels). The panel
+     export is cropped at the same rect the transform crops to, so it fills
+     the window exactly. */
   .den-sharp {
     position: absolute;
     z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
     height: auto;
     opacity: 0;
     pointer-events: none;
@@ -232,26 +237,26 @@ Nothing here is final. It is the interaction on its own, so it can be argued wit
 <div class="den-viewer" id="den-viewer">
 <p class="den-hint">Tap or click a panel to zoom. Then: <b>‹ ›</b> or swipe or ← → to step (it runs on into the next strip), <b>×</b> or tap again or Escape to come back out.</p>
 
-<!-- Drawn to the grid contract — no geometry attributes needed. -->
-<figure class="den-strip" data-num="4">
+<!-- Predates the contract: measured 46px margin / 36px gutter / 736px panel. -->
+<figure class="den-strip" data-num="4" data-inset="2.875" data-gap="2.25">
 <div class="den-frame"><img src="/images/den/den-004.webp" alt="The Den #4: Cause of Gym: Outage — four panels in which Larry the raccoon tallies three ignored gym nudges, GitHub goes down, and Igor finally swings a kettlebell." width="1600" height="1600" decoding="async" /></div>
 <figcaption><em>#4 — Cause of Gym: Outage</em> · August 28, 2026</figcaption>
 </figure>
 
-<!-- Drawn to the grid contract — no geometry attributes needed. -->
-<figure class="den-strip" data-num="3">
+<!-- Predates the contract: measured 34px margin / 30px gutter / 751px panel. -->
+<figure class="den-strip" data-num="3" data-inset="2.125" data-gap="1.875">
 <div class="den-frame"><img src="/images/den/den-003.webp" alt="The Den #3: The Secret Almost Shipped — four panels in which a robot's safety check passes, a raccoon bursts out of the crate it waved through, and the lesson gets written down wrong." width="1600" height="1600" decoding="async" /></div>
 <figcaption><em>#3 — The Secret Almost Shipped</em> · August 27, 2026</figcaption>
 </figure>
 
-<!-- Predates the contract: measured 15px margin / 12px gutter. -->
-<figure class="den-strip" data-num="2" data-inset="0.92" data-gap="0.78">
+<!-- Predates the contract: measured 15px margin / 14px gutter / 778px panel. -->
+<figure class="den-strip" data-num="2" data-inset="0.9375" data-gap="0.875">
 <div class="den-frame"><img src="/images/den/den-002.webp" alt="The Den #2: Task Multiplication — four panels in which one typo becomes fifty tasks, all fifty complete, and the typo is still there." width="1600" height="1600" loading="lazy" decoding="async" /></div>
 <figcaption><em>#2 — Task Multiplication</em> · August 27, 2026</figcaption>
 </figure>
 
-<!-- Predates the contract: measured 51px margin / 22px gutter. -->
-<figure class="den-strip" data-num="1" data-inset="3.19" data-gap="1.41">
+<!-- Predates the contract: measured 51px margin / 24px gutter / 737px panel. -->
+<figure class="den-strip" data-num="1" data-inset="3.1875" data-gap="1.5">
 <div class="den-frame"><img src="/images/den/den-001.webp" alt="The Den #1: The Restart Dance — four panels in which a raccoon unrolls a grand plan, sleeps through 161 approval prompts, discovers there was a wait command all along, and declines all further help." width="1600" height="1600" loading="lazy" decoding="async" /></div>
 <figcaption><em>#1 — The Restart Dance</em> · August 26, 2026</figcaption>
 </figure>
@@ -259,13 +264,15 @@ Nothing here is final. It is the interaction on its own, so it can be argued wit
 
 ## The grid a strip has to be drawn to
 
-The viewer crops panels out of the composite, so it needs to know where they are. One set of numbers, at 1600x1600:
+The viewer crops panels out of the composite, so it needs to know where they are. That's a contract, and it belongs to the drawing, not to the viewer. One set of numbers, at 1600x1600:
 
-**40px margin · 744px panel · 32px gutter · 744px panel · 40px margin**, the same both ways — four square panels, read left to right, top to bottom. As fractions of the image that's a 2.5% margin and a 2% gutter, which is the `GRID` constant at the top of the script and the only place the geometry is written down.
+**32px margin · 752px panel · 32px gutter · 752px panel · 32px margin**, the same both ways — four square panels, read left to right, top to bottom. It closes exactly, and every value is a multiple of 8, so the 800px panel export and any 2x display land on whole pixels. As fractions of the canvas: a 2% margin, a 2% gutter, and a 47% panel — so zooming one panel to fill the window is a scale of 1/0.47, or 2.1277x. That's the `GRID` constant at the top of the script, and the only place the geometry is written down.
 
-#4 and #3 are drawn close enough to it that they carry no geometry of their own. #2 and #1 predate it and each carry a measured `data-inset` / `data-gap` override; strips drawn to the contract shouldn't need one.
+There's no bleed around the crop, and there doesn't need to be: the 8px black border is drawn _inside_ the panel rect, so cropping at the rect keeps the frame line. Cropping at exactly the rect is also what lets the per-panel export below drop in without a jump.
 
-If a strip ever ships as four separate panel files alongside the composite — better than upscaling a quarter of a 1600px square — hang them on the figure as `data-panels="a.webp,b.webp,c.webp,d.webp"` in reading order and the zoomed view lays the crisp panel over the scaled composite. A strip without the attribute is unaffected.
+All four strips here predate the contract, so each carries its own measured `data-inset` / `data-gap` — #1 is 51/24/737 as margin/gutter/panel, #2 is 15/14/778, #3 is 34/30/751, #4 is 46/36/736. A strip drawn to the contract carries nothing.
+
+The contract also has every strip ship its panels as separate files, `den-00N-p1.webp` through `-p4.webp` at 800x800, cropped at the panel rect — better than upscaling a quarter of a 1600px square. The viewer prefers them when they exist: list them on the figure in reading order as `data-panels="…-p1.webp,…-p2.webp,…-p3.webp,…-p4.webp"` and the zoomed view lays the crisp panel over the scaled composite. None of the strips here ship them yet, and a strip without the attribute is unaffected.
 
 <script>
   // Den cartoon viewer — demo. Vanilla, no library, no build step.
@@ -283,31 +290,37 @@ If a strip ever ships as four separate panel files alongside the composite — b
     // ---------------------------------------------------------------------
     // THE GRID CONTRACT — the one place panel geometry is written down.
     //
-    // Every Den strip is a 2x2 grid of four square panels on a plain margin,
+    // Every Den strip is a 2x2 grid of four square panels on a cream page,
     // drawn at 1600x1600. In pixels the contract is:
     //
-    //     40px margin | 744px panel | 32px gutter | 744px panel | 40px margin
+    //     32px margin | 752px panel | 32px gutter | 752px panel | 32px margin
     //
-    // which is what these two fractions of the image say: `inset` is the
-    // margin, `gap` is the gutter, and the panel side falls out as
-    // (100 - 2*inset - gap) / 2 = 46.5%. Draw to this and the viewer needs no
-    // per-strip numbers.
+    // which closes exactly (32+752+32+752+32 = 1600) and is a multiple of 8
+    // throughout, so an 800px panel export and any 2x display land on whole
+    // pixels. As fractions of the canvas that is inset 2%, gutter 2%, and a
+    // panel side of (100 - 2*inset - gap) / 2 = 47% — so a panel filling a
+    // square window is scaled by 1/0.47 = 2.1277x. Draw to this and the
+    // viewer needs no per-strip numbers.
     //
-    // Measured against the real files: den-003 is 34/30/751 and den-004 is
-    // 46/36/736, so the contract sits between them and BLEED absorbs the
-    // difference. den-001 and den-002 predate it and carry a data-inset /
-    // data-gap override; new strips should not need one.
+    // There is no bleed. The 8px black border is drawn INSIDE the panel rect,
+    // so cropping at the rect already keeps the frame line, and cropping at
+    // exactly the rect is what makes the transform identical to the per-panel
+    // export below — swapping between them shows no jump.
     //
-    // FUTURE: a strip may ship as four per-panel images alongside the
-    // composite, which beats upscaling a quarter of a 1600px square. That is
-    // already honored — put the four files on the figure in reading order as
-    // data-panels="a.webp,b.webp,c.webp,d.webp" and the zoomed view lays the
-    // crisp panel over the scaled composite. Nothing else changes, and a strip
+    // Strips #1-#4 all predate the contract and each carry their own measured
+    // data-inset / data-gap; the numbers come from the spec's rect table
+    // (den-001 51/24/737, den-002 15/14/778, den-003 34/30/751, den-004
+    // 46/36/736 as margin/gutter/panel). New strips should carry nothing.
+    //
+    // PER-PANEL FILES: the contract also has every strip ship its panels as
+    // den-00N-p1.webp .. -p4.webp, 800x800, cropped at the panel rect. The
+    // viewer prefers them when they exist — list them on the figure in reading
+    // order as data-panels="…-p1.webp,…-p2.webp,…-p3.webp,…-p4.webp" and the
+    // zoomed view lays the crisp panel over the scaled composite. A strip
     // without the attribute behaves exactly as before.
     // ---------------------------------------------------------------------
-    var GRID = { inset: 2.5, gap: 2.0 }; // percent of the image
+    var GRID = { inset: 2.0, gap: 2.0 }; // percent of the canvas
 
-    var BLEED = 0.6; // % of the strip shown around a panel, so its border reads
     var SWIPE = 40; // px of horizontal travel that counts as a swipe
     var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -453,29 +466,26 @@ If a strip ever ships as four separate panel files alongside the composite — b
       }
       active = index;
 
-      var side = p.rect.side + 2 * BLEED;
-      var scale = 100 / side;
+      // Crop at exactly the panel rect: scale until the panel's width is the
+      // window's, then slide its top-left corner to the window's.
+      var scale = 100 / p.rect.side;
       composite(p.frame).style.transform =
         "scale(" +
         scale.toFixed(4) +
         ") translate(" +
-        (BLEED - p.rect.x).toFixed(3) +
+        (-p.rect.x).toFixed(3) +
         "%," +
-        (BLEED - p.rect.y).toFixed(3) +
+        (-p.rect.y).toFixed(3) +
         "%)";
       p.frame.classList.add("is-zoomed");
       p.frame.querySelector(".den-badge").textContent =
         "#" + p.num + " · panel " + p.n + " of 4";
 
-      // If this strip shipped per-panel files, lay the crisp one exactly over
-      // where the scaled composite puts the panel — the composite is inset by
-      // BLEED on every side, so the overlay is too.
+      // If this strip shipped per-panel files, lay the crisp one over the
+      // scaled composite. The crop is the same rect, so it fills the window
+      // and there is no jump between the two.
       var sharp = p.frame.querySelector(".den-sharp");
       if (sharp) {
-        var edge = ((BLEED / side) * 100).toFixed(3) + "%";
-        sharp.style.left = edge;
-        sharp.style.top = edge;
-        sharp.style.width = ((p.rect.side / side) * 100).toFixed(3) + "%";
         if (sharp.getAttribute("src") !== p.file) sharp.src = p.file;
         sharp.style.opacity = "1";
       }
