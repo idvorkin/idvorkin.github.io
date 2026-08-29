@@ -9,28 +9,20 @@ tags:
 
 On a phone each panel of a [Den](/the-den) strip is about 190 pixels wide and the hand-lettering is a smudge. This page is a demo of the fix: tap a panel and the strip zooms so that one panel fills the width. Arrows, swipe, and the keyboard step through every panel of every strip; tap again, hit the X, or press Escape to zoom back out.
 
-Nothing here is final. It is the interaction on its own, so it can be argued with before it goes anywhere near the real page.
+Nothing here is final. It is the interaction on its own, so it can be argued with before it goes anywhere near [the real page](/the-den).
 
 <!--
   DEMO ONLY — the viewer lives inline here on purpose.
 
   FOLLOW-UP: once the interaction is right, fold this into
-  _includes/den_strip.html so every strip on /the-den gets it, and the strip
-  geometry (data-inset / data-gap below) becomes include params. This page can
-  then be deleted.
+  _includes/den_strip.html so every strip on /the-den gets it — the per-strip
+  overrides (data-inset / data-gap / data-panels) become optional include
+  params. This page can then be deleted.
 
-  GEOMETRY: every strip is a 2x2 grid of square panels on a plain margin, so
-  each one is described by two numbers, both as a percent of the 1600x1600
-  image: `inset` (margin from the image edge to the artwork) and `gap` (the
-  gutter between panels). Panel side = (100 - 2*inset - gap) / 2. The values
-  below were measured off the actual webp files by finding the first and last
-  non-background row and column of each panel — they are NOT identical from
-  strip to strip, so one hard-coded rect for all of them would misframe most
-  of them.
-
-  Strip #4 is deliberately absent: den-004.webp is still on its own branch and
-  is not on main yet. It picks itself up as soon as it lands, since the
-  follow-up is to make this an include.
+  GEOMETRY: see the GRID constant at the top of the script. Strips drawn to
+  the contract need no attributes at all; the two older ones carry a
+  data-inset/data-gap override because they were drawn before there was a
+  contract.
 -->
 
 <style>
@@ -97,6 +89,16 @@ Nothing here is final. It is the interaction on its own, so it can be argued wit
   .den-frame.is-zoomed {
     /* Let a vertical drag scroll the page; horizontal is ours. */
     touch-action: pan-y;
+  }
+
+  /* Only exists for strips that ship per-panel files (data-panels). */
+  .den-sharp {
+    position: absolute;
+    z-index: 1;
+    height: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms linear;
   }
 
   /* One invisible button per panel, sized to the measured rect. */
@@ -220,6 +222,7 @@ Nothing here is final. It is the interaction on its own, so it can be argued wit
 
   @media (prefers-reduced-motion: reduce) {
     .den-frame img,
+    .den-sharp,
     .den-ui {
       transition: none;
     }
@@ -229,21 +232,40 @@ Nothing here is final. It is the interaction on its own, so it can be argued wit
 <div class="den-viewer" id="den-viewer">
 <p class="den-hint">Tap or click a panel to zoom. Then: <b>‹ ›</b> or swipe or ← → to step (it runs on into the next strip), <b>×</b> or tap again or Escape to come back out.</p>
 
-<figure class="den-strip" data-num="3" data-inset="2.11" data-gap="1.875">
+<!-- Drawn to the grid contract — no geometry attributes needed. -->
+<figure class="den-strip" data-num="4">
+<div class="den-frame"><img src="/images/den/den-004.webp" alt="The Den #4: Cause of Gym: Outage — four panels in which Larry the raccoon tallies three ignored gym nudges, GitHub goes down, and Igor finally swings a kettlebell." width="1600" height="1600" decoding="async" /></div>
+<figcaption><em>#4 — Cause of Gym: Outage</em> · August 28, 2026</figcaption>
+</figure>
+
+<!-- Drawn to the grid contract — no geometry attributes needed. -->
+<figure class="den-strip" data-num="3">
 <div class="den-frame"><img src="/images/den/den-003.webp" alt="The Den #3: The Secret Almost Shipped — four panels in which a robot's safety check passes, a raccoon bursts out of the crate it waved through, and the lesson gets written down wrong." width="1600" height="1600" decoding="async" /></div>
 <figcaption><em>#3 — The Secret Almost Shipped</em> · August 27, 2026</figcaption>
 </figure>
 
+<!-- Predates the contract: measured 15px margin / 12px gutter. -->
 <figure class="den-strip" data-num="2" data-inset="0.92" data-gap="0.78">
 <div class="den-frame"><img src="/images/den/den-002.webp" alt="The Den #2: Task Multiplication — four panels in which one typo becomes fifty tasks, all fifty complete, and the typo is still there." width="1600" height="1600" loading="lazy" decoding="async" /></div>
 <figcaption><em>#2 — Task Multiplication</em> · August 27, 2026</figcaption>
 </figure>
 
+<!-- Predates the contract: measured 51px margin / 22px gutter. -->
 <figure class="den-strip" data-num="1" data-inset="3.19" data-gap="1.41">
 <div class="den-frame"><img src="/images/den/den-001.webp" alt="The Den #1: The Restart Dance — four panels in which a raccoon unrolls a grand plan, sleeps through 161 approval prompts, discovers there was a wait command all along, and declines all further help." width="1600" height="1600" loading="lazy" decoding="async" /></div>
 <figcaption><em>#1 — The Restart Dance</em> · August 26, 2026</figcaption>
 </figure>
 </div>
+
+## The grid a strip has to be drawn to
+
+The viewer crops panels out of the composite, so it needs to know where they are. One set of numbers, at 1600x1600:
+
+**40px margin · 744px panel · 32px gutter · 744px panel · 40px margin**, the same both ways — four square panels, read left to right, top to bottom. As fractions of the image that's a 2.5% margin and a 2% gutter, which is the `GRID` constant at the top of the script and the only place the geometry is written down.
+
+#4 and #3 are drawn close enough to it that they carry no geometry of their own. #2 and #1 predate it and each carry a measured `data-inset` / `data-gap` override; strips drawn to the contract shouldn't need one.
+
+If a strip ever ships as four separate panel files alongside the composite — better than upscaling a quarter of a 1600px square — hang them on the figure as `data-panels="a.webp,b.webp,c.webp,d.webp"` in reading order and the zoomed view lays the crisp panel over the scaled composite. A strip without the attribute is unaffected.
 
 <script>
   // Den cartoon viewer — demo. Vanilla, no library, no build step.
@@ -258,6 +280,33 @@ Nothing here is final. It is the interaction on its own, so it can be argued wit
     var root = document.getElementById("den-viewer");
     if (!root) return;
 
+    // ---------------------------------------------------------------------
+    // THE GRID CONTRACT — the one place panel geometry is written down.
+    //
+    // Every Den strip is a 2x2 grid of four square panels on a plain margin,
+    // drawn at 1600x1600. In pixels the contract is:
+    //
+    //     40px margin | 744px panel | 32px gutter | 744px panel | 40px margin
+    //
+    // which is what these two fractions of the image say: `inset` is the
+    // margin, `gap` is the gutter, and the panel side falls out as
+    // (100 - 2*inset - gap) / 2 = 46.5%. Draw to this and the viewer needs no
+    // per-strip numbers.
+    //
+    // Measured against the real files: den-003 is 34/30/751 and den-004 is
+    // 46/36/736, so the contract sits between them and BLEED absorbs the
+    // difference. den-001 and den-002 predate it and carry a data-inset /
+    // data-gap override; new strips should not need one.
+    //
+    // FUTURE: a strip may ship as four per-panel images alongside the
+    // composite, which beats upscaling a quarter of a 1600px square. That is
+    // already honored — put the four files on the figure in reading order as
+    // data-panels="a.webp,b.webp,c.webp,d.webp" and the zoomed view lays the
+    // crisp panel over the scaled composite. Nothing else changes, and a strip
+    // without the attribute behaves exactly as before.
+    // ---------------------------------------------------------------------
+    var GRID = { inset: 2.5, gap: 2.0 }; // percent of the image
+
     var BLEED = 0.6; // % of the strip shown around a panel, so its border reads
     var SWIPE = 40; // px of horizontal travel that counts as a swipe
     var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -266,11 +315,18 @@ Nothing here is final. It is the interaction on its own, so it can be argued wit
     var active = null; // index into panels, or null when nothing is zoomed
 
     root.querySelectorAll(".den-strip").forEach(function (strip) {
-      var inset = parseFloat(strip.dataset.inset);
-      var gap = parseFloat(strip.dataset.gap);
+      // The contract, unless this strip predates it and says otherwise.
+      var inset = parseFloat(strip.dataset.inset || GRID.inset);
+      var gap = parseFloat(strip.dataset.gap || GRID.gap);
       var side = (100 - 2 * inset - gap) / 2;
       var frame = strip.querySelector(".den-frame");
       var num = strip.dataset.num;
+      var files = (strip.dataset.panels || "")
+        .split(",")
+        .map(function (s) {
+          return s.trim();
+        })
+        .filter(Boolean);
 
       for (var i = 0; i < 4; i++) {
         var rect = {
@@ -300,7 +356,23 @@ Nothing here is final. It is the interaction on its own, so it can be argued wit
             };
           })(index),
         );
-        panels.push({ frame: frame, rect: rect, n: i + 1, num: num, hit: hit });
+        panels.push({
+          frame: frame,
+          rect: rect,
+          n: i + 1,
+          num: num,
+          hit: hit,
+          file: files.length === 4 ? files[i] : null,
+        });
+      }
+
+      // Crisp overlay for strips that ship per-panel files. Inert otherwise.
+      if (files.length === 4) {
+        var sharp = document.createElement("img");
+        sharp.className = "den-sharp";
+        sharp.alt = "";
+        sharp.setAttribute("aria-hidden", "true");
+        frame.appendChild(sharp);
       }
 
       var out = document.createElement("button");
@@ -361,9 +433,15 @@ Nothing here is final. It is the interaction on its own, so it can be argued wit
       });
     });
 
+    function composite(frame) {
+      return frame.querySelector("img:not(.den-sharp)");
+    }
+
     function clear(frame) {
       frame.classList.remove("is-zoomed");
-      frame.querySelector("img").style.transform = "";
+      composite(frame).style.transform = "";
+      var sharp = frame.querySelector(".den-sharp");
+      if (sharp) sharp.style.opacity = "0";
     }
 
     function zoomTo(index, scroll) {
@@ -377,7 +455,7 @@ Nothing here is final. It is the interaction on its own, so it can be argued wit
 
       var side = p.rect.side + 2 * BLEED;
       var scale = 100 / side;
-      p.frame.querySelector("img").style.transform =
+      composite(p.frame).style.transform =
         "scale(" +
         scale.toFixed(4) +
         ") translate(" +
@@ -388,6 +466,19 @@ Nothing here is final. It is the interaction on its own, so it can be argued wit
       p.frame.classList.add("is-zoomed");
       p.frame.querySelector(".den-badge").textContent =
         "#" + p.num + " · panel " + p.n + " of 4";
+
+      // If this strip shipped per-panel files, lay the crisp one exactly over
+      // where the scaled composite puts the panel — the composite is inset by
+      // BLEED on every side, so the overlay is too.
+      var sharp = p.frame.querySelector(".den-sharp");
+      if (sharp) {
+        var edge = ((BLEED / side) * 100).toFixed(3) + "%";
+        sharp.style.left = edge;
+        sharp.style.top = edge;
+        sharp.style.width = ((p.rect.side / side) * 100).toFixed(3) + "%";
+        if (sharp.getAttribute("src") !== p.file) sharp.src = p.file;
+        sharp.style.opacity = "1";
+      }
 
       if (scroll) {
         p.frame.scrollIntoView({
