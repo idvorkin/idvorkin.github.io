@@ -53,3 +53,5 @@ for p in panels:
         f"{status} {p.name} {w}x{h} " + " ".join(f"{k}={v:.3f}" for k, v in fr.items())
     )
 print("ALL OK" if ok_all else "SOME FAILED")
+if not ok_all:
+    sys.exit(1)
