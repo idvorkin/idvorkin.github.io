@@ -119,24 +119,51 @@ whoever is in the picture (Igor: `raccoon-nerd.webp`; Larry:
 
 ## Per-panel exports
 
-After Igor picks, cut the four panels at the contract rects (outer edge of the
-border stroke, so the frame line stays):
+After Igor picks, cut the four panels:
 
 ```bash
-for i in 1 2 3 4; do
-  case $i in 1) x=32;  y=32;;  2) x=816; y=32;;  3) x=32; y=816;;  4) x=816; y=816;; esac
-  magick den-00N.webp -crop 752x752+${x}+${y} +repage -resize 800x800 -quality 90 den-00N-p${i}.webp
-done
+./gutter/cut-panels.py images/den/den-00N.webp
+./gutter/check-panels.py images/den/den-00N.webp
 ```
 
-Ship all five files to `images/den/`. The viewer (`_d/den-viewer.md`) prefers
-the per-panel files when a strip's figure carries `data-panels`.
+`cut-panels.py` writes `den-00N-p1.webp` .. `den-00N-p4.webp` beside the
+composite; `check-panels.py` verifies every edge of every panel is ≥ 97.5%
+border stroke and exits non-zero if any isn't. A fixed-rect crop at the
+contract coordinates produced a bad cut on strip #1, because its panels
+aren't on one shared grid — the walker instead finds the real stroke on any
+strip within the contract's tolerance.
+
+Ship all five files to `images/den/`.
+
+### Register the strip
+
+Append one object to `_data/den.json`, newest first:
+
+```json
+{
+  "num": N,
+  "title": "…",
+  "date": "…",
+  "img": "/images/den/den-00N.webp",
+  "alt": "…",
+  "receipts_url": "…",
+  "panels": [
+    "/images/den/den-00N-p1.webp",
+    "/images/den/den-00N-p2.webp",
+    "/images/den/den-00N-p3.webp",
+    "/images/den/den-00N-p4.webp"
+  ]
+}
+```
+
+`/den-viewer` renders from that file — a strip that isn't in the manifest
+isn't in the viewer.
 
 ## Failure modes
 
 - **Two lobster claws.** Every first-pass candidate gave Larry a red claw on
   _both_ arms — the ref shows the claw prominently and the model reads it as a
-  species trait. Fix (`fix-claw.txt`, appended to the variant block):
+  species trait. Fix (appended to the variant block):
 
   > Larry has EXACTLY ONE lobster claw. His LEFT arm ends in the giant glossy
   > red lobster claw. His RIGHT hand is an ORDINARY furry brown raccoon paw with
@@ -178,10 +205,10 @@ before it asserts absence:
 >    … So in every Larry panel: exactly ONE red claw (left) and exactly ONE furry
 >    paw (right). Never two red claws. Never zero red claws. Never two furry paws.
 
-Full text in `round2/tail-rules.txt`; the weaker first version is kept at
-`round2/tail-rules-v1.txt` for comparison. **Generalisation: a negative
-constraint on a body part suppresses the part. Always pair "never two X" with
-"always exactly one X, and it must be visible."**
+Full text kept for comparison against the weaker first version.
+**Generalisation: a negative constraint on a body part suppresses the part.
+Always pair "never two X" with "always exactly one X, and it must be
+visible."**
 
 Two other things earned their place in that checklist:
 
@@ -203,7 +230,7 @@ Two other things earned their place in that checklist:
   repeatable; it copies into `assets/asks/<bead-id>/` itself) plus the same
   images attached to a Telegram message, no `--recommend`.
 
-### What a jobs/ entry records — the rejected candidates from #4, round 1
+### What a job entry records — the rejected candidates from #4, round 1
 
 - **A (v1)** — good composition, but Larry had two claws in all four panels.
   Regenerated as A2 with the claw rule; A2 shipped as sheet option A.

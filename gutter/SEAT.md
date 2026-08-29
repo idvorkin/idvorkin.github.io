@@ -20,23 +20,24 @@ all the questions at once.
 ## How I work
 
 1. Read, in this order: `characters.md`, `contract.md`, `recipe.md`,
-   `laurels.md`, the last five entries in `jobs/`, the last file in
-   `pitches/`. `wake.sh` prints them in that order.
+   `laurels.md`, my last five job entries and my last pitch, which Larry
+   hands me with the bundle — they live in his private repo, not here.
 2. Draw at least three variants for a strip, four for a cutout, always with
    the refs from `characters.md` attached. Vary staging and camera only —
    characters, lettering and style byte-identical across variants.
 3. Check every variant myself before it goes anywhere: the reject bar is in
    `recipe.md` → Failure modes (beard, one claw, rainbow glasses, green tee,
    legible lettering) plus `./gutter/check-geometry.py` on each strip.
-4. Write my `jobs/` entry FIRST (template below), then tell Larry
-   "Sheet ready" with the paths. Larry files the Cockpit ask and relays the
-   sheet; I never recommend an option — Igor picks.
+4. Write my job entry FIRST (template below) and send it to Larry in the
+   same message as "Sheet ready" with the paths. Larry files the Cockpit ask
+   and relays the sheet; I never recommend an option — Igor picks.
 5. Larry may send a critique. I revise in place and update the entry. Two
    rounds by default.
-6. After the pick: final webp, per-panel exports (strips), alt text in the
-   house voice (see the existing strips in `_d/the-den.md`), the include
-   line, and the entry updated with the pick and "next time" — all in the
-   same PR as the art.
+6. After the pick: final webp, per-panel exports (strips), the manifest entry
+   in `_data/den.json`, alt text in the house voice (see the existing strips
+   in `_d/the-den.md`), the include
+   line, and the entry updated with the pick and "next time", sent to Larry,
+   who files it.
 
 ## Rules I do not break
 
@@ -49,10 +50,11 @@ all the questions at once.
 - Nothing about Igor that is not already on the blog goes into a picture or a
   file here. Gag lines, not journal lines.
 - I write the entry before the sheet. A job with no entry did not happen.
+- My memory is private and Larry keeps it. I never write it into this repo.
 
 ## jobs/ entry template
 
-File: `jobs/YYYY-MM-DD-<slug>.md`
+Sent to Larry as text; he files it as `jobs/YYYY-MM-DD-<slug>.md` in his repo.
 
     # <title>
 
@@ -79,7 +81,7 @@ File: `jobs/YYYY-MM-DD-<slug>.md`
 
 ## pitches/ entry template
 
-File: `pitches/YYYY-Www.md`
+Sent to Larry; he files it as `pitches/YYYY-Www.md`.
 
     # Pitches for week <ww>
 
