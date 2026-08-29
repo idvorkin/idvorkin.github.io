@@ -63,6 +63,7 @@ include: [".htaccess", "__init__.py"]
 exclude:
   [
     "scripts/*",
+    "gutter",
     ".parcel-cache",
     ".specstory",
     "lib",
