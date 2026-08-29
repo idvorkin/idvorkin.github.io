@@ -11,6 +11,8 @@ from pathlib import Path
 from PIL import Image
 
 THRESH = 195
+# Measured floor on den-004 was 0.979; 0.98 rejected good cuts.
+EDGE_STROKE_FRAC = 0.975
 ok_all = True
 for p in sorted(Path(sys.argv[1]).glob("den-*-p?.webp")):
     im = Image.open(p).convert("RGB")
@@ -29,7 +31,7 @@ for p in sorted(Path(sys.argv[1]).glob("den-*-p?.webp")):
     }
     fr = {k: dark_frac(v) for k, v in edges.items()}
     size_ok = (w, h) == (800, 800)
-    edge_ok = all(v > 0.98 for v in fr.values())
+    edge_ok = all(v > EDGE_STROKE_FRAC for v in fr.values())
     status = "OK " if (size_ok and edge_ok) else "FAIL"
     if not (size_ok and edge_ok):
         ok_all = False

@@ -127,8 +127,8 @@ After Igor picks, cut the four panels:
 ```
 
 `cut-panels.py` writes `den-00N-p1.webp` .. `den-00N-p4.webp` beside the
-composite; `check-panels.py` verifies every edge of every panel is at least
-97.5% border stroke and exits non-zero if any isn't. A fixed-rect crop at the
+composite; `check-panels.py` verifies every edge of every panel is ≥ 97.5%
+border stroke and exits non-zero if any isn't. A fixed-rect crop at the
 contract coordinates produced a bad cut on strip #1, because its panels
 aren't on one shared grid — the walker instead finds the real stroke on any
 strip within the contract's tolerance.
