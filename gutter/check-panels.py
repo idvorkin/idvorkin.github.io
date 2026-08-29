@@ -5,6 +5,7 @@
 # ///
 """Verify each per-panel export: 800x800, dark border on all four edges,
 no cream sliver outside the frame line."""
+
 import sys
 from pathlib import Path
 from PIL import Image
@@ -32,5 +33,7 @@ for p in sorted(Path(sys.argv[1]).glob("den-*-p?.webp")):
     status = "OK " if (size_ok and edge_ok) else "FAIL"
     if not (size_ok and edge_ok):
         ok_all = False
-    print(f"{status} {p.name} {w}x{h} " + " ".join(f"{k}={v:.3f}" for k, v in fr.items()))
+    print(
+        f"{status} {p.name} {w}x{h} " + " ".join(f"{k}={v:.3f}" for k, v in fr.items())
+    )
 print("ALL OK" if ok_all else "SOME FAILED")

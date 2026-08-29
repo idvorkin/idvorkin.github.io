@@ -14,6 +14,7 @@ a speech balloon lying across the border only eats part of the line.
 Crop at exactly that rect (the 8px stroke is drawn inside it, so the frame
 line comes along and no neighbour does) and resize to 800x800.
 """
+
 import subprocess
 import sys
 from pathlib import Path
@@ -47,8 +48,18 @@ for src in sys.argv[1:]:
         out = src.with_name(f"{src.stem}-p{n}.webp")
         geom = f"{bw}x{bh}+{bx}+{by}"
         subprocess.run(
-            ["magick", str(src), "-crop", geom, "+repage",
-             "-resize", "800x800!", "-quality", "90", str(out)],
+            [
+                "magick",
+                str(src),
+                "-crop",
+                geom,
+                "+repage",
+                "-resize",
+                "800x800!",
+                "-quality",
+                "90",
+                str(out),
+            ],
             check=True,
         )
         print(f"{out.name}  crop {geom}")
