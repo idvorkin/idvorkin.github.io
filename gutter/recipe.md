@@ -230,7 +230,7 @@ Two other things earned their place in that checklist:
   repeatable; it copies into `assets/asks/<bead-id>/` itself) plus the same
   images attached to a Telegram message, no `--recommend`.
 
-### What a jobs/ entry records — the rejected candidates from #4, round 1
+### What a job entry records — the rejected candidates from #4, round 1
 
 - **A (v1)** — good composition, but Larry had two claws in all four panels.
   Regenerated as A2 with the claw rule; A2 shipped as sheet option A.
