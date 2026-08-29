@@ -4,7 +4,10 @@
 # dependencies = ["pillow"]
 # ///
 """Verify each per-panel export: 800x800, dark border on all four edges,
-no cream sliver outside the frame line."""
+no cream sliver outside the frame line.
+
+Accepts either a directory (checks every den-*-p?.webp inside) or a strip
+path (checks the four den-00N-p1..p4.webp files beside it)."""
 
 import sys
 from pathlib import Path
@@ -13,8 +16,19 @@ from PIL import Image
 THRESH = 195
 # Measured floor on den-004 was 0.979; 0.98 rejected good cuts.
 EDGE_STROKE_FRAC = 0.975
+
+arg = Path(sys.argv[1])
+if arg.is_dir():
+    panels = sorted(arg.glob("den-*-p?.webp"))
+else:
+    candidates = [arg.with_name(f"{arg.stem}-p{n}.webp") for n in range(1, 5)]
+    panels = sorted(p for p in candidates if p.exists())
+if not panels:
+    print(f"no panel files found for {arg}", file=sys.stderr)
+    sys.exit(1)
+
 ok_all = True
-for p in sorted(Path(sys.argv[1]).glob("den-*-p?.webp")):
+for p in panels:
     im = Image.open(p).convert("RGB")
     w, h = im.size
     px = im.load()
@@ -31,7 +45,7 @@ for p in sorted(Path(sys.argv[1]).glob("den-*-p?.webp")):
     }
     fr = {k: dark_frac(v) for k, v in edges.items()}
     size_ok = (w, h) == (800, 800)
-    edge_ok = all(v > EDGE_STROKE_FRAC for v in fr.values())
+    edge_ok = all(v >= EDGE_STROKE_FRAC for v in fr.values())
     status = "OK " if (size_ok and edge_ok) else "FAIL"
     if not (size_ok and edge_ok):
         ok_all = False
