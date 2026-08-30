@@ -237,6 +237,11 @@ Nothing here is final. It is the interaction on its own, so it can be argued wit
 <div class="den-viewer" id="den-viewer">
 <p class="den-hint">Tap or click a panel to zoom. Then: <b>‹ ›</b> or swipe or ← → to step (it runs on into the next strip), <b>×</b> or tap again or Escape to come back out.</p>
 
+<figure class="den-strip" data-num="7" data-panels="/images/den/den-007-p1.webp,/images/den/den-007-p2.webp,/images/den/den-007-p3.webp,/images/den/den-007-p4.webp">
+<div class="den-frame"><img src="/images/den/den-007.webp" alt="The Den #7: Pending Approval — four panels in which the coach hires a cartoonist, lets him name himself, and files the approval request after the work has already gone up." width="1600" height="1600" decoding="async" /></div>
+<figcaption><em>#7 — Pending Approval</em> · August 30, 2026</figcaption>
+</figure>
+
 <figure class="den-strip" data-num="6" data-panels="/images/den/den-006-p1.webp,/images/den/den-006-p2.webp,/images/den/den-006-p3.webp,/images/den/den-006-p4.webp">
 <div class="den-frame"><img src="/images/den/den-006.webp" alt="The Den #6: Do a Russian Accent — four panels in which Igor auditions his own cloned voice, finds it genuinely good, and still doesn't want to be on the phone with it." width="1600" height="1600" decoding="async" /></div>
 <figcaption><em>#6 — Do a Russian Accent</em> · August 30, 2026</figcaption>
