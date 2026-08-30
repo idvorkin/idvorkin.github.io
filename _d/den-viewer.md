@@ -237,6 +237,11 @@ Nothing here is final. It is the interaction on its own, so it can be argued wit
 <div class="den-viewer" id="den-viewer">
 <p class="den-hint">Tap or click a panel to zoom. Then: <b>‹ ›</b> or swipe or ← → to step (it runs on into the next strip), <b>×</b> or tap again or Escape to come back out.</p>
 
+<figure class="den-strip" data-num="6" data-panels="/images/den/den-006-p1.webp,/images/den/den-006-p2.webp,/images/den/den-006-p3.webp,/images/den/den-006-p4.webp">
+<div class="den-frame"><img src="/images/den/den-006.webp" alt="The Den #6: Do a Russian Accent — four panels in which Igor auditions his own cloned voice, finds it genuinely good, and still doesn't want to be on the phone with it." width="1600" height="1600" decoding="async" /></div>
+<figcaption><em>#6 — Do a Russian Accent</em> · August 30, 2026</figcaption>
+</figure>
+
 <figure class="den-strip" data-num="5" data-panels="/images/den/den-005-p1.webp,/images/den/den-005-p2.webp,/images/den/den-005-p3.webp,/images/den/den-005-p4.webp">
 <div class="den-frame"><img src="/images/den/den-005.webp" alt="The Den #5: Fifteen Minutes, Give or Take — four panels in which the coach starts a fifteen-minute clock, calls it at seven, and then files his correction on top of the log that was already right." width="1600" height="1600" decoding="async" /></div>
 <figcaption><em>#5 — Fifteen Minutes, Give or Take</em> · August 30, 2026</figcaption>
