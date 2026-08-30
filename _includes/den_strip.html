@@ -10,7 +10,9 @@
     date         - display date, e.g. "August 27, 2026"
     img          - image path, e.g. "/images/den/den-003.webp"
     alt          - full alt text for the image
-    receipts_url - direct link to the gist with the real transcript
+    receipts_url - direct link to the gist with the real transcript.
+                    Optional: omit it and the receipts block is left off
+                    entirely rather than rendered as a dead link.
     note         - optional extra markdown rendered between the image and
                     the receipts (e.g. a link to an alternate style)
 
@@ -37,7 +39,9 @@
 {{ include.note }}
 {%- endif %}
 
+{%- if include.receipts_url %}
 <details style="margin:2em 0;">
 <summary>The receipts — the real transcript behind this strip</summary>
 <p><a href="{{ include.receipts_url }}">Open the transcript on GitHub →</a></p>
 </details>
+{%- endif %}

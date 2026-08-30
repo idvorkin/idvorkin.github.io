@@ -13,6 +13,13 @@ a speech balloon lying across the border only eats part of the line.
 
 Crop at exactly that rect (the 8px stroke is drawn inside it, so the frame
 line comes along and no neighbour does) and resize to 800x800.
+
+The rect is then pulled in by one pixel on every side. The outermost line of
+a rendered stroke is antialiased against the cream page — measured 0.57-0.62
+dark on den-005/006/007 against 0.98 for the lines just inside it — so
+keeping it leaves the export with a pale, broken outer edge that
+check-panels.py rightly rejects. The stroke is eight pixels thick; dropping
+its softest one is invisible and makes the edge solid.
 """
 
 import subprocess
@@ -32,7 +39,8 @@ def panel_rect(dark, x0, x1, y0, y1):
     cx = [i for i, c in enumerate(cols) if c >= MAJORITY * (y1 - y0)]
     if not ry or not cx:
         raise SystemExit(f"no border found in quadrant {x0},{y0}")
-    return x0 + cx[0], y0 + ry[0], cx[-1] - cx[0] + 1, ry[-1] - ry[0] + 1
+    # +1 / -2: drop the antialiased outermost line of the stroke on each side.
+    return x0 + cx[0] + 1, y0 + ry[0] + 1, cx[-1] - cx[0] - 1, ry[-1] - ry[0] - 1
 
 
 for src in sys.argv[1:]:

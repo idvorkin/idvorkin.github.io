@@ -237,6 +237,11 @@ Nothing here is final. It is the interaction on its own, so it can be argued wit
 <div class="den-viewer" id="den-viewer">
 <p class="den-hint">Tap or click a panel to zoom. Then: <b>‹ ›</b> or swipe or ← → to step (it runs on into the next strip), <b>×</b> or tap again or Escape to come back out.</p>
 
+<figure class="den-strip" data-num="5" data-panels="/images/den/den-005-p1.webp,/images/den/den-005-p2.webp,/images/den/den-005-p3.webp,/images/den/den-005-p4.webp">
+<div class="den-frame"><img src="/images/den/den-005.webp" alt="The Den #5: Fifteen Minutes, Give or Take — four panels in which the coach starts a fifteen-minute clock, calls it at seven, and then files his correction on top of the log that was already right." width="1600" height="1600" decoding="async" /></div>
+<figcaption><em>#5 — Fifteen Minutes, Give or Take</em> · August 30, 2026</figcaption>
+</figure>
+
 <!-- Predates the contract: measured 46px margin / 36px gutter / 736px panel. -->
 <figure class="den-strip" data-num="4" data-inset="2.875" data-gap="2.25">
 <div class="den-frame"><img src="/images/den/den-004.webp" alt="The Den #4: Cause of Gym: Outage — four panels in which Larry the raccoon tallies three ignored gym nudges, GitHub goes down, and Igor finally swings a kettlebell." width="1600" height="1600" decoding="async" /></div>
@@ -270,9 +275,9 @@ The viewer crops panels out of the composite, so it needs to know where they are
 
 There's no bleed around the crop, and there doesn't need to be: the 8px black border is drawn _inside_ the panel rect, so cropping at the rect keeps the frame line. Cropping at exactly the rect is also what lets the per-panel export below drop in without a jump.
 
-All four strips here predate the contract, so each carries its own measured `data-inset` / `data-gap` — #1 is 51/24/737 as margin/gutter/panel, #2 is 15/14/778, #3 is 34/30/751, #4 is 46/36/736. A strip drawn to the contract carries nothing.
+Strips #1–#4 predate the contract, so each carries its own measured `data-inset` / `data-gap` — #1 is 51/24/737 as margin/gutter/panel, #2 is 15/14/778, #3 is 34/30/751, #4 is 46/36/736. #5, #6 and #7 were drawn to the contract and carry nothing.
 
-The contract also has every strip ship its panels as separate files, `den-00N-p1.webp` through `-p4.webp` at 800x800, cropped at the panel rect — better than upscaling a quarter of a 1600px square. The viewer prefers them when they exist: list them on the figure in reading order as `data-panels="…-p1.webp,…-p2.webp,…-p3.webp,…-p4.webp"` and the zoomed view lays the crisp panel over the scaled composite. None of the strips here ship them yet, and a strip without the attribute is unaffected.
+The contract also has every strip ship its panels as separate files, `den-00N-p1.webp` through `-p4.webp` at 800x800, cropped at the panel rect — better than upscaling a quarter of a 1600px square. The viewer prefers them when they exist: list them on the figure in reading order as `data-panels="…-p1.webp,…-p2.webp,…-p3.webp,…-p4.webp"` and the zoomed view lays the crisp panel over the scaled composite. #5, #6 and #7 ship them; #1–#4 don't, and a strip without the attribute is unaffected.
 
 <script>
   // Den cartoon viewer — demo. Vanilla, no library, no build step.
