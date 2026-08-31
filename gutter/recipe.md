@@ -161,6 +161,19 @@ isn't in the viewer.
 
 ## Failure modes
 
+- **`gemini-image.sh` silently defaults to Flash.** Unset `GEMINI_IMAGE_MODEL`
+  and the script falls back to `gemini-3.1-flash-image-preview` with no
+  warning — the 2026-08-31 den-005/den-006 redraw shipped on Flash this way
+  (wayfarers instead of round rainbow glasses, softer lettering) and nobody
+  noticed until Igor's eye caught it. Every strip generation must
+  `export GEMINI_IMAGE_MODEL=gemini-3-pro-image-preview` before every
+  `gemini-image.sh` call, and the run log must be checked for that exact
+  string (or the derived `.../models/gemini-3-pro-image-preview:generateContent`
+  API URL) before trusting the output — a log that doesn't prove Pro is a
+  failed run, regenerate it. `gemini-image.sh` itself never logs the model or
+  API URL it used, so log it yourself (echo it to the run log before the
+  call) rather than trusting the script's own stderr.
+
 - **Two lobster claws.** Every first-pass candidate gave Larry a red claw on
   _both_ arms — the ref shows the claw prominently and the model reads it as a
   species trait. Fix (appended to the variant block):
