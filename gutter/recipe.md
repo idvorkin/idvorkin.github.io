@@ -219,6 +219,20 @@ Two other things earned their place in that checklist:
   alone is weak; "plain brown leather lace-up shoes" gives the model something to
   draw and held in every round-2 panel.
 
+
+### Igor's standing craft notes (2026-08-30)
+
+Two composition rules from Igor, binding on every future strip:
+
+- **First speaker sits on the LEFT.** Balloons read left-to-right, top-to-bottom;
+  if the panel's first line comes from the character on the right, the reader
+  reads the reply first. Block the panel so whoever speaks first is on the left
+  (or their balloon is unambiguously first in reading order — highest, leftmost).
+- **The phone answers in ONE consistent balloon color.** Every balloon the
+  phone/AI voice speaks gets the same warm cream fill in every panel of a strip
+  (and jagged/electric border for the device voice). Never white in one panel
+  and cream in another — the color IS the speaker tag.
+
 ## Process
 
 - Four candidates run in parallel as background subshells; wall time was under a
