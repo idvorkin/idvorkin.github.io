@@ -288,7 +288,7 @@ The contract still matters — not to the viewer, but to the drawing and to the 
 
 **32px margin · 752px panel · 32px gutter · 752px panel · 32px margin**, the same both ways — four square panels, read left to right, top to bottom. It closes exactly, and every value is a multiple of 8, so the 800px panel export and any 2x display land on whole pixels. As fractions of the canvas: a 2% margin, a 2% gutter, and a 47% panel.
 
-That is the `GRID` constant at the top of the script, and it is now cosmetic in both of its uses: where to put the invisible tap targets, and where the zoom animation starts from. Because nothing is cropped at runtime, a strip that misses the contract by a percent — as all four of these do — lands in exactly the right place anyway. The pre-cut file is the destination.
+That is the `GRID` constant at the top of the script, and it is now cosmetic in both of its uses: where to put the invisible tap targets, and where the zoom animation starts from. Because nothing is cropped at runtime, a strip that misses the contract by a percent — as most of these do — lands in exactly the right place anyway. The pre-cut file is the destination.
 
 <script>
   // Den cartoon viewer — demo. Vanilla, no library, no build step.

@@ -1,5 +1,19 @@
 [
   {
+    "num": 6,
+    "title": "Do a Russian Accent",
+    "date": "August 30, 2026",
+    "img": "/images/den/den-006.webp",
+    "alt": "The Den #6: Do a Russian Accent — four panels in the plush-render house style, in the attic den. 1: Igor, a raccoon in rainbow glasses and a green TECHNOLOGIST tee, stands over a phone glowing on the arm of the green leather armchair and asks 'HOW MUCH LIKE ME DOES THIS SOUND?'; a jagged balloon from the phone answers 'QUITE A LOT LIKE YOU.' 2: Close on the phone, its screen a waveform, Igor leaning in delighted — 'CAN YOU LAUGH? DO A RUSSIAN ACCENT.' — and the phone answering in a broad Russian accent: 'HA HA! OF COURSE, COMRADE. LIFE IS HEAVY, LIKE ROCK.' 3: Igor picks the phone up and holds it out, testing it now instead of just chatting with it — 'ONE MORE. DO ME.' — and the phone answers by echoing his own opening question straight back at him: 'HOW MUCH LIKE ME DOES THIS SOUND?' 4: Igor slumped deep in the armchair with his glasses slid down his snout says 'IT STILL SOUNDS LIKE I'M TALKING TO MYSELF.'; Larry, the bearded raccoon with one giant red lobster claw, writing on his clipboard beside him, answers 'YES.'",
+    "receipts_url": "https://gist.github.com/idvorkin-ai-tools/53c7d642c1220fa2bb91ca929fbdef4f",
+    "panels": [
+      "/images/den/den-006-p1.webp",
+      "/images/den/den-006-p2.webp",
+      "/images/den/den-006-p3.webp",
+      "/images/den/den-006-p4.webp"
+    ]
+  },
+  {
     "num": 4,
     "title": "Cause of Gym: Outage",
     "date": "August 28, 2026",

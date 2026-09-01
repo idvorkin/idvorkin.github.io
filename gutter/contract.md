@@ -23,6 +23,12 @@ number per thing; nothing here is stylistic.
 | den-002       | 15/17/15/15  | 14      | 776-778 | 9-10          |
 | den-003       | 34           | 30      | 751     | 6             |
 | den-004       | 46           | 36      | 736     | 9             |
+| den-005       | 33/34        | 30      | 751-752 | 8             |
+| den-006       | 33/34        | 30      | 751-752 | 8             |
+| den-007       | 33/34        | 30      | 751-752 | 8             |
+
+den-005, den-006 and den-007 are the first strips drawn against the contract
+rather than measured into it; all three pass check-geometry.py first go.
 
 The contract is den-003 rounded to arithmetic that closes exactly:
 32 + 752 + 32 + 752 + 32 = 1600. Every value is a multiple of 8, so the 800 px
@@ -110,7 +116,9 @@ Every strip also ships its four panels as separate files:
   transform on the full strip using the fractions above. Because the panel file
   is the same crop the transform produces, switching between them shows no jump.
 
-Contract strips:
+Contract strips — in practice run `gutter/cut-panels.py <strip>`, which finds
+each panel's own border and pulls the crop in by the stroke's antialiased outer
+pixel; the ideal-geometry equivalent is:
 
     magick den-00N.webp -crop 752x752+32+32   +repage -resize 800x800 -quality 90 den-00N-p1.webp
     magick den-00N.webp -crop 752x752+816+32  +repage -resize 800x800 -quality 90 den-00N-p2.webp

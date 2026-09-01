@@ -56,7 +56,7 @@ before the model has committed to a look.
 1. **Layout** — "four-panel comic strip, 2x2 grid, thick black panel borders on
    a warm cream page, square 1:1."
 2. **RENDER STYLE, flagged as the most important instruction** — plush-3D
-   positives (felt fibre texture, soft-vinyl toy volume, volumetric light, warm
+   positives (felt fiber texture, soft-vinyl toy volume, volumetric light, warm
    attic lamp, shallow DoF, film grain) _and_ an explicit negative list: NOT flat
    2D cartoon, NOT line art, NOT cel-shaded, NOT vector, NOT a white studio
    background. The negatives did as much work as the positives.
@@ -74,11 +74,11 @@ one happened to draw Larry correctly.
 
 ### A fixed set, named once
 
-Modelled on Flow Fitness in Fremont. This block goes in the prompt once, in its
+Modeled on Flow Fitness in Fremont. This block goes in the prompt once, in its
 own section, and both gym panels then refer back to it by name.
 
 > THE GYM — ONE FIXED SET, IDENTICAL IN PANEL 2 AND PANEL 4: a bright, airy
-> neighbourhood kettlebell studio. Black rubber-tile floor. Along the left-hand
+> neighborhood kettlebell studio. Black rubber-tile floor. Along the left-hand
 > wall, a long low steel rack holding a neat row of cast-iron kettlebells graded
 > small to large. Tall industrial windows fill the right-hand wall with clean
 > natural daylight and a glimpse of green trees outside. One black flat weight
@@ -161,6 +161,19 @@ isn't in the viewer.
 
 ## Failure modes
 
+- **`gemini-image.sh` silently defaults to Flash.** Unset `GEMINI_IMAGE_MODEL`
+  and the script falls back to `gemini-3.1-flash-image-preview` with no
+  warning — the 2026-08-31 den-005/den-006 redraw shipped on Flash this way
+  (wayfarers instead of round rainbow glasses, softer lettering) and nobody
+  noticed until Igor's eye caught it. Every strip generation must
+  `export GEMINI_IMAGE_MODEL=gemini-3-pro-image-preview` before every
+  `gemini-image.sh` call, and the run log must be checked for that exact
+  string (or the derived `.../models/gemini-3-pro-image-preview:generateContent`
+  API URL) before trusting the output — a log that doesn't prove Pro is a
+  failed run, regenerate it. `gemini-image.sh` itself never logs the model or
+  API URL it used, so log it yourself (echo it to the run log before the
+  call) rather than trusting the script's own stderr.
+
 - **Two lobster claws.** Every first-pass candidate gave Larry a red claw on
   _both_ arms — the ref shows the claw prominently and the model reads it as a
   species trait. Fix (appended to the variant block):
@@ -174,7 +187,7 @@ isn't in the viewer.
   a regeneration for them.
 
 - **Matched crocs.** Larry drifts to two yellow Crocs. Same paragraph now
-  restates "one BLUE and one YELLOW — never two of the same colour." Partial fix.
+  restates "one BLUE and one YELLOW — never two of the same color." Partial fix.
 - **Shirt text drops or garbles** on small/background figures ("TECHNOLOGST",
   "EDINOLOGIST", or blank). Unfixed. It is legible in whichever panel Igor is
   foregrounded, which is enough — but don't stage him small in every panel.
@@ -206,7 +219,7 @@ before it asserts absence:
 >    paw (right). Never two red claws. Never zero red claws. Never two furry paws.
 
 Full text kept for comparison against the weaker first version.
-**Generalisation: a negative constraint on a body part suppresses the part.
+**Generalization: a negative constraint on a body part suppresses the part.
 Always pair "never two X" with "always exactly one X, and it must be
 visible."**
 
@@ -218,6 +231,19 @@ Two other things earned their place in that checklist:
 - **Feet need a positive replacement, not a prohibition.** "No Crocs on Larry"
   alone is weak; "plain brown leather lace-up shoes" gives the model something to
   draw and held in every round-2 panel.
+
+### Igor's standing craft notes (2026-08-30)
+
+Two composition rules from Igor, binding on every future strip:
+
+- **First speaker sits on the LEFT.** Balloons read left-to-right, top-to-bottom;
+  if the panel's first line comes from the character on the right, the reader
+  reads the reply first. Block the panel so whoever speaks first is on the left
+  (or their balloon is unambiguously first in reading order — highest, leftmost).
+- **The phone answers in ONE consistent balloon color.** Every balloon the
+  phone/AI voice speaks gets the same warm cream fill in every panel of a strip
+  (and jagged/electric border for the device voice). Never white in one panel
+  and cream in another — the color IS the speaker tag.
 
 ## Process
 
