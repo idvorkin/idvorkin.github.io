@@ -37,12 +37,18 @@ lettering. No `--transparent` — comics are opaque pages.
 | `images/larry-armchair-session.webp` | Larry **in the house style**, in a panel, with a bubble — the single most useful ref |
 | `images/raccoon-larry.webp`          | Larry character canon (beard, claw, waistcoat, crocs)                                |
 | `images/raccoon-nerd.webp`           | Igor character canon (rainbow glasses, TECHNOLOGIST tee, mismatched crocs)           |
+| `images/larry-claw-ref.png`          | the claw, attached — attach on every Larry panel                                     |
 
 The armchair image was the addition that mattered. `raccoon-larry.webp` is a
 transparent full-body toy shot; it locks the _character_ but says nothing about
 how he sits in a lit panel next to a speech balloon. One ref that shows the
 character already rendered in the target style beats two refs that show style
 and character separately.
+
+`larry-claw-ref.png` is a crop of `raccoon-larry.webp` (`380x420+660+280`)
+showing nothing but the claw joined to the sleeve. Every model tried so far
+draws it as a loose prop on the desk or as a second claw; a close-up of the
+join is the cheapest way to say _attached_. Add it whenever Larry is in frame.
 
 **Do not use `den-002.webp` as the style ref** — #2 is the flat 2D line-art
 version. #1 has both a flat and a `-plush` variant. Only #3 and
@@ -96,6 +102,31 @@ point at it fixed both in one pass.
 
 Any recurring location gets this treatment: describe it once in its own
 section, name it, and have every panel that uses it refer to the name.
+
+### Per-panel generation
+
+Some models fight the 2x2 grid — margins wander, borders thin out, lettering
+shrinks to fit four scenes into one canvas. Don't argue with them. Generate each
+panel on its own as a full-bleed square, no grid and no border, with the canon
+refs plus the matching panel of an existing strip (`den-00N-pN.webp`) as a
+staging ref, then composite onto the cream page at the contract geometry:
+
+```bash
+magick -size 1600x1600 xc:'#F7F0D4' \
+  \( panel-1.png -resize 752x752! -shave 8x8 -bordercolor black -border 8 \) -geometry +32+32   -composite \
+  \( panel-2.png -resize 752x752! -shave 8x8 -bordercolor black -border 8 \) -geometry +816+32  -composite \
+  \( panel-3.png -resize 752x752! -shave 8x8 -bordercolor black -border 8 \) -geometry +32+816  -composite \
+  \( panel-4.png -resize 752x752! -shave 8x8 -bordercolor black -border 8 \) -geometry +816+816 -composite \
+  out.png
+```
+
+Geometry passes by construction, and each panel gets the model's whole attention:
+Muse landed the attached claw, the raccoon kits, both wall posters and legible
+shirt text in one pass this way, having missed all four across six
+page-at-a-time spins. The trade is continuity — characters drift between panels
+(the mugger's face changed between 1 and 3), so the staging ref carries the
+weight and recurring faces want a look before shipping. Igor, on the Den #7
+comparison: "much better results."
 
 ## Cutouts
 
@@ -204,6 +235,9 @@ isn't in the viewer.
   never cropped."
 - **`0` renders as `O`** in "NUDGES 3. GYM 0." Present in the original draft too.
   Not worth another spin; if it matters, write "GYM: ZERO."
+- **Meta Muse Image refuses a prompt with a knife-point mugging** about one time
+  in four. Retry once identically — that usually passes. If it refuses twice,
+  soften the knife rather than rewriting the scene.
 - **A supplied source image drags the panel grid off contract.** When the brief
   is "clone this", the source belongs in the ref stack, attached last, under an
   explicit "staging only, its flat rendering is wrong" block — that block held
