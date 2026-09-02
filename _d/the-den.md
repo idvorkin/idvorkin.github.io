@@ -35,4 +35,4 @@ On a phone the lettering is a smudge, so there's a panel-by-panel reader: **[rea
 
 ---
 
-Curious what these look like off-model? [Here's #6 rendered by three different models →](/the-den-styles)
+Curious what these look like off-model? [Here's #6 and #7 rendered by other models →](/the-den-styles)
