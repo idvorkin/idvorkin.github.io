@@ -25,10 +25,15 @@ number per thing; nothing here is stylistic.
 | den-004       | 46           | 36      | 736     | 9             |
 | den-005       | 33/34        | 30      | 751-752 | 8             |
 | den-006       | 33/34        | 30      | 751-752 | 8             |
-| den-007       | 33/34        | 30      | 751-752 | 8             |
+| den-007       | 46           | 30      | 739     | 5-6           |
 
-den-005, den-006 and den-007 are the first strips drawn against the contract
-rather than measured into it; all three pass check-geometry.py first go.
+den-005 and den-006 are the first strips drawn against the contract rather than
+measured into it; both pass check-geometry.py first go. den-007 is the
+exception, and the row above is the strip as shipped: it clones a supplied
+source image, and attaching that source pushed every candidate's margins out to
+46 px. It fails check-geometry and passes check-panels — see "A supplied source
+image drags the panel grid off contract" in `recipe.md`. Since the viewer reads
+the pre-cut panel files, check-panels is the gate that matters at publish.
 
 The contract is den-003 rounded to arithmetic that closes exactly:
 32 + 752 + 32 + 752 + 32 = 1600. Every value is a multiple of 8, so the 800 px
