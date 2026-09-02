@@ -186,6 +186,12 @@ isn't in the viewer.
   This fixed most but not all panels. Symmetric-limb corrections are weak; budget
   a regeneration for them.
 
+- **The claw drawn as a loose prop.** "One claw, never two" fixes the count and
+  says nothing about where the claw is; one candidate laid it on the desk as a
+  red object beside a two-pawed Larry. Assert the attachment alongside the
+  count: "the claw is the END of Larry's LEFT ARM, joined to his sleeve at the
+  wrist — never a loose red object lying on the desk." Held in every rerun.
+
 - **Matched crocs.** Larry drifts to two yellow Crocs. Same paragraph now
   restates "one BLUE and one YELLOW — never two of the same color." Partial fix.
 - **Shirt text drops or garbles** on small/background figures ("TECHNOLOGST",
@@ -198,6 +204,15 @@ isn't in the viewer.
   never cropped."
 - **`0` renders as `O`** in "NUDGES 3. GYM 0." Present in the original draft too.
   Not worth another spin; if it matters, write "GYM: ZERO."
+- **A supplied source image drags the panel grid off contract.** When the brief
+  is "clone this", the source belongs in the ref stack, attached last, under an
+  explicit "staging only, its flat rendering is wrong" block — that block held
+  the plush style in every run, and it is what protects the dialogue. The cost
+  is geometry: three of four candidates missed the 32 px gutter, and the control
+  run with the source withheld was the only one to pass `check-geometry` first
+  go — and the worst on content (a dropped balloon, poster text rendered inside
+  a speech balloon, two knives, two claws). Attach it, expect the geometry check
+  to fail, and budget the frame-inking pass before cutting panels.
 
 ### The counter-failure: over-correcting the claw deletes it
 
