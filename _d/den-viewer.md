@@ -752,8 +752,8 @@ That is the `GRID` constant at the top of the script, and its only use here is c
       render(index, false);
       window.requestAnimationFrame(function () {
         lightbox.classList.add("is-open");
+        closeButton.focus({ preventScroll: true });
       });
-      closeButton.focus({ preventScroll: true });
     }
 
     function step(delta) {
