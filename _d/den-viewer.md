@@ -7,7 +7,7 @@ tags:
   - ai
 ---
 
-On a phone each panel of a [Den](/the-den) strip is about 190 pixels wide and the hand-lettering is a smudge. This page is a demo of the fix: tap a panel and it fills the width. Arrows, swipe, and the keyboard step through every panel of every strip; tap again, hit the X, or press Escape to come back out.
+On a phone each panel of a [Den](/the-den) strip is about 190 pixels wide and the hand-lettering is a smudge. This demo opens each panel in a full-screen lightbox, with navigation and captions kept outside the art.
 
 Nothing here is final. It is the interaction on its own, so it can be argued with before it goes anywhere near [the real page](/the-den).
 
@@ -21,8 +21,8 @@ Nothing here is final. It is the interaction on its own, so it can be argued wit
   DATA: every strip on this page comes from _data/den.json — the figures are
   rendered from it by Liquid and the whole file is inlined below as JSON for
   the script. There are no per-strip attributes to keep in sync, and no
-  runtime panel geometry: each strip ships its four panels as pre-cut files
-  and the zoomed view shows the file.
+    runtime panel geometry: each strip ships its four panels as pre-cut files
+    and the lightbox shows the file.
 -->
 
 <style>
@@ -73,27 +73,6 @@ Nothing here is final. It is the interaction on its own, so it can be argued wit
     width: 100%;
     height: auto;
     display: block;
-    transform-origin: 0 0;
-    transition: transform 250ms cubic-bezier(0.2, 0.7, 0.3, 1);
-  }
-
-  .den-frame.is-zoomed {
-    /* Let a vertical drag scroll the page; horizontal is ours. */
-    touch-action: pan-y;
-  }
-
-  /* The zoomed view proper: the pre-cut panel file, laid over the composite
-     once it has loaded. The composite behind it is only the animation. */
-  .den-sharp {
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 250ms linear;
   }
 
   /* One invisible button per panel. */
@@ -103,7 +82,7 @@ Nothing here is final. It is the interaction on its own, so it can be argued wit
     padding: 0;
     border: 0;
     background: transparent;
-    cursor: zoom-in;
+    cursor: pointer;
     border-radius: 4px;
   }
 
@@ -112,127 +91,377 @@ Nothing here is final. It is the interaction on its own, so it can be argued wit
     outline-offset: -3px;
   }
 
-  .den-frame.is-zoomed .den-hit {
-    display: none;
-  }
-
-  /* Tap-anywhere-to-close, under the controls. */
-  .den-out {
-    position: absolute;
-    inset: 0;
-    z-index: 3;
-    display: none;
-    border: 0;
-    background: transparent;
-    cursor: zoom-out;
-  }
-
-  .den-frame.is-zoomed .den-out {
-    display: block;
-  }
-
-  .den-ui {
-    position: absolute;
-    inset: 0;
-    z-index: 4;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 200ms linear;
-  }
-
-  .den-frame.is-zoomed .den-ui {
-    opacity: 1;
-  }
-
-  .den-ui > * {
-    pointer-events: auto;
-  }
-
-  .den-nav,
-  .den-close {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    border: 0;
-    background: rgba(0, 0, 0, 0.04);
-    color: rgba(0, 0, 0, 0.35);
-    cursor: pointer;
-    line-height: 1;
-    font-family: system-ui, -apple-system, sans-serif;
-  }
-
-  .den-nav:hover,
-  .den-nav:focus-visible,
-  .den-nav:active,
-  .den-close:hover,
-  .den-close:focus-visible,
-  .den-close:active {
-    background: rgba(0, 0, 0, 0.15);
-    color: rgba(0, 0, 0, 0.9);
-  }
-
-  .den-nav {
-    top: 0;
-    bottom: 0;
-    width: 25%;
-    border-radius: 0;
-    font-size: 38px;
-  }
-
-  .den-prev {
-    left: 0;
-  }
-
-  .den-next {
-    right: 0;
-  }
-
-  .den-close {
-    right: 8px;
-    top: 8px;
-    min-width: 44px;
-    min-height: 44px;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: 50%;
-    font-size: 22px;
-  }
-
-  .den-nav:focus-visible {
-    outline: 3px solid var(--den-ring);
-    outline-offset: -3px;
-  }
-
-  .den-close:focus-visible {
-    outline: 3px solid var(--den-ring);
-    outline-offset: 2px;
-  }
-
-  .den-panel-label,
   .den-strip figcaption {
     font-size: 0.85em;
     opacity: 0.75;
     margin-top: 8px;
   }
 
+  html.den-lightbox-open,
+  body.den-lightbox-open {
+    overflow: hidden;
+  }
+
+  .den-lightbox {
+    --den-panel-size: min(800px, calc(100vw - 48px), calc(100vh - 220px));
+    position: fixed;
+    inset: 0;
+    z-index: 2147483640;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 12px 24px;
+    background: rgba(0, 0, 0, 0.92);
+    color: #f8f9fa;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity 180ms ease,
+      visibility 0s linear 180ms;
+  }
+
+  .den-lightbox[hidden] {
+    display: none;
+  }
+
+  .den-lightbox.is-open {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+  }
+
+  .den-lightbox__dialog {
+    display: grid;
+    grid-template-rows: minmax(44px, auto) var(--den-panel-size) minmax(80px, auto);
+    justify-items: center;
+    width: 100%;
+    max-height: 100%;
+  }
+
+  .den-lightbox__topbar,
+  .den-lightbox__caption {
+    box-sizing: border-box;
+    width: var(--den-panel-size);
+  }
+
+  .den-lightbox__topbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-width: 0;
+    padding-bottom: 8px;
+  }
+
+  .den-lightbox__title {
+    overflow: hidden;
+    min-width: 0;
+    font-size: 0.94rem;
+    font-weight: 600;
+    line-height: 1.25;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .den-lightbox__strip-change {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    max-width: calc(100% - 88px);
+    padding: 5px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 999px;
+    background: rgba(35, 35, 35, 0.96);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+    font-size: 0.72rem;
+    font-weight: 650;
+    line-height: 1.2;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    text-overflow: ellipsis;
+    transform: translate(-50%, -45%);
+    transition:
+      opacity 160ms ease,
+      transform 160ms ease;
+    white-space: nowrap;
+  }
+
+  .den-lightbox__strip-change.is-visible {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  .den-lightbox button,
+  .den-lightbox a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .den-lightbox__close,
+  .den-lightbox__side,
+  .den-lightbox__dot {
+    border: 0;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+  }
+
+  .den-lightbox__close {
+    display: inline-flex;
+    flex: 0 0 40px;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: -4px -8px -4px 0;
+    padding: 0;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 1.65rem;
+    line-height: 1;
+  }
+
+  .den-lightbox__close:hover,
+  .den-lightbox__close:active,
+  .den-lightbox__side:hover,
+  .den-lightbox__side:active {
+    background: rgba(255, 255, 255, 0.18);
+  }
+
+  .den-lightbox__close:focus-visible,
+  .den-lightbox__side:focus-visible,
+  .den-lightbox__dot:focus-visible,
+  .den-lightbox__strip-link:focus-visible {
+    outline: 3px solid #8ab4ff;
+    outline-offset: 3px;
+  }
+
+  .den-lightbox__stage {
+    display: grid;
+    grid-template-columns: var(--den-panel-size);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .den-lightbox__image-shell {
+    position: relative;
+    grid-column: 1;
+    width: var(--den-panel-size);
+    height: var(--den-panel-size);
+    overflow: hidden;
+    border-radius: 4px;
+    background: #e6e0d5;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.55);
+    touch-action: pan-y;
+  }
+
+  .den-lightbox__image {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 170ms ease;
+  }
+
+  .den-lightbox__image.is-outgoing,
+  .den-lightbox__image.is-current {
+    opacity: 1;
+  }
+
+  .den-lightbox__image.is-current {
+    z-index: 1;
+  }
+
+  .den-lightbox__tap {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    width: 33.333%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: transparent;
+  }
+
+  .den-lightbox__tap-previous {
+    left: 0;
+  }
+
+  .den-lightbox__tap-next {
+    right: 0;
+  }
+
+  .den-lightbox__side {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    padding: 0 0 4px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 2.2rem;
+    line-height: 1;
+  }
+
+  .den-lightbox__side:disabled {
+    cursor: default;
+    opacity: 0.28;
+  }
+
+  .den-lightbox__caption {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px 16px;
+    align-content: start;
+    padding-top: 12px;
+    font-size: 0.82rem;
+  }
+
+  .den-lightbox__position {
+    display: flex;
+    grid-column: 1 / -1;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .den-lightbox__counter {
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .den-lightbox__dots {
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+
+  .den-lightbox__dot {
+    position: relative;
+    width: 28px;
+    height: 32px;
+    padding: 0;
+    background: transparent;
+  }
+
+  .den-lightbox__dot::before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 7px;
+    height: 7px;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+    content: "";
+    transform: translate(-50%, -50%);
+  }
+
+  .den-lightbox__dot[aria-current="true"]::before {
+    background: #fff;
+  }
+
+  .den-lightbox__date {
+    align-self: center;
+    opacity: 0.62;
+  }
+
+  .den-lightbox__strip-link {
+    justify-self: end;
+    color: #d8e8ff;
+    font-size: 0.78rem;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  @media (min-width: 768px) {
+    .den-lightbox {
+      --den-panel-size: min(800px, calc(100vw - 256px), calc(100vh - 184px));
+      padding: 24px 48px;
+    }
+
+    .den-lightbox__dialog {
+      grid-template-rows: minmax(48px, auto) var(--den-panel-size) minmax(72px, auto);
+    }
+
+    .den-lightbox__stage {
+      grid-template-columns: 56px var(--den-panel-size) 56px;
+      column-gap: 24px;
+    }
+
+    .den-lightbox__previous {
+      grid-column: 1;
+    }
+
+    .den-lightbox__image-shell {
+      grid-column: 2;
+    }
+
+    .den-lightbox__next {
+      grid-column: 3;
+    }
+
+    .den-lightbox__side {
+      display: flex;
+    }
+
+    .den-lightbox__tap {
+      display: none;
+    }
+  }
+
   @media (prefers-reduced-motion: reduce) {
-    .den-frame img,
-    .den-sharp,
-    .den-ui {
+    .den-lightbox,
+    .den-lightbox__image,
+    .den-lightbox__strip-change {
       transition: none;
     }
   }
 </style>
 
 <div class="den-viewer" id="den-viewer">
-<p class="den-hint">Tap or click a panel to zoom. Then: <b>‹ ›</b> or swipe or ← → to step (it runs on into the next strip), <b>×</b> or tap again or Escape to come back out.</p>
+<p class="den-hint">Tap or click a panel to open the lightbox; swipe or tap the image edges on phones, use ‹ › or ← → to step, and press × or Escape to close.</p>
 {% for strip in site.data.den %}
 <figure class="den-strip" data-num="{{ strip.num }}">
 <div class="den-frame"><img src="{{ strip.img }}" alt="{{ strip.alt | escape }}" width="1600" height="1600" {% unless forloop.first %}loading="lazy" {% endunless %}decoding="async" /></div>
 <figcaption><em>#{{ strip.num }} — {{ strip.title }}</em> · {{ strip.date }}</figcaption>
 </figure>
 {% endfor %}
+</div>
+
+<div class="den-lightbox" id="den-lightbox" role="dialog" aria-modal="true" aria-label="Panel viewer" hidden>
+<div class="den-lightbox__dialog">
+<div class="den-lightbox__topbar">
+<div class="den-lightbox__title" aria-live="polite"></div>
+<div class="den-lightbox__strip-change" role="status" aria-live="polite"></div>
+<button type="button" class="den-lightbox__close" aria-label="Close panel viewer">×</button>
+</div>
+<div class="den-lightbox__stage">
+<button type="button" class="den-lightbox__side den-lightbox__previous" aria-label="Previous panel">‹</button>
+<div class="den-lightbox__image-shell">
+<button type="button" class="den-lightbox__tap den-lightbox__tap-previous" tabindex="-1" aria-label="Previous panel"></button>
+<button type="button" class="den-lightbox__tap den-lightbox__tap-next" tabindex="-1" aria-label="Next panel"></button>
+</div>
+<button type="button" class="den-lightbox__side den-lightbox__next" aria-label="Next panel">›</button>
+</div>
+<div class="den-lightbox__caption">
+<div class="den-lightbox__position" role="status" aria-live="polite">
+<span class="den-lightbox__counter"></span>
+<div class="den-lightbox__dots" role="group" aria-label="Choose a panel"></div>
+</div>
+<span class="den-lightbox__date"></span>
+<a class="den-lightbox__strip-link" href="/the-den">open the strip</a>
+</div>
+</div>
 </div>
 
 <script type="application/json" id="den-manifest">{{ site.data.den | jsonify }}</script>
@@ -280,19 +509,15 @@ The contract still matters — not to the viewer, but to the drawing and to the 
 
 **32px margin · 752px panel · 32px gutter · 752px panel · 32px margin**, the same both ways — four square panels, read left to right, top to bottom. It closes exactly, and every value is a multiple of 8, so the 800px panel export and any 2x display land on whole pixels. As fractions of the canvas: a 2% margin, a 2% gutter, and a 47% panel.
 
-That is the `GRID` constant at the top of the script, and it is now cosmetic in both of its uses: where to put the invisible tap targets, and where the zoom animation starts from. Because nothing is cropped at runtime, a strip that misses the contract by a percent — as most of these do — lands in exactly the right place anyway. The pre-cut file is the destination.
+That is the `GRID` constant at the top of the script, and its only use here is cosmetic: where to put the invisible tap targets. Because nothing is cropped at runtime, a strip that misses the contract by a percent — as most of these do — lands in exactly the right place anyway. The pre-cut file is what the lightbox displays.
 
 <script>
   // Den cartoon viewer — demo. Vanilla, no library, no build step.
-  //
-  // Zooming in is two things at once: the composite is transformed inside its
-  // square window so the panel roughly fills it, and the panel's own pre-cut
-  // file fades in on top. The file is what you end up looking at; the
-  // transform is the animation that gets you there.
   (function () {
     var root = document.getElementById("den-viewer");
     var data = document.getElementById("den-manifest");
-    if (!root || !data) return;
+    var lightbox = document.getElementById("den-lightbox");
+    if (!root || !data || !lightbox) return;
 
     var manifest = JSON.parse(data.textContent);
     var byNum = {};
@@ -313,10 +538,9 @@ That is the `GRID` constant at the top of the script, and it is now cosmetic in 
     // pixels. As fractions: inset 2%, gutter 2%, panel side 47%.
     //
     // Nothing is cropped at runtime, so these two numbers only decide where
-    // the tap targets sit and where the zoom animation starts. A strip that
-    // misses the contract by a percent — all four of today's do — still shows
-    // the right thing, because the thing shown is its own pre-cut panel file
-    // from the manifest. Panel geometry is a build-time problem now.
+    // the tap targets sit. A strip that misses the contract by a percent still
+    // shows the right thing, because the lightbox uses its own pre-cut panel
+    // file from the manifest. Panel geometry is a build-time problem now.
     // ---------------------------------------------------------------------
     var GRID = { inset: 2.0, gap: 2.0 }; // percent of the canvas
     var SIDE = (100 - 2 * GRID.inset - GRID.gap) / 2; // 47
@@ -325,7 +549,27 @@ That is the `GRID` constant at the top of the script, and it is now cosmetic in 
     var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     var panels = []; // flat, DOM order, so stepping runs on into the next strip
-    var active = null; // index into panels, or null when nothing is zoomed
+    var active = null;
+    var opener = null;
+    var closeTimer = null;
+    var boundaryTimer = null;
+    var imageToken = 0;
+    var currentLayer = 0;
+    var imageLayers = [];
+
+    var dialog = lightbox.querySelector(".den-lightbox__dialog");
+    var title = lightbox.querySelector(".den-lightbox__title");
+    var stripChange = lightbox.querySelector(".den-lightbox__strip-change");
+    var closeButton = lightbox.querySelector(".den-lightbox__close");
+    var previousButton = lightbox.querySelector(".den-lightbox__previous");
+    var nextButton = lightbox.querySelector(".den-lightbox__next");
+    var imageShell = lightbox.querySelector(".den-lightbox__image-shell");
+    var tapPrevious = lightbox.querySelector(".den-lightbox__tap-previous");
+    var tapNext = lightbox.querySelector(".den-lightbox__tap-next");
+    var counter = lightbox.querySelector(".den-lightbox__counter");
+    var dots = lightbox.querySelector(".den-lightbox__dots");
+    var date = lightbox.querySelector(".den-lightbox__date");
+    var stripLink = lightbox.querySelector(".den-lightbox__strip-link");
 
     root.querySelectorAll(".den-strip").forEach(function (strip) {
       var entry = byNum[strip.dataset.num];
@@ -333,11 +577,6 @@ That is the `GRID` constant at the top of the script, and it is now cosmetic in 
       var files = entry.panels || [];
       var frame = strip.querySelector(".den-frame");
       var num = entry.num;
-      var panelLabel = document.createElement("div");
-      panelLabel.className = "den-panel-label";
-      panelLabel.hidden = true;
-      panelLabel.setAttribute("aria-live", "polite");
-      frame.insertAdjacentElement("afterend", panelLabel);
 
       for (var i = 0; i < 4; i++) {
         var rect = {
@@ -354,7 +593,7 @@ That is the `GRID` constant at the top of the script, and it is now cosmetic in 
         hit.style.height = rect.side + "%";
         hit.setAttribute(
           "aria-label",
-          "Zoom into panel " + (i + 1) + " of strip #" + num,
+          "Open panel " + (i + 1) + " of strip #" + num,
         );
         frame.appendChild(hit);
 
@@ -363,176 +602,239 @@ That is the `GRID` constant at the top of the script, and it is now cosmetic in 
           "click",
           (function (n) {
             return function () {
-              zoomTo(n, false);
+              open(n, this);
             };
           })(index),
         );
         panels.push({
-          strip: strip,
-          frame: frame,
+          entry: entry,
           rect: rect,
           n: i + 1,
           num: num,
           hit: hit,
           file: files[i] || null,
-          label: panelLabel,
         });
       }
-
-      var sharp = document.createElement("img");
-      sharp.className = "den-sharp";
-      sharp.alt = "";
-      sharp.decoding = "async";
-      sharp.setAttribute("aria-hidden", "true");
-      // Only reveal a panel file once it has actually decoded, so stepping
-      // never flashes the previous panel.
-      sharp.addEventListener("load", function () {
-        if (active !== null && panels[active].frame === frame) {
-          sharp.style.opacity = "1";
-        }
-      });
-      frame.appendChild(sharp);
-
-      var out = document.createElement("button");
-      out.type = "button";
-      out.className = "den-out";
-      out.setAttribute("aria-label", "Zoom back out");
-      frame.appendChild(out);
-
-      var ui = document.createElement("div");
-      ui.className = "den-ui";
-      ui.innerHTML =
-        '<button type="button" class="den-nav den-prev" aria-label="Previous panel">‹</button>' +
-        '<button type="button" class="den-nav den-next" aria-label="Next panel">›</button>' +
-        '<button type="button" class="den-close" aria-label="Close zoom">×</button>';
-      frame.appendChild(ui);
-
-      ui.querySelector(".den-prev").addEventListener("click", function () {
-        step(-1);
-      });
-      ui.querySelector(".den-next").addEventListener("click", function () {
-        step(1);
-      });
-      ui.querySelector(".den-close").addEventListener("click", close);
-
-      // Swipe. A swipe also fires a click on .den-out, so a handled swipe sets
-      // a flag that the close handler consumes instead of zooming out.
-      var sx = 0,
-        sy = 0,
-        tracking = false,
-        swiped = false;
-      frame.addEventListener("pointerdown", function (e) {
-        if (!frame.classList.contains("is-zoomed")) return;
-        sx = e.clientX;
-        sy = e.clientY;
-        tracking = true;
-        swiped = false;
-      });
-      frame.addEventListener("pointercancel", function () {
-        tracking = false;
-      });
-      frame.addEventListener("pointerup", function (e) {
-        if (!tracking) return;
-        tracking = false;
-        var dx = e.clientX - sx;
-        var dy = e.clientY - sy;
-        if (Math.abs(dx) > SWIPE && Math.abs(dx) > Math.abs(dy)) {
-          swiped = true;
-          step(dx < 0 ? 1 : -1);
-        }
-      });
-      out.addEventListener("click", function () {
-        if (swiped) {
-          swiped = false;
-          return;
-        }
-        close();
-      });
     });
 
-    function composite(frame) {
-      return frame.querySelector("img:not(.den-sharp)");
+    for (var dotIndex = 0; dotIndex < 4; dotIndex++) {
+      var dot = document.createElement("button");
+      dot.type = "button";
+      dot.className = "den-lightbox__dot";
+      dot.setAttribute("aria-label", "Panel " + (dotIndex + 1));
+      dot.addEventListener(
+        "click",
+        (function (n) {
+          return function () {
+            if (active === null) return;
+            var firstInStrip = active - (panels[active].n - 1);
+            render(firstInStrip + n, false);
+          };
+        })(dotIndex),
+      );
+      dots.appendChild(dot);
     }
 
-    function clear(p) {
-      var frame = p.frame;
-      frame.classList.remove("is-zoomed");
-      composite(frame).style.transform = "";
-      frame.querySelector(".den-sharp").style.opacity = "0";
-      p.label.hidden = true;
+    function ensureImageLayers() {
+      if (imageLayers.length) return;
+      for (var i = 0; i < 2; i++) {
+        var image = document.createElement("img");
+        image.className = "den-lightbox__image";
+        image.width = 800;
+        image.height = 800;
+        image.decoding = "async";
+        imageShell.insertBefore(image, tapPrevious);
+        imageLayers.push(image);
+      }
     }
 
-    // Pull the whole strip's panels into cache on first zoom, so stepping
-    // through it never waits on the network.
-    function warm(p) {
-      if (p.strip.dataset.warm) return;
-      p.strip.dataset.warm = "1";
-      (byNum[String(p.num)].panels || []).forEach(function (f) {
-        new Image().src = f;
+    var preloaded = {};
+    function preload(index) {
+      if (index < 0 || index >= panels.length) return;
+      var file = panels[index].file;
+      if (!file || preloaded[file]) return;
+      preloaded[file] = true;
+      new Image().src = file;
+    }
+
+    function panelTitle(p) {
+      return "#" + p.num + " — " + p.entry.title;
+    }
+
+    function stripAnchor(p) {
+      return panelTitle(p)
+        .toLowerCase()
+        .replace(/[^a-z0-9\s-]/g, "")
+        .replace(/\s/g, "-")
+        .replace(/^-+|-+$/g, "");
+    }
+
+    function showBoundary(p) {
+      window.clearTimeout(boundaryTimer);
+      stripChange.classList.remove("is-visible");
+      stripChange.textContent = panelTitle(p);
+      window.requestAnimationFrame(function () {
+        stripChange.classList.add("is-visible");
       });
+      boundaryTimer = window.setTimeout(function () {
+        stripChange.classList.remove("is-visible");
+      }, 600);
     }
 
-    function zoomTo(index, scroll) {
-      if (index < 0) index = panels.length - 1;
-      if (index >= panels.length) index = 0;
-      var p = panels[index];
-      if (active !== null && panels[active].frame !== p.frame) {
-        clear(panels[active]);
+    function showImage(p) {
+      ensureImageLayers();
+      var current = imageLayers[currentLayer];
+      if (
+        current.classList.contains("is-current") &&
+        current.getAttribute("src") === p.file
+      ) {
+        current.alt = "The Den #" + p.num + ", panel " + p.n + " of 4";
+        return;
       }
+
+      var targetIndex = current.getAttribute("src") ? 1 - currentLayer : currentLayer;
+      var target = imageLayers[targetIndex];
+      var token = ++imageToken;
+
+      imageLayers.forEach(function (image) {
+        image.classList.remove("is-current", "is-outgoing");
+        image.alt = "";
+      });
+      if (current.getAttribute("src")) current.classList.add("is-outgoing");
+
+      target.alt = "The Den #" + p.num + ", panel " + p.n + " of 4";
+      target.onload = function () {
+        if (token !== imageToken) return;
+        target.classList.add("is-current");
+        current.classList.remove("is-outgoing");
+        currentLayer = targetIndex;
+      };
+      target.setAttribute("src", p.file);
+      if (target.complete && target.naturalWidth) target.onload();
+    }
+
+    function render(index, announceBoundary) {
+      if (index < 0 || index >= panels.length) return;
       active = index;
-      warm(p);
+      var p = panels[active];
+      var label = panelTitle(p);
 
-      // The animation: scale until the panel's width is the window's, then
-      // slide its top-left corner to the window's.
-      var scale = 100 / p.rect.side;
-      composite(p.frame).style.transform =
-        "scale(" +
-        scale.toFixed(4) +
-        ") translate(" +
-        (-p.rect.x).toFixed(3) +
-        "%," +
-        (-p.rect.y).toFixed(3) +
-        "%)";
-      p.frame.classList.add("is-zoomed");
-      p.label.hidden = false;
-      p.label.textContent = "#" + p.num + " · panel " + p.n + " of 4";
+      title.textContent = label;
+      lightbox.setAttribute("aria-label", "Panel viewer: " + label);
+      counter.textContent = "panel " + p.n + " of 4";
+      date.textContent = p.entry.date;
+      stripLink.href = "/the-den#" + stripAnchor(p);
+      previousButton.disabled = active === 0;
+      nextButton.disabled = active === panels.length - 1;
+      tapPrevious.disabled = active === 0;
+      tapNext.disabled = active === panels.length - 1;
 
-      // The destination: this panel's own file, cut at its border rect.
-      var sharp = p.frame.querySelector(".den-sharp");
-      if (!p.file) {
-        sharp.style.opacity = "0";
-      } else if (sharp.getAttribute("src") !== p.file) {
-        sharp.style.opacity = "0"; // the load handler reveals it
-        sharp.setAttribute("src", p.file);
-      } else if (sharp.complete && sharp.naturalWidth) {
-        sharp.style.opacity = "1";
-      }
+      dots.querySelectorAll(".den-lightbox__dot").forEach(function (button, i) {
+        if (i === p.n - 1) {
+          button.setAttribute("aria-current", "true");
+        } else {
+          button.removeAttribute("aria-current");
+        }
+      });
 
-      if (scroll) {
-        p.frame.scrollIntoView({
-          block: "center",
-          behavior: reduce ? "auto" : "smooth",
-        });
-      }
+      showImage(p);
+      preload(active - 1);
+      preload(active + 1);
+      if (announceBoundary) showBoundary(p);
+    }
+
+    function open(index, trigger) {
+      window.clearTimeout(closeTimer);
+      opener = trigger;
+      lightbox.hidden = false;
+      document.documentElement.classList.add("den-lightbox-open");
+      document.body.classList.add("den-lightbox-open");
+      render(index, false);
+      window.requestAnimationFrame(function () {
+        lightbox.classList.add("is-open");
+      });
+      closeButton.focus({ preventScroll: true });
     }
 
     function step(delta) {
       if (active === null) return;
       var next = active + delta;
-      var changesStrip =
-        next < 0 ||
-        next >= panels.length ||
-        panels[(next + panels.length) % panels.length].frame !==
-          panels[active].frame;
-      zoomTo(next, changesStrip);
+      if (next < 0 || next >= panels.length) return;
+      var changesStrip = panels[next].num !== panels[active].num;
+      render(next, changesStrip);
     }
 
     function close() {
       if (active === null) return;
-      var p = panels[active];
-      clear(p);
       active = null;
-      p.hit.focus({ preventScroll: true });
+      imageToken++;
+      window.clearTimeout(boundaryTimer);
+      stripChange.classList.remove("is-visible");
+      lightbox.classList.remove("is-open");
+      document.documentElement.classList.remove("den-lightbox-open");
+      document.body.classList.remove("den-lightbox-open");
+      closeTimer = window.setTimeout(
+        function () {
+          lightbox.hidden = true;
+          if (opener) opener.focus({ preventScroll: true });
+        },
+        reduce ? 0 : 180,
+      );
+    }
+
+    closeButton.addEventListener("click", close);
+    previousButton.addEventListener("click", function () {
+      step(-1);
+    });
+    nextButton.addEventListener("click", function () {
+      step(1);
+    });
+
+    var suppressTapUntil = 0;
+    tapPrevious.addEventListener("click", function () {
+      if (Date.now() >= suppressTapUntil) step(-1);
+    });
+    tapNext.addEventListener("click", function () {
+      if (Date.now() >= suppressTapUntil) step(1);
+    });
+
+    var startX = 0;
+    var startY = 0;
+    var tracking = false;
+    imageShell.addEventListener("pointerdown", function (e) {
+      startX = e.clientX;
+      startY = e.clientY;
+      tracking = true;
+    });
+    imageShell.addEventListener("pointercancel", function () {
+      tracking = false;
+    });
+    imageShell.addEventListener("pointerup", function (e) {
+      if (!tracking) return;
+      tracking = false;
+      var dx = e.clientX - startX;
+      var dy = e.clientY - startY;
+      if (Math.abs(dx) > SWIPE && Math.abs(dx) > Math.abs(dy)) {
+        suppressTapUntil = Date.now() + 400;
+        step(dx < 0 ? 1 : -1);
+      }
+    });
+
+    lightbox.addEventListener("click", function (e) {
+      if (e.target === lightbox || e.target === dialog || e.target === lightbox.querySelector(".den-lightbox__stage")) {
+        close();
+      }
+    });
+
+    function focusable() {
+      return Array.prototype.filter.call(
+        lightbox.querySelectorAll(
+          'button:not([disabled]):not([tabindex="-1"]), a[href]',
+        ),
+        function (element) {
+          return element.offsetParent !== null;
+        },
+      );
     }
 
     document.addEventListener("keydown", function (e) {
@@ -543,6 +845,19 @@ That is the `GRID` constant at the top of the script, and it is now cosmetic in 
         step(1);
       } else if (e.key === "ArrowLeft") {
         step(-1);
+      } else if (e.key === "Tab") {
+        var controls = focusable();
+        if (!controls.length) return;
+        var first = controls[0];
+        var last = controls[controls.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          last.focus();
+          e.preventDefault();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          first.focus();
+          e.preventDefault();
+        }
+        return;
       } else {
         return;
       }
