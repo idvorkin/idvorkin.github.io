@@ -9,7 +9,7 @@ number per thing; nothing here is stylistic.
 
 - **1600 x 1600 px**, square, opaque. Ship as webp, quality 90.
 - Page ground behind and between the panels: warm cream **#F7F0D4** (sampled
-  from den-004). A viewer that letterboxes should letterbox in this colour.
+  from den-004). A viewer that letterboxes should letterbox in this color.
 
 ## Grid
 
@@ -58,14 +58,14 @@ hits the contract.
 
 As fractions of the canvas: x and y are **0.02** or **0.51**; w and h are
 both **0.47**. A viewer that scales the whole strip so one panel fills a square
-window uses **scale = 1 / 0.47 = 2.1277**. (The viewer at /den-viewer no
-longer computes rects at all: it shows the pre-cut panel files listed in
+window uses **scale = 1 / 0.47 = 2.1277**. (The viewer on `/the-den` does not
+compute rects at all: it shows the pre-cut panel files listed in
 `_data/den.json`. The scale matters only for the composite-to-panel zoom
 animation.)
 
 **Tolerance: +/- 8 px per edge.** A generated strip passes if every measured
-panel edge is within 8 px of the contract; the viewer still crops at the
-contract rect. Outside 8 px, regenerate or hard-crop to the contract before
+panel edge is within 8 px of the contract. The viewer shows the pre-cut panel
+exports. Outside 8 px, regenerate or hard-crop to the contract before
 publishing.
 
 **Measuring method** (how the table above was produced, and how to verify a new
@@ -117,9 +117,8 @@ Every strip also ships its four panels as separate files:
 
 - **800 x 800 px** each, webp quality 90.
 - Cropped at the panel rect (752 x 752, border included) and resized to 800.
-- The viewer **prefers the panel file** when it exists and falls back to a CSS
-  transform on the full strip using the fractions above. Because the panel file
-  is the same crop the transform produces, switching between them shows no jump.
+- The viewer uses these panel files for steps 1–4, then uses the 1600 x 1600
+  composite for the final full-strip step.
 
 Contract strips — in practice run `gutter/cut-panels.py <strip>`, which finds
 each panel's own border and pulls the crop in by the stroke's antialiased outer
