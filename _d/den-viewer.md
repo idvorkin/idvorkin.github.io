@@ -27,33 +27,24 @@ Nothing here is final. It is the interaction on its own, so it can be argued wit
 
 <style>
   .den-viewer {
-    --den-fg: #1a1a1a;
     --den-bg: rgba(255, 255, 255, 0.92);
-    --den-line: rgba(0, 0, 0, 0.18);
     --den-ring: #0b5ed7;
-    --den-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     max-width: 820px;
     margin: 0 auto;
   }
 
   @media (prefers-color-scheme: dark) {
     .den-viewer {
-      --den-fg: #f2f2f2;
       --den-bg: rgba(28, 28, 30, 0.92);
-      --den-line: rgba(255, 255, 255, 0.24);
       --den-ring: #6ea8fe;
-      --den-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
     }
   }
 
   /* The site is light-only today; this keeps the viewer correct if a
      Bootstrap theme switch ever lands. */
   [data-bs-theme="dark"] .den-viewer {
-    --den-fg: #f2f2f2;
     --den-bg: rgba(28, 28, 30, 0.92);
-    --den-line: rgba(255, 255, 255, 0.24);
     --den-ring: #6ea8fe;
-    --den-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
   }
 
   .den-hint {
@@ -157,67 +148,68 @@ Nothing here is final. It is the interaction on its own, so it can be argued wit
     pointer-events: auto;
   }
 
-  .den-badge {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    padding: 5px 11px;
-    border-radius: 999px;
-    font:
-      600 13px/1.2 system-ui,
-      -apple-system,
-      sans-serif;
-    color: var(--den-fg);
-    background: var(--den-bg);
-    border: 1px solid var(--den-line);
-    box-shadow: var(--den-shadow);
-  }
-
   .den-nav,
   .den-close {
     position: absolute;
-    min-width: 44px;
-    min-height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    border: 1px solid var(--den-line);
-    background: var(--den-bg);
-    color: var(--den-fg);
-    box-shadow: var(--den-shadow);
+    padding: 0;
+    border: 0;
+    background: rgba(0, 0, 0, 0.04);
+    color: rgba(0, 0, 0, 0.35);
     cursor: pointer;
     line-height: 1;
     font-family: system-ui, -apple-system, sans-serif;
   }
 
+  .den-nav:hover,
+  .den-nav:focus-visible,
+  .den-nav:active,
+  .den-close:hover,
+  .den-close:focus-visible,
+  .den-close:active {
+    background: rgba(0, 0, 0, 0.15);
+    color: rgba(0, 0, 0, 0.9);
+  }
+
   .den-nav {
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 26px;
-    padding-bottom: 3px;
+    top: 0;
+    bottom: 0;
+    width: 25%;
+    border-radius: 0;
+    font-size: 38px;
   }
 
   .den-prev {
-    left: 8px;
+    left: 0;
   }
 
   .den-next {
-    right: 8px;
+    right: 0;
   }
 
   .den-close {
     right: 8px;
     top: 8px;
+    min-width: 44px;
+    min-height: 44px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 50%;
     font-size: 22px;
   }
 
-  .den-nav:focus-visible,
+  .den-nav:focus-visible {
+    outline: 3px solid var(--den-ring);
+    outline-offset: -3px;
+  }
+
   .den-close:focus-visible {
     outline: 3px solid var(--den-ring);
     outline-offset: 2px;
   }
 
+  .den-panel-label,
   .den-strip figcaption {
     font-size: 0.85em;
     opacity: 0.75;
@@ -255,7 +247,7 @@ images/den/den-00N-p1.webp   panel 1, 800x800
    …-p2.webp  …-p3.webp  …-p4.webp
 ```
 
-Each panel is cut at its own border rect — the 8px frame line is drawn _inside_ that rect, so the crop keeps the frame and never touches the neighbour — then resized to 800x800 at quality 90. That is a real 800px image rather than a quarter of a 1600px square upscaled, which is the whole point on a phone.
+Each panel is cut at its own border rect — the 8px frame line is drawn _inside_ that rect, so the crop keeps the frame and never touches the neighbor — then resized to 800x800 at quality 90. That is a real 800px image rather than a quarter of a 1600px square upscaled, which is the whole point on a phone.
 
 Strips #1–#4 predate the grid contract below and were measured one at a time for the cut. That measurement happened once, offline. None of it is in this page.
 
@@ -341,6 +333,11 @@ That is the `GRID` constant at the top of the script, and it is now cosmetic in 
       var files = entry.panels || [];
       var frame = strip.querySelector(".den-frame");
       var num = entry.num;
+      var panelLabel = document.createElement("div");
+      panelLabel.className = "den-panel-label";
+      panelLabel.hidden = true;
+      panelLabel.setAttribute("aria-live", "polite");
+      frame.insertAdjacentElement("afterend", panelLabel);
 
       for (var i = 0; i < 4; i++) {
         var rect = {
@@ -378,6 +375,7 @@ That is the `GRID` constant at the top of the script, and it is now cosmetic in 
           num: num,
           hit: hit,
           file: files[i] || null,
+          label: panelLabel,
         });
       }
 
@@ -404,7 +402,6 @@ That is the `GRID` constant at the top of the script, and it is now cosmetic in 
       var ui = document.createElement("div");
       ui.className = "den-ui";
       ui.innerHTML =
-        '<span class="den-badge"></span>' +
         '<button type="button" class="den-nav den-prev" aria-label="Previous panel">‹</button>' +
         '<button type="button" class="den-nav den-next" aria-label="Next panel">›</button>' +
         '<button type="button" class="den-close" aria-label="Close zoom">×</button>';
@@ -457,10 +454,12 @@ That is the `GRID` constant at the top of the script, and it is now cosmetic in 
       return frame.querySelector("img:not(.den-sharp)");
     }
 
-    function clear(frame) {
+    function clear(p) {
+      var frame = p.frame;
       frame.classList.remove("is-zoomed");
       composite(frame).style.transform = "";
       frame.querySelector(".den-sharp").style.opacity = "0";
+      p.label.hidden = true;
     }
 
     // Pull the whole strip's panels into cache on first zoom, so stepping
@@ -478,7 +477,7 @@ That is the `GRID` constant at the top of the script, and it is now cosmetic in 
       if (index >= panels.length) index = 0;
       var p = panels[index];
       if (active !== null && panels[active].frame !== p.frame) {
-        clear(panels[active].frame);
+        clear(panels[active]);
       }
       active = index;
       warm(p);
@@ -495,8 +494,8 @@ That is the `GRID` constant at the top of the script, and it is now cosmetic in 
         (-p.rect.y).toFixed(3) +
         "%)";
       p.frame.classList.add("is-zoomed");
-      p.frame.querySelector(".den-badge").textContent =
-        "#" + p.num + " · panel " + p.n + " of 4";
+      p.label.hidden = false;
+      p.label.textContent = "#" + p.num + " · panel " + p.n + " of 4";
 
       // The destination: this panel's own file, cut at its border rect.
       var sharp = p.frame.querySelector(".den-sharp");
@@ -531,7 +530,7 @@ That is the `GRID` constant at the top of the script, and it is now cosmetic in 
     function close() {
       if (active === null) return;
       var p = panels[active];
-      clear(p.frame);
+      clear(p);
       active = null;
       p.hit.focus({ preventScroll: true });
     }
