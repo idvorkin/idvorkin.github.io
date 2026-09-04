@@ -38,6 +38,7 @@ lettering. No `--transparent` — comics are opaque pages.
 | `images/raccoon-larry.webp`          | Larry character canon (beard, claw, waistcoat, crocs)                                |
 | `images/raccoon-nerd.webp`           | Igor character canon (rainbow glasses, TECHNOLOGIST tee, mismatched crocs)           |
 | `images/larry-claw-ref.png`          | the claw, attached — attach on every Larry panel                                     |
+| `images/raccoon-gutter.webp`         | Gutter character canon (charcoal fur, squint, ink apron, THE BOARD)                  |
 
 The armchair image was the addition that mattered. `raccoon-larry.webp` is a
 transparent full-body toy shot; it locks the _character_ but says nothing about
