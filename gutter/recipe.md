@@ -120,7 +120,9 @@ Some models fight the 2x2 grid — margins wander, borders thin out, lettering
 shrinks to fit four scenes into one canvas. Don't argue with them. Generate each
 panel on its own as a full-bleed square, no grid and no border, with the canon
 refs plus the matching panel of an existing strip (`den-00N-pN.webp`) as a
-staging ref, then composite onto the cream page at the contract geometry:
+staging ref (`gutter/render-muse.py <prompt.txt> <stem> <ref…>` makes the call —
+OpenRouter by default, `--provider meta` for Meta's own API), then composite
+onto the cream page at the contract geometry:
 
 ```bash
 magick -size 1600x1600 xc:'#F7F0D4' \
@@ -153,11 +155,17 @@ the anchors that beat needs plus the staging ref, and the panel prompt stops
 describing canon and starts pointing at it.
 
 The cookbook chains its anchors through one conversation with
-`previous_response_id`. We cannot — OpenRouter's Image API is one request, one
-image, no server state — so the anchors ride as `input_references` on every
-call, which the cookbook itself sanctions for art made elsewhere. What the
-conversation gave for free was _knowing which subject is which_. Statelessly
-you have to say so, by position:
+`previous_response_id`, and Meta's own Model API can (`--provider meta` on
+`gutter/render-muse.py`; same model, same $0.01 an image). Measured head to
+head on Den #7, 2026-09-04 — three chains of four panels against the
+named-refs arm, read at full resolution — chaining did **not** beat named
+references: set continuity and recurring-character continuity tied at 3/3,
+the attached claw fell to 1/3 against 3/3, four of nine chained panels drew a
+"speech balloon" as a party balloon on a string, and the close-up beat lost the
+alley plate 0/3 against 3/3. So the anchors ride as `input_references` on
+every call — the cookbook itself sanctions this for art made elsewhere. What
+the conversation gave for free was _knowing which subject is which_.
+Statelessly you have to say so, by position:
 
 > ATTACHED REFERENCE IMAGES — READ THIS FIRST, IN ORDER. REFERENCE 1 is the
 > character anchor sheet for LARRY. That plush raccoon IS Larry. Reproduce him
@@ -197,6 +205,19 @@ construction, and lettering stays in the panel prompt — in-panel balloons came
 out verbatim and correctly placed in 16/16 panels, and a second text pass over
 art that already passed is where dialogue goes wrong. Their per-beat `size`
 has nothing to vary against a four-square contract.
+
+**When Meta direct is worth it: one refine turn on a panel that is nearly
+right.** Chain a turn off the panel's own response id (`--prev-from <stem>`)
+saying what to change and that nothing else changes. Three such turns on
+2026-09-04 kept everything they were not asked to touch — lettering included —
+and landed every text and pose fix (a doubled word, a wrong mug word, paws
+lowered off the shirt) while landing none of the structural ones (a party
+balloon back into a speech balloon, twice; a loose claw onto the arm). That is
+the whole case for server state; never build a strip as a chain. Two traps:
+Meta's input filter is stochastic and tightens with every attached image (the
+Larry sheet passed at zero and one refs and was refused at two and three —
+retry once, then drop a ref before rewording), and a beat OpenRouter refuses,
+Meta refuses too.
 
 ## Cutouts
 
