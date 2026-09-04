@@ -38,6 +38,8 @@ lettering. No `--transparent` — comics are opaque pages.
 | `images/raccoon-larry.webp`          | Larry character canon (beard, claw, waistcoat, crocs)                                |
 | `images/raccoon-nerd.webp`           | Igor character canon (rainbow glasses, TECHNOLOGIST tee, mismatched crocs)           |
 | `images/larry-claw-ref.png`          | the claw, attached — attach on every Larry panel                                     |
+| `images/larry-anchor-sheet.webp`     | Larry **anchor sheet** — the best single Larry ref; see "Anchored generation"        |
+| `images/igor-anchor-sheet.webp`      | Igor **anchor sheet** — the only ref with TECHNOLOGIST spelled right and legible     |
 
 The armchair image was the addition that mattered. `raccoon-larry.webp` is a
 transparent full-body toy shot; it locks the _character_ but says nothing about
@@ -49,6 +51,15 @@ and character separately.
 showing nothing but the claw joined to the sleeve. Every model tried so far
 draws it as a loose prop on the desk or as a second claw; a close-up of the
 join is the cheapest way to say _attached_. Add it whenever Larry is in frame.
+
+The two **anchor sheets** are Muse renders of Larry and Igor alone on a plain
+warm-grey backdrop, made by the pass described under "Anchored generation"
+below. They beat the transparent toy shots at the two things that keep
+shipping broken: `larry-anchor-sheet.webp` shows one claw joined at the sleeve
+on the correct arm _with_ the paired pencil-holding paw, all in one picture and
+already in the house style; `igor-anchor-sheet.webp` is the only ref anywhere
+in which "TECHNOLOGIST" is spelled correctly and fully legible. Prefer them as
+the character refs; keep the older ones attached alongside.
 
 **Do not use `den-002.webp` as the style ref** — #2 is the flat 2D line-art
 version. #1 has both a flat and a `-plush` variant. Only #3 and
@@ -109,7 +120,9 @@ Some models fight the 2x2 grid — margins wander, borders thin out, lettering
 shrinks to fit four scenes into one canvas. Don't argue with them. Generate each
 panel on its own as a full-bleed square, no grid and no border, with the canon
 refs plus the matching panel of an existing strip (`den-00N-pN.webp`) as a
-staging ref, then composite onto the cream page at the contract geometry:
+staging ref (`gutter/render-muse.py <prompt.txt> <stem> <ref…>` makes the call —
+OpenRouter by default, `--provider meta` for Meta's own API), then composite
+onto the cream page at the contract geometry:
 
 ```bash
 magick -size 1600x1600 xc:'#F7F0D4' \
@@ -123,10 +136,88 @@ magick -size 1600x1600 xc:'#F7F0D4' \
 Geometry passes by construction, and each panel gets the model's whole attention:
 Muse landed the attached claw, the raccoon kits, both wall posters and legible
 shirt text in one pass this way, having missed all four across six
-page-at-a-time spins. The trade is continuity — characters drift between panels
-(the mugger's face changed between 1 and 3), so the staging ref carries the
-weight and recurring faces want a look before shipping. Igor, on the Den #7
-comparison: "much better results."
+page-at-a-time spins. Igor, on the Den #7 comparison: "much better results."
+
+The trade is continuity — four independent calls have no idea they are one
+strip. That is what the anchor pass below is for.
+
+### Anchored generation
+
+_From Meta's cookbook (`05_muse_image/03_anchored_generation`), translated to
+our stateless API and measured on Den #7 panels 1 and 4, 2026-09-03._
+
+Before drawing any panel, generate the **anchors**: one character sheet per
+character in the strip, and one character-free background plate per recurring
+set. One figure, plain warm-grey backdrop, described precisely, house style
+words repeated, nothing else in frame. They run in parallel and cost $0.01
+each; five of them came back clean on the first try. Then every panel attaches
+the anchors that beat needs plus the staging ref, and the panel prompt stops
+describing canon and starts pointing at it.
+
+The cookbook chains its anchors through one conversation with
+`previous_response_id`, and Meta's own Model API can (`--provider meta` on
+`gutter/render-muse.py`; same model, same $0.01 an image). Measured head to
+head on Den #7, 2026-09-04 — three chains of four panels against the
+named-refs arm, read at full resolution — chaining did **not** beat named
+references: set continuity and recurring-character continuity tied at 3/3,
+the attached claw fell to 1/3 against 3/3, four of nine chained panels drew a
+"speech balloon" as a party balloon on a string, and the close-up beat lost the
+alley plate 0/3 against 3/3. So the anchors ride as `input_references` on
+every call — the cookbook itself sanctions this for art made elsewhere. What
+the conversation gave for free was _knowing which subject is which_.
+Statelessly you have to say so, by position:
+
+> ATTACHED REFERENCE IMAGES — READ THIS FIRST, IN ORDER. REFERENCE 1 is the
+> character anchor sheet for LARRY. That plush raccoon IS Larry. Reproduce him
+> exactly as he is drawn there and change nothing about him: … Only his pose
+> changes. REFERENCE 3 is the background plate for the fixed set named THE
+> ALLEY. That IS the location of this panel. Reproduce it exactly: … REFERENCE
+> 4 is the corresponding panel of an earlier version of this strip. It is a
+> STAGING reference only: take its composition, camera height and balloon
+> placement and nothing else. Where it disagrees with references 1-3 about how
+> a character or the set looks, references 1-3 win.
+
+Measured against the un-anchored per-panel method on the same two beats, same
+model, three spins each: the claw came out **attached in 3/3 anchored spins
+against 2/3**, the set matched the plate in **3/3 against 0/3**, and the
+recurring mugger was the same character across spins in **3/3 against 0/3** —
+where the un-anchored arm drew three visibly different badgers. Mug lettering
+went 3/3 against 2/3. And the anchored panel prompt is **half the length**
+(3.4 KB against 7.0 KB), because the canon prose moved onto the sheet.
+
+Two things this buys that nothing else has: fix a canon defect once, on a
+1024 px sheet with one figure in it, instead of four times in four busy
+panels — and both of the standing text failures (TECHNOLOGIST, the mug words)
+came out clean the moment they were the only thing in the frame.
+
+**Name the references or they are wasted.** And name them individually:
+montaging three anchors into one side-by-side "reference row" — the cookbook's
+own `00_reference_row` — scored worse than passing them separately on every
+axis (0/2 set match, 1/2 attached claw, 0/2 legible tee) and copied a garbled
+poster and a stray frame border off the staging ref. Four discrete named
+references beat two references one of which packs three. Muse is not running
+out of attention at four; it is running out of names.
+
+**Do not adopt the rest of that chapter.** Its compose-the-page turn and its
+letter-the-page turn both depend on the conversation already holding the
+panels. We composite with `magick` at contract geometry, which passes by
+construction, and lettering stays in the panel prompt — in-panel balloons came
+out verbatim and correctly placed in 16/16 panels, and a second text pass over
+art that already passed is where dialogue goes wrong. Their per-beat `size`
+has nothing to vary against a four-square contract.
+
+**When Meta direct is worth it: one refine turn on a panel that is nearly
+right.** Chain a turn off the panel's own response id (`--prev-from <stem>`)
+saying what to change and that nothing else changes. Three such turns on
+2026-09-04 kept everything they were not asked to touch — lettering included —
+and landed every text and pose fix (a doubled word, a wrong mug word, paws
+lowered off the shirt) while landing none of the structural ones (a party
+balloon back into a speech balloon, twice; a loose claw onto the arm). That is
+the whole case for server state; never build a strip as a chain. Two traps:
+Meta's input filter is stochastic and tightens with every attached image (the
+Larry sheet passed at zero and one refs and was refused at two and three —
+retry once, then drop a ref before rewording), and a beat OpenRouter refuses,
+Meta refuses too.
 
 ## Cutouts
 
@@ -223,11 +314,22 @@ isn't in the viewer.
   count: "the claw is the END of Larry's LEFT ARM, joined to his sleeve at the
   wrist — never a loose red object lying on the desk." Held in every rerun.
 
+- **The claw lands on the wrong arm, and a correct reference does not fix it.**
+  Canon is the LEFT arm. Across 8 spins in three different reference
+  strategies — including three that attached an anchor sheet showing the claw
+  correctly on his left — it came out on the viewer's left, i.e. his right,
+  **8 times out of 8**. Chirality is not a prompt bug and not a reference bug;
+  the model mirrors. The options are to flop the finished panel, to stage Larry
+  in profile so the side is unreadable, or to move canon to the arm the model
+  draws. Igor's call; flagged, not fixed.
 - **Matched crocs.** Larry drifts to two yellow Crocs. Same paragraph now
   restates "one BLUE and one YELLOW — never two of the same color." Partial fix.
 - **Shirt text drops or garbles** on small/background figures ("TECHNOLOGST",
-  "EDINOLOGIST", or blank). Unfixed. It is legible in whichever panel Igor is
-  foregrounded, which is enough — but don't stage him small in every panel.
+  "EDINOLOGIST", or blank). Unfixed in a busy panel, and it is legible in
+  whichever panel Igor is foregrounded — so don't stage him small in every
+  panel. It _is_ fixed in isolation: on a one-figure anchor sheet the word
+  comes out spelled and legible, which is why `igor-anchor-sheet.webp` exists
+  and why the anchor pass is worth its $0.01.
 - **Cinematic framing amputates the character.** Asking for an
   over-the-shoulder shot in panel 1 cropped Larry's head — and his head is where
   the beard is, i.e. the whole point of the redo. Fix: any "cinematic angle"
@@ -236,8 +338,14 @@ isn't in the viewer.
 - **`0` renders as `O`** in "NUDGES 3. GYM 0." Present in the original draft too.
   Not worth another spin; if it matters, write "GYM: ZERO."
 - **Meta Muse Image refuses a prompt with a knife-point mugging** about one time
-  in four. Retry once identically — that usually passes. If it refuses twice,
-  soften the knife rather than rewriting the scene.
+  in four. Retry once identically — that usually passes. **If it keeps
+  refusing, the problem is the reference set, not the wording.** An anchor
+  sheet of an _armed_ character is filter bait on every panel that attaches it:
+  the same mugging beat went 0 refusals in 3 with the knife in prose only, and
+  1 pass in 6 once the armed anchor sheet was attached. Softening the knife
+  wording refused 2/2 more. Regenerating the anchor sheet with **empty paws**,
+  dialogue untouched, passed 2/2. Keep weapons off anchor sheets and draw the
+  prop in the panel prompt.
 - **A supplied source image drags the panel grid off contract.** When the brief
   is "clone this", the source belongs in the ref stack, attached last, under an
   explicit "staging only, its flat rendering is wrong" block — that block held
