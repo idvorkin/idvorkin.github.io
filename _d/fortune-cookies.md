@@ -85,7 +85,7 @@ Your shoes feel uncomfortable until you meet the man with no feet. It's life in 
 
 {% include youtube_float_left.html src="ew6FNxCOVJk" %}
 
-You are going to rust out before you wear out. What does this mean? So, if you're from a state where it snows, you know they put salt on the roads and that salt, it rusts the car and eventually the whole body falls out. In human terms, you croak. So, that's what it means to rust out. You're done. People hold back. They think, "I'm too old. What if I get hurt?" But here's the truth. It's not enough time long before you rust away from doing too much. You still have to do it safely, but do it. Keep moving. Keep living.
+You are going to rust out before you wear out. What does this mean? So, if you're from a state where it snows, you know they put salt on the roads and that salt, it rusts the car and eventually the whole body falls apart. In human terms, you croak. So, that's what it means to rust out. You're done. People hold back. They think, "I'm too old. What if I get hurt?" But here's the truth. You'll rust away from doing too little long before you wear out from doing too much. You still have to do it safely, but do it. Keep moving. Keep living.
 
 <div style="clear:both"></div>
 
