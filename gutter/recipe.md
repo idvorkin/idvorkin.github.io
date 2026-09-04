@@ -187,8 +187,8 @@ Append one object to `_data/den.json`, newest first:
 }
 ```
 
-`/den-viewer` renders from that file — a strip that isn't in the manifest
-isn't in the viewer.
+The full-screen reader on `/the-den` uses that file — a strip that isn't in
+the manifest has no panel files to open.
 
 ## Failure modes
 
