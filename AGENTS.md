@@ -1,7 +1,12 @@
 Read ClaudeMD on startup.
 After you finish, print "Read ClaudeMD".
 
+## Muse PR reviews
+
+`.github/workflows/muse-review.yml` reviews opened, updated, and reopened PRs and maintains one comment. Its `pull_request_target` job checks out only trusted base code and reads the proposed diff through GitHub's API; with exactly `contents: read` and `pull-requests: write`, its token can comment but cannot push or modify branches. Add `no-ai-review` to opt out. Meta's contributor model is the default, `MUSE_PROVIDER` and `MUSE_MODEL` override it, and contributor-tier prompts and outputs may be used to improve Meta's products.
+
 <!-- BEGIN BEADS INTEGRATION v:1 profile:minimal hash:ca08a54f -->
+
 ## Beads Issue Tracker
 
 This project uses **bd (beads)** for issue tracking. Run `bd prime` to see full workflow context and commands.
@@ -42,10 +47,12 @@ bd close <id>         # Complete work
 7. **Hand off** - Provide context for next session
 
 **CRITICAL RULES:**
+
 - Work is NOT complete until `git push` succeeds
 - NEVER stop before pushing - that leaves work stranded locally
 - NEVER say "ready to push when you are" - YOU must push
 - If push fails, resolve and retry until it succeeds
+
 <!-- END BEADS INTEGRATION -->
 
 ## Landing the Plane (Session Completion)

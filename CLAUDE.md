@@ -42,6 +42,10 @@ Repo-mode distinctions (AI-Tools vs Human-Supervised) and the fork-push workflow
 
 - **Branch off `upstream/main`, not `origin/main`.** The fork (`origin`) lags — PRs merge to `upstream`, and `origin/main` only catches up on the `/up-to-date` fork-sync. Off a stale `origin/main` the PR errors "No commits between". Use `git fetch upstream && git checkout -b <branch> upstream/main`.
 
+### Muse PR reviews
+
+`.github/workflows/muse-review.yml` reviews opened, updated, and reopened PRs and maintains one comment. Its `pull_request_target` job checks out only trusted base code and reads the proposed diff through GitHub's API; with exactly `contents: read` and `pull-requests: write`, its token can comment but cannot push or modify branches. Add `no-ai-review` to opt out. Meta's contributor model is the default, `MUSE_PROVIDER` and `MUSE_MODEL` override it, and contributor-tier prompts and outputs may be used to improve Meta's products.
+
 ### Backlinks index is CI-generated — never commit it
 
 `back-links.json` is **not tracked in git**. `.github/workflows/pages.yml` builds it fresh (`uv run ./build_back_links.py build`) after every Jekyll build on every push to `main`, then ships it in the Pages deploy artifact. Nothing in Jekyll itself consumes the file — no `_plugins`/`_includes`/layout reads it — the browser fetches `/back-links.json` at runtime, so the deployed copy can never go stale and there is nothing to rebuild before opening a PR.
@@ -212,7 +216,7 @@ Drop scratch files (planning docs, content backups) in **`<repo-root>/tmp/`** �
 
 Use Grep/Glob directly on `_d/`, `_posts/`, and `_td/` directories for text search — faster than the blog MCP. For frontmatter metadata queries (tags, dates, incoming/outgoing links), use `/find-content`.
 
-**Topic/semantic queries** ("what posts do I have on X", "related posts", "which posts should cross-link") are answered by the **topics index** — `topics.json` (per-post summary, tags, entities, semantic related-posts, and cross-link gap candidates). How it was built and how to regenerate it (the tagging Workflow + Gemini embeddings) is documented in **[`docs/topics-index.md`](docs/topics-index.md)**.
+**Topic/semantic queries** ("what posts do I have on X", "related posts", "which posts should cross-link") are answered by the **topics index** — `topics.json` (per-post summary, tags, entities, semantic related-posts, and cross-link gap candidates). How it was built and how to regenerate it (the tagging Workflow + Gemini embeddings) is documented in **[`docs/topics-index.md`](https://github.com/idvorkin/idvorkin.github.io/blob/main/docs/topics-index.md)**.
 
 ### Before Creating a New Post
 
