@@ -12,6 +12,13 @@ on:
 
 jobs:
   claude-review:
+    # Fork PRs get no secrets and no OIDC id-token, so the action can never
+    # authenticate there — it failed red on every fork PR (issue #829).
+    # All routine PRs come from the idvorkin-ai-tools fork, so skip those;
+    # the job still runs on same-repo branches. A skipped required check
+    # counts as satisfied. To review fork PRs instead, this would need
+    # pull_request_target (with its security caveats).
+    if: github.event.pull_request.head.repo.full_name == github.repository
     # Optional: Filter by PR author
     # if: |
     #   github.event.pull_request.user.login == 'external-contributor' ||
