@@ -36,6 +36,8 @@ Same fix applies if you edit a heading mid-session and the live `jekyll serve` h
 
 - **Committing `_d/*.md` mid-session:** rebuild `_site` first (`bundle exec jekyll build`) so `anchor-checker` doesn't false-fail on posts merged to `upstream/main` since your last build, then commit with `SKIP=prettier` — the commit-time prettier hook trips a stash-rollback even on clean files, silently aborting the commit. (There used to be a second hook in this `SKIP` list that stamped `back-links.json` on every commit — removed; see "Backlinks index" below.)
 
+- **After every commit, `git status`**: the prettier hook can land the commit and leave its reformatted files unstaged; amend them in with `SKIP=prettier git commit --amend --no-edit`.
+
 ## PR Workflow
 
 Repo-mode distinctions (AI-Tools vs Human-Supervised) and the fork-push workflow live in `~/gits/chop-conventions/dev-inner-loop/repo-modes.md`.
