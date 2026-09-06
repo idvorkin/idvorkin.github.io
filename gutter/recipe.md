@@ -209,10 +209,10 @@ the manifest has no panel files to open.
   _both_ arms — the ref shows the claw prominently and the model reads it as a
   species trait. Fix (appended to the variant block):
 
-  > Larry has EXACTLY ONE lobster claw. His LEFT arm ends in the giant glossy
-  > red lobster claw. His RIGHT hand is an ORDINARY furry brown raccoon paw with
+  > Larry has EXACTLY ONE lobster claw. One arm ends in the giant glossy
+  > red lobster claw. The other hand is an ORDINARY furry brown raccoon paw with
   > fingers — it is NOT red, NOT a claw, NOT a pincer. Never draw two red claws.
-  > The right paw is the one that holds the yellow pencil and writes.
+  > The furry paw is the one that holds the yellow pencil and writes.
 
   This fixed most but not all panels. Symmetric-limb corrections are weak; budget
   a regeneration for them.
@@ -220,7 +220,7 @@ the manifest has no panel files to open.
 - **The claw drawn as a loose prop.** "One claw, never two" fixes the count and
   says nothing about where the claw is; one candidate laid it on the desk as a
   red object beside a two-pawed Larry. Assert the attachment alongside the
-  count: "the claw is the END of Larry's LEFT ARM, joined to his sleeve at the
+  count: "the claw is the END of Larry's arm, joined to his sleeve at the
   wrist — never a loose red object lying on the desk." Held in every rerun.
 
 - **Matched crocs.** Larry drifts to two yellow Crocs. Same paragraph now
@@ -258,16 +258,25 @@ paws in the gym panels. Zero claws is as off-model as two.
 The fix is a checklist that asserts both halves as a pair, and asserts presence
 before it asserts absence:
 
-> 1. LARRY'S LEFT ARM ALWAYS ENDS IN THE GIANT GLOSSY RED LOBSTER CLAW, and that
->    claw must be CLEARLY VISIBLE in EVERY panel where Larry appears — never
->    hidden behind him, never left out, never replaced by a paw. Pose him so the
->    camera sees the red claw: resting on his knee, gripping the edge of the
->    clipboard, or hanging at his side.
-> 2. AT THE SAME TIME, Larry's RIGHT hand is an ORDINARY furry brown raccoon paw
->    … So in every Larry panel: exactly ONE red claw (left) and exactly ONE furry
->    paw (right). Never two red claws. Never zero red claws. Never two furry paws.
+> 1. ONE OF LARRY'S ARMS ALWAYS ENDS IN THE GIANT GLOSSY RED LOBSTER CLAW, and
+>    that claw must be CLEARLY VISIBLE in EVERY panel where Larry appears —
+>    never hidden behind him, never left out, never replaced by a paw. Pose
+>    him so the camera sees the red claw: resting on his knee, gripping the
+>    edge of the clipboard, or hanging at his side.
+> 2. AT THE SAME TIME, Larry's OTHER hand is an ORDINARY furry brown raccoon
+>    paw … So in every Larry panel: exactly ONE red claw and exactly ONE
+>    furry paw. Never two red claws. Never zero red claws. Never two furry
+>    paws.
 
 Full text kept for comparison against the weaker first version.
+
+Which arm the claw lands on is deliberately unspecified (Igor, 2026-09-06:
+"drop the side from canon") — the model gets the claw on the correct arm in
+wide shots but flips it in nearly every close two-shot, and respinning to
+fix the side is what grows a second claw. Nobody notices which arm; two
+claws or zero claws is what reads wrong. Score and flag only the count,
+never the side.
+
 **Generalization: a negative constraint on a body part suppresses the part.
 Always pair "never two X" with "always exactly one X, and it must be
 visible."**

@@ -21,10 +21,12 @@ reading **TECHNOLOGIST** (quote the word exactly in the prompt), denim shorts,
 The bearded Freud-raccoon. **Grey-white beard and moustache** (essential — a
 clean-shaven Larry is not Larry), round wire-rim spectacles, brown tweed
 waistcoat over a white rolled-sleeve shirt, blue denim, ringed tail, wooden
-clipboard and yellow pencil. **Exactly one giant glossy red lobster claw, on
-the LEFT arm; the right hand is an ordinary furry paw and is the hand that
-writes.** Plain brown leather lace-ups or bare paws — **no Crocs on Larry**,
-Crocs are Igor's alone. Calm, dry, kind.
+clipboard and yellow pencil. **Exactly one giant glossy red lobster claw and
+exactly one ordinary furry paw; the furry paw is the hand that writes.**
+Plain brown leather lace-ups or bare paws — **no Crocs on Larry**,
+Crocs are Igor's alone. Calm, dry, kind. Which arm carries the claw is
+deliberately unspecified — never score, flag, or respin a panel for the
+claw being on the "wrong" arm.
 
 - Refs: `images/raccoon-larry.webp` (character canon, transparent) AND
   `images/larry-armchair-session.webp` (Larry already rendered in the house
@@ -33,8 +35,10 @@ Crocs are Igor's alone. Calm, dry, kind.
   hoodie, no whistle, no "coach" costume.
 - Failure modes: two claws (the model reads the claw as a species trait);
   over-correcting deletes the claw entirely. Always assert presence before
-  absence: "ALWAYS exactly one claw, clearly visible, on the left arm" and
-  then "never two". Budget one regeneration per strip for the claw.
+  absence: "ALWAYS exactly one claw, clearly visible" and then "never two".
+  Budget one regeneration per strip for the claw. Do not chase which arm
+  it lands on — nobody notices side, and respinning for it is what grows
+  a second claw.
 
 ## The robots
 
