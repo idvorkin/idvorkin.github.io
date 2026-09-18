@@ -48,6 +48,7 @@ With parallel agents you need to:
 - **Switch between agents instantly** - context-switching friction kills your flow
 - **Talk to whichever agent needs you** without typing commands to navigate there first
 - **Know when something needs attention** without constantly checking
+- **Know what you can afford to spend** - several subscriptions means [managing tokens](/token-management) across them
 
 This is the gap between [Stage 5 (single agent) and Stage 7 (specialized tools)](/how-igor-chops#the-8-stages-of-ai-coding) in the AI coding evolution. The agents themselves are fine. It's the human interface that's the bottleneck.
 
