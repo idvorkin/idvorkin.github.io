@@ -13,7 +13,7 @@ alias:
   - /tokens
 ---
 
-I rent the most expensive brain I can get. That's been my rule for two years and it's still in my [CHOP setup](/how-igor-chops#the-most-expensive-i-can-get). It stopped being the whole answer this year: I can burn through a \$200/month plan without noticing, and the model I actually want runs out before the plan around it does. So now I have several subscriptions plus API keys, and my new problem is routing work across them. Here's my process.
+I rent the most expensive brain I can get. That's been my rule and it's still in my [CHOP setup](/how-igor-chops#the-most-expensive-i-can-get). It stopped being the whole answer: I can burn through a \$200/month plan, and the model I actually want runs out before the plan around it does. So now I have several subscriptions plus API keys, and my new problem is routing work across them. Here's my process.
 
 {% include ai-slop.html percent="80" %}
 
@@ -84,7 +84,7 @@ That's my real run this morning, columns and rows trimmed. Two gotchas:
 - **Codex needs 0.1.45 or newer.** 0.1.44 launched the Codex CLI with an approval flag Codex had retired ([issue #177](https://github.com/kunchenguid/quota-axi/issues/177)).
 - **Grok comes from the consumer subscription**, through xAI's official CLI `@xai-official/grok` — device-code login, works headless. An xAI API key is ignored, since it meters a different product. The look-alike `grok-cli` packages on npm don't write the credential file quota-axi reads.
 
-Worth it for the cost alone: my AI assistant used to spend about 40,000 tokens every time it checked my usage, because the only way to see the numbers was to open a throwaway session and capture the `/usage` dialog. Now it's a one-second subprocess.
+Worth it for the cost alone: my AI assistant was spending about 40,000 tokens every time it checked my usage, because the only way to see the numbers was to open a throwaway session and capture the `/usage` dialog. quota-axi is a one-second subprocess.
 
 ## Step 2: Read Pace, Not Percentage
 
