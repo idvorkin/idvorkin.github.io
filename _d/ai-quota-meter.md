@@ -24,6 +24,7 @@ I rent the most expensive brain I can get. That's been my rule and it's still in
 - [Why Buying the Best Stopped Working](#why-buying-the-best-stopped-working)
 - [Step 1: Measure with quota-axi](#step-1-measure-with-quota-axi)
 - [Step 2: Read Pace, Not Percentage](#step-2-read-pace-not-percentage)
+- [Put It Where You Already Look](#put-it-where-you-already-look)
 - [Step 3: No Subscription? OpenRouter](#step-3-no-subscription-openrouter)
 - [Muse Contributor on Public Repos](#muse-contributor-on-public-repos)
 - [What quota-axi Doesn't See](#what-quota-axi-doesnt-see)
@@ -33,7 +34,7 @@ I rent the most expensive brain I can get. That's been my rule and it's still in
 
 ## Tokens Are Not One Price
 
-OpenRouter's public list today, per million tokens:
+OpenRouter's public list as of September 18, 2026, per million tokens:
 
 <div class="table-responsive small" markdown="1">
 
@@ -73,11 +74,6 @@ npx -y quota-axi --tui
 
 That's my real screen this morning. Every bar is percent **remaining**. The tick on each bar is how much of the window's time is left, so a bar that runs past the tick means I have more quota than time. `q` quits. Drop `--tui` and you get the same numbers as plain text, which is what my agents read.
 
-Two gotchas:
-
-- **Codex needs 0.1.45 or newer.** 0.1.44 launched the Codex CLI with an approval flag Codex had retired ([issue #177](https://github.com/kunchenguid/quota-axi/issues/177)).
-- **Grok comes from the consumer subscription**, through xAI's official CLI `@xai-official/grok` — device-code login, works headless. An xAI API key is ignored, since it meters a different product. The look-alike `grok-cli` packages on npm don't write the credential file quota-axi reads.
-
 Worth it for the cost alone: my AI assistant was spending about 40,000 tokens every time it checked my usage, because the only way to see the numbers was to open a throwaway session and capture the `/usage` dialog. quota-axi is a one-second subprocess.
 
 ## Step 2: Read Pace, Not Percentage
@@ -94,6 +90,18 @@ Subscription windows are use-it-or-lose-it. Two of those three were about to res
 
 Look at percent remaining alone and you'd read 69, 76, 65 and pick the biggest one. That's backwards.
 
+## Put It Where You Already Look
+
+The same numbers are now a page in [my Cockpit](/ai-cockpit), the phone-sized dashboard [Larry built me](/larry-cockpit), so I see them without running anything.
+
+{% include repo_image.html src="cockpit-usage.webp" %}
+
+- **One line per window** — bar is quota left, tick is time left, same as the TUI
+- **SPEND** — resets within 24 hours with more than half unspent. Codex and Grok, today.
+- **ElevenLabs too** — quota-axi doesn't cover it, so the page asks ElevenLabs directly
+
+The server runs `quota-axi --json` and caches it for a minute. That's the whole integration.
+
 ## Step 3: No Subscription? OpenRouter
 
 For anything I don't have a sub for, [OpenRouter](/ai-speed-vs-thinking). One key, every model, pay per token, no commitment. I used to collect an API key per provider every time I wanted to try something new. Now I don't.
@@ -102,15 +110,9 @@ For anything I don't have a sub for, [OpenRouter](/ai-speed-vs-thinking). One ke
 
 What a great deal Muse contributor is. If you're not using it on your GitHub Actions, oh my god, you should. Such high intelligence for such a low price, and given it's a public repo, nothing to lose.
 
-That's the bottom row of the table: \$0.10 in and \$0.20 out, against \$1.25 and \$4.25 for standard Muse, with the same million-token context. 12.5x cheaper on input, 21x on output.
+That's the bottom row of the table: \$0.10 in and \$0.20 out, against \$1.25 and \$4.25 for standard Muse.
 
-The catch is on [Meta's pricing page](https://dev.meta.ai/docs/pricing-rate-limits). Contributor is "heavily discounted token pricing in exchange for permission to use your prompts and completions to train future Meta models." On a public repo your prompts are the diff, and the diff is already public. On private code, don't.
-
-Three more things:
-
-- OpenRouter blocks `*-contributor` endpoints if your account privacy setting disallows providers that train on inputs. Change the setting, or call Meta directly at `https://api.meta.ai/v1`, which is OpenAI-compatible.
-- Reasoning tokens count against `max_tokens`. Set it too low and you get an empty completion.
-- I haven't wired this into my own blog's Actions yet.
+The catch: [Meta trains on your prompts and completions](https://dev.meta.ai/docs/pricing-rate-limits). On a public repo the prompts are the diff, and the diff is already public. On private code, don't. I haven't wired this into my own blog's Actions yet.
 
 ## What quota-axi Doesn't See
 
