@@ -55,7 +55,7 @@ Top to bottom that's 100x on input and 250x on output. Same job, same repo. Disp
 
 **The core problem**: a plan isn't one meter. Mine has a weekly window, and the expensive model has its own weekly window inside it that runs out first.
 
-This morning my Claude week was at 71% remaining with 48% of the week gone. Plenty. The top model's own weekly limit was already down to 59%. The plan was fine. The tier I actually wanted was the thing about to run out.
+This morning my Claude week was at 69% remaining with 48% of the week gone. Plenty. The top model's own weekly limit was already down to 57%. The plan was fine. The tier I actually wanted was the thing about to run out.
 
 Agents make this worse. When I'm typing, I'm the rate limiter. When agents are running unattended, nobody is.
 
@@ -65,21 +65,15 @@ So: Claude, Codex, Grok, plus API keys underneath for everything else. The quest
 
 [quota-axi](https://github.com/kunchenguid/quota-axi), by Kun Chen, reads quota windows straight out of the CLI credentials already on my machine — Claude Code, Codex, Cursor, Copilot, Grok, and more. No keys to paste, no browser, no dashboard to scrape.
 
-```text
-$ npx -y quota-axi
-quota[7]{provider,scope,effectivePercentRemaining,runway,limitedBy,resetsAt}:
-  claude,all_models,71,through_reset,seven_day,"2026-09-22T05:00:00Z"
-  claude,"model:fable",59,through_reset,"model:fable","2026-09-22T05:00:00Z"
-  codex,all_models,76,through_reset,weekly,"2026-09-19T12:52:13Z"
-  grok,all_products,65,through_reset,credits,"2026-09-19T02:21:51Z"
-  ...
-attention[8]{provider,scope,kind,detail}:
-  cursor,all,auth_required,Cursor sign-in required
-  copilot,all,no_quota,no measurable scope
-  ...
+```bash
+npx -y quota-axi --tui
 ```
 
-That's my real run this morning, columns and rows trimmed. Two gotchas:
+{% include repo_image.html src="quota-axi-tui.webp" %}
+
+That's my real screen this morning. Every bar is percent **remaining**. The tick on each bar is how much of the window's time is left, so a bar that runs past the tick means I have more quota than time. `q` quits. Drop `--tui` and you get the same numbers as plain text, which is what my agents read.
+
+Two gotchas:
 
 - **Codex needs 0.1.45 or newer.** 0.1.44 launched the Codex CLI with an approval flag Codex had retired ([issue #177](https://github.com/kunchenguid/quota-axi/issues/177)).
 - **Grok comes from the consumer subscription**, through xAI's official CLI `@xai-official/grok` — device-code login, works headless. An xAI API key is ignored, since it meters a different product. The look-alike `grok-cli` packages on npm don't write the credential file quota-axi reads.
@@ -88,17 +82,17 @@ Worth it for the cost alone: my AI assistant was spending about 40,000 tokens ev
 
 ## Step 2: Read Pace, Not Percentage
 
-Percent remaining on its own will fool you. `quota-axi --full` also gives you how far into each window you are, and that's what decides where work goes.
+Percent remaining on its own will fool you. The tick marks in the screenshot are the other half: how much time each window has left. `quota-axi --full` gives you the same thing as numbers, and that's what decides where work goes.
 
 This morning:
 
-- **Claude week** — 71% left, 48% of the window elapsed
-- **Codex week** — 76% left, 86% elapsed, resets tomorrow
-- **Grok credits** — 65% left, 92% elapsed, resets tonight
+- **Claude week** — 69% left, 48% of the window elapsed
+- **Codex week** — 76% left, 87% elapsed, resets tomorrow
+- **Grok credits** — 65% left, 93% elapsed, resets tonight
 
 Subscription windows are use-it-or-lose-it. Two of those three were about to reset with most of the allowance unspent, and I'd already paid for it. So big jobs today go to Codex and Grok first.
 
-Look at percent remaining alone and you'd read 71, 76, 65 and pick the biggest one. That's backwards.
+Look at percent remaining alone and you'd read 69, 76, 65 and pick the biggest one. That's backwards.
 
 ## Step 3: No Subscription? OpenRouter
 
