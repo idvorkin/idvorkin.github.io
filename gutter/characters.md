@@ -40,6 +40,23 @@ claw being on the "wrong" arm.
   it lands on — nobody notices side, and respinning for it is what grows
   a second claw.
 
+## Rex
+
+Igor's physical-health coach — the firm one. A
+**lean, wiry** warm-brown raccoon, athletic and intense-but-friendly.
+Grey training tank, dark **sweatband**, whistle on a lanyard, wristband,
+trainers. Coaching props: a **towel over one shoulder**, a **foam roller**
+and a **resistance band**; often a kettlebell in paw. Behind him, an
+upward-trending **bar graph** on the wall.
+
+- Ref: `images/raccoon-rex.webp` (character canon — Igor's pick, 2026-09-09,
+  concept-A look + mobility props + bar-graph backdrop).
+- Anti-canon: **no beard** (that's Larry), **no lobster claw** (Larry's
+  alone — Rex has plain furry paws), **no rainbow glasses and no Crocs**
+  (Igor's alone). Clean-shaven, ordinary paws.
+- He is his own raccoon — clearly distinct from Igor (chibi nerd) and
+  Larry (bearded, claw).
+
 ## The robots
 
 The agents. Plush **blue** toy robots, soft-vinyl volume, felt-fibre texture,
