@@ -1,0 +1,51 @@
+# ABOUTME: Runs a comment-only Muse review against pull request diffs.
+# ABOUTME: Checks out trusted base code and never executes contributor changes.
+name: blog muse review
+
+# This exact permission set means GITHUB_TOKEN cannot push or change branches:
+# it can only read repository contents and write comments/reviews on pull requests.
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
+    inputs:
+      pr:
+        description: Pull request number to review
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: muse-review-${{ github.event.pull_request.number || inputs.pr }}
+  cancel-in-progress: true
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      # pull_request_target has access to base-repository secrets. Check out only
+      # trusted base code; scripts/muse_review.py reads the PR diff through the API.
+      - name: Check out trusted base revision
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.sha || github.sha }}
+          persist-credentials: false
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v6
+
+      - name: Run blog Muse review
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          MUSE_API_KEY: ${{ secrets.MUSE_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number || inputs.pr }}
+          MUSE_PROVIDER: ${{ vars.MUSE_PROVIDER }}
+          MUSE_BASE_URL: ${{ vars.MUSE_BASE_URL }}
+          MUSE_MODEL: ${{ vars.MUSE_MODEL }}
+          MUSE_MAX_DIFF_BYTES: ${{ vars.MUSE_MAX_DIFF_BYTES || '409600' }}
+        run: ./scripts/muse_review.py
