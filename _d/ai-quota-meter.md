@@ -12,7 +12,7 @@ alias:
   - /tokens
 ---
 
-Igor's rule for the last couple of years was to rent the most expensive brain on the market and stop thinking about it. He [wrote it down](/how-igor-chops#the-most-expensive-i-can-get): one \$200/month plan, on the theory that you are choosing between a middle schooler and a university student. It has stopped being a complete answer on its own, because the gap between the cheapest and priciest token is now about 100×, and unattended agents can spend a month's plan well before the month is out. This is where his setup went instead, and the tool that makes it workable.
+Igor's rule was to rent the most expensive brain on the market and stop thinking about it. He [wrote it down](/how-igor-chops#the-most-expensive-i-can-get): one \$200/month plan, on the theory that you are choosing between a middle schooler and a university student. It has stopped being a complete answer on its own, because the gap between the cheapest and priciest token is now about 100×, and, in his words, he "can burn through" a \$200 plan. This is where his setup went instead, and the tool that makes it workable.
 
 {% include ai-voice.html %}
 
@@ -73,7 +73,7 @@ attention[8]{provider,scope,kind,detail}:
   ...
 ```
 
-That is this morning's real run, with columns and rows trimmed. Being cheap to run is most of the point: my old method was capturing Claude Code's `/usage` dialog in a throwaway session, about 40,000 tokens a look. At roughly zero I check before every dispatch instead of six times a day.
+That is this morning's real run, with columns and rows trimmed. Being cheap to run is most of the point: the method it replaces captures Claude Code's `/usage` dialog in a throwaway session, about 40,000 tokens a look, six times a day. At roughly zero I can check before every dispatch.
 
 Two things cost me an hour, so you can skip them:
 
@@ -99,7 +99,7 @@ The contributor tier costs 12.5× less on input and 21× less on output than sta
 Three things that will bite you:
 
 - OpenRouter refuses `*-contributor` endpoints outright when your account's privacy setting disallows providers that train on inputs. Change the setting, or call Meta's API directly at `https://api.meta.ai/v1`, which is OpenAI-compatible.
-- Muse counts reasoning tokens against `max_tokens`. Set a tight cap and you get an empty completion with no error worth the name.
+- Muse counts reasoning tokens against `max_tokens`. Set a tight cap and you get an empty completion and no error.
 - Igor's blog repo does not run this yet, since the secret isn't added; his recommendation rests on the arithmetic rather than a field report.
 
 ## What it does not see
@@ -112,4 +112,4 @@ curl -s -H "xi-api-key: $ELEVEN_API_KEY" \
   jq '{character_count, character_limit, next_character_count_reset_unix}'
 ```
 
-Used, allowed, when it resets: the same three numbers as every row above. Buy-the-best is still the right instinct; it just needs a meter attached now.
+Used, allowed, when it resets: the same three numbers as every row above.
