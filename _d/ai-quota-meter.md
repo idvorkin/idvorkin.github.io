@@ -130,4 +130,4 @@ curl -s -H "xi-api-key: $ELEVEN_API_KEY" \
 
 Used, allowed, when it resets. Same three numbers, different vocabulary.
 
-I run quota-axi before dispatching anything big now. It's one line and it's free, which is the only reason I actually remember to do it.
+I run quota-axi before dispatching anything big now. It's one line and it's free.
