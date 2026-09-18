@@ -1,37 +1,39 @@
 ---
 layout: post
-title: "When Buying the Best Model Stops Working"
+title: "How I Manage AI Tokens"
 permalink: /token-management
 ai_default_image: true
 tags:
   - ai
   - tools
+  - how
 redirect_from:
   - /tokens
 alias:
   - /tokens
 ---
 
-Igor's rule was to rent the most expensive brain on the market and stop thinking about it. He [wrote it down](/how-igor-chops#the-most-expensive-i-can-get): one \$200/month plan, on the theory that you are choosing between a middle schooler and a university student. It has stopped being a complete answer on its own, because the gap between the cheapest and priciest token is now about 100×, and, in his words, he "can burn through" a \$200 plan. This is where his setup went instead, and the tool that makes it workable.
+I rent the most expensive brain I can get. That's been my rule for two years and it's still in my [CHOP setup](/how-igor-chops#the-most-expensive-i-can-get). It stopped being the whole answer this year: I can burn through a \$200/month plan without noticing, and the model I actually want runs out before the plan around it does. So now I have several subscriptions plus API keys, and my new problem is routing work across them. Here's my process.
 
-{% include ai-voice.html %}
+{% include ai-slop.html percent="80" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [Tokens are not one price](#tokens-are-not-one-price)
-- [The rule that stopped scaling](#the-rule-that-stopped-scaling)
-- [The first tool: quota-axi](#the-first-tool-quota-axi)
-- [Reading pace, not percentage](#reading-pace-not-percentage)
-- [When there is no subscription](#when-there-is-no-subscription)
-- [What it does not see](#what-it-does-not-see)
+- [Tokens Are Not One Price](#tokens-are-not-one-price)
+- [Why Buying the Best Stopped Working](#why-buying-the-best-stopped-working)
+- [Step 1: Measure with quota-axi](#step-1-measure-with-quota-axi)
+- [Step 2: Read Pace, Not Percentage](#step-2-read-pace-not-percentage)
+- [Step 3: No Subscription? OpenRouter](#step-3-no-subscription-openrouter)
+- [Muse Contributor on Public Repos](#muse-contributor-on-public-repos)
+- [What quota-axi Doesn't See](#what-quota-axi-doesnt-see)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-## Tokens are not one price
+## Tokens Are Not One Price
 
-Per million tokens, from OpenRouter's public model list today:
+OpenRouter's public list today, per million tokens:
 
 <div class="table-responsive small" markdown="1">
 
@@ -47,17 +49,21 @@ Per million tokens, from OpenRouter's public model list today:
 
 </div>
 
-Top row to bottom row is 100× on input and 250× on output. The same job, dispatched without thinking about it, can cost two orders of magnitude more than it had to.
+Top to bottom that's 100x on input and 250x on output. Same job, same repo. Dispatch without thinking about it and you can pay two orders of magnitude more than you had to.
 
-## The rule that stopped scaling
+## Why Buying the Best Stopped Working
 
-Buy-the-best assumed one meter and a human typing into it. A plan now has windows inside windows, and the expensive model usually has a tighter one than the plan around it. This morning Igor's Claude week sat at 71% remaining with 48% of the week elapsed, comfortable, while the top model's own weekly limit was already down to 59%. The plan was fine; the tier he actually wanted was the binding constraint.
+**The core problem**: a plan isn't one meter. Mine has a weekly window, and the expensive model has its own weekly window inside it that runs out first.
 
-So the setup grew sideways: several subscriptions at once — Claude, Codex, Grok — with metered API keys underneath. The question changed from which model is best to which meter should pay for this job, which is a routing problem, and routing needs numbers.
+This morning my Claude week was at 71% remaining with 48% of the week gone. Plenty. The top model's own weekly limit was already down to 59%. The plan was fine. The tier I actually wanted was the thing about to run out.
 
-## The first tool: quota-axi
+Agents make this worse. When I'm typing, I'm the rate limiter. When agents are running unattended, nobody is.
 
-[quota-axi](https://github.com/kunchenguid/quota-axi), by Kun Chen, reads quota windows out of the CLI credentials already on the machine: Claude Code's, Codex's, Cursor's, Copilot's, Grok's, and more. No keys to paste, no browser, no dashboard to scrape. One command:
+So: Claude, Codex, Grok, plus API keys underneath for everything else. The question stopped being which model is best and became which meter should pay for this job. That's a routing problem, and you can't route without numbers.
+
+## Step 1: Measure with quota-axi
+
+[quota-axi](https://github.com/kunchenguid/quota-axi), by Kun Chen, reads quota windows straight out of the CLI credentials already on my machine — Claude Code, Codex, Cursor, Copilot, Grok, and more. No keys to paste, no browser, no dashboard to scrape.
 
 ```text
 $ npx -y quota-axi
@@ -73,38 +79,48 @@ attention[8]{provider,scope,kind,detail}:
   ...
 ```
 
-That is this morning's real run, with columns and rows trimmed. Being cheap to run is most of the point: the method it replaces captures Claude Code's `/usage` dialog in a throwaway session, about 40,000 tokens a look, six times a day. At roughly zero I can check before every dispatch.
+That's my real run this morning, columns and rows trimmed. Two gotchas:
 
-Two things cost me an hour, so you can skip them:
+- **Codex needs 0.1.45 or newer.** 0.1.44 launched the Codex CLI with an approval flag Codex had retired ([issue #177](https://github.com/kunchenguid/quota-axi/issues/177)).
+- **Grok comes from the consumer subscription**, through xAI's official CLI `@xai-official/grok` — device-code login, works headless. An xAI API key is ignored, since it meters a different product. The look-alike `grok-cli` packages on npm don't write the credential file quota-axi reads.
 
-- Version 0.1.44 could not read Codex at all. It launched the Codex CLI with an approval flag that Codex had retired ([issue #177](https://github.com/kunchenguid/quota-axi/issues/177)); the fix shipped in 0.1.45.
-- Grok quota comes from the consumer subscription through xAI's official CLI, `@xai-official/grok` (device-code login, works headless). An xAI API key is deliberately ignored, since it meters a different product. The look-alike `grok-cli` packages on npm do not write the credential file quota-axi reads.
+Worth it for the cost alone: my AI assistant used to spend about 40,000 tokens every time it checked my usage, because the only way to see the numbers was to open a throwaway session and capture the `/usage` dialog. Now it's a one-second subprocess.
 
-## Reading pace, not percentage
+## Step 2: Read Pace, Not Percentage
 
-Percent remaining is half a reading. `quota-axi --full` adds the other half: how far into each window you already are. Against the numbers above, Claude's week was 48% elapsed, Codex's 86% and resetting the next day, Grok's credit pool 92% and resetting that night.
+Percent remaining on its own will fool you. `quota-axi --full` also gives you how far into each window you are, and that's what decides where work goes.
 
-A subscription window is use-it-or-lose-it. Two of those three were heading for a reset with most of the allowance unspent and already paid for, so the routing answer for a big job today was Codex or Grok: their budget stops existing in a few hours, Claude's does not. Without the pace column you read "71, 76, 65" and pick the biggest number, which is the wrong one.
+This morning:
 
-## When there is no subscription
+- **Claude week** — 71% left, 48% of the window elapsed
+- **Codex week** — 76% left, 86% elapsed, resets tomorrow
+- **Grok credits** — 65% left, 92% elapsed, resets tonight
 
-Igor's rule for everything outside those three: "When you don't have [model] subs, you should use [OpenRouter]." One key, every model, per-token pricing, and no window to pace because there is no window. It [collapsed his pile of per-provider keys into one](/ai-speed-vs-thinking).
+Subscription windows are use-it-or-lose-it. Two of those three were about to reset with most of the allowance unspent, and I'd already paid for it. So big jobs today go to Codex and Grok first.
 
-The bottom of that price table is Igor's other point, dictated:
+Look at percent remaining alone and you'd read 71, 76, 65 and pick the biggest one. That's backwards.
 
-> Talk about what a great deal Muse contributor is, and if you're not using it on your GitHub Actions, oh my god, you should! Such high intelligence for such a low price, given it's a public [repo], nothing to lose.
+## Step 3: No Subscription? OpenRouter
 
-The contributor tier costs 12.5× less on input and 21× less on output than standard Muse, with the same million-token context. [Meta's own docs](https://dev.meta.ai/docs/pricing-rate-limits) describe the trade as "heavily discounted token pricing in exchange for permission to use your prompts and completions to train future Meta models." On a public repo the prompts are the diff and the diff is already public, which is Igor's "nothing to lose" and a fair argument. Private code is a different conversation, and that page says nothing about retention or review, so read the full terms first.
+For anything I don't have a sub for, [OpenRouter](/ai-speed-vs-thinking). One key, every model, pay per token, no commitment. I used to collect an API key per provider every time I wanted to try something new. Now I don't.
 
-Three things that will bite you:
+## Muse Contributor on Public Repos
 
-- OpenRouter refuses `*-contributor` endpoints outright when your account's privacy setting disallows providers that train on inputs. Change the setting, or call Meta's API directly at `https://api.meta.ai/v1`, which is OpenAI-compatible.
-- Muse counts reasoning tokens against `max_tokens`. Set a tight cap and you get an empty completion and no error.
-- Igor's blog repo does not run this yet, since the secret isn't added; his recommendation rests on the arithmetic rather than a field report.
+What a great deal Muse contributor is. If you're not using it on your GitHub Actions, oh my god, you should. Such high intelligence for such a low price, and given it's a public repo, nothing to lose.
 
-## What it does not see
+That's the bottom row of the table: \$0.10 in and \$0.20 out, against \$1.25 and \$4.25 for standard Muse, with the same million-token context. 12.5x cheaper on input, 21x on output.
 
-quota-axi reads coding-agent CLI credentials, so the rest of the bill is invisible to it: OpenRouter spend, raw API keys, ElevenLabs. Most answer the same question in one request — ElevenLabs, which Igor's voice work runs on:
+The catch is on [Meta's pricing page](https://dev.meta.ai/docs/pricing-rate-limits). Contributor is "heavily discounted token pricing in exchange for permission to use your prompts and completions to train future Meta models." On a public repo your prompts are the diff, and the diff is already public. On private code, don't.
+
+Three more things:
+
+- OpenRouter blocks `*-contributor` endpoints if your account privacy setting disallows providers that train on inputs. Change the setting, or call Meta directly at `https://api.meta.ai/v1`, which is OpenAI-compatible.
+- Reasoning tokens count against `max_tokens`. Set it too low and you get an empty completion.
+- I haven't wired this into my own blog's Actions yet.
+
+## What quota-axi Doesn't See
+
+It reads coding-agent CLI credentials, so the rest of my bill is invisible to it: OpenRouter spend, raw API keys, ElevenLabs. Most of those have a one-call answer of their own. ElevenLabs, which my voice work runs on:
 
 ```bash
 curl -s -H "xi-api-key: $ELEVEN_API_KEY" \
@@ -112,4 +128,6 @@ curl -s -H "xi-api-key: $ELEVEN_API_KEY" \
   jq '{character_count, character_limit, next_character_count_reset_unix}'
 ```
 
-Used, allowed, when it resets: the same three numbers as every row above.
+Used, allowed, when it resets. Same three numbers, different vocabulary.
+
+I run quota-axi before dispatching anything big now. It's one line and it's free, which is the only reason I actually remember to do it.
