@@ -1279,6 +1279,7 @@ Try these shortcuts:
   a - all posts
   m - global toc
   6 - family journal
+  Ctrl/Cmd+Shift+A - toggle annotate (comment) mode
   `;
   e.bind("?", (n) => alert(t));
 }
