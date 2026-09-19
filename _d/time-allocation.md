@@ -24,6 +24,7 @@ I asked myself a plain question this week: how is my time actually getting alloc
 - [Consumption is pleasure that never got converted](#consumption-is-pleasure-that-never-got-converted)
 - [The conversion: add a person, or add the person you want to be](#the-conversion-add-a-person-or-add-the-person-you-want-to-be)
 - [Freed time rolls downhill](#freed-time-rolls-downhill)
+- [Two of the good buckets have ceilings](#two-of-the-good-buckets-have-ceilings)
 - [Compulsion lives in tech, addiction lives in consumption](#compulsion-lives-in-tech-addiction-lives-in-consumption)
 - [So how is your time getting allocated?](#so-how-is-your-time-getting-allocated)
 - [The open question: is tech a bucket, or an identity that overgrew?](#the-open-question-is-tech-a-bucket-or-an-identity-that-overgrew)
@@ -44,6 +45,10 @@ Four are investments. The fifth is what's left.
 **Relationships.** Family and friends. This wants to be top-level, not a sub-item under identity. Arthur Brooks' four pillars of a happy life are faith, family, friendship, and work. Two of the four are other people.
 
 **Consumption.** Everything else. The scroll, the autoplay, the forty minutes I can't account for.
+
+The hours below are invented, not measured. Pull tech down and watch where the freed hours actually land.
+
+{% include time-allocation-buckets.html %}
 
 ## The bucket I never scored
 
@@ -92,6 +97,16 @@ I used to think the move was to shrink tech. Claw back five hours from the scree
 The reason is [activation energy](/activation). Consumption has negative starting energy: the phone starts itself, no decision required. Enjoyment needs a person, which needs a text and a calendar and somebody else's yes, and it needs a moment worth remembering, which needs a little bit of a plan. One of those two is free and it's the wrong one.
 
 Which means freeing up time does nothing by itself. Freed hours don't get allocated, they get defaulted, and the default is level 0 of the idle loop: phone already in your hand, nothing got decided. If I want an hour to land in relationships, it needs a destination assigned before it exists. Otherwise I've just lowered the wall in front of the leak.
+
+## Two of the good buckets have ceilings
+
+Say I win that fight and assign the hour before it arrives. Two of the three buckets I'd assign it to can't take much.
+
+Relationships is rate limited by the other people. I can decide to give my family ten more hours. They have to be free for those hours, and want them. That's the somebody else's yes from the last section. It's their ceiling, and I don't get a vote in it. Past it, the hours I add aren't relationship hours, they're me hovering.
+
+Health saturates. There's a reasonable amount of sleep and movement, and the curve goes flat right after it. The second hour at the gym doesn't buy twice the health. Often it buys an injury.
+
+That leaves identity. It's the one good bucket with real room, and it's the one with the highest activation energy. Nobody is waiting on me to do the trick badly for twenty minutes. The bucket with the most space is the hardest one to start.
 
 ## Compulsion lives in tech, addiction lives in consumption
 
