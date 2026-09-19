@@ -5,30 +5,27 @@ permalink: /test/orchestrator-viewer-options
 search_exclude: true
 ---
 
-# Test page: three ways to walk the orchestrator story
+# Test page: where the controls go
 
-A pick sheet, not a post. Same story data, same drawing, three ways to move
-through it. The title block and the sub line are gone from all three, so the
-drawing is the first thing you see. Variant A puts the story above the drawing
-so you can judge that question by looking at it.
+Same viewer twice. Back, Next, Play and the scrubber in one row, and the only
+difference is whether that row sits at the very top of the figure or between
+the story and the drawing. Nothing else changes, so the placement is the only
+thing to judge. The live version in context is at
+[/ai-orchestrator](/ai-orchestrator).
 
-## A. Play and scrub, story on top
+The story block has a fixed floor under it in both, so the controls and the
+drawing hold still as you walk the steps.
 
-One play button and a scrubber with a tick per block. The story sits above the
-drawing, and the drawing does not move while the copy changes.
+## Controls on top
 
-{% include orchestrator-viewer.html variant="a" id="orc-a" %}
+Controls, then the story, then the drawing. The controls are the first thing
+you see and they never move.
 
-## B. The drawing is the nav, story below
+{% include orchestrator-viewer.html controls="top" id="orc-top" %}
 
-No numbers anywhere. Click any block to read why it is there, or press play and
-it walks itself. Any click pauses it.
+## Controls between the story and the drawing
 
-{% include orchestrator-viewer.html variant="b" id="orc-b" %}
+The story reads first, then the controls, then the drawing. The controls sit
+right above the thing they change.
 
-## C. Scroll-driven, story beside the drawing
-
-The drawing sticks to the top and the story scrolls past it. Whichever card is
-in the middle of the screen owns the drawing.
-
-{% include orchestrator-viewer.html variant="c" id="orc-c" %}
+{% include orchestrator-viewer.html controls="between" id="orc-between" %}
