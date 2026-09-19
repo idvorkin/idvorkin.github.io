@@ -26,7 +26,6 @@ I asked myself a plain question this week: how is my time actually getting alloc
 - [Two of the good buckets have ceilings](#two-of-the-good-buckets-have-ceilings)
 - [Compulsion lives in tech, addiction lives in consumption](#compulsion-lives-in-tech-addiction-lives-in-consumption)
 - [So how is your time getting allocated?](#so-how-is-your-time-getting-allocated)
-- [The open question: is tech a bucket, or an identity that overgrew?](#the-open-question-is-tech-a-bucket-or-an-identity-that-overgrew)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -51,15 +50,7 @@ The hours below are invented, not measured. Pull tech down and watch where the f
 
 ## Consumption is pleasure that never got converted
 
-Brooks has the distinction I was missing. Pleasure is the raw hit. It's solitary, it's chemical, and it's over the moment it's over. Enjoyment is what you get when you add two things to it:
-
-> Enjoyment takes the source of pleasure and adds two things: people and memory.
-
-That's from his Atlantic column, [Choose Enjoyment Over Pleasure](https://www.theatlantic.com/family/archive/2022/03/happiness-pleasure-enjoyment-consumption/629447/), and I unpacked the whole formula in my notes on [Build The Life You Want](/build-life-you-want). His gut check is the one I keep stealing: if you're doing it alone, you're probably doing it wrong.
-
-So consumption isn't a category of activity. It's a stage. It's pleasure that stopped there.
-
-Which means no activity is automatically in the leak. A beer alone on the couch and a beer at a table with friends are the same beer and different hours. The activity was never the variable, same as what I found staring at my [idle loop](/idle): what mattered was whether the thing handed anything back.
+Arthur Brooks has the distinction I was missing. Pleasure is the raw hit: solitary, chemical, and over the moment it's over. Enjoyment is pleasure plus two things, people and memory ([my notes on his book](/build-life-you-want)). So consumption isn't a category of activity, it's a stage. It's pleasure that stopped there. A beer alone on the couch and a beer at a table with friends are the same beer and different hours.
 
 ## The conversion: add a person, or add the person you want to be
 
@@ -127,13 +118,7 @@ Two things show up, and neither is the total you were bracing for. One bucket wi
 
 The last row is the one nobody tracks. If your week holds twenty hours you can't assign, that isn't a discipline problem, it's an unassigned-hours problem. The fix is to give those hours a person, or a person-you-want-to-be, before they arrive.
 
-## The open question: is tech a bucket, or an identity that overgrew?
-
-My weekly review has a section called Tech Guru. That's not a category of work. That's a role, the same kind of noun as magician, dad, husband, biker. Which makes me wonder if I've drawn this whole thing wrong.
-
-Maybe it isn't four buckets and a leak. Maybe it's a set of identities, one of which got very good at feeding itself, plus a leak that mops up whatever that one doesn't take. [Roles are how I've always written the eulogy](/eulogy), and the eulogy is the document this is supposed to serve.
-
-If that's right, the question stops being "how do I allocate my time" and becomes "which of my roles is eating the others." I don't know yet. But I notice that the version where tech is just a neutral bucket is the more comfortable version, and comfortable framings are usually the ones I should check first.
+{% include alert.html style="warning" content="**Warning: I may have drawn this wrong.** Tech might not be a bucket. It might be an identity, the same kind of noun as magician or dad, that got very good at feeding itself. [Roles are how I've always written the eulogy](/eulogy), and the eulogy is the document this is supposed to serve. If that's right, the question stops being how I allocate my time and becomes which of my roles is eating the others. The neutral bucket is the more comfortable framing, which is why I don't trust it." %}
 
 {% include summarize-page.html src="/life-as-business" %}
 
