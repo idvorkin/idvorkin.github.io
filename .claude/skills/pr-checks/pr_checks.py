@@ -23,15 +23,13 @@ Exit codes:
 from __future__ import annotations
 
 import json
-import os
 import re
 import subprocess
 import sys
-import time
-import urllib.error
-import urllib.request
 from dataclasses import dataclass, field
 from pathlib import Path
+
+import jev_judge as jev
 
 PASS, FAIL, NA = "pass", "fail", "na"
 MARK = {PASS: "🟢", FAIL: "🔴", NA: "⚪"}
@@ -45,178 +43,7 @@ GRID = (
     ("Judge", ("alerts", "images", "books", "ai-slop")),
     ("Workflow", ("rebased",)),
 )
-JEV_KEYS = ("headers", "voice", "ai-patterns")
-
-# --- Jev ---------------------------------------------------------------------
-
-JEV_URL = "https://openrouter.ai/api/alpha/decisions"
-JEV_MODEL = "typesafe/jev-1.13"
-
-# Measured 2026-09: the endpoint rejects a request over ~32_768 input tokens
-# with max_tokens_exceeded (ok at 121_500 chars of prose, fails at 124_031).
-# 60_000 chars leaves room for the question block plus token-density variance.
-JEV_MAX_CHARS = 60_000
-
-# Thresholds on Jev's 0–4 rubric position, set by `calibrate.py` (numbers and
-# method in SKILL.md, measured 2026-09 against jev-1.13):
-#
-#   ai-patterns  real prose topped out at 2.47 and the AI-patterned fixtures
-#                all landed at 3.99+, so 3.0 sits in a genuine gap. This is the
-#                only Jev check with a validated positive group, so it is the
-#                only one `--block-jev` can fail a run on.
-#   headers      paired defect injection (strip every heading from a real post)
-#                moved the score on 3 of 6 posts. It does not discriminate.
-#   voice        injecting an I→we switch into the back half of a post moved
-#                the score by +0.03 to +1.38 while clean posts already sat at
-#                2.2–3.1. It does not discriminate either.
-#
-# Those two keep a threshold set above the whole corpus ceiling (n=40 random
-# posts: headers max 2.63, voice max 3.05) so a 🔴 means "an outlier against
-# 364 posts", not "fails the guideline". They never block.
-JEV_THRESHOLDS = {"headers": 3.0, "voice": 3.5, "ai-patterns": 3.0}
-JEV_BLOCKABLE = frozenset({"ai-patterns"})
-
-JEV_QUESTIONS = {
-    # Every question is worded so HIGHER = MORE PROBLEM, so one threshold
-    # direction covers all of them.
-    "headers": {
-        "type": "score",
-        "instructions": (
-            "How hard is this blog post to scan, because of how it uses (or fails to use) "
-            "section headers to break the text into findable chunks?"
-        ),
-        "criteria": [
-            "Easy to scan: headers break the post into clear sections, or it is short enough not to need any",
-            "Mostly scannable: headers exist but one or two long stretches run on without one",
-            "Patchy: some of the post is sectioned and a lot of it is not",
-            "Hard to scan: long runs of prose with almost no headers",
-            "A wall of text: no headers at all in a post long enough to need them",
-        ],
-    },
-    "voice": {
-        "type": "score",
-        "instructions": (
-            "How inconsistent is the voice in this blog post? Look for switching between "
-            "'I' and 'we' for the same speaker, shifts between conversational and formal "
-            "register, and changes in who the post is addressed to."
-        ),
-        "criteria": [
-            "One consistent voice and register from start to finish",
-            "Nearly consistent: a single line reads slightly differently",
-            "Noticeable: a section drifts into another register or pronoun and back",
-            "Inconsistent: the post repeatedly switches pronoun or register",
-            "Incoherent: it reads as several different pieces stitched together",
-        ],
-    },
-    "ai-patterns": {
-        "type": "score",
-        "instructions": (
-            "How much does this blog post read like generic AI-generated prose rather than "
-            "a specific person writing from their own experience? Signs: undue emphasis "
-            "('stands as', 'plays a vital role in'), editorializing ('it's important to "
-            "note', 'notably'), formulaic conjunctions starting sentences ('Additionally', "
-            "'Furthermore', 'Moreover'), vague intensifiers ('very unique', 'truly "
-            "remarkable'), promotional language, rule-of-three padding, and abstract "
-            "summary in place of concrete detail."
-        ),
-        "criteria": [
-            "Not at all: concrete, specific and idiosyncratic throughout",
-            "Barely: one or two stock phrases in otherwise specific writing",
-            "Somewhat: stock phrasing and padding show up repeatedly alongside real content",
-            "Mostly: hedging, editorializing and formulaic transitions dominate",
-            "Entirely: generic filler with no specific detail or personal stake",
-        ],
-    },
-}
-
-# Asked in the same call as the verdict questions (one call, no extra cost tier)
-# purely so a 🔴 on ai-patterns can name WHICH family triggered it. Jev returns a
-# verdict with no reasons, so without these the Issues line is not actionable.
-JEV_FAMILIES = {
-    "undue-emphasis": "phrases that assert importance instead of showing it, like 'stands as', 'serves as', 'plays a vital role in', 'underscores'",
-    "editorializing": "editorializing asides like \"it's important to note\", \"it's worth mentioning\", 'notably', 'importantly'",
-    "formulaic-conjunctions": "sentences that start with 'Additionally', 'Furthermore', 'Moreover' or similar essay connectives",
-    "vague-intensifiers": "vague intensifiers like 'very unique', 'truly remarkable', 'highly significant'",
-    "promotional": "promotional or tourism-brochure language, like 'hidden gem', 'boasts a wide array', 'rich cultural heritage'",
-    "ing-phrases": "trailing -ing clauses used as filler, like 'highlighting the fact that', 'showcasing the importance of'",
-    "melodramatic": "melodramatic framing like 'the question that haunts me' or 'what keeps me up at night'",
-    "list-padding": "rule-of-three padding, where three items are listed because three sounds complete rather than because there are three",
-}
-
-# Literal phrases the guidelines name. Reported as evidence next to a Jev
-# verdict — never a verdict on their own, because a post may legitimately quote
-# them (a post about AI writing, for one).
-LITERAL_PATTERNS = [
-    r"it['’]s important to note",
-    r"it['’]s worth (mentioning|noting)",
-    r"\bstands as\b",
-    r"\bserves as\b",
-    r"plays a (vital|crucial|key) role",
-    r"underscor(es|ing) (its|the) ",
-    r"\b(Additionally|Furthermore|Moreover),",
-    r"\bvery unique\b",
-    r"\btruly remarkable\b",
-    r"\bhidden gem\b",
-    r"\bboasts a\b",
-    r"\bdelv(e|ing) into\b",
-    r"\bnestled (in|within)\b",
-    r"\bin today['’]s (world|landscape)\b",
-    r"\btapestry\b",
-]
-
-
-def jev_key() -> str | None:
-    """OPENROUTER_API_KEY, else OPEN_ROUTER_KEY out of the $SECRET_BOX json."""
-    if key := os.environ.get("OPENROUTER_API_KEY", "").strip():
-        return key
-    box = os.environ.get("SECRET_BOX", "").strip()
-    if not box:
-        return None
-    try:
-        return json.loads(Path(box).read_text()).get("OPEN_ROUTER_KEY") or None
-    except (OSError, ValueError):
-        return None
-
-
-def jev_ask(state: str, questions: dict, key: str, timeout: int = 60) -> dict:
-    """POST one decision request. Returns the parsed response body."""
-    body = json.dumps(
-        {"model": JEV_MODEL, "state": state, "questions": questions}
-    ).encode()
-    req = urllib.request.Request(
-        JEV_URL,
-        data=body,
-        headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
-    )
-    with urllib.request.urlopen(req, timeout=timeout) as resp:
-        return json.loads(resp.read().decode())
-
-
-def chunk_text(text: str, limit: int = JEV_MAX_CHARS) -> list[str]:
-    """Split on `## ` boundaries so each chunk fits Jev's input limit."""
-    if len(text) <= limit:
-        return [text]
-    chunks: list[str] = []
-    current = ""
-    for section in re.split(r"(?m)^(?=## )", text):
-        if len(current) + len(section) <= limit:
-            current += section
-            continue
-        if current:
-            chunks.append(current)
-        while len(section) > limit:  # a single section over the limit
-            chunks.append(section[:limit])
-            section = section[limit:]
-        current = section
-    if current:
-        chunks.append(current)
-    return chunks
-
-
-def worst(answers: list[dict], key: str) -> float:
-    """Worst (highest) score for `key` across chunk answers."""
-    return max(float(a[key]["score"]) for a in answers)
-
+JEV_KEYS = jev.JUDGMENT_KEYS
 
 # --- post parsing ------------------------------------------------------------
 
@@ -271,12 +98,10 @@ def norm_url(url: str) -> str:
 
 
 def site_url_maps(root: Path) -> tuple[dict[str, str], dict[str, str]]:
-    """Build {permalink: path} and {redirect: canonical permalink} from front matter.
+    """{permalink: path} and {redirect: canonical permalink}, from front matter.
 
-    A redirect declared by a page that has no `permalink` (the dated `_posts/`
-    collection builds its URL from the filename) is left out: there is no
-    canonical URL to send the author to, so flagging the link would be advice
-    nobody can act on. That drops 58 of 257 hits across the repo.
+    A redirect declared by a page with no permalink is dropped — nothing to
+    point the author at. Counts in SKILL.md.
     """
     permalinks: dict[str, str] = {}
     declared: list[tuple[str, str]] = []  # (redirect url, declaring path)
@@ -315,8 +140,7 @@ BLOCK_KINDS = (
 def first_block(body: str) -> tuple[str, int, str]:
     """Kind, 0-based line index and text of the first rendered block.
 
-    HTML comments (the TOC fences, prettier pragmas) render to nothing, so they
-    are skipped rather than treated as the opening block.
+    HTML comments render to nothing, so they are skipped.
     """
     lines = body.split("\n")
     i = 0
@@ -366,16 +190,7 @@ class Check:
 
 
 def check_front_matter(post: Post) -> Check:
-    """title / permalink / tags, per the checklist.
-
-    Scope carve-outs come from what the repo actually does (measured on
-    upstream/main, Sept 2026), not from taste:
-      - `permalink` — 76/76 posts added in the last year carry one in `_d/`;
-        `_posts/` is a dated collection whose URLs come from the filename
-        (24/37 have no permalink), so it is not required there.
-      - `tags` — never used anywhere in `_td/` (0/51), so requiring it there
-        would be a pure false positive.
-    """
+    """title / permalink / tags. Per-collection carve-outs measured in SKILL.md."""
     check = Check("front-matter")
     directory = post.path.parent.name
     required = ["title"]
@@ -494,11 +309,7 @@ HTML_IMAGE_RE = re.compile(r"<img\s[^>]*src=\"([^\"]+)\"")
 
 
 def check_images(post: Post) -> Check:
-    """Blob-repo images must go through the blob_image includes.
-
-    Images hosted elsewhere (ipaste, external sites) are raw markdown all over
-    the repo and are fine — only the blob repo has a matching include.
-    """
+    """Blob-repo images must use the blob_image includes; other hosts may be raw."""
     check = Check("images")
     found = "blob_image" in post.body
     for line_no, line in enumerate(post.body.split("\n")):
@@ -566,85 +377,52 @@ def check_rebased(root: Path, base: str | None) -> Check:
     return check
 
 
-def literal_hits(post: Post) -> list[str]:
-    out = []
-    for line_no, line in enumerate(post.body.split("\n")):
-        for pattern in LITERAL_PATTERNS:
-            if match := re.search(pattern, line, re.I):
-                out.append(f"line {post.body_offset + line_no}: “{match.group(0)}”")
-    return out
-
-
 def jev_checks(
     post: Post, key: str | None, blocking: bool
 ) -> tuple[dict[str, Check], dict]:
-    """The three judgment checks. Returns (checks, meta)."""
-    checks = {k: Check(k, blocking=blocking and k in JEV_BLOCKABLE) for k in JEV_KEYS}
-    meta: dict = {}
+    """Ask Jev for the three judgment checks. Returns (checks, meta)."""
+    checks = {k: Check(k, blocking=blocking and k in jev.BLOCKABLE) for k in JEV_KEYS}
     if key is None:
         for check in checks.values():
-            check.status = NA
-            check.detail = "no key, skipped"
-        meta["skipped"] = (
-            "no OPENROUTER_API_KEY (and no OPEN_ROUTER_KEY in $SECRET_BOX)"
-        )
-        return checks, meta
-
-    questions = dict(JEV_QUESTIONS)
-    questions |= {
-        f"family_{name}": {
-            "type": "noul",
-            "instructions": f"Does this text repeatedly use {desc}?",
+            check.status, check.detail = NA, "no key, skipped"
+        return checks, {
+            "skipped": "no OPENROUTER_API_KEY (and no OPEN_ROUTER_KEY in $SECRET_BOX)"
         }
-        for name, desc in JEV_FAMILIES.items()
-    }
 
-    chunks = chunk_text(post.body)
-    answers: list[dict] = []
-    cost = 0.0
-    started = time.time()
-    for chunk in chunks:
-        try:
-            response = jev_ask(chunk, questions, key)
-        except (urllib.error.URLError, TimeoutError, ValueError) as exc:
-            detail = getattr(exc, "read", lambda: b"")()[:200].decode(errors="replace")
-            for check in checks.values():
-                check.status = NA
-                check.detail = "Jev call failed, skipped"
-            meta["error"] = f"{type(exc).__name__}: {exc} {detail}".strip()
-            return checks, meta
-        answers.append(response["answers"])
-        cost += float(response.get("usage", {}).get("cost", 0) or 0)
-    meta |= {
-        "chunks": len(chunks),
-        "cost_usd": round(cost, 8),
-        "latency_s": round(time.time() - started, 2),
-        "model": JEV_MODEL,
-    }
+    result = jev.judge(post.body, key)
+    if result.error:
+        for check in checks.values():
+            check.status, check.detail = NA, "Jev call failed, skipped"
+        return checks, {"error": result.error}
 
-    hits = literal_hits(post)
+    meta = {
+        "chunks": result.chunks,
+        "calls": result.calls,
+        "cost_usd": result.cost_usd,
+        "latency_s": result.latency_s,
+        "model": jev.MODEL,
+        "scores": {k: round(v, 2) for k, v in result.scores.items()},
+    }
+    hits = jev.literal_hits(post.body, post.body_offset)
     for check_key in JEV_KEYS:
-        score = worst(answers, check_key)
-        threshold = JEV_THRESHOLDS[check_key]
-        checks[check_key].detail = f"{score:.2f}"
-        meta.setdefault("scores", {})[check_key] = round(score, 2)
-        if score < threshold:
+        if not result.fails(check_key):
             continue
-        issue = f"{check_key} — Jev scored {score:.2f}/4 (🔴 at ≥ {threshold})"
+        score = result.scores[check_key]
+        issue = (
+            f"{check_key} — Jev scored {score:.2f}/4 "
+            f"(🔴 at ≥ {jev.THRESHOLDS[check_key]})"
+        )
         if check_key == "ai-patterns":
             families = sorted(
-                (
-                    (max(float(a[f"family_{name}"]["noul"]) for a in answers), name)
-                    for name in JEV_FAMILIES
-                ),
-                reverse=True,
+                ((result.nouls[f"family_{n}"], n) for n in jev.FAMILIES), reverse=True
             )
-            named = [f"{name} ({p:.2f})" for p, name in families if p >= 0.5]
-            if named:
+            if named := [f"{n} ({p:.2f})" for p, n in families if p >= 0.5]:
                 issue += "; heaviest patterns: " + ", ".join(named[:3])
             if hits:
                 issue += "; literal hits: " + "; ".join(hits[:3])
         checks[check_key].fail(issue)
+    for check_key in JEV_KEYS:
+        checks[check_key].detail = f"{result.scores[check_key]:.2f}"
     if hits:
         meta["literal_hits"] = hits
     return checks, meta
@@ -690,7 +468,7 @@ def run_file(
                 k,
                 status=NA,
                 detail="--no-jev",
-                blocking=jev_blocking and k in JEV_BLOCKABLE,
+                blocking=jev_blocking and k in jev.BLOCKABLE,
             )
             for k in JEV_KEYS
         }
@@ -706,11 +484,11 @@ def render(path: Path, checks: dict[str, Check], meta: dict) -> str:
         lines.append(f"{phase}: {cells}")
     if scores := meta.get("scores"):
         detail = " · ".join(
-            f"{k} {v:.2f}/{JEV_THRESHOLDS[k]:.1f}" + ("" if checks[k].blocking else "*")
+            f"{k} {v:.2f}/{jev.THRESHOLDS[k]:.1f}" + ("" if checks[k].blocking else "*")
             for k, v in scores.items()
         )
         lines.append(
-            f"Jev ({meta.get('model', JEV_MODEL)}, score/🔴-threshold): {detail}"
+            f"Jev ({meta.get('model', jev.MODEL)}, score/🔴-threshold): {detail}"
         )
         lines.append("  * advisory only — never fails the run")
     elif note := (meta.get("skipped") or meta.get("error")):
@@ -759,7 +537,7 @@ def main(
 
     permalinks, redirects = site_url_maps(root)
     rebased = check_rebased(root, base)
-    key = jev_key() if use_jev else None
+    key = jev.api_key() if use_jev else None
 
     results = []
     failed = False

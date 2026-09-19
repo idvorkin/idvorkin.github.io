@@ -10,6 +10,7 @@ import unittest
 from pathlib import Path
 from unittest import mock
 
+import jev_judge as jev
 import pr_checks as pc
 
 
@@ -224,66 +225,19 @@ class SiteUrlMapsTest(unittest.TestCase):
         self.assertEqual(redirects, {})
 
 
-class ChunkingTest(unittest.TestCase):
-    def test_short_text_is_one_chunk(self):
-        self.assertEqual(pc.chunk_text("short", limit=100), ["short"])
-
-    def test_splits_on_section_headings(self):
-        text = "## a\n" + "x" * 80 + "\n## b\n" + "y" * 80 + "\n"
-        chunks = pc.chunk_text(text, limit=100)
-        self.assertEqual(len(chunks), 2)
-        self.assertTrue(chunks[1].startswith("## b"))
-
-    def test_an_oversized_section_is_hard_split(self):
-        chunks = pc.chunk_text("## a\n" + "x" * 250, limit=100)
-        self.assertTrue(all(len(c) <= 100 for c in chunks))
-        self.assertEqual("".join(chunks), "## a\n" + "x" * 250)
-
-    def test_worst_takes_the_highest_score_across_chunks(self):
-        answers = [{"ai-patterns": {"score": 1.0}}, {"ai-patterns": {"score": 3.2}}]
-        self.assertEqual(pc.worst(answers, "ai-patterns"), 3.2)
-
-
-class JevKeyTest(unittest.TestCase):
-    def test_env_key_wins(self):
-        with mock.patch.dict(
-            "os.environ", {"OPENROUTER_API_KEY": "sk-env"}, clear=True
-        ):
-            self.assertEqual(pc.jev_key(), "sk-env")
-
-    def test_secret_box_fallback(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            box = Path(tmp) / "box.json"
-            box.write_text('{"OPEN_ROUTER_KEY": "sk-box"}')
-            with mock.patch.dict("os.environ", {"SECRET_BOX": str(box)}, clear=True):
-                self.assertEqual(pc.jev_key(), "sk-box")
-
-    def test_missing_everything_is_none(self):
-        with mock.patch.dict("os.environ", {}, clear=True):
-            self.assertIsNone(pc.jev_key())
-
-    def test_unreadable_secret_box_is_none_not_an_exception(self):
-        with mock.patch.dict(
-            "os.environ", {"SECRET_BOX": "/nope/missing.json"}, clear=True
-        ):
-            self.assertIsNone(pc.jev_key())
-
-
-def fake_response(
-    headers: float, voice: float, ai: float, families: dict | None = None
-) -> dict:
+def fake_jev(headers=0.1, voice=0.1, ai=0.1, families=None) -> dict:
     answers = {
         "headers": {"score": headers},
         "voice": {"score": voice},
         "ai-patterns": {"score": ai},
     }
-    for name in pc.JEV_FAMILIES:
+    for name in jev.FAMILIES:
         answers[f"family_{name}"] = {"noul": (families or {}).get(name, 0.05)}
     return {"answers": answers, "usage": {"cost": 0.0003}}
 
 
 class JevVerdictTest(unittest.TestCase):
-    """Verdict mapping, with the network mocked out."""
+    """Judgement -> Check mapping, with the network mocked out."""
 
     def test_no_key_marks_all_three_na_and_never_fails(self):
         checks, meta = pc.jev_checks(post("Prose."), None, blocking=True)
@@ -294,41 +248,33 @@ class JevVerdictTest(unittest.TestCase):
         self.assertIn("no OPENROUTER_API_KEY", meta["skipped"])
 
     def test_clean_scores_pass(self):
-        with mock.patch.object(
-            pc, "jev_ask", return_value=fake_response(0.1, 1.9, 0.8)
-        ):
+        with mock.patch.object(jev, "ask", return_value=fake_jev(voice=1.9, ai=0.8)):
             checks, meta = pc.jev_checks(post("Prose."), "sk", blocking=False)
         self.assertEqual([c.status for c in checks.values()], [pc.PASS] * 3)
         self.assertEqual(meta["scores"]["ai-patterns"], 0.8)
 
     def test_scores_at_the_threshold_fail(self):
-        with mock.patch.object(
-            pc, "jev_ask", return_value=fake_response(3.0, 3.5, 3.0)
-        ):
+        with mock.patch.object(jev, "ask", return_value=fake_jev(3.0, 3.5, 3.0)):
             checks, _ = pc.jev_checks(post("Prose."), "sk", blocking=False)
         self.assertEqual([c.status for c in checks.values()], [pc.FAIL] * 3)
 
     def test_only_ai_patterns_can_block(self):
-        with mock.patch.object(
-            pc, "jev_ask", return_value=fake_response(4.0, 4.0, 4.0)
-        ):
+        with mock.patch.object(jev, "ask", return_value=fake_jev(4.0, 4.0, 4.0)):
             checks, _ = pc.jev_checks(post("Prose."), "sk", blocking=True)
         self.assertTrue(checks["ai-patterns"].blocking)
         self.assertFalse(checks["headers"].blocking)
         self.assertFalse(checks["voice"].blocking)
 
     def test_nothing_blocks_under_advisory_jev(self):
-        with mock.patch.object(
-            pc, "jev_ask", return_value=fake_response(4.0, 4.0, 4.0)
-        ):
+        with mock.patch.object(jev, "ask", return_value=fake_jev(4.0, 4.0, 4.0)):
             checks, _ = pc.jev_checks(post("Prose."), "sk", blocking=False)
         self.assertFalse(any(c.blocking for c in checks.values()))
 
     def test_ai_patterns_failure_names_the_pattern_family(self):
-        response = fake_response(0.1, 0.1, 3.8, families={"editorializing": 0.92})
-        with mock.patch.object(pc, "jev_ask", return_value=response):
+        response = fake_jev(ai=3.8, families={"editorializing": 0.92})
+        with mock.patch.object(jev, "ask", return_value=response):
             checks, _ = pc.jev_checks(
-                post("It's important to note that x."), "sk", blocking=False
+                post("It's important to note that x."), "sk", False
             )
         issue = checks["ai-patterns"].issues[0]
         self.assertIn("editorializing (0.92)", issue)
@@ -337,36 +283,10 @@ class JevVerdictTest(unittest.TestCase):
     def test_a_failed_call_degrades_to_na(self):
         import urllib.error
 
-        with mock.patch.object(
-            pc, "jev_ask", side_effect=urllib.error.URLError("down")
-        ):
+        with mock.patch.object(jev, "ask", side_effect=urllib.error.URLError("down")):
             checks, meta = pc.jev_checks(post("Prose."), "sk", blocking=True)
         self.assertTrue(all(c.status == pc.NA for c in checks.values()))
         self.assertIn("error", meta)
-
-    def test_worst_chunk_wins(self):
-        responses = [fake_response(0.1, 0.1, 0.2), fake_response(0.1, 0.1, 3.9)]
-        long_body = (
-            "## a\n" + "x " * 20_000 + "\n## b\n" + "y " * 20_000
-        )  # 2 chunks at 60k
-        with mock.patch.object(pc, "jev_ask", side_effect=responses):
-            checks, meta = pc.jev_checks(post(long_body), "sk", blocking=False)
-        self.assertEqual(meta["chunks"], 2)
-        self.assertEqual(checks["ai-patterns"].status, pc.FAIL)
-
-
-class LiteralHitsTest(unittest.TestCase):
-    def test_reports_line_and_phrase(self):
-        hits = pc.literal_hits(
-            post("Fine.\n\nIt's important to note that this is filler.")
-        )
-        self.assertEqual(len(hits), 1)
-        self.assertIn("important to note", hits[0])
-
-    def test_clean_prose_has_none(self):
-        self.assertEqual(
-            pc.literal_hits(post("I biked to the gym and did get-ups.")), []
-        )
 
 
 class RenderTest(unittest.TestCase):
