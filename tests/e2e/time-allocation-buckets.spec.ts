@@ -1,5 +1,5 @@
 // ABOUTME: Verifies the time-allocation buckets include on the rendered /time-allocation page.
-// ABOUTME: Covers the weekday/weekend toggle, the shrink-tech slider, the ceiling markers and the numbers table.
+// ABOUTME: Covers the weekday/weekend toggle, the shrink-tech slider, the ceiling markers, the Tech expand and the table.
 
 import { type Page, expect, test } from "./base-test";
 
@@ -10,8 +10,10 @@ async function openChart(page: Page, width = 1280): Promise<void> {
   await page.goto("/time-allocation");
   await page.waitForLoadState("networkidle");
   await expect(page.locator(WIDGET)).toBeVisible();
-  // The script builds the five segments and five rows from its data block.
-  await expect(page.locator(`${WIDGET} .bkt-seg`)).toHaveCount(5);
+  // The script builds five bucket blocks, five rows, and Tech's three parts
+  // (drawn at zero width until Tech is opened) from its data block.
+  await expect(page.locator(`${WIDGET} .bkt-seg[data-id]`)).toHaveCount(5);
+  await expect(page.locator(`${WIDGET} .bkt-seg[data-part]`)).toHaveCount(3);
   await expect(page.locator(`${WIDGET} .bkt-row`)).toHaveCount(5);
 }
 
@@ -29,6 +31,21 @@ async function setShrink(page: Page, hours: string): Promise<void> {
   await slider.fill(hours);
   await slider.dispatchEvent("input");
   await expect(page.locator("#bkt-shrink-out")).toHaveText(`${hours}h`);
+}
+
+// Tech's hours and the hours of its three parts, as the reader sees them.
+async function techAndParts(page: Page): Promise<{ tech: number; parts: number[] }> {
+  return page.evaluate(() => {
+    const num = (el: Element | null) => Number.parseFloat((el?.textContent ?? "").replace("h", ""));
+    return {
+      tech: num(document.querySelector("#bkt-buckets .bkt-row .bkt-hours")),
+      parts: [...document.querySelectorAll("#bkt-buckets .bkt-subrow .bkt-hours")].map(num),
+    };
+  });
+}
+
+function sum(values: number[]): number {
+  return Math.round(values.reduce((a, b) => a + b, 0) * 10) / 10;
 }
 
 test.describe("Time allocation buckets chart", () => {
@@ -89,5 +106,67 @@ test.describe("Time allocation buckets chart", () => {
       () => document.documentElement.scrollWidth - document.documentElement.clientWidth,
     );
     expect(overflow).toBeLessThanOrEqual(1);
+  });
+
+  test("opening Tech shows its three parts, and they add back up to Tech", async ({ page }) => {
+    await openChart(page);
+
+    const toggle = page.locator("#bkt-tech-toggle");
+    const parts = page.locator(`${WIDGET} #bkt-tech-parts`);
+    await expect(toggle).toHaveAttribute("aria-expanded", "false");
+    await expect(parts).toBeHidden();
+    // Splitting Tech must not change the five top-level rows.
+    await expect(page.locator(`${WIDGET} .bkt-data tbody tr`)).toHaveCount(5);
+
+    // Keyboard, because the control is a real button and that is the point.
+    await toggle.focus();
+    await page.keyboard.press("Enter");
+    await expect(toggle).toHaveAttribute("aria-expanded", "true");
+    await expect(parts).toBeVisible();
+
+    await expect(page.locator(`${WIDGET} .bkt-subrow .bkt-name`)).toHaveText([
+      "Work",
+      "Side projects",
+      "Enabling environment",
+    ]);
+    await expect(page.locator(`${WIDGET} .bkt-row`)).toHaveCount(5);
+    await expect(page.locator(`${WIDGET} .bkt-data tbody tr`)).toHaveCount(8);
+
+    const atZero = await techAndParts(page);
+    expect(atZero.parts).toHaveLength(3);
+    expect(sum(atZero.parts)).toBe(atZero.tech);
+
+    // Shrinking tech drains the parts proportionally, and they still add up.
+    await setShrink(page, "4");
+    const atFour = await techAndParts(page);
+    expect(atFour.tech).toBeLessThan(atZero.tech);
+    expect(sum(atFour.parts)).toBe(atFour.tech);
+  });
+
+  test("closing Tech puts the single block back", async ({ page }) => {
+    await openChart(page);
+
+    const toggle = page.locator("#bkt-tech-toggle");
+    const parts = page.locator(`${WIDGET} #bkt-tech-parts`);
+    await toggle.click();
+    await expect(toggle).toHaveAttribute("aria-expanded", "true");
+
+    // While open, Tech is drawn as its parts rather than as one block.
+    await expect
+      .poll(() =>
+        page.evaluate(() => document.querySelector<HTMLElement>('#bkt-buckets .bkt-seg[data-id="tech"]')?.style.width),
+      )
+      .toBe("0%");
+
+    // Clicking a part block in the bar closes it again.
+    await page.locator(`${WIDGET} .bkt-seg[data-part="work"]`).click();
+    await expect(toggle).toHaveAttribute("aria-expanded", "false");
+    await expect(parts).toBeHidden();
+    await expect(page.locator(`${WIDGET} .bkt-data tbody tr`)).toHaveCount(5);
+    await expect
+      .poll(() =>
+        page.evaluate(() => document.querySelector<HTMLElement>('#bkt-buckets .bkt-seg[data-id="tech"]')?.style.width),
+      )
+      .not.toBe("0%");
   });
 });
