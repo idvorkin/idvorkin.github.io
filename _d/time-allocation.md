@@ -47,7 +47,7 @@ Four are investments. The fifth is what's left.
 
 ## The bucket I never scored
 
-I've written a weekly review for years — it's a big piece of the [mortality software](/mortality-software) I run on myself. It scores Work and Tech Guru, Family and Friends, Physical Health and Emotional Health, Identity Health and Magic. Every section is a good bucket. There is no section for consumption.
+I've written a weekly review for years. It's a big piece of the [mortality software](/mortality-software) I run on myself. It scores Work and Tech Guru, Family and Friends, physical and emotional habits, Identity Health and Magic. Every section is a good bucket. There is no section for consumption.
 
 So my ledger has a hole in exactly the shape of the problem. I can have a week where nothing scores well and no line item tells me where the hours went, because they went into the one box I never drew.
 
@@ -87,7 +87,7 @@ Don't kill the pleasure. Upgrade it.
 
 Here's the part that bothers me, and the reason I wrote any of this down.
 
-I used to think the move was to shrink tech. Claw back five hours from the screen and surely they show up somewhere good. They don't. When I shrink tech, relationships and identity do not grow. Consumption grows. Every time.
+I used to think the move was to shrink tech. Claw back five hours from the screen and surely they show up somewhere good. They don't. When I shrink tech, relationships and identity usually don't grow. Consumption does.
 
 The reason is [activation energy](/activation). Consumption has negative starting energy: the phone starts itself, no decision required. Enjoyment needs a person, which needs a text and a calendar and somebody else's yes, and it needs a moment worth remembering, which needs a little bit of a plan. One of those two is free and it's the wrong one.
 
