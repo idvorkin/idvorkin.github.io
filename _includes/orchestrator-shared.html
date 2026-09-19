@@ -1,0 +1,161 @@
+{%- comment -%} Shared orchestrator assets: the design tokens, the drawing's own
+styles, and the story data as JSON. Emitted at most once per page, so a page can
+hold several viewers without three copies of the copy or the CSS. The data comes
+from _data/orchestrator_blocks.yml. Anything that reads a step reads it from
+#orc-data, never from an inline array. {%- endcomment -%} {%- unless
+orc_shared_done -%} {%- assign orc_shared_done = true -%}
+
+<style>
+  .orc,
+  .orcv {
+    --orc-paper: #ffffff;
+    --orc-panel: #f2f4f6;
+    --orc-ink: #1b1f24;
+    --orc-ink-soft: #5a636e;
+    --orc-ink-faint: #8a929c;
+    --orc-rule: #d8dbe0;
+    --orc-accent: #2f6f8f;
+
+    --orc-c-ux: #1d4ed8;
+    --orc-c-ux-edge: #60a5fa;
+    --orc-c-control: #a16207;
+    --orc-c-control-edge: #facc15;
+    --orc-c-exec: #15803d;
+    --orc-c-exec2: #166534;
+    --orc-c-exec3: #14532d;
+    --orc-c-exec-edge: #4ade80;
+    --orc-c-land: #7e22ce;
+    --orc-c-land-edge: #c084fc;
+    --orc-c-ground: #374151;
+    --orc-c-ground-edge: #9ca3af;
+
+    --orc-mono:
+      ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+      "Liberation Mono", monospace;
+  }
+
+  /* The UA rule loses to `td`/`g` type selectors, so restate it in scope. */
+  .orc [hidden],
+  .orcv [hidden] {
+    display: none;
+  }
+
+  .orc-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Below this the column is too narrow to shrink the drawing into, so it
+     keeps its size and its canvas scrolls instead. */
+  @media (max-width: 700px) {
+    .orc-svg {
+      min-width: 520px;
+    }
+  }
+
+  .orc-brick rect {
+    stroke-width: 1.5;
+    transition: opacity 250ms ease;
+  }
+
+  .orc-bl {
+    font:
+      600 15px system-ui,
+      sans-serif;
+    text-anchor: middle;
+    dominant-baseline: middle;
+    fill: #fff;
+  }
+
+  .orc-bs {
+    font:
+      400 11px system-ui,
+      sans-serif;
+    text-anchor: middle;
+    dominant-baseline: middle;
+    fill: #ffffffb3;
+  }
+
+  .orc-layer {
+    font:
+      600 10px system-ui,
+      sans-serif;
+    letter-spacing: 0.12em;
+    text-anchor: end;
+    fill: currentColor;
+    opacity: 0.5;
+  }
+
+  .orc-ux rect {
+    fill: var(--orc-c-ux);
+    stroke: var(--orc-c-ux-edge);
+  }
+
+  .orc-control rect {
+    fill: var(--orc-c-control);
+    stroke: var(--orc-c-control-edge);
+  }
+
+  .orc-exec rect {
+    fill: var(--orc-c-exec);
+    stroke: var(--orc-c-exec-edge);
+  }
+
+  .orc-exec2 rect {
+    fill: var(--orc-c-exec2);
+    stroke: var(--orc-c-exec-edge);
+  }
+
+  .orc-exec3 rect {
+    fill: var(--orc-c-exec3);
+    stroke: var(--orc-c-exec-edge);
+  }
+
+  .orc-land rect {
+    fill: var(--orc-c-land);
+    stroke: var(--orc-c-land-edge);
+  }
+
+  .orc-ground rect {
+    fill: var(--orc-c-ground);
+    stroke: var(--orc-c-ground-edge);
+  }
+
+  .orc-slot rect {
+    fill: none;
+    stroke: currentColor;
+    stroke-dasharray: 4 4;
+    opacity: 0.3;
+  }
+
+  .orc-svg.off-ux .orc-ux,
+  .orc-svg.off-control .orc-control,
+  .orc-svg.off-exec .orc-exec,
+  .orc-svg.off-exec .orc-exec2,
+  .orc-svg.off-exec .orc-exec3,
+  .orc-svg.off-exec .orc-slot,
+  .orc-svg.off-land .orc-land {
+    opacity: 0.12;
+  }
+
+  .orc-new rect {
+    stroke: var(--orc-ink);
+    stroke-width: 3;
+  }
+
+  .orc-old {
+    opacity: 0.55;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .orc-brick rect {
+      transition: none;
+    }
+  }
+</style>
+
+<script type="application/json" id="orc-data">
+  {{ site.data.orchestrator_blocks | jsonify }}
+</script>
+{%- endunless -%}
