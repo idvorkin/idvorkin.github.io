@@ -69,10 +69,27 @@ module Jekyll
       site.data['git'] = {
         'branch' => branch,
         'pr_number' => pr_number,
+        'changed_pages' => changed_pages(site.source, branch),
         'generated_at' => Time.now.to_s
       }
 
       Jekyll.logger.info "Git data:", "Branch: #{branch}, PR: #{pr_number || 'none'} (from #{site.source})"
+    end
+
+    # Permalinks of the posts this branch changes, so the dev banner can link to them.
+    def changed_pages(source, branch)
+      return [] if %w[unknown main master].include?(branch)
+      Dir.chdir(source) do
+        base = %w[upstream/main origin/main].map { |ref| `git merge-base HEAD #{ref} 2>/dev/null`.strip }.find { |sha| !sha.empty? }
+        files = base ? `git diff --name-only #{base} -- _d _posts _td`.split("\n") : []
+        files += `git ls-files -m -o --exclude-standard -- _d _posts _td`.split("\n")
+        files.uniq.sort.filter_map do |f|
+          File.file?(f) && File.foreach(f).first(40).join[/^permalink:\s*(\/\S*)/, 1]
+        end
+      end
+    rescue => e
+      Jekyll.logger.warn "Git data:", "Failed to list changed pages: #{e.message}"
+      []
     end
   end
 end

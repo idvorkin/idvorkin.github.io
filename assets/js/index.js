@@ -45,7 +45,7 @@ async function v(e) {
     return console.error("Error fetching link info", n), {};
   }
 }
-async function kn() {
+async function $n() {
   try {
     const e = await v(), t = Object.keys(e).filter((o) => {
       const i = ["/404", "/404.html", "/search", "/recent", "/index.html", "/graph", "/about", "/random"].some((l) => o === l || o.endsWith(l)), a = [
@@ -121,7 +121,7 @@ function se(e) {
     `;
   return t;
 }
-function ze(e, t) {
+function De(e, t) {
   return `
     <div class="remaining-posts-section">
       <h2 id="remaining-posts-toggle" class="remaining-toggle">
@@ -133,7 +133,7 @@ function ze(e, t) {
     </div>
   `;
 }
-function De() {
+function ze() {
   return `
     <style>
       .last-modified-list {
@@ -202,9 +202,9 @@ function Ue(e, t = 15) {
   let i = se(r);
   if (o.length > 0) {
     const s = ie(o), a = se(s);
-    i += ze(a, o.length);
+    i += De(a, o.length);
   }
-  return De() + i;
+  return ze() + i;
 }
 async function ae(e = "last-modified-posts", t = 15, n = document) {
   const o = n.getElementById(e);
@@ -224,10 +224,10 @@ function Fe(e = "last-modified-posts", t = document) {
     ae(e, 15, t);
   }) : ae(e, 15, t);
 }
-function je(e, t = 5) {
+function Ge(e, t = 5) {
   return e.slice(0, t);
 }
-function Ge(e) {
+function je(e) {
   return e.length === 0 ? "<p>No recent posts found.</p>" : `
     <ul>
       ${e.map(
@@ -249,7 +249,7 @@ async function le(e = "recent-posts") {
     return;
   }
   try {
-    const n = await xe(), o = je(n), r = Ge(o);
+    const n = await xe(), o = Ge(n), r = je(o);
     t.innerHTML = r;
   } catch (n) {
     console.error("❌ Error loading recent posts:", n), t.innerHTML = "<p>Error loading recent posts. Please try again later.</p>";
@@ -386,11 +386,15 @@ function Qe() {
   return e && typeof e == "number" ? (console.log("PR from global variable:", e), e) : (console.log("PR info not found"), null);
 }
 function et() {
-  return window.location.port || "80";
+  const e = window.__GIT_CHANGED__;
+  return Array.isArray(e) ? e.filter((t) => typeof t == "string" && t.startsWith("/")) : [];
 }
 function tt() {
+  return window.location.port || "80";
+}
+function nt() {
   console.log("Initializing dev info...");
-  const e = Ze(), t = Qe(), n = et();
+  const e = Ze(), t = Qe(), n = tt();
   if (console.log("Dev info - Branch:", e, "PR:", t, "Port:", n), (e || t) && n !== "80" && n !== "443") {
     const o = document.createElement("div");
     o.id = "dev-info-banner", o.style.cssText = `
@@ -410,12 +414,18 @@ function tt() {
     let r = "";
     if (e && (r += `<i class="fas fa-code-branch"></i> Branch: <code style="background: black; color: white; padding: 2px 6px; border-radius: 3px;">${e}</code>`), t) {
       e && (r += " | ");
-      const s = `https://github.com/idvorkin/idvorkin.github.io/pull/${t}`;
-      r += `<i class="fas fa-code-pull-request"></i> PR: <a href="${s}" target="_blank" style="color: #58a6ff; text-decoration: none;"><code style="background: black; color: #58a6ff; padding: 2px 6px; border-radius: 3px;">#${t}</code></a>`;
+      const a = `https://github.com/idvorkin/idvorkin.github.io/pull/${t}`;
+      r += `<i class="fas fa-code-pull-request"></i> PR: <a href="${a}" target="_blank" style="color: #58a6ff; text-decoration: none;"><code style="background: black; color: #58a6ff; padding: 2px 6px; border-radius: 3px;">#${t}</code></a>`;
     }
-    (e || t) && n && (r += " | "), r += `<i class="fas fa-server"></i> Port: <code style="background: black; color: white; padding: 2px 6px; border-radius: 3px;">${n}</code>`, o.innerHTML = r, document.body.appendChild(o);
-    const i = Number.parseInt(window.getComputedStyle(document.body).paddingTop) || 0;
-    document.body.style.paddingTop = `${i + 40}px`;
+    (e || t) && n && (r += " | "), r += `<i class="fas fa-server"></i> Port: <code style="background: black; color: white; padding: 2px 6px; border-radius: 3px;">${n}</code>`;
+    const i = et();
+    if (i.length) {
+      const a = i.map((l) => `<a href="${encodeURI(l)}" style="color: #58a6ff; text-decoration: none;">${l.replace(/[<>&"]/g, "")}</a>`).join(" ");
+      r += ` | <i class="fas fa-file-pen"></i> Changed: ${a}`;
+    }
+    o.innerHTML = r, document.body.appendChild(o);
+    const s = Number.parseInt(window.getComputedStyle(document.body).paddingTop) || 0;
+    document.body.style.paddingTop = `${s + 40}px`;
   }
 }
 const ee = {
@@ -426,7 +436,7 @@ const ee = {
     to: "idvorkin.azurewebsites.net/"
   }
 };
-function nt(e) {
+function ot(e) {
   const t = document.createElement("span");
   return t.className = e.iconClass || ee.iconClass, t.title = "Share this section", t.style.cursor = "pointer", t.style.marginLeft = "0.5rem", t.style.opacity = "0", t.style.transition = "opacity 0.2s ease", t.style.fontSize = "0.8em", t.style.userSelect = "none", t.setAttribute("role", "button"), t.setAttribute("tabindex", "0"), t.setAttribute("aria-label", "Share this section"), t.innerHTML = `<svg width="16" height="20" viewBox="0 0 16 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
     <!-- Upward arrow -->
@@ -436,7 +446,7 @@ function nt(e) {
     <path d="M3 8 L3 17 Q3 18 4 18 L12 18 Q13 18 13 17 L13 8"/>
   </svg>`, t;
 }
-function ot() {
+function rt() {
   const e = document.createElement("span");
   if (e.className = "header-github-issue", e.title = "Create GitHub issue for this section", e.style.cursor = "pointer", e.style.marginLeft = "0.5rem", e.style.opacity = "0", e.style.transition = "opacity 0.2s ease", e.style.fontSize = "0.8em", e.style.userSelect = "none", e.setAttribute("role", "button"), e.setAttribute("tabindex", "0"), e.setAttribute("aria-label", "Create GitHub issue for this section"), !!(document.querySelector('link[href*="font-awesome"]') || document.querySelector('script[src*="font-awesome"]') || document.querySelector(".fa, .fab, .fas, .far") || // Check for inline styles that might include Font Awesome
   Array.from(document.styleSheets).some((n) => {
@@ -452,7 +462,7 @@ function ot() {
     e.textContent = "⚠️";
   return e;
 }
-function rt(e, t) {
+function it(e, t) {
   const n = document.createElement("div");
   n.className = "github-issue-popup", n.style.display = "none", n.id = `github-issue-popup-${e}`;
   const o = document.createElement("div");
@@ -477,14 +487,14 @@ function rt(e, t) {
   p.className = "github-issue-popup-buttons";
   const g = document.createElement("button");
   g.className = "github-issue-submit", g.textContent = "Create Issue on GitHub";
-  const m = document.createElement("button");
-  m.className = "github-issue-cancel", m.textContent = "Cancel", p.appendChild(g), p.appendChild(m);
+  const f = document.createElement("button");
+  f.className = "github-issue-cancel", f.textContent = "Cancel", p.appendChild(g), p.appendChild(f);
   const h = document.createElement("div");
   h.className = "github-issue-popup-hint";
   const b = document.createElement("small");
   return b.textContent = "Tip: Press Ctrl+Enter (Cmd+Enter on Mac) to submit", h.appendChild(b), a.appendChild(l), a.appendChild(c), a.appendChild(d), a.appendChild(u), a.appendChild(p), a.appendChild(h), o.appendChild(r), o.appendChild(a), n.appendChild(o), n;
 }
-function it(e, t) {
+function st(e, t) {
   document.querySelectorAll(".github-issue-popup").forEach((s) => {
     s.style.display = "none";
   }), e.style.display = "block", e.style.position = "absolute", e.style.zIndex = "1000";
@@ -493,12 +503,12 @@ function it(e, t) {
   const i = e.querySelector(".github-issue-title");
   i && i.focus();
 }
-function z(e) {
+function D(e) {
   e.style.display = "none";
   const t = e.querySelector(".github-issue-comment");
   t && (t.value = "");
 }
-function st(e, t = 2e3) {
+function at(e, t = 2e3) {
   if (typeof document < "u" && document.querySelector) {
     const o = document.querySelector(".copy-link-tooltip");
     o && o.remove();
@@ -519,8 +529,8 @@ function ce(e) {
       if (p?.match(/^H[1-6]$/)) {
         const g = Number.parseInt(p.substring(1));
         if (g < s && !u.has(g)) {
-          const m = Array.from(c.childNodes).filter((h) => h.nodeType === Node.TEXT_NODE).map((h) => h.textContent?.trim()).join(" ").trim();
-          if (m && (d.push({ level: g, text: m }), u.add(g)), g === 1) break;
+          const f = Array.from(c.childNodes).filter((h) => h.nodeType === Node.TEXT_NODE).map((h) => h.textContent?.trim()).join(" ").trim();
+          if (f && (d.push({ level: g, text: f }), u.add(g)), g === 1) break;
         }
       }
       c = c.previousElementSibling;
@@ -541,9 +551,9 @@ function de(e, t) {
   const o = new URL(n), r = o.pathname.replace(/^\//, "").replace(/\.html$/, "") || "index", i = o.hash.replace("#", "");
   return i ? `${r}#${i}` : r;
 }
-async function at(e, t) {
+async function lt(e, t) {
   try {
-    const n = window.location.href, o = n.includes("#") ? n.replace(/#.*/, `#${e}`) : `${n}#${e}`, r = de(o, t), i = `https://tinyurl.com/igor-blog/?path=${encodeURIComponent(r)}`, s = document.getElementById(e), l = `${s ? Array.from(s.childNodes).filter((m) => m.nodeType === Node.TEXT_NODE).map((m) => m.textContent?.trim()).join(" ").trim() : ""} - Igor's Blog`, c = pe(e), d = ce(s);
+    const n = window.location.href, o = n.includes("#") ? n.replace(/#.*/, `#${e}`) : `${n}#${e}`, r = de(o, t), i = `https://tinyurl.com/igor-blog/?path=${encodeURIComponent(r)}`, s = document.getElementById(e), l = `${s ? Array.from(s.childNodes).filter((f) => f.nodeType === Node.TEXT_NODE).map((f) => f.textContent?.trim()).join(" ").trim() : ""} - Igor's Blog`, c = pe(e), d = ce(s);
     let u = `From: ${d} ...`;
     c && (u = `From: ${d} ...
 
@@ -557,8 +567,8 @@ ${c}`), fetch(i).catch(() => {
           text: u,
           url: i
         }), console.log(`📱 Shared via native share: ${i}`), !0;
-      } catch (m) {
-        console.log("Share cancelled or failed, falling back to clipboard", m);
+      } catch (f) {
+        console.log("Share cancelled or failed, falling back to clipboard", f);
       }
     let g = i;
     return c && (g = `From: ${d} ...
@@ -583,7 +593,7 @@ ${s}`);
     }
   }
 }
-function lt(e) {
+function ct(e) {
   if (e.id)
     return e.id;
   const n = (e.textContent || "").toLowerCase().replace(/[^\w\s-]/g, "").replace(/\s+/g, "-").replace(/-+/g, "-").replace(/^-|-$/g, "");
@@ -720,7 +730,7 @@ function pe(e) {
   }
   return "";
 }
-function ct(e, t, n, o, r) {
+function dt(e, t, n, o, r) {
   const s = window.location.pathname.replace(/^\//, "").replace(/\.html$/, ""), a = document.querySelector('meta[property="markdown-path"]'), l = a ? a.getAttribute("content") : `${s || "index"}.md`, c = "https://github.com/idvorkin/idvorkin.github.io", d = n ? `${s || "index"}/${e}: ${n}` : `${s || "index"}/${e}: Issue with ${t}`, u = encodeURIComponent(d), p = o || n || `Issue with section: ${t}`, g = r ? Ee(r) : "";
   let h = `${`📍 [${s || "index"}](https://idvorkin.azurewebsites.net/${s})/[${e}](https://idvorkin.azurewebsites.net/${s}/${e}) - [[GitHub]](${c}/blob/main/${l}#${e})`}
 
@@ -739,25 +749,25 @@ ${p}
   const b = encodeURIComponent(h);
   return `${c}/issues/new?title=${u}&body=${b}`;
 }
-const Y = /* @__PURE__ */ new WeakMap(), X = /* @__PURE__ */ new WeakMap(), dt = /* @__PURE__ */ new Set();
-function ut(e, t) {
+const Y = /* @__PURE__ */ new WeakMap(), X = /* @__PURE__ */ new WeakMap(), ut = /* @__PURE__ */ new Set();
+function pt(e, t) {
   let n = X.get(e);
-  return n || (n = rt(t, e.textContent || ""), document.body.appendChild(n), X.set(e, n), pt(n, e, t)), n;
+  return n || (n = it(t, e.textContent || ""), document.body.appendChild(n), X.set(e, n), ft(n, e, t)), n;
 }
-function pt(e, t, n) {
+function ft(e, t, n) {
   const o = [], r = e.querySelector(".github-issue-popup-close");
   if (r) {
-    const p = () => z(e);
+    const p = () => D(e);
     r.addEventListener("click", p), o.push(() => r.removeEventListener("click", p));
   }
   const i = e.querySelector(".github-issue-cancel");
   if (i) {
-    const p = () => z(e);
+    const p = () => D(e);
     i.addEventListener("click", p), o.push(() => i.removeEventListener("click", p));
   }
   const s = () => {
-    const p = e.querySelector(".github-issue-title"), g = e.querySelector(".github-issue-comment"), m = p?.value || "", h = g?.value || "", b = ct(n, t.textContent || "", m, h, t);
-    window.open(b, "_blank"), z(e);
+    const p = e.querySelector(".github-issue-title"), g = e.querySelector(".github-issue-comment"), f = p?.value || "", h = g?.value || "", b = dt(n, t.textContent || "", f, h, t);
+    window.open(b, "_blank"), D(e);
   }, a = e.querySelector(".github-issue-submit");
   a && (a.addEventListener("click", s), o.push(() => a.removeEventListener("click", s)));
   const l = e.querySelector(".github-issue-title"), c = e.querySelector(".github-issue-comment"), d = (p) => {
@@ -770,23 +780,23 @@ function pt(e, t, n) {
 function mt(e, t) {
   if (e.querySelector(`.${t.iconClass || ee.iconClass}`))
     return;
-  const o = lt(e), r = nt(t), i = ot(), s = [], a = async (m) => {
-    m.preventDefault(), m.stopPropagation(), await at(o, t) || st(r, t.tooltipDuration);
+  const o = ct(e), r = ot(t), i = rt(), s = [], a = async (f) => {
+    f.preventDefault(), f.stopPropagation(), await lt(o, t) || at(r, t.tooltipDuration);
   };
   r.addEventListener("click", a), s.push(() => r.removeEventListener("click", a));
-  const l = (m) => {
-    (m.key === "Enter" || m.key === " ") && (m.preventDefault(), a(m));
+  const l = (f) => {
+    (f.key === "Enter" || f.key === " ") && (f.preventDefault(), a(f));
   };
   r.addEventListener("keydown", l), s.push(() => r.removeEventListener("keydown", l));
-  const c = (m) => {
-    m.preventDefault(), m.stopPropagation();
-    const h = ut(e, o);
-    it(h, e);
+  const c = (f) => {
+    f.preventDefault(), f.stopPropagation();
+    const h = pt(e, o);
+    st(h, e);
   };
   i.addEventListener("click", c), s.push(() => i.removeEventListener("click", c));
-  const d = (m) => {
+  const d = (f) => {
     const h = X.get(e);
-    h && !h.contains(m.target) && m.target !== i && !i.contains(m.target) && h.style.display !== "none" && z(h);
+    h && !h.contains(f.target) && f.target !== i && !i.contains(f.target) && h.style.display !== "none" && D(h);
   }, u = setTimeout(() => {
     typeof document > "u" || (document.addEventListener("click", d, !0), s.push(() => document.removeEventListener("click", d, !0)));
   }, 100);
@@ -798,14 +808,14 @@ function mt(e, t) {
   };
   e.addEventListener("mouseenter", p), e.addEventListener("mouseleave", g), s.push(() => {
     e.removeEventListener("mouseenter", p), e.removeEventListener("mouseleave", g);
-  }), Y.set(e, s), dt.add(e);
+  }), Y.set(e, s), ut.add(e);
 }
-function me(e = {}) {
+function fe(e = {}) {
   const t = { ...ee, ...e }, n = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
   for (const o of Array.from(n))
     mt(o, t);
 }
-function ft() {
+function gt() {
   const e = "header-copy-link-styles";
   if (document.getElementById(e))
     return;
@@ -988,13 +998,13 @@ function ft() {
     }
   `, document.head.appendChild(t);
 }
-let fe = !1;
-function gt(e = {}) {
-  fe || (fe = !0, ft(), document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", () => {
-    me(e);
-  }) : me(e));
+let me = !1;
+function ht(e = {}) {
+  me || (me = !0, gt(), document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", () => {
+    fe(e);
+  }) : fe(e));
 }
-const V = 50, K = 100, ht = V * K;
+const V = 50, K = 100, bt = V * K;
 function U(e = 0) {
   if (typeof document > "u")
     return;
@@ -1006,7 +1016,7 @@ function U(e = 0) {
       return;
     }
     console.error(
-      `❌ GLightbox failed to load after ${ht / 1e3} seconds, aborting image zoom initialization`
+      `❌ GLightbox failed to load after ${bt / 1e3} seconds, aborting image zoom initialization`
     );
     return;
   }
@@ -1062,11 +1072,11 @@ function ge() {
   }
   Z ? (e.addClass("expand"), t.text("Collapse all")) : (e.removeClass("expand"), t.text("Expand all"));
 }
-const bt = "https://idvork.in", Q = "idvorkin_dev_origin";
-function yt() {
+const yt = "https://idvork.in", Q = "idvorkin_dev_origin";
+function _t() {
   return window.location.hostname === "idvork.in";
 }
-function _t(e) {
+function wt(e) {
   try {
     const t = new URL(e), n = t.hostname;
     return n === "localhost" || n === "127.0.0.1" || n.endsWith(".ts.net") ? !0 : t.port !== "" && t.port !== "80" && t.port !== "443";
@@ -1074,21 +1084,21 @@ function _t(e) {
     return !1;
   }
 }
-function wt() {
+function vt() {
   if (document.referrer)
     try {
       const e = new URL(document.referrer).origin;
-      _t(e) && localStorage.setItem(Q, e);
+      wt(e) && localStorage.setItem(Q, e);
     } catch {
     }
 }
-function vt() {
+function xt() {
   const e = `${window.location.pathname}${window.location.search}${window.location.hash}`;
-  if (yt()) {
+  if (_t()) {
     const t = localStorage.getItem(Q) || "http://localhost:4000";
     window.location.href = `${t}${e}`;
   } else
-    localStorage.setItem(Q, window.location.origin), window.location.href = `${bt}${e}`;
+    localStorage.setItem(Q, window.location.origin), window.location.href = `${yt}${e}`;
 }
 function Ce() {
   const e = $("#right-sidebar"), t = $("#main-content");
@@ -1122,7 +1132,7 @@ function he(e, t) {
     l.preventDefault(), l.stopPropagation(), window.scrollTo(0, document.body.scrollHeight);
   }), a.click((l) => Ce()), o.append(r).append(i).append(s), t && o.append(a), n.append(o);
 }
-async function xt(e) {
+async function kt(e) {
   let t, n, o;
   try {
     if (!e) {
@@ -1186,7 +1196,7 @@ async function xt(e) {
   const c = r.find("#graph"), d = t.replace(/\//g, "");
   c.append(`<a href='/graph#${d}'>${t} (${d}) </a>`);
 }
-function kt(e, t) {
+function $t(e, t) {
   if (!t)
     return S(e, "URL info is undefined");
   const n = t.url || "#", o = t.title || "Untitled", r = t.description || "No description available", i = `(From:<a href='${n}'> ${o}</a>)`;
@@ -1197,7 +1207,7 @@ function kt(e, t) {
 function S(e, t) {
   return `<span class='text-danger'>Error: Invalid link for ${e?.attr ? e.attr("href") : "unknown"} ${t} </span>`;
 }
-function $t(e) {
+function Et(e) {
   if (!e) {
     console.log("No backlinks data available");
     return;
@@ -1228,7 +1238,7 @@ function $t(e) {
           o.html(S(o, "not found in url info"));
           return;
         }
-        o.html(kt(o, e.url_info[r]));
+        o.html($t(o, e.url_info[r]));
       } catch (r) {
         o?.html ? o.html(S(o, r)) : console.error("Error processing link and unable to display error:", r);
       }
@@ -1237,12 +1247,12 @@ function $t(e) {
     console.error("Error processing summary links:", t);
   }
 }
-async function Et() {
+async function Ct() {
   const e = "__idvorkin_add_link_loader_initialized__";
-  window[e] || (window[e] = !0, xt(await v()), $t(await Ct()));
+  window[e] || (window[e] = !0, kt(await v()), Et(await Tt()));
 }
 let M = null;
-async function Ct() {
+async function Tt() {
   try {
     if (M != null)
       return M;
@@ -1260,9 +1270,9 @@ async function Ct() {
 function Lt() {
   window.location.href = "/";
 }
-function Tt() {
+function St() {
   const e = window.Mousetrap();
-  e.bind("s", (n) => Lt()), e.bind("t", (n) => Ce()), e.bind("p", (n) => vt()), e.bind("a", (n) => {
+  e.bind("s", (n) => Lt()), e.bind("t", (n) => Ce()), e.bind("p", (n) => xt()), e.bind("a", (n) => {
     location.href = "/all";
   }), e.bind("m", (n) => {
     location.href = "/toc";
@@ -1283,7 +1293,7 @@ Try these shortcuts:
   `;
   e.bind("?", (n) => alert(t));
 }
-function St(e) {
+function It(e) {
   for (const [t, n] of Object.entries(e)) {
     const o = typeof $ < "u" && $.fn ? $(`a[href=${t}]`).first()[0] : document.querySelector(`a[href="${t}"]`);
     if (!o) return;
@@ -1291,7 +1301,7 @@ function St(e) {
     r.children.length > 0 && r.children[0].remove(), o.replaceWith(r), n.remove();
   }
 }
-function It() {
+function Nt() {
   const e = {}, t = typeof $ < "u" && $.fn ? $("ul").toArray() : Array.from(document.querySelectorAll("ul"));
   for (const n of t) {
     const o = n.firstElementChild;
@@ -1303,17 +1313,17 @@ function It() {
   }
   return e;
 }
-function G() {
-  const e = It();
-  St(e);
+function j() {
+  const e = Nt();
+  It(e);
 }
-function D() {
+function z() {
   const e = "__idvorkin_load_globals_initialized__";
-  window[e] || (window[e] = !0, wt(), $(Et), $(Tt), typeof $ < "u" && $.fn && $.fn.ready ? $(document).ready(G) : typeof document < "u" && (document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", G) : G()), We(), document.getElementById("last-modified-posts") && Fe(), $(() => {
+  window[e] || (window[e] = !0, vt(), $(Ct), $(St), typeof $ < "u" && $.fn && $.fn.ready ? $(document).ready(j) : typeof document < "u" && (document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", j) : j()), We(), document.getElementById("last-modified-posts") && Fe(), $(() => {
     he("ui-toc", !0), he("ui-toc-affix", !1);
-  }), gt(), U(), tt());
+  }), ht(), U(), nt());
 }
-typeof $ < "u" && $.fn && $.fn.ready ? $(document).ready(D) : typeof document < "u" && (document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", D) : D());
+typeof $ < "u" && $.fn && $.fn.ready ? $(document).ready(z) : typeof document < "u" && (document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", z) : z());
 function W(e) {
   const t = $("<div/>"), n = `<h4> <a href='${e.url}'}>${e.title}</a></h4>`, o = [
     "January",
@@ -1344,24 +1354,24 @@ function W(e) {
       </div>`
   )) : t.append(s), t.html();
 }
-function Nt(e) {
+function Pt(e) {
   return e.filter((t) => t.title.toLowerCase().includes("achievement"));
 }
-function Pt(e) {
+function Mt(e) {
   return e.filter((t) => t.tags.includes("family-journal"));
 }
-function Mt(e) {
+function At(e) {
   if (console.log("Processing", e.length, "posts"), !e) {
     console.log("No posts being imported");
     return;
   }
   const t = "#random-post", n = "#achievment", o = "#random-recent";
-  E(t, () => W(x(e))), E(n, () => W(x(Nt(e)))), E(o, () => W(x(Pt(e))));
+  E(t, () => W(x(e))), E(n, () => W(x(Pt(e)))), E(o, () => W(x(Mt(e))));
 }
 function te() {
-  $.getJSON("/ig66/ig66-export.json", Mt);
+  $.getJSON("/ig66/ig66-export.json", At);
 }
-function At(e) {
+function Ht(e) {
   const t = e.title.replace(/ /g, "%20"), n = ["igor", "ammon"];
   return `
   <div>
@@ -1372,17 +1382,17 @@ function At(e) {
   </div>
   `;
 }
-function Ht(e, t) {
+function Rt(e, t) {
   if (!t) {
     console.log("No roles being imported");
     return;
   }
-  console.log("Processing", t.roles.length, "roles"), E(e, () => At(x(t.roles)));
+  console.log("Processing", t.roles.length, "roles"), E(e, () => Ht(x(t.roles)));
 }
 function ne(e) {
-  $.getJSON("/eulogy.json", (n) => Ht(e, n));
+  $.getJSON("/eulogy.json", (n) => Rt(e, n));
 }
-class f {
+class m {
   constructor({
     name: t,
     value: n = 25,
@@ -1391,18 +1401,18 @@ class f {
     this.name = t, this.children = ve(o), this.value = n;
   }
 }
-function oe(e = Le, t = Rt) {
+function oe(e = Te, t = Bt) {
   const n = e();
   for (const o of n.keys())
     t(o, n.get(o));
 }
-function Rt(e, t, n = $, o = E) {
+function Bt(e, t, n = $, o = E) {
   const r = () => `<span>${x(
     t
   )}</span><span style="float: right; cursor: pointer;" title="Click for another prompt">🔄</span>`, i = n('<div class="alert alert-primary" role="alert"/>');
   n(e).after(i), o(i, r);
 }
-function Le(e = $) {
+function Te(e = $) {
   const t = e("h3").first();
   let n = t, o = [];
   const r = /* @__PURE__ */ new Map();
@@ -1426,7 +1436,7 @@ function* F(e) {
     yield [n, o];
   }
 }
-function Bt(e) {
+function Dt(e) {
   const t = Array.from(F(e)).map(([n, o]) => [n.name, o?.name]);
   return {
     ids: t.map(([n, o]) => n),
@@ -1434,7 +1444,7 @@ function Bt(e) {
     parents: t.map(([n, o]) => o)
   };
 }
-function be(e = Le) {
+function be(e = Te) {
   const t = e(), n = Array.from(t.entries()).map(([o, r], i) => [o.text(), r]);
   return new Map(n);
 }
@@ -1455,7 +1465,7 @@ function zt(e, t = document) {
     if (n(r.textContent ?? "") === o) return r;
   return null;
 }
-function Dt(e, t = window) {
+function Ot(e, t = window) {
   const n = zt(e, t.document);
   return n ? (n.scrollIntoView({ behavior: "smooth", block: "start" }), n.id && t.history?.replaceState && t.history.replaceState(null, "", `#${n.id}`), !0) : !1;
 }
@@ -1464,7 +1474,7 @@ async function re(e, t, n, o = $, r = Plotly) {
     console.error("Plotly is not available");
     return;
   }
-  const i = Bt(n), s = {
+  const i = Dt(n), s = {
     type: "sunburst",
     outsidetextfont: { size: 20, color: "#377eb8" },
     // leaf: {opacity: 0.4},
@@ -1494,17 +1504,17 @@ async function re(e, t, n, o = $, r = Plotly) {
       if (u?.points?.[0]) {
         const p = u.points[0].label, g = ye(p, n, be());
         c(g);
-        const m = Array.from(F(n)).find(
-          ([b, j]) => b.name === p
-        ), h = m ? m[0] : void 0;
-        h && !h.children?.length && Dt(p);
+        const f = Array.from(F(n)).find(
+          ([b, G]) => b.name === p
+        ), h = f ? f[0] : void 0;
+        h && !h.children?.length && Ot(p);
       }
     }), d;
   } catch (c) {
     return console.error("Failed to create sunburst plot:", c), null;
   }
 }
-function Ot(e = "Root", t = null, n = $) {
+function Ut(e = "Root", t = null, n = $) {
   const o = t ? n(t).find("h2") : n("h2"), r = [];
   return o.each((i, s) => {
     const a = n(s), l = a.text().trim();
@@ -1514,34 +1524,34 @@ function Ot(e = "Root", t = null, n = $) {
     for (; d.length > 0 && d.prop("tagName") !== "H2"; ) {
       if (d.prop("tagName") === "H3") {
         const u = d.text().trim();
-        u && c.push(new f({ name: u }));
+        u && c.push(new m({ name: u }));
       }
       d = d.next();
     }
-    c.length > 0 && r.push(new f({ name: l, children: c }));
-  }), new f({ name: e, children: r });
+    c.length > 0 && r.push(new m({ name: l, children: c }));
+  }), new m({ name: e, children: r });
 }
-async function Ut(e, t, n = "Root", o = null, r = $, i = Plotly) {
-  const s = Ot(n, o, r);
+async function Ft(e, t, n = "Root", o = null, r = $, i = Plotly) {
+  const s = Ut(n, o, r);
   return re(e, t, s, r, i);
 }
-class Ft {
+class Gt {
   /**
    * Gets the tree structure for Seven Habits visualization
    * @returns {TreeNode} The root node of the Seven Habits tree
    */
   get_tree() {
-    return new f({
+    return new m({
       name: "7H ",
       children: [
-        new f({ name: "" }),
-        new f({ name: "Be Proactive" }),
-        new f({ name: "Begin with the end in mind" }),
-        new f({ name: "First things First" }),
-        new f({ name: "Think Win/Win" }),
-        new f({ name: "First Understand" }),
-        new f({ name: "Synergize" }),
-        new f({ name: "Sharpen the Saw" })
+        new m({ name: "" }),
+        new m({ name: "Be Proactive" }),
+        new m({ name: "Begin with the end in mind" }),
+        new m({ name: "First things First" }),
+        new m({ name: "Think Win/Win" }),
+        new m({ name: "First Understand" }),
+        new m({ name: "Synergize" }),
+        new m({ name: "Sharpen the Saw" })
       ]
     });
   }
@@ -1552,39 +1562,39 @@ class jt {
    * @returns {TreeNode} The root node of the Things I Enjoy tree
    */
   get_tree() {
-    const t = new f({
+    const t = new m({
       name: "Health",
       children: [{ name: "Physical" }, { name: "Emotional" }, { name: "Cognative" }],
       value: 31
-    }), n = new f({
+    }), n = new m({
       name: "Magic",
       children: [
-        new f({ name: "Card Magic" }),
-        new f({ name: "Coin Magic" }),
-        new f({ name: "Band Magic" })
+        new m({ name: "Card Magic" }),
+        new m({ name: "Coin Magic" }),
+        new m({ name: "Band Magic" })
       ]
-    }), o = new f({
+    }), o = new m({
       name: "Hobbies",
-      children: [new f({ name: "Biking" }), new f({ name: "Tech" }), new f({ name: "Juggling" })]
-    }), r = new f({
+      children: [new m({ name: "Biking" }), new m({ name: "Tech" }), new m({ name: "Juggling" })]
+    }), r = new m({
       name: "Relationships",
       children: [
-        new f({ name: "Zach" }),
-        new f({ name: "Amelia" }),
-        new f({ name: "Tori" }),
-        new f({ name: "Friends" })
+        new m({ name: "Zach" }),
+        new m({ name: "Amelia" }),
+        new m({ name: "Tori" }),
+        new m({ name: "Friends" })
       ]
-    }), i = new f({
+    }), i = new m({
       name: "Joy",
-      children: [new f({ name: "Balloons" }), new f({ name: "Joy to Others" })]
+      children: [new m({ name: "Balloons" }), new m({ name: "Joy to Others" })]
     });
-    return new f({
+    return new m({
       name: "Invest in",
       children: [t, n, o, r, i]
     });
   }
 }
-function Gt({ url: e, title: t, description: n }) {
+function Wt({ url: e, title: t, description: n }) {
   const o = `<a href='${e}'}>${t}</a>`, r = `audio_player_${Math.floor(Math.random() * 1e10)}`, i = e.replace(/\//g, "_");
   return `
     <div>
@@ -1595,10 +1605,10 @@ function Gt({ url: e, title: t, description: n }) {
     </div>
   `;
 }
-async function Te(e = v, t = x) {
+async function Le(e = v, t = x) {
   try {
     const n = await e(), o = Object.entries(n).map((i) => i[1]), r = t(o);
-    return Gt({
+    return Wt({
       url: r.url,
       title: r.title,
       description: r.description
@@ -1607,23 +1617,23 @@ async function Te(e = v, t = x) {
     return console.error("Error generating random post HTML:", n), "<div>Could not load random post</div>";
   }
 }
-function $n(e = "#e1", t = "#e2", n = "#e3", o = ne) {
+function En(e = "#e1", t = "#e2", n = "#e3", o = ne) {
   try {
     o(e), o(t), o(n);
   } catch (r) {
     console.error("Error loading random eulogy:", r);
   }
 }
-function En(e = re, t = oe, n = te, o = ne, r = E) {
+function Cn(e = re, t = oe, n = te, o = ne, r = E) {
   try {
-    e("sunburst", "sunburst_text", new jt().get_tree()), t(), n(), o("#random-eulogy-role"), r("#random-blog-posts", async () => await Te());
+    e("sunburst", "sunburst_text", new jt().get_tree()), t(), n(), o("#random-eulogy-role"), r("#random-blog-posts", async () => await Le());
   } catch (i) {
     console.error("❌ Error loading enjoy page:", i);
   }
 }
-function Cn(e = re, t = oe) {
+function Tn(e = re, t = oe) {
   try {
-    e("sunburst", "sunburst_text", new Ft().get_tree()), t();
+    e("sunburst", "sunburst_text", new Gt().get_tree()), t();
   } catch (n) {
     console.error("Error loading 7 habits page:", n);
   }
@@ -1635,7 +1645,7 @@ function Ln(e = te) {
     console.error("Error loading IG66 page:", t);
   }
 }
-function Tn(e = Jt, t = qt, n = Wt) {
+function Sn(e = Yt, t = Jt, n = qt) {
   try {
     e("balance-heatmap-rest"), t("balance-heatmap-work"), n("balance-radar-map-ideal");
   } catch (o) {
@@ -1643,7 +1653,7 @@ function Tn(e = Jt, t = qt, n = Wt) {
   }
 }
 const Se = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"], Ie = 20, Ne = 100, Pe = "#00BF00";
-async function Wt(e, t) {
+async function qt(e, t) {
   const n = [
     {
       type: "scatterpolar",
@@ -1679,7 +1689,7 @@ async function Wt(e, t) {
   else
     console.warn("Plotly is not defined, skipping chart rendering");
 }
-async function qt(e, t) {
+async function Jt(e, t) {
   const n = ["Tech", "Work"], o = {
     height: Ie * n.length + Ne,
     margin: {
@@ -1719,7 +1729,7 @@ async function qt(e, t) {
   else
     console.warn("Plotly is not defined, skipping chart rendering");
 }
-async function Jt(e, t) {
+async function Yt(e, t) {
   const n = ["Health", "Hobbies", "Family", "Magic"], o = [
     // J, F, M, A, M, J, J, A, S, O, N, D
     [4, 4, 3, 4, 5, 3, 2, 2, 3, 2],
@@ -1764,14 +1774,14 @@ async function Jt(e, t) {
   else
     console.warn("Plotly is not defined, skipping chart rendering");
 }
-function Sn(e = "Topics", t = Ut, n = oe, o = te, r = ne, i = E) {
+function In(e = "Topics", t = Ft, n = oe, o = te, r = ne, i = E) {
   try {
-    t("sunburst", "sunburst_text", e), n(), o(), r("#random-eulogy-role"), i("#random-blog-posts", async () => await Te());
+    t("sunburst", "sunburst_text", e), n(), o(), r("#random-eulogy-role"), i("#random-blog-posts", async () => await Le());
   } catch (s) {
     console.error("Error loading auto-generated sunburst:", s);
   }
 }
-const k = 150, Yt = 2500, Xt = 12e3, Vt = 2, Kt = /* @__PURE__ */ new Set([
+const k = 150, Xt = 2500, Vt = 12e3, Kt = 2, Zt = /* @__PURE__ */ new Set([
   "ArrowUp",
   "ArrowDown",
   "ArrowLeft",
@@ -1783,7 +1793,7 @@ const k = 150, Yt = 2500, Xt = 12e3, Vt = 2, Kt = /* @__PURE__ */ new Set([
   " ",
   "Spacebar"
 ]);
-function Zt(e, t = document) {
+function Qt(e, t = document) {
   const n = e.startsWith("#") ? e.slice(1) : e;
   if (!n) return null;
   let o = n;
@@ -1799,23 +1809,23 @@ function Zt(e, t = document) {
   }
   return null;
 }
-function Qt(e, t = window) {
+function en(e, t = window) {
   const n = e.ownerDocument, o = n.scrollingElement || n.documentElement, r = (a) => {
     const l = Number.parseFloat(a);
     return Number.isFinite(l) ? l : 0;
   }, i = r(t.getComputedStyle(o).scrollPaddingTop), s = r(t.getComputedStyle(e).scrollMarginTop);
   return e.getBoundingClientRect().top - i - s;
 }
-function en(e = window) {
+function tn(e = window) {
   const t = () => {
   }, n = e.document;
   if (!e.location.hash || e.__readerScrolled || e.performance?.getEntriesByType?.("navigation")?.[0]?.type === "back_forward") return t;
-  let r = !1, i = 0, s = 0, l = (e.performance?.now?.() ?? Date.now()) + Xt;
+  let r = !1, i = 0, s = 0, l = (e.performance?.now?.() ?? Date.now()) + Vt;
   const c = () => e.performance?.now?.() ?? Date.now(), d = () => {
     if (!r) {
       r = !0, e.clearTimeout(s), e.removeEventListener("scroll", g);
       for (const _ of ["wheel", "touchstart", "mousedown", "keydown"])
-        e.removeEventListener(_, m, !0);
+        e.removeEventListener(_, f, !0);
       b?.disconnect();
     }
   }, u = () => {
@@ -1828,12 +1838,12 @@ function en(e = window) {
       p(k);
       return;
     }
-    const _ = Zt(e.location.hash, n);
+    const _ = Qt(e.location.hash, n);
     if (!_) {
       p(k);
       return;
     }
-    Math.abs(Qt(_, e)) > Vt && _.scrollIntoView({ block: "start", behavior: "auto" }), p(k);
+    Math.abs(en(_, e)) > Kt && _.scrollIntoView({ block: "start", behavior: "auto" }), p(k);
   };
   function p(_) {
     r || (e.clearTimeout(s), s = e.setTimeout(u, _));
@@ -1841,32 +1851,32 @@ function en(e = window) {
   function g() {
     i = c();
   }
-  function m(_) {
-    _.type === "keydown" && !Kt.has(_.key) || d();
+  function f(_) {
+    _.type === "keydown" && !Zt.has(_.key) || d();
   }
   e.addEventListener("scroll", g, { passive: !0 });
   for (const _ of ["wheel", "touchstart", "mousedown", "keydown"])
-    e.addEventListener(_, m, { passive: !0, capture: !0 });
+    e.addEventListener(_, f, { passive: !0, capture: !0 });
   const h = e.ResizeObserver, b = typeof h == "function" ? new h(() => p(k)) : void 0;
   b && n.body && b.observe(n.body), b && n.documentElement && b.observe(n.documentElement);
-  const j = () => {
-    l = Math.min(l, c() + Yt), p(k);
+  const G = () => {
+    l = Math.min(l, c() + Xt), p(k);
   };
-  return n.readyState === "complete" ? j() : e.addEventListener("load", j, { once: !0 }), p(k), d;
+  return n.readyState === "complete" ? G() : e.addEventListener("load", G, { once: !0 }), p(k), d;
 }
-function tn() {
+function nn() {
   if (!(typeof window > "u"))
     return window["@algolia/autocomplete-js"]?.autocomplete;
 }
-const nn = "Search Igor's Musings ...", _e = "/pagefind/", on = "/search-titles.json";
-function L(e) {
+const on = "Search Igor's Musings ...", _e = "/pagefind/", rn = "/search-titles.json";
+function T(e) {
   const t = document.createElement("div");
   return t.textContent = e || "", t.innerHTML;
 }
 function I(e) {
-  return L(e).replace(/"/g, "&quot;");
+  return T(e).replace(/"/g, "&quot;");
 }
-function T(e) {
+function L(e) {
   if (!e) return !1;
   if (e.startsWith("/"))
     return !0;
@@ -1877,14 +1887,14 @@ function T(e) {
     return !1;
   }
 }
-function rn(e) {
+function sn(e) {
   return e && e.replace(/\/index\.html$/, "/").replace(/\.html$/, "");
 }
-const sn = "/search-pins.json";
+const an = "/search-pins.json";
 let A = null;
-async function an() {
+async function ln() {
   return A || (A = (async () => {
-    const e = await fetch(sn);
+    const e = await fetch(an);
     if (!e.ok) throw new Error(`pins config HTTP ${e.status}`);
     const t = await e.json();
     if (!Array.isArray(t)) throw new Error("pins config is not an array");
@@ -1894,8 +1904,8 @@ async function an() {
 function we(e) {
   return e.toLowerCase().replace(/[\s-]+/g, "");
 }
-async function ln(e) {
-  const t = await an();
+async function cn(e) {
+  const t = await ln();
   if (!t || t.length === 0) return [];
   const n = we(e), o = t.filter((i) => i.match?.some((s) => s && n.includes(we(s))));
   if (o.length === 0) return [];
@@ -1905,10 +1915,10 @@ async function ln(e) {
     title: r?.[i.url]?.title || i.title || i.url,
     excerpt: r?.[i.url]?.description || "",
     source: "pinned"
-  })).filter((i) => T(i.url));
+  })).filter((i) => L(i.url));
 }
 let H = null;
-async function cn() {
+async function dn() {
   return H || (H = (async () => {
     const e = await import(
       /* @vite-ignore */
@@ -1919,24 +1929,24 @@ async function cn() {
     throw H = null, e;
   })), H;
 }
-async function dn(e, t = 10) {
+async function un(e, t = 10) {
   if (!e || !e.trim()) return [];
   try {
-    const r = (await (await cn()).search(e)).results.slice(0, t);
+    const r = (await (await dn()).search(e)).results.slice(0, t);
     return (await Promise.all(r.map((s) => s.data()))).map((s) => ({
-      url: rn(s.url),
+      url: sn(s.url),
       title: s.meta?.title || s.url,
       excerpt: s.excerpt || "",
       source: "pagefind"
-    })).filter((s) => T(s.url));
+    })).filter((s) => L(s.url));
   } catch (n) {
     return console.warn("Pagefind unavailable, falling back to title search:", n), [];
   }
 }
 let R = null;
-async function un() {
+async function pn() {
   return R || (R = (async () => {
-    const [{ default: e }, t] = await Promise.all([import("./minisearch.js"), fetch(on)]);
+    const [{ default: e }, t] = await Promise.all([import("./minisearch.js"), fetch(rn)]);
     if (!t.ok) throw new Error(`title index HTTP ${t.status}`);
     const o = (await t.json()).map((i, s) => ({ id: s, title: i.t, url: i.u })), r = new e({
       fields: ["title"],
@@ -1945,9 +1955,9 @@ async function un() {
     return r.addAll(o), r;
   })().catch((e) => (console.warn("Title index unavailable:", e), R = null, null))), R;
 }
-async function pn(e, t = 5) {
+async function fn(e, t = 5) {
   if (!e || !e.trim()) return [];
-  const n = await un();
+  const n = await pn();
   if (!n) return [];
   const o = await v().catch(() => ({}));
   return n.search(e, { fuzzy: 0.3, prefix: !0 }).slice(0, t).map((r) => ({
@@ -1955,33 +1965,33 @@ async function pn(e, t = 5) {
     title: r.title,
     excerpt: o?.[r.url]?.description || "",
     source: "title"
-  })).filter((r) => T(r.url));
+  })).filter((r) => L(r.url));
 }
 async function mn(e, t = 10) {
   if (!e || !e.trim()) return [];
   const [n, o, r] = await Promise.all([
-    ln(e),
-    dn(e, t),
-    pn(e, 5)
+    cn(e),
+    un(e, t),
+    fn(e, 5)
   ]), i = /* @__PURE__ */ new Set(), s = [];
   for (const a of [...n, ...o, ...r])
     i.has(a.url) || (i.add(a.url), s.push(a));
   return s.slice(0, t);
 }
-function fn(e) {
-  return e.source === "pagefind" ? e.excerpt || "" : L(e.excerpt || "");
-}
 function gn(e) {
-  if (!T(e.url))
+  return e.source === "pagefind" ? e.excerpt || "" : T(e.excerpt || "");
+}
+function hn(e) {
+  if (!L(e.url))
     return console.warn("Invalid URL skipped in renderSearchHit:", e.url), "<div>Invalid result</div>";
   const t = I(e.url);
   return `
            <span data-url="${t}" style="cursor: pointer;">
-              <b> <a href="${t}">${L(e.title)}</a></b> <span>${fn(e)}</span>
+              <b> <a href="${t}">${T(e.title)}</a></b> <span>${gn(e)}</span>
            </span>
         `;
 }
-async function hn() {
+async function bn() {
   const e = performance.now(), t = await v(), n = performance.now() - e;
   console.log(`  📊 [get_random_post] Loaded links in ${n.toFixed(0)}ms`);
   const o = Object.entries(t).map((s) => s[1]), r = x(o);
@@ -1991,7 +2001,7 @@ async function hn() {
     description: r.description
   };
 }
-async function In(e = 4) {
+async function Nn(e = 4) {
   const t = performance.now(), n = await v(), o = performance.now() - t;
   console.log(`  📊 [get_random_posts_batch] Loaded links once in ${o.toFixed(0)}ms`);
   const r = Object.entries(n).map((a) => a[1]), i = [], s = /* @__PURE__ */ new Set();
@@ -2009,7 +2019,7 @@ async function In(e = 4) {
   }
   return i;
 }
-async function bn(e = 4) {
+async function yn(e = 4) {
   try {
     const t = performance.now(), n = await v(), o = performance.now() - t;
     return console.log(`  📊 [get_recent_posts] Loaded links in ${o.toFixed(0)}ms`), Object.entries(n).map(([a, l]) => ({
@@ -2025,7 +2035,7 @@ async function bn(e = 4) {
     return console.error("❌ Error loading recent posts:", t), [];
   }
 }
-async function yn(e = 3) {
+async function _n(e = 3) {
   return {
     sourceId: "random_posts",
     async getItems() {
@@ -2033,7 +2043,7 @@ async function yn(e = 3) {
       return await Promise.all(
         t.map(async (o) => {
           try {
-            return await hn();
+            return await bn();
           } catch (r) {
             return console.error("Error getting random post:", r), { url: "", title: "Error", description: "Failed to load post" };
           }
@@ -2045,12 +2055,12 @@ async function yn(e = 3) {
     },
     templates: {
       item({ item: t, createElement: n }) {
-        return T(t.url) ? n("div", {
+        return L(t.url) ? n("div", {
           dangerouslySetInnerHTML: {
             __html: `
             <span data-url="${I(t.url)}" style="cursor: pointer;">
-           <b> <a href="${I(t.url)}">${L(t.title)}</a></b>
-            <span>${L(t.description)}</span>
+           <b> <a href="${I(t.url)}">${T(t.title)}</a></b>
+            <span>${T(t.description)}</span>
             </span>
             `
           }
@@ -2070,23 +2080,23 @@ async function yn(e = 3) {
     }
   };
 }
-async function _n(e = 4) {
+async function wn(e = 4) {
   return {
     sourceId: "recent_posts",
     async getItems() {
-      return await bn(e);
+      return await yn(e);
     },
     getItemUrl({ item: t }) {
       return t.url;
     },
     templates: {
       item({ item: t, createElement: n }) {
-        return T(t.url) ? n("div", {
+        return L(t.url) ? n("div", {
           dangerouslySetInnerHTML: {
             __html: `
             <span data-url="${I(t.url)}" style="cursor: pointer;">
-           <b> <a href="${I(t.url)}">${L(t.title)}</a></b>
-            <span>${L(t.description)}</span>
+           <b> <a href="${I(t.url)}">${T(t.title)}</a></b>
+            <span>${T(t.description)}</span>
             </span>
             `
           }
@@ -2106,7 +2116,7 @@ async function _n(e = 4) {
     }
   };
 }
-function wn(e, t = 10) {
+function vn(e, t = 10) {
   return {
     sourceId: "featured_posts",
     async getItems() {
@@ -2116,7 +2126,7 @@ function wn(e, t = 10) {
       item({ item: n, createElement: o }) {
         return o("div", {
           dangerouslySetInnerHTML: {
-            __html: gn(n)
+            __html: hn(n)
           }
         });
       },
@@ -2140,15 +2150,15 @@ function wn(e, t = 10) {
     }
   };
 }
-async function Nn(e, t = {}) {
-  const { featuredCount: n = 10, recentCount: o = 4, randomCount: r = 3 } = t, i = tn();
+async function Pn(e, t = {}) {
+  const { featuredCount: n = 10, recentCount: o = 4, randomCount: r = 3 } = t, i = nn();
   if (!i) {
     console.error("Autocomplete is not defined");
     return;
   }
-  const s = await yn(r), a = await _n(o);
+  const s = await _n(r), a = await wn(o);
   function l({ query: d }) {
-    return !d || d.length === 0 ? [a, s] : [wn(d, n)];
+    return !d || d.length === 0 ? [a, s] : [vn(d, n)];
   }
   const c = e.startsWith("#") ? e : `#${e}`;
   if ($(c).length === 0) {
@@ -2157,60 +2167,60 @@ async function Nn(e, t = {}) {
   }
   return i({
     container: c,
-    placeholder: nn,
+    placeholder: on,
     getSources: l,
     debug: !1,
     openOnFocus: !0,
     detachedMediaQuery: ""
   });
 }
-en();
+tn();
 $(document).ready(() => {
-  Me(D);
+  Me(z);
   const e = () => {
     typeof Mousetrap < "u" && Mousetrap.bind("s", () => t());
   }, t = () => {
     const o = $("#search-box");
     o.length > 0 && o.focus();
   };
-  e(), vn(), xn();
+  e(), xn(), kn();
   const n = ["item1", "item2", "item3"];
   console.log("Random item:", x(n)), console.log("Shuffled items:", ve([...n])), v().then((o) => {
     console.log("Links loaded, count:", Object.keys(o).length);
   }), console.log("Blog JavaScript initialized");
 });
-function vn() {
+function xn() {
   $("#toc-content").length > 0 && console.log("TOC initialized");
 }
-function xn() {
+function kn() {
   $("#search-box").length > 0 && console.log("Search initialized");
 }
 export {
-  Nn as CreateAutoComplete,
+  Pn as CreateAutoComplete,
   q as MakeBackLinkHTML,
-  f as TreeNode,
+  m as TreeNode,
   oe as add_random_prompts,
   re as add_sunburst,
-  Ut as add_sunburst_from_dom,
+  Ft as add_sunburst_from_dom,
   E as append_randomizer_div,
   Me as defer,
   v as get_link_info,
-  kn as get_random_page_url,
-  hn as get_random_post,
-  In as get_random_posts_batch,
-  bn as get_recent_posts,
+  $n as get_random_page_url,
+  bn as get_random_post,
+  Nn as get_random_posts_batch,
+  yn as get_recent_posts,
   Fe as initRecentAllPosts,
-  Cn as load_7_habits,
-  Sn as load_auto_sunburst,
-  Tn as load_balance,
-  En as load_enjoy2,
-  D as load_globals,
+  Tn as load_7_habits,
+  In as load_auto_sunburst,
+  Sn as load_balance,
+  Cn as load_enjoy2,
+  z as load_globals,
   Ln as load_ig66,
-  $n as load_random_eulogy,
-  Gt as makePostPreviewHTML,
-  Te as make_random_post_html,
+  En as load_random_eulogy,
+  Wt as makePostPreviewHTML,
+  Le as make_random_post_html,
   x as random_from_list,
-  gn as renderSearchHit,
+  hn as renderSearchHit,
   mn as searchBlog,
   ve as shuffle
 };

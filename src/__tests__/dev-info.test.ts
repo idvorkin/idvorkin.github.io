@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { getCurrentPort, getCurrentPR, isDevServer } from "../dev-info";
+import { getChangedPages, getCurrentPR, getCurrentPort, isDevServer } from "../dev-info";
 
 describe("dev-info", () => {
   let originalLocation: Location;
@@ -61,6 +61,23 @@ describe("dev-info", () => {
     it("should return null when PR is not a number", () => {
       (window as any).__GIT_PR__ = "not-a-number";
       expect(getCurrentPR()).toBe(null);
+    });
+  });
+
+  describe("getChangedPages", () => {
+    it("returns the permalinks the build embedded", () => {
+      (window as any).__GIT_CHANGED__ = ["/time-allocation", "/build-life-you-want"];
+      expect(getChangedPages()).toEqual(["/time-allocation", "/build-life-you-want"]);
+    });
+
+    it("drops anything that is not a site path", () => {
+      (window as any).__GIT_CHANGED__ = ["/ok", "https://evil.example", 7, null];
+      expect(getChangedPages()).toEqual(["/ok"]);
+    });
+
+    it("is empty when the build embedded nothing", () => {
+      (window as any).__GIT_CHANGED__ = null;
+      expect(getChangedPages()).toEqual([]);
     });
   });
 });
