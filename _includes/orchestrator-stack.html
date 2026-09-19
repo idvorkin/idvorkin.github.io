@@ -1,10 +1,12 @@
-{% comment %} Orchestrator stack — the brick diagram, a stepper that builds it
-one problem at a time, and the "who fills each brick" table. Self-contained: no
-parameters, no libraries, no network, no build step. Edit the STEPS block at the
-top of the script for the stepper; the SVG bricks carry data-from / data-until,
-which is what ties a brick to the step that introduces it. The table is plain
-markup so it reads fine with JavaScript off; the toggles are added by the
-script. Used by: _d/ai-orchestrator.md {% endcomment %}
+{% comment %} Orchestrator stack — the building-block diagram, a stepper that
+builds it one problem at a time, and the "who fills each block" table. One white
+bordered figure holds the drawing, the controls, the step text and the dots.
+Self-contained: no parameters, no libraries, no network, no build step. Edit the
+STEPS block at the top of the script for the stepper; the SVG blocks carry
+data-from / data-until, which is what ties a block to the step that introduces
+it. The .orc-brick class name is historical and stays; nothing user-visible says
+brick. The table is plain markup so it reads fine with JavaScript off; the
+toggles are added by the script. Used by: _d/ai-orchestrator.md {% endcomment %}
 
 <style>
   .orc {
@@ -36,7 +38,7 @@ script. Used by: _d/ai-orchestrator.md {% endcomment %}
     box-sizing: border-box;
     max-width: 980px;
     margin: 2.5em auto;
-    padding: 1.5rem 1.5rem 1.25rem;
+    padding: 1.25rem 1.25rem 1rem;
     background: var(--orc-paper);
     border: 1px solid var(--orc-rule);
     border-radius: 3px;
@@ -58,29 +60,27 @@ script. Used by: _d/ai-orchestrator.md {% endcomment %}
   }
 
   .orc-sub {
-    margin: 0.35rem 0 0;
+    margin: 0.3rem 0 0;
     font-size: 0.85rem;
-    line-height: 1.45;
+    line-height: 1.4;
     color: var(--orc-ink-soft);
-    max-width: 56ch;
+    max-width: 74ch;
   }
 
-  /* The diagram gets the full column: a side-by-side split would squeeze an
-     800-unit-wide drawing into ~470px and the labels stop being readable. */
-  .orc-grid {
-    display: grid;
-    gap: 1.1rem;
-    grid-template-columns: minmax(0, 1fr);
-    padding-top: 1.1rem;
-  }
-
+  /* One figure holds the drawing, the controls, the step text and the dots, so
+     the whole widget is a single white box at a single width. The drawing gets
+     the full column: a side-by-side split would squeeze an 800-unit-wide
+     drawing into ~470px and the labels stop being readable. */
   .orc-figure {
-    margin: 0;
-    padding: 0.6rem;
-    background: var(--orc-panel);
+    margin: 0.9rem 0 0;
+    padding: 0.7rem 0.8rem 0.8rem;
+    background: var(--orc-paper);
     border: 1px solid var(--orc-rule);
     border-radius: 3px;
-    /* Keeps the diagram legible on a phone without pushing the page sideways. */
+  }
+
+  /* Keeps the diagram legible on a phone without pushing the page sideways. */
+  .orc-canvas {
     overflow-x: auto;
   }
 
@@ -91,7 +91,7 @@ script. Used by: _d/ai-orchestrator.md {% endcomment %}
   }
 
   /* Below this the column is too narrow to shrink the drawing into, so it
-     keeps its size and the figure scrolls instead. */
+     keeps its size and the canvas scrolls instead. */
   @media (max-width: 700px) {
     .orc-svg {
       min-width: 520px;
@@ -99,7 +99,7 @@ script. Used by: _d/ai-orchestrator.md {% endcomment %}
   }
 
   .orc-hint {
-    margin: 0.45rem 0 0;
+    margin: 0.35rem 0 0;
     font-family: var(--orc-mono);
     font-size: 0.62rem;
     letter-spacing: 0.04em;
@@ -113,18 +113,22 @@ script. Used by: _d/ai-orchestrator.md {% endcomment %}
     }
   }
 
-  .orc-controls {
+  /* Controls, step dots and the counter share one row, which is one row of
+     height cheaper than stacking them. */
+  .orc-bar {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 0.5rem;
-    padding-bottom: 0.7rem;
+    gap: 0.3rem;
+    margin-top: 0.6rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid var(--orc-rule);
   }
 
   .orc-btn {
     appearance: none;
     margin: 0;
-    padding: 0.45rem 0.7rem;
+    padding: 0.4rem 0.6rem;
     border: 1px solid var(--orc-ink);
     border-radius: 2px;
     background: var(--orc-paper);
@@ -166,64 +170,22 @@ script. Used by: _d/ai-orchestrator.md {% endcomment %}
 
   .orc-count {
     margin-left: auto;
+    padding-left: 0.5rem;
     font-family: var(--orc-mono);
     font-size: 0.65rem;
     color: var(--orc-ink-faint);
   }
 
-  .orc-card {
-    max-width: 46rem;
-    padding: 0.9rem 1rem 1rem;
-    background: var(--orc-panel);
-    border: 1px solid var(--orc-rule);
-    border-radius: 3px;
-  }
-
-  .orc-bridge {
-    margin: 0;
-    font-size: 0.8rem;
-    font-style: italic;
-    line-height: 1.4;
-    color: var(--orc-ink-faint);
-  }
-
-  .orc-bridge:empty {
-    display: none;
-  }
-
-  .orc-step-title {
-    margin: 0.3rem 0 0;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.1rem;
-    font-weight: 700;
-    line-height: 1.25;
-  }
-
-  .orc-label {
-    margin: 0.85rem 0 0.2rem;
-    font-family: var(--orc-mono);
-    font-size: 0.6rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--orc-ink-faint);
-  }
-
-  .orc-body {
-    margin: 0;
-    font-size: 0.88rem;
-    line-height: 1.5;
-  }
-
   .orc-dots {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.25rem;
-    padding-top: 0.7rem;
+    gap: 0.22rem;
+    margin-left: 0.5rem;
   }
 
   .orc-dot {
-    min-width: 1.7rem;
-    padding: 0.3rem 0.35rem;
+    min-width: 1.6rem;
+    padding: 0.28rem 0.3rem;
     font-size: 0.62rem;
     letter-spacing: 0.03em;
   }
@@ -233,8 +195,61 @@ script. Used by: _d/ai-orchestrator.md {% endcomment %}
     color: var(--orc-paper);
   }
 
+  .orc-step {
+    margin-top: 0.6rem;
+  }
+
+  .orc-bridge {
+    margin: 0;
+    font-size: 0.78rem;
+    font-style: italic;
+    line-height: 1.35;
+    color: var(--orc-ink-faint);
+  }
+
+  .orc-bridge:empty {
+    display: none;
+  }
+
+  .orc-step-title {
+    margin: 0 0 0.35rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+
+  /* Problem and solution sit next to each other, which halves the text block. */
+  .orc-cols {
+    display: grid;
+    gap: 0.1rem 1.6rem;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  @media (max-width: 640px) {
+    .orc-cols {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 0.5rem;
+    }
+  }
+
+  .orc-label {
+    margin: 0 0 0.15rem;
+    font-family: var(--orc-mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--orc-ink-faint);
+  }
+
+  .orc-body {
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.45;
+  }
+
   .orc-h {
-    margin: 1.8rem 0 0.3rem;
+    margin: 1.4rem 0 0.3rem;
     font-family: Georgia, "Times New Roman", serif;
     font-size: 1.05rem;
     font-weight: 700;
@@ -245,7 +260,7 @@ script. Used by: _d/ai-orchestrator.md {% endcomment %}
     flex-wrap: wrap;
     align-items: center;
     gap: 0.35rem 0.9rem;
-    padding: 0.35rem 0;
+    padding: 0.3rem 0;
   }
 
   .orc-toggles-label {
@@ -268,7 +283,7 @@ script. Used by: _d/ai-orchestrator.md {% endcomment %}
 
   .orc-table-wrap {
     overflow-x: auto;
-    padding-top: 0.6rem;
+    padding-top: 0.5rem;
   }
 
   .orc-table {
@@ -346,8 +361,8 @@ script. Used by: _d/ai-orchestrator.md {% endcomment %}
   }
 
   .orc-foot {
-    margin: 0.9rem 0 0;
-    padding-top: 0.8rem;
+    margin: 0.8rem 0 0;
+    padding-top: 0.7rem;
     border-top: 1px solid var(--orc-rule);
     font-size: 0.75rem;
     line-height: 1.5;
@@ -390,15 +405,6 @@ script. Used by: _d/ai-orchestrator.md {% endcomment %}
     text-anchor: end;
     fill: currentColor;
     opacity: 0.5;
-  }
-
-  .orc-you rect {
-    fill: none;
-    stroke: currentColor;
-  }
-
-  .orc-you .orc-bl {
-    fill: currentColor;
   }
 
   .orc-ux rect {
@@ -464,11 +470,15 @@ script. Used by: _d/ai-orchestrator.md {% endcomment %}
 
   @media (max-width: 640px) {
     .orc {
-      padding: 1.1rem 1rem 1rem;
+      padding: 1rem 0.9rem 0.9rem;
     }
     .orc-count {
       margin-left: 0;
+      padding-left: 0;
       width: 100%;
+    }
+    .orc-dots {
+      margin-left: 0;
     }
   }
 
@@ -480,320 +490,316 @@ script. Used by: _d/ai-orchestrator.md {% endcomment %}
 </style>
 
 <div class="orc" id="orc-stack">
-  <h3 class="orc-title">The stack of bricks</h3>
+  <h3 class="orc-title">The building blocks</h3>
   <p class="orc-sub">
-    Nothing here is needed on day one. Every brick was added because one agent
-    in a terminal broke in a specific way. Step through the breaks.
+    Nothing here is needed on day one. Every block arrived because one agent in
+    a terminal broke. Step through the breaks.
   </p>
 
-  <div class="orc-grid">
-    <figure class="orc-figure">
+  <figure class="orc-figure">
+    <div class="orc-canvas">
       <svg
         class="orc-svg"
-        viewBox="0 0 800 500"
+        viewBox="0 0 800 322"
         role="img"
-        aria-label="The orchestrator drawn as a stack of bricks: a human UX layer on top, then control, execution and landing, sitting on your repos"
+        aria-label="The orchestrator drawn as a stack of building blocks: a human UX layer on top, then control, execution and landing, sitting on your repos"
       >
-        <text x="104" y="102.0" class="orc-layer" data-from="0">HUMAN UX</text>
-        <text x="104" y="172.0" class="orc-layer" data-from="1">CONTROL</text>
-        <text x="104" y="279.0" class="orc-layer" data-from="2">EXECUTION</text>
-        <text x="104" y="386.0" class="orc-layer" data-from="7">LANDING</text>
-        <text x="104" y="453.0" class="orc-layer" data-from="0">GROUND</text>
-        <g class="orc-brick orc-you" data-from="0">
-          <title>You</title>
-          <rect x="400" y="8" width="100" height="40" rx="20" />
-          <text x="450" y="28" class="orc-bl">You</text>
-        </g>
+        <text x="104" y="31.5" class="orc-layer" data-from="0">HUMAN UX</text>
+        <text x="104" y="82.5" class="orc-layer" data-from="1">CONTROL</text>
+        <text x="104" y="163.5" class="orc-layer" data-from="2">EXECUTION</text>
+        <text x="104" y="255.5" class="orc-layer" data-from="7">LANDING</text>
+        <text x="104" y="305.5" class="orc-layer" data-from="0">GROUND</text>
         <g class="orc-brick orc-ux" data-from="8">
           <title>Rich review: annotate artifacts, decide</title>
-          <rect x="357" y="65" width="18" height="6" rx="2" />
-          <rect x="391" y="65" width="18" height="6" rx="2" />
-          <rect x="425" y="65" width="18" height="6" rx="2" />
-          <rect x="459" y="65" width="18" height="6" rx="2" />
-          <rect x="493" y="65" width="18" height="6" rx="2" />
-          <rect x="527" y="65" width="18" height="6" rx="2" />
-          <rect x="345" y="70" width="209" height="56" rx="6" />
-          <text x="450.0" y="92.0" class="orc-bl">Rich review</text>
-          <text x="450.0" y="110.0" class="orc-bs">pages you annotate</text>
+          <rect x="357" y="1" width="18" height="6" rx="2" />
+          <rect x="391" y="1" width="18" height="6" rx="2" />
+          <rect x="425" y="1" width="18" height="6" rx="2" />
+          <rect x="459" y="1" width="18" height="6" rx="2" />
+          <rect x="493" y="1" width="18" height="6" rx="2" />
+          <rect x="527" y="1" width="18" height="6" rx="2" />
+          <rect x="345" y="6" width="209" height="44" rx="6" />
+          <text x="450.0" y="22.0" class="orc-bl">Rich review</text>
+          <text x="450.0" y="37.0" class="orc-bs">pages you annotate</text>
         </g>
         <g class="orc-brick orc-ux" data-from="9">
           <title>Overview: what needs you, what is running, what landed</title>
-          <rect x="583" y="65" width="18" height="6" rx="2" />
-          <rect x="617" y="65" width="18" height="6" rx="2" />
-          <rect x="651" y="65" width="18" height="6" rx="2" />
-          <rect x="685" y="65" width="18" height="6" rx="2" />
-          <rect x="719" y="65" width="18" height="6" rx="2" />
-          <rect x="753" y="65" width="18" height="6" rx="2" />
-          <rect x="571" y="70" width="209" height="56" rx="6" />
-          <text x="675.3" y="92.0" class="orc-bl">Overview</text>
-          <text x="675.3" y="110.0" class="orc-bs">
+          <rect x="583" y="1" width="18" height="6" rx="2" />
+          <rect x="617" y="1" width="18" height="6" rx="2" />
+          <rect x="651" y="1" width="18" height="6" rx="2" />
+          <rect x="685" y="1" width="18" height="6" rx="2" />
+          <rect x="719" y="1" width="18" height="6" rx="2" />
+          <rect x="753" y="1" width="18" height="6" rx="2" />
+          <rect x="571" y="6" width="209" height="44" rx="6" />
+          <text x="675.3" y="22.0" class="orc-bl">Overview</text>
+          <text x="675.3" y="37.0" class="orc-bs">
             the whole fleet, one board
           </text>
         </g>
         <g class="orc-brick orc-ux" data-from="0" data-until="1" hidden>
           <title>One agent in a terminal</title>
-          <rect x="470" y="65" width="18" height="6" rx="2" />
-          <rect x="504" y="65" width="18" height="6" rx="2" />
-          <rect x="538" y="65" width="18" height="6" rx="2" />
-          <rect x="572" y="65" width="18" height="6" rx="2" />
-          <rect x="606" y="65" width="18" height="6" rx="2" />
-          <rect x="640" y="65" width="18" height="6" rx="2" />
-          <rect x="674" y="65" width="18" height="6" rx="2" />
-          <rect x="708" y="65" width="18" height="6" rx="2" />
-          <rect x="742" y="65" width="18" height="6" rx="2" />
-          <rect x="458" y="70" width="322" height="56" rx="6" />
-          <text x="619.0" y="92.0" class="orc-bl">Agent</text>
-          <text x="619.0" y="110.0" class="orc-bs">does everything itself</text>
+          <rect x="470" y="1" width="18" height="6" rx="2" />
+          <rect x="504" y="1" width="18" height="6" rx="2" />
+          <rect x="538" y="1" width="18" height="6" rx="2" />
+          <rect x="572" y="1" width="18" height="6" rx="2" />
+          <rect x="606" y="1" width="18" height="6" rx="2" />
+          <rect x="640" y="1" width="18" height="6" rx="2" />
+          <rect x="674" y="1" width="18" height="6" rx="2" />
+          <rect x="708" y="1" width="18" height="6" rx="2" />
+          <rect x="742" y="1" width="18" height="6" rx="2" />
+          <rect x="458" y="6" width="322" height="44" rx="6" />
+          <text x="619.0" y="22.0" class="orc-bl">Agent</text>
+          <text x="619.0" y="37.0" class="orc-bs">does everything itself</text>
         </g>
         <g class="orc-brick orc-ux" data-from="2">
           <title>Chat: the one agent you talk to</title>
-          <rect x="132" y="65" width="18" height="6" rx="2" />
-          <rect x="166" y="65" width="18" height="6" rx="2" />
-          <rect x="200" y="65" width="18" height="6" rx="2" />
-          <rect x="234" y="65" width="18" height="6" rx="2" />
-          <rect x="268" y="65" width="18" height="6" rx="2" />
-          <rect x="302" y="65" width="18" height="6" rx="2" />
-          <rect x="120" y="70" width="209" height="56" rx="6" />
-          <text x="224.7" y="92.0" class="orc-bl">Chat</text>
-          <text x="224.7" y="110.0" class="orc-bs">
+          <rect x="132" y="1" width="18" height="6" rx="2" />
+          <rect x="166" y="1" width="18" height="6" rx="2" />
+          <rect x="200" y="1" width="18" height="6" rx="2" />
+          <rect x="234" y="1" width="18" height="6" rx="2" />
+          <rect x="268" y="1" width="18" height="6" rx="2" />
+          <rect x="302" y="1" width="18" height="6" rx="2" />
+          <rect x="120" y="6" width="209" height="44" rx="6" />
+          <text x="224.7" y="22.0" class="orc-bl">Chat</text>
+          <text x="224.7" y="37.0" class="orc-bs">
             talks to you, hands out work
           </text>
         </g>
         <g class="orc-brick orc-control" data-from="1">
           <title>Work ledger: durable tasks outside the agent</title>
-          <rect x="132" y="135" width="18" height="6" rx="2" />
-          <rect x="166" y="135" width="18" height="6" rx="2" />
-          <rect x="200" y="135" width="18" height="6" rx="2" />
-          <rect x="234" y="135" width="18" height="6" rx="2" />
-          <rect x="120" y="140" width="153" height="56" rx="6" />
-          <text x="196.5" y="168.0" class="orc-bl">Work ledger</text>
+          <rect x="132" y="57" width="18" height="6" rx="2" />
+          <rect x="166" y="57" width="18" height="6" rx="2" />
+          <rect x="200" y="57" width="18" height="6" rx="2" />
+          <rect x="234" y="57" width="18" height="6" rx="2" />
+          <rect x="120" y="62" width="153" height="34" rx="6" />
+          <text x="196.5" y="79.0" class="orc-bl">Work ledger</text>
         </g>
         <g class="orc-brick orc-control" data-from="5">
           <title>Dispatcher: picks agent, model, effort</title>
-          <rect x="301" y="135" width="18" height="6" rx="2" />
-          <rect x="335" y="135" width="18" height="6" rx="2" />
-          <rect x="369" y="135" width="18" height="6" rx="2" />
-          <rect x="403" y="135" width="18" height="6" rx="2" />
-          <rect x="289" y="140" width="153" height="56" rx="6" />
-          <text x="365.5" y="168.0" class="orc-bl">Dispatcher</text>
+          <rect x="301" y="57" width="18" height="6" rx="2" />
+          <rect x="335" y="57" width="18" height="6" rx="2" />
+          <rect x="369" y="57" width="18" height="6" rx="2" />
+          <rect x="403" y="57" width="18" height="6" rx="2" />
+          <rect x="289" y="62" width="153" height="34" rx="6" />
+          <text x="365.5" y="79.0" class="orc-bl">Dispatcher</text>
         </g>
         <g class="orc-brick orc-control" data-from="5">
           <title>Quota meter: what is left per subscription</title>
-          <rect x="470" y="135" width="18" height="6" rx="2" />
-          <rect x="504" y="135" width="18" height="6" rx="2" />
-          <rect x="538" y="135" width="18" height="6" rx="2" />
-          <rect x="572" y="135" width="18" height="6" rx="2" />
-          <rect x="458" y="140" width="153" height="56" rx="6" />
-          <text x="534.5" y="168.0" class="orc-bl">Quota meter</text>
+          <rect x="470" y="57" width="18" height="6" rx="2" />
+          <rect x="504" y="57" width="18" height="6" rx="2" />
+          <rect x="538" y="57" width="18" height="6" rx="2" />
+          <rect x="572" y="57" width="18" height="6" rx="2" />
+          <rect x="458" y="62" width="153" height="34" rx="6" />
+          <text x="534.5" y="79.0" class="orc-bl">Quota meter</text>
         </g>
         <g class="orc-brick orc-control" data-from="6">
           <title>Supervisor: watches from outside every agent</title>
-          <rect x="639" y="135" width="18" height="6" rx="2" />
-          <rect x="673" y="135" width="18" height="6" rx="2" />
-          <rect x="707" y="135" width="18" height="6" rx="2" />
-          <rect x="741" y="135" width="18" height="6" rx="2" />
-          <rect x="627" y="140" width="153" height="56" rx="6" />
-          <text x="703.5" y="168.0" class="orc-bl">Supervisor</text>
+          <rect x="639" y="57" width="18" height="6" rx="2" />
+          <rect x="673" y="57" width="18" height="6" rx="2" />
+          <rect x="707" y="57" width="18" height="6" rx="2" />
+          <rect x="741" y="57" width="18" height="6" rx="2" />
+          <rect x="627" y="62" width="153" height="34" rx="6" />
+          <text x="703.5" y="79.0" class="orc-bl">Supervisor</text>
         </g>
         <g class="orc-slot" data-from="2">
-          <rect x="115" y="205" width="219" height="140" rx="8" />
+          <rect x="115" y="102" width="219" height="116" rx="8" />
         </g>
         <g class="orc-brick orc-exec" data-from="2">
           <title>Worker: a fresh agent with one job</title>
-          <rect x="132" y="211" width="18" height="6" rx="2" />
-          <rect x="166" y="211" width="18" height="6" rx="2" />
-          <rect x="200" y="211" width="18" height="6" rx="2" />
-          <rect x="234" y="211" width="18" height="6" rx="2" />
-          <rect x="268" y="211" width="18" height="6" rx="2" />
-          <rect x="302" y="211" width="18" height="6" rx="2" />
-          <rect x="120" y="216" width="209" height="34" rx="6" />
-          <text x="224.5" y="233.0" class="orc-bl">Worker 1</text>
+          <rect x="132" y="105" width="18" height="6" rx="2" />
+          <rect x="166" y="105" width="18" height="6" rx="2" />
+          <rect x="200" y="105" width="18" height="6" rx="2" />
+          <rect x="234" y="105" width="18" height="6" rx="2" />
+          <rect x="268" y="105" width="18" height="6" rx="2" />
+          <rect x="302" y="105" width="18" height="6" rx="2" />
+          <rect x="120" y="110" width="209" height="28" rx="6" />
+          <text x="224.5" y="124.0" class="orc-bl">Worker 1</text>
         </g>
         <g class="orc-brick orc-exec2" data-from="3">
           <title>Isolation: own git worktree and branch</title>
-          <rect x="132" y="255" width="18" height="6" rx="2" />
-          <rect x="166" y="255" width="18" height="6" rx="2" />
-          <rect x="200" y="255" width="18" height="6" rx="2" />
-          <rect x="234" y="255" width="18" height="6" rx="2" />
-          <rect x="268" y="255" width="18" height="6" rx="2" />
-          <rect x="302" y="255" width="18" height="6" rx="2" />
-          <rect x="120" y="260" width="209" height="34" rx="6" />
-          <text x="224.5" y="277.0" class="orc-bl">own worktree</text>
+          <rect x="132" y="142" width="18" height="6" rx="2" />
+          <rect x="166" y="142" width="18" height="6" rx="2" />
+          <rect x="200" y="142" width="18" height="6" rx="2" />
+          <rect x="234" y="142" width="18" height="6" rx="2" />
+          <rect x="268" y="142" width="18" height="6" rx="2" />
+          <rect x="302" y="142" width="18" height="6" rx="2" />
+          <rect x="120" y="147" width="209" height="28" rx="6" />
+          <text x="224.5" y="161.0" class="orc-bl">own worktree</text>
         </g>
         <g class="orc-brick orc-exec3" data-from="4">
           <title>Runtime: own terminal session</title>
-          <rect x="132" y="299" width="18" height="6" rx="2" />
-          <rect x="166" y="299" width="18" height="6" rx="2" />
-          <rect x="200" y="299" width="18" height="6" rx="2" />
-          <rect x="234" y="299" width="18" height="6" rx="2" />
-          <rect x="268" y="299" width="18" height="6" rx="2" />
-          <rect x="302" y="299" width="18" height="6" rx="2" />
-          <rect x="120" y="304" width="209" height="34" rx="6" />
-          <text x="224.5" y="321.0" class="orc-bl">own terminal</text>
+          <rect x="132" y="179" width="18" height="6" rx="2" />
+          <rect x="166" y="179" width="18" height="6" rx="2" />
+          <rect x="200" y="179" width="18" height="6" rx="2" />
+          <rect x="234" y="179" width="18" height="6" rx="2" />
+          <rect x="268" y="179" width="18" height="6" rx="2" />
+          <rect x="302" y="179" width="18" height="6" rx="2" />
+          <rect x="120" y="184" width="209" height="28" rx="6" />
+          <text x="224.5" y="198.0" class="orc-bl">own terminal</text>
         </g>
         <g class="orc-slot" data-from="2">
-          <rect x="341" y="205" width="219" height="140" rx="8" />
+          <rect x="341" y="102" width="219" height="116" rx="8" />
         </g>
         <g class="orc-brick orc-exec" data-from="2">
           <title>Worker: a fresh agent with one job</title>
-          <rect x="358" y="211" width="18" height="6" rx="2" />
-          <rect x="392" y="211" width="18" height="6" rx="2" />
-          <rect x="426" y="211" width="18" height="6" rx="2" />
-          <rect x="460" y="211" width="18" height="6" rx="2" />
-          <rect x="494" y="211" width="18" height="6" rx="2" />
-          <rect x="528" y="211" width="18" height="6" rx="2" />
-          <rect x="346" y="216" width="209" height="34" rx="6" />
-          <text x="450.5" y="233.0" class="orc-bl">Worker 2</text>
+          <rect x="358" y="105" width="18" height="6" rx="2" />
+          <rect x="392" y="105" width="18" height="6" rx="2" />
+          <rect x="426" y="105" width="18" height="6" rx="2" />
+          <rect x="460" y="105" width="18" height="6" rx="2" />
+          <rect x="494" y="105" width="18" height="6" rx="2" />
+          <rect x="528" y="105" width="18" height="6" rx="2" />
+          <rect x="346" y="110" width="209" height="28" rx="6" />
+          <text x="450.5" y="124.0" class="orc-bl">Worker 2</text>
         </g>
         <g class="orc-brick orc-exec2" data-from="3">
           <title>Isolation: own git worktree and branch</title>
-          <rect x="358" y="255" width="18" height="6" rx="2" />
-          <rect x="392" y="255" width="18" height="6" rx="2" />
-          <rect x="426" y="255" width="18" height="6" rx="2" />
-          <rect x="460" y="255" width="18" height="6" rx="2" />
-          <rect x="494" y="255" width="18" height="6" rx="2" />
-          <rect x="528" y="255" width="18" height="6" rx="2" />
-          <rect x="346" y="260" width="209" height="34" rx="6" />
-          <text x="450.5" y="277.0" class="orc-bl">own worktree</text>
+          <rect x="358" y="142" width="18" height="6" rx="2" />
+          <rect x="392" y="142" width="18" height="6" rx="2" />
+          <rect x="426" y="142" width="18" height="6" rx="2" />
+          <rect x="460" y="142" width="18" height="6" rx="2" />
+          <rect x="494" y="142" width="18" height="6" rx="2" />
+          <rect x="528" y="142" width="18" height="6" rx="2" />
+          <rect x="346" y="147" width="209" height="28" rx="6" />
+          <text x="450.5" y="161.0" class="orc-bl">own worktree</text>
         </g>
         <g class="orc-brick orc-exec3" data-from="4">
           <title>Runtime: own terminal session</title>
-          <rect x="358" y="299" width="18" height="6" rx="2" />
-          <rect x="392" y="299" width="18" height="6" rx="2" />
-          <rect x="426" y="299" width="18" height="6" rx="2" />
-          <rect x="460" y="299" width="18" height="6" rx="2" />
-          <rect x="494" y="299" width="18" height="6" rx="2" />
-          <rect x="528" y="299" width="18" height="6" rx="2" />
-          <rect x="346" y="304" width="209" height="34" rx="6" />
-          <text x="450.5" y="321.0" class="orc-bl">own terminal</text>
+          <rect x="358" y="179" width="18" height="6" rx="2" />
+          <rect x="392" y="179" width="18" height="6" rx="2" />
+          <rect x="426" y="179" width="18" height="6" rx="2" />
+          <rect x="460" y="179" width="18" height="6" rx="2" />
+          <rect x="494" y="179" width="18" height="6" rx="2" />
+          <rect x="528" y="179" width="18" height="6" rx="2" />
+          <rect x="346" y="184" width="209" height="28" rx="6" />
+          <text x="450.5" y="198.0" class="orc-bl">own terminal</text>
         </g>
         <g class="orc-slot" data-from="2">
-          <rect x="566" y="205" width="219" height="140" rx="8" />
+          <rect x="566" y="102" width="219" height="116" rx="8" />
         </g>
         <g class="orc-brick orc-exec" data-from="2">
           <title>Worker: a fresh agent with one job</title>
-          <rect x="583" y="211" width="18" height="6" rx="2" />
-          <rect x="617" y="211" width="18" height="6" rx="2" />
-          <rect x="651" y="211" width="18" height="6" rx="2" />
-          <rect x="685" y="211" width="18" height="6" rx="2" />
-          <rect x="719" y="211" width="18" height="6" rx="2" />
-          <rect x="753" y="211" width="18" height="6" rx="2" />
-          <rect x="571" y="216" width="209" height="34" rx="6" />
-          <text x="675.5" y="233.0" class="orc-bl">Worker × N</text>
+          <rect x="583" y="105" width="18" height="6" rx="2" />
+          <rect x="617" y="105" width="18" height="6" rx="2" />
+          <rect x="651" y="105" width="18" height="6" rx="2" />
+          <rect x="685" y="105" width="18" height="6" rx="2" />
+          <rect x="719" y="105" width="18" height="6" rx="2" />
+          <rect x="753" y="105" width="18" height="6" rx="2" />
+          <rect x="571" y="110" width="209" height="28" rx="6" />
+          <text x="675.5" y="124.0" class="orc-bl">Worker × N</text>
         </g>
         <g class="orc-brick orc-exec2" data-from="3">
           <title>Isolation: own git worktree and branch</title>
-          <rect x="583" y="255" width="18" height="6" rx="2" />
-          <rect x="617" y="255" width="18" height="6" rx="2" />
-          <rect x="651" y="255" width="18" height="6" rx="2" />
-          <rect x="685" y="255" width="18" height="6" rx="2" />
-          <rect x="719" y="255" width="18" height="6" rx="2" />
-          <rect x="753" y="255" width="18" height="6" rx="2" />
-          <rect x="571" y="260" width="209" height="34" rx="6" />
-          <text x="675.5" y="277.0" class="orc-bl">own worktree</text>
+          <rect x="583" y="142" width="18" height="6" rx="2" />
+          <rect x="617" y="142" width="18" height="6" rx="2" />
+          <rect x="651" y="142" width="18" height="6" rx="2" />
+          <rect x="685" y="142" width="18" height="6" rx="2" />
+          <rect x="719" y="142" width="18" height="6" rx="2" />
+          <rect x="753" y="142" width="18" height="6" rx="2" />
+          <rect x="571" y="147" width="209" height="28" rx="6" />
+          <text x="675.5" y="161.0" class="orc-bl">own worktree</text>
         </g>
         <g class="orc-brick orc-exec3" data-from="4">
           <title>Runtime: own terminal session</title>
-          <rect x="583" y="299" width="18" height="6" rx="2" />
-          <rect x="617" y="299" width="18" height="6" rx="2" />
-          <rect x="651" y="299" width="18" height="6" rx="2" />
-          <rect x="685" y="299" width="18" height="6" rx="2" />
-          <rect x="719" y="299" width="18" height="6" rx="2" />
-          <rect x="753" y="299" width="18" height="6" rx="2" />
-          <rect x="571" y="304" width="209" height="34" rx="6" />
-          <text x="675.5" y="321.0" class="orc-bl">own terminal</text>
+          <rect x="583" y="179" width="18" height="6" rx="2" />
+          <rect x="617" y="179" width="18" height="6" rx="2" />
+          <rect x="651" y="179" width="18" height="6" rx="2" />
+          <rect x="685" y="179" width="18" height="6" rx="2" />
+          <rect x="719" y="179" width="18" height="6" rx="2" />
+          <rect x="753" y="179" width="18" height="6" rx="2" />
+          <rect x="571" y="184" width="209" height="28" rx="6" />
+          <text x="675.5" y="198.0" class="orc-bl">own terminal</text>
         </g>
         <g class="orc-brick orc-land" data-from="7">
           <title>Quality gate: review, test, lint, CI</title>
-          <rect x="132" y="349" width="18" height="6" rx="2" />
-          <rect x="166" y="349" width="18" height="6" rx="2" />
-          <rect x="200" y="349" width="18" height="6" rx="2" />
-          <rect x="234" y="349" width="18" height="6" rx="2" />
-          <rect x="268" y="349" width="18" height="6" rx="2" />
-          <rect x="302" y="349" width="18" height="6" rx="2" />
-          <rect x="336" y="349" width="18" height="6" rx="2" />
-          <rect x="370" y="349" width="18" height="6" rx="2" />
-          <rect x="404" y="349" width="18" height="6" rx="2" />
-          <rect x="120" y="354" width="322" height="56" rx="6" />
-          <text x="281.0" y="376.0" class="orc-bl">Quality gate</text>
-          <text x="281.0" y="394.0" class="orc-bs">
+          <rect x="132" y="225" width="18" height="6" rx="2" />
+          <rect x="166" y="225" width="18" height="6" rx="2" />
+          <rect x="200" y="225" width="18" height="6" rx="2" />
+          <rect x="234" y="225" width="18" height="6" rx="2" />
+          <rect x="268" y="225" width="18" height="6" rx="2" />
+          <rect x="302" y="225" width="18" height="6" rx="2" />
+          <rect x="336" y="225" width="18" height="6" rx="2" />
+          <rect x="370" y="225" width="18" height="6" rx="2" />
+          <rect x="404" y="225" width="18" height="6" rx="2" />
+          <rect x="120" y="230" width="322" height="44" rx="6" />
+          <text x="281.0" y="246.0" class="orc-bl">Quality gate</text>
+          <text x="281.0" y="261.0" class="orc-bs">
             review · test · lint · CI
           </text>
         </g>
         <g class="orc-brick orc-land" data-from="7">
           <title>Merge path: PR or local merge</title>
-          <rect x="470" y="349" width="18" height="6" rx="2" />
-          <rect x="504" y="349" width="18" height="6" rx="2" />
-          <rect x="538" y="349" width="18" height="6" rx="2" />
-          <rect x="572" y="349" width="18" height="6" rx="2" />
-          <rect x="606" y="349" width="18" height="6" rx="2" />
-          <rect x="640" y="349" width="18" height="6" rx="2" />
-          <rect x="674" y="349" width="18" height="6" rx="2" />
-          <rect x="708" y="349" width="18" height="6" rx="2" />
-          <rect x="742" y="349" width="18" height="6" rx="2" />
-          <rect x="458" y="354" width="322" height="56" rx="6" />
-          <text x="619.0" y="376.0" class="orc-bl">Merge path</text>
-          <text x="619.0" y="394.0" class="orc-bs">PR or local merge</text>
+          <rect x="470" y="225" width="18" height="6" rx="2" />
+          <rect x="504" y="225" width="18" height="6" rx="2" />
+          <rect x="538" y="225" width="18" height="6" rx="2" />
+          <rect x="572" y="225" width="18" height="6" rx="2" />
+          <rect x="606" y="225" width="18" height="6" rx="2" />
+          <rect x="640" y="225" width="18" height="6" rx="2" />
+          <rect x="674" y="225" width="18" height="6" rx="2" />
+          <rect x="708" y="225" width="18" height="6" rx="2" />
+          <rect x="742" y="225" width="18" height="6" rx="2" />
+          <rect x="458" y="230" width="322" height="44" rx="6" />
+          <text x="619.0" y="246.0" class="orc-bl">Merge path</text>
+          <text x="619.0" y="261.0" class="orc-bs">PR or local merge</text>
         </g>
         <g class="orc-brick orc-ground" data-from="0">
           <title>Your repos</title>
-          <rect x="132" y="419" width="18" height="6" rx="2" />
-          <rect x="166" y="419" width="18" height="6" rx="2" />
-          <rect x="200" y="419" width="18" height="6" rx="2" />
-          <rect x="234" y="419" width="18" height="6" rx="2" />
-          <rect x="268" y="419" width="18" height="6" rx="2" />
-          <rect x="302" y="419" width="18" height="6" rx="2" />
-          <rect x="336" y="419" width="18" height="6" rx="2" />
-          <rect x="370" y="419" width="18" height="6" rx="2" />
-          <rect x="404" y="419" width="18" height="6" rx="2" />
-          <rect x="438" y="419" width="18" height="6" rx="2" />
-          <rect x="472" y="419" width="18" height="6" rx="2" />
-          <rect x="506" y="419" width="18" height="6" rx="2" />
-          <rect x="540" y="419" width="18" height="6" rx="2" />
-          <rect x="574" y="419" width="18" height="6" rx="2" />
-          <rect x="608" y="419" width="18" height="6" rx="2" />
-          <rect x="642" y="419" width="18" height="6" rx="2" />
-          <rect x="676" y="419" width="18" height="6" rx="2" />
-          <rect x="710" y="419" width="18" height="6" rx="2" />
-          <rect x="744" y="419" width="18" height="6" rx="2" />
-          <rect x="120" y="424" width="660" height="50" rx="6" />
-          <text x="450.0" y="449.0" class="orc-bl">Your repos</text>
+          <rect x="132" y="281" width="18" height="6" rx="2" />
+          <rect x="166" y="281" width="18" height="6" rx="2" />
+          <rect x="200" y="281" width="18" height="6" rx="2" />
+          <rect x="234" y="281" width="18" height="6" rx="2" />
+          <rect x="268" y="281" width="18" height="6" rx="2" />
+          <rect x="302" y="281" width="18" height="6" rx="2" />
+          <rect x="336" y="281" width="18" height="6" rx="2" />
+          <rect x="370" y="281" width="18" height="6" rx="2" />
+          <rect x="404" y="281" width="18" height="6" rx="2" />
+          <rect x="438" y="281" width="18" height="6" rx="2" />
+          <rect x="472" y="281" width="18" height="6" rx="2" />
+          <rect x="506" y="281" width="18" height="6" rx="2" />
+          <rect x="540" y="281" width="18" height="6" rx="2" />
+          <rect x="574" y="281" width="18" height="6" rx="2" />
+          <rect x="608" y="281" width="18" height="6" rx="2" />
+          <rect x="642" y="281" width="18" height="6" rx="2" />
+          <rect x="676" y="281" width="18" height="6" rx="2" />
+          <rect x="710" y="281" width="18" height="6" rx="2" />
+          <rect x="744" y="281" width="18" height="6" rx="2" />
+          <rect x="120" y="286" width="660" height="32" rx="6" />
+          <text x="450.0" y="302.0" class="orc-bl">Your repos</text>
         </g>
       </svg>
-      <figcaption class="orc-hint">Drag the diagram sideways</figcaption>
-    </figure>
-
-    <div>
-      <div class="orc-controls" hidden>
-        <button type="button" class="orc-btn" id="orc-prev" disabled>
-          Back
-        </button>
-        <button type="button" class="orc-btn orc-btn-go" id="orc-next">
-          Start
-        </button>
-        <span class="orc-count" id="orc-count">finished stack</span>
-      </div>
-
-      <div class="orc-card" id="orc-card" aria-live="polite">
-        <p class="orc-bridge" id="orc-bridge"></p>
-        <h4 class="orc-step-title" id="orc-step-title">The whole stack</h4>
-        <p class="orc-label" id="orc-plabel">Where we end up</p>
-        <p class="orc-body" id="orc-problem">
-          This is where we end up: a human UX on top, then control, execution
-          and landing, sitting on your repos.
-        </p>
-        <p class="orc-label" id="orc-slabel">How we get there</p>
-        <p class="orc-body" id="orc-solution">
-          None of it is needed on day one. Every brick is there because one
-          agent in a terminal broke in a specific way.
-        </p>
-      </div>
-
-      <div class="orc-dots" id="orc-dots" hidden></div>
     </div>
-  </div>
+    <figcaption class="orc-hint">Drag the diagram sideways</figcaption>
 
-  <h4 class="orc-h">Who fills each brick</h4>
+    <div class="orc-bar" id="orc-bar" hidden>
+      <button type="button" class="orc-btn" id="orc-prev" disabled>Back</button>
+      <button type="button" class="orc-btn orc-btn-go" id="orc-next">
+        Start
+      </button>
+      <div class="orc-dots" id="orc-dots"></div>
+      <span class="orc-count" id="orc-count">finished stack</span>
+    </div>
+
+    <div class="orc-step" id="orc-card" aria-live="polite">
+      <p class="orc-bridge" id="orc-bridge"></p>
+      <h4 class="orc-step-title" id="orc-step-title">The whole stack</h4>
+      <div class="orc-cols">
+        <div>
+          <p class="orc-label" id="orc-plabel">Where we end up</p>
+          <p class="orc-body" id="orc-problem">
+            This is where we end up: a human UX on top, then control, execution
+            and landing, sitting on your repos.
+          </p>
+        </div>
+        <div>
+          <p class="orc-label" id="orc-slabel">How we get there</p>
+          <p class="orc-body" id="orc-solution">
+            None of it is needed on day one. Every block is there because one
+            agent in a terminal broke in a specific way.
+          </p>
+        </div>
+      </div>
+    </div>
+  </figure>
+
+  <h4 class="orc-h">Who fills each block</h4>
 
   <div class="orc-toggles" id="orc-toggles" hidden>
     <span class="orc-toggles-label">Layers</span>
@@ -854,7 +860,7 @@ script. Used by: _d/ai-orchestrator.md {% endcomment %}
       Mine</label
     >
     <label
-      ><input type="checkbox" id="orc-why-toggle" checked /> why the brick
+      ><input type="checkbox" id="orc-why-toggle" checked /> why the block
       exists</label
     >
   </div>
@@ -863,7 +869,7 @@ script. Used by: _d/ai-orchestrator.md {% endcomment %}
     <table class="orc-table" id="orc-parts">
       <thead>
         <tr>
-          <th scope="col">Brick</th>
+          <th scope="col">Block</th>
           <th scope="col" data-col="0">Gas City</th>
           <th scope="col" data-col="1">firstmate</th>
           <th scope="col" data-col="2">Claude (native)</th>
@@ -1071,7 +1077,7 @@ script. Used by: _d/ai-orchestrator.md {% endcomment %}
   <noscript>
     <p class="orc-foot">
       The stepper needs JavaScript. The diagram above shows the finished stack
-      and the table below it is complete. The order the bricks arrive in: one
+      and the table below it is complete. The order the blocks arrive in: one
       agent in a terminal, a work ledger when it forgets, workers when it is too
       serial, a worktree each when they collide, a terminal each when you cannot
       see them, a dispatcher and a quota meter when you run out of subscription,
@@ -1088,13 +1094,13 @@ script. Used by: _d/ai-orchestrator.md {% endcomment %}
     // ---- Edit here. Each step is one way the previous stack broke. `b` is the
     // bridge line from the step before, `p` the problem, `s` the solution.
     // **bold** is the only markup; the index of a step matches the data-from /
-    // data-until attributes on the SVG bricks. ----
+    // data-until attributes on the SVG blocks. ----
     var STEPS = [
       {
         t: "One agent in a terminal",
         b: "",
         p: "You ask. One agent does the work.",
-        s: "For one small task this is all you need. Every brick after this exists only because this breaks.",
+        s: "For one small task this is all you need. Every block after this exists only because this breaks.",
       },
       {
         t: "It forgets",
@@ -1156,7 +1162,7 @@ script. Used by: _d/ai-orchestrator.md {% endcomment %}
       t: "The whole stack",
       b: "",
       p: "This is where we end up: a human UX on top, then control, execution and landing, sitting on your repos.",
-      s: "None of it is needed on day one. Every brick is there because one agent in a terminal broke in a specific way. Press **Start** and we walk it, one problem at a time.",
+      s: "None of it is needed on day one. Every block is there because one agent in a terminal broke in a specific way. Press **Start** and we walk it, one problem at a time.",
     };
     // ---- End of editable block. ----
 
@@ -1243,14 +1249,14 @@ script. Used by: _d/ai-orchestrator.md {% endcomment %}
       problemEl.textContent = s.p;
       setRich(solutionEl, s.s);
       countEl.textContent =
-        i === -1 ? "finished stack" : "brick " + i + " of " + last;
+        i === -1 ? "finished stack" : "block " + i + " of " + last;
 
       dots.forEach(function (b, n) {
         b.setAttribute("aria-current", String(n - 1 === i));
       });
       prevBtn.disabled = i === -1;
       nextBtn.disabled = i === last;
-      nextBtn.textContent = i === -1 ? "Start" : "Next brick";
+      nextBtn.textContent = i === -1 ? "Start" : "Next block";
     }
 
     prevBtn.addEventListener("click", function () {
@@ -1295,8 +1301,7 @@ script. Used by: _d/ai-orchestrator.md {% endcomment %}
 
     document.getElementById("orc-toggles").hidden = false;
     document.getElementById("orc-toggles-cols").hidden = false;
-    root.querySelector(".orc-controls").hidden = false;
-    dotsEl.hidden = false;
+    document.getElementById("orc-bar").hidden = false;
     applyToggles();
     draw();
   })();
