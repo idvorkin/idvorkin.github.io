@@ -474,7 +474,7 @@ Used by: _d/time-allocation.md {% endcomment %}
   <ul class="bkt-rows" aria-hidden="true"></ul>
 
   <p class="bkt-foot">
-    The two dashed lines are ceilings. <b>Relationships</b> stops at whatever
+    A dashed line appears when a bucket hits its ceiling. <b>Relationships</b> stops at whatever
     time the other people actually have. <b>Health</b> stops at enough. Hours
     that run past a ceiling do not disappear, they land in consumption, which is
     the hatched block on the right. Numbers are made up to show the shape, not
@@ -718,6 +718,7 @@ Used by: _d/time-allocation.md {% endcomment %}
         var cap = caps[b.id];
         var atCap = cap != null && h >= cap - 0.001;
         r.li.classList.toggle("is-capped", atCap);
+        if (marks[b.id]) marks[b.id].on = atCap;
         if (!r.note || cap == null) {
           // no ceiling on this bucket
         } else if (b.id === "relationships") {
@@ -734,6 +735,8 @@ Used by: _d/time-allocation.md {% endcomment %}
       Object.keys(marks).forEach(function (id) {
         marks[id].rail.style.left = markPos[id] + "%";
         marks[id].flag.style.left = markPos[id] + "%";
+        // Off the ceiling the line would float inside the next bucket's block.
+        marks[id].rail.style.opacity = marks[id].flag.style.opacity = marks[id].on ? 1 : 0;
       });
 
       sliderOut.textContent = fmt(shrink);
