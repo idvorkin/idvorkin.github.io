@@ -1,11 +1,12 @@
 {% comment %} Time-allocation buckets — one stacked bar of a 16 hour waking day
 across the five buckets, with a weekday/weekend toggle, a "shrink tech" slider,
-and two ceilings drawn on the bar. Self-contained, no parameters, no libraries,
-no network. Edit the DATA block at the top of the script; the bar, the rows, the
-ceiling markers and the numbers table are all generated from it, so there is
-exactly one place to edit. THE HOURS ARE ILLUSTRATIVE, NOT MEASURED. They are
-plausible round numbers for a 16 hour waking day, not a log of anyone's week.
-Used by: _d/time-allocation.md {% endcomment %}
+and two ceilings drawn on the bar. Tech opens into Work, Side projects and
+Enabling environment. Self-contained, no parameters, no libraries, no network.
+Edit the DATA block at the top of the script; the bar, the rows, the ceiling
+markers and the numbers table are all generated from it, so there is exactly one
+place to edit. THE HOURS ARE ILLUSTRATIVE, NOT MEASURED. They are plausible
+round numbers for a 16 hour waking day, not a log of anyone's week. Used by:
+_d/time-allocation.md {% endcomment %}
 
 <style>
   .bkt {
@@ -22,6 +23,11 @@ Used by: _d/time-allocation.md {% endcomment %}
     --bkt-health: #6b5b95;
     --bkt-relationships: #b8562f;
     --bkt-consumption: #7c828a;
+
+    /* Shades of the tech color, for when Tech is opened up. */
+    --bkt-part-work: #2f6f8f;
+    --bkt-part-side: #5590ab;
+    --bkt-part-env: #8fb8c8;
 
     --bkt-mono:
       ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
@@ -58,6 +64,10 @@ Used by: _d/time-allocation.md {% endcomment %}
       --bkt-health: #a99ad4;
       --bkt-relationships: #e0906c;
       --bkt-consumption: #9aa1a9;
+
+      --bkt-part-work: #79b3d0;
+      --bkt-part-side: #5693b2;
+      --bkt-part-env: #3a7192;
     }
   }
 
@@ -75,6 +85,10 @@ Used by: _d/time-allocation.md {% endcomment %}
     --bkt-health: #a99ad4;
     --bkt-relationships: #e0906c;
     --bkt-consumption: #9aa1a9;
+
+    --bkt-part-work: #79b3d0;
+    --bkt-part-side: #5693b2;
+    --bkt-part-env: #3a7192;
   }
 
   .bkt-title {
@@ -222,6 +236,11 @@ Used by: _d/time-allocation.md {% endcomment %}
     box-shadow: inset 1px 0 0 var(--bkt-paper);
   }
 
+  .bkt-seg[data-id="tech"],
+  .bkt-seg[data-part] {
+    cursor: pointer;
+  }
+
   .bkt-seg[data-id="consumption"] {
     background-image: repeating-linear-gradient(
       45deg,
@@ -263,7 +282,8 @@ Used by: _d/time-allocation.md {% endcomment %}
     gap: 0.5rem;
   }
 
-  .bkt-row {
+  .bkt-row,
+  .bkt-subrow {
     display: grid;
     grid-template-columns: 0.8rem 1fr 3.1rem 3.4rem;
     align-items: baseline;
@@ -282,6 +302,71 @@ Used by: _d/time-allocation.md {% endcomment %}
     font-size: 0.95rem;
     font-weight: 700;
     line-height: 1.2;
+  }
+
+  /* The Tech row's name is a real button so the open/close works from the
+     keyboard. The bar block is a second, mouse-only way in; the bar itself
+     is aria-hidden, so this button is the only control assistive tech sees. */
+  button.bkt-name {
+    appearance: none;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.35rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: inherit;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  button.bkt-name::after {
+    content: "▸";
+    font-family: var(--bkt-mono);
+    font-size: 0.7rem;
+    color: var(--bkt-ink-faint);
+    transition: transform 160ms ease;
+  }
+
+  button.bkt-name[aria-expanded="true"]::after {
+    content: "▾";
+  }
+
+  button.bkt-name:hover::after,
+  button.bkt-name:focus-visible::after {
+    color: var(--bkt-ink);
+  }
+
+  button.bkt-name:focus-visible {
+    outline: 2px solid var(--bkt-tech);
+    outline-offset: 2px;
+  }
+
+  /* Tech's parts hang under the Tech row, spanning its whole grid. */
+  .bkt-subrows {
+    grid-column: 1 / -1;
+    list-style: none;
+    margin: 0.45rem 0 0;
+    padding: 0 0 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    border-left: 2px solid var(--bkt-rule);
+  }
+
+  .bkt-subrows[hidden] {
+    display: none;
+  }
+
+  .bkt-subrow .bkt-name {
+    font-size: 0.85rem;
+    font-weight: 400;
+  }
+
+  .bkt-subrow .bkt-dot {
+    width: 0.6rem;
+    height: 0.6rem;
   }
 
   .bkt-hours,
@@ -396,6 +481,11 @@ Used by: _d/time-allocation.md {% endcomment %}
     background-color: var(--bkt-panel);
   }
 
+  .bkt .bkt-data tbody tr.bkt-data-sub th:first-child {
+    padding-left: 1.4rem;
+    font-weight: 400;
+  }
+
   @media (max-width: 640px) {
     .bkt {
       padding: 1.1rem 1rem 1rem;
@@ -412,7 +502,8 @@ Used by: _d/time-allocation.md {% endcomment %}
     .bkt-slider input {
       flex: 1 1 100%;
     }
-    .bkt-row {
+    .bkt-row,
+    .bkt-subrow {
       grid-template-columns: 0.8rem 1fr 2.8rem 3rem;
       gap: 0.4rem;
     }
@@ -471,14 +562,18 @@ Used by: _d/time-allocation.md {% endcomment %}
     </div>
   </div>
 
-  <ul class="bkt-rows" aria-hidden="true"></ul>
+  <!-- Not aria-hidden: the Tech row holds a real focusable button, and a
+       focusable control inside an aria-hidden subtree is unreachable by name.
+       The bar above stays hidden; this list is its text equivalent. -->
+  <ul class="bkt-rows"></ul>
 
   <p class="bkt-foot">
     A dashed line appears when a bucket hits its ceiling.
     <b>Relationships</b> stops at whatever time the other people actually have.
     <b>Health</b> stops at enough. Hours that run past a ceiling do not
     disappear, they land in consumption, which is the hatched block on the
-    right. Numbers are made up to show the shape, not measured.
+    right. <b>Tech</b> opens into work, side projects and the enabling
+    environment. Numbers are made up to show the shape, not measured.
   </p>
 
   <details class="bkt-data">
@@ -525,6 +620,13 @@ Used by: _d/time-allocation.md {% endcomment %}
       { id: "consumption", name: "Consumption" },
     ];
 
+    // What Tech opens into. Each day's parts must sum to that day's tech hours.
+    var TECH_PARTS = [
+      { id: "work", name: "Work" },
+      { id: "side", name: "Side projects" },
+      { id: "env", name: "Enabling environment" },
+    ];
+
     var DAYS = {
       weekday: {
         label: "Weekday",
@@ -535,6 +637,8 @@ Used by: _d/time-allocation.md {% endcomment %}
           relationships: 2.5,
           consumption: 3,
         },
+        // Sums to base.tech.
+        parts: { work: 7, side: 1, env: 1 },
         // Ceilings. relationships = the most time the other people are
         // actually available for. health = the point where more hours stop
         // buying more health.
@@ -549,6 +653,7 @@ Used by: _d/time-allocation.md {% endcomment %}
           relationships: 5,
           consumption: 2.5,
         },
+        parts: { work: 1, side: 2.5, env: 1.5 },
         caps: { relationships: 6.5, health: 2.5 },
       },
     };
@@ -629,13 +734,60 @@ Used by: _d/time-allocation.md {% endcomment %}
       BUCKETS.forEach(function (b) {
         hours[b.id] = round1(hours[b.id]);
       });
-      return { hours: hours, caps: d.caps, spill: round1(spill) };
+      return {
+        hours: hours,
+        caps: d.caps,
+        spill: round1(spill),
+        parts: splitTech(hours.tech, d),
+      };
+    }
+
+    // Shrinking tech drains its parts proportionally. Rounding each part on
+    // its own would drift off the total (7,1,1 scaled to 5h gives 3.9+0.6+0.6
+    // = 5.1), so apportion in whole tenths by largest remainder: the parts
+    // always add back up to the tech hours exactly.
+    function splitTech(total, d) {
+      var out = {};
+      var wanted = Math.round(total * 10);
+      if (!d.base.tech) {
+        TECH_PARTS.forEach(function (p) {
+          out[p.id] = 0;
+        });
+        return out;
+      }
+
+      var scale = total / d.base.tech;
+      var floors = 0;
+      var rest = TECH_PARTS.map(function (p) {
+        var exact = d.parts[p.id] * scale * 10;
+        var whole = Math.floor(exact);
+        floors += whole;
+        out[p.id] = whole;
+        return { id: p.id, frac: exact - whole };
+      });
+
+      rest.sort(function (a, b) {
+        return b.frac - a.frac;
+      });
+      for (var i = 0; i < wanted - floors; i++) {
+        out[rest[i % rest.length].id] += 1;
+      }
+
+      TECH_PARTS.forEach(function (p) {
+        out[p.id] = out[p.id] / 10;
+      });
+      return out;
     }
 
     // Build the bar segments and the rows once; render() only updates them.
     var segs = {};
     var rows = {};
     var marks = {};
+    var partSegs = {};
+    var partRows = {};
+    var partsList = null;
+    var techToggle = null;
+    var expanded = false;
 
     BUCKETS.forEach(function (b) {
       var seg = document.createElement("div");
@@ -654,7 +806,16 @@ Used by: _d/time-allocation.md {% endcomment %}
       dot.className = "bkt-dot";
       dot.style.backgroundColor = "var(--bkt-" + b.id + ")";
 
-      var name = document.createElement("span");
+      var name;
+      if (b.id === "tech") {
+        name = document.createElement("button");
+        name.type = "button";
+        name.id = "bkt-tech-toggle";
+        name.setAttribute("aria-expanded", "false");
+        name.setAttribute("aria-controls", "bkt-tech-parts");
+      } else {
+        name = document.createElement("span");
+      }
       name.className = "bkt-name";
       name.textContent = b.name;
 
@@ -678,6 +839,50 @@ Used by: _d/time-allocation.md {% endcomment %}
 
       rowsEl.appendChild(li);
       rows[b.id] = { li: li, hrs: hrs, delta: delta, note: note };
+
+      if (b.id === "tech") {
+        techToggle = name;
+        partsList = document.createElement("ul");
+        partsList.className = "bkt-subrows";
+        partsList.id = "bkt-tech-parts";
+        partsList.hidden = true;
+        li.appendChild(partsList);
+
+        TECH_PARTS.forEach(function (p) {
+          // The part blocks sit right after Tech in the bar, so the stack
+          // order stays Tech, Identity, Health, Relationships, Consumption.
+          var pseg = document.createElement("div");
+          pseg.className = "bkt-seg";
+          pseg.dataset.part = p.id;
+          pseg.style.backgroundColor = "var(--bkt-part-" + p.id + ")";
+          barEl.appendChild(pseg);
+          partSegs[p.id] = pseg;
+
+          var pli = document.createElement("li");
+          pli.className = "bkt-subrow";
+
+          var pdot = document.createElement("span");
+          pdot.className = "bkt-dot";
+          pdot.style.backgroundColor = "var(--bkt-part-" + p.id + ")";
+
+          var pname = document.createElement("span");
+          pname.className = "bkt-name";
+          pname.textContent = p.name;
+
+          var phrs = document.createElement("span");
+          phrs.className = "bkt-hours";
+
+          var pdelta = document.createElement("span");
+          pdelta.className = "bkt-delta";
+
+          pli.appendChild(pdot);
+          pli.appendChild(pname);
+          pli.appendChild(phrs);
+          pli.appendChild(pdelta);
+          partsList.appendChild(pli);
+          partRows[p.id] = { hrs: phrs, delta: pdelta };
+        });
+      }
     });
 
     Object.keys(MARK_LABELS).forEach(function (id) {
@@ -705,7 +910,9 @@ Used by: _d/time-allocation.md {% endcomment %}
 
       BUCKETS.forEach(function (b) {
         var h = hours[b.id];
-        segs[b.id].style.width = (h / DAY_HOURS) * 100 + "%";
+        // Opened up, Tech is drawn as its three parts instead of one block.
+        segs[b.id].style.width =
+          (b.id === "tech" && expanded ? 0 : (h / DAY_HOURS) * 100) + "%";
         if (caps[b.id] != null) {
           markPos[b.id] = ((offset + caps[b.id]) / DAY_HOURS) * 100;
         }
@@ -730,6 +937,14 @@ Used by: _d/time-allocation.md {% endcomment %}
             ? "at enough, " + fmt(cap) + ": more hours stop paying"
             : "enough at " + fmt(cap);
         }
+      });
+
+      TECH_PARTS.forEach(function (p) {
+        var ph = state.parts[p.id];
+        partSegs[p.id].style.width =
+          (expanded ? (ph / DAY_HOURS) * 100 : 0) + "%";
+        partRows[p.id].hrs.textContent = fmt(ph);
+        partRows[p.id].delta.textContent = signed(ph - DAYS[day].parts[p.id]);
       });
 
       Object.keys(marks).forEach(function (id) {
@@ -757,6 +972,7 @@ Used by: _d/time-allocation.md {% endcomment %}
         ". Illustrative hours out of " +
         DAY_HOURS +
         " waking, not measured." +
+        (expanded ? " Tech is opened into its three parts." : "") +
         (state.spill > 0
           ? " " +
             fmt(state.spill) +
@@ -764,24 +980,52 @@ Used by: _d/time-allocation.md {% endcomment %}
           : "");
 
       tbody.innerHTML = "";
-      BUCKETS.forEach(function (b) {
+      function addRow(name, h, delta, cap, isSub) {
         var tr = document.createElement("tr");
+        if (isSub) tr.className = "bkt-data-sub";
         var th = document.createElement("th");
         th.scope = "row";
-        th.textContent = b.name;
+        th.textContent = name;
         tr.appendChild(th);
 
-        [
-          fmt(hours[b.id]),
-          signed(hours[b.id] - base[b.id]) || "—",
-          caps[b.id] != null ? fmt(caps[b.id]) : "—",
-        ].forEach(function (v) {
-          var td = document.createElement("td");
-          td.textContent = v;
-          tr.appendChild(td);
-        });
+        [fmt(h), signed(delta) || "—", cap != null ? fmt(cap) : "—"].forEach(
+          function (v) {
+            var td = document.createElement("td");
+            td.textContent = v;
+            tr.appendChild(td);
+          }
+        );
         tbody.appendChild(tr);
+      }
+
+      BUCKETS.forEach(function (b) {
+        addRow(
+          b.name,
+          hours[b.id],
+          hours[b.id] - base[b.id],
+          caps[b.id],
+          false
+        );
+        if (b.id === "tech" && expanded) {
+          TECH_PARTS.forEach(function (p) {
+            addRow(
+              p.name,
+              state.parts[p.id],
+              state.parts[p.id] - DAYS[day].parts[p.id],
+              null,
+              true
+            );
+          });
+        }
       });
+    }
+
+    function setExpanded(next) {
+      if (expanded === next) return;
+      expanded = next;
+      techToggle.setAttribute("aria-expanded", String(expanded));
+      partsList.hidden = !expanded;
+      render();
     }
 
     root.querySelectorAll("[data-day]").forEach(function (btn) {
@@ -810,6 +1054,22 @@ Used by: _d/time-allocation.md {% endcomment %}
     slider.addEventListener("input", function () {
       shrink = Number(slider.value);
       render();
+    });
+
+    // The button is the keyboard path. The blocks in the bar are a second,
+    // mouse-only way in, which is why the bar can stay aria-hidden.
+    techToggle.addEventListener("click", function () {
+      setExpanded(!expanded);
+    });
+
+    segs.tech.addEventListener("click", function () {
+      setExpanded(true);
+    });
+
+    TECH_PARTS.forEach(function (p) {
+      partSegs[p.id].addEventListener("click", function () {
+        setExpanded(false);
+      });
     });
 
     render();
