@@ -3,9 +3,11 @@
 # read from the DEFAULT BRANCH only, never from the pushed branch, so changes
 # here take effect once merged to main.
 
-# Codex first, Claude as fallback: the gate burns a lot of tokens per run and
-# Claude quota is usually the tighter one.
-agent: [codex, claude]
+# Ordered fallback. A gate run burns a lot of tokens, so it goes to whichever
+# subscription has the most headroom first: Grok, then Codex, and Claude last
+# because Claude quota is usually the tighter one. Blog content is public, so
+# nothing here is too private for any of the three.
+agent: [grok, codex, claude]
 
 commands:
   prepare: "bundle install && npm ci"
