@@ -474,11 +474,11 @@ Used by: _d/time-allocation.md {% endcomment %}
   <ul class="bkt-rows" aria-hidden="true"></ul>
 
   <p class="bkt-foot">
-    A dashed line appears when a bucket hits its ceiling. <b>Relationships</b> stops at whatever
-    time the other people actually have. <b>Health</b> stops at enough. Hours
-    that run past a ceiling do not disappear, they land in consumption, which is
-    the hatched block on the right. Numbers are made up to show the shape, not
-    measured.
+    A dashed line appears when a bucket hits its ceiling.
+    <b>Relationships</b> stops at whatever time the other people actually have.
+    <b>Health</b> stops at enough. Hours that run past a ceiling do not
+    disappear, they land in consumption, which is the hatched block on the
+    right. Numbers are made up to show the shape, not measured.
   </p>
 
   <details class="bkt-data">
@@ -736,7 +736,10 @@ Used by: _d/time-allocation.md {% endcomment %}
         marks[id].rail.style.left = markPos[id] + "%";
         marks[id].flag.style.left = markPos[id] + "%";
         // Off the ceiling the line would float inside the next bucket's block.
-        marks[id].rail.style.opacity = marks[id].flag.style.opacity = marks[id].on ? 1 : 0;
+        marks[id].rail.style.opacity = marks[id].flag.style.opacity = marks[id]
+          .on
+          ? 1
+          : 0;
       });
 
       sliderOut.textContent = fmt(shrink);

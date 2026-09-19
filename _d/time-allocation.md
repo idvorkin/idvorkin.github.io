@@ -20,7 +20,6 @@ I asked myself a plain question this week: how is my time actually getting alloc
 <!-- vim-markdown-toc-start -->
 
 - [The five buckets](#the-five-buckets)
-- [The bucket I never scored](#the-bucket-i-never-scored)
 - [Consumption is pleasure that never got converted](#consumption-is-pleasure-that-never-got-converted)
 - [The conversion: add a person, or add the person you want to be](#the-conversion-add-a-person-or-add-the-person-you-want-to-be)
 - [Freed time rolls downhill](#freed-time-rolls-downhill)
@@ -44,19 +43,11 @@ Four are investments. The fifth is what's left.
 
 **Relationships.** Family and friends. This wants to be top-level, not a sub-item under identity. Arthur Brooks' four pillars of a happy life are faith, family, friendship, and work. Two of the four are other people.
 
-**Consumption.** Everything else. The scroll, the autoplay, the forty minutes I can't account for.
+**Consumption.** Everything else. The scroll, the autoplay, the forty minutes I can't account for. Mostly it's procrastination. It's what I do instead of [the thing I'm avoiding](/frog).
 
 The hours below are invented, not measured. Pull tech down and watch where the freed hours actually land.
 
 {% include time-allocation-buckets.html %}
-
-## The bucket I never scored
-
-I've written a weekly review for years. It's a big piece of the [mortality software](/mortality-software) I run on myself. It scores Work and Tech Guru, Family and Friends, physical and emotional habits, Identity Health and Magic. Every section is a good bucket. There is no section for consumption.
-
-So my ledger has a hole in exactly the shape of the problem. I can have a week where nothing scores well and no line item tells me where the hours went, because they went into the one box I never drew.
-
-The reviews do say one thing I didn't want to read. When a week gets tight, tech holds and family holds. They're protected. The place I borrow from is identity: the magic, the biking, the joy activities. The bucket that makes me me is the one I treat as discretionary.
 
 ## Consumption is pleasure that never got converted
 
@@ -134,7 +125,7 @@ Fill this in for a week. Actual hours, not intended ones.
 
 Two things show up, and neither is the total you were bracing for. One bucket will be at or near zero, and a different one will have taken every good hour you had. That gap is the report.
 
-The last row is the one no system has. If your week holds twenty hours you can't assign, that isn't a discipline problem, it's an unassigned-hours problem. The fix is to give those hours a person, or a person-you-want-to-be, before they arrive.
+The last row is the one nobody tracks. If your week holds twenty hours you can't assign, that isn't a discipline problem, it's an unassigned-hours problem. The fix is to give those hours a person, or a person-you-want-to-be, before they arrive.
 
 ## The open question: is tech a bucket, or an identity that overgrew?
 
