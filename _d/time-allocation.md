@@ -2,7 +2,6 @@
 layout: post
 title: "Where the time goes: four buckets and a leak"
 permalink: /time-allocation
-mermaid: true
 redirect_from:
   - /buckets
   - /time-buckets
@@ -20,8 +19,7 @@ I asked myself a plain question this week: how is my time actually getting alloc
 <!-- vim-markdown-toc-start -->
 
 - [The five buckets](#the-five-buckets)
-- [Consumption is pleasure that never got converted](#consumption-is-pleasure-that-never-got-converted)
-- [The conversion: add a person, or add the person you want to be](#the-conversion-add-a-person-or-add-the-person-you-want-to-be)
+- [Consumption (Non-Enjoyment)](#consumption-non-enjoyment)
 - [Freed time rolls downhill](#freed-time-rolls-downhill)
 - [Two of the good buckets have ceilings](#two-of-the-good-buckets-have-ceilings)
 - [Compulsion lives in tech, addiction lives in consumption](#compulsion-lives-in-tech-addiction-lives-in-consumption)
@@ -42,33 +40,15 @@ Four are investments. The fifth is what's left.
 
 **Relationships.** Family and friends. This wants to be top-level, not a sub-item under identity. Arthur Brooks' four pillars of a happy life are faith, family, friendship, and work. Two of the four are other people.
 
-**Consumption.** Everything else. The scroll, the autoplay, the forty minutes I can't account for. Mostly it's procrastination. It's what I do instead of [the thing I'm avoiding](/frog).
+**Consumption (Non-Enjoyment).** Everything else. The scroll, the autoplay, the forty minutes I can't account for. A little of it is fine. Usually it doesn't stay little. It turns into procrastination, the thing I do instead of [the thing I'm avoiding](/frog), and that makes me sad.
 
 The hours below are invented, not measured. Pull tech down and watch where the freed hours actually land.
 
 {% include time-allocation-buckets.html %}
 
-## Consumption is pleasure that never got converted
+## Consumption (Non-Enjoyment)
 
-Arthur Brooks has the distinction I was missing. Pleasure is the raw hit: solitary, chemical, and over the moment it's over. Enjoyment is pleasure plus two things, people and memory ([my notes on his book](/build-life-you-want)). So consumption isn't a category of activity, it's a stage. It's pleasure that stopped there. A beer alone on the couch and a beer at a table with friends are the same beer and different hours.
-
-## The conversion: add a person, or add the person you want to be
-
-If consumption is unconverted pleasure, the fix isn't abstinence. It's conversion, and there are two moves.
-
-**Add a person, and the hour lands in Relationships.** The same video watched with my son, and talked about after, is not the same hour as the video watched alone in bed. Nothing about the content changed. The bucket changed.
-
-**Add who you want to be, and it lands in Identity.** I can spend twenty minutes watching magic clips, or I can spend twenty minutes doing the trick badly until it stops being bad. Both start from the same pull. One of them makes me a magician.
-
-```mermaid
-graph LR
-    P["Pleasure<br/>the raw hit"]
-    P -->|"add a person"| R["Relationships"]
-    P -->|"add who you want to be"| I["Identity"]
-    P -->|"add nothing"| C["Consumption"]
-```
-
-Don't kill the pleasure. Upgrade it.
+A nit on my own label: it's not quite consumption. It's consumption that isn't enjoyment. Arthur Brooks has the distinction I was missing. Pleasure is the raw hit: solitary, chemical, and over the moment it's over. Enjoyment is pleasure plus two things, people and memory. A beer alone on the couch and a beer at a table with friends are the same beer and different hours. The bucket is the first kind. How to turn one into the other is in [my notes on his book](/build-life-you-want#pleasure-vs-enjoyment).
 
 ## Freed time rolls downhill
 
@@ -78,7 +58,7 @@ I used to think the move was to shrink tech. Claw back five hours from the scree
 
 The reason is [activation energy](/activation). Consumption has negative starting energy: the phone starts itself, no decision required. Enjoyment needs a person, which needs a text and a calendar and somebody else's yes, and it needs a moment worth remembering, which needs a little bit of a plan. One of those two is free and it's the wrong one.
 
-Which means freeing up time does nothing by itself. Freed hours don't get allocated, they get defaulted, and the default is level 0 of the idle loop: phone already in your hand, nothing got decided. If I want an hour to land in relationships, it needs a destination assigned before it exists. Otherwise I've just lowered the wall in front of the leak.
+Which means freeing up time does nothing by itself. Freed hours don't get allocated, they get defaulted, and the default is level 0 of the [idle loop](/idle): phone already in your hand, nothing got decided. If I want an hour to land in relationships, it needs a destination assigned before it exists. Otherwise I've just lowered the wall in front of the leak.
 
 ## Two of the good buckets have ceilings
 
@@ -116,7 +96,7 @@ Fill this in for a week. Actual hours, not intended ones.
 
 Two things show up, and neither is the total you were bracing for. One bucket will be at or near zero, and a different one will have taken every good hour you had. That gap is the report.
 
-The last row is the one nobody tracks. If your week holds twenty hours you can't assign, that isn't a discipline problem, it's an unassigned-hours problem. The fix is to give those hours a person, or a person-you-want-to-be, before they arrive.
+The last row is the one nobody tracks. If your week holds twenty hours you can't assign, that isn't a discipline problem, it's an unassigned-hours problem. The fix is to give those hours a destination, a person or a practice, before they arrive.
 
 {% include alert.html style="warning" content="**Warning: I may have drawn this wrong.** Tech might not be a bucket. It might be an identity, the same kind of noun as magician or dad, that got very good at feeding itself. [Roles are how I've always written the eulogy](/eulogy), and the eulogy is the document this is supposed to serve. If that's right, the question stops being how I allocate my time and becomes which of my roles is eating the others. The neutral bucket is the more comfortable framing, which is why I don't trust it." %}
 
