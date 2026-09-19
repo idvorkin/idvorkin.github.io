@@ -236,46 +236,59 @@ def fake_jev(headers=0.1, voice=0.1, ai=0.1, families=None) -> dict:
     return {"answers": answers, "usage": {"cost": 0.0003}}
 
 
+def fake_doubled(**nouls) -> dict:
+    return {
+        "answers": {k: {"noul": nouls.get(k, 0.05)} for k in jev.DOUBLED_KEYS},
+        "usage": {"cost": 0.0002},
+    }
+
+
+def run_jev(body: str, *responses, blocking=False):
+    with mock.patch.object(jev, "ask", side_effect=list(responses)):
+        return pc.jev_checks(post(body), Path("_d/sample.md"), "sk", blocking)
+
+
 class JevVerdictTest(unittest.TestCase):
-    """Judgement -> Check mapping, with the network mocked out."""
+    """Judgment -> Check mapping, with the network mocked out."""
 
     def test_no_key_marks_all_three_na_and_never_fails(self):
-        checks, meta = pc.jev_checks(post("Prose."), None, blocking=True)
+        checks, doubled, meta = pc.jev_checks(
+            post("Prose."), Path("_d/x.md"), None, blocking=True
+        )
         self.assertTrue(all(c.status == pc.NA for c in checks.values()))
         self.assertFalse(
             any(c.blocking and c.status == pc.FAIL for c in checks.values())
         )
+        self.assertEqual(doubled, {})
         self.assertIn("no OPENROUTER_API_KEY", meta["skipped"])
 
     def test_clean_scores_pass(self):
-        with mock.patch.object(jev, "ask", return_value=fake_jev(voice=1.9, ai=0.8)):
-            checks, meta = pc.jev_checks(post("Prose."), "sk", blocking=False)
+        checks, _, meta = run_jev("Prose.", fake_jev(voice=1.9, ai=0.8), fake_doubled())
         self.assertEqual([c.status for c in checks.values()], [pc.PASS] * 3)
         self.assertEqual(meta["scores"]["ai-patterns"], 0.8)
 
     def test_scores_at_the_threshold_fail(self):
-        with mock.patch.object(jev, "ask", return_value=fake_jev(3.0, 3.5, 3.0)):
-            checks, _ = pc.jev_checks(post("Prose."), "sk", blocking=False)
+        checks, _, _ = run_jev("Prose.", fake_jev(3.0, 3.5, 3.0), fake_doubled())
         self.assertEqual([c.status for c in checks.values()], [pc.FAIL] * 3)
 
     def test_only_ai_patterns_can_block(self):
-        with mock.patch.object(jev, "ask", return_value=fake_jev(4.0, 4.0, 4.0)):
-            checks, _ = pc.jev_checks(post("Prose."), "sk", blocking=True)
+        checks, _, _ = run_jev(
+            "Prose.", fake_jev(4.0, 4.0, 4.0), fake_doubled(), blocking=True
+        )
         self.assertTrue(checks["ai-patterns"].blocking)
         self.assertFalse(checks["headers"].blocking)
         self.assertFalse(checks["voice"].blocking)
 
     def test_nothing_blocks_under_advisory_jev(self):
-        with mock.patch.object(jev, "ask", return_value=fake_jev(4.0, 4.0, 4.0)):
-            checks, _ = pc.jev_checks(post("Prose."), "sk", blocking=False)
+        checks, _, _ = run_jev("Prose.", fake_jev(4.0, 4.0, 4.0), fake_doubled())
         self.assertFalse(any(c.blocking for c in checks.values()))
 
     def test_ai_patterns_failure_names_the_pattern_family(self):
-        response = fake_jev(ai=3.8, families={"editorializing": 0.92})
-        with mock.patch.object(jev, "ask", return_value=response):
-            checks, _ = pc.jev_checks(
-                post("It's important to note that x."), "sk", False
-            )
+        checks, _, _ = run_jev(
+            "It's important to note that x.",
+            fake_jev(ai=3.8, families={"editorializing": 0.92}),
+            fake_doubled(),
+        )
         issue = checks["ai-patterns"].issues[0]
         self.assertIn("editorializing (0.92)", issue)
         self.assertIn("literal hits", issue)
@@ -284,9 +297,62 @@ class JevVerdictTest(unittest.TestCase):
         import urllib.error
 
         with mock.patch.object(jev, "ask", side_effect=urllib.error.URLError("down")):
-            checks, meta = pc.jev_checks(post("Prose."), "sk", blocking=True)
+            checks, doubled, meta = pc.jev_checks(
+                post("Prose."), Path("_d/x.md"), "sk", blocking=True
+            )
         self.assertTrue(all(c.status == pc.NA for c in checks.values()))
+        self.assertEqual(doubled, {})
         self.assertIn("error", meta)
+
+
+class DoubledVerdictTest(unittest.TestCase):
+    """Jev's second opinion never changes what blocks."""
+
+    def test_doubled_verdicts_come_back_for_every_doubled_key(self):
+        _, doubled, meta = run_jev("Prose.", fake_jev(), fake_doubled(books=0.9))
+        self.assertEqual(set(doubled), set(jev.DOUBLED_KEYS))
+        self.assertEqual(doubled["books"][0], pc.FAIL)
+        self.assertEqual(doubled["opening"][0], pc.PASS)
+        self.assertEqual(meta["doubled"]["books"], 0.9)
+
+    def test_document_state_carries_the_path_and_front_matter(self):
+        state = pc.document_state(post("Body text."), Path("_d/sample.md"))
+        self.assertTrue(state.startswith("File: _d/sample.md\n---\n"))
+        self.assertIn("permalink: /t", state)
+        self.assertIn("Body text.", state)
+
+    def test_a_jev_fail_on_a_code_check_does_not_block(self):
+        checks = {"books": pc.Check("books", status=pc.PASS)}
+        checks["books"].jev_status, checks["books"].jev_value = pc.FAIL, 0.91
+        self.assertTrue(checks["books"].status == pc.PASS)
+        self.assertTrue(checks["books"].blocking)  # the CODE verdict is what blocks
+
+    def test_second_opinion_reports_agreement(self):
+        checks = {k: pc.Check(k) for k in jev.DOUBLED_KEYS}
+        for c in checks.values():
+            c.jev_status, c.jev_value = pc.PASS, 0.03
+        lines = pc.second_opinion(checks)
+        self.assertIn("Jev 2nd opinion", lines[0])
+        self.assertEqual(lines[1], "Code vs Jev: agree on 7/7")
+
+    def test_second_opinion_names_a_clash_with_its_number(self):
+        checks = {k: pc.Check(k) for k in jev.DOUBLED_KEYS}
+        for c in checks.values():
+            c.jev_status, c.jev_value = pc.PASS, 0.03
+        checks["books"].jev_status, checks["books"].jev_value = pc.FAIL, 0.87
+        self.assertIn("books code 🟢 / jev 🔴 (0.87)", pc.second_opinion(checks)[1])
+
+    def test_code_na_and_jev_pass_is_agreement_not_a_clash(self):
+        checks = {k: pc.Check(k) for k in jev.DOUBLED_KEYS}
+        for c in checks.values():
+            c.jev_status, c.jev_value = pc.PASS, 0.03
+        checks["books"].status = pc.NA
+        self.assertEqual(pc.second_opinion(checks)[1], "Code vs Jev: agree on 7/7")
+
+    def test_no_doubled_verdicts_prints_nothing(self):
+        self.assertEqual(
+            pc.second_opinion({k: pc.Check(k) for k in jev.DOUBLED_KEYS}), []
+        )
 
 
 class RenderTest(unittest.TestCase):

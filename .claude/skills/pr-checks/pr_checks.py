@@ -182,6 +182,8 @@ class Check:
     issues: list[str] = field(default_factory=list)
     detail: str = ""
     blocking: bool = True
+    jev_status: str | None = None  # Jev's second opinion, advisory
+    jev_value: float | None = None
 
     def fail(self, issue: str) -> None:
         self.status = FAIL
@@ -377,23 +379,33 @@ def check_rebased(root: Path, base: str | None) -> Check:
     return check
 
 
+def document_state(post: Post, rel: Path) -> str:
+    """What Jev sees for the doubled checks: path, front matter and body."""
+    return f"File: {rel}\n---\n{post.front_matter}---\n\n{post.body}"
+
+
 def jev_checks(
-    post: Post, key: str | None, blocking: bool
-) -> tuple[dict[str, Check], dict]:
-    """Ask Jev for the three judgment checks. Returns (checks, meta)."""
+    post: Post, rel: Path, key: str | None, blocking: bool
+) -> tuple[dict[str, Check], dict[str, tuple[str, float]], dict]:
+    """Ask Jev for the judgment checks and for its second opinion on the code
+    checks. Returns (judgment checks, doubled verdicts, meta)."""
     checks = {k: Check(k, blocking=blocking and k in jev.BLOCKABLE) for k in JEV_KEYS}
     if key is None:
         for check in checks.values():
             check.status, check.detail = NA, "no key, skipped"
-        return checks, {
-            "skipped": "no OPENROUTER_API_KEY (and no OPEN_ROUTER_KEY in $SECRET_BOX)"
-        }
+        return (
+            checks,
+            {},
+            {
+                "skipped": "no OPENROUTER_API_KEY (and no OPEN_ROUTER_KEY in $SECRET_BOX)"
+            },
+        )
 
-    result = jev.judge(post.body, key)
-    if result.error:
+    result = jev.judge(post.body, key, document=document_state(post, rel))
+    if not result.scores:
         for check in checks.values():
             check.status, check.detail = NA, "Jev call failed, skipped"
-        return checks, {"error": result.error}
+        return checks, {}, {"error": result.error}
 
     meta = {
         "chunks": result.chunks,
@@ -405,6 +417,7 @@ def jev_checks(
     }
     hits = jev.literal_hits(post.body, post.body_offset)
     for check_key in JEV_KEYS:
+        checks[check_key].detail = f"{result.scores[check_key]:.2f}"
         if not result.fails(check_key):
             continue
         score = result.scores[check_key]
@@ -421,11 +434,17 @@ def jev_checks(
             if hits:
                 issue += "; literal hits: " + "; ".join(hits[:3])
         checks[check_key].fail(issue)
-    for check_key in JEV_KEYS:
-        checks[check_key].detail = f"{result.scores[check_key]:.2f}"
     if hits:
         meta["literal_hits"] = hits
-    return checks, meta
+
+    doubled = {}
+    for check_key in jev.DOUBLED_KEYS:
+        value = result.value(check_key)
+        if value is not None:
+            doubled[check_key] = (FAIL if result.fails(check_key) else PASS, value)
+    if doubled:
+        meta["doubled"] = {k: round(v, 2) for k, (_, v) in doubled.items()}
+    return checks, doubled, meta
 
 
 # --- reporting ---------------------------------------------------------------
@@ -433,6 +452,7 @@ def jev_checks(
 
 def run_file(
     path: Path,
+    rel: Path,
     root: Path,
     permalinks: dict[str, str],
     redirects: dict[str, str],
@@ -461,9 +481,9 @@ def run_file(
         "rebased": rebased,
     }
     if use_jev:
-        jev, meta = jev_checks(post, key, jev_blocking)
+        judged, doubled, meta = jev_checks(post, rel, key, jev_blocking)
     else:
-        jev = {
+        judged = {
             k: Check(
                 k,
                 status=NA,
@@ -472,9 +492,36 @@ def run_file(
             )
             for k in JEV_KEYS
         }
-        meta = {"skipped": "--no-jev"}
-    checks |= jev
+        doubled, meta = {}, {"skipped": "--no-jev"}
+    checks |= judged
+    for check_key, (status, value) in doubled.items():
+        checks[check_key].jev_status = status
+        checks[check_key].jev_value = value
     return checks, meta
+
+
+def second_opinion(checks: dict[str, Check]) -> list[str]:
+    """Jev's advisory verdict on the checks code owns, and where they differ.
+
+    ⚪ from code means "nothing of this kind in the post"; Jev is asked whether
+    something is wrong, so it answers 🟢 there. That is agreement, not a clash.
+    """
+    doubled = [k for k in jev.DOUBLED_KEYS if checks[k].jev_status is not None]
+    if not doubled:
+        return []
+    cells = " ".join(f"{MARK[checks[k].jev_status]} {k}" for k in doubled)
+    clashes = [
+        f"{k} code {MARK[checks[k].status]} / jev {MARK[checks[k].jev_status]} "
+        f"({checks[k].jev_value:.2f})"
+        for k in doubled
+        if (checks[k].status == FAIL) != (checks[k].jev_status == FAIL)
+    ]
+    return [
+        f"Jev 2nd opinion (advisory): {cells}",
+        f"Code vs Jev: {'; '.join(clashes)}"
+        if clashes
+        else f"Code vs Jev: agree on {len(doubled)}/{len(doubled)}",
+    ]
 
 
 def render(path: Path, checks: dict[str, Check], meta: dict) -> str:
@@ -493,6 +540,7 @@ def render(path: Path, checks: dict[str, Check], meta: dict) -> str:
         lines.append("  * advisory only — never fails the run")
     elif note := (meta.get("skipped") or meta.get("error")):
         lines.append(f"Jev: skipped — {note}")
+    lines += second_opinion(checks)
     issues = [i for _, keys in GRID for k in keys for i in checks[k].issues]
     if issues:
         lines.append("")
@@ -545,10 +593,10 @@ def main(
         if not path.exists():
             print(f"error: {path} does not exist", file=sys.stderr)
             return 2
-        checks, meta = run_file(
-            path, root, permalinks, redirects, rebased, key, jev_blocking, use_jev
-        )
         rel = path.relative_to(root) if path.is_relative_to(root) else path
+        checks, meta = run_file(
+            path, rel, root, permalinks, redirects, rebased, key, jev_blocking, use_jev
+        )
         results.append((rel, checks, meta))
         failed |= any(c.status == FAIL and c.blocking for c in checks.values())
 
@@ -565,6 +613,8 @@ def main(
                                     "blocking": c.blocking,
                                     "detail": c.detail,
                                     "issues": c.issues,
+                                    "jev_status": c.jev_status,
+                                    "jev_value": c.jev_value,
                                 }
                                 for k, c in checks.items()
                             },

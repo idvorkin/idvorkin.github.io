@@ -95,12 +95,63 @@ class JudgeTest(unittest.TestCase):
         self.assertEqual(result.scores, {})
 
     def test_fails_at_and_above_the_threshold(self):
-        result = jev.Judgement(scores={"ai-patterns": 3.0, "voice": 3.49})
+        result = jev.Judgment(scores={"ai-patterns": 3.0, "voice": 3.49})
         self.assertTrue(result.fails("ai-patterns"))
         self.assertFalse(result.fails("voice"))
 
     def test_fails_is_false_for_a_key_never_asked(self):
-        self.assertFalse(jev.Judgement().fails("ai-patterns"))
+        self.assertFalse(jev.Judgment().fails("ai-patterns"))
+
+
+class DoubledTest(unittest.TestCase):
+    """Jev's second opinion on the checks pr_checks.py settles in code."""
+
+    def doubled_response(self, **nouls) -> dict:
+        return {
+            "answers": {k: {"noul": nouls.get(k, 0.05)} for k in jev.DOUBLED_KEYS},
+            "usage": {"cost": 0.0002},
+        }
+
+    def test_doubled_questions_cover_every_doubled_key(self):
+        self.assertEqual(set(jev.DOUBLED_QUESTIONS), set(jev.DOUBLED_KEYS))
+        self.assertNotIn("rebased", jev.DOUBLED_KEYS)
+
+    def test_document_triggers_a_second_call(self):
+        responses = [fake_response(), self.doubled_response(books=0.9)]
+        with mock.patch.object(jev, "ask", side_effect=responses) as ask:
+            result = jev.judge("Prose.", "sk", document="---\ntitle: T\n---\n\nProse.")
+        self.assertEqual(ask.call_count, 2)
+        self.assertEqual(result.calls, 2)
+        self.assertTrue(result.fails("books"))
+        self.assertFalse(result.fails("opening"))
+        self.assertEqual(result.cost_usd, 0.0005)
+
+    def test_no_document_asks_nothing_doubled(self):
+        with mock.patch.object(jev, "ask", return_value=fake_response()) as ask:
+            result = jev.judge("Prose.", "sk")
+        self.assertEqual(ask.call_count, 1)
+        self.assertIsNone(result.value("books"))
+
+    def test_positional_keys_read_the_first_chunk_only(self):
+        # Chunk 2 starts mid-post, where "before the opening paragraph" is
+        # meaningless; scanning keys still take the worst of all chunks.
+        doubled = [
+            self.doubled_response(opening=0.05, images=0.05),
+            self.doubled_response(opening=0.95, images=0.95),
+        ]
+        body = "## a\n" + "x " * 20_000 + "\n## b\n" + "y " * 20_000
+        with mock.patch.object(jev, "ask", side_effect=[fake_response()] * 2 + doubled):
+            result = jev.judge(body, "sk", document=body)
+        self.assertFalse(result.fails("opening"))
+        self.assertTrue(result.fails("images"))
+
+    def test_a_failed_doubled_call_keeps_the_judgment_scores(self):
+        with mock.patch.object(
+            jev, "ask", side_effect=[fake_response(ai=2.0), urllib.error.URLError("x")]
+        ):
+            result = jev.judge("Prose.", "sk", document="doc")
+        self.assertEqual(result.scores["ai-patterns"], 2.0)
+        self.assertIsNotNone(result.error)
 
 
 class LiteralHitsTest(unittest.TestCase):

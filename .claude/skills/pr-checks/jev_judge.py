@@ -25,8 +25,29 @@ MAX_CHARS = 60_000
 # Checks only Jev judges. `score` on a 0–4 rubric, worded so higher = worse.
 JUDGMENT_KEYS = ("headers", "voice", "ai-patterns")
 
+# Checks pr_checks.py already settles in code, asked again so a disagreement is
+# visible. Code stays the authority; these never block. `rebased` is git state,
+# not text, so it is not doubled.
+DOUBLED_KEYS = (
+    "front-matter",
+    "internal-links",
+    "opening",
+    "alerts",
+    "images",
+    "books",
+    "ai-slop",
+)
 
-THRESHOLDS = {"headers": 3.0, "voice": 3.5, "ai-patterns": 3.0}
+# Ask about position relative to the opening paragraph, so only the first chunk
+# can answer them. The rest scan the whole post.
+POSITIONAL = frozenset({"front-matter", "opening", "alerts", "ai-slop"})
+
+THRESHOLDS = {
+    "headers": 3.0,
+    "voice": 3.5,
+    "ai-patterns": 3.0,
+    **dict.fromkeys(DOUBLED_KEYS, 0.5),
+}
 
 # Only check with a validated positive group — see SKILL.md § Calibration.
 BLOCKABLE = frozenset({"ai-patterns"})
@@ -95,6 +116,65 @@ FAMILIES = {
 }
 
 
+DOUBLED_QUESTIONS = {
+    "front-matter": {
+        "type": "noul",
+        "instructions": (
+            "The document opens with a YAML front matter block between `---` lines, and "
+            "the header line above it gives the file's path. Is that front matter "
+            "incomplete? It needs a `title`; it needs a `permalink` unless the file is in "
+            "`_posts/`; it needs a `tags` list unless the file is in `_td/`."
+        ),
+    },
+    "internal-links": {
+        "type": "noul",
+        "instructions": (
+            "Does any link to this same blog write out the full `https://idvork.in` "
+            "hostname, instead of a site-relative path starting with `/`?"
+        ),
+    },
+    "opening": {
+        "type": "noul",
+        "instructions": (
+            "Read the very first thing a reader sees after the closing `---` of the front "
+            "matter. Is that first visible thing NOT a normal prose paragraph — i.e. is it "
+            "a markdown heading (`#`), an image, a bullet or numbered list, a blockquote, a "
+            "table, a fenced code block, a raw HTML element, or a Liquid `{% include %}` "
+            "tag? Ignore HTML comments entirely, and ignore everything that appears AFTER "
+            "the first prose paragraph."
+        ),
+    },
+    "alerts": {
+        "type": "noul",
+        "instructions": (
+            "Does a `{% include alert.html %}` tag appear at or above the post's first "
+            "plain prose paragraph, rather than below it?"
+        ),
+    },
+    "images": {
+        "type": "noul",
+        "instructions": (
+            "Does this post show an image hosted at `github.com/idvorkin/blob` through raw "
+            "markdown `![alt](url)` or a raw `<img>` tag, instead of through a "
+            "`{% include blob_image… %}` tag? Images hosted anywhere else are fine raw."
+        ),
+    },
+    "books": {
+        "type": "noul",
+        "instructions": (
+            "Does this post link to `amazon.com` or `amzn.to` with a raw URL, instead of "
+            'using `{% include amazon.html asin="…" %}`?'
+        ),
+    },
+    "ai-slop": {
+        "type": "noul",
+        "instructions": (
+            "Does a `{% include ai-slop.html %}` tag appear at or above the post's first "
+            "plain prose paragraph, rather than below it?"
+        ),
+    },
+}
+
 # Phrases content_guidelines.md names. Evidence printed beside a Jev verdict,
 # never a verdict alone — a post about AI writing quotes them legitimately.
 LITERAL_PATTERNS = [
@@ -117,9 +197,9 @@ LITERAL_PATTERNS = [
 
 
 @dataclass
-class Judgement:
+class Judgment:
     scores: dict[str, float] = field(default_factory=dict)  # judgment keys, 0–4
-    nouls: dict[str, float] = field(default_factory=dict)  # family localizers, 0–1
+    nouls: dict[str, float] = field(default_factory=dict)  # doubled + families, 0–1
     calls: int = 0
     chunks: int = 0
     cost_usd: float = 0.0
@@ -148,15 +228,25 @@ def api_key() -> str | None:
 
 
 def ask(state: str, questions: dict, key: str, timeout: int = 60) -> dict:
-    """POST one decision request. Returns the parsed response body."""
+    """POST one decision request, retried once. Returns the parsed response body.
+
+    The endpoint hands back a transient 5xx often enough to be worth one retry.
+    """
     body = json.dumps({"model": MODEL, "state": state, "questions": questions}).encode()
     req = urllib.request.Request(
         URL,
         data=body,
         headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
     )
-    with urllib.request.urlopen(req, timeout=timeout) as resp:
-        return json.loads(resp.read().decode())
+    for attempt in (0, 1):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                return json.loads(resp.read().decode())
+        except urllib.error.HTTPError as exc:
+            if exc.code < 500 or attempt:
+                raise
+            time.sleep(1)
+    raise RuntimeError("unreachable")
 
 
 def chunk(text: str, limit: int = MAX_CHARS) -> list[str]:
@@ -193,7 +283,7 @@ def literal_hits(body: str, offset: int = 1) -> list[str]:
     return out
 
 
-def _run(state: str, questions: dict, key: str, out: Judgement) -> list[dict] | None:
+def _run(state: str, questions: dict, key: str, out: Judgment) -> list[dict] | None:
     """Ask `questions` over every chunk of `state`. None on failure."""
     answers = []
     for piece in chunk(state):
@@ -210,9 +300,14 @@ def _run(state: str, questions: dict, key: str, out: Judgement) -> list[dict] | 
     return answers
 
 
-def judge(body: str, key: str) -> Judgement:
-    """Score the judgment checks over `body`."""
-    out = Judgement()
+def judge(body: str, key: str, document: str | None = None) -> Judgment:
+    """Judgment checks over `body`; with `document`, the doubled checks over the
+    whole file text as well.
+
+    Two calls, not one: the judgment thresholds were calibrated against the body
+    alone, and the doubled questions need the front matter and the path.
+    """
+    out = Judgment()
     started = time.time()
 
     questions = {
@@ -232,6 +327,13 @@ def judge(body: str, key: str) -> Judgement:
     out.nouls = {
         f"family_{name}": worst(answers, f"family_{name}", "noul") for name in FAMILIES
     }
+
+    if document is not None:
+        answers = _run(document, DOUBLED_QUESTIONS, key, out)
+        if answers is None:
+            return out
+        for k in DOUBLED_KEYS:
+            out.nouls[k] = worst(answers[:1] if k in POSITIONAL else answers, k, "noul")
 
     out.latency_s = round(time.time() - started, 2)
     out.cost_usd = round(out.cost_usd, 8)

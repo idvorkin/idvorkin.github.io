@@ -22,6 +22,17 @@ Issues:
 
 The split is deliberate: **anything a regex can settle is code**, and only the three checks that need a reader's judgment go to a model. Structural checks never touch the network, so the grid still works with no API key, offline, and in CI.
 
+Jev is then asked the code checks _as well_, and prints a second opinion beneath the grid so a disagreement is visible at a glance. Code stays the authority for exit status — see § Doubled checks for what that second opinion is actually worth, check by check.
+
+## Files
+
+| File           | Holds                                                                   |
+| -------------- | ----------------------------------------------------------------------- |
+| `pr_checks.py` | The code checks, the grid, the CLI                                      |
+| `jev_judge.py` | Every judgment call: client, questions, thresholds. Text in, scores out |
+| `calibrate.py` | The measurements behind both sets of thresholds                         |
+| `test_*.py`    | One suite per module, stdlib `unittest`, network mocked                 |
+
 ## When to use
 
 - Reviewing a content PR, or before opening one.
@@ -97,6 +108,8 @@ The three prose checks go to [Jev](https://openrouter.ai/typesafe/jev-1.13) (`ty
 ```
 Jev (typesafe/jev-1.13, score/🔴-threshold): headers 0.02/3.0* · voice 2.64/3.5* · ai-patterns 0.76/3.0*
   * advisory only — never fails the run
+Jev 2nd opinion (advisory): 🟢 front-matter 🟢 internal-links 🟢 opening 🟢 alerts 🔴 images 🔴 books 🟢 ai-slop
+Code vs Jev: internal-links code 🔴 / jev 🟢 (0.17)
 ```
 
 Jev returns a verdict with no reasons, so an `ai-patterns` 🔴 also asks eight `noul` questions in the same call — one per pattern family from the guidelines — and the Issues line names the families that scored ≥ 0.5. Literal guideline phrases ("it's important to note", "stands as", …) are grepped separately and printed as evidence under the grid. They are never a verdict on their own: a post _about_ AI writing quotes those phrases legitimately.
@@ -115,9 +128,31 @@ So `headers` and `voice` never fail a run, whatever flags you pass. Their thresh
 
 `ai-patterns` is the one with a validated positive group, so `--block-jev` fails a run only on that check. It is still advisory by default: the gate should not depend on a third-party API being reachable.
 
-Rerun drift on the same post is ≤ 0.06 on the 0–4 scale (5 posts × 2 runs), so a score near a threshold is a real borderline, not noise. One post costs about **$0.0003** and **0.3 s**.
+Rerun drift on the same post is ≤ 0.06 on the 0–4 scale (5 posts × 2 runs), so a score near a threshold is a real borderline, not noise. A post costs **two calls, $0.0003–$0.0004 and about 0.5 s** in total — one call for the judgment checks over the body, one for the doubled checks over the whole file. Two rather than one because the judgment thresholds were calibrated against the body alone, and the doubled questions need the front matter and the file path.
 
-Re-run `./calibrate.py` whenever the model version in `pr_checks.py` changes. A threshold copied across a model bump is a guess.
+Re-run `./calibrate.py` whenever the model version in `jev_judge.py` changes. A threshold copied across a model bump is a guess.
+
+## Doubled checks — can Jev find what the code finds?
+
+Every code check except `rebased` is asked of Jev as well, as a `noul` at a 0.5 threshold. `rebased` is git state, not text, so there is nothing to ask. `./calibrate.py --doubled` scores Jev against the code verdict as ground truth, on a stratified corpus sample plus defect injection for the checks with too few natural failures:
+
+| Check            | Agrees | Misses a real failure | False alarms | Injected defect caught |
+| ---------------- | ------ | --------------------- | ------------ | ---------------------- |
+| `alerts`         | 100%   | 0%                    | 0% (0/16)    | 5/5                    |
+| `ai-slop`        | 100%   | 0%                    | 0% (0/16)    | 5/5                    |
+| `images`         | 100%   | 0% (0/6)              | 0% (0/15)    | 5/5                    |
+| `books`          | 95%    | 10% (1/10)            | 0% (0/11)    | 5/5                    |
+| `opening`        | 95%    | 17% (1/6)             | 0% (0/15)    | 5/5                    |
+| `internal-links` | 76%    | 80% (4/5)             | 0% (0/12)    | 1/1 (hostname only)    |
+| `front-matter`   | 52%    | **100% (10/10)**      | 0% (0/11)    | **0/5**                |
+
+The pattern is clean: **Jev finds what is present in the text and misses what is absent from it.** A misplaced include, a raw blob image, a raw Amazon link, a post that opens with a heading — all things you can see — come back at 95–100% agreement with zero false alarms. A missing `tags:` key is an absence, and Jev never once noticed one.
+
+`internal-links` is the other kind of miss: a link only _is_ a redirect relative to a table Jev does not have. Handing it the whole 4,836-character redirect table lifted agreement from 6/10 to 7/10 on the same posts — not worth the tokens, so the shipped question only asks the half Jev can see (a link written with the `idvork.in` hostname). Its verdict therefore covers part of the code check, and its 80% miss rate is that gap, not a model failure.
+
+One wording note worth keeping: the first `opening` question ran at **80% false alarms** because it did not say to ignore everything after the first paragraph. Telling it so took false alarms to 0/10 with no loss in detection. Doubled questions are worth measuring before trusting.
+
+Doubled verdicts never block, with or without `--block-jev`.
 
 ### Input limit
 
@@ -148,4 +183,4 @@ It exits 0 when the branch changes no posts, so code-only PRs pass untouched. Ga
 cd .claude/skills/pr-checks && python3 -m unittest -v
 ```
 
-Stdlib only, no network — the Jev responses are mocked. `just fast-test` does not run Python tests in this repo (it runs vitest), which is why this is a hand-run suite, same as `.claude/skills/toc/test_toc.py`.
+71 cases across `test_pr_checks.py` (code checks, verdict mapping, grid) and `test_jev_judge.py` (client, chunking, key lookup, doubled questions). Stdlib only, no network — the Jev responses are mocked. `just fast-test` does not run Python tests in this repo (it runs vitest), which is why this is a hand-run suite, same as `.claude/skills/toc/test_toc.py`.
