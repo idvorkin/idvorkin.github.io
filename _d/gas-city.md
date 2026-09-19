@@ -9,7 +9,7 @@ tags:
   - explainer
 ---
 
-The way to get more out of AI is to scale your productivity, and — just like humans — agents scale two ways. Scale **up** (vertical): make one agent more capable by giving it better tools and pre-created skills. That's the whole world of [how I chop](/how-igor-chops) — a tuned `CLAUDE.md`, a library of skills, custom CLIs the agent already knows how to drive. Scale **out** (horizontal): run _many_ agents that cross-communicate and coordinate. Scaling out is where you need orchestration, and orchestration is what Gas City is. Beads, molecules, and the propulsion principle are how scale-out actually works under the hood.
+The way to get more out of AI is to scale your productivity, and — just like humans — agents scale two ways. Scale **up** (vertical): make one agent more capable by giving it better tools and pre-created skills. That's the whole world of [how I chop](/how-igor-chops) — a tuned `CLAUDE.md`, a library of skills, custom CLIs the agent already knows how to drive. Scale **out** (horizontal): run _many_ agents that cross-communicate and coordinate. Scaling out is where you need orchestration, and orchestration is what Gas City is: one filling of [the bricks every orchestrator ends up with](/ai-orchestrator). Beads, molecules, and the propulsion principle are how scale-out actually works under the hood.
 
 {% include ai-slop.html percent="80" %}
 
