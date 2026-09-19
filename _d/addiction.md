@@ -79,7 +79,7 @@ The test: if I had to stop right now, which feels like relief, which feels like 
 
 **The question to ask:** Am I doing this because I genuinely want to, or because I can't stand NOT doing it — and either way, is the rest of my life better or worse for it?
 
-That sorts the activity. Sorting the hours is a different job, and I do it in [four buckets and a leak](/time-allocation) — where it turns out my passion and my addiction live in different buckets, and cutting the first one feeds the second.
+That sorts the activity. Sorting the hours is a different job, and I do it in [four buckets and a leak](/time-allocation). It turns out my passion and my addiction live in different buckets, and cutting the first one usually feeds the second.
 
 ### Don't narrow to one passion (the monoculture trap)
 
