@@ -17,6 +17,17 @@ commands:
   # unit suite must pass. Playwright is driven by test.instructions below.
   test: "just jekyll-build && just fast-test"
 
+# The PR Review Checklist from content_guidelines.md, as a command.
+# Structural failures (front matter, redirect links, opening paragraph, include
+# placement, rebase state) block; the three model-judged prose checks stay
+# advisory — calibration only separated one of them, and the gate should not
+# depend on a third-party API. `.claude/skills/pr-checks/SKILL.md` has the
+# numbers. Exits 0 when the branch changes no posts.
+gates:
+  - name: blog-checks
+    after: lint
+    command: ".claude/skills/pr-checks/pr_checks.py --advisory-jev"
+
 ignore_patterns:
   - "_site/**"
   - "back-links.json"
