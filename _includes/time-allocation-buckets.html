@@ -49,48 +49,6 @@ _d/time-allocation.md {% endcomment %}
     box-sizing: border-box;
   }
 
-  @media (prefers-color-scheme: dark) {
-    .bkt {
-      --bkt-paper: #1c1c1e;
-      --bkt-panel: #2a2b2e;
-      --bkt-ink: #e7e9ec;
-      --bkt-ink-soft: #a8b0b8;
-      --bkt-ink-faint: #858d95;
-      --bkt-rule: #3a3d42;
-      --bkt-hatch: rgba(0, 0, 0, 0.28);
-
-      --bkt-tech: #79b3d0;
-      --bkt-identity: #86c096;
-      --bkt-health: #a99ad4;
-      --bkt-relationships: #e0906c;
-      --bkt-consumption: #9aa1a9;
-
-      --bkt-part-work: #79b3d0;
-      --bkt-part-side: #5693b2;
-      --bkt-part-env: #3a7192;
-    }
-  }
-
-  [data-bs-theme="dark"] .bkt {
-    --bkt-paper: #1c1c1e;
-    --bkt-panel: #2a2b2e;
-    --bkt-ink: #e7e9ec;
-    --bkt-ink-soft: #a8b0b8;
-    --bkt-ink-faint: #858d95;
-    --bkt-rule: #3a3d42;
-    --bkt-hatch: rgba(0, 0, 0, 0.28);
-
-    --bkt-tech: #79b3d0;
-    --bkt-identity: #86c096;
-    --bkt-health: #a99ad4;
-    --bkt-relationships: #e0906c;
-    --bkt-consumption: #9aa1a9;
-
-    --bkt-part-work: #79b3d0;
-    --bkt-part-side: #5693b2;
-    --bkt-part-env: #3a7192;
-  }
-
   .bkt-title {
     margin: 0;
     font-family: Georgia, "Times New Roman", serif;
@@ -463,9 +421,8 @@ _d/time-allocation.md {% endcomment %}
   }
 
   /* _layouts/post.html runs $("table").addClass("table table-striped"), so
-     Bootstrap's striping lands on this table too and hard-codes a light-theme
-     text color on every other row, which is unreadable in dark mode. Beat it
-     on specificity and re-stripe with our own tokens. */
+     Bootstrap's striping lands on this table too. Beat it on specificity and
+     re-stripe with our own tokens. */
   .bkt .bkt-data table > thead > tr > *,
   .bkt .bkt-data table > tbody > tr > * {
     color: var(--bkt-ink);

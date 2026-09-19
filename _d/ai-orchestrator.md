@@ -30,6 +30,8 @@ An orchestrator is everything around the agent. The agent writes the code. The o
 
 ## Why I hand-roll mine
 
+I run two. [Larry](/larry) gets his own orchestrator, the Mine column above. [Gas City](/gas-city) is the orchestrator when I want one off the shelf.
+
 1. **It is hyper-tuned to me.** My nudges, my repos, my review habits, my phone.
 2. **I learn how it works.** Building a brick is how I find out what it is for. That is also what lets me judge someone else's version.
 3. **I mix and match best in breed.** Every brick can come from a different third party and I take whichever one is best. That matters more the less I can afford [all the expensive tokens I want](/token-management).
