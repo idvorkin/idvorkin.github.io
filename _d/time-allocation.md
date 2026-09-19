@@ -23,7 +23,6 @@ I asked myself a plain question this week: how is my time actually getting alloc
 - [Freed time rolls downhill](#freed-time-rolls-downhill)
 - [Two of the good buckets have ceilings](#two-of-the-good-buckets-have-ceilings)
 - [Compulsion lives in tech, addiction lives in consumption](#compulsion-lives-in-tech-addiction-lives-in-consumption)
-- [So how is your time getting allocated?](#so-how-is-your-time-getting-allocated)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -34,7 +33,7 @@ Four are investments. The fifth is what's left.
 
 **Tech.** Work, home projects, the AI tooling I build for myself, and deep thinking, which for me means writing this. Every one of those is a screen and me.
 
-**Identity.** [Magic](/magic), biking, [ballooning](/balloon), the [joy](/joy) stuff. This is the bucket where I'm being someone rather than shipping something, which is [what a good hobby is for](/hobby). One word I want to be careful about: this is not "habits." Habits aren't a bucket. Habits are the machinery underneath one, the thing that gets me to the mat. Filing magic under habits would make "maker of smiles and wonder" a maintenance task.
+**Identity (Non-Tech).** [Magic](/magic), biking, [ballooning](/balloon), the [joy](/joy) stuff. This is the bucket where I'm being someone rather than shipping something, which is [what a good hobby is for](/hobby). One word I want to be careful about: this is not "habits." Habits aren't a bucket. Habits are the machinery underneath one, the thing that gets me to the mat. Filing magic under habits would make "maker of smiles and wonder" a maintenance task.
 
 **Health.** Physical, emotional, cognitive. I've [written up the dimensions elsewhere](/health); the thing that matters here is that they're one bucket, not three.
 
@@ -54,7 +53,7 @@ A nit on my own label: it's not quite consumption. It's consumption that isn't e
 
 Here's the part that bothers me, and the reason I wrote any of this down.
 
-I used to think the move was to shrink tech. Claw back five hours from the screen and surely they show up somewhere good. They don't. When I shrink tech, relationships and identity usually don't grow. Consumption does.
+Reducing time in one bucket usually lands in consumption, not in the goal. I used to think the move was to shrink tech. Claw back five hours from the screen and surely they show up somewhere good. They don't. When I shrink tech, relationships and identity usually don't grow. Consumption does.
 
 The reason is [activation energy](/activation). Consumption has negative starting energy: the phone starts itself, no decision required. Enjoyment needs a person, which needs a text and a calendar and somebody else's yes, and it needs a moment worth remembering, which needs a little bit of a plan. One of those two is free and it's the wrong one.
 
@@ -79,24 +78,6 @@ Line that up against the buckets and it's tidy in a way I don't love. Tech is wh
 So "shrink tech" is the wrong instruction on two counts. It cuts the passion, not the addiction, and it hands the recovered hours straight to the leak.
 
 There's a second cost I underrate: the [monoculture trap](/addiction#dont-narrow-to-one-passion-the-monoculture-trap). The passion I overfeed isn't just taking hours from the other buckets, it's letting them wither. Identity doesn't sit patiently waiting for me to come back, it decays. And when the one passion I've been feeding has a bad month, the others aren't in shape to carry me.
-
-## So how is your time getting allocated?
-
-Two columns, because hours alone will lie to you. An hour of tech at 5am and an hour of tech at 9pm are not the same hour. My [willpower runs high in the morning and falls all day](/activation#will-power), so the prime hours are a different currency from the leftovers. It's easy to give relationships four hours a week and have every one of them be the exhausted kind.
-
-Fill this in for a week. Actual hours, not intended ones.
-
-| Bucket        | Hours this week | Of those, how many were prime-energy hours? |
-| ------------- | --------------- | ------------------------------------------- |
-| Tech          |                 |                                             |
-| Identity      |                 |                                             |
-| Health        |                 |                                             |
-| Relationships |                 |                                             |
-| Consumption   |                 |                                             |
-
-Two things show up, and neither is the total you were bracing for. One bucket will be at or near zero, and a different one will have taken every good hour you had. That gap is the report.
-
-The last row is the one nobody tracks. If your week holds twenty hours you can't assign, that isn't a discipline problem, it's an unassigned-hours problem. The fix is to give those hours a destination, a person or a practice, before they arrive.
 
 {% include alert.html style="warning" content="**Warning: I may have drawn this wrong.** Tech might not be a bucket. It might be an identity, the same kind of noun as magician or dad, that got very good at feeding itself. [Roles are how I've always written the eulogy](/eulogy), and the eulogy is the document this is supposed to serve. If that's right, the question stops being how I allocate my time and becomes which of my roles is eating the others. The neutral bucket is the more comfortable framing, which is why I don't trust it." %}
 
