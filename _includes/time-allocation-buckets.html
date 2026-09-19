@@ -1,0 +1,818 @@
+{% comment %} Time-allocation buckets — one stacked bar of a 16 hour waking day
+across the five buckets, with a weekday/weekend toggle, a "shrink tech" slider,
+and two ceilings drawn on the bar. Self-contained, no parameters, no libraries,
+no network. Edit the DATA block at the top of the script; the bar, the rows, the
+ceiling markers and the numbers table are all generated from it, so there is
+exactly one place to edit. THE HOURS ARE ILLUSTRATIVE, NOT MEASURED. They are
+plausible round numbers for a 16 hour waking day, not a log of anyone's week.
+Used by: _d/time-allocation.md {% endcomment %}
+
+<style>
+  .bkt {
+    --bkt-paper: #ffffff;
+    --bkt-panel: #f2f4f6;
+    --bkt-ink: #1b1f24;
+    --bkt-ink-soft: #5a636e;
+    --bkt-ink-faint: #8a929c;
+    --bkt-rule: #d8dbe0;
+    --bkt-hatch: rgba(255, 255, 255, 0.3);
+
+    --bkt-tech: #2f6f8f;
+    --bkt-identity: #4a7c59;
+    --bkt-health: #6b5b95;
+    --bkt-relationships: #b8562f;
+    --bkt-consumption: #7c828a;
+
+    --bkt-mono:
+      ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+      "Liberation Mono", monospace;
+
+    box-sizing: border-box;
+    max-width: 780px;
+    margin: 2.5em auto;
+    padding: 1.5rem 1.5rem 1.25rem;
+    background: var(--bkt-paper);
+    border: 1px solid var(--bkt-rule);
+    border-radius: 3px;
+    color: var(--bkt-ink);
+    font-variant-numeric: tabular-nums;
+    accent-color: var(--bkt-tech);
+  }
+
+  .bkt * {
+    box-sizing: border-box;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .bkt {
+      --bkt-paper: #1c1c1e;
+      --bkt-panel: #2a2b2e;
+      --bkt-ink: #e7e9ec;
+      --bkt-ink-soft: #a8b0b8;
+      --bkt-ink-faint: #858d95;
+      --bkt-rule: #3a3d42;
+      --bkt-hatch: rgba(0, 0, 0, 0.28);
+
+      --bkt-tech: #79b3d0;
+      --bkt-identity: #86c096;
+      --bkt-health: #a99ad4;
+      --bkt-relationships: #e0906c;
+      --bkt-consumption: #9aa1a9;
+    }
+  }
+
+  [data-bs-theme="dark"] .bkt {
+    --bkt-paper: #1c1c1e;
+    --bkt-panel: #2a2b2e;
+    --bkt-ink: #e7e9ec;
+    --bkt-ink-soft: #a8b0b8;
+    --bkt-ink-faint: #858d95;
+    --bkt-rule: #3a3d42;
+    --bkt-hatch: rgba(0, 0, 0, 0.28);
+
+    --bkt-tech: #79b3d0;
+    --bkt-identity: #86c096;
+    --bkt-health: #a99ad4;
+    --bkt-relationships: #e0906c;
+    --bkt-consumption: #9aa1a9;
+  }
+
+  .bkt-title {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.25;
+    text-wrap: balance;
+  }
+
+  .bkt-sub {
+    margin: 0.35rem 0 0;
+    font-size: 0.85rem;
+    line-height: 1.45;
+    color: var(--bkt-ink-soft);
+    max-width: 54ch;
+  }
+
+  .bkt-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    padding: 1rem 0 0;
+  }
+
+  .bkt-toggle {
+    display: flex;
+    border: 1px solid var(--bkt-ink);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .bkt-toggle button {
+    appearance: none;
+    margin: 0;
+    padding: 0.45rem 0.7rem;
+    border: 0;
+    background: var(--bkt-paper);
+    color: var(--bkt-ink-soft);
+    font-family: var(--bkt-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    line-height: 1;
+    cursor: pointer;
+    transition:
+      background 160ms ease,
+      color 160ms ease;
+  }
+
+  .bkt-toggle button + button {
+    border-left: 1px solid var(--bkt-ink);
+  }
+
+  .bkt-toggle button:hover {
+    background: var(--bkt-panel);
+  }
+
+  .bkt-toggle button[aria-pressed="true"] {
+    background: var(--bkt-ink);
+    color: var(--bkt-paper);
+  }
+
+  .bkt-toggle button:focus-visible {
+    outline: 2px solid var(--bkt-tech);
+    outline-offset: 2px;
+  }
+
+  .bkt-slider {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 0.9rem;
+    padding: 0.9rem 0 0.2rem;
+  }
+
+  .bkt-slider label {
+    font-family: var(--bkt-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--bkt-ink-soft);
+    margin: 0;
+  }
+
+  .bkt-slider output {
+    color: var(--bkt-ink);
+    font-weight: 700;
+  }
+
+  .bkt-slider input {
+    flex: 1 1 14rem;
+    min-width: 10rem;
+    margin: 0;
+  }
+
+  .bkt-chart {
+    padding-top: 1.35rem;
+  }
+
+  .bkt-marks {
+    position: relative;
+    height: 1.05rem;
+  }
+
+  .bkt-mark {
+    position: absolute;
+    top: 0.72rem;
+    bottom: -0.35rem;
+    width: 0;
+    border-left: 2px dashed var(--bkt-ink-soft);
+    transition: left 380ms cubic-bezier(0.22, 0.68, 0.35, 1);
+  }
+
+  .bkt-mark span {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-family: var(--bkt-mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.04em;
+    color: var(--bkt-ink-soft);
+  }
+
+  .bkt-bar {
+    position: relative;
+    display: flex;
+    height: 2.4rem;
+    background: var(--bkt-panel);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .bkt-seg {
+    flex: 0 0 auto;
+    height: 100%;
+    width: 0;
+    transition: width 380ms cubic-bezier(0.22, 0.68, 0.35, 1);
+  }
+
+  .bkt-seg + .bkt-seg {
+    box-shadow: inset 1px 0 0 var(--bkt-paper);
+  }
+
+  .bkt-seg[data-id="consumption"] {
+    background-image: repeating-linear-gradient(
+      45deg,
+      var(--bkt-hatch) 0 3px,
+      transparent 3px 7px
+    );
+  }
+
+  .bkt-rail {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .bkt-rail .bkt-mark {
+    top: 0;
+    bottom: 0;
+    border-left-color: var(--bkt-ink);
+    opacity: 0.75;
+  }
+
+  .bkt-axis {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.35rem;
+    font-family: var(--bkt-mono);
+    font-size: 0.65rem;
+    color: var(--bkt-ink-faint);
+  }
+
+  .bkt-rows {
+    list-style: none;
+    max-width: 34rem;
+    margin: 1.1rem 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .bkt-row {
+    display: grid;
+    grid-template-columns: 0.8rem 1fr 3.1rem 3.4rem;
+    align-items: baseline;
+    gap: 0.5rem;
+  }
+
+  .bkt-dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 1px;
+    align-self: center;
+  }
+
+  .bkt-name {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .bkt-hours,
+  .bkt-delta {
+    font-family: var(--bkt-mono);
+    font-size: 0.75rem;
+    text-align: right;
+  }
+
+  .bkt-hours {
+    color: var(--bkt-ink);
+  }
+
+  .bkt-delta {
+    font-size: 0.68rem;
+    color: var(--bkt-ink-faint);
+  }
+
+  .bkt-note {
+    grid-column: 2 / -1;
+    font-size: 0.7rem;
+    line-height: 1.3;
+    color: var(--bkt-ink-faint);
+    margin-top: -0.2rem;
+  }
+
+  .bkt-row.is-capped .bkt-note {
+    color: var(--bkt-ink);
+    font-weight: 700;
+  }
+
+  .bkt-foot {
+    margin: 1.2rem 0 0;
+    padding-top: 0.85rem;
+    border-top: 1px solid var(--bkt-rule);
+    font-size: 0.78rem;
+    line-height: 1.5;
+    color: var(--bkt-ink-soft);
+  }
+
+  .bkt-foot b {
+    color: var(--bkt-ink);
+  }
+
+  .bkt-data {
+    margin-top: 0.9rem;
+    font-size: 0.78rem;
+    color: var(--bkt-ink-soft);
+  }
+
+  .bkt-data summary {
+    cursor: pointer;
+    font-family: var(--bkt-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .bkt-data table {
+    width: 100%;
+    margin: 0.7rem 0 0;
+    border-collapse: collapse;
+    font-size: 0.78rem;
+  }
+
+  .bkt-data caption {
+    caption-side: top;
+    text-align: left;
+    padding-bottom: 0.4rem;
+    color: var(--bkt-ink-faint);
+    font-size: 0.72rem;
+    line-height: 1.4;
+  }
+
+  .bkt-data th,
+  .bkt-data td {
+    padding: 0.28rem 0.4rem;
+    border-bottom: 1px solid var(--bkt-rule);
+    text-align: right;
+    color: var(--bkt-ink);
+  }
+
+  .bkt-data th:first-child,
+  .bkt-data td:first-child {
+    text-align: left;
+  }
+
+  .bkt-data thead th {
+    font-weight: 400;
+    font-family: var(--bkt-mono);
+    font-size: 0.66rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  /* _layouts/post.html runs $("table").addClass("table table-striped"), so
+     Bootstrap's striping lands on this table too and hard-codes a light-theme
+     text color on every other row, which is unreadable in dark mode. Beat it
+     on specificity and re-stripe with our own tokens. */
+  .bkt .bkt-data table > thead > tr > *,
+  .bkt .bkt-data table > tbody > tr > * {
+    color: var(--bkt-ink);
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .bkt .bkt-data table > thead > tr > * {
+    color: var(--bkt-ink-soft);
+  }
+
+  .bkt .bkt-data table > tbody > tr:nth-of-type(odd) > * {
+    background-color: var(--bkt-panel);
+  }
+
+  @media (max-width: 640px) {
+    .bkt {
+      padding: 1.1rem 1rem 1rem;
+    }
+    .bkt-toggle {
+      width: 100%;
+    }
+    .bkt-toggle button {
+      flex: 1;
+      padding: 0.45rem 0.35rem;
+      font-size: 0.62rem;
+      letter-spacing: 0.03em;
+    }
+    .bkt-slider input {
+      flex: 1 1 100%;
+    }
+    .bkt-row {
+      grid-template-columns: 0.8rem 1fr 2.8rem 3rem;
+      gap: 0.4rem;
+    }
+    .bkt-mark span {
+      font-size: 0.55rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bkt-seg,
+    .bkt-mark {
+      transition: none;
+    }
+  }
+</style>
+
+<div class="bkt" id="bkt-buckets">
+  <h3 class="bkt-title">Where sixteen waking hours go</h3>
+  <p class="bkt-sub">
+    Illustrative hours, not measured. Take hours out of tech and watch which
+    bucket actually catches them.
+  </p>
+
+  <div class="bkt-controls">
+    <div class="bkt-toggle" role="group" aria-label="Which kind of day">
+      <button type="button" data-day="weekday" aria-pressed="true">
+        Weekday
+      </button>
+      <button type="button" data-day="weekend" aria-pressed="false">
+        Weekend
+      </button>
+    </div>
+    <div class="bkt-toggle" role="group" aria-label="Where the freed hours go">
+      <button type="button" data-flow="expect" aria-pressed="true">
+        What I expect
+      </button>
+      <button type="button" data-flow="usual" aria-pressed="false">
+        What usually happens
+      </button>
+    </div>
+  </div>
+
+  <div class="bkt-slider">
+    <label for="bkt-shrink"
+      >Shrink tech by <output id="bkt-shrink-out" for="bkt-shrink">0h</output>
+    </label>
+    <input id="bkt-shrink" type="range" min="0" max="4" step="1" value="0" />
+  </div>
+
+  <div class="bkt-chart" aria-hidden="true">
+    <div class="bkt-marks"></div>
+    <div class="bkt-bar"><div class="bkt-rail"></div></div>
+    <div class="bkt-axis">
+      <span>0h</span><span>4h</span><span>8h</span><span>12h</span
+      ><span>16h</span>
+    </div>
+  </div>
+
+  <ul class="bkt-rows" aria-hidden="true"></ul>
+
+  <p class="bkt-foot">
+    A dashed line appears when a bucket hits its ceiling.
+    <b>Relationships</b> stops at whatever time the other people actually have.
+    <b>Health</b> stops at enough. Hours that run past a ceiling do not
+    disappear, they land in consumption, which is the hatched block on the
+    right. Numbers are made up to show the shape, not measured.
+  </p>
+
+  <details class="bkt-data">
+    <summary>The numbers</summary>
+    <table>
+      <caption></caption>
+      <thead>
+        <tr>
+          <th scope="col">Bucket</th>
+          <th scope="col">Hours</th>
+          <th scope="col">Change</th>
+          <th scope="col">Ceiling</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </details>
+
+  <noscript>
+    <p class="bkt-foot">
+      This chart needs JavaScript. The point it makes: on the illustrative
+      weekday split, tech is more than half the waking day, and hours taken out
+      of tech mostly land in consumption rather than in relationships or
+      identity, because relationships stops at whatever time other people have
+      and health stops at enough.
+    </p>
+  </noscript>
+</div>
+
+{% raw %}
+<script>
+  (function () {
+    // ---- Edit here. The bar, the rows, the markers and the table all come
+    // from this block. Hours are ILLUSTRATIVE: plausible round numbers for a
+    // 16 hour waking day, not a measurement of anyone's week. ----
+    var DAY_HOURS = 16;
+    var MAX_SHRINK = 4;
+
+    var BUCKETS = [
+      { id: "tech", name: "Tech" },
+      { id: "identity", name: "Identity" },
+      { id: "health", name: "Health" },
+      { id: "relationships", name: "Relationships" },
+      { id: "consumption", name: "Consumption" },
+    ];
+
+    var DAYS = {
+      weekday: {
+        label: "Weekday",
+        base: {
+          tech: 9,
+          identity: 0.5,
+          health: 1,
+          relationships: 2.5,
+          consumption: 3,
+        },
+        // Ceilings. relationships = the most time the other people are
+        // actually available for. health = the point where more hours stop
+        // buying more health.
+        caps: { relationships: 3.5, health: 1.5 },
+      },
+      weekend: {
+        label: "Weekend",
+        base: {
+          tech: 5,
+          identity: 2,
+          health: 1.5,
+          relationships: 5,
+          consumption: 2.5,
+        },
+        caps: { relationships: 6.5, health: 2.5 },
+      },
+    };
+
+    // Share of each freed tech hour that each bucket gets. Anything that runs
+    // into a ceiling rolls into consumption.
+    var FLOWS = {
+      expect: {
+        label: "What I expect",
+        caption: "what I expect",
+        share: { relationships: 0.4, identity: 0.4, health: 0.2 },
+      },
+      usual: {
+        label: "What usually happens",
+        caption: "what usually happens",
+        share: { consumption: 0.7, identity: 0.2, relationships: 0.1 },
+      },
+    };
+    // ---- End of editable block. ----
+
+    var root = document.getElementById("bkt-buckets");
+    if (!root) return;
+
+    var barEl = root.querySelector(".bkt-bar");
+    var railEl = root.querySelector(".bkt-rail");
+    var marksEl = root.querySelector(".bkt-marks");
+    var rowsEl = root.querySelector(".bkt-rows");
+    var slider = root.querySelector("#bkt-shrink");
+    var sliderOut = root.querySelector("#bkt-shrink-out");
+    var tbody = root.querySelector(".bkt-data tbody");
+    var caption = root.querySelector(".bkt-data caption");
+
+    var day = "weekday";
+    var flow = "expect";
+    var shrink = 0;
+
+    var MARK_LABELS = { relationships: "their time", health: "enough" };
+
+    function round1(v) {
+      return Math.round(v * 10) / 10;
+    }
+
+    function fmt(v) {
+      var r = round1(v);
+      return (r % 1 === 0 ? r.toFixed(0) : r.toFixed(1)) + "h";
+    }
+
+    function signed(v) {
+      var r = round1(v);
+      if (r === 0) return "";
+      return (r > 0 ? "+" : "−") + fmt(Math.abs(r));
+    }
+
+    function compute() {
+      var d = DAYS[day];
+      var share = FLOWS[flow].share;
+      var hours = {};
+      BUCKETS.forEach(function (b) {
+        hours[b.id] = d.base[b.id];
+      });
+
+      var moved = Math.min(shrink, hours.tech);
+      hours.tech -= moved;
+
+      var spill = 0;
+      BUCKETS.forEach(function (b) {
+        var s = share[b.id] || 0;
+        if (!s) return;
+        hours[b.id] = Math.round((hours[b.id] + moved * s) * 100) / 100;
+        var cap = d.caps[b.id];
+        if (cap != null && hours[b.id] > cap) {
+          spill += hours[b.id] - cap;
+          hours[b.id] = cap;
+        }
+      });
+      hours.consumption += spill;
+
+      BUCKETS.forEach(function (b) {
+        hours[b.id] = round1(hours[b.id]);
+      });
+      return { hours: hours, caps: d.caps, spill: round1(spill) };
+    }
+
+    // Build the bar segments and the rows once; render() only updates them.
+    var segs = {};
+    var rows = {};
+    var marks = {};
+
+    BUCKETS.forEach(function (b) {
+      var seg = document.createElement("div");
+      seg.className = "bkt-seg";
+      seg.dataset.id = b.id;
+      // backgroundColor, not the background shorthand: the shorthand would wipe
+      // the hatch background-image the stylesheet puts on consumption.
+      seg.style.backgroundColor = "var(--bkt-" + b.id + ")";
+      barEl.appendChild(seg);
+      segs[b.id] = seg;
+
+      var li = document.createElement("li");
+      li.className = "bkt-row";
+
+      var dot = document.createElement("span");
+      dot.className = "bkt-dot";
+      dot.style.backgroundColor = "var(--bkt-" + b.id + ")";
+
+      var name = document.createElement("span");
+      name.className = "bkt-name";
+      name.textContent = b.name;
+
+      var hrs = document.createElement("span");
+      hrs.className = "bkt-hours";
+
+      var delta = document.createElement("span");
+      delta.className = "bkt-delta";
+
+      li.appendChild(dot);
+      li.appendChild(name);
+      li.appendChild(hrs);
+      li.appendChild(delta);
+
+      var note = null;
+      if (MARK_LABELS[b.id]) {
+        note = document.createElement("span");
+        note.className = "bkt-note";
+        li.appendChild(note);
+      }
+
+      rowsEl.appendChild(li);
+      rows[b.id] = { li: li, hrs: hrs, delta: delta, note: note };
+    });
+
+    Object.keys(MARK_LABELS).forEach(function (id) {
+      var rail = document.createElement("div");
+      rail.className = "bkt-mark";
+      railEl.appendChild(rail);
+
+      var flag = document.createElement("div");
+      flag.className = "bkt-mark";
+      var text = document.createElement("span");
+      text.textContent = MARK_LABELS[id];
+      flag.appendChild(text);
+      marksEl.appendChild(flag);
+
+      marks[id] = { rail: rail, flag: flag };
+    });
+
+    function render() {
+      var state = compute();
+      var hours = state.hours;
+      var base = DAYS[day].base;
+      var caps = state.caps;
+      var offset = 0;
+      var markPos = {};
+
+      BUCKETS.forEach(function (b) {
+        var h = hours[b.id];
+        segs[b.id].style.width = (h / DAY_HOURS) * 100 + "%";
+        if (caps[b.id] != null) {
+          markPos[b.id] = ((offset + caps[b.id]) / DAY_HOURS) * 100;
+        }
+        offset += h;
+
+        var r = rows[b.id];
+        r.hrs.textContent = fmt(h);
+        r.delta.textContent = signed(h - base[b.id]);
+
+        var cap = caps[b.id];
+        var atCap = cap != null && h >= cap - 0.001;
+        r.li.classList.toggle("is-capped", atCap);
+        if (marks[b.id]) marks[b.id].on = atCap;
+        if (!r.note || cap == null) {
+          // no ceiling on this bucket
+        } else if (b.id === "relationships") {
+          r.note.textContent = atCap
+            ? "at the ceiling, " + fmt(cap) + ": nobody else is free"
+            : "ceiling " + fmt(cap) + ", set by other people";
+        } else {
+          r.note.textContent = atCap
+            ? "at enough, " + fmt(cap) + ": more hours stop paying"
+            : "enough at " + fmt(cap);
+        }
+      });
+
+      Object.keys(marks).forEach(function (id) {
+        marks[id].rail.style.left = markPos[id] + "%";
+        marks[id].flag.style.left = markPos[id] + "%";
+        // Off the ceiling the line would float inside the next bucket's block.
+        marks[id].rail.style.opacity = marks[id].flag.style.opacity = marks[id]
+          .on
+          ? 1
+          : 0;
+      });
+
+      sliderOut.textContent = fmt(shrink);
+      slider.setAttribute(
+        "aria-valuetext",
+        shrink === 1 ? "1 hour" : shrink + " hours"
+      );
+
+      caption.textContent =
+        DAYS[day].label +
+        ", " +
+        FLOWS[flow].caption +
+        ", tech shrunk by " +
+        fmt(shrink) +
+        ". Illustrative hours out of " +
+        DAY_HOURS +
+        " waking, not measured." +
+        (state.spill > 0
+          ? " " +
+            fmt(state.spill) +
+            " ran past a ceiling and landed in consumption."
+          : "");
+
+      tbody.innerHTML = "";
+      BUCKETS.forEach(function (b) {
+        var tr = document.createElement("tr");
+        var th = document.createElement("th");
+        th.scope = "row";
+        th.textContent = b.name;
+        tr.appendChild(th);
+
+        [
+          fmt(hours[b.id]),
+          signed(hours[b.id] - base[b.id]) || "—",
+          caps[b.id] != null ? fmt(caps[b.id]) : "—",
+        ].forEach(function (v) {
+          var td = document.createElement("td");
+          td.textContent = v;
+          tr.appendChild(td);
+        });
+        tbody.appendChild(tr);
+      });
+    }
+
+    root.querySelectorAll("[data-day]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        if (day === btn.dataset.day) return;
+        day = btn.dataset.day;
+        root.querySelectorAll("[data-day]").forEach(function (b) {
+          b.setAttribute("aria-pressed", String(b.dataset.day === day));
+        });
+        render();
+      });
+    });
+
+    root.querySelectorAll("[data-flow]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        if (flow === btn.dataset.flow) return;
+        flow = btn.dataset.flow;
+        root.querySelectorAll("[data-flow]").forEach(function (b) {
+          b.setAttribute("aria-pressed", String(b.dataset.flow === flow));
+        });
+        render();
+      });
+    });
+
+    slider.max = String(MAX_SHRINK);
+    slider.addEventListener("input", function () {
+      shrink = Number(slider.value);
+      render();
+    });
+
+    render();
+  })();
+</script>
+{% endraw %}

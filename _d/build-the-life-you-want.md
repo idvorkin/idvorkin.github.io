@@ -83,6 +83,8 @@ Or in Brooks' own words, from his Atlantic column [Choose Enjoyment Over Pleasur
 
 So converting pleasure into enjoyment is cheap and deliberate: add a person, and lay down a memory. Don't kill the pleasure—upgrade it.
 
+I'd add a third move that isn't Brooks': **add who you want to be.** I can spend twenty minutes watching magic clips, or twenty minutes doing the trick badly until it stops being bad. Both start from the same pull. One of them makes me a magician. In [where my time goes](/time-allocation), adding a person moves the hour into relationships, adding who I want to be moves it into identity, and adding nothing leaves it in consumption.
+
 Where this fits the bigger picture: enjoyment is one of three "macronutrients" of a happy life for Brooks, next to **satisfaction** (the reward that lands _after_ earned struggle) and **meaning/purpose**—the same [Happiness = Enjoyment + Satisfaction + Purpose](#equations-of-happiness) equation further down. Pleasure by itself isn't on that list, because pleasure by itself isn't food. It's the same spine as [producing vs consuming](/produce-consume): solitary consumption is the pleasure hit; creating and sharing is what turns it into something that lasts.
 
 **Two honest caveats,** because the tidy version oversells it:
