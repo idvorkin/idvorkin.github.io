@@ -1,0 +1,61 @@
+# no-mistakes gate config for this blog (https://github.com/kunchenguid/no-mistakes).
+# Gate-control fields (agent, commands, review, document, test.instructions) are
+# read from the DEFAULT BRANCH only, never from the pushed branch, so changes
+# here take effect once merged to main.
+
+# Codex first, Claude as fallback: the gate burns a lot of tokens per run and
+# Claude quota is usually the tighter one.
+agent: [codex, claude]
+
+commands:
+  prepare: "bundle install && npm ci"
+  # Same fast checks the pre-commit hook runs, scoped to the branch's own diff.
+  lint: "pre-commit run --from-ref \"$(git merge-base HEAD origin/main)\" --to-ref HEAD"
+  # Targeted local validation, not CI parity: the site must build and the fast
+  # unit suite must pass. Playwright is driven by test.instructions below.
+  test: "just jekyll-build && just fast-test"
+
+ignore_patterns:
+  - "_site/**"
+  - "back-links.json"
+  - "node_modules/**"
+  - "playwright-report/**"
+  - "test-results/**"
+  - "pagefind/**"
+
+review:
+  path_instructions:
+    - path: "_d/**"
+      instructions: |
+        Blog prose. Do not request test coverage. Review for: front-matter and
+        permalink correctness, internal links that resolve, the repo's
+        "Distill, Don't Accrete" rule in CLAUDE.md (additions must earn their
+        place), and factual claims that are stated without a source. Posts are
+        first-person Igor unless the post says otherwise; flag text that reads
+        like generic AI prose. Never rewrite the author's voice.
+    - path: "_posts/**"
+      instructions: |
+        Same rules as _d/**.
+    - path: "_td/**"
+      instructions: |
+        Same rules as _d/**.
+
+document:
+  instructions: |
+    A change that only adds or edits a post needs no documentation change.
+    Code or workflow changes are documented in CLAUDE.md / CLAUDE-CODING.md /
+    blog-dev.md, never in README.md alone.
+
+test:
+  instructions: |
+    For a content change: serve the site on a free port that is NOT 4000
+    (`SERVER_PORT=<port> just jekyll-serve <port>`; playwright.config.ts reuses
+    any server already on its port, so sharing a port silently tests someone
+    else's checkout). Open the changed page, confirm it renders with no console
+    errors, and screenshot it. Run only the Playwright specs the change can
+    affect (`SERVER_PORT=<port> npx playwright test tests/e2e/<spec>`), not all
+    of them. Headless Chromium has no AAC/H.264 decoder, so media playback
+    failures are not regressions. Stop the server you started, by PID.
+  evidence:
+    store_in_repo: false
+    attach_media: true
