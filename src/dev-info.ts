@@ -22,6 +22,13 @@ export function getCurrentPR(): number | null {
   return null;
 }
 
+/** Permalinks of the pages this branch changes, from `just update-pr-data`. */
+export function getChangedPages(): string[] {
+  const pages = (window as any).__GIT_CHANGED__;
+  if (!Array.isArray(pages)) return [];
+  return pages.filter((p): p is string => typeof p === "string" && p.startsWith("/"));
+}
+
 export function isDevServer(): boolean {
   return window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
 }
@@ -75,6 +82,17 @@ export function initDevInfo(): void {
       infoContent += " | ";
     }
     infoContent += `<i class="fas fa-server"></i> Port: <code style="background: black; color: white; padding: 2px 6px; border-radius: 3px;">${port}</code>`;
+
+    const changed = getChangedPages();
+    if (changed.length) {
+      const links = changed
+        .map(
+          (p) =>
+            `<a href="${encodeURI(p)}" style="color: #58a6ff; text-decoration: none;">${p.replace(/[<>&"]/g, "")}</a>`,
+        )
+        .join(" ");
+      infoContent += ` | <i class="fas fa-file-pen"></i> Changed: ${links}`;
+    }
 
     devInfoElement.innerHTML = infoContent;
     document.body.appendChild(devInfoElement);
