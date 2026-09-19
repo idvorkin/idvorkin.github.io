@@ -1,0 +1,1304 @@
+{% comment %} Orchestrator stack — the brick diagram, a stepper that builds it
+one problem at a time, and the "who fills each brick" table. Self-contained: no
+parameters, no libraries, no network, no build step. Edit the STEPS block at the
+top of the script for the stepper; the SVG bricks carry data-from / data-until,
+which is what ties a brick to the step that introduces it. The table is plain
+markup so it reads fine with JavaScript off; the toggles are added by the
+script. Used by: _d/ai-orchestrator.md {% endcomment %}
+
+<style>
+  .orc {
+    --orc-paper: #ffffff;
+    --orc-panel: #f2f4f6;
+    --orc-ink: #1b1f24;
+    --orc-ink-soft: #5a636e;
+    --orc-ink-faint: #8a929c;
+    --orc-rule: #d8dbe0;
+    --orc-accent: #2f6f8f;
+
+    --orc-c-ux: #1d4ed8;
+    --orc-c-ux-edge: #60a5fa;
+    --orc-c-control: #a16207;
+    --orc-c-control-edge: #facc15;
+    --orc-c-exec: #15803d;
+    --orc-c-exec2: #166534;
+    --orc-c-exec3: #14532d;
+    --orc-c-exec-edge: #4ade80;
+    --orc-c-land: #7e22ce;
+    --orc-c-land-edge: #c084fc;
+    --orc-c-ground: #374151;
+    --orc-c-ground-edge: #9ca3af;
+
+    --orc-mono:
+      ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+      "Liberation Mono", monospace;
+
+    box-sizing: border-box;
+    max-width: 980px;
+    margin: 2.5em auto;
+    padding: 1.5rem 1.5rem 1.25rem;
+    background: var(--orc-paper);
+    border: 1px solid var(--orc-rule);
+    border-radius: 3px;
+    color: var(--orc-ink);
+    accent-color: var(--orc-accent);
+  }
+
+  .orc * {
+    box-sizing: border-box;
+  }
+
+  .orc-title {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.25;
+    text-wrap: balance;
+  }
+
+  .orc-sub {
+    margin: 0.35rem 0 0;
+    font-size: 0.85rem;
+    line-height: 1.45;
+    color: var(--orc-ink-soft);
+    max-width: 56ch;
+  }
+
+  /* The diagram gets the full column: a side-by-side split would squeeze an
+     800-unit-wide drawing into ~470px and the labels stop being readable. */
+  .orc-grid {
+    display: grid;
+    gap: 1.1rem;
+    grid-template-columns: minmax(0, 1fr);
+    padding-top: 1.1rem;
+  }
+
+  .orc-figure {
+    margin: 0;
+    padding: 0.6rem;
+    background: var(--orc-panel);
+    border: 1px solid var(--orc-rule);
+    border-radius: 3px;
+    /* Keeps the diagram legible on a phone without pushing the page sideways. */
+    overflow-x: auto;
+  }
+
+  .orc-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Below this the column is too narrow to shrink the drawing into, so it
+     keeps its size and the figure scrolls instead. */
+  @media (max-width: 700px) {
+    .orc-svg {
+      min-width: 520px;
+    }
+  }
+
+  .orc-hint {
+    margin: 0.45rem 0 0;
+    font-family: var(--orc-mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--orc-ink-faint);
+  }
+
+  @media (min-width: 700px) {
+    .orc-hint {
+      display: none;
+    }
+  }
+
+  .orc-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 0.7rem;
+  }
+
+  .orc-btn {
+    appearance: none;
+    margin: 0;
+    padding: 0.45rem 0.7rem;
+    border: 1px solid var(--orc-ink);
+    border-radius: 2px;
+    background: var(--orc-paper);
+    color: var(--orc-ink);
+    font-family: var(--orc-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    line-height: 1;
+    cursor: pointer;
+    transition:
+      background 160ms ease,
+      color 160ms ease;
+  }
+
+  .orc-btn:hover:not(:disabled) {
+    background: var(--orc-panel);
+  }
+
+  .orc-btn:disabled {
+    border-color: var(--orc-rule);
+    color: var(--orc-ink-faint);
+    cursor: default;
+  }
+
+  .orc-btn:focus-visible {
+    outline: 2px solid var(--orc-accent);
+    outline-offset: 2px;
+  }
+
+  .orc-btn-go {
+    background: var(--orc-ink);
+    color: var(--orc-paper);
+  }
+
+  .orc-btn-go:hover:not(:disabled) {
+    background: var(--orc-ink-soft);
+  }
+
+  .orc-count {
+    margin-left: auto;
+    font-family: var(--orc-mono);
+    font-size: 0.65rem;
+    color: var(--orc-ink-faint);
+  }
+
+  .orc-card {
+    max-width: 46rem;
+    padding: 0.9rem 1rem 1rem;
+    background: var(--orc-panel);
+    border: 1px solid var(--orc-rule);
+    border-radius: 3px;
+  }
+
+  .orc-bridge {
+    margin: 0;
+    font-size: 0.8rem;
+    font-style: italic;
+    line-height: 1.4;
+    color: var(--orc-ink-faint);
+  }
+
+  .orc-bridge:empty {
+    display: none;
+  }
+
+  .orc-step-title {
+    margin: 0.3rem 0 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+
+  .orc-label {
+    margin: 0.85rem 0 0.2rem;
+    font-family: var(--orc-mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--orc-ink-faint);
+  }
+
+  .orc-body {
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+
+  .orc-dots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    padding-top: 0.7rem;
+  }
+
+  .orc-dot {
+    min-width: 1.7rem;
+    padding: 0.3rem 0.35rem;
+    font-size: 0.62rem;
+    letter-spacing: 0.03em;
+  }
+
+  .orc-dot[aria-current="true"] {
+    background: var(--orc-ink);
+    color: var(--orc-paper);
+  }
+
+  .orc-h {
+    margin: 1.8rem 0 0.3rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+
+  .orc-toggles {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem 0.9rem;
+    padding: 0.35rem 0;
+  }
+
+  .orc-toggles-label {
+    font-family: var(--orc-mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--orc-ink-faint);
+  }
+
+  .orc-toggles label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin: 0;
+    font-size: 0.78rem;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  .orc-table-wrap {
+    overflow-x: auto;
+    padding-top: 0.6rem;
+  }
+
+  .orc-table {
+    width: 100%;
+    margin: 0;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+  }
+
+  .orc-table th,
+  .orc-table td {
+    padding: 0.4rem 0.5rem;
+    border-bottom: 1px solid var(--orc-rule);
+    text-align: left;
+    vertical-align: top;
+    line-height: 1.4;
+  }
+
+  .orc-table thead th {
+    font-family: var(--orc-mono);
+    font-size: 0.62rem;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--orc-ink-soft);
+    white-space: nowrap;
+  }
+
+  .orc-table tbody th {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.88rem;
+    font-weight: 700;
+    min-width: 8rem;
+  }
+
+  .orc-why {
+    display: block;
+    max-width: 24rem;
+    padding-top: 0.2rem;
+    font-family: inherit;
+    font-size: 0.72rem;
+    font-weight: 400;
+    line-height: 1.35;
+    color: var(--orc-ink-soft);
+  }
+
+  .orc-tag {
+    display: inline-block;
+    padding: 0 0.3rem;
+    border: 1px solid var(--orc-c-control-edge);
+    border-radius: 2px;
+    font-family: var(--orc-mono);
+    font-size: 0.58rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--orc-ink-soft);
+  }
+
+  /* _layouts/post.html runs $("table").addClass("table table-striped"), which
+     hard-codes a light-theme text color on every other row. Beat it on
+     specificity and re-stripe with our own tokens. */
+  .orc .orc-table > thead > tr > *,
+  .orc .orc-table > tbody > tr > * {
+    color: var(--orc-ink);
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .orc .orc-table > thead > tr > * {
+    color: var(--orc-ink-soft);
+  }
+
+  .orc .orc-table > tbody > tr:nth-of-type(odd) > * {
+    background-color: var(--orc-panel);
+  }
+
+  .orc-foot {
+    margin: 0.9rem 0 0;
+    padding-top: 0.8rem;
+    border-top: 1px solid var(--orc-rule);
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: var(--orc-ink-soft);
+  }
+
+  /* The UA rule loses to `td`/`g` type selectors, so restate it in scope. */
+  .orc [hidden] {
+    display: none;
+  }
+
+  .orc-brick rect {
+    stroke-width: 1.5;
+    transition: opacity 250ms ease;
+  }
+
+  .orc-bl {
+    font:
+      600 15px system-ui,
+      sans-serif;
+    text-anchor: middle;
+    dominant-baseline: middle;
+    fill: #fff;
+  }
+
+  .orc-bs {
+    font:
+      400 11px system-ui,
+      sans-serif;
+    text-anchor: middle;
+    dominant-baseline: middle;
+    fill: #ffffffb3;
+  }
+
+  .orc-layer {
+    font:
+      600 10px system-ui,
+      sans-serif;
+    letter-spacing: 0.12em;
+    text-anchor: end;
+    fill: currentColor;
+    opacity: 0.5;
+  }
+
+  .orc-you rect {
+    fill: none;
+    stroke: currentColor;
+  }
+
+  .orc-you .orc-bl {
+    fill: currentColor;
+  }
+
+  .orc-ux rect {
+    fill: var(--orc-c-ux);
+    stroke: var(--orc-c-ux-edge);
+  }
+
+  .orc-control rect {
+    fill: var(--orc-c-control);
+    stroke: var(--orc-c-control-edge);
+  }
+
+  .orc-exec rect {
+    fill: var(--orc-c-exec);
+    stroke: var(--orc-c-exec-edge);
+  }
+
+  .orc-exec2 rect {
+    fill: var(--orc-c-exec2);
+    stroke: var(--orc-c-exec-edge);
+  }
+
+  .orc-exec3 rect {
+    fill: var(--orc-c-exec3);
+    stroke: var(--orc-c-exec-edge);
+  }
+
+  .orc-land rect {
+    fill: var(--orc-c-land);
+    stroke: var(--orc-c-land-edge);
+  }
+
+  .orc-ground rect {
+    fill: var(--orc-c-ground);
+    stroke: var(--orc-c-ground-edge);
+  }
+
+  .orc-slot rect {
+    fill: none;
+    stroke: currentColor;
+    stroke-dasharray: 4 4;
+    opacity: 0.3;
+  }
+
+  .orc-svg.off-ux .orc-ux,
+  .orc-svg.off-control .orc-control,
+  .orc-svg.off-exec .orc-exec,
+  .orc-svg.off-exec .orc-exec2,
+  .orc-svg.off-exec .orc-exec3,
+  .orc-svg.off-exec .orc-slot,
+  .orc-svg.off-land .orc-land {
+    opacity: 0.12;
+  }
+
+  .orc-new rect {
+    stroke: var(--orc-ink);
+    stroke-width: 3;
+  }
+
+  .orc-old {
+    opacity: 0.55;
+  }
+
+  @media (max-width: 640px) {
+    .orc {
+      padding: 1.1rem 1rem 1rem;
+    }
+    .orc-count {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .orc-brick rect {
+      transition: none;
+    }
+  }
+</style>
+
+<div class="orc" id="orc-stack">
+  <h3 class="orc-title">The stack of bricks</h3>
+  <p class="orc-sub">
+    Nothing here is needed on day one. Every brick was added because one agent
+    in a terminal broke in a specific way. Step through the breaks.
+  </p>
+
+  <div class="orc-grid">
+    <figure class="orc-figure">
+      <svg
+        class="orc-svg"
+        viewBox="0 0 800 500"
+        role="img"
+        aria-label="The orchestrator drawn as a stack of bricks: a human UX layer on top, then control, execution and landing, sitting on your repos"
+      >
+        <text x="104" y="102.0" class="orc-layer" data-from="0">HUMAN UX</text>
+        <text x="104" y="172.0" class="orc-layer" data-from="1">CONTROL</text>
+        <text x="104" y="279.0" class="orc-layer" data-from="2">EXECUTION</text>
+        <text x="104" y="386.0" class="orc-layer" data-from="7">LANDING</text>
+        <text x="104" y="453.0" class="orc-layer" data-from="0">GROUND</text>
+        <g class="orc-brick orc-you" data-from="0">
+          <title>You</title>
+          <rect x="400" y="8" width="100" height="40" rx="20" />
+          <text x="450" y="28" class="orc-bl">You</text>
+        </g>
+        <g class="orc-brick orc-ux" data-from="8">
+          <title>Rich review: annotate artifacts, decide</title>
+          <rect x="357" y="65" width="18" height="6" rx="2" />
+          <rect x="391" y="65" width="18" height="6" rx="2" />
+          <rect x="425" y="65" width="18" height="6" rx="2" />
+          <rect x="459" y="65" width="18" height="6" rx="2" />
+          <rect x="493" y="65" width="18" height="6" rx="2" />
+          <rect x="527" y="65" width="18" height="6" rx="2" />
+          <rect x="345" y="70" width="209" height="56" rx="6" />
+          <text x="450.0" y="92.0" class="orc-bl">Rich review</text>
+          <text x="450.0" y="110.0" class="orc-bs">pages you annotate</text>
+        </g>
+        <g class="orc-brick orc-ux" data-from="9">
+          <title>Overview: what needs you, what is running, what landed</title>
+          <rect x="583" y="65" width="18" height="6" rx="2" />
+          <rect x="617" y="65" width="18" height="6" rx="2" />
+          <rect x="651" y="65" width="18" height="6" rx="2" />
+          <rect x="685" y="65" width="18" height="6" rx="2" />
+          <rect x="719" y="65" width="18" height="6" rx="2" />
+          <rect x="753" y="65" width="18" height="6" rx="2" />
+          <rect x="571" y="70" width="209" height="56" rx="6" />
+          <text x="675.3" y="92.0" class="orc-bl">Overview</text>
+          <text x="675.3" y="110.0" class="orc-bs">
+            the whole fleet, one board
+          </text>
+        </g>
+        <g class="orc-brick orc-ux" data-from="0" data-until="1" hidden>
+          <title>One agent in a terminal</title>
+          <rect x="470" y="65" width="18" height="6" rx="2" />
+          <rect x="504" y="65" width="18" height="6" rx="2" />
+          <rect x="538" y="65" width="18" height="6" rx="2" />
+          <rect x="572" y="65" width="18" height="6" rx="2" />
+          <rect x="606" y="65" width="18" height="6" rx="2" />
+          <rect x="640" y="65" width="18" height="6" rx="2" />
+          <rect x="674" y="65" width="18" height="6" rx="2" />
+          <rect x="708" y="65" width="18" height="6" rx="2" />
+          <rect x="742" y="65" width="18" height="6" rx="2" />
+          <rect x="458" y="70" width="322" height="56" rx="6" />
+          <text x="619.0" y="92.0" class="orc-bl">Agent</text>
+          <text x="619.0" y="110.0" class="orc-bs">does everything itself</text>
+        </g>
+        <g class="orc-brick orc-ux" data-from="2">
+          <title>Chat: the one agent you talk to</title>
+          <rect x="132" y="65" width="18" height="6" rx="2" />
+          <rect x="166" y="65" width="18" height="6" rx="2" />
+          <rect x="200" y="65" width="18" height="6" rx="2" />
+          <rect x="234" y="65" width="18" height="6" rx="2" />
+          <rect x="268" y="65" width="18" height="6" rx="2" />
+          <rect x="302" y="65" width="18" height="6" rx="2" />
+          <rect x="120" y="70" width="209" height="56" rx="6" />
+          <text x="224.7" y="92.0" class="orc-bl">Chat</text>
+          <text x="224.7" y="110.0" class="orc-bs">
+            talks to you, hands out work
+          </text>
+        </g>
+        <g class="orc-brick orc-control" data-from="1">
+          <title>Work ledger: durable tasks outside the agent</title>
+          <rect x="132" y="135" width="18" height="6" rx="2" />
+          <rect x="166" y="135" width="18" height="6" rx="2" />
+          <rect x="200" y="135" width="18" height="6" rx="2" />
+          <rect x="234" y="135" width="18" height="6" rx="2" />
+          <rect x="120" y="140" width="153" height="56" rx="6" />
+          <text x="196.5" y="168.0" class="orc-bl">Work ledger</text>
+        </g>
+        <g class="orc-brick orc-control" data-from="5">
+          <title>Dispatcher: picks agent, model, effort</title>
+          <rect x="301" y="135" width="18" height="6" rx="2" />
+          <rect x="335" y="135" width="18" height="6" rx="2" />
+          <rect x="369" y="135" width="18" height="6" rx="2" />
+          <rect x="403" y="135" width="18" height="6" rx="2" />
+          <rect x="289" y="140" width="153" height="56" rx="6" />
+          <text x="365.5" y="168.0" class="orc-bl">Dispatcher</text>
+        </g>
+        <g class="orc-brick orc-control" data-from="5">
+          <title>Quota meter: what is left per subscription</title>
+          <rect x="470" y="135" width="18" height="6" rx="2" />
+          <rect x="504" y="135" width="18" height="6" rx="2" />
+          <rect x="538" y="135" width="18" height="6" rx="2" />
+          <rect x="572" y="135" width="18" height="6" rx="2" />
+          <rect x="458" y="140" width="153" height="56" rx="6" />
+          <text x="534.5" y="168.0" class="orc-bl">Quota meter</text>
+        </g>
+        <g class="orc-brick orc-control" data-from="6">
+          <title>Supervisor: watches from outside every agent</title>
+          <rect x="639" y="135" width="18" height="6" rx="2" />
+          <rect x="673" y="135" width="18" height="6" rx="2" />
+          <rect x="707" y="135" width="18" height="6" rx="2" />
+          <rect x="741" y="135" width="18" height="6" rx="2" />
+          <rect x="627" y="140" width="153" height="56" rx="6" />
+          <text x="703.5" y="168.0" class="orc-bl">Supervisor</text>
+        </g>
+        <g class="orc-slot" data-from="2">
+          <rect x="115" y="205" width="219" height="140" rx="8" />
+        </g>
+        <g class="orc-brick orc-exec" data-from="2">
+          <title>Worker: a fresh agent with one job</title>
+          <rect x="132" y="211" width="18" height="6" rx="2" />
+          <rect x="166" y="211" width="18" height="6" rx="2" />
+          <rect x="200" y="211" width="18" height="6" rx="2" />
+          <rect x="234" y="211" width="18" height="6" rx="2" />
+          <rect x="268" y="211" width="18" height="6" rx="2" />
+          <rect x="302" y="211" width="18" height="6" rx="2" />
+          <rect x="120" y="216" width="209" height="34" rx="6" />
+          <text x="224.5" y="233.0" class="orc-bl">Worker 1</text>
+        </g>
+        <g class="orc-brick orc-exec2" data-from="3">
+          <title>Isolation: own git worktree and branch</title>
+          <rect x="132" y="255" width="18" height="6" rx="2" />
+          <rect x="166" y="255" width="18" height="6" rx="2" />
+          <rect x="200" y="255" width="18" height="6" rx="2" />
+          <rect x="234" y="255" width="18" height="6" rx="2" />
+          <rect x="268" y="255" width="18" height="6" rx="2" />
+          <rect x="302" y="255" width="18" height="6" rx="2" />
+          <rect x="120" y="260" width="209" height="34" rx="6" />
+          <text x="224.5" y="277.0" class="orc-bl">own worktree</text>
+        </g>
+        <g class="orc-brick orc-exec3" data-from="4">
+          <title>Runtime: own terminal session</title>
+          <rect x="132" y="299" width="18" height="6" rx="2" />
+          <rect x="166" y="299" width="18" height="6" rx="2" />
+          <rect x="200" y="299" width="18" height="6" rx="2" />
+          <rect x="234" y="299" width="18" height="6" rx="2" />
+          <rect x="268" y="299" width="18" height="6" rx="2" />
+          <rect x="302" y="299" width="18" height="6" rx="2" />
+          <rect x="120" y="304" width="209" height="34" rx="6" />
+          <text x="224.5" y="321.0" class="orc-bl">own terminal</text>
+        </g>
+        <g class="orc-slot" data-from="2">
+          <rect x="341" y="205" width="219" height="140" rx="8" />
+        </g>
+        <g class="orc-brick orc-exec" data-from="2">
+          <title>Worker: a fresh agent with one job</title>
+          <rect x="358" y="211" width="18" height="6" rx="2" />
+          <rect x="392" y="211" width="18" height="6" rx="2" />
+          <rect x="426" y="211" width="18" height="6" rx="2" />
+          <rect x="460" y="211" width="18" height="6" rx="2" />
+          <rect x="494" y="211" width="18" height="6" rx="2" />
+          <rect x="528" y="211" width="18" height="6" rx="2" />
+          <rect x="346" y="216" width="209" height="34" rx="6" />
+          <text x="450.5" y="233.0" class="orc-bl">Worker 2</text>
+        </g>
+        <g class="orc-brick orc-exec2" data-from="3">
+          <title>Isolation: own git worktree and branch</title>
+          <rect x="358" y="255" width="18" height="6" rx="2" />
+          <rect x="392" y="255" width="18" height="6" rx="2" />
+          <rect x="426" y="255" width="18" height="6" rx="2" />
+          <rect x="460" y="255" width="18" height="6" rx="2" />
+          <rect x="494" y="255" width="18" height="6" rx="2" />
+          <rect x="528" y="255" width="18" height="6" rx="2" />
+          <rect x="346" y="260" width="209" height="34" rx="6" />
+          <text x="450.5" y="277.0" class="orc-bl">own worktree</text>
+        </g>
+        <g class="orc-brick orc-exec3" data-from="4">
+          <title>Runtime: own terminal session</title>
+          <rect x="358" y="299" width="18" height="6" rx="2" />
+          <rect x="392" y="299" width="18" height="6" rx="2" />
+          <rect x="426" y="299" width="18" height="6" rx="2" />
+          <rect x="460" y="299" width="18" height="6" rx="2" />
+          <rect x="494" y="299" width="18" height="6" rx="2" />
+          <rect x="528" y="299" width="18" height="6" rx="2" />
+          <rect x="346" y="304" width="209" height="34" rx="6" />
+          <text x="450.5" y="321.0" class="orc-bl">own terminal</text>
+        </g>
+        <g class="orc-slot" data-from="2">
+          <rect x="566" y="205" width="219" height="140" rx="8" />
+        </g>
+        <g class="orc-brick orc-exec" data-from="2">
+          <title>Worker: a fresh agent with one job</title>
+          <rect x="583" y="211" width="18" height="6" rx="2" />
+          <rect x="617" y="211" width="18" height="6" rx="2" />
+          <rect x="651" y="211" width="18" height="6" rx="2" />
+          <rect x="685" y="211" width="18" height="6" rx="2" />
+          <rect x="719" y="211" width="18" height="6" rx="2" />
+          <rect x="753" y="211" width="18" height="6" rx="2" />
+          <rect x="571" y="216" width="209" height="34" rx="6" />
+          <text x="675.5" y="233.0" class="orc-bl">Worker × N</text>
+        </g>
+        <g class="orc-brick orc-exec2" data-from="3">
+          <title>Isolation: own git worktree and branch</title>
+          <rect x="583" y="255" width="18" height="6" rx="2" />
+          <rect x="617" y="255" width="18" height="6" rx="2" />
+          <rect x="651" y="255" width="18" height="6" rx="2" />
+          <rect x="685" y="255" width="18" height="6" rx="2" />
+          <rect x="719" y="255" width="18" height="6" rx="2" />
+          <rect x="753" y="255" width="18" height="6" rx="2" />
+          <rect x="571" y="260" width="209" height="34" rx="6" />
+          <text x="675.5" y="277.0" class="orc-bl">own worktree</text>
+        </g>
+        <g class="orc-brick orc-exec3" data-from="4">
+          <title>Runtime: own terminal session</title>
+          <rect x="583" y="299" width="18" height="6" rx="2" />
+          <rect x="617" y="299" width="18" height="6" rx="2" />
+          <rect x="651" y="299" width="18" height="6" rx="2" />
+          <rect x="685" y="299" width="18" height="6" rx="2" />
+          <rect x="719" y="299" width="18" height="6" rx="2" />
+          <rect x="753" y="299" width="18" height="6" rx="2" />
+          <rect x="571" y="304" width="209" height="34" rx="6" />
+          <text x="675.5" y="321.0" class="orc-bl">own terminal</text>
+        </g>
+        <g class="orc-brick orc-land" data-from="7">
+          <title>Quality gate: review, test, lint, CI</title>
+          <rect x="132" y="349" width="18" height="6" rx="2" />
+          <rect x="166" y="349" width="18" height="6" rx="2" />
+          <rect x="200" y="349" width="18" height="6" rx="2" />
+          <rect x="234" y="349" width="18" height="6" rx="2" />
+          <rect x="268" y="349" width="18" height="6" rx="2" />
+          <rect x="302" y="349" width="18" height="6" rx="2" />
+          <rect x="336" y="349" width="18" height="6" rx="2" />
+          <rect x="370" y="349" width="18" height="6" rx="2" />
+          <rect x="404" y="349" width="18" height="6" rx="2" />
+          <rect x="120" y="354" width="322" height="56" rx="6" />
+          <text x="281.0" y="376.0" class="orc-bl">Quality gate</text>
+          <text x="281.0" y="394.0" class="orc-bs">
+            review · test · lint · CI
+          </text>
+        </g>
+        <g class="orc-brick orc-land" data-from="7">
+          <title>Merge path: PR or local merge</title>
+          <rect x="470" y="349" width="18" height="6" rx="2" />
+          <rect x="504" y="349" width="18" height="6" rx="2" />
+          <rect x="538" y="349" width="18" height="6" rx="2" />
+          <rect x="572" y="349" width="18" height="6" rx="2" />
+          <rect x="606" y="349" width="18" height="6" rx="2" />
+          <rect x="640" y="349" width="18" height="6" rx="2" />
+          <rect x="674" y="349" width="18" height="6" rx="2" />
+          <rect x="708" y="349" width="18" height="6" rx="2" />
+          <rect x="742" y="349" width="18" height="6" rx="2" />
+          <rect x="458" y="354" width="322" height="56" rx="6" />
+          <text x="619.0" y="376.0" class="orc-bl">Merge path</text>
+          <text x="619.0" y="394.0" class="orc-bs">PR or local merge</text>
+        </g>
+        <g class="orc-brick orc-ground" data-from="0">
+          <title>Your repos</title>
+          <rect x="132" y="419" width="18" height="6" rx="2" />
+          <rect x="166" y="419" width="18" height="6" rx="2" />
+          <rect x="200" y="419" width="18" height="6" rx="2" />
+          <rect x="234" y="419" width="18" height="6" rx="2" />
+          <rect x="268" y="419" width="18" height="6" rx="2" />
+          <rect x="302" y="419" width="18" height="6" rx="2" />
+          <rect x="336" y="419" width="18" height="6" rx="2" />
+          <rect x="370" y="419" width="18" height="6" rx="2" />
+          <rect x="404" y="419" width="18" height="6" rx="2" />
+          <rect x="438" y="419" width="18" height="6" rx="2" />
+          <rect x="472" y="419" width="18" height="6" rx="2" />
+          <rect x="506" y="419" width="18" height="6" rx="2" />
+          <rect x="540" y="419" width="18" height="6" rx="2" />
+          <rect x="574" y="419" width="18" height="6" rx="2" />
+          <rect x="608" y="419" width="18" height="6" rx="2" />
+          <rect x="642" y="419" width="18" height="6" rx="2" />
+          <rect x="676" y="419" width="18" height="6" rx="2" />
+          <rect x="710" y="419" width="18" height="6" rx="2" />
+          <rect x="744" y="419" width="18" height="6" rx="2" />
+          <rect x="120" y="424" width="660" height="50" rx="6" />
+          <text x="450.0" y="449.0" class="orc-bl">Your repos</text>
+        </g>
+      </svg>
+      <figcaption class="orc-hint">Drag the diagram sideways</figcaption>
+    </figure>
+
+    <div>
+      <div class="orc-controls" hidden>
+        <button type="button" class="orc-btn" id="orc-prev" disabled>
+          Back
+        </button>
+        <button type="button" class="orc-btn orc-btn-go" id="orc-next">
+          Start
+        </button>
+        <span class="orc-count" id="orc-count">finished stack</span>
+      </div>
+
+      <div class="orc-card" id="orc-card" aria-live="polite">
+        <p class="orc-bridge" id="orc-bridge"></p>
+        <h4 class="orc-step-title" id="orc-step-title">The whole stack</h4>
+        <p class="orc-label" id="orc-plabel">Where we end up</p>
+        <p class="orc-body" id="orc-problem">
+          This is where we end up: a human UX on top, then control, execution
+          and landing, sitting on your repos.
+        </p>
+        <p class="orc-label" id="orc-slabel">How we get there</p>
+        <p class="orc-body" id="orc-solution">
+          None of it is needed on day one. Every brick is there because one
+          agent in a terminal broke in a specific way.
+        </p>
+      </div>
+
+      <div class="orc-dots" id="orc-dots" hidden></div>
+    </div>
+  </div>
+
+  <h4 class="orc-h">Who fills each brick</h4>
+
+  <div class="orc-toggles" id="orc-toggles" hidden>
+    <span class="orc-toggles-label">Layers</span>
+    <label
+      ><input
+        type="checkbox"
+        class="orc-layer-toggle"
+        data-layer="ux"
+        checked
+      />
+      Human UX</label
+    >
+    <label
+      ><input
+        type="checkbox"
+        class="orc-layer-toggle"
+        data-layer="control"
+        checked
+      />
+      Control</label
+    >
+    <label
+      ><input
+        type="checkbox"
+        class="orc-layer-toggle"
+        data-layer="exec"
+        checked
+      />
+      Execution</label
+    >
+    <label
+      ><input
+        type="checkbox"
+        class="orc-layer-toggle"
+        data-layer="land"
+        checked
+      />
+      Landing</label
+    >
+  </div>
+
+  <div class="orc-toggles" id="orc-toggles-cols" hidden>
+    <span class="orc-toggles-label">Columns</span>
+    <label
+      ><input type="checkbox" class="orc-col-toggle" data-col="0" checked /> Gas
+      City</label
+    >
+    <label
+      ><input type="checkbox" class="orc-col-toggle" data-col="1" checked />
+      firstmate</label
+    >
+    <label
+      ><input type="checkbox" class="orc-col-toggle" data-col="2" checked />
+      Claude</label
+    >
+    <label
+      ><input type="checkbox" class="orc-col-toggle" data-col="3" checked />
+      Mine</label
+    >
+    <label
+      ><input type="checkbox" id="orc-why-toggle" checked /> why the brick
+      exists</label
+    >
+  </div>
+
+  <div class="orc-table-wrap">
+    <table class="orc-table" id="orc-parts">
+      <thead>
+        <tr>
+          <th scope="col">Brick</th>
+          <th scope="col" data-col="0">Gas City</th>
+          <th scope="col" data-col="1">firstmate</th>
+          <th scope="col" data-col="2">Claude (native)</th>
+          <th scope="col" data-col="3">Mine</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-layer="ux">
+          <th scope="row">
+            Chat: front door
+            <span class="orc-why"
+              >You cannot hold ten conversations. One agent holds the whole
+              picture and you talk only to it.</span
+            >
+          </th>
+          <td data-col="0">
+            <a href="https://github.com/gastownhall/gastown">Mayor</a>
+          </td>
+          <td data-col="1">
+            <a href="https://github.com/kunchenguid/firstmate">first mate</a>
+          </td>
+          <td data-col="2">the main Claude Code session</td>
+          <td data-col="3">
+            <a href="/larry">Larry</a>, my main Claude session
+          </td>
+        </tr>
+        <tr data-layer="ux">
+          <th scope="row">
+            Rich review
+            <span class="orc-why"
+              >A plan, a diagram or a diff cannot be reviewed by scrolling chat.
+              You need a page you can point at.</span
+            >
+          </th>
+          <td data-col="0">N/A</td>
+          <td data-col="1">
+            <a href="https://github.com/kunchenguid/lavish-axi">lavish-axi</a>
+          </td>
+          <td data-col="2">Artifacts, plan mode</td>
+          <td data-col="3">
+            <a href="https://github.com/kunchenguid/lavish-axi">lavish-axi</a>
+            on trial, markdown files
+          </td>
+        </tr>
+        <tr data-layer="ux">
+          <th scope="row">
+            Overview
+            <span class="orc-why"
+              >With a fleet running, no chat and no single page shows what needs
+              you next. You need one board.</span
+            >
+          </th>
+          <td data-col="0">don't know</td>
+          <td data-col="1">N/A, you ask the first mate</td>
+          <td data-col="2">N/A</td>
+          <td data-col="3"><a href="/ai-cockpit">Cockpit</a></td>
+        </tr>
+        <tr data-layer="control">
+          <th scope="row">
+            Work ledger
+            <span class="orc-why"
+              >Context windows die. Work that lives only in a chat is lost on
+              the next compaction or crash.</span
+            >
+          </th>
+          <td data-col="0">
+            <a href="https://github.com/gastownhall/beads">beads</a>, molecules,
+            convoys
+          </td>
+          <td data-col="1">
+            <a href="https://github.com/kunchenguid/tasks-axi">tasks-axi</a>
+            backlog
+          </td>
+          <td data-col="2">session task list only, not durable</td>
+          <td data-col="3">
+            <a href="https://github.com/gastownhall/beads">beads</a> (bd)
+          </td>
+        </tr>
+        <tr data-layer="exec">
+          <th scope="row">
+            Workers
+            <span class="orc-why"
+              >One agent is serial: slow, blocks you, confused when tasks stack.
+              A fresh agent per task is parallel and starts clean.</span
+            >
+          </th>
+          <td data-col="0">
+            <a href="https://github.com/gastownhall/gastown">polecats, crew</a>
+          </td>
+          <td data-col="1">crewmates, scouts, secondmates</td>
+          <td data-col="2">
+            <a href="https://docs.claude.com/en/docs/claude-code/sub-agents"
+              >subagents</a
+            >, agent teams
+          </td>
+          <td data-col="3">Claude subagents, Codex and Grok sessions</td>
+        </tr>
+        <tr data-layer="exec">
+          <th scope="row">
+            Isolation
+            <span class="orc-why"
+              >Two agents in one checkout overwrite each other and commit to the
+              wrong branch.</span
+            >
+          </th>
+          <td data-col="0">worktree per polecat</td>
+          <td data-col="1">
+            <a href="https://github.com/kunchenguid/treehouse">treehouse</a>,
+            pooled worktrees
+          </td>
+          <td data-col="2">worktree isolation flag</td>
+          <td data-col="3">
+            <a href="https://github.com/kunchenguid/treehouse">treehouse</a>
+            <span class="orc-tag">switching</span> from plain git worktree
+          </td>
+        </tr>
+        <tr data-layer="exec">
+          <th scope="row">
+            Runtime
+            <span class="orc-why"
+              >You need to see a worker, type into it, and have it outlive
+              whoever spawned it.</span
+            >
+          </th>
+          <td data-col="0">tmux</td>
+          <td data-col="1">
+            tmux or <a href="https://herdr.dev">Herdr</a> tabs
+          </td>
+          <td data-col="2">background tasks, in-process</td>
+          <td data-col="3"><a href="https://herdr.dev">Herdr</a> tabs</td>
+        </tr>
+        <tr data-layer="control">
+          <th scope="row">
+            Dispatcher
+            <span class="orc-why"
+              >Subscriptions run out at different times and models differ in
+              strength. Someone has to route.</span
+            >
+          </th>
+          <td data-col="0">don't know yet</td>
+          <td data-col="1">
+            crew-dispatch.json rules plus
+            <a href="https://github.com/kunchenguid/quota-axi">quota-axi</a>
+            floors
+          </td>
+          <td data-col="2">
+            a model per subagent, Claude only, no quota awareness
+          </td>
+          <td data-col="3">
+            my judgment plus
+            <a href="https://github.com/kunchenguid/quota-axi">quota-axi</a>
+          </td>
+        </tr>
+        <tr data-layer="control">
+          <th scope="row">
+            Supervisor
+            <span class="orc-why"
+              >A finished or stuck worker sits silently. The front door cannot
+              watch without blocking you, and its own watchers die with its
+              session.</span
+            >
+          </th>
+          <td data-col="0">
+            <a href="https://github.com/gastownhall/gastown">Witness, Deacon</a>
+            patrol agents
+          </td>
+          <td data-col="1">a bash watcher, outside the agents</td>
+          <td data-col="2">task notifications, die with the session</td>
+          <td data-col="3">my watcher daemon, outside the session</td>
+        </tr>
+        <tr data-layer="land">
+          <th scope="row">
+            Quality gate
+            <span class="orc-why"
+              >Agents say done when it is not. Nothing lands on their word
+              alone.</span
+            >
+          </th>
+          <td data-col="0">
+            <a href="https://github.com/gastownhall/gastown">Refinery</a>
+          </td>
+          <td data-col="1">
+            <a href="https://github.com/kunchenguid/no-mistakes">no-mistakes</a>
+          </td>
+          <td data-col="2">
+            <a href="https://docs.claude.com/en/docs/claude-code/hooks">hooks</a
+            >, /code-review
+          </td>
+          <td data-col="3">
+            <a href="https://github.com/kunchenguid/no-mistakes">no-mistakes</a>
+            on the blog, stronger-model review, I merge
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="orc-foot">
+    The firstmate column is from its docs, not from running it. The Gas City
+    column is from memory and from my own posts on it. The Claude column is what
+    ships in Claude Code today. Cells that say don't know are cells I have not
+    checked.
+  </p>
+
+  <noscript>
+    <p class="orc-foot">
+      The stepper needs JavaScript. The diagram above shows the finished stack
+      and the table below it is complete. The order the bricks arrive in: one
+      agent in a terminal, a work ledger when it forgets, workers when it is too
+      serial, a worktree each when they collide, a terminal each when you cannot
+      see them, a dispatcher and a quota meter when you run out of subscription,
+      a supervisor when nobody is watching, a quality gate and a merge path when
+      done turns out to be a lie, then rich review and an overview when chat
+      stops being the right shape.
+    </p>
+  </noscript>
+</div>
+
+{% raw %}
+<script>
+  (function () {
+    // ---- Edit here. Each step is one way the previous stack broke. `b` is the
+    // bridge line from the step before, `p` the problem, `s` the solution.
+    // **bold** is the only markup; the index of a step matches the data-from /
+    // data-until attributes on the SVG bricks. ----
+    var STEPS = [
+      {
+        t: "One agent in a terminal",
+        b: "",
+        p: "You ask. One agent does the work.",
+        s: "For one small task this is all you need. Every brick after this exists only because this breaks.",
+      },
+      {
+        t: "It forgets",
+        b: "So you give it bigger jobs.",
+        p: "The context compacts or the session crashes. The plan lived only in the chat, so it is gone.",
+        s: "A **work ledger** outside the agent. A fresh session picks up where the dead one stopped.",
+      },
+      {
+        t: "It is serial",
+        b: "Okay, great, now it remembers.",
+        p: "Slow. It blocks you while it works. It gets confused when tasks stack.",
+        s: "**Workers.** The agent you talk to stops coding and only hands out work. Each worker gets one job.",
+      },
+      {
+        t: "Workers collide",
+        b: "Okay, great, now we have multiple workers.",
+        p: "They share one checkout, overwrite each other, and commit to the wrong branch.",
+        s: "**A worktree per worker.** Own folder, own branch.",
+      },
+      {
+        t: "You cannot see them",
+        b: "Okay, great, now they do not collide.",
+        p: "A hidden worker dies with its parent. You cannot watch it or type into it.",
+        s: "**A terminal per worker** (tmux window, Herdr tab) that outlives whoever spawned it.",
+      },
+      {
+        t: "Which agent? Who has quota?",
+        b: "Okay, great, now you have a visible fleet.",
+        p: "One subscription runs dry mid-task while others sit unused. A hard task went to a weak model.",
+        s: "**A dispatcher and a quota meter.** Agent, model and effort are picked per task.",
+      },
+      {
+        t: "Nobody is watching",
+        b: "Okay, great, now work goes to the right agent.",
+        p: "A finished or stuck worker sits silently. The front door cannot watch without blocking you again.",
+        s: "**A supervisor** outside every agent. A dumb script that wakes the front door on done or stuck.",
+      },
+      {
+        t: "Done is a lie",
+        b: "Okay, great, now you know when they finish.",
+        p: "Agents say done when tests fail or half the task was skipped.",
+        s: "**A quality gate and a merge path.** Findings go back to the worker, not to you.",
+      },
+      {
+        t: "Chat is the wrong shape for review",
+        b: "Okay, great, now what lands is good.",
+        p: "Ten workers means ten walls of chat. You cannot review a plan, a diagram or a diff by scrolling a transcript.",
+        s: "**Rich review**, the second piece of the human UX. Chat is for asking. A page you can annotate is for reviewing and deciding.",
+      },
+      {
+        t: "No one view of the whole",
+        b: "Okay, great, now you can review.",
+        p: "Twenty threads, six workers, four PRs, three questions waiting on you. No single place shows what needs you next.",
+        s: "**An overview**, the third piece of the human UX. One board: what is waiting on you, what is running, what landed.",
+      },
+    ];
+
+    var WHOLE = {
+      t: "The whole stack",
+      b: "",
+      p: "This is where we end up: a human UX on top, then control, execution and landing, sitting on your repos.",
+      s: "None of it is needed on day one. Every brick is there because one agent in a terminal broke in a specific way. Press **Start** and we walk it, one problem at a time.",
+    };
+    // ---- End of editable block. ----
+
+    var root = document.getElementById("orc-stack");
+    if (!root) return;
+
+    var svg = root.querySelector(".orc-svg");
+    var bricks = Array.prototype.slice.call(
+      svg.querySelectorAll("[data-from]")
+    );
+    var dotsEl = document.getElementById("orc-dots");
+    var prevBtn = document.getElementById("orc-prev");
+    var nextBtn = document.getElementById("orc-next");
+    var countEl = document.getElementById("orc-count");
+    var bridgeEl = document.getElementById("orc-bridge");
+    var titleEl = document.getElementById("orc-step-title");
+    var pLabelEl = document.getElementById("orc-plabel");
+    var sLabelEl = document.getElementById("orc-slabel");
+    var problemEl = document.getElementById("orc-problem");
+    var solutionEl = document.getElementById("orc-solution");
+
+    var last = STEPS.length - 1;
+    var i = -1; // -1 is the finished stack
+
+    // **bold** without innerHTML: split on the markers and build nodes.
+    function setRich(el, text) {
+      el.textContent = "";
+      text.split("**").forEach(function (chunk, n) {
+        if (!chunk) return;
+        var node = document.createTextNode(chunk);
+        if (n % 2 === 1) {
+          var b = document.createElement("b");
+          b.appendChild(node);
+          node = b;
+        }
+        el.appendChild(node);
+      });
+    }
+
+    var dots = [];
+
+    function makeDot(label, title, target) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "orc-btn orc-dot";
+      b.textContent = label;
+      b.title = title;
+      b.addEventListener("click", function () {
+        i = target;
+        draw();
+      });
+      dotsEl.appendChild(b);
+      dots.push(b);
+    }
+
+    makeDot("All", "The finished stack", -1);
+    STEPS.forEach(function (s, n) {
+      makeDot(String(n), s.t, n);
+    });
+
+    function draw() {
+      bricks.forEach(function (el) {
+        var from = Number(el.getAttribute("data-from"));
+        var until = el.hasAttribute("data-until")
+          ? Number(el.getAttribute("data-until"))
+          : Infinity;
+        var on = i === -1 ? until === Infinity : i >= from && i <= until;
+        if (on) el.removeAttribute("hidden");
+        else el.setAttribute("hidden", "");
+        el.classList.toggle("orc-new", on && from === i && i > 0);
+        el.classList.toggle(
+          "orc-old",
+          on && i > 0 && from !== i && el.classList.contains("orc-brick")
+        );
+      });
+
+      var s = i === -1 ? WHOLE : STEPS[i];
+      bridgeEl.textContent = s.b ? s.b + " But this has a problem." : "";
+      titleEl.textContent = (i === -1 ? "" : i + ". ") + s.t;
+      pLabelEl.textContent =
+        i === -1 ? "Where we end up" : i ? "Problem" : "What it is";
+      sLabelEl.textContent =
+        i === -1 ? "How we get there" : i ? "Solution" : "Why it is enough";
+      problemEl.textContent = s.p;
+      setRich(solutionEl, s.s);
+      countEl.textContent =
+        i === -1 ? "finished stack" : "brick " + i + " of " + last;
+
+      dots.forEach(function (b, n) {
+        b.setAttribute("aria-current", String(n - 1 === i));
+      });
+      prevBtn.disabled = i === -1;
+      nextBtn.disabled = i === last;
+      nextBtn.textContent = i === -1 ? "Start" : "Next brick";
+    }
+
+    prevBtn.addEventListener("click", function () {
+      if (i > -1) {
+        i--;
+        draw();
+      }
+    });
+
+    nextBtn.addEventListener("click", function () {
+      if (i < last) {
+        i++;
+        draw();
+      }
+    });
+
+    function applyToggles() {
+      root.querySelectorAll(".orc-col-toggle").forEach(function (c) {
+        var sel = '#orc-parts [data-col="' + c.getAttribute("data-col") + '"]';
+        root.querySelectorAll(sel).forEach(function (el) {
+          el.hidden = !c.checked;
+        });
+      });
+      root.querySelectorAll(".orc-layer-toggle").forEach(function (c) {
+        var layer = c.getAttribute("data-layer");
+        root
+          .querySelectorAll('#orc-parts tr[data-layer="' + layer + '"]')
+          .forEach(function (el) {
+            el.hidden = !c.checked;
+          });
+        svg.classList.toggle("off-" + layer, !c.checked);
+      });
+      var why = document.getElementById("orc-why-toggle").checked;
+      root.querySelectorAll("#orc-parts .orc-why").forEach(function (el) {
+        el.hidden = !why;
+      });
+    }
+
+    root.addEventListener("change", function (ev) {
+      if (ev.target.type === "checkbox") applyToggles();
+    });
+
+    document.getElementById("orc-toggles").hidden = false;
+    document.getElementById("orc-toggles-cols").hidden = false;
+    root.querySelector(".orc-controls").hidden = false;
+    dotsEl.hidden = false;
+    applyToggles();
+    draw();
+  })();
+</script>
+{% endraw %}
