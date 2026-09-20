@@ -30,6 +30,20 @@ orc_viewer_css_done = true -%}
     overflow-x: auto;
   }
 
+  .orcv-hint {
+    display: none;
+    margin: 0 0 0.7rem;
+    color: var(--orc-ink-soft);
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+
+  @media (max-width: 700px) and (orientation: portrait) {
+    .orcv-hint {
+      display: block;
+    }
+  }
+
   /* One row: Back, Next, Play, then the scrubber taking whatever is left, and
      the counter on the right. */
   .orcv-bar {
@@ -274,6 +288,50 @@ orc_viewer_css_done = true -%}
 
     function build(root) {
       var svg = root.querySelector(".orc-svg");
+      var canvas = root.querySelector(".orcv-canvas");
+      // Keep one set of blocks and step metadata. Only their geometry changes.
+      var desktopViewBox = svg.getAttribute("viewBox");
+      var geometry = Array.from(svg.querySelectorAll("rect, text")).map(
+        function (el) {
+          return {
+            el: el,
+            attrs: ["x", "y", "width", "height"].map(function (key) {
+              return [key, el.getAttribute(key)];
+            }),
+          };
+        }
+      );
+      var compact;
+      function fitDiagram() {
+        var next = canvas.clientWidth < 560;
+        if (next === compact) return;
+        compact = next;
+        svg.toggleAttribute("data-compact", compact);
+        svg.setAttribute("viewBox", compact ? "0 0 320 470" : desktopViewBox);
+        geometry.forEach(function (item) {
+          item.attrs.forEach(function (attr) {
+            if (attr[1] !== null) item.el.setAttribute(attr[0], attr[1]);
+          });
+        });
+        if (!compact) return;
+        svg.querySelectorAll("[data-mobile]").forEach(function (el) {
+          var box = el.getAttribute("data-mobile").split(" ").map(Number);
+          if (el.tagName.toLowerCase() === "text") {
+            el.setAttribute("x", box[0]);
+            el.setAttribute("y", box[1]);
+            return;
+          }
+          var rect = el.querySelector("rect");
+          ["x", "y", "width", "height"].forEach(function (key, n) {
+            rect.setAttribute(key, box[n]);
+          });
+          var label = el.querySelector(".orc-bl");
+          if (label) {
+            label.setAttribute("x", box[0] + box[2] / 2);
+            label.setAttribute("y", box[1] + box[3] / 2);
+          }
+        });
+      }
       var blocks = Array.prototype.slice.call(
         svg.querySelectorAll("[data-from]")
       );
@@ -410,7 +468,15 @@ orc_viewer_css_done = true -%}
       });
 
       paint();
+      fitDiagram();
       fitStory();
+
+      // Blog columns can resize without the viewport changing.
+      var layoutObserver = new ResizeObserver(function () {
+        fitDiagram();
+        fitStory();
+      });
+      layoutObserver.observe(canvas);
 
       // Only a width change can rewrap the copy, and rAF keeps a drag of the
       // window edge from re-measuring on every pixel.

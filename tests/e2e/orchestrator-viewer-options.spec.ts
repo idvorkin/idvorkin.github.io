@@ -9,8 +9,8 @@ const ALL_BLOCKS = 19; // every block except the single agent that step 2 replac
 const SHOWN = [2, 3, 6, 9, 12, 14, 15, 17, 18, 19];
 const WHOLE = "The whole stack";
 const PLACEMENTS = [
-  { id: "orc-top", order: ["orcv-bar", "orcv-story", "orcv-canvas"] },
-  { id: "orc-between", order: ["orcv-story", "orcv-bar", "orcv-canvas"] },
+  { id: "orc-top", order: ["orcv-bar", "orcv-story", "orcv-hint", "orcv-canvas"] },
+  { id: "orc-between", order: ["orcv-story", "orcv-bar", "orcv-hint", "orcv-canvas"] },
 ];
 
 // The scrubber's first slot is the whole stack and the blocks follow it, so

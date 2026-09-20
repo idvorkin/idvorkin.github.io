@@ -70,6 +70,7 @@ include.controls | default: "top" -%} {%- assign vid = include.id | default:
   <figure class="orcv-fig">
     {%- if pos == "top" -%} {{ orc_bar }} {{ orc_story }} {%- else -%} {{
     orc_story }} {{ orc_bar }} {%- endif -%}
+    <p class="orcv-hint">For a wider view, try landscape or desktop.</p>
     <div class="orcv-canvas">{% include orchestrator-diagram.html %}</div>
   </figure>
 </div>
