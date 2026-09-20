@@ -7,126 +7,142 @@ historical; nothing user-visible says brick. Styles live in
 _includes/orchestrator-shared.html. {%- endcomment -%}
 <svg
   class="orc-svg"
-  viewBox="0 0 800 322"
+  viewBox="110 0 810 322"
   role="img"
   aria-label="The orchestrator drawn as a stack of building blocks: a human UX layer on top, then control, execution and landing, sitting on your repos"
 >
-  <text x="104" y="31.5" class="orc-layer" data-from="0">HUMAN UX</text>
-  <text x="104" y="82.5" class="orc-layer" data-from="1">CONTROL</text>
-  <text x="104" y="163.5" class="orc-layer" data-from="2">EXECUTION</text>
-  <text x="104" y="255.5" class="orc-layer" data-from="7">LANDING</text>
-  <text x="104" y="305.5" class="orc-layer" data-from="0">GROUND</text>
-  <g class="orc-brick orc-ux" data-from="8">
+  <text x="800" y="31.5" class="orc-layer" data-mobile="246 55" data-from="0">
+    HUMAN UX
+  </text>
+  <text x="800" y="82.5" class="orc-layer" data-mobile="246 166" data-from="1">
+    CONTROL
+  </text>
+  <text x="800" y="163.5" class="orc-layer" data-mobile="246 277" data-from="2">
+    EXECUTION
+  </text>
+  <text x="800" y="255.5" class="orc-layer" data-mobile="246 385" data-from="7">
+    LANDING
+  </text>
+  <text x="800" y="305.5" class="orc-layer" data-mobile="246 452" data-from="0">
+    GROUND
+  </text>
+  <g class="orc-brick orc-ux" data-mobile="4 42 230 29" data-from="8">
     <title>Rich review: annotate artifacts, decide</title>
     <rect x="345" y="6" width="209" height="44" rx="2" />
     <text x="450.0" y="22.0" class="orc-bl">Rich review</text>
     <text x="450.0" y="37.0" class="orc-bs">pages you annotate</text>
   </g>
-  <g class="orc-brick orc-ux" data-from="9">
+  <g class="orc-brick orc-ux" data-mobile="4 76 230 29" data-from="9">
     <title>Overview: what needs you, what is running, what landed</title>
     <rect x="571" y="6" width="209" height="44" rx="2" />
     <text x="675.3" y="22.0" class="orc-bl">Overview</text>
     <text x="675.3" y="37.0" class="orc-bs">the whole fleet, one board</text>
   </g>
-  <g class="orc-brick orc-ux" data-from="0" data-until="1" hidden>
+  <g
+    class="orc-brick orc-ux"
+    data-mobile="4 8 230 29"
+    data-from="0"
+    data-until="1"
+    hidden
+  >
     <title>One agent in a terminal</title>
     <rect x="458" y="6" width="322" height="44" rx="2" />
     <text x="619.0" y="22.0" class="orc-bl">Agent</text>
     <text x="619.0" y="37.0" class="orc-bs">does everything itself</text>
   </g>
-  <g class="orc-brick orc-ux" data-from="2">
+  <g class="orc-brick orc-ux" data-mobile="4 8 230 29" data-from="2">
     <title>Chat: the one agent you talk to</title>
     <rect x="120" y="6" width="209" height="44" rx="2" />
     <text x="224.7" y="22.0" class="orc-bl">Chat</text>
     <text x="224.7" y="37.0" class="orc-bs">talks to you, hands out work</text>
   </g>
-  <g class="orc-brick orc-control" data-from="1">
+  <g class="orc-brick orc-control" data-mobile="4 125 112 34" data-from="1">
     <title>Work ledger: durable tasks outside the agent</title>
     <rect x="120" y="62" width="153" height="34" rx="2" />
     <text x="196.5" y="79.0" class="orc-bl">Work ledger</text>
   </g>
-  <g class="orc-brick orc-control" data-from="5">
+  <g class="orc-brick orc-control" data-mobile="122 125 112 34" data-from="5">
     <title>Dispatcher: picks agent, model, effort</title>
     <rect x="289" y="62" width="153" height="34" rx="2" />
     <text x="365.5" y="79.0" class="orc-bl">Dispatcher</text>
   </g>
-  <g class="orc-brick orc-control" data-from="5">
+  <g class="orc-brick orc-control" data-mobile="4 165 112 34" data-from="5">
     <title>Quota meter: what is left per subscription</title>
     <rect x="458" y="62" width="153" height="34" rx="2" />
     <text x="534.5" y="79.0" class="orc-bl">Quota meter</text>
   </g>
-  <g class="orc-brick orc-control" data-from="6">
+  <g class="orc-brick orc-control" data-mobile="122 165 112 34" data-from="6">
     <title>Supervisor: watches from outside every agent</title>
     <rect x="627" y="62" width="153" height="34" rx="2" />
     <text x="703.5" y="79.0" class="orc-bl">Supervisor</text>
   </g>
-  <g class="orc-slot" data-from="2">
+  <g class="orc-slot" data-mobile="2 217 116 115" data-from="2">
     <rect x="115" y="102" width="219" height="116" rx="8" />
   </g>
-  <g class="orc-brick orc-exec" data-from="2">
+  <g class="orc-brick orc-exec" data-mobile="4 219 112 34" data-from="2">
     <title>Worker: a fresh agent with one job</title>
     <rect x="120" y="110" width="209" height="28" rx="2" />
     <text x="224.5" y="124.0" class="orc-bl">Worker 1</text>
   </g>
-  <g class="orc-brick orc-exec2" data-from="3">
+  <g class="orc-brick orc-exec2" data-mobile="4 257 112 34" data-from="3">
     <title>Isolation: own git worktree and branch</title>
     <rect x="120" y="147" width="209" height="28" rx="2" />
     <text x="224.5" y="161.0" class="orc-bl">own worktree</text>
   </g>
-  <g class="orc-brick orc-exec3" data-from="4">
+  <g class="orc-brick orc-exec3" data-mobile="4 295 112 34" data-from="4">
     <title>Runtime: own terminal session</title>
     <rect x="120" y="184" width="209" height="28" rx="2" />
     <text x="224.5" y="198.0" class="orc-bl">own terminal</text>
   </g>
-  <g class="orc-slot" data-from="2">
+  <g class="orc-slot orc-mobile-hide" data-from="2">
     <rect x="341" y="102" width="219" height="116" rx="8" />
   </g>
-  <g class="orc-brick orc-exec" data-from="2">
+  <g class="orc-brick orc-exec orc-mobile-hide" data-from="2">
     <title>Worker: a fresh agent with one job</title>
     <rect x="346" y="110" width="209" height="28" rx="2" />
     <text x="450.5" y="124.0" class="orc-bl">Worker 2</text>
   </g>
-  <g class="orc-brick orc-exec2" data-from="3">
+  <g class="orc-brick orc-exec2 orc-mobile-hide" data-from="3">
     <title>Isolation: own git worktree and branch</title>
     <rect x="346" y="147" width="209" height="28" rx="2" />
     <text x="450.5" y="161.0" class="orc-bl">own worktree</text>
   </g>
-  <g class="orc-brick orc-exec3" data-from="4">
+  <g class="orc-brick orc-exec3 orc-mobile-hide" data-from="4">
     <title>Runtime: own terminal session</title>
     <rect x="346" y="184" width="209" height="28" rx="2" />
     <text x="450.5" y="198.0" class="orc-bl">own terminal</text>
   </g>
-  <g class="orc-slot" data-from="2">
+  <g class="orc-slot" data-mobile="120 217 116 115" data-from="2">
     <rect x="566" y="102" width="219" height="116" rx="8" />
   </g>
-  <g class="orc-brick orc-exec" data-from="2">
+  <g class="orc-brick orc-exec" data-mobile="122 219 112 34" data-from="2">
     <title>Worker: a fresh agent with one job</title>
     <rect x="571" y="110" width="209" height="28" rx="2" />
     <text x="675.5" y="124.0" class="orc-bl">Worker × N</text>
   </g>
-  <g class="orc-brick orc-exec2" data-from="3">
+  <g class="orc-brick orc-exec2" data-mobile="122 257 112 34" data-from="3">
     <title>Isolation: own git worktree and branch</title>
     <rect x="571" y="147" width="209" height="28" rx="2" />
     <text x="675.5" y="161.0" class="orc-bl">own worktree</text>
   </g>
-  <g class="orc-brick orc-exec3" data-from="4">
+  <g class="orc-brick orc-exec3" data-mobile="122 295 112 34" data-from="4">
     <title>Runtime: own terminal session</title>
     <rect x="571" y="184" width="209" height="28" rx="2" />
     <text x="675.5" y="198.0" class="orc-bl">own terminal</text>
   </g>
-  <g class="orc-brick orc-land" data-from="7">
+  <g class="orc-brick orc-land" data-mobile="4 350 230 29" data-from="7">
     <title>Quality gate: review, test, lint, CI</title>
     <rect x="120" y="230" width="322" height="44" rx="2" />
     <text x="281.0" y="246.0" class="orc-bl">Quality gate</text>
     <text x="281.0" y="261.0" class="orc-bs">review · test · lint · CI</text>
   </g>
-  <g class="orc-brick orc-land" data-from="7">
+  <g class="orc-brick orc-land" data-mobile="4 384 230 29" data-from="7">
     <title>Merge path: PR or local merge</title>
     <rect x="458" y="230" width="322" height="44" rx="2" />
     <text x="619.0" y="246.0" class="orc-bl">Merge path</text>
     <text x="619.0" y="261.0" class="orc-bs">PR or local merge</text>
   </g>
-  <g class="orc-brick orc-ground" data-from="0">
+  <g class="orc-brick orc-ground" data-mobile="4 433 230 29" data-from="0">
     <title>Your repos</title>
     <rect x="120" y="286" width="660" height="32" rx="2" />
     <text x="450.0" y="302.0" class="orc-bl">Your repos</text>

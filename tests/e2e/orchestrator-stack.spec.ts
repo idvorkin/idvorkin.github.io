@@ -45,7 +45,7 @@ test.describe("Orchestrator stack", () => {
         (el) => el.className,
       ),
     );
-    expect(order).toEqual(["orcv-bar", "orcv-story", "orcv-canvas"]);
+    expect(order).toEqual(["orcv-bar", "orcv-story", "orcv-hint", "orcv-canvas"]);
 
     const ys: number[] = [];
     for (let v = 0; v < SLOTS; v++) {
@@ -145,13 +145,56 @@ test.describe("Orchestrator stack", () => {
     );
     expect(overflow).toBeLessThanOrEqual(1);
 
-    // The drawing and the table scroll inside their own boxes instead.
+    // The drawing reflows; the comparison table still scrolls in its own box.
     const scrolls = await page.evaluate(() =>
       [".orcv-canvas", ".orc-table-wrap"].map((sel) => {
         const el = document.querySelector(`#orc-stack ${sel}`) as HTMLElement | null;
         return !!el && el.scrollWidth > el.clientWidth;
       }),
     );
-    expect(scrolls).toEqual([true, true]);
+    expect(scrolls).toEqual([false, true]);
+  });
+
+  for (const width of [320, 390, 430, 844, 1280]) {
+    test(`every diagram label fits at ${width}px throughout the walkthrough`, async ({ page }) => {
+      await openStack(page, width);
+      await page.setViewportSize({ width, height: width === 844 ? 390 : 900 });
+      await page.emulateMedia({ reducedMotion: "reduce" });
+      const hint = page.locator(`#${VIEW} .orcv-hint`);
+      if (width < 700) await expect(hint).toBeVisible();
+      else await expect(hint).toBeHidden();
+      for (let slot = 0; slot < SLOTS; slot++) {
+        await page.locator(part("range")).fill(String(slot));
+        const clipped = await page.locator(`#${VIEW} .orcv-canvas`).evaluate((canvas) => {
+          const bounds = canvas.getBoundingClientRect();
+          return Array.from(canvas.querySelectorAll("text, rect"))
+            .filter((el) => el.getBoundingClientRect().width > 0)
+            .filter((el) => {
+              const r = el.getBoundingClientRect();
+              return r.left < bounds.left - 1 || r.right > bounds.right + 1;
+            })
+            .map((el) => el.textContent || el.outerHTML);
+        });
+        expect(clipped, `slot ${slot}`).toEqual([]);
+      }
+    });
+  }
+
+  test("container resize reflows the same blocks without losing the current step", async ({ page }) => {
+    await openStack(page);
+    const svg = page.locator(`#${VIEW} .orc-svg`);
+    await page.locator(part("range")).fill(slotOf(3));
+    await page.locator(`#${VIEW}`).evaluate((el) => {
+      el.style.width = "300px";
+    });
+    await expect(svg).toHaveAttribute("data-compact", "");
+    await expect(page.locator(part("count"))).toHaveText("block 3 of 9");
+    await expect(page.locator(`#${VIEW} .orc-mobile-hide`).first()).toBeHidden();
+    await page.locator(`#${VIEW}`).evaluate((el) => {
+      el.style.width = "";
+    });
+    await expect(svg).not.toHaveAttribute("data-compact", "");
+    await expect(page.locator(part("count"))).toHaveText("block 3 of 9");
+    await expect(page.locator(`#${VIEW} .orc-mobile-hide`).first()).toBeVisible();
   });
 });

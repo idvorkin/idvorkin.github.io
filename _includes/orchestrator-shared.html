@@ -46,12 +46,18 @@ orc_shared_done -%} {%- assign orc_shared_done = true -%}
     height: auto;
   }
 
-  /* Below this the column is too narrow to shrink the drawing into, so it
-     keeps its size and its canvas scrolls instead. */
-  @media (max-width: 700px) {
-    .orc-svg {
-      min-width: 520px;
-    }
+  .orc-svg[data-compact] .orc-bs,
+  .orc-svg[data-compact] .orc-mobile-hide {
+    display: none;
+  }
+
+  .orc-svg[data-compact] .orc-bl {
+    font-size: 13px;
+  }
+
+  .orc-svg[data-compact] .orc-layer {
+    font-size: 10px;
+    letter-spacing: 0;
   }
 
   .orc-brick rect {
@@ -82,7 +88,7 @@ orc_shared_done -%} {%- assign orc_shared_done = true -%}
       600 10px system-ui,
       sans-serif;
     letter-spacing: 0.12em;
-    text-anchor: end;
+    text-anchor: start;
     fill: currentColor;
     opacity: 0.5;
   }
