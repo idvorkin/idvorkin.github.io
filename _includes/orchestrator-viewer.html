@@ -1,0 +1,75 @@
+{%- comment -%} The orchestrator viewer: the story, one row of controls, and the
+drawing that builds itself as you walk the story. controls top controls, story,
+drawing between story, controls, drawing id unique per instance on the page The
+controls row is [Back] [Next] [Play] then the scrubber, with the counter on the
+right. Its y never moves between steps: in the top placement nothing sits above
+it, and in the between placement the story block has a height floor. Data:
+_data/orchestrator_blocks.yml via _includes/orchestrator-shared.html. Drawing:
+_includes/orchestrator-diagram.html. Both are shared, never copied per instance,
+so several viewers can sit on one page. Used by:
+_includes/orchestrator-stack.html, _test/orchestrator-viewer-options.md {%-
+endcomment -%} {%- include orchestrator-shared.html -%} {%- assign pos =
+include.controls | default: "top" -%} {%- assign vid = include.id | default:
+"orc-viewer" -%} {%- include orchestrator-viewer-assets.html -%}
+
+<div
+  class="orcv orcv-{{ pos }}"
+  id="{{ vid }}"
+  data-orc-viewer
+  data-orc-controls="{{ pos }}"
+  data-orc-cta="Press next, or play, and we walk it one problem at a time."
+>
+  {%- capture orc_bar -%}
+  <div class="orcv-bar">
+    <button type="button" class="orcv-btn" data-orc="prev">Back</button>
+    <button type="button" class="orcv-btn" data-orc="next">Next</button>
+    <button type="button" class="orcv-btn orcv-btn-go" data-orc="play">
+      Play
+    </button>
+    <div class="orcv-scrub">
+      <input
+        type="range"
+        class="orcv-range"
+        data-orc="range"
+        min="0"
+        max="10"
+        step="1"
+        value="0"
+        list="{{ vid }}-ticks"
+        aria-label="Walk the story, block by block"
+      />
+      <datalist id="{{ vid }}-ticks">
+        <option
+          value="0"
+          label="{{ site.data.orchestrator_blocks.whole.t }}"
+        ></option>
+        {%- for step in site.data.orchestrator_blocks.steps -%}
+        <option value="{{ forloop.index }}" label="{{ step.t }}"></option>
+        {%- endfor -%}
+      </datalist>
+    </div>
+    <span class="orcv-count" data-orc="count"></span>
+  </div>
+  {%- endcapture -%} {%- capture orc_story -%}
+  <div class="orcv-story" aria-live="polite">
+    <p class="orcv-bridge" data-orc="bridge"></p>
+    <p class="orcv-t" data-orc="title"></p>
+    <div class="orcv-cols">
+      <div>
+        <p class="orcv-lab" data-orc="plabel"></p>
+        <p class="orcv-body" data-orc="problem"></p>
+      </div>
+      <div>
+        <p class="orcv-lab" data-orc="slabel"></p>
+        <p class="orcv-body" data-orc="solution"></p>
+      </div>
+    </div>
+  </div>
+  {%- endcapture -%}
+
+  <figure class="orcv-fig">
+    {%- if pos == "top" -%} {{ orc_bar }} {{ orc_story }} {%- else -%} {{
+    orc_story }} {{ orc_bar }} {%- endif -%}
+    <div class="orcv-canvas">{% include orchestrator-diagram.html %}</div>
+  </figure>
+</div>
