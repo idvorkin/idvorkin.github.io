@@ -286,8 +286,8 @@ orc_viewer_css_done = true -%}
       var range = q("range");
       var countEl = q("count");
       var story = root.querySelector(".orcv-story");
-      // The story runs 0..LAST and ends on the finished stack, which is -1 in
-      // the state and the far right of the scrubber.
+      // -1 is the whole stack: the scrubber's first slot, where the story starts
+      // and where it returns after the last block.
       var i = -1;
       var timer = null;
 
@@ -337,11 +337,11 @@ orc_viewer_css_done = true -%}
         countEl.textContent =
           i === -1 ? "the whole stack" : "block " + i + " of " + LAST;
 
-        var v = i === -1 ? LAST + 1 : i;
+        var v = i + 1; // slot 0 is the whole stack: the story starts from everything
         if (Number(range.value) !== v) range.value = String(v);
 
-        prevBtn.disabled = i === 0;
-        nextBtn.disabled = i === -1;
+        prevBtn.disabled = i === -1;
+        nextBtn.disabled = false;
       }
 
       // The controls and the drawing must not move when the copy changes
@@ -393,14 +393,12 @@ orc_viewer_css_done = true -%}
 
       prevBtn.addEventListener("click", function () {
         stop();
-        if (i === -1) go(LAST);
-        else if (i > 0) go(i - 1);
+        if (i !== -1) go(i - 1);
       });
 
       nextBtn.addEventListener("click", function () {
         stop();
-        if (i === LAST) go(-1);
-        else if (i !== -1) go(i + 1);
+        go(i === LAST ? -1 : i + 1);
       });
 
       playBtn.addEventListener("click", play);
@@ -408,7 +406,7 @@ orc_viewer_css_done = true -%}
       range.addEventListener("input", function () {
         stop();
         var v = Number(range.value);
-        go(v > LAST ? -1 : v);
+        go(v - 1);
       });
 
       paint();

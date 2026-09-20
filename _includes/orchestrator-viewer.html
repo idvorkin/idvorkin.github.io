@@ -34,18 +34,18 @@ include.controls | default: "top" -%} {%- assign vid = include.id | default:
         min="0"
         max="10"
         step="1"
-        value="10"
+        value="0"
         list="{{ vid }}-ticks"
         aria-label="Walk the story, block by block"
       />
       <datalist id="{{ vid }}-ticks">
-        {%- for step in site.data.orchestrator_blocks.steps -%}
-        <option value="{{ forloop.index0 }}" label="{{ step.t }}"></option>
-        {%- endfor -%}
         <option
-          value="10"
+          value="0"
           label="{{ site.data.orchestrator_blocks.whole.t }}"
         ></option>
+        {%- for step in site.data.orchestrator_blocks.steps -%}
+        <option value="{{ forloop.index }}" label="{{ step.t }}"></option>
+        {%- endfor -%}
       </datalist>
     </div>
     <span class="orcv-count" data-orc="count"></span>

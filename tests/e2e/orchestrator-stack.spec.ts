@@ -7,6 +7,12 @@ const WIDGET = "#orc-stack";
 const VIEW = "orc-stack-view";
 const LAST = 9;
 const ALL_BLOCKS = 19; // every block except the single agent that step 2 replaces
+const WHOLE = "The whole stack";
+
+// Slot 0 of the scrubber is the whole stack, so block n sits in slot n + 1.
+const SLOTS = LAST + 2;
+const slotOf = (block: number) => String(block + 1);
+const titleAt = (slot: number) => (slot === 0 ? WHOLE : new RegExp(`^${slot - 1}\\. `));
 
 const part = (name: string) => `#${VIEW} [data-orc="${name}"]`;
 const shown = `#${VIEW} .orc-svg .orc-brick:not([hidden])`;
@@ -18,7 +24,7 @@ async function openStack(page: Page, width = 1280): Promise<void> {
   await expect(page.locator(WIDGET)).toBeVisible();
   // The script paints the story and un-hides the toggles, so this is the
   // "JS ran" gate for both halves of the widget.
-  await expect(page.locator(part("title"))).toHaveText("The whole stack");
+  await expect(page.locator(part("title"))).toHaveText(WHOLE);
   await expect(page.locator("#orc-toggles")).toBeVisible();
 }
 
@@ -42,9 +48,9 @@ test.describe("Orchestrator stack", () => {
     expect(order).toEqual(["orcv-bar", "orcv-story", "orcv-canvas"]);
 
     const ys: number[] = [];
-    for (let v = 0; v <= LAST + 1; v++) {
+    for (let v = 0; v < SLOTS; v++) {
       await page.locator(part("range")).fill(String(v));
-      await expect(page.locator(part("title"))).toHaveText(v > LAST ? "The whole stack" : new RegExp(`^${v}\\. `));
+      await expect(page.locator(part("title"))).toHaveText(titleAt(v));
       ys.push(
         await page.evaluate(() => {
           const root = document.getElementById("orc-stack-view") as HTMLElement;
@@ -53,20 +59,25 @@ test.describe("Orchestrator stack", () => {
         }),
       );
     }
+    expect(ys).toHaveLength(SLOTS);
     expect(new Set(ys).size).toBe(1);
   });
 
-  test("the stepper walks the stack one block at a time", async ({ page }) => {
+  test("the stepper starts on everything and walks the stack one block at a time", async ({ page }) => {
     await openStack(page);
 
+    // The post opens on the finished stack, in the scrubber's first slot.
     await expect(page.locator(part("count"))).toHaveText("the whole stack");
+    await expect(page.locator(part("range"))).toHaveValue("0");
     await expect(page.locator(shown)).toHaveCount(ALL_BLOCKS);
-    await expect(page.locator(part("next"))).toBeDisabled();
-
-    await page.locator(part("range")).fill("0");
-    await expect(page.locator(part("count"))).toHaveText(`block 0 of ${LAST}`);
-    await expect(page.locator(shown)).toHaveCount(2);
     await expect(page.locator(part("prev"))).toBeDisabled();
+    await expect(page.locator(part("next"))).toBeEnabled();
+
+    await page.locator(part("next")).click();
+    await expect(page.locator(part("count"))).toHaveText(`block 0 of ${LAST}`);
+    await expect(page.locator(part("range"))).toHaveValue(slotOf(0));
+    await expect(page.locator(shown)).toHaveCount(2);
+    await expect(page.locator(part("prev"))).toBeEnabled();
 
     await page.locator(part("next")).click();
     await expect(page.locator(part("count"))).toHaveText(`block 1 of ${LAST}`);
@@ -78,6 +89,18 @@ test.describe("Orchestrator stack", () => {
     await page.locator(part("prev")).click();
     await expect(page.locator(part("count"))).toHaveText(`block 0 of ${LAST}`);
     await expect(page.locator(shown)).toHaveCount(2);
+
+    // Back out of the first block returns to everything.
+    await page.locator(part("prev")).click();
+    await expect(page.locator(part("count"))).toHaveText("the whole stack");
+    await expect(page.locator(part("range"))).toHaveValue("0");
+    await expect(page.locator(shown)).toHaveCount(ALL_BLOCKS);
+
+    // And Next off the last block wraps to everything rather than dead-ending.
+    await page.locator(part("range")).fill(slotOf(LAST));
+    await page.locator(part("next")).click();
+    await expect(page.locator(part("count"))).toHaveText("the whole stack");
+    await expect(page.locator(part("range"))).toHaveValue("0");
   });
 
   test("a layer toggle hides its rows and dims its blocks", async ({ page }) => {
@@ -114,7 +137,7 @@ test.describe("Orchestrator stack", () => {
     await openStack(page, 390);
 
     // Stepping still works with the column stacked.
-    await page.locator(part("range")).fill("0");
+    await page.locator(part("range")).fill(slotOf(0));
     await expect(page.locator(part("count"))).toHaveText(`block 0 of ${LAST}`);
 
     const overflow = await page.evaluate(
