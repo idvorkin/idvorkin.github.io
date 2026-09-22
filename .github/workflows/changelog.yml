@@ -266,6 +266,35 @@ jobs:
             *)       AR="(outcome=${ARCHIVE_OUTCOME:-empty})" ;;
           esac
           echo "| Transcript archive | ${AR} |" >> "$GITHUB_STEP_SUMMARY"
+          # On failure, print the result text. claude-code-action logs
+          # "Running Claude Code via SDK (full output hidden for security)" and
+          # redacts the `result` string, so a failed run leaves nothing in the
+          # job log but `is_error: true`. Four consecutive Monday failures
+          # (2026-08-31 .. 2026-09-21) were therefore indistinguishable from one
+          # another: same `num_turns: 1`, `total_cost_usd: 0`, `modelUsage: {}`,
+          # no reason given. The reason does get archived to
+          # claude-run-logs-private, but that repo is private and nobody opens it
+          # on a red build — the job log has to explain itself. `result` is the
+          # final assistant message (or the SDK's own error string, e.g. a
+          # rejected credential), NOT the tool transcript, and GHA still masks
+          # any registered secret appearing in it. Failure-only, and truncated so
+          # a runaway final message can't flood the log.
+          if [ "$IS_ERROR" != "false" ]; then
+            ERR=$(echo "$RESULT" | jq -r '.result // .error // "(no result text in transcript)"' | head -c 2000)
+            printf 'Claude run failed. result:\n%s\n' "$ERR"
+            # ::error:: annotations are single-line — a raw newline truncates the
+            # annotation at the first break, so flatten it for the annotation
+            # only. The full text is in the plain stdout above and the summary.
+            echo "::error::Claude run failed: $(printf '%s' "$ERR" | tr '\n' ' ')"
+            {
+              echo ""
+              echo "### Failure detail"
+              echo ""
+              echo '```'
+              echo "$ERR"
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
 
       - name: Verify changelog was updated
         run: |
