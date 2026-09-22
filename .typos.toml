@@ -107,6 +107,11 @@ ratatui = "ratatui"  # Rust TUI library (not ratatouille)
 # Fitness terms (shoulder-pain post)
 delt = "delt"  # Deltoid muscle abbreviation (rear delt, anterior delt)
 flyes = "flyes"  # Exercise name (reverse flyes)
+# Misspellings quoted verbatim in _d/changelog.md. That file is written by the
+# Weekly Changelog workflow, whose PR never runs pre-commit, so a quoted typo
+# only surfaces when a human edits the file — and then it blocks every commit
+# to it until it is listed here.
+accomplishemnt = "accomplishemnt"  # The misspelled tag named by the 2026-03 tag-normalization entry
 
 [files]
 # Files to ignore
