@@ -3,6 +3,14 @@
 The single instruction file for every agent working in this repo. `CLAUDE.md` is
 a symlink to this file: edit here.
 
+**Dispatched here by the Gas City mayor, or landing in this repo without Larry's
+session context? Read [`docs/CITY-AGENT-RUNBOOK.md`](docs/CITY-AGENT-RUNBOOK.md)
+first.** It covers what this file assumes you already know: getting a Treehouse
+worktree instead of working in the primary checkout, warming it past the
+`anchor-checker` hook, the `upstream`-vs-`origin` branch rule and where PRs go,
+the local preview and the preview-link rule, this repo's own beads store, and
+what never goes public.
+
 ## IMPORTANT: Read First
 
 Before starting any work, run `/up-to-date` to sync the repo with upstream. This ensures you're working on the latest code and avoids merge conflicts. When creating PRs, rebase your branch onto main so the PR can merge cleanly.
