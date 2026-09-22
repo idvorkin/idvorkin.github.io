@@ -146,19 +146,36 @@ gh api "repos/idvorkin/REPO/commits/HASH" \
 
 ### 4. Generate Changelog Entry
 
-Create entry in `_d/changelog.md` with this format:
+**A changelog is a list of what changed. It is not an essay, a summary of the posts, or the story of how the work happened.** Igor, 2026-09-22, rejecting a 70-line entry: "This is a change log. Come on, do a better job."
+
+Create the entry in `_d/changelog.md` with this shape:
 
 ```markdown
 ## Week of YYYY-MM-DD
 
 _N commits this week_
 
-### [Theme Name]
+### [Blog theme or post title]
 
-Description of changes in this theme:
+- **Item** - what changed, ≤ 25 words, then links. ([blog](/permalink#section)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/SHORTHASH)
 
-- **Item title** - Description ([blog](/permalink#section)) ([github](https://github.com/idvorkin/idvorkin.github.io/commit/SHORTHASH))
+### Infrastructure & CI (YYYY-MM-DD)
+
+- **Item** - … [<i class="fa fa-github"></i>](…/commit/SHORTHASH)
 ```
+
+**Rules (hard, not style preferences):**
+
+1. **One bullet per change, one line each.** ≤ 25 words before the links. No second sentence: if it needs two, it is two bullets or too much detail.
+2. **A new post is one bullet**: `**Title (new post!)** - the thesis in one sentence.` plus the blog link and the commit icon. Never walk through the post's sections.
+3. **No quotes** — not from posts, not from commit messages, not from Igor.
+4. **No process narration** — not "Igor asked…", not "Codex handled…", not "three viewers went on a pick sheet". Say what shipped.
+5. **No numbers unless the number is the change** ("3,600 lines of Python removed" yes; costs, turn counts, percentages no).
+6. **Small fixes fold into one bullet per repo.**
+7. **Other repos**: bold repo line with a ≤ 6-word description, then ≤ 3 bullets of ≤ 20 words. A repo with one change gets one bullet.
+8. **Every bullet ends with at least one link** (blog permalink with section anchor when one exists, and/or commit icon).
+9. **Whole week ≤ 45 lines** including headings and blank lines. Over budget: cut bullets, do not lengthen lines.
+10. **Describe the content, not the commit message** (Step 3) — but in one line.
 
 **Important — unique section names**: Every `###` heading must be unique across the _entire_ file, not just the current week. Duplicate headings produce duplicate Markdown TOC anchors (`#other-projects`, `#other-projects-1`, …) which are confusing and break deep links.
 
@@ -191,34 +208,37 @@ Section anchors are slugified headers:
 
 ## Example Output
 
-**BAD - based on commit messages (vague, unhelpful):**
+**BAD — vague, from commit messages:**
 
 ```markdown
 - **Software Survival 3.0** - Added Steve Yegge's framework
-- **Code as Costly Signal** - Discussed what code signals
 ```
 
-**GOOD - based on actual content diffs (specific, informative):**
+**BAD — the essay (rejected 2026-09-22; one of nine such paragraphs in a 70-line entry):**
+
+> **[/token-management](/token-management)** — "I rent the most expensive brain I can get" stopped being the whole answer: Igor can burn through a $200/month plan, and the model he actually wants runs out before the plan around it does. The post opens with OpenRouter's price list as of September 18… _(eleven more sentences, three quotes, five numbers, a file-rename anecdote)_
+
+**GOOD — one line per change, specific, linked:**
 
 ```markdown
-## Week of 2026-01-25
+## Week of 2026-09-21
 
-_41 commits this week_
+_58 commits this week_
 
-### AI Journal Updates
+### New posts
 
-Five new entries on AI-era software development ([blog](/ai-journal#2026-01-31)):
+- **How I Manage AI Tokens (new post!)** - Route work by subscription-window pace, not model quality; quota-axi reads every CLI's quota in one second. ([blog](/token-management)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/25aeb037c)
+- **AI Orchestrators (new post!)** - An orchestrator is everything around the agent; ten breaks, each adding one block. ([blog](/ai-orchestrator)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e462fbf19)
 
-- **Software Survival 3.0** - Yegge's survival ratio: `Survival ∝ (Savings × Usage × H) / (Awareness + Friction)`. Six levers: insight compression, substrate efficiency, broad utility, publicity, minimize friction, human coefficient. "Nobody is coming for grep." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/bdedc6f02)
-- **Code as Cattle, Not Pets** - Infrastructure parallel: servers went from pets (unique hostnames) to cattle (who cares which server). Code making same shift. "The system is dead, long live the factory." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/81b465c2c)
+### Other Projects (2026-09-21)
+
+**[exercise-analyzer](https://github.com/idvorkin/exercise-analyzer)** (iPhone exercise form analyzer)
+
+- **Split squats recognized and scored** - tracks hip height over the lower foot, so a plate hiding the head no longer reads as swings. [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/6d617d87c)
+- **Chart zoom and pan** - pinch, drag; a sideways swipe pans instead of navigating back. [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/307099851)
 ```
 
-Notice how the GOOD version includes:
-
-- Actual formulas/frameworks from the content
-- Specific quotes
-- Key concepts explained
-- Concrete examples mentioned in the post
+The GOOD version is specific (it names the actual change, read from the diff) and short (one line, one link, no quotes).
 
 ## Common Themes to Look For
 
