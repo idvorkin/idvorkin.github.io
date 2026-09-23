@@ -176,6 +176,9 @@ _N commits this week_
 8. **Every bullet ends with at least one link** (blog permalink with section anchor when one exists, and/or commit icon).
 9. **Whole week ≤ 45 lines** including headings and blank lines. Over budget: cut bullets, do not lengthen lines.
 10. **Describe the content, not the commit message** (Step 3) — but in one line.
+11. **Skip repos with nothing of Igor's**: forks whose window commits are all upstream contributors or release bots, dependabot-only repos, and mirrors (blog7) that repeat a commit already listed.
+12. **The week is Pacific time**: `Week of YYYY-MM-DD` covers the seven days ending that date in America/Los_Angeles. Don't list the previous week's changelog commit.
+13. **Verify before writing**: every commit hash is 9 characters and resolves (`gh api repos/<org>/<repo>/commits/<sha>`), and every `#anchor` matches a heading (`.claude/skills/toc/toc.py slug "Heading"`).
 
 **Important — unique section names**: Every `###` heading must be unique across the _entire_ file, not just the current week. Duplicate headings produce duplicate Markdown TOC anchors (`#other-projects`, `#other-projects-1`, …) which are confusing and break deep links.
 
