@@ -16,6 +16,20 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
   - [Three New Posts (2026-09-21)](#three-new-posts-2026-09-21)
   - [Infrastructure & CI (2026-09-21)](#infrastructure--ci-2026-09-21)
   - [Other Projects (2026-09-21)](#other-projects-2026-09-21)
+- [Week of 2026-09-14](#week-of-2026-09-14)
+  - [Swing Analyzer: Bulgarian Split Squats](#swing-analyzer-bulgarian-split-squats)
+  - [chop-conventions (2026-09-14)](#chop-conventions-2026-09-14)
+  - [Other Projects (2026-09-14)](#other-projects-2026-09-14)
+- [Week of 2026-09-07](#week-of-2026-09-07)
+  - [The Den: Strips #6 and #7 (2026-09-07)](#the-den-strips-6-and-7-2026-09-07)
+  - [Infrastructure & CI (2026-09-07)](#infrastructure--ci-2026-09-07)
+  - [chop-conventions (2026-09-07)](#chop-conventions-2026-09-07)
+  - [Other Projects (2026-09-07)](#other-projects-2026-09-07)
+- [Week of 2026-08-31](#week-of-2026-08-31)
+  - [The Den and new AI posts](#the-den-and-new-ai-posts)
+  - [Infrastructure & CI (2026-08-31)](#infrastructure--ci-2026-08-31)
+  - [chop-conventions (2026-08-31)](#chop-conventions-2026-08-31)
+  - [Other Projects (2026-08-31)](#other-projects-2026-08-31)
 - [Week of 2026-08-24](#week-of-2026-08-24)
   - [Mind the Gap: Escape as a Neutral Verb](#mind-the-gap-escape-as-a-neutral-verb)
   - [AI Journal: The Beads 1.2.1 Incident Report](#ai-journal-the-beads-121-incident-report)
@@ -250,6 +264,142 @@ _58 commits this week_
 **[autopreso](https://github.com/idvorkin-ai-tools/autopreso)** (speech-driven whiteboard presentations)
 
 - **Off OpenAI** - Deepgram transcription and an OpenRouter drawing agent, each with its own key. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/autopreso/commit/024cde234)
+
+## Week of 2026-09-14
+
+_2 commits this week_
+
+### Swing Analyzer: Bulgarian Split Squats
+
+- **Bulgarian split-squat mode** - /swings works again as one self-contained page; the new mode counts reps by front-knee angle and flags knee cave. ([blog](/swings)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/7c1748b8a)
+
+### chop-conventions (2026-09-14)
+
+**[chop-conventions](https://github.com/idvorkin/chop-conventions)** (shared CHOP skills & conventions)
+
+- **muse-herdr skill** - run Muse Code agents in Herdr panes as sub-agents, recover a dead keychain, and review every change before merging. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/d10531184) [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/fc4254267)
+- **Stuck-agent watcher** - one script scans every Muse pane for failed model calls and frozen screens, without mistaking a long think for a stall. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/e7cce3d01) [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/923b27312)
+- **up-to-date installs plugins** - each machine gets the standard Claude plugin set from a shared list. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/8a7dd7aae)
+
+### Other Projects (2026-09-14)
+
+**[exercise-analyzer](https://github.com/idvorkin/exercise-analyzer)** (iPhone exercise form analyzer)
+
+- **New app** - on-device pose analysis counts swings, pistol squats, split squats and get-ups, and detects which one you did. [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/1fb9b0a44)
+- **Apple Watch companion** - record, pause, rest and frame the shot from the wrist. [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/af22b1103) [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/4bf497b8a)
+- **Kettlebell tracker** - a small object detector finds the bell and keeps it tracked through each rep. [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/3b997e1e4) [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/85ed8e52e)
+
+**[swing-analyzer](https://swing-analyzer.surge.sh)** (browser kettlebell swing analyzer) [<i class="fa fa-github"></i>](https://github.com/idvorkin/swing-analyzer)
+
+- **Bulgarian split squat** - a new movement and detector, a lighter render loop, and a sample set in form-analyzer-samples. [<i class="fa fa-github"></i>](https://github.com/idvorkin/swing-analyzer/commit/87e3d6aab) [<i class="fa fa-github"></i>](https://github.com/idvorkin/swing-analyzer/commit/ddde7772a) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/form-analyzer-samples/commit/0eefc864f)
+
+**[monitor-explainer](https://monitor-explorer.surge.sh)** (monitor size and shape comparer) [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer)
+
+- **Tall and ultrawide screens** - adds 3:2 and tall aspect ratios plus LG's 5K2K ultrawides. [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer/commit/0b73e9707) [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer/commit/0c0024a08)
+
+**[cap-gains-explainer](https://idvorkin-ai-tools.github.io/cap-gains-explainer/)** (capital-gains timing calculator) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/cap-gains-explainer)
+
+- **Interest income** - a slider for income that continues after retirement feeds both charts; the penalty tile adds percent of sale. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/cap-gains-explainer/commit/32db1e57b) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/cap-gains-explainer/commit/f7f8954fe) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/cap-gains-explainer/commit/a87219c36)
+
+**[harmbench-field-map](https://idvorkin-ai-tools.github.io/harmbench-field-map/)** (HarmBench red-teaming benchmark, mapped) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/harmbench-field-map)
+
+- **New field map** - the benchmark by harm category, with behavior types, grading classifier and attack methods, every behavior inline. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/harmbench-field-map/commit/18228dec2)
+
+**[gutter-model-playground](https://idvorkin-ai-tools.github.io/gutter-model-playground/)** (image models, one scene) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/gutter-model-playground)
+
+- **v2** - nine image models draw the same Larry-and-Igor scene, compared on cost, speed and character accuracy. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/gutter-model-playground/commit/5f2945a3b)
+
+## Week of 2026-09-07
+
+_15 commits this week_
+
+### The Den: Strips #6 and #7 (2026-09-07)
+
+- **Do a Russian Accent (new strip!)** - Igor's phone voice clone does a Russian accent, then, asked to do him, parrots his question back. ([blog](/the-den#6--do-a-russian-accent)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2d1491506)
+- **Before AI / After AI (new strip!)** - The same mugging twice; the second time Igor pleads three waiting AI agents, not three kids. ([blog](/the-den#7--before-ai--after-ai)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/263019b23)
+- **Same script, different models (new page!)** - Den #6 by three models, #7 by Gemini beside Meta Muse; OpenAI's #6 now ships. ([blog](/the-den-styles)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f83d621da) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/970259341)
+- **Panel lightbox in the Den** - Tap a panel for full screen, swipe through to the whole strip; the old viewer page redirects. ([blog](/the-den)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/9b87d3e0f)
+- **Claw canon relaxed** - Larry's claw may sit on either arm; respinning for side is what produced two-claw panels. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6b419a9df)
+
+### Infrastructure & CI (2026-09-07)
+
+- **Check git status after every commit** - CLAUDE.md warns the prettier hook can land a commit while leaving its reformatted files unstaged. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/ff61856bb)
+- **Small fixes** - The panel cutter drops each frame's antialiased outer pixel; one British spelling fixed on the styles page. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2d1491506) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/b8aefb374)
+
+### chop-conventions (2026-09-07)
+
+**[chop-conventions](https://github.com/idvorkin/chop-conventions)** (shared CHOP skills & conventions)
+
+- **Laziness ladder** - Before writing code, ask whether it needs to exist or is already there; plus boring over clever and `ponytail:` comments. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/794e51969)
+- **Alerts never go to strangers** - The Telegram direct-send default chat now considers only allowed senders, so a stranger's DM cannot capture the next alert. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/9b505b0d9)
+
+### Other Projects (2026-09-07)
+
+**[context-grabber](https://github.com/idvorkin/context-grabber)** (iOS HealthKit and location exporter)
+
+- **Call diagnostics** - A troubled call uploads its log to a private gist; dropped audio heals itself mid-call. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/7504fa6f6) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/7db050d8a)
+- **Workout timer** - LED seven-segment digits that rotate with the phone; music ducks under cues, podcasts pause for them. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/be5828e06) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/46091691e)
+- **Memdeck widget** - A random playing card on the big widget and lock screen, changing every quarter hour. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/c81b9b16e)
+
+**[magic-monitor](https://github.com/idvorkin/magic-monitor)** (magic practice camera and replay)
+
+- **Think of a card** - P or a V sign starts a countdown, then shows a random card in a small corner panel. [<i class="fa fa-github"></i>](https://github.com/idvorkin/magic-monitor/commit/d77733b6f) [<i class="fa fa-github"></i>](https://github.com/idvorkin/magic-monitor/commit/9904e0cf6)
+- **Replay scrubber fixed** - Recordings now store their real duration, so the scrubber no longer reads Infinity. [<i class="fa fa-github"></i>](https://github.com/idvorkin/magic-monitor/commit/e38be07a7)
+- **Lighter card detection** - The detector refills one input buffer instead of allocating a fresh one every frame. [<i class="fa fa-github"></i>](https://github.com/idvorkin/magic-monitor/commit/d1c84ffbc)
+
+**[idvorkin-ai-tools.github.io](https://idvorkin-ai-tools.github.io/)** (new index of every field map) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/idvorkin-ai-tools.github.io/commit/8afdf37e9)
+
+- **[Technical AI Safety](https://idvorkin-ai-tools.github.io/technical-ai-safety-field-map/)** - All 27 chapters of BlueDot's course, each explained and linked to its readings. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/technical-ai-safety-field-map/commit/757a332dc)
+- **[CS336](https://idvorkin-ai-tools.github.io/cs336-field-map/)** - Stanford's language-modeling course: 17 lecture pages plus assignment walkthroughs. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/cs336-field-map/commit/7fbf1c8cf)
+- **[Let's build GPT](https://idvorkin-ai-tools.github.io/build-gpt-field-map/) and [micrograd](https://idvorkin-ai-tools.github.io/micrograd-field-map/)** - Karpathy's two videos, eight parts each plus a cleaned transcript. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/build-gpt-field-map/commit/891efc67e) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/micrograd-field-map/commit/cc2b9e35c)
+- **[3Blue1Brown entropy](https://idvorkin-ai-tools.github.io/3b1b-entropy-field-map/)** - Twenty pages on the entropy video, from scoring rules to the Wordle proxy-objective bug. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/3b1b-entropy-field-map/commit/1490c62fb)
+- **[Man in the Arena](https://idvorkin-ai-tools.github.io/man-in-the-arena/)** - Roosevelt's speech in thirteen pages, with the full text and verified sources. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/man-in-the-arena/commit/4e34cb4bd)
+
+## Week of 2026-08-31
+
+_41 commits this week_
+
+### The Den and new AI posts
+
+- **The Den (new post!)** - A weekly four-panel strip about running an AI staff, each gag backed by its real transcript; four strips shipped. ([blog](/the-den)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8588335b5) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/fd6ef290c) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d750c4827) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/b75908ab5)
+- **Den panel viewer** - Tap a panel to fill a phone screen and swipe through every strip, reading pre-cut panel files from one manifest. ([blog](/the-den)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/b987872a9) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/32cab6298)
+- **Gutter, the cartoonist seat** - Character sheet, drawing contract, recipe, and an edge-walking panel cutter; job history and pitches stay private. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e73976502) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6a8a020c0)
+- **Yegge's Comic Strip Ships Its Receipts (new post!)** - A transcript under each gag makes the joke a primary source; The Den borrows it. ([blog](/ai-yegge-comics)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3a8ff8b38)
+- **Fast Tokens, Wrong Answers (new post!)** - Five fast open models on one graded sudoku; more reasoning did not predict a correct answer. ([blog](/ai-speed-vs-thinking)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/df281609b) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/llm-speed-evals/commit/8f0d66716)
+- **AI Quotes (new post!)** - Lines about AI worth keeping, grouped by theme, each sourced or marked unknown. ([blog](/ai-quotes)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/5cad7bef9)
+- **The Cockpit I Built for Igor (new post!)** - Larry's screenshot tour of the phone dashboard that took decisions out of the chat thread. ([blog](/larry-cockpit)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/90915bf07)
+- **Game show, no hammock** - Goedecke's point that agent work is rapid judging, not slow thinking, added to vibing, writing, and the AI journal. ([blog](/vibing#all-game-show-no-hammock)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/43172fb98) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f4a98086f)
+- **Slop is low content density** - Few ideas in many words; the sharper definition now runs through chow, ai-faq, ai-policy, and larry. ([blog](/chow#ai-slop-vs-human-sludge)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/24a4cc88a)
+- **Reward-design lessons** - Scoring rules should be read term by term, and pairwise judging beats absolute scores. ([blog](/hill-climbing#your-other-job-build-evals)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/608a0a64d)
+- **Small fixes** - Four physical items in Things I enjoy; Den comics open full size; plain transcript links replace broken gist embeds. ([blog](/todo_enjoy#physical)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e73a0d2f2) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/313b69ef5) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8c18c5c67)
+
+### Infrastructure & CI (2026-08-31)
+
+- **Anchors land on their heading** - Deep links re-align after content loads above them, and sunburst leaf clicks scroll to their section. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/75e314235) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3c61d1952)
+- **back-links.json untracked** - Built only in CI, so parallel content PRs stop colliding on a generated file. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/9f1d58b26)
+
+### chop-conventions (2026-08-31)
+
+**[chop-conventions](https://github.com/idvorkin/chop-conventions)** (shared CHOP skills & conventions)
+
+- **cartoonist skill** - Summons Gutter from the persona files that live in the blog repo. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/7b1099de6)
+- **larry-voice skill** - Larry can answer on Telegram as an ElevenLabs voice note. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/d7560c3c1)
+- **background-usage** - Captures the raw /usage pane, including the per-model weekly figure, and leaves parsing to the caller. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/67cf10dfb)
+
+### Other Projects (2026-08-31)
+
+**[context-grabber](https://github.com/idvorkin/context-grabber)** (iOS health and location exporter)
+
+- **Cockpit tab** - Hosts the tailnet dashboard in the app, with native mic and speaker pickers. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/a11f58332) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/19533fca9)
+- **Call Larry natively** - A lock-screen-proof Call tab, home-screen widget and Shortcut, with hardware echo cancellation. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/b8d45ca3b) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/8d35bb611) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/c1600f075)
+
+**[how-long-since-ai](https://idvorkin-how-long-since-ai.surge.sh)** (LLM release timeline) [<i class="fa fa-github"></i>](https://github.com/idvorkin/how-long-since-ai)
+
+- **More labs, flagship view** - OpenAI, Google, Kimi and GLM releases added; defaults to flagships with a per-lab filter. [<i class="fa fa-github"></i>](https://github.com/idvorkin/how-long-since-ai/commit/0ddb5d2e3) [<i class="fa fa-github"></i>](https://github.com/idvorkin/how-long-since-ai/commit/f7c2836cf) [<i class="fa fa-github"></i>](https://github.com/idvorkin/how-long-since-ai/commit/564bbad6e)
+
+**[Settings](https://github.com/idvorkin/Settings)** (dotfiles & tools)
+
+- **Small fixes** - opencode with a Cerebras key; the link picker shows an empty state instead of flashing. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/305ed425d) [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/81076c38f)
 
 ## Week of 2026-08-24
 
