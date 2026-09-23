@@ -280,19 +280,32 @@ jobs:
           # any registered secret appearing in it. Failure-only, and truncated so
           # a runaway final message can't flood the log.
           if [ "$IS_ERROR" != "false" ]; then
-            ERR=$(echo "$RESULT" | jq -r '.result // .error // "(no result text in transcript)"' | head -c 2000)
+            # SDK error variants (error_max_turns, error_during_execution) carry
+            # their messages in a plural `.errors` array, not `.result`/`.error`.
+            ERR=$(echo "$RESULT" | jq -r '
+              .result // .error
+              // ((.errors // []) | map(tostring) | join("\n") | select(length > 0))
+              // "(no result text in transcript)"' | head -c 2000)
+            # ERR is model/SDK text: stop workflow-command parsing while it is
+            # echoed, so a line like `::error::…` inside it is printed, not run.
+            STOP_TOKEN=$(openssl rand -hex 16)
+            echo "::stop-commands::${STOP_TOKEN}"
             printf 'Claude run failed. result:\n%s\n' "$ERR"
+            echo "::${STOP_TOKEN}::"
             # ::error:: annotations are single-line — a raw newline truncates the
             # annotation at the first break, so flatten it for the annotation
             # only. The full text is in the plain stdout above and the summary.
-            echo "::error::Claude run failed: $(printf '%s' "$ERR" | tr '\n' ' ')"
+            echo "::error::Claude run failed: $(printf '%s' "$ERR" | tr '\r\n' '  ')"
+            # A fence longer than any backtick run in ERR, so ERR can't close it.
+            FENCE='```'
+            while printf '%s' "$ERR" | grep -qF "$FENCE"; do FENCE="${FENCE}\`"; done
             {
               echo ""
               echo "### Failure detail"
               echo ""
-              echo '```'
+              echo "$FENCE"
               echo "$ERR"
-              echo '```'
+              echo "$FENCE"
             } >> "$GITHUB_STEP_SUMMARY"
           fi
 
