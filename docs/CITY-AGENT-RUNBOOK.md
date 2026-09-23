@@ -59,14 +59,20 @@ just worktree-init
 `disown: not found` — `just` runs it under `sh`/dash, which has no `disown`. The
 failure is _partial_: the jekyll + backlinks background job is already fired and
 completes normally (log: `/tmp/jekyll-worktree-<branch>.log`), but the recipe
-dies before `npm ci`, so `node_modules/` is never installed. Consequences:
-
-- Prose/docs PRs: unaffected — carry on once the log stops growing (~60–90 s).
-- Anything touching JS or `just js-*` / `pw-test`: run `npm ci` yourself first.
-
-If the background job did not run at all, do it by hand:
+dies before `npm ci`, so `node_modules/` is never installed. Every commit
+needs it — the `test` hook is `always_run` and calls `just fast-test` (Vitest),
+prose included — so finish the job yourself:
 
 ```bash
+npm ci
+```
+
+Then wait for the log to stop growing (~60–90 s). If the background job did not
+run at all, do it by hand:
+
+```bash
+bundle install
+npm ci
 RUBYOPT="-r$(pwd)/_ruby_compat.rb" bundle exec jekyll build
 uv run ./build_back_links.py build
 ```
@@ -95,9 +101,20 @@ Two rules, both non-negotiable:
   report/chat message to Igor only. PR bodies get a screenshot instead (protocol
   in `CLAUDE.md` → "PR Screenshots for Content Changes").
 
-`just jekyll-serve` drifts to `:4001`, `:4002`… if another checkout already holds
-`:4000`; it prints the port it bound. Screenshot and preview _that_ port — and
-note only `:4000` is the one wired to `:8445`.
+If another checkout already holds `:4000`, `just jekyll-serve` drifts to `:4001`,
+`:4002`… and prints the port it bound. The probe above then checks the wrong
+server and `:8445` shows the other checkout. Pick a free port explicitly and
+wire it yourself:
+
+```bash
+PORT=4003                       # any free port; check with: ss -tln | grep ":$PORT "
+just jekyll-serve $PORT $((PORT + 31730)) > /tmp/jekyll-$PORT.log 2>&1 &
+timeout 90 bash -c "until curl -s -o /dev/null -w '%{http_code}' http://localhost:$PORT/ | grep -q 200; do sleep 2; done"
+tailscale serve --bg --https=$((PORT + 4445)) http://127.0.0.1:$PORT   # 4003 → :8448
+```
+
+Hand Igor the `:$((PORT + 4445))` URL, and turn it off when the PR lands
+(`tailscale serve --https=<port> off`).
 
 ## 5. Commit, hooks, and the things that silently eat commits
 
@@ -117,8 +134,10 @@ prek run --files <paths>
 - The prettier hook can stash-rollback and abort a commit even on clean files;
   `SKIP=prettier` when that happens.
 - **A commit can silently no-op** when a hook reformats staged files: the commit
-  aborts but a chained `&& git push` still fires. After every `git commit`, look
-  for the `[branch sha] message` confirmation line. No line = no commit.
+  aborts, and a push run separately afterwards (a later step, or chained with
+  `;`) still pushes the old tip. `&& git push` is safe — the failed commit stops
+  it. After every `git commit`, look for the `[branch sha] message` confirmation
+  line. No line = no commit.
 - **Never `git add back-links.json`.** It is gitignored, CI-generated, and was
   historically the single biggest source of conflicts between content PRs.
 
