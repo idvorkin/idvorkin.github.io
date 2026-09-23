@@ -39,7 +39,9 @@ jobs:
 
       - name: Compute week-of date
         id: date
-        run: echo "week_of=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+        # Pacific, matching the skill: a week ends on its Pacific date, so a
+        # manual run on a Pacific evening (already tomorrow in UTC) keeps its date.
+        run: echo "week_of=$(TZ=America/Los_Angeles date +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
 
       - name: Snapshot changelog before generation
         id: pre
@@ -75,9 +77,10 @@ jobs:
           # the run still succeeds but skips the formal slash-command flow.
           claude_args: |
             --allowedTools "Bash,Edit,Read,Write,Grep,Glob,Skill(changelog)"
+            --model claude-opus-5-5
           prompt: |
             /changelog
-            Look back ${{ inputs.days || '7' }} days. The week-of date is ${{ steps.date.outputs.week_of }} (UTC).
+            Look back ${{ inputs.days || '7' }} days. The week-of date is ${{ steps.date.outputs.week_of }} (Pacific).
 
             ## Environment: GitHub Actions (headless)
 
@@ -105,6 +108,14 @@ jobs:
             print the full error to stdout (it lands in the GitHub Actions job log) and
             keep going where sensible. Do not silently swallow failures. At the end,
             summarize what succeeded and what didn't so the job log is self-explanatory.
+
+            ## Before you write the file
+
+            A changelog is a list, not an essay. Check the entry against the
+            skill's rules: ≤ 45 lines; one line per change; every bullet ends
+            with a link; no quotes; no process narration; headings carry the
+            `(YYYY-MM-DD)` suffix; hashes and anchors verified. Over budget:
+            cut bullets, don't lengthen lines.
 
             ## When you're done
 

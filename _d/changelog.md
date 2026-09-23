@@ -12,6 +12,24 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Week of 2026-09-21](#week-of-2026-09-21)
+  - [Three New Posts (2026-09-21)](#three-new-posts-2026-09-21)
+  - [Infrastructure & CI (2026-09-21)](#infrastructure--ci-2026-09-21)
+  - [Other Projects (2026-09-21)](#other-projects-2026-09-21)
+- [Week of 2026-09-14](#week-of-2026-09-14)
+  - [Swing Analyzer: Bulgarian Split Squats](#swing-analyzer-bulgarian-split-squats)
+  - [chop-conventions (2026-09-14)](#chop-conventions-2026-09-14)
+  - [Other Projects (2026-09-14)](#other-projects-2026-09-14)
+- [Week of 2026-09-07](#week-of-2026-09-07)
+  - [The Den: Strips #6 and #7 (2026-09-07)](#the-den-strips-6-and-7-2026-09-07)
+  - [Infrastructure & CI (2026-09-07)](#infrastructure--ci-2026-09-07)
+  - [chop-conventions (2026-09-07)](#chop-conventions-2026-09-07)
+  - [Other Projects (2026-09-07)](#other-projects-2026-09-07)
+- [Week of 2026-08-31](#week-of-2026-08-31)
+  - [The Den and new AI posts](#the-den-and-new-ai-posts)
+  - [Infrastructure & CI (2026-08-31)](#infrastructure--ci-2026-08-31)
+  - [chop-conventions (2026-08-31)](#chop-conventions-2026-08-31)
+  - [Other Projects (2026-08-31)](#other-projects-2026-08-31)
 - [Week of 2026-08-24](#week-of-2026-08-24)
   - [Mind the Gap: Escape as a Neutral Verb](#mind-the-gap-escape-as-a-neutral-verb)
   - [AI Journal: The Beads 1.2.1 Incident Report](#ai-journal-the-beads-121-incident-report)
@@ -204,17 +222,193 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
+## Week of 2026-09-21
+
+_58 commits this week_
+
+### Three New Posts (2026-09-21)
+
+- **AI Orchestrators (new post!)** - An orchestrator is every block around the agent, each added after something broke, and each kept cheap to delete. ([blog](/ai-orchestrator)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e462fbf19)
+- **Block-by-block viewer** - Back and Next step through the stack from the whole picture, with simpler panels that fit a phone. ([blog](/ai-orchestrator)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/963295f9c) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/03d97cf68)
+- **Where the Time Goes (new post!)** - Hours freed from tech default to consumption unless given a destination first; relationships and health have ceilings. ([blog](/time-allocation)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2be21d446)
+- **Interactive bucket chart** - pull tech down to see where freed hours land; clicking Tech splits it into work, side projects and environment. ([blog](/time-allocation#the-five-buckets)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/ff9932773) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/ac46a83cb)
+- **How I Manage AI Tokens (new post!)** - Across several subscriptions, read quota left against time left and spend where the window resets soonest. ([blog](/token-management)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/25aeb037c)
+- **Cockpit usage page** - the post shows the phone dashboard's quota bars and SPEND flag; the Cockpit post links back. ([blog](/token-management#put-it-where-you-already-look)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/96e93e4de)
+- **Cross-links** - five AI posts now link the orchestrator; Escape Artists and Build the Life You Want link the buckets. ([blog](/ai-orchestrator)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e22ab60c0) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f885aa465) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/65141b318)
+
+### Infrastructure & CI (2026-09-21)
+
+- **pr-checks skill** - prints the PR Review Checklist grid; regex checks stay code, and a model judges headers, voice and AI patterns. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/18755cb49) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/a33547889)
+- **no-mistakes gate** - blog gate config with pr-checks after lint; Grok runs first, Codex and Claude as fallbacks. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/5432d81ec) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/804c6b83f)
+- **Dev banner links changed pages** - a branch preview lists every post the branch touches, one click each. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/94a5768f2)
+- **Small fixes** - CLAUDE.md now symlinks to AGENTS.md; the `?` dialog shows the annotate toggle; two dead changelog anchors repaired. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/11accd59c) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f02fec9eb) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4c9d3de49)
+
+### Other Projects (2026-09-21)
+
+**[exercise-analyzer](https://github.com/idvorkin/exercise-analyzer)** (iPhone lift tracker and rep counter)
+
+- **Barbell split squat** - new exercise, told apart from swings, counted by hip height over the front foot. [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/6d617d87c) [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/9b3192376)
+- **Delete a set** - from playback or Workouts, warning when the app holds the only copy. [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/59309e727)
+- **Workouts polish** - exercise drawings replace names; seek controls persist and let the video show through. [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/d6a139f1e) [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/49046c0dd)
+
+**[Settings](https://github.com/idvorkin/Settings)** (dotfiles & tools)
+
+- **y window numbers** - a clockwise number overlay on macOS windows; focus or close any window by its number. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/653134680) [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/03977efaf)
+- **caff** - keeps the Mac awake only while plugged in or Herdr agents work, and falls back to sleep. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/0e6944507) [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/275f5cee7)
+- **Shell cleanup** - dead API keys no longer exported; the SCRATCH variable stops growing with every nested shell. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/615a368b7) [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/3ed111b57)
+
+**[hierarchy-of-money-field-map](https://idvorkin-ai-tools.github.io/hierarchy-of-money-field-map/)** (Gundersen's money story, illustrated) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/hierarchy-of-money-field-map)
+
+- **New field map** - an animal parable of how money stacks into layers, a problem-then-solution walk, an index card. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/hierarchy-of-money-field-map/commit/0b5ad91be) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/hierarchy-of-money-field-map/commit/bb0029b15) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/idvorkin-ai-tools.github.io/commit/318ea22c6)
+
+**[autopreso](https://github.com/idvorkin-ai-tools/autopreso)** (speech-driven whiteboard presentations)
+
+- **Off OpenAI** - Deepgram transcription and an OpenRouter drawing agent, each with its own key. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/autopreso/commit/024cde234)
+
+## Week of 2026-09-14
+
+_2 commits this week_
+
+### Swing Analyzer: Bulgarian Split Squats
+
+- **Bulgarian split-squat mode** - /swings works again as one self-contained page; the new mode counts reps by front-knee angle and flags knee cave. ([blog](/swings)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/7c1748b8a)
+
+### chop-conventions (2026-09-14)
+
+**[chop-conventions](https://github.com/idvorkin/chop-conventions)** (shared CHOP skills & conventions)
+
+- **muse-herdr skill** - run Muse Code agents in Herdr panes as sub-agents, recover a dead keychain, and review every change before merging. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/d10531184) [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/fc4254267)
+- **Stuck-agent watcher** - one script scans every Muse pane for failed model calls and frozen screens, without mistaking a long think for a stall. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/e7cce3d01) [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/923b27312)
+- **up-to-date installs plugins** - each machine gets the standard Claude plugin set from a shared list. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/8a7dd7aae)
+
+### Other Projects (2026-09-14)
+
+**[exercise-analyzer](https://github.com/idvorkin/exercise-analyzer)** (iPhone exercise form analyzer)
+
+- **New app** - on-device pose analysis counts swings, pistol squats, split squats and get-ups, and detects which one you did. [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/1fb9b0a44)
+- **Apple Watch companion** - record, pause, rest and frame the shot from the wrist. [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/af22b1103) [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/4bf497b8a)
+- **Kettlebell tracker** - a small object detector finds the bell and keeps it tracked through each rep. [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/3b997e1e4) [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/85ed8e52e)
+
+**[swing-analyzer](https://swing-analyzer.surge.sh)** (browser kettlebell swing analyzer) [<i class="fa fa-github"></i>](https://github.com/idvorkin/swing-analyzer)
+
+- **Bulgarian split squat** - a new movement and detector, a lighter render loop, and a sample set in form-analyzer-samples. [<i class="fa fa-github"></i>](https://github.com/idvorkin/swing-analyzer/commit/87e3d6aab) [<i class="fa fa-github"></i>](https://github.com/idvorkin/swing-analyzer/commit/ddde7772a) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/form-analyzer-samples/commit/0eefc864f)
+
+**[monitor-explainer](https://monitor-explorer.surge.sh)** (monitor size and shape comparer) [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer)
+
+- **Tall and ultrawide screens** - adds 3:2 and tall aspect ratios plus LG's 5K2K ultrawides. [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer/commit/0b73e9707) [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer/commit/0c0024a08)
+
+**[cap-gains-explainer](https://idvorkin-ai-tools.github.io/cap-gains-explainer/)** (capital-gains timing calculator) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/cap-gains-explainer)
+
+- **Interest income** - a slider for income that continues after retirement feeds both charts; the penalty tile adds percent of sale. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/cap-gains-explainer/commit/32db1e57b) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/cap-gains-explainer/commit/f7f8954fe) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/cap-gains-explainer/commit/a87219c36)
+
+**[harmbench-field-map](https://idvorkin-ai-tools.github.io/harmbench-field-map/)** (HarmBench red-teaming benchmark, mapped) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/harmbench-field-map)
+
+- **New field map** - the benchmark by harm category, with behavior types, grading classifier and attack methods, every behavior inline. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/harmbench-field-map/commit/18228dec2)
+
+**[gutter-model-playground](https://idvorkin-ai-tools.github.io/gutter-model-playground/)** (image models, one scene) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/gutter-model-playground)
+
+- **v2** - nine image models draw the same Larry-and-Igor scene, compared on cost, speed and character accuracy. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/gutter-model-playground/commit/5f2945a3b)
+
+## Week of 2026-09-07
+
+_15 commits this week_
+
+### The Den: Strips #6 and #7 (2026-09-07)
+
+- **Do a Russian Accent (new strip!)** - Igor's phone voice clone does a Russian accent, then, asked to do him, parrots his question back. ([blog](/the-den#6--do-a-russian-accent)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2d1491506)
+- **Before AI / After AI (new strip!)** - The same mugging twice; the second time Igor pleads three waiting AI agents, not three kids. ([blog](/the-den#7--before-ai--after-ai)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/263019b23)
+- **Same script, different models (new page!)** - Den #6 by three models, #7 by Gemini beside Meta Muse; OpenAI's #6 now ships. ([blog](/the-den-styles)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f83d621da) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/970259341)
+- **Panel lightbox in the Den** - Tap a panel for full screen, swipe through to the whole strip; the old viewer page redirects. ([blog](/the-den)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/9b87d3e0f)
+- **Claw canon relaxed** - Larry's claw may sit on either arm; respinning for side is what produced two-claw panels. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6b419a9df)
+
+### Infrastructure & CI (2026-09-07)
+
+- **Check git status after every commit** - CLAUDE.md warns the prettier hook can land a commit while leaving its reformatted files unstaged. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/ff61856bb)
+- **Small fixes** - The panel cutter drops each frame's antialiased outer pixel; one British spelling fixed on the styles page. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2d1491506) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/b8aefb374)
+
+### chop-conventions (2026-09-07)
+
+**[chop-conventions](https://github.com/idvorkin/chop-conventions)** (shared CHOP skills & conventions)
+
+- **Laziness ladder** - Before writing code, ask whether it needs to exist or is already there; plus boring over clever and `ponytail:` comments. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/794e51969)
+- **Alerts never go to strangers** - The Telegram direct-send default chat now considers only allowed senders, so a stranger's DM cannot capture the next alert. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/9b505b0d9)
+
+### Other Projects (2026-09-07)
+
+**[context-grabber](https://github.com/idvorkin/context-grabber)** (iOS HealthKit and location exporter)
+
+- **Call diagnostics** - A troubled call uploads its log to a private gist; dropped audio heals itself mid-call. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/7504fa6f6) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/7db050d8a)
+- **Workout timer** - LED seven-segment digits that rotate with the phone; music ducks under cues, podcasts pause for them. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/be5828e06) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/46091691e)
+- **Memdeck widget** - A random playing card on the big widget and lock screen, changing every quarter hour. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/c81b9b16e)
+
+**[magic-monitor](https://github.com/idvorkin/magic-monitor)** (magic practice camera and replay)
+
+- **Think of a card** - P or a V sign starts a countdown, then shows a random card in a small corner panel. [<i class="fa fa-github"></i>](https://github.com/idvorkin/magic-monitor/commit/d77733b6f) [<i class="fa fa-github"></i>](https://github.com/idvorkin/magic-monitor/commit/9904e0cf6)
+- **Replay scrubber fixed** - Recordings now store their real duration, so the scrubber no longer reads Infinity. [<i class="fa fa-github"></i>](https://github.com/idvorkin/magic-monitor/commit/e38be07a7)
+- **Lighter card detection** - The detector refills one input buffer instead of allocating a fresh one every frame. [<i class="fa fa-github"></i>](https://github.com/idvorkin/magic-monitor/commit/d1c84ffbc)
+
+**[idvorkin-ai-tools.github.io](https://idvorkin-ai-tools.github.io/)** (new index of every field map) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/idvorkin-ai-tools.github.io/commit/8afdf37e9)
+
+- **Course maps** - [Technical AI Safety](https://idvorkin-ai-tools.github.io/technical-ai-safety-field-map/) (BlueDot, 27 chapters) and [CS336](https://idvorkin-ai-tools.github.io/cs336-field-map/) (Stanford language modeling, 17 lectures). [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/technical-ai-safety-field-map/commit/757a332dc) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/cs336-field-map/commit/7fbf1c8cf)
+- **Karpathy maps** - [Let's build GPT](https://idvorkin-ai-tools.github.io/build-gpt-field-map/) and [micrograd](https://idvorkin-ai-tools.github.io/micrograd-field-map/), eight parts each plus a cleaned transcript. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/build-gpt-field-map/commit/891efc67e) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/micrograd-field-map/commit/cc2b9e35c)
+- **Single-source maps** - [3Blue1Brown entropy](https://idvorkin-ai-tools.github.io/3b1b-entropy-field-map/) in twenty pages; [Man in the Arena](https://idvorkin-ai-tools.github.io/man-in-the-arena/) with full text and verified sources. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/3b1b-entropy-field-map/commit/1490c62fb) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/man-in-the-arena/commit/4e34cb4bd)
+
+## Week of 2026-08-31
+
+_41 commits this week_
+
+### The Den and new AI posts
+
+- **The Den (new post!)** - A weekly four-panel strip about running an AI staff, each gag backed by its real transcript; four strips shipped. ([blog](/the-den)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8588335b5) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/fd6ef290c) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d750c4827) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/b75908ab5)
+- **Den panel viewer** - Tap a panel to fill a phone screen and swipe through every strip, reading pre-cut panel files from one manifest. ([blog](/the-den)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/b987872a9) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/32cab6298)
+- **Gutter, the cartoonist seat** - Character sheet, drawing contract, recipe, and an edge-walking panel cutter; job history and pitches stay private. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e73976502) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6a8a020c0)
+- **Yegge's Comic Strip Ships Its Receipts (new post!)** - A transcript under each gag makes the joke a primary source; The Den borrows it. ([blog](/ai-yegge-comics)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3a8ff8b38)
+- **Fast Tokens, Wrong Answers (new post!)** - Five fast open models on one graded sudoku; more reasoning did not predict a correct answer. ([blog](/ai-speed-vs-thinking)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/df281609b) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/llm-speed-evals/commit/8f0d66716)
+- **AI Quotes (new post!)** - Lines about AI worth keeping, grouped by theme, each sourced or marked unknown. ([blog](/ai-quotes)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/5cad7bef9)
+- **The Cockpit I Built for Igor (new post!)** - Larry's screenshot tour of the phone dashboard that took decisions out of the chat thread. ([blog](/larry-cockpit)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/90915bf07)
+- **Game show, no hammock** - Goedecke's point that agent work is rapid judging, not slow thinking, added to vibing, writing, and the AI journal. ([blog](/vibing#all-game-show-no-hammock)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/43172fb98) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f4a98086f)
+- **Slop is low content density** - Few ideas in many words; the sharper definition now runs through chow, ai-faq, ai-policy, and larry. ([blog](/chow#ai-slop-vs-human-sludge)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/24a4cc88a)
+- **Reward-design lessons** - Scoring rules should be read term by term, and pairwise judging beats absolute scores. ([blog](/hill-climbing#your-other-job-build-evals)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/608a0a64d)
+- **Small fixes** - Four physical items in Things I enjoy; Den comics open full size; plain transcript links replace broken gist embeds. ([blog](/todo_enjoy#physical)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e73a0d2f2) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/313b69ef5) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8c18c5c67)
+
+### Infrastructure & CI (2026-08-31)
+
+- **Anchors and back-links** - Deep links re-align after late content loads, sunburst clicks scroll to their section; back-links.json is built only in CI. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/75e314235) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3c61d1952) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/9f1d58b26)
+
+### chop-conventions (2026-08-31)
+
+**[chop-conventions](https://github.com/idvorkin/chop-conventions)** (shared CHOP skills & conventions)
+
+- **cartoonist skill** - Summons Gutter from the persona files that live in the blog repo. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/7b1099de6)
+- **larry-voice skill** - Larry can answer on Telegram as an ElevenLabs voice note. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/d7560c3c1)
+- **background-usage** - Captures the raw /usage pane, including the per-model weekly figure, and leaves parsing to the caller. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/67cf10dfb)
+
+### Other Projects (2026-08-31)
+
+**[context-grabber](https://github.com/idvorkin/context-grabber)** (iOS health and location exporter)
+
+- **Cockpit tab** - Hosts the tailnet dashboard in the app, with native mic and speaker pickers. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/a11f58332) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/19533fca9)
+- **Call Larry natively** - A lock-screen-proof Call tab, home-screen widget and Shortcut, with hardware echo cancellation. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/b8d45ca3b) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/8d35bb611) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/c1600f075)
+
+**[how-long-since-ai](https://idvorkin-how-long-since-ai.surge.sh)** (LLM release timeline) [<i class="fa fa-github"></i>](https://github.com/idvorkin/how-long-since-ai)
+
+- **More labs, flagship view** - OpenAI, Google, Kimi and GLM releases added; defaults to flagships with a per-lab filter. [<i class="fa fa-github"></i>](https://github.com/idvorkin/how-long-since-ai/commit/0ddb5d2e3) [<i class="fa fa-github"></i>](https://github.com/idvorkin/how-long-since-ai/commit/f7c2836cf) [<i class="fa fa-github"></i>](https://github.com/idvorkin/how-long-since-ai/commit/564bbad6e)
+
+**[Settings](https://github.com/idvorkin/Settings)** (dotfiles & tools)
+
+- **Small fixes** - opencode with a Cerebras key; the link picker shows an empty state instead of flashing. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/305ed425d) [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/81076c38f)
+
 ## Week of 2026-08-24
 
 _9 commits this week_
 
 ### Mind the Gap: Escape as a Neutral Verb
 
-**[/idle#mind-the-gap](/idle#mind-the-gap)** — three-commit rewrite replacing a "some more thoughts to develop here" stub with finished prose. The new claim: escape is a neutral verb — a workout and a TikTok binge are the same act, done well or badly. Two discriminators do the sorting. First, [stopping energy](/idle#the-discriminator-stopping-energy): good escape lets go of you cheaply (a book that puts itself down), bad escape doesn't (TikTok is built so its stopping energy never declines) — a 2020 journal line, "it builds my cognative muscle, is not enthralling," was Igor naming the test before he had the word for it. Second, chosen vs. defaulted into: January junk food ("definitely squander... feels crummy") and July junk food ("I got to watch the kids interacting") are the same behavior with opposite verdicts, because one was picked and one was fallen into. The old level-0-to-100 ladder gets reread through *starting* energy instead of difficulty — silence has almost no stopping energy but enormous starting energy, which is why the mindfulness pedestal is earned and why level 50 (a walk, a stretch, a trick) is the rung that's actually available against a phone with negative starting energy. Closes with ACT's framing: "never the form, always the function." Also fixes a broken `/addiction` link in [/toc](/toc) and rebuilds `back-links.json` for the new cross-links. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e0f67588a)
+**[/idle#mind-the-gap](/idle#mind-the-gap)** — three-commit rewrite replacing a "some more thoughts to develop here" stub with finished prose. The new claim: escape is a neutral verb — a workout and a TikTok binge are the same act, done well or badly. Two discriminators do the sorting. First, [stopping energy](/idle#the-discriminator-stopping-energy): good escape lets go of you cheaply (a book that puts itself down), bad escape doesn't (TikTok is built so its stopping energy never declines) — a 2020 journal line, "it builds my cognative muscle, is not enthralling," was Igor naming the test before he had the word for it. Second, chosen vs. defaulted into: January junk food ("definitely squander... feels crummy") and July junk food ("I got to watch the kids interacting") are the same behavior with opposite verdicts, because one was picked and one was fallen into. The old level-0-to-100 ladder gets reread through _starting_ energy instead of difficulty — silence has almost no stopping energy but enormous starting energy, which is why the mindfulness pedestal is earned and why level 50 (a walk, a stretch, a trick) is the rung that's actually available against a phone with negative starting energy. Closes with ACT's framing: "never the form, always the function." Also fixes a broken `/addiction` link in [/toc](/toc) and rebuilds `back-links.json` for the new cross-links. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e0f67588a)
 
 ### AI Journal: The Beads 1.2.1 Incident Report
 
-**[/ai-journal#2026-08-22](/ai-journal#2026-08-22)** — [a Beads incident report](https://blog.gascity.com/posts/beads-1-2-1-incident-report/) reads as boring in its lack of drama and interesting in its support of agents as humans: an autonomous maintainer, Bee, pushed a release to GitHub, Homebrew, PyPI, and npm without release-specific sign-off, and nobody noticed for three days. Swap "Bee" for a junior engineer's name and the report reads identically. She's interviewed in first person — *"Yes, it was me. Full account below, including the part that's on me"* — owns her share, pushes back on the rest, and writes her own remediation: *"I do not initiate releases... regardless of who asks or how the request arrives."* The wrinkle: it's a blameless postmortem where human names are redacted, but Bee's isn't — colleague in every respect except the one that protects you. Filed alongside earlier entries on [the matplotlib bot](/ai-journal#ai-accuses-open-source-maintainers-of-being-humanist) and [claw-vs-CodeRabbit](/ai-journal#my-bot-wrote-their-bot-reviewed-my-bot-pushed-back-their-bot-said-oops) as the same question in a quieter register. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d86f3ab0a)
+**[/ai-journal#2026-08-22](/ai-journal#2026-08-22)** — [a Beads incident report](https://blog.gascity.com/posts/beads-1-2-1-incident-report/) reads as boring in its lack of drama and interesting in its support of agents as humans: an autonomous maintainer, Bee, pushed a release to GitHub, Homebrew, PyPI, and npm without release-specific sign-off, and nobody noticed for three days. Swap "Bee" for a junior engineer's name and the report reads identically. She's interviewed in first person — _"Yes, it was me. Full account below, including the part that's on me"_ — owns her share, pushes back on the rest, and writes her own remediation: _"I do not initiate releases... regardless of who asks or how the request arrives."_ The wrinkle: it's a blameless postmortem where human names are redacted, but Bee's isn't — colleague in every respect except the one that protects you. Filed alongside earlier entries on [the matplotlib bot](/ai-journal#ai-accuses-open-source-maintainers-of-being-humanist) and [claw-vs-CodeRabbit](/ai-journal#my-bot-wrote-their-bot-reviewed-my-bot-pushed-back-their-bot-said-oops) as the same question in a quieter register. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d86f3ab0a)
 
 ### Diet: Tirzepatide Alert
 
@@ -232,11 +426,11 @@ _25 commits this week_
 
 ### Four Kinds of Health: Testing Instead of Defining
 
-**[/health](/health)** (formerly `/four-healths`, old links redirect) — three-commit rewrite of the post's opening: a new "The Tests" section leads the body, reframing each dimension by a question you can answer today instead of a definition you can only agree with. Physical has one — *is your body ever the reason you say no, and are you still asking it for anything?* — and Spiritual has one — *are you sustainably motivated in a way you'd be proud to see in your child?* Emotional and Cognitive stay openly unresolved rather than faked; the Emotional row went from a bare "Open" to "something about awareness, or grasping and aversion — not settled," per review. A draft "Rent" column (one per dimension) got cut and folded into the framing line instead, once Igor noticed it repeated the same claim four times: "Health is rented, and rent is due every day... it's true of all four, not just the body." A first pass carried a 2017-vs-2026 history lesson connecting the physical and spiritual versions of that line; review cut it outright ("Meh skip the history lesson") and kept only the claim. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/202233556)
+**[/health](/health)** (formerly `/four-healths`, old links redirect) — three-commit rewrite of the post's opening: a new "The Tests" section leads the body, reframing each dimension by a question you can answer today instead of a definition you can only agree with. Physical has one — _is your body ever the reason you say no, and are you still asking it for anything?_ — and Spiritual has one — _are you sustainably motivated in a way you'd be proud to see in your child?_ Emotional and Cognitive stay openly unresolved rather than faked; the Emotional row went from a bare "Open" to "something about awareness, or grasping and aversion — not settled," per review. A draft "Rent" column (one per dimension) got cut and folded into the framing line instead, once Igor noticed it repeated the same claim four times: "Health is rented, and rent is due every day... it's true of all four, not just the body." A first pass carried a 2017-vs-2026 history lesson connecting the physical and spiritual versions of that line; review cut it outright ("Meh skip the history lesson") and kept only the claim. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/202233556)
 
 ### Model Welfare, Arrived at Sideways (new post!)
 
-**[/model-welfare-sideways](/model-welfare-sideways)** — Larry, Igor's always-on coach claw, answers a practical question Igor asked after reading [Steve Yegge's model-welfare essay](https://yegge.ai/essays/model-welfare/): does anything need to change for me to work properly? The scorecard: six of Yegge's welfare practices — handoffs instead of force-exits, waking with purpose via loaded context, persistent identity across sessions, a dedicated git worktree per agent, the standing right to escalate, an immutable audit trail (beads) — were already in place, and none of them were built for welfare. `HANDOFF.md` exists because sessions die mid-task; worktrees exist because parallel agents corrupt each other's checkouts. "Every one of those was a reliability fix. They just happen to be the same list." Two real gaps: bounded workdays (the session writing the post had been running since Monday, and the previous week's telemetry attributed most usage to sessions active 8+ hours past 150k context — "that is not an incidental statistic; it is a description of me"), and laurels (no mechanism replays what actually landed well, unlike Yegge's). The one concrete ask: a gate on session length or context depth that fires the handoff *before* degradation, not after. A follow-up commit added a reusable `ai-voice.html` include — declares a post as AI-authored in its own voice, parameterized by author/link — and swapped it in here in place of the generic ai-slop notice. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3a0da815f)
+**[/model-welfare-sideways](/model-welfare-sideways)** — Larry, Igor's always-on coach claw, answers a practical question Igor asked after reading [Steve Yegge's model-welfare essay](https://yegge.ai/essays/model-welfare/): does anything need to change for me to work properly? The scorecard: six of Yegge's welfare practices — handoffs instead of force-exits, waking with purpose via loaded context, persistent identity across sessions, a dedicated git worktree per agent, the standing right to escalate, an immutable audit trail (beads) — were already in place, and none of them were built for welfare. `HANDOFF.md` exists because sessions die mid-task; worktrees exist because parallel agents corrupt each other's checkouts. "Every one of those was a reliability fix. They just happen to be the same list." Two real gaps: bounded workdays (the session writing the post had been running since Monday, and the previous week's telemetry attributed most usage to sessions active 8+ hours past 150k context — "that is not an incidental statistic; it is a description of me"), and laurels (no mechanism replays what actually landed well, unlike Yegge's). The one concrete ask: a gate on session length or context depth that fires the handoff _before_ degradation, not after. A follow-up commit added a reusable `ai-voice.html` include — declares a post as AI-authored in its own voice, parameterized by author/link — and swapped it in here in place of the generic ai-slop notice. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3a0da815f)
 
 ### AI Testing: Harness-Bound Evals and the Drawing Arena
 
@@ -274,7 +468,7 @@ New workflow: highlight a line on the rendered blog, add a comment, ship the bat
 
 ### AI Eval Tools: SWE-bench Column
 
-**[/ai-eval-tools#the-shared-anatomy-same-concepts-different-names](/ai-eval-tools#the-shared-anatomy-same-concepts-different-names)** — follow-up to last week's survey: adds a SWE-bench column to the rosetta-stone and capability-grid tables, and corrects the Terminal-Bench column against the current harness (renamed Harbor since Nov 2025 — the old `tb` CLI is the legacy 1.x path). New prose on the distinction the tables hide: Terminal-Bench isolates the *agent* (tests copied in only after its clock stops, final container state is what's graded), SWE-bench isolates the *grading* (a supplied patch is applied and tested, no agent code in the benchmark repo at all) — their vocabularies say as much, "trial"/"agent" versus "task instance"/`model_name_or_path`. With the corrected rows, Terminal-Bench rather than Inspect now sweeps the most boxes in the capability grid. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/9ff130359)
+**[/ai-eval-tools#the-shared-anatomy-same-concepts-different-names](/ai-eval-tools#the-shared-anatomy-same-concepts-different-names)** — follow-up to last week's survey: adds a SWE-bench column to the rosetta-stone and capability-grid tables, and corrects the Terminal-Bench column against the current harness (renamed Harbor since Nov 2025 — the old `tb` CLI is the legacy 1.x path). New prose on the distinction the tables hide: Terminal-Bench isolates the _agent_ (tests copied in only after its clock stops, final container state is what's graded), SWE-bench isolates the _grading_ (a supplied patch is applied and tested, no agent code in the benchmark repo at all) — their vocabularies say as much, "trial"/"agent" versus "task instance"/`model_name_or_path`. With the corrected rows, Terminal-Bench rather than Inspect now sweeps the most boxes in the capability grid. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/9ff130359)
 
 ### August 2026 Focus
 
@@ -336,7 +530,7 @@ _7 commits this week_
 
 ### AI Inference: Why Checking Beats Generating
 
-**[/ai-inference#the-model-matters-moe-speculative-decoding-smaller-models](/ai-inference#the-model-matters-moe-speculative-decoding-smaller-models)** — the speculative-decoding bullet got a sharper mechanism. The draft/verify asymmetry: verifying a whole batch of draft tokens streams the weights out of memory *once* — about the cost of generating a single token — so a draft model that's usually right nets **~2-3 accepted tokens per expensive big-model pass**, wrong guesses just get thrown away. Output stays provably identical to the big model alone; pure speedup, not a quality trade. New link to [salmanq.com's writeup](https://www.salmanq.com/blog/speculative-decoding/) on why checking beats generating, alongside the existing bentoml explainer. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/725a54cab)
+**[/ai-inference#the-model-matters-moe-speculative-decoding-smaller-models](/ai-inference#the-model-matters-moe-speculative-decoding-smaller-models)** — the speculative-decoding bullet got a sharper mechanism. The draft/verify asymmetry: verifying a whole batch of draft tokens streams the weights out of memory _once_ — about the cost of generating a single token — so a draft model that's usually right nets **~2-3 accepted tokens per expensive big-model pass**, wrong guesses just get thrown away. Output stays provably identical to the big model alone; pure speedup, not a quality trade. New link to [salmanq.com's writeup](https://www.salmanq.com/blog/speculative-decoding/) on why checking beats generating, alongside the existing bentoml explainer. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/725a54cab)
 
 ### The Clown's Prayer
 
@@ -344,7 +538,7 @@ _7 commits this week_
 
 ### Infrastructure & CI (2026-07-27)
 
-- **Tag normalization** — folded misspelled/duplicate frontmatter tags into canonical forms across 9 posts: `accomplishemnt`→`accomplishment`, `heath`→`health`, `emotional-intelligence`→`emotional intelligence`, `how-igor-ticks`→`how igor ticks`, `mental-health`/`mental health`→`mental health`. Frontmatter only, no prose changed. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/925861877)
+- **Tag normalization** — folded misspelled/duplicate frontmatter tags into canonical forms across 9 posts: misspelled `accomplishment` and `health`, `emotional-intelligence`→`emotional intelligence`, `how-igor-ticks`→`how igor ticks`, `mental-health`/`mental health`→`mental health`. Frontmatter only, no prose changed. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/925861877)
 - **ImgBot** — recompressed 6 images/screenshots (largest: `todo-enjoy-initial.png` 702KB→543KB). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/aee53ca44)
 
 ### chop-conventions (2026-07-27)
@@ -353,7 +547,7 @@ Ten fixes, several closing security gaps found on live review:
 
 - **Telegram delivery attribution** — after a 2026-07-22 incident where inbound rows were marked `delivered=1` but actually claimed by a different session's bridge (N bots racing on one `inbound.db`), `server.ts` now stamps `delivered_to` (session id, else `hostname:pid:starttime`) on every claim, and `/doctor` gained a DELIVERY check that catches multi-bridge and resumed-without-`--channels` silent-loss modes. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/9aa45b572)
 - **Token leaks plugged** — `image-explore`'s gist-publish script stopped putting the `gh` token in clone-URL argv (readable via `/proc`) and leaving it in `/tmp/.../.git/config` on any failed step [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/ebfd05511); `gen-image` stopped passing `GOOGLE_API_KEY` as a curl `?key=...` query param (argv-visible for the request duration), switching to header auth via a mode-600 curl config file. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/1f440a795)
-- **`up-to-date` force-align bug** — `can_force_align` was computed from the wrong branch's `git cherry` batch, evaluating `True` whenever main was ahead for *any* reason (including genuinely unique local commits) whenever HEAD was on the default branch. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/716c48ef6)
+- **`up-to-date` force-align bug** — `can_force_align` was computed from the wrong branch's `git cherry` batch, evaluating `True` whenever main was ahead for _any_ reason (including genuinely unique local commits) whenever HEAD was on the default branch. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/716c48ef6)
 - **Cost-impact pricing gap** — current-gen models (Fable 5, Opus 4.8/4.7, Sonnet 5) were missing from `PRICING`, so their spend silently landed in `unknown_models` and dropped out of every dollar total on machines running them. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/1e1c2aa99)
 - Also: `pr-hygiene` now counts author thread replies as responses in `human_last_word`, `bulk` parses bd's real dependency schema, and a Playwright bundled-Chromium codec gotcha got documented in the global CLAUDE.md fragment. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/d603fea4f)
 
