@@ -44,12 +44,20 @@ git fetch upstream
 git checkout -b <branch> upstream/main
 ```
 
-## 3. Warm the worktree before your first commit
+## 3. Check the worktree is warm (usually it already is)
 
-The `anchor-checker` pre-commit hook reads `_site/*.html` **and**
-`back-links.json`. A fresh worktree has neither (`back-links.json` is gitignored
-and CI-generated), so your first commit hard-fails with `_site not found` or
-`back-links.json not found`. Warm it:
+Treehouse hands out **reused** worktrees: a slot keeps its gitignored build
+state — `node_modules/`, `_site/`, `back-links.json` — from its last use, so a
+leased slot is normally ready to commit. Check before doing anything:
+
+```bash
+ls -d node_modules _site back-links.json
+```
+
+All three present: skip the rest of this section. Only a slot Treehouse just
+created (the pool was exhausted, so it grew a new one) starts cold. The
+`anchor-checker` hook then hard-fails with `_site not found` or
+`back-links.json not found`, and the `test` hook has no Vitest. Warm it once:
 
 ```bash
 just worktree-init
