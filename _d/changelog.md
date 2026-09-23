@@ -349,11 +349,9 @@ _15 commits this week_
 
 **[idvorkin-ai-tools.github.io](https://idvorkin-ai-tools.github.io/)** (new index of every field map) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/idvorkin-ai-tools.github.io/commit/8afdf37e9)
 
-- **[Technical AI Safety](https://idvorkin-ai-tools.github.io/technical-ai-safety-field-map/)** - All 27 chapters of BlueDot's course, each explained and linked to its readings. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/technical-ai-safety-field-map/commit/757a332dc)
-- **[CS336](https://idvorkin-ai-tools.github.io/cs336-field-map/)** - Stanford's language-modeling course: 17 lecture pages plus assignment walkthroughs. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/cs336-field-map/commit/7fbf1c8cf)
-- **[Let's build GPT](https://idvorkin-ai-tools.github.io/build-gpt-field-map/) and [micrograd](https://idvorkin-ai-tools.github.io/micrograd-field-map/)** - Karpathy's two videos, eight parts each plus a cleaned transcript. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/build-gpt-field-map/commit/891efc67e) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/micrograd-field-map/commit/cc2b9e35c)
-- **[3Blue1Brown entropy](https://idvorkin-ai-tools.github.io/3b1b-entropy-field-map/)** - Twenty pages on the entropy video, from scoring rules to the Wordle proxy-objective bug. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/3b1b-entropy-field-map/commit/1490c62fb)
-- **[Man in the Arena](https://idvorkin-ai-tools.github.io/man-in-the-arena/)** - Roosevelt's speech in thirteen pages, with the full text and verified sources. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/man-in-the-arena/commit/4e34cb4bd)
+- **Course maps** - [Technical AI Safety](https://idvorkin-ai-tools.github.io/technical-ai-safety-field-map/) (BlueDot, 27 chapters) and [CS336](https://idvorkin-ai-tools.github.io/cs336-field-map/) (Stanford language modeling, 17 lectures). [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/technical-ai-safety-field-map/commit/757a332dc) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/cs336-field-map/commit/7fbf1c8cf)
+- **Karpathy maps** - [Let's build GPT](https://idvorkin-ai-tools.github.io/build-gpt-field-map/) and [micrograd](https://idvorkin-ai-tools.github.io/micrograd-field-map/), eight parts each plus a cleaned transcript. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/build-gpt-field-map/commit/891efc67e) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/micrograd-field-map/commit/cc2b9e35c)
+- **Single-source maps** - [3Blue1Brown entropy](https://idvorkin-ai-tools.github.io/3b1b-entropy-field-map/) in twenty pages; [Man in the Arena](https://idvorkin-ai-tools.github.io/man-in-the-arena/) with full text and verified sources. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/3b1b-entropy-field-map/commit/1490c62fb) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/man-in-the-arena/commit/4e34cb4bd)
 
 ## Week of 2026-08-31
 
@@ -375,8 +373,7 @@ _41 commits this week_
 
 ### Infrastructure & CI (2026-08-31)
 
-- **Anchors land on their heading** - Deep links re-align after content loads above them, and sunburst leaf clicks scroll to their section. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/75e314235) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3c61d1952)
-- **back-links.json untracked** - Built only in CI, so parallel content PRs stop colliding on a generated file. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/9f1d58b26)
+- **Anchors and back-links** - Deep links re-align after late content loads, sunburst clicks scroll to their section; back-links.json is built only in CI. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/75e314235) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3c61d1952) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/9f1d58b26)
 
 ### chop-conventions (2026-08-31)
 
