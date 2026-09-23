@@ -12,6 +12,10 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Week of 2026-09-21](#week-of-2026-09-21)
+  - [Three New Posts (2026-09-21)](#three-new-posts-2026-09-21)
+  - [Infrastructure & CI (2026-09-21)](#infrastructure--ci-2026-09-21)
+  - [Other Projects (2026-09-21)](#other-projects-2026-09-21)
 - [Week of 2026-08-24](#week-of-2026-08-24)
   - [Mind the Gap: Escape as a Neutral Verb](#mind-the-gap-escape-as-a-neutral-verb)
   - [AI Journal: The Beads 1.2.1 Incident Report](#ai-journal-the-beads-121-incident-report)
@@ -203,6 +207,49 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+## Week of 2026-09-21
+
+_58 commits this week_
+
+### Three New Posts (2026-09-21)
+
+- **AI Orchestrators (new post!)** - An orchestrator is every block around the agent, each added after something broke, and each kept cheap to delete. ([blog](/ai-orchestrator)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e462fbf19)
+- **Block-by-block viewer** - Back and Next step through the stack from the whole picture, with simpler panels that fit a phone. ([blog](/ai-orchestrator)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/963295f9c) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/03d97cf68)
+- **Where the Time Goes (new post!)** - Hours freed from tech default to consumption unless given a destination first; relationships and health have ceilings. ([blog](/time-allocation)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2be21d446)
+- **Interactive bucket chart** - pull tech down to see where freed hours land; clicking Tech splits it into work, side projects and environment. ([blog](/time-allocation#the-five-buckets)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/ff9932773) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/ac46a83cb)
+- **How I Manage AI Tokens (new post!)** - Across several subscriptions, read quota left against time left and spend where the window resets soonest. ([blog](/token-management)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/25aeb037c)
+- **Cockpit usage page** - the post shows the phone dashboard's quota bars and SPEND flag; the Cockpit post links back. ([blog](/token-management#put-it-where-you-already-look)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/96e93e4de)
+- **Cross-links** - five AI posts now link the orchestrator; Escape Artists and Build the Life You Want link the buckets. ([blog](/ai-orchestrator)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e22ab60c0) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f885aa465) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/65141b318)
+
+### Infrastructure & CI (2026-09-21)
+
+- **pr-checks skill** - prints the PR Review Checklist grid; regex checks stay code, and a model judges headers, voice and AI patterns. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/18755cb49) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/a33547889)
+- **no-mistakes gate** - blog gate config with pr-checks after lint; Grok runs first, Codex and Claude as fallbacks. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/5432d81ec) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/804c6b83f)
+- **Dev banner links changed pages** - a branch preview lists every post the branch touches, one click each. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/94a5768f2)
+- **Small fixes** - CLAUDE.md now symlinks to AGENTS.md; the `?` dialog shows the annotate toggle; two dead changelog anchors repaired. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/11accd59c) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f02fec9eb) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4c9d3de49)
+
+### Other Projects (2026-09-21)
+
+**[exercise-analyzer](https://github.com/idvorkin/exercise-analyzer)** (iPhone lift tracker and rep counter)
+
+- **Barbell split squat** - new exercise, told apart from swings, counted by hip height over the front foot. [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/6d617d87c) [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/9b3192376)
+- **Delete a set** - from playback or Workouts, warning when the app holds the only copy. [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/59309e727)
+- **Workouts polish** - exercise drawings replace names; seek controls persist and let the video show through. [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/d6a139f1e) [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/49046c0dd)
+
+**[Settings](https://github.com/idvorkin/Settings)** (dotfiles & tools)
+
+- **y window numbers** - a clockwise number overlay on macOS windows; focus or close any window by its number. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/653134680) [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/03977efaf)
+- **caff** - keeps the Mac awake only while plugged in or Herdr agents work, and falls back to sleep. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/0e6944507) [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/275f5cee7)
+- **Shell cleanup** - dead API keys no longer exported; the SCRATCH variable stops growing with every nested shell. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/615a368b7) [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/3ed111b57)
+
+**[hierarchy-of-money-field-map](https://idvorkin-ai-tools.github.io/hierarchy-of-money-field-map/)** (Gundersen's money story, illustrated) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/hierarchy-of-money-field-map)
+
+- **New field map** - an animal parable of how money stacks into layers, a problem-then-solution walk, an index card. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/hierarchy-of-money-field-map/commit/0b5ad91be) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/hierarchy-of-money-field-map/commit/bb0029b15) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/idvorkin-ai-tools.github.io/commit/318ea22c6)
+
+**[autopreso](https://github.com/idvorkin-ai-tools/autopreso)** (speech-driven whiteboard presentations)
+
+- **Off OpenAI** - Deepgram transcription and an OpenRouter drawing agent, each with its own key. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/autopreso/commit/024cde234)
 
 ## Week of 2026-08-24
 
