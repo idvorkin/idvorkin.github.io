@@ -285,7 +285,8 @@ jobs:
             ERR=$(echo "$RESULT" | jq -r '
               .result // .error
               // ((.errors // []) | map(tostring) | join("\n") | select(length > 0))
-              // "(no result text in transcript)"' | head -c 2000)
+              // "(no result text in transcript)"
+              | .[0:2000]')   # truncate in jq: `| head -c` would SIGPIPE jq under pipefail
             # ERR is model/SDK text: stop workflow-command parsing while it is
             # echoed, so a line like `::error::…` inside it is printed, not run.
             STOP_TOKEN=$(openssl rand -hex 16)
@@ -298,7 +299,7 @@ jobs:
             echo "::error::Claude run failed: $(printf '%s' "$ERR" | tr '\r\n' '  ')"
             # A fence longer than any backtick run in ERR, so ERR can't close it.
             FENCE='```'
-            while printf '%s' "$ERR" | grep -qF "$FENCE"; do FENCE="${FENCE}\`"; done
+            while [[ "$ERR" == *"$FENCE"* ]]; do FENCE="${FENCE}\`"; done
             {
               echo ""
               echo "### Failure detail"
