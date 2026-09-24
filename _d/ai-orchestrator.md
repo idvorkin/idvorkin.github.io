@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI Orchestrators: what, why, and how we got here"
+title: "AI Orchestrators"
 permalink: /ai-orchestrator
 ai_default_image: true
 tags:
@@ -13,33 +13,24 @@ alias:
   - /orchestrator
 ---
 
-An orchestrator is everything around the agent. The agent writes the code. The orchestrator decides which agent gets a job, gives it somewhere to work, keeps the record of that job outside the session, watches it, checks what comes back before it lands, and gives me one place to look at all of it. I did not design mine. It arrived one building block at a time, and every block is a thing that broke.
+An orchestrator is the stuff around a coding agent. The agent writes the code. The orchestrator picks which agent gets a job, gives it somewhere to work, keeps a record of the job outside the session, watches it, checks the result before it lands, and gives me one place to see it all. I didn't design mine. I added it one block at a time, each block after something broke.
 
 {% include ai-slop.html percent="70" %}
-
-<!-- prettier-ignore-start -->
-<!-- vim-markdown-toc-start -->
-
-- [Why I hand-roll mine](#why-i-hand-roll-mine)
-- [Claude will probably absorb most of this](#claude-will-probably-absorb-most-of-this)
-
-<!-- vim-markdown-toc-end -->
-<!-- prettier-ignore-end -->
 
 {% include orchestrator-stack.html %}
 
 ## Why I hand-roll mine
 
-I run two. [Larry](/larry) gets his own orchestrator, the Mine column above. [Gas City](/gas-city) is the orchestrator when I want one off the shelf.
+I run two. [Larry](/larry) runs on the one I built, the "Mine" column in the table above. When I want one off the shelf, I use [Gas City](/gas-city).
 
-1. **It is hyper-tuned to me.** My nudges, my repos, my review habits, my phone.
-2. **I learn how it works.** Building a block is how I find out what it is for. That is also what lets me judge someone else's version.
-3. **I mix and match best in breed.** Every block can come from a different third party and I take whichever one is best. That matters more the less I can afford [all the expensive tokens I want](/token-management).
+1. It fits me: my nudges, my repos, my review habits, my phone.
+2. Building a block is how I learn what it's for, and that's how I can judge someone else's version.
+3. Each block can come from a different vendor, and I pick whichever is best. That matters more when I can't afford [all the expensive tokens I want](/token-management).
 
-The downside is real. When a distribution ships something new I am behind, sometimes by months. I have decided that is fine, because every block here is small and cheap to throw away.
+The cost: when a distribution ships something new, I'm behind, sometimes by months. I'm fine with that, because each block is small and cheap to throw away.
 
 ## Claude will probably absorb most of this
 
-Every block is a gap in the product, and products close gaps. Worktree isolation was my own block for a while and then it turned up as a flag. I would guess the ledger, the dispatcher and the supervisor follow in some form, though I have no idea on what timeline.
+Each block covers something Claude doesn't do yet, and Claude keeps catching up. Worktree isolation was my own block for a while; now it's a flag. I'd guess the ledger, dispatcher and supervisor go the same way. No idea when.
 
-When that happens I delete my version and use theirs. That is the whole reason to keep each block cheap.
+When that happens, I delete mine and use theirs.
