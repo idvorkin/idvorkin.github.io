@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { getChangedPages, getCurrentPR, getCurrentPort, isDevServer } from "../dev-info";
+import { getChangedPages, getCurrentPR, getCurrentPort, isChangedPage, isDevServer } from "../dev-info";
 
 describe("dev-info", () => {
   let originalLocation: Location;
@@ -78,6 +78,15 @@ describe("dev-info", () => {
     it("is empty when the build embedded nothing", () => {
       (window as any).__GIT_CHANGED__ = null;
       expect(getChangedPages()).toEqual([]);
+    });
+  });
+
+  describe("isChangedPage", () => {
+    it("matches the current path against changed permalinks, ignoring trailing slashes", () => {
+      expect(isChangedPage("/time-allocation", ["/ai-orchestrator", "/time-allocation"])).toBe(true);
+      expect(isChangedPage("/time-allocation/", ["/time-allocation"])).toBe(true);
+      expect(isChangedPage("/time", ["/time-allocation"])).toBe(false);
+      expect(isChangedPage("/", [])).toBe(false);
     });
   });
 });

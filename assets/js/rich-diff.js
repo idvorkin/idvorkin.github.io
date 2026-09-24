@@ -1,4 +1,4 @@
-const A = { added: "#1a7f37", removed: "#cf222e", changed: "#bf8700" }, _ = `
+const K = { added: "#1a7f37", removed: "#cf222e", changed: "#bf8700" }, W = `
 #rd-nav{position:fixed;right:20px;bottom:20px;z-index:1001;display:flex;align-items:center;gap:6px;background:#24292f;color:#fff;border-radius:8px;padding:6px 8px;font:600 13px/1.2 system-ui,sans-serif;box-shadow:0 4px 12px rgba(0,0,0,.25)}
 #rd-nav button{background:#444c56;color:#fff;border:0;border-radius:5px;padding:5px 10px;font:inherit;cursor:pointer;min-width:36px}
 #rd-nav button:hover{background:#57606a}
@@ -18,193 +18,191 @@ const A = { added: "#1a7f37", removed: "#cf222e", changed: "#bf8700" }, _ = `
   #rd-map{bottom:52px;width:8px}
 }
 `;
-function K(e, n = document) {
-  const o = n.defaultView, r = /* @__PURE__ */ new Set();
+function q(e, o = document) {
+  const r = o.defaultView, i = /* @__PURE__ */ new Set();
   let t = -1;
-  if (!n.getElementById("rd-nav-style")) {
-    const a = n.createElement("style");
-    a.id = "rd-nav-style", a.textContent = _, n.head.appendChild(a);
+  if (!o.getElementById("rd-nav-style")) {
+    const s = o.createElement("style");
+    s.id = "rd-nav-style", s.textContent = W, o.head.appendChild(s);
   }
-  const i = n.createElement("div");
-  i.id = "rd-nav", i.innerHTML = '<button type="button" data-rd="prev" title="Previous change (p / k)">‹</button><span class="rd-count"></span><button type="button" data-rd="next" title="Next change (n / j)">›</button><span class="rd-keys">n/p</span>';
-  const s = i.querySelector(".rd-count"), d = n.createElement("div");
+  const n = o.createElement("div");
+  n.id = "rd-nav", n.innerHTML = '<button type="button" data-rd="prev" title="Previous change (p / k)">‹</button><span class="rd-count"></span><button type="button" data-rd="next" title="Next change (n / j)">›</button><span class="rd-keys">n/p</span>';
+  const a = n.querySelector(".rd-count"), d = o.createElement("div");
   d.id = "rd-map";
-  const p = e.map((a, l) => {
-    const u = n.createElement("div");
-    return u.className = "rd-tick", u.style.background = A[a.kind], u.title = `${a.kind} — change ${l + 1}`, u.onclick = () => m(l), d.appendChild(u), u;
+  const p = e.map((s, c) => {
+    const h = o.createElement("div");
+    return h.className = "rd-tick", h.style.background = K[s.kind], h.title = `${s.kind} — change ${c + 1}`, h.onclick = () => b(c), d.appendChild(h), h;
   });
-  function f() {
-    const a = Math.max(n.documentElement.scrollHeight, 1);
-    e.forEach((l, u) => {
-      const b = l.el.getBoundingClientRect();
-      p[u].style.top = `${(b.top + o.scrollY) / a * 100}%`, p[u].style.height = `${b.height / a * 100}%`;
+  function l() {
+    const s = Math.max(o.documentElement.scrollHeight, 1);
+    e.forEach((c, h) => {
+      const g = c.el.getBoundingClientRect();
+      p[h].style.top = `${(g.top + r.scrollY) / s * 100}%`, p[h].style.height = `${g.height / s * 100}%`;
     });
   }
-  function c() {
-    const a = e.length, l = t < 0 ? `${a} change${a === 1 ? "" : "s"}` : `change ${t + 1} of ${a}`, u = r.size === a ? `all ${a} seen ✓` : `${r.size} of ${a} seen`;
-    s.innerHTML = `${l}<span class="rd-seen-count">${u}</span>`, p.forEach((b, v) => {
-      b.classList.toggle("rd-tick-seen", r.has(v) && v !== t), b.classList.toggle("rd-tick-current", v === t);
+  function u() {
+    const s = e.length, c = t < 0 ? `${s} change${s === 1 ? "" : "s"}` : `change ${t + 1} of ${s}`, h = i.size === s ? `all ${s} seen ✓` : `${i.size} of ${s} seen`;
+    a.innerHTML = `${c}<span class="rd-seen-count">${h}</span>`, p.forEach((g, y) => {
+      g.classList.toggle("rd-tick-seen", i.has(y) && y !== t), g.classList.toggle("rd-tick-current", y === t);
     });
   }
-  function m(a) {
+  function b(s) {
     if (!e.length) return;
-    t = (a % e.length + e.length) % e.length;
-    const l = e[t].el;
-    r.add(t);
-    const u = l.getBoundingClientRect().top + o.scrollY - o.innerHeight / 3;
-    o.scrollTo({ top: Math.max(0, u), behavior: "smooth" }), l.classList.remove("rd-flash"), l.offsetWidth, l.classList.add("rd-flash"), c();
+    t = (s % e.length + e.length) % e.length;
+    const c = e[t].el;
+    i.add(t);
+    const h = c.getBoundingClientRect().top + r.scrollY - r.innerHeight / 3;
+    r.scrollTo({ top: Math.max(0, h), behavior: "smooth" }), c.classList.remove("rd-flash"), c.offsetWidth, c.classList.add("rd-flash"), u();
   }
-  const g = () => m(t + 1), x = () => m(t < 0 ? e.length - 1 : t - 1);
-  i.addEventListener("click", (a) => {
-    const l = a.target.closest("button")?.dataset.rd;
-    l === "next" && g(), l === "prev" && x();
+  const f = () => b(t + 1), m = () => b(t < 0 ? e.length - 1 : t - 1);
+  n.addEventListener("click", (s) => {
+    const c = s.target.closest("button")?.dataset.rd;
+    c === "next" && f(), c === "prev" && m();
   });
-  const h = (a) => {
-    if (!(a.metaKey || a.ctrlKey || a.altKey || a.target?.closest?.("input, textarea, select, [contenteditable]"))) {
-      if (a.key === "n" || a.key === "j") g();
-      else if (a.key === "p" || a.key === "k") x();
+  const v = (s) => {
+    if (!(s.metaKey || s.ctrlKey || s.altKey || s.target?.closest?.("input, textarea, select, [contenteditable]"))) {
+      if (s.key === "n" || s.key === "j") f();
+      else if (s.key === "p" || s.key === "k") m();
       else return;
-      a.preventDefault();
+      s.preventDefault();
     }
   };
-  n.addEventListener("keydown", h), o.addEventListener("resize", f), n.body.append(i, d), f();
-  const y = o.setTimeout(f, 1500);
-  return c(), {
-    go: m,
-    next: g,
-    prev: x,
+  o.addEventListener("keydown", v), r.addEventListener("resize", l), o.body.append(n, d), l();
+  const x = r.setTimeout(l, 1500);
+  return u(), {
+    go: b,
+    next: f,
+    prev: m,
     dispose() {
-      n.removeEventListener("keydown", h), o.removeEventListener("resize", f), o.clearTimeout(y), i.remove(), d.remove();
+      o.removeEventListener("keydown", v), r.removeEventListener("resize", l), r.clearTimeout(x), n.remove(), d.remove();
     }
   };
 }
-const S = "https://idvork.in", T = "script, style, svg, canvas, iframe, video, audio, object", R = (e) => e.replace(/\s+/g, " ").trim();
-function W(e) {
-  const n = typeof window > "u" ? "" : window.location.origin;
-  let o = e.split(S).join("");
-  return n && (o = o.split(n).join("")), R(o);
+const I = "https://idvork.in", j = "script, style, svg, canvas, iframe, video, audio, object", P = (e) => e.replace(/\s+/g, " ").trim();
+function B(e) {
+  const o = typeof window > "u" ? "" : window.location.origin;
+  let r = e.split(I).join("");
+  return o && (r = r.split(o).join("")), P(r);
 }
 function w(e) {
-  return e.matches(T) || !!e.querySelector(T);
+  return e.matches(j) || !!e.querySelector(j);
 }
-function j(e) {
-  return e ? Array.from(e.children).filter((n) => !n.hasAttribute("data-pagefind-ignore")) : [];
+function z(e) {
+  return e ? Array.from(e.children).filter((o) => !o.hasAttribute("data-pagefind-ignore")) : [];
 }
-function M(e) {
-  return `${e.tagName}|${w(e) ? W(e.outerHTML) : R(e.textContent || "")}`;
+function D(e) {
+  return `${e.tagName}|${w(e) ? B(e.outerHTML) : P(e.textContent || "")}`;
 }
-function I(e, n, o = (r, t) => r === t) {
-  const r = e.length, t = n.length, i = Array.from({ length: r + 1 }, () => new Uint32Array(t + 1));
-  for (let f = r - 1; f >= 0; f--)
-    for (let c = t - 1; c >= 0; c--)
-      i[f][c] = o(e[f], n[c]) ? i[f + 1][c + 1] + 1 : Math.max(i[f + 1][c], i[f][c + 1]);
-  const s = [];
+function A(e, o, r = (i, t) => i === t) {
+  const i = e.length, t = o.length, n = Array.from({ length: i + 1 }, () => new Uint32Array(t + 1));
+  for (let l = i - 1; l >= 0; l--)
+    for (let u = t - 1; u >= 0; u--)
+      n[l][u] = r(e[l], o[u]) ? n[l + 1][u + 1] + 1 : Math.max(n[l + 1][u], n[l][u + 1]);
+  const a = [];
   let d = 0, p = 0;
-  for (; d < r && p < t; )
-    o(e[d], n[p]) ? (s.push([d, p]), d++, p++) : i[d + 1][p] >= i[d][p + 1] ? d++ : p++;
-  return s;
+  for (; d < i && p < t; )
+    r(e[d], o[p]) ? (a.push([d, p]), d++, p++) : n[d + 1][p] >= n[d][p + 1] ? d++ : p++;
+  return a;
 }
-const C = /\s+|[\p{L}\p{N}_'’]+|[^\s\p{L}\p{N}_]/gu, z = (e) => e.match(C) || [];
-function q(e, n) {
-  const o = new Set(z(e.toLowerCase()).filter((i) => i.trim())), r = new Set(z(n.toLowerCase()).filter((i) => i.trim()));
-  if (!o.size || !r.size) return 0;
+const C = /\s+|[\p{L}\p{N}_'’]+|[^\s\p{L}\p{N}_]/gu, O = (e) => e.match(C) || [];
+function Y(e, o) {
+  const r = new Set(O(e.toLowerCase()).filter((n) => n.trim())), i = new Set(O(o.toLowerCase()).filter((n) => n.trim()));
+  if (!r.size || !i.size) return 0;
   let t = 0;
-  for (const i of o) r.has(i) && t++;
-  return t / Math.min(o.size, r.size);
+  for (const n of r) i.has(n) && t++;
+  return t / Math.min(r.size, i.size);
 }
-const B = 0.5;
-function Y(e, n) {
-  const o = e.map(M), r = n.map(M), t = I(o, r);
-  t.push([e.length, n.length]);
-  const i = [];
-  let s = 0, d = 0;
-  for (const [p, f] of t) {
-    const c = e.slice(s, p), m = n.slice(d, f);
-    i.push(...F(c, m)), p < e.length && i.push({ kind: "same", block: n[f] }), s = p + 1, d = f + 1;
+const F = 0.5;
+function G(e, o) {
+  const r = e.map(D), i = o.map(D), t = A(r, i);
+  t.push([e.length, o.length]);
+  const n = [];
+  let a = 0, d = 0;
+  for (const [p, l] of t) {
+    const u = e.slice(a, p), b = o.slice(d, l);
+    n.push(...U(u, b)), p < e.length && n.push({ kind: "same", block: o[l] }), a = p + 1, d = l + 1;
   }
-  return i;
+  return n;
 }
-function F(e, n) {
-  const o = [];
-  let r = 0;
-  for (const t of n) {
-    let i = -1;
-    for (let s = r; s < e.length; s++) {
-      const d = e[s];
-      if (!(d.tagName !== t.tagName || w(d) !== w(t)) && (w(d) || q(d.textContent || "", t.textContent || "") >= B)) {
-        i = s;
+function U(e, o) {
+  const r = [];
+  let i = 0;
+  for (const t of o) {
+    let n = -1;
+    for (let a = i; a < e.length; a++) {
+      const d = e[a];
+      if (!(d.tagName !== t.tagName || w(d) !== w(t)) && (w(d) || Y(d.textContent || "", t.textContent || "") >= F)) {
+        n = a;
         break;
       }
     }
-    if (i < 0) {
-      o.push({ kind: "added", block: t });
+    if (n < 0) {
+      r.push({ kind: "added", block: t });
       continue;
     }
-    for (; r < i; ) o.push({ kind: "removed", block: e[r++] });
-    o.push({ kind: "changed", old: e[r++], block: t });
+    for (; i < n; ) r.push({ kind: "removed", block: e[i++] });
+    r.push({ kind: "changed", old: e[i++], block: t });
   }
-  for (; r < e.length; ) o.push({ kind: "removed", block: e[r++] });
-  return o;
+  for (; i < e.length; ) r.push({ kind: "removed", block: e[i++] });
+  return r;
 }
-function D(e) {
-  const n = [], o = e.ownerDocument.createTreeWalker(
+function H(e) {
+  const o = [], r = e.ownerDocument.createTreeWalker(
     e,
     4
     /* NodeFilter.SHOW_TEXT */
   );
-  for (let r = o.nextNode(); r; r = o.nextNode())
-    if (!r.parentElement?.closest("script, style")) {
+  for (let i = r.nextNode(); i; i = r.nextNode())
+    if (!i.parentElement?.closest("script, style")) {
       C.lastIndex = 0;
-      for (let t = C.exec(r.data); t; t = C.exec(r.data))
-        n.push({ text: t[0], node: r, start: t.index, end: t.index + t[0].length });
+      for (let t = C.exec(i.data); t; t = C.exec(i.data))
+        o.push({ text: t[0], node: i, start: t.index, end: t.index + t[0].length });
     }
-  return n;
+  return o;
 }
-const O = (e) => !e.trim(), G = 4e6;
-function U(e, n) {
-  const o = D(e), r = D(n);
-  if (o.length * r.length > G) return !1;
-  const t = I(
-    o.map((c) => c.text),
-    r.map((c) => c.text)
+const S = (e) => !e.trim(), V = 4e6;
+function Q(e, o) {
+  const r = H(e), i = H(o), t = r.flatMap((f, m) => S(f.text) ? [] : [m]), n = i.flatMap((f, m) => S(f.text) ? [] : [m]);
+  if (t.length * n.length > V) return !1;
+  const a = A(
+    t.map((f) => r[f].text),
+    n.map((f) => i[f].text)
   );
-  t.push([o.length, r.length]);
-  const i = /* @__PURE__ */ new Map(), s = (c) => (i.has(c) || i.set(c, { ins: [], del: [] }), i.get(c)), d = n.ownerDocument;
-  let p = 0, f = 0;
-  for (const [c, m] of t) {
-    const g = o.slice(p, c).map((h) => h.text).join("");
-    if (!O(g)) {
-      const h = r[f] ?? r[r.length - 1];
-      h ? s(h.node).del.push([r[f] ? h.start : h.end, g]) : n.appendChild(Object.assign(d.createElement("del"), { textContent: g }));
+  a.push([t.length, n.length]);
+  const d = /* @__PURE__ */ new Map(), p = (f) => (d.has(f) || d.set(f, { ins: [], del: [] }), d.get(f)), l = o.ownerDocument;
+  let u = 0, b = 0;
+  for (const [f, m] of a) {
+    const v = b < m ? i.slice(n[b], n[m - 1] + 1) : [];
+    if (u < f) {
+      const x = r.slice(t[u], t[f - 1] + 1).map((h) => h.text).join(""), s = i[n[b]], c = i[n[n.length - 1]];
+      s ? p(s.node).del.push([s.start, v.length ? `${x} ` : x]) : c ? p(c.node).del.push([c.end, ` ${x}`]) : o.appendChild(Object.assign(l.createElement("del"), { textContent: x }));
     }
-    const x = r.slice(f, m);
-    if (!O(x.map((h) => h.text).join("")))
-      for (const h of x) {
-        const y = s(h.node).ins, a = y[y.length - 1];
-        a && a[1] === h.start ? a[1] = h.end : y.push([h.start, h.end]);
-      }
-    p = c + 1, f = m + 1;
+    for (const x of v) {
+      const s = p(x.node).ins, c = s[s.length - 1];
+      c && c[1] === x.start ? c[1] = x.end : s.push([x.start, x.end]);
+    }
+    u = f + 1, b = m + 1;
   }
-  for (const [c, { ins: m, del: g }] of i) {
-    const x = c.data, h = /* @__PURE__ */ new Set([0, x.length, ...g.map(([l]) => l)]);
-    for (const [l, u] of m) h.add(l).add(u);
-    const y = Array.from(h).sort((l, u) => l - u), a = d.createDocumentFragment();
-    for (let l = 0; l < y.length; l++) {
-      const u = y[l];
-      for (const [$, L] of g)
-        $ === u && a.appendChild(Object.assign(d.createElement("del"), { textContent: L }));
-      const b = y[l + 1];
-      if (b === void 0 || b === u) continue;
-      const v = x.slice(u, b), P = m.some(([$, L]) => $ <= u && b <= L);
-      a.appendChild(
-        P ? Object.assign(d.createElement("ins"), { textContent: v }) : d.createTextNode(v)
+  for (const [f, { ins: m, del: v }] of d) {
+    const x = f.data, s = /* @__PURE__ */ new Set([0, x.length, ...v.map(([g]) => g)]);
+    for (const [g, y] of m) s.add(g).add(y);
+    const c = Array.from(s).sort((g, y) => g - y), h = l.createDocumentFragment();
+    for (let g = 0; g < c.length; g++) {
+      const y = c[g];
+      for (const [L, N] of v)
+        L === y && h.appendChild(Object.assign(l.createElement("del"), { textContent: N }));
+      const E = c[g + 1];
+      if (E === void 0 || E === y) continue;
+      const M = x.slice(y, E), _ = m.some(([L, N]) => L <= y && E <= N);
+      h.appendChild(
+        _ ? Object.assign(l.createElement("ins"), { textContent: M }) : l.createTextNode(M)
       );
     }
-    c.replaceWith(a);
+    f.replaceWith(h);
   }
   return !0;
 }
-const V = `
+const X = `
 #rich-diff-view .rd-summary{background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:6px 10px;margin:0 0 16px;font-size:14px;display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center}
 #rich-diff-view .rd-summary .rd-add{color:#1a7f37;font-weight:600}
 #rich-diff-view .rd-summary .rd-del{color:#cf222e;font-weight:600}
@@ -218,77 +216,77 @@ const V = `
 #rich-diff-view ins{background:#abf2bc;text-decoration:none;border-radius:2px}
 #rich-diff-view del{background:#ffcecb;color:#82071e;text-decoration:line-through;border-radius:2px}
 `;
-function N(e, n, o, r) {
+function T(e, o, r, i) {
   const t = e.createElement("div");
-  if (t.className = `rd-block ${n}`, r) {
-    const i = e.createElement("span");
-    i.className = "rd-note", i.textContent = r, t.appendChild(i);
+  if (t.className = `rd-block ${o}`, i) {
+    const n = e.createElement("span");
+    n.className = "rd-note", n.textContent = i, t.appendChild(n);
   }
-  return t.appendChild(e.importNode(o, !0)), t;
+  return t.appendChild(e.importNode(r, !0)), t;
 }
-function Q(e, n) {
-  const o = e.createElement("div");
-  o.id = "rich-diff-view";
-  const r = { added: 0, removed: 0, changed: 0 }, t = [], i = (s, d) => {
-    r[s]++, t.push({ kind: s, el: d }), o.appendChild(d);
+function J(e, o) {
+  const r = e.createElement("div");
+  r.id = "rich-diff-view";
+  const i = { added: 0, removed: 0, changed: 0 }, t = [], n = (a, d) => {
+    i[a]++, t.push({ kind: a, el: d }), r.appendChild(d);
   };
-  for (const s of n) {
-    if (s.kind === "same") {
-      o.appendChild(e.importNode(s.block, !0));
+  for (const a of o) {
+    if (a.kind === "same") {
+      r.appendChild(e.importNode(a.block, !0));
       continue;
     }
-    if (s.kind === "added") i("added", N(e, "rd-added", s.block));
-    else if (s.kind === "removed") i("removed", N(e, "rd-removed", s.block));
+    if (a.kind === "added") n("added", T(e, "rd-added", a.block));
+    else if (a.kind === "removed") n("removed", T(e, "rd-removed", a.block));
     else {
-      const d = e.importNode(s.block, !0), f = !(w(s.old) || w(s.block)) && U(s.old, d);
-      i("changed", N(e, "rd-changed", d, f ? void 0 : "changed block (not diffed word by word)"));
+      const d = e.importNode(a.block, !0), l = !(w(a.old) || w(a.block)) && Q(a.old, d);
+      n("changed", T(e, "rd-changed", d, l ? void 0 : "changed block (not diffed word by word)"));
     }
   }
-  return { view: o, counts: r, changes: t };
+  return { view: r, counts: i, changes: t };
 }
-async function H(e) {
-  const n = await fetch(e, { cache: "no-store" });
-  if (!n.ok) return { status: n.status, body: null };
-  const o = new DOMParser().parseFromString(await n.text(), "text/html");
-  return { status: n.status, body: o.getElementById("content-holder") };
+async function R(e) {
+  const o = await fetch(e, { cache: "no-store" });
+  if (!o.ok) return { status: o.status, body: null };
+  const r = new DOMParser().parseFromString(await o.text(), "text/html");
+  return { status: o.status, body: r.getElementById("content-holder") };
 }
-let E = null, k = null;
-async function X(e) {
-  const n = document.getElementById("content-holder");
-  if (!n) return !1;
-  if (E)
-    return E.remove(), E = null, k?.dispose(), k = null, n.style.display = "", !1;
+let $ = null, k = null;
+async function Z(e) {
+  const o = document.getElementById("content-holder");
+  if (!o) return !1;
+  if ($)
+    return $.remove(), $ = null, k?.dispose(), k = null, o.style.display = "", !1;
   if (!document.getElementById("rich-diff-style")) {
-    const s = document.createElement("style");
-    s.id = "rich-diff-style", s.textContent = V, document.head.appendChild(s);
+    const a = document.createElement("style");
+    a.id = "rich-diff-style", a.textContent = X, document.head.appendChild(a);
   }
-  const o = window.location.pathname, r = S + o, t = document.createElement("div");
+  const r = window.location.pathname, i = I + r, t = document.createElement("div");
   t.className = "rd-summary";
-  let i;
+  let n;
   try {
-    const [s, d] = await Promise.all([H(o), H(r)]);
-    if (!s.body) throw new Error(`couldn't reload this page (HTTP ${s.status})`);
+    const [a, d] = await Promise.all([R(r), R(i)]);
+    if (!a.body) throw new Error(`couldn't reload this page (HTTP ${a.status})`);
     const p = d.status === 404;
     if (!d.body && !p) throw new Error(`idvork.in returned HTTP ${d.status}`);
-    const f = Y(j(d.body), j(s.body)), c = Q(document, f);
-    i = c.view;
-    const { added: m, removed: g, changed: x } = c.counts;
-    t.innerHTML = `<span>Rendered diff vs <a href="${r}" target="_blank">idvork.in${o}</a>${p ? " — <b>new page</b>" : ""}</span><span class="rd-add">+${m} added</span><span class="rd-del">−${g} removed</span><span class="rd-chg">~${x} changed</span>`, e && (t.innerHTML += `<a href="${e}/files" target="_blank">source diff</a>`), c.changes.length ? k = K(c.changes) : t.innerHTML += "<span>No rendered changes.</span>";
-  } catch (s) {
-    i = document.createElement("div"), i.id = "rich-diff-view", t.textContent = `Diff vs main failed: ${s.message}`;
+    const l = G(z(d.body), z(a.body)), u = J(document, l);
+    n = u.view;
+    const { added: b, removed: f, changed: m } = u.counts;
+    t.innerHTML = `<span>Rendered diff vs <a href="${i}" target="_blank">idvork.in${r}</a>${p ? " — <b>new page</b>" : ""}</span><span class="rd-add">+${b} added</span><span class="rd-del">−${f} removed</span><span class="rd-chg">~${m} changed</span>`, e && (t.innerHTML += `<a href="${e}/files" target="_blank">source diff</a>`), u.changes.length ? k = q(u.changes) : t.innerHTML += "<span>No rendered changes.</span>";
+  } catch (a) {
+    n = document.createElement("div"), n.id = "rich-diff-view", t.textContent = `Diff vs main failed: ${a.message}`;
   }
-  return i.prepend(t), n.before(i), n.style.display = "none", E = i, k ? k.next() : (t.scrollIntoView({ block: "start" }), window.scrollBy(0, -110)), !0;
+  return n.prepend(t), o.before(n), o.style.display = "none", $ = n, k ? k.next() : (t.scrollIntoView({ block: "start" }), window.scrollBy(0, -110)), !0;
 }
 export {
-  S as PROD_ORIGIN,
-  Y as diffBlocks,
-  j as extractBlocks,
+  I as PROD_ORIGIN,
+  G as diffBlocks,
+  z as extractBlocks,
   w as isOpaque,
-  I as lcsPairs,
-  U as markWordDiff,
-  Q as renderDiff,
-  q as similarity,
-  X as toggleRichDiff,
-  z as tokenize
+  A as lcsPairs,
+  Q as markWordDiff,
+  J as renderDiff,
+  Y as similarity,
+  Z as toggleRichDiff,
+  O as tokenize
 };
 //# sourceMappingURL=rich-diff.js.map
