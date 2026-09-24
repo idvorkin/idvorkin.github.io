@@ -7,7 +7,7 @@ const K = { added: "#1a7f37", removed: "#cf222e", changed: "#bf8700" }, W = `
 #rd-nav .rd-keys{font-weight:400;font-size:11px;opacity:.6}
 #rd-map{position:fixed;right:0;top:100px;bottom:16px;width:12px;z-index:1000;background:rgba(175,184,193,.25)}
 #rd-map .rd-tick{position:absolute;left:1px;right:1px;min-height:3px;border-radius:1px;cursor:pointer;opacity:.55}
-#rd-map .rd-tick.rd-tick-seen{opacity:.2}
+#rd-map .rd-tick.rd-tick-seen{background:#8c959f !important;opacity:.7}
 #rd-map .rd-tick.rd-tick-current{opacity:1;left:-3px;box-shadow:0 0 0 1px #fff}
 .rd-flash{animation:rd-flash 1.2s ease-out}
 @keyframes rd-flash{0%{box-shadow:0 0 0 4px #0969da}100%{box-shadow:0 0 0 4px rgba(9,105,218,0)}}
