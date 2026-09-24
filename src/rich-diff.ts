@@ -1,6 +1,8 @@
 // ABOUTME: Dev-only "Diff vs main": diffs this page's rendered post body against the live idvork.in copy.
 // ABOUTME: Block-level LCS pairs paragraphs; word-level LCS marks <ins>/<del> inside changed blocks, keeping markup.
 
+import { type Change, type ChangeNav, attachChangeNav } from "./diff-nav";
+
 export const PROD_ORIGIN = "https://idvork.in";
 
 export type BlockOp =
@@ -212,11 +214,10 @@ export function markWordDiff(old: Element, fresh: Element): boolean {
 }
 
 const STYLE = `
-#rich-diff-view .rd-summary{position:sticky;top:100px;z-index:5;background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:6px 10px;margin:0 0 16px;font-size:14px;display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center}
+#rich-diff-view .rd-summary{background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:6px 10px;margin:0 0 16px;font-size:14px;display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center}
 #rich-diff-view .rd-summary .rd-add{color:#1a7f37;font-weight:600}
 #rich-diff-view .rd-summary .rd-del{color:#cf222e;font-weight:600}
 #rich-diff-view .rd-summary .rd-chg{color:#9a6700;font-weight:600}
-#rich-diff-view .rd-summary button{border:1px solid #d0d7de;background:#fff;border-radius:6px;padding:1px 8px;font-size:13px;cursor:pointer}
 #rich-diff-view .rd-block{border-left:4px solid transparent;padding:2px 0 2px 10px;margin-left:-14px;margin-bottom:1em}
 #rich-diff-view .rd-block>*:last-child{margin-bottom:0}
 #rich-diff-view .rd-added{border-color:#1a7f37;background:#dafbe1}
@@ -225,7 +226,6 @@ const STYLE = `
 #rich-diff-view .rd-note{display:block;font:600 11px/1.6 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.04em;color:#57606a;text-decoration:none}
 #rich-diff-view ins{background:#abf2bc;text-decoration:none;border-radius:2px}
 #rich-diff-view del{background:#ffcecb;color:#82071e;text-decoration:line-through;border-radius:2px}
-#rich-diff-view .rd-focus{outline:2px solid #0969da;outline-offset:2px}
 `;
 
 function wrap(doc: Document, cls: string, inner: Element, note?: string): HTMLElement {
@@ -246,22 +246,27 @@ export function renderDiff(doc: Document, ops: BlockOp[]) {
   const view = doc.createElement("div");
   view.id = "rich-diff-view";
   const counts = { added: 0, removed: 0, changed: 0 };
+  const changes: Change[] = [];
+  const add = (kind: Change["kind"], el: HTMLElement) => {
+    counts[kind]++;
+    changes.push({ kind, el });
+    view.appendChild(el);
+  };
   for (const op of ops) {
     if (op.kind === "same") {
       view.appendChild(doc.importNode(op.block, true));
       continue;
     }
-    counts[op.kind]++;
-    if (op.kind === "added") view.appendChild(wrap(doc, "rd-added", op.block));
-    else if (op.kind === "removed") view.appendChild(wrap(doc, "rd-removed", op.block));
+    if (op.kind === "added") add("added", wrap(doc, "rd-added", op.block));
+    else if (op.kind === "removed") add("removed", wrap(doc, "rd-removed", op.block));
     else {
       const fresh = doc.importNode(op.block, true);
       const opaque = isOpaque(op.old) || isOpaque(op.block);
       const worded = !opaque && markWordDiff(op.old, fresh);
-      view.appendChild(wrap(doc, "rd-changed", fresh, worded ? undefined : "changed block (not diffed word by word)"));
+      add("changed", wrap(doc, "rd-changed", fresh, worded ? undefined : "changed block (not diffed word by word)"));
     }
   }
-  return { view, counts };
+  return { view, counts, changes };
 }
 
 async function fetchBody(url: string): Promise<{ status: number; body: Element | null }> {
@@ -272,6 +277,7 @@ async function fetchBody(url: string): Promise<{ status: number; body: Element |
 }
 
 let active: HTMLElement | null = null;
+let nav: ChangeNav | null = null;
 
 /** Toggle the rich diff for the current page. Resolves to true when the diff is showing. */
 export async function toggleRichDiff(prUrl?: string): Promise<boolean> {
@@ -280,6 +286,8 @@ export async function toggleRichDiff(prUrl?: string): Promise<boolean> {
   if (active) {
     active.remove();
     active = null;
+    nav?.dispose();
+    nav = null;
     holder.style.display = "";
     return false;
   }
@@ -308,21 +316,8 @@ export async function toggleRichDiff(prUrl?: string): Promise<boolean> {
       isNew ? " — <b>new page</b>" : ""
     }</span><span class="rd-add">+${added} added</span><span class="rd-del">−${removed} removed</span><span class="rd-chg">~${changed} changed</span>`;
     if (prUrl) summary.innerHTML += `<a href="${prUrl}/files" target="_blank">source diff</a>`;
-    if (added + removed + changed) {
-      const next = document.createElement("button");
-      next.textContent = "Next change ↓";
-      let at = -1;
-      next.onclick = () => {
-        const changes = Array.from(view.querySelectorAll<HTMLElement>(".rd-block"));
-        changes[at]?.classList.remove("rd-focus");
-        at = (at + 1) % changes.length;
-        changes[at].classList.add("rd-focus");
-        changes[at].scrollIntoView({ behavior: "smooth", block: "center" });
-      };
-      summary.appendChild(next);
-    } else {
-      summary.innerHTML += "<span>No rendered changes.</span>";
-    }
+    if (r.changes.length) nav = attachChangeNav(r.changes);
+    else summary.innerHTML += "<span>No rendered changes.</span>";
   } catch (e) {
     view = document.createElement("div");
     view.id = "rich-diff-view";
@@ -332,7 +327,10 @@ export async function toggleRichDiff(prUrl?: string): Promise<boolean> {
   holder.before(view);
   holder.style.display = "none";
   active = view;
-  summary.scrollIntoView({ block: "start" });
-  window.scrollBy(0, -110); // clear the fixed header + dev banner
+  if (nav) nav.next();
+  else {
+    summary.scrollIntoView({ block: "start" });
+    window.scrollBy(0, -110); // clear the fixed header + dev banner
+  }
   return true;
 }
