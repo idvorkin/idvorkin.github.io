@@ -1,0 +1,338 @@
+// ABOUTME: Dev-only "Diff vs main": diffs this page's rendered post body against the live idvork.in copy.
+// ABOUTME: Block-level LCS pairs paragraphs; word-level LCS marks <ins>/<del> inside changed blocks, keeping markup.
+
+export const PROD_ORIGIN = "https://idvork.in";
+
+export type BlockOp =
+  | { kind: "same"; block: Element }
+  | { kind: "added"; block: Element }
+  | { kind: "removed"; block: Element }
+  | { kind: "changed"; old: Element; block: Element };
+
+// Blocks whose text alone can't say whether they changed (charts, embeds): compared by markup, never word-diffed.
+const OPAQUE = "script, style, svg, canvas, iframe, video, audio, object";
+
+const norm = (s: string) => s.replace(/\s+/g, " ").trim();
+
+/** Strip origins so the same link renders equal on localhost and on idvork.in. */
+function normMarkup(html: string): string {
+  const local = typeof window === "undefined" ? "" : window.location.origin;
+  let out = html.split(PROD_ORIGIN).join("");
+  if (local) out = out.split(local).join("");
+  return norm(out);
+}
+
+export function isOpaque(el: Element): boolean {
+  return el.matches(OPAQUE) || !!el.querySelector(OPAQUE);
+}
+
+/** Top-level blocks of the post body, minus the TOC dropdown and comments. */
+export function extractBlocks(root: Element | null): Element[] {
+  if (!root) return [];
+  return Array.from(root.children).filter((el) => !el.hasAttribute("data-pagefind-ignore"));
+}
+
+function blockKey(el: Element): string {
+  return `${el.tagName}|${isOpaque(el) ? normMarkup(el.outerHTML) : norm(el.textContent || "")}`;
+}
+
+/** Longest-common-subsequence alignment. Returns pairs [i, j] of equal items, in order. */
+export function lcsPairs<T>(a: T[], b: T[], eq: (x: T, y: T) => boolean = (x, y) => x === y): [number, number][] {
+  const n = a.length;
+  const m = b.length;
+  // ponytail: O(n·m) table. Fine for a post (hundreds of blocks, a few hundred words per block);
+  // swap in Myers' O(ND) diff if a page ever makes this slow.
+  const dp: Uint32Array[] = Array.from({ length: n + 1 }, () => new Uint32Array(m + 1));
+  for (let i = n - 1; i >= 0; i--) {
+    for (let j = m - 1; j >= 0; j--) {
+      dp[i][j] = eq(a[i], b[j]) ? dp[i + 1][j + 1] + 1 : Math.max(dp[i + 1][j], dp[i][j + 1]);
+    }
+  }
+  const pairs: [number, number][] = [];
+  let i = 0;
+  let j = 0;
+  while (i < n && j < m) {
+    if (eq(a[i], b[j])) {
+      pairs.push([i, j]);
+      i++;
+      j++;
+    } else if (dp[i + 1][j] >= dp[i][j + 1]) i++;
+    else j++;
+  }
+  return pairs;
+}
+
+const WORD = /\s+|[\p{L}\p{N}_'’]+|[^\s\p{L}\p{N}_]/gu;
+export const tokenize = (s: string): string[] => s.match(WORD) || [];
+
+/** Share of the smaller block's words that also appear in the other — decides "edited" vs "replaced". */
+export function similarity(a: string, b: string): number {
+  const wa = new Set(tokenize(a.toLowerCase()).filter((t) => t.trim()));
+  const wb = new Set(tokenize(b.toLowerCase()).filter((t) => t.trim()));
+  if (!wa.size || !wb.size) return 0;
+  let common = 0;
+  for (const w of wa) if (wb.has(w)) common++;
+  return common / Math.min(wa.size, wb.size);
+}
+
+const PAIR_THRESHOLD = 0.5;
+
+/** Diff two block lists: LCS on exact blocks, then pair leftover removed/added blocks that look like edits. */
+export function diffBlocks(oldBlocks: Element[], newBlocks: Element[]): BlockOp[] {
+  const oldKeys = oldBlocks.map(blockKey);
+  const newKeys = newBlocks.map(blockKey);
+  const anchors = lcsPairs(oldKeys, newKeys);
+  anchors.push([oldBlocks.length, newBlocks.length]);
+
+  const ops: BlockOp[] = [];
+  let oi = 0;
+  let ni = 0;
+  for (const [ai, aj] of anchors) {
+    const dels = oldBlocks.slice(oi, ai);
+    const adds = newBlocks.slice(ni, aj);
+    ops.push(...pairGap(dels, adds));
+    if (ai < oldBlocks.length) ops.push({ kind: "same", block: newBlocks[aj] });
+    oi = ai + 1;
+    ni = aj + 1;
+  }
+  return ops;
+}
+
+function pairGap(dels: Element[], adds: Element[]): BlockOp[] {
+  const ops: BlockOp[] = [];
+  let d = 0; // next removed block not yet emitted
+  for (const add of adds) {
+    let match = -1;
+    for (let k = d; k < dels.length; k++) {
+      const old = dels[k];
+      if (old.tagName !== add.tagName || isOpaque(old) !== isOpaque(add)) continue;
+      if (isOpaque(old) || similarity(old.textContent || "", add.textContent || "") >= PAIR_THRESHOLD) {
+        match = k;
+        break;
+      }
+    }
+    if (match < 0) {
+      ops.push({ kind: "added", block: add });
+      continue;
+    }
+    while (d < match) ops.push({ kind: "removed", block: dels[d++] });
+    ops.push({ kind: "changed", old: dels[d++], block: add });
+  }
+  while (d < dels.length) ops.push({ kind: "removed", block: dels[d++] });
+  return ops;
+}
+
+type Tok = { text: string; node: Text; start: number; end: number };
+
+function textTokens(root: Element): Tok[] {
+  const toks: Tok[] = [];
+  const walker = root.ownerDocument.createTreeWalker(root, 4 /* NodeFilter.SHOW_TEXT */);
+  for (let n = walker.nextNode() as Text | null; n; n = walker.nextNode() as Text | null) {
+    if (n.parentElement?.closest("script, style")) continue;
+    WORD.lastIndex = 0;
+    for (let m = WORD.exec(n.data); m; m = WORD.exec(n.data)) {
+      toks.push({ text: m[0], node: n, start: m.index, end: m.index + m[0].length });
+    }
+  }
+  return toks;
+}
+
+const isWs = (s: string) => !s.trim();
+const MAX_WORD_CELLS = 4_000_000;
+
+/**
+ * Mark word-level changes inside `fresh` (a clone of the new block) against `old`, keeping fresh's markup:
+ * inserted words get wrapped in <ins>, deleted words are spliced in as <del> where they used to sit.
+ * Returns false when the block is too big to diff word-by-word.
+ */
+export function markWordDiff(old: Element, fresh: Element): boolean {
+  const a = textTokens(old);
+  const b = textTokens(fresh);
+  if (a.length * b.length > MAX_WORD_CELLS) return false;
+  const pairs = lcsPairs(
+    a.map((t) => t.text),
+    b.map((t) => t.text),
+  );
+  pairs.push([a.length, b.length]);
+
+  // Per text node: inserted [start,end) ranges and deleted text anchored at an offset.
+  const edits = new Map<Text, { ins: [number, number][]; del: [number, string][] }>();
+  const at = (n: Text) => {
+    if (!edits.has(n)) edits.set(n, { ins: [], del: [] });
+    return edits.get(n);
+  };
+  const doc = fresh.ownerDocument;
+
+  let i = 0;
+  let j = 0;
+  for (const [pi, pj] of pairs) {
+    const gone = a
+      .slice(i, pi)
+      .map((t) => t.text)
+      .join("");
+    if (!isWs(gone)) {
+      const anchor = b[j] ?? b[b.length - 1];
+      if (!anchor) fresh.appendChild(Object.assign(doc.createElement("del"), { textContent: gone }));
+      else at(anchor.node).del.push([b[j] ? anchor.start : anchor.end, gone]);
+    }
+    const added = b.slice(j, pj);
+    if (!isWs(added.map((t) => t.text).join(""))) {
+      for (const t of added) {
+        const r = at(t.node).ins;
+        const last = r[r.length - 1];
+        if (last && last[1] === t.start) last[1] = t.end;
+        else r.push([t.start, t.end]);
+      }
+    }
+    i = pi + 1;
+    j = pj + 1;
+  }
+
+  for (const [node, { ins, del }] of edits) {
+    const text = node.data;
+    const cuts = new Set<number>([0, text.length, ...del.map(([o]) => o)]);
+    for (const [s, e] of ins) cuts.add(s).add(e);
+    const points = Array.from(cuts).sort((x, y) => x - y);
+    const frag = doc.createDocumentFragment();
+    for (let k = 0; k < points.length; k++) {
+      const p = points[k];
+      for (const [o, t] of del)
+        if (o === p) frag.appendChild(Object.assign(doc.createElement("del"), { textContent: t }));
+      const q = points[k + 1];
+      if (q === undefined || q === p) continue;
+      const piece = text.slice(p, q);
+      const inserted = ins.some(([s, e]) => s <= p && q <= e);
+      frag.appendChild(
+        inserted ? Object.assign(doc.createElement("ins"), { textContent: piece }) : doc.createTextNode(piece),
+      );
+    }
+    node.replaceWith(frag);
+  }
+  return true;
+}
+
+const STYLE = `
+#rich-diff-view .rd-summary{position:sticky;top:100px;z-index:5;background:#f6f8fa;border:1px solid #d0d7de;border-radius:6px;padding:6px 10px;margin:0 0 16px;font-size:14px;display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center}
+#rich-diff-view .rd-summary .rd-add{color:#1a7f37;font-weight:600}
+#rich-diff-view .rd-summary .rd-del{color:#cf222e;font-weight:600}
+#rich-diff-view .rd-summary .rd-chg{color:#9a6700;font-weight:600}
+#rich-diff-view .rd-summary button{border:1px solid #d0d7de;background:#fff;border-radius:6px;padding:1px 8px;font-size:13px;cursor:pointer}
+#rich-diff-view .rd-block{border-left:4px solid transparent;padding:2px 0 2px 10px;margin-left:-14px;margin-bottom:1em}
+#rich-diff-view .rd-block>*:last-child{margin-bottom:0}
+#rich-diff-view .rd-added{border-color:#1a7f37;background:#dafbe1}
+#rich-diff-view .rd-removed{border-color:#cf222e;background:#ffebe9;text-decoration:line-through;text-decoration-color:#cf222e80;opacity:.85}
+#rich-diff-view .rd-changed{border-color:#bf8700}
+#rich-diff-view .rd-note{display:block;font:600 11px/1.6 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.04em;color:#57606a;text-decoration:none}
+#rich-diff-view ins{background:#abf2bc;text-decoration:none;border-radius:2px}
+#rich-diff-view del{background:#ffcecb;color:#82071e;text-decoration:line-through;border-radius:2px}
+#rich-diff-view .rd-focus{outline:2px solid #0969da;outline-offset:2px}
+`;
+
+function wrap(doc: Document, cls: string, inner: Element, note?: string): HTMLElement {
+  const box = doc.createElement("div");
+  box.className = `rd-block ${cls}`;
+  if (note) {
+    const n = doc.createElement("span");
+    n.className = "rd-note";
+    n.textContent = note;
+    box.appendChild(n);
+  }
+  box.appendChild(doc.importNode(inner, true));
+  return box;
+}
+
+/** Render diff ops into a container; returns the container and the change counts. */
+export function renderDiff(doc: Document, ops: BlockOp[]) {
+  const view = doc.createElement("div");
+  view.id = "rich-diff-view";
+  const counts = { added: 0, removed: 0, changed: 0 };
+  for (const op of ops) {
+    if (op.kind === "same") {
+      view.appendChild(doc.importNode(op.block, true));
+      continue;
+    }
+    counts[op.kind]++;
+    if (op.kind === "added") view.appendChild(wrap(doc, "rd-added", op.block));
+    else if (op.kind === "removed") view.appendChild(wrap(doc, "rd-removed", op.block));
+    else {
+      const fresh = doc.importNode(op.block, true);
+      const opaque = isOpaque(op.old) || isOpaque(op.block);
+      const worded = !opaque && markWordDiff(op.old, fresh);
+      view.appendChild(wrap(doc, "rd-changed", fresh, worded ? undefined : "changed block (not diffed word by word)"));
+    }
+  }
+  return { view, counts };
+}
+
+async function fetchBody(url: string): Promise<{ status: number; body: Element | null }> {
+  const res = await fetch(url, { cache: "no-store" });
+  if (!res.ok) return { status: res.status, body: null };
+  const doc = new DOMParser().parseFromString(await res.text(), "text/html");
+  return { status: res.status, body: doc.getElementById("content-holder") };
+}
+
+let active: HTMLElement | null = null;
+
+/** Toggle the rich diff for the current page. Resolves to true when the diff is showing. */
+export async function toggleRichDiff(prUrl?: string): Promise<boolean> {
+  const holder = document.getElementById("content-holder");
+  if (!holder) return false;
+  if (active) {
+    active.remove();
+    active = null;
+    holder.style.display = "";
+    return false;
+  }
+  if (!document.getElementById("rich-diff-style")) {
+    const s = document.createElement("style");
+    s.id = "rich-diff-style";
+    s.textContent = STYLE;
+    document.head.appendChild(s);
+  }
+
+  const path = window.location.pathname;
+  const prodUrl = PROD_ORIGIN + path;
+  const summary = document.createElement("div");
+  summary.className = "rd-summary";
+  let view: HTMLElement;
+  try {
+    const [mine, prod] = await Promise.all([fetchBody(path), fetchBody(prodUrl)]);
+    if (!mine.body) throw new Error(`couldn't reload this page (HTTP ${mine.status})`);
+    const isNew = prod.status === 404;
+    if (!prod.body && !isNew) throw new Error(`idvork.in returned HTTP ${prod.status}`);
+    const ops = diffBlocks(extractBlocks(prod.body), extractBlocks(mine.body));
+    const r = renderDiff(document, ops);
+    view = r.view;
+    const { added, removed, changed } = r.counts;
+    summary.innerHTML = `<span>Rendered diff vs <a href="${prodUrl}" target="_blank">idvork.in${path}</a>${
+      isNew ? " — <b>new page</b>" : ""
+    }</span><span class="rd-add">+${added} added</span><span class="rd-del">−${removed} removed</span><span class="rd-chg">~${changed} changed</span>`;
+    if (prUrl) summary.innerHTML += `<a href="${prUrl}/files" target="_blank">source diff</a>`;
+    if (added + removed + changed) {
+      const next = document.createElement("button");
+      next.textContent = "Next change ↓";
+      let at = -1;
+      next.onclick = () => {
+        const changes = Array.from(view.querySelectorAll<HTMLElement>(".rd-block"));
+        changes[at]?.classList.remove("rd-focus");
+        at = (at + 1) % changes.length;
+        changes[at].classList.add("rd-focus");
+        changes[at].scrollIntoView({ behavior: "smooth", block: "center" });
+      };
+      summary.appendChild(next);
+    } else {
+      summary.innerHTML += "<span>No rendered changes.</span>";
+    }
+  } catch (e) {
+    view = document.createElement("div");
+    view.id = "rich-diff-view";
+    summary.textContent = `Diff vs main failed: ${(e as Error).message}`;
+  }
+  view.prepend(summary);
+  holder.before(view);
+  holder.style.display = "none";
+  active = view;
+  summary.scrollIntoView({ block: "start" });
+  window.scrollBy(0, -110); // clear the fixed header + dev banner
+  return true;
+}

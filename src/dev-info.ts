@@ -29,6 +29,30 @@ export function getChangedPages(): string[] {
   return pages.filter((p): p is string => typeof p === "string" && p.startsWith("/"));
 }
 
+const trimSlash = (p: string) => p.replace(/\/+$/, "") || "/";
+
+/** True when `path` is one of the pages this branch changes (trailing slashes ignored). */
+export function isChangedPage(path: string, changed: string[]): boolean {
+  return changed.some((p) => trimSlash(p) === trimSlash(path));
+}
+
+/** Banner button that toggles the rendered diff; the diff code loads only on first click. */
+function diffButton(prUrl?: string): HTMLButtonElement {
+  const btn = document.createElement("button");
+  btn.id = "dev-diff-toggle";
+  btn.innerHTML = '<i class="fas fa-code-compare"></i> Diff vs main';
+  btn.style.cssText =
+    "background:#238636;color:#fff;border:0;border-radius:4px;padding:1px 8px;font:inherit;cursor:pointer;";
+  btn.onclick = async () => {
+    btn.disabled = true;
+    const { toggleRichDiff } = await import("./rich-diff");
+    const on = await toggleRichDiff(prUrl);
+    btn.innerHTML = on ? '<i class="fas fa-xmark"></i> Exit diff' : '<i class="fas fa-code-compare"></i> Diff vs main';
+    btn.disabled = false;
+  };
+  return btn;
+}
+
 export function isDevServer(): boolean {
   return window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
 }
@@ -95,6 +119,12 @@ export function initDevInfo(): void {
     }
 
     devInfoElement.innerHTML = infoContent;
+    if (isChangedPage(window.location.pathname, changed)) {
+      devInfoElement.appendChild(document.createTextNode(" | "));
+      devInfoElement.appendChild(
+        diffButton(pr ? `https://github.com/idvorkin/idvorkin.github.io/pull/${pr}` : undefined),
+      );
+    }
     document.body.appendChild(devInfoElement);
 
     // Adjust body padding to account for the banner
