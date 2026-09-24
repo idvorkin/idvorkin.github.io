@@ -1,35 +1,32 @@
-{% comment %} Time-allocation buckets — one stacked bar of a 16 hour waking day
-across the five buckets, with a weekday/weekend toggle, a "shrink tech" slider,
-and two ceilings drawn on the bar. Tech opens into Work, Side projects and
-Enabling environment. Self-contained, no parameters, no libraries, no network.
-Edit the DATA block at the top of the script; the bar, the rows, the ceiling
-markers and the numbers table are all generated from it, so there is exactly one
-place to edit. THE HOURS ARE ILLUSTRATIVE, NOT MEASURED. They are plausible
-round numbers for a 16 hour waking day, not a log of anyone's week. Used by:
-_d/time-allocation.md {% endcomment %}
+{% comment %} Time-allocation buckets — five bucket rows for a 16 hour waking
+day, a "hours out of tech" slider, and a No plan / Planned switch. Planned hours
+go to relationships, identity and health until relationships hits "their time"
+and health hits "enough"; anything past a ceiling runs into consumption. With no
+plan, most of the freed hours go straight to consumption. Self-contained, no
+parameters, no libraries, no network. Edit the DATA block at the top of the
+script; the rows, the ceiling ticks and the leak line are all generated from it.
+THE HOURS ARE ILLUSTRATIVE, NOT MEASURED: plausible round numbers for a 16 hour
+waking day, not a log of anyone's week. Used by: _d/time-allocation.md {%
+endcomment %}
 
 <style>
-  .bkt {
-    --bkt-paper: #ffffff;
-    --bkt-panel: #f2f4f6;
-    --bkt-ink: #1b1f24;
-    --bkt-ink-soft: #5a636e;
-    --bkt-ink-faint: #8a929c;
-    --bkt-rule: #d8dbe0;
-    --bkt-hatch: rgba(255, 255, 255, 0.3);
+  .tbk {
+    --tbk-paper: #ffffff;
+    --tbk-panel: #f2f4f6;
+    --tbk-ink: #1b1f24;
+    --tbk-ink-soft: #5a636e;
+    --tbk-ink-faint: #8a929c;
+    --tbk-rule: #d8dbe0;
+    --tbk-hatch: rgba(255, 255, 255, 0.35);
 
-    --bkt-tech: #2f6f8f;
-    --bkt-identity: #4a7c59;
-    --bkt-health: #6b5b95;
-    --bkt-relationships: #b8562f;
-    --bkt-consumption: #7c828a;
+    --tbk-tech: #2f6f8f;
+    --tbk-identity: #4a7c59;
+    --tbk-health: #6b5b95;
+    --tbk-relationships: #b8562f;
+    --tbk-consumption: #7c828a;
+    --tbk-leak: #b8562f;
 
-    /* Shades of the tech color, for when Tech is opened up. */
-    --bkt-part-work: #2f6f8f;
-    --bkt-part-side: #5590ab;
-    --bkt-part-env: #8fb8c8;
-
-    --bkt-mono:
+    --tbk-mono:
       ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
       "Liberation Mono", monospace;
 
@@ -37,19 +34,19 @@ _d/time-allocation.md {% endcomment %}
     max-width: 780px;
     margin: 2.5em auto;
     padding: 1.5rem 1.5rem 1.25rem;
-    background: var(--bkt-paper);
-    border: 1px solid var(--bkt-rule);
+    background: var(--tbk-paper);
+    border: 1px solid var(--tbk-rule);
     border-radius: 3px;
-    color: var(--bkt-ink);
+    color: var(--tbk-ink);
     font-variant-numeric: tabular-nums;
-    accent-color: var(--bkt-tech);
+    accent-color: var(--tbk-tech);
   }
 
-  .bkt * {
+  .tbk * {
     box-sizing: border-box;
   }
 
-  .bkt-title {
+  .tbk-title {
     margin: 0;
     font-family: Georgia, "Times New Roman", serif;
     font-size: 1.2rem;
@@ -58,36 +55,66 @@ _d/time-allocation.md {% endcomment %}
     text-wrap: balance;
   }
 
-  .bkt-sub {
+  .tbk-sub {
     margin: 0.35rem 0 0;
     font-size: 0.85rem;
     line-height: 1.45;
-    color: var(--bkt-ink-soft);
+    color: var(--tbk-ink-soft);
     max-width: 54ch;
   }
 
-  .bkt-controls {
+  .tbk-controls {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.6rem;
-    padding: 1rem 0 0;
+    align-items: center;
+    gap: 0.7rem 1.2rem;
+    padding: 1.1rem 0 0.2rem;
   }
 
-  .bkt-toggle {
+  .tbk-slider {
+    flex: 1 1 16rem;
     display: flex;
-    border: 1px solid var(--bkt-ink);
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem 0.8rem;
+  }
+
+  .tbk-slider label {
+    font-family: var(--tbk-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--tbk-ink-soft);
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  .tbk-slider output {
+    color: var(--tbk-ink);
+    font-weight: 700;
+  }
+
+  .tbk-slider input {
+    flex: 1 1 10rem;
+    min-width: 8rem;
+    margin: 0;
+  }
+
+  .tbk-toggle {
+    display: flex;
+    border: 1px solid var(--tbk-ink);
     border-radius: 2px;
     overflow: hidden;
   }
 
-  .bkt-toggle button {
+  .tbk-toggle button {
     appearance: none;
     margin: 0;
     padding: 0.45rem 0.7rem;
     border: 0;
-    background: var(--bkt-paper);
-    color: var(--bkt-ink-soft);
-    font-family: var(--bkt-mono);
+    background: var(--tbk-paper);
+    color: var(--tbk-ink-soft);
+    font-family: var(--tbk-mono);
     font-size: 0.68rem;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -98,464 +125,253 @@ _d/time-allocation.md {% endcomment %}
       color 160ms ease;
   }
 
-  .bkt-toggle button + button {
-    border-left: 1px solid var(--bkt-ink);
+  .tbk-toggle button + button {
+    border-left: 1px solid var(--tbk-ink);
   }
 
-  .bkt-toggle button:hover {
-    background: var(--bkt-panel);
+  .tbk-toggle button:hover {
+    background: var(--tbk-panel);
   }
 
-  .bkt-toggle button[aria-pressed="true"] {
-    background: var(--bkt-ink);
-    color: var(--bkt-paper);
+  .tbk-toggle button[aria-pressed="true"] {
+    background: var(--tbk-ink);
+    color: var(--tbk-paper);
   }
 
-  .bkt-toggle button:focus-visible {
-    outline: 2px solid var(--bkt-tech);
+  .tbk-toggle button:focus-visible,
+  .tbk-slider input:focus-visible {
+    outline: 2px solid var(--tbk-tech);
     outline-offset: 2px;
   }
 
-  .bkt-slider {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.5rem 0.9rem;
-    padding: 0.9rem 0 0.2rem;
-  }
-
-  .bkt-slider label {
-    font-family: var(--bkt-mono);
-    font-size: 0.72rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--bkt-ink-soft);
-    margin: 0;
-  }
-
-  .bkt-slider output {
-    color: var(--bkt-ink);
-    font-weight: 700;
-  }
-
-  .bkt-slider input {
-    flex: 1 1 14rem;
-    min-width: 10rem;
-    margin: 0;
-  }
-
-  .bkt-chart {
-    padding-top: 1.35rem;
-  }
-
-  .bkt-marks {
-    position: relative;
-    height: 1.05rem;
-  }
-
-  .bkt-mark {
-    position: absolute;
-    top: 0.72rem;
-    bottom: -0.35rem;
-    width: 0;
-    border-left: 2px dashed var(--bkt-ink-soft);
-    transition: left 380ms cubic-bezier(0.22, 0.68, 0.35, 1);
-  }
-
-  .bkt-mark span {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    font-family: var(--bkt-mono);
-    font-size: 0.6rem;
-    letter-spacing: 0.04em;
-    color: var(--bkt-ink-soft);
-  }
-
-  .bkt-bar {
-    position: relative;
-    display: flex;
-    height: 2.4rem;
-    background: var(--bkt-panel);
-    border-radius: 2px;
-    overflow: hidden;
-  }
-
-  .bkt-seg {
-    flex: 0 0 auto;
-    height: 100%;
-    width: 0;
-    transition: width 380ms cubic-bezier(0.22, 0.68, 0.35, 1);
-  }
-
-  .bkt-seg + .bkt-seg {
-    box-shadow: inset 1px 0 0 var(--bkt-paper);
-  }
-
-  .bkt-seg[data-id="tech"],
-  .bkt-seg[data-part] {
-    cursor: pointer;
-  }
-
-  .bkt-seg[data-id="consumption"] {
-    background-image: repeating-linear-gradient(
-      45deg,
-      var(--bkt-hatch) 0 3px,
-      transparent 3px 7px
-    );
-  }
-
-  .bkt-rail {
-    position: absolute;
-    inset: 0;
-    z-index: 2;
-    pointer-events: none;
-  }
-
-  .bkt-rail .bkt-mark {
-    top: 0;
-    bottom: 0;
-    border-left-color: var(--bkt-ink);
-    opacity: 0.75;
-  }
-
-  .bkt-axis {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 0.35rem;
-    font-family: var(--bkt-mono);
-    font-size: 0.65rem;
-    color: var(--bkt-ink-faint);
-  }
-
-  .bkt-rows {
+  .tbk-rows {
     list-style: none;
-    max-width: 34rem;
-    margin: 1.1rem 0 0;
+    margin: 1.2rem 0 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.75rem;
   }
 
-  .bkt-row,
-  .bkt-subrow {
+  .tbk-row {
     display: grid;
-    grid-template-columns: 0.8rem 1fr 3.1rem 3.4rem;
-    align-items: baseline;
-    gap: 0.5rem;
+    grid-template-columns: 7.2rem 1fr 3rem 3.2rem;
+    grid-template-areas:
+      "name bar hours delta"
+      "note note note note";
+    align-items: center;
+    gap: 0.15rem 0.6rem;
   }
 
-  .bkt-dot {
-    width: 0.75rem;
-    height: 0.75rem;
-    border-radius: 1px;
-    align-self: center;
-  }
-
-  .bkt-name {
+  .tbk-name {
+    grid-area: name;
     font-family: Georgia, "Times New Roman", serif;
     font-size: 0.95rem;
     font-weight: 700;
     line-height: 1.2;
   }
 
-  /* The Tech row's name is a real button so the open/close works from the
-     keyboard. The bar block is a second, mouse-only way in; the bar itself
-     is aria-hidden, so this button is the only control assistive tech sees. */
-  button.bkt-name {
-    appearance: none;
-    display: inline-flex;
-    align-items: baseline;
-    gap: 0.35rem;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: none;
-    color: inherit;
-    text-align: left;
-    cursor: pointer;
+  .tbk-track {
+    grid-area: bar;
+    position: relative;
+    height: 1.35rem;
+    background: var(--tbk-panel);
+    border-radius: 2px;
   }
 
-  button.bkt-name::after {
-    content: "▸";
-    font-family: var(--bkt-mono);
-    font-size: 0.7rem;
-    color: var(--bkt-ink-faint);
-    transition: transform 160ms ease;
+  .tbk-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    border-radius: 2px;
+    transition: width 380ms cubic-bezier(0.22, 0.68, 0.35, 1);
   }
 
-  button.bkt-name[aria-expanded="true"]::after {
-    content: "▾";
+  /* The part of the bar that arrived from tech, drawn on top of the base so
+     the eye can see what moved. */
+  .tbk-gain {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    background-image: repeating-linear-gradient(
+      -45deg,
+      var(--tbk-hatch) 0 3px,
+      transparent 3px 7px
+    );
+    transition:
+      left 380ms cubic-bezier(0.22, 0.68, 0.35, 1),
+      width 380ms cubic-bezier(0.22, 0.68, 0.35, 1);
   }
 
-  button.bkt-name:hover::after,
-  button.bkt-name:focus-visible::after {
-    color: var(--bkt-ink);
+  .tbk-row[data-id="consumption"] .tbk-fill {
+    background-image: repeating-linear-gradient(
+      45deg,
+      var(--tbk-hatch) 0 3px,
+      transparent 3px 7px
+    );
   }
 
-  button.bkt-name:focus-visible {
-    outline: 2px solid var(--bkt-tech);
-    outline-offset: 2px;
+  .tbk-cap {
+    position: absolute;
+    top: -0.3rem;
+    bottom: -0.3rem;
+    width: 0;
+    border-left: 2px dashed var(--tbk-ink-soft);
+    opacity: 0.6;
   }
 
-  /* Tech's parts hang under the Tech row, spanning its whole grid. */
-  .bkt-subrows {
-    grid-column: 1 / -1;
-    list-style: none;
-    margin: 0.45rem 0 0;
-    padding: 0 0 0 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-    border-left: 2px solid var(--bkt-rule);
+  .tbk-row.is-capped .tbk-cap {
+    border-left-color: var(--tbk-ink);
+    opacity: 1;
   }
 
-  .bkt-subrows[hidden] {
-    display: none;
-  }
-
-  .bkt-subrow .bkt-name {
-    font-size: 0.85rem;
-    font-weight: 400;
-  }
-
-  .bkt-subrow .bkt-dot {
-    width: 0.6rem;
-    height: 0.6rem;
-  }
-
-  .bkt-hours,
-  .bkt-delta {
-    font-family: var(--bkt-mono);
+  .tbk-hours,
+  .tbk-delta {
+    font-family: var(--tbk-mono);
     font-size: 0.75rem;
     text-align: right;
   }
 
-  .bkt-hours {
-    color: var(--bkt-ink);
+  .tbk-hours {
+    grid-area: hours;
+    color: var(--tbk-ink);
   }
 
-  .bkt-delta {
+  .tbk-delta {
+    grid-area: delta;
     font-size: 0.68rem;
-    color: var(--bkt-ink-faint);
+    color: var(--tbk-ink-faint);
   }
 
-  .bkt-note {
-    grid-column: 2 / -1;
-    font-size: 0.7rem;
-    line-height: 1.3;
-    color: var(--bkt-ink-faint);
-    margin-top: -0.2rem;
-  }
-
-  .bkt-row.is-capped .bkt-note {
-    color: var(--bkt-ink);
+  .tbk-row[data-id="consumption"].is-gaining .tbk-delta {
+    color: var(--tbk-leak);
     font-weight: 700;
   }
 
-  .bkt-foot {
+  .tbk-note {
+    grid-area: note;
+    font-size: 0.7rem;
+    line-height: 1.3;
+    color: var(--tbk-ink-faint);
+    min-height: 1em;
+  }
+
+  .tbk-row.is-capped .tbk-note {
+    color: var(--tbk-ink);
+    font-weight: 700;
+  }
+
+  .tbk-leak {
     margin: 1.2rem 0 0;
+    padding: 0.8rem 0.9rem;
+    border-left: 3px solid var(--tbk-rule);
+    background: var(--tbk-panel);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--tbk-ink);
+  }
+
+  .tbk-leak.is-leaking {
+    border-left-color: var(--tbk-leak);
+  }
+
+  .tbk-leak b {
+    color: var(--tbk-leak);
+  }
+
+  .tbk-foot {
+    margin: 1rem 0 0;
     padding-top: 0.85rem;
-    border-top: 1px solid var(--bkt-rule);
+    border-top: 1px solid var(--tbk-rule);
     font-size: 0.78rem;
     line-height: 1.5;
-    color: var(--bkt-ink-soft);
-  }
-
-  .bkt-foot b {
-    color: var(--bkt-ink);
-  }
-
-  .bkt-data {
-    margin-top: 0.9rem;
-    font-size: 0.78rem;
-    color: var(--bkt-ink-soft);
-  }
-
-  .bkt-data summary {
-    cursor: pointer;
-    font-family: var(--bkt-mono);
-    font-size: 0.68rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-  }
-
-  .bkt-data table {
-    width: 100%;
-    margin: 0.7rem 0 0;
-    border-collapse: collapse;
-    font-size: 0.78rem;
-  }
-
-  .bkt-data caption {
-    caption-side: top;
-    text-align: left;
-    padding-bottom: 0.4rem;
-    color: var(--bkt-ink-faint);
-    font-size: 0.72rem;
-    line-height: 1.4;
-  }
-
-  .bkt-data th,
-  .bkt-data td {
-    padding: 0.28rem 0.4rem;
-    border-bottom: 1px solid var(--bkt-rule);
-    text-align: right;
-    color: var(--bkt-ink);
-  }
-
-  .bkt-data th:first-child,
-  .bkt-data td:first-child {
-    text-align: left;
-  }
-
-  .bkt-data thead th {
-    font-weight: 400;
-    font-family: var(--bkt-mono);
-    font-size: 0.66rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-  }
-
-  /* _layouts/post.html runs $("table").addClass("table table-striped"), so
-     Bootstrap's striping lands on this table too. Beat it on specificity and
-     re-stripe with our own tokens. */
-  .bkt .bkt-data table > thead > tr > *,
-  .bkt .bkt-data table > tbody > tr > * {
-    color: var(--bkt-ink);
-    background-color: transparent;
-    box-shadow: none;
-  }
-
-  .bkt .bkt-data table > thead > tr > * {
-    color: var(--bkt-ink-soft);
-  }
-
-  .bkt .bkt-data table > tbody > tr:nth-of-type(odd) > * {
-    background-color: var(--bkt-panel);
-  }
-
-  .bkt .bkt-data tbody tr.bkt-data-sub th:first-child {
-    padding-left: 1.4rem;
-    font-weight: 400;
+    color: var(--tbk-ink-soft);
   }
 
   @media (max-width: 640px) {
-    .bkt {
+    .tbk {
       padding: 1.1rem 1rem 1rem;
     }
-    .bkt-toggle {
+    .tbk-toggle {
       width: 100%;
     }
-    .bkt-toggle button {
+    .tbk-toggle button {
       flex: 1;
       padding: 0.45rem 0.35rem;
       font-size: 0.62rem;
       letter-spacing: 0.03em;
     }
-    .bkt-slider input {
+    .tbk-slider input {
       flex: 1 1 100%;
     }
-    .bkt-row,
-    .bkt-subrow {
-      grid-template-columns: 0.8rem 1fr 2.8rem 3rem;
-      gap: 0.4rem;
+    .tbk-row {
+      grid-template-columns: 1fr 3rem 3.2rem;
+      grid-template-areas:
+        "name hours delta"
+        "bar bar bar"
+        "note note note";
+      gap: 0.2rem 0.5rem;
     }
-    .bkt-mark span {
-      font-size: 0.55rem;
+    .tbk-name {
+      font-size: 0.9rem;
     }
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .bkt-seg,
-    .bkt-mark {
+    .tbk-fill,
+    .tbk-gain,
+    .tbk-toggle button {
       transition: none;
     }
   }
 </style>
 
-<div class="bkt" id="bkt-buckets">
-  <h3 class="bkt-title">Where sixteen waking hours go</h3>
-  <p class="bkt-sub">
-    Illustrative hours, not measured. Take hours out of tech and watch which
-    bucket actually catches them.
+<div class="tbk" id="tbk-buckets">
+  <h3 class="tbk-title">Take hours out of tech</h3>
+  <p class="tbk-sub">
+    Sixteen waking hours, made up to show the shape. Move the slider, then
+    switch between an hour with no plan and an hour with one.
   </p>
 
-  <div class="bkt-controls">
-    <div class="bkt-toggle" role="group" aria-label="Which kind of day">
-      <button type="button" data-day="weekday" aria-pressed="true">
-        Weekday
-      </button>
-      <button type="button" data-day="weekend" aria-pressed="false">
-        Weekend
-      </button>
+  <div class="tbk-controls">
+    <div class="tbk-slider">
+      <label for="tbk-shrink"
+        >Hours out of tech
+        <output id="tbk-shrink-out" for="tbk-shrink">0h</output></label
+      >
+      <input id="tbk-shrink" type="range" min="0" max="4" step="1" value="0" />
     </div>
-    <div class="bkt-toggle" role="group" aria-label="Where the freed hours go">
-      <button type="button" data-flow="expect" aria-pressed="true">
-        What I expect
+    <div class="tbk-toggle" role="group" aria-label="Was the hour planned">
+      <button type="button" data-plan="none" aria-pressed="true">
+        No plan
       </button>
-      <button type="button" data-flow="usual" aria-pressed="false">
-        What usually happens
+      <button type="button" data-plan="planned" aria-pressed="false">
+        Planned
       </button>
-    </div>
-  </div>
-
-  <div class="bkt-slider">
-    <label for="bkt-shrink"
-      >Shrink tech by <output id="bkt-shrink-out" for="bkt-shrink">0h</output>
-    </label>
-    <input id="bkt-shrink" type="range" min="0" max="4" step="1" value="0" />
-  </div>
-
-  <div class="bkt-chart" aria-hidden="true">
-    <div class="bkt-marks"></div>
-    <div class="bkt-bar"><div class="bkt-rail"></div></div>
-    <div class="bkt-axis">
-      <span>0h</span><span>4h</span><span>8h</span><span>12h</span
-      ><span>16h</span>
     </div>
   </div>
 
-  <!-- Not aria-hidden: the Tech row holds a real focusable button, and a
-       focusable control inside an aria-hidden subtree is unreachable by name.
-       The bar above stays hidden; this list is its text equivalent. -->
-  <ul class="bkt-rows"></ul>
+  <ul class="tbk-rows"></ul>
 
-  <p class="bkt-foot">
-    A dashed line appears when a bucket hits its ceiling.
-    <b>Relationships</b> stops at whatever time the other people actually have.
-    <b>Health</b> stops at enough. Hours that run past a ceiling do not
-    disappear, they land in consumption, which is the hatched block on the
-    right. <b>Tech</b> opens into work, side projects and the enabling
-    environment. Numbers are made up to show the shape, not measured.
+  <p class="tbk-leak" aria-live="polite"></p>
+
+  <p class="tbk-foot">
+    The dashed tick is a ceiling. Relationships stops at whatever time the other
+    people actually have. Health stops at enough. Planned hours that run past a
+    ceiling do not disappear, they land in consumption. Hours with no plan
+    mostly go there directly. Numbers are made up, not measured.
   </p>
-
-  <details class="bkt-data">
-    <summary>The numbers</summary>
-    <table>
-      <caption></caption>
-      <thead>
-        <tr>
-          <th scope="col">Bucket</th>
-          <th scope="col">Hours</th>
-          <th scope="col">Change</th>
-          <th scope="col">Ceiling</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </details>
 
   <noscript>
-    <p class="bkt-foot">
-      This chart needs JavaScript. The point it makes: on the illustrative
-      weekday split, tech is more than half the waking day, and hours taken out
-      of tech mostly land in consumption rather than in relationships or
-      identity, because relationships stops at whatever time other people have
-      and health stops at enough.
+    <p class="tbk-foot">
+      This chart needs JavaScript. The point it makes: on a made-up weekday,
+      tech is more than half the waking day, and hours taken out of tech mostly
+      land in consumption. Without a plan they go there directly. With a plan
+      they still spill there once relationships hits the time other people have
+      and health hits enough.
     </p>
   </noscript>
 </div>
@@ -563,10 +379,10 @@ _d/time-allocation.md {% endcomment %}
 {% raw %}
 <script>
   (function () {
-    // ---- Edit here. The bar, the rows, the markers and the table all come
+    // ---- Edit here. The rows, the ceiling ticks and the leak line all come
     // from this block. Hours are ILLUSTRATIVE: plausible round numbers for a
     // 16 hour waking day, not a measurement of anyone's week. ----
-    var DAY_HOURS = 16;
+    var SCALE_HOURS = 10; // the bar is full at this many hours
     var MAX_SHRINK = 4;
 
     var BUCKETS = [
@@ -577,77 +393,41 @@ _d/time-allocation.md {% endcomment %}
       { id: "consumption", name: "Consumption" },
     ];
 
-    // What Tech opens into. Each day's parts must sum to that day's tech hours.
-    var TECH_PARTS = [
-      { id: "work", name: "Work" },
-      { id: "side", name: "Side projects" },
-      { id: "env", name: "Enabling environment" },
-    ];
-
-    var DAYS = {
-      weekday: {
-        label: "Weekday",
-        base: {
-          tech: 9,
-          identity: 0.5,
-          health: 1,
-          relationships: 2.5,
-          consumption: 3,
-        },
-        // Sums to base.tech.
-        parts: { work: 7, side: 1, env: 1 },
-        // Ceilings. relationships = the most time the other people are
-        // actually available for. health = the point where more hours stop
-        // buying more health.
-        caps: { relationships: 3.5, health: 1.5 },
-      },
-      weekend: {
-        label: "Weekend",
-        base: {
-          tech: 5,
-          identity: 2,
-          health: 1.5,
-          relationships: 5,
-          consumption: 2.5,
-        },
-        parts: { work: 1, side: 2.5, env: 1.5 },
-        caps: { relationships: 6.5, health: 2.5 },
-      },
+    var BASE = {
+      tech: 9,
+      identity: 0.5,
+      health: 1,
+      relationships: 2.5,
+      consumption: 3,
     };
+
+    // Ceilings. relationships = the most time the other people are actually
+    // available for. health = where more hours stop buying more health.
+    var CAPS = { relationships: 3.5, health: 1.5 };
+    var CAP_LABELS = { relationships: "their time", health: "enough" };
 
     // Share of each freed tech hour that each bucket gets. Anything that runs
     // into a ceiling rolls into consumption.
-    var FLOWS = {
-      expect: {
-        label: "What I expect",
-        caption: "what I expect",
-        share: { relationships: 0.4, identity: 0.4, health: 0.2 },
-      },
-      usual: {
-        label: "What usually happens",
-        caption: "what usually happens",
+    var PLANS = {
+      none: {
         share: { consumption: 0.7, identity: 0.2, relationships: 0.1 },
+      },
+      planned: {
+        share: { relationships: 0.4, identity: 0.4, health: 0.2 },
       },
     };
     // ---- End of editable block. ----
 
-    var root = document.getElementById("bkt-buckets");
+    var root = document.getElementById("tbk-buckets");
     if (!root) return;
 
-    var barEl = root.querySelector(".bkt-bar");
-    var railEl = root.querySelector(".bkt-rail");
-    var marksEl = root.querySelector(".bkt-marks");
-    var rowsEl = root.querySelector(".bkt-rows");
-    var slider = root.querySelector("#bkt-shrink");
-    var sliderOut = root.querySelector("#bkt-shrink-out");
-    var tbody = root.querySelector(".bkt-data tbody");
-    var caption = root.querySelector(".bkt-data caption");
+    var rowsEl = root.querySelector(".tbk-rows");
+    var slider = root.querySelector("#tbk-shrink");
+    var sliderOut = root.querySelector("#tbk-shrink-out");
+    var leakEl = root.querySelector(".tbk-leak");
 
-    var day = "weekday";
-    var flow = "expect";
+    var plan = "none";
     var shrink = 0;
-
-    var MARK_LABELS = { relationships: "their time", health: "enough" };
 
     function round1(v) {
       return Math.round(v * 10) / 10;
@@ -664,12 +444,17 @@ _d/time-allocation.md {% endcomment %}
       return (r > 0 ? "+" : "−") + fmt(Math.abs(r));
     }
 
+    function pct(h) {
+      return Math.max(0, Math.min(100, (h / SCALE_HOURS) * 100)) + "%";
+    }
+
     function compute() {
-      var d = DAYS[day];
-      var share = FLOWS[flow].share;
+      var share = PLANS[plan].share;
       var hours = {};
+      var gained = {};
       BUCKETS.forEach(function (b) {
-        hours[b.id] = d.base[b.id];
+        hours[b.id] = BASE[b.id];
+        gained[b.id] = 0;
       });
 
       var moved = Math.min(shrink, hours.tech);
@@ -679,239 +464,128 @@ _d/time-allocation.md {% endcomment %}
       BUCKETS.forEach(function (b) {
         var s = share[b.id] || 0;
         if (!s) return;
-        hours[b.id] = Math.round((hours[b.id] + moved * s) * 100) / 100;
-        var cap = d.caps[b.id];
-        if (cap != null && hours[b.id] > cap) {
-          spill += hours[b.id] - cap;
-          hours[b.id] = cap;
+        var add = moved * s;
+        var cap = CAPS[b.id];
+        if (cap != null && hours[b.id] + add > cap) {
+          spill += hours[b.id] + add - cap;
+          add = cap - hours[b.id];
         }
+        hours[b.id] += add;
+        gained[b.id] += add;
       });
       hours.consumption += spill;
+      gained.consumption += spill;
 
       BUCKETS.forEach(function (b) {
         hours[b.id] = round1(hours[b.id]);
+        gained[b.id] = round1(gained[b.id]);
       });
       return {
         hours: hours,
-        caps: d.caps,
+        gained: gained,
+        moved: moved,
         spill: round1(spill),
-        parts: splitTech(hours.tech, d),
       };
     }
 
-    // Shrinking tech drains its parts proportionally. Rounding each part on
-    // its own would drift off the total (7,1,1 scaled to 5h gives 3.9+0.6+0.6
-    // = 5.1), so apportion in whole tenths by largest remainder: the parts
-    // always add back up to the tech hours exactly.
-    function splitTech(total, d) {
-      var out = {};
-      var wanted = Math.round(total * 10);
-      if (!d.base.tech) {
-        TECH_PARTS.forEach(function (p) {
-          out[p.id] = 0;
-        });
-        return out;
-      }
-
-      var scale = total / d.base.tech;
-      var floors = 0;
-      var rest = TECH_PARTS.map(function (p) {
-        var exact = d.parts[p.id] * scale * 10;
-        var whole = Math.floor(exact);
-        floors += whole;
-        out[p.id] = whole;
-        return { id: p.id, frac: exact - whole };
-      });
-
-      rest.sort(function (a, b) {
-        return b.frac - a.frac;
-      });
-      for (var i = 0; i < wanted - floors; i++) {
-        out[rest[i % rest.length].id] += 1;
-      }
-
-      TECH_PARTS.forEach(function (p) {
-        out[p.id] = out[p.id] / 10;
-      });
-      return out;
-    }
-
-    // Build the bar segments and the rows once; render() only updates them.
-    var segs = {};
+    // Build the rows once; render() only updates them.
     var rows = {};
-    var marks = {};
-    var partSegs = {};
-    var partRows = {};
-    var partsList = null;
-    var techToggle = null;
-    var expanded = false;
-
     BUCKETS.forEach(function (b) {
-      var seg = document.createElement("div");
-      seg.className = "bkt-seg";
-      seg.dataset.id = b.id;
-      // backgroundColor, not the background shorthand: the shorthand would wipe
-      // the hatch background-image the stylesheet puts on consumption.
-      seg.style.backgroundColor = "var(--bkt-" + b.id + ")";
-      barEl.appendChild(seg);
-      segs[b.id] = seg;
-
       var li = document.createElement("li");
-      li.className = "bkt-row";
+      li.className = "tbk-row";
+      li.dataset.id = b.id;
 
-      var dot = document.createElement("span");
-      dot.className = "bkt-dot";
-      dot.style.backgroundColor = "var(--bkt-" + b.id + ")";
-
-      var name;
-      if (b.id === "tech") {
-        name = document.createElement("button");
-        name.type = "button";
-        name.id = "bkt-tech-toggle";
-        name.setAttribute("aria-expanded", "false");
-        name.setAttribute("aria-controls", "bkt-tech-parts");
-      } else {
-        name = document.createElement("span");
-      }
-      name.className = "bkt-name";
+      var name = document.createElement("span");
+      name.className = "tbk-name";
       name.textContent = b.name;
 
+      var track = document.createElement("span");
+      track.className = "tbk-track";
+      track.setAttribute("aria-hidden", "true");
+
+      var fill = document.createElement("span");
+      fill.className = "tbk-fill";
+      fill.style.backgroundColor = "var(--tbk-" + b.id + ")";
+      track.appendChild(fill);
+
+      var gain = document.createElement("span");
+      gain.className = "tbk-gain";
+      track.appendChild(gain);
+
+      var cap = null;
+      if (CAPS[b.id] != null) {
+        cap = document.createElement("span");
+        cap.className = "tbk-cap";
+        cap.style.left = pct(CAPS[b.id]);
+        track.appendChild(cap);
+      }
+
       var hrs = document.createElement("span");
-      hrs.className = "bkt-hours";
+      hrs.className = "tbk-hours";
 
       var delta = document.createElement("span");
-      delta.className = "bkt-delta";
+      delta.className = "tbk-delta";
 
-      li.appendChild(dot);
+      var note = document.createElement("span");
+      note.className = "tbk-note";
+
       li.appendChild(name);
+      li.appendChild(track);
       li.appendChild(hrs);
       li.appendChild(delta);
-
-      var note = null;
-      if (MARK_LABELS[b.id]) {
-        note = document.createElement("span");
-        note.className = "bkt-note";
-        li.appendChild(note);
-      }
-
+      li.appendChild(note);
       rowsEl.appendChild(li);
-      rows[b.id] = { li: li, hrs: hrs, delta: delta, note: note };
 
-      if (b.id === "tech") {
-        techToggle = name;
-        partsList = document.createElement("ul");
-        partsList.className = "bkt-subrows";
-        partsList.id = "bkt-tech-parts";
-        partsList.hidden = true;
-        li.appendChild(partsList);
-
-        TECH_PARTS.forEach(function (p) {
-          // The part blocks sit right after Tech in the bar, so the stack
-          // order stays Tech, Identity, Health, Relationships, Consumption.
-          var pseg = document.createElement("div");
-          pseg.className = "bkt-seg";
-          pseg.dataset.part = p.id;
-          pseg.style.backgroundColor = "var(--bkt-part-" + p.id + ")";
-          barEl.appendChild(pseg);
-          partSegs[p.id] = pseg;
-
-          var pli = document.createElement("li");
-          pli.className = "bkt-subrow";
-
-          var pdot = document.createElement("span");
-          pdot.className = "bkt-dot";
-          pdot.style.backgroundColor = "var(--bkt-part-" + p.id + ")";
-
-          var pname = document.createElement("span");
-          pname.className = "bkt-name";
-          pname.textContent = p.name;
-
-          var phrs = document.createElement("span");
-          phrs.className = "bkt-hours";
-
-          var pdelta = document.createElement("span");
-          pdelta.className = "bkt-delta";
-
-          pli.appendChild(pdot);
-          pli.appendChild(pname);
-          pli.appendChild(phrs);
-          pli.appendChild(pdelta);
-          partsList.appendChild(pli);
-          partRows[p.id] = { hrs: phrs, delta: pdelta };
-        });
-      }
-    });
-
-    Object.keys(MARK_LABELS).forEach(function (id) {
-      var rail = document.createElement("div");
-      rail.className = "bkt-mark";
-      railEl.appendChild(rail);
-
-      var flag = document.createElement("div");
-      flag.className = "bkt-mark";
-      var text = document.createElement("span");
-      text.textContent = MARK_LABELS[id];
-      flag.appendChild(text);
-      marksEl.appendChild(flag);
-
-      marks[id] = { rail: rail, flag: flag };
+      rows[b.id] = {
+        li: li,
+        fill: fill,
+        gain: gain,
+        hrs: hrs,
+        delta: delta,
+        note: note,
+      };
     });
 
     function render() {
       var state = compute();
       var hours = state.hours;
-      var base = DAYS[day].base;
-      var caps = state.caps;
-      var offset = 0;
-      var markPos = {};
+      var gained = state.gained;
 
       BUCKETS.forEach(function (b) {
-        var h = hours[b.id];
-        // Opened up, Tech is drawn as its three parts instead of one block.
-        segs[b.id].style.width =
-          (b.id === "tech" && expanded ? 0 : (h / DAY_HOURS) * 100) + "%";
-        if (caps[b.id] != null) {
-          markPos[b.id] = ((offset + caps[b.id]) / DAY_HOURS) * 100;
-        }
-        offset += h;
-
         var r = rows[b.id];
-        r.hrs.textContent = fmt(h);
-        r.delta.textContent = signed(h - base[b.id]);
+        var h = hours[b.id];
+        var g = gained[b.id];
 
-        var cap = caps[b.id];
+        r.fill.style.width = pct(h);
+        r.gain.style.left = pct(h - g);
+        r.gain.style.width = pct(g);
+        r.hrs.textContent = fmt(h);
+        r.delta.textContent = signed(h - BASE[b.id]);
+
+        var cap = CAPS[b.id];
         var atCap = cap != null && h >= cap - 0.001;
         r.li.classList.toggle("is-capped", atCap);
-        if (marks[b.id]) marks[b.id].on = atCap;
-        if (!r.note || cap == null) {
-          // no ceiling on this bucket
+        r.li.classList.toggle("is-gaining", g > 0);
+
+        if (cap == null) {
+          r.note.textContent = "";
         } else if (b.id === "relationships") {
           r.note.textContent = atCap
-            ? "at the ceiling, " + fmt(cap) + ": nobody else is free"
+            ? "at " +
+              CAP_LABELS[b.id] +
+              ", " +
+              fmt(cap) +
+              ": nobody else is free"
             : "ceiling " + fmt(cap) + ", set by other people";
         } else {
           r.note.textContent = atCap
-            ? "at enough, " + fmt(cap) + ": more hours stop paying"
+            ? "at " +
+              CAP_LABELS[b.id] +
+              ", " +
+              fmt(cap) +
+              ": more hours stop paying"
             : "enough at " + fmt(cap);
         }
-      });
-
-      TECH_PARTS.forEach(function (p) {
-        var ph = state.parts[p.id];
-        partSegs[p.id].style.width =
-          (expanded ? (ph / DAY_HOURS) * 100 : 0) + "%";
-        partRows[p.id].hrs.textContent = fmt(ph);
-        partRows[p.id].delta.textContent = signed(ph - DAYS[day].parts[p.id]);
-      });
-
-      Object.keys(marks).forEach(function (id) {
-        marks[id].rail.style.left = markPos[id] + "%";
-        marks[id].flag.style.left = markPos[id] + "%";
-        // Off the ceiling the line would float inside the next bucket's block.
-        marks[id].rail.style.opacity = marks[id].flag.style.opacity = marks[id]
-          .on
-          ? 1
-          : 0;
       });
 
       sliderOut.textContent = fmt(shrink);
@@ -920,88 +594,50 @@ _d/time-allocation.md {% endcomment %}
         shrink === 1 ? "1 hour" : shrink + " hours"
       );
 
-      caption.textContent =
-        DAYS[day].label +
-        ", " +
-        FLOWS[flow].caption +
-        ", tech shrunk by " +
-        fmt(shrink) +
-        ". Illustrative hours out of " +
-        DAY_HOURS +
-        " waking, not measured." +
-        (expanded ? " Tech is opened into its three parts." : "") +
-        (state.spill > 0
-          ? " " +
-            fmt(state.spill) +
-            " ran past a ceiling and landed in consumption."
-          : "");
-
-      tbody.innerHTML = "";
-      function addRow(name, h, delta, cap, isSub) {
-        var tr = document.createElement("tr");
-        if (isSub) tr.className = "bkt-data-sub";
-        var th = document.createElement("th");
-        th.scope = "row";
-        th.textContent = name;
-        tr.appendChild(th);
-
-        [fmt(h), signed(delta) || "—", cap != null ? fmt(cap) : "—"].forEach(
-          function (v) {
-            var td = document.createElement("td");
-            td.textContent = v;
-            tr.appendChild(td);
-          }
-        );
-        tbody.appendChild(tr);
+      var toPhone = gained.consumption;
+      var text;
+      if (state.moved === 0) {
+        text = "Nothing moved yet. Slide to take hours out of tech.";
+      } else if (plan === "none") {
+        text =
+          fmt(state.moved) +
+          " out of tech with no plan: " +
+          fmt(toPhone) +
+          " went to the phone before anything got decided.";
+      } else if (state.spill > 0) {
+        text =
+          fmt(state.moved) +
+          " out of tech with a plan: " +
+          fmt(state.spill) +
+          " ran past a ceiling and went to the phone anyway.";
+      } else {
+        text =
+          fmt(state.moved) +
+          " out of tech with a plan, and it all landed where it was sent.";
       }
-
-      BUCKETS.forEach(function (b) {
-        addRow(
-          b.name,
-          hours[b.id],
-          hours[b.id] - base[b.id],
-          caps[b.id],
-          false
-        );
-        if (b.id === "tech" && expanded) {
-          TECH_PARTS.forEach(function (p) {
-            addRow(
-              p.name,
-              state.parts[p.id],
-              state.parts[p.id] - DAYS[day].parts[p.id],
-              null,
-              true
-            );
-          });
+      leakEl.innerHTML = "";
+      var strong = toPhone > 0;
+      leakEl.classList.toggle("is-leaking", strong);
+      if (strong) {
+        var m = text.match(/^(.*?)(\d+(?:\.\d)?h)( went| ran)(.*)$/);
+        if (m) {
+          leakEl.appendChild(document.createTextNode(m[1]));
+          var b = document.createElement("b");
+          b.textContent = m[2];
+          leakEl.appendChild(b);
+          leakEl.appendChild(document.createTextNode(m[3] + m[4]));
+          return;
         }
-      });
+      }
+      leakEl.textContent = text;
     }
 
-    function setExpanded(next) {
-      if (expanded === next) return;
-      expanded = next;
-      techToggle.setAttribute("aria-expanded", String(expanded));
-      partsList.hidden = !expanded;
-      render();
-    }
-
-    root.querySelectorAll("[data-day]").forEach(function (btn) {
+    root.querySelectorAll("[data-plan]").forEach(function (btn) {
       btn.addEventListener("click", function () {
-        if (day === btn.dataset.day) return;
-        day = btn.dataset.day;
-        root.querySelectorAll("[data-day]").forEach(function (b) {
-          b.setAttribute("aria-pressed", String(b.dataset.day === day));
-        });
-        render();
-      });
-    });
-
-    root.querySelectorAll("[data-flow]").forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        if (flow === btn.dataset.flow) return;
-        flow = btn.dataset.flow;
-        root.querySelectorAll("[data-flow]").forEach(function (b) {
-          b.setAttribute("aria-pressed", String(b.dataset.flow === flow));
+        if (plan === btn.dataset.plan) return;
+        plan = btn.dataset.plan;
+        root.querySelectorAll("[data-plan]").forEach(function (b) {
+          b.setAttribute("aria-pressed", String(b.dataset.plan === plan));
         });
         render();
       });
@@ -1011,22 +647,6 @@ _d/time-allocation.md {% endcomment %}
     slider.addEventListener("input", function () {
       shrink = Number(slider.value);
       render();
-    });
-
-    // The button is the keyboard path. The blocks in the bar are a second,
-    // mouse-only way in, which is why the bar can stay aria-hidden.
-    techToggle.addEventListener("click", function () {
-      setExpanded(!expanded);
-    });
-
-    segs.tech.addEventListener("click", function () {
-      setExpanded(true);
-    });
-
-    TECH_PARTS.forEach(function (p) {
-      partSegs[p.id].addEventListener("click", function () {
-        setExpanded(false);
-      });
     });
 
     render();
