@@ -150,12 +150,15 @@ const MAX_WORD_CELLS = 4_000_000;
 export function markWordDiff(old: Element, fresh: Element): boolean {
   const a = textTokens(old);
   const b = textTokens(fresh);
-  if (a.length * b.length > MAX_WORD_CELLS) return false;
+  // Align on words only: matching the spaces between words would interleave a reworded phrase word by word.
+  const aw = a.flatMap((t, k) => (isWs(t.text) ? [] : [k]));
+  const bw = b.flatMap((t, k) => (isWs(t.text) ? [] : [k]));
+  if (aw.length * bw.length > MAX_WORD_CELLS) return false;
   const pairs = lcsPairs(
-    a.map((t) => t.text),
-    b.map((t) => t.text),
+    aw.map((k) => a[k].text),
+    bw.map((k) => b[k].text),
   );
-  pairs.push([a.length, b.length]);
+  pairs.push([aw.length, bw.length]);
 
   // Per text node: inserted [start,end) ranges and deleted text anchored at an offset.
   const edits = new Map<Text, { ins: [number, number][]; del: [number, string][] }>();
@@ -168,23 +171,24 @@ export function markWordDiff(old: Element, fresh: Element): boolean {
   let i = 0;
   let j = 0;
   for (const [pi, pj] of pairs) {
-    const gone = a
-      .slice(i, pi)
-      .map((t) => t.text)
-      .join("");
-    if (!isWs(gone)) {
-      const anchor = b[j] ?? b[b.length - 1];
-      if (!anchor) fresh.appendChild(Object.assign(doc.createElement("del"), { textContent: gone }));
-      else at(anchor.node).del.push([b[j] ? anchor.start : anchor.end, gone]);
+    const added = j < pj ? b.slice(bw[j], bw[pj - 1] + 1) : [];
+    if (i < pi) {
+      const gone = a
+        .slice(aw[i], aw[pi - 1] + 1)
+        .map((t) => t.text)
+        .join("");
+      const next = b[bw[j]];
+      const prev = b[bw[bw.length - 1]];
+      // Deleted words sit just before whatever replaced them, or before the next kept word.
+      if (next) at(next.node).del.push([next.start, added.length ? `${gone} ` : gone]);
+      else if (prev) at(prev.node).del.push([prev.end, ` ${gone}`]);
+      else fresh.appendChild(Object.assign(doc.createElement("del"), { textContent: gone }));
     }
-    const added = b.slice(j, pj);
-    if (!isWs(added.map((t) => t.text).join(""))) {
-      for (const t of added) {
-        const r = at(t.node).ins;
-        const last = r[r.length - 1];
-        if (last && last[1] === t.start) last[1] = t.end;
-        else r.push([t.start, t.end]);
-      }
+    for (const t of added) {
+      const r = at(t.node).ins;
+      const last = r[r.length - 1];
+      if (last && last[1] === t.start) last[1] = t.end;
+      else r.push([t.start, t.end]);
     }
     i = pi + 1;
     j = pj + 1;
