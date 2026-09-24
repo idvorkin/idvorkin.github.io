@@ -228,6 +228,8 @@ const STYLE = `
 #rich-diff-view .rd-removed{border-color:#cf222e;background:#ffebe9;text-decoration:line-through;text-decoration-color:#cf222e80;opacity:.85}
 #rich-diff-view .rd-changed{border-color:#bf8700}
 #rich-diff-view .rd-note{display:block;font:600 11px/1.6 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.04em;color:#57606a;text-decoration:none}
+#rich-diff-view .rd-li-added{background:#dafbe1}
+#rich-diff-view .rd-li-removed{background:#ffebe9;text-decoration:line-through;text-decoration-color:#cf222e80}
 #rich-diff-view ins{background:#abf2bc;text-decoration:none;border-radius:2px}
 #rich-diff-view del{background:#ffcecb;color:#82071e;text-decoration:line-through;border-radius:2px}
 `;
@@ -243,6 +245,18 @@ function wrap(doc: Document, cls: string, inner: Element, note?: string): HTMLEl
   }
   box.appendChild(doc.importNode(inner, true));
   return box;
+}
+
+/** A changed list, diffed item by item so a dropped bullet stays its own struck-out bullet. */
+function diffList(doc: Document, old: Element, now: Element): Element {
+  const list = doc.importNode(now, false) as Element;
+  for (const op of diffBlocks(Array.from(old.children), Array.from(now.children))) {
+    const li = doc.importNode(op.block, true) as Element;
+    if (op.kind === "changed" && !isOpaque(op.old) && !isOpaque(op.block)) markWordDiff(op.old, li);
+    if (op.kind !== "same") li.classList.add(`rd-li-${op.kind}`);
+    list.appendChild(li);
+  }
+  return list;
 }
 
 /** Render diff ops into a container; returns the container and the change counts. */
@@ -263,6 +277,8 @@ export function renderDiff(doc: Document, ops: BlockOp[]) {
     }
     if (op.kind === "added") add("added", wrap(doc, "rd-added", op.block));
     else if (op.kind === "removed") add("removed", wrap(doc, "rd-removed", op.block));
+    else if (/^(UL|OL)$/.test(op.block.tagName))
+      add("changed", wrap(doc, "rd-changed", diffList(doc, op.old, op.block)));
     else {
       const fresh = doc.importNode(op.block, true);
       const opaque = isOpaque(op.old) || isOpaque(op.block);

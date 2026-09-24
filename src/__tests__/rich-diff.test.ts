@@ -139,3 +139,16 @@ describe("attachChangeNav", () => {
     key("n"); // must not throw or re-render
   });
 });
+
+describe("renderDiff lists", () => {
+  it("diffs a changed list item by item", () => {
+    const old = extractBlocks(
+      body("<ol><li>fits me</li><li>how I learn what it is for</li><li>best of each</li></ol>"),
+    );
+    const now = extractBlocks(body("<ol><li>fits me well</li><li>best of each</li></ol>"));
+    const { view } = renderDiff(document, diffBlocks(old, now));
+    const items = Array.from(view.querySelectorAll("li"));
+    expect(items.map((li) => li.className)).toEqual(["rd-li-changed", "rd-li-removed", ""]);
+    expect(items[0].querySelector("ins")?.textContent).toBe("well");
+  });
+});
