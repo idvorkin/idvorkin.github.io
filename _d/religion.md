@@ -412,3 +412,5 @@ Translated by Sister Mary Sarah Muldowney, R.S.M., in _The Fathers of the Church
 > He is truly a Christian who is one not in name only but also in deed; who imitates and follows Christ in all respects; who is holy, innocent, undefiled, chaste; in whose heart evil finds no room, since this heart is dominated by piety and by a goodness which, knowing only how to bring help to all, knows not how to harm or injure anybody. He is a Christian who, according to the example of Christ, is accustomed to do good to those who oppose him and to pray for his persecutors and his enemies rather than to hate them. Whoever is quick to hurt or harm another person lies when he calls himself a Christian; he is truly a Christian who can say in all honesty: 'I have harmed nobody; I have lived in justice with all men.'
 
 </details>
+
+{% include spiritual-health-cluster.html %}
