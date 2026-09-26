@@ -7,6 +7,8 @@ imagefeatureblob: blog/raccoon-religion.webp
 
 Someone important to me has been reading a daily devotional. Even though I'm not religious, I'm studying with them to be able to have conversations about the insights - whether in a secular or religious context. This is my attempt to bridge two worlds: honoring the spiritual wisdom they're finding while translating it into language that works for my engineer brain.
 
+{% include ai-slop.html percent="70" %}
+
 {% include amazon.html asin="1414316615" %}
 
 {% include blob_image_float_right.html src="blog/raccoon-religion.webp" %}
@@ -14,19 +16,11 @@ Someone important to me has been reading a daily devotional. Even though I'm not
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [What the experiment taught me](#what-the-experiment-taught-me)
 - [What Is a Daily Devotional?](#what-is-a-daily-devotional)
 - [Why I'm Doing This](#why-im-doing-this)
 - [The Translation Challenge](#the-translation-challenge)
 - [Daily Insights](#daily-insights)
-  - [January](#january)
-  - [February](#february)
-  - [March](#march)
-  - [April](#april)
-  - [May](#may)
-  - [June](#june)
-  - [July](#july)
-  - [August](#august)
-  - [September](#september)
   - [October](#october)
     - [October 20th - Seeing His Face](#october-20th---seeing-his-face)
     - [October 21st - The Pleasure of God](#october-21st---the-pleasure-of-god)
@@ -47,10 +41,29 @@ Someone important to me has been reading a daily devotional. Even though I'm not
     - [November 13th - A Prescription for Pain](#november-13th---a-prescription-for-pain)
     - [November 16th - Asa's Folly](#november-16th---asas-folly)
     - [November 19th - Anatomy of a Surrender: Idolatry](#november-19th---anatomy-of-a-surrender-idolatry)
-  - [December](#december)
+    - [November 20th - The Functional Utility of Bad Habits](#november-20th---the-functional-utility-of-bad-habits)
+    - [November 21st - The Pain of Letting Go](#november-21st---the-pain-of-letting-go)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+## What the experiment taught me
+
+I kept this log for a month, twenty entries from October 20 to November 21, 2025, and then stopped. The point of reading twice was to catch the days the translation lost something, so here they are. I sort them by the three things I think [spiritual health](/spiritual-health) is made of: **Direction** (what am I for), **Scale** (how big are my problems, really) and **Acceptance** (what's mine to control).
+
+**Clean translations**, where the secular version carried the whole idea:
+
+- **Direction.** Praying for God's wisdom became doing the essentialist soul-searching, and redoing it because the answer moves ([Oct 22](#october-22nd---praying-in-gods-mind), [Oct 26](#october-26th---wisdom-through-prayer), [Oct 27](#october-27th---wisdom-through-meditation)). Idols became revealed preferences: what I do is what I value ([Nov 19](#november-19th---anatomy-of-a-surrender-idolatry)). Asa's folly became not making my values the backup plan ([Nov 16](#november-16th---asas-folly)). Memorizing scripture became why I write affirmations: repetition births ritual ([Oct 28](#october-28th---wisdom-through-recall)).
+- **Acceptance.** "Trust God's plan" became focus on influence, not control. Letting God obscure the clouds became Calm Like Water: be present, this too shall pass, work the problem ([Nov 13](#november-13th---a-prescription-for-pain)).
+
+**Lossy translations**, where I kept the advice and dropped the thing that made it work:
+
+- **Someone doing the accepting** (Acceptance). "If God accepts me as I am, I'd better do the same" ([Oct 20](#october-20th---seeing-his-face)) and unconditional love ([Nov 2](#november-2nd---identity-as-gift)) translate to "you're inherently worthy." True, and much weaker: in the religious version someone else holds the acceptance on the days I can't.
+- **Something big to be small next to** (Scale). Getting small ([Oct 23](#october-23rd---perspective)) is easy when something vast is in the room. The secular version is a thought I have to generate myself.
+- **Something to fill the hole** (Direction). Letting go of a deep habit leaves a hole ([Nov 21](#november-21st---the-pain-of-letting-go)). The religious version has something to put there. My translation names the hole and stops at "it will hurt."
+- **The weekly gathering** (all three). Fellowship translates cleanly on paper: join a tribe for wisdom, inspiration and courage ([Oct 31](#october-31st---wisdom-through-fellowship)). I still don't do it. Church hands you the tribe on a schedule; the translation hands you homework. The research says this is the expensive loss. Among 74,534 nurses, attending services more than once a week went with 33% lower mortality than never attending, and social support explained 23% of that ([Li et al. 2016](https://pubmed.ncbi.nlm.nih.gov/27183175/)). In England, people who were spiritual but not religious had more anxiety and drug dependence than people who were neither ([King et al. 2013](https://pubmed.ncbi.nlm.nih.gov/23174516/)). The benefit rides on the community and the practice, not the belief.
+
+The clean list is stuff I already practice. The lossy list is where the secular version needs a replacement I haven't built, and the biggest one is the tribe.
 
 <!--
 **Instructions for Adding Daily Entries**
@@ -72,7 +85,9 @@ When adding a new daily devotional reflection, follow this format, if missing st
 
 4. **Important distinctions** - When relevant, add a paragraph starting with "**Important distinction:**" to clarify what this isn't about (contrarianism, echo chambers, etc.)
 
-5. **Related content** - Link to relevant blog posts using `{%include summarize-page.html src="/post-name" %}` . Make sure links are present by running jq on backlinks
+5. **Related content** - Link ONE relevant blog post per entry using `{%include summarize-page.html src="/post-name" %}` . Make sure links are present by running jq on backlinks
+
+6. **Close-out summary** - The log stopped Nov 21, 2025. If entries resume, add a month heading (with year) and update "What the experiment taught me" when a translation is clean or lossy.
 
 See [November 1st](#november-1st---jesus-in-this-world) for a complete example of this format.
 
@@ -98,11 +113,7 @@ I'm not doing this to become religious. I'm doing it because:
 
 **Connection** - This person matters to me. When they talk about what they're learning, I want to actually understand, not just nod politely. This is Habit 5 in action: [Seek first to understand](/first-understand), then to be understood.
 
-{%include summarize-page.html src="/first-understand" %}
-
 **Curiosity** - If something is helping someone I respect, I want to know what's in there. What wisdom am I missing by dismissing it outright? [Isn't that curious](/curious)?
-
-{%include summarize-page.html src="/curious" %}
 
 **Translation practice** - Can I take religious wisdom and find the secular equivalent? Or does something get lost in translation that I should pay attention to?
 
@@ -114,34 +125,11 @@ Every morning I read the devotional twice:
 
 **Second pass:** The translation game. When it says "God," what would I say instead? When it talks about prayer, what's my equivalent practice?
 
-Some days the translation is clean:
-
-- "Trust God's plan" → "Focus on influence, not control"
-- "Pray without ceasing" → "Practice continuous gratitude"
-
-Other days the translation feels lossy, like I'm missing something essential by removing the divine element. Those are the days I sit with longer.
+Some days the translation was clean ("Pray without ceasing" → "Practice continuous gratitude"). Other days it felt lossy, like I was missing something essential by removing the divine element. Those were the days I sat with longer, and they're the list [at the top](#what-the-experiment-taught-me).
 
 ## Daily Insights
 
-_This section will grow as I continue the practice. Each entry captures both the religious wisdom and my secular translation attempts._
-
-### January
-
-### February
-
-### March
-
-### April
-
-### May
-
-### June
-
-### July
-
-### August
-
-### September
+_Twenty entries, October 20 to November 21, 2025. Each one pairs a line from the devotional with my secular translation._
 
 ### October
 
@@ -154,7 +142,6 @@ My favorite line in the passage: **"If God accepts me as I am, I'd better do the
 **Important distinction:** Acceptance isn't surrender. It's not "this is who I am and I'll never change." True acceptance means "I accept where I am right now AND I have hope for improvement." (Without the hope part, acceptance becomes resignation - that's bad)
 
 {%include summarize-page.html src="/compassion" %}
-{%include summarize-page.html src="/get-to-yes-with-yourself" %}
 
 #### October 21st - The Pleasure of God
 
@@ -193,11 +180,10 @@ So you can't just figure out your essentialist position once and be done. You ha
 **Important distinction:** This isn't about being wishy-washy or lacking conviction. It's about recognizing that wisdom is context-dependent. The right answer for yesterday might not be the right answer for today. Regular reflection isn't indecision - it's staying calibrated.
 
 {%include summarize-page.html src="/essentialism" %}
-{%include summarize-page.html src="/affirmations" %}
 
 #### October 23rd - Perspective
 
-To me this is really about: **Transcendence - seeing beyond yourself, knowing you're not the center of the universe.**
+To me this is really about: **Scale - seeing beyond yourself, knowing you're not the center of the universe.**
 
 My favorite line from the passage: **"Has your perspective become distorted? Do your problems seem huge?"**
 
@@ -207,12 +193,11 @@ When you lose perspective, everything becomes catastrophic. A minor setback feel
 
 But perspective is about getting small - recognizing your problems are a tiny speck in the vastness of time and space. This connects to my "Calm Like Water" affirmation: "Be present, this too shall pass, work the problem." The "this too shall pass" part is both temporal (it will pass) and cosmic (you're not that important in the grand scheme).
 
-It's also about coherence - distinguishing your circle of influence from your circle of concern. Perspective lets you focus energy on what you can actually affect, instead of burning out trying to control everything beyond your reach.
+It's also about acceptance - distinguishing your circle of influence from your circle of concern. Perspective lets you focus energy on what you can actually affect, instead of burning out trying to control everything beyond your reach.
 
 **Important distinction:** Perspective isn't about minimizing real problems or toxic positivity. It's about calibrating the size of your response to the actual size of the problem. A real crisis deserves a crisis response. But not every disappointment is a crisis. Perspective helps you tell the difference.
 
 {%include summarize-page.html src="/spiritual-health" %}
-{%include summarize-page.html src="/affirmations" %}
 
 #### October 24th - Pure Joy
 
@@ -284,7 +269,6 @@ It's also similar to my practice with [Search Inside Yourself](/siy) - the forma
 **Important distinction:** This isn't about beating yourself up for past failures or overthinking until you're paralyzed. It's about engaged examination that leads to integration. You're not just memorizing the words - you're letting them reshape how you see and respond to the world. The "chewing" metaphor is perfect: it's repetitive, thorough work that breaks down what you've received so you can actually absorb it.
 
 {%include summarize-page.html src="/siy" %}
-{%include summarize-page.html src="/affirmations" %}
 
 #### October 28th - Wisdom through Recall
 
@@ -312,7 +296,6 @@ This also connects to how I think about journaling and the [AI journal practice]
 **Important distinction:** This isn't about mindless repetition or rigid dogma. The power comes from repeatedly engaging with wisdom that actually resonates with you - that's why affirmations need to "speak to you" to work. You can't force something to become sacred through mechanical repetition alone. The ritual needs authentic meaning behind it, or it's just empty repetition. But once something truly speaks to you, consistent ritual transforms it from knowledge into power.
 
 {%include summarize-page.html src="/affirmations" %}
-{%include summarize-page.html src="/ai-journal" %}
 
 #### October 31st - Wisdom through Fellowship
 
@@ -351,7 +334,6 @@ The "fellowship" isn't about blind conformity or groupthink - it's about the int
 
 **Important distinction:** This isn't about finding an echo chamber or seeking validation. Real fellowship challenges you - it surfaces your blind spots, questions your assumptions, and offers perspectives you wouldn't generate alone. The discomfort of having your thinking challenged is a feature, not a bug. You don't need a perfect tribe or a tribe that agrees with you on everything. You need a tribe that's wrestling with similar questions and willing to think hard together. The "flawed people in process of transformation" part is crucial - everyone is figuring it out, and that shared vulnerability is what makes the wisdom exchange possible.
 
-{%include summarize-page.html src="/emotional-health" %}
 {%include summarize-page.html src="/tribe" %}
 
 ### November
@@ -379,8 +361,6 @@ This connects to the essentialist position from [October 22nd](#october-22nd---p
 The work is worth it. Being a satisfied misfit beats being a miserable conformist.
 
 **Important distinction:** This isn't about being contrarian for its own sake or rejecting everything conventional just to be different. It's about knowing yourself well enough to recognize when fitting in would require betraying who you are. Some people's true selves happen to align well with conventional paths - that's fine. But if your true self doesn't fit the mold, forcing yourself into it creates a different kind of suffering. The goal is authenticity, not rebellion. The misfit status is a side effect, not the objective.
-
-{%include summarize-page.html src="/essentialism" %}
 
 #### November 2nd - Identity as Gift
 
@@ -419,7 +399,6 @@ The genius of the "identity theft" framing is that it acknowledges the gap - you
 **Important distinction:** Unconditional love (you're worthy as you are) and aspirational identity (you can become more) aren't contradictory - they're complementary. You need both. Without unconditional love, the pursuit of growth becomes toxic - you're trying to earn worthiness you already have. Without aspirational identity, acceptance becomes stagnation - you stop growing because you've confused "I'm worthy" with "I'm finished." The sweet spot is: I'm worthy now AND I'm becoming more. Both are true. The gift is both parts: you're loved as you are, and you're invited to become more than you are.
 
 {%include summarize-page.html src="/compassion" %}
-{%include summarize-page.html src="/eulogy" %}
 
 #### November 3rd - Just Like Jesus
 
@@ -451,7 +430,6 @@ For everyone: whatever values you claim, whatever identity you wear - you have t
 
 **Important distinction:** This isn't about perfectionism or beating yourself up for every failure to live up to your ideals. Nobody walks the talk 100% of the time. But there's a difference between "I believe this and I'm genuinely trying, even when I fall short" versus "I claim this identity but I'm not actually doing the work." The distinction is in the effort and honesty. Are you genuinely attempting to live your values and learning from failures? Or are you just enjoying the label without the substance? One is the human condition; the other is hypocrisy.
 
-{%include summarize-page.html src="/eulogy" %}
 {%include summarize-page.html src="/affirmations" %}
 
 #### November 4th - Authenticity
@@ -532,9 +510,6 @@ But if I claimed to value patience while thinking "kids are annoying and I don't
 **The difference:** Hypocrisy is pretending to hold values you don't. Discipline is struggling to live values you genuinely hold.
 
 {%include summarize-page.html src="/get-to-yes-with-yourself" %}
-{%include summarize-page.html src="/curious" %}
-{%include summarize-page.html src="/eulogy" %}
-{%include summarize-page.html src="/affirmations" %}
 
 #### November 5th - Authentic Worship
 
@@ -561,8 +536,6 @@ It also connects to my [be a class act affirmation](/affirmations#a-class-act-fi
 **Important distinction:** This isn't about being selfless to the point of self-destruction or ignoring your own needs. It's about shifting from a zero-sum mindset (their success threatens mine) to an abundance mindset (I can succeed AND help others succeed). Building others up doesn't require tearing yourself down.
 
 {%include summarize-page.html src="/grandmother" %}
-{%include summarize-page.html src="/affirmations" %}
-{%include summarize-page.html src="/eulogy" %}
 
 #### November 13th - A Prescription for Pain
 
@@ -631,9 +604,6 @@ Asa's folly wasn't that he used doctors or made alliances - those aren't inheren
 The question isn't whether you use secular solutions. It's whether your values or your tactics are driving the bus.
 
 {%include summarize-page.html src="/end-in-mind" %}
-{%include summarize-page.html src="/first-understand" %}
-{%include summarize-page.html src="/eulogy" %}
-{%include summarize-page.html src="/essentialism" %}
 
 #### November 19th - Anatomy of a Surrender: Idolatry
 
@@ -650,12 +620,7 @@ We often excuse our bad habits as "little weaknesses" or "character flaws." We t
 Idolatry isn't just worshiping statues. It's the act of prioritizing _anything_ above your highest values (your "God" or your "Best Self").
 
 - When I give in to **[anger](/anger)**, I am worshiping my need to be right or my impulse to punish. I am exalting my immediate emotional release above my value of patience or connection.
-
-{%include summarize-page.html src="/anger" %}
-
 - When I give in to **[addiction](/addiction)** (even soft addictions like doomscrolling), I am worshiping comfort or distraction. I am exalting the dopamine hit above my value of presence and focus.
-
-{%include summarize-page.html src="/addiction" %}
 
 In economics, this is **revealed preferences**: what you do is what you value, regardless of what you say.
 
@@ -666,7 +631,7 @@ When you choose the idol, you are making a "commitment to darkness." You can't o
 
 **Important distinction:** This isn't about shame. It's about ownership. As long as you call it a "weakness," you're a victim. When you call it an "idol" (a revealed preference), you acknowledge it's a choice. And if it's a choice, you can choose differently.
 
-{%include summarize-page.html src="/essentialism" %}
+{%include summarize-page.html src="/addiction" %}
 
 #### November 20th - The Functional Utility of Bad Habits
 
@@ -688,7 +653,6 @@ The lie isn't that the bad habit doesn't work. The lie is that it's the _only_ t
 
 **Important distinction:** Understanding the function of a behavior isn't excusing it. It's the prerequisite for changing it. You can't just "stop" a behavior that's solving a problem for you. You have to find a better way to solve that problem.
 
-{%include summarize-page.html src="/addiction" %}
 {%include summarize-page.html src="/habits" %}
 
 #### November 21st - The Pain of Letting Go
@@ -706,8 +670,6 @@ The painful cycle: We put the habit down, then pick it back up. Down and up, ove
 **Why we relapse:** We romanticize what we're giving up. We forget how much pain our "comfort" has caused us. We think we'll miss it. We fear the emptiness it will leave behind.
 
 The hard truth: Letting go of a deep habit requires a kind of death. The person who needed that coping mechanism has to die so a new person can emerge. That's why it hurts. And that's why it's necessary.
-
-### December
 
 ---
 
