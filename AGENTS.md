@@ -3,6 +3,14 @@
 The single instruction file for every agent working in this repo. `CLAUDE.md` is
 a symlink to this file: edit here.
 
+**Dispatched here by the Gas City mayor, or landing in this repo without Larry's
+session context? Read [`docs/CITY-AGENT-RUNBOOK.md`](docs/CITY-AGENT-RUNBOOK.md)
+first.** It covers what this file assumes you already know: getting a Treehouse
+worktree instead of working in the primary checkout (leased slots come
+already built), the `upstream`-vs-`origin` branch rule and where PRs go,
+the local preview and the preview-link rule, this repo's own beads store, and
+what never goes public.
+
 ## IMPORTANT: Read First
 
 Before starting any work, run `/up-to-date` to sync the repo with upstream. This ensures you're working on the latest code and avoids merge conflicts. When creating PRs, rebase your branch onto main so the PR can merge cleanly.
@@ -24,6 +32,8 @@ Use beads (`bd` commands) for task tracking. See the Beads Integration section b
 
 ## First commit in a fresh worktree
 
+**Get worktrees from Treehouse, not `git worktree add`.** `treehouse get --lease` hands out a reused slot that keeps `node_modules/`, `_site/` and `back-links.json` from its last use, so it is ready to commit — confirm with `ls -d node_modules _site back-links.json` and skip the rest of this section. Only a brand-new slot (Treehouse grows one when the pool is exhausted) or a bare `git worktree add` starts cold and needs the steps below.
+
 The `anchor-checker` pre-commit hook reads `_site/*.html` **and** `back-links.json` to validate markdown anchors and resolve permalinks/redirects. A freshly cloned worktree has neither — `back-links.json` is gitignored and CI-generated, not checked out — and the hook hard-fails with `Error: _site not found. Run 'jekyll build' first.` or `Error: back-links.json not found. Run build_back_links.py first.` Run once before your first commit:
 
 ```bash
@@ -33,7 +43,7 @@ just update-backlinks
 
 (If you've already run `just jekyll-serve` in this checkout, `back-links.json` is there — `ensure-backlinks` built it. The commit path can't rely on that, hence the explicit step.)
 
-- **Background jekyll build on worktree creation**: after `git worktree add <path>`, cd in and run `just worktree-init`. Fires `bundle exec jekyll build && uv run ./build_back_links.py build` in the background (log: `/tmp/jekyll-worktree-<branch>.log`). By the time you're ready to commit, both `_site/` and `back-links.json` are populated and the `anchor-checker` pre-commit hook resolves anchors correctly — no need for `SKIP=anchor-checker` unless there are genuinely-broken anchors in source.
+- **Background jekyll build for a cold worktree**: in a new Treehouse slot (or a bare `git worktree add`), cd in and run `just worktree-init`. Fires `bundle exec jekyll build && uv run ./build_back_links.py build` in the background (log: `/tmp/jekyll-worktree-<branch>.log`). By the time you're ready to commit, both `_site/` and `back-links.json` are populated and the `anchor-checker` pre-commit hook resolves anchors correctly — no need for `SKIP=anchor-checker` unless there are genuinely-broken anchors in source.
 
 Same fix applies if you edit a heading mid-session and the live `jekyll serve` hasn't written it to disk yet — see the screenshot section below.
 
