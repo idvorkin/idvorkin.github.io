@@ -22,23 +22,14 @@ This is my summary of Being Mortal by Atul Gawande (also author of The Checklist
 
 - [My last year](#my-last-year)
 - [The book](#the-book)
-  - [Introduction](#introduction)
-  - [The Independent Self](#the-independent-self)
-  - [Things Fall Apart](#things-fall-apart)
   - [Dependence](#dependence)
-  - [Assistance](#assistance)
-  - [A Better Life](#a-better-life)
-  - [Letting Go](#letting-go)
-  - [Hard Conversations](#hard-conversations)
-  - [Health span vs lifespan](#health-span-vs-lifespan)
   - [Courage](#courage)
 - [Statistics](#statistics)
   - [Death Rates by Cause](#death-rates-by-cause)
   - [Probability of death given current age](#probability-of-death-given-current-age)
-- [When I get old](#when-i-get-old)
 - [Quotes](#quotes)
 - [Other resources](#other-resources)
-- [Spiritual Health](#spiritual-health)
+- [Chasing Daylight](#chasing-daylight)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -51,44 +42,28 @@ Before we get into it, lets see my aspirations for my last year.
 
 ## The book
 
-### Introduction
-
-### The Independent Self
-
-### Things Fall Apart
+The chapters I keep coming back to are Dependence and Courage. The rest of the book is worth reading; these two are the ones I'd hand to a friend.
 
 ### Dependence
 
-This is the most depressing chapter of any book I've ever read. It's the only attempt I've ever seen to describe the act of body falling apart in death. Here's the opening paragraph - and it gets more and more engaging and believable for the next 30 pages:
+This is the most depressing chapter of any book I've ever read. It's the only attempt I've ever seen to describe the act of body falling apart in death. Here's how it opens, and it gets more and more engaging and believable for the next 30 pages:
 
-\*It is not death that the very old tell me they fear. It is what happens short of death—losing their hearing, their memory, their best friends, their way of life.
-
-Old age is continuous series of losses. Old age is not a battle, it is a massacre.
-
-With luck and fastidiousness—eating well, exercising, keeping our blood pressure under control, getting medical help when we need it—people can often live and manage a very long time. But eventually the losses accumulate to the point where life's daily requirements become more than we can physically or mentally manage on our own. As fewer of us are struck dead out of the blue, most of us will spend significant periods of our lives too reduced and debilitated to live independently. We do not like to think about this eventuality. As a result, most of us are unprepared for it. We rarely pay more than glancing attention to how we will live when we need help until it's too late to do much about it.\*
-
-### Assistance
-
-### A Better Life
-
-### Letting Go
-
-### Hard Conversations
-
-### Health span vs lifespan
+> It is not death that the very old tell me they fear. It is what happens short of death—losing their hearing, their memory, their best friends, their way of life. As Felix put it to me, "Old age is a continuous series of losses." Philip Roth put it more bitterly in his novel Everyman: "Old age is not a battle. Old age is a massacre."
+>
+> With luck and fastidiousness—eating well, exercising, keeping our blood pressure under control, getting medical help when we need it—people can often live and manage a very long time. But eventually the losses accumulate to the point where life's daily requirements become more than we can physically or mentally manage on our own. As fewer of us are struck dead out of the blue, most of us will spend significant periods of our lives too reduced and debilitated to live independently. We do not like to think about this eventuality. As a result, most of us are unprepared for it. We rarely pay more than glancing attention to how we will live when we need help until it's too late to do much about it.
 
 ### Courage
 
-Courage is strength in the face of knowledge of what is to be feared or hoped. Wisdom is prudent strength. At least two kinds of courage are required in aging and sickness. The first is the courage to confront the reality of mortality—the courage to seek out the truth of what is to be feared and what is to be hoped. Such courage is difficult enough. We have many reasons to shrink from it. But even more daunting is the second kind of courage—the courage to act on the truth we find. The problem is that the wise course is so frequently unclear. For a long while, I thought that this was simply because of uncertainty. When it is hard to know what will happen, it is hard to know what to do. But the challenge, I've come to see, is more fundamental than that. One has to decide whether one's fears or one's hopes are what should matter most.
+> Courage is strength in the face of knowledge of what is to be feared or hoped. Wisdom is prudent strength. At least two kinds of courage are required in aging and sickness. The first is the courage to confront the reality of mortality—the courage to seek out the truth of what is to be feared and what is to be hoped. Such courage is difficult enough. We have many reasons to shrink from it. But even more daunting is the second kind of courage—the courage to act on the truth we find. The problem is that the wise course is so frequently unclear. For a long while, I thought that this was simply because of uncertainty. When it is hard to know what will happen, it is hard to know what to do. But the challenge, I've come to see, is more fundamental than that. One has to decide whether one's fears or one's hopes are what should matter most.
 
 ## Statistics
 
 ### Death Rates by Cause
 
-- Baseline morality rate [0.9%](https://www.macrotrends.net/countries/USA/united-states/death-rate)
+- Baseline mortality rate [0.9%](https://www.macrotrends.net/countries/USA/united-states/death-rate)
 - US deaths/year [2.8M](https://www.cdc.gov/nchs/data/nvsr/nvsr68/nvsr68_06-508.pdf) Heart: 23%, Cancer: 22%, Accident: 6%, Suicide: 1.5%
 - US deaths/day: 8,000
-- Rating From 25-35: Accidents; Homicide; Suicide
+- Leading causes from 25-35: Accidents; Homicide; Suicide
 - Global deaths/year: 56M
 - Global deaths/day: 150K
 
@@ -123,10 +98,6 @@ Get the raw data from:
 <iframe class="embed-responsive" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTIOa5Jwg06iWzeKodwg3SMs5O1xI21GsSCEV5WB1_kLPvZTaQCOti8hgObhqgV4w/pubhtml?gid=881982232&amp;single=true&amp;widget=true&amp;headers=false" style="height:400px"></iframe>
 </div>
 
-## When I get old
-
-{%include summarize-page.html src='/last-year' %}
-
 ## Quotes
 
 - Grandfather dies, Father dies, Son dies - A very true blessing.
@@ -137,6 +108,8 @@ Get the raw data from:
 - The prophet [on death](http://www.katsandogz.com/gibran/ondeath.php)
 - [Mortality Infographics](https://ourworldindata.org/births-and-deaths)
 
-## Spiritual Health
+## Chasing Daylight
 
-Read a great book about a guy who found out he was gonna die in 100 days. Smart guy used to be CEO of KPMG, cool to see what he did. His advice: whatever you plan to do before you die, move it up.
+The other book: Eugene O'Kelly, the CEO of KPMG, found out he had a few months to live and wrote about what he did with them. His advice: whatever you plan to do before you die, move it up.
+
+Knowing I'm going to die is also a spiritual-health tool, not just a medical fact. That's in [spiritual health](/spiritual-health), and memento mori is one of the three ideas I borrow from [Stoicism](/stoicism).
