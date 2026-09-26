@@ -8,38 +8,51 @@ Four-panel, 2x2, plush-3D house style, to `contract.md`.
 
 ### Invocation
 
-`generate.py single --ref` takes ONE ref and a strip needs several, so call the
-layer under it directly:
+**Muse Image is the house model** (Igor, 2026-09-26: "Given how cheap it is and
+how well it does, let's get rid of Gemini."). One Muse call per panel, then
+composite the page with `magick` (see **Per-panel generation**). The full
+recipe, with the measured reasons for every line, is the gen-image skill's
+`comic-panels.md` in chop-conventions; this file applies it to our contract.
 
 ```bash
-GEMINI_IMAGE_MODEL=gemini-3-pro-image-preview \
-ASPECT_RATIO=1:1 \
-~/gits/chop-conventions/skills/gen-image/gemini-image.sh \
-  "$PROMPT" out.png "" \
-  images/den/den-003.webp \
-  images/larry-armchair-session.webp \
-  images/raccoon-larry.webp \
-  images/raccoon-nerd.webp
-
-magick out.png -resize 1600x1600 -quality 90 A.webp
-./gutter/check-geometry.py A.webp
+GEN=~/gits/chop-conventions/skills/gen-image/openrouter-image.py
+$GEN @panel-3.txt panel-3.png --model muse --aspect 1:1 \
+  --ref images/raccoon-nerd.webp \
+  --ref images/raccoon-larry.webp \
+  --ref images/larry-claw-ref.png \
+  --ref <the set's GPT reference panel>
 ```
 
-The empty third positional is the api-url slot; blank makes the script derive
-the URL from `GEMINI_IMAGE_MODEL`. Pro, never Flash — Flash mangles multi-word
-lettering. No `--transparent` — comics are opaque pages.
+The script logs the model id and billed cost to stderr on every call; keep
+that line in the run log. Key: `OPEN_ROUTER_KEY` from env, `~/.env`, or the
+JSON file named by `$SECRET_BOX`. No `--transparent`: comics are opaque pages.
+
+**GPT Image** (`--model gpt`, `openai/gpt-image-2.5-sunburst`, ~\$0.15, sent as
+2048x2048) is only for: the set reference panel, rendered **once per recurring
+set** and reused in every strip on it; first designs and anchor sheets for a
+new character; and a one-shot whole page when the job wants one. **Gemini is
+retired**: not a fallback.
 
 ### The references, and what each one is for
 
-| ref                                  | job                                                                                  |
-| ------------------------------------ | ------------------------------------------------------------------------------------ |
-| `images/den/den-003.webp`            | house style + panel grid + bubble treatment                                          |
-| `images/larry-armchair-session.webp` | Larry **in the house style**, in a panel, with a bubble — the single most useful ref |
-| `images/raccoon-larry.webp`          | Larry character canon (beard, claw, waistcoat, crocs)                                |
-| `images/raccoon-nerd.webp`           | Igor character canon (rainbow glasses, TECHNOLOGIST tee, mismatched crocs)           |
-| `images/larry-claw-ref.png`          | the claw, attached — attach on every Larry panel                                     |
+Attach them in this order, and name each one by its position in the prompt
+("Reference 1 is…"). The Image API is stateless, so an unnamed reference is
+just a picture:
 
-The armchair image was the addition that mattered. `raccoon-larry.webp` is a
+1. `images/raccoon-nerd.webp`: always first, stated as the style authority
+   ("when anything disagrees with reference 1 about style, reference 1 wins").
+2. Character sheets for whoever is in **this** panel: `images/raccoon-larry.webp`,
+   then `images/larry-claw-ref.png` on every Larry panel. No sheet for a
+   character who is not in the panel.
+3. Last: **the GPT reference panel for this panel's set**, named as "a FINISHED
+   PANEL from this same strip… match its rendering… do NOT copy its pose,
+   framing or balloon words". It was worth +6 of 42 on the canon checklist.
+   With none yet, Muse alone scored 37/42, which is acceptable.
+
+Do not add an old strip (`den-003.webp`) as a style ref. In the 2026-09-26 study
+it pulled Muse off the canon look and lost points.
+
+_Earlier Gemini-era note, kept for the reasoning:_ The armchair image was the addition that mattered. `raccoon-larry.webp` is a
 transparent full-body toy shot; it locks the _character_ but says nothing about
 how he sits in a lit panel next to a speech balloon. One ref that shows the
 character already rendered in the target style beats two refs that show style
@@ -59,8 +72,9 @@ version. #1 has both a flat and a `-plush` variant. Only #3 and
 Five blocks, in this order. Order matters: the render-style block has to land
 before the model has committed to a look.
 
-1. **Layout** — "four-panel comic strip, 2x2 grid, thick black panel borders on
-   a warm cream page, square 1:1."
+1. **Layout** — per panel: "ONE single square comic panel, 1:1… one panel from
+   a four-panel strip; draw only this one panel." (A GPT one-shot page asks for
+   the 2x2 grid on a warm cream page instead.)
 2. **RENDER STYLE, flagged as the most important instruction** — plush-3D
    positives (felt fiber texture, soft-vinyl toy volume, volumetric light, warm
    attic lamp, shallow DoF, film grain) _and_ an explicit negative list: NOT flat
@@ -72,6 +86,24 @@ before the model has committed to a look.
 5. **LETTERING** — bubble treatment plus "use exactly these words and no other
    text anywhere in the image", then one paragraph per panel with the bubble
    text inline and quoted.
+
+For Muse, the render-style block is the felt-plush block from `comic-panels.md`
+verbatim ("a high-end 3D render of handmade NEEDLE-FELTED plush toys…"), and
+these lines are standing parts of every panel prompt:
+
+- **Warm the set prose itself.** Muse draws "grey-white brick" and "blue-grey
+  walls" literally, and the panel reads cold whatever the style block says.
+  Write "warm cream-painted brick", "warm golden late-afternoon sun", "honey-brown
+  wood-paneled walls".
+- **Igor's eyes are always big, round and wide open.** Show suspicion with a paw
+  on the chin, never lowered lids. "Squinting" in a script gives a scowl.
+- **Any phone is a modern smartphone**, "never a flip phone, never a keypad
+  feature phone".
+- **Larry's claw is raised, pincers up**, "one soft plush claw… no lobster legs".
+  A hanging claw grew lobster legs in 7 of 15 images.
+- **Balloons along the top**, "nothing is lettered in the bottom half".
+- **Full stops spelled out**: `reads exactly "REX." with the full stop`.
+- A closing one-line **FINAL STYLE REMINDER**.
 
 Then a per-candidate **CAMERA / COMPOSITION VARIATION** paragraph appended last.
 Vary only camera and bubble placement between candidates; keep characters,
@@ -105,11 +137,9 @@ section, name it, and have every panel that uses it refer to the name.
 
 ### Per-panel generation
 
-Some models fight the 2x2 grid — margins wander, borders thin out, lettering
-shrinks to fit four scenes into one canvas. Don't argue with them. Generate each
-panel on its own as a full-bleed square, no grid and no border, with the canon
-refs plus the matching panel of an existing strip (`den-00N-pN.webp`) as a
-staging ref, then composite onto the cream page at the contract geometry:
+The default for every strip. Muse is not asked for whole pages. Generate each
+panel on its own as a square, with the references above, then composite onto
+the cream page at the contract geometry:
 
 ```bash
 magick -size 1600x1600 xc:'#F7F0D4' \
@@ -134,10 +164,11 @@ Float-right character illustrations for posts (`_includes/image_float_right.html
 and its siblings). These use the gen-image skill's own path:
 
 ```bash
-cd ~/gits/chop-conventions/skills/gen-image
-./generate.py single "<subject line in the house voice>" \
+cd ~/gits/chop-conventions/skills/gen-image   # Muse by default
+../image-explore/generate.py single --scene "<subject line in the house voice>" \
+  --shirt "<SHIRT>" --output <name>.webp \
   --ref ~/gits/larry-blog/images/raccoon-nerd.webp \
-  --transparent --no-fast --aspect 3:4
+  --transparent --aspect 3:4
 ```
 
 `--transparent` renders on magenta and strips it through Recraft
@@ -192,18 +223,10 @@ the manifest has no panel files to open.
 
 ## Failure modes
 
-- **`gemini-image.sh` silently defaults to Flash.** Unset `GEMINI_IMAGE_MODEL`
-  and the script falls back to `gemini-3.1-flash-image-preview` with no
-  warning — the 2026-08-31 den-005/den-006 redraw shipped on Flash this way
-  (wayfarers instead of round rainbow glasses, softer lettering) and nobody
-  noticed until Igor's eye caught it. Every strip generation must
-  `export GEMINI_IMAGE_MODEL=gemini-3-pro-image-preview` before every
-  `gemini-image.sh` call, and the run log must be checked for that exact
-  string (or the derived `.../models/gemini-3-pro-image-preview:generateContent`
-  API URL) before trusting the output — a log that doesn't prove Pro is a
-  failed run, regenerate it. `gemini-image.sh` itself never logs the model or
-  API URL it used, so log it yourself (echo it to the run log before the
-  call) rather than trusting the script's own stderr.
+- **Wrong model, silently.** In the Gemini days a strip shipped on the wrong
+  model because the script never logged which one it used (2026-08-31). The
+  Muse renderer logs `model=…` and the billed cost on every call: a run log
+  without that line for every panel is a failed run, regenerate it.
 
 - **Two lobster claws.** Every first-pass candidate gave Larry a red claw on
   _both_ arms — the ref shows the claw prominently and the model reads it as a
@@ -237,7 +260,10 @@ the manifest has no panel files to open.
   Not worth another spin; if it matters, write "GYM: ZERO."
 - **Meta Muse Image refuses a prompt with a knife-point mugging** about one time
   in four. Retry once identically — that usually passes. If it refuses twice,
-  soften the knife rather than rewriting the scene.
+  soften the knife rather than rewriting the scene. **An armed character sheet
+  trips the filter on every panel it is attached to**: keep sheets empty-pawed
+  and put the weapon in the panel text. Meta's direct API is for one refine
+  turn on a nearly-right panel only; it did not beat named references.
 - **A supplied source image drags the panel grid off contract.** When the brief
   is "clone this", the source belongs in the ref stack, attached last, under an
   explicit "staging only, its flat rendering is wrong" block — that block held
