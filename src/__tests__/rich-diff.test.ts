@@ -3,7 +3,16 @@
 
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { attachChangeNav } from "../diff-nav";
-import { diffBlocks, extractBlocks, lcsPairs, markWordDiff, renderDiff, tokenize } from "../rich-diff";
+import {
+  baseUrl,
+  diffBlocks,
+  extractBlocks,
+  lcsPairs,
+  markWordDiff,
+  renderDiff,
+  toggleRichDiff,
+  tokenize,
+} from "../rich-diff";
 
 const body = (html: string) => {
   const el = document.createElement("div");
@@ -150,5 +159,79 @@ describe("renderDiff lists", () => {
     const items = Array.from(view.querySelectorAll("li"));
     expect(items.map((li) => li.className)).toEqual(["rd-li-changed", "rd-li-removed", ""]);
     expect(items[0].querySelector("ins")?.textContent).toBe("well");
+  });
+});
+
+describe("baseUrl", () => {
+  it("maps a page to its main-branch copy on the same origin", () => {
+    expect(baseUrl("/foo")).toBe("/_diff-base/foo");
+    expect(baseUrl("/foo/")).toBe("/_diff-base/foo");
+    expect(baseUrl("/a/b.html")).toBe("/_diff-base/a/b.html");
+  });
+});
+
+describe("toggleRichDiff", () => {
+  const page = (inner: string) =>
+    `<html><body><div id="content-holder"><div data-pagefind-ignore>toc</div>${inner}</div></body></html>`;
+  const html = (status: number, text = "") => new Response(text, { status, headers: { "Content-Type": "text/html" } });
+  let fetchMock: ReturnType<typeof vi.fn>;
+
+  const start = (responses: Record<string, Response | Error>) => {
+    document.body.innerHTML = '<div id="content-holder"><p>live</p></div>';
+    window.location.pathname = "/foo"; // vitest.setup.ts replaces location with a plain object
+    window.scrollTo = vi.fn() as typeof window.scrollTo;
+    window.scrollBy = vi.fn() as typeof window.scrollBy;
+    Element.prototype.scrollIntoView = vi.fn();
+    fetchMock = vi.fn(async (url: string) => {
+      const r = responses[url];
+      if (!r) throw new Error(`unexpected fetch ${url}`);
+      if (r instanceof Error) throw r;
+      return r;
+    });
+    vi.stubGlobal("fetch", fetchMock);
+  };
+
+  afterEach(async () => {
+    if (document.getElementById("rich-diff-view")) await toggleRichDiff(); // reset module state
+    vi.unstubAllGlobals();
+    window.location.pathname = "/";
+    document.body.innerHTML = "";
+  });
+
+  const summary = () => document.querySelector("#rich-diff-view .rd-summary")?.textContent || "";
+
+  it("diffs against the main-branch copy served same-origin, never idvork.in", async () => {
+    start({
+      "/foo": html(200, page("<p>keep</p><p>new words here</p>")),
+      "/_diff-base/foo": html(200, page("<p>keep</p>")),
+    });
+    expect(await toggleRichDiff()).toBe(true);
+    const urls = fetchMock.mock.calls.map((c) => String(c[0]));
+    expect(urls.sort()).toEqual(["/_diff-base/foo", "/foo"]);
+    expect(urls.some((u) => u.includes("idvork.in"))).toBe(false);
+    expect(summary()).toContain("+1 added");
+    expect(summary()).not.toContain("new page");
+  });
+
+  it("shows a page missing on main as a new page", async () => {
+    start({ "/foo": html(200, page("<p>a</p>")), "/_diff-base/foo": html(404) });
+    await toggleRichDiff();
+    expect(summary()).toContain("new page");
+    expect(summary()).toContain("+1 added");
+  });
+
+  it("names the request that failed", async () => {
+    start({ "/foo": html(200, page("<p>a</p>")), "/_diff-base/foo": new TypeError("Failed to fetch") });
+    await toggleRichDiff();
+    expect(summary()).toContain("Diff vs main failed");
+    expect(summary()).toContain("/_diff-base/foo");
+    expect(summary()).toContain("Failed to fetch");
+  });
+
+  it("names the base copy when it returns an HTTP error", async () => {
+    start({ "/foo": html(200, page("<p>a</p>")), "/_diff-base/foo": html(500) });
+    await toggleRichDiff();
+    expect(summary()).toContain("/_diff-base/foo");
+    expect(summary()).toContain("HTTP 500");
   });
 });
