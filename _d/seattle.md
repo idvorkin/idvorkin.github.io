@@ -30,8 +30,6 @@ Seattle is my home, I want to die here, though not soon. If you're visiting, her
 1. Capitol Hill
    - Favorite Coffee shop: Victrola on 15th
    - Crazy bar: [The Unicorn](https://www.unicornseattle.com/)
-1. Ballard
-   - I don't get there often enough to make a recommendation
 1. Bellevue
    - I tend not to be on the east side, but if you're downtown Bellevue
    - Favorite Coffee shop: [Cafe Cesura](https://www.cafecesura.com/)
@@ -53,7 +51,7 @@ If you have a free day, a car, and a desire to do something amazing outside
 ### Restaurants
 
 1. Palace Kitchen (Amazing Burgers)
-2. Tai Tongue (Good Chinese)
+2. Tai Tung (Good Chinese)
 3. Beth's (Giant Breakfast)
 4. Cafe Flora (Vegetarian)
 5. Tanoor (Middle Eastern) - Best Meat

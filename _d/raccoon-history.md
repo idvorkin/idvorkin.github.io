@@ -91,7 +91,7 @@ Through early 2026, new raccoon images were added for specific pages, all follow
 
 ## The March 2026 Audit
 
-In March 2026, we did a full audit of every raccoon image. Three images were off-brand and got replaced:
+In March 2026, I did a full audit of every raccoon image. Three images were off-brand and got replaced:
 
 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 1em 0;">
 <div style="text-align: center;"><img src="/images/raccoon-caring.webp" style="width: 100%; border-radius: 8px;" /><br/><small><a href="/caring">CARING</a> — replaced lab-coat outlier</small></div>
@@ -156,4 +156,4 @@ The canonical raccoon character specification (from `generate_igor_images.py`):
 
 > Cute anthropomorphic raccoon character, big rainbow round glasses, green t-shirt with bold white text, blue left Croc and yellow right Croc, soft plush 3D/vinyl illustration, big friendly eyes, studio softbox lighting, transparent background, subtle vintage film grain, children's book style. Full body.
 
-Each image varies only the **action/scene** and **shirt text**. This constraint is what makes the brand work — instant recognition across 16 images.
+Each image varies only the **action/scene** and **shirt text**. This constraint is what makes the brand work — instant recognition across 24 images.

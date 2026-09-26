@@ -81,6 +81,7 @@ As I tell my teams, the what lags the how, here's my how.
 
 - The team members are my most important customer, and will be treated as such.
 - Coaching is critical to being a great manager - an excellent primer is [The 7 coaching questions](/Coaching-Questions).
+- Mentoring is a responsibility, not a favor - my own mentor [slept under his desk waiting for my questions](/sleeping-bag-sacrifices).
 - When we remember work, we think about our [peak moments](/moments-at-work).
 - [Human Meetings](/human-meetings)
 - Building intra-team cohesion
@@ -166,5 +167,5 @@ Someone once asked me why I'm a good coach, took me a while, here's what I came 
 
 - I believe you can't be efficient with people, you can only be effective. And it always pays off.
 - People are not 'resources', they are 3 dimensional humans, with [lives outside work](https://bit.ly/igor-wlb-manifesto), emotions(like [pride](/pride)), and [mind monsters](/mind-monsters).
-- I actively study and practice [coaching](/coach), effective [decision making](/decide) and [grand mother mind (e.g. non judgement )](/grandmother-mind)
+- I actively study and practice [coaching](/coach), effective [decision making](/decide) and [grand mother mind (e.g. non judgment )](/grandmother-mind)
 - I've read and digested slews of [self help books](/books) which while often mocked, are filled with great models.
