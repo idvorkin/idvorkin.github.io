@@ -24,3 +24,5 @@ Arthur Brooks and Ryan Holiday on four practical ways to live like a Stoic:
 
 - [ACT](/act) is the clinical cousin of the dichotomy of control: accept what you can't change, commit to what you value.
 - Not a Stoic, but the same question: a cool render of Aristotle's [What makes a good life](https://ralphammer.com/aristotle-how-to-live-a-good-life/).
+
+{% include spiritual-health-cluster.html %}
