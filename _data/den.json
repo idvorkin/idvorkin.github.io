@@ -1,5 +1,19 @@
 [
   {
+    "num": 9,
+    "title": "He Speaks Human",
+    "date": "September 26, 2026",
+    "img": "/images/den/den-009.webp",
+    "alt": "The Den #9: He Speaks Human — four panels in the plush-render house style, all in the lamp-lit attic den, in two mirrored rows. Each top panel opens with a black BEFORE · OPUS 5 bar, and each bottom panel with a gold AFTER · OPUS 5.5 bar. 1: Igor, a raccoon in rainbow glasses, a green TECHNOLOGIST tee, denim shorts and one blue and one yellow croc, holds a coffee mug and asks 'DID THE REMINDER GO OUT?' Larry — the grey-bearded raccoon in wire-rim spectacles and a tweed waistcoat, one arm ending in a giant red lobster claw — sits in the green leather armchair under a brass plate reading OPUS 5, writing on his clipboard, and answers 'CLOSED 4F2.A1 VIA SHA 3C9E1A.' 2: Closer on Igor, unimpressed, one paw out: 'IN WORDS, PLEASE.' Larry, unbothered: 'SEE THREAD 7B.09, NOTE 3.' 3: The first panel replayed. A small blue plush robot on a step-stool gives the armchair's new plate, OPUS 5.5, a last turn with a screwdriver. Igor asks again, 'DID THE REMINDER GO OUT?', and Larry answers 'YES. IT WENT OUT AT NOON.' 4: The second panel replayed. Igor throws his arms up, beaming, coffee sloshing out of his mug: 'YOU SPEAK HUMAN NOW!' Larry, pleased, from the chair: 'IN WORDS, AS REQUESTED.'",
+    "receipts_url": "https://gist.github.com/idvorkin-ai-tools/d5032390ddb05bf214a0a22ee9ed63bb",
+    "panels": [
+      "/images/den/den-009-p1.webp",
+      "/images/den/den-009-p2.webp",
+      "/images/den/den-009-p3.webp",
+      "/images/den/den-009-p4.webp"
+    ]
+  },
+  {
     "num": 8,
     "title": "What's His Name",
     "date": "September 26, 2026",

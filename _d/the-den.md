@@ -22,6 +22,8 @@ One rule, and it's Steve's: every strip lampoons something that actually happene
 
 Tap any panel to read it full-screen; swipe or use the arrows to move through the four panels and finish on the full strip.
 
+{% include den_strip.html num="9" %}
+
 {% include den_strip.html num="8" %}
 
 {% include den_strip.html num="7" %}
