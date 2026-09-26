@@ -1,9 +1,14 @@
-// ABOUTME: Dev-only "Diff vs main": diffs this page's rendered post body against the live idvork.in copy.
-// ABOUTME: Block-level LCS pairs paragraphs; word-level LCS marks <ins>/<del> inside changed blocks, keeping markup.
+// ABOUTME: Dev-only "Diff vs main": diffs this page's rendered post body against the main-branch copy the
+// ABOUTME: preview server renders same-origin at /_diff-base/<path> (_plugins/diff_base_generator.rb).
+// Block-level LCS pairs paragraphs; word-level LCS marks <ins>/<del> inside changed blocks, keeping markup.
 
 import { type Change, type ChangeNav, attachChangeNav } from "./diff-nav";
 
 export const PROD_ORIGIN = "https://idvork.in";
+export const DIFF_BASE = "/_diff-base";
+
+/** Same-origin URL of the main-branch render of `path` (no cross-origin fetch, so no CORS to fail). */
+export const baseUrl = (path: string) => DIFF_BASE + (path.replace(/\/+$/, "") || "/");
 
 export type BlockOp =
   | { kind: "same"; block: Element }
@@ -290,7 +295,12 @@ export function renderDiff(doc: Document, ops: BlockOp[]) {
 }
 
 async function fetchBody(url: string): Promise<{ status: number; body: Element | null }> {
-  const res = await fetch(url, { cache: "no-store" });
+  let res: Response;
+  try {
+    res = await fetch(url, { cache: "no-store" });
+  } catch (e) {
+    throw new Error(`fetching ${url}: ${(e as Error).message}`);
+  }
   if (!res.ok) return { status: res.status, body: null };
   const doc = new DOMParser().parseFromString(await res.text(), "text/html");
   return { status: res.status, body: doc.getElementById("content-holder") };
@@ -319,20 +329,21 @@ export async function toggleRichDiff(prUrl?: string): Promise<boolean> {
   }
 
   const path = window.location.pathname;
-  const prodUrl = PROD_ORIGIN + path;
+  const mainUrl = baseUrl(path);
   const summary = document.createElement("div");
   summary.className = "rd-summary";
   let view: HTMLElement;
   try {
-    const [mine, prod] = await Promise.all([fetchBody(path), fetchBody(prodUrl)]);
-    if (!mine.body) throw new Error(`couldn't reload this page (HTTP ${mine.status})`);
-    const isNew = prod.status === 404;
-    if (!prod.body && !isNew) throw new Error(`idvork.in returned HTTP ${prod.status}`);
-    const ops = diffBlocks(extractBlocks(prod.body), extractBlocks(mine.body));
+    const [mine, main] = await Promise.all([fetchBody(path), fetchBody(mainUrl)]);
+    if (!mine.body) throw new Error(`couldn't reload this page, ${path} (HTTP ${mine.status})`);
+    const isNew = main.status === 404;
+    if (!main.body && !isNew) throw new Error(`main-branch copy ${mainUrl} returned HTTP ${main.status}`);
+    const ops = diffBlocks(extractBlocks(main.body), extractBlocks(mine.body));
     const r = renderDiff(document, ops);
     view = r.view;
     const { added, removed, changed } = r.counts;
-    summary.innerHTML = `<span>Rendered diff vs <a href="${prodUrl}" target="_blank">idvork.in${path}</a>${
+    const mainLink = isNew ? "main" : `<a href="${mainUrl}" target="_blank">main</a>`;
+    summary.innerHTML = `<span>Rendered diff vs ${mainLink}${
       isNew ? " — <b>new page</b>" : ""
     }</span><span class="rd-add">+${added} added</span><span class="rd-del">−${removed} removed</span><span class="rd-chg">~${changed} changed</span>`;
     if (prUrl) summary.innerHTML += `<a href="${prUrl}/files" target="_blank">source diff</a>`;
