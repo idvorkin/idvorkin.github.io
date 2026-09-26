@@ -715,3 +715,5 @@ For more context on my relationship with religion, see:
 
 {%include summarize-page.html src="/religion" %}
 {%include summarize-page.html src="/spiritual-health" %}
+
+{% include spiritual-health-cluster.html %}

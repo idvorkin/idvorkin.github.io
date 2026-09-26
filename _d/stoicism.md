@@ -19,3 +19,5 @@ Arthur Brooks and Ryan Holiday discuss how Stoicism provides a secular framework
 - **Memento Mori**: Remembering that we will die, which brings clarity to what is important.
 
 - Cool render of Aristotle's [What makes a good life](https://ralphammer.com/aristotle-how-to-live-a-good-life/)
+
+{% include spiritual-health-cluster.html %}

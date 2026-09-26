@@ -871,3 +871,5 @@ Stop asking life what it means. Start answering life's question about what YOU m
 {%include summarize-page.html src="/build-life-you-want" %}
 {%include summarize-page.html src="/elder" %}
 {%include summarize-page.html src="/religion" %}
+
+{% include spiritual-health-cluster.html %}
