@@ -117,7 +117,15 @@ Unnecessary meetings: Meetings without clear agendas or outcomes are energy sink
 Context switching: Rapidly jumping between different types of tasks depletes cognitive resources.
 Decision fatigue: Making too many decisions, especially trivial ones, drains willpower and energy.
 
-I'm ruthless about minimizing these energy drains in my life.
+I'm ruthless about minimizing these drains. But look at what they have in common: I didn't want any of them anyway. Skipping a pointless meeting costs me nothing. The expensive leak is the one I enjoy.
+
+Viktor Löfgren spent a year working full time on [Marginalia Search](https://www.marginalia.nu/) on a grant - his own project, his own plan, work he'd chosen. [His retrospective](https://www.marginalia.nu/log/a_107_nlnext/), written in June 2024: "The biggest struggle has probably been not working too much." The work was rewarding and, in his words, hard to put down. Hard to put down is not the same as good for you.
+
+What makes his framing useful is that it isn't about virtue. It's about output: "any project is realistically better off run by a refreshed smart guy than an overworked idiot that hasn't seen daylight for a week." Not "take care of yourself." You will ship worse work. That's the argument that actually reaches someone who's having fun.
+
+He also inverts the obligation. He owes the people who funded him, and you'd expect that to justify more hours - he says it's "a reason to resist the urge to work too much, not an argument for it." What he owes them is good work, and good work needs a rested person to do it. He only got better at stepping away "after starting to feel worn," which is the trouble with this particular leak: by the time the warning signs show up, you've already paid.
+
+<!-- TODO(Igor): add your own concrete example here - the thing you can't put down (blog? magic? a side project that eats the evening?). The section needs a personal proof point to land, and I'm not inventing one for you. -->
 
 ### Systems and Habits
 
