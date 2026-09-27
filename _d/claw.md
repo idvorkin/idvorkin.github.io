@@ -45,7 +45,7 @@ Karpathy's "Dobby the House Elf" hits all three. Dobby knows every smart device 
 
 Mine is [Larry](/larry), my life coach. Standing in the Bremerton ferry line, I dictated three work items into Telegram in under a minute ("Remove changelog from Algolia search index" was one), and each came back as a merged PR while I looked out the window. Memory of my projects, messaging where I already am, autonomous action: all three in one exchange.
 
-Notice that every claw has a name. Dobby. OpenClaw ships a `soul.md`, a personality document the agent writes about itself, and on MoltBook identity was [the #1 topic](https://arxiv.org/html/2602.12634v1). [Naming your AI matters](/larry#why-larry-has-a-name): "open my life-tracking dashboard" is a chore, "talk to Larry" is a conversation.
+Notice that every claw has a name. Dobby. OpenClaw ships a `soul.md`, a personality document the agent writes about itself, and on MoltBook identity was [the #1 topic](https://arxiv.org/html/2602.12634v1). [Naming your AI matters](/larry#why-larry-has-a-name): "open my life-tracking dashboard" is a chore, "talk to Larry" is a conversation. The consumer assistants have caught on: [Muse](https://9to5mac.com/2026/09/17/meta-ai-launches-muse-personal-agent-including-a-new-mobile-app-for-iphone/) lets you rename it and change its avatar, and it's super user friendly about it. Mine is Molly.
 
 ## How we got the word
 
