@@ -54,9 +54,9 @@ If your hips or shoulders are stiff, your back will compensate by moving - and t
 
 ### Weak Hips Make a Banana Back
 
-Here's the version of this I can actually picture. When your glutes are weak and your hip flexors are tight (hello, desk chair), the pelvis tips forward. But you still want to look straight ahead, not at the floor. So the lower back arches to bring your torso back upright, and your spine turns into a banana. The lumbar spine, the part McGill wants stiff and neutral, now spends all day parked near the end of its range.
+Here's the version of this I can actually picture. When your glutes are weak and your hip flexors are tight (hello, desk chair), the pelvis tips forward. If your back stayed rigid, your whole trunk would tip with it and you'd be staring at the floor. But your eyes want to stay level, looking straight ahead, so something has to bend: the lower back arcs to pull the torso back upright, and your spine turns into a banana. The lumbar spine, the part McGill wants stiff and neutral, now spends all day parked near the end of its range.
 
-Drag the sliders, or hit Play:
+Drag the hip slider, or hit Play, and watch the gaze line. It never moves; the lower back pays for it:
 
 {% include banana-back.html %}
 

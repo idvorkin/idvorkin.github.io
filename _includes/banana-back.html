@@ -1,9 +1,10 @@
-{%- comment -%} Side-view stick figure for /back-pain. Two sliders: hip strength
-tilts the pelvis forward and the lumbar spine bananas to keep the eyes level (a
-faint ghost shows where the gaze would go without the banana); head forward
-pushes the head out past the shoulders and the neck bends to keep the eyes
-level. Self-contained: inline SVG + vanilla JS, one instance per page. {%-
-endcomment -%}
+{%- comment -%} Side-view stick figure for /back-pain. The point is the
+compensation chain: hip strength tilts the pelvis forward; a rigid trunk would
+tip with it (grey ghost, gaze dropping to the floor), but the eyes stay level
+and looking ahead, so the lower back has to arc to pull the trunk upright (the
+orange glow marks where the bend lands). Head forward pushes the head out past
+the shoulders and the neck bends to keep the eyes level. Self-contained: inline
+SVG + vanilla JS, one instance per page. {%- endcomment -%}
 <style>
   .bb {
     --bb-ink: #1b1f24;
@@ -90,12 +91,21 @@ endcomment -%}
     fill: none;
     stroke-linecap: round;
   }
-  .bb-front {
+  .bb-hot {
     fill: none;
-    stroke: var(--bb-ink);
-    stroke-width: 3;
+    stroke: var(--bb-bad);
+    stroke-width: 24;
     stroke-linecap: round;
-    opacity: 0.45;
+    opacity: 0;
+  }
+  .bb-hot-label {
+    font:
+      700 12px system-ui,
+      sans-serif;
+    fill: var(--bb-bad);
+  }
+  .bb-arrow {
+    fill: var(--bb-ok);
   }
   .bb-neutral {
     fill: none;
@@ -118,6 +128,12 @@ endcomment -%}
       600 12px system-ui,
       sans-serif;
     fill: var(--bb-soft);
+  }
+  .bb-gaze-text {
+    font:
+      700 12px system-ui,
+      sans-serif;
+    fill: var(--bb-ok);
   }
   .bb-controls {
     display: grid;
@@ -170,19 +186,41 @@ endcomment -%}
   <svg viewBox="30 0 300 420" role="img" aria-labelledby="bb-title">
     <title id="bb-title">
       Side view of a standing figure facing right. Weak hips tilt the pelvis
-      forward and the lower back arches into a banana to keep the eyes level. A
-      forward head bends the neck to keep the eyes level.
+      forward. A rigid back would tip with it and the eyes would drop to the
+      floor, so instead the lower back arcs into a banana to keep the trunk
+      upright and the eyes level and looking ahead. A forward head bends the
+      neck to keep the eyes level.
     </title>
-    <!-- ghost: where the trunk and gaze would go if the spine did not bend -->
+    <defs>
+      <marker
+        id="bb-arrowhead"
+        viewBox="0 0 10 10"
+        refX="8"
+        refY="5"
+        markerWidth="7"
+        markerHeight="7"
+        orient="auto"
+      >
+        <path class="bb-arrow" d="M0 0 L10 5 L0 10 Z" />
+      </marker>
+    </defs>
+    <!-- ghost: where the trunk and gaze would go if the spine stayed rigid -->
     <g class="bb-ghostg">
       <line class="bb-ghost" id="bb-ghost-trunk" />
       <circle class="bb-ghost" id="bb-ghost-head" r="24" />
       <line class="bb-ghost" id="bb-ghost-gaze" />
-      <text class="bb-label" id="bb-ghost-label" x="214" y="150">
-        <tspan x="214">no banana:</tspan>
-        <tspan x="214" dy="15">eyes on the floor</tspan>
+      <text class="bb-label" id="bb-ghost-label" text-anchor="end">
+        <tspan id="bb-ghost-l1">rigid back:</tspan>
+        <tspan id="bb-ghost-l2" dy="15">eyes on the floor</tspan>
       </text>
     </g>
+    <!-- where the bend concentrates -->
+    <path class="bb-hot" id="bb-hot" />
+    <text class="bb-hot-label" id="bb-hot-label" x="36" y="168">
+      <tspan x="36">low back</tspan>
+      <tspan x="36" dy="15">takes the</tspan>
+      <tspan x="36" dy="15" id="bb-hot-deg">bend</tspan>
+    </text>
     <!-- legs -->
     <path
       class="bb-body"
@@ -191,8 +229,7 @@ endcomment -%}
     />
     <!-- pelvis -->
     <path class="bb-pelvis" id="bb-pelvis" />
-    <!-- front of the trunk (belly) and the neutral spine for reference -->
-    <path class="bb-front" id="bb-front" />
+    <!-- the neutral spine for reference -->
     <path class="bb-neutral" id="bb-neutral" />
     <!-- spine -->
     <path class="bb-spine" id="bb-spine" />
@@ -204,8 +241,10 @@ endcomment -%}
     <!-- head -->
     <circle class="bb-head" id="bb-head" r="24" />
     <circle class="bb-eye" id="bb-eye" r="3" />
-    <line class="bb-gaze" id="bb-gaze" />
-    <text class="bb-label" id="bb-gaze-label">eyes level</text>
+    <line class="bb-gaze" id="bb-gaze" marker-end="url(#bb-arrowhead)" />
+    <text class="bb-gaze-text" id="bb-gaze-label" text-anchor="end">
+      eyes stay level
+    </text>
   </svg>
   <div class="bb-controls">
     <label
@@ -256,29 +295,32 @@ endcomment -%}
       return a + (b - a) * t;
     }
 
-    // Lumbar + thoracic spine for a given pelvic tilt t (degrees).
-    function spinePath(t) {
-      // Sacrum top (where the lumbar spine starts), tilted with the pelvis.
-      var S = rot({ x: 146, y: 214 }, t, HIP);
-      // The pelvis' "up" direction after tilting forward.
+    // Sacrum top: where the lumbar spine starts, tilted with the pelvis.
+    function sacrum(t) {
+      return rot({ x: 146, y: 214 }, t, HIP);
+    }
+    // Lumbar curve only: leaves the sacrum along the tilted pelvis, arrives
+    // at T12 vertical so the thorax (and the eyes) stay upright. The gap
+    // between those two directions, t degrees, is the arch the low back takes.
+    function lumbarPath(t) {
+      var S = sacrum(t);
       var up = rot({ x: 0, y: -1 }, t, { x: 0, y: 0 });
-      // Thorax stays upright so the eyes stay level; it sways back a touch
-      // as the lumbar arcs (hyperlordosis).
-      var T12 = { x: 144 - t * 0.4, y: 150 };
-      var bend = 24 + t * 1.3; // how far the lumbar heads forward first
-      var P1 = { x: S.x + up.x * bend, y: S.y + up.y * bend };
-      var P2 = { x: T12.x + t * 0.7, y: T12.y + 30 };
+      var T12 = { x: 144 - t * 0.35, y: 150 };
+      var reach = 26 + t * 1.2;
+      var P1 = { x: S.x + up.x * reach, y: S.y + up.y * reach };
+      var P2 = { x: T12.x, y: T12.y + 28 };
+      return {
+        d: "M" + pt(S) + " C" + pt(P1) + " " + pt(P2) + " " + pt(T12),
+        T12: T12,
+      };
+    }
+    function spinePath(t) {
+      var L = lumbarPath(t);
+      var T12 = L.T12;
       return (
-        "M" +
-        pt(S) +
+        L.d +
         " C" +
-        pt(P1) +
-        " " +
-        pt(P2) +
-        " " +
-        pt(T12) +
-        " C" +
-        pt({ x: T12.x - 7, y: 128 }) +
+        pt({ x: T12.x, y: 128 }) +
         " " +
         pt({ x: 138, y: 104 }) +
         " 146 88"
@@ -303,28 +345,21 @@ endcomment -%}
       $("bb-pelvis").setAttribute("d", "M" + bowl.map(pt).join(" L") + " Z");
 
       var C7 = { x: 146, y: 88 };
-      var S = rot({ x: 146, y: 214 }, t, HIP);
+      var S = sacrum(t);
       var spine = $("bb-spine");
       spine.setAttribute("d", spinePath(t));
       var neutral = $("bb-neutral");
       neutral.setAttribute("d", spinePath(0));
       neutral.style.opacity = t > 4 ? 1 : 0;
 
-      // Belly: the front of the trunk pushes out as the pelvis tips.
-      var pubis = rot({ x: 180, y: 250 }, t, HIP);
-      $("bb-front").setAttribute(
-        "d",
-        "M" +
-          pt({ x: 176, y: 104 }) +
-          " C" +
-          pt({ x: 186, y: 150 }) +
-          " " +
-          pt({ x: 190 + t * 1.1, y: 205 }) +
-          " " +
-          pt(pubis)
-      );
       var lumbarBad = t / MAX_TILT;
       spine.style.stroke = lumbarBad > 0.35 ? "var(--bb-bad)" : "var(--bb-ok)";
+      var hot = $("bb-hot");
+      hot.setAttribute("d", lumbarPath(t).d);
+      hot.style.opacity = (0.3 * lumbarBad).toFixed(2);
+      var hotLabel = $("bb-hot-label");
+      hotLabel.style.opacity = t > 4 ? 1 : 0;
+      $("bb-hot-deg").textContent = "~" + Math.round(t) + "° bend";
 
       // Head: pushed forward and a little down, eyes kept level.
       var Hc = { x: mix(160, 196, f), y: mix(50, 56, f) };
@@ -348,10 +383,10 @@ endcomment -%}
       set($("bb-gaze"), {
         x1: eye.x + 6,
         y1: eye.y,
-        x2: 322,
+        x2: 324,
         y2: eye.y,
       });
-      set($("bb-gaze-label"), { x: 236, y: eye.y - 8 });
+      set($("bb-gaze-label"), { x: 326, y: eye.y - 8 });
 
       // Plumb line from the ear and the lever arm to the shoulder.
       var ear = { x: Hc.x - 2, y: Hc.y + 2 };
@@ -369,21 +404,25 @@ endcomment -%}
         opacity: f > 0.3 ? 1 : 0,
       });
 
-      // Ghost: trunk tilts with the pelvis, head follows, gaze drops.
+      // Ghost: a rigid trunk rotates with the pelvis about the hip, so the
+      // head swings forward and down and the gaze drops by the same t.
       var ghostG = root.querySelector(".bb-ghostg");
       ghostG.style.opacity = t > 2 ? Math.min(1, t / 10) : 0;
-      var gTop = rot({ x: S.x, y: S.y - 150 }, t, S);
+      var gTop = rot(C7, t, HIP);
       set($("bb-ghost-trunk"), { x1: S.x, y1: S.y, x2: gTop.x, y2: gTop.y });
-      var gHead = rot({ x: S.x + 14, y: S.y - 180 }, t, S);
+      var gHead = rot({ x: 160, y: 50 }, t, HIP);
       set($("bb-ghost-head"), { cx: gHead.x, cy: gHead.y });
-      var gEye = rot({ x: S.x + 26, y: S.y - 183 }, t, S);
-      var gEnd = rot({ x: S.x + 176, y: S.y - 183 }, t, S);
+      var gEye = rot({ x: 172, y: 47 }, t, HIP);
+      var slope = Math.tan((t * Math.PI) / 180);
+      var gEnd = { x: 324, y: gEye.y + (324 - gEye.x) * slope };
       set($("bb-ghost-gaze"), {
         x1: gEye.x,
         y1: gEye.y,
         x2: gEnd.x,
         y2: gEnd.y,
       });
+      set($("bb-ghost-l1"), { x: 326, y: gEnd.y + 18 });
+      set($("bb-ghost-l2"), { x: 326 });
 
       var msg;
       if (t < 4 && f < 0.15) {
@@ -393,16 +432,17 @@ endcomment -%}
         var parts = [];
         if (t >= 4)
           parts.push(
-            "pelvis tipped ~" +
+            "Pelvis tipped ~" +
               Math.round(t) +
-              "° forward, so the low back bananas to keep the eyes level"
+              "° forward. To keep your eyes level and looking ahead, the low back arcs ~" +
+              Math.round(t) +
+              "° to pull the trunk upright."
           );
         if (f >= 0.15)
           parts.push(
-            "head out past the shoulders, so the neck bends to keep the eyes level (red bar = lever arm)"
+            "Head out past the shoulders, so the neck bends to keep the eyes level (red bar = lever arm)."
           );
-        msg = parts.join("; ") + ".";
-        msg = msg.charAt(0).toUpperCase() + msg.slice(1);
+        msg = parts.join(" ");
       }
       readout.textContent = msg;
     }
