@@ -11,7 +11,7 @@ tags:
 
 For years my back was stiff every morning until I stretched it out, and kettlebell swings are what finally loosened it. Stuart McGill's research changed how I think about back pain: the spine should stay stiff while motion comes from the hips and shoulders.
 
-{% include ai-slop.html percent="25" %}
+{% include ai-slop.html percent="35" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -21,6 +21,7 @@ For years my back was stiff every morning until I stretched it out, and kettlebe
 - [Spine Stiffness Requires Hip and Shoulder Mobility](#spine-stiffness-requires-hip-and-shoulder-mobility)
 - [Weak Hips Make a Banana Back](#weak-hips-make-a-banana-back)
 - [The Neck Poke](#the-neck-poke)
+- [Backpacks: Latch It Down](#backpacks-latch-it-down)
 - [The 5 Whys Applied to Back Pain](#the-5-whys-applied-to-back-pain)
 - [Books](#books)
 - [See Also](#see-also)
@@ -69,6 +70,18 @@ The fix has the same shape for both: get the ball-and-socket joints doing their 
 How sure am I? The banana is a model, not a law. The "tight hip flexors, weak glutes, forward pelvis" pattern (Janda's lower crossed syndrome) is taught everywhere but [hasn't held up well when people measured it](https://www.greglehman.ca/blog/2016/01/11/jandas-lower-crossed-syndrome-has-not-been-validated), and a [2017 meta-analysis](https://www.sciencedirect.com/science/article/abs/pii/S1529943017301912) found people with low back pain tend to have _less_ lumbar curve, not more. I still find it the clearest picture of why my back starts moving when my hips won't.
 
 {%include summarize-page.html src="/shoulder-pain"%}
+
+### Backpacks: Latch It Down
+
+A backpack is the same balancing act with the weight bolted on from outside. The pack hangs behind the spine, so to keep from tipping backward the trunk leans forward at the hips until the upper body's weight in front of the hip cancels the pack's weight behind it. The eyes still want to be level, so the top of the neck tips back and the head rides out in front. You can measure it: at 10% of body weight [young adults' trunks leaned forward](https://pubmed.ncbi.nlm.nih.gov/28506006/), and by 15% their heads had moved forward too. [Schoolkids show the same forward head at 15–20%](https://pubmed.ncbi.nlm.nih.gov/22246310/), and after a six-minute walk more than half of them felt it, mostly in the neck. Heavier pack, [more lean](https://pubmed.ncbi.nlm.nih.gov/15677062/).
+
+How much lean depends on how far behind you the pack's weight sits, which is why latching it down helps. With loose straps the pack slides down and swings away from your back, a long lever. Snug the shoulder straps and it comes in tight; clip the hip belt and part of the load goes onto the pelvis instead of hanging off the shoulders, [about 30% of the vertical force](https://pubmed.ncbi.nlm.nih.gov/15076788/) in the one study that measured it. The sternum strap keeps the shoulder straps from sliding apart. The [load-carriage research](https://pubmed.ncbi.nlm.nih.gov/15677062/), mostly on soldiers, lands in the same place: keep the load close to your own center of mass, and let a hip belt take it off your shoulders.
+
+Push the weight up with the straps loose, then hit Latched:
+
+{% include backpack-back.html %}
+
+How sure am I? The direction is solid; the sizes aren't. The degrees and centimeters in the figure come from a one-line torque balance, not a measurement. "Wear it high" is common advice, but the studies split: [one found fewer head and neck changes with the load low](https://pubmed.ncbi.nlm.nih.gov/19369727/), [another found a low load disturbed walking more](https://pubmed.ncbi.nlm.nih.gov/18667319/). So the part I trust is _close_, not _high_. The hip belt made people [feel steadier](https://pubmed.ncbi.nlm.nih.gov/25265931/) without measurably changing their sway. And the famous "no more than 10–15% of body weight": a [review](https://pubmed.ncbi.nlm.nih.gov/15864169/) found the data supports that range, but recommendations run [from 5% to 20%](https://pubmed.ncbi.nlm.nih.gov/23517005/), and the prospective studies [haven't found that heavier school bags cause back pain](https://pubmed.ncbi.nlm.nih.gov/29720469/). Nearly all of it is on kids. I read 10–15% as where posture starts to give, not a line where injury starts.
 
 ### The 5 Whys Applied to Back Pain
 

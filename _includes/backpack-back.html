@@ -1,0 +1,582 @@
+{%- comment -%} Side-view backpack model for /back-pain, the companion to
+banana-back.html. It reuses that figure's .bb styles and spine chain, so include
+it AFTER banana-back.html on the same page. The model is one torque balance
+about the hip: the trunk (pelvis + spine + head) leans forward until the upper
+body's weight in front of the hip cancels the pack's weight behind it. tan(lean)
+= m*d / (M*h + m*y), where m is the part of the pack the shoulders carry, d how
+far behind the hip its center of mass hangs and y how high. Latching the straps
+pulls the pack up and in (smaller d) and a hip belt hands up to ~30% of the
+vertical load to the pelvis (Lafiandra & Harman 2004), so less of m is on the
+trunk. The eyes stay level: only the top of the neck (C0-C2) extends to undo the
+lean, so the head rides forward with the trunk. Self-contained: inline SVG +
+vanilla JS, one instance per page. {%- endcomment -%}
+<style>
+  .bp {
+    --bp-pack: #0e7490;
+    --bp-strap: #0f766e;
+  }
+  @media (prefers-color-scheme: dark) {
+    .bp {
+      --bp-pack: #22d3ee;
+      --bp-strap: #5eead4;
+    }
+  }
+  [data-bs-theme="dark"] .bp {
+    --bp-pack: #22d3ee;
+    --bp-strap: #5eead4;
+  }
+  .bp-pack {
+    fill: var(--bp-pack);
+    fill-opacity: 0.22;
+    stroke: var(--bp-pack);
+    stroke-width: 2.5;
+    stroke-linejoin: round;
+  }
+  .bp-strap {
+    fill: none;
+    stroke: var(--bp-strap);
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .bp-torso {
+    fill: var(--bb-ink);
+    fill-opacity: 0.06;
+    stroke: var(--bb-soft);
+    stroke-width: 1.5;
+    stroke-linejoin: round;
+  }
+  .bp-clip {
+    fill: var(--bp-strap);
+  }
+  .bp-load {
+    stroke: var(--bb-bad);
+    stroke-width: 3;
+  }
+  .bp-com {
+    fill: var(--bb-bad);
+  }
+  .bp svg text.bp-strap-label {
+    fill: var(--bp-strap);
+  }
+  .bp svg text.bp-big {
+    font-size: 13px;
+    font-weight: 700;
+    fill: var(--bb-ink);
+  }
+  .bp-presets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+</style>
+
+<figure class="bb bp" id="backpack-back">
+  <svg viewBox="20 -66 320 498" role="img" aria-labelledby="bp-title">
+    <title id="bp-title">
+      Side view of a spine facing right, carrying a backpack. With the straps
+      loose the pack hangs low and away from the back, so the trunk leans
+      forward at the hip to balance it and the head rides forward, while the
+      eyes stay level. With the straps latched the pack sits snug against the
+      back and a hip belt hands part of the load to the pelvis, so the lean and
+      the forward head shrink.
+    </title>
+    <defs>
+      <marker
+        id="bp-arrowhead"
+        viewBox="0 0 10 10"
+        refX="8"
+        refY="5"
+        markerWidth="7"
+        markerHeight="7"
+        orient="auto"
+      >
+        <path class="bb-arrow" d="M0 0 L10 5 L0 10 Z" />
+      </marker>
+      <marker
+        id="bp-loadhead"
+        viewBox="0 0 10 10"
+        refX="8"
+        refY="5"
+        markerWidth="6"
+        markerHeight="6"
+        orient="auto"
+      >
+        <path class="bp-com" d="M0 0 L10 5 L0 10 Z" />
+      </marker>
+    </defs>
+    <!-- ghost: the same body with no pack, standing stacked -->
+    <g id="bp-ghostg">
+      <polyline class="bb-ghost" id="bp-ghost-spine" />
+      <circle class="bb-ghost" id="bp-ghost-head" r="25" />
+    </g>
+    <!-- plumb line straight up from the hip joint -->
+    <line class="bb-plumb" id="bp-plumb" />
+    <path class="bb-limb" id="bp-legs" />
+    <path class="bp-torso" id="bp-torso" />
+    <!-- the pack, its straps and its weight -->
+    <path class="bp-pack" id="bp-pack" />
+    <path class="bp-strap" id="bp-shoulder" />
+    <path class="bp-strap" id="bp-hipbelt" />
+    <rect class="bp-clip" id="bp-clip" width="8" height="8" rx="2" />
+    <circle class="bp-com" id="bp-com" r="4" />
+    <line class="bp-load" id="bp-load" marker-end="url(#bp-loadhead)" />
+    <path class="bb-pelvis" id="bp-pelvis" />
+    <path class="bb-sacrum" id="bp-sacrum" />
+    <circle class="bb-joint" id="bp-hipjoint" r="7" />
+    <path class="bb-cord" id="bp-cord" />
+    <g id="bp-verts"></g>
+    <path class="bb-head" id="bp-head" />
+    <circle class="bb-eye" id="bp-eye" r="3" />
+    <line class="bb-gaze" id="bp-gaze" marker-end="url(#bp-arrowhead)" />
+    <text class="bb-gaze-text" id="bp-gaze-label" text-anchor="end">
+      eyes stay level
+    </text>
+    <text class="bp-strap-label" id="bp-belt-label" text-anchor="middle">
+      hip belt
+    </text>
+    <text class="bp-strap-label" id="bp-sternum-label">sternum strap</text>
+    <text id="bp-ghost-label" text-anchor="end">no pack</text>
+    <text
+      class="bp-big"
+      id="bp-lean-text"
+      x="334"
+      y="384"
+      text-anchor="end"
+    ></text>
+    <text
+      class="bp-big"
+      id="bp-head-text"
+      x="334"
+      y="406"
+      text-anchor="end"
+    ></text>
+  </svg>
+  <div class="bb-controls">
+    <label
+      >Pack weight
+      <input type="range" id="bp-weight" min="0" max="30" value="20"
+    /></label>
+    <label
+      >Straps
+      <input
+        type="range"
+        id="bp-straps"
+        min="0"
+        max="100"
+        value="0"
+        aria-valuetext="loose"
+    /></label>
+    <div class="bb-row">
+      <p class="bb-readout" id="bp-readout" aria-live="polite"></p>
+      <div class="bp-presets">
+        <button type="button" class="bb-play" id="bp-loose">Loose</button>
+        <button type="button" class="bb-play" id="bp-latched">Latched</button>
+      </div>
+    </div>
+  </div>
+</figure>
+
+<script>
+  (function () {
+    var root = document.getElementById("backpack-back");
+    if (!root) return;
+    var $ = function (id) {
+      return root.querySelector("#" + id);
+    };
+    var NS = "http://www.w3.org/2000/svg";
+    var weight = $("bp-weight");
+    var straps = $("bp-straps");
+    var readout = $("bp-readout");
+    var HIP = { x: 170, y: 300 };
+    var SS0 = 38;
+    var S1 = { x: 150, y: 262 };
+    var CM = 0.24; // cm per SVG unit: L5 to C1 is 254 units, ~60 cm on an adult
+    // Upper body (head, arms, trunk) as a fraction of body weight, and the
+    // height of its center of mass above the hip joint (SVG units, ~36 cm).
+    var UPPER = 0.62;
+    var UPPER_H = 150;
+    var BELT_SHARE = 0.3; // Lafiandra & Harman 2004: ~30% of vertical load
+
+    // Same chain and neutral angles as banana-back.html.
+    var CHAIN = [
+      { n: "L5", len: 14, w: 15, rot: -16 },
+      { n: "L4", len: 14, w: 15, rot: -14 },
+      { n: "L3", len: 14, w: 15, rot: -10 },
+      { n: "L2", len: 14, w: 14, rot: -9 },
+      { n: "L1", len: 14, w: 14, rot: -8 },
+      { n: "T12", len: 11, w: 12, rot: 1 },
+    ];
+    for (var i = 11; i >= 1; i--)
+      CHAIN.push({ n: "T" + i, len: 10.5, w: 11, rot: 3.9 });
+    CHAIN.push(
+      { n: "C7", len: 8.5, w: 9, rot: -3 },
+      { n: "C6", len: 8.5, w: 9, rot: -5 },
+      { n: "C5", len: 8.5, w: 9, rot: -5 },
+      { n: "C4", len: 8.5, w: 9, rot: -5 },
+      { n: "C3", len: 8.5, w: 9, rot: -4 },
+      { n: "C2", len: 9, w: 9, rot: -3 },
+      { n: "C1", len: 6, w: 8, rot: -2 }
+    );
+    var SKULL_ROT = -3;
+    // To keep the eyes level, the lean is undone at the top of the neck.
+    var UP_NECK_W = { C1: 0.5, C0: 0.5 };
+
+    function rad(d) {
+      return (d * Math.PI) / 180;
+    }
+    function rot(p, deg, c) {
+      var a = rad(deg);
+      var dx = p.x - c.x;
+      var dy = p.y - c.y;
+      return {
+        x: c.x + dx * Math.cos(a) - dy * Math.sin(a),
+        y: c.y + dx * Math.sin(a) + dy * Math.cos(a),
+      };
+    }
+    function step(p, dir, len) {
+      return {
+        x: p.x + Math.sin(rad(dir)) * len,
+        y: p.y - Math.cos(rad(dir)) * len,
+      };
+    }
+    function pt(p) {
+      return p.x.toFixed(1) + " " + p.y.toFixed(1);
+    }
+    function set(el, attrs) {
+      for (var k in attrs) el.setAttribute(k, attrs[k]);
+    }
+    function mix(a, b, s) {
+      return a + (b - a) * s;
+    }
+    function mixPt(a, b, s) {
+      return { x: mix(a.x, b.x, s), y: mix(a.y, b.y, s) };
+    }
+    function smooth(pts, open) {
+      // Catmull-Rom spline through pts (closed unless open)
+      var n = pts.length;
+      var d = "M" + pt(pts[0]);
+      var last = open ? n - 1 : n;
+      var at = function (i) {
+        return open ? pts[Math.max(0, Math.min(n - 1, i))] : pts[(i + n) % n];
+      };
+      for (var i = 0; i < last; i++) {
+        var p0 = at(i - 1);
+        var p1 = at(i);
+        var p2 = at(i + 1);
+        var p3 = at(i + 2);
+        d +=
+          " C" +
+          pt({ x: p1.x + (p2.x - p0.x) / 6, y: p1.y + (p2.y - p0.y) / 6 }) +
+          " " +
+          pt({ x: p2.x - (p3.x - p1.x) / 6, y: p2.y - (p3.y - p1.y) / 6 }) +
+          " " +
+          pt(p2);
+      }
+      return open ? d : d + " Z";
+    }
+
+    // The whole trunk leans by `lean` about the hip (hip flexion); the top of
+    // the neck extends by the same amount so the head comes back level.
+    function spine(lean) {
+      var dir = SS0 + lean;
+      var p = rot(S1, lean, HIP);
+      var out = [];
+      CHAIN.forEach(function (v) {
+        var r = v.rot;
+        if (UP_NECK_W[v.n]) r -= lean * UP_NECK_W[v.n];
+        dir += r;
+        out.push({
+          n: v.n,
+          c: step(p, dir, v.len / 2),
+          dir: dir,
+          w: v.w,
+          len: v.len,
+        });
+        p = step(p, dir, v.len);
+      });
+      dir += SKULL_ROT - lean * UP_NECK_W.C0;
+      return { verts: out, top: p, headDir: dir };
+    }
+    var HEAD0 = spine(0).headDir;
+    function headPts(sp) {
+      var tilt = sp.headDir - HEAD0;
+      var o = sp.top;
+      function local(x, y) {
+        return rot({ x: o.x + x, y: o.y + y }, tilt, o);
+      }
+      return {
+        c: local(12, -24),
+        eye: local(30, -30),
+        outline: [
+          local(-10, 0),
+          local(-16, -28),
+          local(2, -52),
+          local(30, -50),
+          local(40, -32),
+          local(45, -18),
+          local(37, -14),
+          local(36, -2),
+          local(18, 6),
+        ],
+      };
+    }
+
+    var PELVIS = [
+      { x: 136, y: 236 },
+      { x: 168, y: 224 },
+      { x: 198, y: 246 },
+      { x: 190, y: 270 },
+      { x: 188, y: 292 },
+      { x: 204, y: 318 },
+      { x: 188, y: 332 },
+      { x: 160, y: 336 },
+      { x: 150, y: 312 },
+      { x: 140, y: 280 },
+    ];
+    var SACRUM = [
+      { x: 141, y: 256 },
+      { x: 159, y: 268 },
+      { x: 150, y: 296 },
+      { x: 138, y: 320 },
+      { x: 130, y: 300 },
+      { x: 130, y: 270 },
+    ];
+    // Body outline, neutral pose: up the back from the buttock to the base
+    // of the skull, then down the front of the neck, chest and belly.
+    var TORSO = [
+      { x: 116, y: 322 },
+      { x: 122, y: 282 },
+      { x: 130, y: 236 },
+      { x: 120, y: 192 },
+      { x: 108, y: 146 },
+      { x: 112, y: 100 },
+      { x: 130, y: 66 },
+      { x: 146, y: 32 },
+      { x: 178, y: 42 },
+      { x: 184, y: 66 },
+      { x: 198, y: 92 },
+      { x: 208, y: 132 },
+      { x: 204, y: 182 },
+      { x: 210, y: 232 },
+      { x: 208, y: 282 },
+      { x: 200, y: 322 },
+      { x: 160, y: 340 },
+    ];
+    // The pack, in the trunk's frame. Loose: slid down onto the buttocks and
+    // swung away from the back, top tipped out. Latched: pulled up and in,
+    // flush from the top of the shoulder blades down to the iliac crest.
+    var PACK_W = 44;
+    var PACK_H = 160;
+    var LOOSE = { c: { x: 74, y: 222 }, tip: -9 };
+    var LATCHED = { c: { x: 86, y: 162 }, tip: 2 };
+    var SHOULDER = { x: 150, y: 58 };
+    var CHEST = { x: 206, y: 122 };
+    var ASIS = { x: 198, y: 246 };
+
+    function packGeom(s) {
+      var c = mixPt(LOOSE.c, LATCHED.c, s);
+      var tip = mix(LOOSE.tip, LATCHED.tip, s);
+      var hw = PACK_W / 2;
+      var hh = PACK_H / 2;
+      var r = function (x, y) {
+        return rot({ x: c.x + x, y: c.y + y }, tip, c);
+      };
+      return {
+        c: c,
+        outline: [
+          r(-hw + 4, -hh),
+          r(hw - 6, -hh + 2),
+          r(hw, -hh + 20),
+          r(hw, hh - 8),
+          r(hw - 6, hh),
+          r(-hw + 6, hh),
+          r(-hw, hh - 10),
+          r(-hw, -hh + 24),
+        ],
+        topFront: r(hw - 4, -hh + 6),
+        lowFront: r(hw, hh - 34),
+        botFront: r(hw - 2, hh - 6),
+      };
+    }
+
+    // Solve the balance about the hip for the lean angle (degrees).
+    function leanFor(frac, s) {
+      if (frac <= 0) return 0;
+      var com = packGeom(s).c;
+      var m = frac * (1 - BELT_SHARE * s);
+      var d = HIP.x - com.x;
+      var y = HIP.y - com.y;
+      return (Math.atan2(m * d, UPPER * UPPER_H + m * y) * 180) / Math.PI;
+    }
+
+    var vg = $("bp-verts");
+    var rects = CHAIN.map(function () {
+      var r = document.createElementNS(NS, "rect");
+      r.setAttribute("class", "bb-vert");
+      r.setAttribute("rx", "2.5");
+      vg.appendChild(r);
+      return r;
+    });
+
+    var neutral = spine(0);
+    var HEADX0 = headPts(neutral).c.x;
+    $("bp-ghost-spine").setAttribute(
+      "points",
+      neutral.verts
+        .map(function (v) {
+          return pt(v.c);
+        })
+        .join(" ")
+    );
+    var gh = headPts(neutral).c;
+    set($("bp-ghost-head"), { cx: gh.x.toFixed(1), cy: gh.y.toFixed(1) });
+    set($("bp-ghost-label"), { x: gh.x - 30, y: gh.y + 4 });
+    set($("bp-plumb"), { x1: HIP.x, y1: HIP.y, x2: HIP.x, y2: -40 });
+    $("bp-legs").setAttribute(
+      "d",
+      "M" + pt(HIP) + " L173 362 L170 422 L198 422"
+    );
+    set($("bp-hipjoint"), { cx: HIP.x, cy: HIP.y });
+
+    function draw(frac, s) {
+      var lean = leanFor(frac, s);
+      var T = function (p) {
+        return rot(p, lean, HIP);
+      };
+      var Ts = function (pts) {
+        return pts.map(T);
+      };
+      $("bp-pelvis").setAttribute("d", smooth(Ts(PELVIS)));
+      $("bp-sacrum").setAttribute("d", smooth(Ts(SACRUM)));
+      $("bp-torso").setAttribute("d", smooth(Ts(TORSO)));
+
+      var sp = spine(lean);
+      sp.verts.forEach(function (v, i) {
+        set(rects[i], {
+          x: (v.c.x - v.w / 2).toFixed(1),
+          y: (v.c.y - v.len * 0.36).toFixed(1),
+          width: v.w,
+          height: (v.len * 0.72).toFixed(1),
+          transform: "rotate(" + v.dir.toFixed(1) + " " + pt(v.c) + ")",
+          class: lean > 3 && /^C[12]$/.test(v.n) ? "bb-vert hot" : "bb-vert",
+        });
+      });
+      var cord = sp.verts.map(function (v) {
+        return step(v.c, v.dir - 90, v.w / 2 + 3);
+      });
+      $("bp-cord").setAttribute("d", "M" + cord.map(pt).join(" L"));
+
+      var H = headPts(sp);
+      $("bp-head").setAttribute("d", smooth(H.outline));
+      set($("bp-eye"), { cx: H.eye.x.toFixed(1), cy: H.eye.y.toFixed(1) });
+      set($("bp-gaze"), { x1: H.eye.x + 8, y1: H.eye.y, x2: 332, y2: H.eye.y });
+      set($("bp-gaze-label"), { x: 334, y: H.eye.y - 9 });
+
+      // Pack, straps and the weight arrow.
+      var g = packGeom(s);
+      var packVis = frac > 0 ? 1 : 0.35;
+      $("bp-pack").setAttribute("d", smooth(Ts(g.outline)));
+      $("bp-pack").style.opacity = packVis;
+      var sh = T(SHOULDER);
+      var ch = T(CHEST);
+      var tf = T(g.topFront);
+      var lf = T(g.lowFront);
+      // Loose straps bow away from the body; latched ones hug it.
+      var slack = mix(18, 0, s);
+      $("bp-shoulder").setAttribute(
+        "d",
+        "M" +
+          pt(tf) +
+          " Q" +
+          pt({ x: (tf.x + sh.x) / 2 - slack, y: (tf.y + sh.y) / 2 - 6 }) +
+          " " +
+          pt(sh) +
+          " Q" +
+          pt({ x: ch.x + 4, y: sh.y + 6 }) +
+          " " +
+          pt(ch) +
+          " Q" +
+          pt({ x: ch.x - 20, y: ch.y + 60 + slack }) +
+          " " +
+          pt(lf)
+      );
+      $("bp-shoulder").style.opacity = packVis;
+      var bf = T(g.botFront);
+      var as = T(ASIS);
+      var beltOn = s > 0.55 ? Math.min(1, (s - 0.55) / 0.3) : 0;
+      $("bp-hipbelt").setAttribute(
+        "d",
+        "M" +
+          pt(bf) +
+          " Q" +
+          pt({ x: (bf.x + as.x) / 2, y: Math.max(bf.y, as.y) + 14 }) +
+          " " +
+          pt(as)
+      );
+      $("bp-hipbelt").style.opacity = beltOn * packVis;
+      $("bp-belt-label").style.opacity = beltOn * packVis;
+      set($("bp-belt-label"), { x: bf.x - 6, y: bf.y + 30 });
+      $("bp-sternum-label").style.opacity = beltOn * packVis;
+      set($("bp-sternum-label"), { x: ch.x + 12, y: ch.y + 5 });
+      $("bp-clip").style.opacity = beltOn * packVis;
+      set($("bp-clip"), { x: ch.x - 4, y: ch.y - 4 });
+
+      var com = T(g.c);
+      set($("bp-com"), { cx: com.x.toFixed(1), cy: com.y.toFixed(1) });
+      set($("bp-load"), {
+        x1: com.x,
+        y1: com.y,
+        x2: com.x,
+        y2: com.y + 6 + frac * 260,
+        opacity: frac > 0 ? 1 : 0,
+      });
+      $("bp-com").style.opacity = frac > 0 ? 1 : 0;
+
+      var fwdCm = (H.c.x - HEADX0) * CM;
+      $("bp-lean-text").textContent = "Trunk lean " + lean.toFixed(0) + "°";
+      $("bp-head-text").textContent =
+        "Head forward +" + Math.max(0, fwdCm).toFixed(0) + " cm";
+
+      var pct = Math.round(frac * 100);
+      var belt = Math.round(BELT_SHARE * s * 100);
+      straps.setAttribute(
+        "aria-valuetext",
+        s < 0.34 ? "loose" : s < 0.67 ? "part way" : "latched"
+      );
+      if (pct === 0) {
+        readout.textContent =
+          "Empty pack: nothing behind the hip to balance, so the spine stays stacked.";
+        return;
+      }
+      readout.textContent =
+        "Pack at " +
+        pct +
+        "% of body weight, straps " +
+        (s < 0.34 ? "loose" : s < 0.67 ? "part way" : "latched") +
+        ": the trunk leans " +
+        lean.toFixed(0) +
+        "° to put its weight back over the hip, and the head rides " +
+        Math.max(0, fwdCm).toFixed(0) +
+        " cm forward while the eyes stay level. " +
+        (belt > 0
+          ? "The hip belt hands ~" + belt + "% of the load to the pelvis."
+          : "The shoulders carry all of it.");
+    }
+
+    function update() {
+      draw(weight.value / 100, straps.value / 100);
+    }
+    weight.addEventListener("input", update);
+    straps.addEventListener("input", update);
+    $("bp-loose").addEventListener("click", function () {
+      straps.value = 0;
+      update();
+    });
+    $("bp-latched").addEventListener("click", function () {
+      straps.value = 100;
+      update();
+    });
+    update();
+  })();
+</script>
