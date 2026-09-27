@@ -41,7 +41,7 @@ This is a survey post — the thinking is fresh, names are provisional, and ther
 
 ## Yegge's Gas Town in one paragraph
 
-If you haven't read it, go read [Welcome to Gas City](https://steve-yegge.medium.com/welcome-to-gas-city-57f564bb3607) and [Gas Town: from Clown Show to v1.0](https://steve-yegge.medium.com/gas-town-from-clown-show-to-v1-0-c239d9a407ec). Short version: a long-lived **Mayor** agent runs the show, dispatching short-lived **Polecat** workers that do one job and disappear. The Mayor keeps state in beads (a dependency-aware issue tracker) and Dolt (a versioned database). The whole thing is the [MEOW stack](/how-igor-chops#the-8-stages-of-ai-coding) — Mayor, Engineers (Polecats), Oracle, Workers — and it's a real pattern, not a thought experiment. I'm running a version of it. If you want the why before the org-chart — what a city buys over a smarter prompt — start with [Why Gas City?](/why-gas-city).
+If you haven't read it, go read [Welcome to Gas City](https://steve-yegge.medium.com/welcome-to-gas-city-57f564bb3607) and [Gas Town: from Clown Show to v1.0](https://steve-yegge.medium.com/gas-town-from-clown-show-to-v1-0-c239d9a407ec). Short version: a long-lived **Mayor** agent runs the show, dispatching short-lived **Polecat** workers that do one job and disappear. The Mayor keeps state in beads (a dependency-aware issue tracker) and Dolt (a versioned database). The whole thing is the [MEOW stack](/how-igor-chops#the-8-stages-of-ai-coding), Molecular Expression of Work, and it's a real pattern, not a thought experiment. I'm running a version of it. If you want the why before the org-chart — what a city buys over a smarter prompt — start with [Gas City](/gas-city).
 
 ## From Mad Max to org-chart
 
