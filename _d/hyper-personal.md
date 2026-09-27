@@ -18,7 +18,7 @@ Jeff Bezos has always had a personal chef who knows he hates capers but loves di
 
 It's also not just words. The same machinery hyper-personalizes images, podcasts, songs, TikToks — your own personalized YouTube channel-of-one. Whatever medium you consume, AI can build a version of it tuned to you alone.
 
-Where does all that newly-cheap personal attention go? **Learning is the headline win.** A student — or any adult trying to pick up a new skill — used to be stuck with the average textbook plus whatever attention they could get from a teacher splitting time across 30 kids. Now: a tutor who knows the specific prior misconception blocking *you*, who already understands what you've grokked, who explains the next concept in vocabulary you ground in. The kid who couldn't get past chapter 4 and the kid who's three chapters ahead get different explanations from the same source, each pitched to where they actually are. That's a step-function improvement in how fast humans can learn anything.
+Where does all that newly-cheap personal attention go? **Learning is the headline win.** A student — or any adult trying to pick up a new skill — used to be stuck with the average textbook plus whatever attention they could get from a teacher splitting time across 30 kids. Now: a tutor who knows the specific prior misconception blocking _you_, who already understands what you've grokked, who explains the next concept in vocabulary you ground in. The kid who couldn't get past chapter 4 and the kid who's three chapters ahead get different explanations from the same source, each pitched to where they actually are. That's a step-function improvement in how fast humans can learn anything.
 
 Then **coaching** — a life coach who's read your journal, knows your sleep, sees what you're actually struggling with this season. **Experiences** — a children's book starring your kid, a podcast that walks you through the 7 Habits in your own dialect, a workout titrated to today's HRV. **Entertainment** — jokes in your specific sense of humor, memes that hit because they're tuned to your taste.
 
@@ -40,6 +40,7 @@ And the unlock for creators is enormous. The publisher-reader transaction invert
   - [Hyper-personalization to your group or tribe](#hyper-personalization-to-your-group-or-tribe)
 - [Downside of hyper personalization](#downside-of-hyper-personalization)
   - [We want shared experiences](#we-want-shared-experiences)
+  - [Why SaaS still lives](#why-saas-still-lives)
   - [Choice Paralysis](#choice-paralysis)
   - [When do you stop? When is it worth it?](#when-do-you-stop-when-is-it-worth-it)
   - [What makes it good?](#what-makes-it-good)
@@ -118,7 +119,7 @@ Old hyper-personalization was tailored to your _measurements_. New hyper-persona
 
 ### The Winchester Mystery House: Hyper-Personalization of Software Itself
 
-When AI makes code cheap enough, hyper-personalization escapes from content into the tools themselves. Instead of choosing from pre-built software, individuals build sprawling, idiosyncratic systems tailored to their exact needs — no master plan, just continuous building. Drew Breunig calls this the [Winchester Mystery House pattern](/ai-journal#the-winchester-mystery-house-of-software-when-code-gets-too-cheap-to-care-about): software as a 500-room mansion built for an audience of one. The feedback loop collapses — you prompt, you review, you use — so the tools evolve to fit you perfectly. See my own [pet projects](/pet-projects) for a living example.
+When AI makes code cheap enough, hyper-personalization escapes from content into the tools themselves. Instead of choosing from pre-built software, individuals build sprawling, idiosyncratic systems tailored to their exact needs — no master plan, just continuous building. Drew Breunig calls this the [Winchester Mystery House pattern](/ai-journal#the-winchester-mystery-house-of-software-when-code-gets-too-cheap-to-care-about): software as a 500-room mansion built for an audience of one. The feedback loop collapses — you prompt, you review, you use — so the tools evolve to fit you perfectly. See my own [pet projects](/pet-projects) for a living example, and [why SaaS still lives](#why-saas-still-lives) for the limits.
 
 ### Your AI Second Brain — The Ultimate Personalization
 
@@ -164,6 +165,15 @@ The unit of personalization is whoever the second brain has context on. Couple, 
 
 - There is something wonderful about everyone knowing the same thing.
 - Like when someone gives you a quote from a movie that you know and enjoy.
+
+### Why SaaS still lives
+
+If anyone can build the exact fix for their exact problem in an afternoon, why would anyone keep paying for SaaS? I build my own tools all the time, and I still pay for plenty of software. Two reasons:
+
+1. **Software rots.** The afternoon build is the cheap part. Then the API you call changes its auth, the library you depend on ships a breaking major version, the OS updates, a security hole shows up in a transitive dependency, the data format drifts. Nobody is on call for your one-off tool. You are the maintainer, forever, for an audience of one. A vendor spreads that upkeep across thousands of customers; you pay the whole bill yourself, usually on the morning you needed the tool to just work. I feel this with my own [pet projects](/pet-projects): the builds are fun, the upkeep is where the time goes.
+2. **I'm not an expert in the solution space.** I know my problem, not the problem space. A vendor has watched thousands of customers hit it and has seen the edge cases, the workflows I haven't imagined, and the fixes that looked obvious and failed. When I build it myself I get exactly what I asked for, which is capped by what I knew to ask for. Half the value of good software is the ideas I'd never have thought of.
+
+The flip side, honestly: DIY wins when the problem is narrow, the tool is small enough to rewrite instead of maintain, nothing bad happens when it breaks, and the fit matters more than the features. That covers most of my personal tooling. It rarely covers payroll, security, or anything other people depend on.
 
 ### Choice Paralysis
 
