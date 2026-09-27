@@ -1,5 +1,31 @@
 [
   {
+    "num": 11,
+    "title": "Zero Tokens",
+    "date": "September 27, 2026",
+    "img": "/images/den/den-011.webp",
+    "alt": "The Den #11: Zero Tokens — four panels in the plush-render house style, all in the lamp-lit attic den. 1: Igor, a raccoon in rainbow glasses, a green TECHNOLOGIST tee, denim shorts and one blue and one yellow croc, spreads his arms over a tabletop toy city of little houses where tiny blue plush robots sit at tiny desks: 'I BUILT A WHOLE CITY OF AGENTS.' Larry — the grey-bearded raccoon in wire-rim spectacles and a tweed waistcoat, one arm ending in a giant red lobster claw — from the green leather armchair: 'HOW MANY TOKENS?' 2: Igor holds an empty glass jar, a paw on his chin: 'ZERO.' Larry: 'AH.' 3: Close on the toy city: every robot sits idle in a row, lamp eyes dimmed. Igor, crouched beside the table: 'WHY IS NOBODY WORKING?' Larry: 'NO TOKENS, NO TICKETS.' 4: Igor throws his arms wide in front of the quiet city: 'SO WHAT DID IT DO ALL WEEK?' Larry, contentedly writing: 'ZERO BUGS. BEST WEEK YET.'",
+    "panels": [
+      "/images/den/den-011-p1.webp",
+      "/images/den/den-011-p2.webp",
+      "/images/den/den-011-p3.webp",
+      "/images/den/den-011-p4.webp"
+    ]
+  },
+  {
+    "num": 10,
+    "title": "Our Most Prolific Contributor",
+    "date": "September 27, 2026",
+    "img": "/images/den/den-010.webp",
+    "alt": "The Den #10: Our Most Prolific Contributor — four panels in the plush-render house style, all in the lamp-lit attic den. 1: Igor, a raccoon in rainbow glasses, a green TECHNOLOGIST tee, denim shorts and one blue and one yellow croc, points at a glowing laptop on a small desk: 'THE COCKPIT HAS NO TESTS. HOW?' Larry — the grey-bearded raccoon in wire-rim spectacles and a tweed waistcoat, one arm ending in a giant red lobster claw — looks up from his clipboard in the green leather armchair: 'LET ME LOOK.' 2: Larry has opened a low cupboard under the eaves and an avalanche of small cardboard boxes pours out around his shoes: 'THIRTY-TWO HUNDRED OF THEM.' Igor, staring at the pile: 'NOBODY TOLD ANYONE?' 3: Two small blue plush robots carry boxes toward a big wooden rubber stamp on the desk. Igor, one finger up: 'RUN THEM ON EVERY COMMIT.' Larry, writing: 'DONE.' 4: Larry holds up a long paper scroll of the commit log, and every line on it reads 'AUTHOR: TEST'. Igor points at it: 'WHY IS EVERY COMMIT SIGNED 'TEST'?' Larry, unbothered: 'THEY GOT A JOB. NOW THEY WANT CREDIT.'",
+    "panels": [
+      "/images/den/den-010-p1.webp",
+      "/images/den/den-010-p2.webp",
+      "/images/den/den-010-p3.webp",
+      "/images/den/den-010-p4.webp"
+    ]
+  },
+  {
     "num": 9,
     "title": "He Speaks Human",
     "date": "September 26, 2026",
