@@ -1,0 +1,458 @@
+{%- comment -%} Side-view stick figure for /back-pain. Two sliders: hip strength
+tilts the pelvis forward and the lumbar spine bananas to keep the eyes level (a
+faint ghost shows where the gaze would go without the banana); head forward
+pushes the head out past the shoulders and the neck bends to keep the eyes
+level. Self-contained: inline SVG + vanilla JS, one instance per page. {%-
+endcomment -%}
+<style>
+  .bb {
+    --bb-ink: #1b1f24;
+    --bb-soft: #6b7280;
+    --bb-panel: #f4f5f7;
+    --bb-rule: #d8dbe0;
+    --bb-ok: #15803d;
+    --bb-bad: #c2410c;
+    --bb-pelvis: #7e22ce;
+    --bb-ghost: #9ca3af;
+    border: 1px solid var(--bb-rule);
+    border-radius: 10px;
+    background: var(--bb-panel);
+    color: var(--bb-ink);
+    padding: 12px 14px 14px;
+    margin: 1rem auto 1.25rem;
+    max-width: 560px;
+  }
+  @media (prefers-color-scheme: dark) {
+    .bb {
+      --bb-ink: #e5e7eb;
+      --bb-soft: #9ca3af;
+      --bb-panel: #1f2328;
+      --bb-rule: #3a3f46;
+      --bb-ok: #4ade80;
+      --bb-bad: #fb923c;
+      --bb-pelvis: #c084fc;
+      --bb-ghost: #6b7280;
+    }
+  }
+  [data-bs-theme="dark"] .bb {
+    --bb-ink: #e5e7eb;
+    --bb-soft: #9ca3af;
+    --bb-panel: #1f2328;
+    --bb-rule: #3a3f46;
+    --bb-ok: #4ade80;
+    --bb-bad: #fb923c;
+    --bb-pelvis: #c084fc;
+    --bb-ghost: #6b7280;
+  }
+  .bb svg {
+    display: block;
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .bb-body {
+    fill: none;
+    stroke: var(--bb-ink);
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .bb-spine {
+    fill: none;
+    stroke-width: 7;
+    stroke-linecap: round;
+  }
+  .bb-head {
+    fill: var(--bb-panel);
+    stroke: var(--bb-ink);
+    stroke-width: 4;
+  }
+  .bb-eye {
+    fill: var(--bb-ink);
+  }
+  .bb-pelvis {
+    fill: var(--bb-pelvis);
+    fill-opacity: 0.25;
+    stroke: var(--bb-pelvis);
+    stroke-width: 3;
+  }
+  .bb-gaze {
+    stroke: var(--bb-ok);
+    stroke-width: 2;
+    stroke-dasharray: 6 5;
+    fill: none;
+  }
+  .bb-ghost {
+    stroke: var(--bb-ghost);
+    stroke-width: 3;
+    stroke-dasharray: 3 5;
+    fill: none;
+    stroke-linecap: round;
+  }
+  .bb-front {
+    fill: none;
+    stroke: var(--bb-ink);
+    stroke-width: 3;
+    stroke-linecap: round;
+    opacity: 0.45;
+  }
+  .bb-neutral {
+    fill: none;
+    stroke: var(--bb-ok);
+    stroke-width: 2;
+    stroke-dasharray: 4 4;
+    opacity: 0;
+  }
+  .bb-plumb {
+    stroke: var(--bb-soft);
+    stroke-width: 1.5;
+    stroke-dasharray: 2 4;
+  }
+  .bb-lever {
+    stroke: var(--bb-bad);
+    stroke-width: 3;
+  }
+  .bb-label {
+    font:
+      600 12px system-ui,
+      sans-serif;
+    fill: var(--bb-soft);
+  }
+  .bb-controls {
+    display: grid;
+    gap: 10px;
+    margin-top: 8px;
+  }
+  .bb-controls label {
+    display: grid;
+    grid-template-columns: 7.5em 1fr;
+    align-items: center;
+    gap: 10px;
+    font:
+      500 14px system-ui,
+      sans-serif;
+  }
+  .bb-controls input[type="range"] {
+    width: 100%;
+    accent-color: var(--bb-pelvis);
+  }
+  .bb-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .bb-play {
+    font:
+      600 14px system-ui,
+      sans-serif;
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: 1px solid var(--bb-rule);
+    background: var(--bb-ink);
+    color: var(--bb-panel);
+    cursor: pointer;
+    min-height: 36px;
+  }
+  .bb-readout {
+    font:
+      400 14px system-ui,
+      sans-serif;
+    color: var(--bb-soft);
+    margin: 0;
+    flex: 1 1 14em;
+  }
+</style>
+
+<figure class="bb" id="banana-back">
+  <svg viewBox="30 0 300 420" role="img" aria-labelledby="bb-title">
+    <title id="bb-title">
+      Side view of a standing figure facing right. Weak hips tilt the pelvis
+      forward and the lower back arches into a banana to keep the eyes level. A
+      forward head bends the neck to keep the eyes level.
+    </title>
+    <!-- ghost: where the trunk and gaze would go if the spine did not bend -->
+    <g class="bb-ghostg">
+      <line class="bb-ghost" id="bb-ghost-trunk" />
+      <circle class="bb-ghost" id="bb-ghost-head" r="24" />
+      <line class="bb-ghost" id="bb-ghost-gaze" />
+      <text class="bb-label" id="bb-ghost-label" x="214" y="150">
+        <tspan x="214">no banana:</tspan>
+        <tspan x="214" dy="15">eyes on the floor</tspan>
+      </text>
+    </g>
+    <!-- legs -->
+    <path
+      class="bb-body"
+      d="M160 250 L160 322 L158 398 M158 398 L186 398"
+      id="bb-legs"
+    />
+    <!-- pelvis -->
+    <path class="bb-pelvis" id="bb-pelvis" />
+    <!-- front of the trunk (belly) and the neutral spine for reference -->
+    <path class="bb-front" id="bb-front" />
+    <path class="bb-neutral" id="bb-neutral" />
+    <!-- spine -->
+    <path class="bb-spine" id="bb-spine" />
+    <path class="bb-spine" id="bb-neck" />
+    <!-- neck lever -->
+    <line class="bb-plumb" id="bb-plumb" />
+    <line class="bb-lever" id="bb-lever" />
+    <text class="bb-label" id="bb-lever-label">lever</text>
+    <!-- head -->
+    <circle class="bb-head" id="bb-head" r="24" />
+    <circle class="bb-eye" id="bb-eye" r="3" />
+    <line class="bb-gaze" id="bb-gaze" />
+    <text class="bb-label" id="bb-gaze-label">eyes level</text>
+  </svg>
+  <div class="bb-controls">
+    <label
+      >Hip strength
+      <input type="range" id="bb-hips" min="0" max="100" value="100"
+    /></label>
+    <label
+      >Head forward
+      <input type="range" id="bb-headf" min="0" max="100" value="0"
+    /></label>
+    <div class="bb-row">
+      <p class="bb-readout" id="bb-readout" aria-live="polite"></p>
+      <button type="button" class="bb-play" id="bb-play">Play</button>
+    </div>
+  </div>
+</figure>
+
+<script>
+  (function () {
+    var root = document.getElementById("banana-back");
+    if (!root) return;
+    var $ = function (id) {
+      return root.querySelector("#" + id);
+    };
+    var hips = $("bb-hips");
+    var headf = $("bb-headf");
+    var readout = $("bb-readout");
+    var play = $("bb-play");
+    var HIP = { x: 160, y: 250 };
+    var MAX_TILT = 22; // degrees of extra anterior pelvic tilt at zero strength
+
+    function rot(p, deg, c) {
+      var a = (deg * Math.PI) / 180;
+      var dx = p.x - c.x;
+      var dy = p.y - c.y;
+      return {
+        x: c.x + dx * Math.cos(a) - dy * Math.sin(a),
+        y: c.y + dx * Math.sin(a) + dy * Math.cos(a),
+      };
+    }
+    function pt(p) {
+      return p.x.toFixed(1) + " " + p.y.toFixed(1);
+    }
+    function set(el, attrs) {
+      for (var k in attrs) el.setAttribute(k, attrs[k]);
+    }
+    function mix(a, b, t) {
+      return a + (b - a) * t;
+    }
+
+    // Lumbar + thoracic spine for a given pelvic tilt t (degrees).
+    function spinePath(t) {
+      // Sacrum top (where the lumbar spine starts), tilted with the pelvis.
+      var S = rot({ x: 146, y: 214 }, t, HIP);
+      // The pelvis' "up" direction after tilting forward.
+      var up = rot({ x: 0, y: -1 }, t, { x: 0, y: 0 });
+      // Thorax stays upright so the eyes stay level; it sways back a touch
+      // as the lumbar arcs (hyperlordosis).
+      var T12 = { x: 144 - t * 0.4, y: 150 };
+      var bend = 24 + t * 1.3; // how far the lumbar heads forward first
+      var P1 = { x: S.x + up.x * bend, y: S.y + up.y * bend };
+      var P2 = { x: T12.x + t * 0.7, y: T12.y + 30 };
+      return (
+        "M" +
+        pt(S) +
+        " C" +
+        pt(P1) +
+        " " +
+        pt(P2) +
+        " " +
+        pt(T12) +
+        " C" +
+        pt({ x: T12.x - 7, y: 128 }) +
+        " " +
+        pt({ x: 138, y: 104 }) +
+        " 146 88"
+      );
+    }
+
+    function draw(strength, fwd) {
+      var t = (1 - strength) * MAX_TILT; // pelvic tilt, clockwise = forward
+      var f = fwd; // 0..1 head forward
+
+      // Pelvis: a bowl around the hip joint, rotated by the tilt.
+      var bowl = [
+        { x: 136, y: 214 },
+        { x: 176, y: 212 },
+        { x: 184, y: 244 },
+        { x: 168, y: 264 },
+        { x: 142, y: 262 },
+        { x: 132, y: 240 },
+      ].map(function (p) {
+        return rot(p, t, HIP);
+      });
+      $("bb-pelvis").setAttribute("d", "M" + bowl.map(pt).join(" L") + " Z");
+
+      var C7 = { x: 146, y: 88 };
+      var S = rot({ x: 146, y: 214 }, t, HIP);
+      var spine = $("bb-spine");
+      spine.setAttribute("d", spinePath(t));
+      var neutral = $("bb-neutral");
+      neutral.setAttribute("d", spinePath(0));
+      neutral.style.opacity = t > 4 ? 1 : 0;
+
+      // Belly: the front of the trunk pushes out as the pelvis tips.
+      var pubis = rot({ x: 180, y: 250 }, t, HIP);
+      $("bb-front").setAttribute(
+        "d",
+        "M" +
+          pt({ x: 176, y: 104 }) +
+          " C" +
+          pt({ x: 186, y: 150 }) +
+          " " +
+          pt({ x: 190 + t * 1.1, y: 205 }) +
+          " " +
+          pt(pubis)
+      );
+      var lumbarBad = t / MAX_TILT;
+      spine.style.stroke = lumbarBad > 0.35 ? "var(--bb-bad)" : "var(--bb-ok)";
+
+      // Head: pushed forward and a little down, eyes kept level.
+      var Hc = { x: mix(160, 196, f), y: mix(50, 56, f) };
+      var skull = { x: Hc.x - 12, y: Hc.y + 20 };
+      set($("bb-head"), { cx: Hc.x.toFixed(1), cy: Hc.y.toFixed(1) });
+      var eye = { x: Hc.x + 12, y: Hc.y - 3 };
+      set($("bb-eye"), { cx: eye.x.toFixed(1), cy: eye.y.toFixed(1) });
+      var neck = $("bb-neck");
+      neck.setAttribute(
+        "d",
+        "M" +
+          pt(C7) +
+          " C" +
+          pt({ x: C7.x + 22 * f + 2, y: C7.y - 12 }) +
+          " " +
+          pt({ x: skull.x - 6, y: skull.y + 10 }) +
+          " " +
+          pt(skull)
+      );
+      neck.style.stroke = f > 0.35 ? "var(--bb-bad)" : "var(--bb-ok)";
+      set($("bb-gaze"), {
+        x1: eye.x + 6,
+        y1: eye.y,
+        x2: 322,
+        y2: eye.y,
+      });
+      set($("bb-gaze-label"), { x: 236, y: eye.y - 8 });
+
+      // Plumb line from the ear and the lever arm to the shoulder.
+      var ear = { x: Hc.x - 2, y: Hc.y + 2 };
+      set($("bb-plumb"), { x1: ear.x, y1: ear.y, x2: ear.x, y2: C7.y + 8 });
+      set($("bb-lever"), {
+        x1: C7.x,
+        y1: C7.y + 8,
+        x2: ear.x,
+        y2: C7.y + 8,
+        opacity: f > 0.05 ? 1 : 0,
+      });
+      set($("bb-lever-label"), {
+        x: C7.x + 2,
+        y: C7.y + 24,
+        opacity: f > 0.3 ? 1 : 0,
+      });
+
+      // Ghost: trunk tilts with the pelvis, head follows, gaze drops.
+      var ghostG = root.querySelector(".bb-ghostg");
+      ghostG.style.opacity = t > 2 ? Math.min(1, t / 10) : 0;
+      var gTop = rot({ x: S.x, y: S.y - 150 }, t, S);
+      set($("bb-ghost-trunk"), { x1: S.x, y1: S.y, x2: gTop.x, y2: gTop.y });
+      var gHead = rot({ x: S.x + 14, y: S.y - 180 }, t, S);
+      set($("bb-ghost-head"), { cx: gHead.x, cy: gHead.y });
+      var gEye = rot({ x: S.x + 26, y: S.y - 183 }, t, S);
+      var gEnd = rot({ x: S.x + 176, y: S.y - 183 }, t, S);
+      set($("bb-ghost-gaze"), {
+        x1: gEye.x,
+        y1: gEye.y,
+        x2: gEnd.x,
+        y2: gEnd.y,
+      });
+
+      var msg;
+      if (t < 4 && f < 0.15) {
+        msg =
+          "Hips doing their job, head over shoulders: spine stacked, eyes level for free.";
+      } else {
+        var parts = [];
+        if (t >= 4)
+          parts.push(
+            "pelvis tipped ~" +
+              Math.round(t) +
+              "° forward, so the low back bananas to keep the eyes level"
+          );
+        if (f >= 0.15)
+          parts.push(
+            "head out past the shoulders, so the neck bends to keep the eyes level (red bar = lever arm)"
+          );
+        msg = parts.join("; ") + ".";
+        msg = msg.charAt(0).toUpperCase() + msg.slice(1);
+      }
+      readout.textContent = msg;
+    }
+
+    function update() {
+      draw(hips.value / 100, headf.value / 100);
+    }
+    hips.addEventListener("input", update);
+    headf.addEventListener("input", update);
+
+    var reduce =
+      window.matchMedia &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var anim = null;
+    play.addEventListener("click", function () {
+      if (anim) {
+        cancelAnimationFrame(anim);
+        anim = null;
+        play.textContent = "Play";
+        return;
+      }
+      if (reduce) {
+        // No motion: jump between the stacked and the collapsed pose.
+        var collapsed = hips.value > 50;
+        hips.value = collapsed ? 10 : 100;
+        headf.value = collapsed ? 90 : 0;
+        update();
+        return;
+      }
+      var start = null;
+      var DUR = 6000;
+      play.textContent = "Stop";
+      function step(ts) {
+        if (start === null) start = ts;
+        var p = ((ts - start) % DUR) / DUR;
+        // 0→1→0 ease: weaken hips, then poke the head, then recover.
+        var w = 0.5 - 0.5 * Math.cos(p * 2 * Math.PI);
+        hips.value = Math.round(100 - 90 * Math.min(1, w * 1.4));
+        headf.value = Math.round(90 * Math.max(0, (w - 0.3) / 0.7));
+        update();
+        if (ts - start < DUR * 2) {
+          anim = requestAnimationFrame(step);
+        } else {
+          anim = null;
+          play.textContent = "Play";
+        }
+      }
+      anim = requestAnimationFrame(step);
+    });
+
+    update();
+  })();
+</script>
