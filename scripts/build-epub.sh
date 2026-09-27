@@ -75,10 +75,7 @@ SOURCES = [root / "_d", root / "_posts"]
 # Files Jekyll excludes via _config.yml. Mirror the list here so the EPUB
 # doesn't ship files that the site itself hides. Keep in sync with the
 # `exclude:` block in _config.yml (specifically its `_d/*.md` entries).
-JEKYLL_EXCLUDES = {
-    "_d/positive-mitzvahs.md",
-    "_d/negative-mitzvahs.md",
-}
+JEKYLL_EXCLUDES: set[str] = set()
 
 # Liquid tag/expression stripper.
 #   {% ... %}   — tag: remove entirely (may span lines for `raw`/`highlight` blocks)
