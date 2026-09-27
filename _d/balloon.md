@@ -31,6 +31,7 @@ Want to plaster a huge smile on someone's face with 10 cents of material and 20 
     - [But boys want guns, and girls want mermaids.](#but-boys-want-guns-and-girls-want-mermaids)
 - [Balloon inflators](#balloon-inflators)
     - [Manual Slow: Qualtrix 160 - in my cargo pants](#manual-slow-qualtrix-160---in-my-cargo-pants)
+    - [Keep the pump at hand](#keep-the-pump-at-hand)
     - [Manual fast: Qualtrix 260 - in my travel backpack](#manual-fast-qualtrix-260---in-my-travel-backpack)
     - [Portable Electric](#portable-electric)
 - [Some of my creations](#some-of-my-creations)
@@ -142,6 +143,20 @@ Decided a water gun blaster is fine. I now make that. I also make a water gun bl
 This thing is designed for Q160s, is annoyingly slow, like 20 pumps slow, but it fits comfortably in my cargo pocket so I'm always ready to make a balloon (even if incredibly slowly). Perfect when you see a kid.
 
 {%include bp_table.html path="blog" is="balloon_thanks.jpg;balloon_pump_q160.jpg;" %}
+
+#### Keep the pump at hand
+
+<figure class="float-right-img" style="width:35%;">
+<img src="/images/balloon-pump-retractor-backpack.webp" alt="Green and pink hand balloon pump on a retractable reel, clipped with a red carabiner to a backpack shoulder strap" />
+<figcaption><small><em>Stage 4: the pump on a reel, clipped to my backpack strap.</em></small></figcaption>
+</figure>
+
+A pump you have to dig out is a pump you don't use. How my carry evolved:
+
+1. Start with a small pump in your pocket.
+2. Crazy-glue a carabiner to the pump so it clips onto anything.
+3. Newer pumps come with a clip built in, no glue needed.
+4. Put it on a retractable reel clipped to your backpack strap. It's always at hand, and it snaps back when you let go.
 
 #### Manual fast: Qualtrix 260 - in my travel backpack
 
