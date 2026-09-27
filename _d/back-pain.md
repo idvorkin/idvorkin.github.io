@@ -54,15 +54,15 @@ If your hips or shoulders are stiff, your back will compensate by moving - and t
 
 ### Weak Hips Make a Banana Back
 
-Here's the version of this I can actually picture. When your glutes are weak and your hip flexors are tight (hello, desk chair), the pelvis tips forward. If your back stayed rigid, your whole trunk would tip with it and you'd be staring at the floor. But your eyes want to stay level, looking straight ahead, so something has to bend: the lower back arcs to pull the torso back upright, and your spine turns into a banana. The lumbar spine, the part McGill wants stiff and neutral, now spends all day parked near the end of its range.
+Here's the version of this I can actually picture. When your glutes are weak and your hip flexors are tight (hello, desk chair), the pelvis tips forward. If your back stayed rigid, your whole trunk would tip with it and you'd be staring at the floor. But your eyes want to stay level (spine surgeons call the whole balancing act the [cone of economy](https://pmc.ncbi.nlm.nih.gov/articles/PMC9381078/): head over feet, gaze level), so something has to bend: the lower back arches to pull the torso back upright, and your spine turns into a banana. It doesn't bend evenly, either. The bottom of the lumbar curve [tracks the slope of the sacrum](https://pmc.ncbi.nlm.nih.gov/articles/PMC11289530/), and about two-thirds of it lives at L4–S1. The lumbar spine, the part McGill wants stiff and neutral, now spends all day parked near the end of its range. (PTs call this the lordotic posture. It's not swayback, where the pelvis slides forward and the upper back leans behind it; [Physiopedia](https://www.physio-pedia.com/Sway_Back_Posture) has the difference.)
 
-Drag the hip slider, or hit Play, and watch the gaze line. It never moves; the lower back pays for it:
+Drag the hip slider, or hit Play, and watch the gaze line. It never moves; L4–S1 pays for it:
 
 {% include banana-back.html %}
 
 ### The Neck Poke
 
-Same trick, one floor up. My head drifts toward the screen, and to keep my eyes level my neck bends forward at the bottom and cranks back at the top. The head weighs 10-12 lbs, and the further it sits in front of the shoulders, the longer the lever the neck muscles hold it on (the red bar above). [Hansraj's model](https://pubmed.ncbi.nlm.nih.gov/25393825/) of tipping the head forward puts the load on the neck at 27 lbs at 15 degrees and 60 lbs at 60 degrees. And [adults with neck pain do tend to have more forward head posture](https://pubmed.ncbi.nlm.nih.gov/31773477/).
+Same trick, one floor up. My head drifts toward the screen, and to keep my eyes level the bottom of my neck bends forward while the top cranks back. [Cadaver work](https://academic.oup.com/ptj/article/97/7/756/3746014) shows exactly that split: C4–C6 flex, the joints under the skull extend, the little suboccipital muscles end up shortest, and the extensors across C4–C6 get stretched. The head weighs 10-12 lbs, and the further it sits in front of the shoulders, the longer the lever the neck muscles hold it on (the red bar above). The famous numbers, [Hansraj's](https://pubmed.ncbi.nlm.nih.gov/25393825/) 27 lbs at 15 degrees up to 60 lbs at 60 degrees, are for tilting the head down to read a phone, not for sliding it forward with the eyes level, so read them as the direction, not the size of the poke. And [adults with neck pain do tend to have more forward head posture](https://pubmed.ncbi.nlm.nih.gov/31773477/).
 
 The fix has the same shape for both: get the ball-and-socket joints doing their job, so the spine doesn't have to bend to make up the difference.
 
