@@ -19,6 +19,7 @@ You've heard of agents: AI that can use tools, browse the web, write code. In ea
 <!-- vim-markdown-toc-start -->
 
 - [What is a claw?](#what-is-a-claw)
+- [Muse: a claw a grandma can use](#muse-a-claw-a-grandma-can-use)
 - [How we got the word](#how-we-got-the-word)
 - [Karpathy's onion](#karpathys-onion)
 - [Security: the lethal trifecta](#security-the-lethal-trifecta)
@@ -46,6 +47,14 @@ Karpathy's "Dobby the House Elf" hits all three. Dobby knows every smart device 
 Mine is [Larry](/larry), my life coach. Standing in the Bremerton ferry line, I dictated three work items into Telegram in under a minute ("Remove changelog from Algolia search index" was one), and each came back as a merged PR while I looked out the window. Memory of my projects, messaging where I already am, autonomous action: all three in one exchange.
 
 Notice that every claw has a name. Dobby. OpenClaw ships a `soul.md`, a personality document the agent writes about itself, and on MoltBook identity was [the #1 topic](https://arxiv.org/html/2602.12634v1). [Naming your AI matters](/larry#why-larry-has-a-name): "open my life-tracking dashboard" is a chore, "talk to Larry" is a conversation.
+
+## Muse: a claw a grandma can use
+
+[Muse](https://9to5mac.com/2026/09/17/meta-ai-launches-muse-personal-agent-including-a-new-mobile-app-for-iphone/), Meta's personal agent, is great, and it's the first claw-ish thing I'd hand to anyone. No server to babysit, no Telegram bot to wire up, no `soul.md` to write. You install an app and talk to it. It's friendly enough a grandma can use it, and that includes the part that makes a claw feel like yours: you can rename it and change its avatar. Mine is Molly.
+
+People noticed. In the weeks after Muse launched on September 8, Meta's stock [jumped more than 11% in a single day, its biggest one-day rise since April 2025](https://techxplore.com/news/2026-09-meta-soar-muse-ai.html). So yes, it jacked up Meta's stock.
+
+Oh yeah, I work on it. Well, on Muse the model. So discount my enthusiasm accordingly, and if Molly says something dumb, that part's on me.
 
 ## How we got the word
 
