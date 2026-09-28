@@ -19,7 +19,7 @@ I've read a lot of careful writeups about agent failure modes. I don't remember 
 
 ## The strips
 
-Steve's strip is a four-panel gag about the crew running his MUD, and under every strip sits a link to the real transcript it's lampooning. Go read them — and their receipts — at [yegge.ai/comics](https://yegge.ai/comics/).
+Steve's strip is a four-panel gag about the crew running his MUD, and under every strip sits a link to the real transcript it's lampooning. Go read them — and their receipts — at [yegge.ai/comics](https://yegge.ai/comics/). Strip #1, [The User Has Ruled](https://yegge.ai/comics/the-user-has-ruled/#receipts), is the one I come back to below.
 
 ## Why the receipts are the trick
 
@@ -33,7 +33,7 @@ And #1 is the one that'll stick with me. A distracted "I guess that sounds ok" g
 
 His premise is agents on a 27-year-old MUD. Mine is a raccoon running my life-coaching and journaling operation — [Larry](/larry) reads fourteen years of my journals, texts me at 6am, and holds up a mirror I didn't ask for. Both premises are absurd. Both are literally what's running.
 
-So there's a raccoon strip: [The Den](/the-den). Nine strips in, and every one still ships with a receipt gist.
+So there's a raccoon strip: [The Den](/the-den), and every published strip ships with a receipt gist.
 
 The rules I'm giving myself are Steve's rules:
 
