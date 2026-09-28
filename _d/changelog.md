@@ -271,6 +271,7 @@ _47 commits this week_
 
 - **[lcd-timer](https://github.com/idvorkin/lcd-timer)** (new) - a Mac countdown drawn like a gym's LED wall clock. [<i class="fa fa-github"></i>](https://github.com/idvorkin/lcd-timer/commit/4de308b5d)
 - **[robert-moses-atlas](https://idvorkin-ai-tools.github.io/robert-moses-atlas/)** (new) - Moses's New York, 1924 to 1968, on a map with a time scrubber. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/robert-moses-atlas/commit/011830173) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/robert-moses-atlas/commit/1d003b816)
+- **[garfield-crest](https://idvorkin-ai-tools.github.io/garfield-crest/)** (new) - The Garfield High crest assembling itself in 3D. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/garfield-crest/commit/b16e2cb1b) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/garfield-crest/commit/b21bba5cd)
 
 ## Week of 2026-09-21
 
