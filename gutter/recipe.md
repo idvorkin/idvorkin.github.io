@@ -16,6 +16,7 @@ recipe, with the measured reasons for every line, is the gen-image skill's
 
 ```bash
 GEN=~/gits/chop-conventions/skills/gen-image/openrouter-image.py
+# A panel with Larry in it. Drop his two refs when he is not in the panel.
 $GEN @panel-3.txt panel-3.png --model muse --aspect 1:1 \
   --ref images/raccoon-nerd.webp \
   --ref images/raccoon-larry.webp \
@@ -50,7 +51,9 @@ just a picture:
    With none yet, Muse alone scored 37/42, which is acceptable.
 
 Do not add an old strip (`den-003.webp`) as a style ref. In the 2026-09-26 study
-it pulled Muse off the canon look and lost points.
+it pulled Muse off the canon look and lost points. For Muse panels this stack
+replaces the reference lists in `characters.md`: skip the armchair shot and the
+old Den strips listed there.
 
 _Earlier Gemini-era note, kept for the reasoning:_ The armchair image was the addition that mattered. `raccoon-larry.webp` is a
 transparent full-body toy shot; it locks the _character_ but says nothing about
@@ -120,7 +123,7 @@ own section, and both gym panels then refer back to it by name.
 > wall, a long low steel rack holding a neat row of cast-iron kettlebells graded
 > small to large. Tall industrial windows fill the right-hand wall with clean
 > natural daylight and a glimpse of green trees outside. One black flat weight
-> bench stands in the open middle of the floor. Pale grey-white painted brick
+> bench stands in the open middle of the floor. Warm cream-painted brick
 > walls, exposed white ceiling ductwork, a wall clock, a couple of chalk-dusted
 > lifting platforms. There are NO treadmills, NO ellipticals, NO wall of cardio
 > machines, NO weight-machine towers, NO mirrors-and-neon commercial-gym look.
@@ -226,7 +229,8 @@ the manifest has no panel files to open.
 - **Wrong model, silently.** In the Gemini days a strip shipped on the wrong
   model because the script never logged which one it used (2026-08-31). The
   Muse renderer logs `model=…` and the billed cost on every call: a run log
-  without that line for every panel is a failed run, regenerate it.
+  without `model=meta/muse-image` for every strip panel is a failed run,
+  regenerate it. Only the set reference panel may log the GPT model id.
 
 - **Two lobster claws.** Every first-pass candidate gave Larry a red claw on
   _both_ arms — the ref shows the claw prominently and the model reads it as a

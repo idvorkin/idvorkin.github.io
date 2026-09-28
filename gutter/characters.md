@@ -2,6 +2,8 @@
 
 The canon. Prose does not lock a character; references do — every
 generation attaches the refs listed here for whoever is in the picture.
+For Muse strip panels, the reference stack in `recipe.md` wins where it differs:
+it drops the armchair shot and the old Den strips.
 
 ## Igor
 
@@ -14,11 +16,11 @@ reading **TECHNOLOGIST** (quote the word exactly in the prompt), denim shorts,
 - Failure modes: shirt text garbles or drops on small or background figures
   ("TECHNOLOGST", blank). Stage him large and front-facing in at least two
   panels; do not put him small in every panel. Crocs drift to a matched pair —
-  restate "one BLUE and one YELLOW, never two of the same colour".
+  restate "one BLUE and one YELLOW, never two of the same color".
 
 ## Larry
 
-The bearded Freud-raccoon. **Grey-white beard and moustache** (essential — a
+The bearded Freud-raccoon. **Grey-white beard and mustache** (essential — a
 clean-shaven Larry is not Larry), round wire-rim spectacles, brown tweed
 waistcoat over a white rolled-sleeve shirt, blue denim, ringed tail, wooden
 clipboard and yellow pencil. **Exactly one giant glossy red lobster claw and
@@ -59,7 +61,7 @@ upward-trending **bar graph** on the wall.
 
 ## The robots
 
-The agents. Plush **blue** toy robots, soft-vinyl volume, felt-fibre texture,
+The agents. Plush **blue** toy robots, soft-vinyl volume, felt-fiber texture,
 rounded, no faces beyond two round lamp eyes; never humanoid, never chrome.
 They do work in the background of panels and are never the focus.
 

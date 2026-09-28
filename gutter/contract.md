@@ -142,6 +142,10 @@ Strips #1-#4 predate the contract; crop them at their own measured rects
 
 ## Paste into the generation prompt
 
+For a whole-page GPT one-shot only. A per-panel Muse call asks for one square
+panel instead (the Layout block in `recipe.md`), and the `magick` composite
+applies this geometry.
+
 > LAYOUT: a four-panel comic strip, square 1600x1600, a strict 2x2 grid on a
 > warm cream page. A 32 px cream margin runs around the whole page and a 32 px
 > cream gutter separates the panels both horizontally and vertically, so each of
