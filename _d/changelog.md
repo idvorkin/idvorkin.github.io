@@ -12,6 +12,11 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Week of 2026-09-27](#week-of-2026-09-27)
+  - [New Posts and Rewrites (2026-09-27)](#new-posts-and-rewrites-2026-09-27)
+  - [Infrastructure & CI (2026-09-27)](#infrastructure--ci-2026-09-27)
+  - [chop-conventions (2026-09-27)](#chop-conventions-2026-09-27)
+  - [Other Projects (2026-09-27)](#other-projects-2026-09-27)
 - [Week of 2026-09-21](#week-of-2026-09-21)
   - [Three New Posts (2026-09-21)](#three-new-posts-2026-09-21)
   - [Infrastructure & CI (2026-09-21)](#infrastructure--ci-2026-09-21)
@@ -221,6 +226,51 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+## Week of 2026-09-27
+
+_47 commits this week_
+
+### New Posts and Rewrites (2026-09-27)
+
+- **The Interaction Model Matters (new post!)** - How an agent talks matters as much as what it can do; Opus 5.5 brought back the joy. ([blog](/interaction-model)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f7b150566)
+- **Spiritual health hub** - Rewritten around three breaks (direction, scale, acceptance) plus practices, with one shared vocabulary and footer across the spiritual posts. ([blog](/spiritual-health#three-ways-it-breaks)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/249bd4f87) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e078f6b14)
+- **Religion and walking with God** - Religion restructured around my story and practice over proof; the devotional experiment closed out with what it taught. ([blog](/religion#it-lives-in-practice-not-proof)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4812cca24) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/48e71347e)
+- **Agency rebuilt** - Knowledge became queryable and the technologist threshold moved, so agency beats smarts even more with AI. ([blog](/agency#knowledge-became-queryable)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/b4b6c566f)
+- **Gas City, one hub** - /why-gas-city folds into /gas-city: the ladder, what a city is, what it costs, what I run. ([blog](/gas-city)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/00880797d)
+- **Where the Time Goes rewrite** - Rewritten from scratch, with the bucket chart rebuilt around where freed hours leak. ([blog](/time-allocation#where-the-freed-hours-land)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/b11e9e760)
+- **Back pain figures** - Interactive banana back and neck poke from weak hips, and a loose-versus-latched backpack model, both sourced. ([blog](/back-pain#weak-hips-make-a-banana-back)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6d012f9d1) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0303ecc58)
+- **Claws** - /claw and /igors-claws de-duplicated; a Muse section covers the first claw anyone can install and name. ([blog](/claw#muse-a-claw-a-grandma-can-use)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/9a680255e) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/a2b981516)
+- **New sections** - Why SaaS still lives when DIY is cheap; Amazon blocks shopping agents and strips order emails. ([blog](/hyper-personal#why-saas-still-lives)) ([blog](/amazon#customer-obsession)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/5cf8364e0) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8e554d943)
+- **The Den #8 to #11** - Rex debuts, Larry speaks human, the tests take credit, and a city of agents runs on zero tokens. ([blog](/the-den)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/92c653778) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e1a347290) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/7ba2e5e06)
+- **Small edits** - Plainer orchestrator, token and Cockpit posts; AI eval tools lead with where they split; a balloon pump-carry; three stubs trimmed. ([blog](/ai-eval-tools#where-the-tools-split)) ([blog](/balloon#keep-the-pump-at-hand)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/76546cad1) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/da9bfff06) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/fb622d07f) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/a5cd8951b) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6aadeefca)
+
+### Infrastructure & CI (2026-09-27)
+
+- **Diff vs main** - The dev banner renders a rich diff of the page against main, with a change map and n/p jumps. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/12e5e5220) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/58eb5f461) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/ee12e6cad)
+- **Terse changelog** - The skill and the weekly Action now write a linked list with a line budget, not an essay. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1e6296b44) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/c117eb80e)
+
+### chop-conventions (2026-09-27)
+
+- **machine-doctor on macOS** - Mac CPU and memory collection, sleep forensics, a read-only DNS doctor, and a memory-by-app table. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/1861a0f6e) [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/a9b38f4c2) [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/d625459df)
+- **Agent plumbing** - Outside agents get Herdr worktrees, one watcher covers every Muse pane, and only one session runs the Telegram bridge. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/7f15f46cc) [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/a4658d259) [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/85b46f698)
+- **Tools manifest** - One list of external tools with a doctor; gen-image defaults to Muse Image. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/4b418a86a) [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/ef45bb1ed)
+
+### Other Projects (2026-09-27)
+
+**[Settings](https://github.com/idvorkin/Settings)** (dotfiles & tools)
+
+- **pick-links** - Opens OSC 8 hyperlink targets and guesses repos for short refs like chop#14; Enter opens directly on macOS. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/4109442a5) [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/0ff7a1aba) [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/5fe04716d)
+- **Mac fixes** - caff reacts to power events, LG monitor refresh rate fixed on wake, yabai event trace, new Herdr keys. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/0c1a70292) [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/6b82f0d1f) [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/7b1e1297f) [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/21eac52e3)
+
+**[exercise-analyzer](https://github.com/idvorkin/exercise-analyzer)** (iPhone lift tracker and rep counter)
+
+- **Watch and counting** - add an unrecorded set from the watch; the first swing off the floor counts, a bell set down does not. [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/0c0770438) [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/09779df34) [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/c972f6979)
+
+**New and smaller**
+
+- **[lcd-timer](https://github.com/idvorkin/lcd-timer)** (new) - a Mac countdown drawn like a gym's LED wall clock. [<i class="fa fa-github"></i>](https://github.com/idvorkin/lcd-timer/commit/4de308b5d)
+- **[robert-moses-atlas](https://idvorkin-ai-tools.github.io/robert-moses-atlas/)** (new) - Moses's New York, 1924 to 1968, on a map with a time scrubber. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/robert-moses-atlas/commit/011830173) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/robert-moses-atlas/commit/1d003b816)
 
 ## Week of 2026-09-21
 
