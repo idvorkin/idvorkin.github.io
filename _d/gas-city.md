@@ -5,9 +5,6 @@ permalink: /gas-city
 redirect_from:
   - /why-gas-city
   - /gas-city-why
-alias:
-  - /why-gas-city
-  - /gas-city-why
 tags:
   - ai
   - tools
