@@ -32,7 +32,7 @@ Use beads (`bd` commands) for task tracking. See the Beads Integration section b
 
 ## First commit in a fresh worktree
 
-**Get worktrees from Treehouse, not `git worktree add`.** `treehouse get --lease` hands out a reused slot that keeps `node_modules/`, `_site/` and `back-links.json` from its last use, so it is ready to commit — confirm with `ls -d node_modules _site back-links.json` and skip the rest of this section. Only a brand-new slot (Treehouse grows one when the pool is exhausted) or a bare `git worktree add` starts cold and needs the steps below.
+**Get worktrees from Treehouse, not `git worktree add`.** `treehouse get --lease` hands out a reused slot that keeps `node_modules/`, `_site/` and `back-links.json` from its last use, so it is warm — confirm with `ls -d node_modules _site back-links.json`. Warm is not current: that state is from the slot's last revision, so after branching off a newer `upstream/main` resync it with `npm ls --depth=0 >/dev/null 2>&1 || npm ci` and `bundle exec jekyll build --incremental && just update-backlinks`, then skip the rest of this section. Only a brand-new slot (Treehouse grows one when the pool is exhausted) or a bare `git worktree add` starts cold and needs the steps below.
 
 The `anchor-checker` pre-commit hook reads `_site/*.html` **and** `back-links.json` to validate markdown anchors and resolve permalinks/redirects. A freshly cloned worktree has neither — `back-links.json` is gitignored and CI-generated, not checked out — and the hook hard-fails with `Error: _site not found. Run 'jekyll build' first.` or `Error: back-links.json not found. Run build_back_links.py first.` Run once before your first commit:
 

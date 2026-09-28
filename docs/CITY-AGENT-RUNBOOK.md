@@ -48,13 +48,25 @@ git checkout -b <branch> upstream/main
 
 Treehouse hands out **reused** worktrees: a slot keeps its gitignored build
 state — `node_modules/`, `_site/`, `back-links.json` — from its last use, so a
-leased slot is normally ready to commit. Check before doing anything:
+leased slot is normally warm. Check before doing anything:
 
 ```bash
 ls -d node_modules _site back-links.json
 ```
 
-All three present: skip the rest of this section. Only a slot Treehouse just
+All three present means warm, not current: they were built for the slot's
+last revision, and your branch sits on a newer `upstream/main`. A stale
+`node_modules/` fails the `test` hook (or tests against the wrong versions);
+a stale `_site/` or `back-links.json` makes `anchor-checker` miss removed
+anchors or reject new ones. Resync after branching — both are quick on a warm
+slot:
+
+```bash
+npm ls --depth=0 >/dev/null 2>&1 || npm ci
+bundle exec jekyll build --incremental && just update-backlinks
+```
+
+Then skip the rest of this section. Only a slot Treehouse just
 created (the pool was exhausted, so it grew a new one) starts cold. The
 `anchor-checker` hook then hard-fails with `_site not found` or
 `back-links.json not found`, and the `test` hook has no Vitest. Warm it once:
