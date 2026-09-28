@@ -125,7 +125,7 @@ Both benchmarks containerize, but not the same thing, which is what I went looki
 
 The catch is that these are benchmark-first; custom tasks mean adopting their image conventions. smevals stays out of it: its Runner can `docker run` when a container runtime exists, but manages none of it.
 
-On a Mac, the catch is where the containers run. OrbStack machines are shared-kernel containers with no user-namespace support ([orbstack#2312](https://github.com/orbstack/orbstack/issues/2312)), so Docker, bubblewrap, and agent sandboxes fail inside them by design. A real Linux VM via [Lima](https://lima-vm.io) (`vmType: vz`) or UTM brings its own kernel and just works. KVM inside that VM needs an M3 or later and macOS 15+ ([lima#2824](https://github.com/lima-vm/lima/issues/2824)).
+On a Mac, the catch is where the containers run. OrbStack machines are shared-kernel containers with no user-namespace support ([orbstack#2312](https://github.com/orbstack/orbstack/issues/2312)), so Docker, bubblewrap, and agent sandboxes fail inside them by design. A real Linux VM via [Lima](https://lima-vm.io) (`vmType: vz`) or UTM brings its own kernel and just works. KVM inside that VM needs an M3 or later, macOS 15+, and Lima's `nestedVirtualization: true` ([lima#2824](https://github.com/lima-vm/lima/issues/2824)).
 
 ### The SaaS tier: Braintrust, LangSmith, Langfuse
 
