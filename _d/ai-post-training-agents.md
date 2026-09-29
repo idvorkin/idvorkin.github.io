@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Post-training Agents"
-permalink: /beyond-prompts
+permalink: /ai-post-training-agents
 redirect_from:
+  - /beyond-prompts
   - /train-agents
   - /agent-training
-  - /ai-post-training-agents
 tags:
   - ai
   - machine-learning
