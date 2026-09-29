@@ -424,10 +424,10 @@ function it() {
       box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     `;
     let r = "";
-    if (e && (r += `<i class="fas fa-code-branch"></i> Branch: <code style="background: black; color: white; padding: 2px 6px; border-radius: 3px;">${e}</code>`), t) {
+    if (e && (r += `<i class="fas fa-code-branch" title="Branch"></i> <code style="background: black; color: white; padding: 2px 6px; border-radius: 3px;">${e}</code>`), t) {
       e && (r += " | ");
       const a = `https://github.com/idvorkin/idvorkin.github.io/pull/${t}`;
-      r += `<i class="fas fa-code-pull-request"></i> PR: <a href="${a}" target="_blank" style="color: #58a6ff; text-decoration: none;"><code style="background: black; color: #58a6ff; padding: 2px 6px; border-radius: 3px;">#${t}</code></a>`;
+      r += `<a href="${a}" title="Pull request" target="_blank" style="color: #58a6ff; text-decoration: none;"><i class="fab fa-github"></i></a> <a href="${a}" target="_blank" style="color: #58a6ff; text-decoration: none;"><code style="background: black; color: #58a6ff; padding: 2px 6px; border-radius: 3px;">#${t}</code></a>`;
     }
     (e || t) && n && (r += " | "), r += `<i class="fas fa-server"></i> Port: <code style="background: black; color: white; padding: 2px 6px; border-radius: 3px;">${n}</code>`;
     const i = tt();

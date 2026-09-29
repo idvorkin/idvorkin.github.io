@@ -90,7 +90,7 @@ export function initDevInfo(): void {
 
     let infoContent = "";
     if (branch) {
-      infoContent += `<i class="fas fa-code-branch"></i> Branch: <code style="background: black; color: white; padding: 2px 6px; border-radius: 3px;">${branch}</code>`;
+      infoContent += `<i class="fas fa-code-branch" title="Branch"></i> <code style="background: black; color: white; padding: 2px 6px; border-radius: 3px;">${branch}</code>`;
     }
 
     // Add PR link if available
@@ -99,7 +99,7 @@ export function initDevInfo(): void {
         infoContent += " | ";
       }
       const prUrl = `https://github.com/idvorkin/idvorkin.github.io/pull/${pr}`;
-      infoContent += `<i class="fas fa-code-pull-request"></i> PR: <a href="${prUrl}" target="_blank" style="color: #58a6ff; text-decoration: none;"><code style="background: black; color: #58a6ff; padding: 2px 6px; border-radius: 3px;">#${pr}</code></a>`;
+      infoContent += `<a href="${prUrl}" title="Pull request" target="_blank" style="color: #58a6ff; text-decoration: none;"><i class="fab fa-github"></i></a> <a href="${prUrl}" target="_blank" style="color: #58a6ff; text-decoration: none;"><code style="background: black; color: #58a6ff; padding: 2px 6px; border-radius: 3px;">#${pr}</code></a>`;
     }
 
     if ((branch || pr) && port) {
