@@ -55,6 +55,14 @@
   api.github.com. Use a fine-grained/classic token with the `gist` scope
   ONLY — nothing else.
 
+  DIFF VIEW: the dev banner's "Diff vs main" (src/rich-diff.ts) hides the
+  article and shows a rendered diff in its place. A selection there is handed
+  to src/annotate-anchor.ts (window.blogAnnotateDiffSelector, registered by
+  the diff), which drops struck-out text and re-anchors the quote against the
+  real article, so the note is the one you'd get selecting on the page. It
+  adds `diff: {inserted: all|some|none, anchoredTo: page|diff-view}`. The page
+  version is always measured on the real article, never the diff DOM.
+
   Larry reads the batches back with scripts/blog_review.py.
 -->
 
@@ -175,6 +183,17 @@
 
     function selectorFromRange(range) {
       var root = articleRoot();
+      var diffView = document.getElementById("rich-diff-view");
+      if (
+        diffView &&
+        (diffView.contains(range.startContainer) ||
+          diffView.contains(range.endContainer))
+      ) {
+        // The article is hidden behind the rendered diff. Anchor against the
+        // real article text, not the diff markup (see DIFF VIEW above).
+        var fn = window.blogAnnotateDiffSelector;
+        return fn ? fn(range, diffView, root, CTX) : null;
+      }
       var quote = range.toString();
       if (!quote.trim()) return null;
 
@@ -213,11 +232,19 @@
       return ("0000000" + h.toString(16)).slice(-8);
     }
 
+    // innerText of a display:none element is its raw textContent, so while the
+    // diff view hides the article the digest would silently change. Measure it
+    // as rendered: unhide for the synchronous read (no paint in between).
+    function articleText(root) {
+      var hidden = root.style && root.style.display === "none";
+      if (hidden) root.style.display = "";
+      var text = root.innerText || root.textContent || "";
+      if (hidden) root.style.display = "none";
+      return text;
+    }
+
     function pageVersion() {
-      var root = articleRoot();
-      var text = (root.innerText || root.textContent || "")
-        .replace(/\s+/g, " ")
-        .trim();
+      var text = articleText(articleRoot()).replace(/\s+/g, " ").trim();
       return {
         url: ORIGIN + window.location.pathname,
         capturedAt: new Date().toISOString(),
@@ -240,6 +267,8 @@
       "display:flex;gap:6px;align-items:center;padding:8px 12px;",
       "font:600 13px/1.2 system-ui,sans-serif;color:#fff;background:#212529;",
       "border-radius:20px;box-shadow:0 2px 10px rgba(0,0,0,.35)}",
+      // Sit above the rich diff's change navigator (#rd-nav) instead of over it.
+      "body:has(#rd-nav) #blog-annot-pill{bottom:70px}",
       "#blog-annot-pill button{font:600 12px/1.2 system-ui,sans-serif;",
       "padding:5px 9px;border:0;border-radius:12px;cursor:pointer;",
       "background:#495057;color:#fff}",
@@ -475,7 +504,7 @@
 
       function save() {
         var list = loadBuffer();
-        list.push({
+        var entry = {
           permalink: PERMALINK,
           origin: ORIGIN,
           title: TITLE,
@@ -486,7 +515,9 @@
           intent: intent,
           ts: new Date().toISOString(),
           version: pageVersion(),
-        });
+        };
+        if (sel_info.diff) entry.diff = sel_info.diff;
+        list.push(entry);
         saveBuffer(list);
         refreshPill();
         hideModal();
