@@ -33,6 +33,7 @@ The post-training post explains the methods on a single answer: the model writes
   - [Don't train on the environment's words](#dont-train-on-the-environments-words)
   - [Rollouts that don't wait](#rollouts-that-dont-wait)
 - [Real recipes through this lens](#real-recipes-through-this-lens)
+  - [One recipe, stage by stage](#one-recipe-stage-by-stage)
 - [Open questions](#open-questions)
 - [What this post is not about](#what-this-post-is-not-about)
 
@@ -210,8 +211,6 @@ So the loop was pulled apart. Generation runs continuously on its own machines, 
 
 ## Real recipes through this lens
 
-The published recipes are paths through the same questions.
-
 | Recipe            | Who grades                                                                      | What's usual                                                      | The agent-specific move                                                                                             |
 | ----------------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | **DeepSWE**       | Answer key: selected tests pass within a time limit → 1, else 0                 | Group average, patched: no leash, no length division, clip-higher | Mask trajectories cut off by context, turns or clock, so running out never reads as failing                         |
@@ -221,20 +220,31 @@ The published recipes are paths through the same questions.
 | **Qwen3-Coder**   | Answer key on real software tasks                                               | Not published                                                     | "Long-horizon RL" on multi-turn tool use; twenty thousand environments in parallel                                  |
 | **GLM-5.2** (SAO) | Answer key on agentic tasks                                                     | Forecaster (value model), one rollout per prompt                  | Drops the group entirely; asynchronous                                                                              |
 
-Two open recipes from this year add a pattern the single-answer world never needed: **order the stages by how hard the grader is to game.** Both run RL as a chain of separate runs, each warm-started from the last — reasoning, then code, then agents graded by end state or tests, and only at the end a search agent graded by a judge, then a taste test. One says why in a sentence: "What the order tracks is exposure to reward hacking." Answer keys first; noisy graders last, when there's the least training left to exploit them.
+### One recipe, stage by stage
 
-| Recipe          | Stages, in order                                                                                                        | Who grades                                                                                                     |
-| --------------- | ----------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| **Rufus-Air**   | copy the expert → reasoning → coding → instruction following → general agent → coding agent → search agent → taste test | sandbox end state ("no step-level or LLM judge reward") → tests pass → a judge, "and therefore noisy" → people |
-| **Granite 4.2** | foundational RL → SWE → terminal → search → taste test                                                                  | "do the hidden tests pass?" → terminal tasks → "an LLM judge on the final answer" → people                     |
+The most legible open recipe today runs post-training as eight separate stages on a 106B open base model, each warm-started from the last. Read through the post's two questions:
 
-The single-answer recipes differ on _who grades_. The agent recipes mostly agree on that — an answer key from the environment wherever one can be built — and differ on _what's usual_ and the plumbing: masking, truncation, asynchrony. That's the tell that the hard part moved.
+| Stage                    | Who grades                                                                  | What's usual                                                       |
+| ------------------------ | --------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| 1. Copy the expert       | Nobody — demonstrations                                                     | —                                                                  |
+| 2. Reasoning             | Answer key: a math checker on the final answer                              | Group average, clipped per whole answer (GSPO)                     |
+| 3. Coding                | Answer key: 1 if all selected tests pass                                    | Same, with a tight clip                                            |
+| 4. Instruction following | Rubric: code-checkable rules, a judge for the rest, reduced to pass/fail    | Group average (GRPO)                                               |
+| 5. General agent         | Answer key: a script checks the sandbox's end state — no judge, no per-step | Group average + dynamic sampling                                   |
+| 6. Coding agent          | Answer key: the task's own tests, at termination                            | Group average + dynamic sampling                                   |
+| 7. Search agent          | A judge, zero to one on the final answer — "and therefore noisy"            | Group average, mean only (no division by spread), no entropy bonus |
+| 8. Taste test            | A learned grader (an off-the-shelf reward model)                            | Group average with a length penalty                                |
+
+The order is the point. Stages go from hard, checkable rewards toward softer judge- and environment-mediated ones, and the paper is careful about what that means: not "hardest first" but "what the order tracks is exposure to reward hacking." Instruction following runs early because it's close to what the model already does, so its judge has little room to be gamed; the agent stages come late because their graders are code in the sandbox the agent can touch; the search agent later still, because a judge grades it; and the taste test, where the risk is real, runs last, with the least training left for the model to exploit it. A second open recipe, from IBM, orders its agent block the same way — code, then terminal, then search — each a separate group-average run warm-started from the previous checkpoint.
+
+The single-answer recipes differ on _who grades_; the agent recipes mostly agree on that and differ on _what's usual_ and the plumbing — masking, truncation, asynchrony. That's the tell that the hard part moved.
 
 <details markdown="1">
 <summary>Prior work</summary>
 
 - [DeepSWE](https://www.together.ai/blog/deepswe) · [SWE-RL](https://arxiv.org/abs/2502.18449) · [Search-R1](https://arxiv.org/abs/2503.09516) · [Kimi K2](https://arxiv.org/abs/2507.20534) — "We adopt the policy optimization algorithm introduced in K1.5 as the foundation for K2"; "we enforce a per-sample maximum token budget throughout RL training" · [Qwen3-Coder](https://qwenlm.github.io/blog/qwen3-coder/) — "we introduced long-horizon RL (Agent RL) to encourage the model to solve real-world tasks through multi-turn interactions using tools" · [SAO](https://arxiv.org/abs/2607.07508).
-- Staged by exposure to gaming: [Rufus-Air](https://arxiv.org/abs/2609.29421) — "organized as a serial pipeline: SFT → Reasoning RL → Coding RL → Instruction-Following RL → General Agent → Coding Agent → Search Agent → RLHF"; "What the order tracks is exposure to reward hacking"; [Granite 4.2](https://huggingface.co/blog/ibm-granite/granite-4-2) — "the agentic RL block (SWE → Terminal → Search) runs for 8B and 30B only … Each stage is a separate GRPO run that warm-starts from the previous checkpoint."
+- The eight stages: [Rufus-Air](https://arxiv.org/abs/2609.29421) — "organized as a serial pipeline: SFT → Reasoning RL → Coding RL → Instruction-Following RL → General Agent → Coding Agent → Search Agent → RLHF"; reasoning: "Deterministic verifiers deliver the rewards: Math-Verify on canonicalized final answers"; coding: "The reward is binary: 1 if all selected tests pass for a given completion, 0 otherwise"; instruction following: "Rubric-based binary reward" with "Code-verifiable rubrics" and "LLM judge rubrics"; general agent: "Code-based verification functions as the reward signal, reduced to binary outcome" and "We use no step-level or LLM judge reward"; coding agent: "The reward is the task's own verifier, reduced to binary outcome at termination"; search agent: "LLM judge scores the final answer … on a continuous [0,1] scale," "GRPO, here with mean-only group advantages," "No entropy bonus"; RLHF: "Skywork-Reward-V2-Qwen3-8B provides the reward," "linear length penalty." Optimizers: stages 2–3 "Group Sequence Policy Optimization (GSPO)" ([sequence-level clipping](https://arxiv.org/abs/2507.18071)), stages 5–6 "GRPO and DAPO-style dynamic sampling." Ordering: "Stages go from hard, verifiable rewards toward softer score-based, judge-based, or environment-mediated signals … which shortens the time a gameable reward is under optimization pressure"; "The order is not strictly by reward hardness … What the order tracks is exposure to reward hacking."
+- Same agent order: [Granite 4.2](https://huggingface.co/blog/ibm-granite/granite-4-2) — "the agentic RL block (SWE → Terminal → Search) runs for 8B and 30B only … Each stage is a separate GRPO run that warm-starts from the previous checkpoint."
 - Outcome-only reward in sandboxes, two roles: [Kimi-Dev](https://arxiv.org/abs/2509.23045) — "We rely solely on the final execution outcome from the environment as the raw reward (0 or 1)."
 
 </details>
@@ -243,10 +253,10 @@ The single-answer recipes differ on _who grades_. The agent recipes mostly agree
 
 The ones the field is arguing about, as far as I can read it.
 
-- **Credit at scale.** Per-step credit needs a forecaster or extra rollouts, and both get expensive as trajectories get longer. Nobody has shown which is cheaper at a hundred turns, or whether a good enough group method makes the question moot.
+- **Credit at scale.** Per-step credit needs a forecaster or extra rollouts, and both get expensive as trajectories get longer. Nobody has shown which is cheaper at a hundred turns.
 - **Grading what can't be checked.** Rubrics and self-critique are the current answer for research, writing and planning. Whether a rubric for "did the agent handle this well" can avoid smuggling in the judge's taste is open.
 - **Gaming versus watching.** The reasoning is the best window into whether the grader is being gamed, and training on it closes the window. Whether a monitor can be used without teaching the model to hide from it is unresolved.
-- **Environments are the bottleneck.** Manufactured tasks, simulated tools, and twenty thousand parallel sandboxes are all ways of buying more graded trajectories. How much of the remaining progress is environment engineering rather than algorithm is unclear; the labs that publish least have the most environments.
+- **Environments are the bottleneck.** Manufactured tasks, simulated tools, twenty thousand parallel sandboxes: all ways of buying more graded trajectories. How much of the remaining progress is environment engineering rather than algorithm is unclear.
 
 ## What this post is not about
 
