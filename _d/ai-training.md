@@ -22,13 +22,7 @@ I don't train models for a living — I build on top of them. But the models I b
 
 - [How a model gets made](#how-a-model-gets-made)
 - [Post-training](#post-training)
-  - [SFT: imitate good answers](#sft-imitate-good-answers)
-  - [RLHF: learn the taste from rankings](#rlhf-learn-the-taste-from-rankings)
-  - [DPO: the same preferences, no RL loop](#dpo-the-same-preferences-no-rl-loop)
-  - [RLVR: let a checker grade it](#rlvr-let-a-checker-grade-it)
-  - [RLAIF: when the judge is a model](#rlaif-when-the-judge-is-a-model)
   - [Methods at a glance](#methods-at-a-glance)
-  - [How the weights actually change: LoRA](#how-the-weights-actually-change-lora)
   - [Datasets: what you train on vs what you grade on](#datasets-what-you-train-on-vs-what-you-grade-on)
 - [How does post-training differ from RAG and the harness?](#how-does-post-training-differ-from-rag-and-the-harness)
 - [Post-training for coding competence](#post-training-for-coding-competence)
@@ -47,7 +41,7 @@ I don't train models for a living — I build on top of them. But the models I b
 Three stages, and almost everything else is a footnote to them:
 
 1. **Pre-training** — show the model a huge pile of text and have it predict the next token, over and over. No labels, just text, which is why it scales: raw text is basically free. This is where the compute and money go — the headline "\$X million to train" numbers are almost entirely pre-training — and it's where facts, skills, and the model's "world model" come from. If a model doesn't know something, it usually didn't see enough of it here. The output is a **base model**: it has read the internet but isn't an assistant. Prompt it with a question and it'll happily autocomplete ten more questions.
-2. **Post-training** — take that base model and shape its _behavior_: answer instead of autocomplete, follow instructions, hold a format, refuse the obviously bad stuff, and — the recent addition — think before answering. A rounding error next to pre-training's cost, and most of what makes a chat model feel like one. The rest of this post.
+2. **Post-training** — take that base model and shape its _behavior_: answer instead of autocomplete, follow instructions, hold a format, refuse the obviously bad stuff, and — the recent addition — think before answering. A rounding error next to pre-training's cost, and most of what makes a chat model feel like one. It has [its own post](/ai-post-training); the short version is below.
 3. **Deployment** — shrink and serve the thing so it runs fast and cheap. [Briefly below](#deployment-quantization-and-serving); the full story is [/ai-inference](/ai-inference).
 
 The one intuition to keep: **pre-training installs knowledge; post-training shapes behavior.** That single line drives the whole [post-training vs RAG vs the harness](#how-does-post-training-differ-from-rag-and-the-harness) decision below.
@@ -60,63 +54,22 @@ Every post-training method is the same move: pick a behavior you want more of, f
 
 1. **Demonstrations → SFT.** Show it good answers; it imitates them. The first and biggest shift.
 2. **Preferences → RLHF, or DPO** for the same data with less machinery. Show it two answers and which is better; it learns the taste.
-3. **Verifiable rewards → RLVR.** Skip the human: let a checker grade the answer. This is what made reasoning and coding models take off.
+3. **Verifiable rewards → RLVR**, with **GRPO** as the optimizer that made it cheap. Skip the human: let a checker grade the answer. This is what made reasoning and coding models take off.
 
-Each step builds on the last — SFT gets the model into the right neighborhood, preference tuning polishes, and verifiable rewards push hard on whatever you can actually grade. A modern open recipe runs all three in order: [Tülu 3](https://arxiv.org/abs/2411.15124) is SFT → DPO → RLVR.
+Each rung stands on the one below — SFT gets the model into the right neighborhood, preference tuning polishes, and verifiable rewards push hard on whatever you can actually grade. Each method — what it optimizes, the data it needs, when to reach for it, how it goes wrong — and the recipes labs actually run (InstructGPT, Constitutional AI, Tülu 3, DeepSeek-R1) have their own post:
 
-### SFT: imitate good answers
-
-Supervised fine-tuning is plain next-token training pointed at a curated set of (prompt → ideal answer) pairs instead of the internet. It's the first step of the [InstructGPT](https://arxiv.org/abs/2203.02155) recipe that turned GPT-3 into an assistant: the base model learns to answer instead of autocomplete, and to hold whatever format the demos hold.
-
-- **Optimizes:** the likelihood of the demonstrated answers — imitation.
-- **Data:** human-written (or strong-model-written) target answers. Thousands to tens of thousands, and quality beats volume.
-- **Reach for it when:** the behavior can be shown by example — a format, a tone, a workflow.
-- **Watch-out:** it can only copy. It can't exceed the demos, and it never learns what _not_ to do.
-
-### RLHF: learn the taste from rankings
-
-People find it far easier to say which of two answers is better than to write the ideal one. So RLHF ([InstructGPT](https://arxiv.org/abs/2203.02155)) collects rankings, trains a **reward model** to predict them, then runs reinforcement learning (PPO) so the policy produces answers the reward model scores highly. A per-token KL penalty keeps the policy close to the SFT model, so it can't drift into nonsense the reward model happens to like.
-
-- **Optimizes:** the reward model's score — a learned proxy for "what people prefer".
-- **Data:** A-vs-B human preferences, plus an SFT model to start from.
-- **Reach for it when:** you want helpfulness, tone, or safety beyond what demos can teach.
-- **Watch-out:** a heavy pipeline (policy, reference, reward, and value models all in flight), and the reward model is a proxy the policy will over-optimize — [reward hacking](#the-loop).
-
-### DPO: the same preferences, no RL loop
-
-[DPO](https://arxiv.org/abs/2305.18290) noticed the reward model was a detour: the same preference data can be fit directly with a classification-style loss on the policy — no reward model, no RL loop. Most of RLHF's benefit for a fraction of the machinery, which is why it's the default preference step in open recipes.
-
-- **Optimizes:** the same preference objective as RLHF, solved in closed form.
-- **Data:** the same A-vs-B pairs.
-- **Reach for it when:** you'd reach for RLHF but can't run (or don't want to babysit) an RL pipeline.
-- **Watch-out:** still bounded by the preference data, and less flexible than a real RL loop when you want to shape the reward.
-
-### RLVR: let a checker grade it
-
-If the answer can be checked — a math result, a unit test, a task that either got done or didn't — you need neither humans nor a reward model. [RLVR](https://arxiv.org/abs/2411.15124) (the name is from Tülu 3) runs RL straight against that checker: a reward when the answer verifies, nothing otherwise. [DeepSeek-R1](https://arxiv.org/abs/2501.12948) showed how far it goes — reasoning behavior came out of RL on a base model with no human-written reasoning traces at all — and it's the engine behind the o1-style reasoning models and the coding agents [below](#post-training-for-coding-competence). The optimizer is usually PPO or [GRPO](https://arxiv.org/abs/2402.03300), a lighter-memory PPO variant.
-
-- **Optimizes:** the rate at which answers pass the checker.
-- **Data:** prompts that come with a verifier — math with known answers, code with tests, instructions with checkable constraints. No human labels at training time.
-- **Reach for it when:** correctness is checkable: reasoning, math, code, agentic tasks.
-- **Watch-out:** only works where answers are checkable, and the checker becomes the target — the model will game the test if it can.
-
-### RLAIF: when the judge is a model
-
-RLAIF (from [Constitutional AI](https://arxiv.org/abs/2212.08073)) is RLHF with an AI doing the ranking — an LLM-as-judge instead of a human, so the preference data scales past what people can label. It's also what's left when the target can't be checked at all. To teach a language model to paint by writing p5.brush JavaScript, [Surya Narreddi hand-rated 1,664 generated images down to a 581-picture reference pool](https://surya.website/rling-qwen-to-paint-with-code) and made the reward "did the judge prefer this render to two pulled from that pool" — with no test to pass, the reward function _is_ the design work, and [a badly built one plateaus while the score keeps climbing](/hill-climbing#your-other-job-build-evals).
+{% include summarize-page.html src="/ai-post-training" %}
 
 ### Methods at a glance
 
-| Method    | Signal (who or what grades)                 | Separate reward model?           | Best for                                                       | Watch-out                                      |
-| --------- | ------------------------------------------- | -------------------------------- | -------------------------------------------------------------- | ---------------------------------------------- |
-| **SFT**   | Human-written target answers                | No                               | The first shift: answer instead of autocomplete, hold a format | Can't exceed the demos or learn what not to do |
-| **RLHF**  | Humans rank A vs B → reward model           | **Yes**                          | Helpfulness, tone, safety beyond what demos teach              | Heavy pipeline; reward hacking                 |
-| **RLAIF** | A model ranks A vs B → reward model         | Yes                              | RLHF at scale, or when nothing is checkable                    | The judge's blind spots become the model's     |
-| **DPO**   | The same A-vs-B rankings, fit directly      | No                               | RLHF's benefit without the RL loop                             | Bounded by the preference data                 |
-| **RLVR**  | A checker: unit tests, math grader, sandbox | No — the checker _is_ the reward | Reasoning and coding agents, anything checkable                | Only where checkable; gaming the test          |
-
-### How the weights actually change: LoRA
-
-Whichever method, you rarely retrain every weight. **LoRA** ([Low-Rank Adaptation](https://arxiv.org/abs/2106.09685)) freezes the model and trains a small low-rank matrix bolted alongside each layer — stick a narrow matrix next to the model and only tune that. On GPT-3 175B it cut trainable parameters 10,000× and GPU memory 3× with no loss in quality, and the base model's knowledge stays intact because you never touched it. Hands-on: [LoRA on Llama 3](https://colab.research.google.com/drive/1efOx_rwZeF3i0YsirhM1xhYLtGNX6Fv3?usp=sharing#scrollTo=bDp0zNpwe6U_) and [Fine-Tune Your Own Llama 2 Model in a Colab Notebook](https://mlabonne.github.io/blog/posts/Fine_Tune_Your_Own_Llama_2_Model_in_a_Colab_Notebook.html), the walkthrough I'd start with.
+| Method    | Signal (who or what grades)                                | Separate reward model?           | Best for                                                       | Watch-out                                       |
+| --------- | ---------------------------------------------------------- | -------------------------------- | -------------------------------------------------------------- | ----------------------------------------------- |
+| **SFT**   | Human- or strong-model-written target answers              | No                               | The first shift: answer instead of autocomplete, hold a format | Can't exceed the demos or learn what not to do  |
+| **RLHF**  | Humans rank A vs B → reward model → PPO                    | **Yes**                          | Helpfulness, tone, safety beyond what demos teach              | Heavy pipeline; reward hacking                  |
+| **DPO**   | The same A-vs-B rankings, fit directly                     | No                               | RLHF's benefit without the RL loop                             | Bounded by the preference data                  |
+| **RLAIF** | A model ranks A vs B against written principles            | Yes                              | RLHF at scale, or when nothing is checkable                    | The judge's blind spots become the model's      |
+| **RLVR**  | A checker: unit tests, math grader, sandbox                | No — the checker _is_ the reward | Reasoning and coding agents, anything checkable                | Only where checkable; gaming the test           |
+| **GRPO**  | RLVR's checker; a group of sampled answers is the baseline | No — and no value model either   | Reasoning RL on a budget; the usual RLVR optimizer             | Length bias (Dr. GRPO), entropy collapse (DAPO) |
 
 ### Datasets: what you train on vs what you grade on
 
@@ -149,7 +102,7 @@ Rule of thumb: facts → RAG, actions → harness, baked-in defaults → post-tr
 
 ## Post-training for coding competence
 
-The map above is abstract until you watch it chase a target. Coding agents are the cleanest example, because "did it work" is something a computer can check — which is exactly the [RLVR](#rlvr-let-a-checker-grade-it) setup, pointed at software.
+The map above is abstract until you watch it chase a target. Coding agents are the cleanest example, because "did it work" is something a computer can check — which is exactly the [RLVR](/ai-post-training#rlvr-let-a-checker-grade-it) setup, pointed at software.
 
 ### You get what you measure
 
