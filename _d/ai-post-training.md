@@ -44,6 +44,8 @@ Pre-training is where a model reads the internet, and it's where the money goes.
 
 ## The lineage
 
+{% include local_image_float_right.html src="raccoon-post-training-lineage.webp" %}
+
 Every post-training method is the same move: pick a behavior you want more of, find a **signal** that says which outputs have it, and nudge the weights toward it. The methods differ only in where the signal comes from, and that gives you the lineage:
 
 1. **Demonstrations → SFT.** Show the model good answers; it imitates them. The first and biggest shift.
@@ -53,6 +55,8 @@ Every post-training method is the same move: pick a behavior you want more of, f
 Each rung stands on the one below. SFT gets the model into the right neighborhood, preference tuning polishes, and verifiable rewards push hard on whatever you can actually grade. A modern open recipe runs all three in order — [Tülu 3](https://arxiv.org/abs/2411.15124) is SFT → DPO → RLVR — and the [recipes below](#how-the-methods-combine-real-recipes) show the variations.
 
 ## SFT: imitate good answers
+
+{% include local_image_float_right.html src="raccoon-post-training-sft.webp" %}
 
 Supervised fine-tuning is plain next-token training, pointed at a curated set of (prompt → ideal answer) pairs instead of the internet. Nothing about the objective changes from pre-training; only the data does, and that turns out to be enough. It's the first step of the [InstructGPT](https://arxiv.org/abs/2203.02155) recipe that turned GPT-3 into an assistant: OpenAI's labelers wrote demonstrations of the behavior they wanted, about 13k prompts' worth, and the base model learned to answer instead of autocomplete, and to hold whatever format the demos hold.
 
@@ -64,6 +68,8 @@ The demos don't have to be human-written. Stanford's [Alpaca](https://crfm.stanf
 - **Watch-out:** it can only copy. It can't exceed the demos, it never learns what _not_ to do, and a handful of examples teaches _style_, not _knowledge_ — then cheerfully hallucinates the gaps.
 
 ## RLHF: learn the taste from rankings
+
+{% include local_image_float_right.html src="raccoon-post-training-rlhf.webp" %}
 
 People find it far easier to say which of two answers is better than to write the ideal one. RLHF builds a whole pipeline on that asymmetry. In [InstructGPT](https://arxiv.org/abs/2203.02155) it runs in three steps:
 
@@ -81,6 +87,8 @@ The catch is Goodhart's law with a training budget. The reward model is a _proxy
 - **Watch-out:** a heavy pipeline — policy, reference, reward, and value models all in memory — and a proxy the policy will over-optimize. Reward hacking is the default outcome, not the exception.
 
 ## DPO: the same preferences, no RL loop
+
+{% include local_image_float_right.html src="raccoon-post-training-dpo.webp" %}
 
 [DPO](https://arxiv.org/abs/2305.18290) noticed the reward model was a detour. The RLHF objective — maximize reward while staying close to the reference model — has an optimal policy you can write down in closed form, and if you substitute that back in, the reward model becomes a function of the policy itself: "your language model is secretly a reward model." So you never train the reward model at all. You take the same A-vs-B pairs and train the policy with a plain classification-style loss that pushes the preferred answer's probability up relative to the reference model and the rejected answer's down. Two models in memory instead of four, no sampling loop, no PPO to babysit — and most of RLHF's benefit. That's why it's the default preference step in open recipes like Tülu 3.
 
@@ -101,6 +109,8 @@ RLAIF is also what's left when the target can't be checked at all. To teach a la
 - **Watch-out:** the judge's blind spots become the model's, and a judge can be gamed just like a reward model.
 
 ## RLVR: let a checker grade it
+
+{% include local_image_float_right.html src="raccoon-post-training-rlvr.webp" %}
 
 If the answer can be checked — a math result, a unit test, an instruction with a testable constraint, a task that either got done or didn't — you need neither humans nor a reward model. [RLVR](https://arxiv.org/abs/2411.15124) (the name is from Tülu 3) runs RL straight against that checker: "only provide rewards when the model's generations are verified to be correct." Tülu 3 pointed it at grade-school math, competition math, and instruction-following with checkable constraints.
 
