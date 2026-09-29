@@ -93,7 +93,7 @@ The expert doesn't have to be a person. Stanford's [Alpaca](https://crfm.stanfor
 
 {% include local_image_float_right.html src="raccoon-post-training-rlhf.webp" %}
 
-People find it far easier to say which of two answers is better than to write the ideal one. So RLHF runs a taste test: show labelers several answers to the same prompt and have them rank them. Then it writes the taste down as a model — a copy of the LLM (OpenAI used a 6B one) trained on 33k prompts' worth of comparisons to take a prompt and a response and output one number predicting what people would prefer. That **reward model** is the grader; it can score millions of answers nobody will ever read. How the score becomes learning is the [coach-and-forecaster loop below](#coach-with-a-forecaster-ppo).
+People find it far easier to say which of two answers is better than to write the ideal one. So RLHF runs a taste test: show labelers several answers to the same prompt and have them rank them. Then it writes the taste down as a model — a copy of the LLM (OpenAI used a 6B one) trained on 33k prompts' worth of comparisons to take a prompt and a response and output one number predicting what people would prefer. That **reward model** is the grader; it can score millions of answers nobody will ever read. The whole pipeline in one line: people's picks → train the grader → PPO scores thousands of fresh answers with it (the [coach-and-forecaster loop below](#coach-with-a-forecaster-ppo)). DPO skips the grader.
 
 The payoff was the headline of the InstructGPT paper: labelers preferred the 1.3B-parameter InstructGPT over the 175B GPT-3, "despite having 100x fewer parameters." Behavior, not knowledge, was what people were missing.
 
@@ -142,7 +142,7 @@ If the answer can be checked — a math result, a unit test, an instruction with
 
 ## How does the model learn from the grade?
 
-A grade is a number. Turning a number into a weight update is the second question, and the three answers differ in how much machinery they need.
+A grade is a number. Turning it into a weight update means answering one question for every sample: **was this answer better or worse than what the model usually does on this prompt, and by how much — is it worth moving the model for?** The two RL answers differ only in how they know "usually": PPO keeps a forecaster, GRPO grades on a curve. DPO sidesteps the question by working from pairs.
 
 <a id="coach-with-a-scorekeeper-ppo"></a>
 
@@ -150,10 +150,28 @@ A grade is a number. Turning a number into a weight update is the second questio
 
 {% include local_image_float_right.html src="raccoon-post-training-scorekeeper.webp" %}
 
-The classic RL loop, the one [InstructGPT](https://arxiv.org/abs/2203.02155) used. The model writes an answer, the grader scores it, and the score becomes the training signal — but a raw score isn't enough. To know whether an answer was a _good surprise_ or a _bad one_ the loop keeps a forecaster, the **value model** (critic), a second network that predicts the grade each answer will probably get. The forecaster never hands out a grade; the learning signal is the actual grade minus the predicted one, so a good surprise pushes the policy toward that answer and a bad one pushes it away. PPO is the coach: it makes each update small and clipped so the policy doesn't lurch. And there's a leash: a per-token KL penalty keeps the policy close to the model it started from, "to mitigate over-optimization of the reward model" — without it the policy drifts into whatever nonsense the grader happens to like.
+The classic RL loop, the one [InstructGPT](https://arxiv.org/abs/2203.02155) used. The model writes an answer and the grader scores it — but a raw score isn't enough, because a 7 means different things on an easy prompt and a hard one. So the loop keeps a **forecaster**, the value model (critic): a second network that predicts the grade each answer will probably get. It never hands out a grade. The learning signal is the **surprise** (advantage): the grade you got minus the grade you expected. Positive, do more of that; negative, do less; near zero, barely move. A C student bringing home a B is good news; the same B from a straight-A student is bad news. PPO is the coach: it makes each update small and clipped so the policy doesn't lurch. And there's a leash: a per-token KL penalty keeps the policy close to the model it started from, "to mitigate over-optimization of the reward model" — without it the policy drifts into whatever nonsense the grader happens to like.
 
-- **Optimizes:** the grade minus the forecaster's prediction, with a leash back to the starting model.
-- **Needs:** four models in memory — the policy, the frozen reference it's leashed to, the grader (reward model), and the forecaster (value model).
+Worked, with grades out of 10:
+
+- **Easy prompt, "What's 17 + 25?"** The forecaster expects a 9. "42" gets a 10: surprise +1, a small nudge. "43" gets a 1: surprise −8, a big push away.
+- **Hard prompt, "Prove there are infinitely many primes."** The forecaster expects a 3. A decent proof gets a 6: surprise +3, a strong push up.
+
+A 6 on a hard prompt teaches more than a 10 on an easy one. That is the whole reason the forecaster exists.
+
+What moves and what's frozen while PPO runs:
+
+| Piece                            | During training | What it is                                                                                                                                                                                                                                                    |
+| -------------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **The model** (policy)           | changes         | The point of the exercise.                                                                                                                                                                                                                                    |
+| **The forecaster** (value model) | changes         | Starts as a copy of the grader — InstructGPT: "the value function is initialized from the RM" — but answers a different question: the final grade, predicted from the prompt and a partial answer. It has to keep learning because the model keeps improving. |
+| **The grader** (reward model)    | frozen          | Trained earlier, from people's A-vs-B picks.                                                                                                                                                                                                                  |
+| **The leash copy** (reference)   | frozen          | The model as it was at the start; the KL penalty measures drift from it.                                                                                                                                                                                      |
+
+All three helpers are scaffolding, thrown away after training. Only the model ships.
+
+- **Optimizes:** the surprise — grade minus forecast — with a leash back to the starting model.
+- **Needs:** four models in memory — the policy, its leash copy, the grader, the forecaster. GRPO drops the forecaster: three. GRPO with an answer key, where the grader isn't a model: two.
 - **Reach for it when:** you have a score for every answer and the budget to run the full loop.
 - **Watch-out:** the heaviest pipeline of the three, and the most knobs to tune.
 
@@ -163,7 +181,7 @@ The classic RL loop, the one [InstructGPT](https://arxiv.org/abs/2203.02155) use
 
 {% include local_image_float_right.html src="raccoon-post-training-curve.webp" %}
 
-[GRPO](https://arxiv.org/abs/2402.03300) (DeepSeekMath) fires the forecaster. Sample a group of answers to the same prompt, score each with the grader, and use the group's average as the prediction — grading on a curve is the forecaster replaced by the group's own mean, so an answer's advantage is just how much better it did than its siblings. "GRPO foregoes the critic model, instead estimating the baseline from group scores, significantly reducing training resources." No critic to train or hold in memory is what let R1-Zero run pure RL on a base model at all. It's a way of learning, not a way of grading: the score can come from an answer key or from a reward model.
+[GRPO](https://arxiv.org/abs/2402.03300) (DeepSeekMath) fires the forecaster. Sample a group of answers to the same prompt, score each with the grader, and use the group's average as the prediction — grading on a curve is the forecaster replaced by the group's own mean, so an answer's advantage is just how much better it did than its siblings. "GRPO foregoes the critic model, instead estimating the baseline from group scores, significantly reducing training resources." No critic to train or hold in memory is what let R1-Zero run pure RL on a base model at all. On the hard prompt above: eight tries score 2, 3, 3, 4, 2, 6, 3, 1 — average 3 — so the 6 gets a surprise of +3 and the 1 gets −2. Same lesson, no forecaster. It's a way of learning, not a way of grading: the score can come from an answer key or from a reward model.
 
 - **Optimizes:** the same grade as PPO, with the group's average standing in for the forecaster.
 - **Needs:** several sampled answers per prompt, plus the grader's score for each. Nothing else.
