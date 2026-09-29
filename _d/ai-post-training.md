@@ -28,9 +28,9 @@ Pre-training is where a model reads the internet, and it's where the money goes.
   - [Taste test by an AI with a rulebook (RLAIF, Constitutional AI)](#taste-test-by-an-ai-with-a-rulebook-rlaif-constitutional-ai)
   - [Answer key (RLVR)](#answer-key-rlvr)
 - [How does the model learn from the grade?](#how-does-the-model-learn-from-the-grade)
-  - [Coach with a scorekeeper (PPO)](#coach-with-a-scorekeeper-ppo)
+  - [Coach with a forecaster (PPO)](#coach-with-a-forecaster-ppo)
   - [Grade on a curve against its own tries (GRPO)](#grade-on-a-curve-against-its-own-tries-grpo)
-  - [Straight to A-over-B, no scorekeeper (DPO)](#straight-to-a-over-b-no-scorekeeper-dpo)
+  - [Straight to A-over-B: no grader model, no forecaster (DPO)](#straight-to-a-over-b-no-grader-model-no-forecaster-dpo)
   - [Clip-on adapter (LoRA)](#clip-on-adapter-lora)
 - [Recipes in plain words](#recipes-in-plain-words)
 - [Methods at a glance](#methods-at-a-glance)
@@ -54,11 +54,11 @@ Pre-training is where a model reads the internet, and it's where the money goes.
 Every post-training method takes the model's answer, grades it, and nudges the weights toward whatever scored well. So there are only two things to ask about any of them:
 
 1. **Who grades the answer?** An expert's own answers to copy (SFT). A taste test by people (RLHF's reward model). A taste test by an AI with a rulebook (RLAIF, Constitutional AI). An answer key (RLVR).
-2. **How does the model learn from the grade?** With a coach and a scorekeeper (PPO, with its critic). Graded on a curve against its own tries (GRPO). Straight from A-over-B pairs with no scorekeeper (DPO). And whichever you pick, a clip-on adapter (LoRA) makes the weight update cheap.
+2. **How does the model learn from the grade?** With a coach and a forecaster (PPO, with its critic). Graded on a curve against its own tries (GRPO). Straight from A-over-B pairs, with no grader model and no forecaster (DPO). And whichever you pick, a clip-on adapter (LoRA) makes the weight update cheap.
 
 Copy the expert is the odd one out: there is no grade, so no column — it's plain imitation and the first step every recipe takes. Every other method is a cell in this grid:
 
-| Who grades ↓ · How it learns →                  | Coach + scorekeeper (PPO)                                        | Grade on a curve (GRPO)                         | Straight to A-over-B (DPO)                                         |
+| Who grades ↓ · How it learns →                  | Coach + forecaster (PPO)                                         | Grade on a curve (GRPO)                         | Straight to A-over-B (DPO)                                         |
 | ----------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------ |
 | **Taste test by people** (RLHF)                 | classic RLHF — [InstructGPT](https://arxiv.org/abs/2203.02155)   | works too: GRPO takes any score                 | DPO — [Tülu 3](https://arxiv.org/abs/2411.15124)'s preference step |
 | **Taste test by an AI with a rulebook** (RLAIF) | [Constitutional AI](https://arxiv.org/abs/2212.08073)'s RL phase | works too                                       | DPO on AI-labeled pairs                                            |
@@ -93,7 +93,7 @@ The expert doesn't have to be a person. Stanford's [Alpaca](https://crfm.stanfor
 
 {% include local_image_float_right.html src="raccoon-post-training-rlhf.webp" %}
 
-People find it far easier to say which of two answers is better than to write the ideal one. So RLHF runs a taste test: show labelers several answers to the same prompt and have them rank them. Then it writes the taste down as a model — a copy of the LLM (OpenAI used a 6B one) trained on 33k prompts' worth of comparisons to take a prompt and a response and output one number predicting what people would prefer. That **reward model** is the grader; it can score millions of answers nobody will ever read. How the score becomes learning is the [coach-and-scorekeeper loop below](#coach-with-a-scorekeeper-ppo).
+People find it far easier to say which of two answers is better than to write the ideal one. So RLHF runs a taste test: show labelers several answers to the same prompt and have them rank them. Then it writes the taste down as a model — a copy of the LLM (OpenAI used a 6B one) trained on 33k prompts' worth of comparisons to take a prompt and a response and output one number predicting what people would prefer. That **reward model** is the grader; it can score millions of answers nobody will ever read. How the score becomes learning is the [coach-and-forecaster loop below](#coach-with-a-forecaster-ppo).
 
 The payoff was the headline of the InstructGPT paper: labelers preferred the 1.3B-parameter InstructGPT over the 175B GPT-3, "despite having 100x fewer parameters." Behavior, not knowledge, was what people were missing.
 
@@ -144,14 +144,16 @@ If the answer can be checked — a math result, a unit test, an instruction with
 
 A grade is a number. Turning a number into a weight update is the second question, and the three answers differ in how much machinery they need.
 
-### Coach with a scorekeeper (PPO)
+<a id="coach-with-a-scorekeeper-ppo"></a>
+
+### Coach with a forecaster (PPO)
 
 {% include local_image_float_right.html src="raccoon-post-training-scorekeeper.webp" %}
 
-The classic RL loop, the one [InstructGPT](https://arxiv.org/abs/2203.02155) used. The model writes an answer, the grader scores it, and the score becomes the training signal — but a raw score isn't enough. To know whether an answer was a _good surprise_ or a _bad one_ the loop keeps a scorekeeper, the **value model** (critic), a second network that predicts how well each answer was expected to do; the update pushes on the difference between the score and that expectation. PPO is the coach: it makes each update small and clipped so the policy doesn't lurch. And there's a leash: a per-token KL penalty keeps the policy close to the model it started from, "to mitigate over-optimization of the reward model" — without it the policy drifts into whatever nonsense the grader happens to like.
+The classic RL loop, the one [InstructGPT](https://arxiv.org/abs/2203.02155) used. The model writes an answer, the grader scores it, and the score becomes the training signal — but a raw score isn't enough. To know whether an answer was a _good surprise_ or a _bad one_ the loop keeps a forecaster, the **value model** (critic), a second network that predicts the grade each answer will probably get. The forecaster never hands out a grade; the learning signal is the actual grade minus the predicted one, so a good surprise pushes the policy toward that answer and a bad one pushes it away. PPO is the coach: it makes each update small and clipped so the policy doesn't lurch. And there's a leash: a per-token KL penalty keeps the policy close to the model it started from, "to mitigate over-optimization of the reward model" — without it the policy drifts into whatever nonsense the grader happens to like.
 
-- **Optimizes:** the grade, corrected by the scorekeeper's expectation, with a leash back to the starting model.
-- **Needs:** four models in memory — the policy, the frozen reference it's leashed to, the grader (reward model), and the scorekeeper (value model).
+- **Optimizes:** the grade minus the forecaster's prediction, with a leash back to the starting model.
+- **Needs:** four models in memory — the policy, the frozen reference it's leashed to, the grader (reward model), and the forecaster (value model).
 - **Reach for it when:** you have a score for every answer and the budget to run the full loop.
 - **Watch-out:** the heaviest pipeline of the three, and the most knobs to tune.
 
@@ -161,9 +163,9 @@ The classic RL loop, the one [InstructGPT](https://arxiv.org/abs/2203.02155) use
 
 {% include local_image_float_right.html src="raccoon-post-training-curve.webp" %}
 
-[GRPO](https://arxiv.org/abs/2402.03300) (DeepSeekMath) fires the scorekeeper. Sample a group of answers to the same prompt, score each with the grader, and use the group's mean and spread as the expectation — an answer's advantage is just how much better it did than its siblings. "GRPO foregoes the critic model, instead estimating the baseline from group scores, significantly reducing training resources." No critic to train or hold in memory is what let R1-Zero run pure RL on a base model at all. It's a way of learning, not a way of grading: the score can come from an answer key or from a reward model.
+[GRPO](https://arxiv.org/abs/2402.03300) (DeepSeekMath) fires the forecaster. Sample a group of answers to the same prompt, score each with the grader, and use the group's average as the prediction — grading on a curve is the forecaster replaced by the group's own mean, so an answer's advantage is just how much better it did than its siblings. "GRPO foregoes the critic model, instead estimating the baseline from group scores, significantly reducing training resources." No critic to train or hold in memory is what let R1-Zero run pure RL on a base model at all. It's a way of learning, not a way of grading: the score can come from an answer key or from a reward model.
 
-- **Optimizes:** the same grade as PPO, with the group standing in for the scorekeeper.
+- **Optimizes:** the same grade as PPO, with the group's average standing in for the forecaster.
 - **Needs:** several sampled answers per prompt, plus the grader's score for each. Nothing else.
 - **Reach for it when:** you can't afford, or don't want to tune, a value model — the default for reasoning RL today.
 - **Watch-out:** its normalization terms bias it. Dividing each answer's loss by its length penalizes long wrong answers less, so wrong answers get longer; dividing by the group's reward spread over-weights the easiest and hardest prompts. [Dr. GRPO](https://arxiv.org/abs/2503.20783) removes both terms. [DAPO](https://arxiv.org/abs/2503.14476) widens the upper clip so the policy keeps exploring instead of collapsing, skips prompts where every sample scored the same (zero gradient), averages the loss per token rather than per answer, and penalizes over-long answers softly instead of as failures.
@@ -172,11 +174,13 @@ The classic RL loop, the one [InstructGPT](https://arxiv.org/abs/2203.02155) use
 
 <a id="dpo-the-same-preferences-no-rl-loop"></a>
 
-### Straight to A-over-B, no scorekeeper (DPO)
+<a id="straight-to-a-over-b-no-scorekeeper-dpo"></a>
+
+### Straight to A-over-B: no grader model, no forecaster (DPO)
 
 {% include local_image_float_right.html src="raccoon-post-training-dpo.webp" %}
 
-[DPO](https://arxiv.org/abs/2305.18290) noticed that for a taste test the whole loop was a detour. The RLHF objective — maximize the grade while staying leashed to the reference — has an optimal policy you can write down in closed form, and if you substitute that back in, the reward model becomes a function of the policy itself: "your language model is secretly a reward model." So you never train a grader or a scorekeeper. You take the same A-vs-B pairs and train the policy with a plain classification-style loss that pushes the preferred answer's probability up relative to the reference model and the rejected answer's down. Two models in memory instead of four, no sampling loop, no PPO to babysit — and most of RLHF's benefit. That's why it's the default preference step in open recipes like Tülu 3.
+[DPO](https://arxiv.org/abs/2305.18290) noticed that for a taste test the whole loop was a detour. The RLHF objective — maximize the grade while staying leashed to the reference — has an optimal policy you can write down in closed form, and if you substitute that back in, the reward model becomes a function of the policy itself: "your language model is secretly a reward model." So you never train a grader model or a forecaster. You take the same A-vs-B pairs and train the policy with a plain classification-style loss that pushes the preferred answer's probability up relative to the reference model and the rejected answer's down. Two models in memory instead of four, no sampling loop, no PPO to babysit — and most of RLHF's benefit. That's why it's the default preference step in open recipes like Tülu 3.
 
 - **Optimizes:** the same preference objective as RLHF, solved in closed form; a temperature β says how far from the reference it may wander.
 - **Needs:** A-vs-B pairs (from people or an AI judge), plus a frozen copy of the starting model as the reference.
@@ -212,15 +216,15 @@ The pattern across all of them: copy the expert to get into the neighborhood, a 
 
 ## Methods at a glance
 
-| Method    | Who grades                              | How it learns                               | Best for                                                       | Watch-out                                       |
-| --------- | --------------------------------------- | ------------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------- |
-| **SFT**   | Copy the expert's answers               | Imitation — no grade                        | The first shift: answer instead of autocomplete, hold a format | Can't exceed the demos or learn what not to do  |
-| **RLHF**  | Taste test by people → reward model     | Coach + scorekeeper (PPO), usually          | Helpfulness, tone, safety beyond what demos teach              | Heavy pipeline; reward hacking                  |
-| **RLAIF** | Taste test by an AI with a rulebook     | Same loops as RLHF                          | RLHF at scale, or when nothing is checkable                    | The judge's blind spots become the model's      |
-| **DPO**   | A-vs-B pairs (people or AI)             | Straight to A-over-B, no scorekeeper        | RLHF's benefit without the RL loop                             | Bounded by the pairs                            |
-| **RLVR**  | Answer key: tests, math grader, sandbox | PPO or GRPO                                 | Reasoning and coding agents, anything checkable                | Only where checkable; gaming the test           |
-| **GRPO**  | Any score (answer key or reward model)  | Grade on a curve against its own tries      | Reasoning RL on a budget; the usual RLVR optimizer             | Length bias (Dr. GRPO), entropy collapse (DAPO) |
-| **LoRA**  | —                                       | Clip-on adapter; the big model stays frozen | Making any of the above cheap                                  | A small adapter can't carry a big change        |
+| Method    | Who grades                              | How it learns                                        | Best for                                                       | Watch-out                                       |
+| --------- | --------------------------------------- | ---------------------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------- |
+| **SFT**   | Copy the expert's answers               | Imitation — no grade                                 | The first shift: answer instead of autocomplete, hold a format | Can't exceed the demos or learn what not to do  |
+| **RLHF**  | Taste test by people → reward model     | Coach + forecaster (PPO), usually                    | Helpfulness, tone, safety beyond what demos teach              | Heavy pipeline; reward hacking                  |
+| **RLAIF** | Taste test by an AI with a rulebook     | Same loops as RLHF                                   | RLHF at scale, or when nothing is checkable                    | The judge's blind spots become the model's      |
+| **DPO**   | A-vs-B pairs (people or AI)             | Straight to A-over-B; no grader model, no forecaster | RLHF's benefit without the RL loop                             | Bounded by the pairs                            |
+| **RLVR**  | Answer key: tests, math grader, sandbox | PPO or GRPO                                          | Reasoning and coding agents, anything checkable                | Only where checkable; gaming the test           |
+| **GRPO**  | Any score (answer key or reward model)  | Grade on a curve against its own tries               | Reasoning RL on a budget; the usual RLVR optimizer             | Length bias (Dr. GRPO), entropy collapse (DAPO) |
+| **LoRA**  | —                                       | Clip-on adapter; the big model stays frozen          | Making any of the above cheap                                  | A small adapter can't carry a big change        |
 
 ## What this post is not about
 
