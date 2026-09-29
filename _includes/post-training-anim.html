@@ -130,7 +130,7 @@ endcomment %}
   {% when "rlvr" %}
   <svg viewBox="0 0 320 130" role="img">
     <text x="160" y="16" class="pta-t" text-anchor="middle">
-      answer key: only ✓ strengthens
+      answer key: ✓ pushed up, ✗ pushed down
     </text>
     <g class="k-rlvr1">
       <rect x="14" y="40" width="60" height="44" rx="6" class="pta-card" />
@@ -148,28 +148,61 @@ endcomment %}
       <rect x="242" y="40" width="60" height="44" rx="6" class="pta-card" />
       <text x="272" y="70" class="pta-mark k-rlvrok">✓</text>
     </g>
-    <path d="M44 94 v18 M272 94 v18" class="pta-arrow-green k-rlvrarrow" />
-    <text x="160" y="122" class="pta-t" text-anchor="middle">→ model</text>
+    <text
+      x="44"
+      y="110"
+      class="pta-t k-rlvrarrow k-rlvrok"
+      text-anchor="middle"
+    >
+      ↑
+    </text>
+    <text
+      x="120"
+      y="110"
+      class="pta-t k-rlvrarrow k-rlvrbad"
+      text-anchor="middle"
+    >
+      ↓
+    </text>
+    <text
+      x="196"
+      y="110"
+      class="pta-t k-rlvrarrow k-rlvrbad"
+      text-anchor="middle"
+    >
+      ↓
+    </text>
+    <text
+      x="272"
+      y="110"
+      class="pta-t k-rlvrarrow k-rlvrok"
+      text-anchor="middle"
+    >
+      ↑
+    </text>
+    <text x="160" y="126" class="pta-t" text-anchor="middle">
+      each by its distance from usual
+    </text>
   </svg>
   {% when "grpo" %}
   <svg viewBox="0 0 320 130" role="img">
     <text x="160" y="16" class="pta-t" text-anchor="middle">
-      8 tries, one prompt; the group average is the bar
+      8 tries at one prompt: F D D C F B D F — the average (D) is the bar
     </text>
     <g class="pta-bars">
-      <rect x="22" y="49" width="22" height="55" class="pta-bar k-grpoUp" />
-      <rect x="58" y="74" width="22" height="30" class="pta-bar k-grpoDown" />
-      <rect x="94" y="56" width="22" height="48" class="pta-bar k-grpoUp" />
-      <rect x="130" y="84" width="22" height="20" class="pta-bar k-grpoDown" />
-      <rect x="166" y="42" width="22" height="62" class="pta-bar k-grpoUp" />
-      <rect x="202" y="69" width="22" height="35" class="pta-bar k-grpoDown" />
-      <rect x="238" y="63" width="22" height="41" class="pta-bar k-grpoDown" />
-      <rect x="274" y="46" width="22" height="58" class="pta-bar k-grpoUp" />
+      <rect x="22" y="90" width="22" height="14" class="pta-bar k-grpoDown" />
+      <rect x="58" y="74" width="22" height="30" class="pta-bar k-grpoFlat" />
+      <rect x="94" y="74" width="22" height="30" class="pta-bar k-grpoFlat" />
+      <rect x="130" y="58" width="22" height="46" class="pta-bar k-grpoUp" />
+      <rect x="166" y="90" width="22" height="14" class="pta-bar k-grpoDown" />
+      <rect x="202" y="42" width="22" height="62" class="pta-bar k-grpoUp" />
+      <rect x="238" y="74" width="22" height="30" class="pta-bar k-grpoFlat" />
+      <rect x="274" y="90" width="22" height="14" class="pta-bar k-grpoDown" />
     </g>
-    <line x1="14" y1="57" x2="306" y2="57" class="pta-avg" />
-    <text x="306" y="52" class="pta-t" text-anchor="end">average</text>
+    <line x1="14" y1="74" x2="306" y2="74" class="pta-avg" />
+    <text x="306" y="69" class="pta-t" text-anchor="end">average = D</text>
     <text x="160" y="122" class="pta-t" text-anchor="middle">
-      above grows, below shrinks — the average is the forecast
+      above grows, below shrinks, on the line stays
     </text>
   </svg>
   {% endcase %}
