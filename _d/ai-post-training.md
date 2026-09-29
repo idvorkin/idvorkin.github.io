@@ -110,6 +110,8 @@ The catch is Goodhart's law with a training budget. The reward model is a _proxy
 
 ### Taste test by an AI with a rulebook (RLAIF, Constitutional AI)
 
+{% include local_image_float_right.html src="raccoon-post-training-rulebook.webp" %}
+
 Human rankings are the expensive part of the taste test. [Constitutional AI](https://arxiv.org/abs/2212.08073) replaced them with a model and a short list of written principles — the "constitution", the only human oversight in the loop. Two phases: first the model critiques and revises its own answers against those principles and is fine-tuned on the revisions (copy the expert, where the expert is the model's own corrected draft); then a model, not a person, judges A-vs-B pairs, a reward model is trained on those AI preferences, and the RL loop runs against it. Anthropic called that second phase RL from AI Feedback, and [a later Google study](https://arxiv.org/abs/2309.00267) found RLAIF "achieves comparable performance to RLHF" on summarization and dialogue.
 
 An AI judge is also what's left when the target can't be checked at all. To teach a language model to paint by writing p5.brush JavaScript, [Surya Narreddi hand-rated 1,664 generated images down to a 581-picture reference pool](https://surya.website/rling-qwen-to-paint-with-code) and made the reward "did the judge prefer this render to two pulled from that pool" — with no test to pass, the reward function _is_ the design work, and [a badly built one plateaus while the score keeps climbing](/hill-climbing#your-other-job-build-evals).
@@ -144,6 +146,8 @@ A grade is a number. Turning a number into a weight update is the second questio
 
 ### Coach with a scorekeeper (PPO)
 
+{% include local_image_float_right.html src="raccoon-post-training-scorekeeper.webp" %}
+
 The classic RL loop, the one [InstructGPT](https://arxiv.org/abs/2203.02155) used. The model writes an answer, the grader scores it, and the score becomes the training signal — but a raw score isn't enough. To know whether an answer was a _good surprise_ or a _bad one_ the loop keeps a scorekeeper, the **value model** (critic), a second network that predicts how well each answer was expected to do; the update pushes on the difference between the score and that expectation. PPO is the coach: it makes each update small and clipped so the policy doesn't lurch. And there's a leash: a per-token KL penalty keeps the policy close to the model it started from, "to mitigate over-optimization of the reward model" — without it the policy drifts into whatever nonsense the grader happens to like.
 
 - **Optimizes:** the grade, corrected by the scorekeeper's expectation, with a leash back to the starting model.
@@ -154,6 +158,8 @@ The classic RL loop, the one [InstructGPT](https://arxiv.org/abs/2203.02155) use
 <a id="grpo-the-optimizer-that-made-rlvr-cheap"></a>
 
 ### Grade on a curve against its own tries (GRPO)
+
+{% include local_image_float_right.html src="raccoon-post-training-curve.webp" %}
 
 [GRPO](https://arxiv.org/abs/2402.03300) (DeepSeekMath) fires the scorekeeper. Sample a group of answers to the same prompt, score each with the grader, and use the group's mean and spread as the expectation — an answer's advantage is just how much better it did than its siblings. "GRPO foregoes the critic model, instead estimating the baseline from group scores, significantly reducing training resources." No critic to train or hold in memory is what let R1-Zero run pure RL on a base model at all. It's a way of learning, not a way of grading: the score can come from an answer key or from a reward model.
 
@@ -182,6 +188,8 @@ The classic RL loop, the one [InstructGPT](https://arxiv.org/abs/2203.02155) use
 <a id="how-the-weights-actually-change-lora"></a>
 
 ### Clip-on adapter (LoRA)
+
+{% include local_image_float_right.html src="raccoon-post-training-adapter.webp" %}
 
 Whichever row and column, you rarely retrain every weight. **LoRA** ([Low-Rank Adaptation](https://arxiv.org/abs/2106.09685)) freezes the model and trains a small low-rank matrix bolted alongside each layer — clip a narrow module onto the model and only tune that. On GPT-3 175B it cut trainable parameters 10,000× and GPU memory 3× with no loss in quality, and the base model's knowledge stays intact because you never touched it. Hands-on: [LoRA on Llama 3](https://colab.research.google.com/drive/1efOx_rwZeF3i0YsirhM1xhYLtGNX6Fv3?usp=sharing#scrollTo=bDp0zNpwe6U_) and [Fine-Tune Your Own Llama 2 Model in a Colab Notebook](https://mlabonne.github.io/blog/posts/Fine_Tune_Your_Own_Llama_2_Model_in_a_Colab_Notebook.html), the walkthrough I'd start with.
 
