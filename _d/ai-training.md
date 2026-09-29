@@ -26,6 +26,7 @@ I don't train models for a living — I build on top of them. But the models I b
   - [RLHF: learn the taste from rankings](#rlhf-learn-the-taste-from-rankings)
   - [DPO: the same preferences, no RL loop](#dpo-the-same-preferences-no-rl-loop)
   - [RLVR: let a checker grade it](#rlvr-let-a-checker-grade-it)
+  - [GRPO: the optimizer that made RLVR cheap](#grpo-the-optimizer-that-made-rlvr-cheap)
   - [RLAIF: when the judge is a model](#rlaif-when-the-judge-is-a-model)
   - [Methods at a glance](#methods-at-a-glance)
   - [How the weights actually change: LoRA](#how-the-weights-actually-change-lora)
@@ -93,12 +94,21 @@ People find it far easier to say which of two answers is better than to write th
 
 ### RLVR: let a checker grade it
 
-If the answer can be checked — a math result, a unit test, a task that either got done or didn't — you need neither humans nor a reward model. [RLVR](https://arxiv.org/abs/2411.15124) (the name is from Tülu 3) runs RL straight against that checker: a reward when the answer verifies, nothing otherwise. [DeepSeek-R1](https://arxiv.org/abs/2501.12948) showed how far it goes — reasoning behavior came out of RL on a base model with no human-written reasoning traces at all — and it's the engine behind the o1-style reasoning models and the coding agents [below](#post-training-for-coding-competence). The optimizer is usually PPO or [GRPO](https://arxiv.org/abs/2402.03300), a lighter-memory PPO variant.
+If the answer can be checked — a math result, a unit test, a task that either got done or didn't — you need neither humans nor a reward model. [RLVR](https://arxiv.org/abs/2411.15124) (the name is from Tülu 3) runs RL straight against that checker: a reward when the answer verifies, nothing otherwise. [DeepSeek-R1](https://arxiv.org/abs/2501.12948) showed how far it goes — reasoning behavior came out of RL on a base model with no human-written reasoning traces at all — and it's the engine behind the o1-style reasoning models and the coding agents [below](#post-training-for-coding-competence). The optimizer is PPO or, increasingly, [GRPO](#grpo-the-optimizer-that-made-rlvr-cheap) — next.
 
 - **Optimizes:** the rate at which answers pass the checker.
 - **Data:** prompts that come with a verifier — math with known answers, code with tests, instructions with checkable constraints. No human labels at training time.
 - **Reach for it when:** correctness is checkable: reasoning, math, code, agentic tasks.
 - **Watch-out:** only works where answers are checkable, and the checker becomes the target — the model will game the test if it can.
+
+### GRPO: the optimizer that made RLVR cheap
+
+PPO needs a second network, the value model (critic), to estimate how well each answer was _expected_ to do, so a raw reward can be turned into an advantage. [GRPO](https://arxiv.org/abs/2402.03300) (DeepSeekMath) drops it: sample a group of answers to the same prompt, score each with the checker, and use the group's mean and spread as the baseline — an answer's advantage is just how much better it did than its siblings. No critic to train or hold in memory, which is what let [DeepSeek-R1](https://arxiv.org/abs/2501.12948) run pure RL with rule-based accuracy and format rewards straight on a base model.
+
+- **Optimizes:** the same verifiable reward as RLVR, with the group standing in for the critic.
+- **Data:** several sampled answers per prompt, plus the checker's score for each. Nothing else.
+- **Reach for it when:** you're doing RLVR and can't afford, or don't want to tune, a value model — the default for reasoning RL today.
+- **Watch-out:** its normalization terms bias it. Dividing each answer's loss by its length penalizes long wrong answers less, so wrong answers get longer; dividing by the group's reward spread over-weights the easiest and hardest prompts. [Dr. GRPO](https://arxiv.org/abs/2503.20783) removes both terms. [DAPO](https://arxiv.org/abs/2503.14476) widens the upper clip against entropy collapse, skips prompts where every sample scored the same (zero gradient), averages loss per token rather than per answer, and penalizes over-long answers softly instead of as failures.
 
 ### RLAIF: when the judge is a model
 
@@ -106,13 +116,14 @@ RLAIF (from [Constitutional AI](https://arxiv.org/abs/2212.08073)) is RLHF with 
 
 ### Methods at a glance
 
-| Method    | Signal (who or what grades)                 | Separate reward model?           | Best for                                                       | Watch-out                                      |
-| --------- | ------------------------------------------- | -------------------------------- | -------------------------------------------------------------- | ---------------------------------------------- |
-| **SFT**   | Human-written target answers                | No                               | The first shift: answer instead of autocomplete, hold a format | Can't exceed the demos or learn what not to do |
-| **RLHF**  | Humans rank A vs B → reward model           | **Yes**                          | Helpfulness, tone, safety beyond what demos teach              | Heavy pipeline; reward hacking                 |
-| **RLAIF** | A model ranks A vs B → reward model         | Yes                              | RLHF at scale, or when nothing is checkable                    | The judge's blind spots become the model's     |
-| **DPO**   | The same A-vs-B rankings, fit directly      | No                               | RLHF's benefit without the RL loop                             | Bounded by the preference data                 |
-| **RLVR**  | A checker: unit tests, math grader, sandbox | No — the checker _is_ the reward | Reasoning and coding agents, anything checkable                | Only where checkable; gaming the test          |
+| Method    | Signal (who or what grades)                                           | Separate reward model?           | Best for                                                       | Watch-out                                       |
+| --------- | --------------------------------------------------------------------- | -------------------------------- | -------------------------------------------------------------- | ----------------------------------------------- |
+| **SFT**   | Human-written target answers                                          | No                               | The first shift: answer instead of autocomplete, hold a format | Can't exceed the demos or learn what not to do  |
+| **RLHF**  | Humans rank A vs B → reward model                                     | **Yes**                          | Helpfulness, tone, safety beyond what demos teach              | Heavy pipeline; reward hacking                  |
+| **RLAIF** | A model ranks A vs B → reward model                                   | Yes                              | RLHF at scale, or when nothing is checkable                    | The judge's blind spots become the model's      |
+| **DPO**   | The same A-vs-B rankings, fit directly                                | No                               | RLHF's benefit without the RL loop                             | Bounded by the preference data                  |
+| **RLVR**  | A checker: unit tests, math grader, sandbox                           | No — the checker _is_ the reward | Reasoning and coding agents, anything checkable                | Only where checkable; gaming the test           |
+| **GRPO**  | RLVR's checker; a group of sampled answers per prompt is the baseline | No — and no value model either   | Reasoning RL on a budget; the usual RLVR optimizer             | Length bias (Dr. GRPO), entropy collapse (DAPO) |
 
 ### How the weights actually change: LoRA
 
