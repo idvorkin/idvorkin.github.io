@@ -8,6 +8,7 @@
   Enable  : visit any post with ?annotate=1  (persists via localStorage)
   Disable : visit any post with ?annotate=0
   Toggle  : Cmd/Ctrl+Shift+A on desktop
+  Banner  : "💬 Comments" in the local dev banner toggles it live (no reload)
 
   Once enabled: select text -> a small "Comment" bubble appears near the
   selection -> tap it -> type a note -> pick an intent -> Save
@@ -132,589 +133,624 @@
       }
     });
 
-    if (!enabled()) return; // <-- readers stop here
+    // Live on/off for the dev banner's Comments button (src/dev-info.ts):
+    // no reload, so an open "Diff vs main" view survives the toggle. The UI is
+    // built on first enable; turning off hides it and makes the handlers inert.
+    var live = false;
+    var started = false;
+    var stop = null; // set by start(): closes the bubble and any open card
+    window.blogAnnotate = {
+      enabled: function () {
+        return live;
+      },
+      set: function (on) {
+        live = !!on;
+        setEnabled(live);
+        document.documentElement.classList.toggle("blog-annot-off", !live);
+        if (live && !started) {
+          started = true;
+          start();
+        }
+        if (!live && stop) stop();
+      },
+    };
 
-    // --------------------------------------------------------- page identity
-    var meta = document.getElementById("blog-annot-meta");
-    var PERMALINK =
-      (meta && meta.dataset.permalink) || window.location.pathname;
-    var TITLE = (meta && meta.dataset.title) || document.title;
-    // Scheme + host + port of the server actually being read. `location.host`
-    // carries the port, so a non-standard preview port survives. A handful of
-    // older mobile browsers ship no `location.origin`; rebuild it there.
-    var ORIGIN =
-      window.location.origin ||
-      window.location.protocol + "//" + window.location.host;
+    if (enabled()) window.blogAnnotate.set(true); // <-- readers stop here
+    return;
 
-    // ------------------------------------------------------------- storage
-    function loadBuffer() {
-      try {
-        var raw = localStorage.getItem(BUF_KEY);
-        if (!raw) return [];
-        var parsed = JSON.parse(raw);
-        return Array.isArray(parsed) ? parsed : [];
-      } catch (e) {
-        return [];
-      }
-    }
+    function start() {
+      // --------------------------------------------------------- page identity
+      var meta = document.getElementById("blog-annot-meta");
+      var PERMALINK =
+        (meta && meta.dataset.permalink) || window.location.pathname;
+      var TITLE = (meta && meta.dataset.title) || document.title;
+      // Scheme + host + port of the server actually being read. `location.host`
+      // carries the port, so a non-standard preview port survives. A handful of
+      // older mobile browsers ship no `location.origin`; rebuild it there.
+      var ORIGIN =
+        window.location.origin ||
+        window.location.protocol + "//" + window.location.host;
 
-    function saveBuffer(list) {
-      try {
-        localStorage.setItem(BUF_KEY, JSON.stringify(list));
-      } catch (e) {
-        alert("Could not save annotation (localStorage full or blocked).");
-      }
-    }
-
-    // ------------------------------------------------------------- selector
-    // Build the W3C TextQuoteSelector triple: exact quote plus ~30 chars of
-    // surrounding text. This is what lets the CLI find the same spot in the
-    // markdown source even though the rendered HTML differs from it.
-    //
-    // We walk the *text* of the article container rather than the DOM so the
-    // prefix/suffix cross element boundaries the way a reader perceives them.
-    function articleRoot() {
-      return (
-        document.getElementById("content-holder") ||
-        document.getElementById("main-content") ||
-        document.body
-      );
-    }
-
-    function selectorFromRange(range) {
-      var root = articleRoot();
-      var diffView = document.getElementById("rich-diff-view");
-      if (
-        diffView &&
-        (diffView.contains(range.startContainer) ||
-          diffView.contains(range.endContainer))
-      ) {
-        // The article is hidden behind the rendered diff. Anchor against the
-        // real article text, not the diff markup (see DIFF VIEW above).
-        var fn = window.blogAnnotateDiffSelector;
-        return fn ? fn(range, diffView, root, CTX) : null;
-      }
-      var quote = range.toString();
-      if (!quote.trim()) return null;
-
-      var prefix = "";
-      var suffix = "";
-      try {
-        var pre = range.cloneRange();
-        pre.selectNodeContents(root);
-        pre.setEnd(range.startContainer, range.startOffset);
-        var preText = pre.toString();
-        prefix = preText.slice(Math.max(0, preText.length - CTX));
-
-        var post = range.cloneRange();
-        post.selectNodeContents(root);
-        post.setStart(range.endContainer, range.endOffset);
-        suffix = post.toString().slice(0, CTX);
-      } catch (e) {
-        // Selection escaped the article root (e.g. started in the sidebar).
-        // A bare quote still locates most of the time; the CLI reports the
-        // ones it can't find rather than guessing.
+      // ------------------------------------------------------------- storage
+      function loadBuffer() {
+        try {
+          var raw = localStorage.getItem(BUF_KEY);
+          if (!raw) return [];
+          var parsed = JSON.parse(raw);
+          return Array.isArray(parsed) ? parsed : [];
+        } catch (e) {
+          return [];
+        }
       }
 
-      return { quote: quote, prefix: prefix, suffix: suffix };
-    }
-
-    // ------------------------------------------------------- page versioning
-    // FNV-1a, 32-bit. Not a security hash — a cheap, synchronous, stable
-    // fingerprint so "did this page change since I annotated it?" is answerable
-    // without refetching. crypto.subtle would work too but is async for no gain.
-    function fnv1a(str) {
-      var h = 0x811c9dc5;
-      for (var i = 0; i < str.length; i++) {
-        h ^= str.charCodeAt(i);
-        h = (h + ((h << 1) + (h << 4) + (h << 7) + (h << 8) + (h << 24))) >>> 0;
+      function saveBuffer(list) {
+        try {
+          localStorage.setItem(BUF_KEY, JSON.stringify(list));
+        } catch (e) {
+          alert("Could not save annotation (localStorage full or blocked).");
+        }
       }
-      return ("0000000" + h.toString(16)).slice(-8);
-    }
 
-    // innerText of a display:none element is its raw textContent, so while the
-    // diff view hides the article the digest would silently change. Measure it
-    // as rendered: unhide for the synchronous read (no paint in between).
-    function articleText(root) {
-      var hidden = root.style && root.style.display === "none";
-      if (hidden) root.style.display = "";
-      var text = root.innerText || root.textContent || "";
-      if (hidden) root.style.display = "none";
-      return text;
-    }
-
-    function pageVersion() {
-      var text = articleText(articleRoot()).replace(/\s+/g, " ").trim();
-      return {
-        url: ORIGIN + window.location.pathname,
-        capturedAt: new Date().toISOString(),
-        // Site deploy time, from GitHub Pages' Last-Modified header. Coarse
-        // (same for every page on the site) but genuine — see the header note.
-        lastModified: document.lastModified || "",
-        contentLength: text.length,
-        contentDigest: fnv1a(text),
-      };
-    }
-
-    // ------------------------------------------------------------------ UI
-    var style = document.createElement("style");
-    style.textContent = [
-      "#blog-annot-btn{position:absolute;z-index:99999;display:none;",
-      "padding:6px 12px;font:600 14px/1.2 system-ui,sans-serif;color:#fff;",
-      "background:#0b5ed7;border:0;border-radius:16px;cursor:pointer;",
-      "box-shadow:0 2px 8px rgba(0,0,0,.3);touch-action:manipulation}",
-      "#blog-annot-pill{position:fixed;right:14px;bottom:14px;z-index:99999;",
-      "display:flex;gap:6px;align-items:center;padding:8px 12px;",
-      "font:600 13px/1.2 system-ui,sans-serif;color:#fff;background:#212529;",
-      "border-radius:20px;box-shadow:0 2px 10px rgba(0,0,0,.35)}",
-      // Sit above the rich diff's change navigator (#rd-nav) instead of over it.
-      "body:has(#rd-nav) #blog-annot-pill{bottom:70px}",
-      "#blog-annot-pill button{font:600 12px/1.2 system-ui,sans-serif;",
-      "padding:5px 9px;border:0;border-radius:12px;cursor:pointer;",
-      "background:#495057;color:#fff}",
-      "#blog-annot-pill button:disabled{opacity:.45;cursor:default}",
-      "#blog-annot-modal{position:fixed;inset:0;z-index:100000;display:none;",
-      "align-items:center;justify-content:center;background:rgba(0,0,0,.45);",
-      "padding:16px}",
-      "#blog-annot-card{width:100%;max-width:520px;background:#fff;color:#111;",
-      "border-radius:12px;padding:16px;font:14px/1.45 system-ui,sans-serif;",
-      "max-height:85vh;overflow:auto}",
-      "#blog-annot-card blockquote{margin:0 0 10px;padding:8px 10px;",
-      "background:#f1f3f5;border-left:3px solid #0b5ed7;font-style:italic;",
-      "max-height:9em;overflow:auto}",
-      "#blog-annot-card textarea{width:100%;min-height:110px;padding:8px;",
-      "font:14px/1.4 system-ui,sans-serif;border:1px solid #ced4da;",
-      "border-radius:8px;box-sizing:border-box}",
-      "#blog-annot-intents{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}",
-      "#blog-annot-intents button{padding:7px 12px;border:1px solid #ced4da;",
-      "border-radius:14px;background:#f8f9fa;color:#495057;",
-      "font:600 13px/1.2 system-ui,sans-serif;cursor:pointer;",
-      "touch-action:manipulation}",
-      "#blog-annot-intents button[aria-pressed='true']{background:#0b5ed7;",
-      "border-color:#0b5ed7;color:#fff}",
-      "#blog-annot-card .row{display:flex;gap:8px;justify-content:flex-end;",
-      "margin-top:10px;flex-wrap:wrap;align-items:center}",
-      "#blog-annot-card .hint{margin-right:auto;font-size:12px;color:#868e96}",
-      "#blog-annot-card button{padding:8px 14px;border:0;border-radius:8px;",
-      "font:600 13px/1.2 system-ui,sans-serif;cursor:pointer}",
-      "#blog-annot-card .primary{background:#0b5ed7;color:#fff}",
-      "#blog-annot-card .ghost{background:#e9ecef;color:#212529}",
-      "#blog-annot-list{margin:10px 0 0;padding:0;list-style:none;",
-      "font-size:13px}",
-      "#blog-annot-list li{padding:6px 0;border-top:1px solid #e9ecef}",
-      "#blog-annot-note{margin-top:10px;font-size:12px;color:#495057;",
-      "word-break:break-all}",
-    ].join("");
-    document.head.appendChild(style);
-
-    var btn = document.createElement("button");
-    btn.id = "blog-annot-btn";
-    btn.type = "button";
-    btn.textContent = "💬 Comment";
-    document.body.appendChild(btn);
-
-    var pill = document.createElement("div");
-    pill.id = "blog-annot-pill";
-    pill.innerHTML =
-      '<span id="blog-annot-count">Review (0)</span>' +
-      '<button type="button" id="blog-annot-open">Open</button>';
-    document.body.appendChild(pill);
-
-    var modal = document.createElement("div");
-    modal.id = "blog-annot-modal";
-    modal.innerHTML = '<div id="blog-annot-card"></div>';
-    document.body.appendChild(modal);
-    var card = modal.firstChild;
-
-    function showModal(html) {
-      card.innerHTML = html;
-      modal.style.display = "flex";
-    }
-    function hideModal() {
-      modal.style.display = "none";
-      card.innerHTML = "";
-      composerKeys = null;
-    }
-    modal.addEventListener("click", function (e) {
-      if (e.target === modal) hideModal();
-    });
-
-    // Keyboard submit/cancel for the composer. Registered once on document so
-    // it fires no matter which control has focus (textarea, an intent chip, or
-    // nothing); `composerKeys` is non-null only while the composer is open, so
-    // this is inert the rest of the time.
-    var composerKeys = null;
-    var IS_MAC = /Mac|iPhone|iPad|iPod/.test(navigator.platform || "");
-    document.addEventListener("keydown", function (e) {
-      if (!composerKeys) return;
-      if (e.key === "Escape" || e.key === "Esc") {
-        e.preventDefault();
-        composerKeys.cancel();
-        return;
-      }
-      var isEnter = e.key === "Enter" || e.keyCode === 13;
-      // Cmd+Enter on mac, Ctrl+Enter elsewhere. Accept either on both — a
-      // Bluetooth keyboard on an iPad can report whichever it likes.
-      if (isEnter && (e.metaKey || e.ctrlKey)) {
-        e.preventDefault();
-        composerKeys.save();
-      }
-    });
-
-    function refreshPill() {
-      document.getElementById("blog-annot-count").textContent =
-        "Review (" + loadBuffer().length + ")";
-    }
-    refreshPill();
-
-    function escapeHtml(s) {
-      return String(s).replace(/[&<>"']/g, function (c) {
-        return {
-          "&": "&amp;",
-          "<": "&lt;",
-          ">": "&gt;",
-          '"': "&quot;",
-          "'": "&#39;",
-        }[c];
-      });
-    }
-
-    // --------------------------------------------------------- capture flow
-    var pending = null;
-
-    function hideBtn() {
-      btn.style.display = "none";
-    }
-
-    function positionBtn(range) {
-      var rects = range.getClientRects();
-      var r = rects.length
-        ? rects[rects.length - 1]
-        : range.getBoundingClientRect();
-      if (!r || (!r.width && !r.height)) return hideBtn();
-      var top = r.bottom + window.scrollY + 8;
-      var left = r.left + window.scrollX;
-      // Keep the bubble on-screen on narrow phones.
-      var maxLeft = window.scrollX + document.documentElement.clientWidth - 130;
-      btn.style.top = top + "px";
-      btn.style.left =
-        Math.max(window.scrollX + 8, Math.min(left, maxLeft)) + "px";
-      btn.style.display = "block";
-    }
-
-    function onSelectionSettled() {
-      var sel = window.getSelection();
-      if (!sel || sel.isCollapsed || sel.rangeCount === 0) return hideBtn();
-      var range = sel.getRangeAt(0);
-      if (!range.toString().trim()) return hideBtn();
-      var sel_info = selectorFromRange(range);
-      if (!sel_info) return hideBtn();
-      pending = sel_info;
-      positionBtn(range);
-    }
-
-    // mouseup covers desktop; selectionchange (debounced) covers iOS Safari
-    // touch selection, where mouseup fires unreliably and the handles keep
-    // moving after the initial gesture.
-    document.addEventListener("mouseup", function () {
-      setTimeout(onSelectionSettled, 10);
-    });
-
-    var selTimer = null;
-    document.addEventListener("selectionchange", function () {
-      if (selTimer) clearTimeout(selTimer);
-      selTimer = setTimeout(onSelectionSettled, 350);
-    });
-
-    // Both, so a tap on the bubble registers immediately on iOS instead of
-    // waiting out the 300ms click delay (and losing the selection first).
-    ["click", "touchend"].forEach(function (evt) {
-      btn.addEventListener(evt, function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        if (pending) openComposer(pending);
-      });
-    });
-
-    // One tap, seven choices. Keep in sync with INTENTS in scripts/blog_review.py.
-    var INTENTS = [
-      "fix",
-      "cut",
-      "rewrite",
-      "expand",
-      "check",
-      "question",
-      "note",
-    ];
-    var DEFAULT_INTENT = "note";
-
-    function openComposer(sel_info) {
-      hideBtn();
-      var chips = INTENTS.map(function (name) {
+      // ------------------------------------------------------------- selector
+      // Build the W3C TextQuoteSelector triple: exact quote plus ~30 chars of
+      // surrounding text. This is what lets the CLI find the same spot in the
+      // markdown source even though the rendered HTML differs from it.
+      //
+      // We walk the *text* of the article container rather than the DOM so the
+      // prefix/suffix cross element boundaries the way a reader perceives them.
+      function articleRoot() {
         return (
-          '<button type="button" data-intent="' +
-          name +
-          '" aria-pressed="' +
-          (name === DEFAULT_INTENT ? "true" : "false") +
-          '">' +
-          name +
-          "</button>"
+          document.getElementById("content-holder") ||
+          document.getElementById("main-content") ||
+          document.body
         );
-      }).join("");
-
-      showModal(
-        "<blockquote>" +
-          escapeHtml(sel_info.quote) +
-          "</blockquote>" +
-          '<textarea id="blog-annot-text" placeholder="What about this line?"></textarea>' +
-          '<div id="blog-annot-intents">' +
-          chips +
-          "</div>" +
-          '<div class="row">' +
-          '<span class="hint">' +
-          (IS_MAC ? "⌘" : "Ctrl") +
-          "+Enter saves · Esc cancels</span>" +
-          '<button type="button" class="ghost" id="blog-annot-cancel">Cancel</button>' +
-          '<button type="button" class="primary" id="blog-annot-save">Save</button>' +
-          "</div>"
-      );
-
-      var ta = document.getElementById("blog-annot-text");
-      ta.focus();
-
-      var intent = DEFAULT_INTENT;
-      var chipBox = document.getElementById("blog-annot-intents");
-      chipBox.addEventListener("click", function (e) {
-        var hit = e.target.closest
-          ? e.target.closest("button[data-intent]")
-          : null;
-        if (!hit) return;
-        e.preventDefault();
-        intent = hit.getAttribute("data-intent");
-        var all = chipBox.querySelectorAll("button[data-intent]");
-        for (var i = 0; i < all.length; i++) {
-          all[i].setAttribute(
-            "aria-pressed",
-            all[i] === hit ? "true" : "false"
-          );
-        }
-        // Keep typing where the thumb left off.
-        ta.focus();
-      });
-
-      function save() {
-        var list = loadBuffer();
-        var entry = {
-          permalink: PERMALINK,
-          origin: ORIGIN,
-          title: TITLE,
-          quote: sel_info.quote,
-          prefix: sel_info.prefix,
-          suffix: sel_info.suffix,
-          comment: ta.value,
-          intent: intent,
-          ts: new Date().toISOString(),
-          version: pageVersion(),
-        };
-        if (sel_info.diff) entry.diff = sel_info.diff;
-        list.push(entry);
-        saveBuffer(list);
-        refreshPill();
-        hideModal();
-        var s = window.getSelection();
-        if (s && s.removeAllRanges) s.removeAllRanges();
       }
 
-      document.getElementById("blog-annot-cancel").onclick = hideModal;
-      document.getElementById("blog-annot-save").onclick = save;
-      composerKeys = { save: save, cancel: hideModal };
-    }
-
-    // ---------------------------------------------------------- review flow
-    document.getElementById("blog-annot-open").onclick = openReview;
-
-    function openReview() {
-      var list = loadBuffer();
-      var items = list.length
-        ? list
-            .map(function (a, i) {
-              return (
-                "<li><b>" +
-                (i + 1) +
-                ".</b> [" +
-                escapeHtml(a.intent || DEFAULT_INTENT) +
-                "] " +
-                escapeHtml(a.quote.slice(0, 90)) +
-                (a.quote.length > 90 ? "…" : "") +
-                "<br><i>" +
-                escapeHtml(a.comment || "(no comment)") +
-                "</i></li>"
-              );
-            })
-            .join("")
-        : "<li>Nothing captured yet.</li>";
-
-      showModal(
-        "<b>Annotations (" +
-          list.length +
-          ")</b>" +
-          '<ul id="blog-annot-list">' +
-          items +
-          "</ul>" +
-          '<div class="row">' +
-          '<button type="button" class="ghost" id="blog-annot-clear">Clear all</button>' +
-          '<button type="button" class="ghost" id="blog-annot-copy">Copy to clipboard</button>' +
-          '<button type="button" class="primary" id="blog-annot-gist">Upload to gist</button>' +
-          '<button type="button" class="ghost" id="blog-annot-close">Close</button>' +
-          "</div>" +
-          '<div id="blog-annot-note"></div>'
-      );
-
-      var note = document.getElementById("blog-annot-note");
-      document.getElementById("blog-annot-close").onclick = hideModal;
-
-      document.getElementById("blog-annot-clear").onclick = function () {
-        if (!confirm("Discard all " + list.length + " annotations?")) return;
-        saveBuffer([]);
-        refreshPill();
-        hideModal();
-      };
-
-      document.getElementById("blog-annot-copy").onclick = function () {
-        var json = payloadJson(list);
-        function fallback() {
-          var ta = document.createElement("textarea");
-          ta.value = json;
-          ta.style.position = "fixed";
-          ta.style.opacity = "0";
-          document.body.appendChild(ta);
-          ta.select();
-          try {
-            document.execCommand("copy");
-            note.textContent = "Copied " + list.length + " annotations.";
-          } catch (e) {
-            note.textContent = "Copy failed — select the JSON manually.";
-          }
-          document.body.removeChild(ta);
+      function selectorFromRange(range) {
+        var root = articleRoot();
+        var diffView = document.getElementById("rich-diff-view");
+        if (
+          diffView &&
+          (diffView.contains(range.startContainer) ||
+            diffView.contains(range.endContainer))
+        ) {
+          // The article is hidden behind the rendered diff. Anchor against the
+          // real article text, not the diff markup (see DIFF VIEW above).
+          var fn = window.blogAnnotateDiffSelector;
+          return fn ? fn(range, diffView, root, CTX) : null;
         }
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-          navigator.clipboard.writeText(json).then(function () {
-            note.textContent = "Copied " + list.length + " annotations.";
-          }, fallback);
-        } else {
-          fallback();
-        }
-      };
+        var quote = range.toString();
+        if (!quote.trim()) return null;
 
-      document.getElementById("blog-annot-gist").onclick = function () {
-        if (!list.length) {
-          note.textContent = "Nothing to upload.";
+        var prefix = "";
+        var suffix = "";
+        try {
+          var pre = range.cloneRange();
+          pre.selectNodeContents(root);
+          pre.setEnd(range.startContainer, range.startOffset);
+          var preText = pre.toString();
+          prefix = preText.slice(Math.max(0, preText.length - CTX));
+
+          var post = range.cloneRange();
+          post.selectNodeContents(root);
+          post.setStart(range.endContainer, range.endOffset);
+          suffix = post.toString().slice(0, CTX);
+        } catch (e) {
+          // Selection escaped the article root (e.g. started in the sidebar).
+          // A bare quote still locates most of the time; the CLI reports the
+          // ones it can't find rather than guessing.
+        }
+
+        return { quote: quote, prefix: prefix, suffix: suffix };
+      }
+
+      // ------------------------------------------------------- page versioning
+      // FNV-1a, 32-bit. Not a security hash — a cheap, synchronous, stable
+      // fingerprint so "did this page change since I annotated it?" is answerable
+      // without refetching. crypto.subtle would work too but is async for no gain.
+      function fnv1a(str) {
+        var h = 0x811c9dc5;
+        for (var i = 0; i < str.length; i++) {
+          h ^= str.charCodeAt(i);
+          h =
+            (h + ((h << 1) + (h << 4) + (h << 7) + (h << 8) + (h << 24))) >>> 0;
+        }
+        return ("0000000" + h.toString(16)).slice(-8);
+      }
+
+      // innerText of a display:none element is its raw textContent, so while the
+      // diff view hides the article the digest would silently change. Measure it
+      // as rendered: unhide for the synchronous read (no paint in between).
+      function articleText(root) {
+        var hidden = root.style && root.style.display === "none";
+        if (hidden) root.style.display = "";
+        var text = root.innerText || root.textContent || "";
+        if (hidden) root.style.display = "none";
+        return text;
+      }
+
+      function pageVersion() {
+        var text = articleText(articleRoot()).replace(/\s+/g, " ").trim();
+        return {
+          url: ORIGIN + window.location.pathname,
+          capturedAt: new Date().toISOString(),
+          // Site deploy time, from GitHub Pages' Last-Modified header. Coarse
+          // (same for every page on the site) but genuine — see the header note.
+          lastModified: document.lastModified || "",
+          contentLength: text.length,
+          contentDigest: fnv1a(text),
+        };
+      }
+
+      // ------------------------------------------------------------------ UI
+      var style = document.createElement("style");
+      style.textContent = [
+        "#blog-annot-btn{position:absolute;z-index:99999;display:none;",
+        "padding:6px 12px;font:600 14px/1.2 system-ui,sans-serif;color:#fff;",
+        "background:#0b5ed7;border:0;border-radius:16px;cursor:pointer;",
+        "box-shadow:0 2px 8px rgba(0,0,0,.3);touch-action:manipulation}",
+        "#blog-annot-pill{position:fixed;right:14px;bottom:14px;z-index:99999;",
+        "display:flex;gap:6px;align-items:center;padding:8px 12px;",
+        "font:600 13px/1.2 system-ui,sans-serif;color:#fff;background:#212529;",
+        "border-radius:20px;box-shadow:0 2px 10px rgba(0,0,0,.35)}",
+        // Sit above the rich diff's change navigator (#rd-nav) instead of over it.
+        "body:has(#rd-nav) #blog-annot-pill{bottom:70px}",
+        "#blog-annot-pill button{font:600 12px/1.2 system-ui,sans-serif;",
+        "padding:5px 9px;border:0;border-radius:12px;cursor:pointer;",
+        "background:#495057;color:#fff}",
+        "#blog-annot-pill button:disabled{opacity:.45;cursor:default}",
+        "#blog-annot-modal{position:fixed;inset:0;z-index:100000;display:none;",
+        "align-items:center;justify-content:center;background:rgba(0,0,0,.45);",
+        "padding:16px}",
+        "#blog-annot-card{width:100%;max-width:520px;background:#fff;color:#111;",
+        "border-radius:12px;padding:16px;font:14px/1.45 system-ui,sans-serif;",
+        "max-height:85vh;overflow:auto}",
+        "#blog-annot-card blockquote{margin:0 0 10px;padding:8px 10px;",
+        "background:#f1f3f5;border-left:3px solid #0b5ed7;font-style:italic;",
+        "max-height:9em;overflow:auto}",
+        "#blog-annot-card textarea{width:100%;min-height:110px;padding:8px;",
+        "font:14px/1.4 system-ui,sans-serif;border:1px solid #ced4da;",
+        "border-radius:8px;box-sizing:border-box}",
+        "#blog-annot-intents{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}",
+        "#blog-annot-intents button{padding:7px 12px;border:1px solid #ced4da;",
+        "border-radius:14px;background:#f8f9fa;color:#495057;",
+        "font:600 13px/1.2 system-ui,sans-serif;cursor:pointer;",
+        "touch-action:manipulation}",
+        "#blog-annot-intents button[aria-pressed='true']{background:#0b5ed7;",
+        "border-color:#0b5ed7;color:#fff}",
+        "#blog-annot-card .row{display:flex;gap:8px;justify-content:flex-end;",
+        "margin-top:10px;flex-wrap:wrap;align-items:center}",
+        "#blog-annot-card .hint{margin-right:auto;font-size:12px;color:#868e96}",
+        "#blog-annot-card button{padding:8px 14px;border:0;border-radius:8px;",
+        "font:600 13px/1.2 system-ui,sans-serif;cursor:pointer}",
+        "#blog-annot-card .primary{background:#0b5ed7;color:#fff}",
+        "#blog-annot-card .ghost{background:#e9ecef;color:#212529}",
+        "#blog-annot-list{margin:10px 0 0;padding:0;list-style:none;",
+        "font-size:13px}",
+        "#blog-annot-list li{padding:6px 0;border-top:1px solid #e9ecef}",
+        "#blog-annot-note{margin-top:10px;font-size:12px;color:#495057;",
+        "word-break:break-all}",
+        ".blog-annot-off #blog-annot-btn,.blog-annot-off #blog-annot-pill,",
+        ".blog-annot-off #blog-annot-modal{display:none!important}",
+      ].join("");
+      document.head.appendChild(style);
+
+      var btn = document.createElement("button");
+      btn.id = "blog-annot-btn";
+      btn.type = "button";
+      btn.textContent = "💬 Comment";
+      document.body.appendChild(btn);
+
+      var pill = document.createElement("div");
+      pill.id = "blog-annot-pill";
+      pill.innerHTML =
+        '<span id="blog-annot-count">Review (0)</span>' +
+        '<button type="button" id="blog-annot-open">Open</button>';
+      document.body.appendChild(pill);
+
+      var modal = document.createElement("div");
+      modal.id = "blog-annot-modal";
+      modal.innerHTML = '<div id="blog-annot-card"></div>';
+      document.body.appendChild(modal);
+      var card = modal.firstChild;
+
+      function showModal(html) {
+        card.innerHTML = html;
+        modal.style.display = "flex";
+      }
+      function hideModal() {
+        modal.style.display = "none";
+        card.innerHTML = "";
+        composerKeys = null;
+      }
+      modal.addEventListener("click", function (e) {
+        if (e.target === modal) hideModal();
+      });
+
+      // Keyboard submit/cancel for the composer. Registered once on document so
+      // it fires no matter which control has focus (textarea, an intent chip, or
+      // nothing); `composerKeys` is non-null only while the composer is open, so
+      // this is inert the rest of the time.
+      var composerKeys = null;
+      var IS_MAC = /Mac|iPhone|iPad|iPod/.test(navigator.platform || "");
+      document.addEventListener("keydown", function (e) {
+        if (!composerKeys) return;
+        if (e.key === "Escape" || e.key === "Esc") {
+          e.preventDefault();
+          composerKeys.cancel();
           return;
         }
-        uploadGist(list, note);
-      };
-    }
+        var isEnter = e.key === "Enter" || e.keyCode === 13;
+        // Cmd+Enter on mac, Ctrl+Enter elsewhere. Accept either on both — a
+        // Bluetooth keyboard on an iPad can report whichever it likes.
+        if (isEnter && (e.metaKey || e.ctrlKey)) {
+          e.preventDefault();
+          composerKeys.save();
+        }
+      });
 
-    function payloadJson(list) {
-      return JSON.stringify(
-        {
-          permalink: PERMALINK,
-          // The batch-level origin is the server you exported from. Each
-          // annotation carries its own, because the buffer can span page
-          // loads — and therefore servers.
-          origin: ORIGIN,
-          title: TITLE,
-          url: ORIGIN + window.location.pathname,
-          created: new Date().toISOString(),
-          // Version of the page you happen to be on when you export. Each
-          // annotation carries its own `version` too — that is the one that
-          // matters, since the buffer can span posts and page loads.
-          version: pageVersion(),
-          annotations: list,
-        },
-        null,
-        2
-      );
-    }
-
-    function getToken() {
-      var t;
-      try {
-        t = localStorage.getItem(TOKEN_KEY);
-      } catch (e) {
-        t = null;
+      function refreshPill() {
+        document.getElementById("blog-annot-count").textContent =
+          "Review (" + loadBuffer().length + ")";
       }
-      if (t) return t;
-      t = window.prompt(
-        "GitHub personal access token with ONLY the `gist` scope.\n" +
-          "Stored in this browser's localStorage — never committed."
-      );
-      if (!t) return null;
-      t = t.trim();
-      try {
-        localStorage.setItem(TOKEN_KEY, t);
-      } catch (e) {
-        /* still usable for this one upload */
+      refreshPill();
+
+      function escapeHtml(s) {
+        return String(s).replace(/[&<>"']/g, function (c) {
+          return {
+            "&": "&amp;",
+            "<": "&lt;",
+            ">": "&gt;",
+            '"': "&quot;",
+            "'": "&#39;",
+          }[c];
+        });
       }
-      return t;
-    }
 
-    function uploadGist(list, note) {
-      var token = getToken();
-      if (!token) {
-        note.textContent = "No token — cancelled.";
-        return;
+      // --------------------------------------------------------- capture flow
+      var pending = null;
+
+      function hideBtn() {
+        btn.style.display = "none";
       }
-      note.textContent = "Uploading…";
 
-      var body = {
-        // SECRET gist. `public: false` is the whole point — these are private
-        // notes on unpublished thinking.
-        public: false,
-        // Larry greps for exactly this prefix. Do not reformat.
-        description: "blog-review: " + PERMALINK,
-        files: { "review.json": { content: payloadJson(list) } },
-      };
+      function positionBtn(range) {
+        var rects = range.getClientRects();
+        var r = rects.length
+          ? rects[rects.length - 1]
+          : range.getBoundingClientRect();
+        if (!r || (!r.width && !r.height)) return hideBtn();
+        var top = r.bottom + window.scrollY + 8;
+        var left = r.left + window.scrollX;
+        // Keep the bubble on-screen on narrow phones.
+        var maxLeft =
+          window.scrollX + document.documentElement.clientWidth - 130;
+        btn.style.top = top + "px";
+        btn.style.left =
+          Math.max(window.scrollX + 8, Math.min(left, maxLeft)) + "px";
+        btn.style.display = "block";
+      }
 
-      fetch("https://api.github.com/gists", {
-        method: "POST",
-        headers: {
-          Accept: "application/vnd.github+json",
-          Authorization: "Bearer " + token,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(body),
-      })
-        .then(function (res) {
-          if (res.status === 401 || res.status === 403) {
-            try {
-              localStorage.removeItem(TOKEN_KEY);
-            } catch (e) {
-              /* ignore */
-            }
-            throw new Error(
-              "GitHub rejected the token (" +
-                res.status +
-                "). It has been cleared — retry to re-enter one with `gist` scope."
+      function onSelectionSettled() {
+        if (!live) return hideBtn();
+        var sel = window.getSelection();
+        if (!sel || sel.isCollapsed || sel.rangeCount === 0) return hideBtn();
+        var range = sel.getRangeAt(0);
+        if (!range.toString().trim()) return hideBtn();
+        var sel_info = selectorFromRange(range);
+        if (!sel_info) return hideBtn();
+        pending = sel_info;
+        positionBtn(range);
+      }
+
+      // mouseup covers desktop; selectionchange (debounced) covers iOS Safari
+      // touch selection, where mouseup fires unreliably and the handles keep
+      // moving after the initial gesture.
+      document.addEventListener("mouseup", function () {
+        setTimeout(onSelectionSettled, 10);
+      });
+
+      var selTimer = null;
+      document.addEventListener("selectionchange", function () {
+        if (selTimer) clearTimeout(selTimer);
+        selTimer = setTimeout(onSelectionSettled, 350);
+      });
+
+      // Both, so a tap on the bubble registers immediately on iOS instead of
+      // waiting out the 300ms click delay (and losing the selection first).
+      ["click", "touchend"].forEach(function (evt) {
+        btn.addEventListener(evt, function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          if (pending) openComposer(pending);
+        });
+      });
+
+      // One tap, seven choices. Keep in sync with INTENTS in scripts/blog_review.py.
+      var INTENTS = [
+        "fix",
+        "cut",
+        "rewrite",
+        "expand",
+        "check",
+        "question",
+        "note",
+      ];
+      var DEFAULT_INTENT = "note";
+
+      function openComposer(sel_info) {
+        hideBtn();
+        var chips = INTENTS.map(function (name) {
+          return (
+            '<button type="button" data-intent="' +
+            name +
+            '" aria-pressed="' +
+            (name === DEFAULT_INTENT ? "true" : "false") +
+            '">' +
+            name +
+            "</button>"
+          );
+        }).join("");
+
+        showModal(
+          "<blockquote>" +
+            escapeHtml(sel_info.quote) +
+            "</blockquote>" +
+            '<textarea id="blog-annot-text" placeholder="What about this line?"></textarea>' +
+            '<div id="blog-annot-intents">' +
+            chips +
+            "</div>" +
+            '<div class="row">' +
+            '<span class="hint">' +
+            (IS_MAC ? "⌘" : "Ctrl") +
+            "+Enter saves · Esc cancels</span>" +
+            '<button type="button" class="ghost" id="blog-annot-cancel">Cancel</button>' +
+            '<button type="button" class="primary" id="blog-annot-save">Save</button>' +
+            "</div>"
+        );
+
+        var ta = document.getElementById("blog-annot-text");
+        ta.focus();
+
+        var intent = DEFAULT_INTENT;
+        var chipBox = document.getElementById("blog-annot-intents");
+        chipBox.addEventListener("click", function (e) {
+          var hit = e.target.closest
+            ? e.target.closest("button[data-intent]")
+            : null;
+          if (!hit) return;
+          e.preventDefault();
+          intent = hit.getAttribute("data-intent");
+          var all = chipBox.querySelectorAll("button[data-intent]");
+          for (var i = 0; i < all.length; i++) {
+            all[i].setAttribute(
+              "aria-pressed",
+              all[i] === hit ? "true" : "false"
             );
           }
-          if (!res.ok) throw new Error("GitHub returned " + res.status);
-          return res.json();
-        })
-        .then(function (gist) {
+          // Keep typing where the thumb left off.
+          ta.focus();
+        });
+
+        function save() {
+          var list = loadBuffer();
+          var entry = {
+            permalink: PERMALINK,
+            origin: ORIGIN,
+            title: TITLE,
+            quote: sel_info.quote,
+            prefix: sel_info.prefix,
+            suffix: sel_info.suffix,
+            comment: ta.value,
+            intent: intent,
+            ts: new Date().toISOString(),
+            version: pageVersion(),
+          };
+          if (sel_info.diff) entry.diff = sel_info.diff;
+          list.push(entry);
+          saveBuffer(list);
+          refreshPill();
+          hideModal();
+          var s = window.getSelection();
+          if (s && s.removeAllRanges) s.removeAllRanges();
+        }
+
+        document.getElementById("blog-annot-cancel").onclick = hideModal;
+        document.getElementById("blog-annot-save").onclick = save;
+        composerKeys = { save: save, cancel: hideModal };
+      }
+
+      stop = function () {
+        hideBtn();
+        hideModal();
+      };
+
+      // ---------------------------------------------------------- review flow
+      document.getElementById("blog-annot-open").onclick = openReview;
+
+      function openReview() {
+        var list = loadBuffer();
+        var items = list.length
+          ? list
+              .map(function (a, i) {
+                return (
+                  "<li><b>" +
+                  (i + 1) +
+                  ".</b> [" +
+                  escapeHtml(a.intent || DEFAULT_INTENT) +
+                  "] " +
+                  escapeHtml(a.quote.slice(0, 90)) +
+                  (a.quote.length > 90 ? "…" : "") +
+                  "<br><i>" +
+                  escapeHtml(a.comment || "(no comment)") +
+                  "</i></li>"
+                );
+              })
+              .join("")
+          : "<li>Nothing captured yet.</li>";
+
+        showModal(
+          "<b>Annotations (" +
+            list.length +
+            ")</b>" +
+            '<ul id="blog-annot-list">' +
+            items +
+            "</ul>" +
+            '<div class="row">' +
+            '<button type="button" class="ghost" id="blog-annot-clear">Clear all</button>' +
+            '<button type="button" class="ghost" id="blog-annot-copy">Copy to clipboard</button>' +
+            '<button type="button" class="primary" id="blog-annot-gist">Upload to gist</button>' +
+            '<button type="button" class="ghost" id="blog-annot-close">Close</button>' +
+            "</div>" +
+            '<div id="blog-annot-note"></div>'
+        );
+
+        var note = document.getElementById("blog-annot-note");
+        document.getElementById("blog-annot-close").onclick = hideModal;
+
+        document.getElementById("blog-annot-clear").onclick = function () {
+          if (!confirm("Discard all " + list.length + " annotations?")) return;
           saveBuffer([]);
           refreshPill();
-          note.innerHTML =
-            "Uploaded ✅ <a href='" +
-            escapeHtml(gist.html_url) +
-            "' target='_blank' rel='noopener'>" +
-            escapeHtml(gist.html_url) +
-            "</a><br>Local buffer cleared.";
+          hideModal();
+        };
+
+        document.getElementById("blog-annot-copy").onclick = function () {
+          var json = payloadJson(list);
+          function fallback() {
+            var ta = document.createElement("textarea");
+            ta.value = json;
+            ta.style.position = "fixed";
+            ta.style.opacity = "0";
+            document.body.appendChild(ta);
+            ta.select();
+            try {
+              document.execCommand("copy");
+              note.textContent = "Copied " + list.length + " annotations.";
+            } catch (e) {
+              note.textContent = "Copy failed — select the JSON manually.";
+            }
+            document.body.removeChild(ta);
+          }
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(json).then(function () {
+              note.textContent = "Copied " + list.length + " annotations.";
+            }, fallback);
+          } else {
+            fallback();
+          }
+        };
+
+        document.getElementById("blog-annot-gist").onclick = function () {
+          if (!list.length) {
+            note.textContent = "Nothing to upload.";
+            return;
+          }
+          uploadGist(list, note);
+        };
+      }
+
+      function payloadJson(list) {
+        return JSON.stringify(
+          {
+            permalink: PERMALINK,
+            // The batch-level origin is the server you exported from. Each
+            // annotation carries its own, because the buffer can span page
+            // loads — and therefore servers.
+            origin: ORIGIN,
+            title: TITLE,
+            url: ORIGIN + window.location.pathname,
+            created: new Date().toISOString(),
+            // Version of the page you happen to be on when you export. Each
+            // annotation carries its own `version` too — that is the one that
+            // matters, since the buffer can span posts and page loads.
+            version: pageVersion(),
+            annotations: list,
+          },
+          null,
+          2
+        );
+      }
+
+      function getToken() {
+        var t;
+        try {
+          t = localStorage.getItem(TOKEN_KEY);
+        } catch (e) {
+          t = null;
+        }
+        if (t) return t;
+        t = window.prompt(
+          "GitHub personal access token with ONLY the `gist` scope.\n" +
+            "Stored in this browser's localStorage — never committed."
+        );
+        if (!t) return null;
+        t = t.trim();
+        try {
+          localStorage.setItem(TOKEN_KEY, t);
+        } catch (e) {
+          /* still usable for this one upload */
+        }
+        return t;
+      }
+
+      function uploadGist(list, note) {
+        var token = getToken();
+        if (!token) {
+          note.textContent = "No token — cancelled.";
+          return;
+        }
+        note.textContent = "Uploading…";
+
+        var body = {
+          // SECRET gist. `public: false` is the whole point — these are private
+          // notes on unpublished thinking.
+          public: false,
+          // Larry greps for exactly this prefix. Do not reformat.
+          description: "blog-review: " + PERMALINK,
+          files: { "review.json": { content: payloadJson(list) } },
+        };
+
+        fetch("https://api.github.com/gists", {
+          method: "POST",
+          headers: {
+            Accept: "application/vnd.github+json",
+            Authorization: "Bearer " + token,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(body),
         })
-        .catch(function (err) {
-          // Never clear the buffer on failure — the notes are the valuable part.
-          note.textContent = "Upload failed: " + err.message;
-        });
+          .then(function (res) {
+            if (res.status === 401 || res.status === 403) {
+              try {
+                localStorage.removeItem(TOKEN_KEY);
+              } catch (e) {
+                /* ignore */
+              }
+              throw new Error(
+                "GitHub rejected the token (" +
+                  res.status +
+                  "). It has been cleared — retry to re-enter one with `gist` scope."
+              );
+            }
+            if (!res.ok) throw new Error("GitHub returned " + res.status);
+            return res.json();
+          })
+          .then(function (gist) {
+            saveBuffer([]);
+            refreshPill();
+            note.innerHTML =
+              "Uploaded ✅ <a href='" +
+              escapeHtml(gist.html_url) +
+              "' target='_blank' rel='noopener'>" +
+              escapeHtml(gist.html_url) +
+              "</a><br>Local buffer cleared.";
+          })
+          .catch(function (err) {
+            // Never clear the buffer on failure — the notes are the valuable part.
+            note.textContent = "Upload failed: " + err.message;
+          });
+      }
     }
   })();
 </script>
