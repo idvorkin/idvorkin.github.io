@@ -151,14 +151,27 @@ A grade is a number. Turning it into a weight update means answering one questio
 
 {% include local_image_float_right.html src="raccoon-post-training-scorekeeper.webp" %}
 
-The classic RL loop, the one [InstructGPT](https://arxiv.org/abs/2203.02155) used. The model (RL calls it the **policy**: whatever picks the next action — here, the model being trained) writes an answer and the grader scores it — but a raw score isn't enough, because a 7 means different things on an easy prompt and a hard one. So the loop keeps a **forecaster**: a second network that predicts the grade each answer will probably get. The jargon is _critic_, or _value model_, from actor-critic RL: the actor acts, the critic estimates how well things will go from here. It forecasts; it doesn't criticize, and it never hands out a grade. The learning signal is the **surprise** (advantage): the grade you got minus the grade you expected. Positive, do more of that; negative, do less; near zero, barely move. A C student bringing home a B is good news; the same B from a straight-A student is bad news. PPO is the coach: a small-steps rule (clipping) caps each update so the model doesn't lurch. And there's a **leash** (a KL penalty, charged per word piece): it measures how far the model has drifted from a frozen copy of its starting point — the leash copy (reference model) — and charges for the distance, "to mitigate overoptimization of the reward model" — without it the model drifts into whatever nonsense the grader happens to like.
+The classic RL loop, the one [InstructGPT](https://arxiv.org/abs/2203.02155) used. The model (RL calls it the **policy**: whatever picks the next action — here, the model being trained) writes an answer and the grader scores it. Then comes the part I had wrong: the grade is not the learning signal.
 
-Worked, with grades out of 10:
+#### Why the grade alone isn't enough
 
-- **Easy prompt, "What's 17 + 25?"** The forecaster expects a 9. "42" gets a 10: surprise +1, a small nudge. "43" gets a 1: surprise −8, a big push away.
-- **Hard prompt, "Prove there are infinitely many primes."** The forecaster expects a 3. A decent proof gets a 6: surprise +3, a strong push up.
+Learning needs a direction and a size: move toward this answer or away from it, and how far. A grade has no "usual" built in — an A on 17 + 25 is ordinary, an A on the primes proof is remarkable — so pushing toward answers in proportion to their raw grade goes wrong two ways. Easy prompts dominate, because they hand out A's for free; and since most grades are passing, you push up nearly everything, just by different amounts — slow, noisy learning. What's missing is _what does the model usually get here?_ Subtract that and you have the **surprise** (advantage): how many grade steps better or worse than expected. Its sign is the direction and its size is how far — expected a B, got an A, one step up. A C student bringing home a B is good news; the same B from a straight-A student is bad news.
 
-A 6 on a hard prompt teaches more than a 10 on an easy one. That is the whole reason the forecaster exists.
+| Answer                | Raw grade | Usual | Surprise                   |
+| --------------------- | --------- | ----- | -------------------------- |
+| "42" for 17 + 25      | A         | A−    | one step up — barely move  |
+| a decent primes proof | B         | D     | two steps up — strong push |
+
+The forecaster (PPO) and the curve (GRPO) are the two ways of knowing "usually".
+
+PPO's way is a **forecaster**: a second network that predicts the grade each answer will probably get. The jargon is _critic_, or _value model_, from actor-critic RL: the actor acts, the critic estimates how well things will go from here. It forecasts; it doesn't criticize, and it never hands out a grade. PPO is the coach: a small-steps rule (clipping) caps each update so the model doesn't lurch. And there's a **leash** (a KL penalty, charged per word piece): it measures how far the model has drifted from a frozen copy of its starting point — the leash copy (reference model) — and charges for the distance, "to mitigate overoptimization of the reward model" — without it the model drifts into whatever nonsense the grader happens to like.
+
+Worked, in letter grades (under the hood the grader outputs a number; letters here just keep the grades apart from the math answers):
+
+- **Easy prompt, "What's 17 + 25?"** The forecaster expects an A−. "42" gets an A: a small nudge up. "43" gets an F: a big push away.
+- **Hard prompt, "Prove there are infinitely many primes."** The forecaster expects a D. A decent proof gets a B: two steps up, a strong push.
+
+A B on a hard prompt teaches more than an A on an easy one. That is the whole reason the forecaster exists.
 
 What moves and what's frozen while PPO runs:
 
@@ -182,7 +195,7 @@ All three helpers are scaffolding, thrown away after training. Only the model sh
 
 {% include local_image_float_right.html src="raccoon-post-training-curve.webp" %}
 
-[GRPO](https://arxiv.org/abs/2402.03300) (DeepSeekMath) fires the forecaster. Generate a group of tries (sampling) at the same prompt, score each with the grader, and use the group's average as the prediction — grading on a curve is the forecaster replaced by the group's own mean, so a try's surprise is just how much better it did than its siblings. "GRPO foregoes the critic model, instead estimating the baseline from group scores, significantly reducing training resources" — no forecaster, and the expected grade (baseline) comes from the group. No forecaster to train or hold in memory is what let R1-Zero run pure RL on a base model at all. On the hard prompt above: eight tries score 2, 3, 3, 4, 2, 6, 3, 1 — average 3 — so the 6 gets a surprise of +3 and the 1 gets −2. Same lesson, no forecaster. It's a way of learning, not a way of grading: the score can come from an answer key or from a grader model.
+[GRPO](https://arxiv.org/abs/2402.03300) (DeepSeekMath) fires the forecaster. Generate a group of tries (sampling) at the same prompt, score each with the grader, and use the group's average as the prediction — grading on a curve is the forecaster replaced by the group's own mean, so a try's surprise is just how much better it did than its siblings. "GRPO foregoes the critic model, instead estimating the baseline from group scores, significantly reducing training resources" — no forecaster, and the expected grade (baseline) comes from the group. No forecaster to train or hold in memory is what let R1-Zero run pure RL on a base model at all. On the hard prompt above: eight tries score F, D, D, C, F, B, D, F — average D — so the B sits two steps above the curve and gets a strong push up, and each F sits one step below and gets pushed away. Same lesson, no forecaster. It's a way of learning, not a way of grading: the score can come from an answer key or from a grader model.
 
 - **Optimizes:** the same grade as PPO, with the group's average standing in for the forecaster.
 - **Needs:** several tries per prompt, plus the grader's score for each. Nothing else.
