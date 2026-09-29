@@ -11,7 +11,7 @@ tags:
 ai_default_image: true
 ---
 
-Pre-training is where a model reads the internet, and it's where the money goes. But the model you actually talk to was made afterwards, in post-training — the comparatively cheap stage that turns a text-autocompleter into an assistant. The first version of this post listed the methods one after another and I couldn't hold them in my head: too many acronyms, each explained on its own. This is the rewrite, built on three plain questions every method answers — who grades the answer, what the model should change based on one try, and which weights move. Jargon goes in parentheses, once, with a [decoder at the end](#jargon-decoder) that maps the plain words back to the papers' terms; who did the science sits in a collapsed Prior work fold at the end of each section.
+Pre-training is where a model reads the internet, and it's where the money goes. But the model you actually talk to was made afterwards, in post-training — the comparatively cheap stage that turns a text-autocompleter into an assistant. The first version of this post listed the methods one after another and I couldn't hold them in my head: too many acronyms, each explained on its own. This is the rewrite, built on two plain questions every method answers — who grades the answer, and what the model should change based on one try. Jargon goes in parentheses, once, with a [decoder at the end](#jargon-decoder) that maps the plain words back to the papers' terms; who did the science sits in a collapsed Prior work fold at the end of each section.
 
 {% include alert.html content="Everything here is public information and my own opinions. There's no secret sauce in here, and nothing on this page represents the views of my employer." style="info" %}
 
@@ -21,7 +21,7 @@ Pre-training is where a model reads the internet, and it's where the money goes.
 <!-- vim-markdown-toc-start -->
 
 - [The one intuition](#the-one-intuition)
-- [Three questions explain every method](#three-questions-explain-every-method)
+- [Two questions explain every method](#two-questions-explain-every-method)
 - [Who grades the answer?](#who-grades-the-answer)
   - [Copy the expert (SFT)](#copy-the-expert-sft)
   - [Taste test by people (RLHF)](#taste-test-by-people-rlhf)
@@ -32,7 +32,6 @@ Pre-training is where a model reads the internet, and it's where the money goes.
   - [Coach with a forecaster (PPO)](#coach-with-a-forecaster-ppo)
   - [Grade on a curve against its own tries (GRPO)](#grade-on-a-curve-against-its-own-tries-grpo)
   - [Straight to A-over-B: no grader model, no forecaster (DPO)](#straight-to-a-over-b-no-grader-model-no-forecaster-dpo)
-  - [Clip-on adapter (LoRA)](#clip-on-adapter-lora)
 - [Recipes in plain words](#recipes-in-plain-words)
 - [What this post is not about](#what-this-post-is-not-about)
 - [Jargon decoder](#jargon-decoder)
@@ -48,27 +47,26 @@ Pre-training is where a model reads the internet, and it's where the money goes.
 
 <a id="the-lineage"></a>
 <a id="methods-at-a-glance"></a>
-<a id="two-questions-explain-every-method"></a>
+<a id="three-questions-explain-every-method"></a>
 
-## Three questions explain every method
+## Two questions explain every method
 
 {% include local_image_float_right.html src="raccoon-post-training-lineage.webp" %}
 
-Every method after the first takes an answer from the model, grades it, and nudges the weights. Three things to ask of any of them:
+Every method after the first takes an answer from the model, grades it, and nudges the weights. Two things to ask of any of them:
 
 1. **Who grades the answer?** Nobody — the model copies an expert's answers (SFT), step one of every recipe. Otherwise: people (RLHF), an AI with a rulebook (RLAIF), or an answer key (RLVR).
 2. **What should the model change, based on this one try?** A try is one noisy trial — the model could have written a hundred other answers — so the only fair adjustment is by how much this try beat or missed what the model usually does there. That is the **surprise**: the grade minus the usual grade; a C student bringing home a B is good news, the same B from a straight-A student bad news. So the derived question is _what's usual?_, and the methods differ in how they answer it: a forecaster predicts it (PPO), the average of a group of tries stands in for it (GRPO), or it's never needed because you learn straight from A-over-B pairs (DPO).
-3. **Which weights move?** All of them, in every recipe named here. On one GPU, a clip-on adapter (LoRA) moves a few instead.
 
-Copy the expert has no grade, so no column. Every other method is a cell:
+Which weights move — all of them, in every recipe here, or a clip-on adapter when you're on one GPU — is [its own post](/beyond-prompts). Copy the expert has no grade, so no column. Every other method is a cell:
 
-| Who grades ↓ · What's usual →                   | Forecaster (PPO)             | Group average (GRPO)            | Not needed: pairs (DPO)                    |
-| ----------------------------------------------- | ---------------------------- | ------------------------------- | ------------------------------------------ |
-| **Taste test by people** (RLHF)                 | classic RLHF (InstructGPT)   | works too: GRPO takes any score | Llama 3's preference step                  |
-| **Taste test by an AI with a rulebook** (RLAIF) | Constitutional AI's RL phase | works too                       | Tülu 3's preference step                   |
-| **Answer key** (RLVR)                           | Tülu 3's RLVR                | DeepSeek-R1                     | pair a ✓ try with an ✗ try (Iterative RPO) |
+| Who grades ↓ · What's usual →                   | Forecaster (PPO)             | Group average (GRPO)                             | Not needed: pairs (DPO)                    |
+| ----------------------------------------------- | ---------------------------- | ------------------------------------------------ | ------------------------------------------ |
+| **Taste test by people** (RLHF)                 | classic RLHF (InstructGPT)   | works too: the last stage of recent open recipes | Llama 3's preference step                  |
+| **Taste test by an AI with a rulebook** (RLAIF) | Constitutional AI's RL phase | works too                                        | Tülu 3's preference step                   |
+| **Answer key** (RLVR)                           | Tülu 3's RLVR                | DeepSeek-R1                                      | pair a ✓ try with an ✗ try (Iterative RPO) |
 
-Row and column are independent — the thing I kept getting wrong. **RLVR and GRPO are not either/or**: RLVR says where the score comes from, GRPO says how the score becomes a nudge, and GRPO takes a grader model's score just as happily. The named recipes are paths through this grid, [spelled out below](#recipes-in-plain-words).
+Row and column are independent — the thing I kept getting wrong, and the names fight it. In everyday use "RLHF" means the original recipe, people's taste as the grader _and_ PPO as the learning rule, so the word straddles both questions. In this post's split, "taste test by people" is only the who-grades half, and it pairs with any learning rule: recent open recipes run their final taste-test stage with a group average against a learned grader, no forecaster. Likewise **RLVR and GRPO are not either/or**: RLVR says where the score comes from, GRPO says how the score becomes a nudge, and GRPO takes a grader model's score just as happily. The named recipes are paths through this grid, [spelled out below](#recipes-in-plain-words).
 
 ## Who grades the answer?
 
@@ -115,6 +113,7 @@ The payoff: a small model taste-tested this way beat one a hundred times bigger 
 - [InstructGPT](https://arxiv.org/abs/2203.02155) (OpenAI, 2022): the reward model is a 6B model, "starting from the SFT model with the final unembedding layer removed", trained on 33k prompts' worth of comparisons. Labelers preferred the 1.3B InstructGPT over the 175B GPT-3 "despite having 100x fewer parameters." The leash is "a per-token KL penalty from the SFT model … to mitigate overoptimization of the reward model."
 - [Gao et al.](https://arxiv.org/abs/2210.10760) (2022) measured the over-optimization curve: "optimizing its value too much can hinder ground truth performance."
 - [Llama 3](https://arxiv.org/abs/2407.21783) (Meta, 2024): a reward model on human-annotated preferences, then DPO rather than PPO — "DPO required less compute for large-scale models and performed better."
+- People's taste with a group-average rule: [Rufus-Air](https://arxiv.org/abs/2609.29421) (Amazon, 2026) ends with an RLHF stage where "RLHF means RL against a learned reward model" (Skywork-Reward-V2-Qwen3-8B) and "optimization uses GRPO"; [IBM Granite 4.2](https://huggingface.co/blog/ibm-granite/granite-4-2) (2026): "Every stage trains with asynchronous GRPO" and "The final stage of every model is RLHF for human preference and safety" against a generative reward model.
 
 </details>
 
@@ -261,20 +260,7 @@ The limit: DPO can never learn anything the pairs don't already say, while an RL
 </details>
 
 <a id="how-the-weights-actually-change-lora"></a>
-
-### Clip-on adapter (LoRA)
-
-{% include local_image_float_right.html src="raccoon-post-training-adapter.webp" %}
-
-Every recipe above moved all the weights; labs can afford that. On one GPU you can't, and **LoRA** (low-rank adaptation) is the fix: freeze the model and train a small add-on beside each layer — low-rank meaning the add-on is two thin matrices standing in for one big one, so it has few numbers to learn — then keep only the add-on. It cuts the numbers to train by orders of magnitude and the GPU memory by several times with no loss in quality; the base model's knowledge stays intact because you never touched it, and the catch is that a small adapter can't carry a big change.
-
-<details markdown="1">
-<summary>Prior work</summary>
-
-- [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685) (Microsoft, 2021): on GPT-3 175B, trainable parameters cut 10,000× and GPU memory 3× with no loss in quality.
-- Hands-on: [LoRA on Llama 3](https://colab.research.google.com/drive/1efOx_rwZeF3i0YsirhM1xhYLtGNX6Fv3?usp=sharing#scrollTo=bDp0zNpwe6U_) and [Fine-Tune Your Own Llama 2 Model in a Colab Notebook](https://mlabonne.github.io/blog/posts/Fine_Tune_Your_Own_Llama_2_Model_in_a_Colab_Notebook.html).
-
-</details>
+<a id="clip-on-adapter-lora"></a>
 
 <a id="how-the-methods-combine-real-recipes"></a>
 
@@ -322,6 +308,5 @@ The papers use their own words. This is the map back, so the post reads plain an
 | a direct formula                   | closed form                            |
 | teacher-student copying            | distillation                           |
 | further training                   | fine-tuning                            |
-| a small add-on (two thin matrices) | low-rank adapter                       |
 
 {% include post-training-anim-assets.html %}
