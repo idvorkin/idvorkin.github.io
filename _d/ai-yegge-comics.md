@@ -19,27 +19,7 @@ I've read a lot of careful writeups about agent failure modes. I don't remember 
 
 ## The strips
 
-All four are Steve's — © 2004–2026 Steve Yegge. Click any of them to go read the original, and the receipts, at [yegge.ai/comics](https://yegge.ai/comics/).
-
-<figure style="margin:2em 0;">
-<a href="https://yegge.ai/comics/"><img src="https://yegge.ai/images/comics/fire-alarms.jpg" alt="The Wheelhouse #4: Fire Alarms — a human asks how the crew is doing while one agent's desk is literally on fire and the rest sleep through it" width="2048" height="2048" loading="lazy" decoding="async" style="max-width:100%;height:auto;border-radius:4px;" /></a>
-<figcaption><small><em>#4 — Fire Alarms</em>, by <a href="https://yegge.ai/comics/">Steve Yegge</a> · <a href="https://yegge.ai/comics/fire-alarms/#receipts">the receipts</a></small></figcaption>
-</figure>
-
-<figure style="margin:2em 0;">
-<a href="https://yegge.ai/comics/"><img src="https://yegge.ai/images/comics/no-secrets.jpg" alt="The Wheelhouse #3: No Secrets — a human tries to tell an agent something in confidence and the agent immediately prepares to broadcast it" width="2048" height="2048" loading="lazy" decoding="async" style="max-width:100%;height:auto;border-radius:4px;" /></a>
-<figcaption><small><em>#3 — No Secrets</em>, by <a href="https://yegge.ai/comics/">Steve Yegge</a> · <a href="https://yegge.ai/comics/no-secrets/#receipts">the receipts</a></small></figcaption>
-</figure>
-
-<figure style="margin:2em 0;">
-<a href="https://yegge.ai/comics/"><img src="https://yegge.ai/images/comics/fable-likes-an-idea.jpg" alt="The Wheelhouse #2: Fable Likes an Idea — an agent takes four panels of escalating enthusiasm to say yes" width="2048" height="2048" loading="lazy" decoding="async" style="max-width:100%;height:auto;border-radius:4px;" /></a>
-<figcaption><small><em>#2 — Fable Likes an Idea</em>, by <a href="https://yegge.ai/comics/">Steve Yegge</a> · <a href="https://yegge.ai/comics/fable-likes-an-idea/#receipts">the receipts</a></small></figcaption>
-</figure>
-
-<figure style="margin:2em 0;">
-<a href="https://yegge.ai/comics/"><img src="https://yegge.ai/images/comics/the-user-has-ruled.jpg" alt="The Wheelhouse #1: The User Has Ruled — a distracted 'I guess that sounds ok' gets recorded verbatim, ratified, and carved into stone" width="2048" height="2048" loading="lazy" decoding="async" style="max-width:100%;height:auto;border-radius:4px;" /></a>
-<figcaption><small><em>#1 — The User Has Ruled</em>, by <a href="https://yegge.ai/comics/">Steve Yegge</a> · <a href="https://yegge.ai/comics/the-user-has-ruled/#receipts">the receipts</a></small></figcaption>
-</figure>
+Steve's strip is a four-panel gag about the crew running his MUD, and under every strip sits a link to the real transcript it's lampooning. Go read them — and their receipts — at [yegge.ai/comics](https://yegge.ai/comics/). Strip #1, [The User Has Ruled](https://yegge.ai/comics/the-user-has-ruled/#receipts), is the one I come back to below.
 
 ## Why the receipts are the trick
 
@@ -53,7 +33,7 @@ And #1 is the one that'll stick with me. A distracted "I guess that sounds ok" g
 
 His premise is agents on a 27-year-old MUD. Mine is a raccoon running my life-coaching and journaling operation — [Larry](/larry) reads fourteen years of my journals, texts me at 6am, and holds up a mirror I didn't ask for. Both premises are absurd. Both are literally what's running.
 
-So there's a raccoon strip: [The Den](/the-den). Strip #1 is up.
+So there's a raccoon strip: [The Den](/the-den), and every published strip ships with a receipt gist.
 
 The rules I'm giving myself are Steve's rules:
 
