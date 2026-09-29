@@ -1,0 +1,546 @@
+{% comment %} Styles + the scroll trigger for post-training-anim.html. Include
+ONCE, at the end of the post, after every figure. Animations run only while a
+figure is on screen (IntersectionObserver, vanilla), loop every 5 s, and are
+turned off under prefers-reduced-motion so the first frame stands as a static
+diagram. {% endcomment %}
+<style>
+  .pta {
+    clear: both;
+    margin: 1rem auto 1.5rem;
+    max-width: 440px;
+    text-align: center;
+  }
+  .pta svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: visible;
+  }
+  .pta figcaption {
+    font-size: 0.85rem;
+    opacity: 0.75;
+    margin-top: 0.3rem;
+  }
+  .pta .pta-t {
+    font: 11px sans-serif;
+    fill: currentColor;
+  }
+  .pta .pta-big {
+    font: bold 18px sans-serif;
+    fill: currentColor;
+    text-anchor: middle;
+  }
+  .pta .pta-mark {
+    font: bold 22px sans-serif;
+    text-anchor: middle;
+  }
+  .pta .pta-card {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+  }
+  .pta .pta-line {
+    fill: currentColor;
+    opacity: 0.55;
+  }
+  .pta .pta-fg {
+    fill: currentColor;
+  }
+  .pta .pta-dim {
+    opacity: 0.35;
+  }
+  .pta .pta-blue {
+    fill: #3b82f6;
+  }
+  .pta .pta-green {
+    fill: #2e9e5b;
+  }
+  .pta .pta-red {
+    fill: #d9534f;
+  }
+  .pta .pta-eye {
+    fill: #fff;
+  }
+  .pta .pta-track {
+    fill: currentColor;
+    opacity: 0.15;
+  }
+  .pta .pta-track-line {
+    stroke: currentColor;
+    stroke-width: 1;
+    opacity: 0.3;
+  }
+  .pta .pta-leash {
+    stroke: #e0a800;
+    stroke-width: 3;
+    stroke-linecap: round;
+  }
+  .pta .pta-gauge {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 3;
+    opacity: 0.5;
+  }
+  .pta .pta-needle {
+    stroke: #d9534f;
+    stroke-width: 3;
+    stroke-linecap: round;
+    transform-box: fill-box;
+    transform-origin: 50% 100%;
+  }
+  .pta .pta-red-line {
+    stroke: #d9534f;
+    stroke-width: 3;
+    stroke-linecap: round;
+  }
+  .pta .pta-arrow {
+    stroke: currentColor;
+    stroke-width: 2;
+    fill: none;
+    opacity: 0.6;
+  }
+  .pta .pta-arrow-green {
+    stroke: #2e9e5b;
+    stroke-width: 3;
+    fill: none;
+    stroke-linecap: round;
+  }
+  .pta .pta-bar {
+    fill: currentColor;
+    opacity: 0.45;
+    transform-box: fill-box;
+    transform-origin: 50% 100%;
+  }
+  .pta .pta-avg {
+    stroke: #e0a800;
+    stroke-width: 2;
+    stroke-dasharray: 6 4;
+  }
+
+  /* Every keyframed element: paused until the figure is on screen. */
+  .pta [class*="k-"] {
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-play-state: paused;
+  }
+  .pta.is-on [class*="k-"] {
+    animation-play-state: running;
+  }
+
+  /* SFT: the model's lines morph onto the teacher's; the loss bar shrinks. */
+  .pta .k-sft1,
+  .pta .k-sft2,
+  .pta .k-sft3 {
+    transform-box: fill-box;
+    transform-origin: 0 50%;
+  }
+  .pta .k-sft1 {
+    animation-name: pta-sft1;
+  }
+  .pta .k-sft2 {
+    animation-name: pta-sft2;
+  }
+  .pta .k-sft3 {
+    animation-name: pta-sft3;
+  }
+  .pta .k-sftloss {
+    transform-box: fill-box;
+    transform-origin: 0 50%;
+    animation-name: pta-sftloss;
+  }
+  .pta .k-sftarrow {
+    animation-name: pta-blink;
+  }
+  @keyframes pta-sft1 {
+    0%,
+    15% {
+      transform: scaleX(0.45);
+    }
+    70%,
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  @keyframes pta-sft2 {
+    0%,
+    15% {
+      transform: scaleX(1.6);
+    }
+    70%,
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  @keyframes pta-sft3 {
+    0%,
+    15% {
+      transform: scaleX(0.3);
+    }
+    70%,
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  @keyframes pta-sftloss {
+    0%,
+    15% {
+      transform: scaleX(1);
+    }
+    70%,
+    100% {
+      transform: scaleX(0.08);
+    }
+  }
+  @keyframes pta-blink {
+    0%,
+    10% {
+      opacity: 0;
+    }
+    20%,
+    65% {
+      opacity: 1;
+    }
+    75%,
+    100% {
+      opacity: 0;
+    }
+  }
+
+  /* RLHF: a person picks A, the reward meter learns, the model leans to A on a leash. */
+  .pta .k-rlhfhand {
+    animation-name: pta-rlhfhand;
+  }
+  .pta .k-rlhfA {
+    animation-name: pta-rlhfA;
+  }
+  .pta .k-rlhfneedle {
+    animation-name: pta-rlhfneedle;
+  }
+  .pta .k-rlhfmodel {
+    animation-name: pta-rlhfmodel;
+  }
+  .pta .k-rlhfleash {
+    transform-box: fill-box;
+    transform-origin: 0 50%;
+    animation-name: pta-rlhfleash;
+  }
+  @keyframes pta-rlhfhand {
+    0% {
+      transform: translate(131px, 90px);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    30%,
+    100% {
+      transform: translate(47px, 60px);
+      opacity: 1;
+    }
+  }
+  @keyframes pta-rlhfA {
+    0%,
+    30% {
+      stroke: currentColor;
+      stroke-width: 1.5;
+    }
+    40%,
+    100% {
+      stroke: #2e9e5b;
+      stroke-width: 3;
+    }
+  }
+  @keyframes pta-rlhfneedle {
+    0%,
+    40% {
+      transform: rotate(-70deg);
+    }
+    60%,
+    100% {
+      transform: rotate(40deg);
+    }
+  }
+  @keyframes pta-rlhfmodel {
+    0%,
+    60% {
+      transform: translateX(0);
+    }
+    85%,
+    100% {
+      transform: translateX(80px);
+    }
+  }
+  @keyframes pta-rlhfleash {
+    0%,
+    60% {
+      transform: scaleX(0);
+    }
+    85%,
+    100% {
+      transform: scaleX(1);
+    }
+  }
+
+  /* DPO: a seesaw. Preferred answer up, rejected down, no meter anywhere. */
+  .pta .k-dposeesaw {
+    transform-box: fill-box;
+    transform-origin: 50% 90%;
+    animation-name: pta-dposeesaw;
+  }
+  @keyframes pta-dposeesaw {
+    0%,
+    20% {
+      transform: rotate(0deg);
+    }
+    55%,
+    100% {
+      transform: rotate(-9deg);
+    }
+  }
+
+  /* RLAIF: the human judge is swapped for a robot holding the rulebook. */
+  .pta .k-rlaifhuman {
+    animation-name: pta-rlaifhuman;
+  }
+  .pta .k-rlaifrobot {
+    animation-name: pta-rlaifrobot;
+  }
+  .pta .k-rlaifA {
+    animation-name: pta-rlaifA;
+  }
+  @keyframes pta-rlaifhuman {
+    0%,
+    30% {
+      opacity: 1;
+    }
+    45%,
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes pta-rlaifrobot {
+    0%,
+    35% {
+      opacity: 0;
+    }
+    50%,
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes pta-rlaifA {
+    0%,
+    65% {
+      stroke: currentColor;
+      stroke-width: 1.5;
+    }
+    78%,
+    100% {
+      stroke: #2e9e5b;
+      stroke-width: 3;
+    }
+  }
+
+  /* RLVR: the checker marks each try; ✓ grow and feed the model, ✗ fade. */
+  .pta .k-rlvr1,
+  .pta .k-rlvr2,
+  .pta .k-rlvr3,
+  .pta .k-rlvr4 {
+    transform-box: fill-box;
+    transform-origin: 50% 50%;
+  }
+  .pta .k-rlvrok {
+    fill: #2e9e5b;
+    animation-name: pta-rlvrmark;
+  }
+  .pta .k-rlvrbad {
+    fill: #d9534f;
+    animation-name: pta-rlvrmark;
+  }
+  .pta .k-rlvr1 {
+    animation-name: pta-rlvrgrow;
+  }
+  .pta .k-rlvr4 {
+    animation-name: pta-rlvrgrow;
+  }
+  .pta .k-rlvr2 {
+    animation-name: pta-rlvrfade;
+  }
+  .pta .k-rlvr3 {
+    animation-name: pta-rlvrfade;
+  }
+  .pta .k-rlvrarrow {
+    animation-name: pta-rlvrarrow;
+  }
+  @keyframes pta-rlvrmark {
+    0%,
+    20% {
+      opacity: 0;
+    }
+    35%,
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes pta-rlvrgrow {
+    0%,
+    40% {
+      transform: scale(1);
+    }
+    60%,
+    100% {
+      transform: scale(1.12);
+    }
+  }
+  @keyframes pta-rlvrfade {
+    0%,
+    40% {
+      opacity: 1;
+    }
+    60%,
+    100% {
+      opacity: 0.25;
+    }
+  }
+  @keyframes pta-rlvrarrow {
+    0%,
+    55% {
+      opacity: 0;
+    }
+    70%,
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* GRPO: bars above the group average grow and go green, bars below shrink. */
+  .pta .k-grpoUp {
+    animation-name: pta-grpoUp;
+  }
+  .pta .k-grpoDown {
+    animation-name: pta-grpoDown;
+  }
+  @keyframes pta-grpoUp {
+    0%,
+    30% {
+      transform: scaleY(1);
+      fill: currentColor;
+      opacity: 0.45;
+    }
+    65%,
+    100% {
+      transform: scaleY(1.3);
+      fill: #2e9e5b;
+      opacity: 1;
+    }
+  }
+  @keyframes pta-grpoDown {
+    0%,
+    30% {
+      transform: scaleY(1);
+      opacity: 0.45;
+    }
+    65%,
+    100% {
+      transform: scaleY(0.55);
+      opacity: 0.2;
+    }
+  }
+
+  /* Resting states (also what a paused figure shows before it scrolls in). */
+  .pta .k-rlhfhand {
+    transform: translate(131px, 90px);
+  }
+  .pta .k-rlaifrobot {
+    opacity: 0;
+  }
+  .pta .k-rlvrok,
+  .pta .k-rlvrbad,
+  .pta .k-rlvrarrow,
+  .pta .k-sftarrow {
+    opacity: 0;
+  }
+  .pta .k-rlhfleash {
+    transform: scaleX(0);
+  }
+
+  /* Reduced motion: no animation; every figure stands on its final frame. */
+  @media (prefers-reduced-motion: reduce) {
+    .pta [class*="k-"] {
+      animation: none;
+    }
+    .pta .k-sftloss {
+      transform: scaleX(0.08);
+    }
+    .pta .k-sftarrow,
+    .pta .k-rlaifrobot,
+    .pta .k-rlvrok,
+    .pta .k-rlvrbad,
+    .pta .k-rlvrarrow {
+      opacity: 1;
+    }
+    .pta .k-rlhfhand {
+      transform: translate(47px, 60px);
+    }
+    .pta .k-rlhfA,
+    .pta .k-rlaifA {
+      stroke: #2e9e5b;
+      stroke-width: 3;
+    }
+    .pta .k-rlhfneedle {
+      transform: rotate(40deg);
+    }
+    .pta .k-rlhfmodel {
+      transform: translateX(80px);
+    }
+    .pta .k-rlhfleash {
+      transform: scaleX(1);
+    }
+    .pta .k-dposeesaw {
+      transform: rotate(-9deg);
+    }
+    .pta .k-rlaifhuman {
+      opacity: 0;
+    }
+    .pta .k-rlvr1,
+    .pta .k-rlvr4 {
+      transform: scale(1.12);
+    }
+    .pta .k-rlvr2,
+    .pta .k-rlvr3 {
+      opacity: 0.25;
+    }
+    .pta .k-grpoUp {
+      transform: scaleY(1.3);
+      fill: #2e9e5b;
+      opacity: 1;
+    }
+    .pta .k-grpoDown {
+      transform: scaleY(0.55);
+      opacity: 0.2;
+    }
+  }
+</style>
+<script>
+  (function () {
+    var figs = document.querySelectorAll(".pta");
+    if (!("IntersectionObserver" in window)) {
+      figs.forEach(function (f) {
+        f.classList.add("is-on");
+      });
+      return;
+    }
+    var io = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (e) {
+          e.target.classList.toggle("is-on", e.isIntersecting);
+        });
+      },
+      { threshold: 0.35 }
+    );
+    figs.forEach(function (f) {
+      io.observe(f);
+    });
+  })();
+</script>
