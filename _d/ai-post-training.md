@@ -186,7 +186,7 @@ All three helpers are scaffolding, thrown away after training. Only the model sh
 - **Optimizes:** the same grade as PPO, with the group's average standing in for the forecaster.
 - **Needs:** several sampled answers per prompt, plus the grader's score for each. Nothing else.
 - **Reach for it when:** you can't afford, or don't want to tune, a value model — the default for reasoning RL today.
-- **Watch-out:** its normalization terms bias it. Dividing each answer's loss by its length penalizes long wrong answers less, so wrong answers get longer; dividing by the group's reward spread over-weights the easiest and hardest prompts. [Dr. GRPO](https://arxiv.org/abs/2503.20783) removes both terms. [DAPO](https://arxiv.org/abs/2503.14476) widens the upper clip so the policy keeps exploring instead of collapsing, skips prompts where every sample scored the same (zero gradient), averages the loss per token rather than per answer, and penalizes over-long answers softly instead of as failures.
+- **Watch-out:** its normalization terms bias it. Dividing each answer's loss by its length penalizes long wrong answers less, so wrong answers get longer; dividing by the group's reward spread over-weights the easiest and hardest prompts. [Dr. GRPO](https://arxiv.org/abs/2503.20783) removes both terms. [DAPO](https://arxiv.org/abs/2503.14476) widens the upper clip so the model keeps exploring instead of collapsing, skips prompts where every sample scored the same (zero gradient), averages the loss per token rather than per answer, and penalizes over-long answers softly instead of as failures.
 
 {% include post-training-anim.html name="grpo" caption="Grade on a curve: eight tries at one prompt, the group average is the bar — above it grows, below it shrinks." %}
 
