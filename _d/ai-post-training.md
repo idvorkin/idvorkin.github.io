@@ -11,7 +11,7 @@ tags:
 ai_default_image: true
 ---
 
-Pre-training is where a model reads the internet, and it's where the money goes. But the model you actually talk to was made afterwards, in post-training — the comparatively cheap stage that turns a text-autocompleter into an assistant that answers, follows a format, refuses the obviously bad stuff, and lately thinks before it speaks. I don't train models; I build on them. These are my notes on how that second stage works, method by method, deep enough to know which lever a lab pulled and why, not deep enough to pull one myself.
+Pre-training is where a model reads the internet, and it's where the money goes. But the model you actually talk to was made afterwards, in post-training — the comparatively cheap stage that turns a text-autocompleter into an assistant. The first version of this post listed the methods one after another, and reading it back I couldn't hold them in my head: too many acronyms, each explained on its own. So this is the rewrite, built on two plain questions that every method answers — who grades the answer, and how the model learns from the grade. The jargon is in parentheses, where it belongs.
 
 {% include alert.html content="Everything here is public information and my own opinions. There's no secret sauce in here, and nothing on this page represents the views of my employer." style="info" %}
 
@@ -21,15 +21,18 @@ Pre-training is where a model reads the internet, and it's where the money goes.
 <!-- vim-markdown-toc-start -->
 
 - [The one intuition](#the-one-intuition)
-- [The lineage](#the-lineage)
-- [SFT: imitate good answers](#sft-imitate-good-answers)
-- [RLHF: learn the taste from rankings](#rlhf-learn-the-taste-from-rankings)
-- [DPO: the same preferences, no RL loop](#dpo-the-same-preferences-no-rl-loop)
-- [RLAIF and Constitutional AI: when the judge is a model](#rlaif-and-constitutional-ai-when-the-judge-is-a-model)
-- [RLVR: let a checker grade it](#rlvr-let-a-checker-grade-it)
-  - [GRPO: the optimizer that made RLVR cheap](#grpo-the-optimizer-that-made-rlvr-cheap)
-- [How the weights actually change: LoRA](#how-the-weights-actually-change-lora)
-- [How the methods combine: real recipes](#how-the-methods-combine-real-recipes)
+- [Two questions explain every method](#two-questions-explain-every-method)
+- [Who grades the answer?](#who-grades-the-answer)
+  - [Copy the expert (SFT)](#copy-the-expert-sft)
+  - [Taste test by people (RLHF)](#taste-test-by-people-rlhf)
+  - [Taste test by an AI with a rulebook (RLAIF, Constitutional AI)](#taste-test-by-an-ai-with-a-rulebook-rlaif-constitutional-ai)
+  - [Answer key (RLVR)](#answer-key-rlvr)
+- [How does the model learn from the grade?](#how-does-the-model-learn-from-the-grade)
+  - [Coach with a scorekeeper (PPO)](#coach-with-a-scorekeeper-ppo)
+  - [Grade on a curve against its own tries (GRPO)](#grade-on-a-curve-against-its-own-tries-grpo)
+  - [Straight to A-over-B, no scorekeeper (DPO)](#straight-to-a-over-b-no-scorekeeper-dpo)
+  - [Clip-on adapter (LoRA)](#clip-on-adapter-lora)
+- [Recipes in plain words](#recipes-in-plain-words)
 - [Methods at a glance](#methods-at-a-glance)
 - [What this post is not about](#what-this-post-is-not-about)
 
@@ -42,124 +45,187 @@ Pre-training is where a model reads the internet, and it's where the money goes.
 
 {% include summarize-page.html src="/ai-training" %}
 
-## The lineage
+<a id="the-lineage"></a>
+
+## Two questions explain every method
 
 {% include local_image_float_right.html src="raccoon-post-training-lineage.webp" %}
 
-Every post-training method is the same move: pick a behavior you want more of, find a **signal** that says which outputs have it, and nudge the weights toward it. The methods differ only in where the signal comes from, and that gives you the lineage:
+Every post-training method takes the model's answer, grades it, and nudges the weights toward whatever scored well. So there are only two things to ask about any of them:
 
-1. **Demonstrations → SFT.** Show the model good answers; it imitates them. The first and biggest shift.
-2. **Preferences → RLHF, or DPO** for the same data with less machinery. Show it two answers and which is better; it learns the taste.
-3. **Verifiable rewards → RLVR**, with **GRPO** as the optimizer that made it affordable. Skip the human: let a checker grade the answer. This is what made reasoning and coding models take off.
+1. **Who grades the answer?** An expert's own answers to copy (SFT). A taste test by people (RLHF's reward model). A taste test by an AI with a rulebook (RLAIF, Constitutional AI). An answer key (RLVR).
+2. **How does the model learn from the grade?** With a coach and a scorekeeper (PPO, with its critic). Graded on a curve against its own tries (GRPO). Straight from A-over-B pairs with no scorekeeper (DPO). And whichever you pick, a clip-on adapter (LoRA) makes the weight update cheap.
 
-Each rung stands on the one below. SFT gets the model into the right neighborhood, preference tuning polishes, and verifiable rewards push hard on whatever you can actually grade. A modern open recipe runs all three in order — [Tülu 3](https://arxiv.org/abs/2411.15124) is SFT → DPO → RLVR — and the [recipes below](#how-the-methods-combine-real-recipes) show the variations.
+Copy the expert is the odd one out: there is no grade, so no column — it's plain imitation and the first step every recipe takes. Every other method is a cell in this grid:
 
-## SFT: imitate good answers
+| Who grades ↓ · How it learns →                  | Coach + scorekeeper (PPO)                                        | Grade on a curve (GRPO)                         | Straight to A-over-B (DPO)                                         |
+| ----------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------ |
+| **Taste test by people** (RLHF)                 | classic RLHF — [InstructGPT](https://arxiv.org/abs/2203.02155)   | works too: GRPO takes any score                 | DPO — [Tülu 3](https://arxiv.org/abs/2411.15124)'s preference step |
+| **Taste test by an AI with a rulebook** (RLAIF) | [Constitutional AI](https://arxiv.org/abs/2212.08073)'s RL phase | works too                                       | DPO on AI-labeled pairs                                            |
+| **Answer key** (RLVR)                           | RLVR with PPO                                                    | [DeepSeek-R1](https://arxiv.org/abs/2501.12948) | — (needs a score, not pairs)                                       |
+
+The row and the column are independent, and that's the thing I kept getting wrong. **RLVR and GRPO are not either/or.** RLVR says where the score comes from (an answer key); GRPO says how a score turns into learning (grade each try against its siblings). GRPO is just as happy taking a reward model's score — DeepSeek-R1's final RL stage runs GRPO on a mix of answer-key and model-based rewards. Likewise RLHF is a row (people's taste, written down as a reward model), and PPO is the column it's usually paired with.
+
+Read the recipes that way and they stop being alphabet soup: **InstructGPT** is copy the expert, then a taste test with a coach. **Tülu 3** is copy the expert, then A-over-B, then an answer key. **DeepSeek-R1** is an answer key, graded on a curve. The [full recipes are below](#recipes-in-plain-words).
+
+## Who grades the answer?
+
+<a id="sft-imitate-good-answers"></a>
+
+### Copy the expert (SFT)
 
 {% include local_image_float_right.html src="raccoon-post-training-sft.webp" %}
 
-Supervised fine-tuning is plain next-token training, pointed at a curated set of (prompt → ideal answer) pairs instead of the internet. Nothing about the objective changes from pre-training; only the data does, and that turns out to be enough. It's the first step of the [InstructGPT](https://arxiv.org/abs/2203.02155) recipe that turned GPT-3 into an assistant: OpenAI's labelers wrote demonstrations of the behavior they wanted, about 13k prompts' worth, and the base model learned to answer instead of autocomplete, and to hold whatever format the demos hold.
+No grade here, just an answer sheet. Supervised fine-tuning is plain next-token training pointed at a curated set of (prompt → ideal answer) pairs instead of the internet; nothing about the objective changes from pre-training, only the data, and that turns out to be enough. It's the first step of the [InstructGPT](https://arxiv.org/abs/2203.02155) recipe that turned GPT-3 into an assistant: OpenAI's labelers wrote demonstrations of the behavior they wanted, about 13k prompts' worth, and the base model learned to answer instead of autocomplete, and to hold whatever format the demos hold.
 
-The demos don't have to be human-written. Stanford's [Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html) fine-tuned LLaMA 7B on 52K demonstrations generated by OpenAI's text-davinci-003 — a strong model writing the training data for a weaker one. That trick is everywhere now: [DeepSeek-R1](https://arxiv.org/abs/2501.12948) was distilled the same way into smaller models that beat their instruction-tuned starting points, and every "reasoning traces" dataset on Hugging Face is a big model's homework being copied by a small one.
+The expert doesn't have to be a person. Stanford's [Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html) fine-tuned LLaMA 7B on 52K demonstrations generated by OpenAI's text-davinci-003 — a strong model writing the training data for a weaker one. That trick is everywhere now: [DeepSeek-R1](https://arxiv.org/abs/2501.12948) was distilled the same way into smaller models that beat their instruction-tuned starting points, and every "reasoning traces" dataset on Hugging Face is a big model's homework being copied by a small one.
 
 - **Optimizes:** the likelihood of the demonstrated answers — imitation.
 - **Data:** (prompt → ideal answer) pairs, human-written or strong-model-written. Thousands to tens of thousands, and quality beats volume.
 - **Reach for it when:** the behavior can be shown by example — a format, a tone, a workflow, a style of reasoning.
 - **Watch-out:** it can only copy. It can't exceed the demos, it never learns what _not_ to do, and a handful of examples teaches _style_, not _knowledge_ — then cheerfully hallucinates the gaps.
 
-## RLHF: learn the taste from rankings
+{% include post-training-anim.html name="sft" caption="Copy the expert: the model's answer is pulled onto the teacher's, and the loss shrinks." %}
+
+<a id="rlhf-learn-the-taste-from-rankings"></a>
+
+### Taste test by people (RLHF)
 
 {% include local_image_float_right.html src="raccoon-post-training-rlhf.webp" %}
 
-People find it far easier to say which of two answers is better than to write the ideal one. RLHF builds a whole pipeline on that asymmetry. In [InstructGPT](https://arxiv.org/abs/2203.02155) it runs in three steps:
+People find it far easier to say which of two answers is better than to write the ideal one. So RLHF runs a taste test: show labelers several answers to the same prompt and have them rank them. Then it writes the taste down as a model — a copy of the LLM (OpenAI used a 6B one) trained on 33k prompts' worth of comparisons to take a prompt and a response and output one number predicting what people would prefer. That **reward model** is the grader; it can score millions of answers nobody will ever read. How the score becomes learning is the [coach-and-scorekeeper loop below](#coach-with-a-scorekeeper-ppo).
 
-1. **SFT** as above, so the model is already roughly right.
-2. **Train a reward model.** Show labelers several answers to the same prompt and have them rank them. Train a copy of the model (OpenAI used a 6B one) to take a prompt and a response and output a single number that predicts those rankings — 33k prompts' worth of comparisons.
-3. **Optimize the policy against it with RL** (PPO). The model writes an answer, the reward model scores it, the score becomes the training signal. A per-token KL penalty keeps the policy close to the SFT model, "to mitigate over-optimization of the reward model" — without it the policy drifts into whatever nonsense the reward model happens to like.
-
-The payoff was the headline of the paper: labelers preferred the 1.3B-parameter InstructGPT over the 175B GPT-3, "despite having 100x fewer parameters." Behavior, not knowledge, was what people were missing.
+The payoff was the headline of the InstructGPT paper: labelers preferred the 1.3B-parameter InstructGPT over the 175B GPT-3, "despite having 100x fewer parameters." Behavior, not knowledge, was what people were missing.
 
 The catch is Goodhart's law with a training budget. The reward model is a _proxy_ for what people want, and [Gao et al.](https://arxiv.org/abs/2210.10760) measured what happens when you push on it: the proxy score keeps climbing while the true score stalls and then degrades — "optimizing its value too much can hinder ground truth performance." Every reward-design lesson I've collected elsewhere on the blog applies here: a judge answers _which of these two is better_ far more reliably than a zero-to-ten scale ([/ai-testing](/ai-testing#wrinkle---no-known-answer)), and a composite reward has to be read term by term or the terms that saturated early keep drawing budget ([/hill-climbing](/hill-climbing#your-other-job-build-evals)).
 
 - **Optimizes:** the reward model's score — a learned proxy for "what people prefer".
 - **Data:** A-vs-B (or ranked) human preferences over the model's own outputs, plus an SFT model to start from.
 - **Reach for it when:** you want helpfulness, tone, or safety beyond what demos can teach, and the target is a matter of taste rather than correctness.
-- **Watch-out:** a heavy pipeline — policy, reference, reward, and value models all in memory — and a proxy the policy will over-optimize. Reward hacking is the default outcome, not the exception.
+- **Watch-out:** a proxy the model will over-optimize. Reward hacking is the default outcome, not the exception.
 
-## DPO: the same preferences, no RL loop
+{% include post-training-anim.html name="rlhf" caption="Taste test by people: a person picks A, the reward meter learns the taste, and the model leans toward A — on a leash to where it started." %}
 
-{% include local_image_float_right.html src="raccoon-post-training-dpo.webp" %}
+<a id="rlaif-and-constitutional-ai-when-the-judge-is-a-model"></a>
 
-[DPO](https://arxiv.org/abs/2305.18290) noticed the reward model was a detour. The RLHF objective — maximize reward while staying close to the reference model — has an optimal policy you can write down in closed form, and if you substitute that back in, the reward model becomes a function of the policy itself: "your language model is secretly a reward model." So you never train the reward model at all. You take the same A-vs-B pairs and train the policy with a plain classification-style loss that pushes the preferred answer's probability up relative to the reference model and the rejected answer's down. Two models in memory instead of four, no sampling loop, no PPO to babysit — and most of RLHF's benefit. That's why it's the default preference step in open recipes like Tülu 3.
+### Taste test by an AI with a rulebook (RLAIF, Constitutional AI)
 
-- **Optimizes:** the same preference objective as RLHF, solved in closed form; a temperature β says how far from the reference it may wander.
-- **Data:** the same A-vs-B pairs, plus a frozen copy of the starting model as the reference.
-- **Reach for it when:** you'd reach for RLHF but can't run, or don't want to tune, an RL pipeline.
-- **Watch-out:** it learns from a fixed set of pairs somebody wrote down, while RLHF scores the model's own fresh samples — so DPO is bounded by its data and can't shape a reward beyond what the pairs already express.
+{% include local_image_float_right.html src="raccoon-post-training-rulebook.webp" %}
 
-## RLAIF and Constitutional AI: when the judge is a model
+Human rankings are the expensive part of the taste test. [Constitutional AI](https://arxiv.org/abs/2212.08073) replaced them with a model and a short list of written principles — the "constitution", the only human oversight in the loop. Two phases: first the model critiques and revises its own answers against those principles and is fine-tuned on the revisions (copy the expert, where the expert is the model's own corrected draft); then a model, not a person, judges A-vs-B pairs, a reward model is trained on those AI preferences, and the RL loop runs against it. Anthropic called that second phase RL from AI Feedback, and [a later Google study](https://arxiv.org/abs/2309.00267) found RLAIF "achieves comparable performance to RLHF" on summarization and dialogue.
 
-Human rankings are the expensive part of RLHF. [Constitutional AI](https://arxiv.org/abs/2212.08073) replaced them with a model and a short list of written principles — the "constitution", the only human oversight in the loop. Two phases: first the model critiques and revises its own answers against those principles and is fine-tuned on the revisions (SFT again); then a model, not a person, judges A-vs-B pairs, a reward model is trained on those AI preferences, and RL runs against it. Anthropic called that second phase RL from AI Feedback, and [a later Google study](https://arxiv.org/abs/2309.00267) found RLAIF "achieves comparable performance to RLHF" on summarization and dialogue.
-
-RLAIF is also what's left when the target can't be checked at all. To teach a language model to paint by writing p5.brush JavaScript, [Surya Narreddi hand-rated 1,664 generated images down to a 581-picture reference pool](https://surya.website/rling-qwen-to-paint-with-code) and made the reward "did the judge prefer this render to two pulled from that pool" — with no test to pass, the reward function _is_ the design work, and [a badly built one plateaus while the score keeps climbing](/hill-climbing#your-other-job-build-evals).
+An AI judge is also what's left when the target can't be checked at all. To teach a language model to paint by writing p5.brush JavaScript, [Surya Narreddi hand-rated 1,664 generated images down to a 581-picture reference pool](https://surya.website/rling-qwen-to-paint-with-code) and made the reward "did the judge prefer this render to two pulled from that pool" — with no test to pass, the reward function _is_ the design work, and [a badly built one plateaus while the score keeps climbing](/hill-climbing#your-other-job-build-evals).
 
 - **Optimizes:** whatever the judge model prefers, steered by the principles you wrote.
-- **Data:** a constitution and prompts; the judge generates the preferences.
+- **Data:** a rulebook and prompts; the judge generates the preferences.
 - **Reach for it when:** you need preference data at a scale people can't label, or the target is taste with no checker.
 - **Watch-out:** the judge's blind spots become the model's, and a judge can be gamed just like a reward model.
 
-## RLVR: let a checker grade it
+{% include post-training-anim.html name="rlaif" caption="Taste test by an AI: the human judge is swapped for a model holding the rulebook; the loop is otherwise the same." %}
+
+<a id="rlvr-let-a-checker-grade-it"></a>
+
+### Answer key (RLVR)
 
 {% include local_image_float_right.html src="raccoon-post-training-rlvr.webp" %}
 
-If the answer can be checked — a math result, a unit test, an instruction with a testable constraint, a task that either got done or didn't — you need neither humans nor a reward model. [RLVR](https://arxiv.org/abs/2411.15124) (the name is from Tülu 3) runs RL straight against that checker: "only provide rewards when the model's generations are verified to be correct." Tülu 3 pointed it at grade-school math, competition math, and instruction-following with checkable constraints.
+If the answer can be checked — a math result, a unit test, an instruction with a testable constraint, a task that either got done or didn't — you need neither people nor a reward model. [RLVR](https://arxiv.org/abs/2411.15124) (the name is from Tülu 3) grades against the answer key: "only provide rewards when the model's generations are verified to be correct." Tülu 3 pointed it at grade-school math, competition math, and instruction-following with checkable constraints.
 
-[DeepSeek-R1](https://arxiv.org/abs/2501.12948) showed how far it goes. R1-Zero skipped SFT entirely — "we bypass the conventional supervised fine-tuning (SFT) phase before RL training" — and ran RL on a base model with two rule-based rewards, accuracy and format. Reasoning behavior came out of the reward alone: the model started re-checking its own work, and the paper's "aha moment" is the training step where it began saying "wait" and revisiting its approach without anyone having shown it that. It also came out barely readable and mixing English and Chinese mid-thought, which is why the shipped R1 adds a small cold-start SFT stage and a language-consistency reward before the RL. The same engine, pointed at software, is how coding agents are trained; that loop, and how it gets gamed, is in the [parent post](/ai-training#post-training-for-coding-competence).
+[DeepSeek-R1](https://arxiv.org/abs/2501.12948) showed how far an answer key goes. R1-Zero skipped SFT entirely — "we bypass the conventional supervised fine-tuning (SFT) phase before RL training" — and ran RL on a base model with two rule-based rewards, accuracy and format. Reasoning behavior came out of the reward alone: the model started re-checking its own work, and the paper's "aha moment" is the training step where it began saying "wait" and revisiting its approach without anyone having shown it that. It also came out barely readable and mixing English and Chinese mid-thought, which is why the shipped R1 adds a small cold-start SFT stage and a language-consistency reward before the RL. The same engine, pointed at software, is how coding agents are trained; that loop, and how it gets gamed, is in the [parent post](/ai-training#post-training-for-coding-competence).
 
 - **Optimizes:** the rate at which answers pass the checker.
 - **Data:** prompts that come with a verifier — math with known answers, code with tests, instructions with checkable constraints. No human labels at training time.
 - **Reach for it when:** correctness is checkable: reasoning, math, code, agentic tasks.
 - **Watch-out:** only works where answers are checkable, and the checker becomes the target — the model will special-case the test, hard-code the expected output, or `pip install` its way around the real fix if it can.
 
-### GRPO: the optimizer that made RLVR cheap
+{% include post-training-anim.html name="rlvr" caption="Answer key: every try is checked; only the ✓ tries strengthen the model, the ✗ tries fade." %}
 
-PPO needs a second network, the value model (critic), to estimate how well each answer was _expected_ to do, so a raw reward can be turned into an advantage. [GRPO](https://arxiv.org/abs/2402.03300) (DeepSeekMath) drops it: sample a group of answers to the same prompt, score each with the checker, and use the group's mean and spread as the baseline — an answer's advantage is just how much better it did than its siblings. "GRPO foregoes the critic model, instead estimating the baseline from group scores, significantly reducing training resources." No critic to train or hold in memory is what let R1-Zero run pure RL on a base model at all.
+## How does the model learn from the grade?
 
-- **Optimizes:** the same verifiable reward as RLVR, with the group standing in for the critic.
-- **Data:** several sampled answers per prompt, plus the checker's score for each. Nothing else.
-- **Reach for it when:** you're doing RLVR and can't afford, or don't want to tune, a value model — the default for reasoning RL today.
+A grade is a number. Turning a number into a weight update is the second question, and the three answers differ in how much machinery they need.
+
+### Coach with a scorekeeper (PPO)
+
+{% include local_image_float_right.html src="raccoon-post-training-scorekeeper.webp" %}
+
+The classic RL loop, the one [InstructGPT](https://arxiv.org/abs/2203.02155) used. The model writes an answer, the grader scores it, and the score becomes the training signal — but a raw score isn't enough. To know whether an answer was a _good surprise_ or a _bad one_ the loop keeps a scorekeeper, the **value model** (critic), a second network that predicts how well each answer was expected to do; the update pushes on the difference between the score and that expectation. PPO is the coach: it makes each update small and clipped so the policy doesn't lurch. And there's a leash: a per-token KL penalty keeps the policy close to the model it started from, "to mitigate over-optimization of the reward model" — without it the policy drifts into whatever nonsense the grader happens to like.
+
+- **Optimizes:** the grade, corrected by the scorekeeper's expectation, with a leash back to the starting model.
+- **Needs:** four models in memory — the policy, the frozen reference it's leashed to, the grader (reward model), and the scorekeeper (value model).
+- **Reach for it when:** you have a score for every answer and the budget to run the full loop.
+- **Watch-out:** the heaviest pipeline of the three, and the most knobs to tune.
+
+<a id="grpo-the-optimizer-that-made-rlvr-cheap"></a>
+
+### Grade on a curve against its own tries (GRPO)
+
+{% include local_image_float_right.html src="raccoon-post-training-curve.webp" %}
+
+[GRPO](https://arxiv.org/abs/2402.03300) (DeepSeekMath) fires the scorekeeper. Sample a group of answers to the same prompt, score each with the grader, and use the group's mean and spread as the expectation — an answer's advantage is just how much better it did than its siblings. "GRPO foregoes the critic model, instead estimating the baseline from group scores, significantly reducing training resources." No critic to train or hold in memory is what let R1-Zero run pure RL on a base model at all. It's a way of learning, not a way of grading: the score can come from an answer key or from a reward model.
+
+- **Optimizes:** the same grade as PPO, with the group standing in for the scorekeeper.
+- **Needs:** several sampled answers per prompt, plus the grader's score for each. Nothing else.
+- **Reach for it when:** you can't afford, or don't want to tune, a value model — the default for reasoning RL today.
 - **Watch-out:** its normalization terms bias it. Dividing each answer's loss by its length penalizes long wrong answers less, so wrong answers get longer; dividing by the group's reward spread over-weights the easiest and hardest prompts. [Dr. GRPO](https://arxiv.org/abs/2503.20783) removes both terms. [DAPO](https://arxiv.org/abs/2503.14476) widens the upper clip so the policy keeps exploring instead of collapsing, skips prompts where every sample scored the same (zero gradient), averages the loss per token rather than per answer, and penalizes over-long answers softly instead of as failures.
 
-## How the weights actually change: LoRA
+{% include post-training-anim.html name="grpo" caption="Grade on a curve: eight tries at one prompt, the group average is the bar — above it grows, below it shrinks." %}
 
-Whichever method, you rarely retrain every weight. **LoRA** ([Low-Rank Adaptation](https://arxiv.org/abs/2106.09685)) freezes the model and trains a small low-rank matrix bolted alongside each layer — stick a narrow matrix next to the model and only tune that. On GPT-3 175B it cut trainable parameters 10,000× and GPU memory 3× with no loss in quality, and the base model's knowledge stays intact because you never touched it. Hands-on: [LoRA on Llama 3](https://colab.research.google.com/drive/1efOx_rwZeF3i0YsirhM1xhYLtGNX6Fv3?usp=sharing#scrollTo=bDp0zNpwe6U_) and [Fine-Tune Your Own Llama 2 Model in a Colab Notebook](https://mlabonne.github.io/blog/posts/Fine_Tune_Your_Own_Llama_2_Model_in_a_Colab_Notebook.html), the walkthrough I'd start with.
+<a id="dpo-the-same-preferences-no-rl-loop"></a>
 
-## How the methods combine: real recipes
+### Straight to A-over-B, no scorekeeper (DPO)
 
-Nobody ships one method. The published recipes are the lineage run as a pipeline, and the differences are which rungs get skipped:
+{% include local_image_float_right.html src="raccoon-post-training-dpo.webp" %}
 
-| Recipe                                                 | Stages                                                                                                                                                | What's notable                                                                                    |
-| ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| [InstructGPT](https://arxiv.org/abs/2203.02155) (2022) | SFT → reward model → PPO                                                                                                                              | The original three-step RLHF; 1.3B beat 175B on preference                                        |
-| [Constitutional AI](https://arxiv.org/abs/2212.08073)  | critique-and-revise SFT → AI preferences → reward model → RL                                                                                          | Humans write principles, a model does the labeling                                                |
-| [Tülu 3](https://arxiv.org/abs/2411.15124) (2024)      | SFT → DPO → RLVR                                                                                                                                      | The open reference recipe; DPO instead of PPO, then a checker for math and instruction-following  |
-| [DeepSeek-R1](https://arxiv.org/abs/2501.12948) (2025) | cold-start SFT → RL (GRPO, rule rewards + language consistency) → rejection-sampling SFT → RL (rule + model rewards for helpfulness and harmlessness) | R1-Zero proved RL alone finds reasoning; the SFT stages are there to make it readable and general |
+[DPO](https://arxiv.org/abs/2305.18290) noticed that for a taste test the whole loop was a detour. The RLHF objective — maximize the grade while staying leashed to the reference — has an optimal policy you can write down in closed form, and if you substitute that back in, the reward model becomes a function of the policy itself: "your language model is secretly a reward model." So you never train a grader or a scorekeeper. You take the same A-vs-B pairs and train the policy with a plain classification-style loss that pushes the preferred answer's probability up relative to the reference model and the rejected answer's down. Two models in memory instead of four, no sampling loop, no PPO to babysit — and most of RLHF's benefit. That's why it's the default preference step in open recipes like Tülu 3.
 
-The pattern across all of them: SFT to get into the neighborhood, preferences to polish taste, a verifier wherever you can build one, and then SFT _again_ to fold what RL discovered back into a clean model.
+- **Optimizes:** the same preference objective as RLHF, solved in closed form; a temperature β says how far from the reference it may wander.
+- **Needs:** A-vs-B pairs (from people or an AI judge), plus a frozen copy of the starting model as the reference.
+- **Reach for it when:** you have pairs and don't want to run an RL pipeline.
+- **Watch-out:** it learns from a fixed set of pairs somebody wrote down, while the RL loops score the model's own fresh samples — so DPO is bounded by its data and can't shape a reward beyond what the pairs already express. And it needs pairs: an answer key gives a score, not a pair, which is why the DPO cell of the answer-key row is empty.
+
+{% include post-training-anim.html name="dpo" caption="Straight to A-over-B: a seesaw, preferred answer up and rejected answer down — no meter anywhere." %}
+
+<a id="how-the-weights-actually-change-lora"></a>
+
+### Clip-on adapter (LoRA)
+
+{% include local_image_float_right.html src="raccoon-post-training-adapter.webp" %}
+
+Whichever row and column, you rarely retrain every weight. **LoRA** ([Low-Rank Adaptation](https://arxiv.org/abs/2106.09685)) freezes the model and trains a small low-rank matrix bolted alongside each layer — clip a narrow module onto the model and only tune that. On GPT-3 175B it cut trainable parameters 10,000× and GPU memory 3× with no loss in quality, and the base model's knowledge stays intact because you never touched it. Hands-on: [LoRA on Llama 3](https://colab.research.google.com/drive/1efOx_rwZeF3i0YsirhM1xhYLtGNX6Fv3?usp=sharing#scrollTo=bDp0zNpwe6U_) and [Fine-Tune Your Own Llama 2 Model in a Colab Notebook](https://mlabonne.github.io/blog/posts/Fine_Tune_Your_Own_Llama_2_Model_in_a_Colab_Notebook.html), the walkthrough I'd start with.
+
+<a id="how-the-methods-combine-real-recipes"></a>
+
+## Recipes in plain words
+
+Nobody ships one cell of the grid. The published recipes are a sequence of cells, and the differences are which ones get skipped:
+
+| Recipe                                                 | In plain words                                                                    | Stages                                                                                                                                                            |
+| ------------------------------------------------------ | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [InstructGPT](https://arxiv.org/abs/2203.02155) (2022) | Copy the expert, then a taste test with a coach                                   | SFT → reward model → PPO. 1.3B beat 175B on preference                                                                                                            |
+| [Constitutional AI](https://arxiv.org/abs/2212.08073)  | Copy your own corrected drafts, then an AI taste test with a rulebook and a coach | critique-and-revise SFT → AI preferences → reward model → RL                                                                                                      |
+| [Tülu 3](https://arxiv.org/abs/2411.15124) (2024)      | Copy the expert, then A-over-B, then an answer key                                | SFT → DPO → RLVR. The open reference recipe                                                                                                                       |
+| [DeepSeek-R1](https://arxiv.org/abs/2501.12948) (2025) | An answer key, graded on a curve — with a little copying before and after         | cold-start SFT → GRPO on rule rewards + language consistency → rejection-sampling SFT → GRPO on rule + model rewards. R1-Zero proved the RL alone finds reasoning |
+
+The pattern across all of them: copy the expert to get into the neighborhood, a taste test to polish, an answer key wherever you can build one, and then copy _again_ to fold what RL discovered back into a clean model.
+
+<a id="methods-at-a-glance"></a>
 
 ## Methods at a glance
 
-| Method    | Signal (who or what grades)                                | Separate reward model?           | Best for                                                       | Watch-out                                       |
-| --------- | ---------------------------------------------------------- | -------------------------------- | -------------------------------------------------------------- | ----------------------------------------------- |
-| **SFT**   | Human- or strong-model-written target answers              | No                               | The first shift: answer instead of autocomplete, hold a format | Can't exceed the demos or learn what not to do  |
-| **RLHF**  | Humans rank A vs B → reward model → PPO                    | **Yes**                          | Helpfulness, tone, safety beyond what demos teach              | Heavy pipeline; reward hacking                  |
-| **DPO**   | The same A-vs-B rankings, fit directly                     | No                               | RLHF's benefit without the RL loop                             | Bounded by the preference data                  |
-| **RLAIF** | A model ranks A vs B against written principles            | Yes                              | RLHF at scale, or when nothing is checkable                    | The judge's blind spots become the model's      |
-| **RLVR**  | A checker: unit tests, math grader, sandbox                | No — the checker _is_ the reward | Reasoning and coding agents, anything checkable                | Only where checkable; gaming the test           |
-| **GRPO**  | RLVR's checker; a group of sampled answers is the baseline | No — and no value model either   | Reasoning RL on a budget; the usual RLVR optimizer             | Length bias (Dr. GRPO), entropy collapse (DAPO) |
+| Method    | Who grades                              | How it learns                               | Best for                                                       | Watch-out                                       |
+| --------- | --------------------------------------- | ------------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------- |
+| **SFT**   | Copy the expert's answers               | Imitation — no grade                        | The first shift: answer instead of autocomplete, hold a format | Can't exceed the demos or learn what not to do  |
+| **RLHF**  | Taste test by people → reward model     | Coach + scorekeeper (PPO), usually          | Helpfulness, tone, safety beyond what demos teach              | Heavy pipeline; reward hacking                  |
+| **RLAIF** | Taste test by an AI with a rulebook     | Same loops as RLHF                          | RLHF at scale, or when nothing is checkable                    | The judge's blind spots become the model's      |
+| **DPO**   | A-vs-B pairs (people or AI)             | Straight to A-over-B, no scorekeeper        | RLHF's benefit without the RL loop                             | Bounded by the pairs                            |
+| **RLVR**  | Answer key: tests, math grader, sandbox | PPO or GRPO                                 | Reasoning and coding agents, anything checkable                | Only where checkable; gaming the test           |
+| **GRPO**  | Any score (answer key or reward model)  | Grade on a curve against its own tries      | Reasoning RL on a budget; the usual RLVR optimizer             | Length bias (Dr. GRPO), entropy collapse (DAPO) |
+| **LoRA**  | —                                       | Clip-on adapter; the big model stays frozen | Making any of the above cheap                                  | A small adapter can't carry a big change        |
 
 ## What this post is not about
 
 - **Pre-training and deployment** — the whole pipeline, plus the post-training vs RAG vs harness decision and the coding-competence loop, is [/ai-training](/ai-training). Serving is [/ai-inference](/ai-inference).
-- **Building the evals** — post-training is only as good as its reward, and the reward is an eval. How to build one that measures what you meant is [/hill-climbing](/hill-climbing#your-other-job-build-evals) and [/ai-testing](/ai-testing).
+- **Building the evals** — post-training is only as good as its grader, and the grader is an eval. How to build one that measures what you meant is [/hill-climbing](/hill-climbing#your-other-job-build-evals) and [/ai-testing](/ai-testing).
 - **The actual math** — I'm staying at the mental-model level on purpose. For the deep version, start with the [seminal papers](/ai-paper) and the linked papers above.
+
+{% include post-training-anim-assets.html %}
