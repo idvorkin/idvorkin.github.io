@@ -53,6 +53,31 @@ function diffButton(prUrl?: string): HTMLButtonElement {
   return btn;
 }
 
+type AnnotateApi = { enabled: () => boolean; set: (on: boolean) => void };
+
+/** Live on/off switch the private annotate tool (_includes/annotate.html) exposes on post pages. */
+const annotateApi = (): AnnotateApi | undefined => (window as any).blogAnnotate;
+
+/** Banner button that turns annotate (comment) mode on and off live, same flag as ?annotate=1. */
+export function commentsButton(api: AnnotateApi): HTMLButtonElement {
+  const btn = document.createElement("button");
+  btn.id = "dev-comments-toggle";
+  btn.type = "button";
+  const render = () => {
+    const on = api.enabled();
+    btn.textContent = on ? "💬 Comments on" : "💬 Comments";
+    btn.setAttribute("aria-pressed", String(on));
+    btn.title = on ? "Annotate mode is on: select text to comment. Click to turn off." : "Turn on annotate mode";
+    btn.style.cssText = `background:${on ? "#0b5ed7" : "#444c56"};color:#fff;border:0;border-radius:4px;padding:1px 8px;font:inherit;cursor:pointer;`;
+  };
+  btn.onclick = () => {
+    api.set(!api.enabled());
+    render();
+  };
+  render();
+  return btn;
+}
+
 export function isDevServer(): boolean {
   return window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
 }
@@ -124,6 +149,11 @@ export function initDevInfo(): void {
       devInfoElement.appendChild(
         diffButton(pr ? `https://github.com/idvorkin/idvorkin.github.io/pull/${pr}` : undefined),
       );
+    }
+    const annotate = annotateApi();
+    if (annotate) {
+      devInfoElement.appendChild(document.createTextNode(" | "));
+      devInfoElement.appendChild(commentsButton(annotate));
     }
     document.body.appendChild(devInfoElement);
 
