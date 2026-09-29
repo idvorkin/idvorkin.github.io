@@ -16,7 +16,7 @@ The post-training post explains the methods on a single answer: the model writes
 
 {% include alert.html content="Everything here is public information and my own opinions. There's no secret sauce in here, and nothing on this page represents the views of my employer." style="info" %}
 
-{% include ai-slop.html percent="50" %}
+{% include ai-slop.html percent="100" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
