@@ -342,7 +342,7 @@ diagram. {% endcomment %}
     }
   }
 
-  /* RLVR: the checker marks each try; ✓ grow and feed the model, ✗ fade. */
+  /* RLVR: the checker marks each try; ✓ lift, ✗ sink. */
   .pta .k-rlvr1,
   .pta .k-rlvr2,
   .pta .k-rlvr3,
@@ -386,21 +386,23 @@ diagram. {% endcomment %}
   @keyframes pta-rlvrgrow {
     0%,
     40% {
-      transform: scale(1);
+      transform: translateY(0) scale(1);
     }
     60%,
     100% {
-      transform: scale(1.12);
+      transform: translateY(-8px) scale(1.08);
     }
   }
   @keyframes pta-rlvrfade {
     0%,
     40% {
+      transform: translateY(0);
       opacity: 1;
     }
     60%,
     100% {
-      opacity: 0.25;
+      transform: translateY(8px);
+      opacity: 0.45;
     }
   }
   @keyframes pta-rlvrarrow {
@@ -414,7 +416,10 @@ diagram. {% endcomment %}
     }
   }
 
-  /* GRPO: bars above the group average grow and go green, bars below shrink. */
+  /* GRPO: bars above the group average grow and go green, bars below shrink, bars on it stay. */
+  .pta .k-grpoFlat {
+    opacity: 0.45;
+  }
   .pta .k-grpoUp {
     animation-name: pta-grpoUp;
   }
@@ -505,11 +510,12 @@ diagram. {% endcomment %}
     }
     .pta .k-rlvr1,
     .pta .k-rlvr4 {
-      transform: scale(1.12);
+      transform: translateY(-8px) scale(1.08);
     }
     .pta .k-rlvr2,
     .pta .k-rlvr3 {
-      opacity: 0.25;
+      transform: translateY(8px);
+      opacity: 0.45;
     }
     .pta .k-grpoUp {
       transform: scaleY(1.3);
