@@ -110,6 +110,7 @@ See more about [PANAS Personality Types](/emotions#panas-personality-types) and 
 
 | Enneagram | Type              | Score |
 | --------- | ----------------- | ----- |
+| 7         | The Enthusiast    | 29    |
 | 8         | The Challenger    | 23    |
 | 2         | The Helper        | 19    |
 | 5         | The Investigator  | 18    |
@@ -119,5 +120,4 @@ See more about [PANAS Personality Types](/emotions#panas-personality-types) and 
 | 6         | The Loyalist      | 9     |
 | 9         | The Peacemaker    | 8     |
 
-See [full Enneagram
-](/static/igor-enneagram.pdf)
+See [full Enneagram](/static/igor-enneagram.pdf)
