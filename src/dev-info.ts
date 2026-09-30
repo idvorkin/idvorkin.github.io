@@ -36,20 +36,31 @@ export function isChangedPage(path: string, changed: string[]): boolean {
   return changed.some((p) => trimSlash(p) === trimSlash(path));
 }
 
-/** Banner button that toggles the rendered diff; the diff code loads only on first click. */
-function diffButton(prUrl?: string): HTMLButtonElement {
+// Icon names must exist in Font Awesome 5: the site's kit (_includes/head.html) is FA5, so FA6-only
+// names (fa-code-compare, fa-file-pen, fa-xmark) render as nothing. Tooltips go on a wrapper, never on
+// the <i>: the kit turns an icon's title into a <span class="sr-only">, which copied banner text includes.
+const icon = (name: string) => `<i class="fas ${name}"></i>`;
+
+/** Icon-only button that toggles the rendered diff; the diff code loads only on first click. */
+export function diffButton(prUrl?: string): HTMLButtonElement {
   const btn = document.createElement("button");
   btn.id = "dev-diff-toggle";
-  btn.innerHTML = '<i class="fas fa-code-compare"></i> Diff vs main';
+  btn.type = "button";
+  const render = (on: boolean) => {
+    btn.innerHTML = icon(on ? "fa-times" : "fa-exchange-alt");
+    btn.title = on ? "Exit diff" : "Diff vs main";
+    btn.setAttribute("aria-label", btn.title);
+    btn.setAttribute("aria-pressed", String(on));
+  };
   btn.style.cssText =
     "background:#238636;color:#fff;border:0;border-radius:4px;padding:1px 8px;font:inherit;cursor:pointer;";
   btn.onclick = async () => {
     btn.disabled = true;
     const { toggleRichDiff } = await import("./rich-diff");
-    const on = await toggleRichDiff(prUrl);
-    btn.innerHTML = on ? '<i class="fas fa-xmark"></i> Exit diff' : '<i class="fas fa-code-compare"></i> Diff vs main';
+    render(await toggleRichDiff(prUrl));
     btn.disabled = false;
   };
+  render(false);
   return btn;
 }
 
@@ -65,9 +76,12 @@ export function commentsButton(api: AnnotateApi): HTMLButtonElement {
   btn.type = "button";
   const render = () => {
     const on = api.enabled();
-    btn.textContent = on ? "💬 Comments on" : "💬 Comments";
+    btn.innerHTML = `${icon("fa-comment")} ${on ? "on" : "off"}`;
     btn.setAttribute("aria-pressed", String(on));
-    btn.title = on ? "Annotate mode is on: select text to comment. Click to turn off." : "Turn on annotate mode";
+    btn.setAttribute("aria-label", "Comments");
+    btn.title = on
+      ? "Comments on: select text to comment. Click to turn off."
+      : "Comments off: click to turn on annotate mode";
     btn.style.cssText = `background:${on ? "#0b5ed7" : "#444c56"};color:#fff;border:0;border-radius:4px;padding:1px 8px;font:inherit;cursor:pointer;`;
   };
   btn.onclick = () => {
@@ -115,7 +129,7 @@ export function initDevInfo(): void {
 
     let infoContent = "";
     if (branch) {
-      infoContent += `<i class="fas fa-code-branch" title="Branch"></i> <code style="background: black; color: white; padding: 2px 6px; border-radius: 3px;">${branch}</code>`;
+      infoContent += `<span title="Branch">${icon("fa-code-branch")} <code style="background: black; color: white; padding: 2px 6px; border-radius: 3px;">${branch}</code></span>`;
     }
 
     // Add PR link if available
@@ -130,7 +144,7 @@ export function initDevInfo(): void {
     if ((branch || pr) && port) {
       infoContent += " | ";
     }
-    infoContent += `<i class="fas fa-server"></i> Port: <code style="background: black; color: white; padding: 2px 6px; border-radius: 3px;">${port}</code>`;
+    infoContent += `<span title="Port">${icon("fa-plug")} <code style="background: black; color: white; padding: 2px 6px; border-radius: 3px;">${port}</code></span>`;
 
     const changed = getChangedPages();
     if (changed.length) {
@@ -140,7 +154,7 @@ export function initDevInfo(): void {
             `<a href="${encodeURI(p)}" style="color: #58a6ff; text-decoration: none;">${p.replace(/[<>&"]/g, "")}</a>`,
         )
         .join(" ");
-      infoContent += ` | <i class="fas fa-file-pen"></i> Changed: ${links}`;
+      infoContent += ` | ${icon("fa-edit")} Changed: ${links}`;
     }
 
     devInfoElement.innerHTML = infoContent;
