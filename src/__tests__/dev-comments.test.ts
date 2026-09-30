@@ -82,6 +82,8 @@ describe("dev banner Comments button", () => {
 
   it("starts off: no annotate UI, button not pressed", () => {
     expect(button().getAttribute("aria-pressed")).toBe("false");
+    expect(button().textContent?.trim()).toBe("off");
+    expect(button().getAttribute("aria-label")).toBe("Comments");
     expect(document.getElementById("blog-annot-pill")).toBeNull();
     expect(localStorage.getItem("blogAnnotate")).toBeNull();
   });
@@ -90,7 +92,7 @@ describe("dev banner Comments button", () => {
     button().click();
     expect(localStorage.getItem("blogAnnotate")).toBe("1");
     expect(button().getAttribute("aria-pressed")).toBe("true");
-    expect(button().textContent).toContain("Comments on");
+    expect(button().textContent?.trim()).toBe("on");
     expect(off()).toBe(false);
     expect(document.getElementById("blog-annot-pill")).not.toBeNull();
     expect(window.location.reload).not.toHaveBeenCalled();
