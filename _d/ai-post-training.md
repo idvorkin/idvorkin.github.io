@@ -150,11 +150,24 @@ The biggest demonstration ran RL on a base model with no copying step, graded on
 
 {% include post-training-anim.html name="rlvr" caption="Answer key: this shows who grades, not how the model learns. Every try is checked; ✓ tries are pushed up and ✗ tries down, by how far each sits from usual — and the learning rule underneath can be a forecaster (PPO) or a group average (GRPO)." %}
 
+A real training run doesn't pick one grader; it picks one per kind of task. Xiaomi open-sourced the environments behind its MiMo-V2.6 agent RL — about 7,800 tasks, each a sandbox with its own grader — and the five sets walk this section from answer key back to taste test:
+
+| Task set        | The try                                       | Who grades                                                                                                    |
+| --------------- | --------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Code (2,698)    | fix a real GitHub issue in the repo           | answer key: the tests run on its patch                                                                        |
+| Cyber (1,000)   | write an input that triggers a known bug      | answer key: the program must crash in the named function, with the named bug type                             |
+| Music (1,000)   | compose a piece, in text notation, to a brief | a script: play it as MIDI and score how far its rhythm, harmony and structure sit from human-written music    |
+| General (989)   | office and terminal chores                    | a checklist of yes/no items: code checks what it can, a judge model the rest                                  |
+| Web dev (2,093) | build a website from a one-line brief         | a judge model looks at screenshots of the group's sites and picks the better and worse ones — a curve, no key |
+
+The answer key runs wherever the task allows it, and the judge only shows up where nothing can be checked. Even the web-dev judge is fenced by code: a site whose JavaScript doesn't run gets zero before the judge sees it.
+
 <details markdown="1">
 <summary>Prior work</summary>
 
 - [Tülu 3](https://arxiv.org/abs/2411.15124) (AI2, 2024) coined RLVR: "only provide rewards when the model's generations are verified to be correct." Targets: GSM8K, MATH and IFEval-style constraints. The learning rule is PPO — "If the answer is verifiably correct, we provide reward of α, otherwise 0. We then train against this reward using PPO" — with the value model initialized from a reward model.
 - [DeepSeek-R1](https://arxiv.org/abs/2501.12948) (2025): R1-Zero — "we bypass the conventional supervised fine-tuning (SFT) phase before RL training" — ran GRPO on a base model with accuracy and format rewards; the paper's "aha moment" is the step where the model began saying "wait". It mixed English and Chinese mid-thought, so R1 adds a cold-start SFT stage and a language-consistency reward.
+- MiMo-V2.6 (Xiaomi, 2026) released environments: the [dataset](https://huggingface.co/datasets/XiaomiMiMo/MiMo-V2.6-RL-oss) (Apache-2.0; verifiers listed as "Executable tests", "Rule checks", "Rubric-based judging", "Visual grading"), the [Docker images](https://hub.docker.com/r/xiaomimimo/mimo-v2.6-rl-oss), the [training code](https://github.com/XiaomiMiMo/verl) with each grader in it, and the [agent harness](https://github.com/XiaomiMiMo/mimoagent). The [technical report](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/main/MiMo_V2_6_technical_report.pdf) (§4.2, §7; [blog](https://mimo.xiaomi.com/mimo-v2-6)): general tasks use "atomic, binary rubric items: code-based checks verify deterministic properties … while LLM-based checks assess more open-ended content"; GRPO on these environments from a 9B distilled model moved SWE-bench Verified from 61.1 to 66.2. The web-dev grader is a judge model voting good or bad over eight rounds of screenshots, their order rotated each round; the music scorer is "human-likeness scoring based on deviation from human music distributions." A community [conversion to the Harbor format](https://huggingface.co/collections/FineEnvs/mimo-v26-rl-in-harbor) has a [browser](https://huggingface.co/spaces/FineEnvs/MiMo-RL-Envs-Explorer) for reading individual tasks.
 
 </details>
 
