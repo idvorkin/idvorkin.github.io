@@ -172,6 +172,6 @@ Super fast, and great for being swarmed by kids at a playground. I keep one in t
 {% include repo_image_float_right.html src="balloon-mermaid.webp" alt="Balloon mermaid with orange hair, peach arms and a curled green tail, held up at arm's length" %}
 {% include repo_image_float_right.html src="balloon-care-bear.webp" alt="Small purple balloon bear with a marker-drawn face and CARE BEAR written on its belly, held in one hand" %}
 
-I can make the showpieces, like the mermaid [girls want](#but-boys-want-guns-and-girls-want-mermaids) or a full head-to-toe outfit, but in a crowd I mostly don't. One mermaid turns every other kid's balloon into [a sword next to a mega sword](#everyone-is-happy-with-their-sword-until-someone-else-gets-a-mega-sword), so when there's a line, everyone gets something small and simple, like this Care Bear.
+Making the harder stuff is the fun part, it's how I build mastery. The catch: once someone sees one, everyone wants it, and with a line that's a mess. Everyone is [happy with their sword until someone else gets a mega sword](#everyone-is-happy-with-their-sword-until-someone-else-gets-a-mega-sword). So when there's a line, everyone gets a [10-second dog](#impact-vs-effort).
 
 <div style="clear:both"></div>
