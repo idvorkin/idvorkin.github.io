@@ -41,7 +41,7 @@ I asked myself a simple question this week: where does my time actually go? I fi
 
 The "non-enjoyment" part comes from Arthur Brooks. Pleasure is the hit: alone, chemical, and gone when it's over. Enjoyment is pleasure plus people plus memory. A beer alone on the couch and a beer at a table with friends. Same beer. This bucket is the first one. How to turn the first into the second is in [my notes on his book](/build-life-you-want#pleasure-vs-enjoyment).
 
-The hours below are made up, not measured. Take hours out of tech and watch where they land.
+The hours below are made up, not measured. Take hours out of tech and watch where they land, then push one hour up and watch what it counts for.
 
 {% include time-allocation-buckets.html %}
 
@@ -71,9 +71,9 @@ Tech is where my compulsion lives. My life is better for it, so it counts as pas
 
 So "shrink tech" is the wrong instruction twice over. It cuts the passion instead of the addiction, and it hands the recovered hours to the phone.
 
-Even the Planned view in the chart, my target allocation, is unrealistic. It needs a plan for every freed hour and someone free to take it, and most days I don't have either.
+Even the Planned view in the chart, my target allocation, is unrealistic. It needs a plan for every freed hour and someone free to take it, and most days I don't have either. The lever I actually have is which way the hour moves.
 
-The better instruction is about direction. My energy moves between buckets all day. When it moves from the phone into tech, that's an upgrade: same screen, but I'm building instead of scrolling. It slides back just as easily, one tired tab at a time. When it moves from tech into work, that's the best case. I'm aligned, and I have a whole company behind me, so an hour counts for far more than it would on my own.
+My energy moves between buckets all day. When it moves from the phone into tech, that's an upgrade: same screen, but I'm building instead of scrolling. It slides back just as easily, one tired tab at a time. When it moves from tech into work, that's the best case. I'm aligned, and I have a whole company behind me, so an hour counts for far more than it would on my own. That's the push in the chart: the same hour, pointed up.
 
 There's a second cost I underrate, the [monoculture trap](/addiction#dont-narrow-to-one-passion-the-monoculture-trap). When I overfeed one passion, the others wither. Identity doesn't wait for me to come back. It decays. And when the one passion I've been feeding has a bad month, the others aren't in shape to carry me.
 

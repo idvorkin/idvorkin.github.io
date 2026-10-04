@@ -1,15 +1,17 @@
 {% comment %} Time-allocation buckets — five bucket rows for a 16 hour waking
-day, a "hours out of tech" slider, and a No plan / Planned switch. Planned hours
-go to relationships, identity and health until relationships hits "their time"
-and health hits "enough"; anything past a ceiling runs into consumption. With no
-plan, most of the freed hours go straight to consumption. Self-contained, no
-parameters, no libraries, no network. Edit the DATA block at the top of the
-script; the rows, the ceiling ticks and the leak line are all generated from it.
-Below the rows, a static "which way the hour moves" strip splits the Tech bucket
-into my own tech and work, and shows the direction energy flows (consumption →
-tech → work) and what an hour counts for. Plain HTML/CSS, no script. THE HOURS
-ARE ILLUSTRATIVE, NOT MEASURED: plausible round numbers for a 16 hour waking
-day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
+day drawn as one day with arrows between the buckets. Two moves: a "hours out of
+tech" slider with a No plan / Planned switch (Planned is the target allocation:
+freed hours go to relationships, identity and health until relationships hits
+"their time" and health hits "enough", and anything past a ceiling runs into
+consumption; with no plan most of it goes straight to consumption), and a "push
+the hour up / let it slide back" stepper that walks one hour up the ladder
+consumption -> my own tech -> work. The Tech bar is split into work and my own.
+The arrows in the left gutter are an SVG drawn from the computed flows every
+render; the ceiling notes, the "counts for" readouts and the summary line update
+in the same pass. Self-contained, no parameters, no libraries, no network. Edit
+the DATA block at the top of the script. THE HOURS ARE ILLUSTRATIVE, NOT
+MEASURED: plausible round numbers for a 16 hour waking day, not a log of
+anyone's week. Used by: _d/time-allocation.md {% endcomment %}
 
 <style>
   .tbk {
@@ -28,6 +30,8 @@ day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
     --tbk-consumption: #7c828a;
     --tbk-work: #1c4a63;
     --tbk-leak: #b8562f;
+
+    --tbk-gutter: 2.1rem;
 
     --tbk-mono:
       ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
@@ -63,7 +67,7 @@ day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
     font-size: 0.85rem;
     line-height: 1.45;
     color: var(--tbk-ink-soft);
-    max-width: 54ch;
+    max-width: 58ch;
   }
 
   .tbk-controls {
@@ -82,7 +86,8 @@ day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
     gap: 0.4rem 0.8rem;
   }
 
-  .tbk-slider label {
+  .tbk-slider label,
+  .tbk-lift-label {
     font-family: var(--tbk-mono);
     font-size: 0.72rem;
     letter-spacing: 0.04em;
@@ -110,7 +115,8 @@ day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
     overflow: hidden;
   }
 
-  .tbk-toggle button {
+  .tbk-toggle button,
+  .tbk-lift button {
     appearance: none;
     margin: 0;
     padding: 0.45rem 0.7rem;
@@ -132,7 +138,8 @@ day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
     border-left: 1px solid var(--tbk-ink);
   }
 
-  .tbk-toggle button:hover {
+  .tbk-toggle button:hover,
+  .tbk-lift button:hover:not(:disabled) {
     background: var(--tbk-panel);
   }
 
@@ -142,14 +149,100 @@ day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
   }
 
   .tbk-toggle button:focus-visible,
+  .tbk-lift button:focus-visible,
   .tbk-slider input:focus-visible {
     outline: 2px solid var(--tbk-tech);
     outline-offset: 2px;
   }
 
+  /* Point the hour: one hour walks the ladder phone -> my own tech -> work. */
+  .tbk-lift {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 0.8rem;
+    margin: 0.9rem 0 0;
+    padding: 0.7rem 0.8rem;
+    border: 1px solid var(--tbk-rule);
+    border-radius: 2px;
+  }
+
+  .tbk-lift button {
+    border: 1px solid var(--tbk-ink);
+    border-radius: 2px;
+    color: var(--tbk-ink);
+  }
+
+  .tbk-lift button[data-lift="1"] {
+    background: var(--tbk-tech);
+    border-color: var(--tbk-tech);
+    color: var(--tbk-paper);
+  }
+
+  .tbk-lift button[data-lift="1"]:hover:not(:disabled) {
+    background: var(--tbk-work);
+    border-color: var(--tbk-work);
+  }
+
+  .tbk-lift button:disabled {
+    opacity: 0.35;
+    cursor: default;
+  }
+
+  .tbk-lift-rung {
+    flex: 1 1 12rem;
+    font-size: 0.8rem;
+    line-height: 1.35;
+    color: var(--tbk-ink-soft);
+  }
+
+  .tbk-lift-rung b {
+    color: var(--tbk-ink);
+  }
+
+  .tbk-lift-rung[data-rung="2"] b {
+    color: var(--tbk-work);
+  }
+
+  /* The day: five bucket rows with an arrow gutter on the left. */
+  .tbk-day {
+    position: relative;
+    margin: 1.2rem 0 0;
+    padding-left: var(--tbk-gutter);
+  }
+
+  .tbk-arrows {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--tbk-gutter);
+    height: 100%;
+    overflow: visible;
+    pointer-events: none;
+  }
+
+  .tbk-arrow {
+    fill: none;
+    stroke-linecap: round;
+    animation: tbk-arrow-in 420ms ease-out;
+  }
+
+  .tbk-arrow.is-leak {
+    stroke-dasharray: 3 4;
+  }
+
+  @keyframes tbk-arrow-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
   .tbk-rows {
     list-style: none;
-    margin: 1.2rem 0 0;
+    margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -189,11 +282,23 @@ day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
     bottom: 0;
     width: 0;
     border-radius: 2px;
-    transition: width 380ms cubic-bezier(0.22, 0.68, 0.35, 1);
+    transition:
+      left 380ms cubic-bezier(0.22, 0.68, 0.35, 1),
+      width 380ms cubic-bezier(0.22, 0.68, 0.35, 1);
   }
 
-  /* The part of the bar that arrived from tech, drawn on top of the base so
-     the eye can see what moved. */
+  /* Tech is two segments: work on the left, my own tech after it. */
+  .tbk-fill-work {
+    background: var(--tbk-work);
+    border-radius: 2px 0 0 2px;
+  }
+
+  .tbk-fill-own {
+    border-radius: 0 2px 2px 0;
+  }
+
+  /* The part of the bar that just arrived, drawn on top of the base so the
+     eye can see what moved. */
   .tbk-gain {
     position: absolute;
     top: 0;
@@ -254,6 +359,11 @@ day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
     font-weight: 700;
   }
 
+  .tbk-row[data-id="consumption"].is-losing .tbk-delta {
+    color: var(--tbk-tech);
+    font-weight: 700;
+  }
+
   .tbk-note {
     grid-area: note;
     font-size: 0.7rem;
@@ -262,9 +372,18 @@ day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
     min-height: 1em;
   }
 
+  .tbk-note b {
+    font-weight: 700;
+    color: var(--tbk-ink-soft);
+  }
+
   .tbk-row.is-capped .tbk-note {
     color: var(--tbk-ink);
     font-weight: 700;
+  }
+
+  .tbk-row.is-lifted .tbk-note b {
+    color: var(--tbk-ink);
   }
 
   .tbk-leak {
@@ -281,8 +400,16 @@ day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
     border-left-color: var(--tbk-leak);
   }
 
+  .tbk-leak.is-lifting {
+    border-left-color: var(--tbk-tech);
+  }
+
   .tbk-leak b {
     color: var(--tbk-leak);
+  }
+
+  .tbk-leak b.is-up {
+    color: var(--tbk-tech);
   }
 
   .tbk-foot {
@@ -294,156 +421,9 @@ day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
     color: var(--tbk-ink-soft);
   }
 
-  /* Which way the hour moves: the inside of the Tech bucket. */
-  .tbk-flow {
-    margin: 1.2rem 0 0;
-    padding: 0.9rem 0.9rem 0.8rem;
-    border: 1px solid var(--tbk-rule);
-    border-radius: 2px;
-  }
-
-  .tbk-flow-title {
-    margin: 0;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.25;
-  }
-
-  .tbk-flow-sub {
-    margin: 0.3rem 0 0;
-    font-size: 0.8rem;
-    line-height: 1.45;
-    color: var(--tbk-ink-soft);
-    max-width: 60ch;
-  }
-
-  .tbk-flow-steps {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr auto 1fr;
-    align-items: stretch;
-    gap: 0.5rem;
-    margin: 0.9rem 0 0;
-  }
-
-  .tbk-flow-node {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    padding: 0.55rem 0.6rem;
-    background: var(--tbk-panel);
-    border-top: 3px solid var(--tbk-consumption);
-    border-radius: 2px;
-  }
-
-  .tbk-flow-node[data-id="tech"] {
-    border-top-color: var(--tbk-tech);
-  }
-
-  .tbk-flow-node[data-id="work"] {
-    border-top-color: var(--tbk-work);
-  }
-
-  .tbk-flow-name {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 0.9rem;
-    font-weight: 700;
-    line-height: 1.2;
-  }
-
-  .tbk-flow-what {
-    font-size: 0.72rem;
-    line-height: 1.3;
-    color: var(--tbk-ink-soft);
-  }
-
-  .tbk-flow-worth {
-    display: block;
-    height: 0.6rem;
-    margin-top: auto;
-    background: var(--tbk-paper);
-    border-radius: 2px;
-    overflow: hidden;
-  }
-
-  .tbk-flow-worth span {
-    display: block;
-    height: 100%;
-  }
-
-  .tbk-flow-node[data-id="consumption"] .tbk-flow-worth span {
-    width: 5%;
-    background: var(--tbk-consumption);
-  }
-
-  .tbk-flow-node[data-id="tech"] .tbk-flow-worth span {
-    width: 30%;
-    background: var(--tbk-tech);
-  }
-
-  .tbk-flow-node[data-id="work"] .tbk-flow-worth span {
-    width: 100%;
-    background: var(--tbk-work);
-  }
-
-  .tbk-flow-count {
-    font-family: var(--tbk-mono);
-    font-size: 0.66rem;
-    color: var(--tbk-ink);
-  }
-
-  .tbk-flow-arrow {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-width: 3.6rem;
-    font-family: var(--tbk-mono);
-    font-size: 0.62rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--tbk-ink-soft);
-    text-align: center;
-  }
-
-  .tbk-flow-arrow::after {
-    content: "\2192";
-    font-size: 1.3rem;
-    line-height: 1;
-    color: var(--tbk-ink);
-  }
-
-  .tbk-flow-back {
-    margin: 0.6rem 0 0;
-    font-size: 0.75rem;
-    line-height: 1.4;
-    color: var(--tbk-ink-soft);
-  }
-
-  .tbk-flow-back::before {
-    content: "\2190  ";
-    white-space: pre;
-    font-family: var(--tbk-mono);
-    color: var(--tbk-leak);
-  }
-
-  @media (max-width: 640px) {
-    .tbk-flow-steps {
-      grid-template-columns: 1fr;
-      gap: 0.3rem;
-    }
-    .tbk-flow-arrow {
-      flex-direction: row;
-      gap: 0.4rem;
-    }
-    .tbk-flow-arrow::after {
-      content: "\2193";
-      font-size: 1.1rem;
-    }
-  }
-
   @media (max-width: 640px) {
     .tbk {
+      --tbk-gutter: 1.7rem;
       padding: 1.1rem 1rem 1rem;
     }
     .tbk-toggle {
@@ -457,6 +437,19 @@ day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
     }
     .tbk-slider input {
       flex: 1 1 100%;
+    }
+    .tbk-lift {
+      padding: 0.6rem 0.65rem;
+    }
+    .tbk-lift-rung {
+      flex: 1 1 100%;
+      order: -1;
+    }
+    .tbk-lift button {
+      flex: 1 1 0;
+      padding: 0.5rem 0.3rem;
+      font-size: 0.62rem;
+      letter-spacing: 0.03em;
     }
     .tbk-row {
       grid-template-columns: 1fr 3rem 3.2rem;
@@ -474,18 +467,22 @@ day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
   @media (prefers-reduced-motion: reduce) {
     .tbk-fill,
     .tbk-gain,
-    .tbk-toggle button {
+    .tbk-toggle button,
+    .tbk-lift button {
       transition: none;
+    }
+    .tbk-arrow {
+      animation: none;
     }
   }
 </style>
 
 <div class="tbk" id="tbk-buckets">
-  <h3 class="tbk-title">Take hours out of tech</h3>
+  <h3 class="tbk-title">Move an hour</h3>
   <p class="tbk-sub">
-    Sixteen waking hours, made up to show the shape. Move the slider, then
-    switch between an hour with no plan and an hour with one. Planned is my
-    target.
+    Sixteen waking hours, made up to show the shape. Take hours out of tech and
+    watch where they land; Planned is my target. Then push one hour up the
+    screen, from the phone into my own tech into work, or let it slide back.
   </p>
 
   <div class="tbk-controls">
@@ -506,52 +503,28 @@ day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
     </div>
   </div>
 
-  <ul class="tbk-rows"></ul>
+  <div class="tbk-lift" role="group" aria-label="Point the hour">
+    <span class="tbk-lift-label">Point the hour</span>
+    <button type="button" data-lift="-1">&#8595; Let it slide back</button>
+    <span class="tbk-lift-rung" aria-live="polite" data-rung="0"></span>
+    <button type="button" data-lift="1">Push the hour up &#8593;</button>
+  </div>
+
+  <div class="tbk-day">
+    <svg class="tbk-arrows" aria-hidden="true" focusable="false"></svg>
+    <ul class="tbk-rows"></ul>
+  </div>
 
   <p class="tbk-leak" aria-live="polite"></p>
 
-  <div class="tbk-flow" role="group" aria-labelledby="tbk-flow-title">
-    <h4 class="tbk-flow-title" id="tbk-flow-title">Which way the hour moves</h4>
-    <p class="tbk-flow-sub">
-      Hitting the target is hard. Changing direction isn't. Here the Tech bucket
-      splits in two, my own tech and work, and the same screen hour counts for
-      very different amounts depending on where it points.
-    </p>
-    <div class="tbk-flow-steps">
-      <div class="tbk-flow-node" data-id="consumption">
-        <span class="tbk-flow-name">Consumption</span>
-        <span class="tbk-flow-what"
-          >The scroll. Same screen, nothing made.</span
-        >
-        <span class="tbk-flow-worth" aria-hidden="true"><span></span></span>
-        <span class="tbk-flow-count">counts for ~0</span>
-      </div>
-      <span class="tbk-flow-arrow">upgrade</span>
-      <div class="tbk-flow-node" data-id="tech">
-        <span class="tbk-flow-name">Tech, my own</span>
-        <span class="tbk-flow-what">Building instead of scrolling.</span>
-        <span class="tbk-flow-worth" aria-hidden="true"><span></span></span>
-        <span class="tbk-flow-count">counts for 1 hour</span>
-      </div>
-      <span class="tbk-flow-arrow">best case</span>
-      <div class="tbk-flow-node" data-id="work">
-        <span class="tbk-flow-name">Tech, at work</span>
-        <span class="tbk-flow-what">Aligned, with a company behind me.</span>
-        <span class="tbk-flow-worth" aria-hidden="true"><span></span></span>
-        <span class="tbk-flow-count">counts for far more</span>
-      </div>
-    </div>
-    <p class="tbk-flow-back">
-      It slides back just as easily, one tired tab at a time.
-    </p>
-  </div>
-
   <p class="tbk-foot">
-    The dashed tick is a ceiling. Relationships stops at whatever time the other
-    people actually have. Health stops at enough. Planned hours that run past a
-    ceiling do not disappear, they land in consumption. Hours with no plan
-    mostly go there directly. Numbers, and how much an hour counts for, are made
-    up, not measured.
+    The arrows show where the last move went. The dashed tick is a ceiling:
+    Relationships stops at whatever time the other people actually have, Health
+    stops at enough. Planned hours that run past a ceiling do not disappear,
+    they land in consumption, and hours with no plan mostly go there directly.
+    Tech is two segments, work and my own, because the same screen hour counts
+    for very different amounts depending on where it points. Numbers, and how
+    much an hour counts for, are made up, not measured.
   </p>
 
   <noscript>
@@ -560,7 +533,9 @@ day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
       tech is more than half the waking day, and hours taken out of tech mostly
       land in consumption. Without a plan they go there directly. With a plan
       they still spill there once relationships hits the time other people have
-      and health hits enough.
+      and health hits enough. The lever that works is direction: an hour pushed
+      from the phone into my own tech counts for an hour instead of nothing, and
+      the same hour pointed at work counts for far more.
     </p>
   </noscript>
 </div>
@@ -568,9 +543,9 @@ day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
 {% raw %}
 <script>
   (function () {
-    // ---- Edit here. The rows, the ceiling ticks and the leak line all come
-    // from this block. Hours are ILLUSTRATIVE: plausible round numbers for a
-    // 16 hour waking day, not a measurement of anyone's week. ----
+    // ---- Edit here. The rows, the ceiling ticks, the arrows and the summary
+    // line all come from this block. Hours are ILLUSTRATIVE: plausible round
+    // numbers for a 16 hour waking day, not a measurement of anyone's week. ----
     var SCALE_HOURS = 10; // the bar is full at this many hours
     var MAX_SHRINK = 4;
 
@@ -590,6 +565,10 @@ day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
       consumption: 3,
     };
 
+    // Tech is work plus my own tech. Hours taken out of tech come out of my
+    // own tech first.
+    var WORK_HOURS = 5;
+
     // Ceilings. relationships = the most time the other people are actually
     // available for. health = where more hours stop buying more health.
     var CAPS = { relationships: 3.5, health: 1.5 };
@@ -605,18 +584,32 @@ day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
         share: { relationships: 0.4, identity: 0.4, health: 0.2 },
       },
     };
+
+    // The ladder one hour climbs when I point it, and what it counts for on
+    // each rung.
+    var RUNGS = [
+      { where: "in the phone", counts: "~0" },
+      { where: "in my own tech", counts: "1 hour" },
+      { where: "at work", counts: "far more" },
+    ];
     // ---- End of editable block. ----
 
     var root = document.getElementById("tbk-buckets");
     if (!root) return;
 
+    var dayEl = root.querySelector(".tbk-day");
     var rowsEl = root.querySelector(".tbk-rows");
+    var arrowsEl = root.querySelector(".tbk-arrows");
     var slider = root.querySelector("#tbk-shrink");
     var sliderOut = root.querySelector("#tbk-shrink-out");
     var leakEl = root.querySelector(".tbk-leak");
+    var rungEl = root.querySelector(".tbk-lift-rung");
+    var liftButtons = root.querySelectorAll("[data-lift]");
 
     var plan = "none";
     var shrink = 0;
+    var lift = 0; // which rung the hour is on
+    var lastLift = null; // "up" | "back" | null, for the summary and the arrow
 
     function round1(v) {
       return Math.round(v * 10) / 10;
@@ -641,29 +634,51 @@ day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
       var share = PLANS[plan].share;
       var hours = {};
       var gained = {};
+      var flows = [];
       BUCKETS.forEach(function (b) {
         hours[b.id] = BASE[b.id];
         gained[b.id] = 0;
       });
+      var work = WORK_HOURS;
+      var own = BASE.tech - WORK_HOURS;
 
       var moved = Math.min(shrink, hours.tech);
       hours.tech -= moved;
+      own -= Math.min(moved, own);
 
       var spill = 0;
       BUCKETS.forEach(function (b) {
         var s = share[b.id] || 0;
         if (!s) return;
         var add = moved * s;
+        var over = 0;
         var cap = CAPS[b.id];
         if (cap != null && hours[b.id] + add > cap) {
-          spill += hours[b.id] + add - cap;
+          over = hours[b.id] + add - cap;
           add = cap - hours[b.id];
+        }
+        if (add > 0) flows.push({ from: "tech", to: b.id, hours: add });
+        if (over > 0) {
+          flows.push({ from: b.id, to: "consumption", hours: over });
+          spill += over;
         }
         hours[b.id] += add;
         gained[b.id] += add;
       });
       hours.consumption += spill;
       gained.consumption += spill;
+
+      // One hour on the ladder.
+      if (lift >= 1) {
+        hours.consumption -= 1;
+        hours.tech += 1;
+        if (lift === 1) own += 1;
+        else work += 1;
+        flows.push({ from: "consumption", to: "tech", hours: 1, up: true });
+      }
+      if (lastLift === "back" && lift === 0) {
+        flows.push({ from: "tech", to: "consumption", hours: 1, back: true });
+      }
 
       BUCKETS.forEach(function (b) {
         hours[b.id] = round1(hours[b.id]);
@@ -672,6 +687,9 @@ day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
       return {
         hours: hours,
         gained: gained,
+        flows: flows,
+        work: round1(work),
+        own: round1(own),
         moved: moved,
         spill: round1(spill),
       };
@@ -692,8 +710,15 @@ day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
       track.className = "tbk-track";
       track.setAttribute("aria-hidden", "true");
 
+      var fillWork = null;
+      if (b.id === "tech") {
+        fillWork = document.createElement("span");
+        fillWork.className = "tbk-fill tbk-fill-work";
+        track.appendChild(fillWork);
+      }
+
       var fill = document.createElement("span");
-      fill.className = "tbk-fill";
+      fill.className = "tbk-fill" + (b.id === "tech" ? " tbk-fill-own" : "");
       fill.style.backgroundColor = "var(--tbk-" + b.id + ")";
       track.appendChild(fill);
 
@@ -727,13 +752,117 @@ day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
 
       rows[b.id] = {
         li: li,
+        track: track,
         fill: fill,
+        fillWork: fillWork,
         gain: gain,
         hrs: hrs,
         delta: delta,
         note: note,
       };
     });
+
+    function setNote(el, parts) {
+      el.innerHTML = "";
+      parts.forEach(function (p) {
+        if (typeof p === "string") {
+          el.appendChild(document.createTextNode(p));
+        } else {
+          var b = document.createElement("b");
+          b.textContent = p.b;
+          el.appendChild(b);
+        }
+      });
+    }
+
+    // ---- Arrows between the buckets, drawn in the gutter. ----
+    var SVG_NS = "http://www.w3.org/2000/svg";
+    var pendingFlows = [];
+
+    function svgEl(name, attrs) {
+      var el = document.createElementNS(SVG_NS, name);
+      Object.keys(attrs).forEach(function (k) {
+        el.setAttribute(k, attrs[k]);
+      });
+      return el;
+    }
+
+    function drawArrows() {
+      while (arrowsEl.firstChild) arrowsEl.removeChild(arrowsEl.firstChild);
+      var dayRect = dayEl.getBoundingClientRect();
+      var w = arrowsEl.getBoundingClientRect().width || 32;
+      var h = dayRect.height;
+      if (!w || !h) return;
+      arrowsEl.setAttribute("viewBox", "0 0 " + w + " " + h);
+      arrowsEl.setAttribute("width", w);
+      arrowsEl.setAttribute("height", h);
+
+      var defs = svgEl("defs", {});
+      arrowsEl.appendChild(defs);
+      var markers = {};
+      function marker(color) {
+        if (markers[color]) return markers[color];
+        var id = "tbk-head-" + Object.keys(markers).length;
+        var m = svgEl("marker", {
+          id: id,
+          viewBox: "0 0 10 10",
+          refX: "8",
+          refY: "5",
+          markerWidth: "4",
+          markerHeight: "4",
+          orient: "auto",
+          markerUnits: "strokeWidth",
+        });
+        var p = svgEl("path", { d: "M0,1 L9,5 L0,9 Z" });
+        p.style.fill = color;
+        m.appendChild(p);
+        defs.appendChild(m);
+        markers[color] = "url(#" + id + ")";
+        return markers[color];
+      }
+
+      function centerY(id) {
+        var r = rows[id].track.getBoundingClientRect();
+        return r.top - dayRect.top + r.height / 2;
+      }
+
+      // Lanes: planned flows on the left, leaks in the middle, the pointed
+      // hour on the right. Several arrows in one lane fan out a little.
+      var laneCount = { plan: 0, leak: 0, up: 0 };
+      var laneX = { plan: w * 0.28, leak: w * 0.55, up: w * 0.82 };
+      pendingFlows.forEach(function (f) {
+        var lane =
+          f.up || f.back ? "up" : f.to === "consumption" ? "leak" : "plan";
+        var x = laneX[lane] + laneCount[lane] * 3;
+        laneCount[lane] += 1;
+        var color = f.up ? "var(--tbk-tech)" : "var(--tbk-" + f.to + ")";
+        var y1 = centerY(f.from);
+        var y2 = centerY(f.to);
+        var dir = y2 > y1 ? 1 : -1;
+        var sw = Math.max(1.5, Math.min(5, f.hours * 2.2));
+        var head = sw * 3.2;
+        var path = svgEl("path", {
+          class: "tbk-arrow" + (f.to === "consumption" ? " is-leak" : ""),
+          d: "M" + x + "," + y1 + " L" + x + "," + (y2 - dir * head),
+          "stroke-width": sw,
+          "marker-end": marker(color),
+        });
+        path.style.stroke = color;
+        var title = document.createElementNS(SVG_NS, "title");
+        title.textContent = fmt(f.hours) + " from " + f.from + " to " + f.to;
+        path.appendChild(title);
+        arrowsEl.appendChild(path);
+        var dot = svgEl("circle", {
+          class: "tbk-arrow",
+          cx: x,
+          cy: y1,
+          r: Math.max(2, sw * 0.9),
+          stroke: "none",
+        });
+        dot.style.fill = color;
+        arrowsEl.appendChild(dot);
+      });
+    }
 
     function render() {
       var state = compute();
@@ -745,9 +874,25 @@ day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
         var h = hours[b.id];
         var g = gained[b.id];
 
-        r.fill.style.width = pct(h);
-        r.gain.style.left = pct(h - g);
-        r.gain.style.width = pct(g);
+        if (b.id === "tech") {
+          r.fillWork.style.width = pct(state.work);
+          r.fill.style.left = pct(state.work);
+          r.fill.style.width = pct(state.own);
+          // The pointed hour sits at the end of whichever segment it is in.
+          if (lift === 1) {
+            r.gain.style.left = pct(state.work + state.own - 1);
+            r.gain.style.width = pct(1);
+          } else if (lift === 2) {
+            r.gain.style.left = pct(state.work - 1);
+            r.gain.style.width = pct(1);
+          } else {
+            r.gain.style.width = "0";
+          }
+        } else {
+          r.fill.style.width = pct(h);
+          r.gain.style.left = pct(h - g);
+          r.gain.style.width = pct(g);
+        }
         r.hrs.textContent = fmt(h);
         r.delta.textContent = signed(h - BASE[b.id]);
 
@@ -755,8 +900,26 @@ day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
         var atCap = cap != null && h >= cap - 0.001;
         r.li.classList.toggle("is-capped", atCap);
         r.li.classList.toggle("is-gaining", g > 0);
+        r.li.classList.toggle("is-losing", h < BASE[b.id]);
+        r.li.classList.toggle("is-lifted", b.id === "tech" && lift > 0);
 
-        if (cap == null) {
+        if (b.id === "tech") {
+          setNote(r.note, [
+            "work " + fmt(state.work) + " · my own " + fmt(state.own) + ". ",
+            lift === 2
+              ? { b: "An hour at work counts for far more" }
+              : "An hour at work counts for far more",
+            ", ",
+            lift === 1 ? { b: "my own counts for 1" } : "my own counts for 1",
+            ".",
+          ]);
+        } else if (b.id === "consumption") {
+          setNote(r.note, [
+            lift === 0
+              ? { b: "an hour here counts for ~0" }
+              : "an hour here counts for ~0",
+          ]);
+        } else if (cap == null) {
           r.note.textContent = "";
         } else if (b.id === "relationships") {
           r.note.textContent = atCap
@@ -783,42 +946,95 @@ day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
         shrink === 1 ? "1 hour" : shrink + " hours"
       );
 
+      // The stepper.
+      var rung = RUNGS[lift];
+      rungEl.dataset.rung = String(lift);
+      setNote(rungEl, [
+        "The hour is ",
+        { b: rung.where },
+        " · counts for ",
+        { b: rung.counts },
+      ]);
+      liftButtons.forEach(function (btn) {
+        var step = Number(btn.dataset.lift);
+        btn.disabled = lift + step < 0 || lift + step >= RUNGS.length;
+      });
+
+      // The summary line.
+      var parts = [];
       var toPhone = gained.consumption;
-      var text;
-      if (state.moved === 0) {
-        text = "Nothing moved yet. Slide to take hours out of tech.";
-      } else if (plan === "none") {
-        text =
-          fmt(state.moved) +
-          " out of tech with no plan: " +
-          fmt(toPhone) +
-          " went to the phone before anything got decided.";
-      } else if (state.spill > 0) {
-        text =
-          fmt(state.moved) +
-          " out of tech with a plan: " +
-          fmt(state.spill) +
-          " ran past a ceiling and went to the phone anyway.";
-      } else {
-        text =
-          fmt(state.moved) +
-          " out of tech with a plan, and it all landed where it was sent.";
-      }
-      leakEl.innerHTML = "";
-      var strong = toPhone > 0;
-      leakEl.classList.toggle("is-leaking", strong);
-      if (strong) {
-        var m = text.match(/^(.*?)(\d+(?:\.\d)?h)( went| ran)(.*)$/);
-        if (m) {
-          leakEl.appendChild(document.createTextNode(m[1]));
-          var b = document.createElement("b");
-          b.textContent = m[2];
-          leakEl.appendChild(b);
-          leakEl.appendChild(document.createTextNode(m[3] + m[4]));
-          return;
+      if (state.moved > 0) {
+        if (plan === "none") {
+          parts.push(
+            fmt(state.moved) + " out of tech with no plan: ",
+            { b: fmt(toPhone) },
+            " went to the phone before anything got decided."
+          );
+        } else if (state.spill > 0) {
+          parts.push(
+            fmt(state.moved) + " out of tech with a plan: ",
+            { b: fmt(state.spill) },
+            " ran past a ceiling and went to the phone anyway."
+          );
+        } else {
+          parts.push(
+            fmt(state.moved) +
+              " out of tech with a plan, and it all landed where it was sent."
+          );
         }
       }
-      leakEl.textContent = text;
+      if (lastLift === "up" && lift === 1) {
+        parts.push(
+          parts.length ? " " : "",
+          { b: "One hour pushed up", up: true },
+          " out of the phone into my own tech: it counts for an hour now instead of ~0."
+        );
+      } else if (lastLift === "up" && lift === 2) {
+        parts.push(
+          parts.length ? " " : "",
+          { b: "Pushed again, into work", up: true },
+          ": the same screen hour now counts for far more."
+        );
+      } else if (lastLift === "back" && lift === 1) {
+        parts.push(
+          parts.length ? " " : "",
+          { b: "It slid back" },
+          " from work into my own tech. Still an hour, no longer far more."
+        );
+      } else if (lastLift === "back" && lift === 0) {
+        parts.push(
+          parts.length ? " " : "",
+          { b: "It slid back to the phone" },
+          ", one tired tab at a time. Counts for ~0 again."
+        );
+      }
+      if (!parts.length) {
+        parts.push(
+          "Nothing moved yet. Slide to take hours out of tech, or push the hour up."
+        );
+      }
+      leakEl.innerHTML = "";
+      parts.forEach(function (p) {
+        if (typeof p === "string") {
+          leakEl.appendChild(document.createTextNode(p));
+        } else {
+          var b = document.createElement("b");
+          b.textContent = p.b;
+          if (p.up) b.className = "is-up";
+          leakEl.appendChild(b);
+        }
+      });
+      leakEl.classList.toggle(
+        "is-leaking",
+        toPhone > 0 || (lastLift === "back" && lift === 0)
+      );
+      leakEl.classList.toggle(
+        "is-lifting",
+        !(toPhone > 0 || (lastLift === "back" && lift === 0)) && lift > 0
+      );
+
+      pendingFlows = state.flows;
+      window.requestAnimationFrame(drawArrows);
     }
 
     root.querySelectorAll("[data-plan]").forEach(function (btn) {
@@ -832,11 +1048,31 @@ day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
       });
     });
 
+    liftButtons.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var step = Number(btn.dataset.lift);
+        var next = lift + step;
+        if (next < 0 || next >= RUNGS.length) return;
+        lift = next;
+        lastLift = step > 0 ? "up" : "back";
+        render();
+      });
+    });
+
     slider.max = String(MAX_SHRINK);
     slider.addEventListener("input", function () {
       shrink = Number(slider.value);
       render();
     });
+
+    if (window.ResizeObserver) {
+      new ResizeObserver(function () {
+        drawArrows();
+      }).observe(dayEl);
+    } else {
+      window.addEventListener("resize", drawArrows);
+    }
+    window.addEventListener("load", drawArrows);
 
     render();
   })();
