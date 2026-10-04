@@ -8,10 +8,6 @@ permalink: /thinking-about-suicide
 
 Suicide is a brain attack, just like a heart attack. If your chest was crushing, you wouldn't sit alone hoping it clears up. You'd call someone, because it might kill you. Brain attacks are exactly the same. If you're thinking about suicide, or the thought has even crossed your mind, call someone right now.
 
-{% include ai-slop.html percent="60" %}
-
-The good news: this is treatable. There are therapies built for exactly this, and they work. First, though:
-
 ## If you know me, call me. You're not a bother.
 
 Here's the deal. You might think you'd be a bother. That reaching out will make someone feel bad. I've got great news for you: I'm like a robot at my core. You can't hurt me, you won't upset me, and I won't feel bad. And if I get to help, I'll feel absolutely incredible. There's no greater gift you could give me.
