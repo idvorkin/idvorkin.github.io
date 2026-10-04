@@ -11,7 +11,7 @@ tags:
   - balance
 ---
 
-I asked myself a simple question this week: where does my time actually go? I figured the answer would be work versus family. It wasn't. It's four buckets I fill on purpose, and a fifth one I'd never named that gets whatever the other four leave behind.
+I asked myself a simple question this week: am I spending too much time at work and on tech? To answer it I had to see where my time actually goes. It's four buckets I fill on purpose, and a fifth one I'd never named that gets whatever the other four leave behind.
 
 {% include ai-slop.html percent="70" %}
 
@@ -31,9 +31,9 @@ I asked myself a simple question this week: where does my time actually go? I fi
 
 **Tech.** Work, home projects, the AI tools I build for myself, and deep thinking, which for me means writing posts like this one. Every one of those is me and a screen.
 
-**Identity (non-tech).** [Magic](/magic), biking, [ballooning](/balloon), the [joy](/joy) stuff. Here I'm being someone instead of shipping something, which is [what a good hobby is for](/hobby). Habits don't go here. Habits are the machinery that gets me to the mat. If I file magic under habits, "maker of smiles and wonder" turns into a maintenance task.
+**Identity (non-tech).** [Magic](/magic), biking, [ballooning](/balloon), the [joy](/joy) stuff. Here I'm being someone instead of shipping something, which is [what a good hobby is for](/hobby).
 
-**Health.** Physical, emotional, cognitive. I've [written up the dimensions](/health). For this post they're one bucket.
+**Health.** Physical, emotional, cognitive. I've [written up the dimensions](/health). For this post they're one bucket. My habits live here too, the mobility and meditation that keep everything else running. They're the ones getting lost. They need doing, but like the rest of health they have a cap: once they're done, more doesn't pay.
 
 **Relationships.** Family and friends. It gets its own bucket instead of hiding under identity. Arthur Brooks says a happy life has four pillars: faith, family, friendship, and work. Two of those are other people.
 
