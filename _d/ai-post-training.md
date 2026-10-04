@@ -58,7 +58,7 @@ Every method after the first takes an answer from the model, grades it, and nudg
 1. **Who grades the answer?** Nobody — the model copies an expert's answers (SFT), step one of every recipe. Otherwise: people (RLHF), an AI with a rulebook (RLAIF), or an answer key (RLVR).
 2. **What should the model change, based on this one try?** A try is one noisy trial — the model could have written a hundred other answers — so the only fair adjustment is by how much this try beat or missed what the model usually does there. That is the **surprise**: the grade minus the usual grade; a C student bringing home a B is good news, the same B from a straight-A student bad news. So the derived question is _what's usual?_, and the methods differ in how they answer it: a forecaster predicts it (PPO), the average of a group of tries stands in for it (GRPO), or it's never needed because you learn straight from A-over-B pairs (DPO).
 
-Which weights move — all of them, in every recipe here, or a clip-on adapter when you're on one GPU — is [its own post](/beyond-prompts). Copy the expert has no grade, so no column. Every other method is a cell:
+Which weights move is a separate question this post skips: every recipe here moves all of them. Copy the expert has no grade, so no column. Every other method is a cell:
 
 | Who grades ↓ · What's usual →                   | Forecaster (PPO)             | Group average (GRPO)                             | Not needed: pairs (DPO)                    |
 | ----------------------------------------------- | ---------------------------- | ------------------------------------------------ | ------------------------------------------ |
