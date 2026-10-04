@@ -31,7 +31,7 @@ Most of my waking hours happen on a screen, and I used to count them as one lump
 
 Same chair, same screen. The difference is which way the hour points.
 
-**The phone.** The scroll, the autoplay, the forty minutes I can't account for. Arthur Brooks would call it pleasure, not enjoyment: the hit, alone, and gone when it's over. A little is fine. It rarely stays a little, and then it's procrastination, the thing I do instead of [the thing I'm avoiding](/frog). This is where my [addiction](/addiction) lives, with [TikTok](/addiction#tiktok-thought-escape) at the top.
+**The phone.** The scroll, the autoplay, the forty minutes I can't account for. Arthur Brooks would call it [pleasure, not enjoyment](/build-life-you-want#pleasure-vs-enjoyment): the hit, alone, and gone when it's over. A little is fine. It rarely stays a little, and then it's procrastination, the thing I do instead of [the thing I'm avoiding](/frog). This is where my [addiction](/addiction) lives, with [TikTok](/addiction#tiktok-thought-escape) at the top.
 
 **Tech.** The tools I build for myself, the posts I write, the thinking I do by typing. Same screen, but I'm building instead of scrolling. This is where my compulsion lives, and my life is better for it, so it counts as passion. Something exists at the end of the hour.
 
