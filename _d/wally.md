@@ -41,7 +41,7 @@ This is a survey post — the thinking is fresh, names are provisional, and ther
 
 ## Yegge's Gas Town in one paragraph
 
-If you haven't read it, go read [Welcome to Gas City](https://steve-yegge.medium.com/welcome-to-gas-city-57f564bb3607) and [Gas Town: from Clown Show to v1.0](https://steve-yegge.medium.com/gas-town-from-clown-show-to-v1-0-c239d9a407ec). Short version: a long-lived **Mayor** agent runs the show, dispatching short-lived **Polecat** workers that do one job and disappear. The Mayor keeps state in beads (a dependency-aware issue tracker) and Dolt (a versioned database). The whole thing is the [MEOW stack](/how-igor-chops#the-8-stages-of-ai-coding) — Mayor, Engineers (Polecats), Oracle, Workers — and it's a real pattern, not a thought experiment. I'm running a version of it. If you want the why before the org-chart — what a city buys over a smarter prompt — start with [Why Gas City?](/why-gas-city).
+If you haven't read it, go read [Welcome to Gas City](https://steve-yegge.medium.com/welcome-to-gas-city-57f564bb3607) and [Gas Town: from Clown Show to v1.0](https://steve-yegge.medium.com/gas-town-from-clown-show-to-v1-0-c239d9a407ec). Short version: a long-lived **Mayor** agent runs the show, dispatching short-lived **Polecat** workers that do one job and disappear. The Mayor keeps state in beads (a dependency-aware issue tracker) and Dolt (a versioned database). The whole thing is the [MEOW stack](/how-igor-chops#the-8-stages-of-ai-coding), Molecular Expression of Work, and it's a real pattern, not a thought experiment. I'm running a version of it. If you want the why before the org-chart — what a city buys over a smarter prompt — start with [Gas City](/gas-city).
 
 ## From Mad Max to org-chart
 
@@ -80,7 +80,7 @@ This is the part I think people get wrong about themselves.
 
 When you start running agents, it _feels_ like you're the Mayor. You're the one giving orders, deciding what gets built, picking what to ship. So you call yourself the orchestrator. But that's not actually what's happening — or at least it's not what _should_ be happening.
 
-In FAANG vocabulary, **I'm the M2**. [Wally](/igors-claws) — the AI orchestrator — is the M1. Wally has staff: cloud teammates that run alongside him, do research, draft work, hold context. Wally has Odallies: ephemeral ICs that go off and do specialized work and come back with results. _Wally_ is the manager. I'm the manager of managers.
+In FAANG vocabulary, **I'm the M2**. [Wally](/igors-claws) — the [AI orchestrator](/ai-orchestrator) — is the M1. Wally has staff: cloud teammates that run alongside him, do research, draft work, hold context. Wally has Odallies: ephemeral ICs that go off and do specialized work and come back with results. _Wally_ is the manager. I'm the manager of managers.
 
 What's an M2 actually for? Direction and review. I tell Wally what we're trying to accomplish. I review the output. I make the calls he can't — strategic shifts, taste judgments, hiring decisions about what new tools to bring in. I do _not_ try to dispatch every IC myself. The moment I try, I become the bottleneck — exactly the bottleneck FAANG learned to design managers around.
 

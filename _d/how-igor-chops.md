@@ -163,7 +163,7 @@ This diagram perfectly captures the evolution I've lived through. Let me break d
 
 1. **Specialized Tools** - Different agents have different capabilities. One handles tests, another docs, another deployment. You're orchestrating specialists, not generalists. The [optimal number of agents](#what-im-still-figuring-out) becomes critical.
 
-1. **Orchestrated System** - This is the vision: a central dashboard managing dozens of specialized agents. The [Agent Dashboard](#the-future-multi-agent-dashboard) is an early step toward this. You're no longer coordinating individual agents - you're managing the system that coordinates them.
+1. **Orchestrated System** - This is the vision: a central dashboard managing dozens of specialized agents. The [Agent Dashboard](#the-future-multi-agent-dashboard) is an early step toward this. You're no longer coordinating individual agents - you're managing the system that coordinates them. I drew the bricks that system is made of in [AI Orchestrators](/ai-orchestrator).
 
 **Where I Am Today:** Somewhere between stages 6 and 7. The herd screenshot above is nine workspaces with four agents mid-flight - [Herdr](#the-upgrade-herdr) is what makes that supervisable. Still learning how to avoid merge hell and when to use specialized vs. generalist agents. Stage 8 is the dream, and the tooling is closer than it was.
 

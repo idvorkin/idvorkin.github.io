@@ -124,21 +124,17 @@ When Brooks asked what advice he'd give workaholics and success addicts who trem
 
 Many people find that in a midlife transitional state, their interest in religion and spirituality unexpectedly increases. This seems odd because people often become _more_ skeptical of "magical" things as they age. But it's strikingly common to find religious yearnings creeping in during one's forties and fifties. For many, the metaphysical begins to feel _real_.
 
-James Fowler's research (_Stages of Faith_) confirms this pattern:
-
-- Young adults are often put off by ideas that seem arbitrary or morally retrograde (rules about sexuality, the problem of suffering)
-- As they get older, people become tolerant of religion's ambiguities and inconsistencies
-- They start to see the beauty and transcendence in faith and spirituality
+Brooks leans on James Fowler's _Stages of Faith_ for this: young adults get put off by the parts that look arbitrary or morally retrograde, and as they age they tolerate the ambiguity and start to see the beauty. I'd hold it a bit looser than Brooks does. [Pew](https://www.pewresearch.org/religion/2010/02/17/religion-among-the-millennials/) finds older Americans do pray and attend more, but only part of that gap is people turning to religion as they age; the rest is that older generations were more religious to begin with. So not "you're on schedule," more "some people find this turns on at midlife, and if it does, here's what to do with it."
 
 **The Problem for Strivers**
 
 Strivers are often the least prepared for this change. On the way up professionally, faith and spirituality might be "nice to have" but not any kind of priority. So they languish when they need it most.
 
-For those who embrace faith at this stage, however, it is a joyful epiphany. Research shows that religious and spiritual adults are generally happier, suffer less depression, have better physical health, and are less likely to abuse drugs and alcohol.
+Brooks cites research that religious and spiritual adults are happier, less depressed, healthier and less likely to abuse drugs and alcohol. The catch I keep bumping into: the benefit seems to ride on the community and the practice, not the belief. A study of 7,403 English households found the "spiritual but not religious" group did _worse_ than people who were neither: "People who have a spiritual understanding of life in the absence of a religious framework are vulnerable to mental disorder" ([King et al. 2013](https://pubmed.ncbi.nlm.nih.gov/23174516/)). Which is uncomfortable for someone like me trying to cobble it together alone.
 
 **Why Spirituality Helps**
 
-The best explanation for the happiness bump isn't just healthy lifestyles or social interaction from attending services. It's this: _When you spend serious time and effort focused on transcendental things, it puts your little world into proper context and takes the focus off yourself._
+Brooks's explanation for the happiness bump: _When you spend serious time and effort focused on transcendental things, it puts your little world into proper context and takes the focus off yourself._ That's what I call Scale on [spiritual health](/spiritual-health) (the other two are Direction and Acceptance).
 
 Most of our days, we're thinking _me, me, me_. It's like watching the same dreary television show, over and over, all day long. It's so _boring_. Faith forces you into the cosmos, to consider the source of truth, the origin of life, and the good of others. This focus brings refreshment and relief.
 
@@ -213,8 +209,6 @@ What so often holds people back, as in the case of Nicodemus, is that it feels l
 As Brooks shows in the next chapter, however, wanting spiritual depth is not a weakness—it is a new source of strength needed to jump to the crystallized intelligence curve.
 
 **Spiritual longings are not just a special case of strengths looking like weaknesses. Our lives are full of these things, and that is the next lesson we need to learn to get on the second curve.**
-
-For practical guidance on how to actually start your spiritual practice—especially if you've never done it before—see [Getting Started: For Those Who've Never Done This](/spiritual-health#getting-started-for-those-whove-never-done-this).
 
 ### Make your weakness your strength
 
@@ -351,10 +345,6 @@ The name - I think it comes from a line in the book: people think doggy style is
 
 ## Related posts
 
-**Understanding the three dimensions of spiritual health**
-
-{% include summarize-page.html src="/spiritual-health" %}
-
 **Are there 40 year old programmers?**
 
 {% include summarize-page.html src="/40yo" %}
@@ -362,3 +352,5 @@ The name - I think it comes from a line in the book: people think doggy style is
 **Post midlife, you're going to die**
 
 {% include summarize-page.html src="/death" %}
+
+{% include spiritual-health-cluster.html %}

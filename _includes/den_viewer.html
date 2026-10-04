@@ -1,0 +1,482 @@
+{%- comment -%} Full-screen Den comic reader. Include once after all
+den_strip.html instances. Strip metadata and panel file paths come from
+_data/den.json. {%- endcomment -%}
+<style>
+  .den-strip {
+    --den-bg: rgba(255, 255, 255, 0.92);
+    --den-ring: #0b5ed7;
+    margin: 2em 0;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .den-strip {
+      --den-bg: rgba(28, 28, 30, 0.92);
+      --den-ring: #6ea8fe;
+    }
+  }
+
+  [data-bs-theme="dark"] .den-strip {
+    --den-bg: rgba(28, 28, 30, 0.92);
+    --den-ring: #6ea8fe;
+  }
+
+  .den-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 6px;
+    background: var(--den-bg);
+  }
+
+  .den-frame > a,
+  .den-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .den-hit {
+    position: absolute;
+    z-index: 2;
+    width: 47%;
+    height: 47%;
+    padding: 0;
+    border: 0;
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .den-hit[data-den-panel="1"] {
+    left: 2%;
+    top: 2%;
+  }
+
+  .den-hit[data-den-panel="2"] {
+    left: 51%;
+    top: 2%;
+  }
+
+  .den-hit[data-den-panel="3"] {
+    left: 2%;
+    top: 51%;
+  }
+
+  .den-hit[data-den-panel="4"] {
+    left: 51%;
+    top: 51%;
+  }
+
+  .den-hit:focus-visible {
+    outline: 3px solid var(--den-ring);
+    outline-offset: -3px;
+  }
+
+  html.den-lightbox-open,
+  body.den-lightbox-open {
+    overflow: hidden;
+  }
+
+  .den-lightbox {
+    --den-panel-size: min(800px, calc(100vw - 48px), calc(100vh - 220px));
+    position: fixed;
+    inset: 0;
+    z-index: 2147483640;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 12px 24px;
+    background: rgba(0, 0, 0, 0.92);
+    color: #f8f9fa;
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity 180ms ease,
+      visibility 0s linear 180ms;
+  }
+
+  .den-lightbox[hidden] {
+    display: none;
+  }
+
+  .den-lightbox.is-open {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+  }
+
+  .den-lightbox__dialog {
+    display: grid;
+    grid-template-rows: minmax(44px, auto) var(--den-panel-size) minmax(
+        80px,
+        auto
+      );
+    justify-items: center;
+    width: 100%;
+    max-height: 100%;
+  }
+
+  .den-lightbox__topbar,
+  .den-lightbox__caption {
+    box-sizing: border-box;
+    width: var(--den-panel-size);
+  }
+
+  .den-lightbox__topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-width: 0;
+    padding-bottom: 8px;
+  }
+
+  .den-lightbox__title {
+    overflow: hidden;
+    min-width: 0;
+    font-size: 0.94rem;
+    font-weight: 600;
+    line-height: 1.25;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .den-lightbox button,
+  .den-lightbox a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .den-lightbox__close,
+  .den-lightbox__side,
+  .den-lightbox__dot {
+    border: 0;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+  }
+
+  .den-lightbox__close {
+    display: inline-flex;
+    flex: 0 0 40px;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: -4px -8px -4px 0;
+    padding: 0;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 1.65rem;
+    line-height: 1;
+  }
+
+  .den-lightbox__close:hover,
+  .den-lightbox__close:active,
+  .den-lightbox__side:hover,
+  .den-lightbox__side:active {
+    background: rgba(255, 255, 255, 0.18);
+  }
+
+  .den-lightbox__close:focus-visible,
+  .den-lightbox__side:focus-visible,
+  .den-lightbox__dot:focus-visible,
+  .den-lightbox__receipts:focus-visible {
+    outline: 3px solid #8ab4ff;
+    outline-offset: 3px;
+  }
+
+  .den-lightbox__stage {
+    display: grid;
+    grid-template-columns: var(--den-panel-size);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .den-lightbox__image-shell {
+    position: relative;
+    grid-column: 1;
+    width: var(--den-panel-size);
+    height: var(--den-panel-size);
+    overflow: hidden;
+    border-radius: 4px;
+    background: #e6e0d5;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.55);
+    touch-action: pan-y;
+  }
+
+  .den-lightbox__image {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 170ms ease;
+  }
+
+  .den-lightbox__image.is-outgoing,
+  .den-lightbox__image.is-current {
+    opacity: 1;
+  }
+
+  .den-lightbox__image.is-current {
+    z-index: 1;
+  }
+
+  .den-lightbox__tap {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    width: 33.333%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: transparent;
+  }
+
+  .den-lightbox__tap-previous {
+    left: 0;
+  }
+
+  .den-lightbox__tap-next {
+    right: 0;
+  }
+
+  .den-lightbox__side {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    padding: 0 0 4px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 2.2rem;
+    line-height: 1;
+  }
+
+  .den-lightbox__side:disabled {
+    cursor: default;
+    opacity: 0.28;
+  }
+
+  .den-lightbox__caption {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px 16px;
+    align-content: start;
+    padding-top: 12px;
+    font-size: 0.82rem;
+  }
+
+  .den-lightbox__position {
+    display: flex;
+    grid-column: 1 / -1;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .den-lightbox__counter {
+    min-width: 72px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .den-lightbox__dots {
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+
+  .den-lightbox__dot {
+    position: relative;
+    width: 28px;
+    height: 32px;
+    padding: 0;
+    background: transparent;
+  }
+
+  .den-lightbox__dot::before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 7px;
+    height: 7px;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+    content: "";
+    transform: translate(-50%, -50%);
+  }
+
+  .den-lightbox__dot--all::before {
+    width: 11px;
+    height: 11px;
+    border-radius: 2px;
+    background:
+      linear-gradient(
+        90deg,
+        transparent 44%,
+        rgba(255, 255, 255, 0.75) 45% 55%,
+        transparent 56%
+      ),
+      linear-gradient(
+        transparent 44%,
+        rgba(255, 255, 255, 0.75) 45% 55%,
+        transparent 56%
+      );
+  }
+
+  .den-lightbox__dot[aria-current="true"]::before {
+    background-color: #fff;
+  }
+
+  .den-lightbox__dot--all[aria-current="true"]::before {
+    background:
+      linear-gradient(90deg, #fff 42%, #202020 43% 57%, #fff 58%),
+      linear-gradient(#fff 42%, #202020 43% 57%, #fff 58%);
+  }
+
+  .den-lightbox__date {
+    align-self: center;
+    opacity: 0.62;
+  }
+
+  .den-lightbox__receipts {
+    justify-self: end;
+    color: #d8e8ff;
+    font-size: 0.78rem;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  @media (min-width: 768px) {
+    .den-lightbox {
+      --den-panel-size: min(800px, calc(100vw - 256px), calc(100vh - 184px));
+      padding: 24px 48px;
+    }
+
+    .den-lightbox__dialog {
+      grid-template-rows: minmax(48px, auto) var(--den-panel-size) minmax(
+          72px,
+          auto
+        );
+    }
+
+    .den-lightbox__stage {
+      grid-template-columns: 56px var(--den-panel-size) 56px;
+      column-gap: 24px;
+    }
+
+    .den-lightbox__previous {
+      grid-column: 1;
+    }
+
+    .den-lightbox__image-shell {
+      grid-column: 2;
+    }
+
+    .den-lightbox__next {
+      grid-column: 3;
+    }
+
+    .den-lightbox__side {
+      display: flex;
+    }
+
+    .den-lightbox__tap {
+      display: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .den-lightbox,
+    .den-lightbox__image {
+      transition: none;
+    }
+  }
+</style>
+
+<div
+  class="den-lightbox"
+  id="den-lightbox"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Comic viewer"
+  hidden
+>
+  <div class="den-lightbox__dialog">
+    <div class="den-lightbox__topbar">
+      <div class="den-lightbox__title" aria-live="polite"></div>
+      <button
+        type="button"
+        class="den-lightbox__close"
+        aria-label="Close comic viewer"
+      >
+        ×
+      </button>
+    </div>
+    <div class="den-lightbox__stage">
+      <button
+        type="button"
+        class="den-lightbox__side den-lightbox__previous"
+        aria-label="Previous view"
+      >
+        ‹
+      </button>
+      <div class="den-lightbox__image-shell">
+        <button
+          type="button"
+          class="den-lightbox__tap den-lightbox__tap-previous"
+          tabindex="-1"
+          aria-label="Previous view"
+        ></button>
+        <button
+          type="button"
+          class="den-lightbox__tap den-lightbox__tap-next"
+          tabindex="-1"
+          aria-label="Next view"
+        ></button>
+      </div>
+      <button
+        type="button"
+        class="den-lightbox__side den-lightbox__next"
+        aria-label="Next view"
+      >
+        ›
+      </button>
+    </div>
+    <div class="den-lightbox__caption">
+      <div class="den-lightbox__position" role="status" aria-live="polite">
+        <span class="den-lightbox__counter"></span>
+        <div
+          class="den-lightbox__dots"
+          role="group"
+          aria-label="Choose a comic view"
+        ></div>
+      </div>
+      <span class="den-lightbox__date"></span>
+      <a class="den-lightbox__receipts" href="#">the receipts ↗</a>
+    </div>
+  </div>
+</div>
+
+<script type="application/json" id="den-manifest">
+  {{ site.data.den | jsonify }}
+</script>
+<script type="module">
+  import { setupDenViewer } from "/assets/js/den-viewer.js";
+
+  setupDenViewer();
+</script>

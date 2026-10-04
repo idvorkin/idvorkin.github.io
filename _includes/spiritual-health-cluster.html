@@ -1,0 +1,15 @@
+{% comment %}
+Shared footer for the spiritual-health cluster. Add one line at the bottom of each cluster post:
+  {% include spiritual-health-cluster.html %}
+The current page is shown unlinked. Entries are "permalink|name|what it's about".
+{% endcomment %}
+{% assign cluster = "/spiritual-health|Spiritual health|the test, and the three ways it breaks: direction, scale, acceptance;/health|The four healths|where spiritual sits next to physical, emotional and cognitive;/religion|Religion|I lost the belief and kept the value;/walking-with-god|Walking with God|a daily devotional, read as written and then translated;/greek-orthodox|Greek Orthodox|theosis, and fasting as a rhythm;/stoicism|Stoicism|influence vs. control, amor fati, memento mori;/elder|Aging well|the second curve, vanaprastha, and the walk;/death|Being mortal|what the end of life teaches the middle" | split: ";" %}
+<nav class="spiritual-health-cluster" aria-label="The spiritual health posts">
+  <hr />
+  <p><strong>The spiritual health posts</strong></p>
+  <ul>
+    {% for entry in cluster %}{% assign f = entry | split: "|" %}
+    <li>{% if page.permalink == f[0] %}<strong>{{ f[1] }}</strong> (this post){% else %}<a href="{{ f[0] }}">{{ f[1] }}</a>{% endif %}: {{ f[2] }}</li>
+    {% endfor %}
+  </ul>
+</nav>

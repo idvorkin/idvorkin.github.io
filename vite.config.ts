@@ -1,12 +1,17 @@
+// ABOUTME: Builds the blog's main JavaScript bundle and page-specific browser modules.
+// ABOUTME: Keeps stable output names because generated assets are committed to the repository.
+
 import { resolve } from "node:path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
   build: {
     lib: {
-      entry: resolve(__dirname, "src/index.ts"),
-      name: "BlogBundle",
-      fileName: () => "index.js",
+      entry: {
+        index: resolve(__dirname, "src/index.ts"),
+        "den-viewer": resolve(__dirname, "src/den-viewer.ts"),
+      },
+      fileName: (_format, entryName) => `${entryName}.js`,
       formats: ["es"],
     },
     outDir: "assets/js",

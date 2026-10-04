@@ -24,7 +24,7 @@ This framework draws heavily from two foundational books on energy and happiness
 - [The Four Dimensions](#the-four-dimensions)
   - [Physical Health: Your Energy Foundation](#physical-health-your-energy-foundation)
   - [Emotional Health: Your Resilience System](#emotional-health-your-resilience-system)
-  - [Spiritual Health: Your Purpose, Perspective, and Acceptance](#spiritual-health-your-purpose-perspective-and-acceptance)
+  - [Spiritual Health: Direction, Scale, and Acceptance](#spiritual-health-direction-scale-and-acceptance)
   - [Cognitive Health: Your Growth Engine](#cognitive-health-your-growth-engine)
 - [Why All Four Matter](#why-all-four-matter)
 - [Rituals for Each Dimension](#rituals-for-each-dimension)
@@ -36,8 +36,6 @@ This framework draws heavily from two foundational books on energy and happiness
 - [Common Failure Patterns](#common-failure-patterns)
 - [Building Your Health System](#building-your-health-system)
 - [Ideas I'm grinding through](#ideas-im-grinding-through)
-  - [Spiritual Health: Purpose vs. Transcendence](#spiritual-health-purpose-vs-transcendence)
-  - [Spiritual vs Emotional Health Differences](#spiritual-vs-emotional-health-differences)
   - [Spiritual Health vs Identity](#spiritual-health-vs-identity)
   - [Mapping to Igor's Affirmations](#mapping-to-igors-affirmations)
 
@@ -121,35 +119,17 @@ Emotional health is your ability to navigate feelings, maintain positive relatio
 
 See also: [Search Inside Yourself](/siy) for emotional intelligence training, and [Sublime States](/sublime) for Buddhist practices on emotional well-being.
 
-### Spiritual Health: Your Purpose, Perspective, and Acceptance
+### Spiritual Health: Direction, Scale, and Acceptance
 
-Spiritual health means having a north star (purpose/direction), knowing you're NOT the center of the universe (transcendence/perspective), and accepting you have influence, not control (coherence/acceptance). It's what prevents you from feeling aimless, burning out from lack of perspective, or exhausting yourself trying to control what's beyond your reach. Some people find this through [religion](/religion), but even if you're not religious, these dimensions of spiritual health remain essential.
+Spiritual health is what keeps you going on the marathon; emotional health is what gets you through the sprint. When it's gone, one of three things is usually missing:
 
-**What it enables:**
+- **Direction**: a north star. Without it you feel aimless, even while you're achieving.
+- **Scale**: knowing you're not the center of the universe. Without it every setback is a catastrophe and you burn out.
+- **Acceptance**: you have influence, not control. Without it you exhaust yourself on outcomes you can't reach.
 
-- Persisting through difficulty when results are far away (purpose)
-- Maintaining perspective on what actually matters (transcendence)
-- Focusing energy on what you can actually influence (coherence)
-- Making decisions aligned with your values
-
-**Core components:**
-
-- Clear sense of purpose and values (your north star)
-- Practices that provide cosmic perspective and awe (getting small)
-- Distinguishing your circle of influence from circle of concern
-- Rituals that mark transitions and create meaning
-
-**What happens when you neglect it:**
-
-- Feeling aimless despite achievement (missing purpose)
-- Burning out from treating every setback as catastrophic (missing transcendence)
-- Exhausting yourself trying to control outcomes beyond your reach (missing coherence)
-- Disengagement and going through motions
+Some people find all three through [religion](/religion). If you're not religious you still need them; you just have to build the practices yourself.
 
 {%include summarize-page.html src="/spiritual-health" %}
-{%include summarize-page.html src="/religion" %}
-
-Even if you're not religious, spiritual rituals matter. They anchor you to your deeper "why," provide perspective on your place in the universe, and help you focus on what you can actually affect.
 
 ### Cognitive Health: Your Growth Engine
 
@@ -219,14 +199,13 @@ These aren't optional when you "have time" - they're what prevent emotional coll
 
 ### Spiritual Rituals
 
-Spiritual rituals anchor you to your purpose and values:
+One for each of the three:
 
-- Weekly reflection on what matters most
-- Annual review and goal-setting aligned with values
-- Rituals marking life transitions (secular or religious)
-- Regular engagement with your [eulogy](/eulogy) - who you want to be
+- **Direction**: re-read your [eulogy](/eulogy), and hold the weekly review up against it
+- **Scale**: go for a walk and get small (see [the walk](/elder#walking-into-transcendence))
+- **Acceptance**: sort what you control from what you only influence, and let go of the rest (see [Stoicism](/stoicism))
 
-These practices prevent the drift into aimlessness that comes from just optimizing for productivity.
+Without them you drift into just optimizing for productivity.
 
 ### Cognitive Rituals
 
@@ -277,32 +256,6 @@ Remember: practice makes permanent. Whether you design your rituals consciously 
 {%include summarize-page.html src="/habits" %}
 
 ## Ideas I'm grinding through
-
-### Spiritual Health: Purpose vs. Transcendence
-
-Spiritual health is particularly complex because different frameworks define it differently. After deep analysis, I've discovered that "spiritual health" actually encompasses two distinct problems that different thought leaders address:
-
-1. **Purpose (Not Knowing Your Mountain)**: The problem of feeling directionless, not knowing your values or what you're working toward
-2. **Transcendence (Being Too Big)**: The problem of taking yourself too seriously, lacking cosmic perspective on your place in the universe
-
-These are orthogonal - you can have one without the other. A driven founder might have crystal-clear purpose but burn out from lack of perspective (purpose without transcendence). A meditation practitioner might feel deeply connected to something greater but still feel aimless about their own path (transcendence without purpose).
-
-Different frameworks emphasize different aspects:
-
-- Arthur Brooks focuses on transcendence through "getting small"
-- My framework emphasizes purpose as your "anchor" to meaning
-- The Power of Full Engagement bridges both, suggesting they're developmental stages
-- Viktor Frankl's logotherapy shows that purpose IS found through self-transcendence
-
-For a comprehensive analysis of these frameworks and whether purpose and transcendence are separate dimensions or complementary aspects of spiritual health, see: [Spiritual Health: Purpose vs. Transcendence](/spiritual-health)
-
-### Spiritual vs Emotional Health Differences
-
-These two dimensions are often confused, but they address completely different problems. You need both, independently.
-
-In short: **emotional health** gets you through the sprint (handling triggers, anger, insults), while **spiritual health** gets you through the marathon (the long slog when you need to remember why it matters).
-
-For the full breakdown with two helpful analogies, see [Spiritual vs Emotional Health](/spiritual-health#spiritual-vs-emotional-health).
 
 ### Spiritual Health vs Identity
 
@@ -398,3 +351,5 @@ I'm naturally incredibly curious and love digging into tech, ideas, and understa
 The real insight: **Affirmations should reinforce what you struggle with, not what comes naturally.** My cognitive health doesn't need daily affirmations - it needs systems and structures, which I've built through this blog and my writing practice.
 
 Related: [Igor's Operating Manual](/operating-manual), [The 7 Habits](/7-habits)
+
+{% include spiritual-health-cluster.html %}

@@ -199,3 +199,34 @@ https://css-tricks.com/line-clampin/
 #sunburst {
   min-height: 450px;
 }
+
+/*
+ * ai-slop.html: a one-line "AI-augmented" disclosure. The whole summary line
+ * toggles; the round "?" just signals that there is more behind it.
+ */
+.ai-slop {
+  padding: 0.35rem 0.75rem;
+}
+.ai-slop > summary {
+  cursor: pointer;
+  list-style: none;
+}
+.ai-slop > summary::-webkit-details-marker {
+  display: none;
+}
+.ai-slop-q {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25em;
+  height: 1.25em;
+  margin-left: 0.2em;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font-size: 0.85em;
+  font-weight: bold;
+  line-height: 1;
+}
+.ai-slop > p {
+  margin: 0.4rem 0 0.1rem;
+}

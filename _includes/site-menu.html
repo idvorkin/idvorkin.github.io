@@ -78,6 +78,7 @@
   // Embed branch info directly for dev server
   window.__GIT_BRANCH__ = "{{ site.data.git.branch }}";
   window.__GIT_PR__ = {{ site.data.git.pr_number | jsonify }};
+  window.__GIT_CHANGED__ = {{ site.data.git.changed_pages | jsonify }};
 </script>
 
 <script type="module">

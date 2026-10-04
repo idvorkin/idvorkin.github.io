@@ -48,6 +48,7 @@ With parallel agents you need to:
 - **Switch between agents instantly** - context-switching friction kills your flow
 - **Talk to whichever agent needs you** without typing commands to navigate there first
 - **Know when something needs attention** without constantly checking
+- **Know what you can afford to spend** - several subscriptions means [managing tokens](/token-management) across them
 
 This is the gap between [Stage 5 (single agent) and Stage 7 (specialized tools)](/how-igor-chops#the-8-stages-of-ai-coding) in the AI coding evolution. The agents themselves are fine. It's the human interface that's the bottleneck.
 
@@ -177,7 +178,7 @@ Here's a typical multi-agent scenario and how the cockpit helps:
 5. While that agent works, I glance at the dashboard - the docs agent needs a merge. Hit another Stream Deck button.
 6. Repeat.
 
-The cockpit turns multi-agent orchestration from "constantly lost and confused" into "air traffic control with good radar." It's not perfect yet, but it's the difference between Stage 5 and Stage 7.
+The cockpit turns multi-agent orchestration from "constantly lost and confused" into "air traffic control with good radar." It's not perfect yet, but it's the difference between Stage 5 and Stage 7. In [orchestrator](/ai-orchestrator) terms, the cockpit is the overview brick.
 
 The cockpit is my side of the glass. The agents have instruments of their own — [Browsers for Machines](/browsers-for-machines) covers the ones they use to reach the web.
 

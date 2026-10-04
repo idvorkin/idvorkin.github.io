@@ -823,7 +823,7 @@ alias:
 
 ## PR Review Checklist
 
-At the end of a content PR review, include this summary format. These checks map to the [thinking phases in CHOW](/chow#the-four-thinking-modes).
+At the end of a content PR review, include this summary format. These checks map to the [thinking phases in CHOW](/chow#the-four-thinking-modes). Generate it with `.claude/skills/pr-checks/pr_checks.py` — structural checks run as code, `headers`/`voice`/`ai-patterns` are model-judged and advisory; see `.claude/skills/pr-checks/SKILL.md`.
 
 ```
 Architect: 🟢 headers 🟢 front-matter 🟢 internal-links

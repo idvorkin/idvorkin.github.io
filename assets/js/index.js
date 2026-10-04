@@ -1,20 +1,20 @@
-function q(e) {
+function J(e) {
   return `
 <div>
     <div class="link-box description truncate-css"> ${`<a href=${e.url}>${e.title}</a>`}:<span class="link-description"> ${e.description} <span></div>
 </div>`;
 }
-function x(e) {
+function v(e) {
   if (e.length !== 0)
     return e[Math.floor(Math.random() * e.length)];
 }
-function ve(e) {
+function ke(e) {
   let t = e.length, n;
   for (; t !== 0; )
     n = Math.floor(Math.random() * t), t--, [e[t], e[n]] = [e[n], e[t]];
   return e;
 }
-function Me(e, t) {
+function He(e, t) {
   const n = t || e.name || "anonymous function";
   document.readyState === "loading" ? (console.log(`🕐 Deferring ${n} until DOM is ready`), document.addEventListener("DOMContentLoaded", () => {
     console.log(`🚀 Executing deferred ${n}`), e();
@@ -34,41 +34,41 @@ async function E(e, t) {
     }
   });
 }
-let N = null;
-async function v(e) {
-  if (N != null)
-    return N;
+let P = null;
+async function x(e) {
+  if (P != null)
+    return P;
   const t = "/back-links.json";
   try {
-    return N = (await (await fetch(t)).json()).url_info, N;
+    return P = (await (await fetch(t)).json()).url_info, P;
   } catch (n) {
     return console.error("Error fetching link info", n), {};
   }
 }
-async function kn() {
+async function In() {
   try {
-    const e = await v(), t = Object.keys(e).filter((o) => {
+    const e = await x(), t = Object.keys(e).filter((o) => {
       const i = ["/404", "/404.html", "/search", "/recent", "/index.html", "/graph", "/about", "/random"].some((l) => o === l || o.endsWith(l)), a = [
         "/ig66/"
         // Exclude all ig66 subdirectory pages
       ].some((l) => o.includes(l));
       return !i && !a;
     });
-    return t.length === 0 ? "/" : x(t) || "/";
+    return t.length === 0 ? "/" : v(t) || "/";
   } catch (e) {
     return console.error("🚨 Error getting random page URL:", e), "/";
   }
 }
-async function Ae(e = "/back-links.json") {
+async function Re(e = "/back-links.json") {
   if (e === "/test-missing-url-info")
     throw new Error("Missing url_info in data structure");
   try {
-    return await v(e);
+    return await x(e);
   } catch {
     throw new Error("Missing url_info in data structure");
   }
 }
-function He(e) {
+function Be(e) {
   return Object.entries(e).map(([t, n]) => ({
     url: t,
     title: n.title || t,
@@ -77,19 +77,19 @@ function He(e) {
     last_modified: n.last_modified || ""
   }));
 }
-function Re(e) {
+function De(e) {
   return e.filter(
     (t) => t.description && t.description.trim() !== "" && t.title && t.title.trim() !== ""
   );
 }
-function Be(e) {
+function ze(e) {
   return [...e].sort((t, n) => t.last_modified && n.last_modified ? new Date(n.last_modified).getTime() - new Date(t.last_modified).getTime() : n.doc_size - t.doc_size);
 }
-async function xe() {
-  const e = await Ae(), t = He(e), n = Re(t);
-  return Be(n);
+async function $e() {
+  const e = await Re(), t = Be(e), n = De(t);
+  return ze(n);
 }
-function ie(e) {
+function se(e) {
   const t = {};
   for (const n of e) {
     if (!n.last_modified) continue;
@@ -100,7 +100,7 @@ function ie(e) {
   }
   return t;
 }
-function se(e) {
+function ae(e) {
   let t = "";
   for (const [n, o] of Object.entries(e))
     t += `
@@ -121,7 +121,7 @@ function se(e) {
     `;
   return t;
 }
-function ze(e, t) {
+function Oe(e, t) {
   return `
     <div class="remaining-posts-section">
       <h2 id="remaining-posts-toggle" class="remaining-toggle">
@@ -133,7 +133,7 @@ function ze(e, t) {
     </div>
   `;
 }
-function De() {
+function Ue() {
   return `
     <style>
       .last-modified-list {
@@ -179,7 +179,7 @@ function De() {
     </style>
   `;
 }
-function Oe(e = "remaining-posts-toggle", t = "remaining-posts-content", n = document) {
+function Fe(e = "remaining-posts-toggle", t = "remaining-posts-content", n = document) {
   const o = n.getElementById(e);
   if (!o) {
     console.log(`Toggle element with ID ${e} not found`);
@@ -195,39 +195,39 @@ function Oe(e = "remaining-posts-toggle", t = "remaining-posts-content", n = doc
     r.style.display === "none" ? (r.style.display = "block", i?.classList.add("open")) : (r.style.display = "none", i?.classList.remove("open"));
   });
 }
-function Ue(e, t = 15) {
+function Ge(e, t = 15) {
   if (e.length === 0)
     return "<p>No modified posts found.</p>";
-  const n = e.slice(0, t), o = e.slice(t), r = ie(n);
-  let i = se(r);
+  const n = e.slice(0, t), o = e.slice(t), r = se(n);
+  let i = ae(r);
   if (o.length > 0) {
-    const s = ie(o), a = se(s);
-    i += ze(a, o.length);
+    const s = se(o), a = ae(s);
+    i += Oe(a, o.length);
   }
-  return De() + i;
+  return Ue() + i;
 }
-async function ae(e = "last-modified-posts", t = 15, n = document) {
+async function le(e = "last-modified-posts", t = 15, n = document) {
   const o = n.getElementById(e);
   if (!o) {
     console.log(`❌ ${e} container not found in DOM`);
     return;
   }
   try {
-    const r = await xe(), i = Ue(r, t);
-    o.innerHTML = i, Oe("remaining-posts-toggle", "remaining-posts-content", n);
+    const r = await $e(), i = Ge(r, t);
+    o.innerHTML = i, Fe("remaining-posts-toggle", "remaining-posts-content", n);
   } catch (r) {
     console.error("❌ Error loading recent posts:", r), o.innerHTML = "<p>Error loading modified posts. Please try again later.</p>";
   }
 }
-function Fe(e = "last-modified-posts", t = document) {
+function je(e = "last-modified-posts", t = document) {
   t.readyState === "loading" ? t.addEventListener("DOMContentLoaded", () => {
-    ae(e, 15, t);
-  }) : ae(e, 15, t);
+    le(e, 15, t);
+  }) : le(e, 15, t);
 }
-function je(e, t = 5) {
+function We(e, t = 5) {
   return e.slice(0, t);
 }
-function Ge(e) {
+function qe(e) {
   return e.length === 0 ? "<p>No recent posts found.</p>" : `
     <ul>
       ${e.map(
@@ -242,64 +242,64 @@ function Ge(e) {
     </ul>
   `;
 }
-async function le(e = "recent-posts") {
+async function ce(e = "recent-posts") {
   const t = document.getElementById(e);
   if (!t) {
     console.error(`❌ ${e} container not found in DOM`);
     return;
   }
   try {
-    const n = await xe(), o = je(n), r = Ge(o);
+    const n = await $e(), o = We(n), r = qe(o);
     t.innerHTML = r;
   } catch (n) {
     console.error("❌ Error loading recent posts:", n), t.innerHTML = "<p>Error loading recent posts. Please try again later.</p>";
   }
 }
-function We(e = "recent-posts", t = document) {
+function Je(e = "recent-posts", t = document) {
   t.readyState === "loading" ? t.addEventListener("DOMContentLoaded", () => {
-    le(e);
-  }) : le(e);
+    ce(e);
+  }) : ce(e);
 }
 console.log("Load force graph in TS v 0.9");
-function O(e, t) {
+function U(e, t) {
   const n = e.filter((i) => i.url === t)[0];
   if (n)
     return n;
   const o = t.replace(/^\//, "").replace(/\/$/, "");
   return e.filter((i) => i.url.replace(/^\//, "").replace(/\/$/, "") === o)[0];
 }
-function qe(e) {
+function Ye(e) {
   const t = [];
   for (const n of e) {
     const o = n.outgoing_links || [], r = n.incoming_links || [], i = [...o, ...r];
     for (const a of i)
-      O(w, a) && t.push({ source: n, target: a, value: 1 });
+      U(w, a) && t.push({ source: n, target: a, value: 1 });
     t.filter((a) => a.source === n).length === 0 && n.url === "/eulogy" && console.log(`No valid links found for ${n.url}`);
   }
   return t;
 }
-function J(e) {
+function Y(e) {
   const t = e.filter((s) => s.expanded);
   e.find((s) => s.url === "/eulogy") || console.log("Eulogy node not found in pages");
-  const o = qe(t), r = o.map((s) => O(e, s.target)).filter((s) => s);
+  const o = Ye(t), r = o.map((s) => U(e, s.target)).filter((s) => s);
   return {
     nodes: t.concat(r),
     links: o
   };
 }
-function Je(e, t, n) {
+function Xe(e, t, n) {
   const o = e.outgoing_links.length, r = e.expanded ? "-" : `+${o}`, i = `${e.id} [${r}]`, s = 12 / n;
   t.font = `${s}px Sans-Serif`;
   const l = [t.measureText(i).width, s].map((c) => c + s * 0.2);
   t.fillStyle = "rgba(255, 255, 255, 0.8)", t.fillRect(e.x - l[0] / 2, e.y - l[1] / 2, ...l), t.textAlign = "center", t.textBaseline = "middle", t.fillStyle = e.color, t.fillText(i, e.x, e.y), e.__bckgDimensions = l;
 }
-function Ye(e, t, n) {
+function Ve(e, t, n) {
   n.fillStyle = t;
   const o = e.__bckgDimensions;
   o && n.fillRect(e.x - o[0] / 2, e.y - o[1] / 2, ...o);
 }
 let w = [], y = null, C = null;
-function B(e) {
+function D(e) {
   if (!C) {
     console.log("Cannot center: Graph not initialized");
     return;
@@ -308,31 +308,31 @@ function B(e) {
     console.log("Cannot center: Node is null or undefined");
     return;
   }
-  C.centerAt(e.x, e.y, 500), C.zoom(8, 500), ke(e);
+  C.centerAt(e.x, e.y, 500), C.zoom(8, 500), Ee(e);
 }
-function ke(e) {
+function Ee(e) {
   if (!e)
     return;
   y = e;
-  const t = q(e), n = document.getElementById("detail");
+  const t = J(e), n = document.getElementById("detail");
   n && (n.innerHTML = t);
 }
-function Xe() {
+function Ke() {
   y ? y.url ? window.open(y.url, "_blank") : console.log("Active node has no URL") : console.log("No active node to go to");
 }
-function Ve() {
+function Ze() {
   for (const e of w)
     e.expanded = !1;
-  y && (y.expanded = !0), C && (C.graphData(J(w)), y && setTimeout(() => {
-    B(y);
+  y && (y.expanded = !0), C && (C.graphData(Y(w)), y && setTimeout(() => {
+    D(y);
   }, 300));
 }
-async function Ke() {
+async function Qe() {
   if (!document.getElementById("graph")) {
     console.log("Graph element not found, exiting initialization");
     return;
   }
-  window.location.hash.substr(1), w = Object.values(await v()).map((a) => ({
+  window.location.hash.substr(1), w = Object.values(await x()).map((a) => ({
     ...a,
     id: a.url,
     expanded: !1
@@ -342,8 +342,8 @@ async function Ke() {
     a.expanded = a.url === n;
   if (typeof ForceGraph > "u") {
     console.log("Force Graph not defined, providing fallback functionality");
-    const a = O(w, n);
-    a && (ke(a), y = a);
+    const a = U(w, n);
+    a && (Ee(a), y = a);
     const l = document.getElementById("center_control");
     l && l.addEventListener("click", () => {
       console.log("Center control clicked (fallback mode)");
@@ -358,39 +358,72 @@ async function Ke() {
     });
     return;
   }
-  C = ForceGraph()(document.getElementById("graph")).graphData(J(w)).nodeLabel("id").nodeAutoColorBy("group").nodeCanvasObject(Je).nodePointerAreaPaint(Ye).onNodeRightClick((a) => {
+  C = ForceGraph()(document.getElementById("graph")).graphData(Y(w)).nodeLabel("id").nodeAutoColorBy("group").nodeCanvasObject(Xe).nodePointerAreaPaint(Ve).onNodeRightClick((a) => {
     window.open(a.url, "_blank");
   }).onNodeClick((a) => {
-    a.expanded = !a.expanded, w.filter((c) => c.expanded).length === 0 && (a.expanded = !0), C.graphData(J(w)), setTimeout(() => {
-      B(a);
+    a.expanded = !a.expanded, w.filter((c) => c.expanded).length === 0 && (a.expanded = !0), C.graphData(Y(w)), setTimeout(() => {
+      D(a);
     }, 300);
   });
-  const o = O(w, n);
-  o ? B(o) : console.log("Initial node not found, cannot center");
+  const o = U(w, n);
+  o ? D(o) : console.log("Initial node not found, cannot center");
   const r = document.getElementById("center_control");
   r ? r.addEventListener("click", () => {
-    y ? B(y) : console.log("No last detail node to center on");
+    y ? D(y) : console.log("No last detail node to center on");
   }) : console.log("Center control element not found");
   const i = document.getElementById("goto_control");
-  i && i.addEventListener("click", Xe);
+  i && i.addEventListener("click", Ke);
   const s = document.getElementById("collapse_control");
-  s && s.addEventListener("click", Ve);
+  s && s.addEventListener("click", Ze);
 }
-typeof window < "u" && (window.initializeGraph = Ke);
-function Ze() {
+typeof window < "u" && (window.initializeGraph = Qe);
+function et() {
   const e = window.__GIT_BRANCH__;
   return e ? (console.log("Branch from global variable:", e), e) : (console.log("Branch info not found"), null);
 }
-function Qe() {
+function tt() {
   const e = window.__GIT_PR__;
   return e && typeof e == "number" ? (console.log("PR from global variable:", e), e) : (console.log("PR info not found"), null);
 }
-function et() {
+function nt() {
+  const e = window.__GIT_CHANGED__;
+  return Array.isArray(e) ? e.filter((t) => typeof t == "string" && t.startsWith("/")) : [];
+}
+const de = (e) => e.replace(/\/+$/, "") || "/";
+function ot(e, t) {
+  return t.some((n) => de(n) === de(e));
+}
+const I = (e) => `<i class="fas ${e}"></i>`;
+function rt(e) {
+  const t = document.createElement("button");
+  t.id = "dev-diff-toggle", t.type = "button";
+  const n = (o) => {
+    t.innerHTML = I(o ? "fa-times" : "fa-exchange-alt"), t.title = o ? "Exit diff" : "Diff vs main", t.setAttribute("aria-label", t.title), t.setAttribute("aria-pressed", String(o));
+  };
+  return t.style.cssText = "background:#238636;color:#fff;border:0;border-radius:4px;padding:1px 8px;font:inherit;cursor:pointer;", t.onclick = async () => {
+    t.disabled = !0;
+    const { toggleRichDiff: o } = await import("./rich-diff.js");
+    n(await o(e)), t.disabled = !1;
+  }, n(!1), t;
+}
+const it = () => window.blogAnnotate;
+function st(e) {
+  const t = document.createElement("button");
+  t.id = "dev-comments-toggle", t.type = "button";
+  const n = () => {
+    const o = e.enabled();
+    t.innerHTML = `${I("fa-comment")} ${o ? "on" : "off"}`, t.setAttribute("aria-pressed", String(o)), t.setAttribute("aria-label", "Comments"), t.title = o ? "Comments on: select text to comment. Click to turn off." : "Comments off: click to turn on annotate mode", t.style.cssText = `background:${o ? "#0b5ed7" : "#444c56"};color:#fff;border:0;border-radius:4px;padding:1px 8px;font:inherit;cursor:pointer;`;
+  };
+  return t.onclick = () => {
+    e.set(!e.enabled()), n();
+  }, n(), t;
+}
+function at() {
   return window.location.port || "80";
 }
-function tt() {
+function lt() {
   console.log("Initializing dev info...");
-  const e = Ze(), t = Qe(), n = et();
+  const e = et(), t = tt(), n = at();
   if (console.log("Dev info - Branch:", e, "PR:", t, "Port:", n), (e || t) && n !== "80" && n !== "443") {
     const o = document.createElement("div");
     o.id = "dev-info-banner", o.style.cssText = `
@@ -408,17 +441,29 @@ function tt() {
       box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     `;
     let r = "";
-    if (e && (r += `<i class="fas fa-code-branch"></i> Branch: <code style="background: black; color: white; padding: 2px 6px; border-radius: 3px;">${e}</code>`), t) {
+    if (e && (r += `<span title="Branch">${I("fa-code-branch")} <code style="background: black; color: white; padding: 2px 6px; border-radius: 3px;">${e}</code></span>`), t) {
       e && (r += " | ");
-      const s = `https://github.com/idvorkin/idvorkin.github.io/pull/${t}`;
-      r += `<i class="fas fa-code-pull-request"></i> PR: <a href="${s}" target="_blank" style="color: #58a6ff; text-decoration: none;"><code style="background: black; color: #58a6ff; padding: 2px 6px; border-radius: 3px;">#${t}</code></a>`;
+      const l = `https://github.com/idvorkin/idvorkin.github.io/pull/${t}`;
+      r += `<a href="${l}" title="Pull request" target="_blank" style="color: #58a6ff; text-decoration: none;"><i class="fab fa-github"></i></a> <a href="${l}" target="_blank" style="color: #58a6ff; text-decoration: none;"><code style="background: black; color: #58a6ff; padding: 2px 6px; border-radius: 3px;">#${t}</code></a>`;
     }
-    (e || t) && n && (r += " | "), r += `<i class="fas fa-server"></i> Port: <code style="background: black; color: white; padding: 2px 6px; border-radius: 3px;">${n}</code>`, o.innerHTML = r, document.body.appendChild(o);
-    const i = Number.parseInt(window.getComputedStyle(document.body).paddingTop) || 0;
-    document.body.style.paddingTop = `${i + 40}px`;
+    (e || t) && n && (r += " | "), r += `<span title="Port">${I("fa-plug")} <code style="background: black; color: white; padding: 2px 6px; border-radius: 3px;">${n}</code></span>`;
+    const i = nt();
+    if (i.length) {
+      const l = i.map(
+        (c) => `<a href="${encodeURI(c)}" style="color: #58a6ff; text-decoration: none;">${c.replace(/[<>&"]/g, "")}</a>`
+      ).join(" ");
+      r += ` | ${I("fa-edit")} Changed: ${l}`;
+    }
+    o.innerHTML = r, ot(window.location.pathname, i) && (o.appendChild(document.createTextNode(" | ")), o.appendChild(
+      rt(t ? `https://github.com/idvorkin/idvorkin.github.io/pull/${t}` : void 0)
+    ));
+    const s = it();
+    s && (o.appendChild(document.createTextNode(" | ")), o.appendChild(st(s))), document.body.appendChild(o);
+    const a = Number.parseInt(window.getComputedStyle(document.body).paddingTop) || 0;
+    document.body.style.paddingTop = `${a + 40}px`;
   }
 }
-const ee = {
+const te = {
   iconClass: "header-copy-link",
   tooltipDuration: 2e3,
   domainMapping: {
@@ -426,9 +471,9 @@ const ee = {
     to: "idvorkin.azurewebsites.net/"
   }
 };
-function nt(e) {
+function ct(e) {
   const t = document.createElement("span");
-  return t.className = e.iconClass || ee.iconClass, t.title = "Share this section", t.style.cursor = "pointer", t.style.marginLeft = "0.5rem", t.style.opacity = "0", t.style.transition = "opacity 0.2s ease", t.style.fontSize = "0.8em", t.style.userSelect = "none", t.setAttribute("role", "button"), t.setAttribute("tabindex", "0"), t.setAttribute("aria-label", "Share this section"), t.innerHTML = `<svg width="16" height="20" viewBox="0 0 16 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+  return t.className = e.iconClass || te.iconClass, t.title = "Share this section", t.style.cursor = "pointer", t.style.marginLeft = "0.5rem", t.style.opacity = "0", t.style.transition = "opacity 0.2s ease", t.style.fontSize = "0.8em", t.style.userSelect = "none", t.setAttribute("role", "button"), t.setAttribute("tabindex", "0"), t.setAttribute("aria-label", "Share this section"), t.innerHTML = `<svg width="16" height="20" viewBox="0 0 16 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
     <!-- Upward arrow -->
     <path d="M8 2 L8 12"/>
     <path d="M4 5.5 L8 2 L12 5.5"/>
@@ -436,7 +481,7 @@ function nt(e) {
     <path d="M3 8 L3 17 Q3 18 4 18 L12 18 Q13 18 13 17 L13 8"/>
   </svg>`, t;
 }
-function ot() {
+function dt() {
   const e = document.createElement("span");
   if (e.className = "header-github-issue", e.title = "Create GitHub issue for this section", e.style.cursor = "pointer", e.style.marginLeft = "0.5rem", e.style.opacity = "0", e.style.transition = "opacity 0.2s ease", e.style.fontSize = "0.8em", e.style.userSelect = "none", e.setAttribute("role", "button"), e.setAttribute("tabindex", "0"), e.setAttribute("aria-label", "Create GitHub issue for this section"), !!(document.querySelector('link[href*="font-awesome"]') || document.querySelector('script[src*="font-awesome"]') || document.querySelector(".fa, .fab, .fas, .far") || // Check for inline styles that might include Font Awesome
   Array.from(document.styleSheets).some((n) => {
@@ -452,7 +497,7 @@ function ot() {
     e.textContent = "⚠️";
   return e;
 }
-function rt(e, t) {
+function ut(e, t) {
   const n = document.createElement("div");
   n.className = "github-issue-popup", n.style.display = "none", n.id = `github-issue-popup-${e}`;
   const o = document.createElement("div");
@@ -477,14 +522,14 @@ function rt(e, t) {
   p.className = "github-issue-popup-buttons";
   const g = document.createElement("button");
   g.className = "github-issue-submit", g.textContent = "Create Issue on GitHub";
-  const m = document.createElement("button");
-  m.className = "github-issue-cancel", m.textContent = "Cancel", p.appendChild(g), p.appendChild(m);
+  const f = document.createElement("button");
+  f.className = "github-issue-cancel", f.textContent = "Cancel", p.appendChild(g), p.appendChild(f);
   const h = document.createElement("div");
   h.className = "github-issue-popup-hint";
   const b = document.createElement("small");
   return b.textContent = "Tip: Press Ctrl+Enter (Cmd+Enter on Mac) to submit", h.appendChild(b), a.appendChild(l), a.appendChild(c), a.appendChild(d), a.appendChild(u), a.appendChild(p), a.appendChild(h), o.appendChild(r), o.appendChild(a), n.appendChild(o), n;
 }
-function it(e, t) {
+function pt(e, t) {
   document.querySelectorAll(".github-issue-popup").forEach((s) => {
     s.style.display = "none";
   }), e.style.display = "block", e.style.position = "absolute", e.style.zIndex = "1000";
@@ -498,7 +543,7 @@ function z(e) {
   const t = e.querySelector(".github-issue-comment");
   t && (t.value = "");
 }
-function st(e, t = 2e3) {
+function ft(e, t = 2e3) {
   if (typeof document < "u" && document.querySelector) {
     const o = document.querySelector(".copy-link-tooltip");
     o && o.remove();
@@ -508,7 +553,7 @@ function st(e, t = 2e3) {
     n.remove();
   }, t);
 }
-function ce(e) {
+function ue(e) {
   if (!e) return "";
   const o = (window.location.pathname.replace(/^\//, "").replace(/\.html$/, "") || "index").replace(/-/g, " "), r = [], i = e.tagName, s = Number.parseInt(i.substring(1)), a = Array.from(e.childNodes).filter((c) => c.nodeType === Node.TEXT_NODE).map((c) => c.textContent?.trim()).join(" ").trim();
   if (s >= 2) {
@@ -519,8 +564,8 @@ function ce(e) {
       if (p?.match(/^H[1-6]$/)) {
         const g = Number.parseInt(p.substring(1));
         if (g < s && !u.has(g)) {
-          const m = Array.from(c.childNodes).filter((h) => h.nodeType === Node.TEXT_NODE).map((h) => h.textContent?.trim()).join(" ").trim();
-          if (m && (d.push({ level: g, text: m }), u.add(g)), g === 1) break;
+          const f = Array.from(c.childNodes).filter((h) => h.nodeType === Node.TEXT_NODE).map((h) => h.textContent?.trim()).join(" ").trim();
+          if (f && (d.push({ level: g, text: f }), u.add(g)), g === 1) break;
         }
       }
       c = c.previousElementSibling;
@@ -535,15 +580,15 @@ function ce(e) {
   }
   return l;
 }
-function de(e, t) {
+function pe(e, t) {
   let n = e;
   n = n.replace("localhost:4000/", "idvorkin.azurewebsites.net/"), t.domainMapping && (n = n.replace(t.domainMapping.from, t.domainMapping.to));
   const o = new URL(n), r = o.pathname.replace(/^\//, "").replace(/\.html$/, "") || "index", i = o.hash.replace("#", "");
   return i ? `${r}#${i}` : r;
 }
-async function at(e, t) {
+async function mt(e, t) {
   try {
-    const n = window.location.href, o = n.includes("#") ? n.replace(/#.*/, `#${e}`) : `${n}#${e}`, r = de(o, t), i = `https://tinyurl.com/igor-blog/?path=${encodeURIComponent(r)}`, s = document.getElementById(e), l = `${s ? Array.from(s.childNodes).filter((m) => m.nodeType === Node.TEXT_NODE).map((m) => m.textContent?.trim()).join(" ").trim() : ""} - Igor's Blog`, c = pe(e), d = ce(s);
+    const n = window.location.href, o = n.includes("#") ? n.replace(/#.*/, `#${e}`) : `${n}#${e}`, r = pe(o, t), i = `https://tinyurl.com/igor-blog/?path=${encodeURIComponent(r)}`, s = document.getElementById(e), l = `${s ? Array.from(s.childNodes).filter((f) => f.nodeType === Node.TEXT_NODE).map((f) => f.textContent?.trim()).join(" ").trim() : ""} - Igor's Blog`, c = me(e), d = ue(s);
     let u = `From: ${d} ...`;
     c && (u = `From: ${d} ...
 
@@ -557,8 +602,8 @@ ${c}`), fetch(i).catch(() => {
           text: u,
           url: i
         }), console.log(`📱 Shared via native share: ${i}`), !0;
-      } catch (m) {
-        console.log("Share cancelled or failed, falling back to clipboard", m);
+      } catch (f) {
+        console.log("Share cancelled or failed, falling back to clipboard", f);
       }
     let g = i;
     return c && (g = `From: ${d} ...
@@ -569,7 +614,7 @@ ${i}`), await navigator.clipboard.writeText(g), console.log(`📋 Copied to clip
   } catch (n) {
     console.error("Failed to share/copy header link:", n);
     try {
-      const o = window.location.href, r = o.includes("#") ? o.replace(/#.*/, `#${e}`) : `${o}#${e}`, i = de(r, t), s = `https://tinyurl.com/igor-blog/?path=${encodeURIComponent(i)}`, a = document.getElementById(e), l = ce(a), c = pe(e);
+      const o = window.location.href, r = o.includes("#") ? o.replace(/#.*/, `#${e}`) : `${o}#${e}`, i = pe(r, t), s = `https://tinyurl.com/igor-blog/?path=${encodeURIComponent(i)}`, a = document.getElementById(e), l = ue(a), c = me(e);
       let d = s;
       c && (d = `From: ${l} ...
 
@@ -583,7 +628,7 @@ ${s}`);
     }
   }
 }
-function lt(e) {
+function gt(e) {
   if (e.id)
     return e.id;
   const n = (e.textContent || "").toLowerCase().replace(/[^\w\s-]/g, "").replace(/\s+/g, "-").replace(/-+/g, "-").replace(/^-|-$/g, "");
@@ -592,8 +637,8 @@ function lt(e) {
     o = `${n}-${r}`, r++;
   return e.id = o, o;
 }
-const $e = 600;
-function Ee(e) {
+const Ce = 600;
+function Te(e) {
   let t = e.nextElementSibling;
   const n = (o) => {
     let r = o;
@@ -623,7 +668,7 @@ function Ee(e) {
         ).map((d) => (d.textContent || "").trim()).join(" ").trim();
         if (l.length === 0) continue;
         const c = l.length + 2;
-        if (r.length > 0 && i + c + 1 > $e) {
+        if (r.length > 0 && i + c + 1 > Ce) {
           s = !0;
           break;
         }
@@ -639,7 +684,7 @@ function Ee(e) {
   }
   return { text: "", hasMore: !1 };
 }
-function P(e, t = $e) {
+function M(e, t = Ce) {
   if (e.length <= t)
     return e;
   const n = e.substring(0, t), o = Math.floor(t * 0.6), r = [". ", "! ", "? ", `.
@@ -660,16 +705,16 @@ function P(e, t = $e) {
   const a = n.lastIndexOf(" ");
   return a > 0 ? `${n.substring(0, a)}...` : `${n}...`;
 }
-function ue(e, t) {
+function fe(e, t) {
   return !t || e.endsWith("...") || e.endsWith("…") ? e : `${e}...`;
 }
-function pe(e) {
+function me(e) {
   if (e) {
     const o = document.getElementById(e);
     if (o) {
-      const { text: r, hasMore: i } = Ee(o);
+      const { text: r, hasMore: i } = Te(o);
       if (r)
-        return ue(P(r), i);
+        return fe(M(r), i);
       let s = o.nextElementSibling;
       const a = [];
       let l = 0, c = !1;
@@ -689,7 +734,7 @@ function pe(e) {
         d = d.nextElementSibling;
       }
       if (a.length > 0)
-        return ue(P(a.join(" ")), c);
+        return fe(M(a.join(" ")), c);
     }
   }
   const t = [
@@ -708,7 +753,7 @@ function pe(e) {
       if (i) {
         const s = (i.textContent || "").trim();
         if (s.length > 0)
-          return P(s);
+          return M(s);
       }
     }
   }
@@ -716,12 +761,12 @@ function pe(e) {
   if (n) {
     const o = (n.textContent || "").trim();
     if (o.length > 0)
-      return P(o);
+      return M(o);
   }
   return "";
 }
-function ct(e, t, n, o, r) {
-  const s = window.location.pathname.replace(/^\//, "").replace(/\.html$/, ""), a = document.querySelector('meta[property="markdown-path"]'), l = a ? a.getAttribute("content") : `${s || "index"}.md`, c = "https://github.com/idvorkin/idvorkin.github.io", d = n ? `${s || "index"}/${e}: ${n}` : `${s || "index"}/${e}: Issue with ${t}`, u = encodeURIComponent(d), p = o || n || `Issue with section: ${t}`, g = r ? Ee(r) : "";
+function ht(e, t, n, o, r) {
+  const s = window.location.pathname.replace(/^\//, "").replace(/\.html$/, ""), a = document.querySelector('meta[property="markdown-path"]'), l = a ? a.getAttribute("content") : `${s || "index"}.md`, c = "https://github.com/idvorkin/idvorkin.github.io", d = n ? `${s || "index"}/${e}: ${n}` : `${s || "index"}/${e}: Issue with ${t}`, u = encodeURIComponent(d), p = o || n || `Issue with section: ${t}`, g = r ? Te(r) : "";
   let h = `${`📍 [${s || "index"}](https://idvorkin.azurewebsites.net/${s})/[${e}](https://idvorkin.azurewebsites.net/${s}/${e}) - [[GitHub]](${c}/blob/main/${l}#${e})`}
 
 ## Description
@@ -739,12 +784,12 @@ ${p}
   const b = encodeURIComponent(h);
   return `${c}/issues/new?title=${u}&body=${b}`;
 }
-const Y = /* @__PURE__ */ new WeakMap(), X = /* @__PURE__ */ new WeakMap(), dt = /* @__PURE__ */ new Set();
-function ut(e, t) {
-  let n = X.get(e);
-  return n || (n = rt(t, e.textContent || ""), document.body.appendChild(n), X.set(e, n), pt(n, e, t)), n;
+const X = /* @__PURE__ */ new WeakMap(), V = /* @__PURE__ */ new WeakMap(), bt = /* @__PURE__ */ new Set();
+function yt(e, t) {
+  let n = V.get(e);
+  return n || (n = ut(t, e.textContent || ""), document.body.appendChild(n), V.set(e, n), _t(n, e, t)), n;
 }
-function pt(e, t, n) {
+function _t(e, t, n) {
   const o = [], r = e.querySelector(".github-issue-popup-close");
   if (r) {
     const p = () => z(e);
@@ -756,7 +801,7 @@ function pt(e, t, n) {
     i.addEventListener("click", p), o.push(() => i.removeEventListener("click", p));
   }
   const s = () => {
-    const p = e.querySelector(".github-issue-title"), g = e.querySelector(".github-issue-comment"), m = p?.value || "", h = g?.value || "", b = ct(n, t.textContent || "", m, h, t);
+    const p = e.querySelector(".github-issue-title"), g = e.querySelector(".github-issue-comment"), f = p?.value || "", h = g?.value || "", b = ht(n, t.textContent || "", f, h, t);
     window.open(b, "_blank"), z(e);
   }, a = e.querySelector(".github-issue-submit");
   a && (a.addEventListener("click", s), o.push(() => a.removeEventListener("click", s)));
@@ -764,29 +809,29 @@ function pt(e, t, n) {
     (p.ctrlKey || p.metaKey) && p.key === "Enter" && (p.preventDefault(), s());
   };
   l && (l.addEventListener("keydown", d), o.push(() => l.removeEventListener("keydown", d))), c && (c.addEventListener("keydown", d), o.push(() => c.removeEventListener("keydown", d)));
-  const u = Y.get(t) || [];
-  Y.set(t, [...u, ...o]);
+  const u = X.get(t) || [];
+  X.set(t, [...u, ...o]);
 }
-function mt(e, t) {
-  if (e.querySelector(`.${t.iconClass || ee.iconClass}`))
+function wt(e, t) {
+  if (e.querySelector(`.${t.iconClass || te.iconClass}`))
     return;
-  const o = lt(e), r = nt(t), i = ot(), s = [], a = async (m) => {
-    m.preventDefault(), m.stopPropagation(), await at(o, t) || st(r, t.tooltipDuration);
+  const o = gt(e), r = ct(t), i = dt(), s = [], a = async (f) => {
+    f.preventDefault(), f.stopPropagation(), await mt(o, t) || ft(r, t.tooltipDuration);
   };
   r.addEventListener("click", a), s.push(() => r.removeEventListener("click", a));
-  const l = (m) => {
-    (m.key === "Enter" || m.key === " ") && (m.preventDefault(), a(m));
+  const l = (f) => {
+    (f.key === "Enter" || f.key === " ") && (f.preventDefault(), a(f));
   };
   r.addEventListener("keydown", l), s.push(() => r.removeEventListener("keydown", l));
-  const c = (m) => {
-    m.preventDefault(), m.stopPropagation();
-    const h = ut(e, o);
-    it(h, e);
+  const c = (f) => {
+    f.preventDefault(), f.stopPropagation();
+    const h = yt(e, o);
+    pt(h, e);
   };
   i.addEventListener("click", c), s.push(() => i.removeEventListener("click", c));
-  const d = (m) => {
-    const h = X.get(e);
-    h && !h.contains(m.target) && m.target !== i && !i.contains(m.target) && h.style.display !== "none" && z(h);
+  const d = (f) => {
+    const h = V.get(e);
+    h && !h.contains(f.target) && f.target !== i && !i.contains(f.target) && h.style.display !== "none" && z(h);
   }, u = setTimeout(() => {
     typeof document > "u" || (document.addEventListener("click", d, !0), s.push(() => document.removeEventListener("click", d, !0)));
   }, 100);
@@ -798,14 +843,14 @@ function mt(e, t) {
   };
   e.addEventListener("mouseenter", p), e.addEventListener("mouseleave", g), s.push(() => {
     e.removeEventListener("mouseenter", p), e.removeEventListener("mouseleave", g);
-  }), Y.set(e, s), dt.add(e);
+  }), X.set(e, s), bt.add(e);
 }
-function me(e = {}) {
-  const t = { ...ee, ...e }, n = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+function ge(e = {}) {
+  const t = { ...te, ...e }, n = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
   for (const o of Array.from(n))
-    mt(o, t);
+    wt(o, t);
 }
-function ft() {
+function xt() {
   const e = "header-copy-link-styles";
   if (document.getElementById(e))
     return;
@@ -988,25 +1033,25 @@ function ft() {
     }
   `, document.head.appendChild(t);
 }
-let fe = !1;
-function gt(e = {}) {
-  fe || (fe = !0, ft(), document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", () => {
-    me(e);
-  }) : me(e));
+let he = !1;
+function vt(e = {}) {
+  he || (he = !0, xt(), document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", () => {
+    ge(e);
+  }) : ge(e));
 }
-const V = 50, K = 100, ht = V * K;
-function U(e = 0) {
+const K = 50, Z = 100, kt = K * Z;
+function F(e = 0) {
   if (typeof document > "u")
     return;
   if (console.log("🖼️ Enabling image zoom functionality"), typeof window.GLightbox > "u") {
-    if (e < V) {
+    if (e < K) {
       console.warn(
-        `⚠️ GLightbox not found, retrying in ${K}ms (attempt ${e + 1}/${V})`
-      ), setTimeout(() => U(e + 1), K);
+        `⚠️ GLightbox not found, retrying in ${Z}ms (attempt ${e + 1}/${K})`
+      ), setTimeout(() => F(e + 1), Z);
       return;
     }
     console.error(
-      `❌ GLightbox failed to load after ${ht / 1e3} seconds, aborting image zoom initialization`
+      `❌ GLightbox failed to load after ${kt / 1e3} seconds, aborting image zoom initialization`
     );
     return;
   }
@@ -1052,21 +1097,21 @@ function U(e = 0) {
     console.error("Error initializing GLightbox:", r);
   }
 }
-typeof document < "u" && (document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", () => U()) : setTimeout(() => U(), 500));
-let Z = !0;
-function ge() {
+typeof document < "u" && (document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", () => F()) : setTimeout(() => F(), 500));
+let Q = !0;
+function be() {
   const e = $(".ui-toc-dropdown .toc"), t = $(".expand-toggle");
   if (e.length === 0 || t.length === 0) {
     console.warn("TOC or toggle elements not found for expand/collapse");
     return;
   }
-  Z ? (e.addClass("expand"), t.text("Collapse all")) : (e.removeClass("expand"), t.text("Expand all"));
+  Q ? (e.addClass("expand"), t.text("Collapse all")) : (e.removeClass("expand"), t.text("Expand all"));
 }
-const bt = "https://idvork.in", Q = "idvorkin_dev_origin";
-function yt() {
+const $t = "https://idvork.in", ee = "idvorkin_dev_origin";
+function Et() {
   return window.location.hostname === "idvork.in";
 }
-function _t(e) {
+function Ct(e) {
   try {
     const t = new URL(e), n = t.hostname;
     return n === "localhost" || n === "127.0.0.1" || n.endsWith(".ts.net") ? !0 : t.port !== "" && t.port !== "80" && t.port !== "443";
@@ -1074,29 +1119,29 @@ function _t(e) {
     return !1;
   }
 }
-function wt() {
+function Tt() {
   if (document.referrer)
     try {
       const e = new URL(document.referrer).origin;
-      _t(e) && localStorage.setItem(Q, e);
+      Ct(e) && localStorage.setItem(ee, e);
     } catch {
     }
 }
-function vt() {
+function Lt() {
   const e = `${window.location.pathname}${window.location.search}${window.location.hash}`;
-  if (yt()) {
-    const t = localStorage.getItem(Q) || "http://localhost:4000";
+  if (Et()) {
+    const t = localStorage.getItem(ee) || "http://localhost:4000";
     window.location.href = `${t}${e}`;
   } else
-    localStorage.setItem(Q, window.location.origin), window.location.href = `${bt}${e}`;
+    localStorage.setItem(ee, window.location.origin), window.location.href = `${$t}${e}`;
 }
-function Ce() {
+function Le() {
   const e = $("#right-sidebar"), t = $("#main-content");
   e.length > 0 && (e.removeClass(), e.addClass("col-4 pl-0")), t.length > 0 && (t.removeClass(), t.addClass("col-8 pr-0"));
   const n = $("#id-ui-toc-dropdown");
   n.length > 0 && (n.removeClass(), n.addClass("d-none"));
 }
-function he(e, t) {
+function ye(e, t) {
   const n = $(`#${e}`);
   if (n.length === 0) {
     console.warn(`Target element #${e} not found for TOC generation`);
@@ -1114,15 +1159,15 @@ function he(e, t) {
     targetId: e
   }), n.text() === "undefined" && n.html("");
   const o = $('<div class="toc-menu"></div'), r = $('<a class="expand-toggle" href="#">Collapse all</a>'), i = $('<a class="back-to-top" href="#">Top of page</a>'), s = $('<a class="go-to-bottom" href="#">Bottom of page</a>'), a = $('<a class="go-to-bottom" href="#">Pin ToC</a>');
-  ge(), r.click((l) => {
-    l.preventDefault(), l.stopPropagation(), Z = !Z, ge();
+  be(), r.click((l) => {
+    l.preventDefault(), l.stopPropagation(), Q = !Q, be();
   }), i.click((l) => {
     l.preventDefault(), l.stopPropagation(), window.scrollTo(0, 0);
   }), s.click((l) => {
     l.preventDefault(), l.stopPropagation(), window.scrollTo(0, document.body.scrollHeight);
-  }), a.click((l) => Ce()), o.append(r).append(i).append(s), t && o.append(a), n.append(o);
+  }), a.click((l) => Le()), o.append(r).append(i).append(s), t && o.append(a), n.append(o);
 }
-async function xt(e) {
+async function St(e) {
   let t, n, o;
   try {
     if (!e) {
@@ -1172,7 +1217,7 @@ async function xt(e) {
   if (n)
     for (const u of n.sort(s)) {
       const p = e[u];
-      i.append(q(p));
+      i.append(J(p));
     }
   const a = [];
   for (const u of o)
@@ -1181,12 +1226,12 @@ async function xt(e) {
   if (a)
     for (const u of a.sort(s)) {
       const p = e[u];
-      l.append(q(p));
+      l.append(J(p));
     }
   const c = r.find("#graph"), d = t.replace(/\//g, "");
   c.append(`<a href='/graph#${d}'>${t} (${d}) </a>`);
 }
-function kt(e, t) {
+function It(e, t) {
   if (!t)
     return S(e, "URL info is undefined");
   const n = t.url || "#", o = t.title || "Untitled", r = t.description || "No description available", i = `(From:<a href='${n}'> ${o}</a>)`;
@@ -1197,7 +1242,7 @@ function kt(e, t) {
 function S(e, t) {
   return `<span class='text-danger'>Error: Invalid link for ${e?.attr ? e.attr("href") : "unknown"} ${t} </span>`;
 }
-function $t(e) {
+function Nt(e) {
   if (!e) {
     console.log("No backlinks data available");
     return;
@@ -1228,7 +1273,7 @@ function $t(e) {
           o.html(S(o, "not found in url info"));
           return;
         }
-        o.html(kt(o, e.url_info[r]));
+        o.html(It(o, e.url_info[r]));
       } catch (r) {
         o?.html ? o.html(S(o, r)) : console.error("Error processing link and unable to display error:", r);
       }
@@ -1237,19 +1282,19 @@ function $t(e) {
     console.error("Error processing summary links:", t);
   }
 }
-async function Et() {
+async function Pt() {
   const e = "__idvorkin_add_link_loader_initialized__";
-  window[e] || (window[e] = !0, xt(await v()), $t(await Ct()));
+  window[e] || (window[e] = !0, St(await x()), Nt(await Mt()));
 }
-let M = null;
-async function Ct() {
+let A = null;
+async function Mt() {
   try {
-    if (M != null)
-      return M;
+    if (A != null)
+      return A;
     const e = "/back-links.json";
     try {
       const t = await $.getJSON(e);
-      return t.redirects || (t.redirects = {}), t.url_info || (t.url_info = {}), M = t, M;
+      return t.redirects || (t.redirects = {}), t.url_info || (t.url_info = {}), A = t, A;
     } catch (t) {
       return console.error("Error fetching backlinks JSON:", t), { redirects: {}, url_info: {} };
     }
@@ -1257,12 +1302,12 @@ async function Ct() {
     return console.error("Error in get_back_links:", e), { redirects: {}, url_info: {} };
   }
 }
-function Lt() {
+function At() {
   window.location.href = "/";
 }
-function Tt() {
+function Ht() {
   const e = window.Mousetrap();
-  e.bind("s", (n) => Lt()), e.bind("t", (n) => Ce()), e.bind("p", (n) => vt()), e.bind("a", (n) => {
+  e.bind("s", (n) => At()), e.bind("t", (n) => Le()), e.bind("p", (n) => Lt()), e.bind("a", (n) => {
     location.href = "/all";
   }), e.bind("m", (n) => {
     location.href = "/toc";
@@ -1279,10 +1324,11 @@ Try these shortcuts:
   a - all posts
   m - global toc
   6 - family journal
+  Ctrl/Cmd+Shift+A - toggle annotate (comment) mode
   `;
   e.bind("?", (n) => alert(t));
 }
-function St(e) {
+function Rt(e) {
   for (const [t, n] of Object.entries(e)) {
     const o = typeof $ < "u" && $.fn ? $(`a[href=${t}]`).first()[0] : document.querySelector(`a[href="${t}"]`);
     if (!o) return;
@@ -1290,7 +1336,7 @@ function St(e) {
     r.children.length > 0 && r.children[0].remove(), o.replaceWith(r), n.remove();
   }
 }
-function It() {
+function Bt() {
   const e = {}, t = typeof $ < "u" && $.fn ? $("ul").toArray() : Array.from(document.querySelectorAll("ul"));
   for (const n of t) {
     const o = n.firstElementChild;
@@ -1302,18 +1348,18 @@ function It() {
   }
   return e;
 }
-function G() {
-  const e = It();
-  St(e);
+function W() {
+  const e = Bt();
+  Rt(e);
 }
-function D() {
+function O() {
   const e = "__idvorkin_load_globals_initialized__";
-  window[e] || (window[e] = !0, wt(), $(Et), $(Tt), typeof $ < "u" && $.fn && $.fn.ready ? $(document).ready(G) : typeof document < "u" && (document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", G) : G()), We(), document.getElementById("last-modified-posts") && Fe(), $(() => {
-    he("ui-toc", !0), he("ui-toc-affix", !1);
-  }), gt(), U(), tt());
+  window[e] || (window[e] = !0, Tt(), $(Pt), $(Ht), typeof $ < "u" && $.fn && $.fn.ready ? $(document).ready(W) : typeof document < "u" && (document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", W) : W()), Je(), document.getElementById("last-modified-posts") && je(), $(() => {
+    ye("ui-toc", !0), ye("ui-toc-affix", !1);
+  }), vt(), F(), lt());
 }
-typeof $ < "u" && $.fn && $.fn.ready ? $(document).ready(D) : typeof document < "u" && (document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", D) : D());
-function W(e) {
+typeof $ < "u" && $.fn && $.fn.ready ? $(document).ready(O) : typeof document < "u" && (document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", O) : O());
+function q(e) {
   const t = $("<div/>"), n = `<h4> <a href='${e.url}'}>${e.title}</a></h4>`, o = [
     "January",
     "February",
@@ -1343,24 +1389,24 @@ function W(e) {
       </div>`
   )) : t.append(s), t.html();
 }
-function Nt(e) {
+function Dt(e) {
   return e.filter((t) => t.title.toLowerCase().includes("achievement"));
 }
-function Pt(e) {
+function zt(e) {
   return e.filter((t) => t.tags.includes("family-journal"));
 }
-function Mt(e) {
+function Ot(e) {
   if (console.log("Processing", e.length, "posts"), !e) {
     console.log("No posts being imported");
     return;
   }
   const t = "#random-post", n = "#achievment", o = "#random-recent";
-  E(t, () => W(x(e))), E(n, () => W(x(Nt(e)))), E(o, () => W(x(Pt(e))));
+  E(t, () => q(v(e))), E(n, () => q(v(Dt(e)))), E(o, () => q(v(zt(e))));
 }
-function te() {
-  $.getJSON("/ig66/ig66-export.json", Mt);
+function ne() {
+  $.getJSON("/ig66/ig66-export.json", Ot);
 }
-function At(e) {
+function Ut(e) {
   const t = e.title.replace(/ /g, "%20"), n = ["igor", "ammon"];
   return `
   <div>
@@ -1371,37 +1417,37 @@ function At(e) {
   </div>
   `;
 }
-function Ht(e, t) {
+function Ft(e, t) {
   if (!t) {
     console.log("No roles being imported");
     return;
   }
-  console.log("Processing", t.roles.length, "roles"), E(e, () => At(x(t.roles)));
+  console.log("Processing", t.roles.length, "roles"), E(e, () => Ut(v(t.roles)));
 }
-function ne(e) {
-  $.getJSON("/eulogy.json", (n) => Ht(e, n));
+function oe(e) {
+  $.getJSON("/eulogy.json", (n) => Ft(e, n));
 }
-class f {
+class m {
   constructor({
     name: t,
     value: n = 25,
     children: o = []
   }) {
-    this.name = t, this.children = ve(o), this.value = n;
+    this.name = t, this.children = ke(o), this.value = n;
   }
 }
-function oe(e = Le, t = Rt) {
+function re(e = Se, t = Gt) {
   const n = e();
   for (const o of n.keys())
     t(o, n.get(o));
 }
-function Rt(e, t, n = $, o = E) {
-  const r = () => `<span>${x(
+function Gt(e, t, n = $, o = E) {
+  const r = () => `<span>${v(
     t
   )}</span><span style="float: right; cursor: pointer;" title="Click for another prompt">🔄</span>`, i = n('<div class="alert alert-primary" role="alert"/>');
   n(e).after(i), o(i, r);
 }
-function Le(e = $) {
+function Se(e = $) {
   const t = e("h3").first();
   let n = t, o = [];
   const r = /* @__PURE__ */ new Map();
@@ -1414,7 +1460,7 @@ function Le(e = $) {
   }
   return r.set(n, o), r;
 }
-function* F(e) {
+function* G(e) {
   if (!e)
     return;
   const t = [];
@@ -1425,45 +1471,45 @@ function* F(e) {
     yield [n, o];
   }
 }
-function Bt(e) {
-  const t = Array.from(F(e)).map(([n, o]) => [n.name, o?.name]);
+function jt(e) {
+  const t = Array.from(G(e)).map(([n, o]) => [n.name, o?.name]);
   return {
     ids: t.map(([n, o]) => n),
     labels: t.map(([n, o]) => n),
     parents: t.map(([n, o]) => o)
   };
 }
-function be(e = Le) {
+function _e(e = Se) {
   const t = e(), n = Array.from(t.entries()).map(([o, r], i) => [o.text(), r]);
   return new Map(n);
 }
-function ye(e, t, n) {
-  const o = Array.from(F(t)).find(([a, l]) => a.name === e);
+function we(e, t, n) {
+  const o = Array.from(G(t)).find(([a, l]) => a.name === e);
   if (!o)
     return "Click in any box or circle";
-  const [r, i] = o, s = Array.from(F(r)).map(([a, l]) => a).filter((a) => {
+  const [r, i] = o, s = Array.from(G(r)).map(([a, l]) => a).filter((a) => {
     const l = n.has(a.name), c = n.has(`${a.name}🔗`);
     return l || c;
   }).flatMap((a) => (n.get(a.name) || n.get(`${a.name}🔗`) || []).map((c) => `${a.name}: ${c}`));
-  return s.length === 0 ? "Click in any box or circle" : x(s);
+  return s.length === 0 ? "Click in any box or circle" : v(s);
 }
-function zt(e, t = document) {
+function Wt(e, t = document) {
   const n = (r) => r.replace(/🔗/g, "").trim(), o = n(e ?? "");
   if (!o) return null;
   for (const r of Array.from(t.querySelectorAll("h2, h3")))
     if (n(r.textContent ?? "") === o) return r;
   return null;
 }
-function Dt(e, t = window) {
-  const n = zt(e, t.document);
+function qt(e, t = window) {
+  const n = Wt(e, t.document);
   return n ? (n.scrollIntoView({ behavior: "smooth", block: "start" }), n.id && t.history?.replaceState && t.history.replaceState(null, "", `#${n.id}`), !0) : !1;
 }
-async function re(e, t, n, o = $, r = Plotly) {
+async function ie(e, t, n, o = $, r = Plotly) {
   if (!r) {
     console.error("Plotly is not available");
     return;
   }
-  const i = Bt(n), s = {
+  const i = jt(n), s = {
     type: "sunburst",
     outsidetextfont: { size: 20, color: "#377eb8" },
     // leaf: {opacity: 0.4},
@@ -1485,25 +1531,25 @@ async function re(e, t, n, o = $, r = Plotly) {
       o(`#${t}`).text(u);
     };
     o(`#${t}`).first().click(() => {
-      const u = o("#sunburst text:first").text(), p = ye(u, n, be());
+      const u = o("#sunburst text:first").text(), p = we(u, n, _e());
       c(p);
     });
     const d = document.getElementById(e);
     return d && typeof d.on == "function" && d.on("plotly_click", (u) => {
       if (u?.points?.[0]) {
-        const p = u.points[0].label, g = ye(p, n, be());
+        const p = u.points[0].label, g = we(p, n, _e());
         c(g);
-        const m = Array.from(F(n)).find(
+        const f = Array.from(G(n)).find(
           ([b, j]) => b.name === p
-        ), h = m ? m[0] : void 0;
-        h && !h.children?.length && Dt(p);
+        ), h = f ? f[0] : void 0;
+        h && !h.children?.length && qt(p);
       }
     }), d;
   } catch (c) {
     return console.error("Failed to create sunburst plot:", c), null;
   }
 }
-function Ot(e = "Root", t = null, n = $) {
+function Jt(e = "Root", t = null, n = $) {
   const o = t ? n(t).find("h2") : n("h2"), r = [];
   return o.each((i, s) => {
     const a = n(s), l = a.text().trim();
@@ -1513,77 +1559,77 @@ function Ot(e = "Root", t = null, n = $) {
     for (; d.length > 0 && d.prop("tagName") !== "H2"; ) {
       if (d.prop("tagName") === "H3") {
         const u = d.text().trim();
-        u && c.push(new f({ name: u }));
+        u && c.push(new m({ name: u }));
       }
       d = d.next();
     }
-    c.length > 0 && r.push(new f({ name: l, children: c }));
-  }), new f({ name: e, children: r });
+    c.length > 0 && r.push(new m({ name: l, children: c }));
+  }), new m({ name: e, children: r });
 }
-async function Ut(e, t, n = "Root", o = null, r = $, i = Plotly) {
-  const s = Ot(n, o, r);
-  return re(e, t, s, r, i);
+async function Yt(e, t, n = "Root", o = null, r = $, i = Plotly) {
+  const s = Jt(n, o, r);
+  return ie(e, t, s, r, i);
 }
-class Ft {
+class Xt {
   /**
    * Gets the tree structure for Seven Habits visualization
    * @returns {TreeNode} The root node of the Seven Habits tree
    */
   get_tree() {
-    return new f({
+    return new m({
       name: "7H ",
       children: [
-        new f({ name: "" }),
-        new f({ name: "Be Proactive" }),
-        new f({ name: "Begin with the end in mind" }),
-        new f({ name: "First things First" }),
-        new f({ name: "Think Win/Win" }),
-        new f({ name: "First Understand" }),
-        new f({ name: "Synergize" }),
-        new f({ name: "Sharpen the Saw" })
+        new m({ name: "" }),
+        new m({ name: "Be Proactive" }),
+        new m({ name: "Begin with the end in mind" }),
+        new m({ name: "First things First" }),
+        new m({ name: "Think Win/Win" }),
+        new m({ name: "First Understand" }),
+        new m({ name: "Synergize" }),
+        new m({ name: "Sharpen the Saw" })
       ]
     });
   }
 }
-class jt {
+class Vt {
   /**
    * Gets the tree structure for Things I Enjoy visualization
    * @returns {TreeNode} The root node of the Things I Enjoy tree
    */
   get_tree() {
-    const t = new f({
+    const t = new m({
       name: "Health",
       children: [{ name: "Physical" }, { name: "Emotional" }, { name: "Cognative" }],
       value: 31
-    }), n = new f({
+    }), n = new m({
       name: "Magic",
       children: [
-        new f({ name: "Card Magic" }),
-        new f({ name: "Coin Magic" }),
-        new f({ name: "Band Magic" })
+        new m({ name: "Card Magic" }),
+        new m({ name: "Coin Magic" }),
+        new m({ name: "Band Magic" })
       ]
-    }), o = new f({
+    }), o = new m({
       name: "Hobbies",
-      children: [new f({ name: "Biking" }), new f({ name: "Tech" }), new f({ name: "Juggling" })]
-    }), r = new f({
+      children: [new m({ name: "Biking" }), new m({ name: "Tech" }), new m({ name: "Juggling" })]
+    }), r = new m({
       name: "Relationships",
       children: [
-        new f({ name: "Zach" }),
-        new f({ name: "Amelia" }),
-        new f({ name: "Tori" }),
-        new f({ name: "Friends" })
+        new m({ name: "Zach" }),
+        new m({ name: "Amelia" }),
+        new m({ name: "Tori" }),
+        new m({ name: "Friends" })
       ]
-    }), i = new f({
+    }), i = new m({
       name: "Joy",
-      children: [new f({ name: "Balloons" }), new f({ name: "Joy to Others" })]
+      children: [new m({ name: "Balloons" }), new m({ name: "Joy to Others" })]
     });
-    return new f({
+    return new m({
       name: "Invest in",
       children: [t, n, o, r, i]
     });
   }
 }
-function Gt({ url: e, title: t, description: n }) {
+function Kt({ url: e, title: t, description: n }) {
   const o = `<a href='${e}'}>${t}</a>`, r = `audio_player_${Math.floor(Math.random() * 1e10)}`, i = e.replace(/\//g, "_");
   return `
     <div>
@@ -1594,10 +1640,10 @@ function Gt({ url: e, title: t, description: n }) {
     </div>
   `;
 }
-async function Te(e = v, t = x) {
+async function Ie(e = x, t = v) {
   try {
     const n = await e(), o = Object.entries(n).map((i) => i[1]), r = t(o);
-    return Gt({
+    return Kt({
       url: r.url,
       title: r.title,
       description: r.description
@@ -1606,43 +1652,43 @@ async function Te(e = v, t = x) {
     return console.error("Error generating random post HTML:", n), "<div>Could not load random post</div>";
   }
 }
-function $n(e = "#e1", t = "#e2", n = "#e3", o = ne) {
+function Nn(e = "#e1", t = "#e2", n = "#e3", o = oe) {
   try {
     o(e), o(t), o(n);
   } catch (r) {
     console.error("Error loading random eulogy:", r);
   }
 }
-function En(e = re, t = oe, n = te, o = ne, r = E) {
+function Pn(e = ie, t = re, n = ne, o = oe, r = E) {
   try {
-    e("sunburst", "sunburst_text", new jt().get_tree()), t(), n(), o("#random-eulogy-role"), r("#random-blog-posts", async () => await Te());
+    e("sunburst", "sunburst_text", new Vt().get_tree()), t(), n(), o("#random-eulogy-role"), r("#random-blog-posts", async () => await Ie());
   } catch (i) {
     console.error("❌ Error loading enjoy page:", i);
   }
 }
-function Cn(e = re, t = oe) {
+function Mn(e = ie, t = re) {
   try {
-    e("sunburst", "sunburst_text", new Ft().get_tree()), t();
+    e("sunburst", "sunburst_text", new Xt().get_tree()), t();
   } catch (n) {
     console.error("Error loading 7 habits page:", n);
   }
 }
-function Ln(e = te) {
+function An(e = ne) {
   try {
     e();
   } catch (t) {
     console.error("Error loading IG66 page:", t);
   }
 }
-function Tn(e = Jt, t = qt, n = Wt) {
+function Hn(e = en, t = Qt, n = Zt) {
   try {
     e("balance-heatmap-rest"), t("balance-heatmap-work"), n("balance-radar-map-ideal");
   } catch (o) {
     console.error("Error loading balance page:", o);
   }
 }
-const Se = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"], Ie = 20, Ne = 100, Pe = "#00BF00";
-async function Wt(e, t) {
+const Ne = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"], Pe = 20, Me = 100, Ae = "#00BF00";
+async function Zt(e, t) {
   const n = [
     {
       type: "scatterpolar",
@@ -1678,9 +1724,9 @@ async function Wt(e, t) {
   else
     console.warn("Plotly is not defined, skipping chart rendering");
 }
-async function qt(e, t) {
+async function Qt(e, t) {
   const n = ["Tech", "Work"], o = {
-    height: Ie * n.length + Ne,
+    height: Pe * n.length + Me,
     margin: {
       t: 5
     },
@@ -1688,7 +1734,7 @@ async function qt(e, t) {
   }, r = [
     [0, "darkblue"],
     [0.4, "blue"],
-    [0.5, Pe],
+    [0.5, Ae],
     [0.6, "darkred"],
     [1, "red"]
   ], i = [
@@ -1701,7 +1747,7 @@ async function qt(e, t) {
       colorscale: r,
       zmin: 0,
       zmax: 10,
-      x: Se.slice(2, 13),
+      x: Ne.slice(2, 13),
       y: n,
       z: i,
       type: "heatmap"
@@ -1718,7 +1764,7 @@ async function qt(e, t) {
   else
     console.warn("Plotly is not defined, skipping chart rendering");
 }
-async function Jt(e, t) {
+async function en(e, t) {
   const n = ["Health", "Hobbies", "Family", "Magic"], o = [
     // J, F, M, A, M, J, J, A, S, O, N, D
     [4, 4, 3, 4, 5, 3, 2, 2, 3, 2],
@@ -1734,13 +1780,13 @@ async function Jt(e, t) {
       colorscale: [
         [0, "red"],
         [0.4, "darkred"],
-        [0.5, Pe],
+        [0.5, Ae],
         [0.6, "blue"],
         [1, "darkblue"]
       ],
       zmin: 0,
       zmax: 10,
-      x: Se.slice(2, 13),
+      x: Ne.slice(2, 13),
       y: n.reverse(),
       z: o.reverse(),
       type: "heatmap"
@@ -1748,7 +1794,7 @@ async function Jt(e, t) {
   ], s = {
     displayModeBar: !1
   }, a = {
-    height: Ie * n.length + Ne,
+    height: Pe * n.length + Me,
     margin: {
       t: 5
     },
@@ -1763,14 +1809,14 @@ async function Jt(e, t) {
   else
     console.warn("Plotly is not defined, skipping chart rendering");
 }
-function Sn(e = "Topics", t = Ut, n = oe, o = te, r = ne, i = E) {
+function Rn(e = "Topics", t = Yt, n = re, o = ne, r = oe, i = E) {
   try {
-    t("sunburst", "sunburst_text", e), n(), o(), r("#random-eulogy-role"), i("#random-blog-posts", async () => await Te());
+    t("sunburst", "sunburst_text", e), n(), o(), r("#random-eulogy-role"), i("#random-blog-posts", async () => await Ie());
   } catch (s) {
     console.error("Error loading auto-generated sunburst:", s);
   }
 }
-const k = 150, Yt = 2500, Xt = 12e3, Vt = 2, Kt = /* @__PURE__ */ new Set([
+const k = 150, tn = 2500, nn = 12e3, on = 2, rn = /* @__PURE__ */ new Set([
   "ArrowUp",
   "ArrowDown",
   "ArrowLeft",
@@ -1782,7 +1828,7 @@ const k = 150, Yt = 2500, Xt = 12e3, Vt = 2, Kt = /* @__PURE__ */ new Set([
   " ",
   "Spacebar"
 ]);
-function Zt(e, t = document) {
+function sn(e, t = document) {
   const n = e.startsWith("#") ? e.slice(1) : e;
   if (!n) return null;
   let o = n;
@@ -1798,23 +1844,23 @@ function Zt(e, t = document) {
   }
   return null;
 }
-function Qt(e, t = window) {
+function an(e, t = window) {
   const n = e.ownerDocument, o = n.scrollingElement || n.documentElement, r = (a) => {
     const l = Number.parseFloat(a);
     return Number.isFinite(l) ? l : 0;
   }, i = r(t.getComputedStyle(o).scrollPaddingTop), s = r(t.getComputedStyle(e).scrollMarginTop);
   return e.getBoundingClientRect().top - i - s;
 }
-function en(e = window) {
+function ln(e = window) {
   const t = () => {
   }, n = e.document;
   if (!e.location.hash || e.__readerScrolled || e.performance?.getEntriesByType?.("navigation")?.[0]?.type === "back_forward") return t;
-  let r = !1, i = 0, s = 0, l = (e.performance?.now?.() ?? Date.now()) + Xt;
+  let r = !1, i = 0, s = 0, l = (e.performance?.now?.() ?? Date.now()) + nn;
   const c = () => e.performance?.now?.() ?? Date.now(), d = () => {
     if (!r) {
       r = !0, e.clearTimeout(s), e.removeEventListener("scroll", g);
       for (const _ of ["wheel", "touchstart", "mousedown", "keydown"])
-        e.removeEventListener(_, m, !0);
+        e.removeEventListener(_, f, !0);
       b?.disconnect();
     }
   }, u = () => {
@@ -1827,12 +1873,12 @@ function en(e = window) {
       p(k);
       return;
     }
-    const _ = Zt(e.location.hash, n);
+    const _ = sn(e.location.hash, n);
     if (!_) {
       p(k);
       return;
     }
-    Math.abs(Qt(_, e)) > Vt && _.scrollIntoView({ block: "start", behavior: "auto" }), p(k);
+    Math.abs(an(_, e)) > on && _.scrollIntoView({ block: "start", behavior: "auto" }), p(k);
   };
   function p(_) {
     r || (e.clearTimeout(s), s = e.setTimeout(u, _));
@@ -1840,32 +1886,32 @@ function en(e = window) {
   function g() {
     i = c();
   }
-  function m(_) {
-    _.type === "keydown" && !Kt.has(_.key) || d();
+  function f(_) {
+    _.type === "keydown" && !rn.has(_.key) || d();
   }
   e.addEventListener("scroll", g, { passive: !0 });
   for (const _ of ["wheel", "touchstart", "mousedown", "keydown"])
-    e.addEventListener(_, m, { passive: !0, capture: !0 });
+    e.addEventListener(_, f, { passive: !0, capture: !0 });
   const h = e.ResizeObserver, b = typeof h == "function" ? new h(() => p(k)) : void 0;
   b && n.body && b.observe(n.body), b && n.documentElement && b.observe(n.documentElement);
   const j = () => {
-    l = Math.min(l, c() + Yt), p(k);
+    l = Math.min(l, c() + tn), p(k);
   };
   return n.readyState === "complete" ? j() : e.addEventListener("load", j, { once: !0 }), p(k), d;
 }
-function tn() {
+function cn() {
   if (!(typeof window > "u"))
     return window["@algolia/autocomplete-js"]?.autocomplete;
 }
-const nn = "Search Igor's Musings ...", _e = "/pagefind/", on = "/search-titles.json";
-function L(e) {
+const dn = "Search Igor's Musings ...", xe = "/pagefind/", un = "/search-titles.json";
+function T(e) {
   const t = document.createElement("div");
   return t.textContent = e || "", t.innerHTML;
 }
-function I(e) {
-  return L(e).replace(/"/g, "&quot;");
+function N(e) {
+  return T(e).replace(/"/g, "&quot;");
 }
-function T(e) {
+function L(e) {
   if (!e) return !1;
   if (e.startsWith("/"))
     return !0;
@@ -1876,122 +1922,122 @@ function T(e) {
     return !1;
   }
 }
-function rn(e) {
+function pn(e) {
   return e && e.replace(/\/index\.html$/, "/").replace(/\.html$/, "");
 }
-const sn = "/search-pins.json";
-let A = null;
-async function an() {
-  return A || (A = (async () => {
-    const e = await fetch(sn);
+const fn = "/search-pins.json";
+let H = null;
+async function mn() {
+  return H || (H = (async () => {
+    const e = await fetch(fn);
     if (!e.ok) throw new Error(`pins config HTTP ${e.status}`);
     const t = await e.json();
     if (!Array.isArray(t)) throw new Error("pins config is not an array");
     return t;
-  })().catch((e) => (console.warn("Search pins unavailable:", e), A = null, null))), A;
+  })().catch((e) => (console.warn("Search pins unavailable:", e), H = null, null))), H;
 }
-function we(e) {
+function ve(e) {
   return e.toLowerCase().replace(/[\s-]+/g, "");
 }
-async function ln(e) {
-  const t = await an();
+async function gn(e) {
+  const t = await mn();
   if (!t || t.length === 0) return [];
-  const n = we(e), o = t.filter((i) => i.match?.some((s) => s && n.includes(we(s))));
+  const n = ve(e), o = t.filter((i) => i.match?.some((s) => s && n.includes(ve(s))));
   if (o.length === 0) return [];
-  const r = await v().catch(() => ({}));
+  const r = await x().catch(() => ({}));
   return o.flatMap((i) => i.urls || []).map((i) => ({
     url: i.url,
     title: r?.[i.url]?.title || i.title || i.url,
     excerpt: r?.[i.url]?.description || "",
     source: "pinned"
-  })).filter((i) => T(i.url));
+  })).filter((i) => L(i.url));
 }
-let H = null;
-async function cn() {
-  return H || (H = (async () => {
+let R = null;
+async function hn() {
+  return R || (R = (async () => {
     const e = await import(
       /* @vite-ignore */
-      `${_e}pagefind.js`
+      `${xe}pagefind.js`
     );
-    return await e.options({ basePath: _e }), e;
+    return await e.options({ basePath: xe }), e;
   })().catch((e) => {
-    throw H = null, e;
-  })), H;
+    throw R = null, e;
+  })), R;
 }
-async function dn(e, t = 10) {
+async function bn(e, t = 10) {
   if (!e || !e.trim()) return [];
   try {
-    const r = (await (await cn()).search(e)).results.slice(0, t);
+    const r = (await (await hn()).search(e)).results.slice(0, t);
     return (await Promise.all(r.map((s) => s.data()))).map((s) => ({
-      url: rn(s.url),
+      url: pn(s.url),
       title: s.meta?.title || s.url,
       excerpt: s.excerpt || "",
       source: "pagefind"
-    })).filter((s) => T(s.url));
+    })).filter((s) => L(s.url));
   } catch (n) {
     return console.warn("Pagefind unavailable, falling back to title search:", n), [];
   }
 }
-let R = null;
-async function un() {
-  return R || (R = (async () => {
-    const [{ default: e }, t] = await Promise.all([import("./minisearch.js"), fetch(on)]);
+let B = null;
+async function yn() {
+  return B || (B = (async () => {
+    const [{ default: e }, t] = await Promise.all([import("./minisearch.js"), fetch(un)]);
     if (!t.ok) throw new Error(`title index HTTP ${t.status}`);
     const o = (await t.json()).map((i, s) => ({ id: s, title: i.t, url: i.u })), r = new e({
       fields: ["title"],
       storeFields: ["title", "url"]
     });
     return r.addAll(o), r;
-  })().catch((e) => (console.warn("Title index unavailable:", e), R = null, null))), R;
+  })().catch((e) => (console.warn("Title index unavailable:", e), B = null, null))), B;
 }
-async function pn(e, t = 5) {
+async function _n(e, t = 5) {
   if (!e || !e.trim()) return [];
-  const n = await un();
+  const n = await yn();
   if (!n) return [];
-  const o = await v().catch(() => ({}));
+  const o = await x().catch(() => ({}));
   return n.search(e, { fuzzy: 0.3, prefix: !0 }).slice(0, t).map((r) => ({
     url: r.url,
     title: r.title,
     excerpt: o?.[r.url]?.description || "",
     source: "title"
-  })).filter((r) => T(r.url));
+  })).filter((r) => L(r.url));
 }
-async function mn(e, t = 10) {
+async function wn(e, t = 10) {
   if (!e || !e.trim()) return [];
   const [n, o, r] = await Promise.all([
-    ln(e),
-    dn(e, t),
-    pn(e, 5)
+    gn(e),
+    bn(e, t),
+    _n(e, 5)
   ]), i = /* @__PURE__ */ new Set(), s = [];
   for (const a of [...n, ...o, ...r])
     i.has(a.url) || (i.add(a.url), s.push(a));
   return s.slice(0, t);
 }
-function fn(e) {
-  return e.source === "pagefind" ? e.excerpt || "" : L(e.excerpt || "");
+function xn(e) {
+  return e.source === "pagefind" ? e.excerpt || "" : T(e.excerpt || "");
 }
-function gn(e) {
-  if (!T(e.url))
+function vn(e) {
+  if (!L(e.url))
     return console.warn("Invalid URL skipped in renderSearchHit:", e.url), "<div>Invalid result</div>";
-  const t = I(e.url);
+  const t = N(e.url);
   return `
            <span data-url="${t}" style="cursor: pointer;">
-              <b> <a href="${t}">${L(e.title)}</a></b> <span>${fn(e)}</span>
+              <b> <a href="${t}">${T(e.title)}</a></b> <span>${xn(e)}</span>
            </span>
         `;
 }
-async function hn() {
-  const e = performance.now(), t = await v(), n = performance.now() - e;
+async function kn() {
+  const e = performance.now(), t = await x(), n = performance.now() - e;
   console.log(`  📊 [get_random_post] Loaded links in ${n.toFixed(0)}ms`);
-  const o = Object.entries(t).map((s) => s[1]), r = x(o);
+  const o = Object.entries(t).map((s) => s[1]), r = v(o);
   return {
     title: r.title,
     url: r.url,
     description: r.description
   };
 }
-async function In(e = 4) {
-  const t = performance.now(), n = await v(), o = performance.now() - t;
+async function Bn(e = 4) {
+  const t = performance.now(), n = await x(), o = performance.now() - t;
   console.log(`  📊 [get_random_posts_batch] Loaded links once in ${o.toFixed(0)}ms`);
   const r = Object.entries(n).map((a) => a[1]), i = [], s = /* @__PURE__ */ new Set();
   for (; i.length < e && i.length < r.length; ) {
@@ -2008,9 +2054,9 @@ async function In(e = 4) {
   }
   return i;
 }
-async function bn(e = 4) {
+async function $n(e = 4) {
   try {
-    const t = performance.now(), n = await v(), o = performance.now() - t;
+    const t = performance.now(), n = await x(), o = performance.now() - t;
     return console.log(`  📊 [get_recent_posts] Loaded links in ${o.toFixed(0)}ms`), Object.entries(n).map(([a, l]) => ({
       url: a,
       title: l.title || a,
@@ -2024,7 +2070,7 @@ async function bn(e = 4) {
     return console.error("❌ Error loading recent posts:", t), [];
   }
 }
-async function yn(e = 3) {
+async function En(e = 3) {
   return {
     sourceId: "random_posts",
     async getItems() {
@@ -2032,7 +2078,7 @@ async function yn(e = 3) {
       return await Promise.all(
         t.map(async (o) => {
           try {
-            return await hn();
+            return await kn();
           } catch (r) {
             return console.error("Error getting random post:", r), { url: "", title: "Error", description: "Failed to load post" };
           }
@@ -2044,12 +2090,12 @@ async function yn(e = 3) {
     },
     templates: {
       item({ item: t, createElement: n }) {
-        return T(t.url) ? n("div", {
+        return L(t.url) ? n("div", {
           dangerouslySetInnerHTML: {
             __html: `
-            <span data-url="${I(t.url)}" style="cursor: pointer;">
-           <b> <a href="${I(t.url)}">${L(t.title)}</a></b>
-            <span>${L(t.description)}</span>
+            <span data-url="${N(t.url)}" style="cursor: pointer;">
+           <b> <a href="${N(t.url)}">${T(t.title)}</a></b>
+            <span>${T(t.description)}</span>
             </span>
             `
           }
@@ -2069,23 +2115,23 @@ async function yn(e = 3) {
     }
   };
 }
-async function _n(e = 4) {
+async function Cn(e = 4) {
   return {
     sourceId: "recent_posts",
     async getItems() {
-      return await bn(e);
+      return await $n(e);
     },
     getItemUrl({ item: t }) {
       return t.url;
     },
     templates: {
       item({ item: t, createElement: n }) {
-        return T(t.url) ? n("div", {
+        return L(t.url) ? n("div", {
           dangerouslySetInnerHTML: {
             __html: `
-            <span data-url="${I(t.url)}" style="cursor: pointer;">
-           <b> <a href="${I(t.url)}">${L(t.title)}</a></b>
-            <span>${L(t.description)}</span>
+            <span data-url="${N(t.url)}" style="cursor: pointer;">
+           <b> <a href="${N(t.url)}">${T(t.title)}</a></b>
+            <span>${T(t.description)}</span>
             </span>
             `
           }
@@ -2105,17 +2151,17 @@ async function _n(e = 4) {
     }
   };
 }
-function wn(e, t = 10) {
+function Tn(e, t = 10) {
   return {
     sourceId: "featured_posts",
     async getItems() {
-      return await mn(e, t);
+      return await wn(e, t);
     },
     templates: {
       item({ item: n, createElement: o }) {
         return o("div", {
           dangerouslySetInnerHTML: {
-            __html: gn(n)
+            __html: vn(n)
           }
         });
       },
@@ -2139,15 +2185,15 @@ function wn(e, t = 10) {
     }
   };
 }
-async function Nn(e, t = {}) {
-  const { featuredCount: n = 10, recentCount: o = 4, randomCount: r = 3 } = t, i = tn();
+async function Dn(e, t = {}) {
+  const { featuredCount: n = 10, recentCount: o = 4, randomCount: r = 3 } = t, i = cn();
   if (!i) {
     console.error("Autocomplete is not defined");
     return;
   }
-  const s = await yn(r), a = await _n(o);
+  const s = await En(r), a = await Cn(o);
   function l({ query: d }) {
-    return !d || d.length === 0 ? [a, s] : [wn(d, n)];
+    return !d || d.length === 0 ? [a, s] : [Tn(d, n)];
   }
   const c = e.startsWith("#") ? e : `#${e}`;
   if ($(c).length === 0) {
@@ -2156,61 +2202,61 @@ async function Nn(e, t = {}) {
   }
   return i({
     container: c,
-    placeholder: nn,
+    placeholder: dn,
     getSources: l,
     debug: !1,
     openOnFocus: !0,
     detachedMediaQuery: ""
   });
 }
-en();
+ln();
 $(document).ready(() => {
-  Me(D);
+  He(O);
   const e = () => {
     typeof Mousetrap < "u" && Mousetrap.bind("s", () => t());
   }, t = () => {
     const o = $("#search-box");
     o.length > 0 && o.focus();
   };
-  e(), vn(), xn();
+  e(), Ln(), Sn();
   const n = ["item1", "item2", "item3"];
-  console.log("Random item:", x(n)), console.log("Shuffled items:", ve([...n])), v().then((o) => {
+  console.log("Random item:", v(n)), console.log("Shuffled items:", ke([...n])), x().then((o) => {
     console.log("Links loaded, count:", Object.keys(o).length);
   }), console.log("Blog JavaScript initialized");
 });
-function vn() {
+function Ln() {
   $("#toc-content").length > 0 && console.log("TOC initialized");
 }
-function xn() {
+function Sn() {
   $("#search-box").length > 0 && console.log("Search initialized");
 }
 export {
-  Nn as CreateAutoComplete,
-  q as MakeBackLinkHTML,
-  f as TreeNode,
-  oe as add_random_prompts,
-  re as add_sunburst,
-  Ut as add_sunburst_from_dom,
+  Dn as CreateAutoComplete,
+  J as MakeBackLinkHTML,
+  m as TreeNode,
+  re as add_random_prompts,
+  ie as add_sunburst,
+  Yt as add_sunburst_from_dom,
   E as append_randomizer_div,
-  Me as defer,
-  v as get_link_info,
-  kn as get_random_page_url,
-  hn as get_random_post,
-  In as get_random_posts_batch,
-  bn as get_recent_posts,
-  Fe as initRecentAllPosts,
-  Cn as load_7_habits,
-  Sn as load_auto_sunburst,
-  Tn as load_balance,
-  En as load_enjoy2,
-  D as load_globals,
-  Ln as load_ig66,
-  $n as load_random_eulogy,
-  Gt as makePostPreviewHTML,
-  Te as make_random_post_html,
-  x as random_from_list,
-  gn as renderSearchHit,
-  mn as searchBlog,
-  ve as shuffle
+  He as defer,
+  x as get_link_info,
+  In as get_random_page_url,
+  kn as get_random_post,
+  Bn as get_random_posts_batch,
+  $n as get_recent_posts,
+  je as initRecentAllPosts,
+  Mn as load_7_habits,
+  Rn as load_auto_sunburst,
+  Hn as load_balance,
+  Pn as load_enjoy2,
+  O as load_globals,
+  An as load_ig66,
+  Nn as load_random_eulogy,
+  Kt as makePostPreviewHTML,
+  Ie as make_random_post_html,
+  v as random_from_list,
+  vn as renderSearchHit,
+  wn as searchBlog,
+  ke as shuffle
 };
 //# sourceMappingURL=index.js.map
