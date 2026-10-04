@@ -1,32 +1,29 @@
-{% comment %} Time-allocation buckets — five bucket rows for a 16 hour waking
-day, a "hours out of tech" slider, and a No plan / Planned switch. Planned hours
-go to relationships, identity and health until relationships hits "their time"
-and health hits "enough"; anything past a ceiling runs into consumption. With no
-plan, most of the freed hours go straight to consumption. Self-contained, no
-parameters, no libraries, no network. Edit the DATA block at the top of the
-script; the rows, the ceiling ticks and the leak line are all generated from it.
-THE HOURS ARE ILLUSTRATIVE, NOT MEASURED: plausible round numbers for a 16 hour
-waking day, not a log of anyone's week. Used by: _d/time-allocation.md {%
-endcomment %}
+{% comment %} Time-allocation energy flow — three columns for a made-up screen
+day (Phone, Tech, Work), arrow buttons that move one hour at a time along phone
+→ tech → work and back, and a stacked bar showing what the hours count for once
+each bucket's multiplier is applied. Work carries the big multiplier: aligned,
+with a company behind it. The baseline is rendered statically so the chart reads
+without JavaScript; the arrows only appear once the script adds .is-live.
+Self-contained, no parameters, no libraries, no network. Edit the DATA block at
+the top of the script AND the matching static markup (hours, heights, widths) if
+you change the baseline. THE HOURS AND THE MULTIPLIER ARE ILLUSTRATIVE, NOT
+MEASURED. Used by: _d/time-allocation.md {% endcomment %}
 
 <style>
-  .tbk {
-    --tbk-paper: #ffffff;
-    --tbk-panel: #f2f4f6;
-    --tbk-ink: #1b1f24;
-    --tbk-ink-soft: #5a636e;
-    --tbk-ink-faint: #8a929c;
-    --tbk-rule: #d8dbe0;
-    --tbk-hatch: rgba(255, 255, 255, 0.35);
+  .tef {
+    --tef-paper: #ffffff;
+    --tef-panel: #f2f4f6;
+    --tef-ink: #1b1f24;
+    --tef-ink-soft: #5a636e;
+    --tef-ink-faint: #8a929c;
+    --tef-rule: #d8dbe0;
+    --tef-hatch: rgba(255, 255, 255, 0.35);
 
-    --tbk-tech: #2f6f8f;
-    --tbk-identity: #4a7c59;
-    --tbk-health: #6b5b95;
-    --tbk-relationships: #b8562f;
-    --tbk-consumption: #7c828a;
-    --tbk-leak: #b8562f;
+    --tef-phone: #7c828a;
+    --tef-tech: #2f6f8f;
+    --tef-work: #4a7c59;
 
-    --tbk-mono:
+    --tef-mono:
       ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
       "Liberation Mono", monospace;
 
@@ -34,19 +31,18 @@ endcomment %}
     max-width: 780px;
     margin: 2.5em auto;
     padding: 1.5rem 1.5rem 1.25rem;
-    background: var(--tbk-paper);
-    border: 1px solid var(--tbk-rule);
+    background: var(--tef-paper);
+    border: 1px solid var(--tef-rule);
     border-radius: 3px;
-    color: var(--tbk-ink);
+    color: var(--tef-ink);
     font-variant-numeric: tabular-nums;
-    accent-color: var(--tbk-tech);
   }
 
-  .tbk * {
+  .tef * {
     box-sizing: border-box;
   }
 
-  .tbk-title {
+  .tef-title {
     margin: 0;
     font-family: Georgia, "Times New Roman", serif;
     font-size: 1.2rem;
@@ -55,69 +51,125 @@ endcomment %}
     text-wrap: balance;
   }
 
-  .tbk-sub {
+  .tef-sub {
     margin: 0.35rem 0 0;
     font-size: 0.85rem;
     line-height: 1.45;
-    color: var(--tbk-ink-soft);
+    color: var(--tef-ink-soft);
     max-width: 54ch;
   }
 
-  .tbk-controls {
+  .tef-cols {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(
+        0,
+        1fr
+      );
+    align-items: end;
+    gap: 0.5rem;
+    margin-top: 1.4rem;
+  }
+
+  .tef-col {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    gap: 0.7rem 1.2rem;
-    padding: 1.1rem 0 0.2rem;
+    text-align: center;
+    min-width: 0;
   }
 
-  .tbk-slider {
-    flex: 1 1 16rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.4rem 0.8rem;
-  }
-
-  .tbk-slider label {
-    font-family: var(--tbk-mono);
-    font-size: 0.72rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--tbk-ink-soft);
-    margin: 0;
-    white-space: nowrap;
-  }
-
-  .tbk-slider output {
-    color: var(--tbk-ink);
+  .tef-name {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.95rem;
     font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
   }
 
-  .tbk-slider input {
-    flex: 1 1 10rem;
-    min-width: 8rem;
-    margin: 0;
-  }
-
-  .tbk-toggle {
-    display: flex;
-    border: 1px solid var(--tbk-ink);
+  .tef-track {
+    position: relative;
+    width: 100%;
+    max-width: 7rem;
+    height: 8rem;
+    background: var(--tef-panel);
     border-radius: 2px;
     overflow: hidden;
   }
 
-  .tbk-toggle button {
+  .tef-fill {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0;
+    transition: height 380ms cubic-bezier(0.22, 0.68, 0.35, 1);
+  }
+
+  .tef-col[data-id="phone"] .tef-fill {
+    background-color: var(--tef-phone);
+    background-image: repeating-linear-gradient(
+      45deg,
+      var(--tef-hatch) 0 3px,
+      transparent 3px 7px
+    );
+  }
+
+  .tef-col[data-id="tech"] .tef-fill {
+    background-color: var(--tef-tech);
+  }
+
+  .tef-col[data-id="work"] .tef-fill {
+    background-color: var(--tef-work);
+  }
+
+  .tef-hours {
+    margin-top: 0.45rem;
+    font-family: var(--tef-mono);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  .tef-worth {
+    margin-top: 0.15rem;
+    font-family: var(--tef-mono);
+    font-size: 0.7rem;
+    line-height: 1.3;
+    color: var(--tef-ink-faint);
+    white-space: nowrap;
+  }
+
+  .tef-col[data-id="work"] .tef-worth {
+    color: var(--tef-work);
+    font-weight: 700;
+  }
+
+  /* Arrow buttons sit between two columns, at bar height. Hidden until the
+     script is live so a reader without JavaScript never sees dead buttons. */
+  .tef-arrows {
+    display: none;
+    flex-direction: column;
+    gap: 0.35rem;
+    align-self: center;
+    padding-bottom: 1.6rem;
+  }
+
+  .tef.is-live .tef-arrows {
+    display: flex;
+  }
+
+  .tef-arrows button {
     appearance: none;
     margin: 0;
-    padding: 0.45rem 0.7rem;
-    border: 0;
-    background: var(--tbk-paper);
-    color: var(--tbk-ink-soft);
-    font-family: var(--tbk-mono);
-    font-size: 0.68rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+    width: 2.4rem;
+    height: 2rem;
+    padding: 0;
+    border: 1px solid var(--tef-ink);
+    border-radius: 2px;
+    background: var(--tef-paper);
+    color: var(--tef-ink);
+    font-family: var(--tef-mono);
+    font-size: 0.95rem;
     line-height: 1;
     cursor: pointer;
     transition:
@@ -125,253 +177,249 @@ endcomment %}
       color 160ms ease;
   }
 
-  .tbk-toggle button + button {
-    border-left: 1px solid var(--tbk-ink);
+  .tef-arrows button:hover:not(:disabled) {
+    background: var(--tef-ink);
+    color: var(--tef-paper);
   }
 
-  .tbk-toggle button:hover {
-    background: var(--tbk-panel);
+  .tef-arrows button:disabled {
+    border-color: var(--tef-rule);
+    color: var(--tef-ink-faint);
+    cursor: default;
   }
 
-  .tbk-toggle button[aria-pressed="true"] {
-    background: var(--tbk-ink);
-    color: var(--tbk-paper);
-  }
-
-  .tbk-toggle button:focus-visible,
-  .tbk-slider input:focus-visible {
-    outline: 2px solid var(--tbk-tech);
+  .tef-arrows button:focus-visible,
+  .tef-reset:focus-visible {
+    outline: 2px solid var(--tef-tech);
     outline-offset: 2px;
   }
 
-  .tbk-rows {
-    list-style: none;
-    margin: 1.2rem 0 0;
-    padding: 0;
+  .tef-worth-head {
     display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.6rem;
+    margin: 1.5rem 0 0.4rem;
+    font-family: var(--tef-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--tef-ink-soft);
   }
 
-  .tbk-row {
-    display: grid;
-    grid-template-columns: 7.2rem 1fr 3rem 3.2rem;
-    grid-template-areas:
-      "name bar hours delta"
-      "note note note note";
-    align-items: center;
-    gap: 0.15rem 0.6rem;
-  }
-
-  .tbk-name {
-    grid-area: name;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 0.95rem;
+  .tef-worth-head output {
+    font-size: 1rem;
     font-weight: 700;
-    line-height: 1.2;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--tef-ink);
   }
 
-  .tbk-track {
-    grid-area: bar;
-    position: relative;
+  .tef-worth-bar {
+    display: flex;
     height: 1.35rem;
-    background: var(--tbk-panel);
+    background: var(--tef-panel);
     border-radius: 2px;
+    overflow: hidden;
   }
 
-  .tbk-fill {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
+  .tef-worth-bar span {
+    display: block;
+    height: 100%;
     width: 0;
-    border-radius: 2px;
     transition: width 380ms cubic-bezier(0.22, 0.68, 0.35, 1);
   }
 
-  /* The part of the bar that arrived from tech, drawn on top of the base so
-     the eye can see what moved. */
-  .tbk-gain {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 0;
-    background-image: repeating-linear-gradient(
-      -45deg,
-      var(--tbk-hatch) 0 3px,
-      transparent 3px 7px
-    );
-    transition:
-      left 380ms cubic-bezier(0.22, 0.68, 0.35, 1),
-      width 380ms cubic-bezier(0.22, 0.68, 0.35, 1);
+  .tef-worth-bar [data-id="phone"] {
+    background: var(--tef-phone);
+  }
+  .tef-worth-bar [data-id="tech"] {
+    background: var(--tef-tech);
+  }
+  .tef-worth-bar [data-id="work"] {
+    background: var(--tef-work);
   }
 
-  .tbk-row[data-id="consumption"] .tbk-fill {
-    background-image: repeating-linear-gradient(
-      45deg,
-      var(--tbk-hatch) 0 3px,
-      transparent 3px 7px
-    );
-  }
-
-  .tbk-cap {
-    position: absolute;
-    top: -0.3rem;
-    bottom: -0.3rem;
-    width: 0;
-    border-left: 2px dashed var(--tbk-ink-soft);
-    opacity: 0.6;
-  }
-
-  .tbk-row.is-capped .tbk-cap {
-    border-left-color: var(--tbk-ink);
-    opacity: 1;
-  }
-
-  .tbk-hours,
-  .tbk-delta {
-    font-family: var(--tbk-mono);
-    font-size: 0.75rem;
-    text-align: right;
-  }
-
-  .tbk-hours {
-    grid-area: hours;
-    color: var(--tbk-ink);
-  }
-
-  .tbk-delta {
-    grid-area: delta;
-    font-size: 0.68rem;
-    color: var(--tbk-ink-faint);
-  }
-
-  .tbk-row[data-id="consumption"].is-gaining .tbk-delta {
-    color: var(--tbk-leak);
-    font-weight: 700;
-  }
-
-  .tbk-note {
-    grid-area: note;
-    font-size: 0.7rem;
-    line-height: 1.3;
-    color: var(--tbk-ink-faint);
-    min-height: 1em;
-  }
-
-  .tbk-row.is-capped .tbk-note {
-    color: var(--tbk-ink);
-    font-weight: 700;
-  }
-
-  .tbk-leak {
-    margin: 1.2rem 0 0;
+  .tef-sum {
+    margin: 1.1rem 0 0;
     padding: 0.8rem 0.9rem;
-    border-left: 3px solid var(--tbk-rule);
-    background: var(--tbk-panel);
+    border-left: 3px solid var(--tef-rule);
+    background: var(--tef-panel);
     font-size: 0.85rem;
     line-height: 1.5;
-    color: var(--tbk-ink);
+    color: var(--tef-ink);
+    min-height: 3.2em;
   }
 
-  .tbk-leak.is-leaking {
-    border-left-color: var(--tbk-leak);
+  .tef-sum.is-up {
+    border-left-color: var(--tef-work);
   }
 
-  .tbk-leak b {
-    color: var(--tbk-leak);
+  .tef-sum.is-down {
+    border-left-color: var(--tef-phone);
   }
 
-  .tbk-foot {
+  .tef-sum b {
+    font-family: var(--tef-mono);
+  }
+
+  .tef-foot {
     margin: 1rem 0 0;
     padding-top: 0.85rem;
-    border-top: 1px solid var(--tbk-rule);
+    border-top: 1px solid var(--tef-rule);
     font-size: 0.78rem;
     line-height: 1.5;
-    color: var(--tbk-ink-soft);
+    color: var(--tef-ink-soft);
+  }
+
+  .tef-reset {
+    display: none;
+    appearance: none;
+    margin: 0 0 0 0.4rem;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--tef-tech);
+    font: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .tef.is-live .tef-reset {
+    display: inline;
   }
 
   @media (max-width: 640px) {
-    .tbk {
-      padding: 1.1rem 1rem 1rem;
+    .tef {
+      padding: 1.1rem 0.8rem 1rem;
     }
-    .tbk-toggle {
-      width: 100%;
+    .tef-cols {
+      gap: 0.3rem;
     }
-    .tbk-toggle button {
-      flex: 1;
-      padding: 0.45rem 0.35rem;
-      font-size: 0.62rem;
-      letter-spacing: 0.03em;
+    .tef-track {
+      height: 6.5rem;
     }
-    .tbk-slider input {
-      flex: 1 1 100%;
+    .tef-name {
+      font-size: 0.85rem;
     }
-    .tbk-row {
-      grid-template-columns: 1fr 3rem 3.2rem;
-      grid-template-areas:
-        "name hours delta"
-        "bar bar bar"
-        "note note note";
-      gap: 0.2rem 0.5rem;
-    }
-    .tbk-name {
+    .tef-hours {
       font-size: 0.9rem;
+    }
+    .tef-worth {
+      font-size: 0.62rem;
+    }
+    .tef-arrows button {
+      width: 2.1rem;
+      height: 1.9rem;
     }
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .tbk-fill,
-    .tbk-gain,
-    .tbk-toggle button {
+    .tef-fill,
+    .tef-worth-bar span,
+    .tef-arrows button {
       transition: none;
     }
   }
 </style>
 
-<div class="tbk" id="tbk-buckets">
-  <h3 class="tbk-title">Take hours out of tech</h3>
-  <p class="tbk-sub">
-    Sixteen waking hours, made up to show the shape. Move the slider, then
-    switch between an hour with no plan and an hour with one.
+<div class="tef" id="tef-flow">
+  <h3 class="tef-title">Point the hour</h3>
+  <p class="tef-sub">
+    Twelve made-up screen hours. Move one along the arrows and watch what it
+    counts for.
   </p>
 
-  <div class="tbk-controls">
-    <div class="tbk-slider">
-      <label for="tbk-shrink"
-        >Hours out of tech
-        <output id="tbk-shrink-out" for="tbk-shrink">0h</output></label
-      >
-      <input id="tbk-shrink" type="range" min="0" max="4" step="1" value="0" />
+  <div class="tef-cols">
+    <div class="tef-col" data-id="phone">
+      <span class="tef-name">Phone</span>
+      <span class="tef-track" aria-hidden="true"
+        ><span class="tef-fill" style="height: 25%"></span
+      ></span>
+      <span class="tef-hours">3h</span>
+      <span class="tef-worth">×0 → 0h</span>
     </div>
-    <div class="tbk-toggle" role="group" aria-label="Was the hour planned">
-      <button type="button" data-plan="none" aria-pressed="true">
-        No plan
+
+    <div class="tef-arrows" data-from="phone" data-to="tech">
+      <button
+        type="button"
+        data-dir="up"
+        aria-label="Move one hour from phone into tech"
+      >
+        →
       </button>
-      <button type="button" data-plan="planned" aria-pressed="false">
-        Planned
+      <button
+        type="button"
+        data-dir="down"
+        aria-label="Move one hour from tech back into phone"
+      >
+        ←
       </button>
+    </div>
+
+    <div class="tef-col" data-id="tech">
+      <span class="tef-name">Tech</span>
+      <span class="tef-track" aria-hidden="true"
+        ><span class="tef-fill" style="height: 25%"></span
+      ></span>
+      <span class="tef-hours">3h</span>
+      <span class="tef-worth">×1 → 3h</span>
+    </div>
+
+    <div class="tef-arrows" data-from="tech" data-to="work">
+      <button
+        type="button"
+        data-dir="up"
+        aria-label="Move one hour from tech into work"
+      >
+        →
+      </button>
+      <button
+        type="button"
+        data-dir="down"
+        aria-label="Move one hour from work back into tech"
+      >
+        ←
+      </button>
+    </div>
+
+    <div class="tef-col" data-id="work">
+      <span class="tef-name">Work</span>
+      <span class="tef-track" aria-hidden="true"
+        ><span class="tef-fill" style="height: 50%"></span
+      ></span>
+      <span class="tef-hours">6h</span>
+      <span class="tef-worth">×4 → 24h</span>
     </div>
   </div>
 
-  <ul class="tbk-rows"></ul>
+  <div class="tef-worth-head">
+    <span>What 12 hours count for</span>
+    <output id="tef-total">27h</output>
+  </div>
+  <div class="tef-worth-bar" aria-hidden="true">
+    <span data-id="phone" style="width: 0%"></span>
+    <span data-id="tech" style="width: 6.25%"></span>
+    <span data-id="work" style="width: 50%"></span>
+  </div>
 
-  <p class="tbk-leak" aria-live="polite"></p>
+  <p class="tef-sum" aria-live="polite">
+    Phone hours count for nothing. Tech counts for itself. Work counts for four,
+    because I'm aligned and a company carries it. Move an hour and see.
+  </p>
 
-  <p class="tbk-foot">
-    The dashed tick is a ceiling. Relationships stops at whatever time the other
-    people actually have. Health stops at enough. Planned hours that run past a
-    ceiling do not disappear, they land in consumption. Hours with no plan
-    mostly go there directly. Numbers are made up, not measured.
+  <p class="tef-foot">
+    The multiplier is made up, like the hours. It stands for being aligned with
+    a company that reviews, ships and runs what I build. Lose the alignment and
+    work drops back to counting for one.
+    <button type="button" class="tef-reset">Reset</button>
   </p>
 
   <noscript>
-    <p class="tbk-foot">
-      This chart needs JavaScript. The point it makes: on a made-up weekday,
-      tech is more than half the waking day, and hours taken out of tech mostly
-      land in consumption. Without a plan they go there directly. With a plan
-      they still spill there once relationships hits the time other people have
-      and health hits enough.
+    <p class="tef-foot">
+      The arrows need JavaScript. The point they make: an hour moved from the
+      phone into tech counts for one more, and an hour moved from tech into work
+      counts for several more, because a company carries it.
     </p>
   </noscript>
 </div>
@@ -379,277 +427,133 @@ endcomment %}
 {% raw %}
 <script>
   (function () {
-    // ---- Edit here. The rows, the ceiling ticks and the leak line all come
-    // from this block. Hours are ILLUSTRATIVE: plausible round numbers for a
-    // 16 hour waking day, not a measurement of anyone's week. ----
-    var SCALE_HOURS = 10; // the bar is full at this many hours
-    var MAX_SHRINK = 4;
-
+    // ---- Edit here. The static markup above shows the same baseline, so
+    // change both. Hours and multipliers are ILLUSTRATIVE, not measured. ----
+    var TOTAL = 12; // made-up screen hours; the vertical bars are full here
     var BUCKETS = [
-      { id: "tech", name: "Tech" },
-      { id: "identity", name: "Identity" },
-      { id: "health", name: "Health" },
-      { id: "relationships", name: "Relationships" },
-      { id: "consumption", name: "Consumption" },
+      { id: "phone", mult: 0, hours: 3 },
+      { id: "tech", mult: 1, hours: 3 },
+      { id: "work", mult: 4, hours: 6 },
     ];
-
-    var BASE = {
-      tech: 9,
-      identity: 0.5,
-      health: 1,
-      relationships: 2.5,
-      consumption: 3,
-    };
-
-    // Ceilings. relationships = the most time the other people are actually
-    // available for. health = where more hours stop buying more health.
-    var CAPS = { relationships: 3.5, health: 1.5 };
-    var CAP_LABELS = { relationships: "their time", health: "enough" };
-
-    // Share of each freed tech hour that each bucket gets. Anything that runs
-    // into a ceiling rolls into consumption.
-    var PLANS = {
-      none: {
-        share: { consumption: 0.7, identity: 0.2, relationships: 0.1 },
-      },
-      planned: {
-        share: { relationships: 0.4, identity: 0.4, health: 0.2 },
-      },
+    // One sentence per move. Up is along the arrows, down is sliding back.
+    var MOVES = {
+      "phone>tech":
+        "Phone into tech. Same screen, but building instead of scrolling.",
+      "tech>work": "Tech into work. Aligned, with a company behind it.",
+      "work>tech":
+        "Work back into tech. Still building, but nobody is carrying it.",
+      "tech>phone": "Tech back into the phone. One tired tab.",
     };
     // ---- End of editable block. ----
 
-    var root = document.getElementById("tbk-buckets");
+    var root = document.getElementById("tef-flow");
     if (!root) return;
 
-    var rowsEl = root.querySelector(".tbk-rows");
-    var slider = root.querySelector("#tbk-shrink");
-    var sliderOut = root.querySelector("#tbk-shrink-out");
-    var leakEl = root.querySelector(".tbk-leak");
-
-    var plan = "none";
-    var shrink = 0;
-
-    function round1(v) {
-      return Math.round(v * 10) / 10;
-    }
-
-    function fmt(v) {
-      var r = round1(v);
-      return (r % 1 === 0 ? r.toFixed(0) : r.toFixed(1)) + "h";
-    }
-
-    function signed(v) {
-      var r = round1(v);
-      if (r === 0) return "";
-      return (r > 0 ? "+" : "−") + fmt(Math.abs(r));
-    }
-
-    function pct(h) {
-      return Math.max(0, Math.min(100, (h / SCALE_HOURS) * 100)) + "%";
-    }
-
-    function compute() {
-      var share = PLANS[plan].share;
-      var hours = {};
-      var gained = {};
-      BUCKETS.forEach(function (b) {
-        hours[b.id] = BASE[b.id];
-        gained[b.id] = 0;
-      });
-
-      var moved = Math.min(shrink, hours.tech);
-      hours.tech -= moved;
-
-      var spill = 0;
-      BUCKETS.forEach(function (b) {
-        var s = share[b.id] || 0;
-        if (!s) return;
-        var add = moved * s;
-        var cap = CAPS[b.id];
-        if (cap != null && hours[b.id] + add > cap) {
-          spill += hours[b.id] + add - cap;
-          add = cap - hours[b.id];
-        }
-        hours[b.id] += add;
-        gained[b.id] += add;
-      });
-      hours.consumption += spill;
-      gained.consumption += spill;
-
-      BUCKETS.forEach(function (b) {
-        hours[b.id] = round1(hours[b.id]);
-        gained[b.id] = round1(gained[b.id]);
-      });
-      return {
-        hours: hours,
-        gained: gained,
-        moved: moved,
-        spill: round1(spill),
-      };
-    }
-
-    // Build the rows once; render() only updates them.
-    var rows = {};
+    var MAX_WORTH = 0;
     BUCKETS.forEach(function (b) {
-      var li = document.createElement("li");
-      li.className = "tbk-row";
-      li.dataset.id = b.id;
+      MAX_WORTH = Math.max(MAX_WORTH, b.mult);
+    });
+    MAX_WORTH *= TOTAL; // every hour in the best bucket fills the bar
 
-      var name = document.createElement("span");
-      name.className = "tbk-name";
-      name.textContent = b.name;
+    var base = {};
+    var hours = {};
+    var by = {};
+    BUCKETS.forEach(function (b) {
+      base[b.id] = b.hours;
+      hours[b.id] = b.hours;
+      by[b.id] = b;
+    });
 
-      var track = document.createElement("span");
-      track.className = "tbk-track";
-      track.setAttribute("aria-hidden", "true");
-
-      var fill = document.createElement("span");
-      fill.className = "tbk-fill";
-      fill.style.backgroundColor = "var(--tbk-" + b.id + ")";
-      track.appendChild(fill);
-
-      var gain = document.createElement("span");
-      gain.className = "tbk-gain";
-      track.appendChild(gain);
-
-      var cap = null;
-      if (CAPS[b.id] != null) {
-        cap = document.createElement("span");
-        cap.className = "tbk-cap";
-        cap.style.left = pct(CAPS[b.id]);
-        track.appendChild(cap);
-      }
-
-      var hrs = document.createElement("span");
-      hrs.className = "tbk-hours";
-
-      var delta = document.createElement("span");
-      delta.className = "tbk-delta";
-
-      var note = document.createElement("span");
-      note.className = "tbk-note";
-
-      li.appendChild(name);
-      li.appendChild(track);
-      li.appendChild(hrs);
-      li.appendChild(delta);
-      li.appendChild(note);
-      rowsEl.appendChild(li);
-
-      rows[b.id] = {
-        li: li,
-        fill: fill,
-        gain: gain,
-        hrs: hrs,
-        delta: delta,
-        note: note,
+    var cols = {};
+    BUCKETS.forEach(function (b) {
+      var col = root.querySelector('.tef-col[data-id="' + b.id + '"]');
+      cols[b.id] = {
+        fill: col.querySelector(".tef-fill"),
+        hrs: col.querySelector(".tef-hours"),
+        worth: col.querySelector(".tef-worth"),
+        seg: root.querySelector('.tef-worth-bar [data-id="' + b.id + '"]'),
       };
     });
+    var totalEl = root.querySelector("#tef-total");
+    var sumEl = root.querySelector(".tef-sum");
+    var buttons = root.querySelectorAll(".tef-arrows button");
 
-    function render() {
-      var state = compute();
-      var hours = state.hours;
-      var gained = state.gained;
-
-      BUCKETS.forEach(function (b) {
-        var r = rows[b.id];
-        var h = hours[b.id];
-        var g = gained[b.id];
-
-        r.fill.style.width = pct(h);
-        r.gain.style.left = pct(h - g);
-        r.gain.style.width = pct(g);
-        r.hrs.textContent = fmt(h);
-        r.delta.textContent = signed(h - BASE[b.id]);
-
-        var cap = CAPS[b.id];
-        var atCap = cap != null && h >= cap - 0.001;
-        r.li.classList.toggle("is-capped", atCap);
-        r.li.classList.toggle("is-gaining", g > 0);
-
-        if (cap == null) {
-          r.note.textContent = "";
-        } else if (b.id === "relationships") {
-          r.note.textContent = atCap
-            ? "at " +
-              CAP_LABELS[b.id] +
-              ", " +
-              fmt(cap) +
-              ": nobody else is free"
-            : "ceiling " + fmt(cap) + ", set by other people";
-        } else {
-          r.note.textContent = atCap
-            ? "at " +
-              CAP_LABELS[b.id] +
-              ", " +
-              fmt(cap) +
-              ": more hours stop paying"
-            : "enough at " + fmt(cap);
-        }
-      });
-
-      sliderOut.textContent = fmt(shrink);
-      slider.setAttribute(
-        "aria-valuetext",
-        shrink === 1 ? "1 hour" : shrink + " hours"
-      );
-
-      var toPhone = gained.consumption;
-      var text;
-      if (state.moved === 0) {
-        text = "Nothing moved yet. Slide to take hours out of tech.";
-      } else if (plan === "none") {
-        text =
-          fmt(state.moved) +
-          " out of tech with no plan: " +
-          fmt(toPhone) +
-          " went to the phone before anything got decided.";
-      } else if (state.spill > 0) {
-        text =
-          fmt(state.moved) +
-          " out of tech with a plan: " +
-          fmt(state.spill) +
-          " ran past a ceiling and went to the phone anyway.";
-      } else {
-        text =
-          fmt(state.moved) +
-          " out of tech with a plan, and it all landed where it was sent.";
-      }
-      leakEl.innerHTML = "";
-      var strong = toPhone > 0;
-      leakEl.classList.toggle("is-leaking", strong);
-      if (strong) {
-        var m = text.match(/^(.*?)(\d+(?:\.\d)?h)( went| ran)(.*)$/);
-        if (m) {
-          leakEl.appendChild(document.createTextNode(m[1]));
-          var b = document.createElement("b");
-          b.textContent = m[2];
-          leakEl.appendChild(b);
-          leakEl.appendChild(document.createTextNode(m[3] + m[4]));
-          return;
-        }
-      }
-      leakEl.textContent = text;
+    function h(v) {
+      return v + "h";
     }
 
-    root.querySelectorAll("[data-plan]").forEach(function (btn) {
+    function worth(id) {
+      return hours[id] * by[id].mult;
+    }
+
+    function total() {
+      var t = 0;
+      BUCKETS.forEach(function (b) {
+        t += worth(b.id);
+      });
+      return t;
+    }
+
+    function render(move) {
+      BUCKETS.forEach(function (b) {
+        var c = cols[b.id];
+        c.fill.style.height = (hours[b.id] / TOTAL) * 100 + "%";
+        c.hrs.textContent = h(hours[b.id]);
+        c.worth.textContent = "×" + b.mult + " → " + h(worth(b.id));
+        c.seg.style.width = (worth(b.id) / MAX_WORTH) * 100 + "%";
+      });
+      totalEl.textContent = h(total());
+
+      buttons.forEach(function (btn) {
+        var group = btn.parentNode;
+        var from =
+          btn.dataset.dir === "up" ? group.dataset.from : group.dataset.to;
+        btn.disabled = hours[from] <= 0;
+      });
+
+      sumEl.classList.remove("is-up", "is-down");
+      if (!move) return;
+      var delta = by[move.to].mult - by[move.from].mult;
+      sumEl.classList.add(delta >= 0 ? "is-up" : "is-down");
+      sumEl.innerHTML = "";
+      sumEl.appendChild(
+        document.createTextNode(MOVES[move.from + ">" + move.to] + " ")
+      );
+      var b = document.createElement("b");
+      b.textContent = (delta >= 0 ? "+" : "−") + h(Math.abs(delta));
+      sumEl.appendChild(b);
+      sumEl.appendChild(
+        document.createTextNode(
+          ". The " + TOTAL + " hours now count for " + h(total()) + "."
+        )
+      );
+    }
+
+    buttons.forEach(function (btn) {
       btn.addEventListener("click", function () {
-        if (plan === btn.dataset.plan) return;
-        plan = btn.dataset.plan;
-        root.querySelectorAll("[data-plan]").forEach(function (b) {
-          b.setAttribute("aria-pressed", String(b.dataset.plan === plan));
-        });
-        render();
+        var group = btn.parentNode;
+        var up = btn.dataset.dir === "up";
+        var from = up ? group.dataset.from : group.dataset.to;
+        var to = up ? group.dataset.to : group.dataset.from;
+        if (hours[from] <= 0) return;
+        hours[from] -= 1;
+        hours[to] += 1;
+        render({ from: from, to: to });
       });
     });
 
-    slider.max = String(MAX_SHRINK);
-    slider.addEventListener("input", function () {
-      shrink = Number(slider.value);
-      render();
+    var resetBtn = root.querySelector(".tef-reset");
+    var sumStart = sumEl.textContent;
+    resetBtn.addEventListener("click", function () {
+      BUCKETS.forEach(function (b) {
+        hours[b.id] = base[b.id];
+      });
+      render(null);
+      sumEl.textContent = sumStart;
     });
 
-    render();
+    root.classList.add("is-live");
+    render(null);
   })();
 </script>
 {% endraw %}

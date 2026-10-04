@@ -11,73 +11,65 @@ tags:
   - balance
 ---
 
-I asked myself a simple question this week: where does my time actually go? I figured the answer would be work versus family. It wasn't. It's four buckets I fill on purpose, and a fifth one I'd never named that gets whatever the other four leave behind.
+Most of my waking hours happen on a screen, and I used to count them as one lump called tech. Then I noticed the same hour can point three ways: at the phone, at my own projects, or at work. Phone to tech is an upgrade. Tech to work is the best case, because at work I'm aligned and there's a whole company behind me, so an hour there counts for far more than an hour on my own.
 
 {% include ai-slop.html percent="70" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [The five buckets](#the-five-buckets)
-- [Where the freed hours land](#where-the-freed-hours-land)
-- [Relationships and health fill up](#relationships-and-health-fill-up)
-- [Passion or addiction](#passion-or-addiction)
-- [Maybe tech isn't a bucket](#maybe-tech-isnt-a-bucket)
+- [Three directions for the same hour](#three-directions-for-the-same-hour)
+- [Why an hour of work counts for more](#why-an-hour-of-work-counts-for-more)
+- [It slides back](#it-slides-back)
+- [Shrink tech is the wrong instruction](#shrink-tech-is-the-wrong-instruction)
+- [The catch](#the-catch)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-## The five buckets
+## Three directions for the same hour
 
-**Tech.** Work, home projects, the AI tools I build for myself, and deep thinking, which for me means writing posts like this one. Every one of those is me and a screen.
+Same chair, same screen. The difference is which way the hour points.
 
-**Identity (non-tech).** [Magic](/magic), biking, [ballooning](/balloon), the [joy](/joy) stuff. Here I'm being someone instead of shipping something, which is [what a good hobby is for](/hobby). Habits don't go here. Habits are the machinery that gets me to the mat. If I file magic under habits, "maker of smiles and wonder" turns into a maintenance task.
+**The phone.** The scroll, the autoplay, the forty minutes I can't account for. Arthur Brooks would call it pleasure, not enjoyment: the hit, alone, and gone when it's over. A little is fine. It rarely stays a little, and then it's procrastination, the thing I do instead of [the thing I'm avoiding](/frog). This is where my [addiction](/addiction) lives, with [TikTok](/addiction#tiktok-thought-escape) at the top.
 
-**Health.** Physical, emotional, cognitive. I've [written up the dimensions](/health). For this post they're one bucket.
+**Tech.** The tools I build for myself, the posts I write, the thinking I do by typing. Same screen, but I'm building instead of scrolling. This is where my compulsion lives, and my life is better for it, so it counts as passion. Something exists at the end of the hour.
 
-**Relationships.** Family and friends. It gets its own bucket instead of hiding under identity. Arthur Brooks says a happy life has four pillars: faith, family, friendship, and work. Two of those are other people.
+**Work.** The same building, pointed at what the company needs. I'm aligned, which means the thing I'd build anyway is close to the thing they want built. And I'm not alone in it. There are people to review it, ship it, run it, and use it.
 
-**Consumption (non-enjoyment).** Everything else. The scroll, the autoplay, the forty minutes I can't account for. A little is fine. It rarely stays a little. It turns into procrastination, the thing I do instead of [the thing I'm avoiding](/frog), and that makes me sad.
-
-The "non-enjoyment" part comes from Arthur Brooks. Pleasure is the hit: alone, chemical, and gone when it's over. Enjoyment is pleasure plus people plus memory. A beer alone on the couch and a beer at a table with friends. Same beer. This bucket is the first one. How to turn the first into the second is in [my notes on his book](/build-life-you-want#pleasure-vs-enjoyment).
-
-The hours below are made up, not measured. Take hours out of tech and watch where they land.
+Move an hour along the arrows and watch what it counts for. The hours are made up, and so is the multiplier.
 
 {% include time-allocation-buckets.html %}
 
-## Where the freed hours land
+## Why an hour of work counts for more
 
-I used to think the fix was obvious: shrink tech. Take five hours back from the screen and they'll show up somewhere good. They don't. When I shrink tech, relationships and identity usually stay where they were. Consumption grows.
+An hour of tech on my own ends with a script on my laptop. It helps me, and it stops there. The same hour at work ends with a change that other people carry the rest of the way. I didn't build the company that does the carrying. I only have to point my hour at it.
 
-The reason is [activation energy](/activation). Consumption starts itself. The phone is already in my hand and no decision is required. Enjoyment needs a person, which needs a text, a calendar, and somebody else's yes. It also needs a moment worth remembering, which needs a bit of a plan.
+That's the multiplier, and it has a condition. It only pays while I'm aligned. The day the thing I want to build and the thing the company wants built drift apart, the multiplier goes with it, and the hour is back to counting for one. So the thing to watch isn't how many hours I give work. It's whether I'm still aligned when I do.
 
-So freeing up time does nothing on its own. An hour I haven't planned goes to the default, and the default is level 0 of the [idle loop](/idle): phone in hand, nothing decided. If I want an hour to go to my family, I have to decide that before the hour shows up.
+## It slides back
 
-## Relationships and health fill up
+The arrows run the other way too, and downhill is easier. Tech slides into the phone one tired tab at a time. Work slides into tech when I chase the interesting problem instead of the needed one.
 
-Say I do plan it. Two of the three good buckets can't take much.
+The reason is [activation energy](/activation). The phone starts itself. It's already in my hand and no decision is required. Tech needs a problem I care about. Work needs that plus the pull of other people, and the company supplies it: a review waiting, something broken, a person who needs it by Thursday. That pull is half of why work gets the multiplier. It's not only that the hour goes further, it's that the hour gets started at all.
 
-Relationships is rate limited by other people. I can decide to give my family ten more hours. They have to be free for those hours, and they have to want them. They set that ceiling, not me. Past it, I'm just hovering.
+An hour I haven't pointed goes to the default, and the default is level 0 of the [idle loop](/idle): phone in hand, nothing decided. If I want the hour to go up, I have to decide that before the hour shows up.
 
-Health saturates. There's a reasonable amount of sleep and movement, and after that the curve goes flat. The second hour at the gym doesn't buy twice the health. Often it buys an injury.
+## Shrink tech is the wrong instruction
 
-That leaves identity. It has the most room, and it takes the most energy to start. Nobody is waiting on me to do the trick badly for twenty minutes.
+My old fix was to shrink tech. Take hours off the screen and they'd land somewhere good. They didn't. They landed on the phone.
 
-## Passion or addiction
+In [Escape Artists](/addiction) I sort activities with two questions: am I compelled, and is my life worse for it? Tech is compelled and better, which is passion. The phone is compelled and worse, which is addiction. "Shrink tech" is the wrong instruction twice over. It cuts the passion instead of the addiction, and it hands the recovered hours to the phone.
 
-I already had a framework for this and didn't notice. In [Escape Artists](/addiction) I sort activities with two questions: am I compelled, and is the rest of my life worse for it? Compelled and worse is addiction. Compelled and not worse is passion. Not compelled is a hobby.
+The better instruction is about direction, not volume. When I'm on a screen, move the hour up. Phone into tech. Tech into work.
 
-Tech is where my compulsion lives. My life is better for it, so it counts as passion. It still has an opportunity cost. Consumption is where my addiction lives, with [TikTok](/addiction#tiktok-thought-escape) at the top: I'm compelled to do it and I don't actually want to.
+## The catch
 
-So "shrink tech" is the wrong instruction twice over. It cuts the passion instead of the addiction, and it hands the recovered hours to the phone.
+The arrows only sort screen hours. They say nothing about how many hours should be on a screen at all, and if the best arrow always points at work, it never points at my family.
 
-The better instruction is about direction. My energy moves between buckets all day. When it moves from the phone into tech, that's an upgrade: same screen, but I'm building instead of scrolling. It slides back just as easily, one tired tab at a time. When it moves from tech into work, that's the best case. I'm aligned, and I have a whole company behind me, so an hour counts for far more than it would on my own.
+Three buckets don't live on the screen. Relationships, which is rate limited by other people: I can decide to give my family ten more hours, but they have to be free and they have to want them. Health, which saturates: after enough sleep and movement the curve goes flat, and the second hour at the gym often buys an injury. And identity, [magic](/magic), biking, [ballooning](/balloon), which has the most room and takes the most energy to start. Nobody is waiting on me to do the trick badly for twenty minutes. The [monoculture trap](/addiction#dont-narrow-to-one-passion-the-monoculture-trap) is that when I overfeed one passion, the others wither, and when the one I've been feeding has a bad month, the others aren't in shape to carry me.
 
-There's a second cost I underrate, the [monoculture trap](/addiction#dont-narrow-to-one-passion-the-monoculture-trap). When I overfeed one passion, the others wither. Identity doesn't wait for me to come back. It decays. And when the one passion I've been feeding has a bad month, the others aren't in shape to carry me.
-
-## Maybe tech isn't a bucket
-
-I may have drawn this wrong. Tech might not be a bucket. It might be an identity, the same kind of noun as magician or dad, one that got very good at feeding itself. [Roles are how I've always written my eulogy](/eulogy), and the eulogy is what this post is supposed to serve. If that's right, the question changes from how I allocate my time to which of my roles is eating the others. Calling tech a neutral bucket is the more comfortable version, and that's why I don't trust it.
+I may still have drawn this wrong. Tech might not be a bucket. It might be an identity, the same kind of noun as magician or dad, one that got very good at feeding itself. [Roles are how I've always written my eulogy](/eulogy), and the eulogy is what this post is supposed to serve. If that's right, the question changes from which way the hour points to which of my roles is eating the others. "Work is the best direction" is the comfortable version, and that's why I don't trust it.
 
 {% include summarize-page.html src="/life-as-business" %}
 
