@@ -10,6 +10,8 @@ redirect_from:
 
 "Igor, what advice would you give a 20-year-old that just found out their dad killed themselves?" Sadly, when I was 20, I got a call from a family friend saying "Igor, you want to sit down, this isn't going to be fun to hear." My dad had taken his own life.
 
+{% include repo_image_float_right.html src="raccoon-suicide-remembering.webp" alt="A young raccoon in rainbow glasses sits in a lamplit armchair holding a framed photo of a smiling friend in a red beanie, while an older raccoon in a cardigan leans in close beside him." %}
+
 **TL;DR:**
 
 - Suicide is an acute, fatal disease. Literally, a brain attack.
