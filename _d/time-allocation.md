@@ -94,7 +94,11 @@ It slides back just as easily, one tired tab at a time. That's the push in the c
 
 ## Maybe tech isn't a bucket
 
-I may have drawn this wrong. Tech might not be a bucket. It might be an identity, the same kind of noun as magician or dad, one that got very good at feeding itself. [Roles are how I've always written my eulogy](/eulogy), and the eulogy is what this post is supposed to serve. If that's right, the question changes from how I allocate my time to which of my roles is eating the others. Calling tech a neutral bucket is the more comfortable version, and that's why I don't trust it.
+I may have drawn this wrong. The other four buckets are places my time goes. Tech might be something else: a role, like dad or magician. And it's a role that's very good at feeding itself.
+
+That matters because [roles are how I write my eulogy](/eulogy), and the eulogy is what this post is for. If tech is a role, the question stops being "how do I split my hours?" It becomes "is one of my roles eating the others?"
+
+Calling tech a neutral bucket is the comfortable version, and that's why I don't trust it.
 
 {% include summarize-page.html src="/life-as-business" %}
 
