@@ -22,6 +22,7 @@ I asked myself a simple question this week: am I spending too much time at work 
 - [Where the freed hours land](#where-the-freed-hours-land)
 - [Relationships and health fill up](#relationships-and-health-fill-up)
 - [Passion or addiction](#passion-or-addiction)
+- [Point the hour up](#point-the-hour-up)
 - [Maybe tech isn't a bucket](#maybe-tech-isnt-a-bucket)
 
 <!-- vim-markdown-toc-end -->
@@ -67,17 +68,29 @@ That leaves identity. It has the most room, and it takes the most energy to star
 
 ## Passion or addiction
 
-I already had a framework for this and didn't notice. In [Escape Artists](/addiction) I sort activities with two questions: am I compelled, and is the rest of my life worse for it? Compelled and worse is addiction. Compelled and not worse is passion. Not compelled is a hobby.
+I already had a framework for this. In [Escape Artists](/addiction) I sort anything I do with two questions: am I compelled, and is the rest of my life worse for it?
 
-Tech is where my compulsion lives. My life is better for it, so it counts as passion. It still has an opportunity cost. Consumption is where my addiction lives, with [TikTok](/addiction#tiktok-thought-escape) at the top: I'm compelled to do it and I don't actually want to.
+- Compelled, and my life is worse: addiction.
+- Compelled, and my life is fine: passion.
+- Not compelled: a hobby.
 
-So "shrink tech" is the wrong instruction twice over. It cuts the passion instead of the addiction, and it hands the recovered hours to the phone.
+Tech is my passion. I'm compelled, and my life is better for it. Consumption is my addiction, with [TikTok](/addiction#tiktok-thought-escape) at the top: compelled, and I don't even want it.
 
-Even the Planned view in the chart, my target allocation, is unrealistic. It needs a plan for every freed hour and someone free to take it, and most days I don't have either. The lever I actually have is which way the hour moves.
+So "shrink tech" is wrong twice. It cuts the passion instead of the addiction, and it hands the freed hours to the phone.
 
-My energy moves between buckets all day. When it moves from the phone into tech, that's an upgrade: same screen, but I'm building instead of scrolling. It slides back just as easily, one tired tab at a time. When it moves from tech into work, that's the best case. I'm aligned, and I have a whole company behind me, so an hour counts for far more than it would on my own. That's the push in the chart: the same hour, pointed up.
+Passion still has a cost, the [monoculture trap](/addiction#dont-narrow-to-one-passion-the-monoculture-trap). When I overfeed one passion, the others wither. Identity doesn't wait for me to come back. It decays, and when tech has a bad month, nothing else is in shape to carry me.
 
-There's a second cost I underrate, the [monoculture trap](/addiction#dont-narrow-to-one-passion-the-monoculture-trap). When I overfeed one passion, the others wither. Identity doesn't wait for me to come back. It decays. And when the one passion I've been feeding has a bad month, the others aren't in shape to carry me.
+## Point the hour up
+
+Even the Planned view in the chart, my target allocation, is unrealistic. It needs a plan for every freed hour and someone free to take it, and most days I have neither. The lever I actually have is which way the hour moves.
+
+The same hour can land in three places:
+
+- The phone: it counts for about nothing.
+- My own tech: an upgrade. Same screen, but I'm building instead of scrolling.
+- Work: the best case. I'm aligned, and I have a whole company behind me, so an hour counts for far more than it would on my own.
+
+It slides back just as easily, one tired tab at a time. That's the push in the chart: the same hour, pointed up.
 
 ## Maybe tech isn't a bucket
 
