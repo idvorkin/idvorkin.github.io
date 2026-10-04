@@ -71,6 +71,8 @@ Tech is where my compulsion lives. My life is better for it, so it counts as pas
 
 So "shrink tech" is the wrong instruction twice over. It cuts the passion instead of the addiction, and it hands the recovered hours to the phone.
 
+The better instruction is about direction. My energy moves between buckets all day. When it moves from the phone into tech, that's an upgrade: same screen, but I'm building instead of scrolling. It slides back just as easily, one tired tab at a time. When it moves from tech into work, that's the best case. I'm aligned, and I have a whole company behind me, so an hour counts for far more than it would on my own.
+
 There's a second cost I underrate, the [monoculture trap](/addiction#dont-narrow-to-one-passion-the-monoculture-trap). When I overfeed one passion, the others wither. Identity doesn't wait for me to come back. It decays. And when the one passion I've been feeding has a bad month, the others aren't in shape to carry me.
 
 ## Maybe tech isn't a bucket
