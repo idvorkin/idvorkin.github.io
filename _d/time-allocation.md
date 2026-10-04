@@ -51,6 +51,8 @@ I used to think the fix was obvious: shrink tech. Take five hours back from the 
 
 The reason is [activation energy](/activation). Consumption starts itself. The phone is already in my hand and no decision is required. Enjoyment needs a person, which needs a text, a calendar, and somebody else's yes. It also needs a moment worth remembering, which needs a bit of a plan.
 
+There's also escape. When I feel alone or low, I don't want to sit in it, so I go into something else, and the phone is the nearest something else. So consumption isn't only the default. Sometimes it's where I go to stop feeling bad, and an hour freed up on a bad day goes there first.
+
 So freeing up time does nothing on its own. An hour I haven't planned goes to the default, and the default is level 0 of the [idle loop](/idle): phone in hand, nothing decided. If I want an hour to go to my family, I have to decide that before the hour shows up.
 
 ## Relationships and health fill up
