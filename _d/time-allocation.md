@@ -11,9 +11,9 @@ tags:
   - balance
 ---
 
-I asked myself a simple question this week: am I spending too much time on tech, at work and at home? Especially with the new round of AI, I spend a lot of time just talking to it. To answer it I had to see where my time actually goes. It's four buckets I fill on purpose, and a fifth one I'd never named that gets whatever the other four leave behind.
+I asked myself a simple question this week: am I spending too much time on tech, at work and at home? Especially with the new round of AI, I spend a lot of time just talking to it. The short answer: probably, but less tech isn't the fix. An hour I free up and don't plan goes to the phone. The fix is pointing the hour somewhere better: better tech, or nurturing more identity.
 
-**TL;DR**: Am I spending too much time on tech? Probably, but less tech isn't the fix. An hour I free up and don't plan goes to the phone. The fix is pointing the hour somewhere better: better tech, or nurturing more identity.
+To get there I had to see where my time actually goes. It's four buckets I fill on purpose, and a fifth one I'd never named that gets whatever the other four leave behind.
 
 {% include ai-slop.html percent="70" %}
 
