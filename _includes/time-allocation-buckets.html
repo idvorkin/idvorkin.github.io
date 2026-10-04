@@ -5,9 +5,11 @@ and health hits "enough"; anything past a ceiling runs into consumption. With no
 plan, most of the freed hours go straight to consumption. Self-contained, no
 parameters, no libraries, no network. Edit the DATA block at the top of the
 script; the rows, the ceiling ticks and the leak line are all generated from it.
-THE HOURS ARE ILLUSTRATIVE, NOT MEASURED: plausible round numbers for a 16 hour
-waking day, not a log of anyone's week. Used by: _d/time-allocation.md {%
-endcomment %}
+Below the rows, a static "which way the hour moves" strip splits the Tech bucket
+into my own tech and work, and shows the direction energy flows (consumption →
+tech → work) and what an hour counts for. Plain HTML/CSS, no script. THE HOURS
+ARE ILLUSTRATIVE, NOT MEASURED: plausible round numbers for a 16 hour waking
+day, not a log of anyone's week. Used by: _d/time-allocation.md {% endcomment %}
 
 <style>
   .tbk {
@@ -24,6 +26,7 @@ endcomment %}
     --tbk-health: #6b5b95;
     --tbk-relationships: #b8562f;
     --tbk-consumption: #7c828a;
+    --tbk-work: #1c4a63;
     --tbk-leak: #b8562f;
 
     --tbk-mono:
@@ -291,6 +294,154 @@ endcomment %}
     color: var(--tbk-ink-soft);
   }
 
+  /* Which way the hour moves: the inside of the Tech bucket. */
+  .tbk-flow {
+    margin: 1.2rem 0 0;
+    padding: 0.9rem 0.9rem 0.8rem;
+    border: 1px solid var(--tbk-rule);
+    border-radius: 2px;
+  }
+
+  .tbk-flow-title {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+
+  .tbk-flow-sub {
+    margin: 0.3rem 0 0;
+    font-size: 0.8rem;
+    line-height: 1.45;
+    color: var(--tbk-ink-soft);
+    max-width: 60ch;
+  }
+
+  .tbk-flow-steps {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    align-items: stretch;
+    gap: 0.5rem;
+    margin: 0.9rem 0 0;
+  }
+
+  .tbk-flow-node {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.55rem 0.6rem;
+    background: var(--tbk-panel);
+    border-top: 3px solid var(--tbk-consumption);
+    border-radius: 2px;
+  }
+
+  .tbk-flow-node[data-id="tech"] {
+    border-top-color: var(--tbk-tech);
+  }
+
+  .tbk-flow-node[data-id="work"] {
+    border-top-color: var(--tbk-work);
+  }
+
+  .tbk-flow-name {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .tbk-flow-what {
+    font-size: 0.72rem;
+    line-height: 1.3;
+    color: var(--tbk-ink-soft);
+  }
+
+  .tbk-flow-worth {
+    display: block;
+    height: 0.6rem;
+    margin-top: auto;
+    background: var(--tbk-paper);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .tbk-flow-worth span {
+    display: block;
+    height: 100%;
+  }
+
+  .tbk-flow-node[data-id="consumption"] .tbk-flow-worth span {
+    width: 5%;
+    background: var(--tbk-consumption);
+  }
+
+  .tbk-flow-node[data-id="tech"] .tbk-flow-worth span {
+    width: 30%;
+    background: var(--tbk-tech);
+  }
+
+  .tbk-flow-node[data-id="work"] .tbk-flow-worth span {
+    width: 100%;
+    background: var(--tbk-work);
+  }
+
+  .tbk-flow-count {
+    font-family: var(--tbk-mono);
+    font-size: 0.66rem;
+    color: var(--tbk-ink);
+  }
+
+  .tbk-flow-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 3.6rem;
+    font-family: var(--tbk-mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--tbk-ink-soft);
+    text-align: center;
+  }
+
+  .tbk-flow-arrow::after {
+    content: "\2192";
+    font-size: 1.3rem;
+    line-height: 1;
+    color: var(--tbk-ink);
+  }
+
+  .tbk-flow-back {
+    margin: 0.6rem 0 0;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    color: var(--tbk-ink-soft);
+  }
+
+  .tbk-flow-back::before {
+    content: "\2190  ";
+    white-space: pre;
+    font-family: var(--tbk-mono);
+    color: var(--tbk-leak);
+  }
+
+  @media (max-width: 640px) {
+    .tbk-flow-steps {
+      grid-template-columns: 1fr;
+      gap: 0.3rem;
+    }
+    .tbk-flow-arrow {
+      flex-direction: row;
+      gap: 0.4rem;
+    }
+    .tbk-flow-arrow::after {
+      content: "\2193";
+      font-size: 1.1rem;
+    }
+  }
+
   @media (max-width: 640px) {
     .tbk {
       padding: 1.1rem 1rem 1rem;
@@ -333,7 +484,8 @@ endcomment %}
   <h3 class="tbk-title">Take hours out of tech</h3>
   <p class="tbk-sub">
     Sixteen waking hours, made up to show the shape. Move the slider, then
-    switch between an hour with no plan and an hour with one.
+    switch between an hour with no plan and an hour with one. Planned is my
+    target.
   </p>
 
   <div class="tbk-controls">
@@ -358,11 +510,48 @@ endcomment %}
 
   <p class="tbk-leak" aria-live="polite"></p>
 
+  <div class="tbk-flow" role="group" aria-labelledby="tbk-flow-title">
+    <h4 class="tbk-flow-title" id="tbk-flow-title">Which way the hour moves</h4>
+    <p class="tbk-flow-sub">
+      Hitting the target is hard. Changing direction isn't. Here the Tech bucket
+      splits in two, my own tech and work, and the same screen hour counts for
+      very different amounts depending on where it points.
+    </p>
+    <div class="tbk-flow-steps">
+      <div class="tbk-flow-node" data-id="consumption">
+        <span class="tbk-flow-name">Consumption</span>
+        <span class="tbk-flow-what"
+          >The scroll. Same screen, nothing made.</span
+        >
+        <span class="tbk-flow-worth" aria-hidden="true"><span></span></span>
+        <span class="tbk-flow-count">counts for ~0</span>
+      </div>
+      <span class="tbk-flow-arrow">upgrade</span>
+      <div class="tbk-flow-node" data-id="tech">
+        <span class="tbk-flow-name">Tech, my own</span>
+        <span class="tbk-flow-what">Building instead of scrolling.</span>
+        <span class="tbk-flow-worth" aria-hidden="true"><span></span></span>
+        <span class="tbk-flow-count">counts for 1 hour</span>
+      </div>
+      <span class="tbk-flow-arrow">best case</span>
+      <div class="tbk-flow-node" data-id="work">
+        <span class="tbk-flow-name">Tech, at work</span>
+        <span class="tbk-flow-what">Aligned, with a company behind me.</span>
+        <span class="tbk-flow-worth" aria-hidden="true"><span></span></span>
+        <span class="tbk-flow-count">counts for far more</span>
+      </div>
+    </div>
+    <p class="tbk-flow-back">
+      It slides back just as easily, one tired tab at a time.
+    </p>
+  </div>
+
   <p class="tbk-foot">
     The dashed tick is a ceiling. Relationships stops at whatever time the other
     people actually have. Health stops at enough. Planned hours that run past a
     ceiling do not disappear, they land in consumption. Hours with no plan
-    mostly go there directly. Numbers are made up, not measured.
+    mostly go there directly. Numbers, and how much an hour counts for, are made
+    up, not measured.
   </p>
 
   <noscript>
