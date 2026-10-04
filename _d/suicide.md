@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Brain Attacks: A Better Model for Suicide"
+title: "Losing Someone to Suicide: It Was a Brain Attack"
 tags:
 permalink: /suicide
 redirect_from:
@@ -11,6 +11,8 @@ redirect_from:
 "Igor, what advice would you give a 20-year-old that just found out their dad killed themselves?" Sadly, when I was 20, I got a call from a family friend saying "Igor, you want to sit down, this isn't going to be fun to hear." My dad had taken his own life.
 
 {% include repo_image_float_right.html src="raccoon-suicide-remembering.webp" alt="A young raccoon in rainbow glasses sits in a lamplit armchair holding a framed photo of a smiling friend in a red beanie, while an older raccoon in a cardigan leans in close beside him." %}
+
+_If you're having thoughts of suicide yourself, [start here instead](/thinking-about-suicide)._
 
 **TL;DR:**
 
@@ -23,18 +25,6 @@ redirect_from:
 - Suicide method, notes, remains - that's now just the disease.
 
 - Just like heart attacks, suicide risk is hereditary, you have a predisposition that you need to take seriously.
-
-## If you're having a brain attack right now
-
-Here's the deal. You might think you'd be a bother. That reaching out will make someone feel bad. I've got great news for you: I'm like a robot at my core. You can't hurt me by asking. And if I get to help, I'll feel absolutely incredible. There's no greater gift you could give me.
-
-That voice telling you you're a bother? That's the brain attack talking, not you. And a brain attack is acute: it peaks, and it passes. Your job is to get through the next hour with someone on the line.
-
-- If you know me, reach out. If you have my number, use it; otherwise message me on [LinkedIn](/linkedin).
-- In the US, call or text **988** (the Suicide & Crisis Lifeline), or chat at [988lifeline.org](https://988lifeline.org/). Free, confidential, 24/7.
-- In Seattle and King County, [Crisis Connections](https://crisisconnections.org/programs/crisis-services/) answers 24 hours a day at **866-427-4747**.
-- Anywhere else, [findahelpline.com](https://findahelpline.com/) lists free crisis lines in 175+ countries.
-- If you're in danger right now, call 911 or your local emergency number.
 
 **The long version:**
 
