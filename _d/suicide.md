@@ -24,6 +24,18 @@ redirect_from:
 
 - Just like heart attacks, suicide risk is hereditary, you have a predisposition that you need to take seriously.
 
+## If you're having a brain attack right now
+
+Here's the deal. You might think you'd be a bother. That reaching out will make someone feel bad. I've got great news for you: I'm like a robot at my core. You can't hurt me by asking. And if I get to help, I'll feel absolutely incredible. There's no greater gift you could give me.
+
+That voice telling you you're a bother? That's the brain attack talking, not you. And a brain attack is acute: it peaks, and it passes. Your job is to get through the next hour with someone on the line.
+
+- If you know me, reach out. If you have my number, use it; otherwise message me on [LinkedIn](/linkedin).
+- In the US, call or text **988** (the Suicide & Crisis Lifeline), or chat at [988lifeline.org](https://988lifeline.org/). Free, confidential, 24/7.
+- In Seattle and King County, [Crisis Connections](https://crisisconnections.org/programs/crisis-services/) answers 24 hours a day at **866-427-4747**.
+- Anywhere else, [findahelpline.com](https://findahelpline.com/) lists free crisis lines in 175+ countries.
+- If you're in danger right now, call 911 or your local emergency number.
+
 **The long version:**
 
 So, what advice would I give to a 20-year-old who just found out their dad killed themselves?
