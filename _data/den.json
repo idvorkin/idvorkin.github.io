@@ -1,5 +1,18 @@
 [
   {
+    "num": 12,
+    "title": "Bless You",
+    "date": "October 4, 2026",
+    "img": "/images/den/den-012.webp",
+    "alt": "The Den #12: Bless You — four panels in the plush-render house style, all in the lamp-lit attic den. 1: Igor, a raccoon in rainbow glasses, a green TECHNOLOGIST tee, denim shorts and one blue and one yellow croc, holds up a folded note: 'LARRY? I LEFT YOU A NOTE.' Larry — the grey-bearded raccoon in wire-rim spectacles and a tweed waistcoat, one arm ending in a giant red lobster claw — stands at a toy block tower with two small blue plush robots: 'ONE MOMENT. BUILDING.' 2: Later, no words: the clock has moved on, the lamp burns low, the tower reaches the ceiling beam with the robots perched on top, and Igor sits slumped on the attic stairs, the note drooping in his paw. 3: Next morning. Igor, wrench in paw, has bolted a tin mailbox with three flags — SEEN, WORKING, DONE — to the arm of the green leather armchair: 'FROM NOW ON, YOU SIGN FOR YOUR MAIL.' Larry, clipboard on his knees: 'SO EVERYTHING YOU SAY IS MAIL?' 4: Igor sneezes, a paw clapped over his nose, coffee sloshing out of his mug: 'AH-CHOO!' Larry, not looking up, holds the yellow SEEN flag high: 'SEEN.'",
+    "panels": [
+      "/images/den/den-012-p1.webp",
+      "/images/den/den-012-p2.webp",
+      "/images/den/den-012-p3.webp",
+      "/images/den/den-012-p4.webp"
+    ]
+  },
+  {
     "num": 11,
     "title": "Zero Tokens",
     "date": "September 27, 2026",
