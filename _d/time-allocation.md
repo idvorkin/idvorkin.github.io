@@ -13,6 +13,8 @@ tags:
 
 I asked myself a simple question this week: am I spending too much time on tech, at work and at home? Especially with the new round of AI, I spend a lot of time just talking to it. The short answer: probably, but less tech isn't the fix. An hour I free up and don't plan becomes consumption. The fix is pointing the hour somewhere better: better tech, or nurturing more identity. That means allocating time for the important things and protecting it aggressively.
 
+{% include time-allocation-buckets.html %}
+
 {% include ai-slop.html percent="70" %}
 
 <!-- prettier-ignore-start -->
@@ -38,10 +40,6 @@ It's four buckets I fill on purpose, and a fifth one I'd never named that gets w
 **Relationships.** Family and friends. Arthur Brooks says a happy life has four pillars: faith, family, friendship, and work. Two of those are other people.
 
 **Consumption (non-enjoyment).** Everything else: the scroll, the autoplay, the forty minutes I can't account for. It's pleasure without [enjoyment](/build-life-you-want#pleasure-vs-enjoyment), which also needs people and memory. A little is fine. It rarely stays a little. It turns into procrastination, the thing I do instead of [the thing I'm avoiding](/frog), and that makes me sad.
-
-The hours below are made up, not measured. Set work and my own tech and watch where the hours go, then push one hour up and watch what it counts for.
-
-{% include time-allocation-buckets.html %}
 
 ## Why less tech fails
 
