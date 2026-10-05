@@ -11,7 +11,7 @@ redirect_from:
 imagefeaturelocal: raccoon-mania-3am.webp
 ---
 
-I've never taken cocaine, but I did go hypomanic in 2012, and it was glorious. Infinite energy, sharp as a whip, maximum creativity. That's my subjective reality anyway; the people around me said I was talking fast and jittery. I've always described the episode in a positive light, and that's a trap. Energy like that goes out of control, and it gets paid back with depression later.
+I've never taken cocaine, but I did go hypomanic in 2012, and it was glorious. Infinite energy, sharp as a whip, maximum creativity. That's my subjective reality anyway; the people around me said I was talking fast and jittery. I've always described the episode in a positive light, and that's a trap. Energy like that can go out of control, and it gets paid back with depression later.
 
 I pray these words never become my own. They're from a [friend with bipolar](https://breckyunits.com/a-manic-startup.html):
 
