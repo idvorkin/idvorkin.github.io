@@ -13,7 +13,7 @@ imagefeaturelocal: raccoon-mania-3am.webp
 
 I've never taken cocaine, but I did go hypomanic in 2012, and it was glorious. Infinite energy, sharp as a whip, maximum creativity. That's my subjective reality anyway; the people around me said I was talking fast and jittery. I've always described the episode in a positive light, and that's a trap. Energy like that can go out of control, and it gets paid back with depression later.
 
-I pray these words never become my own. They're from a [friend with bipolar](https://breckyunits.com/a-manic-startup.html):
+I pray these words never become my own. They're from a [friend with bipolar](https://breck.lol/a-manic-startup.html):
 
 > What pains me most is I see how crystal clear my illness was in the beginning and how I was surrounded by so much love. So, so many family and friends were desperately trying to intervene, and I spurned them and then reacted despicably. I am so, so sorry. I failed as a husband, a father, a brother, friend, and as a kind human being. It is a hard pill to swallow that I was the Evil one. Why did I fail? Me. My brain. My manic self. I wanted more than anything to prove them wrong. That I could do this. But I couldn't. You can learn a lot, but you can't unlearn bipolar disorder. I desperately wanted to believe that bipolar disorder wasn't real and that I could stop living in fear of it. That all the doubters were wrong.
 
@@ -37,9 +37,9 @@ I pray these words never become my own. They're from a [friend with bipolar](htt
 
 Bipolar's worst outcome is suicide. My model for that: a [brain attack](/suicide). For what the manic side costs, read Breck:
 
-- [Breck's nasty manic episode](https://breckyunits.com/a-manic-startup.html)
-- [Breck's history of bipolar](https://breckyunits.com/bipolarDisorder.html)
-- [Breck's blog](https://breckyunits.com/bipolar.html)
+- [Breck's nasty manic episode](https://breck.lol/a-manic-startup.html)
+- [Breck's history of bipolar](https://breck.lol/bipolarDisorder.html)
+- [Breck's blog](https://breck.lol/bipolar.html)
 
 ### The failure modes: Crash your car, spend all your money, have an affair
 
@@ -56,7 +56,7 @@ The bipolar survival guide says to make your plan for going off-kilter while you
 - Make me read this.
 - Get me to a psychiatrist ASAP, and check I'm still on my meds.
 - Check I'm still doing my [practices](/emotional-health).
-- Make sure I've checked in with my friends and bipolar support: Ammon and [Breck](https://breckyunits.com).
+- Make sure I've checked in with my friends and bipolar support: Ammon and [Breck](https://breck.lol/writing.html).
 
 ### My hypomania in 2012
 
