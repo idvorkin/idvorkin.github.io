@@ -128,7 +128,7 @@ New Learnings
 - ☐ Write up most valuable stuff you can do as a senior eng
 - ☐ Write up "Sustainable Work"
 - ☐ Do TikTok on the variants of "See Something/Say Something"
-- ☑ Met a neat guy who also blogs, does tech, and is bipolar. Scary story about his [bipolar getting out of control](https://breckyunits.com/a-manic-startup.html).
+- ☑ Met a neat guy who also blogs, does tech, and is bipolar. Scary story about his [bipolar getting out of control](https://breck.lol/a-manic-startup.html).
 
 ### Meditation
 
