@@ -6,6 +6,7 @@ permalink: /suicide
 redirect_from:
   - /brain-attack
   - /brainattack
+imagefeaturelocal: raccoon-suicide-remembering.webp
 ---
 
 "Igor, what advice would you give a 20-year-old that just found out their dad killed themselves?" Sadly, when I was 20, I got a call from a family friend saying "Igor, you want to sit down, this isn't going to be fun to hear." My dad had taken his own life.

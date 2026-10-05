@@ -5,6 +5,7 @@ title: "Tori"
 tags:
   - family
   - relationships
+imagefeaturelocal: raccoon-husband.webp
 ---
 
 Tori values her privacy, so this page is Tori-light and Igor-heavy.

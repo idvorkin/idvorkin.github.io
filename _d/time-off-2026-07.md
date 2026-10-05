@@ -6,6 +6,7 @@ redirect_from:
   - /eu-2026
   - /europe-2026
   - /scandi-2026
+imagefeaturelocal: timeline-2026-06-27-wheels-up.webp
 ---
 
 <!--
