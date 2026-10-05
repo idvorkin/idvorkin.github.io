@@ -13,8 +13,6 @@ tags:
 
 I asked myself a simple question this week: am I spending too much time on tech, at work and at home? Especially with the new round of AI, I spend a lot of time just talking to it. The short answer: probably, but less tech isn't the fix. An hour I free up and don't plan becomes consumption. The fix is pointing the hour somewhere better: better tech, or nurturing more identity. That means allocating time for the important things and protecting it aggressively.
 
-To get there I had to see where my time actually goes.
-
 {% include ai-slop.html percent="70" %}
 
 <!-- prettier-ignore-start -->
