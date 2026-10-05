@@ -6,6 +6,8 @@ tags:
 permalink: /thinking-about-suicide
 ---
 
+{% include repo_image_float_right.html src="raccoon-thinking-suicide-call.webp" alt="Split screen divided by a yellow lightning bolt. On the left, a sad, worried young raccoon in a grey hoodie sits by an open red first-aid kit and holds its phone to his ear. On the right, a raccoon in rainbow glasses with a red felt heart on his green shirt answers his phone, concerned and supportive, listening closely." %}
+
 Suicide is a brain attack, just like a heart attack. If your chest was crushing, you wouldn't sit alone hoping it clears up. You'd call someone, because it might kill you. Brain attacks are exactly the same. If you're thinking about suicide, or the thought has even crossed your mind, call someone right now.
 
 ## If you know me, call me. You're not a bother.
