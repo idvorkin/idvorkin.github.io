@@ -64,7 +64,7 @@ I had been diagnosed with depression and put on SSRIs. I remember it clear as da
 
 I told my psychiatrist (I'd only had him for those twelve weeks). He said stop the SSRIs immediately, and prescribed some valium in case it got worse.
 
-I stabilized at high energy for two or three months. In that window I took a poetry class, did a poetry slam, and wrote a very impressive strategy at work. The intervention was lamotrigine (Lamictal), for the rest of my life. Did I get depressed afterwards? I don't recall.
+I stabilized at high energy for two or three months. In that window I took a poetry class, did a poetry slam, and wrote a very impressive strategy at work. The intervention was lamotrigine (Lamictal), for the rest of my life.
 
 ### Optimal energy vs Hypomania
 
@@ -76,12 +76,17 @@ I liked using the word mania with my psychiatrist. He scolded me: no, you're not
 
 ### Mania vs Cocaine
 
-Drugs are fantastic till they ruin your life. Mania is like that too. From your favorite LLM, trimmed:
+Drugs are fantastic till they ruin your life. Mania is like that too. Side by side, from the NIMH, the American Psychiatric Association and NIDA:
 
-| Behavior Aspect                  | Mania                                                                           | Cocaine Use                                                                                   |
-| -------------------------------- | ------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| **Speech and Thought Patterns**  | Rapid, pressured speech; racing thoughts and ideas.                             | Fast talking; thoughts can be accelerated but may lack depth and coherence.                   |
-| **Sleep Patterns**               | Significantly reduced need for sleep without feeling fatigued.                  | Decreased need for sleep during use; rebound sleepiness or exhaustion after effects wear off. |
-| **Self-Perception**              | Inflated self-esteem or grandiosity, often disconnected from reality.           | Temporary feelings of grandiosity and invincibility.                                          |
-| **Judgment and Decision-Making** | Impaired judgment leading to potentially severe life consequences.              | Compromised decision-making abilities, often leading to immediate negative consequences.      |
-| **Aftereffects**                 | Can include post-manic depression, exhaustion, or stabilization with treatment. | Comedown effects include depression, lethargy, and a strong craving to use again.             |
+|                       | Hypomania and mania                                                                                             | Cocaine                                                                                                                        |
+| --------------------- | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| **How it feels**      | Up, elated, wired, more energy than usual. Or just irritable and touchy.                                        | Euphoric, energetic, talkative, alert. Or restless, anxious and paranoid.                                                      |
+| **Sleep**             | You need less of it and don't feel tired.                                                                       | You need less sleep and less food, while it lasts.                                                                             |
+| **Talk and thought**  | Fast talk about a lot of things, racing thoughts.                                                               | Talkative, mentally sharp.                                                                                                     |
+| **You vs. them**      | Hypomania can feel very good and productive, like nothing is wrong. Family and friends notice the change first. | You know you took something.                                                                                                   |
+| **How long it lasts** | Hypomania: at least four days in a row. Mania: a week or more, or straight to the hospital.                     | Snorted, 15 to 30 minutes. Smoked, 5 to 10. Then you want more.                                                                |
+| **The comedown**      | Depression often follows. Episodes come back, and without treatment, more often.                                | A crash almost right away: fatigue, low mood, strong craving. After long heavy use the craving and depression can last months. |
+| **What it costs**     | Reckless driving, spending sprees, promiscuity: the three failure modes above. Bipolar is a factor in suicide.  | Tolerance, so higher and more frequent doses. Withdrawal can bring suicidal thoughts.                                          |
+| **Treatment**         | Lifelong. Mood stabilizers like lithium, plus talk therapy. Antidepressants on their own can trigger mania.     | No approved medication. Behavioral therapy is what works.                                                                      |
+
+Sources: [NIMH, Bipolar Disorder](https://www.nimh.nih.gov/health/publications/bipolar-disorder), [American Psychiatric Association, What Are Bipolar Disorders?](https://www.psychiatry.org/patients-families/bipolar-disorders/what-are-bipolar-disorders), [NIDA, Cocaine](https://nida.nih.gov/research-topics/cocaine), [MedlinePlus, Cocaine withdrawal](https://medlineplus.gov/ency/article/000947.htm).
