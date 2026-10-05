@@ -589,7 +589,7 @@ Used by: _d/time-allocation.md {% endcomment %}
       <label for="tbk-own"
         >My own tech <output id="tbk-own-out" for="tbk-own">2h</output></label
       >
-      <input id="tbk-own" type="range" min="0" max="8" step="0.5" value="2" />
+      <input id="tbk-own" type="range" min="0" max="12" step="0.5" value="2" />
     </div>
   </div>
 
@@ -646,7 +646,7 @@ Used by: _d/time-allocation.md {% endcomment %}
     // and the summary line all come from this block. Hours are ILLUSTRATIVE:
     // plausible round numbers, not a measurement of anyone's week. ----
     var DAY_HOURS = 14; // 24, less 8 asleep, less about 2 for meals and transit
-    var SCALE_HOURS = 12; // a bucket bar is full at this many hours
+    var SCALE_HOURS = 14; // a bucket bar is full at this many hours (the whole day)
 
     var BUCKETS = [
       { id: "tech", name: "Tech" },
