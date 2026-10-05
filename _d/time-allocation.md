@@ -67,7 +67,7 @@ A full allocation, every hour assigned like the Planned view in the chart, is un
 
 - The phone: it counts for about nothing.
 - My own tech: an upgrade. Same screen, but I'm building instead of scrolling.
-- Work: the best case. I'm aligned, and I have a whole company behind me, so an hour counts for far more than it would on my own.
+- Work: the best case, when the work is what I'd love to do for free. Then I'm aligned, and I have a whole company behind me, so an hour counts for far more than it would on my own.
 
 It slides back just as easily, one tired tab at a time. That's the push in the chart: the same hour, pointed up.
 
