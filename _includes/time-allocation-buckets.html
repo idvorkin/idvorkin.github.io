@@ -8,7 +8,7 @@ Sliding below a baseline frees hours that flow by the plan's shares with
 ceilings (relationships "their time", health "enough"; anything past a ceiling
 runs into consumption; with no plan most of it goes straight to consumption).
 Sliding above a baseline takes hours from consumption first, then identity,
-health and relationships. The day always adds up to 14 hours and a stacked day
+relationships and health. The day always adds up to 14 hours and a stacked day
 strip shows the total. The Tech bar is split into work and my own. The arrows in
 the left gutter are an SVG drawn from the computed flows every render; the
 ceiling notes, the "counts for" readouts, the day strip and the summary line
@@ -677,8 +677,13 @@ Used by: _d/time-allocation.md {% endcomment %}
     };
 
     // Ceilings. relationships = the most time the other people are actually
-    // available for. health = where more hours stop buying more health.
-    var CAPS = { relationships: 3.5, health: 1.5 };
+    // available for (less on a weekday). health = where more hours stop
+    // buying more health.
+    var CAPS_BY_DAY = {
+      weekday: { relationships: 2, health: 1.5 },
+      weekend: { relationships: 3.5, health: 1.5 },
+    };
+    var CAPS = CAPS_BY_DAY.weekday;
     var CAP_LABELS = { relationships: "their time", health: "enough" };
 
     // Share of each freed tech hour that each bucket gets. Anything that runs
@@ -693,7 +698,7 @@ Used by: _d/time-allocation.md {% endcomment %}
     };
 
     // Where hours added to tech come from, in order.
-    var TAKE_ORDER = ["consumption", "identity", "health", "relationships"];
+    var TAKE_ORDER = ["consumption", "identity", "relationships", "health"];
 
     // The ladder one hour climbs when I point it, and what it counts for on
     // each rung.
@@ -921,6 +926,7 @@ Used by: _d/time-allocation.md {% endcomment %}
         hrs: hrs,
         delta: delta,
         note: note,
+        cap: cap,
       };
 
       // The day strip: tech is drawn as work then my own.
@@ -1108,6 +1114,7 @@ Used by: _d/time-allocation.md {% endcomment %}
         r.delta.textContent = signed(h - baseTotals[b.id]);
 
         var cap = CAPS[b.id];
+        if (r.cap) r.cap.style.left = pct(cap);
         var atCap = cap != null && h >= cap - 0.001;
         r.li.classList.toggle("is-capped", atCap);
         r.li.classList.toggle("is-gaining", g > 0);
@@ -1258,6 +1265,7 @@ Used by: _d/time-allocation.md {% endcomment %}
       btn.addEventListener("click", function () {
         if (dayKind === btn.dataset.dayk) return;
         dayKind = btn.dataset.dayk;
+        CAPS = CAPS_BY_DAY[dayKind];
         root.querySelectorAll("[data-dayk]").forEach(function (b) {
           b.setAttribute("aria-pressed", String(b.dataset.dayk === dayKind));
         });
