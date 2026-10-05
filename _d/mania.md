@@ -8,7 +8,7 @@ permalink: /mania
 redirect_from:
   - /cocaine
   - /manic
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-manic.webp
+imagefeaturelocal: raccoon-mania-3am.webp
 ---
 
 The words that follow, I pray will never be my own -- What pains me most is I see how crystal clear my illness was in the beginning and how I was surrounded by so much love. So, so many family and friends were desperately trying to intervene, and I spurned them and then reacted despicably. I am so, so sorry. I failed as a husband, a father, a brother, friend, and as a kind human being. It is a hard pill to swallow that I was the Evil one. Why did I fail? Me. My brain. My manic self. I wanted more than anything to prove them wrong. That I could do this. But I couldn't. You can learn a lot, but you can't unlearn bipolar disorder. I desperately wanted to believe that bipolar disorder wasn't real and that I could stop living in fear of it. That all the doubters were wrong (from a [friend with bipolar](https://breckyunits.com/a-manic-startup.html)).
@@ -30,7 +30,7 @@ I've always described my hypomanic episode in a positive light (but that's a tra
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-{% include blob_image_float_right.html src="blog/raccoon-manic.webp" %}
+{% include repo_image_float_right.html src="raccoon-mania-3am.webp" alt="A wide-eyed raccoon in rainbow glasses, fur standing on end, holds a pen and a microphone at three in the morning, surrounded by pinned-up pages, a tower of mugs and a bed that is still made." %}
 
 ### Don't fool yourself, this is as serious as depression
 
