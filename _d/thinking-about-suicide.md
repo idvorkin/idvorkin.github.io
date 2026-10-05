@@ -4,6 +4,7 @@ title: "If You're Thinking About Suicide"
 tags:
   - emotional intelligence
 permalink: /thinking-about-suicide
+imagefeaturelocal: raccoon-thinking-suicide-call.webp
 ---
 
 {% include repo_image_float_right.html src="raccoon-thinking-suicide-call.webp" alt="Split screen divided by a yellow lightning bolt. On the left, a sad, worried young raccoon in a grey hoodie sits by an open red first-aid kit and holds its phone to his ear. On the right, a raccoon in rainbow glasses with a red felt heart on his green shirt answers his phone, concerned and supportive, listening closely." %}

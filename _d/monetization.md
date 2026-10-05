@@ -2,6 +2,7 @@
 layout: post
 title: "Creator Monetization: From Dreams to Reality"
 permalink: /monetize
+imagefeatureblob: techtips2020-revenue.png
 ---
 
 Let's talk money. Whether you're a content creator dreaming of YouTube riches or a brand trying to understand the advertising landscape, this guide breaks down the reality of monetization - spoiler alert: it's harder than you think, but not impossible.
