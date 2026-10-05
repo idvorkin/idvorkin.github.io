@@ -1,4 +1,5 @@
 ---
+excerpt: '22 days, 5 countries, 4 Dvorkins, one whirlwind tour. From Reykjavík to Amsterdam by way of Copenhagen, Stockholm, Oslo, the Norwegian fjords, and Bergen. This is the first time we''ve attempted a trip of this scope as a family — the kids are 16 and 12, both still home, and the window for "all four of us on the road together" closes faster than I''d like.'
 layout: post
 title: Time off July 2026 - Scandinavian Whirlwind Tour
 permalink: /timeoff-2026-07
