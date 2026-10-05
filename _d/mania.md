@@ -11,21 +11,22 @@ redirect_from:
 imagefeaturelocal: raccoon-mania-3am.webp
 ---
 
-The words that follow, I pray will never be my own -- What pains me most is I see how crystal clear my illness was in the beginning and how I was surrounded by so much love. So, so many family and friends were desperately trying to intervene, and I spurned them and then reacted despicably. I am so, so sorry. I failed as a husband, a father, a brother, friend, and as a kind human being. It is a hard pill to swallow that I was the Evil one. Why did I fail? Me. My brain. My manic self. I wanted more than anything to prove them wrong. That I could do this. But I couldn't. You can learn a lot, but you can't unlearn bipolar disorder. I desperately wanted to believe that bipolar disorder wasn't real and that I could stop living in fear of it. That all the doubters were wrong (from a [friend with bipolar](https://breckyunits.com/a-manic-startup.html)).
+I've never taken cocaine, but I did go hypomanic in 2012, and it was glorious. Infinite energy, sharp as a whip, maximum creativity. That's my subjective reality anyway; the people around me said I was talking fast and jittery. I've always described the episode in a positive light, and that's a trap. Energy like that goes out of control, and it gets paid back with depression later.
 
-I've always described my hypomanic episode in a positive light (but that's a trap) - I've never taken cocaine, but I did go hypomanic in 2012, and it was glorious. Infinite energy, sharp as a whip, maximum creativity. Well, that's my subjective reality, but external observers said I was talking fast, jittery, etc. And of course, such high energy can go out of control, and it must be paid back with some future depression.
+I pray these words never become my own. They're from a [friend with bipolar](https://breckyunits.com/a-manic-startup.html):
+
+> What pains me most is I see how crystal clear my illness was in the beginning and how I was surrounded by so much love. So, so many family and friends were desperately trying to intervene, and I spurned them and then reacted despicably. I am so, so sorry. I failed as a husband, a father, a brother, friend, and as a kind human being. It is a hard pill to swallow that I was the Evil one. Why did I fail? Me. My brain. My manic self. I wanted more than anything to prove them wrong. That I could do this. But I couldn't. You can learn a lot, but you can't unlearn bipolar disorder. I desperately wanted to believe that bipolar disorder wasn't real and that I could stop living in fear of it. That all the doubters were wrong.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
 - [Don't fool yourself, this is as serious as depression](#dont-fool-yourself-this-is-as-serious-as-depression)
-- [The failure modes: Crash your car, spend all your money, have an affair.](#the-failure-modes-crash-your-car-spend-all-your-money-have-an-affair)
+- [The failure modes: Crash your car, spend all your money, have an affair](#the-failure-modes-crash-your-car-spend-all-your-money-have-an-affair)
 - [What you should do if you sense I'm going hypomanic](#what-you-should-do-if-you-sense-im-going-hypomanic)
 - [My hypomania in 2012](#my-hypomania-in-2012)
 - [Optimal energy vs Hypomania](#optimal-energy-vs-hypomania)
 - [Hypomania vs Mania](#hypomania-vs-mania)
 - [Mania vs Cocaine](#mania-vs-cocaine)
-- [Stats](#stats)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -34,91 +35,53 @@ I've always described my hypomanic episode in a positive light (but that's a tra
 
 ### Don't fool yourself, this is as serious as depression
 
-- [From Breck's Nasty Manic Episode](https://breckyunits.com/a-manic-startup.html)
-- [Breck's history of Bipolar](https://breckyunits.com/bipolarDisorder.html)
-- [Breck's Blog](https://breckyunits.com/bipolar.html)
+Bipolar's worst outcome is suicide. My model for that: a [brain attack](/suicide). For what the manic side costs, read Breck:
 
-Bipolar's worst outcome is suicide. My model for that: a [brain attack](/suicide).
+- [Breck's nasty manic episode](https://breckyunits.com/a-manic-startup.html)
+- [Breck's history of bipolar](https://breckyunits.com/bipolarDisorder.html)
+- [Breck's blog](https://breckyunits.com/bipolar.html)
 
-### The failure modes: Crash your car, spend all your money, have an affair.
+### The failure modes: Crash your car, spend all your money, have an affair
 
-**Crash your car** - I hate driving, I'm either riding a bicycle, or as of 2023, or my car is [driving me](/tesla). Safe
+**Crash your car** - I hate driving. I'm either on a bicycle or, as of 2023, my car is [driving me](/tesla). Safe.
 
-**Spend all your money** - Lucky for me, I'm pretty cheap, and basically own everything I want already.
+**Spend all your money** - Lucky for me, I'm pretty cheap, and I basically own everything I want already.
 
-**Have an affair** - This is my highest risk, luckily at the time I was in terrible shape, and now I know there is nothing more sacred than my family.
+**Have an affair** - This is my highest risk. Luckily, at the time I was in terrible shape, and now I know there is nothing more sacred than my family.
 
 ### What you should do if you sense I'm going hypomanic
 
-In the bipolar survival guide, they say it's critical to make a plan for when you go off-kilter while you're stable. So here's my plan:
+The bipolar survival guide says to make your plan for going off-kilter while you're still stable. Here's mine, still a sketch:
 
-- Need to figure this out.
-- Make me read this
-- Get me into a psychiatrist ASAP.
-  - Check I'm still on my meds
-- Check I'm still doing my [practices](/emotional-health)
-- Make sure I've checked in with my friends/bipolar support
-  - Ammon
-  - [Breck](breckyunits.com)
+- Make me read this.
+- Get me to a psychiatrist ASAP, and check I'm still on my meds.
+- Check I'm still doing my [practices](/emotional-health).
+- Make sure I've checked in with my friends and bipolar support: Ammon and [Breck](https://breckyunits.com).
 
 ### My hypomania in 2012
 
-Cause
+I had been diagnosed with depression and put on SSRIs. I remember it clear as day: twelve weeks to the day after starting them, we were driving back from Oregon and I suddenly felt fantastic.
 
-I had been diagnosed with depression and went on SSRIs. I remember it clear as day about 12 weeks to the day of taking SSRIs we were driving back from Oregon (TBD: Find old blog post), and I suddenly felt fantastic.
+I told my psychiatrist (I'd only had him for those twelve weeks). He said stop the SSRIs immediately, and prescribed some valium in case it got worse.
 
-I told my psychiatrist (I'd only had him for 12 weeks), and he was like you need to stop SSRIs immediately, he also prescribed some valium in case symptoms got worse.
-
-The episode:
-
-I stabilized at high energy for about 2 or 3 months
-
-Stuff I did
-
-- Poetry Class (link color blue was born)
-- Poetry Slam (link slam)
-- Very impressive strategy at work (link Manish inspiration post)
-- Other ??
-
-Interventions:
-
-- Lamotrigine/Lamictal - for the rest of my life.
-
-Post Episode:
-
-- Did I become depressed don't recall.
+I stabilized at high energy for two or three months. In that window I took a poetry class, did a poetry slam, and wrote a very impressive strategy at work. The intervention was lamotrigine (Lamictal), for the rest of my life. Did I get depressed afterwards? I don't recall.
 
 ### Optimal energy vs Hypomania
 
-Sometimes, I'm at my best, and I wonder if I'm going hypomanic - so far the real condition seems to be how much sleep I need. As long as I get tired and need sleep, I'm probably just operating at my best, and feeling great for it.
+Sometimes I'm at my best and wonder if I'm going hypomanic. So far the real tell is how much sleep I need. As long as I get tired and need sleep, I'm probably just operating at my best, and feeling great for it.
 
 ### Hypomania vs Mania
 
-I liked to use the word Mania with my psychiatrist, he scolded me, no you're not manic. Manic is different, and he told me a story.
-
-Fished his client out of Lake Union in a wrestling leotard. What are you doing asked the police? Oh, I'm planning on pulling this tugboat.
+I liked using the word mania with my psychiatrist. He scolded me: no, you're not manic, manic is different. Then he told me a story. His client got fished out of Lake Union in a wrestling leotard. What are you doing, the police asked. Oh, I'm planning on pulling this tugboat.
 
 ### Mania vs Cocaine
 
-Drugs are fantastic till they ruin your life. Mania is like that too.
+Drugs are fantastic till they ruin your life. Mania is like that too. From your favorite LLM, trimmed:
 
-From your favorite LLM:
-
-Behaviors and consequences associated with mania and cocaine use, without addressing the duration of their effects.
-
-| Behavior Aspect                  | Mania                                                                                                    | Cocaine Use                                                                                    |
-| -------------------------------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| **Mood**                         | Elevated, expansive, or irritable mood.                                                                  | Intense euphoria and heightened confidence.                                                    |
-| **Energy and Alertness**         | High energy and activity levels; decreased need for sleep.                                               | Spike in energy and alertness; increased physical and mental activity.                         |
-| **Impulsivity and Risk-Taking**  | Impulsive decision-making and engagement in risky activities.                                            | Impulsiveness and propensity for taking risks, especially when under the influence.            |
-| **Social Behavior**              | Overly social, intrusive, and lacking social boundaries.                                                 | Fluctuating social behavior; initially increased sociability, followed by possible withdrawal. |
-| **Self-Perception**              | Inflated self-esteem or grandiosity, often disconnected from reality.                                    | Temporary feelings of grandiosity and invincibility.                                           |
-| **Speech and Thought Patterns**  | Rapid, pressured speech; racing thoughts and ideas.                                                      | Fast talking; thoughts can be accelerated but may lack depth and coherence.                    |
-| **Sleep Patterns**               | Significantly reduced need for sleep without feeling fatigued.                                           | Decreased need for sleep during use; rebound sleepiness or exhaustion after effects wear off.  |
-| **Judgment and Decision-Making** | Impaired judgment leading to potentially severe life consequences.                                       | Compromised decision-making abilities, often leading to immediate negative consequences.       |
-| **Addiction and Dependence**     | Not applicable as mania is a symptom of a disorder; however, behaviors can have addictive-like patterns. | High potential for addiction, with a compulsion to use despite negative effects.               |
-| **Aftereffects**                 | Can include post-manic depression, exhaustion, or stabilization with treatment.                          | Comedown effects include depression, lethargy, and a strong craving to use again.              |
-
-### Stats
-
-To be added
+| Behavior Aspect                  | Mania                                                                           | Cocaine Use                                                                                   |
+| -------------------------------- | ------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| **Speech and Thought Patterns**  | Rapid, pressured speech; racing thoughts and ideas.                             | Fast talking; thoughts can be accelerated but may lack depth and coherence.                   |
+| **Sleep Patterns**               | Significantly reduced need for sleep without feeling fatigued.                  | Decreased need for sleep during use; rebound sleepiness or exhaustion after effects wear off. |
+| **Self-Perception**              | Inflated self-esteem or grandiosity, often disconnected from reality.           | Temporary feelings of grandiosity and invincibility.                                          |
+| **Judgment and Decision-Making** | Impaired judgment leading to potentially severe life consequences.              | Compromised decision-making abilities, often leading to immediate negative consequences.      |
+| **Aftereffects**                 | Can include post-manic depression, exhaustion, or stabilization with treatment. | Comedown effects include depression, lethargy, and a strong craving to use again.             |
