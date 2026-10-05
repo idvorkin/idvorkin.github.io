@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Where the time goes"
+title: "How the Rescued Hour Disappears"
 permalink: /time-allocation
 redirect_from:
   - /buckets
