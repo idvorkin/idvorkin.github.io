@@ -461,6 +461,8 @@ Right now, we're still limited by how fast we can build things. But that's chang
 
 **How do organizations handle 200x more projects?** Imagine a company like Meta that used to run N projects because engineering capacity was the limit. Now they can run 200N projects. How do they even assess them all? How do they A/B test that many variants? It's going to be a crazy world.
 
+My current answer is two jobs - iterating on the job to be done, and keeping the code changeable by agents - in [What's Left in Engineering?](/whats-left).
+
 **Reviews become more expensive than creation.** LLVM hit this with PRs - they had to create a [whole AI tool policy](https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159) because reviewing AI-generated contributions takes more human time than the AI spent creating them. TL;DR: You're responsible for anything your AI creates. If you can't answer questions about what the AI did, your PR fails. But this applies to everything - not just code.
 
 ### What happens post-singularity?
