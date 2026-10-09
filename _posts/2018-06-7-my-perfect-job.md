@@ -15,6 +15,8 @@ tags:
 
 In my dream job, I learn the customer and business needs and focus the team on delivering them in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech. When talking to others I prefer a couch to a table, and when I need a break, you might see me juggling, practicing magic, or riding my folding bike—often in the office.
 
+{% include alert.html content="**This page is currently stale.** One of the things I've always said as an EM is that EMs should periodically do a [rotation as a tech lead](/software-leadership-roles). Given how fast the world is changing with AI, I'm very excited to be a tech lead in the AI safety space right now. I'll update this page soon." style="warning" %}
+
 ## My labels
 
 ### Engineering Manager or Tech Lead: Engineering Manager
