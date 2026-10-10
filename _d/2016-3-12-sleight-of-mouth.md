@@ -22,6 +22,7 @@ These are my notes on Robert Dilts' _Sleight of Mouth_. Dilts reverse-engineered
 <!-- vim-markdown-toc-start -->
 
 - [Interactive version](#interactive-version)
+  - [Run it on your own belief with an LLM](#run-it-on-your-own-belief-with-an-llm)
 - [Words build the experience](#words-build-the-experience)
   - [As small as 'and', 'but' or 'even though'](#as-small-as-and-but-or-even-though)
   - [What the patterns train](#what-the-patterns-train)
@@ -55,9 +56,15 @@ These are my notes on Robert Dilts' _Sleight of Mouth_. Dilts reverse-engineered
 
 ## Interactive version
 
-Pick a stuck belief from the dropdown, then try the patterns on it: the part of the belief a pattern pries at lights up (the evidence, the link, the conclusion, or the belief as a whole), and the reframed sentence appears right underneath. The ? beside each pattern explains it, and "By section" groups the patterns by the section of this post that teaches them. (This replaces Dilts' original [1987 diagram](https://github.com/idvorkin/blob/raw/master/sleight-of-mouth.jpg), which packs the same fourteen moves around a single cancer example.)
+Pick a stuck belief from the dropdown, then try the patterns on it: the part of the belief a pattern pries at lights up (the evidence, the link, the conclusion, or the belief as a whole), and the reframed sentence appears right underneath. "About this pattern" explains the one in play, and "By section" groups the patterns by the section of this post that teaches them. (This replaces Dilts' original [1987 diagram](https://github.com/idvorkin/blob/raw/master/sleight-of-mouth.jpg), which packs the same fourteen moves around a single cancer example.)
 
 {% include sleight-of-mouth-explorer.html %}
+
+### Run it on your own belief with an LLM
+
+No explorer has your belief in it, so take the patterns to your own LLM. Copy this prompt into ChatGPT, Claude or whatever you use, put your belief where it says, and it runs all fourteen and shows which part of the belief each one pries at.
+
+{% include sleight-of-mouth-prompt.html %}
 
 ## Words build the experience
 

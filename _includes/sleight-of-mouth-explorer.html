@@ -2,14 +2,14 @@
 from the dropdown, then click any of Dilts' fourteen patterns: the part of the
 belief it aims at lights up (evidence, link, conclusion, or the whole belief),
 the reframed sentence appears directly under the belief, and the panel shows the
-pattern's question. The "?" beside each pattern opens a short explanation
-(click/tap toggles; Esc or a tap outside closes). Prev / Next and the arrow keys
-step through all fourteen. An "All 14 | By section" toggle switches to cards for
-the post's own sections (sections: in the data); tapping one runs the same
-explorer on just that section's patterns, with "All sections" to go back.
-Without JavaScript it falls back to a plain list of the patterns. Data:
-_data/sleight_of_mouth.yml. Self-contained, no libraries, no network. Used by:
-_d/2016-3-12-sleight-of-mouth.md {% endcomment %}
+pattern's question. "About this pattern" in the pattern card opens a short
+explanation (click/tap toggles; Esc or a tap outside closes). Prev / Next and
+the arrow keys step through all fourteen. An "All 14 | By section" toggle
+switches to cards for the post's own sections (sections: in the data); tapping
+one runs the same explorer on just that section's patterns, with "All sections"
+to go back. Without JavaScript it falls back to a plain list of the patterns.
+Data: _data/sleight_of_mouth.yml. Self-contained, no libraries, no network. Used
+by: _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
 <style>
   .somx {
     position: relative;
@@ -209,25 +209,26 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
     border-color: var(--somx-c);
     color: #fff;
   }
-  .somx-help {
-    flex: 0 0 auto;
-    align-self: center;
-    width: 1.6rem;
-    height: 1.6rem;
-    padding: 0;
-    border: 1px solid var(--somx-rule);
-    border-radius: 999px;
-    background: var(--somx-paper);
-    color: var(--somx-c);
-    font-size: 0.8rem;
-    font-weight: 700;
-    line-height: 1;
+  .somx-card-head {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.75rem;
+    align-items: baseline;
+    justify-content: space-between;
   }
-  .somx-help:hover,
-  .somx-help[aria-expanded="true"] {
-    border-color: var(--somx-c);
-    background: var(--somx-c);
-    color: #fff;
+  .somx-about {
+    border: 0;
+    background: none;
+    padding: 0.1rem 0;
+    color: var(--somx-soft);
+    font-size: 0.78rem;
+    text-decoration: underline dotted;
+    text-underline-offset: 3px;
+    white-space: nowrap;
+  }
+  .somx-about:hover,
+  .somx-about[aria-expanded="true"] {
+    color: var(--somx-c);
   }
   .somx-pop {
     position: absolute;
@@ -267,7 +268,7 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
     margin: 0.45rem 0 0;
   }
   .somx-chip:focus-visible,
-  .somx-help:focus-visible,
+  .somx-about:focus-visible,
   .somx-pop-close:focus-visible,
   .somx-select:focus-visible,
   .somx-nav button:focus-visible {
@@ -523,7 +524,17 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
       <p class="somx-aimline"></p>
       <div class="somx-groups"></div>
       <div class="somx-card">
-        <p class="somx-card-name"></p>
+        <div class="somx-card-head">
+          <p class="somx-card-name"></p>
+          <button
+            type="button"
+            class="somx-about"
+            aria-haspopup="dialog"
+            aria-expanded="false"
+          >
+            About this pattern
+          </button>
+        </div>
         <p class="somx-card-q"></p>
       </div>
       <div class="somx-nav">
@@ -644,19 +655,7 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
               render();
             });
             chips.push(chip);
-            var help = el("button", "somx-help", "?");
-            help.type = "button";
-            help.dataset.idx = i;
-            help.setAttribute("aria-label", "What is " + p.name + "?");
-            help.setAttribute("aria-haspopup", "dialog");
-            help.setAttribute("aria-expanded", "false");
-            help.setAttribute("aria-controls", pop.id);
-            help.addEventListener("click", function() {
-              if (openHelp === help) closePop(false);
-              else openPop(help, p);
-            });
             li.appendChild(chip);
-            li.appendChild(help);
             ul.appendChild(li);
           });
           g.appendChild(ul);
@@ -675,14 +674,16 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
           popBodies.appendChild(el("p", "somx-pop-body", t));
         });
         pop.hidden = false;
-        // Place under the "?" and keep it inside the explorer's box.
+        // Open above the button when there is room (it sits near the bottom
+        // of the explorer), else below; keep it inside the explorer's box.
         var r = root.getBoundingClientRect();
         var h = help.getBoundingClientRect();
         var w = pop.offsetWidth;
         var left = h.left + h.width / 2 - r.left - w / 2;
         left = Math.max(8, Math.min(left, root.clientWidth - w - 8));
+        var above = h.top - r.top - pop.offsetHeight - 6;
         pop.style.left = left + "px";
-        pop.style.top = h.bottom - r.top + 6 + "px";
+        pop.style.top = (above >= 0 ? above : h.bottom - r.top + 6) + "px";
         pop.focus({ preventScroll: true });
       }
       function closePop(returnFocus) {
@@ -693,6 +694,13 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
         pop.hidden = true;
         if (returnFocus) help.focus();
       }
+      // One "About this pattern" control in the card explains the pattern in play.
+      var about = card.querySelector(".somx-about");
+      about.setAttribute("aria-controls", pop.id);
+      about.addEventListener("click", function() {
+        if (openHelp === about) closePop(false);
+        else openPop(about, data.patterns[state.idx]);
+      });
       pop
         .querySelector(".somx-pop-close")
         .addEventListener("click", function() {
@@ -778,6 +786,8 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
         card.dataset.aimId = p.aim;
         card.querySelector(".somx-card-name").textContent = p.n + ". " + p.name;
         card.querySelector(".somx-card-q").textContent = p.question;
+        about.setAttribute("aria-label", "About " + p.name);
+        if (openHelp) closePop(false);
         countEl.textContent =
           state.list.indexOf(state.idx) + 1 + " of " + state.list.length;
         root.querySelector(".somx-nav").style.visibility =
