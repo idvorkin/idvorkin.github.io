@@ -38,9 +38,16 @@ describe("isTestOrigin", () => {
     expect(isTestOrigin("https://c-5004.squeaker-teeth.ts.net")).toBe(true);
   });
 
-  it("accepts any host with an explicit port (LAN IPs, bare c-500X names)", () => {
-    expect(isTestOrigin("http://192.168.1.50:8080")).toBe(true);
-    expect(isTestOrigin("http://c-5004:4000")).toBe(true);
+  it("accepts 0.0.0.0, which jekyll-serve binds in containers", () => {
+    expect(isTestOrigin("http://0.0.0.0:4010")).toBe(true);
+  });
+
+  it("accepts a ts.net host with a port and rejects any other host with a port", () => {
+    expect(isTestOrigin("https://c-5004.squeaker-teeth.ts.net:8445")).toBe(true);
+    expect(isTestOrigin("https://evil.example:8443")).toBe(false);
+    expect(isTestOrigin("http://192.168.1.50:8080")).toBe(false);
+    expect(isTestOrigin("http://c-5004:4000")).toBe(false);
+    expect(isTestOrigin("https://evilts.net:8443")).toBe(false);
   });
 
   it("rejects prod, standard-port strangers and garbage", () => {

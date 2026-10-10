@@ -9,6 +9,7 @@ export const FROM_TEST_PARAM = "from_test";
 /** Storage key, in sessionStorage (this tab) and localStorage (last used on any tab). */
 const TEST_ORIGIN_KEY = "idvorkin_test_origin";
 const TOAST_ID = "swap-toast";
+const LOOPBACK_HOSTS = new Set(["localhost", "127.0.0.1", "0.0.0.0", "[::1]"]);
 
 export function isProduction(hostname: string): boolean {
   return hostname === PROD_HOST;
@@ -16,7 +17,8 @@ export function isProduction(hostname: string): boolean {
 
 /**
  * True when `value` is exactly an origin (scheme://host[:port]) that serves a test copy of the site:
- * a loopback name, a tailnet host, or anything with an explicit port (LAN IPs, bare c-500X names).
+ * a loopback host (any port) or a tailnet host (any port). Nothing else, so a crafted
+ * `?from_test=https://evil:8443` on a prod link can never become where "p" sends you.
  */
 export function isTestOrigin(value: string): boolean {
   let url: URL;
@@ -29,10 +31,7 @@ export function isTestOrigin(value: string): boolean {
   if (url.protocol !== "http:" && url.protocol !== "https:") return false;
   const host = url.hostname;
   if (isProduction(host)) return false;
-  if (host === "localhost" || host === "127.0.0.1" || host === "[::1]" || host.endsWith(".ts.net")) {
-    return true;
-  }
-  return url.port !== "";
+  return LOOPBACK_HOSTS.has(host) || host.endsWith(".ts.net");
 }
 
 export type SwapTarget = { url: string } | { error: "no-test-origin" };
