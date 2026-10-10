@@ -1,0 +1,436 @@
+{% comment %} Sleight of Mouth explorer (interactive). Pick a limiting belief,
+then click any of Dilts' fourteen patterns: the part of the belief it aims at
+lights up (evidence, link, conclusion, or the whole belief), and the panel shows
+the pattern's question plus the reframed sentence for that belief. Prev / Next
+and the arrow keys step through all fourteen. Without JavaScript it falls back
+to a plain list of the patterns. Data: _data/sleight_of_mouth.yml.
+Self-contained, no libraries, no network. Used by:
+_d/2016-3-12-sleight-of-mouth.md {% endcomment %}
+<style>
+  .somx {
+    --somx-ink: #1b1f24;
+    --somx-soft: #5a636e;
+    --somx-faint: #9aa1aa;
+    --somx-rule: #d8dbe0;
+    --somx-paper: #ffffff;
+    --somx-panel: #f5f6f8;
+    --somx-evidence: #2f6f8f;
+    --somx-evidence-bg: #e8f1f5;
+    --somx-link: #a8741a;
+    --somx-link-bg: #f8f0e0;
+    --somx-conclusion: #b8562f;
+    --somx-conclusion-bg: #f8ebe5;
+    --somx-belief: #6b5b95;
+    --somx-belief-bg: #efecf5;
+    box-sizing: border-box;
+    max-width: 760px;
+    margin: 2em auto;
+    padding: 1.25rem;
+    background: var(--somx-paper);
+    border: 1px solid var(--somx-rule);
+    border-radius: 4px;
+    color: var(--somx-ink);
+    font-family:
+      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.4;
+  }
+  .somx * {
+    box-sizing: border-box;
+  }
+  .somx-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+  }
+  .somx-title {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+  .somx-pick {
+    display: flex;
+    gap: 0.35rem;
+    align-items: center;
+    font-size: 0.8rem;
+    color: var(--somx-soft);
+  }
+  .somx button {
+    font: inherit;
+    cursor: pointer;
+  }
+  .somx-pick button {
+    border: 1px solid var(--somx-rule);
+    background: var(--somx-paper);
+    color: var(--somx-ink);
+    border-radius: 999px;
+    padding: 0.2rem 0.7rem;
+    font-size: 0.8rem;
+  }
+  .somx-pick button[aria-pressed="true"] {
+    background: var(--somx-ink);
+    color: #fff;
+    border-color: var(--somx-ink);
+  }
+  .somx-belief {
+    border: 2px dashed var(--somx-faint);
+    border-radius: 6px;
+    padding: 0.7rem 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    transition:
+      border-color 0.2s,
+      background 0.2s;
+  }
+  .somx-part {
+    border-radius: 4px;
+    padding: 0.05rem 0.3rem;
+    transition:
+      background 0.2s,
+      color 0.2s,
+      opacity 0.2s;
+  }
+  .somx-belief .somx-part {
+    opacity: 0.35;
+  }
+  .somx-belief[data-aim="evidence"] .somx-part--evidence {
+    opacity: 1;
+    background: var(--somx-evidence-bg);
+    color: var(--somx-evidence);
+    box-shadow: inset 0 -3px 0 var(--somx-evidence);
+  }
+  .somx-belief[data-aim="link"] .somx-part--link {
+    opacity: 1;
+    background: var(--somx-link-bg);
+    color: var(--somx-link);
+    box-shadow: inset 0 -3px 0 var(--somx-link);
+  }
+  .somx-belief[data-aim="conclusion"] .somx-part--conclusion {
+    opacity: 1;
+    background: var(--somx-conclusion-bg);
+    color: var(--somx-conclusion);
+    box-shadow: inset 0 -3px 0 var(--somx-conclusion);
+  }
+  .somx-belief[data-aim="belief"] {
+    border-color: var(--somx-belief);
+    border-style: solid;
+    background: var(--somx-belief-bg);
+  }
+  .somx-belief[data-aim="belief"] .somx-part {
+    opacity: 1;
+    color: var(--somx-belief);
+  }
+  .somx-aimline {
+    margin: 0.35rem 0 0.9rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--somx-soft);
+    min-height: 1.2em;
+  }
+  .somx-aimline b {
+    color: var(--somx-c, var(--somx-ink));
+  }
+  .somx-groups {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.6rem;
+  }
+  .somx-group {
+    border-top: 3px solid var(--somx-c);
+    padding-top: 0.3rem;
+  }
+  .somx-group h4 {
+    margin: 0 0 0.35rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--somx-c);
+  }
+  .somx-group ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .somx-group li {
+    margin: 0;
+    padding: 0;
+  }
+  .somx-chip {
+    width: 100%;
+    text-align: left;
+    border: 1px solid var(--somx-rule);
+    background: var(--somx-paper);
+    color: var(--somx-ink);
+    border-radius: 4px;
+    padding: 0.3rem 0.45rem;
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+  .somx-chip:hover {
+    border-color: var(--somx-c);
+  }
+  .somx-chip[aria-pressed="true"] {
+    background: var(--somx-c);
+    border-color: var(--somx-c);
+    color: #fff;
+  }
+  .somx-chip:focus-visible,
+  .somx-pick button:focus-visible,
+  .somx-nav button:focus-visible {
+    outline: 2px solid var(--somx-ink);
+    outline-offset: 2px;
+  }
+  [data-aim-id="evidence"] {
+    --somx-c: var(--somx-evidence);
+  }
+  [data-aim-id="link"] {
+    --somx-c: var(--somx-link);
+  }
+  [data-aim-id="conclusion"] {
+    --somx-c: var(--somx-conclusion);
+  }
+  [data-aim-id="belief"] {
+    --somx-c: var(--somx-belief);
+  }
+  .somx-card {
+    margin-top: 0.9rem;
+    background: var(--somx-panel);
+    border-left: 4px solid var(--somx-c, var(--somx-rule));
+    border-radius: 0 4px 4px 0;
+    padding: 0.8rem 1rem;
+    min-height: 8.5rem;
+  }
+  .somx-card-name {
+    margin: 0;
+    font-weight: 700;
+    color: var(--somx-c);
+  }
+  .somx-card-q {
+    margin: 0.15rem 0 0.6rem;
+    font-size: 0.9rem;
+    color: var(--somx-soft);
+  }
+  .somx-card-r {
+    margin: 0;
+    font-size: 1.02rem;
+  }
+  .somx-card-r::before {
+    content: "\201C";
+  }
+  .somx-card-r::after {
+    content: "\201D";
+  }
+  .somx-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+    color: var(--somx-soft);
+  }
+  .somx-nav button {
+    border: 1px solid var(--somx-rule);
+    background: var(--somx-paper);
+    color: var(--somx-ink);
+    border-radius: 4px;
+    padding: 0.25rem 0.7rem;
+  }
+  .somx-fallback {
+    margin: 0;
+    padding-left: 1.2rem;
+    font-size: 0.9rem;
+  }
+  .somx.is-live .somx-fallback {
+    display: none;
+  }
+  .somx:not(.is-live) .somx-live {
+    display: none;
+  }
+  @media (max-width: 640px) {
+    .somx {
+      padding: 0.9rem;
+    }
+    .somx-belief {
+      font-size: 1.05rem;
+    }
+    .somx-groups {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .somx-belief,
+    .somx-part {
+      transition: none;
+    }
+  }
+</style>
+<figure
+  class="somx"
+  aria-label="Sleight of mouth explorer: try each pattern on a belief"
+>
+  <ol class="somx-fallback">
+    {%- for p in site.data.sleight_of_mouth.patterns %}
+    <li><b>{{ p.name }}</b>: {{ p.question }}</li>
+    {%- endfor %}
+  </ol>
+  <div class="somx-live">
+    <div class="somx-top">
+      <p class="somx-title">Try a pattern on a belief</p>
+      <div class="somx-pick" role="group" aria-label="Pick a belief">
+        Belief:
+      </div>
+    </div>
+    <div class="somx-belief" data-aim="">
+      <span class="somx-part somx-part--evidence"></span>
+      <span class="somx-part somx-part--link"></span>
+      <span class="somx-part somx-part--conclusion"></span>
+    </div>
+    <p class="somx-aimline" aria-live="polite"></p>
+    <div class="somx-groups"></div>
+    <div class="somx-card" aria-live="polite">
+      <p class="somx-card-name"></p>
+      <p class="somx-card-q"></p>
+      <p class="somx-card-r"></p>
+    </div>
+    <div class="somx-nav">
+      <button type="button" data-step="-1" aria-label="Previous pattern">
+        &larr; Prev
+      </button>
+      <span class="somx-count"></span>
+      <button type="button" data-step="1" aria-label="Next pattern">
+        Next &rarr;
+      </button>
+    </div>
+  </div>
+  <script type="application/json" class="somx-data">
+    {{ site.data.sleight_of_mouth | jsonify }}
+  </script>
+</figure>
+<script>
+  (function () {
+    document.querySelectorAll(".somx:not(.is-live)").forEach(function (root) {
+      var data = JSON.parse(root.querySelector(".somx-data").textContent);
+      var aims = {};
+      data.aims.forEach(function (a) {
+        aims[a.id] = a;
+      });
+      var state = { belief: data.beliefs[0].id, idx: 0 };
+      var beliefEl = root.querySelector(".somx-belief");
+      var aimLine = root.querySelector(".somx-aimline");
+      var card = root.querySelector(".somx-card");
+      var picker = root.querySelector(".somx-pick");
+      var groupsEl = root.querySelector(".somx-groups");
+      var countEl = root.querySelector(".somx-count");
+      var chips = [];
+      function el(tag, cls, text) {
+        var e = document.createElement(tag);
+        if (cls) e.className = cls;
+        if (text != null) e.textContent = text;
+        return e;
+      }
+      data.beliefs.forEach(function (b) {
+        var btn = el("button", null, b.label);
+        btn.type = "button";
+        btn.dataset.belief = b.id;
+        btn.addEventListener("click", function () {
+          state.belief = b.id;
+          render();
+        });
+        picker.appendChild(btn);
+      });
+      data.aims.forEach(function (a) {
+        var g = el("div", "somx-group");
+        g.dataset.aimId = a.id;
+        g.appendChild(el("h4", null, a.name));
+        var ul = el("ul");
+        data.patterns.forEach(function (p, i) {
+          if (p.aim !== a.id) return;
+          var li = el("li");
+          var chip = el("button", "somx-chip", p.n + ". " + p.name);
+          chip.type = "button";
+          chip.dataset.idx = i;
+          chip.addEventListener("click", function () {
+            state.idx = i;
+            render();
+          });
+          chips.push(chip);
+          li.appendChild(chip);
+          ul.appendChild(li);
+        });
+        g.appendChild(ul);
+        groupsEl.appendChild(g);
+      });
+      root.querySelectorAll(".somx-nav button").forEach(function (b) {
+        b.addEventListener("click", function () {
+          step(+b.dataset.step);
+        });
+      });
+      root.addEventListener("keydown", function (e) {
+        if (e.key === "ArrowRight") {
+          step(1);
+          e.preventDefault();
+        }
+        if (e.key === "ArrowLeft") {
+          step(-1);
+          e.preventDefault();
+        }
+      });
+      function step(d) {
+        var n = data.patterns.length;
+        state.idx = (state.idx + d + n) % n;
+        render();
+        var active = chips.filter(function (c) {
+          return +c.dataset.idx === state.idx;
+        })[0];
+        if (
+          active &&
+          root.contains(document.activeElement) &&
+          document.activeElement.classList.contains("somx-chip")
+        )
+          active.focus();
+      }
+      function render() {
+        var b = data.beliefs.filter(function (x) {
+          return x.id === state.belief;
+        })[0];
+        var p = data.patterns[state.idx];
+        var a = aims[p.aim];
+        picker.querySelectorAll("button").forEach(function (btn) {
+          btn.setAttribute(
+            "aria-pressed",
+            btn.dataset.belief === b.id ? "true" : "false"
+          );
+        });
+        beliefEl.querySelector(".somx-part--evidence").textContent = b.evidence;
+        beliefEl.querySelector(".somx-part--link").textContent = b.link;
+        beliefEl.querySelector(".somx-part--conclusion").textContent =
+          b.conclusion;
+        beliefEl.dataset.aim = p.aim;
+        aimLine.dataset.aimId = p.aim;
+        aimLine.innerHTML = "";
+        aimLine.appendChild(document.createTextNode("Aims at "));
+        aimLine.appendChild(el("b", null, a.name.toLowerCase()));
+        aimLine.appendChild(document.createTextNode(": " + a.blurb));
+        chips.forEach(function (c) {
+          c.setAttribute(
+            "aria-pressed",
+            +c.dataset.idx === state.idx ? "true" : "false"
+          );
+        });
+        card.dataset.aimId = p.aim;
+        card.querySelector(".somx-card-name").textContent = p.n + ". " + p.name;
+        card.querySelector(".somx-card-q").textContent = p.question;
+        card.querySelector(".somx-card-r").textContent = p.reframes[b.id];
+        countEl.textContent = state.idx + 1 + " of " + data.patterns.length;
+      }
+      root.classList.add("is-live");
+      render();
+    });
+  })();
+</script>

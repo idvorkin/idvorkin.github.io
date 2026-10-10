@@ -7,12 +7,14 @@ tags:
   - emotional intelligence
 redirect_from:
   - some
-imagefeatureblob: sleight-of-mouth.jpg
+imagefeaturelocal: sleight-of-mouth-raccoon-reframe.webp
 ---
 
 Language, often unknown to us, creates our mental models, our reality, and defines our meaning. But the model is not the terrain, and by engaging with the language we can change mental models. Sleight of mouth (SoM) is a series of techniques for changing our models, reality and meanings, and thus our experiences. Our mental models are a frame, and we need help going from a 'problem frame' to an 'outcome frame', a 'failure frame' to a 'feedback frame', and an 'impossible frame' to an 'as if' frame. To experience the power of language, find anything that is invisible to you, and name it. Now that you've given it a name, see how you perceive it, and become aware of it.
 
 {% include ai-slop.html percent="40" %}
+
+![Raccoon holding up a gold frame: outside it, rain falls on cracked mud; inside it, the same rain waters sprouting seedlings](/images/sleight-of-mouth-raccoon-reframe.webp)
 
 These are my notes on Robert Dilts' _Sleight of Mouth_. Dilts reverse-engineered fourteen moves by modeling how people like Lincoln, Gandhi, and Socrates argued their way through other people's beliefs — and, more usefully, how you argue with your own. The post follows the argument in order: words build the experience, a limiting belief is the target, the fourteen patterns are the tools (grouped into frames, intention and redefining, chunking, and values), and the payoff is running several of them against one belief at once.
 
@@ -113,7 +115,9 @@ Run the belief through these questions (page 318). The sections after this list 
 13. **Apply to self** - Apply the belief's own judgment to the belief itself. "It's too expensive" - how expensive is it to keep holding this belief?
 14. **Meta frame** - What other belief about this belief could change or enrich the perception of it?
 
-{%include blob_image.html src="sleight-of-mouth.jpg" %}
+Try them on a belief. Pick a pattern and watch which part of the belief it pries at: the evidence, the link, the conclusion, or the belief as a whole. (This replaces Dilts' original [1987 diagram](https://github.com/idvorkin/blob/raw/master/sleight-of-mouth.jpg), which packs the same fourteen moves around a single cancer example.)
+
+{% include sleight-of-mouth-explorer.html %}
 
 ## Frames: same facts, different picture
 
