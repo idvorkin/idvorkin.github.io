@@ -22,6 +22,18 @@ A software organization needs to fill 4 leadership roles. These roles are often 
 
 **The engineering manager:** The person who makes sure the organization is [getting the most out of the team](/manager-book) and filling any gaps.
 
+### Four roles, or four dimensions?
+
+Reading this back years later, I don't think these are four kinds of person. They're four dimensions of one job, and every team divides them up differently. Two of the four are technical and pull in opposite directions — implementing the thing, and deciding what the thing should be — which is exactly why the line between tech lead and architect never stays put.
+
+So on the chart below the architect doesn't get a bar. Setting technical direction is a _row_, and all three of the other roles carry some of it. That's the honest version of what I said above about running a team small enough that I can be the engineering manager and step into the architect seat when it needs filling.
+
+{% include role-energy-depth.html %}
+
+The second measure is what I'd add to Kartik's answer. Energy is where your calendar goes. Depth is what you actually understand. Those come apart, and they come apart in both directions.
+
+The reserve is why I've seen engineering managers cover any of these roles when the team had a gap — the understanding was already there, it just wasn't on the calendar. The stretch is the failure mode I list at the bottom of this post: _people think they are filling a role but they are not, or can not._ Most of the friction I've watched between these roles lives in that gap, not in the org chart.
+
 ### The Tech Lead vs the Architect
 
 The architect's primary value is they design a cohesively implementable system in the face of many competing demands.
