@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Affirmations"
-permalink: /affirmations
-redirect_from:
-  - /affirm
+title: "Affirmations (Igor's working notes)"
+permalink: /affirmations-igor-only
 
 tags:
   - wisdom
 ---
 
 Every day I write out my affirmations. These positive statements help me challenge and overcome my self-sabotaging and negative thoughts and behaviors. Repeating them reinforces them, helping me be the person I want to be. My affirmations have power to me and have evolved over time. You'll want to find the ones that speak best to you. Oh and bonus points if beyond just writing out your daily affirmations you reflect on how you can/will and have applied them.
+
+These are my working notes. For the short version, see [Affirmations](/affirmations).
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -23,6 +23,7 @@ Every day I write out my affirmations. These positive statements help me challen
   - [Level 1: The bare minimum - Write 'em out](#level-1-the-bare-minimum---write-em-out)
   - [Level 2: How Will I Nail This Today?](#level-2-how-will-i-nail-this-today)
   - [Level 3: How Did Past Me Do?](#level-3-how-did-past-me-do)
+- [Igor's Video Affirmations](#igors-video-affirmations)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
