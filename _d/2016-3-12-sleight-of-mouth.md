@@ -14,7 +14,7 @@ Language, often unknown to us, creates our mental models, our reality, and defin
 
 {% include ai-slop.html percent="40" %}
 
-![Raccoon holding up a gold frame: outside it, rain falls on cracked mud; inside it, the same rain waters sprouting seedlings](/images/sleight-of-mouth-raccoon-reframe.webp)
+{% include local_image_float_right.html src="sleight-of-mouth-raccoon-reframe.webp" alt="Raccoon holding up a gold frame: outside it, rain falls on cracked mud; inside it, the same rain waters sprouting seedlings" %}
 
 These are my notes on Robert Dilts' _Sleight of Mouth_. Dilts reverse-engineered fourteen moves by modeling how people like Lincoln, Gandhi, and Socrates argued their way through other people's beliefs — and, more usefully, how you argue with your own. The post follows the argument in order: words build the experience, a limiting belief is the target, the fourteen patterns are the tools (grouped into frames, intention and redefining, chunking, and values), and the payoff is running several of them against one belief at once.
 
