@@ -16,6 +16,7 @@ import "./graph";
 import { initDevInfo } from "./dev-info";
 import { enableHeaderCopyLinks } from "./header-copy-link";
 import { enableImageZoom } from "./image-zoom";
+import { rememberTestOrigin, swapProdAndTest } from "./swap-prod-test";
 
 // Type declarations for external libraries
 declare global {
@@ -45,60 +46,6 @@ function checkExpandToggle() {
   } else {
     toc.addClass("expand");
     toggle.text("Collapse all");
-  }
-}
-
-const PROD_ORIGIN = "https://idvork.in";
-const DEV_ORIGIN_KEY = "idvorkin_dev_origin";
-
-function isProduction(): boolean {
-  return window.location.hostname === "idvork.in";
-}
-
-/** Returns true if origin looks like a dev server (hostname or non-standard port). */
-function isDevOrigin(origin: string): boolean {
-  try {
-    const url = new URL(origin);
-    const host = url.hostname;
-    // Hostname patterns that are always dev
-    if (host === "localhost" || host === "127.0.0.1" || host.endsWith(".ts.net")) {
-      return true;
-    }
-    // Non-standard port is a strong dev signal
-    return url.port !== "" && url.port !== "80" && url.port !== "443";
-  } catch {
-    return false;
-  }
-}
-
-/**
- * On page load: detect if we arrived from a dev server via document.referrer.
- * Cross-origin referrer policy (strict-origin-when-cross-origin) only sends
- * the origin, not the full path, so we can only check isDevOrigin on it.
- * The isDevOrigin guard prevents external sites from poisoning the value.
- */
-function saveDevOriginFromReferrer() {
-  if (!document.referrer) return;
-  try {
-    const referrerOrigin = new URL(document.referrer).origin;
-    if (isDevOrigin(referrerOrigin)) {
-      localStorage.setItem(DEV_ORIGIN_KEY, referrerOrigin);
-    }
-  } catch {
-    // Invalid referrer URL, ignore
-  }
-}
-
-function SwapProdAndTest() {
-  const path = `${window.location.pathname}${window.location.search}${window.location.hash}`;
-  if (isProduction()) {
-    // Prod → Dev: use stored dev origin, fallback to localhost:4000
-    const devOrigin = localStorage.getItem(DEV_ORIGIN_KEY) || "http://localhost:4000";
-    window.location.href = `${devOrigin}${path}`;
-  } else {
-    // Dev → Prod: save origin locally, navigate with clean URL
-    localStorage.setItem(DEV_ORIGIN_KEY, window.location.origin);
-    window.location.href = `${PROD_ORIGIN}${path}`;
   }
 }
 
@@ -414,7 +361,7 @@ function keyboard_shortcut_loader() {
   const mouseTrap = window.Mousetrap();
   mouseTrap.bind("s", (e) => search());
   mouseTrap.bind("t", (e) => ForceShowRightSideBar());
-  mouseTrap.bind("p", (e) => SwapProdAndTest());
+  mouseTrap.bind("p", () => swapProdAndTest());
   mouseTrap.bind("a", (e) => {
     location.href = "/all";
   });
@@ -438,6 +385,8 @@ Try these shortcuts:
   Ctrl/Cmd+Shift+A - toggle annotate (comment) mode
   `;
   mouseTrap.bind("?", (e) => alert(shortcutHelp));
+  // Bindings register after the load event, so tests wait for this marker instead of sleeping.
+  document.body.dataset.shortcuts = "ready";
 }
 
 /**
@@ -507,8 +456,8 @@ function load_globals() {
   }
   (window as any)[globalFlag] = true;
 
-  // If we arrived from a dev server, remember its origin for the "p" key
-  saveDevOriginFromReferrer();
+  // If we arrived on prod from a test server, remember its origin for the "p" key
+  rememberTestOrigin();
 
   $(add_link_loader);
   $(keyboard_shortcut_loader);

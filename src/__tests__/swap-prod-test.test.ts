@@ -1,387 +1,229 @@
-import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+// ABOUTME: Unit tests for the "p" key prod <-> test swap: URL mapping both ways,
+// ABOUTME: which origins count as test, and how prod learns the test origin it came from.
+import { afterEach, beforeEach, describe, expect, it } from "vitest";
+import {
+  FROM_TEST_PARAM,
+  isProduction,
+  isTestOrigin,
+  rememberTestOrigin,
+  swapProdAndTest,
+  swapTarget,
+  testOriginFromArrival,
+} from "../swap-prod-test";
 
-const PROD_ORIGIN = "https://idvork.in";
-const DEV_ORIGIN_KEY = "idvorkin_dev_origin";
+const PROD = "https://idvork.in";
+const TAILNET = "https://c-5004.squeaker-teeth.ts.net:8445";
+const KEY = "idvorkin_test_origin";
 
-function isProduction(): boolean {
-  return window.location.hostname === "idvork.in";
-}
+describe("isProduction", () => {
+  it("is exactly idvork.in", () => {
+    expect(isProduction("idvork.in")).toBe(true);
+    expect(isProduction("localhost")).toBe(false);
+    expect(isProduction("idvorkin.github.io")).toBe(false);
+    expect(isProduction("www.idvork.in")).toBe(false);
+  });
+});
 
-function isDevOrigin(origin: string): boolean {
-  try {
-    const url = new URL(origin);
-    const host = url.hostname;
-    if (host === "localhost" || host === "127.0.0.1" || host.endsWith(".ts.net")) {
-      return true;
-    }
-    return url.port !== "" && url.port !== "80" && url.port !== "443";
-  } catch {
-    return false;
-  }
-}
+describe("isTestOrigin", () => {
+  it("accepts localhost, 127.0.0.1 and ::1 on any port", () => {
+    expect(isTestOrigin("http://localhost:4000")).toBe(true);
+    expect(isTestOrigin("http://localhost")).toBe(true);
+    expect(isTestOrigin("http://127.0.0.1:4011")).toBe(true);
+    expect(isTestOrigin("http://[::1]:4000")).toBe(true);
+  });
 
-function saveDevOriginFromReferrer() {
-  if (!document.referrer) return;
-  try {
-    const referrerOrigin = new URL(document.referrer).origin;
-    if (isDevOrigin(referrerOrigin)) {
-      localStorage.setItem(DEV_ORIGIN_KEY, referrerOrigin);
-    }
-  } catch {
-    // Invalid referrer URL, ignore
-  }
-}
+  it("accepts tailnet hosts, proxied (https, 844x) or direct (http, 40xx)", () => {
+    expect(isTestOrigin(TAILNET)).toBe(true);
+    expect(isTestOrigin("http://c-5004.squeaker-teeth.ts.net:4010")).toBe(true);
+    expect(isTestOrigin("https://c-5004.squeaker-teeth.ts.net")).toBe(true);
+  });
 
-function SwapProdAndTest() {
-  const path = `${window.location.pathname}${window.location.search}${window.location.hash}`;
-  if (isProduction()) {
-    const devOrigin = localStorage.getItem(DEV_ORIGIN_KEY) || "http://localhost:4000";
-    window.location.href = `${devOrigin}${path}`;
-  } else {
-    localStorage.setItem(DEV_ORIGIN_KEY, window.location.origin);
-    window.location.href = `${PROD_ORIGIN}${path}`;
-  }
-}
+  it("accepts 0.0.0.0, which jekyll-serve binds in containers", () => {
+    expect(isTestOrigin("http://0.0.0.0:4010")).toBe(true);
+  });
 
-describe("SwapProdAndTest", () => {
-  let originalLocation: Location;
+  it("accepts a ts.net host with a port and rejects any other host with a port", () => {
+    expect(isTestOrigin("https://c-5004.squeaker-teeth.ts.net:8445")).toBe(true);
+    expect(isTestOrigin("https://evil.example:8443")).toBe(false);
+    expect(isTestOrigin("http://192.168.1.50:8080")).toBe(false);
+    expect(isTestOrigin("http://c-5004:4000")).toBe(false);
+    expect(isTestOrigin("https://evilts.net:8443")).toBe(false);
+  });
 
-  beforeEach(() => {
-    originalLocation = window.location;
-    localStorage.clear();
+  it("rejects prod, standard-port strangers and garbage", () => {
+    expect(isTestOrigin(PROD)).toBe(false);
+    expect(isTestOrigin("https://idvork.in:443")).toBe(false);
+    expect(isTestOrigin("https://example.com")).toBe(false);
+    expect(isTestOrigin("http://example.com:80")).toBe(false);
+    expect(isTestOrigin("javascript:alert(1)")).toBe(false);
+    expect(isTestOrigin("not-a-url")).toBe(false);
+    expect(isTestOrigin("")).toBe(false);
+  });
 
+  it("rejects a value that is more than an origin", () => {
+    expect(isTestOrigin("http://localhost:4000/some/path")).toBe(false);
+  });
+});
+
+describe("swapTarget: test -> prod", () => {
+  it("maps path, query and hash onto prod and hands over the test origin", () => {
+    const target = swapTarget(new URL("http://localhost:4000/caring?x=1#section"), null);
+    expect(target).toEqual({ url: `${PROD}/caring?x=1&${FROM_TEST_PARAM}=http%3A%2F%2Flocalhost%3A4000#section` });
+  });
+
+  it("works from a tailnet-proxied server and keeps the port in the handoff", () => {
+    const target = swapTarget(new URL(`${TAILNET}/toc`), null);
+    expect(target).toEqual({
+      url: `${PROD}/toc?${FROM_TEST_PARAM}=${encodeURIComponent(TAILNET)}`,
+    });
+  });
+
+  it("maps the home page", () => {
+    const target = swapTarget(new URL("http://127.0.0.1:4011/"), null);
+    expect(target).toEqual({ url: `${PROD}/?${FROM_TEST_PARAM}=http%3A%2F%2F127.0.0.1%3A4011` });
+  });
+
+  it("does not stack a stale handoff param", () => {
+    const target = swapTarget(new URL(`http://localhost:4000/x?${FROM_TEST_PARAM}=http%3A%2F%2Fold%3A1`), null);
+    expect(target).toEqual({ url: `${PROD}/x?${FROM_TEST_PARAM}=http%3A%2F%2Flocalhost%3A4000` });
+  });
+});
+
+describe("swapTarget: prod -> test", () => {
+  it("returns to the remembered origin with path, query and hash", () => {
+    const target = swapTarget(new URL(`${PROD}/caring?x=1#section`), TAILNET);
+    expect(target).toEqual({ url: `${TAILNET}/caring?x=1#section` });
+  });
+
+  it("strips the handoff param if it is still on the URL", () => {
+    const target = swapTarget(new URL(`${PROD}/caring?${FROM_TEST_PARAM}=x&y=2`), "http://localhost:4000");
+    expect(target).toEqual({ url: "http://localhost:4000/caring?y=2" });
+  });
+
+  it("refuses a remembered value that is not a test origin", () => {
+    const target = swapTarget(new URL(`${PROD}/caring`), "https://example.com");
+    expect(target).toEqual({ error: "no-test-origin" });
+  });
+
+  it("reports no origin instead of guessing", () => {
+    expect(swapTarget(new URL(`${PROD}/caring`), null)).toEqual({ error: "no-test-origin" });
+    expect(swapTarget(new URL(`${PROD}/caring`), "")).toEqual({ error: "no-test-origin" });
+  });
+});
+
+describe("testOriginFromArrival", () => {
+  it("prefers the handoff param over the referrer", () => {
+    const url = new URL(`${PROD}/caring?${FROM_TEST_PARAM}=${encodeURIComponent(TAILNET)}#s`);
+    expect(testOriginFromArrival(url, "http://localhost:4000/")).toBe(TAILNET);
+  });
+
+  it("falls back to the referrer origin", () => {
+    expect(testOriginFromArrival(new URL(`${PROD}/caring`), "http://localhost:4010/caring")).toBe(
+      "http://localhost:4010",
+    );
+  });
+
+  it("ignores non-test referrers and non-test params", () => {
+    expect(testOriginFromArrival(new URL(`${PROD}/caring`), "https://www.google.com/")).toBeNull();
+    expect(testOriginFromArrival(new URL(`${PROD}/caring?${FROM_TEST_PARAM}=https%3A%2F%2Fevil.com`), "")).toBeNull();
+    expect(testOriginFromArrival(new URL(`${PROD}/caring`), "")).toBeNull();
+    expect(testOriginFromArrival(new URL(`${PROD}/caring`), "garbage")).toBeNull();
+  });
+});
+
+describe("DOM wrappers", () => {
+  const savedLocation = window.location;
+  const savedReplaceState = history.replaceState;
+  let navigatedTo: string | null;
+  let replacedWith: string | null;
+
+  function setLocation(href: string) {
+    const u = new URL(href);
     Object.defineProperty(window, "location", {
+      configurable: true,
       writable: true,
       value: {
-        href: "",
-        port: "",
-        protocol: "",
-        hostname: "",
-        pathname: "",
-        origin: "",
-        hash: "",
-        search: "",
+        href,
+        origin: u.origin,
+        hostname: u.hostname,
+        pathname: u.pathname,
+        search: u.search,
+        hash: u.hash,
+        assign: (next: string) => {
+          navigatedTo = next;
+        },
       },
     });
+  }
+
+  beforeEach(() => {
+    navigatedTo = null;
+    replacedWith = null;
+    sessionStorage.clear();
+    localStorage.clear();
+    document.body.innerHTML = "";
+    Object.defineProperty(document, "referrer", { configurable: true, value: "" });
+    history.replaceState = (_state: unknown, _title: string, url?: string | URL | null) => {
+      replacedWith = url == null ? null : String(url);
+    };
   });
 
   afterEach(() => {
-    window.location = originalLocation;
-    vi.restoreAllMocks();
+    Object.defineProperty(window, "location", { configurable: true, writable: true, value: savedLocation });
+    history.replaceState = savedReplaceState;
   });
 
-  describe("isDevOrigin", () => {
-    it("should return true for localhost (any port)", () => {
-      expect(isDevOrigin("http://localhost:4000")).toBe(true);
-      expect(isDevOrigin("http://localhost")).toBe(true);
-    });
-
-    it("should return true for 127.0.0.1", () => {
-      expect(isDevOrigin("http://127.0.0.1:4000")).toBe(true);
-      expect(isDevOrigin("http://127.0.0.1")).toBe(true);
-    });
-
-    it("should return true for .ts.net (Tailscale)", () => {
-      expect(isDevOrigin("http://c-5001.squeaker-teeth.ts.net:4001")).toBe(true);
-      expect(isDevOrigin("http://myhost.ts.net")).toBe(true);
-    });
-
-    it("should return true for non-standard port on unknown host", () => {
-      expect(isDevOrigin("http://192.168.1.50:8080")).toBe(true);
-    });
-
-    it("should return false for prod (no port)", () => {
-      expect(isDevOrigin("https://idvork.in")).toBe(false);
-    });
-
-    it("should return false for standard ports on unknown hosts", () => {
-      expect(isDevOrigin("https://example.com:443")).toBe(false);
-      expect(isDevOrigin("http://example.com:80")).toBe(false);
-    });
-
-    it("should return false for external sites", () => {
-      expect(isDevOrigin("https://www.google.com")).toBe(false);
-      expect(isDevOrigin("https://github.com")).toBe(false);
-    });
-
-    it("should return false for invalid URLs", () => {
-      expect(isDevOrigin("not-a-url")).toBe(false);
-    });
+  it("on prod with a handoff param: stores the origin for this tab and for later, and cleans the URL", () => {
+    setLocation(`${PROD}/caring?${FROM_TEST_PARAM}=${encodeURIComponent(TAILNET)}&x=1#s`);
+    rememberTestOrigin();
+    expect(sessionStorage.getItem(KEY)).toBe(TAILNET);
+    expect(localStorage.getItem(KEY)).toBe(TAILNET);
+    expect(replacedWith).toBe(`${PROD}/caring?x=1#s`);
   });
 
-  describe("isProduction", () => {
-    it("should return true for idvork.in", () => {
-      window.location.hostname = "idvork.in";
-      expect(isProduction()).toBe(true);
-    });
-
-    it("should return false for localhost", () => {
-      window.location.hostname = "localhost";
-      expect(isProduction()).toBe(false);
-    });
-
-    it("should not false-positive on idvork.in in query string", () => {
-      window.location.hostname = "localhost";
-      window.location.href = "http://localhost:4000/page?ref=https://idvork.in";
-      expect(isProduction()).toBe(false);
-    });
+  it("on prod with only a referrer: remembers it without touching the URL", () => {
+    setLocation(`${PROD}/caring`);
+    Object.defineProperty(document, "referrer", { configurable: true, value: "http://localhost:4000/caring" });
+    rememberTestOrigin();
+    expect(sessionStorage.getItem(KEY)).toBe("http://localhost:4000");
+    expect(replacedWith).toBeNull();
   });
 
-  describe("localhost → prod", () => {
-    it("should navigate to prod with clean URL", () => {
-      window.location.hostname = "localhost";
-      window.location.href = "http://localhost:4000/some-page";
-      window.location.origin = "http://localhost:4000";
-      window.location.pathname = "/some-page";
-      window.location.search = "";
-      window.location.hash = "";
-
-      SwapProdAndTest();
-
-      expect(window.location.href).toBe("https://idvork.in/some-page");
-    });
-
-    it("should preserve hash", () => {
-      window.location.hostname = "localhost";
-      window.location.href = "http://localhost:4000/page#section";
-      window.location.origin = "http://localhost:4000";
-      window.location.pathname = "/page";
-      window.location.search = "";
-      window.location.hash = "#section";
-
-      SwapProdAndTest();
-
-      expect(window.location.href).toBe("https://idvork.in/page#section");
-    });
-
-    it("should preserve query string", () => {
-      window.location.hostname = "localhost";
-      window.location.href = "http://localhost:4000/page?utm_source=test";
-      window.location.origin = "http://localhost:4000";
-      window.location.pathname = "/page";
-      window.location.search = "?utm_source=test";
-      window.location.hash = "";
-
-      SwapProdAndTest();
-
-      expect(window.location.href).toBe("https://idvork.in/page?utm_source=test");
-    });
-
-    it("should save origin to localStorage", () => {
-      window.location.hostname = "localhost";
-      window.location.href = "http://localhost:4002/page";
-      window.location.origin = "http://localhost:4002";
-      window.location.pathname = "/page";
-      window.location.search = "";
-      window.location.hash = "";
-
-      SwapProdAndTest();
-
-      expect(localStorage.getItem(DEV_ORIGIN_KEY)).toBe("http://localhost:4002");
-    });
+  it("on a test server: remembers nothing", () => {
+    setLocation(`http://localhost:4000/caring?${FROM_TEST_PARAM}=${encodeURIComponent(TAILNET)}`);
+    rememberTestOrigin();
+    expect(sessionStorage.getItem(KEY)).toBeNull();
+    expect(replacedWith).toBeNull();
   });
 
-  describe("Tailscale → prod", () => {
-    it("should navigate to prod with clean URL", () => {
-      window.location.hostname = "c-5001.squeaker-teeth.ts.net";
-      window.location.href = "http://c-5001.squeaker-teeth.ts.net:4001/eulogy";
-      window.location.origin = "http://c-5001.squeaker-teeth.ts.net:4001";
-      window.location.pathname = "/eulogy";
-      window.location.search = "";
-      window.location.hash = "";
-
-      SwapProdAndTest();
-
-      expect(window.location.href).toBe("https://idvork.in/eulogy");
-    });
-
-    it("should save Tailscale origin to localStorage", () => {
-      window.location.hostname = "c-5001.squeaker-teeth.ts.net";
-      window.location.href = "http://c-5001.squeaker-teeth.ts.net:4001/page";
-      window.location.origin = "http://c-5001.squeaker-teeth.ts.net:4001";
-      window.location.pathname = "/page";
-      window.location.search = "";
-      window.location.hash = "";
-
-      SwapProdAndTest();
-
-      expect(localStorage.getItem(DEV_ORIGIN_KEY)).toBe(
-        "http://c-5001.squeaker-teeth.ts.net:4001",
-      );
-    });
+  it("p on a test server goes to prod", () => {
+    setLocation("http://localhost:4000/caring#s");
+    swapProdAndTest();
+    expect(navigatedTo).toBe(`${PROD}/caring?${FROM_TEST_PARAM}=http%3A%2F%2Flocalhost%3A4000#s`);
   });
 
-  describe("prod → dev", () => {
-    it("should fallback to localhost:4000 when no stored origin", () => {
-      window.location.hostname = "idvork.in";
-      window.location.href = "https://idvork.in/test-page";
-      window.location.pathname = "/test-page";
-      window.location.search = "";
-      window.location.hash = "";
-
-      SwapProdAndTest();
-
-      expect(window.location.href).toBe("http://localhost:4000/test-page");
-    });
-
-    it("should use stored localhost origin", () => {
-      localStorage.setItem(DEV_ORIGIN_KEY, "http://localhost:4002");
-      window.location.hostname = "idvork.in";
-      window.location.href = "https://idvork.in/test-page";
-      window.location.pathname = "/test-page";
-      window.location.search = "";
-      window.location.hash = "";
-
-      SwapProdAndTest();
-
-      expect(window.location.href).toBe("http://localhost:4002/test-page");
-    });
-
-    it("should use stored Tailscale origin", () => {
-      localStorage.setItem(DEV_ORIGIN_KEY, "http://c-5001.squeaker-teeth.ts.net:4001");
-      window.location.hostname = "idvork.in";
-      window.location.href = "https://idvork.in/eulogy";
-      window.location.pathname = "/eulogy";
-      window.location.search = "";
-      window.location.hash = "";
-
-      SwapProdAndTest();
-
-      expect(window.location.href).toBe(
-        "http://c-5001.squeaker-teeth.ts.net:4001/eulogy",
-      );
-    });
-
-    it("should preserve hash", () => {
-      localStorage.setItem(DEV_ORIGIN_KEY, "http://localhost:4000");
-      window.location.hostname = "idvork.in";
-      window.location.href = "https://idvork.in/page#keyboards";
-      window.location.pathname = "/page";
-      window.location.search = "";
-      window.location.hash = "#keyboards";
-
-      SwapProdAndTest();
-
-      expect(window.location.href).toBe("http://localhost:4000/page#keyboards");
-    });
-
-    it("should not overwrite localStorage when reading from prod", () => {
-      localStorage.setItem(DEV_ORIGIN_KEY, "http://localhost:4002");
-      window.location.hostname = "idvork.in";
-      window.location.href = "https://idvork.in/page";
-      window.location.pathname = "/page";
-      window.location.search = "";
-      window.location.hash = "";
-
-      SwapProdAndTest();
-
-      // localStorage should still have the original value, not be overwritten
-      expect(localStorage.getItem(DEV_ORIGIN_KEY)).toBe("http://localhost:4002");
-    });
+  it("p on prod prefers this tab's origin over the last-used one", () => {
+    setLocation(`${PROD}/caring#s`);
+    sessionStorage.setItem(KEY, "http://localhost:4010");
+    localStorage.setItem(KEY, "http://localhost:4011");
+    swapProdAndTest();
+    expect(navigatedTo).toBe("http://localhost:4010/caring#s");
   });
 
-  describe("saveDevOriginFromReferrer", () => {
-    // Note: cross-origin referrer policy (strict-origin-when-cross-origin)
-    // only sends the origin, not the path. So we only check isDevOrigin.
-
-    it("should save dev origin from referrer (origin-only, as browsers send)", () => {
-      Object.defineProperty(document, "referrer", {
-        value: "http://localhost:4000",
-        configurable: true,
-      });
-
-      saveDevOriginFromReferrer();
-
-      expect(localStorage.getItem(DEV_ORIGIN_KEY)).toBe("http://localhost:4000");
-    });
-
-    it("should save Tailscale origin from referrer", () => {
-      Object.defineProperty(document, "referrer", {
-        value: "http://c-5001.squeaker-teeth.ts.net:4001",
-        configurable: true,
-      });
-
-      saveDevOriginFromReferrer();
-
-      expect(localStorage.getItem(DEV_ORIGIN_KEY)).toBe(
-        "http://c-5001.squeaker-teeth.ts.net:4001",
-      );
-    });
-
-    it("should NOT save prod origin from referrer", () => {
-      Object.defineProperty(document, "referrer", {
-        value: "https://idvork.in",
-        configurable: true,
-      });
-
-      saveDevOriginFromReferrer();
-
-      expect(localStorage.getItem(DEV_ORIGIN_KEY)).toBeNull();
-    });
-
-    it("should NOT save standard-port origins (google, etc.)", () => {
-      Object.defineProperty(document, "referrer", {
-        value: "https://www.google.com",
-        configurable: true,
-      });
-
-      saveDevOriginFromReferrer();
-
-      expect(localStorage.getItem(DEV_ORIGIN_KEY)).toBeNull();
-    });
-
-    it("should do nothing when referrer is empty", () => {
-      Object.defineProperty(document, "referrer", {
-        value: "",
-        configurable: true,
-      });
-
-      saveDevOriginFromReferrer();
-
-      expect(localStorage.getItem(DEV_ORIGIN_KEY)).toBeNull();
-    });
+  it("p on prod falls back to the last-used origin", () => {
+    setLocation(`${PROD}/caring`);
+    localStorage.setItem(KEY, TAILNET);
+    swapProdAndTest();
+    expect(navigatedTo).toBe(`${TAILNET}/caring`);
   });
 
-  describe("round-trip: dev → prod → dev", () => {
-    it("should round-trip via localStorage + referrer", () => {
-      // Step 1: On Tailscale, press "p" — saves origin, navigates to prod
-      window.location.hostname = "c-5001.squeaker-teeth.ts.net";
-      window.location.href = "http://c-5001.squeaker-teeth.ts.net:4001/eulogy";
-      window.location.origin = "http://c-5001.squeaker-teeth.ts.net:4001";
-      window.location.pathname = "/eulogy";
-      window.location.search = "";
-      window.location.hash = "";
-
-      SwapProdAndTest();
-
-      expect(window.location.href).toBe("https://idvork.in/eulogy");
-      expect(localStorage.getItem(DEV_ORIGIN_KEY)).toBe(
-        "http://c-5001.squeaker-teeth.ts.net:4001",
-      );
-
-      // Step 2: On prod, page loads — referrer is origin-only (cross-origin policy)
-      window.location.hostname = "idvork.in";
-      window.location.href = "https://idvork.in/eulogy";
-      window.location.pathname = "/eulogy";
-      window.location.search = "";
-      window.location.hash = "";
-      Object.defineProperty(document, "referrer", {
-        value: "http://c-5001.squeaker-teeth.ts.net:4001", // origin only, no path
-        configurable: true,
-      });
-
-      saveDevOriginFromReferrer();
-
-      expect(localStorage.getItem(DEV_ORIGIN_KEY)).toBe(
-        "http://c-5001.squeaker-teeth.ts.net:4001",
-      );
-
-      // Step 3: On prod, press "p" — navigates back to Tailscale
-      SwapProdAndTest();
-
-      expect(window.location.href).toBe(
-        "http://c-5001.squeaker-teeth.ts.net:4001/eulogy",
-      );
-    });
+  it("p on prod with nothing remembered shows a toast and stays put", () => {
+    setLocation(`${PROD}/caring#s`);
+    swapProdAndTest();
+    expect(navigatedTo).toBeNull();
+    const toast = document.getElementById("swap-toast");
+    expect(toast).not.toBeNull();
+    expect(toast?.textContent).toContain("No test server remembered");
+    expect(toast?.querySelector("a")?.getAttribute("href")).toBe("http://localhost:4000/caring#s");
   });
 });
