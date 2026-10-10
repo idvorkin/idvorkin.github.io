@@ -346,7 +346,13 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
   .somx-modebar {
     display: flex;
     justify-content: center;
-    margin-bottom: 0.8rem;
+    margin: 0.8rem 0;
+  }
+  .somx-reframe[hidden] {
+    display: none;
+  }
+  .somx-belief[data-aim=""] .somx-part {
+    opacity: 1;
   }
   .somx-mode {
     display: inline-flex;
@@ -487,6 +493,22 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
     {%- endfor %}
   </ol>
   <div class="somx-live">
+    <div class="somx-top">
+      <p class="somx-title">Pick a stuck belief, then try the patterns on it</p>
+      <label class="somx-pick">
+        Belief:
+        <select class="somx-select"></select>
+      </label>
+    </div>
+    <div class="somx-belief" data-aim="">
+      <span class="somx-part somx-part--evidence"></span>
+      <span class="somx-part somx-part--link"></span>
+      <span class="somx-part somx-part--conclusion"></span>
+    </div>
+    <div class="somx-reframe" aria-live="polite">
+      <p class="somx-reframe-label"></p>
+      <p class="somx-reframe-text"></p>
+    </div>
     <div class="somx-modebar">
       <div class="somx-mode" role="radiogroup" aria-label="Explorer view">
         <button type="button" role="radio" data-mode="all">All 14</button>
@@ -498,22 +520,6 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
     <div class="somx-buckets" hidden></div>
     <div class="somx-body">
       <div class="somx-drillhead"></div>
-      <div class="somx-top">
-        <p class="somx-title">Try a pattern on a belief</p>
-        <label class="somx-pick">
-          Belief:
-          <select class="somx-select"></select>
-        </label>
-      </div>
-      <div class="somx-belief" data-aim="">
-        <span class="somx-part somx-part--evidence"></span>
-        <span class="somx-part somx-part--link"></span>
-        <span class="somx-part somx-part--conclusion"></span>
-      </div>
-      <div class="somx-reframe" aria-live="polite">
-        <p class="somx-reframe-label"></p>
-        <p class="somx-reframe-text"></p>
-      </div>
       <p class="somx-aimline"></p>
       <div class="somx-groups"></div>
       <div class="somx-card">
@@ -751,7 +757,8 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
         beliefEl.querySelector(".somx-part--link").textContent = b.link;
         beliefEl.querySelector(".somx-part--conclusion").textContent =
           b.conclusion;
-        beliefEl.dataset.aim = p.aim;
+        // On the section cards no pattern is in play, so the belief shows in full.
+        beliefEl.dataset.aim = bucketsEl.hidden ? p.aim : "";
         reframeEl.dataset.aimId = p.aim;
         reframeEl.querySelector(".somx-reframe-label").textContent =
           "↓ " + p.n + ". " + p.name;
@@ -792,10 +799,13 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
           closePop(false);
           bodyEl.hidden = true;
           bucketsEl.hidden = false;
+          reframeEl.hidden = true;
+          beliefEl.dataset.aim = "";
           return;
         }
         bodyEl.hidden = false;
         bucketsEl.hidden = true;
+        reframeEl.hidden = false;
         if (section) {
           drillEl.style.setProperty("--somx-b", section.color);
           var back = el("button", "somx-back", "\u2190 All sections");
@@ -810,7 +820,7 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
           var a = el(
             "a",
             null,
-            section.gap ? "see the list \u2191" : "jump to section \u2193"
+            section.gap ? "see the list \u2193" : "jump to section \u2193"
           );
           a.href = "#" + section.anchor;
           t.appendChild(a);
