@@ -48,8 +48,6 @@ collections:
 search:
   exclude_permalinks:
     - /changelog
-    - /positive-mitzvahs
-    - /negative-mitzvahs
 
 # Pagefind's index lives in ./pagefind/ (gitignored) so Jekyll treats it as a
 # normal static directory and re-copies it into _site/ on every build. Without
