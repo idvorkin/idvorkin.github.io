@@ -1,13 +1,18 @@
-{% comment %} Sleight of Mouth explorer (interactive). Pick a limiting belief,
-then click any of Dilts' fourteen patterns: the part of the belief it aims at
-lights up (evidence, link, conclusion, or the whole belief), and the panel shows
-the pattern's question plus the reframed sentence for that belief. Prev / Next
-and the arrow keys step through all fourteen. Without JavaScript it falls back
-to a plain list of the patterns. Data: _data/sleight_of_mouth.yml.
-Self-contained, no libraries, no network. Used by:
+{% comment %} Sleight of Mouth explorer (interactive). Pick a limiting belief
+from the dropdown, then click any of Dilts' fourteen patterns: the part of the
+belief it aims at lights up (evidence, link, conclusion, or the whole belief),
+the reframed sentence appears directly under the belief, and the panel shows the
+pattern's question. The "?" beside each pattern opens a short explanation
+(click/tap toggles; Esc or a tap outside closes). Prev / Next and the arrow keys
+step through all fourteen. An "All 14 | By section" toggle switches to cards for
+the post's own sections (sections: in the data); tapping one runs the same
+explorer on just that section's patterns, with "All sections" to go back.
+Without JavaScript it falls back to a plain list of the patterns. Data:
+_data/sleight_of_mouth.yml. Self-contained, no libraries, no network. Used by:
 _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
 <style>
   .somx {
+    position: relative;
     --somx-ink: #1b1f24;
     --somx-soft: #5a636e;
     --somx-faint: #9aa1aa;
@@ -30,8 +35,8 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
     border: 1px solid var(--somx-rule);
     border-radius: 4px;
     color: var(--somx-ink);
-    font-family:
-      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      sans-serif;
     line-height: 1.4;
   }
   .somx * {
@@ -61,18 +66,15 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
     font: inherit;
     cursor: pointer;
   }
-  .somx-pick button {
+  .somx-select {
+    font: inherit;
+    font-size: 0.85rem;
+    max-width: 14rem;
     border: 1px solid var(--somx-rule);
     background: var(--somx-paper);
     color: var(--somx-ink);
-    border-radius: 999px;
-    padding: 0.2rem 0.7rem;
-    font-size: 0.8rem;
-  }
-  .somx-pick button[aria-pressed="true"] {
-    background: var(--somx-ink);
-    color: #fff;
-    border-color: var(--somx-ink);
+    border-radius: 4px;
+    padding: 0.25rem 0.4rem;
   }
   .somx-belief {
     border: 2px dashed var(--somx-faint);
@@ -81,17 +83,12 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
     font-size: 1.2rem;
     font-weight: 600;
     text-align: center;
-    transition:
-      border-color 0.2s,
-      background 0.2s;
+    transition: border-color 0.2s, background 0.2s;
   }
   .somx-part {
     border-radius: 4px;
     padding: 0.05rem 0.3rem;
-    transition:
-      background 0.2s,
-      color 0.2s,
-      opacity 0.2s;
+    transition: background 0.2s, color 0.2s, opacity 0.2s;
   }
   .somx-belief .somx-part {
     opacity: 0.35;
@@ -123,8 +120,35 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
     opacity: 1;
     color: var(--somx-belief);
   }
+  .somx-reframe {
+    margin-top: 0.4rem;
+    border: 2px solid var(--somx-c, var(--somx-rule));
+    border-radius: 6px;
+    background: var(--somx-panel);
+    padding: 0.5rem 0.8rem 0.7rem;
+    text-align: center;
+    min-height: 5.2rem;
+  }
+  .somx-reframe-label {
+    margin: 0 0 0.2rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--somx-c);
+  }
+  .somx-reframe-text {
+    margin: 0;
+    font-size: 1.05rem;
+  }
+  .somx-reframe-text::before {
+    content: "\201C";
+  }
+  .somx-reframe-text::after {
+    content: "\201D";
+  }
   .somx-aimline {
-    margin: 0.35rem 0 0.9rem;
+    margin: 0.5rem 0 0.9rem;
     text-align: center;
     font-size: 0.8rem;
     color: var(--somx-soft);
@@ -160,9 +184,14 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
   .somx-group li {
     margin: 0;
     padding: 0;
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
   }
   .somx-chip {
-    width: 100%;
+    flex: 1 1 auto;
+    align-self: stretch;
+    min-width: 0;
     text-align: left;
     border: 1px solid var(--somx-rule);
     background: var(--somx-paper);
@@ -180,8 +209,67 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
     border-color: var(--somx-c);
     color: #fff;
   }
+  .somx-help {
+    flex: 0 0 auto;
+    align-self: center;
+    width: 1.6rem;
+    height: 1.6rem;
+    padding: 0;
+    border: 1px solid var(--somx-rule);
+    border-radius: 999px;
+    background: var(--somx-paper);
+    color: var(--somx-c);
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .somx-help:hover,
+  .somx-help[aria-expanded="true"] {
+    border-color: var(--somx-c);
+    background: var(--somx-c);
+    color: #fff;
+  }
+  .somx-pop {
+    position: absolute;
+    z-index: 20;
+    width: min(20rem, calc(100% - 1rem));
+    background: var(--somx-paper);
+    border: 1px solid var(--somx-rule);
+    border-top: 4px solid var(--somx-c, var(--somx-ink));
+    border-radius: 4px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+    padding: 0.7rem 0.9rem 0.8rem;
+    font-size: 0.88rem;
+  }
+  .somx-pop[hidden] {
+    display: none;
+  }
+  .somx-pop-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.5rem;
+  }
+  .somx-pop-title {
+    margin: 0;
+    font-weight: 700;
+    color: var(--somx-c);
+  }
+  .somx-pop-close {
+    border: 0;
+    background: none;
+    color: var(--somx-soft);
+    font-size: 1.2rem;
+    line-height: 1;
+    padding: 0.1rem 0.3rem;
+  }
+  .somx-pop p.somx-pop-body {
+    margin: 0.45rem 0 0;
+  }
   .somx-chip:focus-visible,
-  .somx-pick button:focus-visible,
+  .somx-help:focus-visible,
+  .somx-pop-close:focus-visible,
+  .somx-select:focus-visible,
   .somx-nav button:focus-visible {
     outline: 2px solid var(--somx-ink);
     outline-offset: 2px;
@@ -203,8 +291,7 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
     background: var(--somx-panel);
     border-left: 4px solid var(--somx-c, var(--somx-rule));
     border-radius: 0 4px 4px 0;
-    padding: 0.8rem 1rem;
-    min-height: 8.5rem;
+    padding: 0.6rem 1rem;
   }
   .somx-card-name {
     margin: 0;
@@ -212,19 +299,9 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
     color: var(--somx-c);
   }
   .somx-card-q {
-    margin: 0.15rem 0 0.6rem;
+    margin: 0.15rem 0 0;
     font-size: 0.9rem;
     color: var(--somx-soft);
-  }
-  .somx-card-r {
-    margin: 0;
-    font-size: 1.02rem;
-  }
-  .somx-card-r::before {
-    content: "\201C";
-  }
-  .somx-card-r::after {
-    content: "\201D";
   }
   .somx-nav {
     display: flex;
@@ -259,8 +336,144 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
     .somx-belief {
       font-size: 1.05rem;
     }
+    .somx-reframe-text {
+      font-size: 0.98rem;
+    }
     .somx-groups {
       grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .somx-modebar {
+    display: flex;
+    justify-content: center;
+    margin: 0.8rem 0;
+  }
+  .somx-reframe[hidden] {
+    display: none;
+  }
+  .somx-belief[data-aim=""] .somx-part {
+    opacity: 1;
+  }
+  .somx-mode {
+    display: inline-flex;
+    border: 1px solid var(--somx-rule);
+    border-radius: 999px;
+    padding: 2px;
+    background: var(--somx-panel);
+  }
+  .somx-mode button {
+    border: 0;
+    background: none;
+    border-radius: 999px;
+    padding: 0.3rem 0.9rem;
+    font-size: 0.82rem;
+    color: var(--somx-soft);
+    min-height: 2.1rem;
+  }
+  .somx-mode button[aria-checked="true"] {
+    background: var(--somx-ink);
+    color: #fff;
+    font-weight: 600;
+  }
+  .somx-buckets {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.6rem;
+  }
+  .somx-buckets[hidden],
+  .somx-body[hidden],
+  .somx-modebar[hidden] {
+    display: none;
+  }
+  .somx-bucket {
+    text-align: left;
+    border: 1px solid var(--somx-rule);
+    border-top: 4px solid var(--somx-b, var(--somx-ink));
+    background: var(--somx-paper);
+    border-radius: 4px;
+    padding: 0.6rem 0.75rem;
+    color: var(--somx-ink);
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    min-width: 0;
+  }
+  .somx-bucket:hover {
+    background: var(--somx-panel);
+  }
+  .somx-bucket.is-gap {
+    border-style: dashed;
+    background: #fffdf6;
+  }
+  .somx-bucket-name {
+    font-weight: 700;
+    font-size: 0.92rem;
+    line-height: 1.25;
+  }
+  .somx-bucket-idea {
+    font-size: 0.84rem;
+    color: var(--somx-soft);
+  }
+  .somx-bucket-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    align-items: center;
+    font-size: 0.72rem;
+    color: var(--somx-soft);
+  }
+  .somx-badge {
+    border-radius: 999px;
+    padding: 0.05rem 0.5rem;
+    background: var(--somx-panel);
+    border: 1px solid var(--somx-rule);
+    font-weight: 600;
+  }
+  .somx-drillhead {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.75rem;
+    align-items: baseline;
+    border-bottom: 1px solid var(--somx-rule);
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+  .somx-drillhead:empty {
+    display: none;
+  }
+  .somx-back {
+    border: 1px solid var(--somx-rule);
+    background: var(--somx-paper);
+    color: var(--somx-ink);
+    border-radius: 4px;
+    padding: 0.25rem 0.7rem;
+    font-size: 0.82rem;
+  }
+  .somx-drilltitle {
+    font-weight: 700;
+    font-size: 0.95rem;
+    flex: 1 1 12rem;
+    min-width: 0;
+    color: var(--somx-b, var(--somx-ink));
+  }
+  .somx-drilltitle a {
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin-left: 0.3rem;
+    white-space: nowrap;
+  }
+  .somx .somx-groups.is-scoped {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 9.5rem), 1fr));
+  }
+  .somx-mode button:focus-visible,
+  .somx-bucket:focus-visible,
+  .somx-back:focus-visible {
+    outline: 2px solid var(--somx-ink);
+    outline-offset: 2px;
+  }
+  @media (max-width: 640px) {
+    .somx-buckets {
+      grid-template-columns: minmax(0, 1fr);
     }
   }
   @media (prefers-reduced-motion: reduce) {
@@ -281,31 +494,56 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
   </ol>
   <div class="somx-live">
     <div class="somx-top">
-      <p class="somx-title">Try a pattern on a belief</p>
-      <div class="somx-pick" role="group" aria-label="Pick a belief">
+      <p class="somx-title">Pick a stuck belief, then try the patterns on it</p>
+      <label class="somx-pick">
         Belief:
-      </div>
+        <select class="somx-select"></select>
+      </label>
     </div>
     <div class="somx-belief" data-aim="">
       <span class="somx-part somx-part--evidence"></span>
       <span class="somx-part somx-part--link"></span>
       <span class="somx-part somx-part--conclusion"></span>
     </div>
-    <p class="somx-aimline" aria-live="polite"></p>
-    <div class="somx-groups"></div>
-    <div class="somx-card" aria-live="polite">
-      <p class="somx-card-name"></p>
-      <p class="somx-card-q"></p>
-      <p class="somx-card-r"></p>
+    <div class="somx-reframe" aria-live="polite">
+      <p class="somx-reframe-label"></p>
+      <p class="somx-reframe-text"></p>
     </div>
-    <div class="somx-nav">
-      <button type="button" data-step="-1" aria-label="Previous pattern">
-        &larr; Prev
-      </button>
-      <span class="somx-count"></span>
-      <button type="button" data-step="1" aria-label="Next pattern">
-        Next &rarr;
-      </button>
+    <div class="somx-modebar">
+      <div class="somx-mode" role="radiogroup" aria-label="Explorer view">
+        <button type="button" role="radio" data-mode="all">All 14</button>
+        <button type="button" role="radio" data-mode="sections">
+          By section
+        </button>
+      </div>
+    </div>
+    <div class="somx-buckets" hidden></div>
+    <div class="somx-body">
+      <div class="somx-drillhead"></div>
+      <p class="somx-aimline"></p>
+      <div class="somx-groups"></div>
+      <div class="somx-card">
+        <p class="somx-card-name"></p>
+        <p class="somx-card-q"></p>
+      </div>
+      <div class="somx-nav">
+        <button type="button" data-step="-1" aria-label="Previous pattern">
+          &larr; Prev
+        </button>
+        <span class="somx-count"></span>
+        <button type="button" data-step="1" aria-label="Next pattern">
+          Next &rarr;
+        </button>
+      </div>
+    </div>
+    <div class="somx-pop" role="dialog" aria-modal="false" tabindex="-1" hidden>
+      <div class="somx-pop-head">
+        <p class="somx-pop-title"></p>
+        <button type="button" class="somx-pop-close" aria-label="Close">
+          &times;
+        </button>
+      </div>
+      <div class="somx-pop-bodies"></div>
     </div>
   </div>
   <script type="application/json" class="somx-data">
@@ -313,65 +551,177 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
   </script>
 </figure>
 <script>
-  (function () {
-    document.querySelectorAll(".somx:not(.is-live)").forEach(function (root) {
+  (function() {
+    var uid = 0;
+    document.querySelectorAll(".somx:not(.is-live)").forEach(function(root) {
       var data = JSON.parse(root.querySelector(".somx-data").textContent);
       var aims = {};
-      data.aims.forEach(function (a) {
+      data.aims.forEach(function(a) {
         aims[a.id] = a;
       });
-      var state = { belief: data.beliefs[0].id, idx: 0 };
+      var state = { belief: data.beliefs[0].id, idx: 0, list: [], mode: "all" };
+      var pById = {};
+      data.patterns.forEach(function(p) {
+        pById[p.id] = p;
+      });
+      var bodyEl = root.querySelector(".somx-body");
+      var bucketsEl = root.querySelector(".somx-buckets");
+      var drillEl = root.querySelector(".somx-drillhead");
+      var modeEl = root.querySelector(".somx-mode");
       var beliefEl = root.querySelector(".somx-belief");
+      var reframeEl = root.querySelector(".somx-reframe");
       var aimLine = root.querySelector(".somx-aimline");
       var card = root.querySelector(".somx-card");
-      var picker = root.querySelector(".somx-pick");
+      var select = root.querySelector(".somx-select");
       var groupsEl = root.querySelector(".somx-groups");
       var countEl = root.querySelector(".somx-count");
+      var pop = root.querySelector(".somx-pop");
+      var popTitle = pop.querySelector(".somx-pop-title");
+      var popBodies = pop.querySelector(".somx-pop-bodies");
       var chips = [];
+      var openHelp = null;
+      uid += 1;
+      pop.id = "somx-pop-" + uid;
+      popTitle.id = pop.id + "-title";
+      pop.setAttribute("aria-labelledby", popTitle.id);
       function el(tag, cls, text) {
         var e = document.createElement(tag);
         if (cls) e.className = cls;
         if (text != null) e.textContent = text;
         return e;
       }
-      data.beliefs.forEach(function (b) {
-        var btn = el("button", null, b.label);
-        btn.type = "button";
-        btn.dataset.belief = b.id;
-        btn.addEventListener("click", function () {
-          state.belief = b.id;
-          render();
-        });
-        picker.appendChild(btn);
+      // Belief dropdown, grouped by theme in YAML order.
+      var groups = {};
+      data.beliefs.forEach(function(b) {
+        var theme = b.theme || "Examples";
+        if (!groups[theme]) {
+          groups[theme] = document.createElement("optgroup");
+          groups[theme].label = theme;
+          select.appendChild(groups[theme]);
+        }
+        var o = el("option", null, b.label);
+        o.value = b.id;
+        groups[theme].appendChild(o);
       });
-      data.aims.forEach(function (a) {
-        var g = el("div", "somx-group");
-        g.dataset.aimId = a.id;
-        g.appendChild(el("h4", null, a.name));
-        var ul = el("ul");
-        data.patterns.forEach(function (p, i) {
-          if (p.aim !== a.id) return;
-          var li = el("li");
-          var chip = el("button", "somx-chip", p.n + ". " + p.name);
-          chip.type = "button";
-          chip.dataset.idx = i;
-          chip.addEventListener("click", function () {
-            state.idx = i;
-            render();
+      select.addEventListener("change", function() {
+        state.belief = select.value;
+        render();
+      });
+      // Pattern chips for the patterns in view (ids), each with a "?" that
+      // explains the pattern. Only aim columns that have patterns are shown.
+      function buildChips(ids) {
+        closePop(false);
+        groupsEl.innerHTML = "";
+        chips = [];
+        state.list = ids
+          .map(function(id) {
+            return data.patterns.indexOf(pById[id]);
+          })
+          .sort(function(x, y) {
+            return x - y;
           });
-          chips.push(chip);
-          li.appendChild(chip);
-          ul.appendChild(li);
+        groupsEl.classList.toggle(
+          "is-scoped",
+          ids.length < data.patterns.length
+        );
+        data.aims.forEach(function(a) {
+          var mine = state.list.filter(function(i) {
+            return data.patterns[i].aim === a.id;
+          });
+          if (!mine.length) return;
+          var g = el("div", "somx-group");
+          g.dataset.aimId = a.id;
+          g.appendChild(el("h4", null, a.name));
+          var ul = el("ul");
+          mine.forEach(function(i) {
+            var p = data.patterns[i];
+            var li = el("li");
+            var chip = el("button", "somx-chip", p.n + ". " + p.name);
+            chip.type = "button";
+            chip.dataset.idx = i;
+            chip.addEventListener("click", function() {
+              state.idx = i;
+              render();
+            });
+            chips.push(chip);
+            var help = el("button", "somx-help", "?");
+            help.type = "button";
+            help.dataset.idx = i;
+            help.setAttribute("aria-label", "What is " + p.name + "?");
+            help.setAttribute("aria-haspopup", "dialog");
+            help.setAttribute("aria-expanded", "false");
+            help.setAttribute("aria-controls", pop.id);
+            help.addEventListener("click", function() {
+              if (openHelp === help) closePop(false);
+              else openPop(help, p);
+            });
+            li.appendChild(chip);
+            li.appendChild(help);
+            ul.appendChild(li);
+          });
+          g.appendChild(ul);
+          groupsEl.appendChild(g);
         });
-        g.appendChild(ul);
-        groupsEl.appendChild(g);
+        if (state.list.indexOf(state.idx) < 0) state.idx = state.list[0];
+      }
+      function openPop(help, p) {
+        if (openHelp) openHelp.setAttribute("aria-expanded", "false");
+        openHelp = help;
+        help.setAttribute("aria-expanded", "true");
+        pop.dataset.aimId = p.aim;
+        popTitle.textContent = p.n + ". " + p.name;
+        popBodies.innerHTML = "";
+        (p.explain || []).forEach(function(t) {
+          popBodies.appendChild(el("p", "somx-pop-body", t));
+        });
+        pop.hidden = false;
+        // Place under the "?" and keep it inside the explorer's box.
+        var r = root.getBoundingClientRect();
+        var h = help.getBoundingClientRect();
+        var w = pop.offsetWidth;
+        var left = h.left + h.width / 2 - r.left - w / 2;
+        left = Math.max(8, Math.min(left, root.clientWidth - w - 8));
+        pop.style.left = left + "px";
+        pop.style.top = h.bottom - r.top + 6 + "px";
+        pop.focus({ preventScroll: true });
+      }
+      function closePop(returnFocus) {
+        if (!openHelp) return;
+        var help = openHelp;
+        openHelp = null;
+        help.setAttribute("aria-expanded", "false");
+        pop.hidden = true;
+        if (returnFocus) help.focus();
+      }
+      pop
+        .querySelector(".somx-pop-close")
+        .addEventListener("click", function() {
+          closePop(true);
+        });
+      document.addEventListener("pointerdown", function(e) {
+        if (!openHelp) return;
+        if (pop.contains(e.target) || openHelp.contains(e.target)) return;
+        closePop(false);
       });
-      root.querySelectorAll(".somx-nav button").forEach(function (b) {
-        b.addEventListener("click", function () {
+      document.addEventListener("keydown", function(e) {
+        if (e.key === "Escape" && openHelp) {
+          closePop(true);
+          e.preventDefault();
+        }
+      });
+      root.querySelectorAll(".somx-nav button").forEach(function(b) {
+        b.addEventListener("click", function() {
           step(+b.dataset.step);
         });
       });
-      root.addEventListener("keydown", function (e) {
+      root.addEventListener("keydown", function(e) {
+        if (
+          e.target === select ||
+          pop.contains(e.target) ||
+          modeEl.contains(e.target) ||
+          !bucketsEl.hidden
+        )
+          return;
         if (e.key === "ArrowRight") {
           step(1);
           e.preventDefault();
@@ -382,10 +732,11 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
         }
       });
       function step(d) {
-        var n = data.patterns.length;
-        state.idx = (state.idx + d + n) % n;
+        var n = state.list.length;
+        var at = state.list.indexOf(state.idx);
+        state.idx = state.list[(at + d + n) % n];
         render();
-        var active = chips.filter(function (c) {
+        var active = chips.filter(function(c) {
           return +c.dataset.idx === state.idx;
         })[0];
         if (
@@ -396,28 +747,29 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
           active.focus();
       }
       function render() {
-        var b = data.beliefs.filter(function (x) {
+        var b = data.beliefs.filter(function(x) {
           return x.id === state.belief;
         })[0];
         var p = data.patterns[state.idx];
         var a = aims[p.aim];
-        picker.querySelectorAll("button").forEach(function (btn) {
-          btn.setAttribute(
-            "aria-pressed",
-            btn.dataset.belief === b.id ? "true" : "false"
-          );
-        });
+        select.value = b.id;
         beliefEl.querySelector(".somx-part--evidence").textContent = b.evidence;
         beliefEl.querySelector(".somx-part--link").textContent = b.link;
         beliefEl.querySelector(".somx-part--conclusion").textContent =
           b.conclusion;
-        beliefEl.dataset.aim = p.aim;
+        // On the section cards no pattern is in play, so the belief shows in full.
+        beliefEl.dataset.aim = bucketsEl.hidden ? p.aim : "";
+        reframeEl.dataset.aimId = p.aim;
+        reframeEl.querySelector(".somx-reframe-label").textContent =
+          "↓ " + p.n + ". " + p.name;
+        reframeEl.querySelector(".somx-reframe-text").textContent =
+          b.reframes[p.id];
         aimLine.dataset.aimId = p.aim;
         aimLine.innerHTML = "";
         aimLine.appendChild(document.createTextNode("Aims at "));
         aimLine.appendChild(el("b", null, a.name.toLowerCase()));
         aimLine.appendChild(document.createTextNode(": " + a.blurb));
-        chips.forEach(function (c) {
+        chips.forEach(function(c) {
           c.setAttribute(
             "aria-pressed",
             +c.dataset.idx === state.idx ? "true" : "false"
@@ -426,11 +778,107 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
         card.dataset.aimId = p.aim;
         card.querySelector(".somx-card-name").textContent = p.n + ". " + p.name;
         card.querySelector(".somx-card-q").textContent = p.question;
-        card.querySelector(".somx-card-r").textContent = p.reframes[b.id];
-        countEl.textContent = state.idx + 1 + " of " + data.patterns.length;
+        countEl.textContent =
+          state.list.indexOf(state.idx) + 1 + " of " + state.list.length;
+        root.querySelector(".somx-nav").style.visibility =
+          state.list.length > 1 ? "" : "hidden";
       }
+      // "All 14 | By section": section cards, then drill into one section.
+      var allIds = data.patterns.map(function(p) {
+        return p.id;
+      });
+      function setView(mode, section) {
+        state.mode = mode;
+        modeEl.querySelectorAll("[role=radio]").forEach(function(r) {
+          var on = r.dataset.mode === mode;
+          r.setAttribute("aria-checked", on ? "true" : "false");
+          r.tabIndex = on ? 0 : -1;
+        });
+        drillEl.innerHTML = "";
+        if (mode === "sections" && !section) {
+          closePop(false);
+          bodyEl.hidden = true;
+          bucketsEl.hidden = false;
+          reframeEl.hidden = true;
+          beliefEl.dataset.aim = "";
+          return;
+        }
+        bodyEl.hidden = false;
+        bucketsEl.hidden = true;
+        reframeEl.hidden = false;
+        if (section) {
+          drillEl.style.setProperty("--somx-b", section.color);
+          var back = el("button", "somx-back", "\u2190 All sections");
+          back.type = "button";
+          back.addEventListener("click", function() {
+            setView("sections");
+            var c = bucketsEl.querySelector('[data-sec="' + section.id + '"]');
+            if (c) c.focus();
+          });
+          drillEl.appendChild(back);
+          var t = el("div", "somx-drilltitle", section.heading);
+          var a = el(
+            "a",
+            null,
+            section.gap ? "see the list \u2193" : "jump to section \u2193"
+          );
+          a.href = "#" + section.anchor;
+          t.appendChild(a);
+          drillEl.appendChild(t);
+          buildChips(section.patterns);
+        } else {
+          buildChips(allIds);
+        }
+        render();
+      }
+      modeEl.querySelectorAll("[role=radio]").forEach(function(r) {
+        r.addEventListener("click", function() {
+          setView(r.dataset.mode);
+        });
+      });
+      modeEl.addEventListener("keydown", function(e) {
+        if (
+          ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"].indexOf(e.key) < 0
+        )
+          return;
+        e.preventDefault();
+        var next = state.mode === "all" ? "sections" : "all";
+        setView(next);
+        modeEl.querySelector('[data-mode="' + next + '"]').focus();
+      });
+      (data.sections || []).forEach(function(sec) {
+        var c = el("button", "somx-bucket" + (sec.gap ? " is-gap" : ""));
+        c.type = "button";
+        c.dataset.sec = sec.id;
+        c.style.setProperty("--somx-b", sec.color);
+        c.appendChild(el("span", "somx-bucket-name", sec.heading));
+        c.appendChild(el("span", "somx-bucket-idea", sec.idea));
+        var meta = el("span", "somx-bucket-meta");
+        var k = sec.patterns.length;
+        meta.appendChild(
+          el("span", "somx-badge", k + (k === 1 ? " pattern" : " patterns"))
+        );
+        meta.appendChild(
+          document.createTextNode(
+            sec.patterns
+              .map(function(id) {
+                return pById[id].name;
+              })
+              .join(" \u00b7 ")
+          )
+        );
+        c.appendChild(meta);
+        c.addEventListener("click", function() {
+          setView("sections", sec);
+          var b = drillEl.querySelector(".somx-back");
+          if (b) b.focus({ preventScroll: true });
+        });
+        bucketsEl.appendChild(c);
+      });
+      if (!(data.sections || []).length)
+        root.querySelector(".somx-modebar").hidden = true;
       root.classList.add("is-live");
-      render();
+      setView("all");
     });
   })();
 </script>
