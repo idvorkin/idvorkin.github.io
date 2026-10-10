@@ -1,0 +1,149 @@
+{% comment %} Copy-ready LLM prompt that runs Dilts' fourteen Sleight of Mouth
+patterns on the reader's own belief. Pattern names, targets and questions come
+from _data/sleight_of_mouth.yml so they stay in sync with the explorer. The
+optional input fills the belief into the prompt; Copy puts the text on the
+clipboard. No network, no API key. Used by: _d/2016-3-12-sleight-of-mouth.md {%
+endcomment %}
+<style>
+  .somp {
+    box-sizing: border-box;
+    max-width: 760px;
+    margin: 1.2em auto;
+    padding: 0.9rem 1rem;
+    border: 1px solid #d8dbe0;
+    border-radius: 4px;
+    background: #f5f6f8;
+    color: #1b1f24;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      sans-serif;
+  }
+  .somp * {
+    box-sizing: border-box;
+  }
+  .somp-label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  .somp-input {
+    width: 100%;
+    font: inherit;
+    font-size: 0.95rem;
+    padding: 0.4rem 0.5rem;
+    border: 1px solid #d8dbe0;
+    border-radius: 4px;
+    background: #fff;
+  }
+  .somp-text {
+    margin: 0.7rem 0;
+    max-height: 22rem;
+    overflow: auto;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    background: #fff;
+    border: 1px solid #d8dbe0;
+    border-radius: 4px;
+    padding: 0.7rem 0.8rem;
+    font-size: 0.8rem;
+    line-height: 1.45;
+  }
+  .somp-bar {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+  }
+  .somp-copy {
+    white-space: nowrap;
+    font: inherit;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid #1b1f24;
+    background: #1b1f24;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0.35rem 0.9rem;
+  }
+  .somp-copy:focus-visible,
+  .somp-input:focus-visible {
+    outline: 2px solid #1b1f24;
+    outline-offset: 2px;
+  }
+  .somp-status {
+    font-size: 0.8rem;
+    color: #5a636e;
+  }
+</style>
+<figure class="somp">
+  <label class="somp-label" for="somp-belief">
+    Your belief (optional, or edit it in after you paste)
+  </label>
+  <input
+    id="somp-belief"
+    class="somp-input"
+    type="text"
+    autocomplete="off"
+    placeholder="e.g. I skipped the gym all month, so I'm just not a fitness person"
+  />
+  <pre
+    class="somp-text"
+  >Help me loosen a belief that's holding me back, using Robert Dilts' fourteen Sleight of Mouth patterns.
+
+My belief: <span class="somp-belief">[WRITE YOUR BELIEF HERE]</span>
+
+First, split my belief into evidence → link → conclusion, and show the split.
+
+Then run each pattern below on it. For each one, give the pattern name, the part of the belief it targets (evidence, link, conclusion, or the whole belief), and one reframe in my voice, one or two sentences, honest to the facts I gave. No pep talk.
+{% for p in site.data.sleight_of_mouth.patterns %}
+{{ p.n }}. {{ p.name }} (targets {% if p.aim == "belief" %}the whole belief{% else %}the {{ p.aim }}{% endif %}): {{ p.question }}{% endfor %}
+
+Finally, ask me which reframe loosened the belief the most, and why.</pre>
+  <div class="somp-bar">
+    <button type="button" class="somp-copy">Copy prompt</button>
+    <span class="somp-status" aria-live="polite"></span>
+  </div>
+</figure>
+<script>
+  (function() {
+    document.querySelectorAll(".somp").forEach(function(root) {
+      var input = root.querySelector(".somp-input");
+      var slot = root.querySelector(".somp-belief");
+      var text = root.querySelector(".somp-text");
+      var status = root.querySelector(".somp-status");
+      var blank = slot.textContent;
+      input.addEventListener("input", function() {
+        slot.textContent = input.value.trim() || blank;
+      });
+      function done(msg) {
+        status.textContent = msg;
+        setTimeout(function() {
+          status.textContent = "";
+        }, 2500);
+      }
+      function fallback() {
+        // Older browsers / non-secure contexts: select the text and copy.
+        var range = document.createRange();
+        range.selectNodeContents(text);
+        var sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(range);
+        var ok = false;
+        try {
+          ok = document.execCommand("copy");
+        } catch (e) {}
+        done(ok ? "Copied" : "Selected: press Ctrl+C / ⌘C");
+      }
+      root.querySelector(".somp-copy").addEventListener("click", function() {
+        var t = text.textContent;
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(t).then(function() {
+            done(
+              "Copied. Paste it into ChatGPT, Claude or your LLM of choice."
+            );
+          }, fallback);
+        } else fallback();
+      });
+    });
+  })();
+</script>
