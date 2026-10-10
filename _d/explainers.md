@@ -9,6 +9,7 @@ tags:
 redirect_from:
   - /explorable-explanations
   - /interactive-explanations
+ai_default_image: true
 ---
 
 You don't really understand something until you can play with it. That's the premise behind explainers — interactive experiences that let you _do_ the thing, not just read about it. Instead of reading that monitors come in 16:9 and 21:9 aspect ratios, you drag them around and see them side by side. Instead of reading that religions evolved from shared roots, you click through a timeline and discover the connections yourself.
