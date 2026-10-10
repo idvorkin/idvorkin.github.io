@@ -113,7 +113,9 @@ Run the belief through these questions (page 318). The sections after this list 
 13. **Apply to self** - Apply the belief's own judgment to the belief itself. "It's too expensive" - how expensive is it to keep holding this belief?
 14. **Meta frame** - What other belief about this belief could change or enrich the perception of it?
 
-{%include blob_image.html src="sleight-of-mouth.jpg" %}
+Try them on a belief. Pick a pattern and watch which part of the belief it pries at: the evidence, the link, the conclusion, or the belief as a whole. (This replaces Dilts' original [1987 diagram](https://github.com/idvorkin/blob/raw/master/sleight-of-mouth.jpg), which packs the same fourteen moves around a single cancer example.)
+
+{% include sleight-of-mouth-explorer.html %}
 
 ## Frames: same facts, different picture
 

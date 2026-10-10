@@ -1,0 +1,133 @@
+# Sleight of Mouth: Dilts' fourteen patterns, the beliefs they're demoed on,
+# and what part of the belief each pattern aims at.
+# Used by: _includes/sleight-of-mouth-map.html, _includes/sleight-of-mouth-explorer.html
+#
+# The "aims" grouping is a simplification, loosely after where Dilts places each
+# pattern in his 1987 diagram (cause side, effect side, the whole belief).
+# Every belief has the same shape: evidence -> link -> conclusion.
+
+aims:
+  - id: evidence
+    name: The evidence
+    blurb: Is the first half really what you think it is?
+  - id: link
+    name: The link
+    blurb: Does the evidence actually lead there?
+  - id: conclusion
+    name: The conclusion
+    blurb: Is that even the outcome that matters?
+  - id: belief
+    name: The belief itself
+    blurb: Step outside and look at the belief as a thing.
+
+beliefs:
+  - id: back
+    label: My back
+    evidence: My back has hurt forever
+    link: so
+    conclusion: I'll never get better
+  - id: boss
+    label: My boss
+    evidence: My boss ignores me
+    link: which means
+    conclusion: he's going to fire me
+
+patterns:
+  - n: 1
+    name: Intention
+    aim: belief
+    question: What is the positive purpose of this belief?
+    reframes:
+      back: The belief is trying to protect me from getting my hopes up and being let down again. Good intent, wrong tool.
+      boss: The worry is trying to get me ready early so I'm never blindsided. I can get ready without assuming the worst.
+  - n: 2
+    name: Redefining
+    aim: evidence
+    question: What's another way to say this, with slightly different words?
+    reframes:
+      back: '"Hurt forever" is really "hurt through a long stretch I didn''t yet know how to train through."'
+      boss: '"Ignores me" is really "hasn''t answered two emails during reorg week."'
+  - n: 3
+    name: Consequence
+    aim: belief
+    question: Where does holding this belief lead?
+    reframes:
+      back: Believing it guarantees I skip the rehab, which is the one thing that could change it.
+      boss: Believing it makes me go quiet in meetings, which is the one thing that would actually put me at risk.
+  - n: 4
+    name: Chunk down
+    aim: evidence
+    question: Get more specific. Which part, when, how much?
+    reframes:
+      back: Which movement, on which day, at what load? "Forever" dissolves into specific reps.
+      boss: Ignores me where? In 1:1s, in email, in standup? Which of those changed, and since when?
+  - n: 5
+    name: Chunk up
+    aim: link
+    question: What bigger class does this belong to?
+    reframes:
+      back: Bodies are systems that adapt to load. I'm inside a whole class of problems that respond to the right stimulus.
+      boss: Managers under load go quiet on everyone. It's a bandwidth signal, not a verdict on me.
+  - n: 6
+    name: Analogy
+    aim: link
+    question: What's a parallel situation that reads differently?
+    reframes:
+      back: A rusty hinge isn't a broken door. It's an un-oiled one.
+      boss: A pilot in turbulence stops chatting with the passengers. It doesn't mean he's about to eject them.
+  - n: 7
+    name: Change frame size
+    aim: evidence
+    question: Zoom the time or the number of people in or out. Does it still mean the same?
+    reframes:
+      back: Will this specific flare-up matter across a year of consistent training?
+      boss: Across my whole time here, how many quiet weeks were followed by anything bad?
+  - n: 8
+    name: Better outcome
+    aim: conclusion
+    question: What outcome would actually be worth aiming at?
+    reframes:
+      back: The goal isn't a back that never hurts. It's a back where a flare-up costs me a day, not a month.
+      boss: What I actually want is to know where I stand. So ask, "What would you like more of from me?"
+  - n: 9
+    name: Model of the world
+    aim: link
+    question: Who would see the same facts and draw a different conclusion?
+    reframes:
+      back: A physical therapist reads "hurt for years" as "untrained for years." In her map, chronic is the starting line.
+      boss: In his world no news is good news. He only talks to the people whose work is on fire.
+  - n: 10
+    name: Reality strategy
+    aim: evidence
+    question: How do you know this is true? What would you have to perceive?
+    reframes:
+      back: How do I know it's "forever"? I remember the bad days vividly and the fine days not at all.
+      boss: What would I actually see if he were planning to fire me? Am I seeing any of it?
+  - n: 11
+    name: Counter example
+    aim: evidence
+    question: Where does the rule not hold?
+    reframes:
+      back: There was a month last year it didn't hurt. If it's "forever," where did that month go?
+      boss: He ignored Sam all last spring, and Sam got promoted.
+  - n: 12
+    name: Hierarchy of criteria
+    aim: conclusion
+    question: What matters more than what this belief is measuring?
+    reframes:
+      back: Being strong enough to play with my kids matters more than being right about the prognosis.
+      boss: Doing work I'm proud of matters more than how many replies I get this week.
+  - n: 13
+    name: Apply to self
+    aim: belief
+    question: Turn the belief's own judgment back on the belief.
+    reframes:
+      back: How much has holding "I'll never get better" cost me? Has that belief ever bought me a single good rep?
+      boss: Am I ignoring him back? This belief has me avoiding the one conversation that would answer it.
+  - n: 14
+    name: Meta frame
+    aim: belief
+    question: What belief about this belief changes how it looks?
+    reframes:
+      back: I believe this most on flare-up days, which is exactly when I'm least able to judge.
+      boss: I believe this mostly on Sunday nights, when I'm tired. That's a mood, not a forecast.

@@ -1,0 +1,223 @@
+{% comment %} Sleight of Mouth map (static). One limiting belief split into its
+three parts (evidence -> link -> conclusion), with Dilts' fourteen patterns
+sorted into columns under the part each one aims at, plus a full-width row for
+the patterns that step outside the belief entirely. Each pattern shows its
+question and one worked reframe for the chosen belief. No JavaScript. Data:
+_data/sleight_of_mouth.yml (shared with sleight-of-mouth-explorer.html).
+Parameters: belief (optional) - id from the data file, default "back". Used by:
+_d/2016-3-12-sleight-of-mouth.md {% endcomment %} {% assign somap =
+site.data.sleight_of_mouth %} {% assign somap_belief_id = include.belief |
+default: "back" %} {% assign somap_belief = somap.beliefs | where: "id",
+somap_belief_id | first %}
+
+<style>
+  .somap-map {
+    --somap-ink: #1b1f24;
+    --somap-soft: #5a636e;
+    --somap-rule: #d8dbe0;
+    --somap-paper: #ffffff;
+    --somap-evidence: #2f6f8f;
+    --somap-evidence-bg: #e8f1f5;
+    --somap-link: #a8741a;
+    --somap-link-bg: #f8f0e0;
+    --somap-conclusion: #b8562f;
+    --somap-conclusion-bg: #f8ebe5;
+    --somap-belief: #6b5b95;
+    --somap-belief-bg: #efecf5;
+    box-sizing: border-box;
+    max-width: 820px;
+    margin: 2em auto;
+    padding: 1.25rem;
+    background: var(--somap-paper);
+    border: 1px solid var(--somap-rule);
+    border-radius: 4px;
+    color: var(--somap-ink);
+    font-family:
+      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.35;
+  }
+  .somap-map * {
+    box-sizing: border-box;
+  }
+  .somap-map-title {
+    margin: 0 0 0.25rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+  .somap-map-sub {
+    margin: 0 0 1rem;
+    font-size: 0.85rem;
+    color: var(--somap-soft);
+  }
+  .somap-map-belief {
+    border: 2px dashed var(--somap-belief);
+    border-radius: 6px;
+    padding: 0.6rem;
+    display: grid;
+    grid-template-columns: 5fr 3fr 2fr;
+    gap: 0.5rem;
+    align-items: stretch;
+  }
+  .somap-map-part {
+    border-radius: 4px;
+    padding: 0.5rem 0.6rem;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .somap-map-part small {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 0.15rem;
+  }
+  .somap-map-part--evidence {
+    background: var(--somap-evidence-bg);
+    color: var(--somap-evidence);
+  }
+  .somap-map-part--link {
+    background: var(--somap-link-bg);
+    color: var(--somap-link);
+  }
+  .somap-map-part--conclusion {
+    background: var(--somap-conclusion-bg);
+    color: var(--somap-conclusion);
+  }
+  .somap-map-part q {
+    color: var(--somap-ink);
+    quotes: none;
+  }
+  .somap-map-belief-label {
+    grid-column: 1 / -1;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--somap-belief);
+    text-align: center;
+  }
+  .somap-map-cols {
+    display: grid;
+    grid-template-columns: 5fr 3fr 2fr;
+    gap: 0.75rem;
+    margin-top: 0.9rem;
+  }
+  .somap-map-col {
+    border-top: 4px solid var(--somap-c);
+    padding-top: 0.4rem;
+  }
+  .somap-map-col--wide {
+    grid-column: 1 / -1;
+    margin-top: 0.4rem;
+  }
+  .somap-map-col--wide .somap-map-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 1rem;
+  }
+  .somap-map-col h4 {
+    margin: 0 0 0.1rem;
+    font-size: 0.95rem;
+    color: var(--somap-c);
+  }
+  .somap-map-col > p {
+    margin: 0 0 0.5rem;
+    font-size: 0.8rem;
+    color: var(--somap-soft);
+  }
+  .somap-map-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .somap-map-list li {
+    margin: 0 0 0.65rem;
+    padding: 0;
+    font-size: 0.85rem;
+  }
+  .somap-map-list b {
+    color: var(--somap-c);
+  }
+  .somap-map-list .somap-map-q {
+    display: block;
+  }
+  .somap-map-list .somap-map-ex {
+    display: block;
+    color: var(--somap-soft);
+    font-style: italic;
+  }
+  .somap-map-col--evidence {
+    --somap-c: var(--somap-evidence);
+  }
+  .somap-map-col--link {
+    --somap-c: var(--somap-link);
+  }
+  .somap-map-col--conclusion {
+    --somap-c: var(--somap-conclusion);
+  }
+  .somap-map-col--belief {
+    --somap-c: var(--somap-belief);
+  }
+  @media (max-width: 640px) {
+    .somap-map {
+      padding: 0.9rem;
+    }
+    .somap-map-belief {
+      grid-template-columns: 1fr;
+    }
+    .somap-map-cols,
+    .somap-map-col--wide .somap-map-list {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<figure
+  class="somap-map"
+  aria-label="Sleight of mouth: where each of the fourteen patterns aims"
+>
+  <p class="somap-map-title">Where each pattern aims</p>
+  <p class="somap-map-sub">
+    Every limiting belief has the same shape. Each pattern pries at one part of
+    it. Examples use the belief below.
+  </p>
+  <div class="somap-map-belief">
+    <div class="somap-map-part somap-map-part--evidence">
+      <small>Evidence</small><q>{{ somap_belief.evidence }}</q>
+    </div>
+    <div class="somap-map-part somap-map-part--link">
+      <small>Link</small><q>{{ somap_belief.link }} &rarr;</q>
+    </div>
+    <div class="somap-map-part somap-map-part--conclusion">
+      <small>Conclusion</small><q>{{ somap_belief.conclusion }}</q>
+    </div>
+    <div class="somap-map-belief-label">
+      &uarr; the belief itself (the dashed box) &uarr;
+    </div>
+  </div>
+  <div class="somap-map-cols">
+    {%- for aim in somap.aims %} {%- assign aim_patterns = somap.patterns | where:
+    "aim", aim.id %}
+    <section
+      class="somap-map-col somap-map-col--{{ aim.id }}{% if aim.id == 'belief' %} somap-map-col--wide{% endif %}"
+    >
+      <h4>{{ aim.name }}</h4>
+      <p>{{ aim.blurb }}</p>
+      <ul class="somap-map-list">
+        {%- for p in aim_patterns %}
+        <li>
+          <b>{{ p.n }}. {{ p.name }}</b>
+          <span class="somap-map-q">{{ p.question }}</span>
+          <span class="somap-map-ex">{{ p.reframes[somap_belief_id] }}</span>
+        </li>
+        {%- endfor %}
+      </ul>
+    </section>
+    {%- endfor %}
+  </div>
+</figure>
