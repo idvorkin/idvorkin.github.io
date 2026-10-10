@@ -385,6 +385,8 @@ Try these shortcuts:
   Ctrl/Cmd+Shift+A - toggle annotate (comment) mode
   `;
   mouseTrap.bind("?", (e) => alert(shortcutHelp));
+  // Bindings register after the load event, so tests wait for this marker instead of sleeping.
+  document.body.dataset.shortcuts = "ready";
 }
 
 /**

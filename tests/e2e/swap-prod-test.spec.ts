@@ -54,8 +54,9 @@ async function mockProd(context: BrowserContext) {
   });
 }
 
+/** Key bindings register after the load event; main.ts marks the body once they exist. */
 async function pressP(page: Page) {
-  await page.waitForLoadState("load");
+  await page.waitForFunction(() => document.body.dataset.shortcuts === "ready");
   await page.keyboard.press("p");
 }
 
