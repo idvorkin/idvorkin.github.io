@@ -23,6 +23,67 @@ aims:
     name: The belief itself
     blurb: Step outside and look at the belief as a thing.
 
+# The post's own ## sections, for the explorer's "By section" view. Headings
+# must match _d/2016-3-12-sleight-of-mouth.md exactly; anchor is the heading's
+# kramdown id. patterns lists the pattern ids each section teaches. The "gap"
+# card holds the patterns no section explains yet (open question for Igor).
+sections:
+  - id: words
+    heading: Words build the experience
+    anchor: words-build-the-experience
+    idea: Swap the word and you change what the experience is, before a single fact moves.
+    color: "#6b5b95"
+    patterns: [redefining]
+  - id: frames
+    heading: "Frames: same facts, different picture"
+    anchor: frames-same-facts-different-picture
+    idea: Move the frame (outcome, size, someone else's view) and the same facts read differently.
+    color: "#2f6f8f"
+    patterns: [outcome, frame_size, model]
+  - id: intent
+    heading: "Intention and redefining: reopening a closed conversation"
+    anchor: intention-and-redefining-reopening-a-closed-conversation
+    idea: Find the intention under the complaint, then slide the word one notch.
+    color: "#a8741a"
+    patterns: [intention, redefining]
+  - id: chunk
+    heading: "Chunking: change the size of the thought"
+    anchor: chunking-change-the-size-of-the-thought
+    idea: Go specific until the generalization can't survive the detail, or go abstract, or go sideways.
+    color: "#b8562f"
+    patterns: [chunk_down, chunk_up, analogy]
+  - id: values
+    heading: "Values and criteria: the deepest lever"
+    anchor: values-and-criteria-the-deepest-lever
+    idea: Values rarely move, but criteria are negotiable. Find the one that matters more.
+    color: "#2e7d4f"
+    patterns: [criteria]
+  - id: together
+    heading: "Putting it together: one belief, ten patterns"
+    anchor: putting-it-together-one-belief-ten-patterns
+    idea: No single pattern is the magic bullet. Run one belief through several at once.
+    color: "#1b1f24"
+    patterns:
+      [
+        intention,
+        redefining,
+        consequence,
+        chunk_down,
+        chunk_up,
+        counter,
+        analogy,
+        self,
+        criteria,
+        frame_size,
+      ]
+  - id: gap
+    gap: true
+    heading: Not yet covered by a section
+    anchor: the-fourteen-patterns
+    idea: Listed in the fourteen, but no section explains them yet.
+    color: "#9aa1aa"
+    patterns: [consequence, reality, counter, self, meta]
+
 patterns:
   - n: 1
     id: intention
