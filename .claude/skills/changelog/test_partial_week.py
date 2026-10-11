@@ -7,7 +7,12 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from partial_week import analyze, delete_partial, parse_recent_entry
+from partial_week import (
+    analyze,
+    delete_partial,
+    parse_checked_through,
+    parse_recent_entry,
+)
 
 
 class AnalyzeTest(unittest.TestCase):
@@ -189,3 +194,31 @@ Older content.
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class CheckedThroughTest(unittest.TestCase):
+    def test_reads_newest_entry_with_pacific_offset(self):
+        text = (
+            "## Week of 2026-10-11\n\n_22 commits this week_\n"
+            "_Checked through 2026-10-11 14:05 PT; next entry starts from here._\n"
+        )
+        self.assertEqual(parse_checked_through(text), "2026-10-11T14:05:00-07:00")
+
+    def test_ignores_older_entries(self):
+        text = (
+            "## Week of 2026-10-18\n\ncontent\n\n## Week of 2026-10-11\n\n"
+            "_Checked through 2026-10-11 14:05 PT; next entry starts from here._\n"
+        )
+        self.assertIsNone(parse_checked_through(text))
+
+    def test_monday_check_still_reports_it(self):
+        fd, path = tempfile.mkstemp(suffix=".md")
+        import os
+
+        os.close(fd)
+        Path(path).write_text(
+            "## Week of 2026-10-11\n\n_Checked through 2026-10-11 14:05 PT_\n"
+        )
+        r = analyze(Path(path), dt.date(2026, 10, 12))
+        self.assertTrue(r.is_monday)
+        self.assertEqual(r.checked_through, "2026-10-11T14:05:00-07:00")

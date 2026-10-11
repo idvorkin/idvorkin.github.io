@@ -79,7 +79,9 @@ Tests: `cd .claude/skills/changelog && python3 -m unittest test_partial_week` (1
 
 ### 1. Determine Time Range
 
-If Step 0 set `START_DATE` from a merged partial week, use that. Otherwise default to the last 7 days, or use user-specified range:
+If Step 0 set `START_DATE` from a merged partial week, use that. Otherwise, if the `check` JSON has `checked_through` (read from the newest entry's `_Checked through YYYY-MM-DD HH:MM PT_` line), resume from it: pass its date as `--since` to the helper scripts and drop anything committed or merged at or before that timestamp, since the previous entry already covers it. Otherwise default to the last 7 days, or use user-specified range.
+
+**End every entry with a resume point.** Under the commit-count line, add `_Checked through YYYY-MM-DD HH:MM PT; next entry starts from here._`, taking HH:MM from `TZ=America/Los_Angeles date +%H:%M` in the same command as the final scan — never estimated. Without it, merges that land after the run but before the week boundary fall between two entries.
 
 ```bash
 # Get commits from last 7 days (default)

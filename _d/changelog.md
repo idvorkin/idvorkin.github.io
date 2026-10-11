@@ -238,13 +238,16 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 
 ## Week of 2026-10-11
 
-_20 commits this week_
+_22 commits this week_
+
+_Checked through 2026-10-11 13:55 PT; next entry starts from here._
 
 ### New Posts and Rewrites (2026-10-11)
 
 - **What's Left in Engineering? (new post!)** - With agents writing the code, two jobs remain: iterate on the job to be done, keep code changeable by agents. ([blog](/whats-left#job-2-keep-the-code-changeable-by-agents)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/a02331764)
 - **Sleight of Mouth rebuilt** - One coherent argument, with Dilts' diagram replaced by an interactive explorer of the fourteen patterns. ([blog](/sleight-of-mouth#interactive-version)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/253079feb) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/efda88e96) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6ce0e6015)
 - **Affirmations** - A short public page with the four affirmations and how to use them, split from my working notes. ([blog](/affirmations#how-to-use-them)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d9767572d)
+- **The Den #13** - The Longest Title: a card-catalog title that never ends fills the attic before the book appears. ([blog](/the-den)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/5c083105a)
 - **Small edits** - The eulogy song plays inline; Opus releases on the life-in-weeks chart. ([blog](/eulogy)) ([blog](/weeks)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d47d39405) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/b5dcedb6f)
 
 ### Infrastructure & CI (2026-10-11)
@@ -256,6 +259,7 @@ _20 commits this week_
 
 - **iOS device signing** - Recovering when Xcode loses its account, the shared signing lock, and what a locked device's error looks like. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/8844a5a68) [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/6bc370fa0) [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/093f913ff)
 - **Agent lessons** - What the iOS agent sessions taught, including simctl defaults that can't override keys an app already wrote. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/fff137e6b) [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/665da96ce)
+- **iOS libraries** - Recommended iOS libraries, tools and agent skills, revised after checking seven app repos against the list. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/a9b816684) [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/b45b19a0d)
 
 ### Other Projects (2026-10-11)
 
@@ -263,15 +267,17 @@ _20 commits this week_
 
 - **Calling Larry** - The native app gets the Call screen, with call audio and gist uploads. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/d782599a8)
 - **Home screen** - Opens on today with a daily strip, usage left, the eulogy song, and an iPad layout. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/5046a3808) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/364d3fa43) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/2b75d3a27) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/2c2a6ee1d)
+- **Bug reports** - BugKit's Mac listener files every report, and reports now reach the Mac through iCloud. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/aa4397d46) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/61eeb4b54)
 
 **[exercise-analyzer](https://github.com/idvorkin/exercise-analyzer)** (iPhone lift tracker and rep counter)
 
 - **iCloud sync** - Sets and workouts reach every device, edits included; recordings save to their own Photos album. [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/eb307c575) [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/dae2c085e) [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/d93a1ef6f)
 - **Watch** - The workout page shows sets grouped by exercise, with the drawings. [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/a857c5182)
+- **Tooling** - SwiftLint and swift-format in the gate; the bug-kit listener files bug reports. [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/40bc0d3bd) [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/c1eb0a934)
 
 **New and smaller**
 
-- **[bug-kit](https://github.com/idvorkin/bug-kit)** (new) - One bug-report library for every iOS app and a Mac listener that files reports; both apps above use it. [<i class="fa fa-github"></i>](https://github.com/idvorkin/bug-kit/commit/789c9df2b) [<i class="fa fa-github"></i>](https://github.com/idvorkin/bug-kit/commit/e89e40b88)
+- **[bug-kit](https://github.com/idvorkin/bug-kit)** (new) - One bug-report library for iOS apps plus a Mac listener; automatic reports, private iCloud delivery, screenshot privacy controls. [<i class="fa fa-github"></i>](https://github.com/idvorkin/bug-kit/commit/789c9df2b) [<i class="fa fa-github"></i>](https://github.com/idvorkin/bug-kit/commit/e89e40b88) [<i class="fa fa-github"></i>](https://github.com/idvorkin/bug-kit/commit/ef127b223) [<i class="fa fa-github"></i>](https://github.com/idvorkin/bug-kit/commit/8ac0bb5f6)
 
 ## Week of 2026-10-04
 
