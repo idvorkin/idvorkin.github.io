@@ -23,7 +23,6 @@ In my dream job, I learn the customer and business needs and focus the team on d
   - Force-multiplying my technical work with AI.
   - Force-multiplying my thinking and strategy work, not just my code.
   - Learning how to test in the non-deterministic AI world.
-  - Scaling myself as an engineering manager with AI.
   - Coaching and training others to use AI.
   - Learning how to make AI usage multiplayer.
 - **Purpose:** I'm making it so grandma can run a personal agent without fear of it doing something stupid.
