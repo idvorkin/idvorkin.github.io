@@ -36,9 +36,9 @@ export function isChangedPage(path: string, changed: string[]): boolean {
   return changed.some((p) => trimSlash(p) === trimSlash(path));
 }
 
-// Icon names must exist in Font Awesome 5: the site's kit (_includes/head.html) is FA5, so FA6-only
-// names (fa-code-compare, fa-file-pen, fa-xmark) render as nothing. Tooltips go on a wrapper, never on
-// the <i>: the kit turns an icon's title into a <span class="sr-only">, which copied banner text includes.
+// Icon names must be in the self-hosted Font Awesome 5 subset (assets/css/vendor/font-awesome-subset.css):
+// any other name, including FA6-only ones (fa-code-compare, fa-file-pen, fa-xmark), renders as nothing.
+// Tooltips go on a wrapper, never on the <i>, so the icon stays decorative.
 const icon = (name: string) => `<i class="fas ${name}"></i>`;
 
 /** Icon-only button that toggles the rendered diff; the diff code loads only on first click. */
