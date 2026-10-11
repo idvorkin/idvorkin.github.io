@@ -2,7 +2,7 @@
 layout: post
 title: "Why a Raccoon Is My Spirit Animal"
 permalink: /spirit-animal
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-character-sheet.webp
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-trash-panda-crow-heart.webp
 tags:
   - how igor ticks
 redirect_from:
@@ -29,7 +29,7 @@ Raccoons are hands-first, puzzle-obsessed and always a little up to something, a
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-{% include blob_image_float_right.html src="blog/raccoon-character-sheet.webp" %}
+{% include blob_image_float_right.html src="blog/raccoon-trash-panda-crow-heart.webp" %}
 
 ## Wet paws, busy paws
 
