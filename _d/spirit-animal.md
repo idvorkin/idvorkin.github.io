@@ -35,7 +35,7 @@ Raccoons are hands-first, puzzle-obsessed and always a little up to something, a
 
 A raccoon understands the world through its paws: its brain spends more of its sensing power on touch than almost any other animal's. My paws have two jobs. In the physical world they make smiles and wonder: cards that change color on command, coins passing through a spectator's hand, [balloons](/balloon), and back in my 30s, juggling fire. That's my [Dealer of Smiles and Wonder](/eulogy#dealer-of-smiles-and-wonder) role. In the virtual world they build: code, tools, and these days a lot of tinkering with AI.
 
-And raccoons washing their food is an old wives' tale. They're not cleaning anything: wetting their paws [sharpens their sense of touch](https://en.wikipedia.org/wiki/Raccoon#Dousing) before they handle their dinner. I'm not big on hand washing either, so I respect that. I wet my paws every morning before I touch the day: 5am, a [gratitude journal](/process-journal), then 20 minutes of meditation. That's my [Emotionally Healthy Human](/eulogy#emotionally-healthy-human) role.
+And raccoons washing their food is an old wives' tale. They're not cleaning anything: wetting their paws [sharpens their sense of touch](https://en.wikipedia.org/wiki/Raccoon#Dousing) before they handle their dinner. I'm not big on hand washing either, so I respect that. I wet my paws every morning before I touch the day: 5am, a [gratitude journal](/process-journal), 20 minutes of meditation, then the gym. Those are my [Emotionally Healthy Human](/eulogy#emotionally-healthy-human) and [Fit Fellow](/eulogy#fit-fellow) roles.
 
 ## No latch left unopened
 
