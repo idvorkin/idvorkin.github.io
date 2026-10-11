@@ -12,10 +12,14 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Week of 2026-10-11](#week-of-2026-10-11)
+  - [New Posts and Rewrites (2026-10-11)](#new-posts-and-rewrites-2026-10-11)
+  - [Infrastructure & CI (2026-10-11)](#infrastructure--ci-2026-10-11)
+  - [chop-conventions (2026-10-11)](#chop-conventions-2026-10-11)
+  - [Other Projects (2026-10-11)](#other-projects-2026-10-11)
 - [Week of 2026-10-04](#week-of-2026-10-04)
   - [New Posts and Rewrites (2026-10-04)](#new-posts-and-rewrites-2026-10-04)
   - [Infrastructure & CI (2026-10-04)](#infrastructure--ci-2026-10-04)
-  - [chop-conventions (2026-10-04)](#chop-conventions-2026-10-04)
   - [Other Projects (2026-10-04)](#other-projects-2026-10-04)
 - [Week of 2026-09-27](#week-of-2026-09-27)
   - [New Posts and Rewrites (2026-09-27)](#new-posts-and-rewrites-2026-09-27)
@@ -232,48 +236,74 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-## Week of 2026-10-04
+## Week of 2026-10-11
 
-_66 commits since the last entry (2026-09-28 to 2026-10-10)_
+_20 commits this week_
 
-### New Posts and Rewrites (2026-10-04)
+### New Posts and Rewrites (2026-10-11)
 
-- **Post-training LLMs (new post!)** - Every method answers two questions: who grades the answer, and what the model should change from one try. ([blog](/ai-post-training#two-questions-explain-every-method)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/43d11e7f3) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/b40233479)
-- **Post-training Agents (new post!)** - How grading and updates change when the model works a forty-turn trajectory instead of writing one reply. ([blog](/ai-post-training-agents#who-grades-an-agent)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/b696bee35)
 - **What's Left in Engineering? (new post!)** - With agents writing the code, two jobs remain: iterate on the job to be done, keep code changeable by agents. ([blog](/whats-left#job-2-keep-the-code-changeable-by-agents)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/a02331764)
-- **If You're Thinking About Suicide (new post!)** - A brain attack is like a heart attack, so call someone now; /suicide is now for the bereaved. ([blog](/thinking-about-suicide)) ([blog](/suicide)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2222c0aa0)
 - **Sleight of Mouth rebuilt** - One coherent argument, with Dilts' diagram replaced by an interactive explorer of the fourteen patterns. ([blog](/sleight-of-mouth#interactive-version)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/253079feb) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/efda88e96) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6ce0e6015)
 - **Affirmations** - A short public page with the four affirmations and how to use them, split from my working notes. ([blog](/affirmations#how-to-use-them)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d9767572d)
-- **Time allocation** - The five buckets stay, with energy flow layered on top and a two-hour weekday ceiling on relationships. ([blog](/time-allocation#where-the-time-goes)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d0b1a3536) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d4445ecfe)
-- **Raccoon redraws** - The 2006 first-date comic with Tori, and the mania raccoon still going at 3 a.m. ([blog](/tori)) ([blog](/mania)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/56a94a613) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/daa2eb843)
-- **The Den #12** - Bless You: Larry gets a mailbox with Seen, Working and Done flags. ([blog](/the-den)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/5415248a5)
-- **Small edits** - The eulogy song plays inline; balloon creations filled in; a missing Enneagram row; Opus releases on the life-in-weeks chart. ([blog](/eulogy)) ([blog](/balloon#some-of-my-creations)) ([blog](/weeks)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d47d39405) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8509706b4) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6cb494b81) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/b5dcedb6f)
+- **Small edits** - The eulogy song plays inline; Opus releases on the life-in-weeks chart. ([blog](/eulogy)) ([blog](/weeks)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d47d39405) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/b5dcedb6f)
 
-### Infrastructure & CI (2026-10-04)
+### Infrastructure & CI (2026-10-11)
 
-- **Link previews and AI label** - Raccoon default preview images, hero images used as previews everywhere; the AI label shrinks to one line. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/299efb9d3) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/024baea0e) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4cf2a63e0) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f604328bc)
-- **Dev banner** - Icons instead of words; Comments toggles annotate mode live, including inside the rich diff. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/7d0daca45) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/83c459a70) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/5caa28647)
+- **Default link previews** - Raccoon default preview images for AI posts and the site; every AI post flagged; Wally gets its own. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/299efb9d3) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/024baea0e) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/82f8dbd8e)
+- **p key** - Jumps between prod and a test server, remembering the test origin per tab; only loopback and tailnet hosts count. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/333ba32af) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/cd2e3ae31)
 
-### chop-conventions (2026-10-04)
+### chop-conventions (2026-10-11)
 
 - **iOS device signing** - Recovering when Xcode loses its account, the shared signing lock, and what a locked device's error looks like. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/8844a5a68) [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/6bc370fa0) [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/093f913ff)
 - **Agent lessons** - What the iOS agent sessions taught, including simctl defaults that can't override keys an app already wrote. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/fff137e6b) [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/665da96ce)
 
-### Other Projects (2026-10-04)
+### Other Projects (2026-10-11)
 
 **[context-grabber](https://github.com/idvorkin/context-grabber)** (iPhone health and context app)
 
-- **Native app** - A Swift app beside the React Native one: Gym Timer, box breathing, Places, and calling Larry. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/89da0163f) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/5a284c561) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/7c4fb3789) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/5daab8f2e) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/d782599a8)
+- **Calling Larry** - The native app gets the Call screen, with call audio and gist uploads. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/d782599a8)
 - **Home screen** - Opens on today with a daily strip, usage left, the eulogy song, and an iPad layout. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/5046a3808) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/364d3fa43) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/2b75d3a27) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/2c2a6ee1d)
 
 **[exercise-analyzer](https://github.com/idvorkin/exercise-analyzer)** (iPhone lift tracker and rep counter)
 
 - **iCloud sync** - Sets and workouts reach every device, edits included; recordings save to their own Photos album. [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/eb307c575) [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/dae2c085e) [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/d93a1ef6f)
-- **iPad and watch** - A Workouts sidebar on the iPad, tap a set to log bell weight, the watch shows sets by exercise. [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/adb45769b) [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/0a6ab954e) [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/a857c5182)
+- **Watch** - The workout page shows sets grouped by exercise, with the drawings. [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/a857c5182)
 
 **New and smaller**
 
 - **[bug-kit](https://github.com/idvorkin/bug-kit)** (new) - One bug-report library for every iOS app and a Mac listener that files reports; both apps above use it. [<i class="fa fa-github"></i>](https://github.com/idvorkin/bug-kit/commit/789c9df2b) [<i class="fa fa-github"></i>](https://github.com/idvorkin/bug-kit/commit/e89e40b88)
+
+## Week of 2026-10-04
+
+_48 commits this week_
+
+### New Posts and Rewrites (2026-10-04)
+
+- **Post-training LLMs (new post!)** - Every method answers two questions: who grades the answer, and what the model should change from one try. ([blog](/ai-post-training#two-questions-explain-every-method)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/43d11e7f3) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/b40233479)
+- **Post-training Agents (new post!)** - How grading and updates change when the model works a forty-turn trajectory instead of writing one reply. ([blog](/ai-post-training-agents#who-grades-an-agent)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/b696bee35)
+- **If You're Thinking About Suicide (new post!)** - A brain attack is like a heart attack, so call someone now; /suicide is now for the bereaved. ([blog](/thinking-about-suicide)) ([blog](/suicide)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2222c0aa0)
+- **Time allocation** - The five buckets stay, with energy flow layered on top and a two-hour weekday ceiling on relationships. ([blog](/time-allocation#where-the-time-goes)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d0b1a3536) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d4445ecfe)
+- **Raccoon redraws** - The 2006 first-date comic with Tori, and the mania raccoon still going at 3 a.m. ([blog](/tori)) ([blog](/mania)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/56a94a613) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/daa2eb843)
+- **The Den #12** - Bless You: Larry gets a mailbox with Seen, Working and Done flags. ([blog](/the-den)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/5415248a5)
+- **Small edits** - Balloon creations filled in; a missing Enneagram row. ([blog](/balloon#some-of-my-creations)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8509706b4) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6cb494b81)
+
+### Infrastructure & CI (2026-10-04)
+
+- **Link previews and AI label** - Hero images become link previews on posts that had none; the AI label shrinks to one line. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4cf2a63e0) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f604328bc)
+- **Dev banner** - Icons instead of words; Comments toggles annotate mode live, including inside the rich diff. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/7d0daca45) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/83c459a70) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/5caa28647)
+
+### Other Projects (2026-10-04)
+
+**[context-grabber](https://github.com/idvorkin/context-grabber)** (iPhone health and context app)
+
+- **Native app** - A Swift app beside the React Native one: Gym Timer, box breathing, and Places. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/89da0163f) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/5a284c561) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/7c4fb3789) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/5daab8f2e)
+
+**[exercise-analyzer](https://github.com/idvorkin/exercise-analyzer)** (iPhone lift tracker and rep counter)
+
+- **iPad and bell weight** - A Workouts sidebar on the iPad; tap a set to log bell weight, and later sets carry it. [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/adb45769b) [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/0a6ab954e)
+
+**New and smaller**
+
 - **[window-sweaters](https://github.com/idvorkin/window-sweaters)** - Knitted window borders on the Mac, now with a raccoon that visits the focused window. [<i class="fa fa-github"></i>](https://github.com/idvorkin/window-sweaters/commit/f1f514be5)
 - **[Settings](https://github.com/idvorkin/Settings)** - caff becomes awake and names busy agents; pick-links lists commands to run; faster zsh startup. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/fa2c5a0cf) [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/e52a3476d) [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/aa6407231)
 
