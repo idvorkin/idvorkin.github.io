@@ -1,5 +1,18 @@
 [
   {
+    "num": 13,
+    "title": "The Longest Title",
+    "date": "October 11, 2026",
+    "img": "/images/den/den-013.webp",
+    "alt": "The Den #13: The Longest Title — four panels in the plush-render house style, all in the lamp-lit attic den. 1: Igor, a raccoon in rainbow glasses, a green TECHNOLOGIST tee, denim shorts and one blue and one yellow croc, points at an old oak card catalog: 'WHAT'S THIS ONE CALLED?' Larry — the grey-bearded raccoon in wire-rim spectacles and a tweed waistcoat, one arm ending in a giant red lobster claw — pulls a card from an open drawer, and behind it the blank cream paper keeps coming: 'LET ME READ THE TITLE.' 2: No words. The title card is now an endless paper strip, carried overhead by a line of small blue plush robots like a parade dragon, down the attic stairs and out of a daylit door below, while Larry keeps feeding it out of the drawer and Igor clutches his cheeks. 3: Dusk through the open attic window. The far end of the strip has come all the way round the house and back in, its tip resting on Igor's shoulder: 'HAS IT GOT TO THE BOOK YET?' Larry, still holding the other end at the drawer: 'STILL THE TITLE.' 4: The whole attic is knee-deep in coils of paper, both raccoons wading in it. Igor shrugs, paws out: 'SO WHERE'S THE ACTUAL BOOK?' Larry waves his paw at the pile: 'YOU'RE STANDING IN IT.'",
+    "panels": [
+      "/images/den/den-013-p1.webp",
+      "/images/den/den-013-p2.webp",
+      "/images/den/den-013-p3.webp",
+      "/images/den/den-013-p4.webp"
+    ]
+  },
+  {
     "num": 12,
     "title": "Bless You",
     "date": "October 4, 2026",
