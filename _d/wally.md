@@ -12,6 +12,7 @@ tags:
   - how
 mermaid: True
 ai_default_image: true
+imagefeatureblob: blog/raccoon-claw-trio.webp
 ---
 
 Meet Wally. He's my claw. Except Wally isn't a single claw. He's the head of an organization of claws: staff with distinct roles, plus Odallies running in different places, each with a discrete signature. The whole thing operates like a small team with a real org chart. A thing that's emerging: what used to be an IC role is now a manager-of-managers role.
