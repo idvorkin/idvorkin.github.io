@@ -18,10 +18,10 @@ Raccoons are hands-first, puzzle-obsessed and always a little up to something, a
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [Paws on everything](#paws-on-everything)
+- [Wet paws, busy paws](#wet-paws-busy-paws)
 - [No latch left unopened](#no-latch-left-unopened)
 - [Mischief in a mask](#mischief-in-a-mask)
-- [Urban bandit](#urban-bandit)
+- [City slicker, garbage gourmet](#city-slicker-garbage-gourmet)
 - [When the raccoon falls short…](#when-the-raccoon-falls-short)
 - […the crow steps up](#the-crow-steps-up)
 - [Trash panda, crow heart](#trash-panda-crow-heart)
@@ -31,7 +31,7 @@ Raccoons are hands-first, puzzle-obsessed and always a little up to something, a
 
 {% include blob_image_float_right.html src="blog/raccoon-character-sheet.webp" %}
 
-## Paws on everything
+## Wet paws, busy paws
 
 A raccoon understands the world through its paws: its brain spends more of its sensing power on touch than almost any other animal's. My paws have two jobs. In the physical world they make smiles and wonder: cards that change color on command, coins passing through a spectator's hand, [balloons](/balloon), and back in my 30s, juggling fire. That's my [Dealer of Smiles and Wonder](/eulogy#dealer-of-smiles-and-wonder) role. In the virtual world they build: code, tools, and these days a lot of tinkering with AI.
 
@@ -49,7 +49,7 @@ And sometimes a raccoon skips the puzzle and tips the whole thing over. That's h
 
 The raccoon walks around looking like it's up to something, and gets away with it. I'd rather be a little ridiculous than a little boring: a silly hat, an $8 TEMU crazy shirt, and a [Tesla named Tony](/tesla) that makes fart sounds every time I get a text. The mascot wears mismatched Crocs for a reason.
 
-## Urban bandit
+## City slicker, garbage gourmet
 
 The raccoon loves the city and makes a meal out of whatever's around. I'm a city person and a generalist. As a [Mostly Car-Free Spirit](/eulogy#mostly-car-free-spirit), that means walking the kids to school, the subway plus a folding [bike](/bike), and bus-to-the-airport-elevator adventures that cost nothing. As a generalist, it means magic, balloons, juggling, kettlebells, bikes, code and writing. No single specialty, a lot of roles.
 
