@@ -672,53 +672,44 @@ _7 commits this week_
 
 ### AI Inference: Why Checking Beats Generating
 
-**[/ai-inference#the-model-matters-moe-speculative-decoding-smaller-models](/ai-inference#the-model-matters-moe-speculative-decoding-smaller-models)** — the speculative-decoding bullet got a sharper mechanism. The draft/verify asymmetry: verifying a whole batch of draft tokens streams the weights out of memory _once_ — about the cost of generating a single token — so a draft model that's usually right nets **~2-3 accepted tokens per expensive big-model pass**, wrong guesses just get thrown away. Output stays provably identical to the big model alone; pure speedup, not a quality trade. New link to [salmanq.com's writeup](https://www.salmanq.com/blog/speculative-decoding/) on why checking beats generating, alongside the existing bentoml explainer. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/725a54cab)
+- **Speculative decoding** - Verifying a batch of draft tokens costs about one generated token, so a good draft model speeds output without changing it. ([blog](/ai-inference#the-model-matters-moe-speculative-decoding-smaller-models)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/725a54cab)
 
 ### The Clown's Prayer
 
-**[/joy#the-clowns-prayer](/joy#the-clowns-prayer)** — new Appendix section on the Smiles, Joy and Wonder page: the full text of "The Clown's Prayer" ("When you made My people smile, you made Me smile") as a verse blockquote. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0d0165fe2)
+- **The Clown's Prayer** - New appendix on the Smiles, Joy and Wonder page with the full prayer as a verse blockquote. ([blog](/joy#the-clowns-prayer)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0d0165fe2)
 
 ### Infrastructure & CI (2026-07-27)
 
-- **Tag normalization** — folded misspelled/duplicate frontmatter tags into canonical forms across 9 posts: misspelled `accomplishment` and `health`, `emotional-intelligence`→`emotional intelligence`, `how-igor-ticks`→`how igor ticks`, `mental-health`/`mental health`→`mental health`. Frontmatter only, no prose changed. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/925861877)
-- **ImgBot** — recompressed 6 images/screenshots (largest: `todo-enjoy-initial.png` 702KB→543KB). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/aee53ca44)
+- **Tags and images** - Misspelled and duplicate frontmatter tags folded into canonical forms; ImgBot recompressed images. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/925861877) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/aee53ca44)
 
 ### chop-conventions (2026-07-27)
 
-Ten fixes, several closing security gaps found on live review:
-
-- **Telegram delivery attribution** — after a 2026-07-22 incident where inbound rows were marked `delivered=1` but actually claimed by a different session's bridge (N bots racing on one `inbound.db`), `server.ts` now stamps `delivered_to` (session id, else `hostname:pid:starttime`) on every claim, and `/doctor` gained a DELIVERY check that catches multi-bridge and resumed-without-`--channels` silent-loss modes. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/9aa45b572)
-- **Token leaks plugged** — `image-explore`'s gist-publish script stopped putting the `gh` token in clone-URL argv (readable via `/proc`) and leaving it in `/tmp/.../.git/config` on any failed step [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/ebfd05511); `gen-image` stopped passing `GOOGLE_API_KEY` as a curl `?key=...` query param (argv-visible for the request duration), switching to header auth via a mode-600 curl config file. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/1f440a795)
-- **`up-to-date` force-align bug** — `can_force_align` was computed from the wrong branch's `git cherry` batch, evaluating `True` whenever main was ahead for _any_ reason (including genuinely unique local commits) whenever HEAD was on the default branch. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/716c48ef6)
-- **Cost-impact pricing gap** — current-gen models (Fable 5, Opus 4.8/4.7, Sonnet 5) were missing from `PRICING`, so their spend silently landed in `unknown_models` and dropped out of every dollar total on machines running them. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/1e1c2aa99)
-- Also: `pr-hygiene` now counts author thread replies as responses in `human_last_word`, `bulk` parses bd's real dependency schema, and a Playwright bundled-Chromium codec gotcha got documented in the global CLAUDE.md fragment. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/d603fea4f)
+- **Telegram delivery attribution** - Each inbound claim records which session took it; the doctor flags multiple bridges racing on one queue. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/9aa45b572)
+- **Token leaks plugged** - image-explore keeps the gh token out of argv and git config; gen-image sends its API key in a header. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/ebfd05511) [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/1f440a795)
+- **Fixes** - up-to-date force-align checks the right branch; cost-impact prices current models; pr-hygiene, bulk and a Playwright codec gotcha. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/716c48ef6) [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/1e1c2aa99) [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/d603fea4f)
 
 ### Other Projects (2026-07-27)
 
 **[magic-monitor](https://github.com/idvorkin/magic-monitor)** (recording app)
 
-A 4-PR reliability sweep closed out a stack of intermittent bugs:
-
-- **H1 — the auto-select race**: a fire-and-forget camera-enumeration callback could overwrite the browser-chosen camera with first-in-list and silently persist it forever (pinning OBS/virtual cams). Startup is now one sequenced, cancellable path. [<i class="fa fa-github"></i>](https://github.com/idvorkin/magic-monitor/commit/27511b37e)
-- **H5 — IndexedDB aborts used to hang forever**: a quota-exceeded commit-time abort fired only `onabort`, which nothing wired, so the save promise never settled and the recorder wedged permanently. One `settleTransaction` helper now covers all 13 transaction sites. [<i class="fa fa-github"></i>](https://github.com/idvorkin/magic-monitor/commit/bdbce9bc9)
-- **M2 — card detection survives inference errors**: a single rejected `detect()` used to kill the detection loop forever while the button still said ON; errors now surface as `detectError` and the loop keeps running. [<i class="fa fa-github"></i>](https://github.com/idvorkin/magic-monitor/commit/bdbce9bc9)
-- Final serial E2E run: 27 passed / 2 skipped / 0 failed / zero flaky — "the cleanest run of the sweep."
+- **Camera startup** - One sequenced path, so the browser-chosen camera is no longer overwritten. [<i class="fa fa-github"></i>](https://github.com/idvorkin/magic-monitor/commit/27511b37e)
+- **Saves and detection** - Aborted IndexedDB saves settle instead of hanging; card detection survives inference errors. [<i class="fa fa-github"></i>](https://github.com/idvorkin/magic-monitor/commit/bdbce9bc9)
 
 **[swing-analyzer](https://github.com/idvorkin-ai-tools/swing-analyzer)** (golf swing analysis)
 
-Parallel reliability push: stopped persisting raw per-frame `ImageData` to IndexedDB (~77KB/frame, with a migration for existing bloated records), added the first real upload-journey E2E test gating CI, fixed video-switch races, and measured real video fps instead of assuming 30. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/swing-analyzer/commit/a22086987)
+- **Reliability** - No raw frames in IndexedDB, an upload E2E test gating CI, video-switch races fixed, real fps measured. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/swing-analyzer/commit/a22086987)
 
 **[omnifocus_cli](https://github.com/idvorkin/omnifocus_cli)** (task CLI)
 
-61 of 105 tests had silently drifted from production (mocking methods a refactor had already moved off). Fixing them surfaced three real bugs: the default Groq model had been decommissioned (404s silently returning unshortened names), `max_tokens=100` was too small for a reasoning model's hidden trace and starved the actual answer, and `reasoning_effort` needed to be gated per-model (some 400 if it's sent at all). [<i class="fa fa-github"></i>](https://github.com/idvorkin/omnifocus_cli/commit/ba0b70713)
+- **Tests realigned** - Drifted tests fixed, surfacing a retired Groq model, a too-small token cap and per-model reasoning settings. [<i class="fa fa-github"></i>](https://github.com/idvorkin/omnifocus_cli/commit/ba0b70713)
 
 **[airpods-mic-explainer](https://idvorkin-ai-tools.github.io/airpods-mic-explainer/)** (case study) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/airpods-mic-explainer)
 
-New explainer: a flashcard PWA's on-device speech recognition produced garbage on a Mac whose default mic was Bluetooth AirPods, near-perfect minutes later on a USB mic. Walks the forensics — waveforms, two ASR models agreeing the audio was fragments, a timeline ruling out timing, and the signal chain that ate the words (AirPods DSP → Bluetooth HFP → browser noise suppression). [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/airpods-mic-explainer/commit/a8d857232)
+- **New explainer** - Why on-device speech recognition failed on AirPods but worked on a USB mic. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/airpods-mic-explainer/commit/a8d857232)
 
 **[clowns-explainer](https://idvorkin-ai-tools.github.io/clowns-explainer/)** (dark single-page site) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/clowns-explainer)
 
-Why almost every human culture invented clowns: the licensed pressure valve, the near-universal lineage (court jester, commedia dell'arte, circus/Grimaldi, sacred clown, trickster, carnival), and the hospital-clown evidence. Companion to this week's [/joy](/joy#the-clowns-prayer) appendix. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/clowns-explainer/commit/ddeac4c48)
+- **New explainer** - Why nearly every culture invented clowns, their lineage, and hospital-clown evidence. ([blog](/joy#the-clowns-prayer)) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/clowns-explainer/commit/ddeac4c48)
 
 ## Week of 2026-07-20
 
@@ -726,57 +717,44 @@ _26 commits this week_
 
 ### The Performer's Playbook (new post)
 
-**[/performer-playbook](/performer-playbook)** — the tactical companion to [/joy](/joy): nine rules Igor noticed he runs on autopilot doing magic for one kid or a whole room, finally written down. Aim for the impossible moment, not the trick; perform for the group, not the person (the glance between spectators is "the wonder doubling"); give the moment room instead of filling the silence; make the spectator the hero of their own trick; let your own delight cue theirs ("Robert-Houdin said a magician is an actor playing the part of a magician; I'm playing the part of a guy who can't believe this is happening either"); engineer a peak and a clean ending; keep the story simple enough to retell at dinner ("He signed my card and then it was inside a lemon" survives — five conditions and a diagram doesn't); disarm before you astonish, since nobody feels wonder while braced to be embarrassed; small self, big generosity. Grounded in three borrowed frameworks: Keltner/Haidt's awe = vastness + accommodation, Brooks' enjoyment = pleasure + people + memory, and Kahneman's peak-end rule. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e4561175b)
+- **The Performer's Playbook (new post!)** - Nine rules for magic performance: aim for the impossible moment, make the spectator the hero, engineer a peak and clean ending. ([blog](/performer-playbook)) ([blog](/joy)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e4561175b)
 
 ### Sleight of Mouth: The Full Book, Fleshed Out
 
-**[/sleight-of-mouth](/sleight-of-mouth)** grew from 1,678 to 2,984 words after Igor's review note ("research this book/content and flesh out this post, don't erase these ideas") sent Claude back to Robert Dilts' source material — every thin one-liner and bare bullet list got real prose and worked examples, all fourteen original patterns preserved:
-
-- **Punctuation & Repunctuation** — the cryptic one-liner became the actual concept plus the classic comma-placement example.
-- **Applying the patterns as a system** — three bare bullets became a worked example running one of Igor's own limiting beliefs ("my back has hurt forever") through ten of the fourteen patterns, plus the thought-virus concept, cross-linked to [/physical-pain](/physical-pain).
-- **One-word reframes** — reframed as positive→neutral→negative slides (Responsible → Stable → Rigid; Friendly → Nice → Naive) with the takeaway: "whoever gets to pick the word gets to pick the meaning."
-- **Second position** — named all three perceptual positions (mine, theirs, the observer's) with what each does; "most stuck arguments are two people jammed in first position, each certain the other is just wrong."
-- **Chunking down** — "I'm ugly" chunked to: ugly _which_ part, ugly to _whom_ — "the word can't survive the questions."
-- **Finding Isomorphisms** — fixed the typo heading and explained why the borrowed-domain metaphor smuggles in a reframe the direct statement fights off.
-
-[<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3c04d09f8) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2dd0f438f)
+- **Fleshed out from Dilts** - All fourteen patterns kept, with worked examples, perceptual positions, and one limiting belief run through ten patterns. ([blog](/sleight-of-mouth)) ([blog](/physical-pain)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3c04d09f8) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2dd0f438f)
 
 ### Scandinavia Trip Wrap-Up + Discernment Horizon
 
-**[/timeoff-2026-07](/timeoff-2026-07#how-it-actually-went)** — the fjord leg got corrected from a planned drive to what actually happened: a fjord cruise up the Nærøyfjord from Aurland to Gudvangen (the Viking town), then a bus to Voss — "walls of rock straight out of the water, waterfalls off the top, a scale that shut the whole boat up." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3f251b724) Oslo's forward-looking itinerary was swapped for what actually happened: Grünerløkka morning, the new Deichman library, an Oslofjord boat tour, the Barcode towers, the Opera House roof. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/77d844f1b) Per Igor's PR review, two durable frameworks — role re-stacking and the daily-review vegetating/meditation learnings — moved out of the trip-specific post into the evergreen **[/timeoff](/timeoff#get-real-what-should-i-do)**, since they're not specific to this trip. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6e083cfd1)
-
-**[/ai-native-vocab#discernment-horizon](/ai-native-vocab#discernment-horizon)** — new glossary entry from Steve Yegge's [The Flat Curve Society](https://steve-yegge.medium.com/the-flat-curve-society-36c8b01eb33b): the point past which you can't tell whether an AI is right, because checking the work is itself beyond you ("Superhuman means unverifiable"). Paired with Yegge's **Demand Horizon** — set by the hardest problem you actually bring, since easy problems never stretch a smarter model enough to show the gap. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2b5aa7009)
+- **Trip recap** - Fjord leg became a Nærøyfjord cruise to Voss; Oslo shows what we did; role and review learnings moved to evergreen time off. ([blog](/timeoff-2026-07#how-it-actually-went)) ([blog](/timeoff#get-real-what-should-i-do)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3f251b724) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/77d844f1b) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6e083cfd1)
+- **Discernment horizon** - New glossary entry from Yegge: past this point you cannot check whether an AI is right; paired with demand horizon. ([blog](/ai-native-vocab#discernment-horizon)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2b5aa7009)
 
 ### Content Quality Audit: Tier-3/Tier-4 Sweep
 
-A multi-PR quality pass swept dozens of posts for the stuff that accumulates over a decade of writing — broken openers, dead links, empty scaffold headers, orphaned posts, typos:
-
-- **Tier-3 post openers** — fixed openers across `/42`, `/first-things-first`, `/win-win`, `/first-understand`, `/ai-image`, `/balance`, `/breath`, `/meta`, `/frog`, `/negotiate`, `/lonely`, `/osx`, `/planning`, `/psychic-shadows`, `/shoulder-pain`, `/like-switch`, `/trusts`, `/comp`, `/screencast`, and `/smilebox` — garbled sentences, un-attributed quotes voiced as Igor's own words, duplicated paragraphs, and `ai-slop` includes sitting above the opening paragraph (which silently breaks Jekyll's feed/social excerpt). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8023274bf)
-- **Tier-4 sweeps by topic** — [7 Habits series](https://github.com/idvorkin/idvorkin.github.io/commit/b76d2e280), [Health & body](https://github.com/idvorkin/idvorkin.github.io/commit/ae51190cb) (owned the made-up-numbers table in `/terzepatide`, folded a HIIT notes-dump into prose), [Time-off journals](https://github.com/idvorkin/idvorkin.github.io/commit/b7f22ace4) (nine old trip logs from 2020–2024, deduped headers, resolved leftover TBD checkboxes), [Emotional & spiritual](https://github.com/idvorkin/idvorkin.github.io/commit/b997020c0) (rescued `/maybe` and `/suicide` from being orphan pages by adding inbound links from `/depression`, `/mania`, `/mental-pain`, `/death`), and [Work & productivity](https://github.com/idvorkin/idvorkin.github.io/commit/81ee7794f).
-- **Tech notes** — `/vlc` cut from 143 lines of stale detail; `pysrc/brython_runner_passage.py` and `pysrc/html_snjb.py` doc comments cleaned up. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/839e2cb52)
-- **Post-merge CodeRabbit follow-ups** — promoted the seven 7-Habits chapter headings from h3 to h2 (they were the post's only headings and had no h2 parent), hyphenated "win-win" in visible link text, framed the "thousand wishes" line in `/42` as an attributed saying rather than a bare quote. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/27601f1f9)
+- **Post openers** - Garbled openers, unattributed quotes, duplicate paragraphs and misplaced AI labels fixed across twenty posts. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8023274bf)
+- **Topic sweeps** - 7 Habits, health, time-off journals, emotional and spiritual (orphan pages linked), work and productivity. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/b76d2e280) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/ae51190cb) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/b7f22ace4) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/b997020c0) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/81ee7794f)
+- **Follow-ups** - /vlc trimmed, pysrc doc comments cleaned, 7 Habits chapter headings promoted, link text fixes. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/839e2cb52) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/27601f1f9)
 
 ### Infrastructure & CI (2026-07-20)
 
-**Changelog backfill** — filled the two-week coverage gap between the 2026-06-08 and 2026-05-18 entries (weeks of 2026-06-01 and 2026-05-25), and folded three orphaned items into the existing Week of 2026-06-29 entry as a new "Life & Health Notes" section. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1ca78f15c)
+- **Changelog backfill** - Weeks of 2026-06-01 and 2026-05-25 added; Life and Health Notes added to 2026-06-29. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1ca78f15c)
 
 ### Other Projects (2026-07-20)
 
 **[yegge-field-map](https://idvorkin-ai-tools.github.io/yegge-field-map/)** (dark field map) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/yegge-field-map)
 
-New explainer site mapping Steve Yegge's writing — one page per essay, best lines quoted, sources pinned. Launched with one page per Medium AI article, then expanded with "the Beads saga" (4 posts) and "The Future of Coding Agents." [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/yegge-field-map/commit/dc1630990)
+- **New field map** - One page per Steve Yegge essay, plus the Beads saga and The Future of Coding Agents. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/yegge-field-map/commit/dc1630990)
 
 **[guideway-field-map](https://idvorkin-ai-tools.github.io/guideway-field-map/)** (dark field map) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/guideway-field-map)
 
-"Rails, Ropes & Rack" — a fixed-guideway field map spanning gondolas to maglev. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/guideway-field-map/commit/6a2d1e726)
+- **New field map** - Fixed-guideway transport from gondolas to maglev. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/guideway-field-map/commit/6a2d1e726)
 
 **[arthur-brooks-field-map](https://idvorkin-ai-tools.github.io/arthur-brooks-field-map/)** (dark explainer site) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/arthur-brooks-field-map)
 
-An 8-page dark explainer site on Arthur Brooks, whose pleasure/enjoyment formula threaded through last week's posts. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/arthur-brooks-field-map/commit/3e4fd9996)
+- **New field map** - An explainer site on Arthur Brooks and his pleasure and enjoyment formula. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/arthur-brooks-field-map/commit/3e4fd9996)
 
 **[Scandinavian Whirlwind 2026](https://idvorkin-ai-tools.github.io/scandinavia-2026/)** (trip site) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026)
 
-Kept growing as the trip wrapped: cruise-tourism/overtourism section for the Bergen explainer, a "Locals vs. summer crowds" callout added to all 8 city stops, six Amsterdam deep-dives (canals, VOC, below sea level, tulip mania, canal houses, curiosities), and 5 colonial-history deep-dives plus a Dutch Wars explainer. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/73204eef6)
+- **More deep dives** - Overtourism, locals versus summer crowds per city, Amsterdam deep dives, colonial history and the Dutch Wars. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/73204eef6)
 
 ## Week of 2026-07-13
 
@@ -784,102 +762,72 @@ _9 commits this week_
 
 ### Pleasure vs Enjoyment: Brooks' Formula Threaded Through Three Posts
 
-The intellectual through-line of the week — Arthur Brooks' **Enjoyment = Pleasure + People + Memory** formula got a deep-dive and then got applied everywhere:
-
-- **[Pleasure vs Enjoyment, sourced](/build-life-you-want#pleasure-vs-enjoyment)** — pleasure runs on the dopamine circuit and slides toward compulsion on its own ("if your goal is pleasure, you don't arrive at happiness — you wind up in rehab," Brooks on Tim Ferriss #692); enjoyment adds **People** (the beer-ad tell: "if you're doing it alone, you're probably doing it wrong") and **Memory** — six concrete levers (be present, make it novel, make it an occasion, capture a little on purpose, engineer the peak-end, retell it). Two honest caveats added: the triune-brain framing is metaphor not neuroanatomy, and the pleasure/enjoyment split predates Brooks — Csíkszentmihályi drew it in _Flow_ (1990). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2bae59602)
-- **[You Don't Have to Quit Consuming — Upgrade It](/produce-consume#you-dont-have-to-quit-consuming--upgrade-it)** — a redemptive turn in the consumption-trap post: you don't need to nuke every guilty pleasure, just add what's missing. "Solitary and memoryless is pleasure — the trap. Shared and remembered is enjoyment. Same two hours of TV; wildly different outcome for the person you are next week." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/901e6078c)
-- **[/happy refactored](/happy)** — pure structural cleanup (no new ideas): headings promoted to match blog convention, the post reordered into a clean arc (define → three types → enjoyment → equations → pursuit → the three selves + practices → moments/idle-loop/mood), duplicate content deduped, and the old "Maximize Enjoyment" practices folded under **[The Three of You](/happy#the-three-of-you)** so Anticipate/Savor/Reminisce map onto the future/experiencing/remembering selves. Savor now spells out the memory-encoding mechanics. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0bdde53d8) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/16ed118ec)
-- **Peak-end link consolidated** — the Kahneman peak-end cross-link across the site now points to the canonical `/balance` write-up instead of `/happy`. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/fad8ae2d9)
+- **Pleasure vs enjoyment, sourced** - Pleasure slides toward compulsion; enjoyment adds people and memory, with six levers and honest caveats. ([blog](/build-life-you-want#pleasure-vs-enjoyment)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2bae59602)
+- **Upgrade consuming** - No need to quit guilty pleasures; make them shared and remembered. ([blog](/produce-consume#you-dont-have-to-quit-consuming--upgrade-it)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/901e6078c)
+- **/happy refactored** - Reordered into one arc; savoring practices mapped onto the three selves. ([blog](/happy)) ([blog](/happy#the-three-of-you)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0bdde53d8) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/16ed118ec)
+- **Peak-end link** - Site-wide peak-end links now point to /balance. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/fad8ae2d9)
 
 ### Scandinavia Trip: Oslo Train Bender + Diet Learnings
 
-**[/timeoff-2026-07](/timeoff-2026-07#how-it-actually-went)** — the trip log kept filling in:
-
-- **Reykjavík + Stockholm memories** — an 8°C cold plunge into 40/42/44°C pools fed straight from the ocean, a 5am kettlebell session beaten by rain, Skansen's in-character silversmith raising a vase from a flat disk over a wood fire, Amelia out-prepping Igor with a spare phone battery, and a near-ejection from a Stockholm Greek Orthodox church for doing magic in the pews — met with a Viktor Frankl beat on the stimulus-response gap. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/704a95b18)
-- **🚂 The train to Oslo** — confession: on the six-hour Stockholm→Oslo train, while the kids watched TV, Igor went on a tech bender and built the entire [Scandinavian Whirlwind explainer site](https://idvorkin-ai-tools.github.io/scandinavia-2026/) in one sitting — "at least it was building, not scrolling." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/85e1bb83c)
-- **🤔 Unexpected realizations** — LinkedIn stayed off the [work phone split](/maybe#the-second-phone) but Igor's thumb kept opening it anyway on autopilot; locking it out led straight back to the login page "like the habit walked me there on its own" — an open question about which part of the [habit loop](/habits#habit-model) (cue, craving, response, reward) still fires with the reward gone. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/85e1bb83c)
-- **Restaurant-diet learnings folded into evergreen [/timeoff](/timeoff#where-to-eat)** — eating out past 45 isn't worth it ("my gut can't handle the grease"); book a kitchen and cook plain grocery-store food instead; skip the hotel breakfast spread but the motel breakfast is fine — modest enough that self-control holds. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0e0d3fd91)
+- **Reykjavík and Stockholm** - Ocean-fed pools, a rainy dawn kettlebell session, Skansen's silversmith, and magic in a Stockholm church pew. ([blog](/timeoff-2026-07#how-it-actually-went)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/704a95b18)
+- **Train to Oslo and habits** - The trip site built on the train; a phone habit that fires with the reward gone. ([blog](/maybe#the-second-phone)) ([blog](/habits#habit-model)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/85e1bb83c)
+- **Where to eat** - Skip restaurants, book a kitchen and cook plain grocery food. ([blog](/timeoff#where-to-eat)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0e0d3fd91)
 
 ### Isometrics and Tendon Health
 
-**[/physical-pain — Isometrics section](/physical-pain#isometrics-how-to-load-a-tendon-without-moving-the-joint)** — answers the open question left by "The Tendon Problem": how do you load a tendon that can't warn you when you're overloading it? Overcoming vs. yielding isometrics; Keith Baar's load × time-under-tension research on collagen synthesis; Ebonie Rio's finding that a single bout of heavy isometric holds cut tendon pain nearly 7 points on a 0-10 scale for ~45 minutes. Baar's protocol: ~30-second holds, ~4 reps, 6+ hours between sessions, 15g gelatin + vitamin C 30-60 minutes before loading (roughly doubled collagen-synthesis markers in his 2016 study). Flagged honestly: the analgesia and core load-drives-adaptation principle are solid; the exact hold length, spacing, and dosing are emerging science. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/15651e441)
+- **Isometrics** - How to load a tendon without moving the joint: overcoming versus yielding holds, Baar's protocol, and which parts are emerging science. ([blog](/physical-pain#isometrics-how-to-load-a-tendon-without-moving-the-joint)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/15651e441)
 
 ### Other Projects (2026-07-13)
 
 **[Scandinavian Whirlwind 2026](https://idvorkin-ai-tools.github.io/scandinavia-2026/)** (trip site) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026)
 
-The tech-bender site keeps growing — 30 commits added ~20 new explainers plus an atlas index organizing all of them into Cities & Places, War Context Packs, How the Nordics Work, Nordic Culture & People, and a cross-cutting Rabbit Holes bucket:
-
-- **Rabbit holes** — Janteloven (Law of Jante), the Sámi people, why Norway said no to the EU twice, Scandinavian design, the Nordic prison paradox, Finnish sauna culture, why Iceland has no surnames, Nordic social trust, Flow (Csíkszentmihályi), the science of awe and wonder — later expanded into a 9-point "instructions for the performer" playbook cross-linking history-of-magic and flow-state. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/cfc8a37a5)
-- **Performance-history deep dives** — short histories of the circus, ventriloquism, puppetry, mime and physical comedy, busking and street performance, and clowning — plus balloon twisting and the history of magic (Robert-Houdin). [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/45ec2e7dd)
-- **Seven Deadly Sins & the Three Dragons** — traces Evagrius' eight logismoi through Cassian, Gregory's seven, Aquinas' capital vices, and Dante's terraces, then maps the seven onto Igor's Three Dragons (Entropy, Squander, Scarcity) as a weekly diagnostic — honest about the clean fits vs. the stretches. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/09bbaf3a4)
-- **Parenting: encouraging curiosity in a teenager** — Self-Determination Theory, the overjustification effect, Loewenstein's information-gap theory, Dweck's praise research, and a nine-move practical toolkit. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/ae94185c7)
-- **Fjords explainer expanded** — hanging valleys as the waterfall mechanism, orographic rainfall + fjell snowmelt, the May–July seasonal peak, named falls (Seven Sisters, Vøringsfossen), and fjords elsewhere in the world (NZ Fiordland, Chilean Patagonia, Greenland's Scoresby Sound, Scotland's sea lochs). [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/3aa08c5dc)
+- **Atlas and rabbit holes** - An atlas index, Nordic culture rabbit holes, performance histories, and a performer playbook. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/cfc8a37a5) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/45ec2e7dd)
+- **Sins and parenting** - Seven Deadly Sins mapped onto the Three Dragons; encouraging curiosity in a teenager. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/09bbaf3a4) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/ae94185c7)
+- **Fjords expanded** - Why fjords have waterfalls, the seasonal peak, named falls, and fjords elsewhere. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/3aa08c5dc)
 
 ## Week of 2026-07-06
 
 _39 commits this week_
 
-_Confession: I built most of this week's blitz on a 6-hour train ride across Scandinavia — a break from the vacation, while the kids watched TV._
-
 ### Bad News. Maybe Not. (new post!)
 
-**[/maybe](/maybe)** — a new post on the "good luck, bad luck, who knows?" reframe. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e355c3979)
-
-Opens with the Taoist farmer parable — horse runs away ("terrible luck!"), returns leading a wild herd ("wonderful!"), the son breaks his leg taming one, then the army conscripts every able-bodied young man for a war most won't return from and passes over the son. Every verdict gets the same shrug: "Maybe." Then five times Igor called it wrong in his own life:
-
-- **The latex allergy** — ended bare-hand balloon twisting, forced leather gloves, which don't squeak against the balloons — so now he can perform anywhere without the rubbery screech announcing him first.
-- **The shoulder** — a Turkish-get-up tweak exposed years of sloppy form and forced a ground-up kettlebell rebuild.
-- **The second phone** — he dreaded air-gapping work onto a second device; on vacation it became the spare he hands Amelia when her battery dies.
-- **Amazon** — a bad-fit team and a not-great review lit the fire that produced offers from Facebook, Google, Zillow, and Indeed — and six-plus great years at Facebook.
-- **Mental breakdown in his thirties** — the worst he's ever felt, but it's what built the whole operating system he runs on now: sleep-as-sacred, the emotional-health habits, the [7 Habits](/7h-concepts), and the [eulogy](/eulogy).
-
-"I still panic first, but I've been wrong so many times about which turns were good and which were bad that I wish I could remember you never can tell." A raccoon-shrug header illustration was added and repositioned below the TOC. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/412e173a3)
+- **Bad News. Maybe Not. (new post!)** - The Taoist farmer's maybe, then five turns in my life I called wrong, with a raccoon-shrug header. ([blog](/maybe)) ([blog](/7h-concepts)) ([blog](/eulogy)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e355c3979) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/412e173a3)
 
 ### Time Off: Sacrifice Identity for Consumption (2026-07-06)
 
-The intellectual spine of the week — one epigraph threaded through three posts, plus a durable role re-stack in the evergreen essay:
-
-- **"When you sacrifice identity for consumption, you end up with neither."** New epigraph added to the evergreen [/time-off](/time-off), the [Scandinavia trip post](/timeoff-2026-07), and [/produce-consume](/produce-consume) — vegetating _feels_ like rest but quietly starves the roles that make you _you_. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/920b9f567)
-- **[Re-stack your roles](/time-off#re-stack-your-roles)** — new section sorting roles into three honest tiers: **Non-negotiables** (Physical + Emotional [health](/four-healths), protected daily), **Frequently starved** (Father / Husband and the Joy Giver — the balloon-and-magic guy from the eulogy), and **Over-invested** (Technologist and everything else — "the finished room, and I keep redecorating it instead of walking into the ones that aren't"). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2cd756ee6)
-- **[Traveling with tirzepatide](/time-off#appendix-traveling-with-tirzepatide-or-any-med-that-needs-a-fridge)** — new appendix on fridge-dependent meds: a TSA-approved travel cooler, ask the hotel front desk to stash doses, and pack the whole trip's supply (no refills on the road). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/c843d3c7b)
-- **Where to eat + diet recovery** — shop the grocery store (a cucumber, some fruit, and a rotisserie chicken beat the tourist-strip restaurants) and skip the tourist areas. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d92867a94)
+- **Identity for consumption** - One epigraph across three posts: vegetating feels like rest but starves your roles. ([blog](/time-off)) ([blog](/timeoff-2026-07)) ([blog](/produce-consume)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/920b9f567)
+- **Re-stack your roles** - Roles sorted into non-negotiables, frequently starved, and over-invested. ([blog](/time-off#re-stack-your-roles)) ([blog](/four-healths)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2cd756ee6)
+- **Fridge meds and food** - Appendix on traveling with tirzepatide; shop the grocery store over tourist restaurants. ([blog](/time-off#appendix-traveling-with-tirzepatide-or-any-med-that-needs-a-fridge)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/c843d3c7b) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d92867a94)
 
 ### Scandinavia Trip Post (2026-07-06)
 
-**[/timeoff-2026-07](/timeoff-2026-07)** — the 22-day, 5-country family trip post got a big expansion:
-
-- **[Ranked "why I'm taking this time off"](/timeoff-2026-07#why-im-taking-this-time-off--ranked)** — reframed as _expected_ / _but-it-turns-out_ / _didn't-expect_. Expected: deepen the bond with Amelia and Tori, really meet the travel companions, escape. But it turns out there was nothing to escape — no work or PSC stress, "body home and mind home too." Didn't expect: the social-media / vibe-coding addiction dissolved, and the "jovial me" — the [Dealer of Smiles and Wonder](/joy) — came roaring back once the screens went quiet. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/aa8aefbc1)
-- **[Re-stacking the roles](/timeoff#re-stack-your-roles)** and a first **learning to bring home — meditation travels**: old churches and cathedrals are the best rooms for sitting quietly; duck in, take a pew, be still. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6ac955f60)
-- **Marble Church (Marmorkirken)** added to the Copenhagen itinerary — climb the dome tower for the Amalienborg→Opera axis. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8658558d4)
-- **Packing master-list callout** plus a **speed-of-light cross-link** — reaching the Seattle dev box from Sweden costs ~170 ms. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1a82bce2a)
+- **Why I'm taking time off, ranked** - Expected, turns out, and didn't expect: the screen habit dissolved and the joy giver came back. ([blog](/timeoff-2026-07)) ([blog](/timeoff-2026-07#why-im-taking-this-time-off--ranked)) ([blog](/joy)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/aa8aefbc1)
+- **Roles and meditation** - Re-stacking the roles; old churches are the best rooms for sitting quietly. ([blog](/timeoff#re-stack-your-roles)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/6ac955f60)
+- **Itinerary additions** - Marble Church in Copenhagen, a packing-list callout, and a speed-of-light cross-link. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8658558d4) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1a82bce2a)
 
 ### My Packing Master List (new page!)
 
-**[/packing](/packing)** — a durable, trip-agnostic packing checklist that every specific trip is trimmed from (an items-plus-decisions list, split Road-trip vs Airplane). Landed this week via PR #711 with Igor's review notes applied: Magic restructured around a belt-clipped "pocket kit" (two yellow cases — card sleeves; "You are awesome" + special cards), a neck brace for flights, a gym-locker lock, 3× compressible travel cubes, and a cross-link to the tirzepatide fridge-med section. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/feb1c4d60) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1dbe88d79)
+- **My Packing Master List (new page!)** - A trip-agnostic checklist every trip is trimmed from, split road trip versus airplane. ([blog](/packing)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/feb1c4d60) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/1dbe88d79)
 
 ### Life Journal: Speed of Light from Sweden (2026-07-06)
 
-**[/life-journal#speed-of-light-from-sweden](/life-journal#speed-of-light-from-sweden)** — working from Sweden against a Seattle dev box, the speed of light finally showed up as a number Igor could feel. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/c649c5373)
-
-- ~7 ms reaches the edge of Seattle; a single transatlantic backbone hop (Lumen Seattle → Colt Stockholm) adds **+163 ms** by itself; the Stockholm last mile is basically free (~170 ms total).
-- **The physics floor:** light in glass ≈ 204,000 km/s and Seattle→Stockholm is ~7,600 km great-circle, so the hard floor is ~74 ms round-trip in fiber (~51 ms in vacuum). The observed ~163 ms is ~2.2× the floor — because real fiber doesn't fly the great circle: ~163 ms implies ~16,500 km of actual glass, down the US and across the North Atlantic. "Physics sets the floor; geography sends the bill."
+- **Speed of light from Sweden** - Latency to a Seattle box, the physics floor in fiber, and why real cables cost double. ([blog](/life-journal#speed-of-light-from-sweden)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/c649c5373)
 
 ### Other Projects (2026-07-06)
 
 **[Scandinavian Whirlwind 2026](https://idvorkin-ai-tools.github.io/scandinavia-2026/)** (trip site) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026)
 
-- **9 field-map explainers** brought into the repo and wired into the trip site — 7 city deep-dives (Reykjavík, Copenhagen, Stockholm, Oslo, Bergen, Voss, Amsterdam) plus 2 topical (Napoleonic Wars in Scandinavia, cathodic protection), each with a "Back to the trip map" pill and a "Deep dive" link off its city page. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/0788a2dba)
-- **Scandinavia War Context Pack** — 6 new history explainers plus a chronological pack index (`wars.html`): Viking Age, Denmark vs Sweden, Swedish Empire & the Thirty Years' War, Great Northern War, WWII in the Nordics, and Cold War / Arctic — a 7-page timeline (with the existing Napoleonic explainer) cross-linking the cities. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/9759c20c6)
-- **Marble Church** deep-dive page added (PR #5). [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/89bd6780c)
+- **Field maps wired in** - City deep dives plus Napoleonic Wars and cathodic protection, each linked from its city. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/0788a2dba)
+- **War Context Pack** - Viking Age through the Cold War as a chronological history pack. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/9759c20c6)
+- **Marble Church** - New deep-dive page. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/scandinavia-2026/commit/89bd6780c)
 
 **[AI Safety — A Field Map](https://idvorkin-ai-tools.github.io/ai-safety-field-map/)** (new explainer site) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/ai-safety-field-map)
 
-- A technical field map for engineers entering AI alignment — a spine plus ~25 deep-dive pages across **approaches** (RLHF, red-teaming, scalable oversight), **evals** (METR, AISI, dangerous-capability evals, responsible scaling), **failures** (deceptive alignment, mesa-optimization, reward hacking, specification gaming, power-seeking, goal misgeneralization), **interpretability** (circuits, mech-interp, sparse autoencoders, superposition), and **papers** (Constitutional AI, Debate, Sleeper Agents, Weak-to-Strong). [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/ai-safety-field-map/commit/530e09ac2)
+- **New field map** - AI alignment for engineers: approaches, evals, failure modes, interpretability and key papers. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/ai-safety-field-map/commit/530e09ac2)
 
 **[blob](https://github.com/idvorkin/blob)** (image assets)
 
-- Added `raccoon-maybe.webp` — the shrug header for the new /maybe post. [<i class="fa fa-github"></i>](https://github.com/idvorkin/blob/commit/c5e238c46)
+- **Raccoon shrug** - Header image for /maybe. [<i class="fa fa-github"></i>](https://github.com/idvorkin/blob/commit/c5e238c46)
 
 ## Week of 2026-06-29
 
@@ -887,58 +835,27 @@ _18 commits this week_
 
 ### Trusts in Washington (new post!)
 
-**[/trusts](/trusts)** — a native WA estate-planning guide covering the living trust → credit shelter trust → QTIP/QDOT stack. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4259c6d19)
-
-Most estate-planning content online talks to lawyers or ignores where you live. This post is the WA-specific version:
-
-- **Revocable living trust** — what it actually does (avoids probate, privacy, incapacity planning) vs. what it doesn't (zero tax savings while alive — it's a grantor trust, still fully in your taxable estate).
-- **Credit shelter trust (CST)** — funded at the first spouse's death with up to one WA exemption (~$3M, 2026). Surviving spouse can still benefit (income + principal for health/education/maintenance), but the trust assets are excluded from their estate at second death. WA has **no spousal portability** — without a CST, the first-to-die's ~$3M exemption is simply lost. On a $10M estate: roughly **$550K saved**.
-- **The basis tradeoff** — CST assets get one step-up (first death) but no second step-up. You're trading WA estate tax saved (up to ~20% of one exemption) against potential future capital-gains cost.
-- **Non-citizen spouse (green-card holder)?** — the unlimited marital deduction only works when the surviving spouse is a citizen. If the survivor is non-citizen, add a **QDOT** to defer the tax. A "contingent QDOT" covers both orders of death; naturalizing before first death removes the issue entirely.
-- **Worked examples** including break-even math: at what future appreciation does a CST stop being worth it?
-
-Intro rewritten in Igor's article voice — no law-firm boilerplate. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/9873e6fbf) Companion to **[/taxes](/taxes)** (step-up in basis, capital gains, retirement accounts).
+- **Trusts in Washington (new post!)** - A WA estate-planning guide: living trust, credit shelter trust for no spousal portability, and QDOT for a non-citizen spouse. ([blog](/trusts)) ([blog](/taxes)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4259c6d19) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/9873e6fbf)
 
 ### AI Training: Post-Training Methods Table
 
-**[/ai-training#post-training](/ai-training#post-training)** — replaced bullet-list overview with a six-column comparison table across SFT, RLHF, DPO, and RLVR. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/a0f500ff3)
-
-These four methods form a lineage — the table maps each one on: how it learns, who grades the output, whether a separate reward model is needed, what it's best for, and the key watch-out:
-
-- **SFT** — imitates curated answers (next-token loss on prompt→ideal-answer pairs). First and biggest behavior shift; bounded by demo quality.
-- **RLHF** — RL via PPO against a learned reward model. Humans rank outputs A-vs-B. Heavy pipeline; reward-model drift risk.
-- **DPO** — same A-vs-B preferences, but optimized directly as a classification loss — no RL loop, no separate reward model. Simpler and more stable than RLHF, most of the benefit.
-- **RLVR** — RL from verifiable rewards: reward = "did it get the right answer." The engine behind o1-style reasoning models. Only works where answers are checkable.
-- **RLAIF** — now called out separately as RLHF's cheap scalable variant (AI judge instead of humans).
-
-Also added cross-links from the deployment/serving section to [/ai-inference](/ai-inference). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/5e4118568)
+- **Post-training table** - SFT, RLHF, DPO and RLVR compared on how each learns and who grades; RLAIF called out; inference cross-links. ([blog](/ai-training#post-training)) ([blog](/ai-inference)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/a0f500ff3) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/5e4118568)
 
 ### Time Off: Arthur Brooks' 9 Vacation Rules
 
-**[/timeoff#appendix-9-rules-for-a-happier-vacation-arthur-brooks](/timeoff#appendix-9-rules-for-a-happier-vacation-arthur-brooks)** — distillation of Arthur Brooks' Office Hours episode on vacation science. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/612026656)
-
-Brooks frames it as "me-search" — a fellow workaholic figuring out how to actually take time off. Nine rules with the science cited:
-
-- **Discern your motive before booking** — six core Danish tourist motive types (exploration, escape, relationship-deepening, prestige, nature, history). Mismatch of motive to trip design = unhappy vacation.
-- **Savor the anticipation** — happiness rises in the _weeks before_ departure (Dutch/Chinese vacationer studies). It's dopamine feeding on the wanting; over-inflate it into a fantasy and you'll be disappointed.
-- **Break one big trip into smaller vacationettes** — fifteen long weekends beat one month away for durable afterglow. Next break always around the corner.
-- **Take fewer pictures** — photographing pulls you into future-past instead of the present. Estimated 15–20% enjoyment reduction. Compromise: one designated photographer per day, everyone else off duty.
-- **Don't post** — prestige motive (social comparison) hijacking your trip. Posting for others' envy reliably makes you enjoy it less (Journal of Consumer Research, 2018).
-- **Leave work at home** — work activities lower vacation's positive effects 1, 3, and 10 days after returning (Stress and Health). Read something generative instead.
-- **Come home early** — don't travel up to the last second; a buffer before re-entry becomes a mini second vacation.
-
-Full transcript in an [unlisted gist](https://gist.github.com/idvorkin-ai-tools/d22b29fea197d9d9f027092df4d1d4ad). Also: the July 2026 trip page ([/timeoff-2026-07](/timeoff-2026-07)) now links directly to the Scandinavian city-by-city [trip guide site](https://idvorkin-ai-tools.github.io/scandinavia-2026/). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/664352f8a)
+- **Brooks' vacation rules** - Know your motive, savor anticipation, take shorter trips, fewer photos, no posting, no work, come home early. ([blog](/timeoff#appendix-9-rules-for-a-happier-vacation-arthur-brooks)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/612026656)
+- **Trip guide link** - The July trip page links the city-by-city trip guide site. ([blog](/timeoff-2026-07)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/664352f8a)
 
 ### Life & Health Notes (2026-06-29)
 
-- **[/life-journal](/life-journal#happy-fluff) — "Happy Fluff"** (2026-07-01): saw a tub labeled **HAPPY FLUFF** on a café shelf and recognized it as the goal in life. Cotton candy is [Dealer of Smiles and Wonder](/eulogy) in a tub — "nearly weightless, no nutritional value, but brings people joy anyway. Leave a little in every room, walk away smiling." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/90a696255)
-- **[/timeoff](/timeoff#vegetation) — vegetation recovery is faster now** (2026-07-02): draining work stress into real rest "used to take a solid week — but these days I can do it in about a day. I guess I'm getting better at work-life balance." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/42f6af25f)
-- **[/four-healths](/four-healths) — "a thousand wishes"** (2026-07-03): new aphorism in the Physical Health section — _"A healthy person has a thousand wishes; a sick person has only one."_ Lose your health and every other want collapses into the one — to be well again. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/46cc4d30a)
+- **Happy Fluff** - A café tub of cotton candy as the goal in life. ([blog](/life-journal#happy-fluff)) ([blog](/eulogy)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/90a696255)
+- **Faster recovery** - Draining work stress into real rest now takes about a day. ([blog](/timeoff#vegetation)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/42f6af25f)
+- **A thousand wishes** - New aphorism on health in the Physical Health section. ([blog](/four-healths)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/46cc4d30a)
 
 ### Other Projects (2026-06-29)
 
-- **ai-policy** — AI-slop content percentage bumped from 50% to 80%. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d3ffb4a0f)
-- **[quack-track](https://github.com/idvorkin-ai-tools/quack-track)** — new repo stub created. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/quack-track/commit/7952b0809)
+- **ai-policy** - AI content label raised to 80%. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d3ffb4a0f)
+- **[quack-track](https://github.com/idvorkin-ai-tools/quack-track)** - New repo stub. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/quack-track/commit/7952b0809)
 
 ## Week of 2026-06-22
 
