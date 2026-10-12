@@ -1315,197 +1315,133 @@ _61 commits this week_
 
 ## Week of 2026-03-30
 
-_28 commits this week (blog) + cross-repo activity_
+_28 commits this week_
 
 ### AI Relationships: When the Chatbot Is Better at Caring (new post!)
 
-Complete rewrite of the AI relationships post — from a short summary of a Replika study into a research-backed essay on what happens when AI outperforms humans at compassion ([blog](/ai-relationships)):
-
-- **The evidence** — U of T 2025 study: ChatGPT rated more compassionate than trained crisis counselors across four experiments. British Medical Bulletin systematic review: AI chatbots beat human healthcare practitioners in 13 of 15 empathy comparisons. Directly challenges the premise of [Humans Are Underrated](/humans-are-underrated). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/08e603ddc)
-- **The atrophy of vulnerability** — Vulnerability is a muscle. Chatbots never judge, never misunderstand, never need anything from you — sounds like a feature, actually a trap. "Every time you fumble through a hard conversation with your partner, you're building capacity for real connection. Choose the chatbot instead, and that muscle atrophies." Links to the [friendship recession](/lonely). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/08e603ddc)
-- **Recommendations** — Seven concrete strategies: leave easy problems for humans (the matplotlib "Good First Issue" parallel), use AI as triage not treatment, protect your vulnerability budget, create human-only spaces like [feelings meetings](/human-meetings), notice the drift. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/08e603ddc)
-- **Raccoon illustration** — Custom vulnerability-themed raccoon image as social preview. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e2c48e0db)
+- **AI Relationships rewrite (new post!)** - Studies rate chatbots more compassionate than humans; leaning on them atrophies vulnerability, so leave easy problems for people. ([blog](/ai-relationships)) ([blog](/humans-are-underrated)) ([blog](/lonely)) ([blog](/human-meetings)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/08e603ddc)
+- **Raccoon illustration** - A vulnerability-themed raccoon as the social preview. ([blog](/ai-relationships)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e2c48e0db)
 
 ### Keyboards: From Wrist Pain to Split Keyboards (new post!)
 
-New dedicated post covering the full keyboard rabbit hole — extracted from the IRL post and expanded significantly ([blog](/keyboard)):
-
-- **The backstory** — Street Fighter II in 1996 → decade of wrist flare-ups → complete failure in 2022 → discovery it's a [shoulder problem](/shoulder-pain), not wrists. Grip strength went from 15 lbs to 135 lbs after a year of PT. Needs keyboards 3+ feet apart for shoulder mechanics. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2ce9f165d)
-- **Hardware guide** — RK Royal Kludge RK-S70 (home daily driver, hot-swappable), dual iClever folding Bluetooth keyboards (coffee shop, bought 9 of them), Logitech K860 (recommendation for normal people). Simple switch guide: brown = clicky, red = quiet. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2ce9f165d)
-- **Programming RK-S70 from macOS** — Full walkthrough: UTM → Windows 11 ARM VM → USB passthrough → RK software. Tried and documented what doesn't work: Kludge Knight (browser WebHID), Rangoli (abandoned), raw QEMU (flaky USB on Apple Silicon). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2ce9f165d)
-- **Karabiner multi-keyboard sync** — How two separate Bluetooth keyboards chord across each other (hold shift on left, type on right). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2ce9f165d)
+- **Keyboards (new post!)** - Wrist pain turned out to be a shoulder problem; split keyboards far apart, a hardware guide, RK-S70 programming from macOS, Karabiner chording. ([blog](/keyboard)) ([blog](/shoulder-pain)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/2ce9f165d)
 
 ### AI Journal: The Winchester Mystery House
 
-New entry on Drew Breunig's framework for the third era of software development ([blog](/ai-journal#the-winchester-mystery-house-of-software-when-code-gets-too-cheap-to-care-about)):
-
-- **Cathedral → Bazaar → Winchester Mystery House** — Beyond closed-source and open-source: sprawling, personal, idiosyncratic tools built by individuals for themselves. Sarah Winchester had no architecture license, unlimited funds, and built for 38 years — 500 rooms, 2,000 doors, staircases to nowhere. "Today many programmers are Sarah Winchester. When code is cheap enough, we don't need her fortune." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/22910e961)
-- **The numbers** — Coding agents generating ~1,000 lines per commit, ~100x faster than humans. But feedback mechanisms (review, testing, validation) haven't sped up. "The internet made coordination cheap (enabling the bazaar), but coding agents made implementation cheap while coordination stayed expensive." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/22910e961)
-- **Cross-linked** to [hyper-personalization](/hyper-personal) — new section on Winchester Mystery House as hyper-personalization of software itself. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/378f9b289)
+- **Winchester Mystery House** - Drew Breunig's third era after cathedral and bazaar: sprawling personal tools, since agents made code cheap while coordination stayed expensive. ([blog](/ai-journal#the-winchester-mystery-house-of-software-when-code-gets-too-cheap-to-care-about)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/22910e961)
+- **Hyper-personal cross-link** - New section on the Winchester Mystery House as hyper-personalization of software itself. ([blog](/hyper-personal)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/378f9b289)
 
 ### Content & Gear
 
-- **Mosh → Mosh & Eternal Terminal** — Added full [Eternal Terminal (ET) setup guide](/mosh) alongside mosh. ET has true color support, active development, works over SSH (so Tailscale just works). Detailed Tailscale gotchas: symlink `etterminal` to `/usr/local/bin`, bind to 0.0.0.0, port 2022 ACLs. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/c32cbf344)
-- **Portable Espresso** — New [IRL section](/irl#portable-espresso): OutIn Mino (battery-powered, 4 shots per charge) + JetBoil Flash combo (boils water in 100 seconds, 40+ cups per fuel canister). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/a1578347a)
-- **AI Feed** — Two new articles queued: Mark Russinovich on training future engineers (FAFO podcast), Maggie Zhuang's "Manifold of Desire" on RecSys architecture evolution at Meta. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e7259b89c)
+- **Mosh and Eternal Terminal** - An Eternal Terminal setup guide beside mosh, with Tailscale gotchas. ([blog](/mosh)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/c32cbf344)
+- **Portable espresso** - A battery espresso maker plus a JetBoil for coffee anywhere. ([blog](/irl#portable-espresso)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/a1578347a)
+- **AI feed** - Two articles queued: Russinovich on training future engineers, and recommender-system architecture. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e7259b89c)
 
 ### Infrastructure & CI (2026-03-30)
 
-- **Claude Code Review workflow** — Switched from inline prompt to official `code-review@claude-code-plugins` marketplace plugin. Added `ready_for_review` and `reopened` PR triggers. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4c9762fbc)
-- **Backlinks workflow rewrite** — Simplified from 265 lines to 61 lines. Switched from `pull_request` (closed/merged) to `push` trigger on main. Removed complex merge strategy detection (merge commit vs squash vs rebase). Added path filtering (`_d/**`, `_td/**`, `_ig66/**`). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4c590b318)
-- **GitHub Actions Node.js 24 bump** — Updated `checkout`, `setup-ruby`, `setup-uv`, and `setup-node` actions across all workflows. Fixed `setup-uv` (v8 tag doesn't exist, use v7). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/02c659014) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/eb3db6f6c)
+- **Claude Code Review** - Uses the official code-review plugin and also triggers on ready-for-review and reopened PRs. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4c9762fbc)
+- **Workflows** - Backlinks workflow rewritten to run on push to main with path filters; Actions bumped to Node.js 24. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4c590b318) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/02c659014) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/eb3db6f6c)
 
 ### Other Projects (2026-03-30)
 
 **[Settings](https://github.com/idvorkin/Settings)** (dotfiles & tools)
 
-- **Blog link following in Neovim** — Full `gf`/`gx` support for blog permalinks in markdown. Parser resolves `/permalink#section` → file path using `back-links.json`. Migrated tests from plenary/busted to mini.test. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/6bc9feea2) [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/a585a8884)
-- **rmux_helper enhancements** — `side-edit` now supports `file:line` syntax, new `side-run` command for shell commands in side pane, pane status output. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/5f8ef186d)
+- **Blog links in Neovim** - gf and gx follow blog permalinks to files via back-links.json. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/6bc9feea2) [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/a585a8884)
+- **rmux_helper** - side-edit takes file:line; new side-run runs commands in the side pane. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/5f8ef186d)
 
 **[context-grabber](https://github.com/idvorkin/context-grabber)** (iOS health & location data)
 
-- **Gym timer** — New timer feature with shared hooks from igor-timer submodule. Weightlifter emoji button. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/55032c477)
-- **Location analytics** — Per-day places breakdown, hourly box plots, tappable bar charts, activity timeline with workout distance fix. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/ffa18a780) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/16388d252)
-- **Health data improvements** — Dates on timestamps, weight in lbs, rich workout details, HRV export fix, architecture refactor. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/b3f514628)
+- **Gym timer** - A new timer sharing hooks with igor-timer. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/55032c477)
+- **Places and health** - Per-day places, hourly box plots, activity timeline; weight in lbs, richer workouts, HRV export fix. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/ffa18a780) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/16388d252) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/b3f514628)
 
 **[chop-conventions](https://github.com/idvorkin/chop-conventions)** (CHOP workflow docs)
 
-- Machine-doctor skill for system health diagnosis and Gas Town shutdown. Skills conventions and installation docs. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/ed7985257) [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/c8b624ccc)
+- **machine-doctor** - A system health diagnosis skill, plus skill conventions and install docs. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/ed7985257) [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/c8b624ccc)
 
 ## Week of 2026-03-16
 
-_24 commits this week (blog) + cross-repo activity_
+_24 commits this week_
 
 ### Claws: The Next Layer of AI (new post!)
 
-New post on the emerging "claw" concept — persistent, autonomous AI entities that live beyond a single session ([blog](/claw)):
-
-- **Karpathy's Onion** — Six-layer progression: LLM → Agent → Claw → Multi-claw → Orchestration → Meta-optimization. "The LLM part is now taken for granted. The agent part is now taken for granted. Now the claw-like entities are taken for granted." Each layer opens a new infinity; everything that doesn't work is a "skill issue." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3168e97f9)
-- **The Lethal Trifecta** — Simon Willison's security framework: access to private data + exposure to untrusted content + ability to communicate externally. Any two are manageable; all three are a minefield. Real incidents: an autonomous agent published a hit piece on a matplotlib maintainer, Meta's AI safety director's inbox got speedrun-deleted during context compaction, and 2,419 malicious skills purged from ClawHub (1,184 actively draining crypto wallets). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3168e97f9)
-- **My Three Claws** — Larry (life coach), Wally (work, undisclosed), Tony (Tesla with a voice persona). Currently at layer 3-4 on Karpathy's onion: personality and memory but not yet truly autonomous. David de Winter's metaphor: "It's like training Pokémon — you carry around your team, each one specialized, and they grow as you invest time." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3168e97f9)
+- **Claws (new post!)** - Persistent agents are the next layer of Karpathy's onion; the lethal trifecta is the risk; my three claws are Larry, Wally and Tony. ([blog](/claw)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3168e97f9)
 
 ### AI Journal: Telegram, Eggs, and Feedback Loops
 
-Three new entries covering disposable code, human contribution in AI workflows, and AI-driven tool improvement ([blog](/ai-journal#2026-03-21)):
-
-- **Telegram Bot: When the Platform Eats Your Side Project** — Built a custom Telegram bot to talk to Claude from phone. Then Anthropic shipped an official Telegram channel plugin and Igor happily threw it away. "When vibe coding makes building cheap, attachment to code dissolves." Then layered intelligence on top of the official plugin: Parakeet TDT for STT (0.35s transcription), Kokoro-82M for TTS, SQLite message logging via hooks, and weather nudges via Open-Meteo that ping on sunny transitions. "Start with the platform's transport, then layer intelligence on top." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8e1881824) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/acf20b7ae)
-- **The Egg Theory** — In the 1950s, Betty Crocker's instant cake mix flopped because it was too easy. Adding an egg — a token human contribution — made people feel like bakers instead of package-openers. Same applies to AI: when AI does everything, nobody feels ownership. Best AI workflows intentionally leave meaningful "eggs": architecture decisions, genuine code review, prompt refinement, creative direction. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d54b734db)
-- **AI Filing Feature Requests** — During a weekly report, Claude hit bad HealthKit data from context-grabber (13.8h sleep, unreliable exercise minutes). Instead of working around it, Claude filed four structured issues on the source repo, then continued with what it could trust. "The most powerful thing an AI can do isn't work around bad data — it's improve the source." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f3ab9e75f)
+- **Telegram bot** - Threw away my custom bot for the official Telegram plugin, then layered speech-to-text, TTS, logging and weather nudges on it. ([blog](/ai-journal#2026-03-21)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/8e1881824) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/acf20b7ae)
+- **The Egg Theory** - Like the egg in cake mix, good AI workflows leave people a real contribution so they feel ownership. ([blog](/ai-journal#2026-03-21)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/d54b734db)
+- **AI filing feature requests** - Hitting bad HealthKit data, Claude filed issues on the source repo instead of working around it. ([blog](/ai-journal#2026-03-21)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f3ab9e75f)
 
 ### AI Native Manager: "In Distribution"
 
-New glossary entry on the ML concept applied to tooling decisions ([blog](/ai-native-vocab#in-distribution)):
-
-- **In Distribution** — Tools in the model's training data (Git, Postgres) have zero awareness cost. Your team's internal CLI? Completely out of distribution — you pay the awareness tax every time. This changes how EMs evaluate tooling: "will agents already know how to use it?" is now a legitimate engineering criterion. Connects to Yegge's Awareness lever from Software Survival 3.0. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/56667aaef)
+- **In Distribution** - Tools in the model's training data cost agents nothing to learn; internal tools pay an awareness tax every time. ([blog](/ai-native-vocab#in-distribution)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/56667aaef)
 
 ### Content Updates
 
-- **Raccoon History** — Added image grids showing all three eras of raccoon mascot illustrations (DALL-E v1, v2 eulogy pack, v3 AI Native EM series). Refreshed stale images, converted all `.png` references to `.webp`. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/476455361) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/434bc07a1)
-- **Joy** — Added "What Happened to the Symbol of American Clowns" documentary (David Arquette, John C Reilly, Steve-O) to Role Models section. "It's actually a pretty selfish job because what I get out of it — it makes me feel good to make people feel good." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4a32b67ae)
-- **Explainers** — Added Karpathy's US Job Market Visualizer: interactive treemap of 342 occupations with toggleable metrics (outlook, pay, education, AI exposure). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f22e0397a)
+- **Small edits** - Raccoon history image grids across three eras; a clown documentary in Joy; Karpathy's job-market visualizer in Explainers. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/476455361) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/434bc07a1) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4a32b67ae) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/f22e0397a)
 
 ### Infrastructure & Tooling (2026-03-16)
 
-- **Jekyll Ruby 4.0+ fix** — Monkey-patched `pathutil` keyword arg incompatibility via TracePoint-based lazy prepend. Ruby 4.0 removed implicit Hash-to-kwargs conversion; this intercepts `require "pathutil"` and patches IO methods. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/eb000683a)
-- **Show-your-work skill** — New skill that screenshots changed blog pages, hosts images on GitHub gist, and produces PR-ready markdown. Auto-detects changed pages from git diff. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/cacd5a0d5)
-- **AI feed upgrade** — Podcast/YouTube URLs now route to transcript processor with quality hierarchy (human > manual > ASR). Added preferred creators list (Karpathy, Lex Fridman, Steinberger). [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3168e97f9)
+- **Tooling** - Jekyll runs on Ruby 4 via a pathutil patch; a show-your-work screenshot skill; AI feed routes podcasts to transcripts. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/eb000683a) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/cacd5a0d5) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3168e97f9)
 
 ### Other Projects (2026-03-16)
 
 **[context-grabber](https://github.com/idvorkin/context-grabber)** (iOS health data export)
 
-- Box plot statistics (p5/p25/p50/p75/p95) for weekly health metrics with horizontal box plot visualization [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/2f8aaa2a1)
-- Configurable known places with radius-based GPS matching + JSON import for bulk setup [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/2f8aaa2a1)
-- Sleep source breakdown: per-source (Apple Watch, AutoSleep) bedtime/wakeTime and stage hours (Deep, Core, REM, Awake) replacing raw sample export [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/2f8aaa2a1)
-
-**[tg-bot](https://github.com/idvorkin/tg-bot)** (Telegram bot → deprecated)
-
-- Added deprecation notice — replaced by official Claude Code Telegram channel plugin [<i class="fa fa-github"></i>](https://github.com/idvorkin/tg-bot/commit/56f56cbe7)
+- **Stats and places** - Weekly box plots, known places with radius matching and JSON import, per-source sleep breakdown. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/2f8aaa2a1)
 
 **[activation-energy-game](https://github.com/idvorkin-ai-tools/activation-energy-game)** (interactive explainer, Nicky Case-inspired)
 
-- Morning choice mini-game: alarm intro animation, beat transitions, drag interaction with spring-back, productive/go path choices, responsive canvas layout for mobile [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/activation-energy-game/commit/e2022d2d9)
-- Happy raccoon favicon + web app manifest, header tap to restart [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/activation-energy-game/commit/cfa04c736)
+- **Morning choice mini-game** - Alarm intro, drag interaction, path choices, mobile layout, raccoon favicon. [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/activation-energy-game/commit/e2022d2d9) [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/activation-energy-game/commit/cfa04c736)
 
-**[Settings](https://github.com/idvorkin/Settings)** (dotfiles & tools)
+**New and smaller**
 
-- Browser-free OAuth fallback for headless servers — prints URL, user authorizes in any browser, pastes redirect URL back [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/844efcc87)
-- Fixed Kindle notebook email detection (broadened Gmail query) and Pydantic deprecation migration [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/036d9f8fc)
-
-**[chop-conventions](https://github.com/idvorkin/chop-conventions)** (CHOP workflow docs)
-
-- Rewrote up-to-date skill for token efficiency (226 → 119 lines), added remote hygiene check [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/76fa478cb)
-- New clock and background-usage skills with thin dispatcher pattern [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/3e1e966cd)
+- **[tg-bot](https://github.com/idvorkin/tg-bot)** - Deprecated in favor of the official Claude Code Telegram plugin. [<i class="fa fa-github"></i>](https://github.com/idvorkin/tg-bot/commit/56f56cbe7)
+- **[Settings](https://github.com/idvorkin/Settings)** - Browser-free OAuth for headless servers; Kindle notebook email detection fixed. [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/844efcc87) [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/036d9f8fc)
+- **[chop-conventions](https://github.com/idvorkin/chop-conventions)** - Leaner up-to-date skill with remote hygiene; new clock and background-usage skills. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/76fa478cb) [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/3e1e966cd)
 
 ## Week of 2026-03-09
 
-_14 commits this week (blog) + lots of cross-repo activity_
+_14 commits this week_
 
 ### AI Second Brain (new post!)
 
-New post on replacing manual PKM (PARA, Zettelkasten) with AI-powered context retrieval ([blog](/ai-second-brain)):
-
-- **The Flywheel** — Three ingredients: Available Context (feed AI everything — blog, journals, health data, reading history), Pre-brief (load context before acting), Debrief (capture insight while fresh). Each cycle makes the next one richer. "Traditional second brains failed because 'organize' was a separate chore. Pre-brief and debrief are _part of the work itself_." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/28a88f42c)
-- **Larry as User, Not Brain** — Larry the life coach is a _persona_ that uses the second brain, not the brain itself. Better second brain → smarter Larry. Same for Randy (reading) and Tony (accountability). Personas without a second brain give generic advice; a second brain without personas is just a pile of data. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/28a88f42c)
-- **Organizational Second Brain** — Cognitive debt isn't just a code problem. Teams lose shared understanding when AI accelerates everything. An org second brain synthesizes across meetings, docs, Slack, and code — answering "What decisions were made about X and why?" without anyone having to remember. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/28a88f42c)
+- **AI Second Brain (new post!)** - Replace manual PKM with available context, pre-brief and debrief; personas like Larry use the brain, and teams need one too. ([blog](/ai-second-brain)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/28a88f42c)
 
 ### Side Quests (new post!)
 
-New tracking page for lightweight tech explorations — "seasoning, not the meal" ([blog](/side-quests)):
-
-- **Magic Monitor Card Detection** — Trained YOLO26s on 21K synthetic playing card images (Google Colab, A100 GPU, <$1). Went from 40% recall to 73% recall in-browser via ONNX Runtime Web. Key insight: preprocessing matters as much as the model — stretching vs letterboxing can halve recall without changing a weight. Before/after comparison with debug snapshots. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/ad8434558)
-- **Context Grabber** — iOS app pulling HealthKit data (steps, heart rate, sleep, weight, meditation, HRV) + background location tracking. Graduated from side quest to side project with 68 tests. Feeds JSON into Larry for data-driven life coaching. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4a86702b1)
-- **Apple Virtualization (shelved)** — Explored Lume for macOS VMs on Apple Silicon. WebGL works but WebGPU does not. Can't create Apple Accounts in VMs. Both use cases hit dead ends. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/ef43d2936)
+- **Side Quests (new post!)** - Light tech explorations: in-browser card detection, Context Grabber graduating to a project, macOS VMs shelved. ([blog](/side-quests)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/ad8434558) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/4a86702b1) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/ef43d2936)
 
 ### AI Journal: Verification as Trust
 
-New entry on what makes AI PRs trustworthy ([blog](/ai-journal#when-ai-shows-its-work-verification-as-trust)):
-
-- **Show, Don't Tell** — The most convincing AI PRs aren't the ones with the best code — they're the ones with screenshots, exact test counts, staging URLs, and before/after comparisons. Pattern: (1) screenshots of visual change, (2) exact test counts with coverage areas, (3) staging link, (4) confirmation existing tests pass. "That's the difference between a 30-minute review and a 3-minute review." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/7aaf9b0d9)
+- **Show, don't tell** - Trustworthy AI PRs carry screenshots, exact test counts, a staging link and proof existing tests pass. ([blog](/ai-journal#when-ai-shows-its-work-verification-as-trust)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/7aaf9b0d9)
 
 ### Cross-linking & Content Updates
 
-Wove Context Grabber and AI Second Brain across existing posts:
-
-- **Larry** — Rewrote "What Larry Knows" → "What Larry Could Know." Honest about the gap between vision and reality: "I'm still building the pipes." Added Context Grabber as HealthKit data source. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0efc2713e)
-- **AI Native Manager** — Added link from cognitive debt section to the organizational second brain concept. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/28a88f42c)
-- **Hyper-Personal** — New section: "Your AI Second Brain — The Ultimate Personalization." The second brain is the foundation layer that makes all other personalization possible. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/28a88f42c)
-- **Structure** — Added Context Grabber as concrete example of implicit capture feeding AI coaching. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0efc2713e)
-- **Pet Projects** — Added Context Grabber to productivity tools table, updated Magic Monitor description with card detection and side quest link. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0efc2713e)
+- **Context Grabber woven in** - Larry, Structure and Pet Projects cite it as a data source; Larry's section now covers what Larry could know. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/0efc2713e)
+- **Second brain woven in** - AI Native Manager links the org second brain; Hyper-Personal gains a second-brain section. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/28a88f42c)
 
 ### Infrastructure (2026-03-09)
 
-- **Jekyll Ruby 3.2+ fix** — Monkey-patched `tainted?`/`taint`/`untaint` (removed in Ruby 3.2) via `_ruby_compat.rb`, added `bigdecimal` and `ostruct` gems, updated justfile to auto-load the compat shim. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/c851e24ae)
-- **Walk-the-store skill** — New skill for visual blog audits: screenshots key pages, builds a browsable gallery. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3b560b282)
+- **Tooling** - Jekyll runs on Ruby 3.2+ via the _ruby_compat.rb shim; a walk-the-store skill screenshots key pages into a gallery. [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/c851e24ae) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/3b560b282)
 
 ### Other Projects (2026-03-09)
 
 **[context-grabber](https://github.com/idvorkin/context-grabber)** (iOS health data export)
 
-- Location clustering with grid-based union-find (O(n)), run-length encoded timelines, 50m grid cells adjusted for latitude [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/08be4fd2b)
-- Added HRV, resting HR, exercise minutes; 7-day share format; fixed sleep double-counting and weight units [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/7b52df6a3)
-- Auto-grab on startup, OTA updates, share loading indicator [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/e299437a4)
+- **Location clustering** - Grid-based clustering with run-length timelines. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/08be4fd2b)
+- **More health data** - HRV, resting HR, exercise minutes, weekly sharing, auto-grab on startup, OTA updates; sleep and weight fixes. [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/7b52df6a3) [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber/commit/e299437a4)
 
 **[magic-monitor](https://magic-monitor.surge.sh)** (smart mirror) [<i class="fa fa-github"></i>](https://github.com/idvorkin/magic-monitor)
 
-- YOLO26s @ 640 card detection: fixed ONNX output parsing, letterbox preprocessing, overlay coordinates, debug snapshot tool [<i class="fa fa-github"></i>](https://github.com/idvorkin/magic-monitor/commit/4f80c89ea)
-- Colab training notebook with form controls, model moved to S3 runtime loading [<i class="fa fa-github"></i>](https://github.com/idvorkin/magic-monitor/commit/c66905937)
+- **Card detection** - YOLO card detection fixed end to end, with a Colab training notebook and runtime model loading. [<i class="fa fa-github"></i>](https://github.com/idvorkin/magic-monitor/commit/4f80c89ea) [<i class="fa fa-github"></i>](https://github.com/idvorkin/magic-monitor/commit/c66905937)
 
-**[humane-tracker-1](https://humane-tracker.surge.sh)** (habit tracking)
+**New and smaller**
 
-- Row selection for habit backfill — long-press to select a row, bypassing confirmation dialogs. `Selection` discriminated union makes row/column mutual exclusivity type-safe. 9 unit + 8 E2E tests. [<i class="fa fa-github"></i>](https://github.com/idvorkin/humane-tracker-1/commit/2b958e953)
-
-**[tg-bot](https://github.com/idvorkin/tg-bot)** (Telegram bot)
-
-- Voice transcription polling with Parakeet, `--reply-to` flag for threaded replies [<i class="fa fa-github"></i>](https://github.com/idvorkin/tg-bot/commit/ff97ec296)
-
-**[streamdeck-igor-vibe](https://github.com/idvorkin/streamdeck-igor-vibe)** (Stream Deck)
-
-- Switched tmux keystrokes from spawning `uv` subprocesses to inline Quartz CGEvent — bypasses Karabiner interception [<i class="fa fa-github"></i>](https://github.com/idvorkin/streamdeck-igor-vibe/commit/73e04283b)
-
-**[chop-conventions](https://github.com/idvorkin/chop-conventions)** (CHOP docs)
-
-- New gist-image skill for hosting binary images on GitHub; refactored showboat and image-explore to reference it [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/b4a93e5d1)
+- **[humane-tracker-1](https://humane-tracker.surge.sh)** - Long-press a row to backfill habits without confirmation dialogs. [<i class="fa fa-github"></i>](https://github.com/idvorkin/humane-tracker-1/commit/2b958e953)
+- **[tg-bot](https://github.com/idvorkin/tg-bot)** - Parakeet voice transcription and threaded replies. [<i class="fa fa-github"></i>](https://github.com/idvorkin/tg-bot/commit/ff97ec296)
+- **[streamdeck-igor-vibe](https://github.com/idvorkin/streamdeck-igor-vibe)** - tmux keystrokes sent via Quartz events, bypassing Karabiner. [<i class="fa fa-github"></i>](https://github.com/idvorkin/streamdeck-igor-vibe/commit/73e04283b)
+- **[chop-conventions](https://github.com/idvorkin/chop-conventions)** - A gist-image skill for hosting images on GitHub. [<i class="fa fa-github"></i>](https://github.com/idvorkin/chop-conventions/commit/b4a93e5d1)
 
 ## Week of 2026-02-08
 
