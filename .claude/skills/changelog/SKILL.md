@@ -159,23 +159,23 @@ _N commits this week_
 
 ### [Blog theme or post title]
 
-- **Item** - what changed, ≤ 25 words, then links. ([blog](/permalink#section)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/SHORTHASH)
+- **[Post title](/permalink#section)** - what changed, ≤ 25 words, with [the words each commit backs](https://github.com/idvorkin/idvorkin.github.io/commit/SHORTHASH) linked inline.
 
 ### Infrastructure & CI (YYYY-MM-DD)
 
-- **Item** - … [<i class="fa fa-github"></i>](…/commit/SHORTHASH)
+- **[Item](…/commit/SHORTHASH)** - [what it does](…/commit/SHORTHASH), [and the follow-up](…/commit/SHORTHASH2).
 ```
 
 **Rules (hard, not style preferences):**
 
-1. **One bullet per change, one line each.** ≤ 25 words before the links. No second sentence: if it needs two, it is two bullets or too much detail.
-2. **A new post is one bullet**: `**Title (new post!)** - the thesis in one sentence.` plus the blog link and the commit icon. Never walk through the post's sections.
+1. **One bullet per change, one line each.** ≤ 25 words of text. No second sentence: if it needs two, it is two bullets or too much detail.
+2. **A new post is one bullet**: `**[Title](/permalink#anchor) (new post!)** - the thesis in one sentence.` with the commit linked on a phrase of that sentence. Never walk through the post's sections.
 3. **No quotes** — not from posts, not from commit messages, not from Igor.
 4. **No process narration** — not "Igor asked…", not "Codex handled…", not "three viewers went on a pick sheet". Say what shipped.
 5. **No numbers unless the number is the change** ("3,600 lines of Python removed" yes; costs, turn counts, percentages no).
 6. **Small fixes fold into one bullet per repo.**
 7. **Other repos**: bold repo line with a ≤ 6-word description, then ≤ 3 bullets of ≤ 20 words. A repo with one change gets one bullet.
-8. **Every bullet ends with at least one link** (blog permalink with section anchor when one exists, and/or commit icon).
+8. **Links go inline, on the words they back — never a trailing run of icons or `([blog](…))`.** The bold title links to the blog anchor (posts) or the main commit (everything else); each phrase links to the commit that actually did that thing (read it with `git show --stat`). Every bullet has at least one link. Only if a bullet truly has no phrase to anchor a commit, one trailing `([commit](…))` is allowed.
 9. **Whole week ≤ 45 lines** including headings and blank lines. Over budget: cut bullets, do not lengthen lines.
 10. **Describe the content, not the commit message** (Step 3) — but in one line.
 11. **Skip repos with nothing of Igor's**: forks whose window commits are all upstream contributors or release bots, dependabot-only repos, and mirrors (blog7) that repeat a commit already listed.
@@ -190,12 +190,17 @@ _N commits this week_
 
 ### Deep Link Format
 
-Always include both blog and GitHub links where applicable:
+Make everything clickable, inline (Igor, 2026-10-13: "When possible inline the github links don't put them on the end"). Put each link on the words it backs, so a bullet with three commits has three linked phrases:
 
-- **Blog link**: `([blog](/permalink))` or `([blog](/permalink#section-anchor))`
-- **GitHub icon link**: `[<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/SHORTHASH)`
+```markdown
+- **[iCloud sync](https://github.com/idvorkin/exercise-analyzer/commit/eb307c575)** - Sets and workouts [reach every device](https://github.com/idvorkin/exercise-analyzer/commit/eb307c575), [edits included](https://github.com/idvorkin/exercise-analyzer/commit/dae2c085e); recordings save to [their own Photos album](https://github.com/idvorkin/exercise-analyzer/commit/d93a1ef6f).
+- **[What's Left in Engineering?](/whats-left#job-2-keep-the-code-changeable-by-agents) (new post!)** - With agents writing the code, [two jobs remain](https://github.com/idvorkin/idvorkin.github.io/commit/a02331764): iterate on the job to be done, keep code changeable by agents.
+```
 
-Use short commit hashes (first 9 chars) for readability. The GitHub icon (`<i class="fa fa-github"></i>`) renders as a clickable icon.
+- **Blog link**: on the bold title (`**[Title](/permalink#section-anchor)**`), or on the phrase naming the page when a bullet covers two pages (`The [eulogy](/eulogy) song [plays inline](…/commit/SHA)`).
+- **Commit link**: on the phrase describing what that commit did. Reword minimally to create an anchor; don't lengthen the line.
+
+Use short commit hashes (first 9 chars).
 
 ### 5. Finding Section Anchors
 
@@ -221,7 +226,7 @@ Section anchors are slugified headers:
 
 **BAD — the essay (rejected 2026-09-22; one of nine such paragraphs in a 70-line entry):**
 
-> **[/token-management](/token-management)** — "I rent the most expensive brain I can get" stopped being the whole answer: Igor can burn through a $200/month plan, and the model he actually wants runs out before the plan around it does. The post opens with OpenRouter's price list as of September 18… _(eleven more sentences, three quotes, five numbers, a file-rename anecdote)_
+> **[/token-management](/token-management)** — "I rent the most expensive brain I can get" stopped being the whole answer: Igor can burn through a \$200/month plan, and the model he actually wants runs out before the plan around it does. The post opens with OpenRouter's price list as of September 18… _(eleven more sentences, three quotes, five numbers, a file-rename anecdote)_
 
 **GOOD — one line per change, specific, linked:**
 
@@ -232,18 +237,18 @@ _58 commits this week_
 
 ### New posts
 
-- **How I Manage AI Tokens (new post!)** - Route work by subscription-window pace, not model quality; quota-axi reads every CLI's quota in one second. ([blog](/token-management)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/25aeb037c)
-- **AI Orchestrators (new post!)** - An orchestrator is everything around the agent; ten breaks, each adding one block. ([blog](/ai-orchestrator)) [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/e462fbf19)
+- **[How I Manage AI Tokens](/token-management) (new post!)** - [Route work by subscription-window pace](https://github.com/idvorkin/idvorkin.github.io/commit/25aeb037c), not model quality; quota-axi reads every CLI's quota in one second.
+- **[AI Orchestrators](/ai-orchestrator) (new post!)** - An orchestrator is [everything around the agent](https://github.com/idvorkin/idvorkin.github.io/commit/e462fbf19); ten breaks, each adding one block.
 
 ### Other Projects (2026-09-21)
 
 **[exercise-analyzer](https://github.com/idvorkin/exercise-analyzer)** (iPhone exercise form analyzer)
 
-- **Split squats recognized and scored** - tracks hip height over the lower foot, so a plate hiding the head no longer reads as swings. [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/6d617d87c)
-- **Chart zoom and pan** - pinch, drag; a sideways swipe pans instead of navigating back. [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer/commit/307099851)
+- **[Split squats recognized and scored](https://github.com/idvorkin/exercise-analyzer/commit/6d617d87c)** - [tracks hip height over the lower foot](https://github.com/idvorkin/exercise-analyzer/commit/6d617d87c), so a plate hiding the head no longer reads as swings.
+- **[Chart zoom and pan](https://github.com/idvorkin/exercise-analyzer/commit/307099851)** - pinch, drag; [a sideways swipe pans](https://github.com/idvorkin/exercise-analyzer/commit/307099851) instead of navigating back.
 ```
 
-The GOOD version is specific (it names the actual change, read from the diff) and short (one line, one link, no quotes).
+The GOOD version is specific (it names the actual change, read from the diff), short (one line, no quotes), and every link sits inline on the words it backs.
 
 ## Common Themes to Look For
 
@@ -351,29 +356,25 @@ If `chop-conventions` has zero commits in the window (rare), drop the section en
 ```markdown
 **[Settings](https://github.com/idvorkin/Settings)** (dotfiles & tools)
 
-- Added terminal tab switching command [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/HASH)
+- Added [terminal tab switching](https://github.com/idvorkin/Settings/commit/HASH) command
 ```
 
-**For explainers/apps with deployments** (link name to deployment, icon to repo):
+**For explainers/apps with deployments** (link name to deployment, `repo` to the repo):
 
 ```markdown
-**[monitor-explainer](https://monitor-explorer.surge.sh)** (visualization) [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer)
+**[monitor-explainer](https://monitor-explorer.surge.sh)** (visualization, [repo](https://github.com/idvorkin/monitor-explainer))
 
-- Added comprehensive content [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer/commit/HASH)
+- Added [comprehensive content](https://github.com/idvorkin/monitor-explainer/commit/HASH)
 ```
 
 ### Link Patterns
 
-| Type          | Name Links To   | GitHub Icon                              |
-| ------------- | --------------- | ---------------------------------------- |
-| Regular repo  | GitHub repo     | Commit link                              |
-| Explainer/app | Live deployment | Repo link (header) + Commit link (items) |
+| Type          | Name Links To   | Commits                                         |
+| ------------- | --------------- | ----------------------------------------------- |
+| Regular repo  | GitHub repo     | Inline on the phrases each commit backs         |
+| Explainer/app | Live deployment | `repo` link in the header + inline commit links |
 
-### GitHub Icon Link Format
-
-```
-[<i class="fa fa-github"></i>](https://github.com/idvorkin/REPO_NAME/commit/SHORTHASH)
-```
+Commit URL: `https://github.com/idvorkin/REPO_NAME/commit/SHORTHASH`.
 
 ## Commit Message
 
