@@ -94,7 +94,7 @@ How badly does a ranked list of activities survive my own journals?
 - Vibe coding is creative, productive, shipping — and I filed it next to social media as an addiction that was finally dissolving.
 - One January entry puts "work-a-holic / TikTok" under a single heading and routes both to the same word: _intoxicated_.
 
-Nothing sits still. Which is the finding: **the activity is not the variable.** Deliberateness is — did you pick it. Intent is — what you picked it for. Stopping energy is. The activity is just where you find out. [ACT](/act#the-choice-point--towards-moves-and-away-moves) got there first from the therapy side: _never the form, always the function_.
+Nothing sits still. Which is the finding: **the activity is not the variable.** Deliberateness is — did you pick it. Intent is — what you picked it for. Stopping energy is. The activity is just where you find out. [ACT](/act#the-one-question) got there first from the therapy side: _never the form, always the function_.
 
 The two lists below are still worth having — they're where the good and bad bets usually land. Treat them as priors, not verdicts.
 
