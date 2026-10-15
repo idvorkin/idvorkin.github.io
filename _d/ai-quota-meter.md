@@ -59,7 +59,7 @@ This morning my Claude plan had plenty left for the week. But the top model's ow
 
 Agents make this worse. When I'm typing, I'm the rate limiter. When agents are running unattended, nobody is.
 
-So I pay for Claude, Codex and Grok, with API keys for everything else. Now the question is which one should pay for each job, and I need numbers to answer it.
+So I pay for Claude, Codex and Grok, with API keys for everything else ([the bill, and what each one is for](/ai-subscriptions)). Now the question is which one should pay for each job, and I need numbers to answer it.
 
 ## Measuring with quota-axi
 
