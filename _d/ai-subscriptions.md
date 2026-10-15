@@ -19,7 +19,7 @@ INSTRUCTIONS FOR CLAUDE — do not render
 - This post is what I pay for and what each subscription buys me. How I split a job across the windows lives in /token-management; don't duplicate it here.
 -->
 
-I pay about \$350 a month for AI, across four subscriptions. People ask which ones are worth it, so here's the bill, what each line buys me, and the one rule that keeps it from growing.
+I pay about \$350 a month for AI, across four subscriptions. Is that worth it? One heavy week of agent work at API prices cost me \$230; the subscription that covers every week of the month costs \$200. And what the \$200 buys isn't a chatbot, it's brilliant collaborators who force multiply everything I do and train me up while they're at it. The other \$150 buys a second and third coding agent for when the first one's window runs dry, and a voice for my life coach. Here's the bill, what each line buys me, and the one rule that keeps it from growing.
 
 {% include ai-slop.html percent="70" %}
 
@@ -33,6 +33,7 @@ I pay about \$350 a month for AI, across four subscriptions. People ask which on
 - [Grok: Anything That Happened on X](#grok-anything-that-happened-on-x)
 - [ElevenLabs: Larry's Voice](#elevenlabs-larrys-voice)
 - [Everything Else Is Pay Per Use](#everything-else-is-pay-per-use)
+  - [Muse Contributor: The Best Deal on the Bill](#muse-contributor-the-best-deal-on-the-bill)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -93,6 +94,12 @@ It's the one subscription my [quota meter](/token-management#put-it-where-you-al
 
 ## Everything Else Is Pay Per Use
 
-For models with no subscription, I use [OpenRouter](/ai-speed-vs-thinking): one key, every model, paid per token. Today that's mostly image generation, Muse Image and GPT Image for the raccoons on this blog, because none of my four subscriptions covers it. For cheap bulk work on public code, there's [Muse contributor](/token-management#muse-contributor-on-public-repos), direct from Meta, at a tenth of the standard price in exchange for training on the prompts.
+For models with no subscription, I use [OpenRouter](/ai-speed-vs-thinking): one key, every model, paid per token. Today that's mostly image generation, Muse Image and GPT Image for the raccoons on this blog, because none of my four subscriptions covers it.
+
+### Muse Contributor: The Best Deal on the Bill
+
+[Muse contributor](/token-management#muse-contributor-on-public-repos) deserves its own paragraph because it's such a good deal. It's Meta's Muse Spark model, direct from Meta, at \$0.10 per million tokens in and \$0.20 out, against \$1.25 and \$4.25 for the same model at the standard price. That's a lot of intelligence for roughly a tenth of what it should cost, which makes it my pick for bulk work: review passes across a whole repo, GitHub Actions, anything where I'd otherwise think twice about the token count.
+
+The catch is the name. Contributor means Meta trains on your prompts and completions. So the rule is public data only: on a public repo the prompt is the diff, and the diff is already public, so there's nothing to lose. Private code, journals, anything I wouldn't put in a public issue, stays on the standard tier or on a subscription.
 
 The test for a new line on the bill is the same test for every one above: is there something I'd do daily that no current subscription covers? Image generation passed. Nothing else has.
