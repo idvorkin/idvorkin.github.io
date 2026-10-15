@@ -19,7 +19,7 @@ INSTRUCTIONS FOR CLAUDE — do not render
 - This post is what I pay for and what each subscription buys me. How I split a job across the windows lives in /token-management; don't duplicate it here.
 -->
 
-I pay about \$350 a month for AI, across four subscriptions. Is that worth it? One heavy week of agent work at API prices cost me \$230; the subscription that covers every week of the month costs \$200. And what the \$200 buys isn't a chatbot, it's brilliant collaborators who force multiply everything I do and train me up while they're at it. The other \$150 buys a second and third coding agent for when the first one's window runs dry, and a voice for my life coach. Here's the bill, what each line buys me, and the one rule that keeps it from growing.
+I pay about \$350 a month for AI, across four subscriptions. Is that worth it? One heavy week of agent work at API prices cost me \$230; the subscription that covers every week of the month costs \$200. And the \$200 doesn't buy a chatbot, it buys brilliant collaborators who force multiply everything I do and train me up while they're at it. The other \$150 buys a second and third coding agent for when the first one's window runs dry, and a voice for my life coach.
 
 {% include ai-slop.html percent="70" %}
 
@@ -54,52 +54,46 @@ Prices as of October 2026, US, billed monthly:
 
 </div>
 
-That's about \$4,200 a year. My [CHOP setup](/how-igor-chops#the-most-expensive-i-can-get) already makes the case for the first \$2,400: brilliant collaborators who force multiply everything I do are cheap at that price. The rest of this post is why the other three lines exist.
-
 ## Subscriptions, Not API Keys
 
 The rule: anything agentic runs on a subscription, never on a pay-per-token key.
 
-A subscription is flat rate. A key is a meter. When I'm typing, I'm the rate limiter and the difference is small. When agents run unattended, with a swarm of background workers rebuilding a site or reviewing a PR, nobody is the rate limiter, and the meter spins. I learned this the expensive way in [the \$230 week](/ai-journal#the-230-week-when-cheap-coding-isnt): an API key inherited from my shell environment silently switched Claude Code from my subscription to per-token billing, and a twelve-hour session plus background agents cost me \$230 I never needed to spend.
+A subscription is flat rate. A key is a meter. When I'm typing, I'm the rate limiter. When agents run unattended, nobody is, and the meter spins. [The \$230 week](/ai-journal#the-230-week-when-cheap-coding-isnt) taught me that: an API key inherited from my shell silently switched Claude Code from my subscription to per-token billing, and a twelve-hour session plus background agents cost \$230 I never needed to spend.
 
-So every coding agent I run, Claude Code, Codex CLI and Grok CLI, runs on its subscription, and I scrub the API keys out of their environment on purpose. The subscriptions are use-it-or-lose-it windows, which is its own problem: which one should pay for which job is [how I manage AI tokens](/token-management).
+So Claude Code, Codex CLI and Grok CLI each run on their subscription, and I scrub the API keys out of their environment on purpose. The windows are use-it-or-lose-it; which one pays for which job is [how I manage AI tokens](/token-management).
 
 ## Claude: Where I Live
 
-Claude Code is where I spend my day. All my coding is [CHOP](/how-igor-chops), most of it through subagents working in parallel worktrees, and [Larry](/larry), my life coach, is a long-running Claude Code session with a Telegram bridge. When I send Larry a voice note from a walk, that's the \$200 at work.
+All my coding is [CHOP](/how-igor-chops) in Claude Code, most of it through subagents in parallel worktrees, and [Larry](/larry), my life coach, is a long-running Claude Code session with a Telegram bridge. When I send Larry a voice note from a walk, that's the \$200 at work.
 
-I started on the \$20 plan, moved to \$100 after a friend told me LLM spend was the productivity lever, and the 20x tier followed when the 5x ran dry. Even at 20x the plan isn't one meter: the top model has its own weekly window inside the weekly window, and [it runs out first](/token-management#why-buying-the-best-stopped-working). That's the main reason the next two subscriptions exist.
+I climbed from \$20 to \$100 to \$200 as each plan ran dry ([the journal has the history](/ai-journal#2025-07-20)), and even at 20x [the top model's own window runs out first](/token-management#why-buying-the-best-stopped-working). That's why the next two lines exist.
 
 ## ChatGPT: Really a Codex Subscription
 
-I don't pay OpenAI for the chat app. I pay for Codex. OpenAI added the \$100 Pro tier in April 2026 specifically for heavy Codex use, 5x the Plus allowance, and that's exactly what I wanted it for.
+I don't pay OpenAI for the chat app. I pay for Codex. The \$100 Pro tier, added in April 2026 for heavy Codex use at 5x the Plus allowance, is exactly what I wanted.
 
-Codex is my second coding agent. When Claude's weekly window is thin, coding goes to Codex instead of waiting for the reset. It also gets its own seat in my review loop: the [no-mistakes gate](https://github.com/kunchenguid/no-mistakes) on my blog runs a second model's review before anything merges, with Codex as one of the fallbacks. My notes from [first trying it](/ai-journal#testing-codex-after-running-out-of-tokens) still hold: Codex reads more of the content than Claude does, and struggles more when the input is messy.
-
-Images used to be the other reason to open ChatGPT. That moved to pay-per-use image models, below.
+When Claude's weekly window is thin, coding goes to Codex instead of waiting for the reset, and Codex is a fallback reviewer in the [no-mistakes gate](https://github.com/kunchenguid/no-mistakes) that checks my blog before anything merges. My notes from [first trying it](/ai-journal#testing-codex-after-running-out-of-tokens) still hold: Codex reads more of the content than Claude does, and struggles more when the input is messy.
 
 ## Grok: Anything That Happened on X
 
-AI news lands on X first, and Grok is the only model that searches it. Any question about X, or about something that happened this week, goes to `grok -p` headless from my terminal. The others answer from training data or a web search that misses the threads.
+AI news lands on X first, and Grok is the only model that searches it. Any question about X, or about something that happened this week, goes to `grok -p` headless from my terminal.
 
-The \$30 also buys a third coding agent. Grok CLI takes overflow builds from [my cockpit](/ai-cockpit), and it runs first in my blog's no-mistakes gate, with Codex and Claude as fallbacks, because its window is the cheapest one to spend. Its credits reset the soonest of the three, so a job dispatched there late in the day costs nothing I wasn't about to lose anyway.
-
-Grok also answers questions the other models lecture me about. My [AI security](/ai-security) post has an example.
+The \$30 also buys a third coding agent. Grok CLI takes overflow builds from [my cockpit](/ai-cockpit) and runs first in the no-mistakes gate, because its window is the cheapest one to spend and resets the soonest. It also answers questions the other models lecture me about; my [AI security](/ai-security) post has an example.
 
 ## ElevenLabs: Larry's Voice
 
-Larry talks. When I send him a voice note on Telegram, he can answer with one, and that voice is an ElevenLabs voice. [Tony](/tesla), my car, uses an ElevenLabs voice too. I'm on the Creator tier because the voice clones I use need it; I first played with ElevenLabs' instant clones in my [AI bestie](/ai-bestie) post and never stopped.
+When I send Larry a voice note on Telegram, he answers with one, in an ElevenLabs voice. [Tony](/tesla), my car, talks with one too. I'm on the Creator tier because the voice clones I use need it; I first played with ElevenLabs' instant clones in my [AI bestie](/ai-bestie) post and never stopped.
 
-It's the one subscription my [quota meter](/token-management#put-it-where-you-already-look) can't read from a CLI credential, so the Cockpit asks ElevenLabs directly for characters used and when they reset.
+It's the one subscription my [quota meter](/token-management#put-it-where-you-already-look) can't read from a CLI credential, so the Cockpit asks ElevenLabs directly.
 
 ## Everything Else Is Pay Per Use
 
-For models with no subscription, I use [OpenRouter](/ai-speed-vs-thinking): one key, every model, paid per token. Today that's mostly image generation, Muse Image and GPT Image for the raccoons on this blog, because none of my four subscriptions covers it.
+For models with no subscription, I use [OpenRouter](/ai-speed-vs-thinking): one key, every model, paid per token. Today that's mostly image generation, Muse Image and GPT Image for the raccoons on this blog, because none of the four subscriptions covers it.
 
 ### Muse Contributor: The Best Deal on the Bill
 
-[Muse contributor](/token-management#muse-contributor-on-public-repos) deserves its own paragraph because it's such a good deal. It's Meta's Muse Spark model, direct from Meta, at \$0.10 per million tokens in and \$0.20 out, against \$1.25 and \$4.25 for the same model at the standard price. That's a lot of intelligence for roughly a tenth of what it should cost, which makes it my pick for bulk work: review passes across a whole repo, GitHub Actions, anything where I'd otherwise think twice about the token count.
+[Muse contributor](/token-management#muse-contributor-on-public-repos) is Meta's Muse Spark model, direct from Meta, at \$0.10 per million tokens in and \$0.20 out, against \$1.25 and \$4.25 for the same model at the standard price. That's a lot of intelligence for a tenth of what it should cost, which makes it my pick for bulk work: review passes across a whole repo, GitHub Actions, anything where I'd otherwise think twice about the token count.
 
-The catch is the name. Contributor means Meta trains on your prompts and completions. So the rule is public data only: on a public repo the prompt is the diff, and the diff is already public, so there's nothing to lose. Private code, journals, anything I wouldn't put in a public issue, stays on the standard tier or on a subscription.
+The catch is the name. Contributor means Meta trains on your prompts and completions. So: public data only. On a public repo the prompt is the diff, and the diff is already public. Private code, journals, anything I wouldn't put in a public issue, stays on the standard tier or on a subscription.
 
-The test for a new line on the bill is the same test for every one above: is there something I'd do daily that no current subscription covers? Image generation passed. Nothing else has.
+The test for a new line on the bill: is there something I'd do daily that no current subscription covers? Image generation passed. Nothing else has.
