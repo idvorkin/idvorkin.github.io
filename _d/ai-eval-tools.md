@@ -117,9 +117,11 @@ More scanner than eval harness: it probes an LLM app for injection, leakage, and
 
 This tier runs agents inside containers, which buys isolation (the agent can safely get full permissions, the sandbox fight I lost on my [codex runs](/ai-testing#grading-the-agent-with-smevals)), reproducible task images, and parallelism.
 
-- **Terminal-Bench** is my blog-edit eval, professionalized: each task is a Docker container with setup plus a verifier, and it benchmarks the real CLI harnesses (Claude Code, Codex) on terminal tasks. Since Nov 2025 the harness is **Harbor**; the `tb` CLI is the legacy 1.x path.
+- **[Terminal-Bench](https://www.tbench.ai/)** is my blog-edit eval, professionalized: each task is a Docker container with setup plus a verifier, and its leaderboard ranks each model inside a real CLI harness (Opus in Claude Code, GPT in Codex). Since Nov 2025 the harness is **Harbor**; the `tb` CLI is the legacy 1.x path.
 - **SWE-bench** builds a Docker image per issue and grades on whether the repo's tests pass. The agent (SWE-agent, now mostly mini-SWE-agent) is a separate layer on top.
 - **METR Vivaria** runs METR's dangerous-capability evals: agents in containers against their Task Standard.
+
+{% include repo_image.html src="terminal-bench.webp" %}
 
 Both benchmarks containerize, but not the same thing, which is what I went looking for. Terminal-Bench puts _the agent_ in the box: it gets a shell, the tests are copied in after its clock stops, and only the final container state is graded ("they do not test the agent's commands or console output," per the [Terminal-Bench 2.0 paper](https://arxiv.org/abs/2601.11868)). SWE-bench puts only _the grading_ in the box: it takes a finished patch, applies it, runs the tests, and tears down. There is no agent code in the benchmark repo. The vocabularies show it: Terminal-Bench's unit is a **trial**, "a rollout that produces a reward," run by an **agent**; SWE-bench's is a **task instance**, and the thing under test is a field called `model_name_or_path`, from when the subject was a model emitting a diff. Neither is a security boundary: both leave the network open.
 
