@@ -10,7 +10,7 @@ tags:
   - security
 ---
 
-I returned my old work phone, an iPhone 14, and forgot about it. Then Find My pinged: a phone I hadn't touched in two years was in Shenzhen, in the electronics-market district, 6,472 miles away. My first thought was not "huh, neat." It was: years of my life are on that phone, and somebody over there makes a living opening phones. So I did what I do with every worry, which is read until the worry turns into a model. The model says my data is fine, and Apple built it so I don't have to trust anyone's good intentions.
+I returned my old work phone, an iPhone 14, about two years ago and forgot about it. Then Find My showed it in Shenzhen, in the electronics-market district, 6,472 miles away. That worried me. Years of my data are on that phone, and somebody over there makes a living opening phones. So I dug into how the iPhone protects that data. Short answer: it's fine. Here's why.
 
 {% include repo_image_float_right.html src="find-my-iphone14-shenzhen.webp" alt="Find My screenshot: a map of Shenzhen with a phone pin near Shennan Middle Road, and a card reading Igor iPhone 14, Shenzhen, Guangdong, China, Erase pending" %}
 
