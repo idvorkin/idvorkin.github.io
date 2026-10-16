@@ -21,6 +21,8 @@ import {
 // Import random-prompter functionality
 import { TreeNode, add_random_prompts, add_sunburst, add_sunburst_from_dom } from "./random-prompter";
 
+// Import random-visit re-roll dice
+import { goToRandomPage } from "./random-dice";
 // Import recent posts functionality
 import { initRecentAllPosts } from "./recent";
 // Import deep-link scroll correction
@@ -141,6 +143,7 @@ export {
   defer,
   get_link_info,
   get_random_page_url,
+  goToRandomPage,
   // Export the interface types
   type IURLInfo,
   type IURLInfoMap,

@@ -16,6 +16,7 @@ import "./graph";
 import { initDevInfo } from "./dev-info";
 import { enableHeaderCopyLinks } from "./header-copy-link";
 import { enableImageZoom } from "./image-zoom";
+import { initRandomDice } from "./random-dice";
 import { rememberTestOrigin, swapProdAndTest } from "./swap-prod-test";
 
 // Type declarations for external libraries
@@ -493,6 +494,9 @@ function load_globals() {
 
   // Initialize dev info display
   initDevInfo();
+
+  // Re-roll dice when this page was reached via /random
+  initRandomDice();
 }
 
 export {
