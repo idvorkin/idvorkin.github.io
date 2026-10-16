@@ -21,7 +21,7 @@ INSTRUCTIONS FOR CLAUDE — do not render
 
 I pay about \$350 a month for AI, across four subscriptions. Is that worth it? One heavy week of agent work at API prices cost me \$230; the subscription that covers every week of the month costs \$200. And the \$200 doesn't buy a chatbot, it buys brilliant collaborators who force multiply everything I do and train me up while they're at it. The other \$150 buys a second and third coding agent for when the first one's window runs dry, and a voice for my life coach.
 
-{% include ai-slop.html percent="70" %}
+{% include ai-slop.html percent="90" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
