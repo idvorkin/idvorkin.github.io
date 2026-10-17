@@ -34,11 +34,11 @@ Every time I want to compare models, prompts, or agent harnesses I trip over the
 Criteria, learned while building [my first real eval](/ai-testing#grading-the-agent-with-smevals):
 
 1. Agent in a workdir. The thing under test is an agent changing files through a harness (Claude Code, Codex), not prompt in, completion out. Models are now trained with their harness and bound to it, so the model-plus-harness score is the one that matters. Same as with people: I judge someone working in their environment, not alone in an interview room.
-2. Deterministic checkers first: string matches, git diffs, my own tools as oracles. LLM judges are opt-in for quality, never the default gate.
+2. Deterministic checkers first: string matches, git diffs, my own tools as oracles. LLM judges are opt-in for quality, never the default gate, and when I use one it answers a list of yes/no assertions and cites the step it's judging, not a 1–5 score (from [Yesha Shah's Agentic Evals guide](https://www.linkedin.com/pulse/agentic-evals-software-engineers-guide-part-1-yesha-shah-sdjle/)).
 3. Decoupled grading. Runs are immutable records on disk, so a new grader re-scores old runs without re-paying for them.
 4. Local-first: plain files in a repo, no SaaS account before hello world.
 5. Cheap authoring: YAML plus small scripts.
-6. A leaderboard by config × model, with per-task splits.
+6. A leaderboard by config × model, with per-task splits. Each task runs k times, reporting pass^k (passed every time) next to pass@k (passed once), with harness failures counted apart from agent failures (also from [Shah's guide](https://www.linkedin.com/pulse/agentic-evals-software-engineers-guide-part-1-yesha-shah-sdjle/)).
 
 ## Our benchmark evals
 
@@ -128,6 +128,8 @@ Both benchmarks containerize, but not the same thing, which is what I went looki
 [OpenRouter Benchmarks](https://openrouter.ai/benchmarks) is the other end: no box and no harness, just public benchmarks (τ²-Bench, GPQA Diamond, BrowseComp, image, video, speech) run against OpenRouter API requests, with quality, cost, and speed for each model and config. It's the table I'd use to pick a model for a raw API call. It can't tell me how that model does inside Claude Code.
 
 {% include repo_image.html src="openrouter-benchmarks.webp" %}
+
+[EQ-Bench 4](https://eqbench.com/) is the people-skills version: each model holds an eight-turn roleplay with a simulated user persona, and a panel of three LLM judges compares the transcripts pairwise on rapport, attunement, and repairing trust, reported with confidence intervals. Its sibling [Spiral-Bench](https://eqbench.com/spiral-bench.html) uses the same simulated-user trick to score whether a model pushes back on a user's delusional spiral or feeds it.
 
 The catch is that these are benchmark-first; custom tasks mean adopting their image conventions. smevals stays out of it: its Runner can `docker run` when a container runtime exists, but manages none of it.
 
