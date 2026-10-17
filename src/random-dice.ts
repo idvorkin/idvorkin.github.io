@@ -26,7 +26,7 @@ export const ROLL_MS = 550;
 // pill moves up to 70px, so the dice climbs higher.
 const DICE_CSS = `
 #${WRAP_ID}{position:fixed;right:max(4px, env(safe-area-inset-right));
-  bottom:calc(80px + env(safe-area-inset-bottom));z-index:9999;width:48px;height:48px}
+  bottom:calc(80px + env(safe-area-inset-bottom));z-index:9990;width:48px;height:48px}
 body:has(#rd-nav) #${WRAP_ID}{bottom:calc(120px + env(safe-area-inset-bottom))}
 #${DICE_ID}{width:48px;height:48px;padding:0;font-size:28px;line-height:48px;text-align:center;
   border:0;border-radius:50%;color:#000;background:rgba(255,255,255,.92);box-shadow:0 2px 8px rgba(0,0,0,.3);
@@ -126,6 +126,29 @@ export async function goToRandomPage(
   return url;
 }
 
+const TOC_SELECTOR = "#id-ui-toc-dropdown";
+const TOC_GAP_PX = 12;
+
+/**
+ * Keep the dice clear of the TOC button. The CSS default (80px) already
+ * clears the TOC's usual box (bottom 20px + 48px tall); this only ever raises
+ * the dice, e.g. when iOS text scaling makes the TOC taller. It never moves
+ * the TOC, and it is a no-op while the TOC is missing or hidden.
+ */
+export function keepClearOfToc(wrap: HTMLElement, doc: Document = document): void {
+  const toc = doc.querySelector<HTMLElement>(TOC_SELECTOR);
+  wrap.style.removeProperty("bottom");
+  if (!toc) return;
+  const tocBox = toc.getBoundingClientRect();
+  if (tocBox.height === 0) return;
+  const diceBox = wrap.getBoundingClientRect();
+  const overlap = diceBox.bottom + TOC_GAP_PX - tocBox.top;
+  if (overlap > 0) {
+    const currentBottom = window.innerHeight - diceBox.bottom;
+    wrap.style.bottom = `${Math.ceil(currentBottom + overlap)}px`;
+  }
+}
+
 export function initRandomDice(doc: Document = document): HTMLButtonElement | null {
   if (!isRandomArrival(window.location.pathname) || doc.getElementById(DICE_ID)) {
     return null;
@@ -176,5 +199,9 @@ export function initRandomDice(doc: Document = document): HTMLButtonElement | nu
 
   wrap.append(button, close);
   doc.body.appendChild(wrap);
+  keepClearOfToc(wrap, doc);
+  window.addEventListener("resize", () => keepClearOfToc(wrap, doc));
+  // The TOC can render after us (its contents are generated on ready).
+  window.setTimeout(() => keepClearOfToc(wrap, doc), 1000);
   return button;
 }
