@@ -9,7 +9,7 @@ redirect_from:
 
 It's midwinter break and I've got a week off. Most of these I try to do as a big family adventure. Finding something everyone wants to do is super challenging, so this time we tried something new, divide and conquer: I had a 1-2 day mini-vacations with Amelia, Zach, and even Tori. It worked out very well, the time-off was packed, Stanley Park with Amelia, Yellow Deli with Zach, and a crazy hotel on the Peninsula with Tori. On top of that restarting magic, balloons, and kettlebells and meditation in between.
 
-Long ago, I learned I should pre-write these, but I decided (implicitly, by not applying discipline) to wing it, so I'm writing this at the end of the vacation.
+Long ago, I learned I should pre-write these, but I decided (implicitly, by not applying discipline) to wing it, so I'm writing this at the end of the vacation. For why I take time off, and the rules I try to follow, see [/timeoff](/timeoff).
 
 This time off was probably easier than others as I got many environmental boosts to my inner peace:
 
