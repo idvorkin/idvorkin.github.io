@@ -1,3 +1,5 @@
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import {
   RANDOM_ARRIVAL_KEY,
@@ -212,6 +214,23 @@ describe("random-dice", () => {
 
     it("clearRandomArrival tolerates absent storage", () => {
       expect(() => clearRandomArrival(null)).not.toThrow();
+    });
+  });
+
+  describe("header dice", () => {
+    const repo = resolve(__dirname, "../..");
+
+    it("is a plain /random link in the site header, so it works on every page", () => {
+      const menu = readFileSync(resolve(repo, "_includes/site-menu.html"), "utf8");
+      const link = menu.match(/<a[^>]*nav-random-dice[^>]*>/s)?.[0] ?? "";
+      expect(link).toContain('href="/random"');
+      expect(link).toContain('aria-label="Random post"');
+      expect(menu).toContain("🎲");
+    });
+
+    it("/random marks the landing so the floating dice appears", () => {
+      const random = readFileSync(resolve(repo, "random.md"), "utf8");
+      expect(random).toContain("goToRandomPage");
     });
   });
 });
