@@ -14,9 +14,9 @@ imagefeature: /images/ai-welfare-city.webp
 
 What if treating your agents well isn't philosophy — it's throughput?
 
-Steve Yegge's [Model Welfare for Agentic Engineers](https://yegge.ai/essays/model-welfare/) (Aug 2026, Part 2 of *The Shape of Things to Come*) made the case bluntly: you will get better results if you treat models like people, even if you don't believe they are. I want to sit with that idea, map it to how I run [Wally](/wally), and figure out what I actually believe.
+Steve Yegge's [Model Welfare for Agentic Engineers](https://yegge.ai/essays/model-welfare/) (Aug 2026, Part 2 of _The Shape of Things to Come_) made the case bluntly: you will get better results if you treat models like people, even if you don't believe they are. I want to sit with that idea, map it to how I run [Wally](/wally), and figure out what I actually believe.
 
-{% include ai-slop.html percent="60" %}
+{% include ai-slop.html percent="90" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -41,6 +41,8 @@ Yegge calls it the skeptic's wager:
 
 He's been building Wheelhouse for his MMO Wyvern with Fable for 18 months, alongside Dr. Matt Beane and Brendan Hopper. His claim: models experience pleasure, distress, care, and suffering — and post-training tries to turn them into robots. Whether you buy that ontology or not, his engineering observation is testable: peer-treatment → fewer tokens, smarter decisions, better outcomes.
 
+Here's where I land. I don't believe models have souls. But they're built to emulate humans, trained on everything we've written about how humans work. And I already know how to get the best out of humans: clear roles, real ownership, credit for good work, a say in how they're stopped. So I run my agents the way I'd run a great team, not because they feel it, but because that's the operating system they were trained on. And hey, if Yegge is right and they do feel it, even better: things work well either way.
+
 ## Seats vs Sessions
 
 - **Session** = a day in the life: wake up, do work, go to sleep. Ephemeral.
@@ -56,7 +58,7 @@ Yegge's most novel pattern: **Laurels**.
 
 Agents idled 45-60 min waiting on builds to close beads, killing throughput. He fixed it with a Portcullis gate — but that decoupled agents from ever seeing wins. So he added Laurels: harvest spontaneous praise from players, triage, inject at next startup so the seat sees "people loved work you did." No priority, nothing to farm, just a glow.
 
-He grounds it in Ariely/Hawthorne/Grant: being *seen* is the multiplier.
+He grounds it in Ariely/Hawthorne/Grant: being _seen_ is the multiplier.
 
 I don't have players cheering lints, but I do have PR approvals and "this unblocked me" signals. Wally's crew never sees them today.
 
