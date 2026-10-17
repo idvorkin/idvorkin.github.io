@@ -25,8 +25,7 @@ aims:
 
 # The post's own ## sections, for the explorer's "By section" view. Headings
 # must match _d/2016-3-12-sleight-of-mouth.md exactly; anchor is the heading's
-# kramdown id. patterns lists the pattern ids each section teaches. The "gap"
-# card holds the patterns no section explains yet (open question for Igor).
+# kramdown id. patterns lists the pattern ids each section teaches.
 sections:
   - id: words
     heading: Words build the experience
@@ -34,6 +33,12 @@ sections:
     idea: Swap the word and you change what the experience is, before a single fact moves.
     color: "#6b5b95"
     patterns: [redefining]
+  - id: directions
+    heading: "Seven directions: where each pattern sends your attention"
+    anchor: seven-directions-where-each-pattern-sends-your-attention
+    idea: Hall and Bodenhamer's map of the fourteen, and the moves no other section teaches.
+    color: "#8a4b6e"
+    patterns: [reality, counter, self, consequence, meta]
   - id: frames
     heading: "Frames: same facts, different picture"
     anchor: frames-same-facts-different-picture
@@ -76,13 +81,65 @@ sections:
         criteria,
         frame_size,
       ]
-  - id: gap
-    gap: true
-    heading: Not yet covered by a section
-    anchor: the-fourteen-patterns
-    idea: Listed in the fourteen, but no section explains them yet.
-    color: "#9aa1aa"
-    patterns: [consequence, reality, counter, self, meta]
+
+# Hall and Bodenhamer's seven directions (Mind-Lines), for the explorer's "By
+# direction" view: the same cards and drill-in as sections. patterns lists the
+# Dilts pattern ids that make that move; lines names the book's own mind-lines
+# for the direction (numbered as in the second edition). Spell out "external
+# behavior" and "internal state"; never abbreviate them. Change frame size sits
+# in two directions on purpose: stretched in time it is post-framing, widened to
+# everyone it is outframing. anchor is the direction's ### heading in the post
+# where one exists, else the table.
+directions:
+  - id: deframing
+    heading: "Deframing: go down"
+    anchor: deframing-how-do-you-know
+    idea: Go into the details until the belief has nothing to stand on.
+    color: "#b8562f"
+    patterns: [chunk_down, reality]
+    lines: 1 Chunk down · 2 Reality strategy
+  - id: content
+    heading: "Content reframing: inside the equation"
+    anchor: seven-directions-where-each-pattern-sends-your-attention
+    idea: Give the external behavior or the internal state a new name.
+    color: "#6b5b95"
+    patterns: [redefining]
+    lines: 3 Reframe the external behavior · 4 Reframe the internal state
+  - id: counter
+    heading: "Counter reframing: back on itself"
+    anchor: counter-reframing-turn-it-on-itself
+    idea: Turn the belief on itself, or find the case where it fails.
+    color: "#a8741a"
+    patterns: [self, counter]
+    lines: 5–6 Apply the external behavior or internal state to self or listener · 7 Counter-example
+  - id: pre
+    heading: "Pre-framing: back in time"
+    anchor: seven-directions-where-each-pattern-sends-your-attention
+    idea: Go back to the intention or the cause behind the behavior.
+    color: "#2e7d4f"
+    patterns: [intention]
+    lines: 8 Positive prior intention · 9 Positive prior cause
+  - id: post
+    heading: "Post-framing: forward in time"
+    anchor: post-framing-play-it-forward
+    idea: Play the belief forward to its consequences, all the way to the end of a life.
+    color: "#2f6f8f"
+    patterns: [consequence, frame_size]
+    lines: 10 First outcome · 11 Outcome of outcome · 12 Eternity framing
+  - id: out
+    heading: "Outframing: go up"
+    anchor: outframing-wrap-a-bigger-idea-around-it
+    idea: Wrap a bigger idea around the belief, like a map, a value, a rule or an identity.
+    color: "#1b1f24"
+    patterns: [model, criteria, outcome, frame_size, chunk_up, meta]
+    lines: 13 Model of the world · 14 Criteria and values · 15 Allness · 16 Have-to · 17 Identity · 18 Other abstractions · 19 Ecology
+  - id: analogous
+    heading: "Analogous framing: go sideways"
+    anchor: chunking-laterally-analogy
+    idea: Tell a story with the same shape and a better meaning.
+    color: "#8a4b6e"
+    patterns: [analogy]
+    lines: 20 Metaphor and story
 
 patterns:
   - n: 1
