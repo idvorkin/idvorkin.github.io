@@ -16,9 +16,9 @@ tags:
 sort_order: 200
 ---
 
-Wearing a silly hat or his zany $8 TEMU crazy shirt, his trusty folding bike at his feet, and using a purple fountain pen, Igor "Began with the end in mind" with the "important but not urgent" task of penning this eulogy, likely starting at 5am. Igor wanted this life, so he wrote it, he reviewed it, he lived it, and he worked with his family, friends, and multitude of mentors, to adjust and tweak it.
+Wearing a silly hat or his zany \$8 TEMU crazy shirt, his trusty folding bike at his feet, and using a purple fountain pen, Igor "Began with the end in mind" with the "important but not urgent" task of penning this eulogy, likely starting at 5am. Igor wanted this life, so he wrote it, he reviewed it, he lived it, and he worked with his family, friends, and multitude of mentors, to adjust and tweak it.
 
-_Add comments [here](https://hackmd.io/s90ojEpMTC-t51EFYnUuMw)_
+_Add comments [here](https://hackmd.io/s90ojEpMTC-t51EFYnUuMw). The raccoons illustrating each role have their own [visual history](/raccoon-history)_
 
 The eulogy as a song:
 
@@ -423,7 +423,7 @@ Things I cherish with Zach @ 10:
 * What activities give me the most pleasure
 * Changing I've incurred as I went through life
 * Big Ideas To Digest
-    * Non-judgemental
+    * Non-judgmental
     * Growth Mindset
     * Realize everyone is trying as hard as they can.
 

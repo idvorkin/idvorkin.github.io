@@ -203,7 +203,7 @@ _Note: The coffee shop represents a mental state - focused, relaxed, and ready t
 
 ### Daily Journaling
 
-My morning coffee shop time is when I do my [daily journaling](/process-journal). This practice helps me process my thoughts, set intentions for the day, and maintain mental clarity.
+My morning coffee shop time is when I do my [daily journaling](/process-journal). This practice helps me process my thoughts, set intentions for the day, and maintain mental clarity. The days that really work get bookmarked in [Day in the Life](/day-in-the-life).
 
 {%include summarize-page.html src="/process-journal" %}
 

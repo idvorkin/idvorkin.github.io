@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Save the Souse"
-tag:
+tags:
   - "software as a story"
   - "early career"
 ---
@@ -12,9 +12,9 @@ Internships are best approached as a long-term field trip. You should plan to be
 
 My buddy’s name is Biff.
 
-As our eye-opening experience learning to savor soup while sipping scotch revealed, not only did we learn a lot of technical skills during our Microsoft internship, but we also learned key life skills.
+As our eye-opening experience [learning to savor soup while sipping scotch](/save-the-soup) revealed, not only did we learn a lot of technical skills during our Microsoft internship, but we also learned key life skills.
 
-On the topic of life, Biff loved life. Biff also loved drinking, and loved driving – and – while sober, he had no trouble understanding that flirting with drinking and driving would ruin his relationship with life. But, as I learned that chilly Seattle fall, Biff’s sound judgment disappeared at quickly as the scotches – and was replaced by a foolish desire to drive drunk.
+On the topic of life, Biff loved life. Biff also loved drinking, and loved driving – and – while sober, he had no trouble understanding that flirting with drinking and driving would ruin his relationship with life. But, as I learned that chilly Seattle fall, Biff’s sound judgment disappeared as quickly as the scotches – and was replaced by a foolish desire to drive drunk.
 
 As an engineer, or perhaps as a foreshadowing of my future role as development lead, I'd devised a structural solution. When we went to parties, Biff got to drive us there, then I'd take his keys, savor my one and only one IPA and then be in charge of getting us home. The buddy system had thus far proven to be 100 proof effective.
 
@@ -46,6 +46,6 @@ Biff: Tada! I did it – give me the keys, I can drive.
 
 The party guests around us exclaimed in utter befuddlement: “What? Jesus, you should have died!” They pleaded, “Igor - do not let him drive! Keep his keys!”
 
-Morale of the story 1: Do not drive drunk, I don’t care how well you did it last time you were drunk.
+Moral of the story 1: Do not drive drunk, I don’t care how well you did it last time you were drunk.
 
-Morale of the story 2: Keep your friends safe – be creative if you can, throw them out a window if you must, but your obligation is paramount
+Moral of the story 2: Keep your friends safe – be creative if you can, throw them out a window if you must, but your obligation is paramount

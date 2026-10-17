@@ -1,14 +1,15 @@
 ---
 layout: post
 title: "Canadian Spotting"
-tag: "software as a story"
+tags:
+  - "software as a story"
 ---
 
 "I bet you the bill that dude by the window is Canadian," I challenged.
 
-{% include this_is_part_of_saas.md %}
-
 Sam, my favorite architect, glanced over the top of his menu and nodded his acceptance. Sam was over-confident given I'd lost our last two design debates.
+
+{% include this_is_part_of_saas.md %}
 
 But, as a Canadian engineer, I happen to know a bit about Mohawk Indians, Canadian bridges and epic failures, and I have no qualms about using said knowledge to pay for my IPA.
 
@@ -18,7 +19,7 @@ Mohawk men were the preferred steel workers of the time and with their help, con
 
 Because an engineer didn't do the right thing, the bridge fell and took the lives of 33 Mohawk steel workers with it.
 
-This tragedy still serves as a guiding principle to engineering students today. The students' wise predecessors had portions of that fallen bridge forged into iron rings, which are passed on during a secret ceremony, reminding graduating engineers to place ethics and moral obligations on the same tier as physics and mathematics. Just like the rings' previous owners, today's engineers hear the "clink, clink" on their desks as they work and are reminded of this paramount obligation.
+This tragedy still serves as a guiding principle to engineering students today. Legend has it the students' wise predecessors had portions of that fallen bridge forged into iron rings, which are passed on during a secret ceremony, reminding graduating engineers to place ethics and moral obligations on the same tier as physics and mathematics. Just like the rings' previous owners, today's engineers hear the "clink, clink" on their desks as they work and are reminded of this paramount obligation.
 
 The food was fantastic, and I clinked the table with my ring as Sam paid for my dinner!
 

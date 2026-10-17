@@ -464,7 +464,7 @@ My priority is "catching employees doing something right", so I can re-enforce p
 - Consider the first 90 days
 - Ensure you get coffee with everyone on the team
 - Get them checking in as soon as possible
-- Get them a mentor
+- Get them a mentor - a good one takes the job [surprisingly seriously](/sleeping-bag-sacrifices)
 
 ### How do you think about situational leadership
 
@@ -1800,6 +1800,8 @@ Lay out the trade-offs explicitly. How does each proposed solution affect each g
 Don't escalate the problem—escalate the decision. Come with options and context. Recommend a path forward,
 
 Pro tip: I always remind folks—if the priorities were obvious, they wouldn't be having this conversation.
+
+And when the stakes are safety or ethics, don't let an ignored warning drop — engineers wear [iron rings](/Canadian-Spotting) to remember what that costs.
 
 ## Team Insecurity
 

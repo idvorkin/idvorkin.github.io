@@ -44,7 +44,7 @@ Wearing a silly hat, his trusty folding bike at his feet, and using a purple fou
 <div class='alert alert-success' id="random-post">
     Will be replaced by an achievement blog post
 </div>
-Read my **[Eulogy](/eulogy)**. See my **[Memories ](/ig66)**
+Read my **[Eulogy](/eulogy)**. See my **[Memories ](/ig66)**. Play tourist at home with my **[Seattle list](/seattle)**
 
 ## General
 
@@ -133,7 +133,7 @@ Read my **[Eulogy](/eulogy)**. See my **[Memories ](/ig66)**
 - Put on a wig
 - Wear toe shoes
 - Wear Sequin Jacket
-- Wear my zany $8 TEMU crazy shirts
+- Wear my zany \$8 TEMU crazy shirts
 - Wear a Halloween costumes - Lama
 - Wear a Halloween costumes - Bird
 - Wear a Halloween costumes - Fish

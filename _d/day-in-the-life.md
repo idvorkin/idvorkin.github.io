@@ -36,12 +36,11 @@ A running journal of days that actually worked - the ones where health habits st
 - **4:45am** - Up and at 'em. My 5am Igor showing up strong. The world is quiet, my brain is sharp.
 
 - **4:45-6am** - Writing session. This is when the good stuff happens - before the world wakes up and starts demanding things.
-
   - Updated [Alfred workflows for OmniFocus automation support](https://gist.github.com/idvorkin/3dc1063731687e869d77dd296ac9b1ff)
   - Fixed up [nlp commit.py handlers to be faster](https://gist.github.com/idvorkin/c31ce489f2ae88942ee3f873b126d99c)
   - Because apparently 5am Igor loves optimizing task management
 
-- **6-7:45am** - [Hansel](TBD) came over to work on his podcast. Social connection happening naturally, not as something I had to schedule.
+- **6-7:45am** - Hansel came over to work on his podcast. Social connection happening naturally, not as something I had to schedule.
 
 - **8am** - Drove to the gym. The transition from creation mode to physical mode.
 
@@ -50,7 +49,6 @@ A running journal of days that actually worked - the ones where health habits st
 - **10am-1pm** - Joe Guppy's comedy writing class. Jury's still out on whether I'll enjoy it, but I showed up. That counts.
 
 - **1pm** - Professional Uber Driver™ mode activated. Drove Zach and his "super smart kids" crew to lunch at Golden Gardens. (See [gap year post](/gap-year-igor#the-squander-dragon-dialog) for the full philosophy on why this matters.)
-
   - In the car they played this game: phone picks a random letter, guess a country that starts with it
   - But wait - they had _rules_: No politically disputed countries, no historical country names, no regions
   - Then someone suggested switching to second letter instead of first
@@ -58,7 +56,6 @@ A running journal of days that actually worked - the ones where health habits st
   - Watching Zach hang out with his friends was awesome!
 
 - **Mid-lunch wait** - The kids were goofing around, so I had unexpected time. Meditated at Golden Gardens instead of doom-scrolling. Turned dead time into mindful time.
-
   - Thankfully I have my meditation bench in the car (along with everything else)
 
 - **Still waiting** - Recorded a Fortune Cookie video. Found the gap in the schedule and used it. Already in the right headspace from meditating.
@@ -73,8 +70,6 @@ A running journal of days that actually worked - the ones where health habits st
 
 ---
 
----
-
 ### 2018-11-06
 
 A perfect day.
@@ -86,14 +81,12 @@ A perfect day.
 - **7:30am** - Walked Zach to school, then came back to give Amelia a hug.
 
 - **Morning commute** - Biked to the subway.
-
   - Did a magic trick for a family on the subway who loved it
   - Biked up the main drag of downtown
 
 - **8:15am** - Got to work and started the day.
 
 - **Work day**:
-
   - Worked with HR to establish a common bar for the leadership team to assess all employees
   - Found and cleared a bottleneck for my most important Holiday Project
 
