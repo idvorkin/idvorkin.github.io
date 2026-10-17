@@ -51,6 +51,10 @@ Understanding the scale of loneliness is just the beginning. Research reveals sp
 - The shift toward solitude and convenience can create a self-reinforcing cycle of isolation, making it harder to reconnect over time.
 - Small, daily choices to reach out, show up, and invest in relationships can help reshape both personal and societal culture.
 
+Men have it especially bad here: once married, many lean on their wives as their only real friend. SNL's [Man Park](https://www.youtube.com/watch?v=9XOt2Vh0T8w) nails it — a dog park where wives drop off their husbands so the guys can finally talk to each other.
+
+{% include youtube.html src="9XOt2Vh0T8w" %}
+
 ### Loneliness
 
 **Long term loneliness is equivalent to smoking half a pack a day.**

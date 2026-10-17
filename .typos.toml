@@ -18,6 +18,7 @@ mis = "mis"  # Token of "mis-hire" (typos splits on the hyphen)
 "MoFo" = "MoFo"  # Slang term used intentionally
 "Fo" = "Fo"  # Token of MoFo (typos splits camelCase, so the MoFo entry alone doesn't cover it)
 "oter" = "oter"  # Part of YouTube ID 002oterS2Wg
+"Ot" = "Ot"  # Part of YouTube ID 9XOt2Vh0T8w (SNL Man Park)
 "vizualization" = "vizualization"  # In JS library
 "youre" = "youre"  # Intentional usage in TOC/headers
 "alls" = "alls"  # All's in TOC anchor (All's Right with the World)
