@@ -7,16 +7,18 @@ tags:
   - emotional intelligence
 redirect_from:
   - some
+  - /mind-lines
+  - /d/2018-09-23-mind-lines
 imagefeaturelocal: sleight-of-mouth-raccoon-reframe.webp
 ---
 
-Language, often unknown to us, creates our mental models, our reality, and defines our meaning. But the model is not the terrain, and by engaging with the language we can change mental models. Sleight of mouth (SoM) is a series of techniques for changing our models, reality and meanings, and thus our experiences. Our mental models are a frame, and we need help going from a 'problem frame' to an 'outcome frame', a 'failure frame' to a 'feedback frame', and an 'impossible frame' to an 'as if' frame. To experience the power of language, find anything that is invisible to you, and name it. Now that you've given it a name, see how you perceive it, and become aware of it.
+Language, often unknown to us, creates our mental models, our reality, and defines our meaning. But the model is not the terrain, and by engaging with the language we can change mental models. Sleight of mouth is a series of techniques for changing our models, reality and meanings, and thus our experiences. Our mental models are a frame, and we need help going from a 'problem frame' to an 'outcome frame', a 'failure frame' to a 'feedback frame', and an 'impossible frame' to an 'as if' frame. To experience the power of language, find anything that is invisible to you, and name it. Now that you've given it a name, see how you perceive it, and become aware of it.
 
-{% include ai-slop.html percent="40" %}
+{% include ai-slop.html percent="50" %}
 
 {% include local_image_float_right.html src="sleight-of-mouth-raccoon-reframe.webp" alt="Raccoon holding up a gold frame: outside it, rain falls on cracked mud; inside it, the same rain waters sprouting seedlings" %}
 
-These are my notes on Robert Dilts' _Sleight of Mouth_. Dilts reverse-engineered fourteen moves by modeling how people like Lincoln, Gandhi, and Socrates argued their way through other people's beliefs — and, more usefully, how you argue with your own. The post follows the argument in order: words build the experience, a limiting belief is the target, the fourteen patterns are the tools (grouped into frames, intention and redefining, chunking, and values), and the payoff is running several of them against one belief at once.
+These are my notes on Robert Dilts' _Sleight of Mouth_, with Michael Hall and Bobby Bodenhamer's _Mind-Lines_ folded in. Dilts reverse-engineered fourteen moves by modeling how people like Lincoln, Gandhi, and Socrates argued their way through other people's beliefs — and, more usefully, how you argue with your own. Hall and Bodenhamer took the same moves, renamed them mind-lines (because "sleight of mouth" sounds like a con), and sorted them into seven directions you can send a mind. The post follows the argument in order: words build the experience, a limiting belief is the target (an equation linking an external behavior to an internal state), the fourteen patterns are the tools, the seven directions are the map of where each tool sends your attention, and the payoff is running several of them against one belief at once.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -29,6 +31,11 @@ These are my notes on Robert Dilts' _Sleight of Mouth_. Dilts reverse-engineered
 - [The target: a limiting belief](#the-target-a-limiting-belief)
   - [Thought viruses](#thought-viruses)
 - [The fourteen patterns](#the-fourteen-patterns)
+- [Seven directions: where each pattern sends your attention](#seven-directions-where-each-pattern-sends-your-attention)
+  - [Deframing: how do you know?](#deframing-how-do-you-know)
+  - [Counter reframing: turn it on itself](#counter-reframing-turn-it-on-itself)
+  - [Post-framing: play it forward](#post-framing-play-it-forward)
+  - [Outframing: wrap a bigger idea around it](#outframing-wrap-a-bigger-idea-around-it)
 - [Frames: same facts, different picture](#frames-same-facts-different-picture)
   - [Outcome frame, not problem frame](#outcome-frame-not-problem-frame)
   - [Change frame size](#change-frame-size)
@@ -56,7 +63,7 @@ These are my notes on Robert Dilts' _Sleight of Mouth_. Dilts reverse-engineered
 
 ## Interactive version
 
-Pick a stuck belief from the dropdown, then try the patterns on it: the part of the belief a pattern pries at lights up (the evidence, the link, the conclusion, or the belief as a whole), and the reframed sentence appears right underneath. "About this pattern" explains the one in play, and "By section" groups the patterns by the section of this post that teaches them. (This replaces Dilts' original [1987 diagram](https://github.com/idvorkin/blob/raw/master/sleight-of-mouth.jpg), which packs the same fourteen moves around a single cancer example.)
+Pick a stuck belief from the dropdown, then try the patterns on it: the part of the belief a pattern pries at lights up (the evidence, the link, the conclusion, or the belief as a whole), and the reframed sentence appears right underneath. "About this pattern" explains the one in play, "By section" groups the patterns by the section of this post that teaches them, and "By direction" groups them by the [seven directions](#seven-directions-where-each-pattern-sends-your-attention) a pattern can send your attention: down, inside, back on itself, back in time, forward, up, or sideways. (This replaces Dilts' original [1987 diagram](https://github.com/idvorkin/blob/raw/master/sleight-of-mouth.jpg), which packs the same fourteen moves around a single cancer example.)
 
 {% include sleight-of-mouth-explorer.html %}
 
@@ -104,7 +111,14 @@ At the core is a limiting belief, and it almost always has the same shape: a sub
 | A speeding ticket | causes           | me to get poor because my insurance will be too expensive |
 | My back           | has hurt forever | so I'll never be able to get better                       |
 
-That because/means/causes link is where the patterns get their grip: each one loosens either the judgment or the link.
+Hall and Bodenhamer write that shape as an equation. On the left is an **external behavior**: something that happened, which you could catch on video. On the right is an **internal state**: the feeling, judgment or significance you attached to it. Nothing means anything by itself; the equation is where meaning gets made, and the link comes in two flavors:
+
+- **Cause-effect:** "When you raise your voice, you make me anxious."
+- **Complex equivalence:** "When you raise your voice, it means you don't respect me."
+
+That link is where the patterns get their grip. Each one loosens the external behavior (is it really what you think it is?), the link (does it really lead there?), or the internal state (is that even the verdict that matters?). In the [explorer](#interactive-version) those are the evidence, the link and the conclusion.
+
+Two things to do before reaching for any pattern. First, get the whole equation: people usually say only half of it ("I'm so stressed"), so ask for the missing side — "what does that mean to you?" for the internal state, "how do you know?" for the external behavior. Second, notice that a belief is a thought you have said "yes" to. The "yes" sits one level above the thought, which is why a belief feels like a fact rather than an opinion, and reframing starts the moment any other frame goes around it: a "maybe," a "since when?", or a story.
 
 ### Thought viruses
 
@@ -130,6 +144,38 @@ Run the belief through these questions (page 318). The sections after this list 
 14. **Meta frame** - What other belief about this belief could change or enrich the perception of it?
 
 Try them on a belief in the [interactive version](#interactive-version) above.
+
+## Seven directions: where each pattern sends your attention
+
+Fourteen patterns is a lot to hold. What Hall and Bodenhamer add in _Mind-Lines_ is the map: every move sends attention in one of seven directions relative to the equation. They count twenty lines, because several of theirs are finer cuts of one Dilts pattern (reframing the external behavior and reframing the internal state are both redefining; first outcome and outcome of the outcome are both consequence). The simplest version of the map has only two levels: the first two directions work _inside_ the equation and change what the external behavior or the internal state is; the other five leave the content alone and wrap a frame around it (time, a value, an identity, a story), and the frame changes what the content means.
+
+| Direction                                      | Dilts' patterns                                                                                    | Mind-lines                                                                                                                  |
+| ---------------------------------------------- | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| **Deframing** — go down into the details       | Chunk down, Reality strategy                                                                       | 1 Chunk down · 2 Reality strategy                                                                                           |
+| **Content reframing** — rename inside the box  | Redefining                                                                                         | 3 Reframe the external behavior · 4 Reframe the internal state                                                              |
+| **Counter reframing** — turn it back on itself | Apply to self, Counter example                                                                     | 5–6 Apply the external behavior or the internal state to self or listener · 7 Counter-example                               |
+| **Pre-framing** — go back in time              | Intention                                                                                          | 8 Positive prior intention · 9 Positive prior cause                                                                         |
+| **Post-framing** — go forward in time          | Consequence, Change frame size                                                                     | 10 First outcome · 11 Outcome of outcome · 12 Eternity framing                                                              |
+| **Outframing** — go up, wrap a bigger idea     | Model of the world, Hierarchy of criteria, Better outcome, Change frame size, Chunk up, Meta frame | 13 Model of the world · 14 Criteria and values · 15 Allness · 16 Have-to · 17 Identity · 18 Other abstractions · 19 Ecology |
+| **Analogous framing** — go sideways            | Analogy                                                                                            | 20 Metaphor and story                                                                                                       |
+
+Chunking, intention, frames, values and analogy each have a section below. The four moves that don't are here, run against one belief from the explorer: _"I skipped the gym all month, so I'm just not a fitness person."_
+
+### Deframing: how do you know?
+
+Chunking down asks which part. Its partner, **reality strategy**, asks how the belief gets built, step by step: "How do I know I'm not a fitness person? Do I see the empty calendar first, hear a voice, or feel the sinking and then find the word?" The evidence usually turns out to be one vivid memory or a feeling, and a belief standing on one memory has a short foundation. Hall and Bodenhamer moved deframing to the front of their second edition because it worked best in their workshops: a vague belief often falls apart as soon as someone asks "specifically?"
+
+### Counter reframing: turn it on itself
+
+A belief is a rule, and rules can be tested. **Counter example** finds the case where the rule fails: "I walked to work every day last spring and loved it. Was that someone else?" One real exception shrinks "always" into "sometimes." **Apply to self** turns the belief's own standard on the belief: "If one month is enough to define me, then one good month redefines me just as fast — the belief can't have it both ways." A belief that fails its own test loses its authority. Hall and Bodenhamer also point the judgment at the listener ("so when you miss a week, you're not a fitness person either?"), the same move with the speaker watching someone else wear it.
+
+### Post-framing: play it forward
+
+Intention is the pre-frame: go back to the good purpose the behavior was serving. Its mirror is **consequence**: set aside whether the belief is true and look at what believing it does. "If I'm 'not a fitness person,' tomorrow's workout becomes a test I expect to fail" — and a few failed tests later, the label is the reason to quit the habit I'd built. Limiting beliefs tend to cause the outcome they predict. Eternity framing is [change frame size](#change-frame-size) stretched all the way out: at 80, will I remember this month, or decades of mostly showing up?
+
+### Outframing: wrap a bigger idea around it
+
+Outframing is the biggest family — model of the world, hierarchy of criteria, chunk up and change frame size all live here and have their own sections. The one that doesn't is the **meta frame**: a belief about the belief. Hall and Bodenhamer's lines 16 through 19 are all flavors of it. Is it a rule? ("Do I have to hit every session to count — and what happens if I don't?") Is it an identity? ("I'm a person who skipped a month, not a non-fitness person.") Is it an instance of something I already know about? ("This is all-or-nothing scoring, and a streak counter isn't a character test.") Does it serve me? ("Does this belief get me to the gym more often, or just make rest days miserable?") The belief may not change at all. Its standing does: once it's "a thought I have on bad days," it stops being the weather.
 
 ## Frames: same facts, different picture
 
@@ -318,8 +364,10 @@ No single pattern is the magic bullet — the power is running one belief throug
 
 Fire enough of these and the belief stops feeling like the truth and starts feeling like one sentence I happened to write — which is the thesis of the whole book: the words built the experience, so different words can rebuild it. (My actual back saga is in [physical pain](/physical-pain).)
 
+Four habits from Hall and Bodenhamer that make the stack work: get the whole equation before you reframe anything; start by going down, since a vague belief often dissolves at "specifically?"; watch the other person's face, because the shift shows up there before it shows up in words; and keep the outcome kind — pried open against someone's interest, these moves are manipulation, and offered as a more useful frame, they're a gift. The easiest place to practice is on your own inner critic, which speaks in tidy equations.
+
 ## Resources
 
-Michael Hall's _Mind Lines_ extends this same engine into 26 patterns across seven directions — worth a look once the fourteen feel natural, though I find the fourteen are plenty to carry around. For the internal-negotiation cousin of these moves, see [get to yes with yourself](/get-to-yes-with-yourself) and [the voices in my head](/voices).
+Robert Dilts' _Sleight of Mouth_ is the source of the fourteen patterns. L. Michael Hall and Bobby G. Bodenhamer's [_Mind-Lines: Lines for Changing Minds_](https://www.amazon.com/s?k=Mind-Lines+Lines+for+Changing+Minds+Hall+Bodenhamer) (second edition) is the source of the equation and the seven directions; later editions grow the list to 26 lines, the same engine with finer cuts. For the internal-negotiation cousin of these moves, see [get to yes with yourself](/get-to-yes-with-yourself) and [the voices in my head](/voices).
 
 {% include youtube.html src="0VDkRz3Yf8c" %}
