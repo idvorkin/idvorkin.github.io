@@ -33,7 +33,7 @@ Every time I want to compare models, prompts, or agent harnesses I trip over the
 
 Criteria, learned while building [my first real eval](/ai-testing#grading-the-agent-with-smevals):
 
-1. Agent in a workdir. The thing under test is an agent changing files through a harness (Claude Code, Codex), not prompt in, completion out.
+1. Agent in a workdir. The thing under test is an agent changing files through a harness (Claude Code, Codex), not prompt in, completion out. Models are now trained with their harness and bound to it, so the model-plus-harness score is the one that matters. Same as with people: I judge someone working in their environment, not alone in an interview room.
 2. Deterministic checkers first: string matches, git diffs, my own tools as oracles. LLM judges are opt-in for quality, never the default gate.
 3. Decoupled grading. Runs are immutable records on disk, so a new grader re-scores old runs without re-paying for them.
 4. Local-first: plain files in a repo, no SaaS account before hello world.
@@ -124,6 +124,10 @@ This tier runs agents inside containers, which buys isolation (the agent can saf
 {% include repo_image.html src="terminal-bench.webp" %}
 
 Both benchmarks containerize, but not the same thing, which is what I went looking for. Terminal-Bench puts _the agent_ in the box: it gets a shell, the tests are copied in after its clock stops, and only the final container state is graded ("they do not test the agent's commands or console output," per the [Terminal-Bench 2.0 paper](https://arxiv.org/abs/2601.11868)). SWE-bench puts only _the grading_ in the box: it takes a finished patch, applies it, runs the tests, and tears down. There is no agent code in the benchmark repo. The vocabularies show it: Terminal-Bench's unit is a **trial**, "a rollout that produces a reward," run by an **agent**; SWE-bench's is a **task instance**, and the thing under test is a field called `model_name_or_path`, from when the subject was a model emitting a diff. Neither is a security boundary: both leave the network open.
+
+[OpenRouter Benchmarks](https://openrouter.ai/benchmarks) is the other end: no box and no harness, just public benchmarks (τ²-Bench, GPQA Diamond, BrowseComp, image, video, speech) run against OpenRouter API requests, with quality, cost, and speed for each model and config. It's the table I'd use to pick a model for a raw API call. It can't tell me how that model does inside Claude Code.
+
+{% include repo_image.html src="openrouter-benchmarks.webp" %}
 
 The catch is that these are benchmark-first; custom tasks mean adopting their image conventions. smevals stays out of it: its Runner can `docker run` when a container runtime exists, but manages none of it.
 
