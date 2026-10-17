@@ -70,7 +70,7 @@ After much trial and error, here's where I'm at
 #### Misc
 
 - Waterproof fanny pack
-- Super soaker up towels
+- Towels to soak up water
 - **Waterproof dry bags** – Protecting work clothes, laptop, and personal items
 - **Secure storage solutions** – Everything stays in place during the paddle
 - **Phone rigging equipment**

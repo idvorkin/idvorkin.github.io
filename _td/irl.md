@@ -25,7 +25,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
   - [Books on injury prevention](#books-on-injury-prevention)
   - [Gym Stuff](#gym-stuff)
   - [Under Desk Exercise Equipment](#under-desk-exercise-equipment)
-- [[Emotional Health](/emotional-health)](#emotional-health)
+- [Emotional Health](#emotional-health)
   - [Meditation](#meditation)
   - [Therapist](#therapist)
 - [Identity Health](#identity-health)
@@ -36,7 +36,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
   - [Work Bag](#work-bag)
   - [Selfie Sticks](#selfie-sticks)
   - [Portable Espresso](#portable-espresso)
-- [[Biking](/bike)](#biking)
+- [Biking](#biking)
 - [Car Tech](#car-tech)
   - [Tony](#tony)
   - [Tech (Old)](#tech-old)
@@ -208,6 +208,8 @@ I take the OutIn Mino on walks — portable espresso on the go. It's battery-pow
 ## [Biking](/bike)
 
 I **love** not driving. Biking is an awesome form of transit. It took a while but I concluded I have several use cases so need several bikes - the full story is at [/bike](/bike).
+
+Biking isn't my only human-powered commute — I've also tried [kayak commuting](/kayak) across Lake Union.
 
 ## Car Tech
 

@@ -16,6 +16,8 @@ This created quite the identity crisis for someone who prided himself on being a
 
 {% include summarize-page.html src="/bike-tesla-identity" %}
 
+The Tesla doesn't always win the commute either — when Meta started charging for parking, I took up [kayak commuting](/kayak) across Lake Union.
+
 ### Talk to Tony - My AI Life Coach
 
 Tony is my callable AI life coach with a Tony Soprano personality. I named him after my Tesla, and he's got that same no-nonsense, direct approach to getting you where you need to go. He's particularly good at identity conflicts, rationalization detection, and keeping you accountable to what you actually care about.
