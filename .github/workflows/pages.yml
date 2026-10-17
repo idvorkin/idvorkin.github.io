@@ -8,8 +8,8 @@ name: Deploy to GitHub Pages
 # on every deploy and can never drift from published content — and, unlike the
 # old update-backlinks.yml, nothing has to push a generated file back to main.
 #
-# Ruby 3.2 is what this site has always built under in CI — the _ruby_compat.rb
-# shim is only needed on Ruby 4.x locally.
+# Ruby 3.3.4 matches GitHub's standard Pages build (pages.github.com/versions);
+# the _ruby_compat.rb shim is only needed on Ruby 4.x locally.
 #
 # ONE-TIME SETUP: repo Settings -> Pages -> Source must be set to "GitHub Actions".
 # Until that is flipped, this workflow runs green but the live site still comes
@@ -51,7 +51,7 @@ jobs:
 
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'
+          ruby-version: '3.3.4'
           bundler-cache: true
 
       - uses: actions/setup-node@v4
