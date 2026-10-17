@@ -11,6 +11,7 @@ redirect_from:
 This page lists all blog posts for link checking purposes.
 
 ## Posts
+
 {% assign posts = site.posts | sort: 'date' | reverse %}
 <ul>
 {% for post in posts %}
@@ -37,7 +38,8 @@ This page lists all blog posts for link checking purposes.
 </ul>
 
 ## Pages
-{% assign pages = site.pages | where_exp: "item", "item.url != '/all/'" | where_exp: "item", "item.title" | sort: 'title' %}
+
+{% assign pages = site.pages | where_exp: "item", "item.url != '/all/'" | where_exp: "item", "item.title" | where_exp: "item", "item.diff_base != true" | sort: 'title' %}
 <ul>
 {% for page in pages %}
   <li>
@@ -53,6 +55,7 @@ This page lists all blog posts for link checking purposes.
 </ul>
 
 ## D Collection
+
 {% assign d_items = site.d | sort: 'date' | reverse %}
 <ul>
 {% for item in d_items %}
@@ -71,6 +74,7 @@ This page lists all blog posts for link checking purposes.
 </ul>
 
 ## IG66 Collection
+
 {% assign ig66_items = site.ig66 | sort: 'date' | reverse %}
 <ul>
 {% for item in ig66_items %}
@@ -89,6 +93,7 @@ This page lists all blog posts for link checking purposes.
 </ul>
 
 ## TD Collection
+
 {% assign td_items = site.td | sort: 'date' | reverse %}
 <ul>
 {% for item in td_items %}

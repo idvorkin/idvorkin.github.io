@@ -67,7 +67,7 @@ For each article, search Igor's blog for related content:
 grep -rli "relevant keyword" _d/ _posts/ | head -5
 ```
 
-Surface the top 2-3 matches with their permalinks. Use `back-links.json` to find permalinks:
+Surface the top 2-3 matches with their permalinks. Use `back-links.json` to find permalinks (it's gitignored/CI-generated — run `just update-backlinks` first if it's not present in the repo root):
 
 ```bash
 jq '.url_info | to_entries[] | select(.value.markdown_path | test("keyword")) | .key' back-links.json

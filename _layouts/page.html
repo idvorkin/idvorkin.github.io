@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <!--
 ====================================================
     __  ____  ______________  _______ ___    __
@@ -32,8 +32,10 @@ Description: Awesome dude, awesome life
       role="main"
     >
       <article class="container">
-        <div id="content-holder">
-          {% if page.has-toc %} {% include toc.html %} {% endif %} {{ content }}
+        <div id="content-holder" {% include pagefind-attrs.html %}>
+          {% if page.has-toc %}
+          <div data-pagefind-ignore>{% include toc.html %}</div>
+          {% endif %} {{ content }}
         </div>
       </article>
     </main>

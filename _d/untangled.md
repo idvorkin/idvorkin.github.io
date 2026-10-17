@@ -4,7 +4,7 @@ title: "Untangled: Guiding Teenage Girls Through the Seven Transitions into Adul
 tags:
   - parenting
   - book-notes
-  - emotional-intelligence
+  - emotional intelligence
   - dad
 permalink: /untangled
 redirect_from:

@@ -16,45 +16,41 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 <!-- vim-markdown-toc-start -->
 
 - [Physical Health](#physical-health)
-    - [Personal Trainer](#personal-trainer)
-    - [Calf Health](#calf-health)
-    - [Knee Health](#knee-health)
-    - [Booger Health](#booger-health)
-    - [Skin Health](#skin-health)
-    - [Wrist Health](#wrist-health)
-    - [Books on injury prevention](#books-on-injury-prevention)
-    - [Standing Desks](#standing-desks)
-    - [Gym Stuff](#gym-stuff)
-    - [Under Desk Exercise Equipment](#under-desk-exercise-equipment)
-- [Emotional Health](#emotional-health)
-    - [Meditation](#meditation)
-    - [Therapist](#therapist)
-- [Cognitive Health](#cognitive-health)
-    - [Blogging](#blogging)
-    - [Weekly goals](#weekly-goals)
+  - [Personal Trainer](#personal-trainer)
+  - [Calf Health](#calf-health)
+  - [Knee Health](#knee-health)
+  - [Booger Health](#booger-health)
+  - [Skin Health](#skin-health)
+  - [Wrist Health](#wrist-health)
+  - [Books on injury prevention](#books-on-injury-prevention)
+  - [Gym Stuff](#gym-stuff)
+  - [Under Desk Exercise Equipment](#under-desk-exercise-equipment)
+- [[Emotional Health](/emotional-health)](#emotional-health)
+  - [Meditation](#meditation)
+  - [Therapist](#therapist)
 - [Identity Health](#identity-health)
-    - [Eulogy Writing](#eulogy-writing)
+  - [Eulogy Writing](#eulogy-writing)
 - [Personal Carry](#personal-carry)
-    - [Fanny Pack](#fanny-pack)
-    - [Gym Bag](#gym-bag)
-    - [Work Bag](#work-bag)
-    - [Selfie Sticks](#selfie-sticks)
-    - [Portable Espresso](#portable-espresso)
-- [Biking](#biking)
+  - [Fanny Pack](#fanny-pack)
+  - [Gym Bag](#gym-bag)
+  - [Work Bag](#work-bag)
+  - [Selfie Sticks](#selfie-sticks)
+  - [Portable Espresso](#portable-espresso)
+- [[Biking](/bike)](#biking)
 - [Car Tech](#car-tech)
-    - [Tony](#tony)
-    - [Tech (Old)](#tech-old)
+  - [Tony](#tony)
+  - [Tech (Old)](#tech-old)
 - [Tech](#tech)
-    - [How to add a poison pill to the addictive iPhone](#how-to-add-a-poison-pill-to-the-addictive-iphone)
-    - [Computers](#computers)
-    - [Monitors](#monitors)
-    - [Keyboards](#keyboards)
+  - [How to add a poison pill to the addictive iPhone](#how-to-add-a-poison-pill-to-the-addictive-iphone)
+  - [Computers](#computers)
+  - [Monitors](#monitors)
+  - [Keyboards](#keyboards)
 - [Camera](#camera)
 - [Virtual Reality - Oculus](#virtual-reality---oculus)
 - [Backyard](#backyard)
-    - [Inflatable Hot tub](#inflatable-hot-tub)
-    - [Propane Fire Pit](#propane-fire-pit)
-    - [Canopies](#canopies)
+  - [Inflatable Hot tub](#inflatable-hot-tub)
+  - [Propane Fire Pit](#propane-fire-pit)
+  - [Canopies](#canopies)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -116,8 +112,6 @@ Get 'em both
 
 {%include amazon.html asin="1628604220;1735728500" %}
 
-### Standing Desks
-
 ### Gym Stuff
 
 With age comes the need for more accouterments
@@ -138,11 +132,13 @@ I don't use this, but it's under my desk. The day I got it and used it, I decide
 
 ### Meditation
 
+I used to have a complex meditation routine, which was very "focused", but had too much complexity. I skipped it and now use headspace, and do it slouching in a chair. Huge improvement.
+
+If you're interested in why to start meditating, read Search Inside Yourself:
+
 {%include summarize-page.html src="/siy" %}
 
 **OLD**
-
-I used to have a complex meditation routine, which was very "focused", but had too much complexity. I skipped it and now use headspace, and do it slouching in a chair. Huge improvement.
 
 I meditate kneeling (Seiza) and have two benches. Meditation benches are overpriced, but if it improves my emotional health (and it's supposed to) it's worth it.
 
@@ -167,12 +163,6 @@ I've been seeing a therapist weekly since my early 30's. It provides me several 
 - A constant reminder of the importance of my emotional health
 - A historical reminder of previous states
 
-## Cognitive Health
-
-### Blogging
-
-### Weekly goals
-
 ## Identity Health
 
 ### Eulogy Writing
@@ -195,9 +185,7 @@ I often stuff the gym bag in a larger bag so small matters - I use:
 
 ### Work Bag
 
-It's taken me several tries, but I've concluded I like the smallest bag possible. I use a 13" MacBook Pro laptop and an iPad Pro 10" and this is the perfect bag for me:
-
-There's also the horizontal version - which is slightly bigger but also nice:
+It's taken me several tries, but I've concluded I like the smallest bag possible. I use a 13" MacBook Pro laptop and an iPad Pro 10", and the vertical bag below is perfect for me. There's also the horizontal version - slightly bigger but also nice:
 
 {%include amazon.html asin="B07WNPPF72;B07H4QYC2D" %}
 
@@ -219,7 +207,7 @@ I take the OutIn Mino on walks — portable espresso on the go. It's battery-pow
 
 ## [Biking](/bike)
 
-I **love** not driving. Biking is an awesome form of transit. It took a while but I concluded I have several use cases so need several bikes. In fact,
+I **love** not driving. Biking is an awesome form of transit. It took a while but I concluded I have several use cases so need several bikes - the full story is at [/bike](/bike).
 
 ## Car Tech
 

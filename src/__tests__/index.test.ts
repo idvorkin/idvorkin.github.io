@@ -3,7 +3,6 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 // Set up the window object with necessary properties
 window["@algolia/autocomplete-js"] = {
   autocomplete: vi.fn(),
-  getAlgoliaResults: vi.fn(),
 };
 
 // Mock dependencies

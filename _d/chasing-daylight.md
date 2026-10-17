@@ -3,7 +3,7 @@ layout: post
 title: "Chasing Daylight: Imagine you're gonna die in less than 100 days"
 tags:
   - death
-  - how-igor-ticks
+  - how igor ticks
   - book-notes
   - mindset
 permalink: /chasing-daylight

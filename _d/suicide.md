@@ -1,14 +1,19 @@
 ---
 layout: post
-title: "Brain Attacks: A Better Model for Suicide"
+title: "Losing Someone to Suicide: It Was a Brain Attack"
 tags:
 permalink: /suicide
 redirect_from:
   - /brain-attack
   - /brainattack
+imagefeaturelocal: raccoon-suicide-remembering.webp
 ---
 
 "Igor, what advice would you give a 20-year-old that just found out their dad killed themselves?" Sadly, when I was 20, I got a call from a family friend saying "Igor, you want to sit down, this isn't going to be fun to hear." My dad had taken his own life.
+
+{% include repo_image_float_right.html src="raccoon-suicide-remembering.webp" alt="A young raccoon in rainbow glasses sits in a lamplit armchair holding a framed photo of a smiling friend in a red beanie, while an older raccoon in a cardigan leans in close beside him." %}
+
+_If you're having thoughts of suicide yourself, [start here instead](/thinking-about-suicide)._
 
 **TL;DR:**
 
@@ -18,7 +23,7 @@ redirect_from:
 
 - Once the brain attack starts, it's no longer the person that you love, and that loves you, it's now the disease. I can guarantee you the deceased loved you with all their heart and if they were not having a brain attack, they would have understood the pain this caused you and not done it.
 
-- Once the brain attack starts, it's no longer the person that you love, and that loves you, it's now the disease. Suicide method, notes, remains - that's now just the disease.
+- Suicide method, notes, remains - that's now just the disease.
 
 - Just like heart attacks, suicide risk is hereditary, you have a predisposition that you need to take seriously.
 

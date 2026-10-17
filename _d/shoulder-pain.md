@@ -10,9 +10,9 @@ tags:
   - physical health
 ---
 
-{% include local_image_float_right.html src="raccoon-shoulder.webp" %}
-
 I developed shoulder impingement from Turkish Get-Ups - grinding through reps without the mobility or form to do them safely. Direct treatment didn't help. The fix requires an indirect approach: restore thoracic spine mobility, loosen pecs and lats, then rebuild rotator cuff strength. The shoulder is a symptom of upstream problems - fix those first, and it often resolves itself.
+
+{% include local_image_float_right.html src="raccoon-shoulder.webp" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -67,42 +67,50 @@ My shoulder issue is impingement - the ball isn't staying centered in the socket
 Before diving into the fix, here's the vocabulary of shoulder movements. Understanding these directions helps you know what you're working on.
 
 **Flexion** (raising arm forward and overhead):
+
 - **What it looks like:** Arm moves from your side, forward, and up toward the ceiling (like raising your hand in class)
 - **Muscles:** Anterior deltoid (front of shoulder), upper pec, biceps (long head)
 - **Common exercises:** Front raises, overhead press
 
 **Extension** (moving arm backward):
+
 - **What it looks like:** Arm moves from your side backward behind you (like reaching for your back pocket)
 - **Muscles:** Lats, posterior deltoid (rear shoulder), teres major, triceps (long head)
 - **Common exercises:** Pull-ups, rows, straight-arm pulldowns
 
 **Abduction** (raising arm out to the side):
+
 - **What it looks like:** Arm moves from your side, out to the side, and up overhead (like making a snow angel)
 - **Muscles:** Supraspinatus (rotator cuff) initiates 0-15°, then middle deltoid takes over
 - **Common exercises:** Lateral raises, overhead press
 - **Critical:** Your shoulder blade MUST rotate upward or you get impingement
 
 **Adduction** (bringing arm down to your side or across body):
+
 - **What it looks like:** Arm moves from overhead or out to the side, down toward your body
 - **Muscles:** Lats, pecs, teres major
 - **Common exercises:** Pull-ups, lat pulldowns
 
 **External Rotation** (turning arm outward):
+
 - **What it looks like:** Elbow at your side, bent 90°, forearm rotates away from your body (like opening a door)
 - **Muscles:** Infraspinatus, teres minor (both rotator cuff muscles)
 - **WHY THIS MATTERS:** This is THE critical movement for fixing impingement. Most people are weak here.
 - **Common exercises:** Side-lying external rotation, face pulls
 
 **Internal Rotation** (turning arm inward):
+
 - **What it looks like:** Elbow at your side, bent 90°, forearm rotates toward your body (like closing a door)
 - **Muscles:** Subscapularis (rotator cuff), pecs, lats
 - **Note:** Usually overtrained from push-ups, bench press, desk work. Most people don't need MORE internal rotation.
 
 **Horizontal movements** (arm at shoulder height):
+
 - **Horizontal abduction (pulling back):** Rear delts, rhomboids, mid-traps - like reverse flyes
 - **Horizontal adduction (pulling across):** Pecs, anterior delt - like cable crossovers
 
 **What matters most for fixing impingement:**
+
 - **External rotation** - Weak in almost everyone, essential for centering the ball
 - **Scapular control** - Depression and retraction, the foundation for everything
 - **Avoid excessive internal rotation** - You're probably already too internally rotated
@@ -116,24 +124,28 @@ Now that you understand the movements, here are the muscles that make them happe
 These four small muscles wrap around the humeral head and are the only thing keeping the ball centered in the socket. If they're weak, the ball migrates and you get impingement.
 
 **Supraspinatus** (top of shoulder):
+
 - **Job:** Initiates abduction (first 0-15° of raising arm to side), pulls humeral head DOWN into socket
 - **Problem when weak:** Ball rides up, impingement starts immediately when raising arm
 - **Common issue:** First to get injured, prone to tears from overhead work
 - **Test:** Empty can test - arm straight out to side at 30° forward, thumb down (like emptying a can), raise 12-15 times with 2-5 lb weight. Pain or inability = weakness or injury.
 
 **Infraspinatus** (back of shoulder):
+
 - **Job:** External rotation, pulls humeral head DOWN and IN to center it
 - **Problem when weak:** Ball drifts forward and up, you lose external rotation range
 - **Critical:** This is THE muscle to strengthen for fixing impingement
 - **Test:** Elbow at side bent 90°, externally rotate against resistance (band or partner's hand). Can you do 15+ reps without shoulder hiking up toward ear? If shoulder elevates or you compensate = weak.
 
 **Teres Minor** (back of shoulder, below infraspinatus):
+
 - **Job:** External rotation, assists infraspinatus in pulling head down
 - **Problem when weak:** Same as infraspinatus - ball migrates forward/up
 - **Note:** Functionally very similar to infraspinatus - think of them as a team like biceps short head and long head. Anatomically distinct muscles, but in practice they fire together during external rotation. Almost impossible to isolate or test separately.
 - **Test:** Same as infraspinatus test - works together with it.
 
 **Subscapularis** (front of shoulder, against ribcage):
+
 - **Job:** Internal rotation, pulls humeral head forward INTO the socket (anteriorly)
 - **Problem when weak:** Ball can drift backward (rare)
 - **Problem when tight:** Restricts external rotation, contributes to forward shoulder posture
@@ -145,17 +157,20 @@ These four small muscles wrap around the humeral head and are the only thing kee
 The three deltoid heads are the big muscles that actually move your arm. They're strong, but if the rotator cuff is weak, they'll yank the ball out of position.
 
 **Anterior Deltoid** (front):
+
 - **Movements:** Flexion (raising arm forward), assists internal rotation
 - **Problem:** Often overdeveloped from pressing movements, contributes to forward shoulder posture
 - **Balance check:** Can you do as many overhead presses as bench presses?
 
 **Middle Deltoid** (side):
+
 - **Movements:** Abduction (raising arm to side)
 - **Critical coordination:** Works with supraspinatus - supraspinatus starts 0-15°, middle delt takes over
 - **Problem:** If supraspinatus is weak, middle delt takes over too early and yanks the ball upward
 - **Test:** Lateral raises with 5-10 lb dumbbells for 12-15 reps. Watch for shoulder hiking up - if it does, middle delt is compensating for weak supraspinatus.
 
 **Posterior Deltoid** (rear):
+
 - **Movements:** Extension (arm backward), external rotation, horizontal abduction
 - **Problem when weak:** Can't counteract forward pull from anterior delt and pecs
 - **Test:** Reverse flyes - bend forward 90°, arms hanging, raise arms out to sides. Can you do 15 reps with 5-10 lbs keeping shoulder blades squeezed? Weak = can't complete reps or upper traps take over.
@@ -165,6 +180,7 @@ The three deltoid heads are the big muscles that actually move your arm. They're
 The shoulder blade is the platform the ball-and-socket sits on. If the platform doesn't move correctly, the joint can't work properly.
 
 **Trapezius** (upper, middle, lower - three distinct sections):
+
 - **Upper trap:** Elevates shoulder (shrugging) - usually overactive, pulls shoulder up toward ear
 - **Middle trap:** Retracts scapula (pulls shoulder blade toward spine) - usually weak
 - **Lower trap:** Depresses and upwardly rotates scapula - CRITICAL for healthy overhead movement, usually very weak
@@ -173,11 +189,13 @@ The shoulder blade is the platform the ball-and-socket sits on. If the platform 
 - **Test for lower trap:** Stand, raise arms overhead in Y position. Can you hold 60 seconds without shoulders hiking toward ears? If shoulders elevate = weak lower trap, overactive upper trap.
 
 **Rhomboids** (between shoulder blades):
+
 - **Job:** Retract scapula, pull shoulder blades together
 - **Problem when weak:** Shoulder blades wing out, scapula sits too far forward
 - **Test:** Can you squeeze your shoulder blades together and hold for 10 seconds?
 
 **Serratus Anterior** (side of ribcage, wraps around):
+
 - **Job:** Protracts scapula (pushes it forward), upwardly rotates scapula
 - **Critical for:** Push-ups, punching, reaching forward, overhead movements
 - **Problem when weak:** Scapular winging (shoulder blade sticks out like a wing), can't push overhead properly
@@ -188,6 +206,7 @@ The shoulder blade is the platform the ball-and-socket sits on. If the platform 
 These large muscles get strong and tight from modern life and common exercises. When tight, they pull the shoulder into bad positions.
 
 **Pectorals** (chest - major and minor):
+
 - **Movements:** Internal rotation, adduction, horizontal adduction
 - **Problem:** Desk work, driving, bench press all shorten pecs. Tight pecs pull shoulder forward and internally rotated.
 - **Result:** Rounded shoulder posture, restricts external rotation, forces humeral head forward
@@ -195,6 +214,7 @@ These large muscles get strong and tight from modern life and common exercises. 
 - **Test for tightness:** Stand in doorway, arm on doorframe at 90°. Step through doorway - you should feel a stretch across chest. If no stretch or can't get arm back to doorframe = very tight pecs.
 
 **Latissimus Dorsi** (lats - broad back muscle):
+
 - **Movements:** Extension, adduction, internal rotation
 - **Problem:** Pull-ups, rows, and sitting all tighten lats. Tight lats restrict overhead range.
 - **Result:** Can't raise arms fully overhead without arching back, pulls shoulder down and forward
@@ -202,6 +222,7 @@ These large muscles get strong and tight from modern life and common exercises. 
 - **Test for tightness:** Lie on back, raise both arms overhead toward floor behind you, keep low back flat on ground. Can't touch floor with arms or back arches = tight lats restricting shoulder flexion.
 
 **Teres Major** (small muscle near lat):
+
 - **Movements:** Extension, internal rotation
 - **Problem:** Functions like a "mini lat" - often tight alongside lats
 - **Result:** Restricts overhead movement
@@ -210,6 +231,7 @@ These large muscles get strong and tight from modern life and common exercises. 
 **Key Principle - The Imbalance:**
 
 Modern life creates:
+
 - **Too much:** Internal rotation (pecs, lats, subscapularis), upper trap dominance, anterior delt work
 - **Too little:** External rotation (infraspinatus, teres minor), scapular retraction (mid/lower trap, rhomboids), scapular depression (lower trap)
 
@@ -278,6 +300,7 @@ This is THE critical step for fixing impingement. The rotator cuff's job is to p
 **Exercises:**
 
 **Side-lying external rotation** (fundamental movement):
+
 - Lie on your side, bottom arm tucked under head
 - Top arm bent 90°, elbow pinned to your side
 - Hold light dumbbell, rotate forearm up toward ceiling
@@ -285,12 +308,14 @@ This is THE critical step for fixing impingement. The rotator cuff's job is to p
 - 3 sets of 15-20 reps, multiple times per week
 
 **90/90 external rotation** (arm abducted position):
+
 - Lie on your side, upper arm out perpendicular to body, elbow bent 90°
 - Rotate forearm up toward ceiling
 - This trains external rotation with the arm in a more vulnerable position (mimics overhead movements)
 - 3 sets of 12-15 reps
 
 **Face pulls** (compound movement):
+
 - Cable or band at face height
 - Pull toward face, separating hands and rotating arms outward
 - Finish with hands by ears, thumbs pointing back
@@ -298,6 +323,7 @@ This is THE critical step for fixing impingement. The rotator cuff's job is to p
 - 3-4 sets of 15-20 reps
 
 **Banded external rotation at side** (warm-up/daily maintenance):
+
 - Band anchored at elbow height, stand sideways to anchor
 - Elbow bent 90°, pinned to side
 - Rotate arm outward against band resistance
@@ -305,6 +331,7 @@ This is THE critical step for fixing impingement. The rotator cuff's job is to p
 - 2-3 sets of 20 reps
 
 **Programming notes:**
+
 - Frequency matters more than intensity - 3-4x per week minimum
 - Always do BEFORE pressing movements (bench, overhead press) as prehab
 - Use tempo: 2 seconds up, pause, 2 seconds down
@@ -325,6 +352,7 @@ Exercises:
 Wall slides are both a diagnostic tool and the graduation test. They combine everything you've built in the previous steps into one integrated movement. If you can't do them smoothly, they show you exactly where your limitations are.
 
 **What wall slides require:**
+
 1. **T-spine extension** - to keep your back flat against the wall
 2. **Scapular upward rotation** - shoulder blades have to rotate smoothly as arms go up
 3. **External rotation** - to keep arms against the wall throughout the movement
@@ -332,6 +360,7 @@ Wall slides are both a diagnostic tool and the graduation test. They combine eve
 5. **Pec/lat length** - tight pecs or lats prevent arms from staying against the wall
 
 **How to do them:**
+
 - Stand with back against wall
 - Put arms against wall in "W" or "goal post" position (elbows bent 90°, upper arms out to sides)
 - Slide arms up overhead while keeping your back, head, and arms in contact with the wall
@@ -339,6 +368,7 @@ Wall slides are both a diagnostic tool and the graduation test. They combine eve
 - Repeat for 10-15 reps
 
 **What goes wrong if you have limitations:**
+
 - **Back arches off wall** → Stiff T-spine
 - **Arms pull forward off wall** → Tight pecs, weak external rotators
 - **Pain in shoulder** → Rotator cuff still weak, ball migrating up

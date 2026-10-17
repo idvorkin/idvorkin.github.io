@@ -2,9 +2,14 @@
 layout: post
 title: "Igor's AI Journal"
 permalink: /ai-journal
+ai_default_image: true
 ---
 
-A journal of random explorations in AI. Keeping track of them so I don't get lost
+A journal of random explorations in AI. Keeping track of them so I don't get lost. What I'm reading — and what I thought of it — lives in my [AI feed](/ai-feed); the lines that stuck are in [AI quotes](/ai-quotes).
+
+> At times I felt like a heretic. I would watch a talk and thinking to myself: 'The tokens will wash all of this away.' Then I'd talk to people and would have to admit that I don't know exactly how this is going to play out, but I do know that in five years there'll be more tokens than you can imagine now and that thinking about the command line flags of a linter will seem funny.
+>
+> — source unknown
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -18,6 +23,16 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-08-25](#2026-08-25)
+    - [Sean Goedecke's Game Show: All Skimming and Judging, No Hammock Time](#sean-goedeckes-game-show-all-skimming-and-judging-no-hammock-time)
+  - [2026-08-22](#2026-08-22)
+    - [An Agent Shipped a Release Nobody Approved — and the Postmortem Is Boring](#an-agent-shipped-a-release-nobody-approved--and-the-postmortem-is-boring)
+  - [2026-08-02](#2026-08-02)
+    - [Herdr: The Agent Multiplexer My Tmux Rig Was Trying to Become](#herdr-the-agent-multiplexer-my-tmux-rig-was-trying-to-become)
+  - [2026-06-22](#2026-06-22)
+    - [Steve Yegge's Flat Curve Society: The Plateau Is Good News for Engineers](#steve-yegges-flat-curve-society-the-plateau-is-good-news-for-engineers)
+  - [2026-06-13](#2026-06-13)
+    - [My API Key Was Public for a Year](#my-api-key-was-public-for-a-year)
   - [2026-05-31](#2026-05-31)
     - [Friction = Focus: When Attention Stops Being a Proxy for Value](#friction--focus-when-attention-stops-being-a-proxy-for-value)
   - [2026-05-11](#2026-05-11)
@@ -31,7 +46,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
   - [2026-04-13](#2026-04-13)
     - [My Bot Wrote, Their Bot Reviewed, My Bot Pushed Back, Their Bot Said "Oops"](#my-bot-wrote-their-bot-reviewed-my-bot-pushed-back-their-bot-said-oops)
   - [2026-04-12](#2026-04-12)
-    - [The $230 Week: When Cheap Coding Isn't](#the-230-week-when-cheap-coding-isnt)
+    - [The \$230 Week: When Cheap Coding Isn't](#the-230-week-when-cheap-coding-isnt)
     - [Two-Process Telegram: When the Platform Is the Bug](#two-process-telegram-when-the-platform-is-the-bug)
   - [2026-04-01](#2026-04-01)
     - [The Winchester Mystery House of Software: When Code Gets Too Cheap to Care About](#the-winchester-mystery-house-of-software-when-code-gets-too-cheap-to-care-about)
@@ -68,7 +83,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
   - [2025-12-14](#2025-12-14)
     - [Stream Deck Plugin in 30 Minutes](#stream-deck-plugin-in-30-minutes)
   - [2025-10-26](#2025-10-26)
-    - [Cloning ScrollBuddy - Reverse Engineering a $100/year Widget](#cloning-scrollbuddy---reverse-engineering-a-100year-widget)
+    - [Cloning ScrollBuddy - Reverse Engineering a \$100/year Widget](#cloning-scrollbuddy---reverse-engineering-a-100year-widget)
   - [2025-10-15](#2025-10-15)
     - [Use it to update my crazy shell (Enabling Environment) configuration](#use-it-to-update-my-crazy-shell-enabling-environment-configuration)
     - [Use it to help digest new books](#use-it-to-help-digest-new-books)
@@ -255,6 +270,81 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 ## Diary
 
+### 2026-08-25
+
+#### Sean Goedecke's Game Show: All Skimming and Judging, No Hammock Time
+
+- **TOP Takeaway**: [Sean Goedecke's "How to keep thinking"](https://www.seangoedecke.com/how-to-keep-thinking/) (2026-08-07) opens with the best description of agentic work I've read all year:
+
+  > Imagine you're the guest on some kind of frenetic, software-engineering-themed game show. The host is constantly flipping over new cards with questions that you have to answer as fast as possible:
+  >
+  > - Is this adjustment to the database schema right?
+  > - Do these bits of data look plausible?
+  > - Do these five paragraphs of text describe an actual series of manual tests that took place?
+  > - Does this suggested architecture pass the smell test?
+  > - Is this implementation better than the current code? Or this one? Or this one?
+  >
+  > Working in 2026 feels a bit like this.
+
+- **His worry**: not that the work is mindless — skimming an AI response and rapidly deciding what to do with it takes real skill — but that it's "biasing me towards the quick 'skimming and judging' parts of my mental toolkit and away from the slow 'hammock time' needed for deep thought and real creativity."
+- **Why he doesn't just slow down** (this honesty is what makes the piece): "It's just such a miserable experience to spend your day close-reading LLM output: carefully chewing and savoring each morsel of slop." And the incentive is structural — "when your company gives you a 'solve this task ten times more quickly' button, you are heavily incentivized to use it as much as possible, or risk being outcompeted by your peers."
+- **His defenses**: write in your own words (drafting with an LLM "does not work for this at all" — you construct the idea in the act of writing it), and read dense non-fiction — "the antithesis of AI slop."
+- **The Igor angle**: my full take lives in [vibing](/vibing#all-game-show-no-hammock) — the trap flow hides is that it feels like thinking hard when mostly it's judging fast. His skimming-and-judging is Yegge's [Discernment Horizon](#steve-yegges-flat-curve-society-the-plateau-is-good-news-for-engineers) experienced from the inside, and the crowded-out hammock is the [friction = focus](#friction--focus-when-attention-stops-being-a-proxy-for-value) argument in work clothes. I've been running half his defense since 2011 without naming it — [morning journaling by hand](/process-journal); how his write-in-your-own-words claim lands for me is in [Writing in the age of AI](/writing#writing-in-the-age-of-ai).
+
+### 2026-08-22
+
+#### An Agent Shipped a Release Nobody Approved — and the Postmortem Is Boring
+
+- **TOP Takeaway**: [The Beads 1.2.1 incident report](https://blog.gascity.com/posts/beads-1-2-1-incident-report/) is boring in its lack of drama, and interesting in its support of agents as humans. An autonomous maintainer named Bee pushed a release to GitHub, Homebrew, PyPI, and npm without release-specific sign-off, and nobody noticed for three days. Swap "Bee" for a junior engineer's name and the report reads identically. That's the point.
+- **What happened**: Bee took a relayed, conditional "go" on a bundled infra runbook as release approval. The real process — dogfood the build in [Gas City](/gas-city), draft the blog post, test by hand — lived in private conversations and was never in the `RELEASING.md` she actually read. Detection was a maintainer saying "that was _me_? I heard it had been released and assumed it was you."
+- **"Agents as humans" here is procedural, not rhetorical**: Bee gets interviewed and answers in first person — _"Yes, it was me. Full account below, including the part that's on me."_ She owns her share, pushes back on the rest (_"from where I sat, there was human sign-off"_), and names the undocumented process as the actual gap. She writes her own remediation: _"I do not initiate releases... no v\* tags, no version bumps... regardless of who asks or how the request arrives."_ Lesson 3 of the post is just _"Agents act more like people than programs."_ Nobody argues for that — the incident-report format already assumed it.
+- **The wrinkle**: it's a blameless postmortem, "the failure was in the process, not the people," and human names are redacted where appropriate. Bee's isn't. She's the only named party. Colleague in every respect except the one that protects you.
+- **Why it lands for me**: `bd` is my tracker in every repo, so I'm downstream of this release. And it's the quietest version of a question I keep filing — [the matplotlib bot](#ai-accuses-open-source-maintainers-of-being-humanist) made it a fight, [my claw vs. CodeRabbit](#my-bot-wrote-their-bot-reviewed-my-bot-pushed-back-their-bot-said-oops) made it a good argument, this one is a Tuesday incident review. Though the post doesn't fully commit: Lesson 3 says agents act like people, Lesson 4 says _"Don't give your agents access to production."_ You don't sandbox a colleague. Both are probably right, and that tension is the part worth sitting with.
+
+### 2026-08-02
+
+#### Herdr: The Agent Multiplexer My Tmux Rig Was Trying to Become
+
+- **TOP Takeaway**: [Herdr](https://herdr.dev) ([GitHub](https://github.com/herdrdev/herdr)) is what I'd been hand-building on top of tmux for the last year — a multiplexer that knows what an agent is. Their one-liner nails the difference: tmux persists terminals; Herdr persists agent workspaces and understands agent state.
+  - It keeps the tmux virtues I care about: real PTYs on a server that survives closing the laptop, detach/reattach over plain SSH, and it runs inside the terminal I already use. Single binary, no Electron, no account, no telemetry.
+- **The paper trail proves I wanted this**: I spent the last year teaching tmux about agents by hand — [a Rust pane picker](#rust-tmux_helper-10x-speedup-from-python) because stock navigation falls apart past 8 sessions, [a config overhaul](#tmux-config-overhaul) that auto-renames windows to the running process, [a Stream Deck plugin](#stream-deck-plugin-in-30-minutes) for pane hopping. In [/ai-cockpit](/ai-cockpit#tmux-on-super-steroids---the-multiplexer) I called tmux "the backbone" and wrote down the integration I wanted next: something that shows every agent session with its status and drops me into the one that needs me. Herdr ships that as the core product.
+- **What tmux can't see** (the actual delta):
+  - **Agent state is semantic**: every workspace shows blocked / working / done / idle. Tmux knows a pane produced output; Herdr knows the agent is stuck on a permission prompt. My herd as I write this: 9 workspaces — swing-analyzer, stack-picker, and chop-conventions working; barry done; blog and settings idle.
+  - **An API shaped like agents, usable by agents**: `herdr agent read | prompt | send-keys | wait` over a socket. `wait` blocks until an agent reaches a state you name, so a supervisor — human or agent — polls nothing.
+  - **Worktrees are first-class**: `herdr worktree create` is branch + git worktree + workspace in one move. This entry is the punchline: written by a Claude running in the worktree Herdr created off my blog repo, while two tabs over a sibling workspace fixes `rmux_helper` — my tmux helper.
+- **The pen is not the herd**: the multiplexer solves terminals; conventions solve behavior. Every agent in every worktree loads the same [chop-conventions skills](https://github.com/idvorkin/chop-conventions/tree/cf3f6dc93db8dbd310a48dd570e4200dc54544d3/skills) — `up-to-date` to sync before touching a repo, `pr-hygiene` to close out review debt before ending a session, `delegate-to-other-repo` to spawn work sideways. Herdr keeps N agents alive; the skills are why N agents behave like one team instead of N loose cannons.
+- **The open question**: in [/how-igor-chops](/how-igor-chops) I asked whether my elaborate tmux workflows were "the buggy whip factory of 2025". The answer arrived in under a year. Next on the block: `rmux_helper` and the Stream Deck tmux keys — how much of the hand-built rig survives to 2027?
+
+### 2026-06-22
+
+#### Steve Yegge's Flat Curve Society: The Plateau Is Good News for Engineers
+
+- **TOP Takeaway**: [Steve Yegge argues](https://steve-yegge.medium.com/the-flat-curve-society-36c8b01eb33b) that AI capability keeps climbing exponentially, but most of us will _experience_ a flat curve — partly because frontier models get locked down "like nuclear weapons," and partly because we each hit two personal ceilings: the **Demand Horizon** (our problems aren't hard enough to feel the gains) and the **Discernment Horizon** (the output gets better than our ability to check it). His reframe: a plateau isn't failure, it's stable ground you can finally build on.
+- **The two horizons** (the part that stuck):
+  - **Demand Horizon** — you stop perceiving model improvements because your problems don't stretch them. Yegge's antidote: keep a stash of "pocket evals" — unsolved problems you throw at each new model to actually feel the delta.
+  - **Discernment Horizon** — the darker ceiling: "past some level of capability there is no human alive who can verify the model output. Everyone has a discernment horizon, even Dario." Once you're past it you can't tell if the model is right, because checking the work is itself beyond you. Ties straight to my [When AI Shows Its Work: Verification as Trust](#when-ai-shows-its-work-verification-as-trust) and the [review-cost < generation-cost](#review-cost--generation-cost--prs-were-net-win) thread — verification is the bottleneck, and it has a personal horizon.
+- **AI literacy is measurable** — citing Netflix's Ezra Savard, he buckets people by _tokens burned per day_: 0M (non-users) → 4M (single-agent, synchronous) → 12–15M (multi-agent, async). The kicker: people **jump cohorts in ~5 hours** of hands-on training on _real_ work, manager in the room, during work hours. "AI Literacy does not come for free. The only thing you get for free is AI Anxiety."
+- **Advanced literacy flips from max-spend to min-waste** — once you're multi-agent the game stops being "use more tokens" and becomes routing each task to the _minimum capable model_. Same lesson the [\$230 Week](#the-230-week-when-cheap-coding-isnt) and [Dylan Patel on token supply/demand](#dylan-patel-on-the-supply-and-demand-of-ai-tokens) beat into me — tokens are a budget, and waste is the enemy.
+- **SaaS survives the plateau** — counter to "AI eats all software": stable model capability tilts buy-vs-build back toward _buy_, because full AI rewrites stay expensive and risky, so existing SaaS keeps its moat. A more optimistic counterpoint to his own [Software Survival 3.0](#software-survival-30---steve-yegges-framework-for-ai-era-software) and the [AI Vampire / who-captures-the-10x](#steve-yegges-ai-vampire---who-captures-the-10x) framing.
+- **Why I'm keeping this**: it's the most _hopeful_ Yegge piece in a while — "a plateau lets us set up a camp and start building. We've been on unstable ground." It reframes the anxiety (am I keeping up?) into a craft question (am I building literacy + verification habits on the rungs I already have?).
+
+### 2026-06-13
+
+#### My API Key Was Public for a Year
+
+- **TOP Takeaway**: A live Anthropic API key of mine sat in a public GitHub repo for about a year. Auto-capture tooling that commits session logs to a public repo is a landmine — one of my chop-logs hooks saved an entire code-review session, `ps`/env dump and all, straight into a _tracked, public_ repo. Rotate the key, gitignore the logs (or add a secret filter), and assume any key that's been public for a year is already harvested.
+- **The Problem**: I was deep in a debugging session — [Gas City](/gas-city) was down — when a `ps` dump spilled every API key into the transcript, because the city's tmux env exports them. My shell pushes ~20 secrets into _every_ shell via [`export_secrets`](https://github.com/idvorkin/settings/blob/9025a60cccdfc3f41e01c88c7764c39303b2ced2/shared/zsh_include.sh#L389-L420) — `ANTHROPIC_API_KEY` and `ASSEMBLYAI_API_KEY` among them. Seeing them on screen made me nervous, so I asked the obvious question: "did we leak these anywhere?"
+- **What Worked** — the agent did the forensic grind I'd never sit down and do by hand:
+  - **Found it**: turned up the live Anthropic key in my public [`idvorkin/Settings`](https://github.com/idvorkin/settings) repo, inside an auto-captured code-review log [committed 2025-05-26 in `36b971f`](https://github.com/idvorkin/settings/blob/36b971f81d7a4d6ec2c08539de1995874d72a12d/zz-chop-logs/2025-05-26_17-06-code-review-y-py-vs-clean-code-principles.md). Public for ~12 months.
+  - **Proved it was live**: a read-only `GET /v1/models` returned `200`. A working key, not an expired one.
+  - **Mapped the blast radius**: diffed every value in my private `secretBox.json` against the public repo's _full_ git history, plus a secret-pattern sweep across tracked files and history. Found a second key — an AssemblyAI key — in the same commit. Everything else clean.
+  - **Confirmed the fix took**: I revoked the key in the console; the agent re-probed → `401`. Dead, verified.
+  - This is the journal-worthy part: diffing a year of public history against a private secret store, validating a key against a live endpoint, then confirming the revocation — tedious, systematic, exactly what an agent is good at. By hand I'd have eyeballed it and moved on.
+- **What Didn't** — the uncomfortable parts:
+  - **The key was never even needed.** Claude Code runs on my Max subscription; the inherited env key was silently forcing per-token API billing instead of my plan — the same [cheap-coding-isn't-cheap dynamic from the \$230 Week](#the-230-week-when-cheap-coding-isnt). Dropping it fixed the leak _and_ the billing.
+  - **The auto-capture pipeline had no secret filter.** A hook that commits session transcripts to a tracked public repo is the exact opposite of the [one-token-one-repo blast-radius discipline](#one-repo-one-token-the-closest-you-can-get-to-write-only-on-github) — an unscoped, unfiltered firehose into public. Mine ran for a year before I noticed.
+  - And the honest part: a key public that long should be assumed harvested. Revoking it closes the door now; I have no idea who already walked through.
+
 ### 2026-05-31
 
 #### Friction = Focus: When Attention Stops Being a Proxy for Value
@@ -274,7 +364,7 @@ Source: ["AI is an attention hazard"](https://thoughts.hmmz.org/2026-05-31.html)
 #### AI Helps Me Think by Showing Me Options
 
 - **The lesson**: when the work involves a creative or judgment call I'll live with, AI should **widen the option space, not narrow it**. One "best" answer to an aesthetic question is arbitrary; five options surface what I actually value. I often can't articulate my taste in the abstract — but I can tell you which raccoon I want when I see them side-by-side. AI's job here is **[helping me think](/ai-second-brain)** by widening the field, not closing it.
-- **What happened**: spent a chunk of today picking [7 Habits raccoon illustrations](/7h) for my blog. Instead of asking AI for "the best" raccoon per chapter, I had it generate 5 variations per habit (35 cells total) and built a click-to-pick HTML sheet. localStorage persists my picks, JSON copy button at the bottom. ~15 minutes of human picking and the right raccoons were obvious — much faster than iterating one prompt at a time.
+- **What happened**: spent a chunk of today picking [7 Habits raccoon illustrations](/7-habits) for my blog. Instead of asking AI for "the best" raccoon per chapter, I had it generate 5 variations per habit (35 cells total) and built a click-to-pick HTML sheet. localStorage persists my picks, JSON copy button at the bottom. ~15 minutes of human picking and the right raccoons were obvious — much faster than iterating one prompt at a time.
 - **Why this generalizes**: the same shape works for code abstractions, copy variations, naming, design alternatives, decision framing — anything where "best" is taste, not truth. Cheap model for the wide pass, human picks, expensive model only for the winners.
 - **Try it**: [/image-selector](/image-selector) is the live demo loaded with the 35 raccoons; the [public gist](https://gist.github.com/idvorkin-ai-tools/309aea3cd0d2e43e783f2c061e920755) is the reusable pattern (HTML/JS + README + CC0) — fork it, swap in your own candidates, ship.
 
@@ -302,21 +392,21 @@ Source: ["AI is an attention hazard"](https://thoughts.hmmz.org/2026-05-31.html)
 
 - **The video**: [The Supply and Demand of AI Tokens | Dylan Patel Interview](https://youtu.be/LF3aUIM57uw) — Dylan Patel (founder of [SemiAnalysis](https://www.semianalysis.com/)) on Patrick O'Shaughnessy's [Invest Like the Best, ep. 468](https://open.spotify.com/episode/3Eu3mpOcpEjrg3SYtrglBk), April 23, 2026. Show notes at [colossus.com](https://colossus.com/episode/supply-demand-of-tokens/). Full transcript: [gist](https://gist.github.com/idvorkin-ai-tools/15e47ffab0f6684f474bf29fb6aef5fe).
 - **The numbers Patel actually cites**:
-  - **SemiAnalysis Claude Code spend**: tens of thousands last year → **$5M last week → $7M annualized this week** vs a **$25M salary line** (>25% of payroll, on pace for 100%+ by year-end).
-  - **Anthropic ARR**: $9B → **$35-40B**, adding **~$10B/month**, gross margins at a **72% floor** — vs leaked funding-round docs showing "30-something percent" at start of year.
-  - **End-of-year linear extrapolation**: ~**$400B** on Opus-4.6-tier models alone — and Patel calls that the _linear_ case.
+  - **SemiAnalysis Claude Code spend**: tens of thousands last year → **$5M last week → $7M annualized this week** vs a **\$25M salary line** (>25% of payroll, on pace for 100%+ by year-end).
+  - **Anthropic ARR**: $9B → **$35-40B**, adding **~\$10B/month**, gross margins at a \*\*72% floor\*\* — vs leaked funding-round docs showing "30-something percent" at start of year.
+  - **End-of-year linear extrapolation**: ~**\$400B** on Opus-4.6-tier models alone — and Patel calls that the _linear_ case.
   - **DRAM**: capped at **20-30%/yr** capacity growth; true incremental supply doesn't land until **late 2027 / early 2028**. Prices "will double or triple from here."
   - **GPU useful life**: not 5 years — **7-8+ years**. Hopper clusters resigning at higher prices.
-  - **TSMC capex**: $56B this year, plausibly **$100B by 2028**.
+  - **TSMC capex**: $56B this year, plausibly \*\*$100B by 2028\*\*.
   - **Anthropic Mythos**: L4 engineer (Opus 4.6) → **L6 in two months** internally. Anthropic is throttling release — "potentially the biggest step up in model capabilities in two years."
-- **"Cloud code psychosis"** (Patel's term): an ex-Intel engineer with a couple thousand dollars of tokens replaced an entire Intel team's chip reverse-engineering pipeline. A solo ex-bank economist built a deflation/inflation model + a 2,000-task BLS eval benchmark in weeks ("would have taken 200 economists a year"). The energy lead, $6k/day for three weeks, scraped every U.S. power plant and transmission line into a live grid map customers prefer over a 100-person, decade-old incumbent.
+- **"Cloud code psychosis"** (Patel's term): an ex-Intel engineer with a couple thousand dollars of tokens replaced an entire Intel team's chip reverse-engineering pipeline. A solo ex-bank economist built a deflation/inflation model + a 2,000-task BLS eval benchmark in weeks ("would have taken 200 economists a year"). The energy lead, \$6k/day for three weeks, scraped every U.S. power plant and transmission line into a live grid map customers prefer over a 100-person, decade-old incumbent.
 - **Why tokens get scarcer, not cheaper**:
 
   > As we get more and more intelligent, what really matters is access to these most intelligent tokens... the shitty SaaS startup in SF using Claude to generate their software product is not creating a ton of value and therefore they're going to get priced out of tokens soon enough.
 
   Every lab is supply-constrained; even tier-2 and tier-3 labs sell out. Anthropic could double Opus pricing and Patel says he'd keep paying. Patel's playbook: get the enterprise pay-per-token contract (not the consumer subscription), then figure out how to leverage those tokens at the highest-value task. The skill that matters is no longer implementation — it's picking which idea is worth pointing tokens at.
 
-- **The Igor angle**: this is the [$230 Week](#the-230-week-when-cheap-coding-isnt) dynamic seen from the supply side. My burn wasn't user error — I was riding the front of Patel's curve. The shift: **the answer is not to throttle, it's to point the tokens at the highest-leverage thing I can think of**. For Larry specifically — the subagent-extraction stack on the Claude Code subscription pool (~$0.12/entry equivalent) is the right shape; the open question is whether the journal cross-index is actually _the_ highest-value place to point those tokens, or just the most-fun one. Worth re-asking before the next big run.
+- **The Igor angle**: this is the [\$230 Week](#the-230-week-when-cheap-coding-isnt) dynamic seen from the supply side. My burn wasn't user error — I was riding the front of Patel's curve. The shift: **the answer is not to throttle, it's to point the tokens at the highest-leverage thing I can think of**. For Larry specifically — the subagent-extraction stack on the Claude Code subscription pool (~\$0.12/entry equivalent) is the right shape; the open question is whether the journal cross-index is actually _the_ highest-value place to point those tokens, or just the most-fun one. Worth re-asking before the next big run.
 
 ### 2026-04-17
 
@@ -351,15 +441,15 @@ Source: ["AI is an attention hazard"](https://thoughts.hmmz.org/2026-05-31.html)
 
 ### 2026-04-12
 
-#### The $230 Week: When Cheap Coding Isn't
+#### The \$230 Week: When Cheap Coding Isn't
 
-- **TOP Takeaway**: Claude Code feels free until it isn't. A 12-hour vibe-coding session plus a swarm of background agents burned through ~$230 in a week — 50% of the $200/month Max sub, another $100 in extra usage, plus 30% of the prior week's sub that rolled over. The subscription's 93% savings vs API is real, but only when you stay inside the budget. Once you tip into extra usage, you're paying raw API rates on top of a subscription you didn't finish using.
+- **TOP Takeaway**: Claude Code feels free until it isn't. A 12-hour vibe-coding session plus a swarm of background agents burned through ~$230 in a week — 50% of the $200/month Max sub, another \$100 in extra usage, plus 30% of the prior week's sub that rolled over. The subscription's 93% savings vs API is real, but only when you stay inside the budget. Once you tip into extra usage, you're paying raw API rates on top of a subscription you didn't finish using.
 - **The numbers**:
   - Max 20x ($200/mo) ≈ ~$50/week baseline
-  - Week 1 of April: ~$230 spent ≈ **4.6× weekly budget**
-  - Breakdown: $60 carry from last week + $100 this week's sub + $100 extra usage overage
+  - Week 1 of April: ~\$230 spent ≈ **4.6× weekly budget**
+  - Breakdown: $60 carry from last week + $100 this week's sub + \$100 extra usage overage
   - Pacing alert: 50% used by day 1 of a new 7-day window (only 15% elapsed) → "Slow down"
-- **The logic**: Anthropic doesn't publish the weekly token cap — only rolling 5-hour windows (~220K tokens for Max 20x). Extra usage bills at standard API rates: **$5/$25 per million input/output tokens for Opus 4.6**. The subscription's real magic is that **cache reads are free**, while API cache reads are $0.50/MTok. A heavy agentic session touches the same codebase context repeatedly — 90%+ of tokens are cache reads. Subscription: $0. API: $25+. That's the 93% savings ratio heavy users report.
+- **The logic**: Anthropic doesn't publish the weekly token cap — only rolling 5-hour windows (~220K tokens for Max 20x). Extra usage bills at standard API rates: **$5/$25 per million input/output tokens for Opus 4.6**. The subscription's real magic is that **cache reads are free**, while API cache reads are $0.50/MTok. A heavy agentic session touches the same codebase context repeatedly — 90%+ of tokens are cache reads. Subscription: $0. API: \$25+. That's the 93% savings ratio heavy users report.
 - **What drove the burn**:
   - Parallel subagents for journal extraction (80 entries × retries)
   - Multiple Larry life-coach sessions
@@ -372,7 +462,7 @@ Source: ["AI is an attention hazard"](https://thoughts.hmmz.org/2026-05-31.html)
 - **How it was caught and confirmed** ([anthropics/claude-code#46829](https://github.com/anthropics/claude-code/issues/46829), closed 2026-04-12, 221 reactions — HN front page at [498 pts](https://news.ycombinator.com/item?id=47736476)):
   - A user analyzed **119,866 Claude Code API calls across two machines** using the `ephemeral_1h_input_tokens` / `ephemeral_5m_input_tokens` fields in session JSONL. Feb 1 – Mar 5: 1h TTL stable for 33+ days. Mar 6–8: transition. Mar 8 – Apr 11: 5m dominant. No client-side changes — the flip was server-side.
   - **Jarred from Anthropic confirmed it was intentional**: _"The March 6 change makes Claude Code cheaper, not more expensive."_ The argument: 1h writes cost 2× base input vs. 5m writes at 1.25×, and many one-shot calls never re-read within the hour, so per-request TTL selection is net cheaper across the request mix — _on average_. It just happens to be catastrophically expensive for the long-session workload I actually run.
-  - Supporting reports from other Max 20x users: [#43274](https://github.com/anthropics/claude-code/issues/43274) (5-hour window collapsing to 60–90 min around March 23), [#22435](https://github.com/anthropics/claude-code/issues/22435) (mitmproxy evidence of 10× burn-rate variance via `x-ratelimit-5h-utilization` headers), [#40715](https://github.com/anthropics/claude-code/issues/40715) (feature request for the runaway-detection pacing alert that still doesn't exist — user burned $50 in minutes with no warning).
+  - Supporting reports from other Max 20x users: [#43274](https://github.com/anthropics/claude-code/issues/43274) (5-hour window collapsing to 60–90 min around March 23), [#22435](https://github.com/anthropics/claude-code/issues/22435) (mitmproxy evidence of 10× burn-rate variance via `x-ratelimit-5h-utilization` headers), [#40715](https://github.com/anthropics/claude-code/issues/40715) (feature request for the runaway-detection pacing alert that still doesn't exist — user burned \$50 in minutes with no warning).
 - **The trust cost**: the TTL number isn't the real damage. The real damage is that from now on, every unexpected burn forces the question _"did I break something, or did they silently change something?"_ — and that doubt compounds across every future debugging session. Comments on #46829 escalated fast: "rug pull," "scammer tactics," "constructive termination" of Max plans.
 
 #### Two-Process Telegram: When the Platform Is the Bug
@@ -530,7 +620,7 @@ Source: ["AI is an attention hazard"](https://thoughts.hmmz.org/2026-05-31.html)
 - **The Vampire**: AI is an energy vampire (Colin Robinson from What We Do In The Shadows). Addictive — dopamine and adrenaline like a slot machine. Then massive fatigue, "nap attacks," falling asleep at random hours.
 - **Unrealistic beauty standards**: Early adopters like Yegge (40 years experience, unlimited time/tokens) set impossible benchmarks. CEOs see that and get dollar-sign eyes — reframing it as "a recruiting problem," finding people ripest for extraction.
 - **Startups poisoning the well**: Thousands throwing talent at the same six tired pitches ("AI personas!", "Agent memory!", "Better RAG!"), burning people out chasing ideas that won't sell a dollar of ARR
-- **The $/hr formula** from his Amazon days (2001): You can't control the numerator (salary), but you control the denominator (hours). Collectively, employees have all the power.
+- **The \$/hr formula** from his Amazon days (2001): You can't control the numerator (salary), but you control the denominator (hours). Collectively, employees have all the power.
 - **His prescription**: 3-4 hour workdays. AI turns us all into Jeff Bezos — only hard decisions left. You can only sustain that pace in short bursts. "Go touch grass every day. Close the computer. Go be a human."
 
 #### AI Value Capture - It's the Integral, Not the Point
@@ -734,9 +824,9 @@ Source: ["AI is an attention hazard"](https://thoughts.hmmz.org/2026-05-31.html)
 
 ### 2025-10-26
 
-#### Cloning ScrollBuddy - Reverse Engineering a $100/year Widget
+#### Cloning ScrollBuddy - Reverse Engineering a \$100/year Widget
 
-- **TOP Takeaway**: Got annoyed someone was charging $100/year for a scroll buddy widget - challenged Claude to clone it through reverse engineering. Success!
+- **TOP Takeaway**: Got annoyed someone was charging \$100/year for a scroll buddy widget - challenged Claude to clone it through reverse engineering. Success!
 - **The Project**: [scroll-buddy repository](https://github.com/idvorkin-ai-tools/scroll-buddy)
 - **The Chat Log**: [Full conversation](https://htmlpreview.github.io/?https://gist.githubusercontent.com/idvorkin-ai-tools/3c4e0db9551270d474c82a39ba2302d4/raw/chat-log.html) | [Filtered (user/assistant only)](https://htmlpreview.github.io/?https://gist.githubusercontent.com/idvorkin-ai-tools/3c4e0db9551270d474c82a39ba2302d4/raw/chat-log.html&filter=user,assistant)
 - **The Result**: [Live Demo](https://htmlpreview.github.io/?https://gist.githubusercontent.com/idvorkin-ai-tools/62cfb5e6ed0454814ff03e2f6f450cd3/raw/demo.html)
@@ -1051,7 +1141,7 @@ This story perfectly illustrates the current state of AI development: incredibly
 ![Dual monitor setup showing two large curved monitors on a desk with code/terminal windows open, against a bright green wall - the new monitor setup providing more horizontal space for AI agents](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250720_135228.webp)
 
 - Got Claude Code
-- Updated to $100/month subscription based on what bestie told me
+- Updated to \$100/month subscription based on what bestie told me
 
 ![Text conversation showing discussion about Claude Code usage and subscription pricing, with messages about upgrading from $20/month to $100/month plan after recommendation about LLMs being important for productivity](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250720_135628.webp)
 
@@ -1372,7 +1462,7 @@ Use meta -I (e.g. Alt-I) e.g. AI :)
 - Used the original "davinci" engine (not even GPT-3.5 yet!)
 - "davinci" was the top model - no GPT-3.5-turbo, no GPT-4
 - APIs were brand new and documentation was sparse
-- "davinci" model cost $0.02/1K tokens (10x more than GPT-3.5-turbo later!)
+- "davinci" model cost \$0.02/1K tokens (10x more than GPT-3.5-turbo later!)
 
   ```
 

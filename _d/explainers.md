@@ -9,6 +9,7 @@ tags:
 redirect_from:
   - /explorable-explanations
   - /interactive-explanations
+ai_default_image: true
 ---
 
 You don't really understand something until you can play with it. That's the premise behind explainers — interactive experiences that let you _do_ the thing, not just read about it. Instead of reading that monitors come in 16:9 and 21:9 aspect ratios, you drag them around and see them side by side. Instead of reading that religions evolved from shared roots, you click through a timeline and discover the connections yourself.
@@ -35,7 +36,7 @@ You don't really understand something until you can play with it. That's the pre
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-{% include alert.html content="Why you should be doing this now: AI made explainers both trivially easy to build AND critically necessary. If you're [CHOPing](/chop) and not building explainers, you're accumulating [cognitive debt](/ai-native-manager#cognitive-debt) you'll never pay down." style="warning" %}
+{% include alert.html content="Why you should be doing this now: AI made explainers both trivially easy to build AND critically necessary. If you're [CHOPing](/chop) and not building explainers, you're accumulating [cognitive debt](/ai-native-vocab#cognitive-debt) you'll never pay down." style="warning" %}
 
 ## Why Now: AI Changed Everything
 
@@ -53,7 +54,7 @@ The cost of building an explainer dropped from "major project" to "about the sam
 
 ### AI Makes Explainers Critically Necessary
 
-Here's the twist: the same AI that makes explainers easy to build is also creating an unprecedented need for them. AI writes code faster than humans can comprehend it. [Cognitive debt](/ai-native-manager#cognitive-debt) — the understanding gap between what your system does and what your team understands — is accumulating at a rate we've never seen before.
+Here's the twist: the same AI that makes explainers easy to build is also creating an unprecedented need for them. AI writes code faster than humans can comprehend it. [Cognitive debt](/ai-native-vocab#cognitive-debt) — the understanding gap between what your system does and what your team understands — is accumulating at a rate we've never seen before.
 
 Someone in [CHOP](/chop) mode ships ten features in a week. The code works. But can anyone on the team explain _why_ it works? What the design decisions were? What will break if you change it? That's cognitive debt, and it compounds. The team that can't explain what they shipped can't confidently change it — and that's basically the definition of legacy software: software you're afraid to change.
 

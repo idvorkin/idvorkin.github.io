@@ -1,0 +1,10 @@
+---
+permalink: /search-pins.json
+layout: null
+---
+{%- comment -%}
+Publishes _data/search_pins.yml as JSON for the client-side search policy
+layer (searchPins in src/search.ts). The yml shape passes through unchanged:
+[{ "match": [...], "urls": [{ "url": ..., "title": ... }] }]
+{%- endcomment -%}
+{{ site.data.search_pins.pins | jsonify }}

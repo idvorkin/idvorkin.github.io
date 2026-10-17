@@ -358,9 +358,9 @@ Second, outage is expensive, as is incorrect action,
 
 ### Writing in the age of AI
 
-Fascinating idea from [Paul Graham](https://gist.github.com/idvorkin/68c59484cb8f18ced9d197abae907848/) that AI will make writing easy. That part is easy, the novel idea is that the consequence of this will be critical thought (the real value prop of writing) will atrophy. He notes this has a a historical precedence, we used to all have to be physically strong, there are currently people who are physically strong, but they are rare and have to work out to maintain that strength, as in our society it's mostly optional.
+Fascinating idea from [Paul Graham](https://gist.github.com/idvorkin/68c59484cb8f18ced9d197abae907848/) that AI will make writing easy, and the consequence will be critical thought (the real value prop of writing) atrophies. He notes the historical precedent: everyone used to have to be physically strong; now the strong are rare, and they stay strong by working out, because strength became optional. Which begs the question: how do you use AI to help you think, not help you write?
 
-This begs the question how to use AI to help you think, not help you write.
+[Sean Goedecke's answer](https://www.seangoedecke.com/how-to-keep-thinking/): for the writing that is thinking, you can't outsource the words. Drafting with an LLM doesn't work even if you iterate hard on the outline, because putting the words together yourself is what forces you to articulate — which is to say, to think. His sharpest claim: when you have an idea in your head, you don't really have an idea, just a directional sense of where one might be. You construct the idea in the act of writing it. His other defense is reading dense non-fiction — "the antithesis of AI slop" — then writing about what you read. That's the Amazon loop from above (clear writing needs critical thinking needs critical reading), rediscovered as Paul Graham's workout: the strength went optional, so you train it on purpose. I've been running half of this defense since 2011 without naming it — [a million words of morning journaling](/process-journal) in my own hand.
 
 ### Writing Software and Tools
 

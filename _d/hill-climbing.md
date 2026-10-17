@@ -82,7 +82,7 @@ v1 plateaued at 4/10 because the naive loop kept appending new directives withou
 
 ## Your other job: build evals
 
-The optimization literature calls it a **fitness function** — the scoring rule that turns one output into one number. LLM-land calls it an **eval**, and in practice an eval bundles the scoring rule with a **test set** of representative inputs, so you're scoring across cases, not one-shot. Old-school engineering called the bundle a **test suite**. Building the eval means building both halves — the rule _and_ the cases. Neither half is the job; the bundle is.
+The optimization literature calls it a **fitness function** — the scoring rule that turns one output into one number. LLM-land calls it an **eval**, and in practice an eval bundles the scoring rule with a **test set** of representative inputs, so you're scoring across cases, not one-shot. Old-school engineering called the bundle a **test suite**. Building the eval means building both halves — the rule _and_ the cases.
 
 Concretely, in the chroma-key example: the fitness function is `residual × 5 + holes` (per image); the test set is the two images (`case-sparse` + `case-dense`); the eval is the function applied to both cases, summed. Drop either half and the whole thing collapses — a rule with no cases has nothing to score; cases with no rule is just vibes.
 
@@ -96,6 +96,7 @@ A sharp eval has properties on both halves:
 - **Unambiguous.** Two runs on the same output return the same score. LLM judges are fine if you've pinned the prompt and the model version.
 - **Aligned with what you actually want.** The easy trap: pick a metric that's easy to measure but doesn't predict the real outcome. If residual magenta goes to zero but interior holes explode, the agent will happily hill-climb to a worse result.
 - **Weighted the right way.** Residual magenta mattered 5× more than interior holes in the chroma-key case because one failure mode is obvious and the other is invisible. Get the weights wrong and the climb goes to the wrong peak.
+- **Decomposable.** If the rule is a weighted sum, read the terms separately, not just the total. Two terms that move together are one term voting twice; a term that saturated early is dead weight still drawing its share of the budget. An [RL run teaching a model to paint in code](https://surya.website/rling-qwen-to-paint-with-code) stalled on exactly this — five of its nine reward signals correlated at 0.85–0.95, and a code-length term worth a third of the total had flatlined by step thirty. Cutting nine signals down to four reached the old ceiling three times faster and kept going.
 
 **The test set:**
 
@@ -143,4 +144,4 @@ The climb is the search — but the winning recipe is just a file on disk unless
 
 That's the full loop: once the fitness function is sharp, the agent climbs; once the climb finishes, the same fitness function becomes a regression guard on every subsequent output. The human writes the number. The agent does the search. The eval watches the regression. Set it and leave it running.
 
-Related: [AI developer](/ai-developer#3-your-secret-sauce-is-the-evals-then-the-training-data---your-prompt-has-no-economic-value) — why evals are the real moat. [AI testing](/ai-testing#eval-systems) — the practical playbook (PromptFoo, test sets, live dashboards). [Chop](/chop#what-matters-most-is-testingevals) and [how Igor chops](/how-igor-chops#testing-and-evals) — evals as the bottleneck skill in AI-assisted coding. [Explainers](/explainers) — ship an interactive artifact alongside the climb. [AI cockpit](/ai-cockpit) — how the parallel-agent setup makes long climbs cheap. [AI-native manager](/ai-native-manager#appendix-new-words-for-a-new-world) — where this term lives in the glossary.
+Related: [AI cockpit](/ai-cockpit) — how the parallel-agent setup makes long climbs cheap. [AI-native manager](/ai-native-manager#appendix-new-words-for-a-new-world) — where this term lives in the glossary.

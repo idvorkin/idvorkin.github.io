@@ -195,7 +195,8 @@ js-validate: js-typecheck js-lint
 # - jekyll-container: Serve site in container environment
 # - jekyll-docker: Serve site in Docker container
 # - update-backlinks: Rebuild backlinks.json
-# - update-search: Update Algolia search index
+# - build-search: Build the local Pagefind search index into _site/pagefind/
+# - build-search-only: Rebuild just the index when _site/ is already current
 
 coverage-instrument:
     npx nyc instrument --compact=false _site/assets/js instrumented
@@ -231,10 +232,32 @@ jekyll-rebuild: jekyll-clean
     fi
     echo "✅ Jekyll rebuild complete - site available in _site/"
 
-# Fire-and-forget background jekyll build for fresh worktrees.
+# Synchronous Jekyll build (NO clean — reuses .jekyll-cache). ~5s on this site. Use when
+# you just need _site/ current after an edit; it's a dependency of update-backlinks.
+jekyll-build:
+    #!/usr/bin/env sh
+    set -eu
+    # Load the Ruby 3.2+/4.0 compat shim the old github-pages gems need (mirrors jekyll-rebuild).
+    export RUBYOPT="-r$(pwd)/_ruby_compat.rb"
+    echo "🔨 Building Jekyll site (incremental; reusing .jekyll-cache)..."
+    if [ "$(uname)" = "Darwin" ]; then
+        ~/homebrew/opt/ruby/bin/bundle exec jekyll build
+    else
+        bundle exec jekyll build
+    fi
+    echo "✅ Jekyll build complete - site available in _site/"
+
+# Fire-and-forget background dependency install + jekyll build for fresh worktrees.
 # Populates _site/ so the anchor-checker pre-commit hook passes by
 # the time the first commit lands. No clean step — incremental build
 # is faster and sufficient.
+#
+# A fresh worktree starts with neither gems nor node_modules, and both
+# gaps fail in ways that look like something else:
+#   - no gems  -> jekyll build dies on "Could not find gem 'bigdecimal'"
+#   - no node_modules -> the `test` pre-commit hook dies on missing vitest,
+#     which aborts `git commit` SILENTLY (no [branch sha] line), while a
+#     chained `&& git push` still runs and reports success.
 worktree-init:
     #!/usr/bin/env sh
     set -eu
@@ -245,17 +268,63 @@ worktree-init:
     # fails silently while we still print "Background build fired".
     BRANCH=$(git branch --show-current | tr '/' '-')
     LOG="/tmp/jekyll-worktree-$BRANCH.log"
-    echo "🔨 Starting bg jekyll build — log: $LOG"
+    NPM_LOG="/tmp/npm-worktree-$BRANCH.log"
+    echo "🔨 Starting bg gem install + jekyll build + backlinks build — log: $LOG"
+    echo "📦 Starting bg npm ci — log: $NPM_LOG"
     # Match jekyll-rebuild: prefer homebrew Ruby on Darwin so we don't
     # silently fall back to system Ruby and fail.
     if [ "$(uname)" = "Darwin" ]; then
-        nohup ~/homebrew/opt/ruby/bin/bundle exec jekyll build >"$LOG" 2>&1 & disown
+        BUNDLE="$HOME/homebrew/opt/ruby/bin/bundle"
     else
-        nohup bundle exec jekyll build >"$LOG" 2>&1 & disown
+        BUNDLE="bundle"
     fi
-    echo "✅ Background build fired. _site/ ready in ~60-90s; first commit should find it populated."
+    # Gems must land before the jekyll build, and the jekyll build before the
+    # backlinks build (build_back_links.py reads _site/) — sequence all three
+    # in one background job. back-links.json is gitignored/CI-generated, but
+    # the anchor-checker pre-commit hook still needs a LOCAL copy to resolve
+    # permalinks/redirects (it hard-fails with "back-links.json not found" if
+    # one isn't on disk) — same reason _site/ has to exist before the first
+    # commit.
+    nohup sh -c "$BUNDLE install && $BUNDLE exec jekyll build && uv run ./build_back_links.py build" >"$LOG" 2>&1 & disown
+    # node_modules is independent of the Ruby side, so let it run in parallel.
+    nohup npm ci >"$NPM_LOG" 2>&1 & disown
+    echo "✅ Background deps + build fired. Ready in ~60-90s; first commit should find _site/ and back-links.json populated and the test hook runnable."
 
-jekyll-serve port="4000" livereload_port="35729":
+# ===== Local-preview bootstrap =====
+#
+# back-links.json is gitignored and CI-generated, so a fresh clone or a fresh
+# worktree has no copy. But the SITE FETCHES /back-links.json AT RUNTIME: with
+# the file absent the home page's Featured card hangs on "Loading..." forever,
+# Recent and Random render completely empty with no fallback text, and every
+# search result description is blank. The fetch failure is caught and swallowed
+# (get_link_info returns {}), so nothing is thrown and the page still LOOKS fine
+# at a glance because titles render everywhere. This recipe is what makes
+# `git clone && just jekyll-serve` just work.
+#
+# Missing-only, deliberately: update-backlinks runs a full Jekyll build first
+# (build_back_links.py reads _site/), so re-deriving staleness on every serve
+# would tax the common case — a serve that got slower every time is the worse
+# trade. After adding/renaming a permalink, refresh by hand: just update-backlinks
+#
+# Never fatal: a failed build here degrades local preview; it must not stop the
+# server from coming up. CI is unaffected either way — pages.yml builds its own
+# copy after the Jekyll build and ships it in the Pages artifact.
+#
+# Build back-links.json only if missing (auto-run by jekyll-serve; ~4ms no-op once present)
+ensure-backlinks:
+    #!/usr/bin/env sh
+    if [ -s back-links.json ]; then
+        exit 0
+    fi
+    echo "🔗 back-links.json missing (gitignored / CI-generated) — building it once..."
+    if just update-backlinks; then
+        echo "✅ back-links.json built."
+    else
+        echo "⚠️  Backlinks build FAILED. The site will still serve, but Featured/Recent/Random" >&2
+        echo "   and search result descriptions will be EMPTY. Fix, then: just update-backlinks" >&2
+    fi
+
+jekyll-serve port="4000" livereload_port="35729": ensure-backlinks
     #!/usr/bin/env sh
     # Update git branch info for dev banner
     echo '{"branch": "'$(git branch --show-current)'"}' > _data/git.json
@@ -281,8 +350,8 @@ jekyll-serve port="4000" livereload_port="35729":
         echo "╚════════════════════════════════════════════════════════════════════╝"
         echo ""
         echo "🔗 Tailscale detected in container"
-        echo "   Local:     http://localhost:{{port}}"
-        echo "   Tailscale: http://$TAILSCALE_HOST:{{port}}"
+        echo "   URL (with the chosen port) is printed below once Jekyll binds."
+        echo "   Port may differ from {{port}} if another repo's server holds it."
         echo ""
         echo "──────────────────────────────────────────────────────────────────────"
     else
@@ -295,12 +364,33 @@ jekyll-serve port="4000" livereload_port="35729":
     export RUBYOPT="-r$(pwd)/_ruby_compat.rb"
     if command -v rbenv >/dev/null 2>&1; then
         eval "$(rbenv init - sh)"
-        rbenv exec bundle exec jekyll server --incremental --livereload --host $BIND_HOST --port {{port}} --livereload-port {{livereload_port}}
+        RUNNER="rbenv exec bundle exec"
     else
-        bundle exec jekyll server --incremental --livereload --host $BIND_HOST --port {{port}} --livereload-port {{livereload_port}}
+        RUNNER="bundle exec"
     fi
 
-jekyll-container port="4000":
+    # Require running-servers new enough to have the `run` subcommand
+    # (port-conflict-aware launching). Gate on its version, not just its
+    # presence, so an older install fails loudly instead of erroring on an
+    # unknown subcommand.
+    REQUIRED_RS_VERSION="0.2.0"
+    rs_version="$(running-servers version 2>/dev/null)"
+    if [ -z "$rs_version" ] || \
+       [ "$(printf '%s\n%s\n' "$REQUIRED_RS_VERSION" "$rs_version" | sort -V | head -n1)" != "$REQUIRED_RS_VERSION" ]; then
+        echo "✗ jekyll-serve needs running-servers >= $REQUIRED_RS_VERSION (have: ${rs_version:-not installed})." >&2
+        echo "  Update idvorkin-scripts so 'running-servers run' exists, then retry." >&2
+        exit 1
+    fi
+
+    # running-servers run: fail fast if a Jekyll already serves THIS directory,
+    # otherwise pick a free port (preferring {{port}}/{{livereload_port}}) so we
+    # coexist with servers in other repos instead of dying on "Address already
+    # in use". {http}/{livereload} are substituted with the chosen ports.
+    exec running-servers run --process jekyll --http {{port}} --livereload {{livereload_port}} \
+        -- $RUNNER jekyll server --incremental --livereload --host "$BIND_HOST" \
+        --port '{http}' --livereload-port '{livereload}'
+
+jekyll-container port="4000": ensure-backlinks
     #!/usr/bin/env bash
     HOSTNAME=$(hostname)
     echo "╔════════════════════════════════════════════════════════════════════╗"
@@ -346,23 +436,6 @@ jekyll-docker:
       jekyll/jekyll:4 \
       jekyll serve --watch --force_polling --host 0.0.0.0
 
-jekyll-docker-update-search:
-    #!/usr/bin/env sh
-    # Auto-detect platform and use appropriate image
-    if [ "$(uname -m)" = "arm64" ]; then
-        PLATFORM="--platform linux/arm64"
-    else
-        PLATFORM="--platform linux/amd64"
-    fi
-    docker run --rm \
-      $PLATFORM \
-      -v "$PWD:/srv/jekyll" \
-      -v jekyll-gems:/usr/local/bundle \
-      jekyll/jekyll:4 \
-      jekyll algolia
-
-
-
 docker-build:
     docker build -t devdocker devdocker
 
@@ -372,7 +445,9 @@ docker-run2:
 docker-run:
     docker run -v ~/blog:/root/blog -it -p 35729:35729 -p 4000:4000 devdocker npm run jekyll:container
 
-update-backlinks:
+# Regenerate back-links.json. Depends on jekyll-build (~5s) so _site/ is always current
+# before backlinks are derived from it — never reads a stale _site.
+update-backlinks: jekyll-build
     uv run ./build_back_links.py build
 
 # Update backlinks with a custom output file
@@ -381,8 +456,46 @@ update-backlinks-to:
     # First argument is the output file
     uv run ./build_back_links.py build "$1"
 
-update-search:
-    bundle exec jekyll algolia
+# Build the local Pagefind search index into _site/pagefind/.
+#
+# Replaces the old `bundle exec jekyll algolia`. Runs against the BUILT site, so
+# _site/ must be current — hence the jekyll-build dependency.
+#
+# The index is written to ./pagefind/ (gitignored) rather than straight into
+# _site/, because `jekyll serve --incremental` deletes anything in _site/ that it
+# did not generate — on every single content edit. `keep_files` only covers a
+# plain `jekyll build`, not the serve rebuild loop.
+#
+# Writing to the repo root instead makes ./pagefind/ a normal static source
+# directory, so Jekyll *regenerates* _site/pagefind/ on every build and the index
+# survives the edit loop. It is also copied into _site/ immediately below so
+# search works without waiting for the next rebuild.
+#
+# CI does NOT need this dance — it builds once, writes into _site/ directly, and
+# deploys. See .github/workflows/pages.yml.
+build-search: jekyll-build
+    #!/usr/bin/env sh
+    set -eu
+    echo "🔍 Building Pagefind index..."
+    npx --yes pagefind --site _site --output-path pagefind
+    mkdir -p _site/pagefind && cp -r pagefind/. _site/pagefind/
+    echo "✅ Search index built - ./pagefind/ (copied into _site/)"
+
+# Rebuild ONLY the search index, assuming _site/ is already current.
+# Skips the ~5s Jekyll rebuild — use it to refresh a stale index quickly.
+build-search-only:
+    #!/usr/bin/env sh
+    set -eu
+    if [ ! -d _site ]; then
+        echo "✗ _site/ not found. Run 'just build-search' (or 'just jekyll-build') first." >&2
+        exit 1
+    fi
+    npx --yes pagefind --site _site --output-path pagefind
+    mkdir -p _site/pagefind && cp -r pagefind/. _site/pagefind/
+    echo "✅ Search index rebuilt - ./pagefind/ (copied into _site/)"
+
+# Backwards-compatible alias — muscle memory from the Algolia days.
+update-search: build-search
 
 update-ig66:
     python3 old_blog/transform_blogger_export.py export-all > _ig66/ig66-export.json
@@ -407,51 +520,6 @@ write-backlinks-tmp:
     # Rebuild backlinks directly to ~/tmp
     uv run ./build_back_links.py build ~/tmp/back-links.json
     echo "Backlinks written to ~/tmp/back-links.json"
-
-# Rebuild backlinks and push to GitHub with safety checks
-push-backlinks:
-    #!/usr/bin/env sh
-    # Ensure ~/tmp directory exists
-    mkdir -p ~/tmp
-
-    # Save the current state of back-links.json to ~/tmp
-    cp back-links.json ~/tmp/back-links.json.bak
-
-    # Rebuild backlinks using existing command
-    just update-backlinks
-
-    # Also generate a copy in ~/tmp for reference
-    just update-backlinks-to ~/tmp/back-links.json
-
-    # Check if there are changes
-    if ! git diff --quiet back-links.json; then
-        # Count the number of changed lines
-        CHANGED_LINES=$(git diff --numstat back-links.json | awk '{print $1 + $2}')
-        echo "Number of changed lines: $CHANGED_LINES"
-
-        # If too many lines changed, ask for confirmation
-        if [ "$CHANGED_LINES" -gt 50 ]; then
-            echo "WARNING: Large number of changes detected ($CHANGED_LINES lines)"
-            echo "Showing diff summary:"
-            git diff --stat back-links.json
-
-            # Ask for confirmation
-            read -p "Do you want to continue with the push? (y/n) " CONFIRM
-            if [ "$CONFIRM" != "y" ]; then
-                echo "Operation cancelled. Restoring backup..."
-                cp ~/tmp/back-links.json.bak back-links.json
-                exit 1
-            fi
-        fi
-
-        # Commit and push changes
-        git add back-links.json
-        git commit -m "feat(back-links): update backlinks data $(date +%Y-%m-%d)"
-        git push origin HEAD
-        echo "Backlinks updated and pushed successfully!"
-    else
-        echo "No changes detected in backlinks."
-    fi
 
 broken-links server="localhost:4000":
     uv run scripts/check_internal_links.py --server {{server}}

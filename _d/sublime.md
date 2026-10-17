@@ -10,7 +10,7 @@ redirect_from:
 permalink: /sublime
 ---
 
-Emotional health is pretty important. Western folks don't have a lot of words to support this. Luckily, the Buddhists have the sublime states: Loving-kindness, Compassion, Altruistic Joy, and Equanimity. Give 'em a try. Most of this post is based on "The Joy of Happiness".
+Emotional health is pretty important. Western folks don't have a lot of words to support this. Luckily, the Buddhists have the sublime states: Loving-kindness, Compassion, Altruistic Joy, and Equanimity. Give 'em a try. Most of this post is based on "Joy on Demand".
 
 ### Uplift the mind in seconds
 
@@ -31,13 +31,12 @@ Tools of the trade (Sublime states):
 | Compassion      | [l21](l21)        |
 | Altruistic Joy  | [l22](l22)        |
 | Equanimity      | [l23](l23)        |
-| --------------  | --------------    |
 
 <div> </div>
 - l20
 - **Loving Thoughts**: Make it a habit to silently wish happiness, safety, and well-being for people you interact with or think about, including strangers you pass on the street. (Happy gun - Pew Pew)
 - **Everyday Kindness**: Practice small acts of kindness throughout your day. This could be as simple as offering a smile, giving a sincere compliment, or helping someone in a small way. These actions cultivate a habit of kindness.
-- **Give out chocolate/balls candy** - Sometimes I'll buy a bunch of chocolates in bulk and spend the day handing them out.
+- **Give out chocolate** - Sometimes I'll buy a bunch of chocolates in bulk and spend the day handing them out.
 
 <div> </div>
 - l21
@@ -65,7 +64,6 @@ Tools of the trade (Sublime states):
 | Compassion      | [l11](l11)     |
 | Altruistic Joy  | [l12](l12)     |
 | Equanimity      | [l13](l13)     |
-| --------------  | -------------- |
 
 - l10
 - **Opposite:** Ill will
@@ -106,7 +104,6 @@ Some formal practices
 - 2m: Attend to joy
 - 2m: Do loving-kindness from above
 - Anytime: When selfless love arises, attend to it.
-- - 2m: Settle the mind
 
 **FP: Uplifting and settling the mind with altruistic joy**
 

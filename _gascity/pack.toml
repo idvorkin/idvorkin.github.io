@@ -1,0 +1,9 @@
+[pack]
+name = "blog-ops"
+schema = 2
+
+# Blog-specific Gas City pack. Lives in the blog repo so the workflow travels
+# with the blog (portable). Imported as the `blog` rig's pack (rig-level import
+# in the city's city.toml), which is what lets the agent's work_dir resolve via
+# {{.RigRoot}}. The `_gascity/` prefix keeps Jekyll from publishing this to the
+# live site.

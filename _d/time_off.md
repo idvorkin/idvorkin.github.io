@@ -9,61 +9,58 @@ redirect_from:
   - /personal-development
   - /pd
   - /time-off
-alias:
-  - /vacation
-  - /personal-development
-  - /pd
-  - /time-off
-  - /timeoff
 ---
 
-Time off is critical, it's how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with turning your 1 week off into an action-packed tour of Disneyland. But, there are other kinds of time off that we'll discuss too. Like most things, time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!
+Time off is the only time my hours are mine. The rest of the year work owns them, and the roles I'd grieve losing — father, husband, the guy doing magic and balloons — get whatever is left over. A good break is when those roles eat first. But time off is a skill, and I'm not naturally good at it: left alone I vegetate, grind a to-do list, or sneak back to work. I've written up every break since 2020 so I'd stop re-learning the same lessons. This post is the distillation.
+
+> [When you sacrifice identity for consumption, you end up with neither](/produce-consume).
+
+That's the whole trap in one sentence — vegetating _feels_ like rest, but it quietly starves the roles that make you _you_.
+
+The flip side is just as reliable: **if you plan to have a good time, you will.** When I decide up front that I'm going to enjoy something, and set up the conditions for it, I almost always do. Enjoyment isn't luck; it's mostly the people I'm with and the memories I build, which are the two ingredients Brooks keeps coming back to in the appendix. Planning is how I get both into a trip before it starts.
+
+{% include alert.html content="✈️ **Latest trip:** [/timeoff-next](/timeoff-next) always points at the newest (or upcoming) one — and [every trip since 2020](#every-trip-since-2020) is listed below." style="info" %}
 
 <!-- prettier-ignore-start -->
 
 <!-- vim-markdown-toc-start -->
 
-- [Time on, time rich, time poor](#time-on-time-rich-time-poor)
+- [Time off — off from what?](#time-off--off-from-what)
 - [The phases of time off](#the-phases-of-time-off)
   - [Vegetation](#vegetation)
   - [TODO list](#todo-list)
+  - [Freedom](#freedom)
   - [Personal Development (PD)](#personal-development-pd)
-- [Very Vegetating](#very-vegetating)
-- [Powerful Personal Development](#powerful-personal-development)
-  - [Managing family expectations](#managing-family-expectations)
-  - [PD vs Life Balance](#pd-vs-life-balance)
-  - [Optimizing for happiness](#optimizing-for-happiness)
-- [Get real what should I do?](#get-real-what-should-i-do)
-  - [Time box vegetation](#time-box-vegetation)
+- [What to do about it](#what-to-do-about-it)
   - [Strategize against the resistance](#strategize-against-the-resistance)
   - [Begin with the end in mind](#begin-with-the-end-in-mind)
-- [Examples of how I spent my time off](#examples-of-how-i-spent-my-time-off)
-- [Making the most out of staycation](#making-the-most-out-of-staycation)
-- [Should you do 1:1 time with the family](#should-you-do-11-time-with-the-family)
-- [Igor's Personal combined learnings](#igors-personal-combined-learnings)
+  - [Re-stack your roles](#re-stack-your-roles)
+  - [Try one-on-one trips](#try-one-on-one-trips)
+- [Every trip since 2020](#every-trip-since-2020)
+- [The rules](#the-rules)
   - [Before you go](#before-you-go)
   - [Every other day check-in](#every-other-day-check-in)
-  - [Physical Health](#physical-health)
+  - [Physical health](#physical-health)
   - [Diet](#diet)
-  - [Emotional Health](#emotional-health)
-  - [Identity Health](#identity-health)
-  - [Travel Tips - Before you go](#travel-tips---before-you-go)
-  - [Road Trip Tips](#road-trip-tips)
-  - [Other learnings](#other-learnings)
-- [Other Thoughts](#other-thoughts)
+  - [Emotional health](#emotional-health)
+  - [Identity health](#identity-health)
+  - [The stories behind the rules](#the-stories-behind-the-rules)
+- [Travel logistics](#travel-logistics)
+  - [Road trips](#road-trips)
+- [Other thoughts](#other-thoughts)
   - [Optimize for energy, not time](#optimize-for-energy-not-time)
   - [Can you have too much time off?](#can-you-have-too-much-time-off)
+- [Appendix: 9 Rules for a Happier Vacation (Arthur Brooks)](#appendix-9-rules-for-a-happier-vacation-arthur-brooks)
+- [Appendix: Traveling with tirzepatide (or any med that needs a fridge)](#appendix-traveling-with-tirzepatide-or-any-med-that-needs-a-fridge)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-## Time on, time rich, time poor
+## Time off — off from what?
 
-Yeah, I've never thought about that either. Let's define "Time On" as the period when you're actively engaged in work or other mandatory activities that require your full attention and energy.
+Everybody talks about time off. Nobody ever says **time on** — the missing half of the pair. But it's hiding in plain sight: time on is when work owns your hours and you're **time poor**; time off is when you get them back and you're **time rich**.
 
-The implication of "time on" is you don't have the time to do the things you want to do, aka you're **time poor**. Time off gives you a chance to be **time rich**, when you can spend the time as you wish.
-
-Like being "money rich", being time rich can solve lots of problem, but it comes with the same traps:
+Like being "money rich", being time rich can solve lots of problems, but it comes with the same traps:
 
 {%include summarize-page.html src="/parkinson" %}
 
@@ -71,299 +68,198 @@ Like being "money rich", being time rich can solve lots of problem, but it comes
 
 {% include local_image_float_right.html src="raccoon-vacation.webp" %}
 
-A common question is should you take 2 short vacations or 1 long one. That's a tough choice. I'm not sure I have an opinion on that, but I've learned my time off goes through a few phases, and I suspect there's a fixed time component, and if I can better understand the phases, I can maximize the value of my time off:
+A common question is whether to take two short vacations or one long one. I don't have an opinion on that, but I've learned my time off goes through a few phases, and I suspect each has a fixed time component. If I understand the phases, I can get more out of the break:
 
-1. Vegetation - Getting over being tired.
-1. TODO list - Cross those small things you've been putting off your TODO list
-1. Freedom - Savoring your ability to do nothing
-1. Productivity - Realizing there are important not urgent things you can do at your own pace.
+1. **Vegetation** — getting over being tired.
+1. **TODO list** — crossing off the small things I've been putting off.
+1. **Freedom** — savoring the ability to do nothing.
+1. **Personal development** — realizing there are important-not-urgent things I can do at my own pace.
 
-These phases become even more pronounced with extended time off. For a deep exploration of what happens when you take a full year off at 50, see the [gap year paradox](/gap-year) and [my personal wrestling with the decision](/gap-year-igor).
+The phases get more pronounced with extended time off. For what happens when you take a full year off at 50, see the [gap year paradox](/gap-year) and [my wrestling with the decision](/gap-year-igor).
 
 ### Vegetation
 
-Work is stressful, it follows me home, and it takes several days to "[drain](/mind-at-work)". I think there's a relation between "draining my work stress" and vegetation. It takes me a solid week to get over that.
+Work is stressful, it follows me home, and it takes several days to "[drain](/mind-at-work)". Vegetation is that draining. It used to take me a solid week — these days I can do it in about a day. I guess I'm getting better at work-life balance.
+
+Vegetating comes in three flavors: ignoring my responsibilities and task list, ignoring my habits and discipline, and ignoring my friends and family. Only the first one is actually fair.
+
+Ignoring the task list — I deserve it. Ignoring habits feels deserved too, but that's the [resistance](/resistance) lying to me: habits are time-negative (barely) and energy-positive, so skipping them means less energy _and_ feeling worse, a double whammy. Ignoring family is the least clear-cut; they want to enjoy themselves and I also need alone time, so the move is a fair balance, with expectations set and honored.
+
+| I want to skip                   | Future me recommends                                    |
+| -------------------------------- | ------------------------------------------------------- |
+| Tasks and responsibilities       | Ignore 'em, you deserve it                              |
+| Habits, exercise, and discipline | Do them, you'll have more energy to enjoy your vacation |
+| Friends and family               | Seek balance, set expectations, and honor them          |
+
+So, on behalf of future me: time-box it. Acknowledge I deserve to vegetate, take a day or two guilt-free, keep the habits, and at the end of the limit start fighting the resistance.
 
 ### TODO list
 
-Time is scarce, things to be done are infinite, and they pile up when you have limited time. Once my work stress drains, I have a burst of Energy, and I apply that to my todo list. This is very satisfying as I feel energized and productive.
+Time is scarce, things to be done are infinite, and they pile up when time is limited. Once my work stress drains I get a burst of energy, and I apply it to the to-do list. This is very satisfying — I feel energized and productive.
+
+The trap is getting stuck here, either grinding the list forever or avoiding it entirely, so I never make it to the later phases. Staycations are the worst for this: it's easy to oscillate between vegetating, grinding the list, and ruminating on work.
+
+### Freedom
+
+With the list handled, there's a stretch of guilt-free nothing. It's different from vegetating — vegetating is being too tired to choose, freedom is choosing nothing. It's short, and it's worth noticing while it's happening.
 
 ### Personal Development (PD)
 
-When you're recharged, feel satisfied that enough is off your todo list, and are ready to build a better you. Personal development can be a personal thing, like becoming a better writer, or training for a marathon, or professional, like building a skill required in your career.
+When I'm recharged and enough is off the list, I'm ready to build a better me. PD can be personal, like becoming a better writer or training for a marathon, or professional, like building a skill my career needs.
 
-## Very Vegetating
+PD is essentially working from home, but for my future self, so it needs the same family expectations working from home does: a dedicated space, getting out of the house, a calendar they can see. And even though getting to do what I love is awesome, I still want to love my family. Time off is extra energy to spend on them, so spend it.
 
-Vegetation comes in a few flavors. 1) Ignoring your responsibilities and task list 2) Ignoring your habits and discipline 3) Being selfish and ignoring your friends and family.
+## What to do about it
 
-I think it's fair to ignore your responsibility and task list - you deserve it.
-
-You likely think your habits and discipline are a burden, and that you deserve to ignore them. Except, that's the [resistance](/resistance) lying to you! Your habits, while time-negative (barely) are net energy positive, and if you skip them, you'll not only have less energy, but you'll feel worse, a double whammy.
-
-Ignoring Friends and Family - This flavor is the least clear-cut. Your family and friends want to enjoy themselves, but you also need alone time, I think the best balance is finding a fair balance, and then setting expectations and honoring them. See the "Managing family expectations section.
-
-So, on behalf of future you, when you want to vegetate, let go of your responsibilities, but don't skip your positive habits!
-
-In recap:
-
-| You want to skip                 | Future you recommends                                   |
-| -------------------------------- | ------------------------------------------------------- |
-| Tasks and responsibilities       | Ignore 'em you deserve it                               |
-| Habits, exercise, and discipline | Do them, you'll have more energy to enjoy your vacation |
-| Your friends and family          | Seek balance, Set expectations, and honor them          |
-
-## Powerful Personal Development
-
-### Managing family expectations
-
-PD is essentially working from home, but working for your future self. Just like when you work from home you need to set family expectations, you need to do the same for your family. This can include, dedicated space, getting out of the house, providing a calendar.
-
-### PD vs Life Balance
-
-Even though getting to do what you love is awesome, you still want to love your family. You've got an opportunity to spend more energy on them, so do.
-
-### Optimizing for happiness
-
-{%include summarize-page.html src="/happy" %}
-
-## Get real what should I do?
-
-### Time box vegetation
-
-Acknowledge you deserve to vegetate, and give yourself a day or 2 guilt-free. At the end of the prescribed limit, start to fight the resistance.
+<a id="get-real-what-should-i-do"></a>
 
 ### Strategize against the resistance
 
-You can fight the [resistance](/resistance) by making your [addictions](/addictions) harder. For me, that means uninstall TikTok.
+Fight the [resistance](/resistance) by making [addictions](/addictions) harder. For me, that means uninstalling TikTok.
 
-And by making your positive habits easier. For me, this includes writing up a time off todo list (see notes linking to this), remembering what my good habits are, and how much better I feel when I do them. And then running a habit app to make sure I'm doing them.
+And by making positive habits easier: writing a time-off list before the trip (every trip post below starts with one), remembering what my good habits are and how much better I feel when I do them, then running a habit app to make sure I do them.
 
 ### Begin with the end in mind
 
-- Read your [eulogy](/eulogy), to remember what matters most to you.
+- Read my [eulogy](/eulogy), to remember what matters most.
 - Remember not to [procrastinate](/frog).
+- Remember what actually makes me happy:
 
-## Examples of how I spent my time off
+{%include summarize-page.html src="/happy" %}
 
-Look at the incoming links below and:
+### Re-stack your roles
 
-- [April 2020 - Time between leaving Amazon and Joining Facebook](/timeoff-2020-03)
+Reading the eulogy reminds you which roles matter; time off is the chance to actually re-stack them, because ordinary life quietly mis-sorts them. I sort mine into three honest tiers:
 
-## Making the most out of staycation
+- **Non-negotiables — protect first, daily.** The two foundational [Healths](/health): _Physical_, banked before the family wakes up, and _Emotional_ — awareness and compassion, handled as it happens. Everything else is built on these.
+- **Frequently starved — feed these.** _Father / Husband_, and the _Joy Giver_ — the [balloon](/balloon)-and-[magic](/magic) guy from the [eulogy](/eulogy). The roles I'd grieve losing, and the exact ones I let go hungry when work gets loud. Time off is their window; the jovial me comes roaring back the moment I stop starving him.
+- **Over-invested — dial back.** _Technologist_, and honestly everything else, parked way below where they run in a normal week. Not because the work doesn't matter — because it's the finished room, and I keep redecorating it instead of walking into the ones that aren't.
 
-With staycations, it's especially easy to oscillate between vegetating, grinding through the todo list, and ruminating on work. I suspect there are special tools for staycations - I should think through them.
+### Try one-on-one trips
 
-## Should you do 1:1 time with the family
-
-I've felt guilt around this before, but this time it worked amazing:
+Instead of traveling as the whole family, take separate trips with one person at a time — one with each kid, one with Tori. I'd felt guilt around this before, but when I tried it, it worked amazingly well:
 
 {%include summarize-page.html src="/timeoff-2024-02" %}
 
-Pros:
+The pro is that you can really focus on what you and that person want. The cons are that it feels less efficient, and that someone always seems to be missing out — but missing out is really about fairness. So the keys are: spend time with each family member so it's fair and everyone feels included, and don't forget to take time for yourself.
 
-- You can really focus on doing what you and that person want
+## Every trip since 2020
 
-Cons:
+Each break gets its own post: the plan written before I leave, then what actually happened. Newest first.
 
-- Feels less efficient - as you
-- Feels like folks are missing out - missing out is about fairness
+- **Jul 2026** — [Scandinavian whirlwind tour](/timeoff-2026-07): 22 days, 5 countries, all four of us.
+- **Aug 2025** — [Meta recharge](/timeoff-2025-08): the 30-day sabbatical you get at 5 years.
+- **Aug 2024** — [Six weeks of summer](/timeoff-2024-08): performance reviews done to school starting.
+- **Apr 2024** — [Spring break: chillin'](/timeoff-2024-04): a week off after a crazy launch stretch.
+- **Feb 2024** — [Midwinter break: divide and conquer](/timeoff-2024-02): one-on-one mini-trips with each kid and Tori.
+- **Nov 2023** — [Ashland Thanksgiving](/timeoff-2023-11): the annual Oregon trip.
+- **Aug 2023** — [Summer break on the coast](/timeoff-2023-08): too hot for Chilliwack, so the coast instead.
+- **Apr 2023** — [Spring break in Canada](/timeoff-2023-04): the kids and I visiting family.
+- **Dec 2022** — [X-mas 2022](/timeoff-2022-12): the "fall excitement" edition.
+- **Nov 2022** — [New York, then Oregon Thanksgiving](/timeoff-2022-11): layoffs and a re-org meant working through part of it.
+- **Jul 2022** — [FISM and Canada](/timeoff-2022-07): the olympics of magic in Quebec City, then family. Most of the stories below are from this one.
+- **Feb 2022** — [Midwinter break 2022](/timeoff-2022-02).
+- **Dec 2021** — [X-mas 2021](/timeoff-2021-12): the not-so-bad corona edition.
+- **Nov 2021** — [Turkey day 2021](/timeoff-2021-11): the one I didn't pre-write, and did zero magic.
+- **Dec 2020** — [X-mas 2020](/timeoff-2020-12): the corona edition, two weeks at home.
+- **Mar 2020** — [Between Amazon and Facebook](/timeoff-2020-03): a two-month sabbatical that landed exactly on COVID.
 
-I think there are some keys here:
+## The rules
 
-- Make sure you spend time with each family member so you feel inclusive and are fair
-- Don't' forget to take time for yourself
-
-## Igor's Personal combined learnings
-
-Here are the combined learnings from my time offs. Igor needs to read and internalize it.
+These are the learnings from every trip above, deduplicated. The stories behind them are at the end of the section. I need to re-read these before and during every break.
 
 ### Before you go
 
-- Read the travel tips section
-- Pre-writing your desires/goals for time off (see this template).
-  - If you begin with the end in mind you can get it done
-  - Then you need to check-in and review tune over time
-  - Don't overdo your todo list, after all, you should get a break too.
-- Wrap up everything before you go.
-  - Got done everything I needed at work the week before so had no work baggage.
-  - Load up your todo list for when you're back and trust you'll come back and get back
-- Visualize the battle of the resistance, prepare mentally to avoid it.
-  - If I don't force myself to maintain my habits, and stay balanced - I won't (I did zero magic).
-  - Decide when you'll check-in with your plans.
-- Create a won't do list
-  - I can get sucked into programming, but I want to avoid it.
-- Write up your psychic Weight
-  - Just naming it helps you get it under control.
+- **Pre-write what I want out of the trip.** Begin with the end in mind, then check in and tune as I go. Don't overdo the list — it's a break.
+- **Plan the last day to be the best one.** Peak-end rule: the ending is most of what I'll remember.
+- **Wrap up work the week before** so there's no work baggage. Load up the back-at-work list and trust I'll pick it up.
+- **Visualize the fight with the resistance.** If I don't plan to keep my habits, I won't. Decide now when I'll check in on the plan.
+- **Write a won't-do list.** Mine: don't get sucked into programming.
+- **Write up my psychic weight.** Just naming it gets it under control.
+- **Logistics are separate**: see [Travel logistics](#travel-logistics) and the [packing list](/packing).
 
 ### Every other day check-in
 
-- **Refresh** - Re-read these learnings and your time off priority list.
-- **Know your real riches** - Is anything more valuable than satisfaction and health? Probably not. Remember that.
-- **Pay yourself first, do the habits** - gives you the energy and strength for everything else.
-  - If I don't force myself to maintain my habits, and stay balanced - I won't
-  - Don't skip habits, they give you the energy
-  - Make sure to do magic
-  - Make sure to do hot tub
-  - Your positive habits charge you up, do them!
-  - My habits are energizing, the time spent is actually time positive from additional magic.
-- **Use your own evaluation criteria, avoid sunk costs**
-  - What "should be best", probably isn't "do what's most important to you and your identity".
-  - Ask yourself if you're actually doing what you enjoy. Beware sunk cost fallacy.
-  - examples:
-    - At magic conference, 10 hours of magic a day, burning out on it.
-    - At magic conference, Decide to skip types of magic I like less for my hobbies and travel.
-- **Hobbies are OK if part of charging up:**
-  - Before family wakes up
-  - Tell family the plans so they aren't surprised and expectations are set.
-  - Tech/content time before the kids wake up is totally fine.
-- **Handle the todo's and psychic weight early**
-  - Get the todo items done, or scheduled so they aren't dragging you down.
-  - See what else is stressing you and finish it.
-  - Check in on psychic weight and decide if you should be doing it or not.
-- **Am I getting enough relationship time vs self-time** - Your family and relationships are precious be sure to nurture them, but also need time for self (and so do others)
+- **Refresh** — re-read these rules and the trip's priority list.
+- **Know your real riches** — is anything more valuable than satisfaction and health? Probably not.
+- **Pay yourself first, do the habits** — they charge me up and give me the energy for everything else. Magic and the hot tub count.
+- **Use my own evaluation criteria, and beware sunk cost** — what "should be best" usually isn't. Am I actually doing what I enjoy?
+- **Hobbies are fine as charging up** — before the family wakes, and tell them the plan so expectations are set. Tech and content time before the kids are up is totally fine.
+- **Handle the to-dos and psychic weight early** — done or scheduled, so they stop dragging me down.
+- **Check the relationship-time vs self-time balance** — family and relationships are precious; so is time alone, for me and for them.
 
-### Physical Health
+### Physical health
 
-- **GET A GYM MEMBERSHIP** - Gym is a fantastic place to focus on strength and renewal and anchor the day. I got a gym membership with GoodLife, let me do my top priorities daily, even had a massage chair.
-
-- **Bring bands, light gym equipment** - Have everything to stretch and self-massage, and light workouts
-
-  - Heavy bands/light bands; Peanut ball; Harsh foam roller; Gripper (need it for my wrist)
-
-- **Do extra stretches/cardio** - Remember energy positive, and keeps you injury-free.
-
-- **Bring kettlebells and a heavy club** - Portable strength tools for short, high-value sessions.
-- **Morning movement daily** - 10–20 minutes of mobility/strength to anchor the day. On driving days, do 5–10 minute micro-sessions at rest stops.
+- **Get a gym pass wherever I'm staying** — a membership is cheaper than day passes, and it anchors the day.
+- **Morning movement daily** — 10–20 minutes of mobility or strength. On drive days, 5–10 minute micro-sessions at rest stops.
+- **Bring light gear** — bands, foam roller, something to self-massage with, and [kettlebells](/kettlebells) in the car. Enough for a short, high-value session.
+- **Do extra stretches and cardio** — energy positive, and it keeps me injury-free.
 
 ### Diet
 
-#### Mindset
+- **Nothing tastes as good as skinny feels** — true for every metric: feeling great, looking great.
+- **No booze** — those days are over for me. It wrecks my sleep and I feel worse. Cold shower instead. Airports included.
+- **Bring a couple of favorite low-calorie foods** I can make in the room, and a travel scale — weighing in daily keeps me mindful.
+- **Airports**: power bars. **Road trips**: a cooler, filled with fruit and vegetables that move to the hotel fridge.
+- **Meds that need a fridge**: see [the tirzepatide appendix](#appendix-traveling-with-tirzepatide-or-any-med-that-needs-a-fridge).
 
-- **Nothing tastes as good as skinny feels** - So true, regardless of the metric: feeling great, looking great.
+#### Where to eat
 
-#### Alcohol
+- **Eating out isn't worth it for me.** Honestly it's not that enjoyable, and past 45 my gut can't handle the grease — restaurant food leaves me feeling worse, not better. I'd rather eat simple.
+- **Book a place with a kitchen.** Whenever I can, I get a room or Airbnb with a kitchen so I can cook plain, non-greasy food from the grocery store instead of eating out.
+- **Shop the grocery store.** Some of my best travel meals come straight out of a supermarket — there's nothing wrong with a cucumber, some fruit, and a rotisserie chicken. Cheaper, healthier, and you skip the wait.
+- **Skip the tourist areas.** The food ringing the big sights is overpriced and mediocre. Walk a few blocks out, or eat where the locals do — the meal is better and so is the bill.
+- **Skip the hotel breakfast — but the motel breakfast is fine.** The family loves the hotel spread and it's a great deal, but I never should: I can't afford the calories, and the greasy abundance just leaves me feeling worse. The motel breakfast is a different animal — easy, cheap, great for the kids, and modest enough that my self-control holds. Details under [Diet → Hotel breakfast](/diet#hotel-breakfast).
 
-- **No booze** - Those days are over for me. Messes up my sleep and I Feel worse. Go take a cold shower instead.
-- Airports and trips: Don't drink too much.
+### Emotional health
 
-#### Tools and Prep
+- **Pay yourself first** — morning time to myself, early to bed, coffee shop time, gratefulness journal, meditation. It grounds me through the day and gives me the calm to figure out what's essential.
+- **Meditation travels — churches are perfect for it.** No cushion needed. Old churches and cathedrals are some of the best rooms for sitting quietly: duck in, take a pew, be still. They're built to slow you down; let them.
+- **Have lots of slack** (see [Essential](/essential)). Time with family is much more enjoyable when I'm not in a rush and success is just being with them. Same at the airport: hours early means delays don't matter — I can write, meditate, do inner work.
+- **Continuous learning** — every mess-up is a learning opportunity. Learn what needs learning and move on.
+- **Don't berate mistakes.** Caring is the emotional response, and it's unavoidable; mattering is the objective difference the mistake makes, to whom, and over what time period. Most of my mistakes care a lot and matter not at all.
+- **Don't catastrophize.** The "lost" credit card, laptop, and checked bag all turned up fine.
+- **Stop panicking and think.** There's usually a fix.
+- **Don't fret micro-optimizations.** The cycles I spend sequencing a day almost never change how it goes.
+- **Remember the [sublime states](/siy)** — loving kindness, compassion, altruistic joy, equanimity.
 
-- Bring the microwavable popcorn popper and instant soup. These are some of my favorite low-calorie foods.
-- Bring a travel scale - that mindfulness around weight is great.
+### Identity health
 
-#### Travel Nutrition
+- Go to improv jams and dojos.
+- Do [balloons](/balloon) for kids — they love them.
+- Do [magic](/magic) for folks. Find someone by himself to practice on; he won't feel threatened.
+- [Kettlebells](/kettlebells) are a blast — keep them in the car.
 
-##### Airports
+### The stories behind the rules
 
-- Bring power bars as reliable low-effort snacks.
+- **Zero magic** ([Thanksgiving 2021](/timeoff-2021-11)). The one break I didn't pre-write. I did what I wanted and got a tonne done, but got sucked into the tech and did zero magic — the thing that gives me the most energy. That's where "if I don't plan to keep my habits, I won't" comes from.
+- **The gym membership** ([FISM and Canada, 2022](/timeoff-2022-07)). A GoodLife membership was cheaper than day passes and let me do my top priorities daily. The last one I tried had a saltwater pool, a cold plunge, and massage chairs. Then the pool closed on my last day — grateful I'd had several days of it.
+- **The sunglasses** (same trip). Getting off the plane in Toronto it was blindingly bright. I opened my sunglasses case and found a second pair of regular glasses. OMG, this will be terrible. Meh — I spent 20 hours on the beach that weekend and it turns out I can squint. Then I remembered a friend was flying in and had him bring my sunglasses. Panic, then think.
+- **The credit card and the bag** (same trip). On the flight I realized I'd left behind the credit card the rental car was booked on, the one I needed for the insurance. Freaked out; it was totally fine. I also thought I'd lost my popcorn popper, balloon pump, and laptop — all in the extra pocket of my suitcase. Then my carry-on got force-checked and I was sure it was gone forever; it was right there, and while waiting for it I met a really cool person.
+- **Belleville to Hamilton** (same trip). I spent the drive working out what time I'd arrive and whether to do gym, work, my sister, or lunch first — lots of cycles micro-optimizing. It didn't matter at all.
+- **Ten hours of magic a day** (same trip). At the conference I burned out on the thing I came for. Skipping the kinds of magic I like less, in favor of my other hobbies and seeing the city, was the right call — my own criteria, not the schedule's.
 
-##### Road trips
+## Travel logistics
 
-- Bring a cooler. Buy fruits/vegetables and keep them in the cooler and hotel fridge.
+The packing master list lives at [/packing](/packing) — every trip is trimmed from it, so I won't repeat it here. These are the non-packing learnings.
 
-#### Breakfast
+- **Flights**: more legroom is usually worth paying for. Don't take the seats in front of the emergency exit. Just get wifi for flights over 3 hours; don't agonize. Nexus is well worth the hundred bucks.
+- **Rental car**: just get one if there's lots of travel. Put the insurance on the credit card — and bring that card. Take 10 minutes to learn the car: wipers, locks, cruise control, fuel.
+- **Leaving**: pack the afternoon before so there's no rush in the morning. Keep a leave list (Notion) so the recurring forgets get caught at the door, batteries charged. Leave for the airport 3 hours early; hanging at the airport is fine, and better than being late.
+- **At the airport**: Sudafed, earplugs, a bag with bands and a foam roller, and the balloon inflator for the kids waiting at the gate.
+- **On the road**: think through the daily routines and when I'll do them — ad hoc doesn't work. Re-pack the day bag so I'm not hauling stuff I won't use. A fanny pack for keys and wallet so I'm not worrying about losing them. Book Friday and Saturday hotel nights ahead.
+- **Forgot something?** Buy it at Walmart or Target instead of suffering — it's basically disposable. And check the extra pocket in my suitcase first.
+- **Captive wifi portal won't appear?** Open <http://captive.apple.com/hotspot-detect.html>.
 
-Family loves the free hotel breakfast (and it is a great deal), but I can't afford the calories. See detailed guidance under [Diet → Hotel breakfast](/diet#hotel-breakfast).
+### Road trips
 
-#### Terzepatide
+- Set an end-of-day stop that's only 4 hours of driving, otherwise there's not enough time to smell the roses.
+- Kettlebells and a club in the car, with 5–10 minute mobility sessions at each stop, every 2–3 hours.
+- Lots of audiobooks.
+- Cooler and the food plan from [Diet](#diet), with a Walmart stop to fill it.
+- Pre-mount and configure the Insta360 before leaving — battery charged, card in, horizon lock — so it's one-button ready for the cool stuff.
 
-Ensure I don't run out of terzepatide during trips/time off. Plan refills ahead and pack doses appropriately. See [Terzepatide](/terzepatide).
-
-### Emotional Health
-
-- **Pay yourself first** - Make time for yourself in the morning, go to bed early and get coffee shop time, gratefulness journal, meditation etc. This grounds me through the day, and gives me the calmness I need and a chance to figure out the essential.
-- **Slack** - Have lots of slack (See [Essential](/essential)).
-  - Made time with my family much more enjoyable when I wasn't in a rush and success was being with them.
-  - Same with going to the airport, got there hours early. Didn't matter that got stuck at the car rental return. Didn't matter that my flight got delayed, can write, meditate do some inner work.
-- **Continuous learning** - Always a learning opportunity, learn what needs to be learned and move on.
-- **Don't berate mistakes** - Getting off the plane, it was super bright in Toronto. I opened my sunglasses case, and turns out I brought a second pair of glasses. OMG, I'll be blind, this will be terrible. Meh, was on the beach 20 hours over the weekend, was fine, turns out I have an ability to squint. Nothing terrible happens.
-  - TODO: Add a note on caring vs mattering. Caring is your emotional response(unavoidable), but mattering is the objective difference it makes to whom, and over what time period.
-- **Don't catastrophe** - On the flight down realized I didn't bring the credit card on which I booked the car, and need to use for insurance. Thought would need it to check out the car. Freaked out a bit, got there - turns out it was totally fine. Also though I'd lost my popcorn popper, and balloon pump, and laptop - I didn't. Also thought my forced check bags would be lost forever. It wasn't, it was right there. And as a result of waiting for it, I ended up meeting a really cool person.
-- **Stop panicking and think** - Turns out my friend was flying into Toronto, so got him to bring my sunglasses.
-- **Don't fret micro-optimizations** - From Belleville to Hamilton, I spent lots of time trying to figure out what time I'd arrive, what order of gym/work/sister/lunch I'd tackle, trying to micro-optimize, spent lots of cycles. Turned out, didn't matter at all.
-- **Remember The [Sublime states](/siy)** - Loving Kindness; Compassion; Altruistic Joy; Equanimity
-
-### Identity Health
-
-- Go to improv jams/dojos
-- Do [balloons](/balloon) for kids, they love them.
-- Do [magic](/magic) for folks
-  - Find some guy by himself, practice him as he won't be threatened
-- [Kettlebells](/kettlebells) are a blast! Keep them in the car.
-
-### Travel Tips - Before you go
-
-- Booking flights
-  - More legroom is usually worth paying for
-  - Don't get seats in front of emergency exit
-  - Just get wifi for flights over 3 hours, don't agonize
-- Rental car
-  - Just get it if you need lots of travel
-  - Get Insurance on your credit card
-  - Take 10 minutes to learn how to use the rental car (wipers, door locks, cruise control, fuel)
-- Pack the afternoon before so you don't have a rush in the morning
-- Make a leave list (Notion)
-  - Pack my chargers
-  - Put Masks in Bag
-    - Sunglasses
-    - Selfie Stick
-  - Make sure batteries are fully charged before leaving
-  - Leave for the airport 3 hours early (have lots of slack)
-- Luggage:
-  - Bags on carry-on clip together
-  - Bring luggage compression straps.
-    - **I have an extra pocket in my suitcase**
-  - Lost my popcorn popper and my balloon pump and my laptop. Turns out in the extra pocket, I forgot.
-- Airport
-  - Hanging at the airport early is totally fine - don't worry it's better than being there late.
-  - Airport snacks: see Diet → Travel Nutrition → Airports
-  - Alcohol: see Diet → Alcohol
-  - Take Sudafed
-  - Get AirPlugs
-  - Get Nexus/Frequent Traveler card (well worth the 100 bucks)
-  - Carry a bag with bands and foam roller
-  - Get out your balloon inflator and make balloons for kids
-- Take time to think through daily routines, and when you'll do them
-  - Ad hoc doesn't work
-- Re-pack day bag
-  - Don't haul around stuff you won't use it
-- If you forget stuff, just buy it from Walmart instead of suffering
-- AirTags for everything
-- Have a good packing of keys wallet so don't worry about losing (Fanny pack)
-- Force Captive Portal to appear - <http://captive.apple.com/hotspot-detect.html>
-- For the stuff I forget - Just go to Walmart/target and buy it. It's basically disposable.
-
-- Travel router
-  - Pack and pre-configure it to bypass flaky captive portals; keep SSID/password noted and the admin password saved.
-
-#### Packing Checklist
-
-- Tech: chargers, power bank, travel router, Insta360 + mounts, extra SD cards
-- Fitness: kettlebells, heavy club, bands, peanut ball, foam roller, gripper
-- Diet: popcorn popper, instant soup, travel scale, cooler (if road trip)
-- Docs: ID/passport, credit cards, Nexus, insurance
-- Comfort: earplugs, eye mask, sunglasses
-- Tracking: AirTags
-
-### Road Trip Tips
-
-- Bring Kettlebells
-- Road-trip food plan: see Diet → Travel Nutrition → Road trips
-- Lots of audiobooks
-- Stop at walmart
-- Set an end-of-day location that's only 4 hours of driving, otherwise, you'll end up spending not enough time smelling the roses.
-
-- Morning movement on drive days: quick 5–10 minute kettlebell/club mobility at each stop (aim every 2–3 hours).
-- Pre-mount and configure Insta360 before departure (battery charged, card inserted, horizon lock) so it's one-button ready when you see cool stuff.
-
-### Other learnings
-
-- Remember the peak-end rule. Make the last day amazing!
-- Have a hotel booked Friday and Saturday nights
-- If you forget something, buy it at Walmart
-- Keep kettlebells in the car
-
-## Other Thoughts
+## Other thoughts
 
 ### Optimize for energy, not time
 
@@ -379,4 +275,30 @@ for more. But is having limited discretionary time actually detrimental? And can
 _Having an abundance of discretionary time is sometimes even linked to lower subjective well-being because of a lacking sense of productivity. In such cases, the negative effect of having too much
 discretionary time can be attenuated when people spend this time on productive activities._
 
-This research highlights the importance of **productive activities** during extended time off - which is exactly what the gap year approach emphasizes. Rather than endless leisure, a well-designed gap year focuses on intentional investment in health, relationships, and mastery. See the [gap year paradox](/gap-year) for the full framework.
+That's the case for **productive activities** during extended time off, which is exactly what the gap year approach is about: rather than endless leisure, intentional investment in health, relationships, and mastery. See the [gap year paradox](/gap-year) for the full framework.
+
+## Appendix: 9 Rules for a Happier Vacation (Arthur Brooks)
+
+I struggle to take real time off, so this one hit home. Below is my distillation of Arthur Brooks' Office Hours episode [9 Rules for a Happier Vacation](https://www.youtube.com/watch?v=GNDJQjt-KRg) — he frames it as "me-search," a fellow workaholic figuring out how to actually do this. Full transcript in [this gist](https://gist.github.com/idvorkin-ai-tools/d22b29fea197d9d9f027092df4d1d4ad).
+
+1. **Discern your motive before you book anything.** Most unhappy vacations come from a mismatch — you want to escape, but you booked something intense and stressful. A 2015 study of Danish tourists found six core motives: exploration, escape, relationship-deepening (family/friends), prestige, nature, and history/heritage. Know yours (you can have a few, ranked), then design around them. Almost regardless of motive, sharing the trip with people you love amplifies the payoff — we're social animals.
+2. **Savor the anticipation.** One of the happiest parts of a vacation is looking forward to it; studies of Dutch and Chinese vacationers show happiness rises in the _weeks before_ the trip. It's dopamine — the "wanting" neuromodulator — so feed it deliberately: book early, study your destination, learn about what you'll see. (Brooks studied opera scores with his son for months beforehand.) Just don't over-inflate it into a fantasy of constant bliss, or you'll be disappointed.
+3. **Manage your expectations about how long the glow lasts.** Your limbic system isn't built to keep you permanently happy — a great vacation lifts mood and energy, but a 2010 Dutch study found the effect largely vanishes by the end of the first week back. The goal is great memories and real recovery, not a six-month life change.
+4. **Break one big trip into smaller "vacationettes."** Fifteen long weekends beat one month in Borneo for most people — more frequent, smaller doses give a more durable afterglow, since the next break is always around the corner. (See _Effects of Short Vacations_, Stress and Health.)
+5. **Take fewer pictures.** Photographing a moment pulls you out of it — you're mentally living in the future-past instead of the present, and estimates put the enjoyment hit at 15–20% during highly enjoyable activities. Brooks' compromise: assign one person per day to take all the photos; everyone else is off duty.
+6. **Don't post.** This is the prestige motive (social comparison) hijacking your trip — you start living the vacation for other people's envy, which reliably makes you enjoy it less (Journal of Consumer Research, 2018). Posting _for the explicit purpose of sharing_ is the worst case. At minimum, don't post while you're still there.
+7. **Leave your work at home.** "Just a little work" is a trap for workaholics: a Stress and Health finding shows work activities lower the positive effects of vacation 1, 3, and 10 days after returning — it kills the glow. If you need to busy your mind, read something generative you're not paid to learn instead.
+8. **Come home early.** Don't travel up to the last second — get back a few days before you have to return to work so you can ease in. That buffer becomes a mini second vacation. Brooks aims to be home before the weekend rather than landing Sunday night into a full work week. ("Living each day as if it were the first day of your honeymoon and the last day of your vacation." — Tolstoy.)
+9. **Brace yourself on return and manage your feelings.** A successful vacation sharpens the contrast with ordinary life, so the day-to-day can feel flat or frustrating coming back — like a carrot after candy. It's completely normal; expecting it defuses it. Brooks' policy: don't make significant life changes in the first week back. Not being surprised is how you keep your feelings from managing you.
+
+## Appendix: Traveling with tirzepatide (or any med that needs a fridge)
+
+Tirzepatide — and plenty of other meds — wants to stay cold. Three things make travel painless:
+
+1. **A TSA-approved travel cooler.** Holds cold for a full travel day, so the airport-to-Airbnb gap is covered:
+
+{% include amazon.html asin="B0DG2WLSM5" %}
+
+2. **No fridge in the room? Ask the front desk.** Most hotels will happily stash medication in a staff fridge — just ask. And don't assume the minibar cabinet is cold enough; confirm it actually chills.
+
+3. **Pack the whole trip's supply.** You almost certainly won't get a refill on the road, so count out a dose for every week you're gone (plus a spare) and make sure the cooler's big enough to hold them all.

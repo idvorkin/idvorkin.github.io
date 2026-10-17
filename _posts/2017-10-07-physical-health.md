@@ -83,19 +83,9 @@ For me, it's long enough to work up a sweat, but short enough to not eat up my d
 
 "Tony the trainer" taught me a great protocol I swear by it, and think I came close to it accidentally before.
 
-TL;DR: All that matters is training at 90% of your max HR. 15 minutes a day 3x a week and you're set. But good luck doing 15 minutes at 90% max HR. Break it down as follows. 5 min on, 5 off, 4 on, 4 off, ... 1 on, 1 off. You should get a curve as follows
+TL;DR: All that matters is training at 90% of your max HR. 15 minutes a day 3x a week and you're set. But good luck doing 15 minutes at 90% max HR. Break it down as follows: 5 min on, 5 off, 4 on, 4 off, ... 1 on, 1 off.
 
-TODO: Add heart graphs
-
-What's great about this protocol is it works at any fitness level. If all you can do is walk to get winded, walk till you hit the goal. If you can run, run. BUT, don't look at speed, look at heart rate.
-
-Other stuff:
-
-- How I got lucky to re-start it as started by running, but calf injury made this happen
-- Used to do infinite elliptical
-- Show impact on HRV and Resting Heart Rate
-- How quickly you need to scale up the intensity.
-- The goal is not "muscle strength", it's cardio strength, so back down when you hit your HR max, regardless of how tired you are.
+What's great about this protocol is it works at any fitness level. If all you can do is walk to get winded, walk till you hit the goal. If you can run, run. BUT, don't look at speed, look at heart rate. And remember the goal is cardio strength, not muscle strength - back down when you hit your max HR, regardless of how tired you are.
 
 #### My body part really hurts, what should I do?
 
@@ -125,9 +115,9 @@ In summary, trainers are worth it.
 
 {%include summarize-page.html src="/kettlebell" %}
 
-#### Where's my strength at in 2024
+#### Where's my strength at?
 
-My current strength routine includes:
+As of early 2024, my strength routine includes:
 
 - Kettlebell swings: 10x10 @ 32kg two-handed (achieved Nov '23, regressed after injury)
 - Turkish Get-Ups: 5x1 @ 32kg per side (achieved Jan '24, regressed after holiday break)
@@ -158,4 +148,5 @@ But a few points to add after you read the article:
 3. The "productivity advantage" for me is motivation starts strong when I get up and declines through the day, gone by 9 pm when I'm on the couch, binging YouTube with my beer and chips. By contrast, at 5 am I'm ready to do something useful, and no one is awake, and nothing is open to distract me.
 4. Sometimes my body goes a bit batty and I wake up early, that has me waking up at 3:30 am which is annoying, as by noon I'm pretty toast and have to fight to stay awake till 8 pm.
 5. Not gonna lie, I love the feeling of pride when I tell folks I get up crazy early.
-   ps. Being a nerd I use a bunch of [toys]({% post_url 2017-10-06-tech-health-toys %}) to help with my health.
+
+ps. Being a nerd I use a bunch of [toys]({% post_url 2017-10-06-tech-health-toys %}) to help with my health.

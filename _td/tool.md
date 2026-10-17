@@ -24,19 +24,19 @@ A collection of tips, tricks and pointers of the various tools i use
 - [Apple](#apple)
 - [Home Automation](#home-automation)
 - [Text manipulation tools](#text-manipulation-tools)
-    - [jq](#jq)
-    - [Pup - regexp For HTML](#pup---regexp-for-html)
+  - [jq](#jq)
+  - [Pup - regexp For HTML](#pup---regexp-for-html)
 - [Cool shell tools](#cool-shell-tools)
 - [Process Monitoring](#process-monitoring)
 - [Natural Language Processing](#natural-language-processing)
 - [Azure One Liners](#azure-one-liners)
-    - [Deploy webapp via git checkin](#deploy-webapp-via-git-checkin)
+  - [Deploy webapp via git checkin](#deploy-webapp-via-git-checkin)
 - [git](#git)
-    - [Colorized Diff - delta](#colorized-diff---delta)
-    - [TUI Client - lazygit/tig](#tui-client---lazygittig)
-    - [Git Stats](#git-stats)
-    - [TUI merge - fac](#tui-merge---fac)
-    - [Re-write history](#re-write-history)
+  - [Colorized Diff - delta](#colorized-diff---delta)
+  - [TUI Client - lazygit/tig](#tui-client---lazygittig)
+  - [Git Stats](#git-stats)
+  - [TUI merge - fac](#tui-merge---fac)
+  - [Re-write history](#re-write-history)
 - [GitHub](#github)
 - [SSH](#ssh)
 - [TMUX](#tmux)
@@ -44,13 +44,13 @@ A collection of tips, tricks and pointers of the various tools i use
 - [App Launchers](#app-launchers)
 - [Chrome extensions](#chrome-extensions)
 - [Web tools (http)](#web-tools-http)
-    - [wuzz](#wuzz)
-    - [httplab](#httplab)
-    - [httpie](#httpie)
-    - [httpprompt](#httpprompt)
-    - [Link Checkers](#link-checkers)
-    - [brow.sh - Text based web browser](#browsh---text-based-web-browser)
-    - [w3m - Text based web browser](#w3m---text-based-web-browser)
+  - [wuzz](#wuzz)
+  - [httplab](#httplab)
+  - [httpie](#httpie)
+  - [httpprompt](#httpprompt)
+  - [Link Checkers](#link-checkers)
+  - [brow.sh - Text based web browser](#browsh---text-based-web-browser)
+  - [w3m - Text based web browser](#w3m---text-based-web-browser)
 - [Video Manipulation Tools](#video-manipulation-tools)
 - [Linters and formatters](#linters-and-formatters)
 - [Switching between Unix and DOS file ending](#switching-between-unix-and-dos-file-ending)
@@ -58,19 +58,19 @@ A collection of tips, tricks and pointers of the various tools i use
 - [Web scripting](#web-scripting)
 - [Document conversion - Pandoc](#document-conversion---pandoc)
 - [Programming Helpers](#programming-helpers)
-    - [howdoi](#howdoi)
+  - [howdoi](#howdoi)
 - [Excalidraw](#excalidraw)
 - [PlantUML alternatives](#plantuml-alternatives)
 - [D2](#d2)
 - [PlantUML](#plantuml)
-    - [PlantUML Tools](#plantuml-tools)
-    - [PlantUML in Markdown](#plantuml-in-markdown)
-    - [Inline plantuml via Gravizo](#inline-plantuml-via-gravizo)
-    - [Quirks](#quirks)
+  - [PlantUML Tools](#plantuml-tools)
+  - [PlantUML in Markdown](#plantuml-in-markdown)
+  - [Inline plantuml via Gravizo](#inline-plantuml-via-gravizo)
+  - [Quirks](#quirks)
 - [Windows Managers](#windows-managers)
 - [ClI Fun](#cli-fun)
 - [CLI Screen Recoding](#cli-screen-recoding)
-    - [Show pressed keys](#show-pressed-keys)
+  - [Show pressed keys](#show-pressed-keys)
 - [Docker](#docker)
 - [Terminal Info](#terminal-info)
 - [OBS](#obs)
@@ -183,6 +183,7 @@ Profiling:
 - XPath and HtmlAgilityPack
 - Regexp + VIM
 - Beautiful soup
+- [ast-grep](/ast-grep) - search/replace on code structure via ASTs, my notes on using it to extract docs
 
 #### jq
 
@@ -709,7 +710,7 @@ _If on iOS then you need to click to open the image in a new tag_
 
 ![inamged image](https://raw.githubusercontent.com/idvorkin/techdiary/master/images/demo-cli-screen-recording.svg?sanitize=true)
 
-_(Note, to include an svg from raw.githubusercontent.com/blah.svg you'll need to add blah.svg?sanatize=true)_
+_(Note, to include an svg from raw.githubusercontent.com/blah.svg you'll need to add blah.svg?sanitize=true)_
 
 #### Show pressed keys
 

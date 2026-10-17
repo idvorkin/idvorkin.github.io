@@ -18,15 +18,14 @@ Think of this as your complete Jewish to-do list, handed down at Mount Sinai. So
 {% include ai-slop.html percent="95" %}
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [The Big Picture](#the-big-picture)
 - [The Two Lists](#the-two-lists)
   - [Positive Commandments (248)](#positive-commandments-248)
   - [Negative Commandments (365)](#negative-commandments-365)
-- [Why Split Into Two Pages?](#why-split-into-two-pages)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## The Big Picture
@@ -42,6 +41,8 @@ Many of these only applied when the Temple stood in Jerusalem (destroyed in 70 C
 ---
 
 ## The Two Lists
+
+The full list lives on two pages — one for each kind of commandment — so each page stays easy to skim.
 
 ### Positive Commandments (248)
 
@@ -93,9 +94,5 @@ Categories include:
 - Prohibited Family Actions
 
 ---
-
-## Why Split Into Two Pages?
-
-The original single page was over 28,000 tokens - too large to load or edit efficiently. By splitting into positive and negative commandments, each page is more manageable and easier to reference.
 
 Now go forth and have a mitzvah! Or 613 of them.

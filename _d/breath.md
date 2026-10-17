@@ -10,9 +10,9 @@ redirect_from:
   - breathing
 ---
 
-Breathing, an act so simple yet so crucial, harbors the potential to transform our health, mind, and life. This blog post is a deep dive into the world of breathing techniques, exploring a range of practices from Box Breathing and Victory Breath to Sitali Breath and the Breath Focus Technique. Each technique is detailed with its benefits and step-by-step instructions. In addition, the scientific perspective on breathing is explored. Whether you're seeking to reduce stress, improve focus, or simply understand the science of breathing, this post is your comprehensive guide. Join us as we explore the art of breathing, its techniques, and the science behind it.
+Change how you breathe and you change how you feel. Longer inhales rev me up, longer exhales calm me down, and holds build CO2 tolerance. These are my notes on the breathing patterns, the chemistry behind them, and a few techniques: box breathing, the psychological sigh, and alternate nostril breathing.
 
-For a deeper understanding of the science behind breathing and its profound impact on our health, I highly recommend James Nestor's groundbreaking book:
+For the science of breathing, I recommend James Nestor's book:
 
 {% include amazon.html asin="0735213615" %}
 

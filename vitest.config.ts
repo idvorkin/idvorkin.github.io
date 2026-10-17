@@ -1,3 +1,5 @@
+// ABOUTME: Configures browser-like unit tests and source coverage reporting.
+// ABOUTME: Shares the Vite configuration used to build the site's JavaScript.
 import { defineConfig, mergeConfig } from "vitest/config";
 import viteConfig from "./vite.config";
 
@@ -10,6 +12,8 @@ export default mergeConfig(
       coverage: {
         provider: "v8",
         reporter: ["text", "json", "html"],
+        // Keep untested source files in the coverage report.
+        include: ["src/**/*.{js,ts}"],
         exclude: [
           "node_modules/",
           "src/vendor/",
@@ -26,5 +30,5 @@ export default mergeConfig(
       globals: true,
       setupFiles: ["./vitest.setup.ts"],
     },
-  })
+  }),
 );

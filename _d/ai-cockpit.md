@@ -48,6 +48,7 @@ With parallel agents you need to:
 - **Switch between agents instantly** - context-switching friction kills your flow
 - **Talk to whichever agent needs you** without typing commands to navigate there first
 - **Know when something needs attention** without constantly checking
+- **Know what you can afford to spend** - several subscriptions means [managing tokens](/token-management) across them
 
 This is the gap between [Stage 5 (single agent) and Stage 7 (specialized tools)](/how-igor-chops#the-8-stages-of-ai-coding) in the AI coding evolution. The agents themselves are fine. It's the human interface that's the bottleneck.
 
@@ -131,6 +132,8 @@ I didn't build this. I gave the requirements and Claude built it itself. The iro
 
 **Why it matters for the cockpit:** Without this, you're blind. You don't know which agent finished, which one is stuck, which PR needs review. With it, one glance tells you where to focus attention.
 
+There's now a phone-sized companion to this, built by Larry: [the Cockpit](/larry-cockpit) folds open PRs, unfinished issues, running agents and the decisions waiting on me into one page I can read from anywhere on Tailscale.
+
 ### GitHub Views - The Triage Queue
 
 The Agent Dashboard knows what my agents are _doing_ right now. GitHub knows what they've already _filed_. Different instruments, same cockpit. I keep two saved searches pinned in the browser — everything `idvorkin-ai-tools` touched in the last four weeks, sorted by recent activity:
@@ -175,7 +178,9 @@ Here's a typical multi-agent scenario and how the cockpit helps:
 5. While that agent works, I glance at the dashboard - the docs agent needs a merge. Hit another Stream Deck button.
 6. Repeat.
 
-The cockpit turns multi-agent orchestration from "constantly lost and confused" into "air traffic control with good radar." It's not perfect yet, but it's the difference between Stage 5 and Stage 7.
+The cockpit turns multi-agent orchestration from "constantly lost and confused" into "air traffic control with good radar." It's not perfect yet, but it's the difference between Stage 5 and Stage 7. In [orchestrator](/ai-orchestrator) terms, the cockpit is the overview brick.
+
+The cockpit is my side of the glass. The agents have instruments of their own — [Browsers for Machines](/browsers-for-machines) covers the ones they use to reach the web.
 
 ## What I'm Still Building
 
@@ -194,5 +199,7 @@ Is all this cockpit infrastructure a waste? Every month, models get smarter. May
 Maybe. But the meta-skill here isn't "how to configure tmux" - it's **how to build a human interface for AI delegation**. That problem isn't going away. The specific tools will change (tmux might become something else, Alfred might not exist), but the pattern of needing visibility, fast switching, and ambient awareness when orchestrating autonomous systems? That's permanent.
 
 Same thing I said about [CHOP tools in general](/how-igor-chops#is-this-a-waste): learn the transferable skills, hold the specific tools loosely.
+
+There's also a psychological side to flying this thing — the flow, the dopamine, the hours that vanish. That's [The Psychology of Vibing](/vibing).
 
 {% include summarize-page.html src="/how-igor-chops" %}

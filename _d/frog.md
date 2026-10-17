@@ -14,7 +14,7 @@ tags:
   - how igor ticks
 ---
 
-Procrastination is the success killer, a powerful manifestations of the resistance. Eat that frog gives 21 antidotes to procrastination. These are my re-framing of the concepts into my favorite mental models. Chapter titles come from the book.
+Procrastination is the success killer, a powerful manifestation of the resistance. Eat that frog gives 21 antidotes to procrastination. This is my re-framing of the concepts into my favorite mental models. Chapter titles come from the book.
 
 {% include amazon.html asin="1583762027" %}
 

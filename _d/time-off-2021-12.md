@@ -8,12 +8,15 @@ It's Corona virus X-mas 2021, the not so bad edition, and I've got 2 weeks off. 
 
 This is a combination of [time off](/time-off), and all the stuff for [happiness](/happy), which I guess gets tangled up with half of my evergreen notes.
 
-My top priorities: - Restart my morning habit routine, cardio and magic. - Figure out tools to create more balance - Create moments with the family (and take Selfies of them)
+My top priorities:
+
+- Restart my morning habit routine, cardio and magic.
+- Figure out tools to create more balance
+- Create moments with the family (and take Selfies of them)
 
 ## Moments
 
 - Wrote [Zong with Zach](https://idvork.in/ig66/602).
-- TBD Jumped in the lake 2021
 - Had a bunch of walks to enjoy our snowy weather.
 
 ## Success Stories
@@ -34,35 +37,36 @@ My top priorities: - Restart my morning habit routine, cardio and magic. - Figur
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Moments](#moments)
+- [Success Stories](#success-stories)
 - [Top Learnings](#top-learnings)
 - [Relationships](#relationships)
-    - [Friends](#friends)
-    - [Tori](#tori)
-    - [Zach](#zach)
-    - [Amelia](#amelia)
+  - [Friends](#friends)
+  - [Tori](#tori)
+  - [Zach](#zach)
+  - [Amelia](#amelia)
 - [Identity Health](#identity-health)
-    - [Magic](#magic)
-    - [Biking](#biking)
-    - [Software for Balance](#software-for-balance)
-    - [Tech Guru](#tech-guru)
-        - [DENY LIST: Shell + Enabling Environment + Python in VIM](#deny-list-shell--enabling-environment--python-in-vim)
-        - [DENY LIST: Data Analysis - Pandas](#deny-list-data-analysis---pandas)
-        - [DENY LIST: Ranking Systems](#deny-list-ranking-systems)
+  - [Magic](#magic)
+  - [Biking](#biking)
+  - [Software for Balance](#software-for-balance)
+  - [Tech Guru](#tech-guru)
+    - [DENY LIST: Shell + Enabling Environment + Python in VIM](#deny-list-shell--enabling-environment--python-in-vim)
+    - [DENY LIST: Data Analysis - Pandas](#deny-list-data-analysis---pandas)
+    - [DENY LIST: Ranking Systems](#deny-list-ranking-systems)
 - [Cognitive Health](#cognitive-health)
-    - [7 Habits](#7-habits)
-    - [Blog posts](#blog-posts)
+  - [7 Habits](#7-habits)
+  - [Blog posts](#blog-posts)
 - [Emotional Health](#emotional-health)
-    - [Meditation](#meditation)
-    - [750 words/Gratefulness](#750-wordsgratefulness)
+  - [Meditation](#meditation)
+  - [750 words/Gratefulness](#750-wordsgratefulness)
 - [Physical Health](#physical-health)
-    - [Statistics](#statistics)
-    - [Diet](#diet)
-    - [Sleep](#sleep)
-    - [Energy](#energy)
+  - [Statistics](#statistics)
+  - [Sleep](#sleep)
+  - [Energy](#energy)
 - [House and goods](#house-and-goods)
 - [Mental quicksand](#mental-quicksand)
-    - [Spending vacation days when it's "fun time at work"](#spending-vacation-days-when-its-fun-time-at-work)
-    - [January is going to be a tough month at work.](#january-is-going-to-be-a-tough-month-at-work)
+  - [Spending vacation days when it's "fun time at work"](#spending-vacation-days-when-its-fun-time-at-work)
+  - [January is going to be a tough month at work.](#january-is-going-to-be-a-tough-month-at-work)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -168,10 +172,6 @@ It's something that I'm over invested in, and need to put an upper bound on to l
 ### Statistics
 
 Weight Start: 228
-Weight End:
-Gym Days:
-
-### Diet
 
 ### Sleep
 

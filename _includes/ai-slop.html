@@ -1,3 +1,15 @@
-<div class="alert alert-info" role="alert">
-  <strong>AI Slop Notice:</strong> This post is approximately {{include.percent}}% AI slop. I'm using this as an experiment in AI-augmented learning and book processing. Working on refining it!
-</div>
+{%- comment -%} One-line AI disclosure. The "?" opens a short note in Igor's
+voice. Native details/summary, so tap and keyboard work with no JS. Params:
+percent - Igor's rough guess at the AI share, e.g. "60" {%- endcomment -%}
+<details class="alert alert-info ai-slop">
+  <summary>
+    <strong>AI-augmented</strong>, roughly {{ include.percent }}% AI
+    <span class="ai-slop-q" aria-hidden="true">?</span>
+    <span class="visually-hidden">(what this means)</span>
+  </summary>
+  <p>
+    I love AI, and I use it on posts like this one partly to get better at using
+    it. The percent is a rough guess: after rounds of prompting, rewriting and
+    editing, it's very hard to say which words came from whom.
+  </p>
+</details>

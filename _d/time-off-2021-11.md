@@ -11,32 +11,30 @@ I should have written up a plan before this [time off](/time-off) so I'd have be
 <!-- vim-markdown-toc-start -->
 
 - [Moments and success stories](#moments-and-success-stories)
-- [Success Stories](#success-stories)
 - [Top Learnings](#top-learnings)
 - [Relationships](#relationships)
-    - [Friends](#friends)
-    - [Tori](#tori)
-    - [Zach](#zach)
-    - [Amelia](#amelia)
+  - [Friends](#friends)
+  - [Tori](#tori)
+  - [Zach](#zach)
+  - [Amelia](#amelia)
 - [Identity Health](#identity-health)
-    - [Magic](#magic)
-    - [Tech Guru](#tech-guru)
-        - [Shell + Enabling Environment + Python in VIM](#shell--enabling-environment--python-in-vim)
-        - [Data Analysis - Pandas](#data-analysis---pandas)
-        - [CUT: Ranking Systems](#cut-ranking-systems)
-        - [Blog tech](#blog-tech)
+  - [Magic](#magic)
+  - [Tech Guru](#tech-guru)
+    - [Shell + Enabling Environment + Python in VIM](#shell--enabling-environment--python-in-vim)
+    - [Data Analysis - Pandas](#data-analysis---pandas)
+    - [CUT: Ranking Systems](#cut-ranking-systems)
+    - [Blog tech](#blog-tech)
 - [Cognitive Health](#cognitive-health)
 - [Emotional Health](#emotional-health)
-    - [Meditation](#meditation)
-    - [750 words](#750-words)
+  - [Meditation](#meditation)
+  - [750 words](#750-words)
 - [Physical Health](#physical-health)
-    - [Statistics](#statistics)
-    - [Diet](#diet)
-    - [Sleep](#sleep)
-    - [Energy](#energy)
-- [House and goods](#house-and-goods)
+  - [Statistics](#statistics)
+  - [Diet](#diet)
+  - [Sleep](#sleep)
+  - [Energy](#energy)
 - [Mental quicksand](#mental-quicksand)
-    - [Hot tub](#hot-tub)
+  - [Hot tub](#hot-tub)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -44,9 +42,6 @@ I should have written up a plan before this [time off](/time-off) so I'd have be
 ## Moments and success stories
 
 - See [family blog](/ig66/591)
-
-## Success Stories
-
 - Leveled up my tech, testing, and web-tech
 
 ## Top Learnings
@@ -56,8 +51,6 @@ I should have written up a plan before this [time off](/time-off) so I'd have be
 - My habits are energizing, the time spent is still energy positive.
 - Get my todo items checked off early instead of letting them drag (I could have got my hot tub working early too)
 - Family time feels fantastic
-- Make sure to do magic
-- Make sure to do hot tub
 
 ## Relationships
 
@@ -154,8 +147,6 @@ A few days at 4:30, lots of sleeping in.
 ### Energy
 
 - Lot of undirected tech energy.
-
-## House and goods
 
 ## Mental quicksand
 

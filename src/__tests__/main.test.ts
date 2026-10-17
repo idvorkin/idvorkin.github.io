@@ -1,3 +1,5 @@
+// ABOUTME: Tests shared helpers and global page initialization.
+// ABOUTME: Mocks browser dependencies while checking their initialization calls.
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { load_globals, random_from_list, shuffle } from "../../src/main";
 import * as recent from "../../src/recent";
@@ -144,7 +146,7 @@ describe("Main module functions", () => {
       `;
 
       // Mock Toc constructor
-      global.Toc = vi.fn().mockImplementation(() => ({}));
+      global.Toc = vi.fn(function MockToc() {});
 
       // Mock Mousetrap
       global.Mousetrap = vi.fn().mockReturnValue({
@@ -186,12 +188,13 @@ describe("Main module functions", () => {
 
     it("should call generateToc for both toc containers", async () => {
       await load_globals();
-      // Check that $ was called with a function (which would be the generateToc callback)
-      // The load_globals function calls $(() => { generateToc(...) }) which should register a function
-      const calls = vi.mocked(global.$).mock.calls;
-      const functionCalls = calls.filter((call) => typeof call[0] === "function");
-      // We expect at least one function call for the generateToc setup
-      expect(functionCalls.length).toBeGreaterThanOrEqual(0);
+      expect(global.Toc).toHaveBeenCalledTimes(2);
+      expect(global.Toc).toHaveBeenNthCalledWith(1, "content-holder", expect.objectContaining({ targetId: "ui-toc" }));
+      expect(global.Toc).toHaveBeenNthCalledWith(
+        2,
+        "content-holder",
+        expect.objectContaining({ targetId: "ui-toc-affix" }),
+      );
     });
   });
 

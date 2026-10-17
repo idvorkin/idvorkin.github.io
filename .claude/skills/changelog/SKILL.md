@@ -79,7 +79,9 @@ Tests: `cd .claude/skills/changelog && python3 -m unittest test_partial_week` (1
 
 ### 1. Determine Time Range
 
-If Step 0 set `START_DATE` from a merged partial week, use that. Otherwise default to the last 7 days, or use user-specified range:
+If Step 0 set `START_DATE` from a merged partial week, use that. Otherwise, if the `check` JSON has `checked_through` (read from the newest entry's `_Checked through YYYY-MM-DD HH:MM PT_` line), resume from it: pass its date as `--since` to the helper scripts and drop anything committed or merged at or before that timestamp, since the previous entry already covers it. Otherwise default to the last 7 days, or use user-specified range.
+
+**End every entry with a resume point.** Under the commit-count line, add `_Checked through YYYY-MM-DD HH:MM PT; next entry starts from here._`, taking HH:MM from `TZ=America/Los_Angeles date +%H:%M` in the same command as the final scan — never estimated. Without it, merges that land after the run but before the week boundary fall between two entries.
 
 ```bash
 # Get commits from last 7 days (default)
@@ -146,19 +148,39 @@ gh api "repos/idvorkin/REPO/commits/HASH" \
 
 ### 4. Generate Changelog Entry
 
-Create entry in `_d/changelog.md` with this format:
+**A changelog is a list of what changed. It is not an essay, a summary of the posts, or the story of how the work happened.** Igor, 2026-09-22, rejecting a 70-line entry: "This is a change log. Come on, do a better job."
+
+Create the entry in `_d/changelog.md` with this shape:
 
 ```markdown
 ## Week of YYYY-MM-DD
 
 _N commits this week_
 
-### [Theme Name]
+### [Blog theme or post title]
 
-Description of changes in this theme:
+- **[Post title](/permalink#section)** - what changed, ≤ 25 words, with [the words each commit backs](https://github.com/idvorkin/idvorkin.github.io/commit/SHORTHASH) linked inline.
 
-- **Item title** - Description ([blog](/permalink#section)) ([github](https://github.com/idvorkin/idvorkin.github.io/commit/SHORTHASH))
+### Infrastructure & CI (YYYY-MM-DD)
+
+- **[Item](…/commit/SHORTHASH)** - [what it does](…/commit/SHORTHASH), [and the follow-up](…/commit/SHORTHASH2).
 ```
+
+**Rules (hard, not style preferences):**
+
+1. **One bullet per change, one line each.** ≤ 25 words of text. No second sentence: if it needs two, it is two bullets or too much detail.
+2. **A new post is one bullet**: `**[Title](/permalink#anchor) (new post!)** - the thesis in one sentence.` with the commit linked on a phrase of that sentence. Never walk through the post's sections.
+3. **No quotes** — not from posts, not from commit messages, not from Igor.
+4. **No process narration** — not "Igor asked…", not "Codex handled…", not "three viewers went on a pick sheet". Say what shipped.
+5. **No numbers unless the number is the change** ("3,600 lines of Python removed" yes; costs, turn counts, percentages no).
+6. **Small fixes fold into one bullet per repo.**
+7. **Other repos**: bold repo line with a ≤ 6-word description, then ≤ 3 bullets of ≤ 20 words. A repo with one change gets one bullet.
+8. **Links go inline, on the words they back — never a trailing run of icons or `([blog](…))`.** The bold title links to the blog anchor (posts) or the main commit (everything else); each phrase links to the commit that actually did that thing (read it with `git show --stat`). Every bullet has at least one link. Only if a bullet truly has no phrase to anchor a commit, one trailing `([commit](…))` is allowed.
+9. **Whole week ≤ 45 lines** including headings and blank lines. Over budget: cut bullets, do not lengthen lines.
+10. **Describe the content, not the commit message** (Step 3) — but in one line.
+11. **Skip repos with nothing of Igor's**: forks whose window commits are all upstream contributors or release bots, dependabot-only repos, and mirrors (blog7) that repeat a commit already listed.
+12. **The week is Pacific time**: `Week of YYYY-MM-DD` covers the seven days ending that date in America/Los_Angeles. Don't list the previous week's changelog commit.
+13. **Verify before writing**: every commit hash is 9 characters and resolves (`gh api repos/<org>/<repo>/commits/<sha>`), and every `#anchor` matches a heading (`.claude/skills/toc/toc.py slug "Heading"`).
 
 **Important — unique section names**: Every `###` heading must be unique across the _entire_ file, not just the current week. Duplicate headings produce duplicate Markdown TOC anchors (`#other-projects`, `#other-projects-1`, …) which are confusing and break deep links.
 
@@ -168,12 +190,17 @@ Description of changes in this theme:
 
 ### Deep Link Format
 
-Always include both blog and GitHub links where applicable:
+Make everything clickable, inline (Igor, 2026-10-13: "When possible inline the github links don't put them on the end"). Put each link on the words it backs, so a bullet with three commits has three linked phrases:
 
-- **Blog link**: `([blog](/permalink))` or `([blog](/permalink#section-anchor))`
-- **GitHub icon link**: `[<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/SHORTHASH)`
+```markdown
+- **[iCloud sync](https://github.com/idvorkin/exercise-analyzer/commit/eb307c575)** - Sets and workouts [reach every device](https://github.com/idvorkin/exercise-analyzer/commit/eb307c575), [edits included](https://github.com/idvorkin/exercise-analyzer/commit/dae2c085e); recordings save to [their own Photos album](https://github.com/idvorkin/exercise-analyzer/commit/d93a1ef6f).
+- **[What's Left in Engineering?](/whats-left#job-2-keep-the-code-changeable-by-agents) (new post!)** - With agents writing the code, [two jobs remain](https://github.com/idvorkin/idvorkin.github.io/commit/a02331764): iterate on the job to be done, keep code changeable by agents.
+```
 
-Use short commit hashes (first 9 chars) for readability. The GitHub icon (`<i class="fa fa-github"></i>`) renders as a clickable icon.
+- **Blog link**: on the bold title (`**[Title](/permalink#section-anchor)**`), or on the phrase naming the page when a bullet covers two pages (`The [eulogy](/eulogy) song [plays inline](…/commit/SHA)`).
+- **Commit link**: on the phrase describing what that commit did. Reword minimally to create an anchor; don't lengthen the line.
+
+Use short commit hashes (first 9 chars).
 
 ### 5. Finding Section Anchors
 
@@ -191,34 +218,37 @@ Section anchors are slugified headers:
 
 ## Example Output
 
-**BAD - based on commit messages (vague, unhelpful):**
+**BAD — vague, from commit messages:**
 
 ```markdown
 - **Software Survival 3.0** - Added Steve Yegge's framework
-- **Code as Costly Signal** - Discussed what code signals
 ```
 
-**GOOD - based on actual content diffs (specific, informative):**
+**BAD — the essay (rejected 2026-09-22; one of nine such paragraphs in a 70-line entry):**
+
+> **[/token-management](/token-management)** — "I rent the most expensive brain I can get" stopped being the whole answer: Igor can burn through a \$200/month plan, and the model he actually wants runs out before the plan around it does. The post opens with OpenRouter's price list as of September 18… _(eleven more sentences, three quotes, five numbers, a file-rename anecdote)_
+
+**GOOD — one line per change, specific, linked:**
 
 ```markdown
-## Week of 2026-01-25
+## Week of 2026-09-21
 
-_41 commits this week_
+_58 commits this week_
 
-### AI Journal Updates
+### New posts
 
-Five new entries on AI-era software development ([blog](/ai-journal#2026-01-31)):
+- **[How I Manage AI Tokens](/token-management) (new post!)** - [Route work by subscription-window pace](https://github.com/idvorkin/idvorkin.github.io/commit/25aeb037c), not model quality; quota-axi reads every CLI's quota in one second.
+- **[AI Orchestrators](/ai-orchestrator) (new post!)** - An orchestrator is [everything around the agent](https://github.com/idvorkin/idvorkin.github.io/commit/e462fbf19); ten breaks, each adding one block.
 
-- **Software Survival 3.0** - Yegge's survival ratio: `Survival ∝ (Savings × Usage × H) / (Awareness + Friction)`. Six levers: insight compression, substrate efficiency, broad utility, publicity, minimize friction, human coefficient. "Nobody is coming for grep." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/bdedc6f02)
-- **Code as Cattle, Not Pets** - Infrastructure parallel: servers went from pets (unique hostnames) to cattle (who cares which server). Code making same shift. "The system is dead, long live the factory." [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/commit/81b465c2c)
+### Other Projects (2026-09-21)
+
+**[exercise-analyzer](https://github.com/idvorkin/exercise-analyzer)** (iPhone exercise form analyzer)
+
+- **[Split squats recognized and scored](https://github.com/idvorkin/exercise-analyzer/commit/6d617d87c)** - [tracks hip height over the lower foot](https://github.com/idvorkin/exercise-analyzer/commit/6d617d87c), so a plate hiding the head no longer reads as swings.
+- **[Chart zoom and pan](https://github.com/idvorkin/exercise-analyzer/commit/307099851)** - pinch, drag; [a sideways swipe pans](https://github.com/idvorkin/exercise-analyzer/commit/307099851) instead of navigating back.
 ```
 
-Notice how the GOOD version includes:
-
-- Actual formulas/frameworks from the content
-- Specific quotes
-- Key concepts explained
-- Concrete examples mentioned in the post
+The GOOD version is specific (it names the actual change, read from the diff), short (one line, no quotes), and every link sits inline on the words it backs.
 
 ## Common Themes to Look For
 
@@ -326,29 +356,25 @@ If `chop-conventions` has zero commits in the window (rare), drop the section en
 ```markdown
 **[Settings](https://github.com/idvorkin/Settings)** (dotfiles & tools)
 
-- Added terminal tab switching command [<i class="fa fa-github"></i>](https://github.com/idvorkin/Settings/commit/HASH)
+- Added [terminal tab switching](https://github.com/idvorkin/Settings/commit/HASH) command
 ```
 
-**For explainers/apps with deployments** (link name to deployment, icon to repo):
+**For explainers/apps with deployments** (link name to deployment, `repo` to the repo):
 
 ```markdown
-**[monitor-explainer](https://monitor-explorer.surge.sh)** (visualization) [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer)
+**[monitor-explainer](https://monitor-explorer.surge.sh)** (visualization, [repo](https://github.com/idvorkin/monitor-explainer))
 
-- Added comprehensive content [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer/commit/HASH)
+- Added [comprehensive content](https://github.com/idvorkin/monitor-explainer/commit/HASH)
 ```
 
 ### Link Patterns
 
-| Type          | Name Links To   | GitHub Icon                              |
-| ------------- | --------------- | ---------------------------------------- |
-| Regular repo  | GitHub repo     | Commit link                              |
-| Explainer/app | Live deployment | Repo link (header) + Commit link (items) |
+| Type          | Name Links To   | Commits                                         |
+| ------------- | --------------- | ----------------------------------------------- |
+| Regular repo  | GitHub repo     | Inline on the phrases each commit backs         |
+| Explainer/app | Live deployment | `repo` link in the header + inline commit links |
 
-### GitHub Icon Link Format
-
-```
-[<i class="fa fa-github"></i>](https://github.com/idvorkin/REPO_NAME/commit/SHORTHASH)
-```
+Commit URL: `https://github.com/idvorkin/REPO_NAME/commit/SHORTHASH`.
 
 ## Commit Message
 

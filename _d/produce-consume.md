@@ -10,6 +10,10 @@ redirect_from:
 
 Remember when you finished binge-watching that entire series and felt... empty? Now remember the last time you made something — anything — even if it sucked. Which memory makes you smile? Yeah, me too. We live in the golden age of consumption, where infinite content is one thumb-swipe away, yet we're more anxious and less satisfied than ever. Here's the thing: you're not meant to be a consumer. You're meant to be a producer.
 
+> When you sacrifice identity for consumption, you end up with neither.
+
+Consumption doesn't just waste your time — it hollows out the producer you were meant to be.
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
@@ -17,6 +21,7 @@ Remember when you finished binge-watching that entire series and felt... empty? 
   - [The Dopamine Treadmill](#the-dopamine-treadmill)
   - [If you're gonna consume, take the easiest drug you can](#if-youre-gonna-consume-take-the-easiest-drug-you-can)
   - [The Identity Erosion](#the-identity-erosion)
+- [You Don't Have to Quit Consuming — Upgrade It](#you-dont-have-to-quit-consuming--upgrade-it)
 - [The Production Advantage](#the-production-advantage)
   - [Artifacts: Your Digital Legacy](#artifacts-your-digital-legacy)
   - [When Someone Gets Value: The True Measure of Production](#when-someone-gets-value-the-true-measure-of-production)
@@ -58,6 +63,27 @@ The easier something is to stop, the more control you maintain. Choose your cons
 You are what you repeatedly do. If you repeatedly consume, you become... what exactly? A really good scroller? A professional watcher? Your identity becomes a patchwork of other people's thoughts, other people's experiences, other people's lives. You become a walking, talking amalgamation of your YouTube algorithm.
 
 When someone asks "What do you do?" and you struggle to answer beyond your job title, that's the consumption trap. When your personality is just references to things you've watched, that's the consumption trap. When you have strong opinions about strangers' drama but no opinion about your own life direction, that's the consumption trap.
+
+## You Don't Have to Quit Consuming — Upgrade It
+
+So far this reads like a binary: consume and rot, or produce and thrive. It isn't. There's a move in the middle that Arthur Brooks handed me, and it's the most realistic lever most people can actually pull today.
+
+Brooks splits the good feelings that add up to [happiness](/happy) into two piles: **pleasure** and **enjoyment**. Pleasure happens _to_ you — the dopamine hit, the auto-play episode, the scroll. It's solitary, it's animal, and it evaporates the second it's over. That's the [dopamine treadmill](#the-dopamine-treadmill) from earlier: you keep chasing it because it never actually stays. Enjoyment is different. Enjoyment you _build_, and his formula for it is dead simple:
+
+> Enjoyment = Pleasure + People + Memory
+
+Same raw pleasure, plus two ingredients — and now it lasts. Which means you don't have to nuke every guilty pleasure to escape the trap. You can take a thing you were already going to consume and upgrade it in place by adding what's missing:
+
+- **Add people.** Watch the show _with_ someone and argue about it after. Eat the meal at a table, not standing over the sink. Brooks' rule of thumb: "if you're doing it alone, you're probably doing it wrong." The solo scroll becomes a shared thing, and the shared ones are the ones that stick.
+- **Add memory.** Make it an occasion instead of background noise. Be present enough to actually encode it, then retell it later — to a friend, in your journal, at dinner. The retelling is what converts a disappearing hour into something you keep.
+
+Here's the tell for which one you're in: **solitary and memoryless is pleasure — the trap. Shared and remembered is enjoyment.** Same two hours of TV; wildly different outcome for the person you are next week.
+
+This still isn't the top of the mountain — producing is. But it's the switchback most people can reach from where they're standing. Between mindless solo consumption and shipping something of your own, there's this middle rung, and it costs you almost nothing to step onto it today.
+
+My [AI reading feed](/ai-feed) is this move applied to links: I debrief on what I read, and the notes turn the consuming into an artifact.
+
+{%include summarize-page.html src="/build-life-you-want"%}
 
 ## The Production Advantage
 

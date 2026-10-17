@@ -1,0 +1,112 @@
+name: Deploy to GitHub Pages
+
+# Replaces GitHub Pages' native Jekyll build.
+#
+# Why: the derived indexes (Pagefind search index, back-links.json) have to be
+# generated AFTER Jekyll builds the site, and the native Pages build has no
+# post-build hook. Building them here means the deployed copy is produced fresh
+# on every deploy and can never drift from published content — and, unlike the
+# old update-backlinks.yml, nothing has to push a generated file back to main.
+#
+# Ruby 3.3.4 matches GitHub's standard Pages build (pages.github.com/versions);
+# the _ruby_compat.rb shim is only needed on Ruby 4.x locally.
+#
+# ONE-TIME SETUP: repo Settings -> Pages -> Source must be set to "GitHub Actions".
+# Until that is flipped, this workflow runs green but the live site still comes
+# from the native build.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: pages
+  # 2026-08-12: run 31560670448 sat in `queued` 10+ hours and blocked every run
+  # behind it — when false, a stuck run in this group is never superseded. Build
+  # is ~1 min so the window for killing a legit deploy is small; a wedged run
+  # blocks publishing indefinitely. Deviates from GitHub's Pages starter
+  # template, which sets false so production deployments can complete.
+  cancel-in-progress: true
+
+# Deploy credentials live on the deploy job only — build runs third-party
+# tooling (pagefind off npm) and needs nothing beyond repo read.
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+          # build_back_links.py derives each page's last_modified from
+          # `git log -1 -- <file>`. A shallow checkout grafts the tip commit to
+          # have no parents, so git reports EVERY tracked file as added by it —
+          # verified locally: the same commit shows 3 changed files in a full
+          # clone and 1020 in a `--depth 1` one. Every page would then be
+          # stamped with the deploy commit's date.
+          fetch-depth: 0
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3.4'
+          bundler-cache: true
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Build JS bundle
+        run: |
+          npm ci
+          npm run build
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build --config _config.yml,_config_ci.yml
+
+      - uses: astral-sh/setup-uv@v7
+
+      - name: Build backlinks index
+        # Reads the built HTML in _site/ and writes back-links.json at the repo
+        # root, so it has to run after the Jekyll build. One build pass is
+        # enough: nothing in Jekyll consumes back-links.json — no _plugins,
+        # _includes, or layout reads it; the page fetches /back-links.json from
+        # the client at runtime. So there is no chicken-and-egg to unwind.
+        #
+        # 62-min threshold matches what update-backlinks.yml used, so an
+        # already-current index doesn't churn near-identical timestamps.
+        #
+        # Jekyll already copied the committed (possibly stale) back-links.json
+        # into _site/ — overwrite it with the freshly built one. Nothing is
+        # pushed back to the repo; the fresh index ships in the Pages artifact
+        # only.
+        run: |
+          set -euo pipefail
+          uv run ./build_back_links.py build --threshold-minutes 62
+          cp back-links.json _site/back-links.json
+
+      - name: Build Pagefind search index
+        run: npx --yes pagefind --site _site
+
+      - name: Verify search index and exclusions
+        run: ./scripts/verify-search-index.sh
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

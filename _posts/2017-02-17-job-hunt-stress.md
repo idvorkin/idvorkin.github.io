@@ -133,6 +133,7 @@ After your have all your offers:
 - Think deeply about your [dream job](/dream-job). You won't be able to check all the boxes, but know your criteria to make great decisions.
 - For apples to apples compensation comparisons, look at [Total compensation](/comp)
 - Use the [decisive](/decide) to help you decide.
+- Whatever you do, don't pick a job because [the recruiter is hot](/the-recruiter-does-not-think-you-are-hot). I learned that one the hard way.
 
 During your day job - your lowest priority
 

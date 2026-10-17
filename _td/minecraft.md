@@ -10,29 +10,20 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 
 ## Why?
 
-Kids love Minecraft, dad loves tech. Here's my experiences in the world of Minecraft
+Kids love Minecraft, dad loves tech. Here's my experiences in the world of Minecraft. These notes are from 2020, when I ran a Bedrock server for the kids - a diary entry from that era.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Why?](#why)
 - [Bedrock not Java](#bedrock-not-java)
   - [Bedrock Server](#bedrock-server)
   - [The X-Box Proxy Hack](#the-x-box-proxy-hack)
   - [Run bedrock server on lightsail/AWS](#run-bedrock-server-on-lightsailaws)
-- [Scripting](#scripting)
-  - [Command Blocks](#command-blocks)
-  - [Functions](#functions)
-  - [Resource Packs](#resource-packs)
-  - [Behavior Packs](#behavior-packs)
-  - [Connecting to a JavaScript 'script'](#connecting-to-a-javascript-script)
 - [Meta Stuff](#meta-stuff)
   - [Copying worlds between servers and stand alone](#copying-worlds-between-servers-and-stand-alone)
-  - [World Editors](#world-editors)
 - [Minecraft Education Edition](#minecraft-education-edition)
 - [Making resource packs](#making-resource-packs)
-- [Cool Stuff](#cool-stuff)
-  - [Fancy worlds](#fancy-worlds)
-- [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -77,31 +68,11 @@ https://github.com/jhead/phantom
 - Multiple servers same box
 - Backup worlds
 
-## Scripting
-
-### Command Blocks
-
-### Functions
-
-### Resource Packs
-
-### Behavior Packs
-
-### Connecting to a JavaScript 'script'
-
 ## Meta Stuff
 
 ### Copying worlds between servers and stand alone
 
 https://www.reddit.com/r/MCPE/comments/aqlld1/using_a_saved_realm_world_on_a_bedrock_dedicated/
-
-### World Editors
-
-Minecraft tool chest (for Java - https://mcctoolchest.weebly.com/blockeditor.html)
-
-Minecraft tool chest for PE:
-
-http://www.mcctoolchest.com/Download
 
 ## Minecraft Education Edition
 
@@ -111,9 +82,3 @@ Not sure what this is as you need an education account. Looks like you have an '
 
 [Bridge](https://github.com/bridge-core/bridge)
 [Resource Pack Tutorial](https://minecraft.gamepedia.com/Tutorials/Creating_resource_pack_add-ons)
-
-## Cool Stuff
-
-### Fancy worlds
-
-## Other Resources

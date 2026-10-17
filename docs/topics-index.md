@@ -31,6 +31,10 @@ Run tests: `uv run --with pytest --with numpy pytest test_topics_extract.py test
 
 ## How to regenerate (the pipeline)
 
+Step 4 checks cross-link gaps against `back-links.json`'s `url_info` (via
+`topics_graph.py`). That file is gitignored and CI-generated — it's not
+committed, so make sure a local copy exists first: `just update-backlinks`.
+
 ```bash
 # 1. Extract: clean every post's markdown into prose
 uv run ./build_topics.py extract                 # -> tmp/topics/corpus.json (336 posts)

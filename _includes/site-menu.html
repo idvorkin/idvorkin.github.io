@@ -12,6 +12,13 @@
         alt=""
       />
     </span>
+    <a
+      class="nav-link nav-item nav-fa-icon nav-random-dice"
+      href="/random"
+      title="Random post"
+      aria-label="Random post"
+      >🎲</a
+    >
     <a class="nav-link nav-item nav-fa-icon" href="/todo_enjoy">
       <i class="fas fa-heart"></i>
     </a>
@@ -78,6 +85,7 @@
   // Embed branch info directly for dev server
   window.__GIT_BRANCH__ = "{{ site.data.git.branch }}";
   window.__GIT_PR__ = {{ site.data.git.pr_number | jsonify }};
+  window.__GIT_CHANGED__ = {{ site.data.git.changed_pages | jsonify }};
 </script>
 
 <script type="module">
@@ -85,19 +93,18 @@
   $(document).ready(function () {
     // Only initialize autocomplete if we're not on the index page
     // The index page has its own initialization with custom settings
-    if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') {
-      CreateAutoComplete(
-        "{{ site.algolia.application_id}}",
-        "{{ site.algolia.search_only_api_key }}",
-        "{{ site.algolia.index_name }}",
-        "#autocomplete-search-box",
-        false
-      );
+    if (
+      window.location.pathname !== "/" &&
+      window.location.pathname !== "/index.html"
+    ) {
+      // Local search: no app id / key / index name. The family journal is
+      // excluded at index time, so there is no query-time filter to pass.
+      CreateAutoComplete("#autocomplete-search-box");
     }
   });
 
   $("#autocomplete-search-box-button").click(function () {
     // Redirect to main page for search
-    window.location.href = '/';
+    window.location.href = "/";
   });
 </script>

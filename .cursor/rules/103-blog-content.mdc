@@ -184,7 +184,7 @@ When content relates to multiple topics:
    ```markdown
    {% include summarize-page.html src="/permalink" %}
    ```
-4. Ensure back-links.json is updated if creating new permalinks
+4. No action needed for back-links.json — it's rebuilt in CI on every deploy, not tracked in git, and is not something to update by hand when creating new permalinks
 
 ### Using summarize-page Includes
 

@@ -1257,8 +1257,16 @@ def should_update_last_modified(
     return True  # Outside threshold, so update
 
 
-def update_page_fields(old_page, new_page, dry_run, threshold_minutes, current_time):
-    """Update fields in a page and track which fields were updated."""
+def update_page_fields(
+    old_page, new_page, dry_run, threshold_minutes, current_time, redirects=None
+):
+    """Update fields in a page and track which fields were updated.
+
+    `redirects` mirrors LinkBuilder.canonicalize_outgoing_pages: outgoing links
+    are stored canonicalized by the full build, so the delta path must do the
+    same or it rewrites them back to their authored alias form and the two
+    paths disagree on identical input.
+    """
     field_updates = {
         "title": False,
         "description": False,
@@ -1279,10 +1287,15 @@ def update_page_fields(old_page, new_page, dry_run, threshold_minutes, current_t
             old_page["description"] = new_page.description
         field_updates["description"] = True
 
-    # Check and update outgoing_links
-    if sorted(old_page.get("outgoing_links", [])) != sorted(new_page.outgoing_links):
+    # Check and update outgoing_links, canonicalized the same way the full
+    # build does so a delta run does not rewrite them to alias form.
+    redirect_map = redirects or {}
+    new_outgoing = sorted(
+        {redirect_map.get(link, link) for link in new_page.outgoing_links}
+    )
+    if sorted(old_page.get("outgoing_links", [])) != new_outgoing:
         if not dry_run:
-            old_page["outgoing_links"] = new_page.outgoing_links
+            old_page["outgoing_links"] = new_outgoing
         field_updates["outgoing_links"] = True
 
     # Check doc_size only if we're outside the threshold window
@@ -1342,7 +1355,12 @@ def update_backlinks_data(existing_data, lb, threshold_minutes, current_time, dr
 
         # Update fields and track changes
         field_updates = update_page_fields(
-            old_page, new_page, dry_run, threshold_minutes, current_time
+            old_page,
+            new_page,
+            dry_run,
+            threshold_minutes,
+            current_time,
+            updated_data.get("redirects", {}),
         )
 
         # Check if any non-last_modified field was updated
@@ -1386,9 +1404,18 @@ def update_backlinks_data(existing_data, lb, threshold_minutes, current_time, dr
 
 
 def rebuild_incoming_links(data):
-    """Rebuild incoming links based on outgoing links."""
+    """Rebuild incoming links based on outgoing links.
+
+    Outgoing links are stored as authored, so a page linking a redirect alias
+    (e.g. /time-off) records the alias rather than the canonical URL
+    (/timeoff). The full build canonicalizes through the redirect map before
+    bucketing; do the same here, or every delta run drops the edge -- the
+    alias is not a key in url_info, so the incoming entry lands nowhere and
+    the canonical page silently loses a backlink it legitimately has.
+    """
     incoming_links = defaultdict(list)
     updated_count = 0
+    redirects = data.get("redirects", {})
 
     # Collect all outgoing links
     for url, page_data in data["url_info"].items():
@@ -1396,7 +1423,8 @@ def rebuild_incoming_links(data):
             continue
         outgoing = page_data.get("outgoing_links", [])
         for link in outgoing:
-            incoming_links[link].append(url)
+            canonical = redirects.get(link, link)
+            incoming_links[canonical].append(url)
 
     # Update incoming_links for each page
     for url in data["url_info"]:

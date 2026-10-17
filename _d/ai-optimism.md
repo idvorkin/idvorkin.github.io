@@ -4,7 +4,6 @@ title: "What I love about AI"
 permalink: /ai-optimism
 redirect_from:
   - /ai-love
-  - /ai-optimism
   - /ai-optimisim
   - /ai-optimisit
 tags:
@@ -109,6 +108,8 @@ I'm not a doctor. I'm not a biologist. I have no business having opinions on dru
 ## Change is hard, and previous winners will be losers
 
 Yes, change is hard. Some of the people who built careers on the homogeneous, tax-paying world of yesterday — gatekeepers, professionals whose entire value was access to expertise that's now democratized — are going to struggle in the new one. That's true of every wave of progress: the industrial revolution, the internet, every step-change before this one ate the people who'd optimized for the prior plateau. Naming that honestly is part of being optimistic, not opposed to it. The transition will hurt some specific people in some specific ways. _And_ the destination is still the right one — more agency for more people, more specific human stories shipped, more Sergios who get to start their school. But here's why I'm still net-bullish on the destination, and why the doom case keeps under-shooting reality.
+
+The struggle is real and worth empathy. But there's a failure mode hiding inside it: when the prior winners stop merely struggling and start closing the gate behind them. Open source is watching this happen in real time — projects banning AI-assisted contributions to keep the old guild intact. [DHH makes the case](https://world.hey.com/dhh/let-the-agents-democratize-open-source-9fd630a9) that this is the founding vision eating itself. The movement spent decades fighting for everyone's right to change software; now that AI is finally handing that right to people who never made it through the years of nerd-hazing the trade demanded, "everyone" quietly stops meaning everyone. He names the tell better than I could — Nietzsche's _ressentiment_: _how dare you make software without suffering through all that I had to endure._ That's the same homogenization tax wearing a hoodie. The barrier used to be the compliance lawyer's retainer; here it's a contribution policy. Either way it's gatekeeping who gets to start, dressed up as a worry about quality. Giving more people the power to bend their own computers is the win — not a thing to wall off because it arrived too easily for the people who paid full price.
 
 ## But what about the doom?
 

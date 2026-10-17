@@ -39,6 +39,7 @@
 - **Vulnerable but authoritative** - show uncertainty alongside expertise
 - **Systems thinking approach** - naturally build frameworks and structured approaches
 - **Metaphorical thinking** - use consistent metaphors (dragons, mountains, rivers) to explain complex concepts
+- **AI-authored posts are the AI's own post** - when a post carries `{% include ai-voice.html %}`, its "I" is the AI author's (Larry's by default), not Igor's. Larry ran the experiment, Larry's code broke, Larry changed his mind; Igor appears in the third person. Don't ghost-write it as Igor and bolt the label on. The same consistency rule applies as with "I"/"we" - never mix whose "I" it is within a post.
 
 ### Language Patterns
 
@@ -822,13 +823,13 @@ alias:
 
 ## PR Review Checklist
 
-At the end of a content PR review, include this summary format. These checks map to the [thinking phases in CHOW](/chow#the-four-thinking-modes).
+At the end of a content PR review, include this summary format. These checks map to the [thinking phases in CHOW](/chow#the-four-thinking-modes). Generate it with `.claude/skills/pr-checks/pr_checks.py` — structural checks run as code, `headers`/`voice`/`ai-patterns` are model-judged and advisory; see `.claude/skills/pr-checks/SKILL.md`.
 
 ```
 Architect: 🟢 headers 🟢 front-matter 🟢 internal-links
 Carpenter: 🟢 opening 🟢 voice 🟢 ai-patterns
 Judge: 🟢 alerts 🟢 images ⚪ books ⚪ ai-slop
-Workflow: 🟢 rebased 🟢 backlinks
+Workflow: 🟢 rebased
 
 Issues:
 - [list any 🔴 items with actionable fix]
@@ -869,10 +870,13 @@ Issues:
 
 **Workflow** (process):
 
-| Key         | Check                                     |
-| ----------- | ----------------------------------------- |
-| `rebased`   | Branch rebased onto upstream main         |
-| `backlinks` | Backlinks regenerated (`just back-links`) |
+| Key       | Check                             |
+| --------- | --------------------------------- |
+| `rebased` | Branch rebased onto upstream main |
+
+Note: `back-links.json` is no longer part of this checklist — it's built fresh
+in CI (`.github/workflows/pages.yml`) on every deploy and is not tracked in
+git, so there's nothing to regenerate or verify per PR.
 
 **Example with issues:**
 
@@ -880,9 +884,8 @@ Issues:
 Architect: 🟢 headers 🟢 front-matter 🟢 internal-links
 Carpenter: 🟢 opening 🟢 voice 🔴 ai-patterns
 Judge: 🟢 alerts 🟢 images ⚪ books ⚪ ai-slop
-Workflow: 🟢 rebased 🔴 backlinks
+Workflow: 🟢 rebased
 
 Issues:
 - ai-patterns — line 42: remove "it's important to note that"
-- backlinks — run `just backlinks` to regenerate
 ```

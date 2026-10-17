@@ -11,6 +11,12 @@ A journal of random life observations. Keeping track of them so I don't forget w
 
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-07-07](#2026-07-07)
+    - [Speed of Light, from Sweden](#speed-of-light-from-sweden)
+  - [2026-07-01](#2026-07-01)
+    - [Meditating in a Church](#meditating-in-a-church)
+    - [Barefoot Down the Tower Ramp](#barefoot-down-the-tower-ramp)
+    - [Happy Fluff](#happy-fluff)
   - [2026-05-02](#2026-05-02)
     - [Walking with Alex Under the Trees](#walking-with-alex-under-the-trees)
   - [2026-04-22](#2026-04-22)
@@ -38,7 +44,7 @@ When adding a new entry:
 2. **Entry Title**: Each individual vignette gets an `#### Entry Title` heading
 3. **Length**: 2-4 short paragraphs per entry. If it wants to be longer, it probably wants to be its own post.
 4. **Voice**: Plain and direct. Self-aware is fine; preachy isn't. Specific details over abstraction.
-5. **Update TOC**: Regenerate the TOC with `:Mtoc update` (Igor will handle this if you skip it).
+5. **Update TOC**: ALWAYS regenerate the TOC after editing — run `.claude/skills/toc/toc.py regenerate _d/life-journal.md --max 4`. Don't leave it for Igor.
 6. **Images**: Maximum one image per entry. If the entry wants more visuals, it probably wants to be its own post.
 7. **Image source**: **Default to `{% include blob_image_float_right.html src="blog/<filename>.webp" %}`** — uploads land in the `idvorkin/blob` repo (two-PR dance: blob first, then blog). The float-right include wraps prose around the illustration; bare markdown `![](...)` and non-floated includes look out of place in this format. For one-off non-blob illustrations, fall back to `{% include image_float_right.html src="/images/<filename>.webp" alt="..." %}` (still floats; just sources locally). Bare `![](...)` — don't.
 8. **Image background**: **Generated illustrations default to transparent.** Pass `--transparent` to `gen-image`, or post-process the magenta with `magick <in> -alpha set -fuzz 18% -transparent magenta <out>` before uploading. Real photos are exempt (they have natural backgrounds). Why: the blog renders images on whatever background the layout uses — opaque magenta or chroma-keyed source looks broken in production.
@@ -49,6 +55,46 @@ When adding a new entry:
 - Future life vignettes will land here before they get written up.
 
 ## Diary
+
+### 2026-07-07
+
+#### Speed of Light, from Sweden
+
+Working from Sweden this week, hitting my dev box back in Seattle, and the speed of light finally showed up as a number I could feel: ~170 ms round trip — and almost all of it lives in a single hop.
+
+| Segment | Hops | RTT | What it is |
+| --- | --- | --- | --- |
+| Home LAN | 1–4 | ~4.5 ms | OrbStack NAT → router(s) → modem — three NAT layers |
+| Seattle metro | 5–6 | ~6–10 ms | CenturyLink/Lumen; Tukwila |
+| Seattle backbone edge | 7 | ~7 ms | Lumen `sea1` — still in Seattle |
+| ⚡ Transatlantic jump | 7→8 | +163 ms | Lumen Seattle → Colt Stockholm, one backbone leg |
+| Stockholm delivery | 8–13 | ~170 ms | Colt → Bahnhof → destination |
+
+~7 ms gets me to the edge of Seattle. The Atlantic crossing — Seattle → Stockholm, one backbone leg (Lumen → Colt) — adds ~163 ms all by itself. Once packets are in Stockholm the last mile costs basically nothing.
+
+**How fast could it possibly be?** Light in glass crawls at about two-thirds of _c_ — roughly 204,000 km/s. Seattle to Stockholm is ~7,600 km great-circle, so the hard floor is about **74 ms** round trip in fiber — or **~51 ms** if you could shoot it straight through vacuum. I'm seeing ~163 ms, about **2.2× the floor**. That gap isn't waste in the usual sense: real fiber doesn't fly the great circle. Run the math backward and ~163 ms implies ~16,500 km of actual glass — the packets go _down_ the US and _across_ the North Atlantic, not the straight line a photon would take if it could. Physics sets the floor; geography sends the bill.
+
+Tally: Seattle → Seattle ~6 ms; Seattle → Stockholm ~170 ms; Umeå (far north) ~182 ms. You can't out-engineer physics — you can only hide it, and 4,000 miles of ocean is hard to hide.
+
+This is the [Scandinavian trip](/timeoff-2026-07) talking — planned, like most things lately, with Barry and [Larry](/larry) riding along. The joke writes itself: the assistants that helped me get here now live 170 ms away.
+
+### 2026-07-01
+
+#### Meditating in a Church
+
+Sat down in a church and meditated. The quiet a church keeps is a different kind than the quiet anywhere else — easier to borrow than to make.
+
+#### Barefoot Down the Tower Ramp
+
+Walked the tower ramp barefoot. Wanted to actually feel the thing instead of just being on it — the cold stone, the pitch of the slope, the grit the shoes usually edit out.
+
+#### Happy Fluff
+
+{% include image_float_right.html src="/images/happy-fluff-2026-07-01.webp" alt="A tub of cotton candy labeled HAPPY FLUFF on a café shelf." %}
+
+Saw **HAPPY FLUFF** on the shelf. It's exactly how I'd describe my goal in life. Leaving happy fluff everywhere I go.
+
+[Dealer of Smiles and Wonder](/eulogy) is one of my favorite roles, and happy fluff is that in a tub: nearly weightless, no nutritional value, but brings people joy anyway. Leave a little in every room, walk away smiling.
 
 ### 2026-05-02
 
@@ -79,6 +125,8 @@ Bug fixed. Pride earned.
 ### 2026-04-17
 
 #### Eight Sleep Thinks My Cat Is Me
+
+{% include repo_image_float_right.html src="pod-detective.webp" alt="A raccoon detective in a deerstalker cap with a magnifying glass inspects an orange cat asleep on an Eight Sleep Pod; thought bubble reads 'Who is recovering?'" %}
 
 Eight Sleep report this morning: HRV 213 ms on 4h 16m of tracked sleep. My average is ~42 ms. A 5× spike on a vacation night where I slept fine is not a biosignal — it's a measurement artifact. The parsimonious explanation: the cat was in the bed.
 

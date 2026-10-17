@@ -39,6 +39,10 @@ repos:
       - id: dasel-validate
         name: Dasel YAML/JSON Validator
         files: \.(json|yaml|yml)$
+        # search.json and search-titles.json are Liquid templates that Jekyll
+        # renders INTO json — the sources have frontmatter and {% %} tags, so
+        # they are not parseable as json until built.
+        exclude: ^(search|search-titles|search-pins)\.json$
 
   # ✍️ Typos: Spell checking for code and prose
   - repo: https://github.com/crate-ci/typos
@@ -46,8 +50,8 @@ repos:
     hooks:
       - id: typos
         name: Check for typos
-        exclude: "^(assets|chop-logs|zz-chop-logs|cursor-logs|published-chop-logs|back-links.json|topics_data|images/.*\\.excalidraw|old_blog|static)/.*$|^topics\\.json$"
-        args: []  # Uses .typos.toml for configuration
+        exclude: "^(assets|pagefind|chop-logs|zz-chop-logs|cursor-logs|published-chop-logs|topics_data|images/.*\\.excalidraw|old_blog|static)/.*$|^(back-links|topics)\\.json$"
+        args: [] # Uses .typos.toml for configuration
 
   # 🧪 Local hooks
   - repo: local
@@ -66,21 +70,14 @@ repos:
         types: [ts]
         pass_filenames: false
 
-      - id: update-backlinks-last-modified
-        name: Update last modified times for changed markdown files
-        entry: uv run build_back_links.py delta
-        language: system
-        files: '\.(md|markdown)$'
-        exclude: "^zz-chop-logs/.*$|back-links.json" # Exclude the zz-chop-logs directory
-        pass_filenames: true
-        verbose: true
-
       - id: check-internal-links
         name: Check internal links with lychee
         entry: .pre-commit-hooks/check-links.py
         language: script
         files: '\.(md|markdown)$'
-        exclude: "^zz-chop-logs/.*$|back-links.json" # Exclude the zz-chop-logs directory
+        # README.md is not a served Jekyll page, so its TOC self-anchors (#permalink, …)
+        # resolve against the homepage and always fail this check. It renders fine on GitHub.
+        exclude: "^zz-chop-logs/.*$|back-links.json|^README.md$"
         pass_filenames: false
         always_run: false
         verbose: true
@@ -93,6 +90,12 @@ repos:
         exclude: "^zz-chop-logs/.*$|back-links.json"
         pass_filenames: false
         always_run: false
+
+      - id: check-hero-image-include
+        name: Hero image uses a float include
+        entry: .pre-commit-hooks/check-hero-image-include.py
+        language: script
+        files: '^(_d|_posts|_td)/.*\.md$'
 
       - id: check-asin-placeholders
         name: Check ASIN placeholders need validation

@@ -2,7 +2,9 @@
 layout: post
 title: "Emotional Health In My Head"
 comments: true
-inprogress: true
+permalink: /fit-in-my-head
+redirect_from:
+  - /d/2016-2-14-Health-In-The-Head
 tags:
   - emotional intelligence
   - health
@@ -15,4 +17,4 @@ In physical health, I used to be 230 pounds and refused to diet. In "my head" I 
 
 The same type of situation exists in my emotional health.
 
-In emotional health, I have solid self-awareness, and an ability to read others, but I refused to empathize, or be accepting. In "my head" I thought I was emotionally healthy because I could read people's motivations, including my own. BUT in reality, even though I have the building blocks of good emotional health, I'm still emotionally unhealthy. Recently, I realized empathy, and being accepting is critical to my emotional health. It'll take a while, but learning to empathize and be accepting sustainably, will be the ticket to my emotional health. I'm still able to see motivation clearly, but now I'm learning empathy and acceptance, so soon I'll not only look emotionally healthy, I'll actually be emotionally healthy.
+In emotional health, I have solid self-awareness and can read people's motivations, including my own - so in "my head" I was emotionally healthy. BUT I refused to empathize or be accepting, so in reality I had the building blocks and was still emotionally unhealthy. Like dieting, learning empathy and acceptance sustainably will take a while, but that's the path from looking emotionally healthy to being emotionally healthy.

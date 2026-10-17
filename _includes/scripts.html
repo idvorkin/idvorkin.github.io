@@ -35,11 +35,11 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" ></script>
 -->
 
-<script
-  src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js"
-  integrity="sha256-EXPXz4W6pQgfYY3yTpnDa3OH8/EPn16ciVsPQ/ypsjk="
-  crossorigin="anonymous"
-></script>
+<!--
+  Search runs locally (Pagefind + MiniSearch) — the algoliasearch client is gone.
+  autocomplete-js stays: it is only the UI shell and is source-agnostic, so it
+  drives local results without talking to Algolia's service.
+-->
 <script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-js"></script>
 <link
   rel="stylesheet"

@@ -1,0 +1,624 @@
+{%- comment -%} Side-view spine model for /back-pain. The spine is a chain of
+vertebrae (L5 up to C1) sitting on the sacrum, and the whole point is the
+compensation chain: - Hip strength tilts the pelvis forward about the hip joint,
+which steepens the sacral slope. A rigid spine would tip with it (grey ghost,
+gaze dropping to the floor). The eyes stay level instead, so lumbar lordosis
+grows by the same angle, weighted about 2/3 into L4-S1 (the lower arc of
+lordosis tracks sacral slope: Roussouly; Chevillotte 2022). - Head forward
+flexes the lower neck (C4-C7) and extends the upper neck (C0-C2) by the same
+total, so the head translates forward but stays level (Khayatzadeh 2017).
+Self-contained: inline SVG + vanilla JS, one instance per page. {%- endcomment
+-%}
+<style>
+  .bb {
+    --bb-ink: #1b1f24;
+    --bb-soft: #6b7280;
+    --bb-panel: #f4f5f7;
+    --bb-rule: #d8dbe0;
+    --bb-bone: #fbf7ee;
+    --bb-ok: #15803d;
+    --bb-bad: #c2410c;
+    --bb-pelvis: #7e22ce;
+    --bb-ghost: #9ca3af;
+    border: 1px solid var(--bb-rule);
+    border-radius: 10px;
+    background: var(--bb-panel);
+    color: var(--bb-ink);
+    padding: 12px 14px 14px;
+    margin: 1rem auto 1.25rem;
+    max-width: 560px;
+  }
+  @media (prefers-color-scheme: dark) {
+    .bb {
+      --bb-ink: #e5e7eb;
+      --bb-soft: #9ca3af;
+      --bb-panel: #1f2328;
+      --bb-rule: #3a3f46;
+      --bb-bone: #2b3036;
+      --bb-ok: #4ade80;
+      --bb-bad: #fb923c;
+      --bb-pelvis: #c084fc;
+      --bb-ghost: #6b7280;
+    }
+  }
+  [data-bs-theme="dark"] .bb {
+    --bb-ink: #e5e7eb;
+    --bb-soft: #9ca3af;
+    --bb-panel: #1f2328;
+    --bb-rule: #3a3f46;
+    --bb-bone: #2b3036;
+    --bb-ok: #4ade80;
+    --bb-bad: #fb923c;
+    --bb-pelvis: #c084fc;
+    --bb-ghost: #6b7280;
+  }
+  .bb svg {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .bb-limb {
+    fill: none;
+    stroke: var(--bb-ink);
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .bb-vert {
+    fill: var(--bb-bone);
+    stroke: var(--bb-ink);
+    stroke-width: 1.5;
+  }
+  .bb-vert.hot {
+    fill: var(--bb-bad);
+    fill-opacity: 0.55;
+    stroke: var(--bb-bad);
+  }
+  .bb-cord {
+    fill: none;
+    stroke: var(--bb-soft);
+    stroke-width: 1.5;
+  }
+  .bb-head {
+    fill: var(--bb-panel);
+    stroke: var(--bb-ink);
+    stroke-width: 3;
+    stroke-linejoin: round;
+  }
+  .bb-eye {
+    fill: var(--bb-ink);
+  }
+  .bb-pelvis {
+    fill: var(--bb-pelvis);
+    fill-opacity: 0.18;
+    stroke: var(--bb-pelvis);
+    stroke-width: 2.5;
+    stroke-linejoin: round;
+  }
+  .bb-sacrum {
+    fill: var(--bb-pelvis);
+    fill-opacity: 0.4;
+    stroke: var(--bb-pelvis);
+    stroke-width: 2;
+    stroke-linejoin: round;
+  }
+  .bb-joint {
+    fill: var(--bb-panel);
+    stroke: var(--bb-ink);
+    stroke-width: 2;
+  }
+  .bb-gaze {
+    stroke: var(--bb-ok);
+    stroke-width: 2;
+    stroke-dasharray: 6 5;
+    fill: none;
+  }
+  .bb-ghost {
+    stroke: var(--bb-ghost);
+    stroke-width: 3;
+    stroke-dasharray: 3 5;
+    fill: none;
+    stroke-linecap: round;
+  }
+  .bb-arrow {
+    fill: var(--bb-ok);
+  }
+  .bb-plumb {
+    stroke: var(--bb-soft);
+    stroke-width: 1.5;
+    stroke-dasharray: 2 4;
+  }
+  .bb-lever {
+    stroke: var(--bb-bad);
+    stroke-width: 3;
+  }
+  .bb svg text {
+    font:
+      600 12px system-ui,
+      sans-serif;
+    fill: var(--bb-soft);
+    /* halo so labels stay readable over the dashed ghost */
+    paint-order: stroke;
+    stroke: var(--bb-panel);
+    stroke-width: 4px;
+    stroke-linejoin: round;
+  }
+  .bb svg text.bb-hot-label {
+    font-weight: 700;
+    fill: var(--bb-bad);
+  }
+  .bb svg text.bb-gaze-text {
+    font-weight: 700;
+    fill: var(--bb-ok);
+  }
+  .bb-controls {
+    display: grid;
+    gap: 10px;
+    margin-top: 8px;
+  }
+  .bb-controls label {
+    display: grid;
+    grid-template-columns: 7.5em 1fr;
+    align-items: center;
+    gap: 10px;
+    font:
+      500 14px system-ui,
+      sans-serif;
+  }
+  .bb-controls input[type="range"] {
+    width: 100%;
+    accent-color: var(--bb-pelvis);
+  }
+  .bb-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .bb-play {
+    font:
+      600 14px system-ui,
+      sans-serif;
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: 1px solid var(--bb-rule);
+    background: var(--bb-ink);
+    color: var(--bb-panel);
+    cursor: pointer;
+    min-height: 36px;
+  }
+  .bb-readout {
+    font:
+      400 14px system-ui,
+      sans-serif;
+    color: var(--bb-soft);
+    margin: 0;
+    flex: 1 1 14em;
+  }
+</style>
+
+<figure class="bb" id="banana-back">
+  <svg viewBox="20 -66 320 498" role="img" aria-labelledby="bb-title">
+    <title id="bb-title">
+      Side view of a spine facing right: pelvis, sacrum, five lumbar, twelve
+      thoracic and seven cervical vertebrae, and the head. Weak hips tilt the
+      pelvis forward. A rigid spine would tip with it and the eyes would drop to
+      the floor, so instead the lower back arches, mostly at L4 to S1, to keep
+      the eyes level. A forward head bends the lower neck forward and tips the
+      upper neck back, again to keep the eyes level.
+    </title>
+    <defs>
+      <marker
+        id="bb-arrowhead"
+        viewBox="0 0 10 10"
+        refX="8"
+        refY="5"
+        markerWidth="7"
+        markerHeight="7"
+        orient="auto"
+      >
+        <path class="bb-arrow" d="M0 0 L10 5 L0 10 Z" />
+      </marker>
+    </defs>
+    <!-- ghost: where the spine and gaze would go if the spine stayed rigid -->
+    <g class="bb-ghostg">
+      <polyline class="bb-ghost" id="bb-ghost-spine" />
+      <circle class="bb-ghost" id="bb-ghost-head" r="25" />
+      <line class="bb-ghost" id="bb-ghost-gaze" />
+      <text id="bb-ghost-label" text-anchor="end">
+        <tspan id="bb-ghost-l1">rigid spine:</tspan>
+        <tspan id="bb-ghost-l2" dy="15">eyes on the floor</tspan>
+      </text>
+    </g>
+    <!-- legs -->
+    <path class="bb-limb" id="bb-legs" />
+    <!-- pelvis (hip bone) and sacrum, both tilt about the hip joint -->
+    <path class="bb-pelvis" id="bb-pelvis" />
+    <path class="bb-sacrum" id="bb-sacrum" />
+    <circle class="bb-joint" id="bb-hipjoint" r="7" />
+    <text id="bb-pelvis-label" x="206" y="300">pelvis</text>
+    <!-- spine -->
+    <path class="bb-cord" id="bb-cord" />
+    <g id="bb-verts"></g>
+    <text class="bb-hot-label" id="bb-hot-label" text-anchor="end">
+      <tspan id="bb-hot-l1">L4–S1 takes</tspan>
+      <tspan id="bb-hot-l2" dy="15">most of the arch</tspan>
+    </text>
+    <text class="bb-hot-label" id="bb-up-label" text-anchor="end">
+      C0–C2 tip back
+    </text>
+    <text class="bb-hot-label" id="bb-low-label" text-anchor="end">
+      C4–C7 bend forward
+    </text>
+    <!-- neck lever -->
+    <line class="bb-plumb" id="bb-plumb" />
+    <line class="bb-lever" id="bb-lever" />
+    <!-- head -->
+    <path class="bb-head" id="bb-head" />
+    <circle class="bb-eye" id="bb-eye" r="3" />
+    <line class="bb-gaze" id="bb-gaze" marker-end="url(#bb-arrowhead)" />
+    <text class="bb-gaze-text" id="bb-gaze-label" text-anchor="end">
+      eyes stay level
+    </text>
+  </svg>
+  <div class="bb-controls">
+    <label
+      >Hip strength
+      <input type="range" id="bb-hips" min="0" max="100" value="100"
+    /></label>
+    <label
+      >Head forward
+      <input type="range" id="bb-headf" min="0" max="100" value="0"
+    /></label>
+    <div class="bb-row">
+      <p class="bb-readout" id="bb-readout" aria-live="polite"></p>
+      <button type="button" class="bb-play" id="bb-play">Play</button>
+    </div>
+  </div>
+</figure>
+
+<script>
+  (function () {
+    var root = document.getElementById("banana-back");
+    if (!root) return;
+    var $ = function (id) {
+      return root.querySelector("#" + id);
+    };
+    var NS = "http://www.w3.org/2000/svg";
+    var hips = $("bb-hips");
+    var headf = $("bb-headf");
+    var readout = $("bb-readout");
+    var play = $("bb-play");
+    var HIP = { x: 170, y: 300 };
+    var MAX_TILT = 20; // extra anterior pelvic tilt (deg) at zero hip strength
+    var MAX_POKE = 34; // lower-neck flexion (deg) at full head forward
+    var SS0 = 38; // neutral sacral slope (deg)
+    var S1 = { x: 150, y: 262 }; // center of the S1 endplate, neutral pelvis
+
+    // The chain, bottom to top. len = center-to-center spacing, w = body
+    // depth, rot = neutral joint angle below this vertebra (deg; negative
+    // tips it back = extension/lordosis, positive tips it forward =
+    // flexion/kyphosis). Lumbar lordosis about 2/3 at L4-S1 (lower arc).
+    var CHAIN = [
+      { n: "L5", len: 14, w: 15, rot: -16 },
+      { n: "L4", len: 14, w: 15, rot: -14 },
+      { n: "L3", len: 14, w: 15, rot: -10 },
+      { n: "L2", len: 14, w: 14, rot: -9 },
+      { n: "L1", len: 14, w: 14, rot: -8 },
+      { n: "T12", len: 11, w: 12, rot: 1 },
+    ];
+    for (var i = 11; i >= 1; i--)
+      CHAIN.push({ n: "T" + i, len: 10.5, w: 11, rot: 3.9 });
+    CHAIN.push(
+      { n: "C7", len: 8.5, w: 9, rot: -3 },
+      { n: "C6", len: 8.5, w: 9, rot: -5 },
+      { n: "C5", len: 8.5, w: 9, rot: -5 },
+      { n: "C4", len: 8.5, w: 9, rot: -5 },
+      { n: "C3", len: 8.5, w: 9, rot: -4 },
+      { n: "C2", len: 9, w: 9, rot: -3 },
+      { n: "C1", len: 6, w: 8, rot: -2 }
+    );
+    var SKULL_ROT = -3; // C0/C1
+    // Where extra lordosis goes when the sacrum steepens (sums to 1).
+    var LUMBAR_W = { L5: 0.36, L4: 0.3, L3: 0.14, L2: 0.11, L1: 0.09 };
+    // Neck poke: lower neck flexes (most at C4-C6), upper neck extends.
+    var LOW_NECK_W = { C7: 0.2, C6: 0.3, C5: 0.3, C4: 0.2 };
+    var UP_NECK_W = { C1: 0.5, C0: 0.5 };
+
+    function rad(d) {
+      return (d * Math.PI) / 180;
+    }
+    function rot(p, deg, c) {
+      var a = rad(deg);
+      var dx = p.x - c.x;
+      var dy = p.y - c.y;
+      return {
+        x: c.x + dx * Math.cos(a) - dy * Math.sin(a),
+        y: c.y + dx * Math.sin(a) + dy * Math.cos(a),
+      };
+    }
+    // dir = lean from vertical in degrees, forward (right) positive.
+    function step(p, dir, len) {
+      return {
+        x: p.x + Math.sin(rad(dir)) * len,
+        y: p.y - Math.cos(rad(dir)) * len,
+      };
+    }
+    function pt(p) {
+      return p.x.toFixed(1) + " " + p.y.toFixed(1);
+    }
+    function set(el, attrs) {
+      for (var k in attrs) el.setAttribute(k, attrs[k]);
+    }
+
+    // The spine for pelvic tilt t and lower-neck flexion a. rigid = no extra
+    // lumbar arch, so everything above the sacrum tips with the pelvis.
+    function spine(t, a, rigid) {
+      var dir = SS0 + t;
+      var p = rot(S1, t, HIP);
+      var out = [];
+      CHAIN.forEach(function (v) {
+        var r = v.rot;
+        if (!rigid && LUMBAR_W[v.n]) r -= t * LUMBAR_W[v.n];
+        if (LOW_NECK_W[v.n]) r += a * LOW_NECK_W[v.n];
+        if (UP_NECK_W[v.n]) r -= a * UP_NECK_W[v.n];
+        dir += r;
+        out.push({
+          n: v.n,
+          c: step(p, dir, v.len / 2),
+          dir: dir,
+          w: v.w,
+          len: v.len,
+        });
+        p = step(p, dir, v.len);
+      });
+      dir += SKULL_ROT - a * UP_NECK_W.C0;
+      return { verts: out, top: p, headDir: dir };
+    }
+
+    // The neutral head direction defines "eyes level".
+    var HEAD0 = spine(0, 0, false).headDir;
+    function headPts(sp) {
+      var tilt = sp.headDir - HEAD0;
+      var o = sp.top;
+      function local(x, y) {
+        return rot({ x: o.x + x, y: o.y + y }, tilt, o);
+      }
+      return {
+        c: local(12, -24),
+        eye: local(30, -30),
+        tilt: tilt,
+        outline: [
+          local(-10, 0),
+          local(-16, -28),
+          local(2, -52),
+          local(30, -50),
+          local(40, -32),
+          local(45, -18),
+          local(37, -14),
+          local(36, -2),
+          local(18, 6),
+        ],
+      };
+    }
+
+    var vg = $("bb-verts");
+    var rects = CHAIN.map(function () {
+      var r = document.createElementNS(NS, "rect");
+      r.setAttribute("class", "bb-vert");
+      r.setAttribute("rx", "2.5");
+      vg.appendChild(r);
+      return r;
+    });
+
+    var PELVIS = [
+      { x: 136, y: 236 }, // back of the iliac crest (PSIS)
+      { x: 168, y: 224 }, // top of the crest
+      { x: 198, y: 246 }, // ASIS
+      { x: 190, y: 270 }, // AIIS
+      { x: 188, y: 292 },
+      { x: 204, y: 318 }, // pubis
+      { x: 188, y: 332 },
+      { x: 160, y: 336 }, // ischial tuberosity
+      { x: 150, y: 312 },
+      { x: 140, y: 280 },
+    ];
+    var SACRUM = [
+      { x: 141, y: 256 },
+      { x: 159, y: 268 }, // S1 endplate, front corner
+      { x: 150, y: 296 },
+      { x: 138, y: 320 }, // coccyx
+      { x: 130, y: 300 },
+      { x: 130, y: 270 },
+    ];
+
+    function smooth(pts) {
+      // closed Catmull-Rom spline through pts
+      var n = pts.length;
+      var d = "M" + pt(pts[0]);
+      for (var i = 0; i < n; i++) {
+        var p0 = pts[(i - 1 + n) % n];
+        var p1 = pts[i];
+        var p2 = pts[(i + 1) % n];
+        var p3 = pts[(i + 2) % n];
+        d +=
+          " C" +
+          pt({ x: p1.x + (p2.x - p0.x) / 6, y: p1.y + (p2.y - p0.y) / 6 }) +
+          " " +
+          pt({ x: p2.x - (p3.x - p1.x) / 6, y: p2.y - (p3.y - p1.y) / 6 }) +
+          " " +
+          pt(p2);
+      }
+      return d + " Z";
+    }
+
+    function draw(strength, fwd) {
+      var t = (1 - strength) * MAX_TILT;
+      var a = fwd * MAX_POKE;
+      var tilted = function (pts) {
+        return pts.map(function (p) {
+          return rot(p, t, HIP);
+        });
+      };
+      $("bb-pelvis").setAttribute("d", smooth(tilted(PELVIS)));
+      $("bb-sacrum").setAttribute("d", smooth(tilted(SACRUM)));
+      set($("bb-hipjoint"), { cx: HIP.x, cy: HIP.y });
+      $("bb-legs").setAttribute(
+        "d",
+        "M" + pt(HIP) + " L173 362 L170 422 L198 422"
+      );
+
+      var sp = spine(t, a, false);
+      sp.verts.forEach(function (v, i) {
+        var hot =
+          (t > 5 && (v.n === "L5" || v.n === "L4")) ||
+          (fwd > 0.25 && /^C[124567]$/.test(v.n));
+        set(rects[i], {
+          x: (v.c.x - v.w / 2).toFixed(1),
+          y: (v.c.y - v.len * 0.36).toFixed(1),
+          width: v.w,
+          height: (v.len * 0.72).toFixed(1),
+          transform: "rotate(" + v.dir.toFixed(1) + " " + pt(v.c) + ")",
+          class: hot ? "bb-vert hot" : "bb-vert",
+        });
+      });
+      // The cord runs just behind the vertebral bodies.
+      var cord = sp.verts.map(function (v) {
+        return step(v.c, v.dir - 90, v.w / 2 + 3);
+      });
+      $("bb-cord").setAttribute("d", "M" + cord.map(pt).join(" L"));
+
+      var H = headPts(sp);
+      $("bb-head").setAttribute("d", smooth(H.outline));
+      set($("bb-eye"), { cx: H.eye.x.toFixed(1), cy: H.eye.y.toFixed(1) });
+      set($("bb-gaze"), { x1: H.eye.x + 8, y1: H.eye.y, x2: 332, y2: H.eye.y });
+      set($("bb-gaze-label"), { x: 334, y: H.eye.y - 9 });
+
+      // Lever: horizontal distance from the head's center of mass to C7.
+      var c7 = sp.verts[CHAIN.length - 7].c;
+      set($("bb-plumb"), {
+        x1: H.c.x,
+        y1: H.c.y,
+        x2: H.c.x,
+        y2: c7.y,
+        opacity: fwd > 0.05 ? 1 : 0,
+      });
+      set($("bb-lever"), {
+        x1: c7.x,
+        y1: c7.y,
+        x2: H.c.x,
+        y2: c7.y,
+        opacity: fwd > 0.05 ? 1 : 0,
+      });
+
+      // Labels on the levels doing the bending.
+      var l4 = sp.verts[1].c;
+      $("bb-hot-label").style.opacity = t > 5 ? 1 : 0;
+      set($("bb-hot-l1"), { x: l4.x - 16, y: l4.y - 4 });
+      set($("bb-hot-l2"), { x: l4.x - 16 });
+      var c1 = sp.verts[CHAIN.length - 1].c;
+      var c6 = sp.verts[CHAIN.length - 6].c;
+      var neckOn = fwd > 0.25 ? 1 : 0;
+      $("bb-up-label").style.opacity = neckOn;
+      set($("bb-up-label"), { x: c1.x - 22, y: c1.y + 2 });
+      $("bb-low-label").style.opacity = neckOn;
+      set($("bb-low-label"), { x: c6.x - 12, y: c6.y + 12 });
+
+      // Ghost: the same spine with no extra arch, so the column and the
+      // head tip with the pelvis and the gaze drops by t.
+      root.querySelector(".bb-ghostg").style.opacity =
+        t > 2 ? Math.min(1, t / 10) : 0;
+      var gs = spine(t, a, true);
+      $("bb-ghost-spine").setAttribute(
+        "points",
+        gs.verts
+          .map(function (v) {
+            return pt(v.c);
+          })
+          .join(" ")
+      );
+      var GH = headPts(gs);
+      set($("bb-ghost-head"), { cx: GH.c.x.toFixed(1), cy: GH.c.y.toFixed(1) });
+      var gEnd = {
+        x: 332,
+        y: GH.eye.y + (332 - GH.eye.x) * Math.tan(rad(GH.tilt)),
+      };
+      set($("bb-ghost-gaze"), {
+        x1: GH.eye.x,
+        y1: GH.eye.y,
+        x2: gEnd.x,
+        y2: gEnd.y,
+      });
+      set($("bb-ghost-l1"), { x: 334, y: GH.c.y + 46 });
+      set($("bb-ghost-l2"), { x: 334 });
+
+      var parts = [];
+      if (t >= 4)
+        parts.push(
+          "Pelvis tipped ~" +
+            Math.round(t) +
+            "° forward. To keep the eyes level, the low back arches ~" +
+            Math.round(t) +
+            "° more, mostly at L4–S1."
+        );
+      if (fwd >= 0.15)
+        parts.push(
+          "Head pushed forward: the lower neck bends forward and the upper neck tips back so the eyes stay level. The red bar is the lever the neck muscles hold the head on."
+        );
+      readout.textContent = parts.length
+        ? parts.join(" ")
+        : "Hips doing their job, head over shoulders: spine stacked, eyes level for free.";
+    }
+
+    function update() {
+      draw(hips.value / 100, headf.value / 100);
+    }
+    hips.addEventListener("input", update);
+    headf.addEventListener("input", update);
+
+    var reduce =
+      window.matchMedia &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var anim = null;
+    play.addEventListener("click", function () {
+      if (anim) {
+        cancelAnimationFrame(anim);
+        anim = null;
+        play.textContent = "Play";
+        return;
+      }
+      if (reduce) {
+        // No motion: jump between the stacked and the collapsed pose.
+        var collapsed = hips.value > 50;
+        hips.value = collapsed ? 10 : 100;
+        headf.value = collapsed ? 90 : 0;
+        update();
+        return;
+      }
+      var start = null;
+      var DUR = 6000;
+      play.textContent = "Stop";
+      function tick(ts) {
+        if (start === null) start = ts;
+        var p = ((ts - start) % DUR) / DUR;
+        // 0→1→0 ease: weaken hips, then poke the head, then recover.
+        var w = 0.5 - 0.5 * Math.cos(p * 2 * Math.PI);
+        hips.value = Math.round(100 - 90 * Math.min(1, w * 1.4));
+        headf.value = Math.round(90 * Math.max(0, (w - 0.3) / 0.7));
+        update();
+        if (ts - start < DUR * 2) {
+          anim = requestAnimationFrame(tick);
+        } else {
+          anim = null;
+          play.textContent = "Play";
+        }
+      }
+      anim = requestAnimationFrame(tick);
+    });
+
+    update();
+  })();
+</script>

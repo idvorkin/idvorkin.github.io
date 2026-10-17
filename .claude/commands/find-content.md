@@ -19,7 +19,8 @@ Use the Explore agent for "what content relates to productivity?" queries. It un
 
 ## Metadata Queries (titles, tags, links)
 
-Use `jq` on `back-links.json`:
+Use `jq` on `back-links.json`. It's gitignored (CI-generated, not committed) —
+if it's not present in the repo root, run `just update-backlinks` first.
 
 ```bash
 # Search by title

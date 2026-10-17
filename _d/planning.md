@@ -39,7 +39,7 @@ All things are created twice - once in the design phase, and then again in the i
 
 {% include summarize-page.html src="/end-in-mind" %}
 
-**The plan trains the planner.** Planning isn't about predicting the future—it's about preparing your mind to meet it:
+Here's what planning actually buys you:
 
 - **Clarifies the goal** - Forces you to articulate what success actually looks like
 - **Surfaces unknowns** - Planning walks you toward the edges where risks hide; without it, you wander randomly and may never find them until they find you

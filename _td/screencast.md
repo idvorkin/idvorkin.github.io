@@ -4,7 +4,7 @@ permalink: /screencast
 layout: post
 ---
 
-Screencasting has become an essential tool for content creators, educators, and professionals alike. In this post, I'll share my experiences and insights on screencasting on macOS, covering various tools, techniques, and tips I've discovered along the way. From recording software to post-production enhancements, this guide aims to help you navigate the world of screencasting on your Mac.
+I record my screen with the built-in macOS recorder, capture my facecam as a separate track, and edit it all together in CapCut. I landed on this pipeline after Loom kept stalling on capture (while costing $20/month) and one-take OBS recordings ate my time. Here's the setup, plus the tips I picked up along the way.
 
 ### Screen Recording
 
@@ -34,14 +34,12 @@ Record facecam as a separate track for maximum flexibility:
    ```
 
 2. Benefits of separate recording:
-
    - Easier to reshoot just the facecam portion
    - Can record multiple takes without redoing screen capture
    - Better control over camera settings
    - No performance impact on screen recording
 
 3. Post-production in CapCut:
-
    - Import facecam as separate track
    - Use AI background removal
    - Easily position and resize

@@ -30,6 +30,7 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
 - [Tools of the Trade](#tools-of-the-trade)
   - [The Past: Cursor](#the-past-cursor)
   - [The Present: Claude Code](#the-present-claude-code)
+  - [The Upgrade: Herdr](#the-upgrade-herdr)
   - [The Future: Multi-Agent Dashboard](#the-future-multi-agent-dashboard)
   - [The 8 Stages of AI Coding](#the-8-stages-of-ai-coding)
 - [Notes from the Trenches](#notes-from-the-trenches)
@@ -88,9 +89,9 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
 
 ### The Most Expensive I Can Get
 
-Currently I'm using Claude Opus 4.5 on the $200/month plan.
+Currently I'm using Claude Opus 4.5 on the \$200/month plan.
 
-On one hand you might think I'm crazy spending $2,400 a year. On the other hand, imagine having brilliant collaborators who force multiply everything you do, train you up, and basically give you a PhD in whatever you're working on.
+On one hand you might think I'm crazy spending \$2,400 a year. On the other hand, imagine having brilliant collaborators who force multiply everything you do, train you up, and basically give you a PhD in whatever you're working on.
 
 ### Why Not Codex, Gemini, etc.?
 
@@ -124,6 +125,14 @@ It's crazy [how fast AI evolves](https://idvorkin-how-long-since-ai.surge.sh/?sh
 
 Claude Code is really about autonomous agents that run in your terminal. As a terminal guy, I can speak to why this is so awesome - it fits my workflow perfectly. The agent runs commands, edits files, and iterates without me micromanaging every step.
 
+### The Upgrade: Herdr
+
+For the last year "the multiplexer" meant tmux plus duct tape - a [hand-written Rust picker](/ai-cockpit#tmux-on-super-steroids---the-multiplexer), windows that auto-rename to the running agent, Stream Deck keys for pane hopping. [Herdr](https://herdr.dev) replaced the duct tape: a multiplexer that knows what an agent is. Same terminal, same SSH, same detach-and-reattach - but every workspace shows blocked / working / done / idle, spinning up a git worktree is one command, and there's a socket API the agents themselves can drive. The full story of the switch is in [my journal](/ai-journal#herdr-the-agent-multiplexer-my-tmux-rig-was-trying-to-become).
+
+Here's my actual herd. Spaces tree top-left, agent states below it (spinners are working, checks are done), a live Claude session in the main pane. And a bonus: the `herdr` agent in that list is the Claude session that took this screenshot.
+
+![Herdr running nine workspaces: the spaces tree and agent-state panel on the left, a live Claude Code session working in the main pane](/images/herdr-herd.webp)
+
 ### The Future: Multi-Agent Dashboard
 
 I was surprised when Steve Yegge mentioned this is the future - orchestrating multiple specialized agents. Surprised because I'd been accidentally building toward this. The [Agent Dashboard](#the-future-multi-agent-dashboard) I mentioned earlier? By the way, I didn't build that at all. I just gave the requirements and Claude built it itself.
@@ -154,9 +163,9 @@ This diagram perfectly captures the evolution I've lived through. Let me break d
 
 1. **Specialized Tools** - Different agents have different capabilities. One handles tests, another docs, another deployment. You're orchestrating specialists, not generalists. The [optimal number of agents](#what-im-still-figuring-out) becomes critical.
 
-1. **Orchestrated System** - This is the vision: a central dashboard managing dozens of specialized agents. The [Agent Dashboard](#the-future-multi-agent-dashboard) is an early step toward this. You're no longer coordinating individual agents - you're managing the system that coordinates them.
+1. **Orchestrated System** - This is the vision: a central dashboard managing dozens of specialized agents. The [Agent Dashboard](#the-future-multi-agent-dashboard) is an early step toward this. You're no longer coordinating individual agents - you're managing the system that coordinates them. I drew the bricks that system is made of in [AI Orchestrators](/ai-orchestrator).
 
-**Where I Am Today:** Somewhere between stages 6 and 7. Running 2-3 parallel agents on different features, learning how to avoid merge hell, figuring out when to use specialized vs. generalist agents. Stage 8 is the dream, but the tooling isn't quite there yet.
+**Where I Am Today:** Somewhere between stages 6 and 7. The herd screenshot above is nine workspaces with four agents mid-flight - [Herdr](#the-upgrade-herdr) is what makes that supervisable. Still learning how to avoid merge hell and when to use specialized vs. generalist agents. Stage 8 is the dream, and the tooling is closer than it was.
 
 ## Notes from the Trenches
 
@@ -164,7 +173,7 @@ This diagram perfectly captures the evolution I've lived through. Let me break d
 
 **Note to self: Review this section regularly. These principles are easy to forget when you're heads-down in a session.**
 
-- **Rent the most expensive brain you can**: Spend tokens liberally. Don't be cheap with AI usage - the $200/month is nothing compared to the force multiplication you get
+- **Rent the most expensive brain you can**: Spend tokens liberally. Don't be cheap with AI usage - the \$200/month is nothing compared to the force multiplication you get
 - **Maximize time between interventions**: Like Tesla's self-driving metrics, the goal is reducing how often you need to take over. Every friction point kills flow
   - **Don't be the intern doing grudge work**: If AI writes code and you manually test it, you've got the roles backwards. Make AI the tester too - be the architect, not the QA intern
   - **Tests as specification**: The clearer the tests, the less I need to intervene
@@ -172,6 +181,7 @@ This diagram perfectly captures the evolution I've lived through. Let me break d
   - **Conventions compound**: Time spent on CLAUDE.md pays off across every session
 - **Isolation is freedom**: YOLO containers let Claude run autonomously without risk to my real environment
 - **"Don't glaze me" changes everything**: Claude is far more useful when it pushes back on bad ideas
+- **Rot repair is nearly free**: Reviving a stale project used to mean a weekend of toolchain archaeology ([Software Rot](/d/2017-09-10-software-rot)); now an agent grinds through the upgrades for me
 
 ### What I'm Still Figuring Out
 
@@ -251,6 +261,8 @@ The theory: tell Claude _how to think_, not just _what to do_. Whether "don't gl
 
 Here's the thing: every time models get smarter and tools get better, my CLAUDE.md becomes partially obsolete. Especially the alchemy - yelling at the model, begging it not to do a bad job, elaborate prompting tricks. That stuff has a short half-life. But some things stay useful: custom commands to run, project-specific context, where to find things. The challenge is knowing which is which.
 
+One datapoint on the side of less: an [RL project teaching a model to draw with a niche JavaScript library](https://surya.website/rling-qwen-to-paint-with-code) started with a 400-line API reference in the system prompt, and the model wrote confident, well-formatted code calling functions that didn't exist. Throwing the reference out and replacing it with an allowlist of eight approved methods - no docs, no examples - is what made it start working. Short and opinionated beat complete.
+
 ### MCP Servers and Skills
 
 At the end of the day, I don't use much of this. Often I'll install something, try it out, and it just gets left running in the background. GitHub MCP for issue/PR management, maybe some doc fetching. That's about it.
@@ -260,6 +272,8 @@ This stuff changes so fast, and with models getting smarter (see the Bitter Less
 **What does matter:** Little CLI programs for my agents to run. Same principle as with humans - instead of giving someone detailed directions, give them a tool that just works perfectly to solve the problem.
 
 For example, I have [`running-servers`](https://github.com/idvorkin/settings/blob/main/shared/running-servers) that checks if a Jekyll server is already running for a directory, so agents don't try to recreate them. Instead of prompting the agent through "check ps, grep for jekyll, parse the port numbers, compare to current directory..." - just give them a tool that answers "is there a server for this directory?" These custom tools that extend what agents can do - those are worth building.
+
+Same principle for giving agents the web: [Browsers for Machines](/browsers-for-machines) covers the Lightpanda and Playwright CLI setup behind my `/web-browse` command - JS-rendered pages and screenshots without flooding the context window.
 
 ## My Projects
 
@@ -406,7 +420,7 @@ I think there's a pendulum here:
 - 2000s: SaaS - rent the same software as everyone else
 - 2030s: Single dev does all the required tooling, personalized to their exact needs
 
-See more in my [hyper-personalization](/hyper-personal) post. Examples from my own life: [handwriting journal workflow](/process-journal#journalling-workflow-in-2025), [mortality software](/mortality-software), [all my pet projects](/pet-projects).
+See more in my [hyper-personalization](/hyper-personal) post. Examples from my own life: [handwriting journal workflow](/process-journal#current-workflow), [mortality software](/mortality-software), [all my pet projects](/pet-projects).
 
 ### The Joy Question
 
@@ -429,6 +443,8 @@ I'm in flow constantly. It comes from orchestrating — juggling two or three ag
 
 That's where the joy of chopping comes from for me. Not mourning the typing — being in the zone while orchestrating a team.
 
+The honest counterpoint: [Sean Goedecke frames](https://www.seangoedecke.com/how-to-keep-thinking/) this exact mode as a frenetic game show — all rapid skimming and judging, crowding out the slow hammock time deep thought needs. My take on that trade is in [vibing](/vibing#all-game-show-no-hammock).
+
 ### What I'm Betting On
 
 - **Practice and self-improvement always win**: The tools change, but [learning new skills](/new-skills) is the constant. You're going to suck until you die - that's just how mastery works.
@@ -444,6 +460,8 @@ That's where the joy of chopping comes from for me. Not mourning the typing — 
 Right now, we're still limited by how fast we can build things. But that's changing fast. What becomes the constraint then?
 
 **How do organizations handle 200x more projects?** Imagine a company like Meta that used to run N projects because engineering capacity was the limit. Now they can run 200N projects. How do they even assess them all? How do they A/B test that many variants? It's going to be a crazy world.
+
+My current answer is two jobs - iterating on the job to be done, and keeping the code changeable by agents - in [What's Left in Engineering?](/whats-left).
 
 **Reviews become more expensive than creation.** LLVM hit this with PRs - they had to create a [whole AI tool policy](https://discourse.llvm.org/t/rfc-llvm-ai-tool-policy-human-in-the-loop/89159) because reviewing AI-generated contributions takes more human time than the AI spent creating them. TL;DR: You're responsible for anything your AI creates. If you can't answer questions about what the AI did, your PR fails. But this applies to everything - not just code.
 

@@ -10,7 +10,6 @@ redirect_from:
   - /sleepless
 
 comments: true
-inprogress: true
 imagefeature: https://github.com/idvorkin/blob/raw/master/problem-size.png
 ---
 
@@ -43,7 +42,7 @@ If the problem isn't a task I can work on, then I should clear my head, trying t
 After a few days of inadequate sleep, I'll often be trying to deal with sleep deprivation. When that happens it's about catching up.
 
 - The essential activity, is getting back on my natural sleep cycle. I do this best through sleep deprivation, not sleep catchup.
-- I take prescription sleeping pills (aka Ambien/Lunesta/Sonata).
+- I take prescription sleeping pills (aka Ambien/Lunesta/Sonata) - not to catch up on sleep, but to make sure I fall asleep at my normal bedtime.
 - I force myself out of bed at wake-up time - even if I didn't get enough sleep.
 - I do not drink caffeine or nap. The best path to fall asleep on time (or even early) is sleep exhaustion
 

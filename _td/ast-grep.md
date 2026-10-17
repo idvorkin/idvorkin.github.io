@@ -4,7 +4,7 @@ title: AST Grep
 permalink: /ast-grep
 ---
 
-Sometimes you need to search/replace but on code, so let's use ASTs for that. The tool is called [ast-grep](https://github.com/ast-grep/ast-grep) (which you invoke with sg).
+Sometimes you need to search/replace but on code, so let's use ASTs for that. The tool is called [ast-grep](https://github.com/ast-grep/ast-grep) (which you invoke with sg — though on many Linux systems `sg` collides with the setgroups binary, so use the `ast-grep` binary name there).
 
 ### Pet Project: Extracting all documentation from hyper-div
 
@@ -55,6 +55,16 @@ This has human-readable output, which we can make computer-readable with
 
 ```bash
 ❮ sg scan --rule doc_puller.yaml --json  |  jq -r '.[] | {file: .file, lines: .lines} | "\(.file)\n\(.lines)"'
+```
+
+Each match comes out as the file, then the matched source — for the loops example above:
+
+```text
+hyperdiv_docs/pages/guide/loops.py
+docs_markdown(
+    """
+    When rendering components in loops, we have to take a bit
+    of extra precaution. ...
 ```
 
 ### Notes

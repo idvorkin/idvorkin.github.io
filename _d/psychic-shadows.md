@@ -13,7 +13,7 @@ redirect_from:
   - /thought-spells
 ---
 
-It's 3am and your brain is replaying that conversation from six months ago, calculating worst-case financial scenarios, or imagining all the ways you'll fail at that thing you haven't even started yet. These aren't just ordinary worries - they're psychic shadows, specific thought patterns that loop endlessly in your mind like restless spirits. If you're tired of being held hostage by these ruminating thoughts, this post will teach you how to craft personalized spells that banish each shadow the moment it appears, giving you a mystical toolkit for transforming persistent mental loops into single-word circuit breakers that actually work.
+It's 3am and my brain is replaying a conversation from six months ago, calculating worst-case financial scenarios, or rehearsing all the ways I'll fail at something I haven't even started. These aren't ordinary worries - they're psychic shadows, specific thought patterns that loop endlessly like restless spirits. My way out is crafting spells: single words that name the shadow and break the loop the moment it appears. Here's how I craft them.
 
 {% include blob_image_float_right.html src="blog/racoon-power-word.webp" %}
 
@@ -22,19 +22,19 @@ It's 3am and your brain is replaying that conversation from six months ago, calc
 
 - [The Nature of Shadows](#the-nature-of-shadows)
 - [The Art of Spell-Crafting](#the-art-of-spell-crafting)
-    - [Step 1: Catch the Shadow](#step-1-catch-the-shadow)
-    - [Step 2: Analyze Deeply](#step-2-analyze-deeply)
-    - [Step 3: Bind to Word](#step-3-bind-to-word)
-    - [Step 4: Deploy the Spell](#step-4-deploy-the-spell)
+  - [Step 1: Catch the Shadow](#step-1-catch-the-shadow)
+  - [Step 2: Analyze Deeply](#step-2-analyze-deeply)
+  - [Step 3: Bind to Word](#step-3-bind-to-word)
+  - [Step 4: Deploy the Spell](#step-4-deploy-the-spell)
 - [Categories of Common Shadows](#categories-of-common-shadows)
-    - [Financial Shadows](#financial-shadows)
-    - [Health and Decay Shadows](#health-and-decay-shadows)
-    - [Relationship Shadows](#relationship-shadows)
-    - [Identity and Worth Shadows](#identity-and-worth-shadows)
+  - [Financial Shadows](#financial-shadows)
+  - [Health and Decay Shadows](#health-and-decay-shadows)
+  - [Relationship Shadows](#relationship-shadows)
+  - [Identity and Worth Shadows](#identity-and-worth-shadows)
 - [The Mystical Practice](#the-mystical-practice)
-    - [Daily Shadow Awareness](#daily-shadow-awareness)
-    - [Spell Maintenance and Evolution](#spell-maintenance-and-evolution)
-    - [When Shadows Transform](#when-shadows-transform)
+  - [Daily Shadow Awareness](#daily-shadow-awareness)
+  - [Spell Maintenance and Evolution](#spell-maintenance-and-evolution)
+  - [When Shadows Transform](#when-shadows-transform)
 - [Related Grimoire](#related-grimoire)
 
 <!-- vim-markdown-toc-end -->

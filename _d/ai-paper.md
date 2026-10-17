@@ -4,6 +4,7 @@ title: "Seminal AI Papers"
 permalink: /ai-paper
 redirect_from:
   - ai-papers
+ai_default_image: true
 ---
 
 The original AI papers were all about training, super technical, and not that usable as a practitioner. Nowadays papers are less "mathy" and more applicable to practitioners. Here are some worth reading

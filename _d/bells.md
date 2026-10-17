@@ -11,7 +11,7 @@ redirect_from:
   - /simple-and-sinister
 ---
 
-There's no way I'm swinging that thing between my legs; I'm going to kill my back. When I started working out with a trainer in 2020, they tried to get me to do a kettlebell swing, and I was like, no way. Then they spent 3 weeks teaching me Turkish Get-Ups (TGUs), which I absolutely loved. Then I read _Simple and Sinister_, and now I've achieved _Timeless Simple_ and do heavy clubs instead of halos.
+There's no way I'm swinging that thing between my legs; I'm going to kill my back. When I started working out with a trainer in 2020, they tried to get me to do a kettlebell swing, and I was like, no way. Then they spent 3 weeks teaching me Turkish Get-Ups (TGUs), which I absolutely loved. Then I read _Simple and Sinister_, and now I've achieved _Timeless Simple_ and do heavy clubs instead of halos. (Timeless Simple is hitting Pavel's Simple standard - 100 swings and 10 get-ups with a 32 kg bell - without the time limits.)
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -19,8 +19,8 @@ There's no way I'm swinging that thing between my legs; I'm going to kill my bac
 - [Swings](#swings)
 - [TGUs](#tgus)
 - [Goals](#goals)
-- [KB Squats](#kb-squats)
 - [Heavy Clubs](#heavy-clubs)
+- [Swing Analyzer App](#swing-analyzer-app)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -56,8 +56,6 @@ I'm applying a goal from a book called _Kettlebell Simple and Sinister_.
 - 10x10 @ 32 KG Two-Arm Swings (100!) (Achieved November '23), but then regressed due to injury.
 - 10x10 @ 32 KG (50 per arm) One-Arm Swings
 - 5x1 @ 32 KG (5 per arm) Achieved January '24, but then regressed due to not doing them for a long holiday.
-
-### KB Squats
 
 Now I'm picking up one-handed front rack squats.
 

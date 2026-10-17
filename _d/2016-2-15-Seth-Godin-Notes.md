@@ -58,7 +58,7 @@ Sources:
 
 - People prefer selfies to signed books
 - Make experiences people want to tell their friends/families about.
-- Give people a story they can tell others [TBD:Link - why is noone referring my project]
+- Give people a story they can tell others - and remove the credibility risk, or they won't tell it ([why is no one referring my project](/why-is-no-one-referring))
 - Story/Context is how people connect.
 - Perfection blocks connection, as not accessible. Rough feels good, and accessible.
 - Enjoyment of amateur vs pro - there is tension that can be failure.

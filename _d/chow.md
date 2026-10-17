@@ -9,6 +9,7 @@ tags:
   - how
 redirect_from:
   - /chot
+ai_default_image: true
 ---
 
 I used to stare at blank pages. Now I have a different problem: AI will happily fill those pages for me, but my brain stays empty. CHOW - Chat-Oriented Writing - is my answer: using AI to think better, not just write faster. The written artifact is a side effect. The real product is clarity in your head. This post covers why writing equals thinking, the risk of outsourcing that thinking to AI, and the four thinking modes - Madman, Architect, Carpenter, Judge - that help you partner with AI instead of just delegating to it.
@@ -269,11 +270,11 @@ The AI handles the generative load. You handle the taste. Both play to their str
 
 ### AI Slop vs. Human Sludge
 
-Everyone complains about AI slop - that generic, over-enthusiastic, emoji-laden output that screams "a robot wrote this."
+Everyone complains about AI slop - that generic, over-enthusiastic, emoji-laden output that screams "a robot wrote this." But those are surface tells. Sean Goedecke has the [sharper definition](https://www.seangoedecke.com/dont-feed-me-slop/): slop is low **content density** - one or two real ideas in an avalanche of words. His test for when it's okay to hand someone AI output: when it's as content-dense as what a competent human would have sent. Expanding "can you add caching?" into three tidy paragraphs that add no information is slop. A human would have added facts - which call is slow, what infrastructure already exists.
 
-But have you looked at LinkedIn lately? Twitter? Any social media? **Human sludge is everywhere.** Corporate jargon. Passive voice. "Learnings" and "deliverables" and "at the end of the day." Humble-brag posts. Engagement-bait threads. Throat-clearing paragraphs that say nothing. Humans produce absolute garbage without any AI help.
+His companion piece explains [why reading slop stings](https://www.seangoedecke.com/on-slop/): the jolt of realizing mid-read that you're not in a human-human interaction after all - hoodwinked into effort that didn't matter. And there's no author to learn. With a human writer, each piece sharpens your model of who's talking - where they have expertise, when to trust them. Behind AI text there's no person to model.
 
-Here's the thing: **AI can be a hell of a lot better than human sludge.** At least AI doesn't have ego getting in the way. It doesn't pad content to sound important. It doesn't write to impress rather than communicate.
+But have you looked at LinkedIn lately? Twitter? Any social media? **Human sludge is everywhere.** Corporate jargon. Passive voice. "Learnings" and "deliverables" and "at the end of the day." Humble-brag posts. Engagement-bait threads. Throat-clearing paragraphs that say nothing. Humans produce low-density garbage without any AI help - and AI has no ego, no padding to sound important, no writing to impress rather than communicate.
 
 The bar isn't "as good as a human." The bar is "as good as the actual content humans produce" - and that bar is surprisingly low.
 
@@ -360,7 +361,7 @@ When AI writes code or explains a concept, the default output is text. But text 
 
 Simon Willison calls this [interactive explanations](https://simonwillison.net/guides/agentic-engineering-patterns/interactive-explanations/) — one of his [Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/). His example: he had an AI build a word cloud tool in Rust, but the algorithm description — "Archimedean spiral placement with per-word random angular offset" — meant nothing to him. So he asked the AI to build an animated HTML page where you can step through the algorithm frame by frame, watching each word try positions in a spiral until it finds one that fits. _That_ made it click.
 
-This is a weapon against [cognitive debt](/ai-native-manager#cognitive-debt) — the understanding gap that grows when AI writes code faster than humans can comprehend it. The same AI that creates the debt can pay it down: ask it to build you an interactive explanation of what it just built.
+This is a weapon against [cognitive debt](/ai-native-vocab#cognitive-debt) — the understanding gap that grows when AI writes code faster than humans can comprehend it. The same AI that creates the debt can pay it down: ask it to build you an interactive explanation of what it just built.
 
 Consider the difference:
 

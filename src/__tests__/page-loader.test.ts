@@ -1,10 +1,11 @@
+// ABOUTME: Tests page loaders, tree structures, and chart configuration.
+// ABOUTME: Uses mocked dependencies to verify page behavior without external services.
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-// Mock window.@algolia/autocomplete-js
+// Mock the autocomplete-js UI shell (search itself runs locally)
 vi.stubGlobal("window", {
   "@algolia/autocomplete-js": {
     autocomplete: vi.fn(),
-    getAlgoliaResults: vi.fn(),
   },
 });
 
@@ -12,7 +13,9 @@ vi.stubGlobal("window", {
 vi.mock("../../src/random-prompter", () => ({
   add_sunburst: vi.fn(),
   add_random_prompts: vi.fn(),
-  TreeNode: vi.fn((props) => props),
+  TreeNode: vi.fn(function MockTreeNode(props) {
+    return props;
+  }),
   shuffle: vi.fn((arr) => arr),
 }));
 

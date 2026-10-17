@@ -6,6 +6,7 @@ redirect_from:
   - /first90days
   - /90
   - /90-days
+imagefeatureblob: 90d/90d_stars_model.jpeg
 ---
 
 The first 90 days is a how to manual for starting a new job. While it's focused on executive roles, it's applicable to lower levels as well. It's also the best written business book from a structural perspective. I highly recommend it.

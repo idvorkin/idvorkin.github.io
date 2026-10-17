@@ -2,7 +2,6 @@
 layout: post
 title: "On outsourcing"
 author: "Igor Dvorkin"
-inprogress: true
 comments: true
 permalink: /outsourcing
 redirect_from:
@@ -28,14 +27,12 @@ Time is my precious resource - I have a limited number of hours in my life, and 
 
 Thanks to the many outsourcing crowd sourcing tools, getting contractors is easier than ever. Below are the tools I use and the tasks I've outsourced.
 
-- [ODesk](http://www.ODesk.com) - Get a professional for a more elaborate project, often someone to build relationships with
-
-  - Editor for my featured [posts](http://localhost:4000/software%20as%20a%20service/the-recruiter-does-not-think-you-are-hot/)
+- [Upwork](https://www.upwork.com) (was ODesk when I wrote this) - Get a professional for a more elaborate project, often someone to build relationships with
+  - Editor for my featured [posts](/the-recruiter-does-not-think-you-are-hot)
   - Musician, to help me produce a [song](https://soundcloud.com/igor-dvorkin/two-wheels-full-of-grace).
   - Audio transcriber for my upcoming interview series.
 
 - [Task Rabbit](http://www.taskrabbit.com) - Get help for an in person task.
-
   - Gutter Cleaning
 
 - [Fiverr](http://www.Fiverr.com) - Get a person for a simple, cheap, often weird task.
@@ -49,11 +46,4 @@ Thanks to the many outsourcing crowd sourcing tools, getting contractors is easi
 
 - Accountant - to do taxes
 - Trades - Plumbing/Heating/Major Home Repair/Car Mechanic/Medical Professionals.
-
-### Things I want to start outsourcing.
-
-- Personal Trainer - Done- incredible idea!
-
-#### TBD - When to build relationships with contractors
-
-#### TBD - How to get better at outsourcing
+- Personal Trainer - this one sat on my "want to outsource" list for a while. Done, and an incredible idea!

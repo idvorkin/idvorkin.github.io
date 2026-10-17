@@ -34,7 +34,7 @@ describe("get_link_info", () => {
     vi.clearAllMocks();
   });
 
-  it("should fetch link info from local path when not in production", async () => {
+  it("should fetch same-origin back-links.json when not in production", async () => {
     // Setup window.location for non-production
     Object.defineProperty(window, "location", {
       value: { href: "http://localhost:4000" },
@@ -59,7 +59,7 @@ describe("get_link_info", () => {
     expect(result).toEqual(mockLinkInfo);
   });
 
-  it("should fetch link info from GitHub when in production", async () => {
+  it("should fetch same-origin back-links.json when in production, not raw.githubusercontent", async () => {
     // Setup window.location for production
     Object.defineProperty(window, "location", {
       value: { href: "https://idvork.in/somepage" },
@@ -77,10 +77,10 @@ describe("get_link_info", () => {
     // Call the function
     const result = await get_link_info();
 
-    // Verify fetch was called with the GitHub URL
-    expect(window.fetch).toHaveBeenCalledWith(
-      "https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True",
-    );
+    // Production reads the copy the Pages deploy shipped in the artifact, which
+    // is built fresh after the Jekyll build — no cross-origin fetch, no
+    // ?flush_cache=True cache-buster.
+    expect(window.fetch).toHaveBeenCalledWith("/back-links.json");
 
     // Verify the returned data
     expect(result).toEqual(mockLinkInfo);

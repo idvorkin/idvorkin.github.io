@@ -115,7 +115,7 @@ Mortality software will be both forward and backwards facing. By this I mean it 
 
 #### Value Finder
 
-From the book Power of full engagement (see also [The Four Healths](/four-healths)),
+From the book Power of full engagement (see also [The Four Healths](/health)),
 
 This tool will
 

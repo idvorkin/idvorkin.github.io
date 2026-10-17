@@ -1,0 +1,74 @@
+{%- comment -%}
+  One Den comic strip: an anchored "## #N — Title" heading, a full-res image
+  with four panel-reader hit zones, and the collapsed "receipts" details
+  block that links to the real transcript gist behind the strip.
+
+  Params:
+    num          - strip number, e.g. "3"
+    title        - strip title, e.g. "The Secret Almost Shipped"
+    date         - display date, e.g. "August 27, 2026"
+    img          - image path, e.g. "/images/den/den-003.webp"
+    alt          - full alt text for the image
+    receipts_url - direct link to the gist with the real transcript.
+                    Optional: omit it and the receipts block is left off
+                    entirely rather than rendered as a dead link.
+    note         - optional extra markdown rendered between the image and
+                    the receipts (e.g. a link to an alternate style)
+
+  When num exists in _data/den.json, that manifest supplies the title, date,
+  image, alt text, receipts URL, and panel files. The include arguments remain
+  fallbacks so standalone uses keep working.
+
+  Example:
+    {% include den_strip.html num="3" title="The Secret Almost Shipped"
+       date="August 27, 2026" img="/images/den/den-003.webp"
+       alt="The Den #3: ..."
+       receipts_url="https://gist.github.com/idvorkin-ai-tools/8e420f281ed06592c2f6aeae2acc0ee1" %}
+{%- endcomment -%}
+{%- assign _num = include.num | append: "" -%}
+{%- assign _entry = nil -%}
+{%- for _candidate in site.data.den -%}
+  {%- assign _candidate_num = _candidate.num | append: "" -%}
+  {%- if _candidate_num == _num -%}
+    {%- assign _entry = _candidate -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign _title = include.title -%}
+{%- assign _date = include.date -%}
+{%- assign _img = include.img -%}
+{%- assign _alt = include.alt -%}
+{%- assign _receipts_url = include.receipts_url -%}
+{%- if _entry -%}
+  {%- assign _title = _entry.title -%}
+  {%- assign _date = _entry.date -%}
+  {%- assign _img = _entry.img -%}
+  {%- assign _alt = _entry.alt -%}
+  {%- assign _receipts_url = _entry.receipts_url -%}
+{%- endif -%}
+{%- assign _label = "#" | append: include.num | append: " — " | append: _title -%}
+
+## {{ _label }}
+
+<figure class="den-strip" data-num="{{ include.num }}"{% if _entry and _entry.panels %} data-den-strip{% endif %}>
+<div class="den-frame">
+<img src="{{ _img }}" alt="{{ _alt | escape }}" width="1600" height="1600" loading="lazy" decoding="async" />
+{%- if _entry and _entry.panels -%}
+  {%- for _panel in (1..4) %}
+<button type="button" class="den-hit" data-den-panel="{{ _panel }}" aria-label="Open panel {{ _panel }} of strip #{{ include.num }}" aria-haspopup="dialog"></button>
+  {%- endfor -%}
+{%- endif %}
+</div>
+<figcaption><small><em>{{ _label }}</em> · {{ _date }}</small></figcaption>
+</figure>
+{%- if include.note %}
+
+{{ include.note }}
+{%- endif %}
+
+{%- if _receipts_url %}
+<details style="margin:2em 0;">
+<summary>The receipts — the real transcript behind this strip</summary>
+<p><a href="{{ _receipts_url }}">Open the transcript on GitHub →</a></p>
+</details>
+{%- endif %}

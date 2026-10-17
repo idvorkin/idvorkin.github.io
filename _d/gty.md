@@ -8,22 +8,22 @@ redirect_from:
   - /negotiation
 ---
 
-Negotiation is the heart of collaboration. It is what makes conflict potentially meaningful and productive for all parties. Getting To Yes is the seminal book on negotiation. It's the deep dive into [win win or no deal](/win-win) and [seek first to understand](/first-understand). The formal, be hard on problems and soft on people, then focus on the desired outcomes not the positions, next get more options on the table, and make sure you measure by objective criteria - lastly know your BATNA.Several years later a new book came out by a hostage negotiator. Instead of being analytic focus, it's all about influencing the [elephant](/switch).
+Negotiation is the heart of collaboration. It is what makes conflict potentially meaningful and productive for all parties. Getting To Yes is the seminal book on negotiation. It's the deep dive into [win-win or no deal](/win-win) and [seek first to understand](/first-understand). The formula: be hard on problems and soft on people, then focus on the desired outcomes not the positions, next get more options on the table, and make sure you measure by objective criteria - lastly, know your BATNA. Several years later a new book came out by a hostage negotiator. Instead of an analytic focus, it's all about influencing the [elephant](/switch).
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
 - [Getting To Yes](#getting-to-yes)
-    - [Hard on problems soft on people](#hard-on-problems-soft-on-people)
-    - [Focus on outcomes not positions](#focus-on-outcomes-not-positions)
-    - [Brainstorm options](#brainstorm-options)
-    - [Find objective criteria](#find-objective-criteria)
-    - [Know your BATNA](#know-your-batna)
+  - [Hard on problems soft on people](#hard-on-problems-soft-on-people)
+  - [Focus on outcomes not positions](#focus-on-outcomes-not-positions)
+  - [Brainstorm options](#brainstorm-options)
+  - [Find objective criteria](#find-objective-criteria)
+  - [Know your BATNA](#know-your-batna)
 - [Never Split the difference](#never-split-the-difference)
-    - [Mirroring and active listening](#mirroring-and-active-listening)
-    - [Tactical Empathy and Labeling](#tactical-empathy-and-labeling)
-    - [Mirroring](#mirroring)
-    - [Labeling](#labeling)
+  - [Mirroring and active listening](#mirroring-and-active-listening)
+  - [Tactical Empathy and Labeling](#tactical-empathy-and-labeling)
+  - [Mirroring](#mirroring)
+  - [Labeling](#labeling)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->

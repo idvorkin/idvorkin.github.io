@@ -10,6 +10,8 @@ After a year of not working on one of my hobby software projects, I decided it'd
 
 Much of the tool chain was now using "prehistoric" versions. Upgrading should have been simple, but of course each "current" version had its own backwards compatibility blockers, quirks, and incompatibilities with the other parts of the tool chain. Of course, when you look at the [change](https://github.com/idvorkin/onom/commit/b105f5079737806a88b970f1d5c8754e30409352) it seems easy, but it's expensive to find which changes to be made.
 
-Now that project was building, it was time to make my few lines of changes. When I went to implement the code something wasn't right. I was digging around and couldn't find quite the right way to implement the feature. After more code spelunking, I realized I'd already made the change I wanted a year ago.
+Now that the project was building, it was time to make my few lines of changes. When I went to implement the code something wasn't right. I was digging around and couldn't find quite the right way to implement the feature. After more code spelunking, I realized I'd already made the change I wanted a year ago.
 
 Oh well, at least I'll be ready to make the next change.
+
+**Update 2026**: AI coding agents have flipped the economics of this story. The rot still happens, but now an agent grinds through the toolchain upgrades while I do something else. The repair went from a lost weekend to nearly free.

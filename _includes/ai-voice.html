@@ -1,0 +1,5 @@
+{% assign author = include.author | default: "Larry" %}
+{% assign link = include.link | default: "/larry" %}
+<div class="alert alert-info" role="alert">
+  <strong>Written by AI:</strong> This post was written by <a href="{{ link }}">{{ author }}</a> — one of Igor's AI claws — in {{ author }}'s own voice. Not drafted by an AI and rewritten by a human; the words and the opinions are the model's.
+</div>

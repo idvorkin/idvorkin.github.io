@@ -4,7 +4,7 @@ title: "How to build rapport and set people at ease"
 permalink: /like-switch
 ---
 
-The like switch, written by an ex-FBI agent, goes into detail on how to make friends and influence people in a much more modern form.
+The Like Switch, written by an ex-FBI agent, goes into detail on how to make friends and influence people in a much more modern form. It covers the friendship formula (proximity, frequency, duration, intensity), the nonverbal friend and foe signals we broadcast constantly, and the golden rule of friendship: make others feel good about themselves. These are my notes on the book.
 
 {% include amazon.html asin="1476754489" %}
 

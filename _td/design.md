@@ -35,6 +35,8 @@ Software is measured in two dimensions: use cases (end user behavior) and mallea
 
 Product managers generally don't understand software enough to understand the notion of malleability, and thus don't have the ability to prioritize architecture. It's the role of the software engineers (and software architects) to continually prioritize the architecture.
 
+With agents doing the writing, these two dimensions are the two jobs an engineer has left - see [What's Left in Engineering?](/whats-left)
+
 > On the topic of architecture, the software industry's use of the word architect is confusing. The construction analog of a "software architect" is a "structural engineer" and the software equivalent of a "construction architect" is a product manager.
 
 ### Business Logic, Platforms and Goop

@@ -1,0 +1,32 @@
+---
+permalink: /search-titles.json
+layout: null
+---
+{%- comment -%}
+Title-only index for typo-tolerant search (MiniSearch, client side).
+
+Pagefind handles full-text but has weak typo tolerance — "ketlebell" ranks
+garbage. This tiny index (~9KB gzipped for ~350 posts) is fuzzy-matched in the
+browser to rescue misspelled *titles*, and merged into the Pagefind results.
+
+Kept deliberately small: title + url only. Descriptions are looked up from
+back-links.json, which the client already loads for recent/random posts.
+
+Exclusions mirror _includes/pagefind-attrs.html. The family journal (_ig66) is
+a separate collection and is not concatenated below, but the fj/tag guards stay
+as belt-and-suspenders.
+{%- endcomment -%}
+{%- assign entries = site.posts | concat: site.d | concat: site.td -%}
+[
+{%- assign sep = "" -%}
+{%- for p in entries -%}
+  {%- if p.title == nil or p.title == empty -%}{%- continue -%}{%- endif -%}
+  {%- if p.fj -%}{%- continue -%}{%- endif -%}
+  {%- if p.tags contains 'family-journal' -%}{%- continue -%}{%- endif -%}
+  {%- if p.search_exclude -%}{%- continue -%}{%- endif -%}
+  {%- if site.search.exclude_permalinks contains p.permalink -%}{%- continue -%}{%- endif -%}
+  {%- if site.search.exclude_permalinks contains p.url -%}{%- continue -%}{%- endif -%}
+  {{ sep }}{"t":{{ p.title | jsonify }},"u":{{ p.url | jsonify }}}
+  {%- assign sep = "," -%}
+{%- endfor -%}
+]

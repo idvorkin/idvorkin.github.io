@@ -20,7 +20,14 @@ Wearing a silly hat or his zany $8 TEMU crazy shirt, his trusty folding bike at 
 
 _Add comments [here](https://hackmd.io/s90ojEpMTC-t51EFYnUuMw)_
 
-<iframe src="https://suno.com/embed/21be0b93-a44b-4a94-b2d6-39a59fff6283" width="760" height="240"><a href="https://suno.com/song/21be0b93-a44b-4a94-b2d6-39a59fff6283">Listen on Suno</a></iframe>
+The eulogy as a song:
+
+<audio controls preload="metadata">
+  <source src="https://github.com/idvorkin/blob/raw/master/blog/eulogy-how-igor-wants-to-live.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+_Also on [Suno](https://suno.com/song/21be0b93-a44b-4a94-b2d6-39a59fff6283)._
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->

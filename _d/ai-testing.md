@@ -2,9 +2,14 @@
 layout: post
 title: Testing AI
 permalink: /ai-testing
+ai_default_image: true
 ---
 
 Testing math is easy, it's right or wrong. Testing spelling is easy too, but testing if a joke is funny - now that's tough. Let's talk about how to test AI.
+
+> Unlike unit tests, evals are an emerging art/science. Anyone who claims to know exactly how your evals should be defined can safely be ignored. We've designed Pydantic Evals to be flexible and useful without being too opinionated.
+>
+> — [Pydantic Evals docs](https://ai.pydantic.dev/evals/)
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -14,13 +19,16 @@ Testing math is easy, it's right or wrong. Testing spelling is easy too, but tes
   - [LLM as Judge](#llm-as-judge)
   - [Testing across prompts](#testing-across-prompts)
   - [Testing across models](#testing-across-models)
+  - [Testing the model bound to its harness](#testing-the-model-bound-to-its-harness)
 - [Examples](#examples)
   - [Who is the funnier LLM](#who-is-the-funnier-llm)
   - [Who is the better git summarizer](#who-is-the-better-git-summarizer)
   - [Git commit message for blog content avoid ToC updates](#git-commit-message-for-blog-content-avoid-toc-updates)
+  - [Drawing the Mona Lisa, then ruining it](#drawing-the-mona-lisa-then-ruining-it)
 - [Eval Systems](#eval-systems)
   - [Human-based blind taste tests Chatbot arena](#human-based-blind-taste-tests-chatbot-arena)
   - [Eval Data Sets](#eval-data-sets)
+  - [Grading the agent with smevals](#grading-the-agent-with-smevals)
 - [Testing Theory](#testing-theory)
   - [Good books](#good-books)
   - [Simplest form of testing](#simplest-form-of-testing)
@@ -74,6 +82,12 @@ instruction formatting
 - Update the instruction documentation to make it more structured and clear,
   following a markdown format for better readability.
 
+### Testing the model bound to its harness
+
+Evals used to be prompt in, completion out. In the agentic era that's the wrong unit — the thing doing the work is the model plus its tools, its environment, and its permission envelope, and the model and the harness get cross-trained together. Swap the harness and the same weights score differently, so harness-bound performance is the thing that actually matters. [AI Eval Tools](/ai-eval-tools) calls this agent-in-a-workdir.
+
+Same way you judge a person: in an environment, not in the abstract.
+
 ## Examples
 
 ### Who is the funnier LLM
@@ -119,9 +133,19 @@ Testing this is normally a PITA with me doing manual testing, let's see if I can
 
 Let's start with promptfoo
 
+Update 2026-08: this itch finally became a real eval — see [Grading the agent with smevals](#grading-the-agent-with-smevals).
+
+### Drawing the Mona Lisa, then ruining it
+
+TryAI built a [drawing arena](https://www.tryai.dev/blog/ai-drawing-arena-colored-pencils-claude-gpt-grok): four frontier models, a blank canvas, and simulated colored pencils. The model picks a color and a pressure, lays down strokes, smudges, erases, and calls `view_canvas` to look at its own work and decide what to fix next. Two of the seven tasks are reproductions — the Mona Lisa and Starry Night — scored against the target with SSIM, so there's a real number under the pictures. The [harness is open source](https://github.com/hershalb/canvas-arena).
+
+The cost spread is the fun part — GPT-5.6 Sol drew all seven for $7.74, Claude Fable 5 spent $160.58 to land second on quality — but the number that stuck with me is this: every one of the eight scored runs finished below the model's own mid-run peak. Gemini 3.6 Flash hit 0.449 SSIM on the Mona Lisa, the best score anyone reached, then reviewed its way back down to 0.337. Claude looked at its Mona Lisa 27 times and was flat after about the fifth.
+
+That's [hill climbing](/hill-climbing) with the keep/reject step missing. The models could draw, erase, and look, but they had no way to snapshot a canvas they liked and roll back to it, and nothing in the loop compared the current canvas against their best so far. Every review was a chance to walk downhill with nothing to catch it. If my eval only reads the final artifact, I score the 0.337 and never learn the 0.449 happened. Score the trajectory, not just the finish, and ship the best checkpoint rather than the last one.
+
 ## Eval Systems
 
-A good eval isn't the finish line — it's the scoring function that drives a search loop. Once you have one that's cheap, unambiguous, and aligned with what you actually want, the agent can run [eval-driven hill climbing](/hill-climbing) while you look at the final result. The systems below are what make that scoring cheap and repeatable.
+A good eval isn't the finish line — it's the scoring function that drives a search loop. Once you have one that's cheap, unambiguous, and aligned with what you actually want, the agent can run [eval-driven hill climbing](/hill-climbing) while you look at the final result — as long as the final result is the best one, which [isn't a given](#drawing-the-mona-lisa-then-ruining-it). The systems below are what make that scoring cheap and repeatable.
 
 ### Human-based blind taste tests Chatbot arena
 
@@ -140,6 +164,35 @@ _The Elo system, however, adjusts a player’s rating based on the expected outc
 Building good "generic" eval data sets is hard, here are some:
 
 - [Big Bench](https://github.com/suzgunmirac/BIG-Bench-Hard/tree/main) - a bunch of hard question prompts
+
+### Grading the agent with smevals
+
+Most eval tools, PromptFoo included, treat the unit under test as prompt in, completion out. That stops working once the thing I'm testing is an agent mutating a repo. [smevals](https://github.com/prime-radiant-inc/smevals) — Simon Willison's eval framework — handles this case: the Runner is any executable (so it can drive Claude Code or Codex in a working directory), and grading is decoupled from running (Runs are immutable records on disk, so I can re-grade old runs with a new Grader without paying for the runs again). Checkers are also just executables that share a workspace, so a check can run git diff or the project's own tooling instead of asking an LLM judge.
+
+My first one: [smevals-blog-edit-evals](https://github.com/idvorkin-ai-tools/smevals-blog-edit-evals). Every post on this blog keeps a generated table of contents, and what I actually care about when an agent edits a page is: did it make the change, did it regenerate the TOC, and did it leave everything else alone. Three deterministic checkers, no judge required:
+
+- **expected-content** — the requested change landed in the file, not just in the chat reply
+- **toc-correct** — regenerating the TOC with my own toc.py must be a byte-level no-op (the repo's tool is the oracle)
+- **no-collateral** — git status against a baseline commit shows only the target file changed, frontmatter untouched, plus a diff-line count that catches agents rewriting the whole file to fix one word
+
+Three tasks: add a section, rename a heading, and fix a body typo — the last one is a trap, since the TOC must NOT change. Each runs headless against the harness under test — Claude Code and Codex CLI so far.
+
+First results (2026-08):
+
+| Config                                   | Runs | Edit landed | TOC correct | No collateral | Judge score |
+| ---------------------------------------- | ---- | ----------- | ----------- | ------------- | ----------- |
+| sonnet · Claude Code                     | 9    | 100%        | 100%        | 100%          | 0.99        |
+| haiku · Claude Code                      | 11   | 100%        | 100%        | 100%          | 0.96        |
+| gpt-5.4-mini · Codex CLI, zero reasoning | 10   | 70%         | 100%        | 100%          | 0.70        |
+| mock-bad (grader test)                   | 3    | 100%        | 33%         | 0%            | 0.61        |
+
+Both Claude configs pass everything, including zero TOC churn on the trap task. The deliberately dumb Codex config (mini model, reasoning effort none, sandbox replaced by a pre-approved command allowlist since its bwrap sandbox can't spawn in my VM) broke the saturation: 3 of its 10 runs fail, and every failure is a give-up after the first blocked edit attempt - never a wrong edit. When it does act, the TOC and collateral checks stay clean. Which is [the harness point](#testing-the-model-bound-to-its-harness) in miniature — what failed was the permission envelope, not the model.
+
+The judge column is a second grader — an LLM judge scoring correctness, voice match, and scope from the diff — layered on after the fact, since decoupled grading re-scores old runs for free. It found the daylight the deterministic checks can't see: sonnet 0.99 vs haiku 0.96 (haiku gets docked for details like unspaced em-dashes on a page that uses spaced hyphens), while an empty diff short-circuits to 0 with no LLM call. Deterministic graders stay the gate; the judge adds the quality axis. Next variants: drop the CLAUDE.md hints, use full-size pages, make edits that span files.
+
+The graders themselves get tested with a pair of mock runners — a known-good one that must always pass, and a sloppy one (skips the TOC regen, leaves a scratch file behind) that must always fail. If your checkers have never failed a bad run on purpose, you don't know that they work.
+
+For a survey of the wider tool field — PromptFoo, Pydantic Evals, Inspect AI, and the SaaS tier — see [AI Eval Tools](/ai-eval-tools).
 
 ## Testing Theory
 
@@ -180,9 +233,11 @@ Sometimes there isn't a known answer - in that case, we can have a judge do the 
 
 Eval Time:
 
-Have a judge give a subjective score.
+Have a judge grade it.
 
-Judges are subjective, so we can have multiple judges and average their answers - like we do in boxing matches or work performance reviews.
+Judges are subjective, so we can have multiple judges and average their answers - like we do in boxing matches or work performance reviews. The catch: averaging only helps if the judges actually disagree. Ask five judges the same question five different ways and you've bought one opinion at five times the price, so check that their scores diverge before you trust the average.
+
+And when every score comes back in the same narrow band, the fix is usually the question, not the judge. A judge answers _which of these two is better_ far more reliably than an abstract zero-to-ten scale - the same reason [Chatbot Arena](#human-based-blind-taste-tests-chatbot-arena) is pairwise. Trading absolute scores for a head-to-head against known-good references is what [unstuck an RL run on watercolour paintings](https://surya.website/rling-qwen-to-paint-with-code) that had flatlined.
 
 ### Wrinkle - No clear questions
 

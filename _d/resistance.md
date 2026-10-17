@@ -6,8 +6,9 @@ tags:
   - how igor ticks
   - emotional intelligence
 
+permalink: /resistance
 redirect_from:
-  - /resistance
+  - /d/resistance
 ---
 
 Stop. Take an ice cold shower right now. You didn't, did you? Trust me, even if you tried, you wouldn't. Before you turned on the water, you'd have this irrational fear of stepping in and you wouldn't do it. The force that stops you is the resistance. The resistance is the personification of the force that stops you from doing the important. The resistance lies, telling us things are hard when they are not. The resistance adds suffering when there is minimal pain and that confuses us, stopping us from doing things which give us the most value, joy and positive identity. The resistance is the enemy of progress.
@@ -19,23 +20,20 @@ The seminal work on the resistance is [Flinch](https://github.com/idvorkin/blob/
 <!-- vim-markdown-toc-start -->
 
 - [The resistance is what stops us from doing the important things](#the-resistance-is-what-stops-us-from-doing-the-important-things)
-    - [Pain vs Suffering](#pain-vs-suffering)
-    - [At the extreme - Addiction](#at-the-extreme---addiction)
-    - [Magic Tricks for strangers](#magic-tricks-for-strangers)
-    - [Skipping the diet or gym, or not doing the important thing](#skipping-the-diet-or-gym-or-not-doing-the-important-thing)
-    - [Procrastinating the thing that's stressing you at work](#procrastinating-the-thing-thats-stressing-you-at-work)
-    - [Not doing Amazon returns, or not doing the important thing](#not-doing-amazon-returns-or-not-doing-the-important-thing)
+  - [Pain vs Suffering](#pain-vs-suffering)
+  - [At the extreme - Addiction](#at-the-extreme---addiction)
+  - [Magic Tricks for strangers](#magic-tricks-for-strangers)
 - [Fighting the resistance](#fighting-the-resistance)
-    - [The 3 lies of laziness](#the-3-lies-of-laziness)
-    - [If you don't beat it back, it will get stronger](#if-you-dont-beat-it-back-it-will-get-stronger)
-    - [Jump in the lake day](#jump-in-the-lake-day)
-    - [Cold Exposure and Physiology - The science behind jump in the lake day](#cold-exposure-and-physiology---the-science-behind-jump-in-the-lake-day)
-    - [Positive Habits and Routine](#positive-habits-and-routine)
-    - [Related books](#related-books)
-        - [Flinch](#flinch)
-        - [7 Habits begin with the end in mind](#7-habits-begin-with-the-end-in-mind)
-        - [Getting things done](#getting-things-done)
-        - [Eat that frog](#eat-that-frog)
+  - [The 3 lies of laziness](#the-3-lies-of-laziness)
+  - [If you don't beat it back, it will get stronger](#if-you-dont-beat-it-back-it-will-get-stronger)
+  - [[Jump in the lake day](https://ig66.blogspot.com/search/label/jump_in_lake_day)](#jump-in-the-lake-day)
+  - [Cold Exposure and Physiology - The science behind jump in the lake day](#cold-exposure-and-physiology---the-science-behind-jump-in-the-lake-day)
+  - [Positive [Habits](/habits) and Routine](#positive-habits-and-routine)
+  - [Related books](#related-books)
+    - [[Flinch](https://github.com/idvorkin/blob/blob/master/books/the-flinch.pdf)](#flinch)
+    - [7 Habits begin with the end in mind](#7-habits-begin-with-the-end-in-mind)
+    - [Getting things done](#getting-things-done)
+    - [Eat that frog](#eat-that-frog)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -62,12 +60,6 @@ I've **never** regretted showing someone a magic trick, I've never regretted bei
 
 At my very best, I applied a powerful antidote. I told myself I'd ask the first person I saw if they wanted to see a magic trick, I'd repeat this for each person I saw till I completed a magic trick. This worked well, but I still have a long way to go.
 
-### Skipping the diet or gym, or not doing the important thing
-
-### Procrastinating the thing that's stressing you at work
-
-### Not doing Amazon returns, or not doing the important thing
-
 ## Fighting the resistance
 
 ### The 3 lies of laziness
@@ -84,7 +76,7 @@ Every victory over the resistance will give you the strength for the next victor
 
 To remind me the resistance is a huge enemy, I do a polar bear plunge every new year, I call it jump in the lake day.
 
-![Fun Photo](http://farm8.staticflickr.com/7013/6615434129_8040468028.jpg)
+![Jump in the lake day](/images/jump-in-lake-day.jpg)
 
 ### Cold Exposure and Physiology - The science behind jump in the lake day
 
