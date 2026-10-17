@@ -8,6 +8,7 @@ import {
   goToRandomPage,
   initRandomDice,
   isRandomArrival,
+  keepClearOfToc,
   markRandomArrival,
   normalizePath,
   pickNextRandomUrl,
@@ -231,6 +232,61 @@ describe("random-dice", () => {
     it("/random marks the landing so the floating dice appears", () => {
       const random = readFileSync(resolve(repo, "random.md"), "utf8");
       expect(random).toContain("goToRandomPage");
+    });
+  });
+
+  describe("keepClearOfToc", () => {
+    function rect(top: number, height: number) {
+      return { top, bottom: top + height, height, left: 0, right: 0, width: 44, x: 0, y: top, toJSON() {} } as DOMRect;
+    }
+    function setup(tocTop: number | null, tocHeight = 48) {
+      Object.defineProperty(window, "innerHeight", { value: 664, configurable: true });
+      if (tocTop != null) {
+        const toc = document.createElement("div");
+        toc.id = "id-ui-toc-dropdown";
+        toc.getBoundingClientRect = () => rect(tocTop, tocHeight);
+        document.body.appendChild(toc);
+      }
+      const wrap = document.createElement("div");
+      // Default CSS spot: bottom 80px, 48px tall -> top 536, bottom 584.
+      wrap.getBoundingClientRect = () => rect(536, 48);
+      document.body.appendChild(wrap);
+      return wrap;
+    }
+
+    it("leaves the CSS default alone when the TOC has its usual size", () => {
+      const wrap = setup(596);
+      keepClearOfToc(wrap);
+      expect(wrap.style.bottom).toBe("");
+    });
+
+    it("raises the dice above a taller TOC instead of overlapping it", () => {
+      // Text scaling: TOC is 80px tall, top at 564 -> dice must end by 552.
+      const wrap = setup(564, 80);
+      keepClearOfToc(wrap);
+      expect(wrap.style.bottom).toBe(`${664 - 584 + (584 + 12 - 564)}px`);
+    });
+
+    it("is a no-op when the TOC is missing or hidden", () => {
+      const wrap = setup(null);
+      keepClearOfToc(wrap);
+      expect(wrap.style.bottom).toBe("");
+      const hidden = setup(0, 0);
+      keepClearOfToc(hidden);
+      expect(hidden.style.bottom).toBe("");
+    });
+
+    it("never touches the TOC itself and stays one layer below it", () => {
+      markRandomArrival("/voices");
+      setPath("/voices");
+      const toc = document.createElement("div");
+      toc.id = "id-ui-toc-dropdown";
+      toc.setAttribute("style", "position:fixed;bottom:20px");
+      document.body.appendChild(toc);
+      initRandomDice();
+      expect(toc.getAttribute("style")).toBe("position:fixed;bottom:20px");
+      const css = document.getElementById("random-reroll-style")?.textContent ?? "";
+      expect(css).toContain("z-index:9990");
     });
   });
 });
