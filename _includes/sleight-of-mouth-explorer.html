@@ -1,7 +1,11 @@
 {% comment %} Sleight of Mouth explorer (interactive). Pick a limiting belief
-from the dropdown, then click any of Dilts' fourteen patterns: the part of the
-belief it aims at lights up (evidence, link, conclusion, or the whole belief),
-the reframed sentence appears directly under the belief, and the panel shows the
+from the dropdown; it shows as Hall and Bodenhamer's equation (external behavior
+-> link -> internal state, color-coded like the belief builder in
+sleight-of-mouth-equation.html; the data keys stay evidence / link /
+conclusion). Nothing is selected to start: a "pick a pattern" prompt sits where
+the reframe goes. Click any of Dilts' fourteen patterns: the part of the belief
+it aims at lights up, the chip shows a one-line hint of what the move does, the
+reframed sentence appears directly under the belief, and the panel shows the
 pattern's question. "About this pattern" in the pattern card opens a short
 explanation (click/tap toggles; Esc or a tap outside closes). Prev / Next and
 the arrow keys step through all fourteen. An "All 14 | By section | By
@@ -37,12 +41,52 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
     border: 1px solid var(--somx-rule);
     border-radius: 4px;
     color: var(--somx-ink);
-    font-family:
-      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      sans-serif;
     line-height: 1.4;
   }
   .somx * {
     box-sizing: border-box;
+  }
+  @media (prefers-color-scheme: dark) {
+    .somx {
+      --somx-ink: #e6e8eb;
+      --somx-soft: #aab2bc;
+      --somx-faint: #6b7480;
+      --somx-rule: #3a4049;
+      --somx-paper: #1e2228;
+      --somx-panel: #272c33;
+      --somx-evidence: #7fb7d6;
+      --somx-evidence-bg: #22333d;
+      --somx-link: #e0b35a;
+      --somx-link-bg: #3a3020;
+      --somx-conclusion: #e8926c;
+      --somx-conclusion-bg: #3d2a22;
+      --somx-belief: #b3a4d9;
+      --somx-belief-bg: #2f2a3d;
+    }
+    .somx .somx-drilltitle {
+      color: var(--somx-ink);
+    }
+  }
+  [data-bs-theme="dark"] .somx {
+    --somx-ink: #e6e8eb;
+    --somx-soft: #aab2bc;
+    --somx-faint: #6b7480;
+    --somx-rule: #3a4049;
+    --somx-paper: #1e2228;
+    --somx-panel: #272c33;
+    --somx-evidence: #7fb7d6;
+    --somx-evidence-bg: #22333d;
+    --somx-link: #e0b35a;
+    --somx-link-bg: #3a3020;
+    --somx-conclusion: #e8926c;
+    --somx-conclusion-bg: #3d2a22;
+    --somx-belief: #b3a4d9;
+    --somx-belief-bg: #2f2a3d;
+  }
+  [data-bs-theme="dark"] .somx .somx-drilltitle {
+    color: var(--somx-ink);
   }
   .somx-top {
     display: flex;
@@ -78,54 +122,104 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
     border-radius: 4px;
     padding: 0.25rem 0.4rem;
   }
+  /* The belief as Hall and Bodenhamer's equation: external behavior -> link ->
+     internal state, each part color-coded the same way as the belief builder
+     (_includes/sleight-of-mouth-equation.html). */
   .somx-belief {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0.3rem 0.4rem;
     border: 2px dashed var(--somx-faint);
     border-radius: 6px;
-    padding: 0.7rem 0.8rem;
-    font-size: 1.2rem;
-    font-weight: 600;
+    padding: 0.6rem 0.7rem;
     text-align: center;
-    transition:
-      border-color 0.2s,
-      background 0.2s;
+    transition: border-color 0.2s, background 0.2s;
   }
   .somx-part {
-    border-radius: 4px;
-    padding: 0.05rem 0.3rem;
-    transition:
-      background 0.2s,
-      color 0.2s,
-      opacity 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1rem;
+    flex: 0 1 auto;
+    max-width: 100%;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    padding: 0.3rem 0.55rem 0.35rem;
+    background: var(--somx-p-bg);
+    color: var(--somx-p);
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.25;
+    transition: border-color 0.2s, opacity 0.2s;
   }
-  .somx-belief .somx-part {
-    opacity: 0.35;
+  .somx-part--evidence {
+    --somx-p: var(--somx-evidence);
+    --somx-p-bg: var(--somx-evidence-bg);
   }
-  .somx-belief[data-aim="evidence"] .somx-part--evidence {
-    opacity: 1;
-    background: var(--somx-evidence-bg);
-    color: var(--somx-evidence);
-    box-shadow: inset 0 -3px 0 var(--somx-evidence);
+  .somx-part--link {
+    --somx-p: var(--somx-link);
+    --somx-p-bg: var(--somx-link-bg);
   }
-  .somx-belief[data-aim="link"] .somx-part--link {
-    opacity: 1;
-    background: var(--somx-link-bg);
-    color: var(--somx-link);
-    box-shadow: inset 0 -3px 0 var(--somx-link);
+  .somx-part--conclusion {
+    --somx-p: var(--somx-conclusion);
+    --somx-p-bg: var(--somx-conclusion-bg);
   }
+  .somx-part small {
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    opacity: 0.85;
+  }
+  .somx-arrow {
+    align-self: center;
+    color: var(--somx-faint);
+    font-size: 1.1rem;
+  }
+  .somx-belief[data-aim] .somx-part {
+    opacity: 0.45;
+  }
+  .somx-belief[data-aim=""] .somx-part,
+  .somx-belief[data-aim="belief"] .somx-part,
+  .somx-belief[data-aim="evidence"] .somx-part--evidence,
+  .somx-belief[data-aim="link"] .somx-part--link,
   .somx-belief[data-aim="conclusion"] .somx-part--conclusion {
     opacity: 1;
-    background: var(--somx-conclusion-bg);
-    color: var(--somx-conclusion);
-    box-shadow: inset 0 -3px 0 var(--somx-conclusion);
+  }
+  .somx-belief[data-aim="evidence"] .somx-part--evidence,
+  .somx-belief[data-aim="link"] .somx-part--link,
+  .somx-belief[data-aim="conclusion"] .somx-part--conclusion {
+    border-color: var(--somx-p);
   }
   .somx-belief[data-aim="belief"] {
     border-color: var(--somx-belief);
     border-style: solid;
     background: var(--somx-belief-bg);
   }
-  .somx-belief[data-aim="belief"] .somx-part {
-    opacity: 1;
-    color: var(--somx-belief);
+  .somx-reframe.is-empty .somx-reframe-text {
+    font-size: 0.95rem;
+    font-style: italic;
+    color: var(--somx-soft);
+  }
+  .somx-reframe.is-empty .somx-reframe-text::before,
+  .somx-reframe.is-empty .somx-reframe-text::after {
+    content: none;
+  }
+  .somx-chip-hint {
+    display: none;
+    margin-top: 0.2rem;
+    font-size: 0.72rem;
+    font-weight: 400;
+    line-height: 1.25;
+    opacity: 0.92;
+  }
+  .somx-chip[aria-pressed="true"] .somx-chip-hint {
+    display: block;
+  }
+  .somx-card[hidden] {
+    display: none;
   }
   .somx-reframe {
     margin-top: 0.4rem;
@@ -511,11 +605,22 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
       </label>
     </div>
     <div class="somx-belief" data-aim="">
-      <span class="somx-part somx-part--evidence"></span>
-      <span class="somx-part somx-part--link"></span>
-      <span class="somx-part somx-part--conclusion"></span>
+      <span class="somx-part somx-part--evidence">
+        <small>external behavior</small>
+        <span class="somx-part-text"></span>
+      </span>
+      <span class="somx-arrow" aria-hidden="true">&rarr;</span>
+      <span class="somx-part somx-part--link">
+        <small>link</small>
+        <span class="somx-part-text"></span>
+      </span>
+      <span class="somx-arrow" aria-hidden="true">&rarr;</span>
+      <span class="somx-part somx-part--conclusion">
+        <small>internal state</small>
+        <span class="somx-part-text"></span>
+      </span>
     </div>
-    <div class="somx-reframe" aria-live="polite">
+    <div class="somx-reframe is-empty" aria-live="polite">
       <p class="somx-reframe-label"></p>
       <p class="somx-reframe-text"></p>
     </div>
@@ -574,17 +679,24 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
   </script>
 </figure>
 <script>
-  (function () {
+  (function() {
     var uid = 0;
-    document.querySelectorAll(".somx:not(.is-live)").forEach(function (root) {
+    document.querySelectorAll(".somx:not(.is-live)").forEach(function(root) {
       var data = JSON.parse(root.querySelector(".somx-data").textContent);
       var aims = {};
-      data.aims.forEach(function (a) {
+      data.aims.forEach(function(a) {
         aims[a.id] = a;
       });
-      var state = { belief: data.beliefs[0].id, idx: 0, list: [], mode: "all" };
+      // idx is null until the reader picks a pattern: the belief shows in
+      // full with a "pick a pattern" prompt where the reframe will go.
+      var state = {
+        belief: data.beliefs[0].id,
+        idx: null,
+        list: [],
+        mode: "all",
+      };
       var pById = {};
-      data.patterns.forEach(function (p) {
+      data.patterns.forEach(function(p) {
         pById[p.id] = p;
       });
       var bodyEl = root.querySelector(".somx-body");
@@ -615,7 +727,7 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
       }
       // Belief dropdown, grouped by theme in YAML order.
       var groups = {};
-      data.beliefs.forEach(function (b) {
+      data.beliefs.forEach(function(b) {
         var theme = b.theme || "Examples";
         if (!groups[theme]) {
           groups[theme] = document.createElement("optgroup");
@@ -626,7 +738,7 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
         o.value = b.id;
         groups[theme].appendChild(o);
       });
-      select.addEventListener("change", function () {
+      select.addEventListener("change", function() {
         state.belief = select.value;
         render();
       });
@@ -637,18 +749,18 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
         groupsEl.innerHTML = "";
         chips = [];
         state.list = ids
-          .map(function (id) {
+          .map(function(id) {
             return data.patterns.indexOf(pById[id]);
           })
-          .sort(function (x, y) {
+          .sort(function(x, y) {
             return x - y;
           });
         groupsEl.classList.toggle(
           "is-scoped",
           ids.length < data.patterns.length
         );
-        data.aims.forEach(function (a) {
-          var mine = state.list.filter(function (i) {
+        data.aims.forEach(function(a) {
+          var mine = state.list.filter(function(i) {
             return data.patterns[i].aim === a.id;
           });
           if (!mine.length) return;
@@ -656,13 +768,17 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
           g.dataset.aimId = a.id;
           g.appendChild(el("h4", null, a.name));
           var ul = el("ul");
-          mine.forEach(function (i) {
+          mine.forEach(function(i) {
             var p = data.patterns[i];
             var li = el("li");
-            var chip = el("button", "somx-chip", p.n + ". " + p.name);
+            var chip = el("button", "somx-chip");
+            chip.appendChild(el("span", null, p.n + ". " + p.name));
+            // One-line "what this move does", shown while the chip is pressed
+            // (a hover-only hint would never show on a phone).
+            if (p.hint) chip.appendChild(el("span", "somx-chip-hint", p.hint));
             chip.type = "button";
             chip.dataset.idx = i;
-            chip.addEventListener("click", function () {
+            chip.addEventListener("click", function() {
               state.idx = i;
               render();
             });
@@ -673,7 +789,7 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
           g.appendChild(ul);
           groupsEl.appendChild(g);
         });
-        if (state.list.indexOf(state.idx) < 0) state.idx = state.list[0];
+        if (state.list.indexOf(state.idx) < 0) state.idx = null;
       }
       function openPop(help, p) {
         if (openHelp) openHelp.setAttribute("aria-expanded", "false");
@@ -682,7 +798,7 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
         pop.dataset.aimId = p.aim;
         popTitle.textContent = p.n + ". " + p.name;
         popBodies.innerHTML = "";
-        (p.explain || []).forEach(function (t) {
+        (p.explain || []).forEach(function(t) {
           popBodies.appendChild(el("p", "somx-pop-body", t));
         });
         pop.hidden = false;
@@ -709,32 +825,33 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
       // One "About this pattern" control in the card explains the pattern in play.
       var about = card.querySelector(".somx-about");
       about.setAttribute("aria-controls", pop.id);
-      about.addEventListener("click", function () {
+      about.addEventListener("click", function() {
+        if (state.idx == null) return;
         if (openHelp === about) closePop(false);
         else openPop(about, data.patterns[state.idx]);
       });
       pop
         .querySelector(".somx-pop-close")
-        .addEventListener("click", function () {
+        .addEventListener("click", function() {
           closePop(true);
         });
-      document.addEventListener("pointerdown", function (e) {
+      document.addEventListener("pointerdown", function(e) {
         if (!openHelp) return;
         if (pop.contains(e.target) || openHelp.contains(e.target)) return;
         closePop(false);
       });
-      document.addEventListener("keydown", function (e) {
+      document.addEventListener("keydown", function(e) {
         if (e.key === "Escape" && openHelp) {
           closePop(true);
           e.preventDefault();
         }
       });
-      root.querySelectorAll(".somx-nav button").forEach(function (b) {
-        b.addEventListener("click", function () {
+      root.querySelectorAll(".somx-nav button").forEach(function(b) {
+        b.addEventListener("click", function() {
           step(+b.dataset.step);
         });
       });
-      root.addEventListener("keydown", function (e) {
+      root.addEventListener("keydown", function(e) {
         if (
           e.target === select ||
           pop.contains(e.target) ||
@@ -754,9 +871,13 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
       function step(d) {
         var n = state.list.length;
         var at = state.list.indexOf(state.idx);
-        state.idx = state.list[(at + d + n) % n];
+        // From the "pick a pattern" state, Next opens the first and Prev the last.
+        state.idx =
+          state.idx == null
+            ? state.list[d > 0 ? 0 : n - 1]
+            : state.list[(at + d + n) % n];
         render();
-        var active = chips.filter(function (c) {
+        var active = chips.filter(function(c) {
           return +c.dataset.idx === state.idx;
         })[0];
         if (
@@ -767,19 +888,51 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
           active.focus();
       }
       function render() {
-        var b = data.beliefs.filter(function (x) {
+        var b = data.beliefs.filter(function(x) {
           return x.id === state.belief;
         })[0];
-        var p = data.patterns[state.idx];
-        var a = aims[p.aim];
+        var p = state.idx == null ? null : data.patterns[state.idx];
         select.value = b.id;
-        beliefEl.querySelector(".somx-part--evidence").textContent = b.evidence;
-        beliefEl.querySelector(".somx-part--link").textContent = b.link;
-        beliefEl.querySelector(".somx-part--conclusion").textContent =
-          b.conclusion;
+        beliefEl.querySelector(
+          ".somx-part--evidence .somx-part-text"
+        ).textContent = b.evidence;
+        beliefEl.querySelector(".somx-part--link .somx-part-text").textContent =
+          b.link;
+        beliefEl.querySelector(
+          ".somx-part--conclusion .somx-part-text"
+        ).textContent = b.conclusion;
+        chips.forEach(function(c) {
+          c.setAttribute(
+            "aria-pressed",
+            p && +c.dataset.idx === state.idx ? "true" : "false"
+          );
+        });
+        if (openHelp) closePop(false);
+        var n = state.list.length;
+        root.querySelector(".somx-nav").style.visibility =
+          n > 1 ? "" : "hidden";
+        if (!p) {
+          // Starting state: the whole equation, and a prompt where the
+          // reframe will appear.
+          beliefEl.dataset.aim = "";
+          reframeEl.dataset.aimId = "";
+          reframeEl.classList.add("is-empty");
+          reframeEl.querySelector(".somx-reframe-label").textContent =
+            "↓ Pick a pattern";
+          reframeEl.querySelector(".somx-reframe-text").textContent =
+            "Tap any pattern below and its reframe of this belief appears here.";
+          aimLine.dataset.aimId = "";
+          aimLine.textContent =
+            "Each pattern pries at one part of the equation: the external behavior, the link, the internal state, or the belief as a whole.";
+          card.hidden = true;
+          countEl.textContent = n + (n === 1 ? " pattern" : " patterns");
+          return;
+        }
+        var a = aims[p.aim];
         // On the section cards no pattern is in play, so the belief shows in full.
         beliefEl.dataset.aim = bucketsEl.hidden ? p.aim : "";
         reframeEl.dataset.aimId = p.aim;
+        reframeEl.classList.remove("is-empty");
         reframeEl.querySelector(".somx-reframe-label").textContent =
           "↓ " + p.n + ". " + p.name;
         reframeEl.querySelector(".somx-reframe-text").textContent =
@@ -789,25 +942,16 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
         aimLine.appendChild(document.createTextNode("Aims at "));
         aimLine.appendChild(el("b", null, a.name.toLowerCase()));
         aimLine.appendChild(document.createTextNode(": " + a.blurb));
-        chips.forEach(function (c) {
-          c.setAttribute(
-            "aria-pressed",
-            +c.dataset.idx === state.idx ? "true" : "false"
-          );
-        });
+        card.hidden = false;
         card.dataset.aimId = p.aim;
         card.querySelector(".somx-card-name").textContent = p.n + ". " + p.name;
         card.querySelector(".somx-card-q").textContent = p.question;
         about.setAttribute("aria-label", "About " + p.name);
-        if (openHelp) closePop(false);
-        countEl.textContent =
-          state.list.indexOf(state.idx) + 1 + " of " + state.list.length;
-        root.querySelector(".somx-nav").style.visibility =
-          state.list.length > 1 ? "" : "hidden";
+        countEl.textContent = state.list.indexOf(state.idx) + 1 + " of " + n;
       }
       // "All 14 | By section | By direction": cards for the post's sections or
       // for Hall and Bodenhamer's seven directions, then drill into one card.
-      var allIds = data.patterns.map(function (p) {
+      var allIds = data.patterns.map(function(p) {
         return p.id;
       });
       var views = {
@@ -815,13 +959,13 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
         directions: { cards: data.directions || [], back: "All directions" },
       };
       var modes = ["all"].concat(
-        Object.keys(views).filter(function (m) {
+        Object.keys(views).filter(function(m) {
           return views[m].cards.length;
         })
       );
       function buildCards(mode) {
         bucketsEl.innerHTML = "";
-        views[mode].cards.forEach(function (sec) {
+        views[mode].cards.forEach(function(sec) {
           var c = el("button", "somx-bucket");
           c.type = "button";
           c.dataset.sec = sec.id;
@@ -836,7 +980,7 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
           meta.appendChild(
             document.createTextNode(
               sec.patterns
-                .map(function (id) {
+                .map(function(id) {
                   return pById[id].name;
                 })
                 .join(" \u00b7 ")
@@ -847,7 +991,7 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
             c.appendChild(
               el("span", "somx-bucket-lines", "Mind-lines: " + sec.lines)
             );
-          c.addEventListener("click", function () {
+          c.addEventListener("click", function() {
             setView(mode, sec);
             var b = drillEl.querySelector(".somx-back");
             if (b) b.focus({ preventScroll: true });
@@ -857,7 +1001,7 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
       }
       function setView(mode, section) {
         state.mode = mode;
-        modeEl.querySelectorAll("[role=radio]").forEach(function (r) {
+        modeEl.querySelectorAll("[role=radio]").forEach(function(r) {
           var on = r.dataset.mode === mode;
           r.setAttribute("aria-checked", on ? "true" : "false");
           r.tabIndex = on ? 0 : -1;
@@ -879,7 +1023,7 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
           drillEl.style.setProperty("--somx-b", section.color);
           var back = el("button", "somx-back", "\u2190 " + views[mode].back);
           back.type = "button";
-          back.addEventListener("click", function () {
+          back.addEventListener("click", function() {
             setView(mode);
             var c = bucketsEl.querySelector('[data-sec="' + section.id + '"]');
             if (c) c.focus();
@@ -896,16 +1040,16 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
         }
         render();
       }
-      modeEl.querySelectorAll("[role=radio]").forEach(function (r) {
+      modeEl.querySelectorAll("[role=radio]").forEach(function(r) {
         if (modes.indexOf(r.dataset.mode) < 0) {
           r.remove();
           return;
         }
-        r.addEventListener("click", function () {
+        r.addEventListener("click", function() {
           setView(r.dataset.mode);
         });
       });
-      modeEl.addEventListener("keydown", function (e) {
+      modeEl.addEventListener("keydown", function(e) {
         var d = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[
           e.key
         ];
@@ -917,6 +1061,16 @@ _d/2016-3-12-sleight-of-mouth.md {% endcomment %}
         modeEl.querySelector('[data-mode="' + next + '"]').focus();
       });
       if (modes.length < 2) root.querySelector(".somx-modebar").hidden = true;
+      // Hand-off for the directions map (_includes/sleight-of-mouth-directions-map.html):
+      // open one section or direction card's patterns, e.g. somxShow("directions", "out").
+      root.somxShow = function(mode, id) {
+        var sec = (views[mode] ? views[mode].cards : []).filter(function(s) {
+          return s.id === id;
+        })[0];
+        if (!sec) return false;
+        setView(mode, sec);
+        return true;
+      };
       root.classList.add("is-live");
       setView("all");
     });

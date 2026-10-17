@@ -92,11 +92,11 @@ endcomment %}
 
 My belief: <span class="somp-belief">[WRITE YOUR BELIEF HERE]</span>
 
-First, split my belief into evidence → link → conclusion, and show the split.
+First, split my belief into external behavior → link → internal state (what happened, the "so" or "means" that joins them, and the meaning or feeling I attached), and show the split.
 
-Then run each pattern below on it. For each one, give the pattern name, the part of the belief it targets (evidence, link, conclusion, or the whole belief), and one reframe in my voice, one or two sentences, honest to the facts I gave. No pep talk.
+Then run each pattern below on it. For each one, give the pattern name, the part of the belief it targets (the external behavior, the link, the internal state, or the whole belief), and one reframe in my voice, one or two sentences, honest to the facts I gave. No pep talk.
 {% for p in site.data.sleight_of_mouth.patterns %}
-{{ p.n }}. {{ p.name }} (targets {% if p.aim == "belief" %}the whole belief{% else %}the {{ p.aim }}{% endif %}): {{ p.question }}{% endfor %}
+{{ p.n }}. {{ p.name }} (targets {% if p.aim == "belief" %}the whole belief{% elsif p.aim == "evidence" %}the external behavior{% elsif p.aim == "conclusion" %}the internal state{% else %}the link{% endif %}): {{ p.question }}{% endfor %}
 
 Finally, ask me which reframe loosened the belief the most, and why.</pre>
   <div class="somp-bar">

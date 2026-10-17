@@ -4,24 +4,51 @@
 #
 # The "aims" grouping is a simplification, loosely after where Dilts places each
 # pattern in his 1987 diagram (cause side, effect side, the whole belief).
-# Every belief has the same shape: evidence -> link -> conclusion, and carries
-# one reframe per pattern, keyed by the pattern's id. Beliefs are grouped in the
-# picker by theme, in the order they appear here. Reframes are written in the
-# believer's voice; the people and details in them are illustrative.
+# Every belief has the same shape, Hall and Bodenhamer's equation: an external
+# behavior -> a link -> an internal state. The keys below keep their original
+# names (evidence / link / conclusion) because the includes' CSS and JS hang
+# off them; only the reader-facing labels (name) say "external behavior" and
+# "internal state". Each belief carries one reframe per pattern, keyed by the
+# pattern's id. Beliefs are grouped in the picker by theme, in the order they
+# appear here. Reframes are written in the believer's voice; the people and
+# details in them are illustrative.
 
 aims:
   - id: evidence
-    name: The evidence
-    blurb: Is the first half really what you think it is?
+    name: The external behavior
+    blurb: Is what happened really what you think happened?
   - id: link
     name: The link
-    blurb: Does the evidence actually lead there?
+    blurb: Does the behavior actually lead there?
   - id: conclusion
-    name: The conclusion
-    blurb: Is that even the outcome that matters?
+    name: The internal state
+    blurb: Is that even the meaning that matters?
   - id: belief
     name: The belief itself
     blurb: Step outside and look at the belief as a thing.
+
+# Seeds for the belief-equation builder (_includes/sleight-of-mouth-equation.html):
+# the same beliefs as the explorer, phrased so both links read as a sentence
+# ("<behavior> makes me feel <state>" and "<behavior> means <state>").
+# link is the one the belief usually comes with: feel (cause-effect) or means
+# (complex equivalence).
+equation_seeds:
+  - belief: gym
+    external_behavior: Skipping the gym all month
+    link: means
+    internal_state: I'm just not a fitness person
+  - belief: back
+    external_behavior: A back that has hurt for years
+    link: feel
+    internal_state: I'll never get better
+  - belief: boss
+    external_behavior: My boss ignoring me in meetings
+    link: means
+    internal_state: he's going to fire me
+  - belief: streak
+    external_behavior: Breaking my meditation streak
+    link: feel
+    internal_state: there's no point starting again
 
 # The post's own ## sections, for the explorer's "By section" view. Headings
 # must match _d/2016-3-12-sleight-of-mouth.md exactly; anchor is the heading's
@@ -67,7 +94,7 @@ sections:
     heading: "Putting it together: one belief, ten patterns"
     anchor: putting-it-together-one-belief-ten-patterns
     idea: No single pattern is the magic bullet. Run one belief through several at once.
-    color: "#1b1f24"
+    color: "#4a5568"
     patterns:
       [
         intention,
@@ -98,6 +125,7 @@ directions:
     color: "#b8562f"
     patterns: [chunk_down, reality]
     lines: 1 Chunk down · 2 Reality strategy
+    example: "Which days did I actually skip, and what got in the way each one? And how do I know I'm not a fitness person: do I see the empty calendar first, or feel the sinking and then find the label?"
   - id: content
     heading: "Content reframing: inside the equation"
     anchor: seven-directions-where-each-pattern-sends-your-attention
@@ -105,6 +133,7 @@ directions:
     color: "#6b5b95"
     patterns: [redefining]
     lines: 3 Reframe the external behavior · 4 Reframe the internal state
+    example: "I didn't skip the gym, I lost my slot to a month of late meetings. And 'not a fitness person' is really 'haven't found a routine that survives my real week.'"
   - id: counter
     heading: "Counter reframing: back on itself"
     anchor: counter-reframing-turn-it-on-itself
@@ -112,6 +141,7 @@ directions:
     color: "#a8741a"
     patterns: [self, counter]
     lines: 5–6 Apply the external behavior or internal state to self or listener · 7 Counter-example
+    example: "I walked to work every day last spring and loved it. Was that someone else? And if one bad month defines me, one good month redefines me just as fast."
   - id: pre
     heading: "Pre-framing: back in time"
     anchor: seven-directions-where-each-pattern-sends-your-attention
@@ -119,6 +149,7 @@ directions:
     color: "#2e7d4f"
     patterns: [intention]
     lines: 8 Positive prior intention · 9 Positive prior cause
+    example: "What was the skipping doing for me? Protecting my sleep after the late calls, and sleep is part of training too."
   - id: post
     heading: "Post-framing: forward in time"
     anchor: post-framing-play-it-forward
@@ -126,13 +157,15 @@ directions:
     color: "#2f6f8f"
     patterns: [consequence, frame_size]
     lines: 10 First outcome · 11 Outcome of outcome · 12 Eternity framing
+    example: "If I'm not a fitness person, tomorrow's workout becomes a test I expect to fail. At 80, will I remember this month, or decades of mostly showing up?"
   - id: out
     heading: "Outframing: go up"
     anchor: outframing-wrap-a-bigger-idea-around-it
     idea: Wrap a bigger idea around the belief, like a map, a value, a rule or an identity.
-    color: "#1b1f24"
+    color: "#4a5568"
     patterns: [model, criteria, outcome, frame_size, chunk_up, meta]
     lines: 13 Model of the world · 14 Criteria and values · 15 Allness · 16 Have-to · 17 Identity · 18 Other abstractions · 19 Ecology
+    example: "Who taught me that one bad month is a character flaw? What matters more, the label or keeping up with my kids at 70? And does this belief get me to the gym, or just make rest days miserable?"
   - id: analogous
     heading: "Analogous framing: go sideways"
     anchor: chunking-laterally-analogy
@@ -140,12 +173,14 @@ directions:
     color: "#8a4b6e"
     patterns: [analogy]
     lines: 20 Metaphor and story
+    example: "Missing a month of piano doesn't make you 'not a music person.' A plane is off course most of the flight and lands because the pilot keeps correcting."
 
 patterns:
   - n: 1
     id: intention
     name: Intention
     aim: belief
+    hint: "Name the good purpose the belief is serving, then serve it a better way."
     question: What is the positive purpose of this belief?
     explain:
       - Every belief, even a painful one, is trying to do something for you, like keep you safe, spare you disappointment, or push you to improve. Intention speaks to that purpose instead of arguing with the words.
@@ -154,6 +189,7 @@ patterns:
     id: redefining
     name: Redefining
     aim: evidence
+    hint: "Swap one loaded word for an honest one that implies something else."
     question: What's another way to say this, with slightly different words?
     explain:
       - Beliefs are made of words, and words carry baggage. Redefining swaps one key word for another that describes the same facts but implies something different, so "failure" becomes "feedback" and "ignored" becomes "busy."
@@ -162,6 +198,7 @@ patterns:
     id: consequence
     name: Consequence
     aim: belief
+    hint: "Follow the belief forward: what does holding it actually do?"
     question: Where does holding this belief lead?
     explain:
       - Set aside whether the belief is true and look at what it does. If you keep acting on it, where does it take you?
@@ -170,6 +207,7 @@ patterns:
     id: chunk_down
     name: Chunk down
     aim: evidence
+    hint: "Get specific until the generalization has nothing to stand on."
     question: Get more specific. Which part, when, how much?
     explain:
       - Limiting beliefs live at a high level, in words like "always," "never" and "everyone." Chunking down breaks an element of the belief into smaller, specific pieces. Which part, on which day, who exactly?
@@ -178,6 +216,7 @@ patterns:
     id: chunk_up
     name: Chunk up
     aim: link
+    hint: "Put the belief inside a bigger class so it stops pointing at you."
     question: What bigger class does this belong to?
     explain:
       - Chunking up goes the other way. It places an element of the belief inside a bigger category, so a personal failing becomes one case of something common or systemic.
@@ -186,6 +225,7 @@ patterns:
     id: analogy
     name: Analogy
     aim: link
+    hint: "Find a parallel with the same shape where the logic plainly fails."
     question: What's a parallel situation that reads differently?
     explain:
       - Find a situation with the same shape as the belief, where the same reasoning plainly leads somewhere else. Dilts calls this chunking laterally, moving sideways to a story or a metaphor.
@@ -194,6 +234,7 @@ patterns:
     id: frame_size
     name: Change frame size
     aim: evidence
+    hint: "Zoom time or the number of people in or out until the meaning moves."
     question: Zoom the time or the number of people in or out. Does it still mean the same?
     explain:
       - What an event means depends on the frame around it, meaning how long a stretch of time you look at, how many people you include, and how close you stand. Change the frame size and the same fact can mean something new.
@@ -202,6 +243,7 @@ patterns:
     id: outcome
     name: Better outcome
     aim: conclusion
+    hint: "Ask whether the goal the belief is measured against is the right one."
     question: What outcome would actually be worth aiming at?
     explain:
       - Dilts calls this "another outcome." A limiting belief is usually measured against some goal, often one nobody chose on purpose. This pattern asks whether that goal is the right one and puts a different one in its place.
@@ -210,6 +252,7 @@ patterns:
     id: model
     name: Model of the world
     aim: link
+    hint: "Borrow someone else's map and read the same facts through it."
     question: Who would see the same facts and draw a different conclusion?
     explain:
       - Everyone reads the facts through their own map of the world. This pattern asks how someone with a different map, such as a coach, a doctor, or another culture, would read the same evidence.
@@ -218,6 +261,7 @@ patterns:
     id: reality
     name: Reality strategy
     aim: evidence
+    hint: "Ask how you know, step by step: what did you see, hear or feel?"
     question: How do you know this is true? What would you have to perceive?
     explain:
       - We don't meet the world directly. We build beliefs from what we notice, remember and imagine. This pattern asks how you know the belief is true, and what you saw, heard or felt that convinced you.
@@ -226,6 +270,7 @@ patterns:
     id: counter
     name: Counter example
     aim: evidence
+    hint: "Find one real exception and the rule has to shrink to fit."
     question: Where does the rule not hold?
     explain:
       - A limiting belief claims a rule, that this always leads to that. One real exception is enough to show the rule isn't absolute.
@@ -234,6 +279,7 @@ patterns:
     id: criteria
     name: Hierarchy of criteria
     aim: conclusion
+    hint: "Bring in something you care about more than what the belief measures."
     question: What matters more than what this belief is measuring?
     explain:
       - Beliefs judge things against criteria, like being right, being safe, or being liked. This pattern brings in a criterion you care about more than the one the belief is measuring.
@@ -242,6 +288,7 @@ patterns:
     id: self
     name: Apply to self
     aim: belief
+    hint: "Turn the belief's own standard back on the belief."
     question: Turn the belief's own judgment back on the belief.
     explain:
       - Take the belief's own logic or standard and turn it on the belief itself. If the belief says something is too expensive, ask how expensive it is to keep believing that.
@@ -250,6 +297,7 @@ patterns:
     id: meta
     name: Meta frame
     aim: belief
+    hint: "Form a belief about the belief: where it comes from, when it shows up."
     question: What belief about this belief changes how it looks?
     explain:
       - Step outside the belief and form a belief about it, such as where it came from, when it shows up, or what kind of thinking it is.

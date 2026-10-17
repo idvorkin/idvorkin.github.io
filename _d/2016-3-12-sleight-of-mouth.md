@@ -63,7 +63,7 @@ These are my notes on Robert Dilts' _Sleight of Mouth_, with Michael Hall and Bo
 
 ## Interactive version
 
-Pick a stuck belief from the dropdown, then try the patterns on it: the part of the belief a pattern pries at lights up (the evidence, the link, the conclusion, or the belief as a whole), and the reframed sentence appears right underneath. "About this pattern" explains the one in play, "By section" groups the patterns by the section of this post that teaches them, and "By direction" groups them by the [seven directions](#seven-directions-where-each-pattern-sends-your-attention) a pattern can send your attention: down, inside, back on itself, back in time, forward, up, or sideways. (This replaces Dilts' original [1987 diagram](https://github.com/idvorkin/blob/raw/master/sleight-of-mouth.jpg), which packs the same fourteen moves around a single cancer example.)
+Pick a stuck belief from the dropdown; it shows as an equation, external behavior → link → internal state. Then try the patterns on it: the part a pattern pries at lights up (the external behavior, the link, the internal state, or the belief as a whole), the reframed sentence appears right underneath, and each pattern carries a one-line hint of what the move does. "About this pattern" explains the one in play, "By section" groups the patterns by the section of this post that teaches them, and "By direction" groups them by the [seven directions](#seven-directions-where-each-pattern-sends-your-attention) a pattern can send your attention: down, inside, back on itself, back in time, forward, up, or sideways. (This replaces Dilts' original [1987 diagram](https://github.com/idvorkin/blob/raw/master/sleight-of-mouth.jpg), which packs the same fourteen moves around a single cancer example.)
 
 {% include sleight-of-mouth-explorer.html %}
 
@@ -116,7 +116,9 @@ Hall and Bodenhamer write that shape as an equation. On the left is an **externa
 - **Cause-effect:** "When you raise your voice, you make me anxious."
 - **Complex equivalence:** "When you raise your voice, it means you don't respect me."
 
-That link is where the patterns get their grip. Each one loosens the external behavior (is it really what you think it is?), the link (does it really lead there?), or the internal state (is that even the verdict that matters?). In the [explorer](#interactive-version) those are the evidence, the link and the conclusion.
+{% include sleight-of-mouth-equation.html %}
+
+That link is where the patterns get their grip. Each one loosens the external behavior (is it really what you think it is?), the link (does it really lead there?), or the internal state (is that even the verdict that matters?). The [explorer](#interactive-version) shows every belief in this shape, with the same colors, and aims each pattern at one of the three parts.
 
 Two things to do before reaching for any pattern. First, get the whole equation: people usually say only half of it ("I'm so stressed"), so ask for the missing side — "what does that mean to you?" for the internal state, "how do you know?" for the external behavior. Second, notice that a belief is a thought you have said "yes" to. The "yes" sits one level above the thought, which is why a belief feels like a fact rather than an opinion, and reframing starts the moment any other frame goes around it: a "maybe," a "since when?", or a story.
 
@@ -148,6 +150,8 @@ Try them on a belief in the [interactive version](#interactive-version) above.
 ## Seven directions: where each pattern sends your attention
 
 Fourteen patterns is a lot to hold. What Hall and Bodenhamer add in _Mind-Lines_ is the map: every move sends attention in one of seven directions relative to the equation. They count twenty lines, because several of theirs are finer cuts of one Dilts pattern (reframing the external behavior and reframing the internal state are both redefining; first outcome and outcome of the outcome are both consequence). The simplest version of the map has only two levels: the first two directions work _inside_ the equation and change what the external behavior or the internal state is; the other five leave the content alone and wrap a frame around it (time, a value, an identity, a story), and the frame changes what the content means.
+
+{% include sleight-of-mouth-directions-map.html %}
 
 | Direction                                      | Dilts' patterns                                                                                    | Mind-lines                                                                                                                  |
 | ---------------------------------------------- | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
