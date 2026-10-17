@@ -49,7 +49,7 @@ _Also on [Suno](https://suno.com/song/21be0b93-a44b-4a94-b2d6-39a59fff6283)._
 
 _Currently the purpose of my eulogy is to guide me in living my life. As death gets closer, the purpose of this eulogy will transform into entertaining others at my funeral_
 
-_For many of my roles, I'm still figuring out who I want to be, and how I will achieved it, so this list is not yet in priority order. The fleshed out sections are the easy ones to write, because, well, they are the easy ones to write :)_
+_For many of my roles, I'm still figuring out who I want to be, and how I will achieve it, so this list is not yet in priority order. The fleshed out sections are the easy ones to write, because, well, they are the easy ones to write :)_
 
 ### Dealer of smiles and wonder
 
@@ -89,9 +89,9 @@ Igor took a strange pleasure in not driving. Riding his folding [bike](/bike), o
 
 Igor loved living in the city so he could walk Zach and Amelia to their school and local library. Igor also loved the subway station 10 minutes from his home, which when combined with his folding bicycle let him get anywhere in the city car free.
 
-Igor was especially fond of his folding bicycle (even wrote a [song](http://ig66.blogspot.com/2013/12/the-wheels-full-of-grace.html)) which let him look goofy, be incredibly practical, and carry around the things he loved. Nothing made Igor happier then having the kids on the folding bike.
+Igor was especially fond of his folding bicycle (even wrote a [song](http://ig66.blogspot.com/2013/12/the-wheels-full-of-grace.html)) which let him look goofy, be incredibly practical, and carry around the things he loved. Nothing made Igor happier than having the kids on the folding bike.
 
-During Covid-19, Amelias was in a homeschooling pod, and Igor got to ride her to school everyday up a [very big hill](https://ig66.blogspot.com/2020/11/family-journal-548az-amelia-you-can-do.html).
+During Covid-19, Amelia was in a homeschooling pod, and Igor got to ride her to school everyday up a [very big hill](https://ig66.blogspot.com/2020/11/family-journal-548az-amelia-you-can-do.html).
 
 In 2022, Igor biked over 3,000 miles, but in 2023 that number dropped below 300, which his bestie foreshadowed by telling him, "Buying a Tesla for someone who wants to be a car-free spirit is like buying an ice cream maker for someone trying to lose weight."
 
@@ -116,16 +116,16 @@ Igor integrated his roles into the Tesla: Taking the kids on many adventures([ma
 
 Igor became enthralled by the [7 habits of highly effective people](/7-habits), and used it as his personal life guide. He created a [7 habits video series](https://www.youtube.com/watch?v=_1J7GM3GLzw&list=PLJveOxX-mxxCl4YDfHMyNzMmWUMFxgC1n) so he could better understand the concepts and teach them to others.
 
-Discipline is a core concept of "Begin with the end in mind" (Habit 1), and Igor's discipline started strong at the beginning of the day/week/month but he'd often fall of the wagon. Igor realized that was OK, and started his discipline again the next day. This embodied compassion and having grand mother mind.
+Discipline is a core concept of "Begin with the end in mind" (Habit 2), and Igor's discipline started strong at the beginning of the day/week/month but he'd often fall off the wagon. Igor realized that was OK, and started his discipline again the next day. This embodied compassion and having grand mother mind.
 
 ### Fit fellow
 
 {% include local_image_float_right.html src="raccoon-lifting-weights.webp" %}
-Igor knew physical health was the [source of his energy](/physical-health) and acted accordingly. Every month Igor pledged his weight would be 160lbs, and he put [1000\$ on the line](http://ighealth.blogspot.com/2014/10/the-best-1000-i-did-spend.html) to make sure he never reneged on his pledge. In 2024 Igor discovered [Terzepatide](/terzepatide) and from that point forward weight loss was never an issue.
+Igor knew physical health was the [source of his energy](/physical-health) and acted accordingly. Every month Igor pledged his weight would be 160lbs, and he put [$1,000 on the line](http://ighealth.blogspot.com/2014/10/the-best-1000-i-did-spend.html) to make sure he never reneged on his pledge. In 2024 Igor discovered [Tirzepatide](/terzepatide) and from that point forward weight loss was never an issue.
 
 Igor valued his cardio vascular endurance and tried to run a fast 4 miles 2 to 3 times a week. Igor also tried to incorporate biking into his life whenever possible: biking to work, biking to doctors appointments, and even biking the grocery store (which was not efficient nor effective, but enjoyable). Finally, Igor knew the importance of sleep, and always woke up @ 5am. When Igor was having trouble getting enough sleep, he'd cut his caffeine to make sure his body forced him to get the sleep he needed.
 
-It took Igor almost 40 years to get his weight under control sustainably. At his most unhealthy, [Igor weighted 230 lbs](https://www.flickr.com/photos/idvorkin/4590579760/in/datetaken/), and felt terrible. Luckily Igor's good friend recommended [Fat sick and nearly dead](http://ighealth.blogspot.com/search?q=fat+sick+and+nearly+dead) and Igor began [juice fasting](http://ighealth.blogspot.com/search/label/juicing) the next day.
+It took Igor almost 40 years to get his weight under control sustainably. At his most unhealthy, Igor weighed 230 lbs, and felt terrible. Luckily Igor's good friend recommended [Fat sick and nearly dead](http://ighealth.blogspot.com/search?q=fat+sick+and+nearly+dead) and Igor began [juice fasting](http://ighealth.blogspot.com/search/label/juicing) the next day.
 
 In 2022, Igor discovered [Kettle Bells](/kettlebell) - which he loved and became an anchor to his strength!
 
@@ -158,7 +158,7 @@ Igor was incredibly grateful to his friend Ammon for teaching him about the weig
 
 Igor understood emotional health is the basis of his stability, and [invested](/siy) heavily. Igor started each day at 5am by recording his blessing in his [gratefulness journal](/process-journal), followed by 20 minutes of meditation. Igor closed the day in a similar vein, a final 10 minutes of meditation and writing out what made his day great in his gratefulness journal.
 
-Igor strived for grand-mother mind, which he applied to [himself](https://www.amazon.com/dp/B00OP1FIUM/), and others. A grand mother doesn't judge, she believes people grow, listen whole heartily, encourages, and remains calm like water.
+Igor strived for grand-mother mind, which he applied to [himself](https://www.amazon.com/dp/B00OP1FIUM/), and others. A grand mother doesn't judge, she believes people grow, listens wholeheartedly, encourages, and remains calm like water.
 
 <!--
 * To File:
@@ -178,7 +178,7 @@ Igor strived for grand-mother mind, which he applied to [himself](https://www.am
 
 Igor loved technology - taking copious [notes](https://github.com/idvorkin/techdiary) through his technical journeys, putzing with his [blog](https://github.com/idvorkin/idvorkin.github.io) and many small [pet projects](/pet-projects). Igor was REALLY proud when Zach got his own [website](https://www.zacookiegames.com), and when Zach made his first [pull request](https://github.com/idvorkin/zdvorkinweb/pull/5). Igor was also very proud of his first open source [pull request](https://github.com/Homebrew/homebrew-core/pull/48163) for a command line spell checking installer.
 
-Igor loved VIM, the command line and TMUX. His dotfile [collection](https://github.com/idvorkin/settings) was impressive, and he even made a [VIM plugin for OneNote](https://github.com/idvorkin/Vim-Keybindings-For-Onenote). Perhaps the command line usage was about minimalism, and as a result Igor loved being able to do everything on his [iPad](https://github.com/idvorkin/techdiary/blob/master/notes/ios-nomad.md) using an external keyboard, a makeshift stand and ssh'ing to a cloud based EC2 instance.
+Igor loved VIM, the command line and TMUX. His dotfile [collection](https://github.com/idvorkin/settings) was impressive, and he even made a [VIM plugin for OneNote](https://github.com/idvorkin/Vim-Keybindings-For-Onenote). Perhaps the command line usage was about minimalism, and as a result Igor loved being able to do everything on his [iPad](https://github.com/idvorkin/techdiary/blob/master/ios-nomad.md) using an external keyboard, a makeshift stand and ssh'ing to a cloud based EC2 instance.
 
 <!--
 Programmer:
@@ -196,8 +196,8 @@ Programmer:
 Igor didn't write this section - but he did describe his [dream job](/job) and his thoughts on being a [great manager](/manager). He also wrote up several cool things he's proud of at work:
 
 - [Charity Gifting On Alexa](/toysfortots)
-- [Software as a Story](/tags#Software as a Story),
-- [Staring Cloud Computing](/The-Genesis-Node),
+- [Software as a Story](/tags#software as a story),
+- [Starting Cloud Computing](/The-Genesis-Node),
 - [Smile](http://igsmilebox.blogspot.com),
 - [Cache](/cache), and
 - [Human meetings](/Human-Meetings).
@@ -218,10 +218,10 @@ Igor used to think being a family man would be easy. Being proud of his family, 
 
 Igor realized that when it comes to family, like all things, it's easy to confuse hours for quality. Being at home playing on his tablet, while the kids played on theirs wasn't family time. Instead Igor realized the key is having dates, a time he gave the gift of his complete attention to Amelia, Zach and Tori. Date nights were sacred and could be whatever the kid wanted.
 
-Igor also realized that writing about kids in an eulogy is hard as kids are constantly growing and evolving and what you do at 5, is so different at 7 and so different at 10. Here are some things which he totally loved:
+Igor also realized that writing about kids in a eulogy is hard as kids are constantly growing and evolving and what you do at 5, is so different at 7 and so different at 10. Here are some things which he totally loved:
 
 - Enjoying them growing up: Seeing as they learned new skills, came up with clever thoughts
-- Watching them do things together: There is no feeling better then seeing your kids do things together. When Amelia is scared and Zach lets her sleep in his bed, melts Igor's heart.
+- Watching them do things together: There is no feeling better than seeing your kids do things together. When Amelia is scared and Zach lets her sleep in his bed, melts Igor's heart.
 - School: Walking the kids to school daily, going to all the field trips, doing magic for kids.
 - Enjoying them being proud of their dad: Greedy yes, but true none the less.
   - Amazing when the kids encourage me to do exercise or magic
@@ -275,7 +275,7 @@ Things I cherish with Amelia @ 10:
 
 - Seeing how she's unique and brave (Wearing a tail, and sometimes even a mask)
 - Seeing how emotionally mature she is (She wants to be a couples counselor)
-- Seeing how strong and physical she is (She'll do quadrupedics on the trampoline, she'll carry the kettlebells)
+- Seeing how strong and physical she is (She'll do quadrobics on the trampoline, she'll carry the kettlebells)
 - Taking her out to do photography
 - Long walks in the arboretum where we talk about her challenges, pride, and adventures
 - Seeing how independent she is
@@ -330,12 +330,10 @@ Things I cherish with Zach @ 14:
   - Reading hard books
   - Not wearing headphones to be present.
   - Reading on the bus.
-
-* Seeing how he's curious and with courage
+- Seeing how he's curious and with courage
   - Always wants to try stuff (Yellow Deli, Stopping at new creamery; Stopping to enjoy Lookout point)
-* Getting to engage with him as a grown up
+- Getting to engage with him as a grown up
   - Listening to podcasts together
-
 - Very much looking forward to him teaching me more and more
   - Words
   - Politics
@@ -344,7 +342,7 @@ Things I cherish with Zach @ 14:
 
 Things I cherish with Zach @ 12.5:
 
-- Getting to program w/Zach. He's been taking the programming course from RICE University.
+- Getting to program w/Zach. He's been taking the programming course from Rice University.
 - Taking Zach kayaking.
 - Seeing Zach flourish.
 - Making a movie with Zach.
