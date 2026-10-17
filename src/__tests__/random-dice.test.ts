@@ -1,6 +1,8 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import {
   RANDOM_ARRIVAL_KEY,
+  ROLL_MS,
+  clearRandomArrival,
   goToRandomPage,
   initRandomDice,
   isRandomArrival,
@@ -22,6 +24,7 @@ describe("random-dice", () => {
   beforeEach(() => {
     sessionStorage.clear();
     document.body.innerHTML = "";
+    document.head.innerHTML = "";
     setPath("/");
   });
 
@@ -119,16 +122,96 @@ describe("random-dice", () => {
       expect(navigate).toHaveBeenCalledWith("/from-shared");
     });
 
-    it("clicking the dice re-rolls", async () => {
+    it("clicking the dice tumbles, then re-rolls after the animation", async () => {
+      vi.useFakeTimers();
+      try {
+        markRandomArrival("/voices");
+        setPath("/voices");
+        const assign = window.location.assign as ReturnType<typeof vi.fn>;
+        assign.mockClear();
+        const button = initRandomDice();
+        button?.click();
+        expect(button?.classList.contains("rrd-rolling")).toBe(true);
+        expect(button?.disabled).toBe(true);
+        await vi.advanceTimersByTimeAsync(ROLL_MS - 100);
+        expect(assign).not.toHaveBeenCalled();
+        await vi.advanceTimersByTimeAsync(200);
+        expect(assign).toHaveBeenCalledWith("/from-shared");
+        expect(isRandomArrival("/from-shared")).toBe(true);
+      } finally {
+        vi.useRealTimers();
+      }
+    });
+
+    it("skips the animation delay under prefers-reduced-motion", async () => {
+      const original = window.matchMedia;
+      window.matchMedia = vi.fn().mockReturnValue({ matches: true }) as unknown as typeof window.matchMedia;
+      vi.useFakeTimers();
+      try {
+        markRandomArrival("/voices");
+        setPath("/voices");
+        const assign = window.location.assign as ReturnType<typeof vi.fn>;
+        assign.mockClear();
+        initRandomDice()?.click();
+        await vi.advanceTimersByTimeAsync(1);
+        expect(assign).toHaveBeenCalledWith("/from-shared");
+      } finally {
+        vi.useRealTimers();
+        window.matchMedia = original;
+      }
+    });
+  });
+
+  describe("placement and styling", () => {
+    it("sits bottom-right above the TOC button, with animations and reduced-motion opt-out", () => {
+      markRandomArrival("/voices");
+      setPath("/voices");
+      initRandomDice();
+      const css = document.getElementById("random-reroll-style")?.textContent ?? "";
+      expect(css).toMatch(/#random-reroll\{position:fixed;right:/);
+      expect(css).not.toMatch(/left:max/);
+      expect(css).toContain("@keyframes rrd-roll");
+      expect(css).toContain("@keyframes rrd-wiggle");
+      expect(css).toContain("prefers-reduced-motion: reduce");
+    });
+
+    it("injects the style only once", () => {
+      markRandomArrival("/voices");
+      setPath("/voices");
+      initRandomDice();
+      document.getElementById("random-reroll")?.remove();
+      initRandomDice();
+      expect(document.querySelectorAll("#random-reroll-style").length).toBe(1);
+    });
+  });
+
+  describe("dismiss (×)", () => {
+    it("hides the dice, clears the flag and does not re-roll", async () => {
       markRandomArrival("/voices");
       setPath("/voices");
       const assign = window.location.assign as ReturnType<typeof vi.fn>;
       assign.mockClear();
-      const button = initRandomDice();
-      button?.click();
-      await vi.waitFor(() => expect(assign).toHaveBeenCalledWith("/from-shared"));
-      expect(button?.disabled).toBe(true);
-      expect(isRandomArrival("/from-shared")).toBe(true);
+      const dice = initRandomDice();
+      const close = document.getElementById("random-reroll-close") as HTMLButtonElement;
+      expect(close).not.toBeNull();
+      expect(dice?.contains(close)).toBe(false);
+      close.click();
+      await new Promise((r) => setTimeout(r, ROLL_MS + 50));
+      expect(document.getElementById("random-reroll-dice")).toBeNull();
+      expect(sessionStorage.getItem(RANDOM_ARRIVAL_KEY)).toBeNull();
+      expect(assign).not.toHaveBeenCalled();
+    });
+
+    it("stays gone on reload", () => {
+      markRandomArrival("/voices");
+      setPath("/voices");
+      initRandomDice();
+      (document.getElementById("random-reroll-close") as HTMLButtonElement).click();
+      expect(initRandomDice()).toBeNull();
+    });
+
+    it("clearRandomArrival tolerates absent storage", () => {
+      expect(() => clearRandomArrival(null)).not.toThrow();
     });
   });
 });
