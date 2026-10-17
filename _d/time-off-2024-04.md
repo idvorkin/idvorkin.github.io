@@ -9,7 +9,7 @@ redirect_from:
 
 It's spring break 2024 and I've got a week off. The last few weeks have been a bit crazy at work trying to get some big features launched and into public testing, so very excited for the time off. I usually try to avoid too much tech, but I'm looking forward to making some tech investments as it's been a while.
 
-I kind of miss doing lots of technical and blogging - so I'm looking forward to both of those.
+I kind of miss doing lots of technical and blogging - so I'm looking forward to both of those. For why I take time off, and the rules I try to follow, see [/timeoff](/timeoff).
 
 I've got several tailwinds going into this break:
 
