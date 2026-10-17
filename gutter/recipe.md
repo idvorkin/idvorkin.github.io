@@ -44,8 +44,9 @@ just a picture:
    ("when anything disagrees with reference 1 about style, reference 1 wins").
 2. Character sheets for whoever is in **this** panel: for Larry,
    `images/larry-anchor-sheet.webp`, `images/raccoon-larry.webp`, then
-   `images/larry-claw-ref.png`; for Igor, `images/igor-anchor-sheet.webp`.
-   No sheet for a character who is not in the panel.
+   `images/larry-claw-ref.png`; for Igor, `images/igor-anchor-sheet.webp`;
+   for Gutter, `images/raccoon-gutter.webp` (charcoal fur, squint, ink apron,
+   THE BOARD). No sheet for a character who is not in the panel.
 3. Last: **the GPT reference panel for this panel's set**, named as "a FINISHED
    PANEL from this same strip… match its rendering… do NOT copy its pose,
    framing or balloon words". It was worth +6 of 42 on the canon checklist.
