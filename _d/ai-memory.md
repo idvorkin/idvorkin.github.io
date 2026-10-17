@@ -36,7 +36,7 @@ Every morning, your AI agent wakes up with no idea who you are, what it was work
 
 In the movie _50 First Dates_, Drew Barrymore's character has no long-term memory. Every morning, Adam Sandler has to re-introduce himself, re-establish the relationship, re-explain everything. It's a romantic comedy. With AI agents, it's Tuesday.
 
-Steve Yegge nails this in his [Introducing Beads](https://steve-yegge.medium.com/) series. Your agent — no matter how smart — starts every session from zero. It doesn't remember the architectural decision you made last week. It doesn't know that the last three times it tried a certain approach, it failed. It doesn't know _why_ you chose one design over another. It just sees code and docs and tries to figure it out fresh.
+Steve Yegge nails this in his [Introducing Beads](https://steve-yegge.medium.com/introducing-beads-a-coding-agent-memory-system-637d7d92514a) post. Your agent — no matter how smart — starts every session from zero. It doesn't remember the architectural decision you made last week. It doesn't know that the last three times it tried a certain approach, it failed. It doesn't know _why_ you chose one design over another. It just sees code and docs and tries to figure it out fresh.
 
 This isn't a minor inconvenience. It's the difference between having a brilliant consultant who shows up every day with amnesia, and having a colleague who actually learns.
 
@@ -66,13 +66,13 @@ My CLAUDE.md for this blog repo includes directory layouts, build commands, depl
 
 A step up from static instructions. Claude Code can write to MEMORY.md during conversations, storing observations it wants to remember: "Igor prefers Tailscale URLs over localhost," "the todo CLI only works on Mac," "always use reply_to for Telegram threading."
 
-These are small, practical corrections — the kind of thing a colleague learns through a few interactions. The agent proposes them, you approve them, and they persist across sessions. It's like the agent keeping a notebook of "things I learned about working with this person."
+These are small, practical corrections — the kind of thing a colleague learns through a few interactions. The agent writes them as it goes (Claude Code now keeps MEMORY.md as a one-line-per-entry index pointing at a file per topic), and they persist across sessions. It's like the agent keeping a notebook of "things I learned about working with this person."
 
-The limitation: MEMORY.md is a flat file. It's not queryable, it's not structured, and it grows without pruning. Eventually you hit the same problem as any unstructured note system — too much noise, not enough signal.
+The limitation: it's still just files. It's not queryable, it's not structured, and it grows without pruning — and only the first chunk of the index gets loaded, so once it passes the size cap the newest lessons silently fall off the end. Eventually you hit the same problem as any unstructured note system — too much noise, not enough signal.
 
 ### Beads Memories — Cross-Session Persistent Knowledge
 
-[Beads](https://github.com/steveyegge/beads), Steve Yegge's issue tracker built for AI agents (20K GitHub stars, built in 6 days with Claude), adds a dedicated memory layer via `bd remember`. These are explicit, persistent memories that survive across sessions and can be queried:
+[Beads](https://github.com/gastownhall/beads), Steve Yegge's issue tracker built for AI agents (~28K GitHub stars as of October 2026, first version built in 6 days with Claude), adds a dedicated memory layer via `bd remember`. These are explicit, persistent memories that survive across sessions and can be queried:
 
 ```bash
 bd remember "Auth service requires warm-up on cold start — always add 5s delay in tests"
@@ -111,7 +111,7 @@ This addresses the core memory problem: agents don't just need to remember _fact
 
 I run Larry as a persistent [claw](/claw) — an AI life coach that processes my daily journals, tracks patterns across weeks, and helps me stay accountable. The memory problem hits me constantly:
 
-**Journal processing**: Larry processes my [daily journals](/ai-journal) from Kindle Scribe handwriting. Without memory, every session starts with Larry having no idea what I wrote yesterday, what themes have been recurring, or what commitments I made. CLAUDE.md gives Larry the journal format and conventions. MEMORY.md gives Larry learned preferences ("skip re-transcription when PDFs are unchanged"). But neither gives Larry the _narrative_ — the fact that I've been struggling with the same dragon for three weeks.
+**Journal processing**: Larry processes my [daily journals](/process-journal) from Kindle Scribe handwriting. Without memory, every session starts with Larry having no idea what I wrote yesterday, what themes have been recurring, or what commitments I made. CLAUDE.md gives Larry the journal format and conventions. MEMORY.md gives Larry learned preferences ("skip re-transcription when PDFs are unchanged"). But neither gives Larry the _narrative_ — the fact that I've been struggling with the same dragon for three weeks.
 
 **Weekly reports**: My week reports score life domains on a 5-point scale. A memoryless agent treats each week in isolation. With memory, Larry can say "your health score dropped from 4 to 2 over the last month — what changed?" That requires cross-session memory that connects data points over time.
 
