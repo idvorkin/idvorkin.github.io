@@ -1,5 +1,18 @@
 [
   {
+    "num": 14,
+    "title": "Quick Question",
+    "date": "October 18, 2026",
+    "img": "/images/den/den-014.webp",
+    "alt": "The Den #14: Quick Question — four panels in the plush-render house style, all in the lamp-lit attic den. 1: Bedtime. Igor, a raccoon in rainbow glasses, a green TECHNOLOGIST tee, striped pajama shorts and one blue and one yellow croc, a pillow under one arm, hands over a long checklist of empty boxes: 'TWENTY THINGS, DONE BY MORNING. GOT IT?' Larry — the grey-bearded raccoon in wire-rim spectacles and a tweed waistcoat, one arm ending in a giant red lobster claw — takes the end of it: 'YES. FOR SURE.' 2: Night, moonlight through the attic window. Igor is fast asleep in a little quilted bed in the corner, eyes closed behind his glasses, Zs rising. Larry stands frozen mid-word with one finger raised, his pencil hanging in mid-air, the checklist untouched on the desk and two small blue robots sitting idle: 'QUICK QUESTION BEFORE I START...' 3: Morning sun. Igor, hair rumpled, phone in paw: 'HOW MUCH DID YOU GET DONE?' Larry is still frozen in the same pose, a cobweb now stretched from his raised claw to the lamp, the list on the desk with every box empty. 4: Igor holds up the empty list, deadpan. Larry, paw on hip, a little indignant: 'WELL, NOTHING. YOU NEVER ANSWERED MY QUESTION.'",
+    "panels": [
+      "/images/den/den-014-p1.webp",
+      "/images/den/den-014-p2.webp",
+      "/images/den/den-014-p3.webp",
+      "/images/den/den-014-p4.webp"
+    ]
+  },
+  {
     "num": 13,
     "title": "The Longest Title",
     "date": "October 11, 2026",
