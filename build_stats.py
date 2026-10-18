@@ -276,6 +276,10 @@ def aggregate(repos: list[tuple[str, dict]]) -> dict:
             "commits": 0,
             "prs_30d": 0,
             "lines_30d": 0,
+            # per month per account: [prs, lines, commits]; per account 30d: [prs, lines]
+            # (lets the page recompute top repos for a selected period and account)
+            "m": defaultdict(lambda: defaultdict(lambda: [0, 0, 0])),
+            "d30": defaultdict(lambda: [0, 0]),
         }
         for pr in data["prs"]:
             if pr["is_bot"]:
@@ -295,9 +299,14 @@ def aggregate(repos: list[tuple[str, dict]]) -> dict:
             days[pr["mergedAt"][:10]][bucket(pr["author"])] += 1
             row["prs"] += 1
             row["lines"] += add + dele
+            rm = row["m"][pr["mergedAt"][:7]][bucket(pr["author"])]
+            rm[0] += 1
+            rm[1] += add + dele
             if pr["mergedAt"] >= cutoff_30:
                 row["prs_30d"] += 1
                 row["lines_30d"] += add + dele
+                row["d30"][bucket(pr["author"])][0] += 1
+                row["d30"][bucket(pr["author"])][1] += add + dele
         for c in data["commits"]:
             if c["oid"] in seen_oids:
                 excluded["dup_commits"] += 1
@@ -308,6 +317,7 @@ def aggregate(repos: list[tuple[str, dict]]) -> dict:
             months[c["date"][:7]][commit_bucket(c)]["commits"] += 1
             days[c["date"][:10]][commit_bucket(c)] += 1
             row["commits"] += 1
+            row["m"][c["date"][:7]][commit_bucket(c)][2] += 1
         if row["prs"] or row["commits"]:
             repo_rows.append(row)
 

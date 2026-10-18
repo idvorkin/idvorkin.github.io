@@ -328,3 +328,55 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+/* Period selection */
+.bst-hint {
+  align-self: center;
+  font-size: 12px;
+  color: var(--bst-muted);
+}
+.bst-chip {
+  border: 1px solid #fd8c73;
+  background: #fff1ec;
+  color: var(--bst-fg);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+.bst-chip:hover {
+  background: #ffe2d8;
+}
+.bst-chip-x {
+  color: var(--bst-muted);
+}
+.bst-hit {
+  fill: transparent;
+}
+.bst-bar {
+  cursor: pointer;
+  outline: none;
+}
+.bst-bar:focus-visible .bst-hit {
+  fill: rgba(9, 105, 218, 0.1);
+  stroke: var(--bst-igor);
+  stroke-width: 1.5;
+}
+.bst-chart.has-sel .bst-bar:not(.sel) rect:not(.bst-hit) {
+  opacity: 0.3;
+}
+.bst-bar.sel .bst-hit {
+  fill: rgba(253, 140, 115, 0.12);
+}
+.bst-heat rect[data-month] {
+  cursor: pointer;
+}
+.bst-heat.has-sel rect[data-month]:not(.sel) {
+  opacity: 0.35;
+}
+.bst-seg button:focus-visible,
+.bst-chip:focus-visible {
+  outline: 2px solid var(--bst-igor);
+  outline-offset: 1px;
+}
