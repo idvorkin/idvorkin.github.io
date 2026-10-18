@@ -32,7 +32,7 @@ A landing page for all my AI posts — a jumping-off point into everything I've 
 
 {%include summarize-page.html src="/ai-image" %}
 
-{%include summarize-page.html src="/ai-coder" %}
+{%include summarize-page.html src="/chop" %}
 
 {%include summarize-page.html src="/chow" %}
 

@@ -712,7 +712,7 @@ Source: ["AI is an attention hazard"](https://thoughts.hmmz.org/2026-05-31.html)
   - **Now**: Code contributions are making the same shift from pets to cattle
 - **The Prediction**: "Most development tools we've been using will completely flip in the next 10 years. Everything we've been using before is either dead or slowly dying, or will completely change the way it works."
 - **Quote**: "The system is dead, long live the factory"
-- **Connection to My Practice**: This is exactly why I use [YOLO containers](/chop#yolo-containers-safe-full-autonomy) - containers are cattle, not pets. Spin up, let AI work, throw away. Same principle applies to AI-generated code.
+- **Connection to My Practice**: This is exactly why I use [YOLO containers](/how-igor-chops#vm-setup-cattle-not-pets) - containers are cattle, not pets. Spin up, let AI work, throw away. Same principle applies to AI-generated code.
 
 #### whenwords: The Ghost Library
 
