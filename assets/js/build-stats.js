@@ -1,10 +1,11 @@
 // Build stats dashboard: renders build-stats.json (made by build_stats.py) into #build-stats.
 // Vanilla JS + hand-drawn SVG, no dependencies. Used by /build-stats and the Lavish mockup.
 //
-// Selecting a period: click (or Enter/Space on) a bar, or click a heatmap square, to
-// focus the headline, heatmap and top repos on that month (or 2-month bucket).
-// Shift-click extends the selection into a range; H1/H2 pick a half-year. The
-// selection lives in the URL hash (#m=2026-09 or #m=2026-01..2026-06).
+// Group by Month / Quarter / Half-year sets the bucket size for the charts and the
+// default headline (the current bucket, paced against the previous one of the same
+// size). Click (or Enter/Space on) a bar, or click a heatmap square, to focus the
+// headline, heatmap and top repos on that bucket; shift-click extends it into a
+// range. The selection lives in the URL hash (#m=2026-09 or #m=2026-07..2026-09).
 (function () {
   "use strict";
 
@@ -60,14 +61,34 @@
     return new Date(Date.UTC(y, m, 0)).getUTCDate();
   };
   const nowMonth = () => new Date().toISOString().slice(0, 7);
+  // Calendar buckets: span 1 = month, 3 = quarter (Q1 = Jan–Mar), 6 = half (H1/H2).
+  const GROUPS = [[1, "Month", "month"], [3, "Quarter", "quarter"], [6, "Half-year", "half"]];
+  const bucketOf = (key, span) => {
+    const [y, m] = key.split("-").map(Number);
+    const from = `${y}-${String(Math.floor((m - 1) / span) * span + 1).padStart(2, "0")}`;
+    return { from, to: addMonths(from, span - 1) };
+  };
   const acctKeys = (acct) => (acct === "all" ? ACCOUNTS.map((a) => a.key) : [acct]);
+
+  // "Q3 2026" / "H1 2026" for a calendar quarter or half, else null.
+  function bucketName(sel, yearDigits) {
+    const [fy, fm] = sel.from.split("-").map(Number);
+    const [ty, tm] = sel.to.split("-").map(Number);
+    const y = String(fy).slice(-yearDigits);
+    if (fy !== ty) return null;
+    if (tm - fm === 2 && fm % 3 === 1) return `Q${(fm + 2) / 3} ${y}`;
+    if (tm - fm === 5 && fm % 6 === 1) return `H${(fm + 5) / 6} ${y}`;
+    return null;
+  }
+  // Short label for chart axes and "vs …": "Oct 26", "Q3 26", "H1 26".
+  const shortLabel = (sel) => (sel.from === sel.to ? monthLabel(sel.from) : bucketName(sel, 2));
 
   function selLabel(sel) {
     if (sel.from === sel.to) return longMonth(sel.from);
+    const named = bucketName(sel, 4);
+    if (named) return named;
     const [fy, fm] = sel.from.split("-").map(Number);
     const [ty, tm] = sel.to.split("-").map(Number);
-    if (fy === ty && fm === 1 && tm === 6) return `H1 ${fy}`;
-    if (fy === ty && fm === 7 && tm === 12) return `H2 ${fy}`;
     return fy === ty
       ? `${MONTHS[fm - 1]}–${MONTHS[tm - 1]} ${fy}`
       : `${longMonth(sel.from)} – ${longMonth(sel.to)}`;
@@ -82,7 +103,9 @@
     let [from, to] = [m[1], m[2] || m[1]];
     if (from > to) [from, to] = [to, from];
     if (to < first || from > last) return null;
-    return { from: from < first ? first : from, to: to > last ? last : to };
+    // The current quarter/half runs past the last month of data; allow up to year end.
+    const end = `${last.slice(0, 4)}-12`;
+    return { from: from < first ? first : from, to: to > end ? end : to };
   }
   function writeHash(sel) {
     const h = sel ? `#m=${sel.from}${sel.to !== sel.from ? ".." + sel.to : ""}` : "";
@@ -120,21 +143,28 @@
     return { total, active };
   }
 
-  // Monthly rows -> periods (1 or 2 months each), each carrying per-account sums.
+  // First month on screen: the range's first month, pulled back to its bucket start so
+  // the oldest bar is a whole quarter/half rather than a stub.
+  function rangeStart(data, span, range) {
+    const rows = range === "all" ? data.months : data.months.slice(-Number(range));
+    return bucketOf(rows[0].month, span).from;
+  }
+
+  // Monthly rows -> calendar buckets of `span` months, each carrying per-account sums.
+  // p.from/p.to are the full bucket bounds (the current one may end in the future);
+  // p.months are the months that have data.
   function periods(data, span, range) {
-    let rows = data.months;
-    if (range !== "all") rows = rows.slice(-Number(range));
+    const start = rangeStart(data, span, range);
     const out = [];
-    for (const r of rows) {
-      const [y, m] = r.month.split("-").map(Number);
-      const key = span === 2 ? `${y}-${Math.floor((m - 1) / 2)}` : r.month;
+    for (const r of data.months) {
+      if (r.month < start) continue;
+      const b = bucketOf(r.month, span);
       let p = out[out.length - 1];
-      if (!p || p.key !== key) {
-        p = { key, label: monthLabel(r.month), months: [] };
+      if (!p || p.from !== b.from) {
+        p = { ...b, label: shortLabel(b), months: [] };
         for (const a of ACCOUNTS) p[a.key] = zeroRow();
         out.push(p);
       }
-      if (span === 2 && p.months.length === 1) p.label += "–" + MONTHS[m - 1];
       p.months.push(r.month);
       for (const a of ACCOUNTS) for (const f of FIELDS) p[a.key][f] += (r[a.key] || {})[f] || 0;
     }
@@ -154,25 +184,30 @@
   function headline(data, state) {
     const rows = data.months;
     const first = rows[0].month;
-    const sel = state.sel || { from: rows[rows.length - 1].month, to: rows[rows.length - 1].month };
+    const unit = GROUPS.find((g) => g[0] === state.span)[2];
+    // No selection: the bucket (month/quarter/half) holding the latest data.
+    const sel = state.sel || bucketOf(rows[rows.length - 1].month, state.span);
     const months = monthSpan(sel.from, sel.to);
     const n = months.length;
-    const prevMonths = monthSpan(addMonths(sel.from, -n), addMonths(sel.from, -1)).filter((m) => m >= first);
+    // Compare against the bucket of the same size just before it.
+    const prev = { from: addMonths(sel.from, -n), to: addMonths(sel.from, -1) };
+    const prevMonths = monthSpan(prev.from, prev.to);
     const c = sumMonths(data, months, state.acct);
-    const p = prevMonths.length === n ? sumMonths(data, prevMonths, state.acct) : null;
-    // Pace a selection that ends in the (partial) current month to its full length.
-    const isCurrent = sel.to === nowMonth();
+    const p = prev.from >= first ? sumMonths(data, prevMonths, state.acct) : null;
+    // Pace a selection that contains today (a partial month/quarter/half) to its full length.
+    const now = nowMonth();
+    const isCurrent = sel.from <= now && now <= sel.to;
     const totalDays = months.reduce((t, m) => t + daysInMonth(m), 0);
-    const elapsed = totalDays - daysInMonth(sel.to) + new Date().getUTCDate();
+    const elapsed = months.filter((m) => m < now).reduce((t, m) => t + daysInMonth(m), 0) + new Date().getUTCDate();
     const pace = isCurrent ? totalDays / elapsed : 1;
-    const vs = n === 1 ? monthLabel(prevMonths[0] || first) : "prior " + n + " mo";
+    const vs = shortLabel(prev) || "prior " + n + " mo";
     const delta = (f) => (p && p[f] ? { pct: Math.round(((c[f] * pace) / p[f] - 1) * 100), vs, paced: isCurrent } : null);
     const curContrib = contributions(data, months, state.acct);
     const prevContrib = p ? contributions(data, prevMonths, state.acct) : null;
     const aiPrs = sumMonths(data, months, "idvorkin-ai-tools").prs;
     const allPrs = sumMonths(data, months, "all").prs;
     const aiShare = allPrs ? Math.round((aiPrs / allPrs) * 100) : 0;
-    const heroK = state.sel ? selLabel(state.sel) : `${monthLabel(sel.from)}${isCurrent ? " so far" : ""}`;
+    const heroK = `${selLabel(sel)}${isCurrent ? " so far" : ""}`;
 
     let tiles;
     if (state.sel) {
@@ -183,12 +218,12 @@
         tile("−" + fmt(c.deletions), "lines deleted", delta("deletions"), full(c.deletions)),
         tile(full(c.commits), "commits", delta("commits")),
         tile(full(curContrib.total), "contributions", cd),
-        tile(`${curContrib.active}/${totalDays}`, "active days"),
+        tile(`${curContrib.active}/${isCurrent ? elapsed : totalDays}`, "active days"),
       ];
     } else {
       const all = sumMonths(data, rows.map((r) => r.month), state.acct);
       tiles = [
-        tile(full(c.prs), "PRs this month", delta("prs")),
+        tile(full(c.prs), `PRs this ${unit}`, delta("prs")),
         tile("+" + fmt(c.additions), "lines added", delta("additions"), full(c.additions)),
         tile("−" + fmt(c.deletions), "lines deleted", delta("deletions"), full(c.deletions)),
         tile(full(c.commits), "commits", delta("commits")),
@@ -206,7 +241,7 @@
           " lines changed",
         ]),
         state.acct === "all" && allPrs
-          ? el("div", { class: "bst-hero-s", text: `${aiShare}% of ${state.sel ? "these" : "this month's"} PRs came from the agent account` })
+          ? el("div", { class: "bst-hero-s", text: `${aiShare}% of ${state.sel ? "these" : `this ${unit}'s`} PRs came from the agent account` })
           : null,
       ]),
       el("div", { class: "bst-tiles" }, tiles),
@@ -255,8 +290,8 @@
           x, y, width: cell, height: cell, rx: 2,
           class: `bst-l${level(c.n)}${on ? " sel" : ""}`,
           "data-month": month,
-          onclick: (e) => pick([month], e.shiftKey),
-        }, [el("title", { text: `${c.n} contribution${c.n === 1 ? "" : "s"} on ${c.key} · click to show ${longMonth(month)}` })])
+          onclick: (e) => pick(bucketOf(month, state.span), e.shiftKey),
+        }, [el("title", { text: `${c.n} contribution${c.n === 1 ? "" : "s"} on ${c.key} · click to show ${selLabel(bucketOf(month, state.span))}` })])
       );
     });
     ["Mon", "Wed", "Fri"].forEach((d, i) =>
@@ -269,7 +304,7 @@
       el("h3", { class: "bst-h", text: `${full(total)} contributions in the last year` }),
       wrap,
       el("div", { class: "bst-heat-foot" }, [
-        el("span", { class: "bst-muted", text: "Contribution = a merged PR or a default-branch commit. Click a square to show its month." }),
+        el("span", { class: "bst-muted", text: "Contribution = a merged PR or a default-branch commit. Click a square to show its period." }),
         el("div", { class: "bst-legend" }, ["Less", ...[0, 1, 2, 3, 4].map((l) => el("span", { class: `bst-sw bst-l${l}` })), "More"]),
       ]),
     ]);
@@ -311,7 +346,7 @@
       "aria-pressed": String(on),
       "aria-label": `${title}. Press Enter to show this period.`,
       "data-months": p.months.join(","),
-      onclick: (e) => pick(p.months, e.shiftKey),
+      onclick: (e) => pick(p, e.shiftKey),
     }, [el("title", { text: title }), ...kids]);
   }
   function chartSvg(W, H, label, sel) {
@@ -345,7 +380,7 @@
       const tip = `${p.label}: ${full(totals[i])} ${title.toLowerCase()}` + (accts.length > 1 ? " (" + accts.map((a) => `${a.label} ${full(p[a.key][field])}`).join(", ") + ")" : "");
       svg.append(barGroup(ps, i, state, pick, tip, kids));
       if (i % every === 0)
-        svg.append(el("text", { x: x + bw / 2, y: H - 6, class: "bst-axis", "text-anchor": "middle", text: p.label.split("–")[0] }));
+        svg.append(el("text", { x: x + bw / 2, y: H - 6, class: "bst-axis", "text-anchor": "middle", text: p.label }));
     });
     return el("section", { class: "bst-card" }, [el("h3", { class: "bst-h", text: title }), svg]);
   }
@@ -372,7 +407,7 @@
         el("rect", { x: x + bw * 0.15, width: w, y: mid, height: hd, class: "bst-del", rx: 1.5 }),
       ]));
       if (i % every === 0)
-        svg.append(el("text", { x: x + bw / 2, y: H - 4, class: "bst-axis", "text-anchor": "middle", text: ps[i].label.split("–")[0] }));
+        svg.append(el("text", { x: x + bw / 2, y: H - 4, class: "bst-axis", "text-anchor": "middle", text: ps[i].label }));
     });
     return el("section", { class: "bst-card" }, [
       el("h3", { class: "bst-h" }, ["Lines changed ", el("span", { class: "bst-key bst-add-t", text: "+ added" }), " ", el("span", { class: "bst-key bst-del-t", text: "− deleted" })]),
@@ -450,22 +485,12 @@
   }
 
   // ---- controls ------------------------------------------------------------------
-  function seg(name, options, value, onPick) {
-    return el("div", { class: "bst-seg", role: "group", "aria-label": name },
-      options.map(([v, label, isOn]) => {
-        const on = isOn !== undefined ? isOn : v === value;
-        return el("button", { type: "button", class: on ? "on" : "", "aria-pressed": String(on), "data-ctl": `${name}:${v}`, onclick: () => onPick(v), text: label });
-      })
-    );
-  }
-  function halves(data) {
-    // H1/H2 of the latest year with data in each half.
-    const last = data.months[data.months.length - 1].month;
-    const y = Number(last.slice(0, 4));
-    const h1 = { from: `${y}-01`, to: `${y}-06` };
-    const h2 = last >= `${y}-07` ? { from: `${y}-07`, to: `${y}-12` } : { from: `${y - 1}-07`, to: `${y - 1}-12` };
-    const clamp = (s) => ({ from: s.from < data.months[0].month ? data.months[0].month : s.from, to: s.to > last ? last : s.to });
-    return [clamp(h1), clamp(h2)];
+  // A labelled native <select>: compact, and the phone's own picker on iOS.
+  function picker(label, ctl, options, value, onChange) {
+    const select = el("select", { class: "bst-select", "data-ctl": ctl, onchange: (e) => onChange(e.target.value) },
+      options.map(([v, text]) => el("option", { value: v, text })));
+    select.value = String(value);
+    return el("label", { class: "bst-field" }, [el("span", { class: "bst-field-l", text: label }), select]);
   }
 
   function render(root, data, state) {
@@ -473,15 +498,12 @@
     const setSel = (sel) => {
       state.sel = sel;
       // Make sure a selection is on screen: widen the range if it starts earlier.
-      if (sel && state.range !== "all") {
-        const visible = data.months.slice(-Number(state.range))[0].month;
-        if (sel.from < visible) state.range = "all";
-      }
+      if (sel && state.range !== "all" && sel.from < rangeStart(data, state.span, state.range)) state.range = "all";
       writeHash(sel);
       draw();
     };
-    const pick = (months, extend) => {
-      const s = { from: months[0], to: months[months.length - 1] };
+    const pick = (b, extend) => {
+      const s = { from: b.from, to: b.to };
       if (extend && state.sel) {
         setSel({ from: s.from < state.sel.from ? s.from : state.sel.from, to: s.to > state.sel.to ? s.to : state.sel.to });
       } else if (state.sel && state.sel.from === s.from && state.sel.to === s.to) {
@@ -490,24 +512,22 @@
         setSel(s);
       }
     };
-    const [h1, h2] = halves(data);
-    const same = (a, b) => !!a && !!b && a.from === b.from && a.to === b.to;
     const ps = periods(data, state.span, state.range);
     const active = document.activeElement;
     const refocus = active && root.contains(active) && active.dataset ? active.dataset.months || active.dataset.ctl : null;
 
     root.replaceChildren(
       el("div", { class: "bst-controls" }, [
-        seg("Account", [["all", "All accounts"], ...ACCOUNTS.slice(0, 2).map((a) => [a.key, a.label])], state.acct, (v) => ((state.acct = v), draw())),
-        seg("Bucket", [[1, "Monthly"], [2, "2-month"]], state.span, (v) => ((state.span = v), draw())),
-        seg("Range", [["12", "12 mo"], ["24", "24 mo"], ["all", "All"]], state.range, (v) => ((state.range = v), draw())),
-        seg("Half year", [
-          ["h1", `H1 ${h1.from.slice(2, 4)}`, same(state.sel, h1)],
-          ["h2", `H2 ${h2.from.slice(2, 4)}`, same(state.sel, h2)],
-        ], null, (v) => {
-          const h = v === "h1" ? h1 : h2;
-          setSel(same(state.sel, h) ? null : h);
-        }),
+        el("div", { class: "bst-fields" }, [
+          picker("Group by", "group", GROUPS.map(([v, label]) => [v, label]), state.span, (v) => {
+            state.span = Number(v);
+            // Keep a selection, widened to whole buckets of the new size.
+            if (state.sel) setSel({ from: bucketOf(state.sel.from, state.span).from, to: bucketOf(state.sel.to, state.span).to });
+            else draw();
+          }),
+          picker("Range", "range", [["12", "Last 12 mo"], ["24", "Last 24 mo"], ["all", "All time"]], state.range, (v) => ((state.range = v), draw())),
+          picker("Account", "acct", [["all", "All"], ...ACCOUNTS.slice(0, 2).map((a) => [a.key, a.label])], state.acct, (v) => ((state.acct = v), draw())),
+        ]),
         state.sel
           ? el("button", { type: "button", class: "bst-chip", "data-ctl": "chip", "aria-label": `Showing ${selLabel(state.sel)}. Reset to the default view.`, onclick: () => setSel(null) }, [
               "Showing: ", el("strong", { text: selLabel(state.sel) }), el("span", { class: "bst-chip-x", text: " · reset ✕" }),
@@ -539,7 +559,7 @@
     const state = { acct: "all", span: 1, range: "24", sel: null };
     const fromHash = () => {
       state.sel = readHash(data);
-      if (state.sel && state.range !== "all" && state.sel.from < data.months.slice(-Number(state.range))[0].month) state.range = "all";
+      if (state.sel && state.range !== "all" && state.sel.from < rangeStart(data, state.span, state.range)) state.range = "all";
     };
     fromHash();
     window.addEventListener("hashchange", () => (fromHash(), render(root, data, state)));
