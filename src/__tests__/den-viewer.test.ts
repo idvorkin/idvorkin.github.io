@@ -33,6 +33,13 @@ const manifest: DenStripEntry[] = [
       "/images/den/den-006-p4.webp",
     ],
   },
+  {
+    num: "wisdoms",
+    title: "12 Japanese Wisdoms",
+    label: "12 Japanese Wisdoms",
+    panels: ["/images/w/ikigai.webp", "/images/w/kaizen.webp", "/images/w/shoshin.webp"],
+    captions: ["1. Ikigai — a reason to get up", "2. Kaizen — small steps, every day", "3. Shoshin — beginner's mind"],
+  },
 ];
 
 function stripMarkup(num: number): string {
@@ -50,6 +57,7 @@ function installMarkup(): void {
   document.body.innerHTML = `
     ${stripMarkup(7)}
     ${stripMarkup(6)}
+    <img id="section-kaizen" src="/images/w/kaizen.webp" alt="" data-den-open="wisdoms" data-den-panel="2" />
     <div class="den-lightbox" id="den-lightbox" role="dialog" hidden>
       <div class="den-lightbox__dialog">
         <div class="den-lightbox__title"></div>
@@ -156,5 +164,50 @@ describe("DenViewerManager", () => {
     expect(document.querySelector<HTMLAnchorElement>(".den-lightbox__receipts")?.href).toBe(
       "https://gist.github.com/idvorkin-ai-tools/strip-7",
     );
+  });
+
+  it("opens a captioned panel set from an image outside any strip and stops at its last panel", () => {
+    const manager = new DenViewerManager(document, window);
+    manager.initialize();
+    const opener = element<HTMLImageElement>("#section-kaizen");
+    expect(opener.getAttribute("role")).toBe("button");
+    opener.click();
+
+    const title = () => document.querySelector(".den-lightbox__title")?.textContent;
+    const counter = () => document.querySelector(".den-lightbox__counter")?.textContent;
+    expect(title()).toBe("2. Kaizen — small steps, every day");
+    expect(counter()).toBe("panel 2 of 3");
+    expect(document.querySelectorAll(".den-lightbox__dot")).toHaveLength(3);
+    expect(document.querySelector(".den-lightbox__dot--all")).toBeNull();
+    expect(document.querySelector(".den-lightbox__receipts")?.hasAttribute("hidden")).toBe(true);
+
+    const next = element<HTMLButtonElement>(".den-lightbox__next");
+    next.click();
+    next.click();
+    expect(title()).toBe("3. Shoshin — beginner's mind");
+    expect(next.disabled).toBe(true);
+    expect(document.querySelector<HTMLImageElement>('.den-lightbox__image[data-den-current="true"]')?.alt).toBe(
+      "12 Japanese Wisdoms: 3. Shoshin — beginner's mind",
+    );
+  });
+
+  it("rebuilds the dots when switching from a panel set back to a strip", () => {
+    const manager = new DenViewerManager(document, window);
+    manager.initialize();
+    element<HTMLImageElement>("#section-kaizen").click();
+    element<HTMLButtonElement>(".den-lightbox__close").click();
+    vi.runAllTimers();
+
+    element<HTMLButtonElement>('[data-num="6"] [data-den-panel="1"]').click();
+    expect(document.querySelectorAll(".den-lightbox__dot")).toHaveLength(5);
+    expect(document.querySelector(".den-lightbox__title")?.textContent).toBe("#6 — Do a Russian Accent");
+  });
+
+  it("opens a non-button opener from the keyboard", () => {
+    const manager = new DenViewerManager(document, window);
+    manager.initialize();
+    element<HTMLImageElement>("#section-kaizen").dispatchEvent(new KeyboardEvent("keydown", { key: "Enter" }));
+    expect(document.getElementById("den-lightbox")?.hidden).toBe(false);
+    expect(document.querySelector(".den-lightbox__counter")?.textContent).toBe("panel 2 of 3");
   });
 });
