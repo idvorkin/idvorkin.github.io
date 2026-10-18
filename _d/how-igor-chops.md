@@ -3,6 +3,7 @@ layout: post
 title: "Mumbling on My Couch: My CHOP Setup"
 permalink: /how-igor-chops
 imagefeature: https://raw.githubusercontent.com/idvorkin/ipaste/main/20260101_100048.webp
+mermaid: true
 tags:
   - ai
   - tools
@@ -15,9 +16,11 @@ redirect_from:
   - /vibe-coding
 ---
 
-I mumble to Claude on my couch while my family wonders who I'm talking to. I vibe code in the car while my son drives. I rent the most expensive brain I can get. This is my CHOP (Chat-Oriented Programming) setup: the infrastructure, the tools, and what I've learned.
+I mumble to Claude on my couch while my family wonders who I'm talking to. I vibe code in the car while my son drives. I rent the most expensive brain I can get. This is my CHOP (Chat-Oriented Programming) setup: the models, the tools, the machines, and what I've learned. The ideas behind it are in [The CHOP Shop](/chop); how it got this way is in [The CHOP Shop, 2024 to 2026](/chop-history).
 
 {% include image_float_right.html src="https://raw.githubusercontent.com/idvorkin/ipaste/main/20260101_100048.webp" %}
+
+{% include ai-slop.html percent="50" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -25,14 +28,17 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
 - [The Brain I Rent](#the-brain-i-rent)
   - [The Most Expensive I Can Get](#the-most-expensive-i-can-get)
   - [Why Not Codex, Gemini, etc.?](#why-not-codex-gemini-etc)
-  - [When I Need Speed: Groq](#when-i-need-speed-groq)
+  - [The Tiers I Delegate To](#the-tiers-i-delegate-to)
+  - [When I Need Speed](#when-i-need-speed)
   - [When Models Get Smarter](#when-models-get-smarter)
 - [Tools of the Trade](#tools-of-the-trade)
   - [The Past: Cursor](#the-past-cursor)
   - [The Present: Claude Code](#the-present-claude-code)
   - [The Upgrade: Herdr](#the-upgrade-herdr)
-  - [The Future: Multi-Agent Dashboard](#the-future-multi-agent-dashboard)
+  - [Codex, Muse and Grok Through Herdr](#codex-muse-and-grok-through-herdr)
+  - [The Dashboard That Arrived](#the-dashboard-that-arrived)
   - [The 8 Stages of AI Coding](#the-8-stages-of-ai-coding)
+- [Voice: How I Talk to the Agents](#voice-how-i-talk-to-the-agents)
 - [Notes from the Trenches](#notes-from-the-trenches)
   - [What Works Well - REVIEW THIS WEEKLY!](#what-works-well---review-this-weekly)
   - [What I'm Still Figuring Out](#what-im-still-figuring-out)
@@ -47,14 +53,15 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
 - [Making AI Work My Way](#making-ai-work-my-way)
   - [The chop-conventions Repo](#the-chop-conventions-repo)
   - [CLAUDE.md Structure](#claudemd-structure)
+  - [Beads for Every Task](#beads-for-every-task)
   - [MCP Servers and Skills](#mcp-servers-and-skills)
 - [My Projects](#my-projects)
-  - [Command Line and PWAs](#command-line-and-pwas)
+  - [Command Line, PWAs, and Now Apps](#command-line-pwas-and-now-apps)
   - [Testing and Evals](#testing-and-evals)
 - [The Server Behind the Curtain](#the-server-behind-the-curtain)
   - [Why Not Cloud Environments?](#why-not-cloud-environments)
   - [Hardware Setup](#hardware-setup)
-  - [Container Setup](#container-setup)
+  - [VM Setup: Cattle, Not Pets](#vm-setup-cattle-not-pets)
   - [Network Setup](#network-setup)
 - [A Typical CHOP Session](#a-typical-chop-session)
 - [Appendix: Origin of a Tool Nerd](#appendix-origin-of-a-tool-nerd)
@@ -64,6 +71,7 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
 - [Appendix: Who I Follow](#appendix-who-i-follow)
   - [Simon Willison](#simon-willison)
   - [Steve Yegge](#steve-yegge)
+  - [Kun Chen](#kun-chen)
   - [Twitter](#twitter)
 - [Appendix: The Long View](#appendix-the-long-view)
   - [What Management Taught Me About AI](#what-management-taught-me-about-ai)
@@ -89,23 +97,29 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
 
 ### The Most Expensive I Can Get
 
-Currently I'm using Claude Opus 4.5 on the \$200/month plan.
+The main seat is Claude Code with the best Claude model I can get. When I wrote this page it was Opus 4.5 on one \$200/month plan. Today it's Opus 5.5 in the main seat, which [brought the joy back](/interaction-model) after a stint with Opus 5 that answered like a ticket system, and Fable 5.1 when the problem is the complicated kind.
 
-On one hand you might think I'm crazy spending \$2,400 a year. On the other hand, imagine having brilliant collaborators who force multiply everything you do, train you up, and basically give you a PhD in whatever you're working on.
+The one plan stopped being enough. The expensive model has its own weekly limit inside the plan, and it runs out first, so I pay for Claude, Codex, and Grok, plus API keys for everything else. On one hand you might think I'm crazy spending that much. On the other hand, imagine having brilliant collaborators who force multiply everything you do, train you up, and basically give you a PhD in whatever you're working on. Which subscription pays for which job is its own post: [How I Manage AI Tokens](/token-management).
 
 ### Why Not Codex, Gemini, etc.?
 
 In November 2025, Gemini came out and I was like "Oh my god, I've got to try this, this is awesome." Then the new Codex came out three days later and I was like "Oh my god, I've got to try this, this is awesome." Then Opus 4.5 came out and I was like "Oh my god, I've got to try this, this is awesome."
 
-Then I realized: all I'm doing is spinning between tools that keep leapfrogging each other. I decided to standardize on Claude Code and assume it'll catch up quickly if it ever falls behind.
+Then I realized: all I'm doing is spinning between tools that keep leapfrogging each other. I decided to standardize on Claude Code as home and assume it'll catch up quickly if it ever falls behind.
 
-The one gap: Claude Code can't generate images. I use ChatGPT for that, currently manually. (Note to self: I should write a script to generate images via the API.)
+That's still the answer, with one change: the others didn't go away, they became sub-agents. Codex and Muse run [through Herdr](#codex-muse-and-grok-through-herdr) on work I can specify tightly; Grok gets anything about X or current events. The review gate on this blog tries Grok first, then Codex, then Claude, because the Claude quota is usually the tight one. The image gap I complained about closed too: a `gen-image` skill draws through OpenRouter, with Meta's Muse Image as the default.
 
-### When I Need Speed: Groq
+### The Tiers I Delegate To
 
-Sometimes I need really low latency. For those cases I run models served off [Groq](https://groq.com/). They can get down to ~100ms response times, which is pretty awesome for interactive use cases.
+When the main session hands work to a background agent, the model is picked by the shape of the task: the strongest model (Fable) for the complicated or ambiguous, Opus for a well-specified build, Sonnet for the mechanical, and never the smallest tier. A build by one model gets a review pass by a different one before it lands. Every background agent gets its own git worktree; two agents sharing a checkout collide.
 
-(A terminology nit: "Claude" and "ChatGPT" are products, not models. The actual models are Opus, Haiku, GPT-4o, Llama - with version numbers. Groq is an inference provider. Everyone, including me, uses these terms loosely.)
+### When I Need Speed
+
+Sometimes I need really low latency: an interactive loop where a two-second think is too slow. The fast open models serve at a few hundred tokens a second, and I measured what that speed costs in [Fast Tokens, Wrong Answers](/ai-speed-vs-thinking): on one graded puzzle, turning the thinking dial up did not predict a correct answer. For latency-bound work I reach for a fast model and keep the task small.
+
+<!-- TODO(Igor): the page used to say the fast path was Groq. I could not confirm Groq is still in use from the repos (only a Cerebras key and the fast-models post). Name the current provider or leave it generic. -->
+
+(A terminology nit: "Claude" and "ChatGPT" are products, not models. The actual models are Opus, Haiku, GPT, Llama, with version numbers. Everyone, including me, uses these terms loosely.)
 
 ### When Models Get Smarter
 
@@ -119,11 +133,11 @@ Given history, I imagine there will be more OOMs. But honestly, even if there ar
 
 ### The Past: Cursor
 
-It's crazy [how fast AI evolves](https://idvorkin-how-long-since-ai.surge.sh/?show=tool). In 2024, [Cursor was the hot new thing](/chop#cursor-from-amazing-tab-completion-to-the-best-agent). It was really about super-powered tab completion - you'd type a bit and it would complete intelligently. That model is already long gone.
+It's crazy [how fast AI evolves](https://idvorkin-how-long-since-ai.surge.sh/?show=tool). In 2024, Cursor was the hot new thing: super-powered tab completion, then the first agent I let run my tests. That model is already long gone. The Cursor years, Aider, Avante, and the chat logs I used to commit next to the code are in [The CHOP Shop, 2024 to 2026](/chop-history).
 
 ### The Present: Claude Code
 
-Claude Code is really about autonomous agents that run in your terminal. As a terminal guy, I can speak to why this is so awesome - it fits my workflow perfectly. The agent runs commands, edits files, and iterates without me micromanaging every step.
+Claude Code is really about autonomous agents that run in your terminal. As a terminal guy, I can speak to why this is so awesome - it fits my workflow perfectly. The agent runs commands, edits files, and iterates without me micromanaging every step. Every convention I keep is written for it.
 
 ### The Upgrade: Herdr
 
@@ -133,9 +147,13 @@ Here's my actual herd. Spaces tree top-left, agent states below it (spinners are
 
 ![Herdr running nine workspaces: the spaces tree and agent-state panel on the left, a live Claude Code session working in the main pane](/images/herdr-herd.webp)
 
-### The Future: Multi-Agent Dashboard
+### Codex, Muse and Grok Through Herdr
 
-I was surprised when Steve Yegge mentioned this is the future - orchestrating multiple specialized agents. Surprised because I'd been accidentally building toward this. The [Agent Dashboard](#the-future-multi-agent-dashboard) I mentioned earlier? By the way, I didn't build that at all. I just gave the requirements and Claude built it itself.
+Because Herdr has a socket API, my main Claude session can open a tab, start a Codex or [Muse](/claw#muse-a-claw-a-grandma-can-use) agent in it, hand over a brief, and wait for the result, which makes the other vendors' agents sub-agents of mine instead of competitors for my attention. The brief is a bead in the target repo, the worktree comes from a pool, and the commit is attributed to the agent that wrote it. The recipe is the [muse-herdr](https://github.com/idvorkin/chop-conventions/tree/main/skills/muse-herdr) skill; the [herdr](https://github.com/idvorkin/chop-conventions/tree/main/skills/herdr) skill drives the multiplexer itself.
+
+### The Dashboard That Arrived
+
+When I wrote this page I called the multi-agent dashboard "the future," and was surprised Steve Yegge was saying the same thing, because I'd been accidentally building toward it. It arrived in three pieces: [the AI Cockpit](/ai-cockpit), my control surface for watching slow parallel agents; [the Cockpit Larry built for me](/larry-cockpit), where a non-coding agent takes my decisions out of a chat scroll; and [Gas City](/gas-city), where the orchestration lives in the city rather than in my head. I didn't build the first dashboard at all. I gave the requirements and Claude built it.
 
 ### The 8 Stages of AI Coding
 
@@ -151,7 +169,7 @@ This diagram perfectly captures the evolution I've lived through. Let me break d
 
 1. **Approval-Based Agent (Y/N?)** - AI suggests changes, but stops to ask permission for each action. This is where Cursor started - tab completion evolved into "should I run this test?"
 
-1. **YOLO Mode** - The turning point. AI can execute commands, make commits, run tests without asking each time. This is what [YOLO Containers](/chop#yolo-containers-safe-full-autonomy) enable safely.
+1. **YOLO Mode** - The turning point. AI can execute commands, make commits, run tests without asking each time. This is what [disposable VMs](#vm-setup-cattle-not-pets) enable safely.
 
 1. **Full Autonomy** - AI doesn't just execute commands - it plans multi-step workflows and handles the entire development cycle. This is where Claude Code shines today.
 
@@ -163,9 +181,15 @@ This diagram perfectly captures the evolution I've lived through. Let me break d
 
 1. **Specialized Tools** - Different agents have different capabilities. One handles tests, another docs, another deployment. You're orchestrating specialists, not generalists. The [optimal number of agents](#what-im-still-figuring-out) becomes critical.
 
-1. **Orchestrated System** - This is the vision: a central dashboard managing dozens of specialized agents. The [Agent Dashboard](#the-future-multi-agent-dashboard) is an early step toward this. You're no longer coordinating individual agents - you're managing the system that coordinates them. I drew the bricks that system is made of in [AI Orchestrators](/ai-orchestrator).
+1. **Orchestrated System** - This is the vision: a central dashboard managing dozens of specialized agents. You're no longer coordinating individual agents - you're managing the system that coordinates them. I drew the bricks that system is made of in [AI Orchestrators](/ai-orchestrator).
 
-**Where I Am Today:** Somewhere between stages 6 and 7. The herd screenshot above is nine workspaces with four agents mid-flight - [Herdr](#the-upgrade-herdr) is what makes that supervisable. Still learning how to avoid merge hell and when to use specialized vs. generalist agents. Stage 8 is the dream, and the tooling is closer than it was.
+**Where I Am Today:** Stage 7 for the daily work, with a foot on stage 8. The herd screenshot above is nine workspaces with four agents mid-flight, supervisable because of [Herdr](#the-upgrade-herdr) and [the cockpit](/ai-cockpit). For work that's plural and carries judgment, [Gas City](/gas-city) runs the coordination; [the ladder I climbed to get there](/gas-city#the-ladder-i-climbed-to-get-here) is the same four rungs as the one in [The CHOP Shop](/chop#the-herd-one-agent-to-a-city). Merge hell is mostly gone (a worktree per agent did it); when to use a specialist versus a generalist is still a judgment call I get wrong.
+
+## Voice: How I Talk to the Agents
+
+Most of my prompts are spoken. I talk to the agents the way I'd talk to an engineer at a whiteboard: half-formed thoughts, "actually wait, try this instead," trailing off mid-sentence. Transcription quality barely matters, because the receiver is smart enough to respond to my intent instead of my mangled words. Voice is also why the couch, the treadmill, and the car are all places I code.
+
+At home it's [Wispr Flow](https://wisprflow.ai/) and a lapel mic, which turned out to matter more than the software. The write-up, including the mic and the ring I use as a remote for it, lives in the cockpit post: [Voice Input - The Primary Interface](/ai-cockpit#voice-input---the-primary-interface). Why voice changes how you think, not just how you type, is in [You Need to Use Voice](/ai-operator#you-need-to-use-voice).
 
 ## Notes from the Trenches
 
@@ -173,27 +197,31 @@ This diagram perfectly captures the evolution I've lived through. Let me break d
 
 **Note to self: Review this section regularly. These principles are easy to forget when you're heads-down in a session.**
 
-- **Rent the most expensive brain you can**: Spend tokens liberally. Don't be cheap with AI usage - the \$200/month is nothing compared to the force multiplication you get
+- **Rent the most expensive brain you can**: Spend tokens liberally. The subscriptions are nothing compared to the force multiplication you get; just [know which window is about to reset](/token-management)
 - **Maximize time between interventions**: Like Tesla's self-driving metrics, the goal is reducing how often you need to take over. Every friction point kills flow
   - **Don't be the intern doing grudge work**: If AI writes code and you manually test it, you've got the roles backwards. Make AI the tester too - be the architect, not the QA intern
   - **Tests as specification**: The clearer the tests, the less I need to intervene
-  - **Always be able to rewind**: YOLO containers and git workflows mean you can experiment fearlessly. If something breaks, spin up a fresh container in seconds
+  - **Always be able to rewind**: Disposable VMs and git workflows mean you can experiment fearlessly. If something breaks, spin up a fresh machine in seconds
   - **Conventions compound**: Time spent on CLAUDE.md pays off across every session
-- **Isolation is freedom**: YOLO containers let Claude run autonomously without risk to my real environment
+- **Isolation is freedom**: YOLO mode on a throwaway VM lets Claude run autonomously without risk to my real environment
+- **A worktree per agent, a bead per task**: the two rules that ended merge hell and lost work
 - **"Don't glaze me" changes everything**: Claude is far more useful when it pushes back on bad ideas
 - **Rot repair is nearly free**: Reviving a stale project used to mean a weekend of toolchain archaeology ([Software Rot](/d/2017-09-10-software-rot)); now an agent grinds through the upgrades for me
 
 ### What I'm Still Figuring Out
 
-- **How to handle merges**: When multiple agents touch related code, merging gets messy fast.
+Three questions from the first draft of this page have answers now:
 
-**The optimal number of agents** deserves its own callout. On one hand, the number you can run in parallel seems to be the limiting factor for throughput. On the other hand - man, it's easy to get confused. Sending the wrong commands to the wrong agents. Forgetting what each one is doing. Brutal merge conflicts when they touch the same files. It's quite the challenge, and I'm nowhere close to having it figured out.
+- **How to handle merges** when agents touch related code: a worktree per agent, pooled and pre-warmed so acquiring one is instant. The conflicts that are left are real conflicts, not artifacts of sharing a checkout.
+- **DRY vs. self-contained conventions**: wait for N=2. Don't extract a template or a shared library until two concrete instances exist; one-instance abstractions fork on day one.
+- **Tests first vs. tests after**: the gate answers it. Tests and lint run before a PR opens, and a model reads the diff against a review checklist; whether I wrote the tests first matters less than whether the gate is in the agent's loop.
 
-**Rethinking conventional coding wisdom:**
+The open ones today:
 
-- **DRY vs. self-contained**: Should conventions be shared libraries, or should every repo implement its own? When execution is cheap, maybe copy-paste isn't so bad.
-- **Planning vs. iterating**: When you can execute so quickly, is planning even worth it? Or are you better off just iterating fast?
-- **Tests first vs. tests after**: If AI can generate tests instantly, does TDD still matter? Or is "describe what you want, let AI figure out the tests" the new workflow?
+- **Quota is the real constraint.** When I'm typing I'm the rate limiter; when agents run unattended nobody is. Routing work across subscriptions by headroom is a new chore.
+- **Review cost.** Agents produce faster than I can read. Lavish boards and a second-model review pass help; I still don't have a clean answer for what I can safely skip.
+- **Agents stealing channels.** Two sessions that can both answer my Telegram will both try. The fix so far is process discipline (one session owns the bridge), which is exactly the kind of rule I'd rather the tooling enforced.
+- **The optimal number of agents**, still. Fewer than I can run, more than one, and the right number changes with the quality of the spec.
 
 ## The Control Panel - For This Human
 
@@ -245,41 +273,45 @@ Yes, I can vibe code in the car too. My 16-year-old son is learning to drive and
 
 ### The chop-conventions Repo
 
-I maintain a shared conventions repo at [idvorkin/chop-conventions](https://github.com/idvorkin/chop-conventions) that I link into projects. This gives me:
+I maintain a shared conventions repo at [idvorkin/chop-conventions](https://github.com/idvorkin/chop-conventions). It started as a file the agent cloned and read; today it's wired in rather than read:
 
-- Consistent rules across all my repos
-- Easy updates - change once, propagate everywhere
-- Version controlled evolution of my AI instructions
+- **Skills** live in the repo and are symlinked into `~/.claude/skills/`, so an edit goes through a PR once and every machine picks it up.
+- **Fragments** of the global instructions are assembled per machine class (every machine, dev VMs, the Mac) by an `up-to-date` skill that also installs the standard plugin list.
+- **Conventions** for the inner loop (clean commits, PR workflow, guardrails, repo modes) are what a new repo's `AGENTS.md` points at instead of restating.
 
-The first thing I tell Claude to do in any project: clone this repo and read the starting guide.
+Change once, propagate everywhere, version controlled. The first thing an agent does in any of my repos is read that repo's `AGENTS.md`, which tells it where the rest is.
 
 ### CLAUDE.md Structure
 
-My CLAUDE.md files follow a pattern: foundational rules (honesty, call out bad ideas), guardrails (no pushing to main, no removing tests), relationship framing (we're colleagues, push back when I'm wrong), and project-specific guidance.
+Every repo has one `AGENTS.md`; `CLAUDE.md` is a symlink to it, so every agent reads the same file. The pattern inside: foundational rules (honesty, call out bad ideas), guardrails (no pushing to main, no removing tests), relationship framing (we're colleagues, push back when I'm wrong), and project-specific guidance. The global file is the same idea in layers: rules I want everywhere, rules for this class of machine, rules for this one box.
 
-The theory: tell Claude _how to think_, not just _what to do_. Whether "don't glaze me" actually shapes behavior across sessions? I genuinely don't know.
+The theory: tell Claude _how to think_, not just _what to do_. "Don't glaze me." Before writing code, climb the laziness ladder: does it need to exist, is it already in the codebase, is it in the standard library, is it one line? Whether that actually shapes behavior across sessions? I genuinely don't know. What I do know is that the file writes itself now: a `learn-from-session` pass at the end of a long session extracts the lessons and routes each to the file it belongs in.
 
 Here's the thing: every time models get smarter and tools get better, my CLAUDE.md becomes partially obsolete. Especially the alchemy - yelling at the model, begging it not to do a bad job, elaborate prompting tricks. That stuff has a short half-life. But some things stay useful: custom commands to run, project-specific context, where to find things. The challenge is knowing which is which.
 
 One datapoint on the side of less: an [RL project teaching a model to draw with a niche JavaScript library](https://surya.website/rling-qwen-to-paint-with-code) started with a 400-line API reference in the system prompt, and the model wrote confident, well-formatted code calling functions that didn't exist. Throwing the reference out and replacing it with an allowlist of eight approved methods - no docs, no examples - is what made it start working. Short and opinionated beat complete.
 
+### Beads for Every Task
+
+Every task gets a bead before any code moves, even quick background work. [Beads](https://github.com/steveyegge/beads) is Steve Yegge's issue tracker for agents: a CLI (`bd create`, `bd ready`, `bd close`), a dependency graph, and a database that survives a process dying. Two things it buys me. The bead is the brief: a background agent reads it instead of a prompt I'd have to retype, and it comments its progress there. And the bead is the handoff: a session that compacts or crashes picks up from the notes on the bead, not from a chat scroll that's gone. It's also the unit of work in [Gas City](/gas-city#what-a-city-is), so the same `bd` commands drive my cities and my one-off agents.
+
 ### MCP Servers and Skills
 
-At the end of the day, I don't use much of this. Often I'll install something, try it out, and it just gets left running in the background. GitHub MCP for issue/PR management, maybe some doc fetching. That's about it.
-
-This stuff changes so fast, and with models getting smarter (see the Bitter Lesson discussion in [Making AI Work My Way](#making-ai-work-my-way)), we'll just get to it later. Two or three max.
+I used to say I don't use much of this, two or three max. That was true of MCP servers and it mostly still is: a docs fetcher so the agent reads current library docs instead of guessing, and not much else. It stopped being true of skills. There are a couple dozen in the conventions repo and a shared plugin list every machine installs, and the kit I reach for daily is in [The Skills I Use](/ai-operator#the-skills-i-use).
 
 **What does matter:** Little CLI programs for my agents to run. Same principle as with humans - instead of giving someone detailed directions, give them a tool that just works perfectly to solve the problem.
 
-For example, I have [`running-servers`](https://github.com/idvorkin/settings/blob/main/shared/running-servers) that checks if a Jekyll server is already running for a directory, so agents don't try to recreate them. Instead of prompting the agent through "check ps, grep for jekyll, parse the port numbers, compare to current directory..." - just give them a tool that answers "is there a server for this directory?" These custom tools that extend what agents can do - those are worth building.
+For example, I have [`running-servers`](https://github.com/idvorkin/settings/blob/main/shared/running-servers) that checks if a Jekyll server is already running for a directory, so agents don't try to recreate them. Instead of prompting the agent through "check ps, grep for jekyll, parse the port numbers, compare to current directory..." - just give them a tool that answers "is there a server for this directory?" Most skills are a thin wrapper on a CLI like that. These custom tools that extend what agents can do - those are worth building.
 
 Same principle for giving agents the web: [Browsers for Machines](/browsers-for-machines) covers the Lightpanda and Playwright CLI setup behind my `/web-browse` command - JS-rendered pages and screenshots without flooding the context window.
 
 ## My Projects
 
-### Command Line and PWAs
+### Command Line, PWAs, and Now Apps
 
 Most of my tools are either command line or PWAs. Command line - obviously, when I'm on the command line, which is often. For everything else, PWAs: local-first, run everywhere, no app store hassle. They're remarkably flexible.
+
+CHOP widened what I'll attempt. iOS apps I'd never have built by hand ([a lift tracker that counts reps from the camera](https://github.com/idvorkin/exercise-analyzer), [a health and location exporter](https://github.com/idvorkin/context-grabber)). [Explainer sites](/explainers), one per course or lecture, [indexed in one place](https://idvorkin-ai-tools.github.io/). [Named agents](/igors-claws) with their own jobs, including [Larry](/larry), who built [his own dashboard](/larry-cockpit). And [The Den](/the-den), a comic strip about running all of them, with the real transcript under each gag.
 
 {% include summarize-page.html src="/pet-projects" %}
 
@@ -289,9 +321,7 @@ CHOP has made it so much easier to spin up new ideas and actually finish them.
 
 This might be the most important thing. In the CHOP world, knowing how to verify that AI output is correct matters more than knowing how to produce it. It's all about evals - can you define what "good" looks like and measure whether you're there?
 
-Once the eval is sharp, the search loop runs itself: [eval-driven hill climbing](/hill-climbing) — the agent proposes variants, the eval scores them, the winner becomes the next baseline. You write the fitness function; the agent does the climbing.
-
-{% include alert.html content="This section deserves a deep dive. More content coming." style="info" %}
+Once the eval is sharp, the search loop runs itself: [eval-driven hill climbing](/hill-climbing) — the agent proposes variants, the eval scores them, the winner becomes the next baseline. You write the fitness function; the agent does the climbing. How I test the models themselves is in [Testing AI](/ai-testing), the tools are compared in [AI Eval Tools](/ai-eval-tools), and the gate that runs the checks on every PR is in [A Typical CHOP Session](#a-typical-chop-session).
 
 ## The Server Behind the Curtain
 
@@ -305,35 +335,83 @@ Why not just use Claude Cloud, Jules, Codespaces, or other hosted environments? 
 
 ### Hardware Setup
 
-**Why it matters**: I can start a CHOP session at home, close my laptop, commute, and pick up from a different device. The work lives in the container, not on any particular machine. Zero intervention required for location changes.
+**Why it matters**: I can start a CHOP session at home, close my laptop, commute, and pick up from a different device. The work lives on the VM, not on any particular machine. Zero intervention required for location changes.
 
-A desktop machine runs multiple Docker containers. I [mosh](https://github.com/mobile-shell/mosh) in from laptops, tablets, wherever. (Mosh is self-reconnecting SSH - survives laptop sleep, network switches, everything.)
+A desktop machine runs several Ubuntu VMs under [OrbStack](https://orbstack.dev/). I [mosh](https://github.com/mobile-shell/mosh) in from laptops, tablets, wherever. (Mosh is self-reconnecting SSH - survives laptop sleep, network switches, everything.)
 
-### Container Setup
+### VM Setup: Cattle, Not Pets
 
-**Why it matters**: Agents will wipe your machine. Give them YOLO mode on your laptop and eventually one will `rm -rf` something important or force-push to main. Containers provide isolation - if Claude breaks something, the blast radius is one disposable container, not your life's work.
+{% include alert.html content="There are often extra steps to set up an isolated machine and sometimes I'm lazy and think 'oh this is quick, I'll just run on my laptop.' I always regret this, because I end up single-stepping Claude Code, or I lose progress when I need to wander off and close my laptop." style="warning" %}
 
-I run AI agents in isolated Docker containers - cattle, not pets. Full details in [YOLO Containers](/chop#yolo-containers-safe-full-autonomy), but the key points:
+**Why it matters**: Agents will wipe your machine. Give them YOLO mode (run every command without asking) on your laptop and eventually one will `rm -rf` something important or force-push to main with your real credentials. Isolation gives you a blast radius: if Claude breaks something, it's one disposable VM, not your life's work.
 
-- Each container gets YOLO mode (agents run without asking permission for anything)
-- Separate GitHub identity (`idvorkin-ai-tools`) - can only create PRs, not push to main
-- Named volumes for persistence across restarts
-- Multiple containers for parallel CHOP sessions on different features/repos
-- CPU guard: an OrbStack VM core cap plus a [small userspace watchdog](https://github.com/idvorkin/Settings/blob/main/shared/cpu-watchdog.sh) that attaches `cpulimit` to any runaway process — one feral agent can't starve the other five when half a dozen are running in parallel
+```mermaid
+graph TB
+    subgraph Tailnet["Your Tailnet - Private Mesh Network"]
+        Laptop1["💻 Laptop 1"]
+        Laptop2["💻 Laptop 2"]
+        Tablet["📱 Tablet"]
+
+        subgraph Desktop["Desktop Machine - runs OrbStack VMs"]
+            C5001["🖥️ C-5001<br/>Claude (YOLO mode)<br/>Jekyll :4000<br/>SSH :22"]
+            C5002["🖥️ C-5002<br/>Claude (YOLO mode)<br/>Jupyter :8888<br/>SSH :22"]
+        end
+    end
+
+    GitHub["🐙 GitHub<br/>idvorkin-ai-tools"]
+
+    Laptop1 -->|"ssh c-5001 (herdr)"| C5001
+    Laptop1 -.->|"chrome c-5001:4000"| C5001
+    Laptop2 -->|"ssh c-5002 (herdr)"| C5002
+    Laptop2 -.->|"chrome c-5002:8888"| C5002
+    Laptop2 -.->|"chrome c-5001:4000"| C5001
+    Tablet -.->|"chrome c-5002:8888"| C5002
+
+    C5001 -->|"gh pr create<br/>(autonomous)"| GitHub
+    C5002 -->|"gh pr create<br/>(autonomous)"| GitHub
+
+    style C5001 fill:#e1f5ff
+    style C5002 fill:#e1f5ff
+    style Laptop1 fill:#fff4e6
+    style Laptop2 fill:#fff4e6
+    style Tablet fill:#f0f0f0
+    style GitHub fill:#ffd7d7
+```
+
+The machines started as Docker containers ([the original setup](https://github.com/idvorkin/Settings/blob/master/claude-docker/README.md)) and are OrbStack Ubuntu VMs now; the principles didn't change:
+
+- **Cattle, not pets.** Nothing precious lives on the VM. Spin one up, let the agent work, throw it away. The names (`c-5001`, `c-5002`) started as Jekyll port numbers and stuck as hostnames.
+- **Credential separation.** The agent has its own GitHub identity, [`idvorkin-ai-tools`](https://github.com/idvorkin-ai-tools), with its own token. It can open PRs against my repos; it cannot push to `main` in my name. See [Guardrails and Gates](/chop#guardrails-and-gates).
+- **YOLO inside the walls.** Claude runs with permission prompts off. Bypass mode still refuses a few things by design (writes outside the working directories, secrets files, shell metacharacters in paths), and the [yolo](https://github.com/idvorkin/chop-conventions/tree/main/skills/yolo) skill documents what it does and doesn't skip, because "why is it still prompting me" is the most common question.
+- **CPU guard**: an OrbStack VM core cap plus a [small userspace watchdog](https://github.com/idvorkin/Settings/blob/main/shared/cpu-watchdog.sh) that attaches `cpulimit` to any runaway process — one feral agent can't starve the other five when half a dozen are running in parallel.
+- **Several VMs, several sessions.** Parallel CHOP on different repos, and a fresh VM in seconds when one breaks itself.
 
 ### Network Setup
 
 **Why it matters**: No port forwarding, no VPN configuration, no "works on my machine." I can share a preview link with anyone on my tailnet, or pull up my work on my phone to check something. Location-independent access to everything.
 
-Every container joins my Tailscale mesh network and gets a stable hostname:
+Every VM joins my Tailscale mesh network and gets a stable hostname:
 
-- Container `c-5001` becomes `c-5001.squeaker-teeth.ts.net`
+- VM `c-5001` becomes `c-5001.squeaker-teeth.ts.net`
 - Servers bind to `0.0.0.0` so they're network-accessible
 - Same URLs work from home, coffee shop, or traveling
+- A branch preview gets served tailnet-only on its own port, so every PR link I get comes with a preview link I can open on my phone
 
 ## A Typical CHOP Session
 
-TODO: Still figuring this out. The workflow changes frequently as tools evolve.
+The loop is the same every time; [The CHOP Shop](/chop#the-loop) has the why, this is the what.
+
+1. **Ask.** I say what I want, usually by [voice](#voice-how-i-talk-to-the-agents), to the main Claude session running in Herdr on a VM.
+2. **Bead.** The session files a bead with the ask in the description and the approach and traps in the design notes. If the work belongs to another repo, the bead goes there, and the agent that picks it up reads that repo's `AGENTS.md` first.
+3. **Worktree.** A background agent gets its own worktree. For the blog the worktrees come from a pool of pre-warmed ones ([Treehouse](https://github.com/kunchenguid/treehouse)), because a fresh checkout here needs gems, `node_modules`, and a site build before the first commit can pass the hooks.
+4. **Agent.** An Opus or Fable sub-agent for most things; Codex or Muse through Herdr when I want a different vendor on it; Grok when it's about X.
+5. **Gates.** Pre-commit hooks (`prek`) catch the cheap mistakes. A `pr-checks` skill prints the PR review checklist, with the structural checks as code and the prose checks judged by a model. The [no-mistakes](https://github.com/kunchenguid/no-mistakes) gate runs lint, the site build, the fast tests, and that checklist before the PR opens.
+6. **PR plus preview.** The PR goes to my repo from the agent's fork. A Jekyll serve of the branch runs on the VM, served tailnet-only, and the dev banner at the top shows the PR number and a diff of the page against main, so I review on my phone.
+7. **Review.** For anything bigger than a paragraph the agent builds a [Lavish](https://github.com/kunchenguid/lavish-axi) board: an HTML page I can annotate, and the annotations go back to the agent as the next prompt. A build by one model gets a review pass by a different one.
+8. **Merge.** Mine, on my repos. On the agent org the agent merges and I triage after.
+9. **Close-out.** `pr-hygiene` checks every open PR for unanswered review feedback before the session ends; `learn-from-session` writes the durable lessons back into the conventions; the weekly [changelog](/changelog) picks up the rest.
+
+{% include alert.html content="**My stack, October 2026.** Claude Code (Opus 5.5 in the main seat, Fable 5.1 for the hard problems) · Herdr 0.9 as the multiplexer · Treehouse 3 for pooled worktrees · beads 1.3 for tasks · Codex, Muse and Grok as sub-agents · prek hooks, pr-checks and no-mistakes as gates · Lavish boards for review · quota-axi for the meters · Wispr Flow and a Lark lav mic for voice · OrbStack Ubuntu VMs on a desktop, behind Tailscale. When this rots, replace the box, not the prose." style="info" %}
 
 ## Appendix: Origin of a Tool Nerd
 
@@ -341,7 +419,7 @@ TODO: Still figuring this out. The workflow changes frequently as tools evolve.
 
 {% include summarize-page.html src="/enable" %}
 
-This philosophy is _why_ I invest in CHOP infrastructure. Every minute spent on container setup, conventions, and tooling is friction removed from future work. The enabling environment isn't about productivity for its own sake - it's about creating the conditions where good work can happen naturally.
+This philosophy is _why_ I invest in CHOP infrastructure. Every minute spent on VM setup, conventions, and tooling is friction removed from future work. The enabling environment isn't about productivity for its own sake - it's about creating the conditions where good work can happen naturally.
 
 CHOP is the latest chapter in this story: building systems that let me focus on the interesting problems while automating the tedious ones.
 
@@ -349,13 +427,13 @@ CHOP is the latest chapter in this story: building systems that let me focus on 
 
 I've always been a tool nerd. VIM since forever. Command line over GUI. Custom scripts for everything. The joy isn't just efficiency - it's the craft of building your own workshop.
 
-CHOP fits this pattern: I'm not just using AI, I'm building an AI-augmented development environment. The containers, the conventions, the workflows - they're all tools I'm crafting for a new kind of work.
+CHOP fits this pattern: I'm not just using AI, I'm building an AI-augmented development environment. The VMs, the conventions, the workflows - they're all tools I'm crafting for a new kind of work.
 
 ### Is This a Waste?
 
 Every month your setup is stale. New models drop. New tools appear. Best practices from six months ago are now anti-patterns. Is it even worth trying to keep up?
 
-I spent years mastering VIM. Was that a waste? I built elaborate tmux workflows. Will that matter in two years? I'm investing in container infrastructure and conventions. Is this the buggy whip factory of 2025?
+I spent years mastering VIM. Was that a waste? I built elaborate tmux workflows. Will that matter in two years? (Partly answered: [Herdr replaced them](#the-upgrade-herdr) within the year.) I'm investing in VM infrastructure and conventions. Is this the buggy whip factory of 2025?
 
 My answer: **it depends on what you're actually learning.**
 
@@ -375,6 +453,10 @@ I read [Simon Willison](https://simonwillison.net/) religiously. So much content
 ### Steve Yegge
 
 [Steve Yegge](https://steve-yegge.medium.com/) is my hero. Super fun to read, deeply experienced, and unafraid to have strong opinions. His takes on where AI coding is headed are worth paying attention to.
+
+### Kun Chen
+
+Half the gates and meters in my loop are [Kun Chen's](https://github.com/kunchenguid) tools: [no-mistakes](https://github.com/kunchenguid/no-mistakes) for the review gate, [quota-axi](https://github.com/kunchenguid/quota-axi) for the quota windows, [lavish-axi](https://github.com/kunchenguid/lavish-axi) for the review boards. He builds for the problem I have this week, which is the best kind of person to follow.
 
 ### Twitter
 
@@ -420,7 +502,9 @@ I think there's a pendulum here:
 - 2000s: SaaS - rent the same software as everyone else
 - 2030s: Single dev does all the required tooling, personalized to their exact needs
 
-See more in my [hyper-personalization](/hyper-personal) post. Examples from my own life: [handwriting journal workflow](/process-journal#current-workflow), [mortality software](/mortality-software), [all my pet projects](/pet-projects).
+My most optimistic view: the cost of software goes down, so an engineer like me can be more ambitious, so demand for software goes up. A company that would never have dreamed of a custom CRM for its industry, because it took twenty engineers a year, is in the market when it takes four engineers three months.
+
+See more in my [hyper-personalization](/hyper-personal) post. Examples from my own life: [handwriting journal workflow](/process-journal#current-workflow), [mortality software](/mortality-software), [explainers](/explainers), [all my pet projects](/pet-projects).
 
 ### The Joy Question
 
@@ -449,8 +533,8 @@ The honest counterpoint: [Sean Goedecke frames](https://www.seangoedecke.com/how
 
 - **Practice and self-improvement always win**: The tools change, but [learning new skills](/new-skills) is the constant. You're going to suck until you die - that's just how mastery works.
 - **Conventions become critical**: As AI gets smarter, the bottleneck shifts to specification quality. CLAUDE.md-style files will matter more, not less.
-- **Verification beats implementation**: Knowing _what_ to build and _how to verify_ it matters more than _how_ to build it.
-- **Multi-agent coordination will improve**: Today's pain of running parallel agents is a tooling problem, not a fundamental limit.
+- **Verification beats implementation**: Knowing _what_ to build and _how to verify_ it matters more than _how_ to build it. The full ordering is in [The Skills That Matter Now](/chop#the-skills-that-matter-now).
+- **Multi-agent coordination will improve**: Today's pain of running parallel agents is a tooling problem, not a fundamental limit. (Scored a year on: worktrees, Herdr, and the city took most of the pain; see [the herd](/chop#the-herd-one-agent-to-a-city).)
 - **The enabling environment philosophy applies more than ever**: The winners will be those who invest in reducing friction.
 
 ## Appendix: Open Questions
@@ -481,5 +565,7 @@ At that point, two problems:
 Steve Yegge describes using [MCP Agent Mail](https://github.com/Dicklesworthstone/mcp_agent_mail) for multi-agent coordination: "You just give them a task and tell them to sort it out amongst themselves. There's no ego, so they quickly decide on a leader and split things up... Although it seems crazy to work that way, the agents just figure it out—they're quite resilient." See his [Beads Best Practices](https://steve-yegge.medium.com/beads-best-practices-2db636b9760c) post.
 
 This raises uncomfortable questions: If agents can recover from any workflow mess, do we still need disciplined processes? We've spent decades building guardrails to prevent non-deterministic states because _humans_ can't handle the chaos. But agents can. Maybe the discipline shifts from _how you work_ to _what you produce_. Maybe it's fine if your agents are sloppy, leave garbage lying around, and get into weird states - as long as the output is correct. The craftsmanship moves from the process to the artifact. I don't know what to do with this yet.
+
+The newer datapoint cuts the other way. An autonomous maintainer on the Beads project [shipped a release nobody approved](/ai-journal#an-agent-shipped-a-release-nobody-approved--and-the-postmortem-is-boring), because the real release process lived in private conversations and not in the file she read. Sloppy state was fine; sloppy _process_ was the bug. Maybe the discipline that survives is the kind you can write down for the agent.
 
 (By the way, this is how I use voice. My voice input ends up being garbage - half-formed thoughts, wrong words, trailing off mid-sentence - but agents figure out what I meant and respond to my intent, not my mangled transcription. Even the _input_ can be sloppy now.)

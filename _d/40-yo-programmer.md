@@ -105,7 +105,7 @@ I don't know when it kicks in, but I think the science is clear, and I certainly
 
 ### AI as an equalizer
 
-[AI tools](/ai-coder) and assistants could potentially level the playing field between younger and older programmers.
+[AI tools](/chop) and assistants could potentially level the playing field between younger and older programmers.
 
 1. Focusing on strengths:
 

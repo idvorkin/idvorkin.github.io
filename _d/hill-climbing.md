@@ -86,7 +86,7 @@ The optimization literature calls it a **fitness function** — the scoring rule
 
 Concretely, in the chroma-key example: the fitness function is `residual × 5 + holes` (per image); the test set is the two images (`case-sparse` + `case-dense`); the eval is the function applied to both cases, summed. Drop either half and the whole thing collapses — a rule with no cases has nothing to score; cases with no rule is just vibes.
 
-I've argued the weight of this across the blog already: [Chop](/chop#what-matters-most-is-testingevals) and [how I chop](/how-igor-chops#testing-and-evals) put evals as the bottleneck skill in AI-assisted coding. [AI developer](/ai-developer#3-your-secret-sauce-is-the-evals-then-the-training-data---your-prompt-has-no-economic-value) goes further: the evals are the moat, the prompt has no economic value. [AI testing](/ai-testing#eval-systems) is the practical playbook — PromptFoo, live dashboards, test sets.
+I've argued the weight of this across the blog already: [Chop](/chop#verification-is-the-job) and [how I chop](/how-igor-chops#testing-and-evals) put evals as the bottleneck skill in AI-assisted coding. [AI developer](/ai-developer#3-your-secret-sauce-is-the-evals-then-the-training-data---your-prompt-has-no-economic-value) goes further: the evals are the moat, the prompt has no economic value. [AI testing](/ai-testing#eval-systems) is the practical playbook — PromptFoo, live dashboards, test sets.
 
 A sharp eval has properties on both halves:
 
