@@ -199,6 +199,8 @@ This diagram perfectly captures the evolution I've lived through. Let me break d
 
 **The core problem**: agents are slow, not fast. The mitigation? Run several in parallel. But humans aren't designed for parallel orchestration. You need a cockpit — voice input, physical buttons, a dashboard, and instant session switching — to keep track of it all without losing your mind.
 
+My newest physical button is a $36 [ZTYTO scrolling ring](https://www.amazon.com/s?k=ZTYTO+scrolling+ring+touchpad), a touchpad ring sold for scrolling TikTok. I [remapped it in Karabiner](https://github.com/idvorkin/Settings/blob/main/mac/karabiner.json#L7) so a tap toggles [Wispr Flow](/ai-cockpit#voice-input---the-primary-interface) dictation and the right button hits Enter. Now I can talk to an agent and send the prompt from the couch or the treadmill without touching the keyboard.
+
 I wrote up the full cockpit setup separately:
 
 {% include summarize-page.html src="/ai-cockpit" %}
