@@ -127,7 +127,7 @@ The same thing happens with AI agents. Voice changes how you communicate. When y
 
 Three things to do every time:
 
-- **Use voice.** Don't type. Hit the mic and brain dump.
+- **Use voice.** Don't type. Hit the mic and brain dump. Mine is a [ring on my finger](/ai-cockpit#voice-input---the-primary-interface): tap to talk, click to send.
 - **Share intent.** Not just the immediate ask — what you're actually trying to accomplish, and why.
 - **Share success criteria.** How will you know it landed? What does "done right" look like?
 
