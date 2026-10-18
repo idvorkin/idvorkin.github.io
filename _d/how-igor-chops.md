@@ -97,17 +97,15 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
 
 ### The Most Expensive I Can Get
 
-The main seat is Claude Code with the best Claude model I can get. When I wrote this page it was Opus 4.5 on one \$200/month plan. Today it's Opus 5.5 in the main seat, which [brought the joy back](/interaction-model) after a stint with Opus 5 that answered like a ticket system, and Fable 5.1 when the problem is the complicated kind.
+The main seat is Claude Code with the best Claude model I can get: Opus 5.5, which [brought the joy back](/interaction-model) after a stint with Opus 5 that answered like a ticket system, and Fable 5.1 when the problem is the complicated kind.
 
-The one plan stopped being enough. The expensive model has its own weekly limit inside the plan, and it runs out first, so I pay for Claude, Codex, and Grok, plus API keys for everything else. On one hand you might think I'm crazy spending that much. On the other hand, imagine having brilliant collaborators who force multiply everything you do, train you up, and basically give you a PhD in whatever you're working on. Which subscription pays for which job is its own post: [How I Manage AI Tokens](/token-management).
+One plan isn't enough anymore. The expensive model has its own weekly limit inside the plan, and it runs out first, so I pay for Claude, Codex, and Grok, plus API keys for everything else. On one hand you might think I'm crazy spending that much. On the other hand, imagine having brilliant collaborators who force multiply everything you do, train you up, and basically give you a PhD in whatever you're working on. Which subscription pays for which job is its own post: [How I Manage AI Tokens](/token-management).
 
 ### Why Not Codex, Gemini, etc.?
 
-In November 2025, Gemini came out and I was like "Oh my god, I've got to try this, this is awesome." Then the new Codex came out three days later and I was like "Oh my god, I've got to try this, this is awesome." Then Opus 4.5 came out and I was like "Oh my god, I've got to try this, this is awesome."
+The frontier tools leapfrog each other every few weeks, and switching every time is all cost. Claude Code is home, and I assume it catches up quickly if it ever falls behind. (The month that taught me this, three "oh my god, I've got to try this" releases in a week, is in [the history](/chop-history#2025-h2-claude-code-becomes-the-present).)
 
-Then I realized: all I'm doing is spinning between tools that keep leapfrogging each other. I decided to standardize on Claude Code as home and assume it'll catch up quickly if it ever falls behind.
-
-That's still the answer, with one change: the others didn't go away, they became sub-agents. Codex and Muse run [through Herdr](#codex-muse-and-grok-through-herdr) on work I can specify tightly; Grok gets anything about X or current events. The review gate on this blog tries Grok first, then Codex, then Claude, because the Claude quota is usually the tight one. The image gap I complained about closed too: a `gen-image` skill draws through OpenRouter, with Meta's Muse Image as the default.
+The others didn't go away, they became sub-agents. Codex and Muse run [through Herdr](#codex-muse-and-grok-through-herdr) on work I can specify tightly; Grok gets anything about X or current events. The review gate on this blog tries Grok first, then Codex, then Claude, because the Claude quota is usually the tight one. The image gap I complained about closed too: a `gen-image` skill draws through OpenRouter, with Meta's Muse Image as the default.
 
 ### The Tiers I Delegate To
 
@@ -133,7 +131,7 @@ Given history, I imagine there will be more OOMs. But honestly, even if there ar
 
 ### The Past: Cursor
 
-It's crazy [how fast AI evolves](https://idvorkin-how-long-since-ai.surge.sh/?show=tool). In 2024, Cursor was the hot new thing: super-powered tab completion, then the first agent I let run my tests. That model is already long gone. The Cursor years, Aider, Avante, and the chat logs I used to commit next to the code are in [The CHOP Shop, 2024 to 2026](/chop-history).
+It's crazy [how fast AI evolves](https://idvorkin-how-long-since-ai.surge.sh/?show=tool). Everything I used before Claude Code (Cursor, Aider, Avante, the chat logs committed next to the code) is in [The CHOP Shop, 2024 to 2026](/chop-history).
 
 ### The Present: Claude Code
 
@@ -141,7 +139,7 @@ Claude Code is really about autonomous agents that run in your terminal. As a te
 
 ### The Upgrade: Herdr
 
-For the last year "the multiplexer" meant tmux plus duct tape - a [hand-written Rust picker](/ai-cockpit#tmux-on-super-steroids---the-multiplexer), windows that auto-rename to the running agent, Stream Deck keys for pane hopping. [Herdr](https://herdr.dev) replaced the duct tape: a multiplexer that knows what an agent is. Same terminal, same SSH, same detach-and-reattach - but every workspace shows blocked / working / done / idle, spinning up a git worktree is one command, and there's a socket API the agents themselves can drive. The full story of the switch is in [my journal](/ai-journal#herdr-the-agent-multiplexer-my-tmux-rig-was-trying-to-become).
+[Herdr](https://herdr.dev) is a multiplexer that knows what an agent is. Same terminal, same SSH, same detach-and-reattach as tmux - but every workspace shows blocked / working / done / idle, spinning up a git worktree is one command, and there's a socket API the agents themselves can drive. It replaced a year of tmux duct tape; that story is in [my journal](/ai-journal#herdr-the-agent-multiplexer-my-tmux-rig-was-trying-to-become).
 
 Here's my actual herd. Spaces tree top-left, agent states below it (spinners are working, checks are done), a live Claude session in the main pane. And a bonus: the `herdr` agent in that list is the Claude session that took this screenshot.
 
@@ -153,7 +151,7 @@ Because Herdr has a socket API, my main Claude session can open a tab, start a C
 
 ### The Dashboard That Arrived
 
-When I wrote this page I called the multi-agent dashboard "the future," and was surprised Steve Yegge was saying the same thing, because I'd been accidentally building toward it. It arrived in three pieces: [the AI Cockpit](/ai-cockpit), my control surface for watching slow parallel agents; [the Cockpit Larry built for me](/larry-cockpit), where a non-coding agent takes my decisions out of a chat scroll; and [Gas City](/gas-city), where the orchestration lives in the city rather than in my head. I didn't build the first dashboard at all. I gave the requirements and Claude built it.
+The multi-agent dashboard I once filed under "the future" ([history](/chop-history#january-to-april-2026-mumbling-on-the-couch)) arrived in three pieces: [the AI Cockpit](/ai-cockpit), my control surface for watching slow parallel agents; [the Cockpit Larry built for me](/larry-cockpit), where a non-coding agent takes my decisions out of a chat scroll; and [Gas City](/gas-city), where the orchestration lives in the city rather than in my head. I didn't build the first dashboard at all. I gave the requirements and Claude built it.
 
 ### The 8 Stages of AI Coding
 
@@ -167,7 +165,7 @@ This diagram perfectly captures the evolution I've lived through. Let me break d
 
 1. **Manual Coding** - Just you and your editor. Every line typed by hand. The good old days (which weren't always that good).
 
-1. **Approval-Based Agent (Y/N?)** - AI suggests changes, but stops to ask permission for each action. This is where Cursor started - tab completion evolved into "should I run this test?"
+1. **Approval-Based Agent (Y/N?)** - AI suggests changes, but stops to ask permission for each action. Tab completion evolved into "should I run this test?"
 
 1. **YOLO Mode** - The turning point. AI can execute commands, make commits, run tests without asking each time. This is what [disposable VMs](#vm-setup-cattle-not-pets) enable safely.
 
@@ -210,13 +208,7 @@ At home it's [Wispr Flow](https://wisprflow.ai/) and a lapel mic, which turned o
 
 ### What I'm Still Figuring Out
 
-Three questions from the first draft of this page have answers now:
-
-- **How to handle merges** when agents touch related code: a worktree per agent, pooled and pre-warmed so acquiring one is instant. The conflicts that are left are real conflicts, not artifacts of sharing a checkout.
-- **DRY vs. self-contained conventions**: wait for N=2. Don't extract a template or a shared library until two concrete instances exist; one-instance abstractions fork on day one.
-- **Tests first vs. tests after**: the gate answers it. Tests and lint run before a PR opens, and a model reads the diff against a review checklist; whether I wrote the tests first matters less than whether the gate is in the agent's loop.
-
-The open ones today:
+(The first draft's questions, merges, DRY vs. self-contained, tests first vs. after, have answers now; they're [in the history](/chop-history#january-to-april-2026-mumbling-on-the-couch) with what answered them.)
 
 - **Quota is the real constraint.** When I'm typing I'm the rate limiter; when agents run unattended nobody is. Routing work across subscriptions by headroom is a new chore.
 - **Review cost.** Agents produce faster than I can read. Lavish boards and a second-model review pass help; I still don't have a clean answer for what I can safely skip.
@@ -273,7 +265,7 @@ Yes, I can vibe code in the car too. My 16-year-old son is learning to drive and
 
 ### The chop-conventions Repo
 
-I maintain a shared conventions repo at [idvorkin/chop-conventions](https://github.com/idvorkin/chop-conventions). It started as a file the agent cloned and read; today it's wired in rather than read:
+I maintain a shared conventions repo at [idvorkin/chop-conventions](https://github.com/idvorkin/chop-conventions). It's wired in rather than read:
 
 - **Skills** live in the repo and are symlinked into `~/.claude/skills/`, so an edit goes through a PR once and every machine picks it up.
 - **Fragments** of the global instructions are assembled per machine class (every machine, dev VMs, the Mac) by an `up-to-date` skill that also installs the standard plugin list.
@@ -297,7 +289,7 @@ Every task gets a bead before any code moves, even quick background work. [Beads
 
 ### MCP Servers and Skills
 
-I used to say I don't use much of this, two or three max. That was true of MCP servers and it mostly still is: a docs fetcher so the agent reads current library docs instead of guessing, and not much else. It stopped being true of skills. There are a couple dozen in the conventions repo and a shared plugin list every machine installs, and the kit I reach for daily is in [The Skills I Use](/ai-operator#the-skills-i-use).
+MCP servers: a docs fetcher so the agent reads current library docs instead of guessing, and not much else. Skills are a different story: a couple dozen in the conventions repo, a shared plugin list every machine installs, and the kit I reach for daily is in [The Skills I Use](/ai-operator#the-skills-i-use). (I once said "two or three max" about all of this; [the history](/chop-history#january-to-april-2026-mumbling-on-the-couch) keeps the receipt.)
 
 **What does matter:** Little CLI programs for my agents to run. Same principle as with humans - instead of giving someone detailed directions, give them a tool that just works perfectly to solve the problem.
 

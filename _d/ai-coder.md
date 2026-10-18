@@ -58,7 +58,7 @@ Every CHOP task I run has the same shape:
 7. **Review**, which is most of my time now, and merge.
 8. **Close out.** Lessons go back into the conventions so the next session starts smarter.
 
-In 2025 I wrote that the answer to "how to be fast when AI is slow" was probably "source control and multi windows." That turned out right, and it's now boring: a worktree per agent and a multiplexer that knows what an agent is. The concrete version, with tool names and the dated stack, is [A Typical CHOP Session](/how-igor-chops#a-typical-chop-session). Each step is also a block of [my orchestrator](/ai-orchestrator), added after something broke.
+The two things that make it fast when agents are slow are boring now: a worktree per agent and a multiplexer that knows what an agent is. The concrete version, with tool names and the dated stack, is [A Typical CHOP Session](/how-igor-chops#a-typical-chop-session). Each step is also a block of [my orchestrator](/ai-orchestrator), added after something broke. How the loop got this shape, one worktree-and-draft-PR era at a time, is in [the history](/chop-history#2025-h2-claude-code-becomes-the-present).
 
 ## Interventions per Hour
 
@@ -70,7 +70,7 @@ If you notice the AI writing the code and yourself doing the manual testing, you
 
 ## The Herd: One Agent to a City
 
-In August 2025 I wrote "don't feel the need to run four agents": more agents meant more confusion, re-explaining, and merge pain. A year later the herd is nine workspaces with four agents mid-flight, and a city runs role sessions on its own. What changed was tooling, not discipline. The honest shape is a ladder:
+The herd today is nine workspaces with four agents mid-flight, and a city runs role sessions on its own. A year ago my advice was the opposite ([don't run four agents](/chop-history#2025-h2-claude-code-becomes-the-present)); what changed was tooling, not discipline. The honest shape is a ladder:
 
 1. **One strong agent** with a clear spec and tests, left to run longer between interventions. This is still most of my day.
 2. **Parallel agents, each in its own worktree**, with a [cockpit](/ai-cockpit) so you can see which one is blocked, working, or done. Humans aren't built for parallel orchestration; the cockpit is the prosthetic.
@@ -80,7 +80,7 @@ The signs you've climbed too fast haven't changed: sending the wrong command to 
 
 ## Rules of Engagement: DRY CHOP
 
-Think of the agent as an eager junior who can learn, but only if you write it down. Instead of repeating yourself in every prompt, keep one source of truth the agent reads on the way in. In 2024 that file was `CONVENTIONS.md` with a `.cursorrules` pointer; today it's `AGENTS.md` in every repo (`CLAUDE.md` is a symlink to it), a shared [chop-conventions](https://github.com/idvorkin/chop-conventions) repo of skills, and a global file assembled from fragments: rules for every machine, rules for this class of machine, rules for this box.
+Think of the agent as an eager junior who can learn, but only if you write it down. Instead of repeating yourself in every prompt, keep one source of truth the agent reads on the way in. Today that's `AGENTS.md` in every repo (`CLAUDE.md` is a symlink to it), a shared [chop-conventions](https://github.com/idvorkin/chop-conventions) repo of skills, and a global file assembled from fragments: rules for every machine, rules for this class of machine, rules for this box. (The file has had three names; [the history](/chop-history#december-2024-conventionsmd-and-the-cookbook) has the first one.)
 
 Four habits make it compound:
 
