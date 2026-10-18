@@ -82,6 +82,8 @@ For the full deep dive on why voice changes how you work with AI, see [You Need 
 
 More mic options as I try them.
 
+And a button for the voice: a $36 [ZTYTO scrolling ring](https://www.amazon.com/s?k=ZTYTO+scrolling+ring+touchpad), a touchpad ring sold for scrolling TikTok. I [remapped it in Karabiner](https://github.com/idvorkin/Settings/blob/main/mac/karabiner.json#L7) so a tap toggles Wispr Flow and the right button hits Enter. Now I can dictate and send a prompt from the couch or the treadmill without touching the keyboard.
+
 ### Tmux on Super Steroids - The Multiplexer
 
 Tmux is the backbone. Every agent runs in a tmux session inside a Docker container. The problem is: stock tmux navigation is painful when you have 8+ sessions across multiple containers.
