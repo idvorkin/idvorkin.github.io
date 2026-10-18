@@ -144,13 +144,32 @@ The worktree-and-draft-PR workflow went in on 2025-07-30, the first version of [
 
 **claude-code-log and claude-code-transcripts**: [claude-code-log](https://github.com/daaain/claude-code-log) converts Claude Code conversation logs to publishable HTML (`uv tool install claude-code-log`); Simon Willison's [claude-code-transcripts](https://github.com/simonw/claude-code-transcripts) does the same with pagination and gist upload.
 
+**Why Not Codex, Gemini, etc.?** (written 2026-01-01 about November 2025): In November 2025, Gemini came out and I was like "Oh my god, I've got to try this, this is awesome." Then the new Codex came out three days later and I was like "Oh my god, I've got to try this, this is awesome." Then Opus 4.5 came out and I was like "Oh my god, I've got to try this, this is awesome." Then I realized: all I'm doing is spinning between tools that keep leapfrogging each other. I decided to standardize on Claude Code and assume it'll catch up quickly if it ever falls behind. The one gap: Claude Code can't generate images. I use ChatGPT for that, currently manually.
+
+**The Most Expensive I Can Get** (2026-01-01): Currently I'm using Claude Opus 4.5 on the \$200/month plan. On one hand you might think I'm crazy spending \$2,400 a year. On the other hand, imagine having brilliant collaborators who force multiply everything you do.
+
 </details>
 
 ## January to April 2026: Mumbling on the Couch
 
 [How Igor CHOPs](/how-igor-chops) was written on New Year's Day 2026, by voice, partly on a treadmill, and the vibe-coding page folded into it the next day. Yegge's 8 stages diagram went in on 2026-01-23 with my position marked between stages 6 and 7. In February the control-panel section became its own post, [The AI Cockpit](/ai-cockpit), with voice as the primary interface. April brought [The AI Operator](/ai-operator) (thinking tokens, on the loop versus in the loop), [eval-driven hill climbing](/hill-climbing), the OrbStack core cap and cpu-watchdog after a runaway agent, and the Flow Question.
 
-**Survived:** all of it; this is the base of the current pages.
+**Survived:** the base of the current pages. The three things the first draft was "still figuring out" got answered within the year: merges (a worktree per agent, pooled and pre-warmed), DRY vs. self-contained conventions (wait for N=2: no template or shared library until two concrete instances exist), and tests first vs. after (a gate that runs tests, lint, and a model-read review checklist before a PR opens; whether I wrote the tests first matters less than whether the gate is in the agent's loop). "Two or three MCP servers max" stayed true of MCP servers and became wrong about skills. The multi-agent dashboard filed under "the future" became [the cockpit](/ai-cockpit), [Larry's cockpit](/larry-cockpit), and [Gas City](/gas-city).
+
+<details markdown="1">
+<summary>What I wrote at the time</summary>
+
+**The Future: Multi-Agent Dashboard** (2026-01-01): I was surprised when Steve Yegge mentioned this is the future - orchestrating multiple specialized agents. Surprised because I'd been accidentally building toward this. The Agent Dashboard I mentioned earlier? By the way, I didn't build that at all. I just gave the requirements and Claude built it itself.
+
+**The Upgrade: Herdr**, before Herdr (2026-01 to 2026-08): "the multiplexer" meant tmux plus duct tape - a [hand-written Rust picker](/ai-cockpit#tmux-on-super-steroids---the-multiplexer), windows that auto-rename to the running agent, Stream Deck keys for pane hopping.
+
+**MCP Servers and Skills** (2026-01-04): At the end of the day, I don't use much of this. Often I'll install something, try it out, and it just gets left running in the background. GitHub MCP for issue/PR management, maybe some doc fetching. That's about it. This stuff changes so fast, and with models getting smarter, we'll just get to it later. Two or three max.
+
+**What I'm Still Figuring Out** (2026-01-01): How to handle merges: when multiple agents touch related code, merging gets messy fast. The optimal number of agents deserves its own callout: the number you can run in parallel seems to be the limiting factor for throughput, but man, it's easy to get confused. Sending the wrong commands to the wrong agents. Forgetting what each one is doing. Brutal merge conflicts when they touch the same files. Rethinking conventional coding wisdom: DRY vs. self-contained (should conventions be shared libraries, or should every repo implement its own? When execution is cheap, maybe copy-paste isn't so bad). Planning vs. iterating (when you can execute so quickly, is planning even worth it?). Tests first vs. tests after (if AI can generate tests instantly, does TDD still matter?).
+
+**Where I Am Today** (2026-01-23): Somewhere between stages 6 and 7. Still learning how to avoid merge hell and when to use specialized vs. generalist agents. Stage 8 is the dream.
+
+</details>
 
 ## May to July 2026: Claws and Cities
 
