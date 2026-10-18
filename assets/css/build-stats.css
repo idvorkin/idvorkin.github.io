@@ -1,0 +1,330 @@
+/* Build stats dashboard (/build-stats). GitHub-profile palette, scoped under .bst-root. */
+.bst-root {
+  --bst-fg: #1f2328;
+  --bst-muted: #59636e;
+  --bst-border: #d1d9e0;
+  --bst-card: #ffffff;
+  --bst-soft: #f6f8fa;
+  --bst-igor: #0969da;
+  --bst-ai: #8250df;
+  --bst-other: #afb8c1;
+  --bst-add: #1a7f37;
+  --bst-del: #cf222e;
+  --bst-l0: #ebedf0;
+  --bst-l1: #9be9a8;
+  --bst-l2: #40c463;
+  --bst-l3: #30a14e;
+  --bst-l4: #216e39;
+  color: var(--bst-fg);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  min-width: 0;
+}
+.bst-root * {
+  box-sizing: border-box;
+}
+.bst-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.bst-seg {
+  display: inline-flex;
+  border: 1px solid var(--bst-border);
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--bst-soft);
+}
+.bst-seg button {
+  border: 0;
+  background: transparent;
+  padding: 5px 11px;
+  font: inherit;
+  font-size: 12px;
+  color: var(--bst-muted);
+  cursor: pointer;
+}
+.bst-seg button + button {
+  border-left: 1px solid var(--bst-border);
+}
+.bst-seg button.on {
+  background: var(--bst-card);
+  color: var(--bst-fg);
+  font-weight: 600;
+  box-shadow: inset 0 -2px 0 #fd8c73;
+}
+.bst-headline {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 2fr);
+  gap: 14px;
+  margin-bottom: 14px;
+}
+.bst-hero {
+  border-radius: 10px;
+  padding: 18px 20px;
+  color: #fff;
+  background: linear-gradient(135deg, #216e39 0%, #0969da 55%, #8250df 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bst-hero-k {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 11px;
+  opacity: 0.85;
+}
+.bst-hero-v {
+  font-size: 22px;
+  line-height: 1.25;
+  margin-top: 4px;
+}
+.bst-hero-v strong {
+  font-size: 34px;
+  font-variant-numeric: tabular-nums;
+}
+.bst-hero-s {
+  margin-top: 8px;
+  font-size: 12px;
+  opacity: 0.9;
+}
+.bst-tiles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+.bst-tile {
+  border: 1px solid var(--bst-border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: var(--bst-card);
+  min-width: 0;
+}
+.bst-big {
+  font-size: 24px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.bst-label {
+  color: var(--bst-muted);
+  font-size: 12px;
+}
+.bst-delta {
+  font-size: 11px;
+  margin-top: 2px;
+}
+.bst-delta.up {
+  color: var(--bst-add);
+}
+.bst-delta.down {
+  color: var(--bst-del);
+}
+.bst-card {
+  border: 1px solid var(--bst-border);
+  border-radius: 8px;
+  background: var(--bst-card);
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  min-width: 0;
+}
+.bst-h {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 10px;
+  font-family: inherit;
+}
+.bst-grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.bst-grid2 > .bst-card {
+  margin-bottom: 0;
+}
+.bst-grid2 {
+  margin-bottom: 14px;
+}
+.bst-heat-wrap {
+  overflow-x: auto;
+}
+.bst-heat {
+  width: 100%;
+  min-width: 620px;
+  height: auto;
+  display: block;
+}
+.bst-heat-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+  font-size: 12px;
+}
+.bst-muted {
+  color: var(--bst-muted);
+}
+.bst-legend {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  color: var(--bst-muted);
+}
+.bst-sw {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  display: inline-block;
+}
+.bst-l0 {
+  fill: var(--bst-l0);
+  background: var(--bst-l0);
+}
+.bst-l1 {
+  fill: var(--bst-l1);
+  background: var(--bst-l1);
+}
+.bst-l2 {
+  fill: var(--bst-l2);
+  background: var(--bst-l2);
+}
+.bst-l3 {
+  fill: var(--bst-l3);
+  background: var(--bst-l3);
+}
+.bst-l4 {
+  fill: var(--bst-l4);
+  background: var(--bst-l4);
+}
+.bst-heat rect {
+  outline: 1px solid rgba(27, 31, 36, 0.06);
+  outline-offset: -1px;
+}
+.bst-axis {
+  font-size: 10px;
+  fill: var(--bst-muted);
+}
+.bst-chart {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.bst-grid {
+  stroke: var(--bst-border);
+  stroke-dasharray: 2 3;
+}
+.bst-zero {
+  stroke: var(--bst-muted);
+}
+.bst-bar:hover rect {
+  opacity: 0.75;
+}
+.bst-add {
+  fill: var(--bst-add);
+}
+.bst-del {
+  fill: var(--bst-del);
+}
+.bst-key {
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 6px;
+}
+.bst-add-t {
+  color: var(--bst-add);
+}
+.bst-del-t {
+  color: var(--bst-del);
+}
+.bst-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  table-layout: fixed;
+}
+.bst-table th {
+  text-align: left;
+  color: var(--bst-muted);
+  font-weight: 500;
+  font-size: 12px;
+  border-bottom: 1px solid var(--bst-border);
+  padding: 4px 6px;
+}
+.bst-table th:nth-child(1) {
+  width: 52%;
+}
+.bst-table td {
+  padding: 5px 6px;
+  border-bottom: 1px solid var(--bst-soft);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.bst-num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.bst-repo {
+  color: var(--bst-igor);
+  text-decoration: none;
+  font-weight: 600;
+}
+.bst-owner {
+  font-weight: 400;
+  color: var(--bst-muted);
+}
+.bst-lang {
+  margin-left: 6px;
+  font-size: 11px;
+  color: var(--bst-muted);
+}
+.bst-spark span {
+  display: block;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--bst-l2);
+}
+.bst-split {
+  display: flex;
+  height: 14px;
+  border-radius: 7px;
+  overflow: hidden;
+  margin: 6px 0 12px;
+}
+.bst-split-key {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+}
+.bst-split-key li {
+  margin: 4px 0;
+}
+.bst-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+.bst-notes {
+  font-size: 12px;
+  color: var(--bst-muted);
+}
+.bst-notes summary {
+  cursor: pointer;
+}
+@media (max-width: 720px) {
+  .bst-headline,
+  .bst-grid2 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .bst-tiles {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
