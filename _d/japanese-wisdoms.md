@@ -30,7 +30,7 @@ A Facebook infographic crossed my feed: "12 Japanese Wisdoms — Ideas for a mor
 
 ![At dawn the raccoon leaps head-first into a trash can glowing gold like a treasure chest, a Croc flying off, while the alarm clock that woke him rings on the cobbles.](/images/japanese-wisdoms/ikigai.webp)
 
-_Mine: [begin with the end in mind](/end-in-mind)._
+_Mine: [begin with the end in mind](/end-in-mind), which is why I wrote my [eulogy](/eulogy)._
 
 ### 2. Kaizen: small steps, every day
 
@@ -48,19 +48,19 @@ _Mine: [isn't that curious?](/curious)_
 
 ![The raccoon wears horse blinkers while he waters his tiny sprout, refusing to look at the smug owl beside him showing off an enormous sunflower.](/images/japanese-wisdoms/oubaitori.webp)
 
-_Mine: [don't compare yourself to others, compare to what you want](/pride#judging-my-career-relative-to-my-peers)._
+_Mine: [dealer of smiles and wonder](/eulogy#dealer-of-smiles-and-wonder)._
 
 ### 5. Gaman: endure with dignity
 
 ![In pouring rain at night the raccoon sits upright and calm on a bench, holding an umbrella blown inside out, a kitten curled up dry beside his tail.](/images/japanese-wisdoms/gaman.webp)
 
-_Mine: [amor fati, love your fate](/stoicism)._
+_Mine: [calm like water](/affirmations#calm-like-water-be-present-this-too-shall-pass-work-the-problem)._
 
 ### 6. Wabi-sabi: beauty in imperfection
 
 ![In a pottery corner the raccoon proudly holds a lumpy, lopsided mug he made himself, while a perfect white shop mug sits ignored on the shelf.](/images/japanese-wisdoms/wabi-sabi.webp)
 
-_Mine: [mismatched shoes and crazy shirts](/joy#mismatched-shoes-and-crazy-shirts-from-temu)._
+_Mine: I enjoy amateur everything; it's just more interesting. Hence the [mismatched shoes and crazy shirts](/joy#mismatched-shoes-and-crazy-shirts-from-temu)._
 
 ## What I'm reaching for
 
