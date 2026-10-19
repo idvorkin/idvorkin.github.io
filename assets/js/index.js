@@ -20,7 +20,7 @@ function Ke(e, t) {
     console.log(`🚀 Executing deferred ${n}`), e();
   })) : (console.log(`⚡ DOM already ready, executing ${n} immediately`), e());
 }
-async function T(e, t) {
+async function C(e, t) {
   const n = $(e);
   if (n.length !== 1) {
     console.log(`append_randomizer_div ${e} not present`);
@@ -35,7 +35,7 @@ async function T(e, t) {
   });
 }
 let A = null;
-async function w(e) {
+async function x(e) {
   if (A != null)
     return A;
   const t = "/back-links.json";
@@ -45,9 +45,9 @@ async function w(e) {
     return console.error("Error fetching link info", n), {};
   }
 }
-async function Be() {
+async function De() {
   try {
-    const e = await w(), t = Object.keys(e).filter((o) => {
+    const e = await x(), t = Object.keys(e).filter((o) => {
       const i = ["/404", "/404.html", "/search", "/recent", "/index.html", "/graph", "/about", "/random"].some((l) => o === l || o.endsWith(l)), a = [
         "/ig66/"
         // Exclude all ig66 subdirectory pages
@@ -63,7 +63,7 @@ async function Ve(e = "/back-links.json") {
   if (e === "/test-missing-url-info")
     throw new Error("Missing url_info in data structure");
   try {
-    return await w(e);
+    return await x(e);
   } catch {
     throw new Error("Missing url_info in data structure");
   }
@@ -85,7 +85,7 @@ function Qe(e) {
 function et(e) {
   return [...e].sort((t, n) => t.last_modified && n.last_modified ? new Date(n.last_modified).getTime() - new Date(t.last_modified).getTime() : n.doc_size - t.doc_size);
 }
-async function De() {
+async function Be() {
   const e = await Ve(), t = Ze(e), n = Qe(t);
   return et(n);
 }
@@ -213,7 +213,7 @@ async function ye(e = "last-modified-posts", t = 15, n = document) {
     return;
   }
   try {
-    const r = await De(), i = rt(r, t);
+    const r = await Be(), i = rt(r, t);
     o.innerHTML = i, ot("remaining-posts-toggle", "remaining-posts-content", n);
   } catch (r) {
     console.error("❌ Error loading recent posts:", r), o.innerHTML = "<p>Error loading modified posts. Please try again later.</p>";
@@ -249,7 +249,7 @@ async function _e(e = "recent-posts") {
     return;
   }
   try {
-    const n = await De(), o = st(n), r = at(o);
+    const n = await Be(), o = st(n), r = at(o);
     t.innerHTML = r;
   } catch (n) {
     console.error("❌ Error loading recent posts:", n), t.innerHTML = "<p>Error loading recent posts. Please try again later.</p>";
@@ -273,7 +273,7 @@ function ct(e) {
   for (const n of e) {
     const o = n.outgoing_links || [], r = n.incoming_links || [], i = [...o, ...r];
     for (const a of i)
-      G(x, a) && t.push({ source: n, target: a, value: 1 });
+      G(w, a) && t.push({ source: n, target: a, value: 1 });
     t.filter((a) => a.source === n).length === 0 && n.url === "/eulogy" && console.log(`No valid links found for ${n.url}`);
   }
   return t;
@@ -298,9 +298,9 @@ function ut(e, t, n) {
   const o = e.__bckgDimensions;
   o && n.fillRect(e.x - o[0] / 2, e.y - o[1] / 2, ...o);
 }
-let x = [], y = null, L = null;
+let w = [], y = null, T = null;
 function z(e) {
-  if (!L) {
+  if (!T) {
     console.log("Cannot center: Graph not initialized");
     return;
   }
@@ -308,7 +308,7 @@ function z(e) {
     console.log("Cannot center: Node is null or undefined");
     return;
   }
-  L.centerAt(e.x, e.y, 500), L.zoom(8, 500), Oe(e);
+  T.centerAt(e.x, e.y, 500), T.zoom(8, 500), Oe(e);
 }
 function Oe(e) {
   if (!e)
@@ -321,9 +321,9 @@ function pt() {
   y ? y.url ? window.open(y.url, "_blank") : console.log("Active node has no URL") : console.log("No active node to go to");
 }
 function mt() {
-  for (const e of x)
+  for (const e of w)
     e.expanded = !1;
-  y && (y.expanded = !0), L && (L.graphData(Q(x)), y && setTimeout(() => {
+  y && (y.expanded = !0), T && (T.graphData(Q(w)), y && setTimeout(() => {
     z(y);
   }, 300));
 }
@@ -332,17 +332,17 @@ async function ft() {
     console.log("Graph element not found, exiting initialization");
     return;
   }
-  window.location.hash.substr(1), x = Object.values(await w()).map((a) => ({
+  window.location.hash.substr(1), w = Object.values(await x()).map((a) => ({
     ...a,
     id: a.url,
     expanded: !1
   }));
-  const t = `/${window.location.hash ? window.location.hash.substr(1) : ""}`, n = x.map((a) => a.url).includes(t) ? t : "/eulogy";
-  for (const a of x)
+  const t = `/${window.location.hash ? window.location.hash.substr(1) : ""}`, n = w.map((a) => a.url).includes(t) ? t : "/eulogy";
+  for (const a of w)
     a.expanded = a.url === n;
   if (typeof ForceGraph > "u") {
     console.log("Force Graph not defined, providing fallback functionality");
-    const a = G(x, n);
+    const a = G(w, n);
     a && (Oe(a), y = a);
     const l = document.getElementById("center_control");
     l && l.addEventListener("click", () => {
@@ -358,14 +358,14 @@ async function ft() {
     });
     return;
   }
-  L = ForceGraph()(document.getElementById("graph")).graphData(Q(x)).nodeLabel("id").nodeAutoColorBy("group").nodeCanvasObject(dt).nodePointerAreaPaint(ut).onNodeRightClick((a) => {
+  T = ForceGraph()(document.getElementById("graph")).graphData(Q(w)).nodeLabel("id").nodeAutoColorBy("group").nodeCanvasObject(dt).nodePointerAreaPaint(ut).onNodeRightClick((a) => {
     window.open(a.url, "_blank");
   }).onNodeClick((a) => {
-    a.expanded = !a.expanded, x.filter((c) => c.expanded).length === 0 && (a.expanded = !0), L.graphData(Q(x)), setTimeout(() => {
+    a.expanded = !a.expanded, w.filter((c) => c.expanded).length === 0 && (a.expanded = !0), T.graphData(Q(w)), setTimeout(() => {
       z(a);
     }, 300);
   });
-  const o = G(x, n);
+  const o = G(w, n);
   o ? z(o) : console.log("Initial node not found, cannot center");
   const r = document.getElementById("center_control");
   r ? r.addEventListener("click", () => {
@@ -1034,12 +1034,12 @@ function Ht() {
   `, document.head.appendChild(t);
 }
 let Ce = !1;
-function Bt(e = {}) {
+function Dt(e = {}) {
   Ce || (Ce = !0, Ht(), document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", () => {
     Ee(e);
   }) : Ee(e));
 }
-const ne = 50, oe = 100, Dt = ne * oe;
+const ne = 50, oe = 100, Bt = ne * oe;
 function j(e = 0) {
   if (typeof document > "u")
     return;
@@ -1051,7 +1051,7 @@ function j(e = 0) {
       return;
     }
     console.error(
-      `❌ GLightbox failed to load after ${Dt / 1e3} seconds, aborting image zoom initialization`
+      `❌ GLightbox failed to load after ${Bt / 1e3} seconds, aborting image zoom initialization`
     );
     return;
   }
@@ -1098,16 +1098,16 @@ function j(e = 0) {
   }
 }
 typeof document < "u" && (document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", () => j()) : setTimeout(() => j(), 500));
-const ce = "random-arrival-path", C = "random-reroll-dice", re = "random-reroll", ie = "random-reroll-close", Te = "random-reroll-style", Fe = 550, Ot = `
+const ce = "random-arrival-path", E = "random-reroll-dice", re = "random-reroll", ie = "random-reroll-close", Te = "random-reroll-style", Fe = 550, Ot = `
 #${re}{position:fixed;right:max(4px, env(safe-area-inset-right));
   bottom:calc(80px + env(safe-area-inset-bottom));z-index:9990;width:48px;height:48px}
 body:has(#rd-nav) #${re}{bottom:calc(120px + env(safe-area-inset-bottom))}
-#${C}{width:48px;height:48px;padding:0;font-size:28px;line-height:48px;text-align:center;
+#${E}{width:48px;height:48px;padding:0;font-size:28px;line-height:48px;text-align:center;
   border:0;border-radius:50%;color:#000;background:rgba(255,255,255,.92);box-shadow:0 2px 8px rgba(0,0,0,.3);
   cursor:pointer;touch-action:manipulation;animation:rrd-wiggle 6s ease-in-out 2s infinite}
 /* disabled buttons get translucent text, which fades the color emoji mid-roll */
-#${C}:disabled{color:#000;opacity:1}
-#${C}.rrd-rolling{animation:rrd-roll ${Fe}ms cubic-bezier(.3,1.4,.6,1) forwards}
+#${E}:disabled{color:#000;opacity:1}
+#${E}.rrd-rolling{animation:rrd-roll ${Fe}ms cubic-bezier(.3,1.4,.6,1) forwards}
 #${ie}{position:absolute;top:-14px;left:-14px;width:32px;height:32px;padding:0;border:0;
   background:transparent;cursor:pointer;touch-action:manipulation;display:flex;
   align-items:center;justify-content:center}
@@ -1124,7 +1124,7 @@ body:has(#rd-nav) #${re}{bottom:calc(120px + env(safe-area-inset-bottom))}
   89%{transform:rotate(-14deg) scale(1.06)}
   93%{transform:rotate(11deg) scale(1.06)}
   96%{transform:rotate(-5deg)}}
-@media (prefers-reduced-motion: reduce){#${C},#${C}.rrd-rolling{animation:none}}
+@media (prefers-reduced-motion: reduce){#${E},#${E}.rrd-rolling{animation:none}}
 `;
 function W(e) {
   let t = e.split(/[?#]/)[0] || "/";
@@ -1168,14 +1168,14 @@ function Gt(e, t = de()) {
     return !1;
   }
 }
-async function jt(e, t = Be) {
+async function jt(e, t = De) {
   const n = W(e);
   let o = await t();
   for (let r = 0; r < 4 && W(o) === n; r++)
     o = await t();
   return o;
 }
-async function Wt(e = (n) => window.location.assign(n), t = Be) {
+async function Wt(e = (n) => window.location.assign(n), t = De) {
   const n = await jt(window.location.pathname, t);
   return Ft(n), e(n), n;
 }
@@ -1192,7 +1192,7 @@ function X(e, t = document) {
   }
 }
 function Jt(e = document) {
-  if (!Gt(window.location.pathname) || e.getElementById(C))
+  if (!Gt(window.location.pathname) || e.getElementById(E))
     return null;
   if (!e.getElementById(Te)) {
     const r = e.createElement("style");
@@ -1201,7 +1201,7 @@ function Jt(e = document) {
   const t = e.createElement("div");
   t.id = re;
   const n = e.createElement("button");
-  n.id = C, n.type = "button", n.textContent = "🎲", n.title = "Another random post", n.setAttribute("aria-label", "Another random post");
+  n.id = E, n.type = "button", n.textContent = "🎲", n.title = "Another random post", n.setAttribute("aria-label", "Another random post");
   const o = e.createElement("button");
   return o.id = ie, o.type = "button", o.title = "Hide the dice", o.setAttribute("aria-label", "Hide the random dice"), o.innerHTML = '<span aria-hidden="true">×</span>', n.addEventListener("click", () => {
     if (n.disabled) return;
@@ -1443,7 +1443,7 @@ function ln(e) {
 }
 async function cn() {
   const e = "__idvorkin_add_link_loader_initialized__";
-  window[e] || (window[e] = !0, sn(await w()), ln(await dn()));
+  window[e] || (window[e] = !0, sn(await x()), ln(await dn()));
 }
 let H = null;
 async function dn() {
@@ -1515,7 +1515,7 @@ function F() {
   const e = "__idvorkin_load_globals_initialized__";
   window[e] || (window[e] = !0, tn(), $(cn), $(pn), typeof $ < "u" && $.fn && $.fn.ready ? $(document).ready(K) : typeof document < "u" && (document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", K) : K()), lt(), document.getElementById("last-modified-posts") && it(), $(() => {
     Pe("ui-toc", !0), Pe("ui-toc-affix", !1);
-  }), Bt(), j(), kt(), Jt());
+  }), Dt(), j(), kt(), Jt());
 }
 typeof $ < "u" && $.fn && $.fn.ready ? $(document).ready(F) : typeof document < "u" && (document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", F) : F());
 function V(e) {
@@ -1560,7 +1560,7 @@ function bn(e) {
     return;
   }
   const t = "#random-post", n = "#achievment", o = "#random-recent";
-  T(t, () => V(v(e))), T(n, () => V(v(gn(e)))), T(o, () => V(v(hn(e))));
+  C(t, () => V(v(e))), C(n, () => V(v(gn(e)))), C(o, () => V(v(hn(e))));
 }
 function pe() {
   $.getJSON("/ig66/ig66-export.json", bn);
@@ -1581,7 +1581,7 @@ function _n(e, t) {
     console.log("No roles being imported");
     return;
   }
-  console.log("Processing", t.roles.length, "roles"), T(e, () => yn(v(t.roles)));
+  console.log("Processing", t.roles.length, "roles"), C(e, () => yn(v(t.roles)));
 }
 function me(e) {
   $.getJSON("/eulogy.json", (n) => _n(e, n));
@@ -1600,7 +1600,7 @@ function fe(e = je, t = wn) {
   for (const o of n.keys())
     t(o, n.get(o));
 }
-function wn(e, t, n = $, o = T) {
+function wn(e, t, n = $, o = C) {
   const r = () => `<span>${v(
     t
   )}</span><span style="float: right; cursor: pointer;" title="Click for another prompt">🔄</span>`, i = n('<div class="alert alert-primary" role="alert"/>');
@@ -1799,7 +1799,7 @@ function Ln({ url: e, title: t, description: n }) {
     </div>
   `;
 }
-async function We(e = w, t = v) {
+async function We(e = x, t = v) {
   try {
     const n = await e(), o = Object.entries(n).map((i) => i[1]), r = t(o);
     return Ln({
@@ -1811,35 +1811,35 @@ async function We(e = w, t = v) {
     return console.error("Error generating random post HTML:", n), "<div>Could not load random post</div>";
   }
 }
-function ao(e = "#e1", t = "#e2", n = "#e3", o = me) {
+function so(e = "#e1", t = "#e2", n = "#e3", o = me) {
   try {
     o(e), o(t), o(n);
   } catch (r) {
     console.error("Error loading random eulogy:", r);
   }
 }
-function lo(e = ge, t = fe, n = pe, o = me, r = T) {
+function ao(e = ge, t = fe, n = pe, o = me, r = C) {
   try {
     e("sunburst", "sunburst_text", new Tn().get_tree()), t(), n(), o("#random-eulogy-role"), r("#random-blog-posts", async () => await We());
   } catch (i) {
     console.error("❌ Error loading enjoy page:", i);
   }
 }
-function co(e = ge, t = fe) {
+function lo(e = ge, t = fe) {
   try {
     e("sunburst", "sunburst_text", new Cn().get_tree()), t();
   } catch (n) {
     console.error("Error loading 7 habits page:", n);
   }
 }
-function uo(e = pe) {
+function co(e = pe) {
   try {
     e();
   } catch (t) {
     console.error("Error loading IG66 page:", t);
   }
 }
-function po(e = Pn, t = In, n = Sn) {
+function uo(e = Pn, t = In, n = Sn) {
   try {
     e("balance-heatmap-rest"), t("balance-heatmap-work"), n("balance-radar-map-ideal");
   } catch (o) {
@@ -1968,14 +1968,14 @@ async function Pn(e, t) {
   else
     console.warn("Plotly is not defined, skipping chart rendering");
 }
-function mo(e = "Topics", t = En, n = fe, o = pe, r = me, i = T) {
+function po(e = "Topics", t = En, n = fe, o = pe, r = me, i = C) {
   try {
     t("sunburst", "sunburst_text", e), n(), o(), r("#random-eulogy-role"), i("#random-blog-posts", async () => await We());
   } catch (s) {
     console.error("Error loading auto-generated sunburst:", s);
   }
 }
-const E = 150, Mn = 2500, Nn = 12e3, An = 2, Rn = /* @__PURE__ */ new Set([
+const k = 150, Mn = 2500, Nn = 12e3, An = 2, Rn = /* @__PURE__ */ new Set([
   "ArrowUp",
   "ArrowDown",
   "ArrowLeft",
@@ -2003,14 +2003,14 @@ function Hn(e, t = document) {
   }
   return null;
 }
-function Bn(e, t = window) {
+function Dn(e, t = window) {
   const n = e.ownerDocument, o = n.scrollingElement || n.documentElement, r = (a) => {
     const l = Number.parseFloat(a);
     return Number.isFinite(l) ? l : 0;
   }, i = r(t.getComputedStyle(o).scrollPaddingTop), s = r(t.getComputedStyle(e).scrollMarginTop);
   return e.getBoundingClientRect().top - i - s;
 }
-function Dn(e = window) {
+function Bn(e = window) {
   const t = () => {
   }, n = e.document;
   if (!e.location.hash || e.__readerScrolled || e.performance?.getEntriesByType?.("navigation")?.[0]?.type === "back_forward") return t;
@@ -2028,16 +2028,16 @@ function Dn(e = window) {
       d();
       return;
     }
-    if (c() - i < E) {
-      p(E);
+    if (c() - i < k) {
+      p(k);
       return;
     }
     const _ = Hn(e.location.hash, n);
     if (!_) {
-      p(E);
+      p(k);
       return;
     }
-    Math.abs(Bn(_, e)) > An && _.scrollIntoView({ block: "start", behavior: "auto" }), p(E);
+    Math.abs(Dn(_, e)) > An && _.scrollIntoView({ block: "start", behavior: "auto" }), p(k);
   };
   function p(_) {
     r || (e.clearTimeout(s), s = e.setTimeout(u, _));
@@ -2051,24 +2051,24 @@ function Dn(e = window) {
   e.addEventListener("scroll", g, { passive: !0 });
   for (const _ of ["wheel", "touchstart", "mousedown", "keydown"])
     e.addEventListener(_, m, { passive: !0, capture: !0 });
-  const h = e.ResizeObserver, b = typeof h == "function" ? new h(() => p(E)) : void 0;
+  const h = e.ResizeObserver, b = typeof h == "function" ? new h(() => p(k)) : void 0;
   b && n.body && b.observe(n.body), b && n.documentElement && b.observe(n.documentElement);
   const J = () => {
-    l = Math.min(l, c() + Mn), p(E);
+    l = Math.min(l, c() + Mn), p(k);
   };
-  return n.readyState === "complete" ? J() : e.addEventListener("load", J, { once: !0 }), p(E), d;
+  return n.readyState === "complete" ? J() : e.addEventListener("load", J, { once: !0 }), p(k), d;
 }
 function On() {
   if (!(typeof window > "u"))
     return window["@algolia/autocomplete-js"]?.autocomplete;
 }
 const zn = "Search Igor's Musings ...", Ae = "/pagefind/", Un = "/search-titles.json";
-function k(e) {
+function L(e) {
   const t = document.createElement("div");
   return t.textContent = e || "", t.innerHTML;
 }
 function N(e) {
-  return k(e).replace(/"/g, "&quot;");
+  return L(e).replace(/"/g, "&quot;");
 }
 function S(e) {
   if (!e) return !1;
@@ -2085,15 +2085,15 @@ function Fn(e) {
   return e && e.replace(/\/index\.html$/, "/").replace(/\.html$/, "");
 }
 const Gn = "/search-pins.json";
-let B = null;
+let D = null;
 async function jn() {
-  return B || (B = (async () => {
+  return D || (D = (async () => {
     const e = await fetch(Gn);
     if (!e.ok) throw new Error(`pins config HTTP ${e.status}`);
     const t = await e.json();
     if (!Array.isArray(t)) throw new Error("pins config is not an array");
     return t;
-  })().catch((e) => (console.warn("Search pins unavailable:", e), B = null, null))), B;
+  })().catch((e) => (console.warn("Search pins unavailable:", e), D = null, null))), D;
 }
 function Re(e) {
   return e.toLowerCase().replace(/[\s-]+/g, "");
@@ -2103,7 +2103,7 @@ async function Wn(e) {
   if (!t || t.length === 0) return [];
   const n = Re(e), o = t.filter((i) => i.match?.some((s) => s && n.includes(Re(s))));
   if (o.length === 0) return [];
-  const r = await w().catch(() => ({}));
+  const r = await x().catch(() => ({}));
   return o.flatMap((i) => i.urls || []).map((i) => ({
     url: i.url,
     title: r?.[i.url]?.title || i.title || i.url,
@@ -2111,44 +2111,34 @@ async function Wn(e) {
     source: "pinned"
   })).filter((i) => S(i.url));
 }
-let D = null;
+let B = null;
 async function qn() {
-  return D || (D = (async () => {
+  return B || (B = (async () => {
     const e = await import(
       /* @vite-ignore */
       `${Ae}pagefind.js`
     );
     return await e.options({ basePath: Ae }), e;
   })().catch((e) => {
-    throw D = null, e;
-  })), D;
+    throw B = null, e;
+  })), B;
 }
-function Yn(e, t, n, o) {
-  const r = e.toLowerCase().split(/\s+/).filter(Boolean), i = t.toLowerCase();
-  return o?.trim() && r.length && r.every((s) => i.includes(s)) ? k(o) : n || "";
-}
-async function Jn(e, t = 10) {
+async function Yn(e, t = 10) {
   if (!e || !e.trim()) return [];
   try {
-    const r = (await (await qn()).search(e)).results.slice(0, t), [i, s] = await Promise.all([
-      Promise.all(r.map((a) => a.data())),
-      w().catch(() => ({}))
-    ]);
-    return i.map((a) => {
-      const l = Fn(a.url), c = a.meta?.title || a.url;
-      return {
-        url: l,
-        title: c,
-        excerpt: Yn(e, c, a.excerpt, s?.[l]?.description),
-        source: "pagefind"
-      };
-    }).filter((a) => S(a.url));
+    const r = (await (await qn()).search(e)).results.slice(0, t);
+    return (await Promise.all(r.map((s) => s.data()))).map((s) => ({
+      url: Fn(s.url),
+      title: s.meta?.title || s.url,
+      excerpt: s.excerpt || "",
+      source: "pagefind"
+    })).filter((s) => S(s.url));
   } catch (n) {
     return console.warn("Pagefind unavailable, falling back to title search:", n), [];
   }
 }
 let O = null;
-async function Xn() {
+async function Jn() {
   return O || (O = (async () => {
     const [{ default: e }, t] = await Promise.all([import("./minisearch.js"), fetch(Un)]);
     if (!t.ok) throw new Error(`title index HTTP ${t.status}`);
@@ -2159,11 +2149,11 @@ async function Xn() {
     return r.addAll(o), r;
   })().catch((e) => (console.warn("Title index unavailable:", e), O = null, null))), O;
 }
-async function Kn(e, t = 5) {
+async function Xn(e, t = 5) {
   if (!e || !e.trim()) return [];
-  const n = await Xn();
+  const n = await Jn();
   if (!n) return [];
-  const o = await w().catch(() => ({}));
+  const o = await x().catch(() => ({}));
   return n.search(e, { fuzzy: 0.3, prefix: !0 }).slice(0, t).map((r) => ({
     url: r.url,
     title: r.title,
@@ -2171,32 +2161,32 @@ async function Kn(e, t = 5) {
     source: "title"
   })).filter((r) => S(r.url));
 }
-async function Vn(e, t = 10) {
+async function Kn(e, t = 10) {
   if (!e || !e.trim()) return [];
   const [n, o, r] = await Promise.all([
     Wn(e),
-    Jn(e, t),
-    Kn(e, 5)
+    Yn(e, t),
+    Xn(e, 5)
   ]), i = /* @__PURE__ */ new Set(), s = [];
   for (const a of [...n, ...o, ...r])
     i.has(a.url) || (i.add(a.url), s.push(a));
   return s.slice(0, t);
 }
-function Zn(e) {
-  return e.source === "pagefind" ? e.excerpt || "" : k(e.excerpt || "");
+function Vn(e) {
+  return e.source === "pagefind" ? e.excerpt || "" : L(e.excerpt || "");
 }
-function Qn(e) {
+function Zn(e) {
   if (!S(e.url))
     return console.warn("Invalid URL skipped in renderSearchHit:", e.url), "<div>Invalid result</div>";
   const t = N(e.url);
   return `
            <span data-url="${t}" style="cursor: pointer;">
-              <b> <a href="${t}">${k(e.title)}</a></b> <span>${Zn(e)}</span>
+              <b> <a href="${t}">${L(e.title)}</a></b> <span>${Vn(e)}</span>
            </span>
         `;
 }
-async function eo() {
-  const e = performance.now(), t = await w(), n = performance.now() - e;
+async function Qn() {
+  const e = performance.now(), t = await x(), n = performance.now() - e;
   console.log(`  📊 [get_random_post] Loaded links in ${n.toFixed(0)}ms`);
   const o = Object.entries(t).map((s) => s[1]), r = v(o);
   return {
@@ -2205,8 +2195,8 @@ async function eo() {
     description: r.description
   };
 }
-async function fo(e = 4) {
-  const t = performance.now(), n = await w(), o = performance.now() - t;
+async function mo(e = 4) {
+  const t = performance.now(), n = await x(), o = performance.now() - t;
   console.log(`  📊 [get_random_posts_batch] Loaded links once in ${o.toFixed(0)}ms`);
   const r = Object.entries(n).map((a) => a[1]), i = [], s = /* @__PURE__ */ new Set();
   for (; i.length < e && i.length < r.length; ) {
@@ -2223,9 +2213,9 @@ async function fo(e = 4) {
   }
   return i;
 }
-async function to(e = 4) {
+async function eo(e = 4) {
   try {
-    const t = performance.now(), n = await w(), o = performance.now() - t;
+    const t = performance.now(), n = await x(), o = performance.now() - t;
     return console.log(`  📊 [get_recent_posts] Loaded links in ${o.toFixed(0)}ms`), Object.entries(n).map(([a, l]) => ({
       url: a,
       title: l.title || a,
@@ -2239,7 +2229,7 @@ async function to(e = 4) {
     return console.error("❌ Error loading recent posts:", t), [];
   }
 }
-async function no(e = 3) {
+async function to(e = 3) {
   return {
     sourceId: "random_posts",
     async getItems() {
@@ -2247,7 +2237,7 @@ async function no(e = 3) {
       return await Promise.all(
         t.map(async (o) => {
           try {
-            return await eo();
+            return await Qn();
           } catch (r) {
             return console.error("Error getting random post:", r), { url: "", title: "Error", description: "Failed to load post" };
           }
@@ -2263,8 +2253,8 @@ async function no(e = 3) {
           dangerouslySetInnerHTML: {
             __html: `
             <span data-url="${N(t.url)}" style="cursor: pointer;">
-           <b> <a href="${N(t.url)}">${k(t.title)}</a></b>
-            <span>${k(t.description)}</span>
+           <b> <a href="${N(t.url)}">${L(t.title)}</a></b>
+            <span>${L(t.description)}</span>
             </span>
             `
           }
@@ -2284,11 +2274,11 @@ async function no(e = 3) {
     }
   };
 }
-async function oo(e = 4) {
+async function no(e = 4) {
   return {
     sourceId: "recent_posts",
     async getItems() {
-      return await to(e);
+      return await eo(e);
     },
     getItemUrl({ item: t }) {
       return t.url;
@@ -2299,8 +2289,8 @@ async function oo(e = 4) {
           dangerouslySetInnerHTML: {
             __html: `
             <span data-url="${N(t.url)}" style="cursor: pointer;">
-           <b> <a href="${N(t.url)}">${k(t.title)}</a></b>
-            <span>${k(t.description)}</span>
+           <b> <a href="${N(t.url)}">${L(t.title)}</a></b>
+            <span>${L(t.description)}</span>
             </span>
             `
           }
@@ -2320,17 +2310,17 @@ async function oo(e = 4) {
     }
   };
 }
-function ro(e, t = 10) {
+function oo(e, t = 10) {
   return {
     sourceId: "featured_posts",
     async getItems() {
-      return await Vn(e, t);
+      return await Kn(e, t);
     },
     templates: {
       item({ item: n, createElement: o }) {
         return o("div", {
           dangerouslySetInnerHTML: {
-            __html: Qn(n)
+            __html: Zn(n)
           }
         });
       },
@@ -2354,15 +2344,15 @@ function ro(e, t = 10) {
     }
   };
 }
-async function go(e, t = {}) {
+async function fo(e, t = {}) {
   const { featuredCount: n = 10, recentCount: o = 4, randomCount: r = 3 } = t, i = On();
   if (!i) {
     console.error("Autocomplete is not defined");
     return;
   }
-  const s = await no(r), a = await oo(o);
+  const s = await to(r), a = await no(o);
   function l({ query: d }) {
-    return !d || d.length === 0 ? [a, s] : [ro(d, n)];
+    return !d || d.length === 0 ? [a, s] : [oo(d, n)];
   }
   const c = e.startsWith("#") ? e : `#${e}`;
   if ($(c).length === 0) {
@@ -2378,7 +2368,7 @@ async function go(e, t = {}) {
     detachedMediaQuery: ""
   });
 }
-Dn();
+Bn();
 $(document).ready(() => {
   Ke(F);
   const e = () => {
@@ -2387,46 +2377,46 @@ $(document).ready(() => {
     const o = $("#search-box");
     o.length > 0 && o.focus();
   };
-  e(), io(), so();
+  e(), ro(), io();
   const n = ["item1", "item2", "item3"];
-  console.log("Random item:", v(n)), console.log("Shuffled items:", He([...n])), w().then((o) => {
+  console.log("Random item:", v(n)), console.log("Shuffled items:", He([...n])), x().then((o) => {
     console.log("Links loaded, count:", Object.keys(o).length);
   }), console.log("Blog JavaScript initialized");
 });
-function io() {
+function ro() {
   $("#toc-content").length > 0 && console.log("TOC initialized");
 }
-function so() {
+function io() {
   $("#search-box").length > 0 && console.log("Search initialized");
 }
 export {
-  go as CreateAutoComplete,
+  fo as CreateAutoComplete,
   Z as MakeBackLinkHTML,
   f as TreeNode,
   fe as add_random_prompts,
   ge as add_sunburst,
   En as add_sunburst_from_dom,
-  T as append_randomizer_div,
+  C as append_randomizer_div,
   Ke as defer,
-  w as get_link_info,
-  Be as get_random_page_url,
-  eo as get_random_post,
-  fo as get_random_posts_batch,
-  to as get_recent_posts,
+  x as get_link_info,
+  De as get_random_page_url,
+  Qn as get_random_post,
+  mo as get_random_posts_batch,
+  eo as get_recent_posts,
   Wt as goToRandomPage,
   it as initRecentAllPosts,
-  co as load_7_habits,
-  mo as load_auto_sunburst,
-  po as load_balance,
-  lo as load_enjoy2,
+  lo as load_7_habits,
+  po as load_auto_sunburst,
+  uo as load_balance,
+  ao as load_enjoy2,
   F as load_globals,
-  uo as load_ig66,
-  ao as load_random_eulogy,
+  co as load_ig66,
+  so as load_random_eulogy,
   Ln as makePostPreviewHTML,
   We as make_random_post_html,
   v as random_from_list,
-  Qn as renderSearchHit,
-  Vn as searchBlog,
+  Zn as renderSearchHit,
+  Kn as searchBlog,
   He as shuffle
 };
 //# sourceMappingURL=index.js.map
