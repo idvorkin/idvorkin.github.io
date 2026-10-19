@@ -307,7 +307,7 @@ CHOP widened what I'll attempt. iOS apps I'd never have built by hand ([a lift t
 
 {% include summarize-page.html src="/pet-projects" %}
 
-CHOP has made it so much easier to spin up new ideas and actually finish them.
+CHOP has made it so much easier to spin up new ideas and actually finish them. [Build Stats](/build-stats) keeps the receipts: merged PRs, lines changed and commits, month over month.
 
 ### Testing and Evals
 

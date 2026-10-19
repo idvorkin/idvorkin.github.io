@@ -1,4 +1,4 @@
-// Build stats dashboard: renders build-stats.json (made by build_stats.py) into #build-stats.
+// Build stats dashboard: renders build-stats.json (made by build_stats.py) into #build-stats-app.
 // Vanilla JS + hand-drawn SVG, no dependencies. Used by /build-stats and the Lavish mockup.
 //
 // Group by Month / Quarter / Half-year sets the bucket size for the charts and the
@@ -566,7 +566,7 @@
     render(root, data, state);
   };
 
-  const auto = document.getElementById("build-stats");
+  const auto = document.getElementById("build-stats-app");
   if (auto && auto.dataset.src) {
     fetch(auto.dataset.src)
       .then((r) => {

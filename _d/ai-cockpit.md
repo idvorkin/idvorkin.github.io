@@ -143,7 +143,7 @@ The Agent Dashboard knows what my agents are _doing_ right now. GitHub knows wha
 - [Open PRs involving idvorkin-ai-tools](https://github.com/pulls/2294839?q=+%28involves%3Aidvorkin-ai-tools%29+++++state%3Aopen+archived%3Afalse+sort%3Aupdated-desc+created%3A%3E%40today-4w+)
 - [Open issues & PRs involving idvorkin-ai-tools](https://github.com/issues/SSC_kgDOACMG4Q?q=%28involves%3Aidvorkin-ai-tools%29%20state%3Aopen%20archived%3Afalse%20sort%3Aupdated-desc%20created%3A%3E%40today-4w%20is%3Aissue%20is%3Apr)
 
-One tab, one glance, full triage queue. Before I had these, agent PRs on stale branches just vanished from my attention; now the staleness is the sort key.
+One tab, one glance, full triage queue. Before I had these, agent PRs on stale branches just vanished from my attention; now the staleness is the sort key. For the long view, how much of that queue actually merges month over month, I check [Build Stats](/build-stats).
 
 ### Stream Deck - The Physical Buttons
 
