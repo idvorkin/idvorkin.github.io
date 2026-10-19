@@ -249,6 +249,43 @@ describe("Search Module", () => {
       expect(results[0].source).toBe("pagefind");
     });
 
+    it("shows the page description, not the match window, when the query hits the title", async () => {
+      pagefindMock.search.mockResolvedValue({
+        results: [
+          {
+            data: async () => ({
+              url: "/kettlebell.html",
+              meta: { title: "Kettlebells - A rock with a handle" },
+              excerpt: "Loading <mark>kettlebell</mark> stats...",
+            }),
+          },
+        ],
+      });
+      vi.mocked(shared.get_link_info).mockResolvedValue({
+        "/kettlebell": { url: "/kettlebell", title: "Kettlebells", description: "Swing <heavy> things" },
+      } as any);
+
+      const [hit] = await searchPagefind("Kettlebell");
+      expect(hit.excerpt).toBe("Swing &lt;heavy&gt; things");
+    });
+
+    it("keeps Pagefind's highlighted excerpt for body-only matches", async () => {
+      pagefindMock.search.mockResolvedValue({
+        results: [
+          {
+            data: async () => ({
+              url: "/kettlebell.html",
+              meta: { title: "Kettlebells - A rock with a handle" },
+              excerpt: "a <mark>swing</mark> a day",
+            }),
+          },
+        ],
+      });
+
+      const [hit] = await searchPagefind("swing");
+      expect(hit.excerpt).toBe("a <mark>swing</mark> a day");
+    });
+
     it("honors the result limit", async () => {
       pagefindMock.search.mockResolvedValue({
         results: Array.from({ length: 25 }, (_, i) => ({
