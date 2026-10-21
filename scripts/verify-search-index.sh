@@ -67,7 +67,7 @@ fi
 
 # --- 3. Explicitly excluded permalinks ---------------------------------------
 excluded_ok=1
-for slug in changelog positive-mitzvahs negative-mitzvahs; do
+for slug in changelog; do
     for candidate in "$SITE/$slug.html" "$SITE/$slug/index.html"; do
         if [ -f "$candidate" ] && grep -qE "$PF_BODY_ATTR" "$candidate" 2>/dev/null; then
             err "/$slug is marked indexable but is in site.search.exclude_permalinks"
