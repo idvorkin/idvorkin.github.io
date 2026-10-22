@@ -46,7 +46,7 @@ The jump from agent to claw is the jump from tool to colleague. My colleague [Da
 
 ## Challenges: Business Logic, Goop, Infra
 
-{% include local_image_float_right.html src="raccoon-goop.webp" alt="A raccoon in a GOOP WRANGLER shirt stands knee-deep in a huge tangle of cables and duct tape, between a thin Business Logic layer on top and a fast Infra conveyor belt below" %}
+{% include claw-layers-diagram.html %}
 
 Building a claw breaks into three layers, and the proportions are nothing like what I expected. The framework is from my [/design](/design#business-logic-platforms-and-goop) post, where I called it Business Logic / Platforms / Goop for boring enterprise software. Rename Platforms to Infra and it maps onto claws exactly.
 
