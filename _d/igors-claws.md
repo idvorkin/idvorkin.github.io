@@ -46,6 +46,8 @@ The jump from agent to claw is the jump from tool to colleague. My colleague [Da
 
 ## Challenges: Business Logic, Goop, Infra
 
+{% include local_image_float_right.html src="raccoon-goop.webp" alt="A raccoon in a GOOP WRANGLER shirt stands knee-deep in a huge tangle of cables and duct tape, between a thin Business Logic layer on top and a fast Infra conveyor belt below" %}
+
 Building a claw breaks into three layers, and the proportions are nothing like what I expected. The framework is from my [/design](/design#business-logic-platforms-and-goop) post, where I called it Business Logic / Platforms / Goop for boring enterprise software. Rename Platforms to Infra and it maps onto claws exactly.
 
 **Business logic** is what Larry, Wally and Tony actually do for me. Larry runs my Saturday review and pushes back when I keep restarting the same habit. Tony has a voice and a personality. The core is small and stable; "what Larry _does_" fits on a page.
