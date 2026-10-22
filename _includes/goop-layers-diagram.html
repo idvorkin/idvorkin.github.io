@@ -1,0 +1,194 @@
+{% comment %} Software architecture as three stacked layers: Business Logic on
+top, Platforms at the bottom, and Goop in between binding the two. Each layer is
+a row of blocks with a one-line definition from the /design post. Plain HTML and
+CSS so it reflows on a phone; light and dark via prefers-color-scheme and the
+Bootstrap data-bs-theme switch, like the sleight-of-mouth includes. Used by:
+_td/design.md {% endcomment %}
+<style>
+  .goopl {
+    --goopl-ink: #1b1f24;
+    --goopl-soft: #5a636e;
+    --goopl-rule: #d8dbe0;
+    --goopl-paper: #ffffff;
+    --goopl-chip: #ffffff;
+    --goopl-biz: #2f6f8f;
+    --goopl-biz-bg: #e8f1f5;
+    --goopl-goop: #a8741a;
+    --goopl-goop-bg: #f8f0e0;
+    --goopl-plat: #4b5563;
+    --goopl-plat-bg: #eef0f2;
+    box-sizing: border-box;
+    max-width: 640px;
+    margin: 1.5em auto;
+    padding: 0.6rem;
+    background: var(--goopl-paper);
+    border: 1px solid var(--goopl-rule);
+    border-radius: 4px;
+    color: var(--goopl-ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      sans-serif;
+    line-height: 1.35;
+  }
+  .goopl * {
+    box-sizing: border-box;
+  }
+  @media (prefers-color-scheme: dark) {
+    .goopl {
+      --goopl-ink: #e6e8eb;
+      --goopl-soft: #aab2bc;
+      --goopl-rule: #3a4049;
+      --goopl-paper: #171a1f;
+      --goopl-chip: #1e2228;
+      --goopl-biz: #7fb7d6;
+      --goopl-biz-bg: #22333d;
+      --goopl-goop: #e0b35a;
+      --goopl-goop-bg: #3a3020;
+      --goopl-plat: #aab2bc;
+      --goopl-plat-bg: #2a2f36;
+    }
+  }
+  [data-bs-theme="dark"] .goopl {
+    --goopl-ink: #e6e8eb;
+    --goopl-soft: #aab2bc;
+    --goopl-rule: #3a4049;
+    --goopl-paper: #171a1f;
+    --goopl-chip: #1e2228;
+    --goopl-biz: #7fb7d6;
+    --goopl-biz-bg: #22333d;
+    --goopl-goop: #e0b35a;
+    --goopl-goop-bg: #3a3020;
+    --goopl-plat: #aab2bc;
+    --goopl-plat-bg: #2a2f36;
+  }
+  .goopl-layer {
+    padding: 0.6rem 0.8rem 0.7rem;
+    border: 2px solid var(--goopl-accent);
+    border-radius: 3px;
+    background: var(--goopl-bg);
+  }
+  .goopl-biz {
+    --goopl-accent: var(--goopl-biz);
+    --goopl-bg: var(--goopl-biz-bg);
+  }
+  .goopl-goop {
+    --goopl-accent: var(--goopl-goop);
+    --goopl-bg: var(--goopl-goop-bg);
+    border-style: dashed;
+  }
+  .goopl-plat {
+    --goopl-accent: var(--goopl-plat);
+    --goopl-bg: var(--goopl-plat-bg);
+  }
+  /* The joints: Goop is fastened to the layer above and the layer below. */
+  .goopl-joint {
+    display: flex;
+    justify-content: space-around;
+    height: 0.9rem;
+    padding: 0 12%;
+  }
+  .goopl-joint span {
+    width: 4px;
+    background: var(--goopl-goop);
+    border-radius: 2px;
+  }
+  .goopl-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.15rem 0.6rem;
+    margin-bottom: 0.45rem;
+  }
+  .goopl-name {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--goopl-accent);
+  }
+  .goopl-def {
+    font-size: 0.88rem;
+    color: var(--goopl-soft);
+  }
+  .goopl-blocks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+    gap: 0.35rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .goopl-blocks li {
+    margin: 0;
+    padding: 0.3rem 0.4rem;
+    font-size: 0.85rem;
+    text-align: center;
+    background: var(--goopl-chip);
+    border: 1px solid var(--goopl-rule);
+    border-radius: 3px;
+  }
+  .goopl-caption {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--goopl-soft);
+    text-align: center;
+  }
+  .goopl-caption strong {
+    color: var(--goopl-ink);
+  }
+</style>
+<figure
+  class="goopl"
+  role="img"
+  aria-label="Software architecture diagram: a Business Logic layer on top, a Platforms layer at the bottom, and a Goop layer in between that binds the two."
+>
+  <div class="goopl-layer goopl-biz">
+    <div class="goopl-head">
+      <span class="goopl-name">Business Logic</span>
+      <span class="goopl-def"
+        >What your business would do even without computers.</span
+      >
+    </div>
+    <ul class="goopl-blocks">
+      <li>Use cases</li>
+      <li>Business rules</li>
+      <li>Workflows</li>
+    </ul>
+  </div>
+  <div class="goopl-joint" aria-hidden="true">
+    <span></span><span></span><span></span>
+  </div>
+  <div class="goopl-layer goopl-goop">
+    <div class="goopl-head">
+      <span class="goopl-name">Goop</span>
+      <span class="goopl-def"
+        >Covers the gap between business logic and platforms. Fits your use
+        cases exactly, but you build and maintain it.</span
+      >
+    </div>
+    <ul class="goopl-blocks">
+      <li>Adapters</li>
+      <li>Glue code</li>
+      <li>Config</li>
+      <li>Integrations</li>
+    </ul>
+  </div>
+  <div class="goopl-joint" aria-hidden="true">
+    <span></span><span></span><span></span>
+  </div>
+  <div class="goopl-layer goopl-plat">
+    <div class="goopl-head">
+      <span class="goopl-name">Platforms</span>
+      <span class="goopl-def"
+        >Pre-existing building blocks you assemble with goop.</span
+      >
+    </div>
+    <ul class="goopl-blocks">
+      <li>Databases</li>
+      <li>Cloud services</li>
+      <li>Frameworks</li>
+      <li>Operating systems</li>
+    </ul>
+  </div>
+  <figcaption class="goopl-caption">
+    <strong>Software architecture:</strong> goop binds your business logic to
+    the platforms underneath.
+  </figcaption>
+</figure>
