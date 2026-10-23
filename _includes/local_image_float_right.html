@@ -1,6 +1,5 @@
-<img
-  src="/images/{{include.src}}"
-  style="shape-outside:url(/images/{{include.src}}); shape-margin: 1.5em;"
-  class="float-right-img"
-  alt="{{ include.alt }}"
-/>
+{%- comment -%} Optional link= opens a different image (e.g. a full-detail
+version) in the post's GLightbox; without it, image-zoom.ts links the image to
+itself. Keep the output on one line: kramdown mangles a multi-line <a>.
+{%- endcomment -%}
+{%- if include.link -%}<a href="/images/{{ include.link }}" class="glightbox" data-gallery="post-images" data-description="{{ include.alt }}">{%- endif -%}<img src="/images/{{ include.src }}" style="shape-outside:url(/images/{{ include.src }}); shape-margin: 1.5em;" class="float-right-img" alt="{{ include.alt }}" />{%- if include.link -%}</a>{%- endif -%}
