@@ -60,7 +60,11 @@ Developers love building complex technically challenging systems - makes them fe
 
 ### Frameworks vs Libraries: who calls whom
 
+{% include call-direction-diagram.html %}
+
 A library is a platform you call. A framework is a platform that calls you. That flip is [inversion of control](https://martinfowler.com/bliki/InversionOfControl.html), the "Hollywood principle": don't call us, we'll call you.
+
+{% include local_image_float_right.html src="raccoon-frameworks.webp" alt="A two-box felt diorama. Top box, labeled LIBRARY: the raccoon sits at a desk like the boss, on the phone, with little toolbox characters waiting on a shelf. Bottom box, labeled FRAMEWORK: a machine of gears points a megaphone at the raccoon, who sits in numbered slot 3" %}
 
 Whoever owns the control flow decides where your business logic lives. With libraries, your goop owns `main` and calls platforms when it needs them, so the business logic goes wherever you put it. With a framework, the framework owns `main`, and your business logic goes in the slots it hands you: the controller, the component, the lifecycle hook.
 
