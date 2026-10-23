@@ -1,9 +1,9 @@
 {% comment %} Software architecture as three stacked layers: Business Logic on
 top, Platforms at the bottom, and Goop in between binding the two. Each layer is
 a row of blocks with a one-line definition from the /design post. Plain HTML and
-CSS so it reflows on a phone; light and dark via prefers-color-scheme and the
-Bootstrap data-bs-theme switch, like the sleight-of-mouth includes. Used by:
-_td/design.md {% endcomment %}
+CSS so it reflows on a phone. Spans the text column like the blog's images;
+light only, since the blog has no dark theme. Used by: _td/design.md {%
+endcomment %}
 <style>
   .goopl {
     --goopl-ink: #1b1f24;
@@ -18,47 +18,17 @@ _td/design.md {% endcomment %}
     --goopl-plat: #4b5563;
     --goopl-plat-bg: #eef0f2;
     box-sizing: border-box;
-    max-width: 640px;
-    margin: 1.5em auto;
-    padding: 0.6rem;
+    width: 100%;
+    margin: 1.25rem 0;
+    padding: 0;
     background: var(--goopl-paper);
-    border: 1px solid var(--goopl-rule);
-    border-radius: 4px;
     color: var(--goopl-ink);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      sans-serif;
+    font-family:
+      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     line-height: 1.35;
   }
   .goopl * {
     box-sizing: border-box;
-  }
-  @media (prefers-color-scheme: dark) {
-    .goopl {
-      --goopl-ink: #e6e8eb;
-      --goopl-soft: #aab2bc;
-      --goopl-rule: #3a4049;
-      --goopl-paper: #171a1f;
-      --goopl-chip: #1e2228;
-      --goopl-biz: #7fb7d6;
-      --goopl-biz-bg: #22333d;
-      --goopl-goop: #e0b35a;
-      --goopl-goop-bg: #3a3020;
-      --goopl-plat: #aab2bc;
-      --goopl-plat-bg: #2a2f36;
-    }
-  }
-  [data-bs-theme="dark"] .goopl {
-    --goopl-ink: #e6e8eb;
-    --goopl-soft: #aab2bc;
-    --goopl-rule: #3a4049;
-    --goopl-paper: #171a1f;
-    --goopl-chip: #1e2228;
-    --goopl-biz: #7fb7d6;
-    --goopl-biz-bg: #22333d;
-    --goopl-goop: #e0b35a;
-    --goopl-goop-bg: #3a3020;
-    --goopl-plat: #aab2bc;
-    --goopl-plat-bg: #2a2f36;
   }
   .goopl-layer {
     padding: 0.6rem 0.8rem 0.7rem;

@@ -1,8 +1,8 @@
 {% comment %} Frameworks vs libraries as call direction: two side-by-side
 columns. Library: your code calls the library. Framework: the framework calls
 your code, in the slots it gives you. Plain HTML and CSS so it reflows on a
-phone; light and dark via prefers-color-scheme and the Bootstrap data-bs-theme
-switch, like goop-layers-diagram.html. Used by: _td/design.md {% endcomment %}
+phone. Spans the text column like the blog's images; light only, like
+goop-layers-diagram.html. Used by: _td/design.md {% endcomment %}
 <style>
   .calldir {
     --calldir-ink: #1b1f24;
@@ -15,12 +15,10 @@ switch, like goop-layers-diagram.html. Used by: _td/design.md {% endcomment %}
     --calldir-plat: #4b5563;
     --calldir-plat-bg: #eef0f2;
     box-sizing: border-box;
-    max-width: 640px;
-    margin: 1.5em auto;
-    padding: 0.6rem;
+    width: 100%;
+    margin: 1.25rem 0;
+    padding: 0;
     background: var(--calldir-paper);
-    border: 1px solid var(--calldir-rule);
-    border-radius: 4px;
     color: var(--calldir-ink);
     font-family:
       -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -28,30 +26,6 @@ switch, like goop-layers-diagram.html. Used by: _td/design.md {% endcomment %}
   }
   .calldir * {
     box-sizing: border-box;
-  }
-  @media (prefers-color-scheme: dark) {
-    .calldir {
-      --calldir-ink: #e6e8eb;
-      --calldir-soft: #aab2bc;
-      --calldir-rule: #3a4049;
-      --calldir-paper: #171a1f;
-      --calldir-chip: #1e2228;
-      --calldir-you: #7fb7d6;
-      --calldir-you-bg: #22333d;
-      --calldir-plat: #aab2bc;
-      --calldir-plat-bg: #2a2f36;
-    }
-  }
-  [data-bs-theme="dark"] .calldir {
-    --calldir-ink: #e6e8eb;
-    --calldir-soft: #aab2bc;
-    --calldir-rule: #3a4049;
-    --calldir-paper: #171a1f;
-    --calldir-chip: #1e2228;
-    --calldir-you: #7fb7d6;
-    --calldir-you-bg: #22333d;
-    --calldir-plat: #aab2bc;
-    --calldir-plat-bg: #2a2f36;
   }
   .calldir-cols {
     display: grid;
