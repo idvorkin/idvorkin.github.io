@@ -13,17 +13,18 @@ Software is measured in two dimensions: use cases (end user behavior) and mallea
 <!-- vim-markdown-toc-start -->
 
 - [Design and architecture](#design-and-architecture)
-    - [Software - Use cases and Malleability](#software---use-cases-and-malleability)
-    - [Business Logic, Platforms and Goop](#business-logic-platforms-and-goop)
-    - [Minimize your investment in goop.](#minimize-your-investment-in-goop)
-    - [Picking the right level of abstraction for your business logic.](#picking-the-right-level-of-abstraction-for-your-business-logic)
-    - [Is Fault Free possible](#is-fault-free-possible)
-    - [Paradigms: Structured, Object Oriented, Functional](#paradigms-structured-object-oriented-functional)
-    - [DRY vs WET vs MOIST Programming](#dry-vs-wet-vs-moist-programming)
+  - [Software - Use cases and Malleability](#software---use-cases-and-malleability)
+  - [Business Logic, Platforms and Goop](#business-logic-platforms-and-goop)
+  - [Minimize your investment in goop](#minimize-your-investment-in-goop)
+  - [Frameworks vs Libraries: who calls whom](#frameworks-vs-libraries-who-calls-whom)
+  - [Picking the right level of abstraction for your business logic](#picking-the-right-level-of-abstraction-for-your-business-logic)
+  - [Is Fault Free possible](#is-fault-free-possible)
+  - [Paradigms: Structured, Object Oriented, Functional](#paradigms-structured-object-oriented-functional)
+  - [DRY vs WET vs MOIST Programming](#dry-vs-wet-vs-moist-programming)
 - [Testing](#testing)
 - [Design Patterns](#design-patterns)
-    - [Architecture Patterns](#architecture-patterns)
-    - [OO Patterns](#oo-patterns)
+  - [Architecture Patterns](#architecture-patterns)
+  - [OO Patterns](#oo-patterns)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc-end -->
@@ -56,6 +57,17 @@ With agents doing the writing, these two dimensions are the two jobs an engineer
 ### Minimize your investment in goop
 
 Developers love building complex technically challenging systems - makes them feel like they're doing hard things.
+
+### Frameworks vs Libraries: who calls whom
+
+A library is a platform you call. A framework is a platform that calls you. That flip is [inversion of control](https://martinfowler.com/bliki/InversionOfControl.html), the "Hollywood principle": don't call us, we'll call you.
+
+Whoever owns the control flow decides where your business logic lives. With libraries, your goop owns `main` and calls platforms when it needs them, so the business logic goes wherever you put it. With a framework, the framework owns `main`, and your business logic goes in the slots it hands you: the controller, the component, the lifecycle hook.
+
+- **Frameworks** are fast to start, because they ship most of the goop. They're hard to leave: your business logic takes the framework's shape, so leaving means a rewrite, and you ride its upgrade treadmill whether or not the new version helps your use cases.
+- **Libraries** mean more goop, but you keep control. Swapping one is a change behind an interface, not a rewrite.
+
+Either way, keep the business logic from depending on framework types ([Dependency Inversion](#oo-patterns)). Then if you do leave, you rewrite goop, not the business.
 
 ### Picking the right level of abstraction for your business logic
 
