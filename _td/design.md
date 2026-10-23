@@ -64,8 +64,6 @@ Developers love building complex technically challenging systems - makes them fe
 
 A library is a platform you call. A framework is a platform that calls you. That flip is [inversion of control](https://martinfowler.com/bliki/InversionOfControl.html), the "Hollywood principle": don't call us, we'll call you.
 
-{% include local_image_float_right.html src="raccoon-frameworks.webp" alt="A two-box felt diorama. Top box, labeled LIBRARY: the raccoon sits at a desk like the boss, on the phone, with little toolbox characters waiting on a shelf. Bottom box, labeled FRAMEWORK: a machine of gears points a megaphone at the raccoon, who sits in numbered slot 3" %}
-
 Whoever owns the control flow decides where your business logic lives. With libraries, your goop owns `main` and calls platforms when it needs them, so the business logic goes wherever you put it. With a framework, the framework owns `main`, and your business logic goes in the slots it hands you: the controller, the component, the lifecycle hook.
 
 - **Frameworks** are fast to start, because they ship most of the goop. They're hard to leave: your business logic takes the framework's shape, so leaving means a rewrite, and you ride its upgrade treadmill whether or not the new version helps your use cases.
