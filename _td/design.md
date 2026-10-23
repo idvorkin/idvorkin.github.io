@@ -42,11 +42,11 @@ With agents doing the writing, these two dimensions are the two jobs an engineer
 
 ### Business Logic, Platforms and Goop
 
-{% include goop-layers-diagram.html %}
-
-{% include local_image_float_right.html src="raccoon-goop.webp" alt="Three stacked layers: a thin Business Logic slab of flowchart blocks and gears on top, a huge middle layer of Goop where a raccoon stands knee-deep in tangled cables and duct tape wiring things together, and a machine-like Platforms base of gears and glowing blocks at the bottom" %}
+{% include local_image_float_right.html src="design-goop-layers.svg" link="design-goop-layers-full.webp" alt="Software architecture: Business Logic on top, Platforms at the bottom, and Goop in between binding the two. Goop covers the gap between business logic and platforms; it fits your use cases exactly, but you build and maintain it." %}
 
 **Business logic** is stuff your business would do even if we didn't have computers. "E.g. Pay the employees, keep track of library books that have been rented out".
+
+{% include local_image_float_right.html src="raccoon-goop.webp" alt="Three stacked layers: a thin Business Logic slab of flowchart blocks and gears on top, a huge middle layer of Goop where a raccoon stands knee-deep in tangled cables and duct tape wiring things together, and a machine-like Platforms base of gears and glowing blocks at the bottom" %}
 
 **Implementation details** is stuff that is created to achieve the business logic. Implementation details, are composed of building blocks, the lowest of level of which are composable platforms.
 
@@ -54,13 +54,15 @@ With agents doing the writing, these two dimensions are the two jobs an engineer
 
 **Goop** You need goop to cover the gap between the business logic and the platforms you use. The advantage of goop is that it perfectly matches your use cases. However, the downside is 1) you need to build and maintain it and you are resource constrained 2) once the platform does your goop, it'll do a better job of it then you would because 1) they are the domain expects 2) you can't afford to make awesome goop.
 
+<div style="clear:both"></div>
+
 ### Minimize your investment in goop
 
 Developers love building complex technically challenging systems - makes them feel like they're doing hard things.
 
 ### Frameworks vs Libraries: who calls whom
 
-{% include call-direction-diagram.html %}
+{% include local_image_float_right.html src="design-call-direction.svg" link="design-call-direction-full.webp" alt="Who calls whom. Library: your code calls the library, and you own main. Framework: the framework calls your code, in the slots it gives you (controller, component, hook), and it owns main." %}
 
 A library is a platform you call. A framework is a platform that calls you. That flip is [inversion of control](https://martinfowler.com/bliki/InversionOfControl.html), the "Hollywood principle": don't call us, we'll call you.
 
@@ -70,6 +72,8 @@ Whoever owns the control flow decides where your business logic lives. With libr
 - **Libraries** mean more goop, but you keep control. Swapping one is a change behind an interface, not a rewrite.
 
 Either way, keep the business logic from depending on framework types ([Dependency Inversion](#oo-patterns)). Then if you do leave, you rewrite goop, not the business.
+
+<div style="clear:both"></div>
 
 ### Picking the right level of abstraction for your business logic
 

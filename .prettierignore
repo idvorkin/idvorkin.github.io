@@ -30,3 +30,7 @@ _includes/pagefind-attrs.html
 # onto one line, which glues the note paragraph onto </figure> with no
 # blank line — kramdown then stops treating it as its own markdown block.
 _includes/den_strip.html
+
+# Must emit one line: prettier splits the optional <a ...> wrapper across
+# lines and kramdown then escapes it into a blockquote.
+_includes/local_image_float_right.html
