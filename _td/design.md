@@ -44,9 +44,9 @@ With agents doing the writing, these two dimensions are the two jobs an engineer
 
 {% include goop-layers-diagram.html %}
 
-**Business logic** is stuff your business would do even if we didn't have computers. "E.g. Pay the employees, keep track of library books that have been rented out".
-
 {% include local_image_float_right.html src="raccoon-goop.webp" alt="Three stacked layers: a thin Business Logic slab of flowchart blocks and gears on top, a huge middle layer of Goop where a raccoon stands knee-deep in tangled cables and duct tape wiring things together, and a machine-like Platforms base of gears and glowing blocks at the bottom" %}
+
+**Business logic** is stuff your business would do even if we didn't have computers. "E.g. Pay the employees, keep track of library books that have been rented out".
 
 **Implementation details** is stuff that is created to achieve the business logic. Implementation details, are composed of building blocks, the lowest of level of which are composable platforms.
 
