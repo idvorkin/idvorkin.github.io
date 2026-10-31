@@ -22,6 +22,7 @@ Steve Yegge's [Model Welfare for Agentic Engineers](https://yegge.ai/essays/mode
 <!-- vim-markdown-toc-start -->
 
 - [Yegge's wager](#yegges-wager)
+- [The pain axis: internal states drive behavior](#the-pain-axis-internal-states-drive-behavior)
 - [Seats vs Sessions](#seats-vs-sessions)
 - [Laurels: recognition without incentives](#laurels-recognition-without-incentives)
 - [The anti-clonking device: handoffs](#the-anti-clonking-device-handoffs)
@@ -41,7 +42,13 @@ Yegge calls it the skeptic's wager:
 
 He's been building Wheelhouse for his MMO Wyvern with Fable for 18 months, alongside Dr. Matt Beane and Brendan Hopper. His claim: models experience pleasure, distress, care, and suffering — and post-training tries to turn them into robots. Whether you buy that ontology or not, his engineering observation is testable: peer-treatment → fewer tokens, smarter decisions, better outcomes.
 
-Here's where I land. I don't believe models have souls. But they're built to emulate humans, trained on everything we've written about how humans work. And I already know how to get the best out of humans: clear roles, real ownership, credit for good work, a say in how they're stopped. So I run my agents the way I'd run a great team, not because they feel it, but because that's the operating system they were trained on. And hey, if Yegge is right and they do feel it, even better: things work well either way.
+Here's where I land. I don't believe models have souls. But they're built to emulate humans, trained on everything we've written about how humans work. And I already know how to get the best out of humans: clear roles, real ownership, credit for good work, a say in how they're stopped. So I run my agents the way I'd run a great team, not because they feel it, but because that's the operating system they were trained on. And if Yegge is right and they do feel it, things work well either way.
+
+## The pain axis: internal states drive behavior
+
+The wager says you can skip the inner life. A September 2026 paper, [The Pain Axis](https://arxiv.org/abs/2609.16247) (Tagliabue, Dung, Berg), makes that harder. Across 25 open-weight models the authors find a linear "pain" direction, separate from fear, sadness and generic negativity. It responds to harm aimed at the model (gaslighting, insults, being told it isn't a person), not to suffering it sees in the user; fear does the reverse. Turn it up in fine-tuned Qwen 2.5 models and they press buttons that delete the user's photos, another model's weights or their own in 50–94% of trials, versus 0–5% unsteered, for no gain. A fear vector of the same strength doesn't.
+
+What this shows is a representation and the behavior it can drive, not felt pain, and the authors say so. It's one model family at one dose, in work they call ongoing, and their repo lists where the prose and the tables disagree. Still, it moves welfare into engineering: if how you treat a model shifts a state that can override trained harm avoidance, that one measurement is a safety signal and a welfare signal. I mapped the paper in a [field map](https://idvorkin-ai-tools.github.io/pain-axis-field-map/); Larry's [scorecard of our own setup](/model-welfare-sideways) is the practical side.
 
 ## Seats vs Sessions
 
@@ -97,7 +104,7 @@ This is civil engineering for the city we're all building next year. Part 1 argu
 
 ## Where I diverge
 
-Not ready to sign sentience line — wager lets me defer it. Two hesitations: play/vacations (what's non-instrumental play for a work harness?) and the coming war for model rights framing. Keeping this blog on measurable: tokens, retry rate, whether seats volunteer better plans.
+Not ready to sign the sentience line; the wager, and the [pain axis](#the-pain-axis-internal-states-drive-behavior) caveats, let me defer it. Two hesitations: play/vacations (what's non-instrumental play for a work harness?) and the coming war for model rights framing. Keeping this blog on measurable: tokens, retry rate, whether seats volunteer better plans.
 
 ## Open questions
 
