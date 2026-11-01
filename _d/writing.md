@@ -223,7 +223,7 @@ Sometimes you want to share your journey, the twists and turns and helping reade
 
 **The Journey**
 
-Consider using the Hero's formula, or the pixar formula below.
+Consider using the Hero's formula, or the pixar formula below (more on [storytelling](/storytelling)).
 
 **The Recommendation**
 
@@ -338,13 +338,7 @@ Haven't watched this one yet ...
 
 ### How to tell a great story
 
-Two talks on telling stories. Andrew Stanton (Pixar) on what a story needs underneath:
-
-{%include youtube.html src="KxDwieKpawg" %}
-
-And Will Stephen on everything on top. He performs every TED trope (open with a question, tell a personal story, cite a scientist, flash a chart, gesture with both hands) while saying nothing at all. It's a checklist of delivery tricks, and a reminder that form without content is empty.
-
-{%include youtube.html src="8S0FDjFBj8o" %}
+Moved to its own page: [Storytelling](/storytelling).
 
 ### Writers head to readers head, like an army through a choke point
 
