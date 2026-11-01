@@ -338,9 +338,13 @@ Haven't watched this one yet ...
 
 ### How to tell a great story
 
-Doesn't really fit, but I do enjoy this story
+Two talks on telling stories. Andrew Stanton (Pixar) on what a story needs underneath:
 
 {%include youtube.html src="KxDwieKpawg" %}
+
+And Will Stephen on everything on top. He performs every TED trope (open with a question, tell a personal story, cite a scientist, flash a chart, gesture with both hands) while saying nothing at all. It's a checklist of delivery tricks, and a reminder that form without content is empty.
+
+{%include youtube.html src="8S0FDjFBj8o" %}
 
 ### Writers head to readers head, like an army through a choke point
 
