@@ -1,5 +1,18 @@
 [
   {
+    "num": 15,
+    "title": "Direct Line",
+    "date": "November 1, 2026",
+    "img": "/images/den/den-015.webp",
+    "alt": "The Den #15: Direct Line — four panels in the plush-render house style, all in the lamp-lit attic den. 1: Igor, a raccoon in rainbow glasses, a green TECHNOLOGIST tee, denim shorts and one blue and one yellow croc, holds a phone to his ear: 'CALLING LARRY.' Larry — the grey-bearded raccoon in wire-rim spectacles and a tweed waistcoat, one arm ending in a giant red lobster claw — sits in the green leather armchair an arm's length away. Between them the call runs the long way round: a single-file chain of small blue plush robots across the rug and along the top of the bookshelf, each pressing its phone to the next one's head, until the last robot, standing on the armrest, holds a phone to Larry's ear. 2: No words. A close-up of the chain: the robots pass the call down the line phone-to-head, one newly slotted in wearing a big gold gift bow, and one at the end fast asleep on its feet in a little nightcap, its phone sagging. 3: Igor, phone to his ear, paw on hip: 'DID I BREAK YOU, OR ARE YOU BROKEN?' The phone answers in a jagged balloon: 'PLEASE HOLD. UPGRADING.' 4: Igor lowers the phone and turns to the armchair: 'CAN I JUST TALK TO LARRY?' Larry, right there all along, leans in with a warm smile and his claw raised: 'HI.'",
+    "panels": [
+      "/images/den/den-015-p1.webp",
+      "/images/den/den-015-p2.webp",
+      "/images/den/den-015-p3.webp",
+      "/images/den/den-015-p4.webp"
+    ]
+  },
+  {
     "num": 14,
     "title": "Quick Question",
     "date": "October 18, 2026",
