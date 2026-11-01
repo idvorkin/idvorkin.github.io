@@ -156,5 +156,6 @@ My explainer workflow is built on top of the [CHOP](/chop) stack. The key tools:
 - **gen-image** — AI image generation skill for raccoon illustrations and visual assets
 - **[Showboat](https://github.com/idvorkin/chop-conventions/tree/main/skills/showboat)** — Creates executable demo documents with screenshots, the proof-of-work cousin to explainers
 - **image-explore** — Brainstorm multiple visual directions, generate in parallel, build comparison pages
+- **[pixelfx](https://patch-gg.github.io/pixelfx/)** ([repo](https://github.com/patch-gg/pixelfx)) — Not mine, tracking it for later: 244 pixel-art effects drawn entirely in code (no image assets), exportable as sprite sheets, plus a Claude Code skill. The skill's loop is the transferable idea: render the frames to a contact-sheet image, have the agent look at its own output, fix the worst thing, render again.
 
 The dream: a skill that takes a concept from your blog and proposes an explainer for it — what it would visualize, how users would interact with it, and what they'd understand afterward that they didn't before.
