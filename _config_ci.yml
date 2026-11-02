@@ -12,3 +12,6 @@ exclude:
   - README.md
   - .git/
   - .github/
+  # Agent skill files (raw-fetched from GitHub, not site pages). Listed here
+  # too because this exclude list REPLACES the one in _config.yml in CI.
+  - skill/
