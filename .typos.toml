@@ -24,6 +24,7 @@ mis = "mis"  # Token of "mis-hire" (typos splits on the hyphen)
 "youre" = "youre"  # Intentional usage in TOC/headers
 "alls" = "alls"  # All's in TOC anchor (All's Right with the World)
 "heros" = "heros"  # Hero's without apostrophe in TOC anchors
+"succes" = "succes"  # /succes redirect on /made-to-stick (SUCCESs acronym)
 "theatre" = "theatre"  # British spelling used intentionally
 "gruelling" = "gruelling"  # British spelling used intentionally
 "Flavours" = "Flavours"  # Proper noun — "Flavours of Bergen" food tour (British spelling)

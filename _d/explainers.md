@@ -119,6 +119,7 @@ See also: [my pet projects](/pet-projects) for the full list of things I build.
   - It really is a fun game
   - Has a lesson
   - What makes [Nicky Case's](https://ncase.me/) work exceptional: each piece has a **narrative arc** — it doesn't just present data, it walks you through a story with emotional stakes and reveals. You _feel_ the concept, not just see it.
+  - That arc is storytelling; an explorable explanation is a [story the reader plays](/storytelling#stories-in-other-forms).
 
 ### I Need to Review
 

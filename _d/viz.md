@@ -39,6 +39,8 @@ For more detailed exploration of visual vocabulary concepts, see my [technical n
 
 The most powerful visualizations don't just present data—they tell a story that leads to action. Raw numbers are ingredients; insights are the finished meal.
 
+For the story half, see [Storytelling](/storytelling).
+
 {%include blob_image.html src="blog/data-story.jpg" %}
 
 This progression from data to wisdom shows why visualization matters:
