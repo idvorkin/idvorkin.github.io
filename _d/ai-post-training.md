@@ -280,7 +280,7 @@ Take the union of the four and you get the modern recipe: copy the expert to get
 ## What this post is not about
 
 - **Pre-training and deployment** — the whole pipeline, plus the post-training vs RAG vs harness decision and the coding-competence loop, is [/ai-training](/ai-training). Serving is [/ai-inference](/ai-inference).
-- **Building the evals** — post-training is only as good as its grader, and the grader is an eval. How to build one that measures what you meant is [/hill-climbing](/hill-climbing#your-other-job-build-evals) and [/ai-evals](/ai-evals).
+- **Building the evals** — post-training is only as good as its grader, and the grader is an eval. How to build one that measures what you meant is [/hill-climbing](/hill-climbing#your-other-job-build-evals) and [/ai-testing](/ai-testing).
 - **The actual math** — I'm staying at the mental-model level on purpose. For the deep version, start with the [seminal papers](/ai-paper) and the Prior work folds above.
 
 ## Jargon decoder

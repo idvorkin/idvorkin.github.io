@@ -56,7 +56,7 @@ The things that keep an agent from breaking stuff are the boring ones, and none 
 - **Conventions as code.** The [CLAUDE.md and conventions repo](/how-igor-chops#the-chop-conventions-repo) are the rules this agent follows so the next agent follows them too. A bad convention breaks every future change; a bad function breaks one.
 - **One obvious place for every change.** The cleanest definition of good architecture I know: in a well-structured system there's exactly [one logical place](/dark-factory#complexity-collapse) to make any given change. If the agent has to guess where, it will guess differently each time, and you get two UIs.
 
-My first attempt at measuring this bar on my own blog is [three deterministic checkers](/ai-evals#grading-the-agent-with-smevals): did the edit land, did the generated table of contents stay correct, did anything else change. No judge, no taste. Just "did the agent change what I asked and nothing else." That's the bar, in miniature.
+My first attempt at measuring this bar on my own blog is [three deterministic checkers](/ai-testing#grading-the-agent-with-smevals): did the edit land, did the generated table of contents stay correct, did anything else change. No judge, no taste. Just "did the agent change what I asked and nothing else." That's the bar, in miniature.
 
 <!-- TODO(igor): your story. Either the time an out-of-context agent change broke something (the 2003 network stack parallel from /chop?), or the time the seams held and an agent made a safe change to code you'd never read. -->
 
