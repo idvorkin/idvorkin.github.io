@@ -118,3 +118,4 @@ Magic patter is storytelling under pressure, and three of my [performer's playbo
 - [Writing is Thinking](/writing): know your audience, situation-complication-resolution, and the rest of explain-and-recommend writing
 - [Made to Stick](/made-to-stick), where Stories is one of the six traits of sticky ideas
 - [The Performer's Playbook](/performer-playbook)
+- [How to Make It Funny](/comedy): the models of humor and the checklist I run on a strip; a joke is a story with a turn
