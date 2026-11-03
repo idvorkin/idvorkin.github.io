@@ -123,7 +123,7 @@ As of early 2024, my strength routine includes:
 - Turkish Get-Ups: 5x1 @ 32kg per side (achieved Jan '24, regressed after holiday break)
 - Working on one-handed front rack squats
 - Heavy clubs for mobility and grip strength
-- Pull-ups and pistol squats for bodyweight mastery
+- Pull-ups and pistol squats for bodyweight mastery (my [pistol re-entry plan](/pistol-squat))
 
 {% include instagram_reel.html src="DHhnAWKxFzw" %}
 
