@@ -12,6 +12,8 @@ redirect_from:
 
 Facts inform, stories move people. A good story is how an idea gets remembered and retold, so it's worth learning how they work: the structure underneath, where to find them, and the delivery on top. This page is the narrative half of [Writing is Thinking](/writing); explaining and recommending stay over there.
 
+{% include ai-slop.html percent="50" %}
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
