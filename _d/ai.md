@@ -52,8 +52,6 @@ A landing page for all my AI posts — a jumping-off point into everything I've 
 
 {%include summarize-page.html src="/ai-testing" %}
 
-{%include summarize-page.html src="/ai-evals" %}
-
 {%include summarize-page.html src="/ai-bm" %}
 
 {%include summarize-page.html src="/ml" %}

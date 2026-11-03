@@ -628,7 +628,7 @@ _21 commits this week_
 
 ### AI Testing: Grading the Agent with smevals
 
-- **[Grading the agent](/ai-evals#grading-the-agent-with-smevals)** - A [first smevals eval of blog edits](https://github.com/idvorkin/idvorkin.github.io/commit/5891c9dac), with deterministic checkers and an LLM judge across Claude and Codex runners.
+- **[Grading the agent](/ai-testing#grading-the-agent-with-smevals)** - A [first smevals eval of blog edits](https://github.com/idvorkin/idvorkin.github.io/commit/5891c9dac), with deterministic checkers and an LLM judge across Claude and Codex runners.
 
 ### AI Eval Tools (new post!)
 

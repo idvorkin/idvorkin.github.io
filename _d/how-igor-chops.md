@@ -313,7 +313,7 @@ CHOP has made it so much easier to spin up new ideas and actually finish them. [
 
 This might be the most important thing. In the CHOP world, knowing how to verify that AI output is correct matters more than knowing how to produce it. It's all about evals - can you define what "good" looks like and measure whether you're there?
 
-Once the eval is sharp, the search loop runs itself: [eval-driven hill climbing](/hill-climbing) — the agent proposes variants, the eval scores them, the winner becomes the next baseline. You write the fitness function; the agent does the climbing. How I test the models themselves is in [Testing AI](/ai-testing), how I score them in [AI Evals](/ai-evals), the tools are compared in [AI Eval Tools](/ai-eval-tools), and the gate that runs the checks on every PR is in [A Typical CHOP Session](#a-typical-chop-session).
+Once the eval is sharp, the search loop runs itself: [eval-driven hill climbing](/hill-climbing) — the agent proposes variants, the eval scores them, the winner becomes the next baseline. You write the fitness function; the agent does the climbing. How I test the models themselves is in [Testing AI](/ai-testing), the tools are compared in [AI Eval Tools](/ai-eval-tools), and the gate that runs the checks on every PR is in [A Typical CHOP Session](#a-typical-chop-session).
 
 ## The Server Behind the Curtain
 
