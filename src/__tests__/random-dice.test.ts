@@ -3,6 +3,7 @@ import { resolve } from "node:path";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import {
   RANDOM_ARRIVAL_KEY,
+  RANDOM_TOPIC_KEY,
   ROLL_MS,
   clearRandomArrival,
   goToRandomPage,
@@ -12,7 +13,9 @@ import {
   markRandomArrival,
   normalizePath,
   pickNextRandomUrl,
+  topicFromSearch,
 } from "../random-dice";
+import { get_random_page_url } from "../shared";
 
 vi.mock("../shared", () => ({
   get_random_page_url: vi.fn(async () => "/from-shared"),
@@ -162,6 +165,57 @@ describe("random-dice", () => {
         vi.useRealTimers();
         window.matchMedia = original;
       }
+    });
+  });
+
+  describe("topic", () => {
+    it("reads ?topic= from the query string, tolerating case and blanks", () => {
+      expect(topicFromSearch("?topic=ai")).toBe("ai");
+      expect(topicFromSearch("?x=1&topic=AI")).toBe("ai");
+      expect(topicFromSearch("?topic=")).toBeNull();
+      expect(topicFromSearch("?topic=%20")).toBeNull();
+      expect(topicFromSearch("")).toBeNull();
+    });
+
+    it("rolls from the topic and remembers it for the landing", async () => {
+      const pick = vi.fn(async () => "/eulogy");
+      await goToRandomPage(vi.fn(), pick, "family");
+      expect(pick).toHaveBeenCalledWith("family");
+      expect(sessionStorage.getItem(RANDOM_TOPIC_KEY)).toBe("family");
+    });
+
+    it("a roll with no topic forgets an earlier topic", async () => {
+      sessionStorage.setItem(RANDOM_TOPIC_KEY, "family");
+      const pick = vi.fn(async () => "/eulogy");
+      await goToRandomPage(vi.fn(), pick);
+      expect(pick).toHaveBeenCalledWith(null);
+      expect(sessionStorage.getItem(RANDOM_TOPIC_KEY)).toBeNull();
+    });
+
+    it("the dice re-rolls in the same topic", async () => {
+      vi.useFakeTimers();
+      try {
+        markRandomArrival("/voices");
+        sessionStorage.setItem(RANDOM_TOPIC_KEY, "ai");
+        setPath("/voices");
+        const shared = get_random_page_url as ReturnType<typeof vi.fn>;
+        shared.mockClear();
+        initRandomDice()?.click();
+        await vi.advanceTimersByTimeAsync(ROLL_MS + 100);
+        expect(shared).toHaveBeenCalledWith("ai");
+        expect(sessionStorage.getItem(RANDOM_TOPIC_KEY)).toBe("ai");
+      } finally {
+        vi.useRealTimers();
+      }
+    });
+
+    it("dismissing the dice forgets the topic", () => {
+      markRandomArrival("/voices");
+      sessionStorage.setItem(RANDOM_TOPIC_KEY, "ai");
+      setPath("/voices");
+      initRandomDice();
+      (document.getElementById("random-reroll-close") as HTMLButtonElement).click();
+      expect(sessionStorage.getItem(RANDOM_TOPIC_KEY)).toBeNull();
     });
   });
 

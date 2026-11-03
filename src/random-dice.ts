@@ -10,10 +10,14 @@
  * copied URL never shows the dice to someone who didn't roll. It's per-tab, so
  * reloading the landed page keeps the dice, and following any normal link to a
  * different path drops it.
+ *
+ * /random?topic=ai rolls from one topic. The topic is kept beside the arrival
+ * mark so the dice rolls again in the same topic; a plain /random forgets it.
  */
 import { get_random_page_url } from "./shared";
 
 export const RANDOM_ARRIVAL_KEY = "random-arrival-path";
+export const RANDOM_TOPIC_KEY = "random-arrival-topic";
 const DICE_ID = "random-reroll-dice";
 const WRAP_ID = "random-reroll";
 const CLOSE_ID = "random-reroll-close";
@@ -75,6 +79,7 @@ function safeStorage(): Storage | null {
 export function clearRandomArrival(storage: Storage | null = safeStorage()): void {
   try {
     storage?.removeItem(RANDOM_ARRIVAL_KEY);
+    storage?.removeItem(RANDOM_TOPIC_KEY);
   } catch {
     // ignore
   }
@@ -105,6 +110,31 @@ export function isRandomArrival(pathname: string, storage: Storage | null = safe
   }
 }
 
+/** The topic in a /random query string, or null when there isn't one. */
+export function topicFromSearch(search: string): string | null {
+  return new URLSearchParams(search).get("topic")?.trim().toLowerCase() || null;
+}
+
+function rememberTopic(topic: string | null, storage: Storage | null = safeStorage()): void {
+  try {
+    if (topic) {
+      storage?.setItem(RANDOM_TOPIC_KEY, topic);
+    } else {
+      storage?.removeItem(RANDOM_TOPIC_KEY);
+    }
+  } catch {
+    // ignore: storage full or blocked
+  }
+}
+
+function rememberedTopic(storage: Storage | null = safeStorage()): string | null {
+  try {
+    return storage?.getItem(RANDOM_TOPIC_KEY) ?? null;
+  } catch {
+    return null;
+  }
+}
+
 /** Pick a random page that isn't the one we're on (best effort, a few tries). */
 export async function pickNextRandomUrl(currentPath: string, pick: () => Promise<string> = get_random_page_url) {
   const here = normalizePath(currentPath);
@@ -118,10 +148,12 @@ export async function pickNextRandomUrl(currentPath: string, pick: () => Promise
 /** Roll, mark the landing as a random arrival, and go. Used by /random and the dice. */
 export async function goToRandomPage(
   navigate: (url: string) => void = (url) => window.location.assign(url),
-  pick: () => Promise<string> = get_random_page_url,
+  pick: (topic: string | null) => Promise<string> = get_random_page_url,
+  topic: string | null = null,
 ): Promise<string> {
-  const url = await pickNextRandomUrl(window.location.pathname, pick);
+  const url = await pickNextRandomUrl(window.location.pathname, () => pick(topic));
   markRandomArrival(url);
+  rememberTopic(topic);
   navigate(url);
   return url;
 }
@@ -186,9 +218,13 @@ export function initRandomDice(doc: Document = document): HTMLButtonElement | nu
     const started = Date.now();
     const wait = prefersReducedMotion() ? 0 : ROLL_MS;
     button.classList.add("rrd-rolling");
-    void goToRandomPage((url) => {
-      window.setTimeout(() => window.location.assign(url), Math.max(0, wait - (Date.now() - started)));
-    });
+    void goToRandomPage(
+      (url) => {
+        window.setTimeout(() => window.location.assign(url), Math.max(0, wait - (Date.now() - started)));
+      },
+      undefined,
+      rememberedTopic(),
+    );
   });
 
   close.addEventListener("click", (e) => {
