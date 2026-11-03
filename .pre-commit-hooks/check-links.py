@@ -53,7 +53,10 @@ def get_staged_markdown_files() -> List[str]:
                 continue
             if line.endswith(".md") or line.endswith(".markdown"):
                 # Exclude specific directories
-                if not line.startswith("zz-chop-logs/") and line != "back-links.json":
+                if (
+                    not line.startswith(("zz-chop-logs/", "skill/"))
+                    and line != "back-links.json"
+                ):
                     files.append(line)
 
         return files
