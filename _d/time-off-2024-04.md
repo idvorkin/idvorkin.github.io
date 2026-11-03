@@ -94,7 +94,7 @@ New Learnings
 
 - ☐ Practice Daily
 - ☐ Find a place to practice card to ceiling
-- ☐ Find a place to work on Tamiriz
+- ☐ Find a place to work on Tamariz
 
 ### Biking
 
@@ -155,7 +155,7 @@ Gym Days:
 
 ### Diet
 
-- I'm doing [terzepatide](/terzepatide), so this is no longer a concern
+- I'm doing [tirzepatide](/terzepatide), so this is no longer a concern
 - Try to bound down to 179
 
 ### Sleep

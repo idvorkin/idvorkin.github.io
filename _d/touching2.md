@@ -41,7 +41,7 @@ It's pretty easy to be overwhelmed by humanity sucking, but there is so much goo
 ### Speeches
 
 - [The last lecture](https://youtu.be/ji5_MqicxSo) - A man dying of cancer gives his last lecture
-- [Steve Job's do what you love](https://youtu.be/UF8uR6Z6KLc) - May not good advice, but sounds great
+- [Steve Job's do what you love](https://youtu.be/UF8uR6Z6KLc) - May not be good advice, but sounds great
 
 ### Shorts
 
@@ -58,8 +58,8 @@ It's pretty easy to be overwhelmed by humanity sucking, but there is so much goo
 
 - Bunch of this american life episodes
 - 13 months to the moon when thing blows up.
-- Felix Denis [who was the better man](http://www.felixdennis.com/Poet/The-Better-Man.aspx)
-- On Love [America life Episode 791 - 10 Things I Require About You](https://www.thisamericanlife.org/791/math-or-magic/act-one-18)
+- Felix Dennis [who was the better man](http://www.felixdennis.com/Poet/The-Better-Man.aspx)
+- On Love [This American Life Episode 791 - 10 Things I Require About You](https://www.thisamericanlife.org/791/math-or-magic/act-one-18)
 
 ### Stuff from my own life
 

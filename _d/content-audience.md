@@ -50,7 +50,7 @@ When I started creating content — okay, let's be honest, when I started upload
 
 Even though I love [Begin with the End in Mind](/end-in-mind) - there is something to be said about "Feedback beats planning" Until I figure it out - start producing content:
 
-Planning feels good when we're afraid because it gives us the illusion of progress/security. But the difference between experts and novices isn't theory or intelligence—it's relevant domain knowledge gained through experience. The key get feedback loops as quickly as possible:
+Planning feels good when we're afraid because it gives us the illusion of progress/security. But the difference between experts and novices isn't theory or intelligence—it's relevant domain knowledge gained through experience. The key is to get feedback loops as quickly as possible:
 
 - Get into the feedback loop as soon as possible, and run it as fast as possible because:
 - Knowledge only comes from empirical observation; everything else is speculation
@@ -198,7 +198,7 @@ Real experiences with AI agents:
 
 - Don't stop thinking! (Though maybe that's OK, think about maps (scary) )
 - Should I learn a better CLI arguments library (good enough, better more DRY code handles more, but it's just an implementation detail, if I specify well, it's like a new compiler optimization for me).
-- I guess it's about better specifications (vs better malliability)
+- I guess it's about better specifications (vs better malleability)
 - Practical AI workflows
 
 ### Tech Philosophy

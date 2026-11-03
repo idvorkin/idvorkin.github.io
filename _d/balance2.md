@@ -123,7 +123,7 @@ We should not measure the success in our roles by the energy we spend. For examp
 
 [Parkinson's law](/parkinson) tells us we'll spend as much time as we have available to us on a task.
 
-The 80/20 rules say you get 80% of the value from 20% of the time.
+The 80/20 rule says you get 80% of the value from 20% of the time.
 
 ### Peak end rule and moments
 

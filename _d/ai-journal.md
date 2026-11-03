@@ -23,6 +23,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-11-01](#2026-11-01)
+    - [Are You Using LLMs to Their Full Potential?](#are-you-using-llms-to-their-full-potential)
   - [2026-08-25](#2026-08-25)
     - [Sean Goedecke's Game Show: All Skimming and Judging, No Hammock Time](#sean-goedeckes-game-show-all-skimming-and-judging-no-hammock-time)
   - [2026-08-22](#2026-08-22)
@@ -233,9 +235,9 @@ OK, I used to go to this psychiatrist, who had a full "consistent model" of psyc
 
 here (https://whatilearnedsofar.com/practice/) (broken link)
 
-lets see if we can simulate him, step #1, lets bring the site down into markdown
+let's see if we can simulate him, step #1, let's bring the site down into markdown
 
-1. Lets use <https://github.com/paulpierre/markdown-crawler>:
+1. Let's use <https://github.com/paulpierre/markdown-crawler>:
 2. pip install markdown-crawler
    markdown-crawler https://whatilearnedsofar.com/practice/ --output-dir ./practice (broken link)
 
@@ -269,6 +271,15 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2026-11-01
+
+#### Are You Using LLMs to Their Full Potential?
+
+{% include repo_image_float_right.html src="cockpit-language-practice.webp" alt="Cockpit decision card: French and Russian practice, how should it show up? Larry recommends on request on calls." %}
+
+- **TOP Takeaway**: The AI that runs my day turned into a language partner. On a 7-minute voice call with [Larry](/larry) I rehearsed my magic patter in Russian and French ("Tu veux voir un tour de cartes ?"), because c'est bon pour mon cerveau.
+- **What it took**: the first try did Russian as an English accent. One system-prompt tweak later it speaks real Russian and French when asked, and the [Cockpit](/larry-cockpit) turned "how often?" into a decision for me: on request, on calls.
 
 ### 2026-08-25
 
@@ -712,7 +723,7 @@ Source: ["AI is an attention hazard"](https://thoughts.hmmz.org/2026-05-31.html)
   - **Now**: Code contributions are making the same shift from pets to cattle
 - **The Prediction**: "Most development tools we've been using will completely flip in the next 10 years. Everything we've been using before is either dead or slowly dying, or will completely change the way it works."
 - **Quote**: "The system is dead, long live the factory"
-- **Connection to My Practice**: This is exactly why I use [YOLO containers](/chop#yolo-containers-safe-full-autonomy) - containers are cattle, not pets. Spin up, let AI work, throw away. Same principle applies to AI-generated code.
+- **Connection to My Practice**: This is exactly why I use [YOLO containers](/how-igor-chops#vm-setup-cattle-not-pets) - containers are cattle, not pets. Spin up, let AI work, throw away. Same principle applies to AI-generated code.
 
 #### whenwords: The Ghost Library
 
@@ -1067,7 +1078,7 @@ I love adding tmux workflows, but they usually take me like 10 hours to get righ
   - Many Problems:
     - Stuff on the main account (like co-pilot code review, aren't free for other accounts doing PRs)
     - Linux/arm64: lots of broken things and few prebuilt binaries.
-  - After many false attempts (container terminal tweaks), turned out the root cause was zsh being hardcoded in my .tmux.con. Attempts logged in [Settings commit c03df99](https://github.com/idvorkin/Settings/commit/c03df99adf673707e912d4b03451b172b88c8d45).
+  - After many false attempts (container terminal tweaks), turned out the root cause was zsh being hardcoded in my .tmux.conf. Attempts logged in [Settings commit c03df99](https://github.com/idvorkin/Settings/commit/c03df99adf673707e912d4b03451b172b88c8d45).
   - Fix: made zsh path conditional in tmux for containers. See [Settings commit 3480d36](https://github.com/idvorkin/Settings/commit/3480d3649647424e9be42e3b3648c6786795abec).
   - Current problems
     - Still can't paste images in.
@@ -1145,7 +1156,7 @@ This story perfectly illustrates the current state of AI development: incredibly
 
 ![Text conversation showing discussion about Claude Code usage and subscription pricing, with messages about upgrading from $20/month to $100/month plan after recommendation about LLMs being important for productivity](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250720_135628.webp)
 
-- Starting doing PRs - created 4 PRs today, 3 merged:
+- Started doing PRs - created 4 PRs today, 3 merged:
   - [nlp#11](https://github.com/idvorkin/nlp/pull/11) ✅ "feat: add Kimi AI provider support with --kimi flag (default enabled)"
   - [nlp#12](https://github.com/idvorkin/nlp/pull/12) 🔄 "feat: add comprehensive e2e tests for Kimi AI functionality" (open)
   - [settings#3](https://github.com/idvorkin/Settings/pull/3) ✅ "Add Claude Code detection to tmux_helper window renaming"
@@ -1165,17 +1176,17 @@ Wow - it's been a LONG while before I added journal entries
 - You can see output on: [Donut Profit Calculator App](https://abrupt-carpenter.surge.sh/)
 - And Git Project: [GitHub Repository](https://github.com/idvorkin/donut-profit-calculator)
 
-I also used gpt to illustrated and partially write the updates to this blog based on content from "What I learned so far".
+I also used gpt to illustrate and partially write the updates to this blog based on content from "What I learned so far".
 
 {%include summarize-page.html src="/mental-pain"%}
 
-- Image generation takes a while - but I love it. Agent based apps is super "human input time" efficient, but the wall time is annoying, it's easy to forget what you're trying to do context. I'm guessing we'll need toolls to help us do the "N-slow" tasks at once as it's easy to forget the damn goals
+- Image generation takes a while - but I love it. Agent based apps is super "human input time" efficient, but the wall time is annoying, it's easy to forget what you're trying to do context. I'm guessing we'll need tools to help us do the "N-slow" tasks at once as it's easy to forget the damn goals
 
-- Creating customGPTs from a bunch of content from my old pychiatrist
+- Creating customGPTs from a bunch of content from my old psychiatrist
 - Using chatgpt to figure out what I should/how I should pack crap in my car
 
 - COOL LEARNING:
-  - You can use surge to deploy to static web sites - nicer then clogging up my blog
+  - You can use surge to deploy to static web sites - nicer than clogging up my blog
   - gemini cli sandbox is mostly worthless
 
 ### 2024-10-27
@@ -1184,7 +1195,7 @@ I also used gpt to illustrated and partially write the updates to this blog base
 
 ### 2024-10-26
 
-- Use Semantic Search for similar websites to what im [thinking about](https://github.com/idvorkin/nlp/blob/55a2e50d2f02f7660dbbf101d12c7a1e3368e947/think.py?plain=1#L296) e.g. thinks like [this page](https://gist.github.com/idvorkin/94fb8420a973e61ee5f1b61be926ecaf#---exaai-related-search-results---)
+- Use Semantic Search for similar websites to what I'm [thinking about](https://github.com/idvorkin/nlp/blob/55a2e50d2f02f7660dbbf101d12c7a1e3368e947/think.py?plain=1#L296) e.g. things like [this page](https://gist.github.com/idvorkin/94fb8420a973e61ee5f1b61be926ecaf#---exaai-related-search-results---)
   ![Screen shot of related web results](https://raw.githubusercontent.com/idvorkin/ipaste/main/20241027_093056.webp)
 
 ### 2024-10-20
@@ -1213,10 +1224,10 @@ yt-dlp --write-auto-sub   --skip-download https://www.youtube.com/watch\?v\=kgr2
 - But it's too big, ~ 1M tokens thanks to the VTT format.
   - Good enough to stick into google gemini
   - GROAN, of course that doesn't work since output limit.
-- Sigh, lets upgrade our captions processing - luckily, I've played with this before:
+- Sigh, let's upgrade our captions processing - luckily, I've played with this before:
   - [Captions](https://github.com/idvorkin/nlp/blob/c050626b4f88ffb09622938d1bb5c55c2e05618a/captions.py?plain=1#L21)
   - What's great is I basically wrote this code using Aider.
-- OK Lets run it:
+- OK Let's run it:
 
 ```bash
 cat ~/tmp/t/show.vtt | ./captions.py to-human | tee show.md
@@ -1232,7 +1243,7 @@ cat ~/tmp/t/show.vtt | ./captions.py to-human | tee show.md
 
 - Interesting, trying to get the chatgpt website to read the file fails, even though it fits into the context window.
   - ChatGPT:
-  - I could work around this by working with the API, but for chat I prefer using UX, and its cheaper with these big files
+  - I could work around this by working with the API, but for chat I prefer using UX, and it's cheaper with these big files
 - Back to [google vertex](https://console.cloud.google.com/vertex-ai/studio/), which is working well at this file size
 - Finally the [output of exercises](https://gist.github.com/idvorkin/2e3111a07531fefb11e789144e1c372f)
 
@@ -1278,7 +1289,7 @@ Here's [a change almost totally done with Aider](https://github.com/idvorkin/Set
 
 #### Awesome talks
 
-OK, so turns out [Andrej Karpathy](https://www.youtube.com/@AndrejKarpathy) Has amazing talks, I watched several, including his great talk on security. Which insipired me to create [AI Security](/ai-security)
+OK, so turns out [Andrej Karpathy](https://www.youtube.com/@AndrejKarpathy) Has amazing talks, I watched several, including his great talk on security. Which inspired me to create [AI Security](/ai-security)
 
 #### Working through making Neural Nets
 
@@ -1288,7 +1299,7 @@ See: <https://karpathy.ai/zero-to-hero.html>
 
 #### Auto code editing (via Aider) - TOO Soon
 
-OK, so, copilot tends to be just a code completion, which is pretty meh. Ideally it could do more complex changes, like find code that would be good to refactor then make those changes. [aider](https://aider.chat/) is supposed to that, but in my experience, it just made stuff wrose and was slower then me making the changes myself. I guess I'll try again in a while.
+OK, so, copilot tends to be just a code completion, which is pretty meh. Ideally it could do more complex changes, like find code that would be good to refactor then make those changes. [aider](https://aider.chat/) is supposed to do that, but in my experience, it just made stuff worse and was slower than me making the changes myself. I guess I'll try again in a while.
 
 ### 2024-07-30
 
@@ -1302,13 +1313,13 @@ OK, so, copilot tends to be just a code completion, which is pretty meh. Ideally
 
 #### Next Gen Models
 
-Claude 3.5 Sonnet just came out. Sonnet is Anthropics Medium model. It has the same performance envelope as GPT-4o, making me assume GPT-4o is also the medium model. What's interesting, it initially OpenAI marketted GPT-4o as a 4x faster 2x cheaper GPT-4 Large model, but honestly I think it' sjust the medium. That means either the medium Gpt 4.5 large is coming, or it's performance envelope isn't worth it.
+Claude 3.5 Sonnet just came out. Sonnet is Anthropic's Medium model. It has the same performance envelope as GPT-4o, making me assume GPT-4o is also the medium model. What's interesting, it initially OpenAI marketed GPT-4o as a 4x faster 2x cheaper GPT-4 Large model, but honestly I think it's just the medium. That means either the medium Gpt 4.5 large is coming, or it's performance envelope isn't worth it.
 
 Model classes: - Price/Latency/Performance
 
 #### Lots of progression on Evals
 
-Check out the great documentation at promptfoo, including redteaming I thgues sthat'll be a big thing soon. - <https://promptfoo.dev/docs/guides/llm-redteaming>
+Check out the great documentation at promptfoo, including redteaming I guess that'll be a big thing soon. - <https://promptfoo.dev/docs/guides/llm-redteaming>
 
 ### 2024-04-06
 
@@ -1319,7 +1330,7 @@ Check out the great documentation at promptfoo, including redteaming I thgues st
 - Retrieval
   - Better Observability
   - Better Retrieval Strategies
-  - Chunk Manager Book my chapters
+  - Chunk Manager Book by chapters
 
 ### 2024-03-24
 

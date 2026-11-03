@@ -87,9 +87,9 @@ Did a magic trick for a kid, kid kept the card in his backpack for a year, and a
 
 #### Full Circle On the Power of Magic
 
-Very early in my magic career, I went to a magic meeting and afterwards we went to the bar with a bunch of magicians. The waitress asked us what we were doing there, when we said we did magic she pulls a card out of her purse, and says - "15 years ago a magician did this trick for me and my best friend, and their was so much meaning in that trick I've carried this card in y wwallet ever since"
+Very early in my magic career, I went to a magic meeting and afterwards we went to the bar with a bunch of magicians. The waitress asked us what we were doing there, when we said we did magic she pulls a card out of her purse, and says - "15 years ago a magician did this trick for me and my best friend, and there was so much meaning in that trick I've carried this card in my wallet ever since"
 
-That "magic" demonstrates the power of love, by melding multiple cards into 1. I learned how to do that magic, and amazingly got to do that same trick 15 years later at a restaurant about 1 block from that original bar, for a meeting of me, my cousin and my great cousim who got to meet in a once in a life time opportunity.
+That "magic" demonstrates the power of love, by melding multiple cards into 1. I learned how to do that magic, and amazingly got to do that same trick 15 years later at a restaurant about 1 block from that original bar, for a meeting of me, my cousin and my great cousin who got to meet in a once in a life time opportunity.
 
 Now that's pretty damn cool.
 
@@ -104,7 +104,7 @@ Amelia's always proud I do magic. I was at her Kindergarten party, and suddenly 
 #### Interview magic
 
 - Best ever - Interviewer was WFH over video.
-  - Daughter crawls in, Mom tries to shew her away.
+  - Daughter crawls in, Mom tries to shoo her away.
   - I say, stop, watch.
   - Daughter stands up, only mouth and nose in frame.
   - I get up and back palm.
@@ -151,7 +151,7 @@ Magic is core to my identity. At my best, I practice 20 hours a week. I walk up 
 
 My fate changed three weeks ago. I saw a woman that looked beaten down by life. Like instinct, I patted the side of my bag, and pulled out a deck of cards that was untouched for months. I asked her to pick a card and write down what she wanted on it. She wrote down freedom. I was a bit disappointed, I like it when magic is personal, and I figured freedom was some political cause. I was wrong.
 
-She placed the freedom card it in the middle of the deck. I told her to focus on her freedom, and her card jumped to the top of the deck. She was surprised. The second time the freedom card jumped to the top, some wonder began creeping into her expression. The third time she was smiling. I told her _"Take this card, and remember whenever you concentrate on what you want, you'll get it."_ Surprised, she looked up, and said quietly _"I really needed that - thank you"_.
+She placed the freedom card in the middle of the deck. I told her to focus on her freedom, and her card jumped to the top of the deck. She was surprised. The second time the freedom card jumped to the top, some wonder began creeping into her expression. The third time she was smiling. I told her _"Take this card, and remember whenever you concentrate on what you want, you'll get it."_ Surprised, she looked up, and said quietly _"I really needed that - thank you"_.
 
 The next day the woman caught my attention while I was going by and said _That magic thing you did was life-changing thank you_. I figured she wanted to say something nice so was lying. _"Glad you enjoyed it"_ I said without really stopping. But a lie can be enough, and I restarted my daily magic practice.
 
@@ -202,7 +202,7 @@ Dani D'Ortiz - best card magician I've ever seen.
 Class acts:
 
 - Jay Sankey, looking at you deeply and finding something positive
-- \_ Eric Jones, walking through audience and thanking folks from coming
+- \_ Eric Jones, walking through audience and thanking folks for coming
 
 * Tetro walking around saying surveying what are the best tricks to learn.
 

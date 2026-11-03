@@ -66,7 +66,7 @@ Here's the part that made me laugh. I wrote in [Software Design and Architecture
 
 Those are my two jobs. Job 1 is the use-case dimension. Job 2 is malleability. The agents didn't invent a new problem; they removed the typing that was hiding the old one.
 
-What changed is the price of craft. When writing code was the expensive part, "architecture" was the thing you did in the margins, if the PM let you. Now craft is nearly free, so [architecture beats craft](/chop#prioritizing-skills) by a wider margin every month. What didn't change is the test of a good architecture: a person who didn't write the system and can't hold all of it in their head can still find the one place to make a change and make it safely. That was always the junior engineer. Now it's an agent with no memory of last week, a thousand times a day.
+What changed is the price of craft. When writing code was the expensive part, "architecture" was the thing you did in the margins, if the PM let you. Now craft is nearly free, so [architecture beats craft](/chop#the-skills-that-matter-now) by a wider margin every month. What didn't change is the test of a good architecture: a person who didn't write the system and can't hold all of it in their head can still find the one place to make a change and make it safely. That was always the junior engineer. Now it's an agent with no memory of last week, a thousand times a day.
 
 So the honest answer to "what's left?" is the two things that were always the hard part. Picking the job, and keeping the system changeable. We used to bury them under a pile of typing.
 

@@ -57,7 +57,7 @@ The way better way to do language integration.
 
 #### Tree Sitter
 
-A super fast grammar parser, supporting parsing partial files and stuff. Much faster then the regexp/vim parsing support
+A super fast grammar parser, supporting parsing partial files and stuff. Much faster than the regexp/vim parsing support
 
 ### Git tooling
 
@@ -69,15 +69,15 @@ A super fast grammar parser, supporting parsing partial files and stuff. Much fa
 
 #### Speed
 
-Neovim is faster, maybe LUA is faster then VIM Script, VIM9 implemented modern funcctions designed to be faster, but I doubt plugins will be re-written to take advantage of it. If anything, the LUA plugins are faster by default.
+Neovim is faster, maybe LUA is faster than VIM Script, VIM9 implemented modern functions designed to be faster, but I doubt plugins will be re-written to take advantage of it. If anything, the LUA plugins are faster by default.
 
 ## The weird
 
 ### Lua
 
-I don't like LUA, I really don't. Luckily, I can mostly use ChatGPT to translate my code to Lua successful.y Now that I'm over the initial hump, maybe I'll even come to terms with it's nice features.
+I don't like LUA, I really don't. Luckily, I can mostly use ChatGPT to translate my code to Lua successfully Now that I'm over the initial hump, maybe I'll even come to terms with its nice features.
 
-If I'm being honest though, LUA is better then vimscript, once I stop whining about LUA, I'll get used to it and find some portable stuff
+If I'm being honest though, LUA is better than vimscript, once I stop whining about LUA, I'll get used to it and find some portable stuff
 
 ### Terminal/Shell Differences
 

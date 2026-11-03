@@ -307,7 +307,7 @@ Depending on time of year, and experience of my team and partners, I'm doing 1 o
 
 - Stack Ranking/Performance Reviews/Career Growth Plans
 - Low performers
-- Complex people situations (more often then you'd expect)
+- Complex people situations (more often than you'd expect)
 - Extra recruiting
 
 **Product:**
@@ -351,7 +351,7 @@ They also need to be experts at working with data systems and analysis, as much 
 Once developers become managers they have little time to use their technical muscle, and their technical Aptitude declines due to lack of use. Therefore I recommend before switching they are:
 
 - A very experienced engineer (MSFT L65, AMZN L6, FB E6).
-- A expert in at multiple languages (for me python, and C#)
+- An expert in multiple languages (for me python, and C#)
 - An expert in multiple technical domains (for me networking and security).
 
 <a id="l-code"></a> <a id="l-code"></a>
@@ -441,7 +441,7 @@ Here are some fictitious examples modeled on my own career:
 - Improved Azure virtual machine boot time from 12 minutes to 2 minutes at P90 by investigating end to end system behavior, understanding end 2 end system operation, creating and driving agreement to all up goal, and then working with teams to establish budgets, and holding them accountable to delivering them.
   - > At first my team was skeptical that the performance improvements could be achieved and were hesitant to invest, but once we saw the organizational support and monthly meetings of progress we found it inspiring and made sure we contributed to the goal.
 
-- Drove XXX\$ to charities, and increased Alexa Shopping DAU XXX % (XXX to YYY) to by proposing a charity giving feature and implementing it in 5 months. Complexity, 20 eng/months, supporting work from 5 teams, across multiple divisions
+- Drove XXX\$ to charities, and increased Alexa Shopping DAU XXX % (XXX to YYY) by proposing a charity giving feature and implementing it in 5 months. Complexity, 20 eng/months, supporting work from 5 teams, across multiple divisions
 
 - Delivered XYZ, required to deliver TLS support on windows phone at very high quality. Complexity 1 engineer, 4 months - however required ramping up on complex error prone C++ code base, and no bugs found
   - > Igor's delivery was on time and of high quality. The feature had no bugs in production, due to high test coverage, which was impressive given the high complexity of the C++ code.
@@ -527,7 +527,7 @@ Depends on the skill level (E.g. [levels](https://www.levels.fyi/) ): SDE-I is a
 | Level        | Approach                                                                                                                                                                                                                                                                                                                                                                              |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Junior       | Not a lot of variance. Have a rubric for junior SDE skills and make sure they are getting the opportunity to learn and execute each box. Make sure they have a solid mentor, and opportunity after opportunity to round out their knowledge.                                                                                                                                          |
-| Intermediate | Now it's about how are you helping the team, growing your contributions. Bigger experiences, maybe out side the org, both to build your skills, and increase your org visibility. Double down on super powers, close red flags and blockers. Very satisfying to watch people "blossom" into leaders.                                                                                  |
+| Intermediate | Now it's about how are you helping the team, growing your contributions. Bigger experiences, maybe outside the org, both to build your skills, and increase your org visibility. Double down on super powers, close red flags and blockers. Very satisfying to watch people "blossom" into leaders.                                                                                   |
 | Senior/Staff | Here you're getting people that are at a career level and are happy with a lot of what they're doing. Now it's helping folks decide how much they want to grow, and where they want to improve. Here it's finding mentors, and how we want to split responsibility and cover each other. Also opportunities for what they own for the group (30-60+) e.g. security or process or etc. |
 
 My approach, and frequent peep questions.
@@ -554,13 +554,13 @@ My approach, and frequent peep questions.
 <div> </div>
 - l12
 - [Fantastic Video on Being a Staff Eng](https://youtube.com/watch?v=l-oCDQGH3EU&si=SDZXgQJgmUzV1aJQ)
-- [Amazon's Principle Engineer Roles](https://www.linkedin.com/pulse/principal-engineer-roles-framework-mai-lan-tomsen-bukovec-142df/)
+- [Amazon's Principal Engineer Roles](https://www.linkedin.com/pulse/principal-engineer-roles-framework-mai-lan-tomsen-bukovec-142df/)
 - Great post on being a [staff + level engineer](https://lethain.com//staff-plus-eng-resources/)
 - Are you clear on [Tech Lead, Architects and Managers](/software-leadership-roles).
 - Great articulation of [How to find the problems vs just solving them](https://www.instagram.com/p/DPAjDxxjUEf/)
 - What are you driving for our larger organization?
 - How are you maximizing our benefit?
-- How do we make sure we compliment each other?
+- How do we make sure we complement each other?
 
 ### How do you get engineers promoted, and to understand their path to promo?
 
@@ -625,7 +625,7 @@ Motivation has 2 dimensions, personal experience and team environment. Personal 
 
 Another lens of motivation is [satisfaction and dissatisfaction](/dsat):
 
-_Satisfaction (SAT) is not a lack of dissatisfaction (DSAT). SAT and DSAT are orthogonal experiences. DSAT is the reason you can't sleep well at night, and SAT is reason you set your alarm for 5am so you can get an early start tackling your favorite problems_
+_Satisfaction (SAT) is not a lack of dissatisfaction (DSAT). SAT and DSAT are orthogonal experiences. DSAT is the reason you can't sleep well at night, and SAT is the reason you set your alarm for 5am so you can get an early start tackling your favorite problems_
 
 ### How to motivate through personal experience
 
@@ -781,7 +781,7 @@ There are different types of communication problems each needing a different str
 - Dominates Conversations
 - Abrasive communication style
 - Not listening to others
-- Unclearn writing (too verbose, not enough context)
+- Unclear writing (too verbose, not enough context)
 - Verbal/ESL/Not comfortable with in-person verbal communications
   - Pre-write thoughts
   - Toast masters
@@ -791,7 +791,7 @@ There are different types of communication problems each needing a different str
 
 ### How do you identify and help eng decide if management is right for them
 
-Engineers that are interested in reading this post make good manager candidates. The path usually start with getting an intern, then being a tech lead with heavy mentoring. Then having them take over as many as people issues as people are comfortable with them tracking.
+Engineers that are interested in reading this post make good manager candidates. The path usually starts with getting an intern, then being a tech lead with heavy mentoring. Then having them take over as many people issues as people are comfortable with them tracking.
 
 **Help them preview as much as they can - for example**
 
@@ -914,7 +914,7 @@ Part 3: The Growth Mindset: Relentless Improvement
 ### How do you help a team gel
 
 - Team lunches
-- Moral Events
+- Morale Events
 - Help people see each other as 3 dimensional humans - talk about personal stuff.
 - Encourage people to think of the team as an entity, and how to improve the team, not themselves.
 - Encourage people to vocalize their appreciation publicly
@@ -946,7 +946,7 @@ Here's what I worked with the team to establish
   - When I make mistakes I apologize
   - If I drop the ball I make it clear.
   - When someone does well I celebrate and call out.
-- Catch people doings things right
+- Catch people doing things right
   - Coaching stuff
   - Put it front and center
   - Let team take ownership of it.
@@ -967,7 +967,7 @@ _(others == peers, VP, interns, doesn't matter)_
   - I haven't thought of it, now it's not cheap, but could be a huge saving down the road, great ROI.
   - Bonus: I have thought about it, but explaining it again with the twist brought on by that person adds a new insight and improves my understanding or explanation.
 
-**Human Answer:** When I get these questions/insights, I don't feel questioned/seconded guessed, I feel honored. The other person is super busy and has spent their precious energy thinking through an issue I care about, which is essentially caring about my success. The other person has a tonne of experiences and perspective different from my own, and it's a real gift when they spend their energy on me.
+**Human Answer:** When I get these questions/insights, I don't feel questioned/second guessed, I feel honored. The other person is super busy and has spent their precious energy thinking through an issue I care about, which is essentially caring about my success. The other person has a tonne of experiences and perspective different from my own, and it's a real gift when they spend their energy on me.
 
 ### How do you handle Remote Work
 
@@ -977,7 +977,7 @@ I'm writing this stuff [my rough outline](/remote-work)
 
 Work Life Balance is so important to me that I wrote a [manifesto](https://bit.ly/igor-wlb-manifesto) - the opening paragraph:
 
-_I don't want to die knowing I spent too much time at work and I bet you don't either. As a result I want to work with people who value a culture encouraging them to balance their family, health, hobbies, and work - aka work-life balance. To make a culture real leaders needs to walk the talk, and I'll describe how I model a work-life balance, and the mechanisms I use to help team members achieve their own balance._
+_I don't want to die knowing I spent too much time at work and I bet you don't either. As a result I want to work with people who value a culture encouraging them to balance their family, health, hobbies, and work - aka work-life balance. To make a culture real leaders need to walk the talk, and I'll describe how I model a work-life balance, and the mechanisms I use to help team members achieve their own balance._
 
 In the rare event you do want to die knowing you spent too much time at work, try to remember more hours rarely helps. In XKCD format:
 
@@ -1001,7 +1001,7 @@ I gave a talk on [lies we tell ourselves](https://docs.google.com/presentation/d
 
 ### Kudos Boards - Appreciations
 
-Both helpful for a short period of time, and for a longer period of time, kuddos boards let the team get together and celebrate what they appreciate from their co-workers. This has many benefits:
+Both helpful for a short period of time, and for a longer period of time, kudos boards let the team get together and celebrate what they appreciate from their co-workers. This has many benefits:
 
 - People are appreciated for their contributions
 - People are reminded how impactful their work is
@@ -1020,7 +1020,7 @@ I LOVE these questions and sanity checks. I remind people again and again:
 
 Never fear that I'll think you're "questioning me" or micromanaging. I love sanity checks!
 
-Lets do the math: If you already had the thought, it's free for you to say it. If I've already thought about it, it's free for me to share my reasoning.
+Let's do the math: If you already had the thought, it's free for you to say it. If I've already thought about it, it's free for me to share my reasoning.
 
 BUT - Catching a bad assumption I'm making, or even more valuable, something I haven't thought about - priceless.
 
@@ -1088,7 +1088,7 @@ This can be especially true when process is created high in the org chart to sol
 
 **Toxic process** - Bad process will disenfranchise ownership and stifle passion. It'll slow down things that can be fast. There is nothing more powerful than a motivated engineer, don't let process take that away.
 
-Funny article on [how good oranizations should be like slime mold](https://komoroske.com/slime-mold/)
+Funny article on [how good organizations should be like slime mold](https://komoroske.com/slime-mold/)
 
 ### On Change
 
@@ -1286,14 +1286,14 @@ NOTE: Even though plans tend to be reviewed at a half year cadence, it's importa
 Great schedules and roadmaps can solve many problems, based on people's levels and the time granularity.
 
 - Team feels inspired knowing they're doing great things, and senior folks see career opportunities
-  - By having a roadmap that stretches out at very course low precision/accuracy projects for +6-12 months
-- Intermediate folks feels career opportunities by seeing opportunities that interest them.
+  - By having a roadmap that stretches out at very coarse low precision/accuracy projects for +6-12 months
+- Intermediate folks feel career opportunities by seeing opportunities that interest them.
   - By having a roadmap with lightly scoped projects for +2-6 months
 - Team feels comfortable re-jiggering ordering and ownership by knowing hard vs soft deadlines
   - By having a roadmap with clear deliverables and dependencies for 0-3 months
 - Junior folks (and senior) build their estimation muscles and has a sense of their own personal velocity by creating and reviewing granular estimates
   - (The more senior folks help junior folks do this, and also build their coarse estimation muscles)
-  - By having granular estimates down to he 1-2 weeks, and having someone help create and review the estimates
+  - By having granular estimates down to the 1-2 weeks, and having someone help create and review the estimates
 
 ### Allocate resources: Matching people and projects
 
@@ -1307,7 +1307,7 @@ Resource allocation is maximizing the intersection in the Venn diagram - "Person
 
 The success metric for a manager is supporting the team so that they know the constraints, and can self organize to maximize the business, team and individual Venn diagram coverage.
 
-This process gets harder then it sounds based on the state and ambiguity of the tracks, balancing juniors and seniors, career development desires, and future hires and business ambiguity and reorgs.
+This process gets harder than it sounds based on the state and ambiguity of the tracks, balancing juniors and seniors, career development desires, and future hires and business ambiguity and reorgs.
 
 There are some more concepts I need to flesh out:
 
@@ -1315,7 +1315,7 @@ There are some more concepts I need to flesh out:
 
 **Opportunity cost** - If a senior developer is doing something a junior developer is doing, then you have turned your senior developer into a junior developer and no-one is doing the work of a senior developer. This is also why teams need a blend of junior, intermediate and senior developers.
 
-**Right sizing projects, and support** When people are growing, stuff is going to be hard, and it's important they don't take on more then they can chew (see ability to succeed), even when the project is the right size, it's important the person has the dynamic support and mentorship they need.
+**Right sizing projects, and support** When people are growing, stuff is going to be hard, and it's important they don't take on more than they can chew (see ability to succeed), even when the project is the right size, it's important the person has the dynamic support and mentorship they need.
 
 **Keeping slack in the system** Anxiety is the difference between reality and expectations. Slack is the tool that helps us better model reality, and keep stress under control.
 
@@ -1348,7 +1348,7 @@ For half-level planning, we'll estimate the cost in a coarse manner (in engineer
 
 For example:
 
-Suppose it takes 1 quarter for backend, 1 for Android, and 3 for iOS, but the tasks need to be completed n series (one after another). This would have a t-shirt size of 5 engineering quarters (a swag of 4+). With the critical path, or the longest sequence of tasks, being 3 quarters.
+Suppose it takes 1 quarter for backend, 1 for Android, and 3 for iOS, but the tasks need to be completed in series (one after another). This would have a t-shirt size of 5 engineering quarters (a swag of 4+). With the critical path, or the longest sequence of tasks, being 3 quarters.
 
 ### Be wary the planning trap
 
@@ -1367,7 +1367,7 @@ Most companies have their "competencies" they test for. But I abstract it down t
   - What matters to you?
   - Tell me something hard you did?
   - Tell me your favorite parts?
-- EQ: (Not an asshole, Continuous Learning, Sees impact off his action, self aware, Team First )
+- EQ: (Not an asshole, Continuous Learning, Sees impact of his action, self aware, Team First )
   - Tell me a time you got in a fight
   - Tell me the hardest feedback you received
   - Tell me the hardest feedback you gave
@@ -1513,7 +1513,7 @@ How to join a tribe: - TBD
 
 ### Translating Performance Ratings Between Companies
 
-Different companies use different rating systems/labels, making it challenging to compare ratings across organizations. However, the goal of these systems is to provided differentiated compensation based on performance, and the easiest way to do that is to group engineers into 3-7 buckets, with each bucket getting a different amount of compensation. So to compare, compare the % of target compensation received.
+Different companies use different rating systems/labels, making it challenging to compare ratings across organizations. However, the goal of these systems is to provide differentiated compensation based on performance, and the easiest way to do that is to group engineers into 3-7 buckets, with each bucket getting a different amount of compensation. So to compare, compare the % of target compensation received.
 
 Here's a likely wrong/outdated example (made up by GPT, please provide me updates if you know them) of those companies and buckets:
 
@@ -1559,7 +1559,7 @@ Also good to refresh yourself on total compensation vs salary. It's important to
 
 Your role when representing people:
 
-- Gather data on what happened through the evaluation period. Gather more data on things that surprise you (like peer feedback, or accomplishments you wer enot aware of)
+- Gather data on what happened through the evaluation period. Gather more data on things that surprise you (like peer feedback, or accomplishments you were not aware of)
 - Present it as well as possible
 - Ensure the presentation is evaluated fairly by seeking feedback and focusing on fairness.
 - Calibrate yourself to ensure
@@ -1597,7 +1597,7 @@ How to reduce pain and suffering. _Have no confusion, I rarely do these, but I w
 - Treat your own packet, just like those of your employees.
   - Yes, that means you're writing your own review.
   - Leave place holders that you'll fill in when you get data from what the folks you support did.
-  - It helps your boss know what you did, present it easier, and see expectations miss matches (likely needing more data from you).
+  - It helps your boss know what you did, present it easier, and see expectations mismatches (likely needing more data from you).
   - All the rules below also apply.
 - Update packets through the year. No wordsmithing.
   - At least quarterly, monthly is better.
@@ -1630,16 +1630,16 @@ How to reduce pain and suffering. _Have no confusion, I rarely do these, but I w
   - Second version: put it into rough sentences; go over it with another manager.
   - Third version: make this one good. It's near final. Get a final review with other managers.
 - Make a very granular schedule, including when you're talking to people
-  - I schedule 3 blocks a day, including who's packet, what section and what draft.
+  - I schedule 3 blocks a day, including whose packet, what section and what draft.
   - I schedule time to get feedback from the people you support.
   - I schedule time to get feedback from other providers.
   - I schedule time to review with tech leads.
   - I schedule time to do mock calibrations.
 - Get support from other EMs
-  - Everyone can see our situations better then we can.
+  - Everyone can see our situations better than we can.
   - It helps make us objective
-  - It gets us over some things we're stuck on by drawing out our reasoning and correcting our faultly logic.
-  - It'll remind you of your responsibilities and the employee's contibutions to situations
+  - It gets us over some things we're stuck on by drawing out our reasoning and correcting our faulty logic.
+  - It'll remind you of your responsibilities and the employee's contributions to situations
 
 ### Some definitions for low performers
 
@@ -1885,7 +1885,7 @@ Deciding if you split horizontally vs vertically is at the highest level asking 
 - customer metrics vs engineering metrics and efficiency.
 - what's best for the customer vs what's best for the platform.
 
-Depending on how much tech needs to be build and how much specialization is required you will need horizontal teams. For example, the operating system, the networking stack, the hardware are all horizontals.
+Depending on how much tech needs to be built and how much specialization is required you will need horizontal teams. For example, the operating system, the networking stack, the hardware are all horizontals.
 
 **Horizontal Split (by technical domain):**
 
@@ -1911,9 +1911,9 @@ In general when this happens there are a few common reactions
 
 **The new charter is too small**
 
-A common reason for this is the old team that had the charter, likely only planned out for 120% of there engineers. So, if they had 2 engineers available, they planned for 3 engineers of work. A new incoming team having 10 people, will think there's only work for 3 people, and be sad.
+A common reason for this is the old team that had the charter, likely only planned out for 120% of their engineers. So, if they had 2 engineers available, they planned for 3 engineers of work. A new incoming team having 10 people, will think there's only work for 3 people, and be sad.
 
-**The new charter is much simpler then expected**
+**The new charter is much simpler than expected**
 **The new charter isn't as interesting**
 
 It's common to oversimplify from a distance. Once the team gets into the details, they'll either see it's true, and they'll find new good stuff to do, or, far more likely they'll find much more nuance, subtlety and ambiguity in the new space.
@@ -1973,7 +1973,7 @@ In a common case, the decision will be sudden, often with an edict from leadersh
 
 #### How long should you keep a "To Be Pivotted" project
 
-Finding a new charter is hard, it takes longer then you'd expect, and then once you "have it" it takes even more time to get it engineer ready. It's very tempting to let the "walking dead" project continue consuming resources as you are stalling to find new charter. This **is a mistake** you are wasting the business's resources, and the engineer's time. **Pick a pivot date, and hit that date even if there is no new charter** Use the date as leverage to influence the priority for your leadership and XFN partners. Also ensure you have a backup for the team, helping other teams, better engineering projects, hack-a-thon ideas, etc.
+Finding a new charter is hard, it takes longer than you'd expect, and then once you "have it" it takes even more time to get it engineer ready. It's very tempting to let the "walking dead" project continue consuming resources as you are stalling to find new charter. This **is a mistake** you are wasting the business's resources, and the engineer's time. **Pick a pivot date, and hit that date even if there is no new charter** Use the date as leverage to influence the priority for your leadership and XFN partners. Also ensure you have a backup for the team, helping other teams, better engineering projects, hack-a-thon ideas, etc.
 
 NOTES: - How to know if you're in a [dip](/dip) or a cul-de-sac for the project.
 
@@ -2033,8 +2033,8 @@ The day of:
 - What happens to my existing/ongoing project
 - How is their existing work evidence of greatness
 - Is it just gonna happen again in 6 months
-- What are the exciting opportunities, and why are they better then the old ones
-- Why is this re-org designed the way it, why would you have done the re-org this way.
+- What are the exciting opportunities, and why are they better than the old ones
+- Why is this re-org designed the way it is, why would you have done the re-org this way.
 - Will more people be hired
 - Answer how to motivate them:
   - Autonomy - Let them recommend the transition plan.
@@ -2099,11 +2099,11 @@ When Zuck did a particular round of layoffs, he set a date in 3 months, and said
 
 When asked about the mechanics, Zuck said: Yes, this really sucks, I think regardless of how we setup the layoffs up they will suck: my only hope is this setup will sucks less.
 
-I think Reed Hastings (of Nextfix) has an interesting take here. [You want to give people good severance](https://www.instagram.com/reel/DD7Z1ptT_w0/) so they feel great leaving at any time they want instead of hanging around to get paid.
+I think Reed Hastings (of Netflix) has an interesting take here. [You want to give people good severance](https://www.instagram.com/reel/DD7Z1ptT_w0/) so they feel great leaving at any time they want instead of hanging around to get paid.
 
 ## Personal Motivations
 
-I guess the whole post is personal, as these are my opinions. The questions below can't be "evaluated" as they deal with internal motivations, however they can be questioned to determine if these are really my motivations, and if I"m being consistent between my actions and motivations.
+I guess the whole post is personal, as these are my opinions. The questions below can't be "evaluated" as they deal with internal motivations, however they can be questioned to determine if these are really my motivations, and if I'm being consistent between my actions and motivations.
 
 ### Igor's Management Manifesto
 
@@ -2141,7 +2141,7 @@ _The beliefs that drive everything else in this book._
 
 ### Why do you find management attractive
 
-Few things make me prouder then this [public feedback on LinkedIn](/static/idvorkin-linked-in-feedback-lastest.pdf) from people who worked with me over several years.
+Few things make me prouder than this [public feedback on LinkedIn](/static/idvorkin-linked-in-feedback-lastest.pdf) from people who worked with me over several years.
 
 On my deathbed, the product I will be most proud of is the people who I watched blossom and grow. It's cliche, but when you love your people they know it, they thrive, and do their best work. It's not just about the work, I want to make sure people think of their lives as well, because, well, that's even more important.
 

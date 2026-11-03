@@ -118,7 +118,7 @@ Private
 
 ### Software for Balance
 
-Interesting to think about how my blog can help me achieve balance. Prompts for things i enjoy seems like a good idea.
+Interesting to think about how my blog can help me achieve balance. Prompts for things I enjoy seems like a good idea.
 
 - ☑ Started playing around with [balance](/balance), and also [activation energy](/activation-energy)
 - ☑ Some notion of weekly reviews with scoring.
@@ -199,7 +199,7 @@ The pro of working during x-mas break:
 
 - Most folks have taken off so there are no meetings, and you can spend the time on fun projects
 
-The pro of time off during x-max break:
+The pro of time off during x-mas break:
 
 - The kids are also off, so an optimal time to spend with them
 - There are naturally 4 holiday days so spending 6 days, you get a solid 14 days off.

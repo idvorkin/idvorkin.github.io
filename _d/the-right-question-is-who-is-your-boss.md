@@ -6,7 +6,7 @@ I've just switched jobs, so I'm hearing that a lot. I'll be honest, for a bit I 
 
 I've been hearing that a lot lately.
 
-You are asking the wrong question - the question you should be asking are:
+You are asking the wrong question - the question you should be asking is:
 
 Why do you respect your boss?
 Do you respect your co-workers?

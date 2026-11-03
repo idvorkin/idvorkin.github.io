@@ -65,13 +65,13 @@ A list (+ 3 4) can be an expression, or define a variable, or define a function.
 
 Because everything is a list, including the source tree, you can interact with the source tree at run-time (ala reflection) or at compile time via (macros)
 
-Because everything is a list you have to look more closely then in other languages.
+Because everything is a list you have to look more closely than in other languages.
 
 A list with nested lists is a tree. A list in LISP is implemented as a link list. If each tree has 2 children, then a b-tree, else a regular tree.
 
-LISP is not a functional programming language, though functions are first class citizens. Modifining variables is a common situation, using (set )
+LISP is not a functional programming language, though functions are first class citizens. Modifying variables is a common situation, using (set )
 
-Because there are no operators, we can redefine any symbox we want.
+Because there are no operators, we can redefine any symbol we want.
 
 We don't write math like this.
 
@@ -93,13 +93,13 @@ Cool interactive editor
 - \eb -> execute the entire buffer
 - \lR -> Reset the buffer
 - \lV -> View the buffer in a vert split
-- \ece -> Execute the code, and paste itino a comment
+- \ece -> Execute the code, and paste it into a comment
 
 ## FAQ
 
 ### Why different then other languages?
 
-It starts with assumption all you need is lambda calculus, e.g just functions, eg.g. just expressions. There are no statemetns.
+It starts with assumption all you need is lambda calculus, e.g just functions, e.g. just expressions. There are no statements.
 
 Interestingly if you can pass in functions, then you can have functions to do the equivalent of statements in other programming languages
 
@@ -112,21 +112,21 @@ Actually, it's more fundamental, it's that everything is an expression, and if e
 The things:
 
 1/ Everything is an expression (aka a function call that returns something)
-2/ The only syntax is prefix notion
+2/ The only syntax is prefix notation
 
 This is in contrast to procedural languages which contain statements and think of "functions/sub routines as special".
 
 This corresponds to the models of computation:
 
-1/ The teuring machine
+1/ The Turing machine
 
-- You interact with a a machine that has variables
+- You interact with a machine that has variables
 - You can set and read variables
 - You can do math
 - You get language specific control statements
 - You can call sub routines
 
-2/ Lambada calculus
+2/ Lambda calculus
 
 - Everything is a function/expression
 - Assignment is a function
@@ -139,7 +139,7 @@ Harder on brain, but more consistent
 
 LISP is prefix notation (function args). The upside of this is you never have to guess operator precedence. Everything is consistent, making self editing much easier.
 
-Having everything in prefix notion makes it very consistent and easy to write code, just a bit tough on the brain.
+Having everything in prefix notation makes it very consistent and easy to write code, just a bit tough on the brain.
 
 ### Why cons, car, cadr
 
@@ -155,7 +155,7 @@ The terms `car` and `cdr` were retained in Lisp to refer to the first and rest o
 
 ### Tail recurusssion
 
-- A way to implement recurussion, but with O(1) space
+- A way to implement recursion, but with O(1) space
 
 ## Data
 
@@ -176,7 +176,7 @@ If all you have is substitution, how do you get stuff done?
 - Maybes ->
 
 - Recursion
-- Only subsititutions
+- Only substitutions
 
 ### Church Pairs
 
@@ -221,7 +221,7 @@ head(p1) # => 1
 tail(p2) # => 2
 ```
 
-Think about that more, that's creating an object at runtime. With a bit of sugar that's could very easily by a class/object sugar
+Think about that more, that's creating an object at runtime. With a bit of sugar that could very easily be a class/object sugar
 
 ```python
 class Pair:
@@ -274,15 +274,15 @@ So long as syntax is always `(function arg1 arg2 arg3)`, if `(method object arg 
 
 ### Code as Data
 
-Hymogophony? What if you can edit the source code just as easily as you can edit any other data? To do that parse trees can be much simpler when using prefix notion.
+Hymogophony? What if you can edit the source code just as easily as you can edit any other data? To do that parse trees can be much simpler when using prefix notation.
 
 ## Modern learning using an excellent tutor
 
 How to learn when you don't know everything. Books are linear.
 
-Really concepts are a dag. so where ever you end, you probably need everything... And that'st he better way to go. Ideally the book has this linear aspect to it. The problem with books is.
+Really concepts are a dag. so where ever you end, you probably need everything... And that's the better way to go. Ideally the book has this linear aspect to it. The problem with books is.
 
-The problemw ith the interjnnet
+The problem with the internet
 
 The book
 
@@ -294,10 +294,9 @@ The Choose your own adventure
 
 ## Language Evolution
 
-- Lisp (list procssing)
+- Lisp (list processing)
   - -> Scheme -> Racket
 - Algol (procedural)
-
   - C, Pascal
 
   -
@@ -334,7 +333,7 @@ The final Eval code:
 
 ### Lecture 3B Differentiation
 
-Because we're first class function We can start w/numerical differentiator. Take an input as af unction, and return the output of a function
+Because we're first class function We can start w/numerical differentiator. Take an input as a function, and return the output of a function
 
 ````python
 

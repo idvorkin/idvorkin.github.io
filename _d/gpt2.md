@@ -8,7 +8,7 @@ redirect-from:
 ai_default_image: true
 ---
 
-Just like the search bar in google fills in what you're typing when you say "Where can I ge .. " GPT3 complete strings as well. Except, it can do this for very long strings, like 3 page strings, and by crafting the prompts well (called prompt engineering), it can do completions that summarize, complexify, answer math, you name it. But there's a catch, GPT3 doesn't do the same thing twice (non-deterministic), it's like coaching a super intelligent cat into learning a new trick: you can ask it, and it will do the trick perfectly sometimes, which makes it all the more frustrating when it rolls over to lick its butt instead. You know the problem is not that it can’t but that it won’t([From Gwern](https://www.gwern.net/GPT-3)).
+Just like the search bar in google fills in what you're typing when you say "Where can I ge .. " GPT3 completes strings as well. Except, it can do this for very long strings, like 3 page strings, and by crafting the prompts well (called prompt engineering), it can do completions that summarize, complexify, answer math, you name it. But there's a catch, GPT3 doesn't do the same thing twice (non-deterministic), it's like coaching a super intelligent cat into learning a new trick: you can ask it, and it will do the trick perfectly sometimes, which makes it all the more frustrating when it rolls over to lick its butt instead. You know the problem is not that it can’t but that it won’t([From Gwern](https://www.gwern.net/GPT-3)).
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -45,9 +45,9 @@ GPT 3 is a huge language model that has the ability to complete sentences
 
 How do we evaluate if something is right? I'm guessing 99.99% of the time it's trusting an expert. Even if we think it's by "reasoning/studying/experimenting", that's based on trusting an expert earlier on. Notice similarity here with art or religion or science.
 
-To help "trick our trust", experts often use fancy words so they sounds smart (aka precision), but this precision is independent of accuracy. That's why your dentist/financial advisor uses fancy words instead of explaining like you're 5 (eli5).
+To help "trick our trust", experts often use fancy words so they sound smart (aka precision), but this precision is independent of accuracy. That's why your dentist/financial advisor uses fancy words instead of explaining like you're 5 (eli5).
 
-GPT-3 doesn't' know if it's right or wrong, but it often sounds like an expert. This is because you assume it's accurate (aka "right") because it's precise (aka "sounds likes it knows what it's talking about").
+GPT-3 doesn't know if it's right or wrong, but it often sounds like an expert. This is because you assume it's accurate (aka "right") because it's precise (aka "sounds like it knows what it's talking about").
 
 Let me give an example, the prompt is bolded:
 
@@ -57,7 +57,7 @@ Let me give an example, the prompt is bolded:
 - What is 9 _ 9 _ 2 _ 5 _ 2? The answer is 66,555.
 - What's 3.2 x 7.5 divided by 5.7? The answer is 5
 
-GPT3 answered my question then since I wanted more tokens answered some other questions as well. Easy to look and think wow it's brilliant. But if you check it's math, these answers are all wrong.
+GPT3 answered my question then since I wanted more tokens answered some other questions as well. Easy to look and think wow it's brilliant. But if you check its math, these answers are all wrong.
 
 And that's the problem with GPT-3 making false information added. Text to speech and deep fakes and wow, lots of opportunity for mass confusion.
 
@@ -128,7 +128,7 @@ Because the input is a prompt which gets auto completed, prompt generation is hu
 
 ### GPT3 vs Instruct GPT
 
-The original GPT3 engine had a tendency to go of the rail, which I really enjoyed. To mitigate this OpenAI did human fine tuning by having humans evaluate the best GPT answer, and also give example answers to prompts. This was really effective, and is now the default GPT model.
+The original GPT3 engine had a tendency to go off the rail, which I really enjoyed. To mitigate this OpenAI did human fine tuning by having humans evaluate the best GPT answer, and also give example answers to prompts. This was really effective, and is now the default GPT model.
 
 Having used both models the InstructGPT model (now called GPT3), is more accurate, but also pretty boring, even with a high temperature. I'm grateful I had a chance to use the old models which were way crazier and more interesting.
 

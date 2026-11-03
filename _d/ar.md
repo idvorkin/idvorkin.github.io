@@ -58,7 +58,7 @@ My notes on AR
 
 ## Concepts
 
-WAS3K, as usual, has an awesome post on [AR](https://vas3k.com/blog/augmented_reality/).
+VAS3K, as usual, has an awesome post on [AR](https://vas3k.com/blog/augmented_reality/).
 
 ### AR vs VR vs MR vs IRL
 

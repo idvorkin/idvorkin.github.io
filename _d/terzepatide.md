@@ -71,7 +71,7 @@ These numbers are made up, but they show the shape of it:
 - Light headed
 - Cold
 - Lower energy
-- Less Sleep (when calories go low, your body assuming you need to find food, and produces some sleep reduction drugs)
+- Less Sleep (when calories go low, your body assumes you need to find food, and produces some sleep reduction drugs)
 
 ### Gastrointestinal
 

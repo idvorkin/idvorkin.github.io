@@ -22,7 +22,7 @@ from pathlib import Path
 HERO_KEYS = ("imagefeaturelocal", "imagefeature")
 BARE = re.compile(r"^\s*(!\[|<img\b|<figure\b)", re.IGNORECASE)
 # Wide multi-panel heroes shown full-width on purpose (2026-10).
-ALLOW = {"_d/42.md", "_d/chapters.md"}
+ALLOW = {"_d/42.md", "_d/chapters.md", "_d/japanese-wisdoms.md"}
 
 
 def hero_names(text):

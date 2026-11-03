@@ -10,7 +10,7 @@ Coding is way easier than people think. Here's some pointers.
 
 {% include blob_image_float_right.html src="blog/raccoon-learn-to-code.webp" %}
 
-First, use python, it's super easy. I highly recommend this online course which i would have called [programming for humans](https://www.coursera.org/learn/interactive-python-1)
+First, use python, it's super easy. I highly recommend this online course which I would have called [programming for humans](https://www.coursera.org/learn/interactive-python-1)
 
 With Zach we got to writing [Zong](/ig66/602)
 

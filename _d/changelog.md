@@ -1299,7 +1299,7 @@ _61 commits this week_
 ### CHOP & Tooling
 
 - **[The flow question](/how-igor-chops#the-flow-question)** - [Flow survives chopping](https://github.com/idvorkin/idvorkin.github.io/commit/07a70ed21): it comes from orchestrating agents at different stages and mastering a skill.
-- **[CPU safety net](/how-igor-chops#container-setup)** - [A hypervisor cap plus a userspace watchdog](https://github.com/idvorkin/idvorkin.github.io/commit/63fc22051) keeps runaway agents from melting the Mac, with [a reference page](https://github.com/idvorkin/idvorkin.github.io/commit/0a105f381).
+- **[CPU safety net](/how-igor-chops#vm-setup-cattle-not-pets)** - [A hypervisor cap plus a userspace watchdog](https://github.com/idvorkin/idvorkin.github.io/commit/63fc22051) keeps runaway agents from melting the Mac, with [a reference page](https://github.com/idvorkin/idvorkin.github.io/commit/0a105f381).
 
 ### Infrastructure & CI (2026-04-12)
 

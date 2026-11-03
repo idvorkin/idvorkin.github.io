@@ -124,7 +124,7 @@ Some feedback I got:
 
 You need to plan to learn. Just like planning a project, This means in advance figuring out what the important questions are, and how you can best answer them. It's rare to think systematically about your learning, and to approach it systematically. It's also rare to do this in projects, and that's a good cause for mistakes.
 
-Without learning, you risk the the equivalent of org organ rejection syndrome (you are the organ). You'll do things that trigger the org's immune system and be under attack as a foreign body. Even in turnarounds and reorganizations when you've been brought in to import new ways of doing things, you still have to learn about the org's culture and politics to socialize and customize your approach.
+Without learning, you risk the equivalent of org organ rejection syndrome (you are the organ). You'll do things that trigger the org's immune system and be under attack as a foreign body. Even in turnarounds and reorganizations when you've been brought in to import new ways of doing things, you still have to learn about the org's culture and politics to socialize and customize your approach.
 
 #### What keeps you from learning
 
@@ -342,7 +342,7 @@ Building a productive working relationship with a new boss. The five-conversatio
 
 Pick the first round of wins to build personal credibility, establish key relationships, and identify and harvest low-hanging fruit-the highest-potential opportunities for short-term improvements in organizational performance. Done well, this strategy helps the new leader build momentum and deepen his own learning.
 
-Then have a second wave of changes to addresses fundamental issues of strategy, structure, systems, and skills to reshape the organization; deeper gains in organizational performance are achieved. But you need the first wins to pull this off.
+Then have a second wave of changes to address fundamental issues of strategy, structure, systems, and skills to reshape the organization; deeper gains in organizational performance are achieved. But you need the first wins to pull this off.
 
 #### Pick your wins
 
@@ -377,6 +377,8 @@ Make time to share:
 
 1. Who you are, and what you stand for
 1. Teachable moments
+
+Writing it is a storytelling job: see [Storytelling](/storytelling).
 
 #### How will you lead change
 
@@ -515,7 +517,7 @@ What is bothering you?
 
 - Who have you failed to connect?
 - Which meeting is the most troublesome?
-- Of all you seen, what bothered you the most?
+- Of all you've seen, what bothered you the most?
 
 What has gone well or poorly?
 
@@ -547,7 +549,7 @@ x
 - Plan to plan - Monthly, Weekly, and Daily Plans
 - [Stay in quadrant 2](/first-things-first) - Block time on your calendar
 
-Defer commitment - Never say yes on the spot. Always figure out if you can afford to do it, do not get pressured early. WAY better to no to yes then yes to no. Yes to no is hard on your reputation
+Defer commitment - Never say yes on the spot. Always figure out if you can afford to do it, do not get pressured early. WAY better to no to yes than yes to no. Yes to no is hard on your reputation
 
 - Go to the balcony
 - Too emotional? Step back and get an objective opinion.

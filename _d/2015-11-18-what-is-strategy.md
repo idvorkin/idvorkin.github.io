@@ -10,7 +10,7 @@ permalink: /strategy
 imagefeatureblob: marketcap.png
 ---
 
-As competition in the market intensifies, companies must find ways to differentiate themselves in order to have a successful business - and that means strategic positioning. If they want to get the buyers money they have to choose a strategy that works for them and make sure it has sustainable competitive advantages. From offering a different value, to providing the same value using different activities - the possibilities for positioning are endless. Ultimately, it's all about creating trade offs and making sure those trade offs give a sustainable competitive advantage!
+As competition in the market intensifies, companies must find ways to differentiate themselves in order to have a successful business - and that means strategic positioning. If they want to get the buyer's money they have to choose a strategy that works for them and make sure it has sustainable competitive advantages. From offering a different value, to providing the same value using different activities - the possibilities for positioning are endless. Ultimately, it's all about creating trade offs and making sure those trade offs give a sustainable competitive advantage!
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -44,7 +44,7 @@ As competition in the market intensifies, companies must find ways to differenti
 
 _Operational Effectiveness (Going Faster) Is Not Strategy_
 
-- If there is one carrot farmer at the market, the farmer can charge whatever the buyer is willing to pay. BUT - if there are two carrot farmers, the farmers compete with each other to the get the buyers money.
+- If there is one carrot farmer at the market, the farmer can charge whatever the buyer is willing to pay. BUT - if there are two carrot farmers, the farmers compete with each other to get the buyer's money.
 - The QUESTION is how can the farmers compete?
 - Being as efficient as possible, Operational Effectiveness, is important. For short periods of time, one carrot farmer can get more profit than the other carrot farmer, by being more efficient. But the other carrot farmer will soon be able to emulate the tactics of the first farmer, and before you know it the competitive advantage will disappear. **Operational efficiency is not a sustainable competitive strategy.**
 - Strategy positioning is defining how your company is different. By providing a different value, or providing the same value using different activities. For example, instead of selling carrots, the farmer can sell carrot jam. **Strategic positioning, is the only way to get a competitive advantage**.
@@ -69,7 +69,7 @@ Focus on the most you can get out of a subset of products services which you can
 Examples:
 
 - This is the technologist strategy. What's the best value I can provide from brass. I only work with brass.
-- Jiffy lube, what's the best I can do for oil changes.I only sell oil changes
+- Jiffy lube, what's the best I can do for oil changes. I only sell oil changes
 
 Customer Value:
 
@@ -205,7 +205,7 @@ The four is a fantastic book describing the value of the FANG companies.
 - Instagram is like high school cliques
 - Facebook is like thanksgiving with your uncle who believes all the conspiracy theories
 - Amazon is the mall.
-- NextDoor is like that lady who watches everything that happens on the block put her window. But also yelling
+- NextDoor is like that lady who watches everything that happens on the block out her window. But also yelling
 - Snapchat is like frat parties?
 - Zillow is like the real estate agent who can't close the deal.
 

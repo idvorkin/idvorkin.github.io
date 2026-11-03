@@ -5,6 +5,8 @@ permalink: /ai-eval-tools
 ai_default_image: true
 ---
 
+_Which software to run evals with: what I need from a tool, the parts every tool shares, and tool-by-tool reviews. How to measure (what to test, how to score, my benchmarks) is [AI Testing and Evals](/ai-testing)._
+
 Every time I want to compare models, prompts, or agent harnesses I trip over the same question: which eval tool? Strip the branding and they are all the same eight parts. They split on two questions: does the tool run the agent somewhere and look at what it did, or call a function and look at what it returned? And are runs saved so I can re-grade them without paying for them again? For agent work that leaves smevals (my own weekend evals) and Terminal-Bench (standard harness benchmarks). This is a quick survey, not a considered review: I've only used two of these in anger, and the versions move fast.
 
 {% include ai-slop.html percent="95" %}
@@ -13,7 +15,6 @@ Every time I want to compare models, prompts, or agent harnesses I trip over the
 <!-- vim-markdown-toc-start -->
 
 - [What I want from an eval tool](#what-i-want-from-an-eval-tool)
-- [Our benchmark evals](#our-benchmark-evals)
 - [The shared anatomy: same concepts, different names](#the-shared-anatomy-same-concepts-different-names)
 - [Where the tools split](#where-the-tools-split)
 - [The tools](#the-tools)
@@ -34,19 +35,13 @@ Every time I want to compare models, prompts, or agent harnesses I trip over the
 Criteria, learned while building [my first real eval](/ai-testing#grading-the-agent-with-smevals):
 
 1. Agent in a workdir. The thing under test is an agent changing files through a harness (Claude Code, Codex), not prompt in, completion out. Models are now trained with their harness and bound to it, so the model-plus-harness score is the one that matters. Same as with people: I judge someone working in their environment, not alone in an interview room.
-2. Deterministic checkers first: string matches, git diffs, my own tools as oracles. LLM judges are opt-in for quality, never the default gate, and when I use one it answers a list of yes/no assertions and cites the step it's judging, not a 1–5 score (from [Yesha Shah's Agentic Evals guide](https://www.linkedin.com/pulse/agentic-evals-software-engineers-guide-part-1-yesha-shah-sdjle/)).
+2. Deterministic checkers built in, with an LLM judge as an opt-in that takes a list of yes/no assertions ([why](/ai-testing#scoring-rules-i-trust)).
 3. Decoupled grading. Runs are immutable records on disk, so a new grader re-scores old runs without re-paying for them.
 4. Local-first: plain files in a repo, no SaaS account before hello world.
 5. Cheap authoring: YAML plus small scripts.
-6. A leaderboard by config × model, with per-task splits. Each task runs k times, reporting pass^k (passed every time) next to pass@k (passed once), with harness failures counted apart from agent failures (also from [Shah's guide](https://www.linkedin.com/pulse/agentic-evals-software-engineers-guide-part-1-yesha-shah-sdjle/)).
+6. A leaderboard by config × model, with per-task splits: k runs per task, pass^k next to pass@k, and harness failures counted apart from agent failures ([why](/ai-testing#scoring-rules-i-trust)). For a classifier, a per-class confusion matrix with a cost on each cell ([worked example](/ai-testing#confusion-matrix-precision-and-recall)).
 
-## Our benchmark evals
-
-The honest way to feel out a tool is to build the same evals in each. Every tool I try gets its example in a repo named after the tool, so the examples don't get lost behind generic names.
-
-**Blog page edit.** Can an agent make a scoped edit to a page, keep the generated TOC byte-identical to toc.py's output, and touch nothing else? Built with smevals in [smevals-blog-edit-evals](https://github.com/idvorkin-ai-tools/smevals-blog-edit-evals); results in [Testing AI](/ai-testing#grading-the-agent-with-smevals).
-
-**Raccoon generator.** My recurring real need: a raccoon illustration in the blog's house style. Deterministic checks first (file exists, right format, transparent background, sane dimensions), then a vision judge for what only a judge can see: is it a raccoon, and does it match the style. Not built yet. It's next, and it forces the multimodal-judge question the blog-edit eval dodges.
+Every tool I try gets built against the same [benchmark evals](/ai-testing#my-benchmark-evals), in a repo named after the tool so the examples don't get lost behind generic names.
 
 ## The shared anatomy: same concepts, different names
 
@@ -91,7 +86,7 @@ Versions as of 2026-08, as a rough signal of how alive each project is.
 
 ### smevals (0.2.0)
 
-[smevals](https://github.com/prime-radiant-inc/smevals), from Simon Willison and Prime Radiant, is the only tool here built for agent-harness evals out of the box. An eval is a directory of YAML, the Runner and Checkers are any executables, and runs are immutable, so new graders re-score old runs for free. It's young: the released version lags its own README (`-n` isn't shipped, and runs where the harness failed still get graded), there are no built-in judge helpers, and it's single-machine. My example, [smevals-blog-edit-evals](https://github.com/idvorkin-ai-tools/smevals-blog-edit-evals), has three tasks, three deterministic checkers, mock runners that validate the graders, and an LLM-judge grader added afterwards.
+[smevals](https://github.com/prime-radiant-inc/smevals), from Simon Willison and Prime Radiant, is the only tool here built for agent-harness evals out of the box. An eval is a directory of YAML, and the Runner and Checkers are any executables: the Runner can drive Claude Code or Codex in a working directory, and Checkers share that workspace, so a check can run git diff or the project's own tools instead of asking a judge. Runs are immutable records on disk, so new graders re-score old runs for free. It's young: the released version lags its own README (`-n` isn't shipped, and runs where the harness failed still get graded), there are no built-in judge helpers, and it's single-machine. My example, [smevals-blog-edit-evals](https://github.com/idvorkin-ai-tools/smevals-blog-edit-evals), has three tasks, three deterministic checkers, mock runners that validate the graders, and an LLM-judge grader added afterwards.
 
 ### PromptFoo (0.121.x)
 

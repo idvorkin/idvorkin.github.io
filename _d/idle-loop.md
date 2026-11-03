@@ -52,7 +52,7 @@ Here's the budget it spends against: you have a limited number of human tokens, 
 
 In 2020 I swapped doom-scrolling for a series of 120-page books, one topic each — economics, then psychiatry. What made it a better idle loop wasn't that reading is more respectable than scrolling:
 
-> it builds my cognative muscle, is not enthralling, which makes me comfortable doing something more interesting like being with my family.
+> it builds my cognitive muscle, is not enthralling, which makes me comfortable doing something more interesting like being with my family.
 
 _Is not enthralling_ was me describing [stopping energy](/activation) before I had the word for it. It's mechanical, not moral — the only question is what it costs to put the thing down.
 
