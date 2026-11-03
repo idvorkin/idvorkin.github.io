@@ -31,20 +31,20 @@ Every time I want to compare models, prompts, or agent harnesses I trip over the
 
 ## What I want from an eval tool
 
-Criteria, learned while building [my first real eval](/ai-testing#grading-the-agent-with-smevals):
+Criteria, learned while building [my first real eval](/ai-evals#grading-the-agent-with-smevals):
 
 1. Agent in a workdir. The thing under test is an agent changing files through a harness (Claude Code, Codex), not prompt in, completion out. Models are now trained with their harness and bound to it, so the model-plus-harness score is the one that matters. Same as with people: I judge someone working in their environment, not alone in an interview room.
 2. Deterministic checkers first: string matches, git diffs, my own tools as oracles. LLM judges are opt-in for quality, never the default gate, and when I use one it answers a list of yes/no assertions and cites the step it's judging, not a 1–5 score (from [Yesha Shah's Agentic Evals guide](https://www.linkedin.com/pulse/agentic-evals-software-engineers-guide-part-1-yesha-shah-sdjle/)).
 3. Decoupled grading. Runs are immutable records on disk, so a new grader re-scores old runs without re-paying for them.
 4. Local-first: plain files in a repo, no SaaS account before hello world.
 5. Cheap authoring: YAML plus small scripts.
-6. A leaderboard by config × model, with per-task splits. Each task runs k times, reporting pass^k (passed every time) next to pass@k (passed once), with harness failures counted apart from agent failures (also from [Shah's guide](https://www.linkedin.com/pulse/agentic-evals-software-engineers-guide-part-1-yesha-shah-sdjle/)). For a classifier, the report is a per-class confusion matrix with a cost on each cell, not one accuracy number ([worked example](/ai-testing#confusion-matrix-precision-and-recall)).
+6. A leaderboard by config × model, with per-task splits. Each task runs k times, reporting pass^k (passed every time) next to pass@k (passed once), with harness failures counted apart from agent failures (also from [Shah's guide](https://www.linkedin.com/pulse/agentic-evals-software-engineers-guide-part-1-yesha-shah-sdjle/)). For a classifier, the report is a per-class confusion matrix with a cost on each cell, not one accuracy number ([worked example](/ai-evals#confusion-matrix-precision-and-recall)).
 
 ## Our benchmark evals
 
 The honest way to feel out a tool is to build the same evals in each. Every tool I try gets its example in a repo named after the tool, so the examples don't get lost behind generic names.
 
-**Blog page edit.** Can an agent make a scoped edit to a page, keep the generated TOC byte-identical to toc.py's output, and touch nothing else? Built with smevals in [smevals-blog-edit-evals](https://github.com/idvorkin-ai-tools/smevals-blog-edit-evals); results in [Testing AI](/ai-testing#grading-the-agent-with-smevals).
+**Blog page edit.** Can an agent make a scoped edit to a page, keep the generated TOC byte-identical to toc.py's output, and touch nothing else? Built with smevals in [smevals-blog-edit-evals](https://github.com/idvorkin-ai-tools/smevals-blog-edit-evals); results in [AI Evals](/ai-evals#grading-the-agent-with-smevals).
 
 **Raccoon generator.** My recurring real need: a raccoon illustration in the blog's house style. Deterministic checks first (file exists, right format, transparent background, sane dimensions), then a vision judge for what only a judge can see: is it a raccoon, and does it match the style. Not built yet. It's next, and it forces the multimodal-judge question the blog-edit eval dodges.
 
@@ -115,7 +115,7 @@ More scanner than eval harness: it probes an LLM app for injection, leakage, and
 
 ### Container-native agentic: Terminal-Bench, SWE-bench, Vivaria
 
-This tier runs agents inside containers, which buys isolation (the agent can safely get full permissions, the sandbox fight I lost on my [codex runs](/ai-testing#grading-the-agent-with-smevals)), reproducible task images, and parallelism.
+This tier runs agents inside containers, which buys isolation (the agent can safely get full permissions, the sandbox fight I lost on my [codex runs](/ai-evals#grading-the-agent-with-smevals)), reproducible task images, and parallelism.
 
 - **[Terminal-Bench](https://www.tbench.ai/)** is my blog-edit eval, professionalized: each task is a Docker container with setup plus a verifier, and its leaderboard ranks each model inside a real CLI harness (Opus in Claude Code, GPT in Codex). Since Nov 2025 the harness is **Harbor**; the `tb` CLI is the legacy 1.x path.
 - **SWE-bench** builds a Docker image per issue and grades on whether the repo's tests pass. The agent (SWE-agent, now mostly mini-SWE-agent) is a separate layer on top.
