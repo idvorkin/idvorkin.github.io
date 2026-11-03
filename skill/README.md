@@ -24,6 +24,6 @@ Then ask `/idvorkin how should I run my weekly review?`.
 
 ## How it stays fresh
 
-Only `SKILL.md` is installed. Each session it fetches ENTRY, TOOLS, OPINIONS, and VOICE from this folder on `main` (raw.githubusercontent.com, with jsDelivr as a fallback), so a merge here updates every install. The four files are distilled from the blog's posts and refreshed as the blog changes; the blog stays the source of truth.
+Only `SKILL.md` is installed. Each session it fetches ENTRY, TOOLS, OPINIONS, and VOICE from this folder on `main` (raw.githubusercontent.com, with jsDelivr as a fallback), so a merge here updates every install. The four files are distilled from the blog's posts and Igor's public X posts, and refreshed weekly from what changed since the marks in [`INDEXED.md`](INDEXED.md); the blog stays the source of truth.
 
 This folder is excluded from the Jekyll build (`_config.yml`), so none of it is published as a site page.
