@@ -272,4 +272,4 @@ The ones the field is arguing about, as far as I can read it.
 ## What this post is not about
 
 - **The methods on a single answer**, with the worked example and the jargon decoder: [/ai-post-training](/ai-post-training); where post-training sits in the pipeline: [/ai-training](/ai-training).
-- **Building evals and graders yourself**: [/hill-climbing](/hill-climbing#your-other-job-build-evals) and [/ai-testing](/ai-testing). **The harness**, which is most of what makes an agent good: [/chop](/chop) and [/ai-cockpit](/ai-cockpit).
+- **Building evals and graders yourself**: [/hill-climbing](/hill-climbing#your-other-job-build-evals) and [/ai-evals](/ai-evals). **The harness**, which is most of what makes an agent good: [/chop](/chop) and [/ai-cockpit](/ai-cockpit).
