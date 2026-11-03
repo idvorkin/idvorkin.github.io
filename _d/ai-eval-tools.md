@@ -38,7 +38,7 @@ Criteria, learned while building [my first real eval](/ai-testing#grading-the-ag
 3. Decoupled grading. Runs are immutable records on disk, so a new grader re-scores old runs without re-paying for them.
 4. Local-first: plain files in a repo, no SaaS account before hello world.
 5. Cheap authoring: YAML plus small scripts.
-6. A leaderboard by config × model, with per-task splits. Each task runs k times, reporting pass^k (passed every time) next to pass@k (passed once), with harness failures counted apart from agent failures (also from [Shah's guide](https://www.linkedin.com/pulse/agentic-evals-software-engineers-guide-part-1-yesha-shah-sdjle/)).
+6. A leaderboard by config × model, with per-task splits. Each task runs k times, reporting pass^k (passed every time) next to pass@k (passed once), with harness failures counted apart from agent failures (also from [Shah's guide](https://www.linkedin.com/pulse/agentic-evals-software-engineers-guide-part-1-yesha-shah-sdjle/)). For a classifier, the report is a per-class confusion matrix with a cost on each cell, not one accuracy number ([worked example](/ai-testing#confusion-matrix-precision-and-recall)).
 
 ## Our benchmark evals
 
