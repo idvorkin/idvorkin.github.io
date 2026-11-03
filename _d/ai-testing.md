@@ -29,6 +29,7 @@ Testing math is easy, it's right or wrong. Testing spelling is easy too, but tes
   - [Human-based blind taste tests Chatbot arena](#human-based-blind-taste-tests-chatbot-arena)
   - [Eval Data Sets](#eval-data-sets)
   - [Grading the agent with smevals](#grading-the-agent-with-smevals)
+  - [Confusion matrix, precision, and recall](#confusion-matrix-precision-and-recall)
 - [Testing Theory](#testing-theory)
   - [Good books](#good-books)
   - [Simplest form of testing](#simplest-form-of-testing)
@@ -194,6 +195,31 @@ The graders themselves get tested with a pair of mock runners — a known-good o
 
 For a survey of the wider tool field — PromptFoo, Pydantic Evals, Inspect AI, and the SaaS tier — see [AI Eval Tools](/ai-eval-tools).
 
+### Confusion matrix, precision, and recall
+
+A single pass rate hides the question I care about: which mistakes, and what do they cost? When the thing under test is a classifier (route this ticket, pick this intent), the tool is a confusion matrix. The best worked example I've seen is Steve Yegge's [The Counting House](https://steve-yegge.medium.com/the-counting-house-steve-yegge-83f5145cc35b): four airline intents that sound alike and need very different handling ([my notes](https://idvorkin-ai-tools.github.io/yegge-field-map/ai/the-counting-house.html)). His numbers, 1,000 cases:
+
+| Actual ↓ / Picked → | Flight status | Rebooking | Goodwill credit | Special assistance | Recall |
+| ------------------- | ------------- | --------- | --------------- | ------------------ | ------ |
+| Flight status       | **470**       | 22        | 3               | 5                  | 94%    |
+| Rebooking           | 25            | **262**   | 8               | 5                  | 87%    |
+| Goodwill credit     | 12            | 6         | **130**         | 2                  | 87%    |
+| Special assistance  | 3             | 2         | 1               | **44**             | 88%    |
+| **Precision**       | 92%           | 90%       | 92%             | 79%                |        |
+
+Rows are what the customer needed; columns are what the model picked. The diagonal is right, and every other cell is one specific mistake.
+
+- **Precision** reads down a column: when the model says goodwill credit, how often is that true? 130 of 142.
+- **Recall** reads across a row: of the people who needed special assistance, how many got it? 44 of 50.
+
+You can max out either by cheating at the other: answer once and be right, or answer everything and miss nothing. Yegge's version of that:
+
+> In short, high recall means you hit all the ducks, whereas high precision means you _only_ hit ducks.
+>
+> — [Steve Yegge, The Counting House](https://steve-yegge.medium.com/the-counting-house-steve-yegge-83f5145cc35b)
+
+Overall accuracy here is 90.6%, and it hides the point: errors don't cost the same. In his example a misrouted status question costs about $6, a goodwill credit handed to someone who needed a rebooking $160, and a missed special-assistance request (a kid stranded at the gate) $25k. The six misses in the bottom row cost $150k; the other 88 mistakes together cost under \$9k. So I pick the metric per class: precision where the model hands out money, recall near 100% where a miss hurts someone. The bar isn't a fixed number either: Yegge scores the humans on the same gold set, and the model passes only if its error cost plus inference beats theirs plus labor.
+
 ## Testing Theory
 
 ### Good books
@@ -237,7 +263,7 @@ Have a judge grade it.
 
 Judges are subjective, so we can have multiple judges and average their answers - like we do in boxing matches or work performance reviews. The catch: averaging only helps if the judges actually disagree. Ask five judges the same question five different ways and you've bought one opinion at five times the price, so check that their scores diverge before you trust the average.
 
-And when every score comes back in the same narrow band, the fix is usually the question, not the judge. A judge answers _which of these two is better_ far more reliably than an abstract zero-to-ten scale - the same reason [Chatbot Arena](#human-based-blind-taste-tests-chatbot-arena) is pairwise. Trading absolute scores for a head-to-head against known-good references is what [unstuck an RL run on watercolour paintings](https://surya.website/rling-qwen-to-paint-with-code) that had flatlined.
+And when every score comes back in the same narrow band, the fix is usually the question, not the judge. A judge answers _which of these two is better_ far more reliably than an abstract zero-to-ten scale - the same reason [Chatbot Arena](#human-based-blind-taste-tests-chatbot-arena) is pairwise. Trading absolute scores for a head-to-head against known-good references is what [unstuck an RL run on watercolor paintings](https://surya.website/rling-qwen-to-paint-with-code) that had flatlined.
 
 ### Wrinkle - No clear questions
 
