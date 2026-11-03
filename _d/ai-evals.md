@@ -82,20 +82,20 @@ The graders themselves get tested with a pair of mock runners — a known-good o
 
 ### Confusion matrix, precision, and recall
 
-A single pass rate hides the question I care about: which mistakes, and what do they cost? When the thing under test is a classifier (route this ticket, pick this intent), the tool is a confusion matrix. The best worked example I've seen is Steve Yegge's [The Counting House](https://steve-yegge.medium.com/the-counting-house-steve-yegge-83f5145cc35b): four airline intents that sound alike and need very different handling ([my notes](https://idvorkin-ai-tools.github.io/yegge-field-map/ai/the-counting-house.html)). His numbers, 1,000 cases:
+A single pass rate hides the question I care about: which mistakes, and what do they cost? When the thing under test is a classifier (route this ticket, pick this intent), the tool is a confusion matrix. The idea comes from Steve Yegge's [The Counting House](https://steve-yegge.medium.com/the-counting-house-steve-yegge-83f5145cc35b) ([my notes](https://idvorkin-ai-tools.github.io/yegge-field-map/ai/the-counting-house.html)); the example below is made up. A support inbox, 1,000 tickets, four queues:
 
-| Actual ↓ / Picked → | Flight status | Rebooking | Goodwill credit | Special assistance | Recall |
-| ------------------- | ------------- | --------- | --------------- | ------------------ | ------ |
-| Flight status       | **470**       | 22        | 3               | 5                  | 94%    |
-| Rebooking           | 25            | **262**   | 8               | 5                  | 87%    |
-| Goodwill credit     | 12            | 6         | **130**         | 2                  | 87%    |
-| Special assistance  | 3             | 2         | 1               | **44**             | 88%    |
-| **Precision**       | 92%           | 90%       | 92%             | 79%                |        |
+| Actual ↓ / Picked → | Outage | Billing | How-to  | Spam    | Recall |
+| ------------------- | ------ | ------- | ------- | ------- | ------ |
+| Outage              | **30** | 2       | 16      | 2       | 60%    |
+| Billing             | 1      | **200** | 45      | 4       | 80%    |
+| How-to              | 1      | 10      | **344** | 45      | 86%    |
+| Spam                | 0      | 1       | 4       | **295** | 98%    |
+| **Precision**       | 94%    | 94%     | 84%     | 85%     |        |
 
-Rows are what the customer needed; columns are what the model picked. The diagonal is right, and every other cell is one specific mistake.
+Rows are what the ticket really was; columns are what the model picked. The diagonal is right, and every other cell is one specific mistake.
 
-- **Precision** reads down a column: when the model says goodwill credit, how often is that true? 130 of 142.
-- **Recall** reads across a row: of the people who needed special assistance, how many got it? 44 of 50.
+- **Precision** reads down a column: when the model says outage, how often is that true? 30 of 32.
+- **Recall** reads across a row: of the real outages, how many got called outages? 30 of 50.
 
 You can max out either by cheating at the other: answer once and be right, or answer everything and miss nothing. Yegge's version of that:
 
@@ -103,7 +103,9 @@ You can max out either by cheating at the other: answer once and be right, or an
 >
 > — [Steve Yegge, The Counting House](https://steve-yegge.medium.com/the-counting-house-steve-yegge-83f5145cc35b)
 
-Overall accuracy here is 90.6%, and it hides the point: errors don't cost the same. In his example a misrouted status question costs about $6, a goodwill credit handed to someone who needed a rebooking $160, and a missed special-assistance request (a kid stranded at the gate) $25k. The six misses in the bottom row cost $150k; the other 88 mistakes together cost under \$9k. So I pick the metric per class: precision where the model hands out money, recall near 100% where a miss hurts someone. The bar isn't a fixed number either: Yegge scores the humans on the same gold set, and the model passes only if its error cost plus inference beats theirs plus labor.
+Each class fails its own way. Outage is cautious: 94% precision, but 2 in 5 outages slip past, 16 of them into the how-to queue. Spam is greedy: it catches 98% of spam, and takes 51 real tickets with it. How-to is the junk drawer: 65 of the 409 tickets it gets belong somewhere else.
+
+Overall accuracy is 86.9%, and it hides the point: errors don't cost the same. Say a missed outage costs \$5,000 (a customer down for hours), a real ticket lost to spam \$100, a false page to on-call \$200, and any other misroute \$5. The 20 missed outages cost \$100k; the other 111 mistakes together cost \$5,600. So I pick the metric per class: recall near 100% on outages, even at the price of some false pages, and precision on spam, because a real ticket in the spam folder never gets answered. The bar isn't a fixed number either: Yegge scores the humans on the same gold set, and the model passes only if its error cost plus inference beats theirs plus labor.
 
 ## Tools
 
