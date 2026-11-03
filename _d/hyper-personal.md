@@ -159,6 +159,8 @@ It doesn't have to be just _you_. The same machinery personalizes to a pair (you
 
 The unit of personalization is whoever the second brain has context on. Couple, family, team — each is a valid target.
 
+Stories go there too: when generation is cheap, a story can be told to an [audience of one](/storytelling#stories-in-other-forms).
+
 ## Downside of hyper personalization
 
 ### We want shared experiences

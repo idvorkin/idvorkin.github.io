@@ -67,6 +67,8 @@ People don't remember the average of an experience. They remember the best momen
 
 The real test isn't the reaction in the moment. It's whether they can retell it at dinner tomorrow. If the story needs five conditions and a diagram, it dies on the walk home. "He signed my card and then it was inside a lemon" survives. Enjoyment is pleasure plus people plus memory, and memory only sticks to things simple enough to say out loud.
 
+These three (hero, peak, retell) are story rules first; the general version is in [Storytelling](/storytelling#telling-them-live).
+
 ### 8. Disarm before you astonish
 
 Nobody feels wonder while they're braced to be embarrassed. Before I try to amaze anyone I get a laugh and make it obvious they're safe — I am never going to make them the butt of the joke. [Safety is the precondition for joy](/joy). Skip it and the exact same astonishment that should have felt like delight lands as dread instead.
