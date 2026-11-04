@@ -9,7 +9,7 @@ redirect_from:
   - /wonder
   - /playbook
   - /performers-playbook
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/racoon-dealer-smiles-and-wonder.webp
+imagefeature: /images/raccoon-volunteer-hero.webp
 ---
 
 For years I've called myself the Dealer of Smiles. My [eulogy](/eulogy) says Igor lived to see eyes go wide and mouths gape with wonder, and I mean it — the magic, the juggling, the balloons, the closet full of ridiculous shirts are all just tools for one job: handing a stranger a moment they didn't see coming. This post is the how. After enough shows I noticed I keep running the same nine rules in my head, whether I'm doing one card trick for one kid or working a whole room, so I finally wrote them down.
@@ -27,7 +27,7 @@ For years I've called myself the Dealer of Smiles. My [eulogy](/eulogy) says Igo
   - [5. Let your delight cue theirs](#5-let-your-delight-cue-theirs)
   - [6. Engineer a peak and a good ending](#6-engineer-a-peak-and-a-good-ending)
   - [7. Give them a story simple enough to retell](#7-give-them-a-story-simple-enough-to-retell)
-  - [8. Disarm before you astonish](#8-disarm-before-you-astonish)
+  - [8. Make it safe to be the volunteer](#8-make-it-safe-to-be-the-volunteer)
   - [9. Small self, big generosity](#9-small-self-big-generosity)
 - [The Science I'm Leaning On](#the-science-im-leaning-on)
 - [Where This Comes From](#where-this-comes-from)
@@ -35,7 +35,7 @@ For years I've called myself the Dealer of Smiles. My [eulogy](/eulogy) says Igo
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-{% include blob_image_float_right.html src="blog/racoon-dealer-smiles-and-wonder.webp" %}
+{% include local_image_float_right.html src="raccoon-volunteer-hero.webp" alt="The raccoon kneels beside a delighted bunny volunteer holding up her signed card, gesturing to give her the credit; his shirt reads YOU DID IT" %}
 
 ## The Nine Rules
 
@@ -69,9 +69,22 @@ The real test isn't the reaction in the moment. It's whether they can retell it 
 
 These three (hero, peak, retell) are story rules first; the general version is in [Storytelling](/storytelling#telling-them-live).
 
-### 8. Disarm before you astonish
+### 8. Make it safe to be the volunteer
 
-Nobody feels wonder while they're braced to be embarrassed. Before I try to amaze anyone I get a laugh and make it obvious they're safe — I am never going to make them the butt of the joke. [Safety is the precondition for joy](/joy). Skip it and the exact same astonishment that should have felt like delight lands as dread instead.
+Nobody feels wonder while they're braced to be embarrassed. Before I try to amaze anyone I get a laugh and make it obvious they're safe. [Safety is the precondition for joy](/joy#safety-the-precondition-for-joy). Skip it and the exact same astonishment that should have felt like delight lands as dread instead.
+
+**One on one**, the safety work starts before the trick does:
+
+- **Pick someone who wants it.** I look for the person leaning in, not the one who just stepped back. If someone shakes their head, I believe them and move on.
+- **Ask small first.** "Can you hold this card?" is an easy yes, and it lets them test the water before I ask for anything bigger. I always leave a graceful out ("want to do the honors, or should I?") so a no never looks like a no.
+- **They're never the butt.** The joke is on me, the deck, or the impossible thing. Never on their shuffle, their memory, or their hands.
+- **Let them win.** If they fumble the cards or forget their card, that's mine to cover, not theirs to wear. The effect always ends with them being right.
+
+**In a group** the stakes go up. Now they're on display in front of their friends, family or coworkers, and they'll be living with those people long after I've packed up the deck.
+
+- **Make them look good.** The whole circle is watching them, not me, so I set them up to look clever, quick or lucky.
+- **Bury their mistakes.** If something goes sideways I fix it quietly and keep going. The group never sees the slip, and the volunteer never hears about it.
+- **Give the credit back.** At the end I thank them by name and point the applause at them. They walk back to their friends as the person who made the magic happen, not the person who got fooled.
 
 ### 9. Small self, big generosity
 
