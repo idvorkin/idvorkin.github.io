@@ -9,7 +9,7 @@ redirect_from:
   - /wonder
   - /playbook
   - /performers-playbook
-imagefeature: /images/raccoon-volunteer-hero.webp
+imagefeature: /images/raccoon-group-applause.webp
 ---
 
 For years I've called myself the Dealer of Smiles. My [eulogy](/eulogy) says Igor lived to see eyes go wide and mouths gape with wonder, and I mean it — the magic, the juggling, the balloons, the closet full of ridiculous shirts are all just tools for one job: handing a stranger a moment they didn't see coming. This post is the how. After enough shows I noticed I keep running the same nine rules in my head, whether I'm doing one card trick for one kid or working a whole room, so I finally wrote them down.
@@ -35,7 +35,7 @@ For years I've called myself the Dealer of Smiles. My [eulogy](/eulogy) says Igo
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-{% include local_image_float_right.html src="raccoon-volunteer-hero.webp" alt="The raccoon kneels beside a delighted bunny volunteer holding up her signed card, gesturing to give her the credit; his shirt reads YOU DID IT" %}
+{% include local_image_float_right.html src="raccoon-group-applause.webp" alt="The raccoon, in a DEALER OF SMILES shirt, applauds an otter volunteer holding her card high while a hedgehog and a fox cheer from a little table" %}
 
 ## The Nine Rules
 
