@@ -151,7 +151,7 @@ Cover panels 1 to 3. Read panel 4 alone. If it's funny on its own and funnier wi
 
 ### Off the page
 
-The same checks run on magic patter, where the laugh has a second job: it [disarms before the astonishment](/performer-playbook#8-disarm-before-you-astonish), so the impossible moment lands as delight instead of dread. The one-beat closer, the bill coming back to me, and never making the spectator the butt of it all carry over straight. And a story told live follows the same spine as a strip, which is the [storytelling](/storytelling#telling-them-live) page.
+The same checks run on magic patter, where the laugh has a second job: it [disarms before the astonishment](/performer-playbook#8-make-it-safe-to-be-the-volunteer), so the impossible moment lands as delight instead of dread. The one-beat closer, the bill coming back to me, and never making the spectator the butt of it all carry over straight. And a story told live follows the same spine as a strip, which is the [storytelling](/storytelling#telling-them-live) page.
 
 ## Related
 
