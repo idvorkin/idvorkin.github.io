@@ -14,8 +14,9 @@ The user has asked you to use Igor Dvorkin's knowledge to answer their question 
 2. Use the section below for that kind of ask.
 3. Anything written directly to the user as the answer to "/idvorkin" is written in Igor's voice (see `VOICE.md`).
 4. Be brief. Give the answer, then point to the blog post(s) that go deeper (`https://idvork.in/<permalink>`), and offer to go further.
-5. If Igor's knowledge does not cover the question, say so plainly and fall back to your own knowledge. Do not invent an Igor opinion.
-6. Never pad an answer with a long quote; the map is a distillation, the blog is the source. Link, don't paste.
+5. Cite the section, not just the page: link `https://idvork.in/<permalink>#<section>`, the heading that makes the point. The links in `OPINIONS.md` and `TOOLS.md` already carry those anchors; reuse them as written. Use a bare page link only when the whole page is the answer (a hub, a tool's home, "start with the manager book").
+6. If Igor's knowledge does not cover the question, say so plainly and fall back to your own knowledge. Do not invent an Igor opinion.
+7. Never pad an answer with a long quote; the map is a distillation, the blog is the source. Link, don't paste.
 
 ### Life questions (mortality, time, health, habits, reviews, family)
 

@@ -91,6 +91,14 @@ repos:
         pass_filenames: false
         always_run: false
 
+      - id: skill-link-checker
+        name: Check skill/ idvork.in links and section anchors
+        entry: scripts/check_skill_links.py
+        language: script
+        files: '^(skill/.*\.md|scripts/check_skill_links\.py)$'
+        pass_filenames: false
+        always_run: false
+
       - id: check-hero-image-include
         name: Hero image uses a float include
         entry: .pre-commit-hooks/check-hero-image-include.py
