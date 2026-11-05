@@ -1,10 +1,116 @@
 [
   {
+    "num": 15,
+    "title": "Direct Line",
+    "date": "November 1, 2026",
+    "img": "/images/den/den-015.webp",
+    "alt": "The Den #15: Direct Line — four panels in the plush-render house style, all in the lamp-lit attic den. 1: Igor, a raccoon in rainbow glasses, a green TECHNOLOGIST tee, denim shorts and one blue and one yellow croc, holds a phone to his ear: 'CALLING LARRY.' Larry — the grey-bearded raccoon in wire-rim spectacles and a tweed waistcoat, one arm ending in a giant red lobster claw — sits in the green leather armchair an arm's length away. Between them the call runs the long way round: a single-file chain of small blue plush robots across the rug and along the top of the bookshelf, each pressing its phone to the next one's head, until the last robot, standing on the armrest, holds a phone to Larry's ear. 2: No words. A close-up of the chain: the robots pass the call down the line phone-to-head, one newly slotted in wearing a big gold gift bow, and one at the end fast asleep on its feet in a little nightcap, its phone sagging. 3: Igor, phone to his ear, paw on hip: 'DID I BREAK YOU, OR ARE YOU BROKEN?' The phone answers in a jagged balloon: 'PLEASE HOLD. UPGRADING.' 4: Igor gives up on the phone, lets it hang at his side and leans right into Larry's face: 'LARRY. IT'S ME. I'M RIGHT HERE.' Larry stays in the armchair, the gold-bow robot on the armrest pressing a phone to his ear, claw raised, and holds up one polite paw: 'HOLD ON. IT'S IGOR.'",
+    "panels": [
+      "/images/den/den-015-p1.webp",
+      "/images/den/den-015-p2.webp",
+      "/images/den/den-015-p3.webp",
+      "/images/den/den-015-p4.webp"
+    ]
+  },
+  {
+    "num": 14,
+    "title": "Quick Question",
+    "date": "October 18, 2026",
+    "img": "/images/den/den-014.webp",
+    "alt": "The Den #14: Quick Question — four panels in the plush-render house style, all in the lamp-lit attic den. 1: Bedtime. Igor, a raccoon in rainbow glasses, a green TECHNOLOGIST tee, striped pajama shorts and one blue and one yellow croc, a pillow under one arm, hands over a long checklist of empty boxes: 'TWENTY THINGS, DONE BY MORNING. GOT IT?' Larry — the grey-bearded raccoon in wire-rim spectacles and a tweed waistcoat, one arm ending in a giant red lobster claw — takes the end of it: 'YES. FOR SURE.' 2: Night, moonlight through the attic window. Igor is fast asleep in a little quilted bed in the corner, eyes closed behind his glasses, Zs rising. Larry stands frozen mid-word with one finger raised, his pencil hanging in mid-air, the checklist untouched on the desk and two small blue robots sitting idle: 'QUICK QUESTION BEFORE I START...' 3: Morning sun. Igor, hair rumpled, phone in paw: 'HOW MUCH DID YOU GET DONE?' Larry is still frozen in the same pose, a cobweb now stretched from his raised claw to the lamp, the list on the desk with every box empty. 4: Igor holds up the empty list, deadpan. Larry, paw on hip, a little indignant: 'WELL, NOTHING. YOU NEVER ANSWERED MY QUESTION.'",
+    "panels": [
+      "/images/den/den-014-p1.webp",
+      "/images/den/den-014-p2.webp",
+      "/images/den/den-014-p3.webp",
+      "/images/den/den-014-p4.webp"
+    ]
+  },
+  {
+    "num": 13,
+    "title": "The Longest Title",
+    "date": "October 11, 2026",
+    "img": "/images/den/den-013.webp",
+    "alt": "The Den #13: The Longest Title — four panels in the plush-render house style, all in the lamp-lit attic den. 1: Igor, a raccoon in rainbow glasses, a green TECHNOLOGIST tee, denim shorts and one blue and one yellow croc, points at an old oak card catalog: 'WHAT'S THIS ONE CALLED?' Larry — the grey-bearded raccoon in wire-rim spectacles and a tweed waistcoat, one arm ending in a giant red lobster claw — pulls a card from an open drawer, and behind it the blank cream paper keeps coming: 'LET ME READ THE TITLE.' 2: No words. The title card is now an endless paper strip, carried overhead by a line of small blue plush robots like a parade dragon, down the attic stairs and out of a daylit door below, while Larry keeps feeding it out of the drawer and Igor clutches his cheeks. 3: Dusk through the open attic window. The far end of the strip has come all the way round the house and back in, its tip resting on Igor's shoulder: 'HAS IT GOT TO THE BOOK YET?' Larry, still holding the other end at the drawer: 'STILL THE TITLE.' 4: The whole attic is knee-deep in coils of paper, both raccoons wading in it. Igor shrugs, paws out: 'SO WHERE'S THE ACTUAL BOOK?' Larry, earnest and helpful, waves his paw at the pile: 'OH, THIS IS THE TITLE. WANT ME TO START THE BOOK?'",
+    "panels": [
+      "/images/den/den-013-p1.webp",
+      "/images/den/den-013-p2.webp",
+      "/images/den/den-013-p3.webp",
+      "/images/den/den-013-p4.webp"
+    ]
+  },
+  {
+    "num": 12,
+    "title": "Bless You",
+    "date": "October 4, 2026",
+    "img": "/images/den/den-012.webp",
+    "alt": "The Den #12: Bless You — four panels in the plush-render house style, all in the lamp-lit attic den. 1: Igor, a raccoon in rainbow glasses, a green TECHNOLOGIST tee, denim shorts and one blue and one yellow croc, holds up a folded note: 'LARRY? I LEFT YOU A NOTE.' Larry — the grey-bearded raccoon in wire-rim spectacles and a tweed waistcoat, one arm ending in a giant red lobster claw — stands at a toy block tower with two small blue plush robots: 'ONE MOMENT. BUILDING.' 2: Later, no words: the clock has moved on, the lamp burns low, the tower reaches the ceiling beam with the robots perched on top, and Igor sits slumped on the attic stairs, the note drooping in his paw. 3: Next morning. Igor, wrench in paw, has bolted a tin mailbox with three flags — SEEN, WORKING, DONE — to the arm of the green leather armchair: 'FROM NOW ON, YOU SIGN FOR YOUR MAIL.' Larry, clipboard on his knees: 'SO EVERYTHING YOU SAY IS MAIL?' 4: Igor sneezes, a paw clapped over his nose, coffee sloshing out of his mug: 'AH-CHOO!' Larry, not looking up, holds the yellow SEEN flag high: 'SEEN.'",
+    "panels": [
+      "/images/den/den-012-p1.webp",
+      "/images/den/den-012-p2.webp",
+      "/images/den/den-012-p3.webp",
+      "/images/den/den-012-p4.webp"
+    ]
+  },
+  {
+    "num": 11,
+    "title": "Zero Tokens",
+    "date": "September 27, 2026",
+    "img": "/images/den/den-011.webp",
+    "alt": "The Den #11: Zero Tokens — four panels in the plush-render house style, all in the lamp-lit attic den. 1: Igor, a raccoon in rainbow glasses, a green TECHNOLOGIST tee, denim shorts and one blue and one yellow croc, spreads his arms over a tabletop toy city of little houses where tiny blue plush robots sit at tiny desks: 'I BUILT A WHOLE CITY OF AGENTS.' Larry — the grey-bearded raccoon in wire-rim spectacles and a tweed waistcoat, one arm ending in a giant red lobster claw — from the green leather armchair: 'HOW MANY TOKENS?' 2: Igor holds an empty glass jar, a paw on his chin: 'ZERO.' Larry: 'AH.' 3: Close on the toy city: every robot sits idle in a row, lamp eyes dimmed. Igor, crouched beside the table: 'WHY IS NOBODY WORKING?' Larry: 'NO TOKENS, NO TICKETS.' 4: Igor throws his arms wide in front of the quiet city: 'SO WHAT DID IT DO ALL WEEK?' Larry, contentedly writing: 'ZERO BUGS. BEST WEEK YET.'",
+    "panels": [
+      "/images/den/den-011-p1.webp",
+      "/images/den/den-011-p2.webp",
+      "/images/den/den-011-p3.webp",
+      "/images/den/den-011-p4.webp"
+    ]
+  },
+  {
+    "num": 10,
+    "title": "Our Most Prolific Contributor",
+    "date": "September 27, 2026",
+    "img": "/images/den/den-010.webp",
+    "alt": "The Den #10: Our Most Prolific Contributor — four panels in the plush-render house style, all in the lamp-lit attic den. 1: Igor, a raccoon in rainbow glasses, a green TECHNOLOGIST tee, denim shorts and one blue and one yellow croc, points at a glowing laptop on a small desk: 'THE COCKPIT HAS NO TESTS. HOW?' Larry — the grey-bearded raccoon in wire-rim spectacles and a tweed waistcoat, one arm ending in a giant red lobster claw — looks up from his clipboard in the green leather armchair: 'LET ME LOOK.' 2: Larry has opened a low cupboard under the eaves and an avalanche of small cardboard boxes pours out around his shoes: 'THIRTY-TWO HUNDRED OF THEM.' Igor, staring at the pile: 'NOBODY TOLD ANYONE?' 3: Two small blue plush robots carry boxes toward a big wooden rubber stamp on the desk. Igor, one finger up: 'RUN THEM ON EVERY COMMIT.' Larry, writing: 'DONE.' 4: Larry holds up a long paper scroll of the commit log, and every line on it reads 'AUTHOR: TEST'. Igor points at it: 'WHY IS EVERY COMMIT SIGNED 'TEST'?' Larry, unbothered: 'THEY GOT A JOB. NOW THEY WANT CREDIT.'",
+    "panels": [
+      "/images/den/den-010-p1.webp",
+      "/images/den/den-010-p2.webp",
+      "/images/den/den-010-p3.webp",
+      "/images/den/den-010-p4.webp"
+    ]
+  },
+  {
+    "num": 9,
+    "title": "He Speaks Human",
+    "date": "September 26, 2026",
+    "img": "/images/den/den-009.webp",
+    "alt": "The Den #9: He Speaks Human — four panels in the plush-render house style, all in the lamp-lit attic den, in two mirrored rows. Each top panel opens with a black BEFORE · OPUS 5 bar, and each bottom panel with a gold AFTER · OPUS 5.5 bar. 1: Igor, a raccoon in rainbow glasses, a green TECHNOLOGIST tee, denim shorts and one blue and one yellow croc, holds a coffee mug and asks 'DID THE REMINDER GO OUT?' Larry — the grey-bearded raccoon in wire-rim spectacles and a tweed waistcoat, one arm ending in a giant red lobster claw — sits in the green leather armchair under a brass plate reading OPUS 5, writing on his clipboard, and answers 'CLOSED 4F2.A1 VIA SHA 3C9E1A.' 2: Closer on Igor, unimpressed, one paw out: 'IN WORDS, PLEASE.' Larry, unbothered: 'SEE THREAD 7B.09, NOTE 3.' 3: The first panel replayed. A small blue plush robot on a step-stool gives the armchair's new plate, OPUS 5.5, a last turn with a screwdriver. Igor asks again, 'DID THE REMINDER GO OUT?', and Larry answers 'YES. IT WENT OUT AT NOON.' 4: The second panel replayed. Igor throws his arms up, beaming, coffee sloshing out of his mug: 'YOU SPEAK HUMAN NOW!' Larry, pleased, from the chair: 'IN WORDS, AS REQUESTED.'",
+    "receipts_url": "https://gist.github.com/idvorkin-ai-tools/d5032390ddb05bf214a0a22ee9ed63bb",
+    "panels": [
+      "/images/den/den-009-p1.webp",
+      "/images/den/den-009-p2.webp",
+      "/images/den/den-009-p3.webp",
+      "/images/den/den-009-p4.webp"
+    ]
+  },
+  {
+    "num": 8,
+    "title": "What's His Name",
+    "date": "September 26, 2026",
+    "img": "/images/den/den-008.webp",
+    "alt": "The Den #8: What's His Name — four panels in a glossier plush render, two in the gym and two in the attic den. 1: A bright kettlebell studio, racks of black kettlebells along the wall and daylight through tall windows. Igor, a raccoon in rainbow glasses, a green TECHNOLOGIST tee, denim shorts and one blue and one yellow croc, crouches beside a kettlebell and a folded towel and asks 'WHAT AM I DOING TODAY?' A phone propped on the black bench to his right answers in a jagged cream balloon: 'LEGS. NO ARGUING.' 2: The same gym, close on Igor, who holds the phone up to his face and squints at it: 'WHO AM I TALKING TO?' The phone: 'REX.' 3: The warm lamp-lit attic den. Igor walks in with the towel round his neck and the phone in one paw: 'YOU HIRED SOMEBODY?' Larry — the grey-bearded raccoon in wire-rim spectacles and a tweed waistcoat, one arm ending in a giant red lobster claw — sits in the green leather armchair writing on a clipboard, entirely unbothered: 'HE'S VERY GOOD.' 4: The same den, and there is a third raccoon in it: Rex, lean and wiry in a grey training tank and a black sweatband, a whistle on a lanyard, a towel over one shoulder and a foam roller under one arm, a kettlebell at his feet and a rising bar chart on the wall behind him. He says nothing. Larry, from the chair: 'YOU'RE NOT GOING TO ASK WHY?' Igor, in the foreground, beaming at the reader: 'I WANT A PICTURE OF HIM.'",
+    "receipts_url": "https://gist.github.com/idvorkin-ai-tools/49e5f54c6c272c2656070f78371cc7ee",
+    "panels": [
+      "/images/den/den-008-p1.webp",
+      "/images/den/den-008-p2.webp",
+      "/images/den/den-008-p3.webp",
+      "/images/den/den-008-p4.webp"
+    ]
+  },
+  {
     "num": 7,
     "title": "Before AI / After AI",
     "date": "September 2, 2026",
     "img": "/images/den/den-007.webp",
-    "alt": "The Den #7: Before AI / After AI — four panels in the plush-render house style, cut into two halves by header bars. 1: Under a cream BEFORE AI banner, a dark brick alley at night. Bruno, a bulky plush badger in a black beanie and a dark hoodie, holds a small knife low at his side and demands 'HAND OVER YOUR WALLET! NOW!'; Igor, a raccoon in rainbow glasses, a green TECHNOLOGIST tee, denim shorts and one blue and one yellow croc, throws his paws up and pleads 'NO! DON'T! I HAVE 3 CHILDREN AT HOME!' A torn notice is taped to the brick beside him. 2: Close on Igor against the alley wall, a tear on his cheek and his paws clasped, repeating 'NO! DON'T! I HAVE 3 CHILDREN AT HOME!'; the thought bubble above him shows three small raccoon kits in green tees bouncing on a couch in a lamp-lit living room, and a weathered poster on the brick reads 'HARD TIMES TOO' under a frowning face. 3: Under a blue AFTER AI banner, the same alley, the same badger, the same knife, the same line — 'HAND OVER YOUR WALLET! NOW!' — but this time Igor pleads 'NO! DON'T! I HAVE 3 AI AGENTS AT HOME WAITING FOR MY RESPONSE!', and the notice on the wall behind him reads 'SAME ALLEY DIFFERENT WORLD' under a smiling face. 4: Igor in the foreground, paws clasped, thinking; a thought bubble labelled 'MY 3 AGENTS...' opens onto the warm attic den, where Larry — the bearded raccoon in wire-rim spectacles and a tweed waistcoat, one arm ending in a giant red lobster claw — works at a laptop beside two blue plush robots at laptops of their own, three mugs on the table reading COACH, PLAN and SHIP. Igor finishes: '...AND THEY GET CRANKY WHEN I'M LATE.'",
+    "alt": "The Den #7: Before AI / After AI — four panels in the plush-render house style, cut into two halves by header bars. 1: Under a cream BEFORE AI banner, a dark brick alley at night. Bruno, a bulky plush badger in a black beanie and a dark hoodie, holds a small knife low at his side and demands 'HAND OVER YOUR WALLET! NOW!'; Igor, a raccoon in rainbow glasses, a green TECHNOLOGIST tee, denim shorts and one blue and one yellow croc, throws his paws up and pleads 'NO! DON'T! I HAVE 3 CHILDREN AT HOME!' A torn notice is taped to the brick beside him. 2: Close on Igor against the alley wall, a tear on his cheek and his paws clasped, repeating 'NO! DON'T! I HAVE 3 CHILDREN AT HOME!'; the thought bubble above him shows three small raccoon kits in green tees bouncing on a couch in a lamp-lit living room, and a weathered poster on the brick reads 'HARD TIMES TOO' under a frowning face. 3: Under a blue AFTER AI banner, the same alley, the same badger, the same knife, the same line — 'HAND OVER YOUR WALLET! NOW!' — but this time Igor pleads 'NO! DON'T! I HAVE 3 AI AGENTS AT HOME WAITING FOR MY RESPONSE!', and the notice on the wall behind him reads 'SAME ALLEY DIFFERENT WORLD' under a smiling face. 4: Igor in the foreground, paws clasped, thinking; a thought bubble labeled 'MY 3 AGENTS...' opens onto the warm attic den, where Larry — the bearded raccoon in wire-rim spectacles and a tweed waistcoat, one arm ending in a giant red lobster claw — works at a laptop beside two blue plush robots at laptops of their own, three mugs on the table reading COACH, PLAN and SHIP. Igor finishes: '...AND THEY GET CRANKY WHEN I'M LATE.'",
     "receipts_url": "https://gist.github.com/idvorkin-ai-tools/7ba5da694b7c87235e49ddb3501e6fc6",
     "panels": [
       "/images/den/den-007-p1.webp",

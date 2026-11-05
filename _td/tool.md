@@ -7,7 +7,7 @@ redirect-from:
   - /tool
 ---
 
-A collection of tips, tricks and pointers of the various tools i use
+A collection of tips, tricks and pointers of the various tools I use
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -126,7 +126,7 @@ Web:
 - Beautiful Soup - JQuery like parsing
 - Pylinkvalidator - Crawl a web site for errors (great for web testing)
 - Hug: Python API generator
-- Pendulum: The best datetime library (better then arrow).
+- Pendulum: The best datetime library (better than arrow).
 - [Requests](https://docs.python-requests.org/en/master/) Http requests for humans
 - [Requests-HTML](https://github.com/kennethreitz/requests-html) Web Parsing for humans
 - [Scapy](https://scrapy.org/) Web crawling for humans.
@@ -142,7 +142,7 @@ Tools:
 
 CLI:
 
-- typer - Very nice command line too based on type arguments
+- typer - Very nice command line tool based on type arguments
 - rich - Nice TUI output
 
 Debugging:
@@ -418,7 +418,7 @@ zsh path append
 - Vim in any text box [Wasavi](https://chrome.google.com/webstore/detail/wasavi/dgogifpkoilgiofhhhodbodcfgomelhe)
 - Speed up YouTube playback via keyboard shortcut [YouTube playback speed control](https://chrome.google.com/webstore/detail/youtube-playback-speed-co/hdannnflhlmdablckfkjpleikpphncik)
 - Fail to load dinosaur - Not an extension but you can play a little game with the dinosaur by pressing <space> on the chrome dinosaur
-- Custom searchh engines are cool. You can use them for search sites you frequently use. For example my github repo and my blog:
+- Custom search engines are cool. You can use them for search sites you frequently use. For example my github repo and my blog:
 
   ghtd: <https://github.com/search?l=&q=%s+user%3Aidvorkin&type=Code&s=indexed>
   ig: <https://www.idvork.in/index.html?q=%s>
@@ -431,7 +431,7 @@ TUI http [debugger](https://github.com/asciimoo/wuzz)
 
 #### httplab
 
-A TUI [http server](https://github.com/gchaincl/httplab) - The oppositve of wuzz.
+A TUI [http server](https://github.com/gchaincl/httplab) - The opposite of wuzz.
 
 #### httpie
 
@@ -459,11 +459,11 @@ This looks [pretty cool](https://www.brow.sh/). I had to run it in a container:
 
     docker run --rm -it browsh/browsh
 
-The keybindings are desktop-esk, which is too bad as they conflict with my terminal bindings. If you try it C-Q gets you out of it, can also run extensions, so I bet you could run vimium in there. Although, your'e going a little crazy at this point
+The keybindings are desktop-esque, which is too bad as they conflict with my terminal bindings. If you try it C-Q gets you out of it, can also run extensions, so I bet you could run vimium in there. Although, you're going a little crazy at this point
 
 #### w3m - Text based web browser
 
-A text based browser [better then lynx](http://w3m.sourceforge.net/). But,
+A text based browser [better than lynx](http://w3m.sourceforge.net/). But,
 
 ### Video Manipulation Tools
 
@@ -491,11 +491,11 @@ The first -ss seeks fast to (approximately) 8min0sec, and then the second -ss se
 
 Video To Gif on iOS
 
-On github, it's common to share an inline view of a [repro](https://github.com/mzlogin/vim-markdown-toc/issues/62). A great way to do that is to make a gif of the issue. To do that on iOS you need to do do a screen recording, and then save that to a gif. I used GifMaker, seems good enough.
+On github, it's common to share an inline view of a [repro](https://github.com/mzlogin/vim-markdown-toc/issues/62). A great way to do that is to make a gif of the issue. To do that on iOS you need to do a screen recording, and then save that to a gif. I used GifMaker, seems good enough.
 
 ### Linters and formatters
 
-You know what sucks more then coding standards? Arguing about coding standards. Nothing pains me like arguing about formatting (and other minutia).
+You know what sucks more than coding standards? Arguing about coding standards. Nothing pains me like arguing about formatting (and other minutia).
 
 As such I love having lint failures part of the build process, being auto-fixed, and failing checkin when ignored. [Opinionated](https://stackoverflow.com/questions/802050/what-is-opinionated-software) formatters are even better as you don't need to spend time arguing about which standard to enforce. And yes, all standards suck, but arguing about standards sucks more.
 
@@ -528,7 +528,7 @@ Sometimes your repository gets screwed up and needs to be fixed. In that case, e
     # checkout with proper crlf
     git checkout .
 
-Also, can set a single file in vim by settings `set ff=unix`
+Also, can set a single file in vim by setting `set ff=unix`
 
 ### Spelling
 
@@ -543,7 +543,7 @@ ispell
 
 ### Web scripting
 
-I like to watch YouTube (engineering documentaries) before bed, and need a sleep timer. JS will let you close a windows you opened, so this script opens a new window to watch YouTube in for an hour.
+I like to watch YouTube (engineering documentaries) before bed, and need a sleep timer. JS will let you close a window you opened, so this script opens a new window to watch YouTube in for an hour.
 
 ```javascript
 // Open in another window so I have perms to close it
@@ -706,7 +706,7 @@ cat foo.cast | svg-term --out foo.svg
 # Copy out your svg file
 ```
 
-_If on iOS then you need to click to open the image in a new tag_
+_If on iOS then you need to click to open the image in a new tab_
 
 ![inamged image](https://raw.githubusercontent.com/idvorkin/techdiary/master/images/demo-cli-screen-recording.svg?sanitize=true)
 

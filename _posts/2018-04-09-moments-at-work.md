@@ -5,7 +5,7 @@ date: "2018-04-09 07:25:17 Pacific Daylight Time"
 tags:
 permalink: moments-at-work
 tags:
-    - book-notes
+  - book-notes
 collapsable: true
 ---
 
@@ -14,8 +14,8 @@ Of all the places we spend our time, work is the one that dominates. However, wh
 Most managers focus on solving problems, making sure employees and customers aren't frustrated, but this is table stakes and not memorable. Luckily, managers can do better. They can create peak moments which we'll remember when we look back on our lives. To do this we have 3 strategies:
 
 1. Create moments of elevation by planning to create the peak moments
-1. Create moments of insight by stretch your employees so they are challenged.
-1. Create moments of pride by recognizing employees at every opportunities
+1. Create moments of insight by stretching your employees so they are challenged.
+1. Create moments of pride by recognizing employees at every opportunity
 
 #### Elevation: Plan for peak moments
 
@@ -30,9 +30,9 @@ Most managers focus on solving problems, making sure employees and customers are
   - Each birthday is planned by a randomly selected other team mate - give 'em 100\$ and say go.
   - Give a tonne of Zimbabwe money (100 Trillion currency).
   - Run across office in a gorilla solution.
-  - Managers makes breakfast for team (include homemade dishes - yummy Indian food)
-- Opportunities for abound: Transitions
-  - First day of work - John Deer example
+  - Managers make breakfast for team (include homemade dishes - yummy Indian food)
+- Opportunities abound: Transitions
+  - First day of work - John Deere example
   - South west air lines - on intercom, someone getting married. Hand out napkins for advice to marriage.
   - Promotions
   - First year anniversary
@@ -72,10 +72,10 @@ Most managers focus on solving problems, making sure employees and customers are
 
 - At the core - I saw what you did and appreciated it!
 - Make recognition a part of your culture (employees copy managers)
-- Do it more then you think - managers think they get an 8/10 for recognition, but employees report 4/10.
+- Do it more than you think - managers think they get an 8/10 for recognition, but employees report 4/10.
 - This makes employees feel noticed and valued - it's catching people doing this right which will reinforce behavior.
 - Free to do, it's very powerful, and both the givers and receivers feel great.
-- Can't be a scalable program, needs to personal.
+- Can't be a scalable program, needs to be personal.
 - But can make it easier on yourself - Have a stack of coffee cards for giving recognition. Write out hand written note to give it publicly.
   - Public is good.
   - Social.

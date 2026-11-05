@@ -7,7 +7,7 @@ redirect_from:
   - /ranking
 ---
 
-My explorations of recommender and ranking systems, heavly based on the superb book Practical Recommender Systems
+My explorations of recommender and ranking systems, heavily based on the superb book Practical Recommender Systems
 
 <!-- prettier-ignore-start -->
 
@@ -74,7 +74,7 @@ Re-ranking - Final online ranking, remove dislikes, fairness, etc. Since online 
 
 ### What makes ML hard
 
-- Need to convert a domain into math (floats, and functions operating on floats). Each of these conversions is lossy with subteties that have unexpected impact.
+- Need to convert a domain into math (floats, and functions operating on floats). Each of these conversions is lossy with subtleties that have unexpected impact.
 - Data drifts over time for reasons that are unclear to your system
 - Search post for #ml_art
 
@@ -94,7 +94,7 @@ Re-ranking - Final online ranking, remove dislikes, fairness, etc. Since online 
 ### How to calculate ratings
 
 - Implicit vs Explicit Rating - Users lie, implicit is better (see flossing example)
-- The bannana problem - knowing someone buys a bananna doesn't tell you much (See TF-IFD)
+- The banana problem - knowing someone buys a banana doesn't tell you much (See TF-IFD)
 
 - A user-item matrix is the data format for recommender algorithms. You can populate them by using explicit as well as implicit ratings or by indicating which items were consumed by the user in a binary matrix.
 - A rating is the glue that connects a user to an item. It can either be manually entered by the user or calculated based on the behavior of the user.
@@ -116,7 +116,7 @@ Re-ranking - Final online ranking, remove dislikes, fairness, etc. Since online 
 
 #### Spot Lights
 
-- Manual Curatoin
+- Manual Curation
 - Categories with Manual Curation
 
 #### Seeded Recommendations, seed to find clusters, Frequently Bouht Together (FBT)
@@ -141,7 +141,7 @@ QQ: Is this like TF/TFID
 
 #### Implementation notes
 
-- Can make recommendations more resonsive by doing offline
+- Can make recommendations more responsive by doing offline
 - Keep multiple sets of versioned recommendations. Helpful for testing and rolling back
 
 #### Commercial vs a recommendation
@@ -173,7 +173,7 @@ Association rules to start recommending fast
 
 #### Business Rules
 
-If someone watches Toy Story and Texas Chain saw, don't recommend Texacs Chainsaw during Childrens rules. Need biz rules
+If someone watches Toy Story and Texas Chain saw, don't recommend Texas Chainsaw during Childrens rules. Need biz rules
 
 - When watching family movies, only recommend family
 - Never recommend a horror movie when watching family movies
@@ -182,7 +182,7 @@ If someone watches Toy Story and Texas Chain saw, don't recommend Texacs Chainsa
 
 - Build short list (Search)
 - Filter out w/Biz Rules
-- Presonalize what's left with fast recommender
+- Personalize what's left with fast recommender
 
 #### Semi-personalized by geo/segment/demographic
 
@@ -200,7 +200,7 @@ Great for folks who saw them as kids (now 40) and their kids who have watched th
 
 ### How to represent content/users
 
-We need to represent them into a vector, vectors can be explicit, like for a user age/gender, or they can be latent, latent means the computer came upw tih the model and users don't know what it means.
+We need to represent them into a vector, vectors can be explicit, like for a user age/gender, or they can be latent, latent means the computer came up with the model and users don't know what it means.
 
 #### How to measure similarity
 
@@ -221,7 +221,7 @@ There are multiple ways to measure, and depends on the representation of the thi
   - If doesn't work small, might not work big.
   - Might see don't have required data
   - Verify with stake holders what they want.
-  - Verify you have required data (pivacy, retention, etc)
+  - Verify you have required data (privacy, retention, etc)
   - Can you join aggregate the data into required shape
 - Regression Testing
   - But it's hard.
@@ -250,22 +250,20 @@ There are multiple ways to measure, and depends on the representation of the thi
     - MAE - Not sensitive. Decent when a terrible rating is OK.
     - Be careful if you have user with lots of recommendation and popular items that will overweight in the results
 - Decision Support - Precision and Recall
-
   - True Positive - Recommended and consumed
   - False Positive - Recommended and not consumed
   - False Negative - Didn't include the recommendation, but user consumed
   - True Negative - Wasn't recommended, and user didn't select
 
 - Precision - What % of recommend items did users consume
-- Recall - What % of items users concsumed were recommended.
+- Recall - What % of items users consumed were recommended.
 - Precision is more important for ranking
 - But since using TopN, need to have precision at K.
 - Ranking Metrics:
-  - Need to turn the results into a number, the formula for that has consequences, you need to understand as has different impacts.f
-  - Wrong farther down the list is less important, ignore tat
+  - Need to turn the results into a number, the formula for that has consequences, you need to understand as has different impacts.
+  - Wrong farther down the list is less important, ignore that
   - Mean active Precision (MAP)
 - Data splitting
-
   - User w/o enough data - probably need to remove from set
   - Too much data - sampling
   - Stratified sampling - sample more from under represented
@@ -283,7 +281,7 @@ There are multiple ways to measure, and depends on the representation of the thi
   - Split into folds, and combine randomly.
   - Average results from all of them
 
-Benchmarkingi predictions - How often do you watch something? - Consider starting with popular items as the baseline predictor to get a benchmark
+Benchmarking predictions - How often do you watch something? - Consider starting with popular items as the baseline predictor to get a benchmark
 
 - Friends and Family
 - A/B test
@@ -350,11 +348,11 @@ Use a category, not just the collaborative filtering
    - Can build by using viewership data
 3. Non-personalized by demographic
    - People in this demographic like XYZ
-4. Non-personlized by item
+4. Non-personalized by item
    - People who buy item X by item Y
 5. Non personalized by item when items sparse
    - Use a higher order attribute, so use the artist that creates instead of the item itself.
-6. Personlized via Clustering
+6. Personalized via Clustering
 
 7. ## Similarity in items and users
 
@@ -378,7 +376,7 @@ Notebook from google - <https://colab.research.google.com/github/google/eng-edu/
 
 ### Netflix Prize
 
-Netflix put out a 1M bounty for users that could build the best recommender ssytem. Ultimetly not used in production because not fast enough inferencing, but pretty cool, and a great place to start playing around:
+Netflix put out a 1M bounty for users that could build the best recommender system. Ultimately not used in production because not fast enough inferencing, but pretty cool, and a great place to start playing around:
 
 - Just the [data set](https://www.kaggle.com/datasets/netflix-inc/netflix-prize-data)
 - Someone's [detailed analysis](https://github.com/storieswithsiva/Movie-Recommendation-Netflix) looks worthy of study.

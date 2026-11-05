@@ -4,7 +4,7 @@ title: Accessing Google Photos
 permalink: /google-photos
 ---
 
-I like having a blog, but honestly it's faster to write it in google photos as that has a better WYSWIG viewer. But, I don't get features like search, or previews, which matters to me. I also don't trust Google not to break photos in the future. Of course exporting is a PITA, here are some hacks to export and make it into my blog format. NOTE: There is an API to extract photos, but it doesn't include the text (which I like to have, as recall WYSWIG editor)
+I like having a blog, but honestly it's faster to write it in google photos as that has a better WYSIWYG viewer. But, I don't get features like search, or previews, which matters to me. I also don't trust Google not to break photos in the future. Of course exporting is a PITA, here are some hacks to export and make it into my blog format. NOTE: There is an API to extract photos, but it doesn't include the text (which I like to have, as recall WYSIWYG editor)
 
 # Download the album page
 
@@ -19,7 +19,7 @@ Oddly, the page is pretty dynamic, got to find the text in a script block
 
     cat album.html | pup 'script:contains("AF_initDataCallback(")' | grep AF_init > data1
 
-Bleah, need to figure out a clean way to paarse this ... Yuk.
+Bleah, need to figure out a clean way to parse this ... Yuk.
 Then need to parse the json slug with the dictionary that has keys like: 99218341.
 
           99218341: [
@@ -32,7 +32,7 @@ Then need to parse the json slug with the dictionary that has keys like: 9921834
           ],
           101428965: [0, "vdhvk94a06vv00000000004a"],
 
-Thinking, maybe the best way to do that is non greedy grep ... Lets think through that ..
+Thinking, maybe the best way to do that is non greedy grep ... Let's think through that ..
 
 <https://github.com/idvorkin/idvorkin.github.io/blob/master/dump_google_album.py?plain=1#L25>
 

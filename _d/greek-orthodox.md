@@ -189,3 +189,5 @@ The daily-practice side of my framework — the closest thing I have to an ascet
 
 This section is reserved for Zach — if he wants to add his perspective on what drew him to Greek Orthodoxy, this is his space.
 -->
+
+{% include spiritual-health-cluster.html %}

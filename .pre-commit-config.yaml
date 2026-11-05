@@ -51,7 +51,7 @@ repos:
       - id: typos
         name: Check for typos
         exclude: "^(assets|pagefind|chop-logs|zz-chop-logs|cursor-logs|published-chop-logs|topics_data|images/.*\\.excalidraw|old_blog|static)/.*$|^(back-links|topics)\\.json$"
-        args: []  # Uses .typos.toml for configuration
+        args: [] # Uses .typos.toml for configuration
 
   # 🧪 Local hooks
   - repo: local
@@ -77,7 +77,7 @@ repos:
         files: '\.(md|markdown)$'
         # README.md is not a served Jekyll page, so its TOC self-anchors (#permalink, …)
         # resolve against the homepage and always fail this check. It renders fine on GitHub.
-        exclude: "^zz-chop-logs/.*$|back-links.json|^README.md$"
+        exclude: "^(zz-chop-logs|skill)/.*$|back-links.json|^README.md$"
         pass_filenames: false
         always_run: false
         verbose: true
@@ -90,6 +90,20 @@ repos:
         exclude: "^zz-chop-logs/.*$|back-links.json"
         pass_filenames: false
         always_run: false
+
+      - id: skill-link-checker
+        name: Check skill/ idvork.in links and section anchors
+        entry: scripts/check_skill_links.py
+        language: script
+        files: '^(skill/.*\.md|scripts/check_skill_links\.py)$'
+        pass_filenames: false
+        always_run: false
+
+      - id: check-hero-image-include
+        name: Hero image uses a float include
+        entry: .pre-commit-hooks/check-hero-image-include.py
+        language: script
+        files: '^(_d|_posts|_td)/.*\.md$'
 
       - id: check-asin-placeholders
         name: Check ASIN placeholders need validation

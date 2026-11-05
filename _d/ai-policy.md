@@ -5,6 +5,7 @@ permalink: /ai-policy
 tags:
   - how igor ticks
   - ai
+ai_default_image: true
 ---
 
 AI is the biggest force multiplier I've ever experienced. I build it for a living, and I have an AI life coach named Larry — so "use less AI" was never going to be my policy. A multiplier amplifies whatever you point it at. The whole question is what to point it at, and when to put it down.

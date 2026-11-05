@@ -66,30 +66,61 @@ module Jekyll
       end
       
       # Create git data
+      base, changed = changed_sources(site.source, branch)
+      add_diff_base_pages(site, base, changed)
       site.data['git'] = {
         'branch' => branch,
         'pr_number' => pr_number,
-        'changed_pages' => changed_pages(site.source, branch),
+        'changed_pages' => changed.map(&:last),
         'generated_at' => Time.now.to_s
       }
 
       Jekyll.logger.info "Git data:", "Branch: #{branch}, PR: #{pr_number || 'none'} (from #{site.source})"
     end
 
-    # Permalinks of the posts this branch changes, so the dev banner can link to them.
-    def changed_pages(source, branch)
-      return [] if %w[unknown main master].include?(branch)
+    # The merge-base with the canonical main (upstream/main in a fork checkout, else origin/main),
+    # and [file, permalink] for each post this branch changes, so the dev banner can link to them.
+    def changed_sources(source, branch)
+      return [nil, []] if %w[unknown main master].include?(branch)
       Dir.chdir(source) do
         base = %w[upstream/main origin/main].map { |ref| `git merge-base HEAD #{ref} 2>/dev/null`.strip }.find { |sha| !sha.empty? }
         files = base ? `git diff --name-only #{base} -- _d _posts _td`.split("\n") : []
         files += `git ls-files -m -o --exclude-standard -- _d _posts _td`.split("\n")
-        files.uniq.sort.filter_map do |f|
-          File.file?(f) && File.foreach(f).first(40).join[/^permalink:\s*(\/\S*)/, 1]
-        end
+        [base, files.uniq.sort.filter_map do |f|
+          permalink = File.file?(f) && File.foreach(f).first(40).join[/^permalink:\s*(\/\S*)/, 1]
+          [f, permalink] if permalink
+        end]
       end
     rescue => e
       Jekyll.logger.warn "Git data:", "Failed to list changed pages: #{e.message}"
-      []
+      [nil, []]
+    end
+
+    DIFF_BASE = '/_diff-base'
+
+    # Dev-only: render main's copy of each changed page at /_diff-base/<permalink>, so the preview's
+    # "Diff vs main" (src/rich-diff.ts) reads its base SAME-ORIGIN instead of fetching idvork.in.
+    # Only branch builds reach here (main/master return no changed pages), so production never gets these.
+    # A page absent on main gets no copy: its 404 renders as "new page".
+    def add_diff_base_pages(site, base, changed)
+      return unless base
+      changed.each do |file, permalink|
+        raw = IO.popen(['git', '-C', site.source, 'show', "#{base}:#{file}"], err: File::NULL, &:read).force_encoding('UTF-8')
+        next unless $?.success?
+        m = raw.match(Jekyll::Document::YAML_FRONT_MATTER_REGEXP)
+        data = m ? (SafeYAML.load(m[1]) || {}) : {}
+        page = PageWithoutAFile.new(site, site.source, '', "index#{File.extname(file)}")
+        page.content = m ? m.post_match : raw
+        # redirect_from would make jekyll-redirect-from shadow the real page's redirects.
+        page.data.merge!(data.reject { |k, _| k == 'redirect_from' })
+        page.data['permalink'] = DIFF_BASE + permalink.sub(%r{/+\z}, '')
+        page.data['search_exclude'] = true
+        page.data['diff_base'] = true
+        page.data['sitemap'] = false
+        site.pages << page
+      end
+    rescue => e
+      Jekyll.logger.warn "Git data:", "Failed to render main-branch diff bases: #{e.message}"
     end
   end
 end

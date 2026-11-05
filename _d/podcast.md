@@ -5,6 +5,7 @@ permalink: /podcast
 redirect_from:
   - /podcasting
   - /podcasts
+imagefeatureblob: blog/podcast-cover-transparent.webp
 ---
 
 To my amazement, I listen to podcasts. I think they're pretty interesting, here are my notes on them.

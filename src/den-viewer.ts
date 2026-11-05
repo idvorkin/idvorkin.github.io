@@ -1,14 +1,19 @@
-// ABOUTME: Controls the full-screen panel reader used by comic strips on The Den page.
-// ABOUTME: Keeps each strip independent and adds its full composite as the final reading step.
+// ABOUTME: Controls the full-screen panel reader used by Den comic strips and other panel sets.
+// ABOUTME: Steps through one entry's panels, then its full composite when the entry has one.
 
 export interface DenStripEntry {
-  num: number;
+  num: number | string;
   title: string;
-  date: string;
-  img: string;
-  alt: string;
+  date?: string;
+  /** Full composite, shown as the final step. Omit it and the reader ends on the last panel. */
+  img?: string;
+  alt?: string;
   receipts_url?: string;
   panels: string[];
+  /** Per-panel title line (e.g. "3. Shoshin — beginner's mind"); defaults to the entry label. */
+  captions?: string[];
+  /** Replaces the "#N — Title" label and the "The Den #N" alt prefix. */
+  label?: string;
 }
 
 interface ActiveView {
@@ -33,14 +38,29 @@ interface ViewerElements {
   receipts: HTMLAnchorElement;
 }
 
-const PANEL_COUNT = 4;
-const FULL_STRIP_STEP = PANEL_COUNT;
 const SWIPE_DISTANCE = 40;
+
+function hasFullStep(entry: DenStripEntry): boolean {
+  return Boolean(entry.img);
+}
+
+function lastStep(entry: DenStripEntry): number {
+  return hasFullStep(entry) ? entry.panels.length : entry.panels.length - 1;
+}
+
+function isFullStep(entry: DenStripEntry, step: number): boolean {
+  return hasFullStep(entry) && step === entry.panels.length;
+}
+
+function entryLabel(entry: DenStripEntry): string {
+  return entry.label ?? `#${entry.num} — ${entry.title}`;
+}
 
 export class DenViewerManager {
   private active: ActiveView | null = null;
   private closeTimer: number | null = null;
   private currentLayer = 0;
+  private dotsFor: DenStripEntry | null = null;
   private elements: ViewerElements | null = null;
   private imageLayers: HTMLImageElement[] = [];
   private imageToken = 0;
@@ -70,7 +90,6 @@ export class DenViewerManager {
     this.elements = elements;
     entries.forEach((entry) => this.manifest.set(String(entry.num), entry));
     this.bindStripOpeners();
-    this.createDots();
     this.bindControls();
     this.initialized = true;
     return true;
@@ -143,25 +162,47 @@ export class DenViewerManager {
   private bindStripOpeners(): void {
     this.doc.querySelectorAll<HTMLElement>("[data-den-strip][data-num]").forEach((strip) => {
       const entry = this.manifest.get(strip.dataset.num ?? "");
-      if (!entry || entry.panels.length < PANEL_COUNT) return;
+      if (!entry) return;
+      strip.querySelectorAll<HTMLElement>("[data-den-panel]").forEach((opener) => this.bindOpener(entry, opener));
+    });
 
-      strip.querySelectorAll<HTMLButtonElement>("[data-den-panel]").forEach((button) => {
-        const panel = Number(button.dataset.denPanel) - 1;
-        if (panel < 0 || panel >= PANEL_COUNT) return;
-        button.addEventListener("click", () => this.open(entry, panel, button));
-      });
+    // Openers outside a strip figure, e.g. per-section images: data-den-open="<num>" data-den-panel="<n>".
+    this.doc.querySelectorAll<HTMLElement>("[data-den-open][data-den-panel]").forEach((opener) => {
+      const entry = this.manifest.get(opener.dataset.denOpen ?? "");
+      if (entry) this.bindOpener(entry, opener);
     });
   }
 
-  private createDots(): void {
-    if (!this.elements) return;
-    for (let step = 0; step <= FULL_STRIP_STEP; step++) {
+  private bindOpener(entry: DenStripEntry, opener: HTMLElement): void {
+    const panel = Number(opener.dataset.denPanel) - 1;
+    if (!Number.isInteger(panel) || panel < 0 || panel >= entry.panels.length) return;
+
+    if (!(opener instanceof HTMLButtonElement)) {
+      opener.setAttribute("role", "button");
+      opener.setAttribute("tabindex", "0");
+      opener.setAttribute("aria-haspopup", "dialog");
+      opener.style.cursor = "pointer";
+      opener.addEventListener("keydown", (event) => {
+        if (event.key !== "Enter" && event.key !== " ") return;
+        event.preventDefault();
+        this.open(entry, panel, opener);
+      });
+    }
+    opener.addEventListener("click", () => this.open(entry, panel, opener));
+  }
+
+  private buildDots(entry: DenStripEntry): void {
+    if (!this.elements || this.dotsFor === entry) return;
+    this.dotsFor = entry;
+    this.elements.dots.replaceChildren();
+    for (let step = 0; step <= lastStep(entry); step++) {
       const dot = this.doc.createElement("button");
-      const isFullStrip = step === FULL_STRIP_STEP;
+      const isFull = isFullStep(entry, step);
+      const name = isFull ? "Full strip" : (entry.captions?.[step] ?? `Panel ${step + 1}`);
       dot.type = "button";
-      dot.className = `den-lightbox__dot${isFullStrip ? " den-lightbox__dot--all" : ""}`;
-      dot.setAttribute("aria-label", isFullStrip ? "Full strip" : `Panel ${step + 1}`);
-      dot.title = isFullStrip ? "Full strip" : `Panel ${step + 1}`;
+      dot.className = `den-lightbox__dot${isFull ? " den-lightbox__dot--all" : ""}`;
+      dot.setAttribute("aria-label", name);
+      dot.title = name;
       dot.addEventListener("click", () => this.render(step));
       this.elements.dots.appendChild(dot);
     }
@@ -222,6 +263,7 @@ export class DenViewerManager {
 
     this.opener = trigger;
     this.active = { entry, step };
+    this.buildDots(entry);
     this.elements.lightbox.hidden = false;
     this.doc.documentElement.classList.add("den-lightbox-open");
     this.doc.body.classList.add("den-lightbox-open");
@@ -234,21 +276,21 @@ export class DenViewerManager {
   }
 
   private render(step: number): void {
-    if (!this.active || !this.elements || step < 0 || step > FULL_STRIP_STEP) return;
+    if (!this.active || !this.elements || step < 0 || step > lastStep(this.active.entry)) return;
 
     this.active.step = step;
     const { entry } = this.active;
-    const isFullStrip = step === FULL_STRIP_STEP;
-    const label = `#${entry.num} — ${entry.title}`;
+    const isFullStrip = isFullStep(entry, step);
+    const label = isFullStrip ? entryLabel(entry) : (entry.captions?.[step] ?? entryLabel(entry));
     const previousDisabled = step === 0;
-    const nextDisabled = isFullStrip;
+    const nextDisabled = step === lastStep(entry);
 
     this.elements.title.textContent = label;
     this.elements.lightbox.setAttribute("aria-label", `Comic viewer: ${label}`);
     this.elements.lightbox.dataset.denStrip = String(entry.num);
     this.elements.lightbox.dataset.denStep = isFullStrip ? "all" : String(step + 1);
-    this.elements.counter.textContent = isFullStrip ? "full strip" : `panel ${step + 1} of 4`;
-    this.elements.date.textContent = entry.date;
+    this.elements.counter.textContent = isFullStrip ? "full strip" : `panel ${step + 1} of ${entry.panels.length}`;
+    this.elements.date.textContent = entry.date ?? "";
     this.elements.previousButton.disabled = previousDisabled;
     this.elements.tapPrevious.disabled = previousDisabled;
     this.elements.nextButton.disabled = nextDisabled;
@@ -275,7 +317,7 @@ export class DenViewerManager {
   private step(delta: number): void {
     if (!this.active) return;
     const next = this.active.step + delta;
-    if (next < 0 || next > FULL_STRIP_STEP) return;
+    if (next < 0 || next > lastStep(this.active.entry)) return;
     this.render(next);
   }
 
@@ -315,7 +357,7 @@ export class DenViewerManager {
     const current = this.imageLayers[this.currentLayer];
     const targetIndex = current.getAttribute("src") ? 1 - this.currentLayer : this.currentLayer;
     const target = this.imageLayers[targetIndex];
-    const isFullStrip = step === FULL_STRIP_STEP;
+    const isFullStrip = isFullStep(entry, step);
     const token = ++this.imageToken;
 
     this.imageLayers.forEach((image) => {
@@ -325,7 +367,13 @@ export class DenViewerManager {
     });
     if (current.getAttribute("src") && current !== target) current.classList.add("is-outgoing");
 
-    target.alt = isFullStrip ? `The Den #${entry.num}, full strip` : `The Den #${entry.num}, panel ${step + 1} of 4`;
+    const altName = entry.label ?? `The Den #${entry.num}`;
+    const caption = entry.captions?.[step];
+    target.alt = isFullStrip
+      ? `${altName}, full strip`
+      : caption
+        ? `${altName}: ${caption}`
+        : `${altName}, panel ${step + 1} of ${entry.panels.length}`;
     target.width = isFullStrip ? 1600 : 800;
     target.height = isFullStrip ? 1600 : 800;
     target.dataset.denCurrent = "true";
@@ -341,11 +389,11 @@ export class DenViewerManager {
   }
 
   private fileFor(entry: DenStripEntry, step: number): string | undefined {
-    return step === FULL_STRIP_STEP ? entry.img : entry.panels[step];
+    return isFullStep(entry, step) ? entry.img : entry.panels[step];
   }
 
   private preload(entry: DenStripEntry, step: number): void {
-    if (step < 0 || step > FULL_STRIP_STEP) return;
+    if (step < 0 || step > lastStep(entry)) return;
     const file = this.fileFor(entry, step);
     if (!file || this.preloaded.has(file)) return;
     this.preloaded.add(file);

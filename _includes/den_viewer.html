@@ -1,6 +1,9 @@
-{%- comment -%} Full-screen Den comic reader. Include once after all
-den_strip.html instances. Strip metadata and panel file paths come from
-_data/den.json. {%- endcomment -%}
+{%- comment -%} Full-screen panel reader. Include once per page, after all
+openers. Entries come from _data/den.json by default; pass data="NAME" to read
+_data/NAME.json instead (same shape: num, title, panels, and optional img, date,
+receipts_url, label, captions). Openers are den_strip.html hit zones, or any
+element with data-den-open="NUM" data-den-panel="N". {%- endcomment -%} {%-
+assign _den_data_key = include.data | default: "den" -%}
 <style>
   .den-strip {
     --den-bg: rgba(255, 255, 255, 0.92);
@@ -140,13 +143,14 @@ _data/den.json. {%- endcomment -%}
   }
 
   .den-lightbox__title {
+    display: -webkit-box;
     overflow: hidden;
     min-width: 0;
     font-size: 0.94rem;
     font-weight: 600;
     line-height: 1.25;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
   }
 
   .den-lightbox button,
@@ -296,8 +300,10 @@ _data/den.json. {%- endcomment -%}
 
   .den-lightbox__dots {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 0;
+    min-width: 0;
   }
 
   .den-lightbox__dot {
@@ -473,7 +479,7 @@ _data/den.json. {%- endcomment -%}
 </div>
 
 <script type="application/json" id="den-manifest">
-  {{ site.data.den | jsonify }}
+  {{ site.data[_den_data_key] | jsonify }}
 </script>
 <script type="module">
   import { setupDenViewer } from "/assets/js/den-viewer.js";

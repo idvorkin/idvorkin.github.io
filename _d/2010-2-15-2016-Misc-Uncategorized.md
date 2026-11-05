@@ -108,12 +108,12 @@ Blog posts for this week?
   - Right metric is customer engagement
 
 Igor's Work Advantage
-_Some of these are extra valuable depending on your teams culture_
+_Some of these are extra valuable depending on your team's culture_
 
 - Very good at tools, and grinding through data.
 - Dive deep vs level up
 - Relationships first (vs efficiency)
-- Ideas or the week
+- Ideas of the week
   - I CHOOSE TO
 - Listening to books on tape that are low SNR but high in inspiration.
 
@@ -259,7 +259,7 @@ _surprise: these are my daily affirmations_
   - Her example with setting up her suit case so that everything had a place. That way she could see if she had forgotten anything, and it was perfect
 - Keep the core there, but leave in space to pack in new stuff
   - Core suit case, but another suit case of new stuff, that way always have a good show, but don't get bored.
-  - When stuff get good graduate it into the core
+  - When stuff gets good graduate it into the core
 - Focus on the remembering self in interactions with others
   - How will co-workers remember you in the future? Focus on the moments.
 

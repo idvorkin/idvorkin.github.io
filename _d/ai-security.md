@@ -53,7 +53,7 @@ Security is super interesting, AI is super interesting, the combination, is supe
 
 ### Leaked System Prompts
 
-A bunch of [leaked prompts](https://github.com/wunderwuzzi23/scratch/tree/master/system_prompts). You can see of the attack mitigations in them.
+A bunch of [leaked prompts](https://github.com/wunderwuzzi23/scratch/tree/master/system_prompts). You can see some of the attack mitigations in them.
 
 See also [CL4R1T4S repo](https://github.com/idvorkin/CL4R1T4S) with Claude Sonnet 4.5 and other system prompts, and the [Claude 4.5 Opus Soul Document](https://gist.github.com/idvorkin/8c04a280fcc54b4fc4eee51df6fdab92) - a cleaned-up version of Anthropic's internal guidelines covering Claude's mission, values, identity, and safety principles.
 
@@ -61,7 +61,7 @@ Another comprehensive collection: [system-prompts-and-models-of-ai-tools](https:
 
 ### Prompt Obfuscation for all attacks
 
-You can obfusicate the prompts to get past system prompts, and trick users into pasting something safe. By using different languages etc.
+You can obfuscate the prompts to get past system prompts, and trick users into pasting something safe. By using different languages etc.
 
 ### Jail Breaking
 
@@ -239,7 +239,7 @@ OBS Studio is a free, open-source tool that can capture Zoom's window or full sc
 ### Representation Engineering
 
 - <https://vgel.me/posts/representation-engineering/>
-- Strait inject weights
+- Straight inject weights
 
 ### Smart guy doing Anti Censorship
 

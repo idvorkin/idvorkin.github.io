@@ -8,7 +8,7 @@ tags:
 permalink: /strengths
 ---
 
-Developing you strengths is 3 times as effective as improving your weakness, so find your strengths and double down. To bootstrap the discovery of my strengths, I used a tool called StrengthFinder and it discovered my strengths are Activator, Communication, Problem Solving (Resolver in StrengthFinder speak) Adaptability, and Ideation.
+Developing your strengths is 3 times as effective as improving your weakness, so find your strengths and double down. To bootstrap the discovery of my strengths, I used a tool called StrengthFinder and it discovered my strengths are Activator, Communication, Problem Solving (Resolver in StrengthFinder speak) Adaptability, and Ideation.
 
 _You can take strength finder test yourself [here](https://www.gallupstrengthscenter.com/) by buying the Strength Finder 2.0 book, which comes with a code for taking the Strength Finder online assessment._
 
@@ -110,6 +110,7 @@ See more about [PANAS Personality Types](/emotions#panas-personality-types) and 
 
 | Enneagram | Type              | Score |
 | --------- | ----------------- | ----- |
+| 7         | The Enthusiast    | 29    |
 | 8         | The Challenger    | 23    |
 | 2         | The Helper        | 19    |
 | 5         | The Investigator  | 18    |
@@ -119,5 +120,4 @@ See more about [PANAS Personality Types](/emotions#panas-personality-types) and 
 | 6         | The Loyalist      | 9     |
 | 9         | The Peacemaker    | 8     |
 
-See [full Enneagram
-](/static/igor-enneagram.pdf)
+See [full Enneagram](/static/igor-enneagram.pdf)

@@ -50,7 +50,7 @@ On the topic of anxieties
 
 ### Anxieties (Retired)
 
-- **Gary** my desire to gorge instead of eating healthy. Laid off once I started up on [terzepatide](/terzepatide)
+- **Gary** my desire to gorge instead of eating healthy. Laid off once I started up on [tirzepatide](/terzepatide)
 - **Mo** - my anxiety about money (retired since the stock market went through the roof).
 - **Wilma** - my end of month anxiety around hitting my weight goals (Retired since I stopped this habit, but I should probably bring it back ;))
 

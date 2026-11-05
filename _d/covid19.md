@@ -12,7 +12,7 @@ redirect_from:
   - /covid19
 ---
 
-Corona Virus (CV) may be the defining moment in our lives. In such times, lets remember three things 1) Keep your circle of concern within your circle of influence 2) Don't feed mind monsters - see the positive 3) In crisis, you see both the best and worse. Focus on the best.
+Corona Virus (CV) may be the defining moment in our lives. In such times, let's remember three things 1) Keep your circle of concern within your circle of influence 2) Don't feed mind monsters - see the positive 3) In crisis, you see both the best and worst. Focus on the best.
 
 <!-- prettier-ignore-start -->
 <!-- prettier-ignore-end -->
@@ -76,7 +76,7 @@ From James Altchur: Media companies make money scaring you. Politicians stay in 
 
 Really? Do you? Do you think the Governor is going to call and ask your opinion? Do you think anyone cares about your opinion? Do you think you have an ability to influence the pandemic that requires you to check the news hourly, daily or maybe twice a week? I doubt it.
 
-A great line from aa fantastic youtube video that described much of my early behavior during the pandemic
+A great line from a fantastic youtube video that described much of my early behavior during the pandemic
 
 {% include youtube.html src="jCHTFClfj5k" %}
 
@@ -175,7 +175,7 @@ It's a waste of your time, and your energy. Remember no one wants your opinion.
 
 ## Data
 
-The data analysis during this defining event has been terrible. However, focusing on the positive, the gives me a chance to see how "good data is presented" and to build some of my own data visualization skills.
+The data analysis during this defining event has been terrible. However, focusing on the positive, this gives me a chance to see how "good data is presented" and to build some of my own data visualization skills.
 
 Here is [the best](https://ourworldindata.org/coronavirus#growth-in-covid-19-deaths-by-country) visualizer. It's good for many reasons, I should study it in the future.
 
@@ -205,4 +205,4 @@ vizElement.parentNode.insertBefore(scriptElement, vizElement);
 
 ## The best news of all - a dry run of something fatal for the human race.
 
-Not to underplay the current crisis, but imagine CV with the mortality rate of Ebola or SARS. that would have been the end of humanity. CV gives us a chance to learn process and prioritize so we'll be ready for the "big one".
+Not to underplay the current crisis, but imagine CV with the mortality rate of Ebola or SARS. That would have been the end of humanity. CV gives us a chance to learn process and prioritize so we'll be ready for the "big one".

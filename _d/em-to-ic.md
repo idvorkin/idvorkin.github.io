@@ -10,6 +10,7 @@ tags:
   - manager
   - ai
   - software engineering
+ai_default_image: true
 ---
 
 In May 2026 I got flattened, M→IC, after being an engineering manager long enough to write [a book about it](/manager-book). I assumed the hard part would be the craft — shipping diffs again, being personally on the hook. That's not the hard part. The hard part is that my value prop changed, and I'd spent a decade building an identity on the old one.

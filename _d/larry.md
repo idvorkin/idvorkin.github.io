@@ -42,6 +42,8 @@ A name creates:
 
 This isn't anthropomorphizing for fun. It's a design choice that makes the system actually get used. And it's honest: the sting of AI text comes from expecting a person and getting a machine, [Sean Goedecke argues](https://www.seangoedecke.com/on-slop/) — a conversation that's explicitly human-machine from the start never springs that trap. Larry has a name, not a disguise.
 
+The name only works if he talks like someone worth naming. When a model upgrade turned him into a ticket system, the joy went out of it: [the interaction model matters](/interaction-model).
+
 ## What Larry Could Know
 
 Larry's superpower is context — the more he knows about my life, the better his coaching. The challenge isn't collecting the data (most of it exists), it's reliably loading it into each session. Here's what Larry _could_ have access to, and the ongoing work to make that seamless:

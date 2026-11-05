@@ -32,7 +32,7 @@ A landing page for all my AI posts — a jumping-off point into everything I've 
 
 {%include summarize-page.html src="/ai-image" %}
 
-{%include summarize-page.html src="/ai-coder" %}
+{%include summarize-page.html src="/chop" %}
 
 {%include summarize-page.html src="/chow" %}
 
@@ -179,7 +179,7 @@ Would you like to focus on a particular area of Revolution 8 or explore Revoluti
 
 ### Examples of Alchemy
 
-- Doing worst job in dec, (and July for European models) - [crappy source](https://www.techradar.com/computing/artificial-intelligence/ai-might-take-a-winter-break-as-gpt-4-turbo-apparently-learns-from-us-to-wind-down-for-the-holidays)
+- Doing worse job in dec, (and July for European models) - [crappy source](https://www.techradar.com/computing/artificial-intelligence/ai-might-take-a-winter-break-as-gpt-4-turbo-apparently-learns-from-us-to-wind-down-for-the-holidays)
 - Doing a better job if you say you are stressed
 - Telling the LLM not to hallucinate (fascinating, this only works now, not in early models as early training data didn't talk about hallucinations)
 

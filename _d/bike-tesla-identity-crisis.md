@@ -16,7 +16,7 @@ That's my AI life coach talking—he sounds like Tony Soprano, pretends to live 
 
 <iframe src="https://suno.com/embed/21be0b93-a44b-4a94-b2d6-39a59fff6283" width="760" height="240"><a href="https://suno.com/song/21be0b93-a44b-4a94-b2d6-39a59fff6283">Listen on Suno</a></iframe>
 
-I biked over 3,000 miles in 2022, carried groceries on my handlebars, and then I bought a Tesla The numbers tell the story. In 2023, after getting Tony, my biking dropped from 3,000 miles to under 300. My best friend had warned me: "Buying a Tesla for someone who wants to be a car-free spirit is like buying an ice cream maker for someone trying to lose weight."
+I biked over 3,000 miles in 2022, carried groceries on my handlebars, and then I bought a Tesla. The numbers tell the story. In 2023, after getting Tony, my biking dropped from 3,000 miles to under 300. My best friend had warned me: "Buying a Tesla for someone who wants to be a car-free spirit is like buying an ice cream maker for someone trying to lose weight."
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
