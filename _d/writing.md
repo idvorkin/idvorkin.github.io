@@ -223,7 +223,7 @@ Sometimes you want to share your journey, the twists and turns and helping reade
 
 **The Journey**
 
-Consider using the Hero's formula, or the pixar formula below.
+Tell it as a story: the [Pixar story spine](/storytelling#the-story-spine-the-pixar-formula), or the [Hero's Journey](/storytelling#the-heros-journey---for-very-long-form) for long form. More on [Storytelling](/storytelling).
 
 **The Recommendation**
 
@@ -236,17 +236,7 @@ Consider using the Hero's formula, or the pixar formula below.
 
 ### The Pixar Formula
 
-<https://startuppitch.substack.com/p/nail-your-startup-pitch-use-pixars>
-
-- Situation/Context:
-  - Once upon a time there was [details]
-  - Every day, [details]
-- Complication/Problem:
-  - One day [details]
-  - Because of that, [details]
-- Resolution/Solution
-  - Because of that, [details]
-  - Until finally [details]
+Moved to [Storytelling](/storytelling#the-story-spine-the-pixar-formula).
 
 ### The feedback formula: Situation, Behavior, Impact
 
@@ -275,31 +265,7 @@ Business books don't have to be crappy by laws of physics, some are excellent li
 
 ### The Hero's Journey - For very long form
 
-You'll see this in a lot of movies, and it can be fun to map a movie to this story. From [here](https://libguides.gvsu.edu/c.php?g=948085&p=6857311)
-
-- THE ORDINARY WORLD - This is the original world of the hero, which "suffers from a symbolic deficiency." The hero is lacking something, or something is taken from him.
-
-- THE CALL TO ADVENTURE - The hero is given a challenge, problem, or adventure. Often it appears as a blunder, or chance. This stage establishes the goal of the hero.
-
-- THE REFUSAL OF THE CALL - The (often) reluctant hero has to be set along the correct path. He must weigh the consequences and be excited by a stronger motivation to proceed further.
-
-- MEETING WITH THE MENTOR - The hero encounters a wise figure who prepares him for the journey. This figure (or item) gives advice, guidance, or an item, but cannot go with the hero.
-
-- CROSSING THE THRESHOLD - The hero has committed to his task, and enters the special world. Often he is met by a threshold guardian.
-
-- TESTS, ALLIES, AND ENEMIES - In the special world, the hero learns the new rules by meeting people and obtaining new information. There is often a "local watering hole" component. This is where the true characteristics of the hero are revealed.
-
-- APPROACH TO THE INNERMOST CAVE - Now our hero, and often his allies, have come to the edge of the dangerous place where the "object of the quest" is hidden. This stage often is the land of the dead.
-
-- THE SUPREME ORDEAL - The hero faces danger, often a life-or-death moment that is either physical or psychological.
-
-- REWARD, OR SEIZING THE SWORD - After surviving, our hero takes possession of the object, typically a treasure, weapon, knowledge, token, or reconciliation.
-
-- THE ROAD BACK - The hero must now deal with the consequences of their actions. They may be pursued by remaining forces. They now face the decision to return to the ordinary world.
-
-- RESURRECTION - One final test is required for the purification and rebirth of the hero. Alternatively, it may be a miraculous transformation.
-
-- RETURN WITH THE ELIXIR - The triumphant hero returns to the ordinary world bearing the elixir. Common elixirs are treasure, love, freedom, wisdom, or knowledge. A defeated hero is doomed to repeat the lesson.
+Moved to [Storytelling](/storytelling#the-heros-journey---for-very-long-form).
 
 ## Pen to paper
 
@@ -338,9 +304,7 @@ Haven't watched this one yet ...
 
 ### How to tell a great story
 
-Doesn't really fit, but I do enjoy this story
-
-{%include youtube.html src="KxDwieKpawg" %}
+Moved to its own page: [Storytelling](/storytelling).
 
 ### Writers head to readers head, like an army through a choke point
 

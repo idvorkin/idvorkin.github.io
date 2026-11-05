@@ -178,6 +178,8 @@ For content/visual PRs, include a rendered screenshot in the PR description. Pro
 | Fetch web content         | `/web-browse`                     | Fallback chain: Lightpanda, Playwright CLI, WebFetch                 |
 | Process YouTube videos    | `youtube-content-processor` agent | Subtitle extraction, conversion, analysis                            |
 
+**Post restructures** (split, merge, reorder or modernize a post): build the outline page with the `outline-editor` skill (chop-conventions `skills/outline-editor/`) and let the reviewer drag sections into place, rather than listing proposed moves in chat.
+
 ## AI Slop Label
 
 Posts with significant AI-generated content need an ai-slop label. **Place it after the first paragraph** — putting it before or inside the first paragraph breaks page previews/excerpts.

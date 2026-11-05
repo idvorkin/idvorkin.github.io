@@ -23,6 +23,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-11-05](#2026-11-05)
+    - [Steve Yegge Audited His Adversarial Reviewers: Keep Them, Ban the P3s](#steve-yegge-audited-his-adversarial-reviewers-keep-them-ban-the-p3s)
   - [2026-11-01](#2026-11-01)
     - [Are You Using LLMs to Their Full Potential?](#are-you-using-llms-to-their-full-potential)
   - [2026-08-25](#2026-08-25)
@@ -271,6 +273,15 @@ let's see if we can simulate him, step #1, let's bring the site down into markdo
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2026-11-05
+
+#### Steve Yegge Audited His Adversarial Reviewers: Keep Them, Ban the P3s
+
+- **TOP Takeaway**: [Steve Yegge had his agents analyze thousands of adversarial reviews](https://x.com/Steve_Yegge/status/2117935817591074876) from his own system. About a quarter got blocked by the reviewer, and a meta-review found the issues the agentic reviewers raised were almost all legit. His verdict: "they work for me and I'm keeping them."
+- **The trick that makes it work**: reviewers aren't allowed to file P3s. The replies agreed that's the load-bearing part: cheap nitpicks bury the real issues, and one team got the same result by tuning their reviewer to fix only critical findings.
+- **The pushback**: it may not transfer. A strong orchestrator covers gaps an average setup misses, and others fall into an endless review spiral. [Yegge's answer](https://x.com/Steve_Yegge/status/2117982931176313200): he's running 12–18 months ahead of everyone, adversarial review will hold even against the Bitter Lesson, and you fight overengineering with regular tech-debt work, not by firing the reviewer. Another reply added the condition I'd underline: it works when the reviewer is a different model family from the implementer.
+- **The Igor angle**: that's my setup. A model from a different family gives a second-pass review after the first one builds, and CodeRabbit reviews my PRs (sometimes [losing the argument to my claw](#my-bot-wrote-their-bot-reviewed-my-bot-pushed-back-their-bot-said-oops)). What I haven't done is Yegge's audit: count how often a review actually blocked something, and how many of its findings were noise. A reviewer is a [dial set by stakes](/gas-city#what-it-costs), and without the meta-review I'm setting it by vibes. It's also the cheapest answer I have to the [Discernment Horizon](#steve-yegges-flat-curve-society-the-plateau-is-good-news-for-engineers): when I can't check the work, a reviewer from a different family can.
 
 ### 2026-11-01
 

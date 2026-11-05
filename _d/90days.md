@@ -378,6 +378,8 @@ Make time to share:
 1. Who you are, and what you stand for
 1. Teachable moments
 
+Writing it is a storytelling job: see [Storytelling](/storytelling).
+
 #### How will you lead change
 
 1. Turn your goals into projects

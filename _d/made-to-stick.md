@@ -190,6 +190,8 @@ Hit people with a bald argument and they argue back; tell a story and the skepti
 
 The book's recurring case ties it all together. Jared Fogle hit 425 pounds and 60-inch-waist pants in college, then lost about 245 pounds eating Subway. A franchise owner spotted a student-paper article, an ad agency chased it down, and the spots aired on January 1, 2000. Subway's national marketing had rejected it — "fast food can't do healthy." Sales were flat in 1999, then jumped 18% in 2000 and another 16% in 2001. Run Jared through the checklist: Simple, Unexpected, Concrete, Credible — the anti-authority who wore 60-inch pants is giving you diet advice — Emotional, and a Story. A guy and his old pants beat a national marketing budget.
 
+For structure, finding stories and telling them live, see [Storytelling](/storytelling).
+
 ## The big takeaway
 
 The book practices what it preaches, so the summary is itself a checklist. Each principle answers one question and is anchored by one example you won't forget.

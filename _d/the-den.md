@@ -16,11 +16,13 @@ The Den is my weekly four-panel strip about running an AI staff — a raccoon, t
 
 {% include ai-slop.html percent="70" %}
 
-Sure, this isn't funny yet — but you gotta start somewhere.
+Sure, this isn't funny yet — but you gotta start somewhere. The models I'm using to get there, and the checklist every strip runs before it's drawn, are on [How to Make It Funny](/comedy).
 
 One rule, and it's Steve's: every strip lampoons something that actually happened, and every strip links to the receipts. If I can't produce the transcript, I don't get to draw the strip.
 
 Tap any panel to read it full-screen; swipe or use the arrows to move through the four panels and finish on the full strip.
+
+{% include den_strip.html num="15" %}
 
 {% include den_strip.html num="14" %}
 

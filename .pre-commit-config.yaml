@@ -77,7 +77,7 @@ repos:
         files: '\.(md|markdown)$'
         # README.md is not a served Jekyll page, so its TOC self-anchors (#permalink, …)
         # resolve against the homepage and always fail this check. It renders fine on GitHub.
-        exclude: "^zz-chop-logs/.*$|back-links.json|^README.md$"
+        exclude: "^(zz-chop-logs|skill)/.*$|back-links.json|^README.md$"
         pass_filenames: false
         always_run: false
         verbose: true
@@ -88,6 +88,14 @@ repos:
         language: script
         files: '\.(md|markdown)$'
         exclude: "^zz-chop-logs/.*$|back-links.json"
+        pass_filenames: false
+        always_run: false
+
+      - id: skill-link-checker
+        name: Check skill/ idvork.in links and section anchors
+        entry: scripts/check_skill_links.py
+        language: script
+        files: '^(skill/.*\.md|scripts/check_skill_links\.py)$'
         pass_filenames: false
         always_run: false
 
