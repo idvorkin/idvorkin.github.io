@@ -59,6 +59,8 @@ I'm applying a goal from a book called _Kettlebell Simple and Sinister_.
 
 Now I'm picking up one-handed front rack squats.
 
+For single-leg work, a light bell is the counterweight in my [pistol squat progression](/pistol-squat).
+
 ### Heavy Clubs
 
 I used to do KB halos, but they need a lighter weight. This required me to carry three kettlebells in the car, which was much too many, so I realized I could switch to heavy clubs instead. Turns out they are not only much lighter but also give you better mobility, grip strength, core strength, and arm strength. Upgrade! The only downside is finding the right ones; since you can't get them in person, you are ordering all over the internet, and you need to go up in weight. Oh well.

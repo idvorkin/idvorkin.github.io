@@ -9,7 +9,7 @@ My group lives in QUIP. Here are some tips for my quip usage.
 
 Quip is a shared document editor. Here are my tips to be collected.
 
-- Keep outline mode on (View -> Collapse Ouline Mode)
+- Keep outline mode on (View -> Collapse Outline Mode)
 - Keep chat mode off
 - Collapse Sidebars
 - Use the recent edits tab

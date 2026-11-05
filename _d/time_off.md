@@ -97,7 +97,7 @@ So, on behalf of future me: time-box it. Acknowledge I deserve to vegetate, take
 
 Time is scarce, things to be done are infinite, and they pile up when time is limited. Once my work stress drains I get a burst of energy, and I apply it to the to-do list. This is very satisfying — I feel energized and productive.
 
-The trap is getting stuck here, either grinding the list forever or avoiding it entirely, so I never make it to the later phases. Staycations are the worst for this: it's easy to oscillate between vegetating, grinding the list, and ruminating on work.
+The trap is getting stuck here, either grinding the list forever or avoiding it entirely, so I never make it to the later phases. Staycations are the worst for this: it's easy to oscillate between vegetating, grinding the list, and ruminating on work. One way out: play tourist in my own city, off my [Seattle list](/seattle).
 
 ### Freedom
 

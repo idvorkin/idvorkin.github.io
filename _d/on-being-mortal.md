@@ -36,7 +36,7 @@ This is my summary of Being Mortal by Atul Gawande (also author of The Checklist
 
 ## My last year
 
-Before we get into it, lets see my aspirations for my last year.
+Before we get into it, let's see my aspirations for my last year.
 
 {%include summarize-page.html src='/last-year' %}
 

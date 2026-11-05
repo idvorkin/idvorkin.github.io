@@ -5,7 +5,7 @@ permalink: /mermaid
 mermaid: True
 ---
 
-Lets try d2
+Let's try d2
 
 ![AI Agent Diagram](/d2/ai-agent.svg)
 

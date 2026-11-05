@@ -394,7 +394,7 @@ The correct responses to boredom:
 
 - “What would it take to make this moment matter?”
 - “What could I care about here?”
-- Is there a way I can serve, create, or connect?”
+- “Is there a way I can serve, create, or connect?”
 
 Use boredom as a trigger for redirection—not suppression. It invites deliberate design: re-engaging attention, crafting purpose, or revisiting your aspirations.
 

@@ -78,7 +78,7 @@ My top priorities:
 _This is less new learnings, and more a recounting of existing knowledge_
 
 - It really is easier to divide and conquer the family
-- Going to Vancouver when [Toni](/tesla) is driving is trivial
+- Going to Vancouver when [Tony](/tesla) is driving is trivial
 - The messed-up spoon story with Amelia :(
 - Tori and Amelia prefer a plan in advance (this isn't much of a learning)
 - I've gotten way better at travel thanks to all my MPK trips (I used to fret about packing for days, now I just have everything in my travel bag, and the car is packed with stuff)
@@ -92,7 +92,7 @@ _This is less new learnings, and more a recounting of existing knowledge_
     - I went years losing 5 lbs a month
   - I think what it is is I'm hyper-disciplined, but ...
     - I'm not realistic on how much I can do, so 20 habits I want, can only do 5, so some are always rotating in and out, not congruent with my deliberate desires
-    - I get mental blocks, like can't cash checks on the fridge For years
+    - I get mental blocks, like can't cash checks on the fridge for years
     - Can't refill hot tub so haven't used it (which I love) for a year.
 
 ## Relationships
@@ -119,7 +119,7 @@ Private, but we made time to go on a mini-vacation (WOW)! I'll keep it mostly se
 ### Amelia
 
 - Went to Vancouver (left at 6 am so she could sleep and we could get there by 9 am)
-- Went go Granville Island, and Denman street, and stayed at Sylvia Hotel
+- Went to Granville Island, and Denman street, and stayed at Sylvia Hotel
 - No pool at the hotel, so hit the Vancouver athletic club
 - Messed up the spoon
 
@@ -168,7 +168,7 @@ Gym Days: 3
 
 ### Diet
 
-- I'm doing terzepatide, so this is no longer a concern
+- I'm doing tirzepatide, so this is no longer a concern
 
 ### Sleep
 

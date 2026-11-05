@@ -11,6 +11,7 @@ extend-ignore-re = ['asin="[A-Za-z0-9;]+"']
 "iTerm" = "iTerm"  # iTerm is a terminal application for Mac
 "UE9QZ8" = "UE9QZ8"  # YouTube video ID
 "UE" = "UE"  # Part of YouTube ID
+"Tung" = "Tung"  # Tai Tung, Seattle Chinese restaurant
 "BA" = "BA"  # Part of Asciinema ID
 "NAEuBAJhe9qdU" = "NAEuBAJhe9qdU"  # Asciinema ID  
 "mis-hire" = "mis-hire"  # Common term in hiring
@@ -23,6 +24,7 @@ mis = "mis"  # Token of "mis-hire" (typos splits on the hyphen)
 "youre" = "youre"  # Intentional usage in TOC/headers
 "alls" = "alls"  # All's in TOC anchor (All's Right with the World)
 "heros" = "heros"  # Hero's without apostrophe in TOC anchors
+"succes" = "succes"  # /succes redirect on /made-to-stick (SUCCESs acronym)
 "theatre" = "theatre"  # British spelling used intentionally
 "gruelling" = "gruelling"  # British spelling used intentionally
 "Flavours" = "Flavours"  # Proper noun — "Flavours of Bergen" food tour (British spelling)

@@ -5,7 +5,7 @@ permalink: /timeoff-2022-11
 imagefeatureblob: cake.webp
 ---
 
-It's just about thanksgiving 2022, and after 2 years of not being able to go to Oregon, we're on our away! Through unexpected timing, before going to Oregon, I'm going to New York City with Ammon, and through even more unexpected timing, we just had lay offs at work, and have a major re-organization. Instead of being able to fully take the time off, I'll be working several days, so having clarity on my priorities is critical.
+It's just about thanksgiving 2022, and after 2 years of not being able to go to Oregon, we're on our way! Through unexpected timing, before going to Oregon, I'm going to New York City with Ammon, and through even more unexpected timing, we just had lay offs at work, and have a major re-organization. Instead of being able to fully take the time off, I'll be working several days, so having clarity on my priorities is critical.
 
 The first leg of my trip is NYC. Turns out Ammon loves musicals, and every year he makes a pilgrimage to broadway to be able to see like 14 musicals in 7 days.
 
@@ -46,7 +46,7 @@ Two days before the start of the trip we had layoffs (including my partners who 
 ### Other
 
 - Experience New York, it's an amazing city.
-- Feel got the most out of vacation
+- Feel I got the most out of vacation
 
 ## Executive Summary
 
@@ -55,13 +55,13 @@ Two days before the start of the trip we had layoffs (including my partners who 
 - Getting to tell Ammon all the stuff in my life in the first 2 hours of our flight
 - Doing balloon for kid on the bus
 - Seeing Harry Potter and crying
-- Poop story from cofffee shop
+- Poop story from coffee shop
 - Not eating the M&Ms at the store
-- To Learn : Anniversaryj card
-- To Re-Learn : Monkey and Other ballooing things (Make blog post to remember)
+- To Learn : Anniversary card
+- To Re-Learn : Monkey and Other ballooning things (Make blog post to remember)
 - Doing balloon trick for kid that didn't want to be good on stage
-- Super funny commedy show, with wings and super funny singing guy
-- Boarding guy at the airport, treating folks to increaes energy liike they do at a comedy club, truly welcoming and thanking everyone.
+- Super funny comedy show, with wings and super funny singing guy
+- Boarding guy at the airport, treating folks to increase energy like they do at a comedy club, truly welcoming and thanking everyone.
 
 **Remember the peak end rule**
 
@@ -107,7 +107,7 @@ Two days before the start of the trip we had layoffs (including my partners who 
 
 ## Friends (5/5)
 
-Even though we live 40 minutes part, I almost never see Ammon in person (notable exceptions being when he is bringing over a birthday cake). I prioritized spending time with him - and it's super enjoyable.
+Even though we live 40 minutes apart, I almost never see Ammon in person (notable exceptions being when he is bringing over a birthday cake). I prioritized spending time with him - and it's super enjoyable.
 
 {% include blob_image.html src="cake.webp" %}
 
@@ -121,7 +121,7 @@ Even though we live 40 minutes part, I almost never see Ammon in person (notable
 
 - Did magic for a drunk woman who put the card in her bra!
 - Did magic trick for a kid that was hyper on stage, got him calmed down and relaxed
-- Did a mgic trick which I thought I messed up, but the person had just written super small
+- Did a magic trick which I thought I messed up, but the person had just written super small
 
 ### Practice
 
@@ -146,7 +146,7 @@ Even though we live 40 minutes part, I almost never see Ammon in person (notable
 
 ### Blogging
 
-- Not at the expensive of family time.
+- Not at the expense of family time.
 - Doing it early in the morning before folks get up is reasonable.
 
 ### Programming
@@ -181,7 +181,7 @@ Even though we live 40 minutes part, I almost never see Ammon in person (notable
 ## Physical Habits (Y/5)
 
 - ☐ Wrist stretches every morning
-- ☐ Assisteted weights every few days
+- ☐ Assisted weights every few days
 - ☐ Cardio every other day
 - ☐ Assisted pullups
 
@@ -196,7 +196,7 @@ Gym Days:
 
 - ☐ Weight myself daily
 - ☐ Be ready to get back on weight track for end of November weight in.
-- ☐ Recall, I'd be happier to be skinny then get a snack
+- ☐ Recall, I'd be happier to be skinny than get a snack
 - ☐ If there's something I want, get one per day, and keep calories down the rest.
 - ☐ Get a mini fridge and keep it stocked with Veggies and fruit
 
@@ -227,7 +227,7 @@ See the section about keep work at work.
 
 ### Saturday - Harry Potter
 
-- Saw the best play of my life Happy Potter
+- Saw the best play of my life Harry Potter
   - Cried through the whole second act
   - Amazing blocking and transitions and special effects
   - Great story about a dad accepting his son
@@ -243,9 +243,9 @@ See the section about keep work at work.
   - Went to a meh coffee shop
   - Suddenly needed to poop
   - No bathroom at coffee shop, none near
-  - Luckily citi bike, raced to hotle, and got it done
-- Funny part about emergenncy poop
-  - First night, saw a comedy show one 20 year fit guy talking about healhty eating messing up your sphinctor not able to hold it in.
+  - Luckily citi bike, raced to hotel, and got it done
+- Funny part about emergency poop
+  - First night, saw a comedy show one 20 year fit guy talking about healthy eating messing up your sphincter not able to hold it in.
   - Didn't think it was funny.
   - This morning, needed to poop, absolutely hilarious
 
@@ -256,7 +256,7 @@ See the section about keep work at work.
 - Pizza Magic
   - Did another magic trick for girl in pizza line
   - This time thought I got it, but it didn't have her name on it. Then looked closer, and it was just written really small.
-  - Not to self: Have someone else hold the cards
+  - Note to self: Have someone else hold the cards
   -       Tell spectator: Visualize your card in your mind ... have you got it? Good
   -       now, imagine it turning over... Did you do it? Great ..
   - OK, now do you believe? Great!!
@@ -264,7 +264,7 @@ See the section about keep work at work.
   - Incredible show, super funny.
 - Giving out balloons on the street
   - Very fun
-  - Figured out howtt o keep balloon pump in pocket (keep the head out)
+  - Figured out how to keep balloon pump in pocket (keep the head out)
   - Someone asked to buy one, gave it for their daughter
 - Pull ups
   - Went all over central park to find pullup bars, finally found them, but then, super weird, got a video.

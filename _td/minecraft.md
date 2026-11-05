@@ -56,13 +56,13 @@ CheckNetIsolation.exe LoopbackExempt –a –p=S-1-15-2-1958404141-86561845-1752
 
 ### The X-Box Proxy Hack
 
-So, x-box doesn't' allow you to connect to 'remote servers', however you can connect to local ones on your LAN. So you need to setup a UDP proxy to make it work. I'm using the below with no issues.
+So, x-box doesn't allow you to connect to 'remote servers', however you can connect to local ones on your LAN. So you need to setup a UDP proxy to make it work. I'm using the below with no issues.
 
 https://github.com/jhead/phantom
 
 ### Run bedrock server on lightsail/AWS
 
-- Use Ubuntu, way simpler then CentOS
+- Use Ubuntu, way simpler than CentOS
 - It's CPU heavy RAM light
 - Don't forget to open the UDP port
 - Multiple servers same box

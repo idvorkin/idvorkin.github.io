@@ -46,12 +46,12 @@ Everything here assumes you're roughly in Hannah's shoes: a software engineer at
 
 ## Taxable income, and capital gains
 
-Income is the money you make. That starts by being your wages, but as you get assets like stocks, bonds and houses, things get a big more complex. Let start with easy sources of income:
+Income is the money you make. That starts by being your wages, but as you get assets like stocks, bonds and houses, things get a bit more complex. Let's start with easy sources of income:
 
 Wages + Bonus: What you're paid at work; you pay the marginal tax rate.
 Interest on Savings and Bonds and Stock Dividends: What you're paid to hold an investment (to assume the risk); you pay the marginal tax rate.
 
-Capital Gains: If you have assets (houses, shares of companies), you may not get interest, but the asset can appreciate. You need to pay tax on those gains. In general capital gains can be short (STCG) or long term (LTCG), with short term being at the marginal tax rate, and long term having a tax benefits (Hannah: 15% LTCG, vs 34% marginal tax rate).
+Capital Gains: If you have assets (houses, shares of companies), you may not get interest, but the asset can appreciate. You need to pay tax on those gains. In general capital gains can be short (STCG) or long term (LTCG), with short term being at the marginal tax rate, and long term having tax benefits (Hannah: 15% LTCG, vs 34% marginal tax rate).
 
 When retired, you need to get money out of your savings, which you can do by taking interest/dividends or by selling assets. When selling assets, you pay capital gains. This raises a question: should you keep your capital gains inside or outside your IRAs (where they have tax-free growth)?
 
@@ -59,7 +59,7 @@ When retired, you need to get money out of your savings, which you can do by tak
 
 ### Marginal vs Average Tax Rate
 
-Taxes are like a step function. From 0 - K1 you pay rate t1, From K1 - K2 you pay rate t2, etc. The marginal tax rate is how much tax you pay on every extra dollar make, E.g. the tax rate in the maximum step. By contrast, your average tax rate is the total taxes/total income, which can be significantly less then the marginal tax rate depending on how far over the step function you are.
+Taxes are like a step function. From 0 - K1 you pay rate t1, From K1 - K2 you pay rate t2, etc. The marginal tax rate is how much tax you pay on every extra dollar you make, E.g. the tax rate in the maximum step. By contrast, your average tax rate is the total taxes/total income, which can be significantly less than the marginal tax rate depending on how far over the step function you are.
 
 {%include blob_image.html src="taxrate.jpeg" %}
 
@@ -205,7 +205,7 @@ With an ETF, you pay all capital gains when you sell, meaning you have control t
 
 With MFs they need to have a capital gains distribution annually as they re-balance the fund. This matters because you need to pay the capital gains on behalf of the mutual fund at distribution time. The capital gains might be short term depending on when the fund bought and sold individual stocks.
 
-Digging a bit deeper, it seems like there are Mutual Fund strategies to [avoid capital gains distributions](https://www.bloomberg.com/graphics/2019-vanguard-mutual-fund-tax-dodge/), but I didn't make the time to understand how effective they are. If I understand this correctly, its possible FZROX is using a similar strategy as there were [no capital gains distributions in 2020](https://www.wsj.com/market-data/quotes/mutualfund/FZROX), though there were in 2018-2019.
+Digging a bit deeper, it seems like there are Mutual Fund strategies to [avoid capital gains distributions](https://www.bloomberg.com/graphics/2019-vanguard-mutual-fund-tax-dodge/), but I didn't make the time to understand how effective they are. If I understand this correctly, it's possible FZROX is using a similar strategy as there were [no capital gains distributions in 2020](https://www.wsj.com/market-data/quotes/mutualfund/FZROX), though there were in 2018-2019.
 
 It seems both ETFs and MFs need to distribute dividends, which are often taxed as income. I don't understand why they can't directly re-invest it.
 

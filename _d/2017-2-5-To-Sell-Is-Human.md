@@ -70,6 +70,8 @@ As you prepare your pitch, whichever variety you choose, clarify your purpose an
 | Twitter      | Even though Twitter allows 140 characters, limit your pitch to 120 characters so that others can pass it on. Remember: The best pitches are short, sweet, and easy to retweet                                                          |
 | Pixar        | Read all twenty-two of former [Pixar story artist Emma Coats's story rules](http:// bit.ly/ jlVWrG) Your try: Once upon a time [..] . Every day, [..]. One day [..] . Because of that [..] . Because of that [..]. Until finally [..]. |
 
+The Pixar pitch is the [story spine](/storytelling#the-story-spine-the-pixar-formula); more on stories in [Storytelling](/storytelling).
+
 ### Improvise
 
 Improv teaches valuable skills for sales, and maps to many topics on this blog

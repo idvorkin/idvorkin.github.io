@@ -90,7 +90,7 @@ First, create an AudioGraph using mimo app, and write it to apple health! [mimoÂ
 
 Next go to AirPods Settings->Accessibility->audio accessibility settings->Headphone Accommodations->transparency mode. If you added an audio graph, it will be available to use.
 
-There are also sliders for environmental noises and other customizations that should help under accessiblitiy.
+There are also sliders for environmental noises and other customizations that should help under accessibility.
 
 ## Apps
 

@@ -2,7 +2,6 @@
 title: "Day in the Life: Chronicles of Really Good Days"
 layout: post
 permalink: /day-in-the-life
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-imagination-executed-sustainably.webp
 redirect_from:
   - /good-days
   - /ditl
@@ -11,9 +10,7 @@ tags:
   - journal
 ---
 
-A running journal of days that actually worked - the ones where health habits stuck, family time hit different, or I remembered what it feels like to be fully alive. Not every day needs to be Instagram-worthy, but some days deserve a bookmark. This is that bookmark collection.
-
-{% include alert.html content="🎯 This is my anti-highlight reel - real days that felt good, not because they were perfect, but because I was present for them" style="info" %}
+A running journal of days that actually worked: the habits stuck, the family time landed, and I was present for it. Not a highlight reel. The days weren't perfect, they were just good, and good days deserve a bookmark.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -41,7 +38,7 @@ A running journal of days that actually worked - the ones where health habits st
   - Fixed up [nlp commit.py handlers to be faster](https://gist.github.com/idvorkin/c31ce489f2ae88942ee3f873b126d99c)
   - Because apparently 5am Igor loves optimizing task management
 
-- **6-7:45am** - [Hansel](TBD) came over to work on his podcast. Social connection happening naturally, not as something I had to schedule.
+- **6-7:45am** - Hansel came over to work on his podcast. Social connection happening naturally, not as something I had to schedule.
 
 - **8am** - Drove to the gym. The transition from creation mode to physical mode.
 
@@ -70,8 +67,6 @@ A running journal of days that actually worked - the ones where health habits st
 - **Odd things about yesterday**
   - First run in like 3 years. (2 min on, 3 min walk) × 5. Gotta start slow to avoid injury.
   - Decided to start a [reverse bucket list](/bucket-list) and get rid of my [juggling torches](http://ig66.blogspot.com/2014/08/accomplishment-unlocked-juggling-file.html?q=torches). Time to practice wanting less.
-
----
 
 ---
 

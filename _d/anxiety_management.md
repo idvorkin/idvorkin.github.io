@@ -125,7 +125,7 @@ Often the thing you're trying to control is a link in a chain of deeper issues. 
 
 TODO - Add a personal example.
 
-Not the bottom of the chain is often controlling how you want to feel. You can't control how you feel, but you can maximize your influence over it, using meditation and finding hope.
+Note the bottom of the chain is often controlling how you want to feel. You can't control how you feel, but you can maximize your influence over it, using meditation and finding hope.
 
 #### Brainstorm how to maximize your influence.
 

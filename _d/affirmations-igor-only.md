@@ -45,7 +45,6 @@ These are my working notes. For the short version, see [Affirmations](/affirmati
 History:
 
 - 2025-05-03
-
   - I had 'Always Improving', but it just didn't sound like me.
   - 'Do It Anyways' better captures my grit and recommendation.
   - Cracked this working on my TikTok for the video
@@ -107,7 +106,7 @@ Prioritize Ruthlessly is a core aspect of essentialism, but it's also rule #3.
 
 - 2025-02-01
   - I think what's missing here is a word around compassion/grandmother mind/isn't that curious
-  - Perhaps isn't that curious is the best, as it's both applies to my triggers, and my interactions with others.
+  - Perhaps isn't that curious is the best, as it both applies to my triggers, and my interactions with others.
 
 ### Calm like water: Be Present. This too shall pass. Work the problem
 

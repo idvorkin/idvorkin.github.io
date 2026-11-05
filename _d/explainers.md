@@ -64,7 +64,7 @@ Explainers are the antidote. The same AI that creates the debt can pay it down: 
 
 There's a close cousin to explainers that matters just as much: **proof of work**. Explainers help you _understand_ what AI built. Proof artifacts help you _verify_ that AI actually did what it claimed.
 
-When [CHOPing](/chop), AI loves to tell you "Done! I fixed the bug and added the feature." But did it? AI lies — not maliciously, but confidently. The [testing/evals](/chop#what-matters-most-is-testingevals) mindset says: make AI prove it. Screenshots, before/after comparisons, interactive demos that show the change actually happened. Tools like [Showboat](https://github.com/idvorkin/chop-conventions/tree/main/skills/showboat) generate executable demo documents with screenshots — visual evidence that the code does what it claims.
+When [CHOPing](/chop), AI loves to tell you "Done! I fixed the bug and added the feature." But did it? AI lies — not maliciously, but confidently. The [testing/evals](/chop#verification-is-the-job) mindset says: make AI prove it. Screenshots, before/after comparisons, interactive demos that show the change actually happened. Tools like [Showboat](https://github.com/idvorkin/chop-conventions/tree/main/skills/showboat) generate executable demo documents with screenshots — visual evidence that the code does what it claims.
 
 The spectrum runs from understanding to verification:
 
@@ -119,6 +119,7 @@ See also: [my pet projects](/pet-projects) for the full list of things I build.
   - It really is a fun game
   - Has a lesson
   - What makes [Nicky Case's](https://ncase.me/) work exceptional: each piece has a **narrative arc** — it doesn't just present data, it walks you through a story with emotional stakes and reveals. You _feel_ the concept, not just see it.
+  - That arc is storytelling; an explorable explanation is a [story the reader plays](/storytelling#stories-in-other-forms).
 
 ### I Need to Review
 

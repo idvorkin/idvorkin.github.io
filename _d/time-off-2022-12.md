@@ -19,7 +19,7 @@ I didn't create enough moments (that's a great learning).
 
 My habits and balance have been strong, just keep my streaks running!
 
-- End the year at and honest 180 (even better a lying 175)
+- End the year at an honest 180 (even better a lying 175)
 - Keep up the daily gym, magic and ballooning
 - Create moments with the family (and take Selfies of them)
 - Build the TGU and swing habit
@@ -258,5 +258,5 @@ Zero stress here, funny given last year ...
 
 ### Family
 
-- Frustrated by not doing much as a family. But realized, that's on me. If I don't plan something than I should not be surprised that nothing happened.
+- Frustrated by not doing much as a family. But realized, that's on me. If I don't plan something then I should not be surprised that nothing happened.
 - Normal frustration about Zach health is gone, as Zach is self motivated to be healthy
