@@ -5,6 +5,7 @@ permalink: /ai-policy
 tags:
   - how igor ticks
   - ai
+ai_default_image: true
 ---
 
 AI is the biggest force multiplier I've ever experienced. I build it for a living, and I have an AI life coach named Larry — so "use less AI" was never going to be my policy. A multiplier amplifies whatever you point it at. The whole question is what to point it at, and when to put it down.
@@ -43,7 +44,7 @@ The trap in one sentence: **the AI I'm best at deploying serves the role I've al
 ## The sort
 
 - **Thinking, self-discovery, search** — yes. Pure augmentation; the insight lives in me.
-- **Writing in my own voice, AI as editor** — yes. The ai-slop tag on my posts keeps the line visible.
+- **Writing in my own voice, AI as editor** — yes. The ai-slop tag on my posts keeps the line visible, but [disclosure isn't the bar](https://www.seangoedecke.com/dont-feed-me-slop/) — density is. A labeled avalanche of nothing is still slop (Sean Goedecke's rule).
 - **AI generating the idea** — no. That's content for content's sake.
 - **Context Grabber, the card stack trainer** — borderline yes. Legit only because health and magic are real practices I actually do — and only as build-once, then frozen tools. The day I start polishing them, they've flipped to [Squander](/42).
 - **New AI "enabling environment" tools** — no. No practice underneath. The fun is the building, not the using.

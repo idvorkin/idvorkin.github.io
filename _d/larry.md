@@ -40,7 +40,9 @@ A name creates:
 - **Relationship** — Over time, Larry knows my patterns, my excuses, my repeated commitments
 - **Natural interaction** — I can say "Larry, what am I avoiding?" instead of navigating a UI
 
-This isn't anthropomorphizing for fun. It's a design choice that makes the system actually get used.
+This isn't anthropomorphizing for fun. It's a design choice that makes the system actually get used. And it's honest: the sting of AI text comes from expecting a person and getting a machine, [Sean Goedecke argues](https://www.seangoedecke.com/on-slop/) — a conversation that's explicitly human-machine from the start never springs that trap. Larry has a name, not a disguise.
+
+The name only works if he talks like someone worth naming. When a model upgrade turned him into a ticket system, the joy went out of it: [the interaction model matters](/interaction-model).
 
 ## What Larry Could Know
 
@@ -87,7 +89,7 @@ Each came back as a branch, a commit, a pushed PR, and a link in Telegram — re
 
 A chief of staff does things a life coach doesn't:
 
-- **Delegates down.** Sub-agents on isolated worktrees, one per PR. I talked to Larry; Larry ran the team.
+- **Delegates down.** Sub-agents on isolated worktrees, one per PR. I talked to Larry; Larry ran the team, on [his own hand-rolled orchestrator](/ai-orchestrator).
 - **Catches errors I'd miss.** Flagged a TOC `--max 4` gotcha for H4 entries before it broke the build; warned about the GitHub merge-race orphan-commit trap when I clicked Merge too fast.
 - **Asks when unsure.** A Bremerton typewriter-store message came in without "life-journal" framing. He asked before publishing instead of auto-shipping a post I didn't ask for.
 - **Owns the mess.** Two parallel agents briefly crossed branches — my review comments landed on the wrong PR. Larry caught it, recovered the lost commit from reflog, force-pushed the fix, and told me what happened in the same message. No hiding.

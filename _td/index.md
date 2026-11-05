@@ -122,7 +122,7 @@ See my repository here: <https://github.com/idvorkin/video-edit>
 
 ## Projects
 
-Finishing projects requires crossing [the dip](/dip), and the best way to do that is quit, or don't even start projects you don't have the energy to complete. To improve my chances of success, I try to have a limited set of projects in flight, and deliberatelly mothball projects I don't think are worth completing.
+Finishing projects requires crossing [the dip](/dip), and the best way to do that is quit, or don't even start projects you don't have the energy to complete. To improve my chances of success, I try to have a limited set of projects in flight, and deliberately mothball projects I don't think are worth completing.
 
 ### Complete
 

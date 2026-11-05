@@ -27,6 +27,7 @@ I've been spending a lot of time vibing with agents — coding, writing, sometim
 - [Dark Sides](#dark-sides)
   - [Addiction qualities](#addiction-qualities)
   - [Loss of awareness in flow](#loss-of-awareness-in-flow)
+  - [All game show, no hammock](#all-game-show-no-hammock)
   - [Fear of the future as fuel](#fear-of-the-future-as-fuel)
   - [Burnout](#burnout)
 - [Related Notes](#related-notes)
@@ -88,6 +89,10 @@ The real discriminator isn't "is this productive" — productive things can abso
 ### Loss of awareness in flow
 
 Perpetual flow erodes the question of whether you'd be proud of where you're flowing. Vibing has a built-in awareness-loss feedback loop, and it's worth being honest about the analogy: it's a lot like driving with the lane-attention warnings dismissed. The system tries to flag your drift, you wave it off — the drift wasn't that bad, you've got it — and over enough sessions the alert stops doing anything. Then something goes wrong and you're surprised, even though the warnings were firing the whole time. Same shape with vibing: your body, your sleep, your family, your sense of "wait, why am I still here" all try to flag you. Wave them off enough times and the flagging stops working.
+
+### All game show, no hammock
+
+[Sean Goedecke describes](https://www.seangoedecke.com/how-to-keep-thinking/) working with agents as a frenetic game show — the host keeps flipping cards (is this schema change right? does this architecture pass the smell test?) and you answer as fast as you can. It's not mindless, but it's all skimming and judging, and he worries it biases the mental toolkit away from the slow "hammock time" deep thought needs. He's also honest about why you can't just slow down: close-reading LLM output is miserable, and when your company hands you a solve-it-ten-times-faster button, not pressing it means losing to the peers who do. His defense is writing in your own words and reading dense books; mine is [the morning journal](/process-journal) plus this blog — see [Writing in the age of AI](/writing#writing-in-the-age-of-ai). The trap flow hides: it feels like thinking hard when mostly it's judging fast.
 
 ### Fear of the future as fuel
 

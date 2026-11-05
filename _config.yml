@@ -63,6 +63,7 @@ include: [".htaccess", "__init__.py"]
 exclude:
   [
     "scripts/*",
+    "gutter",
     ".parcel-cache",
     ".specstory",
     "lib",
@@ -106,6 +107,7 @@ exclude:
     ".uv-cache",
     ".playwright-cli",
     "__pycache__",
+    "skill",
   ]
 
 permalink: /:title

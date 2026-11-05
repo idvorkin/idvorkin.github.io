@@ -1,0 +1,54 @@
+# One source of truth for the orchestrator story: the finished stack plus the
+# ten breaks that build it. Rendered to JSON by _includes/orchestrator-shared.html
+# and read by every viewer on the page, so the copy is never forked per variant.
+#
+# Each entry: t title, b the bridge line from the step before, p the problem,
+# s the solution. **bold** is the only markup, and the index of a step matches
+# the data-from / data-until attributes on the blocks in
+# _includes/orchestrator-diagram.html.
+whole:
+  t: "The whole stack"
+  b: ""
+  p: "This is where we end up: a human UX on top, then control, execution and landing, sitting on your repos."
+  s: "None of it is needed on day one. Every block is there because one agent in a terminal broke in a specific way."
+steps:
+  - t: "One agent in a terminal"
+    b: ""
+    p: "You ask. One agent does the work."
+    s: "For one small task this is all you need. Every block after this exists only because this breaks."
+  - t: "It forgets"
+    b: "So you give it bigger jobs."
+    p: "The context compacts or the session crashes. The plan lived only in the chat, so it is gone."
+    s: "A **work ledger** outside the agent. A fresh session picks up where the dead one stopped."
+  - t: "It is serial"
+    b: "Okay, great, now it remembers."
+    p: "Slow. It blocks you while it works. It gets confused when tasks stack."
+    s: "**Workers.** The agent you talk to stops coding and only hands out work. Each worker gets one job."
+  - t: "Workers collide"
+    b: "Okay, great, now we have multiple workers."
+    p: "They share one checkout, overwrite each other, and commit to the wrong branch."
+    s: "**A worktree per worker.** Own folder, own branch."
+  - t: "You cannot see them"
+    b: "Okay, great, now they do not collide."
+    p: "A hidden worker dies with its parent. You cannot watch it or type into it."
+    s: "**A terminal per worker** (tmux window, Herdr tab) that outlives whoever spawned it."
+  - t: "Which agent? Who has quota?"
+    b: "Okay, great, now you have a visible fleet."
+    p: "One subscription runs dry mid-task while others sit unused. A hard task went to a weak model."
+    s: "**A dispatcher and a quota meter.** Agent, model and effort are picked per task."
+  - t: "Nobody is watching"
+    b: "Okay, great, now work goes to the right agent."
+    p: "A finished or stuck worker sits silently. The front door cannot watch without blocking you again."
+    s: "**A supervisor** outside every agent. A dumb script that wakes the front door on done or stuck."
+  - t: "Done is a lie"
+    b: "Okay, great, now you know when they finish."
+    p: "Agents say done when tests fail or half the task was skipped."
+    s: "**A quality gate and a merge path.** Findings go back to the worker, not to you."
+  - t: "Chat is the wrong shape for review"
+    b: "Okay, great, now what lands is good."
+    p: "Ten workers means ten walls of chat. You cannot review a plan, a diagram or a diff by scrolling a transcript."
+    s: "**Rich review**, the second piece of the human UX. Chat is for asking. A page you can annotate is for reviewing and deciding."
+  - t: "No one view of the whole"
+    b: "Okay, great, now you can review."
+    p: "Twenty threads, six workers, four PRs, three questions waiting on you. No single place shows what needs you next."
+    s: "**An overview**, the third piece of the human UX. One board: what is waiting on you, what is running, what landed."

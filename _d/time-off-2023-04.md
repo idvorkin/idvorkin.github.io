@@ -32,18 +32,18 @@ Humorously, I can just copy much of my todo from last year as it's pretty simila
 - Zach thinking we were sleeping in the Tesla
 - Guy on airplane saying he loved my enthusiasm.
 - Second City, me on stage, Amelia AirHart, and Amelia doing an easter skit, For not having to talk to people
-- Taking Zach to improv dojo (it was fun,and he loved it)
+- Taking Zach to improv dojo (it was fun, and he loved it)
 - Cold plunge, then hottub, then sauna, and then massage chair
 - Niagara Falls
 - The boys getting photos like their Dad
 - After: Ron learning to do magic
-- Zach and Ben forcing down their stakes and drinking shots
+- Zach and Ben forcing down their steaks and drinking shots
 - Strong Man Act
 - Kids getting time with their cousins
 - Not having to worry about driving
 - Amazing Hotel
 - Perfect Weather
-- Calling Tori everynight and sending video messages as needed
+- Calling Tori every night and sending video messages as needed
 
 ## Success Stories
 
@@ -124,7 +124,7 @@ Humorously, I can just copy much of my todo from last year as it's pretty simila
 
 - ☐ Daily practice - include anniversary card
 - ☐ Every other day perform for someone
-- ☑ Do Annivery Card Twice
+- ☑ Do Anniversary Card Twice
 
 ## Tech Guru
 
@@ -146,7 +146,7 @@ Humorously, I can just copy much of my todo from last year as it's pretty simila
 
 Weight Start: 189
 
-OMG - 189, took my foot way off the gas!!! Lets get this party started
+OMG - 189, took my foot way off the gas!!! Let's get this party started
 
 ## House and goods
 
@@ -160,4 +160,4 @@ No work stress, might write a bit about remote work, and also about simplified r
 
 ### Family
 
-- Lets focus on compassion and the sublime states
+- Let's focus on compassion and the sublime states

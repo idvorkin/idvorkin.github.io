@@ -14,7 +14,7 @@ This file contains coding-specific conventions for the blog. For content/writing
 - Format code: `just js-format`
 - Validate code (typecheck + lint): `just js-validate`
 - Serve local Jekyll site: `just jekyll-serve` (usually already running at http://localhost:4000)
-- Update backlinks: `just update-backlinks`
+- Rebuild the local backlinks index (for `jq` queries / after renaming a permalink — CI generates the deployed copy, never commit the output; see `CLAUDE.md`): `just update-backlinks`. `just jekyll-serve` builds it automatically when it's missing, so local preview needs no manual step.
 
 ## Test Driven Development (TDD)
 

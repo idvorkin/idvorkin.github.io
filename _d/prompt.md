@@ -78,7 +78,7 @@ _From the [awkward 1:1](https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f
 
 ### Receive extra honest feedback
 
-Remember skip the fluffy answer and ask again until you get something real.
+Remember to skip the fluffy answer and ask again until you get something real.
 
 - Tell them a growth area you're working on currently. Tell them why you picked it (even if it was one of those "not-really-optional" ones!).
 - Ask for advice.
@@ -359,7 +359,7 @@ Spend 15 minutes on Safe, then Deep, and then on Vulnerable prompts
 
 ### Fun
 
-You can probably ask these to grown ups as well, but I suspect kids will be more opening to discussing.
+You can probably ask these to grown ups as well, but I suspect kids will be more open to discussing.
 
 - What is something that made you laugh today
 - If you wrote a book, what would you name the main character and where would he go?

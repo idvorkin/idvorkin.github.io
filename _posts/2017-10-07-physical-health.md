@@ -123,7 +123,7 @@ As of early 2024, my strength routine includes:
 - Turkish Get-Ups: 5x1 @ 32kg per side (achieved Jan '24, regressed after holiday break)
 - Working on one-handed front rack squats
 - Heavy clubs for mobility and grip strength
-- Pull-ups and pistol squats for bodyweight mastery
+- Pull-ups and pistol squats for bodyweight mastery (my [pistol re-entry plan](/pistol-squat))
 
 {% include instagram_reel.html src="DHhnAWKxFzw" %}
 
@@ -133,7 +133,7 @@ Here's my latest form check video (you can jump to [Hand To Hand](https://www.yo
 
 I like the Stuart McGill model. Keep the back stiff as a board, which requires your hips and shoulders to have the motion. I find the Heavy Clubs for shoulders and then deep squats/half lotus/pistol squats have me covered for both.
 
-Also, I feel MUCH better when I do bird dogs, but rarely do (oddly PT suggests dead bugs, which i do not enjoy).
+Also, I feel MUCH better when I do bird dogs, but rarely do (oddly PT suggests dead bugs, which I do not enjoy).
 
 #### What's it like waking up at 5 am
 

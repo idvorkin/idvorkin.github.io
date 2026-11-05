@@ -10,7 +10,7 @@ tags:
 author: "Igor Dvorkin"
 ---
 
-Seth godin has many ideas that are critical in the new world. Ideas include: Choosing yourself, Tribes, The limited value of cogs, connection, and the dip.
+Seth Godin has many ideas that are critical in the new world. Ideas include: Choosing yourself, Tribes, The limited value of cogs, connection, and the dip.
 
 Sources:
 [Live at Carnegie Hall](https://vimeo.com/155069902)
@@ -86,7 +86,7 @@ Sources:
   - What expectations does your tribe have of you?
 - What makes your tribe your tribe vs What protects the industry.
   - Your tribe: expect you to swear
-  - Industry: Taxi's should be regulated, full time, and a monopoly.
+  - Industry: Taxis should be regulated, full time, and a monopoly.
   - If industry expectation is a problem shatter it.
 
 ### The DIP:

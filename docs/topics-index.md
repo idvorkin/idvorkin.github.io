@@ -29,7 +29,13 @@ The `tmp/` artifacts are all regenerable; only `topics.json` is the durable, com
 
 Run tests: `uv run --with pytest --with numpy pytest test_topics_extract.py test_topics_graph.py test_topics_sidecar.py test_topics_embed.py -v`
 
+`/random?topic=ai` reads this index too, at deploy time: `build_back_links.py` joins each page's `topics.json` tags with its front-matter tags, sorts them into topics using the rules in `random_topics.py`, and writes the slugs to a `topics` field in `back-links.json`. The browser only reads that field. To move a tag between topics, edit the rules and run `test_random_topics.py`; the next deploy picks it up, with no re-tagging.
+
 ## How to regenerate (the pipeline)
+
+Step 4 checks cross-link gaps against `back-links.json`'s `url_info` (via
+`topics_graph.py`). That file is gitignored and CI-generated — it's not
+committed, so make sure a local copy exists first: `just update-backlinks`.
 
 ```bash
 # 1. Extract: clean every post's markdown into prose

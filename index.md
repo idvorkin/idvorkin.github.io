@@ -313,7 +313,18 @@ no-render-title: true
         // Don't show loading state since we already have placeholders
         // This prevents flashing content
     }
-    
+
+    // Self-explaining empty state for a missing /back-links.json.
+    //
+    // back-links.json is gitignored and CI-generated. get_link_info() SWALLOWS a
+    // failed fetch and returns {}, and get_recent_posts()/get_random_posts_batch()
+    // return [] — so the catch blocks below never fire and these sections would
+    // otherwise render as silently empty while titles elsewhere on the page still
+    // look fine. `just jekyll-serve` now builds the index when it's missing; this
+    // is the belt-and-braces message for anyone who gets here another way.
+    const BACKLINKS_MISSING_HTML =
+        '<div class="result-item">Couldn\'t load <code>/back-links.json</code> — run <code>just update-backlinks</code> for local preview, or check the CI backlinks step.</div>';
+
     // Load featured posts (with lazy loading)
     async function loadFeaturedPosts() {
         const startTime = performance.now();
@@ -329,7 +340,15 @@ no-render-title: true
             
             // Fetch all link info from backlinks.json
             const allLinkInfo = await get_link_info();
-            
+
+            // Empty map => the fetch failed. Without this, every featured card
+            // renders its slug with the description stuck on "Loading..." forever.
+            if (Object.keys(allLinkInfo).length === 0) {
+                cachedElements.featuredResults.innerHTML = BACKLINKS_MISSING_HTML;
+                console.error('❌ [Featured] /back-links.json unavailable — run `just update-backlinks`');
+                return;
+            }
+
             // Map URLs to post data from backlinks
             const featuredPosts = featuredUrls.map(url => {
                 const postInfo = allLinkInfo[url];
@@ -367,7 +386,7 @@ no-render-title: true
         try {
             const recentPosts = await get_recent_posts(4);
             const html = recentPosts.map(renderBasicItem).join('');
-            cachedElements.recentResults.innerHTML = html;
+            cachedElements.recentResults.innerHTML = html || BACKLINKS_MISSING_HTML;
             const loadTime = performance.now() - startTime;
             console.log(`✅ [Recent] Loaded in ${loadTime.toFixed(0)}ms`);
         } catch (error) {
@@ -386,7 +405,7 @@ no-render-title: true
             // Use optimized batch function instead of multiple calls
             const randomPosts = await get_random_posts_batch(4);
             const html = randomPosts.map(renderBasicItem).join('');
-            cachedElements.randomResults.innerHTML = html;
+            cachedElements.randomResults.innerHTML = html || BACKLINKS_MISSING_HTML;
             const loadTime = performance.now() - startTime;
             console.log(`✅ [Random] Loaded in ${loadTime.toFixed(0)}ms`);
         } catch (error) {

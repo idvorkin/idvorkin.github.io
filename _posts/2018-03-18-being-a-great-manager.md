@@ -69,8 +69,8 @@ Acting is easy, but results are hard. Here are the results I measure.
 
 ### Great partner to other teams and non-tech partners
 
-- Biz functions understands team and tech constraints
-- My team understand constraints and needs of partner teams and biz functions.
+- Biz functions understand team and tech constraints
+- My team understands constraints and needs of partner teams and biz functions.
 - Team not blocked on other teams or biz functions.
 
 ## How will I behave to be successful?
@@ -141,7 +141,7 @@ Some teams have these things well defined and running smoothly, other teams (see
 - Agile Ceremonies: - The standard - Standups/Backlog Grooming/Sprint Planning/Retro
 
 - Project LifeCycle Documents/Meetings
-  - Requirements Review - Design (p)review - Test Plan Review - Operations/Launch Review/Pre-Morten - Bug Bash
+  - Requirements Review - Design (p)review - Test Plan Review - Operations/Launch Review/Pre-Mortem - Bug Bash
 
 ## Igors Super Powers
 

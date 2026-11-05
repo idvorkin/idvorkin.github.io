@@ -1,4 +1,41 @@
-import { expect, test } from "./base-test";
+import { type Page, expect, test } from "./base-test";
+
+test.describe("Random page topic", () => {
+  const url_info = {
+    "/topic-ai-post": { url: "/topic-ai-post", topics: ["ai"] },
+    "/topic-family-post": { url: "/topic-family-post", topics: ["family"] },
+    "/topic-last-post": { url: "/topic-last-post", topics: [] },
+  };
+
+  // Always picks the last candidate, so which page we land on shows the pool that was rolled from.
+  async function rollFrom(page: Page, path: string, warnings: string[] = []) {
+    page.on("console", (message) => {
+      if (message.type() === "warning") warnings.push(message.text());
+    });
+    await page.addInitScript(() => {
+      Math.random = () => 0.999;
+    });
+    await page.route("**/back-links.json", (route) => route.fulfill({ json: { url_info } }));
+    await page.route("**/topic-*-post", (route) => route.fulfill({ contentType: "text/html", body: "landed" }));
+    await page.goto(path);
+    await page.waitForURL(/\/topic-.*-post$/);
+    return new URL(page.url()).pathname;
+  }
+
+  test("?topic=ai lands on a post in that topic", async ({ page }) => {
+    expect(await rollFrom(page, "/random?topic=ai")).toBe("/topic-ai-post");
+  });
+
+  test("no topic rolls from everything", async ({ page }) => {
+    expect(await rollFrom(page, "/random")).toBe("/topic-last-post");
+  });
+
+  test("an unknown topic rolls from everything and warns", async ({ page }) => {
+    const warnings: string[] = [];
+    expect(await rollFrom(page, "/random?topic=cooking", warnings)).toBe("/topic-last-post");
+    expect(warnings.join()).toContain("cooking");
+  });
+});
 
 test.describe("Random Page Navigation", () => {
   test("should redirect from /random to a content page", async ({ page }) => {

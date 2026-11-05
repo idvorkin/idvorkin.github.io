@@ -269,7 +269,7 @@ worktree-init:
     BRANCH=$(git branch --show-current | tr '/' '-')
     LOG="/tmp/jekyll-worktree-$BRANCH.log"
     NPM_LOG="/tmp/npm-worktree-$BRANCH.log"
-    echo "🔨 Starting bg gem install + jekyll build — log: $LOG"
+    echo "🔨 Starting bg gem install + jekyll build + backlinks build — log: $LOG"
     echo "📦 Starting bg npm ci — log: $NPM_LOG"
     # Match jekyll-rebuild: prefer homebrew Ruby on Darwin so we don't
     # silently fall back to system Ruby and fail.
@@ -278,13 +278,53 @@ worktree-init:
     else
         BUNDLE="bundle"
     fi
-    # Gems must land before the build — sequence them in one background job.
-    nohup sh -c "$BUNDLE install && $BUNDLE exec jekyll build" >"$LOG" 2>&1 & disown
+    # Gems must land before the jekyll build, and the jekyll build before the
+    # backlinks build (build_back_links.py reads _site/) — sequence all three
+    # in one background job. back-links.json is gitignored/CI-generated, but
+    # the anchor-checker pre-commit hook still needs a LOCAL copy to resolve
+    # permalinks/redirects (it hard-fails with "back-links.json not found" if
+    # one isn't on disk) — same reason _site/ has to exist before the first
+    # commit.
+    nohup sh -c "$BUNDLE install && $BUNDLE exec jekyll build && uv run ./build_back_links.py build" >"$LOG" 2>&1 & disown
     # node_modules is independent of the Ruby side, so let it run in parallel.
     nohup npm ci >"$NPM_LOG" 2>&1 & disown
-    echo "✅ Background deps + build fired. Ready in ~60-90s; first commit should find _site/ populated and the test hook runnable."
+    echo "✅ Background deps + build fired. Ready in ~60-90s; first commit should find _site/ and back-links.json populated and the test hook runnable."
 
-jekyll-serve port="4000" livereload_port="35729":
+# ===== Local-preview bootstrap =====
+#
+# back-links.json is gitignored and CI-generated, so a fresh clone or a fresh
+# worktree has no copy. But the SITE FETCHES /back-links.json AT RUNTIME: with
+# the file absent the home page's Featured card hangs on "Loading..." forever,
+# Recent and Random render completely empty with no fallback text, and every
+# search result description is blank. The fetch failure is caught and swallowed
+# (get_link_info returns {}), so nothing is thrown and the page still LOOKS fine
+# at a glance because titles render everywhere. This recipe is what makes
+# `git clone && just jekyll-serve` just work.
+#
+# Missing-only, deliberately: update-backlinks runs a full Jekyll build first
+# (build_back_links.py reads _site/), so re-deriving staleness on every serve
+# would tax the common case — a serve that got slower every time is the worse
+# trade. After adding/renaming a permalink, refresh by hand: just update-backlinks
+#
+# Never fatal: a failed build here degrades local preview; it must not stop the
+# server from coming up. CI is unaffected either way — pages.yml builds its own
+# copy after the Jekyll build and ships it in the Pages artifact.
+#
+# Build back-links.json only if missing (auto-run by jekyll-serve; ~4ms no-op once present)
+ensure-backlinks:
+    #!/usr/bin/env sh
+    if [ -s back-links.json ]; then
+        exit 0
+    fi
+    echo "🔗 back-links.json missing (gitignored / CI-generated) — building it once..."
+    if just update-backlinks; then
+        echo "✅ back-links.json built."
+    else
+        echo "⚠️  Backlinks build FAILED. The site will still serve, but Featured/Recent/Random" >&2
+        echo "   and search result descriptions will be EMPTY. Fix, then: just update-backlinks" >&2
+    fi
+
+jekyll-serve port="4000" livereload_port="35729": ensure-backlinks
     #!/usr/bin/env sh
     # Update git branch info for dev banner
     echo '{"branch": "'$(git branch --show-current)'"}' > _data/git.json
@@ -350,7 +390,7 @@ jekyll-serve port="4000" livereload_port="35729":
         -- $RUNNER jekyll server --incremental --livereload --host "$BIND_HOST" \
         --port '{http}' --livereload-port '{livereload}'
 
-jekyll-container port="4000":
+jekyll-container port="4000": ensure-backlinks
     #!/usr/bin/env bash
     HOSTNAME=$(hostname)
     echo "╔════════════════════════════════════════════════════════════════════╗"

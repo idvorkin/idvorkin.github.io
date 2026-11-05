@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Swing Analyzer</title>
+    <title>Movement Analyzer</title>
     <style>
       body {
         background-color: #f5f5f7;
@@ -131,6 +131,26 @@
         height: auto;
       }
 
+      .movement-picker {
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 16px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .movement-picker label {
+        font-weight: 600;
+      }
+
+      #movement-select {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 8px 12px;
+        font-size: 16px;
+        background: #fff;
+      }
+
       .controls {
         flex-wrap: wrap;
         gap: 10px;
@@ -176,13 +196,32 @@
         font-weight: bold;
       }
 
+      .metric-row {
+        margin: 6px 0;
+      }
+
+      .flag-ok {
+        color: #1a8a3b;
+        font-weight: 600;
+      }
+      .flag-warn {
+        color: #c81e1e;
+        font-weight: 600;
+      }
+      .flag-na {
+        color: #777;
+        font-weight: 600;
+      }
+
+      .hint {
+        color: #777;
+        font-size: 13px;
+        margin-top: 8px;
+      }
+
       #status {
         color: #777;
         margin-top: 10px;
-      }
-
-      .hide {
-        display: none;
       }
 
       .file-input {
@@ -259,10 +298,18 @@
   </head>
   <body>
     <header>
-      <h1>Swing Analyzer</h1>
+      <h1>Movement Analyzer</h1>
     </header>
 
     <main>
+      <div class="movement-picker">
+        <label for="movement-select">Movement:</label>
+        <select id="movement-select">
+          <option value="swing" selected>Kettlebell swing</option>
+          <option value="bulgarian">Bulgarian split squat</option>
+        </select>
+      </div>
+
       <div class="file-input">
         <input type="file" id="video-upload" accept="video/*" />
         <p>Or use your camera</p>
@@ -289,11 +336,40 @@
       </div>
 
       <div class="metrics">
-        <h2>Swing Analysis</h2>
-        <div>
-          <p>Reps: <span id="rep-counter">0</span></p>
-          <p>Spine Angle: <span id="spine-angle">0°</span></p>
+        <h2 id="metrics-title">Swing Analysis</h2>
+        <div class="metric-row">Reps: <span id="rep-counter">0</span></div>
+
+        <!-- Swing readout -->
+        <div id="swing-metrics">
+          <div class="metric-row">
+            Spine Angle: <span id="spine-angle">0&deg;</span>
+          </div>
         </div>
+
+        <!-- Bulgarian split-squat readout -->
+        <div id="bulgarian-metrics" hidden>
+          <div class="metric-row">
+            Front-knee angle: <span id="knee-angle">0&deg;</span>
+            <span style="color: #777"
+              >(last rep depth: <span id="knee-depth">--</span>)</span
+            >
+          </div>
+          <div class="metric-row">
+            Torso lean: <span id="torso-lean">0&deg;</span>
+          </div>
+          <div class="metric-row">
+            Knee tracking (cave): <span id="knee-cave" class="flag-na">--</span>
+          </div>
+          <div class="metric-row">
+            Low-back arch: <span id="low-back" class="flag-na">--</span>
+          </div>
+          <div class="hint">
+            Stop signs: knee cave &amp; low-back arch. Film from the SIDE for
+            depth / lean / arch; knee-cave can only be judged from a HEAD-ON
+            (front) camera.
+          </div>
+        </div>
+
         <div id="status">Ready</div>
         <button id="show-keypoints-btn" class="show-keypoints-btn">
           Show Keypoint Data
@@ -326,6 +402,784 @@
       </div>
     </main>
 
-    <script type="module" src="/public.34df32e0.js"></script>
+    <!--
+      Self-contained build. The original app shipped as a Parcel bundle
+      (public.*.js) that was dropped from the repo and 404s in production, so
+      this page loads the SAME pose library it always used -- TensorFlow.js +
+      @tensorflow-models/pose-detection (MoveNet SinglePose Lightning) -- from a
+      CDN and implements the analyzer inline. No build step, no local bundle.
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core@4.22.0/dist/tf-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter@4.22.0/dist/tf-converter.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl@4.22.0/dist/tf-backend-webgl.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection@2.1.3/dist/pose-detection.min.js"></script>
+    <script>
+      "use strict";
+
+      // =====================================================================
+      // Shared movement constants.
+      //
+      // SWING: spine angle from vertical + a hinge state-machine (unchanged
+      // from the original app).
+      //
+      // BULG: Bulgarian split-squat analysis. These constants MUST stay in
+      // lockstep with swings/analyze_bulgarian.py -- that headless MediaPipe
+      // harness is the regression test for this exact logic, since there is no
+      // browser in CI. Tune a threshold in one place and you must tune it in
+      // the other or the test stops validating what ships here.
+      // =====================================================================
+      const SWING = {
+        hingeThreshold: 45, // deg from vertical; below => "hinge" (upright top)
+      };
+      const BULG = {
+        VIS_MIN: 0.3, // MoveNet keypoint score to trust a joint
+        KNEE_DOWN: 110, // front-knee angle below this => descending
+        KNEE_UP: 150, // ...then above this => rep complete (hysteresis)
+        DEPTH_TARGET: 90, // ~parallel front thigh
+        DEPTH_OK_MARGIN: 10, // "hit depth" if rep min knee <= target + margin
+        FRONT_VIEW_RATIO: 0.35, // shoulderSep/torso >= this => head-on view
+        VALGUS_THRESH: 0.1, // knee medial-of-ankle / shank => cave
+        ARCH_LEAN_DEG: -15, // torso behind vertical by this => arch proxy
+        ARCH_FRAMES: 3, // ...sustained this many analyzed frames => flag
+      };
+
+      const sign = v => (v > 0 ? 1 : v < 0 ? -1 : 0);
+
+      // ---- DOM handles -----------------------------------------------------
+      const video = document.getElementById("video");
+      const canvas = document.getElementById("output-canvas");
+      const cameraBtn = document.getElementById("camera-btn");
+      const playPauseBtn = document.getElementById("play-pause-btn");
+      const stopBtn = document.getElementById("stop-btn");
+      const videoUpload = document.getElementById("video-upload");
+      const statusEl = document.getElementById("status");
+      const movementSelect = document.getElementById("movement-select");
+      const metricsTitle = document.getElementById("metrics-title");
+      const swingMetrics = document.getElementById("swing-metrics");
+      const bulgarianMetrics = document.getElementById("bulgarian-metrics");
+      const displayModeRadios = document.querySelectorAll(
+        'input[name="display-mode"]'
+      );
+      const showKeypointsBtn = document.getElementById("show-keypoints-btn");
+      const keypointData = document.getElementById("keypoint-data");
+      const keypointContainer = document.getElementById("keypoint-container");
+      const loadingSpinner = document.getElementById("loading-spinner");
+      const loadingProgress = document.getElementById("loading-progress");
+      const loadingText = document.getElementById("loading-text");
+
+      const appState = {
+        usingCamera: false,
+        mode: "swing",
+        showBodyParts: true,
+        bodyPartDisplayTime: 0.5,
+      };
+      let analyzer = null;
+      let latestKeypoints = [];
+
+      // ---- loading spinner -------------------------------------------------
+      let loadingTimer = null;
+      let progressValue = 0;
+      const ESTIMATED_LOADING_TIME = 15000;
+      function showLoadingSpinner(show) {
+        if (!loadingSpinner) return;
+        loadingSpinner.classList.toggle("active", show);
+        if (show) {
+          progressValue = 0;
+          if (loadingProgress) loadingProgress.style.width = "0%";
+          if (loadingTimer) clearInterval(loadingTimer);
+          loadingTimer = window.setInterval(() => {
+            progressValue += (100 - progressValue) / 100;
+            if (progressValue >= 99) progressValue = 99;
+            if (loadingProgress)
+              loadingProgress.style.width = `${progressValue}%`;
+            const remain = Math.ceil(
+              ((100 - progressValue) / 100) * (ESTIMATED_LOADING_TIME / 1000)
+            );
+            if (loadingText)
+              loadingText.textContent = `Loading model... ${Math.round(
+                progressValue
+              )}% (about ${remain}s)`;
+          }, 100);
+        } else if (loadingTimer) {
+          clearInterval(loadingTimer);
+          loadingTimer = null;
+          if (loadingProgress) loadingProgress.style.width = "100%";
+          if (loadingText) loadingText.textContent = "Loading complete!";
+        }
+      }
+
+      // =====================================================================
+      // Analyzer
+      // =====================================================================
+      class MovementAnalyzer {
+        constructor(video, canvas, mode) {
+          this.video = video;
+          this.canvas = canvas;
+          this.ctx = canvas.getContext("2d");
+          this.detector = null;
+          this.mode = mode;
+          this.rafId = null;
+          this.fps = 0;
+          this.frameCount = 0;
+          this.startTime = 0;
+          this.frameTimestamp = 0;
+          this.debugMode = false;
+          this.reset();
+        }
+
+        reset() {
+          // swing state
+          this.spineAngle = 0;
+          this.swingHinge = false;
+          this.swingLastHinge = false;
+          // bulgarian state
+          this.kneeAngle = 0;
+          this.torsoLean = 0;
+          this.inBottom = false;
+          this.repMinKnee = Infinity;
+          this.lastRepMinKnee = null;
+          this.backRun = 0;
+          this.archFlagged = false;
+          this.viewIsFront = false;
+          this.valgusFlagged = false;
+          // shared
+          this.repCount = 0;
+          this.updateRepDisplay();
+        }
+
+        setMode(mode) {
+          this.mode = mode;
+          this.reset();
+        }
+        setDebugMode(on) {
+          this.debugMode = on;
+        }
+
+        async initialize() {
+          await tf.setBackend("webgl");
+          await tf.ready();
+          try {
+            this.detector = await poseDetection.createDetector(
+              poseDetection.SupportedModels.MoveNet,
+              {
+                modelType: poseDetection.movenet.modelType.SINGLEPOSE_LIGHTNING,
+                enableSmoothing: true,
+              }
+            );
+          } catch (e) {
+            console.error("MoveNet failed, trying PoseNet", e);
+            this.detector = await poseDetection.createDetector(
+              poseDetection.SupportedModels.PoseNet
+            );
+          }
+          if (this.video.videoWidth && this.video.videoHeight) {
+            this.canvas.width = this.video.videoWidth;
+            this.canvas.height = this.video.videoHeight;
+          } else {
+            this.canvas.width = 640;
+            this.canvas.height = 480;
+          }
+        }
+
+        // ---- geometry helpers ---------------------------------------------
+        named(keypoints) {
+          const m = {};
+          for (const kp of keypoints) m[kp.name] = kp;
+          return m;
+        }
+        vis(p) {
+          return p && (p.score !== undefined ? p.score : 0) >= BULG.VIS_MIN;
+        }
+        jointAngle(a, b, c) {
+          const bax = a.x - b.x,
+            bay = a.y - b.y,
+            bcx = c.x - b.x,
+            bcy = c.y - b.y;
+          const na = Math.hypot(bax, bay),
+            nc = Math.hypot(bcx, bcy);
+          if (na === 0 || nc === 0) return null;
+          const cosv = Math.max(
+            -1,
+            Math.min(1, (bax * bcx + bay * bcy) / (na * nc))
+          );
+          return (Math.acos(cosv) * 180) / Math.PI;
+        }
+
+        // ---- SWING: spine angle from vertical (original behavior) --------
+        calcSpineVertical(k) {
+          const sh = [];
+          const hp = [];
+          if (this.vis(k.left_shoulder)) sh.push(k.left_shoulder);
+          if (this.vis(k.right_shoulder)) sh.push(k.right_shoulder);
+          if (this.vis(k.left_hip)) hp.push(k.left_hip);
+          if (this.vis(k.right_hip)) hp.push(k.right_hip);
+          if (!sh.length || !hp.length) return 0;
+          const topX = sh.reduce((s, p) => s + p.x, 0) / sh.length;
+          const topY = sh.reduce((s, p) => s + p.y, 0) / sh.length;
+          const botX = hp.reduce((s, p) => s + p.x, 0) / hp.length;
+          const botY = hp.reduce((s, p) => s + p.y, 0) / hp.length;
+          const dx = topX - botX;
+          const dy = botY - topY; // y is down in screen space
+          return Math.abs((Math.atan2(dx, dy) * 180) / Math.PI);
+        }
+
+        analyzeSwing(k) {
+          this.spineAngle = this.calcSpineVertical(k);
+          const el = document.getElementById("spine-angle");
+          if (el) el.textContent = `${Math.round(this.spineAngle)}°`;
+          if (this.spineAngle > 0) {
+            const isHinge = this.spineAngle < SWING.hingeThreshold;
+            if (this.swingLastHinge && !isHinge) {
+              this.repCount++;
+              this.updateRepDisplay();
+            }
+            this.swingLastHinge = isHinge;
+            this.swingHinge = isHinge;
+          }
+        }
+
+        // ---- BULGARIAN: front-knee rep machine + form flags ---------------
+        analyzeBulgarian(k) {
+          const sh = [];
+          const hp = [];
+          if (this.vis(k.left_shoulder)) sh.push(k.left_shoulder);
+          if (this.vis(k.right_shoulder)) sh.push(k.right_shoulder);
+          if (this.vis(k.left_hip)) hp.push(k.left_hip);
+          if (this.vis(k.right_hip)) hp.push(k.right_hip);
+          if (!sh.length || !hp.length) return;
+          const sMid = {
+            x: sh.reduce((s, p) => s + p.x, 0) / sh.length,
+            y: sh.reduce((s, p) => s + p.y, 0) / sh.length,
+          };
+          const hMid = {
+            x: hp.reduce((s, p) => s + p.x, 0) / hp.length,
+            y: hp.reduce((s, p) => s + p.y, 0) / hp.length,
+          };
+
+          // front leg = planted foot = the LOWER ankle (larger y); the back
+          // foot is elevated on the bench.
+          const cand = [];
+          if (
+            this.vis(k.left_ankle) &&
+            this.vis(k.left_knee) &&
+            this.vis(k.left_hip)
+          )
+            cand.push({
+              hip: k.left_hip,
+              knee: k.left_knee,
+              ankle: k.left_ankle,
+            });
+          if (
+            this.vis(k.right_ankle) &&
+            this.vis(k.right_knee) &&
+            this.vis(k.right_hip)
+          )
+            cand.push({
+              hip: k.right_hip,
+              knee: k.right_knee,
+              ankle: k.right_ankle,
+            });
+          if (!cand.length) return;
+          const front = cand.reduce((a, b) => (b.ankle.y > a.ankle.y ? b : a));
+          this.frontLeg = front;
+
+          const knee = this.jointAngle(front.hip, front.knee, front.ankle);
+          if (knee === null) return;
+          this.kneeAngle = knee;
+
+          // signed torso lean: + toward the front foot (forward), - back
+          const dx = sMid.x - hMid.x;
+          const up = hMid.y - sMid.y;
+          const leanMag = up
+            ? (Math.atan2(Math.abs(dx), Math.abs(up)) * 180) / Math.PI
+            : 90;
+          const faceDir = sign(front.ankle.x - hMid.x);
+          const fwd = sign(dx) === faceDir ? 1 : -1;
+          this.torsoLean = fwd * leanMag;
+
+          // low-back arch proxy: sustained lean behind vertical
+          if (this.torsoLean < BULG.ARCH_LEAN_DEG) {
+            this.backRun++;
+            if (this.backRun >= BULG.ARCH_FRAMES) this.archFlagged = true;
+          } else {
+            this.backRun = 0;
+          }
+
+          // view + knee valgus (frontal plane -> only meaningful head-on)
+          const torsoLen = Math.hypot(dx, up);
+          this.viewIsFront = false;
+          if (
+            this.vis(k.left_shoulder) &&
+            this.vis(k.right_shoulder) &&
+            torsoLen > 0
+          ) {
+            const ratio =
+              Math.abs(k.left_shoulder.x - k.right_shoulder.x) / torsoLen;
+            this.viewIsFront = ratio >= BULG.FRONT_VIEW_RATIO;
+          }
+          if (this.viewIsFront) {
+            const shank = Math.hypot(
+              front.knee.x - front.ankle.x,
+              front.knee.y - front.ankle.y
+            );
+            if (shank > 0) {
+              const medial = sign(hMid.x - front.ankle.x);
+              const valgus = (medial * (front.knee.x - front.ankle.x)) / shank;
+              if (valgus >= BULG.VALGUS_THRESH) this.valgusFlagged = true;
+            }
+          }
+
+          // rep machine on the front-knee angle (hysteresis)
+          if (knee < BULG.KNEE_DOWN) {
+            this.inBottom = true;
+            this.repMinKnee = Math.min(this.repMinKnee, knee);
+          } else if (knee > BULG.KNEE_UP && this.inBottom) {
+            this.repCount++;
+            this.lastRepMinKnee = this.repMinKnee;
+            this.inBottom = false;
+            this.repMinKnee = Infinity;
+            this.updateRepDisplay();
+          }
+
+          this.updateBulgarianDisplay();
+        }
+
+        updateRepDisplay() {
+          const el = document.getElementById("rep-counter");
+          if (el) el.textContent = String(this.repCount);
+        }
+
+        updateBulgarianDisplay() {
+          const ka = document.getElementById("knee-angle");
+          if (ka) ka.textContent = `${Math.round(this.kneeAngle)}°`;
+          const kd = document.getElementById("knee-depth");
+          if (kd)
+            kd.textContent =
+              this.lastRepMinKnee === null
+                ? "--"
+                : `${Math.round(this.lastRepMinKnee)}° ${
+                    this.lastRepMinKnee <=
+                    BULG.DEPTH_TARGET + BULG.DEPTH_OK_MARGIN
+                      ? "✓"
+                      : "shallow"
+                  }`;
+          const tl = document.getElementById("torso-lean");
+          if (tl) tl.textContent = `${Math.round(this.torsoLean)}°`;
+
+          const kc = document.getElementById("knee-cave");
+          if (kc) {
+            if (!this.viewIsFront) {
+              kc.textContent = "n/a (side view)";
+              kc.className = "flag-na";
+            } else if (this.valgusFlagged) {
+              kc.textContent = "CAVE — knee drifting in";
+              kc.className = "flag-warn";
+            } else {
+              kc.textContent = "OK";
+              kc.className = "flag-ok";
+            }
+          }
+          const lb = document.getElementById("low-back");
+          if (lb) {
+            if (this.archFlagged) {
+              lb.textContent = "ARCH — leaning back";
+              lb.className = "flag-warn";
+            } else {
+              lb.textContent = "OK";
+              lb.className = "flag-ok";
+            }
+          }
+        }
+
+        // ---- detection + draw loop ----------------------------------------
+        async detect() {
+          if (!this.detector) return null;
+          try {
+            const poses = await this.detector.estimatePoses(this.video);
+            if (!poses.length) return null;
+            return poses[0].keypoints;
+          } catch (e) {
+            console.error("estimatePoses error", e);
+            return null;
+          }
+        }
+
+        draw(keypoints, timestamp) {
+          const { width, height } = this.canvas;
+          this.ctx.clearRect(0, 0, width, height);
+          latestKeypoints = keypoints;
+          updateKeypointDisplay();
+
+          if (this.startTime === 0) this.startTime = timestamp;
+          this.frameCount++;
+          const elapsed = timestamp - this.startTime;
+          if (elapsed >= 1000) {
+            this.fps = Math.round((this.frameCount * 1000) / elapsed);
+            this.frameCount = 0;
+            this.startTime = timestamp;
+          }
+
+          const k = this.named(keypoints);
+          if (this.mode === "swing") this.analyzeSwing(k);
+          else this.analyzeBulgarian(k);
+
+          this.drawSkeleton(keypoints);
+          if (this.mode === "swing") this.drawSpine(k);
+          else this.drawFrontLeg();
+
+          // HUD
+          this.ctx.fillStyle = "rgba(0,0,0,0.5)";
+          this.ctx.fillRect(5, 5, 320, this.mode === "swing" ? 100 : 130);
+          this.ctx.fillStyle = "white";
+          this.ctx.font = "16px Arial";
+          this.ctx.fillText(`FPS: ${this.fps}`, 10, 25);
+          this.ctx.fillText(`Reps: ${this.repCount}`, 10, 50);
+          if (this.mode === "swing") {
+            this.ctx.fillText(`Spine: ${Math.round(this.spineAngle)}°`, 10, 75);
+          } else {
+            this.ctx.fillText(
+              `Front knee: ${Math.round(this.kneeAngle)}°`,
+              10,
+              75
+            );
+            this.ctx.fillText(
+              `Torso lean: ${Math.round(this.torsoLean)}°`,
+              10,
+              98
+            );
+            const arch = this.archFlagged ? " | ARCH" : "";
+            const cave = this.viewIsFront
+              ? this.valgusFlagged
+                ? " | KNEE CAVE"
+                : ""
+              : "";
+            this.ctx.fillStyle = arch || cave ? "rgba(255,80,80,1)" : "white";
+            this.ctx.fillText(
+              `Flags:${arch || cave ? arch + cave : " none"}`,
+              10,
+              121
+            );
+          }
+        }
+
+        drawSkeleton(keypoints) {
+          const pairs = [
+            ["left_shoulder", "right_shoulder"],
+            ["left_shoulder", "left_hip"],
+            ["right_shoulder", "right_hip"],
+            ["left_hip", "right_hip"],
+            ["left_shoulder", "left_elbow"],
+            ["left_elbow", "left_wrist"],
+            ["right_shoulder", "right_elbow"],
+            ["right_elbow", "right_wrist"],
+            ["left_hip", "left_knee"],
+            ["left_knee", "left_ankle"],
+            ["right_hip", "right_knee"],
+            ["right_knee", "right_ankle"],
+          ];
+          const k = this.named(keypoints);
+          this.ctx.strokeStyle = "rgba(255,255,255,0.7)";
+          this.ctx.lineWidth = 4;
+          for (const [a, b] of pairs) {
+            const pa = k[a];
+            const pb = k[b];
+            if (!this.vis(pa) || !this.vis(pb)) continue;
+            this.ctx.beginPath();
+            this.ctx.moveTo(pa.x, pa.y);
+            this.ctx.lineTo(pb.x, pb.y);
+            this.ctx.stroke();
+          }
+          // keypoints
+          for (const kp of keypoints) {
+            if (!this.vis(kp)) continue;
+            this.ctx.fillStyle = "rgba(255,255,0,0.85)";
+            this.ctx.beginPath();
+            this.ctx.arc(kp.x, kp.y, 5, 0, 2 * Math.PI);
+            this.ctx.fill();
+          }
+        }
+
+        drawSpine(k) {
+          const sh = [];
+          const hp = [];
+          if (this.vis(k.left_shoulder)) sh.push(k.left_shoulder);
+          if (this.vis(k.right_shoulder)) sh.push(k.right_shoulder);
+          if (this.vis(k.left_hip)) hp.push(k.left_hip);
+          if (this.vis(k.right_hip)) hp.push(k.right_hip);
+          if (!sh.length || !hp.length) return;
+          const sx = sh.reduce((s, p) => s + p.x, 0) / sh.length;
+          const sy = sh.reduce((s, p) => s + p.y, 0) / sh.length;
+          const hx = hp.reduce((s, p) => s + p.x, 0) / hp.length;
+          const hy = hp.reduce((s, p) => s + p.y, 0) / hp.length;
+          this.ctx.strokeStyle =
+            this.spineAngle < SWING.hingeThreshold
+              ? "rgba(255,0,0,1)"
+              : "rgba(0,255,0,1)";
+          this.ctx.lineWidth = 8;
+          this.ctx.beginPath();
+          this.ctx.moveTo(sx, sy);
+          this.ctx.lineTo(hx, hy);
+          this.ctx.stroke();
+        }
+
+        drawFrontLeg() {
+          const f = this.frontLeg;
+          if (!f) return;
+          const deep =
+            this.kneeAngle <= BULG.DEPTH_TARGET + BULG.DEPTH_OK_MARGIN;
+          const bad =
+            this.archFlagged || (this.viewIsFront && this.valgusFlagged);
+          this.ctx.strokeStyle = bad
+            ? "rgba(255,0,0,1)"
+            : deep
+              ? "rgba(0,255,0,1)"
+              : "rgba(255,165,0,1)";
+          this.ctx.lineWidth = 8;
+          this.ctx.beginPath();
+          this.ctx.moveTo(f.hip.x, f.hip.y);
+          this.ctx.lineTo(f.knee.x, f.knee.y);
+          this.ctx.lineTo(f.ankle.x, f.ankle.y);
+          this.ctx.stroke();
+        }
+
+        async processFrame(timestamp) {
+          if (this.video.paused || this.video.ended) return;
+          if (this.frameTimestamp === 0) this.frameTimestamp = timestamp;
+          // process every other frame (~30fps -> ~15fps), matches the harness
+          if (this.frameCount % 2 === 0) {
+            const keypoints = await this.detect();
+            if (keypoints) this.draw(keypoints, timestamp);
+          }
+          this.frameCount++;
+          this.rafId = requestAnimationFrame(this.processFrame.bind(this));
+        }
+        start() {
+          if (!this.rafId)
+            this.rafId = requestAnimationFrame(this.processFrame.bind(this));
+        }
+        stop() {
+          if (this.rafId) {
+            cancelAnimationFrame(this.rafId);
+            this.rafId = null;
+          }
+        }
+      }
+
+      // =====================================================================
+      // Wiring
+      // =====================================================================
+      function updateStatus(m) {
+        if (statusEl) statusEl.textContent = m;
+      }
+      function updateButtons(cam, pp, stop) {
+        cameraBtn.disabled = !cam;
+        playPauseBtn.disabled = !pp;
+        stopBtn.disabled = !stop;
+        if (pp) playPauseBtn.textContent = video.paused ? "Play" : "Pause";
+      }
+
+      function applyMode(mode) {
+        appState.mode = mode;
+        const bulg = mode === "bulgarian";
+        metricsTitle.textContent = bulg
+          ? "Bulgarian Split Squat Analysis"
+          : "Swing Analysis";
+        swingMetrics.hidden = bulg;
+        bulgarianMetrics.hidden = !bulg;
+        if (analyzer) analyzer.setMode(mode);
+      }
+
+      async function ensureAnalyzer() {
+        if (analyzer) return;
+        showLoadingSpinner(true);
+        canvas.width = video.videoWidth || 640;
+        canvas.height = video.videoHeight || 480;
+        analyzer = new MovementAnalyzer(video, canvas, appState.mode);
+        try {
+          await analyzer.initialize();
+          updateStatus("Model loaded. Ready to analyze.");
+        } catch (e) {
+          console.error(e);
+          updateStatus("Error loading model. Refresh and try again.");
+        }
+        showLoadingSpinner(false);
+      }
+
+      function updateDimensions() {
+        if (!video.videoWidth || !video.videoHeight) return;
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+        const portrait = video.videoHeight > video.videoWidth;
+        const container = video.parentElement;
+        if (container) {
+          container.classList.remove("video-portrait", "video-landscape");
+          container.classList.add(
+            portrait ? "video-portrait" : "video-landscape"
+          );
+        }
+        video.style.width = "100%";
+        video.style.height = "auto";
+        canvas.style.width = "100%";
+        canvas.style.height = "auto";
+      }
+
+      async function handleUpload(e) {
+        const input = e.target;
+        if (!input.files || !input.files.length) return;
+        const file = input.files[0];
+        showLoadingSpinner(true);
+        if (appState.usingCamera) stopCamera();
+        video.style.display = "block";
+        video.src = URL.createObjectURL(file);
+        appState.usingCamera = false;
+        video.load();
+        await new Promise(res => {
+          video.onloadedmetadata = () => res();
+        });
+        updateDimensions();
+        await ensureAnalyzer();
+        if (analyzer) analyzer.reset();
+        updateButtons(true, true, false);
+        updateStatus(`Loaded ${file.name}. Press Play to analyze.`);
+      }
+
+      async function startCamera() {
+        try {
+          showLoadingSpinner(true);
+          const stream = await navigator.mediaDevices.getUserMedia({
+            video: {
+              facingMode: "environment",
+              width: { ideal: 1280 },
+              height: { ideal: 720 },
+            },
+          });
+          video.style.display = "block";
+          video.srcObject = stream;
+          appState.usingCamera = true;
+          await new Promise(res => {
+            video.onloadedmetadata = () => res();
+          });
+          updateDimensions();
+          await ensureAnalyzer();
+          await video.play();
+          updateButtons(false, true, true);
+          updateStatus("Camera active. Analyzing motion...");
+        } catch (e) {
+          console.error(e);
+          updateStatus("Camera access denied or not available.");
+          showLoadingSpinner(false);
+        }
+      }
+      function stopCamera() {
+        if (video.srcObject) {
+          video.srcObject.getTracks().forEach(t => t.stop());
+          video.srcObject = null;
+        }
+        appState.usingCamera = false;
+        updateButtons(true, false, false);
+        showLoadingSpinner(false);
+      }
+      function togglePlayPause() {
+        if (video.paused) video.play();
+        else video.pause();
+      }
+      function stopVideo() {
+        video.pause();
+        video.currentTime = 0;
+        if (appState.usingCamera) stopCamera();
+        updateButtons(true, true, false);
+        if (analyzer) analyzer.reset();
+      }
+
+      function toggleKeypointData() {
+        if (keypointData.style.display === "none") {
+          keypointData.style.display = "block";
+          showKeypointsBtn.textContent = "Hide Keypoint Data";
+          updateKeypointDisplay();
+        } else {
+          keypointData.style.display = "none";
+          showKeypointsBtn.textContent = "Show Keypoint Data";
+        }
+      }
+      function updateKeypointDisplay() {
+        if (!latestKeypoints.length || keypointData.style.display === "none")
+          return;
+        keypointContainer.innerHTML = "";
+        const header = document.createElement("div");
+        header.className = "keypoint-row";
+        header.innerHTML =
+          "<span><strong>Name</strong></span><span><strong>X</strong></span><span><strong>Y</strong></span><span><strong>Conf</strong></span>";
+        keypointContainer.appendChild(header);
+        for (const kp of latestKeypoints) {
+          const row = document.createElement("div");
+          row.className = "keypoint-row";
+          row.innerHTML = `<span>${kp.name || "?"}</span><span>${Math.round(
+            kp.x
+          )}</span><span>${Math.round(kp.y)}</span><span>${
+            kp.score !== undefined ? kp.score.toFixed(2) : "N/A"
+          }</span>`;
+          keypointContainer.appendChild(row);
+        }
+      }
+
+      function setupEventListeners() {
+        cameraBtn.addEventListener("click", startCamera);
+        playPauseBtn.addEventListener("click", togglePlayPause);
+        stopBtn.addEventListener("click", stopVideo);
+        videoUpload.addEventListener("change", handleUpload);
+        movementSelect.addEventListener("change", e =>
+          applyMode(e.target.value)
+        );
+        video.addEventListener("loadedmetadata", updateDimensions);
+        video.addEventListener("play", () => {
+          if (analyzer) {
+            analyzer.start();
+            playPauseBtn.textContent = "Pause";
+          }
+        });
+        video.addEventListener("pause", () => {
+          if (analyzer) {
+            analyzer.stop();
+            playPauseBtn.textContent = "Play";
+          }
+        });
+        video.addEventListener("ended", () => {
+          if (analyzer) analyzer.stop();
+          playPauseBtn.textContent = "Play";
+        });
+        showKeypointsBtn.addEventListener("click", toggleKeypointData);
+        displayModeRadios.forEach(radio =>
+          radio.addEventListener("change", e => {
+            const mode = e.target.value;
+            if (mode === "both") {
+              video.style.opacity = "1";
+              canvas.style.display = "block";
+            } else if (mode === "video") {
+              video.style.opacity = "1";
+              canvas.style.display = "none";
+            } else {
+              video.style.opacity = "0.1";
+              canvas.style.display = "block";
+            }
+          })
+        );
+        const dbg = document.getElementById("debug-mode-toggle");
+        if (dbg)
+          dbg.addEventListener("change", () => {
+            if (analyzer) analyzer.setDebugMode(dbg.checked);
+          });
+      }
+
+      function initApp() {
+        applyMode(movementSelect.value || "swing");
+        setupEventListeners();
+        canvas.width = 640;
+        canvas.height = 480;
+        updateStatus(
+          "Ready. Pick a movement, then upload a video or start the camera."
+        );
+      }
+      document.addEventListener("DOMContentLoaded", initApp);
+    </script>
   </body>
 </html>

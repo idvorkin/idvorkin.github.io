@@ -21,7 +21,7 @@ Install required certificates:
 - https://docs.aws.amazon.com/redshift/latest/mgmt/connecting-ssl-support.html
 - https://stackoverflow.com/questions/28228241/how-to-connect-to-a-remote-postgresql-database-with-python
 
-Load sqlalchamey
+Load sqlalchemy
 
     import sqlalchemy as sa
     import sqlalchemy.orm

@@ -1,0 +1,469 @@
+{% comment %} Belief-equation builder (interactive). The reader picks or types
+an external behavior, picks the link (cause-effect "makes me feel" or complex
+equivalence "means") and picks or types an internal state; the belief sentence
+assembles live with each part color-coded the same way as the explorer (external
+behavior = evidence blue, link = amber, internal state = conclusion rust). "Run
+the patterns on it" drops the sentence into the LLM prompt
+(_includes/sleight-of-mouth-prompt.html) when that is on the page. Seeds:
+equation_seeds in _data/sleight_of_mouth.yml. Without JavaScript it falls back
+to the seed sentences. Self-contained, no libraries, no network. Used by:
+_d/2016-3-12-sleight-of-mouth.md {% endcomment %}
+<style>
+  .somq {
+    --somq-ink: #1b1f24;
+    --somq-soft: #5a636e;
+    --somq-faint: #9aa1aa;
+    --somq-rule: #d8dbe0;
+    --somq-paper: #ffffff;
+    --somq-panel: #f5f6f8;
+    --somq-evidence: #2f6f8f;
+    --somq-evidence-bg: #e8f1f5;
+    --somq-link: #a8741a;
+    --somq-link-bg: #f8f0e0;
+    --somq-conclusion: #b8562f;
+    --somq-conclusion-bg: #f8ebe5;
+    box-sizing: border-box;
+    max-width: 760px;
+    margin: 1.5em auto;
+    padding: 1rem 1.1rem 1.1rem;
+    background: var(--somq-paper);
+    border: 1px solid var(--somq-rule);
+    border-radius: 4px;
+    color: var(--somq-ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      sans-serif;
+    line-height: 1.4;
+  }
+  .somq * {
+    box-sizing: border-box;
+  }
+  @media (prefers-color-scheme: dark) {
+    .somq {
+      --somq-ink: #e6e8eb;
+      --somq-soft: #aab2bc;
+      --somq-faint: #6b7480;
+      --somq-rule: #3a4049;
+      --somq-paper: #1e2228;
+      --somq-panel: #272c33;
+      --somq-evidence: #7fb7d6;
+      --somq-evidence-bg: #22333d;
+      --somq-link: #e0b35a;
+      --somq-link-bg: #3a3020;
+      --somq-conclusion: #e8926c;
+      --somq-conclusion-bg: #3d2a22;
+    }
+  }
+  [data-bs-theme="dark"] .somq {
+    --somq-ink: #e6e8eb;
+    --somq-soft: #aab2bc;
+    --somq-faint: #6b7480;
+    --somq-rule: #3a4049;
+    --somq-paper: #1e2228;
+    --somq-panel: #272c33;
+    --somq-evidence: #7fb7d6;
+    --somq-evidence-bg: #22333d;
+    --somq-link: #e0b35a;
+    --somq-link-bg: #3a3020;
+    --somq-conclusion: #e8926c;
+    --somq-conclusion-bg: #3d2a22;
+  }
+  .somq-title {
+    margin: 0 0 0.7rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+  .somq-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) auto minmax(0, 1.4fr);
+    gap: 0.6rem;
+    align-items: start;
+  }
+  .somq-slot {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    min-width: 0;
+    border-top: 4px solid var(--somq-p);
+    background: var(--somq-p-bg);
+    border-radius: 0 0 6px 6px;
+    padding: 0.45rem 0.55rem 0.55rem;
+  }
+  .somq-slot--evidence {
+    --somq-p: var(--somq-evidence);
+    --somq-p-bg: var(--somq-evidence-bg);
+  }
+  .somq-slot--link {
+    --somq-p: var(--somq-link);
+    --somq-p-bg: var(--somq-link-bg);
+  }
+  .somq-slot--conclusion {
+    --somq-p: var(--somq-conclusion);
+    --somq-p-bg: var(--somq-conclusion-bg);
+  }
+  .somq-cap {
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--somq-p);
+  }
+  .somq-cap small {
+    display: block;
+    font-size: 0.66rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--somq-soft);
+  }
+  .somq select,
+  .somq input {
+    width: 100%;
+    min-width: 0;
+    font: inherit;
+    font-size: 0.85rem;
+    border: 1px solid var(--somq-rule);
+    background: var(--somq-paper);
+    color: var(--somq-ink);
+    border-radius: 4px;
+    padding: 0.3rem 0.4rem;
+  }
+  .somq input[hidden] {
+    display: none;
+  }
+  .somq-pills {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .somq button {
+    font: inherit;
+    cursor: pointer;
+  }
+  /* .somq .somq-pill outranks the .somq button { font: inherit } reset. */
+  .somq .somq-pill {
+    border: 1px solid var(--somq-rule);
+    background: var(--somq-paper);
+    color: var(--somq-ink);
+    border-radius: 999px;
+    padding: 0.3rem 0.7rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+  .somq-pill[aria-checked="true"] {
+    background: var(--somq-link);
+    border-color: var(--somq-link);
+    color: #fff;
+    font-weight: 600;
+  }
+  .somq-pill small {
+    display: block;
+    font-size: 0.64rem;
+    font-weight: 400;
+    opacity: 0.85;
+  }
+  .somq-out {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem 0.45rem;
+    margin: 0.9rem 0 0.4rem;
+    padding: 0.7rem 0.6rem;
+    border: 2px dashed var(--somq-faint);
+    border-radius: 6px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  .somq-out .somq-part {
+    border-radius: 4px;
+    padding: 0.05rem 0.35rem;
+    box-shadow: inset 0 -3px 0 var(--somq-p);
+    color: var(--somq-p);
+    background: var(--somq-p-bg);
+  }
+  .somq-part--evidence {
+    --somq-p: var(--somq-evidence);
+    --somq-p-bg: var(--somq-evidence-bg);
+  }
+  .somq-part--link {
+    --somq-p: var(--somq-link);
+    --somq-p-bg: var(--somq-link-bg);
+  }
+  .somq-part--conclusion {
+    --somq-p: var(--somq-conclusion);
+    --somq-p-bg: var(--somq-conclusion-bg);
+  }
+  .somq-note {
+    margin: 0;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--somq-soft);
+  }
+  .somq-note b {
+    color: var(--somq-link);
+  }
+  .somq-go {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 0.7rem 0 0;
+    font-size: 0.82rem;
+    color: var(--somq-soft);
+  }
+  .somq .somq-send {
+    border: 1px solid var(--somq-ink);
+    background: var(--somq-ink);
+    color: var(--somq-paper);
+    border-radius: 4px;
+    padding: 0.35rem 0.9rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+  .somq-send[hidden] {
+    display: none;
+  }
+  .somq-fallback {
+    margin: 0;
+    padding-left: 1.2rem;
+    font-size: 0.9rem;
+  }
+  .somq.is-live .somq-fallback,
+  .somq:not(.is-live) .somq-live {
+    display: none;
+  }
+  .somq select:focus-visible,
+  .somq input:focus-visible,
+  .somq-pill:focus-visible,
+  .somq-send:focus-visible {
+    outline: 2px solid var(--somq-ink);
+    outline-offset: 2px;
+  }
+  @media (max-width: 640px) {
+    .somq {
+      padding: 0.8rem 0.8rem 0.9rem;
+    }
+    .somq-row {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .somq-pills {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .somq-out {
+      font-size: 1.02rem;
+    }
+  }
+</style>
+<figure class="somq" aria-label="Build a belief equation">
+  <ol class="somq-fallback">
+    {%- for s in site.data.sleight_of_mouth.equation_seeds %}
+    <li>
+      <b>{{ s.external_behavior }}</b>
+      {% if s.link == "means" %}means{% else %}makes me feel{% endif %}
+      <b>{{ s.internal_state }}</b>
+    </li>
+    {%- endfor %}
+  </ol>
+  <div class="somq-live">
+    <p class="somq-title">Build one: pick each part, or type your own</p>
+    <div class="somq-row">
+      <div class="somq-slot somq-slot--evidence">
+        <label class="somq-cap" for="somq-eb">
+          External behavior <small>what happened, on video</small>
+        </label>
+        <select id="somq-eb" class="somq-sel" data-part="evidence"></select>
+        <input
+          class="somq-in"
+          data-part="evidence"
+          type="text"
+          autocomplete="off"
+          placeholder="type what happened"
+          aria-label="External behavior, in your own words"
+          hidden
+        />
+      </div>
+      <div class="somq-slot somq-slot--link">
+        <span class="somq-cap" id="somq-link-cap">
+          Link <small>two flavors</small>
+        </span>
+        <div
+          class="somq-pills"
+          role="radiogroup"
+          aria-labelledby="somq-link-cap"
+        >
+          <button
+            type="button"
+            class="somq-pill"
+            role="radio"
+            data-link="feel"
+            aria-checked="false"
+          >
+            makes me feel <small>cause-effect</small>
+          </button>
+          <button
+            type="button"
+            class="somq-pill"
+            role="radio"
+            data-link="means"
+            aria-checked="false"
+          >
+            means <small>complex equivalence</small>
+          </button>
+        </div>
+      </div>
+      <div class="somq-slot somq-slot--conclusion">
+        <label class="somq-cap" for="somq-is">
+          Internal state <small>the feeling, judgment or meaning</small>
+        </label>
+        <select id="somq-is" class="somq-sel" data-part="conclusion"></select>
+        <input
+          class="somq-in"
+          data-part="conclusion"
+          type="text"
+          autocomplete="off"
+          placeholder="type the meaning you attach"
+          aria-label="Internal state, in your own words"
+          hidden
+        />
+      </div>
+    </div>
+    <p class="somq-out" aria-live="polite">
+      <span class="somq-part somq-part--evidence"></span>
+      <span class="somq-part somq-part--link"></span>
+      <span class="somq-part somq-part--conclusion"></span>
+    </p>
+    <p class="somq-note"></p>
+    <p class="somq-go">
+      <button type="button" class="somq-send" hidden>
+        Run the patterns on it &uarr;
+      </button>
+      <span class="somq-status" aria-live="polite"></span>
+    </p>
+  </div>
+  <script type="application/json" class="somq-data">
+    {{ site.data.sleight_of_mouth.equation_seeds | jsonify }}
+  </script>
+</figure>
+<script>
+  (function() {
+    document.querySelectorAll(".somq:not(.is-live)").forEach(function(root) {
+      var seeds = JSON.parse(root.querySelector(".somq-data").textContent);
+      var links = {
+        feel: {
+          word: "makes me feel",
+          kind: "Cause-effect",
+          note: "the behavior produces the state.",
+        },
+        means: {
+          word: "means",
+          kind: "Complex equivalence",
+          note: "the behavior is taken to be the meaning.",
+        },
+      };
+      var state = { evidence: 0, link: seeds[0].link, conclusion: 0 };
+      var CUSTOM = "custom";
+      function el(tag, cls, text) {
+        var e = document.createElement(tag);
+        if (cls) e.className = cls;
+        if (text != null) e.textContent = text;
+        return e;
+      }
+      var sels = {};
+      var inputs = {};
+      ["evidence", "conclusion"].forEach(function(part) {
+        var key = part === "evidence" ? "external_behavior" : "internal_state";
+        var sel = root.querySelector('.somq-sel[data-part="' + part + '"]');
+        var inp = root.querySelector('.somq-in[data-part="' + part + '"]');
+        sels[part] = sel;
+        inputs[part] = inp;
+        seeds.forEach(function(s, i) {
+          var o = el("option", null, s[key]);
+          o.value = i;
+          sel.appendChild(o);
+        });
+        var o = el("option", null, "Something else…");
+        o.value = CUSTOM;
+        sel.appendChild(o);
+        sel.addEventListener("change", function() {
+          state[part] = sel.value === CUSTOM ? CUSTOM : +sel.value;
+          // Picking a seed on one side loads the whole example, so the
+          // sentence always starts out reading as one belief.
+          if (state[part] !== CUSTOM) {
+            var other = part === "evidence" ? "conclusion" : "evidence";
+            if (state[other] !== CUSTOM) {
+              state[other] = state[part];
+              sels[other].value = state[part];
+            }
+            state.link = seeds[state[part]].link;
+          }
+          inp.hidden = state[part] !== CUSTOM;
+          if (!inp.hidden) inp.focus();
+          render();
+        });
+        inp.addEventListener("input", render);
+      });
+      var pills = root.querySelectorAll(".somq-pill");
+      pills.forEach(function(b) {
+        b.addEventListener("click", function() {
+          state.link = b.dataset.link;
+          render();
+        });
+      });
+      function text(part) {
+        if (state[part] === CUSTOM) return inputs[part].value.trim();
+        var key = part === "evidence" ? "external_behavior" : "internal_state";
+        return seeds[state[part]][key];
+      }
+      var out = root.querySelector(".somq-out");
+      var note = root.querySelector(".somq-note");
+      var send = root.querySelector(".somq-send");
+      var status = root.querySelector(".somq-status");
+      // The LLM prompt on the same page takes the built belief.
+      var promptInput = document.querySelector(".somp-input");
+      if (promptInput) send.hidden = false;
+      function sentence() {
+        var eb = text("evidence") || "[what happened]";
+        var is = text("conclusion") || "[what it means]";
+        return eb + " " + links[state.link].word + " " + is;
+      }
+      function render() {
+        pills.forEach(function(b) {
+          b.setAttribute(
+            "aria-checked",
+            b.dataset.link === state.link ? "true" : "false"
+          );
+        });
+        out.querySelector(".somq-part--evidence").textContent =
+          text("evidence") || "[what happened]";
+        out.querySelector(".somq-part--link").textContent =
+          links[state.link].word;
+        out.querySelector(".somq-part--conclusion").textContent =
+          text("conclusion") || "[what it means]";
+        var l = links[state.link];
+        note.innerHTML = "";
+        note.appendChild(el("b", null, l.kind + ": "));
+        note.appendChild(
+          document.createTextNode(
+            l.note +
+              " Loosen the behavior, the link or the state and the belief loosens with it."
+          )
+        );
+        status.textContent = "";
+      }
+      send.addEventListener("click", function() {
+        var s = sentence();
+        promptInput.value = s.charAt(0).toUpperCase() + s.slice(1) + ".";
+        promptInput.dispatchEvent(new Event("input", { bubbles: true }));
+        status.textContent = "Dropped into the LLM prompt above.";
+        promptInput.scrollIntoView({ behavior: "smooth", block: "center" });
+      });
+      root.classList.add("is-live");
+      sels.evidence.value = 0;
+      sels.conclusion.value = 0;
+      render();
+    });
+  })();
+</script>

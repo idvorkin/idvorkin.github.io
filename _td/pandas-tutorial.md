@@ -114,7 +114,7 @@ If you use print to show a dataframe, it'll look ugly, use display instead.
 
 Tidy data is [ideal for analysis](https://vita.had.co.nz/papers/tidy-data.pdf). The data definitions are confusing, so I'll provide my own:
 
-- **Dimension (Dim/Pivot)** - A caregorical property of a entity
+- **Dimension (Dim/Pivot)** - A categorical property of an entity
 - **Entity (Independent Variable)** - Set of **dimensions** that uniquely identify the facts
 - **Fact (Measure/Dependent Variable)** - A **fact**/measure for an entity.
 
@@ -128,12 +128,12 @@ This is a **wide data set**, where a row is the **Set of Dimensions (Entity), an
 
 - Easiest for humans to digest
 - An Excel Pivot Table
-- The best shape for panadas
+- The best shape for pandas
 - (From Narrow: pivot, or multi group and un-stack)
 
-Another form of tidy data, often how raw data looks is called narrow data,in this case a row is a **Set of Dimensions (Entity), A column for Fact Name, A column for Fact Value**. This is
+Another form of tidy data, often how raw data looks is called narrow data, in this case a row is a **Set of Dimensions (Entity), A column for Fact Name, A column for Fact Value**. This is
 
-- Hard for humans to grock
+- Hard for humans to grok
 - The best shape for altair
 - (From wide: Use melt to get from wide to narrow)
 
@@ -161,7 +161,6 @@ Groupby is great, but it's a bugger to name aggregations, until [pandas 0.25 add
 ### Pandas performance
 
 - [Pandas Performance Tutorial](https://pandas.pydata.org/pandas-docs/stable/user_guide/enhancingperf.html)
-
   - Numba - faster apply operations (swifter includes it)
   - df.eval - faster df operations
   - pandas.read_csv(), usecols to limit columns loaded
@@ -187,9 +186,9 @@ You'll also often need to unstack
 
 Learning plotting libraries can be a pain, dataviz is probably as important as data analysis, both because the viz will tell the story, but also because the viz will make analysis so much easier.
 
-I spent a tonne of time working with matplotlib, but it's so non-obvious to write, and I always need to look up its non onbvious syntax, and spend hours trying to figure out whatever quirk I'm getting bitten by:
+I spent a tonne of time working with matplotlib, but it's so non-obvious to write, and I always need to look up its non obvious syntax, and spend hours trying to figure out whatever quirk I'm getting bitten by:
 
-- [Anatomy of matploblib](https://github.com/matplotlib/AnatomyOfMatplotlib)
+- [Anatomy of matplotlib](https://github.com/matplotlib/AnatomyOfMatplotlib)
 - [Matplotlib by J.R. Johansson](https://github.com/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb)
 
 Gotchyas:

@@ -56,9 +56,9 @@ version: 1.0.0
 
 ### Content Structure
 
-1. **Respect backlinks.json**
-   - Update `backlinks.json` when adding new content
-   - Run `just update-backlinks` after content changes
+1. **`back-links.json` is CI-generated — do not commit it**
+   - Built fresh in `.github/workflows/pages.yml` on every deploy; not tracked in git
+   - `just update-backlinks` regenerates a local copy for preview/querying only — never `git add` the result
 
 2. **Keep UI components isolated**
    - Ensure components handle their own lifecycle

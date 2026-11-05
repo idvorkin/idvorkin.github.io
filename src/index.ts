@@ -21,8 +21,12 @@ import {
 // Import random-prompter functionality
 import { TreeNode, add_random_prompts, add_sunburst, add_sunburst_from_dom } from "./random-prompter";
 
+// Import random-visit re-roll dice
+import { goToRandomPage, topicFromSearch } from "./random-dice";
 // Import recent posts functionality
 import { initRecentAllPosts } from "./recent";
+// Import deep-link scroll correction
+import { installHashScrollCorrection } from "./scroll-to-hash";
 // Import search functionality
 import {
   CreateAutoComplete,
@@ -63,6 +67,13 @@ declare let $: {
 declare let Mousetrap: {
   bind: (key: string, callback: () => void) => void;
 };
+
+// Arm this before anything else: pages inject content above the fold after the
+// browser has already jumped to the URL's #fragment, which leaves deep links
+// parked hundreds of pixels past their heading. Runs at module scope (this
+// bundle is a deferred module, so the DOM is parsed) rather than inside
+// $(document).ready, to catch the drift as early as possible.
+installHashScrollCorrection();
 
 // Main initialization
 $(document).ready(() => {
@@ -132,6 +143,8 @@ export {
   defer,
   get_link_info,
   get_random_page_url,
+  goToRandomPage,
+  topicFromSearch,
   // Export the interface types
   type IURLInfo,
   type IURLInfoMap,

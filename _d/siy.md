@@ -74,7 +74,7 @@ _Breathing as if your life depends on it._
 - Meditation trains Attention(ability to concentrate), Meta-Attention(notice not paying attention).
   - Like bike balancing. Constantly re-balancing so seems like rider always balanced.
 - Meditation is like exercise
-  - Work out, tough work out, much better then no workout.
+  - Work out, tough work out, much better than no workout.
   - More you practice stronger you become.
   - After a while, you just feel better and not sure why.
 - Intention - Intention == Affirmation == mental habit == good.
@@ -128,7 +128,7 @@ _Mindfulness without butt on cushion_
 - Sustaining your practice
   - Like exercise, only hard for first few months. Tips
     1. Have a buddy ask: Am I doing it? Why is my life better? How did this conversation go?
-    1. Do less then you can
+    1. Do less than you can
     1. At a minimum, do a breathe/1 minute/2 minute.
   - Keep the difficulty at just below what you can achieve - think of how video games work.
 - Lightness and Joy in Mediation
@@ -160,13 +160,13 @@ _All natural organic Self-Confidence_
 - Self Awareness - The basis of EI - Your internal state, preferences, resources, and intuitions.
   - Emotional Awareness
     - Resolution - See subtle differences between emotions.
-    - Vividness - Turn up the contrast, so we can see easily see the additional resolution.
+    - Vividness - Turn up the contrast, so we can easily see the additional resolution.
     - (Am Happy -> Feel Happy -> Experience Happy in my Body)
     - The moment you observe an emotion, it's already less powerful.
   - Accurate Self Assessment - Strengths and Weakness
     - Essential for managers.
     - We're not perfect, but how can we succeed despite these gaps.
-  - Self Confidence - Ego as big as Mt Fugi, or as small as grain of sand as needed.
+  - Self Confidence - Ego as big as Mt Fuji, or as small as grain of sand as needed.
     - Ego gets in the way of listening, need to let it go to be open.
     - Ego required when doing hard tasks like leading, need it to grow to take on the challenge
     - You can admit weakness, without self-blaming
@@ -184,7 +184,7 @@ _All natural organic Self-Confidence_
   - General
     - Every time you scan, you build mental habit of polling your body.
     - Attention, not sensation matters.
-    - SIY Body scan less intense then MBSR body scan.
+    - SIY Body scan less intense than MBSR body scan.
   - 1m Warm up mindful breathing
   - 6m Scan Body 1 m per region, 6m total.
     - Head - top, ears, back
@@ -253,7 +253,7 @@ _Riding your emotions like a horse_
   - More time you proactive long form, better you get in short form.
 - Identify triggers:
   - Body - shallow breathing, rapid heartbeat, sick to stomach.
-  - Emotions - Amydala hijack, fight or flight, frozen
+  - Emotions - Amygdala hijack, fight or flight, frozen
   - Thoughts - Victim, blame, judgment, trouble focusing, outrage
 - **S**i**B**erinan **N**orthern **R**ail**R**oad:
   - Stop, Breathe, Notice, Reflect, Respond.
@@ -261,7 +261,7 @@ _Riding your emotions like a horse_
   - **Notice** to realize and calm the is a physiological response,
     - I am angry -> I feel angry -> my body is experiencing anger.
   - **Reflect** to calm the psychological response, and engage cognitive process [cognitive reframe].
-    - Every one wants to be happy, and act in a rationale way.
+    - Every one wants to be happy, and act in a rational way.
   - **Respond** think of most helpful/appropriate response you can think of.
     - Triggering the other person, will make situation escalate. Be calm.
     - People will feel bad on own if needed.
@@ -328,7 +328,7 @@ _Making Profits, Rowing Across Oceans, and Changing The World_
 - Resilience - ability to remove obstacles, and return to baseline when troubles.
   - Inner Calm - Foundation of optimism and resilience
   - Emotional Resilience - Success/Failure are emotional experiences, build this, and can always celebrate progress.
-  - Cognitive Resiliece - How to explain setbacks to ourselves and others, to develop optimism.
+  - Cognitive Resilience - How to explain setbacks to ourselves and others, to develop optimism.
   - **Leaders provide this service to their organization and teams**
 - Inner calm
   - Day to day things go wrong, but have a deep well of calmness, and can always return to it.
@@ -357,7 +357,7 @@ _Making Profits, Rowing Across Oceans, and Changing The World_
   - Imagine you get 2$ for every 1$ lost. Objective HUGE win, but subjective feel like a loser.
   - **Realize you have a huge negative bias.**
 - Reducing cognitive negative bias -> Becoming an optimist
-  - Don't worry you'll overdue this, your negative bias so string, you'll be lucky if you get to objective.
+  - Don't worry you'll overdo this, your negative bias so strong, you'll be lucky if you get to objective.
   - Focus on positive - gratefulness journal.
   - Become objective and transform thinking on Success/Failure:
     - How does your body feel?
@@ -404,7 +404,7 @@ _Empathy and the Monkey business of brain tangos_
 - Strengthening empathic listening:
   1. Mindfulness: makes us more perceptive
   1. Kindness: lets us listen better to feeling
-  1. Curiosity: wonder at what people might be experiences
+  1. Curiosity: wonder at what people might be experiencing
   1. Practice: Causes more of mindfulness, kindness, curiosity.
 - Informal practice of empathic listening
   - Harder: people don't like to hear 'I hear you feeling ...'
@@ -469,7 +469,7 @@ _Being Effective and Loved at the same time_
   - 2M pause
   - Visualize each in breath bringing in goodness, it multiplying 10x in heart, breath out and white light expands
   - 2m pause
-  - Visualize goodness in those we know. Visualize goodness radiating from their bodies, when you breathe in, bring it int o your heart.
+  - Visualize goodness in those we know. Visualize goodness radiating from their bodies, when you breathe in, bring it into your heart.
   - 2m pause
   - Visualize goodness in everyone on the planet, breathe in all the goodness into your heart.
   - 2m pause
@@ -482,7 +482,7 @@ _Being Effective and Loved at the same time_
 - Compassion Training For the brave - Tonglen:
   - Advanced practice, come back when you've mastered more exercises.
   - Like multiplying goodness, but you breathe in suffering, transform it to suffering, and radiate it out.
-  - Dali Lama main practice
+  - Dalai Lama main practice
   - Trains you that you can transform suffering into goodness.
   - Powerful since teaches you you can avoid aversion because you can remove suffering.
 - Influencing with goodness
@@ -496,8 +496,8 @@ _Being Effective and Loved at the same time_
     - Predicts longevity
     - Threats triggered very easily
     - Feel good about our status by compare ourselves to former self improving.
-  - **Certainty:** Do I know what what's going on.
-    - **Build:** removing ambiguity, and giving people certainly on things that matter.
+  - **Certainty:** Do I know what's going on.
+    - **Build:** removing ambiguity, and giving people certainty on things that matter.
     - Uncertainty causes rumination, and can be debilitating
     - Worried about your job, can't do anything cuz sucks up all brain power.
   - **Autonomy:** Do I have control over the situation?
@@ -509,14 +509,14 @@ _Being Effective and Loved at the same time_
   - **Fairness:**
     - **Build:** making clear that you're being fair.
     - Voluntarily injure themselves to fight injustice.
-    - Doesn't make sense but happens - see ultimatim experiment.
+    - Doesn't make sense but happens - see ultimatum experiment.
     - Never underestimate sense of fairness, causes people self sacrifice.
 - Expand your influence
   - Know you have influence
   - Build confidence (removes ego) in lets you do this.
   - Understand people and help them succeed -
 - How goodness can change a man's life in 10 minutes
-  - Paul eckmen, 10 minutes holding dali lama's hand experienced goodness, stopped being angry, and decided he wanted to change the world.
+  - Paul eckmen, 10 minutes holding dalai lama's hand experienced goodness, stopped being angry, and decided he wanted to change the world.
   - Goodness extremely powerful.
 - Communicate with insight
   - Empathy not enough for conversation, also need insight into what is going on.
@@ -545,10 +545,10 @@ _Being Effective and Loved at the same time_
     - Wise boss opens with I'm confident with your work. But this thing went wrong, lets talk about it.
 - Prepare for difficult conversation
   - Talk to friend or journal
-  - 3 conversations from your point of you, including identity (competent/good/love worthy).
-  - 3 conversations from their point of you, including identity (competent/good/love worthy).
+  - 3 conversations from your point of view, including identity (competent/good/love worthy).
+  - 3 conversations from their point of view, including identity (competent/good/love worthy).
 - Mindful E-mailing + Practice
-  - In person get lots of emotional queues non-verbally.
+  - In person get lots of emotional cues non-verbally.
   - Worse, lack of information makes us assume the worst AND believe it to be true.
   - Remember human on other end, just like me. Will make up missing information.
 - Practice Difficult E-mail.
@@ -597,15 +597,15 @@ FP: INVITING AND ATTENDING TO JOY - The Joyful Mind Rocks at Meditation
 
 ### Working with suffering
 
-When suffering, you need to get to the cognative reframes, but first you need to be able to focus clearly, this requires calming the mind and experiences the pain (and first joy) to handle the reframes.
+When suffering, you need to get to the cognitive reframes, but first you need to be able to focus clearly, this requires calming the mind and experiences the pain (and first joy) to handle the reframes.
 
 Step 1: **Calm the mind** Need to be calm enough to observe and experience.
 
 Step 2A: **Affective - experience joy**
 
 - Can always find joy
-- Like an oasis in the dessert
-- Some days harder then others
+- Like an oasis in the desert
+- Some days harder than others
 - Some days impossible, just need to wait
 - Train in non
 - pain makes it easier, like gym.
@@ -616,7 +616,7 @@ Step 2B: **Affective - experience pain**
 - Tension
 - Pit in stomach
 - Heart pounding
-- Nausia
+- Nausea
 - Be willing to experience the pain in the body
 
 Approach:
@@ -624,7 +624,7 @@ Approach:
 - Realize unpleasant experiences in the body
 - Realize root cause of suffering is aversion
 - Apply loving kindness to the aversion and the self
-- Apply equinimity - be calm watching the emotions
+- Apply equanimity - be calm watching the emotions
 - These emotions are not me
 - These thoughts are not me
 - Just bodily experiences
@@ -642,7 +642,7 @@ Step 3: **Cognition - Use your cognition to resolve**
   - See through eyes of best friend
 - Something bad has/will happen - test if catastrophizing. We make up stories
 - Gain perspective - more time, more dimensions
-- Realize what a mircle everything is - earth/civilizatoin/body/etc
+- Realize what a miracle everything is - earth/civilization/body/etc
 - With humor - no humor; no perspective
 
 **Failure comes pre-installed**

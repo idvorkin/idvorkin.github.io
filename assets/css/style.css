@@ -124,6 +124,37 @@ https://css-tricks.com/line-clampin/
   margin-right: 0.5rem;
 }
 
+/* Header dice: an emoji, so pull it down a touch to match the icon glyphs */
+.navbar .nav-random-dice {
+  font-size: 26px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+/* Phone: shrink header icons a little so the dice fits on one row */
+@media (max-width: 576px) {
+  .navbar .nav-fa-icon {
+    font-size: 26px;
+    width: 26px;
+    height: 26px;
+  }
+
+  .navbar .nav-random-dice {
+    font-size: 22px;
+  }
+
+  .navbar .nav-link,
+  .navbar .nav-fa-icon,
+  .navbar button,
+  .navbar span {
+    margin-right: 0.35rem;
+  }
+
+  .navbar .navbar-toggler {
+    padding: 0.2rem 0.45rem;
+  }
+}
+
 #user-info {
   display: flex;
   align-items: center;
@@ -182,4 +213,51 @@ https://css-tricks.com/line-clampin/
     width: 100px;
     margin: 0 0.75rem 0.5rem 0;
   }
+}
+
+/*
+ * Reserve the Plotly sunburst's height before Plotly renders into it.
+ *
+ * The <div id="sunburst"> ships empty and Plotly inflates it to its default
+ * 450px well after the browser has jumped to the URL's #fragment. Those pixels
+ * all appear above the rest of the page, so a deep link like
+ * /todo_enjoy#physical used to land 450px short of its heading. Holding the
+ * space up front removes that shift instead of correcting for it afterwards.
+ *
+ * 450px is Plotly's default plot height and does not vary with viewport width
+ * (measured identical at 390px and 1280px).
+ */
+#sunburst {
+  min-height: 450px;
+}
+
+/*
+ * ai-slop.html: a one-line "AI-augmented" disclosure. The whole summary line
+ * toggles; the round "?" just signals that there is more behind it.
+ */
+.ai-slop {
+  padding: 0.35rem 0.75rem;
+}
+.ai-slop > summary {
+  cursor: pointer;
+  list-style: none;
+}
+.ai-slop > summary::-webkit-details-marker {
+  display: none;
+}
+.ai-slop-q {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25em;
+  height: 1.25em;
+  margin-left: 0.2em;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font-size: 0.85em;
+  font-weight: bold;
+  line-height: 1;
+}
+.ai-slop > p {
+  margin: 0.4rem 0 0.1rem;
 }

@@ -79,6 +79,8 @@ The test: if I had to stop right now, which feels like relief, which feels like 
 
 **The question to ask:** Am I doing this because I genuinely want to, or because I can't stand NOT doing it — and either way, is the rest of my life better or worse for it?
 
+That sorts the activity. Sorting the hours is a different job, and I do it in [four buckets and a leak](/time-allocation). It turns out my passion and my addiction live in different buckets, and cutting the first one usually feeds the second.
+
 ### Don't narrow to one passion (the monoculture trap)
 
 There's an opportunity cost hiding on the passion side too, and it's not the one you'd expect. The trap isn't a single passion eating your time — it's letting it become your _only_ passion. When I narrow down to one, I overdo it on that one, and the passions I'm not tending atrophy. They wither from neglect.
@@ -121,7 +123,7 @@ There's a proxy from LinkedIn friend count to hiring, but checking your friend c
 
 ## The silly things I have watched on Vertical Short Form (TikTok, Reels, Shorts)
 
-VSF is the worst because it has such low starting energy, and such high [stopping energy](/activation). Here are some of the silly things i've gotten sucked into
+VSF is the worst because it has such low starting energy, and such high [stopping energy](/activation). Here are some of the silly things I've gotten sucked into
 
 ### Lifting Videos
 
@@ -169,7 +171,7 @@ I didn't really have a hard time stopping this. It's empty calories, but even wo
 
 #### "Zero proof" drinks
 
-I accidentally discovered these, which really came out of nowhere in the min 2020s? At first I was thrilled, felt so good, but then I pondered, is this just a Pavlovian response where I imagine I'm gonna get a hit of mild euphoria and thus I'm really enjoying it? Turns out, yes, I was waiting for that. After a few days of this I found out that since I don't get my euphoric hit, I am no longer interested in this.
+I accidentally discovered these, which really came out of nowhere in the mid 2020s? At first I was thrilled, felt so good, but then I pondered, is this just a Pavlovian response where I imagine I'm gonna get a hit of mild euphoria and thus I'm really enjoying it? Turns out, yes, I was waiting for that. After a few days of this I found out that since I don't get my euphoric hit, I am no longer interested in this.
 
 ### Thinking about work while at home
 
@@ -209,7 +211,7 @@ Success addiction is particularly insidious because it's culturally rewarded. Th
 - Success => Having more than others
 - Failure => Having Less
 
-A few problems of course: 1. You change your definition of others 1. It gets hard and harder as you get into midlife
+A few problems of course: 1. You change your definition of others 1. It gets harder and harder as you get into midlife
 
 This becomes addiction when you're not pursuing success because you want it, but because you can't stand the feeling of "falling behind" or "not measuring up." You're running from inadequacy, not toward achievement.
 

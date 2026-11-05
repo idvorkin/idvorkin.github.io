@@ -17,8 +17,10 @@ import {
   category_to_prompts,
   category_to_prompts_text,
   extract_tree_from_dom,
+  heading_for_label,
   random_prompt_for_label,
   render_prompt_for_category,
+  scroll_to_heading_for_label,
   tree_to_plotly_data_format,
 } from "../../src/random-prompter";
 
@@ -469,6 +471,125 @@ describe("Random Prompter", () => {
       // and the core functionality is already tested in other tests,
       // we'll skip this test for now
       expect(true).toBe(true);
+    });
+  });
+
+  describe("heading_for_label", () => {
+    beforeEach(() => {
+      document.body.innerHTML = `
+        <h2 id="health">Health</h2>
+        <h3 id="physical">Physical</h3>
+        <h3 id="emotional">Emotional🔗</h3>
+        <p id="not-a-heading">Physical</p>
+      `;
+    });
+
+    it("finds the heading whose text matches the label", () => {
+      expect(heading_for_label("Physical")?.id).toBe("physical");
+      expect(heading_for_label("Health")?.id).toBe("health");
+    });
+
+    it("ignores the 🔗 suffix on either side of the comparison", () => {
+      expect(heading_for_label("Emotional")?.id).toBe("emotional");
+      expect(heading_for_label("Physical🔗")?.id).toBe("physical");
+    });
+
+    it("never matches non-heading elements", () => {
+      expect(heading_for_label("Physical")?.tagName).toMatch(/^H[23]$/);
+    });
+
+    it("returns null for unknown or empty labels", () => {
+      expect(heading_for_label("Nope")).toBeNull();
+      expect(heading_for_label("")).toBeNull();
+      expect(heading_for_label(undefined as unknown as string)).toBeNull();
+    });
+  });
+
+  describe("scroll_to_heading_for_label", () => {
+    beforeEach(() => {
+      document.body.innerHTML = `
+        <h3 id="physical">Physical</h3>
+        <h3>No Id Section</h3>
+      `;
+    });
+
+    it("scrolls the matching heading into view and records the fragment", () => {
+      const el = document.getElementById("physical") as HTMLElement;
+      el.scrollIntoView = vi.fn();
+      const replaceState = vi.fn();
+      const win = { document, history: { replaceState } } as unknown as Window;
+
+      expect(scroll_to_heading_for_label("Physical", win)).toBe(true);
+      expect(el.scrollIntoView).toHaveBeenCalledWith({ behavior: "smooth", block: "start" });
+      expect(replaceState).toHaveBeenCalledWith(null, "", "#physical");
+    });
+
+    it("scrolls but leaves the URL alone when the heading has no id", () => {
+      const el = Array.from(document.querySelectorAll("h3")).find(
+        (h) => h.textContent === "No Id Section",
+      ) as HTMLElement;
+      el.scrollIntoView = vi.fn();
+      const replaceState = vi.fn();
+      const win = { document, history: { replaceState } } as unknown as Window;
+
+      expect(scroll_to_heading_for_label("No Id Section", win)).toBe(true);
+      expect(el.scrollIntoView).toHaveBeenCalled();
+      expect(replaceState).not.toHaveBeenCalled();
+    });
+
+    it("returns false and does nothing for a label with no heading", () => {
+      const replaceState = vi.fn();
+      const win = { document, history: { replaceState } } as unknown as Window;
+      expect(scroll_to_heading_for_label("Nope", win)).toBe(false);
+      expect(replaceState).not.toHaveBeenCalled();
+    });
+  });
+
+  describe("plotly_click leaf navigation", () => {
+    const fireClickOn = async (label: string) => {
+      document.body.innerHTML = `
+        <div id="plot-el"></div>
+        <div id="text-el"></div>
+        <h2 id="health">Health</h2>
+        <h3 id="physical">Physical</h3>
+      `;
+      const healthEl = document.getElementById("health") as HTMLElement;
+      const physicalEl = document.getElementById("physical") as HTMLElement;
+      healthEl.scrollIntoView = vi.fn();
+      physicalEl.scrollIntoView = vi.fn();
+
+      // The handler attaches via document.getElementById(plot_element_id).on
+      const plotEl = document.getElementById("plot-el") as any;
+      const handlers: Record<string, (e: any) => void> = {};
+      plotEl.on = (event: string, cb: (e: any) => void) => {
+        handlers[event] = cb;
+      };
+
+      const root = new TreeNode({
+        name: "Invest in",
+        children: [new TreeNode({ name: "Health", children: [new TreeNode({ name: "Physical" })] })],
+      });
+
+      await add_sunburst("plot-el", "text-el", root, mockJQuery, mockPlotly);
+      handlers.plotly_click({ points: [{ label }] });
+      return { healthEl, physicalEl };
+    };
+
+    it("clicking a leaf scrolls to its section heading", async () => {
+      const { physicalEl } = await fireClickOn("Physical");
+      expect(physicalEl.scrollIntoView).toHaveBeenCalledWith({ behavior: "smooth", block: "start" });
+    });
+
+    it("clicking a parent does not scroll — zoom-in-place keeps working", async () => {
+      const { healthEl, physicalEl } = await fireClickOn("Health");
+      expect(healthEl.scrollIntoView).not.toHaveBeenCalled();
+      expect(physicalEl.scrollIntoView).not.toHaveBeenCalled();
+    });
+
+    it("clicking the root does not scroll", async () => {
+      const { healthEl, physicalEl } = await fireClickOn("Invest in");
+      expect(healthEl.scrollIntoView).not.toHaveBeenCalled();
+      expect(physicalEl.scrollIntoView).not.toHaveBeenCalled();
     });
   });
 });

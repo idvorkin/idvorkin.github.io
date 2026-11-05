@@ -16,23 +16,25 @@ Want to plaster a huge smile on someone's face with 10 cents of material and 20 
 
 - [It's all about joy](#its-all-about-joy)
 - [How I started](#how-i-started)
-    - [The genesis at 5 am](#the-genesis-at-5-am)
-    - [First time at 2 pm](#first-time-at-2-pm)
+  - [The genesis at 5 am](#the-genesis-at-5-am)
+  - [First time at 2 pm](#first-time-at-2-pm)
 - [Amelia's Grade 3 holiday Party](#amelias-grade-3-holiday-party)
 - [The Selflessness of Balloon teachers](#the-selflessness-of-balloon-teachers)
 - [Psychology of Balloons](#psychology-of-balloons)
-    - [Grown ups want balloons too, but are afraid to ask](#grown-ups-want-balloons-too-but-are-afraid-to-ask)
-    - [Everyone is happy with their sword, until someone else gets a mega sword](#everyone-is-happy-with-their-sword-until-someone-else-gets-a-mega-sword)
-    - [We want to believe makes it so](#we-want-to-believe-makes-it-so)
-    - [Joy Hack, joy is contagious](#joy-hack-joy-is-contagious)
+  - [Grown ups want balloons too, but are afraid to ask](#grown-ups-want-balloons-too-but-are-afraid-to-ask)
+  - [Everyone is happy with their sword, until someone else gets a mega sword](#everyone-is-happy-with-their-sword-until-someone-else-gets-a-mega-sword)
+  - [We want to believe makes it so](#we-want-to-believe-makes-it-so)
+  - [Joy Hack, joy is contagious](#joy-hack-joy-is-contagious)
+  - [Balloons on the trail](#balloons-on-the-trail)
 - [Impact vs Effort](#impact-vs-effort)
 - [Ethical Considerations](#ethical-considerations)
-    - [Should I make guns?](#should-i-make-guns)
-    - [But boys want guns, and girls want mermaids.](#but-boys-want-guns-and-girls-want-mermaids)
+  - [Should I make guns?](#should-i-make-guns)
+  - [But boys want guns, and girls want mermaids](#but-boys-want-guns-and-girls-want-mermaids)
 - [Balloon inflators](#balloon-inflators)
-    - [Manual Slow: Qualtrix 160 - in my cargo pants](#manual-slow-qualtrix-160---in-my-cargo-pants)
-    - [Manual fast: Qualtrix 260 - in my travel backpack](#manual-fast-qualtrix-260---in-my-travel-backpack)
-    - [Portable Electric](#portable-electric)
+  - [Manual Slow: Qualtrix 160 - in my cargo pants](#manual-slow-qualtrix-160---in-my-cargo-pants)
+  - [Keep the pump at hand](#keep-the-pump-at-hand)
+  - [Manual fast: Qualtrix 260 - in my travel backpack](#manual-fast-qualtrix-260---in-my-travel-backpack)
+  - [Portable Electric](#portable-electric)
 - [Some of my creations](#some-of-my-creations)
 
 <!-- vim-markdown-toc-end -->
@@ -143,6 +145,20 @@ This thing is designed for Q160s, is annoyingly slow, like 20 pumps slow, but it
 
 {%include bp_table.html path="blog" is="balloon_thanks.jpg;balloon_pump_q160.jpg;" %}
 
+#### Keep the pump at hand
+
+<figure class="float-right-img" style="width:35%;">
+<img src="/images/balloon-pump-retractor-backpack.webp" alt="Green and pink hand balloon pump on a retractable reel, clipped with a red carabiner to a backpack shoulder strap" />
+<figcaption><small><em>Stage 4: the pump on a reel, clipped to my backpack strap.</em></small></figcaption>
+</figure>
+
+A pump you have to dig out is a pump you don't use. How my carry evolved:
+
+1. Start with a small pump in your pocket.
+2. Crazy-glue a carabiner to the pump so it clips onto anything.
+3. Newer pumps come with a clip built in, no glue needed.
+4. Put it on a retractable reel clipped to your backpack strap. It's always at hand, and it snaps back when you let go.
+
 #### Manual fast: Qualtrix 260 - in my travel backpack
 
 The standard balloon inflator, needs about 4 pumps, but it's big and doesn't fit in my pocket. I keep it in my travel bag so I can use it at the airports.
@@ -152,3 +168,10 @@ The standard balloon inflator, needs about 4 pumps, but it's big and doesn't fit
 Super fast, and great for being swarmed by kids at a playground. I keep one in the car, and one at home.
 
 ### Some of my creations
+
+{% include repo_image_float_right.html src="balloon-mermaid.webp" alt="Balloon mermaid with orange hair, peach arms and a curled green tail, held up at arm's length" %}
+{% include repo_image_float_right.html src="balloon-care-bear.webp" alt="Small purple balloon bear with a marker-drawn face and CARE BEAR written on its belly, held in one hand" %}
+
+Making the harder stuff is the fun part, it's how I build mastery. The catch: once someone sees one, everyone wants it, and with a line that's a mess. Everyone is [happy with their sword until someone else gets a mega sword](#everyone-is-happy-with-their-sword-until-someone-else-gets-a-mega-sword). So when there's a line, everyone gets a [10-second dog](#impact-vs-effort).
+
+<div style="clear:both"></div>

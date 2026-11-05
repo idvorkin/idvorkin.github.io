@@ -1,13 +1,15 @@
 ---
 layout: post
-title: "Spiritual Health: Purpose, Transcendence and Coherence"
+title: "Spiritual Health: Direction, Scale and Acceptance"
 permalink: /spiritual-health
 tags:
   - emotional-health
   - how igor ticks
 ---
 
-I'm not sure spiritual health is real. It might be a fancy label for "stuff that makes you feel less lost," or it might be the most important thing you're neglecting. This page is where I muddle through that question — building up frameworks, stress-testing them, and honestly considering whether it's all bullshit. So far, the best test I've found: **are you sustainably motivated in a way you'd be proud to see in your child?** If yes, you've probably cracked it — even if you can't explain how. If no, the word to focus on is _motivated_, not _meaning_. You can philosophize about meaning forever and never become more spiritually healthy. That's the biggest [trap](#the-meaning-traps). Motivation is the proof that meaning is present. When it's missing, the question is whether you're lacking purpose, transcendence, or coherence — and what to do about it.
+I'm not sure spiritual health is real. It might be a fancy label for "stuff that makes you feel less lost," or it might be the most important thing you're neglecting. This page is where I muddle through that question. So far, the best test I've found: **are you sustainably motivated in a way you'd be proud to see in your child?** If yes, you've probably cracked it — even if you can't explain how. If no, the word to focus on is _motivated_, not _meaning_. You can philosophize about meaning forever and never become more spiritually healthy. That's the biggest [trap](#the-meaning-traps). Motivation is the proof that meaning is present. When it's missing, one of three things is usually gone — a direction, a sense of scale, or acceptance of what you don't control — and each has practices that refill it.
+
+{% include ai-slop.html percent="40" %}
 
 **Breaking down that test.** Two parts:
 
@@ -15,859 +17,189 @@ I'm not sure spiritual health is real. It might be a fancy label for "stuff that
 
 2. **Proud to see in your child** — this is subjective, on purpose. Spiritual health isn't blood pressure; there's no objective reading. A drug addict is sustainably motivated, but you wouldn't want that for your kid. The "your child" framing works because you can lie to yourself about your own life, but it's much harder to lie about what you'd want for your kid.
 
-**Two challenges I'd love to better understand:**
-
-1. **Boolean to continuum** — the test above gives you a yes/no, but spiritual health is clearly a spectrum. How motivated? Across how many parts of your life? How resilient is that motivation when things get hard? I don't have a good way to measure degrees of spiritual health yet, beyond "more motivated = more healthy." Let's try to figure it out together.
-
-2. **How to build sustained motivation** — the test is diagnostic, not prescriptive. It tells you whether you're spiritually healthy, but not how to get there. The [frameworks below](#four-frameworks-on-spiritual-health) offer some paths (Frankl's self-transcendence, Brooks' getting small, rituals from Power of Full Engagement), but I haven't tied them back into a clear "if your motivation is low, do X" playbook.
-
-{% include ai-slop.html percent="85" %}
+The test is diagnostic, not prescriptive. For a long time this page stopped there: it could tell me I was stuck, but not what to do on a Tuesday. The rest of the page is my attempt at the "if your motivation is low, do X" playbook.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [What Do We Mean by "Meaning"?](#what-do-we-mean-by-meaning)
-  - [Three Dimensions of Meaning](#three-dimensions-of-meaning)
-  - [How Different Frameworks Define Meaning](#how-different-frameworks-define-meaning)
+- [What I'm not claiming](#what-im-not-claiming)
+- [Three ways it breaks](#three-ways-it-breaks)
+  - [Direction: you lack a north star](#direction-you-lack-a-north-star)
+  - [Scale: you're the center of the universe](#scale-youre-the-center-of-the-universe)
+  - [Acceptance: you want control, all you have is influence](#acceptance-you-want-control-all-you-have-is-influence)
+- [The practices](#the-practices)
 - [The Meaning Traps](#the-meaning-traps)
   - [Trap 1: The Philosophy Pit](#trap-1-the-philosophy-pit)
   - [Trap 2: The Motivation Test You Keep Failing](#trap-2-the-motivation-test-you-keep-failing)
   - [Trap 3: Meaning Without Motion](#trap-3-meaning-without-motion)
   - [Trap 4: Borrowed Meaning](#trap-4-borrowed-meaning)
-- [Common Spiritual Problems](#common-spiritual-problems)
-  - [Problem 1: "You Lack a North Star" (Purpose)](#problem-1-you-lack-a-north-star-purpose)
-  - [Problem 2: "You Are the Center of the Universe" (Transcendence)](#problem-2-you-are-the-center-of-the-universe-transcendence)
-  - [Problem 3: "You Want to Control, But All You Have Is Influence" (Coherence)](#problem-3-you-want-to-control-but-all-you-have-is-influence-coherence)
-- [Spiritual vs Emotional Health](#spiritual-vs-emotional-health)
-  - [The Endurance Analogy](#the-endurance-analogy)
-  - [The Game Analogy](#the-game-analogy)
-  - [What Breaks Without Each](#what-breaks-without-each)
-- [Four Frameworks on Spiritual Health](#four-frameworks-on-spiritual-health)
-  - [Viktor Frankl: Meaning Through Self-Transcendence](#viktor-frankl-meaning-through-self-transcendence)
-  - [Arthur Brooks: Transcendence Through Getting Small](#arthur-brooks-transcendence-through-getting-small)
-  - [My Four Healths: Purpose as Direction](#my-four-healths-purpose-as-direction)
-  - [Power of Full Engagement: The Bridge Between Both](#power-of-full-engagement-the-bridge-between-both)
-- [Are These Two Dimensions or One?](#are-these-two-dimensions-or-one)
-  - [The Case for Two Separate Dimensions](#the-case-for-two-separate-dimensions)
-  - [The Case for Developmental Stages](#the-case-for-developmental-stages)
-- [Practical Implications](#practical-implications)
-- [Getting Started: For Those Who've Never Done This](#getting-started-for-those-whove-never-done-this)
-  - [The Lifecycle Pattern: Why Faith Rises With Age](#the-lifecycle-pattern-why-faith-rises-with-age)
-  - [Why Spirituality Actually Helps](#why-spirituality-actually-helps)
-  - [Three Obstacles (And How to Overcome Them)](#three-obstacles-and-how-to-overcome-them)
-    - [Obstacle 1: The "None" in the Mirror](#obstacle-1-the-none-in-the-mirror)
-    - [Obstacle 2: Santa in the Church](#obstacle-2-santa-in-the-church)
-    - [Obstacle 3: The Tyranny of Time](#obstacle-3-the-tyranny-of-time)
-  - [How to Actually Start: Walk](#how-to-actually-start-walk)
-  - [The Core Practice: Go Within](#the-core-practice-go-within)
-  - [Start Now, Not Later](#start-now-not-later)
-- [What the heck is transcendence?](#what-the-heck-is-transcendence)
-  - [Which direction](#which-direction)
-  - [What Transcendence Feels Like](#what-transcendence-feels-like)
-  - [Transcendence (Perspective) and Purpose (Direction)](#transcendence-perspective-and-purpose-direction)
-  - [Why Transcendence Matters](#why-transcendence-matters)
-  - [The Paradox of Seeking Transcendence](#the-paradox-of-seeking-transcendence)
-- [How increase your purpose](#how-increase-your-purpose)
+  - [Trap 5: Spiritual Bypassing](#trap-5-spiritual-bypassing)
+- [The part I can't cobble alone](#the-part-i-cant-cobble-alone)
+- [Where the frameworks came from](#where-the-frameworks-came-from)
 - [What's the meaning of life?](#whats-the-meaning-of-life)
+- [The spiritual posts](#the-spiritual-posts)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-## What Do We Mean by "Meaning"?
+## What I'm not claiming
 
-Before diving into frameworks, we need to address a fundamental confusion: different experts use "meaning" to describe completely different aspects of spiritual health. This isn't just semantic nitpicking - these definitional differences explain why frameworks seem to conflict and why you might have one type of meaning while desperately lacking another.
+<span id="spiritual-vs-emotional-health"></span>
 
-### Three Dimensions of Meaning
+Nobody has a clean definition here, so I'll borrow the least-bad one I've found, from a 2009 palliative-care consensus ([Puchalski et al.](https://pubmed.ncbi.nlm.nih.gov/19807235/)): spirituality is "the aspect of humanity that refers to the way individuals seek and express meaning and purpose and the way they experience their connectedness to the moment, to self, to others, to nature, and to the significant or sacred." Notice what's not in there: God. I lost my belief a long time ago, and I still think this matters. What religion does for people, and why I miss parts of it, lives in [religion](/religion) and [Greek Orthodoxy](/greek-orthodox).
 
-Researchers have identified three distinct components that all get called "meaning" in different contexts:
+It's also not emotional health. Emotional health gets you through the sprint: someone cuts you off in traffic, your kid melts down, and you stay regulated. Spiritual health gets you through the marathon: two years into a hard career change, or visiting a parent with dementia week after week, and you keep going because you know why. Strength versus endurance. Or, put another way, emotional health is your athletic ability and spiritual health is the game you've decided to play. You need both, independently. The [four healths](/health) has the tests for each.
 
-**1. Meaning as Coherence (Comprehension)**
+## Three ways it breaks
 
-This is meaning as "making sense" - your life has a narrative structure that you can understand. But here's the paradox: **life contains randomness AND you still need to maximize your influence.**
+When the motivation goes, I find it's one of three things. Each has a feeling, a tell, and practices that refill it.
 
-The solution comes from the Serenity Prayer:
+### Direction: you lack a north star
+
+<span id="problem-1-you-lack-a-north-star-purpose"></span>
+
+**What it feels like:** Things are fine by external measures and you're going through the motions. The work gets done and feels hollow. You can't make value-aligned decisions because you're not sure what the values are.
+
+**The tell:** The successful person who got everything they wanted and wonders, "what's the point of all this?"
+
+**What refills it:** Getting clear on who you want to be — for me that's my [eulogy](/eulogy) — and reviewing it often enough that it shows up in the calendar. Loehr and Schwartz, in _The Power of Full Engagement_, give three ways to strengthen a purpose: move it from negative (not losing) to positive (thriving), from external (money) to internal, and from self to others. Ben Wallace's [The Happiest I've Ever Been](https://ben-mini.com/2026/the-happiest-ive-ever-been) is a case study of all three: he left a corporate career that looked great on paper and found coaching youth basketball made him happier than professional success ever did.
+
+### Scale: you're the center of the universe
+
+<span id="problem-2-you-are-the-center-of-the-universe-transcendence"></span>
+
+**What it feels like:** Life is a tedious sitcom and you're the main character. Every problem looms too large. This is what the literature calls transcendence and what [Arthur Brooks](https://idvorkin-ai-tools.github.io/arthur-brooks-field-map/ideas/four-pillars.html) calls getting small: anything that shrinks you and makes the universe large.
+
+**The tell:** The founder who knows exactly what they want and why, and burns out because every setback is a catastrophe.
+
+**What refills it:** Getting small can go in four directions:
+
+- **Up** — the divine, the cosmos, a night sky.
+- **Out** — community, causes, other people.
+- **Through time** — ancestors and the people who'll come after you.
+- **In** — deep meditation or flow, where the self quiets down.
+
+You can't grab it by effort the way you hit a goal. You set up the conditions (a dawn walk without a phone, a service, a hard problem bigger than you) and let it happen.
+
+### Acceptance: you want control, all you have is influence
+
+<span id="problem-3-you-want-to-control-but-all-you-have-is-influence-coherence"></span>
+
+**What it feels like:** You're exhausted from optimizing variables you can't move. Anxiety lives in the gap between how hard you're pushing and what's happening.
+
+**The tell:** The parent trying to run their adult kid's choices, or the leader micromanaging a team into chaos while trying to impose order.
+
+**What refills it:** The oldest answer is the best one:
 
 > God, grant me the serenity to accept the things I cannot change,
 > The courage to change the things I can,
 > And the wisdom to know the difference.
 
-This wisdom shows up across frameworks:
+The same idea shows up as Covey's circle of influence versus circle of concern, the Stoic dichotomy of control, and [ACT](/act). Do the work, take the right action, let the outcome go.
 
-- **7 Habits (Covey):** Circle of Influence vs. Circle of Concern - focus energy on what you can actually affect
-- **Dr. Raph's Anxiety Solution:** Figure out what you're trying to control, then switch to maximizing your influence instead
-- **Christian Perspective:** Trust God's plan while working faithfully - "Work as if everything depends on you; pray as if everything depends on God"
+I used to call this one "coherence." That was wrong. In the research on meaning ([Martela & Steger](https://researchportal.helsinki.fi/en/publications/the-three-meanings-of-meaning-in-life-distinguishing-coherence-pu/)), coherence means your life makes sense as a story, which is a different idea from accepting what you can't control. So: Direction, Scale, Acceptance. The [four healths](/health) calls the first two Purpose and Perspective, same ideas.
 
-These problems aren't new, Christians tried to solve it way back when:
+Are these three separate, or one thing seen from different sides? I went back and forth on this for a long time. Where I landed: you can have any one without the others, but Frankl is right that the strongest direction comes _through_ getting small. You find your purpose by pointing it at something bigger than you.
 
-- _"Trust in the LORD with all your heart and lean not on your own understanding"_ (Proverbs 3:5) - accept what you can't control
-- _"We know that in all things God works for the good of those who love him"_ (Romans 8:28) - coherence emerges through faith
-- _"Whatever your hand finds to do, do it with all your might"_ (Ecclesiastes 9:10) - maximize your influence
+## The practices
 
-**What coherence means:**
+Here's what I actually do, or have tried, with an honest read on the evidence. I'm an engineer and I want to know which of these are pulling their weight. "Evidence" is my shorthand for how much I'd bet on it, not a formal grade.
 
-- Events aren't all random; there's a pattern or logic (even though many are random)
-- You can explain how you got where you are (even though the story is made up)
-- You accept that you don't have control.
-- Example: "I can't control the outcome, but I can control my response"
+| Practice | Refills | Evidence | Where I write about it |
+| --- | --- | --- | --- |
+| Meditation | Acceptance, Scale | **Moderate.** Lots of trials. Helps anxiety and depression a little, about as much as exercise, and doesn't beat exercise, therapy or drugs ([Goyal 2014](https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/1809754)). The trials skew positive ([PLOS](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0153220)). | [Emotional health](/emotional-health), [SIY](/siy) |
+| Showing up to a community weekly | Scale, plus the tribe | **Moderate, observational only.** Attending services more than once a week tracked with 33% lower mortality in 74,534 nurses, via social support, less smoking, less depression ([Li & VanderWeele 2016](https://pubmed.ncbi.nlm.nih.gov/27183175/)). | [Religion](/religion), [lonely](/lonely) |
+| Awe walks | Scale | **Small experiments, clear mechanism.** A minute looking up at tall trees made people more helpful ([Piff 2015](https://pubmed.ncbi.nlm.nih.gov/25984788/)); 15-minute weekly awe walks raised older adults' daily positive emotion ([Sturm 2020](https://www.ucsf.edu/news/2020/09/418551/awe-walks-boost-emotional-well-being)). | [Elder](/elder#start-your-vanaprastha) |
+| Gratitude journal | Scale, Acceptance | **Small but real.** Randomized trials hold up ([Emmons & McCullough 2003](https://pubmed.ncbi.nlm.nih.gov/12585811/)); the meta-analysis effect is small and the authors say it's no substitute for treatment ([Cregg & Cheavens 2021](https://link.springer.com/article/10.1007/s10902-020-00236-6)). | [Grateful](/grateful), [emotional health](/emotional-health) |
+| Loving-kindness | Scale | **One good trial** ([Fredrickson 2008](https://pubmed.ncbi.nlm.nih.gov/18954193/)). | [Sublime](/sublime) |
+| Service, bringing joy | Direction, Scale | **Observational; experiments didn't confirm it** ([Jenkinson 2013](https://pubmed.ncbi.nlm.nih.gov/23968220/)). | [Joy](/joy) |
+| Daily review | Direction | **Pilot trials only.** The Ignatian examen, a structured daily look-back, raised hope and meaning in a small trial ([PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11950006/)). My affirmations check is the same move. | [Affirmations](/affirmations), [eulogy](/eulogy) |
+| Devotional reading | Direction, Scale | **Untested as I do it.** A daily devotional read as written, then translated into secular terms. | [Walking with God](/walking-with-god) |
+| Memento mori | Acceptance | **Plausible, thin.** Reflecting on death raised gratitude in one randomized study ([Frias 2011](https://greatergood.berkeley.edu/images/uploads/Frias-DeathGratitude.pdf)). | [Stoicism](/stoicism), [death](/death), [mortality software](/mortality-software) |
+| Fasting rhythm, sabbath | Acceptance | **Weak.** In 1,316 clergy, Sabbath-keeping didn't predict mental or physical health once other factors were controlled ([Springer](https://link.springer.com/article/10.1007/s11089-018-0838-9)). | [Greek Orthodox](/greek-orthodox) |
 
-Without coherence, life feels chaotic and arbitrary. You might have clear goals and matter to others, but nothing makes sense because you're fighting battles you can't win.
-
-**2. Meaning as Significance (Mattering)**
-
-This is meaning as "having worth" - your existence makes a difference:
-
-- Your life has value and importance
-- What you do impacts others
-- You matter in the larger scheme of things
-- Example: "My work/relationships/contributions matter"
-
-Without significance, life feels pointless. You might understand your story and know where you're going, but wonder "so what?"
-
-**3. Meaning as Purpose (Direction)**
-
-This is meaning as "having aims" - you know where you're headed:
-
-- Clear sense of goals and intentions
-- Values that guide your decisions
-- A mission or calling to pursue
-- Example: "I know what I'm trying to accomplish"
-
-Without purpose, life feels aimless. You might matter and make sense, but have no idea what to do next.
-
-### How Different Frameworks Define Meaning
-
-Here's where the confusion becomes clear - each framework emphasizes different dimensions:
-
-**Viktor Frankl (Logotherapy):**
-
-- Primary emphasis: **Significance through self-transcendence**
-- "Meaning" = Your life matters because you contribute to something beyond yourself
-- Even suffering has meaning when you choose your attitude toward it
-- Less concerned with coherence or specific purposes
-
-**Arthur Brooks (Build the Life You Want):**
-
-- Primary emphasis: **Significance beyond self-interest**
-- "Meaning" = One of three happiness components (with enjoyment and satisfaction)
-- Specifically tied to serving others and causes greater than yourself
-- Assumes purpose emerges from significance
-
-**MLQ - Meaning in Life Questionnaire (Steger):**
-
-- Measures: **All three dimensions combined**
-- "Presence of meaning" = Having coherence + significance + purpose
-- "Search for meaning" = Actively seeking any/all of these dimensions
-- Most comprehensive definition but can obscure which dimension is missing
-
-When you plot these two dimensions, you get four distinct meaning profiles:
-
-{% include quadrant-matrix.html
-    title="MLQ Meaning Profiles"
-    subtitle="Four ways people relate to meaning in life"
-    x_label="Search for Meaning →"
-    y_label="Presence of Meaning →"
-    q1_name="PRESENCE WITH SEEKING"
-    q1_subtitle="Continuous Growth"
-    q1_traits="Has meaning AND exploring more<br>Deepening understanding<br>Healthy development<br>Never fully satisfied (in a good way)"
-    q1_color="rgba(232, 244, 234, 0.5)"
-    q2_name="PRESENCE WITHOUT SEEKING"
-    q2_subtitle="Meaning Achieved"
-    q2_traits="Found their meaning<br>Satisfied with purpose<br>No drive to explore further<br>Risk: Stagnation if challenged"
-    q2_color="rgba(255, 229, 180, 0.5)"
-    q3_name="ABSENCE WITHOUT SEEKING"
-    q3_subtitle="Existential Indifference"
-    q3_traits="Neither has nor wants meaning<br>Disconnected from purpose<br>May indicate depression<br>Most concerning profile"
-    q3_color="rgba(255, 224, 224, 0.5)"
-    q4_name="ABSENCE WITH SEEKING"
-    q4_subtitle="Active Searcher"
-    q4_traits="Recognizes the lack<br>Motivated to find purpose<br>In transition<br>Potential for growth"
-    q4_color="rgba(230, 230, 250, 0.5)"
-%}
-
-This grid reveals a crucial insight: **searching for meaning isn't a sign of lacking meaning** - you can have high presence of meaning AND still be actively seeking more. In fact, the top-right quadrant (presence with seeking) often represents the healthiest spiritual state: grounded in current meaning while remaining open to growth and deeper understanding.
-
-**Power of Full Engagement (Loehr & Schwartz):**
-
-- Primary emphasis: **Purpose that energizes action**
-- "Meaning" = Connection to values that fuel engagement
-- Bridges purpose and significance ("purpose beyond self-interest")
-- Views meaning as the energy source for all life dimensions
-
-**The critical insight:** When someone says they "lack meaning," they might be missing any combination of:
-
-- Understanding (coherence)
-- Mattering (significance)
-- Direction (purpose)
-
-And when different books promise to help you "find meaning," they might be addressing completely different problems. This explains why advice that transforms one person's life leaves another cold - they're solving different equations.
+The playbook, then. Low on direction: re-read the eulogy and do the daily review. Too big in your own head: an awe walk, meditation, or go serve someone. Fighting what you can't move: the Serenity Prayer, memento mori, meditation. And for all three, the row I'm worst at: show up somewhere, weekly, with other people.
 
 ## The Meaning Traps
 
-All those definitions are useful, but they come with a warning: most people who struggle with meaning aren't struggling because they can't define it properly. They're stuck in one of these traps.
+Most people who struggle with meaning aren't struggling because they can't define it. They're stuck in one of these.
 
 ### Trap 1: The Philosophy Pit
 
-"What does meaning _mean_?" You read Frankl. You compare three dimensions of meaning. You debate whether purpose and transcendence are separate dimensions or developmental stages. You build a beautiful mental model of spiritual health. And you're still sitting on the couch.
-
-This is the most seductive trap because it feels like progress. You're _thinking_ about meaning! You're _learning_! But philosophizing about meaning is not the same as having it. You can define all three dimensions perfectly and still be spiritually empty.
+"What does meaning _mean_?" You read Frankl, you compare frameworks, you build a beautiful model of spiritual health. And you're still sitting on the couch. It feels like progress, which is what makes it seductive.
 
 **The tell:** You can explain what meaning is but can't point to what gets you out of bed tomorrow.
 
-**The escape:** Stop asking "what is meaning?" and start asking "what would I do if I were motivated?" That second question is uncomfortable because it usually has an obvious answer you're avoiding.
+**The escape:** Stop asking "what is meaning?" and ask "what would I do if I were motivated?" That question usually has an obvious answer you're avoiding.
 
 ### Trap 2: The Motivation Test You Keep Failing
 
-Here's the uncomfortable truth: **motivation is the proof that meaning has been found.** Not the philosophy, not the framework, not the ability to articulate your three dimensions of meaning. If you're motivated — actually moving, actually engaged, actually doing things — you've cracked meaning, even if you can't explain how.
+Motivation is the proof that meaning has been found. When meaning is alive, the [activation energy](/activation) for what matters drops and you don't have to force yourself. When it's gone, even small things feel impossible.
 
-And if you're not motivated? No amount of reading about meaning will fix it.
+**The tell:** You have a beautiful eulogy document but haven't changed any behavior in months.
 
-This works because motivation and meaning are connected at the root. Frankl himself said it: "The primary motivational force of individuals is to find meaning in life." He didn't say the primary _intellectual_ force or the primary _philosophical_ force. He said _motivational_. When meaning is present, motivation follows. When motivation is absent, meaning is missing — no matter what your journal says.
-
-The [activation energy](/activation) model explains why this matters practically. Every activity requires willpower to start. When you have genuine meaning — when your purpose is alive, not just written down — the [activation energy](/activation) for meaningful activities drops dramatically. You don't need to force yourself to do what matters. The meaning provides the energy. But when meaning is absent, even low-effort activities feel impossible because there's no underlying "why" to power through the [activation threshold](/activation#activation-energy).
-
-**The tell:** You have a beautiful eulogy document but haven't changed any behavior in months. You know your values but your calendar doesn't reflect them.
-
-**The escape:** Treat motivation as a diagnostic tool, not a prerequisite. If you're unmotivated, don't ask "how do I get motivated?" Ask "what meaning have I lost?" and "what would I be doing right now if I felt alive?" Then do that thing — even badly, even briefly. Motivation often follows action, not the other way around.
+**The escape:** Treat low motivation as a diagnosis, not a character flaw. Ask which of the three is missing, then do the thing — badly, briefly. Motivation often follows action.
 
 ### Trap 3: Meaning Without Motion
 
-You found meaning once. Maybe it was when the kids were small and needed you. Maybe it was a job that mattered. Maybe it was a cause that lit you up. But circumstances changed, and the meaning source dried up. You still _remember_ having meaning but you don't _have_ it anymore.
-
-This is the [Grihastha trap](#the-lifecycle-pattern-why-faith-rises-with-age) in a different form — clinging to a meaning source that's no longer available instead of finding a new one. The person whose kids left home and who built their entire identity around parenting. The retiree who was their job title. The activist whose cause was won (or lost).
+You found meaning once — the kids were small, the job mattered, the cause lit you up. Then circumstances changed and the source dried up. The retiree who was their job title. The parent whose kids left home.
 
 **The tell:** You talk about meaning in the past tense. "I used to feel so purposeful when..."
 
-**The escape:** Meaning isn't found once and banked forever. It requires continuous renewal through new responsibilities, new service, new commitments. As Frankl showed, you answer life's question about your purpose with what you _decide to be responsible for_ — and that answer needs updating as life changes. See [What's the meaning of life?](#whats-the-meaning-of-life)
+**The escape:** Meaning isn't found once and banked. It gets renewed by picking up new responsibilities as life changes.
 
 ### Trap 4: Borrowed Meaning
 
-You adopted someone else's purpose because it sounded right. Your parents' expectations. Your company's mission statement. A self-help book's prescription. It looked like meaning from the outside, but it never generated real motivation because it was never yours.
+Your parents' expectations, your company's mission statement, a self-help book's prescription. It looked like meaning from the outside and never generated motivation, because it was never yours.
 
-This is why Frankl insisted on Socratic dialogue — discovering your OWN meaning through questioning — rather than being told what it should be. And it's why the [MLQ quadrant](#how-different-frameworks-define-meaning) matters: you can have high "presence of meaning" on a questionnaire (because you've adopted a convincing story) while actually running on empty.
+**The tell:** Your purpose sounds great and doesn't survive a hard Tuesday morning.
 
-**The tell:** You can articulate your purpose perfectly but it doesn't survive contact with a hard Tuesday morning. When things get difficult, the borrowed meaning evaporates because it was never connected to your actual self.
+**The escape:** Trust the behavior over the narrative. Your real meaning shows up in your calendar and where your energy goes when nobody's watching.
 
-**The escape:** Use the Frankl test — you answer life's question not with words borrowed from a book, but with what you actually choose to do when nobody's watching. Your real meaning is visible in your calendar, your relationships, and where your energy naturally flows. If those don't match your stated purpose, trust the behavior over the narrative.
+### Trap 5: Spiritual Bypassing
 
-## Common Spiritual Problems
+Using the practices to skip the emotional work. The psychologist John Welwood named this in the 1980s: meditating past grief, "accepting" a resentment you never looked at, getting small so you don't have to feel anything.
 
-Having strong spiritual health means: **having a north star** (purpose/direction), **knowing you're NOT the center of the universe** (transcendence/perspective), and **accepting you have influence, not control** (coherence/acceptance).
+**The tell:** You're serene about everything, and the people close to you would say otherwise.
 
-**Note:** Spiritual health is often confused with emotional health, but they're orthogonal dimensions - you need both independently. See [Spiritual vs Emotional Health](#spiritual-vs-emotional-health) below.
+**The escape:** This is why I keep emotional health and spiritual health separate. The marathon doesn't excuse you from the sprint.
 
-When these break, you face three core problems:
+## The part I can't cobble alone
 
-### Problem 1: "You Lack a North Star" (Purpose)
+<span id="getting-started-for-those-whove-never-done-this"></span>
 
-**What breaks:**
+The research had one finding I didn't want. In the big studies the benefit rides on the community and the regular practice, not the belief. People who attend weekly live longer ([Li & VanderWeele](https://pubmed.ncbi.nlm.nih.gov/27183175/)), and religious-service attendance tracks with flourishing even in the most secular countries ([Global Flourishing Study](https://www.templeton.org/news/global-flourishing-study-maps-the-topography-of-the-human-experience)). And in one large English survey of 7,403 people, those who called themselves spiritual but not religious did _worse_ than people who were neither — more anxiety, more drug use ([King 2013](https://pubmed.ncbi.nlm.nih.gov/23174516/)).
 
-- You feel directionless even when succeeding by external measures
-- You go through motions without knowing why
-- You can't make value-aligned decisions because you don't know your values
-- The work gets done but feels hollow
+That's a direct hit on my plan, which was roughly: keep what religion does, drop the God part, cobble the ten pieces together myself. The practices I can cobble. The weekly room full of flawed people I can't. When I was working through the devotional on fellowship, I wrote, "I don't have a tribe I regularly engage with for this kind of wisdom exchange. And that's probably costing me" ([Walking with God](/walking-with-god#october-31st---wisdom-through-fellowship)). That's the most important sentence I've written on this topic. The open question is where the secular version of the weekly gathering is, and whether there is one. More in [religion](/religion) and [lonely](/lonely).
 
-**The cure: Purpose Anchoring**
+## Where the frameworks came from
 
-- Clear sense of personal purpose and values
-- Regular engagement with your [eulogy](/eulogy) - who you want to be
-- Making decisions aligned with your values
-- Finding and following your north star
+I spent a lot of words on this page summarizing other people's books. Here's the short version, with links to where the full treatment lives:
 
-**Example failure case:** The professionally successful person who has achieved everything they thought they wanted but feels empty and wonders "what's the point of all this?"
-
-### Problem 2: "You Are the Center of the Universe" (Transcendence)
-
-**What breaks:**
-
-- Life feels like a tedious sitcom where you're the main character
-- Your problems loom disproportionately large
-- You lack perspective on what actually matters
-- Anxiety and depression from thinking you're the center of the universe
-
-**The cure: Self-Transcendence**
-
-- Walking in nature at dawn without devices, watching sunrise
-- Meditation and prayer
-- Philosophy and deep intellectual engagement with ideas bigger than yourself
-- Service to causes larger than yourself
-- Seeking truth and serving others (NOT pursuing personal happiness)
-
-**Example failure case:** The person who knows exactly what they want and why, but burns out from treating every setback as catastrophic because they lack cosmic perspective.
-
-### Problem 3: "You Want to Control, But All You Have Is Influence" (Coherence)
-
-**What breaks:**
-
-- You exhaust yourself trying to control outcomes beyond your reach
-- Life feels chaotic because you're optimizing for variables you can't actually affect
-- You lose the narrative thread because you're fighting reality instead of responding to it
-- Anxiety from the gap between effort and results in domains you don't control
-
-**The cure: Accept Your Circle of Influence**
-
-- Distinguish between what you control (your actions, attitudes) and what you don't (outcomes, others' choices)
-- Focus energy on your actual sphere of influence, not your sphere of concern
-- Find meaning in right action regardless of results
-- Accept that some things simply aren't yours to fix
-
-**Example failure case:** The parent who tries to control their adult child's life choices, burning out from attempting to influence decisions that aren't theirs to make - or the leader micromanaging every detail of their team's work instead of empowering them, creating chaos while trying to impose order.
-
-## Spiritual vs Emotional Health
-
-Fair warning: none of this stuff has clean definitions. "Spiritual health," "emotional health," "transcendence" - ask ten experts and you'll get twelve answers. So you'll have to use someone's definitions, and it might as well be mine. (If you want to dig into what I mean by transcendence specifically, see [What the heck is transcendence?](#what-the-heck-is-transcendence) below.)
-
-Spiritual health and emotional health are often confused, but they address completely different problems. You need both, independently.
-
-### The Endurance Analogy
-
-I think of emotional health as being able to get you through short term difficulties - triggers, anger, insults - while spiritual health can get you through the long slog. Using a physical analogy: emotional health is your strength - the anaerobic system, while spiritual health is endurance - the aerobic system.
-
-**Emotional health** lets you handle the sprint: someone cuts you off in traffic and you don't lose your composure. You get criticized at work and you process it without spiraling. Your kid has a meltdown and you stay regulated.
-
-**Spiritual health** lets you handle the marathon: you're two years into a difficult career transition and you keep going because you know why it matters. Your parent has dementia and you show up week after week because you're connected to something larger than your exhaustion.
-
-### The Game Analogy
-
-Another way to think about it: emotional health is your athletic ability - strength, coordination, reaction time - while spiritual health is the game you're playing. You need physical fitness to compete, but fitness alone doesn't tell you what sport to play or why you're on the field.
-
-And here's the interesting part: **everyone needs similar emotional skills** (regulating anger, processing grief, maintaining relationships), but **spiritual health is personal** - different people play different sports. Your purpose isn't my purpose, just like some people play basketball while others run marathons.
-
-The analogy maps to the three components of spiritual health:
-
-**Purpose (Your North Star) = The sport you play**
-
-What game are you in? Basketball, marathon running, tennis? This is your direction - what you're training for, what success looks like. Some people are playing "build a company," others are playing "raise great kids," others are playing "create art." You can't borrow someone else's sport and expect it to feel meaningful. A marathoner forcing themselves to play football will feel hollow even if they win.
-
-**Transcendence (Getting Small) = Being part of a team, league, or tradition**
-
-No athlete plays alone. You're part of a team, a league, a long tradition of people who played before you. The game is bigger than you. When you watch the Olympics, you feel connected to something vast - the history of the sport, the community of athletes, the human drive for excellence. This is what keeps you going when your personal performance suffers. You're not just playing for yourself; you're part of something that transcends your individual experience.
-
-**Coherence (Influence vs Control) = The rules of the game**
-
-You don't get to change the rules. The court is a certain size. The clock runs down. The ref makes bad calls. You can influence the game through your effort, strategy, and skill - but you can't control the outcome. Great athletes accept this: they focus on their performance, not on complaining that the game should work differently. They maximize their influence within constraints they didn't choose.
-
-**Why this matters:** You can have elite athletic ability (emotional health) but still be lost if you don't know what game you're playing (purpose), don't feel connected to anything larger (transcendence), or keep fighting the rules instead of playing within them (coherence). Conversely, you can know exactly what game you're in and feel connected to your team, but if you can't regulate your emotions when things go wrong, you'll flame out.
-
-### What Breaks Without Each
-
-**Spiritual Health: Connection to Meaning**
-
-Spiritual rituals anchor you to a deeper "why" - they create and maintain your connection to purpose, values, and what matters beyond immediate circumstances. When your spiritual health is strong, you know what you're working toward and why it matters.
-
-**What breaks without it:** You feel aimless - going through the motions, checking boxes, wondering "what's the point?" even when succeeding by external measures. The work gets done, but it feels hollow. You might be emotionally stable but spiritually adrift.
-
-**Emotional Health: Processing and Resilience**
-
-Emotional rituals maintain your ability to process feelings, regulate your responses, and stay present with whatever you're experiencing. When your emotional health is strong, you can navigate setbacks, process difficult feelings, and maintain relationships even under stress.
-
-**What breaks without it:** You experience mood swings, reactivity, relationship damage, or emotional burnout. You might know exactly what matters (spiritual health intact) but can't execute consistently because your emotional state keeps derailing you. Or you maintain your routines but can't actually feel or connect with anyone, including yourself.
-
-## Four Frameworks on Spiritual Health
-
-### Viktor Frankl: Meaning Through Self-Transcendence
-
-Viktor Frankl's "Man's Search for Meaning" may be the foundational text on spiritual health. Written by a Holocaust survivor and psychiatrist, it introduces **logotherapy** - therapy through meaning. Frankl's core insight predates and arguably underlies all modern frameworks on purpose and transcendence.
-
-As noted in our [definitions above](#three-dimensions-of-meaning), Frankl primarily emphasizes **significance through self-transcendence** - your life matters because you contribute to something beyond yourself.
-
-{%include amazon.html asin="0807014273" %}
-
-**The Primary Human Drive:** At the heart of logotherapy is a radical claim: "The primary motivational force of individuals is to find meaning in life." Not pleasure (Freud), not power (Adler), but **meaning**. This is the fundamental human drive.
-
-**Self-Transcendence as Core Mechanism:** Frankl emphasizes that meaning is found through **self-transcendence** - "connecting with something greater than oneself, and finding significance in relationships and societal contributions." His definition: "We can find our true self only by letting go of the old one."
-
-**Three Paths to Meaning:**
-
-Frankl identified three ways to discover meaning in life:
-
-1. **Creating a work or doing a deed** - Purpose through contribution and achievement
-2. **Experiencing something or encountering someone** - Meaning through love, beauty, truth
-3. **The attitude we take toward unavoidable suffering** - Finding meaning even in what cannot be changed
-
-This third path is Frankl's most profound contribution: meaning can be found even in suffering when we choose our attitude toward it. "Being human involves exposure to the tragic triad of life, comprised of unavoidable guilt, suffering, and death, and in these circumstances, meaning can still be derived from the attitude we take toward the situation."
-
-**Spiritual Dimension:** Logotherapy was revolutionary for introducing "a focus on the spiritual dimension of the human psyche, previously ignored by most psychotherapists." For Frankl, spiritual health isn't religious - it's the dimension where we confront questions of meaning, value, and purpose.
-
-**Diagnosis:** "Frankl believed depression occurred at the psychological, physiological, and spiritual levels, with the depressed individual facing tension at the spiritual level between who they actually are in relation to what they should be." This tension between actual and ideal self happens in the spiritual dimension.
-
-**Key Techniques:**
-
-- **Paradoxical Intention:** Overcome fear by anticipating and even wishing for what you fear, removing fear from your intention
-- **Dereflection:** Stop obsessing on yourself; redirect attention outward toward meaning (accessing self-transcendence)
-- **Socratic Dialogue:** Discover your own meaning through questioning rather than being told what it should be
-
-**Frankl's Unique Integration:** What makes Frankl essential is that he explicitly combines BOTH purpose and transcendence:
-
-- **Purpose:** You must find YOUR specific meaning (can't be prescribed; discovered through Socratic dialogue)
-- **Transcendence:** That meaning is found by connecting to something beyond yourself (relationships, work, society, values larger than self-interest)
-
-His model shows these aren't separate - purpose IS transcendence. You find your purpose BY transcending self-focus. The path to meaning runs through self-transcendence.
-
-**The Paradox:** "Frankl took a surprisingly hopeful view of people's capacity to transcend their predicament and discover an adequate guiding truth." Even in concentration camps, those who found meaning in their suffering - through their attitude, through serving others, through holding onto values - survived better than those focused on their own survival.
-
-The lesson: Spiritual health isn't about finding the right circumstances. It's about finding meaning regardless of circumstances. And that meaning is always found through self-transcendence - through connecting to something beyond your immediate self-interest.
-
-### Arthur Brooks: Transcendence Through Getting Small
-
-In [Build The Life You Want](/build-life-you-want), Brooks describes faith as "anything transcendent that helps you escape the boring sitcom that is your life." His core insight: **"You need to get small."**
-
-{%include amazon.html asin="B0C38FCTJC" %}
-
-Brooks' framework emphasizes **significance beyond self-interest** (see [definitions above](#three-dimensions-of-meaning)) - meaning emerges when you serve causes and people beyond yourself.
-
-**The mechanism:** Standing in awe of something vastly larger makes you appropriately small, which paradoxically provides perspective and peace. "What we need is a sense of the transcendent that makes us small, because we need perspective."
-
-**Specific practices:**
-
-- Walking in nature at dawn without devices, experiencing awe from sunrise
-- Meditation and prayer (Brooks combines rosary prayer with meditation techniques from Tibetan monks)
-- Philosophy and deep intellectual engagement - "the transcendental walk in ideas and concepts every single day that are bigger than you"
-- Service to causes larger than yourself
-
-**Critical distinction:** The goal should be "seeking truth and the good of others" - NOT pursuing personal happiness. Happiness follows naturally as a byproduct.
-
-Brooks addresses Chapter 8 "Find Your Amazing Grace" to three challenges:
-
-1. **Your Monkey Mind** - Mind wandering that avoids emotions and prevents presence
-2. **Getting Started** - Just start somewhere rather than waiting for perfect clarity
-3. **The Right Focus** - Don't pursue spirituality for personal happiness; seek truth and serve others
-
-Research shows spiritual practices protect against depression and anxiety by providing perspective that makes personal concerns appropriately small.
-
-### My Four Healths: Purpose as Direction
-
-In my [Four Healths framework](/health), I treat spiritual health as your **purpose anchor** - the connection to meaning and purpose that prevents aimlessness.
-
-This framework primarily emphasizes **purpose as direction** ([see definitions](#three-dimensions-of-meaning)) - having your north star, having clear values and goals to navigate by.
-
-**What it enables:**
-
-- Persisting through difficulty when results are far away
-- Making decisions aligned with your values
-- Finding meaning in ordinary moments
-- Staying engaged rather than just going through motions
-
-**Core components:**
-
-- Clear sense of purpose and values
-- Connection to something larger than yourself
-- Rituals that mark transitions and create meaning
-- Regular reflection on what matters
-
-**What breaks without it:**
-
-- Feeling aimless despite achievement
-- Disengagement and going through motions
-- Burnout from lack of meaning
-- Difficulty making value-aligned decisions
-
-This framework emphasizes **having your north star** - you need direction, not just perspective. Spiritual rituals anchor you to your deeper "why" and give ordinary moments significance.
-
-### Power of Full Engagement: The Bridge Between Both
-
-Loehr and Schwartz in "The Power of Full Engagement" define spiritual energy as "connection to deeply held values and a purpose beyond our self-interest." This definition brilliantly bridges both frameworks:
-
-Their approach combines **purpose as direction** with **significance beyond self** ([see definitions](#three-dimensions-of-meaning)), viewing meaning as the energy that fuels all action.
-
-- **Like my framework:** Emphasizes connection to YOUR deeply held values (purpose/direction)
-- **Like Brooks:** Emphasizes "purpose beyond our self-interest" (transcendence/getting small)
-
-**Their key insight:** "Purpose becomes more powerful when it moves from negative to positive, external to internal, and **self to others**." This progression suggests spiritual energy starts with personal purpose but matures into transcendent service.
-
-**Unique contribution:** They frame spiritual energy as the **force for action** - it "fuels passion, perseverance, and commitment" and "provides the force for action in all dimensions of our lives." This makes it foundational rather than just another pillar.
-
-**Character as spiritual capacity:** They define character as "the courage and conviction to live by our deepest values." This aligns with purpose anchoring - knowing your values isn't enough; spiritual health is the capacity to actually live by them under pressure.
-
-The supporting "muscles" of spiritual energy:
-
-- Character (courage and conviction to live by values)
-- Passion
-- Commitment
-- Integrity
-- Honesty
-
-**Rituals:** They emphasize that "rituals create a means by which to translate our values and priorities into action." Spiritual health isn't just having values - it's building the automatic behaviors that keep you aligned with them.
-
-## Are These Two Dimensions or One?
-
-With our understanding of the [three dimensions of meaning](#three-dimensions-of-meaning), we can now see that the apparent conflict between frameworks comes from emphasizing different aspects of meaning.
-
-### The Case for Two Separate Dimensions
-
-These frameworks address **orthogonal failure modes** - you can have one without the other:
-
-**You can have transcendence without purpose:**
-
-- You feel appropriately small in the cosmic scheme
-- You experience awe regularly and escape the tedium
-- But you still don't know what YOU should be doing
-- You're inspired but aimless about your own path
-- Example: The spiritually minded person who meditates daily and feels connected to something greater but can't figure out their career or relationships
-
-**You can have purpose without transcendence:**
-
-- You know exactly what matters to you and why
-- Your values are crystal clear, decisions aligned
-- But you take yourself and your mission TOO seriously
-- Your problems loom too large because you lack cosmic perspective
-- Example: The driven founder who knows their mission but burns out from treating every setback as catastrophic
-
-**Both missing:**
-
-- Aimless AND self-absorbed
-- Don't know where you're going AND take yourself too seriously
-- No direction AND no perspective
-
-This suggests they should be separate dimensions: **Purpose** (having your north star) and **Transcendence** (getting appropriately small).
-
-### The Case for Developmental Stages
-
-Both "Power of Full Engagement" and Viktor Frankl suggest these might be developmental stages rather than separate dimensions:
-
-**Stage 1: Purpose develops from self-focused to other-focused**
-
-- Early: "What do I want?" (self-focused purpose)
-- Mature: "How do I serve?" (other-focused purpose = transcendence)
-
-**Stage 2: Purpose becomes more powerful through progression**
-Loehr/Schwartz's insight that purpose strengthens as it moves "from self to others" suggests transcendence isn't separate - it's what purpose becomes when it matures.
-
-**Stage 3: Frankl's Integration**
-Frankl's model most explicitly shows this progression: You find YOUR meaning (purpose), but that meaning is ONLY found through self-transcendence (connecting to something beyond yourself). Purpose and transcendence aren't separate - purpose IS the result of self-transcendence.
-
-His three paths to meaning demonstrate this:
-
-- Creating work → transcending self through contribution
-- Loving someone → transcending self through relationship
-- Attitude toward suffering → transcending self through values
-
-**Spiritual energy as foundation:** Loehr/Schwartz's framing of spiritual energy as "the force for action in all dimensions" suggests it's not another pillar alongside physical/emotional/cognitive - it's the underlying capacity that energizes all of them.
-
-This view suggests: You start with personal purpose (find your north star), and as spiritual capacity grows, that purpose naturally expands through self-transcendence (seeing your direction as part of something vastly larger, moving forward for something beyond yourself).
-
-## Practical Implications
-
-Regardless of whether these are separate dimensions or developmental stages, both are needed:
-
-**If you lack purpose (don't have a north star):**
-
-- Work on clarity: [eulogy](/eulogy), values identification, reflection on what matters
-- Build rituals that keep you connected to your "why" - like a [daily devotional practice](/walking-with-god)
-- Make decisions aligned with values to build character
-- Focus inward first - you need direction before you can transcend
-
-**If you lack transcendence (thinking you're the center of the universe):**
-
-- Cultivate awe: nature walks at dawn, meditation, philosophy
-- Shift focus from "what will make ME happy" to "what is true and how can I serve"
-- Get small - intentionally experience perspective on your place in the universe
-- Focus outward - connect to something vastly larger than yourself
-
-**If you lack both:**
-
-- Start with purpose - it's hard to transcend when you don't know what you're transcending toward
-- Once you have some direction, begin cultivating awe and perspective
-- Build rituals that maintain both (weekly reflection on purpose + daily transcendent practices)
-
-**If you have both:**
-
-- You're in the rare position of having your north star AND having perspective on the universe
-- Your challenge: maintaining both through life's inevitable changes
-- Keep both practice streams active - purpose without transcendence becomes obsession, transcendence without purpose becomes escapism
-
-The key insight from all three frameworks: Spiritual health requires intentional practice. Whether you call it rituals (Power of Full Engagement), spiritual practices (Brooks), or purpose anchoring (Four Healths), you need consistent actions that keep you connected to both your personal values and something beyond yourself.
-
-## Getting Started: For Those Who've Never Done This
-
-**"I've never been spiritual. Why should I start now?"**
-
-This is the question many strivers face in their forties and fifties when spiritual yearnings unexpectedly arise. You spent decades focused on achievement, career, building—and it worked. Now something's shifting, but you feel ridiculous even considering "spirituality" after a lifetime of dismissing it as unimportant.
-
-Here's the reality: **You're right on schedule.**
-
-The insights below come from Arthur Brooks' _From Strength to Strength_ chapter 7 (see [full notes on aging and the second curve](/elder#from-strength-to-strength)):
-
-{% include amazon.html asin="059319148X" %}
-
-### The Lifecycle Pattern: Why Faith Rises With Age
-
-Research shows that spiritual interest increases predictably in midlife, even among lifelong skeptics. James Fowler's _Stages of Faith_ research found:
-
-- Young adults are often put off by religion's arbitrary rules and apparent contradictions
-- As people age into their 40s-50s, they become tolerant of ambiguities and inconsistencies
-- They start seeing beauty and transcendence where they once saw only superstition
-- For many, the metaphysical begins to feel _real_ for the first time
-
-**Why this happens:** The skills that got you to midlife—fluid intelligence, raw horsepower, control, achievement—begin declining. What you valued starts failing you. Your body weakens. Your mind slows. The worldly rewards that drove you start feeling hollow.
-
-This is what the Hindu tradition calls the **Grihastha trap** - getting stuck in the second life stage (career, wealth, family, achievement) and trying to make it last forever. In their framework, life has four stages (see [the full vanaprastha framework](/elder#start-your-vanaprastha)):
-
-| Stage            | Age   | Focus                          |
-| ---------------- | ----- | ------------------------------ |
-| **Brahmacharya** | 0-25  | Learning                       |
-| **Grihastha**    | 25-50 | Career, wealth, family         |
-| **Vanaprastha**  | 50-75 | Spirituality, wisdom, teaching |
-| **Sannyasa**     | 75+   | Enlightenment                  |
-
-The transition from Grihastha to Vanaprastha requires developing **spiritual skills**. And here's the critical insight: _You can't just show up and expect to be enlightened—that would be like showing up to the Olympics without ever having trained as an athlete._
-
-### Why Spirituality Actually Helps
-
-The best explanation for why spiritual practice increases happiness isn't healthy lifestyles or social connection from attending services. It's this:
-
-**When you spend serious time focused on transcendental things, it takes the focus off yourself.**
-
-Most days, we're thinking _me, me, me_. It's like watching the same dreary television show over and over. Faith forces you into the cosmos—to consider truth, the origin of life, the good of others. This brings refreshment and relief from the tedious sitcom of your own concerns.
-
-Research confirms: religious and spiritual adults are generally happier, suffer less depression, have better physical health, and are less likely to abuse substances.
-
-### Three Obstacles (And How to Overcome Them)
-
-If you've never practiced spirituality and find yourself drawn to it now, you'll face three common obstacles (from [Arthur Brooks' work on vanaprastha](/elder#start-your-vanaprastha)):
-
-#### Obstacle 1: The "None" in the Mirror
-
-Many people having religious stirrings find them confusing or even troubling—especially if you've defined yourself as non-religious or anti-religious. To reverse this stance feels like weakness or flakiness.
-
-But calling yourself a "none" is actually a commitment—an identity as powerful as "Jew" or "Buddhist." And it can trap you.
-
-**The solution:** Shift your self-concept from "none" to "none right now" or "none, but open to suggestion." This injects vulnerability into your self-understanding. While you may not have faith right now, the door is cracked open. Something might wander in.
-
-#### Obstacle 2: Santa in the Church
-
-Our first impression of faith tends to be childish—and that impression haunts us. We dismiss religion as a mishmash of myths and childish nonsense that well-adjusted adults should logically leave behind.
-
-When spiritual urges arise, we cross-reference them to naïve ideas from childhood. But we wouldn't do that in any other area of life.
-
-**The solution:** Look to greater minds than your own. Thomas Aquinas's _Summa Theologica_ anticipated almost every serious objection to faith. Expose yourself to the thinking and writing of scholars and worthy practitioners—not the cartoon versions in your mind.
-
-Emancipate yourself from childhood religion. Leave it behind. Approach transcendental truths from a mature, critical perspective.
-
-#### Obstacle 3: The Tyranny of Time
-
-Faith requires time and effort—there's no getting around this. If you read, pray, or meditate and want to get something out of it, that's time every day. Advanced practitioners spend as much time on this as a fitness buff does at the gym.
-
-Many people craving faith simply never find the time. They kick the can down the road and wind up saying, "My one true regret is not having gotten around to my faith."
-
-**The solution:** Stop seeing spiritual development as a side interest. Put it front and center. Make the time by scheduling your meditation, prayer, reading, and practice. **Every day.**
-
-You wouldn't expect to get fit by thinking about the gym. You schedule workouts. Same here.
-
-### How to Actually Start: Walk
-
-For many people, what's needed is simply an excuse to get started—a punctuation to life's equilibrium that allows trying something new.
-
-Here's the simplest suggestion: **Go for a walk.**
-
-Nearly all major religions have pilgrimages—physical journeys from home to holy places. For Catholics, there's the famous Camino de Santiago across northern Spain. The Camino has exploded in popularity (145,877 pilgrims in 2009 to 347,578 in 2019).
-
-Why? The secret of the Camino is the utter _lack_ of thrills. At the beginning, interior shouting torments the pilgrim. You're tempted to stop at every café with Wi-Fi. But by day three, this subsides. The walk harmonizes mind with body at a pace that's natural and unforced. It becomes a long piece of music—an _andante_—that neither lags nor hurries.
-
-**The transcendent effects appear after a few days, in waves of perception.** The focus shifts from arriving to walking—from future achievement to present moments.
-
-You don't need to walk the Camino. Arthur Brooks practiced "gratitude walks" during COVID lockdowns—nightly walks around his neighborhood after dinner. Almost immediately, gratitude bubbled up—for family, faith, friends, work; but also for cool water, taking off shoes, a soft pillow.
-
-Each day he dedicated to different intentions—one day personal (his son in the Marines), another day global (people suffering from poverty). The walking meditation created a sense of love and compassion, finishing with concrete resolutions to act accordingly.
-
-### The Core Practice: Go Within
-
-When Arthur Brooks met a guru named Acharya in India, he asked what advice he'd give workaholics and success addicts who tremble at leaving the achievement stage of life.
-
-Acharya paused for a long time:
-
-> "Know yourself. That is all. Nothing else. Nothing else can release."
-
-"How?" Brooks asked.
-
-> "By going within. When your mind is quieter, you will find that treasure waiting for you within."
-
-This is the foundation: going within to know yourself. Not to fix yourself or improve yourself, but to _know_ yourself. That self-knowledge—that quiet mind—is where purpose, transcendence, and coherence emerge.
-
-### Start Now, Not Later
-
-The transition can be painful. It's like becoming an adult for a second time. It means letting go of things that defined you in the eyes of the world.
-
-But if you're in a transitional state and finding your interest in the transcendental growing—even if you marginalized this part of life in the past—you're right on schedule.
-
-**Don't resist.**
-
-And don't wait. Spiritual skills take time to develop. Start with one thing:
-
-- A daily walk with no devices
-- Five minutes of morning meditation
-- Reading one page of philosophy or scripture
-- Prayer before bed
-
-Just start. The path reveals itself through walking, not through planning the perfect route.
-
-For the full context on the lifecycle of spiritual development, see [Start Your Vanaprastha](/elder#start-your-vanaprastha).
-
-## What the heck is transcendence?
-
-**Transcendence literally means "going beyond" or "climbing across"** (from Latin trans- "across" + scandere "to climb"). In spiritual health, it refers to the capacity to connect with something larger than your immediate self-concerns.
-
-Climbing Across, going beyond, or connecting beyond yourself.
-
-### Which direction
-
-**Up**
-
-- Connection to the divine, cosmic, or universal
-- Experiencing the sacred or numinous
-- Feeling part of something infinitely larger
-- Examples: Religious experiences, cosmic awe, mystical states
-
-**Out**
-
-- Connection to humanity, community, or causes
-- Seeing yourself as part of collective human experience
-- Serving something beyond personal gain
-- Examples: Social movements, deep empathy, collective joy
-
-**Through time**
-
-- Connection to past and future generations
-- Seeing your life as part of an ongoing story
-- Building legacy that outlasts you
-- Examples: Ancestry work, creating for future generations, tradition
-
-**In (Self-Transcendence)**
-
-- Going beyond ego boundaries
-- Dissolving the subject-object distinction
-- Pure awareness without self-reference
-- Examples: Deep meditation, flow states, ego death experiences
-- Going beyond duality
-
-### What Transcendence Feels Like
-
-You've likely experienced transcendence even if you didn't name it:
-
-**Feeling Awe**
-
-- Watching a sunset that makes you gasp
-- Standing before mountains or ocean
-- Witnessing birth or death
-- Encountering vast beauty or complexity
-
-**Feeling Appropriately Small**
-
-- Sudden perspective on your place in the universe
-- Your problems shrinking to proper size
-- Relief from the burden of being the main character
-- What Brooks calls "getting small"
-
-**Feeling Ego Dissolve**
-
-- Temporary disappearance of self-consciousness
-- Merging with the activity or environment
-- No separation between you and experience
-- Often occurs in flow states
-
-**Feeling Peak Connection**
-
-- Moments of profound meaning or unity
-- Everything suddenly making sense
-- Oneness with all existence
-- Life's most significant moments
-
-### Transcendence (Perspective) and Purpose (Direction)
-
-Now we arrive at the heart of spiritual health: understanding how transcendence and purpose work together, yet remain distinct.
-
-| Aspect              | Purpose (Direction)                       | Transcendence (Perspective)        |
-| ------------------- | ----------------------------------------- | ---------------------------------- |
-| **Core Question**   | "Where am I going?"                       | "What's beyond me?"                |
-| **Focus**           | Your specific path and contribution       | Your place in the larger whole     |
-| **Orientation**     | Future-directed                           | Present-moment awareness           |
-| **Energy Type**     | Drives action toward goals                | Provides peace and acceptance      |
-| **Risk When Alone** | Burnout from taking mission too seriously | Aimless floating without direction |
-
-You can have purpose without transcendence - driven but lacking perspective, like the founder who burns out treating every setback as catastrophic. Or transcendence without purpose - connected but directionless, like the spiritual seeker who meditates for hours but can't decide what to do with their life.
-
-The highest spiritual health integrates both:
-
-| Purpose                       | Transcendence                       |
-| ----------------------------- | ----------------------------------- |
-| Gives you a mountain to climb | Shows you the entire mountain range |
-| Provides energy for action    | Provides peace with what is         |
-| Focuses your contribution     | Connects it to the whole            |
-
-This integration reveals the ultimate paradox: As Frankl showed, you find purpose THROUGH transcendence - by connecting to something beyond yourself. Yet as Brooks demonstrates, transcendence without purpose leaves you inspired but aimless. We need both the direction and the perspective, the climbing and the view.
-
-### Why Transcendence Matters
-
-Beyond feeling good, transcendence serves crucial psychological and spiritual functions:
-
-**Provides Perspective**
-
-- Your problems become appropriately sized
-- Reduces anxiety about personal concerns
-- Offers relief from self-obsession
-- Creates space between you and your thoughts
-
-**Prevents Burnout**
-
-- Reconnects you to why things matter
-- Refreshes depleted spiritual energy
-- Reminds you you're not carrying the world alone
-- Provides sanctuary from achievement pressure
-
-**Creates Meaning Beyond Success**
-
-- Connects you to significance independent of outcomes
-- Provides worth beyond accomplishment
-- Offers identity beyond roles
-- Ensures meaning survives failure
-
-**Protects Mental Health**
-
-- Research shows transcendent experiences protect against depression
-- Reduces existential anxiety
-- Increases resilience in face of suffering
-- Provides hope in difficult times
-
-### The Paradox of Seeking Transcendence
-
-Here's the catch: You can't achieve transcendence through effort the way you achieve goals. The harder you grasp for it, the more it eludes you. Instead:
-
-- Create conditions where transcendence can arise
-- Practice regularly without attachment to results
-- Notice and appreciate when it occurs naturally
-- Don't try to hold onto transcendent states
-- Let it transform you rather than trying to possess it
-
-Transcendence is less something you DO and more something you ALLOW. It's not an achievement but a release - a letting go of the very self that seeks transcendence.
-
-## How increase your purpose
-
-(From Power of full engagement)
-
-1. Go from negative (not losing) to positive (thriving)
-1. Go from extrinsic motivation (money) to intrinsic motivation (autonomy, mastery, purpose)
-1. Go from self to others
-
-Ben Wallace's [The Happiest I've Ever Been](https://ben-mini.com/2026/the-happiest-ive-ever-been) is a case study of all three shifts. He left a corporate career that looked great on paper but felt hollow, and found that coaching youth basketball — an activity aligned with his intrinsic values, focused on others — made him happier than professional success ever did. It's a good antidote to Silicon Valley's conflation of professional value with personal worth.
+- **Viktor Frankl**, _Man's Search for Meaning_: meaning comes from self-transcendence, down three paths — creating a work, loving someone, and the attitude you take toward suffering you can't avoid.
+- **Arthur Brooks**: faith as one of four pillars, "get small," and in _From Strength to Strength_, the Hindu stages of life and the move from striving to wisdom. My notes are in [Elder](/elder#start-your-vanaprastha) and [Build the Life You Want](/build-life-you-want); the [Arthur Brooks field map](https://idvorkin-ai-tools.github.io/arthur-brooks-field-map/) has the books with sourced quotes, including the [second curve](https://idvorkin-ai-tools.github.io/arthur-brooks-field-map/books/strength-to-strength.html). Brooks also says faith tends to rise with age. Pew's data says most of that gap is generational ([Pew](https://www.pewresearch.org/religion/2010/02/17/religion-among-the-millennials/)), so I read it as: some people find this switches on in midlife, and if it does, walk toward it.
+- **Loehr & Schwartz**, _The Power of Full Engagement_: spiritual energy as connection to values beyond self-interest, kept alive by rituals.
+- **Martela & Steger**: meaning is coherence, purpose and significance. Brooks's [The Meaning of Your Life](https://idvorkin-ai-tools.github.io/arthur-brooks-field-map/books/meaning-of-your-life.html) builds on the same three. My "acceptance" is a different thing from their coherence.
 
 ## What's the meaning of life?
 
-Here's where I love Viktor Frankl's insight the most: You're asking the wrong question.
+Here's where I love Viktor Frankl's insight the most: you're asking the wrong question.
 
-**You should not ask what "what's the point?" Life is asking YOU: "What's the point of YOUR life?"**
+> It did not really matter what we expected from life, but rather what life expected from us.
 
-And you answer not with words, but with what you decide are your responsibilities.
+Life is asking _you_: what's the point of _your_ life? And you answer not with words, but with what you decide are your responsibilities. When life hands you a kid needing guidance, a problem needing solving, work needing doing, it's asking "what are you going to do about this?" Your meaning is in how you respond.
 
-When life presents situations - a child needing guidance, a problem needing solving, work needing doing - it's asking "what are you going to do about this?" Your meaning emerges from how you respond. From what you choose to be responsible for.
+That's why Frankl's three paths are all outward: creating work, loving someone, choosing your attitude toward suffering. Each one is taking responsibility for something beyond just existing.
 
-This is why Frankl's three paths ([mentioned earlier](#viktor-frankl-meaning-through-self-transcendence)) are all outward expressions: creating work, loving someone, choosing your attitude toward suffering. Each is taking responsibility for something beyond just existing.
+My [eulogy](/eulogy) is my answer to life's question: being a great father, being present, bringing joy, helping others grow. Not abstract philosophy — commitments to show up in specific ways. The meaning gets stronger when those responsibilities reach past me, to my kids' growth, my partner's wellbeing, my team's success. That's where direction and getting small merge.
 
-My [eulogy](/eulogy) is my answer to life's question: being a great father, being present, bringing joy, helping others grow. Not abstract philosophy - commitments to show up in specific ways.
+Stop asking life what it means. Start answering life's question about what you mean to do with it.
 
-The meaning gets stronger when those responsibilities extend beyond yourself - when you're responsible for your kids' growth, your partner's wellbeing, your team's success. That's when purpose and transcendence merge.
+## The spiritual posts
 
-Stop asking life what it means. Start answering life's question about what YOU mean to do with it.
-
-{%include summarize-page.html src="/health" %}
-{%include summarize-page.html src="/build-life-you-want" %}
-{%include summarize-page.html src="/elder" %}
-{%include summarize-page.html src="/religion" %}
+- [Religion](/religion) — losing belief, keeping the practice
+- [Greek Orthodox](/greek-orthodox) — theosis, fasting, and my son's conversion
+- [Walking with God](/walking-with-god) — a daily devotional, translated
+- [Elder](/elder) — the second half of life and the vanaprastha
+- [Death](/death) — being mortal
+- [Four healths](/health) — the tests for each kind of health

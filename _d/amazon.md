@@ -2,6 +2,7 @@
 layout: post
 title: "My thoughts on Amazon"
 permalink: /amazon
+imagefeatureblob: blog/igor-pack-truck.jpg
 ---
 
 I spent 4 years working at Amazon, some things I loved, some not so much. Amazon is a huge company and the variation of behavior within a company exceeds the variation between the "median" behavior between companies. Even within the two teams I was on at Amazon I saw the exact opposite behaviors. When I talk about the good, I'll talk about the ideal good, and when I talk about the bad, I'll talk to some issues I saw that were systemically bad. As a result you'll often see me describing something as both good and bad, as it's done differently in different parts of the company.
@@ -232,6 +233,14 @@ Humorously, each LP has an opposite cancelling force.
 ### Ownership
 
 ### Customer Obsession
+
+The first LP: "Leaders start with the customer and work backwards. They work vigorously to earn and keep customer trust. Although leaders pay attention to competitors, they obsess over customers." When I was there, that last sentence settled arguments. As a customer today, I see Amazon watching competitors first, and two changes make it concrete.
+
+**It blocks the agents I want to shop with.** I want my AI assistant to reorder the usual stuff and compare options for me. Amazon says no. Its [robots.txt](https://www.amazon.com/robots.txt) disallows not just training crawlers but the agents that act for a person: `ChatGPT-User`, `Claude-User`, `Perplexity-User` and Google's Project Mariner ([Modern Retail](https://www.modernretail.co/technology/amazon-expands-its-fight-to-keep-ai-bots-off-its-e-commerce-site/)). When Perplexity's Comet browser shopped anyway, Amazon sued. A judge [blocked Comet in March 2026](https://www.geekwire.com/2026/judge-blocks-perplexitys-ai-bot-from-shopping-on-amazon-in-early-test-of-agentic-commerce/), and the Ninth Circuit [reversed it in August](https://www.yahoo.com/news/politics/articles/perplexity-wins-appeal-against-amazon-201603244.html), reasoning that Amazon's users, not Perplexity, were the ones accessing the site. Meanwhile Amazon builds Rufus, its own shopping chatbot.
+
+**Its emails stopped telling me what I bought.** Order and shipping emails now say "Your Beauty item is confirmed!" or "Ordered: 1 Essentials item", with a total and a link but no product name ([Michael Tsai](https://mjtsai.com/blog/2020/06/01/unhelpful-amazon-order-confirmation-e-mails/) has tracked the stripping since 2020). Gmail used to be where I searched for when I last bought the air filters, or skimmed what was arriving today. Now every Amazon email says the same nothing, and I have to log in to Amazon to find out.
+
+To be fair, there are real reasons. An agent holding my password is a fraud risk, and itemized emails fed the analytics firms that scrape inboxes. But both fixes protect Amazon's data and its ad business more than they serve me. That's [the dirty secret of LPs](#the-dirty-secret-of-lps---you-can-justify-anything) again: "earn and keep customer trust" can justify making the customer's life worse.
 
 ### Right a lot
 

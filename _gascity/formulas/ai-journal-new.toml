@@ -81,14 +81,9 @@ Edit ONLY _d/ai-journal.md. Match the voice of existing entries: personal, refle
 """
 
 [[steps]]
-id = "rebuild-backlinks"
-needs = ["draft-entry"]
-expand = "blog-rebuild-backlinks"   # shared step library: inlines the backlinks-rebuild flow
-
-[[steps]]
 id = "verify"
-title = "Verify the change is entry+backlinks-only and sound (USE JUDGMENT)"
-needs = ["rebuild-backlinks"]
+title = "Verify the change is entry-only and sound (USE JUDGMENT)"
+needs = ["draft-entry"]
 description = """
 This is the judgment gate — do not skip it. The intent is a single-file, new-entry-only
 change against {{base_branch}}. Check reality matches intent:
@@ -96,7 +91,8 @@ change against {{base_branch}}. Check reality matches intent:
   git diff --stat _d/ai-journal.md
 
 PASS only if ALL hold:
-  - the only modified paths are _d/ai-journal.md and back-links.json (no stray files),
+  - the only modified path is _d/ai-journal.md (no stray files — notably no
+    back-links.json: it's CI-generated and gitignored, never part of this diff),
   - the entry matches the documented format and the TOC is updated,
   - EVERY deep link resolves and matches the dossier's claim->permalink map
     (spot-check that the hashes / line ranges actually exist),
@@ -113,8 +109,8 @@ title = "Commit + open a clean PR; anchor the tracking bead"
 needs = ["verify"]
 description = """
 Land it. NEVER push to main:
-  git add _d/ai-journal.md back-links.json
-  git commit -m "feat(ai-journal): add entry $(date +%Y-%m-%d) + backlinks"
+  git add _d/ai-journal.md
+  git commit -m "feat(ai-journal): add entry $(date +%Y-%m-%d)"
   git push -u origin HEAD            # push the branch to the fork (origin)
 Open the PR against canonical main, and PUT THE TRACKING BEAD ID IN THE PR DESCRIPTION
 on its own `Tracking-bead: <id>` line, so any reviser picks it up straight from the PR

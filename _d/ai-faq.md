@@ -76,7 +76,7 @@ The humanist position: human art carries intention, struggle, lived experience. 
 
 ### AI slop vs human sludge
 
-Everyone complains about **AI slop** - generic, emoji-laden, "As an AI..." But have you seen LinkedIn? **Human sludge** is everywhere. Corporate jargon, humble-brags, throat-clearing paragraphs. Humans produce garbage without AI help.
+Everyone complains about **AI slop** - generic, emoji-laden, "As an AI..." The real tell is [content density](https://www.seangoedecke.com/dont-feed-me-slop/): one or two ideas in an avalanche of words (Sean Goedecke). But have you seen LinkedIn? **Human sludge** is everywhere. Corporate jargon, humble-brags, throat-clearing paragraphs. Humans produce garbage without AI help.
 
 The bar isn't "as good as a human." It's "as good as actual human output" - and that bar is surprisingly low. The goal is AI _augmenting_ human, not replacing sludge with slop. See also: [/chow](/chow#ai-slop-vs-human-sludge)
 

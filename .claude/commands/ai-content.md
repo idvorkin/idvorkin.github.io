@@ -45,6 +45,7 @@ AI Philosophy & Big Picture:
 Technical:
   /ai-testing       (_d/ai-testing.md)     - Testing AI systems
   /ai-training      (_d/ai-training.md)    - AI training/fine-tuning
+  /ai-post-training (_d/ai-post-training.md) - Post-training methods: SFT, RLHF, DPO, RLVR, GRPO
   /ai-security      (_d/ai-security.md)    - AI security concerns
 
 AI & People:
@@ -75,6 +76,8 @@ Writing with AI:
 ### Phase 3: Load Related Posts via Backlinks
 
 **Query `back-links.json` dynamically** to find the real related posts. Do NOT guess - use actual link data.
+
+`back-links.json` is gitignored (CI-generated, not committed) — if it's not present in the repo root, run `just update-backlinks` first.
 
 For the target post's permalink (e.g. `/ai-cockpit`), run:
 

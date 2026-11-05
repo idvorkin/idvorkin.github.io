@@ -48,6 +48,7 @@ With parallel agents you need to:
 - **Switch between agents instantly** - context-switching friction kills your flow
 - **Talk to whichever agent needs you** without typing commands to navigate there first
 - **Know when something needs attention** without constantly checking
+- **Know what you can afford to spend** - several subscriptions means [managing tokens](/token-management) across them
 
 This is the gap between [Stage 5 (single agent) and Stage 7 (specialized tools)](/how-igor-chops#the-8-stages-of-ai-coding) in the AI coding evolution. The agents themselves are fine. It's the human interface that's the bottleneck.
 
@@ -80,6 +81,8 @@ The Hollyland Lark M2S Mini Combo — wireless lavalier, 7g, USB-C plus a Camera
 For the full deep dive on why voice changes how you work with AI, see [You Need to Use Voice](/ai-operator#you-need-to-use-voice).
 
 More mic options as I try them.
+
+And a button for the voice: a $36 [ZTYTO scrolling ring](https://www.amazon.com/s?k=ZTYTO+scrolling+ring+touchpad), a touchpad ring sold for scrolling TikTok. I [remapped it in Karabiner](https://github.com/idvorkin/Settings/blob/main/mac/karabiner.json#L7) so a tap toggles Wispr Flow and the right button hits Enter. Now I can dictate and send a prompt from the couch or the treadmill without touching the keyboard.
 
 ### Tmux on Super Steroids - The Multiplexer
 
@@ -131,6 +134,8 @@ I didn't build this. I gave the requirements and Claude built it itself. The iro
 
 **Why it matters for the cockpit:** Without this, you're blind. You don't know which agent finished, which one is stuck, which PR needs review. With it, one glance tells you where to focus attention.
 
+There's now a phone-sized companion to this, built by Larry: [the Cockpit](/larry-cockpit) folds open PRs, unfinished issues, running agents and the decisions waiting on me into one page I can read from anywhere on Tailscale.
+
 ### GitHub Views - The Triage Queue
 
 The Agent Dashboard knows what my agents are _doing_ right now. GitHub knows what they've already _filed_. Different instruments, same cockpit. I keep two saved searches pinned in the browser — everything `idvorkin-ai-tools` touched in the last four weeks, sorted by recent activity:
@@ -138,7 +143,7 @@ The Agent Dashboard knows what my agents are _doing_ right now. GitHub knows wha
 - [Open PRs involving idvorkin-ai-tools](https://github.com/pulls/2294839?q=+%28involves%3Aidvorkin-ai-tools%29+++++state%3Aopen+archived%3Afalse+sort%3Aupdated-desc+created%3A%3E%40today-4w+)
 - [Open issues & PRs involving idvorkin-ai-tools](https://github.com/issues/SSC_kgDOACMG4Q?q=%28involves%3Aidvorkin-ai-tools%29%20state%3Aopen%20archived%3Afalse%20sort%3Aupdated-desc%20created%3A%3E%40today-4w%20is%3Aissue%20is%3Apr)
 
-One tab, one glance, full triage queue. Before I had these, agent PRs on stale branches just vanished from my attention; now the staleness is the sort key.
+One tab, one glance, full triage queue. Before I had these, agent PRs on stale branches just vanished from my attention; now the staleness is the sort key. For the long view, how much of that queue actually merges month over month, I check [Build Stats](/build-stats).
 
 ### Stream Deck - The Physical Buttons
 
@@ -175,7 +180,7 @@ Here's a typical multi-agent scenario and how the cockpit helps:
 5. While that agent works, I glance at the dashboard - the docs agent needs a merge. Hit another Stream Deck button.
 6. Repeat.
 
-The cockpit turns multi-agent orchestration from "constantly lost and confused" into "air traffic control with good radar." It's not perfect yet, but it's the difference between Stage 5 and Stage 7.
+The cockpit turns multi-agent orchestration from "constantly lost and confused" into "air traffic control with good radar." It's not perfect yet, but it's the difference between Stage 5 and Stage 7. In [orchestrator](/ai-orchestrator) terms, the cockpit is the overview brick.
 
 The cockpit is my side of the glass. The agents have instruments of their own — [Browsers for Machines](/browsers-for-machines) covers the ones they use to reach the web.
 

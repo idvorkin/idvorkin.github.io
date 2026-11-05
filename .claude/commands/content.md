@@ -38,6 +38,7 @@ Comprehensive workflow for working on blog content (new or existing) following p
 **IMPORTANT:** NEVER work directly on main. Always use a feature branch.
 
 1. **Check current branch**
+
    ```bash
    git branch --show-current
    ```
@@ -54,6 +55,7 @@ Comprehensive workflow for working on blog content (new or existing) following p
    - Otherwise, confirm: "Continue on {current-branch}?"
 
 4. **Create new branch if needed**
+
    ```bash
    git checkout -b {branch-name}
    ```
@@ -68,6 +70,7 @@ Comprehensive workflow for working on blog content (new or existing) following p
 **Use `running-servers` to check status (see CLAUDE-CODING.md for details):**
 
 1. **Check if server is running for this directory**
+
    ```bash
    running-servers check .
    ```
@@ -114,7 +117,7 @@ Key conventions:
 • Plain text opening paragraph (before any includes)
 • Use "I" not "we"
 • Internal links use permalinks
-• Run `just back-links` before committing
+• back-links.json is CI-generated — don't commit it (`just update-backlinks` only for local preview)
 
 Preview: http://localhost:4000/{permalink}#{section} (if working on existing)
 ```
@@ -122,18 +125,21 @@ Preview: http://localhost:4000/{permalink}#{section} (if working on existing)
 ## Examples
 
 **Work on content (current branch):**
+
 ```
 /content
 # Checks branch, starts server if needed, asks what you're working on
 ```
 
 **Work on specific branch:**
+
 ```
 /content add-shoulder-pain
 # Switches to/creates branch, starts server, ready to work
 ```
 
 **Update existing post:**
+
 ```
 /content update-irl
 # Ensures proper branch, starts server

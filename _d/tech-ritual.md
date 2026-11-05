@@ -33,7 +33,7 @@ Previous Update:
 - Who am I kidding this will probably be weekly
 - Aider/Avente
 
-{%include summarize-page.html src="/ai-coder" %}
+{%include summarize-page.html src="/chop" %}
 
 ## Quarterly
 

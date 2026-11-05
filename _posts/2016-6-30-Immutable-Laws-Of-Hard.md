@@ -9,6 +9,6 @@ Exercise, Diet, Personal Development, each of these is governed by the immutable
 
 Law #1: Without a goal and a measure, you will move farther and farther away from your desired state.
 
-Law #2: Regardess of what you predict, you'll never 'beat your goal'. Instead, you'll only barely achieve it.
+Law #2: Regardless of what you predict, you'll never 'beat your goal'. Instead, you'll only barely achieve it.
 
 Law #3: Without a consequence, and/or a strong reward, you'll ignore your goal.
