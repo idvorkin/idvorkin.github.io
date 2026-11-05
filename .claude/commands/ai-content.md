@@ -45,6 +45,7 @@ AI Philosophy & Big Picture:
 Technical:
   /ai-testing       (_d/ai-testing.md)     - Testing AI systems
   /ai-training      (_d/ai-training.md)    - AI training/fine-tuning
+  /ai-post-training (_d/ai-post-training.md) - Post-training methods: SFT, RLHF, DPO, RLVR, GRPO
   /ai-security      (_d/ai-security.md)    - AI security concerns
 
 AI & People:

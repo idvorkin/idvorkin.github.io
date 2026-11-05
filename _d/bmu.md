@@ -10,6 +10,7 @@ redirect_from:
 tags:
   - strategy
   - how igor ticks
+imagefeatureblob: business-model-you-canvas.jpeg
 ---
 
 The business model canvas is a tool for understanding how a company makes money. This same model can be applied to a person's career. While [job hunting](/job-hunt-stress) this was helpful figuring out my [dream job](/dream-job). I suppose it should also prioritize my [work energy](/boss), and probably how to prioritize my [life energy](/eulogy). But that's to come.

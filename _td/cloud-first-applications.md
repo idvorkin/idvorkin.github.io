@@ -54,7 +54,7 @@ The world is now on the cloud, here are my random notes on the topic.
 
 ### Containers are about application packaging and delivery.
 
-We often talk about containers being a light weight VM, which they are. However, I think the real value of the container (which is why docker is synonymous with container), is a software packaging and delivery mechanism.The sole reason Docker containers got more attention than its competition is because of this software delivery approach.
+We often talk about containers being a light weight VM, which they are. However, I think the real value of the container (which is why docker is synonymous with container), is a software packaging and delivery mechanism. The sole reason Docker containers got more attention than its competition is because of this software delivery approach.
 
 #### The power of the Dockerfile and image repository.
 
@@ -93,7 +93,7 @@ Can log everything to cloud watch to enable api access debugging and auto-scale 
 
 ### Routing + API Transformation
 
-Define a client callable REST api and map it to arbitrary backend services including parameter and representation re-mapping. Can use this implement stages and version upgrades.
+Define a client callable REST api and map it to arbitrary backend services including parameter and representation re-mapping. Can use this to implement stages and version upgrades.
 
 ### Websocket transformation
 
@@ -101,7 +101,7 @@ Can translate websocket calls to backend calls (REST, Lambda, or any other API t
 
 ## Networking
 
-Now adays the majority of networking is done over HTTP. Here are the aspects of it.
+Nowadays the majority of networking is done over HTTP. Here are the aspects of it.
 
 ### Connections, data refresh and data transfer
 
@@ -115,7 +115,7 @@ Client to server communication has three aspects, connection establishment notif
 
 Can be either polling or event driven. Polling has the client requesting data periodically and is the simplest method to implement, however it suffers from latency. The alternative is having the server give data to the client when it is available.
 
-Websockets allow you to simply implement server initiated push notifications to clients. The client establishes a long pole connection, and server writes to it when available, allowing the client to listen.
+Websockets allow you to simply implement server initiated push notifications to clients. The client establishes a long poll connection, and server writes to it when available, allowing the client to listen.
 
 #### Data Transfer - REST vs WebSocket
 
@@ -127,7 +127,7 @@ WebSockets are frequently used when push notification or high data volumes are r
 
 I suspect a common pattern will be using WebSockets for a server initiated push notification requesting the client to call for current state.
 
-I also suspect an eco system will emerge around WebSockets providing protocols and tools. For example [WOMP](https://wamp-proto.org/index.html) is a standard for APIs and PubSub over WebSocket.
+I also suspect an eco system will emerge around WebSockets providing protocols and tools. For example [WAMP](https://wamp-proto.org/index.html) is a standard for APIs and PubSub over WebSocket.
 
 ### Planes - Control, Data, and Management
 
@@ -144,7 +144,7 @@ Achieving the previously stated goal is incredibly difficult. Envoy attempts to 
 
 **Communication Bus**
 
-![Communction Mesh](https://www.envoyproxy.io/docs/envoy/latest/_images/service_to_service.svg)
+![Communication Mesh](https://www.envoyproxy.io/docs/envoy/latest/_images/service_to_service.svg)
 
 Out of process architecture: Envoy is a self contained process that is designed to run alongside every application server. All of the Envoys form a transparent communication mesh in which each application sends and receives messages to and from localhost and is unaware of the network topology. The out of process architecture has two substantial benefits over the traditional library approach to service to service communication. 1) Language independence - everyone talks to localhost 2) Auto upgrade - since proxy service is injected into the containers.
 

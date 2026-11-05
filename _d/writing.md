@@ -73,11 +73,11 @@ TODO: XREF - Stages of writing
 
 My favorite thing about [Amazon](/amazon) is the writing culture. Every 60 minute meeting starts with the presenter handing out a 6 page document, and asking if anyone needs a pen. The next 30 minutes is spent reading, with the silence barely punctuated with the sound of a pen underlining a key figure. At around the 30 minute mark, the presenter will ask, does anyone need more time? Which signals to the stragglers to start skimming as the discussion will start.
 
-On my second day at [Amazon](/amazon) I had my first meeting. After we went around the room introducing the new guy (me), a stapled 6 page printout was handed out and silence descended on the room. I went through the document in 5 minutes. I didn't understand much of it, after all I was new and didn't know what these guys worked on. I then had to sit in silence fidgetting for the next 25 minutes. At the 30 minute mark, people started discussion. "I understand your reasoning, but did you consider the new market trends?", "How do you imagine things will change if we don't complete this within a month?" I was really surprised. I didn't notice any of these things in the document. How did these folks get this deep understanding of the document? They must have had a deep knowledge of the domain I thought. Nope.
+On my second day at [Amazon](/amazon) I had my first meeting. After we went around the room introducing the new guy (me), a stapled 6 page printout was handed out and silence descended on the room. I went through the document in 5 minutes. I didn't understand much of it, after all I was new and didn't know what these guys worked on. I then had to sit in silence fidgeting for the next 25 minutes. At the 30 minute mark, people started discussion. "I understand your reasoning, but did you consider the new market trends?", "How do you imagine things will change if we don't complete this within a month?" I was really surprised. I didn't notice any of these things in the document. How did these folks get this deep understanding of the document? They must have had a deep knowledge of the domain I thought. Nope.
 
 Turns out, to build a clear writing muscle, you must build a critical thinking muscle, which requires a critical reading muscle. After 3 years at Amazon, my skills had increased drastically, but I was still weak at these by Amazon standards.
 
-To get a sense for Amazon documents, check out Jeff Bezos's Shareholder letter for ([2020](https://s2.q4cdn.com/299287126/files/doc_financials/2021/are/Amazon-2020-Shareholder-Letter-and-1997-Shareholder-Letter.pdf)) or a a [root cause analysis](/coe) for the [Kennis Service](https://aws.amazon.com/message/11201/).
+To get a sense for Amazon documents, check out Jeff Bezos's Shareholder letter for ([2020](https://s2.q4cdn.com/299287126/files/doc_financials/2021/are/Amazon-2020-Shareholder-Letter-and-1997-Shareholder-Letter.pdf)) or a [root cause analysis](/coe) for the [Kinesis Service](https://aws.amazon.com/message/11201/).
 
 These documents are "easy" compared to Amazon internal documents, but even still a few things to notice:
 
@@ -88,7 +88,7 @@ These documents are "easy" compared to Amazon internal documents, but even still
 
 ### Sucking till you don't
 
-You're going to suck till you don't. I could never explain it as well as Ira Glass (the host of this america life), so watch his video:
+You're going to suck till you don't. I could never explain it as well as Ira Glass (the host of This American Life), so watch his video:
 
 <div class="ratio ratio-16x9">
   <iframe
@@ -121,9 +121,9 @@ You'll note, this blog is my implementation of evergreen notes.
 
 See [7 habits concepts](/7h-c0) Maps vs Terrain
 
-Using your eyes you can look at the road outside your house. It has a color, a specific width, perhaps some potholes. This the terrain, the physical reality, but you won't see any of this google maps. Your eyes won't let you see the networks of sewers underneath your street. For that, there are maps that show the sewers, but those maps lack houses.
+Using your eyes you can look at the road outside your house. It has a color, a specific width, perhaps some potholes. This is the terrain, the physical reality, but you won't see any of this on google maps. Your eyes won't let you see the networks of sewers underneath your street. For that, there are maps that show the sewers, but those maps lack houses.
 
-Maps are required as the world is infinitely complex, and we need simpler models to understand what is going on. A similar thing happens at the restaurant, your order of the menu which is a simplification of the food. And to understand the world, we need mental models, like the ones presented in most non-fiction books.
+Maps are required as the world is infinitely complex, and we need simpler models to understand what is going on. A similar thing happens at the restaurant, your order off the menu which is a simplification of the food. And to understand the world, we need mental models, like the ones presented in most non-fiction books.
 
 While maps are useful, they are not the terrain, in some dimensions the map is always wrong, and classifying the edges is hard.
 
@@ -135,7 +135,7 @@ SWOT:
 
 | Axis         | Tailwinds   | Headwinds |
 | ------------ | ----------- | --------- |
-| **Internal** | Strength    | Weakeness |
+| **Internal** | Strength    | Weakness  |
 | **External** | Opportunity | Threats   |
 
 SOAR:
@@ -167,9 +167,9 @@ A [rare book](https://www.amazon.com/Pyramid-Principle-Logic-Writing-Thinking/dp
 
 _TODO: Move to COE post_
 
-Ask why 5 times till you get to a root understanding. Exactly 5 why's doesn't matter, getting no deeper than why does. Also forks in the answers usually happen. Lets dig in...
+Ask why 5 times till you get to a root understanding. Exactly 5 why's doesn't matter, getting no deeper than why does. Also forks in the answers usually happen. Let's dig in...
 
-**1 - Why am I bad shape?**
+**1 - Why am I in bad shape?**
 
 Because I stopped exercising
 
@@ -177,7 +177,7 @@ Because I stopped exercising
 
 Because it's a lot of effort.
 
-**3 - Why is a lot of effort?**
+**3 - Why is it a lot of effort?**
 
 Because the gym closed
 Because I'm not prioritizing it enough
@@ -223,7 +223,7 @@ Sometimes you want to share your journey, the twists and turns and helping reade
 
 **The Journey**
 
-Consider using the Hero's formula, or the pixar formula below.
+Tell it as a story: the [Pixar story spine](/storytelling#the-story-spine-the-pixar-formula), or the [Hero's Journey](/storytelling#the-heros-journey---for-very-long-form) for long form. More on [Storytelling](/storytelling).
 
 **The Recommendation**
 
@@ -236,17 +236,7 @@ Consider using the Hero's formula, or the pixar formula below.
 
 ### The Pixar Formula
 
-<https://startuppitch.substack.com/p/nail-your-startup-pitch-use-pixars>
-
-- Situation/Context:
-  - Once upon a time there was [details]
-  - Every day, [details]
-- Complication/Problem:
-  - One day [details]
-  - Because of that, [details]
-- Resolution/Solution
-  - Because of that, [details]
-  - Until finally [details]
+Moved to [Storytelling](/storytelling#the-story-spine-the-pixar-formula).
 
 ### The feedback formula: Situation, Behavior, Impact
 
@@ -271,35 +261,11 @@ The modern business/self-help book formula is:
 
 Generally, these books can be summarized in a short 5 page essay. In fact they often have an HBR (Harvard Business Review) article from the author which does exactly that.
 
-Business book don't have to be crappy by laws of physics, some are excellent like the [first 90 days](/90days). I highly recommend reading both for the content, and the structure. The structure is awesome because
+Business books don't have to be crappy by laws of physics, some are excellent like the [first 90 days](/90days). I highly recommend reading both for the content, and the structure. The structure is awesome because
 
 ### The Hero's Journey - For very long form
 
-You'll see this in a lot of movies, and it can be fun to map a movie to this story. From [here](https://libguides.gvsu.edu/c.php?g=948085&p=6857311)
-
-- THE ORDINARY WORLD - This is the original world of the hero, which "suffers from a symbolic deficiency." The hero is lacking something, or something is taken from him.
-
-- THE CALL TO ADVENTURE - The hero is given a challenge, problem, or adventure. Often it appears as a blunder, or chance. This stage establishes the goal of the hero.
-
-- THE REFUSAL OF THE CALL - The (often) reluctant hero has to be set along the correct path. He must weigh the consequences and be excited by a stronger motivation to proceed further.
-
-- MEETING WITH THE MENTOR - The hero encounters a wise figure who prepares him for the journey. This figure (or item) gives advice, guidance, or an item, but cannot go with the hero.
-
-- CROSSING THE THRESHOLD - The hero has committed to his task, and enters the special world. Often he is met by a threshold guardian.
-
-- TESTS, ALLIES, AND ENEMIES - In the special world, the hero learns the new rules by meeting people and obtaining new information. There is often a "local watering hole" component. This is where the true characteristics of the hero are revealed.
-
-- APPROACH TO THE INNERMOST CAVE - Now our hero, and often his allies, have come to the edge of the dangerous place where the "object of the quest" is hidden. This stage often is the land of the dead.
-
-- THE SUPREME ORDEAL - The hero faces danger, often a life-or-death moment that is either physical or psychological.
-
-- REWARD, OR SEIZING THE SWORD - After surviving, our hero takes possession of the object, typically a treasure, weapon, knowledge, token, or reconciliation.
-
-- THE ROAD BACK - The hero must now deal with the consequences of their actions. They may be pursued by remaining forces. They now face the decision to return to the ordinary world.
-
-- RESURRECTION - One final test is required for the purification and rebirth of the hero. Alternatively, it may be a miraculous transformation.
-
-- RETURN WITH THE ELIXIR - The triumphant hero returns to the ordinary world bearing the elixir. Common elixirs are treasure, love, freedom, wisdom, or knowledge. A defeated hero is doomed to repeat the lesson.
+Moved to [Storytelling](/storytelling#the-heros-journey---for-very-long-form).
 
 ## Pen to paper
 
@@ -308,7 +274,7 @@ You'll see this in a lot of movies, and it can be fun to map a movie to this sto
 From [my full post](https://ig2600.blogspot.com/2015/07/soft-skills-writing-as-madman-architect.html)
 Writing breaks down into 4 distinct phases: brainstorming, organization, writing and editing. To reinforce the distinctness of these phases, think of writing as four distinct jobs: Madman, Architect, Carpenter and Judge. Maximize your efficiency by doing each job, distinctly, deliberately and serially.
 
-Each job has a specific goal, and that goal should be your sole focus during while doing that job. Do not do the next job, and do not go back to previous jobs. To reinforce the distinctness of each job, consider using a different tool, and physical reminders of each job.
+Each job has a specific goal, and that goal should be your sole focus while doing that job. Do not do the next job, and do not go back to previous jobs. To reinforce the distinctness of each job, consider using a different tool, and physical reminders of each job.
 
 ### On essay's and writing
 
@@ -338,15 +304,13 @@ Haven't watched this one yet ...
 
 ### How to tell a great story
 
-Doesn't really fit, but I do enjoy this story
-
-{%include youtube.html src="KxDwieKpawg" %}
+Moved to its own page: [Storytelling](/storytelling).
 
 ### Writers head to readers head, like an army through a choke point
 
 ### My 80 hours on an outage document
 
-When something goes wrong at amazon you write a [correction of errors(COE)](/coe) document. In my last few months of Amazon I wrote a COE on an Alexa outage which was a result of poor interaction between the system that turns "speech into text"(ASR) and the system that turns "text into meaning" (NLU).
+When something goes wrong at Amazon you write a [correction of errors(COE)](/coe) document. In my last few months of Amazon I wrote a COE on an Alexa outage which was a result of poor interaction between the system that turns "speech into text"(ASR) and the system that turns "text into meaning" (NLU).
 
 This was some deeply technical stuff, but needed to be clear so non-domain experts could understand what happened. I ended up spending over 80 hours on this, and even enlisted the help of a marketing person who had no idea how Alexa worked to ensure my writing was crystal clear.
 

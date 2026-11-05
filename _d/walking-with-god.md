@@ -583,7 +583,7 @@ My favorite line from the passage: **"~~Asa~~ You twice made a foolish mistake. 
 
 _Here's how I translate this:_
 
-King Asa had proven track record with God - he'd seen it work. But when trouble came, he defaulted to what felt more tangible: military alliances and doctors. He treated his values as a backup plan, not his foundation.
+King Asa had a proven track record with God - he'd seen it work. But when trouble came, he defaulted to what felt more tangible: military alliances and doctors. He treated his values as a backup plan, not his foundation.
 
 In secular terms: **What do you actually turn to first when things get hard?**
 

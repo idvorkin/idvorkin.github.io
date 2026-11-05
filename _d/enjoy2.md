@@ -7,7 +7,7 @@ redirect_from:
   - /todo
 ---
 
-It's easy to forget the many, often tiny things that makes me happy. For when that happens, here's some reminders:
+It's easy to forget the many, often tiny things that make me happy. For when that happens, here's some reminders:
 
 <script src="https://cdn.plot.ly/plotly-3.0.1.min.js"></script>
 <div class="alert alert-primary" id="sunburst_text">
@@ -57,9 +57,9 @@ Read my **[Eulogy](/eulogy)**. See my **[Memories ](/ig66)**
 ### Take a selfie
 
 - Take a selfie with Friends
-- Take a selfie with Goofie Hats
+- Take a selfie with Goofy Hats
 - Take a selfie with a funny face
-- Make a goofie TikTok
+- Make a goofy TikTok
 
 ### Tech
 
@@ -134,11 +134,11 @@ Read my **[Eulogy](/eulogy)**. See my **[Memories ](/ig66)**
 - Wear toe shoes
 - Wear Sequin Jacket
 - Wear my zany $8 TEMU crazy shirts
-- Wear a Halloween costumes - Lama
-- Wear a Halloween costumes - Bird
-- Wear a Halloween costumes - Fish
-- Wear a Halloween costumes - Penguin
-- Wear a Halloween costumes - Bee
+- Wear a Halloween costume - Llama
+- Wear a Halloween costume - Bird
+- Wear a Halloween costume - Fish
+- Wear a Halloween costume - Penguin
+- Wear a Halloween costume - Bee
 
 ### Juggling
 

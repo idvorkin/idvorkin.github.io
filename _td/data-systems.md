@@ -72,7 +72,7 @@ Batch jobs take a time window of data and process it at once. Think Full File In
 
 ### Facts Measures and Dimensions.
 
-When we do analytics we have want to apply measures (list computation) over facts, often sliced by dimensions. Imagine we have data
+When we do analytics we want to apply measures (list computation) over facts, often sliced by dimensions. Imagine we have data
 
     |  ID | HoursSleep | Age|  City |
 
@@ -82,7 +82,7 @@ Analytics systems like column store are optimized for this type of analysis (lat
 
 ### Data lakes and Data warehouse
 
-The difference is schema on write vs schema on read. In a warehouse, you figure out your schema upfront, which is expensive, and can result in data loss. In a lake, you store all your data with the assumption you'll need it eventually and you'll figure out how to use it after its been generated. Given the speed of new technology, I'd highly recommend a data lake.
+The difference is schema on write vs schema on read. In a warehouse, you figure out your schema upfront, which is expensive, and can result in data loss. In a lake, you store all your data with the assumption you'll need it eventually and you'll figure out how to use it after it's been generated. Given the speed of new technology, I'd highly recommend a data lake.
 
 A data warehouse is a database optimized to analyze relational data coming from transactional systems and line of business applications. The data structure, and schema are defined in advance to optimize for fast SQL queries, where the results are typically used for operational reporting and analysis. Data is cleaned, enriched, and transformed so it can act as the “single source of truth” that users can trust.
 
@@ -122,7 +122,7 @@ Buffer, Data Loss, Throttle
 
 ### Event BroadCasting- PubSub- SNS
 
-This is similar to broadcasting a message. Multiple publishers can write to a topic, and multiple subscribers can are notified of the message. If someone isn't subscribed at notification time, they will not hear the message. This is useful for scenarios where you want to expose an event occurred, but aren't interested in how they process it. E.g. "There's a new video uploaded by user". If you need to take an action on this event, you'll need to connect SNS to SQS.
+This is similar to broadcasting a message. Multiple publishers can write to a topic, and multiple subscribers are notified of the message. If someone isn't subscribed at notification time, they will not hear the message. This is useful for scenarios where you want to expose an event occurred, but aren't interested in how they process it. E.g. "There's a new video uploaded by user". If you need to take an action on this event, you'll need to connect SNS to SQS.
 
 ### Durable Message Queues - SQS
 

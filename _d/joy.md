@@ -79,7 +79,7 @@ _Making cards change colors at a spectators command or passing coins through a s
 
 ### Smile Startup
 
-- [Smile Startup w/in Microsfot](https://igsmilebox.blogspot.com)
+- [Smile Startup w/in Microsoft](https://igsmilebox.blogspot.com)
 
 ### Juggling Fire
 
@@ -165,7 +165,7 @@ Joy is an involuntary experience that acts on you. You can be more receptive to 
 - Don't want to be ripped off
   - Is this a con?
   - What's your angle for doing this?
-- You can increase someones comfort by getting validation from others
+- You can increase someone's comfort by getting validation from others
   - Someone else doing it before you
   - Reassure person
   - Smile
@@ -210,7 +210,7 @@ Also look at notes from Avner class - who was all about building rapport with a 
 
 ### Joy and Overwhelming kindness from a stranger
 
-If a stranger does something really kind for you unexpectantly, that's kind of like joy
+If a stranger does something really kind for you unexpectedly, that's kind of like joy
 
 ### Joy versus pleasure
 
@@ -328,7 +328,7 @@ Who knows, maybe one day I'll actually get around to doing these.
 
 ### Own a vaudeville theater
 
-Humorously, I always said this, and one day when I was at the Olympics of magic (FISM 2022), I went to talk titled: So you want to own a magic, theater - you're probably wrong. Snapped me out it.
+Humorously, I always said this, and one day when I was at the Olympics of magic (FISM 2022), I went to a talk titled: So you want to own a magic, theater - you're probably wrong. Snapped me out of it.
 
 Luckily Tori works in the arts, and I can say I'm a patron of the arts instead
 

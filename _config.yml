@@ -105,6 +105,7 @@ exclude:
     ".uv-cache",
     ".playwright-cli",
     "__pycache__",
+    "skill",
   ]
 
 permalink: /:title

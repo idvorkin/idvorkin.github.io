@@ -1,0 +1,146 @@
+/*!
+ * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ *
+ * Self-hosted subset: only the icons this site uses, so no request goes to
+ * kit.fontawesome.com. Rules are copied from @fortawesome/fontawesome-free@5.15.4
+ * (fontawesome.css, solid/regular/brands.css, v4-shims.css).
+ *
+ * To add an icon: add its `.fa-NAME:before` rule below (codepoint from the
+ * package's all.css), add the codepoint to the matching font's --unicodes list,
+ * and regenerate that font from the package's webfonts/*.ttf:
+ *
+ *   uvx --from 'fonttools[woff]' pyftsubset fa-solid-900.ttf \
+ *     --unicodes=U+f004,U+f77d,U+f007,U+f05a,U+f02c,U+f6e3,U+f00d,U+f362,U+f075,U+f126,U+f1e6,U+f044 \
+ *     --flavor=woff2 --no-hinting --layout-features='' \
+ *     --output-file=assets/webfonts/fa-solid-900.woff2
+ *   regular: --unicodes=U+f089     brands: --unicodes=U+f09b,U+f08c
+ *
+ * An icon class missing from this file renders as nothing.
+ */
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("/assets/webfonts/fa-solid-900.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/assets/webfonts/fa-regular-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/assets/webfonts/fa-brands-400.woff2") format("woff2");
+}
+
+.fa,
+.fas,
+.far,
+.fab {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.fa,
+.fas {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.far {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
+
+.fab {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+}
+
+/* Font Awesome 4 names (`fa fa-*`), from v4-shims.css */
+.fa.fa-github {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+}
+
+.fa.fa-star-half-o {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
+
+.fa.fa-star-half-o:before {
+  content: "\f089";
+}
+
+/* Brands */
+.fa-github:before {
+  content: "\f09b";
+}
+
+.fa-linkedin:before {
+  content: "\f08c";
+}
+
+/* Solid */
+.fa-heart:before {
+  content: "\f004";
+}
+
+.fa-baby-carriage:before {
+  content: "\f77d";
+}
+
+.fa-user:before {
+  content: "\f007";
+}
+
+.fa-info-circle:before {
+  content: "\f05a";
+}
+
+.fa-tags:before {
+  content: "\f02c";
+}
+
+.fa-hammer:before {
+  content: "\f6e3";
+}
+
+.fa-times:before {
+  content: "\f00d";
+}
+
+.fa-exchange-alt:before {
+  content: "\f362";
+}
+
+.fa-comment:before {
+  content: "\f075";
+}
+
+.fa-code-branch:before {
+  content: "\f126";
+}
+
+.fa-plug:before {
+  content: "\f1e6";
+}
+
+.fa-edit:before {
+  content: "\f044";
+}

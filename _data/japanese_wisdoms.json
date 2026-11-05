@@ -1,0 +1,35 @@
+[
+  {
+    "num": "japanese-wisdoms",
+    "title": "12 Japanese Wisdoms",
+    "label": "12 Japanese Wisdoms",
+    "panels": [
+      "/images/japanese-wisdoms/ikigai.webp",
+      "/images/japanese-wisdoms/kaizen.webp",
+      "/images/japanese-wisdoms/shoshin.webp",
+      "/images/japanese-wisdoms/oubaitori.webp",
+      "/images/japanese-wisdoms/gaman.webp",
+      "/images/japanese-wisdoms/wabi-sabi.webp",
+      "/images/japanese-wisdoms/ichigo-ichie.webp",
+      "/images/japanese-wisdoms/mono-no-aware.webp",
+      "/images/japanese-wisdoms/hara-hachi-bu.webp",
+      "/images/japanese-wisdoms/kintsugi.webp",
+      "/images/japanese-wisdoms/shinrin-yoku.webp",
+      "/images/japanese-wisdoms/mottainai.webp"
+    ],
+    "captions": [
+      "1. Ikigai — a reason to get up",
+      "2. Kaizen — small steps, every day",
+      "3. Shoshin — beginner's mind",
+      "4. Oubaitori — bloom at your own pace",
+      "5. Gaman — endure with dignity",
+      "6. Wabi-sabi — beauty in imperfection",
+      "7. Ichigo ichie — one time, one meeting",
+      "8. Mono no aware — the beauty of passing things",
+      "9. Hara hachi bu — eat until 80% full",
+      "10. Kintsugi — golden repair",
+      "11. Shinrin-yoku — forest bathing",
+      "12. Mottainai — don't waste it"
+    ]
+  }
+]

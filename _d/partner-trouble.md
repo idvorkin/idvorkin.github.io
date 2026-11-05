@@ -70,7 +70,7 @@ The two problems:
 
 - Those who struggle to decline requests
 - Those who struggle to decline requests while being fair and considerate.
-- See [essentialim](/essentialism) for lots of ways to say no kindly.
+- See [essentialism](/essentialism) for lots of ways to say no kindly.
 
 Regardless, you need to have boundaries
 

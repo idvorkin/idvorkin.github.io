@@ -1,0 +1,428 @@
+{% comment %} Map of Hall and Bodenhamer's seven directions (interactive). The
+belief sits in the center inside a dashed "box"; content reframing sits inside
+the box and the other six directions radiate out (outframing up, deframing down,
+pre-framing back/left, post-framing forward/right, counter reframing back on
+itself, analogous framing sideways). Tapping a direction opens a panel with its
+move, Dilts' patterns, the book's mind-lines and the "Skipped the gym" example,
+plus a button that opens the explorer (_includes/sleight-of-mouth-explorer.html)
+on that direction via its somxShow hand-off, and a link to the post's section.
+Data: directions in _data/sleight_of_mouth.yml (heading, idea, patterns, lines,
+example, anchor, color); the angles live here. Without JavaScript it falls back
+to a list. Self-contained, no libraries, no network. Used by:
+_d/2016-3-12-sleight-of-mouth.md {% endcomment %}
+<style>
+  .somd {
+    --somd-ink: #1b1f24;
+    --somd-soft: #5a636e;
+    --somd-faint: #9aa1aa;
+    --somd-rule: #d8dbe0;
+    --somd-paper: #ffffff;
+    --somd-panel: #f5f6f8;
+    --somd-link: #a8741a;
+    box-sizing: border-box;
+    max-width: 760px;
+    margin: 1.5em auto;
+    padding: 1rem 1.1rem 1.1rem;
+    background: var(--somd-paper);
+    border: 1px solid var(--somd-rule);
+    border-radius: 4px;
+    color: var(--somd-ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      sans-serif;
+    line-height: 1.35;
+  }
+  .somd * {
+    box-sizing: border-box;
+  }
+  @media (prefers-color-scheme: dark) {
+    .somd {
+      --somd-ink: #e6e8eb;
+      --somd-soft: #aab2bc;
+      --somd-faint: #6b7480;
+      --somd-rule: #3a4049;
+      --somd-paper: #1e2228;
+      --somd-panel: #272c33;
+      --somd-link: #e0b35a;
+    }
+    .somd .somd-panel-head {
+      color: var(--somd-ink);
+    }
+  }
+  [data-bs-theme="dark"] .somd {
+    --somd-ink: #e6e8eb;
+    --somd-soft: #aab2bc;
+    --somd-faint: #6b7480;
+    --somd-rule: #3a4049;
+    --somd-paper: #1e2228;
+    --somd-panel: #272c33;
+    --somd-link: #e0b35a;
+  }
+  [data-bs-theme="dark"] .somd .somd-panel-head {
+    color: var(--somd-ink);
+  }
+  .somd-title {
+    margin: 0 0 0.4rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .somd-ring {
+    position: relative;
+    width: min(100%, 520px);
+    aspect-ratio: 1;
+    margin: 0 auto;
+  }
+  .somd-lines {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+  .somd-lines line {
+    stroke: var(--somd-faint);
+    stroke-width: 0.5;
+  }
+  .somd-lines circle {
+    fill: none;
+    stroke: var(--somd-faint);
+    stroke-width: 0.5;
+    stroke-dasharray: 2 2;
+  }
+  .somd-lines text {
+    fill: var(--somd-faint);
+    font-size: 3px;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+  }
+  .somd-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 38%;
+    transform: translate(-50%, -62%);
+    text-align: center;
+    background: var(--somd-paper);
+    border: 2px solid var(--somd-link);
+    border-radius: 6px;
+    padding: 0.4rem 0.45rem;
+    font-size: clamp(0.66rem, 2.6vw, 0.86rem);
+    font-weight: 600;
+  }
+  .somd-center small {
+    display: block;
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--somd-link);
+  }
+  .somd button {
+    font: inherit;
+    cursor: pointer;
+  }
+  /* .somd .somd-node outranks the .somd button { font: inherit } reset. */
+  .somd .somd-node {
+    position: absolute;
+    width: 27%;
+    transform: translate(-50%, -50%);
+    border: 1px solid var(--somd-rule);
+    border-top: 4px solid var(--somd-c);
+    background: var(--somd-paper);
+    color: var(--somd-ink);
+    border-radius: 4px;
+    padding: 0.3rem 0.35rem 0.35rem;
+    font-size: clamp(0.64rem, 2.5vw, 0.84rem);
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .somd-node small {
+    display: block;
+    font-weight: 400;
+    font-size: 0.86em;
+    color: var(--somd-soft);
+  }
+  .somd-node:hover {
+    background: var(--somd-panel);
+  }
+  .somd-node[aria-pressed="true"] {
+    background: var(--somd-c);
+    border-color: var(--somd-c);
+    color: #fff;
+  }
+  .somd-node[aria-pressed="true"] small {
+    color: #fff;
+    opacity: 0.9;
+  }
+  .somd-node:focus-visible,
+  .somd-open:focus-visible {
+    outline: 2px solid var(--somd-ink);
+    outline-offset: 2px;
+  }
+  .somd-panel {
+    margin-top: 0.8rem;
+    border-left: 4px solid var(--somd-c, var(--somd-rule));
+    border-radius: 0 4px 4px 0;
+    background: var(--somd-panel);
+    padding: 0.7rem 0.9rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  .somd-panel[hidden] {
+    display: none;
+  }
+  .somd-panel-head {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--somd-c);
+  }
+  .somd-panel p {
+    margin: 0.3rem 0 0;
+  }
+  .somd-panel-meta {
+    font-size: 0.8rem;
+    color: var(--somd-soft);
+  }
+  .somd-panel-meta b {
+    color: var(--somd-ink);
+  }
+  .somd-panel-example {
+    font-style: italic;
+    border-top: 1px solid var(--somd-rule);
+    padding-top: 0.4rem;
+    margin-top: 0.5rem !important;
+  }
+  .somd-panel-example::before {
+    content: "\201C";
+  }
+  .somd-panel-example::after {
+    content: "\201D";
+  }
+  .somd-panel-go {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.9rem;
+    align-items: center;
+    margin-top: 0.6rem !important;
+    font-size: 0.82rem;
+  }
+  .somd .somd-open {
+    border: 1px solid var(--somd-c, var(--somd-ink));
+    background: var(--somd-c, var(--somd-ink));
+    color: #fff;
+    border-radius: 4px;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+  }
+  .somd-hint {
+    margin: 0.5rem 0 0;
+    text-align: center;
+    font-size: 0.82rem;
+    color: var(--somd-soft);
+  }
+  .somd-fallback {
+    margin: 0;
+    padding-left: 1.2rem;
+    font-size: 0.9rem;
+  }
+  .somd.is-live .somd-fallback,
+  .somd:not(.is-live) .somd-live {
+    display: none;
+  }
+  @media (max-width: 640px) {
+    .somd {
+      padding: 0.7rem 0.6rem 0.8rem;
+    }
+    .somd-ring {
+      aspect-ratio: 4 / 5;
+    }
+    .somd .somd-node {
+      width: 27%;
+      padding: 0.25rem 0.25rem 0.3rem;
+    }
+    .somd-center {
+      width: 36%;
+    }
+  }
+</style>
+<figure
+  class="somd"
+  aria-label="Map of the seven directions a reframe can take"
+>
+  <ol class="somd-fallback">
+    {%- for d in site.data.sleight_of_mouth.directions %}
+    <li><b>{{ d.heading }}</b>: {{ d.idea }} (mind-lines {{ d.lines }})</li>
+    {%- endfor %}
+  </ol>
+  <div class="somd-live">
+    <p class="somd-title">Seven directions to send a belief</p>
+    <div class="somd-ring">
+      <svg
+        class="somd-lines"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="xMidYMid meet"
+        aria-hidden="true"
+      ></svg>
+      <div class="somd-center">
+        <small>the belief</small>
+        Skipping the gym all month means I'm just not a fitness person
+      </div>
+    </div>
+    <p class="somd-hint">Tap a direction.</p>
+    <div class="somd-panel" hidden aria-live="polite">
+      <p class="somd-panel-head"></p>
+      <p class="somd-panel-idea"></p>
+      <p class="somd-panel-meta somd-panel-patterns"></p>
+      <p class="somd-panel-meta somd-panel-lines"></p>
+      <p class="somd-panel-example"></p>
+      <p class="somd-panel-go">
+        <button type="button" class="somd-open"></button>
+        <a class="somd-read" href="#">Read the section &darr;</a>
+      </p>
+    </div>
+  </div>
+  <script type="application/json" class="somd-data">
+    {{ site.data.sleight_of_mouth.directions | jsonify }}
+  </script>
+  <script type="application/json" class="somd-names">
+    {
+      {%- for p in site.data.sleight_of_mouth.patterns -%}
+      {{ p.id | jsonify }}: {{ p.name | jsonify }}{% unless forloop.last %},{% endunless %}
+      {%- endfor -%}
+    }
+  </script>
+</figure>
+<script>
+  (function() {
+    // Where each direction sits: angle clockwise from the top, and radius as a
+    // percentage of the ring. Content reframing works inside the box, so it
+    // sits inside the dashed circle; the rest are outside it.
+    var PLACE = {
+      out: { angle: 0, r: 35, short: "Outframing", move: "go up" },
+      analogous: { angle: 55, r: 35, short: "Analogous", move: "go sideways" },
+      post: {
+        angle: 100,
+        r: 35,
+        short: "Post-framing",
+        move: "forward in time",
+      },
+      deframing: { angle: 180, r: 35, short: "Deframing", move: "go down" },
+      counter: { angle: 250, r: 35, short: "Counter", move: "back on itself" },
+      pre: { angle: 300, r: 35, short: "Pre-framing", move: "back in time" },
+      content: {
+        angle: 180,
+        r: 20,
+        short: "Content reframing",
+        move: "inside the box",
+      },
+    };
+    var BOX_R = 24;
+    var NS = "http://www.w3.org/2000/svg";
+    document.querySelectorAll(".somd:not(.is-live)").forEach(function(root) {
+      var dirs = JSON.parse(root.querySelector(".somd-data").textContent);
+      var names = JSON.parse(root.querySelector(".somd-names").textContent);
+      var ring = root.querySelector(".somd-ring");
+      var svg = root.querySelector(".somd-lines");
+      var panel = root.querySelector(".somd-panel");
+      var hint = root.querySelector(".somd-hint");
+      var nodes = [];
+      var current = null;
+      function el(tag, cls, text) {
+        var e = document.createElement(tag);
+        if (cls) e.className = cls;
+        if (text != null) e.textContent = text;
+        return e;
+      }
+      function svgEl(tag, attrs) {
+        var e = document.createElementNS(NS, tag);
+        Object.keys(attrs).forEach(function(k) {
+          e.setAttribute(k, attrs[k]);
+        });
+        return e;
+      }
+      // The dashed "box" around the belief, labeled so inside/outside reads.
+      svg.appendChild(svgEl("circle", { cx: 50, cy: 50, r: BOX_R }));
+      var lbl = svgEl("text", {
+        x: 50,
+        y: 50 - BOX_R - 1.5,
+        "text-anchor": "middle",
+      });
+      lbl.textContent = "the box";
+      svg.appendChild(lbl);
+      dirs.forEach(function(d) {
+        var p = PLACE[d.id];
+        if (!p) return;
+        var rad = ((p.angle - 90) * Math.PI) / 180;
+        var x = 50 + p.r * Math.cos(rad);
+        var y = 50 + p.r * Math.sin(rad);
+        if (p.r > BOX_R) {
+          // A spoke from the box's edge out to the node.
+          svg.appendChild(
+            svgEl("line", {
+              x1: 50 + BOX_R * Math.cos(rad),
+              y1: 50 + BOX_R * Math.sin(rad),
+              x2: x,
+              y2: y,
+            })
+          );
+        }
+        var b = el("button", "somd-node");
+        b.type = "button";
+        b.dataset.dir = d.id;
+        b.setAttribute("aria-pressed", "false");
+        b.style.left = x + "%";
+        b.style.top = y + "%";
+        b.style.setProperty("--somd-c", d.color);
+        b.appendChild(document.createTextNode(p.short));
+        b.appendChild(el("small", null, p.move));
+        b.addEventListener("click", function() {
+          show(d, b);
+        });
+        ring.appendChild(b);
+        nodes.push(b);
+      });
+      var explorer = document.querySelector(".somx");
+      function show(d, node) {
+        current = d;
+        nodes.forEach(function(n) {
+          n.setAttribute("aria-pressed", n === node ? "true" : "false");
+        });
+        panel.style.setProperty("--somd-c", d.color);
+        panel.querySelector(".somd-panel-head").textContent = d.heading;
+        panel.querySelector(".somd-panel-idea").textContent = d.idea;
+        var pats = panel.querySelector(".somd-panel-patterns");
+        pats.innerHTML = "";
+        pats.appendChild(el("b", null, "Dilts' patterns: "));
+        pats.appendChild(
+          document.createTextNode(
+            (d.patterns || [])
+              .map(function(id) {
+                return names[id] || id;
+              })
+              .join(" · ")
+          )
+        );
+        var lines = panel.querySelector(".somd-panel-lines");
+        lines.innerHTML = "";
+        lines.appendChild(el("b", null, "Mind-lines: "));
+        lines.appendChild(document.createTextNode(d.lines || ""));
+        panel.querySelector(".somd-panel-example").textContent =
+          d.example || "";
+        var open = panel.querySelector(".somd-open");
+        open.textContent = "Try these patterns in the explorer ↑";
+        open.hidden = !(explorer && explorer.somxShow);
+        panel.querySelector(".somd-read").href = "#" + d.anchor;
+        panel.hidden = false;
+        hint.hidden = true;
+      }
+      panel.querySelector(".somd-open").addEventListener("click", function() {
+        if (!current || !explorer || !explorer.somxShow) return;
+        if (explorer.somxShow("directions", current.id))
+          explorer.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+      root.classList.add("is-live");
+    });
+  })();
+</script>

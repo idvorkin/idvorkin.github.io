@@ -279,7 +279,7 @@ See my dedicated [keyboard post](/keyboard) — covers hardware, key remapping w
 
 ## Camera
 
-I ended up getting an m200 because a time of purchase it was the only cheap cannon with clean HDMI output. I'd have preferred the m50, but it didn't have clean HDMI output which was a deal-breaker. My use case is mostly video recording or webcamming on a tripod, but I'll take it out of the house occasionally.
+I ended up getting an m200 because at time of purchase it was the only cheap Canon with clean HDMI output. I'd have preferred the m50, but it didn't have clean HDMI output which was a deal-breaker. My use case is mostly video recording or webcamming on a tripod, but I'll take it out of the house occasionally.
 
 [Canon m200](https://www.amazon.com/gp/product/B07XYPVFCH/) - Not ideal, but the only m-series with clean HDMI out. Biggest gaps - 1) No MF button 2) 4K sucks 3) A bit too small for SLR lenses
 
@@ -310,7 +310,7 @@ I'm a big fan of my Oculus Quest, it's my favorite home workout tool for boxing.
 Games I like:
 
 - Thrill of the Fight (TOTF) - Great boxing game, just focused on boxing dynamics
-- Creed - Boxing game that looks more like a game, but not as good of a working
+- Creed - Boxing game that looks more like a game, but not as good of a workout
 
 Experiences worth trying:
 

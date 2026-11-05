@@ -338,11 +338,11 @@ Remember: You don't need more willpower - you need better fiber coordination. Wh
 We become the average of our peers, your peers pull you towards them, and you pull them towards you. If your peers are sitting around doing nothing so will you, and if they're all super busy, you'll either become busy too, or find new peers.
 
 - Are you becoming your peers, or are they choosing you?
-- Peers give us a chance to latch on to each others will power (or lack thereof)
+- Peers give us a chance to latch on to each other's will power (or lack thereof)
 
 ### Schedules
 
-The calendar is a simple tool to reduce stopping and starting energy. If you think about going to the gym, but then need to think about when to go the gym, there's an excellent chance you won't go. However, if you know you go to the gym after your morning coffee, the come home and take the kids to school - it's way easier to get it done.
+The calendar is a simple tool to reduce stopping and starting energy. If you think about going to the gym, but then need to think about when to go to the gym, there's an excellent chance you won't go. However, if you know you go to the gym after your morning coffee, then come home and take the kids to school - it's way easier to get it done.
 
 ### Sleep and activation Energy
 

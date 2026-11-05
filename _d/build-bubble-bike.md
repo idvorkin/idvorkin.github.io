@@ -38,25 +38,21 @@ My [Bubble Bike](https://idvork.in/ig66/583):
 {% include youtube.html src="hFaoC1UoGJ4" %}
 
 - Problem #1 attaching to bike
-
   - Tori made a custom holder to hold and ratchet to the bike and remove.
 
-- Problem #2 - Portal, and Powerful.
-
+- Problem #2 - Portable, and Powerful.
   - Tried all USB-powered bubble machines on AMZN
   - USB bubble machine with high power, bought like 4 of them.
   - Only 10 w
   - Big USB battery
 
 - Problem #3 - All the bubble juice sloshing out
-
   - 2 water bottle holders, Carry bubble juice concentrate
   - 3D printed for more capacity and mostly cover
   - 3D print leaks, cover in tape
   - Make a funnel hole with a stopper
 
 - Problem #4 - Froth making bubbles useless
-
   - Add baffles
   - Try using bubble anti-frothing
 

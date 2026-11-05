@@ -39,7 +39,7 @@ Best people are the content, and are a pain in the butt to manage, but it's wort
 
 #### Inspiration vs Perspiration
 
-Disease = Idea is 90% of the work. Tonne of craftsmanship into a great product. Building it makes a huge variance to the project, there are a huge # of trade offs into the product. The laws of physics dominate. Design a product is keepng 5000 things in your brain, fitting them all together in the best way possible that gets what you want. Every day you learn something new that changes the equation. That process is the magic of product development.
+Disease = Idea is 90% of the work. Tonne of craftsmanship into a great product. Building it makes a huge variance to the project, there are a huge # of trade offs into the product. The laws of physics dominate. Design a product is keeping 5000 things in your brain, fitting them all together in the best way possible that gets what you want. Every day you learn something new that changes the equation. That process is the magic of product development.
 
 Old guy takes him out back to make a rock clean. A bunch of common rocks go in , and then get banged around with friction, and noise, and come out these beautiful polished rocks. Metaphor for a team working hard on something they're passionate about. It's that bumping up, those arguments, those fights, working together they polish each others, polish the ideas making beautiful stones.
 

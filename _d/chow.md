@@ -378,7 +378,7 @@ The author now provides the raw content, and it can create content on demand opt
 
 - Should it be interactive
 - What age level to write for
-- What interests does the read have.
+- What interests does the reader have.
 - What format (text, tweet, video, audio)
 
 Aerial talks about this nicely [here](https://gist.github.com/idvorkin/3cb3d50a175d3b2879ad537678704619#file-think-md)

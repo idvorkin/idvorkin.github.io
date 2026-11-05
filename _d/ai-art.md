@@ -38,11 +38,11 @@ _This can probably go into a broader ML category_
 
 What’s common to all of these visions is something we call the “sandwich” workflow. This is a three-step process. First, a human has a creative impulse, and gives the AI a prompt. The AI then generates a menu of options. The human then chooses an option, edits it, and adds any touches they like.
 
-From Stratechary:
+From Stratechery:
 
 _For most folks the sandwich workflow is very different from how people are used to working. There’s a natural worry that prompting and editing are inherently less creative and fun than generating ideas yourself, and that this will make jobs more rote and mechanical. Perhaps some of this is unavoidable, as when artisanal manufacturing gave way to mass production. The increased wealth that AI delivers to society should allow us to afford more leisure time for our creative hobbies…_
 
-This matches a a delegation model well from a senior to a junior, in fact this is exactly the model. The senior shares an intent and guardrails. The junior comes back with various options and a recommendation, the junior tweaks it, and then you've got an approach
+This matches a delegation model well from a senior to a junior, in fact this is exactly the model. The senior shares an intent and guardrails. The junior comes back with various options and a recommendation, the junior tweaks it, and then you've got an approach
 
 ### The value of art - inspiration
 

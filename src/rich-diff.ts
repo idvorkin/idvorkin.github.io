@@ -2,6 +2,7 @@
 // ABOUTME: preview server renders same-origin at /_diff-base/<path> (_plugins/diff_base_generator.rb).
 // Block-level LCS pairs paragraphs; word-level LCS marks <ins>/<del> inside changed blocks, keeping markup.
 
+import { selectorFromDiffRange } from "./annotate-anchor";
 import { type Change, type ChangeNav, attachChangeNav } from "./diff-nav";
 
 export const PROD_ORIGIN = "https://idvork.in";
@@ -327,6 +328,9 @@ export async function toggleRichDiff(prUrl?: string): Promise<boolean> {
     s.textContent = STYLE;
     document.head.appendChild(s);
   }
+
+  // The annotate tool (_includes/annotate.html) is an inline script; it finds this when a selection lands in the diff.
+  (window as any).blogAnnotateDiffSelector = selectorFromDiffRange;
 
   const path = window.location.pathname;
   const mainUrl = baseUrl(path);

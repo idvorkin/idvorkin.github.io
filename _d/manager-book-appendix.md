@@ -56,7 +56,7 @@ See the whole manager book:
 
 ### Google's Project Oxygen
 
-Google is a very data driven, willing to challenge the status quo company. One of their ideas was getting rid of managers all together, and that was a [failure](https://rework.withgoogle.com/subjects/managers/). Given then conclusion managers were necessary, they formed Project Oxygen, a data driven approach to understanding the attributes of successful managers. Here is there list of management [attributes](https://rework.withgoogle.com/blog/the-evolution-of-project-oxygen/):
+Google is a very data driven, willing to challenge the status quo company. One of their ideas was getting rid of managers all together, and that was a [failure](https://rework.withgoogle.com/subjects/managers/). Given the conclusion managers were necessary, they formed Project Oxygen, a data driven approach to understanding the attributes of successful managers. Here is their list of management [attributes](https://rework.withgoogle.com/blog/the-evolution-of-project-oxygen/):
 
 1. Is a good coach
 1. Empowers team and does not micromanage
@@ -151,15 +151,15 @@ _You'll also notice the principles are deliberately not ranked, and have tension
 
 1. I come across as confident, that's just a personality flaw. Please don't confuse my confidence with my conviction, and push back.
 2. Don't worry about "over" influencing me. I'm learning context, and will ref-count and circle back as I get more data.
-3. My goal is to do nothing. If I'm doing anything you should do, want to do, or want to learn to do - lets make it happen.
+3. My goal is to do nothing. If I'm doing anything you should do, want to do, or want to learn to do - let's make it happen.
 4. I'm super transparent
 5. Platforms;
    - If you build it they will not come.
-   - If its a platform you'll have lots of opportunities to iterate before you're done.
-   - Built every iteration with a committed partner
+   - If it's a platform you'll have lots of opportunities to iterate before you're done.
+   - Build every iteration with a committed partner
    - Launch the first iteration ASAP with minimal flexibility - you'll learn a tonne
    - Build the second iteration so it's cheaper to build the 3rd.
-   - Build the third by providing flexibility in those must frequently changed dimensions
+   - Build the third by providing flexibility in those most frequently changed dimensions
    - Build the next iteration for a small set of users
    - Rinse Repeat
 
@@ -169,7 +169,7 @@ _You'll also notice the principles are deliberately not ranked, and have tension
 **Rules of software as an IC**
 
 1. No duplicate code - Fix it once!
-1. Trust tests not experts - Bring data not someones faulty memory
+1. Trust tests not experts - Bring data not someone's faulty memory
 1. Log bug then whine - Whining is fine, but bring it forward
 
 **My Kryptonite**
@@ -275,7 +275,7 @@ Specific team members for engine, seat belts, etc
 
 - [Manager's Playbook](https://github.com/ksindi/managers-playbook/blob/master/README.md) - Cool awesome list for managers
 - [How managers get stuck](https://medium.com/@skamille/how-do-managers-get-stuck-b6ec9ecd1da1)
-- [The managers path](https://www.amazon.com/Managers-Path-Leaders-Navigating-Growth/dp/1491973897) - This book feels like it lacks "complete" mental models, but it's the only book of it's kind - so it's the best there is!
+- [The managers path](https://www.amazon.com/Managers-Path-Leaders-Navigating-Growth/dp/1491973897) - This book feels like it lacks "complete" mental models, but it's the only book of its kind - so it's the best there is!
 - [Elided Branches](http://www.elidedbranches.com/) - Blog on engineering management.
 - [I.M Wright's Hard Code](https://imwrightshardcode.com) - Engineering Management from Microsoft, covers most topics.
 - [Give away your legos](https://review.firstround.com/give-away-your-legos-and-other-commandments-for-scaling-startups) Dealing with org's scaling

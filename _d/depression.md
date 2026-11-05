@@ -10,7 +10,7 @@ redirect_from:
 imagefeature: https://github.com/idvorkin/blob/raw/master/noun-depression.png
 ---
 
-When you're depressed you don't think you've put on a gray veil - seeing the world through the haze of a bad mood. You think that a veil has been taken away. The veil of happiness, and you believe you're seeing the world as it truly is: alone, petrifying, and painful. But the truth lies. The depressed say "No one loves me." And you say, "I love you, your wife loves you, your mother loves you." and the depressed ignore you. The depressed will continue, "None of this matters, we're just going to die in the end." To which you have to say, "That's true, but I think right now should focus on what to have for breakfast."
+When you're depressed you don't think you've put on a gray veil - seeing the world through the haze of a bad mood. You think that a veil has been taken away. The veil of happiness, and you believe you're seeing the world as it truly is: alone, petrifying, and painful. But the truth lies. The depressed say "No one loves me." And you say, "I love you, your wife loves you, your mother loves you." and the depressed ignore you. The depressed will continue, "None of this matters, we're just going to die in the end." To which you have to say, "That's true, but I think right now we should focus on what to have for breakfast."
 
 _(Quotes butchered from Andrew Solomon's superb TED talk, as are many parts of this post)_
 
@@ -43,7 +43,7 @@ Grief is explicitly reactive. If you have a loss and you feel incredibly unhappy
 
 ### [Anxiety](/anxiety), Depression's cruel enforcer
 
-In it's weaker forms, [anxiety](/anxiety) is the difference between reality and expectations. But as it becomes fiercer, I'll quote Solomon again:
+In its weaker forms, [anxiety](/anxiety) is the difference between reality and expectations. But as it becomes fiercer, I'll quote Solomon again:
 
 _And then the anxiety set in. If you told me that I'd have to be depressed for the next month, I would say, "As long I know it'll be over in November, I can do it." But if you said to me, "You have to have acute anxiety for the next month," I would rather slit my wrist than go through it. It was the feeling all the time like that feeling you have if you're walking and you slip or trip and the ground is rushing up at you, but instead of lasting half a second, the way that does, it lasted for six months. It's a sensation of being afraid all the time but not even knowing what it is that you're afraid of. And it was at that point that I began to think that it was just too painful to be alive, and that the only reason not to kill oneself was so as not to hurt other people._
 
@@ -90,7 +90,7 @@ An extremely well written book about depression. It helps a reader understand th
 A psychiatrist's story of bi-polar disorder, a very well written personal memoir. It gives a good feeling of the highs of Mania as well as the lows of depression.
 
 [Bipolar Disorder Survival Guide, Second Edition](http://www.amazon.com/Bipolar-Disorder-Survival-Guide-Second/dp/1606235427/ref=sr_1_1?ie=UTF8&qid=1455117269&sr=8-1&keywords=bipolar+survival+guide)
-An engineering manual for laymen on bi-polar disorder. This is a great book if you'd like to understand the current medical knowledge around bi-polar disorder, as well as what you can do to for yourself and your loved ones.
+An engineering manual for laymen on bi-polar disorder. This is a great book if you'd like to understand the current medical knowledge around bi-polar disorder, as well as what you can do for yourself and your loved ones.
 
 ### Videos
 
@@ -104,7 +104,7 @@ I find these videos great discussions on how to head off depression, especially 
 
 {% include youtube.html src="snAhsXyO3Ck" %}
 
-**On Depression** - Good talk on biological take on depression, symptoms, and implicit stress. (Author has a great book why Zebra's don't get ulcers)
+**On Depression** - Good talk on biological take on depression, symptoms, and implicit stress. (Author has a great book why Zebras don't get ulcers)
 
 {% include youtube.html src="NOAgplgTxfc" %}
 
