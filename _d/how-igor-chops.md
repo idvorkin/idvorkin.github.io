@@ -37,6 +37,7 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
   - [The Upgrade: Herdr](#the-upgrade-herdr)
   - [Codex, Muse and Grok Through Herdr](#codex-muse-and-grok-through-herdr)
   - [The Dashboard That Arrived](#the-dashboard-that-arrived)
+  - [The Rear-View Mirror: AgentsView](#the-rear-view-mirror-agentsview)
   - [The 8 Stages of AI Coding](#the-8-stages-of-ai-coding)
 - [Voice: How I Talk to the Agents](#voice-how-i-talk-to-the-agents)
 - [Notes from the Trenches](#notes-from-the-trenches)
@@ -152,6 +153,12 @@ Because Herdr has a socket API, my main Claude session can open a tab, start a C
 ### The Dashboard That Arrived
 
 The multi-agent dashboard I once filed under "the future" ([history](/chop-history#january-to-april-2026-mumbling-on-the-couch)) arrived in three pieces: [the AI Cockpit](/ai-cockpit), my control surface for watching slow parallel agents; [the Cockpit Larry built for me](/larry-cockpit), where a non-coding agent takes my decisions out of a chat scroll; and [Gas City](/gas-city), where the orchestration lives in the city rather than in my head. I didn't build the first dashboard at all. I gave the requirements and Claude built it.
+
+### The Rear-View Mirror: AgentsView
+
+The cockpit shows what the agents are doing now; [AgentsView](https://agentsview.io) shows what they did. It reads the session logs Claude Code, Codex and Grok already write into a local SQLite archive, then gives me session search, per-session health scores, recent edits, and what each project, model and agent cost. Install is `curl -fsSL https://agentsview.io/install.sh | bash`; it sends an anonymous daily ping unless you set `DO_NOT_TRACK=1`.
+
+![AgentsView's Usage tab on my machine: a month of agent spend by project](/images/agentsview-usage.webp)
 
 ### The 8 Stages of AI Coding
 
@@ -403,7 +410,7 @@ The loop is the same every time; [The CHOP Shop](/chop#the-loop) has the why, th
 8. **Merge.** Mine, on my repos. On the agent org the agent merges and I triage after.
 9. **Close-out.** `pr-hygiene` checks every open PR for unanswered review feedback before the session ends; `learn-from-session` writes the durable lessons back into the conventions; the weekly [changelog](/changelog) picks up the rest.
 
-{% include alert.html content="**My stack, October 2026.** Claude Code (Opus 5.5 in the main seat, Fable 5.1 for the hard problems) · Herdr 0.9 as the multiplexer · Treehouse 3 for pooled worktrees · beads 1.3 for tasks · Codex, Muse and Grok as sub-agents · prek hooks, pr-checks and no-mistakes as gates · Lavish boards for review · quota-axi for the meters · Wispr Flow and a Lark lav mic for voice · OrbStack Ubuntu VMs on a desktop, behind Tailscale. When this rots, replace the box, not the prose." style="info" %}
+{% include alert.html content="**My stack, October 2026.** Claude Code (Opus 5.5 in the main seat, Fable 5.1 for the hard problems) · Herdr 0.9 as the multiplexer · Treehouse 3 for pooled worktrees · beads 1.3 for tasks · Codex, Muse and Grok as sub-agents · prek hooks, pr-checks and no-mistakes as gates · Lavish boards for review · quota-axi and AgentsView for the meters · Wispr Flow and a Lark lav mic for voice · OrbStack Ubuntu VMs on a desktop, behind Tailscale. When this rots, replace the box, not the prose." style="info" %}
 
 ## Appendix: Origin of a Tool Nerd
 
