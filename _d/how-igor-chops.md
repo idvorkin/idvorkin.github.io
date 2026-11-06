@@ -37,13 +37,15 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
   - [The Upgrade: Herdr](#the-upgrade-herdr)
   - [Codex, Muse and Grok Through Herdr](#codex-muse-and-grok-through-herdr)
   - [The Dashboard That Arrived](#the-dashboard-that-arrived)
-  - [The Rear-View Mirror: AgentsView](#the-rear-view-mirror-agentsview)
   - [The Review Board: Lavish](#the-review-board-lavish)
+  - [The Gate: no-mistakes](#the-gate-no-mistakes)
+  - [On Trial: AgentsView](#on-trial-agentsview)
   - [The 8 Stages of AI Coding](#the-8-stages-of-ai-coding)
 - [Voice: How I Talk to the Agents](#voice-how-i-talk-to-the-agents)
 - [Notes from the Trenches](#notes-from-the-trenches)
   - [What Works Well - REVIEW THIS WEEKLY!](#what-works-well---review-this-weekly)
   - [What I'm Still Figuring Out](#what-im-still-figuring-out)
+  - [What I Tried and Dropped](#what-i-tried-and-dropped)
 - [The Control Panel - For This Human](#the-control-panel---for-this-human)
 - [Where I Code](#where-i-code)
   - [The Couch](#the-couch)
@@ -153,17 +155,21 @@ Because Herdr has a socket API, my main Claude session can open a tab, start a C
 
 ### The Dashboard That Arrived
 
-The multi-agent dashboard I once filed under "the future" ([history](/chop-history#january-to-april-2026-mumbling-on-the-couch)) arrived in three pieces: [the AI Cockpit](/ai-cockpit), my control surface for watching slow parallel agents; [the Cockpit Larry built for me](/larry-cockpit), where a non-coding agent takes my decisions out of a chat scroll; and [Gas City](/gas-city), where the orchestration lives in the city rather than in my head. I didn't build the first dashboard at all. I gave the requirements and Claude built it.
-
-### The Rear-View Mirror: AgentsView
-
-The cockpit shows what the agents are doing now; [AgentsView](https://agentsview.io) shows what they did. It reads the session logs Claude Code, Codex and Grok already write into a local SQLite archive, then gives me session search, per-session health scores, recent edits, and what each project, model and agent cost. Install is `curl -fsSL https://agentsview.io/install.sh | bash`; it sends an anonymous daily ping unless you set `DO_NOT_TRACK=1`.
-
-![AgentsView's Usage tab on my machine: a month of agent spend by project](/images/agentsview-usage.webp)
+The multi-agent dashboard I once filed under "the future" ([history](/chop-history#january-to-april-2026-mumbling-on-the-couch)) arrived in two pieces: [the AI Cockpit](/ai-cockpit), my control surface for watching slow parallel agents, and [the Cockpit Larry built for me](/larry-cockpit), where a non-coding agent takes my decisions out of a chat scroll. The orchestration lives with [Larry](/larry) and orchestrator sessions on the Mac ([Gas City](#what-i-tried-and-dropped) didn't stick). I didn't build the first dashboard at all. I gave the requirements and Claude built it.
 
 ### The Review Board: Lavish
 
 When a plan, diff or report is too big to read in a chat scroll, the agent turns it into an HTML page and opens it in [Lavish](https://github.com/kunchenguid/lavish-axi), [Kun Chen's](#kun-chen) editor for agent-made HTML. I click an element or select text, type what to change, and the note goes back to the waiting agent as its next prompt. It's the [review step](#a-typical-chop-session) of every big change, and my daily priorities page lives in one; setup is `npx skills add kunchenguid/lavish-axi --skill lavish`.
+
+### The Gate: no-mistakes
+
+Nothing an agent writes reaches a PR without passing [no-mistakes](https://github.com/kunchenguid/no-mistakes), Kun's other tool I use daily. The agent pushes to a `no-mistakes` remote instead of `origin`; it checks the branch out in a throwaway worktree, runs review, tests, docs and lint with a model, then pushes, opens the PR and watches CI. Safe fixes it makes itself; anything else stops and comes back as a finding, so the PR I get is already clean.
+
+### On Trial: AgentsView
+
+{% include local_image_float_right.html src="agentsview-usage.webp" link="agentsview-usage.webp" alt="AgentsView's Usage tab on my machine: a month of agent spend by project" %}
+
+[AgentsView](https://agentsview.io) looks like the rear-view mirror the cockpit lacks: it reads the session logs Claude Code, Codex and Grok already write into a local SQLite archive, then shows session search, per-session health scores, recent edits, and what each project, model and agent cost (that's my last month, on the right). It seems cool; I'm seeing whether I keep opening it. Install is `curl -fsSL https://agentsview.io/install.sh | bash`, and it sends an anonymous daily ping unless you set `DO_NOT_TRACK=1`.
 
 ### The 8 Stages of AI Coding
 
@@ -193,7 +199,7 @@ This diagram perfectly captures the evolution I've lived through. Let me break d
 
 1. **Orchestrated System** - This is the vision: a central dashboard managing dozens of specialized agents. You're no longer coordinating individual agents - you're managing the system that coordinates them. I drew the bricks that system is made of in [AI Orchestrators](/ai-orchestrator).
 
-**Where I Am Today:** Stage 7 for the daily work, with a foot on stage 8. The herd screenshot above is nine workspaces with four agents mid-flight, supervisable because of [Herdr](#the-upgrade-herdr) and [the cockpit](/ai-cockpit). For work that's plural and carries judgment, [Gas City](/gas-city) runs the coordination; [the ladder I climbed to get there](/gas-city#the-ladder-i-climbed-to-get-here) is the same four rungs as the one in [The CHOP Shop](/chop#the-herd-one-agent-to-a-city). Merge hell is mostly gone (a worktree per agent did it); when to use a specialist versus a generalist is still a judgment call I get wrong.
+**Where I Am Today:** Stage 7 for the daily work, with a foot on stage 8. The herd screenshot above is nine workspaces with four agents mid-flight, supervisable because of [Herdr](#the-upgrade-herdr) and [the cockpit](/ai-cockpit). For work that's plural and carries judgment, [Larry](/larry) and orchestrator sessions on the Mac run the coordination; the ladder is the same four rungs as the one in [The CHOP Shop](/chop#the-herd-one-agent-to-a-city). Merge hell is mostly gone (a worktree per agent did it); when to use a specialist versus a generalist is still a judgment call I get wrong.
 
 ## Voice: How I Talk to the Agents
 
@@ -226,6 +232,10 @@ At home it's [Wispr Flow](https://wisprflow.ai/) and a lapel mic, which turned o
 - **Review cost.** Agents produce faster than I can read. Lavish boards and a second-model review pass help; I still don't have a clean answer for what I can safely skip.
 - **Agents stealing channels.** Two sessions that can both answer my Telegram will both try. The fix so far is process discipline (one session owns the bridge), which is exactly the kind of rule I'd rather the tooling enforced.
 - **The optimal number of agents**, still. Fewer than I can run, more than one, and the right number changes with the quality of the spec.
+
+### What I Tried and Dropped
+
+- **[Gas City](/gas-city)** for coordinating plural work: I tried it ([the ladder I climbed to get there](/gas-city#the-ladder-i-climbed-to-get-here)) and dropped it. Coordination now runs through [Larry](/larry) and orchestrator sessions on the Mac.
 
 ## The Control Panel - For This Human
 
@@ -297,7 +307,7 @@ One datapoint on the side of less: an [RL project teaching a model to draw with 
 
 ### Beads for Every Task
 
-Every task gets a bead before any code moves, even quick background work. [Beads](https://github.com/steveyegge/beads) is Steve Yegge's issue tracker for agents: a CLI (`bd create`, `bd ready`, `bd close`), a dependency graph, and a database that survives a process dying. Two things it buys me. The bead is the brief: a background agent reads it instead of a prompt I'd have to retype, and it comments its progress there. And the bead is the handoff: a session that compacts or crashes picks up from the notes on the bead, not from a chat scroll that's gone. It's also the unit of work in [Gas City](/gas-city#what-a-city-is), so the same `bd` commands drive my cities and my one-off agents.
+Every task gets a bead before any code moves, even quick background work. [Beads](https://github.com/steveyegge/beads) is Steve Yegge's issue tracker for agents: a CLI (`bd create`, `bd ready`, `bd close`), a dependency graph, and a database that survives a process dying. Two things it buys me. The bead is the brief: a background agent reads it instead of a prompt I'd have to retype, and it comments its progress there. And the bead is the handoff: a session that compacts or crashes picks up from the notes on the bead, not from a chat scroll that's gone.
 
 ### MCP Servers and Skills
 
@@ -415,7 +425,7 @@ The loop is the same every time; [The CHOP Shop](/chop#the-loop) has the why, th
 8. **Merge.** Mine, on my repos. On the agent org the agent merges and I triage after.
 9. **Close-out.** `pr-hygiene` checks every open PR for unanswered review feedback before the session ends; `learn-from-session` writes the durable lessons back into the conventions; the weekly [changelog](/changelog) picks up the rest.
 
-{% include alert.html content="**My stack, October 2026.** Claude Code (Opus 5.5 in the main seat, Fable 5.1 for the hard problems) · Herdr 0.9 as the multiplexer · Treehouse 3 for pooled worktrees · beads 1.3 for tasks · Codex, Muse and Grok as sub-agents · prek hooks, pr-checks and no-mistakes as gates · Lavish boards for review · quota-axi and AgentsView for the meters · Wispr Flow and a Lark lav mic for voice · OrbStack Ubuntu VMs on a desktop, behind Tailscale. When this rots, replace the box, not the prose." style="info" %}
+{% include alert.html content="**My stack, October 2026.** Claude Code (Opus 5.5 in the main seat, Fable 5.1 for the hard problems) · Herdr 0.9 as the multiplexer · Treehouse 3 for pooled worktrees · beads 1.3 for tasks · Codex, Muse and Grok as sub-agents · prek hooks, pr-checks and no-mistakes as gates · Lavish boards for review · quota-axi for the meters (AgentsView on trial) · Wispr Flow and a Lark lav mic for voice · OrbStack Ubuntu VMs on a desktop, behind Tailscale. When this rots, replace the box, not the prose." style="info" %}
 
 ## Appendix: Origin of a Tool Nerd
 
