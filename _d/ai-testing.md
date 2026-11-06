@@ -290,6 +290,10 @@ Judges are subjective, so we can have multiple judges and average their answers 
 
 And when every score comes back in the same narrow band, the fix is usually the question, not the judge. A judge answers _which of these two is better_ far more reliably than an abstract zero-to-ten scale - the same reason [Chatbot Arena](#human-based-blind-taste-tests-chatbot-arena) is pairwise. Trading absolute scores for a head-to-head against known-good references is what [unstuck an RL run on watercolor paintings](https://surya.website/rling-qwen-to-paint-with-code) that had flatlined.
 
+The full version of this wrinkle is [Cameron Wolfe's AI Engineer NYC talk](https://www.youtube.com/watch?v=zLc8zeGeNaY) on how Netflix evaluates agents when there's no right answer. Humans come first: experts write quality guidelines, raters get calibrated until they agree with each other, and only then does an LLM judge stand in for them, trusted once it agrees with the humans about as well as they agree among themselves. Offline evals screen the ideas, human evals check the best few, and an A/B test picks the winner. Here are the [slides](https://docs.google.com/presentation/d/146TscsJ21LU4kATVS3ES2oC_oZxoCBsTH3soepY25P4/edit?usp=sharing), and a [written guide](https://cameronrwolfe.substack.com/p/subjective-evals) that adds the statistics (power analysis, confidence intervals) and further reading.
+
+{% include youtube.html src="zLc8zeGeNaY" %}
+
 ### Wrinkle - No clear questions
 
 Before testing:
