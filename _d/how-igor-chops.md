@@ -38,6 +38,7 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
   - [Codex, Muse and Grok Through Herdr](#codex-muse-and-grok-through-herdr)
   - [The Dashboard That Arrived](#the-dashboard-that-arrived)
   - [The Rear-View Mirror: AgentsView](#the-rear-view-mirror-agentsview)
+  - [The Review Board: Lavish](#the-review-board-lavish)
   - [The 8 Stages of AI Coding](#the-8-stages-of-ai-coding)
 - [Voice: How I Talk to the Agents](#voice-how-i-talk-to-the-agents)
 - [Notes from the Trenches](#notes-from-the-trenches)
@@ -159,6 +160,10 @@ The multi-agent dashboard I once filed under "the future" ([history](/chop-histo
 The cockpit shows what the agents are doing now; [AgentsView](https://agentsview.io) shows what they did. It reads the session logs Claude Code, Codex and Grok already write into a local SQLite archive, then gives me session search, per-session health scores, recent edits, and what each project, model and agent cost. Install is `curl -fsSL https://agentsview.io/install.sh | bash`; it sends an anonymous daily ping unless you set `DO_NOT_TRACK=1`.
 
 ![AgentsView's Usage tab on my machine: a month of agent spend by project](/images/agentsview-usage.webp)
+
+### The Review Board: Lavish
+
+When a plan, diff or report is too big to read in a chat scroll, the agent turns it into an HTML page and opens it in [Lavish](https://github.com/kunchenguid/lavish-axi), [Kun Chen's](#kun-chen) editor for agent-made HTML. I click an element or select text, type what to change, and the note goes back to the waiting agent as its next prompt. It's the [review step](#a-typical-chop-session) of every big change, and my daily priorities page lives in one; setup is `npx skills add kunchenguid/lavish-axi --skill lavish`.
 
 ### The 8 Stages of AI Coding
 
