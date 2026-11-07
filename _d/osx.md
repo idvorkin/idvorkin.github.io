@@ -96,6 +96,8 @@ Yabai tiles my windows so I never drag one around by hand. I run [my fork](https
 
 I saw this cute thing called [Window Sweaters](https://github.com/saragordic/window-sweaters), Sara Gordić's menu-bar app that knits a border around each window in its app's colors. Of course I [forked it](https://github.com/idvorkin/window-sweaters) and added raccoons: every few minutes a little raccoon runs a lap around the window I'm in, and depending on its appetite, eats the sweater as it goes. I also added Focused Window Only, so only the window I'm using wears one.
 
+![A raccoon runs a lap around a window, eating the knitted border as it goes](https://raw.githubusercontent.com/idvorkin/window-sweaters/main/docs/raccoon-lap.gif)
+
 ### Browser Tab Helper - No more duplicate tabs
 
 Since I'm customizing everything anyway, one of my irritants is browsers: I always end up with duplicate tabs. So I made [browser-tab-helper](https://github.com/idvorkin/browser-tab-helper), a Chrome/Edge extension. Open a page that's already open and a card asks what to do, one key each:
