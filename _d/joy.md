@@ -9,10 +9,10 @@ redirect_from:
   - /makesmile
   - /dealjoy
   - /makejoy
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/racoon-dealer-smiles-and-wonder.webp
+imagefeature: /images/raccoon-joy-magic.webp
 ---
 
-If you could have one superpower, what would it be? At 46, you'd think I'd have a quick answer, but the usual ideas—flying, invisibility, stopping time—felt childish. Probably the setting: a circle of 9-17-year-olds, breaking the ice, sharing their wished-for superpowers. As my mind scrambled, a mild panic set in. Nothing surfaced—until a bit of my eulogy came to me: Igor lived to see eyes go wide and mouths gape with wonder. He loved when strangers were drawn in against their objections, when a kid in meltdown, or an adult weighed down by life, forgot their troubles. Relief washed over me, I knew my answer. The super power I wished for:  bringing joy to others.
+If you could have one superpower, what would it be? At 46, you'd think I'd have a quick answer, but the usual ideas—flying, invisibility, stopping time—felt childish. Probably the setting: a circle of 9-17-year-olds, breaking the ice, sharing their wished-for superpowers. As my mind scrambled, a mild panic set in. Nothing surfaced—until a bit of my eulogy came to me: Igor lived to see eyes go wide and mouths gape with wonder. He loved when strangers were drawn in against their objections, when a kid in meltdown, or an adult weighed down by life, forgot their troubles. Relief washed over me, I knew my answer. The superpower I wished for: bringing joy to others.
 
 <!-- prettier-ignore-start -->
 
@@ -36,10 +36,8 @@ If you could have one superpower, what would it be? At 46, you'd think I'd have 
   - [Joy is contagious](#joy-is-contagious)
   - [Build rapport to make people feel safe](#build-rapport-to-make-people-feel-safe)
   - [Why kids are more receptive to Joy](#why-kids-are-more-receptive-to-joy)
-  - [Other things to file](#other-things-to-file)
   - [Novelty, Wonder and Surprise - Break the mundane](#novelty-wonder-and-surprise---break-the-mundane)
   - [Joy and Overwhelming kindness from a stranger](#joy-and-overwhelming-kindness-from-a-stranger)
-  - [Joy versus pleasure](#joy-versus-pleasure)
   - [Things that bring most people joy](#things-that-bring-most-people-joy)
   - [Manipulation vs Augmenting Experiences](#manipulation-vs-augmenting-experiences)
   - [Imbalance of Impact](#imbalance-of-impact)
@@ -51,9 +49,7 @@ If you could have one superpower, what would it be? At 46, you'd think I'd have 
   - [Mr. Rogers](#mr-rogers)
 - [Future Projects](#future-projects)
   - [Smile box](#smile-box)
-  - [Bubble Show](#bubble-show)
-  - [Put on a magic show](#put-on-a-magic-show)
-  - [Put on a kids birthday party](#put-on-a-kids-birthday-party)
+  - [Bigger stages](#bigger-stages)
 - [Crazy Dream Projects](#crazy-dream-projects)
   - [Become an executive producer for shows](#become-an-executive-producer-for-shows)
   - [Own a vaudeville theater](#own-a-vaudeville-theater)
@@ -63,7 +59,7 @@ If you could have one superpower, what would it be? At 46, you'd think I'd have 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-{% include blob_image_float_right.html src="blog/racoon-dealer-smiles-and-wonder.webp" %}
+{% include local_image_float_right.html src="raccoon-joy-magic.webp" alt="A plush raccoon in rainbow glasses and a green WONDER t-shirt, eyes wide with delight, as a glowing playing card floats above one paw and a fan of cards sits in the other" %}
 
 ## Completed Projects
 
@@ -113,7 +109,7 @@ My early [ballooning](/ig66/621) adventures:
 ### Mismatched shoes, and crazy shirts from TEMU
 
 - First discovered mismatched shoes, harder than it sounds, but crocs are great
-- Used to get fun shirts from thrift shops, but hard to find them. Then discovered TEMU had such shirts for only $8
+- Used to get fun shirts from thrift shops, but hard to find them. Then discovered TEMU had such shirts for only \$8
 - These zany shirts bring instant smiles - from psychedelic patterns to ridiculous slogans
 - People often stop me and say "nice shirt," and that always makes me happy
 - The best part: they're so affordable I can wear a different crazy shirt every day
@@ -122,17 +118,15 @@ My early [ballooning](/ig66/621) adventures:
 
 ### Handing out you are awesome cards
 
-- I discovered these you are awesome cards on TEMU (add picture) they are great!
+- I discovered these you are awesome cards on TEMU, they are great!
 - I wanted to push pocket them, but I can hand them out upside down and people just take them
   - Zach observed the way I give them to people is I put it into their hand and say "Here you go", and they are stunned and take it. That didn't work on a cop, he stepped away.
 - Usually by the time people read it I'm gone, but sometimes if I give them to someone in a lobby they'll catch me on the way out and be like, hey thank you so much
+- Also considering printing on the back of business cards
 
-* Also considering printing on the back of business cards,
-  ![Collection of business card-sized inspirational cards spread on a green surface, featuring positive messages like "YOU'RE AWESOME" with colorful text and rainbow graphics, packaged for distribution](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250505_065941.webp)
+![Collection of business card-sized inspirational cards spread on a green surface, featuring positive messages like "YOU'RE AWESOME" with colorful text and rainbow graphics, packaged for distribution](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250505_065941.webp)
 
 ### Surprise birthday visit to my sister
-
-Link the YouTube Videos (merge the two together)
 
 {% include instagram_reel.html src="DEAMS6kJdRT" %}
 
@@ -157,6 +151,8 @@ Joy is an involuntary experience that acts on you. You can be more receptive to 
 | **Anticipation** | Cannot be anticipated (kills it)      | Anticipation increases it        |
 | **Aftereffect**  | Lingers as warmth                     | Often followed by wanting more   |
 
+Pleasure is the release of tension—relief from what you cannot hold within. Eating chocolate cake, orgasm, getting to pee when you have to go. The [Akbar-Birbal story](/happy#akbar-birbal) makes the point: the greatest pleasure is simply release from unbearable tension. Joy isn't like that.
+
 ### Safety: the precondition for Joy
 
 - Don't want to look stupid
@@ -174,7 +170,7 @@ Joy is an involuntary experience that acts on you. You can be more receptive to 
 ### Joy is contagious
 
 - Performers spend lots of time building the first follower
-- The most important guy is [The First Follower](https://www.youtube.com/watch?v=)
+- The most important guy is [The First Follower](https://www.youtube.com/watch?v=fW8amMCVAJQ)
 
 {% include youtube.html src="fW8amMCVAJQ" %}
 
@@ -191,13 +187,6 @@ Also look at notes from Avner class - who was all about building rapport with a 
 - Less need for validation of peers
 - Expect things to be wholesome and good
 
-### Other things to file
-
-- Concerts
-- Figgie Pudding
-- Christmas Carols
-- Can't help yourself but to sing along
-
 ### Novelty, Wonder and Surprise - Break the mundane
 
 - You need this to snap into the present moment
@@ -212,10 +201,6 @@ Also look at notes from Avner class - who was all about building rapport with a 
 
 If a stranger does something really kind for you unexpectedly, that's kind of like joy
 
-### Joy versus pleasure
-
-Pleasure is the release of tension—relief from what you cannot hold within. Eating chocolate cake, orgasm, getting to pee when you have to go. The [Akbar-Birbal story](/happy#akbar-birbal) illustrates this perfectly: the greatest pleasure is simply release from unbearable tension. Joy isn't like that.
-
 ### Things that bring most people joy
 
 - Babies (especially smiling, or holding your finger)
@@ -223,17 +208,17 @@ Pleasure is the release of tension—relief from what you cannot hold within. Ea
 - Bubbles
 - Reacting to a smile
 - Beautiful singing
-- Singing out loud
-- Christmas Carols
+- Singing out loud - at a concert you can't help yourself but sing along
+- Christmas Carols (Figgy Pudding!)
 - Dancing
 
 ### Manipulation vs Augmenting Experiences
 
 This is especially relevant to [magic](/magic). I think this depends on intent.
 
-Many techniques in magic are around managing attention and molding the experience. You could look at these as manipulative. The test for manipulation vs augmenting experiences, is the intent. If the intent is personal gain it's manipulative, if the intent is the experience of the spectator it's master.
+Many techniques in magic are around managing attention and molding the experience. You could look at these as manipulative. The test for manipulation vs augmenting experiences, is the intent. If the intent is personal gain it's manipulative, if the intent is the experience of the spectator it's mastery.
 
-**It is not manipulation if** your intent is bring the other person pleasure.
+**It is not manipulation if** your intent is to bring the other person pleasure.
 
 **It is manipulation if** your intent is to take advantage of the other person.
 
@@ -252,7 +237,7 @@ I need more thinking here but something like.
 - If the person is already close their set point, they don't move their happiness much e.g:
   - Before - Happiness = SP
   - After - Happiness = SP+K
-  - Delta Happy = (SP+K) - SP) = K
+  - Delta Happy = (SP+K) - SP = K
 - If the person is depressed, say half their set point, then the impact is huge:
   - Before - Happiness = SP/2
   - After - Happiness = SP+K
@@ -314,11 +299,11 @@ Here are some projects I'd love to get into
 
 {%include summarize-page.html src="/smilebox" %}
 
-### Bubble Show
+### Bigger stages
 
-### Put on a magic show
-
-### Put on a kids birthday party
+- **Bubble show** - the [Bubble Bike](#bubble-bike) is a drive-by; I'd love a real show built around bubbles.
+- **Put on a magic show** - a full show for an audience, not just close-up for whoever is in front of me.
+- **Put on a kids birthday party** - kids are the easiest audience to delight ([here's why](#why-kids-are-more-receptive-to-joy)).
 
 ## Crazy Dream Projects
 
@@ -326,9 +311,11 @@ Who knows, maybe one day I'll actually get around to doing these.
 
 ### Become an executive producer for shows
 
+Help get shows made that bring people joy, even when I'm not the one on stage.
+
 ### Own a vaudeville theater
 
-Humorously, I always said this, and one day when I was at the Olympics of magic (FISM 2022), I went to a talk titled: So you want to own a magic, theater - you're probably wrong. Snapped me out of it.
+Humorously, I always said this, and one day when I was at the Olympics of magic (FISM 2022), I went to a talk titled: So you want to own a magic theater - you're probably wrong. Snapped me out of it.
 
 Luckily Tori works in the arts, and I can say I'm a patron of the arts instead
 
