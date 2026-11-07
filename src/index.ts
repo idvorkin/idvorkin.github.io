@@ -21,6 +21,8 @@ import {
 // Import random-prompter functionality
 import { TreeNode, add_random_prompts, add_sunburst, add_sunburst_from_dom } from "./random-prompter";
 
+// Import the home page Featured collapse toggle
+import { setupFeaturedCollapse } from "./featured-collapse";
 // Import random-visit re-roll dice
 import { goToRandomPage, topicFromSearch } from "./random-dice";
 // Import recent posts functionality
@@ -161,6 +163,8 @@ export {
   renderSearchHit,
   // Recent posts export
   initRecentAllPosts,
+  // Home page Featured section collapse toggle
+  setupFeaturedCollapse,
   // Random prompter exports
   add_random_prompts,
   add_sunburst,

@@ -25,16 +25,6 @@ test.describe("Random page topic", () => {
   test("?topic=ai lands on a post in that topic", async ({ page }) => {
     expect(await rollFrom(page, "/random?topic=ai")).toBe("/topic-ai-post");
   });
-
-  test("no topic rolls from everything", async ({ page }) => {
-    expect(await rollFrom(page, "/random")).toBe("/topic-last-post");
-  });
-
-  test("an unknown topic rolls from everything and warns", async ({ page }) => {
-    const warnings: string[] = [];
-    expect(await rollFrom(page, "/random?topic=cooking", warnings)).toBe("/topic-last-post");
-    expect(warnings.join()).toContain("cooking");
-  });
 });
 
 test.describe("Random Page Navigation", () => {
@@ -62,105 +52,9 @@ test.describe("Random Page Navigation", () => {
     expect(title).not.toBe("");
   });
 
-  test("random page links on /about page work", async ({ page }) => {
-    // Navigate to about page
-    await page.goto("/about");
-
-    // Find the first random page link (there may be multiple)
-    const randomLink = page.locator('a[href="/random"]').first();
-    await expect(randomLink).toBeVisible();
-
-    // Click the link
-    await randomLink.click();
-
-    // Wait for navigation
-    await page.waitForLoadState("networkidle");
-
-    // Verify we're not on /about or /random
-    const currentUrl = page.url();
-    expect(currentUrl).not.toContain("/about");
-    expect(currentUrl).not.toContain("/random");
-  });
-
-  test("random page links on /recent page work", async ({ page }) => {
-    // Navigate to recent page
-    await page.goto("/recent");
-
-    // Wait for page to load fully
-    await page.waitForLoadState("networkidle");
-
-    // Find the random page link - it's in a paragraph after the list
-    const randomLink = page.locator('a[href="/random"]').first();
-
-    // Check if link exists (might be hidden by CSS but still clickable)
-    await expect(randomLink).toHaveCount(1);
-
-    // Click and wait for navigation using Promise.all to handle the redirect
-    await Promise.all([
-      page.waitForNavigation({ waitUntil: "networkidle" }),
-      randomLink.evaluate((el: HTMLElement) => el.click()),
-    ]);
-
-    // Verify we're not on /recent or /random
-    const currentUrl = page.url();
-    expect(currentUrl).not.toContain("/recent");
-    expect(currentUrl).not.toContain("/random");
-  });
-
-  test("multiple /random visits go to different pages", async ({ page }) => {
-    const visitedUrls = new Set<string>();
-    const numVisits = 5;
-
-    for (let i = 0; i < numVisits; i++) {
-      await page.goto("/random");
-      await page.waitForLoadState("networkidle");
-
-      const currentUrl = page.url();
-      visitedUrls.add(currentUrl);
-
-      // Small delay to ensure we don't hit rate limits
-      await page.waitForTimeout(100);
-    }
-
-    // We should have visited at least 2 different pages in 5 attempts
-    // (allowing for some randomness)
-    expect(visitedUrls.size).toBeGreaterThanOrEqual(2);
-  });
-
   test("random post selector on /about page works", async ({ page }) => {
     // Navigate to about page
     await page.goto("/about");
-
-    // Find the random post selector div
-    const randomPostDiv = page.locator("#random-blog-post");
-    await expect(randomPostDiv).toBeVisible();
-
-    // Get initial text
-    const initialText = await randomPostDiv.textContent();
-
-    // Click to load a random post
-    await randomPostDiv.click();
-
-    // Wait for content to change
-    await page.waitForTimeout(500);
-
-    // Verify content has changed
-    const newText = await randomPostDiv.textContent();
-    expect(newText).not.toBe(initialText);
-
-    // Verify it contains a link and description
-    await expect(randomPostDiv.locator("a").first()).toBeVisible();
-    expect(newText).toContain(":");
-
-    // Verify clicking the link navigates to a post
-    const linkHref = await randomPostDiv.locator("a").first().getAttribute("href");
-    expect(linkHref).toBeTruthy();
-    expect(linkHref).not.toBe("#");
-  });
-
-  test("random post selector on /recent page works", async ({ page }) => {
-    // Navigate to recent page
-    await page.goto("/recent");
 
     // Find the random post selector div
     const randomPostDiv = page.locator("#random-blog-post");

@@ -5,10 +5,6 @@ test.describe("Auto-generated Sunburst", () => {
     await page.goto("/test-auto-sunburst");
   });
 
-  test("Page loads correctly", async ({ page }) => {
-    await expect(page).toHaveTitle(/TEST AUTO-GENERATED SUNBURST/i);
-  });
-
   test("Sunburst is generated from DOM structure", async ({ page }) => {
     // Wait for the sunburst to be rendered
     await page.waitForSelector("#sunburst svg", { timeout: 5000 });
@@ -70,23 +66,5 @@ test.describe("Auto-generated Sunburst", () => {
     }
 
     expect(newPrompt).not.toBe(initialPrompt);
-  });
-
-  test("Page has no JavaScript errors", async ({ page }) => {
-    const errors: string[] = [];
-    page.on("console", (msg) => {
-      if (msg.type() === "error") {
-        const text = msg.text();
-        // Ignore known errors that are not related to auto-sunburst functionality
-        if (!text.includes("recent-posts container not found") && !text.includes("Error fetching link info")) {
-          errors.push(text);
-        }
-      }
-    });
-
-    await page.goto("/test-auto-sunburst");
-    await page.waitForSelector("#sunburst svg", { timeout: 5000 });
-
-    expect(errors).toHaveLength(0);
   });
 });

@@ -207,7 +207,7 @@ no-render-title: true
 </div>
 
 <script type="module">
-    import { get_recent_posts, get_random_post, get_random_posts_batch, get_link_info, searchBlog } from "/assets/js/index.js";
+    import { get_recent_posts, get_random_post, get_random_posts_batch, get_link_info, searchBlog, setupFeaturedCollapse } from "/assets/js/index.js";
     
     // Search runs locally: Pagefind for full text + MiniSearch for typo-tolerant
     // titles. No client to initialize, no keys — see docs/search.md.
@@ -468,7 +468,7 @@ no-render-title: true
             });
             
             // Restore collapsed state if it was collapsed
-            if (featuredIsCollapsed) {
+            if (featuredCollapse?.isCollapsed()) {
                 document.getElementById('featured-results').style.display = 'none';
             }
             
@@ -581,45 +581,9 @@ no-render-title: true
     // Track page load time
     const pageLoadStart = performance.now();
     
-    // Setup collapse button for featured section
-    const STORAGE_KEY = 'featured-section-collapsed';
-    let featuredIsCollapsed = localStorage.getItem(STORAGE_KEY) === 'true';
-    
-    function setupFeaturedCollapse() {
-        const collapseBtn = document.getElementById('featured-collapse-btn');
-        const featuredResults = document.getElementById('featured-results');
-        
-        if (!collapseBtn || !featuredResults) {
-            console.warn('Featured collapse elements not found');
-            return;
-        }
-        
-        // Apply initial state from localStorage
-        if (featuredIsCollapsed) {
-            featuredResults.style.display = 'none';
-            collapseBtn.textContent = 'Expand +';
-            collapseBtn.title = 'Expand section';
-        }
-        
-        collapseBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            featuredIsCollapsed = !featuredIsCollapsed;
-            
-            // Save state to localStorage
-            localStorage.setItem(STORAGE_KEY, featuredIsCollapsed.toString());
-            
-            if (featuredIsCollapsed) {
-                featuredResults.style.display = 'none';
-                collapseBtn.textContent = 'Expand +';
-                collapseBtn.title = 'Expand section';
-            } else {
-                featuredResults.style.display = 'block';
-                collapseBtn.textContent = 'Collapse −';
-                collapseBtn.title = 'Collapse section';
-            }
-        });
-    }
-    
+    // Featured collapse: state, persistence and button text live in src/featured-collapse.ts.
+    let featuredCollapse = null;
+
     // Load initial content when page loads
     $(document).ready(() => {
         const domReadyTime = performance.now() - pageLoadStart;
@@ -627,7 +591,7 @@ no-render-title: true
         console.log('🔍 [Page] Local search ready, starting content load...');
         
         // Setup collapse button
-        setupFeaturedCollapse();
+        featuredCollapse = setupFeaturedCollapse();
         
         // Use intersection observer for truly lazy loading
         if ('IntersectionObserver' in window) {

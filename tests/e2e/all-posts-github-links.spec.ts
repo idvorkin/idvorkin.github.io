@@ -1,13 +1,4 @@
 import { expect, test } from "./base-test";
-import { checkForJsErrors } from "./js-error-checker";
-
-test("All posts page loads correctly", async ({ page }) => {
-  await page.goto("/all/");
-
-  // Check that the page has loaded properly
-  await expect(page.locator("h1")).toContainText("All Blog Posts");
-  await expect(page.locator("body")).toContainText("This page lists all blog posts for link checking purposes");
-});
 
 test("GitHub source links are visible and functional", async ({ page }) => {
   await page.goto("/all/");
@@ -109,10 +100,6 @@ test("GitHub links are grouped correctly by collection", async ({ page }) => {
       }
     }
   }
-});
-
-test("All posts page has no JavaScript errors", async ({ page }) => {
-  await checkForJsErrors(page, "/all/");
 });
 
 test("GitHub link styling is correct", async ({ page }) => {

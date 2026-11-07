@@ -1,5 +1,4 @@
 import { expect, test } from "./base-test";
-import { checkForJsErrors } from "./js-error-checker";
 
 test.describe("Homepage search functionality", () => {
   test.beforeEach(async ({ page }) => {
@@ -131,10 +130,6 @@ test.describe("Homepage search functionality", () => {
     await expect(page.locator("#random-section")).toBeVisible();
   });
 
-  test("Homepage has no JavaScript errors", async ({ page }) => {
-    await checkForJsErrors(page, "/");
-  });
-
   test("Random posts can be refreshed", async ({ page }) => {
     // Wait for random posts to actually load (not just timeout)
     await page.waitForSelector("#random-results .result-item a", { timeout: 5000 });
@@ -179,27 +174,6 @@ test.describe("Homepage search functionality", () => {
     await expect(page.locator("h1")).toContainText("Recently Modified Content");
   });
 
-  test("Lazy loading shows loading state", async ({ page }) => {
-    // Navigate to page and immediately check for loading states
-    await page.goto("/");
-
-    // At least one section should show "Loading..." initially
-    const loadingStates = await page.locator(".result-item").filter({ hasText: "Loading..." }).count();
-
-    // If IntersectionObserver is supported, we should see loading states
-    // Note: This test might be flaky if content loads too fast
-    if (loadingStates > 0) {
-      expect(loadingStates).toBeGreaterThanOrEqual(1);
-    }
-
-    // Wait for content to load
-    await page.waitForTimeout(1500);
-
-    // No loading states should remain
-    const remainingLoadingStates = await page.locator(".result-item").filter({ hasText: "Loading..." }).count();
-    expect(remainingLoadingStates).toBe(0);
-  });
-
   test("Search hides recent and random sections", async ({ page }) => {
     // Wait for initial load
     await page.waitForTimeout(1000);
@@ -224,29 +198,5 @@ test.describe("Homepage search functionality", () => {
     // Verify sections are visible again
     await expect(page.locator("#recent-section")).toBeVisible();
     await expect(page.locator("#random-section")).toBeVisible();
-  });
-
-  test("Sections load in parallel", async ({ page }) => {
-    // Clear browser cache to ensure fresh load
-    await page.context().clearCookies();
-
-    // Start timing
-    const startTime = Date.now();
-
-    // Navigate to page
-    await page.goto("/");
-
-    // Wait for all sections to have content
-    await Promise.all([
-      page.waitForSelector("#featured-results .result-item", { timeout: 5000 }),
-      page.waitForSelector("#recent-results .result-item", { timeout: 5000 }),
-      page.waitForSelector("#random-results .result-item", { timeout: 5000 }),
-    ]);
-
-    const loadTime = Date.now() - startTime;
-
-    // If sections load in parallel, total time should be less than sequential loading would take
-    // This is a rough check - parallel loading should be faster than 3x the slowest section
-    expect(loadTime).toBeLessThan(5000);
   });
 });

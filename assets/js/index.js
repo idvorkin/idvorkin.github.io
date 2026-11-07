@@ -45,7 +45,7 @@ async function x(e) {
     return console.error("Error fetching link info", n), {};
   }
 }
-async function Oe(e) {
+async function Be(e) {
   try {
     const t = await x(), n = Object.keys(t).filter((i) => {
       const a = ["/404", "/404.html", "/search", "/recent", "/index.html", "/graph", "/about", "/random"].some((d) => i === d || i.endsWith(d)), c = [
@@ -90,7 +90,7 @@ function et(e) {
 function tt(e) {
   return [...e].sort((t, n) => t.last_modified && n.last_modified ? new Date(n.last_modified).getTime() - new Date(t.last_modified).getTime() : n.doc_size - t.doc_size);
 }
-async function Be() {
+async function Oe() {
   const e = await Ze(), t = Qe(e), n = et(t);
   return tt(n);
 }
@@ -218,7 +218,7 @@ async function _e(e = "last-modified-posts", t = 15, n = document) {
     return;
   }
   try {
-    const r = await Be(), i = it(r, t);
+    const r = await Oe(), i = it(r, t);
     o.innerHTML = i, rt("remaining-posts-toggle", "remaining-posts-content", n);
   } catch (r) {
     console.error("❌ Error loading recent posts:", r), o.innerHTML = "<p>Error loading modified posts. Please try again later.</p>";
@@ -254,7 +254,7 @@ async function we(e = "recent-posts") {
     return;
   }
   try {
-    const n = await Be(), o = at(n), r = lt(o);
+    const n = await Oe(), o = at(n), r = lt(o);
     t.innerHTML = r;
   } catch (n) {
     console.error("❌ Error loading recent posts:", n), t.innerHTML = "<p>Error loading recent posts. Please try again later.</p>";
@@ -534,7 +534,7 @@ function Tt(e, t) {
   const b = document.createElement("small");
   return b.textContent = "Tip: Press Ctrl+Enter (Cmd+Enter on Mac) to submit", h.appendChild(b), a.appendChild(l), a.appendChild(c), a.appendChild(d), a.appendChild(u), a.appendChild(p), a.appendChild(h), o.appendChild(r), o.appendChild(a), n.appendChild(o), n;
 }
-function Lt(e, t) {
+function St(e, t) {
   document.querySelectorAll(".github-issue-popup").forEach((s) => {
     s.style.display = "none";
   }), e.style.display = "block", e.style.position = "absolute", e.style.zIndex = "1000";
@@ -548,7 +548,7 @@ function F(e) {
   const t = e.querySelector(".github-issue-comment");
   t && (t.value = "");
 }
-function St(e, t = 2e3) {
+function Lt(e, t = 2e3) {
   if (typeof document < "u" && document.querySelector) {
     const o = document.querySelector(".copy-link-tooltip");
     o && o.remove();
@@ -821,7 +821,7 @@ function Ht(e, t) {
   if (e.querySelector(`.${t.iconClass || de.iconClass}`))
     return;
   const o = Pt(e), r = Et(t), i = Ct(), s = [], a = async (m) => {
-    m.preventDefault(), m.stopPropagation(), await It(o, t) || St(r, t.tooltipDuration);
+    m.preventDefault(), m.stopPropagation(), await It(o, t) || Lt(r, t.tooltipDuration);
   };
   r.addEventListener("click", a), s.push(() => r.removeEventListener("click", a));
   const l = (m) => {
@@ -831,7 +831,7 @@ function Ht(e, t) {
   const c = (m) => {
     m.preventDefault(), m.stopPropagation();
     const h = At(e, o);
-    Lt(h, e);
+    St(h, e);
   };
   i.addEventListener("click", c), s.push(() => i.removeEventListener("click", c));
   const d = (m) => {
@@ -1039,12 +1039,12 @@ function Dt() {
   `, document.head.appendChild(t);
 }
 let Te = !1;
-function Ot(e = {}) {
+function Bt(e = {}) {
   Te || (Te = !0, Dt(), document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", () => {
     Ce(e);
   }) : Ce(e));
 }
-const re = 50, ie = 100, Bt = re * ie;
+const re = 50, ie = 100, Ot = re * ie;
 function W(e = 0) {
   if (typeof document > "u")
     return;
@@ -1056,7 +1056,7 @@ function W(e = 0) {
       return;
     }
     console.error(
-      `❌ GLightbox failed to load after ${Bt / 1e3} seconds, aborting image zoom initialization`
+      `❌ GLightbox failed to load after ${Ot / 1e3} seconds, aborting image zoom initialization`
     );
     return;
   }
@@ -1103,7 +1103,7 @@ function W(e = 0) {
   }
 }
 typeof document < "u" && (document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", () => W()) : setTimeout(() => W(), 500));
-const ue = "random-arrival-path", q = "random-arrival-topic", E = "random-reroll-dice", se = "random-reroll", ae = "random-reroll-close", Le = "random-reroll-style", Ge = 550, zt = `
+const ue = "random-arrival-path", q = "random-arrival-topic", E = "random-reroll-dice", se = "random-reroll", ae = "random-reroll-close", Se = "random-reroll-style", Ge = 550, zt = `
 #${se}{position:fixed;right:max(4px, env(safe-area-inset-right));
   bottom:calc(80px + env(safe-area-inset-bottom));z-index:9990;width:48px;height:48px}
 body:has(#rd-nav) #${se}{bottom:calc(120px + env(safe-area-inset-bottom))}
@@ -1173,7 +1173,7 @@ function jt(e, t = A()) {
     return !1;
   }
 }
-function co(e) {
+function uo(e) {
   return new URLSearchParams(e).get("topic")?.trim().toLowerCase() || null;
 }
 function Wt(e, t = A()) {
@@ -1189,24 +1189,24 @@ function qt(e = A()) {
     return null;
   }
 }
-async function Yt(e, t = Oe) {
+async function Yt(e, t = Be) {
   const n = Y(e);
   let o = await t();
   for (let r = 0; r < 4 && Y(o) === n; r++)
     o = await t();
   return o;
 }
-async function Jt(e = (o) => window.location.assign(o), t = Oe, n = null) {
+async function Jt(e = (o) => window.location.assign(o), t = Be, n = null) {
   const o = await Yt(window.location.pathname, () => t(n));
   return Gt(o), Wt(n), e(o), o;
 }
-const Xt = "#id-ui-toc-dropdown", Kt = 12;
+const Kt = "#id-ui-toc-dropdown", Xt = 12;
 function V(e, t = document) {
-  const n = t.querySelector(Xt);
+  const n = t.querySelector(Kt);
   if (e.style.removeProperty("bottom"), !n) return;
   const o = n.getBoundingClientRect();
   if (o.height === 0) return;
-  const r = e.getBoundingClientRect(), i = r.bottom + Kt - o.top;
+  const r = e.getBoundingClientRect(), i = r.bottom + Xt - o.top;
   if (i > 0) {
     const s = window.innerHeight - r.bottom;
     e.style.bottom = `${Math.ceil(s + i)}px`;
@@ -1215,9 +1215,9 @@ function V(e, t = document) {
 function Vt(e = document) {
   if (!jt(window.location.pathname) || e.getElementById(E))
     return null;
-  if (!e.getElementById(Le)) {
+  if (!e.getElementById(Se)) {
     const r = e.createElement("style");
-    r.id = Le, r.textContent = zt, e.head.appendChild(r);
+    r.id = Se, r.textContent = zt, e.head.appendChild(r);
   }
   const t = e.createElement("div");
   t.id = se;
@@ -1239,7 +1239,7 @@ function Vt(e = document) {
     r.stopPropagation(), Ut(), t.remove();
   }), t.append(n, o), e.body.appendChild(t), V(t, e), window.addEventListener("resize", () => V(t, e)), window.setTimeout(() => V(t, e), 1e3), n;
 }
-const Zt = "https://idvork.in", Qt = "idvork.in", en = "http://localhost:4000", M = "from_test", J = "idvorkin_test_origin", Se = "swap-toast", tn = /* @__PURE__ */ new Set(["localhost", "127.0.0.1", "0.0.0.0", "[::1]"]);
+const Zt = "https://idvork.in", Qt = "idvork.in", en = "http://localhost:4000", M = "from_test", J = "idvorkin_test_origin", Le = "swap-toast", tn = /* @__PURE__ */ new Set(["localhost", "127.0.0.1", "0.0.0.0", "[::1]"]);
 function pe(e) {
   return e === Qt;
 }
@@ -1304,9 +1304,9 @@ function an() {
   );
 }
 function ln(e, t, n) {
-  document.getElementById(Se)?.remove();
+  document.getElementById(Le)?.remove();
   const o = document.createElement("div");
-  o.id = Se, o.setAttribute("role", "status"), o.style.cssText = "position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:10000;background:#333;color:#fff;padding:10px 16px;border-radius:6px;font:14px/1.4 system-ui,sans-serif;box-shadow:0 2px 8px rgba(0,0,0,.4);max-width:90vw;", o.append(e);
+  o.id = Le, o.setAttribute("role", "status"), o.style.cssText = "position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:10000;background:#333;color:#fff;padding:10px 16px;border-radius:6px;font:14px/1.4 system-ui,sans-serif;box-shadow:0 2px 8px rgba(0,0,0,.4);max-width:90vw;", o.append(e);
   const r = document.createElement("a");
   r.href = t, r.textContent = n, r.style.cssText = "color:#9cf;text-decoration:underline;", o.append(r), document.body.append(o), setTimeout(() => o.remove(), 5e3);
 }
@@ -1540,7 +1540,7 @@ function G() {
   const e = "__idvorkin_load_globals_initialized__";
   window[e] || (window[e] = !0, rn(), $(pn), $(gn), typeof $ < "u" && $.fn && $.fn.ready ? $(document).ready(Z) : typeof document < "u" && (document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", Z) : Z()), ct(), document.getElementById("last-modified-posts") && st(), $(() => {
     Me("ui-toc", !0), Me("ui-toc-affix", !1);
-  }), Ot(), W(), $t(), Vt());
+  }), Bt(), W(), $t(), Vt());
 }
 typeof $ < "u" && $.fn && $.fn.ready ? $(document).ready(G) : typeof document < "u" && (document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", G) : G());
 function Q(e) {
@@ -1644,7 +1644,7 @@ function We(e = $) {
   }
   return r.set(n, o), r;
 }
-function* X(e) {
+function* K(e) {
   if (!e)
     return;
   const t = [];
@@ -1656,7 +1656,7 @@ function* X(e) {
   }
 }
 function $n(e) {
-  const t = Array.from(X(e)).map(([n, o]) => [n.name, o?.name]);
+  const t = Array.from(K(e)).map(([n, o]) => [n.name, o?.name]);
   return {
     ids: t.map(([n, o]) => n),
     labels: t.map(([n, o]) => n),
@@ -1668,10 +1668,10 @@ function Ne(e = We) {
   return new Map(n);
 }
 function Ae(e, t, n) {
-  const o = Array.from(X(t)).find(([a, l]) => a.name === e);
+  const o = Array.from(K(t)).find(([a, l]) => a.name === e);
   if (!o)
     return "Click in any box or circle";
-  const [r, i] = o, s = Array.from(X(r)).map(([a, l]) => a).filter((a) => {
+  const [r, i] = o, s = Array.from(K(r)).map(([a, l]) => a).filter((a) => {
     const l = n.has(a.name), c = n.has(`${a.name}🔗`);
     return l || c;
   }).flatMap((a) => (n.get(a.name) || n.get(`${a.name}🔗`) || []).map((c) => `${a.name}: ${c}`));
@@ -1723,8 +1723,8 @@ async function he(e, t, n, o = $, r = Plotly) {
       if (u?.points?.[0]) {
         const p = u.points[0].label, g = Ae(p, n, Ne());
         c(g);
-        const m = Array.from(X(n)).find(
-          ([b, K]) => b.name === p
+        const m = Array.from(K(n)).find(
+          ([b, X]) => b.name === p
         ), h = m ? m[0] : void 0;
         h && !h.children?.length && Cn(p);
       }
@@ -1750,11 +1750,11 @@ function Tn(e = "Root", t = null, n = $) {
     c.length > 0 && r.push(new f({ name: l, children: c }));
   }), new f({ name: e, children: r });
 }
-async function Ln(e, t, n = "Root", o = null, r = $, i = Plotly) {
+async function Sn(e, t, n = "Root", o = null, r = $, i = Plotly) {
   const s = Tn(n, o, r);
   return he(e, t, s, r, i);
 }
-class Sn {
+class Ln {
   /**
    * Gets the tree structure for Seven Habits visualization
    * @returns {TreeNode} The root node of the Seven Habits tree
@@ -1836,42 +1836,42 @@ async function qe(e = x, t = v) {
     return console.error("Error generating random post HTML:", n), "<div>Could not load random post</div>";
   }
 }
-function uo(e = "#e1", t = "#e2", n = "#e3", o = fe) {
+function po(e = "#e1", t = "#e2", n = "#e3", o = fe) {
   try {
     o(e), o(t), o(n);
   } catch (r) {
     console.error("Error loading random eulogy:", r);
   }
 }
-function po(e = he, t = ge, n = me, o = fe, r = C) {
+function mo(e = he, t = ge, n = me, o = fe, r = C) {
   try {
     e("sunburst", "sunburst_text", new In().get_tree()), t(), n(), o("#random-eulogy-role"), r("#random-blog-posts", async () => await qe());
   } catch (i) {
     console.error("❌ Error loading enjoy page:", i);
   }
 }
-function mo(e = he, t = ge) {
+function fo(e = he, t = ge) {
   try {
-    e("sunburst", "sunburst_text", new Sn().get_tree()), t();
+    e("sunburst", "sunburst_text", new Ln().get_tree()), t();
   } catch (n) {
     console.error("Error loading 7 habits page:", n);
   }
 }
-function fo(e = me) {
+function go(e = me) {
   try {
     e();
   } catch (t) {
     console.error("Error loading IG66 page:", t);
   }
 }
-function go(e = An, t = Nn, n = Mn) {
+function ho(e = An, t = Nn, n = Mn) {
   try {
     e("balance-heatmap-rest"), t("balance-heatmap-work"), n("balance-radar-map-ideal");
   } catch (o) {
     console.error("Error loading balance page:", o);
   }
 }
-const Ye = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"], Je = 20, Xe = 100, Ke = "#00BF00";
+const Ye = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"], Je = 20, Ke = 100, Xe = "#00BF00";
 async function Mn(e, t) {
   const n = [
     {
@@ -1910,7 +1910,7 @@ async function Mn(e, t) {
 }
 async function Nn(e, t) {
   const n = ["Tech", "Work"], o = {
-    height: Je * n.length + Xe,
+    height: Je * n.length + Ke,
     margin: {
       t: 5
     },
@@ -1918,7 +1918,7 @@ async function Nn(e, t) {
   }, r = [
     [0, "darkblue"],
     [0.4, "blue"],
-    [0.5, Ke],
+    [0.5, Xe],
     [0.6, "darkred"],
     [1, "red"]
   ], i = [
@@ -1964,7 +1964,7 @@ async function An(e, t) {
       colorscale: [
         [0, "red"],
         [0.4, "darkred"],
-        [0.5, Ke],
+        [0.5, Xe],
         [0.6, "blue"],
         [1, "darkblue"]
       ],
@@ -1978,7 +1978,7 @@ async function An(e, t) {
   ], s = {
     displayModeBar: !1
   }, a = {
-    height: Je * n.length + Xe,
+    height: Je * n.length + Ke,
     margin: {
       t: 5
     },
@@ -1993,14 +1993,75 @@ async function An(e, t) {
   else
     console.warn("Plotly is not defined, skipping chart rendering");
 }
-function ho(e = "Topics", t = Ln, n = ge, o = me, r = fe, i = C) {
+function bo(e = "Topics", t = Sn, n = ge, o = me, r = fe, i = C) {
   try {
     t("sunburst", "sunburst_text", e), n(), o(), r("#random-eulogy-role"), i("#random-blog-posts", async () => await qe());
   } catch (s) {
     console.error("Error loading auto-generated sunburst:", s);
   }
 }
-const k = 150, Rn = 2500, Hn = 12e3, Dn = 2, On = /* @__PURE__ */ new Set([
+class Rn {
+  constructor(t = "featured-collapse-btn", n = "featured-results", o = "featured-section-collapsed") {
+    this.storageKey = o, this.state = { isCollapsed: this.loadState() }, this.elements = {
+      button: document.getElementById(t),
+      content: document.getElementById(n)
+    };
+  }
+  initialize() {
+    return !this.elements.button || !this.elements.content ? (console.warn("Featured collapse elements not found"), !1) : (this.updateUI(), this.elements.button.addEventListener("click", (t) => this.handleClick(t)), !0);
+  }
+  handleClick(t) {
+    t.preventDefault(), this.toggle();
+  }
+  toggle() {
+    this.state.isCollapsed = !this.state.isCollapsed, this.saveState(), this.updateUI();
+  }
+  collapse() {
+    this.state.isCollapsed = !0, this.saveState(), this.updateUI();
+  }
+  expand() {
+    this.state.isCollapsed = !1, this.saveState(), this.updateUI();
+  }
+  isCollapsed() {
+    return this.state.isCollapsed;
+  }
+  updateUI() {
+    !this.elements.button || !this.elements.content || (this.state.isCollapsed ? (this.elements.content.style.display = "none", this.elements.button.textContent = "Expand +", this.elements.button.title = "Expand section") : (this.elements.content.style.display = "block", this.elements.button.textContent = "Collapse −", this.elements.button.title = "Collapse section"));
+  }
+  // For testing purposes
+  getElements() {
+    return this.elements;
+  }
+  getState() {
+    return { ...this.state };
+  }
+  // localStorage helpers
+  loadState() {
+    try {
+      return localStorage.getItem(this.storageKey) === "true";
+    } catch {
+      return !1;
+    }
+  }
+  saveState() {
+    try {
+      localStorage.setItem(this.storageKey, this.state.isCollapsed.toString());
+    } catch {
+    }
+  }
+  // Clear saved state (useful for testing)
+  clearSavedState() {
+    try {
+      localStorage.removeItem(this.storageKey);
+    } catch {
+    }
+  }
+}
+function yo() {
+  const e = new Rn();
+  return e.initialize() ? e : null;
+}
+const k = 150, Hn = 2500, Dn = 12e3, Bn = 2, On = /* @__PURE__ */ new Set([
   "ArrowUp",
   "ArrowDown",
   "ArrowLeft",
@@ -2012,7 +2073,7 @@ const k = 150, Rn = 2500, Hn = 12e3, Dn = 2, On = /* @__PURE__ */ new Set([
   " ",
   "Spacebar"
 ]);
-function Bn(e, t = document) {
+function zn(e, t = document) {
   const n = e.startsWith("#") ? e.slice(1) : e;
   if (!n) return null;
   let o = n;
@@ -2028,18 +2089,18 @@ function Bn(e, t = document) {
   }
   return null;
 }
-function zn(e, t = window) {
+function Un(e, t = window) {
   const n = e.ownerDocument, o = n.scrollingElement || n.documentElement, r = (a) => {
     const l = Number.parseFloat(a);
     return Number.isFinite(l) ? l : 0;
   }, i = r(t.getComputedStyle(o).scrollPaddingTop), s = r(t.getComputedStyle(e).scrollMarginTop);
   return e.getBoundingClientRect().top - i - s;
 }
-function Un(e = window) {
+function Fn(e = window) {
   const t = () => {
   }, n = e.document;
   if (!e.location.hash || e.__readerScrolled || e.performance?.getEntriesByType?.("navigation")?.[0]?.type === "back_forward") return t;
-  let r = !1, i = 0, s = 0, l = (e.performance?.now?.() ?? Date.now()) + Hn;
+  let r = !1, i = 0, s = 0, l = (e.performance?.now?.() ?? Date.now()) + Dn;
   const c = () => e.performance?.now?.() ?? Date.now(), d = () => {
     if (!r) {
       r = !0, e.clearTimeout(s), e.removeEventListener("scroll", g);
@@ -2057,12 +2118,12 @@ function Un(e = window) {
       p(k);
       return;
     }
-    const _ = Bn(e.location.hash, n);
+    const _ = zn(e.location.hash, n);
     if (!_) {
       p(k);
       return;
     }
-    Math.abs(zn(_, e)) > Dn && _.scrollIntoView({ block: "start", behavior: "auto" }), p(k);
+    Math.abs(Un(_, e)) > Bn && _.scrollIntoView({ block: "start", behavior: "auto" }), p(k);
   };
   function p(_) {
     r || (e.clearTimeout(s), s = e.setTimeout(u, _));
@@ -2078,24 +2139,24 @@ function Un(e = window) {
     e.addEventListener(_, m, { passive: !0, capture: !0 });
   const h = e.ResizeObserver, b = typeof h == "function" ? new h(() => p(k)) : void 0;
   b && n.body && b.observe(n.body), b && n.documentElement && b.observe(n.documentElement);
-  const K = () => {
-    l = Math.min(l, c() + Rn), p(k);
+  const X = () => {
+    l = Math.min(l, c() + Hn), p(k);
   };
-  return n.readyState === "complete" ? K() : e.addEventListener("load", K, { once: !0 }), p(k), d;
+  return n.readyState === "complete" ? X() : e.addEventListener("load", X, { once: !0 }), p(k), d;
 }
-function Fn() {
+function Gn() {
   if (!(typeof window > "u"))
     return window["@algolia/autocomplete-js"]?.autocomplete;
 }
-const Gn = "Search Igor's Musings ...", Re = "/pagefind/", jn = "/search-titles.json";
-function L(e) {
+const jn = "Search Igor's Musings ...", Re = "/pagefind/", Wn = "/search-titles.json";
+function S(e) {
   const t = document.createElement("div");
   return t.textContent = e || "", t.innerHTML;
 }
 function N(e) {
-  return L(e).replace(/"/g, "&quot;");
+  return S(e).replace(/"/g, "&quot;");
 }
-function S(e) {
+function L(e) {
   if (!e) return !1;
   if (e.startsWith("/"))
     return !0;
@@ -2106,25 +2167,25 @@ function S(e) {
     return !1;
   }
 }
-function Wn(e) {
+function qn(e) {
   return e && e.replace(/\/index\.html$/, "/").replace(/\.html$/, "");
 }
-const qn = "/search-pins.json";
-let O = null;
-async function Yn() {
-  return O || (O = (async () => {
-    const e = await fetch(qn);
+const Yn = "/search-pins.json";
+let B = null;
+async function Jn() {
+  return B || (B = (async () => {
+    const e = await fetch(Yn);
     if (!e.ok) throw new Error(`pins config HTTP ${e.status}`);
     const t = await e.json();
     if (!Array.isArray(t)) throw new Error("pins config is not an array");
     return t;
-  })().catch((e) => (console.warn("Search pins unavailable:", e), O = null, null))), O;
+  })().catch((e) => (console.warn("Search pins unavailable:", e), B = null, null))), B;
 }
 function He(e) {
   return e.toLowerCase().replace(/[\s-]+/g, "");
 }
-async function Jn(e) {
-  const t = await Yn();
+async function Kn(e) {
+  const t = await Jn();
   if (!t || t.length === 0) return [];
   const n = He(e), o = t.filter((i) => i.match?.some((s) => s && n.includes(He(s))));
   if (o.length === 0) return [];
@@ -2134,38 +2195,38 @@ async function Jn(e) {
     title: r?.[i.url]?.title || i.title || i.url,
     excerpt: r?.[i.url]?.description || "",
     source: "pinned"
-  })).filter((i) => S(i.url));
+  })).filter((i) => L(i.url));
 }
-let B = null;
+let O = null;
 async function Xn() {
-  return B || (B = (async () => {
+  return O || (O = (async () => {
     const e = await import(
       /* @vite-ignore */
       `${Re}pagefind.js`
     );
     return await e.options({ basePath: Re }), e;
   })().catch((e) => {
-    throw B = null, e;
-  })), B;
+    throw O = null, e;
+  })), O;
 }
-async function Kn(e, t = 10) {
+async function Vn(e, t = 10) {
   if (!e || !e.trim()) return [];
   try {
     const r = (await (await Xn()).search(e)).results.slice(0, t);
     return (await Promise.all(r.map((s) => s.data()))).map((s) => ({
-      url: Wn(s.url),
+      url: qn(s.url),
       title: s.meta?.title || s.url,
       excerpt: s.excerpt || "",
       source: "pagefind"
-    })).filter((s) => S(s.url));
+    })).filter((s) => L(s.url));
   } catch (n) {
     return console.warn("Pagefind unavailable, falling back to title search:", n), [];
   }
 }
 let z = null;
-async function Vn() {
+async function Zn() {
   return z || (z = (async () => {
-    const [{ default: e }, t] = await Promise.all([import("./minisearch.js"), fetch(jn)]);
+    const [{ default: e }, t] = await Promise.all([import("./minisearch.js"), fetch(Wn)]);
     if (!t.ok) throw new Error(`title index HTTP ${t.status}`);
     const o = (await t.json()).map((i, s) => ({ id: s, title: i.t, url: i.u })), r = new e({
       fields: ["title"],
@@ -2174,9 +2235,9 @@ async function Vn() {
     return r.addAll(o), r;
   })().catch((e) => (console.warn("Title index unavailable:", e), z = null, null))), z;
 }
-async function Zn(e, t = 5) {
+async function Qn(e, t = 5) {
   if (!e || !e.trim()) return [];
-  const n = await Vn();
+  const n = await Zn();
   if (!n) return [];
   const o = await x().catch(() => ({}));
   return n.search(e, { fuzzy: 0.3, prefix: !0 }).slice(0, t).map((r) => ({
@@ -2184,33 +2245,33 @@ async function Zn(e, t = 5) {
     title: r.title,
     excerpt: o?.[r.url]?.description || "",
     source: "title"
-  })).filter((r) => S(r.url));
+  })).filter((r) => L(r.url));
 }
-async function Qn(e, t = 10) {
+async function eo(e, t = 10) {
   if (!e || !e.trim()) return [];
   const [n, o, r] = await Promise.all([
-    Jn(e),
-    Kn(e, t),
-    Zn(e, 5)
+    Kn(e),
+    Vn(e, t),
+    Qn(e, 5)
   ]), i = /* @__PURE__ */ new Set(), s = [];
   for (const a of [...n, ...o, ...r])
     i.has(a.url) || (i.add(a.url), s.push(a));
   return s.slice(0, t);
 }
-function eo(e) {
-  return e.source === "pagefind" ? e.excerpt || "" : L(e.excerpt || "");
-}
 function to(e) {
-  if (!S(e.url))
+  return e.source === "pagefind" ? e.excerpt || "" : S(e.excerpt || "");
+}
+function no(e) {
+  if (!L(e.url))
     return console.warn("Invalid URL skipped in renderSearchHit:", e.url), "<div>Invalid result</div>";
   const t = N(e.url);
   return `
            <span data-url="${t}" style="cursor: pointer;">
-              <b> <a href="${t}">${L(e.title)}</a></b> <span>${eo(e)}</span>
+              <b> <a href="${t}">${S(e.title)}</a></b> <span>${to(e)}</span>
            </span>
         `;
 }
-async function no() {
+async function oo() {
   const e = performance.now(), t = await x(), n = performance.now() - e;
   console.log(`  📊 [get_random_post] Loaded links in ${n.toFixed(0)}ms`);
   const o = Object.entries(t).map((s) => s[1]), r = v(o);
@@ -2220,7 +2281,7 @@ async function no() {
     description: r.description
   };
 }
-async function bo(e = 4) {
+async function _o(e = 4) {
   const t = performance.now(), n = await x(), o = performance.now() - t;
   console.log(`  📊 [get_random_posts_batch] Loaded links once in ${o.toFixed(0)}ms`);
   const r = Object.entries(n).map((a) => a[1]), i = [], s = /* @__PURE__ */ new Set();
@@ -2238,7 +2299,7 @@ async function bo(e = 4) {
   }
   return i;
 }
-async function oo(e = 4) {
+async function ro(e = 4) {
   try {
     const t = performance.now(), n = await x(), o = performance.now() - t;
     return console.log(`  📊 [get_recent_posts] Loaded links in ${o.toFixed(0)}ms`), Object.entries(n).map(([a, l]) => ({
@@ -2254,7 +2315,7 @@ async function oo(e = 4) {
     return console.error("❌ Error loading recent posts:", t), [];
   }
 }
-async function ro(e = 3) {
+async function io(e = 3) {
   return {
     sourceId: "random_posts",
     async getItems() {
@@ -2262,7 +2323,7 @@ async function ro(e = 3) {
       return await Promise.all(
         t.map(async (o) => {
           try {
-            return await no();
+            return await oo();
           } catch (r) {
             return console.error("Error getting random post:", r), { url: "", title: "Error", description: "Failed to load post" };
           }
@@ -2274,12 +2335,12 @@ async function ro(e = 3) {
     },
     templates: {
       item({ item: t, createElement: n }) {
-        return S(t.url) ? n("div", {
+        return L(t.url) ? n("div", {
           dangerouslySetInnerHTML: {
             __html: `
             <span data-url="${N(t.url)}" style="cursor: pointer;">
-           <b> <a href="${N(t.url)}">${L(t.title)}</a></b>
-            <span>${L(t.description)}</span>
+           <b> <a href="${N(t.url)}">${S(t.title)}</a></b>
+            <span>${S(t.description)}</span>
             </span>
             `
           }
@@ -2299,23 +2360,23 @@ async function ro(e = 3) {
     }
   };
 }
-async function io(e = 4) {
+async function so(e = 4) {
   return {
     sourceId: "recent_posts",
     async getItems() {
-      return await oo(e);
+      return await ro(e);
     },
     getItemUrl({ item: t }) {
       return t.url;
     },
     templates: {
       item({ item: t, createElement: n }) {
-        return S(t.url) ? n("div", {
+        return L(t.url) ? n("div", {
           dangerouslySetInnerHTML: {
             __html: `
             <span data-url="${N(t.url)}" style="cursor: pointer;">
-           <b> <a href="${N(t.url)}">${L(t.title)}</a></b>
-            <span>${L(t.description)}</span>
+           <b> <a href="${N(t.url)}">${S(t.title)}</a></b>
+            <span>${S(t.description)}</span>
             </span>
             `
           }
@@ -2335,17 +2396,17 @@ async function io(e = 4) {
     }
   };
 }
-function so(e, t = 10) {
+function ao(e, t = 10) {
   return {
     sourceId: "featured_posts",
     async getItems() {
-      return await Qn(e, t);
+      return await eo(e, t);
     },
     templates: {
       item({ item: n, createElement: o }) {
         return o("div", {
           dangerouslySetInnerHTML: {
-            __html: to(n)
+            __html: no(n)
           }
         });
       },
@@ -2369,15 +2430,15 @@ function so(e, t = 10) {
     }
   };
 }
-async function yo(e, t = {}) {
-  const { featuredCount: n = 10, recentCount: o = 4, randomCount: r = 3 } = t, i = Fn();
+async function wo(e, t = {}) {
+  const { featuredCount: n = 10, recentCount: o = 4, randomCount: r = 3 } = t, i = Gn();
   if (!i) {
     console.error("Autocomplete is not defined");
     return;
   }
-  const s = await ro(r), a = await io(o);
+  const s = await io(r), a = await so(o);
   function l({ query: d }) {
-    return !d || d.length === 0 ? [a, s] : [so(d, n)];
+    return !d || d.length === 0 ? [a, s] : [ao(d, n)];
   }
   const c = e.startsWith("#") ? e : `#${e}`;
   if ($(c).length === 0) {
@@ -2386,14 +2447,14 @@ async function yo(e, t = {}) {
   }
   return i({
     container: c,
-    placeholder: Gn,
+    placeholder: jn,
     getSources: l,
     debug: !1,
     openOnFocus: !0,
     detachedMediaQuery: ""
   });
 }
-Un();
+Fn();
 $(document).ready(() => {
   Ve(G);
   const e = () => {
@@ -2402,47 +2463,48 @@ $(document).ready(() => {
     const o = $("#search-box");
     o.length > 0 && o.focus();
   };
-  e(), ao(), lo();
+  e(), lo(), co();
   const n = ["item1", "item2", "item3"];
   console.log("Random item:", v(n)), console.log("Shuffled items:", De([...n])), x().then((o) => {
     console.log("Links loaded, count:", Object.keys(o).length);
   }), console.log("Blog JavaScript initialized");
 });
-function ao() {
+function lo() {
   $("#toc-content").length > 0 && console.log("TOC initialized");
 }
-function lo() {
+function co() {
   $("#search-box").length > 0 && console.log("Search initialized");
 }
 export {
-  yo as CreateAutoComplete,
+  wo as CreateAutoComplete,
   ee as MakeBackLinkHTML,
   f as TreeNode,
   ge as add_random_prompts,
   he as add_sunburst,
-  Ln as add_sunburst_from_dom,
+  Sn as add_sunburst_from_dom,
   C as append_randomizer_div,
   Ve as defer,
   x as get_link_info,
-  Oe as get_random_page_url,
-  no as get_random_post,
-  bo as get_random_posts_batch,
-  oo as get_recent_posts,
+  Be as get_random_page_url,
+  oo as get_random_post,
+  _o as get_random_posts_batch,
+  ro as get_recent_posts,
   Jt as goToRandomPage,
   st as initRecentAllPosts,
-  mo as load_7_habits,
-  ho as load_auto_sunburst,
-  go as load_balance,
-  po as load_enjoy2,
+  fo as load_7_habits,
+  bo as load_auto_sunburst,
+  ho as load_balance,
+  mo as load_enjoy2,
   G as load_globals,
-  fo as load_ig66,
-  uo as load_random_eulogy,
+  go as load_ig66,
+  po as load_random_eulogy,
   Pn as makePostPreviewHTML,
   qe as make_random_post_html,
   v as random_from_list,
-  to as renderSearchHit,
-  Qn as searchBlog,
+  no as renderSearchHit,
+  eo as searchBlog,
+  yo as setupFeaturedCollapse,
   De as shuffle,
-  co as topicFromSearch
+  uo as topicFromSearch
 };
 //# sourceMappingURL=index.js.map
