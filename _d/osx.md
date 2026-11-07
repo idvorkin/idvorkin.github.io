@@ -19,6 +19,8 @@ I pretty much use mac exclusively. I have 3 at work, and a mac mini at home, and
     - [2nd Party - E.g., Igor wrote it.](#2nd-party-e-g-igor-wrote-it)
   - [Productivity](#productivity)
   - [Quality of life utility](#quality-of-life-utility)
+  - [Yabai - Tiling, with sweaters](#yabai---tiling-with-sweaters)
+  - [Browser Tab Helper - No more duplicate tabs](#browser-tab-helper---no-more-duplicate-tabs)
   - [Screen Resolutions and Display Settings](#screen-resolutions-and-display-settings)
 - [Philosophy](#philosophy)
   - [Do not switch back and forth between windows and osx.](#do-not-switch-back-and-forth-between-windows-and-osx)
@@ -52,13 +54,14 @@ I LOVE Alfred. I can do all sorts of stuff
 
 #### 2nd Party - E.g., Igor wrote it.
 
-My CLI for Yabai/and other apps and generate Alfred commands
+My personal plugin, Igor Tools, is a thin layer over my CLIs:
 
-My personal plugin:
-
-- "idv" Search my blog
-- ss - Capture Screen Shot
-- A bunch of cool stuff for Yabai + random [y.py](https://github.com/idvorkin/settings/blob/313acb3b163ec3bb3dd89ac0c970031ffbf8af8c/py/y.py?plain=1#L578)
+- `idv` - Search my blog
+- `ss` - Capture Screen Shot
+- `y` - Drive [yabai](#yabai---tiling-with-sweaters)
+- `a` / `af` - Drive AeroSpace, and jump to any of its windows
+- `tadd` / `tlist` - Add and list OmniFocus tasks
+- `zz` - Lock and sleep
 
 ### Productivity
 
@@ -78,15 +81,28 @@ My personal plugin:
 - [Ice](https://github.com/jordanbaird/Ice) Manage the menu bar
   - (The new Bartender)
 - [Alt Tab](https://alt-tab-macos.netlify.app/) - Windows-like alt tab
-- Yabai - Tiling Window Manager
-  - Aerospace - Different window manager - seems more powerful, but not stable yet.
-  - Borders - Highlight current selected window
 - Menubar - Show next meeting in the menu bar
 - mpv+iina - Video Players
 - 1password - Awesome Password Manager
 - [Karabiner Elements](https://karabiner-elements.pqrs.org/) - [Make my keyboard perfect](/keyboard)
   - Even does crazy stuff like let me use 2 keyboards at once, chording across keyboards!#$!
 - [Screencasting specific](/screencast)
+
+### Yabai - Tiling, with sweaters
+
+{% include local_image_float_right.html src="raccoon-window-sweaters.webp" alt="A plush raccoon in a knitted sweater tiling windows, each window wearing its own knitted border" %}
+
+Yabai tiles my windows so I never drag one around by hand. I run [my fork](https://github.com/idvorkin/yabai), which has fixes for macOS 27, and drive it with [y.py](https://github.com/idvorkin/settings/blob/a1dafbec0233520a0c2bf3217993a5353691b0f2/py/y.py), my CLI that also generates the Alfred `y` commands. `y number` puts a numbered badge on every window, then `y 3` jumps to window 3 (or `y 3 close`, `y 3 half`). [AeroSpace](https://github.com/nikitabobko/AeroSpace) is the other tiling manager I keep around: more powerful, but not stable yet. [Borders](https://github.com/FelixKratz/JankyBorders) highlights the focused window.
+
+I saw this cute thing called [Window Sweaters](https://github.com/saragordic/window-sweaters), Sara Gordić's menu-bar app that knits a border around each window in its app's colors. Of course I [forked it](https://github.com/idvorkin/window-sweaters) and added raccoons: every few minutes a little raccoon runs a lap around the window I'm in, and depending on its appetite, eats the sweater as it goes. I also added Focused Window Only, so only the window I'm using wears one.
+
+### Browser Tab Helper - No more duplicate tabs
+
+Since I'm customizing everything anyway, one of my irritants is browsers: I always end up with duplicate tabs. So I made [browser-tab-helper](https://github.com/idvorkin/browser-tab-helper), a Chrome/Edge extension. Open a page that's already open and a card asks what to do, one key each:
+
+{% include repo_image.html src="browser-tab-helper-duplicate-card.webp" %}
+
+It also lists every tab on one page (by window, kind or tab group) with drag and drop and undo, saves and restores tab layouts as JSON, and tells my local tools which page is in front. What's great about this helper is that anything that's a problem, I can implement. If something bugs me, I build it in.
 
 ### Screen Resolutions and Display Settings
 
