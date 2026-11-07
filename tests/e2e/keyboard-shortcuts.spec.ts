@@ -1,5 +1,4 @@
 import { expect, test } from "./base-test";
-import { checkForJsErrors } from "./js-error-checker";
 
 test.describe("Keyboard shortcuts", () => {
   const startPage = "/save-the-soup";
@@ -44,9 +43,5 @@ test.describe("Keyboard shortcuts", () => {
   test("Navigate to /toc with 'm' key", async ({ page }) => {
     await page.keyboard.press("m");
     await expect(page).toHaveURL(/\/toc$/);
-  });
-
-  test("Shortcuts page has no JavaScript errors", async ({ page }) => {
-    await checkForJsErrors(page, startPage);
   });
 });

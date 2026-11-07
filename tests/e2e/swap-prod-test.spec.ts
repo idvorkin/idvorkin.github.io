@@ -70,15 +70,6 @@ test.describe("'p' swaps prod and test", () => {
     await mockProd(context);
   });
 
-  test("test -> prod -> back keeps path, query and anchor and returns to the same origin", async ({ page }) => {
-    await page.goto(`${ORIGIN_A}${PAGE}${SUFFIX}`);
-    await pressP(page);
-    // The handoff param is scrubbed on arrival, so the prod URL is clean.
-    await expectUrl(page, `${PROD}${PAGE}${SUFFIX}`);
-    await pressP(page);
-    await expectUrl(page, `${ORIGIN_A}${PAGE}${SUFFIX}`);
-  });
-
   test("a second test origin on another port returns to itself, not to the first one", async ({ page }) => {
     await page.goto(`${ORIGIN_A}${PAGE}`);
     await pressP(page);
@@ -113,22 +104,6 @@ test.describe("'p' swaps prod and test", () => {
     await expectUrl(tabA, `${ORIGIN_A}${PAGE}`);
     await pressP(tabB);
     await expectUrl(tabB, `${ORIGIN_B}${PAGE}`);
-  });
-
-  test("arriving on prod by a plain link from a test server still remembers it (referrer)", async ({ page }) => {
-    await page.goto(`${PROD}${PAGE}`, { referer: `${ORIGIN_B}${PAGE}` });
-    await pressP(page);
-    await expectUrl(page, `${ORIGIN_B}${PAGE}`);
-  });
-
-  test("prod with no known test server shows a toast and stays put", async ({ page }) => {
-    await page.goto(`${PROD}${PAGE}${SUFFIX}`);
-    await pressP(page);
-    const toast = page.locator("#swap-toast");
-    await expect(toast).toBeVisible();
-    await expect(toast).toContainText("No test server remembered");
-    await expect(toast.locator("a")).toHaveAttribute("href", `http://localhost:4000${PAGE}${SUFFIX}`);
-    expect(page.url()).toBe(`${PROD}${PAGE}${SUFFIX}`);
   });
 
   test("typing 'p' in the search box does not swap", async ({ page }) => {

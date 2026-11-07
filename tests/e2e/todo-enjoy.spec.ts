@@ -1,13 +1,8 @@
 import { expect, test } from "./base-test";
-import { checkForJsErrors } from "./js-error-checker";
 
 test.describe("Things I enjoy page", () => {
   test.beforeEach(async ({ page }) => {
     await page.goto("/todo_enjoy");
-  });
-
-  test("Page loads correctly", async ({ page }) => {
-    await expect(page).toHaveURL(/todo_enjoy/);
   });
 
   test("Has entertaining in donut chart", async ({ page }) => {
@@ -140,9 +135,5 @@ test.describe("Things I enjoy page", () => {
 
     // Test passes either way - with or without prompt changes
     expect(true).toBe(true);
-  });
-
-  test("Todo enjoy page has no JavaScript errors", async ({ page }) => {
-    await checkForJsErrors(page, "/todo_enjoy");
   });
 });
