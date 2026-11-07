@@ -37,16 +37,10 @@ permalink: /weeks
 {% assign start_month = split_start[1] %}
 {% assign start_day = split_start[2] %}
 
-<script>console.log("{{page.datafile }}");</script>
-<script>console.log({{site.data | json }});</script>
-<!--
-<script>console.log({{data | json }});</script>
--->
-
 {% assign end_year = page.end_year %}
 {% assign year_border_class = "future-date"%}
 
-My life, where each week I've been alive is a little box. When meaningful things happen (for both better and worse) I make a note of it so I can remember how much of life is influenced by these factors. This is a brilliant idea from this [guy](https://busterbenson.com/life-in-weeks).
+My life, where each week I've been alive is a little box. When meaningful things happen (for both better and worse) I make a note of it so I can remember how much of life is influenced by these factors. This is a brilliant idea from [Buster Benson](https://busterbenson.com/life-in-weeks).
 
 <div class="life-in-weeks">
 <div class="row justify-content-center">
@@ -87,7 +81,7 @@ My life, where each week I've been alive is a little box. When meaningful things
     	    			{% assign specific_date = this_week_date | date: "%s" | plus: day_modifier | date: "%Y-%m-%d" %}
     	    			{% if specific_date < next_year %}
     							{% for event in data[specific_date] %}
-    								<a {% if event.link %}href="{{ event.link }}"{% endif %} title="{{ specific_date | date: "%b %-d, %Y" }}" target="_new" {% if event.desc %}data-toggle="popover" data-placement="auto"{% endif %} title="{{ specific_date }}" data-trigger="hover" data-content="{{ event.desc }}">{{ event.name }}</a>
+    								<a {% if event.link %}href="{{ event.link }}"{% endif %} title="{{ specific_date | date: "%b %-d, %Y" }}" target="_new" {% if event.desc %}data-toggle="popover" data-placement="auto"{% endif %} data-trigger="hover" data-content="{{ event.desc }}">{{ event.name }}</a>
     							{% endfor %}
     						{% endif %}
     	    		{% endfor %}
@@ -100,7 +94,6 @@ My life, where each week I've been alive is a little box. When meaningful things
 </div> <!-- End life in weeks -->
 
 <script>
-    console.log("+Adding onReady");
 	defer(function () {
 	  $(function () {
 			var today = new Date();
