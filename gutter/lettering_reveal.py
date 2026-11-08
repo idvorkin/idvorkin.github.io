@@ -6,11 +6,11 @@
 """Reveal a panel's drawn lettering word by word, in sync with the clip's speech.
 
     gutter/lettering_reveal.py SPEC.json
+    gutter/lettering_reveal.py --plate SPEC.json EDIT.png OUT.png   # bubble-free first frame
 
 The clip is a Gemini Omni clip of a pillarboxed panel (see recipe.md, Video).
-The model re-draws lettering, so every bubble is replaced by the SOURCE panel's
-bubble: blank paper until its first word is spoken, then each drawn word appears
-at the moment it is said, and the full line stays up after the last word.
+Every bubble is the SOURCE panel's bubble: it pops in as its speaker starts,
+each drawn word appears at the moment it is said, and the full line stays up.
 
 Timing is a forced alignment of the DRAWN text (not a transcription) against the
 clip audio with whisperx's wav2vec2 aligner. Each drawn word gets a spoken form:
@@ -28,6 +28,11 @@ SPEC (paths relative to the spec file):
 }
 Optional "audio": a separate track (e.g. a re-voiced mix) to align against and mux in.
 mode: "reveal" (spoken in this clip), "full" (already said), "empty" (not yet said).
+"pop" (default true): a bubble is invisible until its speaker starts, then pops
+in from its tail (lowest point, or "tail": [x, y]) over 0.25 s with a small
+overshoot, the first word landing as it settles; "empty" bubbles stay hidden.
+This needs a bubble-free clip underneath (see --plate). "pop": false keeps blank
+paper up from frame one, for clips whose model drew its own bubbles.
 Rects are in source-panel pixels and must hold only that bubble; a bubble's
 "rect" may be a list of rects (body plus thought circles). Keep them off lamps. A debug sheet of the word boxes is written
 next to the output as *-words.png: check it.
@@ -246,6 +251,13 @@ def align(clip: Path, bubbles: list[list[str]]):
             if s is None:
                 st[i] = next((x for x in st[i + 1 :] if x is not None), t1)
         st[0] = max(st[0], t0)
+        # wav2vec2 lets the first word swallow the silence before it: it "starts"
+        # at the window edge, up to 0.4 s before the voice. Cap it from the next
+        # word's start at about 0.1 s plus 0.06 s a letter. Only the first word:
+        # capping every word from its own end pushed a last word ("Dog") late,
+        # because last words swallow the trailing sound too.
+        if len(st) > 1:
+            st[0] = max(st[0], st[1] - (0.1 + 0.06 * len(words[0])))
         starts += st
         scores += [w.get("score") for w in got]
     return starts, scores
@@ -254,7 +266,56 @@ def align(clip: Path, bubbles: list[list[str]]):
 # ---------- render ----------
 
 
+def plate(spec_path: Path, edit: Path, out: Path) -> None:
+    """Bubble-free first frame: the source panel everywhere except inside the
+    bubbles (grown 10 px, feathered), where an image-edit's background shows.
+    The edit (a Muse "same picture, balloons removed" call) is only trusted
+    inside the masks, so the characters stay pixel-identical."""
+    spec = json.loads(spec_path.read_text())
+    src_img = Image.open(spec_path.parent / spec["panel"]).convert("RGB")
+    src = np.asarray(src_img).astype(np.float32)
+    ed = np.asarray(
+        Image.open(edit).convert("RGB").resize(src_img.size, Image.LANCZOS)
+    ).astype(np.float32)
+    m = np.zeros(src.shape[:2], bool)
+    for b in spec["bubbles"]:
+        m |= bubble_mask(src.astype(np.uint8), b["rect"])
+    m = ndi.binary_dilation(m, iterations=10)
+    for x0, y0, x1, y1 in spec.get("plate_extra", []):  # specks the paper test misses
+        m[y0:y1, x0:x1] = True
+    a = ndi.gaussian_filter(m.astype(float), 4)[..., None]
+    Image.fromarray((src * (1 - a) + ed * a).clip(0, 255).astype(np.uint8)).save(out)
+    print(f"wrote {out}")
+
+
+POP_S = 0.25  # pop length; the first word lands as it settles
+
+
+def ease_out_back(u: float) -> float:
+    """0 -> 1 with about a 10% overshoot before settling."""
+    c1 = 1.70158
+    return 1 + (c1 + 1) * (u - 1) ** 3 + c1 * (u - 1) ** 2
+
+
+def scale_about(img: np.ndarray, s: float, ay: float, ax: float) -> np.ndarray:
+    """Scale an HxW(xC) layer by s about (ay, ax), keeping the canvas size."""
+    s = max(s, 0.02)
+    m, off = [1 / s, 1 / s], [ay - ay / s, ax - ax / s]
+    if img.ndim == 2:
+        return ndi.affine_transform(img, m, offset=off, order=1)
+    return np.stack(
+        [
+            ndi.affine_transform(img[..., c], m, offset=off, order=1)
+            for c in range(img.shape[2])
+        ],
+        -1,
+    )
+
+
 def main() -> None:
+    if sys.argv[1] == "--plate":
+        plate(Path(sys.argv[2]).resolve(), Path(sys.argv[3]), Path(sys.argv[4]))
+        return
     spec_path = Path(sys.argv[1]).resolve()
     base = spec_path.parent
     spec = json.loads(spec_path.read_text())
@@ -262,71 +323,87 @@ def main() -> None:
     out.parent.mkdir(parents=True, exist_ok=True)
     src = np.asarray(Image.open(base / spec["panel"]).convert("RGB")).astype(np.uint8)
     px, py, size = spec["panel_box"]
+    pop = spec.get("pop", True)
+    k = size / src.shape[0]
 
-    cover = np.zeros(src.shape[:2], bool)  # everything we own
+    cap = np.zeros(src.shape[:2], bool)
     for r in spec.get("captions", []):
-        cover |= caption_mask(src, r)
+        cap |= caption_mask(src, r)
     blank = src.copy()
-    reveal_words = []  # (drawn, spoken, box)
-    groups = []  # spoken words per revealing bubble, in speaking order
-    done_masks = []  # each revealing bubble's whole mask: shown complete after its last word
+    bubbles = []  # per bubble: mode, mask, tail, words [(drawn, spoken, box)]
     debug = Image.fromarray(src).convert("RGB")
     dd = ImageDraw.Draw(debug)
     for bi, b in enumerate(spec["bubbles"]):
+        mode = b.get("mode", "reveal")
         m = bubble_mask(src, b["rect"])
-        cover |= m
         drawn = b["text"].split()
         say = b.get("say") or [spoken_form(w) for w in drawn]
         if len(say) != len(drawn):
             sys.exit(f"bubble {bi}: 'say' has {len(say)} words, text has {len(drawn)}")
         ink = ink_in(src, m)
-        if b.get("mode", "reveal") != "full":
+        if mode != "full":
             blank = np.where(m[..., None], empty_paper(src, ink), blank)
-        if b.get("mode", "reveal") != "reveal":
-            continue
-        how, boxes = word_boxes(ink, len(drawn))
-        print(f"bubble {bi}: {len(drawn)} words, {how}")
-        groups.append(say)
-        done_masks.append(m)
-        for w, s, box in zip(drawn, say, boxes):
-            reveal_words.append((w, s, box))
-            dd.rectangle(box, outline=(255, 0, 255), width=2)
+        ys, xs = np.nonzero(m)
+        tail = b.get("tail") or [
+            float(xs[ys == ys.max()].mean()),
+            float(ys.max()),
+        ]  # lowest point
+        words = []
+        if mode == "reveal":
+            how, boxes = word_boxes(ink, len(drawn))
+            print(f"bubble {bi}: {len(drawn)} words, {how}")
+            words = list(zip(drawn, say, boxes))
+            for box in boxes:
+                dd.rectangle(box, outline=(255, 0, 255), width=2)
+        dd.ellipse(
+            [tail[0] - 8, tail[1] - 8, tail[0] + 8, tail[1] + 8],
+            outline=(0, 255, 255),
+            width=3,
+        )
+        bubbles.append({"mode": mode, "mask": m, "tail": tail, "words": words})
     debug.save(out.with_name(out.stem + "-words.png"))
 
     audio_src = (
         base / spec["audio"] if spec.get("audio") else clip
     )  # e.g. a re-voiced mix
-    starts, done_at = [], []
-    if reveal_words:
-        starts, scores = align(audio_src, groups)
-        ends = np.cumsum([len(g) for g in groups]) - 1
-        done_at = [starts[e] + 0.4 for e in ends]
-        for (w, s, _), t, sc in zip(reveal_words, starts, scores):
-            print(
-                f"  {t:6.2f}s  {w:<14} ({s}, score {sc if sc is None else round(sc, 2)})"
-            )
+    talkers = [b for b in bubbles if b["words"]]
+    if talkers:
+        starts, scores = align(audio_src, [[w[1] for w in b["words"]] for b in talkers])
+        i = 0
+        for b in talkers:
+            b["starts"] = starts[i : i + len(b["words"])]
+            for (w, sp, _), t, sc in zip(
+                b["words"], b["starts"], scores[i : i + len(b["words"])]
+            ):
+                print(
+                    f"  {t:6.2f}s  {w:<14} ({sp}, score {sc if sc is None else round(sc, 2)})"
+                )
+            i += len(b["words"])
+            b["done"] = b["starts"][-1] + 0.4
 
-    # downscale layers to the video's panel size
-    def small(a, mode=Image.LANCZOS):
-        return np.asarray(Image.fromarray(a).resize((size, size), mode)).astype(
-            np.float32
+    def small(a):
+        return np.asarray(
+            Image.fromarray(a).resize((size, size), Image.LANCZOS)
+        ).astype(np.float32)
+
+    def small_mask(m):
+        return (
+            small((ndi.gaussian_filter(m.astype(float), 1) * 255).astype(np.uint8))
+            / 255
         )
 
     full_s, blank_s = small(src), small(blank)
-    cover_s = (
-        small((ndi.gaussian_filter(cover.astype(float), 1) * 255).astype(np.uint8))[
-            ..., None
-        ]
-        / 255
-    )
-    word_s = []
-    for _, _, (x0, y0, x1, y1) in reveal_words:
-        wm = np.zeros(src.shape[:2], np.uint8)
-        wm[y0 : y1 + 1, max(x0 - 4, 0) : x1 + 5] = (
-            255  # rows already reach the line midpoints
-        )
-        word_s.append(small(wm)[..., None] / 255)
-    done_s = [small((m * 255).astype(np.uint8))[..., None] / 255 for m in done_masks]
+    cap_s = small_mask(cap)[..., None]
+    for b in bubbles:
+        b["a"] = small_mask(b["mask"])
+        b["ws"] = []
+        for _, _, (x0, y0, x1, y1) in b["words"]:
+            wm = np.zeros(src.shape[:2], np.uint8)
+            wm[y0 : y1 + 1, max(x0 - 4, 0) : x1 + 5] = (
+                255  # rows already reach the line midpoints
+            )
+            b["ws"].append(small(wm) / 255)
+        b["ty"], b["tx"] = b["tail"][1] * k, b["tail"][0] * k
 
     probe = json.loads(
         subprocess.run(
@@ -411,16 +488,40 @@ def main() -> None:
             break
         frame = np.frombuffer(buf, np.uint8).reshape(H, W, 3).astype(np.float32)
         t = n / fps
-        r = np.zeros((size, size, 1), np.float32)
-        for ws, st in zip(word_s, starts):
-            if t >= st:
-                r = np.maximum(r, ws)
-        for ds, dt in zip(done_s, done_at):  # belt and braces: any stroke outside a box
-            if t >= dt:
-                r = np.maximum(r, ds)
-        layer = blank_s * (1 - r) + full_s * r
         pan = frame[py : py + size, px : px + size]
-        frame[py : py + size, px : px + size] = pan * (1 - cover_s) + layer * cover_s
+        pan = pan * (1 - cap_s) + full_s * cap_s  # captions: always up
+        for b in bubbles:
+            if b["mode"] == "full":
+                s = 1.0
+            elif b["mode"] == "empty":
+                s = 0.0 if pop else 1.0  # without pop: blank paper, as before
+            else:
+                t0 = b["starts"][0]
+                p0 = max(t0 - POP_S, 0.0)
+                s = (
+                    1.0
+                    if not pop or t >= t0
+                    else (
+                        0.0 if t < p0 else ease_out_back((t - p0) / max(t0 - p0, 1e-3))
+                    )
+                )
+            if s <= 0:
+                continue
+            r = np.zeros((size, size), np.float32)
+            for ws, st in zip(b["ws"], b.get("starts", [])):
+                if t >= st:
+                    r = np.maximum(r, ws)
+            if t >= b.get("done", 1e9):  # any stroke outside a box
+                r = np.maximum(r, b["a"])
+            layer = blank_s * (1 - r[..., None]) + full_s * r[..., None]
+            a = b["a"]
+            if s != 1.0:
+                layer, a = (
+                    scale_about(layer, s, b["ty"], b["tx"]),
+                    scale_about(a, s, b["ty"], b["tx"]),
+                )
+            pan = pan * (1 - a[..., None]) + layer * a[..., None]
+        frame[py : py + size, px : px + size] = pan
         enc.stdin.write(frame.clip(0, 255).astype(np.uint8).tobytes())
         n += 1
     enc.stdin.close()
