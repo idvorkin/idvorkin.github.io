@@ -199,7 +199,8 @@ def heard_segments(clip: Path):
 def windows(heard, counts, dur):
     """Give each bubble a contiguous run of heard segments, in order, choosing the
     split whose heard word counts best match the drawn ones. Fewer segments than
-    bubbles: everyone shares the whole speech span."""
+    bubbles: everyone shares the whole speech span (align() then aligns them
+    together, in order)."""
     span = (heard[0]["start"], heard[-1]["end"]) if heard else (0.0, dur)
     k, n = len(counts), len(heard)
     if n < k:
@@ -232,8 +233,17 @@ def align(clip: Path, bubbles: list[list[str]]):
         f"  heard: {' / '.join(f'{h["start"]:.2f}-{h["end"]:.2f} {h["text"].strip()}' for h in heard)}"
     )
     model, meta = whisperx.load_align_model(language_code="en", device="cpu")
+    # Bubbles that share a window (fewer heard segments than bubbles) are aligned
+    # as ONE run of their concatenated words, so they keep their spoken order
+    # instead of each matching the same audio.
+    runs = []  # (words, window)
+    for words, win in zip(bubbles, windows(heard, [len(b) for b in bubbles], dur)):
+        if runs and runs[-1][1] == win:
+            runs[-1][0].extend(words)
+        else:
+            runs.append((list(words), win))
     starts, scores = [], []
-    for words, (w0, w1) in zip(bubbles, windows(heard, [len(b) for b in bubbles], dur)):
+    for words, (w0, w1) in runs:
         t0, t1 = max(w0 - 0.15, 0.0), min(w1 + 0.3, dur)
         seg = [{"text": " ".join(words), "start": t0, "end": t1}]
         got = whisperx.align(
