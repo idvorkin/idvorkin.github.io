@@ -257,6 +257,69 @@ whoever is in the picture (Igor: `raccoon-nerd.webp`; Larry:
 `images/raccoon-larry.webp`). Style text comes from the skill's
 `raccoon-style.txt`. Four candidates minimum for a cutout; they are cheap.
 
+**Check the Recraft token before any cutout job:**
+`recraft_bg_remove.py balance`. On 2026-11-08 the token in the secret store
+returned 401 on every call, and only after six renders were done. If it is
+dead, key the magenta yourself with `gutter/chroma_key.py raw.png out.png`.
+Add `--solid` for a character, which protects the purple rim of the glasses,
+and `--sat 0.62 --grey` for charcoal props such as iron and chain. It is clean on
+light pages, but a faint pink fringe stays on the fur, so re-strip with
+Recraft once the token works.
+
+**When the pose matters, write your own prompt** and call `openrouter-image.py`
+directly with named references, as for a panel. Two wordings held 3 of 3:
+
+- **Seated with no furniture drawn:** "He sits upright ON AN INVISIBLE OFFICE
+  CHAIR at normal chair height… his lower legs hang STRAIGHT DOWN under his
+  knees… He is NOT sitting on the floor, his legs are NOT stretched out in
+  front of him, the soles of his Crocs do NOT face the camera." "As if on an
+  invisible chair" by itself sat him on the floor in 2 of 3.
+- **Text-only change to a picked render** (a new shirt slogan): attach the
+  picked raw as reference 3, "THE PICKED RENDER of this exact image: keep his
+  pose, camera, proportions, lighting and look… changing ONLY the shirt
+  words". The pose held in 3 of 3, with the slogan verbatim.
+
+**A one-off shirt slogan is allowed for one piece** when Igor asks for it
+("THIS TOO SHALL PASS" for the floating explainer). Quote it, give the line
+break ("THIS TOO" over "SHALL PASS"), and say "does NOT say TECHNOLOGIST". The
+canon shirt everywhere else stays TECHNOLOGIST.
+
+**Muse snaps aspect ratios**: a 16:9 request came back 1920x1280. Center-crop
+to the ratio you asked for, then resize. Never squash.
+
+### Felt scenes and sprites for interactive pages
+
+For a page that animates a scene, such as an explainer, deliver the **plate,
+the figure and every prop sprite in ONE style from the start**. A felt cutout
+dropped onto the page's flat vector sky and water read to Igor as "a frame we
+stuck in". The layers:
+
+- **The plate**: a 16:9 felt diorama with no characters and nothing the page
+  draws. If the page animates the water, the plate is **sky only**. A sea
+  baked into a plate whose waterline moves gave two horizons and clouds
+  showing through the water.
+- **The figure**: a transparent cutout lit like the plate. Paws that hold page
+  props are empty closed fists, clear of the body. Draw no props. Report
+  sprite-pixel anchors for every hand, the head and anything the page lights.
+- **Prop sprites**: one magenta sheet per family, split into one file per
+  object. Write "The objects FLOAT in front of the backdrop: NO cast shadows"
+  plus "a gap of magenta as wide as one object between each pair". Without
+  those lines the shadows survived the key and the balloons touched. Split
+  touching objects at the emptiest column near each equal-spacing boundary,
+  then keep the largest blob.
+- **A mock composite** of plate, figure and props, roughly placed, so Igor
+  judges coherence before the page wires anything.
+
+**Hanging loads hang clear.** Weights tangled at his feet, the chain over a
+Croc, did not read as pulling him down ("balloons make sense, but other things
+not as much"). What read: **one taut chain straight down from the lowered fist
+to a ring below his feet**, and below the ring each weight on its own short
+drop, side by side, in open air above the water. The arm pulled straight with
+that shoulder a little low carries the strain; the face stays calm. **The
+label surface is part of the prop**: a flat blank face with a raised rim on
+each weight. A felt luggage tag is too small at page scale for a label like
+"people not liking me".
+
 ## Video: Gemini Omni
 
 A new medium, not a new house image model: stills stay on Muse. Video animates
