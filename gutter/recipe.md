@@ -257,6 +257,149 @@ whoever is in the picture (Igor: `raccoon-nerd.webp`; Larry:
 `images/raccoon-larry.webp`). Style text comes from the skill's
 `raccoon-style.txt`. Four candidates minimum for a cutout; they are cheap.
 
+## Video: Gemini Omni
+
+A new medium, not a new house image model: stills stay on Muse. Video animates
+**a finished, shipped panel**; it never designs one. First job: Den #15 "Direct
+Line" (2026-11-08), four clips, 20 s, $0.46.
+
+### Invocation
+
+`google/gemini-omni-1.2-flash` through OpenRouter's async video API. One job
+per panel, with the panel itself as the first frame:
+
+```json
+POST https://openrouter.ai/api/v1/videos
+{ "model": "google/gemini-omni-1.2-flash", "prompt": "…",
+  "duration": 5, "resolution": "360p", "aspect_ratio": "16:9",
+  "generate_audio": true, "seed": 15,
+  "frame_images": [ { "type": "image_url", "frame_type": "first_frame",
+                      "image_url": { "url": "data:image/jpeg;base64,…" } } ] }
+```
+
+The reply carries `id`, `status`, `polling_url`. Poll every 20 s until
+`completed` (terminal failures: `failed`, `cancelled`, `expired`), then
+`GET /api/v1/videos/{id}/content?index=0` with the bearer token. The finished
+job's `usage.cost` is the billed cost, and it matched the credit delta to the
+cent. Every job took 40–50 s, 15 s clips included; run the panels in
+parallel. Output is 640x360, h264, 24 fps, AAC stereo 48 kHz. Durations
+3–15 s; aspect 16:9 or 9:16 only. `GET /api/v1/videos/models` lists all of it.
+
+Runner: `gutter/omni.py` (a stdlib uv script). It pillarboxes the panel,
+submits, polls, downloads, writes the job JSON to `OUT/logs/`, and prints
+`usage.cost`. Key from `$OPENROUTER_API_KEY`, `$OPEN_ROUTER_KEY`, or
+`OPEN_ROUTER_KEY` in `$SECRET_BOX`; it never prints it.
+
+```bash
+gutter/omni.py panel-1.webp p1.txt --duration 5 --out-dir tmp/x/clips --name p1
+gutter/omni.py panel-2.webp p2.txt --duration 8 --last panel-2.webp --out-dir … --name p2a
+gutter/omni.py panel-2.webp p2.txt --duration 8 --out-dir … --name p2a --resume <job id>
+```
+
+A poll can hit a read timeout after the job is already billed. `--resume`
+picks the job back up by id instead of paying for it twice.
+
+- **A data URI works as the frame image.** No gist, no hosting: pad the panel
+  locally and send it inline (a 210 KB jpeg was fine).
+- **Cost: $0.023172 per second at 360p, $0.0695 at 720p.** The only SKUs are
+  "with audio", so turning audio off saves nothing: always generate it.
+
+### Square panels into a 16:9 frame
+
+Pillarbox, don't crop: a crop loses either the balloons or the heads. Put the
+800 px panel, border and all, centered on a 1280x720 page in the contract's
+cream `#F7F0D4`, and tell the model the page and border never move:
+
+```bash
+magick -size 1280x720 xc:'#F7F0D4' \( den-0NN-p1.webp -resize 720x720 \) \
+  -gravity center -composite -quality 92 p1-16x9.jpg
+```
+
+It held in 4 of 4 clips: still cream bars, still border, motion only inside
+the panel. It reads as the comic page coming alive. The cost is that the
+panel is only 360 px tall at 360p.
+
+### Dialogue: keep the drawn balloons, let the model speak the lines
+
+The shipped panel's balloons are already verbatim and on-contract, so they go
+in with the first frame and the prompt pins them: "Every speech balloon stays
+exactly as drawn for the whole clip: same words, same shape, same place. No new
+text anywhere." With a locked-off camera they did not move or garble a letter
+in 4 of 4 clips. The model's native audio speaks the lines; a whisperx
+transcript of every clip matched the balloons word for word, in order, with
+two speakers per clip. No burned-in captions: they would only repeat the
+balloons, and the cream side bars are 140 px wide at 360p. Burn captions only
+if a clip morphs a balloon.
+
+**Small mixed-case lettering does not survive 360p.** The model re-draws the
+lettering from its first frame rather than copying it. The Den's big
+all-caps lettering held. The 2006 first-date strip's small mixed-case lettering
+came back garbled from frame one ("I loft my mouse", "tregs will be frogs"),
+while the same panel scaled down to 360 px stayed legible. The fix is to lay
+the drawn lettering back over the clip:
+
+- cut each balloon out of the source panel as an RGBA layer: pale,
+  low-saturation pixels inside a hand-given rectangle, with the holes filled
+  and the mask grown 5 px to take the outline;
+- cut each caption that sits straight on the art as its letters grown 14 px.
+  At 8 px a ghost of the model's own caption showed around them;
+- `ffmpeg -i clip.mp4 -i overlay.png -filter_complex overlay=140:0`.
+
+The camera is locked off, so the overlay never slides. The cost is that rain
+behind a balloon freezes. The script is `gutter/lettering_overlay.py`. Check its mask on magenta before compositing: a
+streetlamp core passes the paper test, so keep the rectangles off lamps.
+
+**Thought bubbles: inner voice, closed mouth.** "Igor's INNER VOICE, a quiet
+… voice-over heard inside his head … while his lips do not move", plus "his
+MOUTH NEVER OPENS: he is THINKING, not speaking" in the ACTION. Both thought
+clips read as voice-over over a closed-mouth smile.
+
+**One long line per clip.** A 15 s clip asking for Tori's 22-word line and
+then Igor's 22-word thought came back with the order flipped. Tori's line
+turned into babble ("with a lot of along to the time"). The fix was to split
+the panel into two clips from the same first frame, each with "ONE speaker
+only … X says nothing". The first clip got `--last` set to the panel too, so it
+ends on its opening pose and the cut into the second clip doesn't show. Both
+clips then came back verbatim. Budget about 3 s per 10 spoken words, plus 1 s.
+
+### Prompt skeleton
+
+1. **Frame**: "Animate this exact comic panel… a square comic panel with a
+   black border, centered on a plain warm cream page. The page and border stay
+   perfectly still… all motion happens INSIDE the square panel. Locked-off
+   static camera, no zoom, no pan, no cut."
+2. **STYLE (most important)**: the felt-plush block, reworded for motion: "a
+   high-end 3D stop-motion render of handmade NEEDLE-FELTED plush toys… Keep
+   exactly the look of the first frame." "Stop-motion" got toy-like movement;
+   style never drifted.
+3. **Characters**: the canon lines, short, with "stays exactly on-model".
+   Larry's claw keeps the presence-first pair ("ALWAYS exactly ONE… raised and
+   clearly visible… Never two claws, never zero"). 0 claw drift across 15 s of
+   Larry.
+4. **ACTION**, with the duration in the heading: one small gesture per
+   speaker. Describe what moves; the first frame already holds what is there.
+5. **The balloon pin**, above.
+6. **AUDIO, in this order**: each speaker named with a voice ("a small
+   cheerful slightly frantic cartoon voice", "a calm, dry, kind older voice",
+   "a flat tinny electronic robot voice"), each line quoted, then "Nothing else
+   is spoken. No music." A wordless panel gets sound effects and "No speech".
+
+### Traps
+
+- **Small text dies at 360p.** TECHNOLOGIST is a smear in every frame; it was
+  legible on the 800 px still. It's a resolution limit, not a prompt problem.
+  Don't chase it at 360p.
+- **Props drift mid-clip.** In the wordless robot chain, the phones were
+  lowered out of sight by the second half: the chain stops reading as a call.
+  Next time pin the prop as hard as the balloons ("every robot keeps its
+  phone pressed to the next head for the whole clip").
+- **Small motion.** A 4–6 s clip from a dense panel moves gently: blinks,
+  head turns, a paw raised. A "ripple down the chain" barely showed in a wide
+  shot. Big action wants a closer panel or a longer clip.
+- **Check the speech with ASR, because frames can't show it.** Run `whisperx`
+  on every clip (`--model large-v3` when a line looks wrong). It caught the
+  flipped order and the babble, and a contact sheet would have passed both.
+
 ## Per-panel exports
 
 After Igor picks, cut the four panels:
