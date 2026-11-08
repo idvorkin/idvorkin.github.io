@@ -1,0 +1,2179 @@
+---
+layout: empty
+title: "Floating and Zooming"
+permalink: /floating-zooming/
+redirect_from:
+  - /floating
+  - /zooming
+description: "Two interactive ideas: how high you float (balloons lift you, weights sink you) and how pain zooms your attention in, and how to zoom back out."
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Floating and Zooming</title>
+<meta name="description" content="Two interactive ideas: how high you float (balloons lift you, weights sink you) and how pain zooms your attention in, and how to zoom back out.">
+<meta property="og:title" content="Floating and Zooming">
+<meta property="og:description" content="Balloons lift you, weights sink you, and pain narrows your view. An interactive felt-raccoon explainer.">
+<meta property="og:image" content="https://idvorkin.com/floating-zooming/art/floating-A2.webp">
+<script>
+  // Follow the OS color scheme; DaisyUI keys off data-theme.
+  (function () {
+    var mq = window.matchMedia('(prefers-color-scheme: dark)');
+    function apply() { document.documentElement.setAttribute('data-theme', mq.matches ? 'dark' : 'light'); }
+    apply();
+    if (mq.addEventListener) mq.addEventListener('change', apply);
+  })();
+</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@5.5.19/daisyui.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@5.5.19/themes.css">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.2.4/dist/index.global.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  :where(.grid, .flex) > * { min-width: 0; }
+  :where(p, h1, h2, h3, li, dd, figcaption, .badge) { overflow-wrap: anywhere; }
+  :where(img, svg) { max-width: 100%; height: auto; }
+
+  html, body { background: var(--color-base-100); color: var(--color-base-content); }
+  body { overflow-x: clip; }  /* clip, not hidden: hidden makes body a scroll container and breaks the sticky scene */
+  .serif { font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; }
+
+  /* ---- room palette (light) ---- */
+  .scene {
+    --wall: #efe5d3; --wall-shade: #e4d7c0; --floor: #c79f72; --floor-line: #b48b5f;
+    --frame: #f8f4ec; --sky: #bfe0f2; --sun: #f5c542; --hill: #9cc98a; --leaf: #4f9a5a; --trunk: #6b4a2f;
+    --sunpatch: #fff3c4; --wood: #8a5a3b; --wood-dark: #6c442b; --chair: #3f5f7a;
+    --skin: #e2b48e; --hair: #3b2a20; --shirt: #5a7fa8; --pants: #39465a;
+    --laptop: #9aa3ad; --screen: #e8eef5; --ink: #2d2a32; --mug: #e9e2d6; --tea: #9a5b2c;
+    --rug: #b8655a; --cat: #e09a4f; --cat-dark: #b8742f; --books1: #c45a4a; --books2: #4b7bb3; --books3: #d8a93d; --books4: #5c9a6b;
+    --curtain: #7d1f2c; --curtain-fold: #5f1520; --pot: #c7663f;
+    --threat: #e3263b; --dim: #120f18; --chip-bg: #fffaf0; --chip-fg: #1f1b24; --chip-line: #e3263b;
+  }
+  [data-theme="dark"] .scene {
+    --wall: #3a3646; --wall-shade: #332f3e; --floor: #4f3f31; --floor-line: #43352a;
+    --frame: #6b6678; --sky: #2b4863; --sun: #e9d58f; --hill: #3f6a46; --leaf: #3b7a48; --trunk: #4a3424;
+    --sunpatch: #8a7a52; --wood: #6b4a33; --wood-dark: #523726; --chair: #2f4a60;
+    --skin: #c9997a; --hair: #1d1511; --shirt: #4a6a90; --pants: #2b3546;
+    --laptop: #7c8590; --screen: #c7d2de; --ink: #1c1a20; --mug: #cfc6b8; --tea: #7a4421;
+    --rug: #8c4a43; --cat: #c98642; --cat-dark: #9a6329; --books1: #a54a3e; --books2: #3d6596; --books3: #b48c33; --books4: #4a7d57;
+    --curtain: #5c1621; --curtain-fold: #440f18; --pot: #a5552f;
+    --threat: #ff4458; --dim: #050408; --chip-bg: #1c1924; --chip-fg: #f3eef8; --chip-line: #ff4458;
+  }
+
+  /* ---- timeline palette ---- */
+  .tl { --tl-bg: #f7f2e8; --tl-ink: #2a2631; --tl-muted: #7b7383; --tl-line: #b9afc2; --tl-now: #4b55d6; --tl-ev: #3f7d58; --threat: #e3263b; }
+  [data-theme="dark"] .tl { --tl-bg: #1c1b26; --tl-ink: #ece8f3; --tl-muted: #9c94a8; --tl-line: #575066; --tl-now: #8f97ff; --tl-ev: #7cc79a; --threat: #ff4458; }
+  .tl text { font-family: ui-sans-serif, system-ui, sans-serif; }
+  .tl .ev-label { font-size: 17px; font-weight: 600; fill: var(--tl-ink); }
+  .tl .tick-label { font-size: 14px; fill: var(--tl-muted); }
+  .tl .tl-title { font-size: 34px; font-weight: 700; fill: var(--tl-ink); font-family: "Iowan Old Style", Palatino, Georgia, serif; }
+  .tl .tl-sub { font-size: 16px; fill: var(--tl-muted); }
+  .tl .dir-label { font-size: 14px; fill: var(--tl-muted); }
+  .tl .pain-label { font-size: 17px; font-weight: 700; fill: var(--threat); }
+
+  .chip text { font: 600 17px/1 ui-sans-serif, system-ui, sans-serif; fill: var(--chip-fg); }
+  .chip rect { fill: var(--chip-bg); stroke: var(--chip-line); stroke-width: 1.5; }
+  .chip { opacity: 0; transition: opacity .5s ease; }
+  .chip.on { opacity: 1; }
+  .chip.calm rect { stroke: currentColor; stroke-opacity: .35; }
+  @media (max-width: 640px) {
+    .chip text { font-size: 24px; }
+    .tl .ev-label { font-size: 24px; }
+    .tl .tick-label { font-size: 20px; }
+    .tl .tl-title { font-size: 44px; }
+    .tl .tl-sub, .tl .dir-label { font-size: 21px; }
+    .tl .pain-label { font-size: 24px; }
+    .viewer { position: sticky; top: 0; z-index: 10; padding-top: .5rem; background: var(--color-base-100); }
+  }
+
+  .sound { opacity: 0; transition: opacity .6s ease; }
+  .sound.on { opacity: 1; }
+
+  .throb { transform-box: fill-box; transform-origin: center; animation: throb 1.6s ease-in-out infinite; }
+  @keyframes throb { 0%,100% { transform: scale(1); opacity: .95; } 50% { transform: scale(1.12); opacity: .7; } }
+  .breathe { transform-box: fill-box; transform-origin: center; animation: breathe 5s ease-in-out infinite; }
+  @keyframes breathe { 0%,100% { transform: scale(.85); opacity: .15; } 50% { transform: scale(1.15); opacity: .45; } }
+  .steam { animation: steam 3.2s ease-in-out infinite; }
+  .steam.b { animation-delay: 1.1s; }
+  @keyframes steam { 0% { transform: translateY(4px); opacity: 0; } 40% { opacity: .7; } 100% { transform: translateY(-10px); opacity: 0; } }
+  .sound.on path { animation: ring 1.8s ease-out infinite; }
+  @keyframes ring { 0% { opacity: .2; } 50% { opacity: 1; } 100% { opacity: .2; } }
+
+  /* the two layers sit on top of each other; the room grows out of the "now" dot */
+  .stage-frame { display: grid; border-radius: 1rem; overflow: hidden; background: #120f18; box-shadow: 0 10px 30px -12px rgb(0 0 0 / .45); }
+  .layer { grid-area: 1 / 1; display: block; width: 100%; height: auto; aspect-ratio: 5 / 3;
+    transform-origin: 50% 69%; transition: opacity .7s ease, transform .9s cubic-bezier(.2,.7,.2,1); }
+  .room-layer { opacity: 0; transform: scale(.04); }
+  .room-layer.shown { opacity: 1; transform: scale(1); }
+  .tl-layer { opacity: 1; transform: scale(1); }
+  .tl-layer.gone { opacity: 0; transform: scale(6); }
+
+  .scale-crumbs { display: flex; flex-wrap: wrap; gap: .25rem .35rem; font-size: .78rem; margin-bottom: .5rem; list-style: none; padding: 0; }
+  .scale-crumbs li { padding: .15rem .5rem; border-radius: 999px; border: 1px solid color-mix(in oklab, var(--color-base-content) 18%, transparent);
+    opacity: .75; transition: opacity .4s ease; }
+  .scale-crumbs li.cur { background: var(--color-primary); color: var(--color-primary-content); border-color: var(--color-primary); opacity: 1; font-weight: 600; }
+  .scale-crumbs.collapsed li:not(.cur) { opacity: .2; text-decoration: line-through; }
+  .scale-crumbs.collapsed li.cur { background: #e3263b; border-color: #e3263b; color: #fff; }
+
+  .btn:focus-visible, input:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 2px; }
+  .meter { height: .75rem; border-radius: 999px; background: color-mix(in oklab, var(--color-base-content) 12%, transparent); overflow: hidden; }
+  .meter > span { display: block; height: 100%; background: #e3263b; border-radius: 999px; transition: width .4s ease; }
+  .phase { font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; font-weight: 700; padding: .1rem .5rem; border-radius: 999px; }
+  .phase.in { background: color-mix(in oklab, var(--color-primary) 18%, transparent); }
+  .phase.pain { background: #e3263b; color: #fff; }
+  .phase.out { background: color-mix(in oklab, var(--color-success) 25%, transparent); }
+  .claim { border-left: 3px solid color-mix(in oklab, var(--color-base-content) 20%, transparent); padding-left: 1rem; }
+  a.cite { text-decoration: underline; text-underline-offset: 2px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .throb, .breathe, .steam, .sound.on path { animation: none !important; }
+    .chip, .sound, .meter > span, .layer, .scale-crumbs li { transition: none !important; }
+  }
+
+  /* ===== Part 1: floating ===== */
+  .float-scene { --sky1: #cfe6f5; --sky2: #f6f1e6; --water: #3f87b3; --water2: #2f6f97; --foam: #e9f5fb;
+    --skin: #e2b48e; --hair: #3b2a20; --shirt: #5a7fa8; --pants: #39465a; --iron: #3b3a44;
+    --zone: #6f6878; --ink: #2a2631; }
+  [data-theme="dark"] .float-scene { --sky1: #1c2436; --sky2: #2b2d40; --water: #1f5577; --water2: #173f5a; --foam: #9cc3d8;
+    --skin: #c9997a; --hair: #1d1511; --shirt: #4a6a90; --pants: #2b3546; --iron: #9a98a6;
+    --zone: #a49cb0; --ink: #ece8f3; }
+  .float-scene text { font-family: ui-sans-serif, system-ui, sans-serif; }
+  .float-scene .zone { font-size: 15px; fill: var(--zone); }
+  .water-move { transition: transform 1.1s cubic-bezier(.3,.7,.3,1); }
+  #bob { animation: bob 4.5s ease-in-out infinite; }
+  @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+  .balloon { transform-box: fill-box; transform-origin: 50% 100%; transition: transform .6s cubic-bezier(.3,1.4,.5,1), opacity .4s ease; }
+  .balloon.off { transform: scale(0); opacity: 0; }
+  .bstring { transition: opacity .4s ease; }
+  .weight { transition: transform .6s ease, opacity .4s ease; }
+  .weight.off { opacity: 0; }
+  .tchip { display: inline-flex; align-items: center; gap: .4rem; font-weight: 500; }
+  .tchip .sw { width: .8rem; height: .8rem; border-radius: 999px; flex: none; }
+  .tchip .sw.sq { border-radius: 2px; }
+  .tchip .size { letter-spacing: -.1em; opacity: .6; font-size: .7rem; }
+  .tchip[aria-pressed="false"] { opacity: .65; background: transparent; }
+  .tchip[aria-pressed="false"] .sw { opacity: .35; }
+  .tchip[aria-pressed="true"] { border-color: color-mix(in oklab, var(--color-base-content) 45%, transparent); background: var(--color-base-200); }
+  .tchip:focus-visible, .series-nav a:focus-visible, summary:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 2px; }
+  .series-nav a[aria-current="true"] { font-weight: 700; }
+  @media (max-width: 640px) {
+    .float-scene .zone { font-size: 22px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    #floater, #wlabel-float, .water-move, .balloon, .bstring, .weight { transition: none !important; }
+    #wlabel-bob { animation: none !important; }
+    #bob { animation: none !important; }
+  }
+
+  /* ===== game feel ===== */
+  #floater, #wlabel-float { transition: transform 1.3s cubic-bezier(.34,1.45,.64,1); }
+  #wlabel-bob { animation: bob 4.5s ease-in-out infinite; }
+  .balloon.popin { animation: popin .55s cubic-bezier(.3,.7,.4,1) both; }
+  @keyframes popin { 0% { transform: scale(.15); opacity: 0; } 45% { transform: scale(1.2,.84); opacity: 1; } 70% { transform: scale(.93,1.07); } 100% { transform: scale(1); } }
+  .wbody { transform-box: fill-box; transform-origin: 50% 0%; }
+  .wbody.swing { animation: swingin .75s ease-out both; }
+  @keyframes swingin { 0% { transform: rotate(48deg) translateY(-14px); opacity: 0; } 30% { transform: rotate(-20deg); opacity: 1; } 55% { transform: rotate(10deg); } 78% { transform: rotate(-4deg); } 100% { transform: rotate(0); } }
+  #jolt.clunk { animation: jolt .38s ease-out; }
+  @keyframes jolt { 0% { transform: translateY(0); } 25% { transform: translateY(5px); } 50% { transform: translateY(-2px); } 75% { transform: translateY(1px); } 100% { transform: translateY(0); } }
+  #figure.shake { animation: shake .42s cubic-bezier(.36,.07,.19,.97); }
+  @keyframes shake { 0%,100% { transform: translate(0,0); } 15% { transform: translate(-7px,2px); } 30% { transform: translate(6px,-3px); } 45% { transform: translate(-5px,1px); } 60% { transform: translate(3px,2px); } 80% { transform: translate(-1px,-1px); } }
+  #figure { transition: box-shadow 1.2s ease; }
+  #figure.final-glow { box-shadow: 0 0 0 2px rgb(255 196 92 / .55), 0 0 48px 6px rgb(255 190 80 / .45); }
+  #figure.final-glow #tl-pain-glow { transform-box: fill-box; transform-origin: center; animation: glowpulse 2.6s ease-in-out 2; }
+  @keyframes glowpulse { 0%,100% { transform: scale(1); opacity: .25; } 50% { transform: scale(2.4); opacity: .55; } }
+  .sound-toggle { position: fixed; right: 1rem; bottom: 1rem; z-index: 60; box-shadow: 0 4px 14px -4px rgb(0 0 0 / .35); }
+  .sound-toggle:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) {
+    .balloon.popin, .wbody.swing, #jolt.clunk, #figure.shake, #figure.final-glow #tl-pain-glow { animation: none !important; }
+    #figure { transition: none !important; }
+  }
+
+  /* ---- Part 1 v8: iron + labels ---- */
+  .float-scene { --iron: #34333b; --iron-hi: #8d8b97; --iron-lo: #1c1b21; }
+  [data-theme="dark"] .float-scene { --iron: #4a4954; --iron-hi: #b3b1bd; --iron-lo: #23222a; }
+  .float-scene .blabel, .float-scene .wlabel { font: 700 15px/1 ui-sans-serif, system-ui, sans-serif; fill: #fff;
+    stroke: rgb(20 18 26 / .7); stroke-width: 3.5px; paint-order: stroke; stroke-linejoin: round; pointer-events: none; }
+  .float-scene .wlabel { font-size: 14px; }
+  .dial-range { --range-fill: 0; }
+
+  @media (max-width: 640px) { .float-scene .blabel, .float-scene .wlabel { font-size: 18px; stroke-width: 4px; } .float-scene .zone { font-size: 19px; } }
+
+  /* ---- felt layers ---- */
+  .float-scene .blabel, .float-scene .wlabel { font-family: "Patrick Hand", ui-rounded, system-ui, sans-serif; font-weight: 400; font-size: 19px; }
+  .float-scene .wlabel { font-size: 13px; stroke: rgb(0 0 0 / .35); stroke-width: 2px; }
+  .float-scene .zone { font-family: "Patrick Hand", ui-rounded, system-ui, sans-serif; font-size: 17px; }
+  [data-theme="dark"] .float-scene .felt-bg { filter: brightness(.62) saturate(.9); }
+  @media (max-width: 640px) {
+    .float-scene .blabel { font-size: 17px; }
+    .float-scene .wlabel { font-size: 15px; }
+    .float-scene .zone { font-size: 18px; }
+  }
+
+  /* ---- felt zone tags ---- */
+  .ztag rect.tag { fill: #f3e7cf; stroke: #b0916a; stroke-width: 1.2; }
+  .ztag rect.stitch { fill: none; stroke: #8a6c48; stroke-width: 1; stroke-dasharray: 3 2.5; }
+  .ztag text { font-family: "Patrick Hand", ui-rounded, system-ui, sans-serif; font-size: 15px; fill: #4b3826; }
+  .ztag.cur rect.tag { fill: #fff6df; stroke: #7a5a34; stroke-width: 2; }
+  .ztag.cur text { font-weight: 700; }
+  .zline { stroke: #fffaf0; stroke-width: 3; stroke-linecap: round; stroke-dasharray: .1 9; opacity: .75; }
+  [data-theme="dark"] .ztag rect.tag { fill: #d9cbb0; }
+  @media (max-width: 640px) { .ztag text { font-size: 19px; } }
+
+  /* ---- inline controls: sticky scene + side panel, grab-able items, felt tray ---- */
+  .float-wrap > figure { margin: 0; position: relative; }
+  @media (max-width: 1023px) {
+    /* phone/tablet: the scene sticks to the top while the controls scroll under it */
+    .float-wrap > figure { position: sticky; top: 0; z-index: 20; }
+  }
+  @media (min-width: 1024px) {
+    .float-wrap { --fw: min(1180px, calc(100vw - 2rem)); width: var(--fw); margin-left: calc(50% - var(--fw) / 2);
+      display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 1.25rem; align-items: start; }
+    .float-wrap > figure { position: sticky; top: 1rem; width: 100%; max-width: calc((100vh - 2rem) * 1.1); justify-self: center; }
+    .float-panel { max-height: calc(100vh - 2rem); overflow-y: auto; position: sticky; top: 1rem; padding-right: .25rem; }
+    .float-panel #dial-list, .float-panel #toggle-cols, .float-panel #custom-cols { grid-template-columns: minmax(0, 1fr); }
+    .float-panel #tolerance-box { margin-bottom: .25rem; }
+  }
+  .float-panel .rounded-box { padding: .5rem .75rem; }
+  #water-front-g, #zones, #wlabel-float, #float-fx { pointer-events: none; }
+  .grab { cursor: grab; touch-action: none; }
+  .grab:active, .dragging .grab { cursor: grabbing; }
+  .tray { position: absolute; left: 50%; bottom: .5rem; transform: translateX(-50%); max-width: calc(100% - 1rem);
+    display: flex; flex-wrap: wrap; justify-content: center; gap: .3rem; padding: .35rem .5rem;
+    background: #f3e7cf; border: 1.5px solid #b0916a; border-radius: .7rem; box-shadow: 0 3px 10px -4px rgb(0 0 0 / .45);
+    outline: 1px dashed #8a6c48; outline-offset: -5px; font-family: "Patrick Hand", ui-rounded, system-ui, sans-serif; }
+  .tray:empty { display: none; }
+  .tray .spare { display: inline-flex; align-items: center; gap: .3rem; padding: .1rem .55rem; border-radius: 999px; font-size: 15px; line-height: 1.4;
+    color: #4b3826; background: #fff6df; border: 1px solid #c9ab82; cursor: grab; touch-action: none; user-select: none; }
+  .tray .spare:hover { background: #fffbef; } .tray .spare:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 1px; }
+  .tray .spare .sw { width: .7rem; height: .7rem; border-radius: 999px; flex: none; } .tray .spare .sw.sq { border-radius: 2px; }
+  .tray.drop-target { background: #ffe9b8; }
+  .drag-ghost { position: fixed; z-index: 100; pointer-events: none; transform: translate(-50%, -50%) scale(1.1); }
+  .drag-hint { position: absolute; left: .6rem; top: .5rem; font: 13px/1.2 "Patrick Hand", ui-rounded, system-ui, sans-serif; color: #4b3826;
+    background: rgb(255 246 223 / .82); padding: .15rem .5rem; border-radius: .5rem; pointer-events: none; transition: opacity .6s ease; }
+  .drag-hint.gone { opacity: 0; }
+  #face .mood-worried, #face .mood-scared { opacity: 0; transition: opacity .35s ease; }
+  #face[data-mood="worried"] .mood-worried, #face[data-mood="scared"] .mood-worried, #face[data-mood="scared"] .mood-scared { opacity: 1; }
+  #face[data-mood="scared"] .brow-l { transform: translate(0, -2.2px) rotate(-6deg); }
+  #face[data-mood="scared"] .brow-r { transform: translate(0, -2.2px) rotate(6deg); }
+  #face .brow { transform-box: fill-box; transform-origin: center; transition: transform .35s ease; }
+  #face .lids { transform-box: fill-box; transform-origin: 50% 0; transform: scaleY(0); }
+  #face[data-mood="calm"] .lids, #face[data-mood="worried"] .lids { animation: blink 4.6s infinite; }
+  @keyframes blink { 0%, 93%, 100% { transform: scaleY(0); } 95.5% { transform: scaleY(1); } }
+  #face[data-mood="scared"] .pupil { animation: darty .5s steps(2) infinite; }
+  @keyframes darty { 50% { transform: translateX(1.2px); } }
+  @media (prefers-reduced-motion: reduce) { #face .lids, #face .pupil { animation: none !important; } }
+  .scissors { position: absolute; right: .6rem; top: .5rem; width: 2.6rem; height: 2.6rem; border-radius: 999px; font-size: 1.45rem; line-height: 1;
+    background: #f3e7cf; border: 1.5px solid #b0916a; outline: 1px dashed #8a6c48; outline-offset: -5px; cursor: grab; touch-action: none;
+    box-shadow: 0 3px 10px -4px rgb(0 0 0 / .45); transition: transform .15s ease; }
+  .scissors:hover { transform: rotate(-12deg) scale(1.06); } .scissors:focus-visible { outline: 3px solid var(--color-accent); }
+  .scissors.in-use { opacity: .35; }
+  .scissor-ghost { position: fixed; z-index: 100; pointer-events: none; font-size: 2.2rem; line-height: 1; transform: translate(-30%, -50%) rotate(-30deg); }
+  .scissor-ghost.snip { animation: snip .18s ease; }
+  @keyframes snip { 50% { transform: translate(-30%, -50%) rotate(-50deg) scale(1.15); } }
+  .hint-short { display: none; }
+  @media (max-width: 640px) {
+    .hint-long { display: none; } .hint-short { display: inline; } .drag-hint { font-size: 12px; }
+    .tray { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; bottom: .3rem; padding: .25rem .4rem; gap: .25rem; scrollbar-width: none; }
+    .tray .spare { font-size: 13px; padding: 0 .45rem; white-space: nowrap; flex: none; }
+  }
+</style>
+</head>
+<body>
+<button id="sound-toggle" class="btn btn-sm sound-toggle" type="button" aria-pressed="false" title="Sound effects">
+  <svg class="snd-off" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M17 9l5 6M22 9l-5 6"/></svg>
+  <svg class="snd-on" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="display:none"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19.5 5.5a9 9 0 0 1 0 13"/></svg>
+  <span class="snd-text">Sound off</span>
+</button>
+<main class="mx-auto max-w-3xl px-4 py-8 sm:py-12">
+
+  <!-- ===== Series framing ===== -->
+  <nav class="series-nav text-sm mb-6 flex flex-wrap items-center gap-2" aria-label="Series">
+    <a href="#part1" class="link link-hover">1 &middot; Floating</a>
+    <span aria-hidden="true" class="opacity-50">&rarr;</span>
+    <a href="#part2" class="link link-hover">2 &middot; Zooming</a>
+  </nav>
+
+  <header id="framing" class="mb-10">
+    <p class="text-sm uppercase tracking-widest opacity-60 mb-2">A series &middot; two separate ideas</p>
+    <h1 class="serif text-3xl sm:text-5xl font-bold leading-tight mb-4">Floating and Zooming</h1>
+    <ul class="text-lg leading-relaxed opacity-90 space-y-1">
+      <li><a class="link link-hover font-semibold" href="#part1">1 &middot; Floating:</a> how much you can cope with right now.</li>
+      <li><a class="link link-hover font-semibold" href="#part2">2 &middot; Zooming:</a> how pain narrows attention, and how to widen it again.</li>
+    </ul>
+  </header>
+
+  <!-- ===== Part 1: Floating ===== -->
+  <section id="part1" aria-labelledby="part1-h" class="mb-14">
+    <p class="text-sm uppercase tracking-widest opacity-60 mb-1">Part 1</p>
+    <h2 id="part1-h" class="serif text-2xl sm:text-4xl font-bold mb-2">Floating</h2>
+    <p class="text-lg leading-relaxed opacity-90 mb-3">How much you can cope with right now.</p>
+    <p class="leading-relaxed mb-2">
+      Picture your calm as floating above water. Helium balloons in one hand pull you up. Weights in the other hand pull you down.
+      How high you float is how much you can cope with right now. Near the water you're barely coping. Under it, you're overwhelmed.
+    </p>
+    <p class="text-sm opacity-70 mb-4" id="p1-honest">
+      This is a metaphor, not a research model. The closest research idea is Lazarus and Folkman's: stress is what you feel when demands
+      seem to exceed the resources you have to meet them. Balloons and weights are an analogy for that, not a measurement.
+      <span class="opacity-80">(Lazarus &amp; Folkman, 1984, <em>Stress, Appraisal, and Coping</em>)</span>
+    </p>
+
+    <div class="float-wrap" id="float-wrap">
+    <figure class="stage-frame" id="float-figure">
+      <svg id="float-svg" class="float-scene block w-full" viewBox="60 0 660 600" role="img" aria-labelledby="float-title float-desc" style="aspect-ratio: 660 / 600; height: auto;">
+        <title id="float-title">A person floating above water</title>
+        <desc id="float-desc">A person floats above a waterline. Labeled helium balloons are tied to one raised hand and pull up. One chain runs down from the other hand to a ring below the feet, and labeled iron weights hang from the ring and pull down.</desc>
+        <defs>
+          <linearGradient id="fsky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="var(--sky1)"/><stop offset="1" stop-color="var(--sky2)"/>
+          </linearGradient>
+          <filter id="felt-fuzz" x="-20%" y="-20%" width="140%" height="140%">
+            <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="4" result="n"/>
+            <feDisplacementMap in="SourceGraphic" in2="n" scale="1.6" xChannelSelector="R" yChannelSelector="G"/>
+          </filter>
+          <radialGradient id="iron-shade" cx=".35" cy=".3" r=".8">
+            <stop offset="0" stop-color="var(--iron-hi)"/><stop offset=".55" stop-color="var(--iron)"/><stop offset="1" stop-color="var(--iron-lo)"/>
+          </radialGradient>
+        </defs>
+
+        <!-- SLOT: background plate (sky only; the water is its own layer) -->
+        <g id="plate-slot">
+          <rect x="0" y="0" width="800" height="620" fill="url(#fsky)"/>
+          <g id="clouds" fill="var(--foam)" opacity=".55" aria-hidden="true">
+            <ellipse cx="120" cy="80" rx="54" ry="16"/><ellipse cx="152" cy="68" rx="30" ry="16"/>
+            <ellipse cx="620" cy="120" rx="46" ry="13"/><ellipse cx="646" cy="110" rx="24" ry="12"/>
+          </g>
+        </g>
+
+        <!-- back water: one opaque layer with a wavy top edge, (built by the script) -->
+        <g id="water-back-g"><rect x="-400" y="500" width="1600" height="1600" fill="var(--water2)"/></g>
+
+        <g id="floater" transform="translate(380 355)">
+          <g id="jolt"><g id="bob">
+            <g id="balloon-layer"></g>
+            <g id="weight-layer"></g>
+            <!-- SLOT: figure. Floater coordinates: feet at (0,0), +y down. Anchors are read by the script;
+                 ART.figure (see the script header) replaces the vector person and supplies its own anchors. -->
+            <g id="figure-slot" data-anchor-balloon-hand="-34,-138" data-anchor-weight-hand="47,-50" data-anchor-head="0,-99">
+              <g id="float-person" transform="scale(1.5)"><title>You</title>
+                <path d="M-6 0 L-4 -24 M6 0 L4 -24" stroke="var(--pants)" stroke-width="7" stroke-linecap="round" fill="none"/>
+                <rect x="-12" y="-54" width="24" height="33" rx="9" fill="var(--shirt)"/>
+                <path d="M-9 -49 L-22 -90" stroke="var(--shirt)" stroke-width="7" stroke-linecap="round"/>
+                <path d="M9 -48 L30 -34" stroke="var(--shirt)" stroke-width="7" stroke-linecap="round"/>
+                <circle cx="-22.5" cy="-92" r="4.5" fill="var(--skin)"/>
+                <circle cx="31" cy="-33" r="4.5" fill="var(--skin)"/>
+                <circle cx="0" cy="-66" r="12" fill="var(--skin)"/>
+                <path d="M-12 -67 Q-11 -80 1 -79 Q12 -79 12 -68 Q7 -74 0 -73 Q-7 -73 -12 -67 Z" fill="var(--hair)"/>
+                <circle cx="-4" cy="-67" r="1.4" fill="#2a2631"/><circle cx="4" cy="-67" r="1.4" fill="#2a2631"/>
+                <path d="M-3 -61 q3 2 6 0" fill="none" stroke="#2a2631" stroke-width="1" stroke-linecap="round"/>
+              </g>
+            </g>
+            <g id="knot-layer"></g>
+          </g></g>
+        </g>
+
+        <!-- front water: the same sea drawn over the figure from the waterline down, so whatever is below reads as submerged -->
+        <g id="water-front-g" aria-hidden="true" opacity=".5"><rect x="-400" y="500" width="1600" height="1600" fill="var(--water)"/></g>
+        <!-- weight labels ride with the floater but sit above the water so they stay readable when submerged -->
+        <g id="wlabel-float" transform="translate(380 355)" aria-hidden="true"><g id="wlabel-bob"></g></g>
+        <!-- zone tags pinned at the right edge (felt tags + stitched band lines); built by the script, drawn for a waterline at y=500 -->
+        <g id="zones" aria-hidden="true"></g>
+        <g id="float-fx" aria-hidden="true" pointer-events="none"></g>
+      </svg>
+      <!-- the felt tray: spare items. Tap to add, or drag one up into the sky (balloon) or down by the chain (weight). -->
+      <div id="tray" class="tray" aria-label="Spare balloons and weights"></div>
+      <button id="scissors" class="scissors" type="button" title="Scissors: drag across a string to cut a balloon loose, or across a chain to let a weight go" aria-label="Scissors (drag across strings or chains)">&#9986;&#65039;</button>
+      <div id="drag-hint" class="drag-hint" aria-hidden="true"><span class="hint-long">hold to pump it up &middot; drag a dial across the hand to flip it &middot; drag it into the tray to remove</span><span class="hint-short">hold: pump &middot; drag: flip or remove</span></div>
+    </figure>
+    <div class="float-panel" id="float-panel">
+
+    <!-- readouts -->
+    <div class="grid grid-cols-3 gap-2 mt-4" id="float-readouts" hidden><!-- hidden: the highlighted zone tag in the scene already says this; JS still writes here -->
+      <div class="rounded-box bg-base-200 p-3"><div class="text-xs opacity-70">Lift</div><div class="text-xl font-bold tabular-nums" id="lift-val">7</div></div>
+      <div class="rounded-box bg-base-200 p-3"><div class="text-xs opacity-70">Load</div><div class="text-xl font-bold tabular-nums" id="load-val">4</div></div>
+      <div class="rounded-box bg-base-200 p-3"><div class="text-xs opacity-70">Height</div><div class="text-base font-bold" id="zone-val">coping</div></div>
+    </div>
+    <p class="sr-only" id="float-live" aria-live="polite"></p>
+
+    <!-- stress tolerance: the only thing that moves the water -->
+    <div class="rounded-box bg-base-200" id="tolerance-box">
+      <div class="flex items-baseline justify-between gap-2"><label class="font-semibold" for="tolerance">Stress tolerance</label><span class="text-xs opacity-75" id="tolerance-val">typical</span></div>
+      <input id="tolerance" type="range" min="0" max="100" step="1" value="71" class="range range-xs w-full mt-2" aria-describedby="tolerance-help">
+      <div class="flex justify-between text-xs opacity-60 mt-1" aria-hidden="true"><span>&larr; low (water high)</span><span>high (water low) &rarr;</span></div>
+      <p id="tolerance-help" class="sr-only">Moves the waterline. Same balloons and weights, but someone with lower tolerance goes under sooner.</p>
+    </div>
+
+    <!-- dials: two-sided items -->
+    <fieldset class="mt-4" id="dials">
+      <legend class="font-semibold mb-2">Dials <span class="font-normal text-sm opacity-70">(a weight at one end, a balloon at the other)</span></legend>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2" id="dial-list"></div>
+      <datalist id="dial-ticks"><option value="0"></option></datalist>
+    </fieldset>
+
+    <!-- toggles: things that happen -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4" id="toggle-cols">
+      <fieldset>
+        <legend class="font-semibold mb-2">Balloons <span class="font-normal text-sm opacity-70">(pull you up)</span></legend>
+        <div class="flex flex-wrap gap-2" id="balloon-toggles"></div>
+      </fieldset>
+      <fieldset>
+        <legend class="font-semibold mb-2">Weights <span class="font-normal text-sm opacity-70">(pull you down)</span></legend>
+        <div class="flex flex-wrap gap-2" id="weight-toggles"></div>
+      </fieldset>
+    </div>
+    <details class="mt-3 text-sm" id="custom">
+      <summary class="cursor-pointer opacity-80">Add your own</summary>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3" id="custom-cols">
+        <div class="flex gap-2 items-center">
+          <input id="custom-b-text" class="input input-sm w-full" maxlength="18" placeholder="your balloon, e.g. music" aria-label="Name your own balloon">
+          <button id="custom-b" class="btn btn-sm tchip" type="button" aria-pressed="false"><span class="sw" style="background:#4a72c0"></span>Add</button>
+        </div>
+        <div class="flex gap-2 items-center">
+          <input id="custom-w-text" class="input input-sm w-full" maxlength="18" placeholder="e.g. the email I'm avoiding" aria-label="Name your own weight">
+          <button id="custom-w" class="btn btn-sm tchip" type="button" aria-pressed="false"><span class="sw sq" style="background:#8a8f98"></span>Add</button>
+        </div>
+      </div>
+    </details>
+    </div><!-- /float-panel -->
+    </div><!-- /float-wrap -->
+
+    <!-- two separate dials -->
+    <div class="mt-6 rounded-box border border-base-300 p-4" id="separate">
+      <h3 class="serif text-xl font-bold mb-2">Balloons and weights are separate</h3>
+      <p class="leading-relaxed">
+        Cutting a weight doesn't add a balloon. You can carry a lot of both, or have neither, and land at about the same height
+        with a very different day. Same idea as <a class="cite" href="https://idvork.in/work-satisfaction">satisfaction is not the lack of dissatisfaction</a>,
+        and the energy inflows in the <a class="cite" href="https://idvork.in/life-as-business">life income statement</a>.
+      </p>
+      <div class="flex flex-wrap gap-2 mt-3">
+        <button class="btn btn-sm" type="button" id="preset-both">Lots of both</button>
+        <button class="btn btn-sm" type="button" id="preset-neither">Neither</button>
+        <button class="btn btn-sm btn-ghost" type="button" id="preset-reset">Back to the start</button>
+      </div>
+    </div>
+
+    <!-- series nav -->
+    <nav class="mt-8 text-sm" aria-label="Next in the series" id="series-next">
+      Next in the series: <a class="link link-primary font-semibold" href="#part2">2 &middot; Zooming</a>
+    </nav>
+  </section>
+
+  <!-- ===== Part 2 header ===== -->
+  <header id="part2" class="mb-8" tabindex="-1">
+    <p class="text-sm uppercase tracking-widest opacity-60 mb-1">Part 2</p>
+    <h2 class="serif text-2xl sm:text-4xl font-bold leading-tight mb-2">Zooming</h2>
+    <p class="text-lg leading-relaxed opacity-90 mb-3">How pain narrows attention, and how to widen it again.</p>
+    <p class="leading-relaxed">
+      Start wide: a whole life, with decades of people, places and plans. Zoom in through the years to this hour and this room.
+      Then pain arrives, and attention collapses onto it until it feels like all there is and all there will be.
+      Zooming back out doesn't shrink the pain. It puts the room, the day and the life back around it.
+    </p>
+  </header>
+
+  <!-- ===== Interactive ===== -->
+  <section id="interactive" aria-labelledby="interactive-h" class="mb-12">
+    <h2 id="interactive-h" class="sr-only">Interactive: zooming in from a life to a moment, and back out</h2>
+
+    <div class="flex flex-wrap items-center gap-2 mb-3">
+      <span id="threat-label" class="text-sm font-semibold opacity-70">What hurts:</span>
+      <div class="join" role="radiogroup" aria-labelledby="threat-label">
+        <input class="join-item btn btn-sm" type="radio" name="threat" value="pain" aria-label="Shoulder pain" checked>
+        <input class="join-item btn btn-sm" type="radio" name="threat" value="email" aria-label="Angry email">
+        <input class="join-item btn btn-sm" type="radio" name="threat" value="deadline" aria-label="Deadline">
+      </div>
+    </div>
+
+    <div class="viewer">
+      <ol class="scale-crumbs" id="crumbs" aria-label="Time scale">
+        <li>A life</li><li>Decade</li><li>Year</li><li>Week</li><li>Today</li><li>Hour</li><li>This moment</li>
+      </ol>
+
+      <figure class="stage-frame" id="figure">
+        <svg id="timeline" class="tl layer tl-layer" viewBox="0 0 800 480" role="img" aria-labelledby="tl-title tl-desc">
+          <title id="tl-title">A timeline of one life, zoomable from decades down to a minute</title>
+          <desc id="tl-desc">A horizontal line from birth to old age. Past is solid, the future is dashed. Events sit above the line, and a marker shows now.</desc>
+          <rect id="tl-bg" x="0" y="0" width="800" height="480" fill="var(--tl-bg)"/>
+          <text id="tl-name" class="tl-title" x="60" y="78">A life</text>
+          <text id="tl-inview" class="tl-sub" x="60" y="108">about 85 years in view</text>
+          <g id="tl-ticks"></g>
+          <line id="tl-past" x1="60" y1="330" x2="400" y2="330" stroke="var(--tl-line)" stroke-width="4" stroke-linecap="round"><title>The past</title></line>
+          <line id="tl-future" x1="400" y1="330" x2="740" y2="330" stroke="var(--tl-line)" stroke-width="4" stroke-dasharray="10 9"><title>What's still ahead</title></line>
+          <g id="tl-events"></g>
+          <g id="tl-now"><title>Now</title>
+            <line id="now-line" x1="400" y1="150" x2="400" y2="346" stroke="var(--tl-now)" stroke-width="2" stroke-dasharray="4 4"/>
+            <text id="now-label" x="400" y="142" text-anchor="middle" class="ev-label" style="fill: var(--tl-now)">now</text>
+            <circle id="now-dot" cx="400" cy="330" r="7" fill="var(--tl-now)"/>
+          </g>
+          <g id="tl-pain" opacity="0"><title>The pain, the same size at every scale</title>
+            <circle id="tl-pain-glow" cx="400" cy="330" r="22" fill="var(--threat)" opacity=".25"/>
+            <circle id="tl-pain-dot" cx="400" cy="330" r="10" fill="var(--threat)"/>
+            <text id="tl-pain-label" class="pain-label" x="400" y="400" text-anchor="middle">this bad hour</text>
+          </g>
+          <text class="dir-label" x="60" y="455">&larr; behind you</text>
+          <text class="dir-label" x="740" y="455" text-anchor="end">ahead &rarr;</text>
+        </svg>
+      <svg id="stage" class="scene layer room-layer" aria-hidden="true" viewBox="0 0 800 480" role="img" aria-labelledby="stage-title stage-desc" preserveAspectRatio="xMidYMid slice">
+        <title id="stage-title">A room seen as a stage, lit by a spotlight</title>
+        <desc id="stage-desc">A person sits at a desk in a room with a window, a tree outside, a sleeping cat in a patch of sun, a plant, a wall clock, a calendar, a laptop, a cup of tea and a bookshelf with a speaker. A spotlight shows how much of the room the person can take in.</desc>
+        <defs>
+          <radialGradient id="soft">
+            <stop offset="0" stop-color="#000"/>
+            <stop offset=".72" stop-color="#000"/>
+            <stop offset="1" stop-color="#fff"/>
+          </radialGradient>
+          <radialGradient id="glow">
+            <stop offset="0" stop-color="var(--threat)" stop-opacity=".95"/>
+            <stop offset=".55" stop-color="var(--threat)" stop-opacity=".55"/>
+            <stop offset="1" stop-color="var(--threat)" stop-opacity="0"/>
+          </radialGradient>
+          <mask id="aperture-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="800" height="480">
+            <rect x="0" y="0" width="800" height="480" fill="#fff"/>
+            <circle id="aperture" cx="516" cy="230" r="600" fill="url(#soft)"/>
+            <g id="spot-holes"></g>
+          </mask>
+        </defs>
+
+        <g id="scene">
+          <!-- wall + floor -->
+          <rect id="wall" x="0" y="0" width="800" height="372" fill="var(--wall)"><title>Wall</title></rect>
+          <rect x="0" y="300" width="800" height="72" fill="var(--wall-shade)" opacity=".5"/>
+          <rect id="floor" x="0" y="372" width="800" height="108" fill="var(--floor)"><title>Floor</title></rect>
+          <path d="M0 400 H800 M0 432 H800 M0 462 H800" stroke="var(--floor-line)" stroke-width="2"/>
+
+          <!-- window with tree -->
+          <g id="window"><title>Window: sky, sun, a tree and a bird</title>
+            <rect x="80" y="70" width="150" height="160" rx="4" fill="var(--frame)"/>
+            <rect x="88" y="78" width="134" height="144" fill="var(--sky)"/>
+            <circle cx="195" cy="108" r="14" fill="var(--sun)"/>
+            <path d="M88 200 Q130 170 175 192 T222 186 V222 H88 Z" fill="var(--hill)"/>
+            <rect x="128" y="158" width="9" height="56" fill="var(--trunk)"/>
+            <circle cx="132" cy="146" r="26" fill="var(--leaf)"/>
+            <circle cx="114" cy="164" r="16" fill="var(--leaf)"/>
+            <circle cx="152" cy="163" r="17" fill="var(--leaf)"/>
+            <path d="M166 124 q6 -7 12 0 q6 -7 12 0" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"/>
+            <rect x="152" y="78" width="6" height="144" fill="var(--frame)"/>
+            <rect x="88" y="146" width="134" height="6" fill="var(--frame)"/>
+            <rect x="72" y="228" width="166" height="9" rx="2" fill="var(--frame)"/>
+          </g>
+
+          <!-- sun patch on floor -->
+          <polygon id="sunpatch" points="92,373 222,373 300,478 30,478" fill="var(--sunpatch)" opacity=".55"><title>Patch of sunlight on the floor</title></polygon>
+
+          <!-- rug + cat -->
+          <g id="cat"><title>A cat asleep on the rug, purring</title>
+            <ellipse cx="200" cy="444" rx="96" ry="22" fill="var(--rug)"/>
+            <path d="M172 430 q-22 4 -14 -14" fill="none" stroke="var(--cat-dark)" stroke-width="6" stroke-linecap="round"/>
+            <ellipse cx="205" cy="428" rx="34" ry="15" fill="var(--cat)"/>
+            <circle cx="238" cy="420" r="12" fill="var(--cat)"/>
+            <path d="M229 412 l3 -11 l6 8 Z M241 410 l5 -10 l3 11 Z" fill="var(--cat)"/>
+            <path d="M233 421 q3 2 6 0 M242 421 q3 2 6 0" fill="none" stroke="var(--ink)" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M195 418 q6 -4 12 0 M212 418 q6 -4 12 0" fill="none" stroke="var(--cat-dark)" stroke-width="2"/>
+          </g>
+
+          <!-- plant -->
+          <g id="plant"><title>Potted plant</title>
+            <ellipse cx="262" cy="304" rx="9" ry="26" transform="rotate(-28 262 304)" fill="var(--leaf)"/>
+            <ellipse cx="280" cy="300" rx="9" ry="28" transform="rotate(22 280 300)" fill="var(--leaf)"/>
+            <ellipse cx="271" cy="292" rx="8" ry="30" fill="var(--leaf)"/>
+            <ellipse cx="254" cy="324" rx="7" ry="18" transform="rotate(-58 254 324)" fill="var(--leaf)"/>
+            <path d="M250 334 L292 334 L286 372 L256 372 Z" fill="var(--pot)"/>
+          </g>
+
+          <!-- calendar -->
+          <g id="calendar"><title>Wall calendar with Friday circled</title>
+            <rect x="330" y="70" width="66" height="72" rx="3" fill="var(--frame)" stroke="var(--ink)" stroke-opacity=".25"/>
+            <rect x="330" y="70" width="66" height="16" rx="3" fill="#c0392b"/>
+            <path d="M343 66 v10 M383 66 v10" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/>
+            <g fill="var(--ink)" opacity=".35">
+              <rect x="337" y="93" width="8" height="6"/><rect x="350" y="93" width="8" height="6"/><rect x="363" y="93" width="8" height="6"/><rect x="376" y="93" width="8" height="6"/>
+              <rect x="337" y="124" width="8" height="6"/><rect x="376" y="124" width="8" height="6"/>
+            </g>
+            <circle cx="363" cy="113" r="10" fill="none" stroke="#c0392b" stroke-width="2.5"/>
+            <text x="363" y="117" text-anchor="middle" font-size="10" font-weight="700" fill="#c0392b" font-family="system-ui, sans-serif">FRI</text>
+          </g>
+
+          <!-- clock -->
+          <g id="clock"><title>Wall clock, ticking</title>
+            <circle cx="600" cy="100" r="26" fill="var(--frame)" stroke="var(--wood-dark)" stroke-width="4"/>
+            <path d="M600 100 V82 M600 100 L612 106" stroke="var(--ink)" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="600" cy="100" r="2.5" fill="var(--ink)"/>
+          </g>
+          <g id="clock-sound" class="sound" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path d="M634 88 q6 12 0 24"/><path d="M642 82 q10 18 0 36"/>
+          </g>
+
+          <!-- bookshelf + speaker -->
+          <g id="books"><title>Bookshelf</title>
+            <rect x="676" y="120" width="76" height="252" fill="var(--wood)"/>
+            <rect x="682" y="126" width="64" height="240" fill="var(--wood-dark)"/>
+            <rect x="682" y="184" width="64" height="5" fill="var(--wood)"/>
+            <rect x="682" y="244" width="64" height="5" fill="var(--wood)"/>
+            <rect x="682" y="304" width="64" height="5" fill="var(--wood)"/>
+            <rect x="686" y="146" width="9" height="38" fill="var(--books1)"/><rect x="696" y="150" width="8" height="34" fill="var(--books2)"/><rect x="705" y="142" width="10" height="42" fill="var(--books3)"/><rect x="716" y="152" width="8" height="32" fill="var(--books4)"/>
+            <rect x="688" y="204" width="10" height="40" fill="var(--books3)"/><rect x="699" y="210" width="8" height="34" fill="var(--books4)"/><rect x="708" y="206" width="9" height="38" fill="var(--books1)"/><rect x="726" y="212" width="16" height="32" transform="rotate(-14 726 244)" fill="var(--books2)"/>
+            <rect x="686" y="266" width="8" height="38" fill="var(--books2)"/><rect x="695" y="270" width="11" height="34" fill="var(--books1)"/><rect x="707" y="264" width="8" height="40" fill="var(--books4)"/>
+            <rect x="690" y="330" width="40" height="36" fill="var(--books3)" opacity=".8"/>
+          </g>
+          <g id="speaker"><title>Speaker playing music</title>
+            <rect x="694" y="80" width="34" height="40" rx="4" fill="var(--ink)"/>
+            <circle cx="711" cy="91" r="5" fill="var(--laptop)"/>
+            <circle cx="711" cy="108" r="9" fill="var(--laptop)"/>
+            <circle cx="711" cy="108" r="3" fill="var(--ink)"/>
+          </g>
+          <g id="speaker-sound" class="sound" aria-hidden="true">
+            <path d="M738 76 v-16 l10 -3 v14" fill="none" stroke="var(--ink)" stroke-width="2"/>
+            <circle cx="735" cy="77" r="3.5" fill="var(--ink)"/><circle cx="745" cy="72" r="3.5" fill="var(--ink)"/>
+            <path d="M676 70 q-4 -8 2 -14" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"/>
+          </g>
+          <g id="cat-sound" class="sound" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path d="M256 404 q8 -4 12 2"/><path d="M262 394 q12 -6 18 4"/>
+          </g>
+
+          <!-- soften the vector room a touch so the felt raccoon reads as the focus (a felt room comes later) -->
+          <rect x="0" y="0" width="800" height="480" fill="#1a1420" opacity=".14" aria-hidden="true"/>
+
+          <!--
+            SLOT: desk figure (Part 2 room). Scene coordinates (viewBox 800x480).
+            For a later ART.desk sprite, replace this group's children with one
+            <image href="..." x=".." y=".." width=".." height=".."/> and move the data-anchor-* values to the art.
+            The shoulder-pain threat (THREATS.pain) and the breath/hands/feet/person spots (SPOTS) are placed
+            against these anchors, so update those numbers to match. The chair above can go if the sprite has its own.
+          -->
+          <!-- desk-D (interim pick): sprite 664x1024 at scale 0.2832; anchors are Gutter's sprite points mapped to scene units -->
+          <g id="room-person" data-anchor-head="490,196" data-anchor-shoulder="540,270" data-anchor-hands="421,298 504,307" data-anchor-feet="455,375 509,379"><title>The raccoon, working at the desk</title>
+            <image href="art/desk-D.webp" x="396" y="117" width="188" height="290"/>
+          </g>
+          <ellipse id="breath-ring" class="breathe" cx="490" cy="276" rx="30" ry="22" fill="none" stroke="#7fc8f8" stroke-width="3" aria-hidden="true"/>
+
+          <!-- desk -->
+          <g id="desk"><title>Desk</title>
+            <rect x="320" y="300" width="340" height="11" rx="2" fill="var(--wood)"/>
+            <rect x="330" y="311" width="10" height="72" fill="var(--wood-dark)"/>
+            <rect x="640" y="311" width="10" height="72" fill="var(--wood-dark)"/>
+          </g>
+
+          <!-- laptop -->
+          <g id="laptop"><title>Laptop with an unread email</title>
+            <rect x="350" y="236" width="94" height="62" rx="4" fill="var(--laptop)"/>
+            <rect x="355" y="241" width="84" height="52" fill="var(--screen)"/>
+            <rect x="383" y="256" width="30" height="20" rx="2" fill="#fff" stroke="var(--ink)" stroke-width="1.5"/>
+            <path d="M383 257 L398 268 L413 257" fill="none" stroke="var(--ink)" stroke-width="1.5"/>
+            <circle cx="414" cy="254" r="6" fill="#c0392b"/>
+            <text x="414" y="257.5" text-anchor="middle" font-size="9" font-weight="800" fill="#fff" font-family="system-ui, sans-serif">!</text>
+            <path d="M340 298 L454 298 L460 303 L334 303 Z" fill="var(--laptop)"/>
+          </g>
+
+          <!-- tea -->
+          <g id="tea"><title>A cup of tea, still steaming</title>
+            <path d="M590 276 h26 v18 a6 6 0 0 1 -6 6 h-14 a6 6 0 0 1 -6 -6 Z" fill="var(--mug)"/>
+            <path d="M616 281 q10 0 10 8 q0 7 -10 7" fill="none" stroke="var(--mug)" stroke-width="4"/>
+            <ellipse cx="603" cy="277" rx="12" ry="2.5" fill="var(--tea)"/>
+            <path class="steam" d="M598 268 q-5 -6 0 -12 q5 -6 0 -12" fill="none" stroke="var(--ink)" stroke-opacity=".4" stroke-width="2" stroke-linecap="round"/>
+            <path class="steam b" d="M608 268 q-5 -6 0 -12 q5 -6 0 -12" fill="none" stroke="var(--ink)" stroke-opacity=".4" stroke-width="2" stroke-linecap="round"/>
+          </g>
+
+          <!-- the threat: one glow, moved to whichever threat is chosen -->
+          <g id="threat"><title>The threat</title>
+            <circle id="threat-glow" class="throb" cx="516" cy="230" r="30" fill="url(#glow)"/>
+          </g>
+        </g>
+
+        <!-- curtains frame the room as a stage (above the dimmer so the proscenium always reads) -->
+        <g id="dimmer-layer">
+          <rect id="dimmer" x="-400" y="-400" width="1600" height="1280" fill="var(--dim)" opacity=".92" mask="url(#aperture-mask)"/>
+        </g>
+        <g id="curtains" aria-hidden="true">
+          <path d="M0 0 H62 Q38 180 58 480 H0 Z" fill="var(--curtain)"/>
+          <path d="M16 0 Q8 240 20 480 M36 0 Q26 240 40 480" stroke="var(--curtain-fold)" stroke-width="5" fill="none"/>
+          <path d="M800 0 H738 Q762 180 742 480 H800 Z" fill="var(--curtain)"/>
+          <path d="M784 0 Q792 240 780 480 M764 0 Q774 240 760 480" stroke="var(--curtain-fold)" stroke-width="5" fill="none"/>
+          <path d="M0 0 H800 V22 Q780 36 760 22 Q740 36 720 22 Q700 36 680 22 Q660 36 640 22 Q620 36 600 22 Q580 36 560 22 Q540 36 520 22 Q500 36 480 22 Q460 36 440 22 Q420 36 400 22 Q380 36 360 22 Q340 36 320 22 Q300 36 280 22 Q260 36 240 22 Q220 36 200 22 Q180 36 160 22 Q140 36 120 22 Q100 36 80 22 Q60 36 40 22 Q20 36 0 22 Z" fill="var(--curtain)"/>
+        </g>
+        <g id="chips" aria-hidden="true"></g>
+      </svg>
+
+      </figure>
+    </div>
+
+    <!-- readouts -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4" id="readouts">
+      <div class="rounded-box bg-base-200 p-3">
+        <div class="flex items-baseline justify-between gap-2">
+          <span class="text-sm font-semibold">How much it hurts</span>
+          <span class="text-sm tabular-nums" id="intensity-val">0 / 10</span>
+        </div>
+        <div class="meter mt-2" aria-hidden="true"><span id="intensity-bar" style="width:0%"></span></div>
+        <p class="text-xs opacity-70 mt-1" id="intensity-sub">Nothing hurts yet.</p>
+      </div>
+      <div class="rounded-box bg-base-200 p-3">
+        <div class="flex items-baseline justify-between gap-2">
+          <span class="text-sm font-semibold">Share of what you notice</span>
+          <span class="text-sm tabular-nums" id="share-val">&mdash;</span>
+        </div>
+        <div class="meter mt-2" aria-hidden="true"><span id="share-bar" style="width:0%"></span></div>
+        <p class="text-xs opacity-70 mt-1" id="share-sub">Nothing hurts yet.</p>
+      </div>
+    </div>
+
+    <!-- journey control -->
+    <div class="mt-5 rounded-box border border-base-300 p-4" id="journey">
+      <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+        <div class="flex items-center gap-2">
+          <span id="phase" class="phase in">Zoom in</span>
+          <span id="step-count" class="text-sm opacity-70">1 of 15</span>
+        </div>
+      </div>
+      <label for="scrub" class="sr-only">Where you are in the journey</label>
+      <input id="scrub" type="range" min="0" max="14" value="0" step="1" class="range range-primary range-sm w-full">
+      <div class="flex justify-between text-xs opacity-60 mt-1" aria-hidden="true"><span>a life</span><span>pain</span><span>a life again</span></div>
+      <p id="step-title" class="serif font-bold text-xl mt-3 mb-1">A life</p>
+      <p id="narration" class="leading-relaxed min-h-[6rem]" aria-live="polite"></p>
+      <div class="flex flex-wrap gap-2 mt-3">
+        <button id="back" class="btn btn-ghost btn-sm" type="button">Back</button>
+        <button id="next" class="btn btn-primary btn-sm" type="button">Zoom in</button>
+        <button id="reset" class="btn btn-ghost btn-sm" type="button">Start over</button>
+      </div>
+    </div>
+
+    <p class="mt-4 text-sm opacity-75" id="takeaway">
+      The red mark is the same size at every scale and the hurt stays at 7 out of 10. What changes is how much else is in view.
+      Russ Harris's phrase for the room-sized version: the pain becomes "one performer among many on the stage rather than the spotlight act."
+    </p>
+  </section>
+
+  <!-- ===== Why it narrows ===== -->
+  <section id="why-narrow" aria-labelledby="why-narrow-h" class="mb-10">
+    <h2 id="why-narrow-h" class="serif text-2xl font-bold mb-4">Why it narrows</h2>
+    <div class="space-y-5">
+      <div class="claim" id="claim-alarm">
+        <p><strong>It's a feature that over-fires.</strong> Anxiety evolved for real threats. It pulls attention to the problem and
+          narrows perspective so you can work on a resolution. Like many automatic systems, it gets triggered by things that
+          aren't tigers, and then you're tunnel-visioned on an email.
+          <span class="opacity-70">(<a class="cite" href="https://idvorkin.com/anxiety">/anxiety</a>)</span></p>
+      </div>
+      <div class="claim" id="claim-easterbrook">
+        <p><strong>Arousal shrinks the range of cues you use.</strong> Easterbrook reviewed the arousal literature and proposed that as
+          emotional arousal rises, the range of cues a person takes in shrinks. Dropping irrelevant cues can help at first. Past a
+          point, relevant cues go too, and performance falls.
+          <span class="opacity-70">(Easterbrook, 1959, <a class="cite" href="https://doi.org/10.1037/h0047707"><em>Psychological Review</em></a>)</span></p>
+      </div>
+      <div class="claim" id="claim-weapon">
+        <p><strong>Weapon focus.</strong> In an eye-tracking study, people watching a scene with a gun looked at the gun more often and for
+          longer, and were worse at recognizing the person holding it. A meta-analysis found a small but reliable effect on lineup
+          accuracy and a larger one on describing the person. Part of the effect comes from the object being unusual, so threat isn't the only driver.
+          <span class="opacity-70">(Loftus, Loftus &amp; Messo, 1987, <a class="cite" href="https://doi.org/10.1007/BF01044839"><em>Law and Human Behavior</em></a>;
+          Steblay, 1992, <a class="cite" href="https://doi.org/10.1007/BF02352267">meta-analysis</a>;
+          Pickel, 1998, <a class="cite" href="https://doi.org/10.1080/741942361"><em>Memory</em></a>)</span></p>
+      </div>
+      <div class="claim" id="claim-time">
+        <p><strong>The time collapse is an inference, not a finding.</strong> The studies above measure narrowing in space: what you look at
+          and what you remember seeing. The idea that pain also shrinks your sense of time, so the past and future drop out of view, is this page's
+          extension of that, plus everyday experience. Treat it as a hypothesis.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Why zooming out helps ===== -->
+  <section id="why-widen" aria-labelledby="why-widen-h" class="mb-10">
+    <h2 id="why-widen-h" class="serif text-2xl font-bold mb-4">Why zooming out helps</h2>
+    <div class="space-y-5">
+      <div class="claim" id="claim-broaden">
+        <p><strong>Positive emotion tends to widen attention.</strong> Fredrickson's broaden-and-build theory says positive emotions
+          widen the range of thoughts and actions that come to mind. In one test, people shown amusing or calming film clips were more
+          likely to match shapes by their overall pattern than by their small details.
+          <span class="opacity-70">(Fredrickson, 2001, <a class="cite" href="https://doi.org/10.1037/0003-066X.56.3.218"><em>American Psychologist</em></a>;
+          Fredrickson &amp; Branigan, 2005, <a class="cite" href="https://doi.org/10.1080/02699930441000238"><em>Cognition and Emotion</em></a>)</span></p>
+      </div>
+      <div class="claim" id="claim-intensity">
+        <p><strong>Intensity matters more than good vs. bad.</strong> Strong wanting narrows attention too: positive feelings high in
+          approach motivation (desire, craving) narrowed attention in lab tasks. So the dial is closer to "how strongly gripped" than
+          "how happy."
+          <span class="opacity-70">(Gable &amp; Harmon-Jones, 2008, <a class="cite" href="https://doi.org/10.1111/j.1467-9280.2008.02112.x"><em>Psychological Science</em></a>)</span></p>
+      </div>
+      <div class="claim" id="claim-act">
+        <p><strong>Widening the room comes from ACT.</strong> For chronic pain, Harris recommends broad focus: acknowledge the pain,
+          then widen to the five senses, the room and what you're doing. That's the room part of the walkthrough. The pain doesn't go anywhere; the struggle with it eases because it's no longer the only thing in view.
+          <span class="opacity-70">(<a class="cite" href="https://idvorkin.com/act-made-simple#chapter-17-being-present">ACT Made Simple, ch. 17</a>)</span></p>
+      </div>
+      <div class="claim" id="claim-sac">
+        <p><strong>Widening across time is self-as-context.</strong> ACT's name for the part of you that notices. Harris's Continuous You exercise
+          walks back through your life: your body, roles and feelings have all changed, and the you who noticed things as a child is the same you
+          noticing now. Seen from there, a bad hour is something that part of you watches, among everything else it has watched.
+          <span class="opacity-70">(<a class="cite" href="https://idvorkin.com/act-made-simple#chapter-25-the-noticing-self">ACT Made Simple, ch. 25</a>)</span></p>
+        <p class="text-sm opacity-70 mt-2">Honest gap: the lab studies show emotion and arousal change how wide attention is. They don't show that
+          widening it on purpose reduces suffering. That part is clinical practice and experience, not the experiments cited here.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== When narrow is right ===== -->
+  <section id="when-narrow" aria-labelledby="when-narrow-h" class="mb-10">
+    <h2 id="when-narrow-h" class="serif text-2xl font-bold mb-2">When narrow is right</h2>
+    <p class="mb-4 leading-relaxed">The skill is flexibility: narrow, broaden, sustain or redirect as the moment asks. Always-wide is its own failure.</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      <div class="card bg-base-200" id="card-widen">
+        <div class="card-body p-4">
+          <h3 class="card-title text-base">Widen when</h3>
+          <ul class="list-disc pl-5 text-sm space-y-1">
+            <li>Pain or panic fills the whole frame</li>
+            <li>One bad hour feels like the whole future</li>
+            <li>You're fighting a feeling instead of making room for it</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card bg-base-200" id="card-narrow">
+        <div class="card-body p-4">
+          <h3 class="card-title text-base">Narrow when</h3>
+          <ul class="list-disc pl-5 text-sm space-y-1">
+            <li>Worry is bouncing you between ten futures</li>
+            <li>Rumination keeps replaying the past</li>
+            <li>Pick one valued activity and keep returning to it</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="text-sm opacity-80 mt-4 leading-relaxed" id="costs">Stuck either way, inflexible attention costs three things (Harris):
+      <strong>cutting off</strong> (with someone but not there), <strong>missing out</strong> (dinner without tasting it), and
+      <strong>doing things poorly</strong> (mistakes because you're in your head).
+      <span class="opacity-70">(<a class="cite" href="https://idvorkin.com/act">/act</a>)</span></p>
+  </section>
+
+  <!-- ===== Left out / next ===== -->
+  <section id="next-reading" aria-labelledby="next-h" class="mb-6">
+    <h2 id="next-h" class="serif text-xl font-bold mb-2">Left out, and where to go next</h2>
+    <p class="text-sm leading-relaxed opacity-85">This page skips the mechanism debates (Yerkes-Dodson, attentional control theory) and makes no
+      claim about how long the effect of one zoom-out lasts. For the practice side, see
+      <a class="cite" href="https://idvorkin.com/act">/act</a> (present moment, "notice X", kernel mode),
+      <a class="cite" href="https://idvorkin.com/act-made-simple">/act-made-simple</a> (Harris's focusing skills, dropping anchor and the noticing self), and
+      <a class="cite" href="https://idvorkin.com/anxiety">/anxiety</a>.</p>
+  </section>
+</main>
+
+<script>
+// ===== Shared game-feel helpers: synthesized sound (off by default) + motion check =====
+window.FX = (function () {
+  var KEY = 'attention-zoom-sound';
+  var rm = window.matchMedia('(prefers-reduced-motion: reduce)');
+  var on = false, ctx = null, out = null, noiseBuf = null;
+  try { on = window.localStorage.getItem(KEY) === '1'; } catch (e) { on = false; }
+
+  // The AudioContext is only created from inside a user gesture (a click or key that triggers a sound or the toggle).
+  function ac() {
+    if (!ctx) {
+      var C = window.AudioContext || window.webkitAudioContext;
+      if (!C) return null;
+      ctx = new C();
+      out = ctx.createGain(); out.gain.value = 0.45; out.connect(ctx.destination);
+      noiseBuf = ctx.createBuffer(1, ctx.sampleRate, ctx.sampleRate);
+      var d = noiseBuf.getChannelData(0);
+      for (var i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1;
+    }
+    if (ctx.state === 'suspended') ctx.resume();
+    return ctx;
+  }
+  function env(g, t, peak, dur) {
+    g.gain.setValueAtTime(0.0001, t);
+    g.gain.exponentialRampToValueAtTime(peak, t + 0.008);
+    g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+  }
+  function tone(type, f0, f1, dur, peak, delay) {
+    var c = ac(); if (!c) return;
+    var t = c.currentTime + (delay || 0), o = c.createOscillator(), g = c.createGain();
+    o.type = type; o.frequency.setValueAtTime(f0, t);
+    if (f1) o.frequency.exponentialRampToValueAtTime(f1, t + dur);
+    env(g, t, peak, dur); o.connect(g); g.connect(out); o.start(t); o.stop(t + dur + 0.05);
+  }
+  function hiss(filter, f0, f1, q, dur, peak, delay) {
+    var c = ac(); if (!c) return;
+    var t = c.currentTime + (delay || 0), s = c.createBufferSource(), b = c.createBiquadFilter(), g = c.createGain();
+    s.buffer = noiseBuf; s.loop = true;
+    b.type = filter; b.Q.value = q; b.frequency.setValueAtTime(f0, t);
+    if (f1) b.frequency.exponentialRampToValueAtTime(f1, t + dur);
+    env(g, t, peak, dur); s.connect(b); b.connect(g); g.connect(out); s.start(t); s.stop(t + dur + 0.05);
+  }
+  var PENTA = [0, 2, 4, 7, 9, 12, 14, 16, 19];
+  var SOUNDS = {
+    pop:     function (p) { p = p || 1; tone('sine', 620 * p, 200 * p, 0.12, 0.5); hiss('highpass', 2500, 0, 1, 0.04, 0.2); },
+    deflate: function () { tone('sine', 300, 140, 0.18, 0.25); },
+    clunk:   function () { tone('triangle', 150, 55, 0.28, 0.6); hiss('lowpass', 700, 200, 1, 0.14, 0.35); },
+    splash:  function () { hiss('bandpass', 2000, 380, 0.8, 0.6, 0.5); hiss('lowpass', 900, 250, 0.7, 0.4, 0.35, 0.05); },
+    drip:    function (d) { tone('sine', 1500, 650, 0.09, 0.22, d || 0); },
+    chime:   function (i) { var f = 523.25 * Math.pow(2, PENTA[Math.min(i || 0, PENTA.length - 1)] / 12); tone('sine', f, 0, 1.3, 0.22); tone('sine', f * 2.01, 0, 0.7, 0.06); },
+    whoosh:  function (dir) { var up = dir !== -1; hiss('bandpass', up ? 280 : 1800, up ? 1800 : 240, 1.1, 0.4, 0.25); },
+    snap:    function () { hiss('bandpass', 1800, 160, 1.4, 0.22, 0.4); tone('sine', 110, 45, 0.35, 0.55, 0.02); },
+    sparkle: function () { [0, 0.07, 0.14].forEach(function (d, i) { tone('sine', 1568 * Math.pow(1.26, i), 0, 0.25, 0.12, d); }); },
+    glow:    function () { tone('sine', 392, 0, 2.2, 0.16); tone('sine', 587.3, 0, 2.2, 0.1, 0.12); tone('sine', 784, 0, 2, 0.07, 0.24); }
+  };
+  function play(name, arg) { if (!on || !SOUNDS[name]) return; try { SOUNDS[name](arg); } catch (e) { /* sound is optional */ } }
+
+  function paint(btn) {
+    btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    btn.querySelector('.snd-on').style.display = on ? '' : 'none';
+    btn.querySelector('.snd-off').style.display = on ? 'none' : '';
+    btn.querySelector('.snd-text').textContent = on ? 'Sound on' : 'Sound off';
+  }
+  document.addEventListener('DOMContentLoaded', function () {
+    var btn = document.getElementById('sound-toggle');
+    if (!btn) return;
+    paint(btn);
+    btn.addEventListener('click', function () {
+      on = !on;
+      try { window.localStorage.setItem(KEY, on ? '1' : '0'); } catch (e) { /* private mode: keep it for this visit */ }
+      paint(btn);
+      if (on) play('pop', 1.2);
+    });
+  });
+
+  // tiny tween helper for particles
+  function animate(dur, step, done) {
+    var t0 = performance.now();
+    (function f(now) { var t = Math.min(1, (now - t0) / dur); step(t); if (t < 1) requestAnimationFrame(f); else if (done) done(); })(t0);
+  }
+  return { play: play, reduce: function () { return rm.matches; }, animate: animate };
+})();
+</script>
+
+<script>
+(function () {
+  var reduceMQ = window.matchMedia('(prefers-reduced-motion: reduce)');
+  var reduce = reduceMQ.matches;
+  if (reduceMQ.addEventListener) reduceMQ.addEventListener('change', function (e) { reduce = e.matches; });
+  var SMALL = window.matchMedia('(max-width: 640px)');
+
+  var NS = 'http://www.w3.org/2000/svg';
+  var $ = function (id) { return document.getElementById(id); };
+  function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+  function lerp(a, b, t) { return a + (b - a) * t; }
+  function cap(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+
+  // ================= time =================
+  // All times in hours relative to now. "Now" is age 48 of an 85-year life.
+  var Y = 8766, MO = Y / 12, D = 24, MIN = 1 / 60, AGE = 48, LIFE = 85;
+  var X0 = 60, X1 = 740, AXIS_Y = 330, INTENSITY = 7;
+
+  var LEVELS = [
+    { name: 'A life',       w: LIFE * Y, inView: 'about 85 years in view' },
+    { name: 'This decade',  w: 10 * Y,   inView: '10 years in view' },
+    { name: 'This year',    w: Y,        inView: 'one year in view' },
+    { name: 'This week',    w: 7 * D,    inView: 'one week in view' },
+    { name: 'Today',        w: D,        inView: 'one day in view' },
+    { name: 'This hour',    w: 1,        inView: 'one hour in view' },
+    { name: 'This moment',  w: MIN,      inView: 'one minute in view' }
+  ];
+
+  // Each event is labeled only while the window width sits inside [lo, hi].
+  var EVENTS = [
+    // a life
+    { t: -48 * Y, label: 'born', lo: 20 * Y, hi: 1e9 },
+    { t: -42 * Y, label: 'childhood', lo: 20 * Y, hi: 1e9 },
+    { t: -35 * Y, label: 'school', lo: 20 * Y, hi: 1e9 },
+    { t: -24 * Y, label: 'first love', lo: 20 * Y, hi: 1e9 },
+    { t: -15 * Y, label: 'kids', lo: 20 * Y, hi: 1e9 },
+    { t: -8 * Y,  label: 'built things', lo: 20 * Y, hi: 1e9 },
+    { t: 9 * Y,   label: 'kids grown', lo: 20 * Y, hi: 1e9 },
+    { t: 19 * Y,  label: 'still ahead', lo: 20 * Y, hi: 1e9 },
+    { t: 32 * Y,  label: 'old age', lo: 20 * Y, hi: 1e9 },
+    // a decade
+    { t: -4.4 * Y, label: 'new city', lo: 2 * Y, hi: 30 * Y },
+    { t: -2.6 * Y, label: 'new job', lo: 2 * Y, hi: 30 * Y },
+    { t: -1.2 * Y, label: 'long trip', lo: 2 * Y, hi: 30 * Y },
+    { t: 2.2 * Y,  label: 'graduation', lo: 2 * Y, hi: 30 * Y },
+    { t: 4.1 * Y,  label: 'big birthday', lo: 2 * Y, hi: 30 * Y },
+    // a year
+    { t: -4.5 * MO, label: 'vacation', lo: 2 * MO, hi: 3 * Y },
+    { t: -2.6 * MO, label: 'a wedding', lo: 2 * MO, hi: 3 * Y },
+    { t: -1.1 * MO, label: 'birthday', lo: 2 * MO, hi: 3 * Y },
+    { t: 1.6 * MO,  label: 'holidays', lo: 2 * MO, hi: 3 * Y },
+    { t: 4.2 * MO,  label: 'spring trip', lo: 2 * MO, hi: 3 * Y },
+    // a week
+    { t: -2.9 * D, label: 'dinner out', lo: 2 * D, hi: 40 * D },
+    { t: -1.6 * D, label: 'long run', lo: 2 * D, hi: 40 * D },
+    { t: 1.4 * D,  label: 'hike', lo: 2 * D, hi: 40 * D },
+    { t: 2.8 * D,  label: 'date night', lo: 2 * D, hi: 40 * D },
+    // a day
+    { t: -9,  label: 'woke up', lo: 3, hi: 4 * D },
+    { t: -6.5, label: 'coffee', lo: 3, hi: 4 * D },
+    { t: -3.5, label: 'lunch', lo: 3, hi: 4 * D },
+    { t: 3,   label: 'kids home', lo: 3, hi: 4 * D },
+    { t: 5.5, label: 'dinner', lo: 3, hi: 4 * D },
+    { t: 9,   label: 'sleep', lo: 3, hi: 4 * D },
+    // an hour
+    { t: -0.4,  label: 'meeting', lo: 0.12, hi: 5 },
+    { t: -0.2,  label: 'tea', lo: 0.12, hi: 5 },
+    { t: 0.22,  label: 'a call', lo: 0.12, hi: 5 },
+    { t: 0.4,   label: 'a walk', lo: 0.12, hi: 5 }
+  ];
+
+  // window start fraction: centered on now, except a life starts at birth
+  function nowFrac(w) {
+    var p = clamp(Math.log(w / (10 * Y)) / Math.log(LIFE / 10), 0, 1);
+    return lerp(0.5, AGE / LIFE, p);
+  }
+  function xOf(t, w) { var f = nowFrac(w); return X0 + ((t + w * f) / w) * (X1 - X0); }
+
+  // build event nodes once
+  var evG = $('tl-events');
+  EVENTS.forEach(function (e, i) {
+    var g = document.createElementNS(NS, 'g');
+    var stem = document.createElementNS(NS, 'line');
+    stem.setAttribute('stroke', 'var(--tl-ev)'); stem.setAttribute('stroke-width', '1.5'); stem.setAttribute('stroke-opacity', '.6');
+    var dot = document.createElementNS(NS, 'circle');
+    dot.setAttribute('r', '6'); dot.setAttribute('fill', 'var(--tl-ev)');
+    var txt = document.createElementNS(NS, 'text');
+    txt.setAttribute('class', 'ev-label'); txt.setAttribute('text-anchor', 'middle'); txt.textContent = e.label;
+    var ti = document.createElementNS(NS, 'title'); ti.textContent = e.label;
+    g.appendChild(ti); g.appendChild(stem); g.appendChild(dot); g.appendChild(txt);
+    evG.appendChild(g);
+    e.el = g; e.stem = stem; e.dot = dot; e.txt = txt;
+  });
+  // stagger label heights within each tier by order
+  var tiers = {};
+  EVENTS.forEach(function (e) { (tiers[e.lo] = tiers[e.lo] || []).push(e); });
+  Object.keys(tiers).forEach(function (k) {
+    tiers[k].sort(function (a, b) { return a.t - b.t; }).forEach(function (e, i) { e.lvl = i % 3; });
+  });
+
+  var TICK_UNITS = [10 * Y, 5 * Y, 2 * Y, Y, 6 * MO, 3 * MO, MO, 14 * D, 7 * D, 2 * D, D, 12, 6, 3, 1, 0.5, 0.25, 5 / 60, 2 / 60, MIN, MIN / 2, MIN / 4];
+  function tickLabel(v, unit) {
+    if (unit >= Y) return 'age ' + Math.round(v);
+    var s = v > 0 ? '+' : '−', a = Math.abs(v);
+    if (unit >= MO) return s + Math.round(a / MO) + ' mo';
+    if (unit >= D) return s + Math.round(a / D) + ' d';
+    if (unit >= 1) return s + Math.round(a) + ' h';
+    if (unit >= MIN) return s + Math.round(a * 60) + ' min';
+    return s + Math.round(a * 3600) + ' s';
+  }
+
+  function drawTimeline(w, painOp) {
+    var big = SMALL.matches, f = nowFrac(w), start = -w * f, end = w * (1 - f);
+    var nowX = xOf(0, w);
+    // axis: past solid up to now (or birth), future dashed
+    var birthX = Math.max(X0, xOf(-AGE * Y, w)), deathX = Math.min(X1, xOf((LIFE - AGE) * Y, w));
+    $('tl-past').setAttribute('x1', birthX); $('tl-past').setAttribute('x2', nowX);
+    $('tl-future').setAttribute('x1', nowX); $('tl-future').setAttribute('x2', deathX);
+    ['now-line', 'now-label'].forEach(function (id) { var el = $(id); el.setAttribute(id === 'now-line' ? 'x1' : 'x', nowX); if (id === 'now-line') el.setAttribute('x2', nowX); });
+    $('now-dot').setAttribute('cx', nowX);
+    ['tl-pain-glow', 'tl-pain-dot'].forEach(function (id) { $(id).setAttribute('cx', nowX); });
+    $('tl-pain-label').setAttribute('x', nowX);
+    $('tl-pain').setAttribute('opacity', painOp.toFixed(2));
+    // ticks
+    var unit = TICK_UNITS[TICK_UNITS.length - 1];
+    for (var i = 0; i < TICK_UNITS.length; i++) { if (w / TICK_UNITS[i] >= (big ? 3 : 4)) { unit = TICK_UNITS[i]; break; } }
+    var tg = $('tl-ticks'); while (tg.firstChild) tg.removeChild(tg.firstChild);
+    var ageMode = unit >= Y;
+    var lo = ageMode ? (AGE * Y + start) / Y : start, hi = ageMode ? (AGE * Y + end) / Y : end, u = ageMode ? unit / Y : unit;
+    for (var k = Math.ceil(lo / u); k * u <= hi + 1e-9; k++) {
+      var v = k * u; if (!ageMode && k === 0) continue;
+      var t = ageMode ? (v - AGE) * Y : v, x = xOf(t, w);
+      if (x < X0 - 1 || x > X1 + 1) continue;
+      if (ageMode && (v < 0 || v > LIFE)) continue;
+      var ln = document.createElementNS(NS, 'line');
+      ln.setAttribute('x1', x); ln.setAttribute('x2', x); ln.setAttribute('y1', AXIS_Y + 6); ln.setAttribute('y2', AXIS_Y + 16);
+      ln.setAttribute('stroke', 'var(--tl-muted)'); ln.setAttribute('stroke-width', '1.5');
+      tg.appendChild(ln);
+      if (Math.abs(x - nowX) < (big ? 46 : 30)) continue;
+      var tx = document.createElementNS(NS, 'text');
+      tx.setAttribute('x', x); tx.setAttribute('y', AXIS_Y + (big ? 44 : 36)); tx.setAttribute('text-anchor', 'middle');
+      tx.setAttribute('class', 'tick-label'); tx.textContent = tickLabel(v, unit);
+      tg.appendChild(tx);
+    }
+    // events
+    var levelsY = big ? [282, 236, 190] : [292, 252, 212];
+    EVENTS.forEach(function (e) {
+      var x = xOf(e.t, w);
+      var op = clamp(Math.min(Math.log(w / e.lo), Math.log(e.hi / w)) / Math.log(1.8), 0, 1);
+      if (x < X0 - 10 || x > X1 + 10) op = 0;
+      e.el.setAttribute('opacity', op.toFixed(2));
+      e.el.style.display = op < 0.01 ? 'none' : '';
+      if (op < 0.01) return;
+      var ly = levelsY[e.lvl];
+      e.dot.setAttribute('cx', x); e.dot.setAttribute('cy', AXIS_Y);
+      e.stem.setAttribute('x1', x); e.stem.setAttribute('x2', x); e.stem.setAttribute('y1', AXIS_Y); e.stem.setAttribute('y2', ly + 6);
+      var half = e.label.length * (big ? 6.8 : 4.9);
+      e.txt.setAttribute('x', clamp(x, X0 - 20 + half, X1 + 20 - half)); e.txt.setAttribute('y', ly);
+    });
+  }
+
+  // ================= room (the deepest zoom) =================
+  var W = 800, H = 480, R_MIN = 32, R_MAX = 1000, GLOW_R = 30, ROOM_LAST = 7;
+
+  var THREATS = {
+    pain:     { x: 540, y: 270, chipAt: [628, 226], short: 'the pain',     arrive: 'Your shoulder starts to throb.', ack: '"Here\'s the pain in my shoulder."', chip: 'pain, noticed' },
+    email:    { x: 398, y: 264, chipAt: [388, 336], short: 'the email',    arrive: 'An angry email lands.',          ack: '"Here\'s the angry email."',          chip: 'email, noticed' },
+    deadline: { x: 363, y: 112, chipAt: [363, 168], short: 'the deadline', arrive: 'You remember the Friday deadline.', ack: '"Here\'s the Friday deadline."',  chip: 'deadline, noticed' }
+  };
+
+  var SPOTS = {
+    breath:  { x: 490, y: 276, r: 44, label: 'breath', chip: [424, 222] },
+    feet:    { x: 482, y: 377, r: 44, label: 'feet on floor', chip: [482, 432] },
+    hands:   { x: 462, y: 302, r: 50, label: 'hands', chip: [584, 334] },
+    clock:   { x: 604, y: 100, r: 46, label: 'tick', sound: 'clock-sound' },
+    speaker: { x: 716, y: 98,  r: 50, label: 'music', sound: 'speaker-sound' },
+    cat:     { x: 214, y: 428, r: 62, label: 'purring', sound: 'cat-sound' },
+    window:  { x: 155, y: 152, r: 98, label: 'tree, sky' },
+    plant:   { x: 270, y: 330, r: 58, label: 'plant' },
+    books:   { x: 714, y: 250, r: 70, label: 'books' },
+    tea:     { x: 606, y: 276, r: 46, label: 'tea smell', chip: [668, 262] },
+    person:  { x: 490, y: 250, r: 120, label: 'what I\'m doing', chip: [490, 116] }
+  };
+  // room sub-steps: which spots are lit by each (cumulative)
+  var ROOM_SPOTS = [[], [], ['breath'], ['feet', 'hands'], ['clock', 'cat', 'speaker'], ['window', 'plant', 'books'], ['tea', 'person'], []];
+
+  // ================= the journey =================
+  // level: time scale (index into LEVELS); room: {stress, step} when the room is showing.
+  var STAGES = [
+    { phase: 'in', level: 0, title: 'A life', next: 'Zoom in',
+      text: function () { return 'Start wide. A whole life, from being born to old age: childhood, school, people you love, things you\'ve built, and a lot still ahead. Now is one small dot on it. The part of you that\'s noticing this is the same one that noticed things when you were a kid.'; } },
+    { phase: 'in', level: 1, title: 'This decade',
+      text: function () { return 'Zoom in to this decade. A move to a new city, a new job, a long trip, a graduation coming. Still plenty in view.'; } },
+    { phase: 'in', level: 2, title: 'This year',
+      text: function () { return 'This year. A vacation, a friend\'s wedding, a birthday, the holidays coming up.'; } },
+    { phase: 'in', level: 3, title: 'This week',
+      text: function () { return 'This week. Dinner out with friends, a long run, a hike and a date night still to come.'; } },
+    { phase: 'in', level: 4, title: 'Today',
+      text: function () { return 'Today. You woke up, had coffee, ate lunch. The kids get home in a few hours, then dinner, then sleep.'; } },
+    { phase: 'in', level: 5, title: 'This hour',
+      text: function () { return 'This hour. A meeting a little while ago, a cup of tea, a call soon, a walk after.'; } },
+    { phase: 'in', level: 6, title: 'This moment', room: { stress: 0, step: 0 }, next: 'Then the pain',
+      text: function () { return 'This moment: a room. The window, the cat asleep in the sun, the tea, the clock. This is the deepest zoom, and it\'s still full of things.'; } },
+    { phase: 'pain', level: 6, title: 'Pain arrives', room: { stress: 90, step: 0 }, next: 'Zoom back out',
+      text: function (t) { return t.arrive + ' The spotlight collapses onto it. The room goes dark, and so does the rest of the life: no yesterday, no weekend, no years ahead. ' + cap(t.short) + ' feels like all there is and all there will be.'; } },
+    { phase: 'out', level: 6, title: 'Acknowledge it', room: { stress: 90, step: 1 },
+      text: function (t) { return 'Name it plainly: ' + t.ack + ' No fighting, no fixing. You\'re letting it be in the frame, and the spotlight gives a little.'; } },
+    { phase: 'out', level: 6, title: 'Breath and body', room: { stress: 90, step: 3 },
+      text: function (t) { return 'Keep ' + t.short + ' in view and add your breath. Then your feet on the floor and your hands on the desk.'; } },
+    { phase: 'out', level: 6, title: 'Sounds, sights, what you\'re doing', room: { stress: 90, step: 6 },
+      text: function () { return 'The clock ticking, the cat purring, the music. The tree outside, the plant, the smell of the tea. Then ask: what am I doing right now, and what matters about it?'; } },
+    { phase: 'out', level: 6, title: 'The whole room', room: { stress: 90, step: 7 },
+      text: function (t) { return 'The whole room is lit. ' + cap(t.short) + ' is still on stage, the same size and the same red, and it shares the stage with everything else that\'s true right now.'; } },
+    { phase: 'out', level: 4, title: 'Today',
+      text: function (t) { return 'Zoom out to today. ' + cap(t.short) + ' is the red dot at now, the same size as before. Around it: coffee this morning, the kids getting home, dinner, sleep.'; } },
+    { phase: 'out', level: 2, title: 'This year',
+      text: function () { return 'This year. The wedding, the vacation, the holidays ahead. The red dot hasn\'t shrunk. Everything else came back.'; } },
+    { phase: 'out', level: 0, title: 'A life',
+      text: function () { return 'A bad hour is a dot on a life. It still hurts, 7 out of 10. It\'s one hour out of about 745,000, watched by the same you that has been watching all along.'; } }
+  ];
+  var LAST = STAGES.length - 1;
+  var PAIN_STAGE = 7;
+
+  var state = { stage: 0, threat: 'pain' };
+  var room = $('stage'), aperture = $('aperture'), dimmer = $('dimmer'), glow = $('threat-glow');
+  var holesG = $('spot-holes'), chipsG = $('chips');
+
+  function roomParams() {
+    var s = STAGES[state.stage];
+    if (s.room) return s.room;
+    return state.stage < PAIN_STAGE ? { stress: 0, step: 0 } : { stress: 90, step: ROOM_LAST };
+  }
+  function roomShown() { return !!STAGES[state.stage].room; }
+  function painOn() { return state.stage >= PAIN_STAGE; }
+
+  var holeEls = {}, chipEls = {};
+  function makeChip(id, x, y, text, cls) {
+    var g = document.createElementNS(NS, 'g');
+    g.setAttribute('class', 'chip ' + (cls || ''));
+    g.setAttribute('id', 'chip-' + id);
+    var t = document.createElementNS(NS, 'text');
+    t.textContent = text; t.setAttribute('text-anchor', 'middle');
+    var rect = document.createElementNS(NS, 'rect'); rect.setAttribute('rx', '6');
+    g.appendChild(rect); g.appendChild(t);
+    chipsG.appendChild(g);
+    placeChip(g, x, y);
+    return g;
+  }
+  function placeChip(g, x, y) {
+    var t = g.querySelector('text'), rect = g.querySelector('rect');
+    var big = SMALL.matches, w = Math.max(40, t.textContent.length * (big ? 12.5 : 9) + 16), h = big ? 34 : 26;
+    var cx = clamp(x, 70 + w / 2, W - 70 - w / 2), cy = clamp(y, 40 + h / 2, H - 8 - h / 2);
+    t.setAttribute('x', cx); t.setAttribute('y', cy + (big ? 8 : 6));
+    rect.setAttribute('x', cx - w / 2); rect.setAttribute('y', cy - h / 2);
+    rect.setAttribute('width', w); rect.setAttribute('height', h);
+  }
+  Object.keys(SPOTS).forEach(function (id) {
+    var s = SPOTS[id];
+    var c = document.createElementNS(NS, 'circle');
+    c.setAttribute('cx', s.x); c.setAttribute('cy', s.y); c.setAttribute('r', 0); c.setAttribute('fill', 'url(#soft)');
+    holesG.appendChild(c); holeEls[id] = c;
+    chipEls[id] = makeChip(id, s.chip ? s.chip[0] : s.x, s.chip ? s.chip[1] : s.y - s.r - 4, s.label, 'calm');
+  });
+  var threatChip = makeChip('threat', 0, 0, THREATS.pain.chip, '');
+
+  function litSpots(step) {
+    var on = {};
+    for (var i = 1; i <= Math.min(step, ROOM_LAST - 1); i++) ROOM_SPOTS[i].forEach(function (id) { on[id] = true; });
+    return on;
+  }
+
+  function targets() {
+    var p = roomParams(), sN = clamp(p.stress / 85, 0, 1);
+    var n = sN * (1 - Math.pow(p.step / ROOM_LAST, 2.5));
+    if (p.step === 1) n = Math.min(n, sN * 0.88);
+    var r = R_MIN * Math.pow(R_MAX / R_MIN, 1 - n);
+    var z = 1 + 0.8 * Math.pow(n, 1.5) * (1 - Math.min(1, p.step / 3));
+    var dim = p.step === ROOM_LAST ? 0 : 0.92 * clamp(n / 0.3, 0, 1);
+    var t = THREATS[state.threat], lit = litSpots(p.step), spotR = {};
+    Object.keys(SPOTS).forEach(function (id) { spotR[id] = lit[id] ? SPOTS[id].r : 0; });
+    return { lw: Math.log(LEVELS[STAGES[state.stage].level].w), r: r, z: z, dim: dim, tx: t.x, ty: t.y,
+             glow: painOn() ? 1 : 0, painTl: painOn() ? 1 : 0, spotR: spotR };
+  }
+
+  function fmtShare(pct) {
+    if (pct >= 1) return '≈ ' + Math.round(pct) + '%';
+    if (pct >= 0.01) return '≈ ' + pct.toPrecision(1) + '%';
+    return '< 0.01%';
+  }
+  function windowWords(w) {
+    if (w >= 20 * Y) return 'about ' + Math.round(w / Y) + ' years';
+    if (w >= 1.5 * Y) return Math.round(w / Y) + ' years';
+    if (w >= 2 * MO) return Math.round(w / MO) + ' months';
+    if (w >= 2 * D) return Math.round(w / D) + ' days';
+    if (w >= 2) return Math.round(w) + ' hours';
+    return 'about an hour';
+  }
+
+  function apply(v) {
+    // room
+    aperture.setAttribute('cx', v.tx); aperture.setAttribute('cy', v.ty); aperture.setAttribute('r', v.r);
+    glow.setAttribute('cx', v.tx); glow.setAttribute('cy', v.ty);
+    glow.parentNode.setAttribute('opacity', v.glow.toFixed(2));
+    dimmer.setAttribute('opacity', v.dim.toFixed(3));
+    Object.keys(holeEls).forEach(function (id) { holeEls[id].setAttribute('r', v.spotR[id].toFixed(1)); });
+    var vw = W / v.z, vh = H / v.z, k = clamp((v.z - 1) / 0.8, 0, 1);
+    var cx = lerp(W / 2, v.tx, k), cy = lerp(H / 2, v.ty, k);
+    var x = clamp(cx - vw / 2, 0, W - vw), y = clamp(cy - vh / 2, 0, H - vh);
+    room.setAttribute('viewBox', x.toFixed(1) + ' ' + y.toFixed(1) + ' ' + vw.toFixed(1) + ' ' + vh.toFixed(1));
+    // timeline
+    var w = Math.exp(v.lw);
+    drawTimeline(w, v.painTl);
+    // share meter
+    var val = '—', bar = 0, sub = 'Nothing hurts yet.';
+    if (painOn() && roomShown()) {
+      var painA = Math.PI * GLOW_R * GLOW_R, litA = Math.min(Math.PI * v.r * v.r, W * H);
+      Object.keys(SPOTS).forEach(function (id) {
+        var s = SPOTS[id];
+        if (Math.hypot(s.x - v.tx, s.y - v.ty) > v.r) litA += Math.PI * v.spotR[id] * v.spotR[id];
+      });
+      if (v.dim < 0.05) litA = W * H;
+      var pct = clamp(painA / litA, 0, 1) * 100;
+      val = fmtShare(pct); bar = pct; sub = 'Its area divided by the lit part of the room.';
+    } else if (painOn()) {
+      var pctT = clamp(1 / w, 0, 1) * 100;
+      val = fmtShare(pctT); bar = pctT; sub = 'One bad hour out of ' + windowWords(w) + ' in view.';
+    }
+    $('share-val').textContent = val;
+    $('share-bar').style.width = (bar > 0 ? Math.max(1, bar) : 0).toFixed(1) + '%';
+    $('share-sub').textContent = sub;
+  }
+
+  var cur = null, raf = null, snapNext = false;
+  function render() {
+    var tgt = targets();
+    if (!cur || reduce) { cur = JSON.parse(JSON.stringify(tgt)); apply(cur); return; }
+    if (raf) cancelAnimationFrame(raf);
+    (function tick() {
+      var done = true, k = snapNext ? 0.34 : 0.12;
+      ['z', 'dim', 'tx', 'ty', 'glow', 'painTl', 'lw'].forEach(function (p) {
+        var d = tgt[p] - cur[p];
+        if (Math.abs(d) > (p === 'lw' ? 0.01 : 0.002)) { cur[p] += d * (p === 'lw' ? 0.09 : k); done = false; } else cur[p] = tgt[p];
+      });
+      var lc = Math.log(cur.r), ld = Math.log(tgt.r) - lc;
+      if (Math.abs(ld) > 0.005) { cur.r = Math.exp(lc + ld * k); done = false; } else cur.r = tgt.r;
+      Object.keys(tgt.spotR).forEach(function (id) {
+        var d = tgt.spotR[id] - cur.spotR[id];
+        if (Math.abs(d) > 0.3) { cur.spotR[id] += d * k; done = false; } else cur.spotR[id] = tgt.spotR[id];
+      });
+      apply(cur);
+      if (done) snapNext = false;
+      raf = done ? null : requestAnimationFrame(tick);
+    })();
+  }
+
+  function updateUI() {
+    var s = STAGES[state.stage], t = THREATS[state.threat], p = roomParams();
+    var lvl = LEVELS[s.level];
+    $('step-count').textContent = (state.stage + 1) + ' of ' + STAGES.length;
+    $('step-title').textContent = s.title;
+    $('narration').textContent = s.text(t);
+    var ph = $('phase');
+    ph.className = 'phase ' + s.phase;
+    ph.textContent = s.phase === 'in' ? 'Zoom in' : s.phase === 'pain' ? 'Pain' : 'Zoom back out';
+    $('scrub').value = state.stage;
+    $('scrub').setAttribute('aria-valuetext', (state.stage + 1) + ' of ' + STAGES.length + ': ' + s.title);
+    $('back').disabled = state.stage === 0;
+    $('next').disabled = state.stage === LAST;
+    $('next').textContent = s.next || (s.phase === 'in' ? 'Zoom in' : 'Zoom out');
+    // crumbs
+    var crumbs = $('crumbs');
+    Array.prototype.forEach.call(crumbs.children, function (li, i) {
+      li.classList.toggle('cur', i === s.level);
+      if (i === s.level) li.setAttribute('aria-current', 'true'); else li.removeAttribute('aria-current');
+    });
+    crumbs.classList.toggle('collapsed', s.phase === 'pain');
+    // layers
+    var showRoom = roomShown();
+    room.classList.toggle('shown', showRoom);
+    room.setAttribute('aria-hidden', showRoom ? 'false' : 'true');
+    $('timeline').classList.toggle('gone', showRoom);
+    $('timeline').setAttribute('aria-hidden', showRoom ? 'true' : 'false');
+    $('tl-name').textContent = lvl.name;
+    $('tl-inview').textContent = lvl.inView;
+    $('tl-pain-label').textContent = state.threat === 'pain' ? 'this bad hour' : 'this bad hour: ' + t.short.replace('the ', '');
+    // intensity
+    $('intensity-val').textContent = painOn() ? INTENSITY + ' / 10' : '0 / 10';
+    $('intensity-bar').style.width = (painOn() ? INTENSITY * 10 : 0) + '%';
+    $('intensity-sub').textContent = painOn() ? 'Unchanged from here on. Zooming out never moves this bar.' : 'Nothing hurts yet.';
+    // room chips + sounds
+    var lit = litSpots(p.step);
+    Object.keys(chipEls).forEach(function (id) { chipEls[id].classList.toggle('on', !!lit[id]); });
+    Object.keys(SPOTS).forEach(function (id) {
+      if (SPOTS[id].sound) $(SPOTS[id].sound).classList.toggle('on', !!lit[id] || (p.step === ROOM_LAST && painOn()));
+    });
+    threatChip.querySelector('text').textContent = t.chip;
+    placeChip(threatChip, t.chipAt[0], t.chipAt[1]);
+    threatChip.classList.toggle('on', p.step >= 1);
+  }
+
+  // ---- game feel: snap + shake at pain, a widen ring and chime per zoom-out step, a glow at the end ----
+  var FX = window.FX;
+  function ring(x, y) {
+    if (FX.reduce()) return;
+    var c = document.createElementNS(NS, 'circle');
+    c.setAttribute('cx', x); c.setAttribute('cy', y); c.setAttribute('fill', 'none');
+    c.setAttribute('stroke', '#ffe6a8'); c.setAttribute('stroke-width', '4');
+    chipsG.appendChild(c);
+    FX.animate(950, function (t) {
+      var e = 1 - Math.pow(1 - t, 3);
+      c.setAttribute('r', (40 + 320 * e).toFixed(1)); c.setAttribute('opacity', (0.75 * (1 - t)).toFixed(2));
+    }, function () { c.remove(); });
+  }
+  function stageFx(from, to) {
+    var fig = $('figure');
+    fig.classList.toggle('final-glow', to === LAST);
+    if (to <= from) return;
+    if (to === PAIN_STAGE) {
+      snapNext = true;
+      FX.play('snap');
+      if (!FX.reduce()) { fig.classList.remove('shake'); void fig.offsetWidth; fig.classList.add('shake'); }
+    } else if (to > PAIN_STAGE) {
+      FX.play('chime', to - PAIN_STAGE - 1);
+      if (roomShown()) { var t = THREATS[state.threat]; ring(t.x, t.y); }
+      else FX.play('whoosh', 1);
+      if (to === LAST) setTimeout(function () { FX.play('glow'); }, 350);
+    } else if (to > 0) FX.play('whoosh', -1);
+  }
+  $('figure').addEventListener('animationend', function (e) { if (e.animationName === 'shake') this.classList.remove('shake'); });
+
+  function go(i) {
+    var from = state.stage;
+    state.stage = clamp(i, 0, LAST);
+    updateUI();
+    stageFx(from, state.stage);
+    render();
+  }
+
+  $('scrub').addEventListener('input', function (e) { go(+e.target.value); });
+  $('next').addEventListener('click', function () { go(state.stage + 1); });
+  $('back').addEventListener('click', function () { go(state.stage - 1); });
+  $('reset').addEventListener('click', function () { go(0); });
+  document.querySelectorAll('input[name="threat"]').forEach(function (r) {
+    r.addEventListener('change', function (e) { state.threat = e.target.value; updateUI(); render(); });
+  });
+  if (SMALL.addEventListener) SMALL.addEventListener('change', function () { updateUI(); cur = null; render(); });
+
+  go(0);
+})();
+</script>
+<script>
+// ===== Part 1: floating =====
+/*
+  RENDERING CONTRACT: felt art can replace the vector drawing by filling in ART, with no logic changes.
+  Leave a field null to keep the vector version.
+    ART.plate   url of an 800x680 sky plate, drawn in #plate-slot in place of the vector sky and clouds.
+                The water is NOT part of the plate. It is its own layer.
+    ART.water   url of a water image, 800 wide, drawn from the waterline down (replaces #water-back).
+    ART.figure  { href, x, y, width, height, anchors: { balloonHand: [x, y], weightHand: [x, y], head: [x, y] } }
+                in floater coordinates (feet at 0,0, +y down). Replaces the vector person in #figure-slot.
+                Without it the anchors come from the data-anchor-* attributes on #figure-slot.
+    ART.balloon [url, ...] cycled by balloon slot. Each sprite is drawn centered on the balloon at 60x75 for
+                r=30 and scaled with the item size. Its string ties to the bottom center (0, +36).
+    ART.weight  { s: url, m: url, l: url } for sizes 1/2/3. Drawn 60 wide with its hook (top center) on the chain end.
+    ART.chain   { href, w, h } of a vertical chain strip, tiled along every chain.
+    ART.ring    { href, w, h, hole, size } where the main chain meets the drops.  ART.string: stretchable yarn.
+    ART.splash  sprite shown when the figure goes under.
+    (The entries actually used are below; this list predates the felt layers and still describes the slots.)
+  Anchors: every balloon string starts at balloonHand. One taut chain runs straight down from weightHand to a ring
+  just below the feet (RING), and each weight hangs from the ring on its own short drop, side by side.
+  Weight labels are drawn in a layer above the water so they stay readable when the iron is submerged.
+  Thriving sparkles burst at head.
+  Items: dials (two-sided sliders) and toggles both produce { key, kind: 'balloon'|'weight', label, size 1..3, color }.
+  update() diffs them against what's on screen, so effects (pop, swing, clunk, splash) fire only on change.
+*/
+(function () {
+  // Felt layers by Gutter. Paths are relative to this page. Set any entry to null to fall back to the vector drawing.
+  // Sprite metadata is in sprite pixels; the code converts it to scene units.
+  var FIGURES = {   // all four poses share the feet point; measured anchors from Gutter
+    A2: { href: 'art/floating-A2.webp', w: 677, h: 1024, feet: [316, 1010], balloonPaw: [565, 205], weightPaw: [100, 690], head: [290, 280], height: 200,
+          face: { eyeL: [220, 290, 40], eyeR: [400, 245, 35], browL: [[152, 204], [246, 146]], browR: [[358, 120], [470, 162]], mouth: [334, 386] } },
+    A3: { href: 'art/floating-A3.webp', w: 678, h: 1024, feet: [316, 1010], balloonPaw: [603, 188], weightPaw: [95, 700],  head: [300, 290], height: 200 },
+    A4: { href: 'art/floating-A4.webp', w: 669, h: 1024, feet: [316, 1010], balloonPaw: [585, 115], weightPaw: [85, 760],  head: [290, 270], height: 200 }
+  };
+  var ART = {
+    plate: 'art/plate-sky.webp',          // the sky of plate-A (its baked-in sea is cropped off)
+    water: { top: 'art/water-top.webp', fill: 'art/water-fill.webp' },   // knitted sea from plate-A: wavy foam edge + tiling body
+    figure: FIGURES.A2,                   // ONE-LINE SWAP: FIGURES.A3 or FIGURES.A4
+    // one sprite per balloon key, in BAL_KEYS order: sleep, friends, family, moving, gratitude, purpose, walk, yours
+    // sprites are cropped just below the knot (the baked yarn stub is gone), so ONE string runs from the knot to the paw.
+    // stub = where the string ties on (knot bottom, measured per sprite); h = cropped sprite height
+    balloon: { scale: 0.5, stub: [64, 189], body: [64, 88], h: 194, sprites: [
+      { href: 'art/balloon-blue-nostub.webp', w: 134, tie: [63, 188] }, { href: 'art/balloon-red-nostub.webp', w: 128, tie: [71, 190] }, { href: 'art/balloon-red-b-nostub.webp', w: 139, tie: [76, 187] },
+      { href: 'art/balloon-orange-nostub.webp', w: 132, tie: [75, 191] }, { href: 'art/balloon-yellow-nostub.webp', w: 134, tie: [72, 191] }, { href: 'art/balloon-green-b-nostub.webp', w: 137, tie: [72, 189] },
+      { href: 'art/balloon-green-nostub.webp', w: 131, tie: [65, 189] }, { href: 'art/balloon-blue-nostub.webp', w: 134, tie: [63, 188] } ] },
+    string: 'art/string.webp',
+    weight: {
+      s: { href: 'art/weight-face-small.webp',      w: 235, h: 332, hang: [115, 10], face: [115, 247], height: 76 },
+      m: { href: 'art/weight-face-kettlebell.webp', w: 308, h: 422, hang: [150, 10], face: [150, 300], height: 92 },
+      l: { href: 'art/weight-face-big.webp',        w: 318, h: 434, hang: [150, 8],  face: [155, 297], height: 104 } },
+    chain: { href: 'art/chain.webp', w: 84, h: 180 },
+    ring: { href: 'art/ring.webp', w: 614, h: 596, hole: [305, 300], size: 20 },
+    splash: 'art/splash.webp'
+  };
+
+  var NS = 'http://www.w3.org/2000/svg';
+  var $ = function (id) { return document.getElementById(id); };
+  function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+  function el(tag, attrs, parent) { var e = document.createElementNS(NS, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; }
+  var FX = window.FX, fxG = $('float-fx'), ready = false;
+
+  // ---------- slots: plate + water + figure ----------
+  var FLOAT_X = 380, SCENE_H = 620;
+  if (ART.plate) {
+    var plate = $('plate-slot'); while (plate.firstChild) plate.removeChild(plate.firstChild);
+    el('image', { href: ART.plate, x: 0, y: 0, width: 800, height: SCENE_H, preserveAspectRatio: 'xMidYMin slice', 'class': 'felt-bg' }, plate);
+  }
+  var slot = $('figure-slot'), anchors;
+  if (ART.figure) {
+    // sprite metadata in sprite pixels -> floater units (feet at 0,0)
+    var F = ART.figure, f = F.height / F.h;
+    var u = function (p) { return [(p[0] - F.feet[0]) * f, (p[1] - F.feet[1]) * f]; };
+    while (slot.firstChild) slot.removeChild(slot.firstChild);
+    var figAttrs = { x: (-F.feet[0] * f).toFixed(1), y: (-F.feet[1] * f).toFixed(1), width: (F.w * f).toFixed(1), height: (F.h * f).toFixed(1) };
+    var figImg = el('image', Object.assign({ href: F.href }, figAttrs), slot);
+    var scaredImg = F.scared ? el('image', Object.assign({ href: F.scared, style: 'display:none' }, figAttrs), slot) : null;
+    // felt expression overlay drawn over the face: blinking lids, worried brows, then wide eyes + open mouth when overwhelmed
+    var faceG = null;
+    if (F.face) {
+      var FC = F.face, P = function (q) { return u(q).map(function (v) { return v.toFixed(1); }); };
+      faceG = el('g', { id: 'face', 'data-mood': 'calm', filter: 'url(#felt-fuzz)', 'aria-hidden': 'true' }, slot);
+      var lids = el('g', { 'class': 'lids' }, faceG);
+      [FC.eyeL, FC.eyeR].forEach(function (e) { var c = P(e); el('ellipse', { cx: c[0], cy: c[1], rx: (e[2] * f * 1.05).toFixed(1), ry: (e[2] * f * 1.1).toFixed(1), fill: '#4a3527' }, lids); });
+      var wide = el('g', { 'class': 'mood-scared' }, faceG);
+      [FC.eyeL, FC.eyeR].forEach(function (e) {
+        var c = P(e), r = e[2] * f;
+        el('ellipse', { cx: c[0], cy: c[1], rx: (r * 1.0).toFixed(1), ry: (r * 1.12).toFixed(1), fill: '#f4ead9', stroke: '#2b1d14', 'stroke-width': .6 }, wide);
+        el('circle', { 'class': 'pupil', cx: c[0], cy: (+c[1] + r * .1).toFixed(1), r: (r * .3).toFixed(1), fill: '#1d130d' }, wide);
+        el('circle', { cx: (+c[0] - r * .12).toFixed(1), cy: (+c[1] - r * .05).toFixed(1), r: (r * .1).toFixed(1), fill: '#fff' }, wide);
+      });
+      var m = P(FC.mouth);
+      el('ellipse', { cx: m[0], cy: m[1], rx: (24 * f).toFixed(1), ry: (30 * f).toFixed(1), fill: '#3a2017', stroke: '#e8d5bd', 'stroke-width': .8 }, wide);
+      el('ellipse', { cx: m[0], cy: (+m[1] + 14 * f).toFixed(1), rx: (14 * f).toFixed(1), ry: (9 * f).toFixed(1), fill: '#d9707c' }, wide);
+      var brows = el('g', { 'class': 'mood-worried' }, faceG);
+      [FC.browL, FC.browR].forEach(function (b, i) {
+        var a = P(b[0]), c = P(b[1]);
+        el('path', { 'class': 'brow brow-' + (i ? 'r' : 'l'), d: 'M' + a[0] + ' ' + a[1] + ' Q' + ((+a[0] + +c[0]) / 2).toFixed(1) + ' ' + ((+a[1] + +c[1]) / 2 - 3).toFixed(1) + ' ' + c[0] + ' ' + c[1],
+          fill: 'none', stroke: '#3b291e', 'stroke-width': 3.4, 'stroke-linecap': 'round' }, brows);
+      });
+    }
+    anchors = { balloonHand: u(F.balloonPaw), weightHand: u(F.weightPaw), head: u(F.head) };
+  } else {
+    var a = function (n) { return slot.getAttribute('data-anchor-' + n).split(',').map(Number); };
+    anchors = { balloonHand: a('balloon-hand'), weightHand: a('weight-hand'), head: a('head') };
+  }
+  var HB = anchors.balloonHand, HW = anchors.weightHand, HEAD = anchors.head;
+  var RING = [HW[0], 16];  // one taut chain runs straight down from the weight paw to this ring, just below the feet
+
+  // ---------- the items ----------
+  // power = how much one step of the dial lifts or loads. Sleep counts 2.5x and draws bigger (grow) at both ends.
+  var DIALS = [
+    { id: 'sleep',   name: 'Sleep',       lo: 'terrible', hi: 'great', neg: 'bad sleep', pos: 'sleep', color: '#4a72c0', power: 2.5, grow: 0.22, value: -1, start: -1 },
+    { id: 'friends', name: 'Friends',     lo: 'lonely',   hi: 'connected', neg: 'lonely', pos: 'friends', color: '#c9302c', power: 1, grow: 0, value: 1, start: 1 },
+    { id: 'family',  name: 'Family time', lo: 'no time with them', hi: 'lots of time with them', neg: 'no family', pos: 'family', color: '#a3262a', power: 1, grow: 0, value: 2, start: 2 },
+    { id: 'moving',  name: 'Moving',      lo: 'stuck on the couch', hi: 'active', neg: 'couch', pos: 'exercise', color: '#e57a2e', power: 1, grow: 0, value: 1, start: 1 }
+  ];
+  var TOGGLES = [
+    { id: 'gratitude', kind: 'balloon', label: 'gratitude',      short: 'gratitude', size: 1, color: '#e8b92f', on: true },
+    { id: 'purpose',   kind: 'balloon', label: 'purpose',        short: 'purpose',   size: 2, color: '#2f7d48', on: false },
+    { id: 'walk',      kind: 'balloon', label: 'a hobby',        short: 'hobby',      size: 1, color: '#3e9a52', on: true },
+    { id: 'custom-b',  kind: 'balloon', label: 'your balloon',   short: 'yours',     size: 2, color: '#4a72c0', on: false, custom: true },
+    { id: 'pain',      kind: 'weight',  label: 'pain',           short: 'pain',      size: 3, color: '#e3263b', on: false },
+    { id: 'deadline',  kind: 'weight',  label: 'a deadline',     short: 'deadline',  size: 2, color: '#c0392b', on: true },
+    { id: 'email',     kind: 'weight',  label: 'an angry friend', short: 'angry friend',     size: 2, color: '#d98a2b', on: false },
+    { id: 'disliked',  kind: 'weight',  label: 'anger',          short: 'anger',     size: 2, color: '#8e6cff', on: true },
+    { id: 'money',     kind: 'weight',  label: 'debt',           short: 'debt',     size: 2, color: '#3f9c6b', on: false },
+    { id: 'custom-w',  kind: 'weight',  label: 'your weight',    short: 'yours',     size: 2, color: '#8a8f98', on: false, custom: true }
+  ];
+  TOGGLES.forEach(function (t) { t.start = t.on; });
+  var BAL_KEYS = ['sleep', 'friends', 'family', 'moving', 'gratitude', 'purpose', 'walk', 'custom-b'];
+  var WGT_KEYS = ['sleep', 'friends', 'family', 'moving', 'pain', 'deadline', 'disliked', 'email', 'money', 'custom-w'];
+  // balloons fill slots nearest the hand first; weights hang from a bar below the feet, center-out, short and long chains alternating
+  var B_SLOTS = [[-30, -125], [-140, -75], [80, -75], [-200, -145], [140, -145], [-250, -60], [190, -60], [-300, -135], [230, -130]];  // string ends; slot 0 (center) is sleep's when it is up  // string-end positions above the balloon paw
+  var W_SLOTS = [[0, 26], [72, 30], [-72, 30], [144, 36], [-144, 36], [36, 112], [-36, 112], [108, 116], [-108, 116], [180, 120]];  // hang points relative to the ring
+  var KSIZE = [0, 0.82, 1, 1.18], WSIZE = [0, 0.95, 1.15, 1.35];
+
+  function items() {
+    var out = [];
+    DIALS.forEach(function (d) {
+      var v = Math.abs(d.value);
+      if (v) out.push({ key: d.id, kind: d.value > 0 ? 'balloon' : 'weight', short: d.value > 0 ? d.pos : d.neg, size: v, power: v * d.power, mult: 1 + d.grow * v, color: d.color });
+    });
+    TOGGLES.forEach(function (t) { if (t.on) out.push({ key: t.id, kind: t.kind, short: t.short, size: t.size, power: t.size, mult: 1, color: t.color }); });
+    return out;
+  }
+
+  // ---------- renderers (vector or sprite) ----------
+  // Balloon origin = the end of the string stub (where the string ties on). Weight origin = the hang point.
+  var bLayer = $('balloon-layer'), wLayer = $('weight-layer'), knotLayer = $('knot-layer');
+  var B_LABEL_DY = ART.balloon ? (ART.balloon.body[1] - ART.balloon.stub[1]) * ART.balloon.scale : -38;
+  function balloonShape(parent, color, idx) {
+    var shape = el('g', { 'class': 'balloon off' }, parent);
+    if (ART.balloon) {
+      var spr = ART.balloon.sprites[idx % ART.balloon.sprites.length], s = ART.balloon.scale;
+      var tie = spr.tie || ART.balloon.stub;
+      el('image', { href: spr.href, x: (-tie[0] * s).toFixed(1), y: (-tie[1] * s).toFixed(1), width: (spr.w * s).toFixed(1), height: (ART.balloon.h * s).toFixed(1) }, shape);
+      return shape;
+    }
+    el('ellipse', { cx: 0, cy: -38, rx: 26.5, ry: 30, fill: color }, shape);
+    el('path', { d: 'M-4 -4 L0 -9 L4 -4 Z', fill: color }, shape);
+    el('ellipse', { cx: -10, cy: -50, rx: 5, ry: 9, fill: '#fff', opacity: '.45' }, shape);
+    return shape;
+  }
+  function stringShape(parent) {
+    if (ART.string) return el('image', { href: ART.string, x: -2.8, y: 0, width: 5.6, height: 10, preserveAspectRatio: 'none' }, parent);
+    return el('path', { fill: 'none', stroke: 'var(--ink)', 'stroke-opacity': '.5', 'stroke-width': 1.3 }, parent);
+  }
+  function setString(s, x1, y1, x2, y2) {
+    if (ART.string) {
+      var len = Math.hypot(x2 - x1, y2 - y1), ang = Math.atan2(y2 - y1, x2 - x1) * 180 / Math.PI - 90;
+      s.setAttribute('height', len.toFixed(1));
+      s.setAttribute('transform', 'translate(' + x1.toFixed(1) + ' ' + y1.toFixed(1) + ') rotate(' + ang.toFixed(1) + ')');
+      return;
+    }
+    s.setAttribute('d', 'M' + x1 + ' ' + y1 + ' Q' + ((x1 + x2) / 2 + 6).toFixed(1) + ' ' + ((y1 + y2) / 2).toFixed(1) + ' ' + x2.toFixed(1) + ' ' + y2.toFixed(1));
+  }
+  function weightShape(parent) {
+    var shape = el('g', { 'class': 'wbody' }, parent);
+    if (ART.weight) { shape._img = el('image', {}, shape); return shape; }
+    // a cartoon kettlebell: hook at (0,0), handle, iron ball with a highlight, flat base
+    el('path', { d: 'M-13 22 C-15 2, 15 2, 13 22', fill: 'none', stroke: 'var(--iron)', 'stroke-width': 7, 'stroke-linecap': 'round' }, shape);
+    el('circle', { cx: 0, cy: 38, r: 21, fill: 'url(#iron-shade)', stroke: 'var(--iron-lo)', 'stroke-width': 1.2 }, shape);
+    el('rect', { x: -15, y: 55, width: 30, height: 5, rx: 2, fill: 'var(--iron-lo)' }, shape);
+    el('ellipse', { cx: -8, cy: 29, rx: 4, ry: 7, fill: '#fff', opacity: '.22' }, shape);
+    return shape;
+  }
+  // returns the label offset from the hang point for this size
+  function setWeightSize(n, size) {
+    if (!ART.weight) return [0, 38 * WSIZE[size]];
+    var m = ART.weight[['s', 'm', 'l'][size - 1]], s = m.height / m.h;
+    var img = n.shape._img;
+    img.setAttribute('href', m.href);
+    img.setAttribute('x', (-m.hang[0] * s).toFixed(1)); img.setAttribute('y', (-m.hang[1] * s).toFixed(1));
+    img.setAttribute('width', (m.w * s).toFixed(1)); img.setAttribute('height', (m.h * s).toFixed(1));
+    return [(m.face[0] - m.hang[0]) * s, (m.face[1] - m.hang[1]) * s];
+  }
+  // a chain between two points: tiled link sprites, or a dashed iron line
+  function makeChain(parent, width) {
+    if (!ART.chain) {
+      var ln = el('line', { stroke: 'var(--iron)', 'stroke-width': width / 2.4, 'stroke-dasharray': '5 3', 'stroke-linecap': 'round' }, parent);
+      return { show: function (v) { ln.style.display = v ? '' : 'none'; },
+               set: function (x1, y1, x2, y2) { ln.setAttribute('x1', x1.toFixed(1)); ln.setAttribute('y1', y1.toFixed(1)); ln.setAttribute('x2', x2.toFixed(1)); ln.setAttribute('y2', y2.toFixed(1)); } };
+    }
+    var g = el('g', {}, parent), seg = width * ART.chain.h / ART.chain.w;
+    return { show: function (v) { g.style.display = v ? '' : 'none'; },
+      set: function (x1, y1, x2, y2) {
+        var len = Math.hypot(x2 - x1, y2 - y1), n = Math.max(1, Math.ceil(len / seg)), ang = Math.atan2(y2 - y1, x2 - x1) * 180 / Math.PI - 90;
+        while (g.childNodes.length < n) el('image', { href: ART.chain.href, x: -width / 2, y: 0, width: width, height: seg }, g);
+        Array.prototype.forEach.call(g.childNodes, function (img, i) {
+          img.style.display = i < n ? '' : 'none';
+          if (i < n) img.setAttribute('transform', 'translate(' + x1.toFixed(1) + ' ' + y1.toFixed(1) + ') rotate(' + ang.toFixed(1) + ') translate(0 ' + (i * seg).toFixed(1) + ')');
+        });
+        // the last link is clipped to the chain length so it ends exactly at the ring or hook
+        g.setAttribute('data-len', len.toFixed(1));
+      } };
+  }
+
+  var B = {}, W = {};
+  var strLayer = el('g', {}, bLayer);   // every string lives here, under every balloon, so no string ever crosses in front of one
+  BAL_KEYS.forEach(function (key, i) {
+    var strG = el('g', {}, strLayer);
+    var sway = el('g', {}, bLayer);
+    var str = stringShape(strG);
+    var pos = el('g', {}, sway);
+    var color = (DIALS.filter(function (d) { return d.id === key; })[0] || TOGGLES.filter(function (t) { return t.id === key; })[0]).color;
+    var shape = balloonShape(pos, color, i);
+    var lab = el('text', { 'class': 'blabel', 'text-anchor': 'middle' }, sway);
+    var t = el('title', {}, pos);
+    B[key] = { color: color, sway: sway, strG: strG, str: str, pos: pos, shape: shape, lab: lab, title: t, on: false, size: 0,
+               cur: { x: HB[0], y: HB[1] - 40, k: 0 }, tgt: { x: HB[0], y: HB[1] - 40, k: 0 },
+               phase: i * 1.7, period: 2600 + (i % 3) * 450 };
+  });
+  var mainChain = makeChain(wLayer, 11);
+  var wLabels = $('wlabel-bob');
+  WGT_KEYS.forEach(function (key) {
+    var drop = makeChain(wLayer, 10);
+    var pos = el('g', {}, wLayer);
+    var shape = weightShape(pos);
+    var lab = el('text', { 'class': 'wlabel', 'text-anchor': 'middle' }, wLabels);
+    var t = el('title', {}, pos);
+    W[key] = { drop: drop, pos: pos, shape: shape, lab: lab, title: t, on: false, size: 0, labOff: [0, 38],
+               cur: { x: RING[0], y: RING[1] + 30, k: 0 }, tgt: { x: RING[0], y: RING[1] + 30, k: 0 } };
+  });
+  var ringEl = ART.ring
+    ? el('image', { href: ART.ring.href, x: (RING[0] - ART.ring.hole[0] * ART.ring.size / ART.ring.w).toFixed(1), y: (RING[1] - ART.ring.hole[1] * ART.ring.size / ART.ring.w).toFixed(1), width: ART.ring.size, height: (ART.ring.h * ART.ring.size / ART.ring.w).toFixed(1) }, wLayer)
+    : el('circle', { cx: RING[0], cy: RING[1], r: 6, fill: 'none', stroke: 'var(--iron)', 'stroke-width': 3 }, wLayer);
+  // a little knot where the strings meet the hand (vector figure only; the felt paw already reads as a grip)
+  if (!ART.figure) el('circle', { cx: HB[0], cy: HB[1] - 2, r: 3.2, fill: 'var(--ink)', opacity: '.55' }, knotLayer);
+
+  // ---------- one animation loop: tween positions/sizes, bob the balloons, keep strings and chains attached ----------
+  function stepTo(n, snap) {
+    var k = snap ? 1 : 0.16;
+    ['x', 'y', 'k'].forEach(function (p) { var d = n.tgt[p] - n.cur[p]; n.cur[p] = Math.abs(d) < 0.002 ? n.tgt[p] : n.cur[p] + d * k; });
+  }
+  // springs for the figure, the waterline and the camera (snap under reduced motion)
+  var TARGET = { feet: 355, top: -260, bot: 20 }, CUR = { feet: 355, v: 0, water: 501.2, cam: null, h: 600 }, MAXZ = 1.4;
+  var lastV = 0, lastNW = 0, wKick = false, lastGasp = 0;
+  function sputter(x, wy) {          // a gasp at the surface: a few drops thrown up and a ripple
+    FX.play('splash');
+    for (var i = 0; i < 9; i++) droplet(x + (Math.random() * 50 - 25), wy, Math.random() * 160 - 80, -(120 + Math.random() * 180), 650, 2 + Math.random() * 2.5);
+    ripple(x, 0); ripple(x, 220);
+  }
+  function frame(now) {
+    var rm = FX.reduce();
+    if (rm) { CUR.feet = TARGET.feet; CUR.v = 0; CUR.water = WATER; }
+    else {
+      CUR.v = (CUR.v + (TARGET.feet - CUR.feet) * 0.05) * 0.84; CUR.feet += CUR.v;
+      CUR.water += (WATER - CUR.water) * 0.08;
+    }
+    var f = CUR.feet, wy = CUR.water - 500;
+    // overwhelmed: he doesn't just sit under. He sinks, kicks back up to gasp at the surface, sputters, and goes under again.
+    if (!rm && prevZone === 'overwhelmed') {
+      var gasp = Math.sin(now / 2700 * 2 * Math.PI), lift = Math.max(0, f - (CUR.water + 45));
+      f -= lift * Math.pow(Math.max(0, gasp), 2.2);
+      if (gasp > 0.96 && now - lastGasp > 2000) { lastGasp = now; sputter(FLOAT_X + HEAD[0], CUR.water); }
+    }
+    // camera: keep the waterline in frame when it can, but never lose the raccoon, its balloons or the ring
+    // the water (and the overwhelmed tag) is always in frame: it's the reference everything else is measured against
+    var top = TARGET.feet + TARGET.top - 14, bot = Math.max(TARGET.feet + TARGET.bot + 12, CUR.water + 125);  // +125: room for the overwhelmed tag and the tray under it
+    // too tall: zoom out (up to MAXZ) before cropping; if still too tall, crop the balloon tops, never the water
+    var hT = clamp(bot - top, FH, FH * MAXZ);
+    var camT = bot - top <= hT ? clamp(CUR.water + 50 - hT, bot - hT, top) : bot - hT;
+    var first = CUR.cam === null || rm;
+    CUR.h = first ? hT : CUR.h + (hT - CUR.h) * 0.08;
+    CUR.cam = first ? camT : CUR.cam + (camT - CUR.cam) * 0.08;
+    var z = CUR.h / FH, vw = FW * z, ox = XC - vw / 2;
+    $('float-svg').setAttribute('viewBox', ox.toFixed(1) + ' ' + CUR.cam.toFixed(1) + ' ' + vw.toFixed(1) + ' ' + CUR.h.toFixed(1));
+    // the sky plate always fills the frame: lay it out as at zoom 1, then scale about the frame's corner
+    $('plate-slot').setAttribute('transform', 'translate(' + ox.toFixed(1) + ' ' + CUR.cam.toFixed(1) + ') scale(' + z.toFixed(4) + ') translate(' + (-(XC - FW / 2)).toFixed(1) + ' 0) scale(1 ' + (FH / SCENE_H).toFixed(3) + ')');
+    ['water-back-g', 'water-front-g', 'zones'].forEach(function (id) { $(id).setAttribute('transform', 'translate(0 ' + wy.toFixed(1) + ')'); });
+    $('floater').setAttribute('transform', 'translate(' + FLOAT_X + ' ' + f.toFixed(1) + ')');
+    alive(now, rm, f);
+    $('wlabel-float').setAttribute('transform', 'translate(' + FLOAT_X + ' ' + f.toFixed(1) + ')');
+    BAL_KEYS.forEach(function (key) {
+      var n = B[key];
+      if (n.fly) {                                   // cut loose: drifts up and out of the sky, string trailing
+        n.fly.v = Math.min(n.fly.v + 0.12, 7); n.cur.y -= n.fly.v; n.cur.x += n.fly.drift + Math.sin(now / 300) * 0.6;
+        n.tgt = { x: n.cur.x, y: n.cur.y, k: n.cur.k };
+        if (f + n.cur.y < CUR.cam - 200 || n.on) { if (!n.on) { n.cur.k = 0; n.tgt.k = 0; n.shape.classList.add('off'); } n.fly = null; }
+      } else stepTo(n, rm);
+      var vis = n.cur.k > 0.02;
+      n.sway.style.display = vis ? '' : 'none'; n.strG.style.display = vis && !n.fly ? '' : 'none';
+      if (!vis) return;
+      var ang = rm ? 0 : 3 * Math.sin(now / n.period * 2 * Math.PI + n.phase);
+      n.sway.setAttribute('transform', 'rotate(' + ang.toFixed(2) + ' ' + HB[0] + ' ' + HB[1] + ')');
+      n.strG.setAttribute('transform', n.sway.getAttribute('transform'));
+      n.pos.setAttribute('transform', 'translate(' + n.cur.x.toFixed(1) + ' ' + n.cur.y.toFixed(1) + ') scale(' + n.cur.k.toFixed(3) + ')');
+      setString(n.str, HB[0], HB[1], n.cur.x, n.cur.y);
+      n.lab.setAttribute('x', n.cur.x.toFixed(1)); n.lab.setAttribute('y', (n.cur.y + (B_LABEL_DY + 4) * n.cur.k).toFixed(1));
+      n.lab.setAttribute('opacity', clamp((n.cur.k - 0.5) * 3, 0, 1).toFixed(2));
+    });
+    var anyW = false, nW = 0, dV = CUR.v - lastV;
+    WGT_KEYS.forEach(function (key) {
+      var n = W[key];
+      if (n.fall) {
+        n.fall.v += 0.55; n.cur.y += n.fall.v; n.cur.x += 0.4; n.tgt = { x: n.cur.x, y: n.cur.y, k: n.cur.k };
+        var wyAbs = f + n.cur.y;
+        if (!n.fall.splashed && wyAbs > CUR.water) { n.fall.splashed = true; splash(FLOAT_X + n.cur.x); }
+        if (wyAbs > CUR.water + 220 || n.on) { if (!n.on) { n.cur.k = 0; n.tgt.k = 0; } n.fall = null; }
+      } else stepTo(n, rm);
+      var vis = n.cur.k > 0.02;
+      n.drop.show(vis && !n.fall); n.pos.style.display = n.lab.style.display = vis ? '' : 'none';
+      if (!vis) return;
+      if (!n.fall) { anyW = true; nW++; }
+      // a pendulum on its drop: a lazy idle swing, plus a damped wobble kicked by the raccoon bobbing, a new weight clunking on, or a drag
+      var sw = n.sw || (n.sw = { th: 0, w: 0, phase: Math.random() * 6.28, period: 2300 + Math.random() * 900 });
+      if (!rm && !n.fall && !n.drag) {
+        // iron is heavy: small kicks, strong damping, never more than ~12 degrees
+        sw.w += -0.02 * sw.th - 0.06 * sw.w + clamp(dV, -3, 3) * 0.0025 + (wKick ? (Math.random() - 0.5) * 0.018 : 0);
+        sw.th = clamp(sw.th + sw.w, -0.2, 0.2);
+      } else { sw.th = 0; sw.w = 0; }
+      var ang = n.fall || n.drag || rm ? 0 : sw.th + 0.05 * Math.sin(now / sw.period * 2 * Math.PI + sw.phase);
+      var dx = n.cur.x - RING[0], dy = n.cur.y - RING[1], ca = Math.cos(ang), sa = Math.sin(ang);
+      var px = RING[0] + dx * ca - dy * sa, py = RING[1] + dx * sa + dy * ca;
+      n.pos.setAttribute('transform', 'translate(' + px.toFixed(1) + ' ' + py.toFixed(1) + ') rotate(' + (ang * 57.3).toFixed(2) + ') scale(' + n.cur.k.toFixed(3) + ')');
+      n.drop.set(RING[0], RING[1], px, py);
+      n.lab.setAttribute('x', (px + n.labOff[0] * n.cur.k).toFixed(1)); n.lab.setAttribute('y', (py + (n.labOff[1] + 4) * n.cur.k).toFixed(1));
+      n.lab.setAttribute('opacity', clamp((n.cur.k - 0.5) * 3, 0, 1).toFixed(2));
+    });
+    wKick = nW > lastNW; lastNW = nW; lastV = CUR.v;
+    mainChain.show(anyW); ringEl.style.display = anyW ? '' : 'none';
+    mainChain.set(HW[0], HW[1], RING[0], RING[1]);
+    requestAnimationFrame(frame);
+  }
+
+  // ---------- controls ----------
+  function makeChip(item, host) {
+    var btn = document.createElement('button');
+    btn.type = 'button'; btn.className = 'btn btn-sm tchip';
+    var sq = item.kind === 'weight';
+    btn.innerHTML = '<span class="sw' + (sq ? ' sq' : '') + '" style="background:' + item.color + '"></span><span></span><span class="size" aria-hidden="true">' + '●'.repeat(item.size) + '</span>';
+    btn.querySelector('span:nth-child(2)').textContent = item.label;
+    btn.setAttribute('aria-label', item.label + ', ' + (sq ? 'weight' : 'lift') + ' ' + item.size);
+    btn.addEventListener('click', function () { item.on = !item.on; update(); });
+    host.appendChild(btn); item.btn = btn;
+  }
+  TOGGLES.forEach(function (t) { if (!t.custom) makeChip(t, $(t.kind === 'balloon' ? 'balloon-toggles' : 'weight-toggles')); });
+  var cb = TOGGLES.filter(function (t) { return t.id === 'custom-b'; })[0], cw = TOGGLES.filter(function (t) { return t.id === 'custom-w'; })[0];
+  cb.btn = $('custom-b'); cw.btn = $('custom-w');
+  function customName(item, input, fallback) { var v = (input.value || '').trim(); item.label = v || fallback; item.short = v || 'yours'; }
+  $('custom-b').addEventListener('click', function () { customName(cb, $('custom-b-text'), 'your balloon'); cb.on = !cb.on; update(); });
+  $('custom-w').addEventListener('click', function () { customName(cw, $('custom-w-text'), 'your weight'); cw.on = !cw.on; update(); });
+  $('custom-b-text').addEventListener('input', function () { customName(cb, this, 'your balloon'); update(); });
+  $('custom-w-text').addEventListener('input', function () { customName(cw, this, 'your weight'); update(); });
+
+  function dialText(d) {
+    if (d.value === 0) return 'neutral';
+    var amt = Math.abs(d.value) * d.power;
+    return (d.value > 0 ? d.pos + ': lift ' : d.neg + ': load ') + (amt % 1 ? amt.toFixed(1) : amt);
+  }
+  DIALS.forEach(function (d) {
+    var box = document.createElement('div');
+    box.className = 'rounded-box bg-base-200 p-3';
+    box.innerHTML = '<div class="flex items-baseline justify-between gap-2"><label class="font-semibold" for="dial-' + d.id + '"></label>' +
+      '<span class="text-xs opacity-75 text-right" id="dial-' + d.id + '-val"></span></div>' +
+      '<input id="dial-' + d.id + '" type="range" min="-3" max="3" step="1" class="range range-xs w-full mt-2 dial-range" list="dial-ticks">' +
+      '<div class="flex justify-between text-xs opacity-60 mt-1" aria-hidden="true"><span class="end-lo"></span><span class="end-hi"></span></div>';
+    box.querySelector('label').textContent = d.name;
+    box.querySelector('.end-lo').textContent = '\u2190 ' + d.lo + ' (weight)';
+    box.querySelector('.end-hi').textContent = d.hi + ' (balloon) \u2192';
+    $('dial-list').appendChild(box);
+    d.input = box.querySelector('input'); d.out = box.querySelector('#dial-' + d.id + '-val');
+    d.input.value = d.value;
+    d.input.addEventListener('input', function () { d.value = +this.value; update(); });
+  });
+
+  // ---------- the raccoon is alive: breathing + a little sway; panic when the water gets close ----------
+  var lastSweat = 0;
+  function alive(now, rm, feet) {
+    var z = prevZone || 'coping', scared = z === 'overwhelmed', worried = scared || z === 'barely coping';
+    if (scaredImg) { scaredImg.style.display = scared ? '' : 'none'; figImg.style.display = scared ? 'none' : ''; }
+    if (faceG) { var mood = scared ? 'scared' : worried ? 'worried' : 'calm'; if (faceG.getAttribute('data-mood') !== mood) faceG.setAttribute('data-mood', mood); }
+    if (rm) { slot.removeAttribute('transform'); return; }
+    var period = scared ? 520 : worried ? 900 : 1600;                 // breath quickens as you sink
+    var br = Math.sin(now / period * 2 * Math.PI), sw = Math.sin(now / 3300 * 2 * Math.PI);
+    var jx = 0, jy = 0;
+    if (worried) { var amp = scared ? 1.8 : 0.8; jx = (Math.random() - 0.5) * amp; jy = (Math.random() - 0.5) * amp; }   // trembling
+    var rot = (scared ? 2.5 * Math.sin(now / 140) : 1.1 * sw).toFixed(2);   // panicky wobble vs a lazy sway
+    slot.setAttribute('transform', 'translate(' + jx.toFixed(2) + ' ' + jy.toFixed(2) + ') rotate(' + rot + ' 0 -80) translate(0 0) scale(' + (1 - 0.006 * br).toFixed(4) + ' ' + (1 + 0.014 * br).toFixed(4) + ')');
+    if (worried && now - lastSweat > (scared ? 380 : 800)) {          // sweat drops fly off his head
+      lastSweat = now;
+      var side = Math.random() < 0.5 ? -1 : 1;
+      droplet(FLOAT_X + HEAD[0] + side * 26, feet + HEAD[1] - 18, side * (40 + Math.random() * 60), -(90 + Math.random() * 80), 650, 2.8, null, '#8fd0f5');
+    }
+  }
+  // popping a good thing: the balloon bursts into felt fluff
+  function popBalloon(n) {
+    var cx = FLOAT_X + n.cur.x, cy = CUR.feet + n.cur.y + B_LABEL_DY * n.cur.k, col = n.color || '#d33';
+    n.tgt = { x: n.cur.x, y: n.cur.y, k: 0 }; n.cur.k = 0; n.shape.classList.add('off');
+    for (var i = 0; i < 14; i++) (function (i) {
+      var ang = i / 14 * 2 * Math.PI + Math.random() * 0.5, dist = 30 + Math.random() * 40;
+      var bit = el('ellipse', { rx: 3 + Math.random() * 3, ry: 2 + Math.random() * 2, fill: col, opacity: '.95' }, fxG);
+      FX.animate(700, function (t) {
+        var e = 1 - Math.pow(1 - t, 3);
+        bit.setAttribute('transform', 'translate(' + (cx + Math.cos(ang) * dist * e).toFixed(1) + ' ' + (cy + Math.sin(ang) * dist * e + 40 * t * t).toFixed(1) + ') rotate(' + (t * 260 + i * 30).toFixed(0) + ')');
+        bit.setAttribute('opacity', (0.95 * (1 - t)).toFixed(2));
+      }, function () { bit.remove(); });
+    })(i);
+    var ring = el('circle', { cx: cx, cy: cy, r: 6, fill: 'none', stroke: '#fff', 'stroke-width': 3 }, fxG);
+    FX.animate(260, function (t) { ring.setAttribute('r', (6 + 40 * t).toFixed(1)); ring.setAttribute('opacity', (1 - t).toFixed(2)); }, function () { ring.remove(); });
+  }
+
+  // ---------- particles (skipped under reduced motion) ----------
+  var WATER = 501.2;
+  function waterOf(v) { return 565 - 2.2 * v; }
+  function zoneOf(feet) { return feet < WATER - 180 ? 'thriving' : feet < WATER - 110 ? 'coping' : feet < WATER ? 'barely coping' : 'overwhelmed'; }
+  function droplet(x, y, vx, vy, life, r, onLand, color) {
+    var c = el('circle', { r: r, fill: color || 'var(--foam)' }, fxG), landed = false;
+    FX.animate(life, function (t) {
+      if (landed) return;
+      var ms = t * life / 1000, px = x + vx * ms, py = y + vy * ms + 900 * ms * ms;
+      c.setAttribute('cx', px.toFixed(1)); c.setAttribute('cy', py.toFixed(1)); c.setAttribute('opacity', (1 - t * t).toFixed(2));
+      if (onLand && py >= WATER) { onLand(px); landed = true; c.setAttribute('opacity', 0); }
+    }, function () { c.remove(); });
+  }
+  function ripple(x, delay) {
+    setTimeout(function () {
+      var e = el('ellipse', { cx: x, cy: WATER, fill: 'none', stroke: 'var(--foam)', 'stroke-width': 2 }, fxG);
+      FX.animate(900, function (t) { e.setAttribute('rx', (8 + 80 * t).toFixed(1)); e.setAttribute('ry', (2 + 8 * t).toFixed(1)); e.setAttribute('opacity', (0.9 * (1 - t)).toFixed(2)); }, function () { e.remove(); });
+    }, delay || 0);
+  }
+  function splash(x) {
+    FX.play('splash');
+    if (FX.reduce()) return;
+    if (ART.splash) {
+      var sp = el('image', { href: ART.splash, x: -60, y: -100, width: 120, height: 112 }, fxG);
+      FX.animate(900, function (t) {
+        var e = 1 - Math.pow(1 - t, 2);
+        sp.setAttribute('transform', 'translate(' + x + ' ' + (WATER + 14) + ') scale(' + (0.35 + 0.8 * e).toFixed(3) + ')');
+        sp.setAttribute('opacity', (t < 0.5 ? 1 : 2 - 2 * t).toFixed(2));
+      }, function () { sp.remove(); });
+    }
+    for (var i = 0; i < 18; i++) droplet(x + (Math.random() * 40 - 20), WATER, Math.random() * 240 - 120, -(180 + Math.random() * 280), 700 + Math.random() * 300, 2.5 + Math.random() * 3);
+    ripple(x, 0); ripple(x, 180); ripple(x, 380);
+  }
+  function drips(x, feet) {
+    FX.play('drip', 0.35); FX.play('drip', 0.7);
+    if (FX.reduce()) return;
+    for (var i = 0; i < 5; i++) (function (i) {
+      setTimeout(function () { droplet(x + (Math.random() * 30 - 15), feet + 2, 0, 0, 900, 2.6, function (px) { ripple(px); }); }, 300 + i * 170);
+    })(i);
+  }
+  function sparkles(x, y) {
+    FX.play('sparkle');
+    if (FX.reduce()) return;
+    for (var i = 0; i < 10; i++) (function (i) {
+      var ang = i / 10 * 2 * Math.PI + Math.random() * 0.4, dist = 40 + Math.random() * 34;
+      var st = el('path', { d: 'M0 -10 L2.4 -2.4 L10 0 L2.4 2.4 L0 10 L-2.4 2.4 L-10 0 L-2.4 -2.4 Z', fill: i % 2 ? '#ffcf33' : '#ff9f1c', stroke: '#b87800', 'stroke-width': '.8' }, fxG);
+      FX.animate(850, function (t) {
+        var e = 1 - Math.pow(1 - t, 3), px = x + Math.cos(ang) * dist * e, py = y + Math.sin(ang) * dist * e;
+        st.setAttribute('transform', 'translate(' + px.toFixed(1) + ' ' + py.toFixed(1) + ') rotate(' + (t * 180).toFixed(0) + ') scale(' + (1.2 - t).toFixed(2) + ')');
+        st.setAttribute('opacity', (1 - t).toFixed(2));
+      }, function () { st.remove(); });
+    })(i);
+  }
+  function restart(e, cls) { e.classList.remove(cls); void e.getBBox(); e.classList.add(cls); }
+
+  // ---------- update: state -> targets + effects ----------
+  var prevFeet = null, prevZone = null, prevWater = WATER, lastSplash = 0, lastSpark = 0;
+  function update() {
+    var list = items(), lift = 0, load = 0, sfx = 0;
+    var balloons = list.filter(function (i) { return i.kind === 'balloon'; }).sort(function (a, b) { return BAL_KEYS.indexOf(a.key) - BAL_KEYS.indexOf(b.key); });
+    var weights = list.filter(function (i) { return i.kind === 'weight'; }).sort(function (a, b) { return WGT_KEYS.indexOf(a.key) - WGT_KEYS.indexOf(b.key); });
+    var seenB = {}, seenW = {}, flipB = {}, flipW = {};
+    list.forEach(function (it) { (it.kind === 'balloon' ? flipW : flipB)[it.key] = true; });   // still on, on the other side
+    balloons.forEach(function (it, i) {
+      lift += it.power; seenB[it.key] = true;
+      var n = B[it.key], s = B_SLOTS[i];
+      n.tgt = { x: HB[0] + s[0], y: HB[1] + s[1], k: KSIZE[it.size] * it.mult };
+      n.lab.textContent = it.short; n.title.textContent = 'Balloon: ' + it.short + ', lift ' + it.size;
+      if (!n.on) {
+        n.cur.x = n.spawnAt ? n.spawnAt[0] : n.tgt.x; n.cur.y = n.spawnAt ? n.spawnAt[1] : n.tgt.y; n.spawnAt = null;
+        n.shape.classList.remove('off');
+        if (ready) {
+          if (!FX.reduce()) { n.cur.k = n.tgt.k; restart(n.shape, 'popin'); }
+          if (sfx < 3) setTimeout(FX.play.bind(null, 'pop', 0.85 + it.size * 0.08 + sfx * 0.1), sfx++ * 70);
+        }
+      } else if (ready && it.power > n.power && sfx < 3) setTimeout(FX.play.bind(null, 'pop', 0.8 + it.size * 0.1), sfx++ * 70);
+      n.on = true; n.size = it.size; n.power = it.power;
+      if (n.drag) n.tgt = { x: n.cur.x, y: n.cur.y, k: n.tgt.k };
+    });
+    BAL_KEYS.forEach(function (key) {
+      var n = B[key];
+      if (seenB[key] || !n.on) return;
+      n.on = false; n.size = 0;
+      if (ready && n.cut && !FX.reduce()) { n.cut = false; n.fly = { v: 0.6, drift: (Math.random() - 0.5) * 1.2 }; n.tgt = { x: n.cur.x, y: n.cur.y, k: n.cur.k }; if (sfx < 3) setTimeout(FX.play.bind(null, 'pop', 1.4), sfx++ * 70); return; }
+      n.cut = false;
+      if (ready && !flipB[key] && !FX.reduce()) { popBalloon(n); if (sfx < 3) setTimeout(FX.play.bind(null, 'pop', 0.55), sfx++ * 70); return; }
+      n.tgt = { x: n.cur.x, y: n.cur.y, k: 0 }; n.shape.classList.add('off');
+      if (ready && sfx < 3) setTimeout(FX.play.bind(null, 'deflate'), sfx++ * 70);
+    });
+    weights.forEach(function (it, i) {
+      load += it.power; seenW[it.key] = true;
+      var n = W[it.key], s = W_SLOTS[i];
+      n.tgt = { x: RING[0] + s[0], y: RING[1] + s[1], k: (ART.weight ? 1 : WSIZE[it.size]) * it.mult };
+      if (n.size !== it.size) n.labOff = setWeightSize(n, it.size);
+      n.lab.textContent = it.short; n.title.textContent = 'Weight: ' + it.short + ', load ' + it.size;
+      var grew = n.on && it.power > n.power;
+      if (!n.on) {
+        n.cur.x = n.spawnAt ? n.spawnAt[0] : n.tgt.x; n.cur.y = n.spawnAt ? n.spawnAt[1] : n.tgt.y; n.spawnAt = null;
+        if (ready && !FX.reduce()) { n.cur.k = n.tgt.k; restart(n.shape, 'swing'); }
+      }
+      if (ready && (!n.on || grew)) {
+        var d = 70 * Math.min(sfx, 3), loud = sfx < 3;
+        setTimeout(function () { if (loud) FX.play('clunk'); if (!FX.reduce()) restart($('jolt'), 'clunk'); }, (FX.reduce() || grew ? 0 : 420) + d);
+        sfx++;
+      }
+      n.on = true; n.size = it.size; n.power = it.power;
+    });
+    WGT_KEYS.forEach(function (key) {
+      var n = W[key];
+      if (seenW[key] || !n.on) return;
+      n.on = false; n.size = 0;
+      if (ready && !flipW[key] && !FX.reduce()) { n.fall = { v: -3, splashed: false }; n.tgt = { x: n.cur.x, y: n.cur.y, k: n.cur.k }; return; }   // let go: it drops
+      n.tgt = { x: n.cur.x, y: n.cur.y, k: 0 };
+    });
+
+    TOGGLES.forEach(function (t) { t.btn.setAttribute('aria-pressed', t.on); });
+    $('custom-b').lastChild.textContent = cb.on ? 'Remove' : 'Add';
+    $('custom-w').lastChild.textContent = cw.on ? 'Remove' : 'Add';
+    DIALS.forEach(function (d) {
+      d.input.value = d.value; d.out.textContent = dialText(d);
+      d.input.setAttribute('aria-valuetext', d.value + ', ' + dialText(d));
+    });
+
+    // height: lift minus load; below the waterline the figure sinks a bit further so "under" reads at a glance
+    // height = baseline + 16 per unit of (lift - load). "Neither" (0/0) sits at coping; load with no lift sinks.
+    var net = lift - load;
+    var feet = clamp(355 - net * 16, 120, 720);
+    // once under, sink further (to about chest depth) so "under" reads at a glance
+    var shown = Math.min(WATER + 260, feet + Math.max(0, feet - WATER) * 3);   // can go all the way under (head below the waves)
+    TARGET.feet = shown;
+    // what the camera has to keep in frame, relative to the feet: balloon tops (or the head) and weight bottoms (or the feet)
+    var bh = ART.balloon ? ART.balloon.stub[1] * ART.balloon.scale : 70, ext = { top: HEAD[1] - 40, bot: 10 };
+    BAL_KEYS.forEach(function (k) { var n = B[k]; if (n.tgt.k > 0) ext.top = Math.min(ext.top, n.tgt.y - bh * n.tgt.k - 6); });
+    WGT_KEYS.forEach(function (k) { var n = W[k]; if (n.tgt.k > 0) ext.bot = Math.max(ext.bot, n.tgt.y + 100 * n.tgt.k); });
+    // keep the weights in frame even underwater: seeing what's dragging you down is the point
+    TARGET.top = ext.top; TARGET.bot = ext.bot;
+    var zone = zoneOf(feet);
+    Array.prototype.forEach.call(document.querySelectorAll('#zones .ztag'), function (g) { g.classList.toggle('cur', g.getAttribute('data-zone') === zone); });
+    if (ready && prevFeet !== null) {
+      var now = performance.now(), wasUnder = prevFeet > prevWater, isUnder = feet > WATER;
+      if (!wasUnder && isUnder && now - lastSplash > 700) { lastSplash = now; setTimeout(function () { splash(FLOAT_X); }, FX.reduce() ? 0 : 320); }
+      if (wasUnder && !isUnder && now - lastSplash > 700) { lastSplash = now; drips(FLOAT_X, shown); }
+      if (zone === 'thriving' && prevZone !== 'thriving' && now - lastSpark > 900) { lastSpark = now; setTimeout(function () { sparkles(FLOAT_X + HEAD[0], shown + HEAD[1]); }, FX.reduce() ? 0 : 650); }
+    }
+    prevFeet = feet; prevZone = zone; prevWater = WATER;
+    var fmt = function (x) { return x % 1 ? x.toFixed(1) : String(x); };
+    $('lift-val').textContent = fmt(lift); $('load-val').textContent = fmt(load);
+    $('zone-val').textContent = zone;
+    $('float-live').textContent = 'Lift ' + fmt(lift) + ', load ' + fmt(load) + '. ' + zone.charAt(0).toUpperCase() + zone.slice(1) + '.';
+    if (window.afterUpdate) window.afterUpdate();
+  }
+
+  // ---------- inline controls: grab the balloons and weights themselves ----------
+  // hold = pump it up a size (1 -> 2 -> 3 -> 1); drag a dial across the hand line to flip balloon <-> weight;
+  // drag anything into the tray (or out of the frame) to remove it; tap or drag a tray spare in to add it.
+  TOGGLES.forEach(function (t) { t.size0 = t.size; });
+  var svg = $('float-svg'), fig = $('float-figure'), tray = $('tray'), hint = $('drag-hint');
+  var FLIP_Y = (HW[1] + RING[1]) / 2 - 30;   // the hand line: above it a dial is a balloon, below it a weight
+  function model(key) { return DIALS.filter(function (d) { return d.id === key; })[0] || TOGGLES.filter(function (t) { return t.id === key; })[0]; }
+  function isDial(m) { return 'value' in m; }
+  function sizeOf(m) { return isDial(m) ? Math.abs(m.value) : (m.on ? m.size : 0); }
+  function setItem(m, kind, size) {
+    if (isDial(m)) m.value = size ? (kind === 'balloon' ? 1 : -1) * size : 0;
+    else { m.on = size > 0; if (size) m.size = size; }
+  }
+  function toLocal(cx, cy) { var p = svg.createSVGPoint(); p.x = cx; p.y = cy; return p.matrixTransform(bLayer.getScreenCTM().inverse()); }
+  function inRect(r, x, y) { return x >= r.left && x <= r.right && y >= r.top && y <= r.bottom; }
+  function dismissHint() { hint.classList.add('gone'); }
+  function grabbable(key, kind) {
+    var n = (kind === 'balloon' ? B : W)[key];
+    n.pos.classList.add('grab');
+    n.pos.addEventListener('pointerdown', function (e) {
+      if (e.button) return;
+      e.preventDefault(); n.pos.setPointerCapture(e.pointerId);
+      var m = model(key), x0 = e.clientX, y0 = e.clientY, dragging = false, held = false;
+      var at = toLocal(e.clientX, e.clientY), off = [n.cur.x - at.x, n.cur.y - at.y];
+      var pump = function () {
+        held = true; dismissHint();
+        var sz = sizeOf(m); setItem(m, kind, sz >= 3 ? 1 : sz + 1);
+        if (sz >= 3) FX.play('deflate');
+        update(); timer = setTimeout(pump, 520);
+      };
+      var timer = setTimeout(pump, 380);
+      function move(ev) {
+        if (!dragging && Math.hypot(ev.clientX - x0, ev.clientY - y0) > 8 && !held) {
+          dragging = true; clearTimeout(timer); n.drag = true; fig.classList.add('dragging'); dismissHint();
+        }
+        if (!dragging) return;
+        var p = toLocal(ev.clientX, ev.clientY);
+        n.tgt = { x: p.x + off[0], y: p.y + off[1], k: n.tgt.k }; n.cur.x = n.tgt.x; n.cur.y = n.tgt.y;
+        tray.classList.toggle('drop-target', inRect(tray.getBoundingClientRect(), ev.clientX, ev.clientY));
+      }
+      function up(ev) {
+        clearTimeout(timer); n.pos.removeEventListener('pointermove', move); n.pos.removeEventListener('pointerup', up); n.pos.removeEventListener('pointercancel', up);
+        tray.classList.remove('drop-target'); fig.classList.remove('dragging');
+        if (!dragging) return;
+        n.drag = false;
+        var p = toLocal(ev.clientX, ev.clientY), fr = svg.getBoundingClientRect();
+        if (ev.type === 'pointercancel') { update(); return; }
+        if (inRect(tray.getBoundingClientRect(), ev.clientX, ev.clientY) || !inRect(fr, ev.clientX, ev.clientY)) {
+          setItem(m, kind, 0); update(); return;                  // dropped in the tray or flung off the frame: gone
+        }
+        var side = p.y < FLIP_Y ? 'balloon' : 'weight';
+        if (isDial(m) && side !== kind) {                         // across the hand line: sleep flips from balloon to weight
+          (side === 'balloon' ? B : W)[key].spawnAt = [p.x + off[0], p.y + off[1]];
+          setItem(m, side, sizeOf(m) || 1);
+        }
+        update();                                                 // otherwise it springs back to its slot
+      }
+      n.pos.addEventListener('pointermove', move); n.pos.addEventListener('pointerup', up); n.pos.addEventListener('pointercancel', up);
+    });
+  }
+  BAL_KEYS.forEach(function (k) { grabbable(k, 'balloon'); });
+  WGT_KEYS.forEach(function (k) { grabbable(k, 'weight'); });
+
+  // scissors: drag them across a balloon string (the balloon floats away) or a weight's chain (the weight drops into the sea)
+  function segHit(a, b, c, d) {   // do segments ab and cd cross?
+    function o(p, q, r) { return (q.x - p.x) * (r.y - p.y) - (q.y - p.y) * (r.x - p.x); }
+    return o(a, b, c) * o(a, b, d) < 0 && o(c, d, a) * o(c, d, b) < 0;
+  }
+  $('scissors').addEventListener('pointerdown', function (e) {
+    if (e.button) return;
+    e.preventDefault(); dismissHint();
+    var btn = this, ghost = document.createElement('div'); ghost.className = 'scissor-ghost'; ghost.textContent = '\u2702\uFE0F';
+    document.body.appendChild(ghost); btn.classList.add('in-use'); fig.classList.add('dragging');
+    var last = null;
+    function place(ev) { ghost.style.left = ev.clientX + 'px'; ghost.style.top = ev.clientY + 'px'; }
+    function snip() { ghost.classList.remove('snip'); void ghost.offsetWidth; ghost.classList.add('snip'); FX.play('clunk'); }
+    function move(ev) {
+      place(ev);
+      var p = toLocal(ev.clientX, ev.clientY);
+      if (last) {
+        var a = { x: last.x, y: last.y }, b = { x: p.x, y: p.y }, cut = false;
+        BAL_KEYS.forEach(function (k) {
+          var n = B[k]; if (!n.on || n.fly || n.drag) return;
+          if (segHit(a, b, { x: HB[0], y: HB[1] }, { x: n.cur.x, y: n.cur.y })) { n.cut = true; setItem(model(k), 'balloon', 0); cut = true; }
+        });
+        WGT_KEYS.forEach(function (k) {
+          var n = W[k]; if (!n.on || n.fall || n.drag) return;
+          if (segHit(a, b, { x: RING[0], y: RING[1] }, { x: n.cur.x, y: n.cur.y })) { setItem(model(k), 'weight', 0); cut = true; }
+        });
+        if (cut) { snip(); update(); }
+      }
+      last = p;
+    }
+    function up() {
+      document.removeEventListener('pointermove', move); document.removeEventListener('pointerup', up); document.removeEventListener('pointercancel', up);
+      ghost.remove(); btn.classList.remove('in-use'); fig.classList.remove('dragging');
+    }
+    place(e);
+    document.addEventListener('pointermove', move); document.addEventListener('pointerup', up); document.addEventListener('pointercancel', up);
+  });
+
+  // the felt tray: whatever is off. Tap adds it (dials come in as a balloon); drag it into the scene to pick a side.
+  function spareLabel(m) { return isDial(m) ? m.name.toLowerCase() : m.short; }
+  function renderTray() {
+    while (tray.firstChild) tray.removeChild(tray.firstChild);
+    DIALS.concat(TOGGLES).forEach(function (m) {
+      if (sizeOf(m) || m.custom) return;
+      var b = document.createElement('button'), kind = isDial(m) ? 'balloon' : m.kind;
+      b.type = 'button'; b.className = 'spare';
+      b.innerHTML = '<span class="sw' + (kind === 'weight' ? ' sq' : '') + '" style="background:' + m.color + '"></span><span></span>';
+      b.lastChild.textContent = spareLabel(m);
+      b.setAttribute('aria-label', 'Add ' + spareLabel(m) + (isDial(m) ? ' (drag below the hand for a weight)' : ' ' + kind));
+      b.addEventListener('pointerdown', function (e) { spareDrag(e, m, kind, b); });
+      b.addEventListener('click', function () { if (b._dragged) return; setItem(m, kind, isDial(m) ? 1 : m.size0); update(); });
+      tray.appendChild(b);
+    });
+  }
+  function spareDrag(e, m, kind, b) {
+    if (e.button) return;
+    var x0 = e.clientX, y0 = e.clientY, ghost = null; b._dragged = false;
+    function move(ev) {
+      if (!ghost && Math.hypot(ev.clientX - x0, ev.clientY - y0) > 8) {
+        b._dragged = true; dismissHint(); ghost = b.cloneNode(true); ghost.classList.add('drag-ghost'); ghost.classList.add('spare'); document.body.appendChild(ghost);
+      }
+      if (ghost) { ghost.style.left = ev.clientX + 'px'; ghost.style.top = ev.clientY + 'px'; }
+    }
+    function up(ev) {
+      document.removeEventListener('pointermove', move); document.removeEventListener('pointerup', up);
+      if (!ghost) return;
+      ghost.remove();
+      if (inRect(svg.getBoundingClientRect(), ev.clientX, ev.clientY) && !inRect(tray.getBoundingClientRect(), ev.clientX, ev.clientY)) {
+        var p = toLocal(ev.clientX, ev.clientY), side = isDial(m) ? (p.y < FLIP_Y ? 'balloon' : 'weight') : kind;
+        (side === 'balloon' ? B : W)[m.id].spawnAt = [p.x, p.y];
+        setItem(m, side, isDial(m) ? 1 : m.size0); update();
+      }
+      setTimeout(function () { b._dragged = false; }, 0);
+    }
+    document.addEventListener('pointermove', move); document.addEventListener('pointerup', up);
+  }
+  window.afterUpdate = function () {
+    renderTray();
+    TOGGLES.forEach(function (t) {
+      if (!t.btn) return;
+      var dots = t.btn.querySelector('.size'); if (dots) dots.textContent = '\u25CF'.repeat(t.size);
+      t.btn.setAttribute('aria-label', t.label + ', ' + (t.kind === 'weight' ? 'weight' : 'lift') + ' ' + t.size);
+    });
+  };
+
+  // ---------- presets ----------
+  function setState(dials, toggles) { DIALS.forEach(function (d, i) { d.value = dials[i]; }); TOGGLES.forEach(function (t, i) { t.on = toggles[i]; }); update(); }
+  $('preset-both').addEventListener('click', function () { setState([2, 2, 2, -3], TOGGLES.map(function (t) { return !t.custom; })); });
+  $('preset-neither').addEventListener('click', function () { setState([0, 0, 0, 0], TOGGLES.map(function () { return false; })); });
+  $('preset-reset').addEventListener('click', function () { TOGGLES.forEach(function (t) { t.size = t.size0; }); $('tolerance').value = 71; WATER = waterOf(29); $('tolerance-val').textContent = 'typical'; $('tolerance').value = 71; WATER = waterOf(29); $('tolerance-val').textContent = 'typical'; setState(DIALS.map(function (d) { return d.start; }), TOGGLES.map(function (t) { return t.start; })); });
+  // stress tolerance: one slider that only raises or lowers the water (and the zone bands ride with it)
+  function setTolerance(t) {
+    $('tolerance').value = t; WATER = waterOf(100 - t);
+    var word = t < 34 ? 'low' : t > 85 ? 'high' : 'typical';
+    $('tolerance-val').textContent = word; $('tolerance').setAttribute('aria-valuetext', word + ' tolerance');
+    update();
+  }
+  $('tolerance').addEventListener('input', function () { setTolerance(+this.value); });
+
+  // ---------- camera: a tight frame that follows the figure but keeps the waterline in view when it can ----------
+  var SMALL = window.matchMedia('(max-width: 640px)');
+  var FW = 660, FH = 600, XC = FLOAT_X + 10;
+  function fitPhone() {
+    FW = SMALL.matches ? 480 : 660;
+    $('float-svg').style.aspectRatio = FW + ' / ' + FH;
+    buildZones();
+  }
+  // zone tags: felt tags pinned to the right edge of the frame, stitched dotted lines between bands
+  function buildZones() {
+    var z = $('zones'); while (z.firstChild) z.removeChild(z.firstChild);
+    var right = XC + FW / 2 - 10, big = SMALL.matches;
+    [500 - 180, 500 - 110].forEach(function (y) { el('line', { 'class': 'zline', x1: right - (big ? 150 : 200), x2: right, y1: y, y2: y }, z); });
+    [['thriving', 288], ['coping', 355], ['barely coping', 452], ['overwhelmed', 548]].forEach(function (t) {
+      var w = t[0].length * (big ? 10 : 8) + 22, h = big ? 30 : 24;
+      var g = el('g', { 'class': 'ztag', 'data-zone': t[0], transform: 'translate(' + (right - w) + ' ' + (t[1] - h / 2) + ') rotate(' + (t[0].length % 2 ? -1.5 : 1.5) + ' ' + w / 2 + ' ' + h / 2 + ')' }, z);
+      el('rect', { 'class': 'tag', width: w, height: h, rx: 6 }, g);
+      el('rect', { 'class': 'stitch', x: 3, y: 3, width: w - 6, height: h - 6, rx: 4 }, g);
+      el('circle', { cx: 8, cy: h / 2, r: 2.2, fill: '#8a6c48' }, g);
+      var tx = el('text', { x: w / 2 + 3, y: h / 2 + (big ? 6 : 5), 'text-anchor': 'middle' }, g); tx.textContent = t[0];
+    });
+  }
+  // the water: knitted sea sampled from plate-A, a wavy felt edge with foam tufts, tiled downward; opaque at the back
+  function buildWater(g, front) {
+    while (g.firstChild) g.removeChild(g.firstChild);
+    var inner = el('g', { 'clip-path': 'url(#wave-clip)' }, g);
+    if (ART.water) {
+      el('rect', { x: -400, y: 556, width: 1600, height: 1600, fill: 'url(#knit-fill)', 'class': 'felt-bg' }, inner);
+      el('image', { href: ART.water.top, x: 0, y: 492, width: 800, height: 75, preserveAspectRatio: 'none', 'class': 'felt-bg' }, inner);
+      el('image', { href: ART.water.top, x: -800, y: 492, width: 800, height: 75, preserveAspectRatio: 'none', 'class': 'felt-bg' }, inner);
+      el('image', { href: ART.water.top, x: 800, y: 492, width: 800, height: 75, preserveAspectRatio: 'none', 'class': 'felt-bg' }, inner);
+    } else el('rect', { x: -400, y: 490, width: 1600, height: 1600, fill: front ? 'var(--water)' : 'var(--water2)' }, inner);
+    if (front) el('rect', { x: -400, y: 490, width: 1600, height: 1600, fill: '#1d5f86', opacity: '.22' }, inner);
+  }
+  (function defs() {
+    var d = $('float-svg').querySelector('defs');
+    var wave = 'M-400 500'; for (var x = -400; x < 1200; x += 40) wave += ' q10 -7 20 0 t20 0';
+    var cp = el('clipPath', { id: 'wave-clip', clipPathUnits: 'userSpaceOnUse' }, d);
+    el('path', { d: wave + ' L1200 2200 L-400 2200 Z' }, cp);
+    if (ART.water) {
+      var pat = el('pattern', { id: 'knit-fill', patternUnits: 'userSpaceOnUse', x: 0, y: 556, width: 800, height: 180 }, d);
+      el('image', { href: ART.water.fill, x: 0, y: 0, width: 800, height: 180, preserveAspectRatio: 'none' }, pat);
+    }
+  })();
+  buildWater($('water-back-g'), false);
+  buildWater($('water-front-g'), true);
+  fitPhone();
+  if (SMALL.addEventListener) SMALL.addEventListener('change', fitPhone);
+
+  setTolerance(71);
+  requestAnimationFrame(frame);
+  ready = true;
+})();
+</script>
+</body>
+</html>
