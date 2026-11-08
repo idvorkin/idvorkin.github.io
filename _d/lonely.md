@@ -31,13 +31,13 @@ Loneliness isn't being alone. It's the pain of missing a connection you need, an
 
 That makes it different from solitude. **Solitude** is chosen, and often where my best thinking and calm come from. **Loneliness** is unwanted. You can be lonely in a crowded room, and content alone on a mountain.
 
-Why does it hurt? Because it's supposed to. Hunger pushes you to eat; loneliness pushes you to seek people. The brain treats social pain a lot like physical pain, which is why a snub stings in the body and not just in the head. The signal only becomes a problem when it stays on for years, and the cost of that is real: the same Harvard survey links chronic loneliness to early death, depression, anxiety, heart disease, substance abuse, and domestic abuse ([Loneliness in America, Harvard MCC](https://mcc.gse.harvard.edu/reports/loneliness-in-america)).
+Why does it hurt? Because it's supposed to. Hunger pushes you to eat; loneliness pushes you to seek people. The brain treats social pain a lot like physical pain, which is why a snub stings in the body and not just in the head. The catch, which Adam Mastroianni [makes vividly](https://www.experimental-history.com/p/there-is-no-epidemic-of-loneliness), is that the push is weak. When researchers cut people off from food or from company for ten hours, both cravings rose, but hunger rose much faster, and 10% of the isolated group ended the day craving company no more than when they started ([Tomova et al., 2020](https://doi.org/10.1038/s41593-020-00742-z)). His analogy is scurvy: sailors short on vitamin C wither without ever wanting an orange. Our ancestors never needed a strong craving for people, because they couldn't survive without them, so evolution never built a strong one. You can be starving for people without feeling hungry for them. When the signal does stay on for years, the cost is real: the same Harvard survey links chronic loneliness to early death, depression, anxiety, heart disease, substance abuse, and domestic abuse ([Loneliness in America, Harvard MCC](https://mcc.gse.harvard.edu/reports/loneliness-in-america)).
 
 **Summary definition**: Loneliness is the suffering that results from a perceived or actual lack of meaningful connection.
 
 ## The friendship recession
 
-The signal is going off for a lot of people at once, and the trend is in the wrong direction. From the [Survey Center on American Life's 2021 friendship report](https://www.americansurveycenter.org/research/the-state-of-american-friendship-change-challenges-and-loss/):
+Careful with the word "epidemic." Mastroianni's [read of the data](https://www.experimental-history.com/p/there-is-no-epidemic-of-loneliness) is that _feeling_ lonely isn't clearly rising. A survey where young people report more loneliness than old people, like the one up top, is a snapshot, not a trend; when you compare today's young people to young people decades ago, the changes are small and mixed. What has clearly collapsed is time with other people. We're not much lonelier, we're more alone, and the weak signal above is why that doesn't feel like an emergency. From the [Survey Center on American Life's 2021 friendship report](https://www.americansurveycenter.org/research/the-state-of-american-friendship-change-challenges-and-loss/):
 
 - Americans with **no close friends**: 3% in 1990, 12% in 2021.
 - Americans with **ten or more close friends**: 33% in 1990, 13% in 2021.
@@ -85,13 +85,13 @@ So the levers are physical proximity and frequency. That matches both the four i
 
 ### The practices
 
-1. **Pick a place and keep showing up.** A weekly class, a gym, a club, a standing game night. The point is the same faces on a schedule, not the activity. This is proximity and repetition, bought on purpose instead of inherited from school.
+1. **Pick a place and keep showing up.** A weekly class, a gym, a club, a standing game night. The point is the same faces on a schedule, not the activity. This is proximity and repetition, bought on purpose instead of inherited from school. It has to be in person, and it has to include people outside your house: as Mastroianni puts it, "face time, not just FaceTime."
 2. **Bank the hours.** If a close friend costs 200 hours, a quarterly dinner will never get there. Consistency beats intensity: a regular small thing outbuilds an occasional big one.
 3. **Put friends on the calendar like workouts.** Social fitness means treating friendship as maintenance, not a reward for having free time. Attention is the investment; schedule it or it won't happen.
-4. **Lean into the awkward.** New friendships require some discomfort, and novel shared experiences (a trip, a project, a hard thing done together) build them faster than another coffee.
+4. **Lean into the awkward.** New friendships require some discomfort, and novel shared experiences (a trip, a project, a hard thing done together) build them faster than another coffee. It goes better than you expect: people reliably predict that talking to a stranger will go worse than it actually does ([Sandstrom & Boothby, 2020](https://doi.org/10.1080/15298868.2020.1816568)).
 5. **Find people at your life stage.** Shared challenges make natural bonds. The new parents at the park, the other people who just moved, the other person whose kids just left.
 6. **Make the small reach-out a daily habit.** The text, the call, the invite. Each one is tiny; the sum is the ratchet running in reverse.
-7. **Don't argue with the signal.** Loneliness is information, not a verdict on you. Act on it the way you'd act on hunger.
+7. **Don't wait for the signal.** Loneliness is information, not a verdict on you, but it's a weak alarm that often never goes off. Treat it like thirst, which is also unreliable, so you drink on a schedule. Mastroianni's prescription is the same brute force: "you must sometimes hang out even when you’re not lonely."
 8. **It's never too late.** That's the title of the last chapter of _The Good Life_, and the authors mean it literally. The 200 hours start whenever you start.
 
 ## Related
