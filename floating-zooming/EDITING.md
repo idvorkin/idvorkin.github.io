@@ -1,6 +1,6 @@
 # Editing Floating and Zooming
 
-This is a hand-off for whichever agent picks it up next. The explainer lives in the blog repo as one static page: `floating-zooming/index.html` (Jekyll front matter `layout: empty`, permalink `/floating-zooming/`) plus felt sprites in `floating-zooming/art/`. There's no build step beyond Jekyll copying it. It goes live at https://idvorkin.com/floating-zooming/ when the PR merges. This file has no front matter, so Jekyll copies it as-is rather than rendering it.
+This is a hand-off for whichever agent picks it up next. The explainer lives in the blog repo as one static page: `floating-zooming/index.html` (Jekyll front matter `layout: empty`, permalink `/floating-zooming/`) plus felt sprites in `floating-zooming/art/`. There's no build step beyond Jekyll copying it. It goes live at https://idvork.in/floating-zooming/ when the PR merges. This file has no front matter, so Jekyll copies it as-is rather than rendering it.
 
 ## Ground rules from Igor (keep these)
 
