@@ -23,6 +23,7 @@ Testing math is easy, it's right or wrong. Testing spelling is easy too, but tes
 - [Concepts](#concepts)
   - [Tracing](#tracing)
   - [LLM as Judge](#llm-as-judge)
+  - [Humans don't agree either](#humans-dont-agree-either)
   - [Scoring rules I trust](#scoring-rules-i-trust)
   - [Testing across prompts](#testing-across-prompts)
   - [Testing across models](#testing-across-models)
@@ -60,6 +61,29 @@ I started by using LangSmith, but now I use ell, which has it built in.
 Fantastic post on using an [LLM as a judge](https://hamel.dev/blog/posts/llm-judge/).
 
 This is the future, also [promptfoo supports this well](https://www.promptfoo.dev/docs/configuration/expected-outputs/model-graded/llm-rubric/).
+
+### Humans don't agree either
+
+Before I ask whether a judge is right, I should ask how often two people give the same answer. Less often than I'd guess:
+
+- **Peer review:** NeurIPS sent 10% of submissions to two independent committees. In 2021 they split on [203 of 882 papers](https://arxiv.org/abs/2306.03262), and about half the accepted list would change on a rerun, same as [in 2014](https://arxiv.org/abs/2109.09774).
+- **Mammograms:** ten radiologists reading the same 150 films [agreed 78% of the time](https://doi.org/10.1056/NEJM199412013312206), which is a weighted kappa of only 0.47 once chance is taken out.
+- **Breast biopsies:** 115 pathologists matched the expert reference on [48% of atypia cases](https://doi.org/10.1001/jama.2015.1405), and the three experts who set that reference agreed unanimously on 75% of cases.
+- **Summaries:** on [SummEval](https://arxiv.org/abs/2007.12626), crowd workers reached Krippendorff's alpha 0.49 and experts 0.41, until a second round got the experts to 0.71.
+- **Preference labels:** [InstructGPT's labelers](https://arxiv.org/abs/2203.02155) agreed on the better output 72.6% of the time, the raw material of RLHF.
+
+Percent agreement flatters. Two raters guessing agree half the time on a yes/no, and more when the label is rare and both mostly say "no". Cohen's kappa (two raters), Fleiss' kappa and Krippendorff's alpha (more raters) subtract what chance would give, and Krippendorff wants alpha ≥ 0.8 before relying on the data.
+
+So the bar: **trust a judge when it agrees with humans about as well as humans agree with each other**, measured the same way on the same items. GPT-4 cleared it on [MT-Bench](https://arxiv.org/abs/2306.05685), 66% with humans against 63% between humans (ties counted, where chance is 33%). Easy tasks raise the bar: people grading TriviaQA answers hit Scott's pi ~96, and the [best judges landed in the high 80s](https://arxiv.org/abs/2406.12624) while their percent agreement looked fine.
+
+How I'd run one:
+
+- **Label 50–100 outputs myself first** and write down why each fails. The rubric comes from those notes and from the items two of us split on. Shreya Shankar calls this [criteria drift](https://arxiv.org/abs/2404.12272): you need criteria to grade, and grading is how you find them.
+- **Report the judge next to the human number,** as kappa, or as pass and fail rates separately when failures are rare.
+- **Swap positions** and count only wins that survive both orders. On MT-Bench, GPT-4 kept its verdict after a swap 65% of the time, Claude-v1 24%. And don't reward padding: repeating a list's items in new words fooled GPT-3.5 and Claude-v1 91% of the time.
+- **Route on confidence.** Code takes what it can settle ([rule one](#scoring-rules-i-trust)), a cheap decision model that returns a calibrated 0–1 score takes the clear calls, and only the uncertain middle goes to a big model or a person. [Hightouch audited merged customer identities](https://hightouch.com/blog/llm-judges-identity-resolution) this way, on a synthetic benchmark: anything Jev scored between 30% and 90% went to Claude Opus. That sent 22% up and scored 98.8% against Opus-alone's 99.0%, at $0.88 instead of $3.86 per thousand. Calibration is the catch: GPT-6 Luna beat Jev out of the box, but it's overconfident, so on harder data its hybrid fell to 91.6% while Jev's held 95.3%.
+
+My [pr-checks skill](https://github.com/idvorkin/idvorkin.github.io/tree/main/.claude/skills/pr-checks) is the small version. Regexes settle the structural checks, Jev scores headers, voice and ai-patterns, and the raw score prints next to each threshold so a near-miss shows. Grading the judge is what kept it honest: only ai-patterns separates (pre-LLM posts ≤ 2.38, AI-patterned fixtures ≥ 3.99). Injecting an "I"→"we" switch moved the voice score by as little as +0.03, inside the range clean posts already sit, so voice and headers never block. Their flags come to me as "worth a look", never as a verdict.
 
 ### Scoring rules I trust
 
@@ -286,11 +310,11 @@ Eval Time:
 
 Have a judge grade it.
 
-Judges are subjective, so we can have multiple judges and average their answers - like we do in boxing matches or work performance reviews. The catch: averaging only helps if the judges actually disagree. Ask five judges the same question five different ways and you've bought one opinion at five times the price, so check that their scores diverge before you trust the average.
+Judges are subjective, so we can have multiple judges and average their answers - like we do in boxing matches or work performance reviews. The catch: averaging only helps if the judges actually disagree. Ask five judges the same question five different ways and you've bought one opinion at five times the price, so check that their scores diverge before you trust the average. Mixing model families is the cheap way to get real disagreement: a [panel of three small models](https://arxiv.org/abs/2404.18796) from three families out-agreed a lone GPT-4 with humans, at a seventh of the cost.
 
-And when every score comes back in the same narrow band, the fix is usually the question, not the judge. A judge answers _which of these two is better_ far more reliably than an abstract zero-to-ten scale - the same reason [Chatbot Arena](#human-based-blind-taste-tests-chatbot-arena) is pairwise. Trading absolute scores for a head-to-head against known-good references is what [unstuck an RL run on watercolor paintings](https://surya.website/rling-qwen-to-paint-with-code) that had flatlined.
+And when every score comes back in the same narrow band (asked for 1–100, GPT-4 [piles onto 90 and 95](https://arxiv.org/abs/2405.01724) and barely touches anything under 60), the fix is usually the question, not the judge. A judge answers _which of these two is better_ far more reliably than an abstract zero-to-ten scale - the same reason [Chatbot Arena](#human-based-blind-taste-tests-chatbot-arena) is pairwise. Trading absolute scores for a head-to-head against known-good references is what [unstuck an RL run on watercolor paintings](https://surya.website/rling-qwen-to-paint-with-code) that had flatlined.
 
-The full version of this wrinkle is [Cameron Wolfe's AI Engineer NYC talk](https://www.youtube.com/watch?v=zLc8zeGeNaY) on how Netflix evaluates agents when there's no right answer. Humans come first: experts write quality guidelines, raters get calibrated until they agree with each other, and only then does an LLM judge stand in for them, trusted once it agrees with the humans about as well as they agree among themselves. Offline evals screen the ideas, human evals check the best few, and an A/B test picks the winner. Here are the [slides](https://docs.google.com/presentation/d/146TscsJ21LU4kATVS3ES2oC_oZxoCBsTH3soepY25P4/edit?usp=sharing), and a [written guide](https://cameronrwolfe.substack.com/p/subjective-evals) that adds the statistics (power analysis, confidence intervals) and further reading.
+The full version of this wrinkle is [Cameron Wolfe's AI Engineer NYC talk](https://www.youtube.com/watch?v=zLc8zeGeNaY) on how Netflix evaluates agents when there's no right answer. Humans come first: experts write quality guidelines, raters get calibrated until they agree with each other, and only then does an LLM judge stand in for them, trusted once it agrees with the humans about as well as they agree among themselves ([the bar above](#humans-dont-agree-either)). Offline evals screen the ideas, human evals check the best few, and an A/B test picks the winner. Here are the [slides](https://docs.google.com/presentation/d/146TscsJ21LU4kATVS3ES2oC_oZxoCBsTH3soepY25P4/edit?usp=sharing), and a [written guide](https://cameronrwolfe.substack.com/p/subjective-evals) that adds the statistics (power analysis, confidence intervals) and further reading.
 
 {% include youtube.html src="zLc8zeGeNaY" %}
 
