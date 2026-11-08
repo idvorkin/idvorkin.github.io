@@ -7,6 +7,8 @@ ai_default_image: true
 
 A landing page for all my AI posts — a jumping-off point into everything I've written about AI, handy especially when you arrive here from the graph.
 
+For how the topics fit together, see my [AI interests map](/ai-interests-map).
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 

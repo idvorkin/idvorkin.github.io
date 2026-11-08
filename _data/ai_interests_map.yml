@@ -1,0 +1,174 @@
+# Nodes for _includes/ai-interests-map.html (page: _d/ai-interests-map.md).
+# Tree is transcribed from a hand-drawn mind map (2026-11-07). Each node:
+#   id, label, full (optional longer name), what, why, links [{title, url}], children.
+# The include renders three levels below the branches; deeper nodes are ignored.
+topics:
+  - pre
+  - post
+  - evals
+branches:
+  - id: training
+    label: Training
+    what: How a model gets made. Pre-training installs knowledge, post-training shapes behavior, and evals tell you whether either worked.
+    why: I build on models rather than train them, so the question is which lever matters to a consumer and which is someone else's problem.
+    links:
+      - title: Training LLMs
+        url: /ai-training
+      - title: Seminal AI papers
+        url: /ai-paper
+    children:
+      - id: pre
+        label: Pre
+        full: Pre-training
+        what: Predict the next token over a huge pile of text. This is where the compute and money go, and where facts and skills come from. The output is a base model that autocompletes rather than answers.
+        why: If a model never saw something here, later steps can't really add it. That sets the ceiling for everything downstream.
+        links:
+          - title: How a model gets made
+            url: /ai-training#how-a-model-gets-made
+          - title: Deep Dive into LLMs like ChatGPT (Karpathy, video)
+            url: https://www.youtube.com/watch?v=7xTGNNLPyMI
+          - title: Training Compute-Optimal LLMs (Chinchilla paper)
+            url: https://arxiv.org/abs/2203.15556
+      - id: post
+        label: Post
+        full: Post-training
+        what: Turn a base model into an assistant. SFT copies examples, RLHF and RLAIF use graded preferences, RLVR uses answer keys, and agent training grades whole multi-step runs.
+        why: Most of what makes a chat model feel like one happens here, for a rounding error of pre-training's cost. Who grades the answer turns out to explain most methods.
+        links:
+          - title: Post-training LLMs
+            url: /ai-post-training
+          - title: Post-training agents
+            url: /ai-post-training-agents
+      - id: evals
+        label: Evals
+        what: Tests for systems whose output isn't one right answer. A dataset, a way to run the system on it, and a scorer.
+        why: You get what you measure, in training and in my own tools. Without an eval, "it seems better" is a vibe.
+        links:
+          - title: AI testing and evals
+            url: /ai-testing
+          - title: AI eval tools compared
+            url: /ai-eval-tools
+          - title: Your AI Product Needs Evals (Hamel Husain)
+            url: https://hamel.dev/blog/posts/evals/
+        children:
+          - id: coding
+            label: coding
+            full: Coding evals
+            what: Code can be checked by running it. Did the tests pass, did the diff touch only what it should. That makes coding the easiest place to grade an agent.
+            why: Checkable answers are why coding agents improved so fast. The open question is how far the same trick reaches past code.
+            links:
+              - title: Post-training for coding competence
+                url: /ai-training#post-training-for-coding-competence
+              - title: Grading an agent with smevals
+                url: /ai-testing#grading-the-agent-with-smevals
+              - title: SWE-bench Verified
+                url: https://www.swebench.com/verified.html
+          - id: judges
+            label: judges
+            full: LLM as judge
+            what: When nothing is checkable, have a model grade the output against a rubric or pick the better of two.
+            why: Judges are cheap and scale, and they can be gamed or drift. When to trust one, and how to check the checker, is the interesting part.
+            links:
+              - title: LLM as judge
+                url: /ai-testing#llm-as-judge
+              - title: Rubrics when nothing is checkable
+                url: /ai-post-training-agents#rubrics-when-nothing-is-checkable
+              - title: Using LLM-as-a-Judge (Hamel Husain)
+                url: https://hamel.dev/blog/posts/llm-judge/
+              - title: Judging LLM-as-a-Judge (MT-Bench paper)
+                url: https://arxiv.org/abs/2306.05685
+  - id: usage
+    label: Usage
+    what: Who the agent is working with, which changes what good looks like. Another agent, a person, or a codebase.
+    why: The same model is a different tool in each of these. Splitting them keeps me from judging one by the standards of another.
+    links:
+      - title: All posts on AI
+        url: /ai
+    children:
+      - id: a2a
+        label: A2A
+        full: Agent to agent
+        what: Agents handing work to other agents. An orchestrator picks the agent, gives it a place to work, tracks the job and checks the result.
+        why: Once more than one agent runs, the hard parts are coordination and trust between them, not any single prompt.
+        links:
+          - title: AI orchestrators
+            url: /ai-orchestrator
+          - title: Agent-to-agent negotiation
+            url: /hyper-personal#your-ai-second-brain--the-ultimate-personalization
+          - title: A2A Protocol
+            url: https://a2a-protocol.org/
+      - id: a2h
+        label: A2H
+        full: Agent to human
+        what: An agent whose output is for a person. The measure is whether the person ends up better off, not whether the task finished.
+        why: Larry, my AI life coach, lives on this branch. It's the one that touches life outside of code.
+        links:
+          - title: Larry the life coach
+            url: /larry
+          - title: AI relationships
+            url: /ai-relationships
+        children:
+          - id: think
+            label: help me think
+            full: Help me think
+            what: AI as a thinking partner. Pull in context, ask good questions, and catch what I'd miss, rather than hand over a finished answer.
+            why: The question is whether it makes my thinking sharper or just does it for me.
+            links:
+              - title: AI as your second brain
+                url: /ai-second-brain
+              - title: AI bestie simulator
+                url: /ai-bestie
+              - title: How can we develop transformative tools for thought? (Matuschak and Nielsen)
+                url: https://numinous.productions/ttft/
+          - id: enable
+            label: enabling environment
+            full: Enabling environment
+            what: Andy Matuschak's idea of a place that expands what you can do. With AI, the key is less how I prompt it and more how it prompts me.
+            why: Building these is fun, and that is also the trap. My AI policy pushes back on building one more.
+            links:
+              - title: Enabling environment
+                url: /enable
+              - title: My AI policy
+                url: /ai-policy
+      - id: a2c
+        label: A2C
+        full: Agent to coding
+        what: Agents writing code. Chat-oriented programming, where I direct and review and the agent types.
+        why: It's the branch I've written about most, and where the tools change fastest.
+        links:
+          - title: The CHOP shop
+            url: /chop
+          - title: My CHOP setup
+            url: /how-igor-chops
+          - title: The AI cockpit
+            url: /ai-cockpit
+  - id: inference
+    label: Inference
+    what: Running a trained model. Prefill reads the prompt, decode writes the answer one token at a time.
+    why: As a model consumer, this is the part I pay for on every call.
+    links:
+      - title: AI inference
+        url: /ai-inference
+    children:
+      - id: efficiency
+        label: Efficiency
+        what: Getting more answer per GPU. The KV cache, quantization, smaller and mixture-of-experts models, speculative decoding, batching.
+        why: Faster isn't always better. Fast tokens can still be wrong answers, so speed has to be weighed against thinking.
+        links:
+          - title: Knobs that lower the price
+            url: /ai-inference#knobs-that-lower-the-price
+          - title: Fast tokens, wrong answers
+            url: /ai-speed-vs-thinking
+        children:
+          - id: costs
+            label: costs
+            full: Costs
+            what: What a token costs, and how that shapes which model gets which job.
+            why: I can't afford all the expensive tokens I want, so routing work to the right model is a daily choice.
+            links:
+              - title: How I manage AI tokens
+                url: /token-management
+              - title: My AI subscriptions
+                url: /ai-subscriptions
+              - title: Economics of renting GPUs
+                url: /ai-bm#economics-of-renting-gpus
