@@ -76,7 +76,7 @@ So Co(t) is how much we are considering at time.
 
 Therefore, perspective is the area of the graph being considered. This is likely a dominant factor in Mu(t)
 
-1. Because anxiety narrows your perspective, you need to actively fight against this, both proactively, and in the moment when it strikes.
+1. Because anxiety narrows your perspective, you need to actively fight against this, both proactively, and in the moment when it strikes. I built an interactive version of zooming in and back out: [Floating and Zooming](/floating-zooming/).
 
 1. So the key is to maximize the area, and it gets small when you stop thinking of the past, and the future, also actively pruning the breadth of your thinking.
 
