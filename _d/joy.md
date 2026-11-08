@@ -182,15 +182,18 @@ Also look at notes from Avner class - who was all about building rapport with a 
 
 ### Why kids are more receptive to Joy
 
-- Things are more novel
+- Things are more novel. Their picture of the world has more gaps, so more things force an [accommodation](#novelty-wonder-and-surprise---break-the-mundane)
 - Naturally feel safe
 - Less need for validation of peers
 - Expect things to be wholesome and good
 
 ### Novelty, Wonder and Surprise - Break the mundane
 
+Awe isn't about the size of the thing. It's about the size of the update my mind has to make. Dacher Keltner and Jonathan Haidt call that update _accommodation_, a word they borrowed from Jean Piaget. When something new shows up, I either file it in a box I already have (assimilation: the toddler who sees a cat and says "doggy") or I rebuild the boxes (accommodation: the toddler learns cats are their own thing). Awe is what the rebuild feels like. A first-time visitor at the Grand Canyon has their sense of "how big land gets" break on the spot. A park ranger on day 500 sees the same canyon and feels nothing special, because it already fits.
+
+Magic is accommodation on demand. If the spectator can file my trick under "it's up his sleeve," they assimilate it and say "nice trick." When every explanation gets ruled out, they're stuck mid-rebuild, and they never finish, because they know physics didn't actually break. A good trick holds people in that moment and doesn't let them out, which is why it feels like wonder instead of learning.
+
 - You need this to snap into the present moment
-- Some connection between joy and wonder
 - Some say when you clear your mind you feel joy (or bliss) (See the Joy of Happiness)
 - Wonder/Novelty snaps you out of the mundane and makes you feel important
 - Heath brothers:
