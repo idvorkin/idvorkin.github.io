@@ -349,6 +349,33 @@ The camera is locked off, so the overlay never slides. The cost is that rain
 behind a balloon freezes. The script is `gutter/lettering_overlay.py`. Check its mask on magenta before compositing: a
 streetlamp core passes the paper test, so keep the rectangles off lamps.
 
+**Words appear as they're spoken: `gutter/lettering_reveal.py SPEC.json`.**
+This is the default now, and it replaces the static overlay. Igor asked for
+it: "can we make it so the words show up as I'm speaking them?"
+
+- Every bubble is the source bubble with its lettering painted out, so it
+  shows blank paper until its first word is spoken. Each drawn word then
+  appears at the moment it is said, and the whole bubble is complete 0.4 s
+  after its last word.
+- Bubbles not spoken in the clip are `"mode": "empty"` (not yet said) or
+  `"full"` (already said). Captions are always shown.
+- Word boxes come from the ink: the ink is split into lines, then into words
+  at column gaps. The row cut and the gap are raised until the box count
+  equals the drawn word count, so the drawn text checks the segmentation. A
+  box's rows stop at the midpoint between lines; padding a fixed amount showed
+  the tops of the next line's words.
+- Timing is a forced alignment of the **drawn** words (whisperx wav2vec2)
+  against the audio. It does not match words against a transcript, so
+  "@ yahoo" aligns as "at yahoo". A `"say"` list covers anything else.
+- A whisperx transcription only finds where speech is. Each bubble gets a run
+  of heard segments, by word count. Aligned over the whole clip, a first word
+  said after a second of keyboard clicks snapped to 0.0 s.
+- Check the `*-words.png` debug image beside the output.
+
+It took the first date (thought bubbles included) and Den #15 first time, with
+every word count matching. It costs no Omni calls, since it works on clips
+already made.
+
 **Thought bubbles: inner voice, closed mouth.** "Igor's INNER VOICE, a quiet
 … voice-over heard inside his head … while his lips do not move", plus "his
 MOUTH NEVER OPENS: he is THINKING, not speaking" in the ACTION. Both thought
