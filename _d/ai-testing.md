@@ -7,6 +7,9 @@ redirect_from:
   - /evals
   - /ai-eval
 ai_default_image: true
+tags:
+  - ai
+  - machine-learning
 ---
 
 _How to measure AI: what to test, how to score it, how to read the results, and my own benchmarks. Which software to run it with is [AI Eval Tools](/ai-eval-tools)._
