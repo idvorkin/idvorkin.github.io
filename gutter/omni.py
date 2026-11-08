@@ -54,26 +54,32 @@ def call(key: str, url: str, body: dict | None = None, raw: bool = False):
         headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
         method="POST" if body is not None else "GET",
     )
-    for attempt in range(3):
+    # Only GETs retry. A submit that errors or times out may already have
+    # created (and billed) a job, so a retry could pay for it twice.
+    tries = 3 if body is None else 1
+    hint = (
+        "" if body is None else " (the job may exist: check OpenRouter, then --resume)"
+    )
+    for attempt in range(tries):
         try:
             with urllib.request.urlopen(req, timeout=120) as resp:
                 data = resp.read()
             return data if raw else json.loads(data)
         except urllib.error.HTTPError as e:
-            if e.code >= 500 and attempt < 2:
+            if e.code >= 500 and attempt < tries - 1:
                 time.sleep(10)
                 continue
             sys.exit(
-                f"HTTP {e.code} from {url.split('?')[0]}: {e.read().decode()[:2000]}"
+                f"HTTP {e.code} from {url.split('?')[0]}: {e.read().decode()[:2000]}{hint}"
             )
         except (
             urllib.error.URLError,
             TimeoutError,
         ) as e:  # a slow poll read raises bare TimeoutError
-            if attempt < 2:
+            if attempt < tries - 1:
                 time.sleep(10)
                 continue
-            sys.exit(f"network error: {e}")
+            sys.exit(f"network error: {e}{hint}")
 
 
 def frame(src: str, out_dir: Path, name: str, aspect: str, pillarbox: bool) -> str:
