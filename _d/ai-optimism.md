@@ -117,9 +117,9 @@ Every previous wave of pessimism has had its horse-poop moment. In the late 19th
 
 Or take the "but we're losing skills" panic. Sure — basically nobody can read a paper map anymore. _And_ basically nobody is lost. _And_ a lot of marriages got saved (the "left at the next light, NO the OTHER left" fight is mercifully extinct). Skills die, new layers emerge on top of them, and the net is more freedom and less friction, not less. The lost-skill is real; it's just not the thing that matters.
 
-Three objections deserve a sentence each.
+Three objections deserve a quick answer.
 
-**"Jobs go away."** Some jobs do. New layers of agency open for people who couldn't access them before. Net new first-time owners. The transition is real and painful; the destination is more individual agency, not less.
+**"Jobs go away."** Some jobs do. But the fear assumes a [fixed lump of work](https://en.wikipedia.org/wiki/Lump_of_labour_fallacy): if AI does it, we don't. William Stanley Jevons saw the opposite in [_The Coal Question_](https://en.wikipedia.org/wiki/The_Coal_Question) (1865). Watt's more efficient steam engines made coal cheaper per unit of work, and Britain burned _more_ coal, because cheap power found new uses (the [Jevons paradox](https://en.wikipedia.org/wiki/Jevons_paradox)). I expect the same with code, writing, design, and analysis. Make them cheap and we'll want way more of them: more software, more Sergios, more small businesses. Jevons doesn't promise the _same people_ get the new work, and it only holds when demand grows as the price drops. The transition is real and painful; the destination is more individual agency, not less.
 
 **"AI homogenizes everything."** Only if you assume AI _replaces_ the human. Sergio's school is the counter-example. When AI is the staff and the human is the operator, you get _more_ specific human stories shipped, not fewer.
 
