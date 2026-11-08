@@ -29,6 +29,7 @@ mis = "mis"  # Token of "mis-hire" (typos splits on the hyphen)
 "gruelling" = "gruelling"  # British spelling used intentionally
 "Flavours" = "Flavours"  # Proper noun — "Flavours of Bergen" food tour (British spelling)
 "Saviour" = "Saviour"  # Proper noun — Church of Our Saviour, Copenhagen (British spelling)
+"Sandstrom" = "Sandstrom"  # Proper noun — Gillian Sandstrom, psychologist (lonely post citation)
 ig = "ig"  # Your name/handle
 igor = "igor"
 dvorkin = "dvorkin"
