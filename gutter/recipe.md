@@ -349,16 +349,34 @@ The camera is locked off, so the overlay never slides. The cost is that rain
 behind a balloon freezes. The script is `gutter/lettering_overlay.py`. Check its mask on magenta before compositing: a
 streetlamp core passes the paper test, so keep the rectangles off lamps.
 
-**Words appear as they're spoken: `gutter/lettering_reveal.py SPEC.json`.**
-This is the default now, and it replaces the static overlay. Igor asked for
-it: "can we make it so the words show up as I'm speaking them?"
+**House default for Gutter video: bubbles pop, words appear as spoken**
+(`gutter/lettering_reveal.py SPEC.json`). It replaces the static overlay. Igor
+asked for each half in turn: "can we make it so the words show up as I'm
+speaking them?", then "that way of doing animations much better with words
+coming, let's do that, and then let's also make the thought bubble pop up when
+they start talking and stay up".
 
-- Every bubble is the source bubble with its lettering painted out, so it
-  shows blank paper until its first word is spoken. Each drawn word then
-  appears at the moment it is said, and the whole bubble is complete 0.4 s
-  after its last word.
-- Bubbles not spoken in the clip are `"mode": "empty"` (not yet said) or
-  `"full"` (already said). Captions are always shown.
+- A bubble is invisible until its speaker starts. It then pops in from its
+  tail (the lowest point of its mask, or `"tail"`), 0.25 s, ease-out-back,
+  about 10% overshoot, and the first word lands as it settles. Each drawn word
+  appears as it is said, and the bubble stays up. `"mode": "full"` (said in an
+  earlier clip) is up from frame one with no pop; `"empty"` (said later) stays
+  hidden. Captions are always up. `"pop": false` gives the older behavior,
+  blank paper from frame one.
+- **The pop needs a bubble-free clip underneath.** Omni draws its own garbled
+  bubbles otherwise. So:
+  1. Make a clean plate per panel: one Muse call with the panel as reference
+     ("Reproduce reference 1 EXACTLY… remove every speech balloon… keep the
+     caption lettering"), $0.01. Then run `lettering_reveal.py --plate SPEC
+edit.png plate.png`, which keeps the source pixels everywhere except
+     inside the bubble masks (grown 10 px, feathered). The characters stay
+     pixel-identical. `"plate_extra"` rects catch thought circles that the
+     paper test misses.
+  2. Animate the plate, with "There are NO speech balloons… Never draw a
+     speech balloon" in the prompt. All 7 clips came back bubble-free.
+- **Give the pop room.** When the voice starts at 0 s, the pop has no time to
+  play. `revoice.py mix` takes `"lead": 0.3`, which holds frame one for 0.3 s
+  and delays all the audio by the same amount.
 - Word boxes come from the ink: the ink is split into lines, then into words
   at column gaps. The row cut and the gap are raised until the box count
   equals the drawn word count, so the drawn text checks the segmentation. A
@@ -370,11 +388,36 @@ it: "can we make it so the words show up as I'm speaking them?"
 - A whisperx transcription only finds where speech is. Each bubble gets a run
   of heard segments, by word count. Aligned over the whole clip, a first word
   said after a second of keyboard clicks snapped to 0.0 s.
-- Check the `*-words.png` debug image beside the output.
+- Even inside its window, the first word swallows the silence before it, so
+  its start is capped from the second word's start. A cap on every word,
+  measured from its own end, pushed last words late instead, because they
+  swallow the trailing sound.
+- Check the `*-words.png` debug image beside the output: magenta word boxes,
+  cyan pop anchor.
 
-It took the first date (thought bubbles included) and Den #15 first time, with
-every word count matching. It costs no Omni calls, since it works on clips
-already made.
+### Re-voicing: ElevenLabs over Omni's picture (`gutter/revoice.py`)
+
+- `revoice.py say VOICE "line" out.wav [--inner]` makes one line with
+  eleven_multilingual_v2 and trims the leading silence only. Trimming the tail
+  with areverse+silenceremove ate whole words: "Larry. It's me." came out as
+  "It's me." `--inner` is a thought voice: softer, band-limited, a touch of
+  room.
+- Generate the line first. Then animate the clip with the exact words quoted
+  and a pace hint ("spoken briskly in under two seconds"), so the mouth
+  rhythm lands close.
+- `revoice.py mix SPEC` splits the clip's audio with demucs into voice and
+  ambience. It keeps all the ambience (rain, keyboard), keeps the model's voice
+  only in `"keep"` spans (speakers you aren't re-voicing), and lays each line
+  in `"at"` the model's own voice start.
+- Split a two-phrase line into two files placed at each phrase's start ("Larry.
+  It's me." / "I'm right here."); the pause then matches the mouth.
+- For a thought, prompt Omni for NO voice at all and drop the line in anywhere.
+  No lip sync is needed.
+- Voices: Igor Pro (`xBlr6Er6jnVgPIGgNJFO`) for Igor. Tori stays Omni's own
+  voice: never clone or imitate her. IgLarry (`xJLDwfCvntuBH4HXZstj`) returned
+  403 `voice_access_denied` / "requires verification" (2026-11-08), so Larry
+  stays Omni's voice until Igor verifies it in ElevenLabs.
+- Run the reveal on the final mix, so the words follow the voice you hear.
 
 **Thought bubbles: inner voice, closed mouth.** "Igor's INNER VOICE, a quiet
 … voice-over heard inside his head … while his lips do not move", plus "his
