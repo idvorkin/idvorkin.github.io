@@ -94,7 +94,7 @@ Awe has a way of shrinking you, in a good way. It quiets the ego and opens peopl
 
 None of this is my invention. I reverse-engineered it from shows that worked, then went looking for the research that explained why they did.
 
-- **Awe = vastness + accommodation.** Dacher Keltner and Jonathan Haidt describe awe as running into something vast enough that your current picture of the world can't absorb it, so your brain has to update on the spot. That "can't file it" feeling is exactly the impossible moment in rule one.
+- **Awe = vastness + accommodation.** Dacher Keltner and Jonathan Haidt describe awe as running into something vast enough that your current picture of the world can't absorb it, so your brain has to update on the spot. That "can't file it" feeling is exactly the impossible moment in rule one. I work through why in [Smiles, Joy and Wonder](/joy#novelty-wonder-and-surprise---break-the-mundane).
 - **Enjoyment = pleasure + people + memory.** Arthur Brooks separates cheap pleasure from durable enjoyment: enjoyment is pleasure that happened _with other people_ and got laid down as a _memory_. That's rules two, six, and seven in one line — do it together, give it a peak, make it retellable.
 - **The peak-end rule.** Daniel Kahneman found we judge an experience by its peak and its ending, not its average. So I stopped trying to make every second great and started building one great second and a clean finish.
 
