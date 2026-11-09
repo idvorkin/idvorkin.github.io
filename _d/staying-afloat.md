@@ -2,7 +2,7 @@
 layout: post
 title: "Staying Afloat"
 permalink: /staying-afloat
-imagefeature: /floating-zooming/art/floating-A2.webp
+imagefeature: https://idvork.in/images/raccoon-staying-afloat.jpg
 tags:
   - emotional-health
   - psychology
@@ -17,18 +17,37 @@ I picture my calm as floating above water. Balloons in one hand pull me up: slee
 
 {% include ai-slop.html percent="80" %}
 
-<!-- prettier-ignore-start -->
-<!-- vim-markdown-toc-start -->
-
-- [Floating](#floating)
-- [Zooming](#zooming)
-
-<!-- vim-markdown-toc-end -->
-<!-- prettier-ignore-end -->
-
 ## Floating
 
 <iframe class="afloat-embed" src="/floating-zooming/app.html?embed=float" title="Interactive: balloons lift the raccoon, weights sink him" style="display: block; width: 100%; height: min(85svh, 720px); border: 0; border-radius: 0.75rem;"></iframe>
+
+<script>
+  // The embed reports its content height and gets the iframe sized to fit, so it never scrolls by itself
+  // (a nested scroller traps a finger's swipe). In return it hears where the page viewport is, so the
+  // scene can stay on screen while you scroll its controls.
+  (function () {
+    var f = document.querySelector("iframe.afloat-embed");
+    if (!f) return;
+    var queued = false;
+    function tell() {
+      queued = false;
+      if (!f.contentWindow) return;
+      // clientHeight, not innerHeight: it doesn't jump as iOS Safari's toolbar shows and hides
+      f.contentWindow.postMessage({ afloat: "view", top: f.getBoundingClientRect().top, vh: document.documentElement.clientHeight }, "*");
+    }
+    function soon() {
+      if (!queued) { queued = true; requestAnimationFrame(tell); }
+    }
+    window.addEventListener("message", function (e) {
+      if (e.source !== f.contentWindow || !e.data || e.data.afloat !== "height") return;
+      f.style.height = e.data.h + "px";
+      soon();
+    });
+    window.addEventListener("scroll", soon, { passive: true });
+    window.addEventListener("resize", soon);
+    f.addEventListener("load", soon);
+  })();
+</script>
 
 Hold a balloon or weight to pump it up. Drag a dial across his paw to flip it from weight to balloon. Drag the scissors across a string or chain to cut it loose. The stress tolerance slider is the only thing that moves the water: same balloons, same weights, but with lower tolerance he goes under sooner.
 
@@ -39,21 +58,3 @@ Three things I keep relearning from it:
 - **This too shall pass.** It's on his shirt, and it's my mantra for smoothing out the highs and the lows. Being low in the water is a state, not a verdict.
 
 This is a metaphor, not a research model. The closest research idea is Lazarus and Folkman's: stress is what you feel when demands seem to exceed the resources you have to meet them (_Stress, Appraisal, and Coping_, 1984).
-
-## Zooming
-
-When I'm low in the water, pain narrows my attention onto it until it feels like all there is and all there will be. That's [anxiety doing its job](/anxiety#narrows-perspective-to-resolve-immediate-danger) on something that isn't a tiger. Zooming back out doesn't shrink the pain. It puts the room, the day and the life back around it. Step through it below: in from a whole life to this hour, then out again.
-
-<iframe class="afloat-embed" src="/floating-zooming/app.html?embed=zoom" title="Interactive: pain zooms attention from a life down to one bad hour, and back out" loading="lazy" style="display: block; width: 100%; height: min(85svh, 820px); border: 0; border-radius: 0.75rem;"></iframe>
-
-The red mark is the same size at every scale, and the hurt stays at 7 out of 10. What changes is how much else is in view. Russ Harris's phrase for the room-sized version: the pain becomes "one performer among many on the stage rather than the spotlight act."
-
-Why it narrows, and why widening helps:
-
-- **Arousal shrinks the range of cues you use.** As emotional arousal rises, people take in fewer cues. Dropping irrelevant ones helps at first; past a point the relevant ones go too ([Easterbrook, 1959](https://doi.org/10.1037/h0047707)). Weapon focus is the vivid case: people watching a scene with a gun look at the gun and are worse at recognizing the person holding it ([Loftus, Loftus & Messo, 1987](https://doi.org/10.1007/BF01044839)).
-- **Positive emotion tends to widen attention** ([Fredrickson, 2001](https://doi.org/10.1037/0003-066X.56.3.218)), but intensity matters more than good vs. bad: strong wanting narrows it too ([Gable & Harmon-Jones, 2008](https://doi.org/10.1111/j.1467-9280.2008.02112.x)).
-- **Widening the room comes from ACT.** Acknowledge the pain, then widen to the five senses, the room and what you're doing ([ACT Made Simple, ch. 17](/act-made-simple#chapter-17-being-present)). Widening across time is self-as-context, the part of me that has noticed everything else too ([ch. 25](/act-made-simple#chapter-25-the-noticing-self)).
-
-Honest gaps: the studies measure narrowing in space, what you look at and remember. That pain also collapses your sense of time is my extrapolation. And the lab work shows emotion changes how wide attention is, not that widening it on purpose reduces suffering. That part is clinical practice and experience.
-
-Always-wide is its own failure. The skill is [flexible attention](/act#3-present-notice-x): widen when one bad hour feels like the whole future, narrow when worry bounces me between ten futures or rumination replays the past. Then pick one thing that matters and keep coming back to it.

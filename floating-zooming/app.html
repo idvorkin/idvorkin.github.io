@@ -289,14 +289,42 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
   html.embed-float main > :not(#part1), html.embed-float #part1 > :not(#float-wrap),
   html.embed-zoom main > :not(#interactive), html.embed-zoom #takeaway { display: none; }
   html.embed .float-wrap { width: auto; margin-left: 0; }
-  html.embed .sound-toggle { right: .5rem; bottom: .5rem; }
+  html.embed .sound-toggle { position: static; box-shadow: none; }   /* the embed script moves it in with the presets */
   .embed-presets { margin-top: .75rem; }
+  /* The post sizes the iframe to fit this content (postMessage 'height'), so nothing in here scrolls by itself:
+     a scroller nested in the page traps a finger's swipe. The scene keeps itself on screen instead, with a
+     transform the post drives as it scrolls (postMessage 'view'); --pvh is the post's viewport height. */
+  html.embed-float .float-wrap > figure { position: relative; top: auto; z-index: 20; will-change: transform; }
+  html.embed-float .float-panel { max-height: none; overflow: visible; position: static; }
+  @media (max-width: 699px) {
+    /* stacked: cap the scene at ~56% of the screen so the controls it floats over still have room below it */
+    html.embed-float .float-wrap > figure { max-width: calc(var(--pvh, 100vh) * .56 * var(--fig-ar, .8)); margin-inline: auto; }
+  }
   @media (min-width: 700px) {
     /* the post column is narrower than the standalone 1024px breakpoint, so go side by side sooner */
     html.embed-float .float-wrap { display: grid; grid-template-columns: minmax(0, 1fr) 290px; gap: 1rem; align-items: start; }
-    html.embed-float .float-wrap > figure { position: sticky; top: .5rem; width: 100%; max-width: calc((100vh - 1rem) * 1.1); justify-self: center; }
-    html.embed-float .float-panel { max-height: calc(100vh - 1rem); overflow-y: auto; position: sticky; top: .5rem; padding-right: .25rem; }
+    html.embed-float .float-wrap > figure { width: 100%; max-width: calc((var(--pvh, 100vh) - 1rem) * var(--fig-ar, 1.1)); justify-self: center; }
     html.embed-float .float-panel #dial-list, html.embed-float .float-panel #toggle-cols, html.embed-float .float-panel #custom-cols { grid-template-columns: minmax(0, 1fr); }
+  }
+  /* a narrow scene (iPhone landscape puts a ~400px scene beside the panel): one scrolling row of spares, not a block over the weights */
+  .float-wrap > figure { container-type: inline-size; }
+  @container (max-width: 520px) {
+    .tray { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; bottom: .3rem; padding: .25rem .4rem; gap: .25rem; scrollbar-width: none; }
+    .tray .spare { white-space: nowrap; flex: none; }
+    .hint-long { display: none; } .hint-short { display: inline; }   /* the long hint ran under the scissors */
+  }
+
+  /* ---- fingers: 44px targets (Apple HIG) wherever the pointer is coarse ---- */
+  @media (pointer: coarse) {
+    .btn-sm, .tray .spare { min-height: 44px; }
+    .tray .spare { font-size: 16px; padding: 0 .7rem; }
+    .scissors { width: 3rem; height: 3rem; }
+    /* the slider row takes the finger, not just the 16px track. A transparent border, not height: DaisyUI draws
+       the fill as a thumb shadow clipped to the padding box, so a taller box would paint a solid block */
+    .range { --range-thumb-size: 20px; height: 48px; border-block: 14px solid transparent; }
+    #custom summary { padding-block: .75rem; }
+    .tray .spare { touch-action: pan-x; }  /* a sideways swipe scrolls the one-row tray; dragging up into the scene still adds it */
+    .input-sm { min-height: 44px; font-size: 16px; }   /* under 16px, iOS Safari zooms the page on focus */
   }
 </style>
 </head>
@@ -1559,6 +1587,8 @@ window.FX = (function () {
     if (ART.balloon) {
       var spr = ART.balloon.sprites[idx % ART.balloon.sprites.length], s = ART.balloon.scale;
       var tie = spr.tie || ART.balloon.stub;
+      // an invisible pad around the sprite: on a phone a balloon draws ~37px wide, under a 44px fingertip target
+      el('rect', { x: (-tie[0] * s - 14).toFixed(1), y: (-tie[1] * s - 8).toFixed(1), width: (spr.w * s + 28).toFixed(1), height: (ART.balloon.h * s + 8).toFixed(1), fill: '#000', 'fill-opacity': 0 }, shape);
       el('image', { href: spr.href, x: (-tie[0] * s).toFixed(1), y: (-tie[1] * s).toFixed(1), width: (spr.w * s).toFixed(1), height: (ART.balloon.h * s).toFixed(1) }, shape);
       return shape;
     }
@@ -2038,6 +2068,9 @@ window.FX = (function () {
       n.pos.addEventListener('pointermove', move); n.pos.addEventListener('pointerup', up); n.pos.addEventListener('pointercancel', up);
     });
   }
+  // touch-action: none on an SVG <g> isn't honored (Chrome and Safari key it off CSS boxes), so a finger dragging
+  // a balloon scrolled the page and the browser cancelled the drag. Cancelling touchstart on a grabbable claims it.
+  svg.addEventListener('touchstart', function (e) { if (e.target.closest && e.target.closest('.grab')) e.preventDefault(); }, { passive: false });
   BAL_KEYS.forEach(function (k) { grabbable(k, 'balloon'); });
   WGT_KEYS.forEach(function (k) { grabbable(k, 'weight'); });
 
@@ -2105,9 +2138,10 @@ window.FX = (function () {
       if (ghost) { ghost.style.left = ev.clientX + 'px'; ghost.style.top = ev.clientY + 'px'; }
     }
     function up(ev) {
-      document.removeEventListener('pointermove', move); document.removeEventListener('pointerup', up);
+      document.removeEventListener('pointermove', move); document.removeEventListener('pointerup', up); document.removeEventListener('pointercancel', up);
       if (!ghost) return;
       ghost.remove();
+      if (ev.type === 'pointercancel') { setTimeout(function () { b._dragged = false; }, 0); return; }   // the browser took the touch: no stranded ghost
       if (inRect(svg.getBoundingClientRect(), ev.clientX, ev.clientY) && !inRect(tray.getBoundingClientRect(), ev.clientX, ev.clientY)) {
         var p = toLocal(ev.clientX, ev.clientY), side = isDial(m) ? (p.y < FLIP_Y ? 'balloon' : 'weight') : kind;
         (side === 'balloon' ? B : W)[m.id].spawnAt = [p.x, p.y];
@@ -2115,7 +2149,7 @@ window.FX = (function () {
       }
       setTimeout(function () { b._dragged = false; }, 0);
     }
-    document.addEventListener('pointermove', move); document.addEventListener('pointerup', up);
+    document.addEventListener('pointermove', move); document.addEventListener('pointerup', up); document.addEventListener('pointercancel', up);
   }
   window.afterUpdate = function () {
     renderTray();
@@ -2146,6 +2180,7 @@ window.FX = (function () {
   function fitPhone() {
     FW = SMALL.matches ? 480 : 660;
     $('float-svg').style.aspectRatio = FW + ' / ' + FH;
+    document.documentElement.style.setProperty('--fig-ar', (FW / FH).toFixed(3));   // embed CSS sizes the scene by height
     buildZones();
   }
   // zone tags: felt tags pinned to the right edge of the frame, stitched dotted lines between bands
@@ -2199,7 +2234,32 @@ window.FX = (function () {
   if (document.documentElement.classList.contains('embed-float')) {
     var presets = document.querySelector('#separate .flex');
     presets.classList.add('embed-presets');
+    presets.appendChild(document.getElementById('sound-toggle'));   // a fixed corner button would sit on top of the controls
     document.getElementById('float-panel').appendChild(presets);
+
+    // The post sizes this iframe to fit (so there's no inner scroller to trap a finger) and reports where its
+    // viewport is, so the scene can follow the reader down the controls the way position: sticky would.
+    (function () {
+      var root = document.documentElement, main = document.querySelector('main'), wrap = document.getElementById('float-wrap'),
+          fig = document.getElementById('float-figure'), view = null, GAP = 8;
+      function sendHeight() { parent.postMessage({ afloat: 'height', h: Math.ceil(main.getBoundingClientRect().bottom + scrollY) }, '*'); }
+      function follow() {
+        if (!view) return;
+        var w = wrap.getBoundingClientRect(), fh = fig.offsetHeight, side = getComputedStyle(wrap).display === 'grid';
+        // side by side: stick until the panel ends. Stacked: stop once the end of the panel is on screen, so the
+        // last controls aren't left underneath the scene.
+        var max = side ? w.bottom - fh : Math.min(w.bottom - fh, w.bottom - view.vh + GAP);
+        var y = Math.max(w.top, Math.min(-view.top + GAP, max)) - w.top;
+        fig.style.transform = y > 0.5 ? 'translateY(' + y.toFixed(1) + 'px)' : '';
+      }
+      addEventListener('message', function (e) {
+        if (e.source !== parent || !e.data || e.data.afloat !== 'view') return;
+        if (!view || view.vh !== e.data.vh) root.style.setProperty('--pvh', e.data.vh + 'px');
+        view = e.data; follow();
+      });
+      if (window.ResizeObserver) new ResizeObserver(function () { sendHeight(); follow(); }).observe(main);
+      sendHeight();
+    })();
   }
 </script>
 </body>
